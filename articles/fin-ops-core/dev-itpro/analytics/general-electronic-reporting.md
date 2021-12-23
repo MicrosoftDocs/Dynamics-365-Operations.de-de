@@ -2,7 +2,7 @@
 title: Überblick über die elektronische Berichterstellung (Electronic reporting, ER)
 description: Diese Thema bietet eine Übersicht zum elektronischen Berichterstellungstool. Es beschreibt Schlüsselkonzepte, unterstützte Szenarien und Formate, die Teil der Lösung sind.
 author: NickSelin
-ms.date: 09/20/2021
+ms.date: 11/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0fd83c787be4d9de151d2727384d07bc209e33f
-ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
+ms.openlocfilehash: 0b772acd4a8d0849803cefa8fc14ae3dd6e18831
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7562175"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867279"
 ---
 # <a name="electronic-reporting-er-overview"></a>Überblick über die elektronische Berichterstellung (ER)
 
@@ -30,11 +30,37 @@ ms.locfileid: "7562175"
 
 Diese Thema bietet eine Übersicht zum elektronischen Berichterstellungstool. Es umfasst Informationen über wesentliche Konzepte, vom ER unterstützte Szenarien und eine Liste der Formate, die im Rahmen der Lösung entwickelt und veröffentlicht wurden.
 
-ER ist ein Tool, mit dem Sie Formate für eingehende und ausgehende elektronische Dokumente in Übereinstimmung mit den gesetzlichen Anforderungen verschiedener Länder/Regionen konfigurieren können. ER ermöglicht Ihnen, diese Formate während ihres Lebenszyklus zu verwalten. Sie können z.B. neue gesetzliche Vorgaben übernehmen und Geschäftsdokumente im erforderlichen Format generieren, um Informationen elektronisch mit Regierungsstellen, Banken und anderen Parteien auszutauschen.
+EB ist ein konfigurierbares Tool, das Ihnen hilft, gesetzliche elektronische Berichterstellungen und Zahlungen zu erstellen und zu verwalten. Es basiert auf den folgenden drei Konzepten:
+
+- Konfigurieren statt Codieren:
+
+    - Die Konfiguration kann von einer Im geschäftlichen Bereich tätigen Person durchgeführt werden und erfordert keinen Entwickler.
+    - Das Datenmodell ist betriebswirtschaftlich definiert.
+    - Visuelle Editoren werden verwendet, um alle Komponenten der EB-Konfiguration zu erstellen.
+    - Die Sprache, die für die Datentransformation verwendet wird, ähnelt der Sprache, die in Microsoft Excel verwendet wird.
+
+- Eine Konfiguration für mehrere Dynamics 365 Finance Releases:
+
+    - Verwalten Sie ein domänenspezifisches Datenmodell, das betriebswirtschaftlich definiert ist.
+    - Isolieren Sie Anwendungsreleasedetails in releaseabhängigen Datenmodellzuordnungen.
+    - Pflegen Sie eine Formatkonfiguration für mehrere Releases der aktuellen Version, basierend auf dem Datenmodell.
+
+- Einfaches oder automatisches Upgrade:
+
+    - Versionsverwaltung von EB-Konfigurationen wird unterstützt.
+    - Die Microsoft Dynamics Lifecycle Services (LCS) Assets-Bibliothek kann als Repository für EB-Konfigurationen zum Versionsaustausch verwendet werden.
+    - Lokalisierungen, die auf ursprünglichen EB-Konfigurationen basieren, können als untergeordnete Versionen eingeführt werden.
+    - Ein EB-Konfigurationsbaum wird als Werkzeug bereitgestellt, das hilft, Abhängigkeiten für Versionen zu kontrollieren.
+    - Unterschiede in der Lokalisierung oder der Delta-Konfiguration werden aufgezeichnet, um ein automatisches Upgrade auf eine neue Version der ursprünglichen EB-Konfiguration zu ermöglichen.
+    - Konflikte, die während des automatischen Upgrades von Lokalisierungsversionen entdeckt werden, können einfach manuell gelöst werden.
+
+Mit EB können Sie elektronische Formatstrukturen definieren und anschließend beschreiben, wie diese Strukturen ausgefüllt werden sollen, indem Sie Daten und Algorithmen verwenden. Sie können eine Formelsprache verwenden, die der Excel-Sprache für die Datentransformation ähnelt. Um die Datenbank-zu-Format-Zuordnung leichter handhabbar, wiederverwendbar und unabhängig von Formatänderungen zu machen, wird ein Zwischendatenmodellkonzept eingeführt. Dieses Konzept ermöglicht das Ausblenden von Implementierungsdetails aus der Formatzuordnung und ermöglicht die Wiederverwendung eines einzelnen Datenmodells für mehrere Formatzuordnungen.
+
+Sie können EB verwenden, um Formate für eingehende und ausgehende elektronische Dokumente in Übereinstimmung mit den gesetzlichen Anforderungen verschiedener Länder und Regionen zu konfigurieren. ER ermöglicht Ihnen, diese Formate während ihres Lebenszyklus zu verwalten. Sie können z.B. neue gesetzliche Vorgaben übernehmen und Geschäftsdokumente im erforderlichen Format generieren, um Informationen elektronisch mit Regierungsstellen, Banken und anderen Parteien auszutauschen.
 
 Das ER-Modul ist für die Verwendung durch geschäftliche Benutzer anstatt Entwickler bestimmt. Da Sie Formate statt Code konfigurieren, ist der Prozess zum Erstellen und Anpassen von Formaten für elektronische Dokumente schneller und einfacher.
 
-EB unterstützt zurzeit TEXT, XML, Microsoft Word-Dokumente und OPENXML-Arbeitsblattformate. Allerdings unterstützt eine Erweiterungsschnittstelle auch weitere Formate.
+EB unterstützt zurzeit TEXT, XML, JSON, PDF, Microsoft Word, Microsoft Excel und OPENXML-Arbeitsblattformate.
 
 ## <a name="capabilities"></a>Funktionen
 
@@ -48,6 +74,10 @@ Das ER-Modul hat folgende Funktionen:
 
 ## <a name="key-concepts"></a>Schlüsselkonzepte
 
+### <a name="main-data-flow"></a>Hauptdatenfluss
+
+[![EB-Hauptdatenfluss.](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
+
 ### <a name="components"></a>Komponenten
 
 ER unterstützt die folgenden Komponententypen:
@@ -59,74 +89,6 @@ ER unterstützt die folgenden Komponententypen:
 
 Weitere Informationen finden Sie unter [Komponenten der elektronischen Berichterstellung](er-overview-components.md).
 
-#### <a name="data-model-and-model-mapping-components"></a>Datenmodell und Modellzuordnungskomponenten
-
-Eine Datenmodellkomponente ist eine abstrakte Darstellung der Datenstruktur. Es wird verwendet, um bestimmte Geschäftsdomänenbereiche mit ausreichend Details zu beschreiben, um die Berichtsanforderungen für diese Domäne zu erfüllen. Eine Datenmodellkomponente besteht aus den folgenden Teilen:
-
-- <a name="DataModelComponent"></a>Ein Datenmodell als ein Satz domänenspezifischer Geschäftseinheiten und einer hierarchisch strukturierten Definition von Beziehungen zwischen diesen Einheiten.
-- <a name="ModelMappingComponent"></a>Eine Modellzuordnung, die ausgewählte Anwendungsdatenquellen mit einzelnen Elementen eines Datenmodells verknüpft, das zur Laufzeit den Datenfluss und die Regeln der Geschäftsdatenauffüllung zu einer Datenmodellkomponente angibt.
-
-Eine Geschäftseinheit eines Datenmodells wird als Container (Datensatz) dargestellt. Geschäftseinheitseigenschaften werden als Datenelemente (Felder) dargestellt. Jedes Datenelement hat eine(n) eindeutigen Namen, Beschriftung, Beschreibung und Wert. Der Wert jedes Datenelements kann so konzipiert werden, dass er als Zeichenfolge, Ganzzahl, Gleitkommazahl, Datum, Aufzählung, Boolesch, usw. erkannt wird. Außerdem kann er ein anderer Datensatz oder eine Datensatzliste sein.
-
-Eine einzelne Datenmodellkomponente kann mehrere Hierarchien von domänenspezifischen Geschäftsentitäten enthalten. Sie kann auch Modellzuordnungen enthalten, die einen berichtspezifischen Datenfluss bei Laufzeit unterstützen. Die Hierarchien unterscheiden sich durch einen einzelnen Datensatz, der als Stamm zur Modellzuordnung ausgewählt wurde. Beispielsweise unterstützt das Datenmodell des Zahlungsdomänenbereichs möglicherweise die folgenden Zuordnungen:
-
-- Unternehmen \> Kreditor \> Zahlungsbuchungen der Kreditorendomäne
-- Debitor \> Unternehmen \> Zahlungsbuchungen der Debitorendomäne
-
-Beachten Sie, dass Geschäftsentitäten (z. B. Unternehmens- und Zahlungstransaktionen) nur einmal erstellt werden. SIe werden von anderen Zuordnungen wiederverwendet.
-
-Eine Modellzuordnung, die ausgehende elektronische Dokumente unterstützt, hat die folgenden Fähigkeiten:
-
-- Sie kann verschiedene Datentypen als Datenquellen für ein Datenmodell verwenden. Beispielsweise kann sie Tabellen, Datenentitäten, Methoden oder Enumerationen verwenden.
-- Sie unterstützt Benutzereingabeparameter, die als Datenquellen für ein Datenmodell definiert werden, wenn einige Daten in der Laufzeit angegeben werden müssen.
-- Sie unterstützt die Umwandlung von Daten in die erforderlichen Gruppen. Sie können damit zudem Daten filtern, sortieren und zusammenfassen sowie logisch berechnete Felder anhängen, die mit Formeln entworfen werden, die Microsoft Excel-Formeln ähneln. Weitere Informationen finden Sie unter [Formuladesigner in der elektronischen Berichterstattung (ER)](general-electronic-reporting-formula-designer.md)).
-
-Eine Zuordnung, die vorbildliche eingehende elektronische Dokumente unterstützt, umfasst die folgenden Funktionen:
-
-- Sie kann unterschiedliche aktualisierbare Datenelemente als Ziele verwenden. Diese Datenelemente enthalten Tabellen, Datenentitäten und Ansichten. Die Daten kann mithilfe der Daten von eingehenden elektronischen Dokumenten aktualisiert werden. Mehrere Ziele können in einer einzelnen Modellzuordnung verwendet werden.
-- Sie unterstützt Benutzereingabeparameter, die als Datenquellen für ein Datenmodell definiert werden, wenn einige Daten in der Laufzeit angegeben werden müssen.
-
-Für jede Geschäftsdomäne wird eine Datenmodellkomponente entworfen, die als vereinheitlichte Datenquelle für die Berichtserstellung verwendet werden soll, und die die Berichtserstellung von der physischen Implementierung von Datenquellen isoliert. Sie stellt domänenspezifische Geschäftskonzepte und Funktionen in einem Formular dar, die den ersten Entwurf und die weitere Verwaltung eines Berichterstellungsformats effizienter macht.
-
-#### <a name="format-components-for-outgoing-electronic-documents"></a><a name="FormatComponentOutbound"></a>Formatkomponenten für ausgehende elektronische Dokumente
-
-Eine Formatkomponente ist das Schema der Berichtsausgabe, die zur Laufzeit generiert wird. Ein Schema besteht aus folgenden Elementen:
-
-- Ein Format, das die Struktur und den Inhalt des zur Laufzeit generierten ausgehenden elektronischen Dokuments festlegt.
-- Datenquellen als Satz von Benutzereingabeparametern und einem domänenspezifischen Datenmodell, das eine ausgewählte Modellzuordnung verwendet.
-- Eine Formatzuordnung als Satz von Bindungen von Formatdatenquellen mit einzelnen Elementen des Formats, die den Datenfluss und die Regeln für Formatausgabegenerierung zur Laufzeit angeben.
-- Eine Formatprüfung als Satz konfigurierbarer Regeln, die die Berichterstellung zur Laufzeit abhängig von ausgeführtem Kontext steuern. Beispielsweise könnte es eine Regel geben, die die ausgehende Generierung der Zahlungen eines Kreditors beendet und eine Ausnahme auslöst, wenn bestimmte Attribute des ausgewählten Kreditors fehlen, z. B: die Bankkontonummer.
-
-Eine Formatkomponente unterstützt die folgenden Funktionen:
-
-- Das Erstellen der Berichtsausgabe als individuelle Dateien in unterschiedlichen Formaten, wie Text, XML, Microsoft Word-Dokument oder Arbeitsblatt.
-- Erstellen von mehreren Dateien getrennt sowie die Zusammenfassung von Dateien in Zip-Dateien.
-
-Mit einer Formatkomponente können Sie bestimmte Dateien anzufügen, die in der Berichtsausgabe verwendet werden können:
-
-- Excel-Arbeitsmappen, die Arbeitsblätter enthälten, die als Vorlage für Ausgaben im OPENXML-Arbeitsblattformat verwendet werden können
-- Word-Dateien, die ein Dokument enthalten, das als Vorlage für Ausgaben im Microsoft Word-Dokumentformat verwendet werden kann
-- Andere Dateien, die in die Ausgabe des Formats als vordefinierte Dateien übernommen werden können
-
-Die folgende Abbildung zeigt, wie die Daten für diese Formate fließen.
-
-[![Datenfluss für ausgehende Formatkomponenten.](./media/ER-overview-02.png)](./media/ER-overview-02.png)
-
-Um eine einzelne ER-Formatkonfiguration ausführen und ein ausgehendes elektronisches Dokument zu generieren, müssen Sie die Zuordnung der Formatkonfiguration identifizieren.
-
-#### <a name="format-components-for-incoming-electronic-documents"></a><a name="FormatComponentInbound"></a>Formatkomponenten für eingehende elektronische Dokumente
-
-Eine Formatkomponente ist das Schema des eingehenden Dokuments, das zur Laufzeit importiert wird. Ein Schema besteht aus folgenden Elementen:
-
-- Ein Format, das die Struktur und den Inhalt des zur Laufzeit importierten eingehenden elektronischen Dokuments festlegt, das Daten enthält. Eine Formatkomponente wird verwendet, um ein eingehendes Dokument in verschiedenen Formaten, z. B. Text und XML, zu analysieren.
-- Eine Formatzuordnung, die einzelne Formatelemente an die Elemente eines domänenspezifischen Datenmodells bindet. Zur Laufzeit geben die Elemente im Datenmodell den Datenfluss und die Regeln für das Importieren von Daten von einem eingehenden Dokument an und speichern die Daten anschließend in einem Datenmodell.
-- Eine Formatprüfung als Satz konfigurierbarer Regeln, die den Datenimport zur Laufzeit abhängig von ausgeführtem Kontext steuern. Beispielsweise könnte es eine Regel geben, die den Datenimport eines Bankauszugs mit einer Kreditorzahlung beendet und eine Ausnahme auslöst, wenn die Attribute eines bestimmten Kreditors fehlen, z. B: der Lieferantenidentifizierungscode.
-
-Die folgende Abbildung zeigt, wie die Daten für diese Formate fließen.
-
-[![Datenfluss für eingehende Formatkomponenten.](./media/ER-overview-03.png)](./media/ER-overview-03.png)
-
-Um eine einzelne ER-Formatkonfiguration auszuführen, um Daten von einem eingehenden elektronischen Dokument zu importieren, müssen Sie die gewünschte Zuordnung einer Formatkonfiguration und auch den Integrationspunkt einer Modellzuordnung identifizieren. Sie können dieselbe Modellzuordnung und Ziele zusammen mit verschiedenen Formaten für unterschiedliche Arten von eingehenden Dokumenten verwenden.
 
 #### <a name="component-versioning"></a>Teilversionsverwaltung
 

@@ -2,7 +2,7 @@
 title: Eine Dynamics 365 Commerce-Evaluierungsumgebung konfigurieren
 description: In diesem Thema wird erläutert, wie eine Microsoft Dynamics 365 Commerce-Auswertungsumgebung nach ihrer Bereitstellung konfiguriert wird.
 author: psimolin
-ms.date: 08/24/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2e98ea9e98380ee63f6cc1eb6dfc7b84d38c7dbb
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 5883a6e68628d706fa19d7d23b68f17007c32890
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416478"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913726"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Eine Dynamics 365 Commerce-Evaluierungsumgebung konfigurieren
 
@@ -39,6 +39,7 @@ Nachdem Ihre Commerce-Auswertungsumgebung vollständig bereitgestellt wurde, mü
 1. Wählen Sie Ihre Umgebung in der Liste aus.
 1. Wählen Sie in den Umgebungsinformationen rechts die Option **Bei Umgebung anmelden** aus. Sie werden zur Zentralverwaltung von Commerce übermittelt.
 1. Stellen Sie sicher, dass die juristische Person **USRT** oben rechts ausgewählt ist.
+2. Wechseln Sie zu **Commerce-Parameters > Konfigurationsparameter** und vergewissern Sie sich, dass eine Eintrag für **ProductSearch.UseAzureSearch** auf **true** festgelegt ist. Wenn dieser Eintrag fehlt, können Sie diesen Eintrag hinzufügen und **Kanaldatenbank > Vollständige Synchronisierung** für die Commerce Scale Unit ausführen, die Ihrer eCommerce-Website zugeordnet ist.
 
 Stellen Sie bei Aktivitäten nach der Bereitstellung in der Commerce-Zentralverwaltung sicher, dass die juristische Person **USRT** immer ausgewählt ist.
 
@@ -105,6 +106,12 @@ Um Jobs in Commerce zu ermöglichen, folgen Sie diesen Schritten.
     1. Wählen Sie den Datensatz aus.
     1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Batchauftrag** die Option **Status ändern** aus.
     1. Wählen Sie **Wird abgebrochen** aus, und wählen Sie dann **OK** aus.
+
+1. Wenn der Status des Auftrags **Zurückgehalten** lautet, führen Sie die folgenden Schritte aus:
+
+    1. Wählen Sie den Datensatz aus.
+    1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Batchauftrag** die Option **Status ändern** aus.
+    1. Wählen Sie **Im Wartezustand** und dann **OK** aus.
 
 Optional können Sie auch das Serienintervall für die folgenden Einzelvorgänge auf eine (1) Minute festlegen:
 

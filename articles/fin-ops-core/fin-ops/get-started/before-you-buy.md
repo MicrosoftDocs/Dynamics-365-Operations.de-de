@@ -2,7 +2,7 @@
 title: Vor dem Kauf
 description: Schrittweise Anleitungen, die Sie anwenden sollten, wenn Sie überlegen, Dynamics 365 Finance, Dynamics 365 Supply Chain Management oder Dynamics 365 Commerce zu kaufen.
 author: ShellyBakke
-ms.date: 11/23/2020
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 0218dd93440c3cd76f16ac954dd7956998873931444fa1334e7382a177ff3fc9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f994acfb85e5bb7ccb9cbd3e6c0a0f3c4eec318a
+ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757194"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "7874583"
 ---
 # <a name="before-you-buy"></a>Vor dem Kauf
 
@@ -42,7 +42,7 @@ Folgende Überlegungen müssen vorgenommen werden, wenn Sie lokal als Bereitstel
 - [Systemanforderungen für lokale Bereitstellungen](system-requirements-on-prem.md).
 
 > [!IMPORTANT]
-> Lokale Bereitstellungen werden in keiner Public Cloud-Infrastruktur unterstützt, einschließlich Microsoft Azure.
+> Lokale Bereitstellungen werden in keiner Public Cloud-Infrastruktur unterstützt, einschließlich Microsoft Azure. Sie werden jedoch für die Ausführung in [Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) und [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) unterstützt.
 
 Weitere Informationen finden Sie unter [Bereitstellungsoptionen](../../dev-itpro/deployment/choose-deployment-type.md).
 

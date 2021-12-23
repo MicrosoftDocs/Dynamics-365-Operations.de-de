@@ -2,7 +2,7 @@
 title: Eine B2B-E-Commerce-Website einrichten
 description: In diesem Thema wird beschrieben, wie Sie eine B2B-E-Commerce-Website (Business-to-Business) in Microsoft Dynamics 365 Commerce einrichten.
 author: josaw1
-ms.date: 04/23/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c630580dd75a86085746b36726e9ee55a9db2af5
-ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
+ms.openlocfilehash: 171e518258e9600bd7526cf52e3e456d272e6bce
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7713747"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891384"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Website für B2B-E-Commerce einrichten
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Business-to-Business-E-Commerce-Websites (B2B) bieten einige wichtige Funktionen, die den Workflow für einen B2B-Benutzer optimieren. In diesem Thema wird beschrieben, wie Sie eine B2B-E-Commerce-Website in Microsoft Dynamics 365 Commerce einrichten. Es werden die Modul- und Websiteeinstellungen durchlaufen, die konfiguriert werden müssen, um B2B-spezifische Szenarien zu aktivieren.
 
@@ -306,6 +307,30 @@ So fügen Sie einer Einkaufswagenseite in Commerce Site Builder ein Modul zum sc
 
 > [!NOTE] 
 > Das Quick-Add-Modul ist ab der Commerce-Version 10.0.17 verfügbar. Wenn Sie ein Update von einer älteren Version von Commerce durchführen, müssen Sie die Datei appsettings.json manuell aktualisieren. Anweisungen finden Sie unter [SDK- und Modulbibliotheks-Updates](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
+## <a name="add-a-bulk-purchase-module-to-a-product-details-page"></a>Hinzufügen eines Massenkaufmoduls zu einer Produktdetailseite
+
+Das Massenkaufmodul auf einer Produktdetailseite (PDP) bietet eine matrixbasierte Erfahrung, mit der ein Käufer schnell mehrere Varianten eines Produkts in den Warenkorb legen kann. Wenn ein Website-Benutzer mehrere Varianten desselben Produkts bestellen muss, entfällt dadurch die Notwendigkeit, die Kombination von Produktdimensionen auszuwählen, die Menge zu definieren, die Variante in den Warenkorb zu legen und dann den Vorgang für andere Kombinationen von Produktdimensionen zu wiederholen.
+
+Führen Sie die folgenden Schritte aus, um das Massenkaufmodul im Commerce Site Builder zu einer PDP hinzuzufügen.
+
+1. Gehen Sie zu **Vorlagen** und wählen Sie die PDP-Vorlage Ihrer Website.
+1. Wählen Sie **Bearbeiten** aus.
+1. Auf der **Standardseite** wählen Sie **Haupt**-Slot und wählen dann die Ellipsen (**...**) und wählen **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** wählen Sie das Modul **Container** und dann **OK** aus.
+1. Wählen Sie im Slot **Container** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Massenkauf** und dann **OK** aus.
+1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
+1. Gehen Sie zu **Seiten** und wählen Sie die PDP Ihrer Seite.
+1. Auf der **Standardseite** wählen Sie **Haupt**-Slot und wählen dann die Ellipsen (**...**) und wählen **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** wählen Sie das Modul **Container** und dann **OK** aus.
+1. Wählen Sie im Eigenschaftenbereich für das Modul **Behälter** unter **Breite** die Option **Behälter füllen**.
+1. Wählen Sie im Slot **Container** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Massenkauf** und dann **OK** aus.
+1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
+
+> [!NOTE] 
+> Das Massenkaufmodul ist ab der Version 10.0.24 von Commerce verfügbar. Wenn Sie ein Update von einer älteren Version von Commerce durchführen, müssen Sie die Datei appsettings.json manuell aktualisieren. Anweisungen finden Sie unter [SDK- und Modulbibliotheks-Updates](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

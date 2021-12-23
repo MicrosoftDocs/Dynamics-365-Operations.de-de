@@ -2,7 +2,7 @@
 title: Masterdatensuche für die Steuerberechnungskonfiguration aktivieren
 description: In diesem Thema wird erläutert, wie Sie Masterdaten-Suchfunktion für die Steuerberechnung einrichten und aktivieren.
 author: kai-cloud
-ms.date: 11/03/2021
+ms.date: 11/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: dafeac01aaff62cbbd5ce6ecb0af0ef111f513b2
-ms.sourcegitcommit: 76fe020f9c5f4e5cc2e93f5ccb3b040f12b0363e
+ms.openlocfilehash: 455e8becfdfa910a3733719653e1a91557b2f59a
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "7749509"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867351"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Masterdatensuche für die Steuerberechnungskonfiguration aktivieren 
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie Masterdaten-Suchfunktion für die Steuerberechnung einrichten und aktivieren. Es steht eine Dropdown-Liste zur Auswahl von Werten in der Steuerberechnungskonfiguration für Felder wie **Kreditorenkonto**, **Artikelcode** und **Lieferbedingungen** zur Verfügung. Diese Werte stammen von der verbundenen Microsoft Dynamics 365 Finance-Umgebung mit der Microsoft Dataverse-Datenquelle.
+In diesem Thema wird erläutert, wie Sie Masterdaten-Suchfunktion für die Steuerberechnung einrichten und aktivieren. Es steht eine Dropdown-Liste zur Auswahl von Werten in der Steuerberechnungskonfiguration für Felder wie **Juristische Person**, **Kreditorenkonto**, **Artikelcode** und **Lieferbedingungen** zur Verfügung. Diese Werte stammen von der verbundenen Microsoft Dynamics 365 Finance-Umgebung mit der Microsoft Dataverse-Datenquelle.
+
+> [!NOTE] 
+> Die Masterdaten-Suchfunktion für die Steuerberechnung ist eine optionale Funktion. Sie können die folgenden Schritte überspringen, wenn Sie die Funktion **Unterstützung für Dataverse-Datenquellen des Steuerdienstes** im Regulatory Configuration Service (RCS) deaktivieren. In diesem Fall ist die Dropdown-Liste jedoch in der Steuerberechnungskonfiguration nicht verfügbar.
 
 1. Richten Sie die Microsoft Power Platform-Integration in Microsoft Dynamics Lifecycle Services (LCS) ein. Weitere Informationen finden Sie unter [Integration von Microsoft Power Platform – Übersicht über Add-Ins](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). Nachdem Sie diesen Schritt abgeschlossen haben, wird der Name einer Microsoft Power Platform-Umgebung im Abschnitt **Power Platform-Integration** angezeigt.
 2. Gehen Sie zum [Microsoft Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments), und wählen Sie den Umgebungsnamen aus. Die Umgebungs-URL wird bereitgestellt.

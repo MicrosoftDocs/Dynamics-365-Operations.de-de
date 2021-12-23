@@ -2,7 +2,7 @@
 title: Übersicht über die Budgetsteuerung
 description: In diesem Thema werden die Budgetsteuerungsfunktionen vorgestellt und Informationen bereitgestellt, die Sie bei der Konfiguration der Budgetsteuerung unterstützen, um die Verwaltung der Finanzressourcen Ihres Unternehmens zu optimieren.
 author: panolte
-ms.date: 06/25/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0c8e7a08796a7f1c537978e406f53531e0f0682e6b5a769ced9d771063c30d5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 21277361a3d05c57be7aeaa05348723e23873ef6
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772878"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890699"
 ---
 # <a name="budget-control-overview"></a>Übersicht über die Budgetsteuerung
 
@@ -78,9 +78,7 @@ Dann können Sie auf der Registerkarte **Berechtigungen für Budgetüberschreitu
 Dann können Sie auf der Registerkarte **Verfügbare Budgetmittel** die Formel definieren, die verwendet wird, um die verfügbaren Budgetmittel zu berechnen. Je nachdem wie konservativ eine Organisation ihre Finanzquellen verwaltet oder unter Berücksichtigung der Bestimmungen oder der Industrieanforderungen, kann die Berechnung einen Entwurf oder ungebuchte Dokumenten enthalten. 
 
 > [!NOTE]
-> Wenn diese Berechnung während eines Budgetzyklus geändert wird, beachten Sie, dass Dokumente, die möglicherweise zuvor Budgetsteuerungsüberprüfungen bestanden haben und gebucht oder abgeschlossen wurden, diesen Status beibehalten. In der Anwendungsversion 10.0.17 wird eine neue Funktion **Verfolgen Sie nur Beträge in der Berechnung der verfügbaren Haushaltsmittel** für gewisse Kunden verfügbar. Mit dieser Funktion können Sie ändern, welche Daten in den Budgetnachverfolgungs-Tabellen verfolgt werden. Wenn diese Funktion aktiviert ist, werden Beträge nur gespeichert, wenn sie für die Berechnung der verfügbaren Budgetmittel ausgewählt wurden. Um anzufordern, dass die Funktion **Verfolgen Sie nur Beträge in der Berechnung der verfügbaren Budgetmittel** aktiviert wird, wenden Sie sich an den Support. 
-
-### <a name="documents-and-journals"></a>Dokumente und Erfassungen
+> Wenn diese Berechnung während eines Budgetzyklus geändert wird, beachten Sie, dass Dokumente, die möglicherweise zuvor Budgetsteuerungsüberprüfungen bestanden haben und gebucht oder abgeschlossen wurden, diesen Status beibehalten. Mit einer Funktion mit dem Namen **Nur Beträge in der Berechnung der verfügbaren Haushaltsmittel verfolgen** können Sie ändern, welche Daten in den BudgetSourceTracking-Tabellen verfolgt werden. Wenn diese Funktion aktiviert ist, werden Beträge nur gespeichert, wenn sie für die Berechnung der verfügbaren Budgetmittel ausgewählt wurden. Weitere Informationen finden Sie unter [Budgetmittel verfügbar](budget-funds-available.md).
 
 Auf der Registerkarte **Dokumente und Erfassung** können Sie auswählen, welche Quelldokumente und Erfassungen von Budgetsteuerungsüberprüfungen abhängig sind und ob die Prüfung am Positionseintrag oder für das gesamte Dokument durchgeführt wird. 
 

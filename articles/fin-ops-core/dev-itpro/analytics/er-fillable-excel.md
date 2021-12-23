@@ -2,7 +2,7 @@
 title: Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
 description: Dieses Thema enthält Informationen zum Entwerfen eines Formats für die elektronische Berichterstellung (EB), um eine Excel-Vorlage auszufüllen und ausgehende Dokumente im Excel-Format zu generieren.
 author: NickSelin
-ms.date: 10/29/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cfacc2232201b85a49068ee724b55e71b60eb2be
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: ebe2647bb382421921aa6ffc733953f379a8af10
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731637"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890864"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
 
 [!include[banner](../includes/banner.md)]
 
-Sie können eine Formatkonfiguration für die [elektronische Berichtersterstellung (EB)](general-electronic-reporting.md) mit einer EB-[Formatkomponente](general-electronic-reporting.md#FormatComponentOutbound) entwerfen, die Sie konfigurieren können, um ein ausgehendes Dokument in einem Microsoft Excel-Arbeitsmappenformat zu generieren. Zu diesem Zweck müssen bestimmte Komponenten des EB-Formats verwendet werden.
+Sie können eine Formatkonfiguration für die [elektronische Berichtersterstellung (EB)](general-electronic-reporting.md) mit einer EB-Formatkomponente entwerfen, die Sie konfigurieren können, um ein ausgehendes Dokument in einem Microsoft Excel-Arbeitsmappenformat zu generieren. Zu diesem Zweck müssen bestimmte Komponenten des EB-Formats verwendet werden.
 
 Führen Sie die folgenden Schritte im Thema [Konfiguration zum Generieren von Berichten im OPENXML-Format entwerfen](tasks/er-design-reports-openxml-2016-11.md) aus, um weitere Informationen zu dieser Funktion zu erhalten.
 
@@ -330,6 +330,40 @@ Wenn ein ausgehendes Dokument in einem Microsoft Excel-Arbeitsmappenformat gener
 6. Generieren Sie ein druckbares FTI-Dokument, und überprüfen Sie die Fußzeile des generierten Dokuments.
 
     ![Überprüfen der Fußzeile eines generierten Dokuments im Excel-Format.](./media/er-fillable-excel-footer-4.gif)
+
+## <a name="example-2-fixing-the-merged-cells-epplus-issue"></a><a name="example-2"></a>Beispiel 2: Behebung des EPPlus-Problems mit verbundenen Zellen
+
+Sie können ein EB-Format ausführen, um ein ausgehendes Dokument in einem Excel-Arbeitsmappenformat zu generieren. Wenn die **Die Nutzung der EPPlus-Bibliothek im Rahmen der elektronische Berichterstellung aktivieren**-Funktion ist im **Funktionsverwaltung**-Arbeitsplatz aktiviert ist, wird die [EPPlus-Bibliothek](https://www.nuget.org/packages/epplus/4.5.2.1) verwendet, um eine Excel-Ausgabe zu erstellen. Allerdings können Sie wegen eines bekannten [Excel-Verhaltens](https://answers.microsoft.com/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) und einer Einschränkung der EPPlus-Bibliothek auf die folgende Ausnahme stoßen: „Verbundene Zellen können nicht gelöscht/überschrieben werden. Ein Bereich wird teilweise mit einem anderen zusammengeführten Bereich zusammengeführt.“ Um zu erfahren, welche Art von Excel-Vorlagen diese Ausnahme verursachen können und wie Sie das Problem beheben können, führen Sie das folgende Beispiel durch.
+
+1. Erstellen Sie in der Excel-Desktopanwendung eine neue Excel-Arbeitsmappe.
+2. Fügen Sie auf Arbeitsblatt **Sheet1** den **ReportTitle**-Namen für Zelle **A2** hinzu.
+3. Zellen **A1** und **A2** verbinden.
+
+    ![Überprüfen der Ergebnisse vom Zusammenführen der Zellen A1 und A2 in der entworfenen Excel-Arbeitsmappe in der Excel-Desktopanwendung.](./media/er-fillable-excel-example2-1.png)
+
+3. Auf der Seite **Konfigurationen** [ein neues EB-Format](er-fillable-excel.md#add-a-new-er-format) hinzufügen, um ein ausgehendes Dokument im Format einer Excel-Arbeitsmappe zu generieren.
+4. Auf der **Formatdesigner**-Seite die gestaltete Excel-Arbeitsmappe als neue Vorlage für ausgehende Dokumente in das hinzugefügte ER-Format [importieren](er-fillable-excel.md#template-import).
+5. Konfigurieren Sie auf der **Zuordnung**-Registerkarte die Bindung für die **ReportTitle**-Komponente des Typs [Zelle](er-fillable-excel.md#cell-component).
+6. Führen Sie as konfigurierte EB-Format aus. Beachten Sie, dass die folgende Ausnahme ausgelöst wird: „Verbundene Zellen können nicht gelöscht/überschrieben werden. Ein Bereich wird teilweise mit einem anderen zusammengeführten Bereich zusammengeführt.“
+
+    ![Überprüfen der Ergebnisse der Ausführung des konfigurierten EB-Formats auf der Seite Format-Designer.](./media/er-fillable-excel-example2-2.png)
+
+Sie können das Problem auf eine der folgenden Arten beheben:
+
+- **Einfacher, aber nicht zu empfehlen:** Aktivieren Sie im **Funktionsverwaltung**-Arbeitsbereich die Funktion **Die Nutzung der EPPlus-Bibliothek im Rahmen der elektronischen Berichterstellung aktivieren**. Obwohl dieser Ansatz einfacher ist, können bei seiner Verwendung andere Probleme auftreten, da einige EB-Funktionen nur unterstützt werden, wenn die **Die Nutzung der EPPlus-Bibliothek im Rahmen der elektronischen Berichterstellung aktivieren**-Funktion aktiviert ist.
+- **Empfohlen:** Führen Sie die folgenden Schritte aus:
+
+    1. Ändern Sie in der Excel-Desktop-Anwendung die Excel-Arbeitsmappe auf eine der folgenden Weisen:
+
+        - Haben Sie Auf Arbeitsblatt **Blatt1** die Zusammenführung der Zellen **A1** und **A2** auf.
+        - Ändern Sie die Referenz für den **ReportTitle**-Namen von **=Sheet1!$A$2** auf **=Sheet1!$A$1**.
+
+        ![Überprüfen der Ergebnisse der Änderung der Referenz in der designierten Excel-Arbeitsmappe in der Excel-Desktop-Anwendung.](./media/er-fillable-excel-example2-3.png)
+
+    2. Auf der **Formatdesigner**-Seite die modifizierte Excel-Arbeitsmappe in das bearbeitbare EB-Format [importieren](er-fillable-excel.md#template-import), um die vorhandene Vorlage zu aktualisieren.
+    3. Führen Sie das geänderte EB-Format aus.
+
+        ![Überprüfen des generierten Excel-Dokuments in der Excel-Desktop-Anwendung.](./media/er-fillable-excel-example2-4.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

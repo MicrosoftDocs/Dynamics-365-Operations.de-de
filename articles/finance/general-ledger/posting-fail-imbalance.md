@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-8-03
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fc413f8230849653aef8c2951f1749823edded6e
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 0f1f49a7da2f015d90987587fc251a36cfe82d49
+ms.sourcegitcommit: cd7f1c63f48542a8ebcace7b3d512eb810d4b56e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605428"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "7903249"
 ---
 # <a name="journal-posting-failure-because-of-imbalance"></a>Fehler bei der Erfassung von Erfassungen aufgrund eines Ungleichgewichts
 
@@ -52,13 +52,13 @@ In einem unterstützten Szenario kann ein Beleg mehr als eine Transaktionswähru
 
 Wenn alle Zeilen eines Belegs die gleiche Transaktionswährung haben und die Beträge in der Transaktionswährung ausgeglichen sind, prüft das System, dass die Beträge in der Buchhaltungswährung ausgeglichen sind. Wenn der Beleg in einer Fremdwährung eingegeben wurde, wird der Wechselkurs in den Belegzeilen verwendet, um die Beträge in Transaktionswährung in die Buchhaltungswährung umzurechnen. Zunächst wird jede Zeile des Belegs umgerechnet und auf zwei Dezimalstellen gerundet. Dann werden die Zeilen summiert, um die Gesamtsoll- und Gesamtsollbeträge zu ermitteln. Da jede Zeile umgerechnet wird, kann es sein, dass die Gesamtsoll- und Gesamtsollbeträge nicht ausgeglichen sind. Wenn der absolute Wert der Differenz jedoch innerhalb des Wertes **Maximale Centdifferenz** liegt, der auf der Seite **Hauptbuchparameter** definiert ist, wird der Beleg gebucht, und die Differenz wird automatisch auf das Centdifferenz-Konto gebucht.
 
-Wenn der Beleg mehr als eine Transaktionswährung hat, wird jede Zeile des Belegs in die Buchhaltungswährung umgerechnet und auf zwei Dezimalstellen gerundet, und dann werden die Zeilen summiert, um die Gesamtsoll- und Gesamthabenbeträge zu ermitteln. Um als ausgeglichen zu gelten, müssen die Belastungen und Gutschriften ausgeglichen sein, entweder in der Umrechnung oder unter Einbeziehung der Cent-Rundungsdifferenz der Buchhaltungswährung.
+Wenn der Beleg mehr als eine Transaktionswährung hat, wird jede Zeile des Belegs in die Buchhaltungswährung umgerechnet und auf zwei Dezimalstellen gerundet, und dann werden die Zeilen summiert, um die Gesamtsoll- und Gesamthabenbeträge zu ermitteln. Um als ausgeglichen zu gelten, müssen die Soll- und Habenbeträge in der Buchhaltungswährung ausgeglichen sein.  Dem Beleg wird niemals ein Cent-Differenzkonto in der Abrechnungswährung hinzugefügt, um die Belastungen und Gutschriften auszugleichen. 
 
 ### <a name="reporting-currency"></a>Berichtswährung
 
 Wenn alle Zeilen eines Beleges die gleiche Transaktionswährung haben und die Beträge in der Transaktionswährung ausgeglichen sind, prüft das System, ob die Beträge in der Berichtswährung ausgeglichen sind. Wenn der Beleg in einer Fremdwährung eingegeben wurde, wird der Exchange-Satz in den Belegzeilen verwendet, um die Beträge in Transaktionswährung in die Berichtswährung umzurechnen. Zunächst wird jede Zeile des Belegs umgerechnet und auf zwei Dezimalstellen gerundet. Dann werden die Zeilen summiert, um die Gesamtsoll- und Gesamtsollbeträge zu ermitteln. Da jede Zeile umgerechnet wird, kann es sein, dass die Gesamtsoll- und Gesamtsollbeträge nicht ausgeglichen sind. Wenn die Differenz jedoch innerhalb des Wertes **Maximale Pfennigrundung in der Berichtswährung** liegt, der auf der Seite **Hauptbuch-Parameter** definiert ist, wird der Beleg gebucht und die Differenz wird automatisch auf das Pfennig-Differenzkonto gebucht.
 
-Wenn der Beleg mehr als eine Transaktionswährung hat, wird jede Zeile des Belegs in die Berichtswährung umgerechnet und auf zwei Dezimalstellen gerundet, und dann werden die Zeilen summiert, um die Gesamtsoll- und Gesamthabenbeträge zu ermitteln. Um als ausgeglichen zu gelten, müssen die Belastungen und Gutschriften ausgeglichen sein, entweder in der Umrechnung oder unter Einbeziehung der Cent-Rundungsdifferenz der Berichtswährung.
+Wenn der Beleg mehr als eine Transaktionswährung hat, wird jede Zeile des Belegs in die Berichtswährung umgerechnet und auf zwei Dezimalstellen gerundet, und dann werden die Zeilen summiert, um die Gesamtsoll- und Gesamthabenbeträge zu ermitteln. Um als ausgeglichen zu gelten, müssen die Soll- und Habenbeträge in der Berichtswährung ausgeglichen sein.  Dem Beleg wird niemals ein Cent-Differenzkonto in der Berichtswährung hinzugefügt, um die Belastungen und Gutschriften auszugleichen.
 
 ### <a name="example-for-an-accounting-currency-imbalance"></a>Beispiel für ein Ungleichgewicht in der Buchhaltungswährung
 

@@ -2,7 +2,7 @@
 title: Übersicht über die Steuerberechnung
 description: In diesem Thema werden der Gesamtumfang und die Funktionen der Steuerberechnung erläutert.
 author: wangchen
-ms.date: 10/15/2021
+ms.date: 11/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: caa7e458763b6ba6b2b85ab016a1aa2e53cee89a
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 28b14eba7dd870e80a83f8d31671525b593a09c9
+ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647056"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892423"
 ---
 # <a name="tax-calculation-overview"></a>Übersicht über die Steuerberechnung
 
@@ -65,9 +65,23 @@ Die Steuerberechnung wird in den folgenden Azure-Regionen bereitgestellt. Weiter
 > [!NOTE]
 > Steuerberechnung unterstützt keine früheren Versionen von Dynamics 365, wie z.B. Dynamics AX 2012, oder Lokal-Bereitstellungen von Dynamics 365.
 
+## <a name="versions"></a>Versionen
+Wir empfehlen Ihnen, Ihre Steuerberechnungskonfiguration mit der Version zu importieren und einzurichten, die Ihrer Finance- oder Supply Chain Management-Version entspricht.
+
+| Finance‑ oder Supply Chain Management-Version | Steuerkonfigurationsversion               |
+| --------------- | --------------------------------------- |
+| 10.0.18         | Steuerkonfiguration - Europa 30.12.82     |
+| 10.0.19         | Steuerberechnungs-Konfiguration 36.38.193 |
+| 10.0.20         | Steuerberechnungs-Konfiguration 40.43.208 |
+| 10.0.21         | Steuerberechnungs-Konfiguration 40.48.215 |
+| 10.0.22         | Steuerberechnungs-Konfiguration 40.48.215 |
+| 10.0.23         | Steuerberechnungs-Konfiguration 40.50.221 |
+| 10.0.24         | Steuerberechnungs-Konfiguration 40.50.225 |
+
+
 ## <a name="data-flow"></a>Datenfluss
 
-Hier ist ein Überblick über den Daten Flow Prozess für tTax Calculation. 
+Hier ist ein Überblick über den Datenflussprozess für die Steuerberechnung. 
 
 1. Zeigen Sie in RCS die Konfigurationen für das Modell des steuerpflichtigen Belegs und die Konfigurationen für die Modellzuordnung an und importieren Sie sie. Wenn Sie Konfigurationen für ein erweitertes Szenario erweitern müssen, lesen Sie [Datenfelder in Steuerkonfigurationen hinzufügen](tax-service-add-data-fields-tax-configurations.md).
 2. In RCS erstellen oder pflegen Sie steuerliche Funktionen. Sie können Steuerfunktionen verwenden, um Steuersätze und Regeln für die Anwendbarkeit von Steuern zu pflegen.
@@ -169,6 +183,10 @@ Die folgenden Länder/Regionen für die Hauptadresse einer juristischen Entität
 - Japan
 - Malaysia
 - Singapur
+
+Die folgenden Länder/Regionen für die Hauptadresse einer juristischen Entität werden in Version 10.0.24 unterstützt:
+
+- Mexiko
 
 ## <a name="related-resources"></a>Zugehörige Ressourcen
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 013a5b1ac5b99c6a8ac75885e6d65067d5ed4c2ffd5cc5f625a73963666c0a81
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e1ade9af06848b125fb6253ea1182f6098588150
+ms.sourcegitcommit: 88f8a0369ce66b82314db9639491b695e18a7e5c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779499"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7902506"
 ---
 # <a name="close-the-fiscal-year"></a>Geschäftsjahr abschließen
 
@@ -36,7 +36,7 @@ Dieses Verfahren führt Sie durch den Jahresabschlussprozess, der Salden in ein 
 
 4. Wählen Sie „Ja“ oder „Nein“ für die Option **Abschlussbuchungen bei Umbuchung erstellen** aus.
 
-    Bei "Ja" werden zwei Buchungen erstellt. Ein Beleg wird im abgeschlossenen Geschäftsjahr erstellt, um die Salden von GuV-Sachkonten auf Null zu setzen und ein zweiter Beleg wird im folgenden Geschäftsjahre für die Anfangssalden erstellt. Bei "Nein" wird ein einzelner Belegt im folgenden Geschäftsjahre für die Anfangssalden erstellt.  
+    Bei "Ja" werden zwei Buchungen erstellt. Ein Beleg wird im abgeschlossenen Geschäftsjahr erstellt, um die Salden von allen Sachkonten auf Null zu setzen und ein zweiter Beleg wird im folgenden Geschäftsjahre für die Anfangssalden erstellt. Bei "Nein" wird ein einzelner Belegt im folgenden Geschäftsjahre für die Anfangssalden erstellt.  
 
 5. Wählen Sie „Ja“ oder „Nein“ für die Option **Geschäftsjahresstatus auf dauerhaft abgeschlossen festlegen** aus.
 

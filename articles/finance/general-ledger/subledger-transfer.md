@@ -2,7 +2,7 @@
 title: Untergeordnetes Sachkonto an das Hauptbuch übertragen
 description: In diesem Thema werden Funktionen beschrieben, die im Zusammenhang mit der Übertragung des untergeordneten Sachbuchs an das Hauptbuch stehen.
 author: rcarlson
-ms.date: 07/20/2021
+ms.date: 12/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 03c04a5eb8b544b582019ddd204382900b162d952842c901f69ed4a853bd8183
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 213bbc2541c614aa26b0c830431818fb99c7682d
+ms.sourcegitcommit: f5885999e008a49fe072d95f15e239905c24918a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716644"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900729"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>Untergeordnetes Sachkonto an das Hauptbuch übertragen
 
@@ -39,7 +39,7 @@ In Version 10.0.8 wurden Verbesserungen vorgenommen, um die Leistung der **async
 
 Die Funktionalität zur asynchronen Übernahme von Nebenbuchchargen hilft, die Datenübernahme vom Nebenbuch in das Hauptbuch zu verbessern. Durch das Gruppieren von Sätzen kleinerer Transaktionen und das Übertragen der Transaktionen in Gruppen verarbeitet die Funktionalität Transaktionen effizienter. Wenn Transaktionen gruppiert werden, werden die Ressourcen des Batch-Servers effizienter genutzt.
 
-Die asynchrone Übertragung von Nebenbuchchargen erfordert, dass der Chargenserver eingerichtet, online und funktionsfähig ist. Ansonsten funktioniert die **Asynchron** Übertragungsoption nicht.
+Die asynchrone Übertragung von Chargen des untergeordneten Sachkontos erfordert, dass der Stapelverarbeitungsserver eingerichtet, online und funktionsfähig ist, da Stapelaufgaben zur sofortigen Ausführung auf dem Stapelverarbeitungsserver erstellt werden. Wenn die Funktion **Übertragung des untergeordneten Sachkontos zur Leistungsoptimierung im Hauptbuch** aktiviert ist, muss der **Prozessautomatisierung**-System-Batchauftrag namens **Prozessautomatisierungsabfrage-Systemjob** auch aktiviert sein. Weitere Informationen finden Sie unter [Prozessautomatisierung](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 Die Effizienzänderung auf Chargen-Ebene verwendet einen einzigen wiederkehrenden Chargen-Job für alle juristischen Personen im System. Zur Laufzeit wird ein neuer Chargen-Job erstellt, um die benötigten, noch nicht übertragenen Datensätze zu verarbeiten. Weitere Einstellungen können über die **Prozessautomatisierung** Seite in der Systemverwaltung gesteuert werden. Auf dieser Seite können Sie den Hintergrundprozess ändern, die Häufigkeit ändern und eine Schlafperiode definieren.
 

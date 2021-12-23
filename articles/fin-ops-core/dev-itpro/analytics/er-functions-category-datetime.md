@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 706331eaadf602aba46463fdcfc0d38f1fc94e08
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 0a0322e5490474e21ad91076ecc486f38a776e32
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647262"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890776"
 ---
 # <a name="list-of-er-functions-in-the-date-and-time-category"></a>Liste der EB-Funktionen in der Kategorie „Datum und Uhrzeit“
 
@@ -37,8 +37,8 @@ Datums- und Zeitfunktionen für die elektronische Berichterstellung (EB) können
 | [DateTimeFormat](er-functions-datetime-datetimeformat.md) | Diese Funktion gibt den Wert *String* zurück, der einen vorgegebenen Wert für Datum/Uhrzeit als Text im angegebenen Format und in einer optional angegebenen Kultur darstellt. |
 | [DateTimeValue](er-functions-datetime-datetimevalue.md) | Diese Funktion gibt den Wert *DateTime* zurück, der über einen vorgegebenen Textwert in das spezielle Format und in einen optional angegebenen Wert für Datum/Uhrzeit konvertiert wird. |
 | [DateToDateTime](er-functions-datetime-datetodatetime.md) | Diese Funktion gibt den Wert *DateTime* zurück, der über einen vorgegebenen Datumswert in einen Wert für Datum/Uhrzeit in der Koordinierten Weltzeit (Greenwich Mean Time \[GMT\]) konvertiert wird. |
-| [DateValue](er-functions-datetime-datevalue.md) | Diese Funktion gibt den Wert *Date* zurück, der über einen vorgegebenen Textwert in das spezielle Format und in einen optional angegebenen Wert für Datum/Uhrzeit konvertiert wird. |
-| [DayOfYear](er-functions-datetime-dayofyear.md) | Diese Funktion gibt einen Wert für *Ganzzahl* zurück, der die Anzahl der Tage zwischen dem 01. Januar und dem angegebenen Datum darstellt. |
+| [DateValue](er-functions-datetime-datevalue.md) | Diese Funktion gibt den Wert *[Date](er-formula-supported-data-types-primitive.md#date)* zurück, der über einen vorgegebenen Textwert in das spezielle Format und in einen optional angegebenen Wert für Datum/Uhrzeit konvertiert wird. |
+| [DayOfYear](er-functions-datetime-dayofyear.md) | Diese Funktion gibt einen *[Ganzzahl](er-formula-supported-data-types-primitive.md#integer)*-Wert zurück, der die Anzahl der Tage zwischen dem 01. Januar und dem angegebenen Datum darstellt. |
 | [Tage](er-functions-datetime-days.md) | Diese Funktion gibt einen Wert für *Ganzzahl* zurück, der die Anzahl der Tage zwischen einem angegebenen Datum und einem zweiten angegebenen Datum darstellt. |
 | [Now](er-functions-datetime-now.md) | Diese Funktion gibt den Wert *DateTime* zurück, der das aktuelle Datum und die Uhrzeit des Anwendungsservers darstellt. |
 | [NullDate](er-functions-datetime-nulldate.md) | Diese Funktion gibt den Wert *Date* zurück, der das Datum **null** (01. Januar 1900) darstellt. |
@@ -46,6 +46,7 @@ Datums- und Zeitfunktionen für die elektronische Berichterstellung (EB) können
 | [SessionNow](er-functions-datetime-sessionnow.md) | Diese Funktion gibt den Wert *DateTime* zurück, der das aktuelle Datum und die Uhrzeit der Anwendungssitzung darstellt. |
 | [SessionToday](er-functions-datetime-sessiontoday.md) | Diese Funktion gibt den Wert *Date* zurück, der das aktuelle Anwendungssitzungsdatum darstellt. |
 | [Heute](er-functions-datetime-today.md) | Diese Funktion gibt den Wert *Date* zurück, der das aktuelle Anwendungsserverdatum darstellt. |
+| [WeekNum](er-functions-datetime-weeknum.md) | Diese Funktion gibt einen *Ganzzahl*-Wert zurück, der die Woche des Jahres darstellt. |
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

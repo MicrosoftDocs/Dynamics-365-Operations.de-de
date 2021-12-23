@@ -1,8 +1,8 @@
 ---
 title: Debitorenverwaltung in Geschäften
 description: In diesem Thema wird erläutert, wie Einzelhändler Debitorenverwaltungsfunktionen an der Verkaufsstelle (POS) in Microsoft Dynamics 365 Commerce aktivieren können.
-author: josaw1
-ms.date: 09/01/2021
+author: gvrmohanreddy
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 395bc7049ba32c1e572730e482b81613a4873c59
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 29e45419f712e25092b473e34144ac1146e4ed9b
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675224"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913625"
 ---
 # <a name="customer-management-in-stores"></a>Debitorenverwaltung in Geschäften
 
@@ -42,38 +42,13 @@ Einzelhändler können die Seite **Alle Shops** in der Commerce-Zentrale (**Reta
 
 Vertriebsmitarbeiter können mehrere Adressen für einen Kunden erfassen. Der Name und die Telefonnummer des Kunden werden von den Kontaktinformationen geerbt, die jeder Adresse zugeordnet sind. Das Inforegister **Adressen** eines Debitordatensatzes enthält ein **Zweck**-Feld, das Vertriebsmitarbeiter bearbeiten können. Wenn der Debitortyp **Person** ist, ist der Standardwert **Zuhause**. Wenn der Debitortyp **Organisation** ist, ist der Standardwert **Unternehmen**. Andere Werte, die dieses Feld unterstützt, sind **Zuhause**, **Büro** und **Postfach**. Der Wert des **Land**-Felds für eine Adresse wird von der primären Adresse geerbt, die auf der Seite **Organisationseinheit** in der Commerce-Zentrale unter **Organisationsverwaltung \> Organisationen \> Organisationseinheiten** angegeben ist.
 
-## <a name="sync-customers-and-async-customers"></a>Synchrone und asynchrone Debitoren
 
-> [!IMPORTANT]
-> Wann immer der POS offline geschaltet wird, erstellt das System die Kunden selbst dann automatisch asynchron, wenn der asynchrone Debitorenerstellungsmodus deaktiviert ist. Daher müssen Administratoren der Commerce-Zentrale einen wiederkehrenden Batchauftrag für den **P-Einzelvorgang**, den Einzelvorgang **Debitoren und Geschäftspartner im asynchronen Modus synchronisieren** (früher als **Debitoren und Geschäftspartner im asynchronen Modus synchronisieren** bezeichnet) und den Einzelvorgang **1010** erstellen und planen, sodass alle asynchrone Debitoren in der Commerce-Zentrale in synchrone Debitoren konvertiert werden.
-
-In Commerce gibt es zwei Arten der Debitorerstellung: synchron (oder sync) und asynchron (oder async). Standardmäßig werden Debitoren synchron erstellt. Mit anderen Worten, sie werden in Echtzeit in der Commerce-Zentrale erstellt. Der synchrone Modus für die Debitorerstellung ist von Vorteil, da neue Debitoren sofort kanalübergreifend durchsucht werden können. Es hat jedoch auch einen Nachteil. Weil es [Commerce Data Exchange: Echtzeitservice](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service)-Aufrufe an die Commerce-Zentrale erzeugt, kann die Leistung beeinträchtigt werden, wenn viele Aufrufe zur Debitorerstellung gleichzeitig getätigt werden.
-
-Wenn die Option **Debitor im asynchronen Modus erstellen** auf **Ja** gesetzt ist im Funktionsprofil des Geschäfts (**Retail und Commerce \> Kanaleinrichtung \> Einrichtung Onlineshop \> Funktionsprofile**), werden Echtzeit-Serviceaufrufe nicht zum Erstellen von Debitordatensätzen in der Debitordatenbank verwendet. Der asynchrone Debitorerstellungsmodus wirkt sich nicht auf die Leistung der Commerce-Zentrale aus. Jedem neuen Async-Debitordatensatz wird eine temporäre GUID (Globally Unique Identifier) zugewiesen und als Debitorenkontokennung verwendet. Diese GUID wird POS-Benutzern nicht angezeigt. Stattdessen werden diese Benutzer **Ausstehende Synchronisierung** als Debitorenkontokennung sehen. 
-
-### <a name="convert-async-customers-to-sync-customers"></a>Asynchrone Debitoren in synchrone Debitoren konvertieren
-
-Um asynchrone Debitoren in synchrone Debitoren zu konvertieren, müssen Sie zuerst den **P-Einzelvorgang** ausführen, um die asynchronen Debitoren an die Commerce-Zentrale zu senden. Führen Sie anschließend den Einzelvorgang **Debitoren und Geschäftspartner im asynchronen Modus synchronisieren** (früher als **Debitoren und Geschäftspartner im asynchronen Modus synchronisieren** bezeichnet) zum Erstellen von Debitorenkonto-IDs aus. Führen Sie zum Schluss den Einzelvorgang **1010** zum Synchronisieren der neuen Debitorenkonto-IDs mit den Kanälen aus.
-
-### <a name="async-customer-limitations"></a>Asynchrone Debitorenbeschränkungen
-
-Die asynchrone Debitorenfunktionalität weist derzeit die folgenden Einschränkungen auf:
-
-- Asynchrone Debitorendatensätze können nur bearbeitet werden, wenn der Debitor in der Commerce-Zentrale erstellt und die neue Debitorenkonto-ID wieder mit dem Kanal synchronisiert wurde. Daher kann die Adresse für einen asynchronen Debitor erst gespeichert werden, wenn dieser Debitor mit der Commerce-Zentrale synchronisiert wurde, da das Hinzufügen einer Debitorenadresse intern als Bearbeitungsvorgang im Debitorenprofil implementiert wird. Wenn jedoch die Funktion **Asynchrone Erstellung für Debitorenadressen aktivieren** aktiviert ist, können die Debitorenadressen auch für asynchrone Kunden gespeichert werden.
-- Mitgliedschaften können nicht mit asynchronen Debitoren verknüpft werden. Daher erben neue asynchrone Debitoren keine Zugehörigkeiten vom Standarddebitor.
-- Kundenkarten können nur dann an asynchrone Debitoren ausgegeben werden, wenn die neue Debitorenkonto-ID wieder mit dem Kanal synchronisiert wurde.
-- Sekundäre E-Mail-Adressen und Telefonnummern können für asynchrone Debitoren nicht erfasst werden.
-
-Obwohl einige der zuvor genannten Einschränkungen Sie dazu veranlassen könnten, für Ihr Unternehmen die Option für synchrone Debitoren auszuwählen, arbeitet das Commerce-Team daran, die Funktionen für asynchrone Debitoren besser an die Funktionen für synchrone Debitoren anzupassen. Beispielsweise können Sie ab der Commerce-Version 10.0.22 mit der neuen Funktion **Asynchrone Erstellung für Debitorenadressen aktivieren**, die Sie im Arbeitsbereich **Funktionsverwaltung** aktivieren, neu erstellte Debitorenadressen sowohl für synchrone als auch für asynchrone Debitoren speichern. Um diese Adressen im Debitorenprofil in der Commerce-Zentrale zu speichern, müssen Sie einen wiederkehrenden Batchauftrag für den **P-Einzelvorgang**, den Einzelvorgang **Debitoren und Geschäftspartner im asynchronen Modus synchronisieren** und den Einzelvorgang **1010** erstellen und planen, sodass alle asynchrone Debitoren in der Commerce-Zentrale in synchrone Debitoren konvertiert werden.
-
-### <a name="customer-creation-in-pos-offline-mode"></a>Debitorenerstellung im POS-Offlinemodus
-
-Wann immer der POS offline geschaltet wird, erstellt das System die Kunden selbst dann automatisch asynchron, wenn der asynchrone Debitorenerstellungsmodus deaktiviert ist. Daher müssen Administratoren der Commerce-Zentrale, wie bereits erwähnt, einen wiederkehrenden Batchauftrag für den **P-Einzelvorgang**, den Einzelvorgang **Debitoren und Geschäftspartner im asynchronen Modus synchronisieren** und den Einzelvorgang **1010** erstellen und planen, sodass alle asynchrone Debitoren in der Commerce-Zentrale in synchrone Debitoren konvertiert werden.
-
-> [!NOTE]
-> Wenn die Option **Gemeinsam genutzte Debitorendatentabellen filtern** auf **Ja** auf der Seite **Handelskanalschema** (**Retail und Commerce \> Zentralverwaltungseinrichtung \> Commerce-Planer \> Kanaldatenbankgruppe**) gesetzt ist, werden Debitorendatensätze nicht im POS-Offlinemodus erstellt. Weitere Informationen finden Sie unter [Ausschluss von Offlinedaten](dev-itpro/implementation-considerations-cdx.md#offline-data-exclusion).
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+[Asynchroner Debitorerstellungsmodus](async-customer-mode.md)
+
+[Asynchrone Debitoren in synchrone Debitoren konvertieren](convert-async-to-sync.md)
 
 [Debitorattribute](dev-itpro/customer-attributes.md)
 

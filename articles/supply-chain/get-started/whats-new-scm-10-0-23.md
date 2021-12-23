@@ -1,5 +1,5 @@
 ---
-title: Vorschau von Dynamics 365 Supply Chain Management 10.0.23
+title: Vorschau von Dynamics 365 Supply Chain Management 10.0.23 (Januar 2022)
 description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Supply Chain Management 10.0.23 entweder neu oder geändert sind.
 author: kamaybac
 ms.date: 10/15/2021
@@ -10,14 +10,14 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 7950d225bd528c05c14df108f4d44cef3e348ebb
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: fd6483c86b34d355e3727a95794b7876dc54ec32
+ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777790"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "7891792"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10023"></a>Vorschau von Dynamics 365 Supply Chain Management 10.0.23
+# <a name="preview-of-dynamics-365-supply-chain-management-10023-january-2022"></a>Vorschau von Dynamics 365 Supply Chain Management 10.0.23 (Januar 2022)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -26,6 +26,7 @@ In diesem Thema werden die Funktionen aufgeführt, die in der Microsoft Dynamics
 
 - **Vorschau auf Release:** Oktober 2021
 - **Allgemeine Verfügbarkeit von Release (manuelles Update):** Dezember 2021
+- **Allgemeine Verfügbarkeit von Release (automatisches Update):** Januar 2022
 
 ## <a name="features-included-in-this-release"></a>In dieser Version enthaltene Funktionen
 
@@ -53,7 +54,8 @@ Wenn Sie eine dieser Funktionen ein- oder ausschalten möchten, müssen Sie dies
 | Lager- und Lagerortverwaltung | \[Russland\] Wertmäßige Storno-Lagerbuchungen gemäß dem Korrekturkennzeichen im Finanzbeleg für Aufträge buchen | Diese Funktion wirkt sich auf die Funktion zur Korrektur von Gutschriften für Russland aus. Es ermöglicht das Buchen von Bestandsbuchungen für Verkaufsrechnungen gemäß der Korrekturmöglichkeit im Hauptbuch. Wenn diese Funktion aktiviert ist, gibt es keine Diskrepanzen mehr zwischen **Korrektur** Markierung auf dem Finanzbeleg der Lagertransaktion und **Storno** Flag auf Lagertransaktionen. |
 | Lager- und Lagerortverwaltung | (Russland) Berechnung des Lagersaldo-Umschlagsberichts im Batch | Für russische Lokalisierungen von Supply Chain Management bietet diese Funktion die Möglichkeit, den *Lagersaldo-Umschlagsbericht* im Batch auszuführen, ihn zu speichern und die früher generierten Berichte zu anzeigen. |
 | Lager- und Lagerortverwaltung | (Russland) Übersetzungen in lokale Sprache in landes- oder regionsspezifischen Primärformularen in der Lagerverwaltung verwenden | Für russische Lokalisierungen von Supply Chain Management bietet diese Funktion die Verwendung von russischen Übersetzungen für Produkt-/Artikelnamen und Maßeinheiten in den folgenden russischspezifischen Lagerausdrucken: Inventurliste (INV-3), Inventurliste (INV-5) und Inventurliste (INV-6). |
-| Beschaffung | Aktualisierungshistorie für Bestellung bereinigen | Mit dieser Funktion können Sie temporäre historische Aufzeichnungen im Zusammenhang mit Bestellaktualisierungen bereinigen. Es fügt eine neue Schaltfläche namens **Update-Verlauf der Käufe bereinigen** zum Aktionsbereich auf der Seite **Alle Bestellungen** hinzu. Diese Funktion ist standardmäßig aktiviert. |
+| Produktprogrammplanung | Azure Machine Learning Service für die Planung des Bedarfs | Diese Funktion ermöglicht es dem Azure Machine Learning Service, Bedarfsplanungen basierend auf historischen Daten zu generieren. Weitere Informationen finden Sie unter [Einrichtung der Bedarfsplanung](../master-planning/demand-forecasting-setup.md). |
+| Beschaffung | Aktualisierungsverlauf für Bestellung bereinigen | Mit dieser Funktion können Sie temporäre historische Aufzeichnungen im Zusammenhang mit Bestellaktualisierungen bereinigen. Es fügt eine neue Schaltfläche namens **Update-Verlauf der Käufe bereinigen** zum Aktionsbereich auf der Seite **Alle Bestellungen** hinzu. Diese Funktion ist standardmäßig aktiviert. |
 | Produktionssteuerung | (Vorschau) Automatische Kommissionierung von für den Lagerort aktivierten Materialien für automatisch gebuchte Kommissionierlisten | Mit dieser Funktion können Sie Lagerungsdimensionen für automatisch gebuchte, abgeleitete und zurückgelieferte Kommissionierlistenerfassungen automatisch kommissionieren und abschließen. |
 | Produktionssteuerung | Validieren Sie das Verfallsdatum von Rohstoffen gegen das geplante Verbrauchsdatum | Diese Funktion ändert, wie das Verfallsdatum von Chargen validiert wird, wenn eine Charge von Rohmaterial zur Verwendung während der Produktion reserviert wird. Wenn diese Funktion aktiviert ist, wird das Ablaufdatum der Charge gegen das geplante Verbrauchsdatum (das Rohmaterialdatum) validiert, das in der Produktionsstücklistenposition oder Chargenauftragsformelposition festgelegt ist. Wenn diese Funktion deaktiviert ist, wird das Ablaufdatum der Charge mit dem geplanten Lieferdatum des Produktions- oder Chargenauftrags (wie zuvor) verglichen. |
 | Vertrieb und Marketing | Aktualisierungsverlauf für Verkauf basierend auf Alter bereinigen | Mit dieser Funktion können Sie das maximale Alter von Datensätzen festlegen, die aufbewahrt werden sollen, wenn die periodische Aufgabe **Bereinigung der Verkaufsaktualisierungshistorie** ausgeführt wird. Ältere Datensätze werden gelöscht. Dies ist nützlich, wenn Sie die regelmäßige Ausführung der Aufgabe festlegen, da das Alter immer relativ zum Ausführungsdatum der Aufgabe berechnet wird. Ohne diese Funktion können Sie nur ein bestimmtes Datum für die ältesten Aufzeichnungen festlegen, die aufbewahrt werden sollen. |

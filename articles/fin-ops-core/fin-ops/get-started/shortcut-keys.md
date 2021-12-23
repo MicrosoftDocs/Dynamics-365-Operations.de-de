@@ -2,7 +2,7 @@
 title: Tastenkombinationen
 description: Dieses Thema bietet einen Überblick über die Tastenkombinationen, die Sie in Finance and Operations-Apps verwenden können.
 author: jasongre
-ms.date: 11/12/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 969cd6aaf2d7c4cee7bb95029f19741372f915eb
-ms.sourcegitcommit: ab32fc90ea498ce3b629384f78cbe1aee747f157
+ms.openlocfilehash: 6e6f6faf75bb9dc2b11b3a27a886b1674cc7b339
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "7800192"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913517"
 ---
 # <a name="keyboard-shortcuts"></a>Tastenkombinationen
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Mit den folgenden Tastaturkombinationen können Sie Daten in Finance and Operations-Apps schnell und effizient eingeben.
 
@@ -150,6 +149,7 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | Die Standardaktivität in einem Raster ausführen<blockquote>[!NOTE] Die Tastenkombination wird aktiviert, wenn der Fokus auf einer Zelle liegt, die einen Link enthält und alle Zellen in dieser Spalte Links haben</blockquote> | EINGABETASTE                           |
 | Fokus zwischen ausgewählter Zeile und Kopfzeile umschalten                                                               | ALT+UMSCHALT+H                     |
 | Die aktuelle Spalte vergrößern/verkleinern (mit Fokus in der Kopfzeile)                                                  | NACH-RECHTS-TASTE / NACH-LINKS-TASTE        |
+| Größe der aktuellen Spalte zur nächsten/vorherigen Position bewegen (mit Fokus in der Kopfzeile)                                   | STRG+UMSCHALT+NACH-RECHTS-TASTE / STRG+UMSCHALT+NACH-LINKS-TASTE |
 | Rasterfilterung für die aktuelle Spalte öffnen (mit Fokus in der Kopfzeile)                                              | Eingeben                           |
 | Größe der aktuellen Spalte an den Inhalt anpassen (mit Fokus in der Kopfzeile)                                           | A (oder doppelklicken Sie auf den Ziehpunkt für die Spaltengröße) |
 

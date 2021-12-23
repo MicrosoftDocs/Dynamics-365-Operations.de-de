@@ -2,7 +2,7 @@
 title: Anlagenabschreibung
 description: Dieser Artikel enthält eine Übersicht der Abschreibung in Anlagen.
 author: moaamer
-ms.date: 10/30/2017
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,20 +15,23 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54da35a39791a9e528896f3decd10476ad5af2d9
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 2442830766ef1dccc109db5569bfbbbc8182f027
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674999"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890979"
 ---
 # <a name="fixed-asset-depreciation"></a>Anlagenabschreibung
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Dieser Artikel enthält eine Übersicht der Abschreibung in Anlagen.
 
 Eine Abschreibung ist eine periodische Buchung, die normalerweise den Wert des Anlagevermögens in der Bilanz verringert und in einem Gewinn- und Verlustkonto als Ausgabe gebucht wird. Folglich wird ein Hauptkonto normalerweise für die periodische Abschreibung in der Bilanz verwendet. Ein Gegenkonto ist ein Konto im Gewinn- und Verlustteil des Kontenplans.
+
+Ab Version 10.0.24 ermöglicht die Anlagenbuchkonfigurationsoption **Positive Abschreibung berechnen** auf der Seite **Bücher** die Abschreibung, um eine erworbene Anlage mit negativem Buchwert (Haben) zu belasten.
 
 ## <a name="depreciation-adjustment"></a>Abschreibungsregulierung
 Normalerweise wird nur eine Korrektur an einer bereits gebuchten Abschreibungsbuchung als Abschreibungsanpassung gebucht. Daher werden das Hauptkonto und das Gegenkonto ebenso wie die Konten für die Abschreibung eingerichtet. Bei einer Abschreibungsanpassung kann es sich um einen positiven oder einen negativen Betrag handeln, jedoch bleiben das Hauptkonto (als Bilanzkonto) und das Gegenkonto (normalerweise als Gewinn- und Verlustkonto) funktionell gleich.

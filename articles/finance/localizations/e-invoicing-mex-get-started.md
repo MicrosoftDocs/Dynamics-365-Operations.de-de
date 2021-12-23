@@ -2,7 +2,7 @@
 title: Erste Schritte mit der elektronischen Rechnungsstellung für Mexiko
 description: Dieses Thema enthält Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung für Mexiko erleichtern.
 author: gionoder
-ms.date: 09/22/2020
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 4266d7bca163b1d6aa1261e086f10a4f0f5d7e360051db169fbcab34363c81c3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f512a6208bc85cd5796ce9515d2bc440f92ea79f
+ms.sourcegitcommit: 385fc4e9c641b43734ddb030893904489361af7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742152"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881590"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Erste Schritte mit der elektronischen Rechnungsstellung für Mexiko
 
@@ -35,7 +35,15 @@ Dieses Thema enthält Informationen, die Ihnen den Einstieg in die elektronische
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Bevor Sie die Schritte in diesem Thema ausführen, müssen Sie die Schritte in [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md) ausführen.
+Bevor Sie die Schritte in diesem Thema ausführen, müssen Sie die Schritte in [Erste Schritte mit Serviceverwaltung der elektronischen Rechnungsstellung](e-invoicing-get-started-service-administration.md) und [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md) ausführen.
+
+## <a name="set-up-the-cadena-xslt"></a>Cadena XSLT einrichten
+
+Führen Sie die folgenden Schritte aus, um das Cadena XSLT-Schema zur Globalisierungsfunktion für die CFDI-Verarbeitung hinzuzufügen.
+
+1. Laden Sie das Schema von der [SAT-Website ](http://www.sat.gob.mx/sitio_internet/cfd/3/cadenaoriginal_3_3/cadenaoriginal_3_3.xslt) herunter.
+2. Komprimieren Sie das Schema in eine ZIP-Datei.
+3. Speichern Sie die xslt-Datei in Ihrem Azure Storage-Konto, das in Ihrer Dienstumgebung für den neuen Container eingerichtet ist.
 
 ## <a name="rcs-setup"></a>RCS-Einstellungen
 
@@ -127,6 +135,17 @@ Um eine CFDI-Rechnungsstornierung zu übermitteln, sind die Funktionseinrichtung
 
 > [!NOTE]
 > Gehen Sie ebenso vor, um die URL für die Aktion **Aufrufen des mexikanischen PAC-Dienstes** für die Funktionseinrichtungen **Abbrechen** und **Stornierungsanfrage** zu aktualisieren.
+
+### <a name="set-up-the-path-for-the-cadena-xlst-schema"></a>Den Pfad für das Cadena XLST-Schema einrichten
+
+1. Wählen Sie auf der Seite **Einrichtung der Funktionsversion** auf der Registerkarte **Variablen** den Variablennamen **DigitalSignatureXSLT** aus.
+2. Geben Sie im Feld **Werte** Folgendes ein: {„containerUrl“:„https://&lt;AccountStorageName&gt;.blob.core.windows.net/&lt;ContainerName&gt;“,„path“:„&lt;RelativePath&gt;“}
+   
+    wobei gilt: <RelativePath> = Ordner\\Ordner\\Dateiname mit doppelten Backslashes muss ContainerName den Container bezeichnen, der für den Dienst verwendet wird.
+   
+    Ein Beispiel für die Variable wäre:
+    
+    {„path“:„xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\\dev\\cadena_xslt“,„containerUrl“:https://yyyyyyyyyy.blob.core.windows.net/containername}
 
 ## <a name="assign-the-draft-version-to-an-e-invoicing-environment"></a>Zuweisen der Entwurfsversion zu einer Umgebung für die elektronische Rechnungsstellung
 

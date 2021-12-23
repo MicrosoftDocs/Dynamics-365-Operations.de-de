@@ -2,7 +2,7 @@
 title: Auftragssuche für Gast-Checkouts aktivieren
 description: In diesem Thema wird beschrieben, wie Sie die Bestellsuche für Gastbezahlvorgänge in Microsoft Dynamics 365 Commerce aktivieren.
 author: stuharg
-ms.date: 09/01/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: 639ee670b83198423425d03dad308306c9eed25c
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: a2a10b122faae354b0ea002e43a9bd60157f6216
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674975"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891497"
 ---
 # <a name="enable-order-lookup-for-guest-checkouts"></a>Auftragssuche für Gast-Checkouts aktivieren
 
@@ -63,6 +63,16 @@ Nachdem Sie den Wert des Felds **Personenbezogene Daten in die Suche nach Gastbe
 ## <a name="configure-the-order-lookup-module"></a>Das Auftragssuchmodul konfigurieren
 
 Das Modell zur Bestellsuche in der Commerce-Modulbibliothek wird verwendet, um das Formular zu rendern, das Gastbenutzer zur Auftragssuche verwenden. Das Modul zur Auftragssuche kann in den Text-Slot jeder Seite eingefügt werden, für die keine Kundenanmeldung erforderlich ist. Informationen zur Konfiguration des Moduls finden Sie unter [Auftragssuchmodul](order-lookup-module.md).
+
+## <a name="configure-the-order-details-page"></a>Konfigurieren der Seite „Auftragsdetails“
+
+Bevor Gastbenutzer ihre Bestelldetails anzeigen können, muss die Bestelldetailseite auf Ihrer E-Commerce-Site so konfiguriert werden, dass keine Anmeldung erforderlich ist. Um die Anmeldepflicht für Ihre Bestelldetailseite zu deaktivieren, öffnen Sie die Seite im Commerce Site Builder, wählen Sie den Slot **Standardseite (erforderlich)** in der Strukturansicht aus und deaktivieren Sie das Kontrollkästchen **Anmeldung erforderlich?** unten im Eigenschaftenbereich rechts.
+
+## <a name="add-a-link-to-order-details-in-transactional-emails"></a>Hinzufügen eines Link zu Bestelldetails in Transaktions-E-Mails
+
+In auftragsbezogenen E-Mails können Sie einen Link oder eine Schaltfläche bereitstellen, die Kunden zur Bestelldetailseite für ihre Bestellung führt. Um diesen Link oder diese Schaltfläche hinzuzufügen, erstellen Sie einen HTML-Hyperlink, der auf die Seite mit den Bestelldetails auf Ihrer E-Commerce-Site verweist, und übergeben Sie die Bestellbestätigungs-ID und die E-Mail-Adresse des Kunden als URL-Parameter, wie im folgenden Beispiel gezeigt.
+
+`<a href="https://[domain]/[orderdetailspage]?confirmationId=%orderconfirmationid%&propertyName=email&propertyValue=%customeremailaddress%" target="_blank">View my order status</a>`
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

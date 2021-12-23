@@ -2,7 +2,7 @@
 title: Mietverträge hinzufügen oder kopieren (Vorschau)
 description: In diesem Thema wird beschrieben, wie Sie einen neuen Mietvertrag erstellen, indem Sie Informationen dazu im Anlagenleasing eingeben oder Informationen aus einem vorhandenen Mietvertrag kopieren.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2f2e6837819158688f3fd6bc28909a106a05a098ca917cab9032a2d0044042fc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ee4803c4653b8c2df2cb731652456b1ce2796cd0
+ms.sourcegitcommit: e77d72fde17a43bd1780c265702254011af7407c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761325"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7893644"
 ---
 # <a name="add-or-copy-leases-preview"></a>Mietverträge hinzufügen oder kopieren (Vorschau)
 
@@ -35,6 +35,8 @@ Gehen Sie folgendermaßen vor, um einen Mietvertrag im Analgenleasing zu erstell
 1. Wählen Sie auf der Seite **Mietvertragsübersicht** im Aktivitätsbereich **Neu** aus.
 2. Geben Sie die Informationen zum Mietvertrag ein. Erforderliche Felder haben rote Ränder.
 
+> Das Startdatum für die Mietzahlung darf nicht vor dem Mietstartdatum liegen. Wenn Sie ein Startdatum für die Mietzahlung eingeben, das vor dem Startdatum für die Miete liegt, erhalten Sie eine Fehlermeldung.
+  
 ## <a name="create-a-lease-schedule"></a>Einen Mietplan erstellen
 
 Führen Sie die folgenden Schritte aus, um einen Mietplan zu erstellen, nachdem Sie die Informationen für den Mietvertrag eingegeben haben.

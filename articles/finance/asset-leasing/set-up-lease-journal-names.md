@@ -2,7 +2,7 @@
 title: Leasingerfassungsnamen einrichten
 description: In diesem Thema wird erläutert, wie Sie Namen von Leasingerfassungen definieren. Namen von Leasingerfassungen geben die Erfassungen an, in die Einträge gebucht werden, die aus dem Anlagenleasing stammen.
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1ea35ec40ddd459e1a9e7641557147e23fe45d3e
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: b9d8136ae4f960a586b9526751fc8bf6e7675c8d
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343213"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890749"
 ---
 # <a name="set-up-lease-journal-names"></a>Leasingerfassungsnamen einrichten
 
@@ -39,6 +39,7 @@ Führen Sie die folgenden Schritte aus, um die Namen der Leasingerfassung zu kon
 2. Auf der **Allgemeines**-Registerkarte im **Name der Erfassung der erstmaligen Erfassung**-Feld wählen Sie eine Erfassung aus. Alle Journaleinträge der erstmaligen Erfassung werden unter diesem Erfassungsnamen gebucht.
 3. Wählen Sie im Feld **Rechnungserfassungsname** eine Erfassung aus. Wenn die **An den Kreditor bezahlen**-Option für das Leasingbuch auf **Ja** festgelegt ist, werden Rechnungen für Miet- und Ausgabenzahlungen unter diesem Erfassungsnamen gebucht.
 4. Wählen Sie im Feld **Leasingerfassungsname** eine Erfassung aus. Alle Abschreibungs-, Zins- und kurzfristigen Umgliederungseinträge werden unter diesem Erfassungsnamen gebucht. Wenn die **An den Kreditor bezahlen**-Option für das Leasingbuch auf **Nein** festgelegt ist, werden Einträge für Miet- und Ausgabenzahlungen auch unter diesem Erfassungsnamen gebucht.
+5. Wählen Sie im Feld **Name der Leasingänderungserfassung** eine Erfassung aus. Leasinganpassungs-, Kündigungs- und Wertminderungstransaktionen werden auf diesen Erfassungsnamen gebucht. Dem ausgewählten Erfassungsnamen sollte kein Workflow oder keine Genehmigung zugewiesen sein. Wenn der Name der Leasingänderungserfassung nicht definiert ist, werden Leasinganpassungs-, Kündigungs- und Wertminderungstransaktionen an den Erfassungsnamen gebucht, der im Feld **Leasingerfassungsname** ausgewählt ist. 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

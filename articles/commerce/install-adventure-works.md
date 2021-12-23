@@ -2,7 +2,7 @@
 title: Adventure Works-Design installieren
 description: In diesem Thema wird beschrieben, wie Sie das Adventure Works-Design in Microsoft Dynamics 365 Commerce installieren.
 author: anupamar-ms
-ms.date: 07/21/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ad704c6c3b95abcfd52e449a0ffbb4b82b236498ae8d2775c4e65811de3ef503
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d9d0d04c1a698c765b5effcca88624e6fb99da64
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763835"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913701"
 ---
 # <a name="install-the-adventure-works-theme"></a>Adventure Works-Design installieren
 
@@ -32,7 +32,7 @@ In diesem Thema wird beschrieben, wie Sie das Adventure Works-Design in Microsof
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Bevor Sie das Adventure Works-Design installieren, müssen Sie über eine Dynamics 365 Commerce Umgebung (Commerce Version 10.0.20 oder höher) verfügen, die Retail Cloud Scale Unit (RCSU), das Commerce Online Software Development Kit (SDK) und die Commerce-Modulbibliothek enthält. Informationen zur Installation des Commerce SDK und der Modulbibliothek finden Sie unter [SDK- und Modulbibliothek-Updates](e-commerce-extensibility/sdk-updates.md). 
+Bevor Sie das Adventure Works-Design installieren, müssen Sie über eine Dynamics 365 Commerce Umgebung (Commerce Version 10.0.20 oder höher) verfügen, die Retail Cloud Scale Unit (RCSU), das Commerce Online Software Development Kit (SDK) und die Commerce-Modulbibliothek enthält. Informationen zur Installation des Commerce SDK und der Modulbibliothek finden Sie unter [Entwicklungsumgebung einrichten](e-commerce-extensibility/setup-dev-environment.md). 
 
 ## <a name="installation-steps"></a>Installationsschritte
 
@@ -48,11 +48,19 @@ Das Adventure Works-Themenpaket steht im **dynamics365-Commerce** Feed als **@ms
 
     `"@msdyn365-commerce-theme:registry" "https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/"`  
     
-Führen Sie den folgenden Befehl an der Eingabeaufforderung aus, um das Paket in Ihrer lokalen Umgebung zu installieren. Dieser Befehl aktualisiert automatisch die Datei package.json, sodass sie die Abhängigkeit enthält.
+Um das Paket in Ihrer lokalen Umgebung zu installieren, führen Sie den Befehl `yarn add THEME_PACKAGE@VERSION` von der Eingabeaufforderung aus, wobei **THEME_PACKAGE** das Themenpaket (@msdyn365-commerce-theme/adventureworks-theme-kit) und **VERSION** die Versionsnummer der verwendeten Modulbibliothek ist. Es ist wichtig, dass die Versionen des Themenpakets und der Modulbibliothek übereinstimmen. Um die richtige Versionsnummer der Modulbibliothek zu finden, öffnen Sie die Datei „package.json“ und suchen Sie den Wert **starter-pack** im Abschnitt **Abhängigkeiten**. Im folgenden Beispiel verwendet die Datei „package.json“ Version 9.32 der Modulbibliothek, die Dynamics 365 Commerce Version 10.0.22 zugeordnet ist.  
 
-`yarn add @msdyn365-commerce-theme/adventureworks-theme-kit`
+```json
+"dependencies": {
+    "@msdyn365-commerce-modules/starter-pack": "9.32",
+}
+```
 
-In der **package.json** Datei sollten Sie die Theme-Version auf eine bestimmte Version aktualisieren.
+Das folgende Beispiel zeigt, wie Sie den Befehl `yarn add` zum Hinzufügen von Version 9.32 des Adventure Works-Themas ausführen. Der Befehl aktualisiert automatisch die Datei package.json, sodass sie die Abhängigkeit enthält.
+
+`yarn add @msdyn365-commerce-theme/adventureworks-theme-kit@9.32`
+
+Weitere Informationen zum Aktualisieren der Version der Modulbibliothek finden Sie unter [SDK- und Modulbibliothekupdates](e-commerce-extensibility/sdk-updates.md). 
 
 > [!IMPORTANT]
 > - Die Designversion sollte mit der Version der Modulbibliothek übereinstimmen, um sicherzustellen, dass alle Funktionen wie erwartet funktionieren. 

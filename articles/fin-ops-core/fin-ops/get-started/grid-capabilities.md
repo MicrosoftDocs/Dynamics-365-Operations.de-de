@@ -2,7 +2,7 @@
 title: Rasterfunktionen
 description: In diesem Thema werden mehrere leistungsstarke Funktionen der Rastersteuerung beschrieben. Sie müssen die neue Rasterfunktion aktivieren, damit auf diese Fähigkeiten zugegriffen werden kann.
 author: jasongre
-ms.date: 10/25/2021
+ms.date: 12/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a21a41399b5884fda9cce214f99851ffa93bbc43
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: ba3640cf13fecc54f4cc58cd8996e434cd16cf60
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700136"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890868"
 ---
 # <a name="grid-capabilities"></a>Rasterfunktionen
 
@@ -119,6 +119,9 @@ Auf die gleiche Weise, wie Sie alle Zeilen im Raster auswählen (oder die Auswah
 
 ### <a name="hiding-column-names"></a>Spaltennamen ausblenden
 Beim Gruppieren von Daten wird standardmäßig der Spaltenname in der Gruppenkopfzeile angezeigt. Sie können den Spaltennamen in Gruppenkopfzeilen unterdrücken, indem Sie **Rasteroptionen** > **Gruppenspaltennamen ausblenden** auswählen.
+
+### <a name="grouping-on-date-and-time-columns"></a>Gruppierung nach Datums‑ und Uhrzeitspalten
+Ab Version 10.0.24 wurde für Datums‑ oder DateTime-Felder die Option zur Gruppierung nach Jahr, Monat oder Tag hinzugefügt. Die Gruppe „Wert“ in der entsprechenden Kopfzeile entspricht dem Format aus diesem Feld. Darüber hinaus können Sie die DateTime‑ und Uhrzeit-Felder nach Stunde, Minute oder Sekunde gruppieren.    
 
 ## <a name="freezing-columns"></a>Spalten fixieren
 Einige Spalten in einem Raster sind möglicherweise sehr wichtig für den Kontext, sodass sie nicht möchten, dass sie nicht mehr angezeigt werden. Stattdessen möchten Sie möglicherweise, dass die Werte in diesen Spalten immer sichtbar sind. Die Funktion **Spalten im Raster fixieren** bietet Benutzern diese Flexibilität. 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 14e86a49777eefefae711bfe0d756361b09d69c2
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 43814023474d44b8c95bae087c7b6a4d52d21471
+ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778448"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7891925"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integration in Fertigungssteuerungssysteme von Drittanbietern
 
@@ -191,7 +191,7 @@ Die folgende Tabelle zeigt die Felder, die jede Zeile im `RouteCardLines`-Abschn
 
 | Feldname | Status | Typ |
 |---|---|---|
-| `OperationNumber` | Obligatorisch | Obligatorisch, Integer |
+| `OperationNumber` | Obligatorisch | Ganzzahl |
 | `OperationPriority` | Optional | Enumeration (Primary \| Secondary1 \| Secondary2 \| ... \| Secondary20) |
 | `OperationId` | Optional | Zeichenfolge |
 | `OperationsResourceId` | Optional | Zeichenfolge |

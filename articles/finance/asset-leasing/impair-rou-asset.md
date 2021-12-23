@@ -2,7 +2,7 @@
 title: Wertminderung bei Nutzungsrechten an Leasingobjekten
 description: In diesem Thema wird die Funktionalität beschrieben, mit der eine Wertminderung erfasst und der Zeitplan für die Abschreibung von Anlagen eines Ausrüstungs-Leasingverhältnisses des Themas 842 zur Kodifizierung von Rechnungslegungsstandards (ASC 842) angepasst wird.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 816f65cff77339ef8684c0449ed2e5f0762b17a2e22174412d5ea9f2a1a62069
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd79880dc8aa77eea8c16f350c0853013c6ad17b
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723822"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890829"
 ---
 # <a name="impair-right-of-use-assets"></a>Wertminderung bei Nutzungsrechten an Leasingobjekten
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Wenn der Buchwert eines Nutzungsrechts am Leasingobjekt nicht erzielbar ist, müssen Sie möglicherweise prüfen, ob die Anlage wertgemindert ist. Wenn Sie feststellen, dass der Vermögenswert wertgemindert ist, kann Analgenleasing die Wertminderung erfassen und den Abschreibungsplan entsprechend anpassen. In diesem Thema wird die Funktionalität beschrieben, mit der eine Wertminderung erfasst und der Zeitplan für die Abschreibung eines Ausrüstungs-Leasingverhältnisses des Themas 842 zur Kodifizierung von Rechnungslegungsstandards (ASC 842) angepasst wird. Die gleiche Methode gilt auch für Mietverträge nach dem International Financial Reporting Standard 16 (IFRS 16).
 
@@ -37,13 +38,16 @@ Der verbleibende Restbetrag des Nutzungsrecht am Leasingobjekt wird linear für 
 3. In dem Dialogfeld, das angezeigt wird, geben Sie in das Feld **Wertminderungsbetrag** den Betrag der Wertminderung der Anlage ein. Um das Nutzungsrecht am Leasingobjekt zu verringern, sollten Sie einen positiven Wert eingeben.
 4. In dem Feld **Transaktionsdatum** geben Sie das Datum ein, an dem die Wertminderungsbuchung gebucht werden soll.
 5. In dem Feld **Verbleibende Zeiträume** geben Sie die verbleibende Anzahl der zu amortisierenden Monate ein.
-6. Aktivieren Sie den **Buchen**-Parameter, wenn das System den Journaleintrag für den Wertminderungsaufwand automatisch buchen soll. Wenn Sie diesen Parameter deaktiviert lassen, erstellt das System den Eintrag, bucht ihn jedoch nicht. Sie können dann den Eintrag aus der Seite **Anlagenleasingerfassungen** buchen.
-7. Stellen Sie die **Vorschau vor der Buchung**-Option auf **Ja**, um den vorgeschlagenen Eintrag anzuzeigen, bevor er erstellt oder gebucht wird.
-8. Stellen Sie die **Buch schließen**-Option auf **Ja**, um das Leasingbuch zu schließen. Sie können diese Aktion nicht rückgängig machen. Einträge können nicht für geschlossene Mietverträge gebucht werden, und geschlossene Mietverträge können nicht angepasst werden.
-9. Wählen Sie **OK**, um den Wertminderungseintrag zu erstellen oder zu buchen.
-10. Um den wertgeminderten Anlagenabschreibungsplan anzuzeigen, öffnen Sie die Seite Anlagenabschreibungsplan für dieses Mietvertragsbuch. Die Anlage wird nun linear über die Anzahl der Monate abgeschrieben, die Sie im Feld **Verbleibende Zeiträume** eingegeben haben.
-11. Um den Journaleintrag für den Wertminderungsaufwand anzuzeigen, wählen Sie **Anlagenleasingerfassung** im Aktionsbereich des wertgeminderten Mietvertragsbuchs aus. Das System erstellt einen Journaleintrag, der das Buchungskonto für Wertminderungsaufwendungen belastet und das Buchungskonto für Mietanlagen gutschreibt.
-12. Um den neuen Buchwert des Nutzungsrechts am Leasingobjekt anzuzeigen, wählen Sie **Anlagentransaktionen** im Aktionsbereich des Mietvertragsbuchs aus.
+6. Stellen Sie die Option **Vorschau** auf die Anzeige des vorgeschlagenen Anlagesaldo‑ und Finanzeintrags, bevor sie erstellt oder gebucht werden.
+7. Stellen Sie die **Buch schließen**-Option auf **Ja**, um das Leasingbuch zu schließen. Sie können diese Aktion rückgängig machen, indem Sie den Status **Mietvertrag wieder öffnen** verwenden. Einträge können nicht für geschlossene Mietverträge gebucht werden, und geschlossene Mietverträge können nicht angepasst werden. 
+8. Wählen Sie **Buchen**, um den Wertminderungseintrag zu erstellen oder zu buchen.
+
+    > [!NOTE]
+    > Nach der Buchung der Wertminderungstransaktion wird eine neue Buchversion erstellt.
+
+9. Um den wertgeminderten Anlagenabschreibungsplan anzuzeigen, öffnen Sie die Seite Anlagenabschreibungsplan für dieses Mietvertragsbuch. Die Anlage wird nun linear über die Anzahl der Monate abgeschrieben, die Sie im Feld **Verbleibende Zeiträume** eingegeben haben.
+10. Um den Journaleintrag für den Wertminderungsaufwand anzuzeigen, wählen Sie **Anlagenleasingerfassung** im Aktionsbereich des wertgeminderten Mietvertragsbuchs aus. Das System erstellt einen Journaleintrag, der das Buchungskonto für Wertminderungsaufwendungen belastet und das Buchungskonto für Mietanlagen gutschreibt. 
+11. Um den neuen Buchwert des Nutzungsrechts am Leasingobjekt anzuzeigen, wählen Sie **Anlagentransaktionen** im Aktionsbereich des Mietvertragsbuchs aus.
 
 ## <a name="example-of-rou-asset-impairment"></a>Beispiel für eine Wertminderung des Nutzungsrechts am Leasingobjekt
 

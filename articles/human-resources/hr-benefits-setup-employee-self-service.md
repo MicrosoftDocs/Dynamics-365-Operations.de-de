@@ -2,7 +2,7 @@
 title: Mitarbeiter-Self-Service konfigurieren
 description: In Microsoft Dynamics 365 Human Resources können Sie Kacheln für die Navigation auf oberster Ebene in Mitarbeiter-Self-Service konfigurieren.
 author: twheeloc
-ms.date: 08/24/2021
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 92a788dd436f4efc16946a47731c9dbce36ab0e9
-ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
+ms.openlocfilehash: 1e0c59eb8db5a97405e87922cc65f3eb74bee48e
+ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7423303"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7898439"
 ---
 # <a name="configure-employee-self-service"></a>Mitarbeiter-Self-Service konfigurieren
 
@@ -34,21 +34,18 @@ In Microsoft Dynamics 365 Human Resources können Sie Kacheln für die Navigatio
 
 2. Wählen Sie die Registerkarte **Vorteilsplan-Kachel einrichten** und dann **Neu** aus.
 
-3. Geben Sie Werte für die folgenden Felder an:
+3. Geben Sie Werte für die folgenden Felder an.
 
-   | Feld | Beschreibung |
+   | Feld | Description |
    | --- | --- |
+   | **Code des Plantyps** | Der Plantyp, der angezeigt wird, wenn diese Kachel in **Self-Service für Leistungen** ausgewählt wird. |
    | **Kachelkennung** | Der eindeutige Bezeichner für die Kachel. |
-   | **Beschriftungstext für Kacheln** | Der Text, der für die Kachel in **Mitarbeiter-Self-Service** erscheinen soll. |
+   | **Beschriftungstext für Kacheln** | Der Text, der für die Kachel in **Self-Service für Leistungen** erscheinen soll. |
    | **Beschreibung** | Eine Beschreibung der Kachel. |
-   | **Internetadresse** | Geben Sie die URL zu der Seite **Mitarbeiter-Self-Service** ein. |
-   | **Kachelgröße** | Die Größe der Kachel: Klein, Mittel oder Groß. |
-   | **Vorgabe** | Gibt an, ob die Seite in einem neuen Fenster oder im aktuellen Fenster geöffnet werden soll. |
    | **Kachelhintergrundbild** | Die URL des Bildes, das für die Kachel verwendet werden soll (optional). |
-   | **Start** | Anfangsdatum und ‑uhrzeit für Verfügbarkeit der Kachel. |
-   | **Beenden** | Enddatum und ‑uhrzeit für Verfügbarkeit der Kachel. |
+   | **Offene Registrierung verfolgen** | Wählen Sie diese Option aus, um den Fortschritt der offenen Registrierung für diesen Plantyp zu verfolgen. Sie haben beispielsweise Pläne erstellt, für die Folgendes gilt: **Plantyp = Sonstiges**. Bei diesen Plänen kann es sich um optionale Pläne handeln, für die Sie den Registrierungsfortschritt nicht verfolgen möchten. Wenn Sie diesen Plantyp nicht auswählen, wird dieser Plantyp beim Verfolgen des Registrierungsfortschritts oder Registrierungsabschlusses auf der Registerkarte **Registrierung öffnen** ignoriert. Diese Einstellung gilt für den Plantyp, der für alle Perioden und juristischen Personen ausgewählt wird. |
 
-4. Wählen Sie **Speichern**.
+4. Wählen Sie **Speichern** aus.
 
 ## <a name="set-up-a-flex-credit-plan-tile"></a>Flexguthabenplan-Kachel einrichten
 
@@ -56,21 +53,18 @@ In Microsoft Dynamics 365 Human Resources können Sie Kacheln für die Navigatio
 
 2. Wählen Sie die Registerkarte **Flexguthabenplan-Kachel einrichten** und dann **Neu** aus.
 
-3. Geben Sie Werte für die folgenden Felder an:
+3. Geben Sie Werte für die folgenden Felder an.
 
-   | Feld | Beschreibung |
+   | Feld | Description |
    | --- | --- |
+   | **Vergütungsgutschriftenkennung** | Der Flexguthabenprogrammplan, der angezeigt wird, wenn diese Kachel in **Self-Service für Leistungen** ausgewählt wird. |
    | **Kachelkennung** | Der eindeutige Bezeichner für die Kachel. |
-   | **Beschriftungstext für Kacheln** | Der Text, der für die Kachel in **Mitarbeiter-Self-Service** erscheinen soll. |
+   | **Beschriftungstext für Kacheln** | Der Text, der für die Kachel in **Self-Service für Leistungen** erscheinen soll. |
    | **Beschreibung** | Eine Beschreibung der Kachel. |
-   | **Internetadresse** | Geben Sie die URL zu der Seite **Mitarbeiter-Self-Service** ein. |
-   | **Kachelgröße** | Die Größe der Kachel: Klein, Mittel oder Groß. |
-   | **Vorgabe** | Gibt an, ob die Seite in einem neuen Fenster oder im aktuellen Fenster geöffnet werden soll. |
    | **Kachelhintergrundbild** | Die URL des Bildes, das für die Kachel verwendet werden soll (optional). |
-   | **Start** | Anfangsdatum und ‑uhrzeit für Verfügbarkeit der Kachel. |
-   | **Beenden** | Enddatum und ‑uhrzeit für Verfügbarkeit der Kachel. |
+   | **Offene Registrierung verfolgen** | Wählen Sie diese Option aus, um den Fortschritt der offenen Registrierung für diesen Plantyp zu verfolgen. Sie haben beispielsweise Pläne erstellt, für die Folgendes gilt: **Plantyp = Sonstiges**. Bei diesen Plänen kann es sich um optionale Pläne handeln, für die Sie den Registrierungsfortschritt nicht verfolgen möchten. Wenn Sie diesen Plantyp nicht auswählen, wird dieser Plantyp beim Verfolgen des Registrierungsfortschritts oder Registrierungsabschlusses auf der Registerkarte **Registrierung öffnen** ignoriert. Diese Einstellung gilt für den Plantyp, der für alle Perioden und juristischen Personen ausgewählt wird. |
 
-4. Wählen Sie **Speichern**.
+4. Wählen Sie **Speichern** aus.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

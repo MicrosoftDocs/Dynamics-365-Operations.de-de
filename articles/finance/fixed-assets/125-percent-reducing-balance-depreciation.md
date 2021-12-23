@@ -1,7 +1,7 @@
 ---
 title: Degressiven Abschreibung von 125 Prozent
-description: Dieser Artikel gibt eine Übersicht die 125 Prozent Reduktionssaldomethode der Abschreibung.
-author: saraschi2
+description: Dieser Artikel gibt eine Übersicht der 125 prozentigen Reduktionssaldomethode der Abschreibung.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 13871
 ms.assetid: 3abc263e-59d6-4f1a-986d-1be388948bd3
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68afee1840707a74ca3a0ac9643c2a23761da8da6d2e85e6b79d48bee4aad27c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 605f9fd3dea02e01c2c49b8e1a6cc52310132304
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744988"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883517"
 ---
 # <a name="125-percent-reducing-balance-depreciation"></a>Degressiven Abschreibung von 125 Prozent
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel gibt eine Übersicht die 125 Prozent Reduktionssaldomethode der Abschreibung.
+Dieser Artikel gibt eine Übersicht der 125 prozentigen Reduktionssaldomethode der Abschreibung.
 
 Wenn Sie ein Abschreibungsprofil für Anlagen einrichten und **125 % degressiv** im Feld **Methode** auf der Seite **Abschreibungsprofile** auswählen, werden Anlagen, denen das Abschreibungsprofil zugewiesen wird, in jedem Abschreibungszeitraum um denselben Prozentsatz abgeschrieben. Dieser Prozentsatz wird auf Grundlage der Nutzungsdauer der Anlage berechnet. Wenn eine Anlage beispielsweise eine Nutzungsdauer von fünf Jahren hat, beträgt der Prozentsatz 25 Prozent (125 % ÷ 5).
 

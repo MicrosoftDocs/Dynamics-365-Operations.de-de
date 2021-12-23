@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 0f322dd63cb2dee6a9048e6ed086dc075cc0e1b9
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: cbac68b79b2a10f05e0e442d4f0aa716e5a04634
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474843"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867246"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Produktprogrammplanung mit Bedarfsprognosen
 
@@ -84,11 +84,11 @@ In diesem Abschnitt finden Sie Informationen zu den verschiedenen Methoden, die 
 
 Wenn Sie eine Planung in einem Produktprogrammplan integrieren, können Sie auswählen, wie der Planungsbedarf verringert wird, wenn der tatsächliche Bedarf enthalten ist. Beachten Sie, dass die Masterplanung Prognoseanforderungen aus der Vergangenheit ausschließt, d.h. alle Prognoseanforderungen vor dem aktuellen Datum.
 
-Wenn Sie eine Planung in einem Produktprogrammplan einschließen und die Methode auswählen die verwendet wird, um den Planungsbedarfe zu reduzieren, gehen Sie zu **Produktprogrammplanung \> Einstellungen \> Pläne \> Produktprogrammpläne**. Im Feld **Planzahlenmodell** wählen Sie Planzahlenmodell. Im Feld **Methode, die verwendet wird, um den Planungsbedarf zu reduzieren** wählen Sie eine Methode aus. Die folgenden Optionen stehen zur Verfügung:
+Wenn Sie eine Planung in einem Produktprogrammplan einschließen und die Methode auswählen die verwendet wird, um den Planungsbedarfe zu reduzieren, gehen Sie zu **Produktprogrammplanung \> Einstellungen \> Pläne \> Produktprogrammpläne**. Im Feld **Planzahlenmodell** wählen Sie Planzahlenmodell. Im Feld **Methode, die verwendet wird, um den Planungsbedarf zu reduzieren** wählen Sie eine Methode aus. Die folgenden Optionen sind verfügbar:
 
-- Keines
+- Keiner
 - Prozent – Planzahlenverrechnungsschlüssel
-- Vorgänge - Reduzierungsschlüssel (noch nicht mit Planungsoptimierung unterstützt)
+- Transaktionen – Planzahlenverrechnungsschlüssel
 - Transaktionen – dynamische Periode
 
 Die folgenden Abschnitte enthalten mehr Informationen zu den einzelnen Optionen.

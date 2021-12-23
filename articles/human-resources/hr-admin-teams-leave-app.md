@@ -2,7 +2,7 @@
 title: Human Resources-App in Teams
 description: Dieses Thema enthält Informationen zur Microsoft Dynamics 365 Human Resources-App in Microsoft Teams.
 author: twheeloc
-ms.date: 11/03/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5e44b9fa40971710d8316c055c4d2ac51f9ab266
-ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
+ms.openlocfilehash: 8eebe154a19dd8476f6e9d75ebfd69fdc5b9e2b7
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7771505"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913488"
 ---
 # <a name="human-resources-app-in-teams"></a>Human Resources-App in Teams
 
@@ -111,6 +111,9 @@ Die folgenden Artikel sind für zukünftige Versionen vorgesehen:
 ## <a name="troubleshooting"></a>Problembehandlung
 
 Wenn ein Benutzer Probleme beim Anmelden oder Verwenden der Human Resources Teams-App hat, befolgen Sie diese Anweisungen zur Problembehandlung. Wenn Sie nach der Problembehandlung immer noch Probleme haben, wenden Sie sich an den Support. Weitere Informationen erhalten Sie über den [Support](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
+
+### <a name="ensure-the-teams-human-resources-application-is-up-to-date"></a>Stellen Sie sicher, dass die Human Resources-Anwendung in Teams auf dem neuesten Stand ist
+Wenn Probleme mit der Human Resources-App in Teams auftreten, müssen Sie bestätigen, dass Sie die neueste Version ausführen. Die unterstützte Mindestversion ist 1.1.5. Anweisungen zum Aktualisieren einer Teams-Anwendung finden Sie unter [Teams-Dokumentation](/MicrosoftTeams/apps-update-experience).
 
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Sie können sich nicht in Teams bei der Human Resources-App anmelden
 

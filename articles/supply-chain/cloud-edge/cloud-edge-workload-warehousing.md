@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 081b6968575a8a057903d96de2833a98552ed123
-ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
+ms.openlocfilehash: ae8e9791b590a32581b66853f55ea11bc389bb19
+ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "7813722"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "7891751"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Workloads in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten
 
@@ -50,6 +50,11 @@ Abhängig von den Geschäftsprozessen kann derselbe Datensatz die Besitzverhält
 > Einige Daten können sowohl auf dem Hub als auch auf der Skalierungseinheit erstellt werden. Beispiele sind **Kennzeichen** und **Chargennummern**. Eine dedizierte Konfliktbehandlung wird für den Fall bereitgestellt, dass derselbe eindeutige Datensatz während desselben Synchronisierungszyklus sowohl auf dem Hub als auch auf einer Skalierungseinheit erstellt wird. In diesem Fall schlägt die nächste Synchronisierung fehl und Sie müssen zu **Systemadministration > Anfragen > Workload-Anfragen > Doppelte Datensätze** gehen, wo Sie die Daten anzeigen und zusammenführen können.
 
 ## <a name="outbound-process-flow"></a>Ausgehender Prozessablauf
+
+Stellen Sie vor der Bereitstellung eines Warehouse Management-Workloads auf einer Cloud- oder Edge-Skalierungseinheit sicher, dass Sie die Funktion *Unterstützung der Skalierungseinheit für die Freigabe ausgehender Aufträge für den Lagerort* auf Ihrem Enterprise-Hub aktiviert haben. Administratoren können mit den Einstellungen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie gegebenenfalls aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+
+- **Module:** *Lagerortverwaltung*
+- **Funktionsname:** *Unterstützung der Skalierungseinheit für die Freigabe ausgehender Aufträge für den Lagerort*
 
 Der Prozess des ausgehenden Datenbesitzes hängt davon ab, ob Sie den Ladeplanungsprozess verwenden. In allen Fällen ist der Hub Besitzer der *Quelldokumente*, wie etwa von Aufträgen und Umlagerungsaufträgen, sowie des Auftragszuordnungsprozesses und der zugehörigen Auftragstransaktionsdaten. Wenn Sie jedoch den Ladungsplanungsprozess verwenden, werden die Ladungen auf dem Hub erstellt und befinden sich daher zunächst im Besitz des Hub. Im Rahmen des Prozesses *Für Lagerort freigeben* wird der Besitz der Ladungsdaten an die dedizierte Bereitstellung von Skalierungseinheiten übertragen, die dadurch Besitzer der nachfolgenden *Versandwellenverarbeitung* wird (wie z. B. Arbeitszuweisung, Wiederbeschaffungsarbeiten und Bedarfserstellung). Daher können Lagerortarbeitskräfte ausgehende Verkaufs- und Umlagerungsaufträge nur mithilfe einer mobilen Warehouse Management-App verarbeiten, die mit der Bereitstellung verbunden ist, die die spezifische Workload der Skalierungseinheit ausführt.
 
@@ -202,7 +207,7 @@ Die folgende Tabelle zeigt, welche Funktionen im Outbound unterstützt werden un
 | Drucken von ladungsbezogenen Dokumenten                           | Ja | Ja|
 | Konnossement- und ASN-Generierung                            | Nein  | Ja|
 | Versandbestätigung                                             | Nein  | Ja|
-| Versandbestätigung mit „Bestätigen und übertragen“            | Nein  | Nein |
+| Versandbestätigung mit „Bestätigen und übertragen“            | Nein  | Ja|
 | Lieferschein- und Rechnungsverarbeitung                        | Ja | Nein |
 | Kurzkommissionierung (Verkaufs- und Umlagerungsaufträge)                    | Nein  | Ja, ohne Reservierungen für Quelldokumente zu entfernen|
 | Zu hohe Entnahme (Verkaufs- und Umlagerungsaufträge)                     | Nein  | Ja|
@@ -212,8 +217,8 @@ Die folgende Tabelle zeigt, welche Funktionen im Outbound unterstützt werden un
 | Serienetikett                                                   | Nein  | Ja|
 | Arbeitsaufteilung                                                   | Nein  | Ja|
 | Arbeitsverarbeitung – Geleitet von „Transportladung“            | Nein  | Nein |
-| Entnommene Menge reduzieren                                       | Nein  | Nein |
-| Arbeit stornieren                                                 | Nein  | Nein |
+| Entnommene Menge reduzieren                                       | Nein  | Ja|
+| Arbeit stornieren                                                 | Nein  | Ja|
 | Lieferungsbestätigung umkehren                                | Nein  | Ja|
 
 ### <a name="inbound"></a>Zugang
@@ -227,7 +232,7 @@ Die folgende Tabelle zeigt, welche Funktionen im Eingang unterstützt werden und
 | Gesamttransportkosten und Waren in Zustellung                       | Ja | Nein |
 | Bestätigung eingehender Lieferungen                                    | Ja | Nein |
 | Freigabe der Einkaufsbestellung an den Lagerort (Lagerbestandsverarbeitung) | Ja | Nein |
-| Stornierung von Lagerortauftragspositionen<p>Beachten Sie, dass dies nur unterstützt wird, wenn keine Registrierung für die Position erfolgt ist</p> | Ja | Nein |
+| Stornierung von Lagerortauftragspositionen<p>Beachten Sie, dass dies nur unterstützt wird, wenn keine Registrierung für die Position erfolgt ist, während der Vorgang *Anfrage zur Stornierung* verarbeitet wird</p> | Ja | Nein |
 | Bestellungsartikel – Empfang und Einlagerung                       | <p>Ja,&nbsp;wenn&nbsp;kein Lagerort vorhanden ist&nbsp;keine Lagerbestellung</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | <p>Ja, wenn eine Bestellung nicht Teil einer <i>Ladung</i> ist</p> |
 | Bestellposition – Empfang und Einlagerung                       | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | <p>Ja, wenn eine Bestellung nicht Teil einer <i>Ladung</i> ist</p></p> |
 | Rücklieferungsempfang und -einlagerung                              | Ja | Nein |
@@ -246,7 +251,7 @@ Die folgende Tabelle zeigt, welche Funktionen im Eingang unterstützt werden und
 | Eingang mit Erstellung von *Qualität in der Qualitätsprüfung*-Arbeit       | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nein |
 | Eingang mit Erstellung von Qualitätsprüfungsauftrag                            | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nein |
 | Arbeitsverarbeitung – Geleitet von *Clustereinlagerung*                 | Ja | Nein |
-| Arbeitsverarbeitung mit *kurzer Entnahme*                               | Ja | Nein |
+| Arbeitsverarbeitung mit *kurzer Entnahme*                               | Ja | Ja |
 | Ladungsträgerladung                                           | Ja | Ja |
 
 ### <a name="warehouse-operations-and-exception-handing"></a>Lagerort-Operationen und Ausnahme-Handling

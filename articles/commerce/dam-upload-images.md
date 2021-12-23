@@ -2,7 +2,7 @@
 title: Bilder hochladen
 description: In diesem Thema wird beschrieben, wie Sie Bilder in Microsoft Dynamics 365 Commerce Site Builder hochladen können.
 author: psimolin
-ms.date: 08/25/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a5607fa70f5d5d28d10bcbd50da11bb96cbf75de
-ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
+ms.openlocfilehash: 3b99aeff7eafd788c19204e22dbfc61f45b25408
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7423254"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891521"
 ---
 # <a name="upload-images"></a>Bilder hochladen
 
@@ -41,7 +41,8 @@ Beim Hochladen eines Bildes können die folgenden Informationen angegeben werden
 - **Assets nach dem Hochladen veröffentlichen**: Wenn dieses Kontrollkästchen aktiviert ist, werden das Bild oder die Bilder sofort nach dem Hochladen veröffentlicht.
 
 > [!NOTE]
-> Bild-Assets mit einer zugewiesenen Kategorie werden auch automatisch mit der Kategorie als Schlüsselwort versehen, um die Suche nach Assets einer bestimmten Kategorie zu erleichtern.
+> - Bild-Assets mit einer zugewiesenen Kategorie werden auch automatisch mit der Kategorie als Schlüsselwort versehen, um die Suche nach Assets einer bestimmten Kategorie zu erleichtern.
+> - Produktdetailseiten generieren dynamisch den **Alt-Text** mit dem Produktnamen, das Ändern des **Alt-Texts** für ein Produktbild hat also keinen Einfluss auf das gerenderte Bild.
 
 ### <a name="naming-conventions-for-omni-channel-images"></a>Namenskonventionen für Omni-Channel-Bilder 
 

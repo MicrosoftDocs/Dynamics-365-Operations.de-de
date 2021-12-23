@@ -2,19 +2,19 @@
 title: Servicebeschreibung für die Finance and Operations Apps
 description: Dieses Thema enthält die Servicebeschreibung für die Finance and Operations Apps.
 author: tomhig
-ms.date: 11/17/2021
+ms.date: 12/07/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 262cf00bdca63876c284be40954ca5de559b993a
-ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
+ms.openlocfilehash: f7ce73018fda79156cc7ef3d4e1faa3fedf966f8
+ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "7825399"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7898388"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Servicebeschreibung für die Finance and Operations Apps
 
@@ -314,7 +314,7 @@ Die Notfallwiederherstellunbgspläne und -Verfahren von Microsoft werden regelm�
 | Microsoft stellt eine sekundäre Umgebung im gepaarten Azure-Rechenzentrum bereit, wenn die primäre Produktionsinstanz bereitgestellt wird. Weitere Informationen finden Sie unter [Business Continuity & Disaster Recovery (BCDR): gekoppelte Azure Regionen](/azure/best-practices-availability-paired-regions). | Ohne |
 | Microsoft aktiviert die Georedundanz von Azure SQL und Azure Blob Storage, wenn die primäre Produktionsinstanz bereitgestellt wird. | Ohne |
 | Microsoft aktiviert die automatische Sicherung der Azure SQL-Datenbanken. | Ohne |
-| <p>Bei einem Ausfall bestimmt Microsoft, ob für den Kunden ein Failover durchgeführt werden muss und ob es zu Datenverlusten kommt. Der Datenverlust kann bis zu fünf Sekunden dauern. Weitere Informationen finden Sie unter [Geowiederherstellung der Azure SQL-Datenbank](https://azure.microsoft.com/blog/azure-sql-database-geo-restore).</p><p>Im Falle eines Datenverlusts fordert Microsoft die Abmeldung des Kunden für ein Failover an.</p> | Im Falle eines Datenverlusts muss der Kunde möglicherweise eine schriftliche Abmeldung vorlegen, um das Failover auszulösen. |
+| <p>Bei einem Ausfall bestimmt Microsoft, ob für den Kunden ein Failover durchgeführt werden muss und ob es zu Datenverlusten kommt. Bei Kunden kann es je nach Art und Zeitpunkt des Ausfalls zu Datenverlusten von bis zu 15 Minuten kommen. | Im Falle eines Datenverlusts muss der Kunde möglicherweise eine schriftliche Abmeldung vorlegen, um das Failover auszulösen. |
 | Wenn ein Failover auftritt, arbeitet der entsprechende Dienst im eingeschränkten Modus. Die Updatewartung kann im Failover-Modus nicht ausgelöst werden. | Der Kunde kann im Failover-Modus keine Paketbereitstellungen oder andere regelmäßige Wartungsanforderungen anfordern. |
 | Wenn das Rechenzentrum betriebsbereit ist, führt Microsoft ein Failback zur Produktionsinstanz in der primären Azure-Region durch. Der normale Betrieb wird fortgesetzt. | Der Kunde muss sich möglicherweise beim Failback bei der Produktionsinstanz in der primären Azure-Region abmelden. |
 

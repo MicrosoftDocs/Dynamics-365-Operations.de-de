@@ -2,7 +2,7 @@
 title: Entfernte oder veraltete Funktionen in Dynamics 365 Finance
 description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen von Dynamics 365 Finance.
 author: roschlom
-ms.date: 04/14/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7ce7353de5795fd82e53bb1b7919c95dae4fe0ab6b8f536361613a7bcae19101
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad3df2ee9c10972dac8258b6ee41ae0a6eabfbea
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781200"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890952"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Finance
 
@@ -32,6 +32,58 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 > [!NOTE]
 > Detaillierte Informationen über Objekte in Finance and Operations Apps finden Sie in den [Technischen Referenzberichten](/dynamics/s-e/global/axtechrefrep_61). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die sich in jeder Version von Finance and Operations-Anwendungen geändert haben oder entfernt wurden.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10024-release"></a>Entfernte oder veraltete Funktionen in Finance Release 10.0.24
+
+### <a name="sales-tax-report-for-sweden-design-based-on-reporting-codes"></a>Mehrwertsteuererklärung für Schweden (Design basierend auf Erklärungscodes)
+
+[Mehrwertsteuererklärung für Schweden](../localizations/emea-swe-sales-tax-payment-report-sweden.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Ersetzt durch ein neues MwSt.-Erklärungsdesign, [Umsatzsteuererklärung für Schweden](../localizations/emea-swe-vat-declaration-sweden.md) |
+| **Ersetzt durch eine andere Funktion?**   | Ja |
+| **Betroffene Produktbereiche**         | Bewerbung |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet: Ab dem 1. Dezember 2022 wird die Mehrwertsteuererklärung für Schweden (schwedisches Berichtslayout) nicht mehr unterstützt. Stattdessen werden im Modell **Steuererklärung** die neuen elektronischen Berichterstellungs(EB)-Formate **Umsatzsteuererklärung XML (SE)** und **Umsatzsteuererklärung Excel (SE)** eingeführt. |
+
+### <a name="vat-statement-for-austria-design-based-on-reporting-codes"></a>MwSt.-Abrechnung für Österreich (Design basierend auf Erklärungscodes)
+
+[MwSt-Berichtdetails für Österreich](../localizations/emea-aut-vat-statement-details.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Ersetzt durch ein neues MwSt.-Erklärungsdesign, [Umsatzsteuererklärung für Österreich](../localizations/emea-aut-vat-declaration-austria.md) |
+| **Ersetzt durch eine andere Funktion?**   | Ja |
+| **Betroffene Produktbereiche**         | Bewerbung |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet: Ab dem 1. Dezember 2022 planen wir, das elektronische Berichtsformat (EB) **MwSt.-Erklärung (AT)** unter **Mehrwertsteuererklärungsmodell** nicht mehr zu unterstützen. Stattdessen werden im Modell **Steuererklärung** die neuen Formate **Umsatzsteuererklärung XML (AT)** und **Umsatzsteuererklärung Excel (AT)** eingeführt. |
+
+### <a name="elster-declaration-for-germany-design-based-on-reporting-codes"></a>ELSTER-Erklärung für Deutschland (Design basierend auf Erklärungscodes)
+
+[MwSt.-Abrechnung](../localizations/emea-de-vat-declaration.md)</br>
+[Einrichtung der elektronischen Steuererklärung für Deutschland](../../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md)</br>
+[Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)](../localizations/tasks/de-00003-electronic-transmission-elster.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Ersetzt durch ein neues MwSt.-Erklärungsdesign, [Umsatzsteuererklärung für Deutschland](../localizations/emea-deu-vat-declaration-germany.md) |
+| **Ersetzt durch eine andere Funktion?**   | Ja |
+| **Betroffene Produktbereiche**         | Bewerbung |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet: Ab dem 1. Dezember 2022 planen wir, die elektronischen Berichtsformate (EB) **Elster (DE)** und **Elster-Modell** nicht mehr zu unterstützen. Stattdessen werden im Modell **Steuererklärung** die neuen Formate **Umsatzsteuererklärung XML (DE)** und **Umsatzsteuererklärung Excel (DE)** eingeführt. |
+
+### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes"></a>OB-Meldung für die Niederlande (Design basierend auf Erklärungscodes)
+
+[OB-Meldung](../localizations/emea-nl-vat-declaration.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Ersetzt durch ein neues MwSt.-Erklärungsdesign, [Umsatzsteuererklärung für die Niederlande](../localizations/emea-nl-vat-declaration-netherlands.md) |
+| **Ersetzt durch eine andere Funktion?**   | Ja |
+| **Betroffene Produktbereiche**         | Bewerbung |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet: Ab dem 1. Dezember 2022 planen wir, die elektronischen Berichtsformate (EB) **OB-Meldung (NL)** und **OB-Meldungsmodell** nicht mehr zu unterstützen. Stattdessen werden im Modell **Steuererklärung** die neuen Formate **Umsatzsteuererklärung XML (NL)** und **Umsatzsteuererklärung Excel (NL)** eingeführt. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Entfernte oder veraltete Funktionen in Finance Release 10.0.20
 

@@ -2,7 +2,7 @@
 title: Jahresabschluss
 description: In diesem Thema werden die erforderlichen Einstellungen und die Schritte für den Jahresabschlussprozess im Hauptbuch beschrieben.
 author: kweekley
-ms.date: 07/10/2021
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5677ebeee6b8260280d4c9c7c8a7a0e18e7bd78f68a42d23967948a2e75120cd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 04eeb8886d74fa8c633d2ac4e9e47aa28a12ee30
+ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778265"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892476"
 ---
 # <a name="year-end-close"></a>Jahresabschluss
 
@@ -44,7 +44,7 @@ Auf der Seite **Hauptkonto**:
 Auf der Seite **Hauptbuchparameter** unter **Geschäftsjahresschluss**:
 
 - Die Option **Bestehende Jahresabschlussbuchungen löschen, wenn das Jahr erneut geschlossen wird** wird verwendet, um anzugeben, ob die von System generierte Primobuchung aus einem vorherigen Jahresabschluss gelöscht werden soll, wenn der Jahresabschluss erneut ausgeführt wird. Ist die Option auf **Ja** festgelegt, wird die vorherige Primobuchung gelöscht und eine neue Primobuchung basierend auf den aktuellen Salden erstellt. Ist die Option auf **Nein** festgelegt, bleibt die vorherige Primobuchung erhalten und es wird eine weitere Primobuchung erstellt, um die Salden aus angepassten Buchungen zu übertragen, die nach dem vorherigen Jahresabschluss gebucht wurden.
-- Die Option **Abschlussbuchungen bei Umbuchung erstellen** wird verwendet, um Abschlussbuchungen für das Geschäftsjahr zu erstellen, das abgeschlossen wird, um die Salden der Gewinn- und Verlustkonten auf 0 (Null) zu bringen. Ist die Option auf **Ja** festgelegt, werden die Erüffnungsbuchung und die Abschlussbuchung erstellt. Ist die Option auf **Nein** festgelegt, wird nur die Eröffnungsbuchung für das nächste Geschäftsjahr erstellt, um die Salden zu übertragen. Die GuV-Konto-Salden verbleiben am Ende des Geschäftsjahrs.
+- Die Option **Abschlussbuchungen bei Umbuchung erstellen** wird verwendet, um Abschlussbuchungen für das Geschäftsjahr zu erstellen, das abgeschlossen wird, um die Salden aller Hauptkonten auf 0 (Null) zu bringen. Ist die Option auf **Ja** festgelegt, werden die Erüffnungsbuchung und die Abschlussbuchung erstellt. Ist die Option auf **Nein** festgelegt, wird nur die Eröffnungsbuchung für das nächste Geschäftsjahr erstellt, um die Salden zu übertragen. Die Hauptkonto-Salden verbleiben am Ende des Geschäftsjahrs.
 - Die Option **Geschäftsjahresstatus auf dauerhaft abgeschlossen festlegen** wird verwendet, um den Geschäftsjahresstatus dauerhaft auf abgeschlossen zu setzen. Verwenden Sie diese Option mit Bedacht, da Perioden, die einen dauerhaft geschlossenen Status haben, nicht wieder geöffnet werden können. Anpassungen können daher nicht auf das Geschäftsjahr gebucht werden. Es hat sich bewährt, diese Option auf **Nein** festzulegen.
 - Die **Gutscheinnummer muss ausgefüllt werden** Option wurde entfernt. Ein Beleg ist jetzt erforderlich, wenn der Jahresabschlussprozess ausgeführt wird. Zu diesem Zeitpunkt wird die Gutscheinnummer manuell eingegeben.
 

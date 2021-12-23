@@ -2,7 +2,7 @@
 title: Vorteilsverwaltung – Übersicht
 description: Dieses Thema bietet einen Überblick über die Funktion "Benefits management" in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/23/2021
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7c4709a63201dd1a02c8879151762886f644ce22
-ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
+ms.openlocfilehash: dc06fd2ef4992b4ef2e20ace4f5c6bcc0bffb9d2
+ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "7417391"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892501"
 ---
 # <a name="benefits-management-overview"></a>Vorteilsverwaltung – Übersicht
 
@@ -109,21 +109,29 @@ Sie können Flexguthabenprogramme verwenden, um Mitarbeiter für Vorteile gemä�
 
 ## <a name="configure-required-employee-information"></a>Konfigurieren Sie die erforderlichen Mitarbeiterinformationen
 
-Bevor Sie Mitarbeiter für Leistungen anmelden können, müssen Sie dafür die erforderlichen Informationen angeben. Jeder Mitarbeiter muss eine Stelle haben. Sie müssen Mitarbeiter zu ihrem Eintrittsdatum in einen festen Vergütungsplan aufnehmen oder sie müssen einen jährlichen Gehaltsbetrag für Sozialleistungen haben. Außerdem müssen Sie im Abschnitt **Beschäftigung-Details** auf der Seite **Arbeitskraft** einen Wert im Feld **Häufigkeit der Leistungszahlung** eingeben.
+Bevor Sie Mitarbeiter für Leistungen anmelden können, müssen Sie dafür die erforderlichen Informationen angeben. 
 
-Wenn Sie einen Mitarbeiter haben, der eine zusätzliche Vergütung wie Provisionen erhält, können Sie einen Betrag **Jahresgehalt für Vorteile** aus dem Mitarbeiterdatensatz hinzufügen. Die Personalverwaltung wird den Betrag **Jahresgehalt für Vorteile** verwenden, wenn Deckungssummen festgelegt werden, anstatt eines festen jährlichen Vergütungsbetrags. Das **Jahresgehalt für Vorteile** muss ab dem Startdatum des Mitarbeiters oder dem Beginn des Vorteilszeitraums gültig sein, je nachdem, welcher Zeitpunkt der letzte ist. Wenn für einen Mitarbeiter sowohl eine feste Vergütung als auch einen Betrag des Jahresgehalts für Vorteile erfasst ist, wird das Jahresgehalt für Vorteile verwendet, um die Deckungssummen zu bestimmen.
+Dem Mitarbeiter muss eine **Position** zugewiesen sein. Eine **Position** kann dem Mitarbeiter auf den Seiten **Arbeitskraft** oder **Position** durch Aktualisieren der **Arbeitskraftzuweisung** zugeordnet werden. 
+
+Mitarbeiter müssen als nächstes zu ihrem Eintrittsdatum in einen festen Vergütungsplan aufgenommen sein oder einen **Jährlichen Vorteilsgehalt** haben. Vor der Zuweisung **Feste Vergütung** an einen Mitarbeiter muss eine **Position** zugeordnet werden. 
+
+> [!NOTE] 
+> Das **Startdatum der festen Vergütung** kann nicht vor dem **Datum der Positionszuweisung** liegen.
+
+Wenn Sie einen Mitarbeiter haben, der eine zusätzliche Vergütung wie Provisionen erhält, können Sie alternativ einen Betrag **Jahresgehalt für Vorteile** aus dem Mitarbeiterdatensatz hinzufügen. Die Personalverwaltung wird den Betrag **Jahresgehalt für Vorteile** verwenden, wenn Deckungssummen festgelegt werden, anstatt eines **Festen jährlichen Vergütungsbetrags**. Das **Jahresgehalt für Vorteile** muss ab dem Startdatum des Mitarbeiters oder dem Beginn des Vorteilszeitraums gültig sein, je nachdem, welcher Zeitpunkt der letzte ist. Eine Position ist jedoch nicht erforderlich, um das **Jahresgehalt für Vorteile** zuzuweisen. Um die Funktion **Jahresgehalt für Vorteile** zu aktivieren, öffnen Sie die Seite **Human Resources-Parameter** auf der Registerkarte **Vorteilsverwaltung**. Diese Funktion ist standardmäßig deaktiviert.
+
+> [!IMPORTANT]
+> Wenn für einen Mitarbeiter sowohl ein Betrag **Feste Vergütung** als auch **Jahresgehalt für Vorteile** eingegeben ist, wird das **Jahresgehalt für Vorteile** verwendet, um die Deckungssummen zu bestimmen. Sie müssen im Abschnitt **Beschäftigung-Details** auf der Seite **Arbeitskraft** einen Wert im Feld **Häufigkeit der Leistungszahlung** eingeben.
 
 ## <a name="configure-optional-employee-information"></a>Konfigurieren Sie die optionalen Mitarbeiterinformationen
-
 Wenn Sie einen Leistungsplan erstellen, der Sätze verwendet, die auf Geschlecht oder Alter basieren, müssen Sie ein Geburtsdatum und ein Geschlecht eingeben, damit der Mitarbeiter die Leistungskosten berechnen kann.
 
 ## <a name="process-employees-to-determine-eligibility"></a>Verarbeiten Sie Mitarbeiter, um die Berechtigung zu bestimmen
+Bevor Mitarbeiter in Pläne aufgenommen werden können, wird eine Berechtigungsverarbeitung durchgeführt, um zu bestimmen, für welche Pläne sie berechtigt sind. Sie können die Ergebnisse des Berechtigungsprozesses in der **Prozessergebnisanzeige** anzeigen. Weitere Informationen finden Sie unter [Beitrittsprozessberechtigung](hr-benefits-process-enrollment-eligibility.md).
 
-Bevor Mitarbeiter in Pläne aufgenommen werden können, wird eine Berechtigungsverarbeitung durchgeführt, um zu bestimmen, für welche Pläne sie berechtigt sind. Sie können die Ergebnisse des Berechtigungsprozesses in der Prozessergebnisanzeige anzeigen. Weitere Informationen finden Sie unter [Beitrittsprozessberechtigung](hr-benefits-process-enrollment-eligibility.md).
+## <a name="employees-select-plans-using-employee-self-service-optional"></a>Mitarbeiter wählen Pläne über den **Mitarbeiter-Self-Service** aus (optional)
 
-## <a name="employees-select-plans-via-employee-self-service-optional"></a>Mitarbeiter wählen Pläne über den Mitarbeiter-Self-Service aus (optional)
-
-Wenn eine offene Registrierung erfolgt, Mitarbeiter neu eingestellt werden oder ein Lebensereignis eintritt, können Mitarbeiter ihre Leistungen über den Mitarbeiter-Self-Service auswählen oder aktualisieren. Weitere Informationen finden Sie unter [Mitarbeiter Self-Service konfigurieren](hr-benefits-setup-employee-self-service.md).
+Wenn eine offene Registrierung erfolgt, Mitarbeiter neu eingestellt werden oder ein Lebensereignis eintritt, können Mitarbeiter ihre Leistungen über den **Mitarbeiter-Self-Service** auswählen oder aktualisieren. Weitere Informationen finden Sie unter [Mitarbeiter Self-Service konfigurieren](hr-benefits-setup-employee-self-service.md).
 
 ## <a name="confirm-employee-plan-selections"></a>Bestätigen Sie die Auswahl der Mitarbeiterpläne
 
