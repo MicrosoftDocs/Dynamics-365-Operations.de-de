@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 93eff7a54f9d3851c59b83a28d3aa61a8de7bc41f2a845be21c8bf4d1c6401d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8d5bcf3a0d36e323ee96c1f37829a95b60f529bc
+ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731030"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "7944712"
 ---
 # <a name="refund-payment-processing-in-call-centers"></a>Abwicklung von Rückerstattungszahlungen in Callcentern
 
@@ -33,11 +33,14 @@ Die Callcenter-Logik bestimmt die Zahlungsmethode für die Rückerstattungsposit
 
 Das Callcenter verwendet die Zahlungsmethode des ursprünglichen Auftrags, um die Zahlungsmethode zu bestimmen, die für eine Rücklieferung verwendet werden soll. Bei folgenden ursprünglichen Zahlungsmethoden funktioniert dieser Prozess wie folgt:
 
-- **Normal** (Bargeld) oder **Scheck** – Wenn eine erstellte Rücklieferung auf eine ursprüngliche Bestellung verweist, die mit der normalen (Bargeld) oder Scheckzahlungsmethode beglichen wurde, verweist die Callcenter-Anwendung auf die Konfigurationen der Seite **Callcenter-Rückerstattungsmethoden**. Auf dieser Seite können Organisationen anhand der Auftragswährung festlegen, wie Debitoren Rückerstattungen für Aufträge erhalten, die ursprünglich über die normale Zahlungsmethode oder per Scheck bezahlt wurden. Anhand der Seite **Callcenter-Rückerstattungsmethoden** können Organisationen außerdem auswählen, ob ein vom System generierter Rückerstattungsscheck an den Debitoren gesendet oder eine Gutschrift gegen den internen Debitorenkontosaldo erstellt wird. In diesen Szenarien bezieht sich die Callcenter-Logik auf die Währung der Rücklieferung und verwendet dann den Wert **Einzelhandels-Zahlungsmethode** für diese Währung, um eine Rückerstattungsposition für den Rücklieferungsauftrag zu erstellen. Später wird eine Debitorenzahlungserfassung für Debitoren (Accounts Receivable, AR), die die zugeordnete AR-Zahlungsmethode nutzt, mit der Währung verknüpft.
+- **Normal** (Bargeld) oder **Scheck** – Wenn eine erstellte Rücklieferung auf eine ursprüngliche Bestellung verweist, die mit der normalen (Bargeld) oder Scheckzahlungsmethode beglichen wurde, verweist die Callcenter-Anwendung auf die Konfigurationen der Seite **Callcenter-Rückerstattungsmethoden**. Auf dieser Seite können Organisationen anhand der Auftragswährung festlegen, wie Debitoren Rückerstattungen für Aufträge erhalten, die ursprünglich über die normale Zahlungsmethode oder per Scheck bezahlt wurden. Die **Callcenter-Rückerstattungsmethoden** Seite ermöglicht es Unternehmen auch auszuwählen, ob ein vom System generierter Rückerstattungsscheck an den Kunden gesendet werden soll. In diesen Szenarien bezieht sich die Callcenter-Logik auf die Währung der Rücklieferung und verwendet dann den Wert **Einzelhandels-Zahlungsmethode** für diese Währung, um eine Rückerstattungsposition für den Rücklieferungsauftrag zu erstellen. Später wird eine Debitorenzahlungserfassung für Debitoren (Accounts Receivable, AR), die die zugeordnete AR-Zahlungsmethode nutzt, mit der Währung verknüpft.
 
     Die folgende Abbildung zeigt die Konfiguration für ein Szenario, in dem ein Debitor Produkte aus einem Auftrag zurückgibt, der mit der USD-Währung verknüpft ist und ursprünglich mit der normalen oder Scheckzahlungsmethode bezahlt wurde. In diesem Szenario wird dem Debitor eine Rückerstattung über einen vom System generierten Rückerstattungsscheck ausgestellt. Die AR-Zahlungsmethode **REF-CHK** wurde als Zahlungsmethode für Rückerstattungsschecks konfiguriert.
 
     ![Konfiguration von Callcenter-Rückerstattungsmethoden für ursprünglich normale und Scheckzahlungen.](media/callcenterrefundmethods.png)
+
+    > [!NOTE]
+    > Das Kundenkonto ist keine unterstützte Rückerstattungsmethode für Bar- oder Scheckzahlungen.
 
 - **Kreditkarte** – Wenn eine erstellte Rücklieferung auf einen ursprünglichen Auftrag verweist, der per Kreditkarte bezahlt wurde, verwendet die Callcenter-Logik für Rückerstattungszahlungen dieselbe ursprüngliche Kreditkarte für den Rückgabeauftrag.
 - **Treuekarte** – Wenn eine erstellte Rücklieferung auf einen ursprünglichen Auftrag verweist, der per Treuekarte bezahlt wurde, bucht die Callcenter-Logik für Rückerstattungszahlungen die Rückerstattung auf dieselbe Treuekarte.

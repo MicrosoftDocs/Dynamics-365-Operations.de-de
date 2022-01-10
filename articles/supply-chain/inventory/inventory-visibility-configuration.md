@@ -2,7 +2,7 @@
 title: Bestandstransparenz konfigurieren
 description: In diesem Thema wird beschrieben, wie Sie Inventory Visibility konfigurieren.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 53cc457c788d24adfe3c523719ccffc6d445fb61
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: fcbace2bd28a843fca8aa2f4f998c08f238c29d6
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678470"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920297"
 ---
 # <a name="configure-inventory-visibility"></a>Bestandstransparenz konfigurieren
 
@@ -61,7 +61,7 @@ Nachdem die Konfiguration abgeschlossen ist, wählen Sie in der App unbedingt **
 Jede Datenquelle steht für ein System, aus dem Ihre Daten stammen. Beispielnamen für Datenquellen sind `fno` (steht für „Dynamics 365 Finance and Operations-Apps“) und `pos` (steht für „Point of Sale“). Standardmäßig ist das Supply Chain Management als Standard-Datenquelle (`fno`) in Inventory Visibility festgelegt.
 
 > [!NOTE]
-> Die Datenquelle `fno` ist für Dynamics 365 Supply Chain Management reserviert.
+> Die Datenquelle `fno` ist für das Supply Chain Management reserviert. Wenn Ihr Inventory Visibility-Add-In in eine Supply Chain Management Umgebung integriert ist, empfehlen wir Ihnen, keine Konfigurationen zu löschen, die sich auf `fno` in der Datenquelle beziehen.
 
 Um eine Datenquelle hinzuzufügen, führen Sie die folgenden Schritte aus.
 
@@ -273,17 +273,17 @@ Die Ausgabe von `MyCustomAvailableforReservation` lautet basierend auf der Berec
 
 ## <a name="partition-configuration"></a><a name="partition-configuration"></a>Partitionskonfiguration
 
-Die Partitionskonfiguration besteht aus einer Kombination von Basisdimensionen. Sie definiert das Datenverteilungsmuster. Datenvorgänge in derselben Partition unterstützen eine hohe Leistung und verursachen nicht zu hohe Kalkulationen. Daher können gute Partitionsmuster erhebliche Vorteile bringen.
+Die Partitionskonfiguration besteht derzeit aus zwei Basisdimensionen (`SiteId` und `LocationId`), die angeben, wie die Daten verteilt werden. Vorgänge unter der gleichen Partition können eine höhere Leistung zu geringeren Kalkulationen liefern. Die folgende Tabelle zeigt die Standardpartitionskonfiguration, die das Bestandssichtbarkeits-Add-In bereitstellt.
 
-Inventory Visibility bietet die folgende Standard-Partitionskonfiguration.
-
-| Basis-Dimension | Hierarchie |
+| Basis-Dimensionen | Hierarchie |
 |---|---|
 | `SiteId` | 1 |
 | `LocationId` | 2 |
 
-> [!NOTE]
-> Die Standard-Partitionskonfiguration dient nur als Referenz. Sie müssen sie nicht in Inventory Visibility definieren. Derzeit wird das Upgrade der Partitionskonfiguration nicht unterstützt.
+Die Lösung enthält diese Partitionskonfiguration standardmäßig. Daher *müssen Sie sie nicht selbst definieren*.
+
+> [!IMPORTANT]
+> Passen Sie die Standardkonfiguration der Partition nicht an. Wenn Sie es löschen oder ändern, werden Sie wahrscheinlich einen unerwarteten Fehler verursachen.
 
 ## <a name="product-index-hierarchy-configuration"></a><a name="index-configuration"></a>Produktindex-Hierarchie-Konfiguration
 

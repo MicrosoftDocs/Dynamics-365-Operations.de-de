@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fd874f3c6c1f4d25b3257d6465686dcb8e95b933
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 541e6c42ae1fa7d803b5becc1b52e34860777594
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576015"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920597"
 ---
 # <a name="wave-allocation"></a>Wellenzuteilung
 
@@ -77,7 +77,7 @@ Für die parallele Verarbeitung von Zuweisungen muss die Welle als Stapelverarbe
 
 Bei Bedarf können Sie jede der standardmäßig vorgenommenen Einstellungen rückgängig machen, wenn die Funktion *Wellenparallelisierung für Wellenzuweisungsmethode* automatisch für Ihre Instanz aktiviert ist. Aktion:
 
-- Gehen Sie zu **Lagerortverwaltung\>Einstellungen \> Lagerortverwaltungsparameter**. Wenden Sie auf der Registerkarte **Wellenverarbeitung** Ihre bevorzugten Werte für **Wellen in einem Stapel verarbeiten** und **Auf Sperre (ms) warten**.
+- Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Lagerortverwaltungsparameter**. Wenden Sie auf der Registerkarte **Wellenverarbeitung** Ihre bevorzugten Werte für **Wellen in einem Stapel verarbeiten** und **Auf Sperre (ms) warten**.
 - Wechseln Sie zu **Lagerortverwaltung \> Setup \> Wellen \> Wellenverarbeitungsmethoden**. Wählen Sie die `allocateWave`-Methode aus. Wählen Sie im Aktivitätsbereich die Option **Aufgabenkonfiguration** aus, um eine Seite zu öffnen, auf der jeder Lagerort aufgelistet ist, für den die Methode parallel ausgeführt werden soll. Ändern oder löschen Sie nach Bedarf die Anzahl der Stapelverarbeitungsaufgaben und die zugewiesene Wellengruppe für die einzelnen aufgeführten Lagerorte.
 
 ## <a name="troubleshooting"></a>Problembehandlung

@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7271436bd155918dfdac792486c89966e7adb18c
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: a028de4bd37b965d55783dad4b39378d6400bf4b
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402641"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920747"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-functional-consultants"></a>Lernkatalog für funktionale Dynamics 365 Supply Chain Management-Berater
 
@@ -113,7 +113,7 @@ Für funktionale Berater zeigt unsere Arbeitsaufgabenanalysestudie, dass jeder d
 | [Anlagenverwaltung für Dynamics 365 Supply Chain Management konfigurieren](/learn/paths/configure-asset-management-dyn365-supply-chain-mgmt/) | Die Anlagenverwaltung ist ein Add-In für Dynamics 365 Supply Chain Management, das verwendet wird, um Vermögenswerte zu verwalten, die im täglichen Betrieb Ihres Unternehmens verwendet werden. Einige Beispiele für diese Art von Vermögenswerten sind Maschinen, Produktionsanlagen und Gabelstapler. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 7 Stunden |
 | [Arbeiten mit Anlagenverwaltung für Dynamics 365 Supply Chain Management](/learn/paths/work-asset-management-dyn365-supply-chain-mgmt/) | Die Anlagenverwaltung ist ein Add-In von Dynamics 365 Supply Chain Management, das verwendet wird, um Vermögenswerte zu verwalten, die im täglichen Betrieb Ihres Unternehmens verwendet werden. Einige Beispiele für diese Art von Vermögenswerten sind Maschinen, Produktionsanlagen und Gabelstapler. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 12.5 Stunden |
 | [Verwalten von Produktversionsinformationen in Dynamics 365 Supply Chain Management](/learn/paths/manage-product-version-engineering-change-management/) | Das Add-in für die Änderungsverwaltung in Dynamics 365 Supply Chain Management bietet einen strukturierten Prozess für die Verwaltung von Produktversionsinformationen während des Lebenszyklus eines technischen Produkts. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 4 Stunden |
-| [Verwaltung für technische Änderungen für Dynamics 365 Supply Chain Management festlegen](/learn/paths/set-up-engineering-change-management/) | Heutige Hersteller benötigen ein starkes Produktdatenmanagement, eine Versionsverwaltung und eine Verwaltung für technische Änderungen, um in einer Welt mit ständig kürzer werdenden Produktlebenszyklen, erhöhten Qualitäts- und Zuverlässigkeitsanforderungen und einem verstärkten Fokus auf die Produktsicherheit erfolgreich zu sein. In diesem Lernpfad erfahren Sie, wie Sie die Verwaltung für technische Änderungen festlegen. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 4 Stunden |
+| [Verwaltung für technische Änderungen für Dynamics 365 Supply Chain Management festlegen](/learn/paths/set-up-engineering-change-management/) | Die Hersteller von heute benötigen ein leistungsfähiges Produktdatenmanagement, eine Versionsverwaltung und eine Verwaltung für technische Änderungen, um in einer Welt der immer kürzer werdenden Produktlebenszyklen, der steigenden Anforderungen an Qualität und Zuverlässigkeit und der zunehmenden Konzentration auf die Produktsicherheit erfolgreich zu sein. In diesem Lernpfad erfahren Sie, wie Sie die Verwaltung für technische Änderungen festlegen. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 4 Stunden |
 | [Microsoft-zertifiziert: Dynamics 365 for Finance and Operations, Funktionaler Beraterexperte für Supply Chain Management](https://www.microsoft.com/learning/d365-functional-consultant-supply-chain-management.aspx) | Microsoft-zertifiziert: Dynamics 365 for Finance and Operations, funktionale Berater für Supply Chain Management optimieren die Kostenrechnung, die Lagerverwaltung, die Produktprogrammplanung und die Lagerortverwaltung für die Kunden. | Zertifizierung, Kosten variieren nach Regionen | |
 
 ## <a name="exams"></a>Prüfungen<a name="exams"></a>

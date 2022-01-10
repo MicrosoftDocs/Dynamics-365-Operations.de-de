@@ -2,7 +2,7 @@
 title: Einrichtung der Parameter für das Kreditmanagement
 description: In diesem Thema werden die Optionen beschrieben, mit denen Sie das Kreditmanagement konfigurieren können, um die Anforderungen Ihres Unternehmens zu erfüllen.
 author: JodiChristiansen
-ms.date: 08/03/2020
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 768fb5121ae6be513c4a533a20027cf784640b2a
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 745a51617f8c87c0f757aee0304ec3efb55d0f98
+ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753464"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7921214"
 ---
 # <a name="credit-management-parameters-setup"></a>Einrichtung der Parameter für das Kreditmanagement
 
@@ -31,7 +31,7 @@ Es gibt vier Inforegister im Abschnitt **Kredit**, in denen Sie die Parameter ä
 
 ### <a name="credit-holds"></a>Kreditsperren
 
-- Stellen Sie die Option **Bearbeitung des Kundenauftragswerts nach Freigabe des Auftragsstopps zulassen** auf **Nein**, um zu verlangen, dass die Buchungsregeln erneut überprüft werden, wenn der Kundenauftragswert (erweiterter Preis) seit der Freigabe des Kundenauftrags aus der Warteliste erhöht wurde. .
+- Stellen Sie die Option **Bearbeitung des Kundenauftragswerts nach Freigabe des Auftragsstopps zulassen** auf **Nein**, um zu verlangen, dass die Buchungsregeln erneut überprüft werden, wenn der Kundenauftragswert (erweiterter Preis) seit der Freigabe des Kundenauftrags aus der Warteliste erhöht wurde.
 - Im Feld **Gründe für stornierte Bestellungen** wählen Sie den Freigabegrund aus, der standardmäßig verwendet wird, wenn ein Kundenauftrag storniert wird, für den das Kreditmanagement eingestellt war.
 - Stellen Sie die Option **Kreditlimit für Debitorenkreditgruppen überprüfen** auf **Ja**, um das Kreditlimit einer Debitorenkreditgruppe zu überprüfen, wenn der Kunde in einem Kundenauftrag zu einer Debitorenkreditgruppe gehört. Das Kreditlimit für die Gruppe wird überprüft, und wenn es ausreicht, wird das Kreditlimit für den Debitor überprüft.
 - Setzen Sie die Option **Kreditlimit prüfen, wenn Zahlungsbedingungen erhöht werden** Option auf **Ja**, um die Rangfolge der Zahlungsbedingungen zu prüfen und festzustellen, ob die Zahlungsbedingungen auf dem Kundenauftrag von den Standardzahlungsbedingungen für den Kunden abweichen. Wenn die neuen Zahlungsbedingungen einen höheren Rang als die ursprünglichen Zahlungsbedingungen haben, wird die Bestellung im Kreditmanagement zurückgestellt.
@@ -72,6 +72,10 @@ Mehrere Kreditmanagementstatistiken sind in der Infobox **Statistiken zum Kunden
 
 - Im Kreditmanagement wird das Kundenkreditlimit in der Währung des Kunden angezeigt. Sie müssen den Wechselkurstyp für das Kreditlimit in der Währung des Kunden definieren. Wählen Sie im Feld **Kreditlimit-Wechselkursart** die Art des Wechselkurses aus, mit dem das primäre Kreditlimit in das Kreditlimit des Debitors konvertiert werden soll.
 - Stellen Sie die Option **Manuelle Bearbeitung von Kreditlimits zulassen** auf **Nein**, um zu verhindern, dass Benutzer Kreditlimits auf der Seite **Debitor** bearbeiten. Wenn diese Option auf **Nein** gesetzt ist, können Änderungen am Kreditlimit eines Debitors nur durch die Buchung von Transaktionen zur Anpassung des Kreditlimits vorgenommen werden.
+- Stellen Sie die **Inventarreservierungen umgehen** Option auf **Ja**, um Bestandsreservierungen zu ignorieren, wenn die Kreditmanagement-Sperrregeln überprüft werden. In diesem Fall prüft das System vollständige Zeilenmengen und aktiviert Kulanzfristen für Prüfpunkte, unabhängig von der Bestandsreservierungsmenge.
+- Wenn das Kreditmanagement aktiviert ist, wird die Einstellung der **Meldung bei Überschreitung des Kreditlimits** Feld verwendet, um nur Freitextrechnungen zu verarbeiten. Obwohl Kundenaufträgen weiterhin Nachrichten hinzugefügt werden, wenn Kunden ihr Kreditlimit überschritten haben, blockieren diese Nachrichten nicht die Bestätigung, das Drucken von Kommissionierlisten und Lieferscheinen oder das Buchen von Rechnungen.
+
+    Die Kreditverwaltung ist standardmäßig aktiviert, Sie können sie jedoch deaktivieren. Wenn sie aktiviert ist, verwenden Sie die Sperrregeln und Prüfpunkte des Kreditmanagements, um zu erkennen, wann Kunden ihr Kreditlimit überschritten haben. Wenn es deaktiviert ist, werden die Nachrichten, die den Kundenaufträgen hinzugefügt werden, basierend auf der Einstellung des Felds **Meldung bei Überschreitung des Kreditlimits** Ihnen dabei helfen, zu erkennen, wann Kunden ihr Kreditlimit überschritten haben.
 
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>Zahlenfolgen und gemeinsame Zahlenfolgenparameter
 

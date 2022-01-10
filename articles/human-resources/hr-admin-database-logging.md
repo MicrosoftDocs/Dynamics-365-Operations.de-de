@@ -1,8 +1,8 @@
 ---
 title: Datenbankprotokollierung konfigurieren und verwalten
 description: Sie können Änderungen an Tabellen und Feldern in Dynamics 365 Human Resources mit Datenbankprotokollierung verfolgen.
-author: andreabichsel
-ms.date: 06/10/2020
+author: twheeloc
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4fd0f69df4a141e509c8c250f767cbbc3a20ef4ab7ac3dcec2bc6faa15eababb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 10591abee7890d54d721c9324101a4b4bd0a74d2
+ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781656"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "7924819"
 ---
 # <a name="configure-and-manage-database-logging"></a>Datenbankprotokollierung konfigurieren und verwalten
 
@@ -93,14 +93,14 @@ Sie können alle oder einen Teil der Datenbankprotokolle mit den folgenden Optio
 Gehen Sie zum Einrichten der Datenbankprotokoll-Bereinigung folgendermaßen vor: 
 
 1. Gehen Sie zu **Systemadministration> Links > Datenbank > Datenbankprotokoll einrichten**. Wählen Sie **Protokoll bereinigen**.
-
-2. Wählen Sie eine Methode zum Auswählen der zu löschenden Protokolle aus, indem Sie eine der folgenden Optionen eingeben:
+2. Wählen Sie unter der Überschrift **Einzuschließende Datensätze** die Option **Filter**.
+3. Wählen Sie die Methode, mit der die zu löschenden Protokolle ausgewählt werden sollen. Geben Sie eine der folgenden Optionen ein:
 
    - Tabellenkennung (ID)
    - Art des Protokolls
-   - Erstellungsdatum und -uhrzeit
+   - Datum und Uhrzeit der Erstellung
 
-3. Verwenden Sie die **Bereinigung des Datenbankprotokolls** Registerkarte, um festzulegen, wann die Protokollbereinigungsaufgabe ausgeführt werden soll. Standardmäßig sind Datenbankprotokolle 30 Tage lang verfügbar.
+4. Verwenden Sie die **Bereinigung des Datenbankprotokolls** Registerkarte, um festzulegen, wann die Protokollbereinigungsaufgabe ausgeführt werden soll. Standardmäßig sind Datenbankprotokolle 30 Tage lang verfügbar.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
