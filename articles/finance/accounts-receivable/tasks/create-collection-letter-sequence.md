@@ -1,8 +1,8 @@
 ---
 title: Mahnschreibensequenz erstellen
 description: Diese Prozedur erstellt eine Sequenz für Sammelbriefe.
-author: abruer
-ms.date: 07/22/2019
+author: JodiChristiansen
+ms.date: 12/07/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bfc5bd0b1228ef28631da8746b2eb60e4cf488c1
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: adeae6e20a799165e086df28b92a1357e8f2f0d3
+ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753585"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7921198"
 ---
 # <a name="create-a-collection-letter-sequence"></a>Mahnschreibensequenz erstellen
 
@@ -31,10 +31,10 @@ Diese Prozedur erstellt eine Sequenz für Sammelbriefe. Für diese Aufgabe wird 
 3. Geben Sie im Feld **Mahnschreibensequenz** eine Sequenzkennung ein, die die Reihenfolge darstellt. Sie wird verwendet, wenn Sie ein Buchungsprofil einrichten.
 4. Geben Sie im Feld **Beschreibung** einen Wert ein.  Die Zahlungsbedingungen sind optional. Wenn Sie einen Wert hier eingeben, verwendet die Mahngebührenrechnung diese Zahlungsbedingungen anstelle der Zahlungsbedingungen, die beim Debitor gespeichert sind.  
 5. Wählen Sie im Feld **Mahnschreibencode** den Code für das erste Mahnschreiben aus, das Sie senden möchten. Das erste Mahnschreiben wird gemäß dem Fälligkeitsdatum auf der Rechnung, der Toleranzperiode, die Sie im Feld "Tage" auf dieser Position eingegeben haben und anderen Informationen, die Sie auf dieser Position eingeben, erstellt.  
-6. Geben Sie im Feld **Beschreibung** einen Wert ein. Die Währung für die Gebühr ist standardmäßig die Währung des Debitors. Dieser Währungscode kann sich von der Rechnungswährung unterscheiden.  
-7. Klicken Sie auf **Hinzufügen**, um das nächste Mahnschreiben hinzuzufügen, das in der Sequenz gesendet wird. In vielen Fällen ist das erste Mahnschreiben nur eine Warnung. Sie können Gebühren nach Bedarf hinzufügen.  
-8. Wählen Sie im Mahnschreibencode-Feld das nächste Mahnschreiben aus, das in der Reihenfolge gesendet wird.
-9. Geben Sie im Feld **Beschreibung** einen Wert ein.
+6. Geben Sie im Feld **Beschreibung** einen Wert ein. 
+7. Die Standardwährung für die Gebühr ist standardmäßig die Währung der juristischen Person. Dieser Währungscode kann sich von der Rechnungswährung unterscheiden.   
+8. Klicken Sie auf **Hinzufügen**, um das nächste Mahnschreiben hinzuzufügen, das in der Sequenz gesendet wird. In vielen Fällen ist das erste Mahnschreiben nur eine Warnung. Sie können Gebühren nach Bedarf hinzufügen.  
+9. Wählen Sie im Feld **Mahnschreibencode** das nächste Mahnschreiben aus, das in der Sequenz gesendet wird.
 10. Wählen Sie im Feld **Hauptkonto** das Umsatzerlöskonto aus, das für Gebühren verwendet wird.
 11. Geben Sie die Gebühr ein, die berechnet wird, wenn dieses Mahnschreiben gesendet wird.
 12. Klicken Sie im Feld **Artikel-Mehrwertsteuergruppe** auf die Dropdown-Schaltfläche, um die Suche zu öffnen. Wählen Sie eine Artikel-Mehrwertsteuergruppe aus, wenn Mehrwertsteuern auf die Gebühr berechnet werden müssen.  

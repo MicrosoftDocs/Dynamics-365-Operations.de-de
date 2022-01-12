@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-23.md
                     - name: Commerce 10.0.22 (November 2021)
                       href: get-started/whats-new-commerce-10-0-22.md
-                    - name: Commerce 10.0.21 (Oktober 2021)
-                      href: get-started/whats-new-commerce-10-0-21.md
                 - name: Entfernte oder veraltete Funktionen
                   items:
                     - name: Entfernte oder veraltete Funktionen auf der Startseite
@@ -166,7 +164,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/commerce/toc.json
                 - name: Arbeitsbereiche konfigurieren und filtern
                   href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/commerce/toc.json
-                - name: Seiten mithilfe der „In neuem Fenster öffnen”-Funktion nebeneinander anzeigen
+                - name: Seiten mithilfe der „In neuem Fenster öffnen“-Funktion nebeneinander anzeigen
                   href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/commerce/toc.json
                 - name: Tastenkombinationen
                   href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/commerce/toc.json
@@ -842,7 +840,7 @@
           items:
             - name: Übersicht zu Aufstellungen
               href: retail-statements.md
-            - name: Konsistenzprüfung für Transaktionen
+            - name: Geschäftstransaktionen für die Aufstellungsberechnung validieren
               href: valid-checker.md
             - name: Regeln in der Konsistenzprüfung für Einzelhandelstransaktionen deaktivieren
               href: disable-consistency-check-rule.md
@@ -1286,6 +1284,8 @@
               href: localizations/fiscal-integration-for-retail-channel.md
             - name: Steuerintegration für Commerce-Kanal einrichten
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+            - name: Buildpipeline für Steuerintegrationsbeispiel einrichten
+              href: localizations/fiscal-integration-sample-build-pipeline.md
             - name: Benutzerdefinierte Zertifikatprofile für Einzelhandelsgeschäfte
               href: localizations/certificate-profiles-for-retail-stores.md
             - name: Regulatory Configuration Service (RCS)
@@ -1322,6 +1322,8 @@
               items:
                 - name: Beispiel für Integration des Steuererfassungsdienstes in Österreich
                   href: localizations/emea-aut-fi-sample.md
+                - name: Bereitstellungsrichtlinien für das Steuerintegrationsbeispiel für Österreich (veraltet)
+                  href: localizations/emea-aut-fi-sample-sdk.md
             - name: Brasilien
               items:
                 - name: Lokalisierung von Commerce für Brasilien
@@ -1358,12 +1360,16 @@
                   items:
                     - name: Integrationsbeispiel für Steuererfassungsdienst für Tschechische Republik
                       href: localizations/emea-cze-fi-sample.md
+                    - name: Bereitstellungsrichtlinien für das Steuerintegrationsbeispiel für Tschechische Republik (veraltet)
+                      href: localizations/emea-cze-fi-sample-sdk.md
                 - name: Polen
                   items:
                     - name: Beispiel für Belegdruckerintegration für Polen
                       href: localizations/emea-pol-fpi-sample.md
                     - name: Kundeninformationsmanagement für Polen
                       href: localizations/emea-pol-customer-information.md
+                    - name: Bereitstellungsrichtlinien für das Steuerintegrationsbeispiel für Polen (veraltet)
+                      href: localizations/emea-pol-fpi-sample-sdk.md
             - name: Frankreich
               items:
                 - name: Kassenfunktionen
@@ -1380,6 +1386,8 @@
               items:
                 - name: Integrationsbeispiel für Steuererfassungsdienst für Deutschland
                   href: localizations/emea-deu-fi-sample.md
+                - name: Bereitstellungsrichtlinien für das Steuerintegrationsbeispiel für Deutschland (veraltet)
+                  href: localizations/emea-deu-fi-sample-sdk.md
             - name: Indien
               items:
                 - name: Integration der Steuern auf Waren und Dienstleistungen (GST) für Kassen
@@ -1398,6 +1406,8 @@
                   href: localizations/emea-ita-fpi-sample.md
                 - name: Kundeninformationsmanagement für Italien
                   href: localizations/emea-ita-customer-information.md
+                - name: Bereitstellungsrichtlinien für das Steuerintegrationsbeispiel für Italien (veraltet)
+                  href: localizations/emea-ita-fpi-sample-sdk.md
             - name: Mexiko
               items:
                 - name: Globale CFDI-E-Rechnungen für Mexiko
@@ -1407,6 +1417,8 @@
                 - name: Kassenfunktionen
                   href: localizations/emea-nor-cash-registers.md
                 - name: Bereitstellungsrichtlinien für Kassen
+                  href: localizations/emea-nor-fi-deployment.md
+                - name: Bereitstellungsrichtlinien für Kassen (veraltet)
                   href: localizations/emea-nor-loc-deployment-guidelines.md
             - name: Russland
               items:
@@ -1432,6 +1444,8 @@
                   href: localizations/emea-swe-cash-registers.md
                 - name: Beispiel zur Integration der Kontrolleinheit für Schweden
                   href: localizations/emea-swe-fi-sample.md
+                - name: Bereitstellungsrichtlinien für das Kontrolleinheits-Integrationsbeispiel für Schweden (veraltet)
+                  href: localizations/emea-swe-fi-sample-sdk.md
                 - name: Beispiel zur Retail POS-Integration mit Kontrolleinheiten (Vorversion)
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: Berichterstellung und Power BI-Integrationen
@@ -2466,6 +2480,8 @@
                       href: e-commerce-extensibility/set-up-key-vault.md
                     - name: Plug-In-Hook für die Anforderungspipeline erstellen
                       href: e-commerce-extensibility/request-pipeline-hook.md
+                    - name: Bildkomponenten
+                      href: e-commerce-extensibility/image-component.md
                 - name: Datenaktivitäten entwickeln
                   items:
                     - name: Übersicht über Datenaktivitäten
@@ -2574,6 +2590,8 @@
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
                 - name: Beispiele und Pakete von GitHub und NuGet herunterladen
                   href: dev-itpro/retail-sdk/sdk-github.md
+                - name: Visual Studio 2017 Build Agent für Modern POS-Builds
+                  href: dev-itpro/retail-sdk/mpos-build-agent.md
                 - name: Häufig gestellte Fragen zu Retail SDK
                   href: dev-itpro/retail-sdk/sdk-faq.md
             - name: Erweiterbarkeit von Verkaufsstellen

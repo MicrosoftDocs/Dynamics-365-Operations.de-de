@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ec4265f0433fbbce1e00eda206c297b54f9b8df8
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: a709528b04e82c32f644073f79513b7ef11bb6bf
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778520"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920722"
 ---
 # <a name="firm-planned-orders"></a>Fest geplante Aufträge
 
@@ -80,6 +80,9 @@ Um geplanter Aufträge manuell zu fixieren, suchen Sie die geplanter Aufträge, 
     - **Nach Kaufvertrag gruppieren** – Setzen Sie diese Option auf *Ja*, um geplante Bestellungen zu gruppieren, die denselben Lieferanten wie bestehende Kaufverträge haben, und eine Bestellung pro Kaufvertrag zu erstellen. Diese Option wird automatisch aktiviert, wenn **Nach Anbieter gruppieren** aktiviert ist. Um **Nach Kaufvertrag gruppieren** zu nutzen, muss **Kaufvertrag finden** auf *Ja* eingestellt sein auf der Seite **Masterplanungsparameter**.
     - **Gruppieren nach Periode** (im Abschnitt **Einkaufsbestellungen**) – Wählen Sie die Periode, nach der geplante Aufträge gruppiert werden sollen. Um diese Option zu verwenden, müssen Sie auch die Option **Gruppieren nach Kreditor** aktivieren.
     - **Gruppieren nach Periode** (im Bereich **Umlagerungsaufträge**) – Wählen Sie die Periode aus, nach der geplante Umlagerungsaufträge gruppiert werden sollen. Die Aufträge werden anhand der Werte **Vom Lagerort** und **Zum Lagerort** gruppiert.
+
+    > [!NOTE]
+    > Jede der „Gruppieren nach“-Optionen veranlasst das System, jeden geplanten Auftrag in eine Zeile in der einzelnen Bestellung umzuwandeln, die sich aus der Gruppierung ergibt.
 
     ![Parameter Inforegister im Dialogfenster für die Umwandlung.](./media/manual-firming.png "Parameter Inforegister in der Dialogbox Umwandlung")
 

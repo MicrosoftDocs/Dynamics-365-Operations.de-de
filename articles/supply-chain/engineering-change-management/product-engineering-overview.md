@@ -1,5 +1,5 @@
 ---
-title: Überblick über die Verwaltung für technische Änderungen
+title: Überblick über die Verwaltung für technische Änderungen (enthält Video)
 description: Dieses Thema bietet einen Überblick über die Verwaltung für technische Änderungen, die Sie bei der Planung und Verwaltung der Produktversionsverwaltung sowie bei der Verwaltung von Produktlebenszyklen und technischen Änderungen unterstützt.
 author: t-benebo
 ms.date: 08/26/2021
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 89a3eb584275e52910726ca5a9ed53f744f10b8d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e9dc692061cec830f487e01a79075eda835bac23
+ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574688"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "7937659"
 ---
 # <a name="engineering-change-management-overview"></a>Überblick über die Verwaltung für technische Änderungen
 
@@ -26,9 +26,9 @@ ms.locfileid: "7574688"
 
 ## <a name="feature-summary"></a>Funktionszusammenfassung
 
-Heutige Hersteller benötigen ein starkes Produktdatenmanagement, eine Versionskontrolle und eine Verwaltung für technische Änderungen, um in einer Welt ständig kürzer werdender Produktlebenszyklen, erhöhter Qualitäts- und Zuverlässigkeitsanforderungen und eines verstärkten Fokus auf die Produktsicherheit erfolgreich zu sein.
+In einer Welt ständig kürzerer Produktlebenszyklen, höherer Anforderungen an Qualität und Zuverlässigkeit und einer stärkeren Konzentration auf die Produktsicherheit benötigen Hersteller heute ein leistungsfähiges Produktdatenmanagement, eine Versionskontrolle und eine Verwaltung für technische Änderungen.
 
-Die Verwaltung für technische Änderungen bringt Struktur und Disziplin in den Prozess der Produktdatenverwaltung und ermöglicht es, Produkte auf kontrollierte Weise zu definieren, freizugeben und zu überarbeiten, die durch Workflows unterstützt wird. Mit Hilfe von Produktversionen und der Verwaltung für technische Änderungen können Sie technische Änderungen während des gesamten Lebenszyklus eines Produkts dokumentieren, deren Auswirkungen bewerten und anwenden.
+Die Verwaltung für technische Änderungen bringt Struktur und Disziplin in den Prozess der Produktdatenverwaltung und ermöglicht die Definition, Freigabe und Überarbeitung von Produkten auf kontrollierte Weise, die durch Workflows unterstützt wird. Mit Hilfe von Produktversionen und der Verwaltung für technische Änderungen können Sie die Auswirkungen von technischen Änderungen während des gesamten Lebenszyklus eines Produkts dokumentieren, bewerten und anwenden.
 
 Die Verwaltung für technische Änderungen unterstützt Sie bei der Planung und Verwaltung von Produktversionen sowie bei der Verwaltung von Produktlebenszyklen und technischen Änderungen. Hier ist eine Liste der wichtigsten Funktionen:
 

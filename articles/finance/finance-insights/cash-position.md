@@ -2,7 +2,7 @@
 title: Bargeldposition
 description: In diesem Thema wird beschrieben, wie die Funktion zur Cashflow-Planung die Bargeldposition eines Unternehmens für bestimmte Zeiten vorhersagt. Außerdem werden die Optionen beschrieben, mit denen Prognosen für verschiedene Zeiträume angezeigt werden können.
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+ms.date: 12/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: bf99ce5c9de00061cba2f49d00cc9dbc728753a8
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 6bb99084a2ffef067dd0d7158ecb5e57d6d97d75
+ms.sourcegitcommit: c8dc60bb760553f166409c2e06dd2377f601c006
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752879"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "7945788"
 ---
 # <a name="cash-position"></a>Bargeldposition
 
@@ -45,5 +45,17 @@ Der untere Teil der Registerkarte **Bargeldposition** zeigt Details zur Position
 - Das **Bankkonto**-Raster zeigt die Auswirkungen der erwarteten Geldein- und -abgänge auf den Banksaldo.
 
 Erstellen Sie eine Momentaufnahme, um die Bargeldposition zu speichern und zu bearbeiten. Weitere Informationen zum Arbeiten mit Momentaufnahmen, finden Sie unter [Übersicht über Momentaufnahmen](payment-snapshots.md).
+
+## <a name="details-of-the-cash-position-capability"></a>Details zur Fähigkeit zur Cashflow-Position 
+
+Die Cashflow-Positionsfunktion umfasst die folgenden Funktionen. 
+
+- Die Bargeldpositionsfunktion zeigt den Cashflow basierend auf vorhandenen Dokumenten im System und aus externen Systemen importierten Zahlungsmittelzu- und -abflusslinien an.
+- Erleichtert die Integration von Cashflow-Daten von externen Systemen in Dynamics 365 Finance. Bargeldposition kann das Framework für Datenimport-Export verwenden. Dieses Framework erleichtert die Integration in Excel OData. Sie können auch Daten aus mehreren Quellen kombinieren, um eine umfassende Bargeldpositions-Lösung zu erstellen.
+- Führt eine intelligente Bargeldposition ein. Die Bargeldposition wird basierend auf dem Zahlungsverhalten des Debitors erstellt, um vorherzusagen, wann ein Unternehmen mit Bargeld auf seinen Konten rechnen kann.
+- Für Kundenbestellungen und Rechnungen wird die KI-Funktion zur Vorhersage der Kundenzahlung verwendet, um das historische Zahlungsverhalten des Kunden zu bestimmen, wenn eine Bestellung oder Rechnung bezahlt wird.
+- Bei Lieferantenbestellungen und Rechnungen verwenden wir die durchschnittliche Zeit zwischen Versand und Rechnung und Zahlung einer Rechnung pro Lieferant, um zu bestimmen, wann eine Lieferantenbestellung oder Rechnung bezahlt wird, um die Geldabflüsse genauer zu machen.
+
+Dies schafft eine genauere Ansicht des Cashflows basierend auf dem historischen Zahlungsverhalten des Schatzmeisters. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

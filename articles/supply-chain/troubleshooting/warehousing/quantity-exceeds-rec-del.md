@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 25507a482b2db7c01f56679bf3e8454249de3a6b9965f9c359a2ebe2cc8445ce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ec5e0ac8dd097e5ebf016683fc5c17df7ecb2305
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6711686"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920397"
 ---
 # <a name="quantity-that-youre-trying-to-update-exceeds-the-receiveddelivered-quantity"></a>Die Menge, die Sie zu aktualisieren versuchen, übersteigt die empfangene/gelieferte Menge
 
@@ -62,8 +62,8 @@ Gehen Sie wie folgt vor, um die Menge der Ladung in der Zeile anzupassen.
 
 1. Gehen Sie zu **Lagerortverwaltung \> Ladungen \> Alle Ladungen**.
 1. Wählen Sie die Ladung aus, für die der Lieferschein nicht generiert werden kann.
-1. Wählen Sie im Aktionsbereich auf der Registerkarte **Versand und Empfang** in der Gruppe **Stornieren** die Option **Sendungsbestätigung stornieren**.
-1. Wählen Sie auf der Registerkarte **Ladungszeilen** die Ladung des Elements, das ein Problem verursacht.
+1. Wählen Sie im Aktionsbereich auf der Registerkarte **Versand und Empfang** in der Gruppe **Stornieren** die Option **Sendungsbestätigung stornieren**.
+1. Wählen Sie auf der Registerkarte **Ladungszeilen** die Ladung des Elements, das ein Problem verursacht.
 1. Wählen Sie **Reduzieren Sie die kommissionierte Menge**, um die kommissionierte Menge anzupassen.
 1. Legen Sie das Feld **Ladung reduzieren** fest, um Anpassungen an der Ladung zu reflektieren.
 
@@ -75,5 +75,5 @@ Gehen Sie wie folgt vor, um die Kommissionierregistrierung rückgängig zu mache
 
 1. Gehen Sie zu **Debitoren \> Aufträge \> Alle Aufträge**.
 1. Wählen Sie den Verkaufsauftrag aus, für den Sie keinen Lieferschein für die Ladung buchen können.
-1. Wählen Sie auf der Registerkarte  **Verkaufsauftragszeilen** die Zeile des Verkaufsauftrags, für den die Kommissionierregistrierung durchgeführt wurde.
+1. Wählen Sie auf der Registerkarte **Kundenauftragszeilen** die Kundenauftragszeile aus, für die kommissioniert wurde.
 1. Wählen Sie **Zeile \> Kommissionierung rückgängig machen**, um die Entnahme rückgängig zu machen.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5ad3b2444f194f8324a309df32612a5377851995
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 7d462992816a5a2dee73979ed4cb1521ca4ce4f7
+ms.sourcegitcommit: c8dc60bb760553f166409c2e06dd2377f601c006
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752903"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "7945753"
 ---
 # <a name="cash-flow-forecasting"></a>Cashflowplanung
 
@@ -37,6 +37,7 @@ Nachdem Sie diese Aufgaben abgeschlossen haben, können Sie Planungen des Cashfl
 Cashflow-Planung kann in die Module "Hauptbuch", "Kreditoren", "Debitoren", "Budetierung" und "Lagerverwaltung" integriert werden. Der Planungsvorgang verwendet Buchungsinformationen, die in das System eingegeben werden, und der Berechnungsvorgang plant die erwarteten Bargeldauswirkungen jeder Buchung. Die folgenden Buchungsarten werden berücksichtigt, wenn der Cashflow berechnet wird:
 
 - **Aufträge** – Aufträge, die noch nicht fakturiert wurden und die zu physischen oder wertmäßigen Umsätzen führen.
+- **Freitextrechnungen** – Noch nicht gebuchte Freitextrechnungen, die zu finanziellen Verkäufen führen. 
 - **Bestellungen** – Bestellungen, die noch nicht fakturiert wurden und die zu physischen oder wertmäßigen Umsätzen führen.
 - **Debitoren** – Offene Debitorenbuchungen (Rechnungen, die noch nicht bezahlt wurden).
 - **Kreditoren** – Offene Kreditorenbuchungen (Rechnungen, die noch nicht bezahlt wurden).
@@ -44,7 +45,9 @@ Cashflow-Planung kann in die Module "Hauptbuch", "Kreditoren", "Debitoren", "Bud
 - **Budgeterfassungseinträge** – Budgeterfassungseinträge, die für die Cashflow-Planung ausgewählt wurden.
 - **Bedarfsplanung** – Bestandsplanungsmodellpositionen, die für die Cashflow-Planung ausgewählt wurden.
 - **Beschaffungssplanung** – Bestandsplanungsmodellpositionen, die für die Cashflow-Planung ausgewählt wurden.
+- **Externe Datenquelle** – Externe Daten, die mithilfe von Tabellenkalkulationsvorlagen in die Cashflow-Prognosen eingegeben oder importiert werden.
 - **Projektplanungen** – Projektverwaltungs- und -verrechnungsplanungen unter Verwendung des Planungsmodells.
+- **Cashflow-Zahlungen an die Umsatzsteuerbehörde** – Voraussichtliche Zahlungsbeträge und Zeitpunkte der Umsatzsteuerbehörde, die zu finanziellen Zahlungen führen. Aktivieren Sie die Funktion Cashflow-Zahlungen an die Umsatzsteuerbehörde.
 
 ## <a name="configuration"></a>Variante
 
@@ -94,7 +97,7 @@ Budgetregistereinträge können durch Personalisierung individuell in die Cashfl
 Bestandslieferungs- und Bedarfsplanung kann in die Cashflowplanung einbezogen werden. Auf der Registerkarte **Bestandverwaltung** der Seite **Cashflow-Planungssetup** wählen Sie das Planungsmodell aus, das in die Caschflow-Planung einbezogen werden sollen. Das Einbeziehen in der Cashflow-Planung kann für einzelne Lieferungs- und Bedarfsplanungspositionen überschrieben werden.
 
 ### <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>Einrichten von Dimensionen für die Cashflow-Planung
-Auf der neuen Registerkarte auf der **Einrichtung der Cashflow-Planung** Seite können Sie steuern, welche Finanzdimensionen für die Filterung im Arbeitsbereich **Cashflow-Planung** verwendet werden sollen. Diese Registerkarte wird nur angezeigt, wenn die Cashflow-Planungsfunktion in Finance Insights aktiviert ist. 
+Auf der neuen Registerkarte auf der  **Einrichtung der Cashflow-Planung** Seite können Sie steuern, welche Finanzdimensionen für die Filterung im  **Cashflow-Planung** Arbeitsbereich verwendet werden sollen. Diese Registerkarte wird nur angezeigt, wenn die Cashflow-Planungsfunktion aktiviert ist.
 
 Wählen Sie auf der Registerkarte **Dimensionen** aus der Liste der zur Filterung verwendeten Dimensionen aus und verschieben Sie sie mit den Pfeiltasten in die rechte Spalte. Zum Filtern von Cashflow-Planungsdaten können nur zwei Dimensionen ausgewählt werden. 
 
@@ -109,7 +112,11 @@ Nachdem die Funktion zur Cashflow-Projektplanung aktiviert wurde, kann die Cashf
 
 Projekttransaktionen werden weiterhin auf verschiedene Weise in die Cashflow-Planungen einbezogen, unabhängig davon, ob die **Cashflow-Projektplanung**-Funktion aktiviert ist. Gebuchte Projektrechnungen werden in der Planung als Teil der offenen Debitorenbuchungen einbezogen. Durch das Projekt initiierte Aufträge und Bestellungen sind bei der Kapazitätsplanung für offene Aufträge enthalten, nachdem diese in das System eingegeben wurden. Projektplanung kann auch in ein Sachkontobudgetmodell übertragen werden. Dieses Sachkontobudgetmodell ist dann in der Cashflow-Planung als Teil der Budgetregistereinträge enthalten. Wenn Sie die Funktion **Cashflow-Projektplanung** eingeschaltet haben, übertragen Sie keine Projektplanungen in ein Sachkontobudgetmodell, da diese Aktion dazu führt, dass die Projektplanungen zweimal gezählt werden.
 
-### <a name="calculation"></a>Herstellkostenkalkulation
+### <a name="sales-tax-authority-payments"></a>Mehrwertsteuerzahlungen an autoritative Stelle 
+
+Die Funktion Cashflow-Mehrwertsteuerzahlungen an die Behörde prognostiziert die Auswirkungen von Mehrwertsteuerzahlungen auf den Cashflow. Es verwendet unbezahlte Umsatzsteuertransaktionen, Steuerabrechnungszeiträume und die Zahlungsfrist des Steuerzeitraums, um das Datum und die Höhe von Cashflow-Zahlungen vorherzusagen. 
+
+### <a name="calculation"></a>Berechnung
 
 Bevor Sie Cashflowplanungsanalyse anzeigen können, muss der Cashflow-Berechnungsprozess ausgeführt werden. Der Berechnungsprozess projiziert die künftigen Bargeldauswirkungen von Buchungen, die eingegeben wurden.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ee4803c4653b8c2df2cb731652456b1ce2796cd0
-ms.sourcegitcommit: e77d72fde17a43bd1780c265702254011af7407c
+ms.openlocfilehash: e6f47e7bccdfa5205209a290b2ce0d37f2e5a534
+ms.sourcegitcommit: c42d047cb866f7988f1879ac84cd45284a03abf8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "7893644"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "7931980"
 ---
 # <a name="add-or-copy-leases-preview"></a>Mietverträge hinzufügen oder kopieren (Vorschau)
 
@@ -50,6 +50,9 @@ Führen Sie die folgenden Schritte aus, um einen Mietplan zu erstellen, nachdem 
     Die Seite **Buchdetails** zeigt, wie der Mietvertrag durch die ihm zugewiesenen Bücher bilanziert wird. Von hier aus können Sie die Mietpläne anzeigen.
 
     Der Zahlungsplan enthält die Eingaben aus der **Zahlungsplanezeilen**-Registerkarte auf der **Mietvertrag hinzufügen**-Seite. Sie können weiterhin jeden Zahlungsbetrag und jede variable Zahlung ändern. Die Leasingverbindlichkeit wird anhand des geänderten Zahlungsplans berechnet.
+    
+> [!NOTE]
+> Das Startdatum für die Mietzahlung muss mit dem Mietbeginn gleich oder nach dem Mietbeginn liegen. Wenn Sie ein Startdatum für die Zahlung eingeben, das vor dem Startdatum für die Miete liegt, erhalten Sie eine Fehlermeldung. 
 
 4. Nachdem Sie den Zahlungsplan überprüft haben, wählen Sie **Zeitplan bestätigen**. Nachdem der Zeitplan bestätigt wurde, kann der Mietvertrag nicht mehr bearbeitet werden.
 

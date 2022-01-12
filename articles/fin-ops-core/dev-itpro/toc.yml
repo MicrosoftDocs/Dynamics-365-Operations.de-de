@@ -1012,11 +1012,13 @@
                   href: lifecycle-services/use-translation-service-ua.md
                 - name: Translation-Memory-Dateien
                   href: lifecycle-services/use-translation-service-tm.md
+                - name: Azure DevOps-Erweiterung (öffentliche Vorschauversion)
+                  href: lifecycle-services/dts-devops-extension.md
         - name: Microsoft Power Platform-Integration
           items:
             - name: Übersicht
               href: power-platform/overview.md
-            - name: Aktivieren der Power Platform-Integration
+            - name: Power Platform-Integration aktivieren
               href: power-platform/enable-power-platform-integration.md
             - name: Authentifizierung und Autorisierung
               href: power-platform/authentication-and-authorization.md
@@ -1602,9 +1604,11 @@
                   href: sysadmin/retryable-batch.md
                 - name: Batchauftrag kopieren
                   href: sysadmin/copy-batch-job.md
-                - name: Aktive Batchzeiträume
+                - name: Prioritätsbasierte Chargenplanung
+                  href: sysadmin/priority-based-batch-scheduling.md
+                - name: Aktive Chargenzeiträume
                   href: sysadmin/activeperiod.md
-                - name: Unterstützung der Sommerzeit bei aktiven Batchzeiträumen
+                - name: Unterstützung der Sommerzeit bei aktiven Chargenzeiträumen
                   href: sysadmin/batch-active-period-dst.md
                 - name: Sicherheitsrolle Chargenmanager
                   href: sysadmin/runby.md

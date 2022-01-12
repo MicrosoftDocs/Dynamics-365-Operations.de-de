@@ -2,7 +2,7 @@
 title: Human Resources-App in Teams
 description: Dieses Thema enthält Informationen zur Microsoft Dynamics 365 Human Resources-App in Microsoft Teams.
 author: twheeloc
-ms.date: 12/09/2021
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8eebe154a19dd8476f6e9d75ebfd69fdc5b9e2b7
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: 9274ab345616561deddd322ebad0d6e0b834d1d4
+ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913488"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "7924721"
 ---
 # <a name="human-resources-app-in-teams"></a>Human Resources-App in Teams
 
@@ -41,6 +41,21 @@ Sie finden die App Dynamics 365 Human Resources im Teams-Store. Weitere Informat
 Informationen zum Verwalten von App-Berechtigungen in Teams finden Sie unter [App-Berechtigungsrichtlinien in Microsoft Teams verwalten](/MicrosoftTeams/teams-app-permission-policies).
 
 Wenn Sie möchten, dass Ihre Benutzer den Urlaubs- und Abwesenheitskalender in der App sehen können, müssen Sie die Funktion **Abwesenheits- und Urlaubskalender in Teams** in der Funktionsverwaltung aktivieren. Weitere Informationen zum Aktivieren von Funktionen finden Sie unter [Funktionen verwalten](hr-admin-manage-features.md).
+
+## <a name="update-app"></a>App aktualisieren
+>[!NOTE]
+> Ab dem 20. Dezember 2021 werden die im Microsoft Mandant gehosteten Bot-Dienste der Human Resources App außer Betrieb genommen. Es gibt keine Auswirkungen für eine aktuelle Erweiterung (Version 1.1.5), die zur Installation verfügbar ist. Die größte Auswirkung wird die veraltete Erweiterung (Version 1.1.4) haben. Der Chatbot wird in dieser Version nicht mehr funktionieren. Die Registerkarte **Time-off** funktioniert weiterhin in beiden Erweiterungen.
+
+Bei Version 1.1.4 reagiert der Chatbot nicht mehr auf Nachrichten. Zum Beispiel **Anmelden**, **Salden anzeigen** und **Abwesenheit sehen**. Die App muss manuell auf die neueste Version aktualisiert werden. Weitere Informationen finden Sie unter [Aktualisierung von Apps in Microsoft Teams](/MicrosoftTeams/apps-update-experience).
+
+Um auf die Version 1.1.5 zu aktualisieren, führen Sie diese Schritte aus:
+1. Gehen Sie in Microsoft Teams zu **Apps**.
+2. Suchen Sie die App **Human Resources**.
+3. Wählen Sie **Upgrade**.
+
+Sie können die Version der App Human Resources entweder auf der Registerkarte **Über** oder im Abschnitt **Persönliche App** überprüfen. 
+
+![Registerkarte Human Resources **Über**.](./media/HR-teams-about.png)
 
 ## <a name="enable-notifications-for-the-human-resources-app-in-teams"></a>Aktivieren von Benachrichtigungen für die Human Resources-App in Teams
 

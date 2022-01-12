@@ -2,19 +2,19 @@
 title: Migration vom Währungsdatentyp für duales Schreiben
 description: In diesem Thema wird beschrieben, wie Sie die Anzahl der Dezimalstellen ändern, die duales Schreiben für die Währung unterstützt.
 author: RamaKrishnamoorthy
-ms.date: 04/06/2020
+ms.date: 12/08/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: eaf0cd931e763f31faa334d5353ae6950ed7ee4f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: bce58631ecd54bb90993bd552d529d3b379de1b1
+ms.sourcegitcommit: 6762a674a552353d9f53587923c9acba9b43cb56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782806"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "7917729"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migration vom Währungsdatentyp für duales Schreiben
 
@@ -87,5 +87,16 @@ Wenn Sie verlangen, dass die Währungsgenauigkeit für eine bestimmte Währung v
 
 Die Anzahl der Dezimalstellen, die für bestimmte Währungsspalten konfiguriert werden können, ist auf vier begrenzt.
 
+### <a name="default-currency-decimal-precision"></a>Dezimalgenauigkeit der Standardwährung
+Informationen zum erwarteten Verhalten für die Dezimalgenauigkeit der Standardwährung in Migrations- und Nicht-Migrationsszenarien finden Sie in der folgenden Tabelle. 
+
+| Erstellungsdatum  | Dezimalfeld Währung    | Vorhandene Organisation (Währungsfeld nicht migriert) | Vorhandene Organisation (Währungsfeld migriert) | Neue Organisation erstellt Postbuild 9.2.21062.00134 |
+|---------------------------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|------------------------------------------------|
+| Währungsfeld wurde vor dem Build erstellt 9.2.21111.00146  |     |  |       |
+|    | Maximale Präzision in der Benutzeroberfläche sichtbar   | 4 Ziffern    | 10 Ziffern    | Nicht zutreffend    |
+| | Maximale Genauigkeit, die in der Benutzeroberfläche der Datenbank- und DB-Abfrageergebnisse sichtbar ist         | 4 Ziffern   | 10 Ziffern   | Nicht zutreffend    |
+| Währungsfeld wurde nach dem Build erstellt 9.2.21111.00146 |    |  |     |   |
+|   | Maximale Dezimalpräzision in der Benutzeroberfläche sichtbar     | 4 Ziffern   | 10 Ziffern   | 10 Ziffern     |
+|          | Maximale Dezimalgenauigkeit, die in der Benutzeroberfläche der Datenbank- und DB-Abfrageergebnisse sichtbar ist | 10 Ziffern. Allerdings sind nur 4 signifikant, wobei alle Nullen jenseits der 4 Dezimalstellen liegen. Dies ermöglicht bei Bedarf eine einfachere und schnellere Migration der Organisation. | 10 Ziffern      | 10 Ziffern     |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

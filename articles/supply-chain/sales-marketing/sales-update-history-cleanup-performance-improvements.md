@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 1b2de9d6a7b1b7793b6bb753dd580d052d3c2841
-ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
+ms.openlocfilehash: 610f0d4e0448dd21d10765400f25cd89e3c7a84b
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "7891767"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920272"
 ---
-# <a name="saleshistorycleanupperformanceimprovements"></a>Verbesserungen an der Leistung der Verkaufshistorienbereinigung
+# <a name="sales-history-cleanup-performance-improvements"></a>Verbesserungen an der Leistung der Verkaufshistorienbereinigung
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -34,7 +34,7 @@ Die Funktion verbessert den vorhandenen Bereinigungsauftrag auf folgende Weise:
 
 Nachdem Sie die Funktion aktiviert haben, wird der Batchauftrag **Aktualisierungshistorie für Verkauf bereinigen** (**Vertrieb und Marketing \> Periodische Aufgaben \> Bereinigung \> Aktualisierungshistorie für Verkauf bereinigen**) wie zuvor ausgeführt, jedoch mit besserer Leistung und für maximal 2 Stunden. Dies bedeutet, dass er möglicherweise mehrmals ausgeführt werden muss, um alle Daten für einen bestimmten Aufbewahrungszeitraum zu bereinigen.
 
-## <a name="turn-on-the-saleshistorycleanupperformanceimprovements-feature"></a>Funktion für Verbesserungen an der Leistung der Verkaufshistorienbereinigung aktivieren
+## <a name="turn-on-the-sales-history-cleanup-performance-improvements-feature"></a>Aktivieren Sie die Funktion zur Leistungsverbesserung der Bereinigung des Verkaufsverlaufs
 
 Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
 

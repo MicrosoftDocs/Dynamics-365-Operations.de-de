@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 187363db3030ee0741f0c7e7746295b88320162c156120112332bb78593bb673
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d767fdce861ccb481a3fe289480a51a7534dc207
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744653"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920223"
 ---
 # <a name="physical-remaining-quantity-in-the-unit-must-not-be-zero"></a>Physikalische Restmenge in der Einheit darf nicht Null sein
 
@@ -63,10 +63,10 @@ Gehen Sie wie folgt vor, um Ihre Ladungszeilen zu überprüfen und Anpassungen v
 
 1. Gehen Sie zu **Lagerortverwaltung \> Ladungen \> Alle Ladungen**.
 1. Wählen Sie die Ladung aus, für die der Lieferschein nicht generiert werden kann.
-1. Wählen Sie im Aktionsbereich auf der Registerkarte **Versand und Empfang** in der Gruppe **Stornieren** die Option **Sendungsbestätigung stornieren**.
-1. Wählen Sie auf der Registerkarte **Ladungszeilen** die Ladungszeile für das Element aus, das die Überlieferung überschreitet.
+1. Wählen Sie im Aktionsbereich auf der Registerkarte **Versand und Empfang** in der Gruppe **Stornieren** die Option **Sendungsbestätigung stornieren**.
+1. Wählen Sie auf der Registerkarte **Ladungszeilen** die Ladung für das Element aus, das die Überlieferung überschreitet.
 1. Wählen Sie **Reduzieren Sie die kommissionierte Menge**, um die kommissionierte Menge anzupassen.
-1. Wählen Sie auf der Registerkarte  **Zeilendetails** die Option **Auftrag**.
+1. Auf der Registerkarte **Zeilendetails** wählen Sie **Auftrag**.
 1. Legen Sie das Feld **Menge** auf die kommissionierte Menge fest (d. h. den Wert des Feldes **Werk erstellte Menge**), damit die Erstellung des Lieferscheins fortgesetzt werden kann.
 
 ### <a name="review-your-load-lines-and-make-adjustments-to-ensure-that-the-unit-and-quantity-are-aligned-with-the-decimal-precision-of-the-unit"></a>Überprüfen Sie Ihre Ladungszeilen und nehmen Sie Anpassungen vor, um sicherzustellen, dass die Einheit und die Menge mit der Dezimalgenauigkeit der Einheit übereinstimmen

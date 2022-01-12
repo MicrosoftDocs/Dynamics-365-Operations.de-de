@@ -2,7 +2,7 @@
 title: Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
 description: Dieses Thema enthält Informationen zum Entwerfen eines Formats für die elektronische Berichterstellung (EB), um eine Excel-Vorlage auszufüllen und ausgehende Dokumente im Excel-Format zu generieren.
 author: NickSelin
-ms.date: 12/03/2021
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ebe2647bb382421921aa6ffc733953f379a8af10
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 87d5929557e5120a5339ee46eac655fd399679d1
+ms.sourcegitcommit: f51e74ee9162fe2b63c6ce236e514840795acfe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890864"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "7943611"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
 
@@ -364,6 +364,22 @@ Sie können das Problem auf eine der folgenden Arten beheben:
     3. Führen Sie das geänderte EB-Format aus.
 
         ![Überprüfen des generierten Excel-Dokuments in der Excel-Desktop-Anwendung.](./media/er-fillable-excel-example2-4.png)
+
+## <a name="limitations"></a>Einschränkungen
+
+### <a name="known-epplus-library-limitations"></a>Bekannte Einschränkungen der EPPlus Bibliothek
+
+#### <a name="external-data-sources"></a>Externe Datenquellen
+
+Wenn eine Ihrer Vorlagen eine PivotTable enthält, die auf einem PowerPivot-Modell basiert, das auf eine [externe Datenquelle](https://support.microsoft.com/office/create-a-pivottable-with-an-external-data-source-db50d01d-2e1c-43bd-bfb5-b76a818a927b) verweist, und die Funktion **Verwendung der EPPlus-Bibliothek im Electronic Reporting Framework aktivieren** aktiviert ist, erhalten Sie die folgende Fehlermeldung, wenn Sie ein ER-Format ausführen, das diese Vorlage verwendet, um einen ausgehenden Beleg im Excel-Format zu erzeugen: „The cachesource is not a worksheet“. Um dieses Problem zu beheben, haben Sie die folgenden Möglichkeiten:
+
+- **Empfohlen:** Überarbeiten Sie die Excel-Lösung, die Sie verwenden:
+
+    1. Isolieren Sie den Teil, der Pivots enthält, in einer separaten Excel-Arbeitsmappe (Arbeitsmappe A). 
+    2. Verwenden Sie ER, um eine zweite Excel-Arbeitsmappe (Arbeitsmappe B) aus Finance zu erstellen, die die erforderlichen Details enthält. 
+    3. Verweisen Sie in Arbeitsmappe A auf Arbeitsmappe B, sobald Arbeitsmappe B erstellt wird.
+
+- Verwenden Sie eine andere Option als EPPlus, um die Funktion zu deaktivieren. 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

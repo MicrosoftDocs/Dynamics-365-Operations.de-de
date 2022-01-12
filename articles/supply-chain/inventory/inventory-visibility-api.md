@@ -2,7 +2,7 @@
 title: Öffentliche Inventartransparenz-APIs
 description: Dieses Thema beschreibt die öffentlichen APIs, die von Inventory Visibility bereitgestellt werden.
 author: yufeihuang
-ms.date: 09/30/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 1899969ddbbccafde3f7bb06a897ea7c0f2d656b
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: d676191f921d74a5a0ced934f3692dacbe7cd7b4
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678786"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920099"
 ---
 # <a name="inventory-visibility-public-apis"></a>Öffentliche Inventartransparenz-APIs
 
@@ -41,8 +41,8 @@ In der folgenden Tabelle sind die derzeit verfügbaren APIs aufgeführt:
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Buchen | [Festlegen/Überschreiben von Lagerbeständen](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Buchen | [Ein Ereignis für eine Reservierung erstellen](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Buchen | [Mehrere Reservierungsereignisse erstellen](#create-multiple-reservation-events) |
-| /api/environment/{environmentId}/onhand/indexquery | Abrufen | [Abfrage mit Hilfe der POST-Methode](#query-with-post-method) |
-| /api/environment/{environmentId}/onhand/indexquery | Buchen | [Abfrage mit Hilfe der get-Methode](#query-with-get-method) |
+| /api/environment/{environmentId}/onhand/indexquery | Buchen | [Abfrage mit Hilfe der POST-Methode](#query-with-post-method) |
+| /api/environment/{environmentId}/onhand | Abrufen | [Abfrage mit Hilfe der get-Methode](#query-with-get-method) |
 
 Microsoft hat eine standardmäßige *Postman* Abfrage-Sammlung bereitgestellt. Sie können diese Sammlung in Ihre *Postman*-Software importieren, indem Sie den folgenden gemeinsamen Link verwenden: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
 
@@ -476,7 +476,7 @@ Body:
 
 ## <a name="query-on-hand"></a>Lagerbestand abfragen
 
-Die _Abfrage des Lagerbestands_ API wird verwendet, um aktuelle Daten zum Lagerbestand Ihrer Produkte abzurufen.
+Verwenden Sie die _Abfrage des Lagerbestands_ API, um aktuelle Daten zum Lagerbestand Ihrer Produkte abzurufen. Die API unterstützt derzeit die Abfrage von bis zu 100 einzelnen Elementen nach dem `ProductID`-Wert. In jeder Abfrage können auch mehrere `SiteID`- und `LocationID`-Werte angegeben werden. Die Höchstgrenze ist mit `NumOf(SiteID) * NumOf(LocationID) <= 100` definiert.
 
 ### <a name="query-by-using-the-post-method"></a><a name="query-with-post-method"></a>Abfrage mit Hilfe der Post-Methode
 
@@ -551,7 +551,7 @@ Die folgenden Beispiele zeigen, wie Sie alle Produkte an einem bestimmten Stando
 
 ```txt
 Path:
-    /api/environment/{environmentId}/onhand/indexquery
+    /api/environment/{environmentId}/onhand
 Method:
     Get
 Headers:
@@ -568,7 +568,7 @@ Query(Url Parameters):
 Hier ist eine Beispiel-GET-URL. Diese get-Anfrage ist genau die gleiche wie das post-Beispiel, das zuvor bereitgestellt wurde.
 
 ```txt
-/api/environment/{environmentId}/onhand/indexquery?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
+/api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
 ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
