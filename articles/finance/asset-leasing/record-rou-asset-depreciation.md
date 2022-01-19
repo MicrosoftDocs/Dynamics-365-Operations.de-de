@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 02364a0871e9a54f52c7c526cd1897165d52ec68
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: a766247e5482677429706a324c09cc9be4386c0b
+ms.sourcegitcommit: 304a482dfcc31dcb61849f710ae73432324ddef3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345369"
+ms.lasthandoff: 12/29/2021
+ms.locfileid: "7947314"
 ---
 # <a name="record-right-of-use-asset-depreciation-preview"></a>Abschreibung des Nutzungsrechts am Leasingobjekt erfassen (Vorschau)
 
@@ -35,7 +35,7 @@ Bei Mietverträgen, die in der Bilanz eines Unternehmens erfasst werden, wird da
 1. Auf der **Mietvertragsübersicht**-Seite wählen Sie einen Mietvertrag. Dann wählen Sie **Bücher \> Abschreibungsplan für Anlagen**, um die **Abschreibungsplan für Anlagen**-Seite zu öffnen.
 
     Der Journaleintrag für den Abschreibungsaufwand für das Nutzungsrecht am Leasingobjekt basiert auf dem Betrag in der **Abschreibungen**-Spalte. Ein Beispiel für die Richtlinien zur Einhaltung von Rechnungslegungsstandards finden Sie im Abschnitt [Berechnung des Amortisierungsaufwands für das Nutzungsrecht am Leasingobjekt für Finanzierungsleasing](#calculation-of-rou-asset-amortization-expense-for-finance-leases) später in diesem Thema.
-
+    
 2. Wählen Sie den Abschreibungszeitraum aus und wählen Sie dann **Erfassung erstellen**. Sie erhalten eine Nachricht, die besagt, dass die Erfassung erstellt wurde, in dem die Abschreibung erfasst wird.
 3. Wählen Sie **Erfassungen \> Anlagenleasingerfassungen**, um die **Anlagenleasingerfassung**-Seite zu öffnen, auf der Sie den erstellten Abschreibungskostenjournaleintrag anzeigen können.
 
@@ -70,6 +70,8 @@ Wie zuvor erwähnt wird der lineare Mietaufwand als die Summe aller Mietzahlunge
 
 > [!NOTE]
 > Gemäß ASC 842 wird die Abschreibung des Nutzungsrechts am Leasingobjekt für einen Ausrüstungs-Leasingvertrag in der Gewinn- und Verlustrechnung als Leasingaufwand ausgewiesen. Aus Gründen der Sichtbarkeit beschreibt das Anlagenleasing den Eintrag als Abschreibung des Nutzungsrechts am Leasingobjekt. Die Belastungsbuchung sollte jedoch einem Aufwandskonto für Ausrüstungs-Leasingverträge zugeordnet werden, und die Gutschriftbuchung sollte direkt dem Nutzungsrecht am Leasingobjekt für das Ausrüstungs-Leasingvertrag zugeordnet werden. In den Mietvertragsparametern können Sie jedoch festlegen, dass Gutschriften auf einem kumulierten Abschreibungskonto für das Nutzungsrecht am Leasingobjekt für Ausrüstung vorgenommen werden sollen.
+
+Ist das Leasingverhältnis als Operating-Leasingverhältnis klassifiziert, wird die monatliche Abschreibung nach Wertminderung nach der linearen Abschreibung berechnet.
 
 ## <a name="calculation-of-rou-asset-amortization-expense-for-finance-leases"></a>Berechnung des Amortisierungsaufwands für das Nutzungsrecht am Leasingobjekt für Finanzierungs-Leasing
 

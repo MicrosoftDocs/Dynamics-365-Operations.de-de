@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: d676191f921d74a5a0ced934f3692dacbe7cd7b4
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 92c427d3063c34f263d5bc449be6fac695b5912d
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920099"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952626"
 ---
 # <a name="inventory-visibility-public-apis"></a>Öffentliche Inventartransparenz-APIs
 
@@ -48,6 +48,8 @@ Microsoft hat eine standardmäßige *Postman* Abfrage-Sammlung bereitgestellt. S
 
 > [!NOTE]
 > Der Teil {environmentId} des Pfades ist die Umgebungs-ID in Microsoft Dynamics Lifecycle Services (LCS).
+> 
+> Die Bulk-API kann maximal 512 Datensätze für jede Anfrage zurückgeben.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Finden Sie den Endpunkt entsprechend Ihrer Lifecycle Services Umgebung
 
@@ -249,7 +251,7 @@ Das folgende Beispiel zeigt einen Beispielkörperinhalt ohne `dimensionDataSourc
 
 ### <a name="create-multiple-change-events"></a><a name="create-multiple-onhand-change-events"></a>Erstellen Sie mehrere Änderungsereignisse
 
-Diese API kann mehrere Datensätze gleichzeitig erstellen. Die einzigen Unterschiede zwischen dieser API und der [Einzelereignis-API](#create-one-onhand-change-event) sind die Werte `Path` und `Body`. Bei dieser API liefert `Body` ein Array von Datensätzen.
+Diese API kann mehrere Datensätze gleichzeitig erstellen. Die einzigen Unterschiede zwischen dieser API und der [Einzelereignis-API](#create-one-onhand-change-event) sind die Werte `Path` und `Body`. Bei dieser API liefert `Body` ein Array von Datensätzen. Die maximale Anzahl von Datensätzen beträgt 512, was bedeutet, dass die Bulk-API für vorhandene Änderungen bis zu 512 Änderungsereignisse gleichzeitig unterstützen kann.
 
 ```txt
 Path:

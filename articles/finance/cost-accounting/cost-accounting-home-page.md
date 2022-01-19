@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 88dea2724f574383298c5deac9b76b4cd1d802b5427c8ec2a59a9d1ab0de4e0c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ab125f963b8f2e00c8d937c6eea091970feaef65
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741583"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952545"
 ---
 # <a name="cost-accounting-home-page"></a>Startseite für die Kostenrechnung
 
@@ -38,7 +38,7 @@ Die folgende Lernenzuordnung zeigen die wichtigsten Konzepte und die Aufgaben, d
 
 | &nbsp; | &nbsp;  |
 |------|---|
-|  [Basisentitäten konfigurieren (eLearning)](https://mbspartner.microsoft.com/Home) (CustomerSource-Konto erforderlich)  |[Kostenelementdimensionen](cost-elements.md)  |
+|  [Erste Schritte mit Kostenrechnung (Learn)](https://docs.microsoft.com/learn/modules/get-started-cost-accounting-dyn365-finance/)  |[Kostenelementdimensionen](cost-elements.md)  |
 |  [Dimensionshierarchie](dimension-hierarchy.md)  |[Kostenkontrolleinheiten definieren](./tasks/define-cost-control-units.md)| 
 | [Zuteilungsbasen](allocation-bases.md)|[Eine Kostenzuweisungsrichtlinie für eine Kostenkontrollsteuereinheit erstellen und zuweisen](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
 | [Eine Datenquelle für das Sachkonto der Kostenrechnung verwalten](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [Quelldaten verarbeiten und nachverfolgen](./tasks/process-trace-source-data.md)     | 

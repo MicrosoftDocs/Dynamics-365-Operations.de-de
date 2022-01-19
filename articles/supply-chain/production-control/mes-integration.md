@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 43814023474d44b8c95bae087c7b6a4d52d21471
-ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
+ms.openlocfilehash: ea39a1fc9092aaa4622c7193f7538acc85aa0f46
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7891925"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952676"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integration in Fertigungssteuerungssysteme von Drittanbietern
 
@@ -37,10 +37,17 @@ Die folgende Abbildung zeigt eine typische Sammlung von Geschäftsereignissen, P
 
 ## <a name="turn-on-the-mes-integration-feature"></a>Aktivieren der MES-Integrationsfunktion
 
-Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+Bevor Sie diese Funktion nutzen können, muss ein Administrator sie in Ihrem System aktivieren, wie im folgenden Verfahren beschrieben.
 
-- **Modul:** *Produktionssteuerung*
-- **Funktionsname:** *Integration des Fertigungssteuerungssystems*
+1. Gehen Sie zu **Systemadministration \> Einrichten \> Lizenzkonfiguration**.
+1. Stellen Sie sicher, dass der **Zeit und Anwesenheit**-Lizenzschlüssel aktiviert ist (Häkchen). Dieser Lizenzschlüssel ist erforderlich, da er die Funktionalität und Daten des Fertigungssteuerungssystems steuert. Wenn es nicht aktiviert ist, führen Sie die folgenden Schritte aus:
+    1. Legen Sie Ihr System in den Wartungsmodus ein, wie in [Wartungsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) beschrieben.
+    1. Auf der Seite **Lizenzkonfiguration** wählen Sie das **Zeit und Anwesenheit**-Kontrollkästchen aus.
+    1. Schalten Sie den Wartungsmodus aus, wie in [Wartungsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) beschrieben.
+1. Wechseln Sie zu **Systemverwaltung \> Arbeitsbereiche \> Funktionsverwaltung**.
+1. Schalten Sie die Funktion ein, die auf folgende Weise aufgelistet ist (siehe auch [Übersicht über die Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)):
+    - **Modul:** *Produktionssteuerung*
+    - **Funktionsname:** *Integration des Fertigungssteuerungssystems*
 
 ## <a name="processes-available-for-mes-integration"></a>Verfügbare Prozesse für die MES-Integration
 

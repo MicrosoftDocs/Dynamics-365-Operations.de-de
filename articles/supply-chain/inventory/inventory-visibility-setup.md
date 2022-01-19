@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d6f58eab38d1aee97a5d39704255bf06a168b36c
-ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
+ms.openlocfilehash: 26f8820fe707b8a2dff0dcc1a24884ef02e5616f
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "7581864"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952495"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Bestandsanzeige installieren und einrichten
 
@@ -71,6 +71,9 @@ Nachdem Sie eine Anwendung registriert und ein Client-Geheimnis zu Azure AD hinz
 1. Stimmen Sie den Bedingungen zu, indem Sie das Kontrollkästchen **Geschäftsbedingungen** aktivieren.
 1. Wählen Sie **Installieren**. Der Status des Add-Ins wird als **Installation** angezeigt. Wenn die Installation abgeschlossen ist, aktualisieren Sie die Seite. Der Status sollte sich auf **Installiert** ändern.
 1. Wählen Sie in Dataverse den Abschnitt **Apps** Abschnitt im linken Navigationsbereich aus, und stellen Sie die erfolgreiche Installation von **Bestandsanzeige**-Power Apps sicher. Wenn der Abschnitt **Apps** nicht vorhanden ist, wenden Sie sich an das Produktteam für Bestandsanzeige unter [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
+
+> [!TIP]
+> Wir empfehlen Ihnen, der Benutzergruppe des Bestandsanzeige-Add-Ins beizutreten, wo Sie nützliche Anleitungen finden, unsere neuesten Updates erhalten und Fragen zur Verwendung von Bestandsanzeige stellen können. Um beizutreten, senden Sie bitte eine E-Mail an das Produktteam der Bestandsanzeige unter [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) und geben Sie Ihre Supply Chain Management-Umgebungs-ID an.
 
 > [!IMPORTANT]
 > Wenn Sie mehr als eine LCS-Umgebung haben, erstellen Sie für jede Umgebung eine andere Azure AD-Anwendung. Wenn Sie dieselbe Anwendungs-ID und Mandanten-ID verwenden, um das Bestandsanzeige-Add-In für verschiedene Umgebungen zu installieren, tritt in älteren Umgebungen ein Tokenproblem auf. Nur die zuletzt installierte Version ist gültig.

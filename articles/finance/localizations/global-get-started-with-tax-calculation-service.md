@@ -2,7 +2,7 @@
 title: Erste Schritte mit der Steuerberechnung
 description: In diesem Thema wird erläutert, wie Steuerberechnungen eingerichtet werden.
 author: wangchen
-ms.date: 10/15/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,31 +15,74 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 2f26f8e5eafe29e88c26d3fb6cfa950466ec6be9
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: ae2c20fe79c2f8fd8d102740441230ae443f16a3
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647433"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952520"
 ---
 # <a name="get-started-with-tax-calculation"></a>Erste Schritte mit der Steuerberechnung
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Informationen zu den ersten Schritten mit der Steuerberechnung. Sie führt Sie durch die Konfigurationsschritte in Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance und Dynamics 365 Supply Chain Management. Anschließend wird der allgemeine Prozess für die Verwendung der Steuerberechnungsfunktion für Transaktionen in Finance und Supply Chain Management überprüft.
+Dieses Thema enthält Informationen zu den ersten Schritten mit der Steuerberechnung. Zunächst werden Sie in diesem Thema durch die allgemeinen Konfigurationsschritte in Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS) und Dynamics 365 Finance sowie Dynamics 365 Supply Chain Management geführt. 
 
-Die Einrichtung besteht aus vier Hauptschritten:
+Die Einrichtung besteht aus drei Hauptschritten.
 
 1. Installieren Sie in LCS das Add-In "Steuerberechnung".
 2. Richten Sie in RCS die Steuerberechnungsfunktion ein. Diese Einrichtung ist nicht für jede juristische Person spezifisch. Es kann von juristischen Personen in Finance und Supply Chain Management gemeinsam genutzt werden.
 3. Richten Sie in Finance und Supply Chain Management die Steuerberechnungsparameter nach juristischer Person ein.
-4. Erstellen Sie in Finance und Supply Chain Management Transaktionen wie Aufträge und verwenden Sie die Steuerberechnung, um Steuern zu ermitteln und zu berechnen.
+
+## <a name="high-level-design"></a>Allgemeines Design
+
+### <a name="runtime-design"></a>Design zur Laufzeit
+
+Die folgende Abbildung zeigt das allgemeine Laufzeit-Design einer Steuerberechnung. Da die Steuerberechnung in mehrere Dynamics 365-Apps integriert werden kann, verwendet die Abbildung die Integration mit Finance als Beispiel.
+
+1. In Finance wird eine Transaktion erstellt, z. B. ein Kundenauftrag oder eine Bestellung.
+2. Finance verwendet automatisch die Standardwerte der Mehrwertsteuergruppe und der Artikel-Mehrwertsteuergruppe.
+3. Wenn die Schaltfläche **Mehrwertsteuer** auf der Transaktion ausgewählt wird, wird die Steuerberechnung ausgelöst. Finance sendet dann die Nutzlast an den Steuerberechnungsdienst.
+4. Der Steuerberechnungsservice gleicht die Nutzlast mit vordefinierten Regeln in der Steuerfunktion ab, um gleichzeitig eine genauere Mehrwertsteuergruppe und Artikelumsatzsteuergruppe zu finden.
+
+    - Wenn die Nutzlast mit der **Anwendbarkeit der Steuergruppe**-Matrix übereinstimmt, überschreibt sie den Mehrwertsteuergruppenwert mit dem übereinstimmenden Steuergruppenwert in der Anwendbarkeitsregel. Andernfalls wird weiterhin der Mehrwertsteuergruppenwert aus Finance verwendet.
+    - Wenn die Nutzlast mit der **Element-Steuerkennzeichen-Anwendbarkeit**-Matrix übereinstimmt, überschreibt sie den Element-Mehrwertsteuergruppenwert mit dem übereinstimmenden Element-Steuergruppenwert in der Anwendbarkeitsregel. Andernfalls wird weiterhin der Element-Mehrwertsteuergruppenwert aus Finance verwendet.
+
+5. Der Steuerberechnungsdienst legt die finalen Steuercodes über die Schnittmenge einer Mehrwertsteuergruppe und einer Element-Mehrwertsteuergruppe fest.
+6. Der Steuerberechnungsdienst berechnet die Steuern basierend auf den endgültigen Steuercodes, die er ermittelt hat.
+7. Der Steuerberechnungsdienst gibt das Steuerberechnungsergebnis an Finance zurück.
+
+![Laufzeitdesign der Steuerberechnung.](media/tax-calculation-runtime-logic.png)
+
+### <a name="high-level-configuration"></a>Allgemeine Konfiguration
+
+Die folgenden Schritte bieten einen allgemeinen Überblick über den Konfigurationsprozess für den Steuerberechnungsservice.
+
+1. Installieren Sie im LCS-Projekt das Add-In **Steuerberechnung**.
+2. Richten Sie in RCS die **Steuerberechnungsfunktion** ein.
+3. Richten Sie in RCS die **Steuerberechnungsfunktion** ein:
+
+    1. Wählen Sie die Steuerberechnungsversion aus.
+    2. Erstellen Sie die Steuercodes.
+    3. Erstellen Sie eine Steuergruppe.
+    4. Eine Artikelsteuergruppe erstellen.
+    5. Optional: Legen Sie eine Steuergruppenanwendbarkeit an, wenn Sie die standardmäßige Mehrwertsteuergruppe überschreiben möchten, die aus den Debitoren- oder Kreditorenstammdaten eingegeben wird.
+    6. Optional: Legen Sie eine Artikelgruppenanwendbarkeit an, wenn Sie die standardmäßige Artikelsteuergruppe überschreiben möchten, die aus den Artikelstammdaten eingegeben wird.
+
+4. Vervollständigen und veröffentlichen Sie die Funktion **Steuerberechnung** in RCS.
+5. Wählen Sie in Finance die veröffentlichte Funktion **Steuerberechnung** aus.
+
+Nachdem Sie diese Schritte ausgeführt haben, werden die folgenden Setups automatisch von RCS mit Finance synchronisiert.
+
+- Mehrwertsteuercodes
+- Mehrwertsteuergruppen
+- Artikel-Mehrwertsteuergruppen
+
+Die verbleibenden Themen enthalten zusätzliche Details zu den Konfigurationsschritten.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Bevor Sie die Verfahren in diesem Thema abschließen können, müssen die Voraussetzungen für jeden Umgebungstyp vorhanden sein.
-
-Folgende Voraussetzungen müssen erfüllt sein:
+Bevor Sie die verbleibenden Vorgehensweisen in diesem Thema abschließen können, müssen die folgenden Voraussetzungen erfüllt sein:<!--TO HERE-->
 
 - Sie müssen Zugriff auf Ihr LCS-Konto haben, und Sie müssen ein LCS-Projekt bereitstellen, das über eine Umgebung der Stufe 2 oder höher verfügt, die Dynamics 365 Version 10.0.21 oder höher ausführt.
 - Sie müssen eine RCS-Umgebung für Ihre Organisation erstellen und Sie müssen Zugriff auf Ihr Konto haben. Weitere Informationen über das Erstellen einer RCS-Umgebung finden Sie unter [Regulatory Configuration Service Übersicht](rcs-overview.md).
@@ -72,15 +115,7 @@ Die Schritte in diesem Abschnitt beziehen sich nicht auf eine bestimmte juristis
 5. Wählen Sie im Feld **Typ** **Global** aus.
 6. Wählen Sie **Öffnen**.
 7. Gehen Sie zu **Steuerdatenmodell**, erweitern Sie den Dateibaum und wählen Sie dann **Steuerkonfiguration** aus.
-8. Wählen Sie die richtige Steuerkonfigurationsversion, basierend auf Ihrer Finance-Version, und wählen Sie dann **Importieren**.
-
-    | Version freigeben | Steuerkonfiguration                       |
-    | --------------- | --------------------------------------- |
-    | 10.0.18         | Steuerkonfiguration - Europa 30.12.82     |
-    | 10.0.19         | Steuerberechnungs-Konfiguration 36.38.193 |
-    | 10.0.20         | Steuerberechnungs-Konfiguration 40.43.208 |
-    | 10.0.21         | Steuerberechnungs-Konfiguration 40.48.215 |
-
+8. Wählen Sie die richtige [Steuerkonfigurationsversion](global-tax-calcuation-service-overview.md#versions), basierend auf Ihrer Finance-Version, und wählen Sie dann **Importieren**.
 9. Wählen Sie im Arbeitsbereich **Globalisierungsfunktionen** die Funktion **Funktionen**, wählen Sie die Kachel **Steuerberechnung** und wählen Sie dann **Hinzufügen**.
 10. Wählen Sie eine der folgenden Funktionstypen aus:
 
@@ -209,42 +244,3 @@ Die Einrichtung in diesem Abschnitt erfolgt nach juristischer Person. Sie müsse
 
 5. Auf der Registerkarte **Mehrfache MwSt.-Registrierung** können Sie MwSt.-Erklärung, EU-Verkaufsliste und Intrastat separat einschalten, um unter einem Szenario mit mehreren MwSt.-Registrierungen zu arbeiten. Weitere Informationen über Steuerberichte für mehrere MwSt.-Registrierungen finden Sie unter [Berichterstattung für mehrere MwSt.-Registrierungen](emea-reporting-for-multiple-vat-registrations.md).
 6. Speichern Sie die Einrichtung und wiederholen Sie die vorherigen Schritte für jede zusätzliche juristische Entität. Wenn eine neue Version veröffentlicht wird und Sie möchten, dass sie angewendet wird, legen Sie das Feld **Einrichtung der Funktion** auf der Registerkarte **Allgemein** der Seite **Steuerberechnungsparameter** fest (siehe Schritt 2).
-
-## <a name="transaction-processing"></a>Verarbeiten von Buchungen
-
-Nachdem Sie alle Einrichtungsvorgänge abgeschlossen haben, können Sie die Steuerberechnung verwenden, um die Steuer in Finance zu ermitteln und zu berechnen. Die Schritte zur Verarbeitung von Transaktionen bleiben unverändert. Die folgenden Transaktionen werden in Finance Version 10.0.21 unterstützt:
-
-- Verkaufsprozess
-
-    - Verkaufsangebot
-    - Auftrag
-    - Bestätigung
-    - Kommissionierliste
-    - Lieferschein
-    - Verkaufsrechnung
-    - Gutschrift
-    - Rücklieferung
-    - Kopfgebühr
-    - Positionsgebühr
-
-- Kaufprozess
-
-    - Bestellung
-    - Bestätigung
-    - Zugangsliste
-    - Produktzugang
-    - Einkaufsrechnung
-    - Kopfgebühr
-    - Positionsgebühr
-    - Gutschrift
-    - Rücklieferung
-    - Bestellanforderung
-    - Belastung pro Bestellanforderungsposition
-    - Angebotsanforderung
-    - Kopfgebühr für Angebotsanforderung
-    - Belastung pro Angebotsanforderungsposition
-
-- Bestandsprozess
-
-    - Umlagerungsauftrag – versenden
-    - Umlagerungsauftrag – empfangen

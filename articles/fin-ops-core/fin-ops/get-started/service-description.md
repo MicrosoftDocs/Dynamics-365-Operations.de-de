@@ -2,19 +2,19 @@
 title: Servicebeschreibung für die Finance and Operations Apps
 description: Dieses Thema enthält die Servicebeschreibung für die Finance and Operations Apps.
 author: tomhig
-ms.date: 12/07/2021
+ms.date: 01/05/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: f7ce73018fda79156cc7ef3d4e1faa3fedf966f8
-ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
+ms.openlocfilehash: 85f82a863f0bde4c0414760fa2477651242538f2
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "7898388"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952365"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Servicebeschreibung für die Finance and Operations Apps
 
@@ -117,7 +117,7 @@ Finance and Operations Apps werden aus mehreren Azure-Regionen auf der ganzen We
 ### <a name="countryregion-specific-considerations"></a>Landes-/regionsspezifische Betrachtungen
 
 - Kunden in regulierten Branchen oder kommerziellen Organisationen, die mit Unternehmen in Frankreich Geschäfte machen, die eine lokale Datenresidenz erfordern, sollten dies überprüfen [Finance and Operations in Frankreich](../../dev-itpro/deployment/france-local-deployment.md).
-- Kunden, die in China tätig sind, sollten [Finance and Operations betrieben von 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md) überprüfen.
+- Kunden, die in China tätig sind, sollten [Azure China Playbook](/azure/china/) und [Finance and Operations betrieben von 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md) überprüfen.
 - Kunden, die in Russland tätig sind, sollten das [Russisches Gesetz zur Lokalisierung personenbezogener Daten](/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia) überprüfen.
 
 ### <a name="general-data-protection-regulation-gdpr"></a>Datenschutz-Grundverordnung (DSGVO)
@@ -356,6 +356,7 @@ Microsoft verpflichtet sich zu einer Verfügbarkeitsrate von 99,9 Prozent pro Mo
 - **[Lizenzierungsleitfaden](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365)** – Verwenden Sie diese Anleitung, um mehr über die Lizenzierung von Dynamics 365 zu erfahren.
 - **[Kundendienst](https://dynamics.microsoft.com/support/)** – Erhalten Sie branchenführenden Support für Ihre Dynamics 365-Apps.
 - **[Dynamics Lifecycle Services](https://lcs.dynamics.com/)** – Verwalten Sie Ihren Anwendungslebenszyklus und gehen Sie zu vorhersehbaren, wiederholbaren und qualitativ hochwertigen Implementierungen.
+- **[Dynamics 365-Implementierungsleitfaden](https://aka.ms/D365ImplementationGuideFlip)** – Der Dynamics 365-Implementierungsleitfaden dokumentiert bewährte Success by Design-Prinzipien und bietet präskriptive Anleitungen zum Entwerfen, Erstellen, Testen und Bereitstellen von Dynamics 365-Lösungen.
 
 ## <a name="definitions"></a>Definitionen
 
@@ -428,6 +429,10 @@ Das SLA gilt für Microsoft-Onlinedienste. Weitere Informationen finden Sie unte
 ### <a name="service-update"></a>Serviceupdate
 
 Microsoft-Dienste Finance and Operations Umgebungen auf konsistenter Basis durch Service-Updates. Kunden legen ihren eigenen Service-Update-Kalender basierend auf ihren Geschäftsanforderungen fest. Weitere Informationen finden Sie unter [Dienstupdates für eine Version](../../dev-itpro/lifecycle-services/oneversion-overview.md).
+
+### <a name="success-by-design"></a>[Success by Design](/dynamics365/fasttrack/success-by-design-overview)
+
+Das Framework, das eine Implementierung systematisch durch eine Reihe von Bewertungen in kritischen Phasen führt, um eine optimale Architektur, Sicherheit, Leistung und Benutzererfahrung für eine Dynamics 365-Lösung sicherzustellen.
 
 ### <a name="user"></a>Benutzer
 

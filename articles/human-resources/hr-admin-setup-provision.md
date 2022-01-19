@@ -2,7 +2,7 @@
 title: Human Resources bereitstellen
 description: Dieses Thema erklärt den Prozess der Bereitstellung einer neuen Produktionsumgebung für Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/11/2021
+ms.date: 01/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c84fdb3c5c61598dfd0934e769f4a7262ce74052
-ms.sourcegitcommit: 8439ce2d4ad5ee5c1ec870640b52b5d2e947a671
+ms.openlocfilehash: b5ea27c6650df0b94284902eb37e2169ea36261a
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "7644526"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952701"
 ---
 # <a name="provision-human-resources"></a>Human Resources bereitstellen
 
@@ -44,7 +44,7 @@ Bevor Sie Ihre erste Sandbox- oder Produktionsumgebung bereitstellen, möchten S
 
 Testumgebungen bieten die Möglichkeit, Personalwesenfunktionen für Personen zu bewerten, die noch keinen Zugriff auf eine Personalwesenumgebung haben. Wenn Sie eine Testumgebung bereitstellen und der authentifizierte Benutzer bereits Zugriff auf eine oder mehrere vorhandene Umgebungen des Personalwesens hat, wird der Benutzer an die vorhandene Umgebung oder Liste der Umgebungen umgeleitet.
 
-Test-Umgebungen sind nicht für die Verwendung als Produktionsumgebung vorgesehen. Sie sind auf einen Testzeitraum von 60 Tagen beschränkt. Nach Ablauf des Testzeitraums werden die Umgebung und alle darin befindlichen Daten gelöscht und können nicht wiederhergestellt werden. Die Umgebung kann nicht in eine Sandbox- oder Produktionsumgebung umgewandelt werden. Sie können sich nun für eine neue Probeumgebung anmelden, nachdem die vorhandene Umgebung abläuft.
+Test-Umgebungen sind nicht für die Verwendung als Produktionsumgebung vorgesehen. Sie sind auf einen Testzeitraum von 30 Tagen beschränkt. Nach Ablauf des Testzeitraums werden die Umgebung und alle darin befindlichen Daten gelöscht und können nicht wiederhergestellt werden. Die Umgebung kann nicht in eine Sandbox- oder Produktionsumgebung umgewandelt werden. Sie können sich nun für eine neue Probeumgebung anmelden, nachdem die vorhandene Umgebung abläuft.
 
 Wenn Sie eine Human-Resources-Testumgebung erstellen, wird zusätzlich eine Power Apps-Testumgebung auf dem Mandanten erstellt und mit der Human-Resources-Umgebung verknüpft. Die Power Apps-Umgebung mit dem Namen „TestDrive“ hat den gleichen Testzeitraum wie die Human-Resources-Umgebung.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fd79880dc8aa77eea8c16f350c0853013c6ad17b
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: b104cec399a368ada64a73688c42476e6fbd9e52
+ms.sourcegitcommit: 304a482dfcc31dcb61849f710ae73432324ddef3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890829"
+ms.lasthandoff: 12/29/2021
+ms.locfileid: "7947339"
 ---
 # <a name="impair-right-of-use-assets"></a>Wertminderung bei Nutzungsrechten an Leasingobjekten
 
@@ -44,6 +44,8 @@ Der verbleibende Restbetrag des Nutzungsrecht am Leasingobjekt wird linear für 
 
     > [!NOTE]
     > Nach der Buchung der Wertminderungstransaktion wird eine neue Buchversion erstellt.
+
+    > Ist das Leasingverhältnis als Operating-Leasingverhältnis klassifiziert, wird die monatliche Abschreibung nach Wertminderung nach der linearen Abschreibung berechnet.
 
 9. Um den wertgeminderten Anlagenabschreibungsplan anzuzeigen, öffnen Sie die Seite Anlagenabschreibungsplan für dieses Mietvertragsbuch. Die Anlage wird nun linear über die Anzahl der Monate abgeschrieben, die Sie im Feld **Verbleibende Zeiträume** eingegeben haben.
 10. Um den Journaleintrag für den Wertminderungsaufwand anzuzeigen, wählen Sie **Anlagenleasingerfassung** im Aktionsbereich des wertgeminderten Mietvertragsbuchs aus. Das System erstellt einen Journaleintrag, der das Buchungskonto für Wertminderungsaufwendungen belastet und das Buchungskonto für Mietanlagen gutschreibt. 
@@ -100,6 +102,7 @@ Die folgenden Tabellen zeigen die Werte, die auf den Registerkarten **Allgemeine
     | Buch schließen             | Nein       |
 
 6. Ein Journaleintrag für Wertminderungsaufwand wurde erstellt und gebucht. Um diesen anzuzeigen, gehen Sie zur Leasingerfassung der Anlage im Leasingbuch. Beachten Sie, dass der Betrag der Wertminderung dem Buchungskonto für Wertminderungsaufwendungen belastet und das Buchungskonto für Nutzungsrecht am Leasingobjekt gutgeschrieben wurde.
+
 7. Um den Nettoeffekt der Wertminderung anzuzeigen, gehen Sie zu den Tabellen für Verbindlichkeiten und Anlagentransaktionen. Beachten Sie, dass der Wertminderungsaufwand das Nutzungsrecht am Leasingobjekt verringert hat, der Buchwert der Leasingverbindlichkeit sich jedoch nicht geändert hat.
 
 Die Wertminderung hat einen weiteren Effekt, den Sie berücksichtigen sollten. Da der Betrag des Nutzungsrechts am Leasingobjekt jetzt viel geringer ist als die Leasingverbindlichkeit, muss der Betrag anders als zuvor abgeschrieben werden. Insbesondere wird die Anlage jetzt während der verbleibenden 84 Monate des Mietvertrags ab dem Transaktionsdatum linear abgeschrieben.

@@ -15,18 +15,18 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0b3d56b3d19bd671d0015e87eefdf8ae62f4cee0
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: a4aa7369c84836154b8217a5b70267021f4028b1
+ms.sourcegitcommit: 4f84540e6121ca3d5ae52ee07e414116d423cefa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731539"
+ms.lasthandoff: 01/03/2022
+ms.locfileid: "7948474"
 ---
-# <a name="set-up-the-components-of-a-job"></a>Einrichten von Komponenten eines Einzelvorgangs
+# <a name="set-up-the-components-of-a-job"></a>Komponenten einer Stelle einrichten
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In diesem Artikel werden die Begriffselemente, die ein Einzelvorgang enthalten kann beschriben und es enthält Beispiele dafür, wie die Elemente in der Organisation verwendet werden können. 
+In diesem Thema werden die Begriffselemente, die ein Einzelvorgang enthalten kann beschriben und es enthält Beispiele dafür, wie die Elemente in der Organisation verwendet werden können. 
 
 Bevor Sie einen Vorgang erstellen, müssen Sie gewisse Referenzinformationen einrichten. Sie können einen Einzelvorgang erstellen, der lediglich einen Namen hat. Allerdings vom Einschließen von zusätzliche Informationen, wie einer Berufsbezeichnung, stellen Sie die Standardwerte für Positionen verfügbar, die der Stelle zugewiesen sind. Darüber hinaus können einige der Informationen, die Sie eingeben, verwendet werden, um Vergütungspläne für bestimmte Stellen zu filtern. Wenn Sie Berechtigungen einstellen möchten, die Sie zum Filtern von Vergütungsplänen für eine bestimmte Stelle verwenden können, richten Sie vor der Einrichtung von Stellen zunächst Stellenfunktionen und Stellenarten ein. Mithilfe dieser Standardwerte, sparen Sie Zeit, wenn Sie dem Einzelvorgang Positionen hinzufügen. 
 

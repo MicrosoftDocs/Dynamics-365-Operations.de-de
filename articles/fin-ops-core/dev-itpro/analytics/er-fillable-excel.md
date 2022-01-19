@@ -2,7 +2,7 @@
 title: Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
 description: Dieses Thema enthält Informationen zum Entwerfen eines Formats für die elektronische Berichterstellung (EB), um eine Excel-Vorlage auszufüllen und ausgehende Dokumente im Excel-Format zu generieren.
 author: NickSelin
-ms.date: 12/15/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 87d5929557e5120a5339ee46eac655fd399679d1
-ms.sourcegitcommit: f51e74ee9162fe2b63c6ce236e514840795acfe1
+ms.openlocfilehash: 9b1c83894d93789a270ed4521ba7f80da70285ac
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7943611"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952651"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
 
@@ -379,7 +379,7 @@ Wenn eine Ihrer Vorlagen eine PivotTable enthält, die auf einem PowerPivot-Mode
     2. Verwenden Sie ER, um eine zweite Excel-Arbeitsmappe (Arbeitsmappe B) aus Finance zu erstellen, die die erforderlichen Details enthält. 
     3. Verweisen Sie in Arbeitsmappe A auf Arbeitsmappe B, sobald Arbeitsmappe B erstellt wird.
 
-- Verwenden Sie eine andere Option als EPPlus, um die Funktion zu deaktivieren. 
+- Deaktivieren Sie die Funktion **Die Nutzung der EPPlus-Bibliothek im Rahmen der elektronische Berichterstellung aktivieren**, um eine andere Option als EPPlus zu verwenden. 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
