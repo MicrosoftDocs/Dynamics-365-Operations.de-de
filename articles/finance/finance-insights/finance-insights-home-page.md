@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "14151"
 - intro-internal
@@ -17,22 +17,21 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: dfc4d9cb5be4d8d287122fd33bf09b0570498169
-ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
+ms.openlocfilehash: 8cc7b2d733cdcf1adef2885b7900ea312a10d98c
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "7813746"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968785"
 ---
 # <a name="finance-insights-home-page"></a>Startseite von Finance Insights
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Finance Insights bietet konfigurierbare und erweiterbare Lösungen, mit denen Sie den Cashflow Ihres Unternehmens intelligent vorhersagen können und auch, wann Sie Zahlungen für ausstehende Forderungen erhalten, und einen Budgetvorschlag erstellen können, der Ihren Budgetierungsprozess beschleunigen kann. Diese Funktionen verwenden intelligente Vorlagen für maschinelles Lernen, um Modelle mit den von Ihnen bereitgestellten Daten zu erstellen (einschließlich Daten von Drittanbietern wie Verbraucherberichtsinformationen von einer Behörde). Diese intelligenten Funktionen unterstützen die Entscheidungsfindung und helfen Ihnen, Maßnahmen zu ergreifen, um effektiv auf aktuelle und erwartete geschäftliche Herausforderungen zu reagieren. Sie sind für alle Daten verantwortlich, die mit Finance Insights verwendet oder daraus ausgegeben werden.
 
 > [!NOTE]
-> Die öffentliche Finance Insights-Vorschau ist in den Vereinigten Staaten von Amerika, Kanada, dem Vereinigten Königreich, Europa, dem asiatisch-pazifischen Raum, Japan, Australien und Neuseeland zur Bereitstellung verfügbar. Microsoft fügt schrittweise Unterstützung für weitere Regionen hinzu.
+> Finance Insights ist in den Vereinigten Staaten von Amerika, Kanada, dem Vereinigten Königreich, Europa, dem asiatisch-pazifischen Raum, Japan, Australien und Neuseeland zur Bereitstellung verfügbar. Microsoft fügt schrittweise Unterstützung für weitere Regionen hinzu.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 

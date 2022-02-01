@@ -1,5 +1,5 @@
 ---
-title: Vorschau auf Dynamics 365 Supply Chain Management 10.0.24 (Februar 2022)
+title: Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.24 (Februar 2022)
 description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Supply Chain Management 10.0.24 entweder neu oder geändert sind.
 author: kamaybac
 ms.date: 12/03/2021
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: f6402d7f9f433ca621c475bd62553529943dbe62
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: d7dd3bbb0d1aa701757ad7fa525aba04fe9419c9
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920547"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986302"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10024-february-2022"></a>Vorschau auf Dynamics 365 Supply Chain Management 10.0.24 (Februar 2022)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.24 (Februar 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-In diesem Thema werden die Funktionen aufgeführt, die in der Microsoft Dynamics 365 Supply Chain Management Vorschauversion 10.0.24 entweder neu oder geändert sind. Diese Version hat die Build-Nummer 10.0.1084 und ist wie folgt verfügbar:
+Dieses Thema listet Funktionen auf, die in Microsoft Dynamics 365 Supply Chain Management-Version 10.0.24 entweder neu sind oder geändert wurden. Diese Version hat die Build-Nummer 10.0.1084 und ist wie folgt verfügbar:
 
 - **Vorschau des Release:** Dezember 2021
 - **Allgemeine Verfügbarkeit des Releases (Selbst-Update):** Januar 2022
@@ -32,7 +31,7 @@ In diesem Thema werden die Funktionen aufgeführt, die in der Microsoft Dynamics
 
 Die folgende Tabelle listet die Funktionen auf, die in dieser Version enthalten sind. Möglicherweise aktualisieren wir dieses Thema, um Funktionen einzubeziehen, die es in den Build geschafft haben, nachdem dieses Thema ursprünglich veröffentlicht wurde.
 
-| Funktionsbereich | Funktion | Mehr erfahren | Aktiviert von   |
+| Funktionsbereich | Funktion | Mehr erfahren | Aktiviert von |
 |---|---|---|---|
 | Verteilte Hybridtopologie | [Verbesserte Arbeitsauslastungen für Lagerausführung auf Skalierungseinheiten](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-warehouse-execution-workloads-scale-units) | [Workloads in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten](../cloud-edge/cloud-edge-workload-warehousing.md) | Standardmäßig aktiviert. |
 | Planung | [Planungsoptimierungsunterstützung für Sicherheitszuschlag für Wiederbestellung und Warenabgang](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-reorder-margin-issue-margin) | [Sicherheitszuschläge](../master-planning/planning-optimization/safety-margins.md) | Standardmäßig aktiviert. |
@@ -69,9 +68,9 @@ Wir haben die folgenden Hilfethemen kürzlich hinzugefügt oder erheblich aktual
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformupdate für Finance and Operations Apps
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformupdates für Apps für Finanzen und Betrieb
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.24 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattformupdates für Version 10.0.24 von Finance and Operations-Apps (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.24 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattformupdates für Version 10.0.24 von Apps für Finanzen und Betrieb (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 

@@ -1,21 +1,20 @@
 ---
 title: Duales Schreiben – Übersicht
-description: Dieses Thema bietet eine Übersicht über duales Schreiben, was eine Interaktion zwischen Kundenbindungs-Apps und Finance and Operations-Apps in Quasi-Echtzeit ermöglicht.
+description: Dieses Thema bietet eine Übersicht über duales Schreiben, was eine Interaktion zwischen Kundenbindungs-Apps und Apps für Finanzen und Betrieb in Quasi-Echtzeit ermöglicht.
 author: RamaKrishnamoorthy
 ms.date: 02/06/2020
-ms.topic: article
+ms.topic: overview
 audience: Application User, IT Pro
 ms.reviewer: tfehr
-ms.custom: intro-internal
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 131c002000ee6ebed81a23f45ce17b7a7fff0b95
-ms.sourcegitcommit: 9f8da0ae3dcf3861e8ece2c2df4f693490563d5e
+ms.openlocfilehash: e71d1496da24b21949259e8f43a32cd4ff60249c
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "7817360"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984140"
 ---
 # <a name="dual-write-overview"></a>Duales Schreiben – Übersicht
 
@@ -27,9 +26,9 @@ ms.locfileid: "7817360"
 
 ## <a name="what-is-dual-write"></a>Was ist Dual-Write?
 
-Duales Schreiben ist eine vordefinierte Infrastruktur, die eine Interaktion zwischen Customer Engagement-Apps und Finance and Operations-Apps nahezu in Echtzeit ermöglicht. Wenn Daten über Kunden, Produkte, Personen und Abläufe über Anwendungsgrenzen hinweg fließen, werden alle Abteilungen eines Unternehmens in die Lage versetzt, diese Daten zu nutzen.
+Duales Schreiben ist eine vordefinierte Infrastruktur, das eine Interaktion zwischen Kundenbindungs-Apps und Apps für Finanzen und Betrieb in Quasi-Echtzeit ermöglicht. Wenn Daten über Kunden, Produkte, Personen und Abläufe über Anwendungsgrenzen hinweg fließen, werden alle Abteilungen eines Unternehmens in die Lage versetzt, diese Daten zu nutzen.
 
-Dual-Write bietet eine eng gekoppelte, bidirektionale Integration zwischen Finance and Operations Anwendungen und Dataverse Anwendungen. Jede Datenänderung in Finance and Operations Anwendungen führt zu Schreibvorgängen in Dataverse, und jede Datenänderung in Dataverse führt zu Schreibvorgängen in Finance and Operations Anwendungen. Dieser automatisierte Datenfluss bietet eine integrierte Benutzererfahrung über die Anwendungen hinweg.
+Duales Schreiben bietet eine eng gekoppelte, bidirektionale Integration zwischen Apps für Finanzen und Betrieb und Dataverse. Jede Datenänderung in Apps für Finanzen und Betrieb führt zu Schreibvorgängen in Dataverse, und jede Datenänderung in Dataverse führt zu Schreibvorgängen in Apps für Finanzen und Betrieb. Dieser automatisierte Datenfluss bietet eine integrierte Benutzererfahrung über die Anwendungen hinweg.
 
 ![Datenbeziehung zwischen Anwendungen.](media/dual-write-overview.jpg)
 
@@ -52,7 +51,7 @@ Die Dual-Write-Infrastruktur ist erweiterbar und zuverlässig und umfasst die fo
 
 ### <a name="application"></a>Bewerbung
 
-Duales Schreiben erstellt eine Zuordnung zwischen Konzepten in Finance and Operations-Apps und Konzepten in Customer Engagement-Apps. Diese Integration unterstützt die folgenden Szenarien:
+Duales Schreiben erstellt eine Zuordnung zwischen Konzepten in Apps für Finanzen und Betrieb und Konzepten in Customer Engagement-Apps. Diese Integration unterstützt die folgenden Szenarien:
 
 + Integrierte Masterdaten von Debitoren
 + Zugang zu Kundenkarten und Belohnungspunkten
@@ -81,15 +80,15 @@ Dual-Write bietet Datenintegration über Microsoft Dynamics 365 Apps hinweg. Die
 
 ## <a name="what-does-dual-write-mean-for-developers-and-architects-of-customer-engagement-apps"></a><a id="developer-architect"></a>Was bedeutet duales Schreiben für Entwickler und Architekten von Customer Engagement-Apps?
 
-Duales Schreiben automatisiert den Datenfluss zwischen Finance and Operations-Apps und Customer Engagement-Apps. Duales Schreiben besteht aus zwei AppSource-Lösungen, die auf Dataverse installiert sind. Die Lösungen erweitern das Tabellenschema, die Plugins und die Workflows in Dataverse, damit sie auf ERP-Größe skaliert werden können. Für eine erfolgreiche Implementierung müssen Entwickler und Architekten von Customer Engagement-Apps diese Änderungen verstehen und mit ihren Kollegen bei Finance and Operations-Apps zusammenarbeiten.
+Duales Schreiben automatisiert den Datenfluss zwischen Apps für Finanzen und Betrieb und Customer Engagement-Apps. Duales Schreiben besteht aus zwei AppSource-Lösungen, die auf Dataverse installiert sind. Die Lösungen erweitern das Tabellenschema, die Plugins und die Workflows in Dataverse, damit sie auf ERP-Größe skaliert werden können. Für eine erfolgreiche Implementierung müssen Entwickler und Architekten von Customer Engagement-Apps diese Änderungen verstehen und mit ihren Kollegen bei Apps für Finanzen und Betrieb zusammenarbeiten.
 
-Um mit Finance and Operations-Anwendungen Parität zu schaffen, nimmt duales Schreiben einige entscheidende Änderungen am Dataverse-Schema vor. Wenn Sie den Plan verstehen, können Sie in Zukunft einige Entwurfs- und Entwicklungsarbeiten vermeiden.
+Um mit Anwendungen für Finanzen und Betrieb Parität zu schaffen, nimmt duales Schreiben einige entscheidende Änderungen am Dataverse-Schema vor. Wenn Sie den Plan verstehen, können Sie in Zukunft einige Entwurfs- und Entwicklungsarbeiten vermeiden.
 
-+ Wenn das AppSource-Paket für duales Schreiben installiert ist, verfügt Dataverse über neue Konzepte wie Unternehmen und Partei. Diese Konzepte helfen Anwendungen, die auf Dataverse basieren, einschließlich Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service und Dynamics 365 Field Service dabei, nahtlos mit Finance and Operations-Apps zu interagieren.
++ Wenn das AppSource-Paket für duales Schreiben installiert ist, verfügt Dataverse über neue Konzepte wie Unternehmen und Partei. Diese Konzepte helfen Anwendungen, die auf Dataverse basieren, einschließlich Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service und Dynamics 365 Field Service dabei, nahtlos mit Apps für Finanzen und Betrieb zu interagieren.
 
 + Aktivitäten und Notizen werden vereinheitlicht und erweitert, um sowohl die C1 (Benutzer des Systems) als auch die C2 (Kunden des Systems) zu unterstützen.
 
-+ Um Datenverlust während der Währungsübertragung zwischen Finance and Operations-Apps und dem Dataverse zu verhindern, können Sie die Anzahl der Dezimalstellen im Währungsdatentyp der Customers Engagement-Apps erweitern. Die Funktion übersetzt automatisch vorhandene Zeilen auf der Metadatenebene in den neuen erweiterten Status. Während dieses Vorgangs wird der Währungswert in Dezimaldaten und nicht in Gelddaten umgerechnet, und der Währungswert unterstützt 10 Dezimalstellen. Diese Funktion ist aktiviert, und Unternehmen, die nicht mehr als 4 Dezimalstellen benötigen, müssen dies nicht aktivieren. Weitere Informationen finden Sie unter [Migration vom Währungsdatentyp für duales Schreiben](currrency-decimal-places.md).
++ Um Datenverlust während der Währungsübertragung zwischen Apps für Finanzen und Betrieb und dem Dataverse zu verhindern, können Sie die Anzahl der Dezimalstellen im Währungsdatentyp der Customers Engagement-Apps erweitern. Die Funktion übersetzt automatisch vorhandene Zeilen auf der Metadatenebene in den neuen erweiterten Status. Während dieses Vorgangs wird der Währungswert in Dezimaldaten und nicht in Gelddaten umgerechnet, und der Währungswert unterstützt 10 Dezimalstellen. Diese Funktion ist aktiviert, und Unternehmen, die nicht mehr als 4 Dezimalstellen benötigen, müssen dies nicht aktivieren. Weitere Informationen finden Sie unter [Migration vom Währungsdatentyp für duales Schreiben](currrency-decimal-places.md).
 
 + [Datumsgültigkeit](../../dev-tools/date-effectivity.md) wird Dataverse hinzugefügt. Sie wird vergangene, gegenwärtige und zukünftige Daten in der gleichen Tabelle unterstützen.
 

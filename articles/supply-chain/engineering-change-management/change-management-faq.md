@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-03-25
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ba489358ef2d74e816186f29956aea5538a2432825c7d949e7c9cc23d947b997
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dee16f9d6f8ea583f221a7f6eb466675c8c622d0
+ms.sourcegitcommit: 9638d3a2bd592dc28f5952bda4af7dcf06edfaa4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714377"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8007606"
 ---
 # <a name="engineering-change-management-faq"></a>Verwaltung für technische Änderungen FAQ
 
@@ -63,6 +63,11 @@ Die folgenden Tabellen zeigen die Felder, die bei diesen Prozessen kopiert werde
 | **Produktvarianten** | Alle Felder im Abschnitt **Standard-Produktvariante** | Die gleichen Felder, die für die Engineering-Firma kopiert werden |
 
 Zusätzlich zu den Feldern, die in der vorherigen Tabelle gezeigt werden, werden alle Standardauftragseinstellungen aus der Vorlage für freigegebene Artikel übernommen, sowohl wenn das Produkt in der Engineering-Firma erstellt wird, als auch wenn es für eine Betriebsfirma freigegeben wird. (Um die Standardauftragseinstellungen für eine Vorlage für zugelassene Artikel anzuzeigen, öffnen Sie die entsprechende Seite **Details zu einem freigegebenen Produkt** und wählen Sie dann im Aktivitätsbereich auf der Registerkarte **Lagerbestand verwalten** die Option **Standardauftragseinstellungen**.)
+
+> [!NOTE]
+>
+> - Die Einheit stammt standardmäßig aus der Vorlage.
+> - Für Einzelhändler mit Dynamics 365 Commerce-Funktionalität: wenn Sie einem Produkt eine Einzelhandelskategorie zuweisen, wendet die Einzelhandelskategorie Standardwerte für viele der Felder für die freigegebene Produktebene an. Diese Voreinstellungen überschreiben Voreinstellungen, die möglicherweise bereits von der Vorlage festgelegt oder aus dem Engineering übernommen wurden.
 
 ## <a name="should-i-create-a-separate-legal-entity-for-engineering-products-or-use-an-existing-legal-entity"></a>Soll ich eine eigene juristische Entität für technische Produkte erstellen oder eine bestehende juristische Entität verwenden?
 

@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a50c09dc9fd8a4c18bbd01c70338279ac0ad9ae6
-ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
+ms.openlocfilehash: 3ceac78e6dbc6f83ed4968f76672367e79bdd968
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7473524"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967949"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synchronisieren von Produktbewertungen in Dynamics 365 Commerce
 
@@ -127,9 +127,19 @@ Die folgende Abbildung zeigt ein Beispiel für Produktbewertungen in Callcenter-
 
 [Nutzung von Bewertungen und Prüfungen aktivieren](opt-in-ratings-reviews.md)
 
-[Verwalten von Bewertungen und Prüfungen](manage-reviews.md)
+[Bewertungen und Prüfungen verwalten](manage-reviews.md)
 
-[Konfigurieren von Bewertungen und Prüfungen](configure-ratings-reviews.md)
+[Bewertungen und Prüfungen konfigurieren](configure-ratings-reviews.md)
+
+[Produktbewertungen synchronisieren](sync-product-ratings.md)
+
+[Manuelle Veröffentlichung von Bewertungen und Prüfungen durch einen Moderator aktivieren](manual-publish-rating-reviews.md)
+
+[Bewertungen und Rezensionen importieren und exportieren](import-export-reviews.md)
+
+[Authentifizierung zwischen Diensten konfigurieren](service-to-service-auth.md)
+
+[Häufig gestellte Fragen zu Bewertungen und Prüfungen](ratings-reviews-faq.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

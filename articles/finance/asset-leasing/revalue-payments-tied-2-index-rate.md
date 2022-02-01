@@ -2,25 +2,25 @@
 title: An eine Indexrate gebundene Mietzahlungen neu bewerten
 description: In diesem Thema wird die Regulierung beschrieben, die an der Mietverbindlichkeit für eine Anlage mit Nutzungsrecht am Leasingobjekt vorgenommen wird, wenn sich die variablen Mietzahlungen aufgrund einer Änderung des Indexsatzes ändern.
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 01/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: AssetLeaseIndexRevaluation
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1b3eed28ba6fc5af02c1bbf430cc9779426084f0eaf4e027141bbdd18a70dde4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5abd1f5d265c6e8b53903e6df5c52a06b3468880
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734585"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968051"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>An eine Indexrate gebundene Mietzahlungen neu bewerten
 
@@ -43,7 +43,7 @@ Führen Sie diese Schritte aus, um an eine Indexrate gebundene Mietzahlungen neu
 4. Wählen Sie die Filter für die Auswahl von Mietverträgen aus, die in die Hintergrundverarbeitung einbezogen werden sollen, und wählen Sie dann **OK**.
 
     Das Dialogfeld **Vorschau der Neubewertung der Indexrate** wird angezeigt und zeigt die Mietverträge an, die neu bewertet werden. Es werden auch die Aktiva und Passiva-Anpassungen oder die variablen Zahlungsanpassungen angezeigt.
-    
+
 5. Wählen Sie die Mietverträge aus, um zu verhindern, dass Mietverträge neu bewertet werden, die neu bewertet werden **sollten**. Wenn Sie keine Mietverträge auswählen, werden alle Mietverträge neu bewertet. Wenn Sie fertig sind, wählen Sie **OK** aus, um die Mietzahlungen neu zu bewerten.
 6. Um die Transaktionen anzuzeigen, die für einen bestimmten Indexneubewertungsprozess erstellt wurden, wählen Sie die Prozess-ID aus und wählen Sie dann **Transaktionen**.
 
@@ -54,7 +54,7 @@ Führen Sie diese Schritte aus, um an eine Indexrate gebundene Mietzahlungen neu
 
 ## <a name="asc-842-leases--index-revaluation"></a>ASC 842-Mietverträge – Neubewertung des Index
 
-Öffnen Sie den Zahlungsplan für einen Mietvertrag, um die Auswirkungen des Mietvertragsneubewertungsprozesses auf ASC 842-Mietverträge anzuzeigen. Auf der Seite werden nur die variablen Zahlungen angezeigt, die am oder nach dem Datum der Neubewertung aufgrund der Neubewertung des Index vorgenommen wurden. Die Amortisierungs- und Abschreibungspläne bleiben unverändert. Wenn Sie eine Rechnung mit variabler Zahlung erstellen, wird die variable Zahlung dem Buchungskonto für variable Zahlungen belastet. Je nach Einrichtung des Mietvertragsbuchs wird auch der variable Zahlungsbetrag zu der Gutschrift hinzugefügt, die direkt an den Lieferanten oder auf das Kreditorenkonto gebucht wird.
+Öffnen Sie den Zahlungsplan für einen Mietvertrag, um die Auswirkungen des Mietvertragsneubewertungsprozesses auf ASC 842-Mietverträge anzuzeigen. Auf der Seite werden nur die variablen Zahlungen angezeigt, die am oder nach dem Datum der Neubewertung aufgrund der Neubewertung des Index vorgenommen wurden. Die Amortisierungs- und Abschreibungspläne bleiben unverändert. Wenn Sie eine Rechnung mit variabler Zahlung erstellen, wird die variable Zahlung dem Buchungskonto für variable Zahlungen belastet. Je nach den Einstellungen des Mietvertragsbuchs wird auch der variable Zahlungsbetrag zum Haben hinzugefügt, die direkt an den Lieferanten oder auf das Kreditorenkonto gebucht wird.
 
 Die Zahlungsplanzeilen auf der Seite mit den Mietvertragsdetails werden automatisch mit einer neuen Zeile aktualisiert, die den neuen Indexsatz angibt. Darüber hinaus zeigt eine Spalte an, ob die Zeile manuell oder durch den Indexneubewertungsprozess erstellt wurde.
 
@@ -66,5 +66,7 @@ Sie können den neu generierten Zahlungsplan anzeigen, der am Neubewertungsdatum
 
 Der Journaleintrag hat den Regulierungsjournaleintrag automatisch auf das Konto für die Änderung der Mietzahlungen gebucht, die mit der Indexneubewertung zusammenhängen.
 
+> [!NOTE]
+> Wenn die **Aufschlüsselungszahlungsbetrag**-Option auf dem **Allgemein**-Inforegister der **Mietdetails**-Seite aktiviert ist und das zugehörige Buch IFRS 16 ist, fügt der Index-Neubewertungsprozess automatisch einen Datensatz im **Zahlungsbetrag aufschlüsseln**-Dialogbox hinzu. Der Betrag spiegelt die Änderung wider, die aufgrund der Neubewertung des Index an der Zahlung vorgenommen wurde. Der Datensatz wird als **Wird für die Neubewertung des IRFS 16-Index verwendet** gekennzeichnet.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: ER-Konfigurationen in RCS erstellen und sie in das globale Repository hochladen
 description: In diesem Thema wird erläutert, wie Sie eine ER-Konfiguration (Electronic Reporting) in Microsoft Regulatory Configuration Services (RCS) erstellen und in das globale Repository hochladen.
 author: JaneA07
-ms.date: 09/21/2020
+ms.date: 01/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: b8be53c415d3b0c0fd057bb0d9c51b391d1c0c7471610c861909344059803441
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb04362d6d7261af56d2940b085fbc8d43c9d662
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727220"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7965088"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>ER-Konfigurationen in gesetzlichen Konfigurationsdiensten (Regulatory Configuration Services, RCS) erstellen und sie in das globale Repository hochladen
 
@@ -32,24 +32,29 @@ In den folgenden Verfahren wird erläutert, wie ein Benutzer in der Rolle „Sys
 
 Bevor Sie diese Prozeduren abschließen können, müssen Sie zunächst die folgende Voraussetzungen abschließen.
 
-- Auf eine RCS-Instanz zugreifen.
-- Einen aktiven Konfigurationsanbieter erstellen. Weitere Informationen finden Sie unter [Konfigurationsanbieter erstellen und als aktiv markieren](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+- Sie erlangen Zugriff auf eine RCS-Umgebung für Ihr Unternehmen.
+- Sie erstellen einen aktiven Konfigurationsanbieter aktivieren ihn. Weitere Informationen finden Sie unter [Konfigurationsanbieter erstellen und als aktiv markieren](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-Sie müssen auch sicherstellen, dass eine RCS-Umgebung für Ihr Unternehmen bereitgestellt wird.
+Sie müssen sicherstellen, dass eine RCS-Umgebung für Ihre Organisation bereitgestellt wird. Wenn Sie keine RCS-Instanz für Ihre Organisation bereitgestellt haben, können Sie dies mit den folgenden Schritten tun:
 
-1. Wechseln Sie in der Finance and Operations-App zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
-2. Wenn keine RCS-Umgebung für Ihr Unternehmen bereitgestellt wurde, klicken Sie auf **Regulatory services – externe Konfiguration** und folgen Sie den Anweisungen zur Bereitstellung einer RCS-Umgebung.
+1. In der App für Finanzen und Betrieb gehen Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
+2. In **Weiterführende Links/Externe Links** wählen Sie **Regulierungsdienste – Konfiguration** und befolgen dann die Anweisungen, um zur Bereitstellung eine **Anmeldung** durchzuführen.
 
-Wenn für Ihr Unternehmen bereits eine RCS-Umgebung bereitgestellt wurde, verwenden Sie die Seiten-URL, um darauf zuzugreifen, indem Sie die Anmeldeoption auswählen.
+Wenn für Ihre Organisation bereits eine RCS-Umgebung bereitgestellt wurde, verwenden Sie die Seiten-URL, um darauf zuzugreifen und wählen die **Anmeldeoption** aus.
 
 ## <a name="create-a-derived-version-of-a-configuration-in-rcs"></a>Erstellen Sie eine abgeleitete Version einer Konfiguration in RCS
 
-1. Stellen Sie im Arbeitsbereich **Elektronische Berichterstattung** sicher, dass Sie einen aktiven Konfigurationsanbieter für Ihre Organisation haben. 
-2. Wählen Sie **Berichterstellungskonfigurationen** aus.
-3. Wählen Sie die Konfiguration aus, von der Sie eine neue Version ableiten möchten. Sie können das Filterfeld über der Struktur verwenden, um Ihre Suche einzugrenzen.
-4. Wählen Sie **Konfiguration erstellen** \> **Vom Namen ableiten**.
-5. Geben Sie einen Namen und eine Beschreibung ein und wählen Sie dann **Konfiguration erstellen** aus, um eine neue abgeleitete Version zu erstellen.
-6. Wählen Sie die neu abgeleitete Konfiguration aus, fügen Sie eine Beschreibung der Version hinzu, und wählen Sie dann **OK** aus. Der Status der Konfiguration in wird in **Abgeschlossen** geändert.
+> [!NOTE]
+> Wenn Sie RCS zum ersten Mal verwenden, steht Ihnen keine Konfiguration zum Ableiten zur Verfügung. Sie müssen eine Konfiguration aus dem globalen Repository importieren. Weitere Informationen finden Sie unter [Herunterladen von ER-Konfigurationen aus dem Global Repository des Konfigurationsdienstes](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+
+1. Führen Sie eine **Anmeldung** in RCS durch und wählen Sie den **Elektronisches Berichtswesen**-Arbeitsbereich.
+2. Verifizieren Sie, dass Sie einen aktiven Konfigurationsanbieter für Ihre Organisation haben, der aktiv ist (siehe Voraussetzungen). 
+3. Wählen Sie **Berichterstellungskonfigurationen** aus.
+4. Wählen Sie die Konfiguration aus, von der Sie eine neue Version ableiten möchten. Sie können das Filterfeld über der Struktur verwenden, um Ihre Suche einzugrenzen.
+5. Wählen Sie **Konfiguration erstellen** \> **Vom Namen ableiten**.
+6. Geben Sie einen Namen und eine Beschreibung ein und wählen Sie dann **Konfiguration erstellen** aus, um eine neue abgeleitete Version mit einem Entwurfsstatus zu erstellen.
+7. Wählen Sie die neu abgeleitete Konfiguration aus und nehmen Sie bei Bedarf weitere Änderungen am Konfigurationsformat vor. 
+8. Nachdem Ihre Änderungen abgeschlossen sind, müssen Sie **Status ändern** festlegen, damit die Konfiguration **Abgeschlossen** werden kann, um sie im Repository veröffentlichen zu können. Wählen Sie **OK** aus.
 
 ![Neue Konfigurationsversion in RCS.](media/RCS_CompleteConfig.JPG)
 
@@ -58,7 +63,7 @@ Wenn für Ihr Unternehmen bereits eine RCS-Umgebung bereitgestellt wurde, verwen
 
 ## <a name="upload-a-configuration-to-the-global-repository"></a>Eine Konfiguration in das globale Repository hochladen
 
-Um eine neue oder abgeleitete Konfiguration für Ihre Organisation freizugeben, können Sie sie in das globale Repository hochladen.
+Um eine neue oder abgeleitete Konfiguration für Ihre Organisation freizugeben, können Sie sie in das globale Repository hochladen, indem Sie folgende Schritte ausführen:
 
 1. Wählen Sie die fertige Version der Konfiguration aus und wählen Sie dann **In das Repository hochladen**.
 2. Wählen Sie die Option **Global (Microsoft)** aus und dann **Hochladen**.
@@ -66,9 +71,11 @@ Um eine neue oder abgeleitete Konfiguration für Ihre Organisation freizugeben, 
     ![In Repository-Optionen hochladen.](media/RCS_Upload_to_GlobalRepo_options.JPG)
 
 3. Wählen Sie im Benachrichtigungsfeld **Ja** aus. 
-4. Aktualisieren Sie die Beschreibung der Version nach Bedarf und wählen Sie dann **OK** aus. 
+4. Aktualisieren Sie die Beschreibung der Version nach Bedarf und wählen Sie dann **OK** aus. Optional können Sie die Version auch in eine verbundene Anwendung oder in ein GIT-Repository hochladen.  
 
-Der Status der Konfiguration wird auf **Teilen** aktualisiert, und die Konfiguration wird in das globale Repository hochgeladen. Hier können Sie damit auf folgende Arten arbeiten:
+Der Status der Konfiguration wird auf **Geteilt** aktualisiert, und die Konfiguration wird in das globale Repository hochgeladen. Außerdem wird eine Entwurfsversion der von Ihnen hochgeladenen Konfiguration erstellt, die bei nachträglichen Änderungen verwendet werden kann.
+
+Nachdem die Konfiguration in das globale Repository hochgeladen wurde, können Sie dort auf folgende Weise damit arbeiten:
 
 - Sie in die Dynamics 365-Instanz importieren Weitere Informationen finden Sie unter [Elektronische Berichterstellungskonfigurationen (ER) aus RCS importieren](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md).
 - Teilen Sie die Version mit Dritten oder einer externen Organisation [RCS Share Electronic Reporting (ER) -Konfigurationen mit externen Organisationen teilen](rcs-global-repo-share-configuration.md)

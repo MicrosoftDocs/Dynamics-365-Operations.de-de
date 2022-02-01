@@ -1,27 +1,26 @@
 ---
-title: Überblick über die Funktionsverwaltung
-description: In diesem Thema werden die Funktionsverwaltungsfunktion und deren Verwendung beschrieben.
+title: Funktionsverwaltung – Übersicht
+description: In diesem Thema werden die Funktionsverwaltung und deren Verwendung beschrieben.
 author: Peakerbl
-ms.date: 09/13/2021
-ms.topic: article
+ms.date: 01/10/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: FeatureManagementWorkspace
 audience: IT Pro, Application user
 ms.reviewer: sericks
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 1318093d66cfc30a04815311cce332df010d4b69
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 6605fe68576ce80726438b60c1f1fbf3782d0934
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488177"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984458"
 ---
 # <a name="feature-management-overview"></a>Funktionsverwaltung – Übersicht
 
@@ -75,9 +74,9 @@ Funktionen, die auf **Standardmäßig aktiviert** aktualisiert werden, sind stan
 > [!NOTE]
 > Da diese Funktionen automatisch aktiviert werden, ist es wichtig, dass Sie feststellen, ob Ihre Organisation bereit ist, diese Funktionen zu übernehmen, oder ob mehr Zeit benötigt wird. Wenn mehr Zeit benötigt wird, müssen diese Funktionen möglicherweise vorübergehend deaktiviert werden. Beachten Sie, dass die Umstellung einer Funktion auf **Standardmäßig aktiviert** normalerweise in der Hauptversion durchgeführt, bevor die Funktion **Obligatorisch** werden soll. An diesem Punkt haben Sie nicht die Möglichkeit, die Funktion zu deaktivieren. 
 
-### <a name="released-features-mandatory"></a>Freigegebene Funktionen (obligatorisch)
+### <a name="mandatory"></a>Obligatorisch
 
-**Freigegeben** ist der Endzustand für Funktionen. Er zeigt an, dass die Funktionen aktiviert sind und Sie sie nicht deaktivieren können, ohne sich an Microsoft zu wenden. Optionale Funktionen werden voraussichtlich nach zwei Hauptversionen obligatorisch. Kritische Merkmale können ausnahmsweise als obligatorisch eingeführt werden.
+**Obligatorisch** ist der erwartete Endzustand für Funktionen. Er zeigt an, dass die Funktionen aktiviert sind und Sie sie nicht deaktivieren können, ohne sich an Microsoft zu wenden. Optionale Funktionen werden voraussichtlich nach zwei Hauptversionen obligatorisch. Kritische Merkmale können ausnahmsweise als obligatorisch eingeführt werden.
 
 ## <a name="example-of-expected-feature-lifecycles"></a>Beispiel für erwartete Funktionslebenszyklen
 

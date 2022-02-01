@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e86294b8b467367d954013764a029f7b20270b95
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: f0a8f5948d9e30eb220aa8177a4b9718223a4f9d
+ms.sourcegitcommit: 5bfd6511d710deb539b4030eb0e9c48d25513595
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860666"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8013833"
 ---
 # <a name="enable-power-bi-for-global-inventory-accounting"></a>Aktivieren von Power BI für die Globale Bestandsbuchhaltung
 
@@ -51,8 +51,9 @@ Um die Power BI-Integration festzulegen, folgen Sie diesen Schritten.
 
     1. Gehen Sie zu **Mein Arbeitsbereich**, suchen Sie das Dataset für Globale Bestandsbuchhaltung und wählen Sie dann im Menü **Optionen** die Option **Einstellungen**.
     1. Erweitern Sie in **Einstellungen für Globale Bestandsbuchhaltung** die Option **Parameter**, und aktualisieren Sie alle Parameter wie gewünscht. Überprüfen Sie insbesondere die folgenden Einstellungen:
-        1. Überschreiben Sie die Standardwerte für **Dataverse-URL** und **Umgebungs-ID** mit den Werten auf der **Umgebungsdetails**-Seite in LCS (im Abschnitt **Power Platform-Integration**).
-        1. Wählen Sie den Link **Anmeldeinformationen bearbeiten** neben dem **CDs**-Etikett im Abschnitt **Anmeldeinformationen für die Datenquelle** aus. Dann melden Sie sich bei Ihrem Dataverse-Konto mit der **OAuth2**-Authentifizierungsmethode an.
+        1. Überschreiben Sie die standardmäßigen **Dataverse-URL**-Werte mit den unter **Informationen zur Power-Plattform-Umgebung** gefundenen Werten im LCS (im **Power-Plattform-Integration**-Abschnitt).
+        1. Überschreiben Sie die standardmäßigen **Umgebungs-ID**-Werte mit den Werten, die unter **Umgebungsdetails** im LCS (im Abschnitt **Umgebung verwalten**) zu finden sind.
+        1. Wählen Sie den Link **Anmeldeinformationen bearbeiten** neben dem **CDS**-Etikett im Abschnitt **Anmeldeinformationen für die Datenquelle** aus. Dann melden Sie sich bei Ihrem Dataverse-Konto mit der **OAuth2**-Authentifizierungsmethode an.
     1. Stellen Sie sicher, dass die Power BI-Berichte unter **Mein Arbeitsbereich \> Berichte \> Globale Bestandsbuchhaltung** jetzt korrekt funktionieren und Inhalte von Ihrem System anzeigen.
 
 1. Registrieren Sie die Anwendung wie in [Konfigurieren der PowerBI.com-Integration](../../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md#registration-process) beschrieben.

@@ -3,7 +3,7 @@ title: Vorhersagen für Kundenzahlungen
 description: In diesem Thema werden die Funktionen für Zahlungsvorhersagen beschrieben, die Ihnen helfen können, die typischen Zahlungsmethoden eines Debitors besser zu verstehen. Diese Funktion kann auch helfen, die Umstände zu identifizieren, die das Einleiten eines Mahnprozesses verursachen können.
 author: ShivamPandey-msft
 ms.date: 11/03/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 300c835c835a5c653b75b9e151462337dfbe49a5
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 04897e3a7765264ab2e664422caa928c49b9cc61
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752735"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982036"
 ---
 # <a name="customer-payment-predictions"></a>Vorhersagen für Kundenzahlungen
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 In diesem Thema werden die Funktionen für Zahlungsvorhersagen beschrieben, die Ihnen helfen können, die typischen Zahlungsmethoden eines Debitors besser zu verstehen. Diese Funktion kann auch helfen, die Umstände zu identifizieren, die das Einleiten eines Mahnprozesses verursachen können.
 
@@ -39,7 +38,7 @@ Unternehmen finden es oft schwierig, vorherzusagen, wann Kunden ihre Rechnungen 
 - Mahnprozesse, die zu spät beginnen
 - Bestellungen, die an Kunden freigegeben werden, deren Zahlung möglicherweise in Verzug ist
 
-Debitorenzahlungsvorhersagen (Vorschau) hilft Organisationen vorherzusagen, wann ein Debitor eine Rechnung bezahlt. Daher können sie Mahnstrategien erstellen, die dazu beitragen, die Wahrscheinlichkeit zu erhöhen, dass sie pünktlich bezahlt werden.
+Debitorenzahlungsvorhersagen hilft Organisationen vorherzusagen, wann ein Debitor eine Rechnung bezahlt. Daher können sie Mahnstrategien erstellen, die dazu beitragen, die Wahrscheinlichkeit zu erhöhen, dass sie pünktlich bezahlt werden.
 
 ## <a name="predictions"></a>Vorhersagen
 

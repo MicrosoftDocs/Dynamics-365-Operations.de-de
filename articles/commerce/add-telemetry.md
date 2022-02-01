@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e3916b18c797222c300957fb25cabad78c4fcb9744a29d611a81b0bda3e9834d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f796a3e10345da41ff461b656d88affb3adbdf9e
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724603"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964528"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie
 
@@ -106,13 +106,11 @@ Führen Sie die folgenden Schritte aus, um ein externes Skript direkt zu einer V
 
 [Hinzufügen eines Logos](add-logo.md)
 
-[Auswählen eines Sitedesigns](select-site-theme.md)
+[Sitedesign auswählen](select-site-theme.md)
 
 [Arbeiten mit CSS-Überschreibungsdateien](css-override-files.md)
 
 [Hinzufügen eines Favicons](add-favicon.md)
-
-[Hinzufügen einer Begrüßungsnachricht](add-welcome-message.md)
 
 [Hinzufügen eines Urheberrechtshinweises](add-copyright-notice.md)
 

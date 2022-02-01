@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 16ccd7f2e11f0b46aaa646de272e668d29ccc0c0
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 5002fc79842bef150892347a7ff4702b07cfe5be
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752927"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968876"
 ---
 # <a name="enable-customer-payment-predictions"></a>Vorhersagen für Kundenzahlungen aktivieren
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 In diesem Thema wird erläutert, wie Sie die Funktion „Debitorenzahlungsvorhersagen“ in Finance Insights aktivieren und konfigurieren. Sie aktivieren die Funktion im Arbeitsbereich **Funktionsverwaltung** und geben die Konfigurationseinstellungen auf der Seite **Konfiguration von Finance Insights** ein. Dieses Thema enthält auch Informationen, mit denen Sie die Funktion effektiv nutzen können.
 

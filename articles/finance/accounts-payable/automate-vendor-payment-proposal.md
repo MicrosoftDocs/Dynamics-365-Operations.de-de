@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 483621a5de2980212926ac1011c16f1b82e4a3d075bbe9bcbbe6a0e35f06e5bf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1c5012fdc4f3bfab3f91adfee1eab758dd9c1a0f
+ms.sourcegitcommit: 5aecb04178e45e1fdea032b3ef3ce338332005dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749101"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7966714"
 ---
 # <a name="automate-vendor-payment-proposals"></a>Automatisieren Sie Kreditorenzahlungsvorschläge
 
@@ -32,6 +32,9 @@ Organisationen, die Lieferanten nach einem wiederkehrenden Zeitplan bezahlen, k�
 - In welchem Lieferantenzahlungsjournal werden die resultierenden Zahlungen gespeichert
 
 Automatisierungen von Zahlungsvorschlägen buchen die Zahlungen nicht automatisch. Daher können Sie weiterhin alle Validierungs- und Workflowprozesse verwenden, die Sie derzeit zum Genehmigen der erstellten Zahlungen verwenden.
+
+> [!NOTE]
+> Die Funktion **Automatisierung von Kreditorzahlungsvorschlägen** muss in der Funktionsverwaltung aktiviert werden, um diese Funktion nutzen zu können. 
 
 ## <a name="define-the-occurrence-of-vendor-payment-proposals"></a>Definieren Sie das Auftreten von Lieferantenzahlungsvorschlägen
 

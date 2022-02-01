@@ -3,7 +3,7 @@ title: Bedarfsplanung – Überblick
 description: Die Bedarfsplanung wird verwendet, um unabhängigen Bedarf aus Aufträgen und abhängigen Bedarf an jedem Entkopplungspunkt für Kundenaufträge vorauszusagen. Die Reduzierungsregeln der erweiterten Bedarfsplanung stellen eine ideale Lösung für die Massenanpassung bereit.
 author: ChristianRytt
 ms.date: 07/07/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 980001dda67e96ab3f428ad60cb7951dd5de4d0c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 34a8cd4b17a5a75a5e817e6a1f982d75eefbb717
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571016"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983069"
 ---
 # <a name="demand-forecasting-overview"></a>Bedarfsplanung – Überblick
 
@@ -56,7 +56,7 @@ Drei wichtige Themen wurden in die Bedarfsplanung implementiert:
 - **Modularität** - Die Bedarfsplanung ist modular und einfach zu konfigurieren. Sie können die Funktionalität aktivieren und deaktivieren, indem Sie den Konfigurationsschlüssel unter **Art** &gt; **Bestandsprognose** &gt; **Bedarfsplanung** ändern.
 - **Wiederverwenden von Microsoft Stack** – Machine Learning ist jetzt Teil der Microsoft Cortana Analytics Suite und mit ihr können Sie schnell und einfach Predictive Analytics-Experimente erstellen, wie Experimente zur Bedarfsvorkalkulation mithilfe von Algorithmen R oder Python-Programmiersprachen und einer einfachen Drag & Drop-Schnittstelle.
   - Sie können die Bedarfsplanungsexperimente herunterladen, sie ändern und an Ihre geschäftlichen Anforderungen anpassen, sie als Webdienst auf Azure veröffentlichen und sie verwenden, um Bedarfsplanungen zu generieren. Die Experimente sind zum Download verfügbar, wenn Sie ein Supply Chain Management-Abonnement für einen Produktionsplaner als Benutzer auf Unternehmensebene besitzen.
-  - Sie können eines der aktuell verfügbaren Bedarfsvorhersagenexperimente aus dem [Cortana Analytics-Katalog](https://gallery.cortanaanalytics.com/) herunterladen. Während die Bedarfsplanungsexperimente automatisch mit Supply Chain Management integriert werden, müssen Kunden und Partner die Integration von Experimenten abwickeln, die sie aus dem [Cortana Analytics-Katalog](https://gallery.cortanaanalytics.com/) herunterladen. Daher sind Experimente aus dem [Cortana Analytics-Katalog](https://gallery.cortanaanalytics.com/) nicht so einfach zu verwenden wie die Finance and Operations Bedarfsplanungsexperimente. Sie müssen den Code der Experimente ändern, sodass sie die Finance and Operations Anwendungprogrammschnittstelle verwenden.
+  - Sie können eines der aktuell verfügbaren Bedarfsvorhersagenexperimente aus dem [Cortana Analytics-Katalog](https://gallery.cortanaanalytics.com/) herunterladen. Während die Bedarfsplanungsexperimente automatisch mit Supply Chain Management integriert werden, müssen Kunden und Partner die Integration von Experimenten abwickeln, die sie aus dem [Cortana Analytics-Katalog](https://gallery.cortanaanalytics.com/) herunterladen. Daher sind Experimente aus dem [Cortana Analytics-Katalog](https://gallery.cortanaanalytics.com/) nicht so einfach zu verwenden wie die Finance and Operations-Bedarfsplanungsexperimente. Sie müssen den Code der Experimente ändern, sodass sie die Finance and Operations-API verwenden können.
   - Sie können eigene Experimente in Microsoft Azure Machine Learning Studio (klassisch) erstellen, als Dienste auf Azure veröffentlichen und sie verwenden, um Bedarfsplanungen zu generieren.
   - Wenn Sie keine hohe Leistung benötigen oder wenn Sie keine großen Datenmengen verarbeiten müssen, können Sie die kostenlose Machine Learning-Schicht verwenden. Es wird empfohlen, dass Sie immer über diese Schicht beginnen, besonders während der Implementierungs- und Testphasen. Wenn Sie höhere Leistung und zusätzlichen Speicherplatz benötigen, können Sie die Standardschicht von Machine Learning verwenden. Diese Schicht erfordert ein Azure-Abonnement und beinhaltet zusätzliche Kosten. Einzelheiten zur den Machine Learning-Preisen finden Sie unter [Machine Learning Studio-Preise](https://aka.ms/machine-learning-price-info).
 - **Planungsverringerung an jedem Entkopplungspunkt** – Bedarfsplanung baut auf dieser Funktionalität auf, mit der Sie abhängigen und unabhängigen Bedarf an jedem Entkopplungspunkt planen können.

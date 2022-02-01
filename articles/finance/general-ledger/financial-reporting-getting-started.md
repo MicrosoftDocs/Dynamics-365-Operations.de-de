@@ -9,20 +9,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "10444"
-- intro-internal
+ms.custom: intro-internal
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 464092ae2fdcdfd8a0ada254e88f4418c825c1f9
-ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
+ms.openlocfilehash: 1fbdab1f4f81bbdb8b0b5cb3e6a5237196d7dc76
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7486969"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983976"
 ---
 # <a name="get-started-with-financial-reporting"></a>Erste Schritte mit der Finanzberichterstellung 
 
@@ -148,7 +146,7 @@ Sie können eine unbegrenzte Anzahl von Berichtsbaumstrukturen erstellen, um die
 
 ## <a name="update-the-financial-reporting-version-through-slipstreaming"></a>Die Version der Finanzberichterstattung durch Slipstreaming aktualisieren
 
-Finance and Operations-Apps werden jeden Monat aktualisiert. Die Finanzberichterstattung wird jedoch nicht unbedingt in diesem Rhythmus aktualisiert. Darüber hinaus haben Kunden mehr Möglichkeiten, wann sie Updates für Finance and Operations-Apps implementieren. Updates für die Finanzberichterstattung werden automatisch installiert. Die Finanzberichterstattung hat eine bestimmte Version, die in einer Kundenumgebung verwendet wird, wenn ein Serviceupdate implementiert wird, wenn eine Ausfallzeit eingeleitet wird oder wenn sich die Kundenumgebung im Wartungsmodus befindet. Dieser Prozess ist als *Slipstreaming* oder *True-up* bekannt, da alle Kundenimplementierungen auf dieselbe Version der Finanzberichterstattung festgelegt sind.
+Apps für Finanzen und Betrieb werden jeden Monat aktualisiert. Die Finanzberichterstattung wird jedoch nicht unbedingt in diesem Rhythmus aktualisiert. Darüber hinaus haben Kunden mehr Möglichkeiten, wann sie Updates für Apps für Finanzen und Betrieb implementieren. Updates für die Finanzberichterstattung werden automatisch installiert. Die Finanzberichterstattung hat eine bestimmte Version, die in einer Kundenumgebung verwendet wird, wenn ein Serviceupdate implementiert wird, wenn eine Ausfallzeit eingeleitet wird oder wenn sich die Kundenumgebung im Wartungsmodus befindet. Dieser Prozess ist als *Slipstreaming* oder *True-up* bekannt, da alle Kundenimplementierungen auf dieselbe Version der Finanzberichterstattung festgelegt sind.
 
 Änderungen, die in jeder Version veröffentlicht werden, finden Sie in [Was ist neu oder wurde in Dynamics 365 Finance geändert](../../finance/get-started/whats-new-home-page.md). Plattform-Updates und Problembehandlungen finden Sie im Abschnitt „Zusätzliche Ressourcen“ am Ende der Seite für jede Version.
 

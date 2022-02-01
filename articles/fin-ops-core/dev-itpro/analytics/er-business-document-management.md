@@ -3,24 +3,23 @@ title: Geschäftsdokumentverwaltung – Übersicht
 description: Dieses Thema enthält Informationen dazu, wie die Geschäftsdokumentverwaltungsfunktion des ER-Frameworks verwendet wird.
 author: NickSelin
 ms.date: 04/23/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b59f535e01de2ae30e6bbeb6d5ab97a415df6043233694d4feb1c48140a110f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: faea9d4d9b3fc8f3f1474b6bb2a8dc31cdc22511
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753075"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986250"
 ---
 # <a name="business-document-management-overview"></a>Geschäftsdokumentverwaltung – Übersicht
 
@@ -28,7 +27,7 @@ ms.locfileid: "6753075"
 
 Geschäftliche Benutzer verwenden das [Electronic Reporting (ER) Framework](general-electronic-reporting.md) zum Konfigurieren von Formaten für ausgehende Dokumente in Übereinstimmung mit den rechtlichen Anforderungen verschiedener Länder/Regionen. Benutzer können auch den Datenfluss definieren, um anzugeben, welche Anwendungsdaten sich in generierten Dokumenten befinden. Das ER-Framework generiert ausgehende Dokumente in Microsoft Office-Formaten (Excel-Arbeitsmappen oder Word-Dokumenten) mithilfe vordefinierter Vorlagen. Die Vorlagen werden mit den erforderlichen Daten in Übereinstimmung mit dem konfigurierten Datenfluss ausgefüllt, während die erforderlichen Dokumente generiert werden. Jedes konfigurierte Format kann als Teil einer ER-Lösung veröffentlicht wird, um bestimmte ausgehende Dokumente zu generieren. Dies wird durch eine ER-Formatkonfiguration dargestellt, die Vorlagen enthalten kann, die Sie verwenden können, um verschiedene ausgehende Dokumente zu generieren. Geschäftliche Benutzer können dieses Framework verwenden, um erforderliche Geschäftsdokumente zu verwalten.
 
-Die **Geschäftsdokumentverwaltung** wird auf dem EB-Framework erstellt und ermöglicht geschäftlichen Benutzern die Bearbeitung von Geschäftsdokumentvorlagen, indem sie einen Microsoft 365-Dienst oder eine entsprechende Microsoft Office-Desktopanwendung verwenden. Bearbeitungen an Dokumenten umfassen das Ändern von Geschäftsdokumentdesigns und das Hinzufügen von Platzhaltern für zusätzliche Daten ohne Quellcodeänderungen und neue Bereitstellungen. Keine Vorkenntnisse des ER-Frameworks sind erforderlich, um Vorlagen von Geschäftsdokumenten zu aktualisieren.
+Die **Geschäftsdokumentverwaltung** wird auf dem ER-Framework erstellt und ermöglicht geschäftlichen Benutzern, Geschäftsdokumentvorlagen zu bearbeiten, indem sie einen Microsoft 365-Dienst oder eine entsprechende Microsoft Office-Desktopanwendung verwenden. Bearbeitungen an Dokumenten umfassen das Ändern von Geschäftsdokumentdesigns und das Hinzufügen von Platzhaltern für zusätzliche Daten ohne Quellcodeänderungen und neue Bereitstellungen. Keine Vorkenntnisse des ER-Frameworks sind erforderlich, um Vorlagen von Geschäftsdokumenten zu aktualisieren.
 
 > [!NOTE]
 > Beachten Sie, dass die Geschäftsdokumentverwaltung es Ihnen ermöglicht, Vorlagen ändern, die verwendet werden, um Geschäftsdokumente wie Aufträge, Rechnungen usw. zu erzeugen. Während eine Vorlage geändert wurde und eine neue Version davon veröffentlicht wurde, wird diese Version verwendet, um erforderliche Geschäftsdokumente zu generieren. Die Geschäftsdokumentverwaltung kann nicht verwendet werden, um bereits generierte Geschäftsdokumente zu ändern.
@@ -408,7 +407,7 @@ Wenn Sie die Vorlage von einem ER-Format bearbeiten, das dem aktuellen aktiven A
 
 Dies ist ein bekanntes Problem bei der Microsoft 365-Umleitung. Dies passiert, wenn Sie sich zum ersten Mal bei Microsoft 365 anmelden. Um dieses Problem zu umgehen, wählen Sie in Ihrem Browser **Zurück** aus, um zur vorherigen Seite zurückzukehren.
 
-### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-and-adjust-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-use-the-office-desktop-application-in-the-same-way"></a>Ich weiß, wie ich eine Vorlage bearbeite, indem ich Microsoft 365 in der ersten Anwendungssitzung verwende, und wie ich die Vorlage in der zweiten Anwendungssitzung verwende, indem ich die Vorlage anpasse, um zu untersuchen, inwiefern sich meine Änderungen auf das generierte Geschäftsdokument auswirken. Kann ich die Office-Desktopanwendung auf dieselbe Weise verwenden?
+### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-and-adjust-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-use-the-office-desktop-application-in-the-same-way"></a>Ich weiß, wie ich eine Vorlage bearbeite, indem ich Microsoft 365 in der ersten Anwendungssitzung verwende, und wie ich die Vorlage in der zweiten Anwendungssitzung verwende, indem ich die Vorlage anpasse, um zu untersuchen, inwiefern sich meine Änderungen das generierte Geschäftsdokument auswirken. Kann ich die Office-Desktopanwendung auf dieselbe Weise verwenden?
 
 Ja. In der ersten Anwendungssitzung wählen Sie **In der Desktop-App öffnen** aus. Ihre Vorlage wird im temporären Dateispeicher gespeichert und in der Office-Desktop-Anwendung geöffnet. Führen Sie dann die folgenden Schritte aus, um die Vorlagenänderungen im generierten Geschäftsdokument in der Vorschau anzuzeigen:
 

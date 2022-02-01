@@ -13,23 +13,22 @@ ms.search.industry: retail
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e7e88511ac3d0044c7e590f43f4486929f691ce9
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
+ms.openlocfilehash: 9a5a7d6394a87eccde8e1c364caaaabdb0297fd2
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891440"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982202"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Verbesserungen der Auszugsbuchungsfunktionalität
 
 [!include [banner](includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 In diesem Thema wird beschrieben, welche Verbesserungen der Auszugsbuchungsfunktion vorgenommen wurden. Verbesserungen Diese sind in Microsoft Dynamics 365 for Finance and Operations 7.3.2 verfügbar.
 
 ## <a name="activation"></a>Aktivierung
 
-Standardmäßig ist das Programm bei der Bereitstellung von Finance and Operations 7.3.2 so eingestellt, dass es die Legacy-Funktion für Kontoauszugsbuchungen verwendet. Um die verbesserte Auszugsbuchung zu aktivieren, müssen Sie den Konfigurationsschlüssel dafür einschalten.
+Standardmäßig ist das Programm beim Deployment von Finance and Operations 7.3.2 so eingestellt, dass es das Legacy-Feature für Kontoauszugsbuchungen verwendet. Um die verbesserte Auszugsbuchung zu aktivieren, müssen Sie den Konfigurationsschlüssel dafür einschalten.
 
 - Gehen Sie zu **Systemverwaltung** \> **Einrichtung** \> **Lizenzkonfiguration**, und deaktivieren Sie dann unter dem Knoten **Retail and Commerce** das Kontrollkästchen **Auszüge (Veraltet)**, und markieren Sie das Kontrollkästchen **Auszüge**.
 

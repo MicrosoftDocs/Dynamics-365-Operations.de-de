@@ -1,5 +1,5 @@
 ---
-title: Bewerten des anfänglichen Kundenzahlungsvorhersagemodells (Vorschau)
+title: Das anfängliche Vorhersagemodell für Kundenzahlung bewerten
 description: In diesem Thema werden die Schritte beschrieben, die Sie ausführen können, um das Kundenvorhersagemodell zu verstehen und seine Wirksamkeit zu bewerten.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: f45392d540b6696d23261a6b2197c3185f5ede2b7c646f6b751480145dcacfdc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 874c6e938681537a0420eece6835a4c2124e11fc
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768866"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7969111"
 ---
-# <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Bewerten des anfänglichen Kundenzahlungsvorhersagemodells (Vorschau)
+# <a name="evaluate-the-initial-customer-payment-prediction-model"></a>Das anfängliche Vorhersagemodell für Kundenzahlung bewerten
 
 [!include [banner](../includes/banner.md)]
 
@@ -89,7 +89,7 @@ In diesem Fall zeigt der F1-Makro-Wert von ungefähr 49,3 Prozent an, dass das M
 
 ## <a name="improving-the-model"></a>Das Modell verbessern
 
-Nachdem Sie die Ergebnisse Ihres ersten Modells besser verstanden haben, möchten Sie das Modell möglicherweise verbessern, indem Sie Funktionsspalten hinzufügen oder entfernen oder Teile des Datasets filtern, die keine genauen Vorhersagen unterstützen. Schließen Sie AI Builder und verwenden Sie dann den **Modell verbessern** -Link in Dynamics 365 Finance, um den AI Builder-Prozess neu zu starten. Sie können mit verschiedenen Merkmalen experimentieren, ohne das veröffentlichte Modell zu beeinflussen. Das veröffentlichte Modell ist nur betroffen, wenn Sie **Buchen** auswählen. Denken Sie daran, dass für Ihre Instanz von Dynamics 365 Finance ein einzelnes Modell verwendet wird. Daher sollten Sie jedes neue Modell sorgfältig prüfen, bevor Sie es veröffentlichen.
+Nachdem Sie die Ergebnisse Ihres ersten Modells besser verstanden haben, möchten Sie das Modell möglicherweise verbessern, indem Sie Funktionsspalten hinzufügen oder entfernen oder Teile des Datasets filtern, die keine genauen Vorhersagen unterstützen. Schließen Sie AI Builder und verwenden Sie dann den **Modell verbessern**-Link in Dynamics 365 Finance, um den AI Builder-Prozess neu zu starten. Sie können mit verschiedenen Merkmalen experimentieren, ohne das veröffentlichte Modell zu beeinflussen. Das veröffentlichte Modell ist nur betroffen, wenn Sie **Buchen** auswählen. Denken Sie daran, dass für Ihre Instanz von Dynamics 365 Finance ein einzelnes Modell verwendet wird. Daher sollten Sie jedes neue Modell sorgfältig prüfen, bevor Sie es veröffentlichen.
 
 ## <a name="for-more-information"></a>Weitere Informationen
 

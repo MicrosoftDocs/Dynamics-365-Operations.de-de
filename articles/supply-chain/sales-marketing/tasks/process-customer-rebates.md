@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 355ca6b8a06b15b68e0fd6236999b4e64a83bf2a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a85c027571a6d77ed61cd874bb9d97221b099967
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573344"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7969086"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Debitorenrückvergütungen generieren und verarbeiten
 
@@ -69,7 +69,7 @@ Diese Verfahren zeigt, wie von Debitorenrückvergütungen aus der Anspruchsgener
 2. Klicken Sie auf **Kumulieren**.
 3. Geben Sie im Feld **Debitor** einen Wert ein, oder wählen Sie einen Wert aus.
 4. Das **Startdatum** darf nicht vor dem heutigen Datum liegen.
-5. Klicken Sie auf **OK**. Infolge der Ausführung im Funktion **Kumulieren**, ist der vorkalkulierte Anspruchsbetrag nun reguliert wurden, um die Verwendung zu erläutern, dass das Gesamtumsatzvolumen des Debitors in die zutreffende Periode höher als ist, als erste Nachlass generiert wurde. Im bestimmten Fertigartikel da die Summe eingekaufte Menge 100 Einheiten erreicht hat, gemäß Abschnitt der Debitor nun für 40 EUR pro Einheit (gemäß der zweiten Mengenpause der Vereinbarung) oder 400 EUR des gesamten Rückvergütungsbetrags. Die Differenz wird als neuer Anspruch "Regulierung" für die zusätzlichen 800 EUR erfasst. Der Status der Rückvergütungsansprüche, die in im Aktualisierung einbezogen waren, werden jetzt zu berechnetem festgelegt. 
+5. Klicken Sie auf **OK**. Infolge der Ausführung im Funktion **Kumulieren**, ist der vorkalkulierte Anspruchsbetrag nun reguliert wurden, um die Verwendung zu erläutern, dass das Gesamtumsatzvolumen des Debitors in die zutreffende Periode höher als ist, als erste Nachlass generiert wurde. Im bestimmten Fertigartikel da die Summe eingekaufte Menge 100 Einheiten erreicht hat, gemäß Abschnitt der Debitor nun für 40 EUR pro Einheit (gemäß der zweiten Mengenpause der Vereinbarung) oder 4,000 EUR des gesamten Rückvergütungsbetrags. Die Differenz wird als neuer Anspruch "Regulierung" für die zusätzlichen 800 EUR erfasst. Der Status der Rückvergütungsansprüche, die in im Aktualisierung einbezogen waren, werden jetzt zu berechnetem festgelegt. 
 6. Schalten Sie in der Liste 'Alle Zeilen markieren' ein/aus.
 7. Klicken Sie auf **Genehmigen**.
 8. Klicken Sie auf **Verarbeiten**.

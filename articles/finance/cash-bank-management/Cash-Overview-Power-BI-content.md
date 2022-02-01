@@ -3,23 +3,22 @@ title: Power BI-Inhalt – Bargeldübersicht
 description: In diesem Thema wird der Inhalt des Power BI-Bargeldüberblicks beschrieben. Es wird beschrieben, wie auf die Berichte, die im Inhalt enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet wurden.
 author: saraschi2
 ms.date: 07/16/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 59ef57d3684cfa3b7063af76cc7ee7b7f0eaceb5e1f1cceb0845ebd9057ded07
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3f7e0c792df8519f3bcb2ade2e29cc4c5c8e4730
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728078"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986407"
 ---
 # <a name="cash-overview-power-bi-content"></a>Power BI-Inhalt – Bargeldübersicht
 

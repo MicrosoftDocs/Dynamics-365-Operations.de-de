@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: cd110a94991659036ac5cee1cd5f77e0cd3ba7356be902bdae37e957247535ea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a13400258a86087b6137b08ca724cbbfc1a90ad4
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737529"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964780"
 ---
 # <a name="select-a-site-theme"></a>Sitedesign auswählen
 
@@ -50,8 +50,6 @@ Gehen Sie folgendermaßen vor, um das Design auszuwählen, das auf Ihre Site ang
 [Arbeiten mit CSS-Überschreibungsdateien](css-override-files.md)
 
 [Hinzufügen eines Favicons](add-favicon.md)
-
-[Hinzufügen einer Begrüßungsnachricht](add-welcome-message.md)
 
 [Hinzufügen eines Urheberrechtshinweises](add-copyright-notice.md)
 

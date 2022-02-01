@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0a2bd50ef11e92fb427a61a1e8624fcd7d15e163
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 6ea27f4e38697d517b1520176eb5dfeee651a598
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920173"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982149"
 ---
 # <a name="scheduling-with-infinite-capacity"></a>Planung mit unendlicher Kapazität
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
-<!--KFM: Preview until 1/14/2022 -->
 
 Die Funktion *Unendliche Kapazitätsplanung für die Planungsoptimierung* führt eine Planung auf Basis von Arbeitsplaninformationen ein. Sie können Aufträge basierend auf einer Vielzahl von Arbeitsplankonfigurationen planen. Die Planung für die Planungsoptimierung umfasst häufig verwendete Arbeitsplaneinstellungen, einschließlich der Arbeitsplan-Arbeitsgangsequenz oder Anforderungen an Arbeitsplan-Arbeitsgangressourcen.
 
@@ -51,7 +49,9 @@ Bei des Planungsprozesses berücksichtigt das System auch die *Ressourcenanforde
 - Funktion (Weitere Informationen finden Sie unter [Planung mit Ressourcenauswahl basierend auf der Funktion](capability-based-scheduling.md)).
 
 > [!NOTE]
-> Anforderungen, die sich auf die Personalverwaltung beziehen, wie z. B. Fähigkeiten oder Zertifikatsanforderungen, werden noch nicht unterstützt.
+>
+> - Wenn die Ressource und/oder die Ressourcengruppe auf unbegrenzte Kapazität eingestellt sind, betrachtet die Hauptplanung sie als unbegrenzte Kapazität.
+> - Anforderungen, die sich auf die Personalverwaltung beziehen, wie z. B. Fähigkeiten oder Zertifikatsanforderungen, werden noch nicht unterstützt.
 
 Die Funktion unterstützt auch die **Rüstzeit** und die **Runtime** betriebliche Eigenschaften. Wenn Sie diese Eigenschaften für einen Arbeitsplan-Arbeitsgang festlegen, erstellt der Planungsprozess die entsprechenden Einrichtungs- und Verarbeitungsvorgänge.
 

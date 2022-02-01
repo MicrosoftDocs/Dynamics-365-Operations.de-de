@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: d3642392ed2cf231f261b24428756c6e32a79f98
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: c6356f7c085b93e3e3f292e72f813f823e924487
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674573"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968176"
 ---
 # <a name="ratings-and-reviews-faq"></a>Häufig gestellte Fragen zu Bewertungen und Prüfungen
 
@@ -41,5 +41,17 @@ Anweisungen zum Aktivieren und Erzwingen der manuellen Veröffentlichung von Bew
 [Nutzung von Bewertungen und Prüfungen aktivieren](opt-in-ratings-reviews.md)
 
 [Manuelle Veröffentlichung von Bewertungen und Prüfungen durch einen Moderator aktivieren](manual-publish-rating-reviews.md)
+
+[Bewertungen und Prüfungen verwalten](manage-reviews.md)
+
+[Konfigurieren von Bewertungen und Prüfungen](configure-ratings-reviews.md)
+
+[Produktbewertungen synchronisieren](sync-product-ratings.md)
+
+[Manuelle Veröffentlichung von Bewertungen und Prüfungen durch einen Moderator aktivieren](manual-publish-rating-reviews.md)
+
+[Bewertungen und Rezensionen importieren und exportieren](import-export-reviews.md)
+
+[Authentifizierung zwischen Diensten konfigurieren](service-to-service-auth.md)
 
 [Die Bewertungsverfeinerung wird auf Suchergebnis- und Kategorieseiten angezeigt, wenn die Lösung für Bewertungen und Prüfungen nicht aktiviert ist](troubleshoot/hide-ratings-refiner.md)

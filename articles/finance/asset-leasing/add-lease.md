@@ -2,25 +2,25 @@
 title: Mietverträge hinzufügen oder kopieren (Vorschau)
 description: In diesem Thema wird beschrieben, wie Sie einen neuen Mietvertrag erstellen, indem Sie Informationen dazu im Anlagenleasing eingeben oder Informationen aus einem vorhandenen Mietvertrag kopieren.
 author: moaamer
-ms.date: 12/06/2021
+ms.date: 01/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e6f47e7bccdfa5205209a290b2ce0d37f2e5a534
-ms.sourcegitcommit: c42d047cb866f7988f1879ac84cd45284a03abf8
+ms.openlocfilehash: b09a87c7d4f5ba076647218c3586d17a13e6c558
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7931980"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967925"
 ---
 # <a name="add-or-copy-leases-preview"></a>Mietverträge hinzufügen oder kopieren (Vorschau)
 
@@ -35,8 +35,19 @@ Gehen Sie folgendermaßen vor, um einen Mietvertrag im Analgenleasing zu erstell
 1. Wählen Sie auf der Seite **Mietvertragsübersicht** im Aktivitätsbereich **Neu** aus.
 2. Geben Sie die Informationen zum Mietvertrag ein. Erforderliche Felder haben rote Ränder.
 
-> Das Startdatum für die Mietzahlung darf nicht vor dem Mietstartdatum liegen. Wenn Sie ein Startdatum für die Mietzahlung eingeben, das vor dem Startdatum für die Miete liegt, erhalten Sie eine Fehlermeldung.
-  
+Das Startdatum für die Mietzahlung darf nicht vor dem Mietstartdatum liegen. Wenn Sie ein Startdatum für die Mietzahlung eingeben, das vor dem Startdatum für die Miete liegt, erhalten Sie eine Fehlermeldung.
+
+Standardmäßig ist die **Aufschlüsselungszahlungsbetrag**-Option im Inforegister **Allgemein** der **Mietdetails**-Seite auf **Nein** eingestellt ist, wenn die **Zahlungsaufschlüsselung zulassen**-Option auf der **Parameter des Anlagenleasing**-Seite auf **Ja** eingestellt ist. 
+
+Wenn die **Aufschlüsselungszahlungsbetrag**-Option auf **Ja** eingestellt ist, ist das **Zahlungsbetrag**-Feld auf dem Inforegister **Zahlungsplanpositionen** gesperrt. Er wird auf die Summe der Zahlungsbeträge gesetzt, die später im **Aufschlüsselung des Zahlungsbetrags**-Katalog eingegeben werden.
+
+Wählen Sie **Aufschlüsselung des Zahlungsbetrags**, um eine Seite zu öffnen, auf der Sie die einzelnen Zahlungstypen hinzufügen können. Die **Summen zum Zahlungsbetrag addieren**-Schaltfläche verschiebt die Summen in das **Zahlungsbetrag**-Feld.
+
+> [!NOTE]
+> Wenn Sie einen aufgeschlüsselten Zahlungsbetrag hinzufügen und dann die **Esc**-Taste auswählen, werden die eingegebenen Beträge nicht zum **Zahlungsbetrag**-Feld auf dem **Zahlungsplanpositionen**-Inforegister hinzugefügt. Stattdessen werden sie im **Aufschlüsselung des Zahlungsbetrags**-Dialogfeld gespeichert. Wenn Sie möchten, dass das Dialogfeld den Gesamtbetrag anzeigt, wählen Sie die **Höhe**-Spalte aus, wählen und halten Sie (oder klicken Sie mit der rechten Maustaste) und wählen Sie dann **Diese Spalte summieren**. 
+
+Die **Zeile kopieren**-Schalfläche kopiert die aufgeschlüsselte Zahlungsaufschlüsselung.
+
 ## <a name="create-a-lease-schedule"></a>Einen Mietplan erstellen
 
 Führen Sie die folgenden Schritte aus, um einen Mietplan zu erstellen, nachdem Sie die Informationen für den Mietvertrag eingegeben haben.
@@ -50,9 +61,9 @@ Führen Sie die folgenden Schritte aus, um einen Mietplan zu erstellen, nachdem 
     Die Seite **Buchdetails** zeigt, wie der Mietvertrag durch die ihm zugewiesenen Bücher bilanziert wird. Von hier aus können Sie die Mietpläne anzeigen.
 
     Der Zahlungsplan enthält die Eingaben aus der **Zahlungsplanezeilen**-Registerkarte auf der **Mietvertrag hinzufügen**-Seite. Sie können weiterhin jeden Zahlungsbetrag und jede variable Zahlung ändern. Die Leasingverbindlichkeit wird anhand des geänderten Zahlungsplans berechnet.
-    
-> [!NOTE]
-> Das Startdatum für die Mietzahlung muss mit dem Mietbeginn gleich oder nach dem Mietbeginn liegen. Wenn Sie ein Startdatum für die Zahlung eingeben, das vor dem Startdatum für die Miete liegt, erhalten Sie eine Fehlermeldung. 
+
+    > [!NOTE]
+    > Das Startdatum für die Mietzahlung muss mit dem Mietbeginn gleich oder nach dem Mietbeginn liegen. Wenn Sie ein Startdatum für die Zahlung eingeben, das vor dem Startdatum für die Miete liegt, erhalten Sie eine Fehlermeldung. 
 
 4. Nachdem Sie den Zahlungsplan überprüft haben, wählen Sie **Zeitplan bestätigen**. Nachdem der Zeitplan bestätigt wurde, kann der Mietvertrag nicht mehr bearbeitet werden.
 

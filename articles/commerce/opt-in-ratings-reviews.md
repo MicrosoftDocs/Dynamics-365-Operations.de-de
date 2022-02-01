@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9fe8e9403ccbdc1e26620ae33c6a3866af06b23c
-ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
+ms.openlocfilehash: fd6715539693389f25800a40c0beffcdc1b0de72
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7473428"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968002"
 ---
 # <a name="opt-in-to-use-ratings-and-reviews"></a>Nutzung von Bewertungen und Prüfungen aktivieren
 
@@ -52,13 +52,19 @@ Führen Sie die folgenden Schritte aus, um die Verwendung von Bewertungen und Pr
 
 [Überblick über Bewertungen und Prüfungen](ratings-reviews-overview.md)
 
-[Verwalten von Bewertungen und Prüfungen](manage-reviews.md)
+[Bewertungen und Prüfungen verwalten](manage-reviews.md)
 
 [Konfigurieren von Bewertungen und Prüfungen](configure-ratings-reviews.md)
 
 [Synchronisieren von Produktbewertungen in Dynamics 365 Commerce](sync-product-ratings.md)
 
+[Manuelle Veröffentlichung von Bewertungen und Prüfungen durch einen Moderator aktivieren](manual-publish-rating-reviews.md)
 
+[Bewertungen und Rezensionen importieren und exportieren](import-export-reviews.md)
+
+[Authentifizierung zwischen Diensten konfigurieren](service-to-service-auth.md)
+
+[Häufig gestellte Fragen zu Bewertungen und Prüfungen](ratings-reviews-faq.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

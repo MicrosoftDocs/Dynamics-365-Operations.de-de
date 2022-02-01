@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 68115d484abcdc3c37357ae441e9f9ccb5212659
-ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
+ms.openlocfilehash: c1bbdbec2bc0273a73ffc13a4cce024543af5a13
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "7827052"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968835"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Problembehandlung beim Einrichten von Finance Insights
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 In diesem Thema werden Probleme aufgelistet, die auftreten können, wenn Sie die Funktionen von Finance Insights verwenden. Außerdem wird erläutert, wie Sie diese Probleme beheben können.
 
@@ -55,7 +54,7 @@ Führen Sie diese Schritte im [Power Platform Admin-Center](https://admin.powerp
 1. Wenn Sie eine Vorschauversion von Finance Insights verwenden, entfernen Sie das DI-Projekt, das der Vorlage **Ergebnisse der Kundenzahlungserkenntnisse (CDS zu Fin und Ops)** zugeordnet ist.
 2. Führen Sie die Schritte unter [Datenintegratorprojekt erstellen](create-data-integrate-project.md) aus. Verwenden Sie die Vorlage **Ergebnisse der Customer Payment Insights (CDS für Fin and Ops 10.0.17 und höher)** verwenden.
 
-## <a name="symptom-when-i-try-to-open-ai-builder-by-using-the-links-on-the-customer-payment-predictions-setup-page-why-do-i-receive-the-following-error-message-sorry-theres-been-a-disconnect"></a>Symptom: Warum erhalte ich die folgende Fehlermeldung, wenn ich versuche, AI Builder über die Links auf der Einrichtungsseite für Vorhersagen für Kundenzahlungen zu öffnen: „Entschuldigung, die Verbindung wurde unterbrochen“?
+## <a name="symptom-when-i-try-to-open-ai-builder-by-using-the-links-on-the-customer-payment-predictions-setup-page-why-do-i-receive-the-following-error-message-sorry-theres-been-a-disconnect"></a>Symptom: Warum erhalte ich die folgende Fehlermeldung, wenn ich versuche, AI Builder über die Links auf der Einstellungsseite für Vorhersagen für Kundenzahlungen zu öffnen: „Entschuldigung, die Verbindung wurde unterbrochen“?
 
 ### <a name="resolution"></a>Lösung
 

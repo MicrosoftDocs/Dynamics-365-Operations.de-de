@@ -1,5 +1,5 @@
 ---
-title: Planungsmodulfehler über unzureichende Kapazität beheben
+title: Den „Es wurde nicht genug Kapazität gefunden“Planungsmodulfehler und endliche Kapazität beheben
 description: In diesem Thema finden Sie Informationen zu den Gründen und Lösungen für „Produktionsauftrag %1 konnte nicht eingeplant werden“. Planungsmodulfehler über unzureichende Kapazität.
 author: ChristianRytt
 ms.date: 7/29/2021
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 16626a7ee74e89bd129d8435a17d16b41a5e0387
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: becd537d37a8ba8931f2598dccbae8554a4d168e
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565758"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985029"
 ---
 # <a name="fix-the-not-enough-capacity-could-be-found-scheduling-engine-error"></a>„Planungsmodulfehler über unzureichende Kapazität“ beheben
 
@@ -105,5 +105,11 @@ Gehen Sie folgendermaßen vor, um die verfügbare Kapazität der Ressourcengrupp
 
 1. Wechseln Sie zu **Organisationsverwaltung \> Ressourcen \> Ressourcengruppen**, und wählen Sie eine Ressourcengruppe aus, die für den Auftrag gilt, der nicht geplant werden kann.
 1. Wählen Sie im Aktivitätsbereich, auf der **Ressourcengruppe**-Registerkarte, in der **Ansicht**-Gruppe **Kapazitätsbelastung** oder **Kapazitätsbelastung, grafisch** aus, und stellen Sie sicher, dass freie Kapazitäten vorhanden sind.
+
+## <a name="master-planning-books-a-resource-when-the-resource-calendar-is-closed"></a>Die Hauptplanung bucht eine Ressource, wenn der Ressourcenkalender geschlossen ist
+
+Bei Verwendung der Betriebsterminierung plant die Produktprogrammplanung die Kapazität gemäß dem Kalender der primären Ressourcengruppe. Es bucht den sekundären Arbeitsgang gleichzeitig mit dem primären Arbeitsgang und berücksichtigt weder die Kalender noch die Kapazität des sekundären Arbeitsgangs. Dies kann dazu führen, dass der Produktionsauftrag in einem geschlossenen Kalender oder zu einem Zeitpunkt geplant wird, an dem der sekundäre Arbeitsgang nicht verfügbar ist (Kalender geschlossen, keine Kapazität).
+
+Bei Verwendung der Auftragsterminierung berücksichtigt die Produktprogrammplanung die Kapazität und den Kalender sowohl des primären als auch des sekundären Arbeitsgangs, wenn der Auftrag terminiert wird. Damit der Auftrag terminiert werden kann, müssen Kalender für die Ressourcen beider Vorgänge geöffnet sein und verfügbare Kapazitäten haben.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

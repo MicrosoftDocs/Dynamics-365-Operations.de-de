@@ -1,8 +1,8 @@
 ---
 title: Personalbeschaffungsprozesse verwalten
-description: Dieser Artikel beschreibt ein Konzept, mit dem Personalvermittler die Schritte in einem Personalbeschaffungsprozess verfolgen können.
+description: Dieses Thema beschreibt ein Konzept, mit dem Personalvermittler die Schritte in einem Personalbeschaffungsprozess verfolgen können.
 author: andreabichsel
-ms.date: 06/20/2017
+ms.date: 01/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adf873a58900fa86d068d9ebc75f4f389e7d8359cc685d4635e083437c55ae56
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9a5e89e700858ed9e625fbdee630fa14ebea26e
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752989"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7965063"
 ---
 # <a name="manage-recruiting-processes"></a>Personalbeschaffungsprozesse verwalten
 
@@ -42,7 +42,7 @@ Personalbeschaffungsprojekte können Werbeoffiziere zur Nachverfolgung für den 
 - Die Bewerbungsfrist
 - Das voraussichtliche Startdatum
 
-Das Personalbeschaffungsprojekt enthält die **Stellenanzeige**, die im **Employee Self-Service** verwendet wird, um die offene Stelle zu annoncieren. Um Mitarbeitern die offenen Stellen anzuzeigen, muss das Personalbeschaffungsprojekt eine **Stellenanzeige** haben, das Feld **Employee Self-Service anzeigen** muss auf "Ja" festgelegt werden, für die **Bewerbungsfrist** muss ein zukünftiges Datum festgelegt werden, und das Personalbeschaffungsprojekt muss den **Projektstatus** "Gestartet" haben. In der folgenden Tabelle werden die möglichen Personalbeschaffungsprojektstatus und deren Beschreibung aufgelistet.
+Das Personalbeschaffungsprojekt enthält den Wert **Stellenanzeige**, der auf der Seite **Employee Self-Service** verwendet wird, um die offene Stelle zu annoncieren. Die offenen Stellen können Mitarbeitern nur angezeigt werden, wenn das Personalbeschaffungsprojekt einen Wert **Stellenanzeige** hat, das Feld **Employee Self-Service** auf **Ja** festgelegt ist, das Feld **Bewerbungsfrist** ein zukünftiges Datum festgelegt wurde und das Personalbeschaffungsprojekt den **Projektstatus** den Wert **Gestartet** hat. In der folgenden Tabelle werden die möglichen Personalbeschaffungsprojektstatus und deren Beschreibung aufgelistet.
 
 | Status    | Zeigt an:                                                                         |
 |-----------|-----------------------------------------------------------------------------------------|
@@ -55,7 +55,7 @@ Personalbeschaffungsmitarbeiter können sowohl die **Medien** erfassen, die verw
 
 ## <a name="applicants"></a>Bewerber
 
-Ein Bewerber ist eine Person, die für eine Anstellung auf Ihr Unternehmen gilt. Bewerber werden von allen juristischen Personen in der Organisation genutzt, die Ihnen zu einem sehr Pool des Talents gibt, um zu suchen. Sie können die Kompetenzen, Referenzen, Arbeitsplatzhilfsmittel-Anforderungen sowie die persönlichen Daten für Bewerber verwalten. Wenn Sie einen Bewerberdatensatz erstellen, wird ein Personendatensatz für diesen Bewerber im globalen Adressbuch erstellt. Sie können die Seite **Bewerber** verwenden, um die folgenden Informationen für das globale Adressbuch für Personen zu aktualisieren, die Bewerber sind:
+Ein Bewerber ist eine Person, die für eine Anstellung auf Ihr Unternehmen gilt. Bewerber werden in allen juristischen Personen in Ihrer Organisation freigegeben. Daher haben Sie einen großen Pool an Talenten, in dem Sie suchen können. Sie können die Kompetenzen, Referenzen, Arbeitsplatzhilfsmittel-Anforderungen sowie die persönlichen Daten für Bewerber verwalten. Wenn Sie einen Bewerberdatensatz erstellen, wird ein Personendatensatz für diesen Bewerber im globalen Adressbuch erstellt. Sie können die Seite **Bewerber** verwenden, um die folgenden Informationen für das globale Adressbuch für Personen zu aktualisieren, die Bewerber sind:
 
 - Adressdaten
 - Kontaktinformationen
@@ -84,7 +84,7 @@ Der Bewerbungsstatus gibt an, in welcher Phase des Personalbeschaffungsprozesses
 
 ### <a name="correspondence-actions"></a>Korrespondenzaktivitäten
 
-Die Korrespondenzaktivität einer **Bewerbung** bestimmt das Dokument oder die E-Mail-Vorlage, die Sie verwenden, um mit dem Bewerber zu kommunizieren, der die Bewerbung eingereicht hat. Sie können **Lesezeichen** mit Korrespondenzaktivitäten zuordnen, Sie zu den Verwendungswerten von den Anwendungen-, Gesprächs- Bewerber-, und Personalbeschaffungsprojektseiten in Ihrer Kommunikation mit Bewerbern zu ermöglichen. **Bewerbungs-E-Mail-Vorlagen** können erstellt werden, sodass die Korrespondenzaktivitäten schnell E-Mails an Bewerber gesendet, die eine Anwendung mit einem bestimmten Status und Korrespondenzaktivitätskombination haben. Beispielsweise senden kann eine Bestätigungs-E-Mail allen Bewerbungen mit einem **Status** Erhalten und eine **Korrespondenzaktivität** Empfangen. Nachdem Sie die E-Mail gesendet wurde, besitzen Sie die Möglichkeit, den Status der Bewerbungen automatisch zu aktualisieren.
+Die Korrespondenzaktivität einer Bewerbung bestimmt das Dokument oder die E-Mail-Vorlage, die Sie verwenden, um mit dem Bewerber zu kommunizieren, der die Bewerbung eingereicht hat. Durch Zuordnung von **Bewerbungslesezeichen** zu Korrespondenzaktivitäten können Sie Werte aus den Seiten **Anwendungen**, **Bewerber**, **Gespräch** und **Personalbeschaffungsprojekt** in Ihrer Kommunikation mit Bewerbern verwenden. Durch die Erstellung von **Bewerbungs-E-Mail-Vorlagen** für die Korrespondenzaktivitäten können Sie schnell E-Mails an Bewerber senden, deren Bewerbung eine bestimmte Kombination aus einem Status und einer Korrespondenzaktivität aufweisen. Beispielsweise können Sie allen Bewerbungen mit dem **Status**-Wert **Erhalten** und dem **Korrespondenzaktivität**-Wert **Empfangen** eine Bestätigungs-E-Mail senden. Nachdem Sie die E-Mail gesendet haben, haben Sie die Möglichkeit, den Status der Bewerbungen automatisch zu aktualisieren.
 
 ## <a name="application-routing"></a>Weiterleitung von Bewerbungen
 
@@ -101,6 +101,5 @@ Wenn eine Bewerbung von mehreren Arbeitskräften geprüft werden muss, können S
 ## <a name="hiring-applicants"></a>Einstellen von Bewerbern
 
 Verwenden Sie die Seite **Bewerbungen**, um einen Bewerber einzustellen. Wird ein Bewerber eingestellt, erhält der Bewerbungsdatensatz den Status **Eingestellt**, und der Personendatensatz des globalen Adressbuchs des Bewerbers wird dem neuen Arbeitskraftdatensatz zugeordnet. Die Änderungen an den Informationen des globalen Adressbuchs für den neuen Arbeitskraftdatensatz werden auch im Bewerberdatensatz angezeigt. Dies kann dazu beitragen, die Dateneingaben zu reduzieren, sollte sich die neue Arbeitskraft um eine andere Stelle innerhalb des Unternehmens bewerben. Um eine vorhandene Arbeitskraft in eine neue Position einstellen, klicken Sie auf **Änderungsposition** in **Bewerbungsstatus** ablegen unten um den Übergangsprozess zu initiieren.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

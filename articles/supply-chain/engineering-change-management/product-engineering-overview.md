@@ -2,23 +2,22 @@
 title: Überblick über die Verwaltung für technische Änderungen (enthält Video)
 description: Dieses Thema bietet einen Überblick über die Verwaltung für technische Änderungen, die Sie bei der Planung und Verwaltung der Produktversionsverwaltung sowie bei der Verwaltung von Produktlebenszyklen und technischen Änderungen unterstützt.
 author: t-benebo
-ms.date: 08/26/2021
-ms.topic: article
+ms.date: 01/11/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d667aef827addcf7c34075b08afffffe3fd71935
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 8c200796d587d77c0f4d2344524a890ba964ab39
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952597"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985211"
 ---
 # <a name="engineering-change-management-overview"></a>Überblick über die Verwaltung für technische Änderungen
 
@@ -39,9 +38,9 @@ Die Verwaltung für technische Änderungen unterstützt Sie bei der Planung und 
 - Technische Änderungsanforderungen, die durch Workflows unterstützt werden
 - Technische Änderungsaufträge, die durch Workflows unterstützt werden
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4HE6B]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HE6B]
 
-Das vorhergehende Video ([Funktionalitäten der Änderungsverwaltung in Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) ist in der [Finance and Operations-Wiedergabeliste](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) enthalten, die auf YouTube verfügbar ist.
+Das vorhergehende Video ([Funktionalitäten der Änderungsverwaltung in Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) ist in der [Wiedergabeliste von Finanzen und Betrieb](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) enthalten, die auf YouTube verfügbar ist.
 
 ## <a name="turn-on-the-engineering-change-management-features-for-your-system"></a>Schalten Sie die Verwaltungfunktionen für technische Änderungen für Ihr System ein
 
@@ -71,7 +70,9 @@ Als nächstes schalten Sie die Konfigurationstasten ein, indem Sie diese Schritt
 
 1. Wenn Sie auch die Dimension „Version“ verwenden möchten, dann aktivieren Sie das Kontrollkästchen **Produktdimension – Version**. (Dieses Kontrollkästchen befindet sich weiter unten in der Liste, nicht verschachtelt unter dem Knoten **Knoten Verwaltung für technische Änderungen**.)
 1. Schalten Sie den Wartungsmodus aus, wie in [Wartungsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) beschrieben.
-1. Führen Sie eine Datenbanksynchronisierung aus, um sicherzustellen, dass die Konfigurationsschlüssel richtig aktiviert sind.
+1. Die Datenbank muss synchronisiert werden, um sicherzustellen, dass die Konfigurationsschlüssel richtig aktiviert sind. Führen Sie je nach Art der Umgebung, in der Sie arbeiten, einen der folgenden Schritte aus:
+    - **Für Umgebungen der Ebene 1 (Entwicklung)** : Öffnen Sie Ihr Projekt in Microsoft Visual Studio und wählen Sie **Dynamics 365 \> Datenbank synchronisieren \> Synchronisieren** aus.
+    - **Für Umgebungen der Stufe 2 (und höher)** : Die Datenbank wird automatisch synchronisiert, nachdem Sie die Umgebung in den Wartungsmodus versetzt und wieder verlassen haben, sodass Sie diesen Schritt überspringen können.
 
 > [!IMPORTANT]
 > Ab April 2022 werden die Lizenzschlüssel für sowohl **Verwaltung für technische Änderungen** als auch **Produktdimension – Version** standardmäßig für alle neuen Installationen aktiviert sein, aber Sie können sie bei Bedarf immer noch deaktivieren.

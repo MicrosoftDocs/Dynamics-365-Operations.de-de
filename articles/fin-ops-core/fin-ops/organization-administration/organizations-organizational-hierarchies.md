@@ -2,8 +2,8 @@
 title: Organisationen und Organisationshierarchien – Übersicht
 description: Organisationshierarchien stellen die Beziehungen zwischen den Organisationen dar, aus denen das Unternehmen besteht.
 author: sericks007
-ms.date: 11/10/2021
-ms.topic: article
+ms.date: 01/03/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMOperatingUnit,
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f0388b6e7c22c339d26b82c35f1bbb1ef54cdb5
-ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
+ms.openlocfilehash: c8e8f2c2004582f42c3f464fedf9f3d049b5278f
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "7798345"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7992080"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>Übersicht über Unternehmen und Organisationshierarchien
 
@@ -54,7 +54,7 @@ Die Arten von Unternehmenseinheiten umfassen Kostenstellen, Organisationseinheit
 | Unternehmenseinheit       | Eine halbautomatische Organisationseinheit, die zum Erreichen strategischer Unternehmensziele erstellt wird. | Dient zur Finanzberichterstattung, die auf Branchen oder Produktlinien basiert, die die Organisation unabhängig von juristischen Personen bedient. |
 | Wertstrom        | Eine Organisationseinheit, die mindestens einen Produktionsfluss steuert. | Wird häufig im Lean Manufacturing zum Steuern der Aktivitäten und Ströme verwendet, die erforderlich sind, um Konsumenten Produkte zu liefern oder Dienstleistungen bereitzustellen. |
 | Abteilung          | Eine Organisationseinheit, die eine Kategorie oder einen funktionalen Teil einer Organisation darstellt und eine bestimmte Aufgabe erfüllt, beispielsweise Vertrieb oder Buchhaltung. | Dient zur Berichterstattung für Funktionsbereiche. Eine Abteilung kann für Gewinn und Verlust verantwortlich sein und aus einer Gruppe von Kostenstellen bestehen. |
-| Commerce-Kanal      | Eine Organisationseinheit stellt einen physischen Laden, einen Onlineshop oder einen Onlinemarktplatz dar. | Dient zur Verwaltung und operativen Kontrolle einer oder mehreren Filialen innerhalb der juristischen Person oder mehrere übergreifend. |
+| Vertriebsweg      | Eine Organisationseinheit stellt einen physischen Laden, einen Onlineshop oder einen Callcenter dar. | Dient zur Verwaltung und operativen Kontrolle einer oder mehreren Filialen innerhalb der juristischen Person oder mehrere übergreifend. |
 
 ### <a name="teams"></a>Teams
 

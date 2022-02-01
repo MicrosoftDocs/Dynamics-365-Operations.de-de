@@ -3,22 +3,21 @@ title: Österreich – Übersicht
 description: Dieses Thema bietet eine Übersicht der Dynamics 365 Finance-Funktionen, die für Österreich spezifisch sind.
 author: ShylaThompson
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
 ms.search.region: Austria
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c81445b1ed85ee52e4f1e9b2f5dba84fbe25ac11
-ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
+ms.openlocfilehash: a578b80c763c7d8ad6b9f3939c2cb731d0187118
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7562190"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983889"
 ---
 # <a name="austria-overview"></a>Österreich – Übersicht
 

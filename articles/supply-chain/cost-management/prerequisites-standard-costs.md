@@ -3,25 +3,24 @@ title: Voraussetzungen für die Standardkostenübersicht
 description: In diesem Thema werden die grundlegenden Schritte zur Verwendung von Standardkosten beschrieben.
 author: AndersGirke
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: InventStdCostConv, CostingVersion
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7181962acd38ce45bc5c18afee892e75e8998d2fbddef019c9bb78e711cf131a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7c25f2109522c7ba549ef7c3ea429873d0e1f06e
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734282"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986327"
 ---
 # <a name="prerequisites-for-standard-costs-overview"></a>Voraussetzungen für die Standardkostenübersicht
 

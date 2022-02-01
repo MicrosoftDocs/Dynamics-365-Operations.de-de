@@ -3,7 +3,7 @@ title: Überblick über die elektronische Berichterstellung (Electronic reportin
 description: Diese Thema bietet eine Übersicht zum elektronischen Berichterstellungstool. Es beschreibt Schlüsselkonzepte, unterstützte Szenarien und Formate, die Teil der Lösung sind.
 author: NickSelin
 ms.date: 11/02/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERWorkspace
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0b772acd4a8d0849803cefa8fc14ae3dd6e18831
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: 976a02f51e22c513b988e1ecfcb792d5f93a4b54
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867279"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986146"
 ---
 # <a name="electronic-reporting-er-overview"></a>Überblick über die elektronische Berichterstellung (ER)
 
@@ -126,7 +126,7 @@ Eine ER-Konfiguration wird für Anwendungs-Unternehmen gemeinsam genutzt.
 
 #### <a name="provider"></a><a name="Provider"></a>Anbieter
 
-Der ER-Anbieter ist der Bezeichner einer Partei, die verwendet wird, um den Autor (Besitzer) jeder einzelnen ER-Konfiguration anzugeben. ER ermöglicht die Verwaltung einer Liste von Konfigurationsanbietern. Die Formatkonfigurationen, die als Teil der Finance and Operations Lösung für elektronische Dokumente freigegeben werden, sind als dem **Microsoft**-Konfigurationsanbieter zugehörig gekennzeichnet.
+Der ER-Anbieter ist der Bezeichner einer Partei, die verwendet wird, um den Autor (Besitzer) jeder einzelnen ER-Konfiguration anzugeben. ER ermöglicht die Verwaltung einer Liste von Konfigurationsanbietern. Formatkonfigurationen, die als Teil der Finance and Operations-Lösung für elektronische Dokumente freigegeben sind, werden als Eigentum des **Microsoft**-Konfigurationsanbieters gekennzeichnet.
 
 Informationen zum Registrieren eines neuen ER-Anbieters enthält der Aufgabenleitfaden **ER – Konfigurationsanbieter erstellen und als aktiv markieren** (Teil des Geschäftsprozesses **7.5.4.3 Erwerben/Entwickeln von IT-Service-/-Lösungskomponenten (10677)**).
 
@@ -143,7 +143,7 @@ Ein ER-Repository speichert ER-Konfigurationen. Folgende Typen von ER-Repository
 
 Ein **LCS-freigegebene Bibliothek** Repository bietet Zugriff auf die Liste der Konfigurationen innerhalb der freigegebenen Anlagebibilothek in den Lifecycle Services (LCS). Dieser Typ von ER-Repository kann nur für den Microsoft-Anbieter erfasst werden. Von der Bibliothek LCS-freigegebener Anlage können Sie die neuesten Versionen von ER-Konfigurationen in die aktuelle Instanz importieren.
 
-Ein **LCS-Projekt**-Repository bietet Zugriff auf die Konfigurationsliste eines bestimmten LCS-Projekts (LCS-Projektanlagenbibliothek), das ausgewhlt wurde, wenn das Repository ausgewählt wurde. ER ermöglicht Ihnen, freigegebene Konfigurationen von der aktuellen Instanz in ein spezifisches **LCS-Projekt**-Repository hochzuladen. Sie können auch Konfigurationen aus einem **LCS-Projekt**-Repository in die aktuelle Finance and Operations-Instanz importieren.
+Ein **LCS-Projekt**-Repository bietet Zugriff auf die Konfigurationsliste eines bestimmten LCS-Projekts (LCS-Projektanlagenbibliothek), das ausgewhlt wurde, wenn das Repository ausgewählt wurde. ER ermöglicht Ihnen, freigegebene Konfigurationen von der aktuellen Instanz in ein spezifisches **LCS-Projekt**-Repository hochzuladen. Sie können auch Konfigurationen aus einem **LCS-Projekt**-Repository in die aktuelle Instance Ihrer Apps für Finanzen und Betrieb importieren.
 
 Ein **Dateisystem**-Repository bietet Zugriff auf die Liste von Konfigurationen, die sich als XML-Dateien im speziellen Ordner des lokalen Dateisystems des Computer befinden, auf dem der AOS-Dienst gehostet wird. Obligatorischer Ordner wird in der Repositoryregistrierungsphase ausgewählt. Sie können Konfigurationen aus einem **Dateisystem**-Repository in die aktuelle Instanz importieren. 
 

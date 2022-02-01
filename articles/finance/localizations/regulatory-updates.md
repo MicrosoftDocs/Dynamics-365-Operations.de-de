@@ -2,22 +2,22 @@
 title: Regulatorische Features
 description: Dieses Thema enthält eine Liste der geplanten und freigegebenen regulatorischen Updates für Microsoft Dynamics 365 Finance.
 author: VStamberg
-ms.date: 07/15/2021
+ms.date: 01/20/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: roschlom
+ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 16d4b9b31f213218fa5eb79c9808e5139db2dbd2239e7bb29c62af15aa372a9f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f4c9d82d882771c2b7131169615504613836def9
+ms.sourcegitcommit: 68655c5673aef9892063e5913ffee6bfc3817387
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772744"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "8016099"
 ---
 # <a name="regulatory-updates"></a>Regulatorische Features
 
@@ -71,7 +71,7 @@ Die aktuellsten regulatorischen Aktualisierungspläne finden Sie in der folgende
 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
-- Alle geplanten und freigegebenen regulatorischen Updates finden Sie unter [Lifecycle Service - Problemsuche](https://lcs.dynamics.com/Logon/Index) (Anmeldung erforderlich).
+- Weitere Informationen zu allen geplanten und veröffentlichten länderspezifischen regulatorischen Updates finden Sie unter [Suchen nach länderspezifischen regulatorischen Updates](search-for-regulatory-updates.md). (Anmeldung erforderlich.)
 - Eine Liste der Lokalisierungen, die unterstützt werden, finden Sie unter [Internationaler Verfügbarkeitsleitfaden](https://aka.ms/dynamics_365_international_availability_deck).
 
 

@@ -3,7 +3,7 @@ title: Datenmodell zur Steuerberechnung
 description: Dieses Thema enthält Informationen zum Steuerdatenmodell und wie die Feldwerte jedes Datenmodells durch den Kontext von Steuerberechnungstransaktionen bestimmt werden.
 author: kailiang
 ms.date: 10/15/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4b9b3e28b9435e9614b06d4fa2855b31d0e38b41
-ms.sourcegitcommit: 93cc9823016c9f2fd568ada0b670a52c8c3bfa33
+ms.openlocfilehash: 2773efaed9ee30ccb27b35f5aa00515ebba1c84a
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "7864259"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985965"
 ---
 # <a name="tax-calculation-data-model"></a>Datenmodell zur Steuerberechnung
 
 Dieses Thema enthält Informationen zum Steuerdatenmodell und wie die Feldwerte jedes Steuerdatenmodells durch den Kontext von Steuerberechnungstransaktionen bestimmt werden.
 
-Das *Steuerdatenmodell* besteht aus Feldern, die für die Steuerberechnung erforderlich sind. Microsoft bietet das *Steuerberechnungsdatenmodell*, das die Kopffelder und Zeilenfelder von Transaktionsbelegen in Finance and Operations Apps enthält. Die im Steuerberechnungsdatenmodell definierten Felder sind die verfügbaren Spalten der Anwendbarkeitsregeltabellen in der Konfiguration der Steuerberechnungsfunktionskonfiguration.
+Das *Steuerdatenmodell* besteht aus Feldern, die für die Steuerberechnung erforderlich sind. Microsoft bietet das *Steuerberechnungsdatenmodell*, das die Kopffelder und Zeilenfelder von Transaktionsbelegen in Apps für Finanzen und Betrieb enthält. Die im Steuerberechnungsdatenmodell definierten Felder sind die verfügbaren Spalten der Anwendbarkeitsregeltabellen in der Konfiguration der Steuerberechnungsfunktionskonfiguration.
 
 > [!NOTE] 
 > Einige Knoten, die im Datenmodell definiert sind, wie **Datensatz-ID** und **Tabellen-ID**, sind für technische Zwecke. Sie sind in der Konfiguration der Steuerberechnungsfunktion nicht verfügbar.
@@ -55,7 +55,7 @@ Sie können auch das Steuerberechnungsdatenmodell und die verfügbaren Spalten i
 
     [![Spalten verwalten.](./media/tax-calculation-model-mapping-3.png)](./media/tax-calculation-model-mapping-3.png)
 
-Das Steuerberechnungsdatenmodell ist integriert mit Finance and Operations Apps. Bei jeder Transaktion, die sich auf die Steuerberechnung bezieht, werden die Werte der Felder, die in den Anwendbarkeitsregeltabellen definiert sind, gesammelt und zur Berechnung an den Steuerberechnungsservice gesendet. In Version 40.46 stehen 57 vordefinierte Datenmodelle für folgende Vorgangsarten zur Verfügung: Bestellungen, Kundenaufträge, Transportaufträge, Bestellanforderungen, Angebotsanfragen und Verkaufsangebote.
+Das Steuerberechnungsdatenmodell ist integriert mit Apps für Finanzen und Betrieb. Bei jeder Transaktion, die sich auf die Steuerberechnung bezieht, werden die Werte der Felder, die in den Anwendbarkeitsregeltabellen definiert sind, gesammelt und zur Berechnung an den Steuerberechnungsservice gesendet. In Version 40.46 stehen 57 vordefinierte Datenmodelle für folgende Vorgangsarten zur Verfügung: Bestellungen, Kundenaufträge, Transportaufträge, Bestellanforderungen, Angebotsanfragen und Verkaufsangebote.
 
 Einunddreißig Datenmodelle können als Felder im Kopf einer Transaktion eingefügt werden. Allerdings sind nicht alle Felder auf alle Transaktionsarten anwendbar. Die folgende Tabelle zeigt, welche Kopffelder für bestimmte Transaktionsarten verfügbar sind. In einigen Fällen muss die Feldzuordnung durch eine vordefinierte Logik bestimmt werden. Gegebenenfalls wird die Logik bereitgestellt.
 

@@ -2,7 +2,7 @@
 title: Was ist neu oder geändert in der Warehouse Management Mobile-App
 description: Dieses Thema listet die neuen und geänderten Funktionen für jede freigegebene Version der Warehouse Management Mobile-App für Microsoft Dynamics 365 Supply Chain Management auf.
 author: Mirzaab
-ms.date: 09/09/2021
+ms.date: 01/18/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,51 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9d50c1380418365f7c51d6b96051e9ea68a5f104
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 6f45cacd7f43c8caf836fd1ea24d354e4bcf5853
+ms.sourcegitcommit: 9638d3a2bd592dc28f5952bda4af7dcf06edfaa4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901887"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8007573"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Was ist neu oder geändert in der Warehouse Management Mobile-App
 
 [!include [banner](../includes/banner.md)]
 
 Dieses Thema listet neue Funktionen, Korrekturen, Verbesserungen und bekannte Probleme für jede freigegebene Version der Warehouse Management Mobile-App für Microsoft Dynamics 365 Supply Chain Management auf.
+
+## <a name="version-20140"></a>Version 2.0.14.0
+
+Diese Version führt die folgenden neuen Funktionen, Korrekturen und Verbesserungen ein:
+
+- Es wurde ein Problem behoben, durch das die standardmäßige Senden-Schaltfläche deaktiviert wurde.
+
+## <a name="version-20130"></a>Version 2.0.13.0
+
+Diese Version führt die folgenden neuen Funktionen, Korrekturen und Verbesserungen ein:
+ 
+- Verbessertes Scrollen zwischen Seiten mit flüssigeren Animationen.
+- Kontraintuitive Reaktionen auf Wischbewegungen und gelegentliches Einfrieren des Bildschirms wurden behoben.
+- Verbesserte Text- und Hintergrundfarbkombinationen im Dunkelmodus für eine bessere Lesbarkeit.
+- Es wurde ein Problem behoben, bei dem Text beim Ändern der Größe des App-Fensters sehr klein werden konnte.
+- Es wurde ein Problem behoben, das beim Scannen von Barcodes gelegentlich zum Absturz der App führen konnte.
+- Die Möglichkeit wurde hinzugefügt, einen Schieberegler durch eine Schaltfläche zu ersetzen.
+- Es wurde ein Problem behoben, das dazu führen konnte, dass die App die Fehlermeldung „AADSTS7000215: Ungültiger geheimer Clientschlüssel wurde bereitgestellt“ anzeigte.
+- Die Hinweisanimation, die zeigt, wie eine Seite mit einer Wischgeste nach unten geschlossen wird, wurde korrigiert.
+- Die Möglichkeit wurde hinzugefügt, eine Seite mit einer Nach-unten-blättern-Geste zu schließen.
+- Es wurde ein Problem behoben, bei dem Dropdown-Listentitel nicht auf der **Benutzereinstellungen**-Seite angezeigt wurden.
+- Es wurde ein Lokalisierungsproblem behoben, bei dem die App ein Komma (,) nicht als Dezimaltrennzeichen erkannte.
+- Verbesserte Zugänglichkeit.
+- Die Navigation auf der **Neue Verbindung**-Seite wurde für eine verbesserte Zugänglichkeit korrigiert.
+- Es wurde ein Problem behoben, bei dem die Bildschirmtastatur bei der Auswahl eines Eingabefelds nicht angezeigt wurde.
+- Es wurde ein Problem behoben, das die App zum Absturz bringen konnte, wenn Benutzer schnell die Größe des Fensters änderten.
+- Es wurde ein Problem behoben, bei dem ein schneller Tastendruck manchmal als langer Tastendruck interpretiert wurde.
+- Es wurde ein Problem behoben, bei dem das App-Layout aufgrund von im Supply Chain Management vorgenommenen Feldanpassungen beschädigt werden konnte.
+- Es wurde ein Problem behoben, bei dem die Position von Gegenständen nicht richtig angezeigt wurde.
+- Es wurde ein Problem im Zusammenhang mit der kurzen Entnahme für den Produktvarianten-Workflow behoben.
+- Die unnötige Validierung von Feldern mit voreingestellten Standardwerten wurde entfernt.
+- Verbesserte Leistung.
+- Es wurde eine neue Einstellung hinzugefügt, mit der Benutzer auswählen können, wie Felder auf der Kartenseite gefiltert und angeordnet werden.
 
 ## <a name="version-20110"></a>Version 2.0.11.0
 

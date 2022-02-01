@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 25ae7074fcf39bf4408ea1fa0acfc334281bb254
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 443ebaa13d7ac29df66ffe77a2ed938e44a0c488
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675048"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968202"
 ---
 # <a name="enable-manual-publishing-of-ratings-and-reviews-by-a-moderator"></a>Manuelle Veröffentlichung von Bewertungen und Prüfungen durch einen Moderator aktivieren
 
@@ -68,3 +68,17 @@ Die folgende Abbildung zeigt ein Beispiel, in dem drei unveröffentlichte Bewert
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Überblick über Bewertungen und Prüfungen](ratings-reviews-overview.md)
+
+[Nutzung von Bewertungen und Prüfungen aktivieren](opt-in-ratings-reviews.md)
+
+[Bewertungen und Prüfungen verwalten](manage-reviews.md)
+
+[Konfigurieren von Bewertungen und Prüfungen](configure-ratings-reviews.md)
+
+[Produktbewertungen synchronisieren](sync-product-ratings.md)
+
+[Bewertungen und Rezensionen importieren und exportieren](import-export-reviews.md)
+
+[Authentifizierung zwischen Diensten konfigurieren](service-to-service-auth.md)
+
+[Häufig gestellte Fragen zu Bewertungen und Prüfungen](ratings-reviews-faq.md)
