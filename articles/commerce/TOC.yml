@@ -90,8 +90,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
                 - name: Neuerungen oder Änderungen in Commerce
                   items:
-                    - name: Neuerungen oder Änderungen auf der Commerce-Startseite
+                    - name: Neuerungen oder Änderungen in Commerce – Startseite
                       href: get-started/whats-new-home-page.md
+                    - name: "Commerce\_10.0.25 (April\_2022)"
+                      href: get-started/whats-new-commerce-10-0-25.md
                     - name: "Commerce\_10.0.24 (Februar 2022)"
                       href: get-started/whats-new-commerce-10-0-24.md
                     - name: "Commerce\_10.0.23 (Januar 2022)"
@@ -124,8 +126,6 @@
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/commerce/toc.json
                 - name: Videos
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/commerce/toc.json
-                - name: Glossar
-                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/commerce/toc.json
             - name: Schulungskatalog
               items:
                 - name: Schulungskatalog – Startseite
@@ -1936,6 +1936,8 @@
                   items:
                     - name: Erstellen von Konfigurationen zum Import von Daten aus externen XML-Dateien
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/commerce/toc.json
+                    - name: Daten aus manuell ausgewählten Dateien im Batchmodus importieren
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurieren von Datenimporten im Batch-Modus aus in SharePoint lokalisierten Dateien
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/commerce/toc.json
                 - name: Import von Dateien im XML-Format
@@ -2166,6 +2168,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/commerce/toc.json
                     - name: "Anwendungsupdate\_10.0.23"
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/commerce/toc.json
+                    - name: "Anwendungsupdate\_10.0.25"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/commerce/toc.json
                 - name: Benutzerdefinierten Speicherort für generierte Dokumente angeben
                   items:
                     - name: 'Ein Ereignis abonnieren, um eine Antwort vom abonnierenden Handler anzufordern'
@@ -2384,6 +2388,8 @@
               items:
                 - name: Commerce für IT-Experten und Entwickler
                   href: dev-itpro/dev-retail-home-page.md
+                - name: Modernisierung des Commerce-In-Store-Technologie-Stacks (Whitepaper)
+                  href: 'https://www.microsoft.com/download/details.aspx?id=103896'
                 - name: Lokale Entwicklungsumgebung einrichten
                   href: dev-itpro/setup-local-dev-env.md
             - name: Onlinekanalerweiterbarkeit

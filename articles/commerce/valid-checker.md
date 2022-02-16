@@ -2,7 +2,7 @@
 title: Geschäftstransaktionen für die Aufstellungsberechnung validieren
 description: In diesem Thema wird die Funktionalität zur Überprüfung von Geschäftstransaktionen in Microsoft Dynamics 365 Commerce beschrieben.
 author: analpert
-ms.date: 12/15/2021
+ms.date: 01/31/2022
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: analpert
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 008368ae32aa92682d578b75b148e0587fcc94e0
-ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
+ms.openlocfilehash: f51b1f39aa212fe8587761721194db7791bec5bc
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "7924770"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087448"
 ---
 # <a name="validate-store-transactions-for-statement-calculation"></a>Geschäftstransaktionen für die Aufstellungsberechnung validieren
 
@@ -51,9 +51,9 @@ Der Stapelverarbeitungsvorgang **Geschäftsbuchungen überprüfen** prüft die K
 
 In der folgenden Tabelle sind die Transaktionskopfzeilen-Prüfungsregeln aufgeführt, die mit den Kopfzeilen von Einzelhandelstransaktionen verglichen werden, bevor diese Transaktionen an die Aufstellungsbuchung übergeben werden.
 
-| Titel | Beschreibung |
+| Regel | Beschreibung |
 |-------|-------------|
-| Geschäftstermin | Diese Regel überprüft, ob das Geschäftsdatum der Transaktion mit einer offenen Buchhaltungsperiode im Sachkonto verknüpft ist. |
+| Geschäftstermin | Diese Regel überprüft, ob das Geschäftsdatum der Transaktion mit einem offenen Finanzzeitraum im Sachkonto verknüpft ist. |
 | Währungsrundung | Diese Regel überprüft, ob die Transaktionsbeträge gemäß der Währungsrundungsregel gerundet werden. |
 | Kundenkonto | Diese Regel überprüft, ob der Kunde, der in der Transaktion verwendet wird, in der Datenbank vorhanden ist. |
 | Rabattbetrag | Diese Regel prüft, ob der Rabattbetrag in der Kopfzeile mit der Summe der Rabattbeträge der Positionen übereinstimmt. |
@@ -72,7 +72,7 @@ In der folgenden Tabelle sind die Transaktionskopfzeilen-Prüfungsregeln aufgef�
 
 In der folgenden Tabelle sind die Transaktionspositions-Prüfungsregeln aufgeführt, die mit den Positionsdetails von Einzelhandelstransaktionen verglichen werden, bevor diese Transaktionen an die Aufstellungsbuchung übergeben werden.
 
-| Titel | Beschreibung |
+| Regel | Beschreibung |
 |-------|-------------|
 | Strichcode | Diese Regel prüft, ob alle Artikelstrichcodes, die in den Transaktionspositionen verwendet werden, in der Datenbank vorhanden sind. |
 | Gebührenpositionen | Diese Regel prüft, ob die Summe des berechneten Betrags und des steuerbefreiten Betrags der Gebührenpositionen dem ursprünglich berechneten Betrag entspricht. |

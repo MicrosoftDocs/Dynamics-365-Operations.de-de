@@ -14,6 +14,8 @@
               items:
                 - name: Neuerungen oder Änderungen auf der Startseite der Plattformupdates
                   href: get-started/whats-new-home-page.md
+                - name: Plattformupdates für Version 10.0.25 (April 2022)
+                  href: get-started/whats-new-platform-updates-10-0-25.md
                 - name: "Plattformupdates für Version 10.0.24 (Februar\_2022)"
                   href: get-started/whats-new-platform-updates-10-0-24.md
                 - name: "Plattformupdates für Version 10.0.23 (Januar\_2022)"
@@ -430,7 +432,9 @@
                   href: deployment/install-deployable-package.md
                 - name: Ein Paket deinstallieren
                   href: deployment/uninstall-deployable-package.md
-                - name: Probleme mit der Paketanwendung behandeln
+                - name: Benutzerdefinierte X++-Skripte ohne Ausfallzeit ausführen
+                  href: deployment/run-custom-scripts.md
+                - name: Probleme bei der Paketanwendung beheben
                   href: deployment/deployable-package-troubleshooting.md
             - name: Benutzerdefinierte Hilfe bereitstellen
               items:
@@ -854,6 +858,8 @@
                   href: perf-test/continuous-build-test-automation.md
                 - name: SysTest-Filterung mit Klassen- und Methodenattributen
                   href: perf-test/systest-filtering.md
+                - name: SysTestRow-Attribut zum Testen mehrerer Werte
+                  href: perf-test/systest-row.md
                 - name: Akzeptanztestbibliothek
                   items:
                     - name: Ressourcen der Akzeptanztestbibliothek

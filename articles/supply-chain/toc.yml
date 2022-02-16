@@ -12,6 +12,8 @@
               items:
                 - name: Neuerungen oder Änderungen auf der Startseite von Supply Chain Management
                   href: get-started/whats-new-home-page.md
+                - name: "Supply Chain Management\_10.0.25 (April\_2022)"
+                  href: get-started/whats-new-scm-10-0-25.md
                 - name: "Supply Chain Management\_10.0.24 (Februar 2022)"
                   href: get-started/whats-new-scm-10-0-24.md
                 - name: "Supply Chain Management\_10.0.23 (Januar\_2022)"
@@ -102,8 +104,6 @@
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Videos
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Glossar
-                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/supply-chain/toc.json
             - name: Schulungskatalog
               items:
                 - name: Schulungskatalog – Startseite
@@ -308,6 +308,8 @@
               href: cloud-edge/cloud-edge-workload-manufacturing.md
             - name: Workloads in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten
               href: cloud-edge/cloud-edge-workload-warehousing.md
+            - name: Mobile Warehouse Management-App für Cloud- und Edge-Skalierungseinheiten konfigurieren
+              href: cloud-edge/cloud-edge-workload-setup-warehouse-app.md
             - name: Lageraufträge bei Cloud- und Edge-Skalierungseinheiten
               href: cloud-edge/cloud-edge-warehouse-order.md
             - name: Lagerregulierung des Lagerorts
@@ -1233,6 +1235,8 @@
                   items:
                     - name: Erstellen von Konfigurationen zum Import von Daten aus externen XML-Dateien
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Daten aus manuell ausgewählten Dateien im Batchmodus importieren
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurieren von Datenimporten im Batch-Modus aus in SharePoint lokalisierten Dateien
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Import von Dateien im XML-Format
@@ -1461,6 +1465,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/supply-chain/toc.json
                     - name: "Anwendungsupdate\_10.0.21"
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: "Anwendungsupdate\_10.0.23"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: "Anwendungsupdate\_10.0.25"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Benutzerdefinierten Speicherort für generierte Dokumente angeben
                   items:
                     - name: 'Ein Ereignis abonnieren, um eine Antwort vom abonnierenden Handler anzufordern'
@@ -1691,12 +1699,16 @@
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Fest geplante Aufträge
                   href: master-planning/planning-optimization/planned-order-firming.md
+                - name: Geplante Aufträge vereinfacht
+                  href: master-planning/planning-optimization/planned-orders-simplified.md
                 - name: Mit negativen Vorgabemengen planen
                   href: master-planning/planning-optimization/negative-on-hand.md
-                - name: Planhistorie und Planungsprotokolle einsehen
+                - name: Planhistorie und Planungsprotokolle anzeigen
                   href: master-planning/planning-optimization/plan-history-logs.md
                 - name: Planungsvorgang abbrechen
                   href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: Aktivitätsmeldungen
+                  href: master-planning/action-messages.md
                 - name: Fehlerbehebung bei der Planungsoptimierung
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
                 - name: Erweiterbarkeit der Planungsoptimierung
@@ -1729,8 +1741,6 @@
                   href: master-planning/cancel-master-planning-job.md
                 - name: Verwenden der Ablaufverfolgung für die Auflösung
                   href: master-planning/trace-explosion.md
-                - name: Aktivitätsmeldungen
-                  href: master-planning/action-messages.md
                 - name: Einen Produktprogrammplanungslauf überwachen
                   href: master-planning/tasks/monitor-master-planning-run.md
                 - name: Einen Zeitplan für einen Standort erstellen
@@ -3763,7 +3773,9 @@
                       href: troubleshooting/warehousing/certification-path-app-connection-error.md
                     - name: Der Vertrauensanker für den Zertifizierungspfad wurde beim Aktualisieren und Migrieren nach WMS nicht gefunden.
                       href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
-                - name: Die Aufforderung zur automatischen Reservierung für die Chargennummer wird auch bei verfügbarem Inventar angezeigt
+                - name: Verarbeitungsprobleme treten nach der Installation eines Lagerort-Workloads für Skalierungseinheiten auf.
+                  href: troubleshooting/warehousing/Scale-unit-warehouse-workload-installation-issues.md
+                - name: Die Aufforderung zur automatischen Reservierung für die Chargennummer wird auch bei verfügbarem Lagerbestand angezeigt.
                   href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
                 - name: Entnahmearbeit kann wegen nicht abgeschlossener Wiederbeschaffungsarbeiten nicht entsperrt werden.
                   href: troubleshooting/warehousing/blocked-unfinished-replenishment-work.md
@@ -3907,3 +3919,5 @@
       href: ../finance/index.md
     - name: Dynamics 365 Commerce
       href: ../commerce/index.md
+    - name: Dynamics 365 Human Resources
+      href: ../human-resources/index.md
