@@ -2,7 +2,7 @@
 title: Datenimport aus SharePoint konfigurieren
 description: In diesem Thema wird erläutert, wie Sie Daten aus Microsoft SharePoint importieren.
 author: NickSelin
-ms.date: 11/19/2020
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 6cd717c0c599d68574a5a064761c8d6777418515
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 9ac328e660c7a8a3b4a4f34a650062a0fa974771
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675344"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074765"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Datenimport aus SharePoint konfigurieren
 
@@ -140,7 +140,7 @@ Sie können auch die Seite **Dateistatus für die Quellen** öffnen, indem Sie *
 
 4. Die Modellzuordnung kann [unbeaufsichtigt](#limitations) im Stapelverarbeitungsmodus ausgeführt werden. In diesem Fall wird jedes Mal, wenn eine Stapelverarbeitung dieses ER-Format ausführt, eine einzelne Datei aus den konfigurierten Dateiquellen importiert.
 
-    Wenn eine Datei vom SharePoint-Ordner erfolgreich importiert wird, wird diese aus diesem Ordner gelöscht und wechselt in den Ordner für erfolgreich importierte Dateien oder den Ordner zu importierten Dateien mit Warnungen. Andernfalls hat diese zu dem Ordner für fehlgeschlagene Dateien oder bewegt verbleibt in diesem Ordner, wenn den Ordnern für fehlgeschlagene Dateien nicht installiert ist. 
+    Wenn eine Datei vom SharePoint-Ordner erfolgreich importiert wird, wird diese aus diesem Ordner gelöscht und wechselt in den Ordner für erfolgreich importierte Dateien oder den Ordner zu importierten Dateien mit Warnungen. Andernfalls wird sie in den Ordner für fehlgeschlagene Dateien verschoben oder verbleibt in diesem Ordner, wenn der Ordner für fehlgeschlagene Dateien nicht festgelegt ist. 
 
 5. Geben Sie die Belegkennung, z. B. **V-00001** ein, und wählen Sie dann **OK** aus.
 
@@ -192,11 +192,11 @@ Sie können auch die Seite **Dateistatus für die Quellen** öffnen, indem Sie *
 
 ## <a name=""></a><a name="limitations">Einschränkungen</a>
 
-Das EB-Framework bietet nicht die Möglichkeit, einen neuen Batch-Auftrag zu initiieren, der im unbeaufsichtigten Modus eine Modellzuordnung für den Datenimport ausführt. Dazu müssen Sie eine neue Logik entwickeln, damit die konfigurierte EB-Modellzuordnung über die Benutzeroberfläche der Anwendung aufgerufen werden kann, um Daten aus eingehenden Dateien zu importieren. Daher sind einige technische Arbeiten erforderlich. 
+In Versionen von Dynamics 365 Finance vor Version 10.0.25 bietet die Benutzeroberfläche (UI) des ER Frameworks nicht die Funktionalität, einen neuen Batch-Auftrag zu initiieren, der eine Modellzuordnung für den Datenimport im unbeaufsichtigten Modus ausführt. Stattdessen müssen Sie eine neue Logik entwickeln, damit die konfigurierte ER-Model-Zuordnung von der Benutzeroberfläche der Anwendung aufgerufen werden kann, um Daten aus eingehenden Dateien zu importieren. Um diese Logik zu entwickeln, ist etwas technische Arbeit erforderlich. 
 
-Weitere Informationen zur relevanten EB-API finden Sie im Abschnitt [Code zum Ausführen einer Formatzuordnung für den Datenimport](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) im Thema [Änderungen an der Framework-API für elektronische Berichterstellung für Application Update 7.3](er-apis-app73.md).
+Weitere Informationen über die entsprechende ER API finden Sie im Abschnitt [Code zum Ausführen einer Formatzuordnung für den Datenimport](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) in [ER Framework API-Änderungen für Application Update 7.3](er-apis-app73.md). Überprüfen Sie den Code in der Klasse `BankImport_RU` des Modells `Application Suite`, um zu sehen, wie Ihre benutzerdefinierte Logik implementiert werden kann. Die Klasse `BankImport_RU` erweitert die Klasse `RunBaseBatch`. Sehen Sie sich insbesondere die `runER()`-Methode an, bei der das `ERIModelMappingDestinationRun`-Objekt als Läufer einer ER-Model-Zuordnung erstellt wird.
 
-Überprüfen Sie den Code in der Klasse `BankImport_RU` des Modells `Application Suite`, um zu sehen, wie Ihre benutzerdefinierte Logik implementiert werden kann. Diese Klasse erweitert die Klasse `RunBaseBatch`. Überprüfen Sie insbesondere die Methode `runER()`, bei der das Objekt `ERIModelMappingDestinationRun` zur Ausführung einer EB-Modellzuordnung erstellt wird.
+Ab Finance Version 10.0.25 bietet das ER Framework UI die Funktionalität, einen neuen Batch-Auftrag zu initiieren, der eine Modellzuordnung für den Datenimport im unbeaufsichtigten Modus ausführt. Weitere Informationen über diesen Prozess finden Sie unter [Datenimport im Batch-Modus aus manuell ausgewählten Dateien](er-configure-data-import-batch.md).
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
@@ -205,6 +205,8 @@ Weitere Informationen zur relevanten EB-API finden Sie im Abschnitt [Code zum Au
 [Änderungen an der Framework-API für elektronische Berichterstellung für Application Update 7.3](er-apis-app73.md)
 
 [Änderungen an der Framework-API für elektronische Berichterstellung für Application Update 10.0.23](er-apis-app10-0-23.md)
+
+[Änderungen an der Framework-API für elektronische Berichterstellung für Application Update 10.0.25](er-apis-app10-0-25.md)
 
 
 

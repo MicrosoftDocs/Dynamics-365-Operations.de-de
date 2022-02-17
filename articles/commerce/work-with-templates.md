@@ -2,7 +2,7 @@
 title: Arbeiten mit Vorlagen
 description: In diesem Thema wird beschrieben, wie Sie in Microsoft Dynamics 365 Commerce mit Vorlagen arbeiten.
 author: phinneyridge
-ms.date: 04/14/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f9487ab7a6ea10c841708e41fb7085d4bafe0d224ec5eb28810ec34b35a0ebc0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ab6ccfac96249b39cb007d9a9fce10475f0c7149
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762523"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090793"
 ---
 # <a name="work-with-templates"></a>Arbeiten mit Vorlagen
 
@@ -38,7 +38,7 @@ Wie in [Übersicht über Vorlagen und Layouts](templates-layouts-overview.md) er
 - Halten Sie Unternehmensstandorte auf dem Laufenden, indem Sie einen genehmigten Satz von Modulanordnungs- und Konfigurationsoptionen definieren.
 
     > [!TIP] 
-    > Erfolgreiche E-Commerce-Websites bieten Kunden vertraute, wiederholbare und markenbezogene Designmuster für das Benutzererlebnis (UX). Mithilfe von Vorlagen können Sie die Konsistenz auf Ihrer Site steuern.
+    > Erfolgreiche E-Commerce-Websites bieten Ihren Debitor ein vertrautes, wiederholbares und markengerechtes UX-Designmuster. Mithilfe von Vorlagen können Sie die Konsistenz auf Ihrer Site steuern.
 
 - Verbessern Sie die SEO-Ergebnisse (Search Engine Optimization), indem Sie wiederholbare und programmgesteuert definierte Seitendefinitionen und Metadaten sicherstellen.
 
@@ -49,7 +49,7 @@ Wie in [Übersicht über Vorlagen und Layouts](templates-layouts-overview.md) er
 
 Vorlagen werden durch Verwendung des Vorlagen-Editors geändert.
 
-Um den Vorlagen-Editor zu öffnen, befolgen Sie einen dieser Schritte:
+Um den Vorlageneditor in Commerce Site Builder zu öffnen, führen Sie einen der folgenden Schritte aus:
 
 - Wählen Sie im Navigationsbereich Ihrer Site **Vorlagen** und dann die zu ändernde Vorlage aus.
 - Wählen Sie im Seiteneditor für eine vorhandene Seite links im Gliederungsbaum den obersten Knoten aus. Wählen Sie dann rechts im Eigenschaftenbereich **Vorlage bearbeiten** aus.
@@ -66,7 +66,7 @@ Die Gliederungsstrukturansicht links zeigt die Moduloptionen und -strukturen an,
 
 ## <a name="create-a-new-template"></a>Neue Vorlage erstellen
 
-Um eine neue Vorlage zu erstellen, befolgen Sie diese Schritte.
+Um eine neue Vorlage in Site Builder zu erstellen, führen Sie diese Schritte aus.
 
 1. Wählen Sie im Navigationsbereich Ihrer Site **Vorlagen** aus, um die Vorlageninspektor-Ansicht zu öffnen.
 1. Wählen Sie **Neue Vorlage** aus.
@@ -85,7 +85,7 @@ Die Vorlage ist jetzt technisch gültig und kann gespeichert, eingecheckt und zu
 
 ## <a name="add-a-header-and-a-footer"></a>Eine Kopf- und Fußzeile hinzufügen
 
-Wenn Ihre Site bereits über ein Kopf-Fragment verfügt, führen Sie die folgenden Schritte aus, um einer Vorlage eine Kopf- und Fußzeile hinzuzufügen.
+Wenn Ihre Website bereits über ein Kopfzeilenfragment verfügt, folgen Sie diesen Schritten im Site Builder, um eine Kopf- und eine Fußzeile zu einer Vorlage hinzuzufügen.
 
 1. Erweitern Sie in der Gliederungsstruktur den Slot **Text** und dessen untergeordnetes Seitenmodul.
 1. Wählen Sie den Slot **Kopf** aus.
@@ -98,7 +98,7 @@ Wenn Ihre Site noch kein Kopf-Fragment enthält, lesen Sie [Fragment erstellen](
 
 ## <a name="change-the-template-theme"></a>Das Vorlagendesign ändern
 
-Gehen Sie folgendermaßen vor, um das Standarddesign für alle Seiten festzulegen, die eine Vorlage verwenden.
+Um das Standarddesign für alle Seiten festzulegen, die eine Vorlage verwenden, folgen Sie diesen Schritten im Site Builder.
 
 1. Erweitern Sie in der Seitengliederungsstruktur im Feld links den **Text**-Slot.
 1. Wählen Sie im **Text**-Slot das Seitencontainermodul aus (z. B. **Standardseite**).
@@ -110,7 +110,7 @@ Standardmäßig verwenden alle neuen Seiten nun das ausgewählte Design. Um die 
 
 Sie können HTML-**&lt;Skript&gt;**-Elemente hinzufügen, die JavaScript in Ihrer Vorlage enthalten. Auf diese Weise können Sie Standardskriptverhalten im HTML-Kopf sowie in den Abschnitten für Textanfang und -ende Ihrer Seiten bereitstellen.
 
-Um einer Vorlage ein Skript hinzuzufügen, gehen Sie folgendermaßen vor.
+Um ein Skript zu einer Vorlage in Site Builder hinzuzufügen, gehen Sie folgendermaßen vor.
 
 1. Wählen Sie in der Gliederungsstruktur links den Slot aus, dem Sie das **&lt;Skript&gt;**-Element (z. B. den HTML-Kopf, den Textanfang oder das Textende) hinzufügen möchten.
 1. Wählen Sie die Ellipsen-Schaltfläche für den Slot und dann **Modul hinzufügen** aus.
@@ -123,7 +123,7 @@ Um einer Vorlage ein Skript hinzuzufügen, gehen Sie folgendermaßen vor.
 
 ## <a name="save-check-in-preview-and-publish-a-template"></a>Speichern, Einchecken, Anzeigen einer Vorschau und Veröffentlichen einer Vorlage
 
-Um eine Vorlage zu speichern und einzuchecken, führen Sie die folgenden Schritte aus.
+Gehen Sie wie folgt vor, um eine Vorlage im Site Builder zu speichern und einzuchecken.
 
 1. Wählen Sie **Speichern** oben im Vorlageneditor aus. Gespeicherte Änderungen wirken sich erst beim Einchecken auf nachfolgende Seiten aus.
 1. Wählen Sie **Beenden Sie die Bearbeitung**. Ihre Änderungen sind jetzt für nachfolgende Workflows erkennbar.
@@ -138,6 +138,18 @@ Führen Sie einen der folgenden Schritte aus, um die Vorlage auf Ihrer Live-Site
 
 > [!WARNING]
 > Wenn eine Vorlage oder ein anderes Element des Content Management Systems (CMS) veröffentlicht wird, kann sie im Internet gefunden werden. Veröffentlichen Sie Dokumente oder Assets erst, wenn Sie diese der Öffentlichkeit vorstellen möchten. Dokumentversionen, die gespeichert und eingecheckt, aber noch nicht veröffentlicht wurden, können nur von authentifizierten Systembenutzern erkannt werden.
+
+## <a name="rename-a-template"></a>Eine Vorlage umbenennen
+
+Führen Sie diese Schritte aus, um eine vorhandene Vorlage im Site Builder umzubenennen.
+
+1. Wählen Sie im linken Navigationsbereich **Vorlagen**.
+1. Wählen Sie den Vorlagennamen der Vorlage, die Sie umbenennen möchten.
+1. Wählen Sie **Bearbeiten**, um mit der Bearbeitung der Vorlage zu beginnen. Beachten Sie, dass Sie eine Vorlage nicht bearbeiten können, wenn eine andere Person die Vorlage bereits bearbeitet.
+1. Wählen Sie im Bereich Eigenschaften der Vorlage das Stiftsymbol neben dem Namen der Vorlage.
+1. Bearbeiten Sie den Vorlagennamen nach Bedarf.
+1. Aktivieren Sie das Kontrollkästchen, um die Namensänderung zu bestätigen.
+1. Wählen Sie **Beenden Sie die Bearbeitung**.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

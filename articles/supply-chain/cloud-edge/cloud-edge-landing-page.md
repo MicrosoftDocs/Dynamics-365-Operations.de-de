@@ -4,18 +4,19 @@ description: Dieses Thema enthält Informationen über Cloud- und Edge-Scale-Ein
 author: cabeln
 ms.date: 04/22/2021
 ms.topic: article
+ms.search.form: ScaleUnitWorkloadsWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3111de1f9862cbf926e763f963c86059f4121fc0
-ms.sourcegitcommit: 4b7e9d074e368a08d2f75482b722dce0c69a4bbd
+ms.openlocfilehash: 593331a3f1073edb6a50c9bfc66e0723d222832a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7733438"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065763"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Skalierungseinheiten in einer verteilten Hybridtopologie
 
@@ -51,8 +52,7 @@ Sie können Ihre Hub-Umgebung und Cloud-Skalierungseinheiten für ausgewählte A
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Dedizierte Arbeitsauslastungen für die Lagerortverwaltung in einer Scale Unit
 
-Die Arbeitsauslastung der Lagerortverwaltung ermöglicht es Ihnen, Lagerortverwaltungsprozesse in einer isolierten Bereitstellung auszuführen.
-Weitere Informationen finden Sie unter [Arbeitsauslastungen in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten](cloud-edge-workload-warehousing.md).
+Der Workload Lagerverwaltung ist der erste verteilte Workload für Scale-Units, der für die allgemeine Verfügbarkeit freigegeben wurde. Mit dieser Option können Sie Ihre Lager-Vorgänge skalieren und in einer stabilen Umgebung ausführen, indem Sie isolierte Wartungsfenster verwenden. Der Workload Lagerverwaltung unterstützt die meisten Prozesse der Lagerverwaltung im Enterprise Hub. Weitere Informationen finden Sie unter [Arbeitsauslastungen in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten](cloud-edge-workload-warehousing.md).
 
 ### <a name="dedicated-manufacturing-execution-workload-capabilities-in-a-scale-unit"></a>Dedizierte Funktionalitäten für die Arbeitsauslastung bei der Fertigungsausführung in einer Skalierungseinheit
 

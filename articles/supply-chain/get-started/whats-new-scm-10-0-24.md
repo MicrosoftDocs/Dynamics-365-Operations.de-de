@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: d7dd3bbb0d1aa701757ad7fa525aba04fe9419c9
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: a254e20dd7fcc29ca520282b4bf9fcd903e4de58
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986302"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087549"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.24 (Februar 2022)
 
@@ -34,6 +34,7 @@ Die folgende Tabelle listet die Funktionen auf, die in dieser Version enthalten 
 | Funktionsbereich | Funktion | Mehr erfahren | Aktiviert von |
 |---|---|---|---|
 | Verteilte Hybridtopologie | [Verbesserte Arbeitsauslastungen für Lagerausführung auf Skalierungseinheiten](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-warehouse-execution-workloads-scale-units) | [Workloads in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten](../cloud-edge/cloud-edge-workload-warehousing.md) | Standardmäßig aktiviert. |
+| Verteilte Hybridtopologie | [Produktionsauftrag starten bei Arbeitsauslastung der Lagerortverwaltung für die Cloud- und Edge-Skalierungseinheit](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-manufacturing-execution-workloads-scale-units) | [Workloads in der Fertigungsausführung für Cloud- und Edge-Skalierungseinheiten](../cloud-edge/cloud-edge-workload-manufacturing.md) | Funktionsverwaltung (*Produktionsauftrag für den Workload der Lagerverwaltung für die Cloud und die Scale-Unit-Einheit starten*)  |
 | Planung | [Planungsoptimierungsunterstützung für Sicherheitszuschlag für Wiederbestellung und Warenabgang](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-reorder-margin-issue-margin) | [Sicherheitszuschläge](../master-planning/planning-optimization/safety-margins.md) | Standardmäßig aktiviert. |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Funktionsverbesserungen In dieser Version enthalten
@@ -47,7 +48,6 @@ Wenn Sie eine dieser Funktionen ein‑ oder ausschalten möchten, müssen Sie di
 | Produktionssteuerung | Bedarfsbasierte Materialverfügbarkeitsprüfung für Produktionsaufträge | Diese Funktion ermöglicht ein schnelleres Öffnen der Seite **Freigeben von Produktionsaufträgen**, die über den Arbeitsbereich **Produktionsbodenverwaltung** verfügbar ist. Ohne diese Funktion prüft das System beim Öffnen der Seite automatisch, ob für alle aufgelisteten Fertigungsaufträge Materialien verfügbar sind, was bei einer großen Auftragsmenge viel Zeit in Anspruch nehmen kann. Wenn diese Funktion aktiviert ist, stellt das System stattdessen eine Symbolleistenschaltfläche bereit, mit der Sie die Materialprüfung nur für ausgewählte Aufträge und bei Bedarf starten können. |
 | Produktionssteuerung | (Vorschau) Materialverbrauch in der Produktionsausführungsoberfläche (nicht WMS) registrieren | Diese Funktion ermöglicht es Arbeitern, die Produktionsausführungsoberfläche zu verwenden, um Materialverbrauch, Chargennummern und Seriennummern zu registrieren. Diese Funktion unterstützt nur Artikel, die nicht für die Verwendung von erweiterten Lagerort-Prozessen (WMS) aktiviert sind. Die Unterstützung für WMS-fähige Elemente ist für eine zukünftige Version geplant.<p>Einige Hersteller, insbesondere in der Prozessindustrie, müssen den Materialverbrauch pro Charge oder Produktionsauftrag explizit erfassen. Mitarbeiter können beispielsweise eine Waage verwenden, um die Menge des bei der Arbeit verbrauchten Materials zu wiegen. Um eine vollständige Rückverfolgbarkeit des Materials zu gewährleisten, müssen diese Organisationen auch registrieren, welche Chargennummern bei der Herstellung jedes Produkts verbraucht wurden. |
 | Produktionssteuerung | Fertigmeldung bei Arbeitsauslastung der Lagerortverwaltung für die Cloud- und Edge-Skalierungseinheit | Mit dieser Funktion können Mitarbeiter die mobile Warehouse Management-App verwenden, um einen Produktions‑ oder Batchauftrag als abgeschlossen zu melden, wenn die App für eine Arbeitsauslastung der Lagerortverwaltung auf einer Cloud‑ oder Edge-Skalierungseinheit ausgeführt wird. Weitere Informationen finden Sie unter [Fertig melden und auf einer Skalierungseinheit einlagern](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF). |
-| Produktionssteuerung | Produktionsauftrag starten bei Arbeitsauslastung der Lagerortverwaltung für die Cloud- und Edge-Skalierungseinheit | Mit dieser Funktion können Mitarbeiter die mobile Warehouse Management-App verwenden, um einen Produktions‑ oder Batchauftrag zu starten, wenn die App für eine Arbeitsauslastung der Lagerortverwaltung auf einer Cloud‑ oder Edge-Skalierungseinheit ausgeführt wird. |
 | Lagerortverwaltung | Neue Workbenchseiten zur Ladungsplanung | Aktiviert die zwei neuen Ladungsplanungs-Workbenchseiten: **Workbench für eingehende Ladungsplanung** und **Workbench für ausgehende Ladungsplanung**. |
 
 ## <a name="new-and-updated-documentation-resources"></a>Neue und aktualisierte Dokumentationsressourcen
@@ -70,7 +70,7 @@ Wir haben die folgenden Hilfethemen kürzlich hinzugefügt oder erheblich aktual
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformupdates für Apps für Finanzen und Betrieb
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.24 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattformupdates für Version 10.0.24 von Apps für Finanzen und Betrieb (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.24 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattform-Updates für Version 10.0.24 von Apps für Finanzen und Betrieb (Februar 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 

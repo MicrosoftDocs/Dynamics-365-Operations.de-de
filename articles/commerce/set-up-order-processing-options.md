@@ -2,7 +2,7 @@
 title: Einrichten von Callcenterkanälen
 description: Die Themen dieses Abschnitts enthalten Informationen zum Verarbeiten von Bestellungen für Callcenter mit Dynamics 365 Commerce.
 author: josaw1
-ms.date: 01/06/2020
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5f9afd1b67d6b164facc4dd15a8680866fe8c5b4e4b491d969cda6554eebb1de
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 64669c5bf71a4f1673f5ad2c46db7d3a2eaf2a97
+ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750647"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092431"
 ---
 # <a name="set-up-call-center-channels"></a>Einrichten von Callcenterkanälen
 
@@ -56,6 +56,9 @@ Wenn die Einstellung **Aktivieren Sie Auftragsabschluss** für den Callcenterkan
 Wenn darüber hinaus die Einstellung **Aktivieren Sie Auftragsabschluss** aktiviert ist, wenn Benutzer Aufträge erstellen und im Eintragsmodus sind, ist das Feld **Quelle** verfügbar im Hauptauftragskopf. Das Feld **Quelle** wird verwendet, um einen [Katalogquellcode](/dynamics365/unified-operations/retail/call-center-catalogs) in einer Direktvertriebsbranche aufzuzeichnen, die Szenario verkauft. Dieser Code kann dann Sonderpreise und Aktionen treiben.
 
 Auch wenn die Einstellung **Aktivieren Sie Auftragsabschluss** deaktiviert ist, können Benutzer einen Quellcode noch in einen Auftrag übernehmen. Allerdings müssen sie zuerst Auftragskopfdetails öffnen, um auf das Feld **Quelle** zuzugreifen. Das bedeutet, es sind einige zusätzliche Klicks notwendig. Dasselbe Verhalten bezieht sich auf Funktionen wie vollständige und beschleunigte Aufträge von Versand. Diese Funktionalität ist für alle Aufträge verfügbar, die in dem Callcenter erstellt werden. Wenn die Einstellung **Aktivieren Sie Auftragsabschluss** aktiviert ist, können Benutzer die Konfiguration dieser Funktionen im Auftragskopf finden, die im Formular Positionseintragsansicht sind. Sie müssen nicht in die Auftragskopfdetails gehen, um die erforderlichen Einstellungen und Felder zu suchen.
+
+> [!NOTE]
+> Wenn die Funktion **Omni-Channel Commerce Auftragszahlungen** aktiviert ist, wird die Schaltfläche Call Center **Auftragsabwicklung aktivieren** in der Zentralverwaltung auf der **Allgemein** Inforegister Ihres Channels unter **Einzelhandel und Commerce \> Channels \> Call Center** ausgeblendet.
 
 ### <a name="enable-direct-selling"></a>Direktverkauf aktivieren
 

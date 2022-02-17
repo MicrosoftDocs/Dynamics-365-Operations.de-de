@@ -2,7 +2,7 @@
 title: Verwalten der Belegschaft mittels Abteilungen, Stellen und Positionen
 description: Dieses Thema beschreibt grundlegende Informationen über Abteilungen, Stellen und Positionen, die innerhalb der Personalverwaltung als Organisationselemente verwaltet werden.
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 51335cba0e0dce755ce36fbe13c6294fca58d797
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: 2b4c1efac249b315de25348a104f00a613c32df9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731807"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071466"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Verwalten der Belegschaft mittels Abteilungen, Stellen und Positionen
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -48,34 +51,20 @@ Eine Abteilung ist eine Organisationseinheit, die eine Kategorie oder einen Funk
 
 ## <a name="jobs-and-positions"></a>Stellen und Positionen
 Ein Einzelvorgang ist eine Sammlung von Aufgaben und Zuständigkeiten, die für eine Person, die eine Tätigkeit ausführt, obligatorisch sind. Eine Position ist eine einzelne Instanz eines Einzelvorgangs. Zuständigkeitsbereiche, Arbeitsaufgaben, Stellenfunktionen, Qualifikationen, Bescheinigungen und Ausbildungsinformationen, die für eine Stelle erforderlich sind, sind auch für Positionen erforderlich, die einer Stelle zugeordnet sind.
+
 ### <a name="job-tasks"></a>Arbeitsaufgaben
+
 Sie können Arbeitsaufgaben erstellen, die die grundlegenden Aufgaben beschreiben, die eine Arbeitskraft in einer Position für diesen Einzelvorgang ausführen muss. Die gleiche Arbeitsaufgabe kann mehreren Einzelvorgängen hinzugefügt werden, und Positionen für diese Einzelvorgänge erben die Arbeitsaufgaben. Beispiele für Stellenaufgaben sind in der folgenden Tabelle aufgeführt.
 
-<table>
-<thead>
-<tr class="header">
-<th>Einzelvorgang</th>
-<th>Arbeitsaufgabe</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Verkaufsleiter</td>
-<td><ul>
-<li><span class="input">Leistungsbeurteilung</span> – Überprüfung der Arbeitsleistung jedes Verkäufers.</li>
-<li><span class="input">ABS-Überprüfung</span> – Genehmigen oder Ablehnen der Abwesenheitsanforderungen oder -erfassungen jedes Verkäufers.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Sachbearbeiter Buchhaltung</td>
-<td><span class="input">FIN-Bericht</span> – Wöchentliche Finanzberichte dem Leiter der Finanzabteilung präsentieren.</td>
-</tr>
-</tbody>
-</table>
+| Einzelvorgang           | Arbeitsaufgabe                                                |
+|---------------|-------------------------------------------------------------|
+| Verkaufsleiter | Leistungsbeurteilung – Überprüfung der Arbeitsleistung jedes Verkäufers.    |
+| Sachbearbeiter Buchhaltung    | ABS-Überprüfung – Genehmigen oder Ablehnen der Abwesenheitsanforderungen oder -erfassungen jedes Verkäufers. |
+
 
 ### <a name="job-functions"></a>Stellenfunktionen
 
-Stellenfunktionen sind wie Arbeitsaufgaben. Eine Stellenfunktion beschreibt eine oder mehrere Aufgaben, Pflichten und Zuständigkeiten, die einer Stelle zugewiesen sind. Stellenfunktionen können Einzelvorgängen zugewiesen werden und verwendet werden, um Berechtigungsregeln für Vergütungspläne einzurichten und zu implementieren. Beispiele für Stellenfunktionen sind in der folgenden Tabelle aufgeführt.
+Stellenfunktionen sind wie Arbeitsaufgaben. Eine Auftragsfunktion beschreibt eine oder mehrere Aufgaben, Pflichten oder Verantwortlichkeiten, die einem Auftrag zugewiesen sind. Stellenfunktionen können Einzelvorgängen zugewiesen werden und verwendet werden, um Berechtigungsregeln für Vergütungspläne einzurichten und zu implementieren. Beispiele für Stellenfunktionen sind in der folgenden Tabelle aufgeführt.
 
 | Einzelvorgang           | Stellenfunktion                                                |
 |---------------|-------------------------------------------------------------|

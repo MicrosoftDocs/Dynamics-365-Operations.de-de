@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2018-11-1
-ms.openlocfilehash: 592cecff5b6179e7afd1bacb25beda277dfb8fa3
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 02226fd9f2c92db2518ca48baefb680a3d2f0ac1
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944633"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8076902"
 ---
 # <a name="fiscal-printer-integration-sample-for-italy"></a>Beispiel für die Einbindung eines Belegdruckers für Italien
 
@@ -49,7 +49,7 @@ Die folgenden Szenarien werden im Beispiel für die Integration des Steuerregist
     - Positionsrabattbetrag drucken.
     - Geschenkkarten:
 
-        - Schließen Sie eine ausgegebene/aufgeladene Zeile einer Geschenkkarte aus einem Steuerbeleg für einen Verkauf aus.
+        - Schließen Sie eine ausgegebene/aufgeladene Zeile einer Geschenkkarte aus einem Kassenbon für einen Verkauf aus.
         - Drucken Sie eine Zahlung, die eine Geschenkkarte als reguläre Zahlungsmethode verwendet.
 
     - Drucken Sie Fiskalquittungen für Vorgänge bei Kundenbestellungen:
@@ -76,7 +76,7 @@ Das Fiskaldrucker-Integrationsbeispiel implementiert die folgenden Regeln, die s
 
 - Schließen Sie Verkaufszeilen, die mit den Vorgängen *Geschenkkarte ausgeben* und *Zu Geschenkkarte hinzufügen* verbunden sind, vom Fiskalbon aus.
 - Drucken Sie keinen Kassenbon, wenn er nur aus Geschenkkartenzeilen besteht.
-- Ziehen Sie den Gesamtbetrag der Geschenkkarten, die in einer Transaktion ausgegeben oder wieder aufgeladen werden, von den Zahlungszeilen des Fiskalbons ab.
+- Ziehen Sie den Gesamtbetrag der Geschenkkarten, die in einer Transaktion ausgegeben oder aufgeladen werden, von den Zahlungszeilen des Steuerbelegs ab.
 - Speichern Sie berechnete Zahlungsregulierungspositionen in der Kanaldatenbank mit einem Verweis auf eine entsprechende Steuerbuchung.
 - Zahlung per Geschenkkarte wird als eine normale Zahlung betrachtet.
 
@@ -99,7 +99,7 @@ Das Beispiel der Fiskaldrucker-Integration implementiert die folgenden Regeln, d
 
 ## <a name="set-up-fiscal-integration-for-italy"></a>Steuerintegration für Italien einrichten
 
-Die Beispiele für diese Druckerintegration für Italien basiert auf der [steuerlichen Integrationsfunktionalität](fiscal-integration-for-retail-channel.md) und ist Teil der Retail SDK. Die Probe befindet sich im Ordner **src\\Fiscallntegration\\EpsonFP90IIISample** des [Dynamics 365 Commerce Lösungen](https://github.com/microsoft/Dynamics365Commerce.Solutions/) Repository (zum Beispiel [die Stichprobe in Release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/EpsonFP90IIISample)). Das Beispiel [besteht](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) aus einem Anbieter von fiskalischen Belegen, der eine Erweiterung der Commerce Runtime (CRT) ist, und einem fiskalischen Konnektor, der eine Erweiterung der Commerce Hardware Station ist. Weitere Informationen über die Verwendung des Retail SDK finden Sie unter [Retail SDK Architektur](../dev-itpro/retail-sdk/retail-sdk-overview.md) und [Einrichten einer Build-Pipeline für das Independent-Packaging SDK](../dev-itpro/build-pipeline.md).
+Die Beispiele für diese Druckerintegration für Italien basiert auf der [steuerlichen Integrationsfunktionalität](fiscal-integration-for-retail-channel.md) und ist Teil der Retail SDK. Die Probe befindet sich im Ordner **src\\Fiscallntegration\\EpsonFP90IIISample** des [Dynamics 365 Commerce Lösungen](https://github.com/microsoft/Dynamics365Commerce.Solutions/) Repository (zum Beispiel [die Stichprobe in Release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/EpsonFP90IIISample)). Das Beispiel [besteht](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) aus einem Anbieter von fiskalischen Belegen, der eine Erweiterung der Commerce Runtime (CRT) ist, und einem fiskalischen Konnektor, der eine Erweiterung der Commerce Hardware Station ist. Weitere Informationen über die Verwendung des Retail SDK finden Sie unter [Retail SDK Architektur](../dev-itpro/retail-sdk/retail-sdk-overview.md) und [Einrichten einer Build-Pipeline für das Independent-Packaging SDK](../dev-itpro/build-pipeline.md).
 
 > [!WARNING]
 > Aufgrund der Einschränkungen des [neuen unabhängigen Verpackungs- und Erweiterungsmodells](../dev-itpro/build-pipeline.md) kann es derzeit nicht für dieses Beispiel der steuerlichen Integration verwendet werden. Sie müssen die vorherige Version des Retail SDK auf einer virtuellen Maschine (VM) für Entwickler in Microsoft Dynamics Lifecycle Services (LCS) verwenden. Weitere Informationen unter [Bereitstellungsrichtlinien für den Steuerdrucker-Integrationsbeispiel für Italien (Legacy)](emea-ita-fpi-sample-sdk.md).
@@ -303,7 +303,7 @@ Legen Sie die Schritte unter [Einrichten einer Build-Pipeline für ein Fiskalint
 
 ## <a name="design-of-extensions"></a>Entwurf von Erweiterungen
 
-Die Beispiele für diese Druckerintegration für Italien basiert auf der [steuerlichen Integrationsfunktionalität](fiscal-integration-for-retail-channel.md) und ist Teil der Retail SDK. Die Probe befindet sich im Ordner **src\\Fiscallntegration\\EpsonFP90IIISample** des [Dynamics 365 Commerce Lösungen](https://github.com/microsoft/Dynamics365Commerce.Solutions/) Repository (zum Beispiel [die Stichprobe in Release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/EpsonFP90IIISample)). Das Beispiel [besteht](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) aus einem Anbieter von fiskalischen Belegen, der eine Erweiterung von CRT ist, und einem fiskalischen Konnektor, der eine Erweiterung von Commerce Hardware Station ist. Weitere Informationen über die Verwendung des Retail SDK finden Sie unter [Retail SDK Architektur](../dev-itpro/retail-sdk/retail-sdk-overview.md) und [Einrichten einer Build-Pipeline für das Independent-Packaging SDK](../dev-itpro/build-pipeline.md).
+Die Beispiele für diese Druckerintegration für Italien basiert auf der [steuerlichen Integrationsfunktionalität](fiscal-integration-for-retail-channel.md) und ist Teil der Retail SDK. Die Probe befindet sich im Ordner **src\\Fiscallntegration\\EpsonFP90IIISample** des [Dynamics 365 Commerce Lösungen](https://github.com/microsoft/Dynamics365Commerce.Solutions/) Repository (zum Beispiel [die Stichprobe in Release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/EpsonFP90IIISample)). Das Beispiel [besteht](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) aus einem Anbieter von fiskalischen Belegen, der eine Erweiterung von CRT ist, und einem fiskalischen Konnektor, der eine Erweiterung von Commerce Hardware Station ist. Weitere Informationen über die Verwendung des Retail SDK finden Sie unter [Retail SDK Architektur](../dev-itpro/retail-sdk/retail-sdk-overview.md) und [Einrichten einer Build-Pipeline für das Independent-Packaging SDK](../dev-itpro/build-pipeline.md).
 
 > [!WARNING]
 > Aufgrund der Einschränkungen des [neuen unabhängigen Verpackungs- und Erweiterungsmodells](../dev-itpro/build-pipeline.md) kann es derzeit nicht für dieses Beispiel der steuerlichen Integration verwendet werden. Sie müssen die Vorgängerversion des Retail SDK auf einer Entwickler-VM in LCS verwenden. Weitere Informationen unter [Bereitstellungsrichtlinien für den Steuerdrucker-Integrationsbeispiel für Italien (Legacy)](emea-ita-fpi-sample-sdk.md). Die Unterstützung des neuen unabhängigen Paketierungs- und Erweiterungsmodells für steuerliche Integrationsmuster ist für spätere Versionen geplant.

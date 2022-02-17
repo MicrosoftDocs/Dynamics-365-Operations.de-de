@@ -2,29 +2,24 @@
 title: Übersicht über die Steuerintegration für Commerce-Kanäle
 description: Dieses Thema bietet einen Überblick der Steuerintegrationsfunktionen, die in Dynamics 365 Commerce verfügbar sind.
 author: EvgenyPopovMBS
-manager: annbe
-ms.date: 09/22/2021
-ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
-audience: Application User
-ms.reviewer: josaw
+ms.date: 01/31/2022
+ms.topic: article
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: epopov
-ms.search.validFrom: 2019-1-16
-ms.dyn365.ops.version: 10
-ms.openlocfilehash: d63f26afb8f533728a6b7ab0a1f359b210be3e5b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: 82913eaca1d56a5b0609480d8825717278eca132
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983743"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8077191"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Übersicht über die Steuerintegration für Commerce-Kanäle
 
 [!include [banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 Dieses Thema bietet einen Überblick der Steuerintegrationsfunktionen, die in Dynamics 365 Commerce verfügbar sind. 
 
@@ -38,32 +33,61 @@ Die Steuerintegrationsfunktionen sind ein Framework, das eine allgemeine Lösung
 
 Um andere Szenarien zu unterstützen, die nicht von einem Steuerintegrationsbeispiel unterstützt werden, um Retail POS in andere steuerbezogene Geräte oder Dienste zu integrieren, oder um Anforderungen anderer Länder/Regionen zu erfüllen, müssen Sie entweder ein vorhandenes Steuerintegrationsbeispiel erweitern oder ein neues Beispiel mithilfe eines vorhandenen Beispiels erstellen.
 
-## <a name="fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices"></a>Steuerregistrierungsprozess und Steuerintegrationsbeispiele für steuerbezogene Geräte
+## <a name="fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services"></a>Beispiele für den Prozess der Fiskalregistrierung und der Fiskalintegration für Fiskalgeräte und -dienste
 
-Ein Steuerregistrierungsprozess in Retail POS kann aus einem oder mehreren Schritten bestehen. Jeder Schritt umfasst die Steuerregistrierung bestimmter Transaktionen oder -ereignisse in einem steuerbezogenes Gerät oder einem steuerbezogenen Dienst. Die folgenden Lösungskomponenten nehmen an der Steuerregistrierung in einem steuerbezogenen Gerät teil, das mit einer Hardwarestation verbunden ist:
+Ein Steuerregistrierungsprozess in Retail POS kann aus einem oder mehreren Schritten bestehen. Jeder Schritt umfasst die Steuerregistrierung bestimmter Transaktionen oder -ereignisse in einem steuerbezogenes Gerät oder einem steuerbezogenen Dienst. Die folgenden Lösungskomponenten nehmen an der Fiskalregistrierung in einem Fiskalgerät oder -dienst teil:
 
-- **Commerce Runtime (CRT)-Erweiterung** – Diese Komponente serialisiert Transaktions-/Ereignisdaten in das Format, das auch für die Interaktion mit dem steuerbezogenen Gerät verwendet wird, analysiert Antworten vom steuerbezogenen Gerät und speichert die Antworten in der Kanaldatenbank. Die Erweiterung definiert auch die spezifischen Transaktionen und Ereignisse, die erfasst werden müssen. Diese Komponente wird häufig als *Steuerdokumentanbieter* bezeichnet.
-- **Hardwarestationserweiterung** – Diese Komponente initialisiert die Kommunikation mit dem steuerbezogenen Gerät, sendet Anforderungen und direkte Befehle an das steuerbezogene Gerät auf Basis der Transaktions-/Ereignisdaten, die aus dem Steuerdokument extrahiert werden, und empfängt Antworten vom steuerbezogenen Gerät. Diese Komponente wird häufig als *Steuerkonnektor* bezeichnet.
+- **Anbieter von fiskalischen Belegen** - Diese Komponente serialisiert Transaktions-/Ereignisdaten in dem Format, das auch für die Interaktion mit dem fiskalischen Gerät oder Dienst verwendet wird, parst Antworten vom fiskalischen Gerät oder Dienst und speichert die Antworten in der Channel-Datenbank. Die Erweiterung definiert auch die spezifischen Transaktionen und Ereignisse, die erfasst werden müssen.
+- **Fiskalischer Konnektor** - Diese Komponente initialisiert die Kommunikation mit dem fiskalischen Gerät oder Dienst, sendet Anfragen oder direkte Befehle an das fiskalische Gerät oder den Dienst, basierend auf den Daten zu Transaktionen/Ereignissen, die aus dem fiskalischen Beleg extrahiert werden, und empfängt Antworten vom fiskalischen Gerät oder Dienst.
 
-Ein Steuerintegrationsbeispiel für ein steuerbezogenes Gerät enthält jeweils die CRT und Hardwarestationserweiterungen für einen Steuerdokumentanbieter und Steuerkonnektor. Es enthält auch die folgenden Komponentenkonfigurationen:
+Ein Beispiel für eine Fiskalintegration kann die Commerce Runtime (CRT), die Hardware-Station und POS-Erweiterungen für einen Anbieter von fiskalischen Belegen und einen fiskalischen Konnektor enthalten. Es enthält auch die folgenden Komponentenkonfigurationen:
 
-- **Steuerdokumentanbieter-Konfiguration** – Diese Konfiguration definiert eine Ausgabemethode und ein Format für Steuerdokumente. Es enthält auch eine Datenzuordnung für Steuern und Zahlungsmethoden, um Daten aus Retail POS mit den Werten, die in der Firmware des steuerbezogenen Geräts vordefiniert werden, kompatibel zu machen.
-- **Steuerkonnektorkonfiguration** – Diese Konfiguration definiert die physische Kommunikation mit dem betreffenden steuerbezogenen Gerät.
+- **Steuerdokumentanbieter-Konfiguration** – Diese Konfiguration definiert eine Ausgabemethode und ein Format für Steuerdokumente. Er enthält auch eine Datenzuordnung für Steuern und Zahlungsformen, um Daten aus Retail POS mit den Werten kompatibel zu machen, die in der Fiskalgerät- oder Service-Firmware vordefiniert sind.
+- **Fiscal Konnektor Konfiguration** - Diese Konfiguration definiert die physische Kommunikation mit dem spezifischen Fiskalgerät oder -dienst.
 
-Ein Steuerregistrierungsprozess für ein bestimmtes POS-Register wird von einer entsprechenden Einstellung im POS-Funktionsprofil definiert. Weitere Informationen zum Konfigurieren eines Steuerregistrierungsprozesses, Hochladen von Steuerdokumentanbieter- und Steuerkonnektorkonfigurationen und Ändern ihrer Parameter finden Sie unter [Einrichten eines Steuerregistrierungsprozesses](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+Ein Steuerregistrierungsprozess für ein bestimmtes POS-Register wird von einer entsprechenden Einstellung im POS-Funktionsprofil definiert. Weitere Einzelheiten zum Konfigurieren eines fiskalischen Registrierungsprozesses, zum Hochladen von Konfigurationen für fiskalische Belege und fiskalische Konnektoren sowie zum Ändern von Konfigurationsparametern finden Sie unter [Einrichten eines fiskalischen Registrierungsprozesses](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
-Das folgende Beispiel zeigt einen typischen Steuerregistrierungs-Ausführungsfluss für ein steuerbezogenes Gerät. Der Fluss startet mit einem Ereignis im POS (beispielsweise dem Abschluss einer Verkaufsbuchung) und implementiert die folgende Schrittfolge:
+Der folgende typische Fiskalregistrierungs Flow beginnt mit einem Ereignis in der Kasse (z.B. Abschluss einer Verkaufstransaktion) und implementiert eine vordefinierte Sequenz von Schritten, an denen andere Commerce Komponenten beteiligt sind (z.B. die CRT und Hardware Station).
 
-1. Der POS fordert ein Steuerdokument von CRT an.
-1. CRT bestimmt, ob das aktuelle Ereignis eine Steuerregistrierung erfordert.
-1. Auf Grundlage der Steuerregistrierungsprozess-Einstellungen identifiziert CRT einen Steuerkonnektor und entsprechenden Steuerdokumentanbieter, der für die Steuerregistrierung verwendet werden soll.
-1. CRT führt den Steuerdokumentanbieter aus, der ein Steuerdokument generiert (beispielsweise ein XML-Dokument), das die Transaktion oder das Ereignis darstellt.
-1. Der POS sendet das Steuerdokument, das CRT vorbereitet, an eine Hardwarestation.
-1. Die Hardwarestation führt den Steuerkonnektor aus, der das Steuerdokument verarbeitet und es an das steuerbezogene Gerät oder den steuerbezogenen Dienst kommuniziert.
-1. Der POS analysiert die Antwort vom steuerbezogenen Gerät oder Dienst, um zu bestimmen, ob die Steuerregistrierung erfolgreich war.
-1. CRT speichert die Antwort in der Kanaldatenbank.
+1. Die Kasse fordert einen Fiskalbeleg vom Fiscal Integration Framework (FIF) an.
+1. Die FIF bestimmt, ob das aktuelle Ereignis eine steuerliche Registrierung erfordert.
+1. Basierend auf den Einstellungen für die Fiskalregistrierung identifiziert die FIF einen fiskalischen Konnektor und einen entsprechenden Anbieter von fiskalischen Belegen, die für die Fiskalregistrierung verwendet werden sollen.
+1. Die FIF führt den Fiskalbeleg-Anbieter aus, der einen Fiskalbeleg (z.B. ein XML-Dokument) erzeugt, der die Transaktion oder das Ereignis darstellt.
+1. Die FIF gibt den erzeugten fiskalischen Beleg an die Kasse zurück.
+1. Das POS fordert das FIF auf, den fiskalischen Beleg an das Fiskalgerät oder den Fiskaldienst zu senden.
+1. Die FIF führt den fiskalischen Konnektor aus, der den fiskalischen Beleg verarbeitet und ihn an das fiskalische Gerät oder den fiskalischen Dienst sendet.
+1. Das FIF gibt die Fiskalantwort (d.h. die Antwort des Fiskalgeräts oder -dienstes) an die Kasse zurück.
+1. Die Kasse analysiert die Fiskalantwort, um festzustellen, ob die Fiskalregistrierung erfolgreich war. Je nach Bedarf fordert die Kasse den FIF auf, aufgetretene Fehler zu bearbeiten. 
+1. Die Kasse fordert die FIF auf, die Fiskalantwort zu verarbeiten und zu speichern.
+1. Der Anbieter des Fiskalbelegs verarbeitet die Fiskalantwort. Als Teil dieser Verarbeitung parst der Anbieter des fiskalischen Belegs die Antwort und extrahiert daraus erweiterte Daten.
+1. Der FIF speichert die Antwort und die erweiterten Daten in der Channel-Datenbank.
+1. Bei Bedarf druckt die Kasse einen Bon über einen regulären Bondrucker, der an die Hardware-Station angeschlossen ist. Der Beleg kann die erforderlichen Daten aus der Fiskalantwort enthalten.
+ 
+Die folgenden Beispiele zeigen die Flows zur Ausführung der steuerlichen Registrierung für typische steuerliche Geräte oder Dienstleistungen.
+ 
+### <a name="fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station"></a>Die steuerliche Registrierung erfolgt über ein Gerät, das mit der Hardwarestation verbunden ist.
 
-![Lösungsschema.](media/emea-fiscal-integration-solution.png "Lösungsschema")
+Diese Konfiguration wird verwendet, wenn ein physisches Fiskalgerät, wie z.B. ein Fiskaldrucker, mit der Hardwarestation verbunden ist. Es ist auch anwendbar, wenn die Kommunikation mit einem Fiskalgerät oder -dienst über eine Software erfolgt, die auf der Hardware-Station installiert ist. In diesem Fall befindet sich der Anbieter von fiskalischen Belegen auf der CRT und der fiskalische Konnektor befindet sich auf der Station Hardware.
+
+![Fiskalische Registrierung über ein an die Hardware-Station angeschlossenes Gerät.](media/FIF-CRT-HWS.png)
+
+### <a name="fiscal-registration-is-done-via-an-external-service"></a>Die steuerliche Registrierung erfolgt über einen externen Dienst
+
+Diese Konfiguration wird verwendet, wenn die fiskalische Registrierung über einen externen Dienst erfolgt, z.B. einen Webservice, der von der Steuerbehörde betrieben wird. In diesem Fall befinden sich sowohl der Anbieter des fiskalischen Belegs als auch der fiskalische Konnektor auf der CRT.
+
+![Die steuerliche Registrierung erfolgt über einen externen Dienst.](media/FIF-CRT-CRT.png)
+ 
+### <a name="fiscal-registration-is-done-internally-in-the-crt"></a>Die steuerliche Registrierung erfolgt intern in der CRT.
+
+Diese Konfiguration wird verwendet, wenn kein externes Fiskalgerät oder ein externer Dienst für die steuerliche Registrierung erforderlich ist. Es wird z.B. verwendet, wenn die steuerliche Registrierung durch digitales Signieren von Verkaufstransaktionen erfolgt. In diesem Fall befinden sich sowohl der Anbieter des fiskalischen Belegs als auch der fiskalische Konnektor auf der CRT.
+
+![Die steuerliche Registrierung wird intern in der CRT durchgeführt.](media/FIF-CRT-CRT-SGN.png)
+
+### <a name="fiscal-registration-is-done-via-a-device-or-service-in-the-local-network"></a>Die steuerliche Registrierung erfolgt über ein Gerät oder einen Dienst im lokalen Netzwerk
+
+Diese Konfiguration wird verwendet, wenn ein physisches Fiskalgerät oder ein Fiskalservice im lokalen Netzwerk des Stores vorhanden ist und eine HTTPS-Anwendungsprogrammierschnittstelle (API) bietet. In diesem Fall befindet sich der Anbieter der fiskalischen Belege auf der CRT, und der fiskalische Konnektor befindet sich auf dem POS.
+
+![Die steuerliche Registrierung erfolgt über ein Gerät oder einen Dienst im lokalen Netzwerk.](media/FIF-CRT-POS.png)
 
 ## <a name="error-handling"></a>Fehlerbehandlung
 
@@ -73,19 +97,24 @@ Das Steuerintegrationsframework bietet folgende Optionen, um Fehler bei der Steu
 - **Abbrechen** – Mit dieser Option können Operatoren die Steuerregistrierung der aktuellen Transaktion oder des aktuellen Ereignisses verschieben, auch bei einem Fehler. Nachdem die Registrierung verschoben ist, kann der Operator am POS weiterarbeiten und jeden beliebigen Arbeitsgang abschließen, für den die Steuerregistrierung nicht erforderlich ist. Wenn ein Ereignis, das die Steuerregistrierung erfordert, am POS auftritt (beispielsweise wird eine neue Transaktion geöffnet), wird das Fehlerbehandlungsdialogfeld automatisch angezeigt, um den Operator zu benachrichtigen, dass die vorherige Transaktion nicht ordnungsgemäß erfasst wurde und um die Fehlerbehandlungsoptionen bereitzustellen.
 - **Überspringen** – Operatoren können diese Option verwenden, wenn die Steuerregistrierung unter bestimmten Bedingungen ausgelassen werden kann und regelmäßige Vorgänge am POS fortgesetzt werden können. Beispielsweise kann diese Option verwendet werden, wenn eine Verkaufsbuchung, bei der ein Fehler bei der Steuerregistrierung aufgetreten ist, in einer Papiererfassung erfasst werden kann.
 - **Als registriert markieren** – Operatoren können diese Option verwenden, wenn die Transaktion tatsächlich auf dem steuerbezogenen Gerät registriert wurde (z. B. wurde ein Steuerbeleg ausgedruckt), jedoch ein Fehler aufgetreten ist, als die Steuerantwort in der Kanaldatenbank gespeichert wurde.
+- **Aufschieben** - Operatoren können diese Option verwenden, wenn die Transaktion nicht registriert wurde, weil der Registrierungsdienst nicht verfügbar war. 
 
 > [!NOTE]
-> Die Optionen **Überspringen** und **Als registriert markieren** müssen im Steuerregistrierungsprozess aktiviert werden, bevor sie verwendet werden. Darüber hinaus müssen Operatoren entsprechende Berechtigungen gewährt werden.
+> Die Optionen **Überspringen**, **Als registriert markieren** und **Verschieben** müssen bei der Fiskalregistrierung aktiviert werden, bevor sie verwendet werden können. Darüber hinaus müssen Operatoren entsprechende Berechtigungen gewährt werden.
 
-Mit den Optionen **Überspringen** und **Als registriert markieren** können Infocodes bestimmte Informationen zum Fehler erfassen, z. B. den Grund für den Fehler oder eine Begründung für das Überspringen der Steuerregistrierung oder das Markieren der Transaktion als registriert. Weitere Informationen zum Einrichten von Fehlerbehandlungsparametern finden Sie unter [Festlegen von Fehlerbehandlungseinstellungen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+Die Optionen **Überspringen**, **Als registriert markieren** und **Verschieben** ermöglichen es, mit Hilfe von Infocodes bestimmte Informationen über einen Fehler zu erfassen, z.B. den Grund für den Fehler oder eine Begründung für das Überspringen der steuerlichen Registrierung oder das Markieren der Transaktion als registriert. Weitere Informationen zum Einrichten von Fehlerbehandlungsparametern finden Sie unter [Festlegen von Fehlerbehandlungseinstellungen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 ### <a name="optional-fiscal-registration"></a>Optionale Steuerregistrierung
 
 Steuerliche Erfassung ist möglicherweise erforderlich für einige Vorgänge aber für andere optional. Beispielsweise kann die Steuererfassung von regulärenr Verkäufen und Rücklieferungen zwingend sein, aber die steuerliche Erfassung, die sich auf Debitoreneinzahlungen bezieht ist optional. In diesem Fall sollte die fehlende steuerliche Erfassung eines Verkaufs andere Aufträge sperren, wenn aber die steuerliche Erfassung einer Debitoreneinzahlung nicht abgeschlosse ist, sollten andere Aufträge nicht gesperrt werden. Um die erforderlichen und optionalen Arbeitsgänge zu unterscheiden, sollten Sie sie durch verschiedene Dokumentanbieter abwickeln und separate Schritte für den steuerlichen Erfassungsprozesses für diese Anbieter einrichten. Der Parameter muss **Bei Fehler fortsetzen** für einen Schritt aktiviert werden, der der optionalen steuerlichen Erfassung zugeordnet ist. Weitere Informationen zum Einrichten von Fehlerbehandlungsparametern finden Sie unter [Festlegen von Fehlerbehandlungseinstellungen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
-### <a name="manually-running-fiscal-registration"></a>Steuerliche Erfassung manuell ausführen
+### <a name="manually-rerun-fiscal-registration"></a>Fiskalische Registrierung manuell wiederholen
 
 Wenn die Buchung einer Steuererfassung oder einess Ereignisses nach einem Fehler (beispielsweise wenn der Operator **Abbrechen** im Fehlerbehandlungsdialogfeld gewählt hat) verschoben wurde, können Sie die steuerliche Erfassung manuell überprüfen, indem Sie einen entsprechenden Arbeitsgang aufrufen. Weitere Details finden Sie unter [Manuelle Ausführung der verschobenen steuerlichen Erfassung aktivieren](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+
+### <a name="postpone-option"></a>Option aufschieben
+
+Mit der Option **Aufschieben** können Sie den fiskalischen Registrierungsprozess fortsetzen, wenn der aktuelle Schritt fehlschlägt. Sie kann verwendet werden, wenn es eine Option zur Sicherung der steuerlichen Registrierung gibt.
 
 ### <a name="fiscal-registration-health-check"></a>Steuerliche Erfassungsintegritätsprüfung
 
@@ -103,7 +132,7 @@ Wenn die Integritätsprüfung fehlschlägt, wird im POS das Integritätsprüfung
 - **Abbrechen** – Wenn der Mitarbeiter diese Schaltfläche auswählt, bricht der POS die letzte Aktion ab (beispielsweise wird ein Artikel der neuen Transaktlion nicht hinzugefügt).
 
 > [!NOTE]
-> Die Integritätsprüfung wird nur ausgeführt, wenn der aktuelle Arbeitsgang eine Steuererfassung erfordert und wenn der Parameter **Bei Fehler fortsetzen** für den aktuellen Schritt des steuerlichen Anmeldeprozesses deaktiviert wird. Weitere Informationen finden Sie unter [Fehlerbehandlungseinstellungen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+> Die Gesundheitsprüfung wird nur ausgeführt, wenn der aktuelle Vorgang eine Fiskalregistrierung erfordert und wenn der Parameter **Fortsetzen bei Fehler** für den aktuellen Schritt des Fiskalregistrierungsprozesses deaktiviert ist. Weitere Informationen finden Sie unter [Fehlerbehandlungseinstellungen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 ## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Speichern der Steuerantwort in der Steuertransaktion
 
@@ -114,8 +143,8 @@ Steuerbezogene Buchungen werden zusammen mit den Transaktionen über den *P-Job*
 Eine Steuertransaktion speichert die folgenden Details:
 
 - Steuerregistrierungsprozess-Details (Prozess, Konnektorgruppe, Konnektor usw.). Sie speichert außerdem die Seriennummer des steuerbezogenen Geräts im Feld **Registernummer**, wenn diese Informationen in der Steuerantwort enthalten sind.
-- Der Status der Steuerregistrierung: **Abgeschlossen** für die erfolgreiche Registrierung, **Übersprungen**, wenn der Operator die Option **Überspringen** für eine fehlerhafte Registrierung ausgewählt hat, oder **Als registriert markiert**, wenn der Operator die Option **Als registriert markieren** ausgewählt hat.
-- Infocodetransaktionen im Zusammenhang mit einer ausgewählten Steuertransaktion. Um die Infocodetransaktionen anzuzeigen, wählen Sie im Inforegister **Steuertransaktionen** eine Steuertransaktionen aus, die den Status **Übersprungen** oder **Als registriert markiert** aufweist, und wählen Sie dann **Infocodetransaktionen** aus.
+- Der Status der steuerlichen Registrierung: **Erledigt** für eine erfolgreiche Registrierung, **Übersprungen**, wenn der Bediener die Option **Überspringen** für eine fehlgeschlagene Registrierung gewählt hat, **Als registriert markiert**, wenn der Bediener die Option **Als registriert markieren** gewählt hat, oder **Aufgeschoben**, wenn der Bediener die Option **Aufgeschoben** gewählt hat.
+- Infocodetransaktionen im Zusammenhang mit einer ausgewählten Steuertransaktion. Um die Infocode-Transaktionen anzuzeigen, wählen Sie auf der Registerkarte **Fiskalische Transaktionen** eine fiskalische Transaktion mit dem Status **Übersprungen**, **Als registriert markiert** oder **Aufgeschoben** aus und wählen Sie dann **Infocode-Transaktionen**.
 
 Indem Sie **Erweiterte Daten** wählen, können Sie auch einige Eigenschaften der fiskalischen Transaktion anzeigen. Die Liste der Eigenschaften, die angezeigt werden können, ist spezifisch für die Fiskalregistrierungsfunktion, die die fiskalische Transaktion erzeugt hat. Sie können z. B. die digitale Signatur, die fortlaufende Nummer, den Thumbprint des Zertifikats, die Identifizierung des Hash-Algorithmus und andere Eigenschaften der fiskalischen Transaktion für die digitale Signierfunktion für Frankreich anzeigen.
 

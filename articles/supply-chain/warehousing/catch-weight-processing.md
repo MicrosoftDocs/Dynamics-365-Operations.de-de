@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 8e56688aac445b84d5a9c0df289d48ffefd5767f673f2329f69582e820c27820
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 830e05db47e2e2d3bb5970869bc395cfa73ad603
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738148"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087369"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
 
@@ -138,7 +138,6 @@ Nicht alle Workflows unterstützen die Artikelgewichtsproduktverarbeitung mit La
 - Artikelgewichtsprodukte, die für Varianten aktiviert sind, können nicht zusammen mit der Funktion für das Konvertieren von Varianten-Maßeinheiten verwendet werden.
 - Artikelgewichtsprodukte können nicht als Commerce-„Produktset“ markiert werden.
 - Artikelgewichtsprodukte können nur mit einer Einheitsnummernkreisgruppe verwendet werden, die über Artikelgewichts-Handhabungseinheiten verfügt, und bei der die Artikelgewichtseinheit den niedrigsten Nummernkreis aufweist.
-- Für Artikelgewichtsprodukte kann die Bestandseinheit nur dann in die Artikelgewichtseinheit umgerechnet werden, wenn die Umrechnung eine nominelle Menge ergibt, die mehr als 1 beträgt.
 - Die Einrichtung von Strichcodes für Artikelgewichtsprodukte unterstützt keine Einrichtung für variables Gewicht.
 
 ### <a name="order-processing"></a>Auftragsverarbeitung

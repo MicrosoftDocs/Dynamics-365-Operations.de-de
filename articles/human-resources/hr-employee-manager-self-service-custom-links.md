@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1aac3c50cbe40d65abc9bedcdd2a64a6e5a1c1ad
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: 1cf4ed8d2373a71594b9b03306c582ed998b6e39
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431183"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071453"
 ---
 # <a name="create-custom-links-in-manager-self-service"></a>Benutzerdefinierte Links in Manager-Self-Service erstellen
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -36,11 +39,11 @@ Um diese Funktion zu verwenden, aktivieren Sie **Benutzerdefinierte Links in Man
 
 1. Wählen Sie in den **Human Resources Parameter** **Manager Self-Service** aus.
 
-2. Unter **Richten Sie Links für Manager ein** können Sie einen Link hinzufügen, bearbeiten oder entfernen. Sie können die Links auch so gruppieren, dass sie in einer Gruppe im Manager-Self-Service angezeigt werden.
+2. Unter **Richten Sie Links für Manager ein** können Sie einen Link hinzufügen, bearbeiten oder entfernen. Sie können die Links auch gruppieren, damit sie im **Manager-Self-Service** in einer Gruppe angezeigt werden.
 
    ![Benutzerdefinierte Links in Manager-Self-Service einrichten.](./media/hr-employee-manager-self-service-custom-links-setup.png)
 
-3. Um die Links zu sehen, gehen Sie zur Registerkarte **Mein Team** im Mitarbeiter-Self-Service.
+3. Um die Links zu sehen, gehen Sie auf die Registerkarte **Mein Team** in **Mitarbeiter-Self-Service**.
 
    ![Benutzerdefinierte Links in Manager-Self-Service anzeigen.](./media/hr-employee-manager-self-service-custom-links-view.png)
 

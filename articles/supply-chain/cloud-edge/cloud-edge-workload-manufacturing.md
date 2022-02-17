@@ -16,20 +16,23 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 77e0a0e0eb47c331b2b219dc523ecd2c706a4638
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 633740ee1e26d2e4ed2ea7031ef298fb11c2ab58
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345298"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068843"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Workloads in der Fertigungsausführung für Cloud- und Edge-Skalierungseinheiten
 
 [!include [banner](../includes/banner.md)]
 
-> [!WARNING]
-> Der Workload für die Fertigungsausführung ist zu diesem Zeitpunkt in der Vorschau verfügbar.
+> [!IMPORTANT]
+> Der Manufacturing Execution Workload ist derzeit nur in der Vorschau verfügbar.
+>
 > Einige Geschäftsfunktionen werden in der öffentlichen Vorschau nicht vollständig unterstützt, wenn Arbeitsauslastungen mit Scale-Units verwendet werden.
+>
+> Sie können den Preview Manufacturing Execution Workload nicht auf einer Scale-Unit ausführen, auf der auch der Warehouse Execution Workload installiert ist.
 
 Bei der Ausführung der Fertigung bieten Skalierungseinheiten die folgenden Funktionen:
 
@@ -128,6 +131,22 @@ Im aktuellen Release werden Vorgänge zum Fertig melden und einlagern (für Fert
 ### Customize report as finished and putaway functionality
 
  -->
+
+## <a name="enable-and-use-the-start-operation-on-a-scale-unit"></a>Aktivieren und verwenden Sie den Vorgang „Start“ für eine Scale-Unit.
+
+In der aktuellen Version wird der Startvorgang für Produktions- und Batch-Aufträge vom [Warehouse Execution Workload](cloud-edge-workload-warehousing.md) unterstützt (nicht vom Manufacturing Execution Workload). Um diese Funktionalität zu nutzen, wenn Sie mit einer Scale-Unit verbunden sind, müssen Sie daher diese Aufgaben erledigen:
+
+- Installieren Sie sowohl den Workload für die Lagerausführungs als auch für die Fertigungsausführung auf Ihrer Skalierungseinheit.
+- Aktivieren Sie die Funktion *Produktionsauftrag auf dem Workload der Lagerverwaltung für die Scale-Unit-Manager der Cloud und des Edge* in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Verwenden Sie die Warehouse Management Mobile-App, um die Produktion oder den Batch-Auftrag zu starten.
+
+## <a name="enable-and-use-material-consumption-on-a-scale-unit"></a>Materialverbrauch für eine Scale-Unit aktivieren und verwenden
+
+In der aktuellen Version wird der Flow in der Warehouse Management Mobile-App für die Registrierung des Materialverbrauchs vom [Workload Lagerausführung](cloud-edge-workload-warehousing.md) (nicht vom Workload Fertigungsausführung) unterstützt. Um diese Funktionalität zu nutzen, wenn Sie mit einer Scale-Unit verbunden sind, müssen Sie daher diese Aufgaben erledigen:
+
+- Installieren Sie sowohl den Workload für die Lagerausführungs als auch für die Fertigungsausführung auf Ihrer Skalierungseinheit.
+- Aktivieren Sie die Funktion *Materialverbrauch in der Mobile-App für eine Scale-Unit* in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Verwenden Sie die Warehouse Management Mobile-App, um den Materialverbrauch zu registrieren.
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

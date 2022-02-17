@@ -2,7 +2,7 @@
 title: Einen Onlinechannel einrichten
 description: In diesem Thema wird beschrieben, wie Sie einen neuen Onlinechannel in Microsoft Dynamics 365 Commerce erstellen.
 author: samjarawan
-ms.date: 07/02/2020
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,21 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 11796d27a6071b180ad58c46ba2a521ecc238c6091517dbdc3a4f153b3d81749
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f32872fcc27e2e74300c4f18dfa08d666e4ad8a8
+ms.sourcegitcommit: fefe93f3f44d8aa0b7e6d54cc4a3e5eca6e64feb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714710"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092111"
 ---
 # <a name="set-up-an-online-channel"></a>Einen Onlinechannel einrichten
-
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie einen neuen Onlinechannel in Microsoft Dynamics 365 Commerce erstellen.
-
-## <a name="overview"></a>Übersicht
 
 Dynamics 365 Commerce unterstützt mehrere Retail Channels. Diese Vertriebskanäle umfassen Onlineshops, Callcenter und Einzelhandelsgeschäfte (auch physische Läden genannt). Onlineshops geben Kunden die Gelegenheit, Produkte über die Onlinepräsenz des Einzelhändlers sowie aus dessen Einzelhandelsgeschäften zu erwerben.
 
@@ -61,9 +58,13 @@ Das folgende Bild zeigt ein Beispiel für einen Onlinechannel.
 
 ![Beispiel-Onlinechannel.](media/channel-setup-online-2.png)
 
+## <a name="assign-the-channel-to-a-commerce-scale-unit"></a>Weisen Sie den Kanal einer Commerce Scale Unit zu
+
+Ihr neuer Channel muss einer Commerce Scale Unit zugewiesen werden. Anweisungen finden Sie unter [Kanäle für die Verwendung von Commerce Scale Unit konfigurieren](../fin-ops-core/dev-itpro/deployment/initialize-retail-channels.md#configure-channels-to-use-commerce-scale-unit).
+
 ## <a name="set-up-languages"></a>Sprachen einrichten
 
-Wenn Ihre E-Commerce-Site mehrere Sprachen unterstützt, erweitern Sie den Abschnitt **Sprachen** und fügen Sie nach Bedarf weitere Sprachen hinzu.
+Wenn Ihre E-Commerce Website mehrere Sprachen unterstützt, erweitern Sie den Abschnitt **Sprachen** und fügen Sie bei Bedarf weitere Sprachen hinzu.
 
 ## <a name="set-up-payment-account"></a>Zahlungskonto einrichten
 

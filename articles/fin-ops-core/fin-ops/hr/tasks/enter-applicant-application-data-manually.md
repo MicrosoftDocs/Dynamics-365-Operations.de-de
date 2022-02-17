@@ -8,21 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmApplicant, LogisticsContactInfoGrid, HRMApplication,  DirPartyTable
 audience: Application User
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5305ded440dce0cf057e5fbe4df72635ce0e7b6b
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 68f236ad000adea91e746309564baf84a270a0e5
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964705"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075449"
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>Bewerber- und Anwendungsdaten manuell eingeben
 
-[!include [banner](../../includes/banner.md)]
+> [!IMPORTANT]
+> Die in diesem Thema beschriebene Funktionalität ist derzeit für Debitor-Kunden aus dem Bereich Human Resources auf der Finance-Infrastruktur verfügbar.  
+
 
 Im folgenden Verfahren, wird dargestellt, wie Sie Informationen über Bewerber und deren Bewerbung manuell verwalten. Sie können die persönlichen Daten, Befragungsdatumsangaben und -zeiten, Referenzen, Kompetenzen und Anpassungsersuchen für Bewerber eingeben und verwalten. Sie können außerdem den Status der Bewerbungen der Bewerber aktualisieren und auch Briefe oder E-Mail-Nachrichten für die Kommunikation mit Bewerbern erstellen. Wenn Sie einen Bewerberdatensatz erstellen, wird ein Personendatensatz für diesen Bewerber im globalen Adressbuch erstellt. Das Demodatenunternehmen **USMF** wurde verwendet, um diese Prozedur zu erstellen.
 

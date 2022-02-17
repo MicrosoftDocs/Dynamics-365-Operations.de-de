@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 52740246f745272f238ec3dcf8e53f7310e4b24271da4a5d6388a1b9c4706521
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7eb5128f3a337bd728cfe8e6d8d3deb0b6b5ef88
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774848"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074966"
 ---
 # <a name="safety-margins"></a>Sicherheitszuschläge
 
@@ -61,9 +61,6 @@ Beachten Sie, dass kein Sicherheitszuschlag für den Warenzugang angewendet wird
 
 ### <a name="reorder-margin"></a>Sicherheitszuschlag für Wiederbestellung
 
-> [!NOTE]
-> **Bald verfügbar:** Diese Funktion wird für die Planungsoptimierung noch nicht unterstützt. Bis sie unterstützt wird, werden alle eingegebenen Werte für **Zur Artikelvorlaufzeit hinzugefügter Sicherheitszuschlag für Wiederbestellung** als *0* (Null) behandelt.
-
 Die folgende Abbildung zeigt den Sicherheitszuschlag für den Wiederbestellung.
 
 ![Sicherheitszuschlag für Wiederbestellung.](media/safety-margins-3.png)
@@ -71,9 +68,6 @@ Die folgende Abbildung zeigt den Sicherheitszuschlag für den Wiederbestellung.
 Der Sicherheitszuschlag für die Wiederbestellung wird bei Produktplanung für alle Bestellvorschläge vor der Vorlaufzeit des Artikels hinzugefügt. Dadurch wird zusätzliche Zeit für die Bestellung eines Lieferauftrags sichergestellt. Dieser Zuschlag wird normalerweise als Puffer verwendet, um Zeit für Genehmigungsprozesse oder andere interne Prozesse zu gewährleisten, die bei der Erstellung von Lieferaufträgen erforderlich sind. Der Sicherheitszuschlag für den Wiederbestellung wird zwischen das *Auftragsdatum* und *Anfangsdatum* des Angebots gesetzt.
 
 ### <a name="issue-margin"></a>Sicherheitszuschlag für Warenabgang
-
-> [!NOTE]
-> **Bald verfügbar:** Diese Funktion wird für die Planungsoptimierung noch nicht unterstützt. Bis zur Unterstützung werden alle eingegebenen Werte für **Vom Anforderungsdatum abgezogener Sicherheitszuschlag für Warenabgang** als *0* (Null) behandelt.
 
 Die folgende Abbildung zeigt den Sicherheitszuschlag für den Warenabgang.
 

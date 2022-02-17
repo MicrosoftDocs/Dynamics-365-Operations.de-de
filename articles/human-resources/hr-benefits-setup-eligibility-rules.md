@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 034957628580c468ed00b14afeb7e49af15c45cc
-ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
+ms.openlocfilehash: e87bef8994fe1eac0089764c8d4f9b18289c13ea
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7423470"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069629"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Berechtigungsregeln und -optionen konfigurieren 
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -229,7 +232,7 @@ Sie können Flexguthabenprogramme verwenden, um Mitarbeiter für Vorteile gemä�
 
 ## <a name="configure-programs"></a>Programme konfigurieren
 
-Bei Programmen handelt es sich um eine Reihe von Vorteilsplänen, für die gemeinsame Berechtigungsregeln gelten. Sie können Berechtigungsregeln für das gesamte Programm anstatt für jeden einzelnen Plan definieren. Beispiel: ein Programm für Vollzeitmitarbeiter von Contoso Kanada oder ein Programm auf Führungsebene von Contoso Europa. 
+Bei Programmen handelt es sich um eine Reihe von Vorteilsplänen, für die gemeinsame Berechtigungsregeln gelten. Sie können Berechtigungsregeln für das gesamte Programm anstatt für jeden einzelnen Plan definieren. Beispiel: ein FTE-Programm von Contoso Canada oder ein Führungskräfteprogramm von Contoso Europe. 
 
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Einstellung** die Option **Berechtigungsregeln und -optionen**.
 
