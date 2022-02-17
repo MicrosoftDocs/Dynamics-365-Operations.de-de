@@ -11,17 +11,17 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: fcbace2bd28a843fca8aa2f4f998c08f238c29d6
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 8ba478fef424a6c4688191ed4e5375bbce52de0c
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920297"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061000"
 ---
 # <a name="configure-inventory-visibility"></a>Bestandstransparenz konfigurieren
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
+
 
 In diesem Thema wird beschrieben, wie Sie die Bestandsanzeige mit der Bestandsanzeige-App in Power Apps konfigurieren.
 
@@ -58,7 +58,7 @@ Nachdem die Konfiguration abgeschlossen ist, wählen Sie in der App unbedingt **
 
 ## <a name="data-source-configuration"></a>Konfiguration der Datenquelle
 
-Jede Datenquelle steht für ein System, aus dem Ihre Daten stammen. Beispielnamen für Datenquellen sind `fno` (steht für „Dynamics 365 Finance and Operations-Apps“) und `pos` (steht für „Point of Sale“). Standardmäßig ist das Supply Chain Management als Standard-Datenquelle (`fno`) in Inventory Visibility festgelegt.
+Jede Datenquelle steht für ein System, aus dem Ihre Daten stammen. Beispiele für Datenquellennamen sind `fno` (was für „Dynamics 365 Finance und Vorgänge Apps“ steht) und `pos` (was für „Point of Sale“ steht). Standardmäßig ist das Supply Chain Management als Standard-Datenquelle (`fno`) in Inventory Visibility festgelegt.
 
 > [!NOTE]
 > Die Datenquelle `fno` ist für das Supply Chain Management reserviert. Wenn Ihr Inventory Visibility-Add-In in eine Supply Chain Management Umgebung integriert ist, empfehlen wir Ihnen, keine Konfigurationen zu löschen, die sich auf `fno` in der Datenquelle beziehen.

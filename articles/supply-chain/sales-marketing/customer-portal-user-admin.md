@@ -12,17 +12,17 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 20751a25a6dedb04806068780bc2f4e381bf79bc
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
+ms.openlocfilehash: 4615182e6c3341a376e8e55a1417480e3e3f5ea7
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937452"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062489"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Erstellen und Verwalten von Kundenportalbenutzern
 
 [!include [banner](../includes/banner.md)]
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 In der Out-of-Box-Implementierung können sich Benutzer nicht selbst für Websites registrieren, die mithilfe des Kundenportals erstellt wurden. Um sich anzumelden und eine Website zu nutzen, müssen Benutzer vom Administrator eingeladen werden. Microsoft hat absichtlich die Möglichkeit der Benutzer blockiert, sich selbst zu registrieren.
 
@@ -33,7 +33,7 @@ Wenn sich Benutzer selbst registrieren, werden automatisch Kontaktdatensätze f�
 ## <a name="video"></a>-Video
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ADkI]
 
-Das Video [Kunden zur Nutzung Ihres Kundenportals auffordern](https://youtu.be/drGUYHX9QIQ) (oben) gehört zur [Finance and Operations-Playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) auf YouTube.
+Das Video [Kunden einladen, sich zu registrieren und Ihr Kundenportal zu nutzen](https://youtu.be/drGUYHX9QIQ) (siehe oben) ist in der Wiedergabeliste [Finance und Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) enthalten, die auf YouTube verfügbar ist.
 
 ## <a name="prerequisite-setup"></a>Voraussetzungen für die Einrichtung
 

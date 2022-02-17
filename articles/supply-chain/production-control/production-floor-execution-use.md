@@ -2,7 +2,7 @@
 title: Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte
 description: In diesem Thema wird beschrieben, wie Sie die Produktionsausführungsoberfläche aus Sicht einer Arbeitskraft verwenden.
 author: johanhoffmann
-ms.date: 10/05/2020
+ms.date: 01/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e872600222ad23bf3de62c0f2d6cda74942d5b55
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.dyn365.ops.version: 10.0.24
+ms.openlocfilehash: 086d05b4080015f6185a083ca20963539f76619f
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920647"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075018"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte
 
@@ -138,6 +138,65 @@ In diesem Fall kann die Arbeitskraft das Kuppelprodukt und die zu meldende Menge
 Wenn ein Mitarbeiter einen Einzelvorgang abschließt oder teilweise abschließt, kann er Schrott melden, indem er den Einzelvorgang auf der Registerkarte **Aktive Einzelvorgänge** auswählt und dann **Schrott melden** auswählt. Im Dialogfeld **Schrott melden** gibt die Arbeitskraft dann die Schrottmengen über die Zifferntastatur ein. Die Arbeitskraft wählt auch einen Grund aus (*Keiner*, *Maschine*, *Operator*, oder *Material*).
 
 ![Dialogfeld „Ausschuss melden“.](media/pfei-report-scrap-dialog.png "Dialogfeld Schrott melden")
+
+## <a name="adjust-material-consumption-and-make-material-reservations"></a>Materialverbrauch anpassen und Materialreservierungen vornehmen
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Arbeitskräfte können den Materialverbrauch für jeden Produktionsauftrag anpassen. Diese Funktion wird in Szenarien verwendet, in denen die tatsächliche Menge an Materialien, die durch einen Produktionsauftrag verbraucht wurde, mehr oder weniger als die geplante Menge war. Daher muss sie angepasst werden, um die Bestände aktuell zu halten.
+
+Arbeitskräfte können auch Reservierungen für die Batch- und Seriennummern von Materialien vornehmen. Diese Funktion wird in Szenarien verwendet, in denen eine Arbeitskraft manuell angeben muss, welche Batches oder Seriennummern verbraucht wurden, um die Anforderungen an die Rückverfolgbarkeit von Materialien zu erfüllen.
+
+Arbeitskräfte können die anzupassende Menge angeben, indem sie **Material anpassen** wählen. Diese Schaltfläche ist an den folgenden Stellen verfügbar:
+
+- In der Dialogbox **Ausschuss melden**
+- Im Dialogfeld **Fortschritt des Berichts**
+- In der Symbolleiste auf der rechten Seite
+
+### <a name="adjust-material-consumption-from-the-report-scrap-and-report-progress-dialog-boxes"></a>Passen Sie den Materialverbrauch über die Dialogfelder Bericht Ausschuss und Bericht Fortschritt an
+
+Nachdem eine Arbeitskraft die zu meldende Menge in das Dialogfeld **Fortschritt melden** oder **Ausschuss melden** eingegeben hat, wird die Schaltfläche **Material anpassen** verfügbar. Wenn der Benutzer diese Schaltfläche auswählt, erscheint das Dialogfeld **Material anpassen**. In diesem Dialogfeld werden die Artikel aufgelistet, die verbraucht werden sollen, wenn die Waren- oder Verschrottungsmenge für den Auftrag gemeldet wird.
+
+Die Liste im Dialogfenster zeigt die folgenden Informationen an:
+
+- **Produktnummer** - Der Produktstamm und die Produktvariante.
+- **Produktname** - Der Name des Produkts.
+- **Vorschlag** - Die geschätzte Materialmenge, die verbraucht wird, wenn für die angegebene Menge für den Auftrag Fortschritt oder Ausschuss gemeldet wird.
+- **Verbrauch** - Die tatsächliche Menge an Material, die bei der Meldung von Fortschritt oder Ausschuss für die angegebene Menge für den Auftrag verbraucht wird.
+- **Reserviert** - Die Menge des Materials, die im Bestand physisch reserviert wurde.
+- **Einheit** - Die Einheit der Stückliste (Stückliste).
+
+Auf der rechten Seite des Dialogfelds werden die folgenden Informationen angezeigt:
+
+- **Produktnummer** - Der Produktstamm und die Produktvariante.
+- **Geschätzt** - Die geschätzte zu verbrauchende Menge.
+- **Gestartet** - Die Menge, die mit dem Produktionsauftrag gestartet wurde.
+- **Restmenge** - Von der geschätzten Menge die Menge, die noch verbraucht werden muss.
+- **Abgegebene Menge** - Die Menge, die verbraucht wurde.
+
+Die folgenden Aktionen können durchgeführt werden:
+
+- Die Arbeitskraft kann die Menge angeben, die für ein Material angepasst werden soll, indem sie **Verbrauch anpassen** wählt. Nachdem die Menge bestätigt wurde, wird die Menge in der Spalte **Verbrauch** mit der angepassten Menge aktualisiert.
+- Wenn die Arbeitskraft **Material anpassen** auswählt, wird ein Produktions-Kommissionierlisten-Journal erstellt. Diese Erfassung enthält die gleichen Artikel und Mengen wie die Liste **Material anpassen**.
+- Wenn die Arbeitskraft eine Menge in der Dialogbox **Material anpassen** anpasst, wird das Feld **Vorschlag** in der entsprechenden Buchungsblattzeile mit derselben Menge aktualisiert. Wenn die Arbeitskraft im Dialogfeld **Material anpassen** **Abbrechen** auswählt, wird die Kommissionierliste gelöscht.
+- Wenn die Arbeitskraft **OK** wählt, wird die Kommissionierliste nicht gelöscht. Es wird gepostet, wenn der Auftrag im Dialogfeld **Ausschuss melden** oder **Fortschritt melden** gemeldet wird.
+- Wenn die Arbeitskraft **Abbrechen** in der Dialogbox **Fortschrittsbericht** oder **Ausschussbericht** wählt, wird die Kommissionierliste gelöscht.
+
+### <a name="adjust-material-from-the-toolbar-on-the-right"></a>Passen Sie das Material über die Symbolleiste auf der rechten Seite an
+
+Die Schaltfläche **Material anpassen** kann so konfiguriert werden, dass sie in der Symbolleiste auf der rechten Seite erscheint. (Weitere Informationen finden Sie unter [Design der Produktionsausführungsoberfläche](production-floor-execution-tabs.md).) Eine Arbeitskraft kann **Material anpassen** für einen laufenden Produktionsauftrag auswählen. In diesem Fall erscheint das Dialogfenster **Material anpassen**, in dem die Arbeitskraft die gewünschten Anpassungen vornehmen kann. Wenn das Dialogfenster geöffnet wird, wird für den Produktionsauftrag eine Kommissionierliste erstellt, die Zeilen für die angepassten Mengen enthält. Wählt die Arbeitskraft **Jetzt buchen**, wird die Anpassung bestätigt und die Kommissionierliste wird gebucht. Wenn die Arbeitskraft **Abbrechen** wählt, wird die Kommissionierliste gelöscht und keine Anpassung vorgenommen.
+
+### <a name="reserve-materials"></a>Materialien reservieren
+
+In der Dialogbox **Material anpassen** kann eine Arbeitskraft Materialreservierungen vornehmen und anpassen, indem sie **Material reservieren** wählt. Das angezeigte Dialogfenster **Reservematerial** zeigt den physisch verfügbaren Bestand für den Artikel für jede Lager- und Tracking-Dimension an.
+
+Wenn das Material für die erweiterten Lagerprozesse aktiviert ist, zeigt die Liste nur den physisch verfügbaren Bestand für den Produktionseingabeort des Materials an. Der Ort der Produktionseingabe wird auf der Ressource definiert, auf der der Produktionsauftrag geplant ist. Wenn die Artikelnummer über eine Batch- oder Seriennummer gesteuert wird, wird die vollständige Liste der physisch verfügbaren Batch- und Seriennummern angezeigt. Um eine zu reservierende Menge anzugeben, kann die Arbeitskraft **Material reservieren** wählen. Um eine bestehende Reservierung zu entfernen, kann die Arbeitskraft **Reservierung entfernen** wählen.
+
+Weitere Informationen darüber, wie Sie den Ort der Produktionseingabe festlegen, finden Sie in dem folgenden Blog-Beitrag: [Einrichten des Produktions-Eingabeortes](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
+
+> [!NOTE]
+> Reservierungen, die eine Arbeitskraft im Dialogfeld **Material reservieren** vornimmt, bleiben bestehen, wenn die Arbeitskraft im Dialogfeld **Fortschritt melden** oder **Ausschuss melden** die Option **Stornieren** wählt.
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Einen Einzelvorgang abschließen und einen neuen Einzelvorgang beginnen
 

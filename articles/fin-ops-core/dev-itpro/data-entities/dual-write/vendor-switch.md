@@ -1,6 +1,6 @@
 ---
 title: Wechsel zwischen Kreditorendesigns
-description: In diesem Thema wird der Wechsel der Integration von Kreditorendaten zwischen Finance and Operations Apps und Dataverse beschrieben.
+description: In diesem Thema wird beschrieben, wie Sie die Integration von Kreditor-Daten zwischen Apps für Finanzen und Betrieb und Dataverse umschalten.
 author: RamaKrishnamoorthy
 ms.date: 09/20/2019
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 90e29359aa2a367fe540411a8a808d86abb06dcc
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 80de21b5e46e4f274626fa311f16e81312a2f5ab
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781319"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062749"
 ---
 # <a name="switch-between-vendor-designs"></a>Wechsel zwischen Kreditorendesigns
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 
 

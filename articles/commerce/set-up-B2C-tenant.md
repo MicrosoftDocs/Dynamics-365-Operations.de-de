@@ -2,7 +2,7 @@
 title: Einen B2C Mandanten in Commerce einrichten
 description: In diesem Thema wird beschrieben, wie Sie Ihren Azure Active Directory (Azure AD) Business-to-Consumer-Mandanten (B2C) für die Authentifizierung von Benutzerseiten in Dynamics 365 Commerce einrichten.
 author: BrianShook
-ms.date: 01/05/2022
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8e0fa2c4f22a1854a449a14aac3552313e808cf3
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: dcd5c022c00070922e287a6b8750810ff76bc26f
+ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952443"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092458"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Einen B2C Mandanten in Commerce einrichten
 
@@ -109,7 +109,7 @@ Führen Sie folgende Schritte aus, um eine B2C-Anwendung zu erstellen.
 1. Geben Sie bei **URI umleiten** Ihre dedizierten Antwort-URLs als Typ **Web** ein. Unter [Antwort-URLs](#reply-urls) unten finden Sie Informationen zu Antwort-URLs und deren Formatierung. Eine Umleitungs-URI/Antwort-URL muss eingegeben werden, um Umleitungen von Azure AD B2C zurück zu Ihrer Site zu aktivieren, wenn sich ein Benutzer authentifiziert. Die Antwort-URL kann während des Registrierungsvorgangs oder später durch Auswahl des Links **Umleitungs-URI hinzufügen** im **Überblick**-Menü in der B2C-Anwendung im Abschnitt **Überblick** hinzugefügt werden.
 1. Wählen Sie unter **Berechtigungen** **Administratoreinwilligung zu OpenID- und Offline-Zugriffsberechtigungen erteilen**.
 1. Wählen Sie **Registrieren** aus.
-1. Wählen Sie die neu erstellte Anwendung aus und navigieren Sie zum Menü **API-Berechtigungen**. 
+1. Wählen Sie die neu erstellte Anwendung und navigieren Sie zum Menü **Authentifizierung**. 
 1. Wenn eine Antwort-URL eingegeben wurde, wählen Sie unter **Implizite Berechtigungen und Hybridflows** sowohl die Option **Zugriffstoken** als auch **ID-Token** aus, um sie für die Anwendung zu aktivieren, und wählen Sie dann **Speichern** aus. Wenn bei der Registrierung keine Antwort-URL eingegeben wurde, kann diese auch auf dieser Seite durch Auswahl von **Eine Plattform hinzufügen** hinzugefügt werden, indem Sie **Web** auswählen und dann den Umleitungs-URI der Anwendung eingeben. Der **Implizite Zuschüsse und hybride Ströme**-Abschnitt wird dann verfügbar sein, um die Optionen **Zugriffstoken** und **ID-Token** auszuwählen.
 1. Gehen Sie zum Menü **Überblick** des Azure-Portals und kopieren Sie die **Anwendungs-ID (Client-ID)**. Notieren Sie diese ID für spätere Einrichtungsschritte (später als **Client-GUID** bezeichnet).
 
@@ -309,19 +309,15 @@ Einmal eingerichtet für Ihr Azure AD ist Ihr B2C-Mandant abgeschlossen. Sie mü
 
 Führen Sie die folgenden Schritte aus, um die erforderlichen Anwendungsinformationen zu erfassen.
 
-1. Gehen Sie im Azure-Portal zu **Start \> Azure AD B2C – Anwendungen**.
-1. Wählen Sie Ihre Anwendung aus und wählen Sie dann im linken Navigationsbereich **Eigenschaften**, um die Anwendungsdetails zu erhalten.
-1. Von dem Feld **Anwendungs-ID** sammeln Sie die Anwendungs-ID der B2C-Anwendung, die in Ihrem B2C-Mandanten erstellt wurde. Dies wird später als **Client-GUID** im Site Builder eingegeben.
-1. Unter **Antwort-URL** sammeln Sie die Antwort-URL.
-1. Gehe Sie zu **Start \> Azure AD B2C – Benutzerströme (Richtlinien)** und sammeln Sie dann die Namen der einzelnen Benutzerflussrichtlinien.
+1. Gehen Sie im Azure-Portal zu **Home \> Azure AD B2C - App-Registrierungen**.
+1. Wählen Sie Ihre Anwendung aus und wählen Sie dann im linken Navigationsbereich **Übersicht**, um die Anwendungsdetails zu erhalten.
+1. Über den Verweis **Anwendungs-(Client-)ID** erfassen Sie die Anwendungs-ID der B2C-Anwendung, die in Ihrem B2C-Mandanten erstellt wurde. Dies wird später als **Client-GUID** im Site Builder eingegeben.
+1. Wählen Sie **Weiterleitungs-URIs** und sammeln Sie die für Ihre Site angezeigte Antwort-URL (die bei der Einrichtung eingegebene Antwort-URL).
+1. Gehen Sie zu **Home \> Azure AD B2C - User Flows**, und sammeln Sie die vollständigen Namen der einzelnen Richtlinien für User Flows.
 
-Das folgende Bild zeigt ein Beispiel für die **Azure AD B2C – Anwendungen** Seite.
+Die folgende Abbildung zeigt ein Beispiel für die **Azure AD B2C - App Registrierungen** Übersichtsseite.
 
-![Navigieren Sie in Ihrem Mandanten zur B2C-Anwendung.](./media/B2CImage_19.png)
-
-Das folgende Bild zeigt ein Beispiel für eine Anwendungsseite **Eigenschaften** in Azure AD B2C. 
-
-![Kopieren Sie die Anwendungs-ID aus den Eigenschaften der B2C-Anwendung.](./media/B2CImage_21.png)
+![Azure AD B2C - Übersichtsseite für App-Registrierungen mit hervorgehobener Anwendungs- (Client-) ID](./media/ClientGUID_Application_AzurePortal.png)
 
 Das folgende Bild zeigt ein Beispiel für Benutzerflussrichtlinien auf der Seite **Azure AD B2C – Benutzerströme (Richtlinien)**.
 
@@ -363,7 +359,7 @@ Um die B2C-Anwendung Ihrer Site und Ihrem Kanal zuzuweisen, folgen Sie diesen Sc
 1. Wählen Sie im linken Navigationsbereich **Site-Einstellungen** aus, um den Bereich zu erweitern.
 1. Unten **Seiteneinstellungen**, wählen Sie **Kanäle**.
 1. Im Hauptfenster unter **Kanäle** wählen Sie Ihren Kanal.
-1. Wählen Sie im Bereich Kanaleigenschaften rechts Ihren B2C-Anwendungsnamen aus dem Dropdown-Menü **Wählen Sie B2C-Anwendung**.
+1. Wählen Sie im Bereich Channel-Eigenschaften auf der rechten Seite den Namen Ihrer B2C-Anwendung aus dem Dropdown-Menü **B2C-Anwendung auswählen**.
 1. Wählen Sie **Schließen** und dann **Speichern und veröffentlichen**.
 
 ## <a name="additional-b2c-information"></a>Weitere B2C Informationen

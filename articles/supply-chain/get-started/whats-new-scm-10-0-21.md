@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3b5f0c6947944ec875c30fa912f830f245b5a48e
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: ec7fcb97bd46551846ccee13b369a1b02a589688
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777936"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075298"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.21. (Oktober 2021)
 
@@ -39,7 +39,6 @@ Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsve
 | Bestand&nbsp;und&nbsp;Logistik | [Regulierungen des verfügbaren Lagerbestands mit Codes buchen, die mit Gegenkonten verbunden sind](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/post-on-hand-adjustments-using-configurable-reason-codes-connected-offset-accounts) | [Ursachencodes für Lagerinventuren anzeigen](../warehousing/reason-codes-for-counting-journals.md) |
 | Bestand&nbsp;und&nbsp;Logistik | [Datenexportrichtlinie für referenziertes Verkaufsangebot](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy) | Wählen Sie, ob Änderungen an Daten, auf die Angebote verweisen, dazu führen, dass diese Angebote (oder Positionen) im nächsten inkrementellen Export berücksichtigt werden. Ihre inkrementellen Exporte werden schneller ausgeführt, wenn Sie solche Angebote oder Positionen nicht berücksichtigen.<br><br>Diese Funktion fügt eine Einstellung namens **Von Verkaufsangeboten referenzierte Daten während der Änderungsnachverfolgung überspringen** zur Seite **Debitorenparameter** hinzu. |
 | Bestand&nbsp;und&nbsp;Logistik | [Versiegelte Angebote](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sealed-bidding) | [Versiegeltes Angebot bei Angebotsanforderungen](../procurement/sealed-bidding.md) |
-| Bestand&nbsp;und&nbsp;Logistik | [Barcodes im Lagerort mit GS1-Formatstandards scannen](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-Barcodes und QR-Codes](../warehousing/gs1-barcodes.md) |
 | Bestand&nbsp;und&nbsp;Logistik | [Soft-Reservierung für das Inventory Visibility-Add-In](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/soft-reservation-inventory-visibility-add-in) | [Bestandstransparenzreservierungen](../inventory/inventory-visibility-reservations.md) |
 | Bestand&nbsp;und&nbsp;Logistik | [Abzugs- und Artikelgewichterweiterungen für das Rückvergütungsmanagement](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | [Verwalten von Abzügen mit der Abzugsworkbench](../rebate-management/deduction-workbench.md )<br><br>[Rückvergütungen verarbeiten, überprüfen und veröffentlichen](../rebate-management/process-review-post.md)<br><br>[Rückvergütungsverwaltungsgeschäfte](../rebate-management/rebate-management-deals.md) |
 | Bestand&nbsp;und&nbsp;Logistik | [Schrittanweisungen für die Lagerort-App](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | [Schritttitel und Anweisungen für die mobile Warehouse Management-App anpassen](../warehousing/mobile-app-titles-instructions.md) |
@@ -138,9 +137,9 @@ Wir haben die folgenden Hilfethemen kürzlich hinzugefügt oder erheblich aktual
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformupdate für Finance and Operations Apps
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformupdates für Apps für Finanzen und Betrieb
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.21 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattformupdates für Version 10.0.21 von Finance and Operations-Apps (Oktober 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.21 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattform-Updates für Version 10.0.21 der Apps für Finanzen und Betrieb (Oktober 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md).
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 

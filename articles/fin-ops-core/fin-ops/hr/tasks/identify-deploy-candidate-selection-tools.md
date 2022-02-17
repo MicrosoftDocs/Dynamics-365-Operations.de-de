@@ -13,16 +13,19 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 23ac3067c03bf2cf336848301e8c27b60da8dc8c
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 2a9753e220e62794b157340c9f8e6f8a053e9ba7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964830"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067982"
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Hilfsmittel zur Kandidatenauswahl ermitteln und bereitstellen
 
 [!include [banner](../../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 Einen qualifizierten Pool von Kandidaten zu finden, um freie Stellen zu füllen, kann schwierig sein, insbesondere wenn eine Position einzigartige Qualifikationen erfordert. Allerdings sind Kandidaten mit den von Ihnen benötigten Qualifikationen möglicherweise bereits in Ihrer Organisation beschäftigt. Sie können nach einer bestimmten Qualifikation unter vorhandenen Mitarbeitern oder neuen Bewerbern suchen. Dies ermöglicht es einem Personalbeschaffungsmitarbeiter, Bewerber schnell zu erfassen und zu rastern, die sich jetzt oder in der Vergangenheit für eine offene Stelle beworben haben, oder es können potenzielle Kandidaten aus ihrem vorhandenen von Mitarbeiter gesucht werden. Verwenden Sie diese Prozedur, um zu erfahren, wie die Qualifikationszuordnungsfunktionalität Sie dabei unterstützen kann, die richtige Person für eine offene Stelle zu finden. Das Demodatenunternehmen **USMF** wurde verwendet, um diese Prozedur zu erstellen.
 

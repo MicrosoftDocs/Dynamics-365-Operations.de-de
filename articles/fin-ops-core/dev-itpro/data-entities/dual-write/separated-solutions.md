@@ -10,30 +10,30 @@ ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: 3fe1b7707df72927fba78ee9659502cc62471799
-ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
+ms.openlocfilehash: e2f870368dc662032a3e7ca7ddca902feb23a713
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "7924869"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063261"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Getrenntes Dual-write Application Orchestration Paket
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Zuvor war das Dual-write Application Orchestration-Paket ein einzelnes Paket, das die folgenden Lösungen enthielt:
 
 - Dynamics 365 Notes
-- Dynamics 365 Finance and Operations Allgemeiner Anker
-- Dynamics 365 Finance and Operations Dual-write Entitätszuordnungen
+- Dynamics 365 Finance und Vorgänge Allgemeiner Anker
+- Dynamics 365 Finance und Vorgänge duales Schreiben Entity Maps
 - Dynamics 365 Asset-Management App
 - Dynamics 365 Asset-Management
 - HCM Common
 - Dynamics 365 Supply Chain Extended
 - Dynamics 365 Finance Extended
-- Dynamics 365 Finance and Operations Allgemein
+- Dynamics 365 Finance und Vorgänge allgemein
 - Dynamics 365 Company
 - Währungswechselsätze
 - Field Service Common
@@ -51,14 +51,14 @@ Mit dem Dual-write Application Core-Paket können Benutzer Dual-write ohne eine 
 | Eindeutiger Name                           | Anzeigename                               |
 |---------------------------------------|--------------------------------------------|
 | Dynamics365Company                    | Dynamics 365 Company                       |
-| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance and Operations Allgemein |
+| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance und Vorgänge allgemein |
 | CurrencyExchangeRates                 | Währungswechselsätze                    |
 | msdyn_DualWriteAppCoreMaps            | Dual-write Applications Core Zuordnung von Entitäten   |
 | msdyn_DualWriteAppCoreAnchor          | Dual-write Application Core Anker        |
 
 Die folgenden Zuordnungen sind in diesem Paket enthalten.
 
-| Finance and Operations Apps     | Customer Engagement-Apps                    |
+| Finance and Operations-Apps     | Customer Engagement-Apps                    |
 |---------------------------------|---------------------------------------------|
 | Organisationseinheit                  | msdyn_internalorganizations                 |
 | Organisationshierarchie          | msdyn_internalorganizationhierarchies       |
@@ -89,7 +89,7 @@ Das Dual-write Human Resources Paket enthält die Lösungen und Zuordnungen, die
 
 Die folgenden Zuordnungen sind in diesem Paket enthalten.
 
-| Finance and Operations Apps | Customer Engagement-Apps         |
+| Finance and Operations-Apps | Customer Engagement-Apps         |
 |-----------------------------|----------------------------------|
 | Nationalitäten              | cdm_ethnicorigins                |
 | Vergütung (Stellenfunktion)   | cdm_jobfunctions                 |
@@ -119,7 +119,7 @@ Das Dual-write Supply Chain Paket enthält die Lösungen und Zuordnungen, die f�
 
 Die folgenden Zuordnungen sind in diesem Paket enthalten.
 
-| Finance and Operations Apps                 | Customer Engagement-Apps                      |
+| Finance and Operations-Apps                 | Customer Engagement-Apps                      |
 |---------------------------------------------|-----------------------------------------------|
 | Einheiten                                       | uoms                                          |
 | Auftragskopfzeilen CDS                     | salesorders                                   |
@@ -197,7 +197,7 @@ Das Dual-write Finance-Paket enthält die Lösungen und Zuordnungen, die für di
 
 Die folgenden Zuordnungen sind in diesem Paket enthalten.
 
-| Finance and Operations Apps             | Customer Engagement-Apps        |
+| Finance and Operations-Apps             | Customer Engagement-Apps        |
 |-----------------------------------------|---------------------------------|
 | Quellensteuergruppen                  | msdyn_withholdingtaxgroups      |
 | CDS Kontakte V2 (Kunde)              | Kontakte                        |
@@ -274,7 +274,7 @@ Das Paket Dual-write Anlagenverwaltung enthält die Lösungen und Zuordnungen, d
 
 Die folgenden Zuordnungen sind in diesem Paket enthalten.
 
-| Finance and Operations Apps                           | Customer Engagement-Apps                |
+| Finance and Operations-Apps                           | Customer Engagement-Apps                |
 |-------------------------------------------------------|-----------------------------------------|
 | Anlagenverwaltungsgarantie                             | msdyn_warranties                        |
 | Anlagenverwaltungsmodelle                               | msdyn_models                            |

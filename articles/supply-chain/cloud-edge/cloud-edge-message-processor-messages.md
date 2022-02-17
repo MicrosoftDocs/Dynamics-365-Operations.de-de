@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 685c8951b7c0d8524091cf06306388736d894f58
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: 68db4c6561f2cc3fcfd64b49da59a4cc164685f2
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471643"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069428"
 ---
 # <a name="message-processor-messages"></a>Nachrichtenverarbeitungsmeldungen
 
@@ -29,7 +29,7 @@ ms.locfileid: "7471643"
 
 Nachrichten des Nachrichtenprozessors werden beim Ausführen von Cloud- und Edge-Scale-Units für [Fertigungs-Workloads](cloud-edge-workload-manufacturing.md) und [Workloads der Lagerortverwaltung](cloud-edge-workload-warehousing.md) verwendet.
 
-Eine große Menge an Daten wird zwischen den Umgebungen des Hubs und der bereitgestellten Scale-Unit ausgetauscht, um sie synchron zu halten, aber nur ein Teil dieses Datenaustauschs wird vom *Nachrichtenprozessor* verarbeitet. Sie können die vom Nachrichtenprozessor verarbeiteten Nachrichten einsehen, indem Sie zu **Systemverwaltung > Nachrichtenprozessor > Nachrichtenprozessor-Meldungen** gehen.
+Die Umgebungen, in denen Hub und Scale-Unit bereitgestellt werden, tauschen eine große Menge an Daten aus, um synchron zu bleiben. Einige der ausgetauschten Daten werden zusätzliche Logik im *Nachrichtenprozessor* auslösen. Sie können die Nachrichten einsehen, die vom Nachrichtenprozessor verarbeitet wurden, indem Sie zu **Systemverwaltung > Nachrichtenprozessor > Nachrichten des Nachrichtenprozessors** gehen.
 
 ## <a name="message-grid-columns-and-filters"></a>Spalten des Nachrichten-Rasters und Filter
 

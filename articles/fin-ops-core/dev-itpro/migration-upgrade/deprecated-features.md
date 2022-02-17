@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e03becf2572aeaf213e8c3a0e874405ed0d5613
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 6dfe1cf9d3d67c6b65f64248d48a2e7420a47c93
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7753025"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063236"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>In früheren Versionen entfernte oder veraltete Funktionen
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 > [!IMPORTANT]
-> Dieses Thema wird nicht mehr aktualisiert. Um eine aktuelle Liste von Funktionen zu sehen, die aus Finance and Operations Anwendungen entfernt oder veraltet sind, suchen Sie nach **„Entfernte oder veraltete Funktionen“** Inhalt, der sich auf die von Ihnen verwendete Anwendung bezieht.
+> Dieses Thema wird nicht mehr aktualisiert. Um eine aktuelle Liste der Funktionen anzuzeigen, die aus Apps für Finanzen und Betrieb entfernt oder außer Betrieb genommen wurden, suchen Sie nach **„Entfernte oder außer Betrieb genommene Funktionen“**, die sich auf die App beziehen, die Sie verwenden.
 
 Dieses Thema beschreibt Funktionen, die aus Dynamics 365 for Finance and Operations und früheren Versionen dieses Produkts entfernt oder veraltet sind.
 
@@ -37,7 +37,7 @@ Dieses Thema beschreibt Funktionen, die aus Dynamics 365 for Finance and Operati
 
 Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen bei Ihrer eigenen Planung zu berücksichtigen. 
 
-Detaillierte Informationen über Objekte in Finance and Operations Apps finden Sie in den [Technischen Referenzberichten](/dynamics/s-e/global/axtechrefrep_61). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die sich in jeder Version von Finance and Operations-Anwendungen geändert haben oder entfernt wurden.
+Ausführliche Informationen über Objekte in Apps für Finanzen und Betrieb finden Sie in den [Technischen Referenzberichten](/dynamics/s-e/global/axtechrefrep_61). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die in den einzelnen Versionen der Apps für Finanzen und Betrieb geändert oder entfernt wurden.
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 mit Plattformupdate 31
 
@@ -265,18 +265,18 @@ Unterstützung für das Erstellen von projektbasierten Aufträgen, bei denen der
 | **Ersetzt durch eine andere Funktion?**   | Nein |
 | **Betroffene Produktbereiche**         | Produktinformationsverwaltung |
 | **Bereitstellungsoption**              | Alle  |
-| **Status**                         | Entfernt ab Finance and Operations 10.0.0 mit Plattform-Update 24.|
+| **Status**                         | Entfernt ab Finance and Operations 10.0.0 mit Plattformupdate 24.|
 
 
 ## <a name="finance-and-operations-813-with-platform-update-23"></a>Finance and Operations 8.1.3 mit Plattformupdate 23
 
 ### <a name="sql-server-reporting-services-reportviewer-control"></a>SQL Server Reporting Services-ReportViewer-Steuerelement
-Kunden können die Aktion **Export** verwenden, die von der eingebetteten SQL Server Reporting Services (SSRS) ReportViewer-Steuerung bereitgestellt wird, um Dokumente herunterzuladen, die von Finance and Operations-Anwendungen erstellt wurden. Diese HTML-basierte Präsentation des Berichts bietet Benutzern eine nicht paganierte Vorschau des Dokuments.
+Debitoren können die Aktivität **Exportieren** verwenden, die vom eingebetteten SQL Server Reporting Services (SSRS)-ReportViewer-Steuerelement bereitgestellt wird, um Dokumente herunterzuladen, die von Finance and Operations-Anwendungen erstellt werden. Diese HTML-basierte Präsentation des Berichts bietet Benutzern eine nicht paganierte Vorschau des Dokuments.
 
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Die nicht paginierte Natur der HTML-basierten Vorschau-Erfahrung liefert **nicht** Treue zu den physischen Dokumenten, die letztendlich von Finance and Operations produziert werden. Indem PDF vollständig als das Standardformat für Geschäftsdokumente übernommen werden, können Benutzer eine moderne Anzeigefunktionalität mit verbesserter Leistung nutzen, wenn sie Bewerbungsberichte erstellen. |
-| **Ersetzt durch eine andere Funktion?**   | Zukünftig werden PDF-Dokumente das Standardformat für Berichte sein, die von Finance and Operations gerendert werden.   |
+| **Grund für veralteten Zustand/Entfernung** | Die nicht-paganierte Art der HTML-basierten Vorschauerfahrung ist den letztlich von Finance and Operations erstellten physischen Dokumenten **nicht** treu. Indem PDF vollständig als das Standardformat für Geschäftsdokumente übernommen werden, können Benutzer eine moderne Anzeigefunktionalität mit verbesserter Leistung nutzen, wenn sie Bewerbungsberichte erstellen. |
+| **Ersetzt durch eine andere Funktion?**   | Ab jetzt gelten PDF-Dokumente als das Standardformat für Berichte von Finance and Operations.   |
 | **Betroffene Produktbereiche**         | Diese Änderung wirkt sich **nicht** auf die Debitorenszenarien aus, in denen Berichte elektronisch verteilt oder direkt an den Druckern gesendet werden.    |
 | **Bereitstellungsoption**              | Alle  |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden. Die Funktion zur automatischen Vorschau von Bewerbungsberichten mithilfe einer eingebetteten PDF-Anzeige ist für das Plattformupdate im Mai 2019 geplant. |
@@ -302,7 +302,7 @@ Integrierte Key Performance Indicators (KPIs) können in Visual Studio von einem
 | **Ersetzt durch eine andere Funktion?**   | Diese Warnung wird in Zukunft durch einen Kompelierfehler ersetzt. |
 | **Betroffene Produktbereiche**         | Visual Studio-Entwicklungstools |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Veraltet: Die Warnung ist ein Compiler-Fehler in Plattform-Updates für Version 10.0.11 von Finance and Operations-Apps. |
+| **Status**                         | Außer Betrieb genommen: Bei der Warnung handelt es sich um einen Kompilierungsfehler bei Plattform-Updates für Version 10.0.11 von Apps für Finanzen und Betrieb. |
 
 #### <a name="complete-list"></a>Vollständige Liste
 Die vollständige Liste der veralteten APIs finden Sie unter [Veraltete Methoden und Metadatenelemente](deprecation-deletion-apis.md).
@@ -329,7 +329,7 @@ Funktion für das Konfigurieren von .txt und .xml-Datei-Formaten für Meldungen.
 | **Ersetzt durch eine andere Funktion?**   | Ja. |
 | **Betroffene Produktbereiche**         | Hauptbuch |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Ab Finance and Operations 8.1 mit dem Plattform-Update 20 entfernt. |
+| **Status**                         | Entfernt ab Finance and Operations 8.1 mit Plattformupdate 20. |
 
 ### <a name="financial-reports-generator-for-russia"></a>Finanzberichtsgenerator für Russland
 Ein Tool, für die Einrichtung der Datenerfassung für Buchhaltungs- und Steuerberichte und um Daten in XLS- und DOC-Berichtsvorlagen zu exportieren. Funktionale Teile: Exportieren von Daten in XLS- und DOC-Berichtsvorlagen, Abfragen, feste Erfordernisse, werden entfernt. 
@@ -340,7 +340,7 @@ Ein Tool, für die Einrichtung der Datenerfassung für Buchhaltungs- und Steuerb
 | **Ersetzt durch eine andere Funktion?**   | Ja. Finanzberichtseinstellungsbenutzeroberfläche soll zum Einrichten von Datenerfassungsregeln nach Steuerregister Hauptbuchkonten verwendet werden. Datenexpot in verschiedenen Dateitypen, feste Erfordernisse und Abfrage ähnliche Datenerfassungsregeln sollten in der elektronischen Berichterstellung konfiguriert werden. |
 | **Betroffene Produktbereiche**         | Hauptbuch. |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Ab Finance and Operations 8.1 mit dem Plattform-Update 20 entfernt. |
+| **Status**                         | Entfernt ab Finance and Operations 8.1 mit Plattformupdate 20. |
 
 ### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Integration mit externen Anbietern zum Senden der elektronischen Berichterstellung nach Kommunikationswegen für Russland
 Funktion, die Karteien generierte elektronische Meldungen zum Ordner für das weitere Versenden an offizielle Anbieter von elektronischer Berichterstellung exportiert sowie den Status zurück importiert.
@@ -351,7 +351,7 @@ Funktion, die Karteien generierte elektronische Meldungen zum Ordner für das we
 | **Ersetzt durch eine andere Funktion?**   | Ja.  |
 | **Betroffene Produktbereiche**         | Hauptbuch, Steuer |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Ab Finance and Operations 8.1 mit dem Plattform-Update 20 entfernt. |
+| **Status**                         | Entfernt ab Finance and Operations 8.1 mit Plattformupdate 20. |
 
 
 ### <a name="profit-tax-register-wizard"></a>Gewinnsteuerregister-Assistent
@@ -359,11 +359,11 @@ Funktion zum Erstellen von Vorlagen für neue Gewinnsteuerregister. Diese Funkti
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Die Funktion ist nicht mit dem Finance and Operations-Erweiterbarkeitsmodell kompatibel. |
+| **Grund für veralteten Zustand/Entfernung** | Funktion ist nicht mit dem Finance and Operations-Erweiterbarkeitsmodell kompatibel. |
 | **Ersetzt durch eine andere Funktion?**   | Nein |
-| **Betroffene Produktbereiche**         | Steuerl. Buchung |
+| **Betroffene Produktbereiche**         | Steuern |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Ab Finance and Operations 8.1 mit dem Plattform-Update 20 entfernt. |
+| **Status**                         | Entfernt ab Finance and Operations 8.1 mit Plattformupdate 20. |
 
 ### <a name="payroll-and-human-resources-for-russia"></a>Gehaltsabrechnung und Personalverwaltung für Russland
 Russisches länderspezifisches Modul zur Verwaltung von Personalverwaltungsinformationen, Arbeitszeittabellendetails für Mitarbeiter, Gehaltsabrechnung und Erstellung von Gehaltsabrechnungen. 
@@ -379,7 +379,7 @@ Russisches länderspezifisches Modul zur Verwaltung von Personalverwaltungsinfor
 ## <a name="finance-and-operations-80-with-platform-update-15"></a>Finance and Operations 8.0 mit Plattformupdate 15
 Keine Funktionen sind in dieser Version entfernt oder veraltet worden. Plattformupdate 15 ist kumulativ und enthält neue oder geänderte Funktionen aus Plattformupdate 13, Plattformupdate 14 und Plattformupdate 15.
 
-## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations, Enterprise Edition 7.3 mit Plattform-Update 12
+## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations, Enterprise Edition 7.3 mit Plattformupdate 12
 
 ### <a name="personalized-product-recommendations"></a>Personalisierte Produktempfehlungen 
 Ab 15. Februar 2018 können Einzelhändler nicht mehr personalisierte Produktempfehlungen in einem Verkaufsstelle (POS)- Gerät anzeigen. Weitere Informationen finden Sie unter [Überblick über die Produktempfehlungen](../../../commerce/product-recommendations.md).  
@@ -405,7 +405,7 @@ Die Möglichkeit, benutzerdefinierte Funktionen zur Verwendung im ER-Ausdrucks-G
 
 ### <a name="inventory-by-item-group-and-inventory-by-inventory-dimension-aging-reports"></a>Bestand nach Artikelgruppe und Bestand nach Fälligkeitsberichten für Lagerungsdimension
 
-Diese beiden Berichte werden in Finance and Operations nicht mehr unterstützt. Stattdessen kann der Bericht **Bestandsfälligkeit** verwendet werden, um die Benutzerfreundlichkeit zu verbessern.
+Diese beiden Berichte werden nicht mehr in Finance and Operations unterstützt. Stattdessen kann der Bericht **Bestandsfälligkeit** verwendet werden, um die Benutzerfreundlichkeit zu verbessern.
 
 | &nbsp;  | &nbsp; |
 |--------------|-----------------------|
@@ -416,7 +416,7 @@ Diese beiden Berichte werden in Finance and Operations nicht mehr unterstützt. 
 | **Status**                       | Veraltet: Die Menüoptionen für die beiden Berichte sind in Version 7.3 entfernt worden. Allerdings bleibt der Code für die Berichte im Produkt bestehen. Es ist geplant, den Code in einer zukünftigen Version zu entfernen. |
 
 ### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI-Inhaltspakete verfügbar für AppSource
-Die Inhaltspakete **Kostenverwaltung**, **Finanzleistung** und **Retail Channel Performance**, die auf der [Microsoft AppSource](https://appsource.microsoft.com)-Site verfügbar sind, sind infolge von Produktupdates in Microsoft Power BI veraltet. Systemadministrationsformen, die zur Bereitstellung dieser Inhaltspakete auf PowerBI.com verwendet werden, werden ebenfalls in Finance and Operations veraltet.
+Die Inhaltspakete **Kostenverwaltung**, **Finanzleistung** und **Retail Channel Performance**, die auf der [Microsoft AppSource](https://appsource.microsoft.com)-Site verfügbar sind, sind infolge von Produktupdates in Microsoft Power BI veraltet. Die Systemverwaltungsformulare, die verwendet werden, um diese Inhaltspakete in PowerBI.com bereitzustellen, werden auch in Finance and Operations veraltet.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -498,7 +498,7 @@ Ab 15. Februar 2018 können Einzelhändler nicht mehr personalisierte Produktemp
 | **Status**                         |Entfernt ab 15. Februar 2018. Dies betrifft Kunden mit Dynamics 365 for Retail 7.2 und höher. |
 
 
-## <a name="finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Finance and Operations, Enterprise Edition Juli 2017 mit Plattform-Update 8
+## <a name="finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Finance and Operations, Enterprise Edition Juli 2017 mit Plattformupdate 8
 
 ### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a>Währungskonvertierung für Buchhaltungs- und Berichtswährungen
 
@@ -514,12 +514,12 @@ Die Währungskonvertierung für Buchhaltungs- und Berichtswährungen wurde mit d
 
 ### <a name="warehouse-mobile-devices-portal"></a>Portal für mobile Geräte für das Lager
 
-Portal für mobile Geräte für das Lager (Warehouse Mobile Devices Portal – WMDP) war eine eigenständige Komponente, die für lokale Selbstbereitstellung vorgesehen war. Diese Komponente wird in Finance and Operations nicht mehr unterstützt. Eine systemeigener App, die die Benutzererfahrung verbessert, hat die Funktionalität von WMDP ersetzt.
+Portal für mobile Geräte für das Lager (Warehouse Mobile Devices Portal – WMDP) war eine eigenständige Komponente, die für lokale Selbstbereitstellung vorgesehen war. Diese Komponente wird nicht mehr in Finance and Operations unterstützt. Eine systemeigener App, die die Benutzererfahrung verbessert, hat die Funktionalität von WMDP ersetzt.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Doppelte Funktionen.       |
-| **Ersetzt durch eine andere Funktion?**   | Ja. Diese Funktion wurde durch Finance and Operations - Warehousing ersetzt. Weitere Informationen zu Einstellungen und Voraussetzungen finden Sie unter [Installieren und Konfigurieren der Warehousing-App – Übersicht](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
+| **Ersetzt durch eine andere Funktion?**   | Ja. Diese Funktion wurde von Finance and Operations - Warehousing ersetzt. Weitere Informationen zu Einstellungen und Voraussetzungen finden Sie unter [Installieren und Konfigurieren der Warehousing-App – Übersicht](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Betroffene Produktbereiche**         | Lagerortverwaltung und Transportverwaltung     |
 | **Bereitstellungsoption**              | Portal für mobile Geräte für das Lager (Warehouse Mobile Devices Portal – WMDP) war eine eigenständige Komponente, die für lokale Selbstbereitstellung vorgesehen war.               |
 | **Status**                         | Veraltet: Zielzeitrahmen für das Entfernen der Funktion ist Q4 2019.   |
@@ -870,7 +870,7 @@ Ein Workflow für das Verwalten der Erstellung der Mitarbeiterziele ist einer vo
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Die Leistungsverwaltung wurde in Finance and Operations komplett überarbeitet.     |
+| **Grund für veralteten Zustand/Entfernung** | Die Leistungsverwaltung wurde in Finance and Operations vollständig neu gestaltet.     |
 | **Ersetzt durch eine andere Funktion?**   | Die neu entworfene Leistungsverwaltungsfunktion gibt mehr Kontrolle über den Inhalt der Ziele, die Messungen, die verwendet werden, um den Fortschritt zu verfolgen, und die Zuordnung der Begleitunterlagen. Ziele können als Vorlagen gespeichert werden und anschließend wieder verwendet werden. Diese Funktion kann Ihnen helfen, zusätzliche Ziele für Ihre Mitarbeiter schneller einzurichten. |
 | **Betroffene Produktbereiche**         | Human Capital Management                 |
 | **Status**                         | Entfernt ab Dynamics 365 for Operations Version 1611. |
@@ -1057,8 +1057,8 @@ Datenpartitionen enthalten eine logische Trennung von Daten in der Dynamics AX-D
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Datenpartitionen wurden in Dynamics AX 2012 R2 eingeführt, um Datenisolation zu ermöglichen. In einem häufigen Szenario verfügt ein Unternehmen über Tochtergesellschaften und die Daten einer Tochtergesellschaft sollen einer anderen nicht angezeigt werden, obwohl beide Tochterunternehmen von derselben IT-Abteilung verwaltet werden. Zusätzliche Skripts und Verwaltungsaufwand im gesamten Programm sind jedoch erforderlich, um neue Partitionen zu erstellen und mit Daten zu füllen und Partitionsdaten sichern. In der Cloud, in der wir über Platform-as-a-Service (PaaS)-Datenbankdienste (Microsoft Azure SQL-Datenbank) verfügen, ist es sehr viel effizienter, eine Datenbank als Isolationscontainer zu verwenden, als Isolationen im Programm durchzuführen. Unabhängig davon, ob eine Datenpartitionierung für Tochterunternehmen, für mehrere Mandanten oder nur aus Gründen der Skalierung erforderlich ist, glauben wir, dass die Szenarien durch mehrere Instanzen von Finance and Operations besser gehandhabt werden können. |
-| **Ersetzt durch eine andere Funktion?**   | Kunden, die Datenpartitionen verwenden, müssen mehrere Instanzen von Finance and Operations verwenden, wenn die Trennung auf Datenbankebene ein kritisches Problem darstellt.    |
+| **Grund für veralteten Zustand/Entfernung** | Datenpartitionen wurden in Dynamics AX 2012 R2 eingeführt, um Datenisolation zu ermöglichen. In einem häufigen Szenario verfügt ein Unternehmen über Tochtergesellschaften und die Daten einer Tochtergesellschaft sollen einer anderen nicht angezeigt werden, obwohl beide Tochterunternehmen von derselben IT-Abteilung verwaltet werden. Zusätzliche Skripts und Verwaltungsaufwand im gesamten Programm sind jedoch erforderlich, um neue Partitionen zu erstellen und mit Daten zu füllen und Partitionsdaten sichern. In der Cloud, in der wir über Platform-as-a-Service (PaaS)-Datenbankdienste (Microsoft Azure SQL-Datenbank) verfügen, ist es sehr viel effizienter, eine Datenbank als Isolationscontainer zu verwenden, als Isolationen im Programm durchzuführen. Egal, ob eine Datenpartitionierung für Tochterunternehmen, mehrere Mandanten oder nur zur Skalierung benötigt wird, glauben wir, dass die Szenarien besser über mehrere Datenbanken oder mehrere Instanzen von Finance and Operations behandelt werden können. |
+| **Ersetzt durch eine andere Funktion?**   | Debitoren, die Datenpartitionen verwenden, müssen mehrere Instanzen von Finance and Operations verwenden, wenn die Datenbankebenentrennung ein kritisches Problem ist.    |
 | **Betroffene Produktbereiche**         | Alle Module  |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.  |
 
@@ -1069,7 +1069,7 @@ Dynamics AX 2012 erlaubte die Speicherung von Anhängen in der Datenbank und in 
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Der Dateifreigabespeicher wird nicht mehr unterstützt, weil in der Cloud gehostete Umgebungen nicht mit lokalen Dateifreigaben kommunizieren können. Der Datenbankspeicher wurde zugunsten von Azure Blob-Speicher eingestellt. Azure Blob-Speicher ist äquivalent zur Speicherung in der Datenbank, weil der Zugriff auf Dokumente nur über Client-Formulare von Finance and Operations möglich ist. Auf diese Weise entsteht der zusätzliche Vorteil, dass Speicher bereitgestellt wird, der sich nicht negativ auf die Leistung der Datenbank auswirkt. Blob-Speicher ist der Standardspeichermechanismus für die Dokumentenverwaltung und funktioniert unmittelbar. |
+| **Grund für veralteten Zustand/Entfernung** | Der Dateifreigabespeicher wird nicht mehr unterstützt, weil in der Cloud gehostete Umgebungen nicht mit lokalen Dateifreigaben kommunizieren können. Der Datenbankspeicher wurde zugunsten von Azure Blob-Speicher eingestellt. Azure Blob-Speicher ist äquivalent zur Speicherung in der Datenbank, weil der Zugriff auf Dokumente nur über Finance and Operations-Client-Formulare möglich ist. Auf diese Weise entsteht der zusätzliche Vorteil, dass Speicher bereitgestellt wird, der sich nicht negativ auf die Leistung der Datenbank auswirkt. Blob-Speicher ist der Standardspeichermechanismus für die Dokumentenverwaltung und funktioniert unmittelbar. |
 | **Ersetzt durch eine andere Funktion?**   | Der Datenbankspeicher wurde zugunsten von Azure Blob-Speicher eingestellt.   |
 | **Betroffene Produktbereiche**         | Alle Module  |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.   |
@@ -1098,7 +1098,7 @@ In Dynamics AX 2012 R3 konnte sich Retail Modern POS direkt mit der Kanal-DB ver
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Direkte Datenbankkonnektivität erforderte ein geringeres Sicherheitsprotokolle und wurde hauptsächlich verwendet, um den höchsten Leistungsstandard zu erreichen. Aufgrund der Leistungs- und Sicherheitsverbesserungen, die bei Finance and Operations aufgetreten sind, verursacht diese Funktionalität jetzt mehr Probleme, als sie löst. |
+| **Grund für veralteten Zustand/Entfernung** | Direkte Datenbankkonnektivität erforderte ein geringeres Sicherheitsprotokolle und wurde hauptsächlich verwendet, um den höchsten Leistungsstandard zu erreichen. Aufgrund der Leistung und der Sicherheitserweiterungen, die in Finance and Operations aufgetreten sind, führen diese Funktionen nun zu mehr Problemen, als sie lösen. |
 | **Ersetzt durch eine andere Funktion?**   | Nein Nur Standard Retail Server Kommunikation wird nun unterstützt.  |
 | **Betroffene Produktbereiche**         | Kanal-DB/Retail Modern POS   |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.  |

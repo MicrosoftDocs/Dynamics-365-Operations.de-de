@@ -14,14 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 413143afb578aed29ce0836aaa3ac98ffc0c6cc3
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: 7c72f866886f320d8a7fa22d6ccfa7e43284b5bf
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7484095"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071485"
 ---
 # <a name="process-compensation"></a>Vergütung verarbeiten
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -41,10 +44,10 @@ Nachdem die Parameter des Prozessereignisses gespeichert wurden, können Sie auf
 
 Klicken Sie auf der Registerkarte **Pläne** auf die Schaltfläche **Hinzufügen**, um dem Prozessereignis einen Vergütungsplan hinzuzufügen. Die Spalten **Anderer Einfluss**, **Einflussfaktor** und **Einflussbeschreibung** werden nur für variable Vergütungspläne verwendet und werden in diesem Thema nicht beschrieben.
 
-Speichern Sie den Datensatz und klicken Sie dann auf der Registerkarte **Aktivitäten** auf die Schaltfläche **Hinzufügen**, um dem ausgewählten Plan feste Vergütungsaktivitäten hinzuzufügen. Verwenden Sie die Option **Empfehlung aktivieren**, um einen anderen Betrag einzugeben, als die berechnete Richtlinienerhöhung für die Aktivität. Um eine Aktion zu berechnen, die auf dem Ergebnis der vorherigen Aktion basiert und so mehrere Ausgleichsaktionen zu verknüpfen, markieren Sie die Option **Vorheriges Ergebnis verwenden**. Feste Vergütungsaktionen sind Arten von Vergütungslogiken, denen Sie beschreibende Namen geben können. Für die Pläne Stufe und Band können Sie nur feste Vergütungsaktivitäten der folgenden Typen hinzufügen:
+Speichern Sie den Datensatz und klicken Sie dann auf der Registerkarte **Aktivitäten** auf die Schaltfläche **Hinzufügen**, um dem ausgewählten Plan feste Vergütungsaktivitäten hinzuzufügen. Verwenden Sie die Option **Empfehlung aktivieren**, um einen anderen Betrag einzugeben, als die berechnete Richtlinienerhöhung für die Aktivität. Um eine Aktion zu berechnen, die auf dem Ergebnis der vorherigen Aktion basiert und so mehrere Ausgleichsaktionen zu verknüpfen, markieren Sie die Option **Vorheriges Ergebnis verwenden**. Feste Vergütungsaktionen sind Arten von Vergütungslogiken, denen Sie beschreibende Namen geben können. Für **Branche** und **Band** Pläne können Sie nur feste Vergütungsaktionen hinzufügen, die zu den folgenden Typen gehören:
 
-| Typ der Aktivität für feste Vergütung | Funktionen                                                                                                                                                                                                                                                                                                                                                                                                    |
-|-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Typ der Aktivität für feste Vergütung | Funktionen                  |
+|-------------------------------|-------------------------------------------------------------------------|
 | Eigenkapital                        | Eigenkapitalaktivitäten vergleichen den Lohnsatz des Mitarbeiters ab dem Enddatum des Zyklus mit dem niedrigsten Referenzpunkt für die Ebene, die im Einzelvorgang des Mitarbeiters angegeben ist. Wenn der Lohnsatz eines Mitarbeiters niedriger als der niedrigste Referenzpunkt ist, wird die Erhöhung berechnet, die notwendig ist, um den Mitarbeiter auf den Mindestpunkt in dem Bereich zu bringen.                                                                                |
 | Verdienst                         | Vergütungsaktivitäten berechnen eine Erhöhung basierend auf dem Lohnsatz des Mitarbeiters zum Enddatum des Zyklus, ebenso wie nach der prozentualen Erhöhung, wie im Budget für die feste Erhöhung für die Abteilung des Mitarbeiters, die Gewerkschaft und den Standort vorgegeben.                                                                                                                                                                                         |
 | Allgemein                       | Allgemeine Aktivitäten berechnen eine Erhöhung basierend auf einem Prozentwert oder geben den Mitarbeitern einen Pauschalbetrag. Dieser wird basierend auf den Einstellungen für **Feste Vergütung** auf der Registerkarte **Allgemein** bestimmt.                                                                                                                                                                                                                        |
@@ -53,12 +56,12 @@ Speichern Sie den Datensatz und klicken Sie dann auf der Registerkarte **Aktivit
 
 Sie können nur **Feste Vergütung**-Aktivitäten mit einem Schrittplan hinzufügen.
 
-| Typ der Aktivität für feste Vergütung | Funktionen                                                                                                                                                                                           |
-|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Typ der Aktivität für feste Vergütung | Funktionen                |
+|--------------------------------|------------------------------|
 | Schritt                           | Geben Sie auf der Registerkarte **Allgemein** an, ob diese Schrittaktivität die Mitarbeiter 0, 1 oder zwei 2 Stufen voranbringen soll.                                                                                  |
 |                                | **0 Schritte** – Der Mitarbeiter erhält den Lohnsatz für seinen aktuellen Schritt.                                                                                                                      |
 |                                | **1 Schritt** – Das System prüft, ob der Mitarbeiter bereits am letzten Referenzpunkt seiner Ebene angekommen ist.                                                                                             |
-|                                | **2 Schritte** –-Das System befördert den Mitarbeiter auf seiner Ebene zwei Schritte nach oben. Das System beförderte möglicherweise den Mitarbeiter nur einen oder keinen Schritt, wenn der letzte Referenzpunkt der Ebene erreicht ist. |
+|                                | **2 Stufen** - Der Mitarbeiter rückt zwei Stufen auf seiner aktuellen Ebene vor. Der Mitarbeiter kann nur eine oder null Stufen aufsteigen, wenn er den letzten Referenzpunkt für seine Stufe erreicht. |
 
 ## <a name="run-the-compensation-process"></a>Ausführen des Vergütungsprozesses
 Nachdem das Prozessereignis mit den erforderlichen Datumsfeldern, Plänen und Aktivitäten eingerichtet wurde, klicken Sie auf **Prozess ausführen** auf der Seite **Prozessereignis**. Dadurch wird das Dialogfeld **Vergütungsverarbeitungsereignisse ausführen**. Klicken Sie auf die Option **Ergebnisse der Verarbeitung anzeigen**, um zu sehen, wie die Vergütungsbeträge für jeden Mitarbeiter berechnet wurden. **OK** führt den Vergütungsprozess für alle Mitarbeiter aus, die in den ausgewählten Vergütungsplänen ab Zyklusendedatum enthalten sind.

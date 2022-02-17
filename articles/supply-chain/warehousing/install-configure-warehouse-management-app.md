@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: b1687b24f499f4d226406a0035f8ea70b6046167
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 54962b48dee05b2cd62fd3ea8814e4c965ba7818
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901988"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069378"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installieren und Verbinden der mobilen Lagerortverwaltungs-App
 
@@ -143,6 +143,10 @@ Die Authentifizierung mit Azure AD bietet eine sichere Möglichkeit, ein mobiles
 Zertifikate können als geheime Schlüssel verwendet werden, um die Identität der Anwendung zu belegen, wenn ein Token angefordert wird. Der öffentliche Teil des Zertifikats wird in die App-Registrierung im Azure-Portal hochgeladen, während das vollständige Zertifikat auf jedem Gerät bereitgestellt werden muss, auf dem die mobile Lagerortverwaltungs-App installiert ist. Ihre Organisation ist für die Verwaltung des Zertifikats in Bezug auf Rotation usw. verantwortlich. Sie können selbstsignierte Zertifikate verwenden, Sie sollten jedoch stets nicht exportierbare Zertifikate verwenden.
 
 Sie müssen das Zertifikat lokal auf jedem Gerät verfügbar machen, auf dem Sie die mobile Lagerortverwaltungs-App ausführen. Weitere Informationen dazu, wie Sie bei Verwendung von Intune, Intune-gesteuerte Geräte verwalten, finden Sie unter [Zertifikate zur Authentifizierung in Microsoft Intune verwenden](/mem/intune/protect/certificates-configure).
+
+## <a name="configure-the-warehouse-management-mobile-app-for-cloud-and-edge-scale-units"></a>Konfigurieren Sie die Warehouse Management Mobile-App für Scale-Units in der Cloud und am Rand
+
+Es sind einige zusätzliche Schritte erforderlich, wenn Sie die Warehouse Management Mobile-App gegen eine Scale-Unit in der Cloud oder am Edge ausführen möchten. Anweisungen finden Sie unter [Konfigurieren Sie die Warehouse Management Mobile-App für Scale-Units in der Cloud und im Edge](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Die Anwendung durch Importieren der Verbindungseinstellungen konfigurieren
 
@@ -306,5 +310,6 @@ Im Fall von verlorenen oder beeinträchtigten Geräten müssen Sie den Zugriff d
 
 - [Benutzereinstellungen für mobile Geräte](mobile-device-user-settings.md)
 - [Weisen Sie der mobilen Warehouse Management-App Schrittsymbole und -titel zu](step-icons-titles.md)
+- [Konfigurieren Sie die Warehouse Management Mobile-App für Scale-Units in der Cloud und im Edge-Bereich](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

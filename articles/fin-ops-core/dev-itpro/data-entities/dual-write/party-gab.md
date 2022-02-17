@@ -9,20 +9,20 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 127b4092ad3c5e8737aff43f503e0a8f36ff1ec8
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 601c49e21c3a97d2da225705ddbb386e491d4d25
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781343"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060331"
 ---
 # <a name="party-and-global-address-book"></a>Partei und globales Adressbuch
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-*Partei* und *globales Adressbuch* sind Konzepte in Finance and Operations-Anwendungen. Eine Partei kann eine Organisation oder eine Person sein. Es ist praktisch, Eigenschaften einer Partei global zu speichern und zu verwalten, z. B. den Namen, die Sprache, Kontakte und Adressen. Wenn dann ein Eigenschaftswert an einer Stelle geändert wird, wird die Änderung an allen Stellen, an denen die Partei beteiligt ist, berücksichtigt.
+
+*Partei* und *globales Adressbuch* sind Konzepte in Finance und Operations Anwendungen. Eine Partei kann eine Organisation oder eine Person sein. Es ist praktisch, Eigenschaften einer Partei global zu speichern und zu verwalten, z. B. den Namen, die Sprache, Kontakte und Adressen. Wenn dann ein Eigenschaftswert an einer Stelle geändert wird, wird die Änderung an allen Stellen, an denen die Partei beteiligt ist, berücksichtigt.
 
 ## <a name="party"></a>Partei
 
@@ -46,7 +46,7 @@ Die folgende Abbildung zeigt das Datenmodell für Partei.
 > [!TIP]
 > Wenn Sie versuchen, einen neuen Kontodatensatz zu erstellen, verwenden Sie das Feld **Partei**, um den Datensatz nach Namen zu suchen. Wenn Sie auf diese Weise den Datensatz finden, müssen Sie ihn nur noch auswählen. Das System füllt dann automatisch alle Daten der Partei aus. Sie müssen nicht alle erforderlichen Felder manuell festlegen. Dieses Verhalten ist auf den Seiten **Konto**, **Kontakt** und **Kreditor** standardmäßig zu finden.
 
-Dual-Write unterstützt nicht alle Partei-Rollen von Finance and Operations-Apps. Eine vollständige Liste der Parteirollen finden Sie unter [Überblick über globale Adressbücher](../../../fin-ops/organization-administration/overview-global-address-book.md).
+duales Schreiben unterstützt nicht alle Parteirollen der Apps für Finanzen und Betrieb. Eine vollständige Liste der Parteirollen finden Sie unter [Überblick über globale Adressbücher](../../../fin-ops/organization-administration/overview-global-address-book.md).
 
 ### <a name="global-address-book"></a>Globales Adressbuch
 
@@ -75,7 +75,7 @@ Die Tabelle **Kontakt** kann die folgenden Arten von Zeilen speichern.
 |----------|-------------|
 | Eine Person, die ein Kunde ist (z. B. ein verkaufsfähiger Kontakt oder ein B2C-Kunde) | Ein zusammengefasster Kontakt-Datensatz, bei dem das Feld **Firma** nicht leer ist und das Feld **Ist Kunde** auf **Ja** festgelegt ist. |
 | Eine Person, die ein Lieferant ist (z. B. ein Einzelunternehmer wie ein Verkäufer) | Ein zusammengefasster Datensatz, bei dem das Feld **Firma** nicht leer ist und das Feld **Lieferant** auf **Ja** festgelegt ist. |
-| Eine Person, die sowohl ein Kunde als auch ein Lieferant ist | Ein zusammengefasster Datensatz, bei dem das Feld **Firma** nicht leer ist, das Feld **Ist Kunde** auf **Ja** festgelegt ist und das Feld **Ist Lieferant** auf **Ja** festgelegt ist. Eine Person kann sowohl Produzent für ein Produkt als auch Verbraucher für ein anderes Produkt sein. Beide, Finance and Operations-Apps und Duales Schreiben, unterstützen diese Beziehung. |
+| Eine Person, die sowohl ein Kunde als auch ein Lieferant ist | Ein zusammengefasster Datensatz, bei dem das Feld **Firma** nicht leer ist, das Feld **Ist Kunde** auf **Ja** festgelegt ist und das Feld **Ist Lieferant** auf **Ja** festgelegt ist. Eine Person kann sowohl Produzent für ein Produkt als auch Verbraucher für ein anderes Produkt sein. Sowohl Apps für Finanzen und Betrieb als auch duales Schreiben unterstützen diese Beziehung. |
 | Eine Person, die eine Kontaktperson für eine Organisation ist, aber kein Kunde oder Lieferant ist | Ein nicht zusammengefasster Kontakt-Datensatz, bei dem das Feld **Firma** leer ist, das Feld **Ist Kunde** auf **Nein** festgelegt ist und das Feld **Ist Lieferant** auf **Nein** festgelegt ist. |
 
 ## <a name="contact-for-party-table"></a>Kontakt für die Tabelle Partei
@@ -142,7 +142,7 @@ Mit der Schaltfläche **Neue elektronische Adresse** über dem Raster können Si
 Elektronische Adressen sind nur in diesem Raster verfügbar. In zukünftigen Versionen werden alle Felder für Postanschrift und elektronische Adresse aus anderen Registerkarten entfernt, z.B. aus den Registerkarten **Zusammenfassung** und **Details**. Kontaktdetails, die auf der Registerkarte **Details** angezeigt werden, sind schreibgeschützte Kopien der primären elektronischen Adresse, wie primäre Telefonnummer, primäre E-Mail, primäres Telefon, primäres Fax und primäre Twitter-ID. Während des Lead-Qualifizierungsprozesses können Sie sowohl eine geschäftliche Telefonnummer als auch eine Mobiltelefonnummer angeben. Die geschäftliche Telefonnummer wird als primäres Telefon betrachtet, wenn **IsMobile=No** und die Mobiltelefonnummer wird als sekundäres Telefon betrachtet, wenn **IsMobile=Yes**.
 
 > [!TIP]
-> Verwenden Sie die Registerkarten **Adressen** und **Elektronische Adressen** in den Formularen **Konto** und **Kontakte**, um postalische und elektronische Adressen zu verwalten. Dadurch wird sichergestellt, dass Adressdaten mit Finance and Operations-Apps synchronisiert werden.
+> Verwenden Sie die Registerkarten **Adressen** und **Elektronische Adressen** in den Formularen **Konto** und **Kontakte**, um postalische und elektronische Adressen zu verwalten. Dadurch wird sichergestellt, dass Adressdaten mit den Apps Finance und Operations synchronisiert werden.
 
 ## <a name="setup"></a>Einrichtung
 
@@ -230,7 +230,7 @@ Elektronische Adressen sind nur in diesem Raster verfügbar. In zukünftigen Ver
 
 12. Führen Sie die Zuordnungen in der folgenden Reihenfolge aus. Wenn Sie eine Fehlermeldung erhalten, die besagt „Projektvalidierung fehlgeschlagen“. „Fehlendes Zielfeld...“, öffnen Sie dann die Zuordnung und wählen Sie **Tabellen aktualisieren**. Führen Sie dann die Zuordnung aus.
 
-    Finance and Operations-App | Customer Engagement-App  
+    Finance und Operations App | Customer Engagement-App  
     ----------------------------|------------------------
     [CDS-Parteien](mapping-reference.md#220) | msdyn_parties
     [CDS Postadressorte](mapping-reference.md#234) | msdyn_postaladdresscollections
@@ -269,7 +269,7 @@ Elektronische Adressen sind nur in diesem Raster verfügbar. In zukünftigen Ver
 
 Eine Sammlung von Tabellenzuordnungen arbeitet für die Interaktion von Partei und globalem Adressbuch zusammen, wie in der folgenden Tabelle dargestellt.
 
-| Finance and Operations-App | Customer Engagement-App | Beschreibung |
+| Finance und Operations App | Customer Engagement-App | Description |
 |----------------------------|-------------------------|-------------|
 | [Titel von Kontaktpersonen](mapping-reference.md#223) | msdyn\_salescontactpersontitles |
 | [Debitoren V3](mapping-reference.md#101) | Konten |
@@ -295,10 +295,10 @@ Weitere Informationen finden Sie unter [Referenz für die Zuordnung von dualem S
 
 ## <a name="known-issues-and-limitations"></a>Bekannte Probleme und Einschränkungen
 
-+ Wenn Sie in Finance and Operations-Apps einen Debitor zusammen mit einer Adresse erstellen und speichern, wird die Adresse möglicherweise nicht mit der Tabelle **Adresse** synchronisiert. Der Grund dafür ist ein Problem mit der Sequenzierung der Dual-Write-Plattform. Als Workaround erstellen Sie den Kunden zuerst und speichern ihn. Fügen Sie dann die Adresse hinzu.
-+ Wenn in Finance and Operations-Apps ein Datensatz eines Debitors eine primäre Adresse hat und Sie einen neuen Kontakt für diesen Debitor erstellen, erbt der Kontakt-Datensatz eine primäre Adresse vom zugehörigen Debitor-Datensatz. Dies gilt auch für den Kreditor-Kontakt. Dataverse unterstützt dieses Verhalten derzeit nicht. Wenn Dual-Write aktiviert ist, wird ein Debitor-Kontakt, der mit einer primären Adresse aus der App Finance and Operations geerbt wurde, zusammen mit seiner Adresse nach Dataverse synchronisiert.
++ Wenn Sie in Apps für Finanzen und Betrieb einen Debitor mit Adresse erstellen und speichern, wird die Adresse möglicherweise nicht mit der Tabelle **Adresse** synchronisiert. Der Grund dafür ist ein Problem mit der Sequenzierung der Dual-Write-Plattform. Als Workaround erstellen Sie den Kunden zuerst und speichern ihn. Fügen Sie dann die Adresse hinzu.
++ Wenn in Apps für Finanzen und Betrieb ein Datensatz eines Debitors eine primäre Adresse hat und Sie einen neuen Kontakt für diesen Debitor erstellen, erbt der Kontaktdatensatz eine primäre Adresse aus dem zugehörigen Kundendatensatz. Dies gilt auch für den Kreditor-Kontakt. Dataverse unterstützt dieses Verhalten derzeit nicht. Wenn duales Schreiben aktiviert ist, wird ein Debitor-Kontakt, der mit einer primären Adresse aus der Finance und Operations App übernommen wurde, zusammen mit seiner Adresse auf Dataverse synchronisiert.
 + Elektronische Adressen, die auf der Registerkarte „Elektronische Adresse“ der Formulare **Konto**, **Kontakt** und **Kreditor** festgelegt sind, stammen aus der Tabelle `msdyn_partyelectronicaddress`. Diese Informationen fließen nicht in die zugehörigen Transaktionen wie Verkaufsauftrag, Angebot und Einkaufsbestellung. Wir planen, dieses Problem in einem inkrementellen Release zu beheben. Die bestehenden Daten auf den elektronischen Adressfeldern auf den Konto- und Kontakt-Datensätzen werden weiterhin auf Transaktionen wie Verkaufsauftrag, Angebot und Einkaufsbestellung funktionieren.
-+ In Finance and Operations-Apps können Sie einen Datensatz für einen Kontakt über das Formular **Kontakt hinzufügen** erstellen. Wenn Sie versuchen, einen neuen Kontakt über das Formular **Kontakt anzeigen** zu erstellen, schlägt die Aktion fehl. Dies ist ein bekanntes Problem.
++ In Apps für Finanzen und Betrieb können Sie einen Datensatz über das Formular **Kontakt hinzufügen** erstellen. Wenn Sie versuchen, einen neuen Kontakt über das Formular **Kontakt anzeigen** zu erstellen, schlägt die Aktion fehl. Dies ist ein bekanntes Problem.
 
     ![Bekanntes Problem mit Kontakt hinzufügen.](media/party-gab-contact-issue.png)
 
@@ -307,4 +307,4 @@ Weitere Informationen finden Sie unter [Referenz für die Zuordnung von dualem S
 
     ![Bekanntes Problem mit Adresse.](media/party-gab-address-issue.png)
 
-+ Sie können keine in der Zukunft liegende Postadresse mit einer Finance and Operations-App mit Dual-Write eingeben, da Dataverse keine Datumswirksamkeit unterstützt. Wenn Sie eine in der Zukunft liegende Postadresse mit einer Finance and Operations-App eingeben, wird diese vollständig auf Dataverse synchronisiert und Sie sehen die Adresse sofort auf der Benutzeroberfläche. Alle Updates dieses Datensatzes führen zu einem Fehler als es erst in Zukunft herausgegeben wird und derzeit nicht in der Finance and Operations-App enthalten ist.
++ Sie können mit einer Finance und Operations App mit duales Schreiben keine vorwärts datierte Postadresse eingeben, da die Dataverse keine Datumsgültigkeit unterstützt. Wenn Sie eine in der Zukunft liegende Postadresse über eine Finance und Operations App eingeben, wird diese vollständig auf Dataverse synchronisiert und Sie sehen die Adresse sofort auf der Benutzeroberfläche. Alle Aktualisierungen dieses Datensatzes führen zu einem Fehler, da er in der App Finance und Operations nicht aktuell ist, sondern ein zukünftiges Datum hat.

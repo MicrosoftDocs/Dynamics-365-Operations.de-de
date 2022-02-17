@@ -9,20 +9,20 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 81f49cf08dcd1b4b1c3d71ff286a1f070e65e914
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 1b3dc1d16fc34992df0c9478b8b4d163c310b67b
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782331"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062597"
 ---
-# <a name="unified-product-experience"></a>Einheitliche Produktumgebung
+# <a name="unified-product-experience"></a>Einheitliche Produkterfahrung
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Wenn ein Geschäftsökosystem aus Dynamics 365-Anwendungen besteht, wie Finance, Supply Chain Management und Sales, verwenden Unternehmen diese Anwendungen häufig für Quellproduktdaten. Der Grund dafür ist, dass diese Apps eine robuste Produktinfrastruktur bieten, die durch ausgeklügelte Preiskonzepte und genaue Bestandsverfügbarkeitsdaten abgerundet werden. Unternehmen, die ein externes Product Lifecycle Management (PLM)-System für die Beschaffung von Produktdaten verwenden, können Produkte von Finance and Operations-Apps in andere Dynamics 365-Apps kanalisieren. Die einheitliche Produkterfahrung bringt das integrierte Produktdatenmodell in Dataverse, sodass alle Anwendungsbenutzer einschließlich Power Platform-Benutzer den Vorteil der umfassenden Produktdaten aus Finance and Operations-Apps nutzen können.
+
+Wenn ein Geschäftsökosystem aus Dynamics 365-Anwendungen besteht, wie Finance, Supply Chain Management und Sales, verwenden Unternehmen diese Anwendungen häufig für Quellproduktdaten. Der Grund dafür ist, dass diese Apps eine robuste Produktinfrastruktur bieten, die durch ausgeklügelte Preiskonzepte und genaue Bestandsverfügbarkeitsdaten abgerundet werden. Unternehmen, die ein externes Product Lifecycle Management (PLM)-System für die Beschaffung von Produktdaten verwenden, können Produkte von Finance and Operations-Apps in andere Dynamics 365-Apps kanalisieren. Die einheitliche Produkterfahrung bringt das integrierte Produktdatenmodell in Dataverse, sodass alle Anwendungsbenutzer einschließlich Power Platform-Benutzern den Vorteil der umfassenden Produktdaten aus Finance and Operations-Apps nutzen können.
 
 Hier ist das Produktdatenmodell aus Sales.
 
@@ -30,21 +30,21 @@ Hier ist das Produktdatenmodell aus Sales.
 
 Hier ist das Produktdatenmodell aus Finance and Operations-Apps.
 
-![Datenmodell für Produkte in Finance and Operations.](media/dual-write-products-5.jpg)
+![Datenmodell für Produkte in Finance und Operations.](media/dual-write-products-5.jpg)
 
 Diese beiden Produktdatenmodelle wurden wie unten dargestellt in Dataverse integriert.
 
 ![Datenmodell für Produkte in Dynamics 365-Apps.](media/dual-write-products-6.jpg)
 
-Die Tabellenzuordnungen für duales Schreiben sind so konzipiert, dass Daten nur unidirektional weitergeleitet werden. Dies erfolgt nahezu in Echtzeit von Finance and Operations-Apps nach Dataverse. Allerdings wurde die Produktinfrastruktur offen gestaltet, um sie bei Bedarf auch bidirektional nutzen zu können. Obwohl Sie sie auf eigene Gefahr anpassen können, empfiehlt Microsoft diese Methode nicht.
+Die duales Schreiben Tabellen-Maps für Produkte wurden so konzipiert, dass die Daten nur in eine Richtung fließen, und zwar nahezu in Echtzeit von Apps für Finanzen und Betrieb zu Dataverse. Allerdings wurde die Produktinfrastruktur offen gestaltet, um sie bei Bedarf auch bidirektional nutzen zu können. Obwohl Sie sie auf eigene Gefahr anpassen können, empfiehlt Microsoft diese Methode nicht.
 
 ## <a name="templates"></a>Vorlagen
 
 Produktinformationen enthält alle Informationen, die mit dem Produkt und seiner Definition in Verbindung stehen, z. B. den Produktdimensionen oder den Nachverfolgungs- und Lagerdimensionen. Wie die folgende Tabelle zeigt, wird eine Sammlung von Tabellenzuordnungen erstellt, um Produkte und zugehörige Informationen zu synchronisieren.
 
-Finance and Operations Apps | Sonstige Dynamics 365-Apps | Beschreibung
+Finance and Operations-Apps | Sonstige Dynamics 365-Apps | Description
 -----------------------|--------------------------------|---
-[Alle Produkte](mapping-reference.md#138) | msdyn_globalproducts | Die Tabelle „Alle Produkte“ enthält alle in Finance and Operations-Apps verfügbaren Produkte, sowohl die freigegebenen als auch die nicht freigegebenen.
+[Alle Produkte](mapping-reference.md#138) | msdyn_globalproducts | Die Tabelle Alle Produkte enthält alle in Apps für Finanzen und Betrieb verfügbaren Produkte, sowohl die freigegebenen als auch die nicht freigegebenen Produkte.
 [Von CDS freigegebene eindeutig identifizierbare Produkte](mapping-reference.md#213) | Produkt | Die Tabelle **Produkt** enthält die Spalten, die das Produkt definieren. Sie enthält Einzelprodukte (Produkte mit Untertypprodukt) und die Produktvarianten. Die Zuordnungen werden in der folgenden Tabelle veranschaulicht.
 [Farben](mapping-reference.md#170) | msdyn\_productcolors
 [Varianten](mapping-reference.md#171) | msdyn\_productconfigurations
@@ -52,7 +52,7 @@ Finance and Operations Apps | Sonstige Dynamics 365-Apps | Beschreibung
 [Produktkategorien](mapping-reference.md#166) | msdyn_productcategories | Jede der Produktkategorien und -informationen über die Struktur und Eigenschaften ist in der Produktkategorietabelle enthalten.
 [Produktkategoriezuweisungen](mapping-reference.md#167) | msdyn_productcategoryassignments | Zum Zuweisen eines Produkts zu einer Kategorie kann die Tabelle „Produktkategoriezuweisungen“ verwendet werden.
 [Produktkategoriehierarchien](mapping-reference.md#168) | msdyn_productcategoryhierarchies | Sie verwenden Produkthierarchien, um Produkte zu kategorisieren oder zu gruppieren. Die Kategoriehierarchien sind in Dataverse über die Tabelle „Produktkategoriehierarchie“ verfügbar.
-[Produktkategoriehierarchie-Rollen](mapping-reference.md#169) | msdyn_productcategoryhierarchyrole | Produkthierarchien können für verschiedene Rollen in D365 Finance and Operations verwendet werden. Sie legen fest, welche Kategorie in jeder Rolle verwendet wird, in der die Tabelle „Produktkategorierolle“ verwendet wird.
+[Produktkategoriehierarchie-Rollen](mapping-reference.md#169) | msdyn_productcategoryhierarchyrole | Produkthierarchien können für verschiedene Rollen in der D365 Finance and Operations verwendet werden. Sie legen fest, welche Kategorie in jeder Rolle verwendet wird, in der die Tabelle „Produktkategorierolle“ verwendet wird.
 [Standardmäßige Produktauftragseinstellungen V2](mapping-reference.md#175) | msdyn_productspecificdefaultordersettings |
 [Produktdimensionsgruppen](mapping-reference.md#173) | msdyn\_productdimensiongroups | Die Produktdimensionsgruppe definierten, welche Produktdimensionen das Produkt definieren.
 [Produktmasterfarben](mapping-reference.md#187) | msdyn_sharedproductcolors | Die Tabelle **Freigegebene Produktfarbe** gibt die Farben an, die ein bestimmter Produktmaster haben kann. Dieses Konzept wird zu Dataverse migriert, um Daten einheitlich zu halten.
@@ -61,7 +61,7 @@ Finance and Operations Apps | Sonstige Dynamics 365-Apps | Beschreibung
 [Produktmasterstile](mapping-reference.md#191) | msdyn_sharedproductstyles | Die Tabelle **Freigegebener Produktstil** gibt die Stile an, die ein bestimmter Produktmaster haben kann. Dieses Konzept wird zu Dataverse migriert, um Daten einheitlich zu halten.
 [Durch Produktnummer identifizierter Strichcode](mapping-reference.md#164) | msdyn\_productbarcodes | Produktstrichcodes werden verwendet, um Produkte eindeutig zu kennzeichnen.
 [Produktspezifische Einheitenumrechnungen](mapping-reference.md#176) | msdyn_productspecificunitofmeasureconversions |
-[Freigegebene Produkte V2](mapping-reference.md#189) | msdyn\_sharedproductdetails | Die Tabelle **msdyn\_sharedproductdetails** enthält die Spalten aus Finance and Operations-Apps, die das Produkt definieren und die die Finanz- und Verwaltungsinformationen des Produkts enthalten.
+[Freigegebene Produkte V2](mapping-reference.md#189) | msdyn\_sharedproductdetails | Die Tabelle **msdyn\_sharedproductdetails** enthält die Spalten aus Apps für Finanzen und Betrieb, die das Produkt definieren und die Finanz- und Managementinformationen des Produkts enthalten.
 [Größen](mapping-reference.md#174) | msdyn\_productsizes
 [Lagerdimensionsgruppen](mapping-reference.md#177) | msdyn_productstoragedimensiongroups | Die Produkt-Lagerdimensionsgruppe stellt die Methode dar, die verwendet wird, um die Position des Produkts im Lagerort zu definieren.
 [Stile](mapping-reference.md#178) | msdyn\_productsytles
@@ -81,17 +81,17 @@ Da das Produkt als SKU dargestellt wird, können die Konzepte von eindeutig iden
 
 ![Datenmodell für Produkte.](media/dual-write-product.png)
 
-Wenn die Dual-Write-Funktionalität aktiviert ist, werden die Produkte aus Finance and Operations in anderen Dynamics 365-Produkten im Zustand **Entwurf** synchronisiert. Sie werden der ersten Preisliste mit der gleichen Währung hinzugefügt, die in der Customer-Engagement-App verwendet wird, und unter Verwendung der alphabetischen Sortierung des Preislistennamens. Das bedeutet, sie werden der ersten Preisliste in einer Dynamics 365-App hinzugefügt, die mit der Währung Ihrer juristischen Tabelle übereinstimmt, in der das Produkt in einer Finance and Operations-App freigegeben wird. Wenn für die angegebene Währung keine Preisliste vorhanden ist, wird automatisch eine Preisliste erstellt und das Produkt dieser zugewiesen.
+Wenn die duales Schreiben-Funktionalität aktiviert ist, werden die Produkte von Finance und Operations in anderen Dynamics 365 Produkten im Status **Entwurf** synchronisiert. Sie werden der ersten Preisliste mit der gleichen Währung hinzugefügt, die in der Customer-Engagement-App verwendet wird, und unter Verwendung der alphabetischen Sortierung des Preislistennamens. Mit anderen Worten, sie werden der ersten Preisliste in einer Dynamics 365 App hinzugefügt, die mit der Währung Ihrer gesetzlichen Tabelle übereinstimmt, in der das Produkt in einer Finance und Operations App freigegeben ist. Wenn für die angegebene Währung keine Preisliste vorhanden ist, wird automatisch eine Preisliste erstellt und das Produkt dieser zugewiesen.
 
-Die aktuelle Implementierung der Plugins für duales Schreiben, die der Einheit die Standardpreisliste zuordnet, nach der mit der Finance and Operations-App verknüpften Währung sucht und die erste Preisliste in der Kundenbindungs-App mithilfe alphabetischer Sortierung der Preislistennamen findet. Wenn Sie mehrere Preislisten für eine Währung haben und eine Standardpreisliste für diese Währung festlegen möchten, müssen Sie den Preislistennamen auf einen Namen aktualisieren, der in der alphabetischen Reihenfolge früher erscheint als alle anderen Preislisten derselben Währung. Wenn es keine Preisliste für die angegebene Währung gibt, wird eine neue erstellt.
+Die derzeitige Implementierung der duales Schreiben-Plugins, die die Standardpreisliste mit der Einheit verknüpfen, suchen nach der Währung, die mit der Finance und Operations-App verknüpft ist, und finden die erste Preisliste in der Customer-Engagement-App anhand der alphabetischen Sortierung des Preislistennamens. Wenn Sie mehrere Preislisten für eine Währung haben und eine Standardpreisliste für diese Währung festlegen möchten, müssen Sie den Preislistennamen auf einen Namen aktualisieren, der in der alphabetischen Reihenfolge früher erscheint als alle anderen Preislisten derselben Währung. Wenn es keine Preisliste für die angegebene Währung gibt, wird eine neue erstellt.
 
 Produkte aus Finance and Operations-Apps werden standardmäßig mit anderen Dynamics 365-Apps im Status **Entwurf** synchronisiert. Um das Produkt mit dem Status **Aktiv** zu synchronisieren, können Sie es direkt in Auftragsangeboten verwenden, beispielsweise muss die folgende Einstellung ausgewählt werden. Wechseln Sie dazu zur Registerkarte **System > Verwaltung > Systemverwaltung > Systemeinstellungen > Verkauf**, und wählen Sie **Produkte im Status „Aktiv“ erstellen = ja** aus.
 
-Wenn Produkte synchronisiert werden, müssen Sie einen Wert in das Feld **Verkaufseinheit** in der Finance and Operations-App eingeben, weil es in Sales ein Pflichtfeld ist.
+Wenn Produkte synchronisiert werden, müssen Sie in der Finance und Operations App einen Wert für das Feld **Verkaufseinheit** eingeben, da es sich um ein Pflichtfeld in Sales handelt.
 
 Die Erstellung von Produktfamilien aus Dynamics 365 Sales wird bei der Synchronisierung von Produkten über duales Schreiben nicht unterstützt.
 
-Die Synchronisierung der Produkte erfolgt von den Finance and Operations-Apps nach Dataverse. Das bedeutet, dass die Werte in den Spalten der Produkttabelle in Dataverse zwar geändert werden können, die Werte beim Auslösen der Synchronisierung (durch Ändern einer Produktspalte in einer Finance and Operations-App) in Dataverse jedoch überschrieben werden.
+Die Synchronisierung der Produkte erfolgt von der Finance und Operations App auf Dataverse. Das bedeutet, dass die Werte der Produkttabellenspalten in Dataverse geändert werden können, aber wenn die Synchronisierung ausgelöst wird (wenn eine Produktspalte in einer Finance und Operations App geändert wird), überschreibt dies die Werte in Dataverse.
 
 Finance and Operations-Apps | Customer Engagement-Apps |
 ---|---
@@ -151,24 +151,24 @@ Finance and Operations-Apps | Customer Engagement-Apps |
 
 ### <a name="initial-synchronization-of-units"></a>Erstsynchronisierung von Einheiten
 
-Wenn die Option für duales Schreiben aktiviert ist, werden Einheiten aus Finance and Operations-Apps mit anderen Dynamics 365-Apps synchronisiert. Die Einheitengruppen, die aus Finance and Operations-Apps in Dataverse synchronisiert werden, verfügen über eine festgelegte Markierung, die angibt, dass sie „extern verwaltet“ werden.
+Wenn die Option für duales Schreiben aktiviert ist, werden Einheiten aus Finance and Operations-Apps mit anderen Dynamics 365-Apps synchronisiert. Die von den Apps Finance und Operations synchronisierten Einheitengruppen in Dataverse haben ein Flag festgelegt, das anzeigt, dass sie „Extern gepflegt“ sind.
 
-### <a name="matching-units-and-unit-classesgroups-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Datenabgleich von Einheiten und Einheitenklassen/-gruppen aus Finance and Operations- und anderen Dynamics 365-Apps
+### <a name="matching-units-and-unit-classesgroups-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Abgleichen von Einheiten und Einheitenklassen/-gruppen aus Finance and Operations- und anderen Dynamics 365-Apps
 
-Zunächst ist es wichtig zu beachten, dass der Integrationsschlüssel für die Einheit msdyn_symbol ist. Daher muss dieser Wert in Dataverse- oder anderen Dynamics 365-Apps eindeutig sein. Da die Eindeutigkeit einer Einheit in anderen Dynamics 365-Apps anhand des Paares „Kennung der Einheitengruppe“ und „Name“ definiert wird, müssen Sie verschiedene Szenarien für den Datenabgleich zwischen Finance and Operations-Apps und Dataverse berücksichtigen.
+Zunächst ist es wichtig zu beachten, dass der Integrationsschlüssel für die Einheit msdyn_symbol ist. Daher muss dieser Wert in Dataverse- oder anderen Dynamics 365-Apps eindeutig sein. Da in anderen Dynamics 365 Apps das Paar „Gruppen-ID der Einheit“ und „Name“ die Einzigartigkeit einer Einheit definiert, müssen Sie verschiedene Szenarien für den Abgleich von Einheitsdaten zwischen Apps für Finanzen und Betrieb und Dataverse in Betracht ziehen.
 
-Für Einheiten, die in Finance and Operations- und anderen Dynamics 365-Apps übereinstimmen/überlappen:
+Für Einheiten, die in Finance and Operations-Apps und anderen Dynamics 365-Apps übereinstimmen/überlappen:
 
-+ **Die Einheit gehört zu einer Einheitengruppe in anderen Dynamics 365-Apps, die der zugeordneten Einheitenklasse in Finance and Operations-Apps entspricht**. In diesem Fall muss die Spalte „msdyn_symbol“ in anderen Dynamics 365-Apps mit dem Einheitensymbol aus Finance and Operations-Apps ausgefüllt werden. Daher wird in anderen Dynamics 365-Apps der Zeitpunkt für den Abgleich der Daten und die Einheitengruppe als „Extern gepflegt“ festgelegt.
-+ **Die Einheit gehört zu einer Einheitengruppe in anderen Dynamics 365-Apps, die nicht der zugeordneten Einheitenklasse in Finance and Operations-Apps entspricht (keine vorhandene Einheitenklasse in Finance and Operations-Apps für die Einheitenklasse in anderen Dynamics 365-Apps).** In diesem Fall muss das msdyn_symbol mit einer zufälligen Zeichenfolge ausgefüllt werden. Beachten Sie, dass dieser Wert in anderen Dynamics 365-Apps eindeutig sein muss.
++ **Die Einheit gehört zu einer Einheitengruppe in anderen Dynamics 365-Apps, die der zugeordneten Einheitenklasse in Finance and Operations-Apps entspricht**. In diesem Fall muss die Spalte msdyn_symbol in anderen Dynamics 365 Apps mit dem Symbol der Einheit aus Apps für Finanzen und Betrieb gefüllt werden. Daher wird in anderen Dynamics 365-Apps der Zeitpunkt für den Abgleich der Daten und die Einheitengruppe als „Extern gepflegt“ festgelegt.
++ **Die Einheit gehört zu einer Einheitengruppe in anderen Dynamics 365-Apps, die der zugeordneten Einheitenklasse in Finance and Operations-Apps nicht entspricht (keine vorhandene Einheitenklasse in Finance and Operations-Apps für die Einheitenklasse in anderen Dynamics 365-Apps).** In diesem Fall muss das msdyn_symbol mit einer zufälligen Zeichenfolge ausgefüllt werden. Beachten Sie, dass dieser Wert in anderen Dynamics 365-Apps eindeutig sein muss.
 
 Für Einheiten und Einheitenklassen in Finance and Operations, die nicht in anderen Dynamics 365-Apps vorhanden sind:
 
-Im Rahmen des dualen Schreibens werden die Einheitengruppen aus Finance and Operations-Apps und die entsprechenden Einheiten erstellt und mit anderen Dynamics 365-Apps und Dataverse synchronisiert und die Einheitengruppe wird als „Extern verwaltet“ festgelegt. Es ist kein zusätzlicher Bootstrapping-Aufwand erforderlich.
+Im Rahmen von duales Schreiben werden die Einheitengruppen aus Apps für Finanzen und Betrieb und die entsprechenden Einheiten in anderen Dynamics 365 Apps erstellt und synchronisiert und Dataverse und die Einheitengruppe werden als „Extern gepflegt“ festgelegt. Es ist kein zusätzlicher Bootstrapping-Aufwand erforderlich.
 
 Für Einheiten in anderen Dynamics 365-Apps, die nicht in Finance and Operations-Apps vorhanden sind:
 
-Die Spalte „msdyn_symbol“ muss für alle Einheiten ausgefüllt werden. Die Einheiten können immer in Finance and Operations-Apps in der entsprechenden Einheitenklasse, sofern vorhanden, erstellt werden. Wenn die Einheitsklasse nicht existiert, muss zuerst die Einheitsklasse erstellt werden (beachten Sie, dass Sie keine Einheitsklasse in Finance and Operations-Apps erstellen können, außer durch Erweiterung, wenn Sie die Aufzählung erweitern), die zu der anderen Einheitsgruppe der Dynamics 365-Apps passt. Dann können Sie die Einheit erstellen. Beachten Sie, dass das Einheitensymbol in Finance and Operations-Apps „msdyn_symbol“ lauten muss, das zuvor in anderen Dynamics 365-Apps für die Einheit angegeben wurde.
+Die Spalte „msdyn_symbol“ muss für alle Einheiten ausgefüllt werden. Die Einheiten können immer in Finance and Operations-Apps in der entsprechenden Einheitenklasse erstellt werden (sofern vorhanden). Wenn die Einheitenklasse nicht existiert, muss sie zunächst erstellt werden (beachten Sie, dass Sie in Apps für Finanzen und Betrieb keine Einheitenklasse erstellen können, außer durch eine Erweiterung, wenn Sie die Aufzählung erweitern), die zur Einheitengruppe der anderen Dynamics 365 Apps passt. Dann können Sie die Einheit erstellen. Beachten Sie, dass das Einheitensymbol in Finance and Operations-Apps „msdyn_symbol“ lauten muss, das zuvor in anderen Dynamics 365-Apps für die Einheit angegeben wurde.
 
 ## <a name="product-policies-dimension-tracking-and-storage-groups"></a>Produktrichtlinien: Dimension, Nachverfolgung und Lagergruppen
 
@@ -191,27 +191,27 @@ Finance and Operations-Apps | Customer Engagement-Apps |
 ## <a name="integration-key-for-products"></a>Integrationsschlüssel für Produkte
 
 Integrationsschlüssel werden verwendet, um Produkte zwischen Dynamics 365 for Finance and Operations und Produkte in Dataverse eindeutig zu identifizieren.
-Für Produkte ist **(productnumber)** der eindeutige Schlüssel, der ein Produkt in Dataverse identifiziert. Sie wird durch die Verkettung von zusammengesetzt: **(Firma, msdyn_productnumber)**. Das **Unternehmen** gibt die juristische Person in Finance and Operations und **msdyn_productnumber** gibt die Produktnummer für das jeweilige Produkt in Finance and Operations an.
+Für Produkte ist **(productnumber)** der eindeutige Schlüssel, der ein Produkt in Dataverse identifiziert. Sie wird durch die Verkettung von zusammengesetzt: **(Firma, msdyn_productnumber)**. Das **Unternehmen** gibt die juristischen Person in Finance and Operations und **msdyn_productnumber** gibt die Produktnummer für das jeweilige Produkt in Finance and Operations an.
 
 Für Benutzer anderer Dynamics 365-Apps wird das Produkt in der Benutzeroberfläche mit **msdyn_productnumber** gekennzeichnet (beachten Sie, dass die Spaltenbeschriftung **Produktnummer** lautet). Im Produktformular werden das Unternehmen und das Feld „msydn_productnumber“ angezeigt. Die Spalte (productnumber), bei der es sich um den eindeutigen Schlüssel für ein Produkt handelt, wird jedoch nicht angezeigt.
 
 Wenn Sie Apps auf Dataverse aufbauen, sollten Sie darauf achten, dass Sie den Integrationsschlüssel **Produktnummer** (die eindeutige Produkt-ID) verwenden. Verwenden Sie nicht **msdyn_productnumber**, da sie nicht eindeutig ist.
 
-## <a name="initial-synchronization-of-products-and-migration-of-data-from-dataverse-to-finance-and-operations"></a>Erstsynchronisierung von Produkten und Migration von Daten aus Dataverse nach Finance and Operations
+## <a name="initial-synchronization-of-products-and-migration-of-data-from-dataverse-to-finance-and-operations"></a>Erstinstallation von Produkten und Migration von Daten aus Dataverse nach Finance and Operations
 
 ### <a name="initial-synchronization-of-products"></a>Erstsynchronisierung von Produkten
 
-Wenn Dual-Write aktiviert ist, werden Produkte aus Finance and Operations-Apps nach Dataverse und Customer Engagement-Apps synchronisiert. Produkte, die in Dataverse und anderen Dynamics 365-Anwendungen vor der Freigabe von Dual-Write erstellt wurden, werden nicht aktualisiert oder mit den Produktdaten von Finance and Operations Anwendungen abgeglichen.
+Wenn duales Schreiben aktiviert ist, werden Produkte aus Apps für Finanzen und Betrieb mit Dataverse und Customer-Engagement-Apps synchronisiert. Produkte, die in Dataverse und anderen Dynamics 365 Apps erstellt wurden, bevor duales Schreiben freigegeben wurde, werden nicht aktualisiert oder mit Produktdaten aus Apps für Finanzen und Betrieb abgeglichen.
 
-### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Abgleich von Produktdaten aus Finance and Operations- und anderen Dynamics 365-Apps
+### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Abgleichen von Produktdaten aus Finance and Operations- und anderen Dynamics 365-Apps
 
-Wenn identische Produkte (überlappend/übereinstimmend) in Finance and Operations-Apps sowie in Dataverse und anderen Dynamics 365-Apps beibehalten werden, findet bei Aktivierung von Dual-Write eine Synchronisierung der Produkte von Finance and Operations statt und in Dataverse werden für dasselbe Produkt doppelte Zeilen angezeigt.
-Um die vorherige Situation zu vermeiden, wenn andere Dynamics 365-Apps mit Finance and Operations überlappende/übereinstimmende Produkte aufweisen, muss der Administrator, der Dual-Write aktiviert, ein Bootstrap für die Spalten **Unternehmen** (Beispiel: „USMF“) und **msdyn_productnumber** (Beispiel: „1234:Black:S“) ausführen, bevor die Produkte synchronisiert werden. Das bedeutet, dass diese beiden Spalten des Produkts in Dataverse mit dem jeweiligen Unternehmen, mit dem das Produkt abgeglichen werden muss, und mit seiner Produktnummer in Finance and Operations ausgefüllt werden müssen.
+Wenn in Finance und Operations und in Dataverse und anderen Dynamics 365 Apps die gleichen Produkte geführt werden (Überschneidungen/Matching), findet bei Aktivierung von duales Schreiben die Synchronisierung der Produkte aus Finance und Operations statt und in Dataverse erscheinen doppelte Zeilen für das gleiche Produkt.
+Um die oben beschriebene Situation zu vermeiden, wenn andere Dynamics 365 Apps Produkte haben, die sich mit Finance und Operations überschneiden/übereinstimmen, muss der Administrator, der duales Schreiben aktiviert, die Spalten **Firma** (Beispiel: „USMF“) und **msdyn_productnumber** (Beispiel: „1234:Black:S“) booten, bevor die Synchronisierung der Produkte stattfindet. Mit anderen Worten, diese beiden Spalten im Produkt in Dataverse müssen mit der jeweiligen Firma in Finance und Operations, mit der das Produkt abgeglichen werden muss, und mit ihrer Produktnummer ausgefüllt werden.
 
-Wenn die Synchronisierung aktiviert und ausgeführt wird, werden die Produkte aus Finance and Operations anschließend mit den abgeglichenen Produkten in Dataverse- und anderen Dynamics 365-Apps synchronisiert. Dies gilt für eindeutig identifizierbare Produkte und für Produktvarianten.
+Wenn die Synchronisierung aktiviert und ausgeführt wird, werden die Produkte aus Finance and Operations anschließend mit den abgeglichenen Produkten in Dataverse und anderen Dynamics 365-Apps synchronisiert. Dies gilt für eindeutig identifizierbare Produkte und für Produktvarianten.
 
-### <a name="migration-of-product-data-from-other-dynamics-365-apps-to-finance-and-operations"></a>Migration von Produktdaten aus anderen Dynamics 365-Apps zu Finance and Operations
+### <a name="migration-of-product-data-from-other-dynamics-365-apps-to-finance-and-operations"></a>Migration von Produktdaten von anderen Dynamics 365-Apps zu Finance and Operations
 
-Wenn andere Dynamics 365-Apps Produkte haben, die nicht in Finance and Operations vorhanden sind, kann der Administrator zunächst die **EcoResReleasedProductCreationV2Entity** für den Import dieser Produkte in Finance and Operations verwenden. Und anschließend kann er die Produktdaten aus Finance and Operations- und anderen Dynamics 365-Apps abgleichen, wie oben beschrieben.
+Wenn andere Apps in Dynamics 365 Produkte haben, die in Finance und Operations nicht vorhanden sind, kann der Administrator zunächst die **EcoResReleasedProductCreationV2Entity** verwenden, um diese Produkte in Finance und Operations zu importieren. Und anschließend kann er die Produktdaten aus Finance and Operations- und anderen Dynamics 365-Apps abgleichen, wie oben beschrieben.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

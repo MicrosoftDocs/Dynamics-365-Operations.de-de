@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1902e80313c5460ac38896bc2f46d83897e3a58
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: d1593206e8e22aed518ebca9bee0772c6620bec9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592664"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068791"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Anzeigen und Aktualisieren von Entitätsdaten mit Excel 
 
@@ -28,7 +28,10 @@ ms.locfileid: "7592664"
 [!include [banner](../includes/banner.md)]
 
 
-In diesem Thema wird erläutert, wie Entitätsdaten in Microsoft Excel geöffnet und anschließend mit dem Microsoft Dynamics-Add-In für Excel angezeigt, aktualisiert und bearbeitet werden. Um Entitätsdaten zu öffnen, können Sie entweder mit Excel oder Finance and Operations-Apps beginnen.
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+
+In diesem Thema wird erläutert, wie Entitätsdaten in Microsoft Excel geöffnet und anschließend mit dem Microsoft Dynamics-Add-In für Excel angezeigt, aktualisiert und bearbeitet werden. Um die Daten der Entitäten zu öffnen, können Sie entweder von Excel oder den Apps Finance und Operations aus starten.
 
 Durch das Öffnen der Entitätsdaten in Excel können Sie die Daten mit dem Add-in für Excel schnell und einfach anzeigen und bearbeiten. Dieses Add-In erfordert Microsoft Excel 2016 oder höher.
 
@@ -37,15 +40,15 @@ Durch das Öffnen der Entitätsdaten in Excel können Sie die Daten mit dem Add-
 
 Weitere Informationen zur Verwendung des Excel-Add-Ins bietet das kurze Video [Erstellen einer Excel-Vorlage für Kopf- und Positionsmuster](https://youtu.be/RTicLb-6dbI).
 
-## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Öffnen von Entitätsdaten in Excel beim Start einer Finance and Operations-App
-1. Wählen Sie auf einer Seite in einer Finance and Operations-App die Option **In Microsoft Office öffnen** aus.
+## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Öffnen Sie Entitäten in Excel, wenn Sie aus einer Finance und Operations App starten
+1. Wählen Sie auf einer Seite in einer Finance und Operations App **Öffnen in Microsoft Office**.
 
     Wenn die Stammdatenquelle (Tabelle) der Seite dieselbe ist wie die Stammdatenquelle für beliebige Entitäten, werden standardmäßige **In Excel öffnen**-Optionen für die Seite generiert. **In Excel öffnen**-Optionen finden Sie auf häufig verwendeten Seiten wie **Alle Kreditoren** und **Alle Debitoren**.
  
 2. Klicken Sie auf eine **In Excel öffnen**-Option, um die generierte Arbeitsmappe zu öffnen. Diese Arbeitsmappe besitzt Bindungsinformationen für die Entität, einen Mauszeiger auf Ihre Umgebung und einen Zeiger auf das Excel-Add.
 3. Klicken Sie in Excel auf die Option zum **Bearbeiten aktiveren**, damit das Excel Add-In ausgeführt werden kann. Das Excel-Add-In wird in einem Bereich auf der rechten Seite des Excel-Fensters ausgeführt.
 4. Wenn Sie das Excel-Add-In zum ersten Mal ausführen, klicken Sie auf **Diesem Add-In vertrauen**.
-5. Klicken Sie nach Aufforderung auf **Anmelden** und melden Sie sich mit den Anmeldedaten an, mit denen Sie sich bei der Finance and Operations-App angemeldet haben. Das Excel-Add-In verwendet einen vorherigen Anmeldungskontext aus dem Browser und meldet Sie automatisch an, wenn dies möglich ist. (Informationen zum Browser, der basierend auf dem Betriebssystem verwendet wird, finden Sie unter [Von Office-Add-Ins verwendete Browser](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.). Überprüfen Sie den Benutzernamen oben rechts im Excel-Add-In, um sicherzustellen, dass die Anmeldung erfolgreich war. 
+5. Wenn Sie aufgefordert werden, sich anzumelden, wählen Sie **Anmelden** und melden Sie sich mit den Anmeldeinformationen an, die Sie auch für die Finance und Operations App verwendet haben. Das Excel-Add-In verwendet einen vorherigen Anmeldungskontext aus dem Browser und meldet Sie automatisch an, wenn dies möglich ist. (Informationen zum Browser, der basierend auf dem Betriebssystem verwendet wird, finden Sie unter [Von Office-Add-Ins verwendete Browser](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.). Überprüfen Sie den Benutzernamen oben rechts im Excel-Add-In, um sicherzustellen, dass die Anmeldung erfolgreich war. 
 
 Das Excel-Add-In liest automatisch die Daten für die Entität, die Sie ausgewählt haben. Beachten Sie, dass keine Daten in der Arbeitsmappe sind, bis sie vom Excel-Add-In eingelesen werden.
 
@@ -54,7 +57,7 @@ Das Excel-Add-In liest automatisch die Daten für die Entität, die Sie ausgewä
 2. Suchen Sie im Office Store nach dem Schlüsselwort **Dynamics**, und klicken Sie auf **Hinzufügen** neben dem **Microsoft Dynamics Office Add-in** (dem Excel-Add-In).
 3. Wenn Sie das Excel-Add-In zum ersten Mal ausführen, klicken Sie auf **Diesem Add-In vertrauen**, damit das Excel-Add-In ausgeführt werden kann. Das Excel-Add-In wird in einem Bereich auf der rechten Seite des Excel-Fensters ausgeführt.
 4. Klicken Sie auf **Serverinformationen hinzufügen**, um den Bereich **Optionen** zu öffnen.
-5. Kopieren Sie die Browser-URL der Zielinstanz der Finance and Operations-App, fügen Sie sie in das Feld **Server-URL** ein und löschen Sie dann alles nach dem Hostnamen. Die resultierende URL soll derzeit nur den Hostnamen haben.
+5. Kopieren Sie in Ihrem Browser die URL Ihrer Zielinstanz der App Finance und Operations, fügen Sie sie in das Feld **Server-URL** ein und löschen Sie dann alles nach dem Hostnamen. Die resultierende URL soll derzeit nur den Hostnamen haben.
 
     Wenn beispielsweise die URL `https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage` ist, löschen Sie alles außer `https://xxx.dynamics.com`.
 
@@ -73,7 +76,7 @@ Das Excel-Add-In liest automatisch die Daten für die Entität, die Sie ausgewä
 Nachdem das Excel-Add-In die Entitätsdaten in die Arbeitsmappe eingelesen hat, können Sie die Daten jederzeit aktualisieren, indem Sie im Excel-Add-In auf **Aktualisieren** klicken.
 
 ## <a name="edit-entity-data-in-excel"></a>Bearbeiten von Entitätsdaten in Excel
-Sie können Entitätsdaten bei Bedarf ändern und anschließend wieder in Finance and Operations-Apps veröffentlichen, indem Sie im Excel-Add-In **Veröffentlichen** auswählen. Wenn Sie einen Datensatz bearbeiten möchten, wählen Sie eine Zelle im Arbeitsblatt und ändern anschließend den Zellenwert. Wenn Sie einen neuen Datensatz hinzufügen möchten, führen Sie die folgenden Schritte aus:
+Sie können die Daten der Entitäten nach Bedarf ändern und sie dann wieder in den Apps von Finance und Operations veröffentlichen, indem Sie **Veröffentlichen** im Excel-Add-In wählen. Wenn Sie einen Datensatz bearbeiten möchten, wählen Sie eine Zelle im Arbeitsblatt und ändern anschließend den Zellenwert. Wenn Sie einen neuen Datensatz hinzufügen möchten, führen Sie die folgenden Schritte aus:
 
 - Klicken Sie auf eine beliebige Datenquelle im Arbeitsblatt, und klicken Sie dann im Excel-Add-In auf **Neu**.
 - Klicken Sie irgendwo in die letzte Zeile der Datenquelle im Arbeitsblatt, und drücken Sie dann die TAB-Taste, bis der Cursor die letzten Spalte dieser Zeile verlässt und eine neue Zeile erstellt wird.

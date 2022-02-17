@@ -2,7 +2,7 @@
 title: Edge-Skalierungseinheiten mithilfe von LBD auf benutzerdefinierter Hardware bereitstellen
 description: In diesem Thema wird erläutert, wie Sie lokale Edge-Skalierungseinheiten mithilfe von benutzerdefinierter Hardware und Bereitstellung bereitstellen, die auf lokalen Geschäftsdaten (LBD) basiert.
 author: cabeln
-ms.date: 11/29/2021
+ms.date: 01/24/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2407d4e3c6adaf5df2e8f5440ee8336f86012caf
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 1204b65e76c107c29a94a61c321064a87c7571fb
+ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920672"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "8024541"
 ---
 # <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>Edge-Skalierungseinheiten mithilfe von LBD auf benutzerdefinierter Hardware bereitstellen
 
@@ -26,6 +26,13 @@ Edge-Skalierungseinheiten spielen eine wichtige Rolle in der verteilten Hybridto
 Edge-Skalierungseinheiten können bereitgestellt werden, indem eine [lokale Umgebung](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) mit lokalen Geschäftsdaten (LBD) erstellt wird und diese dann so konfiguriert wird, dass es als Skalierungseinheit in Ihrer verteilten Hybridtopologie für das Supply Chain Management fungiert. Dies wird erreicht, indem die lokale LBD-Umgebung mit einer Supply Chain Management-Umgebung in der Cloud verknüpft wird, die als Hub konfiguriert wurde.  
 
 In diesem Thema wird beschrieben, wie Sie eine lokale LBD-Umgebung als Edge-Skalierungseinheit einrichten und sie dann einem Hub zuordnen.
+
+## <a name="infrastructure-considerations"></a>Überlegungen zur Infrastruktur
+
+Edge Scale-Units werden in lokalen Umgebungen ausgeführt, sodass die Infrastrukturanforderungen recht ähnlich sind. Es gibt jedoch einige Unterschiede, die Sie beachten sollten:
+
+- Edge Scale-Units verwenden kein Financial Reporting und benötigen daher keine Financial Reporting-Knoten.
+- Die Workloads für Fertigung und Lagerhaltung sind nicht rechenintensiv, daher sollten Sie die Rechenleistung für AOS-Knoten entsprechend dimensionieren.
 
 ## <a name="deployment-overview"></a>Bereitstellungsübersicht
 

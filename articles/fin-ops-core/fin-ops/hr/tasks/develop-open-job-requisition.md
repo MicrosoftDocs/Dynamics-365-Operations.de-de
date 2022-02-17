@@ -13,16 +13,20 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a97c2a8bb6c334a5a060fcbfc9527a41ba592750
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 4e3287fc824f2f7eb725b11c990a1c457d45439f
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964654"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075148"
 ---
 # <a name="develop-and-open-job-requisition"></a>Stellenanforderung ausarbeiten und freigeben
 
 [!include [banner](../../includes/banner.md)]
+
+> [!IMPORTANT]
+> Die in diesem Thema beschriebene Funktionalität ist derzeit für Debitor-Kunden aus dem Bereich Human Resources auf der Finance-Infrastruktur verfügbar.  
+
 
 Mithilfe von Personalbeschaffungsprojekten können Sie den Personalbeschaffungsprozess verwalten. Für jedes Personalbeschaffungsprojekt können Sie Informationen einrichten wie die Stelle, für die Sie Personal beschaffen möchten, den Namen des Personalbeschaffungsmitarbeiters, den Status des Projekts und die Abteilung, in der sich die Stelle befindet. Nachdem Sie ein Personalbeschaffungsprojekt erstellt haben, können Sie eine Stellenausschreibung dafür schreiben, die Stellenausschreibung auf der **Employee Self-Service**-Seite veröffentlichen, Bewerbungen für Anstellungen mit dem Projekt verknüpfen und Aktivitäten für das Projekt nachverfolgen. Das Demodatenunternehmen **USMF** wurde verwendet, um diese Prozedur zu erstellen.
 

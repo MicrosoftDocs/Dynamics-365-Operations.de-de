@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b2e0145c28b40f4fbfb54ad7e7ed32fbc130c569
-ms.sourcegitcommit: 8afd0cdb39ec443fb7631c39401967cce0fac34e
+ms.openlocfilehash: f9674bb68d7f577a6efdef3416d1731d743d0555
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7727431"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087165"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Releaseprozess und Releaseverlauf der Planungsoptimierung
 
@@ -33,6 +33,8 @@ Da keine Benachrichtigungen angezeigt werden, wenn die Planungsoptimierung in Ih
 
 | Änderungen | Funktionsverwaltungsdetails | Erscheinungsdaten |
 |---|---|---|
+| <p>Unterstützung der Planungspriorität für Produktionsaufträge hinzugefügt. | Verfügbar mit Version 10.0.25 als Teil der Funktion mit dem Namen *Prioritätsgesteuerte MRP-Unterstützung für Planungsoptimierung*. | 12.-18. November 2021 |
+| <p>Allgemeine Leistungs-, Qualitäts- und Stabilitätsverbesserungen. | Es ist keine Funktionsverwaltung erforderlich. | 12.-18. November 2021 |
 | <p>Unterstützung für Prozesszeitberechnungsformeln, Produktionsroute mit Überlappung und Produktionsvorgangsnummer bei Bedarfstransaktionen hinzugefügt.</p><p>Verbesserte Fehlermeldungen für die Produktionsplanung in Bezug auf Zeitüberschreitung, Kapazität konnte nicht gefunden werden und zyklische Route.</p><p>Verbesserte Konsistenz bei der Berechnung von Zugangsdaten und Ausgabedaten sowohl für Bestellvorschläge als auch für feste Bestellungen.</p><p>Allgemeine Leistungs-, Qualitäts- und Stabilitätsverbesserungen. | Funktionsname: *Zeitplanung mit unbegrenzter Kapazität für Planungsoptimierung* | 22.-27. Oktober 2021 |
 | <p>Unterstützung für die Berücksichtigung des Ausschussprozentsatzes bei der Berechnung der Verarbeitungszeit hinzugefügt.</p><p>Unterstützung für Vorgangsnummer und Materialverbrauch während der Planung hinzugefügt. | Funktionsname: *Zeitplanung mit unbegrenzter Kapazität für Planungsoptimierung* | 5.-7. Oktober 2021 |
 | <p>Unterstützung für Produktionsrouten-Auftragstypen hinzugefügt: **Warten davor**, **Warten danach** und **Transportzeit**.</p><p>Allgemeine Leistungs-, Qualitäts- und Stabilitätsverbesserungen. | Funktionsname: *Zeitplanung mit unbegrenzter Kapazität für Planungsoptimierung* | 25.-30. September 2021 |

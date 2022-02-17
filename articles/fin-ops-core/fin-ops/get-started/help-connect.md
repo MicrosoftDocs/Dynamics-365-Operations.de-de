@@ -1,5 +1,5 @@
 ---
-title: Hilfeumgebung für Finance and Operations-Apps konfigurieren
+title: Konfigurieren Sie die Hilfe für Apps für Finanzen und Betrieb
 description: Dieses Thema enthält Informationen zu den Komponenten des Hilfesystems für einige Microsoft Dynamics 365-Apps.
 author: margoc
 ms.date: 08/11/2021
@@ -15,22 +15,25 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a6c37822e84ba08fa0720ed2b3912cbec1448e3
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: bac06e258a96bb50bb6de7957e3e5ed07e966127
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594856"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071007"
 ---
-# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Hilfeumgebung für Finance and Operations-Apps konfigurieren
+# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurieren Sie die Hilfe für Apps für Finanzen und Betrieb
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema finden Sie eine Übersicht über die Komponenten des Hilfesystems für Finance and Operations-Apps wie Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce und Dynamics 365 Human Resources. In diesem Thema wird auch erläutert, wie diese Apps verbunden werden, und es wird eine Zusammenfassung des Prozesses zum Erstellen einer benutzerdefinierten Hilfe bereitgestellt.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+In diesem Thema finden Sie einen Überblick über die Komponenten des Hilfesystems für Apps für Finanzen und Betrieb, wie Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce und Dynamics 365 Human Resources. In diesem Thema wird auch erläutert, wie diese Apps verbunden werden, und es wird eine Zusammenfassung des Prozesses zum Erstellen einer benutzerdefinierten Hilfe bereitgestellt.
 
 ## <a name="help-architecture"></a>Hilfearchitektur
 
-Finance and Operations-Apps enthalten konzeptionelle Übersichten und andere Themen, die auf der Website [Microsoft Dynamics 365-Dokumentation](/dynamics365/) veröffentlicht werden. Auf diesen Inhalt kann dann über den Bereich **Hilfe** des Produkts zugegriffen werden. Die folgende Abbildung zeigt Teile des Hilfesystems.
+Die Apps für Finanzen und Betrieb enthalten konzeptionelle Übersichten und andere Themen, die auf der [Microsoft Dynamics 365 Dokumentation](/dynamics365/) Seite veröffentlicht werden. Auf diesen Inhalt kann dann über den Bereich **Hilfe** des Produkts zugegriffen werden. Die folgende Abbildung zeigt Teile des Hilfesystems.
 
 [![Hilfearchitektur.](./media/help-architecture.png)](./media/help-architecture.png)
 
@@ -60,7 +63,7 @@ Führen Sie die folgenden Schritte auf der Seite **Systemparameter** aus, um Auf
 2. Wählen Sie die BPM-Bibliotheken (innerhalb des ausgewählten Projekts) aus, von denen Sie die Aufgabenaufzeichnungen abrufen wollen.
 3. Wählen Sie die Anzeigereihenfolge der BMP-Bibliotheken aus. Anhand der Anzeigereihenfolge wird die Reihenfolge definiert, in der Aufgabenaufzeichnungen aus den Bibliotheken im Bereich **Hilfe** angezeigt werden.
 
-Nachdem Sie diese Schritte ausgeführt haben, können Sie den Bereich **Hilfe** öffnen und die Registerkarte **Aufgabenleitfäden** auswählen. Daraufhin werden die Aufgabenleitfäden angezeigt, die für die Seite gelten, auf der Sie sich derzeit in Finance and Operations-Apps befinden. Wenn keine Aufgabenhandbücher gefunden werden, können Sie Schlüsselwörter eingeben, um die Suche genauer zu definieren.
+Nachdem Sie diese Schritte durchgeführt haben, können Sie den Bereich **Hilfe** öffnen und die Registerkarte **Aufgabenanleitungen** auswählen. Sie sehen nun die Anleitungen, die für die Seite gelten, auf der Sie sich gerade in den Apps von Finance und Operations befinden. Wenn keine Aufgabenhandbücher gefunden werden, können Sie Schlüsselwörter eingeben, um die Suche genauer zu definieren.
 
 ### <a name="showing-translated-task-guides"></a>Zeigt übersetzte Aufgabenleitfäden
 
@@ -84,7 +87,7 @@ Wenn Partner eine Bibliothek auf eine Unternehmensbibliothek hochstufen und in e
 
 ### <a name="connect-a-custom-help-site"></a>Benutzerdefinierte Hilfewebsite verbinden
 
-Finance and Operations-Apps werden selten in ihrer vorgefertigten Form verwendet. Stattdessen wird die Lösung den Anforderungen der Organisation entsprechend angepasst und erweitert. Sie können die Hilfeumgebung auch anpassen und erweitern. Sie können dem Bereich **Hilfe** des Produkts beispielsweise eine benutzerdefinierte Hilfe hinzufügen.
+Apps für Finanzen und Betrieb werden nur selten in ihrem standardmäßigen Formular verwendet. Stattdessen wird die Lösung den Anforderungen der Organisation entsprechend angepasst und erweitert. Sie können die Hilfeumgebung auch anpassen und erweitern. Sie können dem Bereich **Hilfe** des Produkts beispielsweise eine benutzerdefinierte Hilfe hinzufügen.
 
 Microsoft hat ein Toolkit bereitgestellt, mit dem Sie benutzerdefinierte Hilfe bereitstellen und mit dem Bereich **Hilfe** verbinden können. Weitere Informationen zum Einrichten einer benutzerdefinierten Hilfelösung, die mit dem Bereich **Hilfe** verbunden ist, findne Sie unter [Übersicht über benutzerdefinierte Hilfe](../../dev-itpro/help/custom-help-overview.md).
 

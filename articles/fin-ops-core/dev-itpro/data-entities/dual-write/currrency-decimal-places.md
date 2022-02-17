@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: bce58631ecd54bb90993bd552d529d3b379de1b1
-ms.sourcegitcommit: 6762a674a552353d9f53587923c9acba9b43cb56
+ms.openlocfilehash: e9dc3e6c5fbec9636370b64a9bbdcf8a5834d332
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "7917729"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061835"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migration vom Währungsdatentyp für duales Schreiben
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Sie können die Anzahl der Dezimalstellen, die für Währungswerte unterstützt werden, auf maximal 10 erhöhen. Die Standardgrenze liegt bei vier Dezimalstellen. Indem Sie die Anzahl der Dezimalstellen erhöhen, können Sie Datenverluste vermeiden, wenn Sie zum Synchronisieren von dualem Schreiben verwenden. Die Erhöhung der Anzahl der Dezimalstellen ist eine Opt-In-Änderung. Um es zu implementieren, müssen Sie Unterstützung von Microsoft anfordern.
 
@@ -29,7 +29,7 @@ Das Ändern der Anzahl der Dezimalstellen erfolgt in zwei Schritten:
 1. Fordern Sie die Migration von Microsoft an.
 2. Ändern Sie die Anzahl der Dezimalstellen in Dataverse.
 
-Die Finance and Operations App und Dataverse muss die gleiche Anzahl von Dezimalstellen in Währungswerten unterstützen. Andernfalls kann es zu Datenverlust kommen, wenn diese Informationen zwischen Apps synchronisiert werden. Der Migrationsprozess konfiguriert die Art und Weise neu, in der Währungs- und Wechselkurswerte gespeichert werden, ändert jedoch keine Daten. Nach Abschluss der Migration kann die Anzahl der Dezimalstellen für Währungscodes und Preise erhöht werden, und die Daten, die Benutzer eingeben und anzeigen, können dezimaler sein.
+Die Finance und Operations App und Dataverse müssen die gleiche Anzahl von Dezimalstellen bei Währungswerten unterstützen. Andernfalls kann es zu Datenverlust kommen, wenn diese Informationen zwischen Apps synchronisiert werden. Der Migrationsprozess konfiguriert die Art und Weise neu, in der Währungs- und Wechselkurswerte gespeichert werden, ändert jedoch keine Daten. Nach Abschluss der Migration kann die Anzahl der Dezimalstellen für Währungscodes und Preise erhöht werden, und die Daten, die Benutzer eingeben und anzeigen, können dezimaler sein.
 
 Die Migration ist optional. Wenn Sie möglicherweise mehr Dezimalstellen unterstützen, empfehlen wir Ihnen, die Migration in Betracht zu ziehen. Organisationen, die keine Werte mit mehr als vier Dezimalstellen benötigen, müssen nicht migrieren.
 
@@ -37,7 +37,7 @@ Die Migration ist optional. Wenn Sie möglicherweise mehr Dezimalstellen unterst
 
 Speicherung für vorhandene Währungsspalten in Dataverse kann nicht mehr als vier Dezimalstellen unterstützen. Daher werden während des Migrationsprozesses Währungswerte in neue interne Spalten in der Datenbank kopiert. Dieser Vorgang wird kontinuierlich ausgeführt, bis alle Daten migriert wurden. Intern ersetzen am Ende der Migration die neuen Speichertypen die alten Speichertypen, die Datenwerte bleiben jedoch unverändert. Die Währungsspalten können dann bis zu 10 Dezimalstellen unterstützen. Während des Migrationsprozesses kann Dataverse ohne Unterbrechung weiter verwendet werden.
 
-Gleichzeitig werden die Wechselkurse so geändert, dass sie bis zu 12 Dezimalstellen anstelle der aktuellen Grenze von 10 unterstützen. Diese Änderung ist erforderlich, damit die Anzahl der Dezimalstellen in der Finance and Operations App und Dataverse gleich ist.
+Gleichzeitig werden die Wechselkurse so geändert, dass sie bis zu 12 Dezimalstellen anstelle der aktuellen Grenze von 10 unterstützen. Diese Änderung ist erforderlich, damit die Anzahl der Dezimalstellen sowohl in der Finance und Operations App als auch bei Dataverse gleich ist.
 
 Die Migration ändert keine Daten. Nach der Konvertierung der Währungs- und Wechselkursspalten können Administratoren das System so konfigurieren, dass bis zu 10 Dezimalstellen für Währungsspalten verwendet werden, indem die Anzahl der Dezimalstellen für jede Transaktionswährung und die Preisgestaltung angegeben werden.
 

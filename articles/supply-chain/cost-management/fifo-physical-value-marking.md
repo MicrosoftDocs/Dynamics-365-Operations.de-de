@@ -2,137 +2,140 @@
 title: FIFO mit physischem Wert und Markierung
 description: Bei FIFO (First in, First out) handelt es sich um eine Lagersteuerung, bei der die zuerst erworbenen Zugänge das Lager als Erstes wieder verlassen. Wertmäßig aktualisierte Abgänge aus dem Lager werden mit dem ältesten wertmäßig aktualisierten Zugang zu einem Lagerbestand ausgeglichen, der auf dem wertmäßigen Datum der Lagerbuchung basiert.
 author: AndersGirke
-ms.date: 06/15/2020
+ms.date: 02/02/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 54682
-ms.assetid: dc0e2855-83a0-41a7-a398-3c7852597d1a
 ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9be0881a1f37d1478ea6302576aa5c348d94714
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5280498a23df26873dda1f380f686796f5e1055f
+ms.sourcegitcommit: fefe93f3f44d8aa0b7e6d54cc4a3e5eca6e64feb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574040"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092139"
 ---
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO mit physischem Wert und Markierung
 
 [!include [banner](../includes/banner.md)]
 
-Bei FIFO (First in, First out) handelt es sich um eine Lagersteuerung, bei der die zuerst erworbenen Zugänge das Lager als Erstes wieder verlassen. Wertmäßig aktualisierte Abgänge aus dem Lager werden mit dem ältesten wertmäßig aktualisierten Zugang zu einem Lagerbestand ausgeglichen, der auf dem wertmäßigen Datum der Lagerbuchung basiert. 
 
-Wenn Sie FIFO verwenden, müssen Sie die FIFO-Regel nicht verwenden. Stattdessen können Lagerbuchungen markiert werden, damit ein bestimmter Artikelzugang mit einem bestimmten Abgang ausgeglichen wird. Es wird empfohlen, einen regelmäßigen Lagerabschluss durchzuführen, wenn Sie die Lagersteuerung FIFO verwenden. In den folgenden Beispielen werden die Auswirkungen der Verwendung von FIFO anhand von drei unterschiedlichen Konfigurationen veranschaulicht:
+First in, first out (FIFO) ist eine Methode der Bestandsverwaltung und -bewertung, bei der die zuerst produzierten oder erworbenen Bestände zuerst verkauft, verwendet oder entsorgt werden. Während des Bestandsabschlusses in Microsoft Dynamics 365 Supply Chain Management erstellt das System Abrechnungen, bei denen der erste Zugang mit dem ersten Abgang abgeglichen wird, und so weiter.
 
--   FIFO ohne die Option **Physischen Wert einbeziehen**
--   FIFO mit der Option **Physischen Wert einbeziehen**
--   FIFO mit Markierung
+Die Abrechnungen und das Abgleichsprinzip beruhen auf dem Finanzdatum der Transaktionen im Bestand. Eine vorläufige Bewertung der Abrechnungen und Anpassungen kann durch Ausführen der Bestandsneuberechnung vorgenommen werden.
+
+Sie können das FIFO-Prinzip außer Kraft setzen, indem Sie Transaktionen im Bestand so markieren, dass ein bestimmter Artikel-Eingang mit einer bestimmten Ausgabe verrechnet wird. Ein periodischer Bestandsabschluss ist erforderlich, wenn Sie das FIFO-Bestandsmodell verwenden, um Abrechnungen zu erstellen und den Wert von Ausgaben nach dem FIFO-Prinzip anzupassen. Bis Sie den Bestandsabschlussprozess ausführen, werden Ausgabetransaktionen zum laufenden Durchschnitt bewertet, wenn die physischen und finanziellen Aktualisierungen erfolgt sind. Sofern Sie nicht die Markierung verwenden, wird der laufende Durchschnitt berechnet, wenn die physische oder finanzielle Aktualisierung ausgeführt wird. In den folgenden Beispielen werden die Auswirkungen der Verwendung von FIFO anhand von drei unterschiedlichen Konfigurationen veranschaulicht:
+
+- FIFO ohne die Option **Physischen Wert einbeziehen**
+- FIFO mit der Option **Physischen Wert einbeziehen**
+- FIFO mit Markierung
 
 ## <a name="fifo-without-the-include-physical-value-option"></a>FIFO ohne die Option "Physischen Wert einbeziehen"
-In diesem Beispiel ist die Artikelmodellgruppe so konfiguriert, dass der physische Wert nicht einbezogen wird. Die folgende Abbildung zeigt diese Buchungen an:
 
--   1a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 10,00 (Kosten).
--   1b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 10,00 (Kosten).
--   2a. Physischer Lagerzugang für die Menge "2" zu jeweils EUR 10,00 (Kosten).
--   2b. Wertmäßiger Lagerzugang für die Menge "2" zu jeweils EUR 10,00 (Kosten).
--   3a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 25,00 (Kosten).
--   4a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 30,00 (Kosten).
--   4b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 30,00 (Kosten).
--   5a. Physischer Lagerabgang für die Menge "1" zu einem Einstandspreis von EUR 20,00 (laufender Durchschnitt wertmäßig aktualisierter Buchungen).
--   5b. Wertmäßiger Lagerabgang für die Menge "1" zu einem Einstandspreis von EUR 15,00 (laufender Durchschnitt wertmäßig aktualisierter Buchungen).
--   6. Lagerabschluss wird vorgenommen. Der erste wertmäßig aktualisierte Abgang wird auf Basis der FIFO-Methode gegen den ersten wertmäßig aktualisierten Zugang ausgeglichen. Für die Abgangsbuchung erfolgt eine Regulierung in Höhe von EUR –5,00.
+In diesem Beispiel ist das Kontrollkästchen **Physikalischen Wert einbeziehen** in der Artikelmodellgruppe für das zugelassene Produkt deaktiviert. Die folgende Abbildung zeigt diese Buchungen an:
 
-In dem neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig aktualisierten Buchungen berücksichtigt. Die folgenden Abbildungen zeigen die Auswirkungen des Lagermodells FIFO auf diese Buchungsserie an, wenn die Option **Physischen Wert einbeziehen** nicht verwendet wird. 
+- 1a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 10,00 (Kosten).
+- 1b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 10,00 (Kosten).
+- 2a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 20,00 (Kosten).
+- 2b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 22,00 (Kosten).
+- 3a. Physischer Bestandsabgang für eine Menge von 1 zu einem Einstandspreis von USD 16,00 (laufender Durchschnitt der finanziell gebuchten Transaktionen).
+- 3b. Bestandsfinanzausgang für eine Menge von 1 zu einem Einstandspreis von USD 16,00 (laufender Durchschnitt der finanziell gebuchten Transaktionen).
+- 4a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 25,00 (Kosten).
+- 5a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 30,00 (Kosten).
+- 5b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 30,00 (Kosten).
+- 6a. Inventarabgang für eine Menge von 1 zu einem Einstandspreis von USD 23,00 (laufender Durchschnitt der finanziell gebuchten Transaktionen)
+- 7\. Lagerabschluss wird vorgenommen. Basierend auf der FIFO-Methode wird die erste finanziell aktualisierte Ausgabe mit der ersten finanziell aktualisierten Einnahme verrechnet, usw. In diesem Beispiel wird eine Abrechnung zwischen 1b und 3b erstellt. Auf 3b wird eine Anpassung von USD -6,00 vorgenommen, sodass die endgültigen Kosten USD 10,00 betragen.
 
-![FIFO ohne Einbeziehung des physischen Werts.](./media/fifowithoutincludephysicalvalue.gif) 
+In dem neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig aktualisierten Buchungen berücksichtigt. Die folgenden Abbildungen zeigen die Auswirkungen des Lagermodells FIFO auf diese Buchungsserie an, wenn die Option **Physischen Wert einbeziehen** nicht verwendet wird.
+
+![FIFO ohne die Option Physischen Wert einbeziehen.](./media/fifo-without-include-physical-value.png)
 
 **Diagrammschlüssel**
 
 - Lagerbuchungen sind durch vertikale Pfeile dargestellt.
+- Physische Transaktionen werden durch kürzere hellgraue Pfeile dargestellt.
+- Finanzielle Transaktionen werden durch längere schwarze Pfeile dargestellt.
 - Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
 - Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
-- Über (oder unter) den einzelnen vertikalen Pfeilen ist im Format Menge@Einheitenpreis der Wert der Lagerbuchung angegeben.
-- Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
-- Ein nicht in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
 - Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
 - Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Reihenfolge der Lagerbuchungen auf der Zeitachse angegeben.
-- Lagerabschlüsse sind durch eine vertikale rote gestrichelte Linie und die Beschriftung *Lagerabschluss* gekennzeichnet.
+- Jedes Datum im Diagramm ist durch eine dünne schwarze vertikale Linie getrennt. Das Datum ist am unteren Rand des Diagramms vermerkt.
+- Bestandsabschlüsse werden durch eine rote vertikale gestrichelte Zeile dargestellt.
 - Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch rote diagonale gestrichelte Pfeile dargestellt, die von einem Zugang zu einem Abgang verlaufen.
 
 ## <a name="fifo-with-the-include-physical-value-option"></a>FIFO mit der Option "Physischen Wert einbeziehen"
-Wenn auf der Seite **Artikelmodellgruppe** das Kontrollkästchen **Physischen Wert einbeziehen** aktiviert ist, verwendet das System zur Berechnung des laufenden Durchschnittseinstandspreises sowohl physische als auch wertmäßige Zugangsbuchungen. Gegebenenfalls werden auch Regulierungen an der physisch aktualisierten Abgangsbuchung vorgenommen. Ist das Kontrollkästchen **Physischen Wert einbeziehen** deaktiviert, werden bei einem Lagerabschluss mit dem Lagermodell "FIFO" lediglich die Transaktionen ausgeglichen, die wertmäßig aktualisiert sind. Die folgende Abbildung zeigt diese Buchungen an:
 
--   1a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 10,00 (Kosten).
--   1b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 10,00 (Kosten).
--   2a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 20,00 (Kosten).
--   2b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 20,00 (Kosten).
--   3a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 25,00 (Kosten).
--   4a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 30,00 (Kosten).
--   4b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 30,00 (Kosten).
--   5a. Physischer Lagerabgang für die Menge "1" zu einem Einstandspreis von jeweils EUR 21,25 (laufender Durchschnitt wertmäßig und physisch aktualisierter Buchungen).
--   5b. Wertmäßiger Lagerabgang für die Menge "1" zu einem Einstandspreis von jeweils EUR 21,25 (laufender Durchschnitt wertmäßig und physisch aktualisierter Buchungen).
--   6a. Physischer Lagerabgang für die Menge "1" zu einem Einstandspreis von jeweils EUR 21,25.
--   7. Lagerabschluss wird vorgenommen. Die erste wertmäßige Abgangsbuchung wird auf Basis der FIFO-Methode reguliert oder mit dem ersten (entweder wertmäßig oder physisch) aktualisierten Zugang ausgeglichen.
+Wenn das Kontrollkästchen **Physikalischen Wert einbeziehen** für einen Artikel auf der Seite **Artikelmodellgruppe** aktiviert ist, verwendet das System sowohl physische als auch finanzielle Zugangstransaktionen, um die laufende durchschnittliche Kalkulation zu berechnen. Falls zutreffend, passt das System auch die physisch aktualisierte Ausgabe-Transaktion an. Bestandsabschlüsse, die das FIFO-Bestandsmodell verwenden, rechnen nur mit Transaktionen ab, die finanziell aktualisiert werden. Die folgende Abbildung zeigt diese Buchungen an:
 
-Die Buchung "5b" wird mit der Zugangsbuchung "1b" ausgeglichen. Dabei erfolgt für die Abgangsbuchung eine Regulierung in Höhe von EUR –11,25. Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig und physisch aktualisierten Buchungen in Höhe von EUR 27,50 berücksichtigt. Die folgende Abbildung zeigt die Auswirkungen des Lagermodells FIFO für diese Buchungsserie an, wenn die Option **Physischen Wert einbeziehen** verwendet wird. 
+- 1a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 10,00 (Kosten).
+- 1b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 10,00 (Kosten).
+- 2a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 20,00 (Kosten).
+- 2b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 22,00 (Kosten).
+- 3a. Inventarabgang für eine Menge von 1 zu einem Einstandspreis von USD 16,00 (laufender Durchschnitt der physisch und finanziell gebuchten Transaktionen).
+- 3b. Finanzieller Bestandsabgang für eine Menge von 1 zu einem Einstandspreis von USD 16,00 (laufender Durchschnitt der physisch und finanziell gebuchten Transaktionen).
+- 4a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 25,00 (Kosten).
+- 5a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 30,00 (Kosten).
+- 5b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 30,00 (Kosten).
+- 6a. Physischer Bestandsabgang für eine Menge von 1 zu einem Einstandspreis von USD 23,67 (laufender Durchschnitt der physisch und finanziell gebuchten Transaktionen).
+- 7\. Lagerabschluss wird vorgenommen. Basierend auf der FIFO-Methode wird die erste finanziell aktualisierte Ausgabe mit der ersten finanziell aktualisierten Einnahme verrechnet, usw. In diesem Beispiel wird eine Abrechnung zwischen 1b und 3b erstellt. Auf 3b wird eine Anpassung von USD -6,00 vorgenommen, sodass die endgültigen Kosten USD 10,00 betragen. Außerdem wird die Transaktion 6a an die Kalkulation der Quittungstransaktion von 2b angepasst. Diese Buchungen werden vom System nicht ausgeglichen, da der Zugang nur physisch, nicht aber wertmäßig aktualisiert wurde. Stattdessen wird nur eine Anpassung von USD -1,67 auf die physische Emissionstransaktion gebucht, und die angepassten Kosten betragen USD 22,00.
 
-![FIFO mit „Physischen Wert einbeziehen“.](./media/fifowithincludephysicalvalue.gif) 
+![FIFO mit der Option Physikalischen Wert einbeziehen.](./media/fifo-with-include-physical-value.png)
+
+Beachten Sie, dass das Ergebnis des Ausführens des Bestandsabschlusses dasselbe ist, unabhängig davon, ob Sie die Option **Physikalischen Wert einbeziehen** auf der Seite **Artikelmodellgruppe** auswählen. Die Option **Physikalischen Wert einbeziehen** wirkt sich nur auf den laufenden Durchschnitt aus.
 
 **Diagrammschlüssel**
 
 - Lagerbuchungen sind durch vertikale Pfeile dargestellt.
+- Physische Transaktionen werden durch kürzere hellgraue Pfeile dargestellt.
+- Finanzielle Transaktionen werden durch längere schwarze Pfeile dargestellt.
 - Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
 - Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
-- Über (oder unter) den einzelnen vertikalen Pfeilen ist im Format Menge@Einheitenpreis der Wert der Lagerbuchung angegeben.
-- Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
-- Ein nicht in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
 - Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
 - Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Reihenfolge der Lagerbuchungen auf der Zeitachse angegeben.
-- Lagerabschlüsse sind durch eine vertikale rote gestrichelte Linie und die Beschriftung *Lagerabschluss* gekennzeichnet.
+- Jedes Datum im Diagramm ist durch eine dünne schwarze vertikale Linie getrennt. Das Datum ist am unteren Rand des Diagramms vermerkt.
+- Bestandsabschlüsse werden durch eine rote vertikale gestrichelte Zeile dargestellt.
 - Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch rote diagonale gestrichelte Pfeile dargestellt, die von einem Zugang zu einem Abgang verlaufen.
 
 ## <a name="fifo-with-marking"></a>FIFO mit Markierung
-Der Begriff "Markierung" bezeichnet ein Verfahren zum Verknüpfen (oder Markieren) einer Abgangsbuchung mit einer Zugangsbuchung. Eine Markierung kann entweder vor oder nach Ausführung der Buchung erfolgen. Durch die Verwendung einer Markierung lassen sich bei der Ausführung der Buchung oder des Lagerabschlusses die exakten Kosten des Lagers ermitteln. Beispiel: In der Kundendienstabteilung wurde der Eilauftrag eines wichtigen Debitors angenommen. Da es sich bei diesem Auftrag um einen Eilauftrag handelt, müssen Sie für diesen Artikel einen höheren Preis bezahlen, um dem Wunsch des Debitors zu entsprechen. Deshalb müssen Sie sicherstellen, dass bei dieser Auftragsrechnung die Kosten für diesen Lagerartikel in der Gewinnspanne bzw. im Wareneinsatz (COGS/cost of goods sold) berücksichtigt werden. Bei der Buchung des Auftrags erhält das Lager einen Zugang in Höhe von EUR 120,00 (Kosten). Wird dieses Auftragsdokument vor der Buchung des Lieferscheins oder der Rechnung für die Bestellung markiert, beträgt der Wareneinsatz EUR 120,00 (statt der aktuellen laufenden Durchschnittskosten für den Artikel). Wird der Lieferschein oder die Rechnung des Auftrags gebucht, bevor die Markierung vorgenommen wird, erfolgt die Buchung des Wareneinsatzes (COGS) zum laufenden Durchschnittseinstandspreis. Die Markierung der beiden Buchungen kann noch bis zur Ausführung des Lagerabschlusses nachgeholt werden. Wenn eine Zugangsbuchung einer Abgangsbuchung entspricht, wird die in der Artikelmodellgruppe definierte Bewertungsmethode ignoriert, und die Buchungen werden vom System gegenseitig ausgeglichen. Sie können vor der Ausführung der Buchung eine Abgangsbuchung für einen Zugang markieren. Dies kann von einer Auftragsposition auf der Seite **Auftragsdetails** aus erfolgen. Sie können die offenen Zugangsbuchungen auf der Seite **Markierung** anzeigen. Sie können auch nach der Buchung der Transaktion eine Abgangsbuchung für einen Zugang markieren. Sie können eine Abgangsbuchung für eine offene Zugangsbuchung für einen gelagerten Artikel aus einer gebuchten Lagerregulierungserfassung abgleichen oder markieren. Die folgende Abbildung zeigt diese Buchungen an:
 
--   1a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 10,00 (Kosten).
--   1b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 10,00 (Kosten).
--   2a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 20,00 (Kosten).
--   2b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 20,00 (Kosten).
--   3a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 25,00 (Kosten).
--   4a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 30,00 (Kosten).
--   4b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 30,00 (Kosten).
--   5a. Physischer Lagerabgang für die Menge "1" zu einem Einstandspreis von jeweils EUR 21,25 (laufender Durchschnitt wertmäßig und physisch aktualisierter Buchungen).
--   5b. Wertmäßiger Lagerabgang für die Menge "1" wird für den Lagerzugang aus 2b markiert, bevor die Buchung ausgeführt wird. Diese Buchung erfolgt zu einem Einstandspreis von jeweils EUR 20,00.
--   6a. Physischer Lagerabgang für die Menge "1" zu einem Einstandspreis von jeweils EUR 21,25.
--   7. Lagerabschluss wird vorgenommen. Da die wertmäßig aktualisierte FIFO-Buchung für einen vorhandenen Zugang markiert ist, werden diese Buchungen gegenseitig ausgeglichen, und es ist keine Regulierung erforderlich.
+Der Begriff "Markierung" bezeichnet ein Verfahren zum Verknüpfen (oder Markieren) einer Abgangsbuchung mit einer Zugangsbuchung. Eine Markierung kann entweder vor oder nach Ausführung der Buchung erfolgen. Durch die Verwendung einer Markierung lassen sich bei der Ausführung der Buchung oder des Lagerabschlusses die exakten Kosten des Lagers ermitteln.
 
-Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig und physisch aktualisierten Buchungen in Höhe von EUR 27,50 berücksichtigt. Die folgende Abbildung gibt Aufschluss über die Auswirkungen des FIFO-Lagermodells auf diese Reihe von Buchungen, die bei markierten Ab- und Zugängen anfallen. 
+Beispiel: In der Kundendienstabteilung wurde der Eilauftrag eines wichtigen Debitors angenommen. Da es sich bei dieser Bestellung um eine Eilbestellung handelt, müssen Sie für diesen Artikel mehr bezahlen, um den Wunsch Ihres Debitors zu erfüllen. Sie müssen sicherstellen, dass sich die Kosten des Artikels im Bestand in der Marge oder den Kosten der verkauften Waren (COGS) für die Verkaufsrechnung widerspiegeln. Bei der Buchung der Bestellung erhält das Lager einen Zugang in Höhe von EUR 120,00 (Kosten). Wenn der Verkaufsauftragsbeleg zur Bestellung markiert wird, bevor der Lieferschein oder die Rechnung ausgeführt wird, betragen die COGS USD 120,00 und nicht die aktuellen laufenden Durchschnittskosten für den Artikel. Wird der Lieferschein oder die Rechnung des Auftrags gebucht, bevor die Markierung vorgenommen wird, erfolgt die Buchung des Wareneinsatzes (COGS) zum laufenden Durchschnittseinstandspreis. Die Markierung der beiden Buchungen kann noch bis zur Ausführung des Lagerabschlusses nachgeholt werden.
 
-![FIFO mit Markierung.](./media/fifowithmarking.gif) 
+Wenn eine Bon-Transaktion zu einer Ausgabe-Transaktion markiert wird, wird die Bewertungsmethode, die in der Artikelmodellgruppe definiert ist, nicht berücksichtigt und das System rechnet diese Transaktionen miteinander ab. Sie können eine Transaktion gegen eine Verkaufsauftragszeile auf der Seite **Kaufauftragsdetails** manuell markieren, indem Sie auf dem Inforegister **Kaufauftragszeilen** die Option **Bestand \> Markierung** wählen. Sie können die offenen Zugangsbuchungen auf der Seite **Markierung** anzeigen. Sie können eine Ausgabetransaktion mit einer offenen Zugangstransaktion für einen inventarisierten Artikel aus einem gebuchten Lagererfassungs-Journal abgleichen oder markieren. Die folgende Abbildung zeigt diese Buchungen an:
+
+- 1a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 10,00 (Kosten).
+- 1b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 10,00 (Kosten).
+- 2a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 20,00 (Kosten).
+- 2b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 22,00 (Kosten).
+- 3a. Physischer Bestandsabgang für eine Menge von 1 zu einem Einstandspreis von USD 16,00 (laufender Durchschnitt der finanziell gebuchten Transaktionen).
+- 3b. Bestandsfinanzausgang für eine Menge von 1 zu einem Einstandspreis von USD 16,00 (laufender Durchschnitt der finanziell gebuchten Transaktionen).
+- 3c. Der Bestandsfinanzausgang für 3b wird mit dem Bestandsfinanzausgang für 2b markiert.
+- 4a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 25,00 (Kosten).
+- 5a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 30,00 (Kosten).
+- 5b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 30,00 (Kosten).
+- 6a. Inventarabgang für eine Menge von 1 zu einem Einstandspreis von USD 23,00 (laufender Durchschnitt der finanziell gebuchten Transaktionen)
+- 7\. Lagerabschluss wird vorgenommen. Basierend auf dem Markierungsprinzip, das die FIFO-Methode verwendet, werden die markierten Transaktionen gegeneinander abgerechnet. In diesem Beispiel wird 3b gegen 2b abgerechnet und eine Korrektur von 6,00 USD auf 3b gebucht, um den Wert auf 22,00 USD zu bringen. In diesem Beispiel werden keine weiteren Abrechnungen vorgenommen, da der Abschluss nur Abrechnungen für finanziell aktualisierte Transaktionen erstellt.
+
+Die folgende Abbildung gibt Aufschluss über die Auswirkungen des FIFO-Lagermodells auf diese Reihe von Buchungen, die bei markierten Ab- und Zugängen anfallen.
+
+![FIFO mit Markierung.](./media/fifo-with-marking.png)
 
 **Diagrammschlüssel**
 
 - Lagerbuchungen sind durch vertikale Pfeile dargestellt.
+- Physische Transaktionen werden durch kürzere hellgraue Pfeile dargestellt.
+- Finanzielle Transaktionen werden durch längere schwarze Pfeile dargestellt.
 - Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
 - Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
-- Über (oder unter) den einzelnen vertikalen Pfeilen ist im Format Menge@Einheitenpreis der Wert der Lagerbuchung angegeben.
-- Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
-- Ein nicht in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
 - Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
 - Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Reihenfolge der Lagerbuchungen auf der Zeitachse angegeben.
-- Lagerabschlüsse sind durch eine vertikale rote gestrichelte Linie und die Beschriftung *Lagerabschluss* gekennzeichnet.
-- Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch rote diagonale gestrichelte Pfeile dargestellt, die von einem Zugang zu einem Abgang verlaufen.
-
-
-
-
-
+- Jedes Datum im Diagramm ist durch eine dünne schwarze vertikale Linie getrennt. Das Datum ist am unteren Rand des Diagramms vermerkt.
+- Bestandsabschlüsse werden durch eine rote vertikale gestrichelte Zeile dargestellt.
+- Abrechnungen und Markierungen, die durch Bestandsabschluss durchgeführt werden, werden durch rote diagonal gestrichelte Pfeile dargestellt, die von einem Eingang zu einem Ausgang führen.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

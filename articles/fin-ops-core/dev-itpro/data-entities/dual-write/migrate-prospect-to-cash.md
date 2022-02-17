@@ -2,27 +2,37 @@
 title: Migrieren von Prospect-to-Cash-Daten vom Datenintegrator nach Dual-Write
 description: In diesem Thema wird beschrieben, wie man Prospect-to-Cash-Daten vom Datenintegrator nach Dual-Write migriert.
 author: RamaKrishnamoorthy
-ms.date: 01/04/2021
+ms.date: 02/01/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
-ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: d119a9e5874f73e024cedc4cdb581f947e5bf1a0
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.search.validFrom: 2020-01-26
+ms.openlocfilehash: 82bfb768b0ecac04184f4b806527346d39584d64
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782504"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087267"
 ---
 # <a name="migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>Migrieren von Prospect-to-Cash-Daten vom Datenintegrator nach Dual-Write
 
 [!include [banner](../../includes/banner.md)]
 
+Die für Data Integrator verfügbare Prospect to cash-Lösung ist nicht mit duales Schreiben kompatibel. Der Grund dafür ist der Index msdynce_AccountNumber in der Kontotabelle, der Teil der Prospect to cash-Lösung ist. Wenn dieser Index vorhanden ist, können Sie nicht dieselbe Debitor-Kontonummer in zwei verschiedenen juristischen Entitäten erstellen. Sie können entweder mit duales Schreiben neu beginnen, indem Sie die Prospect to cash-Daten von Data Integrator zu duales Schreiben migrieren, oder Sie können die letzte „dorman“ Version der Prospect to cash-Lösung installieren. Dieses Thema deckt beide Ansätze ab.
+
+## <a name="install-the-last-dorman-version-of-the-data-integrator-prospect-to-cash-solution"></a>Installieren Sie die letzte „dorman“ Version des Data Integrator Prospect to cash solution
+
+**P2C Version 15.0.0.2** gilt als die letzte „dorman“ Version der Datenintegrator Prospect to cash Lösung. Sie können sie von [FastTrack for Dynamics 365](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/P2C) herunterladen.
+
+Sie müssen es manuell installieren. Nach der Installation bleibt alles genau gleich, außer dass der Index msdynce_AccountNumber entfernt wird.
+
+## <a name="steps-to-migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>Schritte zur Migration von Prospect to cash-Daten von Data Integrator zu duales Schreiben
+
 Um Ihre Prospect-to-Cash-Daten vom Datenintegrator nach Dual-Write zu migrieren, führen Sie die folgenden Schritte aus.
 
-1. Führen Sie die Prostpect-to-Cash-Aufträge des Datenintegrators aus, um eine letzte vollständige Synchronisierung durchzuführen. Auf diese Weise stellen Sie sicher, dass beide Systeme (Finance and Operations-App und Customer Engagement-App) über alle Daten verfügen.
+1. Führen Sie die Prostpect-to-Cash-Aufträge des Datenintegrators aus, um eine letzte vollständige Synchronisierung durchzuführen. Auf diese Weise stellen Sie sicher, dass beide Systeme (Finance und Operations-Apps und Customer-Engagement-Apps) über alle Daten verfügen.
 2. Um potenziellen Datenverlust zu vermeiden, exportieren Sie die Prospect-to-Cash-Daten aus Microsoft Dynamics 365 Sales in eine Excel-Datei oder eine CSV-Datei (Comma Separated Values). Exportieren Sie Daten aus folgenden Entitäten:
 
     - [Konto](#account-table)
@@ -37,25 +47,25 @@ Um Ihre Prospect-to-Cash-Daten vom Datenintegrator nach Dual-Write zu migrieren,
 
 3. Deinstallieren Sie die Prospect-to-Cash-Lösung aus der Sales-Umgebung. In diesem Schritt werden die Spalten und die entsprechenden Daten entfernt, die von der Prospect-to-Cash-Lösung eingeführt wurden.
 4. Installieren Sie die Dual-Write-Lösung.
-5. Stellen Sie für eine oder mehrere juristische Personen eine Dual-Write-Verbindung zwischen der Finance and Operations-App und der Customer Engagement-App her.
+5. Erstellen Sie eine duales Schreiben-Verbindung zwischen der Finance und Operations App und der Customer-Engagement-App für eine oder mehrere juristische Entitäten.
 6. Aktivieren Sie Tabellenzuordnungen für duales Schreiben und führen Sie die erste Synchronisierung für die erforderlichen Referenzdaten aus. (Weitere Informationen finden Sie unter [Überlegungen zur Erstsynchronisierung](initial-sync-guidance.md).) Beispiele für erforderliche Daten sind Kundengruppen, Zahlungsbedingungen und Zahlungspläne. Aktivieren Sie die Zuordnungen für duales Schreiben nicht für Tabellen, für die eine Initialisierung erforderlich ist, z. B. Konto-, Angebots-, Angebotspositions-, Auftrags- und Auftragspositionstabellen.
 7. Wechseln Sie in der Customer Engagement-App zu **Erweiterte Einstellungen \> Systemeinstellungen \> Datenverwaltung \> Erkennungsregeln für Duplikate** und deaktivieren Sie alle Regeln.
 8. Initialisieren Sie die in Schritt 2 aufgeführten Tabellen. Anweisungen finden Sie in den verbleibenden Abschnitten dieses Themas.
-9. Öffnen Sie die Finance and Operations-App und aktivieren Sie die Tabellenzuordnungen, z. B. die Tabellenzuordnungen für Konten, Angebote, Angebotspositionen, Aufträge und Auftragspositionen. Führen Sie anschließend die Erstsynchronisierung durch. (Weitere Informationen finden Sie unter [Überlegungen zur Erstsynchronisierung](initial-sync-guidance.md) .) Dieser Prozess synchronisiert zusätzliche Informationen aus der Finance and Operations-App, wie z. B. Verarbeitungsstatus, Versand- und Rechnungsadressen, Standorte und Lagerorte.
+9. Öffnen Sie die App Finance und Operations und aktivieren Sie die Zuordnungen der Tabellen, wie z.B. die Zuordnungen der Tabellen Konto, Kurs, Kurszeile, Auftrag und Auftragszeile. Führen Sie anschließend die Erstsynchronisierung durch. (Weitere Informationen finden Sie unter [Berücksichtigung bei der ersten Synchronisierung](initial-sync-guidance.md)). Bei diesem Vorgang werden zusätzliche Informationen aus der App Finance und Operations synchronisiert, z.B. der Verarbeitungsstatus, Lieferadressen und Rechnungsadressen, Standorte und Lager.
 
 ## <a name="account-table"></a>Kontotabelle
 
 1. Geben Sie in der Spalte **Unternehmen** den Namen des Unternehmens ein, z. B. **USMF**.
 2. Geben Sie in der Spalte **Beziehungstyp** den Wert **Kunde** als einen statischen Wert ein. Möglicherweise möchten Sie in Ihrer Geschäftslogik nicht jeden Kontodatensatz als Kunden klassifizieren.
-3. Geben Sie in der Spalte **Kundengruppenkennung** die Kundengruppennummer aus der Finance and Operations-App ein. Der Standardwert aus der Prospect-to-Cash-Lösung ist **10**.
-4. Wenn Sie die Prospect-to-Cash-Lösung ohne Anpassung von **Kontonummer** verwenden, geben Sie für **Kontonummer** in der Spalte **Parteinummer** einen Wert ein. Wenn Anpassungen vorgenommen wurden und Sie die Parteinummer nicht kennen, beschaffen Sie sich diese Informationen aus der Finance and Operations-App.
+3. In der Spalte **Kundengruppen-ID** geben Sie die Nummer der Kundengruppe aus der App Finance und Operations ein. Der Standardwert aus der Prospect-to-Cash-Lösung ist **10**.
+4. Wenn Sie die Prospect-to-Cash-Lösung ohne Anpassung von **Kontonummer** verwenden, geben Sie für **Kontonummer** in der Spalte **Parteinummer** einen Wert ein. Wenn es Anpassungen gibt und Sie die Nummer der Partei nicht kennen, ziehen Sie diese Information aus der Finance und Operations App.
 
 ## <a name="contact-table"></a>Kontakttabelle
 
 1. Geben Sie in der Spalte **Unternehmen** den Namen des Unternehmens ein, z. B. **USMF**.
 2. Legen Sie die folgenden Spalten basierend auf dem Wert **IsActiveCustomer** in der CSV-Datei fest:
 
-    - Wenn **IsActiveCustomer** in der CSV-Datei auf **Ja** festgelegt ist, legen Sie die Spalte **Verkäuflich** auf **Ja** fest. Geben Sie in der Spalte **Kundengruppenkennung** die Kundengruppennummer aus der Finance and Operations-App ein. Der Standardwert aus der Prospect-to-Cash-Lösung ist **10**.
+    - Wenn **IsActiveCustomer** in der CSV-Datei auf **Ja** festgelegt ist, legen Sie die Spalte **Verkäuflich** auf **Ja** fest. In der Spalte **Kundengruppen-ID** geben Sie die Nummer der Kundengruppe aus der App Finance und Operations ein. Der Standardwert aus der Prospect-to-Cash-Lösung ist **10**.
     - Wenn **IsActiveCustomer** in der CSV-Datei auf **Nein** festgelegt ist, legen Sie die Spalte **Verkäuflich** auf **Nein** und die Spalte **Kontakt für** auf **Kunde** fest.
 
 3. Wenn Sie die Prospect-to-Cash-Lösung ohne Anpassung von **Kontaktnummer** verwenden, legen Sie die folgenden Spalten fest:
@@ -66,7 +76,7 @@ Um Ihre Prospect-to-Cash-Daten vom Datenintegrator nach Dual-Write zu migrieren,
 
 ## <a name="invoice-table"></a>Rechnungstabelle
 
-Da die Daten aus der Tabelle **Rechnung** so konzipiert sind, dass sie nur in eine Richtung fließen, nämlich von der Finance and Operations-App zur Customer Engagement-App, ist keine Initialisierung erforderlich. Führen Sie die Erstsynchronisierung durch, um alle erforderlichen Daten von der Finance and Operations-App zur Customer Engagement-App zu migrieren. Weitere Informationen finden Sie unter [Überlegungen zur Erstsynchronisierung](initial-sync-guidance.md).
+Da die Daten aus der Tabelle **Rechnung** nur in eine Richtung fließen sollen, nämlich von der Finance und Operations-App zur Customer-Engagement-App, ist eine Initialisierung nicht erforderlich. Führen Sie die anfängliche Synchronisierung aus, um alle erforderlichen Daten aus der Finance und Operations-App in die Customer-Engagement-App zu migrieren. Weitere Informationen finden Sie unter [Überlegungen zur Erstsynchronisierung](initial-sync-guidance.md).
 
 ## <a name="order-table"></a>Auftragstabelle
 
@@ -84,7 +94,7 @@ Da die Daten aus der Tabelle **Rechnung** so konzipiert sind, dass sie nur in ei
 
 ## <a name="products-table"></a>Produktetabelle
 
-Da die Daten aus der Tabelle **Produkte** so konzipiert sind, dass sie nur in eine Richtung fließen, nämlich von der Finance and Operations-App zur Customer Engagement-App, ist keine Initialisierung erforderlich. Führen Sie die Erstsynchronisierung durch, um alle erforderlichen Daten von der Finance and Operations-App zur Customer Engagement-App zu migrieren. Weitere Informationen finden Sie unter [Überlegungen zur Erstsynchronisierung](initial-sync-guidance.md).
+Da die Daten aus der Tabelle **Produkte** in eine Richtung fließen sollen, nämlich von der Finance und Operations-App zur Customer-Engagement-App, ist eine Initialisierung nicht erforderlich. Führen Sie die anfängliche Synchronisierung aus, um alle erforderlichen Daten aus der Finance und Operations-App in die Customer-Engagement-App zu migrieren. Weitere Informationen finden Sie unter [Überlegungen zur Erstsynchronisierung](initial-sync-guidance.md).
 
 ## <a name="quote-and-quote-product-tables"></a>Anbegots- und Angebotsproduktetabellen
 

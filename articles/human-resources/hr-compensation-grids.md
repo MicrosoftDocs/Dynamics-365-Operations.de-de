@@ -2,7 +2,7 @@
 title: Vergütungsraster einrichten
 description: Vergütungsstrukturen werden zur Definition und Pflege der Vergütungsstrukturen für feste Vergütungspläne verwendet.
 author: twheeloc
-ms.date: 08/25/2021
+ms.date: 01/03/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e6aabf5c05b2a7a5d2b37b43c9a7e93ea6e9bbb
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: 51b98320eac539e49787d352f32683efadc11f41
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483816"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071446"
 ---
 # <a name="set-up-compensation-grids"></a>Vergütungsraster einrichten
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -67,28 +70,16 @@ Vergütungsstrukturen werden zur Definition und Pflege der Vergütungsstrukturen
 7. Wählen Sie im Feld **Regulierungstyp** eine Option aus.
 8. Geben Sie in das Feld **Anpassungsbetrag** eine Zahl ein.
 9. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-10. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-11. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-12. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-13. Klicken Sie auf **Anwendung auf Raster**.
-14. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-15. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-16. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-17. Klicken Sie auf **Anwendung auf Raster**.
-18. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-19. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-20. Klicken Sie auf **Anwendung auf Raster**.
-21. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-22. Klicken Sie auf "Auf Raster anwenden".
+10. Klicken Sie auf **Anwendung auf Raster**.
     * Jetzt verwenden wir die Massenänderungsfunktion, um die Mindest- und Höchstwerte für Referenzpunkte auf jede Ebene einzustellen. In diesem Beispiel wird ein Umfang von 50 % verwendet, so das der minimale Referenzpunkt um -20% und der maximale um +20% reguliert wird.  
-23. Geben Sie in das Feld **Anpassungsbetrag** eine Zahl ein.
-24. Geben Sie im Feld **Referenzpunkt** einen Wert ein, oder wählen Sie einen Wert aus.
-25. Markieren Sie alle Zeilen in der Liste, oder heben Sie die Markierung auf.
-26. Klicken Sie auf **Anwendung auf Raster**.
-27. Geben Sie in das Feld **Anpassungsbetrag** eine Zahl ein.
-28. Geben Sie im Feld **Referenzpunkt** einen Wert ein, oder wählen Sie einen Wert aus.
-29. Markieren Sie alle Zeilen in der Liste, oder heben Sie die Markierung auf.
-30. Klicken Sie auf **Anwendung auf Raster**.
+11. Geben Sie in das Feld **Anpassungsbetrag** eine Zahl ein.
+12. Geben Sie im Feld **Referenzpunkt** einen Wert ein, oder wählen Sie einen Wert aus.
+13. Markieren Sie alle Zeilen in der Liste, oder heben Sie die Markierung auf.
+14. Klicken Sie auf **Anwendung auf Raster**.
+15. Geben Sie in das Feld **Anpassungsbetrag** eine Zahl ein.
+16. Geben Sie im Feld **Referenzpunkt** einen Wert ein, oder wählen Sie einen Wert aus.
+17. Markieren Sie alle Zeilen in der Liste, oder heben Sie die Markierung auf.
+18. Klicken Sie auf **Anwendung auf Raster**.
 
 
 

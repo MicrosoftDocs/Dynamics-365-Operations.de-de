@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 1fd15b5d664fead10949750678a2d3eab967af22
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 825d6a4b3462077d0f4b3f4275792ea0fe5152df
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781391"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063671"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Einrichtung von dualem Schreiben aus Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 In diesem Thema wird erläutert, wie Sie eine Verbindung für duales Schreiben über Microsoft Dynamics Lifecycle Services (LCS) aktivieren.
 
@@ -53,18 +53,18 @@ Befolgen Sie diese Schritte, um duales Schreiben von der LCS -Seite **Umgebungsd
 
     :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Link zur Power Platform-Umgebung.":::
 
-8. Wenn die Verknüpfung abgeschlossen ist, wird ein Hyperlink angezeigt. Verwenden Sie den Link, um sich im Verwaltungsbereich mit zwei Schreibvorgängen in der Finance and Operations Umgebung zu registrieren. Von dort aus können Sie Entitätszuordnungen einrichten.
+8. Wenn die Verknüpfung abgeschlossen ist, wird ein Hyperlink angezeigt. Verwenden Sie den Link, um sich beim duales Schreiben Administrationsbereich in der Finance und Operations Umgebung anzumelden. Von dort aus können Sie Entitätszuordnungen einrichten.
 
 ## <a name="set-up-dual-write-for-an-existing-dataverse-environment"></a>Richten Sie duales Schreiben für eine bestehende Dataverse Umgebung ein
 
 Um duales Schreiben für eine vorhandene Dataverse Umgebung einzurichten, müssen Sie ein Microsoft [Supportticket](../../lifecycle-services/lcs-support.md) erstellen. Das Ticket muss enthalten:
 
-+ Ihre Finance and Operations Umgebungs-ID.
++ Ihre Finance und Operations Umgebungs-ID.
 + Ihr Umgebungsname von Lifecycle Services.
 + Die Dataverse Organisations-ID oder Power Platform Umgebungs-ID vom Power Platform Admin Center. Fordern Sie in Ihrem Ticket an, dass die ID die Instanz ist, die für die Power Platform Integration verwendet wird.
 
 > [!NOTE]
-> Sie können die Verknüpfung von Umgebungen mit LCS nicht aufheben. Um die Verknüpfung einer Umgebung aufzuheben, öffnen Sie den **Datenintegration** Arbeitsbereich in der Finance and Operations Umgebung und wählen Sie dann **Verknüpfung aufheben**.
+> Sie können die Verknüpfung von Umgebungen mit LCS nicht aufheben. Um eine Umgebung zu entkoppeln, öffnen Sie den Arbeitsbereich **Datenintegration** in der Finance und Operations Umgebung und wählen Sie dann **Entkoppeln**.
 
 ## <a name="linking-mismatch"></a>Verknüpfungskonflikt
 

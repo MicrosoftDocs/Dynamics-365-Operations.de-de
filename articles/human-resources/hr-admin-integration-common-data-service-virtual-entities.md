@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9e26a2fb65564cb4a1d2f9ba4b0d621177207545
-ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
+ms.openlocfilehash: f7ffe522f0f17a21280e53728c6efc2823743733
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7414663"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069145"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Virtuelle Dataverse-Tabellen konfigurieren
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Dynamics 365 Human Resources ist eine virtuelle Datenquelle in Microsoft Dataverse. Es bietet vollständige CRUD-Vorgänge zum Erstellen, Lesen, Aktualisieren und Löschen von Dataverse und Microsoft Power Platform. Die Daten für virtuelle Tabellen werden nicht in Dataverse gespeichert, aber in der Anwendungsdatenbank.
 
@@ -119,10 +122,10 @@ Der nächste Schritt besteht darin, die Datenquelle der virtuellen Tabelle in de
 
 4. Im **Lösungsintegrität-Hub** wählen Sie das Symbol **Erweiterte Suche** oben rechts auf der Anwendungsseite aus.
 
-5. Wählen Sie auf der Seite **Erweiterte Suche** in der Dropdown-Liste **Suchen** **Finance and Operations Konfigurationen virtueller Datenquellen** aus.
+5. Wählen Sie auf der Seite **Erweiterte Suche** in der Dropdown-Liste **Suchen nach** die Option **Finance und Operations Virtual Data Source Configurations**.
 
    > [!NOTE]
-   > Die Installation der virtuellen Tabellen-App aus dem vorherigen Einrichtungsschritt kann einige Minuten dauern. Wenn **Finance and Operations Virtuelle Datenquellenkonfigurationen** nicht in der Liste vorhanden ist, warten Sie eine Minute und aktualisieren Sie die Liste.
+   > Die Installation der virtuellen Tabellen-App aus dem vorherigen Einrichtungsschritt kann einige Minuten dauern. Wenn **Finance und Operations Virtual Data Source Configurations** nicht in der Liste vorhanden ist, warten Sie eine Minute und aktualisieren Sie die Liste.
 
 6. Wählen Sie **Ergebnisse** aus.
 

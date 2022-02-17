@@ -2,27 +2,24 @@
 title: Verbesserungen der Auszugsbuchungsfunktionalität
 description: In diesem Thema wird beschrieben, welche Verbesserungen der Auszugsbuchungsfunktion vorgenommen wurden.
 author: analpert
-ms.date: 12/03/2021
+ms.date: 01/31/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9a5a7d6394a87eccde8e1c364caaaabdb0297fd2
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 6ee0cea76be05634aa21643acef5b341f19d75ef
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982202"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087602"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Verbesserungen der Auszugsbuchungsfunktionalität
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 In diesem Thema wird beschrieben, welche Verbesserungen der Auszugsbuchungsfunktion vorgenommen wurden. Verbesserungen Diese sind in Microsoft Dynamics 365 for Finance and Operations 7.3.2 verfügbar.
 
@@ -53,12 +50,24 @@ Als Teil der Verbesserungen der Kontoauszugsbuchungsfunktion wurden drei neue Pa
 
 - **Deaktivierung der Zählung erforderlich** - Wenn diese Option auf **Ja** gesetzt ist, wird der Buchungsvorgang für einen Auszug fortgesetzt, auch wenn die Differenz zwischen dem gezählten Betrag und dem Transaktionsbetrag auf dem Auszug außerhalb des Schwellenwerts liegt, der auf der Seite **Auszug** für Filialen definiert ist.
 
+> [!NOTE]
+> Ab Commerce Version 10.0.14, wenn die Funktion **Einzelhandelsauszüge - Trickle feed** aktiviert ist, ist der Batchauftrag **Bestand buchen** nicht mehr anwendbar und kann nicht ausgeführt werden.
+
 Zusätzlich wurden die folgenden Parameter auf der Seite **Batch-Verarbeitung** auf der Registerkarte **Buchung** der Seite **Commerce-Parameter** eingeführt: 
 
 - **Maximale Anzahl von parallelen Auszugsbuchungen** – Dieses Feld definiert die Anzahl der Stapelverarbeitungsaufgaben, die verwendet werden, um mehrere Aufstellungen zu buchen. 
 - **Maximaler Thread für die Auftragsverarbeitung pro Abrechnung** – Dieses Feld stellt die maximale Anzahl der Threads dar, die vom Batchauftrag für die Abrechnungsbuchung verwendet wird, um Aufträge für eine einzelne Abrechnung zu erstellen und zu fakturieren. Die Gesamtanzahl der Threads, die vom Abrechnungsbuchungsprozess verwendet werden, wird auf Grundlage des Werts in diesem Parameter multipliziert mit dem Wert im Parameter **Maximale Anzahl von parallelen Abrechnungsbuchungen** berechnet. Wird der Wert dieses Parameters zu hoch festgelegt, kann dies die Leistung des Abrechnungsbuchungsprozesses negativ beeinflussen.
 - **Maximale Buchungspositionen in der Aggregierung** – Dieses Feld definiert die Anzahl von Transaktionspositionen, die in einer einzelnen zusammengefassten Transaktion eingeschlossen sind, bevor eine neue erstellt wird. Aggregierte Transaktionen werden auf Grundlage unterschiedlicher Aggregationskriterien erstellt, beispielsweise Debitor, Geschäftsdatum oder Finanzdimensionen. Es ist wichtig zu beachten, dass die Zeilen einer einzelnen Transaktion nicht auf verschiedene aggregierte Transaktionen aufgeteilt werden. Das bedeutet, dass es eine Möglichkeit gibt, dass die Anzahl der Positionen in eine zusammengefassten Transaktion etwas höher oder niedriger liegt, je nach solchen Faktoren wie Anzahl der eindeutig identifizierbare Produkte.
 - **Maximale Anzahl von Threads zur Validierung von Speichertransaktionen** - Dieses Feld definiert die Anzahl der Threads, die zur Validierung von Transaktionen verwendet werden. Die Validierung von Transaktionen ist ein erforderlicher Schritt, der durchgeführt werden muss, bevor die Transaktionen in die Anweisungen gezogen werden können. Sie müssen auch ein **Geschenkkartenprodukt** auf der Seite **Geschenkkarte** auf der Registerkarte **Buchung** der Seite **Commerce-Parameter** definieren. Dies muss auch definiert werden, wen Geschenkkarten nicht von der Organisation verwendet werden.
+
+In der folgenden Tabelle sind die empfohlenen Werte für die vorstehenden Parameter aufgeführt. Diese Werte sollten getestet und an die Bereitstellungskonfiguration und die verfügbare Infrastruktur angepasst werden. Jede Erhöhung der empfohlenen Werte kann sich negativ auf andere Batch-Verarbeitungen auswirken und sollte daher validiert werden.
+
+| Parameter | Empfohlener Wert | Informationen |
+|-----------|-------------------|---------|
+| Maximale Anzahl paralleler Aufstellungsbuchung | <p>Legen Sie diesen Parameter auf die Anzahl der Batch-Aufgaben fest, die für die Batch-Gruppe verfügbar sind, die den **Auftrag** ausführt.</p><p>**Allgemeine Regel:** Multiplizieren Sie die Anzahl der virtuellen Server von Application Object Server (AOS) mit der Anzahl der Batch-Aufgaben, die pro virtuellem AOS-Server verfügbar sind.</p> | Dieser Parameter ist nicht anwendbar, wenn die Funktion **Einzelhandelsauszüge - Trickle feed** aktiviert ist. |
+| Maximaler Thread für die Auftragsverarbeitung pro Auszug | Beginnen Sie, Werte bei **4** zu testen. In der Regel sollte der Wert **8** nicht überschreiten. | Dieser Parameter gibt die Anzahl der Threads an, die zum Erstellen und Buchen von Verkaufsaufträgen verwendet werden. Sie gibt die Anzahl der Threads an, die pro Anweisung für die Buchung zur Verfügung stehen. |
+| Maximale Transaktionspositionen, die in der Aggregation enthalten sind | Beginnen Sie, Werte bei **1000** zu testen. Je nach Konfiguration der Zentrale können kleinere Aufträge für die Leistung vorteilhafter sein. | Dieser Parameter bestimmt die Anzahl der Zeilen, die bei der Auszugsbuchung in jeden Verkaufsauftrag aufgenommen werden. Nachdem diese Anzahl erreicht ist, werden die Zeilen in eine neue Reihenfolge aufgeteilt. Die Anzahl der Verkaufszeilen ist zwar nicht exakt, da die Aufteilung auf der Ebene des Verkaufsauftrags erfolgt, aber sie liegt nahe an der auf festgelegten Anzahl. Dieser Parameter wird verwendet, um Verkaufsaufträge für Transaktionen im Einzelhandel zu generieren, die keinen benannten Debitor haben. |
+| Maximale Anzahl von Threads für Überprüfung von Geschäftbuchungen | Wir empfehlen Ihnen, diesen Parameter auf **4** festzulegen und ihn nur dann zu erhöhen, wenn Sie keine akzeptable Leistung erreichen. Die Anzahl der Threads, die dieser Prozess verwendet, darf die Anzahl der Prozessoren, die dem Batch-Server zur Verfügung stehen, nicht überschreiten. Wenn Sie hier zu viele Threads zuweisen, könnten Sie andere Batch-Verarbeitungen beeinträchtigen. | Dieser Parameter steuert die Anzahl der Transaktionen, die gleichzeitig für einen bestimmten Store validiert werden können. |
 
 > [!NOTE]
 > Alle Einstellungen und Parameter, die sich auf Auszugsbuchungen beziehen und die in den Geschäften und auf der Seite **Commerce-Parameter** definiert sind, sind auf die verbesserte Funktion zur Auszugsbuchung anwendbar.
@@ -161,7 +170,7 @@ Die aggregierte Transaktionssicht bietet folgende Vorteile:
 - Der Benutzer hat Einblick in die aggregierten Transaktionen, die bei der Debitorenauftragserstellung fehlgeschlagen sind, und die Debitorenaufträge, die bei der Fakturierung fehlgeschlagen sind.
 - Der Benutzer hat Transparenz darüber, wie Transaktionen aggregiert werden.
 - Der Benutzer verfügt über einen vollständigen Prüfpfad, von Transaktionen über Kundenaufträge bis hin zu Verkaufsrechnungen. Diese Historie war in der Funktion zum Buchen von Legacy-Auszügen nicht verfügbar.
-- Eine aggregierte XML-Datei erleichtert die Identifizierung von Problemen bei der Auftragserstellung und Fakturierung.
+- Mit der aggregierten XML-Datei lassen sich Probleme bei der Erstellung von Verkaufsaufträgen und Rechnungen leichter erkennen.
 
 ### <a name="journal-vouchers"></a>Erfassungsbelege
 

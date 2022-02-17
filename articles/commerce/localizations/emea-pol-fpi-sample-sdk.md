@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: bff3a6ad74d50e7b706d4df92b17a4a3af36521b
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 45cae498df8157b9561c54e9859daadcaedd7823
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944814"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8076987"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-poland-legacy"></a>Leitfaden für die Bereitstellung des Beispiels für die Integration des Fiskaldruckers für Polen (veraltet)
 
@@ -116,7 +116,7 @@ In der vorherigen Prozedur aktivieren Sie die Erweiterungen, die Komponenten des
 
 ## <a name="design-of-extensions"></a>Entwurf von Erweiterungen
 
-Das Beispiel für die Integration des Fiskaldruckers für Polen basiert auf der [Fiskalintegrationsfunktionalität](fiscal-integration-for-retail-channel.md). Weitere Informationen über das Design der Lösung für die steuerliche Integration finden Sie unter [Überblick über die steuerliche Integration für Commerce-Kanäle](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+Das Beispiel für die Integration des Fiskaldruckers für Polen basiert auf der [Fiskalintegrationsfunktionalität](fiscal-integration-for-retail-channel.md). Weitere Informationen über das Design der Lösung für die steuerliche Integration finden Sie unter [Überblick über die steuerliche Integration für Commerce-Kanäle](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 ### <a name="commerce-runtime-extension-design"></a>Commerce-Laufzeiterweiterungsentwurf
 
@@ -124,7 +124,7 @@ Der Zweck der Erweiterung ist es, dass ein Steuerdokumentanbieter druckerspezifi
 
 Die CRT-Erweiterung ist **Runtime.Extensions.DocumentProvider.PosnetSample**. Diese Erweiterung generiert eine Reihe von druckerspezifischen Befehlen im Format JavaScript Object Notation (JSON), die in der POSNET-Spezifikation 19-3678 festgelegt sind.
 
-Genauere Informationen zum Entwurf der Steuerintegrationslösung finden Sie unter [Steuererfassungsprozess und Steuerintegrationsbeispiele für steuerbezogene Geräte](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+Weitere Informationen über den Aufbau der Fiskalintegrationslösung finden Sie unter [Fiskalischer Registrierungsprozess und Fiskalintegrationsbeispiele für Fiskalgeräte und -dienste](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 #### <a name="request-handler"></a>Anforderungshandler
 

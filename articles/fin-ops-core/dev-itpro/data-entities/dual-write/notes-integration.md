@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: d52ff69cfd7a81eb9f19a0ef498c6ceeea77b360
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c73da804d724ea75ae6ccd479d1b7f3cf02d48c4
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782355"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062774"
 ---
 # <a name="note-integration"></a>Integration von Notizen
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Im Verlauf von Geschäftsprozessen sammeln Benutzer von Microsoft Dynamics 365 häufig Informationen über ihre Kunden. Diese Informationen werden als Aktivitäten und Notizen aufgezeichnet. In diesem Thema wird die Integration von Notizdaten in dualem Schreiben erläutert
 
@@ -30,7 +30,7 @@ Informationen über Kunden können folgendermaßen klassifiziert werden:
 + **Umsetzbare Informationen für einen Dynamics 365-Benutzer** – Ein Kunde, der eine Surface-Einheit kauft, gibt beispielsweise spezielle Anweisungen ein, die darauf hinweisen, dass das Gerät vor der Lieferung in Geschenkverpackung verpackt werden sollte. Diese Anweisungen sind umsetzbare Informationen, die von dem Contoso-Mitarbeiter bearbeitet werden sollten, der für die Verpackung verantwortlich ist.
 + **Nicht umsetzbare Informationen** – Ein Kunde besucht beispielsweise das Contoso-Geschäft und zeigt während seines Gesprächs mit einem Shopmitarbeiter Interesse an *Halo* Games und Spielezubehör. Der Shopmitarbeiter notiert diese Informationen. Die Produktempfehlungsmodul nutzt sie dann, um dem Kunden Empfehlungen zu geben.
 
-Im Allgemeinen werden umsetzbare Informationen als *Aktivitäten* in Finance and Operations- und Kundenbindungs-Apps erfasst. Nicht umsetzbare Informationen werden in Finance and Operations-Apps als *Notizen* und in Kundenbindungs-Apps als *Anmerkungen* erfasst.
+Allgemein werden umsetzbare Informationen als *Aktivitäten* in Finance und Operations-Apps und Customer-Engagement-Apps erfasst. Nicht aktivierbare Informationen werden als *Anmerkungen* in Finance und Operations-Apps und als *Anmerkungen* in Customer-Engagement-Apps erfasst.
 
 > [!TIP]
 > Obwohl Notizen für nicht umsetzbare Informationen gedacht sind, können Sie sie trotzdem zum Speichern und Verarbeiten von umsetzbaren Informationen in den Apps verwenden, wenn Sie es möchten.
@@ -39,7 +39,7 @@ Microsoft veröffentlicht derzeit Funktionen für die Integration von Notizen. (
 
 ## <a name="create-a-note-in-a-customer-engagement-app"></a>Eine Notiz in einer Kundenbindungs-App erstellen
 
-Befolgen Sie diese Schritte zum Erstellen einer Notiz in einer Kundenbindungs-App und anschließendem Synchronisieren mit einer Finance and Operations-App.
+Um eine Notiz in einer Customer-Engagement-App zu erstellen und sie dann mit einer Finance und Operations App zu synchronisieren, führen Sie diese Schritte aus.
 
 1. Öffnen Sie in der Kundenbindungs-App den Kontodatensatz eines Debitoren.
 2. Wählen Sie im Bereich **Zeitskala** das Pluszeichen (**+**) und anschließend **Notiz** aus, um eine Notiz zu erstellen.
@@ -54,7 +54,7 @@ Befolgen Sie diese Schritte zum Erstellen einer Notiz in einer Kundenbindungs-Ap
 
     ![Neuer Hinweis auf der Debitorenzeitskala.](media/notes-ce-3.png)
 
-4. Melden Sie sich bei der Finance and Operations-App, und öffnen Sie denselben Debitorendatensatz. Beachten Sie, dass die **Anhänge**-Schaltfläche (Büroklammersymbol) in der oberen rechten Ecke anzeigt, dass der Datensatz einen Anhang hat.
+4. Melden Sie sich bei der App Finance und Operations an und öffnen Sie denselben Datensatz für den Debitor. Beachten Sie, dass die **Anhänge**-Schaltfläche (Büroklammersymbol) in der oberen rechten Ecke anzeigt, dass der Datensatz einen Anhang hat.
 
     ![Benachrichtigung über einen Anhang.](media/notes-ce-4.png)
 
@@ -62,17 +62,17 @@ Befolgen Sie diese Schritte zum Erstellen einer Notiz in einer Kundenbindungs-Ap
 
     ![Notiz in der Kundenbindungs-App.](media/notes-ce-5.png)
 
-Alle Aktualisierungen der Notiz werden zwischen der Finance and Operations-App und der Kundenbindungs-App hin und her synchronisiert.
+Alle Aktualisierungen der Notiz werden zwischen der Finance und Operations-App und der Customer-Engagement-App hin und her synchronisiert.
 
-## <a name="create-a-note-in-a-finance-and-operations-app"></a>Eine Notiz in einer Finance and Operations-App erstellen
+## <a name="create-a-note-in-a-finance-and-operations-app"></a>Erstellen Sie eine Notiz in einer Finance und Operations App
 
-Sie können eine Notiz ebenfalls in einer Finance and Operations-App erstellen, die dann mit einer Kundenbindungs-App synchronisiert wird.
+Sie können auch eine Notiz in einer Finance und Operations-App erstellen, die dann mit einer Customer-Engagement-App synchronisiert wird.
 
-Befolgen Sie diese Schritte zum Erstellen einer Notiz in einer Finance and Operations-App und anschließendem Synchronisieren mit einer Kundenbindungs-App.
+Um eine Notiz in einer Finance und Operations-App zu erstellen und sie dann mit einer Customer-Engagement-App zu synchronisieren, folgen Sie diesen Schritten.
 
-1. Wählen Sie in der Finance and Operations-App auf der Seite **Anhänge** die Option **Neu** \> **Notiz** aus.
+1. Wählen Sie in der App Finance und Operations auf der Seite **Anhänge** die Option **Neu** \> **Notiz**.
 
-    ![Erstellen einer Notiz in der Finance and Operations-App.](media/notes-fo-1.png)
+    ![Erstellen einer Notiz in der Finance und Operations App.](media/notes-fo-1.png)
 
 2. Geben Sie einen Titel und eine kurze Anleitung ein. Wählen Sie dann **Speichern** aus.
 
@@ -84,17 +84,17 @@ Befolgen Sie diese Schritte zum Erstellen einer Notiz in einer Finance and Opera
 
 Sie können eine Notiz entweder als intern oder als extern klassifizieren.
 
-- Öffnen Sie die Notiz in der Finance and Operations-App auf der Seite **Anhänge**, und wählen Sie anschließend im Feld **Einschränkung** die Option **Intern** oder **Extern** aus.
+- Öffnen Sie in der App Finance und Operations auf der Seite **Anhänge** die Notiz, und wählen Sie dann im Feld **Einschränkung** die Option **Intern** oder **Extern**.
 
     ![Einschränkungsfeld.](media/notes-fo-4.png)
 
 Sie können auch eine URL erstellen
 
-1. Wählen Sie in der Finance and Operations-App auf der Seite **Anhänge** die Option **Neu** \> **URL** aus.
+1. Wählen Sie in der App Finance und Operations auf der Seite **Anhänge** die Option **Neu** \> **URL**.
 2. Geben Sie einen Titel und die URL ein.
 3. Wählen Sie im Feld **Einschränkung** die Option **Intern** oder **Extern** aus.
 
-    ![Erstellen einer URL in der Finance and Operations-App.](media/notes-fo-5.png)
+    ![Erzeugen einer URL in der Finance und Operations App.](media/notes-fo-5.png)
 
 4. Wählen Sie **Speichern** aus.
 
@@ -109,7 +109,7 @@ Sie können auch eine URL erstellen
 
 Die Notizintegration enthält eine Sammlung von Tabellenzuordnungen, die während der Dateninteraktion zusammenarbeiten – wie in der folgenden Tabelle dargestellt.
 
-| Finance and Operations-App | Customer Engagement-App | Beschreibung |
+| Finance und Operations App | Customer Engagement-App | Description |
 |----------------------------|-------------------------|-------------|
 | [Debitorenanhänge](mapping-reference.md#230) | Anmerkungen | Unternehmen, die Klartext und URLs zum Erfassen debitorspezifischer Informationen verwenden (sowohl für Organisationen als auch für Personen). |
 | [Kreditorendokumentanhänge](mapping-reference.md#231) | Anmerkungen | Unternehmen, die Klartext und URLs zum Erfassen kreditorspezifischer Informationen verwenden (sowohl für Organisationen als auch für Personen). |

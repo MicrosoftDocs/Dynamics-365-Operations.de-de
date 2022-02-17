@@ -1,6 +1,6 @@
 ---
 title: Organisationshierarchie in Dataverse
-description: In diesem Thema wird die Integration von Organisationsdaten zwischen Finance and Operations Apps und Dataverse beschrieben.
+description: In diesem Thema wird die Integration von Organisationsdaten zwischen Finance and Operations-Apps und Dataverse beschrieben.
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: c7ef3a11817d60343503c80d89493262711524b1
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: afc1b5996667835c460f467526493380aa2d6403
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782307"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062085"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Organisationshierarchie in Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Da Dynamics 365 Finance ein Finanzsystem ist, ist *Organisation* ein Grundkonzept, und die Systemeinrichtung beginnt mit der Konfiguration einer Organisationshierarchie. Unternehmensfinanzen können auf Organisationsebene und auch auf jeder anderen Ebene in der Organisationshierarchie verfolgt werden.
 
@@ -28,11 +28,11 @@ Obwohl es in Dataverse nicht das Konzept einer Organisationshierarchie gibt, gib
 
 ## <a name="data-flow"></a>Datenfluss
 
-Ein Geschäftsökosystem, das aus Finance and Operations Apps und Dataverse besteht, wird weiterhin eine Organisationshierarchie haben. Diese Organisationshierarchie basiert auf Finance and Operations Apps, wird aber in Dataverse zu Informations- und Erweiterbarkeitszwecken verfügbar gemacht. Die folgende Abbildung zeigt die Organisationshierarchieinformationen, die in Dataverse als unidirektionaler Datenfluss von Finance and Operations Apps nach Dataverse verfügbar gemacht werden.
+Ein Geschäftsökosystem, das aus Finance and Operations-Apps and Dataverse besteht, wird weiterhin eine Organisationshierarchie haben. Diese Organisationshierarchie basiert auf Finance and Operations-Apps, wird aber in Dataverse zu Informations- und Erweiterbarkeitszwecken verfügbar gemacht. Die folgende Abbildung zeigt die Organisationshierarchieinformationen, die in Dataverse als unidirektionaler Datenfluss von Finance and Operations-Apps nach Dataverse verfügbar gemacht werden.
 
 ![Architekturabbildung.](media/dual-write-data-flow.png)
 
-Tabellenzuordnungen der Organisationshierarchie sind für die unidirektionale Synchronisierung von Finance and Operations-Apps zu Dataverse verfügbar.
+Für die einseitige Synchronisierung von Daten aus Apps für Finanzen und Betrieb mit Dataverse stehen Zuordnungen von Organisationshierarchien zur Verfügung.
 
 ## <a name="templates"></a>Vorlagen
 

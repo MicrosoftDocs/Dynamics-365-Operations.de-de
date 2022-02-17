@@ -2,7 +2,7 @@
 title: Ein E-Mail-Benachrichtigungsprofil einrichten
 description: In diesem Thema wird beschrieben, wie Sie ein E-Mail-Benachrichtigungsprofil in Microsoft Dynamics 365 Commerce erstellen.
 author: bicyclingfool
-ms.date: 03/01/2021
+ms.date: 02/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: a92c21a93766e6583882f50222837366ed4c9a24c2bbfd93933763bd4ffa46bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7a7d796a173a6f9dfcd62e1f73e078cac614145e
+ms.sourcegitcommit: 2aca3a95d42403c7f5d80dcd5e3ee958dca5c894
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771030"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8087866"
 ---
 # <a name="set-up-an-email-notification-profile"></a>E-Mail-Benachrichtigungsprofil einrichten
 
@@ -27,7 +27,7 @@ ms.locfileid: "6771030"
 
 In diesem Thema wird beschrieben, wie Sie ein E-Mail-Benachrichtigungsprofil in Microsoft Dynamics 365 Commerce erstellen.
 
-Wenn Sie Kanäle erstellen, können Sie ein E-Mail-Benachrichtigungsprofil einrichten. Auf diese Weise können E-Mails an Kunden für verschiedene Transaktionsereignisse gesendet werden, z. B. für die Auftragserstellung, den Versandstatus der Bestellung und Zahlungsfehler.
+Wenn Sie Kanäle erstellen, können Sie ein E-Mail-Benachrichtigungsprofil einrichten. Das E-Mail-Benachrichtigungsprofil definiert die Ereignisse einer Transaktion (wie z.B. Auftrag erstellt, Auftrag verpackt und Auftrag fakturiert), für die Sie Benachrichtigungen an Ihre Debitor senden werden. 
 
 Weitere Informationen über die Konfiguration von E-Mails finden Sie unter [E-Mail konfigurieren und senden](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
@@ -43,7 +43,7 @@ Gehen Sie folgendermaßen vor, um ein E-Mail-Benachrichtigungsprofil zu erstelle
 
 ### <a name="create-an-email-template"></a>E-Mail-Vorlage erstellen
 
-Bevor ein E-Mail-Benachrichtigungstyp aktiviert werden kann, müssen Sie eine E-Mail-Vorlage für die Organisation in der Commerce-Zentrale erstellen. Diese Vorlage definiert den E-Mail-Betreff, den Absender, die Standardsprache und den E-Mail-Text für jede Sprache, die Sie unterstützen möchten.
+Bevor ein E-Mail-Benachrichtigungstyp aktiviert werden kann, müssen Sie in der Commerce-Zentrale für jeden Benachrichtigungstyp, den Sie unterstützen möchten, eine Organisations-E-Mail-Vorlage erstellen. Diese Vorlage definiert den E-Mail-Betreff, den Absender, die Standardsprache und den E-Mail-Text für jede unterstützte Sprache.
 
 Führen Sie folgende Schritte aus, um eine E-Mail-Vorlage zu erstellen:
 
@@ -61,6 +61,8 @@ Das folgende Bild zeigt einige Beispieleinstellungen für E-Mail-Vorlagen.
 
 ![E-Mail-Vorlageneinstellungen.](media/email-template.png)
 
+Weitere Informationen zum Erstellen von E-Mail-Vorlagen finden Sie unter [Erstellen von E-Mail-Vorlagen für transaktionale Ereignisse](email-templates-transactions.md). 
+
 ### <a name="create-an-email-event"></a>E-Mail-Ereignis erstellen
 
 Führen Sie folgende Schritte aus, um eine E-Mail-Ereignis zu erstellen:
@@ -76,10 +78,12 @@ Das folgende Bild zeigt einige Beispiele für die Einstellungen der Ereignisbena
 
 ![Einstellungen für die Ereignisbenachrichtigung.](media/email-notification-profile.png)
 
+> [!NOTE]
+> Der vom Debitor erstellte Benachrichtigungstyp erfordert eine angepasste Implementierung, bevor eine E-Mail-Benachrichtigung versendet werden kann.
+
 ### <a name="next-steps"></a>Nächste Schritte
 
 Bevor Sie E-Mails senden können, müssen Sie Ihren Postausgangsdienst konfigurieren und einen Batchauftrag einrichten. Weitere Informationen finden Sie unter [E-Mail konfigurieren und senden](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
-
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

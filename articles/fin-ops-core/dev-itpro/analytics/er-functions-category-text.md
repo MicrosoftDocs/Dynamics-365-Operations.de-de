@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b69b16e4a40b5370c3a73f2aee40a8a86b952d9e
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: afe45bf1ff5c641346997aa4f32f3241dce2f0a2
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647559"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075499"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Liste der EB-Funktionen in der Textkategorie
 
@@ -35,6 +35,7 @@ Mithilfe der Textfunktionen für die elektronische Berichterstellung (EB) könne
 | [Verketten](er-functions-text-concatenate.md) | Diese Funktion gibt alle angegebenen Textzeichenfolgen mit dem Wert *String* zurück, nachdem sie zu einer Zeichenfolge zusammengefügt wurden. |
 | [Format](er-functions-text-format.md) | Diese Funktion gibt den angegebenen Zeichenfolgenwert *String* zurück, nachdem sie durch Ersetzen sämtlicher Vorkommnisse von **%N** durch das *N*. Argument formatiert wurde. |
 | [GetEnumValueByName](er-functions-text-getenumvaluebyname.md) | Diese Funktion sucht nach dem bestimmten Wert *Enum* in der angegebenen Aufzählungsdatenquelle unter Verwendung des Aufzählungsnamens, der mit dem Wert *String* angegeben ist. Wenn der Wert *Enum* gefunden wird, gibt die Funktion ihn zurück. |
+| [GetLabelText](er-functions-text-getlabeltext.md) | Diese Funktion sucht nach einem bestimmten Label und gibt einen *[String](er-formula-supported-data-types-primitive.md#string)*-Wert zurück, der die Übersetzung des angegebenen Labels in der angegebenen Sprache darstellt. |
 | [GuidValue](er-functions-text-guidvalue.md) | Diese Funktion konvertiert die angegebene Eingabe des Datentyps *String* in ein Datenelement des Typs *GUID*. |
 | [JsonValue](er-functions-text-jsonvalue.md) | Diese Funktion analysiert Daten im JavaScript Object Notation (JSON)-Format, auf die über den angegebenen Pfad zugegriffen wird, und sie extrahiert einen Skalarwert, der auf der angegebenen ID basiert. Anschließend wird der extrahierte Skalarwert als Wert *String* zurückgegeben. |
 | [NACH-LINKS-TASTE](er-functions-text-left.md) | Diese Funktion gibt den Wert *String* zurück, der die angegebene Anzahl von Zeichen ab dem Anfang der angegebenen Zeichenfolge angibt. |

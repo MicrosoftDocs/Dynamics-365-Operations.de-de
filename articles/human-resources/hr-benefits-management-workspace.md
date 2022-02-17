@@ -2,7 +2,7 @@
 title: Arbeitsbereich für Vorteilsverwaltung
 description: Dieses Thema beschreibt den Arbeitsbereich Vergütungsverwaltung in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 09/21/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e6cc1432e108c74706dea124a62024272e65b6c1
-ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
+ms.openlocfilehash: 424f4a2098e05b4f7dc6fa84df133dda81cc59f0
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7512473"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071463"
 ---
 # <a name="benefits-management-workspace"></a>Arbeitsbereich für Vorteilsverwaltung
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [applies to](../includes/applies-to-hr.md)]
 
@@ -94,7 +97,7 @@ Um einen anderen Leistungszeitraum anzuzeigen, wählen Sie ihn aus der Dropdownl
 Sie können Aktionsartikel anzeigen, indem Sie entweder eine Kachel oder eine Registerkarte auswählen. Wenn Sie eine Registerkarte auswählen, können Sie Arbeitskräfte auf der Seite des Arbeitsbereichs anzeigen und auswählen.
 Die Registerkarte **Registrierung öffnen** bietet wichtige Metriken für den offenen Registrierungsprozess. 
 
-Informationen zur offenen Registrierung werden 30 Tage vor dem **Startdatum für Registrierung** angezeigt. Dies ist in der **Perioden**-Einrichtung unter **Leistungsmanagement** > **Links** > **Perioden** im Feld **Startdatum der Registrierung** definiert.  Wechseln Sie zum Ändern dieser Einstellung zu **Human Resources-Parameter konfigurieren** > **Leistungsmanagement** > **Optionen für die offene Registrierung**, und aktualisieren Sie das Feld **Anzahl**.  
+Informationen zur offenen Registrierung werden 30 Tage vor dem **Startdatum für Registrierung** angezeigt. Dies ist in der **Perioden**-Einrichtung unter **Leistungsmanagement** > **Links** > **Perioden** im Feld **Startdatum der Registrierung** definiert.  Um diese Einstellung festzulegen, gehen Sie auf **Gemeinsame Parameter für Human Resources** > **Vorteilsverwaltung** > **Anmeldungsoptionen öffnen** und aktualisieren das Feld **Anzahl der**.  
 
 Die folgenden Informationen finden Sie auf der Registerkarte **Registrierung öffnen**:
  - Mitarbeiter, die den offenen Registrierungsprozess noch nicht begonnen haben
@@ -109,11 +112,11 @@ Die folgenden Informationen finden Sie auf der Registerkarte **Registrierung öf
   > [!NOTE]
   > Wenn Sie den Fortschritt der offenen Registrierung für einen **Plantyp** nicht verfolgen möchten, Sie können ihn ausschließen, indem Sie zu **Vergütungsverwaltung** > **Links** > **Mitarbeiter-Self-Service-Parameter** > **Vorteilsplan-Kachel einrichten** wechseln und das Feld **Fortschritt der offenen Registrierung verfolgen** aktualisieren.  Sie haben beispielsweise Pläne erstellt, für die Folgendes gilt: **Plantyp** = **Sonstiges**. Bei diesen Plänen kann es sich um optionale Pläne handeln, für die Sie den Registrierungsfortschritt nicht verfolgen möchten. Wenn Sie diesen Plantyp nicht auswählen, werden Pläne dieser Typen beim Verfolgen des Registrierungsfortschritts oder -Abschlusses auf der Registerkarte **Registrierung öffnen** ignoriert. Diese Einstellung gilt für den Plantyp, der für alle Perioden und juristischen Personen ausgewählt wird.
 
-- **In Bearbeitung** – Die Kachel **In Bearbeitung** zeigt die Anzahl der Mitarbeiter mit in Bearbeitung befindlichen Wahlen an. Die Kachel **In Bearbeitung** ist eine gefilterte Liste, die nur Mitarbeiter anzeigt, für die mindestens ein Plan aufgehoben oder ausgewählt wurde. Obligatorische Pläne werden ignoriert und nicht berücksichtigt, da sie standardmäßig für den Mitarbeiter ausgewählt sind. Sie können von dieser Kachel aus einen Drillback ausführen, um die ausgewählten und aufgegebenen Pläne auf der Seite **Massenaktualisierung für Arbeitnehmerleistungspläne** anzuzeigen.
+- **In Bearbeitung** – Die Kachel **In Bearbeitung** zeigt die Anzahl der Mitarbeiter mit in Bearbeitung befindlichen Wahlen an. Die Kachel **In Bearbeitung** ist eine gefilterte Liste, die nur Mitarbeiter anzeigt, für die mindestens ein Plan aufgehoben oder ausgewählt wurde. Obligatorische Pläne werden ignoriert und nicht berücksichtigt, da sie standardmäßig für den Mitarbeiter ausgewählt sind. Sie können von dieser Kachel aus zurückgehen, um die ausgewählten und aufgehobenen Pläne auf der Seite **Leistungspläne für Arbeitskräfte Massenaktualisierung** zu sehen.
 
 - **Eingeschriebene Leistungen** – Die Kachel **Für Vergütungen registriert** gibt die Anzahl der Mitarbeiter an, die vollständig für Vergütungen sind. Die Kachel **Für Vergütungen registriert** ist eine gefilterte Liste, die Mitarbeiter an, die alle Pläne ausgewählt oder aufgehoben haben. Die Abfrage schließt Pläne aus, die nicht für die offene Registrierung auf der Seite **Mitarbeiter-Self-Service-Parameter** verfolgt werden. Sie können von dieser Kachel aus einen Drillback ausführen, um eine Liste der Mitarbeiter auf der Seite **Vergütungspläne für Arbeitskräfte** anzuzeigen.
 
-- **Unbestätigte Auswahl** – Die Kachel **Unbestätigte Auswahl** zeigt die Anzahl der Mitarbeiter mit ausgewählten oder aufgehobenen Plänen, die bestätigt werden müssen. Sie können von dieser Kachel aus einen Drillback ausführen, um die Seite **Massenaktualisierung für Arbeitnehmerleistungspläne** anzuzeigen.
+- **Unbestätigte Auswahl** – Die Kachel **Unbestätigte Auswahl** zeigt die Anzahl der Mitarbeiter mit ausgewählten oder aufgehobenen Plänen, die bestätigt werden müssen. Sie können von dieser Kachel aus zurückgehen, um die Seite **Massenaktualisierung der Leistungspläne für Arbeitskräfte** anzuzeigen.
 
 **Aktivität**
 

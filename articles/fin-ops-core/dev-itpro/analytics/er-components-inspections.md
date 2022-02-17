@@ -2,7 +2,7 @@
 title: Konfigurierte EB-Komponente überprüfen, um Laufzeitprobleme zu vermeiden
 description: In diesem Thema wird erläutert, wie Sie die konfigurierten EB-Komponenten (Elektronische Berichterstellung) überprüfen, um mögliche Laufzeitprobleme zu vermeiden.
 author: NickSelin
-ms.date: 08/26/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a855619ebd1c41dc3ca583912f758ed8a8f9ceef
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: c63ffc6316d21d36bb2aad57194b8aa1c477607e
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488113"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074790"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Konfigurierte EB-Komponente überprüfen, um Laufzeitprobleme zu vermeiden
 
 [!include[banner](../includes/banner.md)]
 
-Alle konfigurierten [Formate](general-electronic-reporting.md#FormatComponentOutbound) und [Modellzuordnungskomponenten](general-electronic-reporting.md#data-model-and-model-mapping-components) der [elektronischen Berichterstellung (EB)](general-electronic-reporting.md) können zur Entwurfszeit [bestätigt](er-fillable-excel.md#validate-an-er-format) werden. Während dieser Prüfung wird eine Konsistenzprüfung durchgeführt, um mögliche Laufzeitprobleme, wie etwa Ausführungsfehler und Leistungseinbußen, zu vermeiden. Für jedes gefundene Problem wird der Pfad eines problematischen Elements angegeben. Für einige Probleme ist eine automatische Korrektur verfügbar.
+Alle konfigurierten [Formate](er-overview-components.md#format-components-for-outgoing-electronic-documents) und [Modellzuordnungskomponenten](er-overview-components.md#model-mapping-component) der [elektronischen Berichterstellung (EB)](general-electronic-reporting.md) können zur Entwurfszeit [bestätigt](er-fillable-excel.md#validate-an-er-format) werden. Während dieser Prüfung wird eine Konsistenzprüfung durchgeführt, um mögliche Laufzeitprobleme, wie etwa Ausführungsfehler und Leistungseinbußen, zu vermeiden. Für jedes gefundene Problem wird der Pfad eines problematischen Elements angegeben. Für einige Probleme ist eine automatische Korrektur verfügbar.
 
 Standardmäßig wird die Prüfung in den folgenden Fällen automatisch für eine EB-Konfiguration angewendet, die die zuvor genannten EB-Komponenten enthält:
 
@@ -236,6 +236,15 @@ Die folgende Tabelle enthält eine Übersicht der Inspektionen, die die EB biete
 <td>Fehler</td>
 <td>Es gibt mehr als zwei Bereichskomponenten ohne Replikation. Bitte entfernen Sie nicht benötigte Komponenten.</td>
 </tr>
+<tr>
+<td><a href='#i18'>Ausführbarkeit eines Ausdrucks mit der Funktion ORDERBY</a></td>
+<td>Ausführbarkeit</td>
+<td>Fehler</td>
+<td>
+<p>Der Listenausdruck der ORDERBY-Funktion ist nicht abfragbar.</p>
+<p><b>Laufzeitfehler:</b> Die Sortierung wird nicht unterstützt. Überprüfen Sie die Konfiguration für weitere Details hierzu.</p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -365,7 +374,7 @@ Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
 8. Nennen Sie die das verschachtelte Feld **$AccNumber** und konfigurieren Sie es so, dass es den Ausdruck `TRIM(Vendor.AccountNum)` enthält.
 9. Wählen Sie **Überprüfen** aus, um die bearbeitbare Modellzuordnungskomponente auf der Seite **Modellzuordnungsdesigner** zu überprüfen. Vergewissern Sie sich dann, ob der Ausdruck `FILTER(Vendor, Vendor.AccountNum="US-101")` in der Datenquelle **Liefernant** abgefragt werden kann.
 
-    ![Sicherstellen, dass der Ausdruck auf der Seite „Modellzuordnungsdesigner“ abgefragt werden kann.](./media/er-components-inspections-04.gif)
+    ![Überprüfen Sie, ob der Ausdruck mit der Funktion FILTER auf der Designerseite für die Modellzuordnung abgefragt werden kann.](./media/er-components-inspections-04.gif)
 
 10. Beachten Sie, dass ein Prüfungsfehler auftritt, da die Datenquelle **Lieferant** ein verschachteltes Feld vom Typ **Berechnetes Feld** enthält, das nicht zulässt, dass der Ausdruck aus der Datenquelle **FilteredVendor** in die direkte SQL-Anweisung übersetzt wird.
 
@@ -671,19 +680,19 @@ Die folgende Abbildung zeigt den Laufzeitfehler, der auftritt, wenn Sie die Warn
 
 ![Laufzeitfehler, der während der Ausführung der Formatzuordnung auf der Seite „Formatdesigner“ auftritt.](./media/er-components-inspections-10b.png)
 
-### <a name="automatic-resolution&quot;></a>Automatische Lösung
+### <a name="automatic-resolution"></a>Automatische Lösung
 
 Es ist keine Option verfügbar, um dieses Problem automatisch zu beheben.
 
-### <a name=&quot;manual-resolution&quot;></a>Manuelle Lösung
+### <a name="manual-resolution"></a>Manuelle Lösung
 
-#### <a name=&quot;option-1&quot;></a>Option 1
+#### <a name="option-1"></a>Option 1
 
 Entfernen Sie die Markierung **Zwischenspeicher** aus der Datenquelle **Lieferant**. Die Datenquelle **FilteredVendor** wird dann ausführbar, aber auf die Datenquelle **Lieferant**, auf die in der VendTable-Tabelle verwiesen wird, wird jedes Mal zugegriffen, wenn die Datenquelle **FilteredVendor** aufgerufen wird.
 
-#### <a name=&quot;option-2&quot;></a>Option 2
+#### <a name="option-2"></a>Option 2
 
-Ändern Sie den Ausdruck der Datenquelle **FilteredVendor** von `FILTER(Vendor, Vendor.AccountNum=&quot;US-101")` zu `WHERE(Vendor, Vendor.AccountNum="US-101")`. In diesem Fall wird auf die Datenquelle **Lieferant**, auf die in der VendTable-Tabelle verwiesen wird, nur beim ersten Aufruf der Datenquelle **Lieferant** zugegriffen. Die Auswahl der Datensätze erfolgt jedoch im Speicher. Daher kann dieser Ansatz eine Verschlechterung der Leistung verursachen.
+Ändern Sie den Ausdruck der Datenquelle **FilteredVendor** von `FILTER(Vendor, Vendor.AccountNum="US-101")` zu `WHERE(Vendor, Vendor.AccountNum="US-101")`. In diesem Fall wird auf die Datenquelle **Lieferant**, auf die in der VendTable-Tabelle verwiesen wird, nur beim ersten Aufruf der Datenquelle **Lieferant** zugegriffen. Die Auswahl der Datensätze erfolgt jedoch im Speicher. Daher kann dieser Ansatz eine Verschlechterung der Leistung verursachen.
 
 ## <a name="missing-binding"></a><a id="i11"></a>Fehlende Bindung
 
@@ -892,6 +901,47 @@ Es ist keine Option verfügbar, um dieses Problem automatisch zu beheben.
 #### <a name="option-1"></a>Option 1
 
 Ändern Sie das konfigurierte Format, indem Sie die Eigenschaft **Replikationsrichtung** für alle inkonsistenten **Excel\\Bereich**-Komponenten ändern.
+
+## <a name="executability-of-an-expression-with-orderby-function"></a><a id="i18"></a>Ausführbarkeit eines Ausdrucks mit der Funktion ORDERBY
+
+Die integrierte [ORDERBY](er-functions-list-orderby.md) ER-Funktion wird verwendet, um die Datensätze einer ER-Datenquelle vom Typ **[Datensatzliste](er-formula-supported-data-types-composite.md#record-list)** zu sortieren, die als Argument der Funktion angegeben wird.
+
+Die Argumente der Funktion `ORDERBY` können [angegeben](er-functions-list-orderby.md#syntax-2) werden, um Datensätze von Anwendungstabellen, Ansichten oder Entitäten durch einen einzigen Datenbankaufruf zu sortieren und die sortierten Daten als Liste von Datensätzen zu erhalten. Eine Datenquelle vom Typ **Datensatzliste** wird als Argument der Funktion verwendet und gibt die Anwendungsquelle für den Aufruf an.
+
+ER prüft, ob eine direkte Datenbankabfrage zu einer Datenquelle, auf die in der Funktion `ORDERBY` verwiesen wird, eingerichtet werden kann. Wenn keine direkte Abfrage möglich ist, tritt im EB-Modellzuordnungsdesigner ein Prüfungsfehler auf. Die Nachricht, die Sie erhalten, besagt, dass der EB-Ausdruck, der die `ORDERBY`-Funktion enthält, nicht zur Laufzeit ausgeführt werden kann.
+
+Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
+
+1. Beginnen Sie mit der Konfiguration der EB-Modellzuordnungskomponente.
+2. Fügen Sie eine Datenquelle vom Typ **Dynamics 365 for Operations \\ Tabellendatensätze** hinzu.
+3. Nennen Sie die neue Datenquelle **Lieferant**. Wählen Sie im Feld **Tabelle** die Option **VendTable**, um anzugeben, dass diese Datenquelle die Tabelle **VendTable** abfragt.
+4. Fügen Sie eine Datenquelle vom Typ **Berechnetes Feld** hinzu.
+5. Nennen Sie die neue Datenquelle **OrderedVendors**, und konfigurieren Sie sie so, dass sie den Ausdruck `ORDERBY("Query", Vendor, Vendor.AccountNum)` enthält.
+ 
+    ![Konfigurieren Sie die Datenquellen auf der Designerseite für die Modellzuordnung.](./media/er-components-inspections-18-1.png)
+
+6. Wählen Sie **Validieren**, um die bearbeitbare Komponente für die Modellzuordnung auf der Seite **Modellzuordnungsdesigner** zu überprüfen und sicherzustellen, dass der Ausdruck in der Datenquelle **OrderedVendors** abgefragt werden kann.
+7. Ändern Sie die Datenquelle **Lieferant**, indem sie ein verschachteltes Feld vom Typ **Berechnetes Feld** hinzufügen, um die gekürzte Lieferantenkontonummer abzurufen.
+8. Nennen Sie die das verschachtelte Feld **$AccNumber** und konfigurieren Sie es so, dass es den Ausdruck `TRIM(Vendor.AccountNum)` enthält.
+9. Wählen Sie **Validieren**, um die bearbeitbare Komponente für die Modellzuordnung auf der Seite **Modellzuordnungsdesigner** zu prüfen und sicherzustellen, dass der Ausdruck in der Datenquelle **Lieferant** abgefragt werden kann.
+
+    ![Überprüfen, ob der Ausdruck in der Datenquelle Kreditor auf der Designerseite für die Modellzuordnung abgefragt werden kann.](./media/er-components-inspections-18-2.png)
+
+10. Beachten Sie, dass ein Überprüfungsfehler auftritt, weil die Datenquelle **Kreditor** ein verschachteltes Feld des Typs **Berechnetes Feld** enthält, das es nicht zulässt, dass der Ausdruck der Datenquelle **OrderedVendors** in die direkte Datenbankanweisung übersetzt wird. Der gleiche Fehler tritt zur Laufzeit auf, wenn Sie den Validierungsfehler ignorieren und **Ausführen** wählen, um diese Modellzuordnung auszuführen.
+
+### <a name="automatic-resolution"></a>Automatische Lösung
+
+Es ist keine Option verfügbar, um dieses Problem automatisch zu beheben.
+
+### <a name="manual-resolution"></a>Manuelle Lösung
+
+#### <a name="option-1"></a>Option 1
+
+Anstatt ein verschachteltes Feld vom Typ **Berechnetes Feld** zur Datenquelle **Kreditor** hinzuzufügen, fügen Sie das verschachtelte Feld **$AccNumber** zur Datenquelle **FilteredVendors** hinzu und konfigurieren das Feld so, dass es den Ausdruck `TRIM(FilteredVendor.AccountNum)` enthält. Auf diese Weise kann der Ausdruck `ORDERBY("Query", Vendor, Vendor.AccountNum)` auf der Datenbankebene ausgeführt werden und die Berechnung des verschachtelten Feldes **$AccNumber** kann danach erfolgen.
+
+#### <a name="option-2"></a>Option 2
+
+Ändern Sie den Ausdruck der Datenquelle **FilteredVendors** von `ORDERBY("Query", Vendor, Vendor.AccountNum)` auf `ORDERBY("InMemory", Vendor, Vendor.AccountNum)`. Wir empfehlen Ihnen nicht, den Ausdruck für eine Tabelle mit einem großen Datenvolumen (Transaktionstabelle) zu ändern, da alle Datensätze abgerufen werden und die Reihenfolge der benötigten Datensätze im Speicher erfolgt. Daher kann dieser Ansatz eine Verschlechterung der Leistung verursachen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

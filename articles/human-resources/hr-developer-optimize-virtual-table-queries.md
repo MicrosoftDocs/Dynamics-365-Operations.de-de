@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-04-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 40fc4c06c563415cd5b1a13c145b778276274fd97279dc9f56ff5e3f8954dc76
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1857d2e35e369bcd0c8f02a059a307f31da8b3b9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732008"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067453"
 ---
 # <a name="optimize-dataverse-virtual-table-queries"></a>Virtuelle Dataverse-Tabellenabfragen optimieren
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 ## <a name="issue"></a>Abgang
 
@@ -47,12 +50,12 @@ Eine Ursache für eine langsame Leistung mit virtuellen Dataverse-Tabellen für 
 Diese Auswirkungen treten zum Beispiel möglicherweise bei Abfragen an die Arbeitskraft- Entität (**mshr_hcmworkerentity**) oder Basisarbeitskraft-Entität (**mshr_hcmworkerbaseentity**) auf. Möglicherweise tritt das Leistungsproblem auf verschiedene Arten auf:
 
 - **Langsame Abfrageausführung**: Die Abfrage für die virtuelle Tabelle gibt möglicherweise die erwarteten Ergebnisse zurück, es dauert jedoch länger als erwartet, bis die Ausführung der Abfrage abgeschlossen ist.
-- **Abfragetimeout**: Bei der Abfrage kann es zu einer Zeitüberschreitung kommen und der folgende Fehler wird zurückgeben: „Es wurde ein Token zum Aufrufen von Finance and Operations erhalten, aber Finance and Operations hat einen Fehler vom Typ InternalServerError zurückgegeben.“
+- **Abfragezeitüberschreitung**: Die Abfrage kann eine Zeitüberschreitung verursachen und den folgenden Fehler zurückgeben: „Es wurde ein Token erhalten, um Finance und Operations aufzurufen, aber Finance und Operations hat einen Fehler vom Typ InternalServerError zurückgegeben.“
 - **Unerwarteter Fehler**: Die Abfrage gibt möglicherweise einen Fehler vom Typ 400 mit der folgenden Meldung zurück: „Ein unerwarteter Fehler ist aufgetreten.“
 
   ![Fehler vom Typ 400 bei der HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType400.png)
 
-- **Drosselung**: Die Abfrage kann die Serverressourcen überbeanspruchen, sodass es zu einer Drosselung kommt. In diesem Fall gibt die Abfrage den folgenden Fehler zurück: „Es wurde ein Token zum Aufrufen von Finance and Operations erhalten, aber Finance and Operations hat einen Fehler vom Typ 429 zurückgegeben.“ Weitere Informationen zur Drosselung in Humen Resources finden Sie unter [Drosselung – Häufig gestellte Fragen](./hr-admin-integration-throttling-faq.md).
+- **Drosselung**: Die Abfrage kann die Serverressourcen überbeanspruchen, sodass es zu einer Drosselung kommt. In diesem Fall gibt die Abfrage den folgenden Fehler zurück: „Es wurde ein Token erhalten, um Finance und Operations aufzurufen, aber Finance und Operations hat einen Fehler vom Typ 429 zurückgegeben.“ Weitere Informationen zur Drosselung in Humen Resources finden Sie unter [Drosselung – Häufig gestellte Fragen](./hr-admin-integration-throttling-faq.md).
 
   ![Fehler vom Typ 429 bei der HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType429.png)
 
@@ -101,7 +104,7 @@ Wenn Sie beim Erstellen eines Power BI-Bericht für eine virtuelle Dataverse-Tab
 4. Erweitern Sie im Navigator-Fenster den Knoten **Entitäten** aus.
 5. Geben Sie im Suchfeld **mshr_hcmworkerbaseentity** ein und wählen Sie die Entität aus.
 6. Wählen Sie **Daten transformieren** aus.
-7. Wählen Sie im Fenster des Power Query-Editor die Option **Erweiterter Editor** aus.
+7. Wählen Sie im Fenster Power Query Editor **Erweiterter Editor**.
 8. Aktualisieren Sie im **Erweiterten Editor** die Abfrage so, dass sie wie folgt aussieht, und fügen Sie dem Array Spalten nach Bedarf hinzu oder entfernen Sie sie.
 
    ```
@@ -113,14 +116,14 @@ Wenn Sie beim Erstellen eines Power BI-Bericht für eine virtuelle Dataverse-Tab
    in
      selectedWorkerBaseEntityColumns
    ```
-   ![Die Abfrage im erweiterten Editor des Power Query-Editor aktualisieren.](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
+   ![Aktualisieren Sie die Abfrage im Advanced Editor für den Power Query-Editor.](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
 
 9. Wählen Sie **Fertig**.
 
    > [!NOTE]
    > Wenn Sie vor dem Aktualisieren einen Fehler vom Typ 429 von der Abfrage erhalten haben, müssen Sie möglicherweise die Wiederholungsperiode abwarten, bevor Sie die Abfrage aktualisieren, damit sie erfolgreich abgeschlossen wird.
 
-10. Klicken Sie im Aktionsband des Power Query-Editors auf **Schließen & Übernehmen**.
+10. Klicken Sie auf **Schließen & Anwenden** auf dem Menüband Power Query Editor Aktion.
 
 Sie können dann mit dem Aufbau Ihres Power BI-Berichts für die aus der virtuellen Tabelle ausgewählten Spalten beginnen.
 

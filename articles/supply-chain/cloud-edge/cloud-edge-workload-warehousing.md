@@ -6,7 +6,7 @@ ms.date: 09/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: PurchTable, SysSecRolesEditUsers, SysWorkloadDuplicateRecord
+ms.search.form: PurchTable, InventTransferOrders, SalesTable, SysSecRolesEditUsers, SysWorkloadDuplicateRecord
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: ae8e9791b590a32581b66853f55ea11bc389bb19
-ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
+ms.openlocfilehash: 0d8b0f5a4878a924943f6f8876575d5247875811
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "7891751"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068108"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Workloads in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten
 
@@ -36,7 +36,18 @@ Workloads in der Lagerortverwaltung ermöglichen Cloud- und Edge-Skalierungseinh
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
+Bevor Sie mit dem Workload der Lagerverwaltung arbeiten, muss Ihr System wie in diesem Abschnitt beschrieben vorbereitet werden.
+
+### <a name="deploy-a-scale-unit-with-the-warehouse-management-workload"></a>Stellen Sie eine Scale-Unit mit dem Workload der Lagerverwaltung bereit.
+
 Sie müssen über einen Dynamics 365 Supply Chain Management-Hub und eine Scale-Unit verfügen, die mit der Arbeitsauslastung der Lagerortverwaltung bereitgestellt wurde. Weitere Informationen zur Architektur und zum Bereitstellungsprozess finden Sie unter [Skalierungseinheiten in einer verteilten Hybridtopologie](cloud-edge-landing-page.md).
+
+### <a name="turn-on-required-features-in-feature-management"></a>Aktivieren Sie erforderliche Funktionen in der Funktionsverwaltung
+
+Verwenden Sie den Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um die beiden folgenden Funktionen zu aktivieren. (Beide Funktionen sind unter dem Modul *Lagerverwaltung* aufgeführt.)
+
+- Einlagerungsarbeit von ASNs entkoppeln
+- (Vorschauversion) Unterstützung von Skalierungseinheiten bei ein- und ausgehenden Lagerortaufträgen
 
 ## <a name="how-the-warehouse-execution-workload-works-on-scale-units"></a>Funktionsweise der Workload für die Lagerausführung auf Skalierungseinheiten
 
@@ -108,6 +119,26 @@ Das folgende Diagramm zeigt den eingehenden Fluss und zeigt an, wo die einzelnen
 
 [![Eingehender Verarbeitungs-Flow](media/wes_inbound_warehouse_processes-small.png "Eingehender Verarbeitungs-Flow")](media/wes_inbound_warehouse_processes.png)
 
+## <a name="production-control"></a>Produktionssteuerung
+
+Der Workload Lagerverwaltung unterstützt die folgenden drei Flows für die Produktion in der Warehouse Management App:
+
+- Fertig melden und einlagern
+- Produktionsauftrag starten
+- Materialverbrauch registrieren
+
+### <a name="report-as-finished-and-put-away"></a>Fertig melden und einlagern
+
+Arbeitskräfte können den Flow **Erledigt melden und einlagern** in der Warehouse Management App verwenden, um einen Produktions- oder Batch-Auftrag als erledigt zu melden. Sie können auch Kuppelprodukte und Nebenprodukte auf einem Batch-Auftrag als erledigt melden. Wenn ein Auftrag als abgeschlossen gemeldet wird, erzeugt das System in der Regel Einlagerungs-Lagerortarbeit auf der Scale-Einheit. Wenn Sie keine Einlagerungen benötigen, können Sie in Ihren Richtlinien festlegen, dass diese Funktion weggelassen wird.
+
+### <a name="start-production-order"></a>Produktionsauftrag starten
+
+Arbeitskräfte können den Flow **Produktionsauftrag starten** in der App Warehouse Management verwenden, um den Beginn eines Produktions- oder Batch-Auftrags zu registrieren.
+
+### <a name="register-material-consumption"></a>Materialverbrauch registrieren
+
+Arbeitskräfte können den Flow **Materialverbrauch registrieren** in der App Warehouse Management verwenden, um den Materialverbrauch für einen Produktions- oder Batch-Auftrag zu melden. Für das gemeldete Material auf dem Produktions- oder Batch-Auftrag auf der Scale-Einheit wird dann ein Erfassungsjournal für die Kommissionierung erstellt. Die Buchungsblattzeilen nehmen eine physische Reservierung für den verbrauchten Bestand vor. Wenn Daten zwischen der Scale-Unit und dem Hub synchronisiert werden, wird eine Erfassung der Kommissionierliste erstellt und auf der Hub-Instanz veröffentlicht.
+
 ## <a name="supported-processes-and-roles"></a>Unterstützte Prozesse und Rollen
 
 Nicht alle Prozesse der Lagerortverwaltung werden in einer Workload für die Lagerausführung auf einer Skalierungseinheit unterstützt. Daher empfehlen wir, dass Sie Rollen zuweisen, die zu der Funktionalität passen, die jedem Benutzer zur Verfügung steht.
@@ -139,22 +170,26 @@ Folgende Arbeitsarten können auf einer Skalierungseinheit erstellt und somit im
 - **Zykluszählung** – Einschließlich einer Abweichung beim Genehmigungs-/Ablehnungsprozess als Teil von Zählvorgängen.
 - **Bestellungen** – Einlagerungsarbeiten über einen Lagerortauftrag, wenn Bestellungen nicht mit Ladungen verbunden sind.
 - **Aufträge** – einfache Kommissionier- und Verladearbeiten.
+- **Übertragungsbeleg** - Über die Verarbeitung des Ladungsträgers.
 - **Übertragungsproblem** – einfache Kommissionier- und Verladearbeiten.
 - **Wiederbeschaffung** – Ohne Rohmaterial für die Produktion.
 - **Einlagerung von Fertigerzeugnissen** – Nach der Meldung eines Produktionsauftrags als abgeschlossen.
 - **Einlagerung von Co- und Nebenprodukten** – Nach der Meldung eines Produktionsauftrags als abgeschlossen.
+<!-- - **Packed container picking** - After manual packing station processing. -->
 
-Keine anderen Arten von Quelldokumentverarbeitung oder Lagerortarbeiten werden derzeit auf Skalierungseinheiten unterstützt. Beispielsweise können Sie für eine Workload für die Lagerausführung auf einer Skalierungseinheit keinen Empfangsvorgang für Umlagerungsaufträge (Umlagerungseingang) ausführen. Dieser muss stattdessen von der Hub-Instanz verarbeitet werden
+Andere Arten der Verarbeitung von Quellbelegen oder Lagerortarbeit werden derzeit in Scale-Units nicht unterstützt. Wenn Sie z.B. einen Workload zur Lagerausführung auf einer Scale-Unit ausführen, können Sie den Prozess zum Empfang von Verkaufsaufträgen nicht verwenden, um Rücklieferungen zu verarbeiten. Stattdessen muss diese Verarbeitung von der Hub-Instanz vorgenommen werden.
 
 > [!NOTE]
 > Menüelemente und Schaltflächen für mobile Geräte für nicht unterstützte Funktionen werden in der _Warehouse Management Mobile App_ nicht angezeigt, wenn sie mit einer Skalierungseinheitsbereitstellung verbunden ist.
-> 
+>
+> Es sind ein paar zusätzliche Schritte erforderlich, um die Warehouse Management Mobile-App für den Einsatz mit einer Cloud- oder Edge-Scale-Unit festzulegen. Weitere Informationen finden Sie unter [Konfigurieren Sie die Warehouse Management Mobile-App für Scale-Units in der Cloud und am Rand](cloud-edge-workload-setup-warehouse-app.md).
+>
 > Wenn Sie eine Arbeitsauslastung auf einer Skalierungseinheit ausführen, können Sie keine nicht unterstützten Prozesse für das spezifische Lager auf dem Hub ausführen. Die später in diesem Thema bereitgestellten Tabellen dokumentieren die unterstützten Funktionen.
 >
 > Ausgewählte Lagerort-Arbeitstypen können sowohl auf dem Hub als auch auf Skalierungseinheiten erstellt werden, können jedoch nur vom besitzenden Hub oder der besitzenden Skalierungseinheit (der Bereitstellung, die die Daten erstellt hat) verwaltet werden.
 >
 > Beachten Sie auch dann, wenn ein bestimmter Prozess von einer Skalierungseinheit unterstützt wird, dass möglicherweise nicht alle erforderlichen Daten vom Hub zur Skalierungseinheit oder von der Skalierungseinheit zum Hub synchronisiert werden, was zu einer unerwarteten Systemverarbeitung führen kann. Beispiele für dieses Szenario:
-> 
+>
 > - Wenn Sie eine Abfrage der Lagerplatzrichtlinie, die einen Datentabellendatensatz verknüpft, der nur bei der Hubbereitstellung vorhanden ist.
 > - Wenn Sie Standortstatus- und/oder Standortvolumenlastfunktionen verwenden. Diese Daten werden zwischen den Bereitstellungen nicht synchronisiert und funktionieren daher nur, wenn das vorhandene Standortinventar für eine der Bereitstellungen aktualisiert wird.
 
@@ -174,16 +209,16 @@ Die folgenden Funktionen der Lagerortverwaltung werden derzeit für Arbeitsausla
 - Verarbeitung mit Artikelgewichten.
 - Verarbeitung mit Artikeln, die nur für die Transportverwaltung (TMS) aktiviert sind.
 - Verarbeitung mit negativem Bestand.
+- Unternehmensübergreifende Datenfreigabe für Produkte. <!-- Planned -->
 - Lagerort-Arbeitsverarbeitung mit Versandschein.
 - Lagerort-Arbeitsverarbeitung mit Materialhandhabung/Lagerortautomatisierung.
 - Produktmasterdaten-Images (z. B. in der mobilen Warehouse Management-App).
-- Unternehmensübergreifende Datenfreigabe für Produkte.
 
 > [!WARNING]
 > Einige Lagerortfunktionen sind für Lageorte, in denen die Arbeitsauslastungen für die Lagerortverwaltung auf einer Skalierungseinheit ausgeführt werden, nicht verfügbar und werden auch auf dem Hub oder der Arbeitsauslastung der Skalierungseinheit nicht unterstützt.
-> 
+>
 > Andere Funktionen können auf beiden Seiten verarbeitet werden, erfordern jedoch in einigen Szenarien eine sorgfältige Verwendung, z. B. wenn der Lagerbestand aufgrund des asynchronen Datenaktualisierungsprozesses für denselben Lager sowohl auf dem Hub als auch auf der Skalierungseinheit aktualisiert wird.
-> 
+>
 > Spezifische Funktionen (wie z. B. *Arbeit sperren*), die sowohl auf dem Hub als auch auf den Skalierungseinheiten unterstützt werden, werden nur für den Besitzer der Daten unterstützt.
 
 ### <a name="outbound-supported-only-for-sales-and-transfer-orders"></a>Outbound (wird nur für Verkaufsaufträge und Umlagerungsaufträge unterstützt)
@@ -201,7 +236,7 @@ Die folgende Tabelle zeigt, welche Funktionen im Outbound unterstützt werden un
 | Lieferungen für Welle verwalten                                  | Nein  | Ja|
 | Lagerort-Arbeitsverarbeitung (inkl. Ladungsträger-Druck)        | Nein  | Ja, aber nur für die zuvor genannten, unterstützten Funktionen |
 | Clusterkommissionierung                                              | Nein  | Ja|
-| Manuelle Verpackungsverarbeitung, inkl. Arbeitsverarbeitung „Entnahme aus gepacktem Container“ | Nein <P>Einige Verarbeitungen können nach einem anfänglichen Kommissioniervorgang durchgeführt werden, der von einer Skalierungseinheit ausgeführt wird, werden jedoch aufgrund folgender blockierter Vorgänge nicht empfohlen.</p>  | Nein |
+| Manuelle Verpackungsverarbeitung, inkl. Arbeitsverarbeitung „Entnahme aus gepacktem Container“ | Nein <P>Einige Verarbeitungen können nach einem anfänglichen, von einer Scale-Unit kommissionierten Vorgang durchgeführt werden, sind aber aufgrund der folgenden blockierten Vorgänge nicht zu empfehlen.</p>  | Nein |
 | Container aus Gruppe entfernen                                  | Nein  | Nein |
 | Ausgehende Sortierverarbeitung                                  | Nein  | Nein |
 | Drucken von ladungsbezogenen Dokumenten                           | Ja | Ja|
@@ -211,6 +246,7 @@ Die folgende Tabelle zeigt, welche Funktionen im Outbound unterstützt werden un
 | Lieferschein- und Rechnungsverarbeitung                        | Ja | Nein |
 | Kurzkommissionierung (Verkaufs- und Umlagerungsaufträge)                    | Nein  | Ja, ohne Reservierungen für Quelldokumente zu entfernen|
 | Zu hohe Entnahme (Verkaufs- und Umlagerungsaufträge)                     | Nein  | Ja|
+| Kennzeichen konsolidieren                                   | Nein  | Ja|
 | Änderung von Arbeitsplätzen (Verkaufs- und Umlagerungsaufträge)         | Nein  | Ja|
 | Arbeit abschließen (Verkaufs- und Umlagerungsaufträge)                    | Nein  | Ja|
 | Arbeitsbericht drucken                                            | Ja | Ja|
@@ -220,6 +256,8 @@ Die folgende Tabelle zeigt, welche Funktionen im Outbound unterstützt werden un
 | Entnommene Menge reduzieren                                       | Nein  | Ja|
 | Arbeit stornieren                                                 | Nein  | Ja|
 | Lieferungsbestätigung umkehren                                | Nein  | Ja|
+| Antrag auf Stornierung von Lager-Bestellzeilen                      | Ja | Nein, aber die Anfrage wird genehmigt oder abgelehnt |
+| <p>Umlagerungsaufträge für Wareneingang freigeben</p><p>Dieser Prozess wird automatisch im Rahmen des Versands von Umlagerungsaufträgen durchgeführt. Sie kann jedoch manuell verwendet werden, um den Empfang von Ladungsträgern in einer Scale-Unit zu aktivieren, wenn eingehende Lagerbestellungszeilen storniert wurden oder als Teil eines neuen Workload-Bereitstellungsprozesses.</p> | Ja | Nein|
 
 ### <a name="inbound"></a>Zugang
 
@@ -232,17 +270,17 @@ Die folgende Tabelle zeigt, welche Funktionen im Eingang unterstützt werden und
 | Gesamttransportkosten und Waren in Zustellung                       | Ja | Nein |
 | Bestätigung eingehender Lieferungen                                    | Ja | Nein |
 | Freigabe der Einkaufsbestellung an den Lagerort (Lagerbestandsverarbeitung) | Ja | Nein |
-| Stornierung von Lagerortauftragspositionen<p>Beachten Sie, dass dies nur unterstützt wird, wenn keine Registrierung für die Position erfolgt ist, während der Vorgang *Anfrage zur Stornierung* verarbeitet wird</p> | Ja | Nein |
+| Antrag auf Stornierung von Lager-Bestellzeilen                            | Ja | Nein, aber die Anfrage wird genehmigt oder abgelehnt |
+| Verarbeitung des Produktzugangs aus dem Quellbeleg der Bestellung                        | Ja | Nein |
 | Bestellungsartikel – Empfang und Einlagerung                       | <p>Ja,&nbsp;wenn&nbsp;kein Lagerort vorhanden ist&nbsp;keine Lagerbestellung</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | <p>Ja, wenn eine Bestellung nicht Teil einer <i>Ladung</i> ist</p> |
 | Bestellposition – Empfang und Einlagerung                       | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | <p>Ja, wenn eine Bestellung nicht Teil einer <i>Ladung</i> ist</p></p> |
 | Rücklieferungsempfang und -einlagerung                              | Ja | Nein |
 | Empfang und Einlagerung gemischter Ladungsträger                       | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Ja |
 | Artikelempfang aus Ladung                                              | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nein |
-| Kennzeichenempfang und -einlagerung                             | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nein |
+| Bestellung Ladungsträger erhalten und einlagern              | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nein |
+| Umlagerungsauftrag Ladungsträger empfangen und einlagern             | Nein | Ja |
 | Artikelempfang und -einlagerung für Umlagerungsauftrag                       | Ja | Nein |
 | Umlagerungsauftragsposition – Empfang und Einlagerung                       | Ja | Nein |
-| Arbeit stornieren (eingehend)                                            | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | <p>Ja, aber nur, wenn die Option <b>Bon bei Stornierung von Arbeit abmelden</b> (auf der Seite <b>Parameter der Lagerortverwaltung</b>) deaktiviert ist</p> |
-| Einkaufsbestellung Wareneingangsbearbeitung                        | Ja | Nein |
 | Bestelleingang mit Unterlieferung                      | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Ja, aber nur, wenn Sie eine Stornoanforderung vom Hub aus stellen |
 | Bestelleingang mit Überlieferung                       | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Ja  |
 | Eingang mit Erstellung von *Cross-Docking*-Arbeit                 | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nein |
@@ -251,7 +289,8 @@ Die folgende Tabelle zeigt, welche Funktionen im Eingang unterstützt werden und
 | Eingang mit Erstellung von *Qualität in der Qualitätsprüfung*-Arbeit       | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nein |
 | Eingang mit Erstellung von Qualitätsprüfungsauftrag                            | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nein |
 | Arbeitsverarbeitung – Geleitet von *Clustereinlagerung*                 | Ja | Nein |
-| Arbeitsverarbeitung mit *kurzer Entnahme*                               | Ja | Ja |
+| Arbeitsverarbeitung mit *kurzer Entnahme*                               | Ja | Nein |
+| Arbeit stornieren (eingehend)                                            | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | <p>Ja, aber nur, wenn die Option <b>Bon bei Stornierung der Arbeit nicht registrieren</b> auf der Seite <b>Parameter der Lagerverwaltung</b> deaktiviert ist.</p> |
 | Ladungsträgerladung                                           | Ja | Ja |
 
 ### <a name="warehouse-operations-and-exception-handing"></a>Lagerort-Operationen und Ausnahme-Handling
@@ -274,12 +313,11 @@ Die folgende Tabelle zeigt, welche Funktionen für Lagerort-Operationen und Exce
 | Label neu drucken (Ladungsträgerdruck)             | Ja | Ja                          |
 | Ladungsträgererstellung                                | Ja | Nein                           |
 | Ladungsträgerauflösung                                | Ja | Nein                           |
-| Für geschachtelte Ladungsträger verpacken                                | Ja | Nein                           |
+| Für geschachtelte Ladungsträger verpacken                      | Ja | Nein                           |
 | Einchecken durch Fahrer                                    | Ja | Nein                           |
 | Auschecken durch Fahrer                                   | Ja | Nein                           |
 | Chargendisposition-Code ändern                      | Ja | Ja                          |
 | Offene Arbeitsliste anzeigen                             | Ja | Ja                          |
-| Kennzeichen konsolidieren                         | Ja | Nein                           |
 | Nachschubverarbeitung mit Min/Max und Schwellenwert für Zonenwiederbeschaffung| Ja <p>Es wird empfohlen, nicht dieselben Standorte in die Abfragen aufzunehmen.</p>| Ja                          |
 | Zuteilung von Zeitfenstern-Wiederbeschaffung                  | Ja  | Ja<p>Beachten Sie, dass die Einrichtung an der Skalierungseinheit erfolgen muss.</p>                           |
 | Arbeit sperren und entsperren                             | Ja | Ja                          |
@@ -292,28 +330,46 @@ Die folgende Tabelle zeigt, welche Funktionen für Lagerort-Operationen und Exce
 Die folgende Tabelle fasst zusammen, welche Produktionsszenarien der Lagerortverwaltung derzeit für Arbeitsauslastungen auf Skalierungseinheiten unterstützt werden.
 
 | Bearbeiten | Hub | Workload für die Lagerausführung auf einer Skalierungseinheit |
-|---------|-----|------------------------------|
-| Fertig melden und Fertigerzeugnisse einlagern | Ja | Ja |
-| Einlagerung von Co- und Nebenprodukten | Ja | Ja |
-| Produktionsauftrag starten | Ja | Ja |
-| <p>Alle anderen Lagerortverwaltungsprozesse, die mit der Produktion zusammenhängen, einschließlich:</p><li>An Lagerort freigeben</li><li>Verarbeitung von Produktionswellen</li><li>Rohmaterialentnahme</li><li>Kanban-Einlagerung</li><li>Kanban-Entnahme</li><li>Produktionsausschuss</li><li>Letzte Palette der Produktion</li><li>Materialverbrauch registrieren</li><li>Kanban leeren</li></ul> | Ja | Nein |
-| Rohmaterialwiederbeschaffung | Nein | Nein |
+|---------|-----|----------------------------------------------|
+| Verarbeitung von Belegen aus Produktionsaufträgen    | Ja | Nein |
+| Für Lagerort freigeben                           | Ja | Nein |
+| Produktionsauftrag starten                         | Ja | Ja|
+| Erstellen von Lagerbestellungen                        | Ja | Nein |
+| Antrag auf Stornierung von Lager-Bestellzeilen        | Ja | Nein, aber die Anfrage wird genehmigt oder abgelehnt |
+| Fertig melden und Fertigerzeugnisse einlagern | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Ja|
+| Einlagerung von Co- und Nebenprodukten             | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Ja|
+| Materialverbrauch registrieren                  | Ja | Ja|
+| Verarbeitung von Produktionswellen                     | Ja | Nein |
+| Rohmaterialentnahme                           | Ja | Nein |
+| Kanban-Einlagerung                                | Ja | Nein |
+| Kanban-Entnahme                                 | Ja | Nein |
+| Kanban leeren                                   | Ja | Nein |
+| Produktionsausschuss                               | Ja | Nein |
+| Letzte Palette der Produktion                         | Ja | Nein |
+| Rohmaterialwiederbeschaffung                     | Nein  | Nein |
 
 ## <a name="maintaining-scale-units-for-warehouse-execution"></a>Pflege von Skalierungseinheiten für die Lagerortausführung
 
 Sowohl auf der Hub- als auch auf der Scale-Unit laufen mehrere Batch-Jobs.
 
-Auf der Hub-Bereitstellung können Sie die Batch-Jobs manuell pflegen. Sie können die folgenden drei Batchaufträgen unter **Lagerortverwaltung \> Periodische Aufgaben \> Back-Office-Arbeitsauslastung** verwalten:
+Beim Bereitstellen des Hubs können Sie die folgenden Batchaufträge manuell pflegen:
 
-- Hub-Nachrichtenverarbeitung zur Skalierungseinheit
-- Quellauftragszugänge registrieren
-- Lagerortaufträge abschließen
+- Verwalten Sie die folgenden Batchaufträge unter **Lagerverwaltung \> Periodische Aufgaben \> Back-Office Workload-Verwaltung**:
 
-Bei der Arbeitsauslastung in Skalierungsheiten können Sie die folgenden Batchaufträge unter **Lagerortverwaltung \> Periodische Aufgaben \> Arbeitsauslastungsverwaltung** verwalten:
+    - Hub-Nachrichtenverarbeitung zur Skalierungseinheit
+    - Quellauftragszugänge registrieren
+    - Lagerortaufträge abschließen
 
-- Verarbeiten von Wellentabellen-Sätzen
+- Verwalten Sie die folgenden Batchaufträge unter **Lagerverwaltung \> Periodische Aufgaben \> Workload-Verwaltung**:
+
+    - Lagerorthub zu Skalierungseinheit-Nachrichtenprozessor
+    - Lagerauftragspositionszugänge für Wareneingangsbuchung verarbeiten
+
+Bei der Bereitstellung von Scale-Units können Sie die folgenden Batch-Aufträge unter **Lagerverwaltung \> Periodische Aufgaben \> Workload-Verwaltung** verwalten:
+
+- Zyklustabellendatensätze verarbeiten
 - Lagerorthub zu Skalierungseinheit-Nachrichtenprozessor
-- Mengenaktualisierungsanforderungen für Lagerortauftragspositionen verarbeiten
+- Lagerauftragspositionszugänge für Wareneingangsbuchung verarbeiten
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

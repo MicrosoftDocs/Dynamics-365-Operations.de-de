@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bb827e17dcfc63031d0edcb5f447e70f03e8ac3c
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: e798646263b9939445f49a3866532cd229c668cd
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431461"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071443"
 ---
 # <a name="edit-personal-information"></a>Persönliche Informationen bearbeiten
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -69,7 +72,7 @@ Die auf der Seite **Parameter des globalen Adressbuchs** festgelegten Parameter 
     - Um eine Identifikationsnummer hinzuzufügen, wählen Sie **Neu**. Füllen Sie die Felder nach Bedarf aus und wählen Sie **Speichern**.
     - Um eine Nummer zu bearbeiten, wählen Sie **Bearbeiten**. Bearbeiten Sie die Felder nach Bedarf aus und wählen Sie **Speichern**.
 
-7. Um die Methoden zu ändern, mit denen Sie bezahlt werden, wählen Sie die Regiserkarte **Meine Zahlungsinformationen** aus. Diese Registerkarte ist nur verfügbar, wenn Zahlungsmethoden im Formular **Personalparameter** aktiviert sind. HR kann **Bankwechsel**, **Bargeld**, **Scheck**, **Elektronische Zahlung**, oder **Sonstige** aktivieren. HR kann auch die elektronische Zahlungsvalidierung (die für die US-Lohn- und Gehaltsabrechnung verwendet wird) sowie die Validierung von Bankkonten und Bankleitzahlen deaktivieren.
+7. Um die Methoden zu ändern, mit denen Sie bezahlt werden, wählen Sie die Registerkarte **Meine Zahlungsinformationen**. Diese Registerkarte ist nur verfügbar, wenn auf der Seite **Parameter der Human Resources** die Zahlungsarten aktiviert sind. HR kann **Bankwechsel**, **Bargeld**, **Scheck**, **Elektronische Zahlung**, oder **Sonstige** aktivieren. HR kann auch die elektronische Zahlungsvalidierung (die für die US-Lohn- und Gehaltsabrechnung verwendet wird) sowie die Validierung von Bankkonten und Bankleitzahlen deaktivieren.
 
 8. Um das Bild zu ändern, das in der Personalabteilung für Ihr Profil angezeigt wird, wählen Sie die Registerkarte **Bild** aus. Abhängig von den Einstellungen Ihres Unternehmens werden Bilder möglicherweise zur Genehmigung weitergeleitet.
 

@@ -2,7 +2,7 @@
 title: Problembehandlung beim Einrichten von Finance Insights
 description: In diesem Thema werden Probleme aufgelistet, die auftreten können, wenn Sie die Funktionen von Finance Insights verwenden. Außerdem wird erläutert, wie Sie diese Probleme beheben können.
 author: panolte
-ms.date: 11/03/2021
+ms.date: 01/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: c1bbdbec2bc0273a73ffc13a4cce024543af5a13
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: f77cddfdab22bef8af7f62d49723e330c4f13261
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968835"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8064865"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Problembehandlung beim Einrichten von Finance Insights
 
@@ -92,3 +92,25 @@ Die folgenden Schritte sollten abgeschlossen sein.
   | ---------------------------- | ---------------- |
   | Microsoft Dynamics ERP-Microservices-CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
   
+## <a name="symptom-error-we-didnt-find-any-data-for-the-selected-filter-range-please-select-a-different-filter-range-and-try-again"></a>Symptom: Fehler, „Wir haben keine Daten für den ausgewählten Filterbereich gefunden. Bitte wählen Sie einen anderen Filterbereich und versuchen Sie es erneut.“ 
+
+### <a name="resolution"></a>Lösung
+
+Überprüfen Sie die Einrichtung des Datenintegrators, um sicherzustellen, dass er wie erwartet funktioniert und die Daten von AI Builder wieder in Finance einfügt.  
+Weitere Informationen finden Sie unter [Erstellen Sie ein Datenintegrationsprojekt](../finance-insights/create-data-integrate-project.md).
+
+## <a name="symptom-customer-payment-prediction-training-failed-and-the-ai-builder-error-states-prediction-should-have-only-2-distinct-outcome-values-to-train-the-model-map-to-two-outcomes-and-retrain-training-report-issue-isnotminrequireddistinctnonnullvalues"></a>Symptom: Das Training der Vorhersage von Debitorenzahlungen ist fehlgeschlagen und der Status AI Builder besagt: „Die Vorhersage sollte nur 2 verschiedene Ergebniswerte haben, um das Modell zu trainieren. Zuordnung zu zwei Ergebnissen und erneute Schulung“, „Problem mit dem Schulungsbericht: IsNotMinRequiredDistinctNonNullValues“.
+
+### <a name="resolution"></a>Lösung
+
+Dieser Fehler deutet darauf hin, dass es im letzten Jahr nicht genügend historische Transaktionen gibt, die jede der in den Kategorien **Pünktlich**, **Spät** und **Sehr spät** beschriebenen Kategorien repräsentieren. Um diesen Fehler zu beheben, passen Sie den Zeitraum für **Sehr spät** Transaktionen an. Wenn die Anpassung des **Sehr spät** Transaktionszeitraums den Fehler nicht behebt, ist **Zahlungsvorhersagen für Kunden** nicht die beste Lösung, da es für Trainingszwecke Daten in jeder Kategorie benötigt.
+
+Weitere Informationen über die Anpassung der Kategorien **Pünktlich**, **Verspätet** und **Sehr verspätet** finden Sie unter [Zahlungsvorhersagen für Debitor aktivieren](../finance-insights/enable-cust-paymnt-prediction.md).
+
+## <a name="symptom-model-training-failed"></a>Symptom: Modelltraining fehlgeschlagen
+
+### <a name="resolution"></a>Lösung
+
+Für das Training des Modells **Cashflow Planung** werden Daten benötigt, die sich über mehr als ein Jahr erstrecken und mehr als 100 Transaktionen enthalten. Diese Transaktionen müssen sich auf Liquiditätskonten auswirken, die in der Einrichtung der Cashflowplanung enthalten sind.
+
+Die **Zahlungsprognosen für Kunden** erfordern mindestens 100 Rechnungs- und Zahlungstransaktionen von Debitor in den letzten sechs bis neun Monaten, um Prognosen zu erstellen.  

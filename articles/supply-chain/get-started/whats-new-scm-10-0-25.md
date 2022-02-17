@@ -1,0 +1,213 @@
+---
+title: Vorschauversion von Dynamics 365 Supply Chain Management 10.0.25 (April 2022)
+description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Supply Chain Management 10.0.25 entweder neu oder geändert sind.
+author: kamaybac
+ms.date: 02/01/2022
+ms.topic: article
+audience: Application User
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.author: kamaybac
+ms.search.validFrom: 2021-02-01
+ms.dyn365.ops.version: 10.0.25
+ms.openlocfilehash: 0ce9bc4685542cf691d862c0fec76f3f7b40c6b6
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087319"
+---
+# <a name="preview-of-dynamics-365-supply-chain-management-10025-april-2022"></a>Vorschauversion von Dynamics 365 Supply Chain Management 10.0.25 (April 2022)
+
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
+In diesem Thema werden die Funktionen aufgeführt, die in der Microsoft Dynamics 365 Supply Chain Management Vorschauversion 10.0.25 entweder neu oder geändert sind. Diese Version hat die Build-Nummer 10.0.1149 und ist wie folgt verfügbar:
+
+- **Vorschauversion des Release:** Februar 2022
+- **Allgemeine Verfügbarkeit des Release (Selbstaktualisierung):** März 2022
+- **Allgemeine Verfügbarkeit des Release (Selbstaktualisierung):** April 2022
+
+## <a name="features-included-in-this-release"></a>In dieser Version enthaltene Funktionen
+
+Die folgende Tabelle listet die Funktionen auf, die in dieser Version enthalten sind. Möglicherweise aktualisieren wir dieses Thema, um Funktionen einzubeziehen, die es in den Build geschafft haben, nachdem dieses Thema ursprünglich veröffentlicht wurde.
+
+| Funktionsbereich | Funktion | Mehr erfahren | Aktiviert von |
+|---|---|---|---|
+| Bestand&nbsp;und&nbsp;Logistik | Erweiterungen zu Gefahrengütern | Diese Erweiterungen bauen auf den bestehenden Funktionen für Gefahrgut auf, um Unternehmen bei der Einhaltung lokaler Vorschriften beim Transport von Gefahrgut über verschiedene Länder hinweg zu unterstützen. <!-- KFM: Update to 2022w1 link when published -->| Funktionsverwaltung:<br>*Erweiterungen zu Gefahrengütern* |
+| Bestand&nbsp;und&nbsp;Logistik | Verpackungsarbeit für Verpackungsstationen | Diese Funktion verbessert die Flexibilität und Agilität Ihrer Verpackungs- und Versandvorgänge erheblich. Während des Packvorgangs können die Arbeitskräfte im Lager nun einzelne Pakete verpacken und versenden, die sich auf dieselbe Sendung und Ladung beziehen. Auftragszeilen, die Teil derselben Sendung sind, müssen nicht unbedingt zusammen versandt werden, wenn einige Artikel sofort versandfertig sind. Eine einzelne Bestellung kann in mehreren Paketen zu unterschiedlichen Versandzeiten verpackt und versandt werden, wodurch sich die Wartezeiten verringern und die Flexibilität erhöht wird.<!-- KFM: Update to 2022w1 link when published --> | Funktionsverwaltung:<br>*Verpackungsarbeit für Verpackungsstationen* |
+| Bestand&nbsp;und&nbsp;Logistik | [Barcodes im Lagerort mit GS1-Formatstandards scannen](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) <!-- KFM: Update to 2022w1 link when published --> | [GS1-Barcodes und QR-Codes](../warehousing/gs1-barcodes.md) | Funktionsverwaltung:<br>*GS1-Barcodes scannen* |
+| Fertigung | [Materialverbrauch und Reservierungen in der Produktionsausführungsoberfläche](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte](../production-control/production-floor-execution-use.md) | Funktionsverwaltung:<br>*(Vorschauversion) Materialverbrauch in der Produktionsausführungsoberfläche registrieren (WMS-fähig)* |
+| Fertigung | [Materialverbrauch auf Scale-Einheiten registrieren](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/register-material-consumption-scale-units) | [Workloads in der Fertigungsausführung für Cloud- und Edge-Skalierungseinheiten](../cloud-edge/cloud-edge-workload-manufacturing.md) | Funktionsverwaltung:<br>*Materialverbrauch mit der mobilen App an einer Skalierungseinheit registrieren* |
+| Planung | [Vorschläge für die Planungsoptimierung zur Optimierung des bestehenden Vorrats](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-suggestions-optimize-existing-supply) | [Aktivitätsmeldungen](../master-planning/action-messages.md) | Standardmäßig aktiviert |
+| Planung | Geplante Aufträge vereinfacht | [Geplante Aufträge vereinfacht](../master-planning/planning-optimization/planned-orders-simplified.md ) | Funktionsverwaltung:<br>*Geplante Aufträge vereinfacht* |
+
+## <a name="feature-enhancements-included-in-this-release"></a>Funktionsverbesserungen In dieser Version enthalten
+
+Die folgende Tabelle listet die Funktionsverbesserungen auf, die in dieser Version enthalten sind. Jede dieser Funktionen bietet Verbesserungen einer vorhandenen Funktion. Da es sich nur um Verbesserungen handelt, sind sie nicht in der Liste [Releaseplan](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planned-features) aufgeführt. Um jedoch sicherzustellen, dass diese Verbesserungen nicht mit Ihren vorhandenen Anpassungen oder Einstellungen in Konflikt stehen, ist jede standardmäßig deaktiviert (sofern nicht anders angegeben).
+
+Wenn Sie eine dieser Funktionen ein‑ oder ausschalten möchten, müssen Sie dies in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) tun.
+
+| Modul | Funktion Name in FunktionVerwaltung | Mehr erfahren |
+|---|---|---|
+| Lager- und Lagerortverwaltung | (Polen) Verknüpfung mehrerer SAD-Rechnungen mit einer Bestellposition in einer SAD zulassen | Mit dieser Funktion können Sie Bestellzeilen aufteilen und mit einem einzigen administrativen Beleg (SAD) verknüpfen, wenn diese Bestellzeilen für mehrere verschiedene Rechnungen gebucht wurden (z.B. für verschiedene Sendungen). |
+| Beschaffung | Mehrere Bestellanforderungen nach Buchhaltungsdatum in einer einzelnen Bestellung bündeln | Diese Funktion lässt zu, dass mehrere Bestellanforderungen in einer einzigen Bestellung konsolidiert werden, wenn die verschiedenen Bestellanforderungen unterschiedliche Buchungsdaten haben. Regeln für die Erstellung von Bestellungen und die Konsolidierung des Bedarfs können festgelegt werden, um die Entscheidung für die Gruppierung von Bestellanforderungszeilen nach Buchungsdatum auf der Ebene der Bestellung zu automatisieren. Die Konsolidierung von Bestellungen nach Buchungsdatum wird nicht unterstützt, wenn das Steuerelement Budget aktiviert ist, da das Buchungsdatum für Budgetreservierungen und -belastungen verwendet wird. Daher sollte sie während des Übergangs von der Bestellanforderung zur Bestellung beibehalten werden. |
+| Beschaffung | Schaltfläche zum Zurücksetzen der Bestellanforderungsverteilung deaktivieren | Mit dieser Funktion wird die Schaltfläche **Zurücksetzen** auf der Seite **Buchhaltungsverteilung** für Bestellanforderungen, die sich in Prüfung befinden, deaktiviert. |
+| Beschaffung | Veraltete Standardfeldeinstellungen für die Antwort auf Angebotsanforderungen anzeigen | Diese Funktion führt die veralteten Standardeinstellungen für die Antwortfelder von Anfragen (RFQ) wieder ein, die zuvor aus der Benutzeroberfläche entfernt worden waren. Diese Einstellungen bieten keine Standardfunktionalität, können aber angepasst werden, um sie bei Bedarf bereitzustellen. Aktivieren Sie diese Funktion, wenn Ihr Unternehmen bereits Funktionen für die Standardeinstellungen des RFQ-Antwortfelds festgelegt hat oder dies plant. Wenn diese Funktion aktiviert ist, können Sie auf die Einstellungen zugreifen, indem Sie auf die Seite **Beschaffungs- und Bezugsquellenfindungsparameter** gehen, die Registerkarte **Angebotsanfrage** öffnen und **Standardantwortfelder für Angebotsanfragen** auswählen. |
+| Beschaffung | Finanzdimensionen des Kreditors mit Finanzdimension der aktiven Dimensionsverknüpfung in der Bestellung zusammenführen | Mit dieser Funktion können Sie Finanzdimensionen von Kreditor mit aktiver Dimensionsverknüpfung Finanzdimensionen nach der Genehmigung einer Bestellanforderung zusammenführen, wenn Sie eine Verknüpfung zwischen einer Finanzdimension und der Bestandsdimension des Standorts festgelegt haben. Regeln für die Erstellung von Bestellungen und die Bedarfskonsolidierung können so festgelegt werden, dass die Entscheidung für die Zusammenführung von finanziellen Dimensionen von Kreditoren mit aktiver Dimensionsverknüpfung auf der Ebene des Bestellkopfes automatisiert wird. |
+| Produktionssteuerung | (Russland) Aktivieren Sie die Einrichtung von Standardstandorten für Produktionsformel/Stückliste und automatische GTD-Reservierung/Verbrauch in der Produktion. | Die Funktion ermöglicht zusätzliche Optionen für die Produktion aus importierten Rohstoffen (nur russische Lokalisierung):<ul><li>Sie haben die Möglichkeit, den automatischen Standardort für Produktionsformeln und Stücklisten sowohl für Ressourcengruppen als auch für Lager festzulegen.</li><li>Automatische Reservierung von Rohstoffen nach der Dimension *GTD-Nummer* in WMS-aktivierten Lagern gemäß dem Nicht-WMS-Reservierungsalgorithmus. Dies gilt für Fälle, in denen eine Richtlinie für *Rohstoffkommissionierung* existiert, bei der **Arbeitserstellungsmethode** auf *Niemals* festgelegt ist und die Einrichtung des Lagers, des Standorts und der Artikelnummer mit den Bestandstransaktionen des Produktionsauftrags (Batch) übereinstimmt.</li><li>Automatischer Verbrauch von Rohstoffen nach der Dimension *GTD-Nummer* bei der Buchung der Kommissionierliste, entsprechend der zuvor beschriebenen erworbenen Reservierung.</li></ul> |
+| Lagerortverwaltung | Erwartete Zugänge aus Qualitätsprüfungsaufträgen mit gesperrtem Beispielbestand deaktivieren | Diese Funktion verhindert, dass das System Transaktionen für erwartete Zugänge zu Qualitätsprüfungsaufträgen erstellt, die Bestände mit einem Sperrstatus abfragen. Da der gesperrte Bestand nicht mehr verfügbar ist, entfernt diese Funktion die erwarteten Zugänge. Dadurch wird sichergestellt, dass der Bestand nicht mit mehreren Sperrstatus endet, was zu Problemen mit der Datenintegrität führen kann. |
+| Lagerortverwaltung | (Vorschauversion) Unterstützung von Skalierungseinheiten bei ein- und ausgehenden Lagerortaufträgen | Diese Funktion veranlasst das System, ausgehende Lagerbestellungen während der Freigabe an das Lager zu erstellen und eingehende Lageraufträge zu erstellen, wenn Umlagerungsaufträge als versandt gebucht werden. Das System synchronisiert dann jeden eingehenden oder ausgehenden Lagerauftrag mit der Scale-Unit, die für den Versand oder den Empfang des Auftrags zuständig ist. Beachten Sie, dass Sie nach der Aktivierung dieser Funktion Ihre Workloads für die Lagerausführung aktualisieren müssen. Weitere Informationen finden Sie unter [Arbeitsauslastungen in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten](../cloud-edge/cloud-edge-workload-warehousing.md).<br><br>Diese Funktion setzt die Funktion *Einlagerung von ASNs entkoppeln* voraus und ermöglicht die Funktionalität des Empfangs von Umlagerungsaufträgen über den Ladungsträger-Empfangsprozess in der Warehouse Management Mobile-App. |
+
+## <a name="feature-state-changes-in-this-release"></a>Änderungen am Status der Funktionen in dieser Version
+
+In der folgenden Tabelle sind Funktionen aufgeführt, die ab 10.0.25 obligatorisch oder standardmäßig aktiviert wurden. Alle diese Funktionen werden automatisch für Ihr System aktiviert, sobald Sie auf 10.0.25 aktualisieren. Obligatorische Funktionen können nicht ausgeschaltet werden, aber Funktionen, die standardmäßig aktiviert sind, können unter [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ausgeschaltet werden.
+
+In der Tabelle sind auch Funktionen aufgeführt, die zuvor in der öffentlichen Vorschau enthalten waren, die aber in 10.0.25 allgemein verfügbar geworden sind, was bedeutet, dass sie jetzt für die Verwendung in Produktionsumgebungen empfohlen werden. Diese Funktionen sind, sofern nicht anders angegeben, standardmäßig deaktiviert. Sie müssen also die [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um sie zu aktivieren, wenn Sie sie nutzen möchten.
+
+| Modul | Funktionsname | Status der Funktion |
+| --- | --- | --- |
+| Anlagenverwaltung | Regeln zur Gruppierung von Arbeitsaufträgen bei Ausführung eines Wartungsplans anwenden | Allgemein verfügbar |
+| Anlagenverwaltung | Zählerbasierte Wartungsverbesserungen | Allgemein verfügbar |
+| Kostenverwaltung | Kostenberechnungsstufe | Allgemein verfügbar |
+| Kostenverwaltung | Benutzerdefinierte Chargennummereinstellungen für die Stornierung des Lagerabschlusses aktivieren | Allgemein verfügbar |
+| Kostenverwaltung | Fortschrittdetails zum Lagerabschluss | Allgemein verfügbar |
+| Kostenverwaltung | Optionen der standardmäßigen Finanzdimensionen für die Lagerstandardkosten-Neubewertung | Allgemein verfügbar |
+| Kostenverwaltung | Lagerwertbericht zur Datenbereinigung | Standardmäßig aktiviert |
+| Kostenverwaltung | Lagerwert-Berichtsspeicher | Standardmäßig aktiviert |
+| Kostenverwaltung | Lagerabschlussprotokoll im Raster anzeigen | Standardmäßig aktiviert |
+| Verwaltung für technische Änderung | Änderungsmanagement für vorhandene Produkte aktivieren | Standardmäßig aktiviert |
+| Verwaltung für technische Änderung | Verwaltung für technische Änderung | Standardmäßig aktiviert |
+| Verwaltung für technische Änderung | Technische Benachrichtigungen für die Produktion | Standardmäßig aktiviert |
+| Verwaltung für technische Änderung | Verbesserte Attributvererbung für Konstruktionsänderungsmanagement | Standardmäßig aktiviert |
+| Verwaltung für technische Änderung | Änderungen an Formeln und ihren Substanzen verwalten | Standardmäßig aktiviert |
+| Verwaltung für technische Änderung | Produktbereitschaftsprüfungen | Standardmäßig aktiviert |
+| Verwaltung für technische Änderung | Variantengenerierung für technische Produkte | Standardmäßig aktiviert |
+| Lager- und Lagerortverwaltung | Navigation zur Stücklistenversion aus Stücklistenpositionen | Obligatorisch |
+| Produktprogrammplanung | Chargenfähige Umwandlung und Konsolidierung für geplante Sammel- und Verpackungschargenaufträge | Allgemein verfügbar |
+| Produktprogrammplanung | Ressourcenplanung mit Wartung | Allgemein verfügbar |
+| Produktprogrammplanung | Funktionen für den Assistenten zur Einrichtung des Masterplans aktivieren | Obligatorisch |
+| Produktprogrammplanung | Prognosemodellauswahl auf der Seite mit den Informationen zur Bedarfsplanung | Obligatorisch |
+| Produktprogrammplanung | Visualisierung des Produktprogrammplanfortschritts | Obligatorisch |
+| Produktprogrammplanung | Parallele Umwandlung von Auftragsvorschlägen | Obligatorisch |
+| Produktprogrammplanung | Umwandlung von Bestellvorschlägen mit Filtern | Standardmäßig aktiviert |
+| Produktprogrammplanung | Gespeicherte Ansichten für Bestellvorschläge | Standardmäßig aktiviert |
+| Beschaffung | Schaltfläche zum Zurücksetzen der Bestellanforderungsverteilung deaktivieren | Allgemein verfügbar |
+| Beschaffung | Zurücksetzen beschaffungsbezogener Workflows aktivieren | Allgemein verfügbar |
+| Beschaffung | Möglichkeit, angenommene Bestellungen aus der Kreditor-Kooperationen als Stapel zu bestätigen | Obligatorisch |
+| Beschaffung | Kaufvertrag „Geschlossen“ | Obligatorisch |
+| Beschaffung | Positionen zu Rechnungen für Bestellungen hinzufügen, die einem Kaufvertrag zugeordnet sind | Standardmäßig aktiviert |
+| Beschaffung | Feld „Bestellte Menge“ zur Seite „Buchen des Produktzugangs“ hinzufügen | Standardmäßig aktiviert |
+| Beschaffung | Kreditoren erlauben, sich über Kreditorenzusammenarbeit für Beschaffungskategorien zu bewerben | Standardmäßig aktiviert |
+| Beschaffung | Stellt Von- und Bis-Beträge bei Bestellungen in Rechnung | Standardmäßig aktiviert |
+| Beschaffung | Einstellungen für Gebühren mit Standort und Lagerort | Standardmäßig aktiviert |
+| Beschaffung | Einkaufssteuerberechnung basierend auf dem Jahrestarif aktivieren | Standardmäßig aktiviert |
+| Beschaffung | Zuständige Partei für Kaufvertrag | Standardmäßig aktiviert |
+| Beschaffung | Gespeicherte Ansichten für Bestellungen | Standardmäßig aktiviert |
+| Produktinformationsverwaltung | Strenge Überprüfung auf Standardauftragsmengen | Obligatorisch |
+| Produktinformationsverwaltung | Vorverarbeitung des Stücklistenberichts, um Zeitüberschreitungen zu vermeiden | Standardmäßig aktiviert |
+| Produktinformationsverwaltung | Standardfinanzdimensionen separat bei Verwendung von Artikelvorlagen | Standardmäßig aktiviert |
+| Produktinformationsverwaltung | Produktdimensionsgruppen für Artikelvorlagen aktivieren | Standardmäßig aktiviert |
+| Produktinformationsverwaltung | Produktvariantennamen basierend auf der Bezeichnung neu generieren | Standardmäßig aktiviert |
+| Produktinformationsverwaltung | Verbesserungen an der Seite mit Variantenvorschlägen | Standardmäßig aktiviert |
+| Produktionssteuerung | Verbesserte Artikelgewichtsmengenkommissionierung für die Produktion | Allgemein verfügbar |
+| Produktionssteuerung | Eine neue Schaltfläche „Pause stoppen“ wurde zur Seite „Einzelvorgangskarten-Terminal“ hinzugefügt | Obligatorisch |
+| Produktionssteuerung | Aktivieren Sie die automatische Generierung der Kennzeichennummer, wenn die Berichtserstellung im Einzelvorgangskartengerät abgeschlossen wurde | Obligatorisch |
+| Produktionssteuerung | Ermöglicht den teilweisen Empfang von lohnbearbeiteten Artikeln und behebt ein Problem mit der Berechnung des Ausschusses für Stücklistenzeilen vom Typ Kreditor | Obligatorisch |
+| Produktionssteuerung | Funktion zum Sperren von Jobkartengerät und Jobkartenterminal, damit sie saniert werden können | Obligatorisch |
+| Produktionssteuerung | Verbesserungen der Dialogfelder „Genehmigen“ und „Einzelvorgänge übertragen“ | Obligatorisch |
+| Produktionssteuerung | Das Kennzeichen für Fertigmeldung wurde zum Einzelvorgangslistengerät hinzugefügt. | Obligatorisch |
+| Produktionssteuerung | Beschriftung vom Einzelvorgangs-Kartengerät aus drucken | Obligatorisch |
+| Produktionssteuerung | Produktionsumgebungsausführung | Obligatorisch |
+| Produktionssteuerung | Anlagenverwaltungsfunktion für die Produktionsumgebungs-Ausführungsschnittstelle | Standardmäßig aktiviert |
+| Produktionssteuerung | Einzelvorgangssuche für die Produktionsausführungsoberfläche | Standardmäßig aktiviert |
+| Produktionssteuerung | Standardproduktionsreservierung überschreiben | Standardmäßig aktiviert |
+| Produktionssteuerung | Vollständige Serien-, Chargen- und Kennzeichennummern in der Produktionsausführungsoberfläche anzeigen | Standardmäßig aktiviert |
+| Vertrieb und Marketing | Auftragsdetails – Leistungsverbesserung | Allgemein verfügbar |
+| Vertrieb und Marketing | Verkaufsangebotsdetails – Leistungsverbesserung | Allgemein verfügbar |
+| Vertrieb und Marketing | Datenexportrichtlinie für referenzierten Auftrag | Obligatorisch |
+| Vertrieb und Marketing | Löschrichtlinie für Auftrag in Bestellposition | Obligatorisch |
+| Vertrieb und Marketing | Datenexportrichtlinie für referenziertes Verkaufsangebot | Obligatorisch |
+| Vertrieb und Marketing | Optimierung beim Export von Datenentitäten der Kontaktperson | Standardmäßig aktiviert |
+| Vertrieb und Marketing | Suche nach Feldern zur Einführung und zur Fertigstellung von Verkaufsangebotsdokumenten aktivieren | Standardmäßig aktiviert |
+| Vertrieb und Marketing | Berichtsleistung von „Top 100“-Kunden verbessern | Standardmäßig aktiviert |
+| Vertrieb und Marketing | Vorkalkulierten Debitorensaldo neu berechnen | Standardmäßig aktiviert |
+| Vertrieb und Marketing | Rückauftragspositionserfassung mit Dezimalstellen mit und ohne Artikelgewicht | Standardmäßig aktiviert |
+| Vertrieb und Marketing | Gespeicherte Ansichten für Vertrieb und Marketing | Standardmäßig aktiviert |
+| Vertrieb und Marketing | Auftragsbestätigung mit nur einem Klick | Standardmäßig aktiviert |
+| Lagerortverwaltung | Crossdockingvorlagen mit Lagerplatzrichtlinien | Allgemein verfügbar |
+| Lagerortverwaltung | Erwartete Zugänge aus Qualitätsprüfungsaufträgen mit gesperrtem Beispielbestand deaktivieren | Allgemein verfügbar |
+| Lagerortverwaltung | Kennzeichenempfangsverlauf | Allgemein verfügbar |
+| Lagerortverwaltung | Mengen bei Freigabe an Lager auf nächste Verkaufseinheit abrunden | Allgemein verfügbar |
+| Lagerortverwaltung | Skalierungseinheitenunterstützung für Lagerort-App-Arbeitslisten | Allgemein verfügbar |
+| Lagerortverwaltung | Lieferartdetails für Lieferungszyklus | Allgemein verfügbar |
+| Lagerortverwaltung | Schnellere API für das Schließen/erneute Öffnen von Containern auf Verpackungsstation verwenden | Allgemein verfügbar |
+| Lagerortverwaltung | Für Wiederbeschaffungsaufträge ausgewählte Vorlagen überprüfen | Allgemein verfügbar |
+| Lagerortverwaltung | Wiederbeschaffungsvorlage erlauben, vorhandene sofortige Wiederbeschaffungsarbeit zu verwenden (einheitenübergreifend) | Obligatorisch |
+| Lagerortverwaltung | Automatische Zuweisung der GUIDs bei der Erstellung von WHS-Benutzern | Obligatorisch |
+| Lagerortverwaltung | Produktvarianten und Rückverfolgungsangaben in der Lagerhaltungs-App beim Artikelempfang aus Ladung erfassen | Obligatorisch |
+| Lagerortverwaltung | Bestandsstatus der Artikel ändern, die durch Rückverfolgungsangaben gesteuert werden | Obligatorisch |
+| Lagerortverwaltung | Arbeitspool für Arbeit ändern | Obligatorisch |
+| Lagerortverwaltung | Clusterposition voll | Obligatorisch |
+| Lagerortverwaltung | Cluster-Einlagerungsfunktion | Obligatorisch |
+| Lagerortverwaltung | Bestätigen und übertragen | Obligatorisch |
+| Lagerortverwaltung | Ausgehende Lieferungen aus Batchaufträgen bestätigen | Obligatorisch |
+| Lagerortverwaltung | Steuern, ob eine Empfangszusammenfassungsseite auf mobilen Geräten angezeigt wird | Obligatorisch |
+| Lagerortverwaltung | Verzögerte Verarbeitung des manuellen Lagerbestandsumlagerungsvorgangs | Obligatorisch |
+| Lagerortverwaltung | Nicht zulassen, dass Ladungen erstellt werden, die nicht den Anforderungen der Vorlage für die Ladungserstellung von Wave entsprechen | Obligatorisch |
+| Lagerortverwaltung | Erweiterte Layouts für Kennzeichenbeschriftung | Obligatorisch |
+| Lagerortverwaltung | Alle Aktivitäten für Mehrfach-SKU-Lagerplatzrichtlinien auswerten | Obligatorisch |
+| Lagerortverwaltung | Feld „Gesamtwert“ auf den Seiten „Alle Ladungen“ und „Ladungsdetails“ ausblenden | Obligatorisch |
+| Lagerortverwaltung | Erstellungskonfiguration der Ladungsträgerbeschriftung | Obligatorisch |
+| Lagerortverwaltung | Manuelle Korrektur der Ladungsposition für Administratoren oder ähnliche vertrauenswürdige Benutzer | Obligatorisch |
+| Lagerortverwaltung | Standortkennzeichenpositionierung | Obligatorisch |
+| Lagerortverwaltung | Lagerplatz-Produktdimensionsmischung | Obligatorisch |
+| Lagerortverwaltung | Feld „Lagerbestandsumlagerungsstatus“ des mobilen Geräts bearbeitbar machen | Obligatorisch |
+| Lagerortverwaltung | Kommissionierdienst für manuelle Verkaufsposition für Administrator oder ähnliche vertrauenswürdige Benutzer | Obligatorisch |
+| Lagerortverwaltung | Verhindern, dass Kennzeichen für gelieferte Umlagerungsaufträge an anderen Lagerorten als dem Ziellagerort verwendet werden | Obligatorisch |
+| Lagerortverwaltung | Aufforderung zum Auflösen mehrdeutiger Namen für Lagerplatz/Kennzeichen | Obligatorisch |
+| Lagerortverwaltung | Qualitätsprüfung | Obligatorisch |
+| Lagerortverwaltung | Benutzereinstellungen, Symbole und Schritttitel für die neue Lagerort-App | Obligatorisch |
+| Lagerortverwaltung | Zusätzliche Lagerplatzzone | Standardmäßig aktiviert |
+| Lagerortverwaltung | Umlagerungsaufträge aus der Lagerort-App erstellen und verarbeiten | Standardmäßig aktiviert |
+| Lagerortverwaltung | Schnelle Überprüfung für mobile Geräte am Lagerort aktivieren | Standardmäßig aktiviert |
+| Lagerortverwaltung | Nutzung von Lagerplatz für Positionskonsolidierung | Standardmäßig aktiviert |
+| Lagerortverwaltung | Maximale Ausführungszeit für den Einzelvorgang „Bereinigen der Lagerbestandseinträge für die Lagerortverwaltung“ | Standardmäßig aktiviert |
+| Lagerortverwaltung | Ausgehende Workloadvisualisierung | Standardmäßig aktiviert |
+| Lagerortverwaltung | Lagerort-App-Ereignisse verarbeiten | Standardmäßig aktiviert |
+| Lagerortverwaltung | Gespeicherte Ansicht für Ladungsplanungsworkbench | Standardmäßig aktiviert |
+| Lagerortverwaltung | Gespeicherte Ansicht für die Seite mit den Arbeitsdetails | Standardmäßig aktiviert |
+| Lagerortverwaltung | Gespeicherte Ansicht für die Zyklusverarbeitung | Standardmäßig aktiviert |
+| Lagerortverwaltung | Gespeicherte Ansichten für die Ladungsverarbeitung | Standardmäßig aktiviert |
+| Lagerortverwaltung | Gespeicherte Ansichten für die Lieferungsverarbeitung | Standardmäßig aktiviert |
+| Lagerortverwaltung | Zyklus-Batchauftragsdetails | Standardmäßig aktiviert |
+| Lagerortverwaltung | Wellenausführungsbenachrichtigungen | Standardmäßig aktiviert |
+
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformupdates für Apps für Finanzen und Betrieb
+
+Microsoft Dynamics 365 Supply Chain Management 10.0.25 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattform-Updates für die Version 10.0.25 der Apps für Finanzen und Betrieb (April 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-25.md).
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+Melden Sie sich bei Lifecycle Services (LCS) an, um Informationen zu den Fehlerbehebungen zu erhalten, die in den einzelnen Updates von 10.0.25 enthalten sind und zeigen Sie die [KB Artikel](https://fix.lcs.dynamics.com/Issue/Details?bugId=654580&dbType=3&qc=3799fa965b008dd980d27cf740e4582e6384ec6601ae8a35b7eaec6f1287a868) an.
+
+### <a name="dynamics-365-and-industry-clouds-2022-release-wave-1-plan"></a>Dynamics 365 und industrielle Clouds: 2022 Veröffentlichungszyklus-1-Plan
+
+Sie möchten Informationen über zukünftige und vor Kurzem veröffentlichte Funktionen unserer Unternehmens-Apps oder -Plattformen erhalten?
+
+Informieren Sie sich über den [Dynamics 365 und industrielle Clouds: 2022 Veröffentlichungszyklus-1-Plan](/dynamics365-release-plan/2022wave1/). Hier finden Sie zentral und übersichtlich in einem Dokument alle Informationen, die Sie für Ihre Planung benötigen.
+
+### <a name="removed-and-deprecated-supply-chain-management-features"></a>Entfernte und veraltete Supply Chain Management-Funktionen
+
+Das Thema [Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beschreibt Funktionen, die für das Supply Chain Management entfernt oder veraltet waren oder werden sollen.
+
+- Eine Funktion *entfernt* ist nicht mehr im Produkt verfügbar.
+- Eine Funktion *veraltet* wird nicht aktiv entwickelt und könnte bei einem zukünftigen Update entfernt werden.
+
+Bevor eine Funktion aus dem Produkt entfernt wird, wird der Verfallshinweis im Thema [Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 Monate vor dem Entfernen angezeigt.
+
+Bei Änderungen, die sich nur auf die Kompilierungszeit auswirken, aber binär mit Sandbox- und Produktionsumgebungen kompatibel sind, beträgt die Entfernungszeit weniger als 12 Monate. In der Regel handelt es sich hierbei um Funktionsaktualisierungen, die am Compiler vorgenommen werden müssen.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
