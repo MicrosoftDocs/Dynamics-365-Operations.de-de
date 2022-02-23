@@ -2,12 +2,15 @@
 title: Aktualisierungsprozess
 description: Microsoft Dynamics 365 Human Resources ist ein echter Software-as-a-Service (SaaS), der kontinuierliche, eingriffsfreie Service-Updates für Anwendungs- und Plattformwechsel bietet.
 author: andreabichsel
+manager: AnnBe
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -15,18 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2af1f710ca010041bd684bca8ecfa6f20ac30d46
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: d841a026f589d774ec5ada3ac9adcc84dde9aee1
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063109"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527805"
 ---
 # <a name="update-process"></a>Aktualisierungsprozess
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Microsoft Dynamics 365 Human Resources ist eine echte Software-as-a-Service (SaaS), die kontinuierliche, berührungslose Dienstupdates bietet. Diese Updates enthalten sowohl Anwendungs‑ als auch Plattformänderungen, die häufig wichtige Verbesserungen des Dienstes bewirken, einschließlich rechtlicher Aktualisierungen.
 
@@ -38,11 +39,11 @@ Aktualisierungen werden in regelmäßigen Abständen in allen Umgebungen veröff
 
 Human Resources-Aktualisierungen werden automatisch auf alle Umgebungen angewendet. Human Resources bietet zwei Versionstypen:
 
-- **Dienstupdates**: Updates finden alle zwei Wochen staat und enthalten Fehlerkorrekturen und neuen Funktionen. Zu den Dienstupdates gehören auch relevante veröffentlichte Plattformupdates. Informationen zum Zeitpunkt der Veröffentlichung von Plattformupdates finden Sie unter [Tabelle 3: Plattformfreigaben](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md#table-3-platform-releases). Zweiwöchentliche Updates werden in allen Regionen global eingeführt. Weitere Informationen zu zweiwöchentlichen Updates finden Sie unter [Neuerungen oder Änderungen in Dynamics 365 Human Resources](hr-admin-whats-new.md).
+- **Dienstupdates**: Updates finden alle zwei Wochen staat und enthalten Fehlerkorrekturen und neuen Funktionen. Zu den Dienstupdates gehören auch relevante veröffentlichte Plattformupdates. Informationen zum Zeitpunkt der Veröffentlichung von Plattformupdates finden Sie unter [Tabelle 3: Plattformfreigaben](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). Zweiwöchentliche Updates werden in allen Regionen global eingeführt. Weitere Informationen zu zweiwöchentlichen Updates finden Sie unter [Neuerungen oder Änderungen in Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
     Alle unterstützten Rechenzentren werden alle zwei Wochen aktualisiert, sofern nicht anders angegeben. In den USA, Australien, Europa, Vereinigtes Königreich, Asien und Kanada finden zweiwöchentliche Updates statt. 
 
-- **Dataverse-Lösungsupdates**: Diese Updates werden nach Bedarf etwa alle sechs Wochen durchgeführt. Dazu gehören neue Entitäten und Änderungen an vorhandenen Entitäten in Dataverse. Diese Updates werden in denselben Regionen wie die zweiwöchentlichen Updates veröffentlicht. Die Replikation in allen Rechenzentren dauert ungefähr sechs Wochen. Lösungsupdates stimmen möglicherweise mit zweiwöchentlichen Dienstupdates überein.
+- **Common Data Service-Lösungsupdates**: Diese Updates werden nach Bedarf etwa alle sechs Wochen durchgeführt. Dazu gehören neue Entitäten und Änderungen an vorhandenen Entitäten in Common Data Service. Diese Updates werden in denselben Regionen wie die zweiwöchentlichen Updates veröffentlicht. Die Replikation in allen Rechenzentren dauert ungefähr sechs Wochen. Lösungsupdates stimmen möglicherweise mit zweiwöchentlichen Dienstupdates überein.
 
 > [!NOTE]
 > Lösungsupdates sind in allen Rechenzentren verfügbar, sobald sie veröffentlicht wurden. Wenn Sie nicht darauf warten möchten, dass die Updates automatisch repliziert werden, können Sie diese Updates in jeder Umgebung in jedem Rechenzentrum manuell anwenden.
@@ -55,14 +56,14 @@ Bei Bedarf bietet Human Resources auch die folgenden Fehlerkorrekturtypen:
 
 Versionen werden in einer internen Umgebung überprüft, getestet und validiert. Nachdem die Builds genehmigt wurden, werden sie für die Produktion bereitgestellt.
 
-## <a name="release-cadence-exceptions-in-2021"></a>Freigabe von Trittfrequenzausnahmen im Jahr 2021
+## <a name="release-cadence-exceptions-in-2020"></a>Freigabe von Trittfrequenzausnahmen im Jahr 2020
 
-Um die Feiertage zu berücksichtigen, sieht der Veröffentlichungsplan für November und Dezember 2021 wie folgt aus:
+Um die Feiertage zu berücksichtigen, sieht der Veröffentlichungsplan für November und Dezember 2020 wie folgt aus:
 
-- November-Veröffentlichung: 1. November – 14. November
-- Dezember-Veröffentlichung: 29. November – 12. Dezember
+- November-Veröffentlichung: 2. November – 13. November
+- Dezember-Veröffentlichung: 30. November – 11. Dezember
  
-Die zweiwöchige Veröffentlichungshäufigkeit wird wie gewohnt am 10. Januar 2022 wieder aufgenommen.
+Die zweiwöchige Veröffentlichungshäufigkeit wird wie gewohnt am 11. Januar 2021 wieder aufgenommen.
 
 ## <a name="communications"></a>Kommunikation
 
@@ -70,11 +71,11 @@ Hier können Sie herausfinden, was für Human Resources in Arbeit ist und was wi
 
 - [Dynamics 365 Human Resources-Produktplan](https://dynamics.microsoft.com/roadmap/human-resources/)
 
-- [Dynamics 365-Veröffentlichungspläne](/dynamics365/release-plans/)
+- [Dynamics 365-Veröffentlichungspläne](https://docs.microsoft.com/dynamics365/release-plans/)
 
 - [Was ist neu oder geändert in Dynamics 365 Human Resources](hr-admin-whats-new.md)
 
-- [Problemsuche in Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs.md) (nur für plattformbezogene Fehler)
+- [Problemsuche in Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs) (nur für plattformbezogene Fehler)
 
 - [Human Resources-Blog](https://community.dynamics.com/365/talent/b/dynamics365fortalent)
 
@@ -82,7 +83,7 @@ Hier können Sie herausfinden, was für Human Resources in Arbeit ist und was wi
 
 ## <a name="preview-features-in-a-sandbox-environment"></a>Vorschaufunktionen in einer Sandkastenumgebung
 
-Sie können Vorschaufunktionen in einer Sandkastenumgebung überprüfen, bevor Sie sie in Ihrer Produktionsumgebung aktivieren. Weitere Informationen zur Aktivierung von Funktionen finden Sie unter [Funktionsverwaltungsüberblick](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Sie können Vorschaufunktionen in einer Sandkastenumgebung überprüfen, bevor Sie sie in Ihrer Produktionsumgebung aktivieren. Weitere Informationen zur Aktivierung von Funktionen finden Sie unter [Funktionsverwaltungsüberblick](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 Alle neuen Funktionen bleiben mindestens 30 Tage und in der Regel 30-60 Tage in der Vorschau. Die wichtigsten Funktionen sind in der Regel im Oktober und April eines jeden Jahres nach dem Vorschauzeitraum verfügbar. Sobald Sie neue Funktionen im Arbeitsbereich Feature-Management sehen, können Sie diese einschalten. Einige Funktionen sind möglicherweise standardmäßig aktiviert.
 
@@ -100,10 +101,7 @@ Beim Testen der Vorschaufunktionen oder neuer Funktionen werden möglicherweise 
 
 ## <a name="see-also"></a>Siehe auch
 
-[Dynamics 365 und Power Platform-Versionsveröffentlichungspläne](/dynamics365/release-plans)</br>
+[Dynamics 365 und Power Platform-Versionsveröffentlichungspläne](https://docs.microsoft.com/dynamics365/release-plans)</br>
 [Neuerungen oder Änderungen in Dynamics 365 Human Resources](hr-admin-whats-new.md)</br>
-[Software-Lebenszyklusrichtlinie](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)
+[Software-Lebenszyklusrichtlinie](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

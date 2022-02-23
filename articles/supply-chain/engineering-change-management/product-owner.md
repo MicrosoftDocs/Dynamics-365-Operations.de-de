@@ -2,9 +2,11 @@
 title: Produkteigentümer
 description: Dieses Thema enthält Informationen über Produktbesitzer. Ein Produktbesitzer ist eine Gruppe von Benutzern, die für bestimmte Produkte verantwortlich sind. Nur Mitglieder der Gruppe können diese Produkte freigeben. Der Besitzer eines Produkts kann auch im Genehmigungs-Workflow verwendet werden.
 author: t-benebo
+manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgProductOwner
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a29ab169e9b24826fbe69fbc316040d4618750ee
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 90f5596f9b5fc45e78cc49a3309c45864e07e70b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567510"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967332"
 ---
 # <a name="product-owners"></a>Produkteigentümer
 
@@ -58,6 +60,3 @@ Beispiel: Produkt X ist der Eigentümergruppe *Designschränke* zugewiesen. Prod
 ## <a name="product-owners-and-approvals"></a>Produktbesitzer und Freigaben
 
 Da die Besitzer der Produkte wissen, ob bestimmte technische Änderungen für ihre Produkte von Vorteil sind, ist es oft sinnvoll, sie als Teil des Genehmigungsprozesses in die Verwaltung für technische Änderungen einzubeziehen. Sie können diesen Ansatz implementieren, indem Sie die Besitzer der Produkte als Teilnehmer in den Workflows festlegen, die für die Verwaltung für technische Änderungen verwendet werden. Das System weist dann Genehmigungsaufgaben in den Workflows zu, basierend auf den Produkten, die in Änderungsanträgen und Änderungsaufträgen enthalten sind. Weitere Informationen finden Sie unter [Verwalten von Änderungen an Engineering-Produkten](engineering-change-management.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

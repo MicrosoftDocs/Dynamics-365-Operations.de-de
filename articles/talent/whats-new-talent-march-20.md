@@ -86,6 +86,3 @@ Mit dem Plattformupdate 24 für Finance and Operations können Benutzer Warnreg
 Mit dieser Änderung werden Duplikate erkannt, während Sie Namenfelder eingeben, und ein Status zeigt, wie viele Duplikate gefunden wurden. Sie können die zur Verfügung gestellte Verknüpfung aktivieren, um eine neue Seite zu öffnen, um zu prüfen, ob die gefundene Übereinstimmung verwendet werden soll. Das Duplikatsformular wird nicht automatisch geöffnet, um die Dateneingabe nicht zu unterbrechen.
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

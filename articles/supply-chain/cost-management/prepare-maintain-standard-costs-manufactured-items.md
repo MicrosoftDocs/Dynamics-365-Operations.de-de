@@ -2,9 +2,11 @@
 title: Vorbereiten der Verwaltung von Standardkosten für produzierte Artikel
 description: In diesem Thema werden die Schritte zur Vorbereitung der Kostenverwaltung für produzierte Artikel beschrieben.
 author: AndersGirke
+manager: tfehr
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventStdCostConv
 audience: Application User
@@ -16,12 +18,12 @@ ms.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ec68e1efc261920dc8f08ed602836b1939511dfce01008c093af7916ecd71618
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b35e424c582c173e3fa1f4d0a335106e413b6660
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734330"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967407"
 ---
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>Vorbereiten der Verwaltung von Standardkosten für produzierte Artikel
 
@@ -63,12 +65,10 @@ Richtlinien, die produzierten Artikeln zugewiesen sind, können sich auf die Kos
 
 Wenn Sie Routinginformationen für die Nachkalkulation verwenden möchten, sind weitere Vorbereitungen erforderlich. So muss beispielsweise sichergestellt werden, dass die dem Arbeitsgang des Arbeitsplans zugewiesenen Kostenkategorien korrekt und vollständig sind.
 
-## <a name="related-topics"></a>Verwandte Themen
+<a name="related-topics"></a>Verwandte Themen
+--------
 
 [Amortisierung konstanter Kosten für einen produzierten Artikel](amortize-constant-costs-manufactured-item.md)
 
 [Einrichten von Produkten, die produziert werden oder beschafft werden](manufactured-items-treated-as-purchased-items.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,24 +2,27 @@
 title: Domänen in Dynamics 365 Commerce
 description: In diesem Thema wird beschrieben, wie Domänen in Microsoft Dynamics 365 Commerce behandelt werden.
 author: BrShoo
-ms.date: 03/17/2021
+manager: AnnBe
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: bf96c47b8f5e940ffdd9241c3bdda4162a3101c42004c58c431f135f11c39d14
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cb2b003168d32d05387bd45796d313736b11a41f
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733990"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517354"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domänen in Dynamics 365 Commerce
 
@@ -38,7 +41,7 @@ Bei der Bereitstellung einer E-Commerce-Umgebung in [Microsoft Dynamics Lifecycl
 
 Die folgende Abbildung zeigt den LCS-E-Commerce-Bereitstellungsbildschirm mit hervorgehobenem Feld **Unterstützte Hostnamen**. 
 
-![LCS-E-Commerce-Bereitstellungsbildschirm mit hervorgehobenem Feld **Unterstützte Hostnamen**.](./media/Domains_ProvisioningeCommerceScreen_publish.png)
+![LCS-E-Commerce-Bereitstellungsbildschirm mit hervorgehobenem Feld **Unterstützte Hostnamen**](./media/Domains_ProvisioningeCommerceScreen.png)
 
 Sie können eine Serviceanforderung erstellen, um einer Umgebung zusätzliche Domänen hinzuzufügen, wenn die Bereitstellung bereits erfolgt ist. Um in LCS eine Serviceanforderung zu erstellen, wechseln Sie in Ihrer Umgebung zu **Support \> Support-Probleme** und wählen Sie **Einen Vorfall einreichen**.
 
@@ -56,7 +59,7 @@ Wenn Sie zum ersten Mal eine Website im Site Builder einrichten, wird das **Ihre
 
 Die folgende Abbildung zeigt das **Ihre Website einrichten**-Dialogfeld für eine Website mit dem Namen „Standard“ an, wenn Sie zum ersten Mal im Site Builder auf die Website zugreifen.
 
-![**Ihre Website einrichten**-Dialogfeld.](./media/Domains_SetupyoursiteScreen.png)
+![**Ihre Website einrichten**-Dialogfeld](./media/Domains_SetupyoursiteScreen.png)
 
 Mit dem Feld **Eine Domäne auswählen** können Sie einen der unterstützten Hostnamen, die für Ihre Website in LCS bereitgestellt wurden, im Site Builder Ihrer Website zuordnen.
 
@@ -79,11 +82,11 @@ Nachdem Ihre Website mit einem Pfad eingerichtet wurde, bauen alle URLs, die Sei
 
 Die folgende Abbildung zeigt das Dialogfeld **Neue URL** im Site Builder mit einem hervorgehobenen Beispiel-URL-Pfad. 
 
-![Dialogfeld **Neue URL** im Site Builder.](./media/Domains_PageSetup2a.png)
+![Dialogfeld **Neue URL** im Site Builder](./media/Domains_PageSetup2a.png)
 
 Die folgende Abbildung zeigt die Seite **URLs** im Site Builder mit einer hervorgehobenen Beispiel-URL in der Liste.
 
-![Führen Sie die Benutzerflussoption im Richtlinienfluss aus.](./media/Domains_URLsInSiteBuilder2a.png)
+![Führen Sie die Benutzerflussoption im Richtlinienfluss aus](./media/Domains_URLsInSiteBuilder2a.png)
 
 ## <a name="domains-in-site-builder"></a>Domänen im Site Builder
 
@@ -151,7 +154,7 @@ Die von Commerce bereitgestellte Azure Front Door-Instanz unterstützt keine Ape
 
   [Neuen E-Commerce-Mandanten bereitstellen](deploy-ecommerce-site.md)
 
-  [Onlineshopkanal einrichten](./channel-setup-online.md)
+  [Onlineshopkanal einrichten](online-stores.md)
 
   [E-Commerce-Website erstellen](create-ecommerce-site.md)
 
@@ -170,6 +173,3 @@ Die von Commerce bereitgestellte Azure Front Door-Instanz unterstützt keine Ape
   [Hinzufügen von Unterstützung für ein Content Delivery Network (CDN)](add-cdn-support.md)
 
   [Standortbasierte Shop-Erkennung aktivieren](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

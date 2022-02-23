@@ -101,6 +101,3 @@ Die Möglichkeit zum Nachverfolgen von Mitarbeiterfreizeit und ein Verständnis 
 ### <a name="email-support-for-alerts"></a>E-Mail-Support für Warnungen
 
 Durch das Plattformupdate 26 für Finance and Operations können Benutzer Warnregeln erstellen, dass automatisch E-Mail-Benachrichtigungen an Kontakte gesendet werden, wenn dies von einem Ereignis ausgelöst wird.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

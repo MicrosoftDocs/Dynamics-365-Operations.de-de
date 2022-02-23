@@ -1,32 +1,34 @@
 ---
 title: Globalisierungsressourcen
 description: Dieses Thema enthält eine Liste mit Ressourcen, durch die Sie mehr über länder-/regionsspezifische Funktionalität und Angebote erfahren können.
-author: kfend
-ms.date: 02/19/2021
+author: ShylaThompson
+manager: AnnBe
+ms.date: 10/02/2019
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: sericks
 ms.custom: 104173
 ms.search.region: Global
-ms.author: kfend
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 822f00c21715b928027a7656f299a693686bf5dfc01f1f5a1738d5eb8d4bf124
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8ee422b2bdc8b94c2a465d0e48f5da983a410674
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747514"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685052"
 ---
 # <a name="globalization-resources"></a>Globalisierungsressourcen
 
 ## <a name="local-and-regional-deployments"></a>Lokale und regionale Bereitstellungen
 Wenn Ihre behördlichen Vorschriften erfordern, dass Daten anders gespeichert oder bearbeitet werden, als dies für andere Länder/Regionen erforderlich ist, kann es sein, dass es länderspezifische/regionale Anforderungen gibt, die Sie bei der Bereitstellung berücksichtigen müssen. Berücksichtigen Sie die folgenden Ressourcen, die für Sie relevant sein könnten:
 
-[Finance and Operations-Apps, betrieben von 21Vianet in China](../deployment/china-local-deployment.md)
+[Finance and Operations-Apps betrieben von 21Vianet in China](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
 
 ## <a name="localization-and-regulatory-features"></a>Lokalisierung und rechtliche Funktionen
 
@@ -49,18 +51,19 @@ Die folgenden Ressourcen enthalten Tipps und Hinweise für Entwickler und ISVs, 
 -   [Ländercodes – ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
 ### <a name="regulatory-updates-and-communication"></a>Rechtliche Updates und Kommunikation
-In den folgenden Ressourcen finden Sie weitere Informationen zu geplanten und neuen Lokalisierungsfunktionen. 
+Die folgenden Ressourcen enthalten Informationen zu geplanten und neuen Lokalisierungsfunktionen. 
 
 #### <a name="regulatory-updates"></a>Neues zu rechtlichen Bestimmungen
--   [Aktualisierungen der Vorschriften](../../../finance/localizations/regulatory-updates.md)
--   [Problemsuche in Lifecycle Services (LCS)](../lifecycle-services/issue-search-lcs.md) (täglich aktualisiert)
+-   [Neues zu rechtlichen Bestimmungen](../../../finance/localizations/regulatory-updates.md)
+-   [Lokalisierungsportal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (Wöchentliche Aktualisierung)
+-   [Problemsuche in den Lifecycle Services (LCS)](../lifecycle-services/issue-search-lcs.md) (täglich aktualisiert)
 
 #### <a name="communication-and-alerts"></a>Kommunikation und Warnungen
 -   [Rechtliche Überwachung und Kommunikation von rechtlichen Aktualisierungen](regulatory-watch-communication.md)
 -   [Senden von Warnungen zu landes-/regionsspezifischen gesetzlichen Funktionen](submit-localization-alerts.md)
 
 #### <a name="dynamics-365-release-plans"></a>Dynamics 365-Veröffentlichungspläne
-Die [Dynamics 365-Veröffentlichungspläne](/business-applications-release-notes/) enthalten Beschreibungen der neuen und erweiterten Funktionen, die für Dynamics 365-Geschäftsanwendungen und -Anwendungsplattformen geplant sind. 
+Die [Dynamics 365-Veröffentlichungspläne](https://docs.microsoft.com/business-applications-release-notes/) enthalten Beschreibungen der neuen und erweiterten Funktionen, die für Dynamics 365-Geschäftsanwendungen und -Anwendungsplattformen geplant sind. 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Neuerungen zu Finance and Operations-Apps
 Die [Seite zu Neuerungen oder Änderungen in Finance and Operations](../../fin-ops/get-started/whats-new-changed.md) listet die Funktionen auf, die in bestimmten Versionen der Finance and Operations-Apps enthalten sind.
@@ -130,6 +133,3 @@ Weitere Informationen finden Sie im [Hilfesystem](../../fin-ops/get-started/help
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,24 +1,26 @@
 ---
 title: Aufträge als Direktlieferungen versenden
 description: Dieses Thema zeigt, wie eine Direktauslieferung für einen Auftrag erstellt wird.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchTablePart, PurchEditLines, PurchTable, PurchTableReferences, MCRDropShipWorkbench, SalesShippingLine
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 94890b0915a49052c298090f124cf2b91c462de8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 0a8f214a56c6a5013cab8233d5b2e0126deb9220
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572440"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966104"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Aufträge als Direktlieferungen versenden
 
@@ -79,6 +81,3 @@ Dieses Thema zeigt, wie eine Direktauslieferung für einen Auftrag erstellt wird
     - Die Direktlieferungsseite fungiert als eine workbench, die dem Einkaufsvertreter einen Überblick über alle Auftragspositionen bereitstellt, die direkt geliefert werden sollen, und dadurch ermöglicht, die jeweiligen Bestellungen zu erstellen. Darüber hinaus können sie die offenen Direktlieferungslieferaufträge und die bestätigten Aufträge auf den Registerkarten "Bestätigung" und "Lieferung" anzeigen.  
     - Nachdem Sie einen Direktlieferungsauftrag erstellt haben, wurde er automatisch zur Registerkarte „Bestätigung” verschoben. Sie können wählen, den Auftrag direkt von dieser Seite aus zu bestätigen. Wenn der Einkauf bestätigt ist, wird er automatisch auf die Registerkarte "Lieferung" verschoben, von der aus Sie seinen Zugang erfassen können.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

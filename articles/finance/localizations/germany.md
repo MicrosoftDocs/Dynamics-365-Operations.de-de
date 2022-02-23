@@ -2,22 +2,25 @@
 title: Deutschland – Übersicht
 description: Dieses Thema bietet eine Übersicht der Dynamics 365 Finance-Funktionen, die für Deutschland spezifisch sind.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 05/12/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Operations
 ms.search.region: Germany
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 116879e3b75b15f773bfc22e228a8d98fd54bef5
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 8d23b60695513e3e45d87ffd4dde28b1b2494a56
+ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984788"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "4512271"
 ---
 # <a name="germany-overview"></a>Deutschland – Übersicht
 
@@ -34,10 +37,6 @@ Dieses Thema enthält Informationen und Verknüpfungen zu den Ressourcen, die f�
 ## <a name="depreciation"></a>Abschreibung
 -   [Zusätzliche Anschaffungsabschreibung](emea-deu-additional-acquisition-depreciation.md)
 -   [Abschreibungsregulierungen für zusätzliche Anschaffungen im zweiten Jahr](tasks/de-00002-depreciation.md)
--   [Intrastat](emea-deu-intrastat.md)
-
-## <a name="vat-declaration"></a>MwSt.-Erklärung 
--   [Umsatzsteuererklärung für Deutschland](emea-deu-vat-declaration-germany.md)
 
 ## <a name="electronic-transmission-of-vat-declaration-elster"></a>Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)
 - [Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)](tasks/de-00003-electronic-transmission-elster.md)
@@ -64,10 +63,7 @@ Auf der Seite **Juristische Personen** können Sie die Option **Rechnungskorrekt
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Microsoft Dynamics-Lokalisierungs-Portal: Deutschland-Bericht](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Germany.html)
-- [Überblick über die elektronische Berichterstellung](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
-- [Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-- [Lokalisierung und rechtliche Funktionen](../../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=%2ffin-and-ops%2ftoc.json)
+- [Überblick über die elektronische Berichterstellung](../../dev-itpro/analytics/general-electronic-reporting.md)
+- [Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Lokalisierung und rechtliche Funktionen](../../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json)
 - [Erstellen Sie eine Umsatzsteuervoranmeldung im XML-Format, ohne Daten für ELSTER (Whitepaper)](https://www.microsoft.com/download/details.aspx?id=101929)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Funktionale Standorte und Anlagen
 description: In diesem Thema werden funktionale Standorte und Anlagen in Asset Management beschrieben. Asset Management ist ein erweitertes Modul für die Verwaltung von Anlagen und Wartungsaufgaben in Dynamics 365 Supply Chain Management.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0bf90d99a8bd093817f9e804e8075e779428f1fadb3128c5a455ca839dece55
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2f93a68f19b0b952eb2964b404bb957865c625cd
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750147"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018045"
 ---
 # <a name="functional-locations-and-assets"></a>Funktionale Standorte und Anlagen
 
@@ -34,13 +36,13 @@ In diesem Thema werden funktionale Standorte und Anlagen in Asset Management bes
 
 Anlagenmanagement ist nahtlos in mehrere Module in anderen Finance and Operations Apps integriert. Die folgende Abbildung zeigt die Schnittstellen mit anderen Modulen.
 
-![Diagramm, das die Anlagenmanagement-Schnittstellen mit anderen Modulen zeigt.](media/01-overview-image.png)
+![Diagramm, das die Anlagenmanagement-Schnittstellen mit anderen Modulen zeigt](media/01-overview-image.png)
 
 Mit Asset Management können Sie effizient alle Aufgaben verwalten und ausführen, die mit dem Verwalten und der Wartung von viele Arten von Ausrüstung in Ihrem Unternehmen zusammenhängen. Zu diesen Ausrüstungsgegenständen zählen Maschinen, Produktionsanlagen und Fahrzeuge. Asset Management unterstützt außerdem Lösungen über zahlreiche Branchen hinweg.
 
 Die folgende Abbildung zeigt einen Überblick über die Hauptfunktionen von Asset Management.
 
-![Diagramm, das die Hauptfunktionen in Anlagenmanagement anzeigt.](media/02-overview-image.png)
+![Diagramm, das die Hauptfunktionen in Anlagenmanagement anzeigt](media/02-overview-image.png)
 
 ## <a name="functional-locations-and-assets"></a>Funktionale Standorte und Anlagen
 
@@ -50,11 +52,8 @@ Anlagenkosten folgen immer dem Standort der Anlage. Dies bedeutet Folgendes: Wen
 
 Die Art, wie Sie die Hierarchie der funktionalen Standorte erstellen, hängt von den Unternehmensanforderungen für die Verwaltung der internen Ausrüstung oder die Wartung der Ausrüstung von Kunden ab. Die folgende Abbildung zeigt ein Beispiel für funktionale Standorte, die auf geografischen Standorten basieren.
 
-![Diagramm, das die funktionalen Standorte auf Grundlage der geografischen Standorte anzeigt.](media/03-overview-image.png)
+![Diagramm, das die funktionalen Standorte auf Grundlage der geografischen Standorte anzeigt](media/03-overview-image.png)
 
 Die folgende Abbildung zeigt ein Beispiel für funktionale Standorte, die auf Kunden basieren.
 
-![Diagramm, das die funktionalen Standorte auf Grundlage der Kunden anzeigt.](media/04-overview-image.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Diagramm, das die funktionalen Standorte auf Grundlage der Kunden anzeigt](media/04-overview-image.png)

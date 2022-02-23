@@ -91,6 +91,3 @@ Die Webinhalts (iframe)-Aktivität erlaubt es Ihnen, eine benutzerdefinierte Int
 
 > [!NOTE]
 > Die Webinhalt-Aktivität ist nur mit dem umfassenden Add-On für Neueinstellungen verfügbar.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

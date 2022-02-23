@@ -51,6 +51,3 @@ Sie möchten die offenen Stellen für möglichst viele qualifizierten Kandidaten
 
 > [!NOTE]
 > Microsoft und Attract sind nicht involviert beim Erstellen und Verwalten dieser Werte. Es ist Ihre Verantwortung, sie in Attract auf dem neuesten Stand zu halten und mit Broabean zusammen zu arbeiten, um Probleme zu beheben, die Ihre Anmeldeinformationen umfassen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

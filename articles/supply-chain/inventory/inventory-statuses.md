@@ -1,26 +1,29 @@
 ---
 title: Bestandsstatus
 description: In diesem Artikel wird beschrieben, wie Sie den Bestandsstatus verwenden können, um Bestand zu kategorisieren und zu verfolgen.
-author: yufeihuang
+author: MarkusFogelberg
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus, WHSWarehouseStatusChange
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 21331
 ms.assetid: b35f495f-de4f-48a0-9d09-4d06781d7650
 ms.search.region: Global
-ms.author: yufeihuang
+ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5b38ab4674c80da496e09e5179a412d6dcd85a7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eca9d3e4e15d11d2a9a1b531028de230ffc43913
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577671"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594601"
 ---
 # <a name="inventory-statuses"></a>Bestandsstatus
 
@@ -43,14 +46,7 @@ Ein Bestandsstatus ist eine der Dimensionen in der Lagerdimensionsgruppe. Bestan
 
 Sie können Lagerortartikel, die den Bestandsstatus verfügbar oder nicht verfügbar aufweisen, für eingehende Arbeit verwenden. Sie erstellen beispielsweise einen verfügbaren Status namens *Bereit*, einen nicht verfügbaren Status namens *Beschädigt* und einen gesperrten Status namens *Gesperrt*. Wenn Sie eine Bestellung für empfangene oder zurückgelieferte Artikel erstellen und irgendwelche Artikel beschädigt sind, können Sie den Lagerstatus dieser Artikel auf der Bestellposition auf *Beschädigt* ändern. Nach Erhalt dieser Artikel wird der Status automatisch auf *Gesperrt* gesetzt. Wenn Sie die beschädigten Artikel mit einem mobilen Gerät scannen, kann Supply Chain Management Lagerplatzdirektiven und Arbeitsvorlagen verwenden, um Informationen zu einem geeigneten Lagerplatz oder eine Reihe von Lagerplätzen anzeigen, wo Sie diese Artikel lagern können. Für zurückgelieferte Artikel wird der Seite *Lagerbuchungen* ein Abgangstyp **Reservierung** erstellt.
 
-Sie können angeben, welche Lagerstatus Sperrenstatus sind, indem Sie die Kontrollkästchen **Sperrung von Lagerbestand** auf der Seite **Lagerstatus** verwenden. Sie können Lagerstatus nicht als Sperrenstatus für Aufträge, Umlagerungsaufträge oder Projektintegrationen verwenden.
-
-Für ausgehende Arbeiten können Sie verschiedene nicht blockierende Bestandsstatus verwenden, um zu steuern, für welches Inventar Sie reservieren möchten. Wenn Sie Artikel haben, die den Status *Sperrung* aufweisen, und die Produktprogrammplan auf diese Artikel ausgeführt wird, werden die Artikel als fehlend betrachtet, und der Bestand wird automatisch aufgefüllt. Darüber hinaus kann für Qualitätsprüfungsaufträge im Zusammenhang mit ausgehenden Arbeiten der **Bestandsstatus** nicht im Rahmen der Prüfung der Qualität aktualisiert werden.
-
-> [!NOTE]
-> Sie können den Status von Beständen an Lagerplätzen, an denen offene Arbeiten vorhanden sind, nicht ändern. Wenn Sie z.B. einen Kauf für einen Artikel getätigt haben, aber den Schritt der Einlagerung nicht durchgeführt haben, dann würde offene Arbeit für den empfangenden Lagerplatz existieren und Sie würden einen Fehler erhalten, wenn Sie versuchen, den Status des Bestands an diesem Lagerplatz zu ändern. Wenn Sie die zugehörige Arbeit abschließen oder stornieren, können Sie den Status ändern.
->
-> Normalerweise wird der Status des verfügbaren Bestands im Zusammenhang mit offenen Lagerortarbeiten nur von Mitarbeitern geändert, die die Warehouse Management Mobile App verwenden, beispielsweise während sie einen Umlagerungsprozess ausführen.
+Für ausgehende Arbeit verwenden Sie Artikel, die den Bestandsstatus "verfügbar" aufweisen. Wenn Sie Artikel haben, die den Status *Beschädigt* aufweisen, und die Produktprogrammplan auf diese Artikel ausgeführt wird, werden die Artikel als fehlend betrachtet, und der Bestand wird automatisch aufgefüllt.
 
 Nachdem Sie Bestandsstatus eingerichtet haben, können Sie den standardmäßigen Bestandsstatus für einen Standort, einen Artikel und einen Lagerort festlegen. Sie können auch einen Standardstatus für Verkauf, Umlagerung und Bestellungen festlegen. Beim Standardstatus für Aufträge und ausgehende Umlagerungsaufträge kann die Option **Sperrung von Lagerbestand** nicht auf *Ja* festgelegt sein. Der Bestandsstatus, der von den Standardeinstellungen auf einem Standort, Lagerort, Artikel, einer Bestellung, einem Umlagerungsauftrag oder einem Auftrag übernommen wird, kann mit dem mobilen Gerät oder auf der Position für Bestellung, Auftrag oder Umlagerungsauftrag geändert werden.
 
@@ -69,6 +65,3 @@ Sie können Bestandsstatus entweder über die Seite **Bestand nach Lagerplatz** 
 > - Auf der Seite **Bestand nach Lagerplatz** können Sie mit der Schaltfläche **Dimensionen anzeigen** Zeilen auf Basis der angezeigten Dimensionen gruppieren und den Status für die ausgewählten Zeilen ändern.
 > - Auf der Seite **Bestand nach Lagerplatz** können Sie mehrere Datensätze auswählen und dann die Schaltfläche **Status des Bestands ändern** verwenden, um alle auf einmal zu ändern.
 > - Auf der Seite **Bestandsstatus ändern** können Sie nach Dimensionen der Verfolgung filtern.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

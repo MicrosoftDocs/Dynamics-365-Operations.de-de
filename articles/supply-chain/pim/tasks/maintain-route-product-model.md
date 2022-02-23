@@ -1,24 +1,26 @@
 ---
 title: Arbeitsplan für ein Produktmodell verwalten
 description: Die Ausführung dieser Prozedur erfordert ein vorhandenes Produktkonfigurationsmodell.
-author: t-benebo
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails, PCRouteOperationDetails, WrkCtrCapabilityLookUp
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88df8b867ac7f354417add0462e7999747333451
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 90ea3f65284cc97906002015c715d9f071202bdb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577263"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966829"
 ---
 # <a name="maintain-route-for-a-product-model"></a>Arbeitsplan für ein Produktmodell verwalten
 
@@ -26,44 +28,41 @@ ms.locfileid: "7577263"
 
 Die Ausführung dieser Prozedur erfordert ein vorhandenes Produktkonfigurationsmodell. Bei diesem Verfahren wird das Spitzenlautsprechermodell im Vorführungsunternehmen USMF verwendet.
 
-## <a name="add-a-route-operation"></a>Hinzufügen eines Arbeitsplanarbeitsgangs
 
-1. Wechseln Sie zu **Produktinformationsmanagement \> Produkte \> Produktkonfigurationsmodelle**.
-1. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
+## <a name="add-a-route-operation"></a>Hinzufügen eines Arbeitsplanarbeitsgangs
+1. Klicken Sie auf "Produktvariantenmodell-Definition".
+2. Klicken Sie auf "Produktkonfigurationsmodelle".
+3. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
     * Wählen Sie den Spitzenlautsprecher für diese Aufgabe aus.  
-1. Wählen Sie in der Liste den Link in der ausgewählten Zeile.
-1. Erweitern Sie den Abschnitt **Arbeitsplanvorgänge**.
-1. Wählen Sie **Hinzufügen** aus.
-1. Geben Sie im Feld **Name** einen Wert ein.
-1. Geben Sie im Feld **Beschreibung** einen Wert ein.
-1. Wählen Sie **Speichern** aus.
+4. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
+5. Erweitern Sie den Abschnitt "Arbeitsgänge".
+6. Klicken Sie auf Hinzufügen.
+7. Geben Sie im Feld "Name" einen Wert ein.
+8. Geben Sie im Feld "Beschreibung" einen Wert ein.
+9. Klicken Sie auf "Speichern".
 
 ## <a name="enter-route-operation-details"></a>Eingeben von Arbeitsplanarbeitsgangdetails
-
-1. Wählen Sie **Details zum Arbeitsplanvorgang**.
-1. Geben Sie im Feld **Vorgang** einen Wert ein oder wählen Sie ihn aus.
-1. In dem **Vorgang. Nr.** eine Zahl ein.
+1. Klicken Sie auf "Details zum Arbeitsplanarbeitsgang"
+2. Geben Sie im Feld 'Arbeitsgang' einen Wert ein, oder wählen Sie einen Wert aus.
+3. Geben Sie im Feld Arbeitsgang- Nr. eine Zahl ein.
     * Vorgangsnummer legen die Arbeitsplansequenz fest.  
     * Jede Eigenschaft eines Arbeitsplanvorgang kann einen statischen Wert enthalten oder einem Attribut zugeordnet werden. Die Zuordnung zu einem Attribut arbeitet mit dem Wert, die als Teil der Konfiguration festgelegt ist.  
-1. Geben Sie im Feld **Arbeitsplan-Gruppe** einen Wert ein oder wählen Sie einen Wert aus.
+4. Geben Sie im Feld "Arbeitsplangruppe" einen Wert ein oder wählen Sie einen Wert aus.
     * Die Arbeitsgangsteuerungsgruppe bestimmt das grundlegende Verhalten der Nachkalkulation, des Verbrauch und der Einstellungen.  
-1. Wählen Sie die Registerkarte **Einrichten**.
-1. Wählen Sie die Registerkarte **Zeiten**.
-1. Geben Sie im Feld **Anzahl verarbeiten** eine Zahl ein.
+5. Klicken Sie auf die Registerkarte "Einstellungen".
+6. Klicken Sie auf die Registerkarte 'Zeiten'.
+7. Geben Sie im Feld Prozessmenge eine Zahl ein.
     * Bestimmen Sie, wie viele während eines Arbeitsgangs verarbeitet werden.  
-1. Geben Sie im Feld **Stunden/Zeit** eine Zahl ein.
+8. Geben Sie im Feld "Stunden/Zeit" eine Zahl ein.
     * Geben Sie einen Zeitanteil ein.  
-1. Aktivieren Sie das Kontrollkästchen **Setzen**.
-1. Geben Sie im Feld **Laufzeit** eine Zahl ein.
+9. Wählen Sie das Kontrollkästchen "Festlegen" aus.
+10. Geben Sie im Feld "Laufzeit" eine Zahl ein.
     * Bestimmen Sie die Bearbeitungszeit zur Menge, die Sie angegeben haben.  
-1. Wählen Sie die Registerkarte **Ressourcenanforderung**.
-1. Wählen Sie **Hinzufügen** aus.
-1. Markieren Sie in der Liste die ausgewählte Zeile.
-1. Wählen Sie im Feld **Bedarfstyp** eine Option.
+11. Klicken Sie auf die Ressourcenanforderungsregisterkarte.
+12. Klicken Sie auf Hinzufügen.
+13. Markieren Sie in der Liste die ausgewählte Zeile.
+14. Wählen Sie im Feld "Anforderungstyp" eine Option aus.
     * Entscheiden Sie, ob spezifische Ressourcen oder Funktionen vorhanden sein müssen.  
-1. Geben Sie im Feld **Anforderung** einen Wert ein oder wählen Sie ihn aus.
-1. Wählen Sie **OK**.
+15. Geben Sie im Feld 'Anforderung' einen Wert ein, oder wählen Sie einen Wert aus.
+16. Klicken Sie auf "OK".
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,33 +1,31 @@
 ---
-title: Änderungen von Lebensereignissen verarbeiten
-description: Dieses Thema erklärt, wie Sie Änderungen von Lebensereignissen in Microsoft Dynamics 365 Human Resources verarbeiten.
-author: twheeloc
-ms.date: 08/23/2021
+title: Lebensereignisänderungen verarbeiten
+description: Lebensereignisänderungen verarbeiten in Microsoft Dynamics 365 Human Resources für Änderungen bei Lebensereignissen.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes, BenefitEligibilityProcessResultViewer
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cb894d9886c095d760efe66abcf773a975a99caa
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 39d1e94347809a1756fc4f66e5edc345c70eaf39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067603"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418626"
 ---
-# <a name="process-life-event-changes"></a>Änderungen von Lebensereignissen verarbeiten
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+# <a name="process-life-event-changes"></a>Lebensereignisänderungen verarbeiten
 
 Lebensereignisänderungen verarbeiten in Microsoft Dynamics 365 Human Resources für zwei Änderungen bei Lebensereignissen:
 
@@ -54,6 +52,3 @@ Lebensereignisänderungen verarbeiten in Microsoft Dynamics 365 Human Resources 
    4. Wählen Sie **OK**. Der Prozess wird mit den von Ihnen festgelegten Parametern ausgeführt.
 
 4. Wählen Sie **OK**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

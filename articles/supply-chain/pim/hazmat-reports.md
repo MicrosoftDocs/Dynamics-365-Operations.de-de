@@ -1,27 +1,31 @@
 ---
 title: Anfragen und Berichte zu Gefahrstoffen
 description: In diesem Thema wird erläutert, wie Sie mit den verschiedenen Berichten arbeiten, die sich auf gefährliche Materialien beziehen. Viele dieser Berichte sind erforderlich, damit Sie während der Lieferung und der Lagerung die verschiedenen Gefahrstoffvorschriften einhalten können.
-author: t-benebo
+author: dasani-madipalli
+manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: damadipa
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: ca8c973d3322bd51bf519e83fb5a5c19d35c0bed
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.11
+ms.openlocfilehash: 188c339ddf5f5c2488133924e9a0288f218f495c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568542"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428739"
 ---
 # <a name="hazardous-materials-inquiries-and-reports"></a>Anfragen und Berichte zu Gefahrstoffen
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management bietet verschiedene Berichte, die sich auf Gefahrstoffe beziehen. Viele dieser Berichte sind erforderlich, damit Sie während der Lieferung und der Lagerung die verschiedenen Gefahrstoffvorschriften einhalten können.
 
@@ -29,7 +33,7 @@ Alle diese Berichte mit Ausnahme des Berichts **Multimodale Gefahrgüter** verwe
 
 Die folgende Abbildung zeigt die Abfolge der Aktivitäten, die auftreten, wenn das System Gefahrstoffberichte erstellt.
 
-![Reihenfolge der Aktivitäten für Gefahrstoffberichte.](media/hazmat-report-sequence.png "Reihenfolge der Aktivitäten für Gefahrstoffberichte")
+![Reihenfolge der Aktivitäten für Gefahrstoffberichte](media/hazmat-report-sequence.png "Reihenfolge der Aktivitäten für Gefahrstoffberichte")
 
 ## <a name="set-up-hazardous-materials-reporting"></a><a name="set-up"></a>Gefahrengüter-Berichterstellung einrichten
 
@@ -106,6 +110,3 @@ Wenn die Gefahrstofffunktion in Ihrem System aktiviert ist, enthält der **Frach
 ## <a name="packing-list-report"></a>Kommissionierlistenbericht
 
 Wenn die Gefahrstofffunktion in Ihrem System aktiviert ist, enthalten die Kommissionierlisten zusätzliche Informationen, die sich auf den Versanddrucktext für einen Artikel beziehen. Dieser Bericht ist auf der Seite **Alle Ladungen** verfügbar, wie gewohnt.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

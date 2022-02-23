@@ -1,24 +1,27 @@
 ---
 title: Den Warenzugang auf der Bestellung erfassen
 description: In diesem Thema wird erläutert, wie der Zugang von Waren direkt auf einer Bestellung erfasst wird.
-author: Henrikan
+author: mkirknel
+manager: tfehr
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventItemIdLookupPurchase, PurchEditLines
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ec37082ffa7816d1b07cadc595eec6e8373920a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: bd8ca2cbd24f326c4eaf9cd39e32de0eca81149d
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565331"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429131"
 ---
 # <a name="record-the-receipt-of-goods-on-the-purchase-order"></a>Den Warenzugang auf der Bestellung erfassen
 
@@ -46,6 +49,3 @@ In diesem Thema wird erläutert, wie der Zugang von Waren direkt auf einer Beste
 6. Legen Sie **Menge** auf „4“ fest. Hier sind Sie in der Lage, die Menge manuell zu anzugeben, die für jede Position zum Auftrag empfangen wird.  
 7. Wählen Sie **OK**. Die Waren sind jetzt auf der Bestellung als empfangen erfasst worden und eine Produktzugangserfassung ist als Dokument, um dies widerzuspiegeln, erstellt worden. Sie können die Aktivität "Produktzugang" verwenden, um die Erfassungen zu überprüfen, die mit der Bestellung erstellt wurden und um zu sehen, was wann empfangen wurde.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

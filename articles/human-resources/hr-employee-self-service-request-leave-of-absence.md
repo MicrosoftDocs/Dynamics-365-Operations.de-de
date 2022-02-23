@@ -2,12 +2,15 @@
 title: Urlaubs- und Abwesenheitsanträge beantragen
 description: Urlaubs- und Abwesenheitsanträge übermitteln.
 author: andreabichsel
+manager: AnnBe
 ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ESSLeaveofAbsenceRequestEntry, EssWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -15,19 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2d58e84637dac584b080bd0fa30f7ab6214c26db
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 1f50e45a9acaf5295b40648ea5701885ae0ea844
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070274"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418749"
 ---
 # <a name="request-a-leave-of-absence"></a>Urlaubs- und Abwesenheitsanträge beantragen
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Sie können einen Antrag auf Urlaub stellen und den Status Ihrer Urlaubsanträge anzeigen in Dynamics 365 Human Resources.
 
@@ -52,13 +50,6 @@ Sie können einen Antrag auf Urlaub stellen und den Status Ihrer Urlaubsanträge
 
 2. Um einen Antrag auf Urlaubung anzuzeigen, wählen Sie **Urlaub anzeigen**.
 
-## <a name="importing-leave-requests-from-other-systems-or-older-systems"></a>Import von Urlaubsanträgen aus anderen Systemen oder älteren Systemen
-
-Um Urlaubsanträge aus einem anderen System zu importieren, müssen Sie den regulären Workflow durchlaufen, um die entsprechenden Urlaubsvorgänge zu erstellen. Alternativ können Sie die Abwesenheitsbanktransaktionen und die Abwesenheitsanträge im abgeschlossenen Zustand importieren. Beachten Sie, dass die Abwesenheitsbanktransaktionen nicht automatisch erstellt werden, wenn Sie nur die Abwesenheitsanträge importieren.
-
 ## <a name="see-also"></a>Siehe auch
 
 [Urlaub aussetzen](hr-leave-and-absence-suspend-leave.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

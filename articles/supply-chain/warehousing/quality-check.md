@@ -2,23 +2,26 @@
 title: Qualitätsprüfung
 description: Dieses Thema enthält Informationen zur Qualitätsprüf+ungsfunktion. Mit dieser Funktion können Lagerarbeiter schnelle Stichproben der Qualität durchführen, während sie Artikel an der Eingangsrampe in Empfang nehmen.
 author: mirzaab
+manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSQualityCheckTemplate, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSQualityCheckResult
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: a3a565ea566dd2bf4d8c793b3340c78c9f4ed0a2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: dfb71f74732d65409003c4f6f74145442a1efa3f
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565302"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429101"
 ---
 # <a name="quality-check"></a>Qualitätsprüfung
 
@@ -299,7 +302,7 @@ Nachdem die Bestellung erstellt wurde, kann sie über das Menüelement **PO-Posi
 
 #### <a name="receive-pallet-1"></a>Palette 1 empfangen
 
-1. Melden Sie sich bei der Warehouse Management Mobile App als ein Benutzer für Lagerort *51* an. (Geben Sie *51* als Benutzer-ID und *1* als Passwort ein.)
+1. Melden Sie sich bei der Warehouse-App als ein Benutzer für Lagerort *51* an. (Geben Sie *51* als Benutzer-ID und *1* als Passwort ein.)
 1. Gehen Sie zu **Eingehend \> PO-Positionseingang**.
 1. Geben Sie im Feld **PONUM** die Bestellnummer ein.
 1. Bestätigen Sie die Bestellnummer.
@@ -310,7 +313,7 @@ Nachdem die Bestellung erstellt wurde, kann sie über das Menüelement **PO-Posi
 
     Eine Seite **Qualitätsprüfung** öffnet sich, die aber keine Eingagefelder enthält. Sie hat nur die Bestätigungstaste (Häkchen) unten und die Menütaste (**≡**) oben. (Die Menütaste wird manchmal als Hamburger- oder Hamburgerschaltfläche bezeichnet.) Um den Qualitätsprüfungsprozess zu beschleunigen, bestätigt der Benutzer nur die Seite **Qualitätsprüfung**, wenn die Palette die Qualitätsprüfung passiert.
 
-    ![Qualitätsprüfungsseite.](media/quality-check.png "Qualitätsprüfungsseite")
+    ![Qualitätsprüfungsseite](media/quality-check.png "Qualitätsprüfungsseite")
 
 1. Wählen Sie die Bestätigungsschaltfläche, um die Qualitätsprüfung für Palette 1 aus Position 1 als bestanden zu kennzeichnen.
 
@@ -394,6 +397,3 @@ In diesem Szenario wird Palette 3 angenommen.
 1. Wählen Sie die Menütaste (**≡**) oben auf der Seite und wählen Sie dann im Menü die Option **Abbrechen**, um zum Menü zurückzukehren.
 
 Sie können jetzt die mobile App schließen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

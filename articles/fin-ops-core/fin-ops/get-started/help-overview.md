@@ -1,50 +1,47 @@
 ---
-title: Hilfesystem (enthält Video)
-description: Dieser Artikel enthält eine Übersicht über das Hilfesystem für Apps für Finanzen und Betrieb.
+title: Hilfesystem
+description: Dieser Artikel enthält eine Übersicht über das Hilfesystem für Finance and Operations-Apps.
 author: edupont04
-ms.date: 07/20/2021
-ms.topic: overview
+manager: AnnBe
+ms.date: 05/11/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: tfehr
-ms.custom:
-- "16381"
-- intro-internal
+ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd34addc2ffa5e437691cb1e3e8b33246053ccc7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2c84a5f346bae440fb7a0ec6b2c3b813a30e8edd
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070500"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695138"
 ---
 # <a name="help-system"></a>Hilfesystem
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
-
 Benutzer der folgenden Apps können auf kontextsensitive Hilfe und andere Inhalte zugreifen, die auf demselben Hilfesystem basieren:
 
-- Dynamics 365 Commerce
+- Microsoft Dynamics 365 Commerce
 - Dynamics 365 Finance
 - Dynamics 365 Human Resources
 - Dynamics 365 Supply Chain Management
 
 In all diesen Apps können Sie die produktspezifische Hilfe über den Bereich **Hilfe** aufrufen.
 
-![Hilfebereich.](./media/help-pane-ops-help.png)
+![Hilfebereich](./media/help-pane-ops-help.png)
 
 ## <a name="help-on-docsmicrosoftcom"></a>Hilfe auf docs.microsoft.com
 
-Die Website docs.microsoft.com ([docs.microsoft.com/dynamics365/](/dynamics365/)) ist die Standardquelle für die Produktdokumentation der oben aufgeführten Apps. Diese Seite enthält die folgenden Funktionen:
+Die Website docs.microsoft.com ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) ist die Standardquelle für die Produktdokumentation der oben aufgeführten Apps. Diese Seite enthält die folgenden Funktionen:
 
 - **Zugriff auf aktuellsten Inhalt**– Die Site bietet Microsoft eine schnellere und flexiblere Methode, Produktdokumentationen zu erstellen, zu liefern und zu aktualisieren. Daher erhalten Sie einfachen Zugriff auf die neuesten technischen Informationen.
 - **Inhalte, die von den Experten geschrieben wurden** – Der Inhalt der Site ist für Beiträge von Community-Mitgliedern innerhalb und außerhalb von Microsoft verfügbar.
@@ -53,20 +50,9 @@ Sie können Inhalte auf docs.microsoft.com mit jeder Suchmaschine finden. Für o
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>Benachrichtigungen zu Änderungen über einen RSS-Feed erhalten
 
-Verwenden Sie den folgenden Link, um einen RSS-Feed aller Updates zu abonnieren, die den Inhalt von Apps für Finanzen und Betrieb betreffen:
+Verwenden Sie den folgenden Link, um einen RSS-Feed (Really Simple Syndication) aller Updates zu abonnieren, die den Inhalt von docs.microsoft.com betreffen:
 
-[RSS-Feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
-
-> [!NOTE]
-> Der RSS-Feed gibt eine Liste der 100 zuletzt aktualisierten Themen zurück. Die Liste ist nicht nach Datum sortiert.  
-
-Alternativ können Sie einen RSS-Feed per App abonnieren:
-
-- [Commerce](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-commerce%27)&locale=en-us)  
-- [Finance](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finance%27)&locale=en-us)  
-- [Human Resources](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-hr%27)&locale=en-us)  
-- [Lieferkette](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-supplychain%27)&locale=en-us)  
-- [Talent](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-talent%27)&locale=en-us)  
+[RSS-Feed](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
 ### <a name="leave-us-feedback"></a>Feedback senden
 
@@ -76,7 +62,7 @@ Wenn Sie zu Fragen oder Feedback zu einem Thema haben, lassen Sie uns stattdesse
 
 2. Geben Sie zunächst Ihre Kommentare ein, und wählen Sie dann **Feedback senden** aus.
 
-    ![Kommentar veröffentlichen.](./media/feedback.png)
+    ![Kommentar veröffentlichen](./media/feedback.png)
 
 > [!NOTE]
 > Wenn Sie Feedback zur Dokumentation senden möchten, müssen Sie sich mit einem GitHub-Konto anmelden. Weitere Informationen finden Sie unter [Ihr GitHub-Profil einrichten und verwalten](https://help.github.com/github/setting-up-and-managing-your-github-profile).
@@ -89,7 +75,7 @@ Sie können zur Dokumentation beitragen und Änderungen daran vornehmen. Wählen
 
 Das Video [So tragen Sie zur Microsoft Dynamics 365-Dokumentation bei](https://youtu.be/m5djioozRbg) (oben) ist im Microsoft Dynamics 365-Kanal auf YouTube enthalten.
 
-Weitere Informationen finden Sie in der [Leitfaden für Mitwirkende an der Microsoft-Dokumentation](/contribute), das von dem Team veröffentlicht wird, das die Website docs.microsoft.com erstellt hat.
+Weitere Informationen finden Sie in der [Leitfaden für Mitwirkende an der Microsoft-Dokumentation](https://docs.microsoft.com/contribute), das von dem Team veröffentlicht wird, das die Website docs.microsoft.com erstellt hat.
 
 > [!NOTE]
 > Es werden derzeit nur Beiträge für unseren englischen Inhalt akzeptiert.
@@ -100,11 +86,11 @@ Ein Aufgabenleitfaden ist eine kontrollierte, geführte, interaktive Erfahrung, 
 
 Microsoft hat Aufgabenleitfadenbibliotheken für Produktversionen bis zur Veröffentlichung der Dynamics 365 for Finance and Operations-Version von Dezember 2017 freigegeben. Im Abschnitt [Zugreifen auf Aufgabenleitfäden über den Hilfebereich](#accessing-task-guides-from-the-help-pane) dieses Themas wird beschrieben, wie Sie die richtigen Aufgabenleitfäden für Ihr Produkt finden.
 
-![Leseansicht des Aufgabenleitfadens.](./media/task-guide-ops.png)
+![Leseansicht des Aufgabenleitfadens](./media/task-guide-ops.png)
 
 Wählen Sie **Aufgabenleitfaden starten** unten im Bereich **Hilfe** aus, um die geführte, interaktive Umgebung zu starten. Ein schwarzer Mauszeiger zeigt Ihnen, wohin Sie zuerst gehen müssen. Folgen Sie den Anweisungen, die in der Benutzeroberfläche angezeigt werden, und geben Sie Daten ein, wie vorgesehen.
 
-![Schrittanleitung des Aufgabenleitfadens.](./media/task-guide-step-1-ops.png)
+![Schrittanleitung des Aufgabenleitfadens](./media/task-guide-step-1-ops.png)
 
 > [!IMPORTANT]
 > Die Daten, die Sie eingeben, wenn Sie einen Aufgabenleitfaden wiedergeben, sind real. In einer Produktionsumgebung werden die Daten in das Unternehmen eingegeben, das Sie derzeit verwenden.
@@ -117,7 +103,7 @@ Einige Felder verfügen über Feldbeschreibungen, damit Benutzer entsperrt werde
 
 Wählen Sie die Schaltfläche **Hilfe** (**?**) und dann **Hilfe** aus, um auf den Hilfeinhalt zuzugreifen. Drücken Sie alternativ die Tastenkombination **STRG+UMSCHALT+?** In beiden Fällen wird der Bereich **Hilfe** angezeigt. Über den Bereich **Hilfe** können Sie auf grundlegende Themen oder Aufgabenleitfäden zugreifen, die für den Bereich des Produkts relevant sind, in dem Sie sich gerade befinden.
 
-![Hilfebereich.](./media/help-pane-ops-help.png)
+![Hilfebereich](./media/help-pane-ops-help.png)
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Auf Hilfethemen über den Hilfebereich zugreifen
 
@@ -134,13 +120,13 @@ Bevor Sie auf Aufgabenleitfäden aus dem Bereich **Hilfe** zugreifen können, mu
 > - In order to configure Help, you must be signed in with an account in the same tenant as the tenant in which the app is deployed.
 > - It is not possible to connect to an LCS library from an instance of the app running in a local virtual hard drive (VHD).
 
-![System Parameters form with Help settings.](./media/system-parameters_ops-1024x437.png)
+![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)
 
 On the **System parameters** page, follow these steps:
 
 1. **Important:** The first time that you open the Help tab, you must connect to Lifecycle Services. Be sure to select the link in the middle of the form, wait for the connection, close the dialog box, and then select **OK** to get to the parameters form.
 
-    ![Connect to LCS.](./media/connect-to-lcs-crop-1024x365.png)
+    ![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png)
 
 2. Select the Lifecycle Services project to connect to.
 3. Select BPM libraries (within the selected project) to retrieve task recordings from.
@@ -148,7 +134,7 @@ On the **System parameters** page, follow these steps:
 
 Nachdem ein Systemadministrator diese Schritte eingerichtet hat, können Sie den Bereich **Hilfe** öffnen und die Registerkarte **Aufgabenleitfäden** auswählen. Dort werden nun die Aufgabenleitfäden angezeigt, die für die Seite gelten, auf der Sie sich aktuell befinden. Wenn keine Aufgabenhandbücher gefunden werden, können Sie Schlüsselwörter eingeben, um die Suche genauer zu definieren. Nachdem Sie einen Aufgabenleitfaden im Bereich **Hilfe** ausgewählt haben, werden im Bereich **Hilfe** die schrittweisen Anleitungen angezeigt, und Sie können den Aufgabenleitfaden wiedergeben.
 
-![Leseansicht des Aufgabenleitfadens.](./media/task-guide-ops.png)
+![Leseansicht des Aufgabenleitfadens](./media/task-guide-ops.png)
 
 ### <a name="where-are-the-translated-task-guides-for-microsoft-libraries"></a>Wo sind die übersetzten Aufgabenleitfäden für Microsoft-Bibliotheken?
 
@@ -171,14 +157,10 @@ In der folgenden Tabelle werden unsere Websites aufgeführt. Für Sites, die ein
 | Site | Beschreibung |
 |------|-------------|
 | [Docs.microsoft.com](/dynamics365/) | Diese Website hostet alle Produktdokumentationen für Dynamics 365 bzw. stellt eine Verbindung zu ihnen her. |
-| [Microsoft Learn](/learn/) | Diese Website ist die kostenlose Microsoft eLearning-Website. |
+| [Microsoft Learn](https://docs.microsoft.com/learn/) | Diese Website ist die kostenlose Microsoft eLearning-Website. |
 | [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/)\* | Diese Website bietet einen cloudbasierten Kooperationsbereich, den Debitoren und Partner verwenden können, um Projekte vom Vorverkauf über die Implementierung bis hin zum Betrieb zu verwalten. Sie ist in allen Phasen einer Implementierung hilfreich. |
 | [Support-Blog](https://aka.ms/AXSupportBlog) | Diese Website bietet Tipps und Tricks, die vom Support-Team bereitgestellt werden. |
 | [Docs.microsoft.com/previous Versionen](/previous-versions/dynamics/) | Diese Website hostet Inhalte aus früheren Versionen. |
 | [Dynamics-Community](https://community.dynamics.com/) | Diese Website hostet Blogs, Foren und Videos. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Diese Website stellt Auswertungen und Verkaufsinformationen bereit. |
-
-
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+| [CustomerSource](https://mbs.microsoft.com/customersource/)\* | Diese Website hostet Trainingsressourcen für Berichte zum Herunterladen und für Whitepapers und ist die primäre Supportwebsite für Inhaber von Dienstleistungsplänen. Für den Zugriff auf einige Ressourcen dieser Website ist möglicherweise ein Dienstleistungsplan erforderlich. |

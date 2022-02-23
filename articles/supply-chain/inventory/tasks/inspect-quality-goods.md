@@ -1,60 +1,53 @@
 ---
 title: Qualität der Waren inspizieren
-description: Dieses Thema beschreibt, wie Sie Qualitätsprüfungsaufträge verarbeiten.
-author: yufeihuang
-ms.date: 03/23/2021
+description: In diesem Thema wird erläutert, wie Sie einen Qualitätsprüfungsauftrag verarbeiten.
+author: perlynne
+manager: tfehr
+ms.date: 08/01/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventQualityOrderTable, InventQualityOrderLineResults, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
+ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc2fbbedb608b38c6855fbd48ff0c3e26ee3e0bc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: ee5f83b2dad60567341f33a73ce63d01e9da8289
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575847"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428964"
 ---
 # <a name="inspect-the-quality-of-goods"></a>Qualität der Waren inspizieren
 
 [!include [banner](../../includes/banner.md)]
 
-Dieses Thema beschreibt, wie Sie Qualitätsprüfungsaufträge verarbeiten. Qualitätsprüfungen werden normalerweise von einem Qualitätssachbearbeiter durchgeführt.
+In diesem Thema wird erläutert, wie Sie einen Qualitätsprüfungsauftrag verarbeiten. Sie können diese Anleitung im Demodatenunternehmen USMF ausführen. Bevor Sie diese Beispielprozedur beginnen, müssen Sie Bestellung „000016“ bestätigen und einen Produktzugang buchen. Dies erstellt automatisch einen Qualitätsprüfungsauftrag. Qualitätsinspektionen werden normalerweise von einem Sachbearbeiter für die Qualitätskontrolle ausgeführt.
 
-Wenn die Standard-Demodaten installiert sind, können Sie sie verwenden, um die Verfahren in diesem Thema abzuschließen. Um die Demo-Daten zu verwenden, wählen Sie vorher die *USMF* juristische Entität aus. Anschließend müssen Sie die Bestellung *000016* bestätigen und einen Wareneingang buchen. Ein Qualitätsprüfungsauftrag wird automatisch generiert.
 
-## <a name="step-1-select-a-quality-order"></a>Schritt 1: Wählen Sie einen Qualitätsprüfungsauftrag
+## <a name="select-a-quality-order"></a>Wählen Sie einen Qualitätsprüfungsauftrag aus.
+1. Wechseln Sie im Navigationsbereich zu **Module > Lagerverwaltung > Periodische Aufgaben > Qualitätsmanagement > Qualitätsprüfungsaufträge**.
+2. Wählen Sie den Qualitätsprüfungsauftrag, der erstellt wurde, bevor Sie dieses Verfahren gestartet haben.  
 
-Um einen Qualitätsprüfungsauftrag auszuwählen, führen Sie diese Schritte aus.
-
-1. Wechseln Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsaufträge**.
-1. Wählen Sie den Qualitätsprüfungsauftrag, der erzeugt wurde, bevor Sie diesen Vorgang gestartet haben.
-
-## <a name="step-2-record-test-results"></a>Schritt 2: Testergebnisse aufzeichnen
-
-Um Testergebnisse zu protokollieren, führen Sie diese Schritte aus.
-
+## <a name="record-test-results"></a>Erfassen von Testergebnissen
 1. Wählen Sie **Ergebnisse** aus.
-1. Wählen Sie **Bearbeiten** aus.
-1. Geben Sie im Feld **Ergebnismenge** eine Zahl ein.
-1. Wählen Sie im Feld **Ergebnis** den gewünschten Datensatz. In diesem Beispiel basiert das Ergebnis auf einem vordefinierten Ergebnis. Normalerweise werden Sie einen spezifischeren Datensatz erfassen, z. B. eine Größe oder eine andere Dimension.
-1. Wählen Sie **Speichern** aus.
-1. Schließen Sie die Seite.
+2. Wählen Sie **Bearbeiten** aus.
+3. Geben Sie im Feld **Ergebnismenge** eine Zahl ein.
+4. Wählen Sie im Feld **Ergebnis** den gewünschten Datensatz im Dropdownmenü aus.  
+- In diesem Beispiel basiert das Ergebnis auf einem vordefinierten Ergebnis. Normalerweise erfassen Sie ein spezifischeres Testergebnis, z. B. eine Größe oder eine andere Dimension.  
+5. Wählen Sie **Speichern**.
+6. Schließen Sie die Seite.
 
-## <a name="step-3-validate-the-quality-order"></a>Schritt 3: Validieren des Qualitätsprüfungsauftrags
-
-Gehen Sie folgendermaßen vor, um den Qualitätsprüfungsauftrag zu validieren.
-
+## <a name="validate-the-quality-order"></a>Qualitätsprüfungsauftrag überprüfen
 1. Wählen Sie **Überprüfen** aus.
-1. Wählen Sie im Feld **Gültig gemacht von** den Benutzer aus, der die Überprüfung durchführt.
-1. Wählen Sie **Auswählen**.
-1. Wählen Sie **OK**.
-1. Schließen Sie die Seite.
+2. Wählen Sie im Feld **Geprüft von** im Dropdownfeld den Benutzer aus, der die Prüfung ausführt.  
+3. Klicken Sie auf **Auswählen**.
+4. Wählen Sie **OK**.
+5. Schließen Sie die Seite.
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

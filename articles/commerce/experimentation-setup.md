@@ -2,12 +2,15 @@
 title: Einrichten eines Experiments
 description: In diesem Thema wird beschrieben, wie Sie ein Experiment in einem Drittanbieterdienst einrichten.
 author: sushma-rao
+manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -15,18 +18,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 870bcb9cc63fd4dbf6d7b40d730edfad7783540d5d943896e0129d29572fa875
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 29c21ceb4c259f463f4a039942e51141201a9809
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769394"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4412707"
 ---
 # <a name="set-up-an-experiment"></a>Einrichten eines Experiments
 
 Nach dem [Definieren einer Hypothese und Bestimmen, welche Erfolgsmetriken Sie verwenden möchten](experimentation-identify.md) müssen Sie Ihr Experiment im Drittanbieterdienst einrichten. Das folgende Diagramm zeigt alle Schritte, die am Einrichten und Ausführen eines Experiments auf einer E-Commerce-Website in Dynamics 365 Commerce beteiligt sind. Weitere Schritte werden in separaten Themen behandelt.
 
-[ ![User Journey zum Experimentieren – Einrichtung.](./media/experimentation_setup.svg) ](./media/experimentation_setup.svg#lightbox)
+[ ![User Journey zum Experimentieren – Einrichtung](./media/experimentation_setup.svg) ](./media/experimentation_setup.svg#lightbox)
 
 
 ## <a name="set-up-your-experiment-in-the-third-party-service"></a>Experiment im Drittanbieterdienst einrichten
@@ -51,6 +54,3 @@ Gehen Sie zum Einrichten von Erfolgsmetriken folgendermaßen vor.
 
 ## <a name="next-step"></a>Nächster Schritt
 [Ein Experiment verbinden und bearbeiten](experimentation-connect-edit.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

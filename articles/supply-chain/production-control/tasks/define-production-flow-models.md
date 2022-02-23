@@ -1,25 +1,28 @@
 ---
 title: Produktionsflussmodelle definieren
 description: Produktionsflussmodelle beschreiben, wie die Kapazität von Lean Manufacturing-Arbeitsgruppen berechnet und gepflegt wird.
-author: johanhoffmann
+author: cvocph
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanProductionFlowModel
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6fb12be6f744cee8af3a845d6b278d1f1462ec5d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 511c466d6019cb182c9ada0b02172b8eeb3725e6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579135"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428404"
 ---
 # <a name="define-production-flow-models"></a>Produktionsflussmodelle definieren
 
@@ -43,6 +46,3 @@ Produktionsflussmodelle beschreiben, wie die Kapazität von Lean Manufacturing-A
 8. Wählen Sie im Feld "Reaktion auf Kapazitätsmangel" eine Option aus.
     * Die Optionen umfassen: "Termin verschieben" - Verschieben des vollständigen Bedarfs des Planungsereignisses auf den nächsten verfügbaren Produktionstag mit verfügbarem Durchsatz. Abbrechen - Beenden der automatischen Planung für das Planungsereignis und belassen der zugehörigen Einzelvorgänge als ungeplant.   Zum angeforderten Tag hinzufügen - Planen der angeforderten Einzelvorgänge für die gewünschte Periode. Dieses überlädt die Zelle für diesen Tag und erfordert vom Planer eine Überprüfung und eine manuelle Interaktion.   Verteilen verfügbarer Perioden - Verteilt die verschiedenen Einzelvorgänge des Planungsereignisses von verfügbaren Produktionstagen ab dem ersten verfügbaren Tag. Die Mindestverteilungsmenge ist die Menge des Kanban-Einzelvorgangs. Die Verteilung weist die minimale Planungsmenge (Kanban-Menge) zu jedem Tag mit genügendem verfügbaren Durchsatz zu.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

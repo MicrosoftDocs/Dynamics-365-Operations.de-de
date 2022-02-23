@@ -85,6 +85,3 @@ Zusätzliche Informationen zu dieser Funktion verfügbar unter [Office-Integrati
 ## <a name="other-fixes"></a>Sonstige Korrekturen
 
 Diese Version enthält auch mehrere Fehlerkorrekturen, die Einführung neuer Entitäten, die Korrekturen an den vorhandenen Entitäten und die einzelnen Beschriftungsänderungen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

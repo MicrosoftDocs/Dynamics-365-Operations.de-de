@@ -33,6 +33,3 @@ Jede Woche gibt es neue Releases für Talent. Diese werden im Inhaltsverzeichnis
 
 Das Inhaltsverzeichnis wird weiter jede Woche aktualisiert. Schauen Sie immer wieder hinein, um alle neuen Funktionen und Änderungen der neuesten Version von Talent zu sehen.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

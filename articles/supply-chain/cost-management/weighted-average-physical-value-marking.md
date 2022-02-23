@@ -2,26 +2,29 @@
 title: Gewichteter Durchschnitt mit physischem Wert und Markierung
 description: Beim gewichteten Durchschnitt handelt es sich um ein auf dem Prinzip des gewichteten Durchschnitts basierendes Lagermodell. Für dieses Modell werden Abgänge aus dem Bestand mit dem Durchschnittswert der Artikel, die im Rahmen der Lagerabschlussperiode in den Bestand eingehen, sowie des gesamten verfügbaren Bestands der vorangegangenen Periode bewertet.
 author: AndersGirke
+manager: tfehr
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations, Retail
 ms.custom: 65501
 ms.assetid: 25041ff0-bafe-484d-a94a-e1772ad43204
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: aevengir
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d94e61384ad2d0880a6d62b963e9a99518a41db1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 225379df8bb86522d5817add570d614d09a1a92d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572000"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428543"
 ---
 # <a name="weighted-average-with-physical-value-and-marking"></a>Gewichteter Durchschnitt mit physischem Wert und Markierung
 
@@ -65,7 +68,7 @@ Im Szenario in den folgenden Abschnitten wurden ein wertmäßig aktualisierter Z
 
 Das folgende Diagramm gibt Aufschluss über diese Reihe von Buchungen sowie über die Auswirkungen der Auswahl des Lagermodells für den gewichteten Durchschnitt und des Prinzips des direkten Ausgleichs ohne die Option "Physischen Wert einbeziehen": 
 
-![WeightedAverage – Direkter Ausgleich ohne Einbeziehung des physischen Werts.](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
+![WeightedAverage – Direkter Ausgleich ohne Einbeziehung des physischen Werts](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Diagrammschlüssel**
 - Lagerbuchungen sind durch vertikale Pfeile dargestellt.
@@ -99,7 +102,7 @@ In der Grafik weiter unten werden die folgenden Buchungen veranschaulicht:
 
 Das folgende Diagramm gibt Aufschluss über diese Reihe von Buchungen sowie über die Auswirkungen der Auswahl des Lagermodells für den gewichteten Durchschnitt und des Prinzips des zusammengefassten Ausgleichs ohne die Option "Physischen Wert einbeziehen": 
 
-![Gewichteter Durchschnitt – Zusammengefasster Ausgleich ohne Einbeziehung des physischen Werts.](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![Gewichteter Durchschnitt – Zusammengefasster Ausgleich ohne Einbeziehung des physischen Werts](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Diagrammschlüssel**
 - Lagerbuchungen sind durch vertikale Pfeile dargestellt.
@@ -128,7 +131,7 @@ In der Grafik weiter unten werden die folgenden Buchungen veranschaulicht:
 
 Das folgende Diagramm gibt Aufschluss über diese Reihe von Buchungen sowie über die Auswirkungen der Auswahl des Lagermodells für den gewichteten Durchschnitt und des Prinzips des direkten Ausgleichs mit der Option "Physischen Wert einbeziehen": 
 
-![Gewichteter Durchschnitt – Direkter Ausgleich mit Einbeziehung des physischen Werts.](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
+![Gewichteter Durchschnitt – Direkter Ausgleich mit Einbeziehung des physischen Werts](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
 
 **Diagrammschlüssel**
 - Lagerbuchungen sind durch vertikale Pfeile dargestellt.
@@ -161,7 +164,7 @@ In der Grafik weiter unten werden die folgenden Buchungen veranschaulicht:
 
 Das folgende Diagramm gibt Aufschluss über diese Reihe von Buchungen sowie über die Auswirkungen der Auswahl des Lagermodells für den gewichteten Durchschnitt und des Prinzips des zusammengefassten Ausgleichs ohne die Option "Physischen Wert einbeziehen": 
 
-![WeightedAverage – Zusammengefasster Ausgleich mit Einbeziehung des physischen Werts.](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
+![WeightedAverage – Zusammengefasster Ausgleich mit Einbeziehung des physischen Werts](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
 
 **Diagrammschlüssel**
 - Lagerbuchungen sind durch vertikale Pfeile dargestellt.
@@ -209,7 +212,7 @@ Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmä�
 
 Das folgende Diagramm gibt Aufschluss über diese Reihe von Buchungen sowie über die Auswirkungen der Auswahl des Lagermodells für den gewichteten Durchschnitt mit angewendeter Markierung: 
 
-![Gewichteter Durchschnitt mit Markierung.](./media/weightedaveragewithmarking.gif) 
+![Gewichteter Durchschnitt mit Markierung](./media/weightedaveragewithmarking.gif) 
 
 **Diagrammschlüssel**
 - Lagerbuchungen sind durch vertikale Pfeile dargestellt.
@@ -227,6 +230,3 @@ Das folgende Diagramm gibt Aufschluss über diese Reihe von Buchungen sowie übe
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

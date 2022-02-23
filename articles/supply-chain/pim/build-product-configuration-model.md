@@ -1,29 +1,30 @@
 ---
 title: Produktkonfiguration – Übersicht
 description: Die Notwendigkeit, Produkte zu konfigurieren, um bestimmte Anforderungen zu erfüllen, wird eher die Regel anstatt die Ausnahme, sowohl in B2B- als auch in den B2C-Beziehungen.
-author: t-benebo
+author: cvocph
+manager: tfehr
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails, ConfigPartOf
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "75083"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 75083
 ms.assetid: f08072b8-cb0b-43aa-9509-f5ec32caecd9
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62411bff436d34e3d311b078b1bf8f886e5902d6
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 8b7d1186b4141a18e1283505713e67018927672d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983366"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428364"
 ---
 # <a name="product-configuration-overview"></a>Produktkonfiguration – Übersicht
 
@@ -38,7 +39,6 @@ Ein erfolgreicher Umstieg von der Fertigung-zu-Bestand-Einstellung zur Konfiguri
 Es gibt mehrere Produktkonfigurationsmodellierungsprinzipien, wie die regelbasierte, dimensionsbasierte und einschränkungsbasierte Modellstruktur. Untersuchungen zeigen, dass die einschränkungsbasierte Methode die Anzahl von Codezeilen in den Modellen um ungefähr 50 Prozent verringern kann, wenn mit anderen Modellierungsprinzipien verglichen wird. Daher kann diese Methode die Gesamtkosten (TCO) reduzieren. Wenn Sie von einem regelbasierten Modell, das auf X++-Code basiert, zu einem einschränkungsbasierten Modell übergehen, benötigen Sie keine Entwicklerlizenz mehr, um Produktmodelle zu verwalten.
 
 ## <a name="product-configuration"></a>Produktkonfiguration
-
 Die Industrialisierungsperiode hat zu großen Leistungen beim Erzeugen hochwertiger und funktionsreicher Produkte zu erschwinglichen Preise geführt. Die Kostendegression hat es für die meisten Personen in der industrialisierten Welt möglich gemacht, Autos, Fernseher, Haushaltswaren und andere Waren zu kaufen, die die meisten als einen erforderlichen Teil unseres Alltagslebens erachten.  
 
 Da viele Produkte zu einer Ware geworden sind, ist eine Anforderung, sie zu unterscheiden, aufgetreten. Die primäre Antwort von Herstellern zu dieser Herausforderung ist, Varianten jedes Produkts zu erstellen, damit Kunden mehr Alternativen haben. Diese Strategie hat zu erhöhten Planungsherausforderungen und auch zu einer Erhöhung der Bestandskosten und der nicht verkauften Produkte, die veralten, geführt.  
@@ -47,10 +47,9 @@ Durch die Annahme einer Konfigurieren-zum Auftrag-Philosophie haben Hersteller d
 
 Der Schlüssel zum Erfolg hier ist, die Produktpalette sorgfältig zu analysieren, und nach Mustern in Produktfunktionen und -prozessen zu suchen. Die Zielsetzung besteht darin, generische Komponenten zu erkennen, die von denselben Ausrüstung erstellt und in allen Varianten verwendet werden können.  
 
-Der Produktkonfigurationsfunktionsumfang umfasst eine Benutzeroberfläche (UI), die einen visuellen Überblick der Produktkonfigurationsmodellstruktur enthält, und auch eine deklarative Einschränkungssyntax, die nicht kompiliert werden muss. Daher können Unternehmen, die eine Konfigurationsmethode unterstützen möchten, leichter anfangen. Wie die folgenden Abschnitte erklären, benötigt ein Produktdesigner nicht mehr den Support eines Entwicklers, um ein Produktkonfigurationsmodell zu erstellen, zu testen und für die Verkaufsorganisation freizugeben.
+Der neue Produktkonfigurationsfunktionsumfang umfasst eine Benutzeroberfläche (UI), die einen visuellen Überblick der Produktkonfigurationsmodellstruktur enthält, und auch eine deklarative Einschränkungssyntax, die nicht kompiliert werden muss. Daher können Unternehmen, die eine Konfigurationsmethode unterstützen möchten, leichter anfangen. Wie die folgenden Abschnitte erklären, benötigt ein Produktdesigner nicht mehr den Support eines Entwicklers, um ein Produktkonfigurationsmodell zu erstellen, zu testen und für die Verkaufsorganisation freizugeben.
 
 ## <a name="building-a-product-configuration-model"></a>Ein Produktkonfigurationsmodell erstellen
-
 Es gibt mehrere Arten, die ein Benutzer wählen kann, um ein Produktkonfigurationsmodell zu erstellen. Eine Option ist, einem sequenziellen Ablauf zu folgen, indem zunächst alle Referenzdaten, wie Produktmaster, eindeutig identifizierbare Produkte und betriebliche Ressourcen erstellt werden, und sie dann als Komponenten, Stücklisten (BOM)- Positionen, Arbeitsplan-Arbeitsgänge und andere Elemente des Produktkonfigurationsmodells eingeschlossen werden. Alternativ können Sie einen schrittweiseren Ansatz auswählen, indem Sie zuerst das Modell erstellen und dann ggf. später Referenzdaten hinzufügen.
 
 ### <a name="components"></a>Komponenten
@@ -62,7 +61,7 @@ Ein Produktkonfigurationsmodell besteht aus einer oder mehreren Komponenten, die
 Jede Komponente enthält eines oder mehrere Attribute, die dessen Eigenschaften identifizieren. Die Attribute sind das, was Benutzer beim Konfigurationsprozess auswählen. Attribute steuern Interkomponenten- und Intrakomponentenbeziehungen durch die Einbeziehung in den Einschränkungen oder in Berechnungen. Durch Bedingungen, die für die Stücklistenpositionen angewendet werden, können die Attribute verwendet werden, um zu ermitteln, aus welchen physischen Teilen das konfigurierte Produkt bestehen wird. Außerdem kann ein Attribut die Eigenschaft einer Stücklistenposition durch einen Zuordnungsmechanismus steuern. Ähnliche Funktionen sind für Arbeitsplan-Arbeitsgänge hinsichtlich Einbeziehung und Eigenschafteneinstellungen vorhanden.
 
 >[!NOTE]
-> Wenn Sie Attributtypen erstellen, vermeiden Sie es, eine hohe Anzahl von Werten für die Attributtypdomäne zu erstellen. Dies könnte die Geschwindigkeit des Produktkonfigurators verringern.
+> Wenn Sie Attributtypen erstellen, vermeiden Sie es, eine hohe Anzahl von Werten für die Attributtypdomäne zu erstellen. Dies könnte die Geschwindigkeit des Produktkonfigurators verringern. 
 
 ### <a name="expression-constraints"></a>Ausdruckseinschränkungen
 
@@ -99,7 +98,6 @@ Stücklistenpositionen werden eingeschlossen, um die Fertigungsstückliste für 
 Arbeitsplan-Arbeitsgänge werden eingeschlossen, um den Fertigungsarbeitsplan zu identifizieren. Ein Arbeitsplan-Arbeitsgang muss einen definierten Arbeitsgang verweisen, und alle Arbeitsgangseigenschaften können auf einen festen Wert festgelegt werden. Alle Eigenschaften außer Ressourcenanforderungen können einem Attribut anstelle eines Werts zugeordnet werden.
 
 ## <a name="validating-and-testing-a-product-configuration-model"></a>Ein Produktkonfigurationsmodell validieren und testen
-
 Die Prüfung eines Produktkonfigurationsmodells kann auf mehreren Ebenen im Modell auftreten und daher unterschiedliche Bereiche enthalten. Die niedrigste Ebene ist für eine einzelne Ausdruckseinschränkung. In diesem Fall wird die Prüfung in der Regel vom Produktdesigner ausgeführt, um zu überprüfen, ob die Syntax eines Ausdrucks korrekt ist.  
 
 Entsprechend können eine Bedingung für eine Stücklistenposition oder ein Arbeitsplan-Arbeitsgang isoliert geprüft werden.  
@@ -117,7 +115,6 @@ Ein Modell testen ist gleich, wie wenn man eine tatsächliche Konfigurationssitz
 Um zwischen Komponenten zu navigieren, klicken Sie auf **Weiter** oder auf eine Komponente in der Produktkonfigurationsmodellstruktur, um den Fokus Sie dafür festzulegen.
 
 ## <a name="finalizing-a-model-for-configuration"></a>Fertigstellen eines Modells für die Konfiguration
-
 Wenn ein Produktkonfigurationsmodell bereit ist, in Konfigurieren-zum Auftrag-Szenarien verwendet zu werden, muss eine Version erstellt werden. Jedoch gibt es mehrere Optionen, die die Modellierungserfahrung verbessern können.
 
 ### <a name="user-interface"></a>Benutzeroberfläche
@@ -137,31 +134,32 @@ Wenn das Produkt in verschiedenen Ländern/Regionen verkauft wird, können Über
 Der letzte und der wichtigste Schritt im Abschlussprozess ist, eine Version für das Produktkonfigurationsmodell zu erstellen. Die Version stellt die Beziehung zwischen dem Produktmaster, der für die Konfiguration in einem Auftrag oder einer Angebotsposition ausgewählt werden kann, und dem Produktkonfigurationsmodell dar. Eine Version muss genehmigt und aktiviert werden, bevor sie in einer Konfigurationssitzung verwendet werden kann.
 
 ## <a name="extending-a-product-configuration-model-through-the-api"></a>Erweitern eines Produktkonfigurationsmodells durch das API
-
 Eine dedizierte Anwendungsprogrammierschnittstelle (API) wurde implementiert, sodass Partner und andere, die eine Entwicklerlizenz haben, den Funktionsumfang eines Produktkonfigurationsmodells erweitern können. Das Hauptziel war, einen Mechanismus einzurichten, mit dem Partner und Debitoren, die den vorhandenen Produktgenerator verwenden, den Code, der in den Produktgeneratormodellen eingebettet ist, in die API migrieren können. Auf diese Weise können sie ihre Modelle vom Produktgenerator in eine Produktkonfiguration migrieren. Allerdings können neue Partner und Kunden auch von der Verwendung der API zum Erweitern neuer Produktkonfigurationsmodelle profitieren.
 
-Das API ist so implementiert, dass sie einen Satz **PCAdaptor**-Klassen verwendet, die die Datenstruktur der Produktkonfigurationsmodelle verfügbar machen. Eine Instanz der **PCAdaptor Klasse** muss für jedes Modell erstellt werden, das als Kreditor erfasst wird. Nachdem eine Konfigurationssitzung abgeschlossen ist, sucht das System nach einer Instanz dieser Klasse und führt diese aus, wenn es sie gefunden hat.  
+### <a name="pcadaptor-class"></a>PCAdaptor-Klasse
 
-Das folgende API-Flussdiagramm veranschaulicht den Prozess.  
+Das API ist so implementiert, dass sie einen Satz **PCAdaptor**-Klassen verwendet, die die Datenstruktur der Produktkonfigurationsmodelle verfügbar machen. Eine Instanz der **PCAdaptor Klasse**  muss für jedes Modell erstellt werden, das als Kreditor erfasst wird. Nachdem eine Konfigurationssitzung abgeschlossen ist, sucht das System nach einer Instanz dieser Klasse und führt diese aus, wenn es sie gefunden hat.  
 
-[![Flussidagramm.](./media/product_configuration_2.png)](./media/product_configuration_2.png)  
+Das folgende Flussdiagramm veranschaulicht den Prozess.  
 
-## <a name="configure-products"></a>Produkte konfigurieren
+[![Flussidagramm](./media/product_configuration_2.png)](./media/product_configuration_2.png)  
 
-### <a name="configure-one-or-more-products"></a>Ein oder mehr Produkte konfigurieren
+Produktkonfiguration für das API-Flussdiagramm
 
-Sie können Produkte von folgenden Stellen aus konfigurieren:
+## <a name="product-configuration"></a>Produktkonfiguration
+Die Produktkonfiguration kann von den folgenden Stellen ausgeführt werden:
 
-- Auftragsposition
-- Verkaufsangebotsposition
-- Bestellposition
-- Produktionsauftragsposition
-- Artikelbedarfsposition (Projekt)
+-   Auftragsposition
+-   Verkaufsangebotsposition
+-   Bestellposition
+-   Produktionsauftragsposition
+-   Artikelbedarfsposition (Projekt)
 
-Der Zweck der Konfiguration ist, eine unterschiedliche Variante des Produkts zu erstellen, die der Bedingung des Debitors entspricht. Eine eindeutige Variantenkennung wird für jede neue Konfiguration erstellt. Diese Kennung aktiviert Nachverfolgung durch das Lager.
+Der Zweck der Konfiguration ist, eine unterschiedliche Variante des Produkts zu erstellen, das der Bedingung des Debitors entspricht. Eine eindeutige Variantenkennung wird für jede neue Konfiguration erstellt. Diese Kennung aktiviert Nachverfolgung durch das Lager.
 
-### <a name="multiple-sites-and-intercompany-considerations"></a>Mehrere Standorte und Intercompany-Überlegungen
+### <a name="multiple-sites-and-intercompany"></a>Mehrere Standorte und Intercompany
 
 Wenn eine Variante an einem Standort erfolgt oder auch an einem Unternehmen, das von der Site oder dem Unternehmen der Produktion abweicht, werden die Stückliste und der Arbeitsplan für die Lieferantensite im Lieferunternehmen erstellt und dort eingelagert. Die Produktvariante wird in allen Unternehmen freigegeben, die an der Lieferkette teilnehmen.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+

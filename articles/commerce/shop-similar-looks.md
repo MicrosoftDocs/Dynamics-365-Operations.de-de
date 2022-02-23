@@ -2,13 +2,16 @@
 title: Die Empfehlungen „Produkte mit ähnlichem Aussehen kaufen“ aktivieren
 description: In diesem Thema wird beschrieben, wie Sie Produktempfehlungen „Produkte mit ähnlichem Aussehen kaufen“ in Microsoft Dynamics 365 Commerce aktivieren.
 author: bebeale
+manager: AnnBe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,18 +19,20 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: e70365be8484d71ef9e0e9823b0a4406b0fd2761439780cafc30e1284bda1f20
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: da957850072e233a41a042d5857f81ddbf178f7a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721999"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412638"
 ---
-# <a name="enable-shop-similar-looks-recommendations"></a>Empfehlungen zu „Ähnliche Outfits kaufen“ aktivieren
+# <a name="enable-shop-similar-looks-recommendations"></a>Die Empfehlungen „Produkte mit ähnlichem Aussehen kaufen“ aktivieren
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie Produktempfehlungen „Produkte mit ähnlichem Aussehen kaufen“ in Microsoft Dynamics 365 Commerce aktivieren.
+
+## <a name="overview"></a>Übersicht
 
 Die Empfehlungen „Produkte mit ähnlichem Aussehen kaufen“ in Dynamics 365 Commerce nutzt die Kraft der künstlichen Intelligenz und des maschinellen Lernens (AI-ML), um Kunden Empfehlungen für visuell ähnliche Produkte zu geben. Durch die Bereitstellung von Empfehlungen für „Produkte mit ähnlichem Aussehen kaufen“ für alle Einzelhandelskanäle in Commerce können Einzelhändler die Kundenzufriedenheit steigern, indem sie Kunden dabei helfen, leicht zu finden, wonach sie suchen.
 
@@ -68,7 +73,7 @@ Führen Sie die folgenden Schritte aus, um die Empfehlungsfunktion „Produkte m
 
 Die folgende Abbildung zeigt die Funktion **Produkte mit ähnlichem Aussehen kaufen** auf der Seite **Funktionsverwaltung** in der Commerce-Zentrale.
 
-![Die Funktion „Produkte mit ähnlichem Aussehen kaufen“ auf der Seite Funktionsverwaltung in der Commerce-Zentralverwaltung.](./media/enableshopsimilarlooks.png)
+![Die Funktion „Produkte mit ähnlichem Aussehen kaufen“ auf der Seite Funktionsverwaltung in der Commerce-Zentrale](./media/enableshopsimilarlooks.png)
 
 Nach Abschluss der vorhergehenden Aufgaben werden POS-Terminals automatisch um kontextabhängigen Bereich **Produkte mit ähnlichem Aussehen kaufen** erweitert. Durch die Auswahl **Weitere Details** können Benutzer von POS-Terminals zu einer speziellen Seite „Produkte mit ähnlichem Aussehen kaufen“ weitergeleitet werden, auf der weitere Filter angewendet werden können.
 
@@ -88,7 +93,7 @@ Gehen Sie folgendermaßen vor, um eine Schaltfläche **Produkte mit ähnlichem A
 
 Die folgende Abbildung zeigt das Kontrollkästchen **Links für „Produkte mit ähnlichem Aussehen kaufen“ aktivieren** und die Schaltfläche **Produkte mit ähnlichem Aussehen kaufen** auf einer Beispiel-PDP im Site Builder.
 
-![Das Kontrollkästchen „Link für Produkte mit ähnlichem Aussehen kaufen“ und die Schaltfläche „Ähnliches Aussehen“ kaufen auf einer Beispiel-PDP im Site Builder aktivieren.](./media/SSLecomtooling.png)
+![Das Kontrollkästchen „Link für Produkte mit ähnlichem Aussehen kaufen“ und die Schaltfläche „Ähnliches Aussehen“ kaufen auf einer Beispiel-PDP im Site Builder aktivieren](./media/SSLecomtooling.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
@@ -111,6 +116,3 @@ Die folgende Abbildung zeigt das Kontrollkästchen **Links für „Produkte mit 
 [Empfehlungen mit Demodaten erstellen](product-recommendations-demo-data.md)
 
 [Produktempfehlungs-FAQs](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

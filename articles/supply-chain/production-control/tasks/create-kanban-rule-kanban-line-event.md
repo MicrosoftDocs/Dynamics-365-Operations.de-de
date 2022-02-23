@@ -1,25 +1,28 @@
 ---
 title: Eine Kanban-Regel mithilfe eines Kanban-Positionsereignisses erstellen
 description: Diese Prozedur erstellt eine Kanban-Regel mithilfe der Kanban-Positionsereigniseinstellung, um das Ausführen von Pull aus einer Prozessaktivität auszulösen.
-author: johanhoffmann
+author: ChristianRytt
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, SalesTableListPage, SalesCreateOrder, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b7aaf959db0f0a136fc615f9a57ec787ef6cf2ad
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5a6c4b7103874a6d955b21e99b8e219a039d4b55
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579159"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428425"
 ---
 # <a name="create-a-kanban-rule-using-a-kanban-line-event"></a>Eine Kanban-Regel mithilfe eines Kanban-Positionsereignisses erstellen
 
@@ -66,6 +69,3 @@ Diese Prozedur erstellt eine Kanban-Regel mithilfe der Kanban-Positionsereignise
     * Beachten Sie, dass ein Kanban für 27 erstellt wurde, um die Aktivität auf Grundlage der erstellten Kanban-Regel zu verarbeiten.  
     * Dies ist der letzte Schritt.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

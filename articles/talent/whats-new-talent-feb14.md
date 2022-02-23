@@ -52,6 +52,3 @@ Eine Änderung am Standardcode für den Kündigungsgrund wurde vorgenommen, wenn
 
 ### <a name="new-entity-created-for-job-compensation-levels"></a>Neue Entität für Stellenvergütungsstufen erstellt
 Eine neue Datenverwaltungsframework (DMF)-Entität wurde erstellt. Die Entität stellt Erstellung und Aktualisierungen der Vergütungsstufen, Marktwerte und Umfrageinformationen zu den im System definierten Stellen bereit.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

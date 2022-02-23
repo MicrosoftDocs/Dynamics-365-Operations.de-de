@@ -1,33 +1,37 @@
 ---
 title: Gefahrstoffübersicht
 description: Dieses Thema bietet einen Überblick über Funktionen, die sich auf die Handhabung und Dokumentation gefährlicher Materialien während der Produktinformationsverwaltung und der Lagerverwaltung beziehen.
-author: t-benebo
+author: dasani-madipalli
+manager: tfehr
 ms.date: 06/10/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: damadipa
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: cfea2cd6a2699bdf2a14de72a8bdeb3e8cd32a17
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.dyn365.ops.version: Release 10.0.11
+ms.openlocfilehash: 34c0a19308bb5159faa9a4ab06bf65e58da0deb1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986275"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428456"
 ---
 # <a name="hazardous-materials-overview"></a>Gefahrstoffübersicht
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Um die Liefer- und Transportvorschriften einzuhalten, müssen Organisationen, die Materialien liefern, die als gefährliche Güter eingestuft sind, zusätzliche Papiere ihren Lieferungen beifügen. Mit der Gefahrstofffunktion können Kunden Informationen speichern, die sich auf zugelassene Artikel beziehen. Diese Informationen können dann zur Vorbereitung der Versanddokumentation verwendet werden. Eine Organisation, die gefährliche Güter versendet, muss über eigene Prozesse und Prozeduren zur Verwaltung des Lieferprozesses verfügen. Microsoft Dynamics 365 Supply Chain Management ist nur ein Tool, mit dem Sie die erforderlichen Dokumente leichter erstellen können.
 
 Das folgende Diagramm zeigt die Schritte, die zum Einrichten und Verwenden der Gefahrstofffunktion erforderlich sind.
 
-![Einrichtung und Verwendung der Gefahrstofffunktion.](media/hazmat-overview.png "Einrichtung und Verwendung der Gefahrstofffunktion")
+![Einrichtung und Verwendung der Gefahrstofffunktion](media/hazmat-overview.png "Einrichtung und Verwendung der Gefahrstofffunktion")
 
 Die Gefahrstofffunktion wird in der Produktinformationsverwaltung eingerichtet und bietet Dokumente, die über die Lagerverwaltung gedruckt werden können. Daher sind diese Bereiche im Großen und Ganzen die beiden Hauptbereiche, in denen Sie die Funktionen dieser Funktion überprüfen, einrichten und verwenden:
 
@@ -58,6 +62,3 @@ Weitere Informationen zum Einrichten von Vorschriften und Werten für gefährlic
 ## <a name="warehouse-management"></a>Lagerortverwaltung
 
 Wenn Sie eine Lieferung in der Lagerverwaltung vorbereiten, können Sie mehrere neue Berichte drucken, die die Informationen verwenden, die Sie in der Produktinformationsverwaltung eingerichtet haben. Weitere Informationen zu den verfügbaren Berichten und deren Verwendung finden Sie unter [Anfragen und Berichte zu Gefahrstoffen](hazmat-reports.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

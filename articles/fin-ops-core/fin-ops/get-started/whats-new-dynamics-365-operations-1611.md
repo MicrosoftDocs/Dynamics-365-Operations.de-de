@@ -2,9 +2,11 @@
 title: Neuerungen oder Änderungen in Dynamics 365 for Operations Version 1611 (1611. November 2016)
 description: In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 for Operations Version 1611 entweder neu oder geändert sind.
 author: sericks007
+manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0625010143b7df9c3c897bf7f43ef25993303240
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 0b5856ef83ff1e101896eefbbe022e70ad954219
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752807"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797194"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Neuerungen oder Änderungen in Dynamics 365 for Operations Version 1611 (1611. November 2016)
 
@@ -496,7 +498,7 @@ In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 for Opera
 <li>ISO20022 Lastschriftzahlungsformat für Italien</li>
 <li>RIBA-Inkassoüberweisungsformat für Italien</li>
 <li>Buchungsbericht für Inlandssteuer für Italien</li>
-<li>Bericht mit der Sperrliste für Italien</li>
+<li>Bericht mit der schwarzen Liste für Italien</li>
 <li>Modello770-Bericht für Italien</li>
 <li>Bericht zur jährlichen Steuermitteilung für Italien</li>
 </ul>
@@ -943,6 +945,3 @@ Derzeit ist Retail Modern POS nur als Windows 8.1-Anwendung für Desktopcomputer
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Seite zu Neuerungen oder Änderungen in Finance and Operations](whats-new-changed.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

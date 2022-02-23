@@ -49,6 +49,3 @@ Sobald die Kandidaten der Stelle hinzugefügt wurden, erhalten Sie eine E-Mail m
 
 ## <a name="analytic-reports"></a>Analytische Berichte
 Einstellungsteams können die Ansicht Metrik für zentrale Einstellungsprozesse für eine einzelne Stelle oder aggregiert über alle Stellen mit den [analytischen Bereichten in Attract](analytic-reports.md) verwenden. Diese Funktion befindet sich derzeit in der [Vorschau](access-preview-feature.md) für Debitoren mit der [Welche Version von Microsoft Dynamics 365 Talent - Attract](attract-comprehensive-hiring.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

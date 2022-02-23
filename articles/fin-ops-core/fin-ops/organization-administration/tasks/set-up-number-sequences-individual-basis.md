@@ -1,24 +1,26 @@
 ---
 title: Nummernkreise einzeln einrichten
 description: In diesem Thema wird erläutert, wie Sie Nummernkreise einzeln einrichten.
-author: SunilGarg
+author: sericks007
+manager: AnnBe
 ms.date: 08/16/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: NumberSequenceTableListPage, NumberSequenceDetails
 audience: Application User
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sunilg
+ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b95a639c593c0f126a9aa1dd50434838d09ef746
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 260fae39d9a98feb7bfa82188c5b05de9a533136
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777912"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796629"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Nummernkreise einzeln einrichten
 
@@ -30,7 +32,7 @@ In diesem Thema wird erläutert, wie Sie Nummernkreise einzeln einrichten. Numme
 2. Wählen Sie **Nummernkreis** aus.
 3. Geben Sie im Feld **Nummernkreiscode** einen Wert ein.
 4. Geben Sie im Feld **Name** einen Wert ein.
-5. Wählen Sie auf dem Inforegister **Bereichsparameter** einen Bereich für den Nummernkreis aus, und wählen Sie Bereichswerte in der Dropdownliste aus. Mit dem Bereich wird definiert, welche Organisationen den Nummernkreis verwenden. Nummernkreise mit einem anderen Bereich als **Freigegeben** können Segmente enthalten, die ihrem Bereich entsprechen. Ein Nummernkreis mit dem Bereich **Juristische Person** kann beispielsweise ein Segment für juristische Personen enthalten. Weitere Informationen zu Bereichen finden Sie unter [Überblick über Nummernkreise](../number-sequence-overview.md). 
+5. Wählen Sie auf dem Inforegister **Bereichsparameter** einen Bereich für den Nummernkreis aus, und wählen Sie Bereichswerte in der Dropdownliste aus. Mit dem Bereich wird definiert, welche Organisationen den Nummernkreis verwenden. Nummernkreise mit einem anderen Bereich als **Freigegeben** können Segmente enthalten, die ihrem Bereich entsprechen. Ein Nummernkreis mit dem Bereich **Juristische Person** kann beispielsweise ein Segment für juristische Personen enthalten. Weitere Informationen zu Bereichen finden Sie unter [Überblick über Nummernkreise](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview). 
 6. Erweitern Sie den Abschnitt **Segmente**.
     - Definieren Sie das Format für den Nummernkreis, indem Sie Segmente hinzufügen, entfernen und neu anordnen.  
     - Nummernkreise aller Bereiche können *konstante Segmente* und *alphanumerische Segmente* enthalten. Konstante Segmente enthalten einen Satz alphanumerischer Zeichen, die sich nicht ändern. Fügen Sie mithilfe dieses Segmenttyps einen Bindestrich oder andere Trennzeichen zwischen Nummernkreissegmenten hinzu. Alphanumerische Segmente enthalten eine Kombination aus Nummernzeichen (#) und kaufmännischen Und-Zeichen (&). Diese Zeichen stellen Buchstaben und Zahlen dar, die jedes Mal schrittweise erhöht werden, wenn eine Nummer aus dem Nummernkreis verwendet wird. Verwenden Sie ein Nummernzeichen (#) zur Angabe inkrementeller Nummern und ein kaufmännisches Und-Zeichen zur Angabe inkrementeller Buchstaben. Mit dem Format `#####_2014` wird beispielsweise der Nummernkreis `00001_2014`, `00002_2014` usw. erstellt. Mindestens ein alphanumerisches Segment muss vorhanden sein. Bereichssegmente, z. B. ein Unternehmen oder eine juristische Person, sind nicht erforderlich. Doch wenn Sie keine Bereichssegmente in das Format einschließen, werden Nummern für die ausgewählte Referenz dennoch pro Bereich generiert.  
@@ -38,6 +40,3 @@ In diesem Thema wird erläutert, wie Sie Nummernkreise einzeln einrichten. Numme
 8. Erweitern Sie den Abschnitt **Allgemein**. Geben Sie auf dem Inforegister "Allgemein" an, ob der Nummernkreis manuell und fortlaufend bzw. nicht fortlaufend ist. Geben Sie zudem die niedrigste und die höchste Nummer ein, die in einem Nummernkreis verwendet werden kann. Es wird nicht empfohlen, einen nicht fortlaufenden Nummernkreis zu einem fortlaufenden Nummernkreis zu ändern. Der Nummernkreis wird nicht tatsächlich fortlaufend sein. Diese Änderung führt möglicherweise auch zu Doppelschlüssel-Verstößen in der Datenbank. Zudem besitzen fortlaufende Nummernkreise eine größere Auswirkungen auf die Leistung.   
 9. Klicken Sie auf **Speichern**.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

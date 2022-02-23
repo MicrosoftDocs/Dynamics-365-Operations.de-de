@@ -2,12 +2,15 @@
 title: Provisionen in der Verkaufsstelle (POS) mithilfe von Verkaufsgruppen nachverfolgen
 description: Es ist übliche Praxis Umsätze nach Verkäufer für einen Debitor nachzuverfolgen, um zu Unterstützen, Up-Selling und Cross-Selling zu ermöglichen und die Buchung zu verarbeiten.
 author: jblucher
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 261234
 ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa
 ms.search.region: global
@@ -15,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ca77ad5564cc93e9fcf335b5a49548f91c7c13face41fd73477ae4083f78be57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: afbf69c072ae205e973203d97a5fbca7504ae04f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770908"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412450"
 ---
 # <a name="track-commissions-in-the-point-of-sale-pos-by-using-sales-groups"></a>Provisionen in der Verkaufsstelle (POS) mithilfe von Verkaufsgruppen nachverfolgen
 
@@ -69,7 +72,7 @@ Es gibt mehrere Funktionsprofileinstellungen für eine Filiale, die den Fluss un
 
 ## <a name="displaying-the-sales-representative-information-on-the-pos-transactions-screen"></a>Anzeigen der Verkäuferinformationen auf dem POS-Buchungs-Bildschirm
 
-Das POS-Buchungs-Bildschirmlayout und die Inhalte sind mit dem Bildschirmlayoutdesigners konfigrierbar und Bildschirmlayouts können zu Shops, Kassen oder Arbeitskräfte zugeordnet werden. Das **Verkäufer** Feld kann der Registerkarte Position des Zugangsbereichs hinzugefügt werden.  Hier werden die Kennung der angegebenen Verkaufsgruppe für jede Position im Feld Buchungsbildschirm angezeigt.
+Das POS-Buchungs-Bildschirmlayout und die Inhalte sind mit dem Bildschirmlayoutdesigners konfigrierbar und Bildschirmlayouts können zu Shops, Kassen oder Arbeitskräfte zugeordnet werden.Das **Verkäufer** Feld kann der Registerkarte Position des Zugangsbereichs hinzugefügt werden.Hier werden die Kennung der angegebenen Verkaufsgruppe für jede Position im Feld Buchungsbildschirm angezeigt.
 
 ## <a name="adding-sales-representative-operations-to-pos-button-grids"></a>Hinzufügen von Verkäuferarbeitsgängen zu POS-Schaltflächenrastern
 
@@ -77,14 +80,11 @@ POS ermöglicht Benutzern Schaltflächenraster zu konfigurieren, die in den Bild
 
 | Vorgang                                 | Beschreibung |
 |-------------------------------------------|-------------|
-| Verkäufer für Position festlegen          | Dieser POS-Arbeitsgang zeigt eine Liste aus freigegebenen Verkaufsgruppen (ID : Name) für den Shop. Das Auswählen einer Verkaufsgruppe aus dieser Liste legt den Wert für die aktuelle Buchung fest. |
+| Verkäufer für Position festlegen          | Dieser POS-Arbeitsgang zeigt eine Liste aus freigegebenen Verkaufsgruppen (ID : Name) für den Shop.Das Auswählen einer Verkaufsgruppe aus dieser Liste legt den Wert für die aktuelle Buchung fest. |
 | Verkäufer für Position löschen        | Dieser POS-Arbeitsgang entfernt den aktuellen Verkaufsgruppenwert der aktuellen Buchung. |
-| Verkäufer für Buchung festlegen   | Dieser POS-Arbeitsgang zeigt eine Liste aus freigegebenen Verkaufsgruppen (ID : Name) für den Shop. Das Auswählen einer Verkaufsgruppe aus dieser Liste legt den Standardwert für die aktuelle Buchung fest. Alle vorhandenen Positionen ohne zugewiesene Verkaufsgruppe werden sowie alle nachfolgend hinzugefügten Positionen festgelegt. |
+| Verkäufer für Buchung festlegen   | Dieser POS-Arbeitsgang zeigt eine Liste aus freigegebenen Verkaufsgruppen (ID : Name) für den Shop.Das Auswählen einer Verkaufsgruppe aus dieser Liste legt den Standardwert für die aktuelle Buchung fest. Alle vorhandenen Positionen ohne zugewiesene Verkaufsgruppe werden sowie alle nachfolgend hinzugefügten Positionen festgelegt. |
 | Verkäufer für Buchung löschen | Dieser POS-Arbeitsgang entfernt den aktuellen Standardverkaufsgruppenwert der aktuellen Buchung. Wirkt sich auf keine Positionen aus, die in der Buchung bereits vorhanden sein. |
 
 ## <a name="calculating-commissions"></a>Berechnen von Provisionen
 
-Provision werden für die Arbeitskräfte in den angegebenen Verkaufsgruppen zum Zeitpunkt der Buchung oder der Auftragsbuchung berechnet. Der Provisionsbetrag wird basierend auf den Provisionsfreigabe der Arbeitskraft bestimmt, die im Formular und Verkaufsgruppe in den zugehörigen Provisionsberechnungseinstellungen für den Debitor und/oder die Produkte für die Buchung definiert.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Provision werden für die Arbeitskräfte in den angegebenen Verkaufsgruppen zum Zeitpunkt der Buchung oder der Auftragsbuchung berechnet.Der Provisionsbetrag wird basierend auf den Provisionsfreigabe der Arbeitskraft bestimmt, die im Formular und Verkaufsgruppe in den zugehörigen Provisionsberechnungseinstellungen für den Debitor und/oder die Produkte für die Buchung definiert.

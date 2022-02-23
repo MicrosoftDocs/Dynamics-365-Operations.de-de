@@ -1,10 +1,12 @@
 ---
 title: 'ER Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 3: Format erstellen)'
-description: In diesem Thema wird beschrieben, wie Sie ein elektronisches Berichtsformat für die Verwendung von Dokumentenverwaltungsdateien in der EB-Ausgabe konfigurieren. (Teil 3)
+description: In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Format zur Nutzung von Dokumentverwaltungsdateien in ER-Berichten nutzen kann.
 author: NickSelin
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0cb052e2895cd0eb7f5c3bea9f33d988ef54dfb11e2e31c4212706b7fdaada79
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bfcc03fa7470d4f2fa45ef012e30acef0712bf99
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766384"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681852"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-3---create-format"></a>ER Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 3: Format erstellen)
 
@@ -117,6 +119,3 @@ Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Versio
 23. Klicken Sie auf "Speichern".
 24. Schließen Sie die Seite.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Videos
 description: Diese Seite listet von Microsoft erstellte „How-to“- und Tech-Talk-Videos zu Finance and Operations-Apps auf, die auf YouTube und anderen Websites verfügbar sind.
 author: sericks007
-ms.date: 09/15/2021
+manager: AnnBe
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro, Developer
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 3fe44a9a7fcef2f22dff3be00ddfadd5b8c59574
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 56fdfc400b5bc3e640e7951985d54ffa870f96c9
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487990"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797874"
 ---
 # <a name="videos"></a>Videos 
 
@@ -34,6 +36,7 @@ Auf dem [Microsoft Dynamics 365 YouTube-Kanal](https://www.youtube.com/channel/U
 
 ### <a name="data-integration"></a>Datenintegration
 
+- [Integration der Konvertierung eines Interessenten in Bargeld](https://youtu.be/AVV9x5x-XCg)
 - [Arbeitsauftrag synchronisieren zwischen Dynamics 365 for Field Service und Finance and Operations-Apps](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### <a name="data-management"></a>Datenverwaltung
@@ -83,12 +86,12 @@ Auf dem [Microsoft Dynamics 365 YouTube-Kanal](https://www.youtube.com/channel/U
 
 ## <a name="videos-for-dynamics-365-finance"></a>Videos für Dynamics 365 Finance
 
-### <a name="business-document-management"></a>Geschäftsdokumentverwaltung
-- [Ein neues Geschäftsdokument mit der Geschäftsdokumentverwaltung erstellen](https://www.youtube.com/watch?v=gAIYl-mM_pw)
-
 ### <a name="customize-the-app"></a>App anpassen
 - [Benutzerdefinierte Felder hinzufügen](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 - [Power Apps einbetten](https://www.youtube.com/watch?v=x3qyA1bH-NY)
+
+### <a name="expenses"></a>Ausgaben
+- [Ausgabenfunktionalität](https://youtu.be/Ocy-MsTvEE0)
 
 ### <a name="financial-reporting"></a>Finanzberichterstellung
 - [Finden Sie die Version des Report Designers](https://www.youtube.com/embed/icfA5Q3kp4w)
@@ -110,13 +113,10 @@ Auf dem [Microsoft Dynamics 365 YouTube-Kanal](https://www.youtube.com/channel/U
 
 ### <a name="tax-engine"></a>Steuermodul
 
-- [Informationen zum Steuermodul](https://www.youtube.com/watch?v=jAFpEBOtNWI&feature=youtu.be)
+- [Steuermodul – Übersicht](https://www.youtube.com/watch?v=jAFpEBOtNWI&feature=youtu.be)
 
 
 ## <a name="videos-for-dynamics-365-supply-chain-management"></a>Videos für Dynamics 365 Supply Chain Management
-
-### <a name="business-document-management"></a>Geschäftsdokumentverwaltung
-- [Ein neues Geschäftsdokument mit der Geschäftsdokumentverwaltung erstellen](https://www.youtube.com/watch?v=gAIYl-mM_pw)
 
 ### <a name="costs"></a>Kosten
 - [Mobiler Arbeitsbereich für die Kostensteuerung](https://youtu.be/imsuTg8rUVk)
@@ -167,6 +167,3 @@ Auf dem [Microsoft Dynamics 365 YouTube-Kanal](https://www.youtube.com/channel/U
 [FastTrack Tech Talks](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) konzentrieren sich auf die Bereitstellung technischer Tiefe und Best Practices, die Kunden und Partnern detailliertes, themenspezifisches Wissen vermitteln.
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

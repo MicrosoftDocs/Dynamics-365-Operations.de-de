@@ -2,37 +2,35 @@
 title: Optimieren Sie geplante BYOD-Batchaufträge
 description: In diesem Thema wird erläutert, wie Sie die Leistung optimieren, wenn Sie die BYOD-Funktion (Bring Your Own Database = eigene Datenbank nutzen) mit Microsoft Dynamics 365 Human Resources verwenden.
 author: andreabichsel
+manager: AnnBe
 ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: a2f110d105b8c04f07f219f7f11a57d24e00ce4a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d08762ff40b4da8264bd5bc4a1c16fd2afc4d610
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067778"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418657"
 ---
 # <a name="optimize-byod-scheduled-batch-jobs"></a>Optimieren Sie geplante BYOD-Batchaufträge
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-In diesem Thema wird erläutert, wie Sie die Leistung optimieren, wenn Sie die BYOD-Funktion (Bring Your Own Database = eigene Datenbank nutzen) verwenden. Weitere Informationen zu BYOD finden Sie unter [Eigene Datenbank nutzen (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
+In diesem Thema wird erläutert, wie Sie die Leistung optimieren, wenn Sie die BYOD-Funktion (Bring Your Own Database = eigene Datenbank nutzen) verwenden. Weitere Informationen zu BYOD finden Sie unter [Eigene Datenbank nutzen (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/human-resources/toc.json).
 
 ## <a name="performance-considerations-for-data-export"></a>Leistungsüberlegungen für den Datenexport
 
-Nachdem Entitäten in der Zieldatenbank veröffentlicht wurden, können Sie die Exportfunktion im Arbeitsbereich **Datenverwaltung** verwenden, um Daten zu verschieben. Mit der Exportfunktion können Sie einen Datenverschiebungsauftrag definieren, der eine oder mehrere Entitäten enthält. Weitere Informationen über den Datenexport finden Sie unter [Übersicht über Datenimport- und -exportaufträge](../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
+Nachdem Entitäten in der Zieldatenbank veröffentlicht wurden, können Sie die Exportfunktion im Arbeitsbereich **Datenverwaltung** verwenden, um Daten zu verschieben. Mit der Exportfunktion können Sie einen Datenverschiebungsauftrag definieren, der eine oder mehrere Entitäten enthält. Weitere Informationen über den Datenexport finden Sie unter [Übersicht über Datenimport- und -exportaufträge](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job?toc=/dynamics365/human-resources/toc.json).
 
 Sie können die Seite **Export** benutzen, um Daten in verschiedene Zieldatenformate zu exportieren, wie z. B. eine Datei mit durch Komma getrennten Werten (CSV). Diese Seite unterstützt auch SQL-Datenbanken als weiteres Ziel.
 
@@ -63,7 +61,7 @@ Verwenden Sie für die beste Leistung immer die Option **In Batch exportieren** 
 
 Wenn Sie eine Entität für den Datenexport hinzufügen, können Sie entweder einen inkrementellen Push (Export) oder einen vollständigen Push ausführen. Ein vollständiger Push löscht alle vorhandenen Datensätze aus einer Entität in der BYOD-Datenbank. Anschließend werden die aktuellen Datensätze aus der Human Resources-Entität eingefügt.
 
-Um einen inkrementellen Push durchzuführen, müssen Sie die Änderungsnachverfolgung für jede Entität auf der Seite **Entitäten** aktivieren. Weitere Informationen finden Sie unter [Änderungsnachverfolgung für Entitäten aktivieren](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
+Um einen inkrementellen Push durchzuführen, müssen Sie die Änderungsnachverfolgung für jede Entität auf der Seite **Entitäten** aktivieren. Weitere Informationen finden Sie unter [Änderungsnachverfolgung für Entitäten aktivieren](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json).
 
 Wenn Sie einen inkrementellen Push auswählen, ist der erste Push immer ein vollständiger Push. SQL verfolgt Änderungen von diesem ersten vollständigen Push nach. Wenn ein neuer Datensatz eingefügt oder ein Datensatz aktualisiert oder gelöscht wird, wird die Änderung in der Zielentität wiedergegeben.
 
@@ -90,20 +88,11 @@ Die BYOD-Funktion hat die folgenden Einschränkungen:
 
 **Problem:** Wenn für eine Entität ein vollständiger Push ausgeführt wird, wird in BYOD eine große Anzahl von Datensätzen angezeigt, wenn Sie eine **Auswählen**-Anweisung verwenden. Wenn Sie jedoch einen inkrementellen Push ausführen, werden in BYOD nur wenige Datensätze angezeigt. Es scheint, als hätte der inkrementelle Push alle Datensätze gelöscht und nur die geänderten Datensätze in BYOD hinzugefügt.
 
-**Lösung:** Die SQL-Änderungsnachverfolgungstabellen befinden sich möglicherweise nicht im erwarteten Status. In Fällen dieses Typs empfehlen wir, die Änderungsnachverfolgung für die Entität zu deaktivieren und dann wieder zu aktivieren. Weitere Informationen finden Sie unter [Änderungsnachverfolgung für Entitäten aktivieren](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
-
-### <a name="staging-tables-arent-clearing"></a>Staging-Tabellen werden nicht geleert
-
-**Problem:** Bei der Verwendung von Staging für das Projekt werden die Staging-Tabellen nicht korrekt geleert. Die Daten in den Tabellen wachsen dann weiter an, was zu Leistungsproblemen führt.
-
-**Lösung:** In den Staging-Tabellen wird eine Historie von sieben Tagen geführt. Historische Daten, die älter als sieben Tage sind, werden durch den Batchauftrag **Bereinigung des Import-Export-Stagings** automatisch aus den Staging-Tabellen gelöscht. Wenn dieser Auftrag stecken bleibt, werden die Tabellen nicht korrekt gelöscht. Wenn Sie diesen Batchauftrag neu starten, wird der Prozess zum automatischen Löschen der Staging-Tabellen fortgesetzt.
+**Lösung:** Die SQL-Änderungsnachverfolgungstabellen befinden sich möglicherweise nicht im erwarteten Status. In Fällen dieses Typs empfehlen wir, die Änderungsnachverfolgung für die Entität zu deaktivieren und dann wieder zu aktivieren. Weitere Informationen finden Sie unter [Änderungsnachverfolgung für Entitäten aktivieren](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json).
 
 ## <a name="see-also"></a>Siehe auch
 
-[Datenverwaltung – Übersicht](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
-[Eigene Datenbanken nutzen (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
-[Einzelvorgänge für Datenimport und ‑export – Übersicht](../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
-[Aktivieren der Nachverfolgung von Änderungen an Entitäten](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Datenverwaltung – Übersicht](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages?toc=/dynamics365/human-resources/toc.json)<br>
+[Eigene Datenbanken nutzen (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/human-resources/toc.json)<br>
+[Einzelvorgänge für Datenimport und ‑export – Übersicht](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job?toc=/dynamics365/human-resources/toc.json)<br>
+[Aktivieren der Nachverfolgung von Änderungen an Entitäten](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json)

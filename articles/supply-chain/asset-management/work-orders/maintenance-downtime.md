@@ -1,10 +1,12 @@
 ---
 title: Wartungsausfallzeit für Arbeitsaufträge
 description: Dieses Thema beschreibt, wie Sie Wartungsausfallzeiterfassungen für die auf einem Arbeitsauftrag ausgewählte Anlage anlegen können.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 38c47a47fdf64c1d3601f6f3f7b84bf128823ec2ceb0c50e586822f6bdb97906
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 53487a0173453ef7a8f5ea818672d999fe71cb65
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753371"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020910"
 ---
 # <a name="maintenance-downtime-for-work-orders"></a>Wartungsausfallzeit für Arbeitsaufträge
 
@@ -45,7 +47,7 @@ Sie können Wartungsausfallzeiterfassungen für die auf einem Arbeitsauftrag aus
 
 Die folgende Abbildung zeigt ein Beispiel der Seite **Ursachencodes für Wartungsausfallzeit**.
 
-![Abbildung 1.](media/15-work-orders.png)
+![Abbildung 1](media/15-work-orders.png)
 
 Wenn Sie die von Ihnen gewünschten Ursachencodes für Wartungsausfallzeit angelegt haben, können Sie Wartungsausfallzeiterfassungen für Arbeitsaufträge und Anlagen anlegen.
 
@@ -71,21 +73,18 @@ Wenn Sie die von Ihnen gewünschten Ursachencodes für Wartungsausfallzeit angel
 
 Die folgende Abbildung zeigt das Beispiel einer Registrierung für Wartungsausfallzeit.
 
-![Abbildung 2.](media/16-work-orders.png)
+![Abbildung 2](media/16-work-orders.png)
 
 Der Kalender, der für die Berechnung einer Wartungsausfallzeiterfassung verwendet wird, hängt von Ihrer Auswahl bei der Einrichtung von Anlagen und Parametern ab. Wenn eine Ressource auf einer Anlage im Feld **Ressource** im Inforegister **Anlage** auf der Seite **Alle Anlagen** ausgewählt wird, wird der für die zugehörige Ressourcengruppe eingerichtete Kalender verwendet, wie in der folgenden Abbildung dargestellt.
 
-![Abbildung 3.](media/17-work-orders.png)
+![Abbildung 3](media/17-work-orders.png)
 
 Wenn keine Ressource auf der Anlage ausgewählt ist, wird der auf der Seite **Anlagenverwaltungsparameter** ausgewählte Standardkalender verwendet, wie in der folgenden Abbildung dargestellt.
 
-![Abbildung 4.](media/18-work-orders.png)
+![Abbildung 4](media/18-work-orders.png)
 
 Klicken Sie **Anlagenverwaltung** > **Abfragen** > **Wartungsausfallzeit**, um eine Übersicht über alle Wartungsausfallzeiterfassungen anzuzeigen.
 
 >[!NOTE]
 >Alle Kalender, die im Modul **Anlagenverwaltung** verwendet werden, werden in **Organisationsverwaltung** > **Einstellungen** > **Kalender** > **Kalender** eingerichtet.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

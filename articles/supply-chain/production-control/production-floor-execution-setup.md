@@ -2,35 +2,37 @@
 title: Gerät zum Ausführen der Produktionsausführungsoberfläche einrichten
 description: Die Produktionsausführungsschnittstelle wird für jedes Gerät in der Produktionshalle eingerichtet. Unternehmen richten jedes Gerät in der Regel unterschiedlich ein, je nachdem, welchen Zweck das Gerät erfüllt. Beispielsweise kann ein Unternehmen ein Gerät im Empfangsbereich haben, in dem die Mitarbeiter ein- und ausstempeln, und ein anderes in der Werkstatt, in dem die Mitarbeiter ihre Arbeit erledigen.
 author: johanhoffmann
+manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgProductionFloorExecution, HcmWorker, JmgProductionFloorExecutionDeviceConfiguration
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f0be79b54a279893f93d41981342e42c8880f059
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: d4529af21d9673512889b17aeb1e7fbd49969cdc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752831"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966277"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Gerät zum Ausführen der Produktionsausführungsoberfläche einrichten
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Die Produktionsausführungsschnittstelle wird für jedes Gerät in der Produktionshalle eingerichtet. Unternehmen richten jedes Gerät in der Regel unterschiedlich ein, je nachdem, welchen Zweck das Gerät erfüllt. Beispielsweise kann ein Unternehmen ein Gerät im Empfangsbereich haben, in dem die Mitarbeiter ein- und ausstempeln, und ein anderes in der Werkstatt, in dem die Mitarbeiter ihre Arbeit erledigen.
 
 ## <a name="set-the-configuration-and-filters-for-a-specific-device"></a>Stellen Sie die Konfiguration und Filter für ein bestimmtes Gerät ein
 
-Um die Konfigurations- und Auftragsfilter für ein Gerät festzulegen, melden Sie sich bei der Seite **Produktionsumgebungsausführung** mit einem Konto an, das eine Sicherheitsrolle hat, die die Aufgabe *Zeitkontrolle verwalten* enthält. Unter den sofort einsatzbereiten Sicherheitsrollen hat nur der *Werkstattleiter* diese Aufgabe. Dann folgen Sie diesen Schritten.
+Um die Konfigurations- und Auftragsfilter für ein Gerät festzulegen, melden Sie sich bei der Seite **Ausführung in der Produktion** mit einem Konto an, das eine Sicherheitsrolle hat, die die Aufgabe *Zeitüberwachung pflegen* enthält. Unter den sofort einsatzbereiten Sicherheitsrollen hat nur der *Werkstattleiter* diese Aufgabe. Dann folgen Sie diesen Schritten.
 
-1. Wechseln Sie zu dem Gerät, das Sie einrichten möchten, und melden Sie sich bei Microsoft Dynamics 365 Supply Chain Management als Werkstattleiter an. (Verwenden Sie ein Konto, das die Aufgabe *Zeitkontrolle verwalten* enthält.)
+1. Wechseln Sie zu dem Gerät, das Sie einrichten möchten, und melden Sie sich bei Microsoft Dynamics 365 Supply Chain Management als Werkstattleiter an. (Verwenden Sie ein Konto, das die Aufgabe *Zeitüberwachung pflegen* enthält.)
 1. Stellen Sie sicher, dass eine Konfiguration für das Gerät verfügbar ist, das Sie einrichten. Wenn noch keine Konfiguration vorhanden ist, wird eine Standardkonfiguration bereitgestellt. Weitere Informationen zum Einrichten einer Konfiguration finden Sie unter [Konfigurieren Sie die Produktionsausführungsschnittstelle](production-floor-execution-configure.md).
 1. Gehen Sie zu **Produktionskontrolle \> Fertigungsausführung \> Ausführung in der Produktion**.
 
@@ -70,13 +72,10 @@ Häufig führen Sie die Produktionsausführungsschnittstelle auf einem Gerät au
 
 Der obere Teil der folgenden Abbildung zeigt, wie die Benutzeroberfläche standardmäßig aussieht. Der untere Teil zeigt, wie es im Vollbildmodus aussieht, wenn der Navigationsbereich ausgeblendet ist.
 
-![Standard- oder Vollbildschnittstelle.](media/pfei-full-screen.png "Standard- oder Vollbildschnittstelle")
+![Standard- oder Vollbildschnittstelle](media/pfei-full-screen.png "Standard- oder Vollbildschnittstelle")
 
 ## <a name="extend-the-session-past-12-hours"></a>Verlängern Sie die Sitzung nach 12 Stunden
 
 Standardmäßig wird die Ausführungsoberfläche für die Produktionshalle automatisch abgemeldet, wenn sie 12 Stunden lang von niemandem verwendet wird. Ein Supply Chain Management-Benutzer muss sich dann erneut anmelden. Sie können das Timeout jedoch auf bis zu 90 Tage verlängern.
 
 Um das Timeout zu verlängern, melden Sie sich bei Supply Chain Management an und gehen Sie zu **Systemadministration \> Benutzer \> Sitzungserweiterungen**. Geben Sie das Benutzerkonto für das Supply Chain Management an, mit dem Sie sich am Gerät anmelden, und die Anzahl der Stunden, für die die Sitzung aktiv bleiben soll.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

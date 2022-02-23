@@ -2,24 +2,27 @@
 title: MwSt-Berichterstattung für Europa
 description: Dieses Thema enthält allgemeine Informationen zum Einrichten und Generierung des Mehrwertsteuer-Auszugs für einige europäische Länder.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 266844
 ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, Latvia, Lithuania, Netherlands, Sweden
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b028c5a185b4e7626dd9258630cc469c4439fc37d1c9d1cd7d42007b0ec85736
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 65ea2f40171a470cab0550aecff07567be4aaa78
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741488"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407732"
 ---
 # <a name="vat-reporting-for-europe"></a>MwSt-Berichterstattung für Europa
 
@@ -45,7 +48,7 @@ Der MwSt-Auszug basiert auf dem Steuerbuchungsbeträgen. Die Generierung eines M
 
 Für jeden Mehrwertsteuer-Erklärungscode soll ein bestimmtes Berichtslayout bestimmt werden. Gleichzeitig werden Mehrwertsteuercodes auf eine bestimmte Mehrwertsteuerbehörde von Mehrwertsteuer-Ausgleichsperioden verknüpft. Für jede Mehrwertsteuer-Behörde sollte ein bestimmtes Berichtslayout bestimmt werden. Auf diese Weise können nur mit Mehrwertsteuer-Erklärungscodes demselben Berichtslayout, das für die Mehrwertsteuerbehörde in Mehrwertsteuer-Abrechnungszeiträume für den Mehrwertsteuercode errichtet wird, in der Berichtseinstellung des Mehrwertsteuercodes ausgewählt werden. Eine Mehrwertsteuerbuchung, die nach dem Buchen eines Auftrags oder eine Erfassung erstellt wurde, enthält einen Mehrwertsteuercode, eine Mehrwertsteuerquelle, Mehrwertsteuerart und Buchungsbeträge (Steuergrundbetrag und Steuerbetrag in der Buchhaltungswährung, in der Mehrwertsteuerwährung und in der Buchungswährung). Durch die Kombination aus Steuerbuchungsattributen, verfassen Buchungsbeträge Gesamtbeträge für die Mehrwertsteuer-Erklärungscodes, die für Mehrwertsteuercodes angegeben werden. Die folgende Abbildung zeigt diese Datenbeziehung.
 
-![Diagramm.](./media/diagram4.jpg)
+![Diagramm](./media/diagram4.jpg)
 
 ## <a name="vat-statement-setup"></a>MwST-Bericht, Einrichtung
 Um einen MwSt-Bericht zu zu Erstellen, müssen Sie Folgendes erstellen:
@@ -248,9 +251,9 @@ d<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</s
 
 Sie können Elektronische Berichterstattung (ER) verwenden, um Auszüge und Berichte zu konfigurieren und verschiedene elektronische Datenformate zu exportieren, ohne den X++-Code zu ändern. Zusätzliche Informationen:
 
--   [Überblick über die elektronische Berichterstellung](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
--   [Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
--   [Lokalisierungsanforderungen - Erstellen Sie eine GER-Konfiguration](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md)
+-   [Überblick über die elektronische Berichterstellung](../../dev-itpro/analytics/general-electronic-reporting.md)
+-   [Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+-   [Lokalisierungsanforderungen - Erstellen Sie eine GER-Konfiguration](../../dev-itpro/analytics/electronic-reporting-configuration.md)
 
 ## <a name="countryspecific-resources-for-vat-statements"></a>Länderspezifische Ressourcen für Mehrwertsteuer-Auszüge
 Der Mehrwertsteuertyp für jedes Land muss den Bedingungen der Gesetzgeber des Lands erfüllen. Es gibt vordefinierte allgemeine Modelle und Formate der MwSt.-Auszüge für die Länder, die in der weiter unten dargestellten Tabelle aufgeführt sind.
@@ -274,6 +277,3 @@ Der Mehrwertsteuertyp für jedes Land muss den Bedingungen der Gesetzgeber des L
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

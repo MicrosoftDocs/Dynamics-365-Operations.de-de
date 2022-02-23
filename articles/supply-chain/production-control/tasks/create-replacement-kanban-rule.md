@@ -1,25 +1,28 @@
 ---
 title: Ersatz-Kanban-Regel erstellen
 description: Diese Prozedur konzentriert sich auf das Ersetzen einer vorhandenen Kanban-Regel durch eine neue Kanban-Regel an einem bestimmten Datum.
-author: johanhoffmann
+author: ChristianRytt
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanRules, KanbanRuleDuplicate
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2db44c1b43a6dc5e0ab37a7756c4eecaab468e15
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: ae589f81811c1586e0e24de94eaf5f467f19debb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570056"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428417"
 ---
 # <a name="create-a-replacement-kanban-rule"></a>Ersatz-Kanban-Regel erstellen
 
@@ -53,6 +56,3 @@ Diese Prozedur konzentriert sich auf das Ersetzen einer vorhandenen Kanban-Regel
 1. Legen Sie "Höchstmenge" auf "100" fest.
     * Erweitern Sie das Inforegister "Mengen", um das Feld "Höchstmenge" anzuzeigen. Das Ändern der Höchstmenge auf 100 ermöglicht es, dass bis zu 100 Kanbans verarbeitet werden können.    Dies ist der letzte Schritt in dieser Aufgabe.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,50 +1,46 @@
 ---
 title: Berichtsbeziehungen für eine Position ändern
 description: Diese Prozedur zeigt, wie Berichtsbeziehungen für einen Mitarbeiter geändert werden.
-author: twheeloc
-ms.date: 10/28/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmPosition, HcmPositionReportsToDialog, HcmPositionLookup, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d7996733575c2d3a23971d08eb101962c1f6bbd9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2ae8ca5b20f331709e9fc1d9ae3b5f350e5c19ab
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066624"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418691"
 ---
 # <a name="modify-reporting-relationships-for-a-position"></a>Berichtsbeziehungen für eine Position ändern
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
 Diese Prozedur zeigt, wie Berichtsbeziehungen für einen Mitarbeiter geändert werden. Die Berichtbeziehungen können für das Weiterleiten von Dokumenten durch Workflow verwendet werden. Die Prozedur zeigt auch, wie Sie den Mitarbeiter weiteren Hierarchien zuweisen. Beispielsweise kann ein Mitarbeiter Teil eines Projektteams mit informellen Berichtsbeziehungen zu einem Projekt-Supervisor sein. Zusätzliche Berichtsbeziehungen können für die Position definiert werden, um verschiedene Projekt- oder Matrixszenarien zu berücksichtigen. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 
-1. Wechseln Sie zu **Personalverwaltung** \> **Positionen** \> **Positionen**.
-2. Verwenden Sie den Schnellfilter, um Datensätze zu suchen. Filtern Sie beispielsweise auf einen Wert von **000091** für das Feld **Position**.
-3. Wählen Sie in der Liste den Link in der ausgewählten Zeile.
-4. Erweitern Sie den Abschnitt **Berichte an Position**.
-5. Wählen Sie **Neu** aus, um das Dropdown-Dialogfeld zu öffnen.
-6. Geben Sie im Feld **Vorgesetzter** einen Wert ein, oder wählen Sie einen Wert aus.
-7. Wählen Sie **Erstellen** aus.
-8. Erweitern Sie den Abschnitt **Beziehungen**.
-9. Wählen Sie **Hinzufügen** aus.
-10. Aktivieren Sie das Kontrollkästchen auf der linken Seite.
-11. Geben Sie im Feld **Hierarchiename** einen Wert ein, oder wählen Sie einen Wert aus (zum Beispiel **Projekt**).
-12. Geben Sie im Feld **Berichte an Position** einen Wert ein, oder wählen Sie einen Wert aus (zum Beispiel **000437**).
-13. Wählen Sie **Speichern** aus.
+1. Wechseln Sie zu "Personalverwaltung" > "Positionen" > "Positionen".
+2. Verwenden Sie den Schnellfilter, um Datensätze zu suchen. Filtern Sie beispielsweise im Feld "Position" mit dem Wert "000091".
+3. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
+4. Erweitern Sie die Berichte um den Abschnitt "Position".
+5. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
+6. Geben Sie im Feld "Vorgesetzter" einen Wert ein, oder wählen Sie einen Wert aus.
+7. Klicken Sie auf "Erstellen".
+8. Erweitern Sie den Abschnitt 'Beziehungen'.
+9. Klicken Sie auf Hinzufügen.
+10. Aktivieren Sie das Kontrollkästchen in der Kopfzeile von ''.
+11. Geben Sie im Feld "Hierarchiename" einen Wert ein, oder wählen Sie einen Wert aus.
+    * Beispiel: Projekt  
+12. Geben Sie im Feld "Position" einen Wert ein, oder wählen Sie einen Wert aus.  Beispiel: 000437
+13. Klicken Sie auf "Speichern".
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

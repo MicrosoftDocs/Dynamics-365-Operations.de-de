@@ -2,9 +2,11 @@
 title: Positionsbudgetierung-Problembehebung
 description: Diesee Artikel enthält Antworten auf Fragen, die Sie möglicherweise haben, wenn Sie die Positionsbudgetierung konfigurieren. Es adressiert häufig gestellten Fragen, wie Budgetkostenelemente, Vergütungsgruppen und Kompensationsraster.
 author: panolte
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmBudgetPurposeType, HcmPositionForecast
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 492a0798d1934b0fe1adf4f0546013f394beab06948f02f92358bae408e7748f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8211c5bd4514bffbd001f9930859f777dac7f0e1
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726061"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017616"
 ---
 # <a name="position-budgeting-troubleshooting"></a>Positionsbudgetierung-Problembehebung
 
@@ -28,7 +30,8 @@ ms.locfileid: "6726061"
 
 Diesee Artikel enthält Antworten auf Fragen, die Sie möglicherweise haben, wenn Sie die Positionsbudgetierung konfigurieren. Es adressiert häufig gestellten Fragen, wie Budgetkostenelemente, Vergütungsgruppen und Kompensationsraster. 
 
-## <a name="why-cant-i-find-the-forecast-position-page-in-human-resources"></a>Warum kann ich die Planungspositionsseite in der Personalverwaltung nicht finden?
+<a name="why-cant-i-find-the-forecast-position-page-in-human-resources"></a>Warum kann ich die Planungspositionsseite in der Personalverwaltung nicht finden?
+---------------------------------------------------------------
 
 Planungspositionen wurden in die Budgetierung verschoben.
 
@@ -60,6 +63,3 @@ Die Datumsangaben in der Kostenelementposition der Planungsposition müssen inne
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

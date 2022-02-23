@@ -2,9 +2,11 @@
 title: Konfigurieren von Callcenter-Lieferarten und -Belastungen
 description: In diesem Thema wird beschrieben, wie Sie in Dynamics 365 Commerce Lieferarten und Gebühren für einen Callcenter-Auftrag einrichten.
 author: josaw1
+manager: AnnBe
 ms.date: 04/26/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bd763082969079de2d68e12483ec25871c332e4067f122c6a845d3acd477af62
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bce2dac680871e14220d3bb94afacea0a617c707
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748570"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963109"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurieren von Callcenter-Lieferarten und -Belastungen
 
@@ -65,11 +67,11 @@ Im Abschnitt **Positionen** können Sie je nach Bedarf eine oder mehrere Gebühr
 
 Unternehmen konfigurieren oft gestaffelte Gebühren. In diesem Fall richtet sich der Betrag, den der Kunde für die Lieferung bezahlt, nach dem Auftragswert. Um abgestufte Gebühren zu konfigurieren, geben Sie Werte in die Felder **Von-Betrag** und **Bis-Betrag** ein, zusätzlich zur Definition der Gebühr selbst im Feld **Wert der sonstigen Zuschläge**. Zum Beispiel, für Aufträge, die einen Wert von weniger als $50 haben, berechnet ein Einzelhändler $5.95 für den Bodenversand. Für Aufträge, deren Wert gleich oder größer als $50, aber kleiner als $100 ist, berechnet der Einzelhändler $7,95. Für Aufträge, deren Wert gleich oder höher als $100 ist, bietet der Händler kostenlosen Versand an. Die folgende Abbildung zeigt die Konfiguration dieser Gebühren.
 
-![Beispiel für feste abgestufte Gebühren.](media/fixedtieredcharges.png)
+![Beispiel für feste abgestufte Gebühren](media/fixedtieredcharges.png)
 
 Sie können eine Mischung aus Kategorien für Gebühren verwenden, je nach Ihren geschäftlichen Anforderungen. Zum Beispiel, für alle Aufträge, die einen Wert von weniger als $100 haben, gibt es eine feste Gebühr von $9.95 für den Versand. Für Aufträge, deren Wert gleich oder größer als $100 ist, werden die Versandkosten in Höhe von 5 Prozent des Auftragswertes berechnet. Die folgende Abbildung zeigt die Konfiguration dieser Gebühren.
 
-![Beispiel für gemischte abgestufte Gebühren.](media/mixedtieredcharges.png)
+![Beispiel für gemischte abgestufte Gebühren](media/mixedtieredcharges.png)
 
 ## <a name="apply-delivery-modes-during-order-entry-in-a-call-center"></a>Lieferarten bei der Auftragserfassung in einem Callcenter anwenden
 
@@ -92,6 +94,3 @@ Sie können optional einen Eillieferungscode mit jeder von Ihnen konfigurierten 
 Bei Bestellungen, die beispielsweise am nächsten Tag per Luftfracht verschickt werden, muss die Kommissionierung täglich bis 13 Uhr im Lager erfolgen. In diesem Fall kann ein Eillieferungscode erstellt werden, der mit jeder im System konfigurierten Lieferart für den nächsten Tag verknüpft werden kann. Wenn das Lager seine Entnahmeserie erzeugt, kann der entsprechende Eillieferungscode im Feld **Eillieferung** als Filter verwendet werden, so dass die Entnahme nur für Aufträge durchgeführt wird, die Lieferarten haben, die mit diesem Code verknüpft sind.
 
 Zusätzlich kann bei der Eingabe eines Callcenterauftrags ein Eillieferungscode entweder manuell auf den Auftragskopf oder auf eine einzelne Auftragspositionen angewendet werden. Auch hier kann der Code für Sortier- oder Berichtszwecke verwendet werden. Manchmal muss ein Auftrag wegen eines Kundenserviceproblems sorgfältig behandelt werden. In diesem Fall kann ein spezieller Eillieferungscode auf den Auftragskopf oder die Auftragszeilen angewendet werden, um den Auftrag während des Ausführungsprozesses zu identifizieren und zu priorisieren.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

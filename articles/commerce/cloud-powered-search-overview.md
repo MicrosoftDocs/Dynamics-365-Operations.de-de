@@ -1,30 +1,37 @@
 ---
-title: Übersicht über die cloudbasierte Suche
+title: Übersicht über die Cloud-basierte Suche
 description: Dieses Thema enthält eine Übersicht der Cloud-betriebenen Suche in Microsoft Dynamics 365 Commerce.
 author: ashishmsft
+manager: annbe
 ms.date: 06/29/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eb34780d5bdd41a128fff543fe0f1ef73cfead8b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 00a3de2515cea341f7529b8cb6cb2caae5e33d22
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983668"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412442"
 ---
-# <a name="cloud-powered-search-overview"></a>Übersicht über die cloudbasierte Suche
+# <a name="cloud-powered-search-overview"></a>Übersicht über die Cloud-basierte Suche
+
 
 [!include [banner](includes/banner.md)]
 
 Dieses Thema enthält eine Übersicht der Cloud-betriebenen Suche in Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Übersicht
 
 Produkt-Auffindbarkeit hilft sicherzustellen, dass Debitoren Produkte über das Durchsuchen von Kategorien schnell und einfach finden. Einzelhändler erachten die Produkterfassung als ein primäres Tool für Debitoreninteraktionen über alle Kanäle hinweg.
 
@@ -40,7 +47,7 @@ Suchrelevanz und Leistung sind entscheidende Faktoren in der Omnikanal-Erfahrung
 
 Die folgende Abbildung zeigt ein Beispiel für typisches Durchsuchen und für Suchfunktionen.
 
-![Suchenangebotsseite.](./media/SearchLanding.png)
+![Suchenangebotsseite](./media/SearchLanding.png)
 
 ## <a name="faceted-navigation-and-choice-summary"></a>Facettierte Navigations- und Auswahlzusammenfassung 
 
@@ -50,7 +57,7 @@ Wenn Sie facettierte Navigation verwenden, können Sie verschiedene Kriterien f�
 
 Die folgende Abbildung zeigt ein Beispiel an, wo facettierte Navigation bei einer Suche verwendet wird.
 
-![Auswahl-Zusammenfassung.](./media/ChoiceSummary.png)
+![Auswahl-Zusammenfassung](./media/ChoiceSummary.png)
 
 ## <a name="immersive-autosuggest"></a>Interaktive automatische Vorschläge
 
@@ -60,7 +67,7 @@ Dynamics 365 Commerce unterstützt auch Funktionen für Schlüsselwortabgleichun
 
 Die folgende Abbildung zeigt ein Beispiel an, wo interaktives automatisches Vorschlagen verwendet wird.
 
-![Umfassende automatische Vorschläge.](./media/ImmersiveAutoSuggestUX.png)
+![Umfassende automatische Vorschläge](./media/ImmersiveAutoSuggestUX.png)
 
 ## <a name="sort"></a>Sortieren
 
@@ -68,13 +75,10 @@ Verbessertes Sortieren in Dynamics 365 Commerce ermöglicht Kunden, Suchergebnis
 
 >[!NOTE]
 >Diese Cloud-betriebenen Suchfunktionen sind ab Version 10.0.8 verfügbar. Stellen Sie sicher, dass unter **Handelsparameter > Konfigurationsparameter** ein Eintrag für „ProductSearch.UseAzureSearch set to 'true'“ vorhanden ist. 
-![Konfigurationsparameter für die cloud-betriebene Suche.](./media/CloudPoweredSearchConfigurationParameters.png)
+![Konfigurationsparameter für die Cloud-betriebene Suche](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Übersicht zur Zielseite der Standardkategorie und der Suchergebnisseite](category-search-page-overview.md)
+[Standard-Kategorie-Landingpage und Suchergebnisseite – Übersicht](category-search-page-overview.md)
 
 [Verwalten von SEO-Metadaten](manage-seo-metadata.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

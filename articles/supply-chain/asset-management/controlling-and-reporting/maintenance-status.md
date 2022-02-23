@@ -1,10 +1,12 @@
 ---
 title: Wartungsstatus
 description: In diesem Thema wird erläutert, wie Sie den Instandhaltungsstatus in der Anlagenverwaltung berechnen.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetStatusCalculate, EntAssetStatus
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 138e2e72fbf761d209d288c2bd778c08519b9c69b0715f4466d4838255a2a31e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b5bac42d5cdc62361ee9a562e59bafa09ca7a215
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752008"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018495"
 ---
 # <a name="maintenance-status"></a>Wartungsstatus
 
@@ -57,14 +59,11 @@ Im Anlagenmanagement können Sie eine Übersichtskalkulation für eine bestimmte
 
 Im Screenshot unten wurden die Schaltflächen **Jahr** und **Monat** aktiviert. Werden diese **Gruppieren nach...**-Optionen ausgewählt, erhalten Sie einen allgemeinen Überblick über den monatlichen Arbeitsaufwand und -durchsatz im Zusammenhang mit Wartungsanfragen und Arbeitsaufträgen. 
 
-![Beispiel des monatlichen Arbeitsaufwands.](media/13-controlling-and-reporting.png)
+![Beispiel des monatlichen Arbeitsaufwands](media/13-controlling-and-reporting.png)
 
 ## <a name="example-2"></a>Beispiel 2
 
 Im Screenshot unten wurden Informationen über funktionale Standorte hinzugefügt. Jetzt ist es möglich, Arbeitslast und Durchsatz über funktionale Standorte hinweg zu vergleichen, die geografische Standorte, Fabriken oder Arbeitsbereiche repräsentieren können. 
 
-![Beispiel des monatlichen Arbeitsaufwands mit funktionalen Standorten.](media/14-controlling-and-reporting.png)
+![Beispiel des monatlichen Arbeitsaufwands mit funktionalen Standorten](media/14-controlling-and-reporting.png)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

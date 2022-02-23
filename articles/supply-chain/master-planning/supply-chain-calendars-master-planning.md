@@ -1,25 +1,28 @@
 ---
 title: Kalender und Produktprogrammplanung
 description: Dieses Thema gibt einen Überblick über die Kalender der Lieferkette und deren Auswirkungen auf die Masterplanung.
-author: ChristianRytt
+author: t-benebo
+manager: tfehr
 ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f424a2a050f917be2f0823c35ee2a47b4dd5cd0a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2c32957b0bd234ed14e6333a36a46c6a83ec2e91
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568614"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428726"
 ---
 # <a name="calendars-and-master-planning"></a>Kalender und Produktprogrammplanung
 
@@ -90,7 +93,7 @@ Um die Termine anzugeben, an denen ein Kunde Lieferungen annehmen kann, können 
 
 Beachten Sie, dass es möglich ist, nur einen Kalender pro Kunde einzubinden. Wenn Sie für jede verschiedene Adresse eines Kunden einen Kalender einbinden müssen, können Sie pro Adresse einen Kunden anlegen und ihm dann den entsprechenden Kalender zuordnen. 
 
-Das gewünschte Zugangsdatum auf den Kundenauftragszeilen wird durch den Kundenkalender und die Steuerung des Liefertermins beeinflusst. Weitere Informationen zur Berechnung des frühesten Liefertermins finden Sie unter [Lieferterminzusage](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
+Das gewünschte Zugangsdatum auf den Kundenauftragszeilen wird durch den Kundenkalender und die Steuerung des Liefertermins beeinflusst. Weitere Informationen zur Berechnung des frühesten Liefertermins finden Sie unter [Lieferterminzusage](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
 
 ### <a name="shipping-calendar-for-a-legal-entity"></a>Versandkalender für eine juristische Person
 Um die Daten anzugeben, an denen eine juristische Person Waren versenden kann, können Sie unter **Organisationsverwaltung > Organisationen > Juristische Personen** einen Versandkalender einrichten. Wählen Sie die juristische Person aus und fügen Sie den Kalender auf der Registerkarte **Außenhandel und Logistik** im Feld **Versandkalender** hinzu. Der Versandkalender dient als Quelle für Standardwerte für alle Lagerkalender der juristischen Person. 
@@ -140,6 +143,3 @@ Bezüglich des Deckungsgruppenkalenders ist zu beachten, dass dieses in der Mast
 
 ### <a name="updating-scm-related-calendars"></a>Aktualisierung von SCM-bezogenen Kalendern
 Es ist zwar wichtig, dass alle relevanten Kalender an ihrem jeweiligen Ort (Lieferant, Kunde, Lager, Lieferart oder Deckungsgruppe) zugeordnet sind, aber die Aktualisierung ist ebenso wichtig, damit sie die Änderungen berücksichtigen. Das System definiert die Produktions-, Transfer-, Einkaufs- und Kundenauftragsdaten abhängig von der Kombination der zugeordneten Kalender. Es ist eine bewährte Vorgehensweise, um zu klären, wer für die Zuordnung und Aktualisierung der Kalender in den entsprechenden Bereichen verantwortlich ist. Im Falle einer Panne oder einer anderen ungewöhnlichen Änderung der Arbeitstage ist es unerlässlich, die Kalender entsprechend zu aktualisieren. Alle kalenderabhängigen Aufgaben, wie z.B. die Masterplanung und Produktionsplanung, müssen bei der Aktualisierung von Kalendern erneut ausgeführt werden. 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

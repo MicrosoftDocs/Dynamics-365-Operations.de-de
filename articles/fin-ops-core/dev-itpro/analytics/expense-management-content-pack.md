@@ -2,9 +2,11 @@
 title: Power BI-Inhalt der Ausgabenverwaltung
 description: In diesem Thema wird beschrieben, was im Power BI-Inhaltspaket zur Ausgabenverwaltung enthalten ist.
 author: panolte
+manager: AnnBe
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: TrvExpenseWorkspace, ExpenseWorkspace
 audience: Application User, IT Pro
@@ -14,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 178a65c44abd0c9c068d4da1f2684a60062da595247560de4cb81d97ab7b6521
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d580502a08c2c176a000616abc3513cc45bd58a6
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769897"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016451"
 ---
 # <a name="expense-management-power-bi-content"></a>Power BI-Inhalt der Ausgabenverwaltung
 
@@ -41,7 +43,7 @@ Zwei  Power BI  Inhaltspakete sind für die Verwendung mit der Ausgabenverwaltun
 Alle Beträge werden in der Unternehmenswährung angezeigt. Daten für alle Unternehmen werden angezeigt, aber Sie können nach Bedraf einen Unternehmensfilter hinzufügen. 
 
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen auf den Power BI-Inhalt
-Sie finden die Dateien Administrator Ausgaben Dashboard.pbix und Persönliche Ausgaben Dashboard.pbix Power BI Inhalt in der freigegebenen Anlagenbibliothek in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen dazu, wie Sie den Inhalt herunterladen und in Ihrer Organisation implementieren, finden Sie unter [Power BI-Inhalt in LCS von Microsoft und Ihren Partnern](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
+Sie finden die Dateien Administrator Ausgaben Dashboard.pbix und Persönliche Ausgaben Dashboard.pbix Power BI Inhalt in der freigegebenen Anlagenbibliothek in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen dazu, wie Sie den Inhalt herunterladen und in Ihrer Organisation implementieren, finden Sie unter [Power BI-Inhalt in LCS von Microsoft und Ihren Partnern](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
 Der Inhalt ist vom Ausgabenverwaltungsarbeitsbereich als eingebetteter Power BI Inhalt verfügbar. Jeder Ausgabeneneigentümer kann selbst auf persönliche Ausgaben zugreifen, während nur Kreditorenkonten-Sachbearbeiter und Manager Zugriff auf Administratorinhalte haben, um alle Ausgabenendaten anzuzeigen.
 
 ## <a name="refreshing-the-power-bi-content"></a>Aktualisieren des Power BI Inhalts
@@ -91,6 +93,3 @@ Der Inhalt enthält einen Satz Berichtsseiten. Jede Seite enthält einen Satz Me
 | Mitarbeiterstatisik | Ausgabenbericht nach Kostentyp            |
 |                     | Persönliche Spesen                       |
 |                     | Ausgabenberichte nach Statistikgruppe     |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

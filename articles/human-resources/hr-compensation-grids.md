@@ -1,86 +1,94 @@
 ---
 title: Vergütungsraster einrichten
 description: Vergütungsstrukturen werden zur Definition und Pflege der Vergütungsstrukturen für feste Vergütungspläne verwendet.
-author: twheeloc
-ms.date: 01/03/2022
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRCCompGrid, HRCCompGridView, HcmCompensationWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 51b98320eac539e49787d352f32683efadc11f41
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 5d5ada0817dd73caad38bb2e50302869857c71d8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071446"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418660"
 ---
 # <a name="set-up-compensation-grids"></a>Vergütungsraster einrichten
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Vergütungsstrukturen werden zur Definition und Pflege der Vergütungsstrukturen für feste Vergütungspläne verwendet. Vergütungsraster können zwischen mehreren Plänen geteilt oder kopiert werden, wenn Sie einen neuen Vergütungsplan erstellen.  Vor dem Erstellen eines Vergütungsrasters müssen Ebenen und Referenzpunkte eingerichtet werden. In diesem Beispiel erstellen Sie einen neuen Gradtyp für Vergütungsraster mit Demodaten für Ebenen und Referenzpunkte. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 
 
 ## <a name="set-up-information-about-the-compensation-grid"></a>Informationen zum Vergütungsraster einrichten
-1. Navigieren Sie zu **Personalverwaltung** > **Vergütung** > **Feste Vergütung** > **Vergütungsraster**.
-2. Klicken Sie auf **Neu**.
-3. Geben Sie im Feld **Raster** einen Wert ein.
-4. Geben Sie im Feld **Beschreibung** einen Wert ein.
-5. Wählen Sie im Feld **Typ** eine Option aus.
-6. Geben Sie im Feld **Referenz**-Einstellungen einen Wert ein, oder wählen Sie einen Wert aus.
-7. Geben Sie im Feld **Währung** einen Wert ein, oder wählen Sie einen Wert aus.
-8. Geben Sie im Feld **Gültigkeitsdatum** ein Datum ein.
+1. Wechseln Sie zu "Personalverwaltung" > "Vergütung" > "Feste Vergütung" > "Vergütungsraster".
+2. Klicken Sie auf "Neu".
+3. Geben Sie im Feld "Raster" einen Wert ein.
+4. Geben Sie im Feld "Beschreibung" einen Wert ein.
+5. Wählen Sie im Feld "Typ" eine Option aus.
+6. Geben Sie im Feld 'Referenzeinstellungen' einen Wert ein, oder wählen Sie einen Wert aus.
+7. Geben Sie im Feld "Währung" einen Wert ein, oder wählen Sie einen Wert aus.
+8. Geben Sie im Feld "Währung" einen Wert ein.
+9. Geben Sie im Feld "Gültigkeitsdatum" ein Datum ein.
 
 ## <a name="add-levels-to-the-compensation-structure"></a>Level zur Vergütungsstruktur hinzufügen
-1. Klicken Sie auf **Vergütungsstruktur**.
+1. Klicken Sie auf "Vergütungsstruktur".
 2. Markieren Sie in der Liste die ausgewählte Zeile.
-3. Geben Sie im Feld **Level** einen Wert ein, oder wählen Sie einen Wert aus.
-4. Klicken Sie auf **Neu**.
+3. Geben Sie im Feld "Level" einen Wert ein, oder wählen Sie einen Wert aus.
+4. Klicken Sie auf Neu.
 5. Markieren Sie in der Liste die ausgewählte Zeile.
-6. Geben Sie im Feld **Level** einen Wert ein, oder wählen Sie einen Wert aus.
-7. Klicken Sie auf **Neu**.
+6. Geben Sie im Feld "Level" einen Wert ein, oder wählen Sie einen Wert aus.
+7. Klicken Sie auf Neu.
 8. Markieren Sie in der Liste die ausgewählte Zeile.
-9. Geben Sie im Feld **Level** einen Wert ein, oder wählen Sie einen Wert aus.
-10. Klicken Sie auf **Neu**.
+9. Geben Sie im Feld "Level" einen Wert ein, oder wählen Sie einen Wert aus.
+10. Klicken Sie auf Neu.
 11. Markieren Sie in der Liste die ausgewählte Zeile.
-12. Geben Sie im Feld **Level** einen Wert ein, oder wählen Sie einen Wert aus.
-13. Klicken Sie auf **Neu**.
+12. Geben Sie im Feld "Level" einen Wert ein, oder wählen Sie einen Wert aus.
+13. Klicken Sie auf Neu.
 14. Markieren Sie in der Liste die ausgewählte Zeile.
-15. Geben Sie im Feld **Level** einen Wert ein, oder wählen Sie einen Wert aus.
+15. Geben Sie im Feld "Level" einen Wert ein, oder wählen Sie einen Wert aus.
 
 ## <a name="fill-in-the-compensation-structure-with-values"></a>Füllen der Vergütungsstruktur mit Werten
 1. Markieren Sie in der Liste die ausgewählte Zeile.
     * An diesem Punkt können Vergütungswerte manuell in jedes Feld in der Tabelle eingegeben werden, oder die Massenänderungsfunktionen kann zum Eintragen von mehreren Felder und für grundlegende Berechnungen verwendet werden.  
-2. Klicken Sie auf **Massenänderung**.
+2. Klicken Sie auf "Massenänderung".
     * Bei diesem Raster wenden wir zuerst den Wert den Mittelwert der ersten Ebene auf alle Felder in der Tabelle an. Dies dient als Grundlage für die Vergütungsmatrix.  
-3. Wählen Sie im Feld **Regulierungstyp** eine Option aus.
-4. Geben Sie in das Feld **Anpassungsbetrag** eine Zahl ein.
+3. Wählen Sie im Feld "Regulierungstyp" eine Option aus.
+4. Geben Sie im Feld "Regulierungsbetrag" eine Zahl ein.
 5. Markieren Sie alle Zeilen in der Liste, oder heben Sie die Markierung auf.
-6. Klicken Sie auf **Anwendung auf Raster**.
+6. Klicken Sie auf "Auf Raster anwenden".
     * Jetzt verwenden wir die Massenänderungsfunktion, um die Beträge in jeder nächste Ebene über einen bestimmten Prozentsatz oder Betrag zu erhöhen. In diesem Beispiel hat jeder Grad einen Umfang von 12,5% zwischen den Mittelwerten.  
-7. Wählen Sie im Feld **Regulierungstyp** eine Option aus.
-8. Geben Sie in das Feld **Anpassungsbetrag** eine Zahl ein.
+7. Wählen Sie im Feld "Regulierungstyp" eine Option aus.
+8. Geben Sie im Feld "Regulierungsbetrag" eine Zahl ein.
 9. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-10. Klicken Sie auf **Anwendung auf Raster**.
+10. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
+11. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
+12. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
+13. Klicken Sie auf "Auf Raster anwenden".
+14. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
+15. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
+16. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
+17. Klicken Sie auf "Auf Raster anwenden".
+18. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
+19. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
+20. Klicken Sie auf "Auf Raster anwenden".
+21. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
+22. Klicken Sie auf "Auf Raster anwenden".
     * Jetzt verwenden wir die Massenänderungsfunktion, um die Mindest- und Höchstwerte für Referenzpunkte auf jede Ebene einzustellen. In diesem Beispiel wird ein Umfang von 50 % verwendet, so das der minimale Referenzpunkt um -20% und der maximale um +20% reguliert wird.  
-11. Geben Sie in das Feld **Anpassungsbetrag** eine Zahl ein.
-12. Geben Sie im Feld **Referenzpunkt** einen Wert ein, oder wählen Sie einen Wert aus.
-13. Markieren Sie alle Zeilen in der Liste, oder heben Sie die Markierung auf.
-14. Klicken Sie auf **Anwendung auf Raster**.
-15. Geben Sie in das Feld **Anpassungsbetrag** eine Zahl ein.
-16. Geben Sie im Feld **Referenzpunkt** einen Wert ein, oder wählen Sie einen Wert aus.
-17. Markieren Sie alle Zeilen in der Liste, oder heben Sie die Markierung auf.
-18. Klicken Sie auf **Anwendung auf Raster**.
+23. Geben Sie im Feld "Regulierungsbetrag" eine Zahl ein.
+24. Geben Sie im Feld 'Referenzpunkt' einen Wert ein, oder wählen Sie einen Wert aus.
+25. Markieren Sie alle Zeilen in der Liste, oder heben Sie die Markierung auf.
+26. Klicken Sie auf "Auf Raster anwenden".
+27. Geben Sie im Feld "Regulierungsbetrag" eine Zahl ein.
+28. Geben Sie im Feld 'Referenzpunkt' einen Wert ein, oder wählen Sie einen Wert aus.
+29. Markieren Sie alle Zeilen in der Liste, oder heben Sie die Markierung auf.
+30. Klicken Sie auf "Auf Raster anwenden".
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,26 +2,26 @@
 title: Deutsche Protokolldatei (GDPdU/GoBD) – Übersicht
 description: Unternehmen in Deutschland und in einigen anderen Ländern/Regionen sind gesetzlich verpflichtet, einen Export von Finanzdaten in einer maschinenlesbaren Form bereitzustellen. Dieser Artikel beschreibt, wie die aktuelle Version von Microsoft Dynamics 365 Finance die Anforderungen der GDPdU/GoBD-Prüfungsdatei unterstützt. Er enthält außerdem Tabellen, die als Beispiele in elektronischen Berichterstellungskonfigurationen eingerichtet wurden.
 author: mrolecki
-ms.date: 03/11/2021
-ms.topic: overview
+manager: AnnBe
+ms.date: 07/25/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: kfend
-ms.custom:
-- "59201"
-- intro-internal
+ms.custom: 59201
 ms.search.region: Austria, Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f93bd6b9090fed9ce2e275911b9f749db0fc715b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9d69ab9750460ede3c5cad29b38a274ef3284a52
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984365"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962822"
 ---
 # <a name="german-audit-file-gdpdugobd-overview"></a>Deutsche Protokolldatei (GDPdU/GoBD) – Übersicht
 
@@ -212,49 +212,12 @@ In den folgenden Tabellen werden die allgemeinen Kreditorendatenstrukturdefiniti
 | 10  | LETZTER\_AUSGLEICHSBELEG | Zeichen   | Letzter Ausgleichsbeleg               | $VendTrans/LastSettleVoucher                              |
 | 11  | LETZTER\_AUSGLEICH       | Datum     | Letzter Ausgleich                     | $VendTrans/LastSettleDate                                 |
 | 12  | BUCHUNGSART              | Zeichen   | Buchungsart                           | $VendTrans/TransType                                      |
-| 13  | Status                   | Zeichen   | Status                                | $VendTrans/Approved                                       |
+| 13  | STATUS                   | Zeichen   | Status                                | $VendTrans/Approved                                       |
 
-### <a name="fixed-assets"></a>Anlagevermögen
 
-Ab Version **33** der **Datenexportmodell**-Konfiguration wird der Export von Anlagendaten unterstützt.
+## <a name="additional-information"></a>Weitere Informationen
 
-In den folgenden Tabellen werden die allgemeinen Anlagendatenstrukturdefinitionen angezeigt.
-
-#### <a name="anlagen"></a>Anlagen
-
-| Anzahl | Feldname       | Feldtyp | Beschreibung                                 | Elektronischer Berichterstellungs-Datenquellen-Pfad |
-|------------|--------------------|-------------|--------------------------------------------------|-------------------------------------------|
-| 1          | ANLAGENNUMMER      | Zeichen     | Interne Nummer der Anlage                        | AssetTable/AssetId                        |
-| 2          | ANLAGENBEZEICHNUNG | Zeichen     | Bezeichnung der Anlage                           | AssetTable/Name                           |
-| 3          | ANLAGENGRUPPE      | Zeichen     | Gruppe, der die Anlage zugeordnet ist            | AssetTable/AssetGroup                     |
-| 4          | ANLAGENTYP         | Zeichen     | Typ der Anlage                                   | AssetTable/AssetType                      |
-| 5          | ANLAGENSTANDORT    | Zeichen     | Standort der Anlage                              | AssetTable/Location                       |
-| 6          | HAUPTANLAGE        | Zeichen     | Nummer der Anlage, der die Anlage zugeordnet ist | AssetTable/MainAssetId                    |
-| 7          | ANLAGENHERSTELLER  | Zeichen     | Hersteller der Anlage                            | AssetTable/Make                           |
-| 8          | ANLAGENMODELL      | Zeichen     | Modellnummer der Anlage                          | AssetTable/Model                          |
-| 9          | Status             | Zeichen     | Status der Anlage, ob vorhanden oder nicht       | AssetTable/\$AssetBook/Status             |
-
-#### <a name="anlagenbuchungen"></a>Anlagenbuchungen
-
-| Anzahl | Feldname       | Feldtyp | Beschreibung                                 | Elektronischer Berichterstellungs-Datenquellen-Pfad |
-|------------|-----------------|-------------|-----------------------------------------------|--------------------------------------------------------|
-| 1          | ANLAGENNUMMER   | Zeichen     | Interne Nummer der Anlage                     | \$AssetTransJoin/\$AssetTrans/AssetId                  |
-| 2          | WERTSTELLUNG    | Datum       | Datum der Wertstellung der Buchung            | \$AssetTransJoin/\$AssetTrans/TransDate                |
-| 3          | BELEGNUMMER     | Zeichen     | Interne Nummer des Buchungsbelegs             | \$AssetTransJoin/\$AssetTrans/Voucher                  |
-| 4          | BUCHUNGSBETRAG  | Num(2Dez)   | Betrag der Buchung                            | \$AssetTransJoin/\$AssetTrans/AmountCur                |
-| 5          | BUCHUNGSWÄHRUNG | Zeichen     | Währung der Buchung                           | \$AssetTransJoin/\$AssetTrans/CurrencyCode             |
-| 6          | BUCHUNGSWERT    | Num(2Dez)   | Wert der Buchung in Firmenwährung             | \$AssetTransJoin/\$AssetTrans/AmountMST                |
-| 7          | BUCHUNGSART     | Zeichen     | Art der Anlagenbuchung                        | \$AssetTransJoin/\$AssetTrans/TransType                |
-| 8          | BUCHUNGSTEXT    | Zeichen     | Text zur Anlagenbuchung                       | \$AssetTransJoin/\$AssetTrans/Txt                      |
-| 9          | ANLAGENGRUPPE   | Zeichen     | Gruppe, der die Anlagenbuchung zugeordnet ist | \$AssetTransJoin/\$AssetTrans/AssetGroup               |
-| 10         | BUCHUNGSEBENE   | Zeichen     | 0- Steuerbilanz; sonst: interne Buchungen     | \$AssetTransJoin/\$AssetBookTable/CurrentOperationsTax |
-
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
-
-- [Überblick über die elektronische Berichterstellung](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+- [Überblick über die elektronische Berichterstellung](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Deutsche Protokolldateikonfiguration importieren](./tasks/import-german-audit-file-configuration.md)
 - [Anpassen der deutschen Protokolldateikonfiguration](./tasks/customize-german-audit-file-configuration.md)
 - [Generieren Sie deutsche Protokolldatei](./tasks/german-audit-file.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

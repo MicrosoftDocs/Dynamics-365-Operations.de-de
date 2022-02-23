@@ -1,34 +1,33 @@
 ---
 title: Vergütungspläne
-description: In diesem Thema wird beschrieben, wie Sie mit der Vergütungsverwaltung Vergütungspläne verwalten und verarbeiten.
-author: twheeloc
-ms.date: 08/25/2021
-ms.topic: overview
+description: Manager Vergütungen und Leistungen können die Vergütungsverwaltung verwenden, um die festen und variablen Vergütungspläne für die Mitarbeiter der Organisation verwalten und verarbeiten.
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable, HcmCompensationWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
+ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 7571f220780ca383f57338bb69505cc68a741877
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b6dd163b0e956624eb57fa031b918a94609f9cfa
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066899"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418634"
 ---
 # <a name="compensation-plans"></a>Vergütungspläne
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Manager für Vergütungen und Leistungen können die **Vergütungsverwaltung** verwenden, um die festen und variablen Vergütungspläne für die Mitarbeiter der Organisation zu verwalten und zu verarbeiten.
+Manager Vergütungen und Leistungen können die Vergütungsverwaltung verwenden, um die festen und variablen Vergütungspläne für die Mitarbeiter der Organisation verwalten und verarbeiten.
 
 ### <a name="introduction"></a>Einführung
 
@@ -44,8 +43,8 @@ Die folgende Tabelle listet Komponenten des Vergütungsprozess auf, die Bestandt
 <table>
 <thead>
 <tr class="header">
-<th>Bestandteil</th>
-<th>Mehr erfahren</th>
+<th>Komponente</th>
+<th>Weitere Informationen...</th>
 </tr>
 </thead>
 <tbody>
@@ -91,7 +90,7 @@ Die folgende Tabelle listet Komponenten des Vergütungsprozess auf, die Bestandt
 </tr>
 <tr class="even">
 <td>Kontrollpunkt</td>
-<td>Der Kontrollpunkt definiert, wie der ideale Lohnsatz für alle Mitarbeiter einer Vergütungsstufe aussieht. Bei bewerteten Planungsstrukturen stellen die Kontrollpunkte üblicherweise die Bereichsmitte dar. Bei flexiblen Strukturen wird nur selten auf Kontrollpunkte zurückgegriffen. Sie können den Kontrollpunkt für einen Plan für feste Vergütung auf der Seite **Pläne für feste Vergütung** angeben.</td>
+<td>Der Kontrollpunkt definiert, wie der ideale Lohnsatz für alle Mitarbeiter einer Vergütungsstufe aussieht. Bei bewerteten Planungsstrukturen stellen die Kontrollpunkte üblicherweise die Bereichsmitte dar. Bei flexiblen Strukturen wird nur selten auf Kontrollpunkte zurückgegriffen. Sie können den Kontrollpunkt für einen Plan für feste Vergütung im Formular "Pläne für feste Vergütung" angeben.</td>
 </tr>
 <tr class="odd">
 <td>Stellenfunktionen</td>
@@ -123,7 +122,8 @@ Die folgende Tabelle listet Komponenten des Vergütungsprozess auf, die Bestandt
 ## <a name="process-events"></a>Prozessereignisse
 Ein Prozessereignis kalkuliert Vergütungsinformationen für eine bestimmte Periode für alle Mitarbeiter, die für einen oder mehrere Pläne mit fester oder variabler Vergütung registriert sind. Ein Prozessereignis kann mehrmals zum Testen oder Aktualisieren berechneter Vergütungsergebnisse ausgeführt werden.
 
-## <a name="compensation-events"></a>Vergütungsereignisse
+<a name="compensation-events"></a>Vergütungsereignisse
+-------------------
 
 Jedes Mal, wenn ein Prozessereignis ausgeführt wird, wird ein Kompensationsereignis erstellt.  Kompensationsereignisse enthalten die Ergebnisse des Kompensationsprozesses für jeden Mitarbeiter, das in diesen Prozessereignis enthalten ist.  Wenn die Berechnungen korrekt sind, können Sie das Prozessereignis laden, um die Vergütungsdatensätze für die Mitarbeiter zu aktualisieren, die vom Prozessereignis betroffen sind.
 
@@ -132,6 +132,3 @@ Nachdem Sie ein Prozessereignis ausgeführt haben, können Sie Anpassungen an Lo
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

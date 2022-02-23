@@ -1,14 +1,17 @@
 ---
 title: Verwalten von e-Commerce Benutzern und Rollen
-description: In diesem Thema wird erläutert, wie Sie Benutzern Zugriff auf die Erstellungsumgebung für Ihre Microsoft Dynamics 365 Commerce-Website gewähren.
+description: In diesem Thema wird erläutert, wie Sie Benutzern Zugriff auf die Erstellungsumgebung für Microsoft Dynamics 365 Commerce gewähren.
 author: bicyclingfool
+manager: AnnBe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,19 +19,19 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ff0d3e607eb905eb9264bbb9ba151fbd527a81a2c72252252f2a45edc201e1b4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9a1f9abae20d0f2e71790a3b27337338dc042b52
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715405"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412453"
 ---
 # <a name="manage-e-commerce-users-and-roles"></a>Verwalten von e-Commerce Benutzern und Rollen
 
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie Benutzern Zugriff auf die Erstellungsumgebung für Ihre Microsoft Dynamics 365 Commerce-Website gewähren.
+In diesem Thema wird erläutert, wie Sie Benutzern Zugriff auf die Erstellungsumgebung für Microsoft Dynamics 365 Commerce gewähren.
 
 In der Umgebung zur Site-Erstellung werden von Ihnen in Microsoft erstellte Sicherheitsgruppen verwendet, um den Benutzerzugriff zu steuern und Benutzern die Berechtigung zum Ausführen bestimmter Aufgaben zu erteilen, die Sie in Microsoft Azure Active Directory (Azure AD) erstellen. Zunächst weisen Sie jeder Rolle in der Erstellungsumgebung eine neue oder vorhandene Sicherheitsgruppe aus Azure AD zu. Anschließend erteilen oder widerrufen Sie Berechtigungen für einzelne Benutzer, indem Sie diese Benutzer einer entsprechenden Sicherheitsgruppe hinzufügen oder aus einer Sicherheitsgruppe entfernen.
 
@@ -68,6 +71,3 @@ Nachdem Ihre Site erstellt wurde, werden nur Benutzer in den Sicherheitsgruppen 
 [Überlegungen zur Suchmaschinenoptimierung (SEO) für Ihre Site](search-engine-optimization-considerations.md)
 
 [Verwalten der Inhaltssicherheitsrichtlinie](manage-csp.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

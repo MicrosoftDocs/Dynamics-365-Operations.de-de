@@ -2,23 +2,26 @@
 title: Vom Einzelvorgangskartengerät als erledigt melden
 description: In diesem Thema wird beschrieben, wie Sie das System so konfigurieren, dass Benutzer eines Einzelvorgangskartengeräts fertige Produkte aus einem Fertigungsauftrag an das Inventar melden können.
 author: johanhoffmann
+manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgRegistrationSetupTouch
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
-ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 2fa82c721316fb21442e1cfc00ba00ff8cb2b750
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: 6ba5d8bc0c22f97e6d2ce61c636090e04fae5abd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778230"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428635"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Vom Einzelvorgangskartengerät als erledigt melden
 
@@ -62,7 +65,7 @@ Das Einzelvorgangskartengerät unterstützt drei Szenarien für die Berichterste
 Damit Ihre Einzelvorgangskartengeräte während der Berichterstellung eine Chargennummer als abgeschlossen akzeptieren können, müssen Sie die [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um die folgenden Funktionen zu aktivieren (in dieser Reihenfolge):
 
 1. Verbesserte Benutzerfreundlichkeit für den Berichtsstatusdialog im Einzelvorgangs-Kartengerät
-1. Aktivieren, um Chargen- und Seriennummern einzugeben, während die Fertigmeldung vom Einzelvorgangs-Kartengerät abgeschlossen wird
+1. Aktivieren Sie diese Option, um Chargen- und Seriennummern einzugeben, während die Fertigmeldung vom Einzelvorgangs-Kartengerät (Vorschau) abgeschlossen wird
 
 ### <a name="configure-products-that-require-batch-number-reporting"></a>Produkte konfigurieren, die Chargennummernberichterstattung erfordern
 
@@ -85,13 +88,13 @@ Um Chargennummern manuell einzurichten, folgen Sie diesen Schritten, um ein Nach
 1. Erstellen oder wählen Sie die einzurichtende Nachverfolgungs-Nummerngruppe.
 1. Auf dem Inforegister **Allgemein** stellen Sie die Option **Manuell** auf **Ja** fest.
 
-    ![Eine Nachverfolgungs-Nummerngruppe für manuelle Chargennummern.](media/tracking-number-group-manual.png "Eine Nachverfolgungs-Nummerngruppe für manuelle Chargennummern")
+    ![Eine Nachverfolgungs-Nummerngruppe für manuelle Chargennummern](media/tracking-number-group-manual.png "Eine Nachverfolgungs-Nummerngruppe für manuelle Chargennummern")
 
 1. Stellen Sie andere Werte nach Bedarf ein und wählen Sie diese Nachverfolgungs-Nummerngruppe als Chargennummerngruppe für freigegebene Produkte aus, für die Sie dieses Szenario verwenden möchten.
 
 Wenn Sie dieses Szenario verwenden, wird das Feld **Chargennummer** **Fortschritt melden** auf der Seite auf dem Einzelvorgangskartengerät ein Textfeld anzeigen, in das Mitarbeiter einen beliebigen Wert eingeben können.
 
-![Fortschrittsseite mit einem Feld für manuelle Chargennummern melden.](media/job-card-device-batch-manual.png "Fortschrittsseite mit einem Feld für manuelle Chargennummern melden")
+![Fortschrittsseite mit einem Feld für manuelle Chargennummern melden](media/job-card-device-batch-manual.png "Fortschrittsseite mit einem Feld für manuelle Chargennummern melden")
 
 ### <a name="set-up-a-tracking-number-group-that-provides-a-list-of-predefined-batch-numbers"></a>Richten Sie eine Nachverfolgungs-Nummerngruppe ein, die eine Liste vordefinierter Chargennummern enthält
 
@@ -102,13 +105,13 @@ Um eine Liste vordefinierter Chargennummern einzurichten, folgen Sie diesen Schr
 1. Auf dem Inforegister **Allgemein** stellen Sie die Option **Nur für Bestandtransaktionen** auf **Ja** fest.
 1. Verwenden Sie das Feld **Pro Menge** zum Aufteilen der Chargennummern pro Menge, basierend auf dem von Ihnen eingegebenen Wert. Zum Beispiel haben Sie einen Fertigungsauftrag für zehn Stück und das Feld **Pro Menge** ist auf *2* festgesetzt. In diesem Fall werden dem Fertigungsauftrag beim Erstellen fünf Chargennummern zugewiesen.
 
-    ![Eine Nachverfolgungs-Nummerngruppe für vordefinierte Chargennummern.](media/tracking-number-group-predefined.png "Eine Nachverfolgungs-Nummerngruppe für vordefinierte Chargennummern")
+    ![Eine Nachverfolgungs-Nummerngruppe für vordefinierte Chargennummern](media/tracking-number-group-predefined.png "Eine Nachverfolgungs-Nummerngruppe für vordefinierte Chargennummern")
 
 1. Stellen Sie andere Werte nach Bedarf ein und wählen Sie diese Nachverfolgungs-Nummerngruppe als Chargennummerngruppe für freigegebene Produkte aus, für die Sie dieses Szenario verwenden möchten.
 
 Wenn Sie dieses Szenario verwenden, wird das Feld **Chargennummer**, das die Seite **Fortschritt melden** auf dem Einzelvorgangskartengerät bereitstellt, eine Dropdown-Liste anzeigen, in das Mitarbeiter einen beliebigen Wert eingeben können.
 
-![Fortschrittsseite mit einer Liste von vordefinierten Chargennummern.](media/job-card-device-batch-predefined.png "Fortschrittsseite mit einer Liste von vordefinierten Chargennummern")
+![Fortschrittsseite mit einer Liste von vordefinierten Chargennummern](media/job-card-device-batch-predefined.png "Fortschrittsseite mit einer Liste von vordefinierten Chargennummern")
 
 ### <a name="set-up-a-tracking-number-group-that-automatically-assigns-batch-numbers"></a>Richten Sie eine Nachverfolgungs-Nummerngruppe ein, die automatisch Chargennummern zuweist
 
@@ -119,13 +122,13 @@ Wenn Chargennummern ohne Eingabe durch den Mitarbeiter automatisch zugewiesen we
 1. Auf dem Inforegister **Allgemein** stellen Sie die Option **Nur für Bestandtransaktionen** auf **Nein** fest.
 1. Stellen Sie die Option **Manuell** auf **Nein** ein.
 
-    ![Eine Nachverfolgungs-Nummerngruppe für feste Chargennummern.](media/tracking-number-group-fixed.png "Eine Nachverfolgungs-Nummerngruppe für feste Chargennummern")
+    ![Eine Nachverfolgungs-Nummerngruppe für feste Chargennummern](media/tracking-number-group-fixed.png "Eine Nachverfolgungs-Nummerngruppe für feste Chargennummern")
 
 1. Stellen Sie andere Werte nach Bedarf ein und wählen Sie diese Nachverfolgungs-Nummerngruppe als Chargennummerngruppe für freigegebene Produkte aus, für die Sie dieses Szenario verwenden möchten.
 
 Wenn Sie dieses Szenario verwenden, wird das Feld **Chargennummer**, das die Seite **Fortschritt melden** anzeigt, auf dem Einzelvorgangskartengerät einem Wert anzeigen, aber die Mitarbeiter können diesen nicht bearbeiten.
 
-![Fortschrittsseite mit einem Feld für eine feste Chargennummern melden.](media/job-card-device-batch-fixed.png "Fortschrittsseite mit einem Feld für eine feste Chargennummern melden")
+![Fortschrittsseite mit einem Feld für eine feste Chargennummern melden](media/job-card-device-batch-fixed.png "Fortschrittsseite mit einem Feld für eine feste Chargennummern melden")
 
 ## <a name="report-serial-controlled-items-as-finished"></a>Seriengesteuerte Artikel als fertig melden
 
@@ -140,7 +143,7 @@ Das Einzelvorgangskartengerät unterstützt drei Szenarien für die Berichterste
 Damit Ihre Einzelvorgangskartengeräte während der Berichterstellung eine Seriennummer als abgeschlossen akzeptieren können, müssen Sie die [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um die folgenden Funktionen zu aktivieren (in dieser Reihenfolge):
 
 1. Verbesserte Benutzerfreundlichkeit für den Berichtsstatusdialog im Einzelvorgangs-Kartengerät
-1. Aktivieren, um Chargen- und Seriennummern einzugeben, während die Fertigmeldung vom Einzelvorgangs-Kartengerät abgeschlossen wird
+1. Aktivieren Sie diese Option, um Chargen- und Seriennummern einzugeben, während die Fertigmeldung vom Einzelvorgangs-Kartengerät (Vorschau) abgeschlossen wird
 
 ### <a name="configure-products-that-require-serial-number-reporting"></a>Produkte konfigurieren, die Seriennummernberichterstattung erfordern
 
@@ -165,7 +168,7 @@ Um Seriennummern manuell zuzuweisen, folgen Sie diesen Schritten, um ein Nachver
 1. Erstellen oder wählen Sie die einzurichtende Nachverfolgungs-Nummerngruppe.
 1. Auf dem Inforegister **Allgemein** stellen Sie die Option **Manuell** auf **Ja** fest.
 
-    ![Nachverfolgungs-Nummerngruppenseite, Seriennummern.](media/tracking-number-group-manual-serial.png "Nachverfolgungs-Nummerngruppenseite, Seriennummern")
+    ![Nachverfolgungs-Nummerngruppenseite, Seriennummern](media/tracking-number-group-manual-serial.png "Nachverfolgungs-Nummerngruppenseite, Seriennummern")
 
 1. Stellen Sie andere Werte nach Bedarf ein, und wählen Sie diese Nachverfolgungs-Nummerngruppe als Seriennummerngruppe für freigegebene Produkte aus, für die Sie dieses Szenario verwenden möchten.
 
@@ -174,7 +177,7 @@ Wenn Sie dieses Szenario verwenden, ist das Feld **Seriennummer**, das auf der S
 - Um eine Seriennummer als verschrottet zu markieren, wählen Sie die Schaltfläche **Ausschuss** für die entsprechende Zeile. Der Mitarbeiter wird aufgefordert, eine **Fehlerursache** anzugeben.
 - Um eine Seriennummer zu löschen, wählen Sie die Schaltfläche **Löschen** für die entsprechende Zeile.
 
-![Seite „Fortschritt melden“ mit einem Feld für manuelle Seriennummern.](media/job-card-device-serial-manual.png "Seite „Fortschritt melden“ mit einem Feld für manuelle Seriennummern")
+![Seite „Fortschritt melden“ mit einem Feld für manuelle Seriennummern](media/job-card-device-serial-manual.png "Seite „Fortschritt melden“ mit einem Feld für manuelle Seriennummern")
 
 ### <a name="set-up-a-tracking-number-group-that-provides-a-list-of-predefined-serial-numbers"></a>Eine Nachverfolgungs-Nummerngruppe einrichten, die eine Liste vordefinierter Seriennummern enthält
 
@@ -185,13 +188,13 @@ Um eine Liste vordefinierter Seriennummern anzugeben, folgen Sie diesen Schritte
 1. Auf dem Inforegister **Allgemein** stellen Sie die Option **Nur für Bestandtransaktionen** auf **Ja** fest.
 1. Verwenden Sie das Feld **Pro Menge** zum Teilen der Seriennummern pro Menge von eins.
 
-    ![Eine Nachverfolgungs-Nummerngruppe für vordefinierte Seriennummern.](media/tracking-number-group-predefined-sn.png "Eine Nachverfolgungs-Nummerngruppe für vordefinierte Seriennummern")
+    ![Eine Nachverfolgungs-Nummerngruppe für vordefinierte Seriennummern](media/tracking-number-group-predefined-sn.png "Eine Nachverfolgungs-Nummerngruppe für vordefinierte Seriennummern")
 
 1. Stellen Sie andere Werte nach Bedarf ein, und wählen Sie diese Nachverfolgungs-Nummerngruppe als Seriennummerngruppe für freigegebene Produkte aus, für die Sie dieses Szenario verwenden möchten.
 
 Wenn Sie dieses Szenario verwenden, ist das Feld **Seriennummer**, das auf der Seite **Fortschritt melden** auf dem Einzelvorgangskartengerät angezeigt wird, eine Dropdownliste, in der Mitarbeiter einen vordefinierten Wert auswählen müssen.
 
-![Seite „Fortschritt melden“ mit einer Liste von vordefinierten Seriennummern.](media/job-card-device-serial-predefined.png "Seite „Fortschritt melden“ mit einer Liste von vordefinierten Seriennummern")
+![Seite „Fortschritt melden“ mit einer Liste von vordefinierten Seriennummern](media/job-card-device-serial-predefined.png "Seite „Fortschritt melden“ mit einer Liste von vordefinierten Seriennummern")
 
 ### <a name="set-up-a-tracking-number-group-that-automatically-assigns-serial-numbers"></a>Eine Nachverfolgungs-Nummerngruppe einrichten, die automatisch Seriennummern zuweist
 
@@ -202,13 +205,13 @@ Wenn eine Seriennummer ohne Eingabe durch den Mitarbeiter automatisch zugewiesen
 1. Auf dem Inforegister **Allgemein** stellen Sie die Option **Nur für Bestandtransaktionen** auf **Nein** fest.
 1. Stellen Sie die Option **Manuell** auf **Nein** ein.
 
-    ![Eine Nachverfolgungs-Nummerngruppe für feste Seriennummern.](media/tracking-number-group-fixed-sn.png "Eine Nachverfolgungs-Nummerngruppe für feste Seriennummern")
+    ![Eine Nachverfolgungs-Nummerngruppe für feste Seriennummern](media/tracking-number-group-fixed-sn.png "Eine Nachverfolgungs-Nummerngruppe für feste Seriennummern")
 
 1. Stellen Sie andere Werte nach Bedarf ein, und wählen Sie diese Nachverfolgungs-Nummerngruppe als Seriennummerngruppe für freigegebene Produkte aus, für die Sie dieses Szenario verwenden möchten.
 
 Wenn Sie dieses Szenario verwenden, zeigt das Feld **Seriennummer**, das auf der Seite **Fortschritt melden** auf dem Einzelvorgangskartengerät angezeigt wird, einen Wert an, aber die Mitarbeiter können diesen nicht bearbeiten. Dieses Szenario ist nur relevant, wenn ein Fertigungsauftrag für eine Menge von einem Stück eines seriennummerngesteuerten Artikels erstellt wird.
 
-![Seite „Fortschritt melden“ mit einer festen Seriennummer.](media/job-card-device-serial-fixed.png "Seite „Fortschritt melden“ mit einer festen Seriennummer")
+![Seite „Fortschritt melden“ mit einer festen Seriennummer](media/job-card-device-serial-fixed.png "Seite „Fortschritt melden“ mit einer festen Seriennummer")
 
 ## <a name="report-as-finished-to-a-license-plate"></a>Als abgeschlossen an eine Kennzeichnung melden
 
@@ -218,7 +221,7 @@ Fortgeschrittene Lagerprozesse können die Kennzeichenabmessung verwenden, um de
 
 Um die in diesem Abschnitt beschriebenen Funktionen nutzen zu können, müssen Sie die [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um die folgenden Funktionen zu aktivieren (in dieser Reihenfolge):
 
-1. Kennzeichen für die Meldung als fertig zum Einzelvorgangslistengerät hinzugefügt (Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert.)
+1. Das Kennzeichen für Fertigmeldung wurde zum Einzelvorgangslistengerät hinzugefügt.
 1. Aktivieren Sie die automatische Generierung der Kennzeichennummer, wenn die Berichtserstellung im Einzelvorgangskartengerät abgeschlossen wurde
 1. Beschriftung vom Einzelvorgangs-Kartengerät aus drucken
 
@@ -232,10 +235,7 @@ Führen Sie die folgenden Schritte aus, um zu steuern, ob Mitarbeiter eine vorha
     - **Kennzeichen erstellen** – Setzen Sie diese Option auf **Ja**, um jedes Mal eine neue Kennzeichnung für jeden Bericht als beendet zu melden. Legen Sie es auf **Nein** fest, wenn eine bestehende Kennzeichnung als beendet verwendet werden soll.
     - **Etikett drucken** – Legen Sie diese Option auf **Ja** fest, wenn eine Arbeitskraft ein Kennzeichenetikett für jeden Bericht als beendet drucken muss. Legen Sie es auf **Nein** fest, wenn kein Etikett erforderlich ist. 
 
-![Einzelvorgangsliste für Geräteseite.](media/config-job-card-raf.png "Einzelvorgangsliste für Geräteseite")
+![Einzelvorgangsliste für Geräteseite](media/config-job-card-raf.png "Einzelvorgangsliste für Geräteseite")
 
 > [!NOTE]
 > Um das Etikett zu konfigurieren, gehen Sie zu **Lagerortverwaltung \> Einstellung \> Dokumentrouting \> Dokumentrouting**. Weitere Informationen finden Sie unter [Aktivieren Sie das Drucken von Kennzeichenetiketten](../warehousing/tasks/license-plate-label-printing.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

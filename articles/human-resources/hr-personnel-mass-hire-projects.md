@@ -1,33 +1,31 @@
 ---
 title: Masseneinstellungsprojekte
-description: Dieses Thema beschreibt Masseneinstellungsprojekte, die es dem Personalverwaltungsspezialisten erlauben, mehrere Positionen zu erstellen und effektiv mehrere Arbeitskräfte für diese Positionen einzustellen.
-author: twheeloc
-ms.date: 10/28/2021
+description: Masseneinstellungsprojekte ermöglichen dem Personalverwaltungsspezialisten mehrere Positionen zu erstellen und effektiv mehrere Arbeitskräfte für diese Positionen einzustellen.
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMMassHireProject, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.custom: 7481
 ms.assetid: 5f5eb271-76eb-4305-bd1c-5d171dafccc9
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fcfc973dc9acea624336f059d68562fa5eb41353
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 9f33fb96e9a2331499a594689a758694c2291368
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070200"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418694"
 ---
 # <a name="mass-hire-projects"></a>Masseneinstellungsprojekte
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -46,19 +44,19 @@ Verwenden Sie Masseneinstellungsprojekte, wenn Sie mehrere Arbeitskräfte gleich
 
 Im Sommer stellen Sie normalerweise 15-20 Teilzeitstudenten ein, die verfügbare Praktikantenstellen in Ihrem Unternehmen ausfüllen. In diesem Jahr möchten Sie fünf Buchhalter, fünf Auftragsbearbeiter und fünf Kassierer einstellen. Anstatt jeden Positionsdatensatz und Arbeitskraftdatensatz separat zu erstellen, erstellen Sie ein Masseneinstellungsprojekt mit der Bezeichnung "SummerInterns". Anfangs- und Enddatum des Projekts entsprechen dem Anfangs- und Enddatum der Dauer der Positionen, die Sie für das Masseneinstellungsprojekt erstellen.
 
-Wählen Sie auf der Seite **Masseneinstellungsprojekte** das Projekt **SummerInterns** aus und klicken Sie auf **Projekt öffnen**. Wählen Sie im geöffneten Masseneinstellungsprojekt auf **Positionen erstellen** aus und geben Sie Informationen zur Buchhalterposition ein. Sie können angeben, dass fünf Buchhalterpositionen erstellt und für jede dieselben Informationen verwendet werden sollen. Wählen Sie dann **OK** aus. Wiederholen Sie diesen Vorgang für die Auftragssachbearbeiter- und Kassiererpositionen.
+Wählen Sie auf der Seite **Masseneinstellungsprojekte** das Projekt “SummerInterns” aus und klicken Sie auf **Projekt öffnen**. Klicken Sie im geöffneten Masseneinstellungsprojekt auf **Positionen erstellen**, und geben Sie Informationen zur Buchhalterposition ein. Sie können angeben, dass fünf Buchhalterpositionen mithilfe derselben Informationen erstellt werden sollten. Klicken Sie anschließend auf "OK". Wiederholen Sie diesen Vorgang für die Auftragssachbearbeiter- und Kassiererpositionen.
 
-Nachdem Sie Studenten für die Praktikumspositionen ausgewählt haben, geben Sie die Informationen jedes Studenten unter Positionsdetails für die Position ein, für die sie eingestellt werden. Wenn Sie alle Positionsdetails eingegeben haben, wählen Sie die Position auf der Seite **Masseneinstellungsprojekte** aus, und wählen Sie dann **Einstellen** aus. Für jede Position wird ein Positionsdatensatz erstellt und für jede Person, die Sie einstellen, wird ein Arbeitskraftdatensatz erstellt und der richtigen Position zugewiesen.
+«»Nachdem Sie Studenten für die Praktikumspositionen ausgewählt haben, geben Sie die Informationen jedes Studenten unter **Positionsdetails** für die Position ein, für die sie eingestellt werden. Wenn Sie alle Positionsdetails eingegeben haben, wählen Sie die Position auf der Seite "Masseneinstellungsprojekte" aus, und dann klicken Sie auf **Einstellen**. Für jede Position wird ein Positionsdatensatz erstellt, und für jede Person, die Sie einstellen, wird ein Arbeitskraftdatensatz erstellt und der richtigen Position zugewiesen.
 
 ## <a name="mass-hire-project-statuses"></a>Status eines Masseneinstellungsprojekts
 
 Ein Masseneinstellungsprojekt kann folgende Status besitzen.
 
-- Erstellt am
-- Öffnen
+- Erstellt
+- Geöffnet
 - Geschlossen
 
-Wählen Sie auf der Seite **Masseneinstellungsprojekt** **Projekt öffnen** oder **Projekt schließen** aus, um den Status eines Masseneinstellungsprojekts zu ändern. In der folgenden Tabelle wird erläutert, welche Möglichkeiten Sie im Hinblick auf den Projektstatus haben:
+Klicken Sie auf der Seite **Masseneinstellungsprojekt** auf **Projekt öffnen** oder **Projekt schließen**, um den Status eines Masseneinstellungsprojekts zu ändern. In der folgenden Tabelle wird erläutert, welche Möglichkeiten Sie im Hinblick auf den Projektstatus haben:
 
 <table>
 <thead>
@@ -78,12 +76,9 @@ Wählen Sie auf der Seite **Masseneinstellungsprojekt** **Projekt öffnen** oder
 </tr>
 <tr>
 <td>Geschlossen</td>
-<td><p>Sie können dem Projekt keine Positionen hinzufügen. Wenn Sie dem Masseneinstellungsprojekt Positionen hinzufügen möchten, öffnen Sie das Projekt erneut. Dies ist der Status für abgeschlossene Projekte.</p>
-<p><strong>Hinweis:</strong> Ein Masseneinstellungsprojekt kann erst geschlossen werden, wenn alle Positionen im Projekt entweder den Status <b>Erstellt</b> oder den Status <b>Geschlossen</b> haben.</p>
+<td>Sie können dem Projekt keine Positionen hinzufügen. Wenn Sie dem Masseneinstellungsprojekt Positionen hinzufügen möchten, öffnen Sie das Projekt erneut. Dies ist der Status für abgeschlossene Projekte.
+<blockquote>[!NOTE] Ein Masseneinstellungsprojekt kann erst geschlossen werden, wenn alle Positionen im Projekt entweder den Status "Erstellt" oder den Status "Geschlossen" haben.</blockquote>
 </td>
 </tr>
 </tbody>
 </table>
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

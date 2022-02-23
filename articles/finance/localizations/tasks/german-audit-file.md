@@ -2,22 +2,25 @@
 title: Generieren Sie deutsche Protokolldatei
 description: Diese Prozedur führt Sie durch das Generieren einer deutschen Protokolldatei.
 author: mrolecki
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 426e7dc08f7930728cde7a96d0ee529e66bc6cd0fdd5972ae66cc27d6d6c3128
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a93b89627b95a4a6343a88efb1487351fe69927b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757948"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407745"
 ---
 # <a name="generate-german-audit-file"></a>Generieren Sie deutsche Protokolldatei
 
@@ -38,6 +41,3 @@ Im folgenden Verfahren sehen Sie, wie die deutsche Protokolldatei generiert wird
 9. Geben Sie in das Feld "Periode - Bis Datum" ein Datum ein.
 10. Klicken Sie auf "OK".
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

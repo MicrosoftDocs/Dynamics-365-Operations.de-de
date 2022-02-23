@@ -1,10 +1,12 @@
 ---
 title: Zugriff auf Anwendungs-Metadaten über verbundene Anwendungen
-description: Die Schritte in diesem Thema erläutern, wie ein Regulatory Configuration Service-Benutzer eine neue Modellzuordnung für elektronische Berichterstellung entwerfen kann, indem er Metadaten verwendet.
+description: Die Schritte in diesem Thema erläutern, wie ein Regulatory Configuration Service (RCS) Benutzer eine neue Modellzuordnung für elektronische Berichterstellung (ER) entwerfen kann, indem er die Metadaten in Finance and Operations verwendet.
 author: NickSelin
+manager: AnnBe
 ms.date: 06/29/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -13,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6d99ca41a9a24ef8ac0fe31e703cad79d41216fa726fa1d354ac19db90706954
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 751ac21dc056373e1cd89a5149bf38789134e0cc
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776023"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682140"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Zugriff auf Anwendungs-Metadaten über verbundene Anwendungen
 
 [!include [banner](../../includes/banner.md)]
 
-In den folgenden Schritten wird erläutert, wie ein Regulatory Configuration Service (RCS)-Benutzer mit der Systemadministratorrolle oder der Rolle „Entwickler für elektronische Berichterstellung“ eine neue Modellzuordnung für „Elektronische Berichterstellung (ER)“ entwerfen kann, indem er die Metadaten in Finance and Operations. Zugriff auf Anwendungs-Metadaten erfolgt online über die RCS verbundene Anwendungen. Beispiel-ER-Modellzuordnung wird konfiguriert, um auf Außenhandelstransaktionen zuzugreifen. Um diese Schritte auszuführen, müssen Sie in RCS zunächst die Schritte im Thema [Konfigurationsanbieter erstellen und als aktiv markieren](er-configuration-provider-mark-it-active-2016-11.md) abschließen. Wenn Sie die Schritte im Thema [Zugriff auf Anwendungs-Metadaten über die ER-Konfiguration](access-application-metadata-er-configuration.md) abgeschlossen haben, fahren Sie mit der [Beispielseite für elektronische Berichterstellung](https://download.microsoft.com/download/0/4/e/04e13839-e423-442b-a6c2-dd35b1045c2d/Dynamics%20365%20for%20Finance%20and%20Operations%208.1%20Electronic%20reporting%20task%20guides.zip) fort, um die folgenden ER-Konfigurationen herunterzuladen und dann zu speichern: Außenhandelsmetadaten.xml; Außenhandelsmodel.xml; Außenhandelszuordnung.xml und führen Sie dann die Schritte in der Prozedur aus.
+In den folgenden Schritten wird erläutert, wie ein Regulatory Configuration Service (RCS)-Benutzer mit der Systemadministratorrolle oder der Rolle „Entwickler für elektronische Berichterstellung“ eine neue Modellzuordnung für „Elektronische Berichterstellung (ER)“ entwerfen kann, indem er die Metadaten in Finance and Operations. Zugriff auf Anwendungs-Metadaten erfolgt online über die RCS verbundene Anwendungen. Beispiel-ER-Modellzuordnung wird konfiguriert, um auf Außenhandelstransaktionen zuzugreifen. Um diese Schritte auszuführen, müssen Sie in RCS zunächst die Schritte im Thema [Konfigurationsanbieter erstellen und als aktiv markieren](er-configuration-provider-mark-it-active-2016-11.md) abschließen. Wenn Sie die Schritte im Thema [Zugriff auf Anwendungs-Metadaten über die ER-Konfiguration](access-application-metadata-er-configuration.md) abgeschlossen haben, fahren Sie mit der [Beispielseite für elektronische Berichterstellung](https://go.microsoft.com/fwlink/?linkid=862266) fort, um die folgenden ER-Konfigurationen herunterzuladen und zu speichern: Außenhandelsmetadaten.xml; Außenhandelsmodel.xml; Außenhandelszuordnung.xml und führen Sie dann die Schritte in der Prozedur aus.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 1. Wechseln Sie zu **Alle Arbeitsbereiche** > **Elektronische Berichterstellung**. 
@@ -111,6 +113,3 @@ In den folgenden Schritten wird erläutert, wie ein Regulatory Configuration Ser
 11. Schließen Sie die Seite. 
 
 Wenn Sie diese Modellzuordnung überprüfen müssen, indem Sie Metadaten einer anderen Versionsanwendung verwenden, registrieren Sie eine andere verbundene Anwendung, weisen Sie sie dieser Modellzuordnung zu und prüfen Sie sie anhand der neuen Metadaten.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

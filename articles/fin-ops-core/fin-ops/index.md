@@ -1,25 +1,27 @@
 ---
 title: Finance and Operations-Anwendungsdokumentation
 description: Dokumentation für Finance and Operations-Apps.
-author: tonyafehr
-ms.date: 04/13/2021
+author: robinarh
+manager: AnnBe
+ms.date: 07/25/2019
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User
-ms.reviewer: tfehr
-ms.custom: intro-internal
+ms.reviewer: rhaertle
+ms.custom: 62303
 ms.search.region: Global
-ms.author: tfehr
+ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf2278cbf47c5fd2937e7da55c8777709ab7d356
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: a44324a14a78174ad4d68e6686c523c49d7aa3bd
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075396"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694384"
 ---
 # <a name="finance-and-operations-application-documentation"></a>Finance and Operations-Anwendungsdokumentation
 
@@ -44,7 +46,7 @@ Ein Großteil dieses Inhalts gilt auch für die zugehörigen Produkte: Dynamics 
  <p><a href="get-started/purchase-on-premises.md">Finance and Operations (on-premises) kaufen</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Implementierungslebenszyklus</a></h3>
-<p><a href="/dynamics365/fasttrack/">FastTrack for Dynamics 365</a></p>
+<p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
 <p><a href="imp-lifecycle/onboard.md">Onboarding eines Projekts</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Vorbereiten der Liveschaltung</a></p>
 
@@ -65,7 +67,7 @@ Ein Großteil dieses Inhalts gilt auch für die zugehörigen Produkte: Dynamics 
 <h3><a href="../dev-itpro/data-entities/integration-overview.md">Integrationen</a></h3>
 <p><a href="../dev-itpro/business-events/home-page.md">Geschäftsereignisse</a></p>
 <p><a href="../dev-itpro/data-entities/data-entities.md">Datenentitäten</a></p>
-<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integration mithilfe von Microsoft Power Automate</a></p>
+<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integration mit Microsoft Power Automate</a></p>
 
 <h3><a href="../../finance/index.md">Finanzverwaltung</a></h3>
 <p><a href="../../finance/accounts-payable/accounts-payable.md">Kreditorenkonten</a></p>
@@ -76,22 +78,20 @@ Ein Großteil dieses Inhalts gilt auch für die zugehörigen Produkte: Dynamics 
 <p><a href="../../finance/cost-accounting/cost-accounting-home-page.md">Kostenrechnung</a></p>
 <p><a href="../../finance/fixed-assets/fixed-assets.md">Anlagen</a></p>
 <p><a href="../../finance/general-ledger/general-ledger.md">Hauptbuch</a></p>
-<p><a href="/dynamics365/project-operations/prod-pma/overview-project-management-accounting">Projektverwaltung</a></p>
+<p><a href="../../finance/project-management/overview-project-management-accounting.md">Projektverwaltung</a></p>
 <p><a href="../../finance/public-sector/public-sector-functionality.md">Öffentlicher Sektor</a></p>
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Regionale gesetzliche Besonderheiten</a></p>
 
-<h3><a href="hr/hr-landing-page.md">Human Resources</a></h3>
-<p><a href="../../human-resources/hr-employee-manager-self-service-overview.md">Mitarbeiter-Self-Service</a></p>
-<p><a href="../../human-resources/hr-personnel-departments-jobs-positions.md">Personalverwaltung</a></p>
-<p><a href="../../human-resources/hr-leave-and-absence-overview.md">Beurlaubung und Abwesenheit</a></p>
-<p><a href="../../human-resources/hr-benefits-manage-program.md">Vergütungen</a></p>
-<p><a href="../../human-resources/hr-develop-performance-management-overview.md">Mitarbeiterentwicklung</a></p>
-<p><a href="../../human-resources/hr-learning-courses.md">Weiterbildung</a></p>
- <p><a href="hr/localizations/noam-usa-payroll.md">US-Lohn</a></p>
+<h3><a href="hr/hr-landing-page.md">Personalverwaltung</a></h3>
+<p><a href="../../human-resources/hr-benefits-manage-program.md">Vorteile</a></p>
+<p><a href="../../human-resources/hr-develop-performance-management-overview.md">Mitarbeiterentwicklung und -schulung</a></p>
+<p><a href="../../human-resources/hr-learning-questionnaires.md">Fragebögen</a></p>
+<p><a href="hr/manage-recruiting-process.md">Personalbeschaffung</a></p>
+<p><a href="hr/localizations/noam-usa-payroll.md">US-Lohn</a></p>
 
 </td>
 <td>
-<h3><a href="../../supply-chain/index.md">Supply Chain Management</a></h3>
+<h3><a href="../../supply-chain/index.md">Lieferkettenverwaltung</a></h3>
 <p><a href="../../supply-chain/cost-management/costing-sheets.md">Kostenverwaltung</a></p>
 <p><a href="../../supply-chain/inventory/inventory-home-page.md">Lagerverwaltung</a></p>
 <p><a href="../../supply-chain/master-planning/master-plans.md">Produktprogrammplanung</a></p>
@@ -128,11 +128,16 @@ Ein Großteil dieses Inhalts gilt auch für die zugehörigen Produkte: Dynamics 
 </td>
 <td>
 <h3>Zugehörige Produkte</h3>
-<h4><a href="/dynamics365/commerce/">Dynamics 365 Commerce</a></h4>
-<p><a href="../../commerce/call-center-functionality.md">Callcenter</p>
-<p><a href="../../commerce/define-maintain-retail-channels.md">Kanaleinrichtung und -verwaltung</p>
-<p><a href="../../commerce/retail-peripherals-overview.md">MPOS und Cloud POS</p>
-<p><a href="../../commerce/dev-itpro/dev-retail-home-page.md">Commerce-Entwickler und -Verwaltung</p>
+<h4><a href="../../retail/index.md">Dynamics 365 Commerce</a></h4>
+<p><a href="../../retail/call-center-functionality.md">Callcenter</p>
+<p><a href="../../retail/define-maintain-retail-channels.md">Kanaleinrichtung und -verwaltung</p>
+<p><a href="../../retail/retail-peripherals-overview.md">MPOS und Cloud POS</p>
+<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Commerce-Entwickler und -Verwaltung</p>
+
+<h4><a href="../../human-resources/hr-welcome.md">Dynamics 365 Human Resources</a></h4>
+<p><a href="../../human-resources/hr-admin-overview.md">Administratorhandbuch</a></p>
+<p><a href="../../human-resources/hr-developer-overview.md">Entwicklerhandbuch</a></p>
+<p><a href="../../human-resources/hr-hrpro-overview.md">Benutzerhandbuch</a></p>
 
 
 </td>
@@ -140,6 +145,3 @@ Ein Großteil dieses Inhalts gilt auch für die zugehörigen Produkte: Dynamics 
 
 </tbody>
 </table>
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

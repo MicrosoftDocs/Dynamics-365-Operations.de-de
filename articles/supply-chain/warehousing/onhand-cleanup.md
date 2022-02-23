@@ -2,9 +2,11 @@
 title: Einzelvorgang zur Eingangsbereinigung bei der Lagerortverwaltung
 description: In diesem Thema wird der Bereinigungsjob für vorhandene Einträge beschrieben, mit dem die Systemleistung verbessert werden kann, indem verwandte, aber nicht benötigte Datensätze identifiziert und gelöscht werden.
 author: perlynne
+manager: tfehr
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
@@ -12,17 +14,15 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
-ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: d839ed861a24f6ef7267c85e942c275586b4a8c4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.12
+ms.openlocfilehash: f045b9686bbdfcf3e82f5158f0fd28860354b7d7
+ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565095"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5014482"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Einzelvorgang zur Eingangsbereinigung bei der Lagerortverwaltung
-
-[!include [banner](../includes/banner.md)]
 
 Die Leistung von Abfragen, die zur Berechnung des Lagerbestands verwendet werden, wird durch die Anzahl der Datensätze in den beteiligten Tabellen beeinflusst. Eine Möglichkeit zur Verbesserung der Leistung besteht darin, die Anzahl der Datensätze zu verringern, die die Datenbank berücksichtigen muss.
 
@@ -62,6 +62,3 @@ Standardmäßig ist die Einstellung **Maximale Ausführungszeit** nicht verfügb
 
 - **Module:** *Lagerortverwaltung*
 - **Funktionsname:** *Maximale Ausführungszeit für den Bereinigungsvorgang für Lagereinträge*
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

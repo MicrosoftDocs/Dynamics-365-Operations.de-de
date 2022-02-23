@@ -2,9 +2,11 @@
 title: Bilder hochladen
 description: In diesem Thema wird beschrieben, wie Sie Bilder in Microsoft Dynamics 365 Commerce Site Builder hochladen können.
 author: psimolin
-ms.date: 12/03/2021
+manager: annbe
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,18 +17,20 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3b99aeff7eafd788c19204e22dbfc61f45b25408
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
+ms.openlocfilehash: 69b812c58739357dfdb3f9e65e34e5d54d890284
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891521"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963009"
 ---
 # <a name="upload-images"></a>Bilder hochladen
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie Bilder in Microsoft Dynamics 365 Commerce Site Builder hochladen können.
+
+## <a name="overview"></a>Übersicht
 
 Die Medienbibliothek des Commerce-Site-Builders ermöglicht Ihnen das Hochladen von Bildern, entweder einzeln oder in großen Mengen mit Hilfe von Ordnern. Sie sollten immer die Version des Bildes mit der höchsten Auflösung und Qualität hochladen, da die Image Resizer-Komponente das Bild automatisch für verschiedene Ansichtsfenster und deren Haltepunkte optimiert.
 
@@ -41,8 +45,7 @@ Beim Hochladen eines Bildes können die folgenden Informationen angegeben werden
 - **Assets nach dem Hochladen veröffentlichen**: Wenn dieses Kontrollkästchen aktiviert ist, werden das Bild oder die Bilder sofort nach dem Hochladen veröffentlicht.
 
 > [!NOTE]
-> - Bild-Assets mit einer zugewiesenen Kategorie werden auch automatisch mit der Kategorie als Schlüsselwort versehen, um die Suche nach Assets einer bestimmten Kategorie zu erleichtern.
-> - Produktdetailseiten generieren dynamisch den **Alt-Text** mit dem Produktnamen, das Ändern des **Alt-Texts** für ein Produktbild hat also keinen Einfluss auf das gerenderte Bild.
+> Bild-Assets mit einer zugewiesenen Kategorie werden auch automatisch mit der Kategorie als Schlüsselwort versehen, um die Suche nach Assets einer bestimmten Kategorie zu erleichtern.
 
 ### <a name="naming-conventions-for-omni-channel-images"></a>Namenskonventionen für Omni-Channel-Bilder 
 
@@ -53,17 +56,9 @@ Die Standardnamenskonvention variiert je nach Kategorie:
 - Kategoriebilder sollten „**/Categories/\{CategoryName\}.png**“ genannt werden
 - Kundenbilder sollten „**/Customers/\{CustomerNumber\}.jpg**“ genannt werden
 - Bilder von Mitarbeitern sollten „**/Workers/\{WorkerNumber\}.jpg**“ genannt werden
-- Produktbilder sollten "**/Products/\{ProductNumber\}\_000_001.png**" genannt werden.
+- Produktbilder sollten „**/Products/\{ProductNumber\}_000_001.png**“ genannt werden
     - 001 ist die Bildfolge und kann 001, 002, 003, 004 oder 005 sein
-- Produktvariantenbilder sollten „**/Produkte/\{Produktnummer\} \^ \{Stil\} \^ \{Größe\} \^ \{Farbe\} \^\_000_001.png**“ benannt werden.
-    - Zum Beispiel: 93039 \^ &nbsp;\^ 2 \^ Schwarz \^\_000_001.png
-- Bilder von Produktvarianten mit Dimensionen der Konfiguration sollten "**/Products/\{ProductNumber\} \^ \{Configuration\}\_000_001.png**" genannt werden
-    - Zum Beispiel: 93039 \^ LB8017_000_001.png
-
-> [!NOTE]
-> Bei Bildern von Produktvarianten müssen, wenn der Wert für die Dimensionen leer ist, zwei Leerzeichen zwischen den Carets im Dateinamen stehen.
-
-Die obigen Beispiele verwenden die Standardkonfiguration. Das Trennzeichen und die Dimensionen sind konfigurierbar und die genaue Benennung kann zwischen den Bereitstellungen variieren. Eine Methode, die genaue erforderliche Namenskonvention zu ermitteln, ist die Verwendung der Entwicklerkonsole des Browsers, um die Bildanfragen für die Produktvariante zu untersuchen, während die Produktdimensionen auf der Produktdetailseite (PDP) der Storefront geändert werden.
+- Produktvariantenbilder sollten „**/Products/\{ProductNumber\}\_\{Size\}\_\{Color\}\_\{Style\}\_000_001.png**“ genannt werden
 
 ## <a name="upload-an-image"></a>Ein Bild hochladen
 
@@ -101,6 +96,3 @@ Gehen Sie folgendermaßen vor, um einen Ordner mit Bildern in Site Builder hochz
 [Bildfokuspunkte anpassen](dam-custom-focal-point.md)
 
 [Statische Dateien hochladen und bedienen](upload-serve-static-files.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

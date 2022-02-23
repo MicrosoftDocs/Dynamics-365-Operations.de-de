@@ -2,9 +2,11 @@
 title: Aktivitätssuche
 description: Dieser Artikel beschreibt die Aktivitätssuchfunktion. Mit der Aktivitätssuche finden Sie Aktivitäten auf einer Seite und können diese ausführen.
 author: jasongre
+manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6277c37ac43b8cc05c8b53da5ca0a1909f58c4f9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: dd9962451e8b72677e1a006dd9c1b8b8b268c93e
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070033"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798646"
 ---
 # <a name="action-search"></a>Aktivitätssuche
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Dieser Artikel beschreibt die Aktivitätssuchfunktion. Mit der Aktivitätssuche finden Sie Aktivitäten auf einer Seite und können diese ausführen.
 
@@ -34,7 +33,7 @@ Dieser Artikel beschreibt die Aktivitätssuchfunktion. Mit der Aktivitätssuche 
 
 Seiten enthalten hauptsächlich Befehle in Aktivitätsbereichen, sowohl im Standardaktivitätsbereich am Anfang einer Seite als auch auf den Symbolleisten, die in verschiedenen Bereichen der Seite angezeigt werden. In den Vorgängerversionen konnte mit einer Tippfunktion schnell auf jede Schaltfläche im Aktivitätsbereich zugegriffen werden, indem Sie die Taste ALT und eine Reihe von Buchstaben drückten.
 
-[![keyTipsAX6.](./media/keytipsax6.png)](./media/keytipsax6.png)
+[![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png)
 
 Die Funktion „Aktivitätssuche“ ersetzt die entscheidenden Tipps, die nicht mehr verfügbar sind. Mit dieser neuen Funktion können Sie schnell nach einer Schaltfläche suchen und sie von jedem sichtbaren Aktivitätsbereich ausführen.
 
@@ -48,7 +47,7 @@ Um die Funktion „Aktivitätssuche“ zu verwenden, führen Sie die folgenden S
 
 Nachdem die Schaltfläche ausgeführt wird, kehrt der Fokus auf Ihre letzte Position auf der Seite zurück, sodass Sie mit der Arbeit fortfahren können.
 
-[![Suchfeld „Aktivität“.](./media/action-search-field.png)](./media/action-search-field.png)
+[![Suchfeld Aktivität](./media/action-search-field.png)](./media/action-search-field.png)
 
 Sie können die Aktivitätssuche auch starten, indem Sie Strg+/ oder ALT+Q drücken. Drücken Sie die Tastenkombination erneut, um den Fokus zu Ihrer letzten Position auf der Seite zurückzukehren.
 
@@ -64,11 +63,11 @@ Oft müssen Sie die Position und den Kontext einer Schaltfläche kennen, um den 
 
 Beispielsweise haben Sie **tot** in das Feld **Aktivitätssuche** eingegeben und überprüfen nun die Ergebnisliste. Der erste Eintrag, für eine Schaltfläche mit der Bezeichnung **Summen** wird markiert. Ein Schaltflächenpfad der **Ansicht** &gt; **Auftrag** wird auch angezeigt. Der Teil **Auftrag** des Pfades entspricht der Registerkarte **Auftrag** im Aktivitätsbereich **Ansicht**, und der Teil des Pfades entspricht der Gruppe **Ansicht** auf dieser Registerkarte. Ebenso informiert Sie der Pfad der Schaltfläche **Rechnungsrabatt** (**Verkaufen** &gt; **Berechnen**), dass die Schaltfläche in der Gruppe **Berechnen** auf der Registerkarte **Verkaufen** im Aktivitätsbereich ist. Daher können diese Informationen Ihnen genau veranschaulichen, welche Schaltfläche nach Aktivitätssuche ausgelöst wird (falls diese Schaltfläche in der Ergebnisliste ausgewählt ist).
 
-[![Feld „Aktivitätssuche“ mit Daten.](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png)
+[![Aktivität-Suche-Feld-mit Daten](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png)
 
 Im vorherigen Beispiel ergibt sich die angezeigte Aktivitätssuche vom Standardaktivitätsbereich oben einer Seite. Allerdings zeigt die Aktivitätssuche auch Ergebnisse aus sichtbaren Symbolleisten an, die sich an anderen Stellen auf der Seite befinden. So finden Sie die Schaltfläche für **Verfügbarer Lagerbestand**, die auf dem Inforegister **Auftragspositionen** ist. In diesem Fall informiert der Schaltflächenpfad in der Ergebnisliste (**Auftragspositionen** &gt; **Lager** &gt; **Ansicht**) Sie, dass die Schaltfläche unter Überschrift **Ansicht** in der Menüschaltfläche **Bestand** im Inforegister **Auftragspositionen** ist.
 
-[![Verfügbarer Lagerbestand.](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
+[![Verfügbarer Lagerbestand](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
 > [!NOTE]
 > Es gibt einige Schaltflächen, die in der Aktionssuche nicht angezeigt werden. Dazu gehören Schaltflächen für den Drop-Dialog und Schaltflächen aus Unterformularen. 
@@ -76,6 +75,3 @@ Im vorherigen Beispiel ergibt sich die angezeigte Aktivitätssuche vom Standarda
 ## <a name="action-search-vs-navigation-search"></a>Aktivitätssuche im Vergleich zur Navigationssuche
 
 Während die Aktivitätssuche vorgesehen ist, um Aktivitäten auf einer Seite zu suchen und auszuführen, gibt es einen separaten Suchenmechanismus für die Suche und zum Navigieren zu Seiten. Weitere Informationen zu dieser Funktion finden Sie im Artikel [Navigationssuche](navigation-search.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,30 +2,35 @@
 title: Hinzufügen eines Favicons
 description: In diesem Thema wird erläutert, wie ein favicon der Site hinzufügt wird.
 author: bicyclingfool
+manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 080ef4da7313bd6b9d91e616f576b3ff774509d9
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 262e478d426fd913130b21a3434331c7d27b54b2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964731"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412499"
 ---
 # <a name="add-a-favicon"></a>Hinzufügen eines Favicons
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird erläutert, wie ein favicon der Site hinzufügt wird.
+
+## <a name="overview"></a>Übersicht
 
 Ein favicon ist eine kleine Grafikdatei, die auf einer Webbrowserregisterkarte im Browserverlauf der Adressleiste sowie in Lesezeichen oder in den Favoriten angezeigt wird. Es wird empfohlen, ein favicon dem Standort hinzufügen, da es Ihre Marke darstellt und verstärkt und hilft, den Standort von anderen Websites, die Ihre Kunden suchen, zu unterscheiden.
 
@@ -61,7 +66,7 @@ Um ein Fragment zu erstellen, das ein Metatag für Ihr Favicon enthält, folgen 
 1. Wählen Sie im Dialogfeld **Neues Fragment** die Option **Metatags** als das Modul aus, auf dem das Fragment basiert.
 1. Geben Sie einen Namen für das Fragment ein, und wählen Sie dann **OK** aus.
 1. Wählen Sie in der Fragmenthierarchiestruktur das untergeordnete Element **Standard-Metatags** aus.
-1. Im rechten Bereich unter **Metatags** wählen Sie **Hinzufügen** aus, und geben Sie dann die HTML-Zeichenfolge ein, die Sie zuvor für das Favicon erstellt haben. 
+1. Im rechten Bereich unter **Metatags** wählen Sie **Hinzufügen** aus, und geben Sie dann die HTML-Zeichenfolge ein, die Sie zuvor für das Favicon erstellt haben. 
 1. Wählen Sie **Bearbeiten beenden** aus, und wählen Sie dann **Veröffentlichen** aus, um das Fragment zu veröffentlichen.
 
 ## <a name="add-the-metatag-fragment-to-the-html-head-section-of-your-pages"></a>Fügen Sie das Metatag-Fragment zum HTML-Kopfbereich Ihrer Seiten hinzu
@@ -82,9 +87,11 @@ Wenn Sie Seiten in der Vorschau anzeigen, die auf der Vorlage basieren, der Sie 
 
 [Hinzufügen eines Logos](add-logo.md)
 
-[Sitedesign auswählen](select-site-theme.md)
+[Auswählen eines Sitedesigns](select-site-theme.md)
 
 [Arbeiten mit CSS-Überschreibungsdateien](css-override-files.md)
+
+[Hinzufügen einer Begrüßungsnachricht](add-welcome-message.md)
 
 [Hinzufügen eines Urheberrechtshinweises](add-copyright-notice.md)
 
@@ -92,6 +99,3 @@ Wenn Sie Seiten in der Vorschau anzeigen, die auf der Vorlage basieren, der Sie 
 
 [Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie](add-telemetry.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

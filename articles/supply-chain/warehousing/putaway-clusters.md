@@ -2,22 +2,25 @@
 title: Clustereinlagerung
 description: Einlagerungs-Cluster bieten eine Möglichkeit, mehrere Ladungsträger gleichzeitig zu entnehmen und diese dann an verschiedenen Lagerplätzen einzulagern. Sie können sehr nützlich für Einzelhandelsgeschäfte sein, bei denen Ladungsträger in der Regel keine vollen Paletten mit Bestand darstellen.
 author: Mirzaab
+manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c3496d43fa3791f765abfb1eb25c45f1f21b972f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: 6a330ddccbd17c92443232fc8488e36a59235773
+ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573008"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "4512329"
 ---
 # <a name="putaway-clusters"></a>Clustereinlagerung
 
@@ -228,7 +231,7 @@ Dieses Szenario simuliert die Clustereinlagerungs-Verarbeitung.
 
 #### <a name="receive-and-sort-the-inventory-into-a-cluster"></a>Bestand empfangen und in ein Cluster einsortieren
 
-1. Melden Sie sich bei der Warehouse Management Mobile App als Benutzer an, der auf den Lagerort *61* eingestellt ist.
+1. Melden Sie sich bei der Lagerort App als ein Benutzer an, der für Lagerort *61* festgelegt ist.
 1. Wählen Sie im Hauptmenü **Eingang**.
 1. Wählen Sie im Menü **Eingang** die Option **Cluster empfangen und sortieren**.
 1. Geben Sie im Feld **Ponum** die Nummer der Einkaufsbestellung ein.
@@ -270,7 +273,7 @@ Bevor die Elemente des Clusters eingelagert werden können, muss der Cluster ges
 
 #### <a name="put-the-cluster-away"></a>Einlagern des Clusters
 
-1. Melden Sie sich bei der Warehouse Management Mobile App als Benutzer an, der auf den Lagerort *61* eingestellt ist.
+1. Melden Sie sich bei der Lagerort App als ein Benutzer an, der für Lagerort *61* festgelegt ist.
 1. Wählen Sie im Hauptmenü **Eingang**.
 1. Wählen Sie im Menü **Eingang** die Option **Clustereinlagerung**.
 1. Wählen Sie **Cluster-ID**, und geben Sie die Cluster-ID ein, die Sie zuvor für den geschlossenen Cluster eingegeben haben.
@@ -284,7 +287,7 @@ Bevor die Elemente des Clusters eingelagert werden können, muss der Cluster ges
 
     Sie haben die Standardoptionen, um diesen Schritt zu überschreiben oder zu übergehen.
 
-    ![Clustereinlagerung: Seite einlagern.](media/Cluster_putaway-Put.png "Clustereinlagerung: Seite einlagern")
+    ![Clustereinlagerung: Seite einlagern](media/Cluster_putaway-Put.png "Clustereinlagerung: Seite einlagern")
 
 1. Wählen Sie **OK**, um die Clustereinlagerung zu bestätigen.
 
@@ -293,6 +296,3 @@ Bevor die Elemente des Clusters eingelagert werden können, muss der Cluster ges
 ## <a name="notes-and-tips"></a>Hinweise und Tipps
 
 In Fällen, in denen die Cluster-ID zum übergeordneten Ladungsträger für eine verschachtelte Palette wird, wird die Einlagerungsposition automatisch angegeben, wenn die Cluster-ID gescannt wird. Es muss kein weiteres Ladungsträger-Kennzeichen gescannt werden, auch wenn die Kennzeichenerstellung auf manuell festgelegt ist.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

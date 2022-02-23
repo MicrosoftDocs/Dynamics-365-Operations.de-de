@@ -1,42 +1,36 @@
 ---
 title: Abdeckungsoptionen erstellen
-description: Dieses Thema beschreibt die Deckungsoptionen in Microsoft Dynamics 365 Human Resources für die Wahl eines Teilnehmers in einem Leistungsplan oder Programm.
-author: twheeloc
-ms.date: 08/24/2021
+description: Abdeckungsoptionen in Microsoft Dynamics 365 Human Resources sind Deckungsgrade für die Wahl eines Teilnehmers in einem Leistungsplan oder -programm.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 01eb0c56578cf6f6b070c4a05768ec5361993555
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 8690dbe00c2316ccf745f5222c3cbaa9c3379f85
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065867"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418722"
 ---
 # <a name="create-coverage-options"></a>Abdeckungsoptionen erstellen
 
+Abdeckungsoptionen in Microsoft Dynamics 365 Human Resources sind Deckungsgrade für die Wahl eines Teilnehmers in einem Leistungsplan oder -programm. Zu den Deckungsoptionen könnten beispielsweise gehören **Nur für Mitarbeiter** für einen medizinischen Plan oder **2x Gehalt** für eine Lebensversicherung. Nach der Definition können Sie die Optionen für die Leistungsdeckung wiederverwenden. Sie können eine Option einem oder mehreren Plänen zuordnen.
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
+Nachdem Sie die Abdeckungsoptionen definiert haben, hängen Sie die Abdeckungsoptionen an einen Vorteilsplantyp an. Der Plantyp wird dann einem Vorteilsplan oder ‑programm zugeordnet. Abdeckungsoptionen, die einem Plantyp zugeordnet sind, sind für alle Pläne verfügbar, die mit diesem Plantyp erstellt wurden. 
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Die Deckungsoptionen bestimmen, wer versichert werden soll oder wie viel Deckung in einem Versicherungsplan verfügbar ist. Für einen medizinischen Plan könnten Sie z. B. eine Option **Nur Mitarbeiter**, eine Option **Mitarbeiter + 1** und eine Option **Familie** haben. Für Lebensversicherungen bieten Sie möglicherweise Deckung für **1x Gehalt** oder **2x Gehalt**.
-
-Nachdem die Optionen für die Leistungsdeckung definiert sind, können Sie diese wiederverwenden. Sie können eine Option einem oder mehreren Plänen zuordnen.
-
-> [!IMPORTANT]
-> Nachdem Sie die Abdeckungsoptionen definiert haben, hängen Sie die Abdeckungsoptionen an einen Vorteilsplantyp an. Der Plantyp wird dann einem Vorteilsplan oder ‑programm zugeordnet. Abdeckungsoptionen, die einem Plantyp zugeordnet sind, sind für alle Pläne verfügbar, die mit diesem Plantyp erstellt wurden.
-
-## <a name="create-coverage-options"></a>Abdeckungsoptionen erstellen
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Einstellung** die Option **Abdeckungsoptionen**.
 
 2. Wählen Sie **Neu** aus.
@@ -47,9 +41,9 @@ Nachdem die Optionen für die Leistungsdeckung definiert sind, können Sie diese
    | --- | --- |
    | **Abdeckungsoption** | Ein eindeutiger Name für die Abdeckungsoption. |
    | **Beschreibung** | Eine Beschreibung der Abdeckungsoption. |
-   | **Abdeckungscode** | Abdeckungscodes weisen Mindest‑ und Höchstbeträge für jede berechtigten abgedeckten Personentyp zu. Ein Abdeckungscode gibt an, wer abgedeckt ist oder was die zulässige Abdeckungssumme für einen Plantyp ist. Sie können die Abdeckungssumme als Dollarbetrag oder als Prozentsatz ausdrücken. Beispiel:<ul><li>**MA+1** – Um qualifiziert zu sein, muss für den Mitarbeiter ein Unterhaltsberechtigter ausgewählt sein (wenn mehr als einer ausgewählt ist, sind sie nicht mehr qualifiziert).</li><li>**MA+Familie** – Um qualifiziert zu sein, müssen für den Mitarbeiter mindestens zwei Unterhaltsberechtigte ausgewählt werden.</li></ul> |
+   | **Abdeckungscode** | Abdeckungscodes weisen Mindest‑ und Höchstbeträge für jede berechtigten abgedeckten Personentyp zu. Ein Abdeckungscode gibt an, wer abgedeckt ist oder was die zulässige Abdeckungssumme für einen Plantyp ist. Sie können die Abdeckungssumme als Dollarbetrag oder als Prozentsatz ausdrücken. Beispiel:</br></br>- **MA+1** – Um qualifiziert zu sein, muss für den Mitarbeiter ein Unterhaltsberechtigter ausgewählt sein (wenn mehr als einer ausgewählt ist, sind sie nicht mehr qualifiziert).</br></br>- **MA+Familie** – Um qualifiziert zu sein, müssen für den Mitarbeiter mindestens zwei Unterhaltsberechtigte ausgewählt werden. |
    | **Maximale Anzahl** | Die Höchstzahl der Unterhaltsberechtigten. |
-   | **Status** | Der Status der Abdeckungsoption. Wenn der Status der Option "Abdeckung" auf **Inaktiv** festgelegt ist, kann die Option "Abdeckung" bei Planarten nicht ausgewählt werden. |
+   | **Status** | Der Status der Abdeckungsoption. Wenn der Status der Abdeckungsoption auf „Inaktiv“ gesetzt ist, kann die Abdeckungsoption für die Plantypen nicht ausgewählt werden. |
    | **Prozentsatz** | Der Prozentbetrag. Dieses Feld ist nur aktiv, wenn im Feld „Abdeckungscode“ die Option „%% x Gehalt“ ausgewählt wurde. |
    | **Divisor** | Der Divisor, der für die Berechnung verwendet werden soll, wenn Sie den Abdeckungscode „%% x Gehalt“ auswählen. |
    | **Mindestprozentsatz** | Der minimale Prozentsatz, wenn Sie den Abdeckungscode „Prozent“ auswählen. |
@@ -61,10 +55,7 @@ Nachdem die Optionen für die Leistungsdeckung definiert sind, können Sie diese
 
    | Feld | Beschreibung |
    | --- | --- |
-   | **Mitarbeiterbeitragsbetrag zulassen** | Legt fest, ob es den Mitarbeitern erlaubt sein soll, die Beitragshöhe im Self-Service für Leistungen zu ändern, wenn sie Leistungen auswählen. Wenn Sie dieses Kontrollkästchen aktivieren, berechnet das System die Parameter des Leistungsplans auf der Basis des Beitragsbetrags, den der Mitarbeiter im Self-Service für Leistungen eingibt. |
-   | **Mitarbeiterdeckungsbetrag zulassen** | Gibt an, ob es Mitarbeitern erlaubt sein soll, den Deckungsbetrag im Self-Service für Leistungen zu ändern, wenn sie Leistungen auswählen. Wenn Sie dieses Kontrollkästchen aktivieren, berechnet das System die Vorteilsplanparameter basierend auf dem Abdeckungsbetrag, den der Mitarbeiter beim Mitarbeiter-Self-Service eingibt. |
+   | **Mitarbeiterbeitragsbetrag zulassen** | Gibt an, ob Mitarbeiter den Beitragsbetrag für den Vorteils-Self-Service ändern dürfen, wenn sie Vorteile auswählen. Wenn Sie dieses Kontrollkästchen aktivieren, berechnet das System die Vorteilsplanparameter basierend auf dem Beitragsbetrag, den der Mitarbeiter beim Vorteils-Self-Service eingibt. |
+   | **Mitarbeiterdeckungsbetrag zulassen** | Gibt an, ob Mitarbeiter den Abdeckungsbetrag für den Vorteils-Self-Service ändern dürfen, wenn sie Vorteile auswählen. Wenn Sie dieses Kontrollkästchen aktivieren, berechnet das System die Vorteilsplanparameter basierend auf dem Abdeckungsbetrag, den der Mitarbeiter beim Mitarbeiter-Self-Service eingibt. |
 
 6. Wählen Sie **Speichern**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

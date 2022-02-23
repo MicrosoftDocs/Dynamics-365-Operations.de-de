@@ -1,23 +1,26 @@
 ---
 title: Regulatorische Features
 description: Dieses Thema enthält eine Liste der geplanten und freigegebenen regulatorischen Updates für Microsoft Dynamics 365 Finance.
-author: VStamberg
-ms.date: 01/20/2022
+author: ShylaThompson
+manager: AnnBe
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Operations
 ms.search.region: Global
-ms.author: vastrup
+ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f4c9d82d882771c2b7131169615504613836def9
-ms.sourcegitcommit: 68655c5673aef9892063e5913ffee6bfc3817387
+ms.openlocfilehash: 46e9b3c3d47207715d0eee689913073d363f3af3
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "8016099"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517499"
 ---
 # <a name="regulatory-updates"></a>Regulatorische Features
 
@@ -25,7 +28,7 @@ ms.locfileid: "8016099"
 
 In diesem Thema werden die rechtlichen Aktualisierungen aufgelistet, die für von Dynamics 365 Finance unterstützten Lokalisierungen geplant sind und freigegeben werden. Lieferzeitpläne können sich ändern, und die geplante Funktionalität kann sich ändern oder nicht freigegeben werden. Weitere Informationen finden Sie unter [Microsoft-Richtlinie](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
 
-Gesetzlich Aktualisierungen sind Funktionen, die implementiert werden, um die neue oder geänderte landesspezifische Gesetzgebung zu unterstützen. Weitere Informationen zu geplanten und freigegebenen landesspezifischen Funktionen finden Sie in den [Dynamics 365- und Power Platform-Veröffentlichungshinweisen](/business-applications-release-notes/index).
+Gesetzlich Aktualisierungen sind Funktionen, die implementiert werden, um die neue oder geänderte landesspezifische Gesetzgebung zu unterstützen. Weitere Informationen zu geplanten und freigegebenen landesspezifischen Funktionen finden Sie in den [Dynamics 365- und Power Platform-Veröffentlichungshinweisen](https://docs.microsoft.com/business-applications-release-notes/index).
 
 Microsoft bemüht sich, neue gesetzliche Vorgaben so früh wie möglich zu implementieren. Das tatsächliche Lieferdatum hängt vom Gesetzesankündigungstag, der Verfügbarkeit der Anforderungsdetails von den lokalen Behörden, der Verfügbarkeit der Prüfungstools und von der Größe und von der Komplexität der Änderung ab.
 
@@ -38,42 +41,49 @@ Updates zu rechtlichen Bestimmungen, die als Teil der monatlichen Updates freige
 Die aktuellsten regulatorischen Aktualisierungspläne finden Sie in der folgenden Tabelle.   
 
 |Land|Freigabedatum|Version freigeben|Regulatorisches Update|
-|--------------------|---------------|-------|-------| 
-|      Australien         |   2021. Juni      | 10.0.21      |   AU – Payment Times Reporting Bill 2020 für Microsoft Dynamics 365 Finance   |
-|      Brasilien         |   Mai 2021. Februar 2021      | 10.0.20 – 10.0.19      |   NF-e NT2020.006 – Identifizierung des Zwischenbenutzers der digitalen Plattform (Aktualisierung der Layout- und Validierungsregeln)   |
-|      Brasilien         |   2021. März         | 10.0.19         |    SPED REINF-Layout 1.5.1  |
-|      Brasilien         |   April 2021         | 10.0.20        |    SPED ECD Layout 9  |
-|      Brasilien         |   Mai 2021         | 10.0.20         |    SPED-Beiträge – Versionsleitfaden 1.34  |
-|      Brasilien         |   2021. Juni         | 10.0.21         |    SPED ECF - Layout 7  |
-|      Brasilien         |   Mai 2021         | 10.0.20         |    NF-e NT2020.005 v1.10 – Validierungsregeln und Updates PED ECF – Layout 7  |
-|      Brasilien         |   Mai 2021         | 10.0.21         |    SPED Reinf 1.5.1 – Änderungen in der Webservice-Methode von EVENT 5011  |
-|      Frankreich        |   April 2021       | 10.0.20      |   Verbesserung des französischen Datenarchivierungsexports (FEC)  |
-|      Deutschland        |   2021. März       | 10.0.19      |   GDPDU-Erweiterungen für Tabelle und Transaktionen des Anlagevermögens  |
-|      Deutschland        |   April 2021       | 10.0.20HF      |   Änderungen im Format elektronischer Rechnungen (xRechnung) in Deutschland seit 2021  |
-|      Indien         |   2021. März      | 10.0.19      |   GST-E-Rechnungen: Exportaufträge, Erachteter Export, SEZ  |
-|      Indien         |   2021. März      | 10.0.19      |   Dynamics QR-Code auf B2C-Rechnung  |
-|      Indien         |   2021. Juni      | 10.0.21      |   Neue API-Version für E-Rechnung (v.1.04)  |
-|      Italien         |   2021. März      | 10.0.19      |   Änderungen des Formats der Rechnungskommunikation (Esterometro) v.2.1.1  |
-|      Italien        |   Mai 2021      | 10.0.19      |   Retail – Beispiel-Update für die steuerliche Druckerintegration zur Unterstützung von XML RT 2.0  |
-|      Italien         |   2021. März      | 10.0.19      |   Retail – Aktivieren Sie einzelhandelsspezifische Rechnungen, die gegen die chronologische Buchung verstoßen  |
-|      Italien         |   Februar 2021      | 10.0.19      |   Eindeutige Zertifizierung – 2021  |
-|      Oman         |   2021. Juni      | 10.0.21      |   MwSt.-Erklärung  |
-|      Polen          |   2021. Juni     | 10.0.21     |   JPK_V7M (VDEK) – Verbesserung der Verfahrenskennzeichnung |
-|      Polen          |   2021. Juli     | 10.0.21     |   JPK-V7M neue Regeln zum Ausfüllen ab Juli 2021 |
-|      Russische Föderation          |   2021. März     | 10.0.19    |   In der Grundsteuererklärung 2020 muss der durchschnittliche Jahreswert des beweglichen Anlagevermögens angegeben werden|
-|      Russische Föderation          |   2021. März     | 10.0.19HF    |   Gewinnsteuererklärung Version 5.09 für die Berichterstattung 2020|
-|      Russische Föderation          |   2021. März     | 10.0.19    |   Regierungsverordnung N 2200 21.12.2020 Antrag 4 neues Formular für Transportrechnung erforderlich|
-|      Russische Föderation          |   2021. Juni     | 10.0.21 HF, 10.0.20HF, 10.0.19 HF    |   Änderungen in druckbaren Layouts von Rechnungen und Korrekturfaktoren|
-|      Spanien          |   2021. Juli     | 10.0.21    |    OSS/IOSS-Szenario – ClaveRegimenEspecialOTrascendencia = 17- KB4623605|
-|      Schweden          |   2021. Juli     | 10.0.21    |    Format der Mehrwertsteuererklärung einschließlich Reverse-Charge-Beträge|
-|      Vereinigte Arabische Emirate   |   Mai 2021     | 10.0.20    |   Buchen der Zahlungserfassung mit vordatierten Schecks auf das Bankkonto |
+|--------------------|---------------|-------|-------|
+|      Österreich         |   2020. September      | 10.0.15      |   Das Format der Mehrwertsteuererklärung U30 wurde für die Erklärung 2020 aktualisiert   |
+|      Bahrain         |   2020. Juni      | 10.0.13      |   Rechnungsabgangsfrist (GCC)   |
+|      Bahrain         |   2020. September      | 10.0.13      |   Projektrechnung für Bahrain   |
+|      Bahrain         |   2020. Juni      | 10.0.13      |   Umsatzsteuererklärung für Bahrain – Transaktionsbeschreibung aktivieren   |   
+|      Brasilien         |   August 2020      | 10.0.14, 10.0.13      |   ADRCST-Meldung PR   |
+|      Brasilien         |   Mai 2020      | 10.0.13      |   SPED ECF Layout 6   |
+|      Brasilien         |   2020. Juli      | 10.0.13      |   SPED Fiscal – Datensatz C176 – RS-Status   |
+|      Brasilien         |   2020. Oktober      | 10.0.16, 10.0.15HF, 10.0.14HF, 10.0.13HF      |   NF-e NT2019.001 v1.51 – Annahme der Validierungsregeln für den Vorteilscode durch Distrito Federal   |
+|      Brasilien         |   2020. Oktober      | 10.0.16      |   SPED fiscal – Layout 015   |
+|      Brasilien         |   November 2020      | 10.0.15HF      |   SPED Fiscal ICMS/IPI-Datensatz C176-Update für RS-Status   |
+|      Brasilien         |   2020. Oktober      | 10.0.16      |   DRCST-Erklärung SC – SEF 262/2020   |
+|      Brasilien         |   2020. Oktober      | 10.0.16      |   SPED Fiscal ICMS/IPI-Datensatz C176   |
+|      Tschechische Republik      |   2020. Juli      | 10.0.13      |   Änderungen der Umsatzsteuererklärung im XML-Schema (Rechnungsliste)   |
+|      Tschechische Republik         |   2020. Juli      | 10.0.13      |   Umsatzsteuererklärung in XML, Vorschau der Umsatzsteuererklärung in Excel und XML-Formate für Umsatzsteuererklärungen basierend auf dem Steuererklärungsmodell   |
+|      Europa        |   August 2020       | 10.0.14      |   USt-IdNr. des Partners an Intrastat übertragen  |
+|      Finnland         |   2020. Juli       | 10.0.13      |   Unterstützung für elektronische Rechnungen für Finnland  |
+|      Indien         |   2020. Juli      | 10.0.13      |   TCS für den Verkauf von Waren gemäß Abschnitt 206C (1H) - Schwellenwert gemäß PAN-basierter Akkumulation von Transaktionen.  |
+|      Indien         |   August 2020, Juni 2020      | 10.0.13      |   Gutschrift/Lastschrift gegen Exportrechnung  |
+|      Indien         |   August 2020      | 10.0.13      |   Elektronische Rechnungen unter GST  |
+|      Indien         |   2020. Juli      | 10.0.13      |   Neues GSTR (ANX-1 und ANX-2)-Offlinetool (Betaversion)  |
+|      Indien         |   2020. Oktober      | 10.0.14HF, 10.0.13HF      |   E-Rechnung unter GST im Auftrage mit Bestandsübertrag für Indien|
+|      Indien         |   2020. Oktober      | 10.0.14HF, 10.0.13HF      |   E-Rechnung unter GST für Indien mit mehreren GSTIN-Registrierungen|
+|      Indien         |   2020. September      | 10.0.13HF      |   Quellensteuersatz in 3/5 Dezimalstellen|
+|      Indien         |   2020. September      | 10.0.14HF      |   Nummernkreisgruppe: „GSTNSG“, Transaktionstyp: „GST-Rechnung“, die für die GST-Referenznummernkreisgruppe der Steuerinformationen „0073“ eingerichtet werden soll|
+|      Italien         |   2020. Juli      | 10.0.13      |   Änderungen im Format italienischer elektronischer Rechnungen – FatturaPA |
+|      Malaysia         |   2020. Juli      | 10.0.13      |   SST-Bericht |
+|      Mexiko         |   2020. September      | 10.0.13HF      |   Speicherort des CFDI-URL-Schemas basierend auf dem Anexo 20-Dokument |
+|      Niederlande         |   2020. Oktober      | 10.0.16     |   Das Intrastat-Format wird ab 2021 aktualisiert |
+|      Norwegen         |   August 2020      | 10.0.14     |   SAF-T – Die Gruppierungsebene von Transaktionen nach „Beleg“ muss auf der Elementebene „Transaktion“ anstatt „Erfassung“ gemeldet werden |
+|      Polen          |   2020. September     | 10.0.14     |   Polen: JPK-V7M (VDEK) Excel-Format - als Ersatz für den SSRS-Bericht  |
+|      Polen          |   2020. Juli     | 10.0.15, 10.0.14HF, 10.0.13     |   Verbesserungen der freiwilligen Teilzahlung |
+|      Polen          |   2020. Oktober     | 10.0.13HF     |   Verbesserungen der obligatorischen Teilzahlung |
+|      Polen          |   November 2020     | 10.0.16, 10.0.15, 10.0.14, 10.0.13     |   JPK-V7M (VDEK) – Verkaufsbelegart FP und RO für Einzelhandelstransaktionen |
+|      Polen          |   2020. September     | 10.0.15     |   Polen: JPK-V7M (VDEK) – freischalten der Möglichkeit, die Berichterstellung nach Teilen auszuführen |
+|      Polen          |   2020. Oktober     | 10.0.16     |   JPK-V7M (VDEK)-Bericht – „Freiwillige geteilte Zahlung“-Parameterimplementierung |
+|      Russische Föderation          |   August 2020     | 10.0.14    |   Das Format der Rechnungslegung ändert sich ab dem Jahr 2020  |
+|      Russische Föderation          |   2020. Juli     | 10.0.13    |   Abschreibungsberechnung auf Basis der Anschaffungskosten und größeren Reparaturen unter Anwendung des Abschreibungsbonus in der Steuerbuchhaltung  |
+|      Russische Föderation          |   November 2020     | 10.0.16    |   Das Format der Mehrwertsteuererklärung wird ab der Berichterstattung für das vierte Quartal 2020 auf Version 5.07 aktualisiert|
 
 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
-- Weitere Informationen zu allen geplanten und veröffentlichten länderspezifischen regulatorischen Updates finden Sie unter [Suchen nach länderspezifischen regulatorischen Updates](search-for-regulatory-updates.md). (Anmeldung erforderlich.)
+- Alle geplanten und freigegebenen regulatorischen Updates finden Sie unter [Lifecycle Service - Problemsuche](https://lcs.dynamics.com/Logon/Index) (Anmeldung erforderlich).
 - Eine Liste der Lokalisierungen, die unterstützt werden, finden Sie unter [Internationaler Verfügbarkeitsleitfaden](https://aka.ms/dynamics_365_international_availability_deck).
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

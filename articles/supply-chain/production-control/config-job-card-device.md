@@ -2,23 +2,26 @@
 title: Einzelvorgangsliste für Geräte konfigurieren
 description: In diesem Thema werden die verschiedenen Optionen zum Konfigurieren der Einzelvorgangskartengeräts beschrieben.
 author: johanhoffmann
+manager: tfehr
 ms.date: 05/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgRegistrationSetupTouch, JmgRegistrationTouchUserConfiguration
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
-ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 0382e34664f20389c43e8dec4437f0078fa1f60a
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.12
+ms.openlocfilehash: e072f99b0b0df75f1b9706362b429bbc4568473a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777739"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428772"
 ---
 # <a name="configure-job-card-for-devices"></a>Einzelvorgangsliste für Geräte konfigurieren
 
@@ -34,21 +37,21 @@ Einige der in diesem Thema beschriebenen Einstellungen müssen auf Ihrem System 
 
 Um diese Funktion verfügbar zu machen, aktivieren Sie die folgenden Funktionen in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (um):
 
-1. Kennzeichen für die Meldung als fertig zum Einzelvorgangslistengerät hinzugefügt (Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert.)
+1. Das Kennzeichen für Fertigmeldung wurde zum Einzelvorgangslistengerät hinzugefügt.
 1. Aktivieren Sie die automatische Generierung der Kennzeichennummer, wenn die Berichtserstellung im Einzelvorgangskartengerät abgeschlossen wurde
 
 ### <a name="print-label"></a>Etikett drucken
 
 Um diese Funktion verfügbar zu machen, aktivieren Sie die folgenden Funktionen in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (um):
 
-1. Kennzeichen für die Meldung als fertig zum Einzelvorgangslistengerät hinzugefügt (Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert.)
+1. Das Kennzeichen für Fertigmeldung wurde zum Einzelvorgangslistengerät hinzugefügt.
 1. Beschriftung vom Einzelvorgangs-Kartengerät aus drucken
 
 ### <a name="allow-locking-of-touch-screen"></a>Sperren des Touchscreens zulassen
 
-Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Wenn Sie es nutzen möchten, überprüfen Sie, ob die folgende Funktion in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktiviert ist:
+Um diese Funktion verfügbar zu machen, aktivieren Sie die folgenden Funktionen in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-- Funktion zum Sperren von Jobkartengerät und Jobkartenterminal, damit sie saniert werden können
+- (Vorschau) Funktion zum Sperren des Einzelvorgangs-Kartengeräts und des Einzelvorgangs-Kartenterminals zur Desinfektion
 
 ## <a name="manage-your-device-configurations"></a>Ihre Gerätekonfigurationen verwalten
 
@@ -65,7 +68,7 @@ Mit dem Inforegister **Allgemein** können Sie die verschiedenen Optionen konfig
 
 - **Menge beim Ausstempeln melden** – Stellen Sie dies auf **Ja** ein, um die Mitarbeiter aufzufordern, beim Ausstempeln Feedback zu laufenden Vorgängen zu melden. Wird **Nein** eingestellt, werden Arbeiter nicht dazu aufgefordert.
 - **Mitarbeiter sperren** – Wenn diese Option auf **Nein** eingestellt ist, wird jeder Mitarbeiter sofort nach der Registrierung abgemeldet (z. B. ein neuer Auftrag), und das Gerät kehrt zur Anmeldeseite zurück. Wenn diese Option auf **Ja** eingestellt ist, bleibt jeder Mitarbeiter am Einzelvorgangsgerät angemeldet. Der Mitarbeiter kann sich jedoch weiterhin manuell abmelden, damit sich ein anderer Mitarbeiter anmelden kann, während das Einzelvorgangsgerät weiterhin unter demselben Systembenutzerkonto ausgeführt wird. Weitere Informationen zu diesen Arten von Konten finden Sie unter [Zugewiesene Benutzer](#assigned-users).
-- **Barcode-Scanner** - Legen Sie dies auf **Ja** fest, um eine Option auf dem Jobkartengerät bereitzustellen, die es den Arbeitskräften erlaubt, den Beginn eines neuen Auftrags durch Scannen eines Barcodes zu registrieren.
+- **Barcodelesegerät** – Stellen Sie dies auf **Ja** ein, um dem Einzelvorgangsgerät eine Option bereitzustellen, mit der Mitarbeiter den Start eines neuen Vorgangs durch Scannen eines Barcodes registrieren können.
 - **Verwenden Sie den tatsächlichen Zeitpunkt der Registrierung** – Stellen Sie dies auf **Ja** ein, um die Zeit für jede neue Registrierung so festzulegen, dass sie genau der Zeit entspricht, zu der die Registrierung von einem Arbeitnehmer eingereicht wurde. Auf **Nein** einstellen, um stattdessen die Anmeldezeit zu verwenden. Normalerweise möchten Sie diese auf **Ja** einstellen, wenn Sie die Optionen **Mitarbeiter sperren** und/oder **Einzelner Arbeiter** aktiviert haben, bei denen Mitarbeiter häufig länger angemeldet bleiben.
 - **Einzelne Arbeitskraft** – Setzen Sie diese Option auf **Ja**, wenn nur ein Mitarbeiter jedes Einzelvorgangsgerät verwendet, auf dem diese Konfiguration aktiv ist. Wenn diese Option ausgewählt ist, wird die Option **Mitarbeiter sperren** automatisch auf **Ja** festgelegt. Darüber hinaus entfällt mit dieser Option die Anforderung (und Fähigkeit), dass sich der Mitarbeiter mit einer Ausweis-ID (oder ähnlichem) anmelden muss. Stattdessen meldet sich der Mitarbeiter bei Supply Chain Management mit einem Systembenutzerkonto an, das mit einer *Zeit registrierten Arbeitskraft* (von der *Arbeitskräfte* Tabelle) verknüpft ist und gleichzeitig als diese Arbeitskraft am Einzelvorgangsgerät angemeldet wird.  Weitere Informationen zu diesen Arten von Konten finden Sie unter [Zugewiesene Benutzer](#assigned-users).
 - **Ermöglichen Sie den Mitarbeitern, persönliche Filter festzulegen** – Setzen Sie diese Option auf **Ja** damit Mitarbeiter die Vorgänge filtern können, die ihnen auf dem Gerät angezeigt werden. Die Arbeitskraft kann Werte für eines der drei Filterkriterien ändern: **Produktionseinheit**, **Ressourcengruppe** und **Ressource**. Auf dem Gerät werden nur Vorgänge angezeigt, die für Ressourcen geplant sind, die den ausgewählten Filterkriterien entsprechen. Sie können auch Standardwerte für eines oder alle dieser Kriterien zuweisen. Diese gelten auch dann, wenn diese Option nicht ausgewählt ist.
@@ -92,6 +95,3 @@ Wie bereits erwähnt, wenn Sie eine Gerätekonfiguration mit der Option **Einzel
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Vom Einzelvorgangskartengerät als erledigt melden](report-finished-job-device.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

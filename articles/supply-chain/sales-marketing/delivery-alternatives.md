@@ -1,27 +1,30 @@
 ---
 title: Alternative Lieferung
 description: Auftragsabnehmer können die Lieferungsalternativenseite verwenden, um alternative Auftragserfüllungsoptionen zu ermitteln.
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesLineDeliveryDetails
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 271623
 ms.assetid: 527f6084-44fe-41bb-924f-4386e926358a
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: f58f7923d82f3aa371ba916352211195870f9a75
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 48cc8974cc8a8769b3d05f47f82166164e877ae5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572624"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428746"
 ---
 # <a name="delivery-alternatives"></a>Alternative Lieferung
 
@@ -32,19 +35,17 @@ Auftragsabnehmer können die **Lieferungsalternativenseite** verwenden, um alter
 Die neute Seite **Alternative Lieferung** gibt ein besserer Überblick über alle alternativen Optionen. Die Personen, die den Auftrag entgegennehmen können auch hinter das aktuelle Unternehmen blicken, um mehr über die Erfüllungsverkaufschancen zu erfahren. Sie können nun Intercompany-Verkaufschancen und Verkaufschancen von externen Kreditoren anzeigen. Mithilfe der Funktion nach Lieferdatum sortieren, können Auftragsabnehmer eine intelligente Liste der Lieferalternativen anzeigen. Außerdem helfen Parameter, die vorgeschlagenen Lieferungen zu verwalten. Da die Transportzeit die Lieferdaten beeinflussen kann, können Auftragsabnehmer die verschiedenen Transportmöglichkeiten ansehen, die Spediteure anbieten. Da Detailinformationen zu jedem Vorschlag angezeigt werden, können Auftragsannehmer informierte Entscheidungen direkt über die Seite **Lieferalternativen durch Anzeigen** machen.
 
 ## <a name="open-the-delivery-alternatives-page"></a>Öffnen Sie die Lieferungsalternativeseite
-
 Sie können die Seite **Alternative Lieferung** aus der Auftragsposition öffnen.
 
-1. Wählen Sie **Produkte und Lieferung \> Lieferalternativen**.
-1. Wählen Sie **Positionsdetails \> Lieferung \> Lieferalternativen.**
+1.  Klicken Sie auf **Produkte und Lieferung** &gt; **Lieferalternativen**.
+2.  Klicken Sie auf &gt; **Positionsdetails** **Lieferung** &gt; **Lieferalternativen.**
 
-Sie können auch die Seite **Lieferalternativen** über den Arbeitsbereich **Auftragsverarbeitung und -abfrage** öffnen und dann **Bestellungen und Favoriten \> Verzögerte Auftragspositionen \> Lieferalternativen** auswählen. **Hinweis:** Sie können die Seite **Lieferalternativen** nur öffnen, wenn beide Bedingungen erfüllt sind:
+Sie können auch die Seite **Lieferalternativen** über den Arbeitsbereich **Abfrage Auftragsverarbeitung und -abfrage**. Klicken Sie dann auf **Bestellungen und Favoriten** &gt; **Verzögerte Auftragspositionen** &gt; **Lieferalternativen** **Hinweis:** Sie können die Seite **Lieferalternativen** nur öffnen, wenn beide Bedingungen erfüllt sind:
 
-- Alle zwingenden Verkaufspositionsinformationen sind ausgefüllt.
-- Das Feld **Lieferdatumskontrolle** ist auf einen anderen Wert als **None** festgelegt.
+-   Alle zwingenden Verkaufspositionsinformationen sind ausgefüllt.
+-   Das Feld **Lieferdatumskontrolle** ist auf einen anderen Wert als **None** festgelegt.
 
 ## <a name="delivery-date-control-methods"></a>Methoden für die Lieferdatumskontrolle
-
 Die Lieferdatumsteuermethode bestimmt, wie das System Versanddatum einrichtet, wie Lieferalternativen berechnet und welche Informationen angezeigt werden. Beachten Sie, dass die Lieferdatumskontrolle Kalender in Erwägung ziehen. Daher können die folgenden Kalender das vorgeschlagene Empfangsdatum betreffen: Kalender, der dem Lagerort zugeordnet ist, Transportkalender, Kreditorenkalender und Kundenkalender. Die folgende Tabelle beschreibt jede Methode zur Lieferdatumskontrolle.
 
 <table>
@@ -60,7 +61,7 @@ Die Lieferdatumsteuermethode bestimmt, wie das System Versanddatum einrichtet, w
 <tr class="even">
 <td><strong>Keines</strong></td>
 <td><ul>
-<li>Lieferalternativen für Verkaufspositionen werden nicht unterstützt. Diese Option deaktiviert die Lieferdatumssteuerung.</li>
+<li>Lieferalternativen für Verkaufspositionen werden nicht unterstützt. Diese Option deaktiviert die Lieferdatensteuerung.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -101,53 +102,54 @@ Die Lieferdatumsteuermethode bestimmt, wie das System Versanddatum einrichtet, w
 </table>
 
 ## <a name="view-information-about-delivery-alternatives"></a>Hier werden Informationen zu Lieferalternativen angezeigt
+Dieser Abschnitt beschreibt die Informationen zu den Lieferalternativen, die auf jeder Registerkarte auf der Seite **Lieferalternativen** verfügbar ist.
 
-Dieser Abschnitt beschreibt die Informationen zu den Lieferalternativen, die auf jedem Inforegister auf der Seite **Lieferalternativen** verfügbar ist.
+### <a name="products"></a>Produkte
 
-### <a name="the-product-fasttab"></a>Inforegister „Produkt“
+Diese Registerkarte zeigt eine Zusammenfassung des Produkts und Details der aktuellen Auftragsposition.
 
-Dieses Inforegister zeigt eine Zusammenfassung des Produkts und Details der aktuellen Auftragsposition.
+### <a name="delivery-alternatives"></a>Alternative Lieferung
 
-### <a name="the-delivery-alternatives-fasttab"></a>Das Inforegister „Lieferalternativen“
+Diese Registerkarte ist eine Liste von Lieferalternativen , die nach Empfangsdatum sortiert sind. Über der Liste können Sie auswählen, welche Optionen basierend auf den Vorschlägen, ausgewählt wird. Sie können auch die Lieferart auswählen, die die Transporttage bestimmt. Die folgenden Optionen sind verfügbar:
 
-Dieses Inforegister ist eine Liste von Lieferalternativen, die nach Empfangsdatum sortiert sind. Über der Liste können Sie auswählen, welche Optionen basierend auf den Vorschlägen, ausgewählt wird. Sie können auch die Lieferart auswählen, die die Transporttage bestimmt. Die folgenden Optionen sind verfügbar:
+-   **Schließen Sie andere Produktvarianten ein** - Diese Option ist auch für Produkte verfügbar, die Produktvarianten haben. Er umfasst Lieferalternativen für weitere Varianten des Produkts. Diese Option ist nicht für CTP verfügbar.
+-   **Schließen Sie Teilmenge ein** -, Standardmäßig sind nur Vorschläge verfügbar, die die gesamte Menge der Verkaufsposition einschließen. Wählen Sie diese Option, um Vorschläge einzubeziehen, die der Auftragsposition nur teilweise entsprechen. Diese Option ist hilfreich, wenn der Debitor ein früheres Lieferdatum anfordert und Teillieferung akzeptiert.
+-   **Schließen Sie ein späteres Datum** -, Standardmäßig werden nur Anforderungen berücksichtigt, die besser sind (früher) als das aktuelle Datum in der Verkaufsposition. Wählen Sie diese Option aus, um spätere Daten einzuschließen. Diese Option kann in den folgenden Situationen hilfreich sein, in dem Parameter nicht das Datum Priorität haben. So werden beispielsweise ein Kreditor oder ein bestimmter Lagerort bevorzugt werden.
+-   **Lieferart** - Wählen den bevorzugten Liefermodus, um Kosten und Transportzeiten zu optimieren. Sie finden die Auswirkungen sofort in den vorgeschlagenen Lieferalternativen. Daher ist es einfach, die Alternativen zu vergleichen.
+-   **Beschaffung einschließen** Wenn Beschaffung aktiviert ist, schließen die vorgeschlagenen Lieferalternativen Optionen ein, die sowohl Optionen für externe Kreditoren und andere Unternehmen in der Unternehmensgruppe (Intercompany) ein. Die Option **Beschaffung einschließen** wird für die VfZ-Kalkulation und die Lieferdatumssteuerung VfZ + Sicherheitszuschlag unterstützt. Beschaffungsoptionen vom Standardlieferanten für das Produkt und alle genehmigten Lieferanten für das Produkt sind eingeschlossen.
+-   Bei externen Kreditoren basiert die Berechnung auf Grundlage der Lieferzeit.
+-   Für Intercompany berücksichtigt die Berechung, was vom Beschaffungsunternehmen verfügbar ist, basierend auf der Lieferdatumskontrolle im Beschaffungsunternehmen.
+-   **Liefertyp** (Nur relevant für Beschaffung)
+    -   **Bestand** - Produkte werden vom Beschaffungslagerort zum Standort/Lagerort in der Verkaufsposition versendet. Sie werden dann von diesem Lagerort an den Kunden versendet.
+    -   **Direktlieferung** - Produkte werden direkt vom Beschaffungslagerort an den Kunden versendet.
 
-- **Schließen Sie andere Produktvarianten ein** - Diese Option ist auch für Produkte verfügbar, die Produktvarianten haben. Er umfasst Lieferalternativen für weitere Varianten des Produkts. Diese Option ist nicht für CTP verfügbar.
-- **Schließen Sie Teilmenge ein** -, Standardmäßig sind nur Vorschläge verfügbar, die die gesamte Menge der Verkaufsposition einschließen. Wählen Sie diese Option, um Vorschläge einzubeziehen, die der Auftragsposition nur teilweise entsprechen. Diese Option ist hilfreich, wenn der Debitor ein früheres Lieferdatum anfordert und Teillieferung akzeptiert.
-- **Schließen Sie ein späteres Datum** -, Standardmäßig werden nur Anforderungen berücksichtigt, die besser sind (früher) als das aktuelle Datum in der Verkaufsposition. Wählen Sie diese Option aus, um spätere Daten einzuschließen. Diese Option kann in den folgenden Situationen hilfreich sein, in dem Parameter nicht das Datum Priorität haben. So werden beispielsweise ein Kreditor oder ein bestimmter Lagerort bevorzugt werden.
-- **Lieferart** - Wählen den bevorzugten Liefermodus, um Kosten und Transportzeiten zu optimieren. Sie finden die Auswirkungen sofort in den vorgeschlagenen Lieferalternativen. Daher ist es einfach, die Alternativen zu vergleichen.
-- **Beschaffung einschließen** Wenn Beschaffung aktiviert ist, schließen die vorgeschlagenen Lieferalternativen Optionen ein, die sowohl Optionen für externe Kreditoren und andere Unternehmen in der Unternehmensgruppe (Intercompany) ein. Die Option **Beschaffung einschließen** wird für die VfZ-Kalkulation und die Lieferdatumssteuerung VfZ + Sicherheitszuschlag unterstützt. Beschaffungsoptionen vom Standardlieferanten für das Produkt und alle genehmigten Lieferanten für das Produkt sind eingeschlossen.
-- Bei externen Kreditoren basiert die Berechnung auf Grundlage der Lieferzeit.
-- Für Intercompany berücksichtigt die Berechung, was vom Beschaffungsunternehmen verfügbar ist, basierend auf der Lieferdatumskontrolle im Beschaffungsunternehmen.
-- **Liefertyp** (Nur relevant für Beschaffung)
-  - **Bestand** - Produkte werden vom Beschaffungslagerort zum Standort/Lagerort in der Verkaufsposition versendet. Sie werden dann von diesem Lagerort an den Kunden versendet.
-  - **Direktlieferung** - Produkte werden direkt vom Beschaffungslagerort an den Kunden versendet.
+### <a name="availability-information"></a>Verfügbarkeitsinformationen
 
-### <a name="the-availability-information-fasttab"></a>Das Inforegister „Verfügbarkeitsinformationen“
+Informationen in dieser Registerkarte beziehen sich auf die Lieferung alternativer ausgewählter Positionen. Die folgenden Informationen werden, je nach spezifischer Lieferdatumskontrolle für die Auftragsposition angezeigt:
 
-Informationen auf diesem Inforegister beziehen sich auf die Lieferung alternativer ausgewählter Positionen. Die folgenden Informationen werden, je nach spezifischer Lieferdatumskontrolle für die Auftragsposition angezeigt:
+-   **Verkaufslieferzeit**
+    -   **Verfügbar heute** - Zeigt den aktuellen physischen, physisch reservierten und physisch verfügbaren Bestand an.
+    -   **Parameter** - Zeigt die Bestandeinheit und die Verkaufslieferzeit.
 
-- **Verkaufslieferzeit**
-  - **Verfügbar heute** - Zeigt den aktuellen physischen, physisch reservierten und physisch verfügbaren Bestand an.
-  - **Parameter** - Zeigt die Bestandeinheit und die Verkaufslieferzeit.
+-   **VfZ und VfZ + Sicherheitszuschlag für Warenabgang**
+    -   **Verfügbar heute** - Zeigt den aktuellen physischen, physisch reservierten und physisch verfügbaren Bestand an.
+    -   **Parameter** - Zeigt die Bestandeinheit und die Verkaufslieferzeit.
+    -   **Künftige Verfügbarkeit** - Zeigt eine grafische Darstellung der aktuellen und künftigen Verfügbarkeit für den ausgewählten Standort und den Lagerort unter **Lieferalternativen**. Sie können auf die Diagrammspalten klicken, um ausführliche Informationen zur künftigen Verfügbarkeit des Produkts anzuzeigen. Der Schieberegler wird eine Liste relevanter Bedarfs- und Angebotaufträge innerhalb des VfZ-Planungszeitraums anzeigen.
 
-- **VfZ und VfZ + Sicherheitszuschlag für Warenabgang**
-  - **Verfügbar heute** - Zeigt den aktuellen physischen, physisch reservierten und physisch verfügbaren Bestand an.
-  - **Parameter** - Zeigt die Bestandeinheit und die Verkaufslieferzeit.
-  - **Künftige Verfügbarkeit** - Zeigt eine grafische Darstellung der aktuellen und künftigen Verfügbarkeit für den ausgewählten Standort und den Lagerort unter **Lieferalternativen**. Sie können die Diagrammspalten auswählen, um ausführliche Informationen zur künftigen Verfügbarkeit des Produkts anzuzeigen. Der Schieberegler wird eine Liste relevanter Bedarfs- und Angebotaufträge innerhalb des VfZ-Planungszeitraums anzeigen.
+-   **CTP**
+    -   **Verfügbar heute** - Zeigt den aktuellen physischen, physisch reservierten und physisch verfügbaren Bestand an.
+    -   **Parameter** - Zeigt die Bestandeinheit und die Verkaufslieferzeit.
+    -   **Auflösung** - Zeigt eine Lieferauflösung der ausgewählten Lieferalternative. Sie können **Einstellungen** verwenden, um die Felder und die Bestanddimensionen zu ändern, die bei der Auflösung angezeigt werden.
 
-- **CTP**
-  - **Verfügbar heute** - Zeigt den aktuellen physischen, physisch reservierten und physisch verfügbaren Bestand an.
-  - **Parameter** - Zeigt die Bestandeinheit und die Verkaufslieferzeit.
-  - **Auflösung** - Zeigt eine Lieferauflösung der ausgewählten Lieferalternative. Sie können **Einstellungen** verwenden, um die Felder und die Bestanddimensionen zu ändern, die bei der Auflösung angezeigt werden.
+### <a name="impact-of-selected-alternative"></a>Auswirkungen der gewählten Alternative
 
-### <a name="the-impact-of-selected-alternative-fasttab"></a>Inforegister „Auswirkungen der gewählten Alternative“
+Diese Registerkarte zeigt die Auswirkungen auf die ausgewählte Lieferungsalternative. Wenn Sie **OK** klicken, wird die Auftragsposition mit den markierten Werte in den Spalten AUSGEWÄHLT aktualisiert. Beachten Sie, dass, wenn die Menge in der ausgewählten Lieferalternative kleiner als die Menge in der Auftragsposition ist, und die Auftragsposition in zwei Positionen aufgeteilt wird: eine Position für die ausgewählte Menge und eine Zeile für die Restmenge. Sie können den Handelszweig auch aktualisieren, damit die Zeitplanpositionen übereinstimmt und die Preiskalkulation beeinflussen.
 
-Dieses Inforegister zeigt die Auswirkungen auf die ausgewählte Lieferungsalternative. Wenn Sie **OK** auswählen, wird die Auftragsposition mit den markierten Werte in den Spalten AUSGEWÄHLT aktualisiert. Beachten Sie, dass, wenn die Menge in der ausgewählten Lieferalternative kleiner als die Menge in der Auftragsposition ist, und die Auftragsposition in zwei Positionen aufgeteilt wird: eine Position für die ausgewählte Menge und eine Zeile für die Restmenge. Sie können den Handelszweig auch aktualisieren, damit die Zeitplanpositionen übereinstimmt und die Preiskalkulation beeinflussen.
-
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
+<a name="additional-resources"></a>Zusätzliche Ressourcen
+--------
 
 [Lieferterminzusage](delivery-dates-available-promise-calculations.md)
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+

@@ -1,25 +1,28 @@
 ---
 title: Aktive Wartungsaufträge für Arbeitsaufträge – Übersicht
 description: In diesem Thema wird die Übersicht über aktive Wartungsaufträge für Arbeitsaufträge in der Anlagenverwaltung erläutert.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fdfbce3315d98fdb2bd7b980a3281f69fc821376
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 81e5611cd1491ee0c119f049e992afb4b6299991
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982560"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019478"
 ---
 # <a name="active-work-order-maintenance-jobs-overview"></a>Aktive Wartungsaufträge für Arbeitsaufträge – Übersicht
 
@@ -35,10 +38,7 @@ In der Spalte **%** gibt eine Zahl den Abschluss des Arbeitsauftrags in Prozent 
 
 Die folgende Abbildung zeigt ein Beispiel für die Listenseite **Aktive Wartungsaufträge für Arbeitsaufträge**.
 
-![Abbildung 1.](media/23-work-orders.png)
+![Abbildung 1](media/23-work-orders.png)
 
 Eine Kurzbeschreibung der Schaltflächen für die Listenseite **Aktive Wartungsaufträge für Arbeitsaufträge**, finden Sie unter [Einführung in Arbeitsaufträge](../work-orders/introduction-to-work-orders.md), wo identische Schaltflächen beschrieben werden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

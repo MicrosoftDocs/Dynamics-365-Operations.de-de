@@ -1,29 +1,32 @@
 ---
 title: Erweitern vorhandener Dateneinheiten
 description: In diesem Thema finden Sie ein Beispiel, das zeigt, wie Sie den Ansichten INVENTORSITEONHANDENTITY und INVENTWAREHOUSEONHANDENTITY erweiterte Felder hinzufügen, damit die Funktionen der Inventardateneinheiten mit den Erweiterungen arbeiten können.
-author: yufeihuang
+author: sherry-zheng
+manager: tfehr
 ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: yufeihuang
+ms.author: chuzheng
 ms.search.validFrom: 2020-07-27
-ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 8161d951c3296b63476c4e7b527efca163a4f4b3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: e3bf3a7d48b0aa3e48845882be0ee86da17ed040
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577695"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428774"
 ---
 # <a name="extend-inventory-on-hand-data-entities"></a>Erweitern vorhandener Dateneinheiten
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management bietet die Funktionen von [Erweiterbarkeit](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md), mit denen Sie [Felder durch Erweiterung in Tabellen einfügen](../../fin-ops-core/dev-itpro/extensibility/add-field-extension.md) können. In diesem Thema finden Sie ein Beispiel, das zeigt, wie Sie den Ansichten `INVENTORSITEONHANDENTITY` und `INVENTWAREHOUSEONHANDENTITY` erweiterte Felder hinzufügen, damit die Funktionen der Inventardateneinheiten mit den Erweiterungen arbeiten können. Ausführliche Informationen zu Dateneinheiten finden Sie unter [Datenverwaltungsübersicht](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
+Microsoft Dynamics 365 Supply Chain Management bietet die Funktionen von [Erweiterbarkeit](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md), mit denen Sie [Felder durch Erweiterung in Tabellen einfügen](../../fin-ops-core/dev-itpro/extensibility/add-field-extension) können. In diesem Thema finden Sie ein Beispiel, das zeigt, wie Sie den Ansichten `INVENTORSITEONHANDENTITY` und `INVENTWAREHOUSEONHANDENTITY` erweiterte Felder hinzufügen, damit die Funktionen der Inventardateneinheiten mit den Erweiterungen arbeiten können. Ausführliche Informationen zu Dateneinheiten finden Sie unter [Datenverwaltungsübersicht](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
 > [!NOTE]
 > Hier ist eine Liste einiger verfügbarer Inventardateneinheiten:
@@ -66,6 +69,3 @@ public final class InventOnHandAggregatedViewBuilder\_Extension
 ```
 
 Nachdem Sie diese Schritte ausgeführt haben, können Sie den Lagerbestand nach Standort und den Lagerbestand nach Lagerdateneinheiten erweitern, indem Sie die neuen Felder hinzufügen. Auf diese Weise stellen Sie sicher, dass die erweiterten Felder während der Datenmigration, die diese Datenentitäten verwendet, erkannt und eingeschlossen werden.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

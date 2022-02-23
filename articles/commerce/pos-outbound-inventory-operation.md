@@ -2,13 +2,16 @@
 title: Bestandsausgangsoperation in POS
 description: Dieses Thema beschreibt die Möglichkeiten des Bestandsausgangs am Point of Sale (POS).
 author: hhaines
+manager: annbe
 ms.date: 07/30/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,14 +19,14 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3641e1974ffc277a690ca8b8d15399ac883b0132
-ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
+ms.openlocfilehash: 1f74df94b1647520880ff994581872b9d9f8e067
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581136"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412451"
 ---
-# <a name="outbound-inventory-operation-in-pos"></a>Ausgehender Bestandsvorgang in POS
+# <a name="outbound-inventory-operation-in-pos"></a>Bestandsausgangsoperation in POS
 
 [!include [banner](includes/banner.md)]
 
@@ -71,7 +74,7 @@ Die von Ihnen erstellten Batch-Jobs werden zur Verarbeitung von Dokumenten verwe
 
 ## <a name="prerequisite-add-outbound-operation-to-the-pos-screen-layout"></a>Dies ist eine Voraussetzung: Fügen Sie dem POS-Bildaufbau den Ausgang hinzu.
 
-Bevor Ihr Unternehmen die Funktionalität des Ausgangsvorgangs nutzen kann, muss es den **Ausgangsvorgang** POS-Vorgang auf einem oder mehreren Ihrer [POS-Bildschirmbilder](/dynamics365/unified-operations/retail/pos-screen-layouts) konfigurieren. Bevor Sie den neuen Vorgang in einer Produktionsumgebung einsetzen, sollten Sie ihn gründlich testen und Ihre Benutzer in der Verwendung schulen.
+Bevor Ihr Unternehmen die Funktionalität des Ausgangsvorgangs nutzen kann, muss es den **Ausgangsvorgang** POS-Vorgang auf einem oder mehreren Ihrer [POS-Bildschirmbilder](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) konfigurieren. Bevor Sie den neuen Vorgang in einer Produktionsumgebung einsetzen, sollten Sie ihn gründlich testen und Ihre Benutzer in der Verwendung schulen.
 
 ## <a name="overview"></a>Übersicht
 
@@ -116,7 +119,7 @@ In der Ansicht **Vollständige Auftragsliste** können Sie eine Zeile in der Lis
 
 ### <a name="over-delivery-shipping-validations"></a>Überlieferungs-Versandvalidierungen
 
-Validierungen erfolgen während des Erfüllungsprozesses für die Belegzeilen. Dazu gehören auch Validierungen für Überlieferungen. Wenn ein Benutzer versucht, mehr Bestand zu versenden, als in einem Umlagerungsauftrag bestellt wurde, aber entweder keine Überlieferung konfiguriert ist oder die versendete Menge die Überlieferungstoleranz überschreitet, die für den Umlagerungsauftrag konfiguriert ist, erhält der Benutzer eine Fehlermeldung und darf die überschüssige Menge nicht versenden.
+Validierungen erfolgen während des Empfangsprozesses für die Belegzeilen. Dazu gehören auch Validierungen für Überlieferungen. Wenn ein Benutzer versucht, mehr Bestand zu erhalten, als in einer Bestellung bestellt wurde, aber entweder keine Überlieferung konfiguriert ist oder die erhaltene Menge die Überlieferungstoleranz überschreitet, die für die Bestellzeile konfiguriert ist, erhält der Benutzer einen Fehler und darf die überschüssige Menge nicht erhalten.
 
 ### <a name="underdelivery-close-lines"></a>Unterlieferung schließen-Positionen
 
@@ -190,6 +193,3 @@ Vollständig versandte Transportaufträge werden auf die Registerkarte **Vollst�
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Eingangsbestandsvorgang in POS](pos-inbound-inventory-operation.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

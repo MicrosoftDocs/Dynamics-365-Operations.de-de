@@ -1,40 +1,39 @@
 ---
-title: Überblick über die Verwaltung
-description: Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen, um Dynamics 365 Human Resources festzulegen, zu verwalten und Probleme zu beheben.
-author: twheeloc
-ms.date: 08/11/2021
-ms.topic: overview
+title: Übersicht
+description: Dieses Administratorhandbuch unterstützt Sie bei der Einrichtung, Verwaltung und Problembehandlung von Dynamics 365 Human Resources.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
+ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a403390132443f29f12e11914b7a0f08faffa973
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 8008a7e78bb1d1568a79fab436194a04d1ff683c
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068408"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527860"
 ---
-# <a name="administration-overview"></a>Überblick über die Verwaltung
+# <a name="overview"></a>Übersicht
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
-
-Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen, um Dynamics 365 Human Resources festzulegen, zu verwalten und Probleme zu beheben.
+Dieses Administratorhandbuch unterstützt Sie bei der Einrichtung, Verwaltung und Problembehandlung von Dynamics 365 Human Resources.
 
 - [Systemanforderungen](hr-admin-system-requirements.md)
 
-- Kategorien einrichten und Instanzen verwalten
+- Instanzen einrichten und verwalten
   - [Human Resources bereitstellen](hr-admin-setup-provision.md)
   - [Eine Instanz kopieren](hr-admin-setup-copy-instance.md)
   - [Eine Instanz entfernen](hr-admin-setup-remove-instance.md)
@@ -42,15 +41,15 @@ Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen, um Dyna
 
 - Datenintegration einrichten
   - [Datenintegrationstechnologie auswählen](hr-admin-integration-choose-technology.md)
-  - [Dataverse-Integration konfigurieren](hr-admin-integration-common-data-service.md)
+  - [Common Data Service-Integration konfigurieren](hr-admin-integration-common-data-service.md)
   - [Integration mit Finance konfigurieren](hr-admin-integration-finance.md)
   - [Integration mit Dayforce konfigurieren](hr-admin-integration-dayforce.md)
   - [Eine wiederkehrende Datenexport-App erstellen](hr-admin-integration-recurring-data-export.md)
   - In Office integrieren
-    - [Lernprogramm zur Office-Integration](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Entitätsdaten in Excel aktualisieren](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Möglichkeit „In Excel öffnen“ schaffen](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Problembehandlung bei der Office-Integration](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Lernprogramm zur Office-Integration](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Entitätsdaten in Excel aktualisieren](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Möglichkeit „In Excel öffnen“ schaffen](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Problembehandlung bei der Office-Integration](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
 
 - [Funktionen verwalten](hr-admin-manage-features.md)
 
@@ -85,7 +84,7 @@ Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen, um Dyna
   - [Dokumentation oder Schulung mit der Aufgabenaufzeichnung erstellen](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
 
 - Problembehandlung in der Personalverwaltung
-  - [Support anfordern](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
+  - [Support anfordern](hr-admin-troubleshooting-support.md)
   - [Leistung mit automatischen Bereinigungsaufgaben optimieren](hr-admin-troubleshooting-batch-history.md)
   - [Analytics-Berichte werden nicht aktualisiert](hr-admin-troubleshooting-analytic-reports.md)
   - [Erstellen einer Umgebung im Power Apps Admin Center nicht möglich](hr-admin-troubleshooting-power-apps.md)
@@ -94,23 +93,12 @@ Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen, um Dyna
   - [Vergütungsprozesses ausführen](hr-admin-troubleshooting-compensation.md)
   - [Aufgabenleitfaden in LCS speichern](hr-admin-troubleshooting-task-guide.md)
   - [Auf private Adressen nach Sicherheitsrolle zugreifen](hr-admin-troubleshooting-private-addresses.md)
-  - [Human Resources wird in Dynamics 365-Apps nicht angezeigt](hr-admin-troubleshooting-not-in-apps.md)
-  - [Berichtsoptionen](hr-admin-troubleshooting-reporting.md)
-  - [Häufig gestellte Fragen zur Integration](hr-admin-troubleshooting-integration.md)
-
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
-
-### <a name="elearning-courses"></a>E-Learning-Schulungen
-Informationen zu Onlinetrainings und Schulungen finden Sie bei [Microsoft Learn unter Dynamics 365 Human Resources](//learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
-
-### <a name="videos"></a>Videos
-
-Sehen Sie in den Videos nach, die jetzt im [YouTube-Kanal zu Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) verfügbar sind.
+  - [Human Resources wird nicht in Dynamics 365-Apps angezeigt](hr-admin-troubleshooting-not-in-apps.md)
+  - [Sonstige Berichtsoptionen](hr-admin-troubleshooting-reporting.md)
+  - [FAQs zur Integration](hr-admin-troubleshooting-integration.md)
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Welche Neuerungen oder Änderungen bietet Human Resources?](hr-admin-whats-new.md)
+- [Neuerungen oder Änderungen in Human Resources](hr-admin-whats-new.md)
 - [Entwicklerhandbuch](hr-developer-overview.md)
 - [Benutzerhandbuch](hr-hrpro-overview.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

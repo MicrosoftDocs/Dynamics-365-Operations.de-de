@@ -1,31 +1,37 @@
 ---
-title: Juristische Personen erstellen
+title: Erstellen juristischer Personen
 description: In diesem Thema wird beschrieben, wie Sie juristische Personen in Microsoft Dynamics 365 Commerce erstellen, die erstellt und konfiguriert werden müssen, bevor Kanäle erstellt werden.
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: bc5f097a7f941dfa05f4011d9be5caffbb7f01b5f6e67cd7535ef3d1b13f59fe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 28cbcc42505f1dc90c420adc812735841541c8e0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740430"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412529"
 ---
-# <a name="create-legal-entities"></a>Juristische Personen erstellen
+# <a name="create-legal-entities"></a>Erstellen juristischer Personen
+
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie juristische Personen in Microsoft Dynamics 365 Commerce erstellen, die erstellt und konfiguriert werden müssen, bevor Kanäle erstellt werden.
+
+## <a name="overview"></a>Übersicht
 
 Eine juristische Person ist eine Organisation mit einer registrierten oder eingetragenen Rechtsform. Juristische Personen können Verträge abschließen und sind verpflichtet, Finanzaufstellungen zum Erstellen eines Berichts über ihre Vermögens-, Finanz- und Ertragslage vorzubereiten.
 
@@ -42,9 +48,9 @@ Gehen Sie folgendermaßen vor, um eine neue juristische Person in Dynamics 365 C
 1. Geben Sie im Feld **Name** einen Wert ein.
 1. Geben Sie im Feld **Unternehmen** einen Wert ein.
 1. Wählen Sie im Feld **Land/Region** einen Wert aus, oder geben Sie einen Wert ein.
-1. Wählen Sie **OK** aus. 
+1. Wählen Sie **OK**. 
 
-   ![Erstellung einer juristischen Person.](media/legal-entities.png)
+   ![Erstellung einer juristischen Person](media/legal-entities.png)
 
 1. Stellen Sie im Abschnitt **Allgemein** die folgenden allgemeinen Informationen zur juristischen Person bereit: 
    1. Geben Sie einen Suchbegriff ein, falls erforderlich. Ein Suchbegriff ist ein alternativer Name, der verwendet werden kann, um nach dieser juristischen Person zu suchen. 
@@ -67,7 +73,7 @@ Gehen Sie folgendermaßen vor, um eine neue juristische Person in Dynamics 365 C
 
 Das folgende Bild zeigt die Details eines Beispiels für eine juristische Person.
 
-![Allgemeiner Teil der juristischen Person.](media/legal-entities-general.png)
+![Allgemeiner Teil der juristischen Person](media/legal-entities-general.png)
    
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
@@ -80,6 +86,3 @@ Das folgende Bild zeigt die Details eines Beispiels für eine juristische Person
 [Kanalübersicht](channels-overview.md)
 
 [Voraussetzungen der Kanaleinrichtung](channels-prerequisites.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

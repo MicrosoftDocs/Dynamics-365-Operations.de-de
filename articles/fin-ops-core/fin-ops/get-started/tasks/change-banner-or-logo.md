@@ -2,9 +2,11 @@
 title: Das Banner oder das Logo ändern
 description: Im Folgenden werden die Schritte aufgeführt, die Systemadministratoren verwenden können, um das Banner- oder Logobild zu aktualisieren, das für eine juristische Person angezeigt wird.
 author: aneesmsft
+manager: AnnBe
 ms.date: 06/21/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMLegalEntity, DefaultDashboard
 audience: Application User
@@ -13,19 +15,16 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ee62376da24adbbe09cb039c095197067f2db59c
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 73c66d189035f7bdc302480038c44645eccb50f9
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069347"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798069"
 ---
 # <a name="change-the-banner-or-logo"></a>Das Banner oder das Logo ändern
 
 [!include [banner](../../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 Im Folgenden werden die Schritte aufgeführt, die Systemadministratoren verwenden können, um das Banner- oder Logobild zu aktualisieren, das für eine juristische Person angezeigt wird. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 
@@ -40,6 +39,3 @@ Im Folgenden werden die Schritte aufgeführt, die Systemadministratoren verwende
 6. Wechseln Sie zu **Navigationsbereich > Module > Allgemein > Allgemein > Standarddashboard**. Sie sollten das neue Banner- oder Logobild im Dashboard finden.  
     
     Möglicher Weise müssen Sie Ihr Unternehmen mithilfe der Unternehmens-Auswahl in das Unternehmen ändern, für das Sie das Banner für hochgeladen haben.  
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

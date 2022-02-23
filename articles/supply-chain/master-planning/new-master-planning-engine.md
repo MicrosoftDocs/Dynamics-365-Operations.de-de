@@ -2,13 +2,16 @@
 title: Migration zur Planungsoptimierung für die Produktprogrammplanung
 description: Dieses Thema enthält Informationen über die neue Engine für die Produktprogrammplanung, die Planungsoptimierung, und über die Migration von der bestehenden Engine.
 author: ChristianRytt
+manager: tfehr
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8d3edeefca2e2194a8d5484afbfabf2091da4a1c1538d238351a5d389177ccfd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 94e5668da45c524ed9ab9eef10b40d0fb5336a65
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728578"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645995"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Migration zur Planungsoptimierung für die Produktprogrammplanung
 
@@ -63,12 +66,8 @@ Derzeit sind Ausnahmen für die Migration der Planungsoptimierung nur dann relev
 
 Nachdem die erforderlichen Funktionen verfügbar sind, gewährt Microsoft eine Gnadenfrist, bis die Ausnahme ausläuft. Der Admin der Umgebung wird informiert, wenn die erforderlichen Funktionen verfügbar geworden sind und die Schonfrist begonnen hat.
 
-Das folgende Flussdiagramm fasst die Informationen in diesem Thema zusammen, damit Sie schnell herausfinden können, ob Sie eine Ausnahme anfordern sollten. Wenn Sie eine Ausnahme anfordern müssen, füllen Sie bitte den [Fragebogen zur Migration und zu Ausnahmen zur Planungsoptimierung](https://go.microsoft.com/fwlink/?linkid=2144962) aus und senden Sie ihn ab.
-
-![Ausnahmenflussdiagramm.](media/exception-diagram.png "Ausnahmenflussdiagramm")
-
 > [!NOTE]
-> Sie können eine Ausnahme nur für Mandanten anfordern, die derzeit eine Produktionsumgebung enthalten oder enthalten werden, nicht nur für Mandanten mit Sandbox-Umgebungen. Wenn Sie den Ausnahmefehler für die Planungsoptimierung in einer Infrastruktur-as-a-Service (IaaS)-Sandbox-Umgebung deaktivieren müssen, führen Sie die SQL-Abfrage aus, die unter [Sandbox-Umgebungen](#faq-sandbox) bereitgestellt wird.
+> Sie können eine Ausnahme nur für Produktionsumgebungen beantragen, nicht für Sandbox-Umgebungen. Wenn Sie den Ausnahmefehler für die Planungsoptimierung in einer Infrastruktur-as-a-Service (IaaS)-Sandbox-Umgebung deaktivieren müssen, führen Sie die SQL-Abfrage aus, die unter [Sandbox-Umgebungen](#faq-sandbox) bereitgestellt wird.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -117,6 +116,3 @@ Ich verwende Version 10.0.16 oder höher und erhalte die folgende Fehlermeldung,
 > Bitte füllen Sie dazu den folgenden Fragebogen aus und beantragen Sie ggf. eine Ausnahme von der Migration zur Planungsoptimierung.
 
 **Antwort:** Nein, die Produktprogrammplanung ist nicht blockiert. Ihre Produktprogrammplanung wurde erfolgreich abgeschlossen, und Sie können das Ergebnis wie gewohnt verwenden. Um jedoch zu vermeiden, dass Sie diese Fehlermeldung bei zukünftigen Läufen der Produktprogrammplanung erhalten, müssen Sie entweder sofort zur Planungsoptimierung migrieren oder eine Ausnahme über den Link in der Fehlermeldung anfordern.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

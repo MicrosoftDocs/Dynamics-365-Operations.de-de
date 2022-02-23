@@ -1,25 +1,28 @@
 ---
 title: Erstellen von Schichtmodellen
 description: Schichtmodelle definieren die Arbeitsstunden in einer Woche und werden verwendet, um die Arbeitszeiten für einen bestimmten Zeitraum zu generieren.
-author: johanhoffmann
+author: sorenva
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OpResLifeCycleManagementWorkspace, WorkTimeTable, WorkTimeCopyDayDialog, WorkPeriodTemplate
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: sorenand
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 130a21d08e4e720f8bf803a5d4b03d315cefc26f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: b5bd1b384fe66dd7d59b776bdf1154cc5b8262ce
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580671"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428410"
 ---
 # <a name="create-working-time-templates"></a>Erstellen von Schichtmodellen
 
@@ -27,58 +30,52 @@ ms.locfileid: "7580671"
 
 Schichtmodelle definieren die Arbeitsstunden in einer Woche und werden verwendet, um die Arbeitszeiten für einen bestimmten Zeitraum zu generieren. Dieses Verfahren zeigt Ihnen, wie ein Schichtmodell mithilfe der Arbeitszeit-Planungseigenschaften für die Kategorisierung von Arbeitszeitintervallen definiert wird. Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden.
 
-1. Wechseln Sie zu **Arbeitsbereiche > Ressourcenlebenszyklusverwaltung**.
-1. Wählen Sie **Arbeitszeitvorlagen**.
+1. Wechseln Sie zu "Alle Arbeitsbereiche" > "Ressourcenlebenszyklusverwaltung".
+2. Klicken Sie auf "Schichtmodelle".
 
 ## <a name="create-working-time-template"></a>Erstellen von Schichtmodellen
-
-1. Wählen Sie **Neu** aus.
-1. Geben Sie im Feld **Arbeitszeitvorlage** einen Wert ein.
-1. Geben Sie im Feld **Name** einen Wert ein.
-1. Erweitern Sie den Abschnitt **Montag**.
-1. Wählen Sie **Hinzufügen** aus.
-1. Geben Sie im Feld **Von** eine Uhrzeit ein.
+1. Klicken Sie auf "Neu".
+2. Geben Sie im Feld "Schichtmodell" einen Wert ein.
+3. Geben Sie im Feld "Name" einen Wert ein.
+4. Erweitern Sie den Abschnitt "Montag".
+5. Klicken Sie auf Hinzufügen.
+6. Geben Sie im Feld "Von" eine Uhrzeit ein.
     * Geben Sie die Uhrzeit an, zu der die Arbeit am Morgen beginnt.  
-1. Geben Sie im Feld **Bis** eine Uhrzeit ein.
+7. Geben Sie im Feld "Bis" eine Uhrzeit ein.
     * Geben Sie die Uhrzeit an, zu der Arbeitskräfte zum Mittagessen gehen.  
-1. Wählen Sie **Hinzufügen** aus.
-1. Geben Sie im Feld **Von** eine Uhrzeit ein.
+8. Klicken Sie auf Hinzufügen.
+9. Geben Sie im Feld "Von" eine Uhrzeit ein.
     * Geben Sie die Uhrzeit an, zu der die Arbeitskräfte vom Mittagessen kommen.  
-1. Geben Sie im Feld **Bis** eine Uhrzeit ein.
+10. Geben Sie im Feld "Bis" eine Uhrzeit ein.
     * Geben Sie das Ende des Arbeitstages an.  
 
 ## <a name="replicate-working-times-to-all-week-days"></a>Replikation von Arbeitszeiten auf alle Wochentage
-
-1. Wählen Sie **Kopieren Tag**.
+1. Klicken Sie auf "Tag kopieren".
     * Kopieren Sie die Arbeitszeitdefinitionen von Montag zu Dienstag.  
-1. Wählen Sie **OK**.
-1. Wählen Sie **Kopieren Tag**.
+2. Klicken Sie auf "OK".
+3. Klicken Sie auf "Tag kopieren".
     * Kopieren Sie die Arbeitszeitdefinitionen von Montag zu Mittwoch.  
-1. Wählen Sie im Feld **Bis Wochentag** eine Option aus.
-1. Wählen Sie **OK**.
-1. Wählen Sie **Kopieren Tag**.
+4. Wählen Sie im Feld "Bis Wochentag" eine Option aus.
+5. Klicken Sie auf "OK".
+6. Klicken Sie auf "Tag kopieren".
     * Kopieren Sie die Arbeitszeitdefinitionen von Montag zu Donnerstag.  
-1. Wählen Sie im Feld **Bis Wochentag** eine Option aus.
-1. Wählen Sie **OK**.
-1. Wählen Sie **Kopieren Tag**.
+7. Wählen Sie im Feld "Bis Wochentag" eine Option aus.
+8. Klicken Sie auf "OK".
+9. Klicken Sie auf "Tag kopieren".
     * Kopieren Sie die Arbeitszeitdefinitionen von Montag zu Freitag.  
-1. Wählen Sie im Feld **Bis Wochentag** eine Option aus.
-1. Wählen Sie **OK**.
+10. Wählen Sie im Feld "Bis Wochentag" eine Option aus.
+11. Klicken Sie auf "OK".
 
 ## <a name="define-time-slots-for-special-operations"></a>Definieren von Zeitrahmen für spezielle Vorgänge
-
-1. Erweitern Sie den Abschnitt **Freitag**.
-1. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-1. Geben Sie in das Feld **Eigenschaft** einen Wert ein oder wählen Sie einen Wert aus.
-1. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-1. Geben Sie in das Feld **Eigenschaft** einen Wert ein oder wählen Sie einen Wert aus.
+1. Erweitern Sie den Abschnitt "Freitag".
+2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
+3. Geben Sie im Feld "Eigenschaft" einen Wert ein, oder wählen Sie einen Wert aus.
+4. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
+5. Geben Sie im Feld "Eigenschaft" einen Wert ein, oder wählen Sie einen Wert aus.
 
 ## <a name="mark-weekend-days-as-closed-for-pickup"></a>Markieren von Wochenendentagen als "Keine Abholung"
+1. Erweitern Sie den Abschnitt "Samstag".
+2. Wählen Sie "Ja" im Feld "Keine Abholung" aus.
+3. Erweitern Sie den Abschnitt "Sonntag".
+4. Wählen Sie "Ja" im Feld "Keine Abholung" aus.
 
-1. Erweitern Sie den Abschnitt **Samstag**.
-1. Wählen Sie *Ja* im Feld **Zur Abholung geschlossen**.
-1. Erweitern Sie den Abschnitt **Sonntag**.
-1. Wählen Sie *Ja* im Feld **Zur Abholung geschlossen**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

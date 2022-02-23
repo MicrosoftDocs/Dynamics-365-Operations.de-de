@@ -2,9 +2,11 @@
 title: EU-Gelangensbestätigung
 description: Dieser Artikel enthält Informationen zu Gelangensbestätigungen der Europäischen Union (EU).
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustEntryCertificateJour_W, CustParameters, CustTable, SalesTable
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00b9e80a931c57722a92c3432f9c1006082b1bfbdd844d72c4d5962e106925dc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f91317f327852bc44a8c88887c18b69f6ec020e8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779792"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962776"
 ---
 # <a name="eu-entry-certificates"></a>EU-Gelangensbestätigungen
 
@@ -123,6 +125,3 @@ Wenn Sie keinen Zugriff auf die Seiten für die Durchführung dieser Aufgabe hab
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

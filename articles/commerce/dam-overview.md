@@ -2,30 +2,36 @@
 title: Überblick über die Verwaltung digitaler Bestände
 description: Dieses Thema bietet einen Überblick über die Verwaltung digitaler Inhalte im Microsoft Dynamics 365 Commerce Site Builder.
 author: psimolin
+manager: annbe
 ms.date: 03/03/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 73c41d97727c461a959d05e76c27efa49e9b5775
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 69cbaafb9cc28d4e363d0ef028460235cded54dc
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983185"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594355"
 ---
-# <a name="digital-asset-management-overview"></a>Überblick über die Verwaltung digitaler Anlagen
+# <a name="digital-asset-management-overview"></a>Überblick über die Verwaltung digitaler Bestände
 
 [!include [banner](includes/banner.md)]
 
 Dieses Thema bietet einen Überblick über die Verwaltung digitaler Inhalte im Microsoft Dynamics 365 Commerce Site Builder.
+
+## <a name="overview"></a>Übersicht
 
 Die Medienbibliothek des Dynamics 365 Commerce Site Builders bietet umfangreiche Funktionen zur Verwaltung digitaler Inhalte, einschließlich der Unterstützung für Folgendes:
 - Bildinhaltsteile
@@ -54,6 +60,3 @@ Digitale Assets und Verwaltungsfunktionen befinden sich im Site-Builder unter **
 [Bildfokuspunkte anpassen](dam-custom-focal-point.md)
 
 [Statische Dateien hochladen und bedienen](upload-serve-static-files.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

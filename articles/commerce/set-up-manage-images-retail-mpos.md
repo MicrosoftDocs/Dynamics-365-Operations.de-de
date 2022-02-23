@@ -2,13 +2,16 @@
 title: Einrichten und Verwalten von Modern POS (MPOS)
 description: In diesem Artikel wird beschrieben, welche Schritte beim Einrichten und Verwalten von Bildern für die verschiedenen Entitäten, die in Modern POS (MPOS) erscheinen, erforderlich sind.
 author: athinesh99
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 52851
 ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 71b90b1bc93c756731960871a0cb7b1e5f416a825399cd135dfbcc7656d6bf65
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aff3bee942f3443eb604311d1d804b66421e332d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755030"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412643"
 ---
 # <a name="set-up-and-manage-images-for-modern-pos-mpos"></a>Einrichten und Verwalten von Modern POS (MPOS)
 
@@ -44,17 +47,17 @@ In den folgenden Verfahren werden Bilder für die Katalogentität als Beispiel g
 ### <a name="set-up-the-media-base-url-for-a-channel"></a>Die medienbasierte URL für einen Kanal einrichten
 
 1. Öffnen Sie das Commerce HQ-Portal.
-2. Klicken Sie auf **Einzelhandel und Handel** &gt; **Kanaleinrichtung** &gt; **Kanalprofile**.
+2. Klicken Sie auf **Retail und Commerce** &gt; **Kanaleinrichtung** &gt; **Kanalprofile**.
 
-    [![Navigation.](./media/channel-profile1.png)](./media/channel-profile1.png)
+    [![Navigieren](./media/channel-profile1.png)](./media/channel-profile1.png)
 
 3. Im Kanalprofil, das Ihr Shop für MPOS verwendet, aktualisieren Sie das Feld mit der **Medienbasierten URL** mit der Basis-URL von Ihrem Medienserver oder CDN. Die Basis-URL ist der erste Teil der URL, die von allen Bildordner von andere Entitäten freigegeben wird.
 
-    [![Kanalprofilseite.](./media/channel-profile2.png)](./media/channel-profile2.png)
+    [![Kanalprofilseite](./media/channel-profile2.png)](./media/channel-profile2.png)
 
 ### <a name="define-the-media-template-for-an-entity"></a>Definieren Sie die Medienvorlage für eine Entität
 
-1. Klicken Sie auf **Einzelhandel und Handel** &gt; **Katalogverwaltung** &gt; **Katalogbilder**.
+1. Klicken Sie auf **Retail und Commerce** &gt; **Katalogverwaltung** &gt; **Katalogbilder**.
 2. Klicken Sie auf der Seite **Katalogbilder** den Aktivitätsbereich und klicken Sie **Medienvorlage definieren** an. Im Dialogfeld **Medienvorlage definieren** im Feld **Entität** **Katalog** sollte die Option standardmäßig ausgewählt werden.
 3. Geben Sie im Inforegister **Medienpfad** den verbleibenden Pfad des Bildlagerplatzes ein. Die Medienpfad unterstützt **LanguageID** als Variable. Sie können beispielswiese für die Demodaten einen Ordner **Kataloge** für alle Katalogbilder unter der medienbasierten URL für Ihren Medienserver erstellen (`https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer`). Sie können dann einen Ordner für jede Sprache haben, wie en-US oder fr-FR und dann die entsprechenden Bilder in jedem Ordner entsprechend speichern. Wenn Sie keine verschiedenen Bilder für die unterschiedlichen Sprachen haben, können Sie die Variablen **LanguageID** aus Ihrer Ordnerstruktur übergehen und direkt zum Katalogordner gehen, der die Katalogbilder enthält.
 
@@ -66,9 +69,9 @@ In den folgenden Verfahren werden Bilder für die Katalogentität als Beispiel g
 6. Klicken Sie auf **OK**.
 7. Um zu überprüfen, ob die Medienvorlage für Bilder ordnungsgemäß gespeichert wurde, klicken Sie auf der Seite **Katalogbilder**, erneut auf **Medienvorlage definieren**. Um die Vorlage ohne das Dialogfeld **Medienvorlage definieren** zu schließen zu validieren, können Sie das Inforegister **Bild-URL für Excel erstellen** verwenden. Überprüfen Sie die Darstellung der Bild URL, und verifizieren Sie, ob die URL mit dem Vorlagenstandard übereinstimmt, der weiter oben erwähnt wurde. Das Dialogfeld **Medienvorlage definieren** hat nun den Bildpfad implizit für alle Katalogbilder festgelegt, die diesen Pfad mit der allgemeinen URL verwenden. Dieser URL-Pfad gilt für alle Katalogbilder, es sei denn, diese werden überschrieben. Der erste Teil des Bildpfads wird von der medienbasierten URL genommen, die Sie im Kanalprofil definiert haben. Der Rest des Pfades wird dem Pfad entnommen, den Sie in der Medienvorlage definiert haben. Die zwei Teile werden verkettet, um die vollständige URL des Bildlagerplatzes bereitzustellen. Beispielsweise erhält ein Katalog in den Demodaten Fabrikam-Basiskatalog. Daher muss der Bildname Fabrikam-Basiskatalog.jpg lauten, damit er den Katalognamen und die .jpg- Dateinamenerweiterung verwendet, die in der Vorlage konfiguriert ist. In diesem Fall wird nach der Verkettung die URL `https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer/Catalogs/en-US/Fabrikam Base Catalog.jpg` Base Catalog.jpg sein.
 8. Aktivieren Sie die Synchronisierungsvorgänge, um die neue Vorlage zur Kanaldatenbank hinzuzufügen, damit MPOS die Vorlage verwenden kann, um auf die Bilder zuzugreifen.
-9. Um die Medienvorlage für Katalogbilder auf der Kanalseite zu aktualisieren, müssen Sie sicherstellen, dass Sie **Katalogvorgang 1150** von **Einzelhandel und Handel-IT** &gt; **Vertriebsplan** ausführen.
+9. Um die Medienvorlage für Katalogbilder auf der Kanalseite zu aktualisieren, müssen Sie sicherstellen, dass Sie **Katalogvorgang 1150** von **Retail und Commerce-IT** &gt; **Vertriebsplan** ausführen.
 
-    [![Medienvorlagen-Dialogfeld definieren.](./media/catalog1.png)](./media/catalog1.png)
+    [![Medienvorlagen-Dialogfeld definieren](./media/catalog1.png)](./media/catalog1.png)
 
 ## <a name="previewing-an-image-from-the-entity-level"></a>Zeigen Sie ein Bild auf Entitätsebene in der Vorschau an
 
@@ -77,14 +80,14 @@ In den folgenden Verfahren werden Bilder für die Katalogentität als Beispiel g
 3. Sie können die Schaltflächen **Hinzufügen** und **Entfernen** verwenden, um den Pfad zu ändern, der auf der impliziten Vorlage basiert und für ein bestimmtes Bild verwendet wird. Weitere Informationen finden Sie im Abschnitt [Überschreiben der Medienvorlage für Entitätsartikel](#overwriting-the-media-template-for-entity-items) weiter unten in diesem Artikel.
 4. Nachdem Sie ein Bild in der Vorschau anzeigt und die gewünschten Änderungen vorgenommen haben, starten Sie die MPOS-Instanz um zum entsprechenden Shop zu gelangen und zu sehen, ob die Katalogbilder angezeigt werden.
 
-    [![Bilder-Dialogfeld.](./media/catalog4.png)](./media/catalog4.png)
+    [![Bilder-Dialogfeld](./media/catalog4.png)](./media/catalog4.png)
 
 > [!NOTE]
 > Sie können dasselbe Verfahren für alle fünf Entitäten verwenden, die unterstützt werden: Arbeitskraft, Debitor, Katalog, Kategorie und Produkte. "Katalog-Produkte" (Produkte, die auf Katalogebene festgelegt werden) und "Kanalprodukte "( Produkte, die auf der Kanalstufe festgelegt werden), verwenden die Medienvorlage, die für die Produktentität festgelegt ist. Für die Produktmedienvorlage können Sie die Anzahl von Produktbildern auswählen, um das Produkt darzustellen. Sie können das standardmäßige Bild für ein bestimmtes Produkt auch festlegen. Auf diese Weise können Sie leere Bilder in MPOS verhindern und steuern, welches Bild als standardmäßiges Bild für einen Produktionsartikel verwendet wird. Im folgenden Beispiel verfügt jedes Produkt fünf Bilder, und das erste Bild wird als standardmäßiges Bild festgelegt. Verschiedenen Produkte werden gleiche Weise wie Vorlagenprodukte behandelt. Der Dateiname der Bilddatei soll auf der Produktnummer basieren. Einige Zeichen werden auch weggelassen, während der Dateiname generiert wird. Daher ist es gut, den Dateinamen zu überprüfen. Dies tun Sie mithilfe des Bereichs **Bild URL für Excel erstellen**. Siehe [Mit in Excel bearbeiten überschreiben](#overwrite-by-using-edit-in-excel) weiter unten in diesem Artikel.
 
 ## <a name="synchronization-jobs-to-send-a-media-template-to-the-channel-side"></a>Synchronisierungsvorgänge, um eine Medienvorlage an die Kanalseite zu senden
 
-Stellen Sie für alle fünf unterstützten Entitäten (Arbeitskraft, Kunde, Katalog, Kategorie und Produkte) bei der Aktualisierung des Dialogs **Medienvorlage definieren** sicher, dass Sie den Katalogvorgang (1150) aus **Einzelhandel und Handel-IT** &gt; **Vertriebszeitplan** ausführen. Dieser Einzelvorgang aktiviert die aktualisierte Medienvorlage und sorgt dafür, dass sie im Kanal synchronisiert und von MPOS verwendet wird. Aktivieren des Katalogeinzelvorgang (1150 ), nachdem Sie folgenden Änderungen vornehmen:
+Stellen Sie für alle fünf unterstützten Entitäten (Arbeitskraft, Kunde, Katalog, Kategorie und Produkte) bei der Aktualisierung des Dialogs **Medienvorlage definieren** sicher, dass Sie den Katalogvorgang (1150) aus **Retail und Commerce-IT** &gt; **Vertriebszeitplan** ausführen. Dieser Einzelvorgang aktiviert die aktualisierte Medienvorlage und sorgt dafür, dass sie im Kanal synchronisiert und von MPOS verwendet wird. Aktivieren des Katalogeinzelvorgang (1150 ), nachdem Sie folgenden Änderungen vornehmen:
 
 - Aktualisieren Sie die Katalogbild-Medienvorlage von **Bilder katalogisieren** &gt; **Medienvorlage definieren**.
 - Aktualisieren Sie Mitarbeiter-Bild-Medienvorlage von **Mitarbeiter-Bilder** &gt; **Medienvorlage definieren**.
@@ -98,7 +101,7 @@ Wie Sie im vorherigen Abschnitt lernten, unterstützt die Medienvorlage für ein
 
 ### <a name="overwrite-by-using-edit-in-excel"></a>Mit in Excel bearbeiten überschreiben
 
-1. Klicken Sie auf **Einzelhandel und Handel** &gt; **Katalogverwaltung** &gt; **Katalogbilder**.
+1. Klicken Sie auf **Retail und Commerce** &gt; **Katalogverwaltung** &gt; **Katalogbilder**.
 2. Klicken Sie auf der Seite **Katalogbilder** auf **Medienvorlage definieren**. Im Dialogfeld **Medienvorlage definieren** im Feld **Entität** sollte die Option **Katalog** ausgewählt werden.
 3. Merken Sie sich im Inforegister **Medienpfad** den Bildlagerplatz.
 4. Klicken Sie im Inforegister **Bild URLs für Excel erstellen** und klicken auf **erstellen**.
@@ -108,7 +111,7 @@ Wie Sie im vorherigen Abschnitt lernten, unterstützt die Medienvorlage für ein
 
     Sie sehen nun eine Vorschau der Bild URLs, die basierend auf der letzten gespeicherten Medienvorlage erstellt wurden.
 
-    [![Bild-URLs für Excel-Inforegister generieren, nachdem „Generieren“ ausgewählt ist.](./media/excel2.png)](./media/excel2.png)
+    [![Bild-URLs für Excel-Inforegister generieren, nachdem „Generieren“ ausgewählt ist](./media/excel2.png)](./media/excel2.png)
 
     > [!NOTE]
     > Die von Excel erstellten URLS verwenden den Pfad und die Konventionen der Medienvorlage, die definiert ist. Diese Konventionen umfassen die Konventionen für Dateinamen. Die Erwartung ist, dass Sie die physischen Bilder außerhalb von Commerce eingerichtet haben, und Bilder von den URL abgerufen werden können, die von der Medienvorlage stammen, die Sie ebenfalls bereits definiert haben. Sie können dieses abgeleitete URL überschreiben, indem Sie die Funktion Bearbeiten in Excel verwenden.
@@ -117,17 +120,17 @@ Wie Sie im vorherigen Abschnitt lernten, unterstützt die Medienvorlage für ein
 6. Nachdem das Microsoft Excel-Arbeitsblatt geöffnet ist, klicken Sie auf **Bearbeiten aktivieren**, wenn Sie dazu aufgefordert werden.
 7. Wenn Sie aufgefordert werden, klicken Sie im rechten Bereich auf **Diesem Add-In vertrauen**, um die Installation abzuschließen.
 
-    [![Diesem Add-In vertrauen.](./media/excel4.jpg)](./media/excel4.jpg)
+    [![Diesem Add-In vertrauen](./media/excel4.jpg)](./media/excel4.jpg)
 
 8. Wenn Sie aufgefordert werden, sich anzumelden, geben Sie die diese Anmeldeinformationen ein die Sie verwendeten, um sich bei HQ anzumelden.
 
-    [![Anmeldeaufforderung.](./media/excel5.png)](./media/excel5.png)
+    [![Anmeldeaufforderung](./media/excel5.png)](./media/excel5.png)
 
 9. Nachdem Sie sich angemeldet haben, sollten Sie in der Lage sein, die Liste der Bild URLs für die verschiedenen Katalogeinträge zu sehen.
 10. Sie bearbeiten, ergänzen und entfernen die Bild URLs für verschiedene Entitätsartikel.
 11. Für alle Entitäten außer Produkte können Sie die Bild URL überschreiben. Ändern Sie dies vorhandene Bild URL, damit sie die neue Ziel URL des Bilds verwendet und aktualisieren Sie den Dateinamen mit dem neuen Dateinamen für die Bilddatei. Der Dateiname muss eindeutig sein, um sicherzustellen, dass der Datensatz eindeutig ist.
 
-    [![Bild URLs in Excel überschreiben.](./media/excel6.jpg)](./media/excel6.jpg)
+    [![Bild URLs in Excel überschreiben](./media/excel6.jpg)](./media/excel6.jpg)
 
     > [!NOTE]
     > Wenn Sie Bild URL für Produktentitäten überschreiben, indem Sie die Funktion "Bearbeiten" in Excel-Funktionen oder die Seite "Entitätsartikel" verwenden, sollten MPOS immer alle Medienvorlagenbild-URLs zusammen mit den überschriebenen Bild-URLs anzeigen.
@@ -153,11 +156,11 @@ Für alle Entitäten außer für Produkte können Sie die Bild URL für einen an
 3. Wenn Sie dieses Bild in MPOS für den Katalog anzeigen möchten, können Sie es als Standardbild festlegen.
 4. Klicken Sie auf **OK**. Die Bild URL wird für dieses Katalogbild aktualisiert und eine Vorschau wird angezeigt.
 
-    [![URL aktualisiert im Dialogfeld „Neues Bild“.](./media/preview3.png)](./media/preview3.png)
+    [![URL aktualisiert im Dialogfeld „Neues Bild“](./media/preview3.png)](./media/preview3.png)
 
 5. Sie können die Bildvorschau für alle überschriebenen Bild URLs auch auf der Katalogseite **Katalogbilder** ansehen.
 
-    [![Katalogbilder-Katalogseite.](./media/preview-4.png)](./media/preview-4.png)
+    [![Katalogbilder-Katalogseite](./media/preview-4.png)](./media/preview-4.png)
 
 > [!NOTE]
 > Zurzeit werden in der Bildübersicht die Bildvorschauen für Medienvorlagenbild URLs nicht angezeigt. Wenn der Benutzer für Katalog-, Arbeitskraft-, Kunden- und Kategorieentitäten explizit eine URL über diese Seite bereitstellt, empfehlen wir, dass Sie angeben, welches das Standardbild ist, weil Commerce Scale Unit Clients nur ein Bild pro Katalog, Kunde, Arbeitskraft und Kategorie anzeigen. Wenn der Benutzer kein Standardbild angibt, bestimmt das System das standardmäßige Bild und sendet es an den Commerce Service-Aufrufer (MPOS oder E-Commerce).
@@ -172,7 +175,7 @@ Um Bild URLs für Katalogproduktbilder zu überschreiben, müssen Sie die Seite 
 4. Klicken Sie auf **Hinzufügen** und überschreiben Sie die Bild URL mit einer neuen URL.
 5. Klicken Sie auf **OK**. Sie sehen nun eine Vorschau des neuen Bilds und können es als Standardbild festlegen.
 
-    [![Bildvorschau im Dialogfeld „Neues Bild“.](./media/cat3.png)](./media/cat3.png)
+    [![Bildvorschau im Dialogfeld „Neues Bild“](./media/cat3.png)](./media/cat3.png)
 
 > [!NOTE]
 > Nach der Kategoriebildzuordnung müssen Sie den Kanal veröffentlichen und den Kanaleinzelvorgang aktivieren, um sicherzustellen, dass die Änderungen in der Kanaldatenbank veröffentlicht werden.
@@ -193,7 +196,7 @@ Die Produktbilder, die im Offlinemodus verwendet werden müssen, können eingeri
 6. Während sich MPOS im Offlinemodus befindet., führen Sie den Katalogeinzelvorgang in HQ aus, um sicherzustellen, dass die Daten mindestens einmal an die Offline-Datenbank gesendet werden.
 7. Setzen Sie MPOS in in Offline-Betrieb. Sie sollten das Bild sehen, das Sie für das bestimmte Produkt in HQ hochgeladen haben.
 
-    [![Produktbild im Offline-Modus.](./media/offline1.png)](./media/offline1.png)
+    [![Produktbild im Offline-Modus](./media/offline1.png)](./media/offline1.png)
 
 ### <a name="set-up-catalog-category-employee-and-customer-images-to-appear-in-offline-mode-for-mpos"></a>Katalog, Kategorie, Mitarbeiter und Debitorenbilder einrichten, damit sie im Offline-Modus für MPOS angezeigt werden
 
@@ -205,7 +208,4 @@ Die Katalog-, Kategorie-, Mitarbeiter sowie die Debitorenbilder, die im Offline-
 4. Führen Sie den Katalogvorgang aus. Dieses Bild wird jetzt als Offlinebild für den Katalog in MPOS verwendet.
 5. Führen Sie einen ähnlichen Prozess für andere Entitäten, wie Kategorie, Mitarbeiter und Debitor durch.
 
-    [![Offline-Bild.](./media/offline2.png)](./media/offline2.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+    [![Offline-Bild](./media/offline2.png)](./media/offline2.png)

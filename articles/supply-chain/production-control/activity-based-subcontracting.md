@@ -1,10 +1,12 @@
 ---
 title: Aktivitätsbasierte Fremdarbeit
 description: In diesem Thema wird beschrieben wie Fremdarbeitsaktivitäten in einem Produktionsfluss für die Lean Manufacturing verwendet wird.
-author: johanhoffmann
+author: cvocph
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, PlanActivity, ReqSupplyDemandSchedule, PlanActivityServiceDetails, PlanActivityServiceWizard
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 267034
 ms.assetid: 15c76a51-fa6d-42d2-994a-c67df6bae6a9
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c2e1efceb800930d9f9e19a109da80d8cfebe2e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 010b934821eaf04dc93d803d03a8fbd198de91a6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566791"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966529"
 ---
 # <a name="activity-based-subcontracting"></a>Aktivitätsbasierte Fremdarbeit
 
@@ -38,7 +40,7 @@ Basierend auf diesen Funktionen erfordert das Lean Management keine speziellen F
 
 Beispielsweise hilft ein Zulieferer in einem Supermarkt aus, der sich am Standort des Zulieferers befindet. Wenn Handhabungseinheiten beim Zulieferer geleert werden, werden die Kanban-Karten der Assemblyzelle zusammen mit der nächsten Lieferung zurückgegeben. Der Supermarkt beim Zulieferer wird dann aufgefüllt. Für Übertragungen auf und zum Zulieferer können keine expliziten Umlagerungsaktivitäten modelliert werden, um einen Lieferungs- und Entnahmeprozess zu unterstützen. Wenn eine explizite Erfassung nicht erforderlich ist, um den physischen Transport zu unterstützen, können mit Buchungsprofilen die Umlagerungsaktivitäten ausgelassen werden.  
 
-Ein Zulieferer kann zum Lastenausgleich verwendet werden, um die Gesamtkapazität des Produktionsflusses auszugleichen. Beispielsweise wird ein Produktionsfluss modelliert, indem geplante Kanban-Regeln verwendet werden. Der Planer verwendet die Kanbanplanungskarte, um Arbeitsgruppen zu planen und auszulasten. Der Planer überwacht auch den konsolidierten Lieferungszeitplan für den Supermakrt auf der Seite **Zeitplan bereitstellen**. Mehrere Zulieferer können in einem oder mehreren Produktionsflüssen modelliert werden, und es gibt möglicherweise mehrere Kanban-Regeln, die verwendet werden können, um das gleiche Produkt an denselben Lagerplatz durch unterschiedliche Aktivitäten zu liefern. Der Planer kann Kanbans zu einer alternativen Kanban-Regel konvertieren, ein Kanban neu einzuplanen, der ursprünglich für die interne Produktion mit einem alternativen Prozess erstellt wurde. Genau genommen hat die Art der Fertigungszelle keine Auswirkungen auf den Produktionsfluss. Dasselbe Funktionsprinzip gilt für zwei parallele interne Fertigungszellen oder zwei untergeordnete Dienstleistungszellen.   
+Ein Zulieferer kann zum Lastenausgleich verwendet werden, um die Gesamtkapazität des Produktionsflusses auszugleichen. Beispielsweise wird ein Produktionsfluss modelliert, indem geplante Kanban-Regeln verwendet werden. Der Planer verwendet die Kanbanplanungskarte, um Arbeitsgruppen zu planen und auszulasten. Der Planer überwacht auch den konsolidierten Lieferungszeitplan für den Supermakrt auf der Seite **Zeitplan bereitstellen**. Mehrere Zulieferer können in einem oder mehreren Produktionsflüssen modelliert werden, und es gibt möglicherweise mehrere Kanban-Regeln, die verwendet werden können, um das gleiche Produkt an denselben Lagerplatz durch unterschiedliche Aktivitäten zu liefern. Der Planer kann Kanbans zu einer alternativen Kanban-Regel konvertieren, ein Kanban neu einzuplanen, der ursprünglich für  die interne Produktion mit einem alternativen Prozess erstellt wurde. Genau genommen hat die Art der Fertigungszelle keine Auswirkungen auf den Produktionsfluss. Dasselbe Funktionsprinzip gilt für zwei parallele interne Fertigungszellen oder zwei untergeordnete Dienstleistungszellen.   
 
 Wie jede andere Aktivität in einem Produktionsfluss, können in Fremdarbeit ausgeführte Aktivitäten inventarisiertes, nicht-inventarisiertes (Ressource in Fertigung) und \[RIF\] und halbfertige Materialien und Produkte verbrauchen. In allen Argumenten sind die Prozesse für die Planung und die Ausführung mit denen der geregelten Aktivitäten identisch. Darüber hinaus verarbeiten denjenigen Prozesse das gleiche wie interne Arbeit.
 
@@ -71,16 +73,16 @@ Diese Anforderung erzwingt die Nutzung des First in, First out (FIFO)- Lagermode
 Um eine Verarbeitungsaktivität als Fremdarbeitsaktivität zu konfigurieren, führen Sie die folgenden Schritte aus.
 
 1.  Konfigurieren einer von weitergegebenen Arbeitsgruppe. Um eine Arbeitsgruppe als Fremdarbeit zu konfigurieren, müssen Sie eine Ressource des **Lieferanten** tpys erstellen und sie der Arbeitsgruppe (Ressourcengruppe) zuweisen. Eine Ablaufkostenkategorie des **direkten Outsourcing** kostengruppentyps sollt der Arbeitsgruppe zugewiesen werden. Die Kostenkategorien für Einrichtung und Menge sind nicht erforderlich.
-2.  Nachdem eine Verarbeitungsaktivität einer von gesetzlichen Bestimmungen unterliegenden Fertigungszelle erstellt und zugeordnet ist, müssen Sie einen Service für die Aktivität konfigurieren, bevor die Produktionsflussversion aktiviert werden kann. Schließen Sie diesen Schritt auf der Seite **Aktivität** **Detail** ab. Bei Aktivitäten, die einer von gesetzlichen Bestimmungen unterliegenden Fertigungszelle zugeordnet sind, wird das **Service-Bedingungen** Inforegister angezeigt. Auf diesem Inforegister können Sie einen Standard-Service hinzufügen, der für alle Ausgabeartikel gültig ist. Wenn besondere Ausgabeartikel verschiedene Dienstleistungen oder unterschiedliche Service-Berechnungsparameter (beispielsweise Gesamtlayout, ein anderes Service-Verhältnis) erfordern, können Sie andere Dienstleistungen der Aktivität hinzufügen.
+2.  Nachdem eine Verarbeitungsaktivität einer von gesetzlichen Bestimmungen unterliegenden Fertigungszelle erstellt und zugeordnet ist, müssen Sie einen Service für die Aktivität konfigurieren, bevor die Produktionsflussversion aktiviert werden kann. Schließen Sie diesen Schritt auf der Seite **Aktivität** **Detail** ab. Bei Aktivitäten, die einer von gesetzlichen Bestimmungen unterliegenden Fertigungszelle zugeordnet sind, wird das **Service-Bedingungen** Inforegister angezeigt. Auf diesem Inforegister können Sie einen Standard-Service hinzufügen, der für alle Ausgabeartikel gültig ist. Wenn besondere  Ausgabeartikel verschiedene Dienstleistungen oder unterschiedliche Service-Berechnungsparameter (beispielsweise Gesamtlayout, ein anderes Service-Verhältnis) erfordern, können Sie andere Dienstleistungen der Aktivität hinzufügen.
 
 ## <a name="subcontracted-transfer-activities"></a>Weitergegebene Umlagerungsaktivitäten
-Eine Umlagerungsaktivität wird als Fremdarbeitsaktivität konfiguriert, abhängig von den Einstellungen von **befördert durch** der Umlagerungsaktivität. Die folgenden Optionen sind verfügbar:
+Eine Umlagerungsaktivität wird als Fremdarbeitsaktivität konfiguriert, abhängig von den Einstellungen von  **befördert durch** der Umlagerungsaktivität. Die folgenden Optionen sind verfügbar:
 
 -   **Verlader** – Die Aktivität wird weitergegeben, wenn der Übertrag des Von-Lagerort von einem Kreditor /(entsprechend einer Eigenschaft des Lagerorts) ausgeführt wird. Alle ausgewählten Rahmenbestellungen für Leistungen müssen über dieselbe Kreditor-Kennung wie der Lagerort verfügen.
 -   **Empfänger** – Die Aktivität wird weitergegeben, wenn der Übertrag des Von-Lagerort von einem Kreditor (entsprechend einer Eigenschaft des Lagerorts) ausgeführt wird. Alle ausgewählten Rahmenbestellungen für Leistungen müssen über dieselbe Kreditor-Kennung wie der Lagerort verfügen.
 -   **Spediteur** – Die Aktivität wird an einen beliebigen Kreditor weitergegeben, der den Dienst bereitstellt. Um gültig zu sein, muss ein Spediteur für Lagerortverwaltung erstellt werden und muss ein zugewiesenes Kreditorenkonto aufweisen.
 
-Wie für Prozessaktivitäten müssen Sie einen Standard-Service für weitervergebene Umlagerungsaktivitäten auf dem Inforegister **Dienstleistungsbedingunges** der Seite **Aktivität** **Details** erstellen.
+Wie für Prozessaktivitäten müssen Sie einen Standard-Service für weitervergebene  Umlagerungsaktivitäten auf dem Inforegister **Dienstleistungsbedingunges** der Seite **Aktivität** **Details** erstellen.
 
 ## <a name="service-quantity-calculation"></a>Servicemengenberechnung
 Der ganze Einkaufsprozess basiert auf einer Artikelreferenz für einen Service. Diese Artikelreferenz wird in eine Maßeinheit eines Dienstes gemessen. Services werden üblicherweise entweder in Anzahl Dienstleistungen (Einheiten) oder in Zeit gemessen. Um die Service-Menge, basierend auf den erfassten Abschluss von Kanban-Einzelvorgängen zu berechnen, können die folgenden Methoden zur Verfügung gestellt werden:
@@ -103,6 +105,3 @@ Supply Chain Management unterstützt jetzt BOM-Berechnungen, die Transportdienst
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

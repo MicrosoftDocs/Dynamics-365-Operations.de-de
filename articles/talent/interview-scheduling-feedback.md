@@ -102,6 +102,3 @@ Wenn Sie das Feld **Feedbackteilnehmer von Einstellungsteam erben** ausgewählt 
 Die Gesprächsaktivität ist eine optionale Aktivität mit drei Komponenten: **Kandidatenverfügbarkeitsanforderung**,**Zeitplan** und **Rückmeldung**. Verwenden Sie die Gesprächsaktivität in der Stellenvorlage, wenn Sie die gesamte Kandidatenverfügbarkeitsanforderung, den Zeitplan und die Rückmeldung als Teil des Prozesses einbeziehen möchten, anstatt sie einzeln als Teil des Einrichtungsprozesses zu verwenden.
 
 Um Kandidaten einzubeziehen oder zu beschränken, die befragt werden sollen, wählen Sie einen Wert im Feld **Wen befragen Sie** aus. Die verfügbaren Optionen sind **Alle Kandidaten**, **Externe Kandidaten** und **Interne Kandidaten**. Wenn Sie zum Beispiel interne Kandidaten in der ersten Runde der Befragung überspringen möchten, legen Sie das Feld auf **Wen befragen Sie** auf **Externe Kandidaten** fest.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

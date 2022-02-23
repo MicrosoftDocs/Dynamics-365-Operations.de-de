@@ -1,10 +1,12 @@
 ---
 title: Mobiler Arbeitsbereich für mein Team
-description: Dieses Thema enthält Informationen zum Mein Team mobilen Arbeitsbereich, mit dem Manager ihre eigenen Mitarbeiter und erweitertes Personal anzeigen können.
+description: Dieses Thema enthält Informationen zum Mein Team mobilen Arbeitsbereich, mit dem Manager ihre eigenen Mitarbeiter und erweitertes Personal anzeigen können. Benutzer können auch Lob an Personen in der Mitarbeitergruppe senden.
 author: ShielaSogge
+manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 74abb4ce77b4fc13c614e8e1b734e1b9f5f24e0a728a10b79508e6be4faf3dca
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6ac3bf0a6ce20866f749b0c14030b70770e5589c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767111"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680969"
 ---
 # <a name="my-team-mobile-workspace"></a>Mobiler Arbeitsbereich für mein Team
 
@@ -78,7 +80,7 @@ Herunterladen und Installieren der Finance and Operations mobilen App:
 3.  Bei der erstmaligen Anwendung werden Sie nach Ihrem Benutzernamen und dem Kennwort gefragt. Geben Sie Ihre Anmeldeinformationen ein.
 4.  Nachdem Sie sich angemeldet haben, werden verfügbare Arbeitsbereiche für Ihr Unternehmen angezeigt. Beachten Sie, dass Sie, wenn Ihr Systemadministrator einen neuen Arbeitsbereich später veröffentlicht, die Liste der mobilen Arbeitsbereiche aktualisieren müssen.
 
-[![Zum Aktualisieren nach unten ziehen.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![Zum Aktualisieren ziehen](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-team-members-by-using-the-my-team-mobile-workspace"></a>Anzeigen von Teammitglieder mit dem Mein Team-Arbeitsbereich
 1.  Wählen Sie in der mobilen App den Arbeitsbereich **Mein Team** aus. Eine Liste von Teammitgliedern wird angezeigt. Die Liste enthält auch die Titel jedes Teammitglieds sowie alle eigenen Mitarbeiter.
@@ -95,6 +97,3 @@ Herunterladen und Installieren der Finance and Operations mobilen App:
 1.  Wählen Sie **Lob versenden**. 
 1. Geben Sie den Text des Lobs ein, das Sie übermitteln möchten. 
 1. Wählen Sie **Fertig**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

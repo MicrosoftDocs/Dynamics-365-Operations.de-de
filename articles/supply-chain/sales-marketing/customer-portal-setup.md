@@ -1,49 +1,51 @@
 ---
 title: Installieren, einrichten und aktualisieren Sie das Kundenportal
 description: Dieses Thema enthält Lizenzdetails und Installationsanweisungen für das Kundenportal.
-author: Henrikan
+author: dasani-madipalli
+manager: tfehr
 ms.date: 06/08/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: damadipa
 ms.search.validFrom: 2020-04-22
-ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 187efe1372bf2400241f3d65751189247c001447
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: e61fc5f7151a0bb61d496d47f4ad4e727a2a1d65
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060612"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529529"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>Installieren, einrichten und aktualisieren Sie das Kundenportal
 
-[!include [banner](../includes/banner.md)]
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 ## <a name="licensing-requirements"></a>Lizenzanforderungen
 
 Um das Kundenportal zu implementieren, müssen Sie über folgende Lizenzen verfügen:
 
-- **Power Apps Portale** – Diese Lizenz ist erforderlich, um das Kundenportal zu hosten. Portale werden je nach Nutzung lizenziert. Weitere Informationen finden Sie in den [Power Apps Portal Lizenzanforderungen](/power-platform/admin/powerapps-flow-licensing-faq#portals).
-- **Duales Schreiben** – Sie müssen über die erforderlichen Lizenzen verfügen, um duales Schreiben für Supply Chain Management-Tabellen zu aktivieren. Weitere Informationen finden Sie unter [Systemanforderungen für duales Schreiben](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
+- **Power Apps Portale** – Diese Lizenz ist erforderlich, um das Kundenportal zu hosten. Portale werden je nach Nutzung lizenziert. Weitere Informationen finden Sie in den [Power Apps Portal Lizenzanforderungen](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#portals).
+- **Duales Schreiben** – Sie müssen über die erforderlichen Lizenzen verfügen, um duales Schreiben für Supply Chain Management-Entitäten zu aktivieren. Weitere Informationen finden Sie unter [Systemanforderungen für duales Schreiben](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
 
 ## <a name="dependencies-on-dual-write-and-power-apps-portals"></a>Abhängigkeiten von dualem Schreiben und Power Apps Portalen
 
 Das Kundenportal ist abhängig von Power Apps Portalen und dualem Schreiben, wie in der folgenden Abbildung gezeigt.
 
-![Kundenportalabhängigkeiten.](media/customer-portal-elements.png "Kundenportalabhängigkeiten")
+![Kundenportalabhängigkeiten](media/customer-portal-elements.png "Kundenportalabhängigkeiten")
 
-Im Gegensatz zu anderen Funktionen von Supply Chain Management befindet sich die Kundenportalvorlage in Power Apps Portalen. Daher ist das Kundenportal durch die bereitgestellten Funktionen und Fähigkeiten eingeschränkt, die von Power Apps Portalen und Tabellen in dualem Schreiben bereitgestellt werden.
+Im Gegensatz zu anderen Funktionen von Supply Chain Management befindet sich die Kundenportalvorlage in Power Apps Portalen. Daher ist das Kundenportal durch die bereitgestellten Funktionen und Fähigkeiten eingeschränkt, die von Power Apps Portalen und die Entitäten in dualem Schreiben bereitgestellt werden.
 
 ## <a name="required-setup-to-enable-the-customer-portal"></a><a name="required-setup"></a>Erfordert Installation zum Aktivieren des Kundenportals
 
-Nachdem Sie sichergestellt haben, dass Sie über die erforderlichen Lizenzen verfügen, können Sie duales Schreiben wie in der Beschreibung beschrieben einrichten [Anweisungen für die anfängliche Synchronisierung mit zwei Schreibvorgängen](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-entity-map.md).
+Nachdem Sie sichergestellt haben, dass Sie über die erforderlichen Lizenzen verfügen, können Sie duales Schreiben wie in der Beschreibung beschrieben einrichten [Anweisungen für die anfängliche Synchronisierung mit zwei Schreibvorgängen](../../fin-ops-core/dev-itpro/data-entities/dual-write/initial-sync.md).
 
-Stellen Sie sicher, dass die folgenden Tabellenzuordnungen in dualem Schreiben aktiviert sind:
+Stellen Sie sicher, dass die folgenden Entitätszuordnungen in dualem Schreiben aktiviert sind:
 
 - Auftragskopf
 - Auftragsdetails
@@ -75,15 +77,12 @@ Weitere Funktionen werden möglicherweise später zum Kundenportal hinzugefügt.
 
 Um zu erfahren, wie Sie das Kundenportal einrichten und anpassen können, lesen Sie zunächst die folgende Dokumentation zu den zugrunde liegenden Technologien:
 
-- [Power Apps Portaldokumentation](/powerapps/maker/portals/overview)
+- [Power Apps Portaldokumentation](https://docs.microsoft.com/powerapps/maker/portals/overview)
 - [Dokumentation Duales Schreiben](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)
 
-Um Ihre Portale effektiv verwalten zu können, müssen Sie die Power Apps Portale und Microsoft Dataverse Lifecycle verstehen. Weitere Informationen finden Sie in den folgenden Ressourcen:
+Um Ihre Portale effektiv verwalten zu können, müssen Sie die Power Apps Portale und Common Data Service Lifecycle verstehen. Weitere Informationen finden Sie in den folgenden Ressourcen:
 
-- [Informationen zum Portallebenszyklus](/powerapps/maker/portals/admin/portal-lifecycle)
-- [Aktualisieren Sie ein Portal](/powerapps/maker/portals/admin/upgrade-portal)
-- [Portalkonfiguration migrieren](/powerapps/maker/portals/admin/migrate-portal-configuration)
+- [Informationen zum Portallebenszyklus](https://docs.microsoft.com/powerapps/maker/portals/admin/portal-lifecycle)
+- [Aktualisieren Sie ein Portal](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
+- [Portalkonfiguration migrieren](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Solution Lifecycle Management: Dynamics 365 for Customer Engagement Apps](https://www.microsoft.com/download/details.aspx?id=57777)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

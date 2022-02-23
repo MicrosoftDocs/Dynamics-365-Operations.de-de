@@ -2,9 +2,11 @@
 title: Konfigurieren von Workfloweigenschaften
 description: Dieses Thema erläutert, wie Sie die verschiedenen Eigenschaften eines Workflows konfigurieren können.
 author: ChrisGarty
+manager: AnnBe
 ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 81f73f187f75e40297f1f8462e9fff58a309f7f0
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 8bd3c9bea010099f83d16dad70261bc2d46a1dac
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069247"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693281"
 ---
 # <a name="configure-workflow-properties"></a>Konfigurieren von Workfloweigenschaften
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Dieses Thema erläutert, wie Sie die verschiedenen Eigenschaften eines Workflows konfigurieren können.
 
@@ -74,9 +73,6 @@ Sie können Benutzern, die Dokumente zur Verarbeitung und Genehmigung übermitte
     4. Geben Sie den Text im Feld **Übersetzter Text** ein.
     5. Zum Personalisieren des Texts können Sie Platzhalter einfügen. Anweisungen zum Eingeben eines Platzhalters finden Sie in Schritt 3.
     6. Klicken Sie auf **Schließen**.
-
-> [!NOTE]
-> Platzhalter können nicht durch Kopieren und Einfügen hinzugefügt werden, da die Zielinformationen nicht korrekt eingefügt werden. Verwenden Sie die Schnittstelle, um Platzhalter hinzuzufügen.
 
 ## <a name="specify-when-this-workflow-is-used-through-activation-conditions"></a>Geben Sie an, wann dieser Workflow über Aktivierungsbedingungen verwendet wird
 
@@ -183,6 +179,3 @@ Gehen Sie folgendermaßen vor, um Kommentare zu den Änderungen am Workflow einz
 2. Geben Sie im Feld **Kommentare zum Workflow eingeben** Ihre Kommentare ein.
 3. Prüfen Sie die Kommentare. Nach dem Hinzufügen von Kommentaren können diese nicht mehr geändert werden.
 4. Klicken Sie auf **Hinzufügen**, um Ihre Kommentare dem Bereich **Kommentarhistorie** hinzuzufügen.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

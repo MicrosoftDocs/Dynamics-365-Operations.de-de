@@ -1,25 +1,27 @@
 ---
 title: " Register erstellen und zuordnen"
 description: Diese Prozedur zeigt, wie ein Verkaufsstellen-(POS)-Register erstellt wird.
-author: BrianShook
+author: rubencdelgado
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailTerminalTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 48ad1891955b15d22f3cecac128a831adabdac87
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 2415945c5a8f73e095627d638fcc572c50ffe8ca
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779426"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964894"
 ---
 # <a name="create-and-associate-registers"></a> Register erstellen und zuordnen
 
@@ -41,6 +43,3 @@ Diese Prozedur zeigt, wie ein Verkaufsstellen-(POS)-Register erstellt wird. Für
     * Die POS-Registernummer für elektronische Überweisungen wird verwendet, um den Zahlungsprozessor darüber zu informieren, welches Zahlungsterminal Autorisierungsanforderungen sendet. Dieser Wert wird häufig als „Terminalkennung“ oder „TID“ bezeichnet. Die TID kann allgemein auf einem Aufkleber auf dem Zahlungsgerät gefunden werden.  
 9. Klicken Sie auf "Speichern".
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
-title: Wartungsauftragstypen, Kategorien, Varianten, Handel und Checklisten
+title: Kategorien von Wartungsaufträgen und Arten von Wartungsaufträgen, Variationen von Wartungsaufträgen, Handel von Wartungsaufträgen und Wartungsprüflisten
 description: In diesem Thema werden Kategorien von Wartungsaufträgen und Arten von Wartungsaufträgen, Variationen von Wartungsaufträgen, Wartungsauftragsbranchen und Wartungsprüflisten im Asset Management beschrieben.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetJobTypeDefaultForecast, EntAssetJobTrade, EntAssetJobTypeDefaultCopy, EntAssetChecklistVariableValueLookup, EntAssetChecklistTemplateCreate, EntAssetJobVariant, EntAssetJobTypeDefaultReference, EntAssetJobTypeDefaultChecklist, EntAssetJobTypeDefault, EntAssetJobType, EntAssetJobTypeDefaultChecklistCopy, EntAssetChecklistTemplate, EntAssetJobTypeDefaultDescription, EntAssetJobTypeLookup, EntAssetJobTypeDefaultToolCopy, EntAssetJobTypePreviewPart, EntAssetJobTypeDefaultTool, EntAssetJobTypeDefaultForecastCopy, EntAssetChecklistTemplateLookup, EntAssetJobGroup, EntAssetChecklistVariable
 audience: Application User
@@ -12,19 +14,21 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 54bd489a3c9be5be298ef75893b7acad38104a1379d20f853dd700635a3e058e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a335d642457fdd84ec42e285425fdc6212889cc0
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742799"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021276"
 ---
-# <a name="maintenance-job-types-categories-variants-trades-and-checklists"></a>Wartungsauftragstypen, Kategorien, Varianten, Handel und Checklisten
+# <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorien von Wartungsaufträgen und Arten von Wartungsaufträgen, Variationen von Wartungsaufträgen, Handel von Wartungsaufträgen und Wartungsprüflisten
 
 [!include [banner](../../includes/banner.md)]
+
+ 
 
 Jeder Anlage ist ein Anlagentyp zugeordnet. Anlagentypen definieren die Wartungsauftragsarten (und damit die Wartungsaufträge), die auf Anlagen durchgeführt werden können. Wenn Sie einen Arbeitsauftrag anlegen, müssen Sie einen Wartungsauftragstyp auswählen. Sie können nur die Wartungsauftragsarten auswählen, die sich auf das Einrichten der Anlagenart beziehen, die für die Anlage verwendet wird.
 
@@ -54,7 +58,7 @@ Sie richten zunächst die erforderlichen Kategorien von Wartungsauftragstypen, W
 
     Nachdem Sie die Kategorien von Wartungsauftragstypen mit den Wartungsauftragstypen verknüpft haben, zeigt das Feld **Auftragstypen** die Anzahl der Wartungsauftragstypen an, die mit dieser Kategorie von Wartungsaufträgen verknüpft sind.
 
-![Wartungsauftragstyp Kategorienseite.](media/01-setup-for-work-orders.png)
+![Wartungsauftragstyp Kategorienseite](media/01-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-job-type-variant"></a>Erstellen einer Variante für Wartungsauftragstypen
 
@@ -68,7 +72,7 @@ Sie richten zunächst die erforderlichen Kategorien von Wartungsauftragstypen, W
 
     Auf dem Inforegister **Details** wird im Feld **Einzelvorgangstypen** die Anzahl von Wartungsauftragstypen angezeigt, die mit dieser Variante der Wartungsauftragstypen hinzugefügt wurden.
 
-![Wartungsauftragstyp Variantenseite.](media/02-setup-for-work-orders.png)
+![Wartungsauftragstyp Variantenseite](media/02-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-job-trade"></a>Erstellen einer Wartungsauftragsbranche
 
@@ -89,7 +93,7 @@ Sie richten zunächst die erforderlichen Kategorien von Wartungsauftragstypen, W
 
     Auf dem Inforegister **Details** wird im Feld **Zertifikate** die Anzahl von Zertifikaten angezeigt, die dieser Wartungsauftragsbranche hinzugefügt wurden.
 
-![Wartungsauftrag Handelsseite.](media/03-setup-for-work-orders.png)
+![Wartungsauftrag Handelsseite](media/03-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-checklist-variable"></a>Erstellen einer Wartungsprüflistenvariablen
 
@@ -110,7 +114,7 @@ Wenn Sie Wartungsprüflistenpositionen im standard Wartungsauftragstyp erstellen
 6. Geben Sie im Feld **Wert** eine Wertbeschreibung ein.
 7. Wählen Sie im Feld **Ergebnis** ein Ergebnis für die Position aus.
 
-![Wartungsprüfliste Variablenseite.](media/04-setup-for-work-orders.png)
+![Wartungsprüfliste Variablenseite](media/04-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-checklist-template"></a>Erstellen einer Wartungsprüflistenvorlage
 
@@ -139,7 +143,7 @@ Wartungsprüflistenvorlagen können als allgemeiner Satz von Aufgaben verwendet 
 
     Auf dem Inforegister **Details** wird im Feld **Prüfungen** die Gesamtanzahl von Prüflistenpositionen in der Vorlage angezeigt. Diese Nummer enthält die geschachtelten Positionen jeder vorhandenen Vorlage, auf die Sie in Ihrer Vorlage verwiesen haben.
 
-![Wartungsprüfliste Vorlagenseite.](media/05-setup-for-work-orders.png)
+![Wartungsprüfliste Vorlagenseite](media/05-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-job-type"></a>Erstellen eines Wartungsauftragstyps
 
@@ -162,7 +166,7 @@ Wartungsprüflistenvorlagen können als allgemeiner Satz von Aufgaben verwendet 
 
 11. Auf dem Inforegister **Anlagentypen** können Sie Anlagentypen zum Wartungsauftragstyp hinzufügen.
 
-![Wartungsauftrag Typseite.](media/06-setup-for-work-orders.png)
+![Wartungsauftrag Typseite](media/06-setup-for-work-orders.png)
 
 ## <a name="create-maintenance-job-type-default-lines-and-related-forecasts-maintenance-checklists-tools-description-and-attachments"></a>Erstellen von Standardpositionen für Wartungsauftragstypen und zugehörige Prognosen, Wartungsprüflisten, Werkzeuge, Beschreibungen und Anhänge
 
@@ -231,7 +235,7 @@ Wartungsprüflistenvorlagen können als allgemeiner Satz von Aufgaben verwendet 
 31. Um einen Standard für Wartungsauftragstypen in einen anderen Standard für Wartungsauftragstypen zu kopieren, markieren Sie die Standardposition für den Wartungsauftragstyp, in die Sie eine andere Einstellung kopieren wollen, wählen Sie **Setup kopieren** und wählen Sie dann den Standard für Wartungsauftragstypen zum Kopieren.
 32. Um eine Liste der Anlagen, Wartungspläne oder Wartungsdurchgängen anzuzeigen, die derzeit eine Standardposition für Wartungsauftragstypen verwenden, markieren Sie die Position und wählen Sie dann **Verwendet von** aus.
 
-![Wartungsauftragstyp Standardseite.](media/07-setup-for-work-orders.png)
+![Wartungsauftragstyp Standardseite](media/07-setup-for-work-orders.png)
 
 Wenn das System den verfügbaren Standard für den Wartungsauftragstyp auswählt, der auf einer Arbeitsauftragsposition verwendet werden soll, basiert die Auswahl auf der Anlage und der zugehörigen Anlagentypeinstellung. Asset Management durchläuft alle Standarddatensätze des Wartungsauftragstyps, die sich auf den Wartungsauftragstyp beziehen, der in Bezug zum Anlagetyp steht, um nach einer möglichen Übereinstimmung zu suchen. Die spezifischste Kombination wird immer zuerst geprüft. Mit anderen Worten, um die spezifischste Kombination zu finden, sucht Asset Management zunächst nach einer möglichen Übereinstimmung für das Feld **Branche**. Wenn keine Übereinstimmung gefunden wird, sucht es nach einer Übereinstimmung für das Feld **Wartungsauftragstyp-Variante**. Wenn keine Übereinstimmung gefunden wird, sucht es nach einer Übereinstimmung für das Feld **Wartungsauftragstyp** usw. . (**Branche**, dann **Wartungsauftragstyp-Variante**, dann **Wartungsauftragstyp**, dann **Anlage**, dann **Modell**, dann **Hersteller** und anschließend **Anlagentyp**). Wenn keine Kombination gefunden wird, wird der Standarddatensatz, in dem nur der Wartungsauftragstyp aktiviert ist, verwendet.
 
@@ -252,7 +256,7 @@ Nachdem Sie die erforderlichen Standardkombinationen für Wartungsauftragstypen 
 4. Wählen Sie eine Kombination aus Wartungsauftragstypen aus, um das zugehörige Setup für Wartungsprüflisten, Prognosen und Tools anzuzeigen. Der Abschnitt **Details** auf dem Inforegister **Wartungsauftragstyp-Standardwerte** zeigt die Anzahl der zugehörigen Wartungsprüflisten, prognostizierten Stunden, Artikel usw., die sich auf die ausgewählte Kombination von Wartungsauftragstypen beziehen.
 5. Um Details zum ausgewählten Wartungsauftragstyp anzuzeigen, markieren Sie **Wartungsauftragstypen**.
 
-![Anlagenwartungsauftrag Typseite.](media/08-setup-for-work-orders.png)
+![Anlagenwartungsauftrag Typseite](media/08-setup-for-work-orders.png)
 
 ## <a name="automatic-update-of-maintenance-job-type-forecasts"></a>Automatische Aktualisierung von Wartungsauftragstyp-Prognosen
 
@@ -262,6 +266,3 @@ In der Anlageverwaltung können Sie Änderungen an den Prognosen der Wartungsauf
 2. Im Dialogfeld **Wartungsauftragstyp-Prognose aktualisieren** auf dem Inforegister **Einzuschließende Datensätze**, können Sie Auswahlen für bestimmte Wartungsauftragstypen nach Bedarf hinzufügen. Wählen Sie **Filtern** und **Auswählen**, um die Auswahl zu treffen.
 3. Im Inforegister **Im Hintergrund ausführen** können Sie die automatische Aktualisierung bei Bedarf als Batchauftrag einrichten.
 4. Klicken Sie auf **OK**, um die Aktualisierung der Prognose zu starten.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

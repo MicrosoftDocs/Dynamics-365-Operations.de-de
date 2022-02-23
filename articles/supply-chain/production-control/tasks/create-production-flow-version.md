@@ -1,24 +1,27 @@
 ---
 title: Eine Produktionsflussversion erstellen
 description: Ziel dieser Prozedur ist es, eine neue Produktionsflussversion zu erstellen.
-author: johanhoffmann
+author: cvocph
+manager: tfehr
 ms.date: 11/03/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b72d6162edd0ae6ccbfdcfe3e63ecff30528454
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d513e6898827de9a3fb1ed59006b817fb9006019
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569259"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428419"
 ---
 # <a name="create-a-production-flow-version"></a>Eine Produktionsflussversion erstellen
 
@@ -61,6 +64,3 @@ Ziel dieser Prozedur ist es, eine neue Produktionsflussversion zu erstellen. Fü
     * Geben Sie die Anzahl von Tagen der Periode für tatsächliche Zykluszeit an. Die Periode für tatsächliche Zykluszeit ist die Anzahl der Tage, in denen Einzelvorgänge ab der tatsächlichen Minute rückwärts erfasst werden, um die tatsächliche Zykluszeit zu berechnen. Der Wert kann jederzeit geändert werden und wird nur für die Berechnung der tatsächlichen Zykluszeiten verwendet.  
 13. Klicken Sie auf "Speichern".
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

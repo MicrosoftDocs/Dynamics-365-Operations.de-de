@@ -2,28 +2,29 @@
 title: Standardkostenumrechnung (Überblick)
 description: Dieser Eintrag stellt eine Prozessübersicht bereit, die Sie beim Einrichten und Ausführen einer Standardkostenumrechnung unterstützt. Die aufgeführten Schritte werden ausgeführt, nachdem Sie die Voraussetzungen für eine Standardkostenumrechnung abgeschlossen haben.
 author: AndersGirke
+manager: tfehr
 ms.date: 06/20/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CostingVersion, InventStdCostConv
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "78212"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 78212
 ms.assetid: d601d9d5-1de3-4868-aff4-534dca01d624
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9796449bee4361b2b871af10d30341c2f0760ab1
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: e9874d3b44a687a60ea1fd26889af3d1b644f86a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982688"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428783"
 ---
 # <a name="standard-cost-conversion-overview"></a>Standardkostenumrechnung (Überblick)
 
@@ -94,12 +95,10 @@ Mit dem Bericht **Aufstellung zur Abweichungsanalyse** können Sie Neubewertungs
 -   Analysieren rückdatierter Lagerumlagerungen. Mithilfe des Berichts **Lagerwert** können Sie rückdatierte Lagerumlagerungen anzeigen, die nach der Umrechnung eingegeben wurden. Das Von-Datum und Bis-Datum des Berichts sollten dem Übergangsstartdatum und dem Umrechnungsdatum (minus ein Tag) entsprechen. Die Berichtsauswahlkriterien sollten die umgerechneten Artikel reflektieren. Der Bericht zeigt Lagerumlagerungen an, die während der Übergangsperiode zu Standardkosten vorgenommen wurden.
 
 
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
+<a name="additional-resources"></a>Zusätzliche Ressourcen
+--------
 
 [Voraussetzungen für eine Standardkostenumrechnung](prerequisites-standard-cost-conversion.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

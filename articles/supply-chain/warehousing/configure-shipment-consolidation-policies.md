@@ -2,23 +2,26 @@
 title: Richtlinien zur Lieferungskonsolidierung konfigurieren
 description: In diesem Thema wird erläutert, wie Sie Standard- und benutzerdefinierte Versandkonsolidierungsrichtlinien einrichten.
 author: GarmMSFT
+manager: tfehr
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, TMSMode, WHSShipmentConsolidation, WHSFilterGenerallyAvail
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: f2705300925ae475f00861327b9cea9a97416011
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: adb88bbd29a89a1d18d7fd4781c2541ffb4e721f
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578679"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429047"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Richtlinien zur Lieferungskonsolidierung konfigurieren
 
@@ -105,7 +108,7 @@ Verwenden Sie die Funktionsverwaltung, um die Funktion zu aktivieren, falls Sie 
 
 #### <a name="create-two-new-product-filter-codes"></a>Erstellen Sie zwei neue Produktfiltercodes
 
-1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Produktfilter \> Produktfilter** und fügen Sie zwei Produktfilter hinzu:
+1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \>Produktfilter \> Produktfilter** und fügen Sie zwei Produktfilter hinzu:
 
     - Produktfilter 1:
 
@@ -179,7 +182,7 @@ Führen Sie die folgenden Schritte aus, um die Versandkonsolidierungsrichtlinie 
 1. Lassen Sie die **Konsolidierung mit offenen Lieferungen**-Option auf *Nein* gesetzt.
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
 1. Wählen Sie auf dem Inforegister **Konsolidierungsfelder** in der Liste **Verbleibende Felder** die Zeile aus, in der das Feld **Feldname** auf *Lieferart* gesetzt ist.
-1. Wählen Sie die Schaltfläche **Hinzufügen** ![rechter Pfeil](media/forward-button.png) aus, um das Feld in die Liste **Ausgewählte Felder** zu verschieben.
+1. Schaltfläche **Hinzufügen** auswählen ![Pfeil nach rechts](media/forward-button.png), um das Feld in die Liste **Ausgewählte Felder** zu verschieben.
 1. Wählen Sie im Aktionsbereich **Abfrage bearbeiten** aus.
 1. Suchen Sie im Abfrageeditor-Dialogfeld auf der Registerkarte **Bereich** im Raster die Zeile, in der das Feld **Feld** auf *Kundenkonto* gesetzt ist, und stellen Sie das Feld **Kriterien** für diese Zeile auf *US-001* ein.
 1. Wählen Sie **Hinzufügen** aus, um eine Zeile mit den folgenden Einstellungen zum Raster hinzuzufügen:
@@ -214,7 +217,7 @@ Führen Sie die folgenden Schritte aus, um die Versandkonsolidierungsrichtlinie 
 1. Legen Sie die **Konsolidierung mit offenen Lieferungen**-Option auf *Ja* fest.
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
 1. Wählen Sie auf dem Inforegister **Konsolidierungsfelder** in der Liste **Verbleibende Felder** die Zeile aus, in der das Feld **Feldname** auf *Lieferart* gesetzt ist.
-1. Wählen Sie die Schaltfläche **Hinzufügen** ![rechter Pfeil](media/forward-button.png) aus, um das Feld in die Liste **Ausgewählte Felder** zu verschieben.
+1. Schaltfläche **Hinzufügen** auswählen ![Pfeil nach rechts](media/forward-button.png), um das Feld in die Liste **Ausgewählte Felder** zu verschieben.
 1. Wählen Sie im Aktionsbereich **Abfrage bearbeiten** aus.
 1. Erweitern Sie im Abfrageeditor-Dialogfeld auf der **Verknüpfungen**-Registerkarte in der Baumstruktur **Tabellen \> Ladungsdetails**.
 1. **Tabellen-Join hinzufügen** auswählen.
@@ -251,9 +254,9 @@ Führen Sie die folgenden Schritte aus, um die Versandkonsolidierungsrichtlinie 
 1. Legen Sie die **Konsolidierung mit offenen Lieferungen**-Option auf *Ja* fest.
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
 1. Wählen Sie auf dem Inforegister **Konsolidierungsfelder** in der Liste **Verbleibende Felder** die Zeile aus, in der das Feld **Feldname** auf *Debitorenmaterialanforderung* gesetzt ist.
-1. Wählen Sie die Schaltfläche **Hinzufügen** ![rechter Pfeil](media/forward-button.png) aus, um das Feld in die Liste **Ausgewählte Felder** zu verschieben.
+1. Schaltfläche **Hinzufügen** auswählen ![Pfeil nach rechts](media/forward-button.png), um das Feld in die Liste **Ausgewählte Felder** zu verschieben.
 1. Wählen Sie in der Liste **Verbleibende Felder** die Zeile aus, in der das Feld **Feldname** auf *Lieferart* gesetzt ist.
-1. Wählen Sie die Schaltfläche **Hinzufügen** ![rechter Pfeil](media/forward-button.png) aus, um das Feld in die Liste **Ausgewählte Felder** zu verschieben.
+1. Schaltfläche **Hinzufügen** auswählen ![Pfeil nach rechts](media/forward-button.png), um das Feld in die Liste **Ausgewählte Felder** zu verschieben.
 1. Wählen Sie im Aktionsbereich **Abfrage bearbeiten** aus.
 1. Suchen Sie im Abfrageeditor-Dialogfeld auf der Registerkarte **Bereich** die Zeile, in der das Feld **Feld** auf *Kundenkonto* gesetzt ist, und stellen Sie das Feld **Kriterien** für diese Zeile auf *US-001* ein.
 1. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.
@@ -283,7 +286,7 @@ Führen Sie die folgenden Schritte aus, um die Versandkonsolidierungsrichtlinie 
 1. Lassen Sie die **Konsolidierung mit offenen Lieferungen**-Option auf *Nein* gesetzt.
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
 1. Wählen Sie auf dem Inforegister **Konsolidierungsfelder** in der Liste **Verbleibende Felder** die Zeile aus, in der das Feld **Feldname** auf *Lieferart* gesetzt ist.
-1. Wählen Sie die Schaltfläche **Hinzufügen** ![rechter Pfeil](media/forward-button.png) aus, um das Feld in die Liste **Ausgewählte Felder** zu verschieben.
+1. Schaltfläche **Hinzufügen** auswählen ![Pfeil nach rechts](media/forward-button.png), um das Feld in die Liste **Ausgewählte Felder** zu verschieben.
 1. Wählen Sie im Aktionsbereich **Abfrage bearbeiten** aus.
 1. Wählen Sie im Abfrageeditor-Dialogfeld auf der Registerkarte **Bereich** **Hinzufügen** aus, um eine Zeile mit den folgenden Einstellungen zum Raster hinzuzufügen:
 
@@ -317,7 +320,7 @@ In der Regel kann dieser Geschäftsfall mithilfe der von Ihnen erstellten Standa
 1. Lassen Sie die **Konsolidierung mit offenen Lieferungen**-Option auf *Nein* gesetzt.
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
 1. Wählen Sie auf dem Inforegister **Konsolidierungsfelder** im Feld **Verbleibende Felder** die Zeile aus, in der das Feld **Feldname** auf *Lieferart* gesetzt ist.
-1. Wählen Sie die Schaltfläche **Hinzufügen** ![rechter Pfeil](media/forward-button.png) aus, um das Feld in die Liste **Ausgewählte Felder** zu verschieben.
+1. Schaltfläche **Hinzufügen** auswählen ![Pfeil nach rechts](media/forward-button.png), um das Feld in die Liste **Ausgewählte Felder** zu verschieben.
 1. Wählen Sie im Aktionsbereich **Abfrage bearbeiten** aus.
 1. Suchen Sie im Abfrageeditor-Dialogfeld auf der Registerkarte **Bereich** die Zeile, in der das Feld **Feld** auf *Lagerorte* gesetzt ist, und stellen Sie das Feld **Kriterien** für diese Zeile auf *61, 63* ein.
 1. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.
@@ -351,6 +354,3 @@ Die folgenden Szenarien veranschaulichen, wie Sie die Versandkonsolidierungsrich
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 - [Lieferungskonsolidierungsrichtlinien](about-shipment-consolidation-policies.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

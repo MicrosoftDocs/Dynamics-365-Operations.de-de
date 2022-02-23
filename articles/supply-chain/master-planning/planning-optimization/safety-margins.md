@@ -2,13 +2,16 @@
 title: Sicherheitszuschläge
 description: In diesem Thema wird beschrieben, wie Sicherheitsmargen mit dem Planning Optimization Add-In für Microsoft Dynamics 365 Supply Chain Management verwendet werden können.
 author: ChristianRytt
+manager: tfehr
 ms.date: 09/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 7eb5128f3a337bd728cfe8e6d8d3deb0b6b5ef88
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 8ab5f1c3cdfa990a73951ddc5a7469644954d5c2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074966"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428576"
 ---
 # <a name="safety-margins"></a>Sicherheitszuschläge
 
@@ -41,7 +44,7 @@ Es gibt drei Typen von Sicherheitszuschlägen:
 
 Die folgende Abbildung zeigt, wie diese Sicherheitszuschläge im Laufe der Zeit gelten.
 
-![Sicherheitszuschläge.](media/safety-margins-1.png)
+![Sicherheitszuschläge](media/safety-margins-1.png)
 
 Alle Zuschläge werden in Tagen definiert. Der Standardwert von *0* (Null) gibt an, dass der kein Zuschlag angewendet wird. Wenn Sie mehrere Zuschläge einrichten, addieren sich alle zur Gesamtzeit ab Lieferung *Auftragsdatum* auf die Nachfrage *Anforderungsdatum*. Beispielsweise hat eine Einrichtung keine Vorlaufzeit und alle drei Zuschlagstypen sind auf einen Tag festgelegt. In diesem Fall liegen zwischen dem Bestelldatum der Lieferung und dem Datum der Bedarfsanforderung drei Tage. Wenn das Bestelldatum also der 1. Juli ist, ist das Anforderungsdatum der 4. Juli.
 
@@ -51,7 +54,7 @@ Die Sicherheitszuschlag für den Warenzugang ist wahrscheinlich die am häufigst
 
 Die folgende Abbildung zeigt den Sicherheitszuschlag für den Warenzugang.
 
-![Sicherheitszuschlag für Warenzugang.](media/safety-margins-2.png)
+![Sicherheitszuschlag für Warenzugang](media/safety-margins-2.png)
 
 Der Sicherheitszuschlag für den Warenzugang wird normalerweise als Puffer verwendet, um die Zeit für die Lagerregistrierung oder andere zeitaufwändige Prozesse sicherzustellen, die nicht als Teil der allgemeinen Vorlaufzeit im System erfasst werden. Für Einkäufe ist ein Vorteil, dass das *Lieferdatum* der Bestellung entsprechend nach vorne geschoben wird. Wenn Sie die Vorlaufzeit verlängern, anstatt einen Sicherheitszuschlag zu verwenden, wird der Anbieter weiterhin gebeten, in letzter Minute zu liefern.
 
@@ -61,17 +64,23 @@ Beachten Sie, dass kein Sicherheitszuschlag für den Warenzugang angewendet wird
 
 ### <a name="reorder-margin"></a>Sicherheitszuschlag für Wiederbestellung
 
+> [!NOTE]
+> **Bald verfügbar:** Diese Funktion wird für die Planungsoptimierung noch nicht unterstützt. Bis sie unterstützt wird, werden alle eingegebenen Werte für **Zur Artikelvorlaufzeit hinzugefügter Sicherheitszuschlag für Wiederbestellung** als *0* (Null) behandelt.
+
 Die folgende Abbildung zeigt den Sicherheitszuschlag für den Wiederbestellung.
 
-![Sicherheitszuschlag für Wiederbestellung.](media/safety-margins-3.png)
+![Sicherheitszuschlag für Wiederbestellung](media/safety-margins-3.png)
 
 Der Sicherheitszuschlag für die Wiederbestellung wird bei Produktplanung für alle Bestellvorschläge vor der Vorlaufzeit des Artikels hinzugefügt. Dadurch wird zusätzliche Zeit für die Bestellung eines Lieferauftrags sichergestellt. Dieser Zuschlag wird normalerweise als Puffer verwendet, um Zeit für Genehmigungsprozesse oder andere interne Prozesse zu gewährleisten, die bei der Erstellung von Lieferaufträgen erforderlich sind. Der Sicherheitszuschlag für den Wiederbestellung wird zwischen das *Auftragsdatum* und *Anfangsdatum* des Angebots gesetzt.
 
 ### <a name="issue-margin"></a>Sicherheitszuschlag für Warenabgang
 
+> [!NOTE]
+> **Bald verfügbar:** Diese Funktion wird für die Planungsoptimierung noch nicht unterstützt. Bis zur Unterstützung werden alle eingegebenen Werte für **Vom Anforderungsdatum abgezogener Sicherheitszuschlag für Warenabgang** als *0* (Null) behandelt.
+
 Die folgende Abbildung zeigt den Sicherheitszuschlag für den Warenabgang.
 
-![Sicherheitszuschlag für Warenabgang.](media/safety-margins-4.png)
+![Sicherheitszuschlag für Warenabgang](media/safety-margins-4.png)
 
 Der Sicherheitszuschlag für Warenabgang wird bei der Produktplanung vom Bedarfsanforderungsdatum abgezogen. Dies hilft sicherzustellen, dass Sie Zeit haben, um auf eingehende Nachfrageaufträge zu reagieren und diese zu versenden. Dieser Zuschlag wird normalerweise als Puffer verwendet, um die Zeit für den Versand und die damit verbundenen ausgehenden Lagerprozesse sicherzustellen.
 
@@ -81,7 +90,7 @@ Beachten Sie, dass bei Anwendung eines Sicherheitszuschlag für Warenabgang die 
 
 ### <a name="turn-on-safety-margins-in-feature-management"></a>Aktivieren Sie die Sicherheitszuschläge in der Funktionsverwaltung
 
-Bevor Sie diese Funktion mit der Planungsoptimierung nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit der Einstellung [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und ggf. aktivieren. Dort wird die Funktion folgendermaßen aufgelistet:
+Bevor Sie diese Funktion mit der Planungsoptimierung nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit der Einstellung [Funktionsverwaltung](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) den Status der Funktion überprüfen und ggf. aktivieren. Dort wird die Funktion folgendermaßen aufgelistet:
 
 - **Modul:** _Produktprogrammplanung_
 - **Funktionsname:** _Zuschläge für die Planungsoptimierung_
@@ -159,7 +168,7 @@ Die folgende Abbildung zeigt eine Matrix, die zusammenfasst, welche Kalender bei
 - **Lagerort (WH):** Gelb
 - **Lieferant (V):** Blau
 
-[![Übersichtsmatrix für die Kalendereinrichtung.](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
+[![Übersichtsmatrix für die Kalendereinrichtung](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
 
 ## <a name="calculating-delays"></a>Berechnungstage
 
@@ -167,13 +176,10 @@ Alle drei Arten von Sicherheitszuschlägen werden berücksichtigt, wenn das Syst
 
 Beispielsweise hat ein Artikel eine Vorlaufzeit von einem Tag und einen Sicherheitszuschlag für den Warenzugang von drei Tagen. Ein Auftrag für diesen Artikel wird heute wie erforderlich festgelegt. In diesem Fall wird die Verzögerung als *Vorlaufzeit* + *Sicherheitszuschlag für den Warenzugang* = vier Tage berechnet. Wenn also heute der 14. August ist, führen die vier Tage Verzögerung zu einer Lieferung am 18. August. Die folgende Abbildung zeigt dieses Beispiel.
 
-![Beispiel der Verzögerungsberechnung.](media/safety-margins-delays.png)
+![Beispiel der Verzögerungsberechnung](media/safety-margins-delays.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Erste Schritte mit der Planungsoptimierung](get-started.md)
 
 [Passanalyse zu Planungsoptimierung](planning-optimization-fit-analysis.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

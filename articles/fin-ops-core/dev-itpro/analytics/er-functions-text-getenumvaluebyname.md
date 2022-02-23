@@ -2,8 +2,11 @@
 title: GETENUMVALUEBYNAME EB-Funktion
 description: In diesem Thema werden Informationen zur Verwendung der GETENUMVALUEBYNAME-Funktion bei der elektronischen Berichterstellung (EB) bereitgestellt.
 author: NickSelin
+manager: kfend
 ms.date: 09/23/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03759852e5ceb13b79b0df4592bdcef76eb0a82865725c00df40b9cc5f786240
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 29d7ec6498090ea47259303237c5a64a26e4926b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774436"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685930"
 ---
 # <a name="getenumvaluebyname-er-function"></a>GETENUMVALUEBYNAME EB-Funktion
 
@@ -61,7 +64,7 @@ Es wird keine Ausnahme ausgelöst, wenn ein Wert *Enum* nicht unter Verwendung d
 
 In der folgenden Abbildung wird die Aufzählung **ReportDirection** in einem Datenmodell eingeführt. Beachten Sie, dass Beschriftungen für Enumerationswerte definiert werden.
 
-![Verfügbare Werte für eine Datenmodellenumeration.](./media/ER-data-model-enumeration-values.PNG)
+![Verfügbare Werte für eine Datenmodellenumeration](./media/ER-data-model-enumeration-values.PNG)
 
 Die folgende Abbildung zeigt diese Details an:
 
@@ -69,7 +72,7 @@ Die folgende Abbildung zeigt diese Details an:
 - Der Ausdruck `$IsArrivals` ist dazu konzipiert, die auf der Modellenumeration basierende Datenquelle **$Direction** als Parameter dieser Funktion zu verwenden.
 - Der Wert dieses Vergleichswerts lautet **TRUE**.
 
-![Beispiel einer Datenmodellenumeration.](./media/ER-data-model-enumeration-usage.PNG)
+![Beispiel einer Datenmodellenumeration](./media/ER-data-model-enumeration-usage.PNG)
 
 ## <a name="example-2"></a>Beispiel 2
 
@@ -77,14 +80,14 @@ Die Funktionen `GETENUMVALUEBYNAME` und [`LISTOFFIELDS`](er-functions-list-listo
 
 In der folgenden Abbildung wird die Datenquelle **TransType** in einer Modellzuordnung eingeführt. Diese Datenquelle bezieht sich auf die Anwendungsenumeration **LedgerTransType**.
 
-![Datenquelle einer Modellzuordnung, die sich auf eine Anwendungsenumeration bezieht.](./media/er-functions-text-getenumvaluebyname-example2-1.png)
+![Datenquelle einer Modellzuordnung, die sich auf eine Anwendungsenumeration bezieht](./media/er-functions-text-getenumvaluebyname-example2-1.png)
 
 Die folgende Abbildung zeigt die Datenquelle **TransTypeList**, die in einer Modellzuordnung konfiguriert ist. Diese Datenquelle wird basierend auf der Anwendungsenumeration **TransType** konfiguriert. Die Funktion `LISTOFFIELDS` wird verwendet, um alle Enumerationswerte als Liste von Datensätzen zurückzugeben, die Felder enthalten. Auf diese Weise werden die Details jedes Enumerationswerts angezeigt.
 
 > [!NOTE]
 > Das Feld **EnumValue** ist für die Datenquelle **TransTypeList** konfiguriert, wofür der Ausdruck `GETENUMVALUEBYNAME(TransType, TransTypeList.Name)` verwendet wird. Dieses Feld gibt einen Enumerationswert für jeden Datensatz in dieser Liste zurück.
 
-![Datenquelle einer Modellzuordnung, die alle Enumerationswerte einer ausgewählten Enumeration als Liste von Datensätzen zurückgibt.](./media/er-functions-text-getenumvaluebyname-example2-2.png)
+![Datenquelle einer Modellzuordnung, die alle Enumerationswerte einer ausgewählten Enumeration als Liste von Datensätzen zurückgibt](./media/er-functions-text-getenumvaluebyname-example2-2.png)
 
 Die folgende Abbildung zeigt die Datenquelle **VendTrans**, die in einer Modellzuordnung konfiguriert ist. Diese Datenquelle gibt Lieferantentransaktionsdatensätze aus der Anwendungstabelle **VendTrans** zurück. Der Sachkontotyp jeder Transaktion wird durch den Wert im Feld **TransType** definiert.
 
@@ -93,11 +96,11 @@ Die folgende Abbildung zeigt die Datenquelle **VendTrans**, die in einer Modellz
 >
 > Das Feld **TransTypeTitle** ist an das Feld **LedgerType** eines Datenmodells gebunden, mit dem diese Informationen in jedem EB-Format verwendet werden können, das dieses Datenmodell als Datenquelle verwendet.
 
-![Datenquelle einer Modellzuordnung, die Lieferantentransaktionen zurückgibt.](./media/er-functions-text-getenumvaluebyname-example2-3.png)
+![Datenquelle einer Modellzuordnung, die Lieferantentransaktionen zurückgibt](./media/er-functions-text-getenumvaluebyname-example2-3.png)
 
 Die folgende Abbildung zeigt, wie Sie den [Datenquellen-Debugger](er-debug-data-sources.md) verwenden können, um die konfigurierte Modellzuordnung zu testen.
 
-![Verwenden des Datenquellen-Debuggers zum Testen der konfigurierten Modellzuordnung.](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
+![Verwenden des Datenquellen-Debuggers zum Testen der konfigurierten Modellzuordnung](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
 
 Das Feld **LedgerType** eines Datenmodells legt erwartungsgemäß Bezeichnungen von Transaktionstypen offen.
 
@@ -114,6 +117,3 @@ Wenn Sie diesen Ansatz für eine große Menge von Transaktionsdaten verwenden m�
 [FIRSTORNULL EB-Funktion](er-functions-list-firstornull.md)
 
 [WHERE EB-Funktion](er-functions-list-where.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

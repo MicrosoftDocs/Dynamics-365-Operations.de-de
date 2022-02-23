@@ -2,22 +2,24 @@
 title: Ausgehende Workloadvisualisierung
 description: Dieses Thema enthält Informationen über die Visualisierung der ausgehenden Arbeitsauslastung. Mit dieser Funktionalität können Lagerort-Manager und Vorgesetzte benutzerdefinierte Diagramme zur Arbeitsauslastung erstellen, mit denen der Fortschritt der aktuellen Arbeit und die verbleibende Menge überwacht werden kann. Lagerortverwaltungen können mehrere Ansichten erstellen und bei Bedarf eine automatische Aktualisierung festlegen.
 author: Mirzaab
+manager: tfehr
 ms.date: 08/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
-ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 8416d43fe2b8b08e4d66434a1d95daa4b01a0fa4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: 2515a71297df7213f93a4c619f7eebf1c2411b39
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576159"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965551"
 ---
 # <a name="outbound-workload-visualization"></a>Ausgehende Workloadvisualisierung
 
@@ -60,7 +62,7 @@ Um eine Visualisierung der ausgehenden Arbeitsauslastung festzulegen, gehen Sie 
     - **Einzubeziehende Tage** - Geben Sie die Anzahl der Tage in der Vergangenheit ein, für die das Diagramm erstellt werden soll.
     - **Arbeitsauftragstyp** - Wählen Sie die Typen der ausgehenden Arbeitsaufträge, nach denen gefiltert werden soll.
 
-    ![Seite Filter konfigurieren.](media/work-viz-filters-1.png "Seite Filter konfigurieren")
+    ![Seite Filter konfigurieren](media/work-viz-filters-1.png "Seite Filter konfigurieren")
 
 1. Schließen Sie die Seite **Filter konfigurieren**, um zur Seite **Visualisierungen der ausgehenden Arbeitsauslastung** zurückzukehren.
 
@@ -70,11 +72,11 @@ Um eine Visualisierung der ausgehenden Arbeitsauslastung festzulegen, gehen Sie 
     - **Zuletzt aktualisiert** - Dieses Feld zeigt das Datum und die Uhrzeit an, zu der die Informationen im Diagramm zuletzt aktualisiert wurden.
     - **Geschätzte/Ist-Zeit** - Wenn in Ihrem System Arbeitsstandards festgelegt sind, legen Sie diese Option auf *Ja* fest, um die kumulierten geschätzten Kommissionierzeiten oben in jeder Spalte des Diagramms anzuzeigen. Wenn Sie keine Arbeitsstandards verwenden, ist diese Option nicht verfügbar.
 
-    ![Beispielvisualisierung.](media/work-viz-chart.png "Beispiel-Visualisierung")
+    ![Beispielvisualisierung](media/work-viz-chart.png "Beispiel-Visualisierung")
 
 1. Wählen Sie einen beliebigen Balken im Diagramm aus, um die zugehörigen Details zur Arbeitszeile anzuzeigen.
 
-    ![Arbeitspositionsdetails.](media/work-viz-work-details.png "Arbeitspositionsdetails")
+    ![Arbeitspositionsdetails](media/work-viz-work-details.png "Arbeitspositionsdetails")
 
 ## <a name="example-outbound-workload-visualization-for-zones"></a>Beispiel: Visualisierung der ausgehenden Arbeitsauslastung für Zonen
 
@@ -92,9 +94,6 @@ Für dieses Beispiel möchten Sie eine Visualisierung festlegen, die Arbeitszeil
 
 Die folgende Abbildung zeigt ein Beispiel für das resultierende Diagramm.
 
-![Visualisierung von Zone vs. Arbeitsstatus.](media/work-viz-chart.png "Visualisierung von Zone vs. Arbeitsstatus")
+![Visualisierung von Zone vs. Arbeitsstatus](media/work-viz-chart.png "Visualisierung von Zone vs. Arbeitsstatus")
 
 Dieses Diagramm zeigt zwei Zonen mit den Namen **FLOOR** und **BULK**, sowie eine Zone mit dem Namen **Blank**. Die Zone **Leer** repräsentiert alle Arbeitszeilen, die nicht Mitglied einer Zone sind. Das Diagramm zeigt immer alle nicht zugehörigen gefilterten Daten als **Leerzeichen** an, um eine möglichst gute Sichtbarkeit zu gewährleisten. In der Zone **FLOOR** zeigt das Diagramm drei geschlossene Zeilen und vier offene Zeilen. In der Zone **BULK** zeigt das Diagramm vier geschlossene Linien, eine offene Linie und 24 gelöschte Linien. Schließlich zeigt das Diagramm acht geschlossene Zeilen, die zu keiner Zone gehören und daher als **Leer** aufgeführt sind.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

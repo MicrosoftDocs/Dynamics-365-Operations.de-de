@@ -2,9 +2,11 @@
 title: Adressbücher – Häufig gestellte Fragen
 description: In diesem Thema finden Sie Antworten auf häufig gestellte Fragen zu Adressbüchern.
 author: msftbrking
-ms.date: 02/03/2021
+manager: AnnBe
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d429639f52c745a737567419b6012884ab20d43d
-ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
+ms.openlocfilehash: 922900b20b878dd8b479158d47a9f7792caa684d
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463620"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796897"
 ---
 # <a name="address-books-faq"></a>FAQs zu Adressbüchern
 
@@ -65,13 +67,3 @@ Sie können Parteidatensätze entweder im globalen Adressbuch oder auf der entsp
 ## <a name="can-i-translate-address-information-for-party-records"></a>Kann ich Adressinformationen für Parteidatensätze übersetzen?
 
 Sie können Übersetzungen von Adressinformationen einrichten, damit die Information in Ihrem Programm in der Sprache des Benutzers (Systemsprache) und in anderen Dokumenten, wie z. B. Aufträgen, in einer anderen Sprache angezeigt wird. Sie können Übersetzungen für Namen von Ländern/Regionen, zu Adresszwecken und Namensfolgen eingeben. Ihre Systemsprache ist z. B. Dänisch, und Sie erstellen einen Auftrag für einen Kunden in Frankreich. In diesem Fall können Sie den Debitorendatensatz auf Dänisch im Programm anzeigen, die Adressinformationen jedoch in dem gedruckten Auftrag auf französisch anzeigen. Wenn Sie Übersetzungen einrichten, sollten Sie eine Übersetzung für jeden Artikel in der Liste eingegeben. Alle Artikel, für die Sie keine Übersetzung eingeben, werden in der Systemsprache angezeigt. Ihre Systemsprache ist z. B. Dänisch, und Sie senden ein Dokument an einen Kunden in Spanien. Wenn Sie keine spanischen (ESP) Übersetzungen für die Adressdaten eingegeben haben, werden die Informationen im System und auf gedruckten Materialien auf Dänisch angezeigt.
-
-## <a name="after-i-import-addresses-why-cant-i-edit-the-records"></a>Warum kann ich die Datensätze nach dem Importieren von Adressen nicht bearbeiten?
-
-Wenn Sie Adressen importieren, gibt es ein Feld mit dem Namen **IsLocationOwner**. Dieses Feld zeigt an, ob die Partei, die dem Standort (Adresse) zugeordnet ist, der Besitzer der Adresse ist. Wenn die Partei der Besitzer der Adresse ist, kann die Adresse bearbeitet werden, wenn die Partei im globalen Adressbuch oder über die Masterdatensatzseite (z. B. Debitor, Kreditor oder Arbeitskraft) verwendet wird. Wenn die Partei nicht der Besitzert der Adresse ist, kann der Datensatz nicht bearbeitet werden. 
-
-Beim SIe Adressen importieren sollte das Feld **IsLocationOwner** auf **Ja** eingestellt werden, wenn Sie möchten, dass die Adresse über die zugeordnete Partei bearbeitet werden kann. Wird dieses Feld falsch importiert, kann der Standortbesitzer im globalen Adressbuch aktualisiert werden.
-
-Weitere Informationen zum Ändern des Standortbesitzers einer importierten Adresse finden Sie unter [Standortbistzer verwalten](./global-address-book-location-owner.md).
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

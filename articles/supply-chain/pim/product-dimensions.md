@@ -2,13 +2,16 @@
 title: Produktdimensionen
 description: Es gibt fünf Produktdimensionen – Farbe, Konfiguration, Größe, Stil und Version. Sie kombinieren Produktdimensionen in den Dimensionsgruppen und weisen diesen Dimensionsgruppen Produktmaster zu. Diese Kombinationen der Produktdimensionen bestimmen, wie Produktvarianten definiert sind.
 author: t-benebo
+manager: tfehr
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations, Retail
 ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 46079daafc744421abcbdf0a3539428f2a39f13c
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: bdfd9482d30bd65cf84fae032df78e1243e05239
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920522"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428476"
 ---
 # <a name="product-dimensions"></a>Produktdimensionen
 
@@ -78,7 +81,7 @@ Ein Unternehmen verkauft Denim-Jeans. Für den Artikel *Jeans* werden die Produk
 
 ## <a name="the-version-product-dimension"></a>Die Produktdimension „Version“
 
-„Version“ ist eine Produktdimension, mit der Sie mehrere Versionen eines Produkts in der gesamten Lieferkette verwalten und verfolgen können. Die Versionsverwaltung ist für den Erfolg von Herstellern unerlässlich, die in einer Welt ständig kürzer werdender Produktlebenszyklen, erhöhter Qualitäts- und Zuverlässigkeitsanforderungen und eines verstärkten Fokus auf die Produktsicherheit tätig sind.
+„Version“ ist eine Produktdimension, mit der Sie mehrere Versionen eines Produkts in der gesamten Lieferkette verwalten und verfolgen können. Die Versionsverfolgung ist entscheidend für den Erfolg von Herstellern, die in einer Welt mit ständig verkürzten Produktlebenszyklen, erhöhten Qualitäts‑ und Zuverlässigkeitsanforderungen und einem erhöhten Fokus auf Produktsicherheit tätig sind.
 
 Als Standardproduktdimension verhält sich die „Version“ ähnlich wie die vorhandenen Produktdimensionen (Größe, Stil, Farbe und Konfiguration). Daher können Sie sie neben der Verfolgung von Produktversionen auch für andere Zwecke verwenden.
 
@@ -104,7 +107,7 @@ Achten Sie beim Testen Ihrer Lösungen auf Kompatibilität mit der Dimension „
     - PCVariantConfiguration::findByProductMasterAndDimensions
 
 1. **Karten** – Wenn Karten die Lagerungsdimensionen verwenden, muss die entsprechende Beziehungszuordnung zu diesen Karten aktualisiert werden, sodass sie die Dimension „Version“ enthalten. Achten Sie in den erweiterten Modell‑ oder Tabellenerweiterungen auf Tabellen, in denen die Felder Lagerungsdimensionen enthalten.
-1. **Microsoft Dynamics 365 Commerce-Funktionalität:** Nachdem sie eingeschaltet ist, erscheint die Versionsdimension im gesamten Commerce-spezifischen Code in Dynamics 365 Supply Chain Management. Die Dimension „Version“ wird jedoch noch nicht von der Commerce-Kanaldatenbank oder in den Verkaufsstellen POS- bzw. E-Commerce-Anwendungen unterstützt. Diese Commerce-spezifischen Anwendungen unterstützen keine Benutzer, die Bestand nach Versionsdimension verkaufen/versenden oder zurückgeben/empfangen. Suchfunktionen für die Verfügbarkeit von Bestand unterscheiden keinen Bestand nach Versionsdimension in Commerce-Apps. Dieses Verhalten ähnelt dem aktuellen Verhalten der Konfigurationsdimension in Commerce.
+1. **Microsoft Dynamics 365 Commerce-Funktionalität** – Nach dem Aktivieren wird die Dimension „Version“ im gesamten Commerce-spezifischen Code in Dynamics 365 Supply Chain Management angezeigt. Die Dimension „Version“ wird jedoch noch nicht von der Commerce-Kanaldatenbank oder in den Verkaufsstellen POS- bzw. E-Commerce-Anwendungen unterstützt. Diese Commerce-spezifischen Anwendungen unterstützen keine Benutzer, die Bestand nach Versionsdimension verkaufen/versenden oder zurückgeben/empfangen. Suchfunktionen für die Verfügbarkeit von Bestand unterscheiden keinen Bestand nach Versionsdimension in Commerce-Apps. Dieses Verhalten ähnelt dem aktuellen Verhalten der Konfigurationsdimension in Commerce.
 
 #### <a name="turn-on-the-version-dimension"></a>Die Dimension „Version“ aktivieren
 
@@ -119,7 +122,7 @@ Bevor Sie die Dimension „Version“ nutzen können, muss sie auf Ihrem System 
 
 ### <a name="areas-where-the-version-dimension-isnt-supported"></a>Bereiche, in denen die Dimension „Version“ nicht unterstützt wird
 
-Die folgenden Bereiche unterstützen die Versionsdimension nicht. Sie können diese Bereiche weiterhin verwenden, aber Sie können ihnen keine versionierten Produkte (Produkte, bei denen die Versionsdimension verwendet wird) hinzufügen. Beispielsweise können Sie einem Lieferantenkatalog keinen versionierten Artikel hinzufügen. Dies liegt daran, dass das Hinzufügen von Produkten mit der Versionsdimension zu diesen Bereichen zu Breaking Changes führen würde.
+Die folgenden Bereiche unterstützen die Dimension „Version“ nicht, da die Einführung dieser Dimension zu wesentlichen Änderungen führen würde:
 
 - Kostenobjekt, monatliche Abrechnung
 - Kostenobjektaufstellungs-Cache
@@ -143,6 +146,3 @@ Die Dimension „Version“ funktioniert wie die anderen Produktdimensionen. Auf
 
 > [!IMPORTANT]
 > Wenn Sie die Dimension „Version“ aktivieren und verwenden, funktionieren einige Lösungen, die auf die Lagerungsdimensionen verweisen, möglicherweise nicht wie erwartet. Wenden Sie sich an den unabhängigen Softwareanbieter (ISV), um diese Probleme zu bestätigen und zu beheben. Weitere Informationen finden Sie unter [Die Dimension „Version“ aktivieren](#enable-version-dim).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

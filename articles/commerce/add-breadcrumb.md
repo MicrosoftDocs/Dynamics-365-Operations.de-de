@@ -1,13 +1,16 @@
 ---
 title: Breadcrumb-Modul
-description: Dieses Thema behandelt Breadcrumb-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+description: Dieses Thema enthält Breadcrumb-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
+manager: annbe
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2ba857ef7a796336bab3709817b5ba48fd3fa845667e4b9c40596cfe450290f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ec9f5c72b03d9fd76055369e24491db5c7633cdf
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720011"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517159"
 ---
 # <a name="breadcrumb-module"></a>Breadcrumb-Modul
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema behandelt Breadcrumb-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+Dieses Thema enthält Breadcrumb-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+
+## <a name="overview"></a>Übersicht
 
 Breadcrumb-Module werden verwendet, um eine sekundäre Navigation auf Websiteseiten bereitzustellen. Sie werden normalerweise oben auf einer Seite unterhalb der Kopfzeile angezeigt. Obwohl Breadcrumb-Module zu jeder Seite hinzugefügt werden können, werden sie am häufigsten auf Produktdetailseiten (PDPs) verwendet, um die Produktkategoriehierarchie anzuzeigen und eine schnelle Möglichkeit zum Bewegen auf einer Site bereitzustellen. Ein Breadcrumb-Modul kann auch verwendet werden, um einen Link Zurück zu Ergebnissen anzuzeigen, wenn Benutzer einen PDP über eine Such- oder Listenseite öffnen. Auf diese Weise können Benutzer schnell zu ihrer gefilterten Listenseite zurückkehren, um mit dem Einkaufen fortzufahren.
 
@@ -37,7 +42,7 @@ Auf Seiten mit Produktkategoriekontext, wie z. B. PDPs und Kategorieseiten, zeig
 
 Das folgende Bild zeigt ein Beispiel eines Breadcrumb-Moduls, das die Kategoriehierarchie auf einem PDP zeigt.
 
-![Beispiel eines Breadcrumb-Moduls.](./media/ecommerce-breadcrumb.PNG)
+![Beispiel eines Breadcrumb-Moduls](./media/ecommerce-breadcrumb.PNG)
 
 ## <a name="breadcrumb-module-settings"></a>Einstellungen des Breadcrumb-Moduls
 
@@ -90,6 +95,3 @@ Um ein Breadcrumb-Modul einem PDP hinzuzufügen und die erforderlichen Eigenscha
 [Kauffeldmodul](add-buy-box.md)
 
 [SDK- und Modulbibliothekupdates](e-commerce-extensibility/sdk-updates.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

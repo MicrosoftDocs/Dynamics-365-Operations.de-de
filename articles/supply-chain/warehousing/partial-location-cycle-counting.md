@@ -2,13 +2,16 @@
 title: Teilweise Lagerplatz-Zykluszählung
 description: Zykluszählungspläne leiten die tatsächlichen Zähloperationen. Sie können festlegen, dass nur bestimmte Produkte und Produktvarianten anstelle aller verfügbaren Lagerbestände eines Lagerplatzes gezählt werden.
 author: perlynne
+manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable, WHSRFMenuItemCycleCount, WHSCycleCountPlanListPage
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f06b39f3c2d2f5a0bdfef1da9395c71686ed46968a1143305b5a10787f7e85f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a541818a72f5c24db8784071f447c83a2aa4edfd
+ms.sourcegitcommit: 95f90ac3f248716abdab16d5de6ccbf059616e4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778433"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4666745"
 ---
 # <a name="partial-location-cycle-counting"></a>Teilweise Lagerplatz-Zykluszählung
 
@@ -46,7 +49,7 @@ Bevor teilweise Zykluszählungsarbeit verarbeitet werden kann, müssen Sie zumin
 Für den Teilzykluszählprozess werden das Datum und die Uhrzeit der **Zählung beim letzten Zyklus** für den Standort nicht aktualisiert, obwohl alle an einem bestimmten Standort vorhandenen Artikel gezählt werden. Die Teilzykluszählung berücksichtigt den Parameter **Tage zwischen der Zykluszählung** auf der **Zykluszählpläne**-Seite nicht. Die Teilzykluszählung unterstützt nicht die gleichzeitige Zählung mehrerer Elemente am selben Lagerort. Die Teilzykluszählfunktion kann dazu führen, dass derselbe Lagerort für einen Artikel mehrmals gezählt wird, wenn der **Prozesszykluszählungsplan** ausgeführt wird. Um dieses Szenario zu vermeiden, geben Sie Filter im Feld **Lagerorte auswählen** an.
 
 > [!NOTE]
-> Die Warehouse Management Mobile App stellt die Schaltfläche **LP oder Element hinzufügen** nicht zur Verfügung, wenn Sie den Prozess der partiellen Zykluszählung verwenden.
+> Die Lagerort App stellt die Schaltfläche **LP oder Element hinzufügen** nicht zur Verfügung, wenn Sie den Prozess der partiellen Zykluszählung verwenden.
 
 ## <a name="example"></a>Beispiel
 
@@ -59,6 +62,3 @@ In vorliegenden Beispiel muss nur Artikelnummer A0001 in Lagerort 61 gezählt we
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Zykluszählung](cycle-counting.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

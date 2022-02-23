@@ -1,26 +1,29 @@
 ---
 title: Artikelprognose berechnen
 description: In diesem Thema wird erläutert, wie die Artikelplanung in der Anlagenverwaltung berechnet wird.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetItemForecast
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5773149760ecb2a26f4916036fe36c9cc04f654039dee4eab9bfac86eb02e1fd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f8f38ac7bfb270f648cd561da50ee5477721ab47
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713029"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428820"
 ---
 # <a name="calculate-item-forecast"></a>Artikelprognose berechnen
 
@@ -56,7 +59,4 @@ Dies ist hilfreich, wenn Sie einen Überblick über den erwarteten Artikelverbra
 
 8. Klicken Sie auf die Schaltfläche **Dimensionen anzeigen**, wenn Sie das Produktdimensionen, die Lagerdimensionen oder die Rückverfolgungsangaben anzeigen möchten, die Artikeln zugeordnet werden. Aktivieren Sie die relevanten Kontrollkästchen, und klicken Sie auf **OK**.
 
-![Abbildung 1.](media/02-capacity-planning.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Abbildung 1](media/02-capacity-planning.png)

@@ -1,10 +1,12 @@
 ---
 title: 'ER – Verwendung von Finanzdimensionen als Datenquelle (Teil 3: Berichtsentwurf)'
-description: In diesem Thema wird beschrieben, wie Sie ein EB-Modell (elektronische Berichterstellung) konfigurieren, um Finanzdimensionen als Datenquelle für EB-Berichte zu verwenden. (Teil 3)
+description: In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Modell zur Nutzung von Finanzdimensionen als Datenquelle für ER-Berichte nutzen kann.
 author: NickSelin
+manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c854e9d30006dfa2deed63983a3a6b67f6ae9717
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: a12f88f1e8b5e451bc8a5c5486d820da61bf3ad0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605184"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684786"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3---design-the-report"></a>ER – Verwendung von Finanzdimensionen als Datenquelle (Teil 3: Berichtsentwurf)
 
@@ -92,7 +94,7 @@ Um diese Schritte auszuführen, müssen Sie erst die Schritte im Verfahren „ER
 59. Klicken Sie auf "Attribut hinzufügen".
 60. Geben Sie im Feld Name "Desc" ein.
 61. Klicken Sie auf "OK".
-![Formatdesignerseiten-Baum.](../media/er-financial-dimensions-guides-format1.png)
+![EB-Vorgangs-Designerseite](../media/er-financial-dimensions-guides-format1.png)
 
 ## <a name="map-report-elements-to-data-sources"></a>Zuweisen von Berichtselementen zu Datenquellen
 1. Klicken Sie auf die Registerkarte Zuordnung.
@@ -141,8 +143,5 @@ Um diese Schritte auszuführen, müssen Sie erst die Schritte im Verfahren „ER
 44. Klicken Sie auf Binden.
 45. Klicken Sie auf Speichern.
 46. Schließen Sie die Seite.
-![Formatdesignerseite, Datenquellen zugeordnete Berichtselemente.](../media/er-financial-dimensions-guides-format2.png)
+![EB-Vorgangs-Designerseite](../media/er-financial-dimensions-guides-format2.png)
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

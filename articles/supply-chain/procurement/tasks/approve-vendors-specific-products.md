@@ -1,24 +1,26 @@
 ---
 title: Händler für bestimmte Produkte genehmigen
 description: Diese Prozedur zeigt Ihnen an, wie Sie Händler für bestimmte Produkte genehmigen.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, PdsApprovedVendorList, VendTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c4c48bfbcc3fb64bae66fe3cfef1d55d15049bb9
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 1cc7d8a93bdbdb5a1446fc34beff4b74aa9d11a0
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575434"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016652"
 ---
 # <a name="approve-vendors-for-specific-products"></a>Händler für bestimmte Produkte genehmigen
 
@@ -59,6 +61,3 @@ Diese Prozedur zeigt Ihnen an, wie Sie Händler für bestimmte Produkte genehmig
 31. Schließen Sie die Seite.
 32. Schließen Sie die Seite.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

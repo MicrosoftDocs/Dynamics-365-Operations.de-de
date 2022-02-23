@@ -1,31 +1,37 @@
 ---
 title: Video-Player-Modul
-description: Dieses Thema behandelt Video-Player-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+description: Dieses Thema enthält Video-Player-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
-ms.date: 07/08/2021
+manager: annbe
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8d09797d24572a99cc8f5ed2d34b73eb7144af7a35661a929b6a571a20dfed04
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3cf7ead9a5340d5db37a87bdf131ba87681d5a82
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731718"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412520"
 ---
 # <a name="video-player-module"></a>Video-Player-Modul
 
+
 [!include [banner](includes/banner.md)]
 
-Dieses Thema behandelt Video-Player-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+Dieses Thema enthält Video-Player-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+
+## <a name="overview"></a>Übersicht
 
 Das Video-Player-Module wird verwendet, um die Videowiedergabe zu unterstützen. Es kann zu jeder Seite hinzugefügt werden, vorausgesetzt, der Videoinhalt wird in das Content Management System (CMS) hochgeladen und ist dort verfügbar. Das Video-Player-Modul unterstützt den Medientyp .mp4.
 
@@ -43,16 +49,12 @@ Das Video-Player-Modul unterstützt auch sekundäre Audiospuren. Beim Hochladen 
 
 Das folgende Bild zeigt ein Beispiel eines Videoplayermoduls, das auf einer Homepage verwendet wird.
 
-![Beispiel eines Video-Player-Moduls.](./media/ecommerce-videoplayer.PNG)
+![Beispiel eines Video-Player-Moduls](./media/ecommerce-videoplayer.PNG)
 
 ### <a name="video-player-module-properties"></a>Video-Player-Moduleigenschaften
 
 | Eigenschaftenname         | Wert                               | Beschreibung |
 |-----------------------|-------------------------------------|-------------|
-| Überschrift               | Überschriftentext und Überschriftsmarkierung (**H1**, **H2**, **H3**, **H4**, **H5** oder **H6**) | Standardmäßig wird für die Überschrift die **H2**-Überschriftsmarkierung verwendet, aber die Markierung kann nach Bedarf geändert werden, um die Zugangsanforderungen zu erfüllen. |
-| Rich Text             | Absatztext | Das Modul unterstützt Absatztext im Rich-Text-Format. Einige grundlegende Rich-Text-Funktionen werden unterstützt, wie Hyperlinks, fett und kursiv formatierte sowie unterstrichene Texte. Einige dieser Funktionen können vom Seitenthema überschrieben werden, das im Modul verwendet wird. |
-| Verknüpfung                  | Link-Text, Link-URL, Accessible Rich Internet Applications-Beschriftung (ARIA) und Auswahl **Link in neuer Registerkarte öffnen** | Das Modul unterstützt mindestens einen oder mehrere „Handlungsaufruf“-Links. Wenn ein Link hinzugefügt wird, sind der Linktext, eine URL und eine ARIA-Beschriftung erforderlich. ARIA-Beschriftungen sollen beschreibend sein, um Barrierefreiheitsbedingungen zu erfüllen. Links können konfiguriert werden, sodass sie auf einer neuen Registerkarte geöffnet werden. |
-| Untertext              | Überschrift, Text oder Links | Es kann zusätzlicher Kontext für das Video-Player-Modul hinzugefügt werden, z. B. ein Autoren- oder Designername oder Links zu persönlichen Blogs. |
 | Automatische Wiedergabe             | **True** oder **False**               | Wenn der Wert auf **Wahr** gesetzt wird, wird das Video automatisch wiedergegeben. |
 | Stummschalten                  | **True** oder **False**               | Wenn der Wert auf **Wahr** gesetzt wird, wird der Ton abgeschaltet. Standardmäßig besitzt das Feld für diesen Player den Wert **False**. Im Chrome Browser wird automatische Wiedergabe standardmäßig stumm geschaltet, und die Audiowiedergabe wird nur abgespielt, wenn der Benutzer das Video manuell wiedergibt. |
 | Schleife                  | **True** oder **False**               | Wenn der Wert auf **Wahr** gesetzt wird, wird das Video im Loop wiederholt. |
@@ -62,9 +64,6 @@ Das folgende Bild zeigt ein Beispiel eines Videoplayermoduls, das auf einer Home
 | Videoplayer-Steuerungen | **True** oder **False**               | Wenn der Wert auf **True** gesetzt wird, werden alle Steuerungen des Video-Players angezeigt. Zu diesen Steuerelementen gehören Wiedergabe- und Pausenschaltflächen, ein Fortschrittsbalken und Untertiteloptionen. |
 | Posterbild ausblenden     | **True** oder **False**               | Ein Videodatei kann einen Plakatrahmen haben. Wenn der Wert dieser Eigenschaft auf **Wahr** festgelegt wurde, wird der Plakatrahmen ausgeblendet. |
 | Maske festlegen            | Eine Nummer aus **0** bis **100** | Die Maske, die für die Videodatei für die Formatierung angewendet wird. |
-
-> [!IMPORTANT]
-> Die Eigenschaften **Überschrift**, **Rich-Text**, **Link** und **Untertext** stehen ab der Dynamics 365 Commerce-Version 10.0.20 zur Verfügung.
 
 ## <a name="add-a-video-player-module-to-a-page"></a>Hinzufügen eines Video-Player-Moduls zu einer Seite
 
@@ -107,6 +106,3 @@ Um ein Video-Player-Modul einer neuen Seite hinzuzufügen und die erforderlichen
 [Textblockmodul](add-content-rich-block.md)
 
 [Inhaltsblockmodul](add-hero-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

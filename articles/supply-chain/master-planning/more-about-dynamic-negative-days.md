@@ -1,21 +1,30 @@
 ---
 title: Negative und dynamisch negative Tage
 description: Dieses Thema enthält Informationen zu negativen Tagen und dynamischen negativen Tagen und wie Sie diese verwenden können, um Ihr Unternehmen zu unterstützen.
-author: ChristianRytt
-ms.date: 05/25/2021
+author: t-benebo
+manager: tfehr
+ms.date: 06/06/2019
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.author: crytt
+ms.search.scope: Core, Operations
+ms.custom: 72704
+ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
+ms.search.region: global
+ms.search.industry: Manufacturing
+ms.author: kamaybac
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d5e86cc8abd4de1e23b1a7f7217bbb1fd5ea966b988a879e663b6f393e0d1204
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5e64a4bd9e65b62bb782785a363aa2eee5264e3a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756966"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428678"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Negative und dynamisch negative Tage
 
@@ -39,11 +48,11 @@ Sie können jeweils entweder verhältnismäßig früh Bedarf bei der Durchlaufze
 - Der DemoProduct-Artikel hat eine sechstägige Lieferzeit.
 - Am Tag Null (1. Januar), ist der Lagerbestand für den DemoProduct-Artikel 0 (null).
 - Am Tag Null (1. Januar) erhalten Sie einen Auftrag für die Menge 10 des DemoProduct-Artikels
-- Am Tag sieben (8. Januar) gibt es eine vorhandene Bestellung der Menge 10 des DemoProduct-Artikels.
+- Am Tag sieben (7. Januar)  gibt es eine vorhandene Bestellung der Menge 10 des DemoProduct-Artikels.
 
 Die folgende Abbildung zeigt eine grafische Ansicht dieses Szenarios.
 
-![Grafische Darstellung von Szenario 1.](./media/negative-days-1.jpg)
+![Grafische Darstellung von Szenario 1](./media/negative-days-1.jpg)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Fall A: Negative Tage sind geringer als die Lieferzeit des Artikels
 
@@ -51,11 +60,11 @@ Wenn Sie die negativen Tage auf einen Wert, der kleiner ist als die Lieferzeit d
 
 Die folgende Abbildung zeigt ein Bildschirmfoto dieses Falles
 
-![Screenshot der Falles A für Szenario 1.](./media/negative-days-2.png)
+![Screenshot der Falles A für Szenario 1](./media/negative-days-2.png)
 
 Die folgende Abbildung zeigt eine grafische Ansicht, was in diesem Fall passiert.
 
-![Grafische Ansicht des Falles A für Szenario 1.](./media/negative-days-3.png)
+![Grafische Ansicht des Falles A für Szenario 1](./media/negative-days-3.png)
 
 Wenn Sie MRP-Leistung erkennen und Nervosität planen, wird dieser Fall nicht erfolgreich sein. MRP muss einen neuen geplanten Auftrag erstellen und muss die Verzögerungen und Aktivitäten berechnen. Diese Aufgaben sind zeitaufwendig. Dieser Fall fügt auch zwei weitere Transaktionen Ihrem Plan hinzu. Andererseits wird der Auftrag nur um sechs Tage und nicht um sieben Tage verzögert.
 
@@ -73,27 +82,27 @@ Wenn der Standardauftragstyp des DemoProduct-Artikels **Produktion** oder **Übe
 
 Wenn dynamische negative Tage verwendet werden, ist der Zeitraum, in dem MRP nach Belegen sucht, nun 6 + 2 + 0 = 8 Tage. MRP findet die vorhandene Bestellung und gleicht den Auftrag damit ab. Keine neuen geplanten Aufträge werden erstellt. Deshalb ist die Laufzeit für MRP kürzer. Die folgende Abbildung zeigt den Nettobedarf für den DemoProduct Artikel an.
 
-![Nettobedarf für Fall C für Szenario 1.](./media/negative-days-4.png)
+![Nettobedarf für Fall C für Szenario 1](./media/negative-days-4.png)
 
 Die folgende Abbildung zeigt eine grafische Ansicht, was in diesem Fall passiert.
 
-![Grafische Ansicht des Falles C für Szenario 1.](./media/negative-days-5.png)
+![Grafische Ansicht des Falles C für Szenario 1](./media/negative-days-5.png)
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>Fall D: Nur dynamische negative Tage verwenden
 
-Wenn Sie die negativen Tage auf **0** (Null) festlegen und nur den Planungszeitraum mit den dynamischen negativen Tagen verwenden, ist der negative Planungszeitraum 6 + 0 + 0 = 6 Tage. In diesem Fall ist das Ergebnis mit dem Ergebnis von Fall A für dieses Szenario identisch. MRP muss einen neuen geplanten Auftrag erstellen und muss die Verzögerungen und Aktivitäten berechnen. Diese Aufgaben sind zeitaufwendig und können auch frustrierend sein. Zudem haben Sie zwei weitere Transaktionen zu verarbeiten. Da der Bedarf nicht rechtzeitig abgeschlossen werden kann, bis der Artikel eintrifft, verursacht dieser Fall unnötige Komplikationen in Ihrem Plan.
+Wenn Sie die negativen Tage auf **0** (Null) festlegen und nur den Planungszeitraum mit den dynamischen negativen Tagen verwenden, ist der negative Planungszeitraum 6 + 0 = 6 Tage. In diesem Fall ist das Ergebnis mit dem Ergebnis von Fall A für dieses Szenario identisch. MRP muss einen neuen geplanten Auftrag erstellen und muss die Verzögerungen und Aktivitäten berechnen. Diese Aufgaben sind zeitaufwendig und können auch frustrierend sein. Zudem haben Sie zwei weitere Transaktionen zu verarbeiten. Da der Bedarf nicht rechtzeitig abgeschlossen werden kann, bis der Artikel eintrifft, verursacht dieser Fall unnötige Komplikationen in Ihrem Plan.
 
 Die folgende Abbildung zeigt ein Bildschirmfoto für diesen Fall.
 
-![Bildschirmfoto von Fall D für Szenario 1.](./media/negative-days-6.png)
+![Bildschirmfoto von Fall D für Szenario 1](./media/negative-days-6.png)
 
 Die folgende Abbildung zeigt eine grafische Ansicht, was in diesem Fall passiert.
 
-![Grafische Ansicht des Falles D für Szenario 1.](./media/negative-days-7.png)
+![Grafische Ansicht des Falles D für Szenario 1](./media/negative-days-7.png)
 
 ### <a name="case-e-use-both-negative-days-that-are-more-than-the-items-lead-time-and-the-dynamic-negative-days-time-fence"></a>Fall E: Sowohl negative Tage nutzen, die größer sind, als die Lieferzeit des Artikels wie auch dynamische negativen Tage im Planungszeitraum nutzen.
 
-Wenn Sie die negativen Tage auf einen Wert festlegen, der größer ist als die Lieferzeit des Artikels und wenn Sie auch den Planungszeitraum der dynamischen negativen Tage nutzen, lautet der Zeitraum für die dynamischen Tage 6 + 6 + 0 = 12 Tage. Dieser Ansatz produziert möglicherweise einen äußerst langen Planungszeitraum, in dem MRP Ergebnisse suchen muss. Informationen darüber, wie beispielsweise Fall E einer Situation zugeordnet ist, in dem Sie die negativen Tage auf einen langen Zeitraum festlegen, finden Sie im Abschnitt [Schlussfolgerung](#conclusion) in diesem Thema.
+Wenn Sie die negativen Tage auf einen Wert festlegen, der größer ist als die Lieferzeit des Artikels und wenn Sie auch den Planungszeitraum der dynamischen negativen Tage nutzen,  lautet der Zeitraum für die dynamischen Tage 6 + 6 + 0 = 12 Tage. Dieser Ansatz produziert möglicherweise einen äußerst langen Planungszeitraum, in dem MRP Ergebnisse suchen muss. Informationen darüber, wie beispielsweise Fall E einer Situation zugeordnet ist, in dem Sie die negativen Tage auf einen langen Zeitraum festlegen, finden Sie im Abschnitt [Schlussfolgerung](#conclusion) in diesem Thema.
 
 ## <a name="scenario-2-you-get-demand-during-the-items-lead-time-period"></a>Szenario 2: Sie erhalten Bedarf während dem Lieferzeitzeitraum des Artikels
 
@@ -101,12 +110,12 @@ Sie können Bedarf während der Lieferzeit des Artikels erhalten. Hier ist ein B
 
 - Der DemoProduct-Artikel hat eine sechstägige Lieferzeit. 
 - Am Tag Null (1. Januar), ist der Lagerbestand für den DemoProduct-Artikel 0 (null).
-- An Tag vier (5. Januar), der innerhalb der Lieferzeit des Artikels liegt, erhalten Sie einen Auftrag für die Menge 10 des DemoProduct-Artikels.
+- An Tag vier (5. Januar), der  innerhalb der Lieferzeit des Artikels liegt, erhalten Sie einen Auftrag für die Menge 10 des DemoProduct-Artikels.
 - Am Tag sieben (8. Januar) gibt es eine Bestellung für die Menge 10 des DemoProduct-Artikels.
 
 Die folgende Abbildung zeigt eine grafische Ansicht dieses Szenarios.
 
-![Grafische Darstellung von Szenario 2.](./media/negative-days-8.png)
+![Grafische Darstellung von Szenario 1](./media/negative-days-8.png)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Fall A: Negative Tage sind geringer als die Lieferzeit des Artikels
 
@@ -114,11 +123,11 @@ Wenn Sie die negativen Tage auf einen Wert, der kleiner ist als die Lieferzeit d
 
 Die folgende Abbildung zeigt ein Bildschirmfoto für diesen Fall.
 
-![Screenshot der Falles A für Szenario 2.](./media/negative-days-9.png)
+![Screenshot der Falles A für Szenario 2](./media/negative-days-9.png)
 
 Die folgende Abbildung zeigt eine grafische Ansicht, was in diesem Fall passiert.
 
-![Grafische Ansicht des Falles A für Szenario 2.](./media/negative-days-10.png)
+![Grafische Ansicht des Falles A für Szenario 2](./media/negative-days-10.png)
 
 ### <a name="case-b-negative-days-are-more-than-the-items-lead-time"></a>Fall B: Negative Tage sind größer als die Lieferzeit des Artikels
 
@@ -130,11 +139,11 @@ Dieser Fall ähnelt Fall C für Szenario 1, da dynamische negative Tage ebenso g
 
 Die folgende Abbildung zeigt ein Bildschirmfoto dieses Falles
 
-![Bildschirmfoto von Fall C für Szenario 2.](./media/negative-days-11.png)
+![Bildschirmfoto von Fall C für Szenario 2](./media/negative-days-11.png)
 
 Die folgende Abbildung zeigt eine grafische Ansicht, was in diesem Fall passiert.
 
-![Grafische Ansicht des Falles C für Szenario 2.](./media/negative-days-12.png)
+![Grafische Ansicht des Falles C für Szenario 2](./media/negative-days-12.png)
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>Fall D: Nur dynamische negative Tage verwenden
 
@@ -142,7 +151,7 @@ Wenn Sie die negativen Tage auf **0** (Null) festlegen und nur den Planungszeitr
 
 ### <a name="case-e-use-both-negative-days-that-are-more-than-the-items-lead-time-and-the-dynamic-negative-days-time-fence"></a>Fall E: Sowohl negative Tage nutzen, die größer sind, als die Lieferzeit des Artikels wie auch dynamische negativen Tage im Planungszeitraum nutzen.
 
-Wenn Sie die negativen Tage auf einen Wert festlegen, der größer ist als die Lieferzeit des Artikels und wenn Sie auch den Planungszeitraum der dynamischen negativen Tage nutzen, lautet der Zeitraum für die dynamischen Tage 6 + 6 - 4 = 8 Tage. Dieser Ansatz produziert möglicherweise einen äußerst langen Planungszeitraum, in dem MRP Ergebnisse suchen muss. Informationen darüber, wie beispielsweise Fall E einer Situation zugeordnet ist, in dem Sie die negativen Tage auf einen langen Zeitraum festlegen, finden Sie im Abschnitt [Schlussfolgerung](#conclusion) in diesem Thema.
+Wenn Sie die negativen Tage auf einen Wert festlegen, der größer ist als die Lieferzeit des Artikels und wenn Sie auch den Planungszeitraum der dynamischen negativen Tage nutzen,  lautet der Zeitraum für die dynamischen Tage 6 + 6 - 4 = 8 Tage. Dieser Ansatz produziert möglicherweise einen äußerst langen Planungszeitraum, in dem MRP Ergebnisse suchen muss. Informationen darüber, wie beispielsweise Fall E einer Situation zugeordnet ist, in dem Sie die negativen Tage auf einen langen Zeitraum festlegen, finden Sie im Abschnitt [Schlussfolgerung](#conclusion) in diesem Thema.
 
 ## <a name="scenario-3-you-get-demand-after-the-items-lead-time-period"></a>Szenario 3: Sie erhalten Bedarf nach dem Lieferzeitzeitraum des Artikels
 
@@ -155,7 +164,7 @@ Sie erhalten Bedarf nach dem Lieferzeitzeitraum des Artikels. Hier ist ein Beisp
 
 Die folgende Abbildung zeigt eine grafische Ansicht dieses Szenarios.
 
-![Grafische Darstellung von Szenario 3.](./media/negative-days-13.png)
+![Grafische Darstellung von Szenario 3](./media/negative-days-13.png)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Fall A: Negative Tage sind geringer als die Lieferzeit des Artikels
 
@@ -163,14 +172,14 @@ Wenn Sie die negativen Tage auf einen Wert festlegen, der kleiner ist als die Li
 
 Die folgende Abbildung zeigt ein Bildschirmfoto dieses Falles
 
-![Screenshot der Falles A für Szenario 3.](./media/negative-days-14.png)
+![Screenshot der Falles A für Szenario 3](./media/negative-days-14.png)
 
 Die folgende Abbildung zeigt eine grafische Ansicht, was in diesem Fall passiert.
 
-![Grafische Ansicht des Falles A für Szenario 3.](./media/negative-days-15.png)
+![Grafische Ansicht des Falles A für Szenario 3](./media/negative-days-15.png)
 
 > [!NOTE]
-> Im vorherigen Bildschirmfoto ist das Bestellungsbedarfsdatum der 12. Januar. Da dieses Bildschirmfoto aus dem Jahre 2015 stammt, als der 11. Januar ein Sonntag war, verschiebt MRP das Bedarfsdatum auf den nächsten Arbeitstag, der am Montag, den 12. Januar war. Dennoch hat die Bestellung ein Lieferdatum vom 11. Januar.
+> Im vorherigen Bildschirmfoto ist das  Bestellungsbedarfsdatum der 12. Januar. Da dieses Bildschirmfoto aus dem Jahre 2015 stammt, als der 11. Januar ein Sonntag war, verschiebt MRP das Bedarfsdatum auf den nächsten Arbeitstag, der am Montag, den 12. Januar war. Dennoch hat die Bestellung ein Lieferdatum vom 11. Januar.
 
 ### <a name="case-b-negative-days-are-more-than-the-items-lead-time"></a>Fall B: Negative Tage sind größer als die Lieferzeit des Artikels
 
@@ -178,11 +187,11 @@ Wenn Sie die negativen Tage auf einen Wert festlegen, der größer ist als der L
 
 Die folgende Abbildung zeigt ein Bildschirmfoto dieses Falles
 
-![Bildschirmfoto von Fall B für Szenario 3.](./media/negative-days-16.png)
+![Bildschirmfoto von Fall B für Szenario 3](./media/negative-days-16.png)
 
 Die folgende Abbildung zeigt eine grafische Ansicht, was in diesem Fall passiert.
 
-![Grafische Ansicht des Falles B für Szenario 3.](./media/negative-days-17.png)
+![Grafische Ansicht des Falles B für Szenario 3](./media/negative-days-17.png)
 
 ### <a name="case-c-automatically-correlate-the-items-lead-time-to-the-negative-days-time-fence"></a>Fall C: Die Lieferzeiten des Artikels automatisch mit dem negativen Tagplanungszeitraum korrelieren
 
@@ -192,7 +201,7 @@ Der Zeitraum für die dynamischen negativen Tage beträgt jetzt 6 + 2 - 7 = 1 Ta
 
 Die folgende Abbildung zeigt eine grafische Ansicht, was in diesem Fall passiert.
 
-![Grafische Ansicht des Falles C für Szenario 3.](./media/negative-days-18.png)
+![Grafische Ansicht des Falles C für Szenario 3](./media/negative-days-18.png)
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>Fall D: Nur dynamische negative Tage verwenden
 
@@ -213,17 +222,17 @@ Sie müssen die negativen Tage auf einen langen Zeitraum festlegen und dann mit 
 - Der DemoProduct-Artikel hat eine sechstägige Lieferzeit.
 - Am Tag Null (1. Januar), ist der Bestand für den DemoProduct-Artikel 0 (null).
 - Am Tag Null (1. Januar) erhalten Sie einen Auftrag für die Menge 10 des DemoProduct-Artikels
-- Am Tag Neun (10. Januar) erhalten Sie einen Auftrag für die Menge 10 des DemoProduct-Artikels.
-- Am Tag Elf (12. Januar) gibt es eine Bestellung für die Menge 10 des DemoProduct-Artikels.
+- Am Tag zehn (10. Januar) erhalten Sie einen Auftrag für die Menge 10 des DemoProduct-Artikels
+- Am Tag zwölf (12. Januar) gibt es eine Bestellung für die Menge 10 des DemoProduct-Artikels.
 - Negative Tage werden auf **20** festgelegt, was viel höher ist als der Lieferzeitraum des Artikels.
 
 Die folgende Abbildung zeigt eine grafische Ansicht davon, was passieren könnte.
 
-![Grafische Prüfung des Beispiels.](./media/negative-days-19.png)
+![Grafische Prüfung des Beispiels](./media/negative-days-19.png)
 
 MRP ergibt folgendes Ergebnis:
 
-![Ergebnisbeispiel 1.](./media/negative-days-20.png)
+![Ergebnisse](./media/negative-days-20.png)
 
 Im oberen Bildschirmfoto ist das Auftragsanforderungsdatum der 9. Januar anstelle dem 10. Januar. Da dieses Bildschirmfoto aus dem Jahre 2015 stammt, als der 10. Januar ein Samstag war, verschiebt das Bedarfsdatum den Auftrag auf den vorangehenden Arbeitstag, der am Freitag den 9. Januar war.
 
@@ -233,7 +242,7 @@ Die Ergebnisse sind nicht falsch, doch die Ausführungszeit für MRP kann länge
 
 Wenn Sie die negativen Tage auf eine Nummer reduzieren, die näher am Lieferdatum ist, und Sie negative dynamische Tage nutzen, wird MRP folgendes Ergebnis anzeigen.
 
-![Ergebnisbeispiel 2.](./media/negative-days-21.png)
+![Ergebnisse](./media/negative-days-21.png)
 
 MRP erstellt einen Bestellvorschlag, der dem ersten Auftrag zugeordnet ist. Anschließend wird der zweite Auftrag wie erwartet der bestehenden Bestellung zugeordnet, basierend auf den festgelegten negativen Tagen. Dieses Planungsergebnis ist ebenfalls korrekt, und Ausführungszeit für MRP kann kürzer sein. In diesem Fall ist es wichtig, dass Sie die Aktivitätsmeldungen verstehen und wissen, wie Sie damit umgehen müssen.
 
@@ -241,7 +250,4 @@ Um sicherzustellen, dass die korrekten Werte für Ihr Unternehmen eingegeben wur
 
 ## <a name="see-also"></a>Siehe auch
 
-Weitere Diskussion finden Sie im ursprünglichen Blogbeitrag [Mehr über (dynamische) negative Tage](/archive/blogs/axmfg/more-about-dynamic-negative-days).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+Weitere Diskussion finden Sie im ursprünglichen Blogbeitrag [Mehr über (dynamische) negative Tage](https://blogs.msdn.microsoft.com/axmfg/2015/02/19/more-about-dynamic-negative-days/).

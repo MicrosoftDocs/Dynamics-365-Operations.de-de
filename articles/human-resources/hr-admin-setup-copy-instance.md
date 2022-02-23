@@ -2,12 +2,15 @@
 title: Instanz kopieren
 description: Sie können mit Microsoft Dynamics Lifecycle Services (LCS) eine Microsoft Dynamics 365 Human Resources-Datenbank in eine Sandkastenumgebung kopieren.
 author: andreabichsel
+manager: AnnBe
 ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -15,18 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 22aa33135535d543eb8fe437821cab7a4865d6df
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 40ca0a4d9733fc2a163daa4ea1c27a3bfae6d3bf
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060830"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527836"
 ---
 # <a name="copy-an-instance"></a>Instanz kopieren
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Sie können mit Microsoft Dynamics Lifecycle Services (LCS) eine Microsoft Dynamics 365 Human Resources-Datenbank in eine Sandkastenumgebung kopieren. Wenn Sie eine andere Sandbox-Umgebung haben, können Sie die Datenbank auch aus dieser Umgebung in eine bestimmte Sandbox-Umgebung kopieren.
 
@@ -38,9 +39,9 @@ Beachten Sie beim Kopieren einer Instanz die folgenden Hinweise:
 
 - Sie müssen ein Administrator in der Zielumgebung sein, damit Sie sich nach dem Kopieren der Instanz anmelden können.
 
-- Wenn Sie die Human Resources-Datenbank kopieren, kopieren Sie nicht die Elemente (Apps oder Daten), die in einer Microsoft Power Apps-Umgebung enthalten sind. Informationen zum Kopieren von Elementen in einer Power Apps-Umgebung finden Sie in [Umgebung kopieren](/power-platform/admin/copy-environment). Die Power Apps-Umgebung, die Sie überschreiben möchten, muss eine Sandkastenumgebung sein. Sie müssen ein globaler Mandantenadministrator sein, um eine Power Apps-Produktionsumgebung zu einer Sandkastenumgebung umzuwandeln. Weitere Informationen zum Ändern einer Power Apps-Umgebung finden Sie in [Instanz wechseln](/dynamics365/admin/switch-instance).
+- Wenn Sie die Human Resources-Datenbank kopieren, kopieren Sie nicht die Elemente (Apps oder Daten), die in einer Microsoft Power Apps-Umgebung enthalten sind. Informationen zum Kopieren von Elementen in einer Power Apps-Umgebung finden Sie in [Umgebung kopieren](https://docs.microsoft.com/power-platform/admin/copy-environment). Die Power Apps-Umgebung, die Sie überschreiben möchten, muss eine Sandkastenumgebung sein. Sie müssen ein globaler Mandantenadministrator sein, um eine Power Apps-Produktionsumgebung zu einer Sandkastenumgebung umzuwandeln. Weitere Informationen zum Ändern einer Power Apps-Umgebung finden Sie in [Instanz wechseln](https://docs.microsoft.com/dynamics365/admin/switch-instance).
 
-- Wenn Sie eine Instanz in Ihre Sandbox-Umgebung kopieren und Ihre Sandbox-Umgebung in Dataverse integrieren möchten, müssen Sie benutzerdefinierte Felder erneut auf Dataverse-Tabellen anwenden. Sehen Sie [Anwenden benutzerdefinierter Felder auf Dataverse](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
+- Wenn Sie eine Instanz in Ihre Sandbox-Umgebung kopieren und Ihre Sandbox-Umgebung in Common Data Service integrieren möchten, müssen Sie benutzerdefinierte Felder erneut auf Common Data Service-Entitäten anwenden. Sehen Sie [Anwenden benutzerdefinierter Felder auf Common Data Service](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>Auswirkungen des Kopierens einer Human Resources-Datenbank
 
@@ -52,9 +53,9 @@ Die folgenden Ereignisse treten auf, wenn Sie eine Human Resources-Datenbank kop
 
 - Dokumente im Microsoft Azure Blob-Speicher werden nicht von einer Umgebung in eine andere kopiert. Als Ergebnis werden angehängte Dokumente und Vorlagen nicht kopiert und verbleiben in der Quellumgebung.
 
-- Alle Benutzer außer denen mit der Sicherheitsrolle „Systemadministrator“ und andere interne Dienstbenutzerkonten sind nicht verfügbar. Der Administrator kann Daten löschen oder verschleiern, bevor andere Benutzer wieder Zugriff auf das System erhalten.
+- Bis auf den Administrator und andere interne Servicebenutzer werden alle Benutzer deaktiviert. Der Administrator kann Daten löschen oder verschleiern, bevor andere Benutzer wieder Zugriff auf das System erhalten.
 
-- Ein Benutzer mit der Sicherheitsrolle „Systemadministrator“ muss die erforderlichen Konfigurationsänderungen vornehmen, z. B. das erneute Verbinden von Integrationsendpunkten mit bestimmten Diensten oder URLs.
+- Der Administrator muss die erforderlichen Konfigurationsänderungen vornehmen, z. B. das erneute Verbinden von Integrationsendpunkten mit bestimmten Diensten oder URLs.
 
 ## <a name="copy-the-human-resources-database"></a>Human Resources-Datenbank kopieren
 
@@ -71,15 +72,15 @@ Um diese Aufgabe abzuschließen, kopieren Sie zuerst eine Instanz und melden sic
 
 4. Wählen Sie im Aufgabenbereich **Instanz kopieren** die zu überschreibende Instanz und anschließend **Kopieren** aus. Warten Sie, bis der Wert des Felds **Kopierstatus** zu **Abgeschlossen** aktualisiert wird.
 
-   ![[Wählen Sie die zu überschreibende Instanz.](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Zu überschreibende Instanz auswählen](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Wählen Sie **Power Platform** aus und melden Sie sich im Microsoft Power Platform Admin Center an.
 
-   ![[Wählen Sie Power Platform.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   ![[Power Platform auswählen](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Wählen Sie die zu kopierende Power Apps-Umgebung aus und wählen Sie dann **Kopieren**.
 
-7. Wenn der Kopiervorgang abgeschlossen ist, melden Sie sich bei der Zielinstanz an und aktivieren Sie die Dataverse-Integration. Weitere Informationen und Anleitungen finden Sie unter [Dataverse-Integration konfigurieren](./hr-admin-integration-common-data-service.md).
+7. Wenn der Kopiervorgang abgeschlossen ist, melden Sie sich bei der Zielinstanz an und aktivieren Sie die Common Data Service-Integration. Weitere Informationen und Anleitungen finden Sie unter [Common Data Service-Integration konfigurieren](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
 
 ## <a name="data-elements-and-statuses"></a>Datenelemente und ‑status
 
@@ -111,7 +112,7 @@ Einige dieser Elemente werden nicht kopiert, da sie umgebungsspezifisch sind. Da
 
 Außerdem ändern sich die folgenden Status beim Kopieren einer Instanz:
 
-- Alle Benutzer außer denen mit der Sicherheitsrolle „Systemadministrator“ sind **Deaktiviert**.
+- Alle Benutzer außer Administratoren werden auf **Deaktiviert** gestellt.
 
 - Alle Batchaufträge außer einigen Systemaufträgen werden auf **Zurückhalten** gesetzt.
 
@@ -121,11 +122,11 @@ Alle Benutzer in der Ziel-Sandkastenumgebung, einschließlich Administratoren, w
 
 Alle Nicht-Administrator-Benutzer in der Ziel-Sandkastenumgebung sind deaktiviert, um unerwünschte Anmeldungen in der Sandkastenumgebung zu verhindern. Administratoren können Benutzer bei Bedarf erneut aktivieren.
 
-## <a name="apply-custom-fields-to-dataverse"></a>Benutzerdefinierte Felder auf Dataverse anwenden
+## <a name="apply-custom-fields-to-common-data-service"></a>Benutzerdefinierte Felder auf Common Data Service anwenden
 
-Wenn Sie eine Instanz in Ihre Sandbox-Umgebung kopieren und Ihre Sandbox-Umgebung in Dataverse integrieren möchten, müssen Sie benutzerdefinierte Felder erneut auf Dataverse-Tabellen anwenden.
+Wenn Sie eine Instanz in Ihre Sandbox-Umgebung kopieren und Ihre Sandbox-Umgebung in Common Data Service integrieren möchten, müssen Sie benutzerdefinierte Felder erneut auf Common Data Service-Entitäten anwenden.
 
-Für jedes benutzerdefinierte Feld, das in Dataverse-Tabellen angezeigt wird, führen Sie die folgenden Schritte aus:
+Für jedes benutzerdefinierte Feld, das in Common Data Service-Entitäten angezeigt wird, führen Sie die folgenden Schritte aus:
 
 1. Gehen Sie zum benutzerdefinierten Feld und wählen Sie **Bearbeiten** aus.
 
@@ -139,9 +140,9 @@ Für jedes benutzerdefinierte Feld, das in Dataverse-Tabellen angezeigt wird, f�
 
 6. Wählen Sie erneut **Änderungen übernehmen** aus.
 
-Beim Aufheben der Auswahl, dem Anwenden von Änderungen, dem erneuten Auswählen und erneuten Anwenden von Änderungen wird das Schema zur Aktualisierung in Dataverse aufgefordert, die benutzerdefinierten Felder einzuschließen.
+Beim Aufheben der Auswahl, dem Anwenden von Änderungen, dem erneuten Auswählen und erneuten Anwenden von Änderungen wird das Schema zur Aktualisierung in Common Data Service aufgefordert, die benutzerdefinierten Felder einzuschließen.
 
-Weitere Informationen über benutzerdefinierte Felder finden Sie unter [Erstellen und Arbeiten mit benutzerdefinierten Feldern](../fin-ops-core/fin-ops/get-started/user-defined-fields.md).
+Weitere Informationen über benutzerdefinierte Felder finden Sie unter [Erstellen und Arbeiten mit benutzerdefinierten Feldern](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields).
 
 ## <a name="see-also"></a>Siehe auch
 
@@ -149,6 +150,3 @@ Weitere Informationen über benutzerdefinierte Felder finden Sie unter [Erstelle
 [Eine Instanz entfernen](hr-admin-setup-remove-instance.md)</br>
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

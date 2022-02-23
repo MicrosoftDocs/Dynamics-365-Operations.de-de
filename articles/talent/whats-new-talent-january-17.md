@@ -45,6 +45,3 @@ Mit dieser Änderung ist der Standard für das Feld **Aktion angefordert von** n
 ### <a name="ideas-portal-updated"></a>Ideenportal aktualisiert
 In der App wurden Links zur Einreichung einer Idee für Talent auf das neue Ideenportal aktualisiert. Alle Ideen, die im alten Portal eingegeben wurden, wurden migriert, so dass alle deine großartigen Ideen noch vorhanden sind und von anderen bewertet werden können.  
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

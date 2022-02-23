@@ -1,25 +1,29 @@
 ---
 title: Service Management Übersicht
 description: Mit der Serviceverwaltung können Sie Serviceverträge und Daueraufträge einrichten, Serviceaufträge und Debitorenanfragen handhaben und die Servicebereitstellung für Kunden verwalten und analysieren.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9b8444c635fe08a224314d1b76de5ac8d9defbc
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 451aeebd46d60251eed940016486509c4aa3f458
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983021"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428393"
 ---
 # <a name="service-management-overview"></a>Service Management Übersicht
 
@@ -46,7 +50,7 @@ Mithilfe der Berichtstools können Sie Gewinnspannen für Serviceaufträge und D
 
 Im folgenden Diagramm werden die Geschäftsprozesse auf oberer Ebene für **Serviceverwaltung** dargestellt. Das Diagramm veranschaulicht, wo Serviceprozesse in andere Module integriert werden.
 
-[![Geschäftsprozessdiagramm für Serviceverwaltung.](./media/sm_home_page.gif)](./media/sm_home_page.gif)
+[![Geschäftsprozessdiagramm für Serviceverwaltung](./media/sm_home_page.gif)](./media/sm_home_page.gif)
 
 ## <a name="service-management-at-a-glance"></a>Serviceverwaltung auf einen Blick
 
@@ -60,13 +64,10 @@ Im folgenden Diagramm werden die Geschäftsprozesse auf oberer Ebene für **Serv
 
 ## <a name="integration-of-service-management"></a>Integration der Serviceverwaltung
 
-Die Serviceverwaltung kann in die folgenden Module in integriert werden:
+Die Serviceverwaltung kann in die folgenden Module in  integriert werden:
 
   - [Vertrieb und Marketing – Übersicht](../sales-marketing/overview-sales-marketing.md)
-  - [Personalverwaltung](/dynamics365/unified-operations/talent/index)
+  - [Personalverwaltung](https://docs.microsoft.com/dynamics365/unified-operations/talent/index)
 
   
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,39 +1,37 @@
 ---
 title: Erstellen oder Bearbeiten eines Kalenders
 description: Teamkalender erstellen und anpassen in Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 08/26/2021
+author: andreabichsel
+manager: tfehr
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: EssWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8ee39f35f9d81f47c5438ddf48451d24ab0c0ed3
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2ec767a868d5c76b57465c451b8cc893b8b0a56b
+ms.sourcegitcommit: d02fae79d5c02a4bc4f4b16a410c2f5ce026c204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065251"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "4962264"
 ---
 # <a name="view-team-and-company-calendars"></a>Team- und Unternehmenskalender anzeigen
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Sie können Teamkalender und Unternehmenskalender in Dynamics 365 Human Resources anzeigen. Teamkalender zeigen nur Direktunterstellte an, wie in der Hierarchie definiert.
 
 ## <a name="view-your-team-calendar-as-an-employee"></a>Teamkalender als Mitarbeiter anzeigen
 
-- Im **Mitarbeiter-Self-Service**-Arbeitsbereich wählen Sie **Teamabwesenheitskalender** unter **Zusammenfassung**.
+1. Im **Mitarbeiter-Self-Service**-Arbeitsbereich wählen Sie **Teamabwesenheitskalender** unter **Zusammenfassung**.
 
 ## <a name="view-your-team-calendar-as-a-manager"></a>Teamkalender als Manager anzeigen
 
@@ -42,21 +40,6 @@ Sie können Teamkalender und Unternehmenskalender in Dynamics 365 Human Resource
 2. Wählen Sie **Urlaub und Abwesenheit** und dann **Managerabwesenheitskalender anzeigen**.
 
 Manager können auch über **Ausstehende Anfragen meines Teams**, **Genehmigte Freizeit** und **Freizeitanfragen** auf den Teamkalender zugreifen. 
-
-## <a name="view-your-absence-manager-calendar-as-the-absence-manager"></a>Zeigen Sie Ihren Abwesenheitsmanager-Kalender als Abwesenheitsmanager an
-
-> [!NOTE]
-> Um den Kalender des Abwesenheitsmanagers anzuzeigen, müssen Sie zuerst die **(Vorschau) Abwesenheitsmanager zur Verwaltung des Urlaubs** Funktion in der Funktionsverwaltung aktivieren. Weitere Informationen zur Aktivierung von Vorschaufunktionen finden Sie unter [Funktionen verwalten](hr-admin-manage-features.md).
-
-Benutzer in der Rolle des Abwesenheitsmanagers können Urlaubsanträge in ihrem Kalender anzeigen. Wenn Sie auf den Kalender zugreifen wollen, führen sie die folgenden Schritte aus.
-
-1. Wählen Sie im Arbeitsbereich **Mitarbeiter-Self-Service** **Abwesenheitsverwaltung** und dann **Kalender für Abwesenheitsmanager** aus.
-
-2. Geben Sie im Feld **Datum** die gewünschten Daten ein.
-
-3. Aktualisieren Sie die Ansichtsoptionen nach Bedarf.
-
-Der Kalender des Abwesenheitsmanagers zeigt alle Datensätze der Mitarbeiter, die dem Abwesenheitsmanager in der Abwesenheitshierarchie berichten.
 
 ## <a name="view-a-company-calendar"></a>Einen Unternehmenskalender anzeigen
 
@@ -78,15 +61,14 @@ Kalender enthalten jetzt zusätzliche Filter und Optionen. Alle Kalender enthalt
 - Anforderungen von arbeitsfreier Zeit 
 - Beurlaubungsanforderungen
 
-Die Kalenderkonfiguration auf der Seite **Urlaubs- und Abwesenheitsparameter** bestimmt die verfügbaren Ansichtsoptionen.
+Die Kalenderkonfiguration in den Parametern Urlaub und Abwesenheit bestimmt die verfügbaren Ansichtsoptionen.
 
 Sie können Kalender auch nach Manager oder Abteilung filtern. Die primäre Positionszuweisung bestimmt die Mitarbeiter, die angezeigt werden, wenn diese Filter gesetzt werden. 
 
-> [!IMPORTANT]
-> Sie können die **Unternehmensübergreifende Urlaubsansicht** Funktion in der Funktionsverwaltung aktivieren. Dann müssen Sie die Funktion auf der Seite **Freigegebene Human Resources-Parameter** aktivieren, um den Filter für juristische Personen in Kalendern anzuzeigen. Weitere Informationen finden Sie unter [Urlaub- und Abwesenheitsparameter konfigurieren](hr-leave-and-absence-parameters.md).
-> 
-> Sie können im Kalender nach juristischen Personen filtern. Wenn Sie alle Mitarbeiter unabhängig von der juristischen Person sehen möchten, deaktivieren Sie das Filterfeld und drücken Sie die **Eingabetaste**. 
+>[!IMPORTANT]
+>Urlaub und Abwesenheit wird in verschiedenen Unternehmen derzeit in der Vorschau angezeigt. Sie müssen es in Ihrer **Sandbox**-Umgebung aktivieren. Weitere Informationen zum Aktivieren der Vorschaufunktionen finden Sie unter [Funktonen verwalten](hr-admin-manage-features.md).<br><br>
+>Dann müssen Sie die Funktion in **Freigegebene Human Resources-Parameter** aktivieren, um den Filter für juristische Personen in Kalendern anzuzeigen. Weitere Informationen finden Sie unter [Urlaub- und Abwesenheitsparameter konfigurieren](hr-leave-and-absence-parameters.md).<br><br>
+>Sie können im Kalender nach juristischen Personen filtern. Wenn Sie alle Mitarbeiter unabhängig von der juristischen Person sehen möchten, deaktivieren Sie das Filterfeld und drücken Sie die Eingabetaste. 
 
 Informationen zu Kalendereinstellungen finden Sie unter [Konfigurieren Sie die Kalenderparameter](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

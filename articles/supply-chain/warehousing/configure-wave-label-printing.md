@@ -1,26 +1,29 @@
 ---
-title: Zyklusbeschriftungsdruck
+title: Wellenetikettendruck einrichten und verwenden
 description: In diesem Thema wird das Drucken von Wellenetiketten beschrieben und die Einrichtung erläutert.
-author: perlynne
+author: GarmMSFT
+manager: PJacobse
 ms.date: 05/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSDocumentRouting, WHSWaveTableListPage, WHSPostMethod, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelType, WHSWaveLabelTemplateGroup, WHSDocumentRoutingLayout
 audience: Application User
-ms.reviewer: kamaybac
+ms.reviewer: PJacobse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: perlynne
+ms.author: kamaybac
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 59c4c100275917f3f9bf489c7d64b276275f1872
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 6314fd25d8d8a0013984d484f57a832c26f82b5a
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778082"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4429144"
 ---
-# <a name="wave-label-printing"></a>Zyklusbeschriftungsdruck
+# <a name="set-up-and-use-wave-label-printing"></a>Wellenetikettendruck einrichten und verwenden
 
 [!include [banner](../includes/banner.md)]
 
@@ -53,7 +56,7 @@ Diese Verbesserungen machen es effizienter, Kartons zu etikettieren, bevor sie a
 
 ## <a name="turn-on-the-wave-label-printing-feature"></a>Funktion für Wellenetikettendruck aktivieren
 
-Ab Supply Chain Management Version 10.0.21 ist diese Funktion obligatorisch, daher ist sie standardmäßig aktiviert und kann nicht wieder deaktiviert werden. Die Funktion ist jedoch immer noch in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aufgeführt:
+Bevor Sie die Funktion *Wellenetikettendruck* verwenden können, muss sie in Ihrem System aktiviert sein. Administratoren können mit der Einstellung [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und ggf. aktivieren. Dort wird die Funktion folgendermaßen aufgelistet:
 
 - **Module:** *Lagerortverwaltung*
 - **Funktionsname:** *Wellenetikettendruck*
@@ -506,7 +509,7 @@ Sie können diese Wellenetiketten erneut drucken, indem Sie zu **Lagerortverwalt
 
 ## <a name="scenario-3-wave-label-printing-for-multi-tiered-labels"></a>Szenario 3: Wellenetikettendruck für mehrstufige Etiketten
 
-Dieses Szenario zeigt, wie die Funktion zum Drucken von Wellenetiketten verwendet wird, wenn für die Lagerhaltungsprozesse mehrere Ebenen von Adressetiketten erforderlich sind. Beispielsweise müssen möglicherweise separate Etiketten für Kartons und Paletten gedruckt werden, und ein Unterbrechungsetikett muss möglicherweise für eine gesamte Lieferung gedruckt werden. Unterbrechungsetiketten sind ein separater Etikettentyp, der als Trenner zwischen Rollen und Containern verwendet werden kann, z. B. Etiketten für die Sendungs-ID und einen Barcode, so dass die Etiketten nach dem Druck leicht sortiert werden können.
+Dieses Szenario zeigt, wie die Funktion zum Drucken von Wellenetiketten verwendet wird, wenn für die Lagerhaltungsprozesse mehrere Ebenen von Adressetiketten erforderlich sind. Beispielsweise müssen möglicherweise separate Etiketten für Kartons und Paletten gedruckt werden, und ein Unterbrechungsetikett muss möglicherweise für eine gesamte Lieferung gedruckt werden. Unterbrechungsetiketten sind separate Typen von Etiketten, die als Trennmarke zwischen Rollen und Containern verwendet werden können, z. B. Etiketten für die Lieferungs-ID und einen Strichcode, damit die Etiketten nach dem Drucken leicht sortiert werden können.
 
 Der Hauptunterschied zwischen der Konfiguration dieses Szenarios und der Konfiguration von Szenario 1 besteht neben der Tatsache, dass Unterbrechungsetiketten aktiviert sind, darin, dass mehrere Wellenetikettentypen den Wellenetikettenvorlagen und Einheitsnummernkreisgruppen-Positionen zugeordnet werden müssen. Um diese Konfiguration durchzuführen, richten Sie die folgenden Elemente für dieses Szenario ein:
 
@@ -929,10 +932,3 @@ Sie können Wellenetiketten von den folgenden Seiten anzeigen und erneut drucken
 - Wellenbeschriftungsverlauf
 
 Für die meisten dieser Seiten finden Sie die relevante Funktion durch Auswahl der **Wellenetiketten** in der Gruppe **Zugehörige Informationen** auf der Registerkarte **Lieferungen** des Aktionsbereichs.
-
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
-
-- [Serienetiketten neu drucken und Wellenbeschriftungen stornieren](reprint-and-void-wave-labels.md)
-- [Wellenetikettendruck während der Welle einplanen](configure-task-based-wave-label-printing.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

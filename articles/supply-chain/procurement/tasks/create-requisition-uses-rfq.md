@@ -1,24 +1,26 @@
 ---
 title: Eine Anforderung erstellen, die eine Angebotsanforderung verwendet
 description: Dieses Thema erklärt, wie man Preis- und Kreditoreninformationen einer Bestellanforderung von einem Angebotsanforderungsprozess aus hinzufügt.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqTableListPage, PurchReqCreate, PurchReqTable, PurchReqLineRelatedDocuments, EcoResCategorySingleLookup, PurchReqWorkflowDropDialog, WorkflowSubmitDialog, WorkflowStatus, WorkflowWorkItemActionDialog, WorkflowUserListLookup, PurchReqCopyRFQ, SysDataAreaSelectLookup, PurchRFQCaseTable, PurchRFQEditLines, PurchRFQReplyTable, UnitOfMeasureLookup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f88d50c24e84b94128aa3fd567562f3240832910
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 05ff98b5fd95fa345d344e54d9116c73434e5de5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578055"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018895"
 ---
 # <a name="create-a-requisition-that-uses-an-rfq"></a>Eine Anforderung erstellen, die eine Angebotsanforderung verwendet
 
@@ -96,6 +98,3 @@ Die folgende Aufgabe besteht darin, eine Angebotsanforderung zu erstellen, um An
 8. Wählen Sie die Seite aus.
 9. Wählen Sie „Abgeschlossen” aus.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

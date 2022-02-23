@@ -1,10 +1,12 @@
 ---
 title: Externen Katalog für PunchOut-E-Procurement einrichten
 description: In diesem Thema wird die Verwendung eines externen Katalogs oder des PunchOut-Katalogs beschrieben, um Angebotsinformationen von einem Lieferanten zu erhalten und einer Bestellanforderung hinzuzufügen.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests, CatExternalCatalogConfiguration, CatCXMLCartLogList
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f1065c68723baa395bc06be6313e45a44661ea3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1f6e551f9d3d181674595e945bf1fb4c62a70ed5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566911"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016376"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-e-procurement"></a>Externen Katalog für PunchOut-E-Procurement einrichten
 
@@ -40,7 +42,7 @@ Der externe Katalog sollte einem Mitarbeiter, der eine Bestellanforderung eingib
 
 1. Richten Sie eine Beschaffungskategoriehierarchie ein. Weitere Informationen finden Sie unter [Einrichten einer Beschaffungskategoriehierarchie](tasks/set-up-policies-procurement-category-hierarchies.md).
 2. Registrieren von Kreditoren in Supply Chain Management. Bevor Sie Konfigurationen für den Zugriff auf einen externen Lieferantenkatalog einrichten können, müssen Sie zuerst den Lieferanten und den Lieferantenkontakt in Microsoft Dynamics 365 einrichten. Der externe Lieferantenkatalog muss auch der ausgewählten Beschaffungskategorie zugeordnet werden. Weitere Informationen zum Registrieren von Kreditoren finden Sie unter Benutzer [für Kreditorenzusammenarbeit verwalten](manage-vendor-collaboration-users.md). Informationen zum Einrichten einer Beschaffungskategoriehierarchie und zum Zuordnen der Warencodes zu einer Beschaffungskategorie finden Sie unter [Lieferanten bestimmten Beschaffungskategorien zuweisen](tasks/approve-vendors-specific-procurement-categories.md).
-3. Stellen Sie sicher, dass die Maßeinheiten und die Währung, die vom Lieferanten verwendet werden, eingerichtet werden. Informationen darüber, wie Sie eine Maßeinheit erstellen, finden Sie unter [Maßeinheit verwalten](../pim/tasks/manage-unit-measure.md).
+3. Stellen Sie sicher, dass die Maßeinheiten und die Währung, die vom Lieferanten verwendet werden, eingerichtet werden. Informationen zum Anlegen einer Mengeneinheit finden Sie unter [Mengeneinheit verwalten](../pim/tasks/manage-unit-measure.md).
 4. Konfigurieren Sie den externen Lieferantenkatalog anhand der Anforderungen an die externe Katalogwebsite des Lieferanten. Genauere Informationen zu dieser Aufgabe finden Sie unter [Konfigurieren des externen Lieferantenkatalogs](#configure-the-external-vendor-catalog).
 5. Testen Sie die Konfigurationen des externen Lieferantenkatalogs. Überprüfen Sie dabei, ob die Einstellungen funktionieren und Sie auf den Katalog zugreifen können. Verwenden Sie die Aktion **Einstellungen überprüfen**, um die von Ihnen definierte Einrichtungsanforderungsnachricht zu überprüfen. Diese Nachricht soll auf die externe Lieferantenkatalogseite weiterleiten, die in einem Browserfenster geöffnet wird. Während der Prüfungs können Sie keine Artikel und Dienstleistungen beim Lieferanten bestellen. Zum Bestellen von Artikeln oder Dienstleistungen müssen Sie auf die Bestellanforderung des Lieferanten zugreifen.
 6. Aktivieren Sie den externen Katalog, indem Sie die Schaltfläche **Katalog aktivieren** auf der Seite **Externe Kataloge** verwenden. Der externe Katalog muss aktiviert werden, bevor Mitarbeiter ihn verwenden können. Sie können jederzeit den externen Katalog deaktivieren.
@@ -110,5 +112,3 @@ Wenn ein Produkt aus dem externen Lieferantenkatalog angefordert wurde, kann der
 
 - [cXML-Einkaufserweiterungen](purchasing-cxml-enhancements.md)
 - [Externe Kataloge für PunchOut-E-Procurement verwenden](use-external-catalogs-for-punchout.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

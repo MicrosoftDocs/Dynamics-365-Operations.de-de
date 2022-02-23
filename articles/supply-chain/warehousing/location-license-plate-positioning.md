@@ -2,23 +2,26 @@
 title: Standortkennzeichenpositionierung
 description: Durch die Standortkennzeichenpositionierung können Sie sehen, wo sich ein Kennzeichen an einem Ort mit mehreren Paletten befindet, z. B. an einem Ort, an dem doppelt tiefe Palettenregale verwendet werden.
 author: Mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLicensePlate, WHSLocationProfile, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c19f8dcdb7d84b752e0eec56afdb1a1865cfe00b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: 7b0ebfb965e5a8f1bfe1857a9642d998dac2faf3
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567606"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429025"
 ---
 # <a name="location-license-plate-positioning"></a>Standortkennzeichenpositionierung
 
@@ -88,7 +91,7 @@ Die Funktion muss im Lagerplatzprofil für jeden Lagerplatz aktiviert sein, an d
 1. Während **Kennzeichen** noch ausgewählt ist, wählen Sie **Tabellenverknüpfung hinzufügen** aus.
 1. Wählen Sie in der Liste der angezeigten Tabellen in der Spalte **Beziehung** die Option **Standortkennzeichenpositionierung (Kennzeichen)** aus. Wählen Sie dann **Auswählen** aus, um **Standortkennzeichenpositionierung** zur Tabellenverknüpfung **Lagerungsdimensionen** hinzuzufügen.
 
-    ![Tabellenverknüpfungen.](media/LpTableJoin.png "Tabellenverknüpfungen")
+    ![Tabellenverknüpfungen](media/LpTableJoin.png "Tabellenverknüpfungen")
 
 1. Wählen Sie **OK** aus, um die aktualisierten verknüpften Tabellen zu bestätigen und den Abfrageeditor zu schließen.
 1. Wählen Sie im Inforegister **Lagerplatzrichtlinienaktivitäten** erneut die Option **Abfrage bearbeiten** aus, um den Abfrageeditor erneut zu öffnen.
@@ -100,7 +103,7 @@ Die Funktion muss im Lagerplatzprofil für jeden Lagerplatz aktiviert sein, an d
     - **Feld:** *LP-Position*
     - **Kriterien:** *1*
 
-    ![Neuer Bereich.](media/LpPositionCriteria.png "Neuer Bereich")
+    ![Neuer Bereich](media/LpPositionCriteria.png "Neuer Bereich")
 
 1. Wählen Sie **OK** aus, um Ihre Änderungen zu bestätigen und den Abfrageeditor zu schließen.
 
@@ -275,9 +278,6 @@ Nun, da die Funktion *Standortkennzeichenpositionierung* eingerichtet und der La
 1. Wählen Sie auf der Seite **Arbeits-/Kennzeichen-ID scannen** das Feld **ID** aus, und geben Sie dann die Arbeits-ID aus der Verkaufsposition ein.
 1. Beachten Sie, dass Sie bei der Kommissionierung angewiesen werden, den Artikel *A0002* vom Lagerplatz *01A01R1S2B* zu kommissionieren. Sie erhalten diese Anweisung, weil sich Artikel *A0002* auf einem Kennzeichen befindet, das in Position *1* an diesem Lagerplatz ist.
 
-    ![Lagerplatz Position 1.](media/LocationLicensePlatePositioning.png "Lagerplatz Position 1")
+    ![Lagerplatz Position 1](media/LocationLicensePlatePositioning.png "Lagerplatz Position 1")
 
 1. Geben Sie die Kennzeichen-ID ein, die Sie für den Lagerplatz erstellt haben, und befolgen Sie die Anweisungen, um den Auftrag auszuwählen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

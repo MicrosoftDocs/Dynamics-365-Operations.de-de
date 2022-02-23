@@ -2,9 +2,11 @@
 title: Workflowelemente
 description: Dieses Thema beschreibt die verschiedenen Elemente, die einen Workflow darstellen.
 author: ChrisGarty
+manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9491b8ee6da69ba93c830bf0721c1d58fd4385b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b259d733076193cda793a227bd0bb71c232339d1
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070449"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797575"
 ---
 # <a name="workflow-elements"></a>Workflowelemente
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Dieses Thema beschreibt die verschiedenen Elemente, die einen Workflow darstellen.
 
@@ -63,7 +62,7 @@ Bei einem *Genehmigungsprozess* handelt es sich um einen Prozess, der aus getren
 
 Ein Workflow kann zum Verarbeiten von Dokumenten oder der Positionen in einem Dokument erstellt werden. Angenommen, Sie haben einen Genehmigungsworkflow für Arbeitszeitnachweise erstellt. (Wir bezeichnen diesen Workflow als *Dokumentworkflow*.) Sie können ein *Positionsworkflow*-Element zu diesem Dokumentworkflow hinzufügen. Bei der Ausführung des Positionselements wird jede Position im Dokument zur Verarbeitung übermittelt. Dabei können alle Positionen durch denselben Positionsworkflow oder jede Position durch einen anderen Positionsworkflow verarbeitet werden. Angenommen, ein Mitarbeiter hat einen Arbeitszeitnachweis übermittelt, der der folgenden Abbildung ähnelt.
 
-![Workflow mit Positionen.](./media/workflow_lineitemworkflow.gif)
+![Workflow mit Positionen](./media/workflow_lineitemworkflow.gif)
 
 In diesem Szenario möchten Sie vielleicht die folgenden Positionsworkflows erstellen:
 
@@ -90,6 +89,3 @@ Eine *parallele Aktivität* ist ein Workflowelement, das zwei oder mehr Workflow
 ### <a name="subworkflow"></a>Untergeordneter Workflow
 
 Ein *untergeordneter Workflow* ist ein Workflow, der im Kontext eines anderen Workflows ausgeführt wird.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

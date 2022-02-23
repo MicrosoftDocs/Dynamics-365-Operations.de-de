@@ -2,9 +2,11 @@
 title: Agnostische Datentests mit dem Regression Suite Automation Tool
 description: In diesem Thema werden die Empfehlungen für agnostische Datentests mit Regression Suite Automation Tool beschrieben.
 author: kfend
+manager: AnnBe
 ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2019-09-11
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: d9a5bce1cc56dfdf66b2ce58c2e740b7c4b3bdfc7f4e75396fe5dc7cb931b6d0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2398bcbf0d148932e62ebe90aa8016acf0c79c28
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763409"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798200"
 ---
 # <a name="data-agnostic-testing-using-the-regression-suite-automation-tool"></a>Agnostische Datentests mit dem Regression Suite Automation Tool
 
@@ -30,7 +32,7 @@ Während die funktionale Prüfung einer ERP-Anwendung nicht vollständig datenag
 - ATL-Framework
 - Regression Suite Automation Tool (RSAT)
 
-[![Testklassifizierungspyramide.](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
+[![Testklassifizierungspyramide](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
 
 ## <a name="overview"></a>Übersicht
 -   **SysTest-Framework** – Das SysTest-Framework dient zum zuverlässigen Schreiben von Einheitentests. Da Einheitentests allgemein eine Methode oder eine Funktion testen, sollten sie immer datenagnostisch und nur von den Daten abhängig sein, die im Rahmen des Tests bereitgestellt werden.
@@ -42,11 +44,8 @@ Während die funktionale Prüfung einer ERP-Anwendung nicht vollständig datenag
     - o Geben Sie die eindeutigen Bezeichner, wie die Rechnungsnummern durch einen Nummernkreis ein oder indem Microsoft Excel-Funktionen verwenden, wie =TEXT(NOW(),"yyyymmddhhmm"). Diese Funktion stellt jede Minute eine eindeutige Zahl bereit, die es Ihnen ermöglicht, die Aktivität zu verfolgen. Dies kann für Variablen wie Produktzugangsnummern und Kreditorenrechnungsnummern verwendet werden. Diese Tests funktionieren immer wieder mit derselben Datenbank, ohne dass eine Wiederherstellung nötig ist.
     - Legen Sie den **Bearbeitungsmodus** der Umgebung immer auf **Lesen** oder **Bearbeiten** als ersten Testfall fest, da die Standardoption **Automatisch** ist. Die Optionen **Automatisch** verwenden immer die vorherige Einstellung und können zu unzuverlässigen Tests führen. 
  
-    [![Seite „Optionen“, Registerkarte „Leistung“.](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
+    [![Seite „Optionen“, Registerkarte „Leistung“](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
  
     - Überprüfen Sie nur, wenn Sie eine bestimmte Buchung anstelle der generischen Prüfung filtern. Filtern Sie z. B. für die Anzahl von Datensätzen die Buchungsnummer oder das Buchungsdatum, damit die Überprüfung alle weiteren Buchungen ausschließt. 
     - Wenn Sie ein Debitorensaldo oder eine Budgetprüfung prüfen, speichern Sie den Wert zuerst und fügen Sie dann Ihren Buchungswert hinzu, um das erwartete Ergebnis anstelle eines erwarteten festen Werts zu prüfen. 
  
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

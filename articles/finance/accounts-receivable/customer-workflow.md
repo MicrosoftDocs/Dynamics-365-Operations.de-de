@@ -1,24 +1,27 @@
 ---
 title: Debitorenworkflow
 description: Dieses Thema enthält Informationen zum Debitorenworkflow. Sie ändern bestimmte Felder für einen Debitor und senden diese Änderungen zur Genehmigung, indem Sie den Workflow durchlaufen, bevor die Änderungen dem Debitor hinzugefügt werden.
-author: abruer
+author: mikefalkner
+manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: c74f18997b390d70b5012199fab1adc9734994f4
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 5998a492e12cb93aeec029c6e56f811f8b90055a
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753825"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4459116"
 ---
 # <a name="customer-workflow"></a>Debitorenworkflow
 
@@ -58,6 +61,3 @@ Liegt mindestens eine vorgeschlagene Änderung vor, werden im Aktivitätsbereich
     Der Status auf der Seite ändert sich in **Änderungen mit ausstehender Genehmigung**.
 
 Der Workflow folgt dem Standardworkflowablauf in der Anwendung. Die genehmigende Person wird an die Seite **Debitor** weitergeleitet. Dort können die Änderungen auf der Seite **Vorgeschlagene Änderungen** geprüft und der Workflow anschließend über **Workflow \> Genehmigen** genehmigt werden. Sind alle Genehmigungen bearbeitet, werden die Felder mit den vorgeschlagenen Werten aktualisiert.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

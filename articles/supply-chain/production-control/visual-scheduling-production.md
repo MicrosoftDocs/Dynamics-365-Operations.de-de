@@ -2,13 +2,16 @@
 title: Verwenden eines Gantt-Diagramms für die Feinterminierung
 description: Produktionsplaner können Produktionspläne steuern und optimieren, indem Gantt-Diagramme verwendet werden.
 author: johanhoffmann
+manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage, GanttColorTable, GanttReqExplosionColor, GanttReqExplosionSetup, GanttTable, GanttTimescaleSetup, GanttWrkCtr, GanttWrkCtrColor, GanttWrkCtrJobInfo, GanttWrkCtrLoadResources, GanttWrkCtrMoveJob, GanttWrkCtrSetup, GanttWrkCtrView
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 180fb7b31ea826c546aa8472a7ef4025a3b8865a783a5b662ed30b69f98acf92
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e194f379d118ee174095229d38ba5b0a679f49ac
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730201"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428803"
 ---
 # <a name="gantt-chart-for-job-scheduling"></a>Verwenden eines Gantt-Diagramms für die Feinterminierung
 
@@ -45,10 +48,10 @@ Das Gantt-Diagramm kann in zwei unterschiedlichen Ansichten geöffnet werden, **
 
 ## <a name="order-view"></a>Auftragsansicht
 
-[![Auftragsansicht.](./media/orderview.png)](./media/orderview.png)
+[![Auftragsansicht](./media/orderview.png)](./media/orderview.png)
 
 ## <a name="resource-view"></a>Ressourcenansicht
-[![Ressourcenansicht.](./media/resview.png)](./media/resview.png)
+[![Ressourcenansicht](./media/resview.png)](./media/resview.png)
 
 ## <a name="activities"></a>Aktivitäten
 Die Aktivitäten werden als Striche angezeigt und sind in einem Zeitskalaraster mit einer geplanten Start- und Endzeit organisiert und treffen die Länge für die Abwicklung, die sich auf die Zeit bezieht, die erforderlich ist, um die Aktivität zu beenden. Die Aktivitäten werden entsprechend einer Zeitskala angezeigt. Sie können die Zeitskala im Menü, wo Sie ein Start- und ein Enddatum und eine Zeiteinheit, beispielsweise, Stunden oder Tagen auswählen. Durch das Anpassen der Zeitskala können Sie das Ziel in einem Zeitintervall festlegen, in dem Sie Aktivitäten verwalten möchten. 
@@ -102,25 +105,25 @@ Es ist nicht möglich, einen Einzelvorgang außerhalb des definierten Zeitinterv
 
 In einem Netzwerk von Aktivitäten, wie Einzelvorgänge, die demselben Produktionsauftrag angehören, können Sie die Funktion **Vorherige Einzelvorgänge planen** verwenden, um vorherige Einzelvorgänge eines ausgewählten Einzelvorgangs im Netzwerk zu planen. Im folgenden Beispiel ist die markierte Aktivität der ausgewählte Einzelvorgang. Das Diagramm wird angezeigt, bevor ein vorheriger Einzelvorgang geplant wird und nachdem der vorherige Einzelvorgang geplant wird. 
 
-[![Vorherigen Einzelvorgang planen.](./media/schprevjob3.png)](./media/schprevjob3.png)
+[![Vorherigen Einzelvorgang planen](./media/schprevjob3.png)](./media/schprevjob3.png)
 
 ### <a name="schedule-next-jobs"></a>Nächste Einzelvorgänge planen
 
 Sie können die Funktion **Nächste Einzelvorgänge planen** verwenden, um die folgenden Stellen in einem ausgewählten Einzelvorgang in einem Netzwerk von Aktivitäten zu planen. Im folgenden Beispiel ist die markierte Aktivität der ausgewählte Einzelvorgang. Das Diagramm wird angezeigt, bevor der nächste Einzelvorgang geplant wird und nachdem der nächste Einzelvorgang geplant wird. 
 
-[![Nächsten Einzelvorgang planen.](./media/schnxtjob.png)](./media/schnxtjob.png)
+[![Nächsten Einzelvorgang planen](./media/schnxtjob.png)](./media/schnxtjob.png)
 
 ### <a name="schedule-around-job"></a>Um Einzelvorgang herum planen
 
 Sie können die Funktion **Nächste Einzelvorgänge planen** verwenden, um die folgenden Stellen in einem ausgewählten Einzelvorgang in einem Netzwerk von Aktivitäten zu planen. Im folgenden Beispiel ist die markierte Aktivität der ausgewählte Einzelvorgang. Das Diagramm wird angezeigt, bevor ein Einzelvorgang geplant wird und nachdem der Einzelvorgang geplant wird. 
 
-[![Um Einzelvorgang herum planen.](./media/scharoundjob1.png)](./media/scharoundjob1.png)
+[![Um Einzelvorgang herum planen](./media/scharoundjob1.png)](./media/scharoundjob1.png)
 
 ### <a name="arrange-jobs"></a>Einzelvorgänge anordnen
 
 Sie können die Funktion **Anordnen** verwenden, um die ausgewählten Aktivitäten auf der gleichen Ressource anzuordnen. Diese Aktivitäten werden im gleichen Netzwerk von Aktivitäten sein, können aber auch verschiedenen Netzwerken angehören. Wenn Sie die Anordnensfunktion verwenden, werden die Zeitlücken zwischen den ausgewählten Aktivitäten gelöscht. Sie können diese Funktion verwenden, um die Kapazitätsauslastung der Ressourcen zu optimieren. Das Diagramm wird angezeigt, bevor ein Einzelvorgang geplant wird und nachdem der Einzelvorgang geplant wird. 
 
-[![Einzelvorgang anordnen.](./media/arrangejobs1.png)](./media/arrangejobs1.png)
+[![Einzelvorgang anordnen](./media/arrangejobs1.png)](./media/arrangejobs1.png)
 
 ### <a name="reassign-activities-from-one-resource-to-another"></a>Einzelvorgänge zwischen Ressourcen neu zuweisen
 
@@ -155,8 +158,5 @@ Die Gantt-Diagramm können auf den folgenden Seiten geöffnet werden.
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen  
 [Visuelle Zeitplanung mit Gantt-Diagramm für Produktions- und Chargenaufträge (Video)](https://youtu.be/BtbuShkGj4I)
 
-[Sichtplanung für Produktion (Vorführungsskript)](/dynamics/s-e/)
+[Sichtplanung für Produktion (Vorführungsskript)](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Planungen, Arbeitsaufträge und Projekte
 description: In diesem Thema wird die Integration von Planungen und Arbeitsaufträgen in das Projektverwaltungs- und Buchhaltungsmodul in der Anlagenverwaltung erklärt.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/29/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderProjCostInfoPart
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b53dcf4e8796f808283b7bd5ea92b869ee0e59aac5359d74bcdc5de37ea7352
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f062b5463b54e9bcf32ed6f17263811c4bb24138
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770335"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021022"
 ---
 # <a name="forecasts-work-orders-and-projects"></a>Planungen, Arbeitsaufträge und Projekte
 
@@ -58,13 +60,13 @@ Einige dieser Informationen sind auf einem Arbeitsauftrag nicht zu finden. Daher
 
 Beispiel: In der folgenden Abbildung ist jeder Arbeitsauftragseinzelvorgang, der mit dem Anlagentyp **Lkw-MMotor** erstellt wurde, aufgrund der Art und Weise, wie der **Lkw-Motor**-Anlagentyp eingerichtet wird, ein Unterprojekt der Projektkennung 000186.
 
-![Abbildung 1.](media/01-integration-to-pma.png)
+![Abbildung 1](media/01-integration-to-pma.png)
 
 Zweck der Projektkennung auf dem Arbeitsauftragseinzelvorgang und die zugeordnete Aktivitätsnummer ist es, Kosten im Zusammenhang mit dem Arbeitsauftragseinzelvorgang und der darin ausgewählten Anlage im Modul **Projektverwaltung und Buchhaltung** nachzuverfolgen. (Wählen Sie **Asset-Management** > **Gemeinsam** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** und dann den Arbeitsauftrag aus, um die Projektkennung und die Aktivitätsnummer anzuzeigen. Auf dem Inforegister **Positionsdetails** wird im Feld **Projektkennung** die Projektkennung angezeigt, und das Feld **Aktivitätsnummer** zeigt die Aktivitätsnummer an.) Weitere Informationen zur Kostenkontrolle im Asset-Management finden Sie unter [Kosten- und Datumskontrolle](../controlling-and-reporting/cost-and-date-control.md) Sie unter.
 
 Die folgende Abbildung zeigt eine grafische Übersicht der Arbeitsauftragsprojekte und zugehöriger Projektaktivitäten.
 
-![Abbildung 2.](media/02-integration-to-pma.png)
+![Abbildung 2](media/02-integration-to-pma.png)
 
 Wenn ein neuer Arbeitsauftragseinzelvorgang für einen Arbeitsauftrag erstellt wird, wird automatisch ein Arbeitsauftragsprojekt für den Einzelvorgang erstellt. Die Finanzdimensionen für die Anlage im Zusammenhang mit dem Arbeitsauftragseinzelvorgang werden automatisch an das Arbeitsauftragsprojekt übertragen.
 
@@ -86,18 +88,15 @@ Zur richtigen Verwendung von Arbeitsauftrags-Lebenszyklusstatus und zugehörigen
 
 Die folgenden Abbildungen zeigen die Zuordnungen zwischen Arbeitsauftragsprojektgruppen, zugehörigen Projekttypen, Projektphasen und Arbeitsauftrags-Lebenszyklusstatus.
 
-![Abbildung 3.](media/03-integration-to-pma.png)
+![Abbildung 3](media/03-integration-to-pma.png)
 
-![Abbildung 4.](media/04-integration-to-pma.png)
+![Abbildung 4](media/04-integration-to-pma.png)
 
-![Abbildung 5.](media/05-integration-to-pma.png)
+![Abbildung 5](media/05-integration-to-pma.png)
 
 Weitere Informationen zum Einrichten von Arbeitsauftragsprojekten finden Sie unter [Arbeitsauftragsprojekteinrichtung](../setup-for-work-orders/work-order-project-setup.md). Weitere Informationen zur Erstellung des Lebenszyklus von Arbeitsaufträgen finden Sie unter [Lebenszykluszustand von Arbeitsaufträgen](../setup-for-work-orders/work-order-lifecycle-states.md).
 
 Die folgende Abbildung zeigt einen grafischen Überblick der verschiedenen Projekte, die im Modul **Asset-Management** erstellt werden, um die Integration in das Modul **Projektverwaltung und Buchhaltung** zu aktivieren. Sie zeigt außerdem die Arbeitsverfahren, denen die Projekte zugeordnet sind.
 
-![Abbildung 6.](media/06-integration-to-pma.png)
+![Abbildung 6](media/06-integration-to-pma.png)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

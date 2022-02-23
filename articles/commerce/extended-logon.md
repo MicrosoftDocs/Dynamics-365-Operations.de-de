@@ -1,27 +1,30 @@
 ---
 title: Einrichten der erweiterten Anmeldefunktionalität für MPOS und Cloud POS
 description: Dieses Thema behandelt die Optionen für die Einrichtung der erweiterten Anmeldung für Cloud POS und Retail Modern POS (MPOS).
-author: boycezhu
-ms.date: 09/07/2021
+author: rubencdelgado
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 92353
 ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: boycez
+ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0cc3d3a3cadbc614e82b8cc7ae0b78406247cece
-ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
+ms.openlocfilehash: 79878e2ffbf219f77f378997c277ced8bb41598c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7478670"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412521"
 ---
 # <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Einrichten der erweiterten Anmeldungsfunktionen für MPOS und Cloud POS
 
@@ -31,7 +34,7 @@ Dieses Thema behandelt die Optionen für die Einrichtung der erweiterten Anmeldu
 
 ## <a name="setting-up-extended-logon"></a>Einrichten der erweiterten Anmeldung
 
-Sie finden Sie Einstellungen für Strichcodemasken unter **Einzelhandel und Handel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS-Profile** &gt; **Funktionsprofile**. Das Inforegister **Funktionen** umfasst folgende Optionen, die der erweiterten Anmeldung zugeordnet sind.
+Sie finden Sie Einstellungen für Strichcodemasken unter **Retail und Commerce** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS-Profile** &gt; **Funktionsprofile**. Das Inforegister **Funktionen** umfasst folgende Optionen, die der erweiterten Anmeldung zugeordnet sind.
 
 ### <a name="staff-bar-code-logon"></a>Personal-Strichcodeanmeldung
 
@@ -59,13 +62,8 @@ Um die erweiterte Anmeldung zu löschen, die einer Arbeitskraft zugewiesen wurde
 
 ## <a name="extending-extended-logon"></a>Erweitern der erweiterten Anmeldung
 
-Bei der erweiterten Anmeldung können standardmäßig nur fünf signifikante Zeichen als eindeutiger Bezeichner verwendet werden. Wenn Sie beispielsweise zwei Karten mit den IDs „1234567ׅ und „1234578“ konfigurieren, werden beide als „12345“ betrachtet. Sie könnten eine Erweiterung erstellen, um mehr Zeichen zu unterstützen. Detaillierte Anweisungen finden Sie unter [Erweiterung der erweiterten Anmeldungsfunktionen für MPOS und Cloud POS](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
-
 Der Anmeldedienst kann erweitert werden, um zusätzliche Geräte für die erweiterte Anmeldung zu unterstützen, z.B. Handflächenscanner. Weitere Informationen finden Sie in der Dokumentation zur Erweiterbarkeit des POS.
 
 ## <a name="using-extended-logon"></a>Verwenden der erweiterten Anmeldung
 
-Wenn die erweiterte Anmeldung konfiguriert ist und einer Arbeitskraft ein Strichcode oder ein Magnetstreifen zugewiesen wurde, muss die Arbeitskraft die Karte durch ein Lesegerät ziehen, wenn die POS-Anmeldeseite angezeigt wird. Wenn auch ein Kennwort erforderlich ist, damit die Anmeldung durchgeführt werden kann, wird die Arbeitskraft aufgefordert, das Kennwort einzugeben.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Wenn die erweiterte Anmeldung konfiguriert ist und einer Arbeitskraft ein Strichcode oder ein Magnetstreifen zugewiesen wurde, muss die Arbeitskraft seine Karte nur Karte durch ein Lesegerät ziehen, wenn die POS-Anmeldeseite angezeigt wird. Wenn auch ein Kennwort erforderlich ist, damit die Anmeldung durchgeführt werden kann, wird die Arbeitskraft aufgefordert, das Kennwort einzugeben.

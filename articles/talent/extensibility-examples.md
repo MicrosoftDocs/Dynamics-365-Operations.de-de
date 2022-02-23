@@ -79,6 +79,3 @@ Um die **Empfehlungs-App** herunterzuladen, gehen Sie zur [Dynamics 365 Talent E
 
 [Das Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
 [Migrieren der App zwischen Mandanten und Umgebung](https://docs.microsoft.com/power-platform/admin/environment-and-tenant-migration)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

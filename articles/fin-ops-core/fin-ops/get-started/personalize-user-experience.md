@@ -2,9 +2,11 @@
 title: Die Benutzerumgebung personalisieren
 description: In diesem Thema wird erläutert, wie Sie die App personalisieren können.
 author: jasongre
-ms.date: 01/28/2022
+manager: AnnBe
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysUserSetup, DefaultDashboard
 audience: Application User, IT Pro
@@ -15,20 +17,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 840a68d506664043c9affb67e801429e0594f0bd
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 734f6499753d74b0bac8b2df1381ece4a7824142
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075421"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797489"
 ---
 # <a name="personalize-the-user-experience"></a>Die Benutzerumgebung personalisieren
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 In diesem Thema wird erläutert, wie Sie die App personalisieren können. Es werden die folgenden Themen behandelt: 
 
@@ -89,7 +87,7 @@ Einige der typischsten und wichtigsten Änderungen, die Sie an einer Seite vorne
 
 Darüber hinaus sind die Typen der grundlegendsten Personalisierungen verfügbar, indem Sie auf ein Element mit der rechten Maustaste klicken und dann **Anpassen** auswählen. (Beachten Sie, dass nicht alle Elemente auf der Seite personalisiert werden können.) Wenn Sie diese Methode der Personalisierung auswählen, wird das *Eigenschaftenfenster* des Elements angezeigt.
 
-![Personalisieren der Eigenschaften eines Elements.](./media/cli-element-property-window.png)
+![Personalisieren der Eigenschaften eines Elements](./media/cli-element-property-window.png)
 
 Sie können das Eigenschaftenfenster verwenden, um ein Element in folgender Hinsicht zu personalisieren:
 
@@ -102,7 +100,7 @@ Sie können das Eigenschaftenfenster verwenden, um ein Element in folgender Hins
 
 Das Eigenschaftenfenster kann andere Personalisierungsfunktionen enthalten, abhängig vom Element. Beispielsweise können Sie mit dem Eigenschaftenfenster für eine Kachel diese in einem Dashboard höher stufen, und die Eigenschaftenfenster für die Elemente des Standard-Dashboards lassen Sie möglicherweise einen neuen Arbeitsbereich personalisieren.
 
-### <a name="personalization-toolbar"></a>Personalisierungssymbolleiste
+### <a name="the-personalization-toolbar"></a>Personalisierungssymbolleiste
 
 Wenn Sie mehrere Änderungen auf einer Seite oder Änderungen vornehmen möchten, die über keine anderen Mechanismen (z. B. Elemente neu anordnen) verfügbar sind, können Sie die Symbolleiste **Personalisierung** verwenden. Um die Symbolleiste **Personalisierung** zu öffnen, führen Sie die folgenden Schritte aus:
 
@@ -111,7 +109,7 @@ Wenn Sie mehrere Änderungen auf einer Seite oder Änderungen vornehmen möchten
 - Wählen Sie im Aktivitätsbereich einer Seite in der Registerkarte **Optionen** in der Gruppe **Personalisieren** die Option **Diese Seite personalisieren** aus.
 - Wählen Sie die Schaltfläche **Einstellungen** (Zahnradsymbol) auf der Navigationsleiste und wählen Sie dann **Anpassen**.
 
-[![Personalisierungssymbolleiste.](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
+[![Personalisierungssymbolleiste](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### <a name="navigating-the-page"></a>Navigieren auf de Seite
 
@@ -123,10 +121,7 @@ Folgende Tools sind auf der Symbolleiste **Benutzereinstellungen** verfügbar:
 
 - Nutzen Sie das Werkzeug **Auswählen**, um Eigenschaften eines Elements auszuwählen und zu ändern. Um dieses Tool zu verwenden, aktivieren Sie die Schaltfläche **Auswählen** auf der Symbolleiste, und wählen Sie dann das gewünschte Element aus. Das Eigenschaftenfenster des Elements wird geöffnet, von dem aus Sie beliebige Eigenschaften für dieses Element ändern können. Sie können den Prozess für andere Elemente auf der Seite wiederholen, die personalisierbar sind. Beachten Sie, dass einige Personalisierungseigenschaften möglicherweise nicht in einigen Szenarien verfügbar sind. Sie können beispielsweise kein Feld sperren, das erforderlich ist.
 - Wählen Sie das Tool **Ausblenden**, um ein Element auf der Seite auszublenden. Um dieses Tool zu verwenden, aktivieren Sie die Schaltfläche **Ausblenden** auf der Symbolleiste, und wählen Sie dann das gewünschte Element aus, das ausgeblendet werden soll. Wenn Sie das Tool **Ausblenden** verwenden, werden alle Elemente, die gerade ausgeblendet werden, in einem schattierten Container angezeigt. Sie können anschließend ein Element sichtbar machen, indem Sie es auswählen. Um zu sehen, wie die Seite aussehen wird, wenn Elemente ausgeblendet sind, wechseln Sie zu einem anderen Personalisierungstool oder schließen Sie die Personalisierungssymbolleiste.
-- Wählen Sie das Tool **Felder hinzufügen**, um Felder zur Seite hinzuzufügen. Wenn Sie dieses Tool verwenden, können Sie nur Felder hinzufügen, die Teil der Seitendefinition sind. Informationen zum Erstellen neuer Felder, die nicht Teil der aktuellen Seitendefinition sind, finden Sie unter [Erstellen und Arbeiten mit benutzerdefinierten Feldern](user-defined-fields.md). Nachdem Sie die Schaltfläche **Felder hinzufügen** auf der Symbolleiste ausgewählt haben, müssen Sie das Raster oder den Bereich zunächst aktivieren, dem Sie ein Feld hinzufügen möchten. Ein Dialogfeld wird in der Liste der Felder angezeigt, die dem Raster oder Bereich zugeordnet sind, das/den Sie ausgewählt haben. Wählen Sie im Dialogfeld mindestens ein Feld aus, das über die Liste **Empfohlene Felder** oder **Alle Felder** hinzugefügt werden soll. Wählen Sie **Aktualisieren** aus, nachdem Sie die gewünschten Felder ausgewählt haben. Wenn Sie ein Feld entfernen, das Sie zuvor hinzugefügten haben, wiederholen Sie den Vorgang aber deaktivieren Sie die Option im Dialogfeld.
-
-    Die Liste **Empfohlene Felder** zeigt Felder an, die zuvor von anderen Benutzern in Ihrer Organisation hinzugefügt wurden. Diese Liste von Feldern wird basierend auf der Wiederholungshäufigkeit des **Empfehlungs-Batchauftrags** aktualisiert. Eine ähnliche Erfahrung besteht beim Hinzufügen neuer Filterfelder mithilfe des Filterbereichs auf einer Seite.
-
+- Wählen Sie das Tool **Felder hinzufügen**, um Felder zur Seite hinzuzufügen. Wenn Sie dieses Tool verwenden, können Sie nur Felder hinzufügen, die Teil der Seitendefinition sind. Informationen zum Erstellen neuer Felder, die nicht Teil der aktuellen Seitendefinition sind, finden Sie unter [Erstellen und Arbeiten mit benutzerdefinierten Feldern](user-defined-fields.md). Nachdem Sie die Schaltfläche **Felder hinzufügen** auf der Symbolleiste ausgewählt haben, müssen Sie das Raster oder den Bereich zunächst aktivieren, dem Sie ein Feld hinzufügen möchten. Ein Dialogfeld wird in der Liste der Felder angezeigt, die dem Raster oder Bereich zugeordnet sind, das/den Sie ausgewählt haben. Wählen Sie im Dialogfeld mindestens ein Feld aus und wählen Sie **Aktualisieren**. Wenn Sie ein Feld entfernen, das Sie zuvor hinzugefügten haben, wiederholen Sie den Vorgang aber deaktivieren Sie die Option im Dialogfeld.
 - Wählen Sie das Tool **Umlagern** aus, wenn Sie ein Element auswählen und an einen anderen Lagerplatz innerhalb der aktuellen Elementgruppe umlagern möchten. Sie können kein Element außerhalb seiner übergeordneten Gruppe verschieben. Um dieses Tool zu verwenden, aktivieren Sie die Schaltfläche **Umlagern** auf der Symbolleiste, und wählen Sie dann das gewünschte Element aus, das umgelagert werden soll. Wenn Sie ein Element auswählen, überprüft die App die Standorte, an die das Element verschoben werden kann. Diese Lagerplätze werden als *Abstiegszonen* bezeichnet. Da Sie das Element innerhalb der aktuellen Gruppe ziehen, wird jede Abstiegszone als farbige, fette Position neben dem Bereich angezeigt, in dem das Element abgelegt werden kann.
 - Wählen Sie das **Überspringen** Tool, um ein Element aus der Tastaturtabulatorsequenz der Seite zu entfernen. Wenn Sie die Schaltfläche **Überspringen** auf der Symbolleiste auswählen, werden alle Elemente, die gerade ausgeblendet werden, in einem schattierten Container angezeigt. Sie können Felder der Tabulatorsequenz interaktiv entfernen oder hinzufügen.
 - Verwenden Sie das Tool **In Kopfzeile anzeigen**, wenn ein Feld im Zusammenfassungsbereich des Inforegisters angezeigt werden soll. Wenn Sie die Schaltfläche **In Kopfzeile anzeigen** auf der Symbolleiste auswählen, werden alle Felder, die als Zusammenfassungsfelder ausgewählt wurden, in einem schattierten Container angezeigt. Sie können Felder der Inforegisterzusammenfassung interaktiv hinzufügen und Felder aus der Zusammenfassung entfernen, indem Sie die Felder auswählen.
@@ -154,14 +149,11 @@ Für mehrere Seiten, die Listen enthalten, ist die Personalisierungsfunktion **Z
 > [!NOTE]
 > Wenn die Funktion [Gespeicherte Ansichten](saved-views.md)-aktiviert wird, wird der Inhalt, den Sie an einen Arbeitsbereich übertragen, direkt mit einer Ansicht verknüpft. Die Abfrage der Ansicht wird verwendet, um Daten in den Arbeitsbereich abzurufen, und die entsprechende Kachel oder der Link im Arbeitsbereich öffnet die Seite zu dieser Ansicht, sodass die Abfrage und die Personalisierungen der Ansicht auf sie angewendet werden. Wenn die Ansicht aktualisiert wird, werden die entsprechenden Arbeitsbereichselemente an die neue Ansichtsdefinition angepasst.
 
-[![Zum Arbeitsbereich hinzufügen.](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
+[![Zum Arbeitsbereich hinzufügen](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
 
 - Um eine Liste einem Arbeitsbereich hinzuzufügen, sortieren oder filtern Sie zuerst die Liste auf der Seite, sodass die Informationen so angezeigt werden, wie Sie sie im Arbeitsbereich wünschen. (Wenn die Funktion **Gespeicherte Ansichten** aktiviert ist, können Sie nicht fortfahren, bis Sie eine Ansicht speichern, die den angegebenen Bedingungen entspricht.) Wählen Sie dann **Zum Arbeitsbereich hinzufügen** aus. Wählen Sie einen Arbeitsbereich und dann im Feld **Präsentation** wählen Sie **Liste** aus. Nachdem Sie **Konfigurieren** auswählen, wird ein Dialogfeld angezeigt, wo Sie die Spalten auswählen können, die in der Liste im Arbeitsbereich angezeigt werden sollen. Sie können auch die Beschriftung definieren, die für die Liste im Arbeitsbereich verwendet wird.
 - Um eine Kachel zu einem Arbeitsbereich hinzuzufügen, filtern Sie zuerst die Liste auf der Seite, um die Daten darzustellen, die Sie zusammenfassen möchten (oder auf die Sie schnellen Zugriff wünschen). (Wenn die Funktion **Gespeicherte Ansichten** aktiviert ist, können Sie nicht fortfahren, bis Sie eine Ansicht speichern, die den angegebenen Bedingungen entspricht.) Wählen Sie dann **Zum Arbeitsbereich hinzufügen** aus. Wählen Sie einen Arbeitsbereich und dann im Feld **Präsentation** wählen Sie **Kachel** aus. Nachdem Sie **Konfigurieren** auswählen, wird ein Dialogfeld angezeigt, in dem Sie die Beschriftung angeben können, die für die Kachel im Arbeitsbereich zu verwenden ist. Sie können auch angeben, ob die Kachel eine Anzahl anzeigen soll. Nachdem Sie die Kachel dem Arbeitsbereich hinzugefügt haben, können Sie sie auswählen, um die aktuelle Seite über den Arbeitsbereich zu öffnen. Sie können anschließend die gefilterte Liste anzeigen, die der Kachel zugeordnet ist.
-- Um einen Link einem Arbeitsbereich hinzuzufügen, filtern Sie zuerst die Liste auf der Seite, sodass Sie die Daten sehen, die für Sie interessant sind. (Wenn die Funktion **Gespeicherte Ansichten** aktiviert ist, können Sie nicht fortfahren, bis Sie eine Ansicht speichern, die den angegebenen Bedingungen entspricht.) Wählen Sie dann **Zum Arbeitsbereich hinzufügen** aus. Wählen Sie einen Arbeitsbereich und dann im Feld **Präsentation** wählen Sie **Link** aus. Nachdem Sie **Konfigurieren** auswählen, wird ein Dialogfeld angezeigt, in dem Sie die Beschriftung angeben können, die für Links im Arbeitsbereich zu verwenden ist. Optional können Sie auch ein Label für den Bereich angeben, in dem dieser Link platziert werden kann. Wenn der Bereich nicht vorhanden ist, wird ein neuer Bereich erstellt.
-
-> [!NOTE]
-> Ab Version 10.0.25 müssen Sie bei der Konfiguration Ihrer Liste, Kachel oder Verknüpfung möglicherweise auch die Arbeitsbereich-Ansichten auswählen, denen Sie das Element hinzufügen möchten, wenn die Funktion **(Vorschau) Gespeicherte Ansichten für Arbeitsbereiche unterstützen** aktiviert ist. Die verfügbaren Ansichten des Arbeitsbereichs werden im Abschnitt **Arbeitsbereich-Optionen** jedes **Konfigurieren**-Dialogfelds angezeigt. 
+- Um einen Link einem Arbeitsbereich hinzuzufügen, filtern Sie zuerst die Liste auf der Seite, sodass Sie die Daten sehen, die für Sie interessant sind. (Wenn die Funktion **Gespeicherte Ansichten** aktiviert ist, können Sie nicht fortfahren, bis Sie eine Ansicht speichern, die den angegebenen Bedingungen entspricht.) Wählen Sie dann **Zum Arbeitsbereich hinzufügen** aus. Wählen Sie einen Arbeitsbereich und dann im Feld **Präsentation** wählen Sie **Link** aus. Nachdem Sie **Konfigurieren** auswählen, wird ein Dialogfeld angezeigt, in dem Sie die Beschriftung angeben können, die für Links im Arbeitsbereich zu verwenden ist. Sie können optional auch eine Beschriftung für einen neuen Abschnitt angeben, der diesen Link enthält.
 
 Nachdem eine Liste, Kachel oder einen Link dem Arbeitsbereich hinzugefügt wurde, können Sie den Arbeitsbereich öffnen und die Element so anordnen, wie Sie dies wünschen.
 
@@ -179,97 +171,11 @@ Das Dashboard ist oftmals die erste Seite, die beim Öffnen der App angezeigt wi
 Eine einzigartige Personalisierungsfunktion, die im Dashboard verfügbar ist, ist das Hinzufügen von Kacheln. 
 
 - Wenn die Funktion **Ganzseitige Apps** deaktiviert ist, fügen Sie eine neue Kachel hinzu, indem Sie mit der rechten Maustaste auf ein Element im Dashboard klicken und dann **Arbeitsbereich hinzufügen** personalisiert werden. Eine neue Arbeitsbereichkachel wird am unteren Rand das Dashboard erstellt. Sie können diese neue Arbeitsbereichkachel umbenennen, wenn Sie dies wünschen. Sie können dem Arbeitsbereich Kacheln, Listen und Links hinzufügen wie im Abschnitt [Hinzufügen von Kacheln, Listen und Links zu Arbeitsbereichen](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace) beschrieben.
-- Wenn die Funktion **Ganzseitige Apps** aktiviert ist, fügen Sie eine neue Kachel hinzu, indem Sie mit der rechten Maustaste auf ein Element im Dashboard klicken und dann **App hinzufügen** auswählen. Wählen Sie im Dialogfeld aus, ob Sie eine Kachel für einen neuen Arbeitsbereich oder eine Kachel mit Inhalt aus Power Apps oder einer Website hinzufügen möchten. Führen Sie dann die Schritte zur Konfiguration der ausgewählten Option aus. Eine neue Kachel wird am unteren Rand des Dashboards erstellt. Weitere Informationen über das Hinzufügen, Bearbeiten, Löschen und Freigeben dieser eingebetteten Apps finden Sie unter [Einbetten von Canvas-Apps von Power Apps](embed-power-apps.md) und [Einbetten von Apps von Drittanbietern](embed-website.md).
+- Wenn die Funktion **Ganzseitige Apps** aktiviert ist, fügen Sie eine neue Kachel hinzu, indem Sie mit der rechten Maustaste auf ein Element im Dashboard klicken und dann **App hinzufügen** auswählen. Wählen Sie im Dialogfeld aus, ob Sie eine Kachel für einen neuen Arbeitsbereich oder eine Kachel mit Inhalt aus Power Apps oder einer Website hinzufügen möchten. Führen Sie dann die Schritte zur Konfiguration der ausgewählten Option aus. Eine neue Kachel wird am unteren Rand des Dashboards erstellt. 
 
 ## <a name="sharing-personalizations"></a>Personalisierungen freigeben
 
-Nachdem Sie eine Seite personalisiert haben, gibt es einige Methoden, die Sie verwenden können, um Ihre Personalisierungen mit anderen Benutzern zu teilen. In der folgenden Liste sind die Methoden in der Reihenfolge von am meisten empfohlen bis am wenigsten empfohlen angeordnet.
-
-1. Veröffentlichen von Ansichten für Benutzer.
-2. Kopieren Sie Ansichten oder Personalisierungen auf Benutzer.
-3. Exportieren und importieren Sie Ansichten oder Personalisierungen.
-
-### <a name="publish-views-to-users"></a>Ansichten an Benutzer veröffentlichen
-
-Wenn die Funktion [Gespeicherte Ansichten](saved-views.md) eingeschaltet ist und die Seite Ansichten unterstützt, ist der beste Weg, Personalisierungen mit anderen Benutzern zu teilen, die Ansicht für Benutzer zu veröffentlichen, die eine oder mehrere Sicherheitsrollen haben. Weitere Informationen finden Sie unter [Veröffentlichen von Ansichten](saved-views.md#publishing-views).
-
-### <a name="copy-views-or-personalizations-to-users"></a>Kopieren von Ansichten oder Personalisierungen auf Benutzer
-
-Wenn die Funktion [Gespeicherte Ansichten](saved-views.md) ausgeschaltet ist oder wenn die Seite keine Ansichten unterstützt, ist die empfohlene Art, Personalisierungen gemeinsam zu nutzen, sie zwischen Benutzern zu kopieren. Diese Methode ist nur für privilegierte Benutzer (z. B. Systemadministratoren) verfügbar. Admins können jedoch die Personalisierung eines bestimmten Benutzers im System nachschlagen (einschließlich der persönlichen Ansicht des Benutzers, wenn gespeicherte Ansichten aktiviert sind) und die Konfiguration auf andere Benutzer kopieren.
-
-Wenn gespeicherte Ansichten aktiviert sind, führen Sie diese Schritte aus, um Personalisierungen zu kopieren.
-
-1. Gehen Sie zu **Systemverwaltung \> Einrichten \> Personalisierung**.
-2. Führen Sie diese Schritte aus, um persönliche Ansichten zu kopieren:
-
-    1. Wählen Sie **Persönliche Ansichten**.
-    2. Markieren Sie die gewünschten Ansichten in der Liste.
-    3. Wählen Sie **Kopieren auf Benutzer**.
-    4. Wählen Sie die Benutzer aus, an die die Ansichten verteilt werden sollen.
-
-    Führen Sie diese Schritte aus, um Personalisierungen auf Seiten zu kopieren, die keine Ansichten unterstützen:
-
-    1. Wählen Sie **Benutzer-Einstellungen**.
-    2. Wählen Sie den Benutzer, der die Personalisierung hat, die Sie verteilen wollen.
-    3. Wählen Sie **Alle Personalisierungen verwalten**.
-    4. Markieren Sie die gewünschten Personalisierungen in der Liste.
-    5. Wählen Sie **Kopieren auf Benutzer**.
-    6. Wählen Sie die Benutzer aus, an die die Personalisierungen verteilt werden sollen.
-
-Wenn gespeicherte Ansichten nicht aktiviert sind, führen Sie diese Schritte aus, um eine Personalisierung zu kopieren.
-
-1. Gehen Sie zu **Systemverwaltung \> Einrichten \> Personalisierung**.
-2. Wählen Sie **Anwenden** aus.
-3. Wählen Sie die Benutzer aus, an die die Personalisierung verteilt werden soll.
-4. Wählen Sie **Vorhandene Personalisierung wählen**.
-5. Suchen und wählen Sie die (einzelne) Personalisierung, die Sie interessiert.
-6. Wählen Sie **OK**.
-
-### <a name="export-and-import-views-or-personalizations"></a>Ansichten oder Personalisierungen exportieren und importieren
-
-Eine andere Möglichkeit, Personalisierungen gemeinsam zu nutzen, ist über Export und Import. Einzelne Benutzer oder ein Admin, der in ihrem Namen handelt, können diese Methode verwenden, um ihre Personalisierungen oder Ansichten zu exportieren und die exportierte Datei dann anderen Benutzern zum Importieren zu geben. Alternativ können Benutzer ihre exportierten Personalisierungen einem Benutzer mit Admin-Rechten übergeben, und dieser Benutzer kann dann die Verwaltungsseite **Personalisierung** verwenden, um die Personalisierungsdatei auf viele Benutzer gleichzeitig anzuwenden.
-
-> [!IMPORTANT]
-> Da Personalisierungen über Updates hinweg bestehen bleiben, ist es unnötig, alle Personalisierungen nach einem Service-Update oder zu einem anderen Zeitpunkt erneut zu importieren, und es wird dringend davon abgeraten.
-
-#### <a name="export"></a>Exportieren
-
-Allgemein können Sie eine Ihrer eigenen Ansichten oder Personalisierungen exportieren, indem Sie die entsprechende Seite öffnen, die Werkzeugleiste **Personalisierung** öffnen und dann **Exportieren** wählen. Weitere Informationen über die Symbolleiste finden Sie im Abschnitt [Personalisierungs-Symbolleiste](#personalization-toolbar) weiter oben in diesem Thema. Alternativ können Sie, wenn [Gespeicherte Ansichten](saved-views.md) aktiviert sind, zu **Einstellungen \> Benutzeroptionen \> Personalisierung** gehen, um eine Liste aller Ihrer Personalisierungen im System anzuzeigen. Von dort aus können Sie die Ansichten oder Personalisierungen auswählen, die exportiert werden sollen, und dann **Exportieren** wählen.
-
-Zusätzlich können Admins die Personalisierungen anderer Benutzer exportieren, indem sie diese Schritte ausführen.
-
-1. Gehen Sie zu **Systemverwaltung \> Einrichten \> Personalisierung**.
-2. Wählen Sie auf der Registerkarte **Benutzer** den gewünschten Benutzer.
-3. Suchen und wählen Sie die Ansicht oder Personalisierung, die Sie interessiert.
-4. Wählen Sie **Exportieren**.
-
-#### <a name="import"></a>Warenimport
-
-Um eine Ansicht oder Personalisierung zu importieren, öffnen Sie einfach die Werkzeugleiste **Personalisierung** und wählen **Importieren**. Zusätzlich können Admins eine Datei importieren und sie sofort an einen oder mehrere Benutzer weitergeben.
-
-Wenn gespeicherte Ansichten aktiviert sind, führen Sie diese Schritte aus.
-
-1. Gehen Sie zu **Systemverwaltung \> Einrichten \> Personalisierung**.
-2. Wählen Sie im Aktivitätsbereich **Ansichten importieren \> Benutzeransichten**.
-3. Wählen Sie den Importmodus:
-
-    - **Bestimmte Benutzer auswählen** – Geben Sie die Ansicht oder Personalisierung an ausgewählte Benutzer weiter.
-    - **Importieren im Ist-Zustand** – Importieren Sie die Ansicht oder Personalisierung mit demselben Benutzer, der sie exportiert hat.
-
-4. Wählen Sie **Durchsuchen**, und suchen und wählen Sie die zu importierende Personalisierung.
-5. Wählen Sie **Weiter**.
-6. Wenn Sie in Schritt 3 **Bestimmte Benutzer auswählen** gewählt haben, wählen Sie die Benutzer aus, für die die Personalisierung importiert werden soll.
-7. **Import** auswählen
-8. Lösen Sie Konflikte wie erforderlich auf.
-
-Wenn gespeicherte Ansichten nicht aktiviert sind, führen Sie diese Schritte aus.
-
-1. Gehen Sie zu **Systemverwaltung \> Einrichten \> Personalisierung**.
-2. Wählen Sie **Anwenden** aus.
-3. Wählen Sie die Benutzer aus, an die die Personalisierung verteilt werden soll.
-4. Wählen Sie **Personalisierungen aus einer Datei importieren**.
-5. Wählen Sie **Durchsuchen**, und suchen und wählen Sie die zu importierende Personalisierung.
-6. Wählen Sie **OK**.
+Nach dem Personalisieren einer Seite können Sie die Personalisierungen mit anderen Benutzern teilen, indem Sie die personalisierte exportieren. Sie können dann andere Benutzer auffordern, die Personalisierungsdatei zu importieren. Alternativ können Sie die Personalisierungen an einen Benutzer geben, der Administratorrechte besitzt. Dieser Benutzer kann dann Ihre Personalisierungsdatei auf viele Benutzer gleichzeitig anwenden, indem er die Administratorseite **Personalisierung** nutzt.
 
 ## <a name="administration-of-personalizations"></a>Verwalten der Personalisierungen
 
@@ -289,6 +195,3 @@ Für Kunden, die die Funktion [Gespeicherte Ansichten](saved-views.md) noch nich
 Wenn Sie die Einstellungen der Lagerungsdimensionen auf einer Seite personalisieren, beachten Sie die Einstellungen, die erstellt wurden, indem Sie die Option **Anzeigendimension** nutzen. So verwenden Sie die Personalisierung, um eine Spalte für die Chargennummerenlagerungsdimension auszublenden, doch die Spalte erscheint das nächste Mal, wenn die Seite geöffnet wird. Dieses Verhalten tritt auf, da die Einstellungen die Lagerungsdimensionsspalten **Dimensionenanzeige** steuern, die angezeigt werden. Die **Dimensionsanzeigeeinstellungen** gelten für alle Seiten und diese Einstellungen setzen alle personalisierten Lagerdimensionsfelder einer individuellen Seite außer Kraft.
 
 Wenn Sie wie im vorhergehenden Beispiel nicht möchten, dass die Spalte für die Chargennummerlagerungsdimension auf einer Seite erscheint, müssen Sie die Dimension als Teil der Option **Dimensionen anzeigen** für diese Seite deaktivieren.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

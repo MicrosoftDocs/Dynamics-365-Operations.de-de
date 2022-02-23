@@ -2,9 +2,11 @@
 title: Komprimieren großer Dokumente, die in der elektronischen Berichterstellung generiert werden
 description: In diesem Thema wird erläutert, wie Sie große Dokumente komprimieren, die von einem Format für die elektronische Berichterstellung (EB) generiert werden.
 author: NickSelin
+manager: kfend
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner, ERFormatDestinationTable
 audience: Application User, IT Pro
@@ -15,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 7ef8f730f2e207a8fd28c2bf5167d14f57d6c607314bfc48d4358a59d3ef5c43
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 30de55f9e55911290750c148621fd3d4531686c2
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718598"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680853"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Komprimieren großer Dokumente, die in der elektronischen Berichterstellung generiert werden 
 
 [!include [banner](../includes/banner.md)]
 
-Sie können das [Framework für die elektronische Berichterstellung (EB)](general-electronic-reporting.md) verwenden, um eine Lösung zu konfigurieren, die Transaktionsdaten abruft, um ein ausgehendes Dokument zu generieren. Dieses generierte Dokument ist möglicherweise sehr groß. Wenn dieser Dokumenttyp generiert wird, wird der Speicher des [Anwendungsobjektservers (AOS)](../dev-tools/access-instances.md#location-of-packages-source-code-and-other-aos-configurations) zur Speicherung verwendet. Irgendwann muss das Dokument dann aus Ihrer Microsoft Dynamics 365 Finance-Anwendung heruntergeladen werden. Derzeit ist die maximale Größe eines einzelnen Dokuments, das in EB generiert werden kann, auf 2 Gigabyte (GB) begrenzt. Des Weiteren [begrenzt](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) Finance die Größe einer heruntergeladenene Datei derzeit auf 1 GB. Daher müssen Sie eine EB-Lösung konfigurieren, die die Wahrscheinlichkeit verringert, dass diese Einschränkungen überschritten werden und Sie eine Ausnahme **Stream war zu lang** oder **Überlauf oder Unterlauf in der Rechenoperation** erhalten.
+Sie können das [Framework für die elektronische Berichterstellung (EB)](general-electronic-reporting.md) verwenden, um eine Lösung zu konfigurieren, die Transaktionsdaten abruft, um ein ausgehendes Dokument zu generieren. Dieses generierte Dokument ist möglicherweise sehr groß. Wenn dieser Dokumenttyp generiert wird, wird der Speicher des [Anwendungsobjektservers (AOS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances#location-of-packages-source-code-and-other-aos-configurations) zur Speicherung verwendet. Irgendwann muss das Dokument dann aus Ihrer Microsoft Dynamics 365 Finance-Anwendung heruntergeladen werden. Derzeit ist die maximale Größe eines einzelnen Dokuments, das in EB generiert werden kann, auf 2 Gigabyte (GB) begrenzt. Des Weiteren [begrenzt](https://fix.lcs.dynamics.com/Issue/Details?bugId=489291) Finance die Größe einer heruntergeladenene Datei derzeit auf 1 GB. Daher müssen Sie eine EB-Lösung konfigurieren, die die Wahrscheinlichkeit verringert, dass diese Einschränkungen überschritten werden und Sie eine Ausnahme **Stream war zu lang** oder **Überlauf oder Unterlauf in der Rechenoperation** erhalten.
 
 Wenn Sie eine Lösung konfigurieren, können Sie Ihr EB-Format im Vorgangs-Designer anpassen, indem Sie ein Stammelement vom Typ **Ordner** hinzufügen, um den Inhalt zu komprimieren, der von einem der verschachtelten Elemente generiert wird. Die Komprimierung arbeitet „just in time“, sodass die maximale Speichernutzung und die Größe der herunterzuladenden Datei verringert werden können.
 
@@ -55,7 +57,7 @@ Bevor Sie die Prozeduren in diesem Thema abschließen können, müssen die folge
 1. [Führen Sie das importierte Format aus](er-defer-xml-element.md#run-the-imported-format).
 2. Beachten Sie, dass die Größe des generierten Dokuments im XML-Format 3 Kilobyte (KB) beträgt.
 
-    ![Vorschau des unkomprimierten ausgehenden Dokuments.](./media/er-compress-outbound-files1.png)
+    ![Vorschau des unkomprimierten ausgehenden Dokuments](./media/er-compress-outbound-files1.png)
 
 ### <a name="modify-the-format-to-compress-the-generated-output"></a>Ändern des Formats, um die generierte Ausgabe zu komprimieren
 
@@ -80,7 +82,7 @@ Bevor Sie die Prozeduren in diesem Thema abschließen können, müssen die folge
     > [!NOTE] 
     > Die Komprimierungsrate der XML-Datei, die diese ZIP-Datei enthält, beträgt 87 Prozent. Die Komprimierungsrate hängt von den Daten ab, die komprimiert werden.
 
-    ![Vorschau des komprimierten ausgehenden Dokuments.](./media/er-compress-outbound-files2.png)
+    ![Vorschau des komprimierten ausgehenden Dokuments](./media/er-compress-outbound-files2.png)
 
 > [!NOTE]
 > Wenn das EB-[Ziel](electronic-reporting-destinations.md) für das Formatelement konfiguriert ist, das die Ausgabe generiert (in diesem Beispiel das Element **Bericht**), wird die Komprimierung der Ausgabe umgangen.
@@ -92,6 +94,3 @@ Bevor Sie die Prozeduren in diesem Thema abschließen können, müssen die folge
 [Zielorte für elektronische Berichterstellung (ER)](electronic-reporting-destinations.md)
 
 [Ausführung von XML-Elementen in ER-Formaten verzögern](er-defer-xml-element.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

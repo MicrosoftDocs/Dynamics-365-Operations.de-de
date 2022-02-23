@@ -1,10 +1,12 @@
 ---
 title: Service Level und Beschreibung
 description: In diesem Thema werden Service Level und Beschreibung im Anlagenmanagement erläutert.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectServiceLevel, EntAssetWorkOrderStandardDescription, EntAssetWorkOrderServiceLevel, EntAssetServiceLevelLookup
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 32e6dd6ba7291e8ea1cb78eeed2d8e2fcec0f6dd3cbd039336be0169730101ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8bb56e5103bd9e18e88c164cd308e55d48e64823
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758687"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019378"
 ---
 # <a name="service-level-and-description"></a>Service Level und Beschreibung
 
@@ -43,9 +45,9 @@ Wenn Sie einen Arbeitsauftrag anlegen, möchten Sie möglicherweise die Service 
 6. Um eine Startzeit für den Arbeitsauftrag festzulegen, stellen Sie zusätzlich zu einem Startdatum die Option **Startzeit einstellen** auf **Ja**. Geben Sie dann die Startzeit in das Feld **Startzeit** ein. Wenn Sie die Option auf **Nein** setzen, wird die aktuelle Tageszeit verwendet.
 7. Geben Sie im Feld **Endtag** eine Anzahl von Tagen ein, um den Zeitraum zu definieren, in dem der Arbeitsauftrag enden soll. Die Anzahl der Tage wird ab dem Startdatum des Arbeitsauftrags berechnet. Wenn der Arbeitsauftrag beispielsweise innerhalb einer Woche nach seinem Beginndatum enden soll, geben Sie **7** ein.
 8. Um eine Endzeit für den Arbeitsauftrag festzulegen, stellen Sie zusätzlich zu einem Enddatum die Option **Endzeit einstellen** auf **Ja**. Geben Sie dann die Endzeit in das Feld **Endzeit** ein. Wenn Sie die Option auf **Nein** setzen, wird die aktuelle Tageszeit verwendet.
-9. Wählen Sie **Speichern** aus.
+9. Wählen Sie **Speichern**.
 
-![Seite „Arbeitsauftrags-Leistungsebene“.](media/19-setup-for-work-orders.png)
+![Seite „Arbeitsauftrags-Leistungsebene“](media/19-setup-for-work-orders.png)
 
 ## <a name="create-a-description"></a>Erstellen einer Beschreibung
 
@@ -53,6 +55,3 @@ Wenn Sie einen Arbeitsauftrag anlegen, möchten Sie möglicherweise die Service 
 2. Wählen Sie **Neu** aus.
 3. Geben Sie im Feld **Beschreibung** die Beschreibung ein.
 4. Wählen Sie **Speichern**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,26 +1,29 @@
 ---
 title: Fristen für Auftrag
 description: Dieser Artikel enthält Informationen zu Auftragserfassungsfristen. Eine Auftragserfassungsfrist ist eine Sperrzeit, die bestimmt, ob ein Kundenauftrag als am aktuellen Tag oder dem nächsten Tag empfangen behandelt (und erfüllt) werden soll.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventOrderEntryDeadlineGroup, InventOrderEntryDeadlineParameters, InventOrderEntryDeadlineTable, MCRAutoTaxRules
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 7151
 ms.assetid: bbc4f9a2-df4b-4d92-9f18-25282a85541f
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71748cb05346f7a31f51baebb86b9accc11c8478
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5f7d4a99166af112abe26220a700fcf4be79223b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580527"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428534"
 ---
 # <a name="order-entry-deadlines"></a>Fristen für Auftrag
 
@@ -99,12 +102,10 @@ In der folgenden Tabelle sind die in MST umgerechneten Auftragsfristen für Stan
 
 **Hinweis:** Falls die Anpassung auf Sommerzeit aktiviert ist, werden die Auftragsfristen entsprechend angeglichen.
 
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
+<a name="additional-resources"></a>Zusätzliche Ressourcen
+--------
 
 [Lieferzeitpläne](delivery-schedules.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

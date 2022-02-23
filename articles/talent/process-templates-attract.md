@@ -71,6 +71,3 @@ Folgen Sie diesen Schritten, um eine Einstellungsvorlage zu erstellen.
     - Um eine Aktion zu entfernen, erweitern Sie sie und wählen Sie dann die Abfalleimerschaltfläche im Feld Aktivitätskopf aus.
 
 8. Wählen Sie **Speichern**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

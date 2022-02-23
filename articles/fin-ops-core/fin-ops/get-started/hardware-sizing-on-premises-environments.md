@@ -2,9 +2,11 @@
 title: Anforderungen an die Hardwarekalkulation für lokale Umgebungen
 description: Dieses Thema listet die Anforderungen an die Hardwarekalkulation für eine lokale Umgebung auf.
 author: sericks007
-ms.date: 06/02/2021
+manager: AnnBe
+ms.date: 11/27/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 443b80e44a90a68610fbb2bb5a5f4b6b7d545fa7ad772edb3672972fa82f8cbd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9d4f2e59d4dd78d15d561ff0da47e4b9b1a2fce3
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763433"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798303"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Anforderungen an die Hardwarekalkulation für lokale Umgebungen
 
@@ -36,7 +38,7 @@ Nachdem Sie die Dokumentation gelesen haben, können Sie damit beginnen, das Vol
 
 Alle in der folgenden Abbildungen gezeigten Faktoren wirken sich auf die Kalkulation aus. Je detailliertere Informationen erfasst werden, desto genauer können Sie die Kalkulation durchführen. Eine Hardwarekalkulation ohne zugrundeliegende Daten wird sehr wahrscheinlich unpräzise sein. Die absolute Mindestanforderung im Hinblick auf die benötigten Daten ist die Spitzentransaktionsleitungslast pro Stunde.
 
-[![Hardwarekalkulation für lokale Umgebungen.](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
+[![Hardwarekalkulation für lokale Umgebungen](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
 
 Von links nach rechts betrachtet, ist der erste und wichtigste Faktor, den Sie brauchen, um eine präzise geschätzte Kalkulation durchzuführen, ein Transaktionsprofil oder eine Transaktionscharakterisierung. Es ist wichtig, immer das Spitzentransaktionsvolumen pro Stunde zu ermitteln. Wenn es mehrere Spitzenintervalle gibt, müssen diese Intervalle präzise definiert werden.
 
@@ -132,15 +134,10 @@ Größtenteils sollten die empfohlenen Mindestanforderungen mit zwei Knoten ausr
 
 Für die allgemeine Verfügbarkeit kann nur ein SSRS-Knoten bereitgestellt werden. Überwachen Sie Ihren SSRS-Knoten beim Test und erhöhen Sie die Anzahl der Kerne für SSRS bei Bedarf. Stellen Sie sicher, dass Ihnen auf einem virtuellen Host, der nicht die SSRS VM ist, ein vorkonfigurierter sekundärer Knoten zur Verfügung steht. Das ist wichtig, falls es Probleme mit der virtuellen Maschine gibt, auf der SSRS oder der virtuelle Host untergebracht sind. In diesem Fall müssten sie ersetzt werden.
 
-Ab Version 10.0.17 ist es möglich, zusätzliche SSRS-Knoten zu konfigurieren, um eine hohe Verfügbarkeit zu erreichen. Weitere Informationen finden Sie unter [Hohe Verfügbarkeit für Knoten von SQL Server Reporting Services (SSRS) konfigurieren](../../dev-itpro/deployment/onprem-ssrsha.md).
-
 ## <a name="environment-orchestrator"></a>Environment Orchestrator
 
-Der Orchestrator-Service verwaltet Ihre Bereitstellung und die entsprechende Kommunikation mit LCS. Dieser Service wird als primärer Service Fabric-Service bereitgestellt und benötigt mindestens drei VMs. Dieser Services befindet sich am selben Standort wie die Service Fabric-Orchestrierungsservices. Dieser sollte auf die Spitzenlast des Clusters ausgelegt werden. Weitere Informationen finden Sie unter [Planen und Vorbereiten Ihrer eigenständigen Fabric-Cluster-Bereitstellung](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+Der Orchestrator-Service verwaltet Ihre Bereitstellung und die entsprechende Kommunikation mit LCS. Dieser Service wird als primärer Service Fabric-Service bereitgestellt und benötigt mindestens drei VMs. Dieser Services befindet sich am selben Standort wie die Service Fabric-Orchestrierungsservices. Dieser sollte auf die Spitzenlast des Clusters ausgelegt werden. Weitere Informationen finden Sie unter [Planen und Vorbereiten Ihrer eigenständigen Fabric-Cluster-Bereitstellung](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## <a name="virtualization-and-oversubscription"></a>Virtualisierung und Überabonnement
 
 Aufgabenkritische Services wie AOS sollten auf virtuellen Hosts mit speziell dafür vorgesehenen Ressourcen untergebracht werden, wie beispielsweise Kerne, Speicher und Festplatten.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

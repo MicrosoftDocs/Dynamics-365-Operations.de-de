@@ -1,24 +1,26 @@
 ---
 title: Einrichten von Nummernkreisen mit einem Assistenten
 description: In diesem Abschnitt wird erläutert, wie Sie mit Hilfe eines Assistenten alle erforderlichen Zahlenreihen gleichzeitig einrichten können.
-author: SunilGarg
+author: sericks007
+manager: AnnBe
 ms.date: 07/18/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: NumberSequenceTableListPage, NumberSequenceWizard
 audience: Application User
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sunilg
+ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7388a835147e1e8242463fee98c57c300d062877
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 684983d1ea54264cc378ded8e9dca3cf9ec2c901
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777567"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4799030"
 ---
 # <a name="set-up-number-sequences-using-a-wizard"></a>Einrichten von Nummernkreisen mit einem Assistenten
 
@@ -36,6 +38,3 @@ Nummernkreise dienen zum Generieren von lesbaren, eindeutigen Kennungen für Mas
 4. Wählen Sie **Weiter**.
 5. Wählen Sie **Fertig stellen** aus.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

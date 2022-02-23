@@ -2,9 +2,11 @@
 title: Eingabehilfefunktionen
 description: In diesem Thema werden die Funktionen erläutert, die für Benutzer gestaltet ist, die unter verschiedenen Behinderungen leiden.
 author: TLeforMicrosoft
+manager: AnnBe
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -12,19 +14,16 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 022c51f7050d11caf5ce67c5df8f9f9040a54b98
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2d0dd3ebf4b50f43f9fb1893081ede2a93428c72
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071057"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798694"
 ---
 # <a name="accessibility-features"></a>Eingabehilfefunktionen
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 In diesem Thema werden die Funktionen erläutert, die Benutzer mit verschiedenen Behinderungen dabei unterstützen sollen, diese App zu verwenden. Beispielsweise gibt es Funktionen für Personen, die sehunterstützende Technologien wie Microsoft Windows-Sprachausgabe verwenden.
 
@@ -55,13 +54,13 @@ Jede Aktivität, die auf einer Seite angegeben wird, kann über eine Tastatur ü
 
 Sie möchten die Aktivität **E-Mail-Benachrichtigungsprotokoll** ausführen, die in der Gruppe **E-Mail-Benachrichtigung** auf der Registerkarte **Auftrag** im Aktivitätsbereich angezeigt wird.
 
-![E-Mail-Benachrichtigungs-Protokollaktivität im Aktivitätsbereich.](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "'E-Mail-Benachrichtigungs-Protokollaktivität' im Aktivitätsbereich")
+![E-Mail-Benachrichtigungs-Protokollaktivität im Aktivitätsbereich](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "'E-Mail-Benachrichtigungs-Protokollaktivität' im Aktivitätsbereich")
 
 Eine Option ist, die Tastatur zu verwenden. Drücken Sie STRG+F6, um den Fokus im Aktivitätsbereich zu verschieben, und die Registerkarte der Verschiebung von allen Registerkarten und Aktivitäten wiederholt zu übertragen, nachdem die Aktivität **E-Mail-Benachrichtigungsprotokoll** im Fokus liegt.
 
 Sie können jedoch auch die Aktivität direkt ausführen. Von Überall auf der Seite klicken Sie Ctrl+Apostrophe ('), um das Suchfeld für Aktivitäten anzuzeigen.
 
-![Suchfeld für Aktivitäten.](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Suchfeld für Aktivitäten")
+![Suchfeld für Aktivitäten](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Suchfeld für Aktivitäten")
 
 Im Suchfeld tippen Sie Wörter ein, die die Aktion beschreiben. Die Aktivität wird für Sie verfügbar gemacht, und Sie können sie direkt ausführen. Beispielsweise indem Sie **E-Mail**, **benachrich** (ein Teil eines Worts) oder **Protokoll** eingeben, können Sie zur E-Mail-Benachrichtigungs-Protokollfunktionen springen.
 
@@ -98,6 +97,3 @@ Auf Smartphones und anderen kleinen Bildschirmen passen sich die Steuerelemente 
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Empfehlungen, um Entwickler und Kunden zu helfen, Eingabehilfen in Ihre Anpassungen zu integrieren.
 
 Weitere Informationen zu Microsoft-Verfahren für das Aktivieren des Zugangs finden Sie unter [Eingabehilfen in Formularen, Produkten und Steuerungen](../../dev-itpro/user-interface/enable-accessibility.md).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

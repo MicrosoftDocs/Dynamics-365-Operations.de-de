@@ -1,10 +1,12 @@
 ---
 title: Manuell erstellte Arbeitsaufträge
 description: In diesem Thema wird erläutert, wie Sie im Anlagenmanagement Arbeitsaufträge manuell anlegen.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderTableCreateRelated, EntAssetWorkOrderTableCreate, EntAssetWorkOrderTableCopy
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a755fa579d929056296c5512f976d15c4808c336b6688b891a4712051e15e9a1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c787dbc9889139df76b9b102deb18fce567e382
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750099"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017867"
 ---
 # <a name="manually-created-work-orders"></a>Manuell erstellte Arbeitsaufträge
 
@@ -111,7 +113,7 @@ Sie können einen Arbeitsauftrag erstellen, der zu einem vorhandenen Arbeitsauft
 
 Die folgende Abbildung zeigt ein Beispiel für das Dialogfeld **Zugehörigen Arbeitsauftrag erstellen**.
 
-![Abbildung 1.](media/03-work-orders.png)
+![Abbildung 1](media/03-work-orders.png)
 
 >[!NOTE]
 >Wenn Sie eine zugehörige Arbeitsauftragsmaske unter **Anlagenverwaltungsparameter** > **Arbeitsaufträge** > **Verwandte Arbeitsauftragsmaske** eingerichtet haben, werden Arbeitsauftrags-IDs entsprechend dem Maskenaufbau erstellt. Wenn keine zugehörige Arbeitsauftragsmaske eingerichtet ist, wird die nächste verfügbare Arbeitsauftrags-ID für zugehörige Arbeitsaufträge verwendet.
@@ -137,7 +139,7 @@ Es ist möglich, schnell einen neuen Arbeitsauftrag aus einem bestehenden Arbeit
 
 In der folgenden Abbildung wird ein Beispiel des Dialogfelds **Arbeitsauftrag kopieren** angezeigt.
 
-![Abbildung 2.](media/04-work-orders.png)
+![Abbildung 2](media/04-work-orders.png)
 
 
 ## <a name="create-a-work-order-based-on-a-maintenance-request"></a>Arbeitsauftrag basierend auf einer Wartungsanforderung anlegen
@@ -157,12 +159,9 @@ In der folgenden Abbildung wird ein Beispiel des Dialogfelds **Arbeitsauftrag ko
 
 In der folgenden Abbildung wird ein Beispiel des Dialogfelds **Arbeitsauftrag erstellen** angezeigt.
 
-![Abbildung 3.](media/05-work-orders.png)
+![Abbildung 3](media/05-work-orders.png)
 
 
 >[!NOTE]
 >Wenn Arbeitsaufträge automatisch erstellt werden sollen, können Sie Wartungsplanjobs planen oder festlegen, dass [Wartungspläne](../preventive-and-reactive-maintenance/maintenance-plans.md) oder [Wartungsrunden](../preventive-and-reactive-maintenance/maintenance-rounds.md) auf einer Anlage automatisch erstellt werden. Arbeitsaufträge, die aus Wartungsanfragen auf der Listenseite **Alle Wartungszeitpläne** erstellt wurden, weisen die in den Wartungsanfragen ausgewählten Wartungsauftragsarten auf.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

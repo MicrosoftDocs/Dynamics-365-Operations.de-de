@@ -2,24 +2,27 @@
 title: Lagerplätze an einem für WMS aktivierten Lagerort konfigurieren
 description: Dieses Handbuch zeigt Ihnen an, wie die Lagerplatzeinstellung für einen neuen WMS-aktivierten Lagerort konfiguriert (ein Lagerort, den Verwendung Lagerortverwaltungsprozesse Erweiterter).
 author: perlynne
+manager: tfehr
 ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventLocation, WHSLocationFormat, WHSLocationType, WHSLocationProfile, WHSParameters, WHSZoneGroup, WHSZone, WHSLocationBuild, WHSLocation, WHSPackSizeCategory, WHSLocationLimit, WHSInventFixedLocation, WMSLocationIdLookup
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5273a388b30a41b75bd76c92fa4b9ff05c8f8d6
-ms.sourcegitcommit: db80edbe0c32e3a5f22aae6154781f3ff8a2ab2a
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 31f016c4c8b8b08139836336ac38196fbd1fba6f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "7599347"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428570"
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Lagerplätze an einem für WMS aktivierten Lagerort konfigurieren
 
@@ -33,7 +36,7 @@ Dieses Handbuch zeigt Ihnen an, wie die Lagerplatzeinstellung für einen neuen W
 2. Klicken Sie auf **Neu**.
 3. Geben Sie im Feld **Lagerort** einen Wert ein.
 4. Geben Sie im Feld **Name** einen Wert ein.
-5. Wählen Sie im **Site**-Feld einen vorhandenen Site-Wert aus oder geben Sie ihn ein.
+5. Geben Sie in das Feld **Lagerort** einen Wert ein.
 6. Erweitern Sie den Abschnitt **Lagerort**.
 7. Setzen Sie die Option **Benutzerfehlerprotokoll für Lagerortverwaltungsprozesse verwenden** auf „Ja“. Bei dieser Einstellung können Sie weitere Lagerortprozesse mithilfe von Lagerortarbeit und mobilen Geräten auszuführen.
 8. Schließen Sie die Seite.
@@ -172,6 +175,3 @@ Dieses Handbuch zeigt Ihnen an, wie die Lagerplatzeinstellung für einen neuen W
 6. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 7. Schließen Sie die Seite.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

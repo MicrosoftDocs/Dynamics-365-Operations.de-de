@@ -1,23 +1,26 @@
 ---
 title: Europa – Übersicht
 description: Dieses Thema bietet Links zu Microsoft Dynamics 365 Finance-Dokumentationsressourcen für Europa.
-author: kfend
-ms.date: 01/15/2022
-ms.topic: overview
+author: ShylaThompson
+manager: AnnBe
+ms.date: 07/25/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Operations
 ms.search.region: global
-ms.author: kfend
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2d8a2e44713607ff2a4df91271c70d96c4d71d9
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 1d63d5682521b1991c387604c2cc219c7f147c8d
+ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982093"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "4512210"
 ---
 # <a name="europe-overview"></a>Europa – Übersicht
 
@@ -27,9 +30,9 @@ Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren 
 
 - [Vorschussinhaber – Übersicht](emea-advance-holders.md)
  - [Vorauszahlungstransaktionen](emea-advance-holders-transactions.md)
- - [Vorauszahlung an Mitarbeiter](tasks/advance-payment-employee.md)
+ - [Vorauszahlung an Mitarbeiter ](tasks/advance-payment-employee.md)
 - [Vorabrechnungen für Osteuropa](emea-advance-invoice.md)
-- [Kontoauszug und Zahlungsabstimmung](emea-bank-reconciliation.md)
+- [Kontoauszug und Zahlungsabstimmung ](emea-bank-reconciliation.md)
 - [Rechnungskorrektur](emea-corrective-invoice.md)
 - [Perioden in periodischen Erfassungen teilen](emea-create-post-periodic-journals.md)
 - [Zahlungen für einen Debitor erstellen, der Direkteinzugsmandate verwendet](tasks/create-payments-customers-who-have-direct-debit-mandates.md)
@@ -38,7 +41,6 @@ Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren 
 - [Zusammenfassende Meldung](emea-eu-sales-list.md)
 - [Wechselkursregulierungen](emea-exchange-rate-adjustments.md)
 - [Dateiformate für Zahlungsmethoden](emea-select-file-formats-for-the-method-of-payments.md)
-- [Finanzleitfaden (Globalisierung) zu den Auswirkungen des Brexit](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
 - [Steuerdienste ERS-Integration](emea-fiscal-service-integration.md)
 - [Anlagenveräußerungen für Estland und Litauen](emea-credit-note-reverse-fixed-asset-sale.md)
 - [Umlagerungsdokument für eine interne Umlagerung generieren](tasks/transfer-document-internal-inventory-transfer.md)
@@ -56,14 +58,13 @@ Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren 
   - [Lieferantenzahlungen mithilfe eines ISO20022-Zahlungsformats erstellen und exportieren](tasks/create-export-vendor-payments-iso20022-payment-format.md)
 - [Intrastat – Übersicht](emea-intrastat.md)
   - [Buchungen an Intrastat übertragen](tasks/transfer-transactions-intrastat.md)
-  - [Angabe einer Ladungsadresse für ein innergemeinschaftliches Geschäft](tasks/eur-00002-specify-lading-address-intra-community.md)
+  - [Angabe einer Ladungsadresse für ein innergemeinschaftliches Geschäft ](tasks/eur-00002-specify-lading-address-intra-community.md)
   - [EU-Intrastat-Meldung generieren](tasks/eur-00002-eu-intrastat-declaration.md)
 - [Lagererfassungsberichte](emea-set-up-report-inventory-journal-names.md)
 - [Rechnungsabgangsfrist](emea-invoice-issue-deadline.md)
 - [Rechnungsverarbeitung](emea-invoice-processing.md)
 - [EU-Gelangensbestätigung ausstellen](tasks/eur-00012-issue-eu-entry-certificate.md)
 - [Unterstützte Standards für die elektronische Rechnungsstellung](emea-oioubl-standards-electronic-invoicing.md)
-- [Erzwungene Generierung elektronischer Rechnungen](emea-eur-forced-einvoices.md)
 - [Originalrechnungsreferenz (Osteuropa)](tasks/ee-00004-original-invoice-reference.md)
 - [Suche nach Partei per MwSt.-Kennung](tasks/eur-00015-party-search-vat-id.md)
 - [Werkzeug zur Generierung von Zahlungsreferenzen](tasks/ee-00015-payment-reference-generation-tool.md)
@@ -77,7 +78,7 @@ Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren 
 - [SEPA-Kreditübertragungsübersicht](../accounts-payable/sepa-credit-transfer.md)
 - [SEPA-Lastschriftüberblick](../accounts-receivable/sepa-direct-debit-overview.md)
 - [Einrichten der Debitoren- und Kreditorenvergütung](emea-compensation-customer-vendor-transactions.md)
-- [Berichterstellung für zusammenfassende Meldung einrichten](tasks/eur-00011-eu-sales-list-reporting.md)
+- [Zusammenfassende Meldung einrichten](tasks/eur-00011-eu-sales-list-reporting.md)
 - [Zahlungsbelegformats für Projektrechnungen einrichten](tasks/set-up-payment-slip-format-project-invoices.md)
 - [Signaturgeber für Druckformulare einrichten](emea-set-up-signers-for-printing-forms.md)
 - [Stornobuchung](emea-storno.md)
@@ -93,13 +94,8 @@ Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren 
   - [MwSt.-Erklärung erstellen und übermitteln](tasks/create-submit-vat-report.md)
   - [Betrachten der Transaktionen zur Abwicklung für Osteuropa](emea-transactions-settlement-form.md)
   - [Steuerleistungsdatum (Datum des MwSt.-Registers)](emea-tax-point-date.md)
-  - [Datum der MwSt.-Registrierung durch den Kreditor](emea-date-vendor-VAT-register.md)
-- [Funktionserweiterung Finanzgrund](emea-financial-reason.md)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-- [Überblick über die elektronische Berichterstellung](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
-- [Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [Überblick über die elektronische Berichterstellung](../../dev-itpro/analytics/general-electronic-reporting.md)
+- [Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)

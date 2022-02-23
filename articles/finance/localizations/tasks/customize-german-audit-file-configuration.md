@@ -2,9 +2,11 @@
 title: Anpassen der deutschen Protokolldateikonfiguration
 description: Im folgenden Verfahren sehen Sie, wie Sie die deutsche Protokolldateikonfiguration durch Hinzufügen einer neuen Tabellengruppe und Auswählen einer Tabelle mit Feldern für die Datenexportdefinition anpassen.
 author: mrolecki
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERTableNameLookup, ERModelGDPdUFunctionEditor,  ERExpressionDesignerFormula
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1ba61cbe44fbf6e7e1471b5db8081c186a5b327dd0c9895ee318a92cdd0d93e5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2c0dfe70c6784b742573803a6a28fda56d764574
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742844"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964500"
 ---
 # <a name="customize-german-audit-file-configuration"></a>Anpassen der deutschen Protokolldateikonfiguration
 
@@ -84,6 +86,3 @@ Diese Aufgabe wurde mithilfe des Demodatenunternehmens DEMF erstellt, mit "Deuts
 54. Geben Sie im Feld "Beschreibung" einen Wert ein.
 55. Klicken Sie auf "OK".
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

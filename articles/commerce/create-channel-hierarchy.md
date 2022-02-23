@@ -2,24 +2,27 @@
 title: Eine Kanalnavigationshierarchie erstellen
 description: In diesem Thema wird beschrieben, wie eine Kanalnavigationshierarchie in Microsoft Dynamics 365 Commerce erstellt wird.
 author: samjarawan
-ms.date: 04/27/2021
+manager: annbe
+ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: d522838bdddf6cda6d7e451b27183f733e3de53df865d49cdadf846cf99cc953
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e83860667f142adcc85cd8542d521e18f16dbc2c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749954"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412461"
 ---
 # <a name="create-a-channel-navigation-hierarchy"></a>Eine Kanalnavigationshierarchie erstellen
 
@@ -36,7 +39,7 @@ Eine Kanalnavigationshierarchie dient zur Gruppierung und Organisierung von Prod
 
 Um eine Kanalnavigationshierarchie zu erstellen, führen Sie die folgenden Schritte aus.
 
-1. Gehen Sie im Navigationsbereich zu **Module \> Einzelhandel und Handel \> Produkte und Kategorien \> Kanalnavigationskategorien**.
+1. Gehen Sie im Navigationsbereich zu **Module \> Retail und Commerce \> Produkte und Kategorien \> Kanalnavigationskategorien**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 1. Geben Sie im Kästchen **Name** einen Namen ein.
 1. Geben Sie im Kästchen **Beschreibung** eine Beschreibung ein.
@@ -49,7 +52,7 @@ Um eine Kanalnavigationshierarchie zu erstellen, führen Sie die folgenden Schri
 
 Die folgende Abbildung zeigt einen beispielhaften Stammknoten.
 
-![Beispiel für einen Stammknoten.](media/create-channel-hierarchy-1.png)
+![Beispiel für einen Stammknoten](media/create-channel-hierarchy-1.png)
 
 ## <a name="create-navigation-category-nodes"></a>Navigationskategorieknoten erstellen
 
@@ -65,7 +68,7 @@ Gehen Sie folgendermaßen vor, um zusätzliche Navigationskategorieknoten zu ers
 
 Das folgende Bild zeigt ein Beispiel einer vollständigen Kanalnavigationshierarchie.
 
-![Beispiel einer Kanalhierarchie.](media/create-channel-hierarchy-2.png)
+![Beispiel einer Kanalhierarchie](media/create-channel-hierarchy-2.png)
 
 ## <a name="add-products-to-category-nodes"></a>Produkte zu Kategorieknoten hinzufügen
 
@@ -77,11 +80,11 @@ Gehen Sie folgendermaßen vor, um Produkte zu Kategorieknoten hinzuzufügen.
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
 
 > [!NOTE]
-> Das Hinzufügen von Produkten zu einem Knoten innerhalb der Channel-Navigationshierarchie reicht nicht aus, damit die Produkte in einem ausgewählten Channel angezeigt werden, die Produkte müssen auch einem Channel zugeordnet werden. Weitere Informationen zu Sortimenten finden Sie unter [Sortimentsverwaltung](assortments.md).
+> Das Hinzufügen von Produkten zu einem Knoten in der Kanalnavigationshierarchie reicht nicht aus, damit die Produkte in einem ausgewählten Kanal angezeigt werden. Die Produkte müssen auch zu einem Produkt sortiert werden.
 
 Das folgende Bild zeigt einen Beispielknoten mit hinzugefügten Produkten.
 
-![Produkte zu einem Kategorieknoten hinzufügt.](media/create-channel-hierarchy-3.png)
+![Produkte zu einem Kategorieknoten hinzufügt](media/create-channel-hierarchy-3.png)
 
 ## <a name="add-product-attribute-groups-to-category-nodes"></a>Produktattributgruppen zu Kategorieknoten hinzufügen
 
@@ -97,13 +100,10 @@ Befolgen Sie diese Schritte, um ein Produkt einer Attributgruppe zu einem Katego
 
 Das folgende Bild zeigt einen Beispielknoten mit hinzugefügten Produktattributgruppen.
 
-![Produktattributgruppen auf einem Knoten.](media/create-channel-hierarchy-4.png)
+![Produktattributgruppen auf einem Knoten](media/create-channel-hierarchy-4.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Sortimente einrichten](set-up-assortments.md)
 
 [Attribute und Attributgruppen verwalten](attribute-attributegroups-lifecycle.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

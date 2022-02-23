@@ -2,36 +2,41 @@
 title: Übersicht der Produktdetailseiten
 description: Dieses Thema bietet eine Übersicht über Produktdetailseiten (PDPs) in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
+manager: annbe
 ms.date: 01/23/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 48b4e5d66b86e0b1198bd6ff7ce1e7de33f8fde0
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: c53e74204fad2960dfba972a38c511df7d6672d8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986200"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412670"
 ---
-# <a name="product-details-pages-overview"></a>Übersicht zu Produktdetailseiten
+# <a name="product-details-pages-overview"></a>Übersicht der Produktdetailseiten
 
 [!include [banner](includes/banner.md)]
 
 Dieses Thema bietet eine Übersicht über Produktdetailseiten (PDPs) in Microsoft Dynamics 365 Commerce.
 
+## <a name="overview"></a>Übersicht
+
 Eine PDP bietet detaillierte Informationen zu einem Produkt und ermöglicht es Kunden, Produktoptionen wie Größe, Stil und Farbe auszuwählen. Eine PDP sollte alle Produktinformationen enthalten, die ein Kunde benötigt, um eine Kaufentscheidung zu treffen.
 
 Die folgende Abbildung zeigt ein Beispiel für eine PDP.
 
-![Beispiel einer Produktdetailseite.](./media/pdp.PNG)
+![Beispiel einer Produktdetailseite](./media/pdp.PNG)
 
 ## <a name="header-and-footer-modules"></a>Kopf- und Fußzeilenmodule
 
@@ -83,6 +88,3 @@ Wenn Marketinginhalte für ein bestimmtes Produkt spezifisch sind, kann der PDP 
 [Übersicht der Kontenverwaltungsseiten](quick-tour-account-management.md)
 
 [Erweitern einer Produktdetailseite](enrich-product-page.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

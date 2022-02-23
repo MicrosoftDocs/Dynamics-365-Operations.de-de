@@ -1,49 +1,48 @@
 ---
 title: Strichcodetypen verwalten
-description: Dieses Verfahren zeigt Ihnen, wie Sie eine neue Barcode-Definition festlegen, die dann als Teil des Berichts für die Kommissionierliste verwendet werden kann.
-author: yufeihuang
+description: Dieses Verfahren zeigt Ihnen, wie eine neue Strichcodedefinition eingerichtet wird, die dann als Teil des Kommissionierlistenberichts verwendet werden kann.
+author: perlynne
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BarcodeSetup, InventParameters
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
+ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b689d1fc85d59ac87efa1903fd7122ae5ff011da
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 979726a1d094146b546bbc6d31963367de2c59f5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571112"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428962"
 ---
-# <a name="maintain-bar-code-types"></a>Strichcodetypen verwalten
+# <a name="maintain-barcode-types"></a>Strichcodetypen verwalten
 
 [!include [banner](../../includes/banner.md)]
 
-Dieses Verfahren zeigt Ihnen, wie Sie eine neue Barcode-Definition festlegen, die dann als Teil des Berichts für die Kommissionierliste verwendet werden kann. Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden. Wenn Sie USMF verwenden, können Sie die Beispielswerte verwenden, die angezeigt werden. Diese Aufgaben werden normalerweise von einem Lagerortleiter ausgeführt.
+Dieses Verfahren zeigt Ihnen, wie eine neue Strichcodedefinition eingerichtet wird, die dann als Teil des Kommissionierlistenberichts verwendet werden kann. Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden. Wenn Sie USMF verwenden, können Sie die Beispielswerte verwenden, die angezeigt werden. Diese Aufgaben werden normalerweise von einem Lagerortleiter ausgeführt.
 
-1. Gehen Sie zu **Barcodes**.
-1. Wählen Sie **Neu** aus.
-1. Geben Sie im Feld **Barcode-Einrichtung** einen Wert ein.
-1. Geben Sie im Feld **Beschreibung** einen Wert ein.
-1. Wählen Sie im Feld **Barcode-Typ** eine Option.
-    * Wenn Sie USMF verwenden, können Sie "Code 39" auswählen.
-1. Geben Sie im Feld **Maskenkennung** die Kennung der Strichcodemaske an. Strichcodemasken werden verwendet, um Strichcodes erstellen und Strichcodes schnell erkennen, die in einem Verkaufsstellensystem (POS) gescannt werden. Einzelheiten finden Sie unter [Barcodemasken einrichten](../../../commerce/set-up-bar-code-masks.md).
-1. Geben Sie im Feld **Größe** eine Zahl ein.
-1. Geben Sie in das Feld **Maximale Länge** eine Zahl ein.
-1. Wählen Sie **Speichern** aus.
-1. Schließen Sie die Seite.
-1. Gehen Sie zu **Parameter der Bestands- und Lagerortverwaltung**.
-1. Geben Sie im Feld **Barcode-Einrichtung** einen Wert ein oder wählen Sie ihn aus.
-    * Wählen Sie die Einrichtung für den Barcode, die Sie zuvor erstellt haben, aber beachten Sie, dass das Format des Barcodes mit dem Format des eindeutigen Bezeichners für den verwendeten Datensatz übereinstimmen muss. Für Entnahmerouten sollte das Strichcodeformat zum Beispiel mit dem Format der Entnahmeroutenreferenz übereinstimmen (üblicherweise ein Nummernkreis).  
-1. Wählen Sie **Speichern** aus.
-1. Schließen Sie die Seite.
+1. Wechseln Sie zu Strichcodes.
+2. Klicken Sie auf "Neu".
+3. Geben Sie im Feld "Strichcodeeinstellung" einen Wert ein.
+4. Geben Sie im Feld "Beschreibung" einen Wert ein.
+5. Wählen Sie im Feld "Strichcodetyp " eine Option aus.
+    * Wenn Sie USMF verwenden, können Sie "Code 39" auswählen.  
+6. Geben Sie im Feld "Größe" eine Zahl ein.
+7. Geben Sie im Feld "Höchstlänge" eine Zahl ein.
+8. Klicken Sie auf Speichern.
+9. Schließen Sie die Seite.
+10. Wechseln Sie zu "Parameter für Lager- und Lagerortverwaltung".
+11. Geben Sie im Feld 'Strichcodeeinstellung' einen Wert ein, oder wählen Sie einen Wert aus.
+    * Wählen Sie die Strichcodeeinrichtung, die Sie vorher erstellt haben. Beachten Sie ab, dass das Strichcodeformat mit dem Format des eindeutigen Bezeichners für den Datensatz in Fertigung übereinstimmen muss. Für Entnahmerouten sollte das Strichcodeformat zum Beispiel mit dem Format der Entnahmeroutenreferenz übereinstimmen (üblicherweise ein Nummernkreis).  
+12. Klicken Sie auf "Speichern".
+13. Schließen Sie die Seite.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -67,6 +67,3 @@ Wenn der **Mitarbeiter-Self-Service**-Arbeitsbereich als Einstiegsseite für ein
 
 ### <a name="termination-reason-code-updates-position-assignment-record"></a>Abbruchgrund Code aktualisiert Positionszuordnungssatz
 Der Kündigungsgrund aktualisiert nun die Planstellenzuordnung, wenn ein Mitarbeiter gekündigt und die Planstelle beendet wird. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

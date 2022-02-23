@@ -1,26 +1,29 @@
 ---
 title: Erstellen von Serviceaufgabenbeziehungen
 description: Sie können Serviceaufgaben Servicevereinbarungen oder Serviceaufträgen zuordnen, um die Serviceaufgabe zu beschreiben, die für die Vereinbarung oder den Auftrag ausgeführt werden soll.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b13309816af6984e77f828e827ecffe6266b3ede
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1e50b4322c65097ab4f8aba9c36e4d5e6cc4c01b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576543"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428826"
 ---
 # <a name="create-service-task-relations"></a>Erstellen von Serviceaufgabenbeziehungen    
 
@@ -30,13 +33,13 @@ Sie können Serviceaufgaben Servicevereinbarungen oder Serviceaufträgen zuordne
 
 ## <a name="create-a-relation-with-a-service-agreement"></a>Erstellen einer Beziehung mit einer Servicevereinbarung
 
-1.  Gehen Sie zu **Serviceverwaltung** \> **Allgemein** \> **Servicevereinbarungen** \> **Servicevereinbarungen**.
+1.  Klicken Sie auf den Bereichsseitenknoten: **Serviceverwaltung** \> **Gemeinsam** \> **Servicevereinbarungen** \> **Servicevereinbarungen**.
 
 2.  Wählen Sie eine vorhandene Servicevereinbarung aus, oder erstellen Sie eine neue.
 
-3.  Wählen Sie im Aktivitätsbereich die Schaltfläche **Serviceaufgaben**.
+3.  Klicken Sie im Aktivitätsbereich auf die Schaltfläche **Serviceaufgaben**.
 
-4.  Wählen Sie im Formular **Serviceaufgaben** die Option **Neu**, um eine neue Zeile zu erstellen, und wählen Sie dann eine Serviceaufgabe aus der Liste **Serviceaufgabe**, um die Serviceaufgabe an die Servicevereinbarung anzuhängen.
+4.  Drücken Sie im Formular **Serviceaufgaben** die Tastenkombination STRG+N, um eine neue Position zu erstellen. Wählen Sie in der Liste **Serviceaufgaben** dann eine Serviceaufgabe aus, um die Serviceaufgabe der Servicevereinbarung zuzuordnen.
 
 5.  Geben Sie in die Freitextfelder der Registerkarte **Beschreibung** interne oder externe Hinweise ein.
 
@@ -48,13 +51,13 @@ Eine für eine Servicevereinbarung erstellte Serviceaufgabenbeziehung ist in all
 
 ## <a name="create-a-relation-with-a-service-order"></a>Erstellen einer Beziehung mit einem Serviceauftrag
 
-1.  Gehen Sie zu **Serviceverwaltung** \> **Allgemein** \> **Serviceaufträge** \> **Serviceaufträge**.
+1.  Klicken auf **Serviceverwaltung** \> **Gemeinsam** \> **Serviceaufträge** \> **Serviceaufträge**.
 
 2.  Wählen Sie einen vorhandenen Serviceauftrag aus, oder erstellen Sie einen neuen.
 
-3.  Wählen Sie im Aktivitätsbereich die Schaltfläche **Serviceaufgaben**.
+3.  Klicken Sie im Aktivitätsbereich auf die Schaltfläche **Serviceaufgaben**.
 
-4.  Wählen Sie im Formular **Serviceaufgaben** die Option **Neu**, um eine neue Zeile zu erstellen, und wählen Sie dann eine Serviceaufgabe aus der Liste **Serviceaufgabe**, um die Serviceaufgaben an den Serviceauftrag anzuhängen.
+4.  Drücken Sie im Formular **Serviceaufgaben** die Tastenkombination STRG+N, um eine neue Position zu erstellen. Wählen Sie in der Liste **Serviceaufgaben** dann eine Serviceaufgabe aus, um die Serviceaufgabe der Servicevereinbarung zuzuordnen.
 
 5.  Geben Sie in die Freitextfelder der Registerkarte **Beschreibung** interne oder externe Hinweise ein.
 
@@ -72,6 +75,3 @@ Für einen Serviceauftrag erstellte Serviceaufgabenbeziehungen sind für den spe
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

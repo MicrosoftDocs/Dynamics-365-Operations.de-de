@@ -2,13 +2,16 @@
 title: Einzelhandelsprodukte einrichten
 description: In diesem Artikel wird beschrieben, wie Produkte in Dynamics 365 Commerce eingerichtet werden.
 author: jblucher
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailProductAndCategoryWorkspace, EcoResProductDetails
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 16181
 ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 14f18cb18a068983579d64fa37668be898fe0252fb0759603b7d0a14ec0e0181
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b2c5a8976973203a943a2cec7658a2998c54f279
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745257"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412642"
 ---
 # <a name="set-up-retail-products"></a>Einzelhandelsprodukte einrichten
 
@@ -37,6 +40,3 @@ Bevor Sie Produkte für den Verkauf in Ihren Commerce-Kanälen anbieten können,
 4. **Fügen Sie Produkte Sortimenten hinzu.** Ein Sortiment stellt eine Sammlung von Produkten dar, die Sie in Ihren Kanälen anbieten. Sie können ein oder mehrere Sortimente definieren, und jedes Produkt kann einem oder mehreren Sortimenten zugewiesen werden. Um Produkte den Kanälen zuzuweisen, weisen Sie die Sortimente diesen Kanälen zu. Wenn Sie ein Sortiment erstellen, können Sie Produkte hinzufügen, die noch nicht für eine juristische Person freigegeben wurden. Sie müssen die Produkte jedoch für eine juristische Person freigeben, bevor diese Produkte in den Kanälen verfügbar gemacht werden können.
 5. **Hinzufügen von Produkten Navigationshierarchien hinzu.** Bevor Produkte online oder in Verkaufsstellen durchsucht werden können, müssen sie in einer Commerce-Navigationshierarchie kategorisiert werden.
 6. **Produkte zum Katalog hinzufügen** Obwohl dieser Schritt für Verkaufsstellen optional ist, erfordern Onlineshops, dass Produkte in mindestens einem Katalog enthalten sind.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

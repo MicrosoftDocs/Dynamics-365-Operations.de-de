@@ -2,29 +2,34 @@
 title: Aufgabenlisten zu Filialen oder Mitarbeitern zuordnen
 description: In diesem Thema wird beschrieben, wie Sie den Filialen oder Mitarbeitern in Microsoft Dynamics 365 Commerce Aufgabenlisten zuweisen.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 18f13fb1754b2740b8447a67f09320651b0ca4003c6f46c6d4668e5159ae1a2d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 82cec9861b759037f40315fb2e6f36002a0ac059
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730826"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412631"
 ---
-# <a name="assign-task-lists-to-stores-or-employees"></a>Filialen oder Mitarbeitern Aufgabenlisten zuweisen
+# <a name="assign-task-lists-to-stores-or-employees"></a>Aufgabenlisten zu Filialen oder Mitarbeitern zuordnen
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie den Filialen oder Mitarbeitern in Microsoft Dynamics 365 Commerce Aufgabenlisten zuweisen.
+
+## <a name="overview"></a>Übersicht
 
 Mit der Aufgabenverwaltung in Dynamics 365 Commerce können Sie eine Aufgabenliste mehreren Filialen oder Mitarbeitern oder einer Kombination aus Filialen und Mitarbeitern zuweisen. Beispielsweise könnte ein Regionalmanager für 20 Filialen allen 20 Filialen die Aufgabenliste **Feiertagssaisonvorbereitung** zuweisen wollen.
 
@@ -62,7 +67,7 @@ Einzelhändler haben manchmal wiederkehrende Aufgaben, wie z.B. „Checkliste f�
 
 Die folgende Abbildung zeigt ein Beispiel für die Eingabe von Häufigkeitskriterien im Dialogfenster **Rezidivierung definieren**.
 
-![Eingabe von Häufigkeitskriterien im Dialogfenster „Wiederholung definieren“.](media/HQ-Assign-Tasks-Lists-Recurrently.png)
+![Eingabe von Häufigkeitskriterien im Dialogfenster Rekursion definieren](media/HQ-Assign-Tasks-Lists-Recurrently.png)
 
 ## <a name="track-task-list-status"></a>Verfolgen Sie den Status der Aufgabenliste
 
@@ -87,6 +92,3 @@ Um den Aufgabenlistenstatus für alle Ihnen zugewiesenen Aufgaben zu verfolgen, 
 [Aufgabenlisten erstellen und Aufgaben hinzufügen](task-mgmt-create-lists.md)
 
 [Aufgabenverwaltung in POS](task-mgmt-POS.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

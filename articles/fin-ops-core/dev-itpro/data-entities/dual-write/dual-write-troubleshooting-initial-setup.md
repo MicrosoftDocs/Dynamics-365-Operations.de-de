@@ -1,91 +1,90 @@
 ---
 title: Probleme bei der anfänglichen Einrichtung behandeln
-description: Dieses Thema enthält Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit der initialen Einrichtung der Integration vom dualen Schreiben zusammenhängen.
+description: Dieses Thema enthält Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die bei der Ersteinrichtung der Dual-Write-Integration zwischen Finance and Operations Apps und Dataverse auftreten können.
 author: RamaKrishnamoorthy
-ms.date: 08/10/2021
+manager: AnnBe
+ms.date: 03/16/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: ramasri
+ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 9a70de253eff2a3273be4a31ab32757bb014328f
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 5ac6ec5003794fb5875fed6a2c4403c1444ab8b2
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061466"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685585"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Probleme bei der anfänglichen Einrichtung behandeln
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-Dieses Thema enthält Informationen zur Problembehandlung für die duales Schreiben-Integration zwischen Apps für Finanzen und Betrieb und Dataverse. Dieses Thema enthält insbesondere Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit der initialen Einrichtung der Integration vom dualen Schreiben zusammenhängen.
+
+Dieses Thema enthält Problembehandlungsinformationen zur dualen Schreibintegration zwischen den Apps Finance and Operations und Dataverse. Dieses Thema enthält insbesondere Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit der initialen Einrichtung der Integration vom dualen Schreiben zusammenhängen.
 
 > [!IMPORTANT]
 > Einige der in diesem Thema behandelten Probleme erfordern möglicherweise entweder die Systemadministratorrolle oder Microsoft Azure Active Directory (Azure AD) Anmeldeinformationen des Mandantenadministrators. Im Abschnitt zu jedem Problem wird erläutert, ob eine bestimmte Rolle oder Anmeldeinformationen erforderlich sind.
 
-## <a name="you-cant-link-a-finance-and-operations-app-to-dataverse"></a>Sie können eine Finance und Operations App nicht mit Dataverse verknüpfen.
+## <a name="you-cant-link-a-finance-and-operations-app-to-dataverse"></a>Sie können eine Finance and Operations App nicht mit Dataverse verknüpfen
 
-**Benötigte Rolle, um duales Schreiben festzulegen:** Systemadministrator in den Apps Finance und Operations und Dataverse.
+**Erforderliche Rolle zur Einrichtung von dualem Schreiben:** Systemadministrator in Finance and Operations-Apps und Dataverse.
 
 Fehler auf der Seite **Einrichtungs-Link für Dataverse** werden normalerweise durch unvollständige Setup- oder Berechtigungsprobleme verursacht. Stellen Sie sicher, dass die gesamte Integritätsprüfung die Seite **Einrichtungs-Link zu Dataverse** wie in der folgenden Abbildung gezeigt. Sie können Duales Schreiben nur verknüpfen, wenn die gesamte Integritätsprüfung bestanden wurde.
 
-![Erfolgreiche Integritätsprüfung.](media/health_check.png)
+![Erfolgreiche Integritätsprüfung](media/health_check.png)
 
-Sie müssen über Anmeldeinformationen für Azure AD Mandant verfügen, um die Umgebungen Finance und Operations und Dataverse zu verknüpfen. Nachdem Sie die Umgebungen verknüpft haben, können sich Benutzer mit ihren Kontoanmeldeinformationen anmelden und eine vorhandene Tabellenzuordnung aktualisieren.
+Sie müssen Azure AD Mandantenadministrator-Anmeldeinformationen haben, um Finance and Operations und Dataverse Umgebungen zu verknüpfen. Nachdem Sie die Umgebungen verknüpft haben, können sich Benutzer mit ihren Kontoanmeldeinformationen anmelden und eine vorhandene Tabellenzuordnung aktualisieren.
+
+## <a name="error-when-you-open-the-link-to-dataverse-page"></a>Fehler beim Öffnen des Links zur Seite Dataverse
+
+**Erforderliche Anmeldeinformationen zum Lösen des Problems:** Azure AD Mandant Admin
+
+Möglicherweise wird die folgende Fehlermeldung angezeigt, wenn Sie den **Link zur Dataverse** Seite in einer Finance and Operations App öfnen:
+
+*Der Antwortstatuscode zeigt keinen Erfolg an: 404 (Nicht gefunden).*
+
+Dieser Fehler tritt auf, wenn der Zustimmungsschritt nicht abgeschlossen wurde. Melden Sie sich bei Portal.Azure.com an, um zu überprüfen, ob der Zustimmungsschritt abgeschlossen wurde mithilfe dem Azure AD Mandantenadministratorkonto, und prüfen Sie, ob die Drittanbieter-App die über die ID verfügt **33976c19-1db5-4c02-810e-c243db79efde** in der Azure AD **Unternehmensanwendungen** angezeigt wird. Wenn dies nicht der Fall ist, müssen Sie die Zustimmung der App geben.
+
+Führen Sie die folgenden Schritte aus, um die App-Zustimmung zu erteilen.
+
+1. Öffnen Sie die folgende URL mithilfe Ihrer Administratoranmeldeinformationen. Sie sollten zur Zustimmung aufgefordert werden.
+
+    <https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent>
+
+2. Wählen **Akzeptieren**, um anzugeben, dass Sie Ihre Zustimmung zur Installation der App mit der ID **33976c19-1db5-4c02-810e-c243db79efde** in Ihrem Mandant geben.
+
+    > [!TIP]
+    > Diese App muss verlinkt werden mit Dataverse und Finance and Operations Apps. Wenn Sie Probleme mit diesem Schritt haben, öffnen Sie Ihren Browser im Inkognito-Modus (in Google Chrome) oder im InPrivate-Modus (in Microsoft Edge).
+
+## <a name="verify-that-company-data-and-dual-write-teams-are-set-up-correctly-during-linking"></a>Stellen Sie sicher, dass Unternehmensdaten und Teams Duales Schreiben während der Verknüpfung korrekt eingerichtet sind
+
+Um sicherzustellen, dass Duales Schreiben ordnungsgemäß funktioniert, werden die Unternehmen, die Sie während der Konfiguration auswählen, in der Liste Dataverse Umgebung erstellt. Standardmäßig sind diese Unternehmen schreibgeschützt und die **IsDualWriteEnable** Eigenschaft ist auf **Wahr** festgelegt. Darüber hinaus werden der Eigentümer und das Team der Geschäftseinheit mit Standardbesitz erstellt und enthalten den Firmennamen. Stellen Sie vor dem Aktivieren der Karten sicher, dass der Standardteambesitzer angegeben ist. Um **Unternehmen (CDM\_Unternehmen)** Entität zu finden, folgen Sie diesen Schritten.
+
+1. Wählen Sie in der modellgesteuerten App in Dynamics 365 den Filter in der oberen rechten Ecke aus.
+2. Wählen Sie in der Dropdownliste **Unternehmen** aus.
+3. Wählen **Ausführen**, um die Ergebnisse zu sehen.
+4. Wählen Sie die Firma aus, die bei der Konfiguration von Dualem Schreiben verknüpft war.
+5. Stellen Sie sicher, dass das Feld **Standardbesitzerteam** einen Wert hat. In der folgenden Abbildung ist das Feld **Standardbesitzerteam** auf **USMF – Duales Schreiben** festgelegt.
+
+    ![Überprüfen des Standardbesitzerteams](media/default_owning_team.png)
 
 ## <a name="find-the-limit-on-the-number-of-legal-tables-or-companies-that-can-be-linked-for-dual-write"></a>Finden Sie das Limit für die Anzahl der juristischen Tabellen oder Unternehmen, die für duales Schreiben verknüpft werden können
 
 Möglicherweise wird die folgende Fehlermeldung angezeigt, wenn Sie versuchen, die Zuordnung zu aktivieren:
 
-*Dual Write Fehler - Plugin-Registrierung fehlgeschlagen: [(Partitionszuordnung für Projekt DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea kann nicht zugewiesen werden. Fehler Überschreitet die maximal zulässigen Partitionen für die Zuordnung DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea)], Ein oder mehrere Fehler sind aufgetreten.*
+*Dualer Schreibfehler – Plugin-Registrierung fehlgeschlagen: \[(Partitionszuordnung für Projekt DWM kann nicht abgerufen werden-1ae35e60-4bc2-4905-88ea-69efd3b29260–7f12cb89-1550-42e2-858e-4761fc1443ea . Fehler überschreitet die maximal zulässigen Partitionen für die Zuordnung von DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260–7f12cb89-1550-42e2-858e-4761fc1443ea)\]Ein oder mehrere Fehler sind aufgetreten.*
 
 Die aktuelle Limite beim Verknüpfen der Umgebungen beträgt ungefähr 40 juristische Tabellen. Dieser Fehler tritt auf, wenn Sie versuchen, Karten zu aktivieren, und mehr als 40 juristische Tabellen zwischen den Umgebungen verknüpft sind.
-
-## <a name="connection-set-failed-while-linking-environment"></a>Beim Verknüpfen der Umgebung konnte die Verbindung nicht festgelegt werden
-
-Während der Verknüpfung der Dual-Write-Umgebung schlägt die Aktion mit einer Fehlermeldung fehl:
-
-*Speichern des Verbindungssatzes fehlgeschlagen! Es wurde bereits ein Element mit demselben Schlüssel hinzugefügt.*
-
-Dual-Write unterstützt nicht mehrere juristische Entitäten/Firmen mit demselben Namen. Wenn Sie z.B. zwei Firmen mit dem Namen "DAT" in der Dataverse haben, dann wird diese Fehlermeldung ausgegeben.
-
-Um den Debitor zu entsperren, entfernen Sie doppelte Datensätze aus der Tabelle **cdm_company** in der Dataverse. Wenn die Tabelle **cdm_company** außerdem Datensätze mit leerem Namen enthält, entfernen oder korrigieren Sie diese Datensätze.
-
-## <a name="error-when-opening-the-dual-write-page-in-finance-and-operations-apps"></a>Fehler beim Öffnen der duales Schreiben Seite in Apps für Finanzen und Betrieb
-
-Möglicherweise erhalten Sie die folgende Fehlermeldung, wenn Sie versuchen, eine Dataverse-Umgebung für Dual-write zu verknüpfen:
-
-*Der Antwortstatuscode zeigt keinen Erfolg an: 404 (Nicht gefunden).*
-
-Dieser Fehler tritt auf, wenn der Schritt der App-Zustimmung nicht vollständig ist. Sie können überprüfen, ob die Zustimmung erteilt wurde, indem Sie sich mit dem Mandant-Admin-Konto bei `portal.azure.com` anmelden und prüfen, ob die App eines Drittanbieters mit der ID `33976c19-1db5-4c02-810e-c243db79efde` in der Liste der Enterprise-Anwendungen von AAD auftaucht. Wenn nicht, dann wiederholen Sie den Schritt der Zustimmung wie im nächsten Abschnitt beschrieben.
-
-### <a name="providing-app-consent"></a>Zustimmung zur App erteilen
-
-+ Starten Sie die folgende URL mit Ihren Admin-Anmeldeinformationen.
-
-    `https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent`
-
-+ Wählen Sie **Akzeptieren**, um zuzustimmen. Sie erteilen damit die Zustimmung zur Installation der App (mit `id=33976c19-1db5-4c02-810e-c243db79efde`) in Ihrem Mandant.
-+ Diese App ist für Dataverse erforderlich, um mit Apps für Finanzen und Betrieb zu kommunizieren.
-
-    ![Problembehandlung bei der ersten Einrichtung der Synchronisierung.](media/Initial-sync-setup-troubleshooting-1.png)
-
-> [!NOTE]
-> Wenn dies nicht funktioniert, starten Sie die URL im privaten Modus von Microsoft Edge oder im Inkognito-Modus von Chrome .
-
-## <a name="finance-and-operations-environment-is-not-discoverable"></a>Die Umgebung von Finance und Operations ist nicht auffindbar.
-
-Möglicherweise erhalten Sie die folgende Fehlermeldung:
-
-*Umgebung der Apps für Finance und Operations \*\*\*.cloudax.dynamics.com ist nicht auffindbar.*
-
-Es gibt zwei Dinge, die ein Problem mit nicht auffindbarer Umgebung verursachen können:
-
-+ Der für die Anmeldung verwendete Benutzer befindet sich nicht im selben Mandanten wie die Finance und Operations-Instanz.
-+ Es gibt einige veraltete Finance und Operations-Instanzen, die von Microsoft gehostet wurden und bei denen es ein Problem mit der Erkennung gab. Um das Problem zu beheben, aktualisieren Sie die Finance und Operations-Instanz. Die Umgebung wird mit jeder Aktualisierung auffindbar.
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

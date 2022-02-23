@@ -31,6 +31,3 @@ Dieses Thema bietet Links zu Dokumentationsressourcen für die Schweiz.
 
 - [ESR-Debitorenzahlungen für Importe](emea-che-esr-customer-payments-import.md)
 - [Schweizer QR-Rechnungen](emea-che-swiss-qr-bills.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

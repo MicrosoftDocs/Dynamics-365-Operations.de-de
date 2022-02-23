@@ -28,6 +28,3 @@ ms.locfileid: "4461263"
 # <a name="welcome-to-onboard"></a>Willkommen bei Onboard
 
 [!include [banner](includes/banner.md)]
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

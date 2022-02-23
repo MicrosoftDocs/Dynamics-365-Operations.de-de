@@ -1,10 +1,12 @@
 ---
 title: Anlagenabschreibungskonventionen
 description: Dieses Thema beschreibt die Abschreibungskonventionen für Anlagen.
-author: moaamer
+author: saraschi2
+manager: AnnBe
 ms.date: 09/04/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: roschlom
 ms.custom: 13891
 ms.assetid: 36d1112d-921c-4fff-abe0-0ff2429848d3
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 823f8826e297a01c3658ceb8e82e6f9902d7a359
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: bd0153b5d735e1d565b67db6c66c854ff738509c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883411"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969202"
 ---
 # <a name="fixed-asset-depreciation-conventions"></a>Anlagenabschreibungskonventionen
 
@@ -40,6 +42,3 @@ Abschreibungskonventionen können den Einstellungen für ein Anlagengruppenbuch 
 | Monatsmitte (15. des Monats) | Um Ihren Abschreibungsabzug für das Jahr zu berechnen, in dem Sie das Objekt in Betrieb setzen, multiplizieren Sie die Abschreibung für ein ganzes Jahr mit einer Bruchzahl. Der Zähler (obere Zahl) dieses Bruchs ist die Zahl ganzer Monate im Jahr, während die das Objekt in Betrieb ist, plus 1/2 oder (0,5). Der Nenner (untere Zahl) ist 12. Wenn Sie den Abgang des Objekts vor dem Ende Ihres Abschreibungszeitraums vollziehen, verwenden Sie dieselbe Methode, um Ihren Abschreibungsabzug für das Jahr des Abgangs zu berechnen. |
 | Halbes Jahr (Jahresanfang) | Bei Anlagen, die ein Datum der <strong>Inbetriebnahme</strong> in der ersten Hälfte des Jahres haben, beginnt die Abschreibung am ersten Tag des Jahres (ganzes Jahr). Bei Anlagen, die ein Datum der <strong>Inbetriebnahme</strong> in der zweiten Hälfte des Jahres haben, beginnt die Abschreibung in der Mitte des Jahres. |
 | Halbes Jahr (nächstes Jahr)     | Bei Anlagen, die ein Datum der <strong>Inbetriebnahme</strong> in der ersten Hälfte des Jahres haben, beginnt die Abschreibung am ersten Tag des Jahres (ganzes Jahr). Bei Anlagen, die ein Datum der <strong>Inbetriebnahme</strong> in der zweiten Hälfte des Jahres haben, beginnt die Abschreibung am ersten Tag des nächsten Jahres. Anlagen, die in der ersten Hälfte des Jahres außer Betrieb gesetzt werden, gelten für Abschreibungszwecke am letzten Tag des vorangegangenen Jahres als außer Betrieb gesetzt. Jede Abschreibung, die im aktuellen Jahr gebucht wird, muss zurückgesetzt oder bereinigt werden. Anlagen, die in der zweiten Hälfte des Jahres außer Betrieb gesetzt werden, gelten zu Abschreibungszwecken am letzten Tag des Jahres der Außerbetriebsetzung als außer Betrieb gesetzt. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

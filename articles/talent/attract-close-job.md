@@ -62,6 +62,3 @@ Sie können eine Stelle schließen als **Position besetzt** nachdem mindestens e
    > Sie können nur eine Stelle schließen als **Position besetzt** nachdem mindestens ein Interessent die Angebotphase abgeschlossen hat. Wenn der Stellenbewerber nicht **Angebot akzeptiert** ausgewählt hat oder wenn die Anwendung nicht den Status **Angenommen** im Angebot anzeigt, wird die Option **Stelle besetzt** nicht im Dropdownmenü **Grund** angezeigt.
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

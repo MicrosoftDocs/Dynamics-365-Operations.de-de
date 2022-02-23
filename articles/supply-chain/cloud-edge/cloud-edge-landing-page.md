@@ -1,218 +1,191 @@
 ---
-title: Skalierungseinheiten in einer verteilten Hybridtopologie
+title: Cloud- und Edge-Skalierungseinheiten für Arbeitsauslastungen in der Fertigung und Lagerortverwaltung
 description: Dieses Thema enthält Informationen über Cloud- und Edge-Scale-Einheiten für Arbeitsauslastungen in der Fertigung und Lagerortverwaltung.
 author: cabeln
-ms.date: 04/22/2021
+manager: ''
+ms.date: 10/06/2020
 ms.topic: article
-ms.search.form: ScaleUnitWorkloadsWorkspace
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.region: Global
+ms.search.scope: Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: global
+ms.search.industry: SCM
 ms.author: cabeln
-ms.search.validFrom: 2021-04-13
-ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 593331a3f1073edb6a50c9bfc66e0723d222832a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.search.validFrom: 2020-09-23
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 3a23ee452535423684c6d210a448ee768379fa08
+ms.sourcegitcommit: 8eefb4e14ae0ea27769ab2cecca747755560efa3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065763"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4516792"
 ---
-# <a name="scale-units-in-a-distributed-hybrid-topology"></a>Skalierungseinheiten in einer verteilten Hybridtopologie
+# <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Cloud- und Edge-Skalierungseinheiten für Arbeitsauslastungen in der Fertigung und Lagerortverwaltung
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-> [!IMPORTANT]
-> Die Skalierungseinheit für Microsoft Dynamics 365 Supply Chain Management wird Ihnen unter den Bedingungen zur Verfügung gestellt, die für die Nutzung des Dienstes gelten. Weitere Informationen finden Sie in den [rechtlichen Hinweisen zu Microsoft Dynamics](https://go.microsoft.com/fwlink/?LinkID=290927).
->
-> Wenn Sie Cloud- und Edge-Scale-Einheiten aktivieren, werden Sie aufgefordert, zu bestätigen, dass Sie verstehen, dass einige Daten, die mit der Konfiguration und Verarbeitung von Cloud- und Edge-Scale-Einheiten zusammenhängen, möglicherweise in einem Rechenzentrum gespeichert werden, das sich in den USA befindet. Weitere Informationen zur Datenverarbeitung für Cloud- und Edge-Skalierungseinheiten finden Sie weiter unten in diesem Thema im Abschnitt [Datenverarbeitung während der Verwaltung von Skalierungseinheiten](#data-processing-management).
-
-## <a name="core-value-proposition-for-a-distributed-hybrid-topology"></a>Kernwertversprechen für eine verteilte Hybridtopologie
-
-Unternehmen, die mit Fertigung und Vertrieb arbeiten, müssen in der Lage sein, wichtige Geschäftsprozesse rund um die Uhr, ohne Unterbrechung und in großem Umfang auszuführen. Eine verteilte Hybridtopologie ermöglicht es Unternehmen, wichtige geschäftskritische Fertigungs- und Lagerortprozesse ohne Unterbrechung laufen zu lassen, selbst bei gelegentlichen Problemen mit der Netzwerkkonnektivität oder Latenz.
-
-Eine verteilte Hybridtopologie führt das Konzept von *Skalierungseinheiten* ein, die in der Werkstatt und am Lagerort eine Verteilung der Arbeitslasten auf verschiedene Umgebungen ermöglichen. Diese Funktionalität kann dazu beitragen, die Leistung zu verbessern, Serviceunterbrechungen zu verhindern und die Betriebszeit zu maximieren. Skalierungseinheiten werden über die folgenden Add-Ins für Ihr Supply Chain Management-Abonnement bereitgestellt:
+Cloud- und Edge-Scale-Einheiten ermöglichen die Verteilung von Arbeitsauslastungen in der Fertigung und im Lagerort auf verschiedene Umgebungen. Diese Funktionalität kann dazu beitragen, die Leistung zu verbessern, Serviceunterbrechungen zu verhindern und die Betriebszeit zu maximieren. Sie wird von den folgenden Add-Ins bereitgestellt:
 
 - Cloud Scale Unit Add-in für Dynamics 365 Supply Chain Management
 - Edge Scale Einheit Add-in für Dynamics 365 Supply Chain Management
 
-Die Arbeitsauslastungsfunktionen werden kontinuierlich durch schrittweise Verbesserungen freigegeben.
+Unternehmen, die mit Fertigung und Vertrieb arbeiten, müssen in der Lage sein, wichtige Geschäftsprozesse rund um die Uhr, ohne Unterbrechung und in großem Umfang auszuführen. Cloud- und Edge-Scale-Einheiten ermöglichen es Unternehmen, wichtige geschäftskritische Fertigungs- und Lagerort-Prozesse ohne Unterbrechung laufen zu lassen, selbst bei gelegentlichen Problemen mit der Netzwerkkonnektivität oder Latenz.
+
+## <a name="public-preview-information"></a>Informationen zur öffentlichen Vorschau
+
+Die Vorschau bietet eine Umgebung, die als Cloud-basierter Hub Ihrer Dynamics 365 Supply Chain Management-Umgebung fungiert und eine Umgebung, die als Cloud-Scale-Einheit fungiert.
+
+<!-- You will also be able to use Local Business Data (LBD) to configure an on-premises environment as an edge scale unit for the hub you received as part of the preview program.-->
+
+### <a name="preview-availability"></a>Verfügbarkeit der Vorschau
+
+Die Vorschau für Cloud- und Edge-Scale-Einheiten wird für bestehende Kunden von Supply Chain Management im Oktober 2020 verfügbar.
+
+Um Zugriff auf das Oktober-Preview-Release 10.0.15/Plattform-Update 39 für die Bereitstellung in Ihrer [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2) Umgebung zu erhalten, müssen Sie Teil des Preview Early Access Program (auch bekannt als PEAP) für Supply Chain Management sein. Sie können PEAP beitreten, wenn Sie bereits Mitglied des breiteren [Dynamics Insider Program](https://experience.dynamics.com/insider) sind. Wählen Sie einfach das spezifische Programm aus, das „Finance & Operations Preview early access program (PEAP)“ heißt.
+
+> [!IMPORTANT]
+> Die Funktionalität der Skalierungseinheit für Supply Chain Management wird nur zur Verfügung gestellt, wenn Sie den [Cloud + Edge Vorschau für Finance and Operations Bedingungen](https://Aka.ms/SCMCnETerms) zustimmen.
+
+### <a name="data-processing-for-the-preview"></a>Datenverarbeitung für die Vorschau
+
+Während der öffentlichen Vorschau werden einige Verwaltungsdienste nur in den Vereinigten Staaten gehostet. Wenn die Funktion jedoch allgemein verfügbar wird, werden diese Management-Services in allen vom Supply Chain Management unterstützten Geografien verfügbar sein. Dies betrifft die Übertragung und Speicherung von Verwaltungsinformationen, die vom Scale-Unit-Manager verwendet werden, einschließlich
+
+- Ihre Mandanten-Namen und IDs
+- Ihre LCS-Projekt-IDs
+- Administrator-E-Mails, die zur Anmeldung verwendet werden
+- Umgebungs-IDs für Hub und Scale Units
+- Konfigurationen der Arbeitsauslastung
+- Gesammelte Metriken (z. B. Latenz und Durchsatz), die auf der Seite zur Kartenanalyse angezeigt werden
+
+Die in die US-Rechenzentren übertragenen und dort gespeicherten Daten werden gelöscht, wenn Ihre Vorschau-Umgebungen heruntergefahren werden.
+
+### <a name="sign-up-for-the-preview"></a>Anmelden für eine Vorschau
+
+Um sich für die Cloud- und Edge-Vorschau für Supply Chain Management anzumelden, muss Ihr Unternehmen bereits über eine aktive Supply Chain Management-Cloud-Umgebung verfügen.
+
+Die Funktionalitäten der skalierbaren Einheiten befinden sich derzeit in der öffentlichen Vorschau. Wenn Sie sich anmelden, müssen Sie ein Benutzerkonto für den jeweiligen Mandanten verwenden. Außerdem müssen Sie ein Besitzer eines Projekts oder ein Admin der Umgebung in LCS für ein aktives Dynamics 365 LCS-Projekt in diesem Mandanten sein.
+
+Wenn Sie sich für die Vorschau anmelden, wählen Sie einen Mandanten aus und durchlaufen die Anmeldeschritte. Sobald Microsoft Preview-Kapazitäten zuweisen kann, senden wir Ihnen eine E-Mail mit den Bereitstellungsdetails und den Promo-Codes für zwei Umgebungen (einen Hub und eine Scale Unit) für das entsprechende LCS Projekt. Sie können dann die beiden Umgebungen als Tier-2-Sandbox-Umgebungen bereitstellen. Diese Umgebungen werden 60 Tage ab dem Erstellungsdatum der Promo-Codes gültig sein. Sie sollten die beiden Umgebungen nicht verwenden, bevor der im nächsten Absatz beschriebene Schritt abgeschlossen ist.
+
+Nachdem Sie mit Microsoft bestätigt haben, dass die beiden Umgebungen mit Hilfe der Promo-Codes bereitgestellt wurden, wird eine der Umgebungen so konfiguriert, dass sie als Hub arbeitet, und die andere wird so konfiguriert, dass sie als Scale Unit arbeitet. Sie können dann die Scale Units konfigurieren und ausgewählte Arbeitsauslastungen für die Lagerortverwaltung und die Fertigung bereitstellen, indem Sie das [Scale Unit Manager-Portal](https://aka.ms/SCMSUM) verwenden.
+
+Vorschau-Umgebungen werden automatisch nach 60 Tagen gelöscht. Sie können jedoch auch früher gelöscht werden, wenn es den Anschein hat, dass sie nicht verwendet werden. Nachdem Ihre Vorschau-Umgebungen gelöscht worden sind, können Sie sich für eine neue Vorschau-Bereitstellung anmelden und in die Warteschlange stellen.
+
+Um sich für die Vorschau anzumelden, gehen Sie zum [Scale Unit Manager Portal](https://aka.ms/SCMSUM).
+
+### <a name="limitations-that-apply-during-the-preview-period"></a>Einschränkungen, die während der Vorschauzeit gelten
+
+> [!IMPORTANT]
+> In der Anfangsphase des Preview-Programms für diese Funktion unterstützt Microsoft nur Hubs, die über Cloud-Scale Units verfügen, nicht aber Hubs, die über Edge-Scale Units verfügen. Edge-Scale-Units werden lokal installiert und werden voraussichtlich in einer kommenden Phase des Programms verfügbar sein.
+
+Da es sich bei Cloud- und Edge-Scale-Units um eine Vorschau-Funktion handelt, sind Dienste, die damit zusammenhängen, derzeit nur in begrenzten Ländern und Regionen verfügbar. Durch die Aktivierung von Cloud- und Edge-Scale-Einheiten bestätigen Sie, dass Sie verstehen, dass einige Daten, die mit der Konfiguration und Verarbeitung von Cloud- und Edge-Scale-Einheiten zusammenhängen, in einem Rechenzentrum gespeichert werden können, das sich in den Vereinigten Staaten befindet. Durch die Aktivierung von Cloud- und Edge-Scale-Units erklären Sie sich auch mit den [Bedingungen der Cloud + Edge Vorschau für Finance and Operations einverstanden](https://Aka.ms/SCMCnETerms). Um mehr über Cloud- und Edge-Scale-Units zu erfahren, lesen Sie die [Dokumentation](https://aka.ms/scmcne).
+
+Ihre Privatsphäre ist für Microsoft wichtig. Um mehr zu erfahren, lesen Sie unsere [Datenschutzerklärung](https://aka.ms/privacy).
+
+> [!IMPORTANT]
+> Einige Geschäftsfunktionen werden in der öffentlichen Vorschau nicht vollständig unterstützt, wenn Arbeitsauslastungen auf Scale Units verwendet werden. Weitere Informationen zu den funktionalen Arbeitsauslastungen finden Sie in den Abschnitten weiter unten in diesem Thema.
 
 ## <a name="scale-units-and-dedicated-workloads"></a>Skalierungseinheiten und dedizierte Arbeitsauslastungen
 
-Skalierungseinheiten erweitern Ihre zentrale Supply Chain Management Hub-Umgebung, indem sie dedizierte Verarbeitungskapazität hinzufügen. Skalierungseinheiten können in der Cloud laufen. Alternativ können sie auf dem Edge in Ihrer lokalen Einrichtung laufen.
+:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 mit Skalierungseinheiten":::
 
-:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 mit Skalierungseinheiten.":::
+Skalierungseinheiten erweitern Ihre zentrale Supply Chain Management Hub-Umgebung, indem sie dedizierte Verarbeitungskapazität hinzufügen. Skalierungseinheiten können in der Cloud laufen. Alternativ können sie auf dem Edge in den Räumlichkeiten Ihrer lokalen Einrichtung laufen. Scale-Units können vorübergehend von der Hub-Umgebung getrennt werden. Wenn sie verbunden sind, erhalten die Skalierungseinheiten alle Informationen, die für die Ausführung der dedizierten Verarbeitung für zugewiesene Arbeitsauslastungen erforderlich sind.
 
-Skalierungseinheiten bieten Resilienz, Zuverlässigkeit und Skalierbarkeit für die zugewiesenen Arbeitsauslastungen. Edge-Skalierungseinheiten können vorübergehend von der Cloud-Hub-Umgebung getrennt werden, und die Mitarbeiter arbeiten weiterhin in den zugewiesenen Arbeitsauslastungen am Edge.
+:::image type="content" source="media/cloud_edge-previewoptions.png" alt-text="Optionen für Scale-Units in der öffentlichen Vorschau":::
 
-Eine *Arbeitsauslastung* ist eine festgelegte Menge an Geschäftsfunktionalität, die an eine Skalierungseinheit delegiert werden kann. Obwohl die Arbeitsauslastung für die Lagerortverwaltung freigegeben wurde, befindet sich die Arbeitsauslastung für die Fertigungssteuerung noch in der Vorschau.
+Für die öffentliche Vorschau können Sie eine Hub-Umgebung mit ausgewählten Arbeitsauslastungen auf einer Cloud-Skalierungseinheit konfigurieren, indem Sie das Portal Scale Unit Manager verwenden. Teilnehmer der Vorschau, die Zugriff auf eine lokale Business Data (LBD)-Umgebung haben, können die LBD-Umgebung auch als Edge Scale Unit konfigurieren.
 
-Sie können Ihre Hub-Umgebung und Cloud-Skalierungseinheiten für ausgewählte Arbeitsauslastungen konfigurieren, indem Sie das [Scale Unit Manager-Portal](https://sum.dynamics.com) verwenden. Sie können auch mehrere Arbeitsauslastungen pro Skalierungseinheit zuweisen. Weitere Informationen zu den Voraussetzungen und Einschränkungen für Cloud-Skalierungseinheiten in der aktuellen Version finden Sie weiter unten in diesem Thema im Abschnitt [Voraussetzungen und Einschränkungen für Cloud-Skalierungseinheiten](#cloud-scale-unit-prerequisites).
+Eine Arbeitsauslastung ist eine festgelegte Menge an Geschäftsfunktionalität, die an eine Scale Unit delegiert werden kann. Derzeit bietet die Vorschau zwei Arten von Arbeitsauslastungen:
 
-### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Dedizierte Arbeitsauslastungen für die Lagerortverwaltung in einer Scale Unit
+- Fertigungssteuerung
+- Lagerortverwaltung
 
-Der Workload Lagerverwaltung ist der erste verteilte Workload für Scale-Units, der für die allgemeine Verfügbarkeit freigegeben wurde. Mit dieser Option können Sie Ihre Lager-Vorgänge skalieren und in einer stabilen Umgebung ausführen, indem Sie isolierte Wartungsfenster verwenden. Der Workload Lagerverwaltung unterstützt die meisten Prozesse der Lagerverwaltung im Enterprise Hub. Weitere Informationen finden Sie unter [Arbeitsauslastungen in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten](cloud-edge-workload-warehousing.md).
+Sie können jeweils eine Arbeitsauslastung pro Skalierungseinheit zuweisen. 
 
 ### <a name="dedicated-manufacturing-execution-workload-capabilities-in-a-scale-unit"></a>Dedizierte Funktionalitäten für die Arbeitsauslastung bei der Fertigungsausführung in einer Skalierungseinheit
 
-Die Fertigungsarbeitsauslastung bietet die folgenden Fähigkeiten:
+Für die Fertigungsausführung bieten die Cloud- und Edge-Scale-Units die folgenden Funktionalitäten, auch wenn die Edge-Units nicht mit der Cloud verbunden sind:
 
 - Maschinenbediener und Werkstattleiter können auf den operativen Produktionsplan zugreifen.
 - Maschinenbediener können den Plan auf dem neuesten Stand halten, indem sie diskrete und Prozessfertigungsaufträge ausführen.
 - Der Fertigungsleiter kann den Betriebsplan anpassen.
-- Die Arbeitskräfte können auf die Zeiterfassung zugreifen, um die korrekte Berechnung der Löhne sicherzustellen.
+- Die Arbeiter können auf die Zeiterfassung zugreifen, um die korrekte Berechnung der Löhne sicherzustellen.
 
-Weitere Informationen finden Sie unter [Arbeitsauslastungen bei der Fertigungsausführung für Cloud- und Edge-Skalierungseinheiten](cloud-edge-workload-manufacturing.md).
+Weitere Informationen finden Sie in den [Details zur Arbeitsauslastung von Fertigungswaagen-Einheiten](cloud-edge-workload-manufacturing.md).
 
-## <a name="considerations-before-you-enable-the-distributed-hybrid-topology-for-supply-chain-management"></a>Überlegungen vor der Aktivierung der verteilte Hybridtopologie für Supply Chain Management
+### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Dedizierte Arbeitsauslastungen für die Lagerortverwaltung in einer Scale Unit
 
-Durch Aktivieren der verteilten Hybridtopologie stellen Sie Ihre Supply Chain Management-Cloud-Umgebung so um, dass sie als Hub fungiert. Sie können auch zusätzliche Umgebungen zuordnen, die als Skalierungseinheiten in der Cloud oder am Edge konfiguriert sind.
+Für die Lagerortverwaltung bieten Cloud- und Edge-Scale-Units die folgenden Funktionalitäten, auch wenn die Edge-Einheiten nicht mit der Cloud verbunden sind:
 
-### <a name="prerequisites-and-limitations-for-cloud-scale-units"></a><a name="cloud-scale-unit-prerequisites"></a>Voraussetzungen und Einschränkungen für Cloud-Skalierungseinheiten
+- Die Verarbeitung ausgewählter Wave-Methoden ist für Verkaufsaufträge und Wiederbeschaffung von Bedarfen aktiviert.
+- Lagerort-Mitarbeiter können den Verkauf und die Wiederbeschaffung von Waren über die Lagerort-App abwickeln.
+- Lagerort-Mitarbeiter können über die Lagerort-App den Bestand abfragen.
+- Lagerort-Mitarbeiter können mit der Lagerort App Bestandsbewegungen erstellen und ausführen.
+- Lagerort-Mitarbeiter können mit der Lagerort-App Einkaufsbestellungen registrieren und Einlagerungen vornehmen.
 
-In der aktuellen Version für Skalierungseinheiten sind einige Funktionen noch nicht verfügbar, können jedoch im Laufe der Zeit schrittweise hinzugefügt werden.
+Weitere Informationen finden Sie in den [Details zur Arbeitsauslastung von Lagerort-Scale-Units](cloud-edge-workload-warehousing.md).
 
-#### <a name="you-must-be-a-licensed-customer-of-supply-chain-management"></a>Sie müssen ein lizenzierter Kunde von Supply Chain Management sein
+## <a name="onboard-scale-units-for-your-supply-chain-management-environment"></a>Skalierungseinheiten für Ihre Supply Chain Management-Umgebung einbinden
 
-Für das Onboarding in die verteilte Topologie benötigen Sie eine Lizenz für Supply Chain Management. Ihre vorhandene Cloud-Umgebung wird zum Hub in Ihrer Hybridtopologie. Sie können sowohl Sandbox-Umgebungen als auch Produktionsumgebungen als Hub-Umgebungen deklarieren und Skalierungseinheiten entsprechend den von Ihnen erworbenen Add-Ins hinzufügen.
+### <a name="deploy-the-preview-for-cloud-and-edge-scale-units"></a>Vorschau für Cloud- und Edge-Scale-Einheiten bereitstellen
 
-#### <a name="your-existing-project-must-be-administered-via-the-global-commercial-version-of-lcs"></a>Ihr bestehendes Projekt muss über die globale kommerzielle Version von LCS verwaltet werden
+Die folgende Abbildung zeigt den Anmelde- und Bereitstellungs-Flow für die öffentliche Vorschau für Cloud-Scale-Units.
 
-Ihr bestehendes Microsoft Dynamics Lifecyle Services-Projekt (LCS-Projekt) muss die folgenden Versionsanforderungen erfüllen:
+:::image type="content" source="media/cloud_edge-previewsignup.png" alt-text="Schritte zur Anmeldung für die Vorschau":::
 
-- Das bestehende Projekt muss über die globale kommerzielle Version von LCS unter [lcs.dynamics.com](https://lcs.dynamics.com) verwaltet werden.
-- Lokale Versionen von LCS (wie [eu.lcs.dynamics.com](https://eu.lcs.dynamics.com) und [fr.lcs.dynamics.com](https://fr.lcs.dynamics.com)) werden nicht unterstützt.
-- Behördliche Cloud-Versionen von LCS werden nicht unterstützt.
-- Die Mooncake-Version von LCS wird nicht unterstützt.
+### <a name="select-your-lcs-project-tenant-and-the-detailed-preview-process"></a>Wählen Sie Ihren LCS-Projekt-Mandanten und den detaillierten Ablauf der Vorschau
 
-#### <a name="your-current-production-environment-must-be-of-the-self-service-type-in-lcs"></a>Ihre aktuelle Produktionsumgebung muss den Self-Service-Typ in LCS haben
+In der öffentlichen Vorschau zeigt das [Scale Unit Manager-Portal](https://aka.ms/SCMSUM) die Liste der Mandanten an, zu denen Ihr Konto gehört und bei denen Sie Besitzer oder Umgebungs-Admin für ein LCS-Projekt sind.
 
-Ihre aktuelle Produktionsumgebung muss den in LCS als Typ **Self-Service** gekennzeichnet sein. Dieser Typ gibt an, dass der Mandant Ihres LCS-Projekts bereits konvertiert wurde, sodass er das Azure Service Fabric Hosting-Modell unterstützt.
+Wenn der gesuchte Mandant nicht in dieser Liste enthalten ist, gehen Sie zu [LCS](https://lcs.dynamics.com/v2) und stellen Sie sicher, dass Sie entweder ein Umgebungs-Admin oder ein Besitzer des LCS-Projekts für diesen Mandanten sind. Beachten Sie, dass nur Azure Active Directory (Azure AD) Konten aus dem ausgewählten Mandanten berechtigt sind, die Anmeldung abzuschließen.
+
+> [!NOTE]
+> Nachdem Sie Änderungen an LCS vorgenommen haben, kann es bis zu 30 Minuten dauern, bis die Liste der Mandanten die Änderungen widerspiegelt.
+
+Für jeden Mandanten zeigt die Liste den Anmeldestatus an.
+
+:::image type="content" source="media/cloud_edge-Signup1.png" alt-text="Anmeldemöglichkeit für einen Mandanten":::
+
+Wählen Sie den Link **Klicken Sie hier, um sich anzumelden**, um Ihren LCS-Mandanten für die Teilnahme an der Vorschau anzumelden. Sie müssen die Bedingungen akzeptieren. Sie müssen auch eine geschäftliche E-Mail-Adresse angeben, an die Microsoft Mitteilungen senden kann, die mit dem Anmeldeprozess für die Vorschau zusammenhängen.
+
+:::image type="content" source="media/cloud_edge-Signup2.png" alt-text="Sign-up-Antrag für einen Mandanten":::
+
+Microsoft prüft Ihren Antrag und informiert Sie über die nächsten Schritte, indem es eine E-Mail an die Adresse sendet, die Sie auf dem Anmeldeformular angegeben haben.
+
+Nachdem Ihnen der Zugriff auf das Preview-Programm gewährt wurde, erhalten Sie zwei Promo-Codes für Ihr LCS-Projekt. Sie können diese Promo-Codes nun verwenden, um zwei Umgebungen in LCS bereitzustellen. Die Umgebungen müssen die PEAP-Version 10.0.15 oder höher verwenden. Wenn Sie mit der Anwendung der Promo-Codes fertig sind, benachrichtigen Sie Microsoft (wie angewiesen), damit wir die Umgebungen für die Vorschau-Funktionen fertig aktivieren können. Microsoft wird Sie benachrichtigen, wenn dieser Konfigurationsschritt abgeschlossen ist.
+
+Sie können nun damit beginnen, Skalierungseinheiten und Arbeitsauslastungen in Ihrer Vorschau-Umgebung zu konfigurieren.
 
 > [!IMPORTANT]
-> Umgebungstypen, die als Infrastructure-as-a-Service (IaaS) ausgeführt werden, werden nicht unterstützt. Diese Umgebungen sind normalerweise mit dem Typ **Von Microsoft verwaltet** in LCS gekennzeichnet. Wenn Sie über Umgebungen dieses Typs verfügen, informieren Sie sich bei Ihrem Ansprechpartner bei Microsoft über den Migrationszeitplan zum Typ **Self-Service**.
+> Wenn Sie Cloud-Skalierungseinheiten konfigurieren, können Sie [alle erforderlichen Schritte im Portal Scale Unit Manager](#scale-unit-manager-portal) durchführen.
+<!-- >
+> If want to use edge scale units with your preview deployment, you must do all scale unit configuration in the user interface on the hub as described in [Configure the hub environment for use with edge scale units](cloud-edge-edge-scale-units-lbd.md#configure-the-hub-environment). You can't use Scale Unit Manager portal if you include an edge scale unit. -->
 
-Microsoft ist dabei, alle Cloud-Umgebungen von Supply Chain Management von einem IaaS-Modell auf eine Topologie umzustellen, die in Service Fabric gehostet wird. Dieser Schritt bringt eine bessere Skalierbarkeit und erleichtert die Dienstverwaltung. Daher sind Bereitstellungs- und Wartungsvorgänge schneller. Ebenso werden Dienstkomponenten auf das Konzept der Microservices migriert und das Dienst-Hosting-Modell wird von einem VM-Modell (virtuelle Maschine) auf eine schlanke Containerarchitektur [umgestellt](/virtualization/windowscontainers/about/containers-vs-vm).
-
-Letztendlich versorgt dieselbe Service-Fabric-basierte containerisierte Dienstinfrastruktur sowohl Cloud- als auch Edge-Instanzen des Dienstes, unabhängig davon, ob eine Instanz ein Hub in der Cloud oder eine Skalierungseinheit in der Cloud oder am Edge ist.
-
-Bevor Sie das Onboarding in die Hybridtopologie durchführen können, die Skalierungseinheiten unterstützt, muss Ihr Projektmandant auf das von Service Fabric gehostete Modell umgestellt werden. Darüber hinaus muss jede Umgebung, die als Hub fungiert, konvertiert werden.
-
-> [!TIP]
-> Um den Status Ihres LCS-Projektmandanten abzufragen, suchen Sie nach dem Typ Ihrer Umgebung in [LCS](https://lcs.dynamics.com/) oder wenden Sie sich an Ihren Partner oder Ansprechpartner bei Microsoft.
-
-#### <a name="local-business-data-on-premises-environments-arent-supported-as-hubs-for-scale-units"></a>Lokale Geschäftsdatenumgebungen (lokal) werden nicht als Hubs für Skalierungseinheiten unterstützt
-
-Lokale Umgebungen können nicht als Hubs für Skalierungseinheiten fungieren. Hub-Umgebungen müssen immer in der Cloud gehostet werden.
-
-#### <a name="scale-unit-management-capabilities-are-limited"></a>Die Funktionen zur Verwaltung von Skalierungseinheiten sind begrenzt
-
-Die Verwaltungsfunktionen, die beim Verschieben von Arbeitsauslastungen helfen können, sind begrenzt. Einige Verwaltungsvorgänge werden nicht als Self-Service unterstützt, und Sie müssen möglicherweise Unterstützung über Ihren Partner oder Ansprechpartner bei Microsoft anfordern. Beispiele hierfür sind einige Arbeitsauslastungsbewegungen zwischen Skalierungseinheiten und temporäre Ad-hoc-Bewegungen in Katastrophenfallszenarien.
-
-#### <a name="metrics-and-measurements-arent-yet-available"></a>Metriken und Messungen sind noch nicht verfügbar
-
-Metriken und Kennzahlen, die Ihnen bei der Auswahl der besten Anwendung für Ihre Skalierungseinheiten helfen könnten, sind noch nicht verfügbar. Arbeiten Sie mit Ihrem Ansprechpartner bei Microsoft oder Ihrem Implementierungspartner zusammen, um die vorteilhafteste Anwendung auszuwählen.
-
-### <a name="data-processing-during-management-of-scale-units"></a><a name="data-processing-management"></a>Datenverarbeitung während der Verwaltung von Skalierungseinheiten
-
-Wenn Sie Ihre Dynamics 365-Umgebung für die Unterstützung der verteilten Hybridtopologie für Cloud- und Edge-Skalierungseinheiten aktivieren, werden einige Verwaltungsdienste nur in den USA gehostet, z. B. für LCS. Dieses Verhalten wirkt sich auf die Übertragung und Speicherung einiger Verwaltungs- und Konfigurationsinformationen aus, die vom [Scale Unit Manager-Portal](https://sum.dynamics.com) genutzt werden. Im Folgenden finden Sie einige Beispiele hierfür:
-
-- Ihre Mandanten-Namen und IDs
-- Ihre LCS-Projekt-IDs
-- E-Mail-Adressen von Administratoren und Projektbesitzern, die für die Anmeldung verwendet werden
-- Umgebungs-IDs für die Hub und Skalierungseinheiten
-- Arbeitsauslastungskonfigurationen, einschließlich der Namen und physischen Adressen von juristischen Personen und Einrichtungen, damit Ihre Topologie auf einer geografischen Karte angezeigt werden kann
-- Gesammelte Metriken (wie Wartezeit und Durchsatz), die auf der Seite zur Kartenanalyse angezeigt werden, um Ihnen bei der Auswahl der vorteilhaftesten Verwendung Ihrer Skaleneinheiten zu helfen
-
-Daten, die an US-Rechenzentren übertragen und dort gespeichert werden, werden gemäß den Richtlinien für die Datenaufbewahrung von Microsoft gelöscht. Ihre Privatsphäre ist für Microsoft wichtig. Um mehr zu erfahren, lesen Sie unsere [Datenschutzerklärung](https://go.microsoft.com/fwlink/?LinkId=521839).
-
-## <a name="onboarding-in-two-stages"></a>Onboarding in zwei Schritten
-
-Das Onboarding in die verteilte Hybridtopologie erfolgt in zwei Schritten. Im ersten Schritt müssen Sie Anpassungen validieren, damit sie in der verteilten Topologie mit Skalierungseinheiten funktionieren. Sandbox- und Produktionsumgebungen werden erst im zweiten Schritt verschoben.
-
-### <a name="stage-1-evaluate-customizations-in-one-box-development-environments"></a>Schritt 1: Evaluieren Sie Anpassungen in Entwicklungsumgebungen mit einem Feld
-
-Bevor Sie mit dem Onboarding Ihrer Sandbox- oder Produktionsumgebungen beginnen, sollten Sie Skalierungseinheiten mit Entwicklungseinstellungen kennenzulernen, z. B. in einer Umgebung mit einem Feld (auch als Ebene-1-Umgebung bezeichnet), damit Sie Prozesse, Anpassungen und Lösungen validieren können. In dieser Phase werden Daten und Anpassungen auf die Umgebungen mit einem Feld angewendet. Eine Umgebung übernimmt die Rolle des Hubs und die andere die Rolle einer Skalierungseinheit. Diese Einstellung bietet die beste Möglichkeit, um Probleme zu identifizieren und zu beheben. Der neueste Build mit Vorabzugang (PEAP) kann ebenfalls verwendet werden, um diesen Schritt abzuschließen.
-
-In Schritt 1 sollten Sie die [Tools zur Bereitstellung von Skalierungseinheiten für Entwicklungsumgebungen mit einem Feld](https://github.com/microsoft/SCMScaleUnitDevTools) verwenden. Mit diesen Tools können Sie Hubs und Skalierungseinheiten in einer oder zwei separaten Umgebungen mit einem Feld konfigurieren. Die Tools werden als Binärversion und im Quellcode auf GitHub bereitgestellt. Arbeiten Sie das Projekt-Wiki durch, zu dem eine [Schritt-für-Schritt-Anleitung](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide) gehört, die beschreibt, wie die Tools verwendet werden.
-
-### <a name="stage-2-acquire-add-ins-and-deploy-in-your-sandbox-and-production-environments"></a>Schritt 2: Erwerben Sie Add-Ins und stellen Sie sie in Ihrer Sandbox- und Produktionsumgebung bereit
-
-Um das Onboarding Ihrer Sandbox- oder Produktionsumgebungen in die neue Topologie durchzuführen, müssen Sie Add-Ins für eine oder mehrere Cloud-Skalierungseinheiten (und in Zukunft für Edge-Skalierungseinheiten) erwerben. Die Add-Ins gewähren entsprechende Projekt- und Umgebungs-Slots in [LCS](https://lcs.dynamics.com/), sodass die Umgebungen mit Skalierungseinheiten bereitgestellt werden können.
-
-> [!NOTE]
-> Die Add-Ins für Skalierungseinheiten sind nicht an eine begrenzte Anzahl von Benutzern gebunden, sondern können von jedem Benutzer im vorhandenen Abonnement je nach den vom Administrator zugewiesenen Rollen verwendet werden.
-
-Skalierungseinheiten werden in mehreren Lagermengeneinheiten (SKUs) und Preisoptionen angeboten. Daher können Sie die Option auswählen, die Ihrem geplanten monatlichen Transaktionsvolumen und Ihren Leistungsanforderungen am besten entspricht.
-
-Die Einstiegs-SKU heißt *Basic* und die leistungsfähigere SKU *Standard*. In jeder SKU ist eine bestimmte Anzahl monatlicher Transaktionen vorinstalliert. Sie können das monatliche Transaktionsbudget jedoch erhöhen, indem Sie für jede SKU Überschreitungs-Add-Ins hinzufügen.
-
-:::image type="content" source="media/SKUs-highlevel.png" alt-text="Add-Ins für Cloud-Skalierungseinheiten.":::
-
-> [!TIP]
-> Um die Größe zu ermitteln, die Ihren Anforderungen am besten entspricht, arbeiten Sie mit Ihrem Partner und Microsoft zusammen, um die monatliche Transaktionsgröße zu ermitteln, die Sie benötigen.
-
-Durch den Kauf jedes Add-Ins für Skalierungseinheiten erhalten Sie nicht nur ein monatliches Transaktionsvolumen, sondern auch eine bestimmte Anzahl von Umgebungsslots in LCS. Für jedes Add-In für eine Cloud-Skalierungseinheit haben Sie Anspruch auf einen neuen Produktionsslot und einen neuen Sandbox-Slot. Während des Onboarding-Prozesses wird ein neues LCS-Projekt mit diesen Slots hinzugefügt. Die Nutzungsrechte für die Slots sind gebunden, sodass die Slots als Skalierungseinheiten mit einem Cloud-Hub verwendet werden müssen.
-
-Überschreitungs-Add-Ins geben Ihnen keinen Anspruch auf neue Umgebungsslots.
-
-Wenn Sie mehr Sandbox-Umgebungen erwerben möchten, können Sie zusätzliche reguläre Sandbox-Slots erwerben. Microsoft kann Ihnen dann dabei helfen, diese Slots als Sandbox-Skalierungseinheiten für die Hybridtopologie zu aktivieren.
-
-## <a name="onboard-to-the-distributed-hybrid-topology-for-supply-chain-management"></a>Onboarding in die verteilt Hybridtopologie für Supply Chain Management durchführen
-
-### <a name="select-your-lcs-project-tenant-and-the-detailed-onboarding-process"></a>Ihren LCS-Projekt-Mandanten und den detaillierten Onboarding-Prozess auswählen
-
-Nachdem Sie die Planung für das Onboarding in die verteilte Hybridtopologie für Supply Chain Management abgeschlossen haben, verwenden Sie das [Scale Unit Manager-Portal](https://aka.ms/SCMSUM), um den Onboarding-Prozess zu starten. Wählen Sie im Portal die Registerkarte **Dynamics 365-Mandanten**. Diese Registerkarte zeigt die Mandanten an, zu denen Ihr Konto gehört und bei denen Sie Besitzer oder Umgebungs-Administrator für ein LCS-Projekt sind.
-
-Wenn der gesuchte Mandant nicht in der Liste enthalten ist, gehen Sie zu [LCS](https://lcs.dynamics.com/v2) und stellen Sie sicher, dass Sie entweder ein Umgebungs-Admininstrator oder Besitzer des LCS-Projekts für diesen Mandanten sind. Nur Azure Active Directory-Konten (Azure AD-Konten) aus dem ausgewählten Mandanten sind berechtigt, die Anmeldung abzuschließen.
-
-> [!NOTE]
-> Nachdem Sie Änderungen an LCS vorgenommen haben, braucht die Liste der Mandanten bis zu 30 Minuten, um die Änderungen widerzuspiegeln.
-
-Für jeden Mandanten zeigt die Liste den Onboardingstatus an.
-
-:::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="Liste der Mandanten in der Registerkarte „Dynamics 365-Mandanten“,":::
-
-Wählen Sie **Zum Anfangen hier klicken**, um das Onboarding für den LCS-Mandanten anzufordern. Sie müssen die Bedingungen akzeptieren. Sie müssen auch eine geschäftliche E-Mail-Adresse angeben, an die Microsoft Mitteilungen senden kann, die mit dem Onboardingprozess zusammenhängen.
-
-:::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Sign-up-Antrag für einen Mandanten.":::
-
-Microsoft prüft Ihren Antrag und informiert Sie über eine E-Mail an die Adresse, die Sie im Anmeldeformular angegeben haben, über die nächsten Schritte. Microsoft arbeitet eng mit Ihnen zusammen, um Skalierungseinheiten in der Hybridtopologie für Ihr Geschäftsszenario zu aktivieren.
-
-Nach Abschluss des Onboarding können Sie über den Port Skalierungseinheiten und Arbeitsauslastungen konfigurieren.
-
-### <a name="manage-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a>Verwalten Sie Skalierungseinheiten und Arbeitsauslastungen mithilfe des Scale Unit Manager-Portals
+### <a name="manage-cloud-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a>Verwalten Sie Cloud-Skalierungseinheiten und Arbeitsauslastungen mithilfe des Scale Unit Manager-Portals
 
 Gehen Sie zum [Scale Unit Manager-Portal](https://aka.ms/SCMSUM), und melden Sie sich mit Ihrem Mandanten-Konto an. Auf der Seite **Skalierungseinheiten konfigurieren** können Sie eine Hub Umgebung hinzufügen, wenn sie nicht bereits aufgelistet ist. Sie können dann den Hub auswählen, den Sie mit Skalierungseinheiten und Arbeitsauslastungen konfigurieren möchten.
 
-:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Scale Unit Manager Portal, Seite „Skalierungseinheiten konfigurieren“.":::
+:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Erfahrung mit Skalierungseinheiten und Arbeitsauslastung":::
 
-Um eine oder mehrere Skalierungseinheiten hinzuzufügen, die in Ihrem Abonnement verfügbar sind, wählen Sie **Skalierungseinheiten hinzufügen**.
+Um eine oder mehrere Scale Units hinzuzufügen, die in Ihrer Topologie verfügbar sind, wählen Sie **Scale Units hinzufügen**. In der Vorschau sollten Sie die Cloud-Skalierungseinheit sehen, die Sie mit einem der Promo-Codes bereitgestellt haben, die Sie im Rahmen des Vorschau-Programms erhalten haben.
 
-Verwenden Sie auf der Registerkarte **Definierte Arbeitsauslastungen** die Schaltfläche **Arbeitsauslastung erstellen**, um einer Ihrer Skalierungseinheiten eine Arbeitsauslastung hinzuzufügen. Für jede Arbeitsauslastung müssen Sie den Kontext der Prozesse angeben, die zur Arbeitsauslastung gehören sollen. Bei Arbeitsauslastungen für die Lagerortverwaltung ist der Kontext ein bestimmtes Lager an einem bestimmten Standort und einer bestimmten juristischen Entität.
+<!-- > [!IMPORTANT]
+> In the public preview, the Scale Unit Manager portal shows the cloud scale unit that you received as part of the preview program. Any edge scale unit that you created based on an LBD configuration can't be managed in the Scale Unit Manager portal yet. For configuration details, see [Deploy custom edge scale units on custom hardware using LBD](cloud-edge-edge-scale-units-lbd.md) -->
 
-:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Dialogfeld „Arbeitsauslastungen definieren“.":::
+Verwenden Sie auf der Registerkarte **Definierte Arbeitsauslastungen** die Schaltfläche **Arbeitsauslastung erstellen**, um einer Ihrer Skalierungseinheiten eine Arbeitsauslastung für die Lagerortverwaltung oder die Fertigungsausführung hinzuzufügen. Für jede Arbeitsauslastung müssen Sie den Kontext der Prozesse angeben, die zur Arbeitsauslastung gehören sollen. Bei Arbeitsauslastungen für die Lagerortverwaltung ist der Kontext ein bestimmtes Lager an einem bestimmten Standort und einer bestimmten juristischen Entität. Bei Arbeitsauslastungen für die Fertigungsausführung ist der Kontext ein bestimmter Standort in einer juristischen Entität.
 
-#### <a name="manage-workloads"></a>Arbeitsauslastungen verwalten
+:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Erstellung von Arbeitsauslastung":::
 
-Wenn eine oder mehrere Arbeitsauslastungen aktiviert sind, verwenden Sie die Option **Arbeitsauslastungen verwalten** zum Initiieren und Verwalten von Prozessen, wie sie in der folgenden Tabelle aufgeführt sind.
+> [!IMPORTANT]
+> Im Portal Scale Unit Manager in der Vorschau können Sie keine Arbeitsauslastungen aus Scale Units entfernen oder die Zuordnung einer Scale Unit zu einem Hub aufheben, nachdem die Zuordnung erfolgt ist. Wenn Sie eine Zuordnung aufheben müssen, wenden Sie sich an Ihren Ansprechpartner für die Programmverwaltung der Vorschau.
 
-| Bearbeiten | Description |
-|---|---|
-| Skalierungseinheitenkommunikation anhalten | Pipelinenachrichten zwischen dem Hub und einer Skalierungseinheit anhalten. Dieser Prozess stoppt die Kommunikation und entleert die Datenpipeline zwischen dem Hub und den Skalierungseinheiten. Sie müssen diesen Prozess ausführen, bevor Sie einen Supply Chain Management-Wartungsvorgang entweder auf dem Hub oder der Skalierungseinheit ausführen, aber Sie können dies auch in anderen Situationen verwenden. |
-| Skalierungseinheitenkommunikation fortsetzen | Pipelinenachrichten zwischen dem Hub und einer Skalierungseinheit fortsetzen. Möglicherweise müssen Sie diesen Prozess verwenden, nachdem Sie beispielsweise einen Supply Chain Management-Wartungsvorgang auf dem Hub oder der Skalierungseinheit ausgeführt haben. |
-| Arbeitsauslastungen aktualisieren | Synchronisieren Sie neue Funktionen zwischen den Arbeitsauslastungen von Hub und Skalierungseinheiten. Sie müssen diesen Prozess beispielsweise verwenden, wenn die Wartung dazu geführt hat, dass sich die Datenaustauschabfragen geändert haben und/oder der Arbeitsauslastung neue Tabellen oder Felder hinzugefügt wurden. |
-| Arbeitsauslastung auf eine Skalierungseinheit übertragen | Planen Sie die Verschiebung einer Arbeitsauslastung, die derzeit auf dem Hub ausgeführt wird, in eine Skalierungseinheit. Wenn dieser Prozess ausgeführt wird, erfolgt die Synchronisierung der Daten, und sowohl der Hub als auch die Skalierungseinheit werden so eingestellt, dass sie die Eigentümerschaft der Arbeitsauslastung ändern. |
-| Skalierungseinheit zu Hub übertragen | Planen Sie die Verschiebung einer Arbeitsauslastung, die derzeit auf der Skalierungseinheit ausgeführt wird, in die Hub. Wenn dieser Prozess ausgeführt wird, erfolgt die Synchronisierung der Daten, und sowohl der Hub als auch die Skalierungseinheit werden so eingestellt, dass sie die Eigentümerschaft der Arbeitsauslastung ändern.
-| Notfallübergang zum Hub | <p>Übertragen Sie sofort eine vorhandene Arbeitsauslastung an den Hub. *Dieser Prozess ändert nur die Eigentümerschaft der Daten, die derzeit auf dem Hub verfügbar sind.*</p><p><strong>Warnung:</strong> Dieser Prozess kann zu Datenverlust bei nicht synchronisierten Daten und zum Ausfall der Geschäftsverarbeitung führen. Daher sollte er nur in Notfällen verwendet werden, wenn Geschäftsprozesse auf dem Hub verarbeitet werden müssen, da es in der Skalierungseinheit einen Ausfall gibt, der nicht innerhalb einer angemessenen Zeit behoben werden kann.</p> |
-| Nutzung der verteilten Topologie einstellen | Entfernen Sie eine Skalierungseinheitenbereitstellung und führen Sie sie nur auf dem Hub aus, ohne Verarbeitung der Arbeitsauslastung. |
+<!-- ### Create an edge scale unit using your custom on-premises hardware appliance
 
-:::image type="content" source="media/sum-manage-workloads.png" alt-text="Erfahrung mit Skalierungseinheiten und Arbeitsauslastung.":::
-
-> [!TIP]
-> Im Laufe der Zeit werden der Scale Unit Manager-Umgebung schrittweise Verbesserungen hinzugefügt, um das Lebenszyklusverwaltung zu vereinfachen. Die spezifischen Funktionen für die aktuelle Version sind in einem Onboarding-Handbuch dokumentiert, das Kunden zur Verfügung steht, die gerade das Onboarding der verteilten Hybridtopologie für Supply Chain Management durchführen. <!-- KFM: Add a link to the handbook when it is published -->
-
-[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+In the public preview, you can create on-premises edge scale units on your custom hardware using the LBD environments. For details, see [Deploy custom edge scale units on custom hardware using LBD](cloud-edge-edge-scale-units-lbd.md). -->

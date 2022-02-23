@@ -2,12 +2,15 @@
 title: Hybrid-Kundenaufträge
 description: Ein hybrider Kundenauftrag ist einen einzelnen Auftrag, der Produkte enthält, die vom Shop des Debitors ausgeführt werden können, sowie Produkte, die verarbeitet werden oder später geliefert.
 author: josaw1
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 261164
 ms.assetid: 9d99a5b9-4662-499a-bece-3ea1d6092934
 ms.search.region: global
@@ -15,12 +18,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a4cb448670af9a6ddce8008be008cf3b0ff76bbce65053bf4618ea6668c4568d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1c2105aa99e0489d7643d076e84123eec628679e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739528"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412651"
 ---
 # <a name="hybrid-customer-orders"></a>Hybrid-Kundenaufträge
 
@@ -38,6 +41,3 @@ Wenn eine Einkaufswagenposition ausgewählt und **Auswahl entnehmen**, **Auswahl
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Debitorenaufträge in Modern POS (MPOS)](customer-orders-overview.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

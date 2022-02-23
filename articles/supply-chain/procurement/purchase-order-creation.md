@@ -1,10 +1,12 @@
 ---
 title: Bestellungen erstellen
 description: Dieser Artikel beschreibt den Prozess und die Optionen bei der manuellen Erstellung einer Bestellung.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 93053
 ms.assetid: 25b1c9f1-20f8-4cf5-b87c-876e32f68846
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20b8e00316b45126b028b6d9812a455ef0e53f19
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 105d4022e1867f553fcae5e4ae9c0ed7ce4e912d
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575511"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022280"
 ---
 # <a name="create-purchase-orders"></a>Bestellungen erstellen
 
@@ -65,7 +67,7 @@ Manchmal möchten Sie die bestellte Menge teilen, so dass verschiedene Teile des
 Kosten können automatisch zu PO-Positionen hinzugefügt werden wenn automatische Zuschläge für den Kreditor oder Kreditorenzuschlagsgruppe und für den Artikel oder die Artikelzuschlagsgruppe eingerichtet wurden. Normalerweise werden Zuschläge jedoch manuell zum jeweiligen Auftrag hinzugefügt. Um eine Belastung hinzuzufügen, öffnen die Seite **Belastungen verwalten**, indem Sie die Aktion **Belastungen verwalten** im Menü **Finanzdaten** in der Ansicht **Positionen** nutzen. Der Vorteil beim Hinzufügen von Belastungen auf Bestellebene ist, dass die Belastung als Lagerkosten zugeordnet werden kann. Um Belastungscodes für Produktkosten einzurichten, verwenden Sie die Belastungsoption **Artikel**. Derartige Belastungstypen müssen vor der Genehmigung der Bestellung aus dem Bestellungskopf zugeordnet werden. Sie möchten z. B. Belastungen basierend auf der Menge in jeder Position zuweisen. Die Belastungskategorie wirkt sich auch darauf aus, wie die Belastungen berücksichtigt werden. Feste Belastungen legen beispielsweise einen festen Betrag fest. Prozentuale Belastungen werden als Prozentsatz des Nettobetrags für die Auftragsposition berechnet. POs können einer Auslastung zugewiesen werden. Die Auslastung kann eine Schätzung der erwarteten Ausgaben für die Transportkosten enthalten. Sie können diese Ausgabe von der Auslastung zurück zu den Bestellungspotionen zuweisen.
 
 ## <a name="purchase-order-actions"></a>Bestellungsaktionen
-Nachdem Sie den Kopf und die Positionen zur Bestellung hinzugefügt haben, müssen Sie oft zusätzliche Schritte ausführen, bevor die Bestellung bestätigt werden kann. Da so viele Optionen verfügbar sind, ist es unter Umständen hilfreich, die entsprechende Menüelement über [Aktion suchen](../../fin-ops-core/fin-ops/get-started/action-search.md) zu suchen.  
+Nachdem Sie den Kopf und die Positionen zur Bestellung hinzugefügt haben, müssen Sie oft zusätzliche Schritte ausführen, bevor die Bestellung bestätigt werden kann. Da so viele Optionen verfügbar sind, ist es unter Umständen hilfreich, die entsprechende Menüelement über [Aktion suchen](../../fin-and-ops/get-started/action-search.md) zu suchen.  
 
 Sie können Produkte in der Bestellung so konfigurieren, dass sie zusätzliche Artikel haben. Zusätzliche Artikel sind Produkte, die zusammen mit anderen Produkten erworben werden müssen oder erworben werden können. Zusätzliche Produkte können kostenlos als zugehörige Produkte hinzufügt werden. Möglicherweise können Sie entscheiden, ob sie dem Auftrag hinzufügen oder nicht hinzugefügt werden. Sie können die zusätzlichen Artikel nach jeder Auftragsposition die hinzugefügt wird überprüfen. Möglicherweise ist es jedoch einfacher, die zusätzlichen Artikel für alle Auftragspositionen über die Seite **Zusätzliche Artikel** zu überprüfen. Diese können sie über den Aktionsbereich öffnen.  
 
@@ -80,7 +82,8 @@ POs können so konfiguriert werden, dass vor ihrer Verarbeitung Budgetmittel zur
 
 Möglicherweise müssen Sie den Abschluss einer Bestellung verzögern. Beispielsweise benötigen Sie weitere Informationen über Produkte oder Dienstleistungen oder möglicherweise eine Autorisierung für die Ausgabe. Es gibt verschiedene Möglichkeiten, um eine Bestellung zurückzuhalten. Beispielsweise können Sie warten bis Sie den Auftrag bestätigen. Bei einem Change Management-Workflow kölnnen Sie die Bestellung alternativ nicht zur Genehmigung senden. Wenn Sie alle Bestellungen für einen bestimmten Kreditor blockieren müssen, können Sie auch den Kreditor in den Masterdaten als für die Verarbeitung **Gesperrt** markieren. Es gibt auch Umstände, die die Verarbeitung der Bestellung verhindern. Die Verarbeitung kann beispielsweise verhindert werden, wenn das Kreditlimit überschritten ist oder wenn erforderliche Budgetmittel nicht verfügbar sind.
 
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
+<a name="additional-resources"></a>Zusätzliche Ressourcen
+--------
 
 [Übersicht über Bestellungen](purchase-order-overview.md)
 
@@ -92,6 +95,3 @@ Möglicherweise müssen Sie den Abschluss einer Bestellung verzögern. Beispiels
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

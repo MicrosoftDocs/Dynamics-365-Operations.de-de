@@ -1,10 +1,12 @@
 ---
 title: Power BI-Inhalt zur Kostenrechnungsanalyse
-description: In diesem Thema wird beschrieben, was im Power BI-Inhalt zur Kostenrechnungsanalyse enthalten ist.
+description: In diesem Thema wird beschrieben, was im Power BI-Inhalt zur Kostenrechnungsanalyse enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen, und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet wurden, um den Inhalt zu erstellen.
 author: AndersGirke
+manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -14,14 +16,14 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d3b8832e5a5612fd0311811f43454689d5b274c36404b4fb92b710411d45e573
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c15995edb5d65a00207fdb425447779d3a17d993
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747368"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683870"
 ---
-# <a name="cost-accounting-analysis-power-bi-content"></a>Inhalt zur Kostenrechnungsanalyse – Power BI-Inhalt
+# <a name="cost-accounting-analysis-power-bi-content"></a>Power BI-Inhalt zur Kostenrechnungsanalyse
 
 [!include [banner](../includes/banner.md)]
 
@@ -40,7 +42,7 @@ Weitere Informationen zur Kostenrechnung finden Sie unter [Startseite Kostenrech
 Durch das Festlegen der Zugriffsebenensicherheit in der Kostenrechnung und durch die Kombination mit Zeilenebenensicherheit in Power BI können Sie allen Kostenträgereigentümern Zugriff auf den Power BI-Inhalt zur **Kostenrechnungsanalyse** geben. Alle Daten in den Visualisierungen werden anschließend auf Basis der Zugriffsebene gefiltert, die in der Kostenrechnung gesteuert wird. Weitere Informationen zur Zugriffsebenensicherheit und zur Sicherheit auf Zeilenebene finden Sie unter [Sicherheit für den Power BI-Inhalt der Kostenrechnungsanalyse einrichten](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen auf den Power BI-Inhalt
-Sie finden den Power BI-Inhalt zur **Kostenbuchhaltungsanalyse** in der Bibliothek für freigegebene Anlagen in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen dazu, wie Sie den Inhalt herunterladen und in Ihrer Organisation implementieren, finden Sie unter [Power BI-Inhalt in LCS von Microsoft und Ihren Partnern](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
+Sie finden den Power BI-Inhalt zur **Kostenbuchhaltungsanalyse** in der Bibliothek für freigegebene Anlagen in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen dazu, wie Sie den Inhalt herunterladen und in Ihrer Organisation implementieren, finden Sie unter [Power BI-Inhalt in LCS von Microsoft und Ihren Partnern](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
 
 Stellen Sie sicher, dass Sie den **Kostenrechnungsanalyse**-Inhalt herunterladen, der der von Ihnen verwendeten Microsoft Dynamics 365-Version entspricht.
 
@@ -121,6 +123,3 @@ Die folgenden wichtigen Dimensionen werden als Filter verwendet, um die aggregie
 | Steuerkalender                   | Kalender, Beschreibung des Kalenders                                                                                       |
 | Geschäftsjahr                       | Kalenderjahr                                                                                                        |
 | Finanzzeiträume                     | Kalenderperioden                                                                                                 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

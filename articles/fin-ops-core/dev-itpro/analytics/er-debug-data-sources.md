@@ -2,9 +2,11 @@
 title: Debuggen Sie Datenquellen eines ausgeführten EB-Formats, um den Datenfluss und die Transformation zu analysieren
 description: In diesem Thema wird erläutert, wie Sie die Datenquellen eines ausgeführten EB-Formats debuggen können, um den konfigurierten Datenfluss und die konfigurierte Transformation besser zu verstehen.
 author: NickSelin
+manager: AnnBe
 ms.date: 04/22/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable, EROperationDesigner
 audience: Application User, Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: ba8f20e7b4ca6579016fa60d0bbf69f7b4e9c7d3
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 3a486800f37dda7829aeeaa56a30285a92a61b9d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605360"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680781"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Debuggen Sie Datenquellen eines ausgeführten EB-Formats, um den Datenfluss und die Transformation zu analysieren
 
@@ -64,7 +66,7 @@ Auf die folgenden Einstellungen von EB-Formaten kann derzeit für das Debuggen v
 
 1. Folgen Sie den Schritten in [Anhang 3](#appendix3) dieses Themas, um Kreditorenzahlungen zu verarbeiten.
 
-    ![Verarbeitung der Kreditorenzahlung läuft.](./media/er-data-debugger-process-payment.png)
+    ![Verarbeitung der Kreditorenzahlung läuft](./media/er-data-debugger-process-payment.png)
 
 2. Laden Sie die ZIP-Datei auf Ihren lokalen Computer herunter und speichern Sie sie.
 3. Extrahieren Sie die Zahlungsdatei **ISO20022 Credit transfer.xml** aus der ZIP-Datei.
@@ -72,7 +74,7 @@ Auf die folgenden Einstellungen von EB-Formaten kann derzeit für das Debuggen v
 
     In der Zahlungsdatei enthält der IBAN-Code (International Bank Account Number) des Kreditorenbankkontos keine Leerzeichen. Daher unterscheidet es sich von dem Wert, der [eingegeben](#enteredIBANcode) wurde auf der Seite **Bankkonten**.
 
-    ![IBAN-Code ohne Leerzeichen.](./media/er-data-debugger-payment-file.png)
+    ![IBAN-Code ohne Leerzeichen](./media/er-data-debugger-payment-file.png)
 
     Mit dem EB-Datenquellendebugger können Sie erfahren, welche Komponente der EB-Lösung zum Abschneiden von Leerzeichen im IBAN-Code verwendet wird.
 
@@ -85,14 +87,14 @@ Auf die folgenden Einstellungen von EB-Formaten kann derzeit für das Debuggen v
     > [!NOTE]
     > Dieser Parameter ist benutzerspezifisch und unternehmensspezifisch.
 
-    ![Benutzerparameter-Dialogfeld.](./media/er-data-debugger-user-parameters.png)
+    ![Benutzerparameter-Dialogfeld](./media/er-data-debugger-user-parameters.png)
 
 ## <a name="process-a-vendor-payment-for-debugging"></a>Verarbeiten einer Kreditorenzahlung zum Debuggen
 
 1. Folgen Sie den Schritten in [Anhang 3](#appendix3) dieses Themas, um Kreditorenzahlungen zu verarbeiten.
 2. Wählen Sie im Meldungsfeld **Ja** aus, um zu bestätigen, dass Sie die Kreditorenzahlungsabwicklung unterbrechen und stattdessen das Debuggen von Datenquellen auf der Seite **Debuggen von Datenquellen** starten möchten.
 
-    ![Bestätigungsmeldungsfeld.](./media/er-data-debugger-start-debugging.png)
+    ![Bestätigungsmeldungsfeld](./media/er-data-debugger-start-debugging.png)
 
 ## <a name="debug-data-sources-that-are-used-in-payment-processing"></a>Debuggen von Datenquellen, die bei der Zahlungsabwicklung verwendet werden
 
@@ -115,7 +117,7 @@ Auf die folgenden Einstellungen von EB-Formaten kann derzeit für das Debuggen v
 
 7. Wählen Sie **Alle erweitern** aus.
 
-    ![Wert des IBAN-Feldes in der Modellzuordnung.](./media/er-data-debugger-debugging-model-mapping.png)
+    ![Wert des IBAN-Feldes in der Modellzuordnung](./media/er-data-debugger-debugging-model-mapping.png)
 
     Wie Sie sehen, ist die Modellzuordnung nicht für die abgeschnittenen Leerzeichen verantwortlich, da der IBAN-Code, den sie für das Bankkonto des Kreditors zurückgibt, Leerzeichen enthält. Daher müssen Sie das Datenquellen-Debuggen fortsetzen.
 
@@ -130,7 +132,7 @@ Auf die folgenden Einstellungen von EB-Formaten kann derzeit für das Debuggen v
 7. Wählen Sie **Wert abrufen**.
 8. Wählen Sie **Alle erweitern** aus.
 
-    ![Wert des IBAN-Feldes in der Formatzuordnung.](./media/er-data-debugger-debugging-format-mapping.png)
+    ![Wert des IBAN-Feldes in der Formatzuordnung](./media/er-data-debugger-debugging-format-mapping.png)
 
     Wie Sie sehen, sind die Datenquellen der Modellzuordnung nicht für die abgeschnittenen Leerzeichen verantwortlich, da der IBAN-Code, den sie für das Bankkonto des Kreditors zurückgeben, Leerzeichen enthält. Daher müssen Sie das Datenquellen-Debuggen fortsetzen.
 
@@ -142,7 +144,7 @@ Auf die folgenden Einstellungen von EB-Formaten kann derzeit für das Debuggen v
 4. Erweitern Sie die auszuwählenden Formatelemente **ISO20022CTReports** \> **XMLHeader** \> **Dokument** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAcct** \> **Id** \> **IBAN** \> **BankIBAN**, und wählen Sie dann **Wert abrufen** aus.
 5. Wählen Sie **Alle erweitern** aus.
 
-    ![Wert des IBAN-Feldes im Format.](./media/er-data-debugger-debugging-format.png)
+    ![Wert des IBAN-Feldes im Format](./media/er-data-debugger-debugging-format.png)
 
    Wie Sie sehen, ist die Formatbindung nicht für die abgeschnittenen Leerzeichen verantwortlich, da der IBAN-Code, den sie für das Bankkonto des Kreditors zurückgibt, Leerzeichen enthält. Deshalb ist das Element **BankIBAN** so konfiguriert, dass eine Format-Transformation verwendet wird, bei der Leerzeichen abgeschnitten werden.
 
@@ -154,13 +156,13 @@ Auf die folgenden Einstellungen von EB-Formaten kann derzeit für das Debuggen v
 2. Auf der Seite **Konfigurationen** wählen Sie **Zahlungsmodell** \> **ISO20022-Kreditübertragung**.
 3. Wählen Sie **Designer** aus, und erweitern Sie dann die Elemente, um **Dokument** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAcct** \> **Id** \> **IBAN** \> **BankIBAN** auszuwählen.
 
-    ![BankIBAN-Element auf der Seite „Format-Designer“.](./media/er-data-debugger-referred-transformation.png)
+    ![BankIBAN-Element auf der Seite „Format-Designer“](./media/er-data-debugger-referred-transformation.png)
 
     Wie Sie sehen können, ist das Element **BankIBAN** so konfiguriert, dass es die Transformation **nicht alphanumerisch entfernen** verwendet.
 
 4. Wählen Sie die Registerkarte **Transformationen** aus.
 
-    ![Registerkarte „Transformationen“ für das BankIBAN-Element.](./media/er-data-debugger-transformation.png)
+    ![Registerkarte „Transformationen“ für das BankIBAN-Element](./media/er-data-debugger-transformation.png)
 
     Wie Sie sehen können, ist die Transformation **nicht alphanumerisch entfernen** so konfiguriert, dass ein Ausdruck verwendet wird, der Leerzeichen aus der bereitgestellten Textzeichenfolge abschneidet.
 
@@ -168,7 +170,7 @@ Auf die folgenden Einstellungen von EB-Formaten kann derzeit für das Debuggen v
 
 Wenn Sie eine Entwurfsversion des EB-Formats konfigurieren, das direkt vom Vorgangs-Designer ausgeführt werden kann, können Sie auf den Datenquellen-Debugger zugreifen, indem Sie **Debuggen starten** im Aktionsbereich auswählen.
 
-![Schaltfläche „Debuggen starten“ auf der Seite „Format-Designer“.](./media/er-data-debugger-run-from-designer.png)
+![Schaltfläche „Debuggen starten“ auf der Seite „Format-Designer“](./media/er-data-debugger-run-from-designer.png)
 
 Die Formatzuordnung und Formatkomponenten des EB-Formats, das gerade bearbeitet wird, stehen zum Debuggen zur Verfügung.
 
@@ -176,7 +178,7 @@ Die Formatzuordnung und Formatkomponenten des EB-Formats, das gerade bearbeitet 
 
 Wenn Sie eine EB-Modellzuordnung konfigurieren, die direkt von der Seite **Modellzuordnung** ausgeführt werden kann, können Sie auf den Datenquellen-Debugger zugreifen, indem Sie **Debuggen starten** im Aktionsbereich auswählen.
 
-![Schaltfläche „Debuggen starten“ auf der Seite „Modellzuordnungs-Designer“.](./media/er-data-debugger-run-from-designer-mapping.png)
+![Schaltfläche „Debuggen starten“ auf der Seite „Modellzuordnungs-Designer“](./media/er-data-debugger-run-from-designer-mapping.png)
 
 Die Modellzuordnungskomponente der zu bearbeitenden EB-Zuordnung steht zum Debuggen zur Verfügung.
 
@@ -186,7 +188,7 @@ Die Modellzuordnungskomponente der zu bearbeitenden EB-Zuordnung steht zum Debug
 
 Wenn Sie eine EB-Lösung verwenden möchten, um eine elektronische Zahlungsdatei für eine Kreditorenzahlung zu erstellen, die verarbeitet wird, können Sie [Herunterladen](download-electronic-reporting-configuration-lcs.md) das EB-Zahlungsformat **ISO20022-Kreditübertragung**, das in der Freigegebenen Anlagenbibliothek in Microsoft Dynamics Lifecycle Services (LCS) verfügbar ist oder aus dem globalen Repository.
 
-![Importieren des EB-Zahlungsformats auf der Seite „Konfigurations-Repository“.](./media/er-data-debugger-import-from-repo.png)
+![Importieren des EB-Zahlungsformats auf der Seite „Konfigurations-Repository“](./media/er-data-debugger-import-from-repo.png)
 
 Zusätzlich zum ausgewählten EB-Format müssen die folgenden [Konfigurationen](general-electronic-reporting.md#Configuration) automatisch in Ihre Microsoft Dynamics 365 Finance-Instanz als Teil der EB-Lösung **ISO20022-Kreditübertragung** importiert werden.
 
@@ -197,7 +199,7 @@ Zusätzlich zum ausgewählten EB-Format müssen die folgenden [Konfigurationen](
 
 Sie finden diese Konfigurationen auf der Seite **Konfigurationen** des EB-Frameworks (**Organisationsverwaltung** \> **Elektronische Berichterstellung** \> **Konfigurationen**).
 
-![Auf der Seite „Konfigurationen“ importierte Konfigurationen.](./media/er-data-debugger-configurations.png)
+![Auf der Seite „Konfigurationen“ importierte Konfigurationen](./media/er-data-debugger-configurations.png)
 
 Wenn irgendeine der zuvor aufgelisteten Konfigurationen in der Konfigurationsstruktur fehlt, müssen Sie sie manuell aus der freigegebenen Anlagebibliothek von LCS in derselben Weise herunterladen, wie Sie das EB-Zahlungsformat **ISO20022-Kreditübertragung** heruntergeladen haben.
 
@@ -213,7 +215,7 @@ Wenn irgendeine der zuvor aufgelisteten Konfigurationen in der Konfigurationsstr
 
     Beachten Sie, dass das Feld **Zahlungen** des Datenmodells an die Datenquelle **\$notSentTransactions** gebunden ist, die die Liste von Kreditorenzahlungspositionen zurück gibt, die verarbeitet werden.
 
-    ![Feld „Zahlungen“ auf der Seite „Modellzuordnungsdesigner“.](./media/er-data-debugger-model-mapping.png)
+    ![Feld „Zahlungen“ auf der Seite „Modellzuordnungs Designer“](./media/er-data-debugger-model-mapping.png)
 
 #### <a name="review-the-format-mapping"></a>Die Formatzuordnung überprüfen
 
@@ -224,7 +226,7 @@ Wenn irgendeine der zuvor aufgelisteten Konfigurationen in der Konfigurationsstr
 
     Beachten Sie, dass das Element **Dokument** \> **CstmrCdtTrfInitn** \> **PmtInf** der Datei **ISO20022CTReports** \> **XMLHeader** an die Datenquelle **\$PaymentByDebtor** gebunden ist, die so konfiguriert ist, dass sie Datensätze des Felds **Zahlungen** des Datenmodells gruppiert.
 
-    ![PmtInf-Element auf der Seite „Format-Designer“.](./media/er-data-debugger-format-mapping.png)
+    ![PmtInf-Element auf der Seite „Format-Designer“](./media/er-data-debugger-format-mapping.png)
 
 #### <a name="review-the-format"></a>Das Format überprüfen
 
@@ -234,7 +236,7 @@ Wenn irgendeine der zuvor aufgelisteten Konfigurationen in der Konfigurationsstr
 
     Beachten Sie, dass das Formatelement unter **Dokument** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAcct** \> **Id** \> **IBAN** \> **BankIBAN** so konfiguriert ist, dass der IBAN-Code des Kreditorenkontos in der Zahlungsdatei eingegeben wird.
 
-    ![BankIBAN-Formatelement auf der Seite „Format-Designer“.](./media/er-data-debugger-format.png)
+    ![BankIBAN-Element auf der Seite „Format-Designer“](./media/er-data-debugger-format.png)
 
 ## <a name="appendix-2-configure-accounts-payable"></a><a name="appendix2"></a>Anhang 2: Kreditorenkonten konfigurieren
 
@@ -243,9 +245,9 @@ Wenn irgendeine der zuvor aufgelisteten Konfigurationen in der Konfigurationsstr
 1. Wechseln Sie zu **Kreditorenkonten** \> **Kreditoren** \> **Alle Kreditoren**.
 2. Wählen Sie Kreditor **DE-01002** aus, und wählen Sie dann im Aktionsbereich, auf der Registerkarte **Kreditor** in der Gruppe **Einrichten** die Option **Bankkonten** aus.
 3. Im Inforegister **Identifizierung** im Feld **IBAN**, <a name="enteredIBANcode"></a>geben Sie **GB33 BUKB 2020 1555 5555 55** ein.
-4. Wählen Sie **Speichern** aus.
+4. Wählen Sie **Speichern**.
 
-![IBAN-Feld, festgelegt auf der Seite „Kreditorenbankkonten“.](./media/er-data-debugger-iban.png)
+![IBAN-Feld, festgelegt auf der Seite „Kreditorenbankkonten“](./media/er-data-debugger-iban.png)
 
 ### <a name="set-up-a-method-of-payment"></a>Einrichten einer Zahlungsmethode
 
@@ -253,9 +255,9 @@ Wenn irgendeine der zuvor aufgelisteten Konfigurationen in der Konfigurationsstr
 2. Wählen Sie die Zahlungsmethode **SEPA CT** aus.
 3. Legen Sie im Inforegister **Dateiformate** im Abschnitt **Dateiformate** die Option **Generisches elektronisches Exportformat** auf **Ja** fest.
 4. Wählen Sie im Feld **Formatkonfiguration exportieren** das EB-Format **ISO20022-Kreditübertragung** aus.
-5. Wählen Sie **Speichern** aus.
+5. Wählen Sie **Speichern**.
 
-![Dateiformateinstellungen auf der Seite „Zahlungsmethoden“.](./media/er-data-debugger-payment-method.png)
+![Dateiformateinstellungen auf der Seite „Zahlungsmethoden“](./media/er-data-debugger-payment-method.png)
 
 ### <a name="add-a-vendor-payment"></a>Kreditorenzahlung hinzufügen
 
@@ -265,9 +267,9 @@ Wenn irgendeine der zuvor aufgelisteten Konfigurationen in der Konfigurationsstr
 4. Wählen Sie im Feld **Konto** den Kreditor **DE-01002** hinzu.
 5. Geben Sie im Feld **Soll** einen Wert ein.
 6. Wählen Sie im Feld **Zahlungsmethode** die Option **SEPA CT** aus.
-7. Wählen Sie **Speichern** aus.
+7. Wählen Sie **Speichern**.
 
-![Kreditorenzahlung auf der Seite Kreditorenzahlungen hinzugefügt.](./media/er-data-debugger-payment-journal.png)
+![Kreditorenzahlung auf der Seite Kreditorenzahlungen hinzugefügt](./media/er-data-debugger-payment-journal.png)
 
 ## <a name="appendix-3-process-a-vendor-payment"></a><a name="appendix3"></a>Anhang 3: Eine Kreditorenzahlung verarbeiten
 
@@ -279,6 +281,3 @@ Wenn irgendeine der zuvor aufgelisteten Konfigurationen in der Konfigurationsstr
 6. Wählen Sie im Feld **Bankkonto** die Option **DEMF OPER** aus.
 7. Wählen Sie im Dialogfeld **Zahlungen generieren** die Option **OK** aus.
 8. Wählen Sie im Dialogfeld **Elektronische Berichtsparameter** die Option **OK** aus.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

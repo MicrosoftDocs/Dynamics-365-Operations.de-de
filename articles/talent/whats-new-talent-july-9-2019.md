@@ -115,6 +115,3 @@ Die folgenden Entitäten werden für benutzerdefinierte Felder in Common Data Se
 - **Sonderurlaubstyp**
 - **Arbeitskraftbankkonto**
 - **Arbeitskalender**
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

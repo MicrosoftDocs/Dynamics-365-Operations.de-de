@@ -1,10 +1,12 @@
 ---
 title: Einrichtung der elektronischen Steuererklärung für Deutschland
-description: In diesem Thema wird erläutert, wie Sie eine elektronische Steuererklärung einrichten.
+description: Diese Prozedur läuft Sie nach elektronischer Steuererklärung durch.
 author: NickSelin
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxElectronicDeclarationSetup, TaxElectronicCertificates, TaxElectronicHTTPServer
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Germany
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3f1525bdfb3cf913934ce646ed086ee41273351d
-ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
+ms.openlocfilehash: 215daa0597d8e61bfed0b65b4e8864b09c850e03
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7601482"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684077"
 ---
 # <a name="set-up-electronic-tax-declaration-for-germany"></a>Einrichtung der elektronischen Steuererklärung für Deutschland
 
@@ -56,6 +58,3 @@ Sie sollten ein gültiges Zertifikat (wie test-soft-pse.pfx) und eine Steuerbeh�
 13. Schließen Sie die Seite.
 14. Klicken Sie auf "Speichern".
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

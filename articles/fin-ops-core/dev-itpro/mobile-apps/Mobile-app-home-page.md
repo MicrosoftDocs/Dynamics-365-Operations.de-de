@@ -2,24 +2,26 @@
 title: Startseite der mobilen App
 description: In diesem Thema wird die Finance and Operations (Dynamics 365) Mobile-App beschrieben. Zudem werden Links zu Ressourcen bereitgestellt, die bei der Implementierung in der Organisation helfen.
 author: ChrisGarty
+manager: AnnBe
 ms.date: 01/22/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: intro-internal
+ms.custom: 272853
 ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
 ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 8a91f603b4dd058341110c59039a6d3c782e06ee768fbf0e7f94e9527a6354ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e4a9d6424e2d214624c148c0565c88ea4cf4ccf9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729707"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683457"
 ---
 # <a name="mobile-app-home-page"></a>Startseite der mobilen App
 
@@ -27,7 +29,8 @@ ms.locfileid: "6729707"
 
 In diesem Thema wird die **Finance and Operations (Dynamics 365)** Mobile-App beschrieben. Zudem werden Links zu Ressourcen bereitgestellt, die bei der Implementierung in der Organisation helfen.
 
-## <a name="overview"></a>Übersicht
+<a name="overview"></a>Übersicht
+--------
 
 Die mobile App ermöglicht es Ihrer Organisation, Geschäftsprozesse auf mobilen Geräten bereitzustellen. Nachdem Ihr IT-Administrator den mobilen Arbeitsbereich für Ihre Organisation bereitgestellt hat, können sich Benutzer bei der App anmelden und sofort damit beginnen, Geschäftsprozesse über ihre mobilen Geräte auszuführen. Die mobile App umfasst folgende Funktionen, die helfen, die Produktivität zu steigern:
 
@@ -39,7 +42,7 @@ Die mobile App ermöglicht es Ihrer Organisation, Geschäftsprozesse auf mobilen
 ## <a name="elements-of-the-mobile-app"></a>Elemente der mobilen App
 Die Navigation in der mobilen App besteht aus vier grundlegenden Konzepten: Dashboard, Arbeitsbereiche, Seiten und Aktivitäten. 
 
-[![Navigationskonzepte in der mobilen App.](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
+[![Navigationskonzepte in der mobilen App](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
 
 1. Wenn Sie die App starten, gehen Sie zu **Dashboard**.
 2. Auf dem Dashboard wird eine Liste der veröffentlichten **Arbeitsbereiche** angezeigt.
@@ -53,7 +56,7 @@ Die Navigation in der mobilen App besteht aus vier grundlegenden Konzepten: Dash
 ## <a name="implementation-process"></a>Implementierungsprozess
 Die folgende Abbildung veranschaulicht den Prozess des Implementierens beider mobiler Arbeitsbereiche, die von Microsoft und benutzerdefinierten mobilen Arbeitsbereichen bereitgestellt werden. 
 
-[![Implementierungsprozess für mobile Apps.](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
+[![Implementierungsprozess für mobile Apps](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
 
 Die folgende Tabelle enthält Links zu Ressourcen, die Ihnen beim Implementieren beider mobilen Arbeitsbereiche helfen, die von Microsoft und benutzerdefinierten mobilen Arbeitsbereichen bereitgestellt werden. Die Nummern in der ersten Spalte entsprechen den nummerierten Schritten in der vorherigen Abbildung.
 
@@ -90,8 +93,8 @@ Die folgende Tabelle enthält Links zu Ressourcen, die Ihnen beim Implementieren
 <li><a href="../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Mobiler Arbeitsbereich für Lagerbestand</a></li>
 <li><a href="../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Aufträge, mobiler Arbeitsbereich</a></li>
 <li><a href="../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Mobiler Arbeitsbereich für Kreditorenzusammenarbeit</a></li>
-<li><a href="/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace">Mobiler Arbeitsbereich für Projektzeiterfassung</a></li>
-<li><a href="/dynamics365/project-operations/prod-exp/expense-management-mobile-workspace">Mobiler Arbeitsbereich für Spesenverwaltung</a></li>
+<li><a href="../../../finance/project-management/project-time-entry-mobile-workspace.md">Mobiler Arbeitsbereich für Projektzeiterfassung</a></li>
+<li><a href="../../../finance/expense-management/expense-management-mobile-workspace.md">Mobiler Arbeitsbereich für Spesenverwaltung</a></li>
 
 </ul></td>
 </tr>
@@ -148,6 +151,3 @@ Die folgende Tabelle enthält Links zu Ressourcen, die Ihnen beim Implementieren
 
 ## <a name="troubleshooting"></a>Problembehandlung
 [Mobile Plattformressourcen](platform/mobile-platform-home-page.md#troubleshooting-the-app)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

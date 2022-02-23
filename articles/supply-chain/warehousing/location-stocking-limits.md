@@ -2,23 +2,26 @@
 title: Lagerplatzbeschränkungen
 description: Dieses Thema beschreibt die Funktionalität für Lagerplatz-Bestandsgrenzen.
 author: perlynne
+manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationLimit
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 239b9fa8d8e34a92d453d3387881cff7b0a11f28a3c3b1e19891ea3bd78c3d7c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 208662f38b06b1f230bdde5247946a9fefd57cea
+ms.sourcegitcommit: d2dea9ce480f35d0c0b10615c18862695e107d55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714161"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "4607278"
 ---
 # <a name="location-stocking-limits"></a>Lagerplatzbeschränkungen
 
@@ -81,7 +84,7 @@ In diesem Beispiel werden Sie einen Flow für den Empfang einer Einkaufsbestellu
 
 Sie erhalten zunächst eine Menge von *4* der Einheit *PL* in der Größe *S* und überprüfen die eingelagerten Zeilenplätze für die erstellte Arbeit. Sie erhalten dann eine Menge von *4* der Einheit *PL* in der Größe *L* und überprüfen die Lagerplätze für die erstellte Arbeit.
 
-1. Melden Sie sich in der Warehouse Management Mobile App an, indem Sie *24* als Benutzer-ID und *1* als Kennwort verwenden.
+1. Melden Sie sich in der Lagerort App an, indem Sie *24* als Benutzer-ID und *1* als Kennwort verwenden.
 1. Wählen Sie **Eingang** \> **Empfang**.
 1. Empfangen Sie *4* *PL* der Elementnummer *D0013* in Größe *S*.
 1. Überprüfen Sie die erstellte Einlagerungsarbeit. Sie sollten das folgende Ergebnis sehen:
@@ -101,6 +104,3 @@ Um diesen offensichtlichen Fehler zu erklären, müssen Sie die Auswahlkriterien
 
 > [!NOTE]
 > Sie können Lagerplatz-Bestandsgrenzen nicht verwenden, um z. B. die Wiederbeschaffung von Elementen zu steuern, die am selben Lagerplatz unterschiedliche Mengen haben. Verwenden Sie in diesem Fall eine *Wiederbeschaffung-Vorlage*.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

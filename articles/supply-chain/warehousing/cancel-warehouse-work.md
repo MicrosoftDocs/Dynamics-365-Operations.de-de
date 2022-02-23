@@ -1,24 +1,27 @@
 ---
 title: Stornieren von Lagerortarbeit für Ausnahmebehandlung
 description: In diesem Thema wird die Funktion zum Stornieren von Arbeit beschrieben, mit der Vorgesetzte am Lagerort gesperrte Arbeit verarbeiten können.
-author: Mirzaab
+author: omulvad
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSTroubIeshootingSeIfService, WHSTroubleshootingSelfService
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: af0c147eefbfe22cb6b6d531f514e6f293d66689
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: daa8f0d19de75e6c126fe7a5fe312bca24c89bdc
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572408"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429065"
 ---
 # <a name="cancel-warehouse-work-for-exception-handling"></a>Stornieren von Lagerortarbeit für Ausnahmebehandlung
 
@@ -42,6 +45,3 @@ Nur Arbeit vom Typ **Vertrieb**, **Umlagerungsprobleme**, **Rohmaterialentnahme*
 Um die Sperrung der Arbeit aufzuheben, storniert das System alle verbleibenden Arbeitspositionen und korrigiert die Lagerortdaten, die der Arbeitskennung zugeordnet sind, die der Benutzer angegeben hat. Alle regulären Lagerortverarbeitungsvorgänge, die die betroffene Artikelmenge umfassen, können dann fortgesetzt werden.
 
 Um den betroffenen Artikel in einen bestimmten Lagerplatz einzulagern, nachdem die Arbeit storniert wurde, muss der Benutzer einen Bestandsumlagerungs- oder Mengenanpassungseinstellvorgang auf einem mobilen Gerät verwenden.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

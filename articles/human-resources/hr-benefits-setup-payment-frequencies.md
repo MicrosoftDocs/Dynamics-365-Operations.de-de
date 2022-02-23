@@ -1,33 +1,31 @@
 ---
 title: Zahlungshäufigkeiten einrichten
 description: Microsoft Dynamics 365 Human Resources verwendet Zahlungshäufigkeiten zur Berechnung des jährlichen Vorteilsgehalts, zur Bestimmung des Vorteilszulagenbetrags, den ein Mitarbeiter für jede Lohnperiode zahlt, und zur Festlegung der Häufigkeit, mit der Zahlungen an Anbieter erfolgen.
-author: twheeloc
-ms.date: 08/24/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ee21f24b2da8501888ac3c0a8b9a35c24785aa4f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: a5d562b64a161891bf34b0dfa94fbf68325e21b5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069579"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418701"
 ---
 # <a name="set-up-payment-frequencies"></a>Zahlungshäufigkeiten einrichten
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Microsoft Dynamics 365 Human Resources verwendet Zahlungshäufigkeiten zur Berechnung des jährlichen Vorteilsgehalts, zur Bestimmung des Vorteilszulagenbetrags, den ein Mitarbeiter für jede Lohnperiode zahlt, und zur Festlegung der Häufigkeit, mit der Zahlungen an Anbieter erfolgen.
 
@@ -58,6 +56,3 @@ Die Felder für die Umrechnungsfaktoren identifizieren den Umrechnungsfaktor von
    | **Stündlicher Umrechnungsfaktor** | Der jährliche Umrechnungsfaktor für die Zahlungshäufigkeit. Zum Beispiel lautet der jährliche Umrechnungsfaktor für die monatliche Lohnzahlungshäufigkeit: </br></br>(12 monatliche Zahlungen/2080 Stunden) = 0,005769
 
 4. Wählen Sie **Speichern**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

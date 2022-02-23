@@ -1,26 +1,29 @@
 ---
 title: Lagerchargen zusammenführen
 description: Dieses Thema enthält Informationen, wie zwei oder mehr Lagerchargen in einer zusammengeführte Charge konsolidiert werden.
-author: yufeihuang
+author: pjacobse
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
-ms.author: yufeihuang
+ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83c7fa6bf596510c3b902c12433cc55842ebe0b4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fa571fb7392f6f7154f7f1bfd908e11e1bebd3a6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571904"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428873"
 ---
 # <a name="merge-inventory-batches"></a>Lagerchargen zusammenführen
 
@@ -57,12 +60,12 @@ Ja, gibt es mehrere Dinge, die Sie einrichten müssen, bevor Sie die Zusammenfü
 <td>Freigegebene Produkte</td>
 <td>Die empfohlenen Einstellungen für den Artikel sind wie folgt:
 <ul>
-<li>Um Chargennummern für zusammengeführte Chargen automatisch zu generieren, müssen Sie das freigegebene Produkt einer Chargennummerngruppe zuweisen. Sie können eine Chargennummer auch manuell eingeben, wenn Sie eine zusammengeführte Charge erstellen, oder wählen Sie eine vorhandene Chargennummer. Wenn Sie eine vorhandene Chargennummer auswählen, müssen Sie sicherstellen, dass die ausgewählte Charge in&#39;keine Bestandstransaktion einbezogen wurde.</li>
-<li>Wenn Sie Haltbarkeits- oder Mindesthaltbarkeits-Datumsangaben&#39;für das freigegebene Produkt verwenden, werden die Datumsangaben für eine zusammengeführte Charge basierend auf der Auswahl im Feld <strong>Datumsberechnung für Chargenzusammenführung</strong> berechnet. Die folgenden Optionen sind verfügbar:
+<li>Um Chargennummern für zusammengeführte Chargen automatisch zu generieren, müssen Sie das freigegebene Produkt einer Chargennummerngruppe zuweisen. Sie können eine Chargennummer auch manuell eingeben, wenn Sie eine zusammengeführte Charge erstellen, oder wählen Sie eine vorhandene Chargennummer. Wenn Sie eine vorhandene Chargennummer auswählen, müssen Sie sicherstellen, dass die ausgewählte Charge in keine Bestandstransaktion einbezogen wurde.</li>
+<li>Wenn Sie Haltbarkeits- oder Mindesthaltbarkeits-Datumsangaben für das freigegebene Produkt verwenden, werden die Datumsangaben für eine zusammengeführte Charge basierend auf der Auswahl im Feld <strong>Datumsberechnung für Chargenzusammenführung</strong> berechnet. Die folgenden Optionen sind verfügbar:
 <ul>
 <li><strong>Frühester Zeitpunkt</strong> - Die Berechnung basiert auf dem frühesten Datum, das für eine Quellcharge angegeben wird, die für die Chargenzusammenführung ausgewählt ist.</li>
 <li><strong>Spätester Zeitpunkt</strong> - Die Berechnung basiert auf dem spätesten Datum, das für eine Quellcharge angegeben wird, die für die Chargenzusammenführung ausgewählt ist.</li>
-<li><strong>Manuell</strong> - Es wird keine Berechnung vorgenommen. Wenn ein Datum für alle Quellchargen gleich ist, wird ein Datum vorgeschlagen. Dieses Datum kann geändert werden. Wenn das Datum&#39;auf den Quellchargen nicht gleich ist, können Sie es manuell eingeben.</li>
+<li><strong>Manuell</strong> - Es wird keine Berechnung vorgenommen. Wenn ein Datum für alle Quellchargen gleich ist, wird ein Datum vorgeschlagen. Dieses Datum kann geändert werden. Wenn das Datum auf den Quellchargen nicht gleich ist, können Sie es manuell eingeben.</li>
 </ul></li>
 </ul></td>
 </tr>
@@ -137,6 +140,3 @@ Sie können die Bestandserfassung für die Chargenzusammenführung auf der Liste
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Warum kann ich, nachdem ich einen Artikelgewichtsartikel zusammengeführt habe, die Artikelgewichtsinformationen in der Lagererfassung nicht anzeigen?
 Sie können Chargen von Artikelgewichtsartikeln ebenso wie alle anderen Artikel zusammenführen. Allerdings werden die Artikelgewichtsinformationen nicht in der Lagererfassung angezeigt. Es wird empfohlen, die Artikelgewichtsinformationen zu prüfen, bevor Sie die Chargenzusammenführung in die Bestandserfassung übertragen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

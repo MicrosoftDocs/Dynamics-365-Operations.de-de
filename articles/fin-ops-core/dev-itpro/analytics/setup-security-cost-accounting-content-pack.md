@@ -1,10 +1,12 @@
 ---
 title: Sicherheit für den Power BI-Inhalt der Kostenrechnungsanalyse einrichten
-description: In diesem Thema wird erläutert, wie Sie Zugriffebenensicherheit in der Kostenrechnung auf Positionsebene in Microsoft Power BI umsetzen können.
+description: In diesem Thema wird erläutert, wie Sie Zugriffebenensicherheit in der Kostenrechnung auf Positionsebene in Microsoft Power BI umsetzen können. Diese Funktion stellt sicher, dass Benutzer nur Power BI-Daten sehen, für die Ihnen Zugriff erteilt werden.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -14,14 +16,14 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f519a38b381da0efc1e91ba0f2015780d086550c3e38810e6845a0fc07976767
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 04ff1523f7b05fe8398513e913702b0f3c7c354c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751490"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682188"
 ---
-# <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Sicherheit für den Power BI-Inhalt zur Kostenrechnungsanalyse einrichten
+# <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Sicherheit für den Power BI-Inhalt der Kostenrechnungsanalyse einrichten
 
 [!include [banner](../includes/banner.md)]
 
@@ -42,11 +44,11 @@ Um die Zugriffebenensicherheit für Power BI zu nutzen, muss der Eigentümer der
 3. Suchen Sie das Dataset für den **Kostenrechnungsanalyse** Power BI-Inhalt
 4. Öffnet Sie die Sicherheitsseite.
 
-    ![Sicherheitsseite öffnen.](./media/CA-picture-1.png)
+    ![Sicherheitsseite öffnen](./media/CA-picture-1.png)
 
 5. Die **Kostenträgercontroller** Rolle ist bereits erstellt. Fügen Sie andere Mitglieder hinzufügen, die Teil der Kostenrechnungs-Zugriffebenenorganisationshierarchie sind.
 
-    ![Mitglieder hinzufügen.](./media/CA-picture-2.png)
+    ![Mitglieder hinzufügen](./media/CA-picture-2.png)
 
 Benutzer, die zur Rolle **Kostenträgercontroller** hinzugefügt werden, finden nur die Daten, um die ihnen zulässig sind, um festzustellen, entsprechend der Definition im Formular Kostenrechnungs-Zugriffebenenorganisationshierarchie.
 
@@ -61,6 +63,3 @@ Es wird davon ausgegangen, dass Ihre Organisation möchte den Datenzugriff einsc
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 Weitere Informationen über die Sicherheit auf Positionsebene in Power BI finden Sie unter [Sicherheit für Ihr Modell in Power BI verwalten](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/#manage-security-on-your-model).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

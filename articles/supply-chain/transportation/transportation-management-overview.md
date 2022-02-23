@@ -1,28 +1,29 @@
 ---
 title: Übersicht Transportverwaltungsaufgaben
 description: Dieses Thema bietet einen Überblick über die Transportmanagementfunktion in Supply Chain Management.
-author: Henrikan
+author: MarkusFogelberg
+manager: tfehr
 ms.date: 06/20/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSParameters,TMSRateRouteWorkbench, WHSLoadPlanningWorkbench, TMSLoadBuildTemplateApply, WHSLoadTemplate, TMSTransportationStatus, TMSLoadSeal, TMSLoadBuildProposal, TMSLoadBuildWorkbench, TMSLoadBuildStrategy, TMSLoadBuildStrategyAttributeValue
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "30251"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 30251
 ms.assetid: d4e3550c-bca8-469c-82df-56ac0083e4ac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68082a736fd45c6701324a1492087c1b16bf0566
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 4affc5846ee329a4571d6fb3e0c42873387241ad
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985444"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429071"
 ---
 # <a name="transportation-management-overview"></a>Transportverwaltung – Aufgaben
 
@@ -69,23 +70,20 @@ Mit der Transportverwaltung können Sie den Transport Ihres Unternehmens verwend
 ## <a name="planning-transportation-in-supply-chain-management"></a>Planen des Transports in Supply Chain Management
 In der Transportverwaltung kann die Transportplanung entweder auf Aufträgen oder auf Lieferungen basieren, die auf Basis dieser Aufträge erstellt werden. Die Lieferungen sind immer irgendwann vorhanden. Sie sind jedoch nicht zur Transportplanung erforderlich. Umlagerungsaufträge sind Teil des ausgehenden Szenarios und können zusammen mit Aufträgen geplant werden. 
 
-![Auslastungabbildung.](./media/Load-drawing1-1024x477.jpg)
+![Auslastungabbildung](./media/Load-drawing1-1024x477.jpg)
 
 ## <a name="inbound-transportation"></a>Eingehender Transport
 Wenn Sie Artikel von einem Kreditor zur Lieferung an Ihren Lagerort bestellen, möchten Sie den Transport der Artikel möglicherweise selbst organisieren. Sie können Supply Chain Management nutzen, um den Transport und den Empfang einer eingehenden Ladung zu planen. Die folgende Abbildung zeigt den Geschäftsprozessablauf für die Planung des Transports einer eingehenen Auslastung. 
 
-![Geschäftsprozessfluss für den Transport eingehender Auslastungen.](./media/Businessprocessflowforinboundloadtransportation.jpg)
+![Geschäftsprozessfluss für den Transport eingehender Auslastungen](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
 ## <a name="outbound-transportation"></a>Ausgehender Transport
 Sie können eine ausgehende Ladung planen und verarbeiten, um bestimmte Artikel aus dem Lagerort eines Unternehmens an einen Debitor zu versenden. Sie können Supply Chain Management nutzen, um den Transport und den Versand einer ausgehenden Ladung zu planen. Die folgende Abbildung zeigt den Geschäftsprozessablauf für die Planung und Verarbeitung von ausgehenden Ladungen für den Versand. 
 
-![Planung und Verarbeitung von ausgehenden Ladungen.](./media/Planningandprocessingoutboundloads.jpg)
+![Planung und Verarbeitung von ausgehenden Ladungen](./media/Planningandprocessingoutboundloads.jpg)
 
 ## <a name="load-building"></a>Ladungserstellung
 Supply Chain Management enthält eine Ladungserstellungsstrategie mit dem Namen „Volumenbasierte Ladungserstellungsstrategie“. Mit dieser Strategie können Sie die Höchstwerte verwenden, die für Höhe und Gewicht in der Ladungsvorlage angegeben sind, oder die Einstellungen überschreiben, indem sie neuen Werte eingeben. Um diese Strategie zu verwenden, wählen Sie sie im Feld **Ladungserstellungsstrategie** im Inforegister **Einstellungen** auf der Seite **Ladungserstellungsworkbench** aus. Darüber hinaus können Sie eigene Ladungserstellungsstrategien hinzufügen, indem Sie eine neue Klasse in der Entwicklungsumgebung erstellen.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

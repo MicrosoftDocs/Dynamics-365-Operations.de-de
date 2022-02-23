@@ -1,69 +1,68 @@
 ---
-title: Stellenanforderung erstellen und freigeben
+title: Stellenanforderung ausarbeiten und freigeben
 description: Mithilfe von Personalbeschaffungsprojekten können Sie den Personalbeschaffungsprozess verwalten.
-author: twheeloc
-ms.date: 10/28/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruitingMedia, HRMRecruitingJobAd, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0d59ccb88b8a76de6e2f00453f185fec2f149873
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: 3207d61536422255b574fd126f16075fcddc2c93
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731560"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418612"
 ---
-# <a name="create-and-open-job-requisition"></a>Stellenanforderung erstellen und freigeben
+# <a name="develop-and-open-job-requisition"></a>Stellenanforderung ausarbeiten und freigeben
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Mithilfe von Personalbeschaffungsprojekten können Sie den Personalbeschaffungsprozess verwalten. Nach dem Erstellen eines Personalbeschaffungsprojekt können Sie die folgenden Aufgaben ausführen:
 
-- Schreiben Sie eine Stellenanzeige für das Projekt.
-- Veröffentlichen Sie die Anzeige auf den Mitarbeiter-Self-Service-Seiten.
-- Ordnen Sie Bewerbungen für eine Anstellung dem Projekt zu.
-- Verfolgen Sie die Aktivitäten für dieses Projekt nach. 
+Mithilfe von Personalbeschaffungsprojekten können Sie den Personalbeschaffungsprozess verwalten. Für jedes Personalbeschaffungsprojekt können Sie Informationen einrichten wie die Stelle, für die Sie Personal beschaffen möchten, den Namen des Personalbeschaffungsmitarbeiters, den Status des Projekts und die Abteilung, in der sich die Stelle befindet. Nachdem Sie ein Personalbeschaffungsprojekt erstellt haben, können Sie eine Stellenausschreibung für das Projekt schreiben, die Stellenausschreibung auf Employee Self-Service-Seiten veröffentlichen, Bewerbungen für Anstellungen mit dem Projekt verknüpfen und Aktivitäten für das Projekt nachverfolgen. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Um das Verfahren zu starten, wechseln Sie zu "Personalverwaltung" > "Personalbeschaffung" "Personalbeschaffungsprojekte" > "Personalbeschaffungsprojekte"
 
-1. Wechseln Sie zu **Personalverwaltung > Personalbeschaffung > Personalbeschaffungsprojekte**.
-2. Wählen Sie **Neu** aus.
-3. Geben Sie einen Wert in das Feld **Personalbeschaffungsprojekt** ein.
-4. Geben Sie im Feld **Beschreibung** einen Wert ein, oder wählen Sie einen Wert aus.
-5. Wählen Sie im Feld **Personalbeschaffungsmitarbeiter** die Dropdown-Schaltfläche, um das Nachschlagefeld zu öffnen.
-6. Suchen Sie in der Liste Ihren Datensatz, und wählen Sie ihn aus.
-7. Wählen Sie in der Liste den Link in der ausgewählten Zeile.
-8. Wählen Sie **Auswählen**.
-9. Wählen Sie im Feld **Abteilung** die Dropdown-Schaltfläche, um die Suche zu öffnen.
-10. Wählen Sie in der Liste den Link in der ausgewählten Zeile.
-11. Wählen Sie im Feld **Stelle** die Dropdown-Schaltfläche aus, um die Suche zu öffnen.
-12. Suchen Sie in der Liste Ihren Datensatz, und wählen Sie ihn aus.
-13. Wählen Sie in der Liste den Link in der ausgewählten Zeile.
-14. Geben Sie im Feld **Anzahl der offenen Stellen** eine Zahl ein.
-15. Wählen Sie im Feld **Zukünftiger Vorgesetzter** die Dropdown-Schaltfläche, um die Suche zu öffnen.
-16. Suchen Sie in der Liste Ihren Datensatz, und wählen Sie ihn aus.
-17. Wählen Sie in der Liste den Link in der ausgewählten Zeile.
-18. Wählen Sie **Auswählen**.
-19. Geben Sie im Feld **Bewerbungsfrist** ein Datum ein.
-20. Wählen Sie **Medien**. Personalbeschaffungsprojekte enthalten die Option, Medien anzugeben, die verwendet werden sollen, um offene Stellen anzukündigen.  
-21. Wählen Sie **Neu** aus.
-22. Wählen Sie im Feld **Medien** die Dropdown-Schaltfläche aus, um die Suche zu öffnen.
-23. Wählen Sie in der Liste den Link in der ausgewählten Zeile.
-24. Geben Sie im Feld **Startdatum** ein Datum ein.
-25. Geben Sie im Feld **Enddatum** ein Datum ein.
-26. Wählen Sie **Speichern** aus.
-27. Schließen Sie die Seite.
-28. **Stellenanzeigen** auswählen.
-29. Wählen Sie **Speichern** aus.
-30. Schließen Sie die Seite.
-31. Aktivieren bzw. deaktivieren Sie das Kontrollkästchen **Auf Mitarbeiter-Self-Service anzeigen**. Aktivieren das Kontrollkästchen **Auf Mitarbeiter-Self-Service anzeigen**. Diese Auswahl macht das Personalbeschaffungsprojekt für Mitarbeiter auf ihrer **Mitarbeiter-Self-Service**-Seite sichtbar.
-32. Wählen Sie Sie auf **Status des Personalbeschaffungsprojekts**.
-33. Wählen Sie **Starten** aus. Der Status **Gestartet** bedeutet, dass das Projekt bereit ist, Bewerbungen zu erhalten.  
-34. Wählen Sie **OK**.
+1. Klicken Sie auf "Neu".
+2. Geben Sie im Feld "Personalbeschaffungsprojekt" einen Wert ein.
+3. Geben Sie im Feld "Beschreibung" einen Wert ein.
+4. Klicken Sie im Feld "Personalbeschaffungsmitarbeiter" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
+5. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
+6. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
+7. Klicken Sie auf Auswählen.
+8. Klicken Sie im Feld "Abteilung" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
+9. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
+10. Klicken Sie im Feld "Stelle" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
+11. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
+12. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
+13. Geben Sie im Feld "Anzahl der offenen Stellen" eine Zahl ein.
+14. Klicken Sie im Feld "Zukünftiger Vorgesetzter" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
+15. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
+16. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
+17. Klicken Sie auf Auswählen.
+18. Geben Sie im Feld "Bewerbungsfrist" ein Datum ein.
+19. Klicken Sie auf "Medien".
+    * Personalbeschaffungsprojekte enthalten die Option, Medien anzugeben, die verwendet werden sollen, um offene Stellen anzukündigen.  
+20. Klicken Sie auf "Neu".
+21. Klicken Sie im Feld "Medien" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
+22. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
+23. Geben Sie im Feld "Startdatum" ein Datum ein.
+24. Geben Sie im Feld "Enddatum" ein Datum ein.
+25. Klicken Sie auf "Speichern".
+26. Schließen Sie die Seite.
+27. Klicken Sie auf "Stellenanzeigen".
+28. Klicken Sie auf "Speichern".
+29. Schließen Sie die Seite.
+30. Aktivieren bzw. deaktivieren Sie das Kontrollkästchen "Auf Employee Self-Service anzeigen".
+    * Aktivieren Sie das Kontrollkästchen "Auf Employee Self-Service anzeigen", um das Personalbeschaffungsprojekt für Mitarbeiter auf ihren Employee Self-Service-Seiten sichtbar zu machen.  
+31. Klicken Sie auf "Status des Personalbeschaffungsprojekts".
+32. Klicken Sie auf "Start".
+    * Der Status "Gestartet" bedeutet, dass das Projekt bereit ist, Bewerbungen zu erhalten.  
+33. Klicken Sie auf "OK".
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,31 +1,36 @@
 ---
 title: Mit Stilvoreinstellungen arbeiten
-description: In diesem Thema wird beschrieben, wie Sie mit vordefinierten Stilen in Microsoft Dynamics 365 Commerce Site Builder arbeiten.
+description: In diesem Thema wird beschrieben, wie Sie mit vordefinierten Stilen in Microsoft Dynamics 365 Commerce Sitebuilder arbeiten.
 author: phinneyridge
+manager: annbe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 63e11b718a2b5221c722a11de3a8df6d9d0e3d6b
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 250f2386cefee8bef45df66c4eef31b4e7fc2686
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964852"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412633"
 ---
 # <a name="work-with-style-presets"></a>Mit Stilvoreinstellungen arbeiten
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie mit vordefinierten Stilen in Microsoft Dynamics 365 Commerce Site Builder arbeiten.
+In diesem Thema wird beschrieben, wie Sie mit vordefinierten Stilen in Microsoft Dynamics 365 Commerce Sitebuilder arbeiten.
+
+## <a name="overview"></a>Übersicht
 
 Ein voreingestellter Stil ist ein gespeicherter Satz aller autorisierbaren Stilwerte für das Thema einer Site. Es kann verwendet werden, um das Aussehen einer Site sofort vom Site Builder aus zu ändern. Mit Stilvoreinstellungen können Commerce Site Builder-Autoren schnell eine Reihe von Stilwerten auf ihrer Website ändern, in der Vorschau anzeigen und aktivieren, ohne Cascading Style Sheets verwenden zu müssen (CSS) oder Themen bereitstellen. Schriftstile, Schaltflächenstile und Site-Farben sind typische Beispiele für Stilvariablen, die über Stilvoreinstellungen verwaltet werden können.
 
@@ -110,17 +115,16 @@ Die Stilwerte der Voreinstellung werden auf Ihrer öffentlich zugänglichen Webs
 
 [Hinzufügen eines Logos](add-logo.md)
 
-[Sitedesign auswählen](select-site-theme.md)
+[Auswählen eines Sitedesigns](select-site-theme.md)
 
 [Arbeiten mit CSS-Überschreibungsdateien](css-override-files.md)
 
 [Hinzufügen eines Favicons](add-favicon.md)
+
+[Hinzufügen einer Begrüßungsnachricht](add-welcome-message.md)
 
 [Hinzufügen eines Urheberrechtshinweises](add-copyright-notice.md)
 
 [Hinzufügen von Sprachen zu Ihrer Website](add-languages-to-site.md)
 
 [Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie](add-telemetry.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

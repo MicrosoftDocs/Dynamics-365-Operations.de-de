@@ -1,35 +1,33 @@
 ---
 title: Produktbereitschaft
-description: In diesem Thema wird erklärt, wie Sie Bereitschaftsprüfungen verwenden können, um sicherzustellen, dass die erforderlichen Stammdaten für ein Produkt vollständig sind, bevor es in Transaktionen verwendet wird.
+description: In diesem Thema wird erklärt, wie Sie Bereitschaftsprüfungen verwenden können, um sicherzustellen, dass die erforderlichen Stammdaten für ein Produkt vervollständigt sind, bevor es in Transaktionen verwendet wird.
 author: t-benebo
+manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4286f72f9aed1b4dd91e7c45203cfab2af43f3c2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 8321a0d8516a6c2c085ce9c1236f70af1cca98da
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571952"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967257"
 ---
 # <a name="product-readiness"></a>Produktbereitschaft
 
 [!include [banner](../includes/banner.md)]
 
-Sie können Bereitschaftsprüfungen verwenden, um sicherzustellen, dass alle erforderlichen Stammdaten für ein Produkt angegeben wurden, bevor es in Transaktionen verwendet wird. Wenn Bereitschaftsprüfungen verwendet werden, wird ein Benutzer oder ein Team für die Validierung bestimmter vordefinierter produktbezogener Daten verantwortlich gemacht.
+Sie können Bereitschaftsprüfungen verwenden, um sicherzustellen, dass alle erforderlichen Stammdaten für ein Produkt angegeben wurden, bevor es in Transaktionen verwendet wird. Wenn Bereitschaftsprüfungen verwendet werden, wird ein Benutzer oder ein Team für die Validierung bestimmter vordefinierter produktbezogener Daten verantwortlich gemacht. Wenn es eine offene Bereitschaftsprüfung für ein Produkt gibt, kann das Produkt nicht freigegeben oder in Transaktionen verwendet werden.
 
-Sie können das Kontrollkästchen **Aktiv** für ein technisches Produkt, eine Variante oder eine Version aktivieren, nachdem alle erforderlichen Daten eingegeben und überprüft wurden und alle Bereitschaftsprüfungen verarbeitet wurden. Wenn Sie versuchen, das Kontrollkästchen **Aktiv** zu aktivieren, wenn eine oder mehrere Prüfungen für das Produkt, die Version oder die Variante nicht durchgeführt wurden, erhalten Sie eine Warnmeldung, dass noch nicht alle Prüfungen abgeschlossen sind.
-
-Sie können Bereitschaftsprüfungen für neue technische Produkte, Varianten und Versionen erstellen. Sie können Bereitschaftsprüfungen auch auf Standardprodukte (nicht technisch) anwenden (siehe auch [Bereitschaftsprüfungen von Standardprodukten](#standard-products)). 
-
-Sie können Standardprodukte in Transaktionen verwenden, auch wenn noch nicht alle Bereitschaftsprüfungen abgeschlossen sind. Wenn Sie die Verwendung eines Produkts in Transaktionen blockieren müssen, verwenden Sie seinen Lebenszyklusstatus. Sie können einen Lebenszyklusstatus zuweisen, der die Verwendung eines Produkts in Transaktionen blockiert, und dann, nachdem alle Bereitschaftsprüfungen abgeschlossen sind, einen neuen Lebenszyklusstatus zuweisen, der die erforderlichen Transaktionen zulässt.
+Das Kontrollkästchen **Aktiv** für ein Engineering-Produkt, eine Variante oder eine Version ist erst verfügbar, nachdem alle erforderlichen Daten eingegeben und überprüft wurden und alle Bereitschaftsprüfungen abgearbeitet wurden. Zu diesem Zeitpunkt kann das Produkt, die Version oder die Variante für andere Firmen freigegeben und in Transaktionen verwendet werden. Sie können Bereitschaftsprüfungen für neue Produkte, neue Varianten und neue Entwicklungsversionen erstellen.
 
 ## <a name="types-of-readiness-checks"></a>Arten von Bereitschaftsprüfungen
 
@@ -39,29 +37,22 @@ Es gibt drei Arten von Bereitschaftsprüfungen:
 - **Manuelle Prüfung** - Ein Benutzer prüft, ob der Datensatz gültig ist. Eine Bereitschaftsprüfung könnte z. B. die Validierung der Standardauftragseinstellungen erfordern. In einigen Fällen, z. B. wenn das Produkt noch in der Entwicklung ist und daher nicht auf Lager gelegt wird, sind keine Standard-Auftragseinstellungen erforderlich. Für ein anderes Produkt desselben Typs können jedoch Bestellungsvoreinstellungen erforderlich sein, weil das Produkt auf Lager gehalten werden kann. Es liegt in der Verantwortung des Anwenders zu wissen, wie er korrekt entscheiden kann, ob eine Bereitschaftsprüfung erforderlich ist.
 - **Checkliste** - Der Benutzer beantwortet eine Reihe von Fragen aus einer Checkliste, und das System ermittelt, ob die Antworten den Erwartungen entsprechen. Die Checkliste kann ein beliebiges Thema haben. Sie kann z.B. verwendet werden, um festzustellen, ob die Marketingmaterialien oder die Produktdokumentation vollständig sind.
 
-<a name="checks-engineering"></a>
+## <a name="how-readiness-checks-are-created-for-a-new-product-variant-or-version"></a>So werden Readiness Checks für ein neues Produkt, eine Variante oder eine Version erstellt
 
-## <a name="how-readiness-checks-are-created-for-a-new-engineering-product-variant-or-version"></a>So werden Readiness Checks für ein neues Engineering-Produkt, eine Variante oder eine Version erstellt
-
-Richtlinien zur Bereitschaftsprüfung können auf der Ebene des freigegebenen Produkts, der freigegebenen Variante und der Engineering-Version angewendet werden.
-
-Wenn Sie eine neues *technisches Produkt* erstellen, bestimmt das System, ob eine [Bereitschaftsüberprüfungsrichtlinie](#assign-policy) angewendet wird. Wenn eine Bereitschaftsprüfungsrichtlinie angewendet wird, treten die folgenden Ereignisse auf:
+Wenn Sie ein neues Engineering **Produkt** erstellen, ermittelt das System, ob eine Richtlinie zur Bereitschaftsprüfung für die Engineering-Produktkategorie festgelegt wurde. (Richtlinien zur Bereitschaftsprüfung können auf der Ebene des freigegebenen Produkts, der freigegebenen Variante und der Engineering-Version angewendet werden). Wenn eine Richtlinie festgelegt wurde, treten die folgenden Ereignisse ein:
 
 - Readiness Checks werden für das Produkt erstellt, entsprechend der anwendbaren Richtlinie.
-- Die technische Version wird auf inaktiv festgelegt, um das Produkt für die Verwendung zu sperren. Alle technischen Versionen für das Produkt sind auf inaktiv gesetzt.
+- Die technische Version wird auf inaktiv festgelegt, um das Produkt für die Verwendung zu sperren. Alle Versionen für das betreffende Produkt werden auf inaktiv festgelegt.
 
-Wenn eine neue *Variante* erstellt wird, prüft das System, ob dafür eine Bereitschaftsprüfungsrichtlinie gilt. (Bereitschaftsprüfungen können auf Ebene der freigegebenen Variante und auf Ebene der Engineering-Version durchgeführt werden). Wenn eine Bereitschaftsprüfung festgelegt wurde, treten die folgenden Ereignisse auf:
+Wenn eine neue **Variante** für ein Produkt erstellt wird, prüft das System, ob Bereitschaftsprüfungen für die Engineering-Produktkategorie festgelegt wurden. (Bereitschaftsprüfungen können auf Ebene der freigegebenen Variante und auf Ebene der Engineering-Version durchgeführt werden). Wenn eine Bereitschaftsprüfung festgelegt wurde, treten die folgenden Ereignisse auf:
 
-- Readiness Checks werden für das Produkt erstellt, entsprechend der anwendbaren Richtlinie.
-- Die technische Version und Variante wird auf inaktiv festgelegt, um das Produkt für die Verwendung zu sperren.
-
-Wenn eine neue Engineeering-*Version* erstellt wird, prüft das System, ob dafür eine Bereitschaftsprüfungsrichtlinie gilt. (Bereitschaftsprüfungen können auf Ebene der freigegebenen Variante und auf Ebene der Engineering-Version durchgeführt werden). Wenn eine Bereitschaftsprüfung festgelegt wurde, treten die folgenden Ereignisse auf:
-
-- Readiness Checks werden für das Produkt erstellt, entsprechend der anwendbaren Richtlinie.
+- Bereitschaftsprüfungen werden für das Produkt erstellt.
 - Die technische Version wird auf inaktiv festgelegt, um das Produkt für die Verwendung zu sperren.
 
-> [!NOTE]
-> Sie können Bereitschaftsprüfungen auch auf Standardprodukte (nicht technische Produkte) einrichten. Weitere Informationen finden Sie im Abschnitt [Bereitschaftsprüfungen bei Standardprodukten](#standard-products) weiter unten in diesem Thema.
+Wenn eine neue Engineering **Version** für ein Produkt erstellt wird, wird geprüft, ob Bereitschaftsprüfungen für die Engineering-Produktkategorie festgelegt wurden. (Bereitschaftsprüfungen können auf der Ebene der Engineering-Version angewendet werden.) Wenn eine Bereitschaftsprüfung festgelegt wurde, treten die folgenden Ereignisse auf:
+
+- Bereitschaftsprüfungen werden für das Produkt erstellt.
+- Die technische Version wird auf inaktiv festgelegt, um das Produkt für die Verwendung zu sperren.
 
 ## <a name="view-readiness-checks"></a>Bereitschaftsprüfungen anzeigen
 
@@ -78,7 +69,7 @@ Um die offenen Bereitschaftsprüfungen anzuzeigen, die Ihnen zugewiesen sind, f�
 - Gehen Sie zu **Verwaltung für technische Änderung \> Allgemein \> Produktbereitschaft \> Meine offenen Bereitschaftsprüfungen**.
 - Gehen Sie zu **Produktinformationsmanagement \> Arbeitsbereiche \> Produktbereitschaft für diskrete Fertigung**.
 
-Das Einrichten, das festlegt, wem eine Bereitschaftsprüfung zugewiesen wird, erfolgt für die Bereitschaftsrichtlinie. Bereitschaftsprüfungen können einer Person oder einem Team zugewiesen werden. Wenn eine Bereitschaftsprüfung einem Team zugewiesen ist, gibt es eine Person im Team, die die Bereitschaftsprüfung bearbeiten muss.
+Das Einrichten, das festlegt, wem eine Bereitschaftsprüfung zugewiesen wird, erfolgt für die Produktkategorie Engineering. Bereitschaftsprüfungen können einer Person oder einem Team zugewiesen werden. Wenn eine Bereitschaftsprüfung einem Team zugewiesen ist, gibt es eine Person im Team, die die Bereitschaftsprüfung bearbeiten muss. Weitere Informationen finden Sie unter [Engineering-Versionen und Engineering-Produktkategorien](engineering-versions-product-category.md).
 
 ## <a name="process-open-readiness-checks"></a>Offene Bereitschaftschecks verarbeiten
 
@@ -103,7 +94,9 @@ Wenn alle offenen Readiness-Checks für ein neues Produkt, eine Variante oder ei
 
 ## <a name="create-and-manage-product-readiness-policies"></a>Richtlinien zur Produktbereitschaft erstellen und verwalten
 
-Verwenden Sie Richtlinien zur Produktbereitschaft, um die Bereitschaftsprüfungen zu verwalten, die für ein Produkt gelten. Jede Bereitschaftsrichtlinie enthält eine festgelegte Anzahl von Bereitschaftsprüfungen. Wenn eine Bereitschaftsrichtlinie oder ein freigegebenes Produkt einer Engineering-Produktkategorie zugewiesen wird, haben alle Produkte, die aus dieser Engineering-Produktkategorie erstellt werden, die in der Bereitschaftsrichtlinie angegebenen Bereitschaftsprüfungen.
+Verwenden Sie Richtlinien zur Produktbereitschaft, um die Bereitschaftsprüfungen zu verwalten, die für ein Produkt gelten. Da eine Bereitschaftsrichtlinie der Engineering-Kategorie zugewiesen ist, gelten alle Prüfungen in der Bereitschaftsrichtlinie für alle Engineering-Produkte, die auf der Engineering-Kategorie basieren. Weitere Informationen finden Sie unter [Engineering-Versionen und Engineering-Produktkategorien](engineering-versions-product-category.md).
+
+Jede Bereitschaftsrichtlinie enthält eine festgelegte Anzahl von Bereitschaftsprüfungen. Wenn eine Bereitschaftsrichtlinie einer Engineering-Produktkategorie zugewiesen wird, haben alle Produkte, die aus dieser Engineering-Produktkategorie erstellt werden, die in der Bereitschaftsrichtlinie angegebenen Bereitschaftsprüfungen.
 
 Um mit Richtlinien zur Produkt-Bereitschaft zu arbeiten, gehen Sie zu **Verwaltung für technische Änderung \> Einrichten \> Richtlinien zur Produkt-Bereitschaft**. Führen Sie dann einen der folgenden Schritte aus.
 
@@ -127,7 +120,7 @@ Legen Sie die folgenden Felder auf dem Inforegister **Allgemein** einer Richtlin
 | Feld | Beschreibung |
 |---|---|
 | Produkttyp | Wählen Sie, ob die Richtlinie für Produkte vom Typ *Element* oder *Service* gilt. Sie können diese Einstellung nicht mehr ändern, nachdem Sie den Datensatz gespeichert haben. |
-| Aktiv | Verwenden Sie diese Option, um die Pflege Ihrer Bereitschaftsrichtlinien zu erleichtern. Legen Sie sie für alle Bereitschaftsrichtlinien, die Sie verwenden, auf *Ja* fest. Legen Sie sie auf *Nein* fest, um eine Bereitschaftsrichtlinie als inaktiv zu markieren, wenn sie nicht verwendet wird. Beachten Sie, dass Sie eine Bereitschaftsrichtlinie, die einer technischen Produktkategorie oder einem feigegebenen Produkt zugewiesen ist, nicht inaktivieren können, und Sie können nur inaktive Bereitschaftsrichtlinien löschen. |
+| Aktiv | Verwenden Sie diese Option, um die Pflege Ihrer Bereitschaftsrichtlinien zu erleichtern. Legen Sie sie für alle Bereitschaftsrichtlinien, die Sie verwenden, auf *Ja* fest. Legen Sie sie auf *Nein* fest, um eine Bereitschaftsrichtlinie als inaktiv zu markieren, wenn sie nicht verwendet wird. Beachten Sie, dass Sie eine Bereitschaftsrichtlinie, die einer technischen Produktkategorie zugewiesen ist, nicht inaktivieren können, und Sie können nur inaktive Bereitschaftsrichtlinien löschen. |
 
 ### <a name="readiness-control-fasttab"></a>Bereitschaftskontroll-Inforegister
 
@@ -151,72 +144,6 @@ Legen Sie für jede Zeile, die Sie hinzufügen, die folgenden Felder fest.
 | Firma | Wenn Sie das Feld **Ausführen in** auf *Einzelne Firma* festlegen, wählen Sie die Firma. |
 | Eigentümertyp | Wählen Sie, ob Bereitschaftsprüfungen, die die Zeile generiert, einer Person oder einem Team zugewiesen werden sollen. |
 | Eigentümer | Wählen Sie die Person oder das Team aus, der/dem Bereitschaftschecks, die die Zeile erzeugt, zugewiesen werden sollen. |
-| Fragebogen | Wählen Sie den Fragebogen aus, der für die Checkliste verwendet werden soll. Die Checkliste ist eine lokale Checkliste in dem Unternehmen, in dem die Bereitschaftsprüfung durchgeführt wird. Das System muss in der Lage sein, auszuwerten, ob die Checkliste korrekt beantwortet wird. Daher muss die Checkliste so festgelegt werden, dass eine Auswertung auf Basis der richtigen Antworten erfolgt. Weitere Informationen zum Erstellen von Fragebögen finden Sie unter [Verwenden von Fragebögen](/dynamicsax-2012/appuser-itpro/using-questionnaires) und den zugehörigen Themen. |
+| Fragebogen | Wählen Sie den Fragebogen aus, der für die Checkliste verwendet werden soll. Die Checkliste ist eine lokale Checkliste in dem Unternehmen, in dem die Bereitschaftsprüfung durchgeführt wird. Das System muss in der Lage sein, auszuwerten, ob die Checkliste korrekt beantwortet wird. Daher muss die Checkliste so festgelegt werden, dass eine Auswertung auf Basis der richtigen Antworten erfolgt. Weitere Informationen zum Erstellen von Fragebögen finden Sie unter [Verwenden von Fragebögen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/using-questionnaires) und den zugehörigen Themen. |
 | Automatische Genehmigung | Bereitschaftsprüfungsdatensätze enthalten ein Kontrollkästchen **Genehmigt**, das den Genehmigungsstatus anzeigt. Aktivieren Sie das Kontrollkästchen **Automatische Genehmigung** für Prüfungen, die sofort auf genehmigt festgelegt werden sollen, nachdem der zugewiesene Benutzer sie abgeschlossen hat. Deaktivieren Sie dieses Kontrollkästchen, um eine explizite Genehmigung als zusätzlichen Schritt zu verlangen. |
 | Obligatorisch | Aktivieren Sie dieses Kontrollkästchen für Checks, die vom zugewiesenen Benutzer abgeschlossen werden müssen. Obligatorische Prüfungen können nicht übersprungen werden. |
-
-<a name="assign-policy"></a>
-
-## <a name="assign-readiness-policies-to-standard-and-engineering-products"></a>Weitere Informationen finden Sie unter Weisen Sie Standard- und Engineering-Produkten Bereitschaftsrichtlinien zu
-
-Wenn Sie ein neues Produkt basierend auf einer Engineering-Kategorie erstellen, erstellen Sie sowohl ein *freigegebenes Produkt* wie auch ein verwandtes *gemeinsames Produkt*. Die Art und Weise, wie Bereitschaftsrichtlinien für ein freigegebenes Produkt aufgelöst werden, hängt davon ab, ob Sie die Funktion *Produktbereitschaftsprüfungen* aktiviert haben. (Weitere Informationen finden Sie im Abschnitt [Bereitschaftsprüfungen bei Standardprodukten](#standard-products) weiter unten in diesem Thema.)
-
-- Wenn die Funktion *Produktbereitschaftsprüfungen* in Ihrem System *deaktiviert* ist, wird die Bereitschaftsrichtlinie festgelegt und nur im Bericht [technische Kategorie](engineering-versions-product-category.md) angezeigt. Um zu erfahren, welche Richtlinie für ein freigegebenes Produkt gilt, überprüft das System das Feld **Produktbereitschaftsrichtlinie** für die zugehörige Engineering-Kategorie. Sie können die Bereitschaftsrichtlinie für ein vorhandenes Produkt ändern, indem Sie die zugehörige Engineering-Kategorie (nicht das freigegebene Produkt) bearbeiten.
-- Wenn die Funktion *Produktbereitschaftsprüfungen* *aktiviert* ist, fügt sie ein Feld **Produktbereitschaftsrichtlinie** zur Seite **Produkt** (dort, wo gemeinsam genutzte Produkte eingerichtet sind) und zur Seite **Freigegebenes Produkt** hinzu, (wobei der Wert schreibgeschützt ist und aus dem zugehörigen freigegebenen Produkt stammt). Das System ermittelt die Bereitschaftsrichtlinie für ein freigegebenes Produkt, indem es das zugehörige freigegebene Produkt überprüft. Wenn Sie eine Engineering-Kategorie verwenden, um ein neues Engineering-Produkt zu erstellen, erstellt das System sowohl ein freigegebenes Produkt als auch ein freigegebenes Produkt und kopiert jede Einstellung **Produktbereitschaftsrichtlinie** Einstellung für die Engineering-Kategorie für das neue freigegebene Produkt. Sie können dann die Bereitschaftsrichtlinie für ein vorhandenes Produkt ändern, indem Sie die zugehörige freigegebene Produkt-Kategorie (nicht das freigegebene EngineeringProdukt) bearbeiten.
-
-Um eine Bereitschaftsrichtlinie einem freigegebenen Produkt zuzuweisen, gehen Sie folgendermaßen vor.
-
-1. Wechseln Sie zu **Produktinformationsverwaltung \> Produkte \> Produkte**.
-1. Öffnen oder erstellen Sie das Produkt, dem Sie eine Bereitschaftsrichtlinie zuweisen möchten.
-1. Auf dem Inforegister **Allgemeines** legen Sie das Feld **Produktbereitschaftsrichtlinie** auf den Namen der Richtlinie fest, die für das Produkt gelten soll.
-
-Um eine Bereitschaftsrichtlinie einer Engineering-Kategorie zuzuweisen, gehen Sie folgendermaßen vor.
-
-1. Gehen Sie zu **Verwaltung für technische Änderung \> Einrichtung von \> Engineering-Produktkategorie-Details**.
-1. Öffnen oder erstellen Sie die Engineering-Kategorie, der Sie eine Bereitschaftsrichtlinie zuweisen möchten.
-1. Auf dem Inforegister **Produkt-Bereichtschaftsrichtlinie** legen Sie das Feld **Produktbereitschaftsrichtlinie** auf den Namen der Richtlinie fest, die für das Produkt gelten soll.
-
-<a name="standard-products"></a>
-
-## <a name="readiness-checks-on-standard-products"></a>Bereitschaftsprüfungen bei Standardprodukten
-
-Sie können die Produktbereitschaftsprüfung für Standardprodukte (nicht technische Produkte) aktivieren, indem Sie die Funktion *Produktbereitschaftsprüfungen* in der Funktionsverwaltung aktivieren. Diese Funktion nimmt einige kleine Änderungen am Bereitschaftsprüfungssystem vor, sodass es Standardprodukte unterstützt.
-
-### <a name="enable-readiness-checks-on-standard-products"></a>Bereitschaftsprüfungen bei Standardprodukten aktivieren
-
-Führen Sie die folgenden Schritte aus, damit Ihr System Bereitschaftsprüfungen für Standardprodukte durchführen kann.
-
-- Aktivieren Sie die Funktion für technische Änderungsverwaltung in Ihrem System wie in [Übersicht über die Änderungsverwaltung](product-engineering-overview.md) beschrieben.
-- Benutzen Sie die [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um die benannte Funktion *Produktbereitschaftsprüfungen* zu aktivieren.
-
-<!-- KFM: This section requires confirmation before publishing
-
-### How readiness checks are created for standard products
-
-When you create a new non-engineering *released product*, the system determines whether a readiness check policy has been set up for the related shared product. If a policy has been set up, the following events occur:
-
-- Readiness checks are created for the released product, according to the applicable policy.
-- The released product is blocked from being used until all checks are marked as completed.
-
-If a new *variant* is created for a product, the system checks whether readiness checks have been set up on the related shared product. If a readiness check has been set up, the following events occur:
-
-- Readiness checks are created for the released product, according to the applicable policy.
-- The released product is blocked from being used until all checks are marked as completed.
-
-For engineering products, readiness checks are created in the same way that they are created when the *Product readiness checks* feature is turned off. For more information, see the [How readiness checks are created for a new engineering product, variant, or version](#checks-engineering) section earlier in this topic.
-
--->
-
-### <a name="create-readiness-policies-for-standard-products"></a>Erstellen Sie Bereitschaftsrichtlinien für Standardprodukte
-
-Sie erstellen Bereitschaftsrichtlinien für Standardprodukte genauso wie für technische Produkte. Sehen Sie die Informationen weiter oben in diesem Thema.
-
-### <a name="assign-readiness-policies-to-standard-products"></a>Weisen Sie Bereitschaftsrichtlinien den Standardprodukten zu
-
-Um einem Standardprodukt eine Bereitschaftsrichtlinie zuzuweisen, öffnen Sie das zugehörige freigegebene Produkt und legen Sie das Feld **Produktbereitschaftsrichtlinie** auf den Namen der Richtlinie fest, die angewendet werden soll. Weitere Informationen finden Sie unter [Weisen Sie Standard- und Engineering-Produkten Bereitschaftsrichtlinien zu](#assign-policy), wie zuvor in diesem Thema beschrieben.
-
-### <a name="view-and-process-readiness-checks-on-standard-products"></a>Bereitschaftsprüfungen bei Standardprodukten anzeigen und verarbeiten
-
-Wenn diese Funktion aktiviert ist, können Sie Bereitschaftsprüfungen für Standardprodukte genauso anzeigen und verarbeiten wie für technische Produkte. Sehen Sie die Informationen weiter oben in diesem Thema.
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

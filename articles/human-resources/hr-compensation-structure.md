@@ -1,33 +1,31 @@
 ---
 title: Entwicklung einer Vergütungsstruktur
-description: In diesem Thema wird erklärt, wie Sie einen festen Vergütungsplan erstellen und Mitarbeiter für den Plan durch die Regeln für die Anspruchsberechtigung registrieren.
-author: twheeloc
-ms.date: 08/25/2021
+description: Dieser Artikel führt Sie durch die Erstellung eines festen Vergütungsplans und die Anmeldung von Mitarbeitern in den Plan durch die Regeln für die Anspruchsberechtigung.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/10/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPart, HRMCompFixedPlanTable, HRMCompCreateGridDialog, HRCCompGridView, HRMCompEligibility,  HRCCompGrid
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2e35f4978cc4e8162c56ba05de28ab5b2366ccc7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 124d0f7f83feebabf622f00732c25bfa0f6eccdd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065285"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418704"
 ---
 # <a name="develop-a-compensation-structure"></a>Entwicklung einer Vergütungsstruktur
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-In diesem Thema wird beschrieben, wie Sie einen festen Vergütungsplan erstellen und Mitarbeiter für den Plan durch die Regeln für die Anspruchsberechtigung registrieren. Dieses Thema verwendet die USMF-Demodaten und gilt für Vergütungs- und Leistungsmanager.
+Dieser Artikel führt Sie durch die Erstellung eines festen Vergütungsplans und die Anmeldung von Mitarbeitern in den Plan durch die Regeln für die Anspruchsberechtigung. Dieser Artikel verwendet die USMF-Demodaten und gilt für Vergütungs- und Leistungsmanager.
 
 ## <a name="create-a-fixed-compensation-plan"></a>Erstellen eines festen Vergütungsplans
 
@@ -45,7 +43,7 @@ In diesem Thema wird beschrieben, wie Sie einen festen Vergütungsplan erstellen
 
 7. Wählen Sie im Feld **Typ** aus, ob es sich bei dem festen Vergütungsplan um einen Plan **Band**, **Grad** oder **Schritt** handelt.
 
-8. Das Kontrollkästchen **Empfehlung erlaubt** dient als Standardwert für alle Maßnahmen, die diesem Plan in einem Prozessereignis hinzugefügt werden. Das Zulassen von Empfehlungen bietet Ihnen die Möglichkeit, den berechneten Richtbetrag zu überschreiben, wenn die Vergütung verarbeitet wird.
+8. Das Ankreuzfeld **Empfehlung erlaubt** dient als Standardwert für alle Maßnahmen, die diesem Plan in einem Prozessereignis hinzugefügt werden. Das Zulassen von Empfehlungen bietet Ihnen die Möglichkeit, den berechneten Richtbetrag zu überschreiben, wenn die Vergütung verarbeitet wird.
 
 9. Mit dem Feld **Bereichstoleranz außerhalb des Bereichs** können Sie angeben, wie Sie Vergütungsbeträge behandeln wollen, die außerhalb des für die gegebene Ebene angegebenen Bereichs der Vergütungsstruktur liegen. Wenn Sie das Feld **Bereichstoleranz außerhalb des Bereichs** auf **Keine** setzen, können Sie jeden beliebigen Vergütungsbetrag verwenden. **Weiche Toleranz** warnt die Benutzer, wenn der Ausgleichsbetrag unter dem Minimum oder über den maximalen Bezugspunktbeträgen für diese Ebene liegt. Benutzer können die Warnung ignorieren und fortfahren. **Harte Toleranz** erzeugt einen Fehler, wenn die Vergütung eines Mitarbeiters außerhalb des minimalen und maximalen Bezugspunktbetrags für diese Stufe liegt, und passt die Vergütung des Mitarbeiters automatisch so an, dass sie in den Bereich fällt.
 
@@ -115,6 +113,3 @@ Sie können einem Mitarbeiter erst dann einen festen Vergütungsplan zuordnen, w
 
 8. Schließen Sie die Seite.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

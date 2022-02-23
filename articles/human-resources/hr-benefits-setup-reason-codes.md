@@ -1,42 +1,35 @@
 ---
 title: Ursachencodes einrichten
 description: Dynamics 365 Human Resources erläutert anhand von Ursachencodes, warum sich die Vorteile eines Mitarbeiters ändern.
-author: twheeloc
-ms.date: 08/25/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a30a59a648d54eda771845b8bee52df43987d3d1
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 83923eecf7eb23a21b8dbbd39491014fa2bc20d6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068283"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418705"
 ---
 # <a name="set-up-reason-codes"></a>Ursachencodes einrichten
 
+Dynamics 365 Human Resources erläutert anhand von Ursachencodes, warum sich die Vorteile eines Mitarbeiters ändern. 
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Dynamics 365 Human Resources erläutert anhand von Ursachencodes, warum sich die Vorteile eines Mitarbeiters ändern.
-
-> [!NOTE]
-> Seit Januar 2021 werden Ursachencodes zum Arbeitsbereich **Personalverwaltung** statt zum Arbeitsbereich **Vorteilsverwaltung** migriert. Weitere Informationen finden Sie unter [Ursachencodes manuell in die Personalverwaltung migrieren](hr-benefits-setup-reason-codes.md#manually-migrate-reason-codes-to-personnel-management).
-
-## <a name="create-reason-codes"></a>Erstellen von Ursachencodes
-
-1. Im Arbeitsbereich **Personalverwaltung** (oder, wenn Ihre Ursachencodes noch nicht migriert wurden, im Arbeitsbereich **Vorteilsverwaltung**) wählen Sie **Links** und dann **Ursachencodes** aus.
+1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Einstellungen** die Option **Ursachencodes** aus.
 
 2. Wählen Sie **Neu** aus.
 
@@ -47,39 +40,4 @@ Dynamics 365 Human Resources erläutert anhand von Ursachencodes, warum sich die
    | **Ursachencode** | Ein eindeutiger Name, der den Grund angibt, aus dem ein Mitarbeiter die Registrierung eines Vergütungsplans ändern würde. |
    | **Beschreibung** | Eine Beschreibung des Ursachencodes. |
 
-4. Legen Sie unter **Zutreffende Szenarios** die Option **Vorteilsverwaltung** auf **Ja** fest. (Gilt nicht, wenn Ihre Ursachencodes noch nicht zum Arbeitsbereich **Personalverwaltung** migriert wurden.)
-
-5. Wählen Sie **Speichern** aus.
-
-## <a name="manually-migrate-reason-codes-to-personnel-management"></a>Ursachencodes manuell in die Personalverwaltung migrieren
-
-Seit Januar 2021 werden Ursachencodes zum Arbeitsbereich **Personalverwaltung** statt zum Arbeitsbereich **Vorteilsverwaltung** migriert. Die meisten Ursachencodedaten werden automatisch in Ihre Umgebung migriert. Einige Ursachencodedaten werden möglicherweise nicht migriert. Beispielsweise haben Ursachencodes jetzt ein Maximum von 15 Zeichen, sodass Ursachencodes, die länger als 15 Zeichen sind, nicht automatisch migriert werden.
-
-Sie sehen ein Banner auf der **Links**-Seite des **Vorteilsverwaltung**-Arbeitsbereichs, das Sie über die Migration informiert und darüber, ob Ursachencodes nicht migriert wurden.
-
-1. Wählen Sie **Ursachencodes** aus, um Einzelheiten zum Migrationsstatus zu erhalten.
-
-   [![Ursachencodes.](./media/hr-benefits-setup-reason-codes-link.png)](./media/hr-benefits-setup-reason-codes-link.png)
-
-2. Wählen Sie einen Ursachencode aus, der nicht migriert werden konnte.
-
-   [![Migrationsstatus des Ursachencodes.](./media/hr-benefits-setup-reason-codes-status.png)](./media/hr-benefits-setup-reason-codes-status.png)
-
-3. Wählen Sie **Ursachencode migrieren**.
-
-   [![Ursachencode für Migration.](./media/hr-benefits-setup-reason-codes-migrate.png)](./media/hr-benefits-setup-reason-codes-migrate.png)
-
-4. In dem **Migration von Vorteilsursachencodes**-Bereich haben Sie zwei Optionen für die Zuordnung zu einem Ursachencode der Personalverwaltung:
-
-   - Um einen vorhandenen Ursachencode in der Personalverwaltung zu verwenden, wählen Sie einen aus der **Vorhandenen Ursachencode verwenden**-Dropdown-Liste.
-     > [!NOTE]
-     > Sie können nur dann einen vorhandenen Ursachencode in der Personalverwaltung verwenden, wenn noch kein anderer Ursachencode für die Vorteilsverwaltung dorthin migriert wurde.
-   - Geben Sie einen neuen Ursachencode in **Neuer Ursachencode** ein, und geben Sie dann eine Beschreibung in ein **Neue Beschreibung** ein, um einen neuen Ursachencode in der Personalverwaltung zu erstellen.
-
-   [![Zuordnung zu einem Ursachencode für die Personalverwaltung.](./media/hr-benefits-setup-reason-codes-mapping.png)](./media/hr-benefits-setup-reason-codes-mapping.png)
-
-Nachdem Ursachencodes in die Personalverwaltung migriert wurden, wird die Option für deren Verwendung in der Vorteilsverwaltung automatisch auf **Ja** festgelegt.
-
-[![Ursachencodes in der Vorteilsverwaltung verwenden.](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+4. Wählen Sie **Speichern**. 

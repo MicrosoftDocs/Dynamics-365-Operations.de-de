@@ -2,9 +2,11 @@
 title: Lieferart in POS ändern
 description: In diesem Thema wird beschrieben, wie Sie den Änderungsmodus des Zustellvorgangs am POS konfigurieren und verwenden.
 author: hhainesms
+manager: annbe
 ms.date: 03/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: ''
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: ef778763b26954057b83df3e963e34008819fd208a55d55e07075853ffce8b35
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6bfe27a7b4a768da00c67e307a0bd7e57b333d11
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714039"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965426"
 ---
 # <a name="change-mode-of-delivery-in-pos"></a>Lieferart in POS ändern
 
@@ -31,7 +33,7 @@ In Dynamics 365 Commerce Versionen 10.0.10 und höher, ist der Vorgang (647) **L
 
 Mit der Funktion zum Ändern des Zustellungsmodus können Sie den Zustellungsmodus für eine oder mehrere versandkonfigurierte Verkaufslinien in der POS-Transaktion ändern. In früheren Versionen von Commerce mussten Sie die vollständige Version durchlaufen **Versenden Sie alle** oder **Ausgewählte versenden**. Die Konfiguration erfolgt, wenn Sie den Zustellungsmodus für eine vorhandene Linie ändern möchten, die für den Versand konfiguriert wurde. Dieser Vorgang war zeitaufwändig und konnte zu versehentlichen Änderungen des Lieferursprungs oder der Liefertermine für die Linie führen. Die neue Funktionalität bietet eine alternative Methode zur effizienten Aktualisierung der Zustellungsart in diesen Vertriebslinien.
 
-Weitere Informationen zum Hinzufügen einer Operation zu einer Schaltfläche in Ihrem POS-Schaltflächenraster finden Sie unter [Bildschirmlayouts für die Verkaufsstelle](pos-screen-layouts.md).
+Weitere Informationen zum Hinzufügen einer Operation zu einer Schaltfläche in Ihrem POS-Schaltflächenraster finden Sie unter [Bildschirmlayouts für die Verkaufsstelle](https://docs.microsoft.com/dynamics365/commerce/pos-screen-layouts).
 
 Nachdem diese Funktion in POS konfiguriert wurde, wenn Sie **Lieferart ändern** auswählen, wird eine Listenseite angezeigt, auf der Sie die Zeilen der Transaktion auswählen können, für die Sie den Zustellungsmodus ändern möchten. Sie können einige oder alle Zeilen auswählen oder beenden, ohne Änderungen vorzunehmen. Die Verkaufszeilen, die zuvor für den Versand konfiguriert wurden, sind die einzigen Zeilen in der Liste, die Sie ändern können. Wenn Sie eine Linie ändern möchten, die für die Abholung oder den Transport bestimmt ist, müssen Sie die Vorgänge **Versenden Sie alle** oder **Ausgewählte versenden** auswählen. Wenn Sie dagegen eine als Sendung bezeichnete Position in eine Abholung oder einen Transport ändern möchten, müssen Sie die Vorgänge **Alles abholen**, **Ausgewählte abholen**, **Alles ausführen**, oder **ausgewählte durchführen** verwenden.
 
@@ -44,6 +46,3 @@ Nachdem Sie den neuen Zustellungsmodus ausgewählt haben, wird die Transaktionss
 [Callcenteraufträge erstellen](tasks/create-call-center-orders.md)
 
 [Transaktions-E-Mails nach Lieferart anpassen](customize-email-delivery-mode.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

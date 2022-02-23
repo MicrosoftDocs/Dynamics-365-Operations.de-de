@@ -2,9 +2,11 @@
 title: Benutzerdefinierte Speicherorte für generierte Dokumente angeben
 description: In diesem Thema wird erläutert, wie Sie die Liste der Speicherorte für Dokumente erweitern, die von Formaten der electronischen Berichterstellung (EB) generiert werden.
 author: NickSelin
+manager: AnnBe
 ms.date: 10/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 337e760f28161721d886c7bbec09b5ff8dbfad45
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 362ac7f10cc61e26be89dfbae0e84745d42588a3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594908"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680757"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Benutzerdefinierte Speicherorte für generierte Dokumente angeben
 
@@ -27,7 +29,7 @@ Mit der Anwendungsprogrammierschnittstelle (API) des Framework der elektronische
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Stellen Sie eine Topologie bereit, die einen fortlaufenden Build unterstützt. Weitere Informationen finden Sie unter [Bereitstellen von Topologien, die fortlaufenden Build und Testautomatisierung unterstützen](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation) Sie unter. Sie müssen für eine der folgenden Rollen Zugriff auf diese Topologie haben:
+Stellen Sie eine Topologie bereit, die einen fortlaufenden Build unterstützt. Weitere Informationen finden Sie unter [Bereitstellen von Topologien, die fortlaufenden Build und Testautomatisierung unterstützen](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation) Sie unter. Sie müssen für eine der folgenden Rollen Zugriff auf diese Topologie haben:
 
 - Entwickler für elektronische Berichterstellung
 - Funktionaler Berater für elektronische Berichterstellung
@@ -41,7 +43,7 @@ Alle Aufgaben in diesem Thema können im **USMF**-Unternehmen erledigt werden.
 
 Um die Dokumente zu generieren, für die Sie einen benutzerdefinierten Speicherort hinzufügen möchten, [importieren](er-download-configurations-global-repo.md) Sie das EB-Format **Rollforward für Anlagen** in die aktuelle Topologie.
 
-![Konfigurationsrepository-Seite.](./media/er-custom-storage-generated-files-import-format.png)
+![Konfigurationsrepository-Seite](./media/er-custom-storage-generated-files-import-format.png)
 
 ## <a name="run-the-fixed-asset-roll-forward-report"></a>Bericht „Rollforward für Anlagen“ ausführen
 
@@ -50,9 +52,9 @@ Um die Dokumente zu generieren, für die Sie einen benutzerdefinierten Speichero
 3. Geben Sie im Feld **Bis Datum** das Datum **1/31/2017** (31. Januar 2017) ein.
 4. Wählen Sie im Feld **Währung** die Option **Buchhaltungswährung** aus.
 5. Wählen Sie im Feld **Formatzuordnung** die Option **Rollforward für Anlagen** aus.
-6. Wählen Sie **OK** aus.
+6. Wählen Sie **OK**.
 
-![Dialogfeld „Laufzeit“ für den Bericht „Rollforward für Anlagen“.](./media/er-custom-storage-generated-files-runtime-dialog.png)
+![Dialogfeld „Laufzeit“ für den Bericht „Rollforward für Anlagen“](./media/er-custom-storage-generated-files-runtime-dialog.png)
 
 Überprüfen Sie in Microsoft Excel das ausgehende Dokument, das generiert wurde und zum Download zur Verfügung steht. Dieses Verhalten ist das [Standardverhalten](electronic-reporting-destinations.md#default-behavior) für ein EB-Format, für das keine [Ziele](electronic-reporting-destinations.md) konfiguriert sind und das im interaktiven Modus ausgeführt wird.
 
@@ -255,7 +257,7 @@ class AssetRollForwardService extends SysOperationServiceBase
 3. Ändern Sie die vorhandene Klasse `AssetRollForwardService` und schreiben Sie Code, um ein benutzerdefiniertes Empfängerwerk für die Berichtsausführung einzurichten. Beachten Sie, dass beim Erstellen eines benutzerdefinierten Empfängerwerks der anwendungsgesteuerte Parameter, der einen Zielordner angibt, übergeben wird. Auf diese Weise wird dieser Zielordner zum Speichern generierter Dateien verwendet.
 
     > [!NOTE] 
-    > Stellen Sie sicher, dass der angegebene Ordner (in diesem Beispiel **c:\\0**) im lokalen Dateisystem des Servers vorhanden ist, auf dem der AOS-Dienst ausgeführt wird. Ansonsten wird zur Laufzeit eine [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception)-Ausnahme ausgelöst.
+    > Stellen Sie sicher, dass der angegebene Ordner (in diesem Beispiel **c:\\0**) im lokalen Dateisystem des Servers vorhanden ist, auf dem der AOS-Dienst ausgeführt wird. Ansonsten wird zur Laufzeit eine [DirectoryNotFoundException](https://docs.microsoft.com/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1)-Ausnahme ausgelöst.
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;
@@ -339,6 +341,3 @@ class AssetRollForwardService extends SysOperationServiceBase
 
 - [Zielorte für elektronische Berichterstellung (ER)](electronic-reporting-destinations.md)
 - [Startseite für Erweiterbarkeit](../extensibility/extensibility-home-page.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

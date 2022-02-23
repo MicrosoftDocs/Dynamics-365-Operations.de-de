@@ -1,25 +1,27 @@
 ---
 title: Mobiler Arbeitsbereich für Kreditorenzusammenarbeit
 description: Dieses Thema enthält Informationen zur Lieferantenzusammenarbeit im mobilen Arbeitsbereich. Dieser Arbeitsbereich hilft Kreditoren, auf dem neuesten Stand der Bestellungen zu sein, die ihnen zur Genehmigung gesendet wurden. Sie können auch Informationen zu neuen und aktualisierten Bestellungen und Kontakten anzeigen.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 267074
 ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
-ms.author: henrikan
+ms.author: riluan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: efbd0afb0d84f76058b75126af200a9b10197559
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5cd8a2b2db7147aca6bdc29ba15d99a619ddb4f8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577023"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020835"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobiler Arbeitsbereich für Kreditorenzusammenarbeit
 
@@ -57,7 +59,7 @@ Der mobile Arbeitsbereich **Kreditorenzusammenarbeit** ermöglicht einem Kredito
 Die Voraussetzungen unterscheiden sich basierend auf der Version von Microsoft Dynamics 365, die für Ihre Organisation bereitgestellt wurde.
 
 ### <a name="prerequisites-if-you-use-supply-chain-management"></a>Voraussetzungen, wenn Sie verwenden Supply Chain Management
-Wenn Supply Chain Management für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator den mobilen Arbeitsbereich **Kreditor-Kooperation** veröffentlichen. Anweisungen finden Sie unter [Einen mobilen Arbeitsbereich veröffentlichen](../../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md).
+Wenn Supply Chain Management für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator den mobilen Arbeitsbereich **Kreditor-Kooperation** veröffentlichen. Anweisungen finden Sie unter [Einen mobilen Arbeitsbereich veröffentlichen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher verwenden
 Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator die folgenden Voraussetzungen erfüllen. 
@@ -77,7 +79,7 @@ Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 od
 <td>3216943 KB ist eine binäre Aktualisierung, die erforderlich ist, wenn Sie Plattformaktualisierung 3. verwenden. Um diesen KB zu implementieren, muss Ihr Systemadministrator folgende Schritte ausführen.
 <ol>
 <li>Download von KB 3216943 von Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li>Binäre Aktualisierung instalieren, die zur Bereitstellung als geeignetes Paket geliefert wird. Informationen dazu, wie ein bereitgestelltes Paket übernommen wird, finden Sie unter <a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Ein bereitgestelltes Paket anwenden</a>.</li>
+<li>Binäre Aktualisierung instalieren, die zur Bereitstellung als geeignetes Paket geliefert wird. Informationen dazu, wie ein bereitgestelltes Paket übernommen wird, finden Sie unter <a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Ein bereitgestelltes Paket anwenden</a>.</li>
 </ol></td>
 </tr>
 <tr class="even">
@@ -85,14 +87,14 @@ Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 od
 <td>Systemadministrator</td>
 <td>4013633 KB ist ein X++-Aktualisierungs- oder -Metadatenhotfix, der den mobilen Arbeitsbereich <strong>Lagerbestand</strong> enthält. Um KB 4013633 muss Ihr Systemadministrator folgende Schritte ausführen.
 <ol>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs">Laden Sie den Metadatumenhotfix herunter</a>.</li>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Installieren Sie den Metadatenhotfix</a>.</li><li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">Erstellen eines zur Bereitstellung geeigneten Paket</a>, das das <strong>SCMMobile</strong> Modell enthält und laden Sie dann das zur Bereitstellung geeignete Paket in LCS hoch.</li>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Das bereitstellbare Paket übernehmen</a>.</li>
+<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Laden Sie den Metadatumenhotfix herunter</a>.</li>
+<li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Installieren Sie den Metadatenhotfix</a>.</li><li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Erstellen eines zur Bereitstellung geeigneten Paket</a>, das das <strong>SCMMobile</strong> Modell enthält und laden Sie dann das zur Bereitstellung geeignete Paket in LCS hoch.</li>
+<li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Das bereitstellbare Paket übernehmen</a>.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Die <strong>Kreditoren-Kooperation</strong> mobiler Arbeitsbereich muss veröffentlicht werden.</td><td>Systemadministrator</td>
-<td>Siehe <a href="/dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace">Einen mobilen Arbeitsbereich veröffentlichen</a>.</td>
+<td>Siehe <a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">Einen mobilen Arbeitsbereich veröffentlichen</a>.</td>
 </tr>
 <tr class="even">
 <td>Der Kreditorenbenutzer muss Zugriff auf die Weboberfläche für die Kreditor-Kooperation im Webclient haben und muss als Keditor-Kooperations-Benutzer eingerichtet werden.</td><td>Einkäufer und Systemadministrator</td>
@@ -120,12 +122,12 @@ Herunterladen und Installieren der Finance and Operations mobilen App:
 4.  Bei der erstmaligen Anwendung werden Sie nach Ihrem Benutzernamen und dem Kennwort gefragt. Geben Sie Ihre Anmeldeinformationen ein.
 5.  Nachdem Sie sich angemeldet haben, werden verfügbare Arbeitsbereiche für Ihr Unternehmen angezeigt. Beachten Sie, dass Sie, wenn Ihr Systemadministrator einen neuen Arbeitsbereich später veröffentlicht, die Liste der mobilen Arbeitsbereiche aktualisieren müssen.
 
-    [![Zum Aktualisieren nach unten ziehen.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+    [![Zum Aktualisieren ziehen](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="use-the-vendor-collaboration-mobile-workspace"></a>Mobiler Arbeitsbereich für Kreditorenzusammenarbeit nutzen
 Wenn Sie **Kreditorenzusammenarbeit** auswählen, finden Sie folgende Optionen.
 
-![Mobiler Arbeitsbereich für Kreditorenzusammenarbeit.](./media/vendor-collaboration-mobile-app.png)
+![Mobiler Arbeitsbereich für Kreditorenzusammenarbeit](./media/vendor-collaboration-mobile-app.png)
 
 Der Arbeitsbereich **Kreditorenzusammenarbeit** enthält die folgenden Seiten.
 
@@ -167,6 +169,3 @@ Sämtliche Änderungen, die in der Auftragspositionsantwort vorgenommen wurden, 
 
 ### <a name="open-confirmed-orders"></a>Offene bestätigte Aufträge
 Wenn die Bestellung vom Debitor bestätigt wird (d. h. der Status des Auftrags, wird auf **Bestätigt** geändert), erscheint sie unter den offenen, bestätigten Aufträgen. Sie bleibt in der Liste, bis sie als vom Debitor empfangen registriert wird.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

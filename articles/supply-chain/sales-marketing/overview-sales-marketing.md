@@ -2,26 +2,27 @@
 title: Vertriebs- und Marketingübersicht
 description: Im Vertriebs- und Marketingmodul können verschiedene Arten von Daten im Verkaufsablauf abgerufen, gespeichert und verwendet werden. Zu diesen Daten zählen die ursprüngliche Vertriebsinitiative, künftige Weiterverfolgungsaktivitäten und zusätzliche Verkäufe.
 author: kfend
+manager: tfehr
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "92303"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 92303
 ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 021ff1ff24e20516b7a8ac1ce206b76aa8e91a2a
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f03db7f830d0b7efa4ba32b9e194a4e3a65266e8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982533"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428499"
 ---
 # <a name="sales-and-marketing-overview"></a>Vertriebs- und Marketingübersicht
 
@@ -29,20 +30,21 @@ ms.locfileid: "7982533"
 
 Im Vertriebs- und Marketingmodul können verschiedene Arten von Daten im Verkaufsablauf abgerufen, gespeichert und verwendet werden. Zu diesen Daten zählen die ursprüngliche Vertriebsinitiative, künftige Weiterverfolgungsaktivitäten und zusätzliche Verkäufe.
 
-## <a name="marketing"></a>Marketing
+<a name="marketing"></a>Marketing
+---------
 
-Marketingkampagnen und -aktivitäten dienen der Suche und dem Aufbau von Beziehungen mit potenziellen Kunden, sodass sich Erstkontakte zu Geschäftsbeziehungen entwickeln können. Im folgenden Ablaufdiagramm werden die Geschäftsprozesse für das Marketing dargestellt. [![Geschäftsprozess für Marketing.](./media/marketing01.jpg)](./media/marketing01.jpg)
+Marketingkampagnen und -aktivitäten dienen der Suche und dem Aufbau von Beziehungen mit potenziellen Kunden, sodass sich Erstkontakte zu Geschäftsbeziehungen entwickeln können. Im folgenden Ablaufdiagramm werden die Geschäftsprozesse für das Marketing dargestellt. [![Geschäftsprozess für Marketing](./media/marketing01.jpg)](./media/marketing01.jpg)
 
 ### <a name="relationships"></a>Beziehungen
 
-In Vertrieb und Marketing können die Erstkontakte mit potenziellen Kunden in unterschiedlichen Situationen auftreten. Beispielsweise entdecken Sie einen künftigen Kunden bei einem Messebesuch oder einen potentiellen Kunden nachdem Ihre Organisation eine Massenmail-Kampagne ausgeführt hat. Es ist sehr wichtig, dass Sie den Fluss der Entität einer Partei überblicken bevor diese Partei ein Kunde wird. Die folgende Grafik zeigt den Verlauf der Entitätsbeziehungen vom potenziellen Kunden zum Kunden. [![SalesandMarketing01.](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
+In Vertrieb und Marketing können die Erstkontakte mit potenziellen Kunden in unterschiedlichen Situationen auftreten. Beispielsweise entdecken Sie einen künftigen Kunden bei einem Messebesuch oder einen potentiellen Kunden nachdem Ihre Organisation eine Massenmail-Kampagne ausgeführt hat. Es ist sehr wichtig, dass Sie den Fluss der Entität einer Partei überblicken bevor diese Partei ein Kunde wird. Die folgende Grafik zeigt den Verlauf der Entitätsbeziehungen vom potenziellen Kunden zum Kunden. [![SalesandMarketing01](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
 
 ### <a name="campaigns"></a>Kampagnen
 
 Eine Kampagne wird auf die Kontakte für Interessenten, potenzielle Kunden, Verkaufschancen und Debitoren ausgerichtet, die als Kampagnenteilnehmer ausgewählt wurden. In Supply Chain Management können Sie verschiedene Kampagnentypen wie Telemarketing, Mailings und E-Mail-Kampagnen erstellen, um Ihr Kundenpotential zu maximieren. Wenn Ihre Kampagne fortschreitet und Sie positive Antworten erhalten, können Sie mit dem Verkaufsprozess bei den Empfängern beginnen, die positiv auf die Kampagne reagiert haben.
 
 ## <a name="sales"></a>Vertrieb
-Die Verkaufsfunktionalität wird verwendet, um Angebote zu erstellen, den weiteren und ergänzenden Verkauf an neue und vorhandene Kunden durchzuführen und um Aufträge und Rechnungen für Kunden zu erstellen. Im folgenden Ablaufdiagramm werden die Geschäftsprozesse für den Verkauf dargestellt. [![Geschäftsprozess für Verkauf.](./media/sales01.jpg)](./media/sales01.jpg)
+Die Verkaufsfunktionalität wird verwendet, um Angebote zu erstellen, den weiteren und ergänzenden Verkauf an neue und vorhandene Kunden durchzuführen und um Aufträge und Rechnungen für Kunden zu erstellen. Im folgenden Ablaufdiagramm werden die Geschäftsprozesse für den Verkauf dargestellt. [![Geschäftsprozess für Verkauf](./media/sales01.jpg)](./media/sales01.jpg)
 
 ### <a name="sales-quotations"></a>Verkaufsangebote
 
@@ -123,6 +125,3 @@ Bei einer Proforma-Rechnung handelt es sich um eine Rechnung, die vor dem Buchen
 #### <a name="blogs"></a>Blogs
 
 Einen Überblick über einen Verkaufsprozess finden Sie im Beitrag [Vertriebsarbeit in Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/05/15/how-sales-work-in-dynamics-365-for-finance-and-operations).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

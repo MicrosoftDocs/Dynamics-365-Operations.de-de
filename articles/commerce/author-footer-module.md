@@ -2,24 +2,27 @@
 title: Fußzeilenmodul
 description: In diesem Thema werden Fußzeilenmodule behandelt nd wie sie in Dynamics 365 Commerce erstellt werden.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0fdf183afe0df71e43a05b65fba06126f75f85b981b78afc4a543fb9310c6906
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 42a71ea9498461febca80952acc3158517918332
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719985"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412545"
 ---
 # <a name="footer-module"></a>Fußzeilenmodul  
 
@@ -27,11 +30,13 @@ ms.locfileid: "6719985"
 
 In diesem Thema werden Fußzeilenmodule behandelt und deren Erstellung in Microsoft Dynamics 365 Commerce beschrieben.
 
+## <a name="overview"></a>Übersicht
+
 Das Fußzeilenmodul ist ein spezielle Container, der verwendet wird, um die Module zu hosten, die in der Fußzeile erscheinen. Zum Beispiel kann es Verknüpfungen an verschiedene Seiten auf der Site umfassen wie **Kontaktieren Sie uns** und **Speichern Sie Richtlinien**.
 
 Das folgende Bild zeigt ein Beispiel eines Fußzeilenmoduls, das auf einer Homepage verwendet wird.
 
-![Beispiel eines Fußzeilenmoduls.](./media/ecommerce-footer.PNG)
+![Beispiel eines Fußzeilenmoduls](./media/ecommerce-footer.PNG)
 
 ## <a name="footer-module-properties"></a>Fußzeilenmoduleigenschaften 
 
@@ -82,6 +87,3 @@ Wenn Sie das Fragment der Seitenvorlagen hinzufügen, helfen Sie sicherzustellen
 [Kopfzeilenmodul](author-header-module.md)
 
 [Fußzeilenmodul](author-footer-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

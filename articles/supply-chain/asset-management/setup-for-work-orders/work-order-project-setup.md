@@ -1,10 +1,12 @@
 ---
 title: Arbeitsauftrags-Projekteinstellungen
 description: In diesem Thema wird die Einrichtung von Arbeitsaufträgen im Anlagenmanagement erläutert.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderProjectSetup
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bb897ca0a7e9c45ee55244189bb1b487fbddf0714ad3ea0cac26eb7bac36a07f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 031e61549474745360ac00f9a66bef7a9dbaaf96
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754082"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021553"
 ---
 # <a name="work-order-project-setup"></a>Arbeitsauftrags-Projekteinstellungen
 
@@ -69,20 +71,17 @@ Das Setup ermöglicht eine vollständige Integration mit dem Modul **Projektmana
 
     Standardmäßig ist das Startdatum das Datum, an dem Sie das Arbeitsauftragsprojekt zur Seite hinzufügen. Es wird durch das Feld **Gültig von** gesteuert, das standardmäßig ausgeblendet ist. Um das Feld **Gültig von** anzuzeigen, wählen Sie **Ansicht** \> **Alle**. Sie können dann das Feld **Gültig ab** zusammen mit dem Feld **Enddatum** verwenden, um eine begrenzte Gültigkeitsdauer für das Arbeitsauftragsprojekt festzulegen.
 
-    ![Seite „Arbeitsauftrags-Projekteinstellungen“.](media/17-setup-for-work-orders.png)
+    ![Seite „Arbeitsauftrags-Projekteinstellungen“](media/17-setup-for-work-orders.png)
 
 6. Wählen Sie auf der Registerkarte **Projektgruppe** **Hinzufügen**.
 7. Wählen Sie im Feld **Arbeitsauftragstyp** einen Arbeitsauftragstyp aus.
 8. Wenn Sie eine spezifischere Zuordnung der Projektgruppe wünschen, wählen Sie eine Anlagenart im Feld **Anlagenart** oder eine Anlage im Feld **Anlage**.
 9. Wählen Sie im Feld **Projektgruppe** die Projektgruppe aus, die mit der Arbeitsauftragsart verknüpft sein soll. So könnte beispielsweise eine Arbeitsauftragsart mit dem Namen **Preventive Instandhaltung** einer Projektgruppe mit dem Namen **Prev Inst** oder **Intern** zugeordnet sein. Alternativ kann eine **Investition** Arbeitsauftragsart, die für Arbeitsaufträge verwendet wird, die sich auf Investitionen und Anlagen beziehen, einer Projektgruppe zugeordnet werden, die den Namen **Invest** oder **Investition** trägt.
-10. Wählen Sie **Speichern** aus.
+10. Wählen Sie **Speichern**.
 
-![Seite „Arbeitsauftrags-Projekteinstellungen“, Arbeitsauftrag hinzufügen.](media/18-setup-for-work-orders.png)
+![Seite „Arbeitsauftrags-Projekteinstellungen“, Arbeitsauftrag hinzufügen](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
 > Jedes Mal, wenn eine Arbeitsauftragszeile erstellt wird, sucht das Asset Management nach einer Projektgruppe, die mit dem Arbeitsauftragsprojekt verknüpft sein soll. Die Suche basiert auf dem Setup, das in diesem Thema beschrieben wird. Jede Projektgruppe hat einen zugehörigen Projekttyp. Projektgruppen mit der Projektart **Zeit und Material** oder **Festpreis** sind nur für Anlagen gültig, die sich auf ein Kundenkonto beziehen.
 >
 > Wenn das System bei übergeordneten Projekten und Projektgruppen das verfügbare Arbeitsauftragsprojekt oder die Projektgruppe auswählt, basiert die Auswahl auf den Datensätzen, die Sie mit der vorherigen Vorgehensweise angelegt haben. Das Anlagenmanagement durchläuft Datensätze, die sich auf das Arbeitsauftragsprojekt beziehen, um nach einer möglichen Übereinstimmung zu suchen. Die spezifischste Kombination wird immer zuerst geprüft. Mit anderen Worten, für das übergeordnete Projekt des Arbeitsauftrags prüft das Anlagenmanagement zunächst, ob eine mögliche Übereinstimmung für das Feld **Anlage** vorliegt. Wenn keine Übereinstimmung gefunden wird, wird nach einer Übereinstimmung für das Feld **Anlagentyp** gesucht. Wenn keine Übereinstimmung gefunden wird, wird nach einer Übereinstimmung für das Feld **Technischer Standort** gesucht usw. Wie Sie im Layout der Seite **Arbeitsauftrag Projekteinrichtung** sehen können, bedeutet dieses Verhalten, dass das Anlagenmanagement jeden Datensatz von rechts nach links auf eine Übereinstimmung überprüft, um die spezifischste Kombination zu finden. Wenn keine Übereinstimmung gefunden wird, wird der Standarddatensatz verwendet, bei dem nur eine Projekt-ID ausgewählt wird. Der Prozess zum Auffinden der zugehörigen Projektgruppe ist ähnlich. Das Anlagenmanagement sucht zunächst nach einer möglichen Übereinstimmung für das Feld **Asset**, dann für das Feld **Asset type** und dann für das Feld **Arbeitsauftragstyp**. Wenn keine Übereinstimmung gefunden wird, wird der Standarddatensatz verwendet, bei dem nur eine Projektgruppe ausgewählt wird.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,14 +1,17 @@
 ---
-title: Assistent für die Einrichtung der Produktprogrammplanung (enthält Video)
-description: In diesem Thema wird beschrieben, wie Sie den Einrichtungsassistent für Produktprogrammpläne ausführen, um die Masterplanung einzurichten.
-author: ChristianRytt
+title: Produktprogrammplanungs-Setup-Assistent
+description: Dieses Thema beschreibt die verschiedenen wichtigen Strategien und Parameter, die zum Einrichten der Produktprogrammpläne verwendet werden.
+author: t-benebo
+manager: tfehr
 ms.date: 10/21/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 453184a3fed567b3a09e5e45e7f904bcf855dd6d
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
+ms.openlocfilehash: b38009cbfdd5444c6643c5c0159a1aa475aaa3ac
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937632"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428833"
 ---
-# <a name="master-planning-setup-wizard"></a>Einrichtungsassistent für Produktprogrammpläne
+# <a name="master-planning-setup-wizard"></a>Produktprogrammplanungs-Setup-Assistent
 
 [!include [banner](../includes/banner.md)]
 
@@ -45,13 +48,13 @@ Die erste Seite des Assistenten fragt nach bestimmten Anforderungen Ihres Untern
 
 Wenn die Anzahl der Threads, die berechnet wird, 75 Prozent der verfügbaren Anzahl von Threads übersteigt, wird sie bei 75 Prozent der Anzahl von Threads gekürzt, die für jeden Kunden verfügbar sind. (Die Anzahl der verfügbaren Threads wird für jeden Debitor bestimmt).
 
-Weitere Informationen finden Sie unter [Anzahl Threads](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads).
+Weitere Informationen finden Sie unter '[Anzahl Threads](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads).
 
 ### <a name="bundle-size"></a>Paketgröße
 
 Die Bündelgröße wird auf **1** festgelegt. Dieser Wert ist oft der beste Werte, weil er hilft, die Leistung der Produktprogrammplanung zu verbessern.
 
-Weitere Informationen finden Sie unter [Anzahl der Aufgaben im Hilfsaufgabenbündel](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle).
+Weitere Informationen finden Sie unter [Anzahl der Aufgaben im Hilfsaufgabenbündel](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle).
 
 ### <a name="firming-bundle-size"></a>Feste Bündelgröße
 
@@ -64,7 +67,7 @@ Bündelberechnung = (Anzahl der Bestellvorschläge × (Sofortanlagezeitraum ÷ P
 
 Die Cachegröße wird auf **Maximum** festgelegt. Dieser Wert ist oft der beste Werte, weil er hilft, die Leistung der Produktprogrammplanung zu verbessern.
 
-Weitere Informationen finden Sie unter [Weisen Sie Zeit den Einzelvorgängen im einen zu Einzelvorgangsbündel zu](/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
+Weitere Informationen finden Sie unter [Weisen Sie Zeit den Einzelvorgängen im einen zu Einzelvorgangsbündel zu](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
 
 ### <a name="manufacturing-setup"></a>Produktion einrichten
 
@@ -78,7 +81,7 @@ Für die Absatzplanfunktion fragt der Assistent „Möchten Sie einen Absatzplan
 
 Die folgenden Optionen sind verfügbar:
 
-- **Nein** – Bestellvorschläge schlägt Produktprogrammplanung nicht vor, eine Planung zu erfüllen. Auf der Registerkarte **Planungszeiträume** auf der Seite **Produktprogrammpläne** (**Produktprogrammplanung \> Einstellungen \> Pläne \> Produktprogrammpläne**), legt der Assistent die Option **Absatzplan Planungszeitraum ()** auf **Ja** fest und setzt die Anzahl von Tagen auf **0** (null). Diese Einstellung setzt den Planungszeitraum außer Kraft, der in der Dispositionssteuerungsgruppe angegeben wurde. Da die Anzahl der Tage auf **0** (Null) festgelegt ist, wird die Funktion nicht verwendet.
+- **Nein** – Bestellvorschläge schlägt Produktprogrammplanung nicht vor, eine Planung zu erfüllen. Auf der Registerkarte **Planungszeiträume** auf der Seite **Produktprogrammpläne** (**Produktprogrammplanung \> Einstellungen \> Pläne \> Produktprogrammpläne**), legt der Assistent die Option **Absatzplan Planungszeitraum ()** auf **Ja** fest und setzt die Anzahl von Tagen auf **0** (null). Diese Einstellung setzt den Planungszeitraum außer Kraft, der in der Dispositionssteuerungsgruppe angegeben wurde. Da die Anzahl der Tage auf **0** (Null)  festgelegt ist, wird die Funktion nicht verwendet.
 - **Ja, wie in diesem definierten Produktprogrammplan definiert** – Ein Feld ist verfügbar, wo Sie die Anzahl von Tagen eingeben können, die die Produktprogrammplanung vorschlägt, um den geplanten Bedarf zu decken. Der Assistent legt die Option **Produktprogrammpläne (Produktprogrammplanung)** auf **Ja** fest und definiert die Anzahl Tage für die Anzahl der Tage, die im Feld **Absatzplanung** auf der Registerkarte **Planungszeitraum** auf der Seite **Produktprogrammpläne** eingegeben werden. Diese Einstellungen werden die Werte angegeben, die in Dispositionssteuerungsgruppen festgelegt werden.
 - **Ja, wie in der Disposition festgelegt** – Der Assistent legt die Option **Absatzplan (Planungszeitraum)** auf **Nein** fest. Die Planungszeiträume, die in der Dispositionssteuerungsgruppe angegeben werden, werden verwendet, um anzugeben, wie lange Sie für die Planung brauchen.
 
@@ -88,7 +91,7 @@ Die verbleibenden Fragen zu dieser Seite und ihre Antworten folgen dem gleichen 
 - **Ja, wie in diesem Produktprogrammplan festgelegt** – Der Assistent legt die Option **Absatzplan (Planungszeitraum)** auf **Nein** fest. Die Anzahl von Tagen, die Sie eingeben, wird verwendet und setzt die Werte außer Kraft, die in der Dispositionssteuerungsgruppen festgelegt werden.
 - **Ja, wie in der Dispositionssteuergruppe festgelegt** – Der Assistent legt die Option **Absatzplan (Planungszeitraum)** auf **Nein** fest.
 
-Weitere Informationen finden Sie unter [Feinterminierung](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Weitere Informationen finden Sie unter [Feinterminierung](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="scheduling-options"></a>Terminierungsoptionen
 
@@ -99,7 +102,7 @@ Ihre Antwort zur ersten Frage auf dieser Seite (Müssen Sie Arbeitsgänge planen
 - **Ja** – Feinterminierung wird verwendet.
 - **Nein** – Grobterminierung wird verwendet.
 
-Weitere Informationen finden sie unter [Grobterminierung](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) und [Feinterminierung](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Weitere Informationen finden sie unter [Grobterminierung](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) und [Feinterminierung](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="updates-of-demand-and-supply"></a>Aktualisierungen von Nachfrage und Angebot
 
@@ -206,6 +209,3 @@ Im Assistenten werden die folgenden Werte für Contoso-Einzelhändler eingegeben
     - **Antwort:** „Ja, wie in diesem Produktprogrammplan definiert.“ **1 Tag** wird eingegeben.
 
     Contoso verwendet die genehmigten Anforderungen von den enthaltenen Ladengeschäften, um geplante Einkaufsbestellungen zu erstellen, um diese Geschäfte zu beliefern. Da die Produktprogrammplanung jeden Tag ausgeführt wird, sind die Anforderungen vom letzten Tag in der Planung enthalten.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

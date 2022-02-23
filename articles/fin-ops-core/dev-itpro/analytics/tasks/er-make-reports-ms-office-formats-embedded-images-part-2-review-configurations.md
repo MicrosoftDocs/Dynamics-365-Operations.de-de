@@ -1,10 +1,12 @@
 ---
 title: Konfigurationen zum Generieren von Berichten im Office-Format überprüfen, die eingebettete Bilder haben
-description: In diesem Thema wird beschrieben, wie die Konfigurationen für die elektronische Berichterstellung entworfen werden, die eingebettete Bilder enthalten. (Teil 1 – Einrichten von Parametern).
+description: 'Um diese Schritte auszuühren, müssen Sie die Schritte zuerst im „ER Berichte im MS Office-Formaten mit eingebetteten Bildern (Teil 1: - Einstellungsparameter)“ Aufgabenleitfaden erstellen.'
 author: NickSelin
+manager: AnnBe
 ms.date: 06/13/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f209fcbac310dffb654f7830a4d4b12fa95d7a461b681864b8c9b547f4a4986c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c41ff1ba99411b97ea2b5d9f31bdee7c7701315
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717569"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684354"
 ---
 # <a name="review-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Konfigurationen zum Generieren von Berichten im Office-Format überprüfen, die eingebettete Bilder haben
 
@@ -89,6 +91,3 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
     * Einige Beschriftungen, die auf dem vorgedruckten Scheckformular produziert werden, werden in den Bericht einbezogen, falls sie für Testzwecke erstellt wurden. Allerdings werden die nicht während des tatsächlichen Drucks gedruckt, da das vorgedruckte Formular diese ie bereits beinhaltet.  
 15. Schließen Sie die Seite.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

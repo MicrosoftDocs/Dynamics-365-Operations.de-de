@@ -2,9 +2,11 @@
 title: Ändern von Zeilendefinitionszellen
 description: Dieses Thema beschreibt die Informationen, die für jede Zelle in einer Zeilendefinition eines Finanzberichts benötigt werden und erläutert, wie diese Informationen eingegeben werden.
 author: ShylaThompson
-ms.date: 08/11/2021
+manager: AnnBe
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 80df992ce14577ba78587648f8af2c35b382a589
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 92d03f08fc5e34402f10068ed770b1f724cfd3a8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344884"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685858"
 ---
 # <a name="modify-row-definition-cells"></a>Ändern von Zeilendefinitionszellen
 
@@ -174,7 +176,7 @@ In der Spalte **Formatcode** in einer Zeilendefinition wird Formatierung mit den
 
 Im folgenden Beispiel möchte ein Benutzer die Überschrift und die Unterstriche in der Zeile **Bargeld gesamt** des Berichts nicht drucken, da es in keiner der Kassenkonten Aktivitäten gab. Daher gibt der Benutzer in Zeile 220 (die, wie der Formatcode **---** angibt, eine Formatierungszeile ist) in der Zelle **Verwandte Formeln/Zeilen/Einheiten** den Wert **250** ein. Dies ist der Zeilencode der Betragszeile, die der Benutzer unterdrücken möchte.
 
-[![RelatedRowsRowDefinition.](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
+[![RelatedRowsRowDefinition](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
 
 ## <a name="select-the-base-row-for-a-column-calculation"></a>Auswählen der Basiszeile für eine Spaltenberechnung
 In der relationalen Berichterstellung weisen Sie eine oder mehrere Basiszeilen der Zeilendefinition zu, indem Sie den Formatcode **CBR** (Basiszeile ändern) verwenden. Von einer Berechnung in der Spaltendefinition wird dann auf eine Basiszeile verwiesen. Nachfolgend einige typische Beispiele für ÄBZ-Berechnungen:
@@ -399,7 +401,7 @@ Die Zelle **Mit Finanzdimensionen verknüpfen** enthält Verknüpfungen zu den F
 2. Doppelklicken Sie auf eine Zelle in der Spalte **Verknüpfen mit Finanzdimensionen**.
 3. Doppelklicken Sie im Dialogfeld **Dimensionen** auf eine Zelle unter dem Dimensionsnamen.
 4. Wählen Sie im Dialogfeld für die Dimension **Einzelwert oder Bereich** aus.
-5. Geben Sie im Feld **Von** die Anfangsdimension ein oder klicken Sie auf ![Durchsuchen](media/browse.gif "Durchsuchen"), um nach verfügbaren Dimensionen zu suchen. Um einen Bereich von Dimensionen eingeben, geben Sie die Enddimension im Feld **Bis** ein.
+5. Geben Sie im Feld **Von** die erste Dimension ein oder klicken Sie auf ![Durchsuchen](media/browse.gif "Durchsuchen"), um nach verfügbaren Dimensionen zu suchen. Um einen Bereich von Dimensionen eingeben, geben Sie die Enddimension im Feld **Bis** ein.
 6. Klicken Sie auf **OK**, um das Dialogfeld für die Dimension zu schließen. Im Dialogfeld **Dimensionen** wird die aktualisierte Dimension oder der Bereich angezeigt.
 7. Klicken Sie auf **OK**, um das Dialogfelds **Dimensionen** zu schließen.
 
@@ -527,6 +529,3 @@ Ein Dimensionswertsatz ist eine benannte Gruppe von Dimensionswerten. Ein Dimens
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Finanzberichterstellung](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

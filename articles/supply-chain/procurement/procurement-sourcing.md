@@ -1,27 +1,28 @@
 ---
 title: Beschaffungs-Startseite
 description: Dieses Thema enthält eine Liste der Hilfethemen und weiterer Ressourcen, die für die Beschaffung verfügbar sind.
-author: Henrikan
+author: mkirknel
+manager: tfehr
 ms.date: 09/27/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "50651"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 50651
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
 ms.search.region: Global
-ms.author: henrikan
+ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54ddaee1fd820435c245f3946ae1cc91209b12d4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d38490e9155106d09c432fd965c95ad45f707b41
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565494"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428985"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Beschaffungs-Startseite
 
@@ -77,19 +78,20 @@ Die Beschaffung umfasst alle Schritte von der Identifikation einer Anforderung f
 -   [Erstellen einer Bestellung auf Grundlage eines Auftrags](../sales-marketing/tasks/create-purchase-order-sales-order.md)
 -   [Eine Bestellung für einen einmaligen Lieferanten erstellen](tasks/create-purchase-order-one-time-supplier.md)
 -   [Eine Bestellung mit einem Lieferzeitplan erstellen](tasks/create-purchase-order-delivery-schedule.md)
--   [Einkaufsrücklieferung erstellen](tasks/create-purchase-return-order.md)
--   [Einen Freigabeauftrag für den Einkauf aus einem Kaufvertrag anwenden](tasks/create-purchase-release-order-purchase-agreement.md)
--   [Unterlieferungs-Wiederbeschaffungsauftrag erstellen](../inventory/tasks/create-consignment-replenishment-order.md)
+-   [Eine Einkaufsreklamation erstellen](tasks/create-purchase-return-order.md)
+-   [Einen Freigabeauftrag für den Einkauf aus einem Kaufvertrag erstellen](tasks/create-purchase-release-order-purchase-agreement.md)
+-   [Einen Freigabeauftrag für den Einkauf erstellen, wenn Sie die Bestellung erstellen](tasks/create-purchase-release-order-creating-purchase-order.md)
+-   [Neuen Unterlieferungs-Wiederbeschaffungsauftrag erstellen](../inventory/tasks/create-consignment-replenishment-order.md)
 
 ## <a name="prices-and-discounts"></a>Preise und Rabatte
 -   [Kaufverträge](purchase-agreements.md)
 -   [Kaufvertrag erstellen](tasks/create-purchase-agreement.md)
--   [Kreditorenrückvergütungen](/dynamics/s-e/) (Whitepaper)
+-   [Kreditorenrückvergütungen](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/Vendor_rebates) (Whitepaper)
 
 ## <a name="product-receipt-and-invoicing"></a>Produktzugang und Rechnungsstellung
 -   [Produkteingang für Bestellungen](product-receipt-against-purchase-orders.md)
--   [Überblick über Kreditorenrechnungen](../../finance/accounts-payable/vendor-invoices-overview.md)
--   [Kreditorenbuchungsprofile](../../finance/accounts-payable/vendor-posting-profiles.md)
+-   [Überblick über Kreditorenrechnungen](../../financials/accounts-payable/vendor-invoices-overview.md)
+-   [Kreditorenbuchungsprofile](../../financials/accounts-payable/vendor-posting-profiles.md)
 
 ## <a name="procurement-and-sourcing-workflows"></a>Beschaffungsworkflows
 -   [Beschaffungsübersicht](procurement-sourcing-overview.md)
@@ -102,6 +104,3 @@ Die Beschaffung umfasst alle Schritte von der Identifikation einer Anforderung f
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

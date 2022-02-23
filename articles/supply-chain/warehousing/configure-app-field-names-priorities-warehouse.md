@@ -1,10 +1,12 @@
 ---
-title: Felder für die mobile Warehouse Management Mobile App konfigurieren
-description: In diesem Thema wird beschrieben, wie Feldnamen und -prioritäten in der Warehouse Management Mobile App definiert und konfiguriert werden.
-author: Mirzaab
+title: Konfigurieren von Feldnamen in der Warehouse-App
+description: In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Dynamics 365 Supply Chain Management definiert und konfiguriert werden.
+author: MarkusFogelberg
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 audience: Application User
@@ -13,24 +15,24 @@ ms.custom: 269434
 ms.assetid: 6cf3d7da-29bb-4d3d-aaf5-544ca9cc2980
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: mirzaab
+ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8c9c1d921f68538d5b84db16b1e88e28147e6b41
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: ac31b3d2b3b1d9ca51919fe75e06f0de1cda0c63
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902295"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963434"
 ---
-# <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>Felder für die mobile Warehouse Management Mobile App konfigurieren
+# <a name="configure-app-field-names-in-the-warehouse-app"></a>Konfigurieren von Feldnamen in der Warehouse-App
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Feldnamen und -prioritäten in der Warehouse Management Mobile App definiert und konfiguriert werden.
+In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Dynamics 365 Supply Chain Management definiert und konfiguriert werden. 
 
 > [!NOTE]
-> Dieser Artikel gilt für Funktionen im Modul „Lagerortverwaltung“. Er gilt nicht für Funktionen im Modul "Bestandverwaltung". Die Warehouse Management Mobile App ist eine Anwendung, die Sie verwenden können, um Lagerortaufgaben auszuführen. Sie können die Feldnamen definieren und konfigurieren, die in der App verwendet werden und die Priorität konfigurieren, der die Feldnamen zugewiesen werden sollen. In diesem Thema wird beschrieben, wie die Feldnamen und -prioritäten in der Warehouse Management Mobile App definiert, konfiguriert und verwendet werden.
+> Dieser Artikel gilt für Funktionen im Modul „Lagerortverwaltung“. Er gilt nicht für Funktionen im Modul "Bestandverwaltung". Warehousing ist eine Anwendung, die Sie verwenden können, um Lagerortaufgaben auszuführen. Sie können die Feldnamen definieren und konfigurieren, die in der App verwendet werden und die Priorität konfigurieren, der die Feldnamen zugewiesen werden sollen. In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Warehousing definiert, konfiguriert und verwendet werden. Ausführliche Informationen dazu, wie die Verbindung zur Warehouse-App konfiguriert wird, finden Sie im Tutorial [Übersicht zum Installieren und Konfigurieren der Warehouse-App](install-configure-warehousing-app.md).
 
 ## <a name="configure-warehouse-app-field-names"></a>Konfigurieren von Lagerort-Feldnamen in der App
 
@@ -50,7 +52,7 @@ Wenn Sie Arbeitsgänge für Warehousing auf Ihrem mobilen Gerät nutzen, können
 <tbody>
 <tr class="odd">
 <td>Bevorzugter Eingabemodus</td>
-<td>Mit dieser Option wird definiert, ob eine Bildfläche oder ein Eingabefeld oder eine manuelle Eingabe für den Feldnamen ausgewählt und angezeigt werden sollen. Dies ist nützlich, um Felder zu unterscheiden, je nachdem, ob Barcodes für das Feld verwendet werden. <strong>Hinweis:</strong> Für Feldnamen, bei denen der bevorzugte Eingabemodus auf <strong>Scannen</strong> festgelegt ist, können Sie Informationen manuell eingeben, wenn der Barcode unlesbar oder beschädigt ist.</td>
+<td>Mit dieser Option wird definiert, ob eine Bildfläche oder ein Eingabefeld oder eine manuelle Eingabe für den Feldnamen ausgewählt und angezeigt werden sollen. Dies ist nützlich, um Felder entsprechend den Strichcodes zu unterscheiden, wenn solche für das Feld verwendet werden. <strong>Hinweis:</strong> Für Feldnamen mit bevorzugtem Eingabemodus wählen Sie <strong>Durchsuchen</strong>. Sie können Informationen manuell eingeben, wenn der Strichcode nicht lesbar oder beschädigt wird.</td>
 </tr>
 <tr class="even">
 <td>Eingabetyp</td>
@@ -137,9 +139,7 @@ Basierend auf der Lagerort-App-Feldpriorität, die in der Tabelle oben eingerich
 
 Die verbleibenden Metadaten beispielsweise Lagerplatz, werden nicht auf der Aufgabenseite angezeigt, sondern werden auf einer Detailseite angezeigt. Weitere Informationen und Beispiele der Benutzeroberfläche finden Sie im Blogbeitrag [Ankündigung Finance and Operations - Lagerverwaltung](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
 
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
+<a name="additional-resources"></a>Zusätzliche Ressourcen
+--------
 
-[Mobile Lagerortsverwaltungs-App installieren und verbinden](../warehousing/install-configure-warehouse-management-app.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[Übersicht zum Installieren und Konfigurieren der Warehouse-App](install-configure-warehousing-app.md)

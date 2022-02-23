@@ -2,9 +2,11 @@
 title: Bargeldnennwerte für die Verkaufsstelle (POS) konfigurieren
 description: Bargeldnennwerte für Banknoten und Münzen können Backoffice definiert werde, um von den Kassierern, von den Vertriebsmitarbeitern und von Managern in Ihrem Unternehmen in POS verwendet zu werden.
 author: jblucher
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailStoreCashDeclarationTable
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0ff4eb5bc7c5e2c0192a5349219301b26e479ac6be978eb05063b68f348b4e55
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e3a5f9a73bdee50e3e7c68125144c3b43305efa8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743457"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4961558"
 ---
 # <a name="configure-cash-denominations-for-the-point-of-sale-pos"></a>Bargeldnennwerte für die Verkaufsstelle (POS) konfigurieren
 
@@ -33,7 +35,7 @@ Bargeldnennwerte für Banknoten und Münzen können Backoffice definiert werde, 
 
 Die Nennwerte werden pro Laden unter der Option **Einstellungen** \> **Bargelddeklaration** von der Laden-Eigenschaftenseite eingerichtet.
 
-![Bargelddeklarationsoption.](./media/image1-denomination.png)
+![Bargelddeklarationsoption](./media/image1-denomination.png)
 
 Nennwerte definieren:
 
@@ -41,14 +43,11 @@ Nennwerte definieren:
 1. Geben Sie den Typ an (Banknote oder Münzen).
 1. Geben Sie den Betrag ein (Wert).
 
-![Seite für Bargelddeklarationsnennungen.](./media/image2-denomination.png)
+![Seite für Bargelddeklarationsnennungen](./media/image2-denomination.png)
 
 ## <a name="configure-the-functionality-profile"></a>Funktionsprofil konfigurieren
 
 Wenn in bar am POS bezahlt wird, kann der Benutzer die Währungen rasch verwenden, um den vom Kunden bezahlten Betrag einzugeben. Im Funktionsprofil können Sie die beiden Optionen für die Anzeige für den Nennwert in POS sperren konfigurieren.
 
 - **Größer oder gleich fälligen Betrag**: Standardmäßig zeigt POS nur die Hinweisnennwerte an, die größer als der fällige Betrag sind, der das Einnotenanbieten zulässt. Wenn beispielsweise der fällige Betrag $7,50 POS ist, würden die folgenden Nennwerte angezeigt: EUR 10, 20, 50 und 100. Wenn Sie einen dieser Beträge berühren, wird automatisch das Zahlungsmittel des Verkaufs für diesen Betrag ausgefüllt. Die $1 und $5 Noten werden nicht angezeigt, da diese Beträge kleiner sind als der fällige Betrag.
-- **Alle Nennwerte**: – Wählen Sie diese Option aus, um alle Hinweisnennwerte in POS, unabhängig vom fälligen Betrag immer anzuzeigen. Das bedeutet, dass der Benutzer eine Kombination von Hinweisen verwenden kann, um den fälligen Betrag zu erreichen. Wenn beispielsweise der fällige Betrag $25.00 ist, kann der Benutzer $20 und $5 wählen, um den Verkauf abzuschließen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+- **Alle Nennwerte**:  - Wählen Sie diese Option aus, um alle Hinweisnennwerte in POS, unabhängig vom fälligen Betrag immer anzuzeigen. Das bedeutet, dass der Benutzer eine Kombination von Hinweisen verwenden kann, um den fälligen Betrag zu erreichen. Wenn beispielsweise der fällige Betrag $25.00 ist, kann der Benutzer $20 und $5 wählen, um den Verkauf abzuschließen.

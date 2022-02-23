@@ -1,13 +1,16 @@
 ---
 title: Werbebanner-Modul
-description: Dieses Thema behandelt Werbebanner-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+description: Dieses Thema enthält Werbebanner-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
-ms.date: 07/08/2021
+manager: annbe
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f781ed22852cb2108850e7dc6762aa6a9ba0db97574cb0dcc7959f8926e47a08
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d9debd16b18300d090bde1862a16920d8e9185eb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718779"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412480"
 ---
-# <a name="promo-banner-module"></a>Werbebannermodul
+# <a name="promo-banner-module"></a>Werbebanner-Modul
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema behandelt Werbebanner-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+Dieses Thema enthält Werbebanner-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+
+## <a name="overview"></a>Übersicht
 
 Werbebanner-Module werden verwendet, um Informationsmeldungen auf einer Seite anzeigen. Sie können verwendet werden, um Standort-weite Aktionen anzuzeigen, die auf allen Seiten einer E-Commerce-Webseite verwendet werden. 
 
@@ -46,7 +51,7 @@ Für Thanksgiving SALE! shoppen
 
 Das folgende Bild zeigt ein Beispiel für eine Werbeanzeige.
 
-![Beispiel eines Werbeanzeigenmoduls.](./media/ecommerce-Promobanner.PNG)
+![Beispiel eines Werbe-Anzeige-Moduls](./media/ecommerce-Promobanner.PNG)
 
 ## <a name="promo-banner-module-properties"></a>Eigenschaften von Werbebanner-Modulen
 
@@ -58,11 +63,7 @@ Das folgende Bild zeigt ein Beispiel für eine Werbeanzeige.
 | Ausblenden zulassen             | **True** oder **False**              | Wenn der Wert auf **True** gesetzt wird, können Debitoren die Warnung ablehnen. |
 | Karussellflipper anzeigen     | **True** oder **False**              | Ein Wert, der angibt, ob die Karussellflipper angezeigt werden sollen, damit Debitoren mehrere Bannerelemente manuell durchlaufen können. |
 | Textausrichtung            | **Rechts** **Links** **Zentriert** | Die Textausrichtung im Werbebanner-Modul. |
-| Verknüpfen                      | Eine URL                              | Die URL für einen optionalen Link. |
-|Textausrichtung             | **Rechts** **Links** **Zentriert** | Diese Eigenschaft ist als Designerweiterung im Adventure Works-Design verfügbar. Es erlaubt einem Benutzer, die Textausrichtung in der Werbeanzeige festzulegen. |
-
-> [!IMPORTANT]
-> Das Adventure Works-Design steht ab der Dynamics 365 Commerce-Version 10.0.20 zur Verfügung.
+| Verknüpfung                      | Eine URL                              | Die URL für einen optionalen Link. |
 
 ## <a name="add-a-promo-banner-module-to-a-page"></a>Ein Werbebanner-Modul einer neuen Seite hinzufügen 
 
@@ -83,6 +84,7 @@ Um ein Werbebanner-Modul einer neuen Seite hinzuzufügen und die erforderlichen 
 > [!NOTE]
 > Ein Werbebanner wird normalerweise im Seitenkopf- oder Untertitel-Slot verwendet.
 
+
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Übersicht über die Modulbibliothek](starter-kit-overview.md)
@@ -94,6 +96,3 @@ Um ein Werbebanner-Modul einer neuen Seite hinzuzufügen und die erforderlichen 
 [Inhaltsblockmodul](add-hero-module.md)
 
 [Video-Player-Modul](add-video-player.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

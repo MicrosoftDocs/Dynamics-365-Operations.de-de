@@ -2,23 +2,26 @@
 title: Erweiterte Ladungserstellung während einer Welle
 description: Dieses Thema enthält Informationen zur erweiterten Ladungserstellung während einer Welle, bei der Sendungen während der Wellenausführung automatisch vorhandenen Wellen zugewiesen werden. Daher können Sie aussagekräftige Ladungen erstellen, die LKWs darstellen, ohne die Ladungsplanungs-Workbench verwenden zu müssen.
 author: mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSPostMethod,WHSWaveTemplateTable,WHSLoadMixGroup,WHSLoadBuildTemplate, WHSWaveTableListPage, TMSLoadBuildTemplateApply, TMSLoadBuildTemplates, TMSLoadBuildTemplateCreate
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 08e44b4e37f28ec91eeb8e53930de5133607bd66
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.9
+ms.openlocfilehash: 7f51b3d65c8dd1e11296956c37ef9dfe568e5ec2
+ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574736"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654197"
 ---
 # <a name="advanced-load-building-during-wave"></a>Erweiterte Ladungserstellung während einer Welle
 
@@ -247,6 +250,3 @@ Dieses Szenario zeigt, wie sich die zuvor in diesem Thema beschriebenen Einstell
 1. Wählen Sie im soeben erstellten Auftrag auf dem Inforegister **Auftragspositionen** die Option **Position hinzufügen** aus, um eine weitere Position hinzuzufügen.
 1. Legen Sie für die neue Position das Feld **Artikelnummer** auf *M9200* und das Feld **Menge** auf *1* fest.
 1. Wiederholen Sie die Positionen 6 bis 9, um die Position zu reservieren und für den Lagerort freizugeben. Wie zuvor erstellt das System eine **neue** Lieferung für die Position, die Sie hinzugefügt haben. Da der Artikel jedoch zur Artikelgruppe **CarAudio** gehört, können **die Einschränkungen, die Sie für die Ladungsmischgruppe eingerichtet haben, nicht weitergegeben werden**. Daher wird der Artikel **einer neuen Ladung hinzugefügt**. Wenn Sie in der Ladungserstellungsvorlage keine Ladungsmischgruppe angegeben hätten, wäre diese Lieferung zur ersten Ladung hinzugefügt worden.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

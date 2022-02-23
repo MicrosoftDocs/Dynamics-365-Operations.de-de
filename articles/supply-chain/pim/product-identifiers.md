@@ -1,31 +1,34 @@
 ---
 title: Produktbezeichner
 description: Dieses Thema enthält Informationen zu den unterschiedlichen Arten von Produktbezeichnern und erläutert, wie Sie Produktbezeichner in Ihren Produktdaten hinzufügen können.
-author: t-benebo
+author: cvocph
+manager: tfehr
 ms.date: 03/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: benebotg
+ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 638b5c3b0c83f67f3d99331b6456efd1b8f5225a
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: c16818f1dc52c9e21130539213e7e8d1053fef1d
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063340"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529185"
 ---
 # <a name="product-identifiers"></a>Produktbezeichner
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 [!include [banner](../includes/banner.md)]
 
@@ -39,9 +42,9 @@ In Dynamics 365 Supply Chain Management der primäre Bezeichner für ein Produkt
 
 In vielen Fällen wird die Produktnummer ursprünglich nicht in Dynamics 365 Supply Chain Management erstellt. Stattdessen ist es mit einem Produkt in einem Produktlebenszyklussystem (PLM) oder einem  Produktdatenverwaltungssystem (PDM) zugeordnet. In diesem Fall können Sie Datenentitäten verwenden, um die Produkte und Produktvarianten zu importieren. Supply Chain Management verwendet dann die Zahlen in allen Arbeitsgängen.
 
-Wenn Sie Supply Chain Management implementieren, sollten Sie Ihrer Strategie für Produktnummern besondere Aufmerksamkeit widmen. Ein Zahlensystem gutes verbessert Logistikflüsse und hilft verhindern Fehler. Ein guter Produktbezeichner sollte normalerweise 20 Zeichen oder weniger haben, aber wir empfehlen im Allgemeinen weniger als 10 Zeichen und nicht mehr als 5 Klassifikationszeichen zu verwenden. Sie können auch Suchnamen verwenden, um Schnellsuchen zu ermöglichen. Ein Suchname ist ein zusätzlicher Name, der die Klassifizierungen eines Produkts darstellt.
+Wenn Sie Supply Chain Management implementieren, sollten Sie Ihrer Strategie für Produktnummern besondere Aufmerksamkeit widmen. Ein Zahlensystem gutes verbessert Logistikflüsse und hilft verhindern Fehler. Eine gute Produktkennung ist maximal 15 Zeichen lang. Idealerweise hat diese weniger als 10 Zeichen und schließt nicht mehr als klassifizierende fünf Zeichen ein. Sie können auch Suchnamen verwenden, um Schnellsuchen zu ermöglichen. Ein Suchbegriff ist ein zusätzlicher Name, der die Klassifizierungen eines Produkts darstellt.
 
-Wenn Sie Microsoft Dataverse verwenden, ist die Produktnummer in Supply Chain Management auch die Produktnummer in Microsoft Dataverse. Produktvarianten werden mit Dataverse als eindeutig identifizierbare Produkte synchronisiert.
+Wenn Sie Common Data Service verwenden, ist die Produktnummer in Supply Chain Management auch die Produktnummer in Common Data Service. Produktvarianten werden zu den Common Data Service als eindeutig identifizierbare Produkte synchronisiert.
 
 ## <a name="item-number-and-product-dimensions"></a>Artikel- und Produktdimensionen
 
@@ -72,12 +75,12 @@ Der Suchname kann auch eine Debitoren- oder Kreditorenprodukt-ID oder irgendeine
 
 Für freigegebene Produkte können Sie die Artikelnummern, die Artikelbeschreibungen und die Artikelnamen verwalten, die der Debitor oder Kreditor verwendet. Die Verweise werden auf externen Dokumenten angezeigt, wie Aufträgen, Bestellungen, Lieferscheinen und Rechnungen. In der aktuellen Version der erhaltenen Supply Chain Management werden die externen Verweise nicht auf Kernarbeitsgangsseiten angezeigt. Die einzige Ausnahme ist die Kreditorenartikelnummer. Diese Nummer wird im Dialogfeld **Produktinformationen** angezeigt, wenn ein Standardkreditor für das freigegebene Produkt definiert wird.
 
-Sie können die externen Produktkennungen nach freigegebenem Produkt, freigegebener Produktvariante, Kunde, Kundengruppe, Lieferant oder Lieferantengruppe pflegen.
+Sie können die externen Produktbezeichner nach freigegebenem Produkt, freigegebener Produktvariante, Debitor oder Debitorengruppe oder Kreditor, bzw. Kreditorengruppe verwalten.
 
 **Freigegebene Produkte** Auf der Seite führen Sie die folgenden Schritte aus.
 
 - Klicken Sie im Aktivitätsbereich auf der Registerkarte **Einkauf** in der Gruppe **Zugehörige Informationen** auf **Externe Artikelbeschreibung**.
-- Für Kreditoren klicken Sie im Aktivitätsbereich auf der Registerkarte **Einkauf** in der Gruppe **Zugehörige Informationen** auf **Externe Artikelbeschreibung**.
+- Für Verkäufer klicken Sie im Aktivitätsbereich auf der Registerkarte **Einkauf** in der Gruppe **Zugehörige Informationen** auf **Externe Artikelbeschreibung**.
 
 Auf der Seite **Externe Artikelbeschreibungen** können Sie die Artikelnummer des Debitors oder Kreditors einem freigegebenen Produkt zuordnen. Diese Zuordnung muss für jede juristische Person ausgeführt werden. Die folgenden Informationen können erfasst werden. Leider sind die Bezeichnungen in der aktuellen Version von Supply Chain Management etwas irreführend. Allerdings können dieser Beschriftungen in einer künftigen Version geändert werden.
 
@@ -87,7 +90,7 @@ Auf der Seite **Externe Artikelbeschreibungen** können Sie die Artikelnummer de
 | Beschreibung | Der Name, den der Debitor dem Artikel zuordnet | Der Name, den der Kreditor dem Artikel zuordnet |
 | Externer Artikeltext | Die Beschreibung des Artikels des Debitors | Die Artikelbeschreibung des Kreditors |
 
-Wenn viele Kunden oder Lieferanten dieselben Artikelnummern verwenden (wie z.B. bei einer Einkaufsgemeinschaft oder einer Commerce-Gruppe), können Sie Gruppen von Kunden oder Lieferanten erstellen, um die Pflege der externen Produktkennungen zu vereinfachen.
+Wenn viele Debitoren oder Kreditoren dieselben Artikelnummern (beispielsweise bei einer Einkaufzuordnung oder einer Commerce Gruppe) verwenden, können Sie Gruppen von Debitoren oder Kreditoren erstellen, um die Verwaltung der externen Produktinformationen zu vereinfachen.
 
 - Für Debitorengruppen &gt; gehen Sie zu **Verkäufe** **Einstellungen** &gt; **Artikel** &gt; **Externe Artikelbeschreibung**, die Gruppen und die zugehörigen Artikelnummern erstellen und verwalten. Um Kunden einer Gruppe zuzuordnen, wechseln Sie zu **Debitoren** &gt; **Kunden** &gt; **Alle Kunden**, und geben Sie dann im Inforegister **Standardwerte für Aufträge** einen Wert im Feld **Artikel – Kundengruppe** ein.
 - Für Debitorengruppen  gehen Sie zu **Einkauf und Bereitstellung**&gt;**Einrichtung**&gt;**Externe Artikelbeschreibungsgruppe**, um die Gruppen der betreffenden Artikelnummern zu erstellen und verwalten. Um Kreditoren einer Gruppe zuzuordnen, wechseln Sie zu **Kreditorenkonten** &gt; **Kreditoren** &gt; **Alle Kreditoren**, und geben Sie dann im Inforegister **Standardwerte für Bestellungen** einen Wert im Feld **Artikel – Kreditorengruppe** ein.
@@ -106,7 +109,7 @@ Um Strichcodes auf der Seite **Freigegebene Produkte** auf der Registerkarte **L
 
 Im E-Commerce ist es wichtig, dass alle Parteien eine gemeinsame Sprache finden und auf Produkte verweisen, indem ein gemeinsamer Satz an Bezeichner verwendet wird. Daher verlassen sich einige Branchen auf die [GTIN](https://www.gs1.org/id-keys/gtin), was ein globales Artikelnummernsystem ist, das von GS1 zur Verfügung gestellt wird.
 
-Es wird empfohlen, die GTIN als Strichcode zu behalten. Allerdings können Sie dies auch auf der Seite **Artikel - GTIN** warten. Um diese Seite auf der Seite **Freigegebene Produkte** auf der Registerkarte **Lagerbestand verwalten** in der Gruppe **Lagerort** zu öffnen, wählen Sie **GTIN-Codes** aus. Die GTIN wird nicht als globale Nummer gepflegt. Stattdessen erfolgt die Verwaltung nach juristischen Personen.
+Es wird empfohlen, die GTIN als Strichcode zu behalten. Allerdings können Sie dies auch auf der Seite **Artikel - GTIN** warten. Um diese Seite auf der Seite **Freigegebene Produkte** auf der Registerkarte **Lagerbestand verwalten** in der Gruppe **Lagerort** zu öffnen, wählen Sie **GTIN-Codes** aus. Beachten Sie, dass das GTIN nicht als globale Nummer verwaltet wird. Stattdessen erfolgt die Verwaltung nach juristischen Personen.
 
 In Supply Chain Management definieren Sie in den Verpackungsvarianten Lagerortarbeitsgänge mithilfe bestimmter Maßeinheiten. Beispielsweise könnte ein Artikel in Artikeln, in die Bündelungen von sechs, in Ablagen oder vollständigen Paletten gelagert werden. Eine bestimmte Maßeinheit wird für jede dieser Verpackungsvarianten definiert. Da die GTIN in der Regel der Verpackungseinheit eines Produkts zugeordnet wird, können Sie auf der Seite **Artikel - GTIN** mehrere GTIN-Codes pro Produkt und pro Maßeinheit verwalten. Allerdings kann der gleiche GTIN-Code nicht mehrmals für unterschiedliche Artikel oder Produktvarianten einer juristischen Person verwendet werden.
 
@@ -124,12 +127,12 @@ Leider gibt es keine Standardfunktionalität, mit der Sie nach Produkten per ext
 |-------------|--------------------|--------------------|----------|
 | Produkte V2  | Produktnummer, Produktsuchename, Produktname, Produktbeschreibung | Produktnummer, Produktsuchename, Produktname, Produktbeschreibung | Je nach den Einstellungen der Entität und des Nummernkreises für die Produktnummer, kann die Produktnummer zum Zeitpunkt des Importvorgangs automatisch erstellt werden. |
 | Produktvarianten | Produktnummer, Produktsuchename, Produktname, Produktbeschreibung | Produktnummer, Produktsuchename, Produktname, Produktbeschreibung | Abhängig von der Produktnomenklaturvorlage kann die Produktnummer zum Zeitpunkt des Importvorgangs automatisch erstellt werden. Sie können jedoch eine beliebige eindeutige Produktnummer importieren und diese Produktnummer muss der Struktur der Produktnomenklaturvorlagen nicht folgen. |
-| Produktübersetzungen | Produktname, Produktbeschreibung | Produktname, Produktbeschreibung | Diese Entität überschreibt jede beliebige Sprache. Wenn der Name oder die Beschreibung der primären Sprache einer juristischen Entität überschrieben wird, wird der Name und die Beschreibung des Produkts selbst geändert. |
+| Produktübersetzungen | Produktname, Produktbeschreibung | Produktname, Produktbeschreibung | Diese Entität überschreibt jede beliebige Sprache. Beachten Sie, dass der Name oder die Beschreibung der Sprache einer primären juristischen Person überschrieben wird, Name und Beschreibung des Produkts selbst wird geändert. |
 | Erstellung eines freigegebenen Produkts V2 | Artikelnummer, Artikelsuchename Produktnummer| Artikelnummer, Artikelsuchename Produktnummer, Produktsuchename, Produktname | Die Entität kann eine Herausforderung sein, wenn Nummernkreise während der Erstellung neuer freigegebener Produkte verwendet werden. **Artikelnummer** Nummernsequenzen und **Produktnummer** Nummernsequenzen haben einen Einfluss. Allerdings ist der Nummernkreis **Artikelnummer** pro juristische Person, für die **Produktnummer** Nummernkreis global. Es wird daher nicht empfohlen, dass Sie den Nummernkreis **Artikelnummer** verwenden, wenn Sie neue freigegebene Produkte bereitstellen. Offensichtlich, wenn die Entität verwendet wird, um ein vorhandenes Produkt freizugeben, muss die Produktnummer in der Entität zugeordnet werden. Weitere Informationen finden Sie im Abschnitt "Produkte- und Artikelnummernsequenzen" in diesem Thema. |
 | Freigegebene Produktvarianten | Artikelnummer, Produktdimensionen, Produktnummer | Produktnummer, Produktsuchename, Produktname, Produktbeschreibung, Produktdimensionen | Wie **Produktvarianten**-Entität kann diese Entität verwendet werden, um neue Produkte zu erstellen, die entweder der Produktnomenklaturvorlage folgen oder eigene Produktnummern für die Variante verwenden. |
 | Externe Artikelbeschreibungen für Debitoren | Debitoren-Artikelnummer, Debitorenartikelname, Debitorenbeschreibung, Debitorenkonto | Debitoren-Artikelnummer, Debitorenartikelname, Debitorenbeschreibung, Debitorenkonto | Eine Gruppe von Debitoren (beispielsweise Gesamtlayout, eine Käufervereinigung) kann in eine Gruppe zusammengefasst werden, indem die **Debitorengruppen der externen Artikelbeschreibung** verwendet. |
 | Externe Artikelbeschreibungen für Kreditoren | Kreditorenartikelnummer, Kreditorenartikelname, Kreditorenbeschreibung, Kreditorenkonto | Kreditorenartikelnummer, Kreditorenartikelname, Kreditorenbeschreibung, Kreditorenkonto | Eine Gruppe von Debitoren (beispielsweise Gesamtlayout, eine Käufervereinigung) kann in eine Gruppe zusammengefasst werden, indem die **Debitorengruppen der externen Artikelbeschreibung** verwendet. |
-| Artikel-Strichcode | Strichcode | Strichcode | Zum Zeitpunkt des Imports müssen Sie auf ein Barcode-Setup verweisen, das im Zielsystem definiert ist. Die importierten Barcode-Referenzen werden anhand dieses Barcode-Setups validiert und zurückgewiesen, wenn die Barcodes nicht mit den in diesem Setup definierten Anforderungen übereinstimmen. |
+| Artikel-Strichcode | Strichcode | Strichcode | Beachten Sie, dass zum Zeitpunkt des Imports Sie auf eine Strichcode-Einstellung verweisen müssen, die im Zielsystem definiert wird. Die importierten Strichcodereferenzen werden anhand dieser Strichcodeeinstellungen geprüft und werden abgelehnt, wenn die Strichcodes nicht den Anforderungen entsprechen, die in diesen Strichcodeeinstellungen definiert sind. |
 | Externe Codes für freigegebene Produkte | Externer Code | Externer Code, externe Codeklassen, Artikelnummer | Externe Codes sind nach juristischer Person. Für den Import müssen Sie eine definierte Codeklasse beziehen. Importieren Sie die Codeklassen, indem Sie die **Externe Codeklasse für freigegebene Produkte** verwenden. |
 | Externe Codes für freigegebene Produktvarianten | Externer Code | Externer Code, externe Codeklassen, Artikelnummer, Produktdimensionen | Externe Codes sind nach juristischer Person. Für den Import müssen Sie eine definierte Codeklasse beziehen. Importieren Sie die Codeklassen, indem Sie die **Externe Codeklasse für freigegebene Produkte** verwenden. Diese Entität verweist auf Produktvarianten durch die Artikelnummer und Produktdimensionen. |
 | Externe Codes für freigegebene Produktvarianten nach Produktnummerbezeichner | Externer Code | Externer Code, externe Codeklassen, Produktnummer | Externe Codes sind nach juristischer Person. Für den Import müssen Sie eine definierte Codeklasse beziehen. Importieren Sie die Codeklassen, indem Sie die **Externe Codeklasse für freigegebene Produkte** verwenden. Diese Entität verweist auf Produktvarianten durch die Produktnummer der Varianten. (Vom nächsten wichtigen Update) |
@@ -158,13 +161,13 @@ Die folgende Tabelle bietet eine Übersicht über die Ergebnisse des Imports und
 | Produktnummernkreis Nummersequenz | Artikelnummerennummernkreis | Modellnummer des Artikels zuordnen | Die Zuordnung der Produktnummer | Ergebnis des Entitätsimports | Ergebnis der manuellen Erstellung | Abschluss |
 |--------------------------------|-----------------------------|----------------------------|-------------------------------|-------------------------|----------------------------|-----------|
 | Manuell = Null | Manuell = Null | Keine Zuordnung | Keine Zuordnung | Produktnummern verwenden den Nummernkreis. **Produktnummer** Artikelnummern verwenden den Nummernkreis. **Artikelnummer** | Produktnummern verwenden den Nummernkreis. **Produktnummer** Artikelnummern verwenden den Nummernkreis. **Artikelnummer** | Bei dieser Konfiguration folgen die Produktnummern der Produktnummernfolge und die Artikelnummern der Artikelnummernfolge. Diese Konfiguration funktioniert jedoch nicht, wenn mehr als ein Element (Zeile) importiert werden soll. |
-| Manuell = Null | Handbuch = Ja | Automatisch generieren | Keine Zuordnung | Artikelnummern verwenden Produktnummern und **Artikelnummer** den Nummernkreis. | Artikelnummern verwenden Produktnummern und **Produktnummern** den Nummernkreis. | Artikelnummern und Produktnummern folgen dem Produktnummernkreis. Dies ist der empfohlene Ansatz zum Importieren von Massenprodukten mit der Datenentität „Freigegebene Produkterstellung V2“.<br><br>Sie können diesen Ansatz nur verwenden, wenn Sie Artikel in großen Mengen importieren (mehrere Zeilen) und wenn Sie Artikel nicht über die Benutzeroberfläche erstellen. Wenn Sie sowohl den Bulk-Import als auch das Erstellen von Artikeln über die Benutzeroberfläche benötigen, verwenden Sie stattdessen die Vorgehensweise in der nächsten Zeile dieser Tabelle. Um von der Vorgehensweise beim Massenimport zur Verwendung der Benutzeroberfläche für den manuellen Import und das Erstellen von Produkten zu wechseln, müssen Sie die **Nächste Nummer** in der Sequenz der Artikelnummern manuell anpassen, damit sie mit der **Nächsten Nummer** in der Sequenz der Produktnummern übereinstimmt. Dann könnten Sie zu dem Ansatz in der nächsten Zeile dieser Tabelle wechseln. |
-| Manuell = Null | Handbuch = Ja | Keine Zuordnung | Keine Zuordnung | Artikelnummern verwenden Produktnummern und **Produktnummern** den Nummernkreis. | Artikelnummern verwenden Produktnummern und **Produktnummern** den Nummernkreis. | Artikelnummern und Produktnummern verwenden den Produktnummernkreis. Diese Konfiguration funktioniert jedoch nicht, wenn mehr als ein Element (Zeile) importiert werden soll.<br><br>Sie müssen diesen Ansatz verwenden, wenn Sie sowohl Produkte über die Entitäten importieren (es kann immer nur eine Zeile importiert werden) als auch Produkte über die Benutzeroberfläche erstellen wollen. |
+| Manuell = Null | Handbuch = Ja | Automatisch generieren | Keine Zuordnung | Artikelnummern verwenden Produktnummern und **Artikelnummer** den Nummernkreis. | Artikelnummern verwenden Produktnummern und **Produktnummern** den Nummernkreis. | Artikelnummern und Produktnummern folgen dem Produktnummernkreis. Dies ist der empfohlene Ansatz zum Importieren von Massenprodukten mit der Datenentität „Freigegebene Produkterstellung V2“. |
+| Manuell = Null | Handbuch = Ja | Keine Zuordnung | Keine Zuordnung | Artikelnummern verwenden Produktnummern und **Produktnummern** den Nummernkreis. | Artikelnummern verwenden Produktnummern und **Produktnummern** den Nummernkreis. | Artikelnummern und Produktnummern verwenden den Produktnummernkreis. Diese Konfiguration funktioniert jedoch nicht, wenn mehr als ein Element (Zeile) importiert werden soll. |
 | Handbuch = Ja | Nicht zutreffend | Nicht zutreffend | Automatisch generieren | Sie erhalten die folgende Fehlermeldung: „Nummernkreis kann nicht erkannt werden.” | Einstellungen des Nummernkreises **Artikelnummer** | Diese Einstellung wird für den Import nicht unterstützt. |
 
 ## <a name="product-entity-identifier-export-all-product-identifiers"></a>Produktentitätskennung (Export aller Produktkennungen)
 
-Das Produktentitätsbezeichner-Modell wurde erstellt, damit für Version 1.0 von Dataverse alle Bezeichner bereitgestellt werden können, die verwendet werden, um auf ein Produkt zu verweisen. Um diese Aufgabe zu vereinfachen, werden alle Bezeichner in einer globalen Bezeichnertabelle zusammengefasst, damit sie als ein Modell exportiert werden können. Beachten Sie, dass diese Version von Dataverse nicht das Produktbezeichnermodell verwendet. Deshalb haben die Entität **Common Data Service-Bezeichnerentität der Produktentität** und dieser Prozess begrenzten praktischen Nutzen, und es ist wahrscheinlich, dass daran in Zukunft Änderungen vorgenommen werden.
+Das Produktentitätsbezeichner-Modell wurde erstellt, damit für Version 1.0 des CDS alle Bezeichner bereitgestellt werden können, die verwendet werden, um auf ein Produkt zu verweisen. Um diese Aufgabe zu vereinfachen, werden alle Bezeichner in einer globalen Bezeichnertabelle zusammengefasst, damit sie als ein Modell exportiert werden können. Beachten Sie, dass diese Version der CDS nicht das Produktkennungsmodell verwendet. Deshalb haben die Entität **Common Data Service-Bezeichnerentität der Produktentität** und dieser Prozess begrenzten praktischen Nutzen, und es ist wahrscheinlich, dass daran in Zukunft Änderungen vorgenommen werden.
 
 Die Produktbezeichnertabelle ist eine globale Tabelle, die aus allen Bezugstabellen in der juristischen Hauptperson durch einen periodischen Batchauftrag aufgefüllt wird. Sie müssen eine juristische Person und eine Produktkategoriehierarchie als die Definition des globalen Produktmasterumfangs auswählen. Die Generierung der globalen Produktkennungstabelle wird auf Produkten beschränkt, die der ausgewählten juristischen Person und Produkten freigegeben werden, die Mitglieder der Produkthierarchie sind, die für die Rolle **Allgemeine Datendienst** der Hierarchie von Produktkategorie aktiviert ist.
 
@@ -172,11 +175,11 @@ Bei diesem Prozess wird vorausgesetzt, dass Produktmasterdaten in erster Linie i
 
 Gehen Sie folgendermaßen vor, um die Umgebung zu konfigurieren:
 
-1. Wählen Sie die Kategoriehierarchie für Dataverse aus. Wählen Sie auf der Seite **Kategoriehierarchierolle Zuordnung** wenn keine Hierarchie der Rolle zugeordnet ist, **Allgemeiner Datendienst** aus. Sie müssen eine neue Zuordnung erstellen. Wählen Sie die Rolle **Common Data Service** aus und ordnen Sie dann die Kategoriehierarchie zu, die die Produktpalette darstellt, die mit Dataverse synchronisiert werden soll.
+1. Wählen Sie die Kategoriehierarchie für den CDS aus. Wählen Sie auf der Seite **Kategoriehierarchierolle Zuordnung** wenn keine Hierarchie der Rolle zugeordnet ist, **Allgemeiner Datendienst** aus. Sie müssen eine neue Zuordnung erstellen. Wählen Sie die Rolle **Common Data Service** aus, und ordnen Sie dann die Kategoriehierarchie zu, die die Produktpalette darstellt, die mit dem CDS synchronisiert werden soll.
 2. Wählen Sie die juristische Person für globale Produktmasterdaten aus. Auf der Seite **Parameter für Verwaltung von Produktinformationen** auf der Registerkarte **Produktattribute**, wählen Sie das Vorlagenunternehmen aus, in dem die Produkt- und hauptsächlich Artikelkennungen nicht verwaltet werden.
 3. Definieren Sie die Kennungscodetypen und - codes, die exportiert werden sollen. Gehen Sie zu **Produktinformationsverwaltung** &gt; **Einstellungen** &gt; **Produktkennungscodes**. Um die Bezeichnercodetypen zu generieren, wählen Sie **Codes generieren** aus. Ein Codetypeintrag wird für jeden Typ zu Identifikationszwecken generiert, die in der ausgewählten juristischen Person befindet.
 
-    Für Barcodes wird für jedes Einrichten eines Barcodes ein Codetyp generiert. Für externe Codes wird ein externer Codetyp für jede Codeklasse generiert.
+    Beachten Sie, dass für Strichcodes ein Codetyp für jede Strichcode-Einstellungen generiert wird. Für externe Codes wird ein externer Codetyp für jede Codeklasse generiert.
 
     Sie können jetzt die Liste von Codetypen verwalten. Sie können Code, Name und Beschreibung ändern. Sie können auch Codetypen löschen. Codetypen, die Sie löschen, können nicht verwendet werden, um die globalen Produktentitätskennungstabellen aufzufüllen.
 
@@ -187,6 +190,3 @@ Sie können jetzt die Datenentitäten **Common Data Service-Bezeichnerentität d
 ## <a name="related-topic"></a>Verwandtes Thema
 
 [Nach Produkten und Produktvarianten bei der Auftragserfassung suchen](search-products-product-variants.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

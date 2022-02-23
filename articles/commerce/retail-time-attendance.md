@@ -2,13 +2,16 @@
 title: Zeit- und Anwesenheitsverwaltung in Retail
 description: Dieses Thema beschreibt Szenarien, die für die Verwaltung von Zeit und Anwesenheit in Dynamics 365 Commerce unterstützt werden.
 author: aamirallaqaband
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: JMGParameters
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 62813
 ms.assetid: 821994a6-cd29-45a3-a526-ce204064f080
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 68aafc9f397333d88644bb1870bb4e65da32c265decb10e6ac420be99c1e2c4e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cca5e3232450e75f931a621b278c134129fc745c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762667"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412683"
 ---
 # <a name="time-and-attendance-management-in-retail"></a>Zeit- und Anwesenheitsverwaltung in Retail
 
@@ -38,9 +41,9 @@ Dieses Thema beschreibt Szenarien, die für die Verwaltung von Zeit und Anwesenh
 
 ### <a name="plan-worker-schedules"></a>Planen von Arbeitskraftzeitplänen
 
-- Wenden Sie Profile durch Verwendung der Arbeitsplanung an. Weitere Informationen zu [Arbeitszeitprofilen finden Sie unter](/dynamicsax-2012/appuser-itpro/apply-profiles-using-work-planner)
+- Wenden Sie Profile durch Verwendung der Arbeitsplanung an. Weitere Informationen zu [Arbeitszeitprofilen finden Sie unter](https://technet.microsoft.com/library/aa551234.aspx)
 
-Informationen über die Konfigurationsschritte, finden [Zeit und Anwesenheit](/dynamicsax-2012/appuser-itpro/setting-up-time-and-attendance) Sie unter.
+Informationen über die Konfigurationsschritte, finden [Zeit und Anwesenheit](https://technet.microsoft.com/library/aa496971.aspx) Sie unter.
 
 ### <a name="commerce-specific-configuration"></a>Commerce-spezifische Konfiguration
 
@@ -97,7 +100,7 @@ Informationen über die Konfigurationsschritte, finden [Zeit und Anwesenheit](/d
         </tbody>
         </table>
 
-        [![Status der Zeituhr.](./media/timeclockstates.png)](./media/timeclockstates.png)
+        [![Status der Zeituhr](./media/timeclockstates.png)](./media/timeclockstates.png)
 
 - Sehen Sie die Bestätigungsmeldung an, und überprüfen Sie, ob die Uhrzeit der aktuellen Aktivität korrekt ist.
 - Arbeitsprotokoll:
@@ -135,7 +138,4 @@ Ein Commerce-Benutzer folgt dem Workflow, um Zeiterfassungen zu berechnen, zu ge
 - Massenausstempeln
 - Erfassen der Abwesenheit
 
-Weitere Informationen dazu, wie Anwesenheitserfassungen in den Erfassungen verarbeitet werden, finden [Anwesenheitserfassungen und Prozesszeit](/dynamicsax-2012/appuser-itpro/process-time-and-attendance-registrations).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Weitere Informationen dazu, wie Anwesenheitserfassungen in den Erfassungen verarbeitet werden, finden [Anwesenheitserfassungen und Prozesszeit](https://technet.microsoft.com/library/aa573180.aspx).

@@ -1,10 +1,12 @@
 ---
 title: 'ER – Verwendung von Finanzdimensionen als Datenquelle (Teil 4: Berichtsausführung)'
-description: In diesem Thema wird beschrieben, wie Sie ein EB-Modell (elektronische Berichterstellung) konfigurieren, um Finanzdimensionen als Datenquelle für EB-Berichte zu verwenden. (Teil 4)
+description: In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Modell zur Nutzung von Finanzdimensionen als Datenquelle für ER-Berichte nutzen kann.
 author: NickSelin
+manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, SysQueryForm
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f14be560ab014224e32169b4ac97682a669249b4
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: fb7f49310aa25ff7c17ab4bcd50e1842be84fe2d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605304"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684738"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-4---run-the-report"></a>ER – Verwendung von Finanzdimensionen als Datenquelle (Teil 4: Berichtsausführung)
 
@@ -34,19 +36,16 @@ Um diese Schritte auszuführen, müssen Sie erst die Schritte im Verfahren „ER
 2. Erweitern Sie in der Struktur "Finanzdimensions-Beispielmodell".
 3. Wählen Sie in der Struktur "Finanzdimensions-Beispielmodell\Sachkontoerfassungsbericht".
 4. Klicken Sie auf Ausführen.
-![EB-Konfigurationsseite.](../media/er-financial-dimensions-guides-run1.png)
+![ER-Konfigurationsseite](../media/er-financial-dimensions-guides-run1.png)
 5. Geben Sie im Feld 'Dimensionsname' einen Wert ein, oder wählen Sie einen Wert aus.
     * Um alle Dimensionen im aktuellen Unternehmen auszuwählen, geben Sie folgende Informationen ein: BusinessUnit;CostCenter;Department;ItemGroup;MainAccount;Project  
-![Auszug für elektronische Berichtsparameter, Dropdown-Menü für Dimensionsname.](../media/er-financial-dimensions-guides-run2.png)
+![ER-Konfigurationsseite](../media/er-financial-dimensions-guides-run2.png)
 6. Erweitern Sie den Abschnitt "Einzuschließende Datensätze".
 7. Klicken Sie auf "Filter".
 8. Wählen Sie die Zeile für die Sachkontoerfassungstabelle und das Feld Erfassungschargennummer aus.
 9. Geben Sie im Feld "Kriterien" den Wert "00057" ein.
 10. Klicken Sie auf "OK".
 11. Klicken Sie auf "OK".
-![Auszug für elektronische Berichtsparameter, Abschnitt für Berichte zum Einschließen.](../media/er-financial-dimensions-guides-run3.png)
+![ER-Konfigurationsseite](../media/er-financial-dimensions-guides-run3.png)
     * Prüfen Sie das generierte Ergebnis. Für jede Buchung der ausgewählten Charge werden die Finanzdimensionen aus den entsprechenden Dimensionssatz dargestellt. Führen Sie diesen Bericht aus und wählen Sie unterschiedliche Dimensionen aus, um zu sehen, dass der Bericht nicht von der Anzahl der ausgewählten Dimensionen oder aus der Anzahl der Dimensionen abhängt, die für diese Instanz konfiguriert werden.  
-![ER-Konfigurationen haben eine Ausgabe generiert.](../media/er-financial-dimensions-guides-run4.png)
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+![ER-Konfigurationsseite](../media/er-financial-dimensions-guides-run4.png)

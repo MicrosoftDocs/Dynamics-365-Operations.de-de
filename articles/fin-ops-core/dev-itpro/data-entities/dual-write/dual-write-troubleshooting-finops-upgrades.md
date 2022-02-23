@@ -1,30 +1,39 @@
 ---
-title: Probleme im Zusammenhang mit Upgrades von Finance and Operations-Apps behandeln
-description: Dieses Thema enthält Informationen zur Problembehandlung, die Ihnen helfen können, Probleme zu beheben, die mit Upgrades von Apps für Finanzen und Betrieb zusammenhängen.
+title: Probleme bezüglich Aktualisierungen von Finance and Operations Apps beheben
+description: Dieses Thema enthält Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit dem Upgrade von Finance and Operations Apps zusammenhängen.
 author: RamaKrishnamoorthy
+manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: ramasri
-ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c7c036ef44b0470c9b3f8087e7b5b1e16dde1b34
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.dyn365.ops.version: ''
+ms.search.validFrom: 2020-03-16
+ms.openlocfilehash: c76b35ed3af766f42484a118a4a0407d969b5240
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062824"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683598"
 ---
-# <a name="troubleshoot-issues-from-upgrades-of-finance-and-operations-apps"></a>Probleme im Zusammenhang mit Upgrades von Finance and Operations-Apps behandeln
+# <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>Probleme bezüglich Aktualisierungen von Finance and Operations Apps beheben
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
-
-Dieses Thema enthält Informationen zur Problembehandlung für die duales Schreiben-Integration zwischen Apps für Finanzen und Betrieb und Dataverse. Hier finden Sie Informationen, die Ihnen helfen können, Probleme im Zusammenhang mit Upgrades von Apps für Finanzen und Betrieb zu beheben.
+Dieses Thema enthält Problembehandlungsinformationen zur dualen Schreibintegration zwischen den Apps Finance and Operations und Dataverse. Dieses Thema enthält speziell Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit dem Upgrade von Finance and Operations Apps zusammenhängen.
 
 > [!IMPORTANT]
 > Einige der in diesem Thema behandelten Probleme erfordern möglicherweise entweder die Systemadministratorrolle oder Microsoft Azure Active Directory (Azure AD) Anmeldeinformationen des Mandantenadministrators. Im Abschnitt zu jedem Problem wird erläutert, ob eine bestimmte Rolle oder Anmeldeinformationen erforderlich sind.
@@ -33,7 +42,7 @@ Dieses Thema enthält Informationen zur Problembehandlung für die duales Schrei
 
 **Erforderliche Rolle zum Beheben der Fehler:** System Administrator
 
-Sie erhalten möglicherweise eine Fehlermeldung, die dem folgenden Beispiel ähnelt, wenn Sie versuchen, die Tabelle **DualWriteProjectConfiguration** zu verwenden, um eine Finance und Operations App auf Platform update 30 zu aktualisieren.
+Möglicherweise erhalten Sie eine Fehlermeldung, die dem folgenden Beispiel ähnelt, wenn Sie versuchen, die **DualWriteProjectConfiguration** Entität zu verwenden, um eine Finance and Operations App auf Plattform Update 30 zu aktualisieren.
 
 ```console
 Infolog diagnostic message: 'Cannot select a row in Dual write project sync (DualWriteProjectConfiguration). The SQL database has issued an error.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Object Server Database Synchronizer: ' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ISDELETE'.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'SELECT T1.PROJECTNAME,T1.EXTERNALENTITYNAME,T1.INTERNALENTITYNAME,T1.EXTERNALENVIRONMENTURL,T1.STATUS,T1.ENABLEBATCHLOOKUP,T1.PARTITIONMAP,T1.QUERYFILTEREXPRESSION,T1.INTEGRATIONKEY,T1.ISDELETE,T1.ISDEBUGMODE,T1.RECVERSION,T1.PARTITION,T1.RECID FROM DUALWRITEPROJECTCONFIGURATION T1 WHERE (PARTITION=5637144576)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'session 1043 (Admin)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.' on category 'Error'.
@@ -43,7 +52,7 @@ Microsoft.Dynamics.AX.Framework.Database.TableSyncException: Custom action threw
 
 Führen Sie folgende Schritte aus, um das Problem zu beheben.
 
-1. Melden Sie sich bei der virtuellen Maschine (VM) für die Finance und Operations App an.
+1. Melden Sie sich bei der virtuellen Maschine (VM) für die Finance and Operations App an.
 2. Öffnen von Visual Studio als Administrator und öffnen Sie den Application Object Tree (AOT).
 3. Suchen nach **DualWriteProjectConfiguration**.
 4. Klicken Sie im AOT mit der rechten Maustaste auf **DualWriteProjectConfiguration** und wählen Sie **Zu neuem Projekt hinzufügen**. Wählen Sie **OK**, um das neue Projekt zu erstellen, das Standardoptionen verwendet.
@@ -53,7 +62,7 @@ Führen Sie folgende Schritte aus, um das Problem zu beheben.
 8. Wählen Sie **Synchronisieren**, um eine vollständige Datenbanksynchronisation durchzuführen.
 9. Nachdem die vollständige Datenbanksynchronisierung erfolgreich war, führen Sie den Schritt zur Datenbanksynchronisierung erneut aus in Microsoft Dynamics Lifecycle Services (LCS) und verwenden Sie gegebenenfalls die manuellen Upgrade-Skripte, damit Sie mit dem Update fortfahren können.
 
-## <a name="missing-table-columns-issue-on-maps"></a>Fehlende Tabellenspalten in Zuordnungen
+## <a name="missing-entity-fields-issue-on-maps"></a>Fehlende Entitätsfelder treten auf Zuordnungen auf
 
 **Erforderliche Rolle zum Beheben der Fehler:** System Administrator
 
@@ -61,27 +70,24 @@ Auf der Seite **Duales Schreiben** wird möglicherweise eine Fehlermeldung angez
 
 *Fehlendes Quellfeld \<field name\> im Schema.*
 
-![Beispiel für die Fehlermeldung zu fehlenden Quellspalten.](media/error_missing_field.png)
+![Beispiel für die fehlende Quellfeldfehlermeldung](media/error_missing_field.png)
 
-Führen Sie die folgenden Schritte aus, um das Problem zu beheben und sicherzustellen, dass sich die Spalten in der Tabelle befinden.
+Führen Sie die folgenden Schritte aus, um das Problem zu beheben und sicherzustellen, dass sich die Felder in der Entität befinden.
 
-1. Melden Sie sich bei der VM für die Finance und Operations App an.
-2. Wechseln Sie zu **Arbeitsbereiche \> Datenverwaltung**, wählen Sie die Kachel **Framework-Parameter** aus, und wählen Sie dann auf der Registerkarte **Tabelleneinstellungen** die Option **Tabellenliste aktualisieren** aus, um die Tabellen zu aktualisieren.
-3. Wechseln Sie zu **Arbeitsbereiche \> Datenverwaltung**, wählen Sie die Registerkarte **Datentabellen** aus und stellen Sie sicher, dass die Tabelle aufgelistet ist. Wenn die Tabelle nicht aufgeführt ist, melden Sie sich bei der VM für die App Finance und Operations an und stellen Sie sicher, dass die Tabelle verfügbar ist.
-4. Öffnen Sie die Seite **Tabellenzuordnung** auf der Seite **duales Schreiben** in der App Finance und Operations.
-5. Wählen Sie **Tabellenliste aktualisieren** aus, um die Spalten in den Tabellenzuordnungen automatisch auszufüllen.
+1. Melden Sie sich bei der virtuellen Maschine (VM) an für die Finance and Operations App.
+2. Wechseln Sie zu **Arbeitsbereiche \> Datenverwaltung**, wählen Sie die Kachel **Framework-Parameter** aus und wählen Sie dann auf der Registerkarte **Tabelleneinstellungen** die Option **Entitätsliste aktualisieren** aus, um die Tabellen zu aktualisieren.
+3. Wechseln Sie zu **Arbeitsbereiche \> Datenmanagement**, wählen Sie die Registerkarte **Datentabellen** aus und stellen Sie sicher, dass die Entität aufgelistet ist. Wenn die Entität nicht aufgeführt ist, melden Sie sich bei der VM für die Finance and Operations App an und stellen Sie sicher, dass die Entität verfügbar ist.
+4. Öffnen Sie die Seite **Tabellenzuordnung** über die Seite **Duales Schreiben** in der Finance and Operations-App.
+5. Wählen Sie **Entitätsliste aktualisieren** aus, um die Felder in den Tabellenzuordnungen automatisch auszufüllen.
 
 Wenn das Problem immer noch nicht behoben ist, führen Sie die folgenden Schritte aus.
 
 > [!IMPORTANT]
-> Diese Schritte führen Sie durch den Vorgang des Löschens und anschließenden Hinzufügens einer Tabelle. Befolgen Sie die Schritte genau, um Probleme zu vermeiden.
+> Diese Schritte führen Sie durch den Vorgang des Löschens und anschließenden Hinzufügens einer Entität. Befolgen Sie die Schritte genau, um Probleme zu vermeiden.
 
-1. Gehen Sie in der App Finance und Operations auf **Arbeitsbereiche \> Datenverwaltung** und wählen Sie die Kachel **Datentabellen**.
-2. Suchen Sie die Tabelle, der das Attribut fehlt. Klicken Sie in der Symbolleiste auf **Zielzuordnung ändern**.
+1. Gehen Sie in der Finance and Operations-App zu **Arbeitsbereiche \> Datenmanagement** und wählen Sie die Kachel **Datentabellen** aus.
+2. Suchen Sie die Entität, der das Attribut fehlt. Klicken Sie in der Symbolleiste auf **Zielzuordnung ändern**.
 3. Klicken Sie im Bereich **Abbildung auf Ziel** auf **Zuordnung generieren**.
-4. Öffnen Sie die Seite **Tabellenzuordnung** auf der Seite **duales Schreiben** in der App Finance und Operations.
+4. Öffnen Sie die Seite **Tabellenzuordnung** über die Seite **Duales Schreiben** in der Finance and Operations-App.
 5. Wenn das Attribut nicht automatisch in die Zuordnung eingefügt wird, fügen Sie es manuell hinzu, indem Sie auf **Attribut hinzufügen** und dann auf **Speichern** klicken. 
 6. Wählen Sie die Zuordnung aus, und klicken Sie auf **Ausführen**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

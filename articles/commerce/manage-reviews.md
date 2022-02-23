@@ -2,12 +2,15 @@
 title: Bewertungen und Prüfungen verwalten
 description: In diesem Thema wird erläutert, wie Sie Bewertungen und Prüfungen im Microsoft Dynamics 365 Commerce-Site Builder verwalten.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,12 +18,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1aefa6eb93ef251778a48ba972d87e0cd5930bf0
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 3fc88bc5a5868dce7c0539bf3f0ddc5b751e7b75
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968226"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412587"
 ---
 # <a name="manage-ratings-and-reviews"></a>Bewertungen und Prüfungen verwalten
 
@@ -28,11 +31,13 @@ ms.locfileid: "7968226"
 
 In diesem Thema wird erläutert, wie Sie Bewertungen und Prüfungen im Microsoft Dynamics 365 Commerce-Site Builder verwalten.
 
+## <a name="overview"></a>Übersicht
+
 Dynamics 365 Commerce verwendet Microsoft Azure Cognitive Service, um den Prüftext automatisch zu moderieren, indem einfache Wörter redigiert werden. Darüber hinaus können Moderatoren Dynamics 365 Commerce-Site Builder zum Implementieren der folgenden manuellen Aufgaben verwenden:
 
 - Moderieren Sie Prüfungen, indem Sie darauf antworten oder sie entfernen.
 - Löschen Sie die Bewertungen eines Kunden auf Kundenwunsch.
-- Führen Sie einen Massenimport von Bewertungen und Überprüfungsdaten für alle Produkte in eine Microsoft Power BI-Vorlage durch, damit Trends für Bewertungen und Überprüfungen analysiert werden können.
+- Importieren Sie Bewertungen und Überprüfungsdaten für alle Produkte in eine Power BI-Vorlage, damit Trends für Bewertungen und Überprüfungen analysiert werden können.
 
 ## <a name="read-a-review"></a>Lesen einer Prüfung 
 
@@ -43,7 +48,7 @@ Um eine Überprüfung in den Commerce Site Builder hochzuladen, folgen Sie diese
 
 Mit zusätzlichen Filtern können Sie die Überprüfungen nach Zeitraum, Bewertung, Kanal oder Anliegenstatus einschränken (deaktiviert, beantwortet oder gemeldet).
 
-![Moderations-Startseite.](media/rnr-moderation-home.png) 
+![Moderations-Startseite](media/rnr-moderation-home.png) 
 
 ## <a name="respond-to-a-review"></a>Auf Bewertung antworten 
 
@@ -57,7 +62,7 @@ Um auf eine Überprüfung im Commerce Site Builder zu antworten, folgen Sie dies
 1. Geben Sie den Antworttext und den Namen ein, der für den Antwortenden angezeigt werden soll. Der Standardname des Antwortenden lautet **Moderator**.
 1. Wählen Sie abschließend **Antwort senden** aus.
 
-![Beantworten einer Bewertung.](media/rnr-moderation-response.png) 
+![Beantworten einer Bewertung](media/rnr-moderation-response.png) 
 
 ## <a name="take-down-a-review"></a>Entfernen einer Bewertung 
 
@@ -80,7 +85,7 @@ Führen Sie die folgenden Schritte aus, um Kundendaten im Commerce Site Builder 
 1. Wenn der Kunde eine Überprüfungsaktivität hat (z. B. Überprüfungsbeiträge, Abstimmungen zur Nützlichkeit der Bewertungen eines anderen Kunden oder Kommentare zur Bewertung eines anderen Kunden), werden die Ergebnisse angezeigt. Für jedes Element gibt es die Schaltfläche **Löschen**.
 1. Wählen Sie für jedes Element, das gelöscht werden muss, **Löschen** aus. Wenn Sie zur Bestätigung aufgefordert werden, wählen Sie **Ja** aus. 
     
-![Löschen von Kundendaten.](media/rnr-moderation-delete-reviews.png) 
+![Löschen von Kundendaten](media/rnr-moderation-delete-reviews.png) 
 
 > [!NOTE]
 > - Es kann bis zu sieben Tage dauern, bis die Daten vollständig aus dem System entfernt wurden. Moderatoren sollten Kunden über diese Verzögerung informieren.
@@ -104,37 +109,26 @@ Führen Sie die folgenden Schritte aus, um Bewertungs- und Prüfdaten im Commerc
 1. Navigieren Sie zu **Start \> Bewertungen \> Berichterstellung**.
 1. Wählen Sie **PowerBI-Vorlage** aus, um die Vorlage herunterzuladen.
 
-    ![Laden Sie die Power BI-Vorlage herunter.](media/rnr-moderation-reports.png) 
+    ![Laden Sie die Power BI-Vorlage herunter](media/rnr-moderation-reports.png) 
 
 1. Öffnen Sie die heruntergeladene Vorlage durch Verwendung der Power BI-App. Schließen Sie das Dialogfeld **Zugriff auf Webinhalt**, das angezeigt wird, und schließen Sie dann die angezeigte Fehlermeldung „Aktualisieren“.
 1. Navigieren Sie zu **Startseite**, wählen Sie **Abfragen bearbeiten** und dann **Datenquelleneinstellungen** aus.
 1. Wählen Sie im Dialogfeld **Datenquelleneinstellungen** die Option **Quelle ändern** aus.
 1. Geben Sie im Feld **URL** den Pfad der Prüfdaten ein, die Sie in der vorherigen Prozedur (Beispiel: **c:\\reviews\\ReviewsData.csv**) heruntergeladen haben.
 
-    ![URL-Feld im Dialogfeld „Kommagetrennte Werte“.](media/rnr-powerbi-datasource-settings.png) 
+    ![URL-Feld im Dialogfeld „Kommagetrennte Werte“](media/rnr-powerbi-datasource-settings.png) 
 
 1. Wählen Sie **OK** und dann **Änderungen anwenden** aus. Es dauert ein bis zwei Minuten, um Ihre Änderungen auf die Datenquelle anzuwenden.
 1. Wählen Sie **Trendbilanz** aus, um die Trends für Bewertungen und Prüfungen anzuzeigen.
 
-    ![Trends für Bewertungen und Prüfungen.](media/rnr-powerbi-dashboard-template.png) 
+    ![Trends für Bewertungen und Prüfungen](media/rnr-powerbi-dashboard-template.png) 
     
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Überblick über Bewertungen und Prüfungen](ratings-reviews-overview.md)
 
-[Nutzung von Bewertungen und Prüfungen aktivieren](opt-in-ratings-reviews.md)
+[Abonnieren zum Verwenden von Bewertungen und Prüfungen](opt-in-ratings-reviews.md)
 
 [Konfigurieren von Bewertungen und Prüfungen](configure-ratings-reviews.md)
 
 [Synchronisieren von Produktbewertungen in Dynamics 365 Retail](sync-product-ratings.md)
-
-[Manuelle Veröffentlichung von Bewertungen und Prüfungen durch einen Moderator aktivieren](manual-publish-rating-reviews.md)
-
-[Bewertungen und Rezensionen importieren und exportieren](import-export-reviews.md)
-
-[Authentifizierung zwischen Diensten konfigurieren](service-to-service-auth.md)
-
-[Häufig gestellte Fragen zu Bewertungen und Prüfungen](ratings-reviews-faq.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

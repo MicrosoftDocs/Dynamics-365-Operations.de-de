@@ -2,23 +2,26 @@
 title: Bestätigen und übertragen
 description: In diesem Thema wird die Verwendung der Bestätigungs- und Übertragungsfunktion erläutert, mit der Benutzer Ladungen vom Lagerort aus versenden können, bevor sie alle mit diesen Ladungen verbundenen Arbeiten abgeschlossen haben.
 author: mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 4c366d2f9091ee46ac3b1b6eff72e178932da18e
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: 6104e457a62f340951c187d0f2dbe48b0dffdf7f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592627"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428470"
 ---
 # <a name="confirm-and-transfer"></a>Bestätigen und übertragen
 
@@ -45,8 +48,8 @@ Sie können nur Ladungen aufteilen, die alle der folgenden Kriterien erfüllen:
 
 - Einer oder mehrerer Ladungspositionen wurden Mengen entnommen.
 - Der Ladungsstatus ist geringer als geladen.
-- Es gibt keine Ladungspositionsdaten. (Diese Daten werden durch Ladungsträger-Konsolidierung am Bereitstellungslagerplatz erstellt und die Funktion Bestätigen und übertragen unterstützt keine Ladungsträger-Konsolidierung.)
-- Derzeit wartet kein Bestand auf das Verpacken an einem Verpackungslagerplatz. (Die Funktion *Bestätigen und übertragen* unterstützt keinen für die Packstation entnommenen Bestand, der noch nicht verpackt wurde, es sei denn, verpackte Container werden an Staginglagerplätze mit erstellter Ladearbeit platziert.)
+- Es gibt keine Ladungspositionsdaten. (Diese Daten werden durch Ladungsträger-Konsolidierung am Bereitstellungslagerplatz erstellt und die Funktion *Bestätigen und übertragen* unterstützt keine Ladungsträger-Konsolidierung.)
+- Derzeit wartet kein Bestand auf das Verpacken an einem Verpackungslagerplatz. (Die Funktion *Bestätigen und übertragen* unterstützt keinen bereits für die Packstation entnommenen Bestand, der noch nicht verpackt wurde.)
 
 > [!NOTE]
 > Diese Funktion unterscheidet sich von der Transportladungsfunktion, die an Lagerorten verwendet werden sollte, die vor der Entnahme niemals Ladungen planen und erstellen können, sondern die stattdessen den verfügbaren Transportraum nach Abschluss der Entnahme laden.
@@ -227,6 +230,3 @@ Sie können auch bestätigen, dass die Transaktionsbeziehungen wie folgt aktuali
 - Die Option **Menge auf neue Ladung aufteilen** funktioniert auch, wenn einige der verbleibenden Arbeitskopfzeilen den Status *In Bearbeitung* aufweisen. Daher können Sie die Funktion selbst dann verwenden, wenn die Arbeitskräfte bereits die Entnahmeaufträge ausführen.
 - Wenn Sie **Unerfüllte Menge stornieren** auswählen, während es noch verbleibende Arbeit mit dem Status *Offen* oder *In Bearbeitung* gibt, wird die folgende Fehlermeldung angezeigt: „Verbleibende Menge für Ladung kann nicht storniert werden. Für die Ladung ist Arbeit vorhanden.“
 - Wenn Sie **Unerfüllte Menge stornieren** auswählen, wenn keine verbleibende Arbeit vorhanden ist, sich jedoch nicht freigegebene Ladungspositionen auf der Ladung befinden, wird die folgende Fehlermeldung angezeigt: „Die Lieferung für die Ladung konnte nicht bestätigt werden, da die Menge für den Artikel den Prozentsatz überschreitet, der für eine zu kleine Lieferung definiert ist.“ Um den Fehler zu vermeiden, können Sie den Prozentsatz für **Zu kleine Lieferung** für die nicht freigegebene Ladungsposition auf 100 Prozent festlegen. Nicht freigegebene Positionen werden nicht auf eine neue Ladung verschoben, aber die aktuelle Ladung wird mit einer zu kleinen Lieferung bestätigt. In diesem Fall können Sie den ursprünglichen Auftrag nicht erneut freigeben. Daher müssen Sie hierfür eine andere Lösung finden.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

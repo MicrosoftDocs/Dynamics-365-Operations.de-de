@@ -2,25 +2,28 @@
 title: Verkaufen und zurückgeben von Produkten, die Teil des Sortiments eines Shops sind
 description: Mit Dynamics 365 Commerce können Sie Produkte außerhalb eines Sortiments verkaufen und zurückgeben.
 author: pdp1207
+manager: AnnBe
 ms.date: 05/24/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailAssortmentDetails
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: prabhup
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 318fa3bb4aed2b22e4db821f4e4e4762866fddc42f6cf0050a2a3c392faeb561
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 86c6ecf9ef67ca3ac4ed3c44d930acaa965112b6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713389"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412646"
 ---
 # <a name="sell-and-return-products-that-arent-part-of-a-stores-assortment"></a>Verkaufen und zurückgeben von Produkten, die Teil des Sortiments eines Shops sind
 
@@ -43,6 +46,3 @@ Diese allgemeine Szenarien sind in Commerce für Einzelhändler verfügbar. Mit 
 + Produkte im aktuellen Shops oder in einer anderen Filiale abholen.
 + Eine Bestellung in der aktuellen Filiale oder in einer anderen Filiale stornieren.
 + Einen Auftrag mit oder ohne Beleg in der aktuellen Filiale oder in einer anderen Filiale zurückgeben.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

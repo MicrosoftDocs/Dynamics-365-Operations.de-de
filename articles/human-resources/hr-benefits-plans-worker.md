@@ -1,30 +1,31 @@
 ---
-title: Vergütungspläne für Arbeitskräfte erstellen
-description: Dieses Thema beschreibt, wie Sie Leistungspläne für Arbeitskräfte in Microsoft Dynamics 365 Human Resources erstellen, auswählen und bestätigen.
-author: twheeloc
-ms.date: 08/23/2021
+title: Vorteilspläne für Arbeitskräfte erstellen
+description: Sie können Vorteilspläne für Arbeitskräfte in Microsoft Dynamics 365 Human Resources erstellen, um Vorteilspläne für Mitarbeiter auszuwählen und die Auswahl der Vorteilspläne zu bestätigen.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitPlanEmployee, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 701bc6f1bb3ef684b163c32032e1094c8ae4deb0
-ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
+ms.openlocfilehash: 0ebd19cba8dd7cac8ccf6d17d4206731be87a225
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "7417403"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418627"
 ---
-# <a name="create-worker-benefit-plans"></a>Vergütungspläne für Arbeitskräfte erstellen
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+# <a name="create-worker-benefit-plans"></a>Vorteilspläne für Arbeitskräfte erstellen
 
 Sie können Vorteilspläne für Arbeitskräfte in Microsoft Dynamics 365 Human Resources erstellen, um Vorteilspläne für Mitarbeiter auszuwählen und die Auswahl der Vorteilspläne zu bestätigen. In der Regel wählen Mitarbeiter Vorteilspläne selbst aus, indem sie Mitarbeiter-Self-Service verwenden. Anschließend bestätigt ein Vorteilsadministrator die Auswahl. 
 
@@ -48,6 +49,3 @@ Sie können Vorteilspläne für Arbeitskräfte in Microsoft Dynamics 365 Human R
    | Planwechsel | Das Inforegister „Pläne“ enthält die Pläne, die den von Ihnen angegebenen Filterkriterien entsprechen. Die relevanten Konfigurationsoptionen, die von HR-Mitarbeitern festgelegt wurden, und die von Mitarbeitern ausgewählten Registrierungsanmeldungen sind in jeder Zeile enthalten. Das Feld „Qualifiziert“ gibt an, ob ein Validierungskonflikt mit der Planauswahl vorliegt. |
 
 4. Wählen Sie **Speichern**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

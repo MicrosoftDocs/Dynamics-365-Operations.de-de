@@ -2,9 +2,11 @@
 title: Rechnungsabgangsfrist
 description: In diesem Artikel wird erläutert, wie Parameter eingerichtet werden, um die Fälligkeitsdaten für die Erstellung von Debitorenrechnungen und Kreditorenrechnungen in der Europäischen Union zu berechnen.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustParameters, LedgerInvoiceIssueDueDateSetup_W
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a99f5dcd6296a0e001a5ab2a283501c93f8751a471594f0248fe61e09378bb23
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 261b831806a7912b270fd3ae098e1b758ef4f521
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744276"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962690"
 ---
 # <a name="invoice-issue-deadline"></a>Rechnungsabgangsfrist
 
@@ -119,6 +121,3 @@ Wenn Sie keinen Zugriff auf die Seiten für die Durchführung der in diesem Arti
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -57,6 +57,3 @@ Titel sind in diesem Update erweitert worden. Das Feld hat jetzt 65 Zeichen. Die
 ## <a name="benefit-enrollment-status-report"></a>Statusbericht zur Vorteilsregistrierung
 
 Mithilfe von integrierter Berichterstellung zur offenen Registrierung für Vorteile können Sie problemlos erkennen, wo sich Ihre Mitarbeiter im offenen Registrierungsprozess befinden. Sie können erfahren, wie viele Mitarbeiter den Prozess abgeschlossen haben, wie viele ihn aktuell abschließen und wie viele ihn noch nicht gestartet haben. Darüber hinaus können Sie schnell sämtliche Probleme anzeigen, die während der Mitarbeiterregistrierung auftreten sowie ein vollständiges Protokoll aller Mitarbeiterübermittlungen. Daher können Sie leicht Mitarbeiterübermittlungen überprüfen und überwachen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

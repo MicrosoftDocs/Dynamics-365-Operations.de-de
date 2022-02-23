@@ -2,25 +2,28 @@
 title: Startseite zum Supply Chain Management
 description: Diese Seite enthält eine Liste der Hilfethemen und anderer Ressourcen für die Supply Chain Management-Funktionen.
 author: kamaybac
-ms.date: 09/15/2021
+manager: tfehr
+ms.date: 06/30/2020
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
+ms.search.scope: Core, Operations
+ms.custom: ''
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
 ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4ea45b238200d4d9d43d563e160e8574271a8ce7
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 9255640240ae07c3857c0b6f55a7ee27ba3bf85b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487862"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459111"
 ---
 # <a name="supply-chain-management-home-page"></a>Startseite zum Supply Chain Management
 
@@ -62,6 +65,7 @@ In diesem kurzen Video werden die neuen Funktionen der Lieferkettenverwaltung zu
 
 In diesen kurzen Videos werden die neuen Funktionen der Lieferkettenverwaltung zusammengefasst, mit denen Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (Dezember 2017), ergänzt wurde.
 
+- [Integration der Konvertierung eines Interessenten in Bargeld](https://youtu.be/AVV9x5x-XCg) 
 - [Optimierungsratgeber](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Lagerortvorlage zum Kopieren der Konfiguration verwenden](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
@@ -80,12 +84,13 @@ In den folgenden Aufzeichnungen von Fachkonferenzen werden die Funktionen der Li
 - **Produktprogrammplanung:**
   - [Bedarfsplanungsfunktionen erweitern](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
   - [Produktprogrammplanung – Hinweise und Tricks zur Behebung von Leistungsproblemen](https://youtu.be/7v8BPmEs9Dg)
-  - [MRP-Leistungsabstimmung](https://youtu.be/RLXybx20B5o)
+  - [Hilfe! PPS ist langsam!](https://youtu.be/RLXybx20B5o)
 - **Produktinformationsverwaltung:**
   - [Produktkonfigurator in Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
 - **Lagerortverwaltung:**
-  - [Das Lagerortverwaltungssystem optimal nutzen](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
-  - [Dynamics AX 2012 R3: erweiterte Lagerortverwaltung – ein Tag in der Prozessfertigung](https://www.youtube.com/embed/QUxXUrN-7n4)
+  - [Ihr Lagerortverwaltungssystem optimal nutzen](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
+  - [Beschriftungen in der neuen Microsoft Dynamics AX 2012 R3-Lagerortverwaltung](https://youtu.be/5w1MngVchBA)
+  - [Dynamics AX 2012 R3: Erweiterte Lagerortverwaltung – ein Tag in der Prozessfertigung](https://www.youtube.com/embed/QUxXUrN-7n4)
 - **Videos zur Produktionssteuerung:**
   - [Fremdarbeit und Aktivitäten in der Fertigung](https://youtu.be/y1jrd3A_k70)
 - **Video zur Transportverwaltung:**
@@ -93,16 +98,13 @@ In den folgenden Aufzeichnungen von Fachkonferenzen werden die Funktionen der Li
 
 ## <a name="blogs"></a>Blogs
 
-Im [Blog des Teams für F&E in der Fertigung von Dynamics AX](/archive/blogs/axmfg/) und im [Blog des Teams für Supply Chain Management in Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/) finden Sie viele weitere Themen zu Fertigung und Supply Chain Management. Die meisten dieser Beiträge beziehen sich auf die ältere Version, aber es gelten weiterhin die gleichen Konzepte und die Vorgehensweisen sind in der aktuellen Version vergleichbar.
+Im [Blog des Teams für F&E in der Fertigung von Dynamics AX](https://blogs.msdn.microsoft.com/axmfg/) und im [Blog des Teams für Supply Chain Management in Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/) finden Sie viele weitere Themen zu Fertigung und Supply Chain Management. Die meisten dieser Beiträge beziehen sich auf die ältere Version, aber es gelten weiterhin die gleichen Konzepte und die Vorgehensweisen sind in der aktuellen Version vergleichbar.
 
 ## <a name="white-papers"></a>Whitepapers
 
-- [Lean Manufacturing: Verfügbarkeitszusage und Kanban-Feinterminierung](/dynamics/s-e/)
+- [Lean Manufacturing: Verfügbarkeitszusage und Kanban-Feinterminierung](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/)
 - [Stücklistenberechnung anhand eines Nachkalkulationsbogens](https://www.microsoft.com/download/details.aspx?id=101937/)
 
 ## <a name="elearning-courses"></a>E-Learning-Schulungen
 
-Informationen zu Onlinetrainings und Schulungen finden Sie bei [Microsoft Learn unter Dynamics 365 Supply Chain Management](/learn/browse/?products=dynamics-scm&resource_type=learning+path).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Informationen zu Onlinetrainings und Schulungen finden Sie bei [Microsoft Learn unter Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path).

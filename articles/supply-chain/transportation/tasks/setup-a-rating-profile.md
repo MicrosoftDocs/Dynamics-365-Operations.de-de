@@ -2,28 +2,29 @@
 title: Bewertungsprofile
 description: Dieses Thema beschreibt, wie Sie die Daten für Bewertungsprofile festlegen.
 author: Henrikan
+manager: ''
 ms.date: 10/30/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSRatingProfile
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2020-10-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af9051c6bbaed311f1f841a82dfd145633acab2c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 3c54e7457813774027debd301d9a0bf8ce1b6d47
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574808"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4646391"
 ---
 # <a name="rating-profiles"></a>Bewertungsprofile
-
-[!include [banner](../../includes/banner.md)]
 
 Ein Tarifprofil ähnelt einem Logistikvertrag (aber nicht einem Rechtsvertrag). Es wird verwendet, um Transporttarife für Ladungen zu bestimmen. 
 
@@ -60,6 +61,3 @@ Auf der Seite **Bewertungsprofile** können Sie alle verfügbaren Bewertungsprof
 
 > [!NOTE]
 > Profile, die auf der Seite **Spediteure** erstellt werden, werden auch auf der Seite **Bewertungsprofile** angezeigt.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

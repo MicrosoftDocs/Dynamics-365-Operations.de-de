@@ -2,29 +2,34 @@
 title: Aufgabenverwaltung in POS
 description: Dieses Thema beschreibt die Aufgabenverwaltung in der Microsoft Dynamics 365 Commerce-Point-of-Sale-Anwendung (POS).
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 3fb7d584b634b0a1e43ef6a02a9edcadc0927b36bd2a814fdfe947fb0e2e1917
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cc685fcd584fe2ab5cd9282e8fbefbd284d5b2a2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772105"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412627"
 ---
 # <a name="task-management-in-pos"></a>Aufgabenverwaltung in POS
 
 [!include [banner](includes/banner.md)]
 
 Dieses Thema beschreibt die Aufgabenverwaltung in der Microsoft Dynamics 365 Commerce-Point-of-Sale-Anwendung (POS).
+
+## <a name="overview"></a>Übersicht
 
 Die POS-Anwendung Dynamics 365 Commerce verfügt über Aufgabenverwaltungsfunktionen, mit denen Filialleiter und Mitarbeiter Aufgaben verwalten und den Aufgabenstatus aktualisieren können. Die Mitarbeiter der Filiale können auf die Aufgaben zugreifen, indem sie entweder die Kachel **Aufgaben** auf der POS-Homepage oder die Aufgabenbenachrichtigungen auswählen. Standardmäßig werden Filialmitarbeiter zur Registerkarte **Meine Aufgaben** geführt, wo sie die ihnen zugewiesenen Aufgaben einsehen können. Sie können jedoch problemlos zu den Registern **Überfällige Aufgaben**, **Öffnende Aufgaben** und **Aufgabenlisten** wechseln.
 
@@ -48,17 +53,14 @@ Die folgende Abbildung zeigt die Registerkarte **Meine Aufgaben** in der POS-Anw
 
 Die folgende Abbildung zeigt die Registerkarte **Aufgabenlisten**.
 
-![Registerkarte Aufgabenlisten in der Anwendung „Commerce POS“.](media/POS-task-lists-management.png)
+![Registerkarte Aufgabenlisten in der Anwendung Commerce POS](media/POS-task-lists-management.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Aufgabenverwaltung – Übersicht](task-mgmt-overview.md)
+[Überblick über die Aufgabenverwaltung](task-mgmt-overview.md)
 
 [Aufgabenverwaltung konfigurieren](task-mgmt-configure.md)
 
 [Aufgabenlisten erstellen und Aufgaben hinzufügen](task-mgmt-create-lists.md)
 
 [Arbeitspläne den Filialen oder Mitarbeitern zuweisen](task-mgmt-assign-lists.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

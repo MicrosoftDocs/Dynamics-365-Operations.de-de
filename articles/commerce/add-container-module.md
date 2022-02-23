@@ -1,31 +1,36 @@
 ---
 title: Containermodul
-description: Dieses Thema behandelt Containermodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+description: Dieses Thema enthält Containermodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 752d0ddc6f666a5d96a2593c8c246a82dc7e1de2fd4bd2356a275222d7abec29
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9bb2c7d56184d009492b4aa839a3546160ad342f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715439"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412501"
 ---
 # <a name="container-module"></a>Containermodul
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema behandelt Containermodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+Dieses Thema enthält Containermodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+
+## <a name="overview"></a>Übersicht
 
 Ein Containermodul ist ein Modul, das andere Module hostet. Der Hauptzweck eines Containermoduls ist es, das Layout der Module über die Eigenschaften, die für es festgelegt sind und die es enthält, zu bestimmen. Diese Module können nebeneinander in einem Zwei-, Drei-, Vier- oder Sechsspalten-Layout angezeigt werden. Sie können auch auf die Breite des Containers beschränkt werden, oder sie können den Bildschirm ausfüllen. Eine Überschrift kann zu jedem Containermodul hinzugefügt werden.
 
@@ -42,7 +47,7 @@ Es werden drei Containermodule unterstützt: Container, Container mit 2 Slots un
 
 Das folgende Bild zeigt ein Beispiel für ein Containermodul, das ein Karussellmodul im Commerce Site Builder enthält. In diesem Beispiel ist die **Breite** Eigenschaft des Containermoduls auf **Bildschirm ausfüllen** festgelegt.
 
-![Beispiel eines Containermoduls.](./media/ecommerce-container.PNG)
+![Beispiel eines Containermoduls](./media/ecommerce-container.PNG)
 
 ## <a name="container-module-properties"></a>Containermoduleigenschaften
 
@@ -137,6 +142,3 @@ Um ein Containerspielmodul einer neuen Seite hinzuzufügen und die erforderliche
 [Kopfzeilenmodul](author-header-module.md)
 
 [Fußzeilenmodul](author-footer-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

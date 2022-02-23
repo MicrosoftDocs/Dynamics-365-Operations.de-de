@@ -157,6 +157,3 @@ Führen Sie folgende Schritte aus, um eine Stelle zu erstellen.
 
 13. Um die Stelle zu aktivieren, wählen Sie **Aktivieren** aus.
 14. Um die Stelle zu veröffentlichen, navigieren Sie zu **Veröffentlichungen** und wählen anschließend **Jetzt veröffentlichen** auf der Talent Careers-Seite oder LinkedIn aus.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

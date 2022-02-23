@@ -2,9 +2,11 @@
 title: Navigationssuche
 description: In diesem Artikel wird beschrieben, wie die Suchfunktion verwendet wird, um zu den Seiten zu navigieren.
 author: aneesmsft
-ms.date: 08/11/2021
+manager: AnnBe
+ms.date: 04/27/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e689bef43930dbe364baefaa9f4d0231394ff4f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 43fa263bcbb6f5a6465af59ffb744aa865d66239
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069983"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4799099"
 ---
 # <a name="navigation-search"></a>Navigationssuche
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 In diesem Artikel wird beschrieben, wie die Suchfunktion verwendet wird, um zu den Seiten zu navigieren.
 
@@ -37,7 +36,7 @@ Zur Verwendung dieser Funktion, klicken Sie auf das Symbol **Suche** um das Feld
 > [!NOTE]
 > Das Feld **Suchen** hilft Ihnen dabei, Seiten finden und zu navigieren. Es unterstützt Sie nicht dabei, bestimmte Daten oder Aktivitäten zu suchen.
 
-![Suchfeld.](media/navigation-search.png "Suchfeld")
+[![Suchfeld](media/navigation-search.png "Suchfeld")
 
 ## <a name="quickly-navigate-to-a-particular-page"></a>Navigieren Sie schnell zu einer bestimmten Seite
 
@@ -63,6 +62,3 @@ Die Liste von Suchergebnissen ist auf 10 Artikeln beschränkt. Wenn Sie nicht ge
 ## <a name="development"></a>Entwicklung
 
 Aus der Entwicklungsperspektive sind die Navigationssuchenfunktionen sehr einfach zu nutzen, da es virtuell keine Verzögerung zwischen der Bereitstellung von Menüelementen und deren Anzeige in den Suchergebnissen gibt. Solange die Menüelemente entweder mit dem Navigationsbereich oder dem Dashboard verknüpft sind, werden diese automatisch durchsuchbar.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

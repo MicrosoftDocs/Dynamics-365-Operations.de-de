@@ -2,23 +2,26 @@
 title: Handelsvergütungsverwaltung
 description: In diesem Thema wird beschrieben Handelsvergütungsverwaltung für Dynamics 365 Supply Chain Management
 author: t-benebo
+manager: tfehr
 ms.date: 08/17/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: MCRBrokerClaims, MCRBrokerWriteOffReasonPrompt, MCRRoyaltyVendTable, MCRRoyaltyVendTrans, PdsCustRebateGroup, PdsRebateAgreement, TAMCopyTradePromotions, TAMDeduction, TAMDeductionCreate, TAMDeductionDenyReason, TAMDeductionParmDeny, TAMDeductionParmMassUpdate, TAMDeductionParmMatch, TAMDeductionParmSplit, TAMDeductionParmWriteOff, TAMDeductionType, TAMDeductionWriteOffReason, TAMFundManagement, TAMFundUsage, TAMListPage, TAMMarketingObjective, TAMMerchEventType, TAMOneTimePromotion, TAMPromoCompareGraph, TAMPromoStatistic, TAMPromotionAnalysisSummary, TAMPromotionParameters, TAMPromotionPeriod, TAMTemplateListPage, TAMTradePromotionAnalysis, TAMTradePromotions, TAMWhatIfPromotionAnalysis
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 15c003109814d9b4dc2857910e69754e5927ec11138d215056be64424998bf00
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 13b665427a4caf206e0a3b3aca6b04c1529b9206
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771274"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428659"
 ---
 # <a name="trade-allowance-management"></a>Handelsvergütungsverwaltung
 
@@ -59,7 +62,7 @@ Ein Handelsvergütungsvertrag ist ein Anreizprogramm, bei dem Kunden, die bestim
 
 Mittel, die dem Durchschnitt, die den Handelsvergütungsverträgen zugewiesen sind, werden auf der Seite **Geldmittel** erfasst. Um die Seite **Geldmittel** zu öffnen, wählen Sie **Vertrieb und Marketing** \> **Handelsvergütungen** \> **Geldmittel** \> **Geldmittel** aus.
 
-![Seite „Geldmittel“.](./media/trade-allowance-management-funds-page.png "Fonds-Seite")
+![Fonds Seite](./media/trade-allowance-management-funds-page.png "Fonds-Seite")
 
 Auf der Seite **Geldmittel** können Sie die Details der verkaufsfördernden Mittel anzeigen.
 
@@ -75,9 +78,9 @@ Nachdem die Mitteldefinition durchgeführt wurde, werden im nächsten Schritt de
 
 Handelsvergütungsverträge werden auf der Seite **Handelsvergütungsverträge** erfasst. Um die Seite **Handelsvergütungsverträge** zu öffnen, wählen Sie **Vertrieb und Marketing** \> **Händlervergütung** \> **Handelsvergütungsverträge** aus.
 
-![Seite „Handelszulassungsabkommen“.](./media/trade-allowance-management-agreements-page.png "Seite Handelszulassungsabkommen")
+![Handelszulassungsabkommen Seite](./media/trade-allowance-management-agreements-page.png "Seite Handelszulassungsabkommen")
 
-#### <a name="header"></a>Übergeordnet
+#### <a name="header"></a>Header
 
 Wählen Sie **Kopfzeile** aus, um in die Kopfzeilenansicht zu wechseln.
 
@@ -103,7 +106,7 @@ Die Registerkarte **Verkaufereignisse** enthält die Ereignistypen, die durch vo
 
 Wenn Sie das Verkaufsereignis auswählen und dann auf die Registerkarte **Beträge** auswählen, werden die Details für das Ereignis angezeigt.
 
-![Handelszulagen-Abkommenspositionen.](./media/trade-allowance-management-agreements-lines.png "Zeilen des Handelszulassungsabkommens")
+![Handelszulagen-Abkommenszeilen](./media/trade-allowance-management-agreements-lines.png "Zeilen des Handelszulassungsabkommens")
 
 Im Abschnitt **Handelsvergütungspositionen** geben Sie die Mengen- oder Betragsbereiche an, die der Debitor als Definition erreichen muss, um die Belohnungen zu erhalten.
 
@@ -197,6 +200,3 @@ Um einen analytischeren Überblick über die verschiedenen Leistungskennzahlen f
 
 Um einen analytischeren Überblick über die verschiedenen Leistungskennzahlen für die Aktion abzurufen, können Sie die Analyseansicht verwenden. Um zur Analyseansicht zu wechseln, klicken Sie auf **Vertrieb und Marketing** \> **Händlervergütungen** \> **Handelsvergütungsverträge** Klicken Sie im Aktivitätsbereich auf **Analyse**. 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

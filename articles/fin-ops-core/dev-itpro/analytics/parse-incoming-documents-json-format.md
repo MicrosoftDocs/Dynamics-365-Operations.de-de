@@ -2,9 +2,11 @@
 title: Analysieren eingehender Dokumente im JSON-Format
 description: In diesem Thema wird erläutert, wie Sie elektronische Berichterstattungsformate (ER) einrichten, um eingehende Dokumente im JavaScript Object Notation (JSON) Format zu analysieren.
 author: kfend
+manager: AnnBe
 ms.date: 05/20/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: ba30b06cc0c4af230113d532a932594278e13b29a87e6252849483c9dfcbc198
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b4ed81bb5527ea8e02caaa1262a57960dd7cdf29
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713917"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685762"
 ---
 # <a name="parse-incoming-documents-in-json-format"></a>Analysieren eingehender Dokumente im JSON-Format
 
@@ -48,6 +50,3 @@ Zusätzlich müssen Sie die erforderlichen Konfigurationen erstellen, um [Daten 
 | Titel                  | Dateiname |
 |------------------------|-----------|
 | ER Modellkonfiguration | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=874111) |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

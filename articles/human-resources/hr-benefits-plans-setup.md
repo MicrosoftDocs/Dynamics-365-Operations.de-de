@@ -1,35 +1,33 @@
 ---
 title: Vorteilsplan erstellen
-description: Dieses Thema zeigt, wie Sie Leistungspläne in Dynamics 365 Human Resources festlegen.
-author: twheeloc
-ms.date: 08/23/2021
+description: Einrichten von Vorteilsplänen in Dynamics 365 Human Resources.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitPlanListPage, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7d3163bf30af9ed0eac2c753ed4aabb15d568ff4
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: bcbf4c1a7f136e5563bf1210b6c09228dad95dea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065325"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418630"
 ---
-# <a name="create-a-benefit-plan"></a>Vergütungsplan erstellen
+# <a name="create-a-benefits-plan"></a>Vorteilsplan erstellen
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Dieses Thema zeigt, wie Sie Leistungspläne in Dynamics 365 Human Resources festlegen.
+In diesem Artikel erfahren Sie, wie Sie Vorteilspläne in Dynamics 365 Human Resources einrichten.
 
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Pläne** die Option **Vorteilspläne**.
 
@@ -46,8 +44,9 @@ Dieses Thema zeigt, wie Sie Leistungspläne in Dynamics 365 Human Resources fest
    | **Programm** | Gibt ein Programm an, dem der Plan optional zugewiesen werden soll. |
    | **Bündel** | Gibt ein Bündel an, dem der Plan optional zugewiesen werden soll. |
    | **Haupt** | Gibt an, ob es sich bei dem Plan um den Produktprogrammplan innerhalb des Bündels handelt, dem es zugewiesen ist. |
+   | **Status** | Gibt den aktuellen Status des Vorteilsplans an. Der Standardwert ist „Aktiv“. Wenn Sie den Status zu „Inaktiv“ ändern, wird der Plan während der Registrierung nicht als Auswahl angezeigt. |
    | **Gültig ab Datum und Zeit** | Datum und Uhrzeit des Zeitpunkts, zu dem der Plan startet. Das aktuelle Systemdatum ist der Standardwert. |
-   | **Gültig bis Datum und Zeit** | Datum und Uhrzeit des Zeitpunkts, zu dem der Plan endet. Der Standardwert lautet 31.12.2154 (stellvertretend für „endet nie“). |
+   | **Gültig bis Datum und Zeit** | Datum und Uhrzeit des Zeitpunkts, zu dem der Plan endet (Status wird auf „Inaktiv“ gesetzt). Der Standardwert lautet 31.12.2154 (stellvertretend für „endet nie“). |
 
 4. Geben Sie auf der Registerkarte **Konfiguration** Werte für die folgenden Felder an, abhängig vom Plantyp, den Sie erstellen:
 
@@ -55,18 +54,18 @@ Dieses Thema zeigt, wie Sie Leistungspläne in Dynamics 365 Human Resources fest
    | --- | --- | --- |
    | Medizinisch (Medizinisch, Zahnbehandlung, Augenbehandlung, HMO) | COBRA | Gibt an, ob der Plan gemäß COBRA (Consolidated Omnibus Budget Reconciliation Act) wählbar ist. |
    | Medizinisch (Medizinisch, Zahnbehandlung, Augenbehandlung, HMO) | HIPAA | Gibt an, ob der Plan gemäß HIPAA (Health Insurance Portability and Accountability Act) wählbar ist. |
-   | Medizinisch (Medizinisch, Zahnbehandlung, Augenbehandlung, HMO)<br><br>Sonstiges (PTO, Fitness)<br><br>Sonstige<br><br>Langfristige Behinderung<br><br>ADD (Leben – Basis, freiwillig)<br><br>Sparen (z. B. 401(k))<br><br>FSA | Zur Vorsteuer berechtigt | Gibt an, ob Beiträge zum Plan geleistet werden können, bevor Steuern angewendet werden. |
-   | Medizinisch (Medizinisch, Zahnbehandlung, Augenbehandlung, HMO)<br><br>Sonstiges (PTO, Fitness)<br><br>Langfristige Behinderung<br><br>ADD (Leben – Basis, freiwillig)<br><br>Sparen (z. B. 401(k))<br><br>FSA | Steuerliche Verwendbarkeit buchen | Gibt an, ob Beiträge zum Plan geleistet werden können, nachdem Steuern angewendet werden. |
-   | Medizinisch (Medizinisch, Zahnbehandlung, Augenbehandlung, HMO)<br><br>Sonstiges (PTO, Fitness)<br><br>Langfristige Behinderung<br><br>ADD (Leben – Basis, freiwillig)<br><br>Sparen (z. B. 401(k))<br><br>FSA | Mitwirkender | Gibt an, wer zum Plan beiträgt – der Mitarbeiter, der Arbeitgeber oder beide. |
-   | Langfristige Behinderung<br><br>ADD (Leben – Basis, freiwillig) | Minimale Deckung | Die für den Plan erforderliche Mindestversicherungssumme. |
-   | Langfristige Behinderung<br><br>ADD (Leben – Basis, freiwillig) | Maximale Deckung | Die für den Plan erforderliche maximale Versicherungssumme. |
-   | Langfristige Behinderung<br><br>ADD (Leben – Basis, freiwillig) | Deckungserhöhungen verwenden | Gibt an, ob überprüft werden soll, ob der Abdeckungsbetrag einem gültigen inkrementellen Betrag entspricht. |
-   | Langfristige Behinderung<br><br>ADD (Leben – Basis, freiwillig) | Zusätzlicher Betrag | Die inkrementelle Versicherungssumme für den Plan. Wenn beispielsweise der inkrementelle Betrag 1.000 beträgt, kann ein Mitarbeiter keine Versicherungssumme von 200.500 Euro haben. Er muss sie auf 201.000 Euro aufrunden oder 200.000 Euro abrunden. |
-   | Langfristige Behinderung<br><br>ADD (Leben – Basis, freiwillig) | Erhöhungsrichtung | Gibt die Rundungsrichtung an (entweder nach oben oder nach unten), wenn der Deckungsbetrag den Wert für den inkrementellen Betrag nicht erfüllt. |
+   | <ul><li>Medizinisch (Medizinisch, Zahnbehandlung, Augenbehandlung, HMO)</li><li>Sonstiges (PTO, Fitness)</li><li>Sonstige</li><li>Langfristige Behinderung</li><li>ADD (Leben – Basis, freiwillig)</li><li>Sparen (z. B. 401(k))</li><li>FSA</li></ul> | Zur Vorsteuer berechtigt | Gibt an, ob Beiträge zum Plan geleistet werden können, bevor Steuern angewendet werden. |
+   | <ul><li>Medizinisch (Medizinisch, Zahnbehandlung, Augenbehandlung, HMO)</li><li>Sonstiges (PTO, Fitness)</li><li>Langfristige Behinderung</li><li>ADD (Leben – Basis, freiwillig)</li><li>Sparen (z. B. 401(k))</li><li>FSA</li></ul> | Steuerliche Verwendbarkeit buchen | Gibt an, ob Beiträge zum Plan geleistet werden können, nachdem Steuern angewendet werden. |
+   | <ul><li>Medizinisch (Medizinisch, Zahnbehandlung, Augenbehandlung, HMO)</li><li>Sonstiges (PTO, Fitness)</li><li>Langfristige Behinderung</li><li>ADD (Leben – Basis, freiwillig)</li><li>Sparen (z. B. 401(k))</li><li>FSA</li></ul> | Mitwirkender | Gibt an, wer zum Plan beiträgt – der Mitarbeiter, der Arbeitgeber oder beide. |
+   | <ul><li>Langfristige Behinderung</li><li>ADD (Leben – Basis, freiwillig)</li></ul> | Minimale Deckung | Die für den Plan erforderliche Mindestversicherungssumme. |
+   | <ul><li>Langfristige Behinderung</li><li>ADD (Leben – Basis, freiwillig)</li></ul> | Maximale Deckung | Die für den Plan erforderliche maximale Versicherungssumme. |
+   | <ul><li>Langfristige Behinderung</li><li>ADD (Leben – Basis, freiwillig)</li></ul> | Deckungserhöhungen verwenden | Gibt an, ob überprüft werden soll, ob der Abdeckungsbetrag einem gültigen inkrementellen Betrag entspricht. |
+   | <ul><li>Langfristige Behinderung</li><li>ADD (Leben – Basis, freiwillig)</li></ul> | Zusätzlicher Betrag | Die inkrementelle Versicherungssumme für den Plan. Wenn beispielsweise der inkrementelle Betrag 1.000 beträgt, kann ein Mitarbeiter keine Versicherungssumme von 200.500 Euro haben. Er muss sie auf 201.000 Euro aufrunden oder 200.000 Euro abrunden. |
+   | <ul><li>Langfristige Behinderung</li><li>ADD (Leben – Basis, freiwillig)</li></ul> | Erhöhungsrichtung | Gibt die Rundungsrichtung an (entweder nach oben oder nach unten), wenn der Deckungsbetrag den Wert für den inkrementellen Betrag nicht erfüllt. |
    | ADD (Leben – Basis, freiwillig) | Nachweis der Versicherbarkeit | Gibt an, ob ein Mitarbeiter einen Versicherungsnachweis erbringen muss. |
    | ADD (Leben – Basis, freiwillig) | Dauer | Der Betrag in Buchhaltungswährung. Dieses Feld ist nur aktiv, wenn das Kontrollkästchen „Nachweis der Versicherbarkeit“ aktiviert ist. |
-   | Sparen (z. B. 401(k))<br><br>FSA | Minimaler jährlicher Beitrag | Der für den Plan erforderliche minimale Beitragsbetrag. |
-   | Sparen (z. B. 401(k))<br><br>FSA | Maximaler jährlicher Beitrag | Der für den Plan erforderliche maximale Beitragsbetrag. |
+   | <ul><li>Sparen (z. B. 401(k))</li><li>FSA</li></ul> | Minimaler jährlicher Beitrag | Der für den Plan erforderliche minimale Beitragsbetrag. |
+   | <ul><li>Sparen (z. B. 401(k))</li><li>FSA</li></ul> | Maximaler jährlicher Beitrag | Der für den Plan erforderliche maximale Beitragsbetrag. |
    | Sparen (z. B. 401(k)) | Maximaler jährlicher Betrag des Arbeitgebers | Der Höchstbetrag, den ein Arbeitgeber während einer Vorteilperiode zu einem Sparplan eines Mitarbeiters beitragen darf. Sie müssen das Kontrollkästchen „Arbeitgeberabgleich“ aktivieren, um dieses Feld zu verwenden. |
    | Sparen (z. B. 401(k)) | Arbeitgeberabgleich | Gibt an, ob der Arbeitgeber zum Sparplan eines Mitarbeiters beiträgt. |
    | Sparen (z. B. 401(k)) | Arbeitgeberabgleich in Prozent | Der Prozentsatz eines Mitarbeiterbeitrags, den der Arbeitgeber abgleicht. |
@@ -121,7 +120,7 @@ Sie können Arbeitskräfte anzeigen, die für einen ausgewählten Vorteilsplan r
 
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Pläne** die Option **Vorteilspläne**.
 
-2. Wählen Sie auf der Registerkarte **Vergütungen** in der Navigationsleiste **Registrierte Arbeitskräfte**.
+2. Wählen Sie **Registrierte Arbeitskräfte**.
 
 ## <a name="attach-coverage-options"></a>Abdeckungsoptionen anhängen
 
@@ -129,7 +128,7 @@ Sie können dem ausgewählten Vorteilsplan Abdeckungsoptionen hinzufügen. Durch
 
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Pläne** die Option **Vorteilspläne**.
 
-2. Wählen Sie auf der Registerkarte **Vergütungen** in der Navigationsleiste **Abdeckungsoptionen anhängen**.
+2. Wählen Sie **Abdeckungsoptionen anhängen**.
 
 ## <a name="override-eligibility-rules"></a>Berechtigungsregeln überschreiben
 
@@ -137,7 +136,7 @@ Sie können Arbeitskräfte als Ausnahmen zu den Berechtigungsregeln zu einem Pla
 
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Pläne** die Option **Vorteilspläne**.
 
-2. Wählen Sie auf der Registerkarte **Vergütungen** in der Navigationsleiste **Berechtigungsregelüberschreibung**.
+2. Wählen Sie **Berechtigungsregelüberschreibung**.
 
 ## <a name="view-attached-periods"></a>Angehängte Perioden anzeigen
 
@@ -145,21 +144,18 @@ Sie können eine Liste der verfügbaren Vorteilsperioden anzeigen.
 
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Pläne** die Option **Vorteilspläne**.
 
-2. Wählen Sie in der Navigationsleiste die Registerkarte **Perioden** aus.
+2. Wählen Sie **Perioden**.
 
-## <a name="view-plan-description"></a>Planbeschreibung anzeigen
+## <a name="view-plan-information"></a>Planinformationen anzeigen
 
-Sie können eine Beschreibung des Plans bereitstellen, um den Mitarbeitern bei der Auswahl ihrer Vorteile zu helfen. Die Planbeschreibung, die Sie hier eingeben, wird im Mitarbeiter-Self-Service angezeigt, wenn Sie den Mauszeiger über den Plan in der Liste der Abdeckungsoptionen bewegen.
+Sie können eine Beschreibung des Plans bereitstellen, um den Mitarbeitern bei der Auswahl ihrer Vorteile zu helfen. Die Planinformationen, die Sie hier eingeben, werden im Mitarbeiter-Self-Service angezeigt, wenn Sie den Mauszeiger über den Plan in der Liste der Abdeckungsoptionen bewegen.
 
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Pläne** die Option **Vorteilspläne**.
 
-2. Wählen Sie auf der Registerkarte **Vergütungen** in der Navigationsleiste **Planbeschreibung**.
+2. Wählen Sie **Planinformationen**.
 
 ## <a name="view-flex-credit-programs"></a>Flexible Gutschriftenprogramme anzeigen
 
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Pläne** die Option **Vorteilspläne**.
 
-2. Wählen Sie auf der Registerkarte **Vergütungen** in der Navigationsleiste **Programme für flexible Kredite**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+2. Wählen Sie **Flexguthabenprogramme**.

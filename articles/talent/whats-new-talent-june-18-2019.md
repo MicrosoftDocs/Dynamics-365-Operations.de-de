@@ -86,6 +86,3 @@ Mit einer neuen Option können Manager die Leistung von ihren direkten Mitarbeit
 ### <a name="print-performance-reviews"></a>Leistungsbeurteilungen drucken
 
 Mitarbeiter, Manager und Personalverwaltung können dann die Leistungsbeurteilung eines Mitarbeiters drucken.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

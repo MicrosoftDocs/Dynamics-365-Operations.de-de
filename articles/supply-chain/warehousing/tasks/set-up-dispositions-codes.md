@@ -1,25 +1,28 @@
 ---
 title: Dispositionscodes einrichten
 description: Fokusse dieser Prozedur auf den Einstellungen eines Dispositionscodes, der mit einem mobilen Gerät für die Rücklieferung verwendet werden kann, die Prozess erhält.
-author: Mirzaab
+author: ShylaThompson
+manager: tfehr
 ms.date: 11/11/2016
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSDispositionTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb83108c934e864da0df39ec4ee36a0bc7ba7588
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6d84699e8e4323792ac67b69236d264e33eeaf28
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574064"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429090"
 ---
 # <a name="set-up-dispositions-codes"></a>Dispositionscodes einrichten
 
@@ -38,6 +41,3 @@ Fokusse dieser Prozedur auf den Einstellungen eines Dispositionscodes, der mit e
 6. Geben Sie im Feld "Rückgabe Bereitstellungscode" einen Wert ein.
     * Der Rückholdispositionscode bestimmt den Rest des Rücklieferungsprozesses für die erfassten Artikel. In diesem Beispiel sollte der Debitor eine Gutschrift erhalten. Hinzufügen eines Rückgabedispositionscode hinzu, der einen Aktivität Haben enthält.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

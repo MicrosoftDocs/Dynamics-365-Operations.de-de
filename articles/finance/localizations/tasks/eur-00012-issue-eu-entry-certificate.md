@@ -2,23 +2,26 @@
 title: EUR-00012 Ausstellen einer EU-Gelangensbestätigung
 description: Diese Prozedur läuft Sie durch das Aktivieren einer EU-Eintragsbescheinigung nach und konfiguriert ein Debitorenkonto, um Eintragsbescheinigungen zu verwenden und eine Bescheinigung auszustellen.
 author: mrolecki
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustParameters, CustTable, SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines,  CustInvoiceJournal, CustEntryCertificateJour_W, SrsReportViewerForm
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 41ede621fdb36d39efc79788cd2da77aacfc282895dd84d572b99f4528456643
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0091af30b917aab3b8c4572a72a20d8d2d5d52e2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768236"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407728"
 ---
 # <a name="eur-00012-issue-an-eu-entry-certificate"></a>EUR-00012 Ausstellen einer EU-Gelangensbestätigung
 
@@ -84,6 +87,3 @@ Diese Prozedur läuft Sie durch das Aktivieren einer EU-Eintragsbescheinigung na
 4. Klicken Sie im Aktivitätsbereich auf "Rechnung".
 5. Ausgestellte Gelangensbestätigungen anzeigen
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

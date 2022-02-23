@@ -2,24 +2,27 @@
 title: Zahlungsmodul
 description: In diesem Thema wird das Zahlungsmodul behandelt und beschrieben, wie es in Microsoft Dynamics 365 Commerce konfiguriert wird.
 author: anupamar-ms
-ms.date: 01/07/2022
+manager: annbe
+ms.date: 11/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: de92e137815cb79944a2793fc4841c949ed43346
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 27b73f7a05605e4e3ee8f8b72400172b7a8bfc33
+ms.sourcegitcommit: ec78608eb96478b7a57928b60aece129d6799c5b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952468"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "4581911"
 ---
 # <a name="payment-module"></a>Zahlungsmodul
 
@@ -46,9 +49,9 @@ Der Adyen-Zahlungskonnektor unterstützt auch Starke Kundenauthentifizierung (SC
 
 Die folgende Abbildung zeigt ein Beispiel für Geschenkkarten‑, Treuepunkt‑, Zahlungsmodule auf einer Auftragsabschlussseite.
 
-![Beispiel für Geschenkkarten-, Treuepunkt- und Adyen-Zahlungsmodule auf einer Auftragsabschlussseite.](./media/ecommerce-payments.PNG)
+![Beispiel für Geschenkkarten-, Treuepunkt- und Adyen-Zahlungsmodule auf einer Auftragsabschlussseite](./media/ecommerce-payments.PNG)
 
-## <a name="dynamics-365-payment-connector-for-paypal"></a>Dynamics 365 Payment Connector für PayPal
+## <a name="dynamics-365-payment-connector-for-paypal"></a>Dynamics 365-Zahlungsconnector für PayPal
 
 Ab Commerce Release 10.0.14 ist das Zahlungsmodul auch in den Dynamics 365 Zahlungsconnector für PayPal integriert. Weitere Informationen darüber, wie dieser Zahlungsconnector konfiguriert und eingerichtet wird, finden Sie unter [Dynamics 365-Zahlungsconnector für PayPal](paypal.md).
  
@@ -59,10 +62,10 @@ Wenn das Zahlungsmodul für die Verwendung des PayPal-Zahlungsconnectors konfigu
 Für den PayPal-Zahlungsconnector ist kein Abrechnungsadressmodul erforderlich, da alle abrechnungsbezogenen Informationen von PayPal in dessen iframe verarbeitet werden. Die Lieferadress- und Lieferoptionsmodule sind jedoch erforderlich.
 
 Die folgende Abbildung zeigt ein Beispiel für zwei Zahlungsmodule auf einer Auftragsabschlussseite, eines mit dem Adyen-Zahlungsconnector und das andere mit dem PayPal-Zahlungsconnector konfiguriert.
-![Beispiel für Adyen-Zahlungs- und PayPal-Module auf einer Auftragsabschlussseite.](./media/ecommerce-paypal.png)
+![Beispiel für Adyen-Zahlungs- und PayPal-Module auf einer Auftragsabschlussseite](./media/ecommerce-paypal.png)
 
 Die folgende Abbildung zeigt ein Beispiel für den PayPal-iframe, der über die PayPal-Schaltfläche aufgerufen wird. 
-![Beispiel des Paypal-iFrame auf einer Auftragsabschlussseite.](./media/ecommerce-paypal-iframe.png)
+![Beispiel des Paypal-iframe auf einer Auftragsabschlussseite](./media/ecommerce-paypal-iframe.png)
 
 ## <a name="payment-module-properties"></a>Zahlungsmoduleigenschaften
 
@@ -76,7 +79,7 @@ Die folgende Abbildung zeigt ein Beispiel für den PayPal-iframe, der über die 
 |Ist primäre Zahlung|  **True** oder **False** | Wenn **True** werden alle Fehlermeldungen vom primären Zahlungsconnector auf der Auftragsabschlussseite aus generiert. Wenn sowohl Adyen- als auch PayPal-Zahlungsconnectors konfiguriert sind, legen Sie Adyen auf **True** fest, das in Commerce Release 10.0.14 hinzugefügt wurde.|
 
 Die folgende Abbildung zeigt ein Beispiel, bei dem der Wert **Unterstützte Zahlungsmitteltypen** in der Zahlungsconnectorkonfiguration in der Commerce-Zentralverwaltung auf „PayPal“ gesetzt ist.
-![Beispiel für unterstützte Zahlungsmitteltypen in der Commerce-Zentralverwaltung.](./media/ecommerce-paymenttendertypes.png)
+![Beispiel für unterstützte Zahlungsmitteltypen in der Commerce-Zentralverwaltung](./media/ecommerce-paymenttendertypes.png)
 
 ## <a name="billing-address"></a>Rechnungsadresse
 
@@ -90,28 +93,11 @@ Um ein Abrechnungsadressmodul auf der Auftragsabschlussseite zu verwenden, wenn 
 
 Ein Zahlungsmodul kann nur zu einem Checkout-Modul hinzugefügt werden. Weitere Informationen zum Konfigurieren eines Zahlungsmoduls für eine Checkout-Seite erhalten Sie unter [Checkout-Modul](add-checkout-module.md).
 
-## <a name="configure-the-adyen-and-paypal-payment-connectors-when-both-are-used"></a>Konfigurieren Sie die Zahlungskonnektoren von Adyen und PayPal, wenn beide verwendet werden
-
-Wenn sowohl der Adyen- als auch der PayPal-Zahlungskonnektor für Ihre Site verwendet werden, führen Sie diese Schritte im Commerce-Website-Generator aus, um Zahlungsmodule für jeden Konnektor zum Checkoutmodul hinzuzufügen und dann die Eigenschaften für jedes Modul zu konfigurieren.
-
-1. Führen Sie im Eigenschaftenbereich für das PayPal-Zahlungsmodul die folgenden Schritte aus:
-
-    1. Im Feld für die Eigenschaft **Unterstützte Zahlungsmitteltypen** geben Sie **PayPal** ein.
-    1. Deaktivieren Sie das Kontrollkästchen für die Eigenschaft **Ist primäre Zahlung**.
-    1. Aktivieren Sie das Kontrollkästchen für die Eigenschaft **Konnektor-ID verwenden**.
-
-1. Führen Sie im Eigenschaftenbereich für das Adyen-Zahlungsmodul die folgenden Schritte aus:
-
-    1. Lassen Sie das Feld für die Eigenschaft **Unterstützte Zahlungsmitteltypen** leer.
-    1. Aktivieren Sie das Kontrollkästchen für die Eigenschaft **Ist primäre Zahlung**.
-    1. Aktivieren Sie das Kontrollkästchen für die Eigenschaft **Konnektor-ID verwenden**.
-
-> [!NOTE]
-> Wenn Sie die Adyen- und PayPal-Konnektoren für die gemeinsame Verwendung konfigurieren, wird die **Zahlungskonnektor von Dynamics 365 für Adyen**-Konfiguration in der **Zahlungskonten**-Konnektorkonfiguration in der Commerce-Zentrale des Onlinekanals an erster Stelle stehen. Um die Konnektorreihenfolge zu bestätigen oder zu ändern, gehen Sie zu **Onlineshops**, und wählen Sie den Kanal für Ihre Website aus. Stellen Sie dann auf der **Konfiguration**-Registerkarte im Inforegister **Zahlungskonten** unter **Konnektor** sicher, dass die **Zahlungskonnektor von Dynamics 365 für Adyen**-Konfiguration an erster Stelle (d. h. in der obersten Zeile) steht und dass die **Dynamics 365-Zahlungskonnektor für PayPal**-Konfiguration in der zweiten Zeile steht. Fügen Sie nach Bedarf Konnektoren hinzu oder entfernen Sie sie, um sie neu anzuordnen.
+Wenn sowohl Adyen- als auch PayPal-Zahlungsconnectors benötigt werden, fügen Sie beide Module zum Zahlungsbereich hinzu. Stellen Sie sicher, dass der Eigenschaftswert **Unterstützte Zahlungsmitteltypen** für PayPal konfiguriert ist und lassen Sie ihn für Adyen leer. Legen Sie auch die Eigenschaft **Ist primäre Zahlung** für Adyen auf **True** fest.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Einkaufskorbmodul](add-cart-module.md)
+[Einkaufswagenmodul](add-cart-module.md)
 
 [Modul für Einkaufswagensymbol](cart-icon-module.md)
 
@@ -132,6 +118,3 @@ Wenn sowohl der Adyen- als auch der PayPal-Zahlungskonnektor für Ihre Site verw
 [Dynamics 365-Zahlungsconnector für PayPal](paypal.md)
 
 [Starke Kundenauthentifizierung mit dem Adyen-Konnektor](adyen_redirect.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

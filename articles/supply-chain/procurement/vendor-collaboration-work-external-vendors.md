@@ -1,10 +1,12 @@
 ---
 title: Kreditorenzusammenarbeit mit externen Kreditoren
 description: In diesem Thema wird erklärt, wie Einkaufsvertreter mit externen Keditoren kooperieren können, um Informationen über Bestellungen und Lieferbestand auszutauschen.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart, PurchaseOrderResponseActionRemarks, PurchVendorPortalAllResponse, PurchOrderInExternalReview, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3b679f8daed1e09c832a5d138473cccba03552f6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 594a5bc8762d4c3fdc0bfd901ab97262b0f67a53
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576975"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016752"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Kreditorenzusammenarbeit mit externen Kreditoren
 
@@ -33,7 +35,7 @@ Weitere Informationen dazu, was externe Kreditoren in der Kreditorenzusammenarbe
 > [!NOTE]
 > Die Informationen zur Kreditorenzusammenarbeit in diesem Thema gelten nur für die aktuelle Version von Supply Chain Management. In Microsoft Dynamics AX 7.0 (Februar 2016) und Microsoft Dynamics AX-Anwendungsversion 7.0.1 (Mai 2016) arbeiten Sie mit Kreditoren zusammen, indem Sie das Modul **Kreditorenportal** verwenden. Informationen zum Modul **Kreditorenportal** finden Sie unter [Zusammenarbeiten mit Kreditoren mithilfe des Kreditorenportals](collaborate-vendors-vendor-portal.md).
 
-Weitere Informationen dazu, wie Kreditoren die Kreditorenzusammenarbeit in Rechnungsstellungsprozessen verwenden können, finden Sie unter [Kreditorenzusammenarbeit-Rechnungsstellungsarbeitsbereich](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md) Informationen darüber, wie neue Nutzer der Kreditorezusammenarbeit bereitgestellt werden, finden Sie unter [Kreditorenzusammenarbeitbenutzer verwalten](manage-vendor-collaboration-users.md).
+Weitere Informationen dazu, wie Kreditoren die Kreditorenzusammenarbeit in Rechnungsstellungsprozessen verwenden können, finden Sie unter [Kreditorenzusammenarbeit-Rechnungsstellungsarbeitsbereich](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md) Informationen darüber, wie neue Nutzer der Kreditorezusammenarbeit bereitgestellt werden, finden Sie unter [Kreditorenzusammenarbeitbenutzer verwalten](manage-vendor-collaboration-users.md).
 
 ## <a name="defining-the-information-that-is-shown-to-vendors-when-they-respond-to-pos"></a>Definieren der Informationen, die den Kreditoren angezeigt werden, wenn sie auf Bestellungen antworten
 
@@ -90,19 +92,19 @@ Die folgende Tabelle zeigt den üblichen Informationsaustausch, abhängig von de
 <tbody>
 <tr class="even">
 <td>Der Kreditor <strong>akzeptiert</strong> den Auftrag, und Supply Chain Management wird so konfiguriert, dass Bestellungen, die der Kreditor akzeptiert, automatisch bestätigt werden.</td>
-<td>Der Status einer Bestellstatus wird auf <strong>Bestätigt</strong> aktualisiert. Wenn der Auftrag aus&#39;einem bestimmten Grund nicht aktualisiert werden kann, wird die Antwort des Kreditors trotzdem als <strong>Akzeptiert</strong> erfasst, die Bestellung bleibt aber im Status <strong>In externer Prüfung</strong>. 
+<td>Der Status einer Bestellstatus wird auf <strong>Bestätigt</strong> aktualisiert. Wenn der Auftrag aus einem bestimmten Grund nicht aktualisiert werden kann, wird die Antwort des Kreditors trotzdem als <strong>Akzeptiert</strong> erfasst, die Bestellung bleibt aber im Status <strong>In externer Prüfung</strong>. 
 
 Die Bestellung, die an den Kreditor gesendet wurde und die den Status <strong>In externer Prüfung</strong> hat, wird mit bestätigtem Lieferdatum für die Positionen aktualisiert. Diese Aktualisierung initiiert eine neue Version, die automatisch auf den Status <strong>Bestätigt</strong> festgelegt wird. Wenn die Bestellung bestätigt wird, wird sie in der Zusammenarbeitschnittstelle des Kreditors angezeigt.</td>
 </tr>
 <tr class="odd">
-<td>Der Kreditor <strong>akzeptiert</strong> den Auftrag, aber Supply Chain Management wird&#39;so konfiguriert, dass Bestellungen, die der Kreditor akzeptiert, automatisch bestätigt werden.</td>
+<td>Der Kreditor <strong>akzeptiert</strong> den Auftrag, aber Supply Chain Management wird so konfiguriert, dass Bestellungen, die der Kreditor akzeptiert, automatisch bestätigt werden.</td>
 <td>Die Antwort des Kreditors wird als <strong>Bestätigt</strong> erfasst, die Bestellung bleibt jedoch im Status <strong>Externe Prüfung</strong>.
 
 Die Bestellung, die an den Kreditor gesendet wurde und die den Status <strong>In externer Prüfung</strong> hat, wird mit bestätigtem Lieferdatum für die Positionen aktualisiert. Diese Aktualisierung initiiert eine neue Version, die automatisch auf den Status <strong>In externer Überprüfung</strong> festgelegt wird. Sie können anschließend die Bestellung manuell bestätigen.</td>
 </tr>
 <tr class="even">
 <td>Der Kreditor <strong>lehnt</strong> die Bestellung ab.</td>
-<td>Die Antwort des Kreditors wird als <strong>Abgelehnt</strong> erfasst, die Bestellung bliebt jedoch im Status <strong>Externe Prüfung</strong>. Die Ablehnung wird zusammen mit dem Kreditoren-Hinweis&#39;empfangen</td>
+<td>Die Antwort des Kreditors wird als <strong>Abgelehnt</strong> erfasst, die Bestellung bliebt jedoch im Status <strong>Externe Prüfung</strong>. Die Ablehnung wird zusammen mit dem Kreditoren-Hinweis empfangen</td>
 </tr>
 <tr class="odd">
 <td>Der Kreditor <strong>akzeptiert</strong> den Auftrag <strong>mit Änderungen</strong>. Änderungen werden auf Positionsebene vorgeschlagen. Der Kreditor kann einzelne Positionen annehmen oder ablehnen. Hier sind einige andere Änderungen, die der Kreditor vorschlagen kann:
@@ -111,7 +113,7 @@ Die Bestellung, die an den Kreditor gesendet wurde und die den Status <strong>In
 <li>Teilen Sie Positionen für verschiedene Lieferdaten und Mengen auf.</li>
 <li>Einen Artikel ersetzen.</li>
 </ul>
-Der Kreditor kann&#39;keine Preisinformationen und Gebühren ändern. Allerdings kann der Kreditor diese Änderungen vorschlagen, indem er Hinweise verwendet.</td>
+Der Kreditor kann keine Preisinformationen und Gebühren ändern. Allerdings kann der Kreditor diese Änderungen vorschlagen, indem er Hinweise verwendet.</td>
 <td>Die Antwort des Kreditors wir als <strong>Mit Änderungen akzeptiert</strong>, erfasst und der Status der Bestellung bleibt <strong>In externer Prüfung</strong> Die Statusangaben zeigen die Arten von Änderungen, die der Kreditor vorgeschlagen hat. Weitere Informationen zum automatischen Verbrauch der Änderungen lesen Sie im Abschnitt &quot;Die Bestellung aktualisieren, wenn ein Kreditor Änderungen vorschlägt&quot;, später in diesem Thema. </td>
 </tr>
 </tbody>
@@ -249,13 +251,10 @@ Der Benutzer, der Parameter für den Angebotsanforderungsprozess einrichtet, kan
 - %bidType%
 - %inviteOnly%
 - %expiryDateTime%
-- %requester%
+- %anfordernde Person%
 - %requestingDepartment%
-- %accountnum%
-- %todaysdate%
-- %createddate%
+- %Kontonummer%
+- %heutiges Datum%
+- %Erstellungsdatum%
 
 Wenn eine Ergänzung erforderlich ist und übermittelt wird, nachdem die Angebotsanforderung gesendet wurde, wird die Angebotsanforderung an alle eingeladenen Kreditoren erneut übermittelt. Das veröffentlichte Dokument wird auch auf der Seite **Offene veröffentlichte Angebotsanforderungen** aktualisiert.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

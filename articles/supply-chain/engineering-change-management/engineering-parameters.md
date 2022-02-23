@@ -2,22 +2,25 @@
 title: Parameter für die Verwaltung für technische Änderungen
 description: In diesem Thema wird erklärt, wie Sie die Funktionen der Verwaltung für technische Änderungen für Microsoft Dynamics 365 Supply Chain Management konfigurieren.
 author: t-benebo
+manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 106c3a79236bcb8112ecbd48e29f3f5f3148a867
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 0cf0e56a8aece98379aa0f181d7b7ff665767544
+ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581007"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4429156"
 ---
 # <a name="engineering-change-management-parameters"></a>Parameter für die Verwaltung für technische Änderungen
 
@@ -54,6 +57,3 @@ Die folgende Tabelle beschreibt die Felder, die auf der Registerkarte **Verwaltu
 | Schweregradregel | Wählen Sie aus, wie der Schweregrad einer Änderungsanforderung festgelegt werden soll. Wählen Sie *Manuell*, wenn der Benutzer einen Wert in das Feld **Schweregrad** eingeben soll. Wählen Sie *Berechnen*, wenn das System den Wert des Felds **Schweregrad** berechnen soll, wenn Sie **Schweregrad berechnen** im Aktivitätsbereich des Änderungsauftrags wählen. In diesem Fall verwendet das System die Schweregradregeln, die auf der Seite **Schweregrad-Regelsatz** festgelegt sind. Wählen Sie *Automatisch berechnen*, damit der Wert des Feldes **Schweregrad** automatisch berechnet und entsprechend der festgelegten Schweregrad-Regeln ausgefüllt wird. |
 | Betroffene Produkte erneut freigeben | Dieses Feld ist anwendbar, wenn Sie Produkte über einen Änderungsauftrag neu freigeben. Im Dialogfeld **Wiederfreigaben** können Sie wählen, ob alle Produkte oder nur die betroffenen Produkte vorgeschlagen werden sollen. |
 | Freizugebende Stücklistenebenen | Die Tiefe der Stücklistenebene, die freigegeben werden soll. Wenn die Stückliste mehr Ebenen hat (d.h. tiefer ist) als der hier angegebene Wert, werden nur die Ebenen bis zum angegebenen Wert freigegeben. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

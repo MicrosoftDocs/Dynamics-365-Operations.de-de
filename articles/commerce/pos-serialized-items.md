@@ -2,22 +2,25 @@
 title: Arbeiten mit serialisierten Artikeln in der POS
 description: In diesem Thema wird erläutert, wie Sie serialisierte Artikel in der Verkaufsstellen-(POS)-Anwendung verwalten.
 author: boycezhu
-ms.date: 01/08/2021
+manager: annbe
+ms.date: 08/21/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 5725943fd249e1b5d66b08b829c2eb58b6aad3ee24db9ca83bbde9be906bbf82
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6ba01abc3d1a4496ec586a621aa03b4981f84d76
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737577"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412678"
 ---
 # <a name="work-with-serialized-items-in-the-pos"></a>Arbeiten mit serialisierten Artikeln in der POS
 
@@ -84,55 +87,11 @@ Optional können Sie die Überprüfung der Verfügbarkeit von Seriennummern wäh
 
 Um eine solche Validierung als Voraussetzung zu aktivieren, müssen Sie die folgenden Einzelvorgänge so planen, dass sie regelmäßig ausgeführt werden:
 
-- **Einzelhandel und Handel** > **Einzelhandel und Handel IT** > **Produkte und Bestand** > **Produktverfügbarkeit mit Rückverfolgungsangaben**
-- **Einzelhandel und Handel** > **Verteilungspläne** > **1130** (**Produktverfügbarkeit**)
-
-## <a name="sell-serialized-items-in-pos"></a>Serialisierte Artikel am POS verkaufen
-
-Während die POS-Anwendung den Verkauf von serialisierten Artikeln immer unterstützt hat, können Unternehmen in Commerce Version 10.0.17 und höher Funktionen aktivieren, die die Geschäftslogik verbessern, die beim Verkauf von Produkten ausgelöst wird, die für die Nachverfolgung von Seriennummern konfiguriert sind.
-
-Wenn die Funktion **Verbesserte Validierung der Seriennummer bei der POS-Auftragserfassung und Auftragserfüllung** aktiviert ist, werden die folgenden Produktkonfigurationen beim Verkauf von serialisierten Produkten am POS ausgewertet:
-
-- **Serientyp**-Setup für das Produkt (**aktiv** oder **im Verkauf aktiv**).
-- **Leere Abgang zulässig**-Einstellungen für das Produkt.
-- **Physischer negativer Bestand**-Einstellungen für das Produkt und/oder das Verkaufslager.
-
-### <a name="active-serial-configurations"></a>Aktive Serienkonfigurationen
-
-Wenn Artikel am POS verkauft werden, die mit einer **Aktiven** Rückverfolgungsangaben für Seriennummern konfiguriert sind, initiiert POS eine Validierungslogik, die verhindert, dass Benutzer den Verkauf eines serialisierten Artikels mit einer Seriennummer abschließen, die nicht im aktuellen Inventar des Verkaufslagers enthalten ist. Es gibt zwei Ausnahmen von dieser Validierungsregel:
-
-- Wenn das Element auch mit aktiviertem **Leere Abgabe zulässig** konfiguriert ist, können Benutzer die Eingabe der Seriennummer überspringen und den Artikel ohne Seriennummernbezeichnung verkaufen.
-- Wenn der Artikel und/oder das Verkaufslager mit aktiver Option **Physische negativer Bestand** konfiguriert ist, akzeptiert und verkauft die Anwendung eine Seriennummer, die in dem Lager, von dem verkauft wird, nicht als Bestand bestätigt werden kann. Diese Konfiguration ermöglicht, dass die Bestandstransaktion für diese bestimmte Artikel-/Seriennummer negativ wird, und daher ermöglicht das System den Verkauf unbekannter Seriennummern.
-
-> [!IMPORTANT]
-> Um sicherzustellen, dass die POS-Anwendung ordnungsgemäß überprüfen kann, ob die Seriennummern, die für **Aktive** Serientypartikel verkauft werden, sich im Bestand des Verkaufslagers befinden, ist es erforderlich, dass Unternehmen den Auftrag **Produktverfügbarkeit mit Rückverfolgungsangaben** häufig in der Commerce-Zentralverwaltung ausführen, ebenso wie den zugehörigen **1130**-Auftrag zur Verteilung der Produktverfügbarkeit über die Commerce-Zentralverwaltung. Da neuer serialisierter Bestand in den Verkaufslagern eingeht, muss der Bestandsmaster die Kanaldatenbank regelmäßig mit den aktuellen Bestandsverfügbarkeitsdaten aktualisieren, damit der POS die Bestandsverfügbarkeit der verkauften Seriennummern überprüfen kann. Der **Produktverfügbarkeit mit Rückverfolgungsangaben**-Auftrag erstellt eine aktuelle Momentaufnahme des Hauptinventars, einschließlich der Seriennummern, für alle Firmenlager. Der **1130**-Verteilungsauftrag erstellt diese Bestandsmomentaufnahme und teilt sie mit allen konfigurierten Kanaldatenbanken.
-
-### <a name="active-in-sales-process-serial-configurations"></a>Aktive Seriennummern des Vertriebsprozesses
-
-Artikel, die mit der Seriendimension als **Im Verkaufsprozess aktiv** konfiguriert sind, durchlaufen keine Bestandsvalidierungslogik, da diese Konfiguration impliziert, dass die Bestandsseriennummern nicht vorab in den Bestand registriert sind und die Seriennummern nur zum Zeitpunkt des Verkaufs erfasst werden.  
-
-Wenn **Leere Abgabe zulässig** auch für als **Im Verkaufsprozess aktiv** konfigurierte Artikel konfiguriert ist, kann die Eingabe der Seriennummer übersprungen werden. Wenn **Leere Abgabe zulässig** nicht konfiguriert ist, fordert die Anwendung vom Benutzer, die Eingabe einer Seriennummer, die jedoch nicht anhand des verfügbaren Bestands überprüft wird.
-
-### <a name="apply-serial-numbers-during-creation-of-pos-transactions"></a>Beim Erstellen von POS-Transaktionen Seriennummern anwenden
-
-Die POS-Anwendung fordert Benutzer beim Verkauf eines serialisierten Artikels sofort zur Erfassung der Seriennummer auf. Mit der Anwendung können Benutzer jedoch die Eingabe von Seriennummern bis zu einem bestimmten Punkt im Verkaufsprozess überspringen. Wenn der Benutzer mit der Erfassung der Zahlung beginnt, erzwingt die Anwendung die Eingabe der Seriennummer für alle Artikel, die nicht für die Erfüllung durch zukünftige Sendungen oder Abholungen konfiguriert sind. Bei serialisierten Artikeln, die für Abholungs- oder Bargelderfüllung konfiguriert sind, muss der Benutzer die Seriennummer erfassen (oder sich damit einverstanden erklären, sie leer zu lassen, wenn die Artikelkonfiguration dies zulässt), bevor er den Verkauf abschließt.
-
-Bei serialisierten Artikeln, die zur zukünftigen Abholung oder zum Versand verkauft werden, können POS-Benutzer die Eingabe der Seriennummer zunächst überspringen und dennoch die Erstellung der Kundenbestellung abschließen.   
-
-> [!NOTE]
-> Beim Verkauf oder der Erfüllung von serialisierten Produkten über die POS-Anwendung wird für die serialisierten Artikel in der Verkaufstransaktion eine Menge von „1“ erzwungen. Dies ist ein Ergebnis der Art und Weise der Verfolgung der Seriennummerninformationen in der Verkaufszeile. Beim Verkauf oder der Ausführung einer Transaktion für mehrere serialisierte Artikel über den POS muss jede Verkaufszeile nur mit einer Menge von „1“ konfiguriert werden. 
-
-### <a name="apply-serial-numbers-during-customer-order-fulfillment-or-pickup"></a>Seriennummern während der Auftragserfüllung oder Abholung anwenden
-
-Bei der Erfüllung von Kundenauftragspositionen für serialisierte Produkte mit dem Vorgang **Auftragserfüllung** am POS erzwingt der POS die Erfassung der Seriennummer vor der endgültigen Erfüllung. Wenn bei der Erstbestellungserfassung keine Seriennummer angegeben wurde, muss diese daher während des Kommissionierungs-, Verpackungs- oder Versandprozesses am POS erfasst werden. Bei jedem Schritt wird eine Validierung durchgeführt, und der Benutzer wird nur dann nach Seriennummern gefragt, wenn diese fehlen oder nicht mehr gültig sind. Wenn ein Benutzer beispielsweise die Schritte zum Kommissionieren oder Verpacken überspringt und sofort eine Sendung initiiert und keine Seriennummer für die Leitung registriert wurde, muss die Seriennummer vor Abschluss des letzten Rechnungsschritts am POS eingegeben werden. Wenn Sie die Erfassung der Seriennummer während der Auftragserfüllung am POS erzwingen, gelten weiterhin alle zuvor in diesem Thema genannten Regeln. Nur als **Aktiv** serialisierte konfiguriert Elemente durchlaufen eine Bestandsüberprüfung der Seriennummer. Als **Im Verkaufsprozess aktiv** konfigurierte Elemente werden nicht validiert. Wenn **Physischer negativer Bestand** für **Aktiv**-Produkte zulässig ist, wird jede Seriennummer akzeptiert, unabhängig von der Verfügbarkeit des Bestands. Für **Aktive** und **Um Verkaufsprozess aktive** Artikel kann ein Benutzer, wenn **Leere Abgabe zulässig** konfiguriert ist, bei die Seriennummern Bedarf während der Schritte zum Kommissionieren, Verpacken und Versenden leer lassen.
-
-Validierungen für Seriennummern werden auch durchgeführt, wenn ein Benutzer die Abholvorgänge für Kundenbestellungen am POS ausführt. Die POS-Anwendung ermöglicht nicht, dass eine Abholung eines serialisierten Produkts abgeschlossen wird, es sei denn, sie besteht die oben genannten Validierungen. Die Validierungen basieren immer auf der Rückverfolgungsangaben des Produkts und den Verkaufslagerkonfigurationen. 
+- **Retail und Commerce** > **Retail und Commerce IT** > **Produkte und Bestand** > **Produktverfügbarkeit mit Rückverfolgungsangaben**
+- **Retail und Commerce** > **Verteilungspläne** > **1130** (**Produktverfügbarkeit**)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Eingehender Bestandsvorgang in POS](./pos-inbound-inventory-operation.md)
+[Eingehender Bestandsvorgang in POS](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
 
-[Ausgehender Bestandsvorgang in POS](./pos-outbound-inventory-operation.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Ausgehender Bestandsvorgang in POS](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)

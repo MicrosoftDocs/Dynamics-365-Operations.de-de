@@ -1,30 +1,32 @@
 ---
 title: Power BI-Inhalt zu Ist im Vergleich mit Budget
-description: In diesem Thema wird der Power BI-Inhalt zu Ist im Vergleich mit Budget beschrieben. Es wird erläutert, wie auf Berichte zugegriffen wird, und es werden Informationen zum Datenmodell bereitgestellt.
-author: panolte
+description: In diesem Thema wird der Power BI-Inhalt zu Ist im Vergleich mit Budget beschrieben. Es wird beschrieben, wie auf die Berichte, die im Inhalt enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet wurden.
+author: ryansandness
+manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetTrackingWorkspace
 audience: Application user, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: panolte
+ms.author: ryansand
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7a5628dc67c721bf616803d6a31047cee09d8a434d43c0175dd8639815b7c9a6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6a185da5055741ac30c7e237ef72d07084644651
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737902"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685272"
 ---
 # <a name="actual-vs-budget-power-bi-content"></a>Power BI-Inhalt zu Ist im Vergleich mit Budget
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird der Microsoft Power BI-Inhalt **Istwert vs. Budget** beschrieben. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen, und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet wurden, um den Inhalt zu erstellen.
+In diesem Thema wird der Power BI-Inhalt zu **Ist im Vergleich mit Budget** beschrieben. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen, und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet wurden, um den Inhalt zu erstellen.
 
 ## <a name="overview"></a>Übersicht
 
@@ -55,6 +57,3 @@ Die folgende Tabelle enthält Details zur Metrik, die sich auf jeder Berichtssei
 | Sachkonten                   | Sachkonten, die verwendet werden können, um den Bericht nach dem aktuellen Sachkonto zu filtern              |
 | Budgetcodes              | Budgetcodes, nach denen Berichte gefiltert werden können                                                |
 | Juristische Personen            | Juristische Personen, die verwendet werden können, um nach der aktuellen juristischen Person zu filtern. |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

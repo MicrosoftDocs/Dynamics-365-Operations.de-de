@@ -1,10 +1,12 @@
 ---
 title: Tastenkombinationen
-description: Dieses Thema bietet einen Überblick über die Tastenkombinationen, die Sie bei der Arbeit mit Apps für Finanzen und Betrieb verwenden können.
+description: Dieses Thema bietet einen Überblick über die Tastenkombinationen, die Sie in Finance and Operations-Apps verwenden können.
 author: jasongre
-ms.date: 12/10/2021
+manager: AnnBe
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,21 +16,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ecf745337c15270290f02496cc6ce4ccac86861
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d2dee0b1eb911764ea68f9b6df5516bf2cb81d07
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070982"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798225"
 ---
 # <a name="keyboard-shortcuts"></a>Tastenkombinationen
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
-
-Die folgenden Tastenkombinationen können Ihnen helfen, Daten in Apps für Finanzen und Betrieb schnell und effizient einzugeben.
+Mit den folgenden Tastaturkombinationen können Sie Daten in Finance and Operations-Apps schnell und effizient eingeben.
 
 > [!NOTE]
 > Die hier beschriebenen Tastenkürzel beziehen sich auf das US-Tastaturlayout. Möglicherweise entsprechen die Tasten anderer Tastaturlayouts nicht exakt den Tasten auf der US-Tastatur.
@@ -130,10 +129,8 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 
 ## <a name="grid-shortcuts"></a>Rasterverknüpfungen
 
-| Aktion                                                                                                             | Drücken Sie folgende Taste: .                           |
+| Aktion                                                                                                             | Taste(n)                           |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| Vertikales Scrollen                                                                                                     | Mausrad                     |
-| Horizontales Scrollen                                                                                                   | Umschalt + Mausrad             |
 | Zur nächsten/vorherigen Spalte wechseln                                                                                       | Registerkarte / UMSCHALT+TAB                 |
 | Zur nächsten/vorherigen Zeile wechseln                                                                                          | NACH-UNTEN-TASTE / NACH-OBEN-TASTE           |
 | Ohne Auswahl zur nächsten/vorherigen Zeile wechseln<blockquote>[!NOTE] Diese Verknüpfung gilt nur für Szenarien mit Mehrfachauswahl.</blockquote> | STRG+NACH-OBEN-TASTE / STRG+NACH-UNTEN-TASTE |
@@ -145,24 +142,22 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | Zum ersten Datensatz wechseln                                                                                               | STRG+POS1                       |
 | Zum letzten Datensatz wechseln                                                                                                | STRG+ENDE                        |
 | Alle Zeilen auswählen oder löschen                                                                                               | STRG+UMSCHALT+M                    |
-| Zur ersten markierten Zeile wechseln                                                                                           | ALT+UMSCHALT+M, F                  |
-| Zur nächsten markieren Zeile wechseln                                                                                            | ALT+UMSCHALT+M, L                  |
-| Zur vorherigen markieren Zeile wechseln                                                                                        | ALT+UMSCHALT+M, P                  |
-| Zur letzten markierten Zeile wechseln                                                                                           | ALT+UMSCHALT+M, N                  |
+| Zur ersten markierten Zeile wechseln                                                                                           | ALT+UMSCHALT+M, F                    |
+| Zur nächsten markieren Zeile wechseln                                                                                            | ALT+UMSCHALT+M, L                    |
+| Zur vorherigen markieren Zeile wechseln                                                                                        | ALT+UMSCHALT+M, P                    |
+| Zur letzten markierten Zeile wechseln                                                                                           | ALT+UMSCHALT+M, N                    |
 | Die Standardaktivität in einem Raster ausführen<blockquote>[!NOTE] Die Tastenkombination wird aktiviert, wenn der Fokus auf einer Zelle liegt, die einen Link enthält und alle Zellen in dieser Spalte Links haben</blockquote> | EINGABETASTE                           |
 | Fokus zwischen ausgewählter Zeile und Kopfzeile umschalten                                                               | ALT+UMSCHALT+H                     |
 | Die aktuelle Spalte vergrößern/verkleinern (mit Fokus in der Kopfzeile)                                                  | NACH-RECHTS-TASTE / NACH-LINKS-TASTE        |
-| Größe der aktuellen Spalte zur nächsten/vorherigen Position bewegen (mit Fokus in der Kopfzeile)                                   | STRG+UMSCHALT+NACH-RECHTS-TASTE / STRG+UMSCHALT+NACH-LINKS-TASTE |
-| Rasterfilterung für die aktuelle Spalte öffnen (mit Fokus in der Kopfzeile)                                              | Eingeben                           |
-| Größe der aktuellen Spalte an den Inhalt anpassen (mit Fokus in der Kopfzeile)                                           | A (oder doppelklicken Sie auf den Ziehpunkt für die Spaltengröße) |
+| Rasterfilterung für die aktuelle Spalte öffnen (mit Fokus in der Kopfzeile)                                              | EINGABETASTE                           |
 
 ## <a name="input-control-shortcuts"></a>Eingabesteuerungsverknüpfungen
 
-| Aktion                                                                   | Drücken Sie folgende Taste: .                         |
+| Aktion                                                                   | Taste(n)                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Den Link öffnen                                                           | STRG+EINGABETASTE                    |
-| Sitzungsdatum in ein Datumsfeld eingeben                                       | S                             |
-| Aktuelles Datum in ein Datumsfeld eingeben                                       | Di                             |
+| Sitzungsdatum in ein Datumsfeld eingeben                                       | S                         |
+| Aktuelles Datum in ein Datumsfeld eingeben                                       | Di                         |
 | Suche, Kombinationsfeld, Datumsauswahl, Ablagedialogfeld öffnen                         | ALT+NACH-UNTEN-TASTE                |
 | Suche, Kombinationsfeld, Datumsauswahl, Ablagedialogfeld schließen                        | ESC                           |
 | Fokus in eine Suche verschieben (wenn die Suche bereits offen ist)                   | ALT+NACH-UNTEN-TASTE                |
@@ -209,8 +204,8 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | Das Tool „Verschieben” verwenden (wenn im Personalisierungsmodus)                                                                       | M                                   |
 | Das aktuelle Steuerelemente als das zu verschiebende auswählen (wenn das Tool „Verschieben” verwendet wird und noch kein Steuerelement zum Verschieben ausgewählt ist)  | LEERTASTE oder EINGABETASTE                      |
 | Das Steuerelement zum Verschieben deaktivieren (wenn das Tool „Verschieben” verwendet wird)                                                                   | ESC                                 |
-| Zur nächsten Position für das ausgewählte Steuerelement wechseln (wenn das Tool „Verschieben“ verwendet wird)                                              | Registerkarte oder NACH-RECHTS-TASTE oder NACH-UNTEN-TASTE    |
-| Zur vorherigen Position für das ausgewählte Steuerelement wechseln (wenn das Tool „Verschieben“ verwendet wird)                                          | UMSCHALT+TAB oder NACH-LINKS-TASTE oder NACH-OBEN-TASTE |
+| Zur nächsten Position für das ausgewählte Steuerelement wechseln (wenn das Tool „Verschieben” verwendet wird)                                          | Registerkarte oder NACH-RECHTS-TASTE oder NACH-UNTEN-TASTE    |
+| Zur vorherigen Position für das ausgewählte Steuerelement wechseln (wenn das Tool „Verschieben” verwendet wird)                                      | UMSCHALT+TAB oder NACH-LINKS-TASTE oder NACH-OBEN-TASTE |
 | Das Tool „Ausblenden” verwenden (wenn im Personalisierungsmodus)                                                                       | H                                   |
 | Wechseln, ob das aktuelle Steuerelement sichtbar oder ausgeblendet ist (wenn das Tool „Ausblenden” verwendet wird)                                     | LEERTASTE oder EINGABETASTE                      |
 | Das Tool „Überspringen” verwenden (wenn im Personalisierungsmodus)                                                                       | K                                   |
@@ -260,6 +255,3 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 
 [Tastenkombinationen für eine Analyse für fehlende Konten](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

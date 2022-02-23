@@ -151,6 +151,3 @@ Die aktualisierten Zuordnungen sollten wie folgt aussehen.
 ![Arbeitskräfte einer Arbeitskraftaufgabe zuweisen](./media/WorkerMapping.png)
 
 ![Geschlechtsfeld-Umwandlung](./media/WorkerTransform.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

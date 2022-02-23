@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 9ac4b4bf236f2834331f761fe5005277b4970310b10bfc052888cc4327ee9dc5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 092f889deec84f8dd9bae8529657cd14b7069216
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776967"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459065"
 ---
 > [!IMPORTANT]
 > Diese Funktion ist derzeit nur auf Einladung verfügbar. Um Ihre Organisation für die Teilnahme zu nominieren, schließen Sie [diese Umfrage](https://aka.ms/ax2012upgrade) ab. 

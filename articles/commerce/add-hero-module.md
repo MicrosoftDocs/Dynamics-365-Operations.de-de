@@ -2,12 +2,15 @@
 title: Inhaltsblockmodul
 description: Dieses Thema behandelt Inhaltsblockmodule und erläutert, wie sie Webseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,21 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0b5ec0a75c613cedcee9d156d81380d679224ea476af4f4745a30040f257fed8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7a8b1c214ba31b7c47cecbe67bef493f5fa450fc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726438"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412503"
 ---
 # <a name="content-block-module"></a>Inhaltsblockmodul
+
 
 [!include [banner](includes/banner.md)]
 
 Dieses Thema behandelt Inhaltsblockmodule und erläutert, wie sie Webseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+
+## <a name="overview"></a>Übersicht
 
 Ein Inhaltsblockmodul wird zur Vermarktung von Produkten oder Werbeaktionen durch eine Kombination aus Bildern und Texten verwendet. So kann ein Einzelhändler beispielsweise ein Inhaltsblockmodul der Homepage einer E-Commerce-Seite hinzufügen, um ein neues Produkt zu bewerben und Kunden darauf aufmerksam zu machen.
 
@@ -46,11 +52,11 @@ Zusätzlich kann das Design für jedes Layout unterschiedliche Eigenschaften auf
 
 Die folgende Abbildung zeigt das Beispiel eines Inhaltsblockmoduls mit einem Helden-Layout.
 
-![Beispiel eines Hero-Moduls.](./media/Hero.PNG)
+![Beispiel eines Hero-Moduls](./media/Hero.PNG)
 
 Die folgende Abbildung zeigt das Beispiel eines Inhaltsblockmoduls mit einem Funktions-Layout.
 
-![Beispiele für Funktionsmodule.](./media/Feature.PNG)
+![Beispiele für Funktionsmodule](./media/Feature.PNG)
 
 ## <a name="content-block-module-properties"></a>Eigenschaften eines Inhaltsblockmoduls
 
@@ -77,7 +83,7 @@ Um ein Heromodul einer neuen Seite hinzuzufügen und die erforderlichen Eigensch
 1. Im **Haupt-** Slot der Standardseite fügen Sie ein Heromodul hinzu.
 1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
 1. Verwenden Sie das soeben erstellte Helden-Layout zur Erstellung einer Seite namens **Inhaltsblockseite**.
-1. Auf dem Seitenüberblick wählen Sie den Slot **Haupt** und wählen die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
+1. Auf dem Seitenüberblick wählen Sie den Slot (**Haupt**) und wählen die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
 1. Im Dialogfeld **Modul hinzufügen** unter **Modul wählen** wählen Sie das Heromodul, und wählen Sie dann **OK**.
 1. Wählen Sie im Gliederungsbaum links das Inhaltsblockmodul aus.
 1. Wählen Sie im Eigenschaftenbereich rechts und wählen Sie **Eine Bild hinzufügen** aus. Wählen Sie dann ein vorhandenes Bild aus oder laden Sie ein neues Bild hoch.
@@ -101,6 +107,3 @@ Um ein Heromodul einer neuen Seite hinzuzufügen und die erforderlichen Eigensch
 [Textblockmodul](add-content-rich-block.md)
 
 [Video-Player-Modul](add-video-player.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

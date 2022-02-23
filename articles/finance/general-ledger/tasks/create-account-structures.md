@@ -1,10 +1,12 @@
 ---
 title: Kontostrukturen erstellen
-description: Diese Prozedur führt Sie durch das Erstellen einer Kontostruktur.
+description: Dieser Aufgabenleitfaden führt Sie durch die Erstellung einer Kontostruktur.
 author: aprilolson
+manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DimensionConfigureAccountStructure, DimensionCreateAccountStructure, DimensionHierarchyAddLevel, DimensionHierarchyConstraintActivate
 audience: Application User
@@ -13,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e9ba43e243df4ba4b7c0eb6188629686206ff09b
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: 4a8df7d7d9c4555bf46ac1cc3f71695837b1369b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394538"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968579"
 ---
 # <a name="create-account-structures"></a>Kontostrukturen erstellen
 
 [!include [banner](../../includes/banner.md)]
 
-Diese Prozedur führt Sie durch das Erstellen einer Kontostruktur. Bei den Schritten wird das Demodatunternehmen USMF verwendet.
+Dieser Aufgabenleitfaden führt Sie durch die Erstellung einer Kontostruktur. Bei den Schritten wird das Demodatunternehmen USMF verwendet.
 
 1. Gehen Sie zu **Navigationsbereich > Module > Hauptbuch > Kontenplan > Strukturen > Kontostrukturen konfigurieren**.
 2. Klicken Sie im **Aktivitätsbereich** auf **Neu**, um das Dropdown-Dialogfeld zu öffnen.
@@ -58,6 +60,3 @@ Diese Prozedur führt Sie durch das Erstellen einer Kontostruktur. Bei den Schri
 29. Klicken Sie im **Aktivitätsbereich** auf **Aktivieren**.
 30. Klicken Sie auf **Aktivieren**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

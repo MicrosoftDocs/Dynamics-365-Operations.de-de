@@ -1,10 +1,12 @@
 ---
 title: Zugriff auf Anwendungs-Metadaten über die ER-Konfiguration
-description: In diesem Thema wird erläutert, wie ein Regulatory Configuration Service-Benutzer eine neue Modellzuordnung für elektronische Berichterstellung (EB) entwerfen kann, indem er die Metadaten verwendet.
+description: Die Schritte in diesem Thema erläutern, wie ein Regulatory Configuration Service (RCS)-Benutzer eine neue Modellzuordnung für elektronische Berichterstellung (ER) entwerfen kann, indem er die Metadaten in Finance and Operations verwendet.
 author: NickSelin
+manager: AnnBe
 ms.date: 06/28/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6ad175f81edcf6b21927d85927c42a3398a0286b4a766e06c88a61952384f75e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fa8e9ac4940bbc1252819ebcc3de2e21c9e0933f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754341"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682164"
 ---
 # <a name="access-application-metadata-by-using-er-configuration"></a>Zugriff auf Anwendungs-Metadaten über die ER-Konfiguration
 
@@ -123,6 +125,3 @@ In den folgenden Schritten wird erläutert, wie ein Regulatory Configuration Ser
 > [!NOTE]
 > Diese Art des Informationsabrufs von Informationen zu Anwendungsmetadaten ist als einzige für lokal bereitgestellte Anwendungen verfügbar (wenn lokale Geschäftsdaten (LBD) oder ein lokales Bereitstellungsmodell verwendet werden).
         
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

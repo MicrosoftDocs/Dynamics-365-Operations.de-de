@@ -2,13 +2,16 @@
 title: Auszugsbuchungen (Einzelhandel)
 description: In diesem Thema wird beschrieben, wie Auszüge erstellt und gebucht werden.
 author: ashishmsft
+manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 85183
 ms.assetid: df9c62a2-6f13-4a08-bdca-07d041172c1b
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 64b6fbda9f0396eb4ee6e2e248941f1429d4485278180d5c70dac6dd837a4537
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4409811d2ef60174a316db10307dc7af4697398c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738695"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412684"
 ---
 # <a name="retail-statements"></a>Einzelhandelsaufstellungen
 
@@ -31,7 +34,7 @@ In Dynamics 365 Commerce wird der Auszugsbuchungsprozess verwendet, um die Buchu
 
 Das folgende Abbildung zeigt den Auszugsbuchungsprozess. In diesem Vorgang werden Transaktionen, die im POS erfasst werden, mit dem Commerce-Steuerprogramm an den Client gesendet. Nachdem der Client die Buchungen erhält, können Sie den Buchungsauszug für die Filialen erstellen, berechnen und buchen.
 
-[![Auszugsbuchungsprozess.](./media/retail-statements.png)](./media/retail-statements.png)
+[![Auszugsbuchungsprozess](./media/retail-statements.png)](./media/retail-statements.png)
 
 ## <a name="creating-and-posting-statements"></a>Auszüge erstellen und buchen
 
@@ -85,6 +88,3 @@ Wenn Sie einen Auszug buchen, werden Aufträge und Rechnungen für die Verkäufe
 - Verkäufe, für die ein Debitor zu der Transaktion in POS hinzugefügt wurde, generieren für jeden einzelnen Debitor separate Aufträge und Rechnungen.
 
 Zahlungserfassungen werden automatisch für die Zahlungen in der Aufstellung erstellt, und der Lagerbestand wird für den POS-Speicher aktualisiert.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

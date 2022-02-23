@@ -1,10 +1,12 @@
 ---
 title: Anlagendarlehen
 description: In diesem Thema wird beschrieben, wie Anlagendarlehen in der Anlagenverwaltung erfasst werden.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectLoanSend, EntAssetObjectLoanListPage, EntAssetObjectLoanReturn, EntAssetObjectLoanInfoPart
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 65809d9be39372412d5d6b419f7356fe2c9668a1a01ede32ef52cbd66753e6d7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 355e3d3e0e952db14a03810145528f9701804ca2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752849"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022331"
 ---
 # <a name="asset-loans"></a>Anlagendarlehen
 
@@ -44,7 +46,7 @@ Wenn Ihr Unternehmen Anlagen für Reparatur- oder Wartungsaufträge von internen
 
 Um eine Liste mit allen Anlagen anzuzeigen, die Sie an andere Standorte oder an Kunden ausgeliehen haben, wählen Sie **Anlagenverwaltung** \> **Allgemeines** \> **Anlagendarlehen** \> **Alle Anlagendarlehen** aus. Wenn das Kontrollkästchen **Beendet** für eine Anlage aktiviert ist, wurde die Anlage als Ihrem Unternehmen zurückgegeben erfasst.
 
-![Wartungsanfragen verwalten.](media/06-manage-maintenance-requests.png)
+![Wartungsanfragen verwalten](media/06-manage-maintenance-requests.png)
 
 Auf der Seite **Aktive Anlagendarlehen** können Sie eine Liste aller Anlagendarlehen anzeigen, die noch nicht an Ihr Unternehmen zurückgegeben wurden.
 
@@ -55,6 +57,3 @@ Auf der Seite **Aktive Anlagendarlehen** können Sie eine Liste aller Anlagendar
 3. Geben Sie im Feld **Zurückgegeben** das Datum und die Uhrzeit ein.
 4. Wählen Sie **OK**.
 5. Aktualisieren Sie die Listenseite **Aktive Anlagendarlehen**. Sie sehen, dass das Anlagendarlehen nicht mehr in der Liste angezeigt wird.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

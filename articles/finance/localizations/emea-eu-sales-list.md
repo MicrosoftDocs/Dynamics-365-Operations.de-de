@@ -2,24 +2,27 @@
 title: Zusammenfassende Meldung
 description: Dieser Artikel enthält Informationen über Verkaufslisten-Berichte der Europäischen Union (EU).
 author: EvgenyPopovMBS
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EUSalesList
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 12811
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 33a17461038d3e81d3f3a827e52c9cfd781a5874d45c262ee9006564fb3d489d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 68cbd8d3495f8c10c57fa0751fabb03a6946c7dd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780343"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407742"
 ---
 # <a name="eu-sales-list-reporting"></a>Zusammenfassende Meldung
 
@@ -27,7 +30,8 @@ ms.locfileid: "6780343"
 
 Dieser Artikel enthält Informationen über Verkaufslisten-Berichte der Europäischen Union (EU).
 
-## <a name="eu-sales-list-reporting"></a>Zusammenfassende Meldung
+<a name="eu-sales-list-reporting"></a>Zusammenfassende Meldung
+-----------------------
 
 Ein Lieferant, der innergemeinschaftliche Lieferungen von Waren oder Dienstleistungen an Unternehmen ausführt, die innerhalb der Europäischen Union (EU) gegründet wurden, muss eine Erklärung für innergemeinschaftliche Lieferungen (zusammenfassende Meldung oder ESL) einreichen. Im Allgemeinen muss die ESL an die Steuerbehörden spätestens bis zum letzten Tag des Monats nach dem Kalenderzeitraum, den die ESL umfasst, übermittelt werden. Der Lieferant muss seine Umsatzsteuer-Identifikationsnummer auf der ESL und nach Debitor auch die folgenden Informationen angeben:
 
@@ -156,6 +160,3 @@ Wenn Sie den Berichterstellungsprozess für eine bestimmte Periode abgeschlossen
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

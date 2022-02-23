@@ -2,30 +2,35 @@
 title: Mediengaleriemodul
 description: Dieses Thema befasst sich mit Mediengaleriemodulen und beschreibt, wie diese Seiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
-ms.date: 08/02/2021
+manager: annbe
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 328a56a6efbdd97c8dac32d65c65ad31953cdb4c3ce56ef818ebe8bf633f93a4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 647387bafe8866cb1bee8c57675629af796f33e6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733196"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412661"
 ---
 # <a name="media-gallery-module"></a>Mediengaleriemodul
 
 [!include [banner](includes/banner.md)]
 
 Dieses Thema befasst sich mit Mediengaleriemodulen und beschreibt, wie diese Seiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+
+## <a name="overview"></a>Übersicht
 
 Mediengaleriemodule zeigen ein oder mehrere Bilder in einer Katalogansicht. Mediengaleriemodule unterstützen Miniaturansichten, die horizontal (als Zeile unter dem Bild) oder vertikal angeordnet werden (als Spalte neben dem Bild). Mediengaleriemodule bieten auch Funktionen, mit denen Bilder gezoomt (vergrößert) oder im Vollbildmodus angezeigt werden können. Um in einem Mediengaleriemodul gerendert zu werden, muss ein Bild in der Medienbibliothek des Commerce Site Builder verfügbar sein. Derzeit unterstützen Mediengaleriemodule nur Bilder.
 
@@ -41,7 +46,7 @@ Hier sind einige Anwendungsbeispiele für Mediengaleriemodule:
 
 In dem Beispiel der folgenden Abbildung werden in einem Kauffeld auf einer PDP Produktbilder mithilfe eines Mediengaleriemoduls gehostet.
 
-![Beispiel für ein Kauffeld auf einer Produktdetailseite, auf der Produktbilder mithilfe eines Mediengaleriemoduls gehostet werden.](./media/ecommerce-pdp-buybox.PNG)
+![Beispiel für ein Kauffeld auf einer Produktdetailseite, auf der Produktbilder mithilfe eines Mediengaleriemoduls gehostet werden](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="media-gallery-properties"></a>Eigenschaften der Mediengalerie
 
@@ -49,25 +54,19 @@ In dem Beispiel der folgenden Abbildung werden in einem Kauffeld auf einer PDP P
 |---------------|--------|-------------|
 | Bildquelle | **Seitenkontext** oder **Produkt ID** | Der Standardwert ist **Seitenkontext**. Wenn **Seitenkontext** ausgewählt ist, erwartet das Modul, dass die Seite die Produkt-ID bereitstellt. Wenn **Produkt ID** ausgewählt ist, muss die Produkt-ID für ein Bild als Wert für die **Produkt ID**-Eigenschaft angegeben werden. Diese Funktion steht in der Commerce-Version 10.0.12 zur Verfügung. |
 | Produktkennung | Produkt-ID | Diese Eigenschaft gilt nur, wenn der Wert der Eigenschaft **Bildquelle** ist **Produkt-ID**. |
-| Bildvergrößerung | **Inline** oder **Container** | Mit dieser Eigenschaft kann der Benutzer Bilder im Mediengaleriemodul zoomen. Ein Bild kann entweder inline oder in einem separaten Container neben dem Bild gezoomt werden. Diese Funktionalität ist in 10.0.12 verfügbar. |
-| Vergrößerungsfaktor | Eine Dezimalzahl | Diese Eigenschaft gibt den Skalierungsfaktor für das Zoomen von Bildern an. Wenn zum Beispiel der Wert auf **2,5** gesetzt ist, werden Bilder um das 2,5-Fache vergrößert. |
-| Vollbild | **True** oder **False** | Diese Eigenschaft gibt an, ob Bilder im Vollbildmodus angezeigt werden können. Im Vollbildmodus können Bilder auch weiter vergrößert werden, wenn die Funktionalität des Zooms eingeschaltet ist. Diese Funktionalität ist in der Commerce-Version 10.0.13 verfügbar. |
-| Gezoomte Bildqualität | Eine Zahl von 1 bis 100, die einen Prozentsatz darstellt und die mit einem Steuerelement ausgewählt wird | Diese Eigenschaft definiert die Bildqualität für vergrößerte Bilder. Es kann auf 100 Prozent festgelegt werden, um sicherzustellen, dass ein gezoomtes Bild immer die höchstmögliche Auflösung verwendet. Diese Eigenschaft ist nicht auf PNG-Dateien anwendbar, da diese ein verlustfreies Format verwenden. Diese Funktionalität ist ab der Commerce-Version 10.0.19 verfügbar. |
+| Bildvergrößerung | **Inline** oder **Container** | Mit dieser Eigenschaft kann der Benutzer Bilder im Mediengaleriemodul zoomen. Ein Bild kann entweder inline oder in einem separaten Container neben dem Bild gezoomt werden. Diese Funktion ist in Version 10.0.12 verfügbar |
+| Zoommaßstab | Eine Dezimalzahl | Diese Eigenschaft gibt den Skalierungsfaktor für das Zoomen von Bildern an. Wenn zum Beispiel der Wert auf **2,5** gesetzt ist, werden Bilder um das 2,5-Fache vergrößert.|
+| Vollbild | **True** oder **False** | Diese Eigenschaft gibt an, ob Bilder im Vollbildmodus angezeigt werden können. Im Vollbildmodus können Bilder auch weiter vergrößert werden, wenn die Zoomfunktion aktiviert ist. Diese Funktion steht in der Commerce-Version 10.0.13 zur Verfügung. |
 | Bilder | Bilder, die aus der Site-Builder-Medienbibliothek ausgewählt wurden | Bilder können nicht nur aus einem Produkt gerendert, sondern auch für ein Mediengaleriemodul kuratiert werden. Diese Bilder werden an alle verfügbaren Produktbilder angehängt. Diese Funktion steht in der Commerce-Version 10.0.12 zur Verfügung. |
 | Ausrichtung der Miniaturansicht | **Vertikal** oder **horizontal** | Diese Eigenschaft gibt an, ob Miniaturansichten in einem vertikalen oder horizontalen Streifen angezeigt werden sollen. |
-| Master-Produktbilder für Variante ausblenden | **True** oder **False** | Wenn diese Eigenschaft auf **True** festgelegt ist, werden bei Auswahl einer Variante die Bilder des Masterprodukts ausgeblendet, es sei denn, die Variante hat keine Bilder. Diese Eigenschaft wirkt sich nicht auf Produkte aus, die keine Varianten haben. |
-| Medien bei Dimensionsauswahl aktualisieren | **True** oder **False** | Wenn diese Eigenschaft auf **Wahr** gesetzt ist, werden Bilder in der Medienbibliothek aktualisiert, wenn irgendeine Dimension (wie Farbe, Stil oder Größe) ausgewählt wird und ein Bild verfügbar ist. Diese Eigenschaft trägt dazu bei, das Browsing-Erlebnis zu vereinfachen, da nicht jede Produktvariantendimension ausgewählt werden muss, damit das entsprechende Bild aktualisiert wird. Diese Eigenschaft ist auf der Registerkarte **Erweitert** verfügbar. |
-
-> [!IMPORTANT]
-> Die Eigenschaft **Medien bei Dimensionsauswahl aktualisieren** ist ab dem Release der Commerce-Version 10.0.21 verfügbar. Es erfordert, dass das Commerce-Modulbibliothekspaket in der Version 9.31 installiert ist.
 
 Die folgende Abbildung zeigt ein Beispiel eines Mediengaleriemoduls, in dem die Vollbild- und Zoomoptionen verfügbar sind.
 
-![Beispiel eines Mediengaleriemoduls, in dem die Vollbild- und Zoomoptionen verfügbar sind.](./media/ecommerce-media-zoom.png)
+![Beispiel eines Mediengaleriemoduls, in dem die Vollbild- und Zoomoptionen verfügbar sind](./media/ecommerce-media-zoom.png)
 
 Die folgende Abbildung zeigt ein Beispiel eines Mediengaleriemoduls mit kuratierten Bildern (d. h. die angegebenen Bilder hängen nicht von der Produkt-ID oder dem Seitenkontext ab).
 
-![Beispiel eines Mediengaleriemoduls mit kuratierten Bildern.](./media/ecommerce-media-curated.PNG)
+![Beispiel eines Mediengaleriemoduls mit kuratierten Bildern](./media/ecommerce-media-curated.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit-Interaktion
 
@@ -105,6 +104,3 @@ Gehen Sie folgendermaßen vor, um ein Mediengaleriemodul einer Marketingseite hi
 [Containermodul](add-container-module.md)
 
 [Bilder hochladen](dam-upload-images.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

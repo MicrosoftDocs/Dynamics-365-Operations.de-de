@@ -2,9 +2,11 @@
 title: Produktempfehlungen im POS hinzufügen
 description: In diesem Thema wird die Verwendung der Produktempfehlungen bei einem Verkaufsstelle (POS)-Gerät beschrieben.
 author: bebeale
+manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 29f502df7c158611df4eb2ddd5ac0e6bd6b4fe628113b2c544e33ba9c41cbcc7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 08784385dd1fead13f538b4e856b4bac6651a560
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763739"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969925"
 ---
 # <a name="add-product-recommendations-on-pos"></a>Produktempfehlungen im POS hinzufügen
 
@@ -39,7 +41,7 @@ Produktempfehlungen werden für die folgenden POS-Szenarien aktiviert. Sie sind 
 
     - Wenn ein Filialmitarbeiter eine **Produktdetails** Seite besucht, wenn er frühere Transaktionen über verschiedene Kanäle betrachtet, schlägt der Empfehlungsdienst zusätzliche Artikel vor, die wahrscheinlich zusammen gekauft werden.
 
-    [![Empfehlungen zur Produktdetailseite.](./media/proddetails.png)](./media/proddetails.png)
+    [![Empfehlungen zur Produktdetailseite](./media/proddetails.png)](./media/proddetails.png)
 
 2. Auf der **Transaktionen** Seite:
 
@@ -48,7 +50,7 @@ Produktempfehlungen werden für die folgenden POS-Szenarien aktiviert. Sie sind 
     > [!NOTE]
     > Zum Anzeigen von Empfehlungen auf der Seite **Buchung** muss der Einzelhändler das Bildschirmlayout in Dynamics 365 Commerce aktualisieren. Das Steuerelement **Empfehlungen** muss auf der Seite **Buchung** abgelegt werden.
 
-    [![Empfehlungen auf der Seite „Transaktion“.](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+    [![Empfehlungen auf de Seite „Transaktion“](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
 ## <a name="configure-commerce-to-enable-pos-recommendations"></a>Konfigurieren Sie Commerce, um POS-Empfehlungen zu aktivieren
 
@@ -89,6 +91,3 @@ Gehen Sie zum Einrichten von Produktempfehlungen folgendermaßen vor:
 [Empfehlungen mit Demodaten erstellen](product-recommendations-demo-data.md)
 
 [Produktempfehlungs-FAQs](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

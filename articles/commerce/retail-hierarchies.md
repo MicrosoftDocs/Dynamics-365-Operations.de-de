@@ -2,13 +2,16 @@
 title: Hierarchien in Commerce
 description: In diesem Artikel werden Hierarchien in Dynamics 365 Commerce beschrieben.
 author: jblucher
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: OMHierarchyManager, EcoResCategoryHierarchyFactbox
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 15851
 ms.assetid: dfa11d41-2a0c-4cde-99b6-058c49176c94
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 60534536476cfbe7a4f254923785ab1eb0001a3eaf7630dec75f28f07dff30d8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8f7e4d01970f459f66934fe434ec7307104b39b2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716166"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412658"
 ---
 # <a name="commerce-hierarchies"></a>Hierarchien in Commerce
 
@@ -42,6 +45,3 @@ In der folgenden Tabelle werden die Typen von verfügbaren Kategoriehierarchien 
 | Navigationshierarchie   | Verwenden Sie diesen Hierarchietyp, um Produkte in Kategorien zu gruppieren und zu organisieren, damit die Produkte online oder in POS gesucht werden können. |
 
 Durch Verwenden einer Kategoriehierarchie zum Strukturieren der Produkte können Sie Produktattribute und Eigenschaften auf Kategorieebene einrichten und warten. Diese Attribute und Eigenschaften umfassen Einstellungen für Produktdimensionen und Point-of-Sale-Einstellungen (POS). Alle Produkte, die den Kategorien zugewiesen werden, erben automatisch die Attribute und Eigenschaften, die Sie definieren. Sie können die Eigenschaftseinstellungen für ein beliebiges Produkt auf mehrere Produkte in einer ausgewählten Kategorie gleichzeitig kopieren.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

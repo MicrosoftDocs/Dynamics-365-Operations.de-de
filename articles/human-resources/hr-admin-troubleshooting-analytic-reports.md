@@ -1,32 +1,30 @@
 ---
 title: Problembehandlung bei analytischen Berichten
-description: Dieses Thema erklärt, wie Sie Probleme beheben und diagnostizieren, wenn die Datenänderungen eines Debitors in keinem seiner Arbeitsbereiche angezeigt werden.
-author: twheeloc
-ms.date: 08/19/2021
+description: In diesem Artikel wird erläutert, was zu tun ist, wenn die Datenänderungen eines Kunden in keinem der Arbeitsbereiche des Kunden angezeigt werden.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6ea04c06858cc98b0e233b9133d9dfbebfe59fd6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 99d9eb3a16e6470820a2eb0a19c1d50e89bd3d36
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067728"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418707"
 ---
 # <a name="troubleshoot-analytic-reports"></a>Problembehandlung bei analytischen Berichten
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Abgang**
 
@@ -34,7 +32,7 @@ Die Datenänderungen eines Kunden werden nicht in der Registerkarte **Analyse** 
 
 **Ursache**
 
-Standardmäßig werden die Microsoft Power BI-Berichte alle vier Stunden aktualisiert, entsprechend dem Zeitplan des Batch-Jobs „Messung bereitstellen“.
+Standardmäßig werden Microsoft Power BI-Berichte alle vier Stunden aktualisiert, entsprechend des Zeitplans des Batchauftrags „Messung bereitstellen”.
 
 **Auflösung**
 
@@ -44,7 +42,4 @@ Dieses Problem ist möglicherweise nur eine Frage der Zeitmessung. Gehen Sie fol
 1. Suchen Sie den Einzelvorgang **Messung bereitstellen** in der Liste.
 1. Wählen Sie **Bearbeiten** am oberen Seitenrand aus, und legen Sie das geplante Startdatum/Uhrzeit auf einen Wert fest, durch den die Analyse näher an der aktuellen Uhrzeit aktualisiert wird.
 
-![Batchaufträge.](media/batch-jobs.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+![Batchaufträge](media/batch-jobs.png)

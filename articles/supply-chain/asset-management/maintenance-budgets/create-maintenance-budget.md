@@ -1,10 +1,12 @@
 ---
 title: Erstellen von Wartungsbudgets
 description: In diesem Thema wird erläutert, wie Wartungsbudgets in der Anlagenverwaltung erstellt werden.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetBudgetLineAdjust, EntAssetBudget, EntAssetBudgetRecalc, EntAssetBudgetCopy, EntAssetBudgetLine, EntAssetBudgetCreate, EntAssetBudgetApprove, EntAssetBudgetCalculateActualCost
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a375eb7c208479615b2d5e7cf78168ffd7ac8b16c52c85a7ef5a41aa69c947d5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 602a00060c1e56285d9954981d019bececaf90fd
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776943"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020988"
 ---
 # <a name="create-maintenance-budgets"></a>Erstellen von Wartungsbudgets
 
@@ -50,12 +52,9 @@ Wartungsbudgets basieren auf den Kostentypen, die in der Anlagenverwaltung verwe
     > [!NOTE]
     > Nachdem Sie ein Wartungsbudget genehmigt haben, können Sie die zugehörigen Positionen der Seite **Wartungsbudgetpositionen** nicht neu berechnen oder anpassen, sofern Sie die Genehmigung nicht zunächst entfernen. Um die Genehmigung eines Wartungsbudgets zu entfernen, wählen Sie dieses auf der Seite **Wartungsbudgets** aus, und wählen Sie dann **Genehmigen** aus. Im Dialogfeld **Budget genehmigen** wählen Sie **OK** aus.
 
-![Wartungsbudgets.](media/01-maintenance-budgets.png)
+![Wartungsbudgets](media/01-maintenance-budgets.png)
 
 Sie können auch ein neues Wartungsbudget erstellen, indem Sie ein vorhandenes Budget kopieren. Wählen Sie auf der Seite **Wartungsbudgets** das zu kopierende Budget aus, und wählen Sie dann **Kopieren** aus. Dieser Ansatz ist hilfreich, wenn Sie z. B. ein Budget für einen Monat erstellt haben und dieses in andere Monate kopieren möchten.
 
 > [!NOTE]
 > Das Wartungsbudget berechnet nur Budgetkosten auf Grundlage der Wartungsplanpositionen. Um Istkosten für die gleiche Periode zu berechnen, können Sie diese Berechnung auf der Seite **Kostensteuerung für Anlagen** vornehmen. 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

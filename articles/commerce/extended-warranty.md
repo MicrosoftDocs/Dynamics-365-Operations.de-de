@@ -2,9 +2,11 @@
 title: Erstellen und konfigurieren Sie erweiterte Garantien
 description: In diesem Thema werden erweiterte Garantien behandelt und deren Erstellung und Konfiguration in Microsoft Dynamics 365 Commerce beschrieben.
 author: sijoshi
+manager: annbe
 ms.date: 06/08/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,14 +17,14 @@ ms.search.industry: ''
 ms.author: sijoshi
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 772dc1fdda7c34448ffa946237f717e657df6d83d8fda9336049e79d19ed1af0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 411895763cc282766b5a668208f20c72496059cd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745379"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965115"
 ---
-# <a name="create-and-configure-extended-warranties"></a>Erweiterte Garantien erstellen und konfigurieren
+# <a name="create-and-configure-extended-warranties"></a>Erstellen und konfigurieren Sie erweiterte Garantien
 
 [!include [banner](includes/banner.md)]
 
@@ -81,7 +83,7 @@ Führen Sie die folgenden Schritte aus, um ein Garantieelement in Commerce zu er
 
     Stellen Sie beispielsweise für eine zweijährige Garantie das Feld **Zeiteinheit** auf **Jahre** und das Feld **Länge der Zeit** auf **2**. Alternativ können Sie das Feld **Zeiteinheit** auf **Monate** und das Feld **Länge der Zeit** auf **24** festlegen, wie in der folgenden Abbildung gezeigt.
 
-    ![Produktdetailseite für einen Garantieartikel.](./media/ew-time-properties.png)
+    ![Produktdetailseite für einen Garantieartikel](./media/ew-time-properties.png)
 
 1. Wählen Sie **Speichern**, um den Garantieartikel zu speichern.
 1. Geben Sie das Garantieprodukt an das Unternehmen weiter, damit es verkauft werden kann. Weitere Informationen zum Einrichten von Einzelhandelsprodukten finden Sie unter [Einrichten von Einzelhandelsprodukten](set-up-retail-products.md).
@@ -94,7 +96,7 @@ Führen Sie die folgenden Schritte aus, um ein Garantieelement in Commerce zu er
 
     Die folgende Abbildung zeigt beispielsweise die **Preisspanne Basis**, das Feld ist auf den **Grundpreis** festgelegt, das Feld **Untere Grenze** ist auf $500 gesetzt, und das Feld **Höchstgrenze** auf $1000.
     
-    ![Freigegebene Produktdetailseite für einen Garantieartikel.](./media/ew-release-product-details.png)
+    ![Freigegebene Produktdetailseite für einen Garantieartikel](./media/ew-release-product-details.png)
 
 1. Sortieren Sie den Garantieartikel auf den Kanal, auf dem er verkauft wird. Weitere Informationen finden Sie unter [Einrichten von Sortimenten](set-up-assortments.md).
 
@@ -142,7 +144,7 @@ Gehen Sie zum Einrichten einer Garantiegruppe in Commerce folgendermaßen vor:
 1. Rufen Sie **Retail and Commerce \> Produkte und Kategorien \> Garantien \> Garaniegruppen** auf.
 1. Wählen Sie **Neu** aus, um einen neuen Garantiegruppe zu erstellen.
 1. Geben Sie im Feld **Name** einen Namen für die neue Gruppe ein.
-1. Geben Sie auf dem Inforegister im Feld **Allgemein** eine **Beschreibung** der Gruppe ein.
+1. Geben Sie auf dem Inforegister  im Feld **Allgemein** eine **Beschreibung** der Gruppe ein.
 1. Auf dem Inforegister **Garantieprodukte** wählen Sie **Zeile hinzufügen**, um einen Garantieartikel hinzuzufügen.
 1. In dem Feld **Bestellung anzeigen** geben Sie eine Nummer ein, um die Garantiegruppe am POS zu bewerten. Der POS zeigt Garantieartikel in aufsteigender Reihenfolge in der Garantieaufforderung an.
 1. Auf dem Inforegister **Garantieprodukte** wählen Sie **Zeile hinzufügen**, um ein Garantieprodukt hinzuzufügen.
@@ -161,11 +163,11 @@ Mit zwei POS-Vorgängen können Vertriebsmitarbeiter während des Workflows Gara
 
 Die folgende Abbildung zeigt ein Beispiel einer POS-Terminalseite mit der Aufforderung, einen Garantieartikel für den aktuellen Kauf eines Garantieartikels hinzuzufügen.
 
-![Beispiel für eine Aufforderung zum Hinzufügen eines Garantieartikels für den aktuellen Kauf.](./media/ew-sell-warranty.png)
+![Beispiel für eine Aufforderung zum Hinzufügen eines Garantieartikels für den aktuellen Kauf](./media/ew-sell-warranty.png)
 
 Die folgende Abbildung zeigt ein Beispiel für die Funktion zum Hinzufügen eines Garantieartikels für einen zuvor verkauften Garantieartikel.
 
-![Beispiel für die Funktion zum Hinzufügen eines Garantieartikels für einen zuvor verkauften Garantieartikel.](./media/ew-add-warranty-existing.png)
+![Beispiel für die Funktion zum Hinzufügen eines Garantieartikels für einen zuvor verkauften Garantieartikel](./media/ew-add-warranty-existing.png)
 
 ## <a name="process-warranty-transactions"></a>Garantiebuchungen verarbeiten
 
@@ -184,7 +186,7 @@ Um Garantietransaktionen in Commerce Headquarters zu verarbeiten, folgen Sie die
 1. Führen Sie einen dieser Schritte aus:
 
     - Wählen Sie die Option **Kein Enddatum**, wenn die Wiederholung niemals enden sollte.
-    - Wählen Sie die Option **Ende danach**, wenn die Wiederholung nach einer bestimmten Anzahl von Läufen enden soll. Wenn Sie diese Option wählen, geben Sie nach der Auswahl dieser Option die Anzahl von Perioden ein.
+    - Wählen Sie die Option **Ende danach**,  wenn die Wiederholung nach einer bestimmten Anzahl von Läufen enden soll. Wenn Sie diese Option wählen, geben Sie nach der Auswahl dieser Option die Anzahl von Perioden ein.
     - Wählen Sie die Option **Enddatum**, wenn die Wiederholung an einem bestimmten Datum enden soll. Wenn Sie diese Option wählen, geben Sie nach der Auswahl dieser Option das Datum ein.
 
 1. Wählen Sie **OK**.
@@ -236,6 +238,3 @@ Eine Garantie ist eine Dienstleistung, die für ein bestimmtes, einzigartiges Pr
 [Sortimente einrichten](set-up-assortments.md)
 
 [Nummernkreise – Übersicht](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

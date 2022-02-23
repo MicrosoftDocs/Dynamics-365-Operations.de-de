@@ -1,10 +1,12 @@
 ---
 title: Wartungsanfragen erstellen
 description: In diesem Thema wird erläutert, wie Wartungsanfragen in der Anlagenverwaltung erstellt werden.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRequestTableCreate
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4b48a0504b79d2edf7815296312c7839052092e7d6773b7ebd5d38cbb59c9428
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f45378405d9ea06ae847d93b7eacd9badf6d7e00
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714979"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019177"
 ---
 # <a name="create-maintenance-requests"></a>Wartungsanfragen erstellen
 
@@ -30,7 +32,7 @@ ms.locfileid: "6714979"
 
 Wartungsanfragen können verwendet werden, wenn Wartungsarbeiter oder Produktionsarbeitskräfte bemerken, dass Maschinen eine Reparatur erfordern, die Reparaturarbeiten aber nicht sofort ausgeführt werden können.
 
-**Beispiel:** Während Wartungsarbeiter eine Reparatur durchführt, stellen sie fest, dass eine andere Anlage am gleichen Standort gewartet werden muss. Die Wartungsarbeiterin hat jedoch nicht die Zeit oder erforderlichen Ersatzteile, um die Reparatur durchzuführen. Aus diesem Grund erstellen sie eine Wartungsanfrage für die Anlage und geben eine kurze Beschreibung des Problems ein.
+**Beispiel:** Während eine Wartungsarbeiterin eine Reparatur durchführt, stellt sie fest, dass eine andere Anlage am gleichen Standort gewartet werden muss. Die Wartungsarbeiterin hat jedoch nicht die Zeit oder erforderlichen Ersatzteile, um die Reparatur durchzuführen. Aus diesem Grund erstellt sie eine Wartungsanfrage für die Anlage und gibt eine kurze Beschreibung des Problems ein.
 
 Der Abschnitt **Aktive Wartungsanfragen** des Bereichs **Zugehörige Informationen** rechts auf der Seite **Alle Anlagen** oder **Aktive Anlagen** (**Anlagenverwaltung** \> **Allgemeines** \> **Anlagen** \> **Alle Anlagen** oder **Aktive Anlagen**) enthält die aktiven Wartungsanfragen, die der ausgewählten Anlage zugeordnet sind.
 
@@ -50,9 +52,9 @@ Der Abschnitt **Aktive Wartungsanfragen** des Bereichs **Zugehörige Information
 
 10. Das Feld **Tatsächlicher Start** wird automatisch auf das aktuelle Datum und die aktuelle Uhrzeit festgelegt. Allerdings können Sie den Wert in diesem Feld ändern.
 11. Geben Sie im Feld **Hinweise** zusätzliche Hinweise ein, die erforderlich sind.
-12. Wählen Sie **OK** aus.
+12. Wählen Sie **OK**.
 
-![Wartungsanfrage erstellen.](media/03-manage-maintenance-requests.png)
+![Wartungsanfrage erstellen](media/03-manage-maintenance-requests.png)
 
 ## <a name="subsequent-processing-of-maintenance-requests"></a>Nachfolgende Verarbeitung von Wartungsanfragen
 
@@ -67,10 +69,7 @@ In der Detailansicht können Sie verschiedene Informationen aktualisieren. Nachf
 - Wählen Sie einen Wartungsauftragstyp aus. Wenn diese Information relevant ist, wählen Sie auch eine zugehörige Wartungsauftragsvariante und eine Facharbeit aus.
 - Geben Sie in den Feldern **Breitengrad** und **Längengrad** die geografischen Koordinaten ein. Sämtliche Koordinaten, die einer Wartungsanfrage hinzugefügt werden, werden automatisch an einen zugehörigen Arbeitsauftrag übertragen. 
 
-![Wartungsanfrage aktualisieren.](media/04-manage-maintenance-requests.png)
+![Wartungsanfrage aktualisieren](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Wenn Sie bei der Erstellung einer Wartungsanfrage eine Anlage auswählen, können Sie der Anlage einen Fehler hinzufügen. Nachdem die Wartungsanfrage erstellt wurde, können Sie ggf. weitere Fehler hinzufügen. Um Fehler hinzuzufügen, wählen Sie auf der Seite **Alle Wartungsanfragen** die Option **Anlagenfehler** aus.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

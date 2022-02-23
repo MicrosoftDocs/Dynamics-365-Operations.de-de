@@ -2,26 +2,28 @@
 title: Startseite für die Kostenrechnung
 description: Mit Kostenmanagement können Sie die Bewertung und die Buchhaltung von Rohmaterialien, Halb fertigwaren, Endartikeln und von Umlaufbestand behandeln.
 author: AndersGirke
+manager: tfehr
 ms.date: 04/25/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83881e6b3bb588dad61fd14aa4db28aa76305925aab3ee08e2ebe7e001f2aff2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dc146f8a3707e830ff574964c5a8865271e69b50
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739106"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967682"
 ---
 # <a name="cost-management-home-page"></a>Startseite für die Kostenrechnung
 
@@ -43,7 +45,7 @@ Sie können auf Lagerbuchhaltungs- und Fertigungskostenrechnung über die Arbeit
 
 Mit der Fertigungskostenrechnung können Sie [Auftragskalkulation](production-order-cost-analysis.md) in Produktionsaufträgen und in den Chargenaufträgen wie auch die [Nachkalkulation für Produktionskosten](backflush-costing.md) in Lean Manufacturing ermöglichen.
 
-Der [Power BI-Inhalt zur Kostenverwaltung](../../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md) bietet Verwaltungseinblicke in den Bestand und RIF-Bestand (Ressource in Fertigung), und wie die Kosten nach Kategorie im Laufe der Zeit hindurch fließen. Die Informationen können auch als detaillierte Ergänzung der Finanzaufstellung verwendet werden.
+Der [Power BI-Inhalt zur Kostenverwaltung](../../dev-itpro/analytics/cost-management-content-pack.md) bietet Verwaltungseinblicke in den Bestand und RIF-Bestand (Ressource in Fertigung), und wie die Kosten nach Kategorie im Laufe der Zeit hindurch fließen. Die Informationen können auch als detaillierte Ergänzung der Finanzaufstellung verwendet werden.
 
 ### <a name="additional-resources"></a>Zusätzliche Ressourcen
 
@@ -57,10 +59,8 @@ Besuchen Sie [Microsoft Dynamics 365 – Produktplan](https://roadmap.dynamics
 
 #### <a name="blogs"></a>Blogs
 
-Sie finden Meinungen, Neuigkeiten und weitere Informationen zur Kostenverwaltung im [Dynamics AX Manufacturing R&D Team-Blog](/archive/blogs/axmfg/) und [Supply Chain Management in Dynamics AX R&D Team-Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm). Auch wenn einige dieser Beiträge für die ältere Version von Kostenverwaltung verfasst wurden, gelten die gleichen Konzepte noch und die Prozeduren sind in der aktuellen Version ebenfalls vergleichbar.
+Sie finden Meinungen, Neuigkeiten und weitere Informationen zur Kostenverwaltung im [Dynamics AX Manufacturing R&D Team-Blog](https://blogs.msdn.microsoft.com/axmfg) und [Supply Chain Management in Dynamics AX R&D Team-Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm). Auch wenn einige dieser Beiträge für die ältere Version von Kostenverwaltung verfasst wurden, gelten die gleichen Konzepte noch und die Prozeduren sind in der aktuellen Version ebenfalls vergleichbar.
 
 #### <a name="task-guides"></a>Aufgabenleitfäden
 
 Zusätzliche Hilfe steht über Aufgabenhandbücher zur Verfügung. Um auf Aufgabenleitfäden zuzugreifen, klicken Sie auf einer beliebigen Seite auf die Schaltfläche „Hilfe”.
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Excel-Arbeitsmappe zum Bearbeiten von Einzelhandelstransaktionen erstellen
-description: In diesem Thema wird beschrieben, wie Sie eine Excel-Arbeitsmappe erstellen, sodass Sie Einzelhandelstransaktionen in Microsoft Dynamics 365 Commerce bearbeiten können.
+description: In diesem Thema wird beschrieben, wie Sie eine Excel-Arbeitsmappe erstellen, damit Sie Einzelhandelstransaktionen in Microsoft Dynamics 365 Commerce bearbeiten können.
 author: josaw1
+manager: AnnBe
 ms.date: 11/04/2020
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,22 +17,22 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: bfc3f6898087445e0276994ceeb52c178785bf3604fa163939327e99a0564f64
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 73a3387d1e7251168002ff683b5b58e0c82a620c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753107"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965376"
 ---
 # <a name="create-an-excel-workbook-to-edit-retail-transactions"></a>Excel-Arbeitsmappe zum Bearbeiten von Einzelhandelstransaktionen erstellen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie eine Excel-Arbeitsmappe erstellen, sodass Sie Einzelhandelstransaktionen in Microsoft Dynamics 365 Commerce bearbeiten können.
+In diesem Thema wird beschrieben, wie Sie eine Excel-Arbeitsmappe erstellen, damit Sie Einzelhandelstransaktionen in Microsoft Dynamics 365 Commerce bearbeiten können.
 
 ## <a name="overview"></a>Übersicht
 
-Kunden können über verschiedene Teile des Systems auf eine vordefinierte Excel-Vorlage zugreifen, mit der sie Einzelhandelstransaktionen bearbeiten und überwachen können. Zu diesem Zweck können Debitoren aber auch eine benutzerdefinierte Excel-Arbeitsmappe erstellen.
+Es gibt eine vordefinierte Excel-Vorlage, auf die Debitoren von verschiedenen Bereichen des Systems aus zugreifen und zum Bearbeiten und Prüfen von Einzelhandelstransaktionen verwenden können. Zu diesem Zweck können Debitoren aber auch eine benutzerdefinierte Excel-Arbeitsmappe erstellen.
 
 ## <a name="create-and-configure-an-excel-workbook"></a>Excel-Arbeitsmappe erstellen und konfigurieren
 
@@ -76,6 +78,3 @@ Führen Sie die folgenden Schritte aus, um eine Excel-Arbeitsmappe zu erstellen 
 [Finanzdimensionen für Einzelhandelstransaktionen bearbeiten](edit-financial-dim.md)
 
 [Einer Excel-Arbeitsmappe zum Bearbeiten von Einzelhandelstransaktionen Felder hinzufügen](add-fields-excel.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

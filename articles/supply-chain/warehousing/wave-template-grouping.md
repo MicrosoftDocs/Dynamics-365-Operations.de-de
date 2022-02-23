@@ -2,23 +2,26 @@
 title: Wellenvorlagengruppierung
 description: Die Gruppierung von Wellenvorlagen ermöglicht es dem System, mithilfe von Wellenvorlagen-Setups anhand der von Ihnen definierten Kriterien zu bestimmen, wie freigegebene Positionen aufgeteilt und neuen oder vorhandenen Wellen zugewiesen werden sollen. Diese Funktion kann in Lagerorten nützlich sein, in denen Wellen nach bestimmten Kriterien erstellt werden, Manager jedoch Wellen lieber automatisch als manuell erstellen.
 author: Mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveTableListPage, WHSWaveTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: b265c0d5cb43e151386fe90e3a3dea414ec0aca6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: 9cbc0b6655de740628bcf3709d250ac02238038b
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579903"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429113"
 ---
 # <a name="wave-template-grouping"></a>Wellenvorlagengruppierung
 
@@ -198,6 +201,3 @@ Für diese Lieferung wurde eine neue Welle erstellt, da sie einen anderen Spedit
 1. Wählen Sie die Wellen-ID aus, die aus dem dritten Auftrag erstellt wurde.
 1. Wählen Sie den Wellen-ID-Link aus, um die Wellendetailseite zu öffnen.
 1. Beachten Sie, dass die Lieferung zum Inforegister **Wellenpositionen** hinzugefügt wurde, zusammen mit der Lieferung für den ersten Auftrag.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

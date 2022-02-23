@@ -1,10 +1,12 @@
 ---
 title: Rahmenbestellungen
 description: Dieser Artikel gibt Informationen zu Kaufverträge. Ein Kaufvertrag ist ein Vertrag, der eine Organisation bindet, eine angegebene Menge oder einen Betrag zu kaufen, indem sie mehrere Bestellungen tätigt. Für diese Zusage erhält der Käufer Sonderpreise und Rabatte.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4911bd891c081892e52bda4bcc87984b3fb189b2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 9cd3c18129724cc67560aee7bf9fc0e5dcd2ebc3
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570487"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017186"
 ---
 # <a name="purchase-agreements"></a>Rahmenbestellungen
 
@@ -102,13 +104,12 @@ Wenn Sie eine Intercompany-Bestellung anlegen, die den Intercompany-Kaufvertrag 
 ## <a name="financial-dimensions-on-purchase-agreements"></a>Finanzdimensionen in Kaufverträgen
 Sie können Finanzdimensionen in Dokumentüberschriften oder einzelne Positionen eines Kaufvertrags kopieren. Wenn Sie die Dimensionen im Vereinbarungskopf oder in der Kaufvertragsposition ändern, wirkt sich diese Änderung keine freigegebenen Aufträgen, es wird jedoch über alle neuen Aufträge angezeigt.
 
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
+<a name="additional-resources"></a>Zusätzliche Ressourcen
+--------
 
-- [Kaufvertrag erstellen](tasks/create-purchase-agreement.md)
-- [Einen Freigabeauftrag für den Einkauf aus einem Kaufvertrag anwenden](tasks/create-purchase-release-order-purchase-agreement.md)
+[Kaufvertrag erstellen](tasks/create-purchase-agreement.md)
+
+[Einen Freigabeauftrag für den Einkauf aus einem Kaufvertrag erstellen](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

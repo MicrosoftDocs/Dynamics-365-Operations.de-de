@@ -1,10 +1,12 @@
 ---
 title: Wartungsanfrage-Lebenszyklusstatus
 description: In diesem Thema wird beschrieben, wie Wartungsanfrage-Lebenszyklusstatus in Asset Management eingerichtet werden.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRequestLifecycleState, EntAssetRequestLifecycleModel
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3ece0fc1121211706350d804fec59e72ef08282fcba4e65f557a510834738b11
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d3c2f717969b938d05e68ac775d31b6a5d5ec26a
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743673"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022079"
 ---
 # <a name="maintenance-request-lifecycle-states"></a>Wartungsanfrage-Lebenszyklusstatus
 
@@ -48,7 +50,7 @@ Wartungsanfrage-Lebenszyklusstatus definieren die Phasen, die eine Anfrage durch
 
 Die folgende Abbildung zeigt ein Beispiel der Seite **Wartungsanfrage-Lebenszyklusstatus**.
 
-![Seite „Wartungsanfrage-Lebenszyklusstatus“.](media/02-setup-for-requests.png)
+![Seite „Wartungsanfrage-Lebenszyklusstatus“](media/02-setup-for-requests.png)
 
 > [!NOTE]
 > Wartungsanfrage-Lebenszyklusstatus, -Lebenszyklusstatusgruppen und -typen stehen mit Arbeitsauftrag-Lebenszyklusstatus, -Lebenszyklusstatusgruppen und -typen in Zusammenhang und werden genauso wie diese verwendet. 
@@ -66,9 +68,9 @@ Nachdem Sie die Lebenszyklusstatus erstellt haben, die für die Wartungsanfragen
 
 5. Wählen Sie auf dem Inforegister **Lebenszyklusstatus** die Lebenszyklusstatus aus, die in das Lebenszyklusmodell einbezogen werden sollen:
 
-    - Um einen Lebenszyklusstatus in das Lebenszyklusmodell einzuschließen, wählen Sie ihn im Bereich **Verbleibende Lebenszyklusstatus** aus, und klicken Sie dann auf die Schaltfläche mit dem Pfeil nach rechts ![Nach-rechts-Pfeil,](media/03-setup-for-requests.png) um ihn in den Abschnitt **Ausgewählte Lebenszyklusstatus** zu verschieben.
+    - Um einen Lebenszyklusstatus in das Lebenszyklusmodell einzuschließen, wählen Sie ihn im Bereich **Verbleibende Lebenszyklusstatus** aus, und klicken Sie dann auf die Schaltfläche mit dem Pfeil nach rechts ![Nach-Rechts-Pfeil](media/03-setup-for-requests.png), um ihn in den Bereich **Ausgewählte Lebenszyklusstatus** zu verschieben.
     - Um alle verfügbaren Lebenszyklusstatus in das Lebenszyklusmodell einzuschließen, wählen Sie die Schaltfläche **Alle verfügbaren Status auswählen** ![Alle verfügbaren Status auswählen](media/04-setup-for-requests.png) aus. Alle Lebenszyklusstatus werden in den Bereich **Ausgewählte Lebenszyklusstatus** verschoben.
-    - Um einen Lebenszyklusstatus aus dem Lebenszyklusmodell zu entfernen, wählen Sie ihn im Bereich **Ausgewählte Lebenszyklusstatus** aus, und klicken Sie dann auf die Schaltfläche mit dem Pfeil nach links ![Nach-links-Pfeil,](media/05-setup-for-requests.png) um ihn in den Abschnitt **Verbleibende Lebenszyklusstatus** zu verschieben.
+    - Um einen Lebenszyklusstatus aus dem Lebenszyklusmodell zu entfernen, wählen Sie ihn im Bereich **Ausgewählte Lebenszyklusstatus** aus, und klicken Sie dann auf die Schaltfläche mit dem Pfeil nach links ![Nach-Links-Pfeil](media/05-setup-for-requests.png), um ihn in den Bereich **Verbleibende Lebenszyklusstatus** zu verschieben.
 
 6. Auf dem Inforegister **Allgemein** sind die Felder im Abschnitt **Aktualisierungen** relevant, wenn Sie die Depotreparatur verwenden.
 
@@ -77,7 +79,4 @@ Nachdem Sie die Lebenszyklusstatus erstellt haben, die für die Wartungsanfragen
 
 Die folgende Abbildung zeigt ein Beispiel der Seite **Wartungsanfrage-Lebenszyklusmodelle**.
 
-![Seite „Wartungsanfrage-Lebenszyklusmodelle“.](media/06-setup-for-requests.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Seite „Wartungsanfrage-Lebenszyklusmodelle“](media/06-setup-for-requests.png)

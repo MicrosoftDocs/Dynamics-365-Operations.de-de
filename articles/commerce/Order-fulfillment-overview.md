@@ -1,25 +1,27 @@
 ---
 title: Filialauftragserfüllung
 description: Dieses Thema enthält eine Übersicht über die Filialauftragserfüllung.
-author: BrianShook
+author: rubencdelgado
+manager: AnnBe
 ms.date: 10/30/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 36ce908e81639fbb836d33ff3e84976c395b1473
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: fa568926ccdde4620294915679cd094adbd1e833
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983341"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965401"
 ---
 # <a name="store-order-fulfillment"></a>Filialauftragserfüllung
 
@@ -33,7 +35,7 @@ Der Auftragserfüllungsarbeitsgang in der Verkaufsstelle enthält einen einzelne
 
 ## <a name="access-unified-order-fulfillment-in-the-point-of-sale"></a>Auf vereinheitlichte Auftragserfüllung in der Verkaufsstelle zugreifen
 
-Auftragserfüllung, [Arbeitsgangskennungs-ID 928](pos-operations.md), kann dazu verwendet werden, um auf den Arbeitsbereich für die Filialauftragserfüllung in der Verkaufsstelle zuzugreifen.
+Auftragserfüllung, [Arbeitsgangskennungs-ID 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations), kann dazu verwendet werden, um auf den Arbeitsbereich für die Filialauftragserfüllung in der Verkaufsstelle zuzugreifen.
 
 Der Auftragserfüllungsarbeitsgang verfügt nicht über einen eigenen Berechtigungsstandard, aber in der Zukunft werden Benutzer in der Lage sein, die Berechtigung **Abrufen des Auftrags zulassen** zu verwenden, um den Arbeitsgang von der Verkaufsstelle aus aufzurufen.
 
@@ -93,7 +95,7 @@ Nachdem ein Auftrag angenommen wurde, können Positionen als **Entnahme** ausgew
 
 Kommissionierlisten können in der Verkaufsstelle gedruckt werden, um die Arbeitskräfte dabei zu unterstützen, den Entnahmeprozess auszuführen. Eine gedruckte Kommissionierliste kann die Arbeitskraft bei sich tragen, die die Entnahme ausführt, und während die Produkte entnommen werden, markiert die Arbeitskraft sie manuell auf der Kommissionierliste als entnommen.
 
-Das Kommissionierlistenformat wird in Commerce konfiguriert und dem Bonprofil hinzugefügt. Weitere Informationen zum Einrichten von Bonprofilen finden Sie unter [Bonvorlagen und Drucken](receipt-templates-printing.md).
+Das Kommissionierlistenformat wird in Commerce konfiguriert und dem Bonprofil hinzugefügt. Weitere Informationen zum Einrichten von Bonprofilen finden Sie unter [Bonvorlagen und Drucken](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 Wenn Positionen ausgewählt sind und eine Kommissionierliste für diese Positionen gedruckt wird, werden diese automatisch mit dem Status **Entnahme** aktualisiert.
 
@@ -119,7 +121,7 @@ Auftragspositionen können jederzeit verpackt werden, nachdem die Auftragspositi
 - **Resultierender Status:** Verpackt oder teilweise verpackt
 - **Resultierender Backoffice-Status:** Geliefert oder teilweise geliefert
 
-Bei dieser Aktivität werden Positionen als verpackt oder teilweise verpackt markiert, und ein Lieferschein wird ausgedruckt. Ein Lieferschein kann gedruckt werden, um die Produkte zu überprüfen, die zusammen verpackt wurden. Das Lieferschein wird in Commerce konfiguriert und dem Bonprofil hinzugefügt. Weitere Informationen zum Einrichten von Bonprofilen finden Sie unter [Bonvorlagen und Drucken](receipt-templates-printing.md).
+Bei dieser Aktivität werden Positionen als verpackt oder teilweise verpackt markiert, und ein Lieferschein wird ausgedruckt. Ein Lieferschein kann gedruckt werden, um die Produkte zu überprüfen, die zusammen verpackt wurden. Das Lieferschein wird in Commerce konfiguriert und dem Bonprofil hinzugefügt. Weitere Informationen zum Einrichten von Bonprofilen finden Sie unter [Bonvorlagen und Drucken](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 **Aktivität: Als verpackt markieren**
 
@@ -215,6 +217,3 @@ Auftragserfüllung in der Verkaufsstelle umfasst Filterung, sodass der Benutzer 
 - Erstellungsdatum
 - Lieferdatum
 - Wareneingangsdatum
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

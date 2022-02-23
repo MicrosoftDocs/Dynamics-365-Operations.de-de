@@ -84,6 +84,3 @@ Im Build dieser Woche wird die Beschreibung angezeigt, wenn sie die Stelle auf d
 ### <a name="print-performance-reviews"></a>Leistungsbeurteilungen drucken
 
 Mitarbeiter, Manager und Personalverwaltungsmitarbeiter können dann die Leistungsbeurteilung eines Mitarbeiters drucken.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

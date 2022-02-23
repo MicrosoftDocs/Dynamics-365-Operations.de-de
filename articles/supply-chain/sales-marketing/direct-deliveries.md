@@ -1,26 +1,29 @@
 ---
 title: Direktlieferungen
 description: Dieser Artikel enthält Informationen über Direktlieferungen. Dirketlieferungen sind Lieferungen, die direkt vom Kreditor an den Debitor gesendet werden.
-author: Henrikan
+author: ShylaThompson
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchCreateFromSalesOrder, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 9704
 ms.assetid: 64c51384-8a4e-45d0-83c1-12cea22902f9
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7dd562a67f891c6943db00a6f8cf514bec19677
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 540f7514a152cfba48d00a3cf863b24d23b4c30e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572576"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428867"
 ---
 # <a name="direct-deliveries"></a>Direktlieferungen
 
@@ -50,6 +53,3 @@ Beim Erstellen einer Direktlieferung kommen die Artikel, die Sie verkaufen, niem
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

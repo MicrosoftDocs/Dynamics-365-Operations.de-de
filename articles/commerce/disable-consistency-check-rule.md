@@ -1,13 +1,16 @@
 ---
-title: Regeln deaktivieren, die im Prüfungsprozess für die Erfassungsbuchung verwendet werden
-description: In diesem Thema werden die Funktionen zum Deaktivieren der Regeln zur Transaktionsprüfung in Microsoft Dynamics 365 Commerce beschrieben.
-author: analpert
-ms.date: 12/11/2021
+title: Regeln in der Konsistenzprüfung von Einzelhandelsbuchungen deaktivieren
+description: Dieses Thema beschreibt die Funktionalität zum Deaktivieren der Regeln für die Konsistenzprüfung von Buchungen in Microsoft Dynamics 365 Commerce.
+author: josaw1
+manager: AnnBe
+ms.date: 10/15/2019
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -15,21 +18,21 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: cdaea51b4c84e6a62f0eb9412315ae77b4c11503
-ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
+ms.openlocfilehash: 37209f1c1de19335f5f9fa6636ab55dd8b2fccc1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7919524"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459087"
 ---
-# <a name="disable-rules-used-in-the-transaction-validation-process"></a>Regeln deaktivieren, die im Prüfungsprozess für die Erfassungsbuchung verwendet werden
+# <a name="disable-rules-in-the-retail-transaction-consistency-checker"></a>Regeln in der Konsistenzprüfung von Einzelhandelsbuchungen deaktivieren 
 
 [!include [banner](../includes/banner.md)]
 
-Einzelhändler können individuelle Geschäftsszenarien und -prozesse nutzen. Daher gelten nicht alle im Prüfungsprozess für die Erfassungsbuchung von Commerce-Transaktionen enthaltenen Regeln für alle Einzelhändler. Zur Anpassung von Unterschieden stellt Microsoft Dynamics 365 Commerce Funktionen zum Deaktivieren nicht anwendbarer Regeln bereit.
+Einzelhändler können individuelle Geschäftsszenarien und -prozesse nutzen. Daher sind nicht alle Regeln, die standardmäßig in der Konsistenzprüfung von Handelsbuchungen enthalten sind, für alle Einzelhändler anwendbar. Um Abweichungen auszugleichen, bietet Microsoft Dynamics 365 Commerce Funktionen, mit denen Sie die nicht anwendbaren Regeln deaktivieren können.
 
-Um die Liste der Regeln anzuzeigen, die im Prüfungsprozess für die Erfassungsbuchung in Ihrer Umgebung verfügbar sind und um den Status der einzelnen Regeln anzuzeigen, gehen Sie zu **Retail und Commerce \> Zentralverwaltungseinrichtung \> Parameter \> Handelsparameter**, und wählen Sie die Registerkarte **Transaktionsüberprüfung** aus. Alle aktivierten Regeln werden verwendet, um Transaktionen während des Prozesses **Geschäftsbuchungen überprüfen** zu prüfen, die bestanden werden müssen, damit Transaktionen gesammelt und in einer Transaktionsaufstellung gebucht werden.
+Um die Liste der Regeln anzuzeigen, die in der Konsistenzprüfung von Einzelhandelsbuchungen in Ihrer Umgebung verfügbar sind, und um den Status jeder Regel anzuzeigen, wechseln Sie zu **Retail und Commerce \> Zentralverwaltungseinrichtung \> Parameter \> Handelsparameter**, und wählen Sie die Registerkarte **Buchungsprüfung** aus.
 
-Standardmäßig wird der Status jeder Regel auf **Aktiviert** gesetzt. Daher werden alle Regeln verwendet, um Einzelhandelstransaktionen zu prüfen, bevor sie in die Transaktionsaufstellungen übernommen werden können. Um eine Regel zu deaktivieren, ändern Sie ihren Status auf **Deaktiviert**. Deaktivierte Regeln werden nicht berücksichtigt, wenn Transaktionen während des Prozesses **Geschäftsbuchungen überprüfen** geprüft werden.
+Standardmäßig wird der Status jeder Regel auf **Aktiviert** gesetzt. Daher werden alle Regeln verwendet, um Einzelhandelstransaktionen zu prüfen, bevor sie in die Handelsaufstellungen übernommen werden. Um eine Regel zu deaktivieren, ändern Sie ihren Status auf **Deaktiviert**. Deaktivierte Regeln werden nicht berücksichtigt, wenn Transaktionen während des Aufstellungsberechnungsprozesses geprüft werden.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Um den gesamten Prüfungsprozess zu umgehen, unabhängig von den aktivierten Regeln, wechseln Sie zu **Retail und Commerce \> Zentralverwaltungseinrichtung \> Parameter \> Handelsparameter**. Legen Sie dann auf der Registerkarte **Transaktionsprüfung** die Option **Konsistenzprüfung für Handelsbuchungen deaktivieren** auf **Ja** fest. Nachdem diese Option auf **Nein** festgelegt wurde, kann sie über die Benutzeroberfläche nicht mehr auf **Ja** zurückgestellt werden.

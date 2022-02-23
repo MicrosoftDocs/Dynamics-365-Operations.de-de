@@ -1,27 +1,30 @@
 ---
 title: Standardauftragseinstellungen für Dimensionen und Produktvarianten
 description: Standardauftragseinstellungen definieren den Standort und Lagerort, aus dem Artikel bezogen oder in dem sie gelagert werden, die Mindest-, Höchst-, Mehrfach- und Standardmengen, die für den Handel oder die Lagerverwaltung verwendet werden, die Lieferzeiten, das Beendigungskennzeichen sowie die Auftragszusagemethode.
-author: johanhoffmann
+author: t-benebo
+manager: tfehr
 ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventItemOrderSetup, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleasedStoppedAllChartPart, UnitTestPartitions
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations, Retail
 ms.custom: 223084
 ms.assetid: fbfbcd7b-dc75-44ab-bffc-8bad576804a4
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: benebotg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 419e2b3b6bc5636aa75cf3ecc26e32ad22260a7e
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: c3aa800c1a996a062bcb737afa23f00a9e52bb48
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778106"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428996"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standardmäßige Auftragseinstellungen für Dimensionen und Produktvarianten
 
@@ -115,7 +118,7 @@ Sie können Auftragseinstellungsregeln für jede aktive Produktdimension oder Ko
 
 Berücksichtigen Sie das folgende Beispielprodukt.
 
-| Artikel                                                | Wert                                   |
+|                                                     |                                         |
 |-----------------------------------------------------|-----------------------------------------|
 | **Produktname**                                    | Photoelektrischer Sensor                    |
 | **Artikelnummer**                                     | XW56                                    |
@@ -188,7 +191,7 @@ Es gilt eine strikte Überprüfung für Werte der **Standardbestellmenge**, die 
 
 ### <a name="enable-the-strict-validation-option"></a>Strikte Überprüfung aktivieren
 
-Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Administratoren können die Seite [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktion zu überprüfen und sie bei Bedarf zu aktivieren oder zu deaktivieren. Hier wird die Funktion als aufgeführt:
+Bevor Sie die strikte Überprüfung nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können die Seite [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktion zu überprüfen und sie bei Bedarf zu aktivieren. Hier wird die Funktion als aufgeführt:
 
 - **Modul** - *Produktinformationsverwaltung*
 - **Funktionsname** - *Strikte Überprüfung von Standardbestellmengen*
@@ -201,6 +204,3 @@ Um die Überprüfungsoption festzulegen:
 1. Auf der Registerkarte **Allgemeines** legen Sie unter **Überprüfung von Standardbestellmengen** einen der folgenden Werte fest:
     - **Strikt** – Wählen Sie diese Option, um sicherzustellen, dass alle Werte der **Standardbestellmenge** ein Mehrfaches des Werts **Mehrfach** des jeweiligen Inforegisters (**Bestellung**, **Bestand** und **Auftrag**) sind.
     - **Standard** – Wählen Sie diese Option aus, um die Standardüberprüfung zu verwenden (dies funktioniert genauso, wenn diese Funktion nicht aktiviert ist).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -85,6 +85,3 @@ Es gibt mehrere Gründe, warum Sie möglicherweise nicht alle Attract-Funktionen
 
 - Ihr Mitarbeiter arbeitet mit einer Testversion oder einer Lizenz für Attract mit dem Umfassenden Einstellungs-Add-On, wohingegen Sie mit der Grundversion von Attract arbeiten.
 - Sie haben Attract mit dem Umfassenden Einstellungs-Add-On, aber Ihnen sind nicht die richtigen Rollen zugewiesen worden, um alle Funktionen verwenden zu können. Weitere Informationen finden Sie unter [Sicherheit und Rollenverwaltung in Attract](security-attract.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,31 +1,36 @@
 ---
 title: Textblock-Modul
-description: Dieses Thema behandelt Textblockmodule und es wird beschrieben, wie diese Site-Seiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+description: Dieses Thema enthält Textblockmodule und es wird beschrieben, wie diese Site-Seiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9068c35eaeee68f97d81d168983d7281da09491cb0afd70cb8196010ce771b0d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c6527ad00e74fa105f3873036eb56557b98b05aa
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723310"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412500"
 ---
-# <a name="text-block-module"></a>Textblockmodul
+# <a name="text-block-module"></a>Textblock-Modul
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema behandelt Textblockmodule und es wird beschrieben, wie diese Site-Seiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+Dieses Thema enthält Textblockmodule und es wird beschrieben, wie diese Site-Seiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+
+## <a name="overview"></a>Übersicht
 
 Ein Textblockmodul ist ein Modul, mit dem Textinhalte hinzugefügt werden. Dieser Inhalt kann entweder zu Informations- oder Werbezwecken verwendet werden.
 
@@ -42,14 +47,14 @@ Textblockmodule können folgendermaßen verwendet werden:
 
 Das folgende Bild zeigt ein Beispiel eines Textblockmoduls, das auf einer Homepage verwendet wird.
 
-![Beispiel eines Textblockmoduls.](./media/ecommerce-textblock.PNG)
+![Beispiel eines Textblockmoduls](./media/ecommerce-textblock.PNG)
 
 ## <a name="text-block-module-properties"></a>Eigenschaften des Textblock-Moduls
 
 | Eigenschaftenname     | Wert                                            | Beschreibung |
 |-------------------|--------------------------------------------------|-------------|
 | Rich-Text         | Rich-Text                                        | Absatztext. Einige grundlegende umfangreiche Inhaltsblockmodule werden unterstützt wie Fettformatierung und Kursivformattierung. |
-| Benutzerdefinierter Klassenname | Ein Cascading Style Sheets (CSS) Klassenname        | Der Name einer benutzerspezifischen CSS Klasse, die ein Entwickler zum Formatieren dieses Moduls bereitstellt. Der Klassenname sollte im Theme Pack definiert werden. |
+| Benutzerdefinierter Klassenname | Ein Cascading Style Sheets ( CSS) Klassenname        | Der Name einer benutzerspezifischen CSS Klasse, die ein Entwickler zum Formatieren dieses Moduls bereitstellt. Der Klassenname sollte im Theme Pack definiert werden. |
 | Schriftgröße         | **Klein**, **Mittel**, **Groß** oder **Sehr groß** | Die Schriftgröße des aktuellen Inhalts. |
 
 ## <a name="add-a-text-block-module-to-a-page"></a>Hinzufügen eines Textblockmoduls zu einer Seite
@@ -84,6 +89,3 @@ Um ein Textblockmodul einer neuen Seite hinzuzufügen und die erforderlichen Eig
 
 [Video-Player-Modul](add-video-player.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

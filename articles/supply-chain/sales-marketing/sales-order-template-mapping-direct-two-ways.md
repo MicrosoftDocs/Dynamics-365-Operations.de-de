@@ -1,33 +1,34 @@
 ---
 title: Synchronisieren von Aufträgen direkt zwischen Sales und Supply Chain Management
 description: Das Thema erklärt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Synchronisierung von Auträgen direkt aus Dynamics 365 Sales mit Dynamics 365 Supply Chain Management auszuführen.
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 05/09/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: eb41a21395a5d115b779e6b1ef71e9eb1176e28e
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3eaa25f0befcff448250ba2cce8e568fa4a4c707
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061517"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428897"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>Synchronisieren von Aufträgen direkt zwischen Sales und Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
-
-
 
 Das Thema erklärt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Synchronisierung von Auträgen direkt aus Dynamics 365 Sales mit Dynamics 365 Supply Chain Management auszuführen.
 
@@ -35,7 +36,7 @@ Das Thema erklärt die Vorlagen und die zugrunde liegenden Aufgaben, die verwend
 
 Die Lösung Interessent nach Bargeld verwendet die Datenenintegrationsfunktion, um Daten über Instanzen von Supply Chain Management und Sales hinweg zu synchronisieren. Die „Interessent zu Bargeld“-Vorlagen, die über die Datenintegrationsfunktion verfügbar sind, ermöglichen den Fluss von Konten, Kontakten, Produkten, Verkaufsangeboten, Aufträgen und Verkaufsrechnungen zwischen Supply Chain Management und Sales. Die folgende Abbildung zeigt, wie Daten zwischen Supply Chain Management und Sales synchronisiert werden.
 
-[![Datenfluss in Interessent nach Bargeld.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Datenfluss in Interessent nach Bargeld](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Vorlagen und Aufgaben
 
@@ -63,8 +64,8 @@ Die folgenden Synchronisierungsaufgaben sind erforderlich, bevor die Synchronisi
 
 | Lieferkettenverwaltung  | Verk.             |
 |-------------------------|-------------------|
-| Dataverse-Auftragskopfzeilen | SalesOrders       |
-| Dataverse-Auftragspositionen   | SalesOrderDetails |
+| Auftragskopfzeilen CDS | SalesOrders       |
+| CDS-Auftragspositionen   | SalesOrderDetails |
 
 ## <a name="entity-flow"></a>Entitätsfluss
 
@@ -74,7 +75,7 @@ Sie müssen keine Aufträge in Sales erstellen. Sie können neue Aufträge im Be
 
 In Supply Chain Management helfen Filter in der Vorlage, sicherzustellen, dass nur relevante Aufträge in die Synchronisierung einfließen:
 
-- Sowohl der Bestellungskunde als auch der Rechnungsdebitor auf dem Auftrag, der aus Sales stammt, werden in die Synchronisierung einbezogen. In Supply Chain Management werden die Spalten **OrderingCustomerIsExternallyMaintained** und **InvoiceCustomerIsExternallyMaintained** verwendet, um Aufträge aus den Datenspalten zu filtern.
+- Sowohl der Bestellungskunde als auch der Rechnungsdebitor auf dem Auftrag, der aus Sales stammt, werden in die Synchronisierung einbezogen. In Supply Chain Management werden die Felder **OrderingCustomerIsExternallyMaintained** und **InvoiceCustomerIsExternallyMaintained** verwendet, um Aufträge aus den Datenentitäten zu filtern.
 - Der Auftrag in Supply Chain Management muss bestätigt werden. Nur bestätigte Aufträge oder Aufträge mit fortgeschrittenem Verarbeitungsstatus (beispielsweise **Versendet** oder **Fakturiert**) werden mit Sales synchronisiert.
 - Nach dem Erstellen oder Ändern eines Auftrags, muss der Stapelverarbeitungsauftrag **Verkaufssummen berechnen** aus Supply Chain Management ausgeführt werden. Nur Aufträge, bei denen Auftragssummen berechnet wurden, werden mit Sales synchronisiert.
 
@@ -102,10 +103,10 @@ Wenn eine Auftragsposition von Sales zu Supply Chain Management synchronisiert w
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Prospect to Cash-Lösung für Sales
 
-Neue Spalten wurden der Tabelle **Auftrag** hinzugefügt und werden auf der Seite angezeigt:
+Neue Felder wurden der Entität **Auftrag** hinzugefügt und auf der Seite angezeigt:
 
 - **Wird extern verwaltet** – Auf **Ja** setzen, wenn der Auftrag aus Supply Chain Management stammt.
-- **Verarbeitungsstatus** – Diese Spalte zeigt den Verarbeitungsstatus des Auftrags in Supply Chain Management an. Folgende Werte sind verfügbar:
+- **Verarbeitungsstatus** – Wird verwendet, um den Verarbeitungsstatus des Auftrags in Supply Chain Management anzuzeigen. Folgende Werte sind verfügbar:
 
     - **Entwurf** – Der anfängliche Status, wenn der erstmals Auftrag in Sales erstellt wird. In Sales können nur Aufträge mit diesem Bearbeitungsstatus bearbeitet werden.
     - **Aktiv** – Der Status wird nach dem Auftrag in Sales mithilfe der Schaltfläche **Aktivieren** in Sales aktiviert.
@@ -140,7 +141,7 @@ Vor dem Synchronisieren von Aufträgen müssen die Systeme mit den folgenden Ein
 - Gehen Sie zu &gt; Sie **Einstellungen** **Verwaltung** &gt; **Systemeinstellungen** &gt; **Sales** zu öffnen, und überprüfen Sie, ob die folgenden Einstellungen verwendet werden:
 
     - Die Option **Systempreisberechnungssystem verwenden** wird auf **Ja** festgelegt.
-    - Die Spalte **Rabattberechnungsmethode** wird auf **Positionsartikel** festgelegt.
+    - Das Feld **Rabattberechnungsmethode** wird auf **Positionsartikel** festgelegt.
 
 ### <a name="setup-in-supply-chain-management"></a>Einrichtung in Supply Chain Management
 
@@ -150,11 +151,11 @@ Wenn Sie auch Arbeitsauftragsintegration verwenden, müssen Sie die Auftragsgrun
 
 1. Wechseln Sie zu **Vertrieb und Marketing** \> **Setup** \> **Aufträge** \> **Auftragsgrundlage**.
 2. Wählen Sie **Neu** aus, um einen neuen Auftragsgrundlage zu erstellen.
-3. Geben Sie in die Spalte **Auftragsgrundlage** einen Namen für den Auftragsursprung ein, z. B. **SalesOrder**.
-4. Geben Sie in die Spalte **Beschreibung** eine Beschreibung ein, z. B. **Auftrag aus Sales**.
+3. Geben Sie im Feld **Auftragsgrundlage** einen Namen für den Auftragsgrundlage ein, wie beispielsweise **SalesOrder**.
+4. Geben Sie im Feld **Beschreibung** eine Beschreibung ein, wie beispielsweise **Auftrag aus Verkauf**.
 5. Aktivieren Sie das Kontrollkästchen **Ursprungstypzuweisung**.
-6. Legen Sie die Spalte **Auftragsursprungstyp** auf **Auftragsintegration** fest.
-7. Wählen Sie **Speichern** aus.
+6. Legen Sie das Feld **Auftragsgrundlagentyp** auf **Auftragsintegration** fest.
+7. Wählen Sie **Speichern**.
 
 ### <a name="setup-in-the-sales-orders-sales-to-supply-chain-management---direct-data-integration-project"></a>Einstellungen in Aufträgen (Sales zu Supply Chain Management) - direktes Datenenintegrationsprojekt
 
@@ -180,32 +181,29 @@ Wenn Sie auch Arbeitsauftragsintegration verwenden, müssen Sie die Auftragsgrun
 ## <a name="template-mapping-in-data-integration"></a>Vorlagenzuordnung in Datenintegration
 
 > [!NOTE]
-> Die Spalten **Zahlungsbedingungen**, **Frachtkonditionen**, **Lieferbedingungen**, **Versandmethode** und **Liefermodus** sind nicht Teil der Standardzuordnungen. Um diese Spalten zuzuordnen, müssen Sie eine Wertzuordnung einrichten, die für die Daten in den Organisationen, zwischen denen die Tabelle synchronisiert wird, spezifisch ist.
+> Die Felder **Zahlungsbedingungen**, **Frachtkonditionen**, **Lieferbedingungen**, **Liefermethode** und **Liefermodus** sind nicht Teil der Standardzuordnungen. Um diese Feldern zuzuordnen, müssen Sie eine Wertzuordnung einrichten, die spezifisch für die Daten in den Organisationen ist, zwischen denen die Entität synchronisiert wird.
 
 Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung in Datenintegration.
 
 > [!NOTE]
-> Die Zuordnung zeigt, welche Spalteninformationen von Sales zu Supply Chain Management synchronisiert werden oder von Supply Chain Management zu Sales.
+> Die Zuordnung zeigt, welche Feldinformationen von Sales zu Supply Chain Management synchronisiert werden oder von Supply Chain Management zu Sales.
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderheader"></a>Aufträge (Supply Chain Management zu Sales) – Direkt: OrderHeader
 
-[![Vorlagenzuordnung in der Datenintegration, Aufträge (Supply Chain Management zu Sales) – Direkt: OrderHeader](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
+[![Vorlagenzuordnung in Datenintegration](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderline"></a>Aufträge (Supply Chain Management zu Sales) – Direkt: OrderLine
 
-[![Vorlagenzuordnung in der Datenintegration, Aufträge (Supply Chain Management zu Sales) – Direkt: OrderLine](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
+[![Vorlagenzuordnung in Datenintegration](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
 
 ### <a name="sales-orders-sales-to-supply-chain-management---direct-orderheader"></a>Aufträge (Sales zu Supply Chain Management) – Direkt: OrderHeader
 
-[![Vorlagenzuordnung in der Datenintegration, Aufträge (Sales zu Supply Chain Management) – Direkt: OrderHeader](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
+[![Vorlagenzuordnung in Datenintegration](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
 
 ### <a name="sales-orders-sales-to-supply-chain-management---direct-orderline"></a>Aufträge (Sales zu Supply Chain Management) – Direkt: OrderLine
 
-[![Vorlagenzuordnung in der Datenintegration, Aufträge (Sales zu Supply Chain Management) – Direkt: OrderLine](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
+[![Vorlagenzuordnung in Datenintegration](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Prospect-to-Cash](prospect-to-cash.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[Interessent zu Bargeld](prospect-to-cash.md)

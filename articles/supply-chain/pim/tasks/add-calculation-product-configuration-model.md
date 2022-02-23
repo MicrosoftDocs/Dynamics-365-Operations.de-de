@@ -1,24 +1,27 @@
 ---
 title: Berechnung zu einem Produktkonfigurationsmodell hinzufügen
 description: Im folgenden Verfahren sehen Sie, wie Sie einen neuen Berechnung zu einem Produktkonfigurationsmodell hinzufügen können.
-author: t-benebo
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails, PCConstraintEditor, PCRuntimeConfiguratorValidate
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d201061ff47203f09f96dc08ff6fc8ac437a6f9e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: e703c6d505f1e2e77f454732301de7a6c130c58a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570656"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428718"
 ---
 # <a name="add-a-calculation-to-a-product-configuration-model"></a>Berechnung zu einem Produktkonfigurationsmodell hinzufügen
 
@@ -31,11 +34,8 @@ Im folgenden Verfahren sehen Sie, wie Sie einen neuen Berechnung zu einem Produk
 
 ## <a name="create-calculation-expression"></a>Berechnungsausdruck erstellen
 1. Klicken Sie auf "Ausdruck bearbeiten".
-2. Geben Sie im Feld "ConstraintBody" "If[CabinetFinish== "White", 10, 15]" ein.
+2. Geben Sie in das Feld ConstraintBody 'If[CabinetFinish=="White", 10, 15]' ein.
 3. Klicken Sie auf "Überprüfen".
 4. Klicken Sie auf "Schließen".
 5. Klicken Sie auf "OK".
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

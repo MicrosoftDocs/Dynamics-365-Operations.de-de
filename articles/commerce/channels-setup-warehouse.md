@@ -2,30 +2,36 @@
 title: Einen Lagerort einrichten
 description: In diesem Thema wird beschrieben, wie Sie einen Lagerort für die Verwendung mit einem neuen Kanal in Microsoft Dynamics 365 Commerce einrichten.
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6987263bfa83582f465e3b47c4f7b9d96cf087c814a1e002afd289852346975b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6da72ae612f0520965a2b11a21123d4642303ac3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734018"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412557"
 ---
 # <a name="warehouse-set-up"></a>Lagerort einrichten
+
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie einen Lagerort für die Verwendung mit einem neuen Kanal in Microsoft Dynamics 365 Commerce einrichten.
+
+## <a name="overview"></a>Übersicht
 
 Jedem Commerce-Kanal muss ein konfigurierter Lagerort zugeordnet sein. Die folgenden Verfahren bieten die Mindestkonfiguration, die zum Einrichten eines Lagerorts für einen Commerce-Kanal erforderlich ist. Weitere Informationen zur Einrichtung des Lagerorts finden Sie in der [Übersicht über die Lagerortverwaltung](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json).
 
@@ -35,7 +41,7 @@ Vor dem Einrichten eines Lagerorts müssen Sie den Standort eines Lagerorts konf
 
 Gehen Sie folgendermaßen vor, um den Standort eines Lagerorts zu konfigurieren.
 
-1. Gehen Sie im Navigationsbereich zu **Module \> Einzelhandel und Handel \> Kanaleinrichtung \> Standorte**.
+1. Gehen Sie im Navigationsbereich zu **Module \> Retail und Commerce \> Kanaleinrichtung \> Standorte**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 1. Geben Sie im Feld **Standort** einen Wert ein.
 1. Geben Sie im Feld **Name** einen Wert ein.
@@ -45,13 +51,13 @@ Gehen Sie folgendermaßen vor, um den Standort eines Lagerorts zu konfigurieren.
 
 Das folgende Bild zeigt ein Beispiel für den Standort eines Lagerorts.
 
-![Beispiel: Standort eines Lagerorts.](media/warehouse-site.png)
+![Beispiel: Standort eines Lagerorts](media/warehouse-site.png)
 
 ## <a name="set-up-a-warehouse"></a>Einen Lagerort einrichten
 
 Um einen Lagerort einzurichten, gehen Sie folgendermaßen vor:
 
-1. Gehen Sie im Navigationsbereich zu **Module \> Einzelhandel und Handel \> Kanaleinrichtung \> Lagerorte**.
+1. Gehen Sie im Navigationsbereich zu **Module \> Retail und Commerce \> Kanaleinrichtung \> Lagerorte**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 1. Geben Sie im Feld **Lagerort** einen Wert ein.  Wenn es sich um eine 1:1-Zuordnung zu einem Geschäft handelt, sollten Sie den Namen des Geschäfts oder den Namen eines regionalen Vertriebszentrums verwenden.
 1. Geben Sie im Feld **Name** einen Wert ein.
@@ -65,7 +71,7 @@ Um einen Lagerort einzurichten, gehen Sie folgendermaßen vor:
 
 Gehen Sie zum Einrichten von Lagergängen folgendermaßen vor:
 
-1. Gehen Sie im Navigationsbereich zu **Module \> Einzelhandel und Handel \> Kanaleinrichtung \> Standorteinrichtung \> Lagergänge**.
+1. Gehen Sie im Navigationsbereich zu **Module \> Retail und Commerce \> Kanaleinrichtung \> Standorteinrichtung \> Lagergänge**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 1. In der Dropdown-Liste **Lagerort** wählen Sie den zuvor erstellten Lagerort aus.
 1. Geben Sie im Feld **Gang** einen Namen ein (beispielsweise „Def”).
@@ -76,7 +82,7 @@ Gehen Sie zum Einrichten von Lagergängen folgendermaßen vor:
 
 Führen Sie die folgenden Schritte aus, um Lagerorte für Standard-, beschädigte und zurückgegebene Bestände einzurichten.
 
-1. Gehen Sie im Navigationsbereich zu **Module \> Einzelhandel und Handel \> Kanaleinrichtung \> Lagerorte**.
+1. Gehen Sie im Navigationsbereich zu **Module \> Retail und Commerce \> Kanaleinrichtung \> Lagerorte**.
 1. Wählen Sie den Lagerort aus, den Sie zuvor erstellt haben.
 1. Wählen Sie im Aktionsbereich **Bearbeiten** aus.
 1. Wählen Sie im Aktionsbereich **Lagerort** und dann **Standort des Lagerorts** aus.
@@ -98,13 +104,13 @@ Führen Sie die folgenden Schritte aus, um Lagerorte für Standard-, beschädigt
     
 Die folgende Abbildung zeigt eine Einrichtung eines Lagerort-Standorts in San Francisco.
 
-![Beispiel für die Einrichtung des Standorts eines Lagerorts.](media/warehouse-inventory-locations.png)
+![Beispiel für die Einrichtung des Standorts eines Lagerorts](media/warehouse-inventory-locations.png)
     
 ## <a name="complete-warehouse-setup"></a>Vollständige Einrichtung eines Lagerorts
 
 Führen Sie zum Abschließen der Einrichtung eines Lagerorts die folgenden Schritte aus.
 
-1. Gehen Sie im Navigationsbereich zu **Module \> Einzelhandel und Handel \> Kanaleinrichtung \> Lagerorte**.
+1. Gehen Sie im Navigationsbereich zu **Module \> Retail und Commerce \> Kanaleinrichtung \> Lagerorte**.
 1. Wählen Sie den Lagerort aus, den Sie zuvor erstellt haben.
 1. Wählen Sie im Aktionsbereich **Bearbeiten** aus.
 1. Unter **Bestands- und Lagerortverwaltung**:
@@ -121,13 +127,13 @@ Führen Sie zum Abschließen der Einrichtung eines Lagerorts die folgenden Schri
 
 Das folgende Bild zeigt Details für einen konfigurierten Lagerort.
 
-![Beispiel für einen konfigurierten Lagerort.](media/warehouse-sample.png)
+![Beispiel für einen konfigurierten Lagerort](media/warehouse-sample.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Übersicht über die Lagerortverwaltung](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json)
+[Lagerortverwaltung – Übersicht](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json)
 
-[Übersicht über Kanäle](channels-overview.md)
+[Kanalübersicht](channels-overview.md)
 
 [Voraussetzungen der Kanaleinrichtung](channels-prerequisites.md)
 
@@ -141,6 +147,3 @@ Das folgende Bild zeigt Details für einen konfigurierten Lagerort.
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

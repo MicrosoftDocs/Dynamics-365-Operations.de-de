@@ -1,10 +1,12 @@
 ---
 title: Erweiterte Formatierungsoptionen in der Finanzberichterstellung
-description: In diesem Thema werden erweiterte Formatierungsfunktionen beschrieben, einschließlich Filter, Einschränkungen, nicht druckbare Zeilen und bedingte Anweisungen in Berechnungen.
-author: panolte
+description: Wenn Sie einen Bericht in der Finanzberichterstellung erstellen, sind zusätzliche Formatierungsfunktionen, einschließlich Filter für Dimensionen, Einschränkungen für Spalten und Berichtseinheiten, nicht druckbare Zeilen und IF/THEN/ELSE-Anweisungen in Berechnungen, verfügbar.
+author: ryansandness
+manager: AnnBe
 ms.date: 04/26/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e15869fdd598aeec7ef616f6d54593c7551cb906ab53763a64f4202473bcd926
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3508099dfa3c6671da8dddc9061f737a97e825ce
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760125"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683162"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Erweiterte Formatierungsoptionen in der Finanzberichterstellung
 
@@ -281,10 +283,10 @@ Um eine Berechnung auf eine einzelne Berichtseinheit in einer Berichtsbaumstrukt
 > [!NOTE]
 > Zur Verwendung dieser Funktion, muss eine Berichtsbaumstruktur zu einer Zeilendefinition zugeordnet sein.
 
-Die Berechnungszeile kann auf eine Berechnungszeile oder Finanzdatenzeile verweisen. Die Berechnung wird in der Zelle **Verwandte Formeln/Zeilen/Einheiten** der Zeilendefinition und der Finanzdatentypeinschränkung erfasst. Die Berechnung muss eine bedingte Berechnung verwenden, die mit einer **IF \@Unit**-Konstruktion beginnt. Beispiel: IF @Unit(SALES) THEN @100 ELSE 0. Diese Berechnung enthält die Beträge aus Zeile 100 in jeder Spalte des Berichts, aber nur für die Verkaufseinheit. Wenn mehrere Einheiten SALES benannt sind, wird der Betrag in jeder dieser Einheiten angezeigt. Darüber hinaus kann Zeile 100 eine Finanzdatenzeile sein und kann als NP (kein Druck) definiert werden. In diesem Fall wird das Anzeigen des Betrags in allen Einheiten der Struktur verhindert. Sie können den Betrag auf eine einzelne Spalte des Berichts beschränken, beispielsweise Spalte H, indem Sie eine Spalteneinschränkung nutzen, um den Wert nur in dieser Spalte des Berichts zu drucken. Sie können auch **OR**-Kombinationen in eine **IF**-Anweisung einschließen. Hier ist ein Beispiel: **IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100**. Sie können eine Einheit in einer Berechnungstyp-Einschränkung auf eine der folgenden Arten angeben:
+Die Berechnungszeile kann auf eine Berechnungszeile oder Finanzdatenzeile verweisen. Die Berechnung wird in der Zelle **Verwandte Formeln/Zeilen/Einheiten** der Zeilendefinition und der Finanzdatentypeinschränkung erfasst. Die Berechnung muss eine bedingte Berechnung verwenden, die mit einer **IF @Unit**-Konstruktion beginnt. Beispiel: IF @Unit(SALES) THEN @100 ELSE 0. Diese Berechnung enthält die Beträge aus Zeile 100 in jeder Spalte des Berichts, aber nur für die Verkaufseinheit. Wenn mehrere Einheiten SALES benannt sind, wird der Betrag in jeder dieser Einheiten angezeigt. Darüber hinaus kann Zeile 100 eine Finanzdatenzeile sein und kann als NP (kein Druck) definiert werden. In diesem Fall wird das Anzeigen des Betrags in allen Einheiten der Struktur verhindert. Sie können den Betrag auf eine einzelne Spalte des Berichts beschränken, beispielsweise Spalte H, indem Sie eine Spalteneinschränkung nutzen, um den Wert nur in dieser Spalte des Berichts zu drucken. Sie können auch **OR**-Kombinationen in eine **IF**-Anweisung einschließen. Beispiel: IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100 Sie können eine Einheit in einer Berechnungstypeinschränkung auf verschiedenen Wegen angeben:
 
-- Geben Sie einen Einheitsnamen ein, um Einheiten mit einzubeziehen, die übereinstimmen. Beispiel: **IF \@Unit(SALES)** ermöglicht die Berechnung für jede Einheit namens SALES, auch wenn es mehrere SALES-Einheiten (Verkaufseinheiten) in der Berichtsbaumstruktur gibt.
-- Geben Sie den Unternehmens- und Einheitsnamen ein, um die Berechnung auf bestimmte Einheiten in einem bestimmten Unternehmen zu beschränken. Beispiel: Geben Sie **IF @Unit (ACME:SALES)** ein, um die Berechnung auf Verkaufseinheiten im Unternehmen ACME zu beschränken.
+- Geben Sie einen Einheitsnamen ein, um Einheiten mit einzubeziehen, die übereinstimmen. Beispiel: **IF @UNIT(SALES)** ermöglicht die Berechnung für jede Einheit namens SALES, auch wenn es mehrere SALES-Einheiten (Verkaufseinheiten) in der Berichtsbaumstruktur gibt.
+- Geben Sie den Unternehmens- und Einheitsnamen ein, um die Berechnung auf bestimmte Einheiten in einem bestimmten Unternehmen zu beschränken. Beispiel: Geben Sie **IF @Unit(ACME:SALES**) ein, um die Berechnung auf Verkaufseinheiten im Unternehmen ACME zu beschränken.
 - Geben Sie den vollständigen Hierarchiecode aus der Berichtsbaumstruktur ein, um die Berechnung auf eine bestimmte Einheit zu beschränken. Geben Sie beispielsweise **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)** ein.
 
 > [!NOTE]
@@ -294,7 +296,7 @@ Die Berechnungszeile kann auf eine Berechnungszeile oder Finanzdatenzeile verwei
 
 1. Klicken Sie im Berichts-Designer auf **Zeilendefinitionen**, und öffnen Sie dann die zu ändernde Zeilendefinition.
 2. Doppelklicken Sie auf die Zelle **Formatcode**, und wählen Sie dann **CAL** aus.
-3. Klicken Sie auf die Zelle **Verwandte Formeln/Zeilen/Einheiten**, und geben Sie dann eine bedingte Berechnung ein, die mit einer **IF \@Unit**-Konstruktion beginnt.
+3. Klicken Sie auf die Zelle **Verwandte Formeln/Zeilen/Einheiten**, und geben Sie dann eine bedingte Berechnung ein, die mit einer **IF @Unit**-Konstruktion beginnt.
 
 ### <a name="ifthenelse-statements-in-a-column-definition"></a>IF/THEN/ELSE-Anweisungen in einer Spaltendefinition
 
@@ -308,5 +310,3 @@ Eine **IF/THEN/ELSE**-Anweisung ermöglicht, dass eine Berechnung von den Ergebn
 Sie können Berichte mithilfe von Dimensionswerten entwerfen, die ein kaufmännisches Und-Zeichen (&) enthalten.
 
 Innerhalb eines beliebigen Feld **Link zur Finanzdimension** können Sie einen Wert wie beispielsweise **GuV** eingeben. Das Einschließen von einfachen Anführungszeichen ('') auf beiden Seiten des Dimensionswert gibt an, dass Sie den Literalwert verwenden, wie beispielsweise das Einschließen des kaufmännischen Und-Zeichens (&).
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

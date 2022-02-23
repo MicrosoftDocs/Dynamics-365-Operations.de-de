@@ -1,26 +1,29 @@
 ---
 title: Zuordnen von Lagerartikeln zu Serviceobjekten
 description: In diesem Thema wird erläutert, wie Sie einen Lagerartikel an ein Serviceobjekt anhängen.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceObjectTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f65fe1963e2d3dabba1545944b35f2eb2a245b5e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: c606d784b52b09578e09243c3ecc07ca05f16755
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571568"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428883"
 ---
 # <a name="attach-inventory-items-to-service-objects"></a>Zuordnen von Lagerartikeln zu Serviceobjekten    
 
@@ -48,6 +51,3 @@ Der Artikel ist nun dem Serviceobjekt zugeordnet. Jede für den Artikel angegebe
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

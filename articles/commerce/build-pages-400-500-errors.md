@@ -1,31 +1,37 @@
 ---
 title: Erstellen von benutzerdefinierte Antwortseiten für Fehler mit 4xx/5xx-Statuscodes
-description: In diesem Thema wird beschrieben, wie benutzerdefinierte Antwortseiten für 4xx- und 5xx-Statuscodefehler mithilfe von Erstellungstools in Microsoft Dynamics 365 Commerce erstellt werden.
+description: In diesem Thema wird beschrieben, wie benutzerdefinierte Antwortseiten für 4xx und 5xx Statuscodefehler mithilfe von Erstellungstools in Microsoft Dynamics 365 Commerce erstellt werden.
 author: v-chgri
+manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 16cd6c3dab5502826119b6a517414d23e168e79708e306897b04c7ba8c80404b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 060f5e5616624279711f61f582e6a898c7eb7785
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741140"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412534"
 ---
-# <a name="build-custom-response-pages-for-4xx5xx-status-code-errors"></a>Benutzerdefinierte Antwortseiten bei Fehlern mit 4xx/5xx-Statuscodes erstellen
+# <a name="build-custom-response-pages-for-4xx5xx-status-code-errors"></a>Erstellen von benutzerdefinierte Antwortseiten für Fehler mit 4xx/5xx-Statuscodes
+
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie benutzerdefinierte Antwortseiten für 4xx- und 5xx-Statuscodefehler mithilfe von Erstellungstools in Microsoft Dynamics 365 Commerce erstellt werden.
+In diesem Thema wird beschrieben, wie benutzerdefinierte Antwortseiten für 4xx und 5xx Statuscodefehler mithilfe von Erstellungstools in Microsoft Dynamics 365 Commerce erstellt werden.
+
+## <a name="overview"></a>Übersicht
 
 Wenn eine Anforderung nicht erfolgreich ist, gibt der Server HTTP-Statuscode-Fehlerantworten aus. Der Statuscode 404 wird erfasst und zurückgegeben, wenn eine Seite nicht gefunden wurde, und der Statuscode 500 wird aufgezeichnet wird zurückgegeben, wenn ein Serverfehler auftritt. In Dynamics 365 Commerce können Anwendungsbenutzer benutzerdefinierte Statuscodefehlerantwortseiten erstellen die den Benutzern für diese Statuscode-Fehlerantworten angezeigt werden.
 
@@ -77,6 +83,3 @@ Um eine Umleitung für die Statuscodefehlerantwortseite zu erstellen, führen Si
 [Neue Seite hinzufügen](add-new-page.md)
 
 [Erstellen einer Seiten-URL](create-page-url.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

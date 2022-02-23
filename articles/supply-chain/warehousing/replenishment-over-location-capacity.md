@@ -2,23 +2,26 @@
 title: Wiederbeschaffung über Lagerplatzkapazität
 description: Dieses Thema enthält Informationen zur Funktion „Wiederbeschaffung über Lagerplatzkapazität“. Mit dieser Funktion können alle für den Tag erforderlichen Wiederbeschaffungsarbeiten erstellt und die Verfügbarkeit dieser Wiederbeschaffungsarbeiten verwaltet werden, um sicherzustellen, dass am Kommissionierort weder der Lagerbestand ausgeht noch die Kapazität überschritten wird.
 author: mirzaab
+manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 6ff9f133010ec4370a99c585259aece4e279f801
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: 8e9ae16fea892d1d6b6a6b5d06137576623e7f5b
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778206"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429093"
 ---
 # <a name="replenishment-over-location-capacity"></a>Wiederbeschaffung über Lagerplatzkapazität
 
@@ -32,7 +35,7 @@ Mit dieser Funktion können mehr Wiederbeschaffungsarbeiten erstellt werden, als
 
 Um diese Funktion verfügbar zu machen, aktivieren Sie die folgenden Funktionen in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in dieser Reihenfolge):
 
-1. Organisationsweite Arbeitssperrung (Ab Supply Chain Management Version 10.0.21 ist diese Funktion obligatorisch, daher ist sie standardmäßig aktiviert und kann nicht wieder deaktiviert werden.)
+1. Organisationsweite Arbeitssperrung
 1. Wiederbeschaffung über Lagerplatzkapazität
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>Funktion für das Beispielszenario einrichten
@@ -239,7 +242,7 @@ Abhängig von Ihren Bestandsmengen können die erstellten Arbeitsmengen geringf�
 
 #### <a name="on-hand-inventory-license-plate-id"></a>Bestandskennzeichen-ID
 
-Später in diesem Szenario verwenden Sie die Warehouse Management Mobile App (oder einen Emulator), in der Sie das Kennzeichen identifizieren müssen, um die Kommissionier- und Wiederbeschaffungsszenarien abzuschließen.
+Später in diesem Szenario verwenden Sie die Warehouse-App (oder einen Emulator), in der Sie das Kennzeichen identifizieren müssen, um die Kommissionier- und Wiederbeschaffungsszenarien abzuschließen.
 
 Führen Sie die folgenden Schritte aus, um die Kennzeichen-IDs zu finden, die Sie später benötigen.
 
@@ -264,7 +267,7 @@ Sie führen die Lagerplatzwiederbeschaffung für die ersten beiden Arbeits-IDs d
 
 #### <a name="replenishment"></a>Wiederbeschaffung
 
-1. Melden Sie sich bei der Warehouse Management Mobile App als ein Benutzer im Lagerort *61* an. (Geben Sie *61* als Benutzer-ID und *1* als Passwort ein.)
+1. Melden Sie sich bei der Warehouse-App als ein Benutzer im Lagerort *61* an. (Geben Sie *61* als Benutzer-ID und *1* als Passwort ein.)
 1. Gehen Sie zu **Lager \> Wiederbeschaffung**.
 
     Sie werden aufgefordert, die erste Wiederbeschaffungsarbeit abzuschließen. Artikelnummer, -menge und -lagerplatz zur Entnahme werden angezeigt.
@@ -294,7 +297,7 @@ Solange nicht genügend Bestand vom Lagerplatz entnommen wurde, um es unter den 
 
 Bevor die verbleibende Wiederbeschaffungsarbeitsaufgabe abgeschlossen werden kann, muss der Kommissionierort so weit vom Bestand geleert sein, dass die verbleibende Wiederbeschaffungsarbeit entsperrt werden kann. Mit anderen Worten, die Summe aus der Menge des Lagerbestands am Lagerplatz und der Wiederbeschaffungsmenge darf den **Überlaufmenge**-Wert nicht überschreiten. Wenn diese Summe geringer ist als die Überlaufmenge, wird die verbleibende Wiederbeschaffungsarbeit entsperrt.
 
-1. Melden Sie sich bei der Warehouse Management Mobile App als ein Benutzer im Lagerort *61* an. (Geben Sie *61* als Benutzer-ID und *1* als Passwort ein.)
+1. Melden Sie sich bei der Warehouse-App als ein Benutzer im Lagerort *61* an. (Geben Sie *61* als Benutzer-ID und *1* als Passwort ein.)
 1. Gehen Sie zu **Ausgehend \> Verkaufskommissionierung**.
 1. Geben Sie die erste Arbeits-ID für Auftrag 1 ein.
 
@@ -405,6 +408,3 @@ Sie können nun Auftrag 2 kommissionieren. Er wurde entsperrt, als die mit dem 
 - Sie können die Verfügbarkeit der Wiederbeschaffungsarbeit für jede Arbeitskopfzeile aus der Seite **Arbeitsdetails** manuell überschreiben, wenn Sie wollen.
 - Wenn das System die Verfügbarkeit der Wiederbeschaffungsarbeiten festlegt, berücksichtigt es alle Bestände, die sich bereits am Lagerplatz befinden, bevor Arbeiten abgeschlossen werden.
 - Jeder Teil der Auftragsarbeit ist mit einer bestimmten Wiederbeschaffungsarbeit verknüpft. Es gibt keine entsprechende Verfügbarkeitsfunktion für Verkaufsarbeiten.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

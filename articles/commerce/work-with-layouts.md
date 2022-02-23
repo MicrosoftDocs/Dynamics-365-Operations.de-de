@@ -1,31 +1,37 @@
 ---
 title: Arbeiten mit Voreinstellungslayouts
-description: In diesem Thema wird beschrieben, wie Sie in Microsoft Dynamics 365 Commerce mit vordefinierten Layouts arbeiten.
+description: In diesem Thema wird beschrieben, wie Sie mit vordefinierten Layouts in Microsoft Dynamics 365 Commerce arbeiten.
 author: phinneyridge
-ms.date: 02/03/2022
+manager: annbe
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 56ad992b6a9fd6fce09cadad70b8098acdc74ac0
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: f31dfa1fdbb3732610748abe4a9de851033f2b89
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090844"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412583"
 ---
 # <a name="work-with-preset-layouts"></a>Arbeiten mit Voreinstellungslayouts
 
+
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie in Microsoft Dynamics 365 Commerce mit vordefinierten Layouts arbeiten.
+In diesem Thema wird beschrieben, wie Sie mit vordefinierten Layouts in Microsoft Dynamics 365 Commerce arbeiten.
+
+## <a name="overview"></a>Übersicht
 
 Bevor Sie die Prozeduren in diesem Thema abschließen, lesen Sie unbedingt [Vordefinierte und benutzerdefinierte Layouts](templates-layouts-overview.md#preset-and-custom-layouts). Einen allgemeinen Überblick erhalten Sie in [Übersicht über Vorlagen und Layouts](templates-layouts-overview.md).
 
@@ -78,7 +84,7 @@ In der Regel wird für alle Seiten, die ein vordefiniertes Layout verwenden, ein
 Gehen Sie folgendermaßen vor, um das Design für alle untergeordneten Seiten festzulegen oder zu ändern, die Ihr vordefiniertes Layout verwenden.
 
 1. Wählen Sie im Layout-Editor in der linken Gliederungsstruktur das Seitencontainer-Modul aus. (In der Regel ist dieses Modul der zweite Knoten und heißt **Standardseite**.)
-1. Wählen Sie im Feld **Thema** des Eigenschaftsfensters auf der rechten Seite ein Design aus.
+1. Wählen Sie im Eigenschaftenbereich rechts im Feld **Design** ein Design aus.
 
 ## <a name="save-check-in-preview-and-publish-a-preset-layout"></a>Speichern, Einchecken, Anzeigen einer Vorschau und Veröffentlichen eines vordefinierten Layouts
 
@@ -91,30 +97,15 @@ Um eine Vorschau Ihrer Änderungen anzuzeigen, öffnen Sie entweder eine vorhand
 
 Führen Sie einen der folgenden Schritte aus, um das Layout auf Ihrer Live-Site zu veröffentlichen, nachdem Sie eine Vorschau der Änderungen an Ihrem vordefinierten Layout angezeigt haben:
 
-1. Navigieren Sie zu **Layouts**, wählen Sie das Layout und dann **Veröffentlichen** aus.
-1. Wählen Sie den Layoutnamen aus, um den Layout-Editor zu öffnen, und wählen Sie anschließend **Veröffentlichen** aus.
-1. Veröffentlichen Sie eine Seite, die auf das unveröffentlichte Layout verweist. Das Layout wird automatisch veröffentlicht.
+* Navigieren Sie zu **Layouts**, wählen Sie das Layout und dann **Veröffentlichen** aus.
+* Wählen Sie den Layoutnamen aus, um den Layout-Editor zu öffnen, und wählen Sie anschließend **Veröffentlichen** aus.
+* Veröffentlichen Sie eine Seite, die auf das unveröffentlichte Layout verweist. Das Layout wird automatisch veröffentlicht.
 
 > [!WARNING]
 > Vordefinierte Layouts können von mehreren Seiten referenziert werden. Beachten Sie beim Veröffentlichen eines vordefinierten Layouts, dass sich dies möglicherweise auf das Layout mehrerer Seiten auswirkt.
-
-## <a name="rename-a-preset-layout"></a>Ein voreingestelltes Layout umbenennen
-
-Um ein voreingestelltes Layout in Site Builder umzubenennen, gehen Sie folgendermaßen vor.
-
-1. Wählen Sie im linken Navigationsbereich **Layouts**.
-1. Wählen Sie den Layoutnamen des Layouts, das Sie umbenennen möchten.
-1. Wählen Sie **Bearbeiten**, um mit der Bearbeitung des Layouts zu beginnen.
-1. Wählen Sie im Bereich Layouteigenschaften das Stiftsymbol neben dem Namen des Layouts.
-1. Bearbeiten Sie den Namen des Layouts nach Bedarf.
-1. Aktivieren Sie das Kontrollkästchen, um die Namensänderung zu bestätigen.
-1. Wählen Sie **Beenden Sie die Bearbeitung**.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Übersicht über Vorlagen und Layouts](templates-layouts-overview.md)
 
 [Arbeiten mit Vorlagen](work-with-templates.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

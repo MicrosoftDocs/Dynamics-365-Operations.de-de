@@ -1,24 +1,27 @@
 ---
 title: Einkaufen von cXML-Erweiterungen
 description: Die Funktion „Einkaufen von cXML-Erweiterungen“ baut auf der vorhandenen externen Katalogfunktion PunchOut auf, die für Bestellanforderungen verwendet wird.
-author: Henrikan
+author: dasani-madipalli
+manager: tfehr
 ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatCXMLParameters, CatCXMLPurchRequest
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: damadipa
 ms.search.validFrom: 2020-08-03
-ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 2942b141eb3a5b83fb39b0de721bae60c074e01c
-ms.sourcegitcommit: f5885999e008a49fe072d95f15e239905c24918a
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: d7184f14ab67d646451c8c2b1313336d47e59316
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900704"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429134"
 ---
 # <a name="purchasing-cxml-enhancements"></a>Einkaufen von cXML-Erweiterungen
 
@@ -28,7 +31,7 @@ Die Funktion _Einkaufen von cXML-Erweiterungen_ baut auf der [vorhandenen extern
 
 ## <a name="turn-on-the-purchasing-cxml-enhancements-feature"></a>Aktivieren Sie die Funktion „Einkaufen von cXML-Erweiterungen“
 
-Öffnen Sie zum Aktivieren der Funktion die **[Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)**-Seite und suchen Sie nach der Funktion namens *Einkaufen von cXML-Erweiterungen*. Wählen Sie die Funktion aus, und wählen Sie dann **Jetzt Aktivieren** aus, um sie zu aktivieren. (Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert.)
+Öffnen Sie zum Aktivieren der Funktion die **[Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)**-Seite und suchen Sie nach der Funktion namens *Einkaufen von cXML-Erweiterungen*. Wählen Sie die Funktion aus, und wählen Sie dann **Jetzt Aktivieren** aus, um sie zu aktivieren.
 
 Nachdem Sie die Funktion aktiviert haben, sollten Sie die Einstellungen in den folgenden drei Bereichen konfigurieren:
 
@@ -38,21 +41,21 @@ Nachdem Sie die Funktion aktiviert haben, sollten Sie die Einstellungen in den f
 
 Die folgende Abbildung fasst diese Konfiguration zusammen.
 
-![Bereiche zum Einrichten von cXML-Funktionen.](media/cxml-settings-areas.png "Bereiche zum Einrichten von cXML-Funktionen")
+![Bereiche zum Einrichten von cXML-Funktionen](media/cxml-settings-areas.png "Bereiche zum Einrichten von cXML-Funktionen")
 
-Außerdem müssen Sie [Batchauftrag für Bestellanforderungen](#po-batch) einrichten. Dieser Batchauftrag wird verwendet, um die bestätigten Bestellungen zu senden.
+Außerdem müssen Sie [Batch-Auftrag für Bestellanforderungen](#po-batch) einrichten. Dieser Batch-Auftrag wird verwendet, um die bestätigten Bestellungen zu senden.
 
 ## <a name="set-up-global-cxml-parameters"></a><a name="cxml-parameters"></a>Einrichten globaler cXML-Parameter
 
 Verwenden Sie die Seite **cXML-Parameter**, um einige globale Einstellungen vorzunehmen, die für die Funktionalität zum Senden von Bestellungen gelten.
 
-![cXML-Parameterseite.](media/cxml-parameters.png "cXML-Parameterseite")
+![cXML-Parameterseite](media/cxml-parameters.png "cXML-Parameterseite")
 
 Gehen Sie zu **Beschaffung \> Konfiguration \> cXML-Verwaltung \> cXML-Parameter** und stellen Sie die folgenden Parameter ein:
 
-- **cXML-Testmodus** – Dieser globale Parameter wirkt sich auf die Art und Weise aus, wie Bestellungen physisch vom Batchauftrag gesendet werden. Wählen Sie einen der folgenden Werte aus:
+- **cXML-Testmodus** – Dieser globale Parameter wirkt sich auf die Art und Weise aus, wie Bestellungen physisch vom Batch-Auftrag gesendet werden. Wählen Sie einen der folgenden Werte aus:
 
-    - **Test** – In diesem Modus kann der Batchauftrag ausgeführt werden und das XML-Dokument für die Nachricht wird generiert, aber nicht gesendet. Stattdessen wird es zu Überprüfungszwecken in der Bestellanforderung gespeichert. Dieser Modus ist hilfreich, wenn Sie sich in einer ersten Implementierung befinden und sehen möchten, wie Daten in die cXML-Nachricht eingegeben werden. Möglicherweise möchten Sie auch Beispielnachrichten generieren, die Sie zur Erstvalidierung an Lieferanten senden können.
+    - **Test** – In diesem Modus kann der Batch-Auftrag ausgeführt werden und das XML-Dokument für die Nachricht wird generiert, aber nicht gesendet. Stattdessen wird es zu Überprüfungszwecken in der Bestellanforderung gespeichert. Dieser Modus ist hilfreich, wenn Sie sich in einer ersten Implementierung befinden und sehen möchten, wie Daten in die cXML-Nachricht eingegeben werden. Möglicherweise möchten Sie auch Beispielnachrichten generieren, die Sie zur Erstvalidierung an Lieferanten senden können.
     - **Live** – In diesem Modus verwendet die Funktion die [externen Katalogeinstellungen](#external-catalog-setup), um jedes Dokument physisch an den Lieferanten zu übertragen.
 
 - **Aktualisierungen der Kaufanforderung senden** – Legen Sie diese Option auf *Ja* fest, um eine Aktualisierungsnachricht für Bestellungen zu senden. Legen Sie sie auf *Nein* fest, um zu verhindern, dass die Nachricht gesendet wird. Die meisten Lieferanten ziehen es vor, keine Aktualisierungsnachrichten zu erhalten. Stattdessen müssen Kunden sie per Telefon oder E-Mail kontaktieren, wenn eine Bestellung geändert werden soll. Dieser Parameter ist ein globaler Parameter, und im externen Katalog kann keine Überschreibung für jeden Lieferanten angegeben werden. Eine Bestellung wird als aktualisiert markiert, wenn Sie eine zweite Bestätigung auf einer Bestellung buchen, die erste Bestätigung jedoch bereits vom Lieferanten gesendet und bestätigt wurde. Wenn eine zweite Bestätigung vorliegt, die erste jedoch nicht gesendet wurde, wird die zweite Bestätigung als neues Dokument behandelt. Sie können eine Bestellung so oft bestätigen, wie Sie möchten, bis eine Bestätigung gesendet wird. Die nächste Bestätigung wird dann als Aktualisierungsnachricht behandelt.
@@ -65,9 +68,9 @@ Gehen Sie zu **Beschaffung \> Konfiguration \> cXML-Verwaltung \> cXML-Parameter
 Jedes Mal, wenn Sie eine Bestellung bestätigen, bei der die **Bestellung per cXML senden**-Option ist auf _Ja_ festgelegt ist, generiert das System die cXML-Nachricht automatisch und stellt sie dem Lieferanten zu, der dieser Bestellung zugeordnet ist. Es gibt zwei Möglichkeiten, diese Option für Ihre Bestellungen zu steuern:
 
 - Um einen Lieferanten so einzurichten, dass er automatisch cXML für alle neuen Bestellungen verwendet, die aus einer Bestellanforderung erstellt werden, gehen Sie zu **Beschaffung \> Lieferanten \> Alle Lieferanten** und wählen sie einen aus oder erstellen Sie einen Lieferanten, um dessen Detailseite zu öffnen. Legen Sie dann auf dem Inforegister **Standardwerte für Bestellungen** die **Bestellung per cXML senden**-Option auf _Ja_ fest. Wenn cXML auch automatisch für neue Bestellungen verwendet werden soll, die **nicht** aus einer Bestellanforderung erstellt wurden, müssen Sie auch die **ENABLEMANUALPO**-Bestelleigenschaft für den zugehörigen externen Katalog auf _Wahr_ festlegen, wie im [Auftragseigenschaften festlegen](#set-order-properties)-Abschnitt weiter unten in diesem Thema beschrieben.
-- Für einzelne Bestellungen gehen Sie zu **Beschaffung \> Bestellungen \> Alle Bestellungen** und wählen Sie eine Bestellung aus oder erstellen Sie eine, um die Detailseite zu öffnen. Wechseln Sie zur **Kopfzeile**-Ansicht und legen Sie dann auf dem Inforegister **Einrichtung** die **Bestellung per cXML senden**-Option nach Bedarf fest.
+- Für einzelne Bestellungen gehen Sie zu **Beschaffung \> Bestellungen \>Alle Bestellungen** und wählen Sie eine Bestellung aus oder erstellen Sie eine, um die Detailseite zu öffnen. Wechseln Sie zur **Kopfzeile**-Ansicht und legen Sie dann auf dem Inforegister **Einrichtung** die **Bestellung per cXML senden**-Option nach Bedarf fest.
 
-![Standardeinstellungen für Lieferantenbestellungen.](media/cxml-order-defaults.png "Standardeinstellungen für Lieferantenbestellungen")
+![Standardeinstellungen für Lieferantenbestellungen](media/cxml-order-defaults.png "Standardeinstellungen für Lieferantenbestellungen")
 
 ## <a name="set-up-an-external-catalog-to-use-cxml"></a><a name="external-catalog-setup"></a>Einrichten eines externen Katalogs zur Verwendung von cXML
 
@@ -76,7 +79,7 @@ Auf der **Externe Kataloge** Seite können Sie für jeden Ihrer Kataloge die Pun
 > [!NOTE]
 > Wenn Sie eine Bestellung bestätigen, die über cXML gesendet werden kann, sucht das System den Lieferanten, der der Bestellung zugeordnet ist, und findet dann den ersten aktiven externen Katalog, der diesem Lieferanten zugeordnet ist. Das System verwendet dann die Einstellungen aus diesem externen Katalog, um die Bestellung zu senden. Wenn mehrere externe Kataloge eingerichtet sind, verwendet das System nur den ersten externen Katalog, den es findet, basierend auf dem Lieferanten in der Bestellung. Daher empfehlen wir, dass Sie für jeden Lieferanten nur einen externen Katalog erstellen.
 
-![Einstellungen für externe Kataloge.](media/cxml-supplier-catalog.png "Einstellungen für externe Kataloge")
+![Einstellungen für externe Kataloge](media/cxml-supplier-catalog.png "Einstellungen für externe Kataloge")
 
 ### <a name="set-the-punchout-protocol-type"></a>Legen Sie den PunchOut-Protokolltyp fest
 
@@ -143,11 +146,11 @@ Wie im [Auftragseigenschaften festlegen](#set-order-properties)-Abschnitt erwäh
 
 Um die Arten von Notizen festzulegen, nach denen das System suchen wird, gehen Sie zu **Beschaffung \> Konfiguration \> Formulare \> Formulareinrichtung**. Dann legen Sie auf der **Bestellung**-Registerkarte das **Einbeziehen der Dokumente vom Typ**-Feld auf die Art der Notiz fest, die Sie einschließen möchten. Es werden nur Textnotizen aufgenommen, keine Dokumentanhänge.
 
-![Formulareinrichtungsseite.](media/cxml-form-setup.png "Formulareinrichtungsseite")
+![Formulareinrichtungsseite](media/cxml-form-setup.png "Formulareinrichtungsseite")
 
 Anhänge werden nur dann in eine Bestellung aufgenommen, wenn ihr **Typ**-Feld auf den Wert festgesetzt wird, den Sie im Feld **Einbeziehen der Dokumente vom Typ** auswählen, und wenn ihr **Beschränkung**-Feld auf _Extern_ festgelegt ist. Um die Anhänge für eine Bestellung zu erstellen, anzuzeigen oder zu bearbeiten, gehen Sie zu **Beschaffung \> Alle Bestellungen**, wählen eine Bestellung aus oder erstellen eine und wählen dann die **Anhänge**-Schaltfläche (Büroklammersymbol) in der oberen rechten Ecke aus.
 
-![Angehängte Notiz, die so eingerichtet ist, dass sie an einen Lieferanten gesendet werden kann.](media/cxml-note-to-vendor.png "Angehängte Notiz, die so eingerichtet ist, dass sie an einen Lieferanten gesendet werden kann")
+![Angehängte Notiz, die so eingerichtet ist, dass sie an einen Lieferanten gesendet werden kann](media/cxml-note-to-vendor.png "Angehängte Notiz, die so eingerichtet ist, dass sie an einen Lieferanten gesendet werden kann")
 
 ## <a name="view-the-cxml-cart-message-log-for-external-catalog-punchout"></a><a name="message-log"></a>Anzeigen des cXML-Einkaufskorb-Nachrichtenprotokolls für den externen Katalog PunchOut
 
@@ -155,7 +158,7 @@ Wenn Sie das **Punchout-Protokolltyp**-Feld für einen externen Katalog auf _cXM
 
 Um das Protokoll für einen externen Katalog zu öffnen, wählen Sie den entsprechenden Katalog aus und wählen Sie dann im Aktionsbereich **cXML-Einkaufskorb-Nachrichtenprotokoll** aus. Auf der **cXML-Einkaufskob-Nachrichtenprotokoll**-Seite werden eine Liste der zurückgegebenen Einkaufskörbe angezeigt, das XML, das sich auf diese Einkaufswagen bezieht, und die Positionen, die für die zugehörige Bestellanforderung erstellt wurden.
 
-![cXML-Einkaufskorb-Nachrichtenprotokollseite.](media/cxml-cart-message-log.png "cXML-Einkaufskorb-Nachrichtenprotokollseite")
+![cXML-Einkaufskorb-Nachrichtenprotokollseite](media/cxml-cart-message-log.png "cXML-Einkaufskorb-Nachrichtenprotokollseite")
 
 ## <a name="set-the-extrinsic-elements-for-external-catalog-punchout"></a>Festlegen der extrinsischen Elemente für den externen Katalog PunchOut
 
@@ -178,21 +181,21 @@ Führen Sie die folgenden Schritte aus, um einem externen Katalog externe Elemen
         - **Nachname** – Verwenden Sie den Nachnamen der Kontaktperson, die dem Benutzer zugeordnet ist, der auf den externen Katalog zugreift.
         - **Telefonnummer** – Verwenden Sie die primäre Telefonnummer der Kontaktperson, die dem Benutzer zugeordnet ist, der auf den externen Katalog zugreift.
 
-![Einstellungen für extrinsische Elemente.](media/cxml-extrinsics.png "Einstellungen für extrinsische Elemente")
+![Einstellungen für extrinsische Elemente](media/cxml-extrinsics.png "Einstellungen für extrinsische Elemente")
 
 Der Benutzer oder Administrator sieht die extrinsischen Elemente nicht, da sie erst hinzugefügt werden, wenn der Benutzer einen PunchOut ausführt. Sie werden automatisch zwischen die Elemente **BuyerCookie** und **BrowserFromPost** in der cXML-Einrichtung-Anforderungsnachricht eingefügt. Daher müssen Sie sie beim Einrichten des externen Katalogs nicht manuell im XML festlegen.
 
-![Dem XML hinzugefügte extrinsische Elemente.](media/cxml-extrinsics-xml.png "Dem XML hinzugefügte extrinsische Elemente")
+![Dem XML hinzugefügte extrinsische Elemente](media/cxml-extrinsics-xml.png "Dem XML hinzugefügte extrinsische Elemente")
 
 ## <a name="create-and-process-a-purchase-order"></a><a name="create-po"></a>Erstellen und Verarbeiten einer Bestellung
 
 Wenn Sie eine Bestellung für einen Lieferanten erstellen, wird die Einstellung des **Bestellung per cXML senden**-Option von diesem Lieferanten übernommen. Die Einstellung bleibt jedoch auf dem Inforegister **Einrichtung** in der **Header**-Ansicht der Bestellung, damit Sie diese später nach Bedarf ändern können.
 
-![Bestellsatz zur Verwendung von cXML.](media/cxml-purchase-order.png "Bestellsatz zur Verwendung von cXML")
+![Bestellsatz zur Verwendung von cXML](media/cxml-purchase-order.png "Bestellsatz zur Verwendung von cXML")
 
 Wenn Sie eine Bestellung aus einer Bestellanforderung erstellen, die aus einem PunchOut-Flow stammt, werden alle erforderlichen Positionsdetails ausgefüllt. Sie können dann manuell Bestellpositionen hinzufügen oder diese aus anderen Bestellungen kopieren. Stellen Sie sicher, dass Sie alle erforderlichen Felder festlegen. Diese erforderlichen Felder enthalten die externe Referenznummer, die die Lieferantennummer ist, die in der cXML-Nachricht verwendet wird.
 
-![Beispiel einer externen Referenznummer.](media/cxml-line-details.png "Beispiel einer externen Referenznummer")
+![Beispiel einer externen Referenznummer](media/cxml-line-details.png "Beispiel einer externen Referenznummer")
 
 Wenn Sie alle Details für die Bestellung eingegeben haben, müssen Sie diese bestätigen. Es wird keine Nachricht gesendet, es sei denn, die Bestellung wurde bestätigt. Klicken Sie zum Bestätigen einer Bestellung im Aktivitätsbereich auf der Registerkarte **Kauf** in der Gruppe **Aktivitäten** auf **Bestätigen**. 
 
@@ -200,21 +203,21 @@ Nachdem die Bestellung bestätigt wurde, können Sie den Status der Bestätigung
 
 Jede Bestellung kann viele Bestätigungen enthalten. Jede Bestätigung ist mit einer inkrementellen Nummer gekennzeichnet. In der folgenden Abbildung ist die Bestellung *00000275* und die Bestätigung ist *00000275-1*. Diese Nummerierung spiegelt die Standardfunktion des Supply Chain Management wider, bei der Änderungen in einer Bestellung und damit der Typ der cXML-Nachricht, die an den Lieferanten gesendet werden soll, anhand der Bestätigung identifiziert werden. Wie die Abbildung zeigt, enthält die **Bestellbestätigungen**-Seite auch die Felder **Sendestatus der Bestellung** und **Lieferantenstatus der Bestellanforderung**. Weitere Informationen zu den verschiedenen Statuswerten, die möglicherweise auf dieser Seite angezeigt werden, finden Sie im [Überwachen von Bestellanforderungen](#monitor-po-requests)-Abschnitt später in diesem Thema.
 
-![Seite „Bestellungsbestellbestätigungen“.](media/cxml-po-confirmations.png "Seite „Bestellungsbestellbestätigungen“")
+![Seite „Bestellungsbestellbestätigungen“](media/cxml-po-confirmations.png "Seite „Bestellungsbestellbestätigungen“")
 
 Um weitere Informationen zum Dokument anzuzeigen, wählen Sie **Bestellanforderung** über dem Gitter.
 
 Die **Bestellanforderung**-Seite enthält zwei Raster. Das Raster im oberen Teil der Seite enthält einen Datensatz für jede Bestellung, die zum Senden markiert ist. Das Raster auf der **Bestellanforderungsverlauf**-Registerkarte im unteren Teil der Seite enthält möglicherweise mehrere Datensätze für die ausgewählte Bestellung, um den Status jeder Bestätigung anzuzeigen. Die folgende Abbildung zeigt die Bestellung 00000275 im oberen Raster und das Dokument 00000275-1 im Raster in der **Bestellanforderungsverlauf**-Registerkarte.
 
-![Seite „Bestellanforderung“.](media/cxml-po-request.png "Seite „Bestellanforderung“")
+![Seite „Bestellanforderung“](media/cxml-po-request.png "Seite „Bestellanforderung“")
 
-Wenn der Batchauftrag eingerichtet ist und ausgeführt wird, wird das Dokument gesendet. Sie können die Statusänderung anzeigen, nachdem das Dokument gesendet wurde. In der folgenden Abbildung ist das **Sendestatus der Bestellung**-Feld auf _Gesendet_ festgelegt. Das **Lieferantenstatus der Bestellanforderung**-Feld ist auf _Anerkannt_ festgelegt, um anzuzeigen, dass der Lieferant das Dokument erhalten hat und es lesen und in seinem System speichern konnte. Das Raster auf der **Bestellanforderungsverlauf**-Registerkarte zeigt die Zeit an, zu der das Dokument gesendet wurde. Weitere Informationen zu den verschiedenen Statuswerten, die möglicherweise auf dieser Seite angezeigt werden, finden Sie im [Überwachen von Bestellanforderungen](#monitor-po-requests)-Abschnitt.
+Wenn der Batch-Auftrag eingerichtet ist und ausgeführt wird, wird das Dokument gesendet. Sie können die Statusänderung anzeigen, nachdem das Dokument gesendet wurde. In der folgenden Abbildung ist das **Sendestatus der Bestellung**-Feld auf _Gesendet_ festgelegt. Das **Lieferantenstatus der Bestellanforderung**-Feld ist auf _Anerkannt_ festgelegt, um anzuzeigen, dass der Lieferant das Dokument erhalten hat und es lesen und in seinem System speichern konnte. Das Raster auf der **Bestellanforderungsverlauf**-Registerkarte zeigt die Zeit an, zu der das Dokument gesendet wurde. Weitere Informationen zu den verschiedenen Statuswerten, die möglicherweise auf dieser Seite angezeigt werden, finden Sie im [Überwachen von Bestellanforderungen](#monitor-po-requests)-Abschnitt.
 
-![Statusmeldungen auf der Seite „Bestellanforderung“.](media/cxml-po-request-2.png "Statusmeldungen auf der Seite „Bestellanforderung“")
+![Statusmeldungen auf der Seite „Bestellanforderung“](media/cxml-po-request-2.png "Statusmeldungen auf der Seite „Bestellanforderung“")
 
-## <a name="schedule-the-purchase-order-request-batch-job"></a><a name="po-batch"></a>Planen des Batchauftrags für Bestellanforderungen
+## <a name="schedule-the-purchase-order-request-batch-job"></a><a name="po-batch"></a>Planen des Batch-Auftrags für Bestellanforderungen
 
-Um den Batchauftrag zum Senden von Bestellanforderungen zu aktivieren, gehen Sie zu **Beschaffung \> Einrichtung \> cXML-Verwaltung \> Bestellanfrage** und wählen dann im Aktionsbereich auf der **Bestellanforderung**-Registerkarte in der **Batch**-Gruppe **Auftrag senden**, um das Dialogfeld **Kaufanforderung vorbereiten und senden** zu öffnen. In diesem Dialogfeld können Sie die Serie einrichten, wie Sie es normalerweise für Batch-Aufträge in Supply Chain Management tun. Wählen Sie ein Intervall basierend auf Ihrem Bestellvolumen. Obwohl Sie den Batchauftrag jede Minute ausführen können, ist es wahrscheinlich am besten, Batches während des gesamten Geschäftstages zu senden, basierend auf Auftragsbelegfenstern, die den Zeitplänen Ihrer Lieferanten entsprechen.
+Um den Batch-Auftrag zum Senden von Bestellanforderungen zu aktivieren, gehen Sie zu **Beschaffung \> Einrichtung \> cXML-Verwaltung \> Bestellanfrage** und wählen dann im Aktionsbereich auf der **Bestellanforderung**-Registerkarte in der **Batch**-Gruppe **Auftrag senden**, um das Dialogfeld **Kaufanforderung vorbereiten und senden** zu öffnen. In diesem Dialogfeld können Sie die Serie einrichten, wie Sie es normalerweise für Batch-Aufträge in Supply Chain Management tun. Wählen Sie ein Intervall basierend auf Ihrem Bestellvolumen. Obwohl Sie den Batch-Auftrag jede Minute ausführen können, ist es wahrscheinlich am besten, Batches während des gesamten Geschäftstages zu senden, basierend auf Auftragsbelegfenstern, die den Zeitplänen Ihrer Lieferanten entsprechen.
 
 Beispielsweise hat Ihr Lieferant eine Richtlinie, die besagt, dass alle Bestellungen, die bis 13.00 Uhr eingehen, am selben Tag versendet werden. In diesem Fall müssen Sie den Batch möglicherweise nur einige Male am Morgen ausführen, um Ihre Bestellungen mitzuteilen. Die restlichen Bestellungen werden dann am nächsten Tag versandt. Diese Entscheidung ist eine reine Geschäftsentscheidung. Sie können es überprüfen und die Parameter dafür entsprechend einstellen.
 
@@ -226,7 +229,7 @@ Der Prozess sucht nach Bestellanforderungsdokumenten mit dem Status *Warten*. We
 
 Wenn Bestellungen, die über cXML gesendet werden können, bestätigt werden, wechseln sie in den _Warten_-Status. Wie im [Erstellen und Bearbeiten einer Bestellung](#create-po)-Abschnitt beschrieben, können Sie den Bestellstatus auf der Seite **Bestellanforderung** anzeigen. Jede Bestellanforderung kann abhängig von ihren Parametern und Daten einen von mehreren Status haben. In diesem Abschnitt werden die verschiedenen Statustypen und die Werte beschrieben, die sie haben können. Diese Informationen können Ihnen helfen, Probleme zu verwalten und den Status Ihrer Bestellungen zu verstehen.
 
-![Bestellstatus auf der Seite „Bestellanforderung“.](media/cxml-monitor-po-request.png "Bestellstatus auf der Seite „Bestellanforderung“")
+![Bestellstatus auf der Seite „Bestellanforderung“](media/cxml-monitor-po-request.png "Bestellstatus auf der Seite „Bestellanforderung“")
 
 Das Raster im oberen Teil der **Bestellanforderung**-Seite zeigt möglicherweise die folgenden Statuswerte an:
 
@@ -262,18 +265,15 @@ Das Raster auf der **Bestellanforderungsverlauf**-Registerkarte im unteren Teil 
 
 Um das XML für die Bestellanforderungsnachricht anzuzeigen, wählen Sie die **XML-Text anfordern**-Registerkarte am unteren Rand der **Bestellanforderung**-Seite. Die Informationen auf dieser Registerkarte können beim Testen oder bei der Fehlerüberprüfung hilfreich sein. Um das Lesen der Informationen zu erleichtern, können Sie sie als formatierte Nachricht anzeigen. Kopieren Sie den Inhalt der Registerkarte in eine Textdatei und zeigen Sie sie in einem XML-Editor an.
 
-![Registerkarte „XML-Text anfordern“.](media/cxml-request-xml-text.png "Registerkarte „XML-Text anfordern“")
+![Registerkarte „XML-Text anfordern“](media/cxml-request-xml-text.png "Registerkarte „XML-Text anfordern“")
 
 ### <a name="view-the-details-of-the-vendor-response"></a>Anzeigen der Informationen der Lieferantenantwort
 
 Zum Anzeigen des Inhaltes einer Lieferantenbestätigung oder einer Fehlerantwort wählen Sie **Antwort-XML**-Registerkarte am unteren Rand der **Bestellanforderung**-Seite aus.
 
-![Registerkarte „XML-Antwort“.](media/cxml-response-xml.png "Registerkarte „XML-Antwort“")
+![Registerkarte „XML-Antwort“](media/cxml-response-xml.png "Registerkarte „XML-Antwort“")
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-- [Externen Katalog für PunchOut eProcurement einrichten](set-up-external-catalog-for-punchout.md)
+- [Externen Katalog für PunchOut-E-Procurement einrichten](set-up-external-catalog-for-punchout.md)
 - [Externe Kataloge für PunchOut-E-Procurement verwenden](use-external-catalogs-for-punchout.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

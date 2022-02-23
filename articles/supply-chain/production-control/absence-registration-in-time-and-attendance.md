@@ -2,9 +2,11 @@
 title: Abwesenheitserfassung in "Zeit und Anwesenheit"
 description: In diesem Thema wird erläutert, wie Sie Abwesenheitserfassungen in Zeit und Anwesenheit behandeln.
 author: johanhoffmann
+manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JMGParameters, JmgAbsenceCalendar
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 06adca12c172dffa241fe44a6b64bb30863bcb4a8f3867429ad10bc852efd7c3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 12a61f23ac5a16000275e53d3901c8aea202bab0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730225"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966629"
 ---
 # <a name="absence-registration-in-time-and-attendance"></a>Abwesenheitserfassung in "Zeit und Anwesenheit"
 
@@ -101,11 +103,8 @@ Arbeitskraftzeiterfassungen müssen berechnet und genehmigt werden, damit sie ei
 
 Eine genehmigende Person kann die Zeiterfassungen einer Arbeitskraft ändern. Der Genehmiger kann jede Abwesenheit auch ändern, die die Arbeitskraft registriert hat. Wenn der Genehmiger manuell eine Zeitperiode eingibt, die einen Abwesenheitscode hat, wird der Abwesenheitscode für diese Periode nicht durch den Standardabwesenheitscode anhand von Zeit- und Anwesenheitsparametern überschrieben.
 
-Beispielsweise stempelt eine Arbeitskraft um 10 ein und wählt einen Abwesenheitscode aus, der angibt, dass sie sich verspätet. Später informiert die Arbeitskraft ihren Vorgesetzten, dass sie von 8 bis zu 10 einen Arzttermin hatte. Ein Arzttermin sollte keinen Abzug im Lohn der Arbeitskraft verursachen. Daher in diesem Fall kann der Supervisor die zwei Stunden der Abwesenheit von 8 bis auf 10 am Morgen regulieren, indem er manuell einem Abwesenheitscode eingibt, und Krankheit für diese zwei Stunden angibt.
+Beispielsweise stempelt eine Arbeitskraft um 10 ein und wählt einen Abwesenheitscode aus, der angibt, dass sie sich verspätet. Später informiert die Arbeitskraft ihren Supervisor, dass sie einen Arzttermin von 8 bis zu 10 einen Arzttermin hatte. Ein Arzttermin sollte keinen Abzug im Lohn der Arbeitskraft verursachen. Daher in diesem Fall kann der Supervisor die zwei Stunden der Abwesenheit von 8 bis auf 10 am Morgen regulieren, indem er manuell einem Abwesenheitscode eingibt, und Krankheit für diese zwei Stunden angibt.
 
 ### <a name="calculate-and-approve-absence"></a>Berechnen und Genehmigen von Abwesenheit
 
 - Wählen Sie **Zeitanwesenheit** &gt; **Prüfen und Genehmigen** &gt; **Genehmigen oder Berechnen Sie** aus.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

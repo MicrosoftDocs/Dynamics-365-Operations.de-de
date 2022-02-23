@@ -1,29 +1,30 @@
 ---
 title: Wareneingangsübersicht
 description: Dieses Thema enthält Informationen zu den Wareneingangsübersichtfunktion. Die Wareneingangsübersichtseite ist Teil dieser Funktionen und bietet eine Übersicht aller Artikel, von denen erwarten wird, dass sie als eingehende Artikel eintreffen.
-author: yufeihuang
+author: perlynne
+manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "274363"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
 ms.search.industry: Distribution
-ms.author: yufeihuang
+ms.author: perlynne
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 1248156ba9081fe4afbffd480b45cf9326d14a6c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 30859292f8ec481f018fe0c5a5ca4ca11c246d4c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567438"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428777"
 ---
 # <a name="arrival-overview"></a>Wareneingangsübersicht
 
@@ -36,7 +37,7 @@ Die Seite **Wareneingangsübersicht** enthält eine Übersicht aller eingehenden
 ## <a name="business-scenario"></a>Geschäftsszenario
 Beachten Sie das folgende Szenario im Eingangsprozess.
 
-[![Geschäftsszenario.](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)
+[![Geschäftsszenario](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)
 
 Thomas, ein empfangender Arbeiter, möchte wissen, was am aktuellen Tag erwartet wird. Auf der Seite **Wareneingangsübersicht** kann Thomas eine Übersicht der aktuellen Aufgaben, eine grobe Schätzung von Mengen, Volumen, Gewicht, unterschiedliche Auftragstypen usw. abrufen. Später kommt eine Lieferung an einer Eingangsrampen und Thomas erhält eine Liste der Lieferung. Auf der Seite **Eingangsübersicht** kann Thomas folgende Aufgaben ausführen:
 
@@ -68,7 +69,7 @@ Um automatisch Wareneingangserfassungen von der Seite **Wareneingangsübersicht*
 
 -   Wählen Sie beim Erstellen eines neuen Journals einen Namen für das Journal aus.
 
-[![So definieren Sie einen Journalnamen.](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
+[![So definieren Sie einen Journalnamen](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
 
 -   Wenn Sie die Werte in den Feldern **Lagerort** und **Lagerplatz** angegeben, werden diese Werte in den Erfassungspositionen übernommen. Wenn Sie keine Werte festlegen, verwendet das System die Werte aus der Dimension, die in den Lagerbuchungen angegeben wird.
 
@@ -120,6 +121,3 @@ Nachdem alle Waren erfasst wurden, aktualisiert der Lagerortleiter oder der Eink
 
 ## <a name="summary"></a>Summe
 Die Seite **Wareneingangsübersicht** kann der Lagerortverwaltung und den Lagerarbeitern dabei helfen, sich einen Überblick über die erwarteten Arbeit zu verschaffen, der als Teil eines eingehenden Prozesses ausgeführt werden muss. Die Seite kann auch verwendet werden, um den Wareneingangprozess zu starten, um zu gewährleisten, dass die Artikel an der ersten Position am Lagerort verfolgt werden.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

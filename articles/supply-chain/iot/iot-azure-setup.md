@@ -1,25 +1,28 @@
 ---
 title: Azure-Ressourcen für IoT-Intelligenz einrichten
 description: In diesem Thema wird erläutert, wie Sie Microsoft Azure-Ressourcen erstellen und konfigurieren, die Sie für IoT-Intelligenz benötigen.
-author: tonyafehr
+author: robinarh
+manager: tfehr
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: tfehr
+ms.reviewer: ''
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d50458be9196206978a8d146ecd5b8c2a0a1fa8c
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 1277d2ab8bb1f2925874f7469250e164f6bde62d
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782846"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429017"
 ---
 # <a name="set-up-azure-resources-for-iot-intelligence"></a>Azure-Ressourcen für IoT-Intelligenz einrichten
 
@@ -159,6 +162,3 @@ Führen Sie die folgenden Schritte aus, um den geheimen Schlüssel der Redis-Cac
 > Wenn Sie eine der Verbindungszeichenfolgen aktualisieren, müssen Sie auch die Werte der geheimen Schlüssel aktualisieren.
 
 Sie haben nun die Bereitstellung der erforderlichen Azure-Ressourcen abgeschlossen. Als Nächstes muss der Schritt [IoT-Intelligenz-Add-In in Microsoft Dynamics Lifecycle Services (LCS) installieren](iot-lcs-setup.md) ausgeführt werden.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

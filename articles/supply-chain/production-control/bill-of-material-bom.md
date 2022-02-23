@@ -1,10 +1,12 @@
 ---
 title: Stücklisten und Formeln
 description: Dieser Artikel enthält Informationen zu Stücklisten (BOMs) und Formeln, die ein zentraler Teil der Definition der Produkte und Produktvarianten sind.
-author: johanhoffmann
+author: cvocph
+manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMConsistOf, BOMDesigner, BOMTable, EcoResProductProcessManufacturingWorkspace, ProdBOM, ProdJournalTransBOM, ProdBOMCurrent, PmfBOMDesignerEditCoBy, ProdJournalPickingListLineSummary, ProdBOMOverview, PmfCoReqPlanning, EcoResProductProdTypeFormulaNoActiveFormulaFormPart, EcoResItemsMissingActiveRouteVersionFormPart, EcoResItemsProdTypeBOMExpiringBOMFormPart, BOMDesignerBOMVersion, BOMExpandPurch, BOMChangeLine, BOMExpandSales, EcoResItemsProdTypeBOMExpiringRouteFormPart, EngChgEcmBomDesigner, EngChgEcmProductBOMItemIdLookup, EngChgEcmProductBOMConsistOf, EngChgEcmBOMCopyDialog, EngChgEcmBomDesignerEditBom, BOMDesignerFilterDialog, BOMDesignerFilterDialog, BOMPartOf, BOMSetupReportFinish, EcoResItemsMissingActiveBOMVersionFormPart, BOMIdLookup, EcoResProductProdTypeFormulaNoActiveRouteFormPart, BOMExpandPurchRFQ, EngChgCaseRouteTablePart
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 19331
 ms.assetid: c19b437a-2de2-4728-9477-2bcb0c2b1f5e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12a70720775d9903a875dd1759ea2372f1f3b122
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 01491f15405e28e63e4b83f9a9c7af90c2e4a1b5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578007"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966479"
 ---
 # <a name="bills-of-materials-and-formulas"></a>Stücklisten und Formeln
 
@@ -29,7 +31,8 @@ ms.locfileid: "7578007"
 
 Dieser Artikel enthält Informationen zu Stücklisten (BOMs) und Formeln, die ein zentraler Teil der Definition der Produkte und Produktvarianten sind. Stücklisten und Formeln können die erforderlichen Inhaltsstoffe oder Materialien für ein bestimmtes Produkt angezeigt. Formeln definieren außerdem die Kuppel- und Nebenprodukten, die in einem bestimmten Produktionskontext eingehen. 
 
-## <a name="bills-of-materials"></a>Stücklisten
+<a name="bills-of-materials"></a>Stücklisten
+------------------
 
 Eine Stückliste (BOM) definiert die Komponenten, die erforderlich sind, um ein Produkt zu erzeugen. Die Komponenten können Rohmaterialien, Halbfertigprodukte oder Inhaltsstoffe sein. In einigen Fällen kann eine Stückliste auf Dienstleistungen verweisen. Jedoch beschreiben Stücklisten in der Regel erforderliche *Materialressourcen*.  
 
@@ -114,6 +117,3 @@ Wählen Sie den Positionstyp **Händler** wenn für den Produktionsprozess ein Z
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -85,6 +85,3 @@ Vorschaufunktionen werden nur in **Sandbox**-Umgebungen aktiviert.
 
 Weitere Informationen finden Sie unter [Leistungsbeurteilungen drucken](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) in Dynamics 365: Plan der 2. Veröffentlichungswelle 2019.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,37 +1,37 @@
 ---
 title: Installieren und verbinden der Warehouse-App
 description: In diesem Thema wird erläutert, wie Sie die Warehouse-App auf jedem Ihrer mobilen Geräte installieren und für die Verbindung mit Ihrer Microsoft Dynamics 365 Supply Chain Management-Umgebung konfigurieren. Sie können jedes Gerät manuell konfigurieren oder Verbindungseinstellungen über eine Datei oder durch Scannen eines QR-Codes importieren.
-author: Mirzaab
+author: MarkusFogelberg
+manager: tfehr
 ms.date: 05/25/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 267694
 ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: mirzaab
+ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9f123f217aabcc7500832fafb15199043048b5e5
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 88bce09a6d3bf154592955a6fb2dada6247f1993
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902270"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428919"
 ---
-# <a name="install-and-connect-the-warehouse-app"></a>Lagerort-App installieren und Verbindung herstellen
+# <a name="install-and-connect-the-warehouse-app"></a>Installieren und verbinden der Warehouse-App
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> In diesem Thema wird beschrieben, wie Sie die alte (jetzt veraltete) Lagerort-App konfigurieren. Wenn Sie Informationen darüber suchen, wie Sie die neue Mobile App der Lagerortverwaltung konfigurieren, lesen Sie [Installieren und Verbinden der Mobile App der Lagerortverwaltung](install-configure-warehouse-management-app.md).
-
-> [!NOTE]
-> In diesem Thema wird beschrieben, wie Lagerort-App für Cloudbereitstellungen konfiguriert wird. Wenn Sie erfahren möchten, wie die Lagerort-App für lokale Bereitstellungen konfiguriert wird, finden Sie weitere Informationen unter [Lagerhaltung für lokale Bereitstellungen](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+> In diesem Thema wird beschrieben, wie Lagerhaltung für Cloudbereitstellungen konfiguriert wird. Wenn Sie erfahren möchten, wie die Lagerhaltung für lokale Bereitstellungen konfiguriert wird, finden Sie weitere Informationen unter [Lagerhaltung für lokale Bereitstellungen](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 Die Warehouse-App ist im Google Play Store und im Microsoft Store verfügbar. Sie wird als eigenständige Komponente bereitgestellt. Daher müssen Sie sie auf jedes Gerät herunterladen und dann so konfigurieren, dass eine Verbindung mit der Microsoft Dynamics 365 Supply Chain Management-Umgebung hergestellt wird.
 
@@ -54,7 +54,7 @@ Verwenden Sie einen der folgenden Links, um die App herunterzuladen:
 - **Windows (UWP):** [Dynamics 365 for Finance and Operations – Lagerhaltung im Microsoft Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
 - **Android:** [Warehousing – Dynamics 365 im Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
 
-Bei kleineren Bereitstellungen können Sie die App über den entsprechenden Store auf jedem Gerät installieren und anschließend die Verbindung zu den von Ihnen verwendeten Umgebungen manuell konfigurieren. In der Warehouse-App ab Version 1.7.0.0 können Sie jedoch auch die App-Bereitstellung und/oder -Konfiguration automatisieren. Dieser Ansatz ist möglicherweise praktisch, wenn Sie viele Geräte verwalten und eine Lösung zur Verwaltung mobiler Geräte und zur Verwaltung mobiler Anwendungen wie [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) verwenden. Weitere Informationen dazu, wie Sie Intune zum Hinzufügen von Anwendungen verwenden, finden Sie unter [Microsoft Intune Apps hinzufügen](/mem/intune/apps/apps-add).
+Bei kleineren Bereitstellungen können Sie die App über den entsprechenden Store auf jedem Gerät installieren und anschließend die Verbindung zu den von Ihnen verwendeten Umgebungen manuell konfigurieren. In der Warehouse-App ab Version 1.7.0.0 können Sie jedoch auch die App-Bereitstellung und/oder -Konfiguration automatisieren. Dieser Ansatz ist möglicherweise praktisch, wenn Sie viele Geräte verwalten und eine Lösung zur Verwaltung mobiler Geräte und zur Verwaltung mobiler Anwendungen wie [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) verwenden. Weitere Informationen dazu, wie Sie Intune zum Hinzufügen von Anwendungen verwenden, finden Sie unter [Microsoft Intune Apps hinzufügen](https://docs.microsoft.com/mem/intune/apps/apps-add).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Webdienstanwendung in Azure Active Directory erstellen
 
@@ -64,36 +64,36 @@ Sie müssen eine Webdienstanwendung für den Supply Chain Management-Mandanten i
 1. Geben Sie den Namen und das Kennwort des Benutzers ein, der Zugriff auf das Azure-Abonnement hat.
 1. Wählen Sie im linken Navigationsbereich des Azure-Portals **Azure Active Directory** aus.
 
-    ![Azure Active Directory.](media/app-connect-azure-aad.png "Azure Active Directory")
+    ![Azure Active Directory](media/app-connect-azure-aad.png "Azure Active Directory")
 
 1. Stellen Sie sicher, dass Sie mit der Azure AD-Instanz arbeiten, die von Supply Chain Management verwendet wird.
 1. Wählen Sie in der Liste **Verwalten** die Option **App-Registrierungen** aus.
 
-    ![App-Registrierungen.](media/app-connect-azure-register.png "App-Registrierungen")
+    ![App-Registrierungen](media/app-connect-azure-register.png "App-Registrierungen")
 
 1. Wählen Sie auf der Symbolleiste **Neue Registrierung** aus, um den Assistenten **Anwendung registrieren** zu öffnen.
 1. Geben Sie einen Namen für die Anwendung ein, wählen Sie die Option **Nur Konten in diesem organisatorischen Verzeichnis** und dann **Registrieren** aus.
 
-    ![Anwendungsassistenten registrieren.](media/app-connect-azure-register-wizard.png "Anwendungsassistenten registrieren")
+    ![Anwendungsassistenten registrieren](media/app-connect-azure-register-wizard.png "Anwendungsassistenten registrieren")
 
 1. Die neue App-Registrierung wird geöffnet. Notieren Sie sich den Wert der **Anwendungs(Client)-ID**, da Sie ihn zu einem späteren Zeitpunkt benötigen. Dies ID wird später in diesem Thema als *Client-ID* bezeichnet.
 
-    ![Anwendungs-ID (Client).](media/app-connect-azure-app-id.png "Anwendungs(client)-ID")
+    ![Anwendungs(client)-ID](media/app-connect-azure-app-id.png "Anwendungs(client)-ID")
 
 1. Wählen Sie in der Liste **Verwalten** **Zertifikat und geheime Schlüssel** aus. Wählen Sie dann eine der folgenden Schaltflächen aus, je nachdem, wie Sie die App für die Authentifizierung konfigurieren möchten. (Weitere Informationen finden Sie im Abschnitt [Mit einem Zertifikat oder geheimen Clientschlüssel authentifizieren](#authenticate) weiter unten in diesem Thema.)
 
     - **Zertifikat hochladen** – Laden Sie ein Zertifikat hoch, um es als geheimen Schlüssel zu verwenden. Wir empfehlen diese Methode, da sie sicherer ist und außerdem vollständig automatisiert werden kann. Wenn Sie die Warehouse-App auf Windows-Geräten ausführen, notieren Sie sich den **Fingerabdruck**-Wert, der nach dem Hochladen des Zertifikats angezeigt wird. Sie benötigen diesen Wert, wenn Sie das Zertifikat auf Windows-Geräten konfigurieren.
     - **Neuer geheimer Clientschlüssel** – Erstellen Sie einen Schlüssel, indem Sie eine Schlüsselbeschreibung und eine Dauer im Abschnitt **Passwörter** eingeben, und wählen Sie dann **Hinzufügen** aus. Erstellen Sie eine Kopie des Schlüssels, und bewahren Sie ihn sicher auf.
 
-    ![Zertifikat und geheime Schlüssel.](media/app-connect-azure-authentication.png "Zertifikat und geheime Schlüssel")
+    ![Zertifikat und geheime Schlüssel](media/app-connect-azure-authentication.png "Zertifikat und geheime Schlüssel")
 
 Weitere Informationen zum Einrichten von Webdienstanwendungen in Azure AD finden Sie in den folgenden Ressourcen:
 
-- Anweisungen zum Einrichten von Webdienstanwendungen mit Windows PowerShell in Azure AD finden Sie unter [Vorgehensweise: Azure PowerShell zum Erstellen eines Dienstprinzipals mit einem Zertifikat verwenden](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
+- Anweisungen zum Einrichten von Webdienstanwendungen mit Windows PowerShell in Azure AD finden Sie unter [Vorgehensweise: Azure PowerShell zum Erstellen eines Dienstprinzipals mit einem Zertifikat verwenden](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
 - Ausführliche Informationen zum manuellen Erstellen einer Webdienstanwendung in Azure AD finden Sie in den folgenden Themen:
 
-    - [Schnellstart: Eine Anwendung bei der Microsoft Identity Platform registrieren](/azure/active-directory/develop/quickstart-register-app)
-    - [Vorgehensweise: Das Portal verwenden, um eine Azure AD-Anwendung- und einen -Dienstprinzipal zu erstellen, die auf Ressourcen zugreifen können](/azure/active-directory/develop/howto-create-service-principal-portal)
+    - [Schnellstart: Eine Anwendung bei der Microsoft Identity Platform registrieren](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
+    - [Vorgehensweise: Das Portal verwenden, um eine Azure AD-Anwendung- und einen -Dienstprinzipal zu erstellen, die auf Ressourcen zugreifen können](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)
 
 ## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Erstellen und Konfigurieren eines Benutzerkontos in Supply Chain Management
 
@@ -105,7 +105,7 @@ Führen Sie die folgenden Schritte aus, um Supply Chain Management die Verwendun
     1. Erstellen Sie einen Benutzer.
     1. Weisen Sie den Benutzer des mobilen Geräts für Lagerhaltung zu.
 
-    ![Weisen Sie den Benutzer des mobilen Geräts für Lagerhaltung zu.](media/app-connect-app-users.png "Den Benutzer des mobilen Geräts für Lagerhaltung zuweisen")
+    ![Den Benutzer des mobilen Geräts für Lagerhaltung zuweisen](media/app-connect-app-users.png "Den Benutzer des mobilen Geräts für Lagerhaltung zuweisen")
 
 1. Ordnen Sie Ihre Azure AD-Anwendung dem Benutzer der Warehouse-App zu:
 
@@ -113,7 +113,7 @@ Führen Sie die folgenden Schritte aus, um Supply Chain Management die Verwendun
     1. Erstellen Sie eine Position.
     1. Geben Sie die Client-ID ein, die Sie sich im vorherigen Abschnitt notiert haben, geben Sie ihr einen Namen, und wählen Sie den Benutzer aus, den Sie gerade erstellt haben. Wir empfehlen, dass Sie alle Ihre Geräte markieren. Wenn sie dann verloren gehen, können Sie deren Zugriff auf Supply Chain Management einfach von dieser Seite entfernen.
 
-    ![Azure Active Directory-Anwendungen.](media/app-connect-aad-apps.png "Azure Active Directory-Anwendungen")
+    ![Azure Active Directory-Anwendungen](media/app-connect-aad-apps.png "Azure Active Directory-Anwendungen")
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Sich mit einem Zertifikat oder einem geheimen Clientschlüssel authentifizieren
 
@@ -121,7 +121,7 @@ Die Authentifizierung mit Azure AD bietet eine sichere Möglichkeit, ein mobiles
 
 Zertifikate können als geheime Schlüssel verwendet werden, um die Identität der Anwendung zu belegen, wenn ein Token angefordert wird. Der öffentliche Teil des Zertifikats wird in die App-Registrierung im Azure-Portal hochgeladen, während das vollständige Zertifikat auf jedem Gerät bereitgestellt werden muss, auf dem die Warehouse-App installiert ist. Ihre Organisation ist für die Verwaltung des Zertifikats in Bezug auf Rotation usw. verantwortlich. Sie können selbstsignierte Zertifikate verwenden, Sie sollten jedoch stets nicht exportierbare Zertifikate verwenden.
 
-Sie müssen das Zertifikat lokal auf jedem Gerät verfügbar machen, auf dem Sie die Warehouse-App ausführen. Weitere Informationen dazu, wie Sie bei Verwendung von Intune, Intune-gesteuerte Geräte verwalten, finden Sie unter [Zertifikate zur Authentifizierung in Microsoft Intune verwenden](/mem/intune/protect/certificates-configure).
+Sie müssen das Zertifikat lokal auf jedem Gerät verfügbar machen, auf dem Sie die Warehouse-App ausführen. Weitere Informationen dazu, wie Sie bei Verwendung von Intune, Intune-gesteuerte Geräte verwalten, finden Sie unter [Zertifikate zur Authentifizierung in Microsoft Intune verwenden](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Die Anwendung durch Importieren der Verbindungseinstellungen konfigurieren
 
@@ -136,7 +136,7 @@ Sie können Verbindungseinstellungen aus einer Datei oder einem QR-Code importie
 | ConnectionName | Geben Sie den Namen der Verbindungseinstellung an. Der Text kann maximal 20 Zeichen umfassen. Da dieser Wert die eindeutige Kennung für eine Verbindungseinstellung ist, müssen Sie sicherstellen, dass er in der Liste eindeutig ist. Wenn auf dem Gerät bereits eine Verbindung mit demselben Namen vorhanden ist, wird diese durch die Einstellungen aus der importierten Datei überschrieben. |
 | ActiveDirectoryClientAppId | Geben Sie die Client-ID an, die Sie sich beim Einrichten von Azure AD im Abschnitt [Webdienstanwendung in Azure Active Directory erstellen](#create-service) notiert haben. |
 | ActiveDirectoryResource | Geben Sie die Stamm-URL von Supply Chain Management an. |
-| ActiveDirectoryTenant | Geben Sie den Azure AD-Domänennamen an, den Sie mit dem Supply Chain Management-Server verwenden. Dieser Wert hat die Form `https://login.windows.net/<your-Azure-AD-domain-name>`. Hier ist ein Beispiel: `https://login.windows.net/contosooperations.onmicrosoft.com`. Weitere Informationen darüber, wie Sie Ihren Azure AD-Domänennamen finden, finden Sie unter [Wichtige IDs für einen Benutzer lokalisieren](/partner-center/find-ids-and-domain-names). |
+| ActiveDirectoryTenant | Geben Sie den Azure AD-Mandant an, den Sie mit dem Supply Chain Management-Server verwenden. Dieser Wert hat die Form `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Hier ist ein Beispiel: `https://login.windows.net/contosooperations.onmicrosoft.com`. |
 | Firma | Geben Sie die juristische Person in Supply Chain Management an, mit der die Anwendung eine Verbindung herstellen soll. |
 | ConnectionType | (Optional) Geben Sie an, ob für die Verbindungseinstellung ein Zertifikat oder ein geheimer Clientschlüssel verwendet werden soll, um eine Verbindung mit einer Umgebung herzustellen. Gültige Werte sind *"certificate"* und *"clientsecret"*. Der Standardwert ist *"certificate"*.<p>**Hinweis:** Geheime Clientschlüssel können nicht importiert werden.</p> |
 | IsEditable | (Optional) Geben Sie an, ob die Bearbeitung der Verbindungseinstellung für den Benutzer möglich sein soll. Gültige Werte sind *"Wahr"* und *"Falsch"*. Der Standardwert ist *"Wahr"*. |
@@ -201,26 +201,26 @@ Führen Sie die folgenden Schritte aus, um die Verbindungseinstellungen aus eine
 1. Wechseln Sie zu **Verbindungseinstellungen**.
 1. Legen Sie die Option **Demomodus verwenden** auf _Nein_ fest.
 
-    ![Option „Demomodus“ verwenden.](media/app-connect-app-demo-mode.png "Option „Demomodus“ verwenden")
+    ![Option „Demomodus“ verwenden](media/app-connect-app-demo-mode.png "Option „Demomodus“ verwenden")
 
 1. Wählen Sie je nachdem, wie Sie die Einstellungen importieren möchten, **Datei auswählen** oder **QR-Code scannen** aus:
 
     - Wenn Sie die Verbindungseinstellungen aus einer Datei importieren, hat die App die Datei möglicherweise bereits gefunden, wenn beim Speichern der Standardname und der Standardspeicherort verwendet wurden. Wählen Sie andernfalls **Datei auswählen** aus, navigieren Sie zu der Datei auf Ihrem lokalen Gerät, und wählen Sie sie aus. Wenn Sie einen benutzerdefinierten Speicherort auswählen, speichert die App diesen und verwendet ihn beim nächsten Mal automatisch.
     - Wenn Sie die Verbindungseinstellungen durch Scannen eines QR-Codes importieren, wählen Sie **QR-Code scannen** aus. Die App fordert Sie auf, die Verwendung der Kamera des Geräts zu erlauben. Nachdem Sie die Erlaubnis erteilt haben, wird die Kamera gestartet, damit Sie sie zum Scannen verwenden können. Je nach Qualität der Kamera des Geräts und Komplexität des QR-Codes kann es schwierig sein, einen korrekten Scan zu erhalten. Versuchen Sie in diesem Fall, die Komplexität des QR-Codes zu verringern, indem Sie nur eine Verbindung pro QR-Code generieren. (Derzeit können Sie nur die Kamera des Geräts zum Scannen des QR-Codes verwenden.)
 
-    ![Verbindungseinstellungen importieren.](media/app-connect-app-select-file.png "Verbindungseinstellungen importieren")
+    ![Verbindungseinstellungen importieren](media/app-connect-app-select-file.png "Verbindungseinstellungen importieren")
 
 1. Wenn die Verbindungseinstellungen erfolgreich geladen wurden, wählen Sie in der oberen linken Ecke der Seite die Schaltfläche **Zurück** (linker Pfeil).
 
-    ![Verbindungseinstellungen wurden geladen.](media/app-connect-app-settings-loaded.png "Verbindungseinstellungen wurden geladen")
+    ![Verbindungseinstellungen wurden geladen](media/app-connect-app-settings-loaded.png "Verbindungseinstellungen wurden geladen")
 
 1. Wenn Sie ein Android-Gerät und ein Zertifikat zur Authentifizierung verwenden, fordert das Gerät Sie auf, das Zertifikat auszuwählen.
 
-    ![Eingabeaufforderung zum Auswählen eines Zertifikats auf einem Android-Gerät.](media/app-connect-app-choose-cert.png "Eingabeaufforderung zum Auswählen eines Zertifikats auf einem Android-Gerät")
+    ![Eingabeaufforderung zum Auswählen eines Zertifikats auf einem Android-Gerät](media/app-connect-app-choose-cert.png "Eingabeaufforderung zum Auswählen eines Zertifikats auf einem Android-Gerät")
 
 1. Die App stellt eine Verbindung zu Ihrem Supply Chain Management-Server her und zeigt die Anmeldeseite an.
 
-    ![Anmeldeseite.](media/app-connect-sign-in.png "Anmeldeseite")
+    ![Anmeldeseite](media/app-connect-sign-in.png "Anmeldeseite")
 
 ## <a name="manually-configure-the-application"></a><a name="config-manually"></a>Anwendung manuell konfigurieren
 
@@ -230,11 +230,11 @@ Sie können die App manuell auf dem Gerät konfigurieren, sodass sie eine Verbin
 1. Wechseln Sie zu **Verbindungseinstellungen**.
 1. Legen Sie die Option **Demomodus verwenden** auf _Nein_ fest.
 
-    ![Demomodus deaktiviert.](media/app-connect-app-select-file.png "Demomodus deaktiviert")
+    ![Demomodus deaktiviert](media/app-connect-app-select-file.png "Demomodus deaktiviert")
 
 1. Tippen Sie auf das Feld **Verbindung auswählen**, um die Einstellungen zu erweitern, die zur manuellen Eingabe der Verbindungsdetails erforderlich sind.
 
-    ![Manuelle Verbindungsfelder.](media/app-connect-manual-connect.png "Manuelle Verbindungsfelder")
+    ![Manuelle Verbindungsfelder](media/app-connect-manual-connect.png "Manuelle Verbindungsfelder")
 
 1. Geben Sie die folgenden Informationen ein:
 
@@ -248,7 +248,7 @@ Sie können die App manuell auf dem Gerät konfigurieren, sodass sie eine Verbin
         > [!NOTE]
         > Beenden Sie diesen Wert nicht mit einem Schrägstrich (/).
 
-    - **Mandant des aktiven Verzeichnisses** - Geben Sie den Azure AD-Domänennamen ein, den Sie mit dem Supply Chain Management-Server verwenden. Dieser Wert hat die Form `https://login.windows.net/<your-Azure-AD-domain-name>`. Hier ist ein Beispiel: `https://login.windows.net/contosooperations.onmicrosoft.com`. Weitere Informationen darüber, wie Sie Ihren Azure AD-Domänennamen finden, finden Sie unter [Wichtige IDs für einen Benutzer lokalisieren](/partner-center/find-ids-and-domain-names).
+    - **Active Directory-Mandant** – Geben Sie den Azure AD-Mandant ein, den Sie mit dem Supply Chain Management-Server verwenden. Dieser Wert hat die Form `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Hier ist ein Beispiel: `https://login.windows.net/contosooperations.onmicrosoft.com`.
 
         > [!NOTE]
         > Beenden Sie diesen Wert nicht mit einem Schrägstrich (/).
@@ -274,6 +274,3 @@ Bei einem verloren gegangenen oder beeinträchtigten Gerät müssen Sie den Zugr
 1. Stellen Sie sicher, dass die Client-ID der Anwendung mit der Client-ID übereinstimmt, die Sie sich in Schritt 2 notiert haben.
 1. Wählen Sie auf der Symbolleiste **Löschen** aus.
 1. Wählen Sie in der angezeigten Bestätigungsmeldung **Ja** aus.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

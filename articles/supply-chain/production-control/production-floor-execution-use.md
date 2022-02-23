@@ -2,27 +2,30 @@
 title: Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte
 description: In diesem Thema wird beschrieben, wie Sie die Produktionsausführungsoberfläche aus Sicht einer Arbeitskraft verwenden.
 author: johanhoffmann
-ms.date: 01/24/2022
+manager: tfehr
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgProductionFloorExecution
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 086d05b4080015f6185a083ca20963539f76619f
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 40c6794fdf25da44a75aba4a502a89966c0ec4d0
+ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075018"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4429013"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Die Produktionsausführungsoberfläche ist für die Touch-Interaktion optimiert. Das Design bietet einen visuellen Kontrast, der die Barrierefreiheitsanforderungen für Werkstattumgebungen erfüllt. Es bietet dieselben Funktionsfunktionen wie das Einzelvorgangskartengerät. Es ermöglicht jedoch auch das parallele Starten mehrerer Einzelvorgänge aus einer Einzelvorgangsliste. (Diese Funktion wird auch als *Einzelvorgangsbündelung* bezeichnet.) Darüber hinaus können Mitarbeiter aus einer Einzelvorgangsliste einen Leitfaden öffnen, der im Microsoft Dynamics 365 Handbuch erstellt wurde. Auf diese Weise können sie visuelle Anweisungen auf einem HoloLens erhalten.
 
@@ -32,17 +35,17 @@ Bevor Arbeitskräfte das Gerät verwenden können, muss es von einem Vorgesetzte
 
 Nachdem das Gerät vorbereitet wurde, wird die Anmeldeseite darauf angezeigt. Diese Seite enthält Informationen zum Status von Einzelvorgängen für die lokale Arbeitsgruppe. Diese Informationen werden regelmäßig aktualisiert. Auf der Seite verwenden Mitarbeiter ihre Batch-IDs zum Signieren. Obwohl Mitarbeiter kein Benutzerkonto für Supply Chain Management haben müssen, müssen sie ein Konto *Zeit registrierte Arbeitskraft* haben, das sie beim Anmelden verwenden können.
 
-![Produktionsausführungsoberfläche Anmeldeseite.](media/pfei-sign-in-page.png "Produktionsausführungsoberfläche Anmeldeseite")
+![Produktionsausführungsoberfläche Anmeldeseite](media/pfei-sign-in-page.png "Produktionsausführungsoberfläche Anmeldeseite")
 
 In den verbleibenden Abschnitten dieses Themas wird beschrieben, wie Arbeitskräfte mit der Schnittstelle interagieren.
 
 ## <a name="all-jobs-tab"></a>Registerkarte alle Einzelvorgänge
 
-Die Registerkarte **Alle Einzelvorgänge** enthält eine Einzelauftragsliste, in der alle Produktionsjobs mit dem Status angezeigt werden *Nicht angefangen*, *Gestoppt*, oder *Gestartet*. (Dieser Registerkartenname ist anpassbar und kann für Ihr System unterschiedlich sein.)
+Die Registerkarte **Alle Einzelvorgänge** enthält eine Einzelauftragsliste, in der alle Produktionsjobs mit dem Status angezeigt werden *Nicht angefangen*, *Gestoppt*, oder *Gestartet*.
 
-![Registerkarte alle Einzelvorgänge.](media/pfei-all-jobs-tab.png "Registerkarte alle Einzelvorgänge")
+![Registerkarte alle Einzelvorgänge](media/pfei-all-jobs-tab.png "Registerkarte alle Einzelvorgänge")
 
-Die Einzelvorgangsliste enthält die folgenden Spalten. Die Nummern entsprechen den Nummern in der vorherigen Abbildung.
+Die Einzelvorgangsliste enthält die folgenden Spalten. (Die Nummern in der ersten Spalte entsprechen den Nummern in der vorherigen Abbildung.)
 
 1. **Auswahlspalte** – In der Spalte ganz links werden Häkchen verwendet, um Jobs anzuzeigen, die vom Mitarbeiter ausgewählt wurden. Arbeitskräfte können mehrere Einzelaufträge gleichzeitig in der Liste auswählen. Um alle Einzelaufträge in der Liste auszuwählen, aktivieren Sie das Häkchen in der Spaltenüberschrift. Wenn ein einzelner Einzelvorgang ausgewählt wird, werden Details zu diesem Einzelvorgang im unteren Teil der Seite angezeigt.
 1. **Einzelvorgangsstatusspalte** – In dieser Spalte werden Symbole verwendet, um den Status jedes Einzelvorganges anzuzeigen. Einzelvorgänge, die in dieser Spalte kein Symbol haben, haben den Status *Nicht angefangen*. Ein grünes Dreieck zeigt Einzelvorgänge mit dem Status *Gestartet* an. Zwei gelbe vertikale Linien kennzeichnen Einzelvorgänge mit dem Status *Gestoppt*.
@@ -57,11 +60,9 @@ Die Einzelvorgangsliste enthält die folgenden Spalten. Die Nummern entsprechen 
 
 ## <a name="active-jobs-tab"></a>Registerkarte Aktive Einzelvorgänge
 
-Die Registerkarten **Aktive Aufträge** zeigen eine Liste aller Aufträge an, die die angemeldete Arbeitskraft bereits gestartet hat. (Dieser Registerkartenname ist anpassbar und kann für Ihr System unterschiedlich sein.)
+![Registerkarte Aktive Einzelvorgänge](media/pfei-active-jobs-tab.png "Registerkarte Aktive Einzelvorgänge")
 
-![Registerkarte „Aktive Einzelvorgänge“.](media/pfei-active-jobs-tab.png "Registerkarte Aktive Einzelvorgänge")
-
-Die Liste der aktiven Aufträge enthält die folgenden Spalten:
+Die Einzelvorgangsliste auf der Registerkarte **Aktive Jobs** enthält die folgenden Spalten:
 
 - **Auswahlspalte** – In der Spalte ganz links werden Häkchen verwendet, um Jobs anzuzeigen, die vom Mitarbeiter ausgewählt wurden. Arbeitskräfte können mehrere Einzelaufträge gleichzeitig in der Liste auswählen. Um alle Einzelaufträge in der Liste auszuwählen, aktivieren Sie das Häkchen in der Spaltenüberschrift. Wenn ein einzelner Einzelvorgang ausgewählt wird, werden Details zu diesem Einzelvorgang im unteren Teil der Seite angezeigt.
 - **Bestellung** – In dieser Spalte wird die Produktionsauftragsnummer für einen Auftrag angezeigt.
@@ -72,32 +73,11 @@ Die Liste der aktiven Aufträge enthält die folgenden Spalten:
 - **Verschrottet** – Diese Spalte zeigt die Menge, die bereits für einen Einzelvorgang verschrottet wurde.
 - **Verbleibend** – In dieser Spalte wird die Menge angezeigt, die für einen Einzelvorgang noch zu erledigen ist.
 
-## <a name="my-machine-tab"></a>Registerkarte „Meine Maschine“
-
-Auf der Registerkarte **Meine Maschine** können Arbeitskräfte eine Anlage auswählen, die mit einer Maschinenressource innerhalb des auf der Registerkarte **Alle Aufträge** festgelegten Filters liegt. Die Arbeitskraft kann dann den Status und den Zustand der ausgewählten Anlage anzeigen, indem sie Werte für bis zu vier ausgewählte Zähler und Listen der letzten Wartungsanfragen und registrierten Ausfallzeiten abliest. Die Arbeitskraft kann auch eine Wartung für die ausgewählte Anlage anfordern und Ausfallzeiten der Maschine registrieren und bearbeiten. (Dieser Registerkartenname ist anpassbar und kann für Ihr System unterschiedlich sein.)
- 
-![Die Registerkarte „Meine Maschine“.](media/pfei-my-machine-tab.png "Die Registerkarte „Meine Maschine“")
-
-Die Registerkarte **Meine Maschine** enthält die folgenden Spalten. Die Nummern entsprechen den Nummern in der vorherigen Abbildung.
-
-1. **Maschinenanlage** – Wählen Sie die Maschinenanlage aus, die Sie nachverfolgen möchten. Geben Sie einen Namen ein, um aus einer Liste übereinstimmender Anlagen auszuwählen, oder wählen Sie das Lupensymbol aus, um aus einer Liste aller Anlagen auszuwählen, die den Ressourcen zugeordnet sind, die sich im Filter der Auftragsliste befinden.
-
-    > [!NOTE]
-    > Benutzer von Supply Chain Management können jeder Anlage über die Seite **Alle Anlagen** (auf der Registerkarte **Anlage** über die Dropdownliste **Ressource**) nach Bedarf eine Ressource zuweisen. Weitere Informationen finden Sie unter [Erstellen einer Anlage](../asset-management/objects/create-an-object.md).
-
-1. **Einstellungen** – Wählen Sie das Zahnradsymbol aus, um ein Dialogfeld zu öffnen, in dem Sie auswählen können, welche Zähler für die ausgewählte Maschinenanlage angezeigt werden sollen. Die Werte für diese Zähler werden oben auf der Registerkarte **Anlagenverwaltung** angezeigt. Über das Menü **Einstellungen** (siehe den folgenden Screenshot) können Sie bis zu vier Zähler aktivieren. Verwenden Sie für jeden Zähler, den Sie aktivieren möchten, das Suchfeld oben auf der Kachel, um einen Zähler auszuwählen. Das Suchfeld listet alle Zähler auf, die der oben auf der Seite **Vermögensverwaltung** ausgewählten Anlage zugeordnet sind. Stellen Sie jeden Zähler so ein, dass für den Zähler entweder der Wert **Aggregiert** oder der aktuelle Wert **Tatsächlich** überwacht wird. Wenn Sie beispielsweise einen Zähler festlegen, der nachverfolgt, wie viele Stunden die Maschine gelaufen ist, sollten Sie ihn auf **Aggregiert** festlegen. Wenn Sie einen Zähler zum Messen der zuletzt aktualisierten Temperatur oder des zuletzt aktualisierten Drucks verwenden, sollten Sie ihn auf **Tatsächlich** festlegen. Wählen Sie **OK**, um Ihre Einstellungen zu speichern und das Dialogfeld zu schließen.
-
-    ![Einstellungen der Registerkarte „Meine Maschine“.](media/pfei-my-machine-tab-settings.png "Einstellungen der Registerkarte „Meine Maschine“")
-
-1. **Wartung anfordern** – Wählen Sie diese Schaltfläche aus, um ein Dialogfeld zu öffnen, in dem Sie eine Wartungsanfrage erstellen können. Sie können eine Beschreibung und eine Notiz angeben. Die Anfrage wird an einen Benutzer von Supply Chain Management weitergeleitet, der dann in der Lage ist, die Wartungsanfrage in einen Wartungsarbeitsauftrag umzuwandeln.
-1. **Ausfallzeiten erfassen** – Wählen Sie diese Schaltfläche aus, um ein Dialogfeld zu öffnen, in dem Sie Ausfallzeiten der Maschine erfassen können. Sie können einen Ursachencode auswählen und ein Datum bzw. eine Zeitspanne für die Ausfallzeit eingeben. Die Erfassung der Ausfallzeit der Maschine wird zur Berechnung der Effizienz des Maschinenanlage verwendet.
-1. **Anzeigen oder bearbeiten** – Wählen Sie diese Schaltfläche aus, um ein Dialogfeld zu öffnen, in dem Sie vorhandene Ausfallzeitdatensätze bearbeiten oder anzeigen können.
-
 ## <a name="starting-and-completing-production-jobs"></a>Einzelvorgänge starten und abschließen
 
 Arbeiter starten einen Produktions-Einzelvorgang, indem sie einen Einzelvorgang auf der Registerkarte **Alle Einzelvorgänge** auswählen und dann **Einzelvorgang starten** wählen und das Dialogfeld **Einzelvorgang starten** öffnen.
 
-![Dialogfeld Einzelvorgang starten.](media/pfei-start-job-dialog.png "Dialogfeld Einzelvorgang starten")
+![Dialogfeld Einzelvorgang starten](media/pfei-start-job-dialog.png "Dialogfeld Einzelvorgang starten")
 
 Arbeitskräfte benutzen das Dialogfeld **Einzelvorgang starten**, um die Produktionsmenge zu bestätigen und dann den Einzelvorgang zu starten. Arbeitskräfte können die Menge anpassen, indem sie das Feld **Menge** auswählen und dann die numerische Tastatur verwenden, die angezeigt wird. Arbeitskräfte wählen **Start**, um mit dem Einzelvorgang zu beginnen. Das Dialogfeld **Einzelvorgang starten** wird geschlossen und der Einzelvorgang zur Registerkarte **Aktive Einzelvorgänge** hinzugefügt.
 
@@ -107,96 +87,13 @@ Arbeitskräfte können einen Einzelvorgang starten, der sich in einem beliebigen
 
 Wenn ein Mitarbeiter einen Einzelvorgang abschließt oder teilweise abschließt, kann er gute Mengen melden, die durch Auswahl eines Einzelauftrages auf der Registerkarte **Aktive Einzelvorgänge** ausgewählt werden und dann **Fortschritt melden** auswählen. Im Dialogfeld **Fortschritt melden** gibt die Arbeitskraft dann die gute Menge über die Zifferntastatur ein. Die Menge ist standardmäßig leer. Nachdem eine Menge eingegeben wurde, kann die Arbeitskraft den Status des Einzelvorgangs auf *In Bearbeitung*, *Gestoppt*, oder *Abgeschlossen* aktualisieren.
 
-![Dialogfeld „Fortschritt melden“.](media/pfei-report-progress-dialog.png "Dialogfeld Fortschritt melden")
-
-## <a name="reporting-good-quantities-on-batch-orders-that-have-co-products-and-by-products"></a>Melden von Gutmengen bei Chargenaufträgen mit Kuppel- und Nebenprodukten
-
-Mitarbeiter können die Ausführungsschnittstelle der Produktionshalle verwenden, um den Fortschritt von Batchaufträgen zu melden. Diese Berichte umfassen Kuppel- und Nebenprodukten.
-
-Einige Hersteller, insbesondere in der Prozessindustrie, verwenden Chargenaufträge, um ihre Produktionsprozesse zu verwalten. Chargenaufträge werden aus Formeln erstellt, und diese Formeln können so definiert werden, dass sie Kuppel- und Nebenprodukte als Ausgabe haben. Wenn Rückmeldungen zu diesen Chargenaufträgen gemeldet werden, muss die Produktionsmenge sowohl auf der Formelposition als auch auf den Kuppel- und Nebenprodukten registriert werden.
-
-Wenn eine Arbeitskraft einen Auftrag in einem Chargenauftrag abschließt oder teilweise abschließt, kann sie Gut- oder Ausschussmengen für jedes Produkt melden, das als Output für den Auftrag definiert ist. Produkte, die als Output für einen Chargenauftrag definiert sind, können folgende sein: *Formel*, *Kuppelprodukt*, oder *Nebenprodukt* Typ.
-
-Um gute Mengen an den Produkten zu melden, wählt ein Arbeiter einen Job auf der Registerkarte **Aktive Jobs** und wählt dann **Fortschritt melden**.
-
-Im Dialogfenster **Fortschritt melden** kann die Arbeitskraft dann unter den Produkten auswählen, die als Ausgabe für den Chargenauftrag definiert sind, über die er berichten soll. Der Arbeiter kann ein oder mehrere Produkte in der Liste auswählen und dann **Fortschritt melden** auswählen. Für jedes Produkt ist die Menge standardmäßig leer, und der Arbeiter kann die numerische Tastatur verwenden, um die Menge einzugeben. Der Arbeiter kann die Schaltflächen **Vorherige** und **Nächste** auswählen, um zwischen den ausgewählten Produkten zu wechseln. Nachdem die Menge für jedes Produkt eingegeben wurde, kann die Arbeitskraft den Status des Einzelvorgangs auf *In Bearbeitung*, *Gestoppt*, oder *Abgeschlossen* aktualisieren.
-
-![Kuppel- und Nebenprodukte melden.](media/report-co-by-products.png "Kuppel- und Nebenprodukte melden")
-
-### <a name="reporting-on-batch-orders-for-planning-items"></a>Berichte zu Chargenaufträgen für Planungsartikel
-
-Wenn eine Arbeitskraft einen Auftrag für einen Chargenauftrag für einen Planungsartikel abschließt, meldet sie Mengen nur für Kuppel- und Nebenprodukte, da Planungsartikel keinen Artikel der *Formel* Typ.
-
-### <a name="reporting-co-product-variation"></a>Kuppelproduktvariation melden
-
-Wenn ein Chargenauftrag aus einer Formelversion erstellt wird, in der die Option **Kuppelproduktvarianten** auf *Ja* eingestellt ist, kann die Arbeitskraft Kuppelprodukte melden, die nicht Teil der Definition für die Chargenaufträge sind. Diese Funktionalität wird in Szenarien verwendet, in denen unerwartete Produktausgaben im Produktionsprozess auftreten können.
-
-In diesem Fall kann die Arbeitskraft das Kuppelprodukt und die zu meldende Menge angeben, indem sie **Kuppelproduktvarianten** im Dialogfeld Berichtsfortschritt auswählt. Die Arbeitskraft kann dann aus allen freigegebenen Produkten auswählen, die als Kuppelprodukte definiert sind.
+![Dialogfeld Fortschritt melden](media/pfei-report-progress-dialog.png "Dialogfeld Fortschritt melden")
 
 ## <a name="reporting-scrap"></a>Schrott melden
 
 Wenn ein Mitarbeiter einen Einzelvorgang abschließt oder teilweise abschließt, kann er Schrott melden, indem er den Einzelvorgang auf der Registerkarte **Aktive Einzelvorgänge** auswählt und dann **Schrott melden** auswählt. Im Dialogfeld **Schrott melden** gibt die Arbeitskraft dann die Schrottmengen über die Zifferntastatur ein. Die Arbeitskraft wählt auch einen Grund aus (*Keiner*, *Maschine*, *Operator*, oder *Material*).
 
-![Dialogfeld „Ausschuss melden“.](media/pfei-report-scrap-dialog.png "Dialogfeld Schrott melden")
-
-## <a name="adjust-material-consumption-and-make-material-reservations"></a>Materialverbrauch anpassen und Materialreservierungen vornehmen
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
-
-Arbeitskräfte können den Materialverbrauch für jeden Produktionsauftrag anpassen. Diese Funktion wird in Szenarien verwendet, in denen die tatsächliche Menge an Materialien, die durch einen Produktionsauftrag verbraucht wurde, mehr oder weniger als die geplante Menge war. Daher muss sie angepasst werden, um die Bestände aktuell zu halten.
-
-Arbeitskräfte können auch Reservierungen für die Batch- und Seriennummern von Materialien vornehmen. Diese Funktion wird in Szenarien verwendet, in denen eine Arbeitskraft manuell angeben muss, welche Batches oder Seriennummern verbraucht wurden, um die Anforderungen an die Rückverfolgbarkeit von Materialien zu erfüllen.
-
-Arbeitskräfte können die anzupassende Menge angeben, indem sie **Material anpassen** wählen. Diese Schaltfläche ist an den folgenden Stellen verfügbar:
-
-- In der Dialogbox **Ausschuss melden**
-- Im Dialogfeld **Fortschritt des Berichts**
-- In der Symbolleiste auf der rechten Seite
-
-### <a name="adjust-material-consumption-from-the-report-scrap-and-report-progress-dialog-boxes"></a>Passen Sie den Materialverbrauch über die Dialogfelder Bericht Ausschuss und Bericht Fortschritt an
-
-Nachdem eine Arbeitskraft die zu meldende Menge in das Dialogfeld **Fortschritt melden** oder **Ausschuss melden** eingegeben hat, wird die Schaltfläche **Material anpassen** verfügbar. Wenn der Benutzer diese Schaltfläche auswählt, erscheint das Dialogfeld **Material anpassen**. In diesem Dialogfeld werden die Artikel aufgelistet, die verbraucht werden sollen, wenn die Waren- oder Verschrottungsmenge für den Auftrag gemeldet wird.
-
-Die Liste im Dialogfenster zeigt die folgenden Informationen an:
-
-- **Produktnummer** - Der Produktstamm und die Produktvariante.
-- **Produktname** - Der Name des Produkts.
-- **Vorschlag** - Die geschätzte Materialmenge, die verbraucht wird, wenn für die angegebene Menge für den Auftrag Fortschritt oder Ausschuss gemeldet wird.
-- **Verbrauch** - Die tatsächliche Menge an Material, die bei der Meldung von Fortschritt oder Ausschuss für die angegebene Menge für den Auftrag verbraucht wird.
-- **Reserviert** - Die Menge des Materials, die im Bestand physisch reserviert wurde.
-- **Einheit** - Die Einheit der Stückliste (Stückliste).
-
-Auf der rechten Seite des Dialogfelds werden die folgenden Informationen angezeigt:
-
-- **Produktnummer** - Der Produktstamm und die Produktvariante.
-- **Geschätzt** - Die geschätzte zu verbrauchende Menge.
-- **Gestartet** - Die Menge, die mit dem Produktionsauftrag gestartet wurde.
-- **Restmenge** - Von der geschätzten Menge die Menge, die noch verbraucht werden muss.
-- **Abgegebene Menge** - Die Menge, die verbraucht wurde.
-
-Die folgenden Aktionen können durchgeführt werden:
-
-- Die Arbeitskraft kann die Menge angeben, die für ein Material angepasst werden soll, indem sie **Verbrauch anpassen** wählt. Nachdem die Menge bestätigt wurde, wird die Menge in der Spalte **Verbrauch** mit der angepassten Menge aktualisiert.
-- Wenn die Arbeitskraft **Material anpassen** auswählt, wird ein Produktions-Kommissionierlisten-Journal erstellt. Diese Erfassung enthält die gleichen Artikel und Mengen wie die Liste **Material anpassen**.
-- Wenn die Arbeitskraft eine Menge in der Dialogbox **Material anpassen** anpasst, wird das Feld **Vorschlag** in der entsprechenden Buchungsblattzeile mit derselben Menge aktualisiert. Wenn die Arbeitskraft im Dialogfeld **Material anpassen** **Abbrechen** auswählt, wird die Kommissionierliste gelöscht.
-- Wenn die Arbeitskraft **OK** wählt, wird die Kommissionierliste nicht gelöscht. Es wird gepostet, wenn der Auftrag im Dialogfeld **Ausschuss melden** oder **Fortschritt melden** gemeldet wird.
-- Wenn die Arbeitskraft **Abbrechen** in der Dialogbox **Fortschrittsbericht** oder **Ausschussbericht** wählt, wird die Kommissionierliste gelöscht.
-
-### <a name="adjust-material-from-the-toolbar-on-the-right"></a>Passen Sie das Material über die Symbolleiste auf der rechten Seite an
-
-Die Schaltfläche **Material anpassen** kann so konfiguriert werden, dass sie in der Symbolleiste auf der rechten Seite erscheint. (Weitere Informationen finden Sie unter [Design der Produktionsausführungsoberfläche](production-floor-execution-tabs.md).) Eine Arbeitskraft kann **Material anpassen** für einen laufenden Produktionsauftrag auswählen. In diesem Fall erscheint das Dialogfenster **Material anpassen**, in dem die Arbeitskraft die gewünschten Anpassungen vornehmen kann. Wenn das Dialogfenster geöffnet wird, wird für den Produktionsauftrag eine Kommissionierliste erstellt, die Zeilen für die angepassten Mengen enthält. Wählt die Arbeitskraft **Jetzt buchen**, wird die Anpassung bestätigt und die Kommissionierliste wird gebucht. Wenn die Arbeitskraft **Abbrechen** wählt, wird die Kommissionierliste gelöscht und keine Anpassung vorgenommen.
-
-### <a name="reserve-materials"></a>Materialien reservieren
-
-In der Dialogbox **Material anpassen** kann eine Arbeitskraft Materialreservierungen vornehmen und anpassen, indem sie **Material reservieren** wählt. Das angezeigte Dialogfenster **Reservematerial** zeigt den physisch verfügbaren Bestand für den Artikel für jede Lager- und Tracking-Dimension an.
-
-Wenn das Material für die erweiterten Lagerprozesse aktiviert ist, zeigt die Liste nur den physisch verfügbaren Bestand für den Produktionseingabeort des Materials an. Der Ort der Produktionseingabe wird auf der Ressource definiert, auf der der Produktionsauftrag geplant ist. Wenn die Artikelnummer über eine Batch- oder Seriennummer gesteuert wird, wird die vollständige Liste der physisch verfügbaren Batch- und Seriennummern angezeigt. Um eine zu reservierende Menge anzugeben, kann die Arbeitskraft **Material reservieren** wählen. Um eine bestehende Reservierung zu entfernen, kann die Arbeitskraft **Reservierung entfernen** wählen.
-
-Weitere Informationen darüber, wie Sie den Ort der Produktionseingabe festlegen, finden Sie in dem folgenden Blog-Beitrag: [Einrichten des Produktions-Eingabeortes](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
-
-> [!NOTE]
-> Reservierungen, die eine Arbeitskraft im Dialogfeld **Material reservieren** vornimmt, bleiben bestehen, wenn die Arbeitskraft im Dialogfeld **Fortschritt melden** oder **Ausschuss melden** die Option **Stornieren** wählt.
+![Dialogfeld Schrott melden](media/pfei-report-scrap-dialog.png "Dialogfeld Schrott melden")
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Einen Einzelvorgang abschließen und einen neuen Einzelvorgang beginnen
 
@@ -218,7 +115,7 @@ Die Arbeitskraft wählt auf der Registerkarte **Alle Einzelvorgänge** den dritt
 
 ## <a name="working-on-indirect-activities"></a>Arbeiten an indirekten Aktivitäten
 
-Indirekte Aktivitäten sind Aktivitäten, die nicht direkt mit einem Produktionsauftrag zusammenhängen. Indirekte Aktivitäten können flexibel definiert werden, wie beschrieben unter [Richten Sie indirekte Aktivitäten für Zeit und Anwesenheit ein](/dynamicsax-2012/appuser-itpro/set-up-indirect-activities-for-time-and-attendance).
+Indirekte Aktivitäten sind Aktivitäten, die nicht direkt mit einem Produktionsauftrag zusammenhängen. Indirekte Aktivitäten können flexibel definiert werden, wie beschrieben unter [Richten Sie indirekte Aktivitäten für Zeit und Anwesenheit ein](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-indirect-activities-for-time-and-attendance).
 
 Zum Beispiel möchte Shannon, eine Werkstatt-Arbeitskraft bei Contoso, an einer Firmenbesprechung teilnehmen, und Besprechungen werden als indirekte Aktivität betrachtet. Es gilt eines der folgenden beiden Szenarien:
 
@@ -227,7 +124,7 @@ Zum Beispiel möchte Shannon, eine Werkstatt-Arbeitskraft bei Contoso, an einer 
 
 In beiden Szenarien wechselt Shannon, nachdem sie ihre Auswahl bestätigt hat, entweder zur Anmeldeseite oder zu einer Seite, die darauf wartet, dass sie bestätigt, dass sie von ihrer indirekten Aktivität zurückgekehrt ist. Die angezeigte Seite hängt von der Konfiguration der Produktionsausführungsoberfläche ab. (Weitere Informationen finden Sie unter [Einrichten der Produktionsausführungsoberfläche](production-floor-execution-configure.md).)
 
-## <a name="registering-breaks"></a>Erfassen von Pausen
+## <a name="working-on-breaks"></a>An Pausen arbeiten
 
 Arbeitskräfte können Pausen registrieren. Pausen können flexibel definiert werden, wie beschrieben in [Lohn auf Basis von Erfassungen](pay-based-on-registrations.md).
 
@@ -249,6 +146,3 @@ Arbeitskräfte können ein Dokument öffnen, das an einen Einzelvorgang angehän
 1. Die Arbeitskraft arbeitet die Anleitung durch, um die Aufgabe zu lernen.
 
 Weitere Informationen zum Erstellen, Zuweisen und Verwenden von Anleitungen für HoloLens, finden Sie unter [Bereitstellung von Mixed Reality-Leitfäden für Arbeitskräfte in der Produktion](instruction-guides-in-production-overview.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

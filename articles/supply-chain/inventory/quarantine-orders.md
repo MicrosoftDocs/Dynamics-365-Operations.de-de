@@ -1,62 +1,48 @@
 ---
 title: Quarantäneaufträge
-description: Dieses Thema beschreibt, wie Sie Quarantäneaufträge verwenden, um Bestände zu sperren.
-author: yufeihuang
-ms.date: 03/23/2021
+description: In diesem Artikel wird beschrieben, wie Quarantäneaufträge zum Sperren von Beständen verwendet werden.
+author: perlynne
+manager: tfehr
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventLocation, InventModelGroup, InventQuarantineOrder, InventQuarantineParmEnd, InventQuarantineParmReportFinished, InventQuarantineParmStartUp, InventTrans
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 30021
 ms.assetid: d5047727-653c-49da-b489-6fd3fe50445e
 ms.search.region: Global
-ms.author: yufeihuang
+ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5cf0ec8f9f4d862724cb8ab72b48771ed68eaf39
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 25ba4aa92d968f4dfb0dc23b1ac459cda2d52b61
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568782"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428977"
 ---
 # <a name="quarantine-orders"></a>Quarantäneaufträge
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema beschreibt, wie Sie Quarantäneaufträge verwenden, um Bestände zu sperren.
+In diesem Artikel wird beschrieben, wie Quarantäneaufträge zum Sperren von Beständen verwendet werden.
 
-Mit Quarantäneaufträgen können Sie Bestände sperren. Beispielsweise empfiehlt es sich, Artikel aus Gründen der Qualitätskontrolle unter Quarantäne zu stellen. Bestand, der unter Quarantäne gestellt wurde, wird an einen Quarantänelagerort übertragen.
-
-> [!NOTE]
-> Wenn Sie erweiterte Lagerortverwaltungsprozesse (in der Lagerortverwaltung) verwenden, wird die Quarantäneauftragsverarbeitung nur für Rücklieferungen von Verkaufsaufträgen verwendet.
+Quarantäneaufträge können verwendet werden, um Bestand zu sperren. Beispielsweise empfiehlt es sich, Artikel aus Gründen der Qualitätskontrolle unter Quarantäne zu stellen. Bestand, der unter Quarantäne gestellt wurde, wird an einen Quarantänelagerort übertragen. **Hinweis:** Wenn Sie die erweiterten Lagerortverwaltungsprozesse (in der Lagerortverwaltung) verwenden, wir die Quarantäneauftragsverarbeitung nur für Rückholaufträge verwendet.
 
 ## <a name="quarantine-on-hand-inventory-items"></a>Verfügbare Lagerartikel unter Quarantäne stellen
-
-Wenn Sie Artikel unter Quarantäne stellen, können Sie die Quarantäneaufträge entweder manuell erstellen oder das System so einrichten, dass sie bei der eingehenden Verarbeitung automatisch erstellt werden.
-
-Um das System so festzulegen, dass es automatisch Quarantäneaufträge erzeugt, folgen Sie diesen Schritten.
-
-1. Gehen Sie zu **Inventarverwaltung \> Einrichten \> Bestand \> Element-Modellgruppen**.
-1. Wählen Sie eine relevante Modellgruppe im Listenbereich aus oder erstellen Sie eine neue Modellgruppe.
-1. Aktivieren Sie auf der Registerkarte **Inventarrichtlinien** das Kontrollkästchen **Quarantäneverwaltung**.
-1. Schließen Sie die Seite.
-1. Geben Sie im Feld **Quarantänelager** für die empfangenden Lagerorte ein Standard-Quarantänelager an.
-
-Wenn ein Element, das als im Lagerort eingegangen registriert ist, zu einer Modellgruppe gehört, in der das Kontrollkästchen **Quarantäneverwaltung** aktiviert ist, erzeugt das System einen Quarantäneauftrag für dieses Element. Der Quarantäneauftrag weist die Arbeitskräfte an, das Element in das Quarantäne-Lagerort zu bringen.
-
-Wenn Sie Quarantäne-Aufträge manuell auf der Seite **Quarantäne-Aufträge** erstellen, muss das Element nicht in der zugehörigen Artikelmodellgruppe für die Quarantäne-Verwaltung festgelegt werden. Für diesen Vorgang müssen Sie den verfügbaren Lagerbestand, der unter Quarantäne gestellt werden soll, und den Quarantänelagerort angeben, der verwendet werden soll. Sie können den Quarantäneauftragsstatus verwenden, um die Planung des Vorgangs zu unterstützen.
+Wenn Sie Artikel unter Quarantäne stellen, können Sie die Quarantäneaufträge entweder manuell erstellen oder das System so einrichten, dass die Quarantäneaufträge automatisch erstellt werden. Um Quarantäneaufträge automatisch zu erstellen, wählen Sie die **Quarantäneverwaltung**-Option auf der **Richtlinien für Lagerbestand**-Registerkarte auf der **Lagersteuerungsgruppen**-Seite aus. Sie müssen außerdem im Feld **Quarantänelagerort** einen standardmäßigen Quarantänelagerort für den empfangenden Lagerort eingeben. Wenn der physisch verfügbare Lagerbestand in eine Bestellung oder einen Produktionsauftrag erfasst wird, werden Quarantäneelemente automatisch an einen Quarantänelagerort in Supply Chain Management verschoben. Diese Verschiebung tritt auf, da der Status des Quarantäneauftrags in **Gestartet** geändert wird. Wenn Sie Quarantäneaufträge manuell erstellen, ist es nicht nötig anzufordern, dass der Artikel in der Artikelmodellgruppe für die Quarantäneverwaltung zugeordnet wird. Für diesen Vorgang müssen Sie den verfügbaren Lagerbestand, der unter Quarantäne gestellt werden soll, und den Quarantänelagerort angeben, der verwendet werden soll. Sie können den Quarantäneauftragsstatus verwenden, um die Planung des Vorgangs zu unterstützen.
 
 ## <a name="quarantine-order-statuses"></a>Status des Quarantäneauftrags
-
 Quarantäneaufträge können folgende Status annehmen:
 
-- Erstellt
-- Gestartet
-- Fertig gemeldet
-- Abgeschlossen
+-   Erstellt
+-   Gestartet
+-   Fertig gemeldet
+-   Abgeschlossen
 
 ### <a name="created"></a>Erstellt
 
@@ -66,20 +52,18 @@ Wenn ein Quarantäneauftrag manuell erstellt wird, aber der Artikel noch nicht i
 
 Wenn ein Quarantäneauftrag den Status **Gestartet** aufweist, wird der Bestand vom regulären Lagerort an den Quarantänelagerort übertragen und es werden zwei Bestandtransaktionen erstellt. Eine Transaktion hat den Status **Entnommen** und die andere Transkation hat den Status **Erhalten**. Gleichzeitig werden zwei Lagerbuchungen für die Rückumlagerung erstellt. Diese Buchungen werden nicht mit einem Datum versehen. Eine Transaktion hat den Status **physisch reserviert** und die andere Transkation hat den Status **Bestellt**.
 
-### <a name="reported-as-finished"></a>Als fertig gemeldet
+### <a name="reported-as-finished"></a>Fertig gemeldet
 
-Um einen gestarteten Quarantäneauftrag als beendet zu melden, öffnen Sie den Auftrag und wählen Sie **Als beendet melden** im Aktivitätsbereich. Das Element wird aus der Quarantäne freigegeben, aber noch nicht zurück in den regulären Lagerort verschoben. Die Bewegung zurück zum regulären Lagerort kann über eine Wareneingangserfassung verarbeitet werden, die während des Berichts als abgeschlossener Prozess initialisiert werden kann.
+Per Klick auf **Als beendet melden** können Sie einen begonnenen Quarantäneauftrag als beendet melden. Der Artikel wird aus der Quarantäne entlassen, jedoch noch nicht an den normalen Lagerort umgelagert. Die Rückverschiebung zum normalen Lagerort kann mithilfe einer Wareneingangserfassung erfolgen, die während der Prozesses "Als beendet melden" ausgelöst werden kann.
 
-### <a name="ended"></a>Beendet
+### <a name="ended"></a>Abgeschlossen
 
-Wenn ein Quarantäneauftrag beendet wird, wird der Artikel vom Quarantänelagerort zurück an den normalen Lagerort umgelagert. Der Status der Artikelbuchung wird am Quarantänelagerort auf *Verkauft* und am normalen Lagerort auf *Gekauft* festgelegt.
+Wenn ein Quarantäneauftrag beendet wird, wird der Artikel vom Quarantänelagerort zurück an den normalen Lagerort umgelagert. Der Status der Artikelbuchung wird am Quarantänelagerort auf **Verkauft** und am normalen Lagerort auf **Gekauft** festgelegt.
 
 ## <a name="quarantine-order-scrap"></a>Quarantäneauftrags-Ausschuss
+Als Teil des Quarantäneauftragsprozesses ist es möglich, Bestand als Ausschuss kennzeichnen. Wenn Ausschuss verarbeitet wird, wird der Bestand durch eine Problemtransaktion vom Quarantänelagerort auf **Verkauft** gesetzt.
 
-Als Teil des Quarantäneauftragsprozesses ist es möglich, Bestand als Ausschuss kennzeichnen. Wenn Sie Ausschuss verarbeiten, wird der Status des Bestandes durch eine Ausgabe-Transaktion aus dem Quarantäne-Lagerort auf *Verkauft* festgelegt.
+<a name="additional-resources"></a>Zusätzliche Ressourcen
+--------
 
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
-
-- [Sperrung von Lagerbestand](inventory-blocking.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[Sperrung von Lagerbestand](inventory-blocking.md)

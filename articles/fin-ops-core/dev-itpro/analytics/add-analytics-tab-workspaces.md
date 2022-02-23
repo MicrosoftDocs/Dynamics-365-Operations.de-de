@@ -1,23 +1,25 @@
 ---
 title: Analysen zu Arbeitsbereichen mit Power BI Embedded hinzufügen
 description: Dieses Thema zeigt, wie Sie in die Registerkarte "Analysen" eines Arbeitsbereichs einen Power BI-Bericht einbetten.
-author: RichdiMSFT
+author: tjvass
+manager: AnnBe
 ms.date: 06/21/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: richdi
+ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: ed562dca621acea24efa3f157f695257cb919cdda577cf9ae6dd0b0c942e1b70
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 53c9d6343422f64aed74ce436bafd2c8b2ce1c3e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760151"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680935"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Analysen zu Arbeitsbereichen mit Power BI Embedded hinzufügen
 
@@ -50,15 +52,15 @@ Bevor Sie anfangen, müssen Sie den Power BI-Bericht erstellen oder erhalten, de
 Gehen Sie wie folgt vor, um eine PBIX-Datei als Visual Studio-Projektartefakt hinzuzufügen.
 
 1. Erstellen Sie ein neues Projekt im entsprechenden Modell.
-2. Wählen Sie das Projekt im Projektmappen-Explorer aus, klicken Sie mit der rechten Maustaste und wählen Sie dann **Hinzufügen** \> **Neues Element**.
+2. Wählen Sie das Projekt im Projektmappen-Explorer aus, klicken Sie mit der rechten Maustaste und wählen Sie dann **Hinzufügen**\>**Neues Element**.
 3. Wählen Sie im Dialogfeld **Neues Element hinzufügen** unter **Operations-Artefakte** die Vorlage **Ressource** aus.
 4. Geben Sie einen Namen ein, der für die Referenzierung des Berichts in X++-Metadaten verwendet wird, und klicken Sie dann auf **Hinzufügen**.
 
-    ![Dialogfeld „Neues Element hinzufügen“.](media/analytical-workspace-add.png)
+    ![Dialogfeld Neues Element hinzufügen](media/analytical-workspace-add.png)
 
 5. Suchen Sie die .pbix-Datei, die die Definition des analytischen Berichts enthält, und klicken Sie dann auf **Öffnen**.
 
-    ![Dialogfeld „Auswählen einer Ressourcendatei“.](media/analytical-workspace-select-resource.png)
+    ![Dialogfeld Auswählen einer Ressourcendatei](media/analytical-workspace-select-resource.png)
 
 Nachdem Sie die .pbix-Datei als Dynamics 365-Ressource hinzugefügt haben, können Sie die Berichte in Arbeitsbereiche einbetten und unter Verwendung von Menüeinträgen direkte Links hinzufügen.
 
@@ -67,13 +69,13 @@ In diesem Beispiel erweitern wir den Arbeitsbereich **Reservierungsverwaltung** 
 
 Die folgende Abbildung zeigt, wie das Formular **FMClerkWorkspace** im Designer in Microsoft Visual Studio aussieht.
 
-![Formular FMClerkWorkspace vor den Änderungen.](media/analytical-workspace-definition-before.png)
+![Formular FMClerkWorkspace vor den Änderungen](media/analytical-workspace-definition-before.png)
 
 Gehen Sie wie folgt vor, um die Formulardefinition für den Arbeitsbereich **Reservierungsverwaltung** zu erweitern.
 
 1. Öffnen Sie den Formulardesigner, um die Designdefinition zu erweitern.
 2. In dieser Designdefinition wählen Sie das oberste Element aus, **Design | Muster: Arbeitsbereich operational**
-3. Klicken Sie mit der rechten Maustaste und wählen Sie dann **Neu** \> **Registerkarte**, um das neue Steuerelement **FormTabControl1** hinzuzufügen.
+3. Klicken Sie mit der rechten Maustaste und wählen Sie dann **Neu**\>**Registerkarte**, um das neue Steuerelement **FormTabControl1** hinzuzufügen.
 4. Wählen Sie im Formulardesigner **FormTabControl1**.
 5. Klicken Sie mit der rechten Maustaste und wählen Sie dann **Neue Registerkartenseite**, um eine neue Registerkartenseite hinzuzufügen.
 6. Geben Sie der Registerkarte einen sprechenden Namen, wie beispielsweise **Arbeitsbereich**.
@@ -82,17 +84,17 @@ Gehen Sie wie folgt vor, um die Formulardefinition für den Arbeitsbereich **Res
 9. Geben Sie der Registerkarte einen sprechenden Namen, wie beispielsweise **Analysen**.
 10. Wählen Sie im Formulardesigner **Analysen (Registerkartenseite)**.
 11. Legen Sie die Eigenschaft **Bildbeschriftung** auf **Analytik** und die Eigenschaft **Automatische Deklaration** auf **Ja** fest.
-12. Klicken Sie mit der rechten Maustaste auf das Steuerelement und wählen Sie dann **Neu** \> **Gruppe**, um ein neues Formulargruppensteuerelement hinzuzufügen.
+12. Klicken Sie mit der rechten Maustaste auf das Steuerelement und wählen Sie dann **Neu**\>**Gruppe**, um ein neues Formulargruppensteuerelement hinzuzufügen.
 13. Geben Sie der Formulargruppe einen sprechenden Namen, wie beispielsweise **powerBIReportGroup**.
 14. Wählen Sie im Formulardesigner **PanoramaBody (Registerkarte)** und ziehen Sie das Steuerelement auf die Registerkarte **Arbeitsbereich**.
 15. In dieser Designdefinition wählen Sie das oberste Element aus, **Design | Muster: Arbeitsbereich operational**
 16. Klicken Sie mit der rechten Maustaste und wählen Sie dann **Muster entfernen**.
-17. Klicken Sie erneut mit der rechten Maustaste und wählen Sie dann **Muster hinzufügen** \> **Arbeitsbereich mit Registerkarten**.
+17. Klicken Sie erneut mit der rechten Maustaste und wählen Sie dann **Muster hinzufügen**\>**Arbeitsbereich mit Registerkarten**.
 18. Führen Sie einen Build aus, um Ihre Änderungen zu überprüfen.
 
 Die folgende Abbildung zeigt, wie das Design nach Anwendung dieser Änderungen aussieht.
 
-![FMClerkWorkspace nach den Änderungen.](media/analytical-workspace-definition-after.png)
+![FMClerkWorkspace nach den Änderungen](media/analytical-workspace-definition-after.png)
 
 Nachdem Sie die Steuerelemente für das Formular hinzugefügt haben, die für die Einbettung des Arbeitsbereichberichts verwendet werden, müssen Sie die Größe des übergeordneten Steuerelements definieren, sodass es zum Layout passt. Standardmäßig werden die Seite **Filter** und die Seite **Registerkarte** auf dem Bericht angezeigt. Sie können die Sichtbarkeit dieser Steuerelemente jedoch abhängig vom Zielpublikum des Berichts abändern.
 
@@ -142,7 +144,7 @@ Gehen Sie wie folgt vor, um eine Geschäftslogik hinzuzufügen, die das Steuerel
 
 Damit haben Sie die Aufgabe abgeschlossen, die Geschäftslogik hinzuzufügen, mit der das eingebettete Steuerelement für den Bericht-Viewer initialisiert wird. Die folgende Abbildung zeigt, wie der Arbeitsbereich nach Anwendung dieser Änderungen aussieht.
 
-![In den Arbeitsbereich eingebetteter Bericht.](media/analytical-workspace-final.png)
+![In den Arbeitsbereich eingebetteter Bericht](media/analytical-workspace-final.png)
 
 > [!NOTE]
 > Über die Registerkarten des Arbeitsbereichs unterhalb der Seitenüberschrift können Sie auf die vorhandene sofort ausgeführte Ansicht zugreifen.
@@ -173,6 +175,3 @@ public static void initializeReportControl(
 | showFilterPane   | Ein boolescher Wert, der angibt, ob der Filterbereich angezeigt (**true**) oder ausgeblendet (**false**) werden soll.     |
 | showNavPane      | Ein boolescher Wert, der angibt, ob der Navigationsbereich angezeigt (**true**) oder ausgeblendet (**false**) werden soll. |
 | defaultFilters   | Die Standardfilter für den Power BI-Bericht.                                                                 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

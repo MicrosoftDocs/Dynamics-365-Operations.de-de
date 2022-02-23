@@ -1,10 +1,12 @@
 ---
 title: 'ER – Verwendung von Finanzdimensionen als Datenquelle (Teil 2: Modellzuordnung)'
-description: In diesem Thema wird beschrieben, wie Sie ein EB-Modell (elektronische Berichterstellung) konfigurieren, um Finanzdimensionen als Datenquelle für EB-Berichte zu verwenden. (Teil 2)
+description: In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Modell zur Nutzung von Finanzdimensionen als Datenquelle für ER-Berichte nutzen kann.
 author: NickSelin
+manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bc7c6bc299dd0af83db3b09b06276a210ecfada5
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 3214ddb1e077d889fb7b785bee2554b96c3907ed
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605404"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681684"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2---model-mapping"></a>ER – Verwendung von Finanzdimensionen als Datenquelle (Teil 2: Modellzuordnung)
 
@@ -56,14 +58,14 @@ Um diese Schritte auszuführen, müssen Sie erst die Schritte im Verfahren „ER
 21. Wählen Sie "Ja" im Feld "Hauptkonto anfordern".
     * Legen Sie „Hauptkonto anfordern“ auf „Ja“ fest, um Benutzern zu ermöglichen, das Hauptkonto als Teil der Liste mit den Dimensionen auszuwählen.   Bei „Nein“ wird das Hauptkonto nicht in der Liste mit den Dimensionen aufgenommen und die Option „Hauptkonto erforderlich“ ist aktiviert. Wenn „Hauptkonto erforderlich“ auf Ja festgelegt ist, wird das Hauptkonto unabhängig von der Auswahl des Benutzers in der Liste mit den Dimensionen festgelegt.  
 22. Klicken Sie auf "OK".
-![Datenquelleneigenschaften-Auszug der Finanzdimensionsdetails.](../media/er-financial-dimensions-guides-model-mapping1.png)
+![ER-Modellzuordnungsdesigner – Seite](../media/er-financial-dimensions-guides-model-mapping1.png)
 23. Wählen Sie in der Struktur 'Dynamics 365 for Operations\Tabellendatensätze' aus.
 24. Klicken Sie auf "Stamm hinzufügen".
 25. Geben Sie im Feld "Name" "LedgerJournal" ein.
 26. Wählen Sie "Ja" im Feld "Ask for query".
 27. Im Tabellenfeld geben Sie "LedgerJournalTable" ein.
 28. Klicken Sie auf "OK".
-![<Designerseite für Modellzuordnungen, Datenquellentyp der Tabellenaufzeichnungen.](../media/er-financial-dimensions-guides-model-mapping2.png)
+![ER-Modellzuordnungsdesigner – Seite](../media/er-financial-dimensions-guides-model-mapping2.png)
 
 ## <a name="map-data-model-elements-to-added-data-sources"></a>Zuordnen von Datenmodell-Elementen zu hinzugefügten Datenquellen
 1. Erweitern Sie in der Struktur 'Erfassung'.
@@ -94,7 +96,7 @@ Um diese Schritte auszuführen, müssen Sie erst die Schritte im Verfahren „ER
 25. Wählen Sie in der Struktur 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions'.
 26. Wählen Sie in der Struktur 'Journal\Transaction\Dimensions data'.
 27. Klicken Sie auf Binden.
-!Designerseite für Modellzuordnungen, Registerkarte „Zuordnung“, Datenquellenbaum.](../media/er-financial-dimensions-guides-model-mapping3.png)
+![ER-Modellzuordnungsdesigner – Seite](../media/er-financial-dimensions-guides-model-mapping3.png)
 28. Wählen Sie 'LedgerJournal\<Relations\LedgerJournalTrans\Debit(AmountCurDebit)'.
 29. Wählen Sie in der Struktur 'Erfassung\Buchung\Debit'.
 30. Klicken Sie auf Binden.
@@ -133,7 +135,7 @@ Um diese Schritte auszuführen, müssen Sie erst die Schritte im Verfahren „ER
 63. Geben Sie im Feld "expressionAsStringText" 'Company.'find()'.'name()'' ein.
     * Company.'find()'.'name()'  
 64. Klicken Sie auf Speichern.
-![Seite „EB-Modellzuordnungsdesigner“.](../media/er-financial-dimensions-guides-model-mapping4.png)
+![ER-Modellzuordnungsdesigner – Seite](../media/er-financial-dimensions-guides-model-mapping4.png)
 65. Schließen Sie die Seite.
 66. Klicken Sie auf Speichern.
 67. Schließen Sie die Seite.
@@ -144,7 +146,4 @@ Um diese Schritte auszuführen, müssen Sie erst die Schritte im Verfahren „ER
 3. Klicken Sie auf "Status ändern".
 4. Klicken Sie auf "Abgeschlossen".
 5. Klicken Sie auf "OK".
-![ER-Konfigurationsseite.](../media/er-financial-dimensions-guides-model-mapping5.png)
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+![ER-Modellzuordnungsdesigner – Seite](../media/er-financial-dimensions-guides-model-mapping5.png)

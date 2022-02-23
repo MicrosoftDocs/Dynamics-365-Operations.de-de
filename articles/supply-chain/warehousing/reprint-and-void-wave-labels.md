@@ -1,22 +1,25 @@
 ---
 title: Serienetiketten neu drucken und stornieren
 description: In diesem Thema wird erläutert, wie vorhandene Serienetiketten storniert und neu gedruckt werden.
-author: perlynne
+author: GarmMSFT
+manager: PJacobse
 ms.date: 07/09/2020
 ms.topic: article
+ms.service: dynamics-ax-applications
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
 audience: Application User
-ms.reviewer: kamaybac
+ms.reviewer: PJacobse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 052c6632d1c6c6b1f357d4066ca8b419698cae62
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 0efa9400a3bf29e4e0dd56d9138cf8c3825556c7
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572336"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4429146"
 ---
 # <a name="reprint-and-void-wave-labels"></a>Serienetiketten neu drucken und stornieren
 
@@ -215,9 +218,3 @@ Arbeitsausnahmen steuern das Verhalten der kurzen Entnahmen. Gehen Sie zum Einri
 1. Wählen Sie **Kurze Entnahme**.
 1. Wählen Sie den Arbeitsausnahmecode aus, den Sie für dieses Szenario erstellt haben.
 1. Wenn Sie die richtige Ausnahme ausgewählt haben, sollte das Kontrollkästchen **Stornieren und erneut drucken** verfügbar sein. Aktivieren Sie dieses Kontrollkästchen und bestätigen Sie. Nach Bestätigung wird die Etikettenrollensequenz durch das Feld **Etiketten-Build-ID** basierend auf der geänderten Arbeitszeilenmenge neu berechnet. Es wird dann auf dem angegebenen Drucker nachgedruckt.
-
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
-
-- [Zyklusbeschriftungsdruck](configure-wave-label-printing.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

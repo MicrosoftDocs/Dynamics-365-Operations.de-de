@@ -1,24 +1,27 @@
 ---
 title: Bestandslisten
 description: In diesem Thema wird beschrieben, wie Sie auf der Seite „Bestandsliste“ die vorhandenen Bestandsdaten überprüfen können. Es zeigt einige Möglichkeiten, wie die verschiedenen Filter- und Sortieroptionen zusammenarbeiten, und wie diese Optionen manchmal zu unerwarteten Ergebnissen führen können, wenn sie kombiniert werden.
-author: yufeihuang
+author: sherry-zheng
+manager: tfehr
 ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventOnhandItem, InventOnHandItemListPage, WHSOnHand
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: yufeihuang
+ms.author: chuzheng
 ms.search.validFrom: 2020-07-07
-ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 9464240123ec2248e1b66f32dd3c9a2f974512b6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.12
+ms.openlocfilehash: 33e5ccc454191e27e33835a05094b823ec54e891
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573920"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429119"
 ---
 # <a name="inventory-on-hand-list"></a>Bestandslisten
 
@@ -143,6 +146,3 @@ Hier ist die dazugehörige Ausgabe.
 | IA0001 | 1 | 2 | 2 |
 
 Beachten Sie, dass die Einstellungen im Bereich **Filter** für die detaillierte (nicht aggregierte) Bestandstabelle gelten, die am Anfang dieses Abschnitts angezeigt wird. Daher findet das Kriterium **Physisch verfügbar** \| **weniger als oder gleich** \| _1_ zwei Zeilen aus dieser Tabelle (die erste und dritte Zeile, von denen jede einen Wert für **Physisch verfügbar** von _1_ hat). In diesem Szenario ist jedoch die Seite **Bestandsliste** nicht eingerichtet, um die **Lagerort** dimensionen anzuzeigen. Daher werden die beiden ursprünglichen Zeilen zu einer einzigen Zeile aggregiert, da beide in allen angezeigten Dimensionen identische Werte haben. Diese Zeile scheint das Filterkriterium zu verletzen, da der Wert **Physisch verfügbar** als _2_ angezeigt wird. Das Ergebnis ist jedoch korrekt, da die Einstellungen im Bereich **Filter** für die Quelltabelle und nicht für die aggregierte Tabelle gelten, die in der Tabelle auf der Seite **Verfügbar** angezeigt wird.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

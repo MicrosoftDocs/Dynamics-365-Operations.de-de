@@ -1,26 +1,29 @@
 ---
 title: Einrichten von Codes für Rücklieferungsursachen
 description: Einrichten von Ursachencodegruppen für Rückgaben.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReturnReasonCodeGroup, ReturnReasonCode
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc857f7c2e8bbcf396e6bd7eaa7478f12b26ac12
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: c55e7dc087870ac414c5cf6ce3a3d10215ac4e8e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573176"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428380"
 ---
 # <a name="set-up-return-reason-codes"></a>Einrichten von Codes für Rücklieferungsursachen   
 
@@ -29,9 +32,9 @@ ms.locfileid: "7573176"
 
 ## <a name="set-up-return-reason-code-groups"></a>Einrichten von Ursachencodegruppen für Rückgaben 
 
-1.  Gehen Sie zu **Vertrieb und Marketing** \> **Einrichten** \> **Verkaufsaufträge** \> **Retouren** \> **Retourengrund-Codegruppen**.
+1.  Klicken Sie auf **Vertrieb und Marketing** \> **Einstellungen** \> **Aufträge** \> **Retouren** \> **Ursachencodegruppen**.
 
-2.  Wählen Sie **Neu**, um eine Zeile für eine neue Retourengrundcode-Gruppe zu erstellen.
+2.  Drücken Sie STRG+N, um eine neue Ursachencodegruppenposition für Rückgaben zu erstellen.
 
 3.  Geben Sie im Feld **Ursachencodegruppen** eine Kennung für diese Gruppe ein.
 
@@ -41,7 +44,7 @@ ms.locfileid: "7573176"
 
 Mit diesem Verfahren können Sie Ursachencodes für Rückgaben einrichten, mit denen Sie angeben können, warum ein Debitor ein Produkt zurückgegeben hat.
 
-1.  Gehen Sie zu **Vertrieb und Marketing** \> **Einrichten** \> **Verkaufsaufträge** \> **Retouren** \> **Retourengrundcodes**.
+1.  Klicken Sie auf **Vertrieb und Marketing** \> **Einstellungen** \> **Aufträge** \> **Retouren** \> **Ursachencodes für Rückgabe**.
 
 2.  Drücken Sie STRG+N, um eine neue Ursachencodeposition für die Rückgabe zu erstellen.
 
@@ -60,6 +63,3 @@ Mit diesem Verfahren können Sie Ursachencodes für Rückgaben einrichten, mit d
  
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

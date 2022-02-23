@@ -66,6 +66,3 @@ Urlaubs- und Abwesenheitsverwaltung bietet die folgenden Funktionen:
 - **Anforderungen von arbeitsfreier Zeit übermitteln.**
 
     Mitarbeiter können Freizeitanforderungen im Vergleich mit ihren verfügbaren Stunden senden. Anforderungen können Einzel-Tag-Anforderungen oder Mehrfachtag-Anforderungen sein, die mehrere Absenzen und Urlaubse enthalten. Wenn ein Workflow nicht aktiviert ist, werden die Anforderungen automatisch genehmigt. Wenn ein Workflow aktiviert ist, kann die Genehmigung automatisch erfolgen oder sie kann Freigabe benötigben, je nachdem wie die Workflowkonfiguration aussieht.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

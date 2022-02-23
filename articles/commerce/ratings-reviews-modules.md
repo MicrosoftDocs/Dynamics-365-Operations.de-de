@@ -2,30 +2,35 @@
 title: Bewertungs- und Prüfungsmodule
 description: Dieses Thema umfasst Bewertungen und Rezensionsmodule, die auf den Produktdetailseiten in Microsoft Dynamics 365 Commerce verwendet werden.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: 66ee2d4185cad45b70b19fb474c64ae77a2868e835b20d5275e21610c0150370
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 85fb1272103eed7d6e44635b7c20438471d96b34
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761561"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412666"
 ---
-# <a name="ratings-and-reviews-modules"></a>Bewertungs‑ und Prüfungsmodule
+# <a name="ratings-and-reviews-modules"></a>Bewertungs- und Prüfungsmodule
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema umfasst Bewertungen und Rezensionsmodule, die auf den Produktdetailseiten (Product Details Pages, PDP) in Microsoft Dynamics 365 Commerce verwendet werden.
+Dieses Thema behandelt Bewertungen und Rezensionsmodule, die auf den Produktdetailseiten (PDPs) in Microsoft Dynamics 365 Commerce verwendet werden.
+
+## <a name="overview"></a>Übersicht
 
 Bewertungen und Rezensionen auf E-Commerce-Websites helfen Kunden, sich über Produkte zu informieren, bevor sie eine Kaufentscheidung treffen, und sind auch ein Mechanismus zum Sammeln von Kundenfeedback zu Produkten. 
 
@@ -42,23 +47,19 @@ Drei Module zeigen die Zusammenfassungen der Beurteilungen und Prüfungen an auf
  
 Die folgende Abbildung zeigt, wie die Bewertungen und Module aussehen auf einer PDP.
 
-![Bewertungs- und Prüfungsmodule in einer PDP.](media/rnr-eCommerce-pdp-reviews-modules_design.png)
+![Bewertungs- und Prüfungsmodule in einer PDP](media/rnr-eCommerce-pdp-reviews-modules_design.png)
 
 > [!TIP] 
 > Informationen darüber, wie PDP-Vorlagen und -Layouts optimiert werden, sodass Sie die Konfigurationen der Module für Beurteilungen und Prüfungen unter verschiedenen PDPs auf Ihrer E-Commerce-Webseite freigeben können, finden Sie unter. [Vorlagen und Layoutüberblick](templates-layouts-overview.md).
 
 Die folgende Abbildung zeigt, wie das Dialogfeld **Modul hinzufügen** Bewertungs- und Prüfungsmodule in Dynamics 365 Commerce darstellt.
-![Fügen Sie ein Moduldialogfeld hinzu.](media/rnr-eCommerce-pdp-adding-rnr-modules.png)
+![Fügen Sie ein Moduldialogfeld hinzu](media/rnr-eCommerce-pdp-adding-rnr-modules.png)
 
 ### <a name="write-review-module"></a>Modul Bewertung schreiben
 
 Das Modul Bewertung schreiben enhält eine Schaltfläche **Bewertung schreiben**, bei der sich Benutzer anmelden, eine Bewertung zuweisen und eine Überprüfung eines Produkts schreiben können. Mit diesem Modul können Benutzer eine Bewertung oder Prüfung bearbeiten, die sie zuvor übermittelt haben. Dieses Modul wird in der Regel über den Produktbewertungs-Histogramm- und Produktbewertungslistenmodulen auf einem PDP angezeigt.
 Die folgende Abbildung zeigt das Dialogfeld **Eine Bewertung schreiben**, das angezeigt wird, wenn ein Debitor **Eine Bewertung schreiben** auswählt. Der Debitor kann dieses Dialogfeld verwenden, um eine Bewertung und eine Prüfung zu übermitteln.
-
-![Schreiben Sie ein Bewertungsdialogfeld.](media/rnr-eCommerce-write-review-module.png)
-
-In der folgenden Tabelle wird die Eigenschaft für das Modul Bewertung schreiben angezeigt, die im Erstellungstool konfiguriert werden muss.
-
+![Dialogfeld zum Schreiben einer Rezension](media/rnr-eCommerce-write-review-module.png) Die folgende Tabelle zeigt die Eigenschaft des Rezensionsmoduls zum Schreiben, die im Autorentool konfiguriert werden muss.
 | Eigenschaftenname | Wert        | Eigenschaftbeschreibung                 |
 |---------------|--------------|--------------------------------------|
 | Name          | Bewertung schreiben | Der Name des Moduls Bewertung schreiben |
@@ -67,7 +68,7 @@ In der folgenden Tabelle wird die Eigenschaft für das Modul Bewertung schreiben
 
 Das Bewertungshistogrammmodul zeigt ein Bewertungshistogramm. Dieses Modul wird zwischen dem Modul Bewertung schreiben und dem Produktbewertungslistenmodul auf einem PDP angezeigt.
 Das Bewertungshistogrammmodul erfordert keine Konfiguration. Sie müssen das Modul in der PDP-Vorlage nur hinzufügen. Die folgende Abbildung zeigt, wie eine PDP-Vorlage in Dynamics 365 Commerce aussieht, wenn Prüfungs- und Bewertungsmodule zur Anzeige auf PDPs konfiguriert werden.
-![PDP-Vorlage, wenn Bewertungen und Prüfungen für die Anzeige auf PDP konfiguriert werden.](media/rnr-eCommerce-pdp-reviews-modules.png)
+![PDP-Vorlage, wenn Bewertungen und Prüfungen für die Anzeige auf PDPs konfiguriert werden](media/rnr-eCommerce-pdp-reviews-modules.png)
 
 ### <a name="product-reviews-list-module"></a>Modul Produktbewertungsliste
 
@@ -82,11 +83,11 @@ In der folgenden Tabelle wird die Eigenschaft für das Produktbewertungslistenmo
 
 Das Produktprüfungs-Listenmodul enthält einen Slot, in dem Sie ein Bewertungshistogrammmodul hinzufügen können. Die folgende Abbildung zeigt, wie Sie ein Bewertungshistogrammmodul im Produktprüfungs-Listenmodul in Dynamics 365 Commerce hinzufügen können.
 
-![Das Hinzufügen eines Bewertungshistogrammmoduls in einem Produktbewertungslistenmodul.](media/rnr-eCommerce-pdp-rating-histogram-summary.png)
+![Das Hinzufügen eines Bewertungshistogrammmoduls in einem Produktbewertungslistenmodul](media/rnr-eCommerce-pdp-rating-histogram-summary.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Informationen zur Modulbibliothek](starter-kit-overview.md)
+[Übersicht über die Modulbibliothek](starter-kit-overview.md)
 
 [Containermodul](add-container-module.md)
 
@@ -99,6 +100,3 @@ Das Produktprüfungs-Listenmodul enthält einen Slot, in dem Sie ein Bewertungsh
 [Kopfzeilenmodul](author-header-module.md)
 
 [Fußzeilenmodul](author-footer-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

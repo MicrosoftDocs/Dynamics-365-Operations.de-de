@@ -2,12 +2,15 @@
 title: Ein Experiment verbinden und Variationen bearbeiten
 description: In diesem Thema wird beschrieben, wie Sie ein Experiment in einem Dienst eines Drittanbieters mit Dynamics 365 Commerce verbinden und wie man Variationen für das Experiment bearbeitet.
 author: sushma-rao
+manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -15,12 +18,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: d3b1a099e29073e82e2118f9e43441a9068a4d10f0ea9f79123b97d2b7d5c419
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 030640ba8907ae52c198ac96ad2c243b533d8c53
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773032"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4412705"
 ---
 # <a name="connect-an-experiment-and-edit-variations"></a>Ein Experiment verbinden und Variationen bearbeiten
 
@@ -28,7 +31,7 @@ In diesem Thema wird beschrieben, wie Sie Ihr Experiment in Commerce verbinden u
 
 Das folgende Diagramm zeigt alle Schritte, die am Einrichten und Ausführen eines Experiments auf einer E-Commerce-Website in Dynamics 365 Commerce beteiligt sind. Weitere Schritte werden in separaten Themen behandelt.
 
-[ ![User Journey zum Experimentieren – Verbindung und Bearbeitung.](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
+[ ![User Journey zum Experimentieren – Verbindung und Bearbeitung](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
 
 Nach dem [Einrichten Ihres Experiments](experimentation-setup.md) in einem Drittanbieterdienst verbinden Sie das Experiment mit Dynamics 365 Commerce und bearbeiten Sie die Experimentvarianten.
 
@@ -92,6 +95,3 @@ Wenn Sie den Umfang Ihres Experiments als **ganz** im Assistenten **Experiment v
 
 ## <a name="next-step"></a>Nächster Schritt
 [Vorschau und Veröffentlichung eines Experiments](experimentation-preview-publish.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

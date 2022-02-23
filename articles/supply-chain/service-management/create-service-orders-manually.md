@@ -1,26 +1,29 @@
 ---
 title: Manuelles Erstellen von Serviceaufträgen
 description: Serviceaufträge können mithilfe einer Servicevereinbarung oder mithilfe des Formulars **Serviceaufträge** manuell erstellt werden.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1fad4abcf39021f94db50c07a39803af31f85c2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 51cfdb94a368df9e7082af3c768c79df44000342
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578847"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428730"
 ---
 # <a name="create-service-orders-manually"></a>Manuelles Erstellen von Serviceaufträgen    
 
@@ -34,17 +37,17 @@ Serviceaufträge können mithilfe einer Servicevereinbarung oder mithilfe des Fo
 
 ## <a name="create-a-service-order-manually-from-a-service-agreement"></a>Manuelles Erstellen eines Serviceauftrags auf der Grundlage einer Servicevereinbarung
 
-1.  Wählen Sie **Serviceverwaltung** \> **Allgemein** \> **Servicevereinbarungen** \> **Servicevereinbarungen**.
+1.  Klicken Sie auf den Bereichsseitenknoten: **Serviceverwaltung** \> **Gemeinsam** \> **Servicevereinbarungen** \> **Servicevereinbarungen**.
 
 2.  Wählen Sie eine Servicevereinbarung aus, oder erstellen Sie eine neue Servicevereinbarung.
 
-3.  Wählen Sie die Registerkarte **Liefern** und in der Gruppe **Erstellen** wählen Sie **Serviceaufträge erstellen**, um das Formular **Serviceaufträge erstellen** zu öffnen.
+3.  Klicken Sie auf die Registerkarte **Liefern** und in der Gruppe **Erstellen** auf **Geplante Serviceaufträge** um das **Serviceaufträge erstellen**-Formular zu öffnen.
 
 ## <a name="create-a-service-order-manually-in-the-service-orders-form"></a>Manuelles Erstellen eines Serviceauftrags im Formular "Serviceaufträge"
 
-1.  Wählen Sie **Serviceverwaltung** \> **Allgemein** \> **Serviceaufträge** \> **Serviceaufträge**.
+1.  Klicken auf **Serviceverwaltung** \> **Gemeinsam** \> **Serviceaufträge** \> **Serviceaufträge**.
 
-2.  Wählen Sie **Neu**, um einen neuen Serviceauftrag zu erstellen.
+2.  Drücken Sie STRG+N, um einen neuen Serviceauftrag zu erstellen.
 
 3.  Erstellen Sie Serviceauftragspositionen für den Serviceauftrag.
 
@@ -53,9 +56,9 @@ Serviceaufträge können mithilfe einer Servicevereinbarung oder mithilfe des Fo
 
 ## <a name="create-a-service-order-from-a-project"></a>Erstellen eines Serviceauftrags auf der Grundlage eines Projekts
 
-1.  Gehen Sie zu **Projektverwaltung und Abrechnung** \> **Allgemein** \> **Projekte** \> **Alle Projekte**.
+1.  Klicken Sie auf **Projektverwaltung und -buchhaltung** \> **Allgemein** \> **Projekte** \> **Alle Projekte**.
 
-2.  Wählen Sie im Formular **Projekte** im **Aktivitätsbereich** die Registerkarte **Verwalten** \> wählen Sie **Service** \> **Serviceaufträge**.
+2.  Klicken Sie im Formular **Projekte** auf den **Aktivitätsbereich**, klicken Sie auf die Registerkarte **Verwalten** \> klicken Sie auf **Service** \> **Serviceaufträge**.
 
 3.  Führen Sie das vorherige Verfahren zur manuellen Erstellung eines Serviceauftrags über das Formular "**Serviceaufträge**" durch. Im Feld **Projektkennung** wird die Projektreferenz angezeigt.
 
@@ -66,19 +69,19 @@ Serviceaufträge können mithilfe einer Servicevereinbarung oder mithilfe des Fo
 
 Serviceaufträge können im Formular **Aufträge** erstellen, indem Sie den Assistenten **Neuen auftragsbasierten Serviceauftrag erstellen**.
 
-1.  Gehen Sie auf **Vertrieb und Marketing** \> **Allgemein** \> **Verkaufsaufträge** \> **Alle Verkaufsaufträge**.
+1.  Klicken auf Bereichsseitenknoten: **Vertrieb und Marketing** \> **Gemeinsam** \> **Aufträge** \> **Alle Aufträge**.
 
 2.  Öffnen Sie den entsprechenden Auftrag.
 
-3.  Wählen Sie auf der Registerkarte **Verkaufsauftrag** die Option **Serviceauftrag**, um den Assistenten **Erstellen eines neuen Serviceauftrags auf Basis des Kundenauftrags** zu starten.
+3.  Klicken Sie auf der Registerkarte **Aufträge** auf **Serviceauftrag**, um den Assistenten **Neuen auftragsbasierten Serviceauftrag erstellen** zu starten.
 
-4.  Wählen Sie **Weiter \>**, und führen Sie dann die folgenden Schritte auf der Seite **Vertrag für Serviceauftrag auswählen** aus:
+4.  Klicken Sie auf **Weiter \>** und schließen Sie dann die folgenden Schritte auf der Seite **Vereinbarung für Serviceauftrag auswählen** ab:
     
       - Wählen Sie im Feld **Servicevertrag** die Servicevereinbarung aus, der der neue Serviceauftrag zugeordnet werden soll.
     
       - Optional: Ordnen Sie diesen Serviceauftrag im Feld **Projektkennung** einem bestimmten Projekt zu.
 
-5.  Wählen Sie **Nächste \>**, und führen Sie dann die folgenden Schritte auf der Seite **Serviceauftrag erstellen** aus:
+5.  Klicken Sie auf **Weiter \>** und schließen Sie dann die folgenden Schritte auf der Seite **Serviceauftrag erstellen** ab:
     
       - Geben Sie im Feld **Bevorzugte Servicezeit** ein Datum und eine Uhrzeit für den Beginn des Serviceeinsatzes ein.
     
@@ -88,7 +91,7 @@ Serviceaufträge können im Formular **Aufträge** erstellen, indem Sie den Assi
     
       - Wählen Sie im Feld **Kontaktkennung** die Person im Unternehmen des Debitors aus, die im Zusammenhang mit diesem Serviceauftrag kontaktiert werden soll.
 
-6.  Wählen Sie **Nächste \>**, und wählen Sie dann **Abschließen**.
+6.  Klicken Sie auf **Weiter\>** und anschließend auf **Abschließen**.
 
 
 ## <a name="see-also"></a>Siehe auch
@@ -99,6 +102,3 @@ Serviceaufträge können im Formular **Aufträge** erstellen, indem Sie den Assi
 
 [Klassenformular "Serviceaufträge erstellen"](https://technet.microsoft.com/library/aa553901\(v=ax.60\)) 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

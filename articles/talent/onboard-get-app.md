@@ -92,6 +92,3 @@ Wenn Sie die Standarddomänennamen akzeptiert haben, als Sie sich bei Onboard an
 - [Was ist neu oder geändert in Dynamics 365 Talent](./whats-new.md)
 - [Release-Pläne](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Sie erhalten Unterstützung für Microsoft Dynamics 365 Talent](./talent-support.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

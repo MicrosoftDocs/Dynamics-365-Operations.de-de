@@ -57,6 +57,3 @@ Wenn Ihre Stelle nicht auf LinkedIn angezeigt wird nach 24 Stunden, versuchen Si
 [Erstellen, Genehmigen und Buchen von Aufträgen in Attract](./creating-jobs-attract.md)
 
 [Problembehandlungsintegration mit LinkedIn und Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

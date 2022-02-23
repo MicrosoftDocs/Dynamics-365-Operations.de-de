@@ -70,6 +70,3 @@ Mit einer neuen Option können Manager die Leistung von ihren direkten Mitarbeit
 #### <a name="platform-update-29-for-finance-and-operations"></a>Plattformupdate 29 für Finance and Operations
 
 Zusätzliche Details zum Plattformupdate 29 für Finance and Operations finden Sie unter [Vorschaufunktionen in Dynamics 365 Finance and Operations Plattformupdate 29 (Oktober 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

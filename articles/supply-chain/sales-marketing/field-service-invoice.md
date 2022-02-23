@@ -1,33 +1,36 @@
 ---
 title: Vereinbarungsrechnungen in Field Service mit Freitextrechnungen in Supply Chain Management synchronisieren
-description: Dieses Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Vereinbarungsrechnungen in Dynamics 365 Field Service mit Freitextrechnungen in Dynamics 365 Supply Chain Management zu synchronisieren.
-author: Henrikan
+description: Dieses Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Vereinbarungsrechnungen in Dynamics 365  Field Service mit Freitextrechnungen in Dynamics 365 Supply Chain Management zu synchronisieren.
+author: ChristianRytt
+manager: tfehr
 ms.date: 04/10/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 70f1c072c3a2a1b201aac1f1d2beea9979a3b792
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: c2d0f671d4b824cb5d38a5d11c4b06b2e97bd0c8
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060763"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528244"
 ---
 # <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-supply-chain-management"></a>Vereinbarungsrechnungen in Field Service mit Freitextrechnungen in Supply Chain Management synchronisieren
 
 [!include[banner](../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dieses Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Vereinbarungsrechnungen in Dynamics 365 Field Service mit Freitextrechnungen in Dynamics 365 Supply Chain Management zu synchronisieren.
 
@@ -52,23 +55,23 @@ Die folgende Synchronisierung ist erforderlich, bevor die Synchronisierung von V
 
 | Field Service  | Lieferkettenverwaltung                 |
 |----------------|----------------------------------------|
-| Rechnungen       | Debitoren-Freitextrechnungskopfzeilen in Dataverse |
-| Rechnungsdetails | Debitoren-Freitextrechnungspositionen in Dataverse   |
+| Rechnungen       | CDS-Debitoren-Freitextrechnungskopfzeilen |
+| Rechnungsdetails | CDS-Debitoren-Freitextrechnungspositionen   |
 
 ## <a name="entity-flow"></a>Entitätsfluss
 
-Rechnungen, die aus einer Vereinbarung in Field Service erstellt werden, können mit Supply Chain Management über ein Microsoft Dataverse-Datenintegrationsprojekt synchronisiert werden. Aktualisierungen dieser Rechnungen werden mit den Freitextrechnungen in Supply Chain Management synchronisiert, wenn der Buchhaltungsstatus der Freitextrechnungen **In Bearbeitung** ist. Nachdem die Freitextrechnungen in Supply Chain Management gebucht werden und der Buchhaltungsstatus auf **Abgeschlossen** aktualisiert wird, können Sie keine Aktualisierungen aus Field Service mehr synchronisieren.
+Rechnungen, die aus einer Vereinbarung in Field Service erstellt werden, können mit Supply Chain Management über ein Common Data Service-Datenintegrationsprojekt synchronisiert werden. Aktualisierungen dieser Rechnungen werden mit den Freitextrechnungen in Supply Chain Management synchronisiert, wenn der Buchhaltungsstatus der Freitextrechnungen **In Bearbeitung** ist. Nachdem die Freitextrechnungen in Supply Chain Management gebucht werden und der Buchhaltungsstatus auf **Abgeschlossen** aktualisiert wird, können Sie keine Aktualisierungen aus Field Service mehr synchronisieren.
 
 ## <a name="field-service-crm-solution"></a>Field Service CRM-Lösung
 
-Die Spalte **Hat Positionen mit Vereinbarungsursprung** ist der Tabelle **Rechnung** hinzugefügt worden. Mithilfe dieser Spalte wird sichergestellt, dass nur Rechnungen synchronisiert werden, die aus einer Vereinbarung erstellt werden. Der Wert entspricht **true**, wenn die Rechnung mindestens eine Rechnungsposition enthält, die ihren Ursprung in einer Vereinbarung hat.
+Das Feld **Hat Positionen mit Vereinbarungsursprung** ist der Entität **Rechnung** hinzugefügt worden. Mithilfe dieses Felds wird sichergestellt, dass nur Rechnungen synchronisiert werden, die aus einer Vereinbarung erstellt werden. Der Wert entspricht **true**, wenn die Rechnung mindestens eine Rechnungsposition enthält, die ihren Ursprung in einer Vereinbarung hat.
 
-Die Spalte **Hat Positionen mit Vereinbarungsursprung** ist der Tabelle **Rechnungsposition** hinzugefügt worden. Mithilfe dieser Spalte wird sichergestellt, dass nur Rechnungspositionen synchronisiert werden, die aus einer Vereinbarung erstellt werden. Der Wert ist **true**, wenn die Rechnungsposition ihren Ursprung in einer Vereinbarung hat.
+Das Feld **Hat Vereinbarungsursprung** ist der Entität **Rechnungsposition** hinzugefügt worden. Mithilfe dieses Felds wird sichergestellt, dass nur Rechnungspositionen synchronisiert werden, die aus einer Vereinbarung erstellt werden. Der Wert ist **true**, wenn die Rechnungsposition ihren Ursprung in einer Vereinbarung hat.
 
-**Rechnungsdatum** ist ein Pflichtfeld in Supply Chain Management. Daher muss die Spalte einen Wert in Field Service haben, bevor eine Synchronisierung erfolgt. Um diese Anforderung zu erfüllen, wird die folgende Logik hinzugefügt:
+**Rechnungsdatum** ist ein Pflichtfeld in Supply Chain Management. Daher muss das Feld einen Wert in Field Service haben, bevor eine Synchronisierung erfolgt. Um diese Anforderung zu erfüllen, wird die folgende Logik hinzugefügt:
 
-- Wenn die Spalte **Rechnungsdatum** in der Tabelle **Rechnung** leer ist (das heißt, wenn sie keinen Wert hat), wird sie auf das aktuelle Datum festgelegt, wenn eine Rechnungsposition hinzugefügt wird, die ihren Ursprung in einer Vereinbarung hat.
-- Der Benutzer kann die Spalte **Rechnungsdatum** ändern. Wenn allerdings der Benutzer versucht, eine Rechnung zu speichern, die ihren Ursprung in einer Vereinbarung hat, erhält er oder sie einen Geschäftsprozessfehler, wenn die Spalte **Rechnungsdatum** auf der Rechnung leer ist.
+- Wenn das Feld **Rechnungsdatum** in der Entität **Rechnung** leer ist (das heißt, wenn es keinen Wert hat), wird es auf das aktuelle Datum festgelegt, wenn eine Rechnungsposition hinzugefügt wird, die ihren Ursprung in einer Vereinbarung hat.
+- Der Benutzer kann das Feld **Rechnungsdatum** ändern. Wenn allerdings der Benutzer versucht, eine Rechnung zu speichern, die ihren Ursprung in einer Vereinbarung hat, erhält er oder sie einen Geschäftsprozessfehler, wenn das Feld **Rechnungsdatum** auf der Rechnung leer ist.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Voraussetzungen und Zuordnungseinrichtung
 
@@ -100,11 +103,8 @@ Die folgenden Abbildungen zeigen die Vorlagenzuordnung in Datenintegration.
 
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-headers"></a>Vereinbarungsrechnungen (Field Service an Supply Chain Management): Rechnungskopfzeilen
 
-[![Vorlagenzuordnung in der Datenintegration für Rechnungskopfzeilen.](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
+[![Vorlagenzuordnung in Datenintegration](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
 
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>Vereinbarungsrechnungen (Field Service an Supply Chain Management): Rechnungspositionen
 
-[![Vorlagenzuordnung in der Datenintegration für Rechnungszeilen.](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[![Vorlagenzuordnung in Datenintegration](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)

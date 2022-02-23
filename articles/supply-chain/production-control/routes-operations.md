@@ -1,27 +1,30 @@
 ---
 title: Arbeitsplan und Arbeitsgänge
 description: Dieses Thema enthält allgemeine Informationen zu Arbeitsplan und Arbeitsgänge.
-author: johanhoffmann
+author: sorenva
+manager: tfehr
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, RouteOpr, RouteOprTable, ProdRouteJob, ProdRouteTrans, ProdRouteOverview, ProdRouteJobOverview, ProdRouteJobListPagePreviewPane, RouteTable, RouteVersionFeasibility, ProdRouteJobCurrent, RouteGroup, RouteProductionOrder, EngChgCaseRouteTablePart, EcoResProductProdTypeFormulaNoActiveRouteFormPart,
-ms.author: johanho
+ms.author: sorenand
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 268124
 ms.assetid: f78d5836-3e71-42b7-a5d1-41f19228d9d2
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab825227e7cd8848dbad58c58f5c6d7afc338f9c
-ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
+ms.openlocfilehash: adf890f5305f4e6a62c2d7527ff3b593ed61eff3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7891952"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428514"
 ---
 # <a name="routes-and-operations"></a>Arbeitspläne und Arbeitsgänge
 
@@ -29,7 +32,8 @@ ms.locfileid: "7891952"
 
 Dieses Thema enthält allgemeine Informationen zu Arbeitsplan und Arbeitsgänge. Ein Arbeitsplan definiert den Prozess für die Produktion eines Produkts oder die Produktvariante. Er beschreibt jeden Schritt (Arbeitsgang) im Produktionsprozess und den Auftrag für den diese Schritte ausgeführt werden müssen. Für jeden Schritt definiert der Arbeitsplan erforderliche betrieblichen Ressourcen, die Zeit der erforderlichen Einstellungen und die Bearbeitungszeit sowie wie die Kosten berechnet werden sollen.
 
-## <a name="overview"></a>Überblick
+<a name="overview"></a>Überblick
+--------
 
 Ein Arbeitsplan beschreibt die Reihenfolge der Arbeitsgänge, der erforderlich ist, um ein Produkt oder eine ausgewählte Produktvariante zu erzeugen. Für jeden Arbeitsgang definiert der Arbeitsplan auch die betrieblichen Ressourcen, die erforderlich sind, die Zeit, die benötigt wird, um den Arbeitsgang einrichten und ausführen, und wie Kosten berechnet werden sollen. Sie können dieselben Arbeitsplan verwenden, um mehrere Produkte anzuzeigen, oder Sie können einen eindeutigen Arbeitsplan für jedes Produkt oder Produktvariante definieren. Sie können sogar mehrere Arbeitspläne für das gleiche Produkt haben. In diesem Fall hängt der Arbeitsplan, der verwendet wird, von Faktoren wie der Menge, die produziert werden muss ab. Die Definition eines Arbeitsplans in Supply Chain Management besteht aus vier verschiedenen Elemente, die zusammen den Produktionsprozess beschreiben:
 
@@ -45,7 +49,7 @@ Ein Arbeitsplan beschreibt die Reihenfolge der Arbeitsgänge, der verwendet wird
 
 Ein einfacher Arbeitsplan ist fortlaufend, und es ist nur einen Startpunkt für den Arbeitsplan definiert.  
 
-[![Einfache Arbeitspläne.](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
+[![Einfache Arbeitspläne](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
 Wenn Sie nur einfache Arbeitspläne in den Produktionssteuerungsparametern aktivieren, generiert Supply Chain Management automatisch die Arbeitsgangnummern (10, 20, 30 usw.), wenn Sie den Arbeitsplan definieren.
 
@@ -53,7 +57,7 @@ Wenn Sie nur einfache Arbeitspläne in den Produktionssteuerungsparametern aktiv
 
 Wenn Sie die komplexeren Arbeitsplan-Netzwerke in den Produktionssteuerungsparametern aktivieren, können Sie Arbeitspläne definieren, die mehrere Startpunkte haben und Arbeitsgängen, die gleichzeitig ausgeführt werden können.  
 
-[![Arbeitsplan-Netzwerk.](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
+[![Arbeitsplan-Netzwerk](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
 > - Jeder Arbeitsgang kann nur einen Folgeaktivitätsarbeitsgang haben, und der gesamte Arbeitsplan muss in einem einzigen Arbeitsgang beendet werden.
@@ -64,7 +68,7 @@ Wenn Sie die komplexeren Arbeitsplan-Netzwerke in den Produktionssteuerungsparam
 
 Manchmal ist eine Kombination aus mehreren betrieblichen Ressourcen, die bestimmte Merkmale aufweisen, erforderlich, um einen Arbeitsgang auszuführen. Beispielsweise könnte ein Zusammenbauvorgang eine Maschine und ein Werkzeug erfordern, und eine Arbeitskraft, die zwei Maschinen beaufsichtigt für den Arbeitsgang. Dies kann z.B. modelliert werden, indem parallele Arbeitsgänge verwendet werden, bei denen ein Arbeitsgang ausgewählt ist, der der primäre Arbeitsgang ist und der andere der sekundäre ist.  
 
-[![Arbeitsplan mit primären und sekundären Arbeitsgängen.](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
+[![Arbeitsplan mit primären und sekundären Arbeitsgängen](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
 
 In der Regel stellt der primäre Arbeitsgang die Engpassressource dar, die die Bearbeitungszeit für die sekundären Arbeitsgänge definiert. Bei der Planung mit begrenzter Kapazität, muss die Ressourcen, für die geplant werden soll, für den primären Arbeitsgang und die sekundären Arbeitsgänge gleichzeitig verfügbar sein und die freie Kapazität haben.  
 
@@ -78,7 +82,7 @@ Ein Arbeitsplan muss genehmigt werden, bevor er im Produktionsprozess verwendet 
 
 Jeder Arbeitsplan kann separat genehmigt oder widerrufen werden. Beachten Sie, dass, wenn ein Arbeitsplan widerrufen ist, alle zugehörigen Arbeitsplanversionen auch widerrufen sind. In den Produktionssteuerungsparametern können Sie angeben, ob die Arbeitsplangenehmigung widerrufen werden kann und ob genehmigte Arbeitspläne geändert werden können.  
 
-Wenn Sie ein Protokoll beibehalten müssen, das festhält, wer jeden Arbeitsplan genehmigt, können Sie elektronische Signaturen für Genehmigung des Arbeitsplans anfordern. Benutzer müssen anschließend ihre Identität bestätigen, indem sie [elektronische Signaturen](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md) verwenden.
+Wenn Sie ein Protokoll beibehalten müssen, das festhält, wer jeden Arbeitsplan genehmigt, können Sie elektronische Signaturen für Genehmigung des Arbeitsplans anfordern. Benutzer müssen anschließend ihre Identität bestätigen, indem sie [elektronische Signaturen](../../fin-and-ops/organization-administration/electronic-signature-overview.md) verwenden.
 
 ## <a name="operations"></a>Operations
 Ein Arbeitsgang ist ein Schritt im Produktionsprozess. Jeder Arbeitsgang besitzt eine Kennung und eine einfache Beschreibung. Die folgenden Tabellen zeigt typische Beispiele für Arbeitsgänge einer Maschinenwerkstatt.
@@ -184,7 +188,7 @@ Wenn Sie eine Arbeitsplanversion aktivieren, legen Sie diese als die Standardarb
 
 ### <a name="electronic-signatures"></a>Elektronische Signaturen
 
-Wenn Sie ein Protokoll beibehalten müssen, das festhält, wer jeden Arbeitsplan genehmigt und aktiviert, können Sie elektronische Signaturen für Genehmigung des Arbeitsplans anfordern. Benutzer, die Arbeitsplanversionen genehmigen und aktivieren, müssen dann ihre Identität bestätigen, indem sie eine [elektronische Signatur](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md) verwenden.
+Wenn Sie ein Protokoll beibehalten müssen, das festhält, wer jeden Arbeitsplan genehmigt und aktiviert, können Sie elektronische Signaturen für Genehmigung des Arbeitsplans anfordern. Benutzer, die Arbeitsplanversionen genehmigen und aktivieren, müssen dann ihre Identität bestätigen, indem sie eine [elektronische Signatur](../../fin-and-ops/organization-administration/electronic-signature-overview.md) verwenden.
 
 ### <a name="product-change-that-uses-case-management"></a>Produktänderung mit Anfrageverwaltung
 
@@ -223,7 +227,7 @@ Wenn Sie diesen Ansatz verwenden, wird die Seite **Arbeitsgangzuordnungen** Ihr 
 Wenn Sie keine betriebliche Ressourcen oder eine Ressourcengruppe als Teil der Ressourcenanforderungen für einen Arbeitsgang angegeben, arbeiten möglicherweise die entsprechenden Ressourcen mit unterschiedlichen Geschwindigkeiten. Daher kann die Dauer, die erforderlich ist, um einen Arbeitsgang zum Verarbeiten, abweichen. Zur Behebung dieses Problems, können Sie das Feld **Formel** in der Arbeitsgangzuordnung verwenden, um die Berechnung von Zeitintervall festzulegen. Die folgenden Optionen sind verfügbar:
 
 - **Standard** – (Standardeinstellung) Die Berechnung verwendet nur die Felder aus der Arbeitsgangzuordnung und multipliziert die angegebene Bearbeitungszeit und die Auftragsmenge.
-- **Kapazität** – Die Berechnung umfasst das **Kapazität** Feld aus der betrieblichen Ressource. Daher ist die Zeit ressourceabhängig. Der Wert, der in dieser betrieblichen Ressource angegeben wird, ist Kapazität pro Stunde. Die **Prozesszeit** wird berechnet als **Bestellmenge** geteilt durch **Kapazität**. Der Kapazitätswert ist nicht spezifisch für eine bestimmte Maßeinheit und wird daher nicht basierend auf dem Feld **Kapazitätseinheit** konvertiert, das nur ein beschreibendes Feld ist, das nicht in Berechnungen verwendet wird.
+- **Kapazität** – Die Berechnung umfasst das **Kapazität** Feld aus der betrieblichen Ressource. Daher ist die Zeit ressourceabhängig. Der Wert, der in dieser betrieblichen Ressource angegeben wird, ist Kapazität pro Stunde. Die **Prozesszeit** wird berechnet als **Bestellmenge** geteilt durch **Kapazität**.
 - **Charge** – Eine Chargenkapazität wird berechnet, indem die Informationen aus der Arbeitsgangzuordnung verwendet werden. Die Anzahl von Chargen und daher die Bearbeitungszeit können auf Basis der Auftragsmenge dann berechnet werden.
 - **Ressourcencharge** – Diese Option ist grundlegend die gleiche wie die **Charge** Option. Allerdings umfasst die Berechnung das **Chargenkapazität** Feld aus der betrieblichen Ressource. Daher ist die Zeit ressourceabhängig.
 
@@ -252,10 +256,7 @@ Wenn für Aktivierung für das Überschneiden ausgewählt wird, hat der Rest Ein
 
 - [Ressourcenfähigkeiten](resource-capabilities.md)
 
-- [Elektronische Signatur – Überblick](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md)
+- [Elektronische Signatur – Überblick](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

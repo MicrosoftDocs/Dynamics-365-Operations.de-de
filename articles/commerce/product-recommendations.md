@@ -2,25 +2,29 @@
 title: Überblick über Produktempfehlungen
 description: Dieses Thema enthält allgemeine Informationen zu Produktempfehlungen. Mit Produktempfehlungen können Kunden einfach und schnell gesuchte Produkte finden und sogar Produkte, deren Kauf sie ursprünglich nicht eingeplant hatten.
 author: Moonma
+manager: AnnBe
 ms.date: 05/26/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7824de50a65370ef4f2f23b9c8e926f9bec2fcc3
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 5aa7db8e53906f9e1416b912fe2c3b70d5430258
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982118"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412438"
 ---
 # <a name="product-recommendations-overview"></a>Überblick über Produktempfehlungen
 
@@ -31,9 +35,6 @@ Microsoft Dynamics 365 Commerce kann verwendet werden, um Produktempfehlungen au
 Mit Produktempfehlungen können Kunden einfach und schnell die gewünschten Produkte finden, während sie eine Erfahrung erhalten, die ihnen gute Dienste leistet. Cross-Selling und Upselling können Kunden sogar dabei unterstützen, zusätzliche Produkte zu finden, deren Kauf sie ursprünglich nicht eingeplant hatten. Wenn Empfehlungen zur Unterstützung der Produktfindung verwendet werden, können sie mehr Conversion-Möglichkeiten schaffen, den Umsatz steigern und sogar die Kundenzufriedenheit und Kundenbindung verbessern.
 
 In E-Commerce basieren Produktempfehlungen in großem Umfang auf maschinellen Lerntechnologien von Microsoft Recommendations.
-
-Dieser Service ist ein Add-On zu Dynamics 365 Commerce. Für weitere Informationen laden Sie die neueste Version des [Microsoft Dynamics 365-Lizenzierungshandbuchs](https://go.microsoft.com/fwlink/?LinkId=866544) herunter.
-
 
 ## <a name="recommendation-service"></a>Empfehlungsdienstleistung
 
@@ -87,6 +88,3 @@ In der folgenden Tabelle werden verschiedene Arten von automatisierten Produktem
 [Empfehlungen mit Demodaten erstellen](product-recommendations-demo-data.md)
 
 [Produktempfehlungs-FAQs](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

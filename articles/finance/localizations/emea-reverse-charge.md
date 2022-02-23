@@ -2,22 +2,25 @@
 title: Mechanismus zur Verlagerung der Steuerschuld für USt./GST-Regelung
 description: In diesem Thema wird erläutert, wie die Verlagerung der Steuerschuld (MwSt.) für europäische Länder, Saudi-Arabien und Singapur eingerichtet wird.
 author: epodkolz
+manager: AnnBe
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore, Bahrain, Kuwait, Oman, Qatar
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 326a74d0f962cf0455033b04950ded7ca26bfc77
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 247bc64bf0b90a641ead8a21971a6043691762fa
+ms.sourcegitcommit: f12ce34cc08cf1fa205c67f48669ea9a6566b526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594718"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4515050"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>Mechanismus zur Verlagerung der Steuerschuld für USt./GST-Regelung
 
@@ -45,6 +48,7 @@ Um die Verlagerung der Steuerschuld anzuwenden, müssen Sie die folgende Einrich
 Es wird empfohlen, dass Sie separate Mehrwertsteuercodes für Verkaufs- und Einkaufsvorgänge verwenden.
 
 <table>
+<body>
 <tr>
 <td><strong>Mehrwertsteuercode für Umsätze</strong></td>
 <td>Erstellen Sie einen Mehrwertsteuercode für Verkaufsvorgänge mit Verlagerung der Steuerschuld (<strong>Steuer</strong> &gt; <strong>Indirekte Steuern</strong> &gt; <strong>Mehrwertsteuer</strong> &gt; <strong>Mehrwertsteuercodes</strong>).
@@ -61,6 +65,7 @@ Sie müssen diesen negativen Mehrwertsteuercode einer Artikel-Mehrwertsteuergrup
 <p>Weitere Informationen finden Sie im nächsten Abschnitt &quot;Mehrwertsteuergruppen und Artikel-Mehrwertsteuergruppen einrichten&quot;.</p>
 </td>
 </tr>
+</tbody>
 </table>
 
 ## <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><a name="sales-tax-item-sales-tax-groups"></a>Mehrwertsteuergruppen und Artikel-Mehrwertsteuergruppen einrichten
@@ -119,7 +124,7 @@ Wenn eine Einkaufsrechnung mit Verlagerung der Steuerschuld gebucht wird, werden
 
 Im folgenden Bildschirmfoto hat eine Buchung die Steuerart **Vorsteuer** und die andere Buchung weist die Steuerart **Mehrwertsteuer** auf. 
 
-![Gebuchte Mehrwertsteuer.](media/apac-sau-posted-sales-tax.png)
+![Gebuchte Mehrwertsteuer](media/apac-sau-posted-sales-tax.png)
 
 ## <a name="enable-reverse-charge-mechanism-for-vatgst-scheme-feature"></a><a name="enable-reverse-charge"></a>Mechanismus für Verlagerung der Steuerschuld für USt./GST-Regelung aktivieren
 Suchen Sie im Arbeitsbereich **Funktionsverwaltung** die Funktion **Aktivieren** und wählen Sie sie aus.
@@ -132,6 +137,3 @@ Die folgenden Seiten und Menüelemente, die mit der Funktionseinstellung zusamme
  - **Außenhandelsparameter** (**USt.** > **Einrichten** > **Mehrwertsteuer** > **Außenhandel** > **Außenhandelsparameter**). Siehe [Länder-/Regionseigenschaften einrichten](#Set-up-Country/region-properties)
 
 Das Kontrollkästchen **Verlagerung der Steuerschuld** ist auf den Seiten **Mehrwertsteuergruppe** und **Gebuchte Mehrwertsteuer** verfügbar. Weitere Informationen finden Sie in den Abschnitten [Mehrwertsteuergruppen und Artikel-Mehrwertsteuergruppen einrichten](#sales-tax-item-sales-tax-groups), [Verlagerung der Steuerschuld für eine Verkaufsrechnung](#reverse-charge-sale) und [Verlagerung der Steuerschuld für eine Einkaufsrechnung](#reverse-charge-purchase).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

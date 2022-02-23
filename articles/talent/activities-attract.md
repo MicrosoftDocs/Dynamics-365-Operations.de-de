@@ -91,6 +91,3 @@ Die Einstellungsprozessvorlage erfordert die Angebotsaktivität. Um die integrie
 > Die integrierte Angebotsverwaltung-App ist nur mit dem Umfassenden Einstellungs-Add-On verfügbar. Weitere Informationen finden Sie unter [Welche Version von Microsoft Dynamics 365 Talent - Attract](./attract-comprehensive-hiring.md).
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

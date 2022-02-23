@@ -2,13 +2,16 @@
 title: Fehlerbehebung in Planungsoptimierung
 description: In diesem Thema wird beschrieben, wie Sie Probleme beheben, die bei der Arbeit mit Planungsoptimierung auftreten können.
 author: ChristianRytt
+manager: tfehr
 ms.date: 05/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: bbf21abae60d4adee5a23a8405d14907b91724fa2cbf31c901bb46c589b2ea49
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c3dd0bf262f65aac2359c05ff954bdfbd294353f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768094"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428483"
 ---
 # <a name="troubleshoot-planning-optimization"></a>Fehlerbehebung in Planungsoptimierung 
 
@@ -47,6 +50,12 @@ Die Planungsoptimierung unterscheidet sich in einigen Bereichen vom integrierten
 
 **Beheben**: Führen Sie die Anpassungsanalyse für die Planungsoptimierung durch, und analysieren Sie dann die Ergebnisse, während Sie die zugehörige Dokumentation lesen, um die Auswirkungen zu verstehen. Weitere Informationen finden Sie unter [Planungsoptimierung Fit-Analyse](planning-optimization-fit-analysis.md).
 
+## <a name="master-planning-doesnt-respect-the-coverage-time-fence"></a>Die Masterplanung berücksichtigt nicht den Zeitrahmen für die Abdeckung
+
+Dies wird durch eine ausstehende Funktion für die Planungsoptimierung verursacht.
+
+**Beheben**: Filtern oder löschen Sie geplante Aufträge, bis die Funktion „Ausstehend“ verfügbar ist, um Liefervorschläge außerhalb des Zeitrahmens für die Abdeckung zu entfernen.
+
 ## <a name="cant-enable-planning-optimization"></a>Die Planungsoptimierung kann nicht aktiviert werden
 
 Der **Verbindungsstatus** muss **Verbunden** sein, bevor Sie **Planungsoptimierung verwenden** auf **Ja** setzen können. Weitere Informationen finden Sie unter [Erststart mit Planungsoptimierung](get-started.md).
@@ -66,6 +75,3 @@ Dies hängt mit einer ausstehenden Funktion zusammen, die im Rahmen der Unterst�
 [Erste Schritte mit der Planungsoptimierung](get-started.md)
 
 [Passanalyse zu Planungsoptimierung](planning-optimization-fit-analysis.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

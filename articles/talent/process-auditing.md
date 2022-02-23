@@ -61,6 +61,3 @@ Die folgenden Daten sind mit Prozessüberwachung verfügbar.
 |Bewerbungsverlauf | Bewerbung (msdyn_JobapplicatonId)<br></br>Status (msdyn_status) <br></br>Statusgrund (msdyn_statusreason) <br></br>Ablehnungsgrund (msdyn_rejectionreason) |
 | Verlauf der offenen Stellen | Offene Stelle (msdyn_JobopeningId) <br></br>Status (msdyn_jobopeningstatus) <br></br>Statusgrund (msdyn_jobopeningstatusreason) |
 | Kandidatenverlauf | Kandidat (msdyn_CandidateId) |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

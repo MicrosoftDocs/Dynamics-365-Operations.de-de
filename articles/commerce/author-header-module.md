@@ -2,24 +2,27 @@
 title: Kopfzeilenmodul
 description: In diesem Thema werden Kopfzeilenmodule behandelt und die Erstellung von Kopfzeilen in Microsoft Dynamics 365 Commerce beschrieben.
 author: anupamar-ms
-ms.date: 07/08/2021
+manager: annbe
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: afdc12230ebad3d5db59c384b2f1066d2c7929339f282ed4880ff967b1fd2d8b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 52069af5ca2211473d4a096ad850b5be1290bba1
+ms.sourcegitcommit: eee3523be26369aecdb36c0143a6ee3dab4b7966
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712789"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4412700"
 ---
 # <a name="header-module"></a>Kopfzeilenmodul
 
@@ -27,13 +30,15 @@ ms.locfileid: "6712789"
 
 In diesem Thema werden Kopfzeilenmodule behandelt und die Erstellung von Kopfzeilen in Microsoft Dynamics 365 Commerce beschrieben.
 
+## <a name="overview"></a>Übersicht
+
 In Dynamics 365 Commerce wird eine Seitenkopfzeile als Seitenfragment konfiguriert, das die Module Kopfzeile, Werbebanner und Cookie-Zustimmung enthält. 
 
 Das Kopfzeilenmodul enthält ein Site-Logo, Links zur Navigationshierarchie, Links zu anderen Seiten der Site, ein Warenkorbsymbolmodul, ein Wunschliste-Symbol, Anmeldeoptionen und die Suchleiste. Ein Kopfmodul wird automatisch für das Gerät optimiert, auf dem die Site angezeigt wird (anders ausgedrückt für ein Desktopgerät oder ein mobiles Gerät). Beispiel wird auf einem mobilen Gerät die Navigationsleiste in einer Schaltfläche **Menü** verringert (mitunter auch als *Hamburgermenü* bezeichnet).
 
 Das folgende Bild zeigt ein Beispiel eines Kopfzeilenmoduls, das auf einer Startseite verwendet wird.
 
-![Beispiel eines Kopfzeilenmoduls.](./media/ecommerce-header.png)
+![Beispiel eines Kopfzeilenmoduls](./media/ecommerce-header.png)
 
 ## <a name="properties-of-a-header-module"></a>Eigenschaften eines Kopfmoduls
 
@@ -58,16 +63,9 @@ Die folgenden Module können im Kopfzeilenmodul verwendet werden:
 - **Selektor speichern** – Das Store Selector-Modul kann in den Store Selector-Slot eines Header-Moduls aufgenommen werden. Hier können Benutzer Geschäfte in der Nähe durchsuchen und finden. Benutzer können auch einen bevorzugten Store angeben. Dieser Store wird dann in der Kopfzeile angezeigt. Wenn das Store-Selector-Modul im Header-Modul enthalten ist, wird die **Modus** Eigenschaft auf **Store finden** festgelegt. Weitere Informationen finden Sie unter [Store-Auswahl-Modul](store-selector.md).
 
 > [!NOTE]
-> - Hilfe zur Verwendung des Warenkorbsymbolmoduls im Kopfzeilenmodul steht ab Dynamics 365 Commerce-Version 10.0.11 zur Verfügung.
-> - Hilfe zur Verwendung des Site-Auswahlmoduls im Kopfzeilenmodul steht ab Dynamics 365 Commerce-Version 10.0.14 zur Verfügung.
-> - Hilfe zur Verwendung des Store-Auswahlmoduls im Kopfzeilenmodul steht ab Dynamics 365 Commerce-Version 10.0.15 zur Verfügung.
-
-## <a name="header-module-in-the-adventure-works-theme"></a>Kopfzeilenmodul im Adventure Works-Design
-
-Im Adventure Works-Design unterstützt das Kopfzeilenmodul die Eigenschaft **Mobiles Logo**. Diese Eigenschaft ermöglicht die Angabe eines Logos für mobile Viewports. Die Eigenschaft **Mobiles Logo** ist als Moduldefinitionserweiterung verfügbar.
-
-> [!IMPORTANT]
-> Das Adventure Works-Design steht ab der Dynamics 365 Commerce-Version 10.0.20 zur Verfügung.
+> - Hilfe für das Modul Warenkorbsymbol im Header-Modul finden Sie in Dynamics 365 Commerce Release 10.0.11.
+> - Hilfe für das Modul Site-Selektor im Header-Modul finden Sie in Dynamics 365 Commerce Release 10.0.14.
+> - Hilfe für das Modul Store-Selektor im Header-Modul finden Sie in Dynamics 365 Commerce Release 10.0.15.
 
 ## <a name="create-a-header-fragment-for-a-page"></a>Erstellen eines Kopfzeilenfragment für eine Seite
 
@@ -121,6 +119,3 @@ Um Sicherzustellen, dass eine Kopfzeile auf jeder Seite angezeigt wird, führen 
 [Siteauswahlmodul](site-selector.md)
 
 [Shopauswahlmodul](store-selector.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

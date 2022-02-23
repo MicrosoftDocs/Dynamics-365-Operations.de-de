@@ -2,9 +2,11 @@
 title: " Funktionsprofil für einen Verkäufer konfigurieren"
 description: Dieses Verfahren zeigt, wie Funktionsprofileinstellungen eines Shops konfiguriert wird, das für Verkäufer gilt.
 author: jblucher
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 46c74845002e4d89f070cc12dbcb789fb86307632e0bb91b1dae5ad98b652264
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c45a905ac29d5948e0ec7377418ff61248be2d2e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712380"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964944"
 ---
 # <a name="configure-the-functionality-profile-for-a-sales-representative"></a> Funktionsprofil für einen Verkäufer konfigurieren
 
@@ -34,6 +36,3 @@ Dieses Verfahren zeigt, wie Funktionsprofileinstellungen eines Shops konfigurier
 4. Wählen Sie im Feld "Nachfrage nach Verkäufer" eine Option aus.
 5. Wählen Sie "Ja" im Feld "Verkäufer erforderlich" aus.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

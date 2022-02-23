@@ -2,25 +2,28 @@
 title: Crossdocking von Produktionsaufträgen zu Ausgangsrampen
 description: In diesem Thema wird beschrieben, wie Sie den Prozess des Crossdockings von Materials verwalten, das als fertig gestellt gemeldet wurde, spricht von eine Produktionsauftragsposition an einen ausgehenden Transportdock beendet.
 author: johanhoffmann
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCrossDockOpportunityPolicy, WHSReservationHierarchy, WHSInventTableReservationHierarchy, WHSItemGroupLoadTemplate
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee91fa28943a27474bff5fb7a7fc368142dabcdd6c9c9772d38134af0257ef6e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 948db1f7308896209e195613d50b1d66b807b1bf
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715745"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429051"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Crossdocking von Produktionsaufträgen zu Ausgangsrampen
 
@@ -28,13 +31,14 @@ ms.locfileid: "6715745"
 
 In diesem Thema wird beschrieben, wie Sie den Prozess des Crossdockings von Materials verwalten, das als fertig gestellt gemeldet wurde, spricht von eine Produktionsauftragsposition an einen ausgehenden Transportdock beendet.
 
-## <a name="introduction"></a>Einführung
+<a name="introduction"></a>Einführung
+------------
 
 Crossdocking aus der Produktion an einen ausgehenden Lagerplatz ist für Hersteller von Bedeutung, die große Mengen produzieren und die fertigen Produkte idealerweise versenden möchten, sobald sie von den Produktionsauftragspositionen als fertiggestellt gemeldet werden. Die Produkte sollen zu den Verteilzentren, die physisch nahe bei der Kundennachfrage liegen, gesendet werden, anstatt Bestand am Produktionsstandort anzuhäufen.
 
 Falls kein unmittelbarer Bedarf für ein Produkt besteht, muss es bei Lagerortlagerplätzen am Produktionsstandort eingelagert werden. Dieser Vorgang ist auch als *opportunistisches Crossdocking* bekannt. Dies gibt an, dass die Verkaufschance bei Bedarf zum Versand des Produkts genutzt werden soll, anstatt das Produkt für interne Lagerung zu halten.
 
-Im folgenden Beispiel werden drei Variationen eines Flows dargestellt, der am Ende der Produktionsposition (2) beginnt.
+Im folgenden Beispiel werden drei Variationen eines Flusses dargestellt, der am Ende der Produktionsposition (2) beginnt.
 
 Ein Produkt wird dem Warenausgangslagerplatz (3) als fertig gemeldet und ein Gabelstaplerfahrer holt die Palette an diesem Lagerplatz (3) ab.
 
@@ -42,7 +46,7 @@ Ein Produkt wird dem Warenausgangslagerplatz (3) als fertig gemeldet und ein Gab
 -   Wenn der Frachttür bereits ein Anhänger zugewiesen ist, wird der LKW-Fahrer aufgefordert, das Produkt direkt auf den Anhänger zu laden.
 -   Wenn keine Aktivität für die Umlagerung des Produkts geplant ist, wird der Staplerfahrer angewiesen, das Produkt zu einem Lagerplatz am internen Lagerort (5) zu bringen.
 
-[![Opportunistisches Crossdocking.](./media/scenario1.png)](./media/scenario1.png)
+[![Opportunistisches Crossdocking](./media/scenario1.png)](./media/scenario1.png)
 
 ## <a name="configure-cross-docking"></a>Konfigurieren von Crossdocking
 Sie konfigurieren den Crossdocking-Prozess in **Arbeitsrichtlinien** Eine Arbeitsrichtlinie enthält einen Arbeitsauftragstyp, einen Lagerplatz und ein Produkt. Im folgenden Beispiel wird Crossdocking für Produkt X und Lagerplatz Y konfiguriert.
@@ -123,6 +127,3 @@ Nachdem ein Produkt an der Fertigungsstraße als fertig gemeldet wird, wird es a
 -   Das Crossdockingszenario wird für Chargen- und seriengesteuerte Artikel unterstützt. Die Chargen- und Seriennummerdimensionen über und unter dem Lagerplatz in der Reservierungshierarchie sind definiert. 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

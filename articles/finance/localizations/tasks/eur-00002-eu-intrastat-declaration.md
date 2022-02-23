@@ -2,23 +2,26 @@
 title: EUR-00002 Generieren Sie eine EU-Intrastat-Meldung
 description: Diese Prozedur führt Sie durch die Schritte, die erforderlich sind, um die Intrastat-Meldung im elektronischen Dateiformat zu exportieren und die Meldungsdaten in einem Excel-Format in der Vorschau anzuzeigen.
 author: Anasyash
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport, IntrastatParameters, IntrastatCommodityLookup, IntrastatCompressParameters, Intrastat, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: anasyash
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 57d7fcfeed3b630b2fa1f8ada4e116c230ba5bf0d8a94deeb5f59b6514d8a3c3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e2aba5caaaf0fbee511e1a293b09fa8301bb6831
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760610"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407764"
 ---
 # <a name="eur-00002-generate-an-eu-intrastat-declaration"></a>EUR-00002 Generieren Sie eine EU-Intrastat-Meldung
 
@@ -55,7 +58,7 @@ Diese Prozedur wurde mit dem Demodatenunternehmen DEMF erstellt.
     * Geben Sie Rundungsgenauigkeit ein, beispielsweise "0.01".  
 7. Geben Sie im Feld "Anzahl von Dezimalen für Betrag" eine Zahl ein.
     * Geben Sie beispielsweise "2" ein.  
-8. Wählen Sie im Feld „Rundung unter 1 kg“ eine Option aus.
+8. Wählen Sie im Feld "Rundung unter 1 kg" eine Option aus.
     * Beispielsweise wählen Sie "Aufrunden auf 1 kg" aus.  
 9. Geben Sie im Feld "Rundungsregel" eine Zahl ein.
     * Geben Sie beispielsweise "1 "für das Runden des Gewichts auf die ganze Zahl ein.  
@@ -111,6 +114,3 @@ Diese Prozedur wurde mit dem Demodatenunternehmen DEMF erstellt.
     * Wählen Sie z. B. "Versand" aus.  
 27. Klicken Sie auf "OK".
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

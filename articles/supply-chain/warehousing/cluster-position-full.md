@@ -2,23 +2,26 @@
 title: Clusterposition voll
 description: Dieses Thema enthält Informationen zur Funktion Clusterposition voll. Diese Funktion bietet eine Alternative zur strengeren Durchsetzung von Arbeitsunterbrechungsregeln, wenn die Clusterkommissionierung verwendet wird, da sie eine größere Fehlerquote bei den volumetrischen Einschränkungen von Containern oder Behältern ermöglicht.
 author: Mirzaab
+manager: tfehr
 ms.date: 08/25/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSClusterProfile
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: a23168b550bfa2bb6a51c8df5d0a558431c23ebb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: 3610725815b35609ee98b69b367db2945bbf166a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574256"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429063"
 ---
 # <a name="cluster-position-full"></a>Clusterposition voll
 
@@ -211,7 +214,7 @@ Es sollten zwei Arbeits-IDs erstellt worden sein, von denen jede zwei Kommission
 
 ### <a name="mobile-device-flow-execution--work-confirmation-setup-for-the-product"></a>Flow-Ausführung für mobile Geräte – Einrichtung der Arbeitsbestätigung für das Produkt
 
-1. Melden Sie sich bei der Warehouse Management Mobile App als ein Benutzer im Lagerort *61* an.
+1. Melden Sie sich bei der Warehouse-App als ein Benutzer im Lagerort *61* an.
 1. Wechseln Sie zu **Ausgehend \> Clusterkommissionierung erstellen**.
 
     Die **AUFGABE: Arbeit dem Cluster zuweisen**-Seite erscheint.
@@ -273,6 +276,3 @@ In diesem Szenario wurde die Clusterkommissionierung abgeschlossen, und der Benu
     Sie erhalten die Nachricht „Cluster abgeschlossen“.
 
 Sie können jetzt den **Verkaufsauswahl**-Menüpunkt verwenden, um die verbleibende Menge auszuwählen. Sie können dann das **Verkaufsverladung**-Menüelement verwenden, um Artikel vom Staging-Lagerplatz zum Verladedock zu verschieben.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

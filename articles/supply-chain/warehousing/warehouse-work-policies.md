@@ -2,31 +2,34 @@
 title: Arbeitsrichtlinien
 description: In diesem Thema wird erläutert, wie Sie Arbeitsrichtlinien einrichten.
 author: perlynne
+manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkPolicy
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
-ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 1d4ee3f1bffaf00c20758f6a3f399451d3122291
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: 08c04caeace7b8ced40915ace1561d817426cba3
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571160"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429114"
 ---
 # <a name="work-policies"></a>Arbeitsrichtlinien
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie das System und die Warehouse Management Mobile App so einrichten, dass sie Arbeitsrichtlinien unterstützen. Mit dieser Funktion können Sie schnell Bestand registrieren, ohne Einlagerungsarbeiten zu erstellen, wenn Sie Kauf- oder Umlagerungsaufträge erhalten oder wenn Sie Fertigungsprozesse abschließen. Dieses Thema enthält allgemeine Informationen. Ausführliche Informationen zum Kennzeichenempfang finden Sie unter [Kennzeichenempfang über die Warehouse Management Mobile App](warehousing-mobile-device-app-license-plate-receiving.md).
+In diesem Thema wird erläutert, wie Sie das System und die Warehouse-App so einrichten, dass sie Arbeitsrichtlinien unterstützen. Mit dieser Funktion können Sie schnell Bestand registrieren, ohne Einlagerungsarbeiten zu erstellen, wenn Sie Kauf- oder Umlagerungsaufträge erhalten oder wenn Sie Fertigungsprozesse abschließen. Dieses Thema enthält allgemeine Informationen. Ausführliche Informationen zum Kennzeichenempfang finden Sie unter [Kennzeichenempfang über die Warehouse-App](warehousing-mobile-device-app-license-plate-receiving.md).
 
-Eine Arbeitsrichtlinie steuert, ob Lagerortarbeit erstellt wird, wenn ein hergestellter Artikel als fertig gemeldet wird oder wenn Waren über die Warehouse Management Mobile App empfangen werden. Sie richten jede Arbeitsrichtlinie ein, indem Sie die Bedingungen definieren, unter denen sie gilt: die Arbeitsauftragstypen und -prozesse, den Lagerort und (optional) die Produkte. Zum Beispiel muss eine Bestellung für Produkt *A0001* am Lagerplatz *RECV* im Lagerort *24* empfangen werden. Später wird das Produkt in einem anderen Prozess am Lagerplatz *RECV* verbraucht. In diesem Fall können Sie eine Arbeitsrichtlinie einrichten, um zu verhindern, dass Einlagerungsarbeiten erstellt werden, wenn ein Mitarbeiter Produkt *A0001* am Lagerplatz *RECV* als erhalten meldet.
+Eine Arbeitsrichtlinie steuert, ob Lagerortarbeit erstellt wird, wenn ein hergestellter Artikel als fertig gemeldet wird oder wenn Waren über die Warehouse-App empfangen werden. Sie richten jede Arbeitsrichtlinie ein, indem Sie die Bedingungen definieren, unter denen sie gilt: die Arbeitsauftragstypen und -prozesse, den Lagerort und (optional) die Produkte. Zum Beispiel muss eine Bestellung für Produkt *A0001* am Lagerplatz *RECV* im Lagerort *24* empfangen werden. Später wird das Produkt in einem anderen Prozess am Lagerplatz *RECV* verbraucht. In diesem Fall können Sie eine Arbeitsrichtlinie einrichten, um zu verhindern, dass Einlagerungsarbeiten erstellt werden, wenn ein Mitarbeiter Produkt *A0001* am Lagerplatz *RECV* als erhalten meldet.
 
 > [!NOTE]
 > - Damit eine Arbeitsrichtlinie aktiv ist, müssen Sie mindestens einen Lagerplatz für die Arbeitsrichtlinie im Inforegister **Lagerorte** der Seite **Arbeitsrichtlinien** definieren. 
@@ -200,7 +203,7 @@ Die Bestellung ist jetzt eingegangen, aber es sind keine Arbeiten damit verbunde
 
 Im folgenden Beispiel gibt es zwei Produktionsaufträge, *PRD-001* und *PRD-002*. Produktionsauftrag *PRD-001* hat einen Arbeitsgang, der als *Montage* bezeichnet wird, wo Produkt *SC1* an Lagerplatz *001* als fertig gestellt gemeldet ist. Produktionsauftrag *PRD-002* hat einen Arbeitsgang, der als *Anstrich* bezeichnet wird und bei dem Produkt *SC1* von Lagerplatz *001* verbraucht wird. Produktionsauftrag *PRD-002* verbraucht auch Rohmaterial *RM1* von Lagerplatz *001*. Rohmaterial *RM1* wird an Lagerortplatz *BULK-001* gelagert und für Lagerplatz *001* durch Lagerortarbeit für Rohmaterialentnahme entnommen. Die Entnahmearbeit wird generiert, wenn die Produktion *PRD-002* freigegeben wird.
 
-[![Lagerortarbeitsrichtlinien.](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
+[![Lagerortarbeitsrichtlinien](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
 
 Wenn Sie planen, eine Lagerortarbeitsrichtlinie dieses Szenarios zu konfigurieren, sollten Sie die folgenden Punkte berücksichtigen:
 
@@ -295,9 +298,6 @@ Wenn der Produktionsauftrag als fertig gemeldet ist, wird keine Arbeit für die 
 
 Weitere Informationen zu Menüelementen für Mobilgeräte finden Sie unter [Richten Sie mobile Geräte für die Lagerarbeit ein](configure-mobile-devices-warehouse.md).
 
-Weitere Informationen zum Kennzeichenempfang und Arbeitsrichtlinien finden Sie unter [Kennzeichenempfang über die Warehouse Management Mobile App](warehousing-mobile-device-app-license-plate-receiving.md).
+Weitere Informationen zum Kennzeichenempfang und Arbeitsrichtlinien finden Sie unter [Kennzeichenempfang über die Warehouse-App](warehousing-mobile-device-app-license-plate-receiving.md).
 
 Weitere Informationen über eingehende Auslastungverwaltung finden Sie unter [Lagerortverwaltung von eingehender Auslastung für Bestellungen](inbound-load-handling.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

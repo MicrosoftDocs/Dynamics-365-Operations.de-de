@@ -2,13 +2,16 @@
 title: Abbrechen eines Planungsauftrags
 description: In diesem Thema wird erläutert, wie ein aktiver Planungsauftrag, der die Planungsoptimierungsfunktionalität verwendet, abgebrochen werden kann.
 author: ChristianRytt
+manager: tfehr
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 85dffae7e5484d34d0cfa4bf44649fcdd69fc36804802ad9f02c122adf5d9785
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4b65d344cd764740cc1485969c2fc4c2052e55e2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771460"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428675"
 ---
 # <a name="cancel-a-planning-job"></a>Abbrechen eines Planungsvorgangs
 
@@ -57,6 +60,3 @@ Der Status des Einzelvorgangs lautet **Wird storniert**, bis der Planungsoptimie
 [Planhistorie und Planungsprotokolle anzeigen](plan-history-logs.md)
 
 [Filter auf einen Plan anwenden](plan-filters.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

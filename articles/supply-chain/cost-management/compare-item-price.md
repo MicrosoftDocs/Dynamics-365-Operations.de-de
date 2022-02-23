@@ -2,26 +2,29 @@
 title: Bericht Lagerungsbericht mit Artikelpreisvergleich
 description: Erfahren Sie, wie Sie einen Bericht über die Lagerung von Artikelpreisen erstellen und dann das Ergebnis durchsuchen und/oder exportieren können.
 author: AndersGirke
+manager: tfehr
 ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, InventItemPriceCompareStorage, InventItemPriceCompareStorageDetailsChart, InventItemPriceCompareStorageDetails
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2020-03-01
-ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 76a4ba07d191f79b4033fc78acff62d4909c7d32
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.9
+ms.openlocfilehash: 73e43a685f390fd718028de6add0370dfcd6cf3b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565998"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428903"
 ---
 # <a name="compare-item-prices-storage-report"></a>Bericht Lagerungsbericht mit Artikelpreisvergleich
 
@@ -118,6 +121,3 @@ Das folgende Beispiel zeigt, wie Sie einen Bericht **Lagerungsbericht mit Artike
 1. Die Seite **Ausführungszusammenfassung** wird geöffnet, auf der Sie den Status Ihres Exportauftrags und eine Liste der exportierten Entitäten sehen können. Wählen Sie den Bereich **Preisvergleich für Artikel** Entität, die im Bereich **Verarbeitungsstatus der Entität** aufgelistet ist, und wählen Sie dann **Datei herunterladen**, um die von dieser Entität exportierten Daten herunterzuladen.
 
 Weitere Informationen über die Verwendung der Datenverwaltung für den Datenexport finden Sie unter [Übersicht über Datenimport- und -exportjobs](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

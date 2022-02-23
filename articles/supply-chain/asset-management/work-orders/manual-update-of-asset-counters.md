@@ -1,10 +1,12 @@
 ---
 title: Manuelle Aktualisierung der Anlagenzähler
 description: Dieses Thema beschreibt die manuelle Aktualisierung von Anlagenzählern im Anlagenmanagement.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetCounter
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 74d840cbb064018560a6abc2823f520c2f3179ac42b149c0507c9421a4e73391
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5318bac961682f88e192ac70c4993c62b69b399c
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776433"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020881"
 ---
 # <a name="manual-update-of-asset-counters"></a>Die manuelle Aktualisierung von Anlagenzählern
 
@@ -54,13 +56,10 @@ Beachten Sie die folgenden Punkte:
 
 In der folgenden Abbildung wird ein Beispiel der Seite **Anlagenzähler** angezeigt.
 
-![Abbildung 1.](media/11-work-orders.png)
+![Abbildung 1](media/11-work-orders.png)
 
 Auf der Seite **Anlagenzähler** (**Anlagenverwaltung** > **Abfragen** > **Anlagen** > **Anlagenzähler**) können Sie Zählererfassungen für mehrere Anlagen gleichzeitig nach Bedarf vornehmen.
 
 >[!NOTE]
 >Sie können einen Bereich einrichten, um Abweichungen in den manuellen Zählererfassungen zu definieren. Sie können auch die Art der Meldung angeben, die angezeigt wird, wenn Erfassungen außerhalb des definierten Bereich sind. Weitere Informationen zum Einrichten von Zählern finden Sie unter [Zähler](../setup-for-objects/counters.md).
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

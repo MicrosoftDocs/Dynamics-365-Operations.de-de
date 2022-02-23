@@ -1,13 +1,16 @@
 ---
 title: Kartenmodul
-description: Dieses Thema behandelt Kartenmodule und beschreibt deren Konfiguration in Microsoft Dynamics 365 Commerce.
+description: In diesem Thema werden Kartenmodule behandelt und deren Konfiguration in Microsoft Dynamics 365 Commerce beschrieben.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,21 +18,23 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: bc5962d6bedba1f5abf423c396382e5c8a901c81797ae95132833e23c46cfd57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: af6aedb6c0112822155c6d855909578a927d1c2c
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747392"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665419"
 ---
 # <a name="map-module"></a>Kartenmodul
 
 [!include [banner](includes/banner.md)]
 
 
-Dieses Thema behandelt Kartenmodule und beschreibt deren Konfiguration in Microsoft Dynamics 365 Commerce.
+In diesem Thema werden Kartenmodule behandelt und deren Konfiguration in Microsoft Dynamics 365 Commerce beschrieben.
 
-Ein Kartenmodul zeigt die Standorte von Geschäften auf einer interaktiven Karte an, die mithilfe der [Bing Maps V8 Web Control](/bingmaps/v8-web-control/) gerendert wird. Ein Bing Maps-API-Schlüssel ist erforderlich und muss auf der Seite „Freigegebene Parameter“ in Commerce Headquarters hinzugefügt werden. Kartenmodule bieten verschiedene Ansichten wie Straße, Luftbild und Streetside, die Benutzer auswählen können, um Kartenpositionen anzuzeigen. Sie erlauben außerdem Interaktionen wie Zoomen und die Verwendung des Standortes des Benutzers.
+## <a name="overview"></a>Übersicht
+
+Ein Kartenmodul zeigt die Standorte von Geschäften auf einer interaktiven Karte an, die mithilfe der [Bing Maps V8 Web Control](https://docs.microsoft.com/bingmaps/v8-web-control/) gerendert wird. Ein Bing Maps-API-Schlüssel ist erforderlich und muss auf der Seite „Freigegebene Parameter“ in Commerce Headquarters hinzugefügt werden. Kartenmodule bieten verschiedene Ansichten wie Straße, Luftbild und Streetside, die Benutzer auswählen können, um Kartenpositionen anzuzeigen. Sie erlauben außerdem Interaktionen wie Zoomen und die Verwendung des Standortes des Benutzers.
 
 Ein Kartenmodul ermittelt in Verbindung mit dem Shopauswahlmodul die geografischen Standorte von Geschäften, die auf einer Karte gerendert werden müssen. Die Shopauswahl- und Kartenmodule interagieren, wenn ein Benutzer ein Geschäft in einem dieser Module auf einer Seite auswählt. Kartenmodule können über die Interaktion mit Shopauswahlmodulen hinaus für andere Szenarien erweitert werden. Eine Modulanpassung ist jedoch erforderlich.
 
@@ -38,7 +43,7 @@ Ein Kartenmodul ermittelt in Verbindung mit dem Shopauswahlmodul die geografisch
 
 Das folgende Bild zeigt ein Beispiel eines Kartenmoduls, das auf einer Ladenstandortseite verwendet wird.
 
-![Beispiel eines Shopauswahlmoduls.](./media/ecommerce-Storelocator.PNG)
+![Beispiel eines Shopauswahlmoduls](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="module-properties"></a>Moduleigenschaften
 
@@ -76,7 +81,4 @@ Ausführliche Informationen zum Konfigurieren eines Kartenmoduls auf einer Seite
 
 [Bing Karten für Ihr Unternehmen verwalten](./dev-itpro/manage-bing-maps.md)
 
-[Bing Maps V8 Web Control](/bingmaps/v8-web-control/)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Bing Maps V8 Web Control](https://docs.microsoft.com/bingmaps/v8-web-control/)

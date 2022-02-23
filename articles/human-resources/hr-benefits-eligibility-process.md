@@ -1,59 +1,56 @@
 ---
 title: Vergütungsberechtigungsprozess
 description: Diese Prozedur zeigt, wie der Leistungberechtigungsprozess arbeitet.
-author: twheeloc
-ms.date: 11/03/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysPolicySourceDocumentRuleType, SysPolicyListPage, SysPolicy, HcmBenefitEligibilityPolicy, HcmBenefit, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 16a866cb35aacb3b6bece0d6adde6bb5978bd4fc
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d23dcf4a16979b14ddf58b54e812f21e6698dfc7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066017"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418595"
 ---
 # <a name="benefit-eligibility-process"></a>Vergütungsberechtigungsprozess
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
 Diese Prozedur zeigt, wie der Leistungberechtigungsprozess arbeitet. Wenn der Prozess abgeschlossen ist, können Sie die Ergebnisse anzeigen. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 
-1. Wechseln Sie zu **Personalverwaltung \> Vorteile \> Vorteile**.
+1. Wechseln Sie zu "Personalverwaltung" > "Leistungen" > "Leistungen".
 2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-3. Wählen Sie in der Liste den Link in der ausgewählten Zeile.
-4. Wählen Sie **Bearbeiten** aus.
-5. Wählen Sie im Feld **Berechtigung** **Regelbasiert** aus.
-6. Wählen Sie im Feld **Regeltyp** die Leistungrichtlinienregel aus, die auf die Leistung angewendet werden soll.
-7. Wählen Sie im Aktivitätsbereich **Vorteil** aus.
-8. Wählen Sie **Berechtigungsereignis erstellen** aus.
-9. Geben Sie im Dropdown-Dialogfeld im Feld **Ereignis** einen Wert ein.
-10. Geben Sie im Feld **Beschreibung** einen Wert ein, oder wählen Sie einen Wert aus.
-11. Wählen Sie im Feld **Ereignistyp** die Option **Registrierung öffnen** aus.
-12. Geben Sie im Feld **Startdatum der Disposition** ein Datum und eine Uhrzeit ein.
-13. Geben Sie im Feld **Registrierungsperiode** ein Datum und eine Uhrzeit ein.
-14. Geben Sie im Feld **Tage zur Registrierung** eine Zahl ein.
-15. Wählen Sie **Ereignis erstellen** aus.
-16. Wählen Sie auf der Inforegisterkarte **Arbeitskräfte** die Option **Hinzufügen**.
-17. Wählen Sie im Feld **Nach Typ anzeigen** die Option **Mitarbeiter** aus.
-18. Wählen Sie im Feld **Nach juristischer Person anzeigen** die Option **Aktuelle juristische Person** aus.
+3. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
+4. Klicken Sie auf Bearbeiten.
+5. Wählen Sie im Feld "Berechtigung" "Regelbasiert" aus.
+6. Wählen Sie im Feld "Regeltyp" die Leistungrichtlinienregel aus, die Sie auf die Leistung anwenden möchten.
+7. Klicken Sie im Aktivitätsbereich auf "Vorteil".
+8. Klicken Sie auf "Berechtigungsereignis erstellen", um das Dropdown-Dialogfeld zu öffnen.
+9. Geben Sie im Feld "Ereignis" einen Wert ein.
+10. Geben Sie im Feld "Beschreibung" einen Wert ein.
+11. Wählen Sie im Feld "Ereignistyp" die Option "Registrierung öffnen" aus.
+12. Geben Sie im Feld "Startdatum der Disposition" ein Datum und eine Uhrzeit ein.
+13. Geben Sie im Feld "Registrierungsperiode" ein Datum und eine Uhrzeit ein.
+14. Geben Sie im Feld "Tage zur Registrierung" eine Zahl ein.
+15. Klicken Sie auf "Ereignis erstellen".
+16. Klicken im Arbeitskraft-Inforegister auf "Hinzufügen".
+17. Wählen Sie im Feld "Nach Typ anzeigen" die Option "Mitarbeiter" aus.
+18. Wählen Sie im Feld "Nach juristischer Person anzeigen" die Option "Aktuelle juristische Person" aus.
 19. Markieren Sie alle Zeilen in der Liste, oder heben Sie die Markierung auf.
-20. Wählen Sie **OK** aus.
-21. Wählen Sie **Verarbeiten** aus.
-22. Wählen Sie **OK** aus.
+20. Klicken Sie auf "OK".
+21. Prozess anklicken.
+22. Klicken Sie auf "OK".
 23. Aktualisieren Sie die Seite.
-24. Wählen Sie **Ergebnisse anzeigen** aus.
-25. Öffnen Sie den Spaltenfilter **Status**.
-26. Sortieren Sie die Spalte von A bis Z.
+24. Klicken Sie auf "Ergebnisse anzeigen".
+25. Öffnen Sie den Spaltenfilter "Status".
+26. Von A nach Z sortieren
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

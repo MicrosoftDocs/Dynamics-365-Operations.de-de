@@ -1,24 +1,27 @@
 ---
 title: Produktnummernbezeichnung für vordefinierte Produktvarianten erstellen
 description: Dieses Thema erklärt, wie eine Produktnummernbezeichnung für vordefinierte Produktvarianten eingerichtet wird und der passenden Produktdimensionsgruppe zugeordnet werden kann.
-author: t-benebo
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, EcoResNomenclature, EcoResProductDimensionGroup
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5179dd54f22de11dc4c0f54113376f13b2f59c48
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6871765a450295a3f308ec7e706f1b126071585f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569576"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428699"
 ---
 # <a name="create-a-product-number-nomenclature-for-predefined-product-variants"></a>Produktnummernbezeichnung für vordefinierte Produktvarianten erstellen
 
@@ -28,27 +31,26 @@ Dieses Thema erklärt, wie eine Produktnummernbezeichnung für vordefinierte Pro
 
 
 ## <a name="create-a-product-number-nomenclature"></a>Erstellen eine Produktnummerbezeichnung
-
-1. Wechseln Sie zu **Produktinformationsmanagement \> Einrichten \> Produktbezeichnung**.
-1. Wählen Sie **Neu** aus.
-1. Geben Sie im Feld **Name** einen Bezeichnungsnamen ein, der die Zielproduktdimensionsgruppe identifiziert (beispielsweise `ColorSize`).
-1. Geben Sie im Feld **Beschreibung** einen Wert ein.
-1. Wählen Sie **Hinzufügen** aus.
-1. Wählen Sie **Produktmaster**-Nummer aus.
-1. Wählen Sie **Hinzufügen** aus.
-1. Wählen Sie **Textkonstante** aus.
-1. Geben Sie im Feld **Text** einen Wert ein.
-1. Wählen Sie **Hinzufügen** aus.
-1. Wählen Sie **Farbe** aus.
-1. Wählen Sie **Hinzufügen** aus.
-1. Wählen Sie **Textkonstante** aus.
-1. Geben Sie im Feld **Text** einen Wert ein.
-1. Wählen Sie **Hinzufügen** aus.
-1. Wählen Sie **Größe** aus.
-1. Schließen Sie die Seite.
+1. Wählen Sie **Produktvariantenmodell-Definition** aus.
+2. Wählen Sie **Produktbezeichnung** aus.
+3. Wählen Sie **Neu** aus.
+4. Geben Sie im Feld **Name** einen Bezeichnungsnamen ein, der die Zielproduktdimensionsgruppe identifiziert (beispielsweise `ColorSize`).
+5. Geben Sie im Feld **Beschreibung** einen Wert ein.
+6. Wählen Sie **Hinzufügen** aus.
+7. Wählen Sie **Produktmaster**-Nummer aus.
+8. Wählen Sie **Hinzufügen** aus.
+9. Wählen Sie **Textkonstante** aus.
+10. Geben Sie im Feld **Text** einen Wert ein.
+11. Wählen Sie **Hinzufügen** aus.
+12. Wählen Sie **Farbe** aus.
+13. Wählen Sie **Hinzufügen** aus.
+14. Wählen Sie **Textkonstante** aus.
+15. Geben Sie im Feld **Text** einen Wert ein.
+16. Wählen Sie **Hinzufügen** aus.
+17. Wählen Sie **Größe** aus.
+18. Schließen Sie die Seite.
 
 ## <a name="assign-the-nomenclature-to-a-product-master"></a>Zuweisen der Nomenklatur zu einem Produktmaster
-
 1. Wählen Sie **Produktdimensionsgruppen** aus.
 2. Wählen Sie die Gruppe **SizeCol-Produktdimension** aus.
 3. Wählen Sie **Bearbeiten** aus.
@@ -56,5 +58,3 @@ Dieses Thema erklärt, wie eine Produktnummernbezeichnung für vordefinierte Pro
 5. Geben Sie im Feld **Produktvariantennummerbezeichnung** einen Wert ein oder wählen Sie einen Wert aus.
 6. Schließen Sie die Seite.
 
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

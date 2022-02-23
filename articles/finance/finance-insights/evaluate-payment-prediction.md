@@ -1,30 +1,34 @@
 ---
-title: Das anfängliche Vorhersagemodell für Kundenzahlung bewerten
+title: Bewerten des anfänglichen Kundenzahlungsvorhersagemodells (Vorschau)
 description: In diesem Thema werden die Schritte beschrieben, die Sie ausführen können, um das Kundenvorhersagemodell zu verstehen und seine Wirksamkeit zu bewerten.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+manager: AnnBe
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 874c6e938681537a0420eece6835a4c2124e11fc
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: d761e31c4e4169b09711e351948390d2d40f3739
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7969111"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4644968"
 ---
-# <a name="evaluate-the-initial-customer-payment-prediction-model"></a>Das anfängliche Vorhersagemodell für Kundenzahlung bewerten
+# <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Bewerten des anfänglichen Kundenzahlungsvorhersagemodells (Vorschau)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 In diesem Thema wird erläutert, wie Sie ein Vorhersagemodell bewerten, nachdem Sie Finance Insights aktiviert und anschließend Ihr erstes Modell generiert und trainiert haben. Dieses Thema befasst sich mit Modellen zur Vorhersage von Kundenzahlungen. Darin werden die Schritte beschrieben, die Sie ausführen können, um das Kundenvorhersagemodell zu verstehen und seine Wirksamkeit zu bewerten.
 
@@ -32,32 +36,32 @@ In diesem Thema wird erläutert, wie Sie ein Vorhersagemodell bewerten, nachdem 
 
 Auf der **Finance Insights-Parameter**-Seite in Microsoft Dynamics 365 Finance wird ein **Modellgenauigkeit verbessern**-Link neben der Genauigkeitsbewertung angezeigt.
 
-[![Link „Verbessern der Modellgenauigkeit“.](./media/prediction-model.png)](./media/prediction-model.png)
+[![Link „Verbessern der Modellgenauigkeit“](./media/prediction-model.png)](./media/prediction-model.png)
 
 Über diesen Link gelangen Sie zum AI Builder, wo Sie mehr über das aktuelle Modell erfahren und Schritte unternehmen können, um es zu verbessern. Die folgende Abbildung zeigt die Seite, die geöffnet wird.
 
-[![AI Builder.](./media/what-to-predict.png)](./media/what-to-predict.png)
+[![AI Builder](./media/what-to-predict.png)](./media/what-to-predict.png)
 
 Die Seite, die geöffnet wird, zeigt die Folgenden Informationen:
 
-- Im Abschnitt **Leistung** bietet der Modellleistungsgrad einen Überblick über die Qualität des Modells. Weitere Informationen zu dieser Klasse finden Sie unter [Leistung des Vorhersagemodells](/ai-builder/prediction-performance) in der AI Builder-Dokumentation.
+- Im Abschnitt **Leistung** bietet der Modellleistungsgrad einen Überblick über die Qualität des Modells. Weitere Informationen zu dieser Klasse finden Sie unter [Leistung des Vorhersagemodells](https://docs.microsoft.com/ai-builder/prediction-performance) in der AI Builder-Dokumentation.
 - Der Abschnitt **Die einflussreichsten Daten** zeigt, wie wichtig verschiedene Eingabetypen für Ihr Modell waren. Sie können diese Liste und die entsprechenden Prozentsätze auswerten, um festzustellen, ob die Informationen mit Ihren Kenntnissen über Ihr Unternehmen und Ihren Markt übereinstimmen.
 
-    [![Die Abschnitte zur Leistung und zu den einflussreichsten Daten für das Vorhersagemodell.](./media/models.png)](./media/models.png)
+    [![Die Abschnitte zur Leistung und zu den einflussreichsten Daten für das Vorhersagemodell](./media/models.png)](./media/models.png)
 
 - Wählen Sie im Abschnitt **Leistung** **Siehe Einzelheiten** aus, um mehr über den Grad und andere Überlegungen zu erfahren. In der folgenden Abbildung zeigen die Details, dass das Modell weniger Informationen verwendet als empfohlen. Daher hat das System eine Warnmeldung generiert.
 
-    [![Warnungen zur Leistung des Modells.](./media/details.png)](./media/details.png)
+    [![Warnungen zur Leistung des Modells](./media/details.png)](./media/details.png)
 
 ## <a name="digging-deeper"></a>Tiefergehen
 
 Obwohl Genauigkeit ein guter Ausgangspunkt für die Bewertung eines Modells ist und die Leistungsstufe eine Perspektive bietet, bietet AI Builder detailliertere Metriken, die Sie für Ihre Bewertung verwenden können. Um die Details herunterzuladen, wählen Sie im Abschnitt **Leistung** die Schaltfläche mit den Auslassungspunkten (**...**) neben der **Modell verwenden**-Schaltfläche und dann **Detaillierte Messdaten herunterladen** aus.
 
-[![Befehl für detaillierte Metriken herunterladen.](./media/performance.png)](./media/performance.png)
+[![Befehl für detaillierte Metriken herunterladen](./media/performance.png)](./media/performance.png)
 
 Die folgende Abbildung zeigt das Format, in dem Sie die Daten herunterladen können.
 
-[![Format der heruntergeladenen Daten.](./media/data-format.png)](./media/data-format.png)
+[![Format der heruntergeladenen Daten](./media/data-format.png)](./media/data-format.png)
 
 Für eine eingehendere Analyse der Ergebnisse ist es ein guter Ausgangspunkt, die Metrik „Verwirrungsmatrix“ zu überprüfen. Hier sind beispielsweise die Daten, die für diese Metrik in der vorherigen Abbildung gezeigt wurden.
 
@@ -65,7 +69,7 @@ Für eine eingehendere Analyse der Ergebnisse ist es ein guter Ausgangspunkt, di
 
 Sie können diese Daten folgendermaßen erweitern.
 
-| &nbsp;                   | Als pünktlich vorhergesagt | Als verspätet vorhergesagt | Als sehr spät vorhergesagt |
+|                          | Als pünktlich vorhergesagt | Als verspätet vorhergesagt | Als sehr spät vorhergesagt |
 |--------------------------|-------------------|----------------|---------------------|
 | Tatsächliche pünktliche Zahlung   | **71**            | 0              | 21                  |
 | Tatsächliche verspätete Zahlung      | 5                 | **0**          | 27                  |
@@ -89,10 +93,11 @@ In diesem Fall zeigt der F1-Makro-Wert von ungefähr 49,3 Prozent an, dass das M
 
 ## <a name="improving-the-model"></a>Das Modell verbessern
 
-Nachdem Sie die Ergebnisse Ihres ersten Modells besser verstanden haben, möchten Sie das Modell möglicherweise verbessern, indem Sie Funktionsspalten hinzufügen oder entfernen oder Teile des Datasets filtern, die keine genauen Vorhersagen unterstützen. Schließen Sie AI Builder und verwenden Sie dann den **Modell verbessern**-Link in Dynamics 365 Finance, um den AI Builder-Prozess neu zu starten. Sie können mit verschiedenen Merkmalen experimentieren, ohne das veröffentlichte Modell zu beeinflussen. Das veröffentlichte Modell ist nur betroffen, wenn Sie **Buchen** auswählen. Denken Sie daran, dass für Ihre Instanz von Dynamics 365 Finance ein einzelnes Modell verwendet wird. Daher sollten Sie jedes neue Modell sorgfältig prüfen, bevor Sie es veröffentlichen.
+Nachdem Sie die Ergebnisse Ihres ersten Modells besser verstanden haben, möchten Sie das Modell möglicherweise verbessern, indem Sie Funktionsspalten hinzufügen oder entfernen oder Teile des Datasets filtern, die keine genauen Vorhersagen unterstützen. Schließen Sie AI Builder und verwenden Sie dann den **Modell verbessern** -Link in Dynamics 365 Finance, um den AI Builder-Prozess neu zu starten. Sie können mit verschiedenen Merkmalen experimentieren, ohne das veröffentlichte Modell zu beeinflussen. Das veröffentlichte Modell ist nur betroffen, wenn Sie **Buchen** auswählen. Denken Sie daran, dass für Ihre Instanz von Dynamics 365 Finance ein einzelnes Modell verwendet wird. Daher sollten Sie jedes neue Modell sorgfältig prüfen, bevor Sie es veröffentlichen.
 
 ## <a name="for-more-information"></a>Weitere Informationen
 
 Weitere Informationen dazu, wie Sie Vorhersagemodelle bewerten, finden Sie unter [Ergebnisse von Machine Learning-Modellen](/confusion-matrix.md)
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+#### <a name="privacy-notice"></a>Datenschutzhinweis
+Vorschauen (1) wenden möglicherweise weniger Datenschutz- und Sicherheitsmaßnahmen an als der Dynamics 365 Finance and Operations-Dienst, (2) sind nicht in der Service Level Agreement (SLA) für diesen Dienst enthalten, (3) sollten nicht zur Verarbeitung personenbezogener Daten oder anderer Daten verwendet werden, die gesetzlichen oder behördlichen Compliance-Anforderungen unterliegen, und (4) hat begrenzten Support.

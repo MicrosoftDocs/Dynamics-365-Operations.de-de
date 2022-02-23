@@ -2,12 +2,15 @@
 title: Verbesserungen bei der Bargeldverwaltung
 description: In diesem Thema werden die Verbesserungen bei der Bargeldverwaltung in POS für Dynamics 365 Commerce beschrieben.
 author: anpurush
+manager: AnnBe
 ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -15,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f878f39e8e9913edbe1da192e199090139a88adb6b7ed9a1e9b779c5748171b5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0c561c39dfcbfa739c5a22394c05191e7f9bc107
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735653"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412530"
 ---
 # <a name="cash-management-improvements"></a>Verbesserungen bei der Bargeldverwaltung
 
@@ -39,9 +42,9 @@ In Retail, Version 10.0.3 und höher, erhalten Einzelhändler die Nachverfolgbar
 
 Um die neuen Bargeldverwaltungsfunktionen einzurichten, führen Sie die folgenden Schritte aus um das Funktionsprofil für Läden zu konfigurieren.
 
-1. Gehen Sie zu **Einzelhandel und Handel \> Kanaleinrichtung \> POS-Einrichtung \> POS-Profile \> Funktionsprofile**, und wählen Sie ein Funktionsprofil aus, das mit den Geschäften verknüpft ist, für die Sie die Verbesserungen für die Bargeldverwaltung zur Verfügung stellen möchten.
+1. Gehen Sie zu **Retail und Commerce \> Kanaleinrichtung \> POS-Einrichtung \> POS-Profile \> Funktionsprofile**, und wählen Sie ein Funktionsprofil aus, das mit den Geschäften verknüpft ist, für die Sie die Verbesserungen für die Bargeldverwaltung zur Verfügung stellen möchten.
 2. Legen Sie im Inforegister **Funktionen** des Funktionsprofils unter **Erweiterte Bargeldverwaltung** die Option **Bargeldnachverfolgbarkeit aktivieren** auf **Ja** fest.
-3. Um Geldschränke einzurichten, gehen Sie zu **Einzelhandel und Handel \> Kanäle \> Geschäfte \> Alle Geschäfte**, und wählen Sie ein Geschäft aus.
+3. Um Geldschränke einzurichten, gehen Sie zu **Retail und Commerce \> Kanäle \> Geschäfte \> Alle Geschäfte**, und wählen Sie ein Geschäft aus.
 4. Auf der Seite **Ladengeschäfte** im Aktivitätsbereich auf der Registerkarte **Einrichten** in der Gruppe **Einrichten** wählen Sie **Geldschränke** aus. Mit dieser Option können Sie mehrere Geldschränke für einen Laden definieren und verwalten.
 4. Bevor Sie die Funktion verwenden können, müssen Sie den Verteilungszeitplan-Einzelvorgang **1070 Kanalkonfiguration** ausführen, um diese Konfigurationen mit der Kanaldatenbank zu synchronisieren.
 
@@ -59,6 +62,3 @@ In Retail, Version 10.0.3 und höher, werden die folgenden Funktionen ebenfalls 
 - Während der Abstimmung, wenn die ausgewählte Transaktion nicht ausgeglichen werden kann, muss der Benutzer eine Beschreibung des Grunds eingeben, warum die Abstimmung keinen Saldo ergibt. Benutzer können eine einzelne Transaktion auswählen und sie mit der relevanten Ursachenbeschreibung abstimmen, wie diese benötigt wird.
 - Benutzer können fortfahren, Transaktionen abzustimmen oder deren Abstimmung aufzuheben, bis die Schicht geschlossen ist. Nachdem eine Schicht abgeschlossen ist, kann die Abstimmung für die Transaktionen nicht aufgehoben werden.
 - Wenn ein Benutzer beschließt, eine Schicht zu schließen, überprüft Commerce, dass es keine nicht abgestimmten Bargeldverwaltungstransaktionen in der Schicht gibt. Sind nicht abgestimmte Transaktionen vorhanden, können Benutzer eine Schicht nicht schließen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

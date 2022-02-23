@@ -1,10 +1,12 @@
 ---
 title: Anlagenfehleranalyse
 description: In diesem Thema wird die Anlagenfehleranalyse in Asset Management erläutert.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectFaultCalculate
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 880ed35a9780185836218a5c2a7addb2a47eabd737d6bec99794ecb7a0959791
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 674e10b94711b00e526af4af0e0c0afddd05e62c
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779277"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022378"
 ---
 # <a name="asset-fault-analysis"></a>Anlagenfehleranalyse
 
@@ -60,7 +62,7 @@ Im Screenshot unten ist nur die Schaltfläche **Symptom** aktiviert.
 - Fehlererfassungen sind für drei Fehlersymptome erfolgt: „Luftdurchlässigkeit“, „durchgebrannte Sicherung“ und „Gerät gestört“.  
 - In der Spalte **Wahrscheinlichkeit %** summieren sich alle Prozentsätze auf 100 %. Die Wahrscheinlichkeit basiert auf allen **Symptom**-Erfassungen in dieser Fehleranalyse.
 
-![Abbildung 1.](media/06-controlling-and-reporting.png)
+![Abbildung 1](media/06-controlling-and-reporting.png)
 
 ### <a name="group-by-symptoms-and-time-period"></a>Nach Symptomen und Zeitperiode gruppieren
 
@@ -69,7 +71,7 @@ Im Screenshot unten wurden **Jahr** und **Monat** hinzugefügt, um anzuzeigen, w
 - Die Fehlersymptome werden nun als Erfassungen pro Monat/Jahr angezeigt.  
 - In der Spalte **Wahrscheinlichkeit %** ergeben alle Sie Prozentsätze für jeden Monat 100 %, wenn Sie addiert werden. Die Wahrscheinlichkeit basiert auf den **Symptom**-Erfassungen in dieser Fehleranalyse. Wenn Sie viele Positionen in einer Anlage haben, aber eine Position einen sehr hohen Prozentsatz aufweist, ist dies ein Hinweis darauf, dass ein Fehlersymptom sorgfältiger untersucht werden sollte, um die Anzahl von Erfassungen für dieses Fehlersymptom einzuschränken.
 
-![Abbildung 2.](media/07-controlling-and-reporting.png)
+![Abbildung 2](media/07-controlling-and-reporting.png)
 
 ### <a name="group-by-multiple-symptoms-and-assets"></a>Nach mehreren Symptomen und Anlagen gruppieren
 
@@ -84,7 +86,7 @@ Im Screenshot unten wurden **Anlage** und **Anlagentyp** hinzugefügt, um weiter
 - Die Fehlersymptome werden jetzt in Kombinationen **Anlage** / **Anlagentyp** / **Symptom** eingeteilt.  
 - Wenn Sie in der Spalte **Wahrscheinlichkeit %** alle Prozentsätze für die Kombination **Anlage** / **Anlagetyp** / **Symptom** jeweils addieren, ergeben sie jeweils 100 %. Die Wahrscheinlichkeit basiert auf den **Symptom**-Erfassungen in dieser Fehleranalyse. Wenn Sie viele Positionen in einer Anlage haben, aber eine Position einen sehr hohen Prozentsatz aufweist, ist dies ein Hinweis darauf, dass ein Fehlersymptom sorgfältiger untersucht werden sollte, um die Anzahl von Erfassungen für dieses Fehlersymptom einzuschränken.
 
-![Abbildung 3.](media/08-controlling-and-reporting.png)
+![Abbildung 3](media/08-controlling-and-reporting.png)
 
 **Nach zwei Symptomen, Anlage und Anlagentyp gruppieren**
 
@@ -92,7 +94,7 @@ Im Screenshot unten wurden **Bereich** zu **Symptom**, **Anlage** und **Anlagent
 
 - Wenn Sie in der Spalte **Wahrscheinlichkeit %** alle Prozentsätze für die Kombination **Anlage** / **Anlagetyp** / **Symptom** für eine Anlage addieren, ergeben sie jeweils 100 %. Die Wahrscheinlichkeit basiert auf der Kombination aus **Symptom** und **Bereich** in dieser Fehleranalyse. Wenn Sie viele Positionen in einer Anlage haben, aber eine Position einen sehr hohen Prozentsatz aufweist, ist dies ein Hinweis darauf, dass ein Fehlerbereich sorgfältiger untersucht werden sollte, um die Anzahl von Erfassungen für diesen Fehlerbereich einzuschränken.  
 
-![Abbildung 4.](media/09-controlling-and-reporting.png)
+![Abbildung 4](media/09-controlling-and-reporting.png)
 
 **Nach drei Symptomen, Anlage und Anlagentyp gruppieren**
 
@@ -100,12 +102,9 @@ Im Screenshot unten wurde **Typ** hinzugefügt, und in diesem Beispiel wird die 
  
 - Wenn Sie in der Spalte **Wahrscheinlichkeit %** alle Prozentsätze für die Kombination **Anlage** / **Anlagetyp** / **Symptom** für eine Anlage addieren, ergeben sie jeweils 100 %. Die Wahrscheinlichkeit basiert auf der Kombination aus **Symptom**, **Bereich** und **Typ** in dieser Fehleranalyse. Wenn Sie viele Positionen in einer Anlage haben, aber eine Position einen sehr hohen Prozentsatz aufweist, ist dies ein Hinweis darauf, dass ein Fehlertyp sorgfältiger untersucht werden sollte, um die Anzahl von Erfassungen für diesen Fehlertyp einzuschränken.
 
-![Abbildung 5.](media/10-controlling-and-reporting.png)
+![Abbildung 5](media/10-controlling-and-reporting.png)
 
 
 >[!NOTE]
 >Einen Überblick über alle erstellten Fehlererfassungen für Arbeitsaufträgen und Wartungsanfragen erhalten Sie, indem Sie auf **Anlagenverwaltung** > **Abfragen** > **Anlagenfehler** > **Anlagenfehler** klicken. Wählen Sie auf der Seite **Anlagenfehler** eine Anlagenfehlererfassung aus, und erweitern Sie den Bereich **Zugehörige Informationen**, um Informationen zum zugehörigen Arbeitsauftrag oder zur zugehörigen Wartungsanforderung anzuzeigen.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

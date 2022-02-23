@@ -69,6 +69,3 @@ Sie können auch Optionen in Zusammenhang mit der Kandidatenerfahrung konfigurie
 Sie können auch ein Ablaufdatum für Angebote festlegen und durchsetzen. Wenn die Option **Ein Ablaufdatum für alle Angebote erforderlich machen** auf **Ja** festlegen, laufen Angebote nach der angegebenen Anzahl von Stunden oder Tagen ab.
 
 Weitere Informationen zur Angebotsverwaltung finden Sie unter [Einrichten der Angebotsverwaltung](./offer-setup.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

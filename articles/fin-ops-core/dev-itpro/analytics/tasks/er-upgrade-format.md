@@ -1,10 +1,12 @@
 ---
 title: ER – Aktualisieren Sie Ihr Format durch Verwendung einer neuen Basisversion dieses Formats
-description: In diesem Thema wird beschrieben, wie Sie eine Konfiguration im EB-Format (elektronische Berichterstellung) verwalten.
+description: In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" zugewiesen ist, eine Formatkonfiguration für elektronische Berichterstellung (ER) verwalten kann.
 author: NickSelin
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bfcb85d964234063fd3c6a8e5ea29f7b222e966124b48e46b72b04f457c91e6c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 17fe6d772040c73959685920743225c128421951
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720807"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684258"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER – Aktualisieren Sie Ihr Format durch Verwendung einer neuen Basisversion dieses Formats
 
@@ -241,6 +243,3 @@ Dazu muss Proseware, Inc. die Basiskonfigurationsversion für die benutzerdefini
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Testen Sie das benutzerdefinierte Format zum Generieren von Zahlungsdateien
 Schließen Sie die Schritte in der Prozedur „Verwenden Sie erstelltes Format zum Generieren elektronischer Dokumente für Zahlungen“ in einer parallelen Finance and Operations-Sitzung ab. Wählen Sie das erstellte Format „BACS (Großbritannien, fiktiv benutzerdefiniert)“ in den Methodenparametern für die elektronische Zahlung aus. Stellen Sie sicher, dass die erstellte Zahlungsdatei den vor kurzem von Proseware, Inc.eingeführten XML-Knoten enthält, der den IBAN-Code in Übereinstimmung mit regionalen Anforderungen darstellt. Die Datei sollte auch den vor kurzem von LItware, Inc. eingegeben XML Knoten enthalten, der in SWIFT-Bankleitzahl die Übereinstimmung der Landanforderungen darstellt.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

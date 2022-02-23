@@ -2,9 +2,11 @@
 title: Verzögern der Ausführung von Sequenz-Elementen in ER-Formaten
 description: In diesem Thema wird erläutert, wie die Ausführung eines Sequenz-Elements in einem ER-Format verzögert wird.
 author: NickSelin
-ms.date: 04/23/2021
+manager: kfend
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner
 audience: Application User, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 2af6c95e459246f25574860dc319928380d06cc9fd4fdb68f42203f943b4d386
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9aa019e20b218fdaad4659fa65d9df629069204b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718414"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680733"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>Verzögern der Ausführung von Sequenz-Elementen in ER-Formaten
 
@@ -42,7 +44,7 @@ Die Option **Verzögerte Ausführung** gilt nicht für Sequenzen, die als zugesc
 
 ## <a name="example-defer-the-execution-of-a-sequence-element-in-an-er-format"></a><a name="Example"></a>Beispiel: Verzögern der Ausführung eines Sequenz-Elements in einem ER-Format
 
-In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Systemadministrator- oder der Funktionaler Berater für elektronische Berichterstellung-[Rolle](../sysadmin/tasks/assign-users-security-roles.md) ein ER-Format konfigurieren kann, das ein Sequenz-Element enthält, dessen Ausführungsreihenfolge von der Reihenfolge in der Formathierarchie abweicht.
+In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Systemadministrator- oder der Funktionaler Berater für elektronische Berichterstellung-[Rolle](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) ein ER-Format konfigurieren kann, das ein Sequenz-Element enthält, dessen Ausführungsreihenfolge von der Reihenfolge in der Formathierarchie abweicht.
 
 Diese Schritte können im **USMF**-Unternehmen in Microsoft Dynamics 365 Finance durchgeführt werden.
 
@@ -57,14 +59,14 @@ Wenn Sie das Beispiel im Thema [Verzögern der Ausführung von XML-Elementen in 
 
 | Inhaltsbeschreibung            | Dateiname |
 |--------------------------------|-----------|
-| ER-Datenmodell-Konfiguration    | [Model to learn deferred elements.version.1.xml](https://download.microsoft.com/download/7/6/0/760933ca-4ac3-4f50-bc0c-c35e596ee066/Modeltolearndeferredelements.version.1.xml) |
-| Konfiguration der ER-Modellzuordnung | [Mapping to learn deferred elements.version.1.1.xml](https://download.microsoft.com/download/c/9/c/c9c4b9dd-b700-4385-a087-a84ce9fc1d0f/Mappingtolearndeferredelements.version.1.1.xml) |
+| ER-Datenmodell-Konfiguration    | [Model to learn deferred elements.version.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Konfiguration der ER-Modellzuordnung | [Mapping to learn deferred elements.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 Bevor Sie beginnen, müssen Sie auch die folgende Konfiguration der ER-Beispiellösung herunterladen und speichern.
 
 | Inhaltsbeschreibung     |Dateiname |
 |-------------------------|----------|
-| ER-Formatkonfiguration | [Format to learn deferred sequences.version.1.1.xml](https://download.microsoft.com/download/0/f/5/0f55c341-8285-4d92-a46d-475d9a010927/Formattolearndeferredsequences.version.1.1.xml) |
+| ER-Formatkonfiguration | [Format to learn deferred sequences.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 ### <a name="import-the-sample-er-configurations"></a>ER-Beispielkonfigurationsdateien importieren
 
@@ -88,14 +90,14 @@ Bevor Sie beginnen, müssen Sie auch die folgende Konfiguration der ER-Beispiell
 6. Erweitern Sie in der Konfigurationsstruktur **Modell zum Erlernen verzögerter Elemente**.
 7. Überprüfen Sie die Liste der importierten ER-Konfigurationen in der Konfigurationsstruktur.
 
-    ![Importierte EB-Konfigurationen auf der Seite „Konfigurationen“.](./media/ER-DeferredSequence-Configurations.png)
+    ![Importierte ER-Konfigurationen auf der Seite „Konfigurationen“](./media/ER-DeferredSequence-Configurations.png)
 
 ### <a name="activate-a-configurations-provider"></a>Aktivieren eines Konfigurationsanbieters
 
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
 2. Überprüfen Sie auf der Seite **Lokalisierungskonfigurationen** im Abschnitt **Konfigurationsanbieter**, ob der [Konfigurationsanbieter](general-electronic-reporting.md#Provider) für das Beispielunternehmen Litware, Inc. (`http://www.litware.com`) aufgeführt und als „Aktiv“ markiert ist. Wenn dieser Konfigurationsanbieter nicht aufgeführt oder nicht als „Aktiv“ markiert ist, befolgen Sie die Schritte im Thema [Konfigurationsanbieter erstellen und als aktiv markieren](./tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-    ![Beispielfirma Litware, Inc. auf der Seite „Lokalisierungskonfigurationen“.](./media/ER-DeferredSequence-ElectronicReportingWorkspace.png)
+    ![Beispielfirma Litware, Inc. auf der Seite „Lokalisierungskonfigurationen“](./media/ER-DeferredSequence-ElectronicReportingWorkspace.png)
 
 ### <a name="review-the-imported-model-mapping"></a>Überprüfung der importierten Modellzuordnung
 
@@ -117,7 +119,7 @@ Bevor Sie beginnen, müssen Sie auch die folgende Konfiguration der ER-Beispiell
     - Die Datenquelle **Gruppiert** vom Typ *Gruppieren nach* ist so konfiguriert, dass gefilterte Steuerbuchungen der Datenquelle **Gefiltert** gruppiert werden.
     - Das Aggregationsfeld **TotalSum** der Datenquelle **Gruppiert** ist so konfiguriert, dass Werte des Felds **\$TaxAmount** der Datenquelle **Gefiltert** für alle gefilterten Steuerbuchungen dieser Datenquelle zusammengefasst werden.
 
-        ![Aggregationsfeld „TotalSum“ auf der Bearbeitungsseite „‚GroupBy‘ Parameter“.](./media/ER-DeferredSequence-GroupByParameters.png)
+        ![Aggregationsfeld „TotalSum“ auf der Bearbeitungsseite „'GroupBy' Parameter“](./media/ER-DeferredSequence-GroupByParameters.png)
 
 9. Überprüfen Sie, wie die konfigurierten Datenquellen an das Datenmodell gebunden sind und wie sie aufgerufene Daten verfügbar machen, um sie in einem ER-Format verfügbar zu machen:
 
@@ -125,7 +127,7 @@ Bevor Sie beginnen, müssen Sie auch die folgende Konfiguration der ER-Beispiell
     - Das Feld **\$TaxAmount** der Datenquelle **Gefiltert** ist an das Feld **Data.List.Value** des Datenmodells gebunden.
     - Das Feld **TotalSum** der Datenquelle **Gruppiert** ist an das Feld **Data.Summary.Total** es Datenmodells gebunden.
 
-    ![Modellzuordnungsdesigner-Seite.](./media/ER-DeferredSequence-ModelMapping.png)
+    ![Modellzuordnungsdesigner – Seite](./media/ER-DeferredSequence-ModelMapping.png)
 
 10. Schließen Sie die Seiten **Modellzuordnungsdesigner** und **Modellzuordnungen**.
 
@@ -138,12 +140,12 @@ Bevor Sie beginnen, müssen Sie auch die folgende Konfiguration der ER-Beispiell
 
     - Das Sequenzformatelement **Bericht\\Zeilen** ist so konfiguriert, dass es das ausgehende Dokument mit einer einzelnen Zeile füllt, die aus den verschachtelten Sequenz-Elementen generiert wird (**Header**, **Datensatz** und **Zusammenfassung**).
 
-        ![Zeilensequenzformat-Elemente und verschachtelte Elemente auf der Formatdesignerseite.](./media/ER-DeferredSequence-Format.png)
+        ![Zeilensequenzformat-Elemente und verschachtelte Elemente auf der Formatdesignerseite](./media/ER-DeferredSequence-Format.png)
 
     - Das Sequenzformatelement **Bericht\\Zeilen\\Header** ist so konfiguriert, dass es das ausgehende Dokument mit einer einzelnen Header-Zeile füllt, die das Datum und die Uhrzeit der Bearbeitungsbeginns zeigt.
     - Das Sequenzformatelement **Bericht \\Zeilen\\Datensatz** ist so konfiguriert, dass es das ausgehende Dokument mit einer einzelnen Zeile füllt, die die Details einer einzelnen Steuerbuchung anzeigt. Diese Steuerbuchungen sind durch ein Semikolon getrennt.
 
-        ![Datensatzsequenz-Formatelement, das ein Semikolon als Trennzeichen verwendet.](./media/ER-DeferredSequence-Format1.png)
+        ![Datensatzsequenz-Formatelement, das ein Semikolon als Trennzeichen verwendet](./media/ER-DeferredSequence-Format1.png)
 
     - Das Sequenzformatelement **Bericht\\Zeilen\\Zusammenfassung** ist so konfiguriert, dass das ausgehende Dokument mit einer einzelnen Zusammenfassungszeile gefüllt wird, die die Summe der Steuerwerte aus den verarbeiteten Steuerbuchungen enthält.
 
@@ -162,14 +164,14 @@ Bevor Sie beginnen, müssen Sie auch die folgende Konfiguration der ER-Beispiell
     - Das **TotalTaxAmount**-Element ist an **model.Data.Summary.Total** gebunden, um die Summe der Steuerwerte der verarbeiteten Steuerbuchungen zu generieren.
     - Das **ExecutionDateTime**-Element generiert das Datum und die Uhrzeit (einschließlich Millisekunden), zu dem bzw. zu der die Zusammenfassungszeile hinzugefügt wurde.
 
-    ![Registerkarte „Zuordnung“ auf der Formatdesignerseite.](./media/ER-DeferredSequence-Format2.png)
+    ![Registerkarte „Zuordnung“ auf der Formatdesignerseite](./media/ER-DeferredSequence-Format2.png)
 
 ### <a name="run-the-imported-format"></a>Importiertes Format ausführen
 
 1. Wählen Sie auf der Seite **Formatdesigner** die Option **Ausführen** aus.
 2. Laden Sie die vom Webbrowser angebotene Datei herunter und öffnen Sie sie zur Überprüfung.
 
-    ![Heruntergeladene Beispiel-Berichtsdatei.](./media/ER-DeferredSequence-Run.png)
+    ![Heruntergeladene Datei](./media/ER-DeferredSequence-Run.png)
 
 Beachten Sie, dass die Zusammenfassungszeile 22 die Summe der Steuerwerte für die verarbeiteten Transaktionen anzeigt. Weil das Format für die Verwendung der **model.Data.Summary.Total**-Bindung zum Zurückgeben der Summe konfiguriert ist, wird die Summe berechnet, indem die **TotalSum**-Aggregation der Datenquelle **Gruppiert** vom Typ *GroupBy*, die die Modellzuordnung verwendet, aufgerufen wird. Um diese Aggregation zu berechnen, durchläuft die Modellzuordnung alle Transaktionen, die in der Datenquelle **Gefiltert** ausgewählt wurden. Durch Vergleichen der Ausführungszeiten der Zeilen 21 und 22 können Sie feststellen, dass die Berechnung der Summe 10 Millisekunden (ms) gedauert hat. Durch Vergleichen der Ausführungszeiten der Zeilen 2 und 21 können Sie feststellen, dass das Generieren aller Transaktionszeilen 7 Millisekunden (ms) gedauert hat. Daher waren insgesamt 17 ms erforderlich.
 
@@ -183,26 +185,26 @@ Wenn das Transaktionsvolumen viel größer als das Volumen im aktuellen Beispiel
 4. Konfigurieren Sie den Ausdruck **Gesammelter Datenschlüsselname** als `WsColumn`.
 5. Konfigurieren Sie den Ausdruck **Gesammelter Datenschlüsselwert** als `WsRow`.
 
-    ![Zeilensequenz-Element auf der Formatdesignerseite.](./media/ER-DeferredSequence-Format3.png)
+    ![Zeilensequenz-Element auf der Formatdesignerseite](./media/ER-DeferredSequence-Format3.png)
 
 6. Wählen Sie das numerische Element **Bericht\\Zeilen\\Datensatz\\TaxAmount** aus.
 7. Konfigurieren Sie den Ausdruck **Gesammelter Datenschlüsselname** als `SummingAmountKey`.
 
-    ![Numerisches Element „TaxAmount“ auf der Formatdesignerseite.](./media/ER-DeferredSequence-Format4.png)
+    ![Numerisches Element „TaxAmount“ auf der Formatdesignerseite](./media/ER-DeferredSequence-Format4.png)
 
     Sie können diese Einstellung als Erfüllung eines virtuellen Arbeitsblatts betrachten, bei dem der Wert der Zelle A1 durch den Wert des Steuerbetrags aus jeder verarbeiteten Steuerbuchung ergänzt wird.
 
 8. Wählen Sie das numerische Element **Bericht\\Zeilen\\Datensatz\\RunningTotal** und **Formel bearbeiten** aus.
 9. Konfigurieren Sie den Ausdruck `SUMIF(SummingAmountKey, WsColumn, WsRow)` mit der integrierten ER-Funktion [SUMIF](er-functions-datacollection-sumif.md).
-10. Wählen Sie **Speichern** aus.
+10. Wählen Sie **Speichern**.
 
-    ![SUMIF-Ausdruck.](./media/ER-DeferredSequence-FormulaDesigner.png)
+    ![SUMIF-Ausdruck](./media/ER-DeferredSequence-FormulaDesigner.png)
 
 11. Schließen Sie die Seite **Formeldesigner**.
 12. Wählen Sie **Speichern** und dann **Ausführen** aus.
 13. Laden Sie die vom Webbrowser angebotene Datei herunter und öffnen Sie sie zur Überprüfung.
 
-    ![Heruntergeladene Datei – Summierte Steuerwerte.](./media/ER-DeferredSequence-Run1.png)
+    ![Heruntergeladene Datei](./media/ER-DeferredSequence-Run1.png)
 
     Zeile 21 enthält die laufende Summe der Steuerwerte, die für alle verarbeiteten Transaktionen unter Verwendung der generierten Ausgabe als Datenquelle berechnet werden. Diese Datenquelle beginnt am Anfang des Berichts und geht bis zur letzten Steuerbuchung. Zeile 22 enthält die Summe der Steuerwerte für alle verarbeiteten Transaktionen, die in der Modellzuordnung unter Verwendung der Datenquelle des Typs *GroupBy* berechnet werden. Beachten Sie, dass diese Werte gleich sind. Daher kann die ausgabenbasierte Summierung anstelle von **GroupBy** verwendet werden. Durch Vergleichen der Ausführungszeiten der Zeilen 2 und 21 können Sie feststellen, dass das Generieren aller Transaktionszeilen und das Summieren 9 Millisekunden (ms) gedauert hat. Daher ist das geänderte Format hinsichtlich der Erzeugung von Detailzeilen und der Summierung von Steuerwerten ungefähr zweimal schneller als das ursprüngliche Format.
 
@@ -211,7 +213,7 @@ Wenn das Transaktionsvolumen viel größer als das Volumen im aktuellen Beispiel
 16. Wählen Sie **Speichern** und dann **Ausführen** aus.
 17. Laden Sie die vom Webbrowser angebotene Datei herunter und öffnen Sie sie zur Überprüfung.
 
-    ![Heruntergeladene Datei mit bearbeiteter Formel.](./media/ER-DeferredSequence-Run2.png)
+    ![Heruntergeladene Datei](./media/ER-DeferredSequence-Run2.png)
 
     Beachten Sie, dass die laufende Summe der Steuerwerte in der letzten Transaktionsdetailzeile jetzt der Summe in der Zusammenfassungszeile gleicht.
 
@@ -224,7 +226,7 @@ Wenn Sie beispielsweise die Summe der Steuerwerte in der Kopfzeile Ihres Bericht
 3. Wählen Sie **Speichern** und dann **Ausführen** aus.
 4. Laden Sie die vom Webbrowser angebotene Datei herunter und öffnen Sie sie zur Überprüfung.
 
-    ![Heruntergeladene Datei für die Summierung im Berichtskopf.](./media/ER-DeferredSequence-Run3.png)
+    ![Heruntergeladene Datei](./media/ER-DeferredSequence-Run3.png)
 
     Beachten Sie, dass die Summe der Steuerwerte in der Zusammenfassungszeile 2 jetzt gleich 0 (Null) ist, da diese Summe jetzt auf der Grundlage der generierten Ausgabe berechnet wird. Wenn Zeile 2 generiert wird, enthält die generierte Ausgabe noch keine Zeilen mit Transaktionsdetails. Sie können dieses Format so konfigurieren, dass die Ausführung des Sequenz-Elements **Bericht\\Zeilen\\Zusammenfassung** verzögert wird, bis das Element **Bericht\\Zeilen\\Datensatz** für alle Steuerbuchungen ausgeführt wurde.
 
@@ -233,12 +235,12 @@ Wenn Sie beispielsweise die Summe der Steuerwerte in der Kopfzeile Ihres Bericht
 1. Wählen Sie auf der Seite **Formatdesigner** auf der Registerkarte **Format** das Sequenz-Element **Bericht\\Zeilen\\Zusammenfassung** aus.
 2. Legen Sie die Option **Verzögerte Ausführung** auf **Ja** fest.
 
-    ![Option „Verzögerte Ausführung“ des Zusammenfassungs-Sequenz-Elements auf der Formatdesignerseite.](./media/ER-DeferredSequence-Format5.png)
+    ![Option „Verzögerte Ausführung“ des Zusammenfassungs-Sequenz-Elements auf der Formatdesignerseite](./media/ER-DeferredSequence-Format5.png)
 
 3. Wählen Sie **Speichern** und dann **Ausführen** aus.
 4. Laden Sie die vom Webbrowser angebotene Datei herunter und öffnen Sie sie zur Überprüfung.
 
-    ![Heruntergeladene Datei – aufgeschobene Ausführung.](./media/ER-DeferredSequence-Run4.png)
+    ![Heruntergeladene Datei](./media/ER-DeferredSequence-Run4.png)
 
     Das Sequenz-Element **Bericht\\Zeilen\\Zusammenfassung** wird jetzt nur dann ausgeführt, wenn alle Elemente unter dem übergeordneten Element, **Bericht\\Zeilen**, bereits ausgeführt wurden. Deshalb wird es nach Ausführung des Sequenz-Elements **Bericht\\Zeilen\\Datensatz** für alle Steuerbuchungen der Datenquelle **model.Data.List** ausgeführt. Die Ausführungszeiten der Zeilen 1, 2 und 3 sowie der letzten Zeile 22 belegen diese Tatsache.
 
@@ -247,6 +249,3 @@ Wenn Sie beispielsweise die Summe der Steuerwerte in der Kopfzeile Ihres Bericht
 - [Konfigurieren des Formats für Inventuren und Summierungen](./tasks/er-format-counting-summing-1.md)
 - [Ausführung des EB-Formats nachverfolgen, um Leistungsprobleme zu behandeln](trace-execution-er-troubleshoot-perf.md)
 - [Verzögern der Ausführung von XML-Elementen in ER-Formaten](er-defer-xml-element.md#Example)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

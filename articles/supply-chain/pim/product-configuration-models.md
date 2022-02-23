@@ -1,28 +1,29 @@
 ---
 title: Produktkonfigurationsmodelle – Überblick
 description: Dieser Artikel definiert Begriffe und Konzepte, die zu den Produktkonfigurationsmodellen relevant sind. Produktkonfigurationsmodelle lassen Sie eine generische Produktstruktur erstellen, die verwendet werden kann, wenn viele Produktvarianten für ein bestimmtes Produkt zu konfigurieren.
-author: t-benebo
+author: cvocph
+manager: tfehr
 ms.date: 06/20/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails, PCProductConfigurationModelListPage, PCModalWaitDialog, PCTemplateConfigurationManager, PCConfigurationUIGrouping
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "4031"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 4031
 ms.assetid: 70b968e8-e550-4731-823d-d713b8910f7b
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fddad1fffd61ef0cf78977721bdf2da51aa4c682
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 87d61203d36722194b98a247609fa126b71b846c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984645"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428475"
 ---
 # <a name="product-configuration-models-overview"></a>Produktkonfigurationsmodelle – Überblick
 
@@ -152,6 +153,3 @@ Sie können auf der Registerkarte <strong>Allgemein</strong> der Seite <strong>D
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

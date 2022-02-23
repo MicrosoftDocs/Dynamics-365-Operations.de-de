@@ -1,35 +1,33 @@
 ---
 title: Beurlaubungs- und Abwesenheitsparameter konfigurieren
-description: In diesem Thema wird beschrieben, wie Sie Personalverwaltungsparameter für Urlaub und Abwesenheit in Dynamics 365 Human Resources definieren.
-author: twheeloc
-ms.date: 10/28/2021
+description: Definieren Sie Personalparameter für Urlaub und Abwesenheit in Dynamics 365 Human Resources.
+author: andreabichsel
+manager: tfehr
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7bd1aebd633af0530c550f8ec7510a0c09985ca1
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: e1b2de94f9d9ac1ada16b6ef0e7628edbc9d683f
+ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067351"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "4418765"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Beurlaubungs- und Abwesenheitsparameter konfigurieren
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Bevor Sie Urlaubs- und Abwesenheitspläne in Dynamics 365 Human Resources einrichten, ist es eine gute Idee, die Einstellungen für alle zugehörigen **Personalverwaltungsparameter** zu überprüfen, einschließlich:
+Bevor Sie Urlaubs- und Abwesenheitspläne einrichten in Dynamics 365 Human Resourcesi st es eine gute Idee, die Einstellungen für alle zugehörigen Personalparameter zu überprüfen, einschließlich:
 
 - Nummernfolge für Urlaubsanträge
 - Family and Medical Leave Act (FMLA) Einstellungen
@@ -77,7 +75,7 @@ Bevor Sie Urlaubs- und Abwesenheitspläne in Dynamics 365 Human Resources einric
 
     - Wählen Sie **Bilanzberechnung** aus, um Salden anzuzeigen, die ab heute oder ab dem Abgrenzungszeitraum angezeigt werden. Wenn Sie **Saldo ab heute** in der Bilanz auswählen, wird die Summe aller Rückstellungen, Anpassungen und Anforderungen bis heute angezeigt. Wenn Sie **Saldo zum Abgrenzungszeitraum** auswählen, zeigt der Saldo die Summe aller Rückstellungen, Anpassungen und Anforderungen ab dem Abgrenzungszeitraum an, der durch die Häufigkeit im Urlaubsplan definiert ist. 
 
-    - Legen Sie die **Startzeit** für den **Vortragsablaufuhrzeit**-Batchauftrag fest.  
+    - Legen Sie die Startzeit für den Vortragsablaufuhrzeit-Batchauftrag fest.  
     
     - Wählen Sie **Ja** für **Mitarbeitern erlauben, Urlaub zu kaufen** und **Mitarbeitern erlauben, Urlaub zu verkaufen** aus. Wenn Sie für diese Optionen **Ja** auswählen, können Sie Richtlinien zum Kauf und Verkauf von Urlaub erstellen und es Mitarbeitern ermöglichen, Anforderungen zum Kaufen und Verkaufen von Urlaubsanforderungen einzureichen.
 
@@ -94,6 +92,3 @@ Bevor Sie Urlaubs- und Abwesenheitspläne in Dynamics 365 Human Resources einric
 ## <a name="see-also"></a>Siehe auch
 
 - [Urlaubs- und Abwesenheitsübersicht](hr-leave-and-absence-overview.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

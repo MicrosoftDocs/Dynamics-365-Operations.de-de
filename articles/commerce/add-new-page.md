@@ -2,30 +2,36 @@
 title: Neue Seite hinzufügen
 description: In diesem Thema wird beschrieben, wie Sie eine neue Websiteseite in Microsoft Dynamics 365 Commerce hinzufügen.
 author: psimolin
-ms.date: 02/03/2022
+manager: annbe
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e0c2a73ae9e85cb299e7cb6fc70562659cdfadc5
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: b0f1e290526c25aa6e6300c65e24044a325bee53
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090718"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412511"
 ---
 # <a name="add-a-new-site-page"></a>Neue Seite hinzufügen
+
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie eine neue Websiteseite in Microsoft Dynamics 365 Commerce hinzufügen.
+
+## <a name="overview"></a>Übersicht
 
 Nachdem Sie Vorlagen und Fragmente für Ihre Site erstellt haben, besteht der nächste Schritt darin, die Seiten zu erstellen, von denen die Kategorien verwendet werden. Um anzufangen, müssen Sie eine Vorlage oder ein Layout, einen Seitenname und eine URL Seite auswählen.
 
@@ -33,11 +39,11 @@ Nachdem Sie Vorlagen und Fragmente für Ihre Site erstellt haben, besteht der n�
 
 Sie können entweder eine ursprüngliche Vorlage oder ein Layout für die neue Seite nutzen. Weitere Informationen finden Sie unter [Vorlagen und Layouts Überblick](templates-layouts-overview.md).
 
-## <a name="specify-the-page-name"></a>Geben Sie den Seitennamen an
+## <a name="page-name"></a>Seitenname
 
-Der Seitenname muss für Ihre Website eindeutig sein und sollte beschreibend sein, damit Sie ihn leicht finden können und andere Personen wissen, wofür die Seite gedacht ist. Sie können Ihre Seite später umbenennen, indem Sie sie bearbeiten und dann das Stiftsymbol neben dem Seitennamen im Eigenschaftsbereich auswählen.
+Der Seitenname muss für die Seite eindeutig sein. Er sollte beschreibend sein, sodass Sie ihn einfach finden können und andere Personen wissen, für was die Seite ist. Wählen Sie den Seitennamen sorgfältig aus, da sie später nicht geändert werden kann.
 
-## <a name="specify-the-page-url"></a>Angeben der URL der Seite
+## <a name="page-url"></a>Seiten-URL
 
 Sie können die Option haben, eine URL für die neue Seite einzugeben. Wenn Sie eine Seite erstellen, können Sie eine Zeichenfolge eingeben, die verwendet wird, um die URL zu vervollständigen. Diese Zeichenfolge ist als relative URL oder URL-Typ bekannt. Eine vollständige URL wird anschließend auf Basis des URL-Typs generiert, und die neue Seite wird zugeordnet. Sie können den URL-Typ später ändern, bevor Sie die Seite veröffentlichen. Weitere Informationen finden Sie unter [Erstellen einer URL-Seite](create-page-URL.md).
 
@@ -82,11 +88,6 @@ Um eine neue Seite Ihrer Site hinzufügen, führen Sie die folgenden Schritte au
 
 [Erweitern einer Produktseite](enrich-product-page.md)
 
-[Kategoriezielseite erweitern](enrich-category-page.md)
+[Füllen einer Kategorie-Landingpage](enrich-category-page.md)
 
 [Überprüfen der Zugänglichkeit des Seiteninhalts](verify-accessibility.md)
-
-[Dynamische E-Commerce-Seiten basierend auf URL-Parametern erstellen](create-dynamic-pages.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

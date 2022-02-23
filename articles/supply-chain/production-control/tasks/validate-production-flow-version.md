@@ -1,25 +1,28 @@
 ---
 title: Produktionsfluss und Version überprüfen
 description: Die Prozedur zeigt, wie ein neuer Produktionsfluss und eine erste Version für Lean Manufacturing erstellt werden.
-author: johanhoffmann
+author: ChristianRytt
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanProductionFlow
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d87aa427c2bc3868e255c97ea11fd4e79456eef
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: c30947d01cfb85ea3dbf1aa3e4ea8e092efd18cb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573584"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428802"
 ---
 # <a name="validate-a-production-flow-and-version"></a>Produktionsfluss und Version überprüfen
 
@@ -61,6 +64,3 @@ Die Prozedur zeigt, wie ein neuer Produktionsfluss und eine erste Version für L
     * Die Periode für tatsächliche Zykluszeit ist die Anzahl der Tage, in denen Einzelvorgänge ab der tatsächlichen Minute rückwärts erfasst werden, um die tatsächliche Zykluszeit zu berechnen. Der Wert kann jederzeit geändert werden und wird nur für die Berechnung der tatsächlichen Zykluszeiten verwendet.  
 13. Klicken Sie auf "Speichern".
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

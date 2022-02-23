@@ -1,27 +1,30 @@
 ---
 title: Modellierung einer Lean-Organisation
 description: Der Artikel enthält Informationen zu zentralen Konzepten für die Modellierung einer Lean-Organisation.
-author: johanhoffmann
+author: cvocph
+manager: tfehr
 ms.date: 09/24/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity, KanbanFlowSelection, KanbanFlow
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 53141
 ms.assetid: 4f272f2f-ec2c-4b0d-a652-00a63b719b9e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3958d21188163fe95e36ba4b8117ae8314b0fd1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 960ba8851810ff528581144ad863772f18f9fa79
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570200"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428928"
 ---
 # <a name="modeling-a-lean-organization"></a>Modellierung einer Lean-Organisation
 
@@ -51,7 +54,7 @@ Es können die künftigen Status-Wertströme als Produktionsflussversion modelli
 
 Der Wertstrom selbst wird als Organisationseinheit modelliert. Daher kann der Wertstrom als Finanzdimension verwendet werden.
 
-Weitere Informationen zum Erstellen von Organisationseinheiten finden Sie unter [Organisationseinheiten erstellen](../../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md).
+Weitere Informationen zum Erstellen von Organisationseinheiten finden Sie unter [Organisationseinheiten erstellen](../../fin-and-ops/organization-administration/tasks/create-operating-unit.md).
 
 ## <a name="costing-for-lean-manufacturing-based-on-the-production-flow"></a>Kosten für Lean Manufacturing basierend auf dem Produktionsfluss
 Die regelmäßige Konsolidierung der Kosten für einen Produktionsfluss korrigiert das zugehörige RIF-Konto und ermöglicht die Bestimmung von Abweichungen für die Produkte , die vom Produktionsfluss geliefert werden.
@@ -64,6 +67,3 @@ Für die Implementierung des Lean Manufacturing haben wir den Produktionsfluss u
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,35 +1,38 @@
 ---
 title: Lebensereignistypen konfigurieren
-description: Microsoft Dynamics 365 Human Resources verwendet Lebensereignistypen, um Ereignisse zu definieren, mit denen die Anmeldung zu den Mitarbeiterleistungen aktualisiert wird.
-author: twheeloc
-ms.date: 08/24/2021
+description: Microsoft Dynamics 365 Human Resources verwendet Lebensereignistypen, um Ereignisse zu definieren, bei denen eine Vorteilsregistrierung von Mitarbeitern aktualisiert werden muss.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: aab35d40af43caff7010998ddce51350584228a1
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 5286bcd940f4068531bae624876c8a35e64db4c3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071492"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418662"
 ---
 # <a name="configure-life-event-types"></a>Lebensereignistypen konfigurieren
 
+Microsoft Dynamics 365 Human Resources verwendet die Lebensereignistypen, um Ereignisse zu definieren, bei denen eine Vorteilsregistrierung von Mitarbeitern aktualisiert werden muss. Beispiel: Heirat oder Geburt eines Kindes. Jede Kennung des Lebensereignistyps darf nur einem Lebensereignistyp zugeordnet werden. Wenn Sie beispielsweise eine Kennung eines Lebensereignistyps mit dem Namen „Adressänderung“ erstellen, die dem Lebensereignistyp „Änderung der Mitarbeiteradresse“ zugeordnet ist, können Sie keine andere Kennung mit der Bezeichnung „Änderung der Mitarbeiteradresse“ erstellen und sie dem Lebensereignistyp „Änderung der Mitarbeiteradresse“ zuordnen. 
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
+Nachdem Sie Lebensereignistypen erstellt haben, müssen Sie sie mit Plantypen verknüpfen. Weitere Informationen finden Sie unter [Plantypen erstellen](hr-benefits-setup-plan-types.md).
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Dynamics 365 Human Resources verwendet **Lebensereignistypen**, um Ereignisse zu definieren, bei denen eine Aktualisierung der Anmeldung für Mitarbeiterleistungen zulässig ist, z.B. Heirat oder Geburt eines Kindes. Jede Kennung des Lebensereignistyps darf nur einem Lebensereignistyp zugeordnet werden. Wenn Sie z.B. eine **Lebensereignis-ID** mit der Bezeichnung **Adressänderung** erstellen, die mit der Lebensereignisart **Adressänderung eines Mitarbeiters** verknüpft ist, können Sie keine weitere ID mit der Bezeichnung **Adressänderung eines Mitarbeiters** erstellen und diese mit der Lebensereignisart **Adressänderung eines Mitarbeiters** verknüpfen. Wenn ein Lebensereignistyp nicht mit einem Plantyp verknüpft ist, löst der Lebensereignistyp kein Lebensereignis aus. Weitere Informationen finden Sie unter [Plantypen erstellen](hr-benefits-setup-plan-types.md).
+   > [!NOTE]
+   > Wenn Sie einen Lebensereignistypen erstellt haben, müssen Sie ihn mit einem Plantypen verknüpfen. Weitere Informationen finden Sie unter [Plantypen erstellen](hr-benefits-setup-life-event-types.md).
 
 ## <a name="create-a-life-event-type"></a>Lebensereignistyp erstellen
 
@@ -49,7 +52,7 @@ Dynamics 365 Human Resources verwendet **Lebensereignistypen**, um Ereignisse zu
 
 ## <a name="view-attached-plans"></a>Angefügte Pläne anzeigen
 
-Sie sehen eine Liste der Pläne, die dem ausgewählten **Lebensereignistyp** zugeordnet sind. Lebensereignisse sind an einen Plantyp gebunden und Plantypen sind mit einem Plan verknüpft.
+Sie können eine Liste der Pläne anzeigen, die dem ausgewählten Lebensereignistyp zugeordnet sind. Lebensereignisse sind an einen Plantyp gebunden und Plantypen sind mit einem Plan verknüpft. 
 
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Einstellung** die Option **Lebensereignistypen**.
 
@@ -63,29 +66,25 @@ Sie können beim Erstellen eines Lebensereignistyps aus den folgenden Lebenserei
 
 | Lebensereignis | Elektronische Adresse | Auslöser |
 | --- | --- | --- |
-| **Änderung des Familienstands** | **Arbeitskraft > Profil > Persönliche Informationen > Familienstand**| Änderung des Familienstandes |
-| **Änderung des Beschäftigungsstatus** |**Arbeitskraft > Beschäftigung > Seite Beschäftigungsverlauf** | Für eine Arbeitskraft mit einem bestehenden Beschäftigungsdetail wird das Erstellen eines neuen Beschäftigungsdetail mit einem anderen Beschäftigungsstatus ein Lebensereignis auslösen.  Das Aktualisieren eines vorhandenen Beschäftigungsdetaildatensatzes mit einem anderen Beschäftigungsstatus löst ebenfalls ein Ereignis aus.  |
-| **Änderung der Mitarbeiteradresse** |**Arbeitskraft > Profil > Adressen**</li><li>**Arbeitskraft > Persönliche Informationen > Persönliche Kontakte > Adresse**</li></ul> | Änderung der Adresse. Die Adresse muss **Primär** sein, um ein Lebensereignis auszulösen. |
-| **Änderung der abhängigen Person** |<br><ul><li>**Arbeitnehmer > Profil > Persönliche Informationen > Persönliche Kontakte**/li><li>**Mitarbeiter-Self-Service**</li></ul> | Fügen Sie einen persönlichen Kontakt hinzu, indem Sie ihn als abhängig angeben und **Gültig ab** definieren. Aktualisierung der abhängigen **Gültig bis**-Informationen eines persönlichen Kontakts. Die persönliche Kontaktbeziehung muss Kind, Ehepartner, Lebenspartner oder Ex-Ehepartner sein.  |
-| **Geburt oder Adoption (Unterhaltsberechtigter)** |<br><ul><li>**Arbeitskraft > Profil > Persönliche Informationen > Persönliche Kontakte**</li><li>**Mitarbeiter-Self-Service > Persönliche Daten bearbeiten > Persönliche Kontakte**</li></ul>| **Geburtsdatum** oder **Adaptionsdatum** werden hinzugefügt oder aktualisiert. Das **Geburtsdatum** des Untergeordneten ist erforderlich. |
+| **Änderung des Familienstands** | Arbeitskraft > Profil > Persönliche Informationen > Familienstand| Änderung des Familienstandes |
+| **Änderung des Beschäftigungsstatus** | <ul><li>Arbeitskraft > Beschäftigung</li><li>Beschäftigungshistorieseite</li></ul> | Änderung des Beschäftigungsstatus |
+| **Änderung der Mitarbeiteradresse** | <ul><li>Arbeitskraft > Profil > Adressen </li><li>Arbeitskraft > Persönliche Informationen > Persönliche Kontakte > Adresse</li></ul> Adresse hinzufügen, bearbeiten oder löschen |
+| **Änderung der abhängigen Person** | <ul><li>Arbeitskraft > Profil > Persönliche Informationen > Persönliche Kontakte > Unterhaltsberechtigten hinzufügen oder löschen</li><li>Mitarbeiter-Self-Service</li></ul> | Unterhaltsberechtigten hinzufügen oder löschen. Die persönliche Kontaktbeziehung muss Kind, Ehepartner, Lebenspartner oder Ex-Ehepartner sein. Das Aktualisieren des Datums **Gültig ab** löst das Lebensereignis aus. Wenn Sie dieses Datum nicht aktualisieren, wird kein Lebensereignis ausgelöst. |
+| **Geburt oder Adoption (Unterhaltsberechtigter)** | <ul><li>Arbeitskraft > Profil > Persönliche Informationen > Persönliche Kontakte > Unterhaltsberechtigtendetails</li><li>Mitarbeiter-Self-Service</li></ul> | Feld **Adoptionsdatum** wurde ausgefüllt. Das Geburtsdatum des Kindes ist erforderlich. |
 | **Verlust der Abdeckung (Ehepartner/Lebenspartner)** | Arbeitskraft > Profil > Persönliche Informationen > Persönliche Kontakte > Unterhaltsberechtigtendetails > Verlust der Abdeckung | **Verlust der Abdeckung** wurde für einen persönlichen Kontakt ausgewählt, zusammen mit **Gültigkeitsdatum** |
-| Beschäftigungsänderung für Lebenspartner | **Arbeitskraft > Profil > Persönliche Informationen > Persönliche Kontakte > Abhängige Details > Beschäftigt** | Erstellen eines persönlichen Kontakts und Festlegen von **Beschäftigt** auf **Ja**. Aktualisieren eines persönlichen Kontakts und Ändern von **Beschäftigt**.  |
-| **Beurlaubung (Ehepartner/Lebenspartner)** | **Arbeitskraft > Profil > Persönliche Informationen > Persönliche Kontakte > Unterhaltsberechtigtendetails > Beurlaubung** | Persönlicher Kontakt erstellt und **Abwesenheitsdatum** ist definiert. Persönlicher Kontakt **Freistellung** wird aktualisiert. Persönlicher Kontakt **Abwesenheitsdatum** wird aktualisiert.  |
-| **Änderung der Abdeckung (Position)** |<br><ul><li>**Arbeitskraft > Positionszuweisung > Positionszuweisungen der Arbeitskraft**</li><li>**Positionen > Positionen**</li></ul>| Änderung der Position in den Datensätzen für die Zuordnung der Arbeitskräfte zur Position. Änderung der Zuordnung der Arbeitskraft in der Position. |
-| **Änderung der Abdeckung (Gehalt)** |<br><ul><li>**Arbeitskraft > Vergütung > Fester Plan**</li><li>**Arbeitskraft > Persönliche Informationen > Leistungen Jahresgehalt**</li></ul>| Wenn **Vergütungsmanagement > Gemeinsame Parameter der Humanressourcen > Vergünstigungen > Jahresgehalt Vergünstigungen** nicht aktiviert ist, wird durch die Aktualisierung von **Arbeitskraft > Vergütung > Fester Plan** ein lebenswichtiges Ereignis erstellt. Wenn **Benefits Management > Gemeinsame Parameter der Human Resources > Benefits > Benefits Jahresgehalt** aktiviert ist, wird durch die Aktualisierung von **Arbeitskraft > Persönliche Informationen > Benefits Jahresgehalt** ein Ereignis erstellt. |
-| **Krankenversicherung (Mitarbeiter/Unterhaltsberechtigter)** | **Arbeitskraft > Profil > Persönliche Informationen > Persönliche Kontakte > Unterhaltsberechtigtendetails > Gültigkeitsdatum Krankenversicherung** | Das Hinzufügen oder Aktualisieren des **Medicare Gültig**-Datums für einen persönlichen Kontakt erstellt dieses Lebensereignis. |
-| **Gerichtlich angeordnete Unterstützung** | **Arbeitnehmer > Profil > Persönliche Informationen > Persönliche Kontakte > Unterhaltsberechtigte > Gerichtlich angeordneter Unterhalt** (QMSCO/QDRO) und Gültigkeitsdaten | Beim Erstellen eines persönlichen Kontakts wird ein Lebensereignis erstellt, wenn **Gerichtlich angeordnete Unterstützung** **Ja** ist. Das Aktualisieren von **Gerichtlich angeordnete Unterstützung** oder **Gerichtlich angeordnetes Verfallsdatum** löst ebenfalls ein Lebensereignis aus. |
-| **Verstorben** | **Arbeitskraft > Profil > Persönliche Informationen > Todestag** | Ein **Stornodatum** wird eingegeben oder aktualisiert. |
-| **Versicherungsnachweis** | **Arbeitskraft > Arbeitskraft > Versionen > Beschäftigungshistorie > Datumsmanager > Vorteilsdetails** | **Versicherungsnachweis** wird auf **Ja** festgelegt. **Datum für den Nachweis der Versicherbarkeit** ist definiert. |
-| **Begünstigter** | **Arbeitskraft > Profil > Persönliche Informationen > Persönliche Kontakte** | Ein persönlicher Kontakt wird hinzugefügt und die Felder **Begünstigter** und **Wirkungsdatum** werden ausgefüllt. Der persönliche Kontakt muss vom Typ **Kind**, **Ehepartner**, **Haushaltspartner**, **Geschwister**, **Familienkontakt**, **AndererKontakt** oder **Elternteil** sein. |
-| **Mitarbeiter-Krankenversicherung** | **Arbeitskraft > Arbeitskraft > Versionen > Beschäftigungshistorie > Datumsmanager > Vorteilsdetails** | **Medicare-Berechtigung** wird auf **Ja** festgelegt. **Medicare-Berechtigungsdatum** wird geändert. |
-| **Geburtstag** | **Leistungsverwaltung > Verarbeitung von Lebensereignissen** | Diese Lebensereignisse werden von **Life Event Change Processing** erstellt. Der Prozess analysiert den gewählten Zeitraum und die juristische Entität und findet die zugehörigen Arbeitskräfte. Es berechnet den letzten Geburtstag und erstellt ein Geburtstags-Lebensereignis, falls nicht bereits eines erstellt wurde. |
-| **Änderung der Arbeitskraftberechtigung (nicht US-spezifisch)** |<br><ul><li>**Arbeitskraft > Beschäftigung**</li><li>**Arbeitskraft > Arbeitskraft > Versionen > Beschäftigungshistorie**</li></ul>| Erstellt ein Lebensereignis, wenn:<br><ul><li>Erstellen einer neuen Beschäftigung, und es gibt eine frühere Beschäftigung, und der Typ der Arbeitskraft ändert sich.</li><li>Erstellen eines neuen Beschäftigungsdetails, und es gibt ein vorheriges Beschäftigungsdetail, und der Beschäftigungstyp oder die Beschäftigungskategorie ändert sich.</li><li>Aktualisierung eines Beschäftigungsdatensatzes und ein anderer Typ von Arbeitskraft wird festgelegt.</li><li>Aktualisierung eines Datensatzes zur Beschäftigung und Angabe eines anderen Beschäftigungstyps oder einer anderen Kategorie.</li></ul> |
-| **Neue Berechtigungsüberschreibung (nicht US-spezifisch)** | **Erweiterte Personalverwaltung > Vorteile > Pläne > Vorteile > Berechtigungsregelüberschreibung** | Lebensereignisverarbeitung verwenden<br>Das Erstellen einer neuen Leistungsplan-Berechtigungsüberschreibung für eine Arbeitskraft löst dieses Lebensereignis aus.<br>BenefitEligibilityRuleOverride.ValidFrom. |
-| **Änderung der Berechtigungsregelüberschreibung (nicht US-spezifisch)** | **Erweiterte Personalverwaltung > Vorteile > Pläne > Vorteile > Berechtigungsregelüberschreibung** | Das Aktualisieren von **Gültig von** oder **Gültig bis** bei einer Leistungsplan-Berechtigungsüberschreibung löst dieses Lebensereignis aus. |
-| **Ablauf der Berechtigungsregelüberschreibung (nicht US-spezifisch)** | Leistungsverwaltung > Verarbeitung von Lebensereignissen  | Diese Lebensereignisse werden von **Life Event Change Processing** erstellt. Der Prozess analysiert den gewählten Zeitraum und die juristische Entität und findet die zugehörigen Leistungsplan-Zulassungen. Es erstellt Lebensereignisse, wenn die Überschreibungen abgelaufen sind. |
-| **Neuer Vorteilsplan (nicht US-spezifisch)** | **Erweiterte Personalverwaltung > Vorteile > Pläne > Neu** | Berechtigungsoptionen werden zu einem aktuellen Plan hinzugefügt. Ein neuer Plan mit Berechtigungsoptionen im Anhang wurde hinzugefügt.</br></br>HR-Mitarbeiter sollten in diesem Fall die Verarbeitung der Lebensereignisberechtigung ausführen. |
-| **Änderung der Berechtigungsregel (nicht US-spezifisch)** | **Leistungsmanagement > Anspruchsregeln** | Verarbeitung von Lebensereignisberechtigungen verwenden. Protokolliert, wenn **BenefitEligibilityRule** Datensätze die folgenden Werte geändert haben: **UseEmplCategory**, **UseEmplStatus**, oder **UseEmplType**. Aktualisiert nur Lebensereignistransaktionen, die bereits für eine geänderte Regel oder ein geändertes Berechtigungskriterium vorhanden sind. |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+| Beschäftigungsänderung für Lebenspartner | Arbeitskraft > Profil > Persönliche Informationen > Persönliche Kontakte > Unterhaltsberechtigtendetails > Eingestellt. | <ul><li>Datensatz mit Unterhaltsberechtigtendetails wurde erstellt und Kontrollkästchen **Persönlicher Kontakt eingestellt** = Ja</li><li>Kontrollkästchen **Persönlicher Kontakt eingestellt** wurde geändert (Ja oder Nein)</li></ul> |
+| **Beurlaubung (Ehepartner/Lebenspartner)** | Arbeitskraft > Profil > Persönliche Informationen > Persönliche Kontakte > Unterhaltsberechtigtendetails > Beurlaubung | <ul><li>Datensatz mit Unterhaltsberechtigtendetails wurde erstellt und **EhrLOAEffectiveDate** wurde ausgefüllt</li><li>**personPrivateDetails.EhrIsLOA** wurde geändert (Ja oder Nein)</li><li>**personPrivateDetails.EhrLOAEffectiveDate** wurde geändert</li></ul> |
+| **Änderung der Abdeckung (Position)** | <ul><li>Arbeitskraft > Positionszuweisung > Positionszuweisungen der Arbeitskraft</li><li>Positionen > Positionen</li></ul> | <ul><li>Zur Position in den Arbeitskraftpositionszuweisungsdatensätzen wechseln</li><li>Arbeitskraftzuweisung in der Position ändern</li></ul> |
+| **Krankenversicherung (Mitarbeiter/Unterhaltsberechtigter)** | Arbeitskraft > Profil > Persönliche Informationen > Persönliche Kontakte > Unterhaltsberechtigtendetails > Gültigkeitsdatum Krankenversicherung | Wird nicht automatisch ausgelöst, wenn ein persönlicher Kontakt ein Gültigkeitsdatum eingibt. |
+| **Gerichtlich angeordnete Unterstützung** | Arbeitskraft > Profil > Persönliche Informationen > Persönliche Kontakte > Unterhaltsberechtigter > Durch Gericht angeordnete Unterstützung (QMSCO/QDRO) und Gültigkeitsdaten | Löst keine automatischen Aktualisierungen aus. Dies hat keinen Einfluss auf die Berechtigung. Es zeichnet ein Lebensereignis auf. |
+| **Verstorben** | Arbeitskraft > Profil > Persönliche Informationen > Todestag | Ein Todestag wird eingegeben |
+| **Versicherungsnachweis** | <ul><li>Arbeitskraft > Arbeitskraft > Versionen > Beschäftigungshistorie > Datumsmanager > Vorteilsdetails</li><li> Arbeitskraft > Beschäftigung > Vorteilsdetails > Überprüfungsdatum</li></ul> | <ul><li>Eine Arbeitskraft gibt ein Überprüfungsdatum ein</li><li>Eine Arbeitskraft setzt das Feld „EvidenceOfInsurability“ auf **Ja**</li></ul> |
+| **Begünstigter** | Arbeitskraft > Profil > Persönliche Informationen > Persönliche Kontakte | Ein persönlicher Kontakt wird hinzugefügt und die Felder **Begünstigter** und **Gültigkeitsdatum** werden ausgefüllt. Der persönliche Kontakt muss einer der folgenden Typen sein: **Kind**, **Ehepartner**, **Lebenspartner**, **Geschwister**, **Familienkontakt**, **Sonstiger Kontakt**, **Elternteil**, **Begünstigter – Vermögen**, **Begünstigter – Organisation** oder **Begünstigter – Treuhänderschaft**. |
+| **Mitarbeiter-Krankenversicherung** | Arbeitskraft > Arbeitskraft > Versionen > Beschäftigungshistorie > Datumsmanager > Vorteilsdetails | <ul><li>**EhrMedicareEligibilityDate** wurde geändert</li><li>**MedicareEligibile** ist eingestellt auf **Ja**</li></ul> |
+| **Geburtstag** | Arbeitskraft > Profil > Persönliche Informationen > Persönliche Kontakte > Unterhaltsberechtigtendetails > Geburtsdatum | Ein Geburtsdatum wird hinzugefügt oder aktualisiert (nicht nach der Verarbeitung von Lebensereignisänderungen). Beispiel: Wenn in den **Berechtigungsoptionen für persönliche Kontakte** für ein Kind unter Einstellung > Vorteile > Berechtigungsoptionen für persönliche Kontakte das Alter auf 26 festgelegt wurde und ein HR-Mitarbeiter nach dem 26. Geburtstag des Unterhaltsberechtigten die Verarbeitung von Lebensereignisänderungen ausführt, wird eine Meldung angezeigt, dass der Unterhaltsberechtigte nicht mehr abdeckungsberechtigt ist. |
+| **Änderung der Arbeitskraftberechtigung (nicht US-spezifisch)** | <ul><li>Arbeitskraft > Beschäftigung</li><li>Arbeitskraft > Arbeitskraft > Versionen > Beschäftigungshistorie</li></ul> | <ul><li>Mitarbeitertyp, Beschäftigungskategorie oder die fünf benutzerdefinierbaren Berechtigungsfelder werden geändert</li><li>**HcmEmploymentDetail.EhrEmploymentType** wurde geändert (nur verarbeitet für *geänderte* Beschäftigungsdetaildatensätze, nicht verarbeitet für *neue* Beschäftigungsdatensätze wie Wiedereinstellung und Kündigung)</li></ul> |
+| **Neue Berechtigungsüberschreibung (nicht US-spezifisch)** | Erweiterte Personalverwaltung > Vorteile > Pläne > Vorteile > Berechtigungsregelüberschreibung | Lebensereignisverarbeitung verwenden | EhrBenefitEligibilityRuleOverride.ValidFrom |
+| **Änderung der Berechtigungsregelüberschreibung (nicht US-spezifisch)** | Erweiterte Personalverwaltung > Vorteile > Pläne > Vorteile > Berechtigungsregelüberschreibung | Lebensereignisverarbeitung verwenden (erfasst nur Änderungen der Felder **Gültig ab** und **Gültig bis** in „Berechtigungsregeln überschreiben“) |
+| **Ablauf der Berechtigungsregelüberschreibung (nicht US-spezifisch)** | Erweiterte Personalverwaltung > Vorteile > Pläne > Vorteile > Berechtigungsregelüberschreibung | Verarbeitung von Lebensereignisänderungen verwenden. Wenn Sie beispielsweise das Ablaufdatum für die Berechtigungsregelüberschreibung eines Plans auf heute um 17:00 Uhr setzen, wird nach 17:00 Uhr des heutigen oder an allen folgenden Tagen bei der Verarbeitung von Lebensereignisänderungen eine Meldung mit dem Hinweis angezeigt, dass die Berechtigungsregelüberschreibung nun abgelaufen ist. |
+| **Neuer Vorteilsplan (nicht US-spezifisch)** | Erweiterte Personalverwaltung > Vorteile > Pläne > Neu | <ul><li>Berechtigungsoptionen werden zu einem aktuellen Plan hinzugefügt</li><li>Ein neuer Plan mit Berechtigungsoptionen wurde hinzugefügt</li></ul></br></br>HR-Mitarbeiter sollten in diesem Fall die Verarbeitung der Lebensereignisberechtigung ausführen. |
+| **Änderung der Berechtigungsregel (nicht US-spezifisch)** | Erweiterte Personalverwaltung > Vorteile > Regeln/Optionen > Berechtigungsregeln | Verarbeitung von Lebensereignisberechtigungen verwenden. Wird protokolliert, wenn bei den **EhrBenefitEligibilityRule**-Datensätzen die folgenden Werte geändert werden: **UseEmplCategory**, **UseEmplStatus** oder **UseEmplType**. Aktualisiert nur Lebensereignistransaktionen, die bereits für eine geänderte Regel oder ein geändertes Berechtigungskriterium vorhanden sind. |

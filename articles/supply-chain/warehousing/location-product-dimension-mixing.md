@@ -2,23 +2,26 @@
 title: Lagerplatz-Produktdimensionsmischung
 description: Dieses Thema enthält Informationen zur Lagerplatz-Produktdimensionsmischung. Diese Lagerplatzprofilfunktion hilft bei der Verbesserung der Standortverwaltung, wenn Produktvarianten oder Produkte mit Dimensionen verwendet werden, z. B. in der Modebranche. Hier können Sie entscheiden, ob Konfigurationen, Farben, Stile und Größen für ein bestimmtes Lagerplatzprofil gemischt werden können oder ob nur eine dieser Dimensionen oder eine Kombination davon an demselben Lagerplatz platziert werden kann.
 author: Mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 20085c51230d3ceca46c5119fecbc3cf3291ecd4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: 73519f3fe79d3d7d917d3044255f735640b8ccfd
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578559"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429026"
 ---
 # <a name="location-product-dimension-mixing"></a>Lagerplatz-Produktdimensionsmischung
 
@@ -204,9 +207,9 @@ Sie erstellen eine Bestellung mit drei Positionen: zwei Positionen für dieselbe
 
 1. Wählen Sie **Speichern** aus.
 
-### <a name="receive-purchase-order-lines-in-the-warehouse-management-mobile-app"></a>Bestellpositionen in der Warehouse Management Mobile App erhalten
+### <a name="receive-purchase-order-lines-in-the-warehouse-app"></a>Bestellpositionen in der Warehouse-App erhalten
 
-1. Melden Sie sich bei der Warehouse Management Mobile App als Benutzer an, der für den Lagerort *24* aktiviert ist.
+1. Melden Sie sich bei der Warehouse-App als Benutzer an, der für den Lagerort *24* aktiviert ist.
 1. Wählen Sie das Menü **Eingehend**.
 1. Wählen Sie **PO-Positionsempfang**.
 1. Wählen Sie das Feld **PONUM**, und geben Sie dann die Bestellnummer ein.
@@ -236,5 +239,3 @@ Sie erstellen eine Bestellung mit drei Positionen: zwei Positionen für dieselbe
 
 > [!TIP]
 > Sie können dieses Szenario wiederholen, diesmal jedoch **Größe** - *Nein* im Inforegister **Produktdimensionsmischung zulassen** in den **Lagerplatzprofilen** *BULK* festlegen, sodass keine der Produktdimensionen gemischt werden kann. In diesem Fall wird bei Erhalt der Bestellung jede Produktvariante an einen neuen Lagerplatz verschoben.
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

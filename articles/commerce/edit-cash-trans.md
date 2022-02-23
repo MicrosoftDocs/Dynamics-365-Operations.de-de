@@ -1,13 +1,16 @@
 ---
 title: Abholungs- und Bargeldverwaltungstransaktionen bearbeiten und prüfen
-description: In diesem Thema wird beschrieben, wie Abholungs- und Zahlungsmanagementtransaktionen in Microsoft Dynamics 365 Commerce bearbeitet und überwacht werden.
+description: In diesem Thema wird beschrieben, wie Sie Abholungs- und Bargeldverwaltungstransaktionen in Microsoft Dynamics 365 Commerce bearbeiten und prüfen.
 author: josaw1
+manager: AnnBe
 ms.date: 11/04/2020
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -15,22 +18,22 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 85c4bd4c03b6ac09f2226d1767deabde1879f869e4b7c4d45e4d4c2a1d8effb3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 15d23bfd591558e7330a273065429256c2e17d64
+ms.sourcegitcommit: ce51ff2b6099c75dceb99de6dea9d53baf99772d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765337"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "4459122"
 ---
 # <a name="edit-and-audit-cash-and-carry-and-cash-management-transactions"></a>Abholungs- und Bargeldverwaltungstransaktionen bearbeiten und prüfen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Abholungs- und Zahlungsmanagementtransaktionen in Microsoft Dynamics 365 Commerce bearbeitet und überwacht werden.
+In diesem Thema wird beschrieben, wie Sie Abholungs- und Bargeldverwaltungstransaktionen in Microsoft Dynamics 365 Commerce bearbeiten und prüfen.
 
 ## <a name="overview"></a>Übersicht
 
-Dynamics 365 Commerce-Kunden verwenden sowohl eine Erstanbieter-POS-Anwendung (Point-of-Sale) als auch Drittanbieter-POS-Anwendungen. Mit der POS-Anwendung von Microsoft werden Shoptransaktionen über einen Stapelverarbeitungsvorgang aus den Kanälen in die Commerce-Zentralverwaltung geholt. Bei Anwendungen von Drittanbietern werden Transaktionen über die Integration in die Commerce-Zentralverwaltung geholt. In beiden Fällen muss nach dem Abrufen von Transaktionen in die Commerce-Zentralverwaltung eine Konsistenzprüfung durchgeführt werden. Dieser Prozess führt mehrere Überprüfungen für die Transaktionen aus, wobei nur Transaktionen, die erfolgreich validiert wurden, in die Anweisung geholt werden, damit sie in der Commerce-Zentralverwaltung gebucht werden können.
+Dynamics 365 Commerce-Kunden nutzen sowohl Verkaufsstellenanwendungen von Microsoft als auch von Drittanbietern. Mit der POS-Anwendung von Microsoft werden Shoptransaktionen über einen Stapelverarbeitungsvorgang aus den Kanälen in die Commerce-Zentralverwaltung geholt. Bei Anwendungen von Drittanbietern werden Transaktionen über die Integration in die Commerce-Zentralverwaltung geholt. In beiden Fällen muss nach dem Abrufen von Transaktionen in die Commerce-Zentralverwaltung eine Konsistenzprüfung durchgeführt werden. Dieser Prozess führt mehrere Überprüfungen für die Transaktionen aus, wobei nur Transaktionen, die erfolgreich validiert wurden, in die Anweisung geholt werden, damit sie in der Commerce-Zentralverwaltung gebucht werden können.
 
 Commerce-Transaktionen können aus verschiedenen Gründen die Prüfung nicht bestehen. Ein Fehler im Integrationscode oder in der POS-Anwendung kann zu inkonsistenten Daten führen. Alternativ kann ein Benutzerfehler zu inkonsistenten Daten führen. Beispielsweise löscht ein Benutzer ein Produkt, nachdem es mit dem Kanal synchronisiert wurde, oder ein Benutzer schließt einen Finanzzeitraum, ohne Transaktionen für diesen Zeitraum zu buchen. Obwohl diese Transaktionen markiert und von den Aufstellungen ausgeschlossen werden, können sie den laufenden Prozess der täglichen Buchung von Umsätzen im Rechnungswesen eines Kunden stören. In Commerce können Sie die Transaktionen bearbeiten, die die Prüfung nicht bestehen. Gleichzeitig werden alle Änderungen geprüft.
 
@@ -118,6 +121,3 @@ Führen Sie die folgenden Schritte aus, um Transaktionen, die nicht mit einer An
 [Excel-Arbeitsmappe zum Bearbeiten von Einzelhandelstransaktionen erstellen](create-excel-edit.md)
 
 [Einer Excel-Arbeitsmappe zum Bearbeiten von Einzelhandelstransaktionen Felder hinzufügen](add-fields-excel.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

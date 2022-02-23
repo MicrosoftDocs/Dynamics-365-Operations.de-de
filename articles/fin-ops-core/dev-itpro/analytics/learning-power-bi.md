@@ -2,9 +2,11 @@
 title: Power BI-Inhalt zur Weiterbildung
 description: In diesem Thema wird der Power BI-Inhalt zur Weiterbildung beschrieben.
 author: jcart1106
+manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6236868dca26be8cf54ad3cf73e846f2e689af8635e212c493b65a5d1aaa62ed
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 46b7a442470d1fe78ebc5c9d5a0c6e155c0d9918
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742337"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685248"
 ---
 # <a name="learning-power-bi-content"></a>Power BI-Inhalt zur Weiterbildung
 
@@ -60,6 +62,3 @@ Die folgenden Daten werden verwendet, um die Berichte im Power BI-Inhalt zur **W
 | Position         | Position, Titel und FTE                  | Kursagenda, Kursteilnehmer |
 | Mitarbeitername    | Vorname, Nachname, vollständiger Name                             | Kursteilnehmer |
 | Mitarbeitertitel   | Titel- und Dienstalter                                         | Kursteilnehmer |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

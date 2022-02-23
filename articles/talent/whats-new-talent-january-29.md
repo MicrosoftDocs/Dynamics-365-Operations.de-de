@@ -41,6 +41,3 @@ Es wurden neue Urlaubs- und Abwesenheitsoptionen (**Personalparameter**) hinzuge
 
 ### <a name="worker-hire-actions-are-stuck-in-workflow-complete-state"></a>Aktionen zur Einstellung von Arbeitnehmern sind im Zustand "Workflow abgeschlossen" stecken geblieben.
 Es wurden Änderungen vorgenommen, um ein Problem zu beheben, bei dem eine kleine Anzahl von Workflows mit dem Status "Workflow abgeschlossen" beendet wurde. Neue Workflows sollten nun nach Beendigung des Workflows in den Zustand "Abgeschlossen" übergehen. Alle Workflows in einem abgeschlossenen Workflow-Status werden in einen Fehlerstatus überführt, um bei Bedarf eine Aktualisierung oder Entfernung zu ermöglichen. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

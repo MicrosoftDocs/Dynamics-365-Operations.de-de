@@ -2,22 +2,25 @@
 title: Exemplarische Vorgehensweise für die Funktionen der Verwaltung für technische Änderung
 description: Dieses Thema bietet eine exemplarische Vorgehensweise, die zeigt, wie Sie mit der Verwaltung für technische Änderung arbeiten.
 author: t-benebo
+manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4c1c67559a8f2e9d0abb512f4231aea495d1957c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: b6270bbb6780786ed4535ca2987ed44448bd81ad
+ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573992"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4429163"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Exemplarische Vorgehensweise für die Funktionen der Verwaltung für technische Änderung
 
@@ -57,7 +60,7 @@ Eine Engineering-Organisation besitzt die Engineering-Daten und ist für das Pro
     - **Engineering-Organisation:** *DEMF*
     - **Organisationsname:** *Contoso Entertainment System Germany*
 
-    ![Hinzufügen einer technischen Organisation.](media/engineering-org.png "Hinzufügen einer Engineering-Organisation")
+    ![Hinzufügen einer technischen Organisation](media/engineering-org.png "Hinzufügen einer Engineering-Organisation")
 
 ### <a name="set-up-the-version-product-dimension-group"></a>Festlegen der Produktdimensionsgruppe der Version
 
@@ -67,7 +70,7 @@ Eine Engineering-Organisation besitzt die Engineering-Daten und ist für das Pro
 1. Wählen Sie **Speichern**, um die neue Dimension zu speichern und Werte in das **Produktdimensionen** Inforegister zu laden.
 1. Legen Sie auf der Inforegisterkarte **Produktdimensionen** die **Version** als aktive Produktdimension fest.
 
-    ![Hinzufügen einer Gruppe von Produktdimensionen.](media/product-dimension-groups.png "Hinzufügen einer Produktdimensionsgruppe")
+    ![Hinzufügen einer Gruppe von Produktdimensionen](media/product-dimension-groups.png "Hinzufügen einer Produktdimensionsgruppe")
 
 ### <a name="set-up-product-lifecycle-states"></a>Festlegen von Produktlebenszyklusstatus
 
@@ -82,7 +85,7 @@ Da ein technisches Produkt seinen Lebenszyklus durchläuft, ist es wichtig, dass
 1. Wählen Sie **Speichern**, um den neuen Status des Lebenszyklus zu speichern und die Werte in das Inforegister **Aktivierte Geschäftsprozesse** zu laden.
 1. Wählen Sie auf der Registerkarte **Aktivierte Geschäftsprozesse** die Geschäftsprozesse aus, die verfügbar sein sollen. Für dieses Beispiel lassen Sie das Feld **Richtlinie** für alle Geschäftsprozesse auf *Aktiviert* festgelegt.
 
-    ![Geschäftsprozesse für einen Status des Lebenszyklus aktivieren.](media/product-lifecycle-states-1.png "Aktivieren von Geschäftsprozessen für einen Status im Lebenszyklus")
+    ![Geschäftsprozesse für einen Status des Lebenszyklus aktivieren](media/product-lifecycle-states-1.png "Aktivieren von Geschäftsprozessen für einen Status im Lebenszyklus")
 
 1. Wählen Sie **Neu**, um einen weiteren Lebenszyklus-Status hinzuzufügen, und legen Sie die folgenden Werte dafür fest:
 
@@ -92,7 +95,7 @@ Da ein technisches Produkt seinen Lebenszyklus durchläuft, ist es wichtig, dass
 1. Wählen Sie **Speichern**, um den neuen Status des Lebenszyklus zu speichern und die Werte in das Inforegister **Aktivierte Geschäftsprozesse** zu laden.
 1. Wählen Sie auf der Registerkarte **Aktivierte Geschäftsprozesse** die Geschäftsprozesse aus, die verfügbar sein sollen. Für dieses Beispiel legen Sie das Feld **Richtlinie** auf *Aktiviert mit Warnung* für alle Geschäftsprozesse fest.
 
-    ![Aktivieren (mit Warnung) von Geschäftsprozessen für einen Lebenszyklus-Status.](media/product-lifecycle-states-2.png "Aktivieren (mit Warnungen) von Geschäftsprozessen für einen Lebenszyklusstatus")
+    ![Aktivieren (mit Warnung) von Geschäftsprozessen für einen Lebenszyklus-Status](media/product-lifecycle-states-2.png "Aktivieren (mit Warnungen) von Geschäftsprozessen für einen Lebenszyklusstatus")
 
 ### <a name="set-up-a-version-number-rule"></a>Festlegen einer Versionsnummernregel
 
@@ -103,7 +106,7 @@ Da ein technisches Produkt seinen Lebenszyklus durchläuft, ist es wichtig, dass
     - **Nummernregel:** *Auto*
     - **Format:** *V-\#\#*
 
-    ![Regel zur Produktversionsnummer hinzufügen.](media/version-number-rule.png "Hinzufügen einer Produktversionsnummer-Regel")
+    ![Regel zur Produktversionsnummer hinzufügen](media/version-number-rule.png "Hinzufügen einer Produktversionsnummer-Regel")
 
 ### <a name="set-up-a-product-release-policy"></a>Festlegen einer Produktfreigabe-Richtlinie
 
@@ -135,7 +138,7 @@ Da ein technisches Produkt seinen Lebenszyklus durchläuft, ist es wichtig, dass
     - **Freigabe Arbeitsplan kopieren:** Aktivieren Sie dieses Kontrollkästchen.
     - **Aktivierung des Arbeitsplans kopieren:** Aktivieren Sie dieses Kontrollkästchen.
 
-    ![Hinzufügen einer Richtlinie zur Produktfreigabe.](media/product-release-policy.png "Hinzufügen einer Richtlinie für die Produktfreigabe")
+    ![Hinzufügen einer Richtlinie zur Produktfreigabe](media/product-release-policy.png "Hinzufügen einer Richtlinie für die Produktfreigabe")
 
 ### <a name="set-up-an-engineering-product-category"></a>Festlegen einer Engineering-Produktkategorie 
 
@@ -160,7 +163,7 @@ Engineering-Produktkategorien bilden die Grundlage für das Erstellen von Engine
 1. Legen Sie auf dem Inforegister **Freigaberichtlinie** das Feld **Produktfreigaberichtlinie** auf *Komponenten* fest.
 1. Wählen Sie **Speichern** aus.
 
-    ![Hinzufügen einer technischen Produktkategorie.](media/product-category-details.png "Hinzufügen einer technischen Produktkategorie")
+    ![Hinzufügen einer technischen Produktkategorie](media/product-category-details.png "Hinzufügen einer technischen Produktkategorie")
 
 ### <a name="set-up-product-acceptance-conditions"></a>Produktabnahmebedingungen festlegen
 
@@ -168,7 +171,7 @@ Engineering-Produktkategorien bilden die Grundlage für das Erstellen von Engine
 1. Gehen Sie zu **Verwaltung für technische Änderung &gt; Einrichten &gt; Parameter der Verwaltung für technische Änderung**.
 1. Legen Sie auf der Registerkarte **Freigabesteuerung** im Abschnitt **Produktabnahme** das Feld **Produktabnahme** auf *Manuell* fest.
 
-    ![Produktabnahmebedingungen festlegen.](media/engineering-change-management-parameters.png "Einrichten von Produktannahmebedingungen")
+    ![Produktabnahmebedingungen festlegen](media/engineering-change-management-parameters.png "Einrichten von Produktannahmebedingungen")
 
 ## <a name="create-a-new-engineering-product"></a>Ein neues Engineering-Produkt erstellen
 
@@ -177,7 +180,7 @@ Ein Engineering-Produkt ist ein Produkt, das über die Verwaltung für technisch
 1. Stellen Sie sicher, dass Sie sich in der rechtlichen Entität Ihrer Engineering-Organisation befinden (*DEMF* für dieses Beispiel). Verwenden Sie bei Bedarf die Firmenauswahl auf der rechten Seite der Navigationsleiste.
 1. Öffnen Sie die Seite **Freigegebene Produkte**, indem Sie einen der folgenden Schritte ausführen:
 
-    - Wechseln Sie zu **Produktinformationsverwaltung &gt; Produkte &gt; Freigegebene Produkte**.
+    - Wechseln Sie zu **Produktinformationsverwaltung &gt; Produkte &gt;Freigegebene Produkte**.
     - Gehen Sie zu **Verwaltung für technische Änderung &gt; Allgemein &gt; Freigegebene Produkte**.
 
 1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Produkt** in der Gruppe **Neu** die Option **Engineering-Produkt**.
@@ -187,23 +190,23 @@ Ein Engineering-Produkt ist ein Produkt, das über die Verwaltung für technisch
     - **Produktnummer:** *Z0001*
     - **Produktname:** *Lautsprecherset*
 
-    ![Ein Engineering-Produkt hinzufügen.](media/new-product-dialog.png "Hinzufügen eines technischen Produkts")
+    ![Ein Engineering-Produkt hinzufügen](media/new-product-dialog.png "Hinzufügen eines technischen Produkts")
 
     Beachten Sie, dass das Feld **Version** automatisch festgelegt wird, indem die Regel für die Produktversionsnummer verwendet wird, die Sie zuvor eingerichtet haben.
 
 1. Wählen Sie **OK** aus, um das Produkt zu erstellen und das Dialogfeld zu schließen.
 1. Die Detailseite für das neue Produkt wird geöffnet. Beachten Sie, dass die Werte für einige Felder bereits ausgefüllt sind, z. B. **Lagerungsdimensionsgruppe**, **Verfolgungsdimensionsgruppe** und/oder **Elementmodellgruppe**. Diese Felder wurden automatisch festgelegt, weil das Produkt in der rechtlichen Entität *DEMF* freigegeben wird und die Produktfreigabe-Richtlinie *Komponenten* verwendet, die mit der technischen Produktkategorie *Komponenten* verbunden ist. Da Sie zuvor das Element *D0006* als Vorlage verwendet haben, um eine Zeile für die juristische Entität *DEMF* festzulegen, wurden die ausgefüllten Werte aus dem Element *D0006* übernommen.
 
-    ![Details für freigegebene Produkte.](media/product-details.png "Details für freigegebene Produkte")
+    ![Details für freigegebene Produkte](media/product-details.png "Details für freigegebene Produkte")
 
 1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Entwickler** in der Gruppe **Verwaltung für technische Änderung** die Option **Entwicklungsversionen**, um die Versionen des Produkts anzuzeigen.
 
-    ![Entwicklungsversionen.](media/engineering-versions-list.png "Entwicklungsversionen")
+    ![Entwicklungsversionen](media/engineering-versions-list.png "Entwicklungsversionen")
 
 1. Auf der Seite **Engineering-Versionen** stellen Sie fest, dass es nur eine Version für das Produkt gibt, und diese ist aktiv.
 1. Wählen Sie die Version aus, um ihre Details anzuzeigen.
 
-    ![Engineering-Versionsdetails.](media/engineering-version-details.png "Details zur technischen Version")
+    ![Engineering-Versionsdetails](media/engineering-version-details.png "Details zur technischen Version")
 
 1. Wählen Sie auf der Seite **Engineering-Version** auf dem Inforegister **Stückliste** die Option **Stückliste erstellen**.
 1. Legen Sie im Dialogfeld **Stückliste erstellen** die folgenden Werte fest:
@@ -212,25 +215,25 @@ Ein Engineering-Produkt ist ein Produkt, das über die Verwaltung für technisch
     - **Name:** Lautsprechersatz
     - **Standort:** 1
 
-    ![Anlegen einer Stückliste.](media/create-bom.png "Erzeugen einer Stückliste")
+    ![Anlegen einer Stückliste](media/create-bom.png "Erzeugen einer Stückliste")
 
 1. Wählen Sie **OK**, um die Stückliste hinzuzufügen, und schließen Sie das Dialogfeld.
 1. Wählen Sie auf dem Inforegister **Stückliste** die Option **Stückliste**.
 1. Fügen Sie auf der Seite **Stückliste** auf dem Inforegister **Stücklistenzeilen** drei Zeilen hinzu, jeweils eine für die Elementnummern *D0001*, *D0003* und *D0006*.
 
-    ![Stücklistenzeilen hinzufügen.](media/bom.png "Hinzufügen von Stücklistenzeilen")
+    ![Stücklistenzeilen hinzufügen](media/bom.png "Hinzufügen von Stücklistenzeilen")
 
 1. Wählen Sie **Speichern** aus.
 1. Schließen Sie die Seite.
 1. Wählen Sie auf der Seite **Konstruktionsversion** auf dem Inforegister **Stückliste** die Option **Freigeben**.
 1. Im angezeigten Dialogfeld wählen Sie **OK** aus.
 
-    ![Stückliste freigeben.](media/approve-dialog.png "Freigabe der Stückliste")
+    ![Stückliste freigeben](media/approve-dialog.png "Freigabe der Stückliste")
 
 1. Wählen Sie auf der Seite **Engineering-Version** auf der Registerkarte **Stückliste** **Aktivieren**.
 1. Beachten Sie, dass die Kontrollkästchen **Aktiv** und **Genehmigt** für die Stückliste aktiviert sind.
 
-    ![Aktive und genehmigte Stückliste.](media/approved-bom.png "Aktive und freigegebene Stückliste")
+    ![Aktive und genehmigte Stückliste](media/approved-bom.png "Aktive und freigegebene Stückliste")
 
 1. Schließen Sie die Seite.
 
@@ -239,30 +242,30 @@ Ein Engineering-Produkt ist ein Produkt, das über die Verwaltung für technisch
 Das Produkt wurde nun von der Konstruktionsabteilung entworfen. In diesem Beispiel ist das Produkt ein Prototyp, den das Engineering für einen Kunden entworfen hat. Da der Kunde ein Kunde der juristischen Entität *USMF* ist, muss das Produkt für diese juristische Entität freigegeben werden.
 
 1. Halten Sie die juristische Entität auf *DEMF* festgelegt. (Verwenden Sie bei Bedarf den Firmenpicker auf der rechten Seite der Navigationsleiste).
-1. Wechseln Sie zu **Produktinformationsverwaltung &gt; Produkte &gt; Freigegebene Produkte**.
+1. Wechseln Sie zu **Produktinformationsverwaltung &gt; Produkte &gt;Freigegebene Produkte**.
 1. Wählen Sie das Produkt *Z0001*.
 1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Produkt** in der Gruppe **Pflegen** die Option **Produktstruktur freigeben**, um den Assistenten **Produkte freigeben** zu öffnen.
 1. Aktivieren Sie auf der Seite **Auszugebende Engineering-Produkte auswählen** das Kontrollkästchen **Auswählen** für das Produkt *Z0001*.
 
-    ![Auswahl der freizugebenden Engineering-Produkte.](media/select-eng-product-to-release.png "Auswählen der freizugebenden technischen Produkte")
+    ![Auswahl der freizugebenden Engineering-Produkte](media/select-eng-product-to-release.png "Auswählen der freizugebenden technischen Produkte")
 
 1. Wählen Sie **Details zur Freigabe**.
 1. Die Seite **Produktfreigabedetails** wird angezeigt, auf der Sie die Details des freizugebenden Produkts und seine Produktstruktur überprüfen können. Beachten Sie, dass die Option **Stückliste senden** auf *Ja* festgelegt ist. Daher werden sowohl das Produkt *Z0001* als auch alle seine untergeordneten Elemente aus der Stückliste freigegeben.
 
     Sie können ein beliebiges untergeordnetes Element im linken Fensterbereich auswählen, um seine Details zu überprüfen. Wenn ein untergeordnetes Element eine Stückliste hat, können Sie auch auswählen, dass die Stückliste dieses untergeordneten Elements freigegeben wird.
 
-    ![Details zur Produktfreigabe anzeigen.](media/product-release-details.png "Prüfen der Produktfreigabedetails")
+    ![Details zur Produktfreigabe anzeigen](media/product-release-details.png "Prüfen der Produktfreigabedetails")
 
 1. Schließen Sie die Seite, um zum Assistenten **Produkte freigeben** zurückzukehren.
 1. Wählen Sie **Weiter**, um die Seite **Produkte zur Freigabe auswählen** zu öffnen. Wenn Sie Standardprodukte (ohne Engineering) ausgewählt haben, werden diese auf dieser Seite angezeigt. Beachten Sie, dass, wenn Sie ein Standardprodukt durch Auswahl von **Produktstruktur freigeben** freigeben, auch dessen Stückliste und Arbeitsplan freigegeben werden.
 
-    ![Auswahl der freizugebenden Standardprodukte.](media/select-std-product-to-release.png "Auswählen der freizugebenden Standardprodukte")
+    ![Auswahl der freizugebenden Standardprodukte](media/select-std-product-to-release.png "Auswählen der freizugebenden Standardprodukte")
 
 1. Wählen Sie **Weiter**, um die Seite **Auszugebende Produktvarianten auswählen** zu öffnen. Für dieses Beispiel gibt es keine Varianten.
 1. Wählen Sie **Nächste**, um die Seite **Firmen auswählen** zu öffnen.
 1. Wählen Sie die Firmen aus, für die das Produkt freigegeben werden soll. Für dieses Beispiel aktivieren Sie das Kontrollkästchen für **USMF**.
 
-    ![Auswahl der Firmen, für die die Freigabe erfolgen soll.](media/select-release-companies.png "Auswählen der freizugebenden Firmen")
+    ![Auswahl der Firmen, für die die Freigabe erfolgen soll](media/select-release-companies.png "Auswählen der freizugebenden Firmen")
 
 1. Wählen Sie **Weiter**, um die Seite **Auswahl bestätigen** zu öffnen.
 1. Wählen Sie **Fertig stellen** aus.
@@ -280,7 +283,7 @@ Gehen Sie folgendermaßen vor, um das Produkt zu prüfen und in der Firma *USMF*
 
     Auf der Seite **Offene Produktfreigaben** wird das Produkt *Z0001* angezeigt, das den Status *Anstehende Abnahme* hat.
 
-    ![Offene Produktfreigaben.](media/open-product-releases.png "Offene Produktfreigaben")
+    ![Offene Produktfreigaben](media/open-product-releases.png "Offene Produktfreigaben")
 
 1. Wählen Sie den Wert in der Spalte **Produktnummer**, um die Seite **Produktfreigabedetails** zu öffnen. Beachten Sie die folgenden Details:
 
@@ -288,7 +291,7 @@ Gehen Sie folgendermaßen vor, um das Produkt zu prüfen und in der Firma *USMF*
     - Das Inforegister **Freigabedetails** zeigt Informationen über das Produkt und die Version, die freigegeben wurde. Hier können Sie Einstellungen wie z. B. die Gültigkeitsdaten ändern.
     - Das Inforegister **Arbeitsplan** zeigt den Arbeitsplan des Produkts an. Für dieses Beispiel haben Sie jedoch keine Arbeitspläne freigegeben.
 
-    ![Produktfreigabedetails.](media/product-release-details-2.png "Produktfreigabedetails")
+    ![Produktfreigabedetails](media/product-release-details-2.png "Produktfreigabedetails")
 
 1. Wenn Sie die Informationen überprüft haben, sind Sie bereit, das Produkt anzunehmen und es auf diese Weise im Unternehmen *USMF* freizugeben. Wählen Sie im Aktivitätsbereich **Aktionen &gt; Annehmen**.
 1. Das Produkt ist nun in der Firma *USMF* freigegeben. Wechseln Sie zu **Produktinformationsverwaltung &gt; Produkte &gt; Freigegebene Produkte**. Sie sollten das Element *Z0001* sehen.
@@ -297,14 +300,14 @@ Gehen Sie folgendermaßen vor, um das Produkt zu prüfen und in der Firma *USMF*
 
 Der Stammdatenmanager für das Unternehmen *USMF* möchte sicherstellen, dass sich das Produkt im Status *Prototyp* befindet, um sicherzustellen, dass Benutzer gewarnt werden, wenn sie es versehentlich zu Vorgängen hinzufügen, an denen sie arbeiten.
 
-1. Wechseln Sie zu **Produktinformationsverwaltung &gt; Produkte &gt; Freigegebene Produkte**.
+1. Wechseln Sie zu **Produktinformationsverwaltung &gt; Produkte &gt;Freigegebene Produkte**.
 1. Wählen Sie das Produkt *Z0001*, um seine Detailseite zu öffnen. (Sie können den Filter verwenden, um das Produkt zu finden.)
 1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Entwickler** in der Gruppe **Verwaltung für technische Änderung** die Option **Entwicklungsversionen**.
 1. Wählen Sie auf der Seite **Engineering-Versionen** die Versionsnummer *V-01*, um deren Detailseite zu öffnen.
 1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Produkt** in der Gruppe **Lebenszyklusstatus** die Option **Lebenszyklusstatus ändern**.
 1. Legen Sie im Dropdown-Dialogfeld **Lebenszyklusstatus ändern** das Feld **Status** auf *Prototyp* fest und wählen Sie dann **OK**.
 
-    ![Ändern des Status im Lebenszyklus.](media/change-lifecycle-state.png "Ändern des Status des Lebenszyklus")
+    ![Ändern des Status im Lebenszyklus](media/change-lifecycle-state.png "Ändern des Status des Lebenszyklus")
 
 ## <a name="add-the-engineering-product-to-a-sales-order"></a>Hinzufügen des Engineering-Produkts zu einem Verkaufsauftrag
 
@@ -318,7 +321,7 @@ Das Produkt kann nun an einen Kunden verkauft werden. Führen Sie die folgenden 
 
     Sie erhalten eine Warnmeldung, die Sie darüber informiert, dass das Element den Status *Prototyp* hat. Da es sich bei der Meldung jedoch nur um eine Warnung handelt, wurde der Auftrag trotzdem erstellt.
 
-    ![Verkaufsauftrag für ein Engineering-Produkt.](media/sales-order-eng-product.png "Verkaufsauftrag für ein Engineering-Produkt")
+    ![Verkaufsauftrag für ein Engineering-Produkt](media/sales-order-eng-product.png "Verkaufsauftrag für ein Engineering-Produkt")
 
 ## <a name="request-changes-in-the-engineering-product"></a>Änderungsanforderung für das Engineering-Produkt
 
@@ -328,7 +331,7 @@ Das Produkt wurde an einen Kunden gesendet, aber der Kunde war nicht ganz zufrie
 1. Suchen und öffnen Sie den Verkaufsauftrag, den Sie in der vorherigen Übung erstellt haben.
 1. Wählen Sie auf dem Inforegister **Kundenauftragszeilen** die Option **Verwaltung für technische Änderung &gt; Neuer Änderungsantrag**.
 
-    ![Einen Änderungsantrag aus einem Verkaufsauftrag erstellen.](media/sales-order-eng-change-request.png "Erstellen eines Änderungsauftrags aus einem Verkaufsauftrag")
+    ![Einen Änderungsantrag aus einem Verkaufsauftrag erstellen](media/sales-order-eng-change-request.png "Erstellen eines Änderungsauftrags aus einem Verkaufsauftrag")
 
 1. Füllen Sie den Änderungsantrag aus, basierend auf den Rückmeldungen des Kunden. Legen Sie für dieses Beispiel die folgenden Werte fest:
 
@@ -341,7 +344,7 @@ Das Produkt wurde an einen Kunden gesendet, aber der Kunde war nicht ganz zufrie
 1. Wählen Sie auf dem Inforegister **Information** die Option **Neue &gt;-Notiz**, um dem Raster eine Notiz hinzuzufügen.
 1. Geben Sie im Feld **Beschreibung** für die neue Notiz an, dass das Element *D0003* aus der Stückliste gelöscht werden soll. Wenn Sie weitere Informationen für die Notiz hinzufügen müssen, können Sie Text in das Feld **Hinweise** eingeben.
 
-    ![Technische Änderungsanforderung.](media/eng-change-request.png "Technische Änderungsanforderung")
+    ![Technische Änderungsanforderung](media/eng-change-request.png "Technische Änderungsanforderung")
 
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
 1. Beachten Sie, dass das Element automatisch auf der Inforegisterkarte **Produkte** hinzugefügt wurde und dass die Quelle des Änderungsantrags (der Verkaufsauftrag) auf der Inforegisterkarte **Quelle** hinzugefügt wurde.
@@ -370,31 +373,32 @@ Der Ingenieur prüft nun die Anfrage des Kunden und erstellt einen Änderungsauf
     - **Produkt:** *Z0001*
     - **Auswirkung:** *Neue Version*
 
-    ![Anlegen eines Änderungsauftrags.](media/eng-change-order.png "Erzeugen eines Änderungsauftrags")
+    ![Anlegen eines Änderungsauftrags](media/eng-change-order.png "Erzeugen eines Änderungsauftrags")
 
 1. Beachten Sie, dass, weil Sie das Feld **Auswirkung** auf *Neue Version* festgelegt haben, das Feld **Neue Version** auf der Registerkarte **Details** des Inforegisters **Produktdetails** anzeigt, wie die neue Versionsnummer lauten wird (*V-02* für dieses Beispiel).
 
-    ![Produktdetails für einen Änderungsauftrag.](media/eng-change-order-product-details.png "Produktdetails für einen Änderungsauftrag")
+    ![Produktdetails für einen Änderungsauftrag](media/eng-change-order-product-details.png "Produktdetails für einen Änderungsauftrag")
 
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
 1. Wählen Sie im Inforegister **Produktdetails** auf der Registerkarte **Stückliste** die Option **Zeilen**, um die Stückliste für die Version *V-01* des Produkts *Z0001* zu öffnen.
 
-    ![Stücklisten-Zeilen für das Produkt.](media/eng-product-bom-lines.png "Stücklistenzeilen für Engineering-Produkte")
+    ![Stücklisten-Zeilen für das Produkt](media/eng-product-bom-lines.png "Stücklistenzeilen für Engineering-Produkte")
 
 1. Markieren Sie die Zeile für die Positionsnummer *D0003*, und wählen Sie dann im Aktivitätsbereich **Löschen**. Der Wert des Feldes **Änderungsart** für diese Zeile ändert sich in *Löschen*.
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
 
-    ![Geänderte Stücklistenzeilen für technische Produkte.](media/eng-product-bom-lines-modified.png "Geänderte Stücklistenzeilen für ein Engineering-Produkt")
+    ![Geänderte Stücklistenzeilen für technische Produkte](media/eng-product-bom-lines-modified.png "Geänderte Stücklistenzeilen für ein Engineering-Produkt")
 
 1. Schließen Sie die Seite **Stückliste**, um zur Seite **Änderungsauftrag Engineering** zurückzukehren.
 1. Beachten Sie im Inforegister **Produktdetails** auf der Registerkarte **Stückliste**, dass der Wert des Feldes **Änderungsart** für Stückliste *Z0001* jetzt *geändert* lautet.
 
-    ![Änderungsauftrag, der eine geänderte Stückliste enthält.](media/eng-change-order-changed-bom.png "Änderungsauftrag mit geänderter Stückliste")
+    ![Änderungsauftrag, der eine geänderte Stückliste enthält](media/eng-change-order-changed-bom.png "Änderungsauftrag mit geänderter Stückliste")
 
     Der Auftrag muss nun genehmigt werden, bevor die Änderungen verarbeitet werden können. Wenn die Änderungen verarbeitet werden, werden die Produkte mit den Änderungen, die im Änderungsauftrag enthalten sind, aktualisiert. Für dieses Beispiel wurde die Person, die den Änderungsauftrag erstellt, als Genehmigender festgelegt.
 
 1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Änderungsauftrag** in der Gruppe **Änderungsstatus** die Option **Genehmigen**.
 1. Wählen Sie **Verarbeiten**, um die Informationen des Produkts zu aktualisieren.
+1. Wählen Sie **Erledigt**, um den Änderungsauftrag als abgeschlossen zu markieren.
 
 ## <a name="release-the-changed-product"></a>Das geänderte Produkt freigeben
 
@@ -407,9 +411,3 @@ Das Produkt kann nun wieder für die *USMF*-Firma freigegeben und anschließend 
 1. Wählen Sie jede Firma aus, für die Sie Produkte freigeben möchten.
 1. Wählen Sie **OK**, um das Dialogfeld **Freigaben** zu schließen und zum Änderungsauftrag zurückzukehren.
 1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Änderungsauftrag** in der Gruppe **Produktfreigaben** die Option **Bearbeiten**, um die betroffenen Produkte für die ausgewählten Firmen freizugeben. Wählen Sie alternativ **Produktstruktur freigeben**, um den Freigabeprozess zu starten.
-
-## <a name="complete-the-change-order"></a>Abschließen des Änderungsauftrags
-
-Um den Änderungsauftrag als abgeschlossen zu markieren, was anzeigt, dass keine weiteren Aktionen verbleiben, wählen Sie **Erledigt** im Aktivitätsbereich.
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

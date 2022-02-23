@@ -1,10 +1,12 @@
 ---
 title: Anlagentypen
 description: In diesem Thema wird erläutert, wie Sie in Anlagetypen in der Anlageverwaltung erstellen. Außerdem werden die Elemente beschrieben, die den Anlagentypen zugeordnet werden.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectJobType, EntAssetObjectType, EntAssetObjectTypeDefaultSparePart, EntAssetObjectTypeDefaultSparePartApprove, EntAssetObjectTypeDefaultCreateCombinations, EntAssetObjectTypeDefault, EntAssetObjectTypeDefaultCopy
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fc1a8d98e9a8853e2e72bfcc7415ddb9a0a3b7758504621d6fccff00a08a36be
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 295840c12f89bc6c6a4d53023985259ac761d6b2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730370"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017416"
 ---
 # <a name="asset-types"></a>Anlagentypen
 
@@ -45,9 +47,9 @@ Zuerst richten Sie die erforderlichen Anlagentypen ein. Anschließend erstellen 
 7. Wählen Sie **Speichern**.
 8. Wählen Sie im Inforegister **Wartungsauftragstypen** die Wartungsauftragstypen aus, die mit dem Anlagentyp verknüpft sein sollen:
 
-    - Um einen Wartungsauftragstyp auszuwählen, wählen Sie ihn im Feld **Verbleibende Wartungsauftragstypen** und dann den Nach-rechts-Pfeil ![Pfeil nach rechts](media/29-setup-for-objects.png) aus, um ihn in den Abschnitt **Ausgewählte Wartungsauftragstypen** zu verschieben.
-    - Um alle verfügbaren Wartungsauftragstypen auswählen, wählen Sie die ![Alle weiterleiten](media/30-setup-for-objects.png)- Schaltfläche. Alle Wartungsauftragstypen werden aus dem Feld **Verbleibende Wartungsauftragstypen** in das Feld **ausgewählte Wartungsauftragstypen** übertragen.
-    - Um die Auswahl eines Wartungsauftragstyp aufzuheben, wählen Sie ihn im Feld **Ausgewählte Wartungsauftragstypen** und dann den Nach-links-Pfeil ![Pfeil nach links](media/31-setup-for-objects.png) aus, um ihn in das Feld **Verbleibende Wartungsauftragstypen** zu verschieben.
+    - Um einen Wartungsauftragstyp auszuwählen, wählen Sie ihn im Feld **Verbleibende Wartungsauftragstypen** aus, und wählen Sie dann die Schaltfläche mit dem Pfeil nach rechts ![Pfeil nach rechts](media/29-setup-for-objects.png), um ihn in den Bereich **Ausgewählter Wartungsauftragstyp** zu verschieben.
+    - Um alle verfügbaren Wartungsauftragstypen auswählen, wählen Sie Schaltfläche ![alle Pfeil weiter](media/30-setup-for-objects.png) aus. Alle Wartungsauftragstypen werden aus dem Feld **Verbleibende Wartungsauftragstypen** in das Feld **ausgewählte Wartungsauftragstypen** übertragen.
+    - Um die Auswahl eines Wartungsauftragstyps zu löschen, wählen Sie ihn im Feld **Ausgewählte Wartungsauftragstypen** aus, und wählen Sie dann die Schaltfläche mit dem Pfeil nach links ![Pfeil nach links](media/31-setup-for-objects.png), um ihn in den Bereich **Verbleibende Wartungsauftragstypen** zu verschieben.
 
 9. Sie können auch die Zähler auswählen, die dem Anlagentyp zugeordnet werden sollen. Auf dem Inforegister **Zähler** aktivieren Sie Ihre Auswahl, indem Sie die Methoden für Wartungsauftragstypen anwenden, die in Schritt 8 beschrieben werden. Weitere Informationen zum Einrichten von Zählern finden Sie unter [Zähler](counters.md).
 10. Sie können auch die Attributtypen auswählen, die dem Anlagentyp zugeordnet werden sollen. Auf dem Inforegister **Attributtypen** aktivieren Sie Ihre Auswahl, indem Sie die Methoden für Wartungsauftragstypen anwenden, die in Schritt 8 beschrieben werden. Um dann die bevorzugten Reihenfolge der Attributtypen zu erstellen, wählen Sie im Feld **Attributtypen ausgewählt** den Attributtyp aus, und verwenden Sie die NACH-OBEN-TASTE und die NACH-UNTEN-TASTE, um sie zu verschieben. Die Sequenz der Attributtypen wird auf Anlagen angezeigt, die diesen Anlagentyp verwenden. Weitere Informationen zu Anlagenattributen finden Sie unter [Attributtypen verwalten](../setup-for-functional-locations/specification-types.md).
@@ -94,6 +96,3 @@ Auf der Seite **Ersatzteile** können Sie neue Ersatzteile für vorhandene Kombi
 
 Um zu sehen, ob ein Ersatzteil auf der ausgewählten Position an anderer Stelle in der Anlagenverwaltung verwendet wird (beispielsweise in Verbindung mit Anlagen und Arbeitsaufträge), wählen Sie die Ersatzteilposition, und wählen Sie dann **Artikel, die verwendet wurden**, um die Seite **Artikel, die verwendet wurden** zu öffnen. 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

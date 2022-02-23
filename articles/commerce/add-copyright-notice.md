@@ -2,24 +2,27 @@
 title: Hinzufügen eines Urheberrechtshinweises
 description: In diesem Thema wird beschrieben, wie eine Urheberrechts-Meldung der E-Comerce Website hinzugefügt wird.
 author: psimolin
+manager: AnnBe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4a9a7fed4393f9c35b0bdc765fe7d0723c193f89
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 838047cac694c65047332e146a7c43ee2ae0f401
+ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964755"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4412692"
 ---
 # <a name="add-a-copyright-notice"></a>Hinzufügen eines Urheberrechtshinweises
 
@@ -60,16 +63,15 @@ Die Fußzeile, die den Urheberrechtshinweis automatisch enthält, wird im untere
 
 [Hinzufügen eines Logos](add-logo.md)
 
-[Sitedesign auswählen](select-site-theme.md)
+[Auswählen eines Sitedesigns](select-site-theme.md)
 
 [Arbeiten mit CSS-Überschreibungsdateien](css-override-files.md)
 
 [Hinzufügen eines Favicons](add-favicon.md)
 
+[Hinzufügen einer Begrüßungsnachricht](add-welcome-message.md)
+
 [Hinzufügen von Sprachen zu Ihrer Website](add-languages-to-site.md)
 
 [Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie](add-telemetry.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

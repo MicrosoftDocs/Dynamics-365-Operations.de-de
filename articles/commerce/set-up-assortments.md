@@ -2,9 +2,11 @@
 title: Einrichten von Sortimenten
 description: Dieser Artikel beschreibt, was ein Sortiment ist, und erläutert, wie Sie Sortimente in Dynamics 365 Commerce einrichten.
 author: jblucher
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailAssortmentDetails
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 31ec0079584832537431872fea61a07b58d31648cdac0f29a469bc977009622f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 32edf6534716236706847556a14b951f18ef40ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774484"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969825"
 ---
 # <a name="set-up-assortments"></a>Sortimente einrichten
 
@@ -31,7 +33,7 @@ Dieser Artikel beschreibt, was ein Sortiment ist, und erläutert, wie Sie Sortim
 
 Ein Sortiment ist eine Sammlung zugehöriger Produkte, die einem Commerce-Kanal, wie einem physischen Laden oder einem Onlineshop, zugewiesen werden. Sie verwenden Sortimente, um die Produkte zu erkennen, die in jedem Shop verfügbar sind. Ein Sortiment kann Produktgruppen enthalten. Daher werden alle Produkte, die einer bestimmten Kategorie zugeordnet sind, ins Sortiment eingeschlossen. Ein Sortiment kann außerdem bestimmte Produkte und bestimmte Varianten von Produkten enthalten. Wenn Sie ein Sortiment einrichten, können Sie Tausende von Produkten für Ihre Kanäle in beliebigen Kombinationen, die Ihre Shops erfordern, gleichzeitig zuordnen. Sie können so viele Sortimente einrichten, wie Sie benötigen. Jedes Produkt kann einem oder mehreren Sortimenten hinzugefügt werden, und jedes Sortiment kann einem oder mehreren Kanälen zugewiesen werden. Sie definieren z. B. ein Sortiment, das einen Basissatz an Produkten enthält. Alle Filialen erhalten dieses Sortiment. Sie können dann ein anderes Sortiment definieren, das nur große Sportausrüstung enthält. Nur die größeren Filialen erhalten dieses Sortiment. Das folgende Diagramm zeigt, wie Produkte Sortimenten zugewiesen werden können und wie diese Sortimente Kanälen zugewiesen werden können.
 
-![Produktsortimentbeziehungen.](./media/assortments_relationship.gif)
+![Produktsortimentbeziehungen](./media/assortments_relationship.gif)
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -52,6 +54,3 @@ Nachdem Sie die Voraussetzungen abgeschlossen haben, können Sie ein Sortiment e
 2. Wählen Sie die Kanäle oder die übergeordneten Gruppen von Kanälen aus, für die das Sortiment gilt.
 3. Fügen Sie Produktkategorien, Einzelprodukte oder Produktvarianten dem Sortiment hinzu. Sie können alle Produkte in einer bestimmten Kategorie einschließen oder Sie können bestimmte Produkte aus einer Kategorie ausschließen, die im Sortiment enthalten ist.
 4. Veröffentlichen Sie das Sortiment. Wenn Sie ein Sortiment veröffentlichen, wird der Sortimentplaner automatisch ausgeführt. Dieser Vorgang generiert die Liste der Produkte. Wenn dieser Prozess abgeschlossen ist, werden die Produkte für die Kanäle verfügbar gemacht, denen das Produktsortiment zugeordnet ist. Wenn Änderungen an einem Sortiment vorgenommen werden, das veröffentlicht wurde, oder an den Kanälen, denen das Sortiment zugeordnet ist, muss das Sortiment aktualisiert werden. Um das Sortiment zu aktualisieren wenn Änderungen vorgenommen wurden, können Sie den Sortimentplaner als Batchauftrag ausführen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

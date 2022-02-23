@@ -141,6 +141,3 @@ Um Ihre vorhandene Vorlage zu aktualisieren, führen Sie die folgenden Schritte 
     9. Wählen Sie auf der Seite **Zuordnungsaufgabe** die neue Spalte als Quelle aus, um eine neue Zuordnung für HIERARCHYTYPENAME zu erstellen.
 
         [![Zuordnung](./media/CDS-Mapping5.png)](./media/CDS-Mapping5.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

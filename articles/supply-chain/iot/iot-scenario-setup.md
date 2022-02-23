@@ -1,25 +1,28 @@
 ---
 title: Szenarioeinrichtung für IoT-Intelligenz
 description: In diesem Thema wird erläutert, wie Sie Szenarien für IoT-Intelligenz in Microsoft Dynamics 365 Supply Chain Management konfigurieren.
-author: tonyafehr
+author: robinarh
+manager: tfehr
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b8e8c65cebe64f86dcf158668e8a4f5600c158a1
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: d1deaa2130b63272da39a42315c6a1bc4b7ccb8a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782426"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428953"
 ---
 # <a name="scenario-setup-for-iot-intelligence"></a>Szenarioeinrichtung für IoT-Intelligenz
 
@@ -42,7 +45,7 @@ Das Szenario **Ausfallzeiten der Geräte** weist die Folgenden Abhängigkeiten a
 Gehen Sie folgendermaßen vor, um das Szenario zu konfigurieren.
 
 1. Melden Sie sich im Supply Chain Management an.
-2. Aktivieren Sie das IoT-Intelligenz-Funktionsflag. Weitere Informationen finden Sie unter [Funktionsverwaltung – Übersicht](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+2. Aktivieren Sie das IoT-Intelligenz-Funktionsflag. Weitere Informationen finden Sie unter [Funktionsverwaltung – Übersicht](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 3. Konfigurieren Sie die Kennzahlen. Weitere Informationen finden Sie unter [So konfigurieren Sie Kennzahlen](iot-metrics-setup.md#configure-metrics).
 4. Wechseln Sie zu **Produktionssteuerung \> Einrichtung \> IoT-Intelligenz \> Szenariovewaltung**.
 6. Wählen Sie auf der **Ausfallzeiten der Geräte**-Kachel **Konfigurieren** aus, um den Konfigurationsassistenten zu öffnen.
@@ -140,6 +143,3 @@ Um ein Szenario zu deaktivieren, führen Sie folgende Schritte aus.
 2. Wählen Sie auf der Kachel für das Szenario **Konfigurieren** aus.
 3. Wählen Sie **Weiter**, um zur letzten Assistentenseite zu wechseln.
 4. Legen Sie die Option fest, um das Szenario zu deaktivieren.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

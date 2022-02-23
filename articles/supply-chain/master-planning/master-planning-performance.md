@@ -1,14 +1,17 @@
 ---
 title: Leistungsverbesserungen der Produktprogrammplanung
 description: In diesem Thema werden die verschiedenen Optionen beschrieben, die Ihnen helfen können, die Leistung der Produktprogrammplanung zu verbessern und Probleme zu beheben.
-author: ChristianRytt
+author: t-benebo
+manager: tfehr
 ms.date: 12/18/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: fcbc732fce4120268acd774cc4d42193ba95787d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fa8426c3a1f19f8607f45e9ac4d57300abddb161
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570920"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428921"
 ---
 # <a name="improve-master-planning-performance"></a>Leistungsverbesserungen der Produktprogrammplanung
 
@@ -79,14 +82,14 @@ Sie können den Parameter **Cacheverwendung** im Abschnitt **Leistung** auf der 
 
 ### <a name="number-of-orders-in-firming-bundle"></a>Zahl der Produktionsaufträge im Anlagebündel
 
-Der Parameter **Zahl der Produktionsaufträge im Anlagebündel** gibt die Gesamtanzahl der Aufträge an, die jeweils von jedem Thread/jeder Charge ausgeführt werden. Es bewirkt eine Parallelisierung der automatischen Umwandlung.
+Der Parameter **Zahl der Produktionsaufträge im Anlagebündel** gibt die Gesamtanzahl der Aufträge an, die jeweils von jedem Thread/jeder Charge ausgeführt werden. Er verursacht Parallelisierung des automatischen Umwandlungsprozesses.
 
-Sie können den Parameter **Zahl der Produktionsaufträge im Anlagebündel** im Abschnitt **Leistung** auf der Registerkarte **Allgemein** der Seite **Parameter für Produktprogrammplanung** (**Produktprogrammplanung \> Einstellungen \>-Parameter für Produktprogrammplanung**) festlegen. Die Parallelisierung der automatischen Umwandlung basiert auf den Aufträgen, die zusammen verarbeitet werden müssen. Wenn der Parameter beispielsweise auf **50** festgelegt wird, nimmt jeder Thread oder Batchauftrag 50 Aufträge auf einmal an und verarbeitet diese zusammen. Es wird empfohlen, einen den besten Wert mithilfe einer Versuchsreihe zu bestimmen. Sie können jedoch die folgende Formel verwenden, um einen Ausgangswert zu berechnen:
+Sie können den Parameter **Zahl der Produktionsaufträge im Anlagebündel** im Abschnitt **Leistung** auf der Registerkarte **Allgemein** der Seite **Parameter für Produktprogrammplanung** (**Produktprogrammplanung \> Einstellungen \>-Parameter für Produktprogrammplanung**) festlegen. Parallelisierung des automatischen Umwandlungsprozesses basiert auf den Aufträgen, die zusammen verarbeitet werden müssen. Wenn der Parameter beispielsweise auf **50** festgelegt wird, nimmt jeder Thread oder Batchauftrag 50 Aufträge auf einmal an und verarbeitet diese zusammen. Es wird empfohlen, einen den besten Wert mithilfe einer Versuchsreihe zu bestimmen. Sie können jedoch die folgende Formel verwenden, um einen Ausgangswert zu berechnen:
 
 (Anzahl der Aufträge pro Bündel) = (Anzahl der Bedarfsartikel ÷ Anzahl der Threads)
 
 > [!NOTE]
-> Wenn Sie den Parameter **Anzahl der Aufträge im bündeln** auf **0** (Null) festlegen, findet keine Parallelisierung der automatischen Umwandlung statt. Der ganze Prozess wird in einem einzelnen Chargenauftrag ausgeführt und hat eine kumulative Ausführungszeit. Daher steigt die Ausführungszeit der Produktprogrammplanung. Aus diesem Grund sollten Sie diesen Parameter auf einen Wert über **0** (Null) festlegen.
+> Durch Festlegen des Parameters auf **Zahl der Produktionsaufträge im Anlagebündel** auf den Wert **0** (Null), wird keine Parallelisierung des automatischen Umwandlungsprozesses auftreten. Der ganze Prozess wird in einem einzelnen Chargenauftrag ausgeführt und hat eine kumulative Ausführungszeit. Daher steigt die Ausführungszeit der Produktprogrammplanung. Aus diesem Grund sollten Sie diesen Parameter auf einen Wert über **0** (Null) festlegen.
 
 ### <a name="time-fences"></a>Planungszeiträume
 
@@ -159,6 +162,3 @@ Bevor der Deckungsschritt beginnt, gibt es einen Vorerfassungsschritt, in dem El
 - **Eine wichtige Routine gleichzeitig** – Keine Produktprogrammplanung zusammen mit einer anderen wichtigen Routine ausführen.
 - **Sitzungsprotokoll überprüfen.**
 - **Filtern von Artikeln** – Verwenden Sie den Lebenszykluszustand, um Artikel aus dem Produktprogrammplanungslauf auszuschließen. (Nicht die Artikelnummern verwenden).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

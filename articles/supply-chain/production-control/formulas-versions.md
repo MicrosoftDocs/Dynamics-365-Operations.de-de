@@ -1,27 +1,30 @@
 ---
 title: Formeln und Formelversionen
 description: Dieses Thema enthält Informationen zu Formeln und Formelversionen. Eine Formel definiert die Materialien, die Substanz und die Ergebnisse eines bestimmten Prozesses in einem der Fertigungsverarbeitung. Formeln werden verwendet, um in der Fertigungsverarbeitung Produkte zu planen und zu erzeugen.
-author: johanhoffmann
+author: cvocph
+manager: tfehr
 ms.date: 09/12/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule, EcoResProductProdTypeFormulaNoActiveFormulaFormPart
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca7111811d14aaf0f6c8b814877897884e4cd76f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: c7fb37483412fdd09fe3734ddb148b050ec02951
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570272"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428637"
 ---
 # <a name="formulas-and-formula-versions"></a>Formeln und Formelversionen
 
@@ -68,6 +71,3 @@ Die Funktion Skalierbar ist nur verfügbar, wenn nur alle Artikelkomponenten in 
 
 ## <a name="use-step-consumption"></a>Verbrauch pro Serie
 Schrittverbrauch beseitigt die Menge auf der **Formelposition**,den Sie für eine Substanz eingeben müssen. Stattdessen wird der  Schrittverbrauch konfiguriert, sodass dieser den **Von Serie** Wert und eine **Menge** besitzt. Auf Basis der Chargenauftragsmenge werden die Informationen aus dem Schritt pro Serie, der die Menge befriedigt, ausgewählt Schrittverbrauch ist hilfreich, wenn der Verbrauchssatz nicht linear in Bezug auf die Chargenauftraggröße ist und die Anforderung nur erhöht, wenn ein bestimmter Mengenschwellenwert erfüllt wird. Um diese Funktion für eine neue Formel, unter der Gruppe **Verbrauchsberechnung** zu aktivieren,ändern Sie die Formeleinstellung für den betreffenden Inhaltsstoff von **Standard** auf **Schritt** Sie können dieser Verbrauchsmethode auf der Registerkarte **Einstellungen** auf der Seite **Formelposition** anzeigen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

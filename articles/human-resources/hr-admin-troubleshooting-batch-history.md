@@ -1,32 +1,30 @@
 ---
-title: Leistung durch automatische Bereinigungsaufgaben verbessern
-description: Dieses Thema erklärt, wie Sie die Leistung in Microsoft Dynamics 365 Human Resources verbessern können, indem Sie den Verlauf der Batch-Aufträge bereinigen.
-author: twheeloc
-ms.date: 08/21/2021
+title: Optimieren der Leistung mit automatischen Bereinigungsaufgaben
+description: In diesem Artikel wird erläutert, wie einige Leistungsprobleme mit Microsoft Dynamics 365 Human Resources behoben werden, indem Sie den Verlauf der Stapelverarbeitungsaufträge bereinigen.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: a293b128364b8b0b293da03495d55e46f6b01fd6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: a983fde8ba393ab25f2b330014e04a1379f0e4d0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066092"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418622"
 ---
-# <a name="optimize-performance-with-auto-cleanup-tasks"></a>Leistung durch automatische Bereinigungsaufgaben verbessern
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+# <a name="optimize-performance-with-auto-cleanup-tasks"></a>Optimieren Sie die Leistung mit automatischen Bereinigungsaufgaben
 
 **Abgang**
 
@@ -44,28 +42,25 @@ Planen Sie eine automatische Aufgabe, um den Verlauf der Stapelverarbeitungsauft
 
 2. Geben Sie auf der Leiste **Suchen** **Verlauf der Stapelverarbeitungsaufträge bereinigen** ein.
 
-   ![Suche nach „Verlauf der Stapelverarbeitungsaufträge bereinigen“.](media/talent-batch-history-cleanup-search-bar.png)
+   ![Suche nach „Verlauf der Stapelverarbeitungsaufträge bereinigen“](media/talent-batch-history-cleanup-search-bar.png)
 
 3. In **Historienlimit (Tage)** geben Sie **30** ein.
 
-   ![Historienlimit auf 30 festlegen.](media/talent-batch-history-cleanup-history-limit.png)
+   ![Historienlimit auf 30 festlegen](media/talent-batch-history-cleanup-history-limit.png)
 
 4. Wählen Sie **Im Hintergrund ausführen** und **Wiederholung** aus.
 
-   ![Wiederholung festlegen.](media/talent-batch-history-cleanup-recurrence.png)
+   ![Wiederholung festlegen](media/talent-batch-history-cleanup-recurrence.png)
 
 5. Unter **Wiederholung definieren** legen Sie die Option **Startdatum** und **Startzeit** fest, um während der Arbeitszeit oder am Wochenende auszuführen, und wählen Sie dann **KEIN ENDDATUM** aus. 
 
-   ![Startdatum und -zeit der Wiederholung definieren.](media/talent-batch-history-cleanup-define-recurrence.png)
+   ![Startdatum und -zeit der Wiederholung definieren](media/talent-batch-history-cleanup-define-recurrence.png)
 
 6. Wählen Sie unter **WIEDERHOLUNGSMUSTER** die Option **Tage** aus und legen Sie **NACH DEM ANGEGEBENEN INTERVALL WIEDERHOLEN** auf **7** fest.
 
-   ![Legen Sie fest, dass die Bereinigung wöchentlich ausgeführt wird.](media/talent-batch-history-cleanup-recurrence-pattern.png)
+   ![Legen Sie fest, dass die Bereinigung wöchentlich ausgeführt wird](media/talent-batch-history-cleanup-recurrence-pattern.png)
 
-7. Wählen Sie **OK** aus.
+7. Wählen Sie **OK**.
 
 8. Ändern Sie ggf. weitere Parameter unter **Im Hintergrund ausführen** und wählen Sie dann **OK** aus.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

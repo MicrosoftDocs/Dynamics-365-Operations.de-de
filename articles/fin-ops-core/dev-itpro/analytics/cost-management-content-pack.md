@@ -2,9 +2,11 @@
 title: Power BI-Inhalt zur Kostenverwaltung
 description: In diesem Thema wird beschrieben, was im Power BI-Inhalt zur Kostenverwaltung enthalten ist.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 03/16/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
 audience: Application User, IT Pro
@@ -16,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9fbdc6addc820aadc1f5469cb059a62724cfe905
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: bd5558c89130b48595a9b889072a18a4416b5bd7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752639"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683894"
 ---
 # <a name="cost-management-power-bi-content"></a>Power BI-Inhalt zur Kostenverwaltung
 
@@ -29,7 +31,12 @@ ms.locfileid: "7752639"
 
 ## <a name="overview"></a>Übersicht
 
-Der Microsoft Power BI-Inhalt für **Kostenmanagement** ist für Bestandsbuchhalter oder Einzelpersonen in der Organisation bestimmt, die für den Status „Bestand“ oder „Ressource in Bearbeitung (RIF)“ zuständig oder daran interessiert sind oder die für die Analyse von standardmäßigen Kostenabweichungen zuständig oder daran interessiert sind.
+Der Microsoft Power BI-Inhalt für **Kostenmanagement** ist für Bestandsbuchhalter oder Einzelpersonen in der Organisation bestimmt, die für den Status "Bestand" oder "Ressource in Bearbeitung (RIF)" zuständig oder daran interessiert sind oder die für die Analyse von standardmäßigen Kostenabweichungen zuständig oder daran interessiert sind.
+
+> [!NOTE]
+> Der Power BI-Inhalt zur **Kostenverwaltung**, der in diesem Thema beschrieben wird, gilt für Dynamics 365 Finance and Operations 8.0.
+> 
+> Das Power BI-Inhaltspaket zur **Kostenverwaltung**, das auf der AppSource-Site verfügbar ist, ist veraltet. Weitere Informationen zu dieser Veraltung finden Sie unter [Entfernte oder veraltete Funktionen für Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Dieser Power BI-Inhalt bietet ein kategorisiertes Format, mit dessen Hilfe Sie die Leistung von Beständen überwachen können und visuell darstellen können, wie Kosten durch sie fließen. Sie können Verwaltungseinblicke erhalten, wie das Umsatzverhältnis, die Anzahl von Tagen, während der der Bestand verfügbar ist, die Genauigkeit sowie die „ABC-Klassifizierung” auf Ihrer bevorzugten aggregierten Ebene (Untenehmen, Artikel, Artikelgruppe oder Standort). Die verfügbar gemachten Informationen können auch als detaillierte Ergänzung der Finanzaufstellung verwendet werden.
 
@@ -200,6 +207,3 @@ Die folgenden wesentlichen Dimensionen werden als Filter verwendet, um die aggre
 | Juristische Personen                                          | Name der juristischen Person                              |
 | Steuerkalender                                        | Steuerkalender, Jahr, Quartal, Periode, Monat   |
 | Standort                                                    | ID, Name, Adresse, Bundesland, Land               |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Fracht in der Transportverwaltung abstimmen
 description: Dieser Artikel beschreibt den Frachtabstimmungsprozess.
-author: Henrikan
+author: MarkusFogelberg
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSAuditMaster, TMSFreightBillInvoiceReconcile, TMSFreightBillSummary, TMSFreightBillType, TMSFreightMatchReason, TMSFBDetailReconcile, TMSInvoiceTable,TMSInvoiceLineReconcile,TMSReconcileInvoice, TMSFreightBillDetail, TMSFreightBillTypeAssignment, TMSRejectInvoiceLine, TMSMiscellaneousCharge
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 89983
 ms.assetid: bc34a9b1-0c11-4797-b463-25409cf98ca8
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: henrikan
+ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a63bfd34860c6a7c34cbc526c6a621cbc9666efc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ac07155e4dde77689b1994abfb8b30f45d5a5a30
+ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574904"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5014507"
 ---
 # <a name="reconcile-freight-in-transportation-management"></a>Fracht in der Transportverwaltung abstimmen
 
@@ -35,13 +37,13 @@ Die Frachtabstimmung kann manuell oder automatischen durchgeführt werden. Um di
 
 Frachtkosten werden vom den Tarifmodul berechnet, das dem relevanten Spediteur zugeordnet ist. Wenn ein Ladung bestätigt ist, wird ein Frachtbrief erstellt und die Frachtkosten werden an diesen übertragen. Die Frachtkosten werden je nach Konfiguration für den regulären Abrechnungsprozess als sonstige Zuschläge auf das entsprechende Quelldokument umgelegt (Bestellung, Auftrag und/oder Umlagerungsauftrag). Der Frachtabstimmungsprozesse (auch Abgleichsprozess genannt) kann starten sobald die Frachtrechnung vom Spediteur eingeht. Die Rechnung elektronisch oder auf Papier erhalten werden. Wenn die Rechnung auf Papier erhalten wird, können Sie mit dem Frachtbrief als Vorlage eine elektronische Rechnung generieren.
 
-[![Frachtabstimmungsprozess.](./media/freight-reconcilation-process.jpg)](./media/freight-reconcilation-process.jpg)
+[![Frachtabstimmungsprozess](./media/freight-reconcilation-process.jpg)](./media/freight-reconcilation-process.jpg)
 
 ## <a name="manual-reconciliation"></a>Manuelle Abstimmung
 
 Wenn Sie die Fracht manuell abstimmen, müssen Sie jede Rechnungsposition mit der Frachtbriefposition oder den-positionen für die zu fakturierende Ladung abgleichen. Diesen Abgleich führen Sie auf der Seite **Frachtbrief- und Rechnungsabgleich** durch. Wenn der Betrag der Rechnungsposition nicht mit dem Frachtbriefbetrag übereinstimmt, müssen Sie einen Abstimmungsgrund für die Abweichung auswählen. Sind mehrere Gründe für die Abstimmung zutreffen, können Sie die nicht abgeglichenen Mengen auf diese Gründe verteilen. Der Abstimmungsgrund bestimmt, wie die Differenzbeträge im Hauptbuch gebucht werden. Bei die Abstimmung des gesamten Rechnungsbetrags gebucht wird, wird dieser zur Genehmigung gesendet. Dann wird die Erfassung gebucht. Die folgende Abbildung zeigt, wie eine Frachtrechnung generiert und eine Frachtabstimmung ausgeführt wird.
 
-[![Frachtabstimmungsaufgaben.](./media/processflowforfreightreconciliation.jpg)](./media/processflowforfreightreconciliation.jpg)
+[![Frachtabstimmungsaufgaben](./media/processflowforfreightreconciliation.jpg)](./media/processflowforfreightreconciliation.jpg)
 
 ## <a name="automatic-reconciliation"></a>Automatische Abstimmung
 
@@ -103,6 +105,3 @@ Eine weitere Möglichkeit zum manuellen Abgleich für dieses Beispiel besteht da
 1. Gleichen Sie Inv1 und Inv 2 nacheinander mit FB ab. Der FB ist vollständig abgeglichen.
 
 Wie dieses Beispiel zeigt, sollte der Abgleich von Frachtrechnungen mit negativen Beträgen nur manuell erfolgen. Dadurch wird sichergestellt, dass es immer möglich ist, die Frachtrechnungen mit negativen Beträgen mit einem nicht vollständig abgeglichenen Frachtbrief abzugleichen, da Sie so die Reihenfolge des Abgleichs steuern können.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

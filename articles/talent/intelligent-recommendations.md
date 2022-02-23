@@ -56,6 +56,3 @@ Die Empfehlungen erscheinen als Karten auf der Registerkarte **Interessenten** e
 > Falls Sie neu mit Attract arbeiten, müssen Sie warten, bis Sie 10 oder mehr Bewerber haben, die vollständige Profile oder Zusammenfassungen haben, bevor Sie diese Funktion verwenden können.
 
 Um mögliche Konflikte in den Empfehlungen zu vermeiden, scannt Attract nur Kandidatenprofile nach Fähigkeiten, Qualifikationen und anderen Suchbegriffen, die mit der Stellenbeschreibung übereinstimmen. Darüber hinaus entfernt Attract persönlich identifizierbare Informationen von Kandidatenprofilen vor der Bewertung.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

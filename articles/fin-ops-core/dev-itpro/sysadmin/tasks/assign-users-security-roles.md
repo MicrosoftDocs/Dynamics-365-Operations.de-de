@@ -2,9 +2,11 @@
 title: Zuweisen von Benutzern zu Sicherheitsrollen
 description: Für den Zugriff auf Finance and Operations müssen Benutzer Sicherheitsrollen zugewiesen werden.
 author: Peakerbl
+manager: AnnBe
 ms.date: 05/06/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm, SysSecRoleExcludeUsers
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6d65c4dafda63b7a54dd343652b0f4b498e064f4aee0fba43c34d40d73ac5062
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f78c24e8c2ffe5418ce119e19b7c0193f01f64b8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748335"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679863"
 ---
 # <a name="assign-users-to-security-roles"></a>Zuweisen von Benutzern zu Sicherheitsrollen
 
@@ -55,6 +57,3 @@ Benutzer, die manuell Sicherheitsrollen zugewiesen werden, müssen auch manuell 
 2. In der Struktur wählen Sie eine Rolle aus, und im Menü **Der Rolle zugewiesene Benutzer** wählen Sie **Benutzer manuell zuweisen/ausschließen** aus.
 4. Im **Benutzer der Rolle zuweisen oder von der Rolle ausschließen** werden Benutzer, denen die Rolle nicht zugewiesen ist, mit dem **Zuweisungsmodus** auf **Keiner** festgelegt aufgelistet. Wählen Sie einen oder mehrere Benutzer aus, denen die Rolle zugewiesen werden soll.
 5. Wählen Sie im **Aktionsbereich** die Option **Der Rolle zuweisen** aus. Der **Zuweisungsmodus** wird aktualisiert auf **Manuell** und den Benutzern wurde jetzt eine neue Rolle zugewiesen.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

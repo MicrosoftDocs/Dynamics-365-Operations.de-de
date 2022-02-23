@@ -2,24 +2,27 @@
 title: " Eine Arbeitskraft konfigurieren"
 description: Diese Prozedur zeigt, wie eine Arbeitskraft als Verkäufer konfiguriert wird, der im POS für Provisionen freigegeben ist.
 author: jblucher
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CommissionSalesGroup, CommissionSalesMember, DirPartyLookup, HcmWorker
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a21d5f2d5963db2a92b653e8e520f96f11ba1bf6acbb238812211154d5b39fc0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd437f549ffc1f8879ce3814ace1193040b280e1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726382"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412654"
 ---
 # <a name="configure-a-worker"></a> Eine Arbeitskraft konfigurieren
 
@@ -45,7 +48,7 @@ Diese Prozedur zeigt, wie eine Arbeitskraft als Verkäufer konfiguriert wird, de
 12. Schließen Sie die Seite.
 
 ## <a name="assign-the-workers-default-sales-group"></a>Standardverkaufsgruppe der Arbeitskraft zuweisen
-1. Navigieren Sie zu Einzelhandel und Handel > Mitarbeiter > Arbeitskräfte.
+1. Navigieren Sie zu Retail und Commerce > Mitarbeiter > Arbeitskräfte.
 2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 3. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 4. Klicken Sie auf die Registerkarte Commerce.
@@ -54,6 +57,3 @@ Diese Prozedur zeigt, wie eine Arbeitskraft als Verkäufer konfiguriert wird, de
 6. Geben Sie im Feld "Standardgruppe" einen Wert ein oder wählen Sie einen Wert aus.
 7. Klicken Sie auf "Speichern".
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

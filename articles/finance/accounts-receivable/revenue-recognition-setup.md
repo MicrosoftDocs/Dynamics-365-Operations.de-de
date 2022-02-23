@@ -2,23 +2,26 @@
 title: Umsatzerkennungseinstellungen
 description: In diesem Thema werden die Einrichtungsoptionen für die Umsatzerkennung und deren Auswirkungen behandelt.
 author: kweekley
-ms.date: 11/24/2021
+manager: aolson
+ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e8e29ec1ca5a02db67bb4baf522da96ec23c740f
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: 73acfc92777b8fe07b89bea782e13213d38000cd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867219"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459075"
 ---
 # <a name="revenue-recognition-setup"></a>Umsatzerkennungseinstellungen
 [!include [banner](../includes/banner.md)]
@@ -26,30 +29,24 @@ ms.locfileid: "7867219"
 Es wurde ein neues Modul **Umsatzerkennung** hinzugefügt, das Menüoptionen für alle erforderlichen Einstellungen enthält. In diesem Thema werden die Einrichtungsoptionen und deren Auswirkungen behandelt.
 
 > [!NOTE]
-> Die Umsatzerkennungsfunktion ist nun über die Funktionsverwaltung standardmäßig aktiviert. Wenn Ihre Organisation diese Funktion nicht nutzt, können Sie sie im Arbeitsbereich **Funktionsverwaltung** ausschalten.
->
-> Die Umsatzerkennung, einschließlich Bündelfunktion, wird in Commerce-Kanälen (E-Commerce, POS und Callcenter) nicht unterstützt. Für die Umsatzerkennung konfigurierte Artikel dürfen nicht in Bestellungen oder Transaktionen ergänzt werden, die in Commerce-Kanälen erstellt wurden.
+> Die Umsatzerkennungsfunktion kann nicht über die Funktionsverwaltung aktiviert werden. Sie müssen derzeit Konfigurationsschlüssel verwenden, um sie zu aktivieren.
 
-Das Modul **Umsatzerkennung** hat folgende Einrichtungsoptionen:
+Das Modul **Umsatzerkennung** bietet folgende Optionen:
 
 - Umsatzerkennungserfassungen
 - Parameter für die Umsatzerkennung
 - Umsatzerlöszeitpläne 
-- Bestandseinrichtung
+- Lagereinrichtung
 
     - Artikelgruppen und freigegebene Produkte
     - Umsatzerlöszeitplan definieren
     - Umsatzerlöspreis definieren
-    - Bestandseinrichtung
 
-        - Umsatzerlöszeitplan definieren
-        - Umsatzerlöspreis definieren
+        - Buchungsprofile
+        - Bündel
 
-    - Buchungsprofile
-    - Bündel
-
-        - Bündelkomponenten
-        - Bündelartikel
+    - Bündelkomponenten
+    - Bündelartikel
 
 - Projekteinstellungen
 
@@ -61,7 +58,7 @@ Das erste Szenario tritt ein, nachdem alle vertraglichen Verpflichtungen erfüll
 
 Das zweite Szenario findet statt, wenn eine Erfassung nach der Neuzuordnung erstellt wird. Die Neuzuordnung findet statt, wenn einem zuvor fakturierten Auftrag eine Auftragsposition hinzugefügt oder ein neuer Auftrag erstellt wird, der eine Position umfasst, die Teil des ursprünglichen Vertrags ist. Wenn eine Rechnung vor dem Hinzufügen einer neuen Auftragsposition gebucht wurde, muss ein Korrekturbuchhaltungseintrag für die gebuchte Debitorenrechnung erstellt werden.
 
-Die Erfassung wird auf der Seite **Journale** (**Umsatzerkennung \> Einstellungen \> Journale**) eingerichtet. Der Erfassungstyp muss auf **Umsatzerkennung** festgelegt werden. 
+Die Erfassung wird auf der Seite **Journale** (**Umsatzerkennung \> Einstellungen \> Journale**) eingerichtet. Der Erfassungstyp muss auf **Umsatzerkennung** festgelegt werden. Mit der Umsatzerkennungserfassung können Sie die Buchungsebene auswählen, in der gebucht werden soll.
 
 ## <a name="parameters-for-revenue-recognition"></a>Parameter für die Umsatzerkennung
 
@@ -76,7 +73,7 @@ Die Umsatzerkennungseinstellungen werden auf der Registerkarte **Umsatzerkennung
     - Legen Sie diese Option auf **Nein** fest, um die Buchung der Korrekturtransaktion auf das Hauptbuch zu beschränken. Ist die Option auf **Nein** festgelegt, werden auch keine weiteren Dokumente für die interne Buchhaltungskorrektur in den Debitorenkonten erstellt. Sobald die Rechnung bezahlt ist, verwendet der Ausgleichsprozess den alten Buchhaltungseintrag, um mögliche Skontos bzw. erkannte Umsätze oder Verluste zu buchen.
     - Legen Sie diese Option auf **Ja** fest, um automatisch ein Rückbuchungsdokument und eine neue Rechnung für die Korrekturtransaktion in Debitorenkonten zu erstellen. Da diese Korrektur eine interne Buchhaltungskorrektur ist, werden die neuen Dokumente nicht an den Debitor gesendet oder diesem mitgeteilt. Das Rückbuchungsdokument wird mit der ursprünglichen Rechnung ausgeglichen, und die neue berichtigte Rechnung wird vom Debitor bezahlt. Beachten Sie, dass alle drei Dokumente in Berichten angezeigt werden, wie z. B. in Debitorenaufstellungen.
 
-[![Einrichtungsinformationen.](./media/revenue-recognition-setup-info.png)](./media/revenue-recognition-setup-info.png)
+[![Einrichtungsinformationen](./media/revenue-recognition-setup-info.png)](./media/revenue-recognition-setup-info.png)
 
 ## <a name="revenue-schedules"></a>Umsatzerlöszeitpläne
 
@@ -84,9 +81,9 @@ Ein Umsatzerlöszeitplan muss für jedes Ereignis erstellt werden, durch das Ums
 
 Wenn Sie Umsatzerlöse nach Meilensteinen ermitteln, empfiehlt es sich, unabhängig von den Erkennungsdaten einen Umsatzerkennungszeitplan für die Anzahl der Meilensteine zu erstellen. Nachdem Sie die Zeitpläne erstellt haben, können Sie sie bearbeiten, sodass sie die erwarteten Meilensteindatumsangaben widerspiegeln. Diese Datensätze können gesperrt werden, bis Sie eine Benachrichtigung erhalten, dass die einzelnen Meilensteine erreicht wurden und Umsatz erkannt werden kann.
 
-Umsatzerlöszeitpläne werden auf der Seite **Umsatzerlöszeitpläne** (**Umsatzerlöserkennung \> Einstellungen \> Umsatzerlöszeitpläne**) erstellt.
+Umsatzerlöszeitpläne werden auf der Seite **Umsatzerlöszeitpläne** (**Umsatzerkennung \> Einstellungen \> Umsatzerlöszeitpläne**) erstellt.
 
-[![Umsatzerlöszeitpläne.](./media/revenue-recognition-revenue-schedules.png)](./media/revenue-recognition-revenue-schedules.png)
+[![Umsatzerlöszeitpläne](./media/revenue-recognition-revenue-schedules.png)](./media/revenue-recognition-revenue-schedules.png)
 
 Geben Sie in den Feldern **Umsatzerlöszeitplan** und **Beschreibung** beschreibende Werte ein. Die folgenden zusätzlichen Einstellungen werden verwendet, um den Umsatzerlöszeitplan zu erstellen, wenn die Rechnung gebucht wird.
 
@@ -95,29 +92,22 @@ Geben Sie in den Feldern **Umsatzerlöszeitplan** und **Beschreibung** beschreib
 - **Automatische Vertragsbedingungen** – Aktivieren Sie dieses Kontrollkästchen, wenn das Vertragsstart-und -enddatum automatisch festgelegt werden soll. Diese Daten werden nur automatisch für freigegebene Produkte des Umsatzerlöstyps **Unterstützung nach Vertragsabschluss** festgelegt. Das Vertragsstartdatum wird automatisch auf das angeforderte Lieferdatum des Auftrags festgelegt, und das Vertragsenddatum wird automatisch auf das Startdatum zuzüglich der Anzahl der Monate oder Vorkommen festgelegt, die in den Einstellungen des Umsatzerlöszeitplans definiert sind. Beispielsweise ist das Produkt in der Auftragsposition einer einjährigen Gewährleistung zugeordnet. Der Standard-Umsatzerlöszeitplan ist **12M** (12 Monate), und das Kontrollkästchen **Automatische Vertragsbedingungen** ist für diesen Umsatzerlöszeitplan aktiviert. Wenn die Auftragsposition ein angefordertes Versanddatum vom 16. Dezember 2019 hat, wird das Standard-Vertragsstartdatum auf den 16. Dezember 2019 und das Standard-Vertragsenddatum auf den 15. Dezember 2020 festgelegt.
 - **Erkennungsgrundlage** – Die Erkennungsgrundlage bestimmt, wie der Umsatzerlöspreis auf die Vorkommen verteilt wird.
 
-    - **Monatlich nach Tagen** – Der Betrag wird auf Grundlage der tatsächlichen Tage der einzelnen Kalendermonate zugewiesen.
+    - **Monatlich nach Datum** – Der Betrag wird auf Grundlage der tatsächlichen Tage der einzelnen Monate zugewiesen.
     - **Monatlich** – Der Betrag wird gleichmäßig auf die Anzahl der Monate zugewiesen, die in den Vorkommen definiert sind.
     - **Vorkommen** – Der Betrag wird gleichmäßig auf die Vorkommen verteilt, kann jedoch eine zusätzliche Periode enthalten, wenn Sie **Tatsächliches Startdatum** als Erkennungskonvention auswählen.
-    - **Buchhaltungsperiode nach Tagen** – Der Betrag wird auf Grundlage der tatsächlichen Tage der einzelnen Buchhaltungsperioden zugewiesen. 
 
-    Die Ergebnisse von **Monatlich nach Tagen** und **Buchhaltungsperiode nach Tagen** sind gleich, wenn die Buchhaltungsperioden Kalendermonaten entsprechen. Die einzige Ausnahme besteht, wenn die Erkennungskonvention auf **Ende des Monat/Zeitraums** eingestellt ist und die Felder **Vertragsstartdatum** und **Enddatum** in einer Auftragsposition leer gelassen wurden.
-
-- **Erkennungskonvention** – Die Erkennungskonvention bestimmt die Daten, die auf den Umsatzerlöszeitplan für die Rechnung angegeben sind.
+- **Erkennungskonvention** – Die Erkennungskonvention bestimmt die Standarddaten, die auf den Umsatzerlöszeitplan für die Rechnung angegeben sind.
 
     - **Tatsächliches Startdatum** – Der Zeitplan wird erstellt, indem Sie entweder das Vertragsstartdatum (für \[PCS\]-Artikel und „Unterstützung nach Vertragsabschluss“) oder das Rechnungsdatum (für wesentliche und nicht-wesentliche Artikel) verwenden.
-    - **1. Tag des Monats/Zeitraums** – Das Datum der ersten Zeitplanposition ist das Vertragsstartdatum (oder das Rechnungsdatum). Allerdings werden alle folgenden Zeitplanpositionen für den ersten Tag des Monats bzw. der Buchaltungsperiode erstellt.
+    - **1. des Monats** – Das Datum der ersten Zeitplanposition ist das Vertragsstartdatum (oder das Rechnungsdatum). Allerdings werden alle folgenden Zeitplanpositionen für den ersten Tag des Monats erstellt.
     - **Teilung in der Monatsmitte** – Das Datum der ersten Zeitplanposition hängt vom Rechnungsdatum ab. Wenn die Rechnung zwischen dem 1. und dem 15. des Monats gebucht wird, wird der Umsatzerlöszeitplan unter Verwendung des ersten Tag des Monats erstellt. Wenn die Rechnung zwischen dem 16. oder einem späteren Tag des Monats gebucht wird, wird der Umsatzerlöszeitplan unter Verwendung des ersten Tag des folgenden Monats erstellt.
+    - **1. des nächsten Monats** – Das Datum auf dem Zeitplan ist der erste Tag des nächsten Monats.
 
-        **Teilung in der Monatsmitte** kann nicht ausgewählt werden, wenn die Erkennungsgrundlage auf **Buchhaltungsperiode nach Tagen** festgelegt ist.
+Wählen Sie die Schaltfläche **Umsatzerlöszeitplandetails** aus, um die allgemeinen Perioden und die Prozentsätze anzuzeigen, die in den einzelnen Perioden berücksichtigt werden. Standardmäßig wird der Wert **Erkennungsprozentsatz** auf eine gleichmäßig festgelegte Anzahl von Perioden aufgeteilt. Wenn die Erkennungsgrundlage auf **Monatlich** oder **Vorkommen** festgelegt ist, kann der Erkennungsprozentsatz geändert werden. Wenn Sie den Erkennungsprozentsatz ändern, wird eine Warnmeldung angezeigt, dass die Summe nicht 100 Prozent entspricht. Wenn die Meldung angezeigt wird, können Sie die Positionen weiter bearbeiten. Zuvor muss der Gesamtprozentsatz jedoch 100 entsprechen, damit Sie die Seite schließen können.
 
-    - **1. Tag des nächsten Monats/Zeitraums** – Das Datum, zu dem der Zeitplan beginnt, ist der erste Tag des nächsten Monats bzw. der Buchhaltungsperiode.
-    - **Ende des Monats/Zeitraums** – Das Datum der ersten Zeitplanposition ist das Vertragsstartdatum (oder das Rechnungsdatum). Allerdings werden alle folgenden Zeitplanpositionen für den letzten Tag des Monats bzw. der Buchhaltungsperiode erstellt. 
+[![Umsatzerlöszeitplandetails](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
 
-Wählen Sie die Schaltfläche **Umsatzerlöszeitplandetails** aus, um die allgemeinen Perioden und die Prozentsätze anzuzeigen, die in den einzelnen Perioden berücksichtigt werden. Standardmäßig wird der Wert **Erkennungsprozentsatz** auf eine gleichmäßig festgelegte Anzahl von Perioden aufgeteilt. Wenn die Erkennungsgrundlage auf **Monatlich** festgelegt ist, kann der Erkennungsprozentsatz geändert werden. Wenn Sie den Erkennungsprozentsatz ändern, wird eine Warnmeldung angezeigt, dass die Summe nicht 100 Prozent entspricht. Wenn diese Meldung angezeigt wird, können Sie die Positionen weiter bearbeiten. Zuvor muss der Gesamtprozentsatz jedoch 100 entsprechen, damit Sie die Seite schließen können.
-
-[![Umsatzerlöszeitplandetails.](./media/revenue-schedule-details-2nd-scrn.png)](./media/revenue-schedule-details-2nd-scrn.png)
-
-## <a name="inventory-setup"></a>Bestandseinrichtung
+## <a name="inventory-setup"></a>Lagereinrichtung
 
 Sie können Umsatzerlöse für freigegebene Produkte in Aufträgen erkennen, jedoch nicht in Verbindung mit den Verkaufskategorien auf Aufträgen oder bei Freitextrechnungen, wenn keine Artikel im Dokument enthalten sind. Die Auswahl, die Sie beim Einrichten von freigegebenen Produkten vornehmen, legt fest, wie der Umsatzerlös des Artikels erkannt wird. So bestimmt beispielsweise die Auswahl, ob der Umsatzerlöspreis zugeteilt und ob der Umsatz mittels Umsatzerlöszeitplan verzögert ist.
 
@@ -148,9 +138,9 @@ Sie können Artikelgruppen und freigegebene Produkte einrichten, indem Sie entwe
     - **Höchsttoleranz** – Geben Sie hier den prozentualen Anteil ein, der über dem Medianpreis zulässig ist.
     - **Mindesttoleranz** – Geben Sie hier den prozentualen Anteil ein, der unter dem Medianpreis zulässig ist.
 
-Nachdem Sie alle Einstellungen für das freigegebene Produkt konfiguriert haben, müssen Sie den Umsatzerlöspreis manuell definieren, indem Sie den Zeitwertpreis oder den Medianpreis (wenn Sie die Medianpreismethode anwenden) auf der Seite **Umsatzerlöspreise** (**Umsatzerlöserkennung \> Einstellungen \> Lagereinrichtung \> Freigegebene Produkte** angeben und dann im Aktionsbereich auf der Registerkarte **Verkaufen** in der Gruppe **Umsatzerlöserkennung** die Option **Umsatzerlöspreise** auswählen).
+Nachdem Sie alle Einstellungen für das freigegebene Produkt konfiguriert haben, müssen Sie den Umsatzerlöspreis manuell definieren, indem Sie den angemessenen Marktpreis oder den Medianpreis (wenn Sie die Medianpreismethode anwenden) auf der Seite **Umsatzerlöspreise** (**Umsatzerkennung \> Einstellungen \> Lagereinrichtung \> Freigegebene Produkte** angeben und dann im Aktivitätsbereich auf der Registerkarte **Verkaufen** in der Gruppe **Umsatzerkennung** die Option **Umsatzerlöspreise** auswählen).
 
-[![Umsatzerlöspreise.](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
+[![Umsatzerlöspreise](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
 
 Der Umsatzerlöspreis, der manuell auf dieser Registerkarte definiert wurde, wird verwendet, um die Umsatzerlös-Preiszuteilung für jeden Auftrag auf Basis der definierten Kriterien zu bestimmen. Jedes Kriterium wird mit der Auftragsposition abgeglichen, um den Umsatzerlöspreis festzulegen, der im Zuteilungsprozess verwendet werden soll.
 
@@ -161,7 +151,7 @@ Der Umsatzerlöspreis, der manuell auf dieser Registerkarte definiert wurde, wir
 - **Umsatzerlöszuteilungspreis** – In Abhängigkeit vom im Feld **Betrag oder Prozentsatz des Listenpreises** ausgewählten Wert geben Sie entweder einen Betrag oder einen Prozentsatz ein, um den Umsatzerlöspreis anzugeben, der verwendet wird, um den Artikeln im Auftrag den Umsatzerlös zuzuordnen.
 - **Startdatum** und **Enddatum** – Geben Sie den Datumsbereich ein, in dem der Umsatzerlöspreis aktiv ist. Diese Felder sind optional.
 
-Wenn die Option **Rabattzuordnungsmethode aktivieren** auf der Seite **Hauptbuchparameter** auf **Ja** festgelegt ist und wenn das Feld **Umsatzerlöstyp** für Ihr freigegebenes Produkt auf **Unterstützung nach Vertragsabschluss** eingestellt ist, müssen Sie auch die Artikel angeben, die durch das freigegebene Produkt unterstützt werden. Diese Einstellung wird auf der Seite **Einstellungsgrundlage** festgelegt. (Navigieren Sie zu **Umsatzerkennung \> Einstellungen \> Bestandseinrichtung \> Freigegebene Produkte**, und wählen Sie dann im Aktionsbereich auf der Registerkarte **Verkaufen** in der Gruppe **Umsatzerkennung** die Option **Einstellungsgrundlage** aus.)
+Wenn die Option **Rabattzuordnungsmethode aktivieren** auf der Seite **Hauptbuchparameter** auf **Ja** festgelegt ist und wenn das Feld **Umsatzerlöstyp** für Ihr freigegebenes Produkt auf **Unterstützung nach Vertragsabschluss** eingestellt ist, müssen Sie auch die Artikel angeben, die durch das freigegebene Produkt unterstützt werden. Diese Einstellung wird auf der Seite **Einstellungsgrundlage** festgelegt. (Navigieren Sie zu **Umsatzerkennung \> Einstellungen \> Lagereinrichtung \> Freigegebene Produkte**, und wählen Sie dann im Aktivitätsbereich auf der Registerkarte **Verkaufen** in der Gruppe **Umsatzerkennung** die Option **Einstellungsgrundlage** aus.)
 
 Auf der Seite **Einstellungsgrundlage** können Sie einen Datensatz für jede Artikelgruppe hinzufügen, die der Artikel unterstützt. Während der Umsatzerlöszuteilung wird der Umsatzerlöspreis auf die wesentlichen und nicht-wesentlichen Teile für den PCS-Artikel verteilt.
 
@@ -190,9 +180,9 @@ Wenn Sie einen Bündelartikel einrichten, müssen Sie zwei Felder auf der Seite 
 - Der Artikel muss im Inforegister **Entwickler** im Feld **Produktionstyp** als Stücklistenartikel eingerichtet werden.
 - Der Artikel muss im Inforegister **Allgemein** im Feld **Bündel** als Bündelartikel gekennzeichnet werden.
 
-Die Komponenten müssen dem übergeordneten Bündel-/Stücklistenartikel auf der Seite **Stücklistenversionen** zugewiesen werden. (Navigieren Sie zu **Umsatzerkennung \> Einstellungen \> Lager- und Produkteinrichtung \> Freigegebene Produkte**, und wählen Sie dann im Aktionsbereich auf der Registerkarte **Entwickler** in der Gruppe **Stückliste** die Option **Stücklistenversionen** aus.) Weitere Informationen finden Sie in der Dokumentation zur Einrichtung von Stücklisten.
+Die Komponenten müssen dem übergeordneten Bündel-/Stücklistenartikel auf der Seite **Stücklistenversionen** zugewiesen werden. (Navigieren Sie zu **Umsatzerkennung \> Einstellungen \> Lager- und Produkteinrichtung \> Freigegebene Produkte**, und wählen Sie dann im Aktivitätsbereich auf der Registerkarte **Entwickler** in der Gruppe **Stückliste** die Option **Stücklistenversionen** aus.) Weitere Informationen finden Sie in der Dokumentation zur Einrichtung von Stücklisten.
 
-[![Freigegebene Produkte, Stücklistenzeitpläne.](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
+[![Freigegebene Produkte, Stücklistenzeitpläne](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
 
 Wenn der übergeordnete Bündelartikel und die Bündelkomponenten für die Zuteilung festgelegt wurden, wird der Bündelumsatzerlöspreis basierend auf den Umsatzerlös-Beitragsprozentsätzen auf die Komponenten verteilt.
 
@@ -202,6 +192,3 @@ Die Umsatzerkennung kann auch für Aufträge verwendet werden, die durch ein Auf
 
 - **Verzögerter Rechnungsumsatz** (unter **Umsatzerlöskonten**) – Geben Sie das Hauptkonto für den Umsatzerlöspreis ein, der für den verzögerten Umsatzerlös (anstelle des Umsatzerlöses) gebucht wird. Der Umsatzerlöspreis wird verzögert, wenn die Auftragsposition einen Umsatzerlöszeitplan hat.
 - **Verzögerte Kosten** (unter **Kostenkonten**) – Geben Sie das Hauptkonto für den Wareneinsatzbetrag ein, der für den verzögerten Wareneinsatz gebucht wird, wenn der Umsatzerlös auch verzögert wird.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
