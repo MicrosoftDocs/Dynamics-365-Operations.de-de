@@ -47,7 +47,7 @@ Für das Beispielsystem lautet das Lagermodell für die freigegebenen Produkte *
 
 Das Beispielsystem enthält die folgenden Lagerbuchungen für ein freigegebenes Produkt mit der Artikelnummer *B0001*.
 
-| Referenz | Standort | Lagerhaus | Zugang | Problem | Physisches Datum | Finanzdatum | Leistung | Betrag KORE | Phys. Einstandsbetrag |
+| Referenz | Standort | Lagerhaus | Zugang | Problem | Physisches Datum | Finanzdatum | Menge | Betrag KORE | Phys. Einstandsbetrag |
 |---|---|---|---|---|---|---|---|---|---|
 | Bestellung | 1 | 11 | Eingekauft | | 15. März | 15. März | 10 | 1.000 | 1.000 |
 | Bestellung | 2 | 21 | Eingekauft | | 15. März | 15. März | 10 | 2,000 | 2,000 |

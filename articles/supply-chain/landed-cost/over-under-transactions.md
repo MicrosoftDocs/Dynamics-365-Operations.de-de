@@ -125,7 +125,7 @@ Um den Dokumenttyp für die Zeile anzuzeigen, die auf der oberen Registerkarte *
 | Neuer Dokumenttyp | Dieses Feld ist entweder auf *Umlagerungserfassung* oder *Einkaufsbestellung* festgelegt, abhängig von der Aktion, die in der ausgewählten Über/Unter-Transaktionszeile angezeigt wird. |
 | Anzahl | Ein Verweis und eine Verknüpfung entweder zur Einkaufsbestellung oder zum Umlagerungserfassung, die mit der ausgewählten Über/Unter-Transaktionszeile verknüpft ist. |
 | Grund für Über/Unter | Der Grund, der mit der ausgewählten Über/Unter-Transaktionszeile verknüpft ist. |
-| Leistung | Die Menge, die Sie für die Einkaufsbestellung oder das Umlagerungserfassung ausgewählt haben, das mit der ausgewählten Über/Unter-Transaktionszeile verknüpft ist. |
+| Menge | Die Menge, die Sie für die Einkaufsbestellung oder das Umlagerungserfassung ausgewählt haben, das mit der ausgewählten Über/Unter-Transaktionszeile verknüpft ist. |
 
 ### <a name="lower-general-tab"></a>Untere Registerkarte Allgemein
 

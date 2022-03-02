@@ -1,30 +1,27 @@
 ---
 title: Planzahlenverrechnungsschlüssel vorhersagen
 description: Dieses Thema enthält Beispiele, die zeigen, wie Sie einen Planzahlenverrechnungsschlüssel einrichten. Er umfasst Informationen zu den verschiedenen Einstellungen der Planzahlenverrechnungsschlüssel und deren Ergebnissen. Mithilfe von Planzahlenverrechnungsschlüsseln wird definiert, wie der Planungsbedarf verringert werden soll.
-author: roxanadiaconu
-manager: tfehr
+author: ChristianRytt
 ms.date: 04/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqPlanSched, ReqReduceKeyDefaultDataWizard, ReqReduceKey
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19251
 ms.assetid: aa9e0dfb-6052-4a2e-9378-89507c02fdf2
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fc2b63bfdec1c663027cb4e551589a705c2164e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cbed77fd1abc0e4ae26e2b9ddcc01d3f4a84889f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428575"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570824"
 ---
 # <a name="forecast-reduction-keys"></a>Planzahlenverrechnungsschlüssel vorhersagen
 
@@ -89,7 +86,18 @@ Wenn Sie die Umsatzplanungslauf am 1. Januar ausführen, wird die Bedarfsplanung
 
 ### <a name="transactions--reduction-key"></a>Transaktionen – Planzahlenverrechnungsschlüssel
 
-Wenn Sie **Transaktionen - Planzahlenverrechnungsschlüssel** wählen wird der Planungsbedarf um die Transaktion reduziert, die während der im Planzahlenverrechnungsschlüssel definierten Zeitperioden stattfinden.
+Wenn Sie das Feld **Methode zur Reduzierung des Planungsbedarfs** auf *Buchungen – Planzahlenverrechnungsschlüssel* festlegen, werden die Planungsbedarfe um die qualifizierten Bedarfsbuchungen reduziert, die in den durch den Planzahlenverrechnungsschlüssel definierten Zeiträumen anfallen.
+
+Der qualifizierte Bedarf wird durch das Feld **Planungswert verringern um** auf der Seite **Dispositionssteuerungsgruppen** definiert. Wenn Sie das Feld **Planungswert verringern um** auf *Aufträge* festlegen, werden nur Auftragsbuchungen als qualifizierter Bedarf betrachtet. Wenn Sie es auf *Alle Buchungen* festlegen, werden alle abgehenden Nicht-Intercompany-Bestandsbuchungen als qualifizierter Bedarf betrachtet. Falls Intercompany-Aufträge ebenfalls als qualifizierter Bedarf berücksichtigt werden sollen, legen Sie die Option **Intercompany-Aufträge einschließen** auf *Ja* fest.
+
+Die Prognoseverrechnung beginnt mit dem ersten (frühesten) Bedarfsplanungsdatensatz im Planzahlenverrechnungsschlüssel-Zeitraum. Wenn die Menge der qualifizierten Bestandsbuchungen größer ist als die Menge der Bedarfsplanungspositionen im selben Planzahlenverrechnungsschlüssel-Zeitraum, wird der Saldo der Bestandsbuchungsmenge verwendet, um die Bedarfsplanungsmenge im vorherigen Zeitraum zu reduzieren (sofern nicht verbrauchte Planungsmengen vorhanden sind).
+
+Wenn im vorherigen Planzahlenverrechnungsschlüssel-Zeitraum keine nicht verbrauchten Planungsmengen verbleiben, wird der Saldo der Bestandsbuchungsmenge verwendet, um die Planungsmenge im nächsten Monat zu reduzieren (sofern nicht verbrauchte Planungsmengen vorhanden sind).
+
+Der Wert im Feld **Prozent** in den Planzahlenverrechnungsschlüssel-Positionen wird nicht verwendet, wenn das Feld **Methode zur Reduzierung des Planungsbedarfs** auf *Buchungen – Planzahlenverrechnungsschlüssel* festgelegt ist. Nur die Daten werden verwendet, um den Planzahlenverrechnungsschlüssel-Zeitraum zu definieren.
+
+> [!NOTE]
+> Alle Planungen, die am oder vor dem heutigen Datum gebucht werden, werden ignoriert und nicht zum Erstellen von Planaufträgen verwendet. Wenn Ihre Bedarfsplanung für den Monat beispielsweise am 1. Januar generiert wird und Sie eine Masterplanung mit Bedarfsplanung am 2. Januar ausführen, ignoriert die Berechnung die Bedarfsplanungsposition vom 1. Januar.
 
 #### <a name="example-transactions--reduction-key"></a>Beispiel: Transaktionen – Planzahlenverrechnungsschlüssel
 
@@ -149,7 +157,7 @@ Sie erstellen auch die folgenden Aufträge.
 
 In diesem Fall werden die folgenden Aufträge erstellt.
 
-| Bedarfsplanungsdatum | Leistung | Erläuterung                           |
+| Bedarfsplanungsdatum | Menge | Erläuterung                           |
 |--------------------- |----------|---------------------------------------|
 | 1. Januar            | 800      | Planungsanforderungen verringern (= 1,000 – 200) |
 | 15. Januar           | 200      | Auftragsanforderungen             |
@@ -186,7 +194,7 @@ In diesem Fall wird die Planung auf folgende Weise reduziert:
 
 Deshalb werden die folgenden Aufträge erstellt.
 
-| Bedarfsplanungsdatum             | Leistung | Erläuterung                                                         |
+| Bedarfsplanungsdatum             | Menge | Erläuterung                                                         |
 |----------------------------------|----------|---------------------------------------------------------------------|
 | 15. Dezember Im Jahr zuvor | 500      | Auftragsanforderungen                                            |
 | 1. Januar                        | 900      | Planungsbedarfperiode vom 1. Januar bis zum 5. Januar (= 1.000 - 100 ) |
@@ -199,7 +207,7 @@ Deshalb werden die folgenden Aufträge erstellt.
 Ein Planungsverrechnungsschlüssel wird in den Formularen **Transaktionen - Planzahlenverrechnungsschlüssel** und **Prozentplanzahlenverrechnungsschlüssel**-Methoden zum Reduzieren des Planungsbedarfes verwendet. Gehen Sie folgendermaßen vor, um einen Planzahlenverrechnungsschlüssel zu erstellen und einzurichten.
 
 1. Gehen Sie zu **Produktprogrammplanung \> Einstellungen \> Abdeckung \> Planzahlenverrechnungsschlüssel**.
-2. Klicken Sie auf **Neu** oder drücken Sie **STRG+N**, um einen neuen Planzahlenverrechnungsschlüssel zu erstellen.
+2. Wählen Sie **Neu**, um einen Reduzierungsschlüssel zu erstellen.
 3. Im Feld **Planzahlenverrechnungsschlüssel** geben Sie eine eindeutige Kennung für den Planzahlenverrechnungsschlüssel ein. Geben Sie im Feld  **Namen** einen Namen ein. 
 4. Hier können Sie die Perioden sowie die Planzahlenverrechnungsschlüsselprozentsatz in jeder Periode eingeben:
 
@@ -227,3 +235,6 @@ Wenn Sie **Transaktionen - Planzahlenverrechnungsschlüssel** oder **Transaktioe
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Hauptpläne – Übersicht](master-plans.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

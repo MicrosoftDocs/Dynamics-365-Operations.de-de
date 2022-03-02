@@ -89,7 +89,7 @@ Allgemeine, wenn mit dem mobilen Designer gearbeitet wird, vergewissern Sie sich
 <td>Welche Felder aus den Rechnungsposition wünschen die Benutzer in mobilen Umgebungen und in welcher Reihenfolge?</td>
 <td><ol>
 <li>Beschaffungskategorie</li>
-<li>Leistung</li>
+<li>Menge</li>
 <li>Preis je Einheit</li>
 <li>Nettobetrag der Position</li>
 <li>Steuerbetrag (US 1099)</li>
@@ -205,7 +205,7 @@ Um die Rechnungsdetailseite für die mobile App zu entwerfen, verwenden Sie die 
 
 10. Fügen Sie die folgenden Felder aus Positionsraster auf der Seite hinzu:
     - Beschaffungskategorie
-    - Leistung
+    - Menge
     - Preis je Einheit
     - Nettobetrag der Position
     - Steuerbetrag (US 1099)
@@ -488,7 +488,7 @@ Die mobile Seite **Buchhaltung anzeigen** ist derzeit mit keiner mobilen Seiten 
 <td>Welche Felder aus den Rechnungsposition wünschen die Benutzer in mobilen Umgebungen und in welcher Reihenfolge?</td>
 <td><ol>
 <li>Beschaffungskategorie</li>
-<li>Leistung</li>
+<li>Menge</li>
 <li>Preis je Einheit</li>
 <li>Nettobetrag der Position</li>
 <li>Steuerbetrag (US 1099)</li>

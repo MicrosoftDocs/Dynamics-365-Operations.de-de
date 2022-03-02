@@ -148,7 +148,7 @@ Bevor Sie Kundenaufträge und Lieferungen erstellen, müssen Sie sicherstellen, 
 
 1. Stellen Sie sicher, dass der folgende Bestand verfügbar ist. Wenn Sie den Lagerbestand anpassen müssen, können Sie manuelle Bewegungen erstellen, Wiederbeschaffung verwenden oder einen anderen Flow verwenden.
 
-    | Artikelnummer | Leistung | Lagerhaus | Speicherort   | Ladungsträger |
+    | Artikelnummer | Menge | Lagerhaus | Speicherort   | Ladungsträger |
     |-------------|----------|-----------|------------|---------------|
     | A0001       | 100      | 61        | 06A01R2S1B | MyLP1         |
     | A0002       | 100      | 61        | 06A01R3S1B | MyLP2         |

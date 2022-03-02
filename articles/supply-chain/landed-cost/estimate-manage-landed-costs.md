@@ -81,7 +81,7 @@ Die folgende Tabelle beschreibt die Felder, die für jeden Artikel verfügbar si
 |---|---|
 | Artikelnummer | Wählen Sie den Artikel aus, für den Sie den Preis bestimmen wollen. (Wenn der Artikel noch nicht im System vorhanden ist, erstellen Sie einen Dummy-Artikel, fügen Sie ihn optional einer Kostengruppe für Fahrt-Artikel zu und lassen Sie dann den Preis entweder leer oder erstellen oder ändern Sie ihn). |
 | Kreditorenkonto | Wählen Sie den Lieferanten, der für die Schätzung dieses Artikels verwendet werden soll. Wenn dem Artikel ein Standardlieferant zugewiesen ist, wird dieses Feld automatisch festgelegt. |
-| Leistung | Wählen Sie die Menge, die Sie kaufen wollen. |
+| Menge | Wählen Sie die Menge, die Sie kaufen wollen. |
 | Einstandspreis | Das System verwendet seine Preisfindungsregeln, um einen Anfangspreis zu finden, aber Sie können diesen Preis bei Bedarf überschreiben. |
 | Verkaufspreis | Geben Sie den erwarteten Verkaufspreis der Waren ein. |
 | Verbrauchsberechnung | Geben Sie einen Dezimalwert für die Messung der Waren ein. Die Einheit ist diejenige, die für das entsprechende freigegebene Produkt festgelegt ist. |
@@ -108,7 +108,7 @@ Das Inforegister **Zeilen** listet jeden Artikel auf, der in der aktuellen Kalku
 |---|---|
 | Kreditorenkonto | Das Kreditorenkonto, das mit dem Artikel verknüpft ist. |
 | Artikelnummer | Die Nummer des Artikels. |
-| Leistung | Die Anzahl der Artikel, die zur Ermittlung der Kalkulation verwendet werden. |
+| Menge | Die Anzahl der Artikel, die zur Ermittlung der Kalkulation verwendet werden. |
 | Einstandspreis | Der Selbstkostenpreis gemäß der Handelsvereinbarung. Dieser Wert wird in der lokalen Währung angezeigt. |
 | Verbrauchsberechnung | Die individuelle Messung. Die Einheit ist diejenige, die für das jeweilige freigegebene Produkt definiert ist. |
 | Vorkalkulierte Gesamttransportkosten | Die geschätzten Gesamttransportkosten für die Gesamtmenge. |

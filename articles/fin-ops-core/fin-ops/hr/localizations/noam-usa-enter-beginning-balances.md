@@ -1,12 +1,10 @@
 ---
 title: Eingeben von Lohnanfangssalden
-description: In diesem Thema werden die Schritte zum Eingeben für Anfangssalden für Einkommenscodes, Abzüge, Vergütungen und Steuern beschrieben. Diese Informationen sind für Partner hilfreich, um Daten für eine neue Lohnimplementierung von einem anderen System zu migrieren oder transferieren.
+description: In diesem Thema werden die Schritte zum Eingeben für Anfangssalden für Einkommenscodes, Abzüge, Vergütungen und Steuern beschrieben.
 author: andreabichsel
-manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8443bc5c63a90d80757ab4b7507502497c2aaa69
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 0a5529e3268727dce022daebb853e50710e5bde84811014febe30e80afee9ed6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797783"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721875"
 ---
 # <a name="enter-payroll-beginning-balances"></a>Eingeben von Lohnanfangssalden
 
@@ -69,7 +67,7 @@ Dieser Schritt erstellt manuell eine Lohnabrechnung für jede einzelne Arbeitskr
     | Feld            | Wert       |
     |------------------|-------------|
     | Einkommenscode    | Regulärer Lohn |
-    | Leistung         | 1.00        |
+    | Menge         | 1.00        |
     | Satz             | 30,000      |
     | Positionsdetails-Registerkarte |             |
     | Manuell           | (markiert)    |
@@ -79,7 +77,7 @@ Dieser Schritt erstellt manuell eine Lohnabrechnung für jede einzelne Arbeitskr
     | Feld            | Wert    |
     |------------------|----------|
     | Einkommenscode    | Bonus    |
-    | Leistung         | 1.0000   |
+    | Menge         | 1.0000   |
     | Satz             | 4250.00  |
     | Positionsdetails-Registerkarte |          |
     | Manuell           | (markiert) |
@@ -89,7 +87,7 @@ Dieser Schritt erstellt manuell eine Lohnabrechnung für jede einzelne Arbeitskr
     | Feld           | Wert      |
     |-----------------|------------|
     | Einkommenscode   | Provision |
-    | Leistung        | 1.0000     |
+    | Menge        | 1.0000     |
     | Satz            | !,299,00   |
     | Satz            | 1,299.00   |
     | Positionsdetails-Registerkarte |            |
@@ -166,3 +164,6 @@ Es ist möglich, Buchungen zu stornieren und erneut eingeben. Um die Buchung zu 
 2. Klicken Sie auf **Ja**, wenn die Nachricht „Wenn Sie diese Zahlungsaufstellung zurücksetzen, wird eine Rückbuchungszahlungsaufstellung zum Ausgleichen dieser Zahlungsaufstellung erstellt. Keine der Zahlungsaufstellungen kann bearbeitet werden. Möchten Sie diese Zahlungsaufstellung zurücksetzen?“ angezeigt wird. 
 
 Nachdem Sie die Zahlungsaufstellung rückgängig gemacht haben, können Sie eine neue Zahlungsaufstellung für den Mitarbeiter aus der zuvor erstellten Lohnabrechnung erstellen. Achten Sie darauf, dass alle fehlerhaften Positionen der Zahlungsaufstellung korrigiert werden, bevor Sie die neue Zahlungsaufstellung erzeugen, und erzeugen Sie dann die neuen Zahlungsaufstellungen mit den richtigen Beträgen. 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

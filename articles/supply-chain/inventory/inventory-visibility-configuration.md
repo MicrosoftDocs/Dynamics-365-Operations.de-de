@@ -313,7 +313,7 @@ In diesem Abschnitt finden Sie ein Beispiel, das zeigt, wie die Hierarchie funkt
 
 Die folgende Tabelle zeigt eine Liste der verfügbaren Bestände für dieses Beispiel.
 
-| Artikel | ColorId | SizeId | StyleId | Leistung |
+| Artikel | ColorId | SizeId | StyleId | Menge |
 |---|---|---|---|---|
 | T-Shirt | Schwarz | Klein | Breit | 1 |
 | T-Shirt | Schwarz | Klein | Regelmäßig | 2 |

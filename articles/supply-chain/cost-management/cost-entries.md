@@ -2,11 +2,9 @@
 title: Kosteneinträge
 description: Dieser Artikel enthält Informationen zu Kosteneinträgen und wenn sie erstellt werden. Ein Kosteneintrag ist ein Datensatz, der die Menge und die Kosten eines gegebenen Ereignisses erfasst.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCostOnhandItem
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 19131
 ms.assetid: dd2663d8-bcc0-47b1-b36d-57433143487c
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12ff771cf44595420ca721605daabaa6b071a4ff
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 53e2dd7375daf0d33ff61b870fecfdaa44dd0838
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967807"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575919"
 ---
 # <a name="cost-entries"></a>Kosteneinträge
 
@@ -53,7 +51,7 @@ Die neue **Kosteneinträge**-Seite ermöglicht die Anzeige und Steuerung von Erf
 -   Eine paar Tage nach der Erfassung des Rechnungsereignisses steigen die Kosten auf 11,00 EUR. Daher ist der Gesamtbetrag nun 1.100 EUR. Ein zweiter Beleg wird erstellt, um die Differenz von 100 EUR zu buchen.
 -   Einige Tage später, wird ein sonstiger Zuschlag von 15,00 EUR zur Abdeckung der Transportkosten auf der Bestellung erfasst.
 
-| Beleg | Datum       | Referenz      | Anzahl | Loskennung  | Leistung | Betrag  |
+| Beleg | Datum       | Referenz      | Anzahl | Loskennung  | Menge | Betrag  |
 |---------|------------|----------------|--------|---------|---------------|----|
 | 00001   | 01.01.2015 | Bestellung | 100001 | 0000101 | 100,00   | 1000,00 |
 | 00002   | 20.01.2015 | Bestellung | 100001 | 0000101 |          | 100,00  |
@@ -64,10 +62,12 @@ Die **Kosteneinträge**-Seite ermöglicht das Filter nach der Dokumentenkennung 
 > [!NOTE]
 > Kosteneinträge sind nur für [Kostenobjekte ](cost-object.md)oder freigegebene Produkte verfügbar.
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Kostenobjekte](cost-object.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

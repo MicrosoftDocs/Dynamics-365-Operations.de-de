@@ -51,7 +51,7 @@ Sie legen auch den folgenden Karton fest, der für die Verpackung verwendet wird
 
 Schließlich legen Sie eine Bestellung mit den folgenden Produkten und Mengen fest.
 
-| Auftragsposition | Leistung |
+| Auftragsposition | Menge |
 |---|---|
 | HDMI-Kabel 12' | 9 |
 | HDMI-Kabel 18' | 8 |

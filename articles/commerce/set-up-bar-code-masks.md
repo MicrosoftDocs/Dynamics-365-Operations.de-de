@@ -1,12 +1,10 @@
 ---
 title: Einrichten von Strichcodemasken
 description: In diesem Thema wird beschrieben, wie Strichcode-Maskenzeichen Strichcodemasken eingerichtet und wie Strichcodemasken zu Strichcodes zugeordnet werden.
-author: rubencdelgado
-manager: AnnBe
+author: BrianShook
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
 audience: Application User, Developer, IT Pro
@@ -15,15 +13,15 @@ ms.custom: 265994
 ms.assetid: 5831c74d-d2a1-4fa5-9a9a-a5aba8848381
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5432741e7cdc21054d02bd24591deb307d096229
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ddba3ef6c6a1fb1f71198291d5eccd44be737336
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969800"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779821"
 ---
 # <a name="set-up-bar-code-masks"></a>Einrichten von Strichcodemasken
 
@@ -45,7 +43,7 @@ Strichcodemasken werden verwendet, um Strichcodes erstellen und Strichcodes schn
 | Stilziffer      | Gibt Stil in einem Strichcode angezeigt, die für eine ausgewählte Produktvariante erstellt wird, die Stil enthält. |
 | EAN-Lizenzcode | Platzhalter für EAN-Lizenz ausgestellt für EAN-Lizenzcodes. |
 | Preis            | Gibt Preis für Preis eingebettete Strichcodes an. |
-| Leistung         | Gibt Menge in der Menge/zufälliges Gewicht eingebettete Strichcodes an. |
+| Menge         | Gibt Menge in der Menge/zufälliges Gewicht eingebettete Strichcodes an. |
 | Mitarbeiter         | Gibt Strichcodesegment für die Mitarbeiterkennung an, für die Anmeldung des Strichcodes POS verwendet wird. |
 | Debitor         | Gibt das Debitorkennungssegment an. |
 | Dateneintrag       | *Nicht implementiert* |
@@ -82,3 +80,6 @@ Strichcodemasken müssen den Strichcodes zugewiesen werden, bevor sie verwendet 
 5. Klicken Sie auf **Speichern**.
 
 Die kann nun Strichcodemaske verwendet werden, ob Strichcodes für Produkte erstellen. Die oben genannten Schritte sind Beispiele dazu, wie von Strichcodemasken für Produkte erstellt, doch sie werden auch, wie Strichcodemasken für alle anderen Strichcodetypen unterstützten erstellt. Strichcodemasken, Arten und Länge soll Verwendung in Ihrer Umgebung bestimmten angepasst werden.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

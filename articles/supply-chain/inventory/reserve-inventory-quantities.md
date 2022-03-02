@@ -1,29 +1,26 @@
 ---
 title: Reservieren von Lagermengen
 description: In diesem Thema werden die verschiedenen Optionen beschrieben, die für die Reservierung von Bestand verfügbar sind.
-author: perlynne
-manager: tfehr
+author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 207264
 ms.assetid: 47537e4f-cdf6-4813-96fd-c945b2dfe9d4
 ms.search.region: Global
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea7311ce34fec476ad9953e954a07a86acd13afc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0cf6f14e30f84f48428b351287eb1c65915a14c1
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428975"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571136"
 ---
 # <a name="reserve-inventory-quantities"></a>Reservieren von Lagermengen
 
@@ -49,7 +46,7 @@ Bestandreservierungsrichtlinien werden auf den Seiten **Lagersteuerungsgruppen**
 
 Der Abschnitt **Bestandrichtlinie** enthält die folgenden Reservierungsrichtlinien.
 
-|                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| &nbsp;                  | &nbsp;                                                                                                                                     |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Reservierungsrichtlinie**  | **Beschreibung**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | FIFO-datumsgesteuert    | Wenn Sie im Formular die Option **FIFO-datumsgesteuert** aktivieren, wird die Lagerreservierung über ein Sortierdatum nach dem FIFO-Prinzip gesteuert. Chargen sind basierend auf dem frühesten Wareneingangsdatum nach dem Prinzip "first in, first out" (FIFO) reserviert.                                                                                                                                                                                                                                                                       |
@@ -63,7 +60,7 @@ Der Abschnitt **Bestandrichtlinie** enthält die folgenden Reservierungsrichtlin
 
 In diesem Beispiel besteht der verfügbare Lagerbestand für Artikelnummer A für drei verschiedene Chargennummern.
 
-| Artikelnummer | Chargennummer | Leistung | Datum             |
+| Artikelnummer | Chargennummer | Menge | Datum             |
 |-------------|--------------|----------|------------------|
 | A:           | 1.000         | 5        | 2. Februar 2016 |
 | A:           | 1001         | 3        | 1. Januar 2016  |
@@ -83,3 +80,6 @@ Es gibt zwei Möglichkeiten, die Reservierungen **im Bestand und in Lagerortverw
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>Bestandreservierungsrichtlinien auf der Produktionsparameterseite
 
 Der Wert des Feldes **Reservierung** auf der Registerkarte **Allgemeines** auf der Seite **Produktionsparameter** ist abhängig vom Standardpunkt im Produktionsprozess, für den Lagerbestand reserviert werden soll. So kann zum Beispiel Bestand reserviert werden, wenn Arbeit eingeplant wird oder wenn Arbeit gestartet wird.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

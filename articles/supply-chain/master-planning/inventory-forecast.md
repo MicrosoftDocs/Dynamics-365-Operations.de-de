@@ -114,7 +114,7 @@ Die folgende Tabelle beschreibt die Felder auf der Registerkarte **Übersicht** 
 | **Artikelzuteilungsschlüssel** | Der Artikelverteilungsschlüssel, der der Planung zugeordnet ist. |
 | **Artikelgewichtsmenge** | Die prognostizierte Menge in der angegebenen Artikelgewichteinheit. |
 | **Artikelgewichtseinheit** | Die Artikelgewichteinheit ist die Einheit, in der der Artikel eingekauft wird. Der Wert wird automatisch aus der Artikeleinrichtung abgerufen. |
-| **Leistung** | Die geplante Menge in der angegebenen Bestelleinheit. |
+| **Menge** | Die geplante Menge in der angegebenen Bestelleinheit. |
 | **Einheit** | Die Einheit, in der der Artikel bestellt wird. Der Wert wird automatisch aus der Artikeleinrichtung abgerufen. Sie können es jedoch ändern, wenn Einheitenumrechnungen eingerichtet sind. |
 | **Betrag** | Der Bruttobetrag abzüglich Rabatten, mit dem die Planungsbuchung zur Planung beiträgt. |
 | **Währung** | Die für die Planungsbuchung verwendete Währung. Die Standardwährung wird automatisch eingegeben, aber der Benutzer kann eine andere Währung auswählen. |
@@ -153,7 +153,7 @@ Die Felder unterhalb des Rasters enthalten weitere Artikeldetails. Einige dieser
 | Rabattprozentsatz | Der Rabatt als Prozentsatz. |
 | Rabattbetrag | Als Betrag pro Verkaufseinheit ausgedrückter Rabatt. |
 | Bruttobetrag | Der Betrag, wenn keine Rabatte gewährt werden. |
-| Leistung | Die Buchungsmenge, ausgedrückt in der Lagereinheit des Artikels. |
+| Menge | Die Buchungsmenge, ausgedrückt in der Lagereinheit des Artikels. |
 | Unterstückliste | Die Stücklistennummer einer bestimmten untergeordneten Stückliste. |
 | Teilstrecke | Die Arbeitsplannummer eines bestimmten untergeordneten Arbeitsplans. |
 
@@ -323,7 +323,7 @@ Die folgende Tabelle beschreibt die Felder im Raster auf der Seite **Bestandspla
 | **Budgetdatum** | Das Datum der Planungsbuchung. |
 | **Planungstyp** | Die Quelle der Transaktion (*Bedarfsplanung* oder *Beschaffungsplanung*). |
 | **Artikelgewichtsmenge** | Die prognostizierte Menge in der Artikelgewichteinheit. |
-| **Leistung** | Die geplante Menge in der Lagereinheit. |
+| **Menge** | Die geplante Menge in der Lagereinheit. |
 | **Artikelgewicht kumuliert** | Die kumulierte Planungsmenge in der Artikelgewichteinheit, wenn mehrere Planungspositionen für denselben Artikel kumuliert wurden. |
 | **Unterstückliste** | Die Stücklistennummer einer bestimmten untergeordneten Stückliste. |
 | **Teilstrecke** | Die Arbeitsplannummer eines bestimmten untergeordneten Arbeitsplans. |

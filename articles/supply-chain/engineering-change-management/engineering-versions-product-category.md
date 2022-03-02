@@ -2,26 +2,23 @@
 title: Engineering-Versionen und Engineering-Produktkategorien
 description: Dieses Thema informiert Sie über das Konzept der Engineering-Versionen. Engineering-Versionen sorgen dafür, dass unterschiedliche Zustände eines Produkts und seiner Daten aktuell und übersichtlich gehalten und im System visualisiert werden können.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgLookupDynastring, EngChgProductVersionNumberRule, EngChgEcmProductRoute, EngChgEcmRequestProducts, EngChgEcmProductRoute, EngChgEcmProductPreview,EngChgEcmProductBOMItemIdLookup, EngChgEcmProductBOMConsistOf, EngChgEcmProductCreate, EngChgEcmProductLookup, EngChgProductVersionPrCompany, ngChgProductTypeLookup, EngChgProductType, EngChgProductItemPart, EngChgProductItem, EngChgEcmCategory, EngChgEcmBomDesignerEditBom, EngChgEcmBomDesigner, EngChgEcmBOMCopyDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 3eb5b5c4304b393008ecc5f5ff5a663295ed0d22
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 42faa9e5f073d718c18422e37212c2ae8a28b28d
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4429150"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572888"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Engineering-Versionen und Engineering-Produktkategorien
 
@@ -51,7 +48,8 @@ Wenn Sie Engineering-Produkte verwenden, hat jedes Produkt mindestens eine Engin
 - Das Ingenieurbüro, das das Produkt erstellt hat und Eigentümer des Produkts ist (weitere Informationen finden Sie unter [Ingenieurbüros und Dateneigentumsregeln](engineering-org-data-ownership-rules.md)).
 - Zugehörige technische Dokumente, wie z. B. eine Assembly-Anleitung, Benutzeranweisungen, Bilder und Links
 - Die Engineering-Attribute (Weitere Informationen finden Sie unter [Engineering-Attribute und die Suche nach Engineering-Attributen](engineering-attributes-and-search.md).)
-- Die Engineering-Stücklisten
+- Stückliste (BOM) für technische Produkte
+- Formeln für die Prozessfertigung von Produkten
 - Die Arbeitspläne für das Engineering
 
 Sie können diese Daten in einer bestehenden Version aktualisieren oder eine neue Version erstellen, indem Sie einen *Engineering-Änderungsauftrag* verwenden. (Weitere Informationen finden Sie unter [Änderungen an Engineering-Produkten verwalten](engineering-change-management.md).) Wenn Sie eine neue Version eines Produkts erstellen, kopiert das System alle Engineering-relevanten Daten in diese neue Version. Sie können dann die Daten für diese neue Version ändern. Auf diese Weise können Sie bestimmte Daten für jede aufeinanderfolgende Version verfolgen. Um die Unterschiede zwischen aufeinanderfolgenden Engineering-Versionen zu vergleichen, sehen Sie sich den Engineering-Änderungsauftrag an, der Änderungsarten enthält, die alle Änderungen anzeigen.
@@ -113,9 +111,11 @@ Legen Sie die folgenden Felder auf dem **Details** Inforegister einer Engineerin
 | Feld | Beschreibung |
 |---|---|
 | Produkttyp | Wählen Sie aus, ob die Kategorie für Produkte oder Dienstleistungen gilt. |
-| Versionen in Transaktionen verfolgen | Wählen Sie, ob die Version des Produkts auf allen Transaktionen gestempelt werden soll (logistische Auswirkungen). Wenn Sie beispielsweise die Version in Transaktionen verfolgen, wird in jedem Verkaufsauftrag angezeigt, welche spezifische Version des Produkts in diesem Verkaufsauftrag verkauft wurde. Wenn Sie die Version in Transaktionen nicht nachverfolgen, zeigen Verkaufsaufträge nicht an, welche spezifische Version verkauft wurde. Stattdessen zeigen sie immer die neueste Version an.<ul><li>Wenn diese Option auf *Ja* festgelegt ist, wird ein Produktstamm für das Produkt erstellt, und jede Version des Produkts wird eine Variante sein, die die Produktdimension *Version* verwendet. Das Feld **Produktuntertyp** wird automatisch auf *Produktstamm* festgelegt, und Sie müssen eine Produktdimensionsgruppe auswählen, in der die Dimension *Version* aktiv ist. Es werden nur Produktdimensionsgruppen angezeigt, bei denen *Version* eine aktive Dimension ist. Sie können neue Produktdimensionsgruppen erstellen, indem Sie die Schaltfläche **Bearbeiten** (Bleistiftsymbol) wählen.</li><li>Wenn diese Option auf *Nein* festgelegt ist, wird die Produktdimension *Version* nicht verwendet. Sie können dann wählen, ob ein Produkt oder ein Produktstamm erstellt werden soll, der die anderen Dimensionen verwendet.</li></ul><p>Diese Option wird oft für Produkte verwendet, die einen Kostenunterschied zwischen den Versionen haben, oder für Produkte, bei denen unterschiedliche Bedingungen in Bezug auf den Kunden gelten. Daher ist es wichtig, anzugeben, welche Version in jeder Transaktion verwendet wurde.</p> |
+| Produktionstyp | Dieses Feld wird nur angezeigt, wenn Sie [Formeländerungsmanagement](manage-formula-changes.md) in Ihrem System aktiviert haben. Dient zum Auswählen des Produktionstyps, für den diese Produktkategorie gültig ist:<ul><li>**Planungsgegenstand** – Verwenden Sie diese Engineering-Kategorie, um das Formeländerungsmanagement für Planungselemente durchzuführen. Planungselemente verwenden Formeln. Sie ähneln Formeln, werden jedoch nur zur Herstellung von Co-Produkten und Nebenprodukten verwendet, nicht von Fertigprodukten. Formeln werden bei der Prozessherstellung verwendet.</li><li>**Stückliste** – Verwenden Sie diese Engineering-Kategorie, um Engineering-Produkte zu verwalten, die keine Formeln verwenden und normalerweise (aber nicht unbedingt) Stücklisten enthalten.</li><li>**Formel** – Verwenden Sie diese Engineering-Kategorie, um das Formeländerungsmanagement für fertiggestellte Produkte durchzuführen. Diese Artikel haben eine Formel, aber keine Stückliste. Formeln werden bei der Prozessherstellung verwendet.</li></ul> |
+| Artikelgewicht | Diese Option wird nur angezeigt, wenn Sie [Formeländerungsmanagement](manage-formula-changes.md) in Ihrem System aktiviert haben. Es ist nur verfügbar, wenn das Feld **Produktionsart** auf *Planungsgegenstand* oder *Formel* festgelegt ist. Setzen Sie diese Option auf *Ja*, wenn Sie diese Engineering-Kategorie verwenden, um Elemente zu verwalten, für die eine Unterstützung des Fanggewichts erforderlich ist. |
+| Versionen in Transaktionen verfolgen | Wählen Sie, ob die Version des Produkts auf allen Transaktionen gestempelt werden soll (logistische Auswirkungen). Wenn Sie beispielsweise die Version in Transaktionen verfolgen, wird in jedem Verkaufsauftrag angezeigt, welche spezifische Version des Produkts in diesem Verkaufsauftrag verkauft wurde. Wenn Sie die Version in Transaktionen nicht nachverfolgen, zeigen Verkaufsaufträge nicht an, welche spezifische Version verkauft wurde. Stattdessen zeigen sie immer die neueste Version an.<ul><li>Wenn diese Option auf *Ja* festgelegt ist, wird ein Produktstamm für das Produkt erstellt, und jede Version des Produkts wird eine Variante sein, die die Produktdimension *Version* verwendet. Das Feld **Produktuntertyp** wird automatisch auf *Produktstamm* festgelegt, und im Feld **Produktdimensionsgruppe** müssen Sie eine Produktdimensionsgruppe auswählen, in der die Dimension *Version* aktiv ist. Es werden nur Produktdimensionsgruppen angezeigt, bei denen *Version* eine aktive Dimension ist. Sie können neue Produktdimensionsgruppen erstellen, indem Sie die Schaltfläche **Bearbeiten** (Bleistiftsymbol) wählen.</li><li>Wenn diese Option auf *Nein* festgelegt ist, wird die Produktdimension *Version* nicht verwendet. Sie können dann wählen, ob ein Produkt oder ein Produktstamm erstellt werden soll, der die anderen Dimensionen verwendet.</li></ul><p>Diese Option wird oft für Produkte verwendet, die einen Kostenunterschied zwischen den Versionen haben, oder für Produkte, bei denen unterschiedliche Bedingungen in Bezug auf den Kunden gelten. Daher ist es wichtig, anzugeben, welche Version in jeder Transaktion verwendet wurde.</p> |
 | Produktuntertyp | Wählen Sie, ob die Kategorie Produkte oder Produktstämme enthalten soll. Für Produktstämme werden Produktdimensionen verwendet.
-| Produktdimensionsgruppe | Die Einstellung **Versionen in Transaktionen verfolgen** hilft Ihnen bei der Auswahl des Produktuntertyps. Wenn Sie angegeben haben, dass Sie die Version in Transaktionen verfolgen wollen, werden die Produktdimensionsgruppen angezeigt, in denen die Dimension *Version* verwendet wird. Andernfalls werden nur Produktdimensionsgruppen angezeigt, in denen die Dimension *Version* nicht verwendet wird. |
+| Produktdimensionsgruppe | Die Einstellung **Versionen in Transaktionen verfolgen** hilft Ihnen, die Gruppe der Produktdimensionen auszuwählen. Wenn Sie angegeben haben, dass Sie die Version in Transaktionen verfolgen wollen, werden die Produktdimensionsgruppen angezeigt, in denen die Dimension *Version* verwendet wird. Andernfalls werden nur Produktdimensionsgruppen angezeigt, in denen die Dimension *Version* nicht verwendet wird. |
 | Status des Produktlebenszyklus bei der Erstellung | Legen Sie den Standardstatus für den Produktlebenszyklus fest, den ein Engineering-Produkt haben soll, wenn es zum ersten Mal erstellt wird. Weitere Informationen finden Sie unter [Produktlebenszyklusstatus und Transaktionen](product-lifecycle-state-transactions.md). |
 | Versionsnummernregel | Wählen Sie die Versionsnummernregel, die für die Kategorie gilt:<ul><li>**Manuell** - Sie wählen die Versionsnummer für jede neue Version.</li><li>**Automatisch** - Das System legt die Versionsnummer fest, basierend auf einem Format, das Sie definieren. Wenn Sie das Format festlegen, verwenden Sie ein Zahlenzeichen (\#), um eine Ziffer darzustellen, und jedes andere Zeichen, um einen konstanten Wert darzustellen. Wenn Sie das Format z. B. als *V-\#\#* definieren, ist die erste Version „V-01“, die zweite Version „V-02“ und so weiter.</li><li>**Liste** - Das System nimmt die nächste Nummer aus einer vordefinierten Liste von benutzerdefinierten Werten, die Sie definieren.</li></ul> |
 | Gültigkeit erzwingen | Wählen Sie, ob die Gültigkeitsdaten von Engineering-Versionen zusammenhängend sein müssen oder ob es Lücken und Überschneidungen geben kann. Diese Einstellung wirkt sich auf die Art und Weise aus, wie Sie die Felder **Gültig von** und **Gültig bis** für jede Engineering-Version verwenden können, für die die Kategorie gilt.<ul><li>Wenn diese Option auf *Ja* festgelegt ist, muss für jede Version ein **Wirksam von**-Wert angegeben werden, und es sind weder Überschneidungen noch Lücken zwischen den Versionen erlaubt. Der Datumsbereich für jede Engineering-Version ist direkt mit der vorherigen und der nächsten Engineering-Version verbunden, falls diese existieren. In diesem Szenario wird immer die neueste Version verwendet, und ältere Versionen werden nicht mehr verwendet.</li><li>Wenn diese Option auf **Nein** festgelegt ist, gibt es keine Einschränkungen bei den Gültigkeitsdatumsfeldern für Engineering-Versionen, und sowohl Überschneidungen als auch Lücken sind erlaubt. In diesem Szenario können mehrere Versionen gleichzeitig aktiv sein, und Sie können mit jeder aktiven Version arbeiten.</li></ul><p>Diese Option wirkt sich auch auf Stücklisten und Arbeitspläne aus, die mit einer Produktversion verbunden sind. Weitere Informationen finden Sie im Abschnitt [Stücklisten und Arbeitspläne mit Engineering-Versionen verbinden](#boms-routes) weiter unten in diesem Thema.</p> |
@@ -142,7 +142,10 @@ Legen Sie für jede Zeile, die Sie dem Raster hinzufügen, die folgenden Felder 
 
 ### <a name="readiness-policy-fasttab"></a>Richtlinie für Bereitschaft Inforegister
 
-Verwenden Sie das Feld **Produkt-Bereitschaftsrichtlinie**, um die Bereitschaftsrichtlinie auszuwählen, die für Produkte gilt, die zu dieser Kategorie gehören. Weitere Informationen finden Sie unter [Produktbereitschaft](product-readiness.md).
+Verwenden Sie das Feld **Produkt-Bereitschaftsrichtlinie**, um die Bereitschaftsrichtlinie auszuwählen, die für Produkte gilt, die zu dieser Engineering-Kategorie gehören. Weitere Informationen finden Sie unter [Produktbereitschaft](product-readiness.md).
+
+> [!NOTE]
+> Das Feld **Produktbereitschaftsrichtlinie** funktioniert etwas anders, wenn Sie die Funktion *Produktbereitschaftsprüfungen* in Ihrem System aktiviert haben. (Mit dieser Funktion können Sie Bereitschaftsrichtlinien auf Standard \[Nicht-Engineering\] Produkte anwenden). Weitere Informationen finden Sie unter [Weisen Sie Standard- und Engineering-Produkten Bereitschaftsrichtlinien zu](product-readiness.md#assign-policy).
 
 ### <a name="release-policy-fasttab"></a>Inforegister-Richtlinie
 
@@ -153,7 +156,7 @@ Verwenden Sie das Feld **Produktfreigabe-Richtlinie**, um die Freigabe-Richtlini
 Die Einstellung der Option **Gültigkeit erzwingen** ist wichtig für die Verbindung von Stücklisten und Arbeitsplänen mit jeder Engineering-Version. Sie können mehrere Stücklisten oder Arbeitspläne pro Produkt nur dann aktivieren, wenn es einen Unterschied in einer der folgenden Einstellungen gibt:
 
 - Produktdimension
-- Leistung
+- Menge
 - Standort
 - Gültigkeitsdaten
 
@@ -162,3 +165,6 @@ Stücklisten und Arbeitspläne werden von der jeweiligen Arbeitsplanversion aus 
 Für Produkte, bei denen Sie die Produktdimension *Version* verwenden (zusammen mit logistischen Auswirkungen auf die Transaktionen), wird die Version auch zu den Stücklisten und Arbeitsplänen hinzugefügt. Dieses Verhalten hilft bei der Unterscheidung der Stücklisten und Arbeitspläne von aufeinanderfolgenden Versionen, unabhängig von der Einstellung **Wirkung erzwingen**.
 
 Für Produkte, bei denen Sie die Produktdimension *Version* nicht verwenden (ohne logistische Auswirkungen auf die Transaktionen), wird die Version nicht zu den Stücklisten oder Arbeitsplänen hinzugefügt. Daher gibt es keinen Unterschied zwischen den Stücklisten und Arbeitsplänen von aufeinanderfolgenden Versionen. In diesem Fall empfehlen wir dringend, die Option **Wirkung erzwingen** auf *Ja* festzulegen. Auf diese Weise verhindern Sie zum einen, dass sich Engineering-Versionen überschneiden, zum anderen können Sie die Stückliste und den Arbeitsplan einer neueren Version aktivieren, ohne vorher die Stückliste und den Arbeitsplan der Vorgängerversion inaktivieren zu müssen. Wenn Sie in diesem Fall die Option **Wirksamkeit erzwingen** auf *Ja* festlegen, müssen Sie die Stücklisten und Arbeitspläne älterer Versionen manuell inaktivieren, bevor Sie die neuere Version aktivieren können.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
