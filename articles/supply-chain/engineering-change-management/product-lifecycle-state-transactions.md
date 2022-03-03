@@ -2,26 +2,23 @@
 title: Zustände und Transaktionen im Produktlebenszyklus
 description: In diesem Thema wird erläutert, wie Sie steuern können, welche Transaktionen für die einzelnen Lebenszyklusstatus zulässig sind, während ein Engineering-Produkt seinen Lebenszyklus durchläuft.
 author: t-benebo
-manager: tfehr
-ms.date: 09/28/2020
+ms.date: 02/17/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgEcoResProductLifecycleStateChange
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 69ee39479424c1b629388c18e8bfefd023036d22
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 1e9b8a9f25edfa654a57e0ab4071cd93c8033d85
+ms.sourcegitcommit: d375ef4138e898621416754c40770d8ccca4d271
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4429155"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8322743"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Zustände und Transaktionen im Produktlebenszyklus
 
@@ -76,3 +73,33 @@ Die folgenden Felder sind für jeden Prozess verfügbar, der auf der Registerkar
 | Richtlinie | Wählen Sie einen der folgenden Werte, um zu steuern, ob und wie der aktuelle Prozess für Produkte zugelassen wird, die sich in diesem Lebenszyklus-Status befinden:<ul><li>**Aktiviert** - Der Geschäftsprozess ist erlaubt.</li><li>**Blockiert** - Der Prozess ist nicht erlaubt. Wenn ein Benutzer versucht, den Prozess für ein Produkt zu verwenden, das sich in diesem Status befindet, wird das System den Versuch blockieren und stattdessen einen Fehler anzeigen. So können Sie z. B. verhindern, dass Produkte mit abgelaufenem Lebenszyklus gekauft werden.</li><li>**Aktiviert mit Warnung** - Der Prozess ist erlaubt, aber es wird eine Warnung angezeigt. Sie könnten z.B. ein Prototyp-Produkt auf einen Produktionsauftrag einlagern, der von der Forschungs- und Entwicklungsabteilung erstellt wird. Andere Abteilungen sollten jedoch wissen, dass sie das Produkt noch nicht produzieren sollen.</li></ul> |
 
 Wenn Sie weitere Regeln für den Status des Lebenszyklus als Anpassung hinzufügen, können Sie diese Regeln in der Benutzeroberfläche (UI) anzeigen, indem Sie **Prozesse aktualisieren** im oberen Fensterbereich auswählen. Die Schaltfläche **Prozesse aktualisieren** ist nur für Administratoren verfügbar.
+
+## <a name="lifecycle-states-for-released-products-and-product-variants"></a>Lebenszyklusstatus für freigegebene Produkte und Produktvarianten
+
+Für ein Produkt mit Varianten (Produktmaster und Varianten) hat das Produkt (Produktmaster) einen Lebenszyklusstatus, und jede der Varianten kann auch einen anderen Lebenszyklusstatus haben.
+
+Wenn für bestimmte Prozesse entweder die Variante oder das Produkt blockiert ist, wird der Prozess ebenfalls blockiert. Um festzustellen, ob ein Prozess blockiert ist, führt das System die folgenden Überprüfungen durch:
+
+- Für technisch gesteuerte Produkte:
+  - Wenn die aktuelle technische Version blockiert ist, blockieren Sie den Prozess.
+  - Wenn die aktuelle Variante blockiert ist, blockieren Sie den Prozess.
+  - Wenn das freigegebene Produkt blockiert ist, blockieren Sie den Prozess.
+- Für Standardprodukte:
+  - Wenn die aktuelle Variante blockiert ist, blockieren Sie den Prozess.
+  - Wenn das freigegebene Produkt blockiert ist, blockieren Sie den Prozess.
+
+Angenommen, Sie möchten nur eine Variante (rot) eines bestimmten Produkts (T-Shirt) verkaufen und den Verkauf aller anderen Varianten vorerst blockieren. Sie können dies mit dem folgenden Setup erreichen:
+
+- Weisen Sie dem Produkt einen Lebenszyklusstatus zu, der den Prozess ermöglicht. Weisen Sie dem T-Shirt-Produkt beispielsweise einen Lebenszyklusstatus von *Verkäuflich* zu, sodass der Geschäftsprozess *Auftrag* möglich ist.
+- Weisen Sie der verkäuflichen Variante einen Lebenszyklusstatus zu, der den Prozess ermöglicht. Weisen Sie der roten Variante beispielsweise auch einen Lebenszyklusstatus von *Verkäuflich* zu.
+- Allen anderen Varianten wird ein anderer Lebenszyklusstatus zugewiesen, in dem der Prozess blockiert ist. Weisen Sie beispielsweise der weißen Variante (und allen anderen Varianten) einen Lebenszyklusstatus von *Nicht verkäuflich* zu, die den Geschäftsprozess *Auftrag* blockiert.
+
+## <a name="default-product-lifecycle-states"></a>Standardproduktlebenszyklusstatus
+
+Der Standardlebenszyklusstatus für eine Engineering-Version wird durch ihre Engineering-Kategorie angegeben. Der Status wird voreingestellt, wenn Sie eine neue Engineering-Version erstellen, einschließlich der ersten Version eines neuen Produkts.
+
+Wenn Sie ein neues Produkt oder ein technisches Produkt erstellen, können Sie auch den Standardlebenszyklusstatus festlegen, indem Sie ihn auf einem von einer Vorlage freigegebenen Produkt der dem Produkt zugewiesenen Freigaberichtlinie angeben.
+
+In diesem Fall ist es möglich, dass das Produkt einen anderen Lebenszyklusstatus hat als die Version, wenn Sie ein neues technisches Produkt erstellen.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,22 +2,22 @@
 title: Eine Vorlage für Freitextrechnungen erstellen
 description: Verwenden Sie die folgende Prozedur, um eine Vorlage für Freitext-Serienrechnungen zu erstellen.
 author: abruer
-ms.date: 05/29/2018
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1477227228ae9f79314d1e3b6da73446d660d108
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 7baa29ad341bdf7ff874bd7f69cf483b7afc075a
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753691"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182508"
 ---
 # <a name="create-a-free-text-invoice-template"></a>Eine Vorlage für Freitextrechnungen erstellen
 
@@ -27,44 +27,44 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet. Die Erfassung ist 
 
 ## <a name="create-a-template"></a>Eine Vorlage erstellen
 
-1. Wechseln Sie zu "Debitoren" Wechseln Sie zu Debitoren > Rechnungen > Wiederkehrende Rechnungen > Vorlage für Freitextrechnungen.
-    * Mithilfe dieses Formulars können Sie Freitext-Rechnungsvorlagen erstellen, die Rechnungspositionen, Belastungen, eine Buchhaltungsverteilungsvorlage und Sachkontoinformationen enthalten können.  
-2. Klicken Sie auf "Neu", um eine neue Vorlage für Freitextrechnungen zu erstellen.
-3. Geben Sie im Feld "Vorlage" einen Wert ein.
+1. Wechseln Sie zu **Debitoren > Rechnungen > Wiederkehrende Rechnungen > Vorlage für Freitextrechnungen**.
+    * Mithilfe dieser Seite können Sie Freitext-Rechnungsvorlagen erstellen, die Rechnungspositionen, Belastungen, eine Buchhaltungsverteilungsvorlage und Sachkontoinformationen enthalten können.  
+2. Klicken Sie auf **Neu**, um eine neue Vorlage für Freitextrechnungen zu erstellen.
+3. Geben Sie im Feld **Vorlagenname** einen Wert ein.
     * "Vorlagenname" bezeichnet eindeutig eine Freitext-Rechnungsvorlage. Keine zwei Vorlagen können den gleichen "Vorlagennamen" haben.  
-4. Geben Sie im Feld "Beschreibung" eine Beschreibung für die Vorlage ein.
-5. Erweitern Sie die Registerkarte "Rechnungspositionen".
-6. Geben Sie im Feld "Beschreibung" eine Beschreibung der Rechnungsposition ein.
-7. Wählen Sie im Feld "Hauptkonto" ein Umsatzerlöskonto aus.
-    * Sie können das Gegenbuchungskonto eines Debitorenkredits für den Gesamtrechnungsbetrag auf der Seite "Kundenbuchungsprofile" auswählen.  
-8. Klicken Sie im Feld "Mehrwertsteuergruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
+4. Geben Sie im Feld **Beschreibung** eine Beschreibung für die Vorlage ein.
+5. Erweitern Sie die Registerkarte **Rechnungspositionen**.
+6. Geben Sie im Feld **Beschreibung** eine Beschreibung der Rechnungsposition ein.
+7. Wählen Sie im Feld **Hauptkonto** ein Umsatzerlöskonto aus.
+    * Sie können das Gegenbuchungskonto eines Debitorenkredits für den Gesamtrechnungsbetrag auf der Seite **Kundenbuchungsprofile** auswählen.  
+8. Klicken Sie im Feld **Mehrwertsteuergruppe** auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
     * Die Mehrwertsteuergruppe für die aktuelle Rechnungsposition ist die standardmäßige Mehrwertsteuergruppe für das Debitorenkonto.  
 9. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-10. Wählen Sie im Feld "Artikel-Mehrwertsteuergruppe" die Artikel-Mehrwertsteuergruppe für die aktuelle Rechnungsposition aus.
+10. Wählen Sie im Feld **Artikel-Mehrwertsteuergruppe** die Artikel-Mehrwertsteuergruppe für die aktuelle Rechnungsposition aus.
 11. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-12. Geben Sie im Feld "Einzelpreis" den Preis pro Einheit für die Rechnungsposition ein oder zeigen ihn an.
-    * Dieser Betrag wird mit dem Feld "Menge" multipliziert, um den Betrag der Rechnungsposition zu ermitteln.  
+12. Geben Sie im Feld **Preis je Einheit** den Einzelpreis für die Rechnungsposition ein oder zeigen ihn an.
+    * Dieser Betrag wird mit dem Feld **Menge** multipliziert, um den Betrag der Rechnungsposition zu ermitteln.  
 13. Fügen Sie der Vorlage für Freitextrechnungen eine neue Position hinzu.
-14. Geben Sie im Feld "Beschreibung" eine Beschreibung der Rechnungsposition ein.
-15. Wählen Sie im Feld "Hauptkonto" ein Umsatzerlöskonto aus.
-    * Sie können das Gegenbuchungskonto eines Debitorenkredits für den Gesamtrechnungsbetrag auf der Seite "Kundenbuchungsprofile" auswählen.  
-16. Klicken Sie im Feld "Mehrwertsteuergruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
+14. Geben Sie im Feld **Beschreibung** eine Beschreibung der Rechnungsposition ein.
+15. Wählen Sie im Feld **Hauptkonto** ein Umsatzerlöskonto aus.
+    * Sie können das Gegenbuchungskonto eines Debitorenkredits für den Gesamtrechnungsbetrag auf der Seite **Kundenbuchungsprofile** auswählen.  
+16. Klicken Sie im Feld **Mehrwertsteuergruppe** auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
     * Die Mehrwertsteuergruppe für die aktuelle Rechnungsposition ist die standardmäßige Mehrwertsteuergruppe für das Debitorenkonto.  
 17. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-18. Klicken Sie im Feld "Mehrwertsteuergruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
+18. Klicken Sie im Feld **Artikel-Mehrwertsteuergruppe** auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
     * Die Artikel-Mehrwertsteuergruppe für die aktuelle Rechnungsposition.  
 19. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-20. Die Anzahl von Einheiten für die Rechnungsposition eingeben oder anzeigen
+20. Die Anzahl von Einheiten für die Rechnungsposition eingeben oder anzeigen.
     * Diese Zahl wird mit dem Wert im Feld "Einzelpreis" multipliziert, um den Betrag der Rechnungsposition zu ermitteln.  
 21. Dient zum Eingeben oder Anzeigen des Preises je Einheit für die Rechnungsposition. 
-    * Dieser Betrag wird mit dem Wert im Feld "Menge" multipliziert, um den Betrag der Rechnungsposition zu ermitteln.  
+    * Dieser Betrag wird mit dem Wert im Feld **Menge** multipliziert, um den Betrag der Rechnungsposition zu ermitteln.  
 22. Zeigen Sie die Buchhaltungsverteilungen für eine einzelne Position und alle untergeordneten Positionen an und ändern Sie diese.
     * Buchhaltungsverteilungen definieren, wie ein Betrag kalkuliert wird, beispielsweise wie Umsatzerlöse, Steuern oder Zuschläge auf einer Freitextrechnung kalkuliert werden.  
 23. Aktualisieren Sie die Buchhaltungsverteilungen für die ausgewählte Rechnungsposition.
-24. Klicken Sie auf "Schließen".
+24. Klicken Sie auf **Schließen**.
 
 ## <a name="save-a-free-text-invoice-as-a-template"></a>Eine Vorlage für Freitextrechnungen erstellen
-Sie können eine vorhandene Freitextrechnung als Vorlage auch speichern. Wenn Sie aus der Rechnungsregisterkarte Speichern in Vorlage auswählen, geben Sie einen Namen und eine Beschreibung für die Vorlage an. Wenn eine Vorlage mit dem Namen bereits vorhanden ist, sehen Sie eine Benachrichtigung, dass eine Vorlage mit diesem Namen vorhanden ist. Sie können immer noch auf OK klicken, um es zu ersetzen. 
+Sie können eine vorhandene Freitextrechnung als Vorlage auch speichern. Wenn Sie **Speichern in Vorlage** auf der Registerkarte **Rechnung** auswählen, geben Sie einen Namen und eine Beschreibung für die Vorlage an. Wenn eine Vorlage mit dem Namen bereits vorhanden ist, sehen Sie eine Benachrichtigung, dass eine Vorlage mit diesem Namen vorhanden ist. Sie können immer noch auf **OK** klicken, um es zu ersetzen. 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

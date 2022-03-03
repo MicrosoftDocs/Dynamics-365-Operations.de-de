@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 54962b48dee05b2cd62fd3ea8814e4c965ba7818
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 812dd30e0e444bc310fc81edd16958e0c0747885
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069378"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103412"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installieren und Verbinden der mobilen Lagerortverwaltungs-App
 
@@ -39,12 +39,9 @@ Die Lagerortverwaltungs-App ist für Windows- und Google Android-Betriebssysteme
 - Windows 10 (Universal Windows Platform \[UWP\]) Oktober 2018 Update 1809 (Build 10.0.17763) oder höher
 - Android 4.4 oder höher
 
-## <a name="turn-on-the-feature"></a>Aktivieren Sie die Funktion
+## <a name="turn-warehouse-management-mobile-app-features-or-or-off-in-supply-chain-management"></a>Schalten Sie die Funktionen der Warehouse Management Mobile App in Supply Chain Management ein oder aus
 
-Bevor Sie die App verwenden können, muss eine zugehörige Funktion in Ihrem System eingeschaltet werden. Administratoren können mit der Einstellung [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und ggf. aktivieren. Dort wird die Funktion folgendermaßen aufgelistet:
-
-- **Module:** *Lagerortverwaltung*
-- **Funktionsname:** *Benutzereinstellungen, Symbole und Schritttitel für die neue Lagerort-App*
+Um die Warehouse Management Mobile App zu verwenden, muss die Funktion *Benutzereinstellungen, Symbole und Schritttitel für die neue Lagerort-App* in Ihrem System aktiviert sein. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Benutzereinstellungen, Symbole und Schritttitel für die neue Lagerort-App* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ## <a name="get-the-warehouse-management-mobile-app"></a>Die mobile Lagerortverwaltungs-App erhalten
 

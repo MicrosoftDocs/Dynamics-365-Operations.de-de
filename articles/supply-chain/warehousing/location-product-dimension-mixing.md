@@ -2,26 +2,23 @@
 title: Lagerplatz-Produktdimensionsmischung
 description: Dieses Thema enthält Informationen zur Lagerplatz-Produktdimensionsmischung. Diese Lagerplatzprofilfunktion hilft bei der Verbesserung der Standortverwaltung, wenn Produktvarianten oder Produkte mit Dimensionen verwendet werden, z. B. in der Modebranche. Hier können Sie entscheiden, ob Konfigurationen, Farben, Stile und Größen für ein bestimmtes Lagerplatzprofil gemischt werden können oder ob nur eine dieser Dimensionen oder eine Kombination davon an demselben Lagerplatz platziert werden kann.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 73519f3fe79d3d7d917d3044255f735640b8ccfd
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: 031b92f827979c01dbf0208ba21ae827fb13920b
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429026"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103487"
 ---
 # <a name="location-product-dimension-mixing"></a>Lagerplatz-Produktdimensionsmischung
 
@@ -29,14 +26,11 @@ ms.locfileid: "4429026"
 
 Die Lagerplatz-Produktdimensionsmischung ist eine Lagerplatzprofilfunktion, die bei der Verbesserung der Standortverwaltung hilft, wenn Produktvarianten oder Produkte mit Dimensionen verwendet werden, z. B. in der Modebranche. Hier können Sie entscheiden, ob Konfigurationen, Farben, Stile und Größen für ein bestimmtes Lagerplatzprofil gemischt werden können oder ob nur eine dieser Dimensionen oder eine Kombination davon an demselben Lagerplatz platziert werden kann.
 
-## <a name="turn-on-the-location-product-dimension-mixing-feature"></a>Funktion für Lagerplatz-Produktdimensionsmischung aktivieren
+## <a name="turn-the-location-product-dimension-mixing-feature-on-or-off"></a>Funktion für Lagerplatz-Produktdimensionsmischung aktivieren oder deaktiveren
 
-Bevor Sie die Lagerplatz-Produktdimensionsmischung verwenden können, muss die Funktion in Ihrem System aktiviert sein. Administratoren können mit der Einstellung [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und ggf. aktivieren. Dort wird die Funktion folgendermaßen aufgelistet:
+Um die Funktionalität zu verwenden, die in diesem Thema beschrieben wird, die Funktion *Lagerplatz-Produktdimensionsmischung* für Ihr System aktiviert werden. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Lagerplatz-Produktdimensionsmischung* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
-- **Module:** *Lagerortverwaltung*
-- **Funktionsname:** *Lagerplatz-Produktdimensionsmischung*
-
-## <a name="setup"></a>Einstellung
+## <a name="setup"></a>Einrichtung
 
 Jedem Standort im Lagerort muss ein Lagerplatzprofil zugeordnet sein, das die Eigenschaften des Lagerplatzes beschreibt. Daher können alle Standorte, die dasselbe Lagerplatzprofil verwenden, die Produktdimensionsmischung nach dem Einrichten ermöglichen.
 
@@ -207,9 +201,9 @@ Sie erstellen eine Bestellung mit drei Positionen: zwei Positionen für dieselbe
 
 1. Wählen Sie **Speichern** aus.
 
-### <a name="receive-purchase-order-lines-in-the-warehouse-app"></a>Bestellpositionen in der Warehouse-App erhalten
+### <a name="receive-purchase-order-lines-in-the-warehouse-management-mobile-app"></a>Bestellpositionen in der Warehouse Management Mobile App erhalten
 
-1. Melden Sie sich bei der Warehouse-App als Benutzer an, der für den Lagerort *24* aktiviert ist.
+1. Melden Sie sich bei der Warehouse Management Mobile App als Benutzer an, der für den Lagerort *24* aktiviert ist.
 1. Wählen Sie das Menü **Eingehend**.
 1. Wählen Sie **PO-Positionsempfang**.
 1. Wählen Sie das Feld **PONUM**, und geben Sie dann die Bestellnummer ein.
@@ -239,3 +233,5 @@ Sie erstellen eine Bestellung mit drei Positionen: zwei Positionen für dieselbe
 
 > [!TIP]
 > Sie können dieses Szenario wiederholen, diesmal jedoch **Größe** - *Nein* im Inforegister **Produktdimensionsmischung zulassen** in den **Lagerplatzprofilen** *BULK* festlegen, sodass keine der Produktdimensionen gemischt werden kann. In diesem Fall wird bei Erhalt der Bestellung jede Produktvariante an einen neuen Lagerplatz verschoben.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

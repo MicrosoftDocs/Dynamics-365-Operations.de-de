@@ -1,27 +1,24 @@
 ---
 title: Einen Produktprogrammplanungslauf überwachen
 description: In diesem Abschnitt wird erläutert, wie der Produktionsplaner sehen kann, ob ein Masterplanungslauf läuft.
-author: josaw1
-manager: tfehr
+author: ChristianRytt
 ms.date: 11/04/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, SysQueryForm, InventItemIdLookupSimple, ReqLog, ReqProcessTaskTrace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 045b82af6f65b22e1c683f8de47a6df282711e6a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4db1173b35cd196ab39fae3cac3754439fab84d0
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428479"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103162"
 ---
 # <a name="monitor-a-master-planning-run"></a>Einen Produktprogrammplanungslauf überwachen
 
@@ -31,12 +28,11 @@ ms.locfileid: "4428479"
 
 Auf der Seite **Masterplanungsfortschritt anzeigen** können Sie Details zu historischen Masterplanungsläufen als Gantt-Diagramm anzeigen. Diese Funktionalität kann Ihnen helfen, die Zeit zu verstehen, die für die verschiedenen Phasen der Masterplanung aufgewendet wird. Für einen aktuellen aktiven Planungsauftrag kann die Seite **Masterplanungsfortschritt anzeigen** verwendet werden, um den Fortschritt zu verfolgen und die geschätzte Restzeit anzuzeigen.
 
-### <a name="turn-on-and-use-the-master-plan-progress-visualization-feature"></a>Einschalten und Verwenden der Visualisierungsfunktion für den Fortschritt des Masterplans
+### <a name="turn-the-master-plan-progress-visualization-feature-on-or-off"></a>Funktion für die Visualisierung des Masterplanfortschritts ein- oder ausschalten
 
-Um diese Funktionalität zu nutzen, führen Sie die folgenden Schritte aus.
+Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Visualisierung des Masterplanfortschritts* im Arbeitsbereich [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
-1. Wählen Sie im Arbeitsbereich **Feature-Management** auf der Registerkarte **Neu** **Masterplanung Fortschrittsvisualisierung** in der Liste. Wenn die Funktion nicht auf der Registerkarte **Neu** erscheint, schauen Sie auf die Registerkarten **Nicht aktiviert** und **Alle**.
-1. Wählen Sie **Jetzt aktivieren**. Alternativ können Sie auch **Terminplanung** wählen und dann die Zeit auswählen, zu der die Funktion eingeschaltet werden soll.
+### <a name="use-the-master-plan-progress-visualization-feature"></a>Funktion zur Visualisierung des Masterplanfortschritts verwenden
 
 Auf der Seite **Masterplanungsfortschritt anzeigen** können sowohl historische Planungsaufträge als auch aktive Planungsaufträge angezeigt werden. 
 
@@ -127,3 +123,6 @@ Die Farbe wird im Gantt-Diagramm nur auf der untersten Ebene angezeigt. Wählen 
 1. Wählen Sie im Raster die Zeile aus, in der das Feld **Feld** auf **Artikelnummer** gesetzt ist.
 1. Geben Sie im Feld **Kriterien** einen Wert ein.
 1. Wählen Sie **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

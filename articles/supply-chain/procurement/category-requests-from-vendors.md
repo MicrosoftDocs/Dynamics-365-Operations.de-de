@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 560b62183f9c0c45c872998373a90dc9dc0ebbb3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5d06f05ca27ed8fe58a9a24fcde8c0082662b866
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571712"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103111"
 ---
 # <a name="category-requests-from-vendors"></a>Kategorieanfragen von Kreditoren
 
@@ -26,11 +26,11 @@ Mit dem Kategorieanforderungsprozess können Kreditor beantragen, dass neue Besc
 
 Kategorieanfragen werden von Kreditoren im Arbeitsbereich **Kreditoreninformationen** initiiert. Sie werden dann an Ihre Behörde zur Überprüfung und Genehmigung gesendet. Genehmigte Kategorien werden der Liste der Beschaffungskategorien für das Konto des Lieferanten hinzugefügt.
 
-## <a name="turn-on-the-feature-in-your-system"></a>Funktion in Ihrem System aktivieren
+## <a name="turn-the-category-requests-from-vendors-feature-on-or-off"></a>Kategorieanforderungen von Kreditoren ein- oder ausschalten
 
-Wenn Ihr System die in diesem Thema beschriebene Funktion noch nicht enthält, gehen Sie zu [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und aktivieren Sie die Funktion *Lieferanten zulassen, sich für Beschaffungskategorien durch Zusammenarbeit mit Lieferanten zu bewerben*.
+Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert. Administratoren können diese Funktion ein- oder ausschalten, indem sie nach der Funktion *Kreditoren erlauben, sich über Kreditorenzusammenarbeit für Beschaffungskategorien zu bewerben* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
-Nachdem die Funktion eingeschaltet ist, können Sie immer noch manuell Beschaffungskategorien zu Lieferantenkonten hinzufügen. Informationen finden Sie unter [Kreditoren für bestimmte Beschaffungskategorien genehmigen](tasks/approve-vendors-specific-procurement-categories.md).
+Wenn diese Funktion eingeschaltet ist, können Sie immer noch manuell Beschaffungskategorien zu Kreditorenkonten hinzufügen. Informationen finden Sie unter [Kreditoren für bestimmte Beschaffungskategorien genehmigen](tasks/approve-vendors-specific-procurement-categories.md).
 
 ## <a name="vendor-collaboration-requirements"></a>Anforderungen an die Zusammenarbeit mit dem Kreditor
 

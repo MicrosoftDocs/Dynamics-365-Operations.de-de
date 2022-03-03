@@ -2,11 +2,9 @@
 title: Einzelvorgang zur Eingangsbereinigung bei der Lagerortverwaltung
 description: In diesem Thema wird der Bereinigungsjob für vorhandene Einträge beschrieben, mit dem die Systemleistung verbessert werden kann, indem verwandte, aber nicht benötigte Datensätze identifiziert und gelöscht werden.
 author: perlynne
-manager: tfehr
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
@@ -14,15 +12,17 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
-ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: f045b9686bbdfcf3e82f5158f0fd28860354b7d7
-ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
+ms.dyn365.ops.version: 10.0.12
+ms.openlocfilehash: b2bdfb7fa0c9c4d9e1f630a41357dc405f0082bc
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5014482"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103862"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Einzelvorgang zur Eingangsbereinigung bei der Lagerortverwaltung
+
+[!include [banner](../includes/banner.md)]
 
 Die Leistung von Abfragen, die zur Berechnung des Lagerbestands verwendet werden, wird durch die Anzahl der Datensätze in den beteiligten Tabellen beeinflusst. Eine Möglichkeit zur Verbesserung der Leistung besteht darin, die Anzahl der Datensätze zu verringern, die die Datenbank berücksichtigen muss.
 
@@ -58,7 +58,7 @@ Die Leistungsverbesserung, die der Einzelvorgang zur Bereinigung bietet, sollte 
 
 ## <a name="make-the-maximum-execution-time-setting-available"></a><a name="max-execution-time"></a>Stellen Sie die Einstellung maximale Ausführungszeit zur Verfügung
 
-Standardmäßig ist die Einstellung **Maximale Ausführungszeit** nicht verfügbar. Wenn Sie es verwenden möchten, müssen Sie die [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um die zugehörige Funktion in Ihrem System zu aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+Die Einstellung für die **maximale Ausführungszeit** ist nur verfügbar, wenn die Funktion *Maximale Ausführungszeit für den Einzelvorgang „Bereinigen der Lagerbestandseinträge für die Lagerortverwaltung“* eingeschaltet ist. Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert. Administratoren können diese Funktion ein- oder ausschalten, indem sie nach der Funktion *Maximale Ausführungszeit für den Einzelvorgang „Bereinigen der Lagerbestandseinträge für die Lagerortverwaltung“* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
-- **Module:** *Lagerortverwaltung*
-- **Funktionsname:** *Maximale Ausführungszeit für den Bereinigungsvorgang für Lagereinträge*
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

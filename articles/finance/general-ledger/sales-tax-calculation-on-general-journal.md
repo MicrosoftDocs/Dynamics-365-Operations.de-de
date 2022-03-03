@@ -2,7 +2,7 @@
 title: Mehrwertsteuerberechnung für allgemeine Erfassungspositionen
 description: In diesem Thema wird erläutert, wie die Mehrwertsteuer für verschiedene Kontotypen (Kreditorenkonto, Debitorenkonto, Sachkonto und Projekt) in allgemeinen Erfassungspositionen berechnet werden.
 author: EricWangChen
-ms.date: 04/22/2021
+ms.date: 02/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 654917705400e0aecc7240e12f68d578827f6ad2
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 684b38a4940ff00978201334d1db0cef87b79b35
+ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488310"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8311953"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Mehrwertsteuerberechnung für allgemeine Erfassungspositionen
 [!include [banner](../includes/banner.md)]
@@ -77,19 +77,9 @@ Das folgende Diagramm veranschaulicht diese Regel grafisch.
 
 ### <a name="account-type-is-customer"></a>Kontotyp ist Debitor
 
-Wenn ein Beleg eine Erfassungsposition hat, in der die Kontenart **Debitor** ausgewählt ist, gilt für alle Erfassungspositionen im Beleg die gleiche Steuerart. Folgende Punkte zeigen die möglichen Steuerarten für Debitorenkonten.
+Wenn ein Beleg eine Erfassungsposition hat, in der die Kontenart **Debitor** ausgewählt ist, gilt für alle Erfassungspositionen im Beleg die gleiche Steuerart. 
 
-•   Wenn der Mehrwertsteuercode Steuerbefreiung ist, ist die Mehrwertsteuerart Steuerfreier Einkauf.
-
-•   Wenn der Mehrwertsteuercode innergemeinschaftliche Mehrwertsteuer ist, ist die Mehrwertsteuerart Vorsteuer.
-
-•   Wenn der Mehrwertsteuercode Verlagerung der Steuerschuld ist, ist die Mehrwertsteuerart Vorsteuer.
-
-Andernfalls ist die Mehrwertsteuerart Mehrwertsteuer.
-
-Das folgende Diagramm veranschaulicht diese Regel grafisch.
-
-![Steuerartmöglichkeiten für Debitorenkonten.](media/Sales-Tax-Direction-Customer.jpg)
+Wenn der Mehrwertsteuercode „Steuerbefreiung“ ist, ist die Mehrwertsteuerart „Steuerfreier Verkauf“. Andernfalls ist die Mehrwertsteuerart Mehrwertsteuer.
 
 ### <a name="account-type-is-ledger"></a>Kontentyp ist Sachkonto
 

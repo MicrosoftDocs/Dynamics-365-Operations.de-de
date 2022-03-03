@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerConsolidateAccountGroup, MainAccountConsolidateAccount
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f0f146eca39ef3aa690eb69283371d40c5c6d439bd868f1aa4763ffa76c8f682
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eaf48306607b27c70359e0d0faee4c92f4b82cac
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757048"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182603"
 ---
 # <a name="create-consolidation-groups-and-additional-consolidation-accounts"></a>Konsolidierungsgruppen und zusätzliche Konsolidierungskonten erstellen
 
@@ -28,21 +28,20 @@ In diesem Verfahren sehen Sie, wie eine Konsolidierungskontengruppe erstellt und
 
 
 ## <a name="create-a-consolidation-account-group"></a>Eine Konsolidierungskontengruppe einrichten
-1. Wechseln Sie zu "Hauptbuch" > "Kontenplan" > "Konten" > "Konsolidierungskontengruppen".
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Konsolidierungskontengruppe" eine eindeutige alphanumerische Kennung für die neue Konsolidierungskontengruppe ein.
-4. Geben Sie im Feld "Name" einen Wert ein.
+1. Wechseln Sie zu **Hauptbuch > Kontenplan > Konten > Konsolidierungskontengruppen**.
+2. Klicken Sie auf **Neu**.
+3. Geben Sie im Feld **Konsolidierungskontengruppe** eine eindeutige alphanumerische Kennung für die neue Konsolidierungskontengruppe ein.
+4. Geben Sie im Feld **Name** einen Wert ein.
 
 ## <a name="add-accounts-to-consolidation-account-group"></a>Hinzufügen von Konten zu Konsolidierungskontengruppen
-1. Schließen Sie die Seite.
-2. Wechseln Sie zu "Hauptbuch" > "Kontenplan" > "Konten" > "Zusätzliche Konsolidierungskonten".
-3. Klicken Sie auf "Neu".
-4. Klicken Sie im Feld "Hauptkonto" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-5. Klicken Sie in der Liste auf das Hauptkonto, das Sie zuordnen möchten.
-6. Klicken Sie im Feld "Konsolidierungskontengruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-7. Klicken Sie in der Liste auf die Konsolidierungskontengruppe.
-8. Geben Sie im Feld "Konsolidierungskonto" einen Wert ein.
-9. Geben Sie im Feld "Konsolidierungskontoname" einen Wert ein.
+1. Wechseln Sie zu "Hauptbuch" > "Kontenplan" > "Konten" > "Zusätzliche Konsolidierungskonten".
+2. Klicken Sie auf "Neu".
+3. Klicken Sie im Feld "Hauptkonto" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
+4. Klicken Sie in der Liste auf das Hauptkonto, das Sie zuordnen möchten.
+5. Klicken Sie im Feld "Konsolidierungskontengruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
+6. Klicken Sie in der Liste auf die Konsolidierungskontengruppe.
+7. Geben Sie im Feld "Konsolidierungskonto" einen Wert ein.
+8. Geben Sie im Feld "Konsolidierungskontoname" einen Wert ein.
 
 
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 98d28c39b2923afecc851299a07aa3b93ef2edce
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: 27e9e977193f9ff5c8188b780e8de955742c4ebe
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867293"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323874"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Eine neue EB-Konfiguration zum Generieren von Berichten im Word-Format erstellen
 
@@ -28,7 +28,7 @@ Um Berichte als Microsoft Word-Dokumente zu generieren, müssen Sie eine Vorlage
 
 ![Beispielvorlage für den Kontrollbericht in der Word-Desktopanwendung.](./media/er-design-configuration-word-image1.png)
 
-Um ein Word-Dokument als Vorlage für Berichte im Word-Format zu verwenden, können Sie eine neue [EB-](general-electronic-reporting.md)[Lösung](er-quick-start1-new-solution.md) (elektronische Berichterstellung) konfigurieren. Diese Lösung muss eine EB-[Konfiguration](general-electronic-reporting.md#Configuration) enthalten, die eine Komponente im EB-[Format](general-electronic-reporting.md#FormatComponentOutbound) aufweist.
+Um ein Word-Dokument als Vorlage für Berichte im Word-Format zu verwenden, können Sie eine neue [EB-](general-electronic-reporting.md)[Lösung](er-quick-start1-new-solution.md) (elektronische Berichterstellung) konfigurieren. Diese Lösung muss eine EB-[Konfiguration](general-electronic-reporting.md#Configuration) enthalten, die eine Komponente im EB-Format aufweist.
 
 > [!NOTE]
 > Wenn Sie eine neue Konfiguration im EB-Format erstellen, um Berichte im Word-Format zu generieren, müssen Sie entweder **Word** als Formattyp im Dropdown-Dialogfeld **Konfiguration erstellen** auswählen oder das Feld **Formattyp** leer lassen.

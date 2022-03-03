@@ -2,11 +2,9 @@
 title: Technische Attribute und Suche nach technischen Attributen
 description: In diesem Thema wird erklärt, wie Sie Engineering-Attribute verwenden können, um alle Nicht-Standard-Merkmale zu spezifizieren, um sicherzustellen, dass alle Produktstammdaten im System registriert werden können. Es wird auch erklärt, wie Sie die technische Attributsuche verwenden können, um Produkte anhand dieser registrierten Merkmale leicht zu finden.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgProductAttributeSearch, EngChgMaintainAttributeInheritance, EngChgAttribute
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 32cd2c6d0915df1e48973a22a7d391eb8d62a072
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 59710f0366418e240a4109e7cf8fcf84073110bf
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963687"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103212"
 ---
 # <a name="engineering-attributes-and-engineering-attribute-search"></a>Technische Attribute und Suche nach technischen Attributen
 
@@ -28,15 +26,13 @@ ms.locfileid: "4963687"
 
 Um sicherzustellen, dass alle Produktstammdaten im System registriert werden können, sollten Sie alle Nicht-Standard-Merkmale mit technischen Attributen angeben. Sie können dann die technische Attributsuche verwenden, um Produkte auf der Basis dieser registrierten Merkmale leicht zu finden.
 
-## <a name="engineering-attributes"></a>Entwicklungsattribute
+## <a name="create-engineering-attributes-and-attribute-types"></a>Erstellen von Engineering-Attributen und Attributstypen
 
 Typischerweise haben technische Produkte viele Merkmale und Eigenschaften, die Sie erfassen müssen. Obwohl Sie einige der Eigenschaften mit Hilfe der Standard-Produktfelder registrieren können, können Sie bei Bedarf auch neue Engineering-Eigenschaften erstellen. Sie können Ihre eigenen *Technik-Attribute* definieren und sie zum Bestandteil der Produktdefinition machen.
 
-### <a name="create-engineering-attributes-and-attribute-types"></a>Erstellen von Engineering-Attributen und Attributstypen
-
 Jedes Engineering-Attribut muss zu einem *Attribut-Typ* gehören. Diese Anforderung besteht, weil jedes Engineering-Attribut einen *Datentyp* haben muss, der die Arten von Werten definiert, die es enthalten kann. Ein Engineering-Attribut-Typ kann ein Standard-Typ sein (z. B. Freitext, Ganzzahl oder Dezimal) oder ein benutzerdefinierter Typ (z. B. Text, der eine bestimmte Anzahl von Werten zur Auswahl hat). Sie können jeden Attributtyp mit einer beliebigen Anzahl von Engineering-Attributen wiederverwenden.
 
-#### <a name="set-up-engineering-attribute-types"></a>Festlegen von Engineering-Attribut-Typen
+### <a name="set-up-engineering-attribute-types"></a>Festlegen von Engineering-Attribut-Typen
 
 Um einen Engineering-Attribut-Typ anzuzeigen, zu erstellen oder zu bearbeiten, gehen Sie wie folgt vor.
 
@@ -50,7 +46,7 @@ Um einen Engineering-Attribut-Typ anzuzeigen, zu erstellen oder zu bearbeiten, g
     - **Wertebereich** - Diese Option ist nur verfügbar, wenn Sie das Feld **Typ** auf *Ganzzahl*, *Dezimal* oder *Währung* festlegen. Legen Sie es auf *Ja* fest, um Mindest- und Höchstwerte festzulegen, die für Attribute dieses Typs akzeptiert werden. Sie verwenden das Inforegister **Bereich**, um die Minimal- und Maximalwerte und (bei Währung) die Währung festzulegen, die für die eingegebenen Grenzen gilt. Legen Sie diese Option auf *Nein* fest, um einen beliebigen Wert zu akzeptieren. 
     - **Maßeinheit** - Dieses Feld ist nur verfügbar, wenn Sie das Feld **Typ** auf *Ganzzahl* oder *Dezimal* festlegen. Wählen Sie die Einheit der Messung, die für diesen Attributtyp gilt. Wenn keine Einheit erforderlich ist, lassen Sie dieses Feld leer.
 
-#### <a name="set-up-engineering-attributes"></a>Festlegen von Engineering-Attributen
+### <a name="set-up-engineering-attributes"></a>Festlegen von Engineering-Attributen
 
 Um ein Engineering-Attribut anzuzeigen, zu erstellen oder zu bearbeiten, gehen Sie wie folgt vor.
 
@@ -72,17 +68,43 @@ Um ein Engineering-Attribut anzuzeigen, zu erstellen oder zu bearbeiten, gehen S
     - **Minimum** - Geben Sie den empfohlenen oder akzeptierten Mindestwert ein.
     - **Maximum** - Geben Sie den maximalen empfohlenen oder akzeptierten Wert ein.
 
-### <a name="connect-engineering-attributes-to-an-engineering-product-category"></a>Engineering-Attribute mit einer Engineering-Produktkategorie verbinden
+### <a name="engineering-attribute-inheritance"></a>Vererbung von technischen Attributen
+
+Für Produktstrukturen wie Stücklisten oder Formeln können ausgewählte Attribute von den untergeordneten Artikeln an die übergeordneten Artikel übergeben werden. Sie können sich diesen Prozess als „umgekehrte Vererbung“ vorstellen.
+
+#### <a name="turn-engineering-attribute-inheritance-on-or-off"></a>Vererbung von technischen Attributen ein -oder ausschalten
+
+Für diese Funktion müssen sowohl die Funktion *Verwaltung für technische Änderung* als auch die Funktion *Verbesserte Attributvererbung für die Verwaltung technischer Änderungen* für Ihr System eingeschaltet sein. Einzelheiten zum Ein- und Ausschalten dieser Funktionen finden Sie unter [Verwaltung für technische Änderung – Übersicht](product-engineering-overview.md).
+
+#### <a name="attribute-inheritance-example"></a>Beispiel einer Attributvererbung
+
+Bei einem Lebensmittelprodukt wie einem Karottenkuchen muss das System jedes Allergen erfassen, das im Produkt enthalten ist. Der Karottenkuchen kann im System als technisches Produkt mit einer Formel modelliert werden. Diese Formel enthält die Zutaten des Karottenkuchens, wie etwa Mehl, Milch, Karotten und Nüsse. In diesem Beispiel bietet das Unternehmen zwei Modelle für Karottenkuchen an: eines mit Laktose und eines ohne.
+
+Der laktosehaltige Kuchen hat auf Zutatenebene die folgenden Attribute:
+
+- Zutat „Mehl“: Attribut „Gluten“ = ja
+- Zutat „Milch“: Attribut „Laktose“ = ja
+- Zutat „Nüsse“: Attribut „Nüsse“ = ja
+
+Der Kuchen ohne Laktose verwendet laktosefreie Milch und hat auf Zutatenebene die folgenden Attribute:
+
+- Zutat „Mehl“: Attribut „Gluten“ = ja
+- Zutat „Milch“: Attribut „Laktose“ = nein
+- Zutat „Nüsse“: Attribut „Nüsse“ = ja
+
+Da sich diese Produkte sehr ähnlich sind, kann es sinnvoll sein, diese Attribute von den untergeordneten (die beiden Variationen) an das übergeordnete Produkt (den grundlegenden Karottenkuchen) weiterzugeben. Um diese „umgekehrte Vererbung“ zu implementieren, können Sie die Funktion *Attributvererbung* verwenden. Diese Funktion ist für jede [technische Version](engineering-versions-product-category.md) definiert.
+
+## <a name="connect-engineering-attributes-to-an-engineering-product-category"></a>Engineering-Attribute mit einer Engineering-Produktkategorie verbinden
 
 Einige technische Attribute gelten für alle Produkte, während andere spezifisch für einzelne Produkte oder Produktkategorien sind. Zum Beispiel sind elektrische Attribute für mechanische Produkte nicht erforderlich. Daher können Sie *technische Produktkategorien* festlegen. Eine technische Produktkategorie legt die Sammlung von technischen Attributen fest, die Teil der Definition für Produkte sein müssen, die zu dieser Kategorie gehören. Sie können auch festlegen, welche Engineering-Attribute obligatorisch sind und ob es einen Standardwert gibt.
 
 Weitere Informationen über die Arbeit mit Engineering-Produktkategorien, einschließlich Informationen darüber, wie Sie Attribute mit Kategorien verbinden, finden Sie unter [Engineering-Versionen und Engineering-Produktkategorien](engineering-versions-product-category.md).
 
-### <a name="set-values-for-engineering-attributes"></a>Werte für Engineering-Attribute festlegen
+## <a name="set-attribute-values-for-engineering-attributes"></a>Attributwerte für technische Attribute festlegen
 
 Die Engineering-Attribute, die mit einer Engineering-Produktkategorie verbunden sind, werden angezeigt, wenn Sie ein neues Engineering-Produkt erstellen, das auf dieser Kategorie basiert. Zu diesem Zeitpunkt können Sie Werte für die Attribute festlegen. Später können diese Werte auf der Seite **Engineering-Version** oder im Rahmen der Verwaltung für technische Änderung in einem Entwicklungsänderungsauftrag geändert werden. Weitere Informationen finden Sie unter [Verwalten von Änderungen an Engineering-Produkten](engineering-change-management.md).
 
-### <a name="create-an-engineering-product"></a>Erzeugen eines Engineering-Produkts
+## <a name="create-an-engineering-product"></a>Erzeugen eines Engineering-Produkts
 
 Um ein Engineering-Produkt zu erstellen, öffnen Sie die Seite **Freigegebene Produkte**. Wählen Sie dann im Aktivitätsbereich auf der Registerkarte **Produkt** in der Gruppe **Neu** die Option **Engineering-Produkt**.
 
@@ -93,3 +115,6 @@ Sie müssen die Engineering-Kategorie angeben, zu der das Produkt gehört. Die K
 Sie können die Engineering-Attribut-Suche verwenden, um Produkte zu finden, indem Sie nach ihren Engineering-Attribut-Werten suchen. So können Sie auf einfache Weise Engineering-Produkte anhand ihrer Eigenschaften finden. Sie können in den Produkten suchen, die zu einer Engineering-Produktkategorie gehören, oder Sie können über alle Engineering-Produkte suchen.
 
 Die Suche ist auf Produktstammdaten-Seiten und von transaktionalen Elementen im System aus verfügbar, z. B. von Aufträgen aus. Bei einem transaktionalen Element können Sie die Seite **Attributsuche Engineering** verwenden, um nach einem Produkt zu suchen. Sie können dann die Schaltfläche **Als neue Zeile hinzufügen** verwenden, um das Produkt zu den Zeilen des Verkaufsauftrags hinzuzufügen. Produkte aus den Suchergebnissen können auch direkt zum Auftrag hinzugefügt werden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

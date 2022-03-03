@@ -2,24 +2,24 @@
 title: Arbeitsbereich für die Kreditor-Rechnungsautomatisierung
 description: In diesem Thema wird erläutert, wie Sie den Arbeitsbereich einrichten, der sich auf Lieferantenrechnungen bezieht und die Informationen anzeigt, die über Microsoft Power BI verfügbar sind.
 author: abruer
-ms.date: 09/28/2020
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.assetid: ''
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: dde77a19fae9af8f40af8b14259a29db80f4a80cf8be75233a463d6fec2dac46
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f28cc5f63df2f0d8a4c8cae407f7166aa4fa03db
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722718"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182578"
 ---
 # <a name="vendor-invoice-automation-workspace"></a>Arbeitsbereich für die Kreditor-Rechnungsautomatisierung
 
@@ -60,14 +60,14 @@ Wenn die Funktion **Automatisierung von Kreditor-Rechnungen** eingeschaltet ist,
 
 Die Kacheln im Abschnitt **Zusammenfassung ausstehender Rechnungen** in der Ansicht **Meine Arbeit** geben einen Überblick über den Status Ihrer Lieferantenrechnungen. Sie können noch nicht gebuchte Journale und gesperrte Rechnungen sehen. Darüber hinaus gibt es die vier Kacheln, die der Automatisierungsfunktion für Lieferantenrechnungen zugeordnet sind:
 
-- Manuelle Zugangsübereinstimmung erforderlich
-- Übereinstimmungsprüfung nicht erfolgreich
-- Rechnungen wurden nicht an Workflow übermittelt
-- Rechnungen wurden nicht importiert.
+- **Manuelle Zugangsübereinstimmung erforderlich**
+- **Übereinstimmungsprüfung nicht erfolgreich**
+- **Rechnungen wurden nicht an Workflow übermittelt**
+- **Rechnungen wurden nicht importiert.**
 
-(Für diese vier Kacheln muss die Funktion zur Automatisierung von Lieferantenrechnungen in der Funktionsverwaltung aktiviert sein.)
+(Für diese vier Kacheln muss die Funktion zur Automatisierung von Kreditorenrechnungen in der **Funktionsverwaltung** aktiviert sein.)
 
-Um die Kachel **Lieferantenrechnungen wiederherstellen** zu verwenden, muss die Funktion in den Kreditorenparametern aktiviert sein. Gehen Sie zu **Kreditorenkonten \> Kreditorenkontenparameter** und legen dann auf der Registerkarte **Rechnung** die Option **Zulassen der Wiederherstellung von Lieferantenrechnungen** auf **Ja** fest.
+Um die Kachel **Kreditorenrechnungen wiederherstellen** zu verwenden, muss die Funktion in den **Kreditorenparametern** aktiviert sein. Gehen Sie zu **Kreditorenkonten \> Kreditorenkontenparameter** und legen dann auf der Registerkarte **Rechnung** die Option **Zulassen der Wiederherstellung von Lieferantenrechnungen** auf **Ja** fest.
 
 Wenn die Funktion aktiviert ist, werden auch drei Kacheln im Arbeitsbereich namens **Erfassungen** zusammengefasst. Die Kacheln sind betitelt mit **Erfassungen**, **Erfassungen – Mir zugewiesen**, und **Rechnungspool**. 
 

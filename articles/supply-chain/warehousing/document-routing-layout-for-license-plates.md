@@ -2,30 +2,28 @@
 title: Dokumenten-Routing-Layout für Kennzeichenetiketten
 description: In diesem Thema wird beschrieben, wie Formatierungsmethoden zum Drucken von Werten auf Etiketten verwendet werden.
 author: perlynne
-manager: tfehr
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLicensePlateLabel, WHSLicensePlateLabelBuildConfig, WHSLicensePlateLabel, WHSDocumentRoutingLayout
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
-ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 8c96aef5d66ed8f8c44d74eee9b60f0a7d38a46d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.10
+ms.openlocfilehash: 9055e4c6e35099b7769faa6fc83f71523f2e64fd
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429040"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103889"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Dokumenten-Routing-Layout für Kennzeichenetiketten
 
 [!include [banner](../includes/banner.md)]
+
 
 Das Layout des Dokumentroutings definiert das Layout der Kennzeichenetiketten und die darauf gedruckten Daten. Sie konfigurieren die Druckauslöserpunkte, wenn Sie Menüelemente und Arbeitsvorlagen für mobile Geräte einrichten.
 
@@ -53,6 +51,10 @@ Um die Werte anzuzeigen, die gedruckt werden sollen, gehen Sie zu **Lagerverwalt
 
 Mithilfe verschiedener weit verbreiteter Tools zur Etikettengenerierung können Sie den Text für das Etikettenlayout formatieren. Viele dieser Tools unterstützen das `$FieldName$` Format. Darüber hinaus verwendet Microsoft Dynamics 365 Supply Chain Management eine spezielle Formatierungslogik als Teil der Feldzuordnung für das Dokumentrouting-Layout.
 
+## <a name="turn-on-this-feature-for-your-system"></a>Schalten Sie diese Funktion für Ihr System ein
+
+Wenn Ihr System nicht bereits die in diesem Thema beschriebenen Funktionen enthält, gehen Sie zu [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und schalten Sie die Funktion *Erweiterte Layouts für Ladungsträger* ein. (Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden.)
+
 ## <a name="custom-number-formats"></a>Benutzerdefinierte Zahlenformate
 
 Sie können die Formatierung der gedruckten numerischen Feldwerte mithilfe von Codes im folgenden Format anpassen.
@@ -71,7 +73,7 @@ Die folgenden Beispiele zeigen, wie Sie die Arbeitsmenge anpassen können (**Men
 - Um immer vier Ziffern anzuzeigen (indem Sie Nullen als Platzhalter verwenden), verwenden Sie `$Qty:0000$`. Wenn die Menge beispielsweise 10 ist, wird auf dem Etikett 0010 angezeigt.
 - Um immer zwei Dezimalstellen anzuzeigen, verwenden Sie `$Qty:0.00$`. Wenn die Menge beispielsweise 10 ist, wird auf dem Etikett 10.00 angezeigt.
 
-Eine vollständige Liste der verfügbaren Zeichenfolgen im Zahlenformat finden Sie unter [Benutzerdefinierte Zeichenfolgen im numerischen Format](https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings).
+Eine vollständige Liste der verfügbaren Zeichenfolgen im Zahlenformat finden Sie unter [Benutzerdefinierte Zeichenfolgen im numerischen Format](/dotnet/standard/base-types/custom-numeric-format-strings).
 
 ## <a name="custom-string-formats"></a>Benutzerdefinierte Zeichenfolgenformate
 
@@ -93,7 +95,7 @@ $PrintedDate:dd-MM-yyyy$
 
 In diesem Beispiel wird das Datum 30. April 2020 als 30-04-2020 gedruckt.
 
-Eine vollständige Liste der verfügbaren Datums-/Zeitformate finden Sie unter [Benutzerdefinierte Datum-/Zeitformatzeichenfolgen](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings).
+Eine vollständige Liste der verfügbaren Datums-/Zeitformate finden Sie unter [Benutzerdefinierte Datum-/Zeitformatzeichenfolgen](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ## <a name="print-individual-lines-from-multiline-data"></a>Drucken Sie einzelne Zeilen aus mehrzeiligen Daten
 
@@ -136,3 +138,6 @@ $DisplayListOfItemsNumbers()[1]$
 ## <a name="more-information-about-how-to-print-labels"></a>Weitere Informationen zum Drucken von Beschriftungen
 
 Weitere Informationen zum Einrichten und Drucken von Etiketten finden Sie unter [Aktivieren Sie das Drucken von Kennzeichnungsetiketten](tasks/license-plate-label-printing.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

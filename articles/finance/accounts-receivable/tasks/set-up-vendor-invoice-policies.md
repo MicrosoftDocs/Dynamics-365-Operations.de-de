@@ -2,33 +2,33 @@
 title: Kreditorenrechnungsrichtlinien einrichten
 description: In diesem Thema wird erläutert, wie Richtlinien für Kreditorenrechnungen eingerichtet werden.
 author: ShivamPandey-msft
-ms.date: 07/11/2019
+ms.date: 02/11/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendParameters,  SysPolicyListPage, SysPolicyParameters, SysPolicySourceDocumentRuleType, SysPolicy, SysPolicySourceDocumentRule, SysQueryForm, SysQueryTableLookUp, SysQueryPrefixLookUp, SysQueryFieldLookUp
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 339f52727b6f5a680f711cf4e6e0b8b0bc290853316fc2f2ff63164c8292d2d8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1f9707c7b283f42729126efa57e890e0df65ca8b
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728840"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109755"
 ---
 # <a name="set-up-vendor-invoice-policies"></a>Kreditorenrechnungsrichtlinien einrichten
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Richtlinien für Kreditorenrechnungen eingerichtet werden. Kreditorenrechnungsrichtlinien werden ausgeführt, wenn Sie mit der Seite "Kreditorenrechnung" eine Kreditorenrechnung buchen und wenn Sie die Seite "Richtlinienverstöße" der Kreditorenrechnung öffnen. Sie können auch den Workflow für Kreditorenrechnungen konfigurieren, sodass Kreditorenrechnungsrichtlinien immer ausgeführt werden, wenn eine Rechnung an den Workflow übermittelt wird. 
+In diesem Thema wird erläutert, wie Richtlinien für Kreditorenrechnungen eingerichtet werden. Kreditorenrechnungsrichtlinien werden ausgeführt, wenn Sie mit der Seite **Kreditorenrechnung** eine Kreditorenrechnung buchen und wenn Sie die Seite **Richtlinienverstöße** der Kreditorenrechnung öffnen. Sie können auch den Workflow für Kreditorenrechnungen konfigurieren, sodass Kreditorenrechnungsrichtlinien immer ausgeführt werden, wenn eine Rechnung an den Workflow übermittelt wird. 
 
 - Kreditorenrechnungsrichtlinien werden nicht auf Rechnungen angewendet, die im Rechnungsbuch oder in einer Rechnungserfassung erstellt wurden.  
-- Für die Rechnungsabgleichüberprüfung werden keine Kreditorenrechnungsrichtlinien verwendet. Stattdessen wird die Prüfung auf der Seite "Kreditorenkontenparameter" eingerichtet.  
-- Für diese Erfassung wird das Demo-Unternehmen USMF verwendet. Die Kreditorenleiter- oder Buchhaltungsleiterrolle würde diese Schritte ausführen. Stellen Sie zu Beginn sicher, dass der Konfigurationsschlüssel "Rechnungsabgleich" ausgewählt wurde.
+- Für die Rechnungsabgleichüberprüfung werden keine Kreditorenrechnungsrichtlinien verwendet. Stattdessen wird die Prüfung auf der Seite **Kreditorenkontenparameter** eingerichtet.  
+- Für diese Erfassung wird das Demo-Unternehmen USMF verwendet. Die Kreditorenleiter- oder Buchhaltungsleiterrolle würde diese Schritte ausführen. Stellen Sie zu Beginn sicher, dass der Konfigurationsschlüssel **Rechnungsabgleich** ausgewählt wurde.
 
 
 ## <a name="prepare-to-create-vendor-invoice-policies"></a>Vorbereitung zum Erstellen von Kreditorenrechnungsrichtlinien
@@ -56,7 +56,7 @@ In diesem Thema wird erläutert, wie Richtlinien für Kreditorenrechnungen einge
 2. Wählen Sie **Neu** aus.
 3. Geben Sie in den Feldern **Name** und **Beschreibung** Werte ein.
 4. Erweitern oder reduzieren Sie den Abschnitt **Richtlinienorganisationen**.
-5. Wählen Sie in der Struktur **Contoso Entertainment System USA** aus.
+5. Wählen Sie in der Struktur **Contoso Unterhaltungsanlagen USA** aus.
 6. Wählen Sie **Hinzufügen** aus.
 7. Erweitern oder reduzieren Sie den Abschnitt **Richtlinienregeln**.
 8. Wählen Sie **Richtlinienregel erstellen** aus.

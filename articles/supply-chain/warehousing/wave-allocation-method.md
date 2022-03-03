@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 541e6c42ae1fa7d803b5becc1b52e34860777594
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 527bd24d7f2e9a05f6e617c222005186520f9968
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920597"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103787"
 ---
 # <a name="wave-allocation"></a>Wellenzuteilung
 
@@ -67,7 +67,7 @@ So richten Sie die parallele Verarbeitung ein:
 
 ## <a name="enable-or-disable-parallelization-across-all-legal-entities"></a>Die Parallelisierung für alle juristischen Personen aktivieren oder deaktivieren
 
-Wir empfehlen Ihnen, die `allocateWave`-Methode so einzustellen, dass sie parallel über alle juristischen Personen hinweg ausgeführt wird, da dies zur Verbesserung der Leistung der Wellenverarbeitung beiträgt. Ab Version 10.0.17 von Supply Chain Management ist die Funktion *Wellenparallelisierung für Wellenzuweisungsmethode* standardmäßig für alle neuen und aktualisierten Installationen aktiviert und kann nicht wieder deaktiviert werden. Nach dem Aktivieren dieser Funktion geschieht Folgendes:
+Wir empfehlen Ihnen, die `allocateWave`-Methode so einzustellen, dass sie parallel über alle juristischen Personen hinweg ausgeführt wird, da dies zur Verbesserung der Leistung der Wellenverarbeitung beiträgt. Ab Version 10.0.17 von Supply Chain Management ist die Funktion *Wellenparallelisierung für Wellenzuweisungsmethode* standardmäßig für alle neuen und aktualisierten Installationen eingeschaltet und kann nicht wieder ausgeschaltet werden. Nach dem Aktivieren dieser Funktion geschieht Folgendes:
 
 - Die `allocateWave`-Methode wurde aktualisiert und enthält nun eine Aufgabenkonfigurationseinstellung, mit der Sie die Seite **Wellenverarbeitungsmethoden** verwenden können, um die Anzahl der Aufgaben festzulegen, die, entsprechend der Anzahl der parallelen Prozesse, gleichzeitig ausgeführt werden. Infolgedessen wird die für die Wellenzuteilung gebrauchte Zeit (typischerweise 30 bis 60 % der gesamten Verarbeitungszeit) um einen Faktor reduziert, der in etwa der Anzahl der Aufgaben entspricht. Sie können auch auswählen, welchem Stapel die Verarbeitung dieser Aufgaben zugewiesen werden soll. Es ist wichtig zu beachten, dass alle Ihre juristischen Personen so konfiguriert werden, dass Wellen im Stapel verarbeitet werden. Für die Lagerorte, die bereits für die Stapelverarbeitung von Wellen oder der parallelen Verwendung der `allocateWave`-Methode konfiguriert sind, wird die vorhandene Konfiguration beibehalten.
 - Standardmäßig sind alle neuen juristischen Personen so konfiguriert, dass Wellen im Stapel verarbeitet werden. Bei allen neuen Lagerorte, bei denen die Option **Lagerortverwaltungsprozesse** aktiviert ist, ist die `allocateWave`-Methode so konfiguriert, dass sie standardmäßig parallel läuft.

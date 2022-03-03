@@ -2,26 +2,23 @@
 title: Arbeitspool für Arbeit ändern
 description: In diesem Thema wird erläutert, wie Sie die Schaltfläche „Arbeitspool ändern“ für Arbeitsaufgaben verwenden können, um den Arbeitspool vorhandener Arbeit zu ändern.
 author: mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkPool,WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 344918b77334f9aca11f799f8c031047ad229ee0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 9255b7d2eaf030592207b557b3b6567a1a5bda98
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428741"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102862"
 ---
 # <a name="change-work-pool-on-work"></a>Arbeitspool für Arbeit ändern
 
@@ -31,12 +28,9 @@ Sie können Arbeitspools verwenden, um die Arbeit in Gruppen organisieren. So k�
 
 Die Funktion *Arbeitspool bei Arbeit ändern* fügt dem Aktionsbereich für Arbeitsaufgaben eine Schaltfläche **Arbeitspool ändern** hinzu. Daher können Lagerverwalter den Arbeitspool vorhandener Arbeit problemlos ändern. Mit dieser Funktion können Manager schnell auf Änderungen vor Ort im Lager reagieren und sie können sich leichter auf ändernde Situationen anpassen und Arbeit an einen anderen Arbeitspool übertragen.
 
-## <a name="turn-on-the-change-work-pool-on-work-feature"></a>Die Funktion „Arbeitspool bei Arbeit ändern“ aktivieren
+## <a name="turn-the-change-work-pool-on-work-feature-on-or-off"></a>Die Funktion „Arbeitspool bei Arbeit ändern“ ein- oder ausschalten
 
-Bevor Sie mit der Einrichtung oder Verwendung dieser Funktion beginnen, müssen Sie sicherstellen, dass sie in Ihrem System verfügbar ist. Administratoren können mit den Einstellungen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie gegebenenfalls aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
-
-- **Module:** *Lagerortverwaltung*
-- **Funktionsname:** *Arbeitspool bei Arbeit ändern*
+Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Arbeitspool bei Arbeit ändern* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-the-change-work-pool-on-work-feature"></a>Die Funktion „Arbeitspool bei Arbeit ändern“ einrichten
 
@@ -149,3 +143,6 @@ Sie können die Seite **Arbeitsdetails** verwenden, um die erstellte Arbeit anzu
 > Wenn das Dialogfeld **Arbeitspool ändern** angezeigt wird, ist das Feld **Arbeitspool-ID** möglicherweise standardmäßig leer. Wenn das Feld leer ist, wenn Sie **OK** auswählen, um Änderungen zu übernehmen, entfernen Sie den Arbeitspool vollständig aus der Arbeit.
 >
 > Zusätzlich zum Wechseln des Arbeitspools können Sie mit dieser Prozedur jeder Arbeitsaufgabe, die keinen hat, einen Arbeitspool hinzufügen oder einen Arbeitspool aus jeder Arbeitsaufgabe entfernen, die einen hat.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

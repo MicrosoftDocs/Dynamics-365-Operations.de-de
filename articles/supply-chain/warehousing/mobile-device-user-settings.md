@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 13c99854224a6d220e73a43636d85ec1951f8149
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 4ea0fcfa7a165587567968f95549799859edaa60
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901871"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103712"
 ---
 # <a name="mobile-device-user-settings"></a>Benutzereinstellungen für das mobile Gerät
 
@@ -39,12 +39,9 @@ Diese Funktion kann Arbeitskräften helfen, schneller loszulegen, wenn sie begin
 > [!IMPORTANT]
 > Die Funktion *Benutzereinstellungen für mobile Geräte* gilt nur für die neue mobile App Lagerortverwaltung. Sie funktioniert nicht mit der alten Lagerort App.
 
-## <a name="turn-on-the-mobile-device-user-settings-feature"></a>Schalten Sie die Funktion für die Benutzereinstellungen für mobile Geräte ein
+## <a name="turn-the-mobile-device-user-settings-feature-on-or-off"></a>Funktion für die Benutzereinstellungen für mobile Geräte ein- oder ausschalten
 
-Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
-
-- **Module:** *Lagerortverwaltung*
-- **Funktionsname:** *Benutzereinstellungen, Symbole und Schritttitel für die neue Lagerort-App*
+Um die in diesem Thema beschriebene Funktionalität zu verwenden, muss die Funktion *Benutzereinstellungen, Symbole und Schritttitel für die neue Lagerort-App* für Ihr System aktiviert sein. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Benutzereinstellungen, Symbole und Schritttitel für die neue Lagerort-App* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ## <a name="create-and-manage-user-settings"></a>Benutzereinstellungen erstellen und verwalten
 

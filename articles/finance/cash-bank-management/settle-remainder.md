@@ -1,24 +1,24 @@
 ---
 title: Rest ausgleichen
 description: Sie können den Ausgleich über die noch zu bezahlenden Betragsaktivität ausgleichen, indem Sie den Betrag einem Sachkonto zuweisen.
-author: roschlom
-ms.date: 10/16/2018
+author: twheeloc
+ms.date: 02/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 216c5c1d7db72e5f5071f2cd03656df538a64e72
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 881b46774d3ca6a9b91d4dc06babb30c8677183a
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7754095"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182403"
 ---
 # <a name="settle-remainder"></a>Rest ausgleichen
 
@@ -27,10 +27,10 @@ ms.locfileid: "7754095"
 Sie können den Ausgleich über die noch zu bezahlenden Betragsaktivität ausgleichen, indem Sie den Betrag einem Sachkonto oder einem anderen Debitor zuweisen. Sie können die verbleibenden Beträge ausgleichen, wenn Sie die Beträge ausgleichen, die in einer Erfassung eingegeben wurden, oder wenn Sie nur offene Buchungen ausgleichen.
 
 ## <a name="setting-up-defaults"></a>Benutzerstandards ausgleichen 
-Sie müssen die Restfunktion aktivieren und die Standardeinstellungen einrichten, bevor Sie Restbetra ausgleichen verwenden
+Sie müssen die Funktion **Rest ausgleichen** aktivieren und die Standardeinstellungen einrichten, bevor Sie **Rest ausgleichen** verwenden.
 
 1)  Klicken Sie auf **Debitor > Parameter > Ausgleiche** oder **Kreditor > Parameter > Ausgleiche**
-2)  Wählen Sie die Registerkarte **Ausgleich** aus und klicken **Aktivieren Sie Rest ausgleichen**
+2)  Wählen Sie die Registerkarte **Ausgleich** aus und klicken Sie **Restausgleich aktivieren** an.
 3)  Wählen Sie unter **Standardursachencode** einen Standardursachencode aus. Die Ursachencodes müssen unter **Debitor > Einrichtung > Debitorentilgungsursachencodes** oder **Kreditor > Einrichtung > Debitorentilgungsursachencodes** bereits eingerichtet worden sein. Der **Standardbank-Restkonto** wird als Standard dem Konto zum Tilgungsursachencode zugewiesen.
 3)  Aktualisieren Sie den Bericht **Standardbank-Restkonto** nach Bedarf.
 4)  Wählen Sie in **Standardjournal** eine Zahlungserfassung aus, die verwendet wird, wenn Sie eine Zahlungserfassung erstellen möchten, wenn Sie nur offene Buchungen ausgleichen. Wenn Sie die Bankrestfunktion aktivieren, müssen Sie ein Standardjournal hinzufügen.
@@ -59,10 +59,10 @@ Sie können auch den Rest ausgleichen, wenn Sie offene Transaktionen ohne Erfass
 Um den Rest auszugleichen, führen Sie die folgenden Schritte aus:
 
 1)  Auf der Seite **Ausgleich** markieren Sie die Rechnungen oder die Buchungen, die Sie ausgleichen möchten.
-2)  **Rest ausgleichen** anklicken.
+2)  Klicken Sie **Rest ausgleichen** an.
 3)  Ein Dialogfeld wird zum Anzeigen geöffent und der Betrag wird angezeigt, der mit einem Sachkonto ausgegelichen wird, das Datum, das verwendet wird, um den Rest auszugleichen, den Standardursachencode von den Parametern und das Standardkonto von den Parametern. 
 4)  Wählen Sie einen neuen Ausgleichsgrund aus, wenn Sie den Standardgrund ändern möchten. Das Verrechnungskonto wird geändert, das dem Ursachencode zugeordnet ist.
-5)  Bearbeiten Sie das V **errechnungskonto**, wenn Sie es ändern möchten.
+5)  Bearbeiten Sie das **Verrechnungskonto**, wenn Sie es ändern möchten.
 6)  Wenn Sie Debitorenbuchungen ausgleichen und der Rest auf einen anderen Debitor verschoben werden soll, wählen Sie einen Debitor aus **Ausgleichen Rest anhand Debitorenkonto** aus. Wenn Sie Lieferantenbuchungen ausgleichen und der Rest auf einen anderen Lieferanten verschoben werden soll, wählen Sie einen Lieferanten aus **Ausgleichen Rest anhand Lieferantenkonto** aus.
 7)  Sie können auch eine Zahlungserfassung mit dem Ausgleichsrest auswählen oder ihn nur buchen ohne eine Erfassung zu erstellen. Wählen Sie **Ja** für **Bearbeiten in der Erfassung**, um eine Zahlungserfassung zu erstellen. Sie können die Zahlungserfassung weiter bearbeiten, die Sie erstellen.
 8)  **Rest ausgleichen** anklicken. Wenn Sie sich entscheiden, eine Erfassung zu erstellen, wird die Schaltfläche zu **Erfassung erstellen** geändert. **Erfassung erstellen** anklicken.

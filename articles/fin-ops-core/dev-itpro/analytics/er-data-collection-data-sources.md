@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-01-01
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: f001734baf9aee59f0a61d21ca5a99af0c55b56f
-ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
+ms.openlocfilehash: 185fb9a33cb4cc655dfdf640b4c239d617426c64
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "7413596"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323900"
 ---
 # <a name="use-data-collection-data-sources-in-electronic-reporting-formats"></a>Verwendung von DATA COLLECTION Datenquellen in elektronischen Berichtsformaten
 
 [!include [banner](../includes/banner.md)]
 
-Sie können den Vorgangs-Designer des [Electronic Reporting (ER)](general-electronic-reporting.md) Frameworks verwenden, um die [Format](general-electronic-reporting.md#FormatComponentOutbound)-Komponente einer ER-Lösung zu konfigurieren, die dazu dient, ausgehende Belege in verschiedenen Formaten zu erzeugen. Die hierarchische Struktur der konfigurierten Formatkomponente besteht aus verschiedenen Typen von Formatelementen. Diese Formatelemente werden verwendet, um generierte Dokumente zur Laufzeit mit den erforderlichen Informationen zu füllen. Wenn Sie ein ER-Format ausführen, werden die Formatelemente standardmäßig in der Reihenfolge ausgeführt, in der sie in der Formathierarchie dargestellt sind: einzeln, von oben nach unten.
+Sie können den Vorgangsdesigner des Frameworks für die [Elektronische Berichterstellung (EB)](general-electronic-reporting.md) verwenden, um die Formatkomponente einer EB-Lösung zu konfigurieren, die dazu dient, ausgehende Belege in verschiedenen Formaten zu erzeugen. Die hierarchische Struktur der konfigurierten Formatkomponente besteht aus verschiedenen Typen von Formatelementen. Diese Formatelemente werden verwendet, um generierte Dokumente zur Laufzeit mit den erforderlichen Informationen zu füllen. Wenn Sie ein ER-Format ausführen, werden die Formatelemente standardmäßig in der Reihenfolge ausgeführt, in der sie in der Formathierarchie dargestellt sind: einzeln, von oben nach unten.
 
-Wenn ER ein Formatelement ausführt, das eine Bindung enthält, wird die Formel dieser Bindung ausgeführt, und das Formatelement fügt den Wert zu einem generierten Beleg hinzu. Die Bindung kann zum Beispiel den Wert eines [Datenmodell](general-electronic-reporting.md#data-model-and-model-mapping-components)-Feldes an ein Formatelement übergeben. Sie können eine Datenquelle DATA COLLECTION so konfigurieren, dass sie Werte von Datenmodellfeldern zur Laufzeit sammelt, eine Wertesummierung durchführt und ein generiertes Dokument mit den gesammelten Werten füllt. Um diesen Ansatz zu verwenden, ändern Sie die initiale Bindung so, dass die konfigurierte Datenquelle DATA COLLECTION verwendet wird, um den Wert eines Datenmodellfelds an ein Formatelement zu übergeben. Durch die Übergabe von Werten über die Datenquelle DATA COLLECTION können Sie erforderliche Details zur weiteren Verwendung sammeln.
+Wenn ER ein Formatelement ausführt, das eine Bindung enthält, wird die Formel dieser Bindung ausgeführt, und das Formatelement fügt den Wert zu einem generierten Beleg hinzu. Die Bindung kann zum Beispiel den Wert eines Datenmodell-Feldes an ein Formatelement übergeben. Sie können eine Datenquelle DATA COLLECTION so konfigurieren, dass sie Werte von Datenmodellfeldern zur Laufzeit sammelt, eine Wertesummierung durchführt und ein generiertes Dokument mit den gesammelten Werten füllt. Um diesen Ansatz zu verwenden, ändern Sie die initiale Bindung so, dass die konfigurierte Datenquelle DATA COLLECTION verwendet wird, um den Wert eines Datenmodellfelds an ein Formatelement zu übergeben. Durch die Übergabe von Werten über die Datenquelle DATA COLLECTION können Sie erforderliche Details zur weiteren Verwendung sammeln.
 
 Wenn Sie eine DATA COLLECTION-Datenquelle konfigurieren, geben Sie einen Wertetyp an, der in der Datenquelle verwaltet werden soll. Die folgenden [Datentypen](er-formula-supported-data-types-primitive.md) werden derzeit für das Sammeln von Werten unterstützt:
 
@@ -130,7 +130,7 @@ Wenn das Volumen der Transaktionen viel größer ist als im aktuellen Beispiel, 
 
 ### <a name="modify-the-format-to-evaluate-the-list-of-collected-tax-values"></a>Ändern Sie das Format, um die Liste der erfassten Steuerwerte auszuwerten
 
-1. Wählen Sie auf der Seite **Formatdesigner** auf der Registerkarte **Format** das numerische Formatelement **Bericht \\Zeilen \\Datensatz \\RunningTotal** und führen Sie dann die folgenden Schritte aus:
+1. Wählen Sie auf der Seite **Formatdesigner** auf der Registerkarte **Format** das numerische Formatelement **Bericht\\Zeilen\\Datensatz\\RunningTotal** und führen Sie dann die folgenden Schritte aus:
 
     1. Ändern Sie im Feld **Numerischer Typ** den Wert von **Real** auf **Ganzzahl**.
     2. Ändern Sie im Feld **Numerisches Format** den Wert von **F2** auf **F0**.

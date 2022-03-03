@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e24bceac9457212ecaafda876d19ba62df049371
-ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
+ms.openlocfilehash: 7921983a965af5557f54f608418c8ec922256ba6
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7471835"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103637"
 ---
 # <a name="generate-variants-for-engineering-products"></a>Varianten für technische Produkte genieren
 
@@ -23,15 +23,9 @@ ms.locfileid: "7471835"
 
 In diesem Thema wird beschrieben, wie Sie Varianten für technische Produkte generieren.
 
-## <a name="turn-on-variant-generation-for-engineering-products"></a>Variantengenerierung für technische Produte aktivieren
+## <a name="turn-variant-generation-for-engineering-products-on-or-off"></a>Variantengenerierung für technische Produkte ein- oder ausschalten
 
-Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
-
-- **Modul:** *Verwaltung technischer Änderungen*
-- **Funktionsname:** *Variantengenerierung für technische Produte*
-
-> [!IMPORTANT]
-> Die Funktion *Variantengenerierung für technische Produkte* ist in Ihrem System erst sichtbar, nachdem Sie den Konfigurationsschlüssel *Verwaltung für technische Änderungen* aktiviert haben. Entsprechende Anweisungen finden Sie unter [Übersicht über die Verwaltung für technische Änderungen](product-engineering-overview.md).
+Für die in diesem Thema beschriebene Funktionalität müssen die Funktionen *Verwaltung für technische Änderung* und *Variantengenerierung für technische Produkte* für Ihr System eingeschaltet sein. Einzelheiten zum Ein- und Ausschalten dieser Funktionen finden Sie unter [Verwaltung für technische Änderung – Übersicht](product-engineering-overview.md).
 
 ## <a name="generate-one-or-more-new-variants-of-an-engineering-product"></a>Generieren Sie eine oder mehrere neue Varianten eines technischen Produkts
 

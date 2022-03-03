@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 20bcf26e1510634c5ee7043576a480ce15889923
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 3f3f77a9e6104a31995c9ee398504982fe43ac9e
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344119"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323774"
 ---
 # <a name="design-an-er-format-to-generate-a-report-in-excel-format-with-embedded-images-in-page-headers-or-footers"></a>Ein EB-Format entwerfen, um einen Bericht im Excel-Format mit eingebetteten Bildern in den Kopf- oder Fußzeilen einer Seite zu erstellen
 
@@ -153,9 +153,9 @@ Um Ihrer aktuellen Instanz von Dynamics 365 Finance die standardmäßigen EB-Kon
 3. Erweitern Sie auf der Seite **Konfigurationen** in der Konfigurationsstruktur im linken Bereich den Punkt **Rechnungsmodell**.
 4. Neben dem ausgewählten EB-Format **Freitextrechnung (Excel)** wurden weitere erforderliche EB-Konfigurationen importiert. Stellen Sie sicher, dass die folgenden EB-Konfigurationen in der Konfigurationsstruktur verfügbar sind:
 
-    - **Rechnungsmodell**: Diese Konfiguration enthält die EB-Komponente [Datenmodell](general-electronic-reporting.md#data-model-and-model-mapping-components), die die Datenstruktur der Rechnungsstellungsgeschäftsdomäne darstellt.
-    - **Rechnungsmodellzuordnung**: Diese Konfiguration enthält die EB-Komponente [Modellzuordnung](general-electronic-reporting.md#data-model-and-model-mapping-components), die beschreibt, wie das Datenmodell zur Laufzeit mit Anwendungsdaten gefüllt wird.
-    - **Freitextrechnung (Excel)**: Diese Konfiguration enthält das [Format](general-electronic-reporting.md#FormatComponentOutbound) und die Formatzuordnung von EB-Komponenten. Die Formatkomponente legt das Berichtslayout basierend auf einer Vorlage im Excel-Format fest. Die Formatzuordnungskomponente enthält die Modelldatenquelle und legt fest, wie die Datenquelle verwendet wird, um das Berichtslayout zur Laufzeit auszufüllen.
+    - **Rechnungsmodell**: Diese Konfiguration enthält die EB-Komponente Datenmodell, die die Datenstruktur der Rechnungsstellungsgeschäftsdomäne darstellt.
+    - **Rechnungsmodellzuordnung**: Diese Konfiguration enthält die EB-Komponente Modellzuordnung, die beschreibt, wie das Datenmodell zur Laufzeit mit Anwendungsdaten gefüllt wird.
+    - **Freitextrechnung (Excel)**: Diese Konfiguration enthält das Format und die Formatzuordnung von EB-Komponenten. Die Formatkomponente legt das Berichtslayout basierend auf einer Vorlage im Excel-Format fest. Die Formatzuordnungskomponente enthält die Modelldatenquelle und legt fest, wie die Datenquelle verwendet wird, um das Berichtslayout zur Laufzeit auszufüllen.
 
 ![Importierte EB-Konfigurationen auf der Seite „Konfigurationen“.](./media/er-embed-images-header-footer-excel-reports-imported-solution.png)
 

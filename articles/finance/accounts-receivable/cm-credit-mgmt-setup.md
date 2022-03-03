@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 745a51617f8c87c0f757aee0304ec3efb55d0f98
-ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
+ms.openlocfilehash: d8bc4f0a981b75c1b65d51aa1d8fada9c2187e22
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7921214"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323409"
 ---
 # <a name="credit-management-parameters-setup"></a>Einrichtung der Parameter für das Kreditmanagement
 
@@ -50,7 +50,8 @@ Sie können auch die Anzahl der Kulanztage festlegen, bevor die Kreditregeln ern
 
 Wenn Sie die Anzahl der Kulanztage nicht angeben, werden die Kreditregeln bei jedem Buchungsschritt überprüft, der für die Ausführung der Kreditverwaltungsregeln eingerichtet wurde. Wenn Sie den Kundenauftrag ohne Buchung freigeben und dann denselben Auftragsverarbeitungsschritt erneut ausführen, werden die Kreditregeln erneut überprüft. Beispielsweise wird eine Bestellung nach einer Bestätigung zurückgestellt und Sie geben sie entweder mit oder ohne Buchung frei. In diesem Fall wird die Bestellung erneut zurückgestellt, wenn Sie sie erneut bestätigen. Verwenden Sie Kulanztage, wenn die Bestellung mit dem nächsten Verarbeitungsschritt fortgesetzt werden soll, ohne dass sie erneut zurückgestellt wird.
 
-Sie können für einige Buchungsprüfpunkte keine Kulanztage angeben, für andere jedoch keine. Sie müssen alle Buchungsprüfpunkte so einrichten, dass sie Kulanztage haben, oder Sie müssen sie alle so einrichten, dass sie keine Kulanztage haben.
+> [!Note]
+> Wenn für einen Buchungsprüfpunkt ein Kulanztag eingetragen ist, müssen alle Prüfpunkte, die zum Buchen gekennzeichnet sind, Kulanztage haben.
 
 - Markieren Sie das Kontrollkästchen **Buchen**, um die Kreditverwaltungsregeln auszuführen, wenn der Buchungsprüfpunkt ausgeführt wird, der in der Zeile angezeigt wird. Wenn Sie das Kontrollkästchen nicht aktivieren, werden die Regeln während des gesamten Buchungsvorgangs nur einmal überprüft.
 - Wenn Sie das Kontrollkästchen **Buchen** auswählen, geben Sie die Anzahl der Kulanztage an, die vergehen sollen, bevor die Sperrregeln erneut überprüft werden. Sie können keine Kulanztage hinzufügen, wenn das Kontrollkästchen **Buchen** deaktiviert ist.

@@ -2,25 +2,22 @@
 title: Clustereinlagerung
 description: Einlagerungs-Cluster bieten eine Möglichkeit, mehrere Ladungsträger gleichzeitig zu entnehmen und diese dann an verschiedenen Lagerplätzen einzulagern. Sie können sehr nützlich für Einzelhandelsgeschäfte sein, bei denen Ladungsträger in der Regel keine vollen Paletten mit Bestand darstellen.
 author: Mirzaab
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 6a330ddccbd17c92443232fc8488e36a59235773
-ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: d5aa579394a0e3bd4c27cd44c9ff98951b3bfe1c
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "4512329"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103662"
 ---
 # <a name="putaway-clusters"></a>Clustereinlagerung
 
@@ -28,12 +25,9 @@ ms.locfileid: "4512329"
 
 Einlagerungs-Cluster bieten eine Möglichkeit, mehrere Ladungsträger gleichzeitig zu entnehmen und diese dann an verschiedenen Lagerplätzen einzulagern. Dieser Prozess wird oft als *Milchlauf* bezeichnet. Clustereinlagerungen können sehr nützlich für Einzelhandelsgeschäfte sein, bei denen die Ladungsträger in der Regel keine vollen Paletten mit Bestand sind. 
 
-## <a name="turn-on-the-cluster-putaway-feature"></a>Schalten Sie die Funktion Clustereinlagerung ein
+## <a name="turn-the-cluster-putaway-feature-on-or-off"></a>Die Funktion „Clustereinlagerung“ ein- oder ausschalten
 
-Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit der Einstellung [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und ggf. aktivieren. Dort wird die Funktion folgendermaßen aufgelistet:
-
-- **Module:** *Lagerortverwaltung*
-- **Funktionsname:** *Funktion Clustereinlagerung*
+Um die Funktionalität zu verwenden, die in diesem Thema beschrieben wird, muss die Funktion *Clutereinlagerung* für Ihr System eingeschaltet werden. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Clustereinlagerung* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ## <a name="setup-for-the-example-scenario"></a>Einrichten für das Beispielszenario
 
@@ -231,7 +225,7 @@ Dieses Szenario simuliert die Clustereinlagerungs-Verarbeitung.
 
 #### <a name="receive-and-sort-the-inventory-into-a-cluster"></a>Bestand empfangen und in ein Cluster einsortieren
 
-1. Melden Sie sich bei der Lagerort App als ein Benutzer an, der für Lagerort *61* festgelegt ist.
+1. Melden Sie sich bei der Warehouse Management Mobile App als Benutzer an, der auf den Lagerort *61* eingestellt ist.
 1. Wählen Sie im Hauptmenü **Eingang**.
 1. Wählen Sie im Menü **Eingang** die Option **Cluster empfangen und sortieren**.
 1. Geben Sie im Feld **Ponum** die Nummer der Einkaufsbestellung ein.
@@ -273,7 +267,7 @@ Bevor die Elemente des Clusters eingelagert werden können, muss der Cluster ges
 
 #### <a name="put-the-cluster-away"></a>Einlagern des Clusters
 
-1. Melden Sie sich bei der Lagerort App als ein Benutzer an, der für Lagerort *61* festgelegt ist.
+1. Melden Sie sich bei der Warehouse Management Mobile App als Benutzer an, der auf den Lagerort *61* eingestellt ist.
 1. Wählen Sie im Hauptmenü **Eingang**.
 1. Wählen Sie im Menü **Eingang** die Option **Clustereinlagerung**.
 1. Wählen Sie **Cluster-ID**, und geben Sie die Cluster-ID ein, die Sie zuvor für den geschlossenen Cluster eingegeben haben.
@@ -287,7 +281,7 @@ Bevor die Elemente des Clusters eingelagert werden können, muss der Cluster ges
 
     Sie haben die Standardoptionen, um diesen Schritt zu überschreiben oder zu übergehen.
 
-    ![Clustereinlagerung: Seite einlagern](media/Cluster_putaway-Put.png "Clustereinlagerung: Seite einlagern")
+    ![Clustereinlagerung: Seite einlagern.](media/Cluster_putaway-Put.png "Clustereinlagerung: Seite einlagern")
 
 1. Wählen Sie **OK**, um die Clustereinlagerung zu bestätigen.
 
@@ -296,3 +290,6 @@ Bevor die Elemente des Clusters eingelagert werden können, muss der Cluster ges
 ## <a name="notes-and-tips"></a>Hinweise und Tipps
 
 In Fällen, in denen die Cluster-ID zum übergeordneten Ladungsträger für eine verschachtelte Palette wird, wird die Einlagerungsposition automatisch angegeben, wenn die Cluster-ID gescannt wird. Es muss kein weiteres Ladungsträger-Kennzeichen gescannt werden, auch wenn die Kennzeichenerstellung auf manuell festgelegt ist.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

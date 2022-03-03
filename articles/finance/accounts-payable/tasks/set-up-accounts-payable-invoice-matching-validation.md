@@ -2,23 +2,23 @@
 title: Einrichten der Kreditorenkonten-Rechnungsabgleichprüfung
 description: Dieses Thema enthält Informationen darüber, wie der Kreditorenkonten-Rrechnungsabgleich eingerichtet wird.
 author: abruer
-ms.date: 06/26/2019
+ms.date: 02/14/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendParameters
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 017b0197563b9d7fd03f5fc927353be8d16586090f467cff792016431e0fafad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 602666df4cf015791398939a3067a2cae85a12eb
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722862"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182554"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Einrichten der Kreditorenkonten-Rechnungsabgleichprüfung
 
@@ -54,7 +54,7 @@ Vier unterschiedliche Arten von entsprechenden Prüfungen sind verfügbar.
 12. Wählen Sie im Feld **Toleranz für Preissummenabgleich** einen Betrag in der Buchhaltungswährung aus. Dieses Feld ist nur verfügbar, wenn im Feld **Preissummenabgleich** die Optionen **Betrag** oder **Prozentsatz und Betrag** ausgewählt wurden.
 13. Wählen Sie im Feld **Symbol für Preissummenabgleich anzeigen** aus, wann ein Symbol angezeigt werden soll, wenn eine Abweichung beim Rechnungsabgleich für den Nettostückpreis die Toleranz übersteigt. Das Symbol kann angezeigt werden, wenn eine positive Abweichung die Toleranz übersteigt oder wenn entweder eine positive oder negative Abweichung die Toleranz übersteigt.
 Beispiel: Der Toleranzprozentsatz ist 5 %, und die Positionspreissumme in der Bestellung beträgt 10,00. Folglich wird ein Preisabgleichsymbol angezeigt, wenn die Positionspreissumme der Rechnung 10,50 übersteigt. Wenn Sie **Wenn größer oder kleiner als Toleranz** auswählen, wird das Symbol auch angezeigt, wenn die Positionspreissumme auf der Rechnung kleiner als 9,50 ist.
-13. Abgleich von Belastungen festlegen.
+13. Legen Sie **Belastungen abgleichen** fest.
 14. Aktivieren Sie das Kontrollkästchen **Belastungen abgleichen**, um basierend auf den Informationen zur Bestellung die tatsächlichen Belastungen mit den erwarteten Belastungen abzugleichen.
 
 ## <a name="set-up-unit-price-tolerance-percentages"></a>Einrichten von Einehitspreistoleranz-Prozentsätzen
@@ -75,7 +75,7 @@ Negative Preisabweichungen sind standardmäßig zulässig. Die Eingabe eines neg
 
 ## <a name="set-up-matching-policy-override"></a>Überschreiben der Abgleichsrichtlinie einrichten
 
-Wechseln Sie zu **Kreditorenkonten > Einrichten > Rechnungsabgleich einrichten > Abgleichsrichtlinie**, um den Standardeintrag für das Abgleichsrichtlinienfeld für Positionen in der Bestellung zu definieren. Diese Einrichtung ist optional. Mithilfe dieses Formulars können Sie einen zweiseitigen oder dreiseitigen Abgleich für Artikel, Kreditoren oder Kombinationen von Kreditoren und Artikeln einrichten. Diese Einträge ermöglichen es, präzisere Abgleichsrichtlinien als die Abgleichrichtlinie der juristischen Person festzulegen, die Sie auf der Seite **Kreditorenkontenparameter** definiert haben. Diese Standard-Positionsabgleichsrichtlinie gilt für alle Artikel und Kreditoren mit Ausnahme derer, für die in diesem Formular eine andere Positionsabgleichsrichtlinie angegeben ist.
+Wechseln Sie zu **Kreditorenkonten > Einrichten > Rechnungsabgleich einrichten > Abgleichsrichtlinie**, um den Standardeintrag für das Feld **Abgleichsrichtlinie** für Positionen auf der Seite **Bestellung** zu definieren. Diese Einrichtung ist optional. Mithilfe dieses Seite können Sie einen zweiseitigen oder dreiseitigen Abgleich für Artikel, Kreditoren oder Kombinationen von Kreditoren und Artikeln einrichten. Diese Einträge ermöglichen es, präzisere Abgleichsrichtlinien als die Abgleichrichtlinie der juristischen Person festzulegen, die Sie auf der Seite **Kreditorenkontenparameter** definiert haben. Diese Standard-Positionsabgleichsrichtlinie gilt für alle Artikel und Kreditoren mit Ausnahme derer, für die in diesem Formular eine andere Positionsabgleichsrichtlinie angegeben ist.
 
 Auf dieser Registerkarte wählen Sie **Abgleichsrichtlinienebene** aus. Wählen Sie die Ebene der Abgleichsrichtlinienhierarchie aus, für die Sie die Positionsabgleichsrichtlinien festlegen möchten.
 

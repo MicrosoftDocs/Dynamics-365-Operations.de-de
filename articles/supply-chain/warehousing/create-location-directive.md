@@ -2,11 +2,9 @@
 title: Arbeiten mit Lagerplatzrichtlinien
 description: In diesem Thema wird beschrieben, wie Sie mit Lagerplatzrichtlinien arbeiten. Lagerplatzrichtlinien sind benutzerdefinierte Regeln, die dabei helfen, Entnahme- und Einlagerungslagerorte für die Lagerortumlagerung zu identifizieren.
 author: Mirzaab
-manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocDirTable, WHSLocDirHint, WHSLocDirTableUOM, WHSLocDirFailure
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: b1b3bafb24ff6eb0c42d901fac3b6668cedf39ef
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 84ff0a466c037db05aecaff14aa2e17990ce8799
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963309"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103137"
 ---
 # <a name="work-with-location-directives"></a>Arbeiten mit Lagerplatzrichtlinien
 
@@ -46,14 +44,14 @@ Bevor Sie eine Standortanweisung erstellen können, müssen Sie diese Schritte a
 1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Lagerort \> Lagerorte**.
 1. Erstellen Sie einen Lagerort.
 1. Setzen Sie auf dem Inforegister **Lagerort** die Option **Lagerortverwaltungsprozesse verwenden** auf *Ja*.
-1. Erstellen Sie Lagerplätze, Lagerplatztypen, Lagerplatzprofile und Lagerplatzformate. Weitere Informationen finden Sie unter [Konfigurieren von Standorten in einem WMS-aktivierten Lagerort](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
-1. Erstellen Sie Standorte, Zonen und Zonengruppen. Weitere Informationen finden Sie unter [Einrichten eines Lagerorts](https://docs.microsoft.com/dynamics365/commerce/channels-setup-warehouse) und [Konfigurieren von Standorten an einem WMS-aktivierten Lagerort](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
+1. Erstellen Sie Lagerplätze, Lagerplatztypen, Lagerplatzprofile und Lagerplatzformate. Weitere Informationen finden Sie unter [Konfigurieren von Standorten in einem WMS-aktivierten Lagerort](./tasks/configure-locations-wms-enabled-warehouse.md).
+1. Erstellen Sie Standorte, Zonen und Zonengruppen. Weitere Informationen finden Sie unter [Einrichten eines Lagerorts](../../commerce/channels-setup-warehouse.md) und [Konfigurieren von Standorten an einem WMS-aktivierten Lagerort](./tasks/configure-locations-wms-enabled-warehouse.md).
 
 ## <a name="work-order-types-for-location-directives"></a>Arbeitsauftragstypen für Lagerplatzrichtlinien
 
 Viele der Felder, die für Lagerplatzrichtlinien festgelegt werden können, sind für alle Arbeitsauftragstypen gleich. Andere Felder sind jedoch spezifisch für bestimmte Arbeitsauftragstypen.
 
-![Arbeitsauftragsarten für Lagerplatzrichtlinien](media/Location_Directives_Work_Order_Types.png "Lagerplatzrichtlinien Arbeitsauftragstypen")
+![Arbeitsauftragsarten für Lagerplatzrichtlinien.](media/Location_Directives_Work_Order_Types.png "Lagerplatzrichtlinien Arbeitsauftragstypen")
 
 > [!NOTE]
 > Zwei Arbeitsauftragstypen, *Stornierte Arbeit* und *Zykluszählung*, werden nur vom System verwendet. Lagerplatzrichtlinien können für diese Arbeitsauftragstypen nicht erstellt werden.
@@ -145,14 +143,14 @@ Die Felder auf dem Inforegister **Lagerplatzrichtlinien** sind spezifisch für d
 - **Richtliniencode** - Wählen Sie den Richtliniencode aus, der mit einer Arbeits- oder Wiederbeschaffungsvorlage verknüpft werden soll. Auf der Seite **Richtliniencode** können Sie neue Codes erstellen, die verwendet werden können, um Arbeitsvorlagen oder Wiederbeschaffungsvorlagen mit Lagerplatzrichtlinien zu verbinden. Richtliniencodes können auch verwendet werden, um eine Verbindung zwischen einer beliebigen Zeile der Arbeitsvorlage und einer Lagerplatzrichtlinie (z. B. dem Hallentor oder dem Bühnenstandort) herzustellen.
 
     > [!TIP]
-    > Wenn ein Richtlinien-Code festgelegt ist, sucht das System die Lagerplatzrichtlinien nicht nach der Sequenznummer, wenn Arbeit generiert werden muss. Stattdessen wird es nach dem Code der Richtlinie suchen. Auf diese Weise können Sie den Lagerplatz, der für einen bestimmten Schritt in einer Arbeitsvorlage verwendet wird, genauer bestimmen, z. B. den Schritt zum Bereitstellen der Materialien.
+    > Wenn ein Richtlinien-Code festgelegt ist, sucht das System die Lagerplatzrichtlinien nicht nach der Sequenznummer, wenn Arbeit generiert werden muss. Stattdessen wird es nach dem Code der Richtlinie suchen. Auf diese Weise können Sie die Lagerplatzrichtlinie, die für einen bestimmten Schritt in einer Arbeitsvorlage verwendet wird, genauer bestimmen, z. B. den Schritt zum Bereitstellen der Materialien.
 
 - **Mehrere SKU** - Legen Sie diese Option auf *Ja* fest, damit mehrere stockkeeping units (SKUs) auf einem Lagerplatz verwendet werden können. Zum Beispiel müssen mehrere SKUs für den Lagerplatz „Hallentor“ aktiviert werden. Wenn Sie mehrere SKUs aktivieren, wird Ihr eingelagerter Lagerplatz wie erwartet in Arbeit angegeben. Der Lagerplatz kann jedoch nur ein Einlagern mehrerer Elemente verarbeiten (wenn die Arbeit verschiedene SKUs enthält, die entnommen und eingelagert werden müssen). Ein Einlagern einer einzelnen SKU ist nicht möglich. Wenn Sie diese Option auf *Nein* festlegen, wird Ihr Lagerplatz nur angegeben, wenn Ihr Auftrag nur eine Art von SKU enthält.
 
     > [!IMPORTANT]
     > Um sowohl Multi-Element-Puts als auch Single-SKU-Puts durchführen zu können, müssen Sie zwei Zeilen angeben, die die gleiche Struktur und Einrichtung haben, aber Sie müssen die Option **Mehrere SKU** auf *Ja* für eine Zeile und *Nein* für die andere festlegen. Daher müssen Sie für Einlagerungsvorgänge zwei identische Lagerplatzrichtlinien haben, auch wenn Sie nicht zwischen einzelnen SKUs und mehreren SKUs auf einer Arbeits-ID unterscheiden müssen. Wenn Sie nicht beide Lagerplatzrichtlinien festlegen, werden oft unerwartete Lagerplätze im Geschäftsprozess durch die angewandte Lagerplatzrichtlinie erzeugt. Sie müssen eine ähnliche Einrichtung für Lagerplatzrichtlinien verwenden, die einen **Arbeitstyp** von *Pick* haben, wenn Sie Aufträge verarbeiten müssen, die mehrere SKUs enthalten.
 
-    Verwenden Sie die Option **Mehrere SKU** für Arbeitszeilen, die mehr als eine Artikelnummer verarbeiten. (Die Artikelnummer ist in den Arbeitsdetails leer und wird auf den Bearbeitungsseiten in der Lagerort App als **Mehrfach** angezeigt.)
+    Verwenden Sie die Option **Mehrere SKU** für Arbeitszeilen, die mehr als eine Artikelnummer verarbeiten. (Die Artikelnummer ist in den Arbeitsdetails leer und wird auf den Bearbeitungsseiten in der Warehouse Management Mobile App als **Mehrfach** angezeigt.)
 
     In einem typischen Beispielszenario wird eine Arbeitsvorlage so festgelegt, dass sie mehr als ein Entnehmen/Einlagern-Paar hat. In diesem Fall möchten Sie vielleicht nach einem bestimmten Lagerplatz suchen, der für Zeilen mit einem **Arbeitstyp** von *Einlagern* verwendet wird.
 
@@ -166,12 +164,12 @@ Die Felder auf dem Inforegister **Lagerplatzrichtlinien** sind spezifisch für d
     > [!NOTE]
     > Dieses Feld ist nur für ausgewählte Arbeitsauftragstypen verfügbar, bei denen eine Wiederbeschaffung erlaubt ist. Eine vollständige Liste finden Sie im Abschnitt [Felder, die für Arbeitsauftragstypen spezifisch sind](#fields-specific-types) weiter oben in diesem Thema.
 
-- **Finden nach** - Geben Sie an, ob es sich bei der Einlagerungsmenge um die gesamte Menge auf dem Ladungsträger handeln soll, oder ob sie Element für Element erfolgen soll. Verwenden Sie dieses Feld, um sicherzustellen, dass der gesamte Inhalt eines Ladungsträgers an einem Lagerplatz eingelagert wird und dass das System nicht vorschlägt, den Inhalt auf mehrere Lagerplätze für die Prozesse **ASN** (Ladungsträger-Empfang), **Gemischte Ladungsträger** und **Cluster**-Empfang aufzuteilen. (Der **Cluster**-Empfangsprozess erfordert, dass die Funktion *Clustereinlagerung* eingeschaltet ist.) Das Verhalten der Abfrage der Lagerplatzrichtlinie, der Zeilen und der Aktionen der Lagerplatzrichtlinie variiert je nach dem von Ihnen gewählten Wert. Das **Zeilen** Inforegister wird nur verwendet, wenn das **Finden nach** auf *Element* festgelegt ist.
+- **Finden nach** - Geben Sie an, ob es sich bei der Einlagerungsmenge um die gesamte Menge auf dem Ladungsträger handeln soll, oder ob sie Element für Element erfolgen soll. Verwenden Sie dieses Feld, um sicherzustellen, dass der gesamte Inhalt eines Ladungsträgers an einem Lagerplatz eingelagert wird und dass das System nicht vorschlägt, den Inhalt auf mehrere Lagerplätze für die Prozesse **ASN** (Ladungsträger-Empfang), **Gemischte Ladungsträger** und **Cluster**-Empfang aufzuteilen. (Der **Cluster**-Empfangsprozess erfordert, dass die Funktion [Clustereinlagerung](putaway-clusters.md) eingeschaltet ist.) Das Verhalten der Abfrage der Lagerplatzrichtlinie, der Zeilen und der Aktionen der Lagerplatzrichtlinie variiert je nach dem von Ihnen gewählten Wert. Das **Zeilen** Inforegister wird nur verwendet, wenn das **Finden nach** auf *Element* festgelegt ist.
 
     > [!NOTE]
     > Dieses Feld ist nur für ausgewählte Arbeitsauftragstypen verfügbar, bei denen eine Wiederbeschaffung erlaubt ist. Eine vollständige Liste finden Sie im Abschnitt [Felder, die für Arbeitsauftragstypen spezifisch sind](#fields-specific-types).
 
-- **Einlagerungscode** - Dieses Feld wird für Lagerplatzrichtlinien verwendet, die eine Arbeitsauftragsart *Einkaufsbestellung*, *Einlagerung fertiger Ware* oder *Rücklieferung* und eine Arbeitsart *Einlagerung* haben. Verwenden Sie es, um den Flow anzuleiten, eine bestimmte Lagerplatzrichtlinie zu verwenden, abhängig vom Dispositionscode, den ein Arbeiter in der Lagerort App ausgewählt hat. So können Sie z.B. zurückgegebene Waren zu einem Lagerplatz leiten, bevor sie ins Lager zurückgebracht werden. Ein Dispositionscode kann mit einem Bestandsstatus verknüpft werden. Auf diese Weise kann er verwendet werden, um den Bestandsstatus als Teil eines Eingangsprozesses zu ändern. Sie haben zum Beispiel einen Dispositionscode, *QA*, der den Bestandsstatus auf *QA* festlegt. Sie können dann eine separate Lagerplatzrichtlinie haben, um diesen Bestand an einen Quarantäneplatz zu verschieben.
+- **Einlagerungscode** - Dieses Feld wird für Lagerplatzrichtlinien verwendet, die eine Arbeitsauftragsart *Einkaufsbestellung*, *Einlagerung fertiger Ware* oder *Rücklieferung* und eine Arbeitsart *Einlagerung* haben. Verwenden Sie es, um den Flow anzuleiten, eine bestimmte Lagerplatzrichtlinie zu verwenden, abhängig vom Dispositionscode, den ein Arbeiter in der Warehouse Management Mobile App ausgewählt hat. So können Sie z.B. zurückgegebene Waren zu einem Lagerplatz leiten, bevor sie ins Lager zurückgebracht werden. Ein Dispositionscode kann mit einem Bestandsstatus verknüpft werden. Auf diese Weise kann er verwendet werden, um den Bestandsstatus als Teil eines Eingangsprozesses zu ändern. Sie haben zum Beispiel einen Dispositionscode, *QA*, der den Bestandsstatus auf *QA* festlegt. Sie können dann eine separate Lagerplatzrichtlinie haben, um diesen Bestand an einen Quarantäneplatz zu verschieben.
 
     > [!NOTE]
     > Dieses Feld ist nur für ausgewählte Arbeitsauftragstypen verfügbar, bei denen eine Wiederbeschaffung erlaubt ist. Eine vollständige Liste finden Sie im Abschnitt [Felder, die für Arbeitsauftragstypen spezifisch sind](#fields-specific-types).
@@ -200,7 +198,7 @@ Verwenden Sie das Inforegister **Zeilen**, um Bedingungen für die Anwendung der
     1. Wählen Sie auf dem Inforegister **Zeilen** die Schaltfläche **Einschränken nach Einheit** in der Werkzeugleiste. (Diese Schaltfläche wird erst verfügbar, nachdem Sie das Kontrollkästchen **Einschränken nach Einheit** auf der Zeile aktiviert und dann **Speichern** gewählt haben).
     1. Wählen Sie auf der Seite **Beschränken nach Einheiten** im Feld **Einheit** die Maßeinheit aus, nach der Sie für die Prozesse des Entnehmens und Einlagerns beschränken wollen.
 
-- **Aufrunden auf Einheit** - Dieses Feld arbeitet zusammen mit dem Kontrollkästchen **Beschränken nach Einheit**. Wenn z.B. **Beschränken nach Einheit** und **Aufrunden auf Einheit** in der Zeile Lagerplatzrichtlinie ausgewählt sind, soll die Arbeit, die aus der Richtlinie für die Rohmaterialkommissionierung erzeugt wird, auf ein Vielfaches der Handhabungseinheit aufgerundet werden, die auf der Seite **Beschränken nach Einheit** angegeben ist.
+- **Aufrunden auf Einheit** - Dieses Feld arbeitet zusammen mit dem Kontrollkästchen **Beschränken nach Einheit**. Wenn z. B. **Beschränken nach Einheit** und **Aufrunden auf Einheit** in der Zeile Lagerplatzrichtlinie ausgewählt sind, soll die Arbeit, die aus der Richtlinie für die Rohmaterialkommissionierung erzeugt wird, auf ein Vielfaches der Handhabungseinheit aufgerundet werden, die auf der Seite **Beschränken nach Einheit** angegeben ist.
 
     > [!NOTE]
     > Diese **Aufrunden auf Einheit**-Einrichtung funktioniert nur für den Arbeitsauftragstyp *Rohstoffkommissionierung* und nur für Lagerplatzrichtlinien, bei denen das Feld **Arbeitstyp** auf *Pick* festgelegt ist.
@@ -239,7 +237,7 @@ Sie können Lagerplatzrichtlinien-Aktivitäten für jede Position definieren. Er
     - **Aufrunden bis zum vollen LP und FEFO-Charge** - Diese Strategie kombiniert die Elemente der Strategien *FEFO-Chargenreservierung* und *Aufrunden bis zu einem vollen LP*. Sie ist nur für chargenaktivierte Elemente und Lagerplatzrichtlinien gültig, die einen Arbeitstyp *Pick* haben. Die Zeile muss chargenaktiviert sein, um die Strategie *FEFO-Chargenreservierung* zu verwenden, und die Strategie *Aufrunden bis zu einem vollen LP* kann nur für die Wiederbeschaffung verwendet werden. Wenn diese Strategie zusammen mit einem Lagerplatz-Limit konfiguriert ist, kann sie dazu führen, dass der gewählte Lagerplatz überlastet wird und Lagerplatz-Limits ignoriert werden.
     - **Auf einen vollen LP aufrunden** - Diese Strategie wird verwendet, um die Bestandsmenge aufzurunden, sodass sie mit der Ladungsträgermenge übereinstimmt, die den zu entnehmenden Elementen zugeordnet ist. Sie können diese Strategie nur für Lagerplatzrichtlinien des Typs *Pick* zur Wiederbeschaffung verwenden. Wenn diese Strategie zusammen mit einem Lagerplatz-Limit konfiguriert ist, kann sie dazu führen, dass der gewählte Lagerplatz überlastet wird und Lagerplatz-Limits ignoriert werden.
     - **Kennzeichen geführt** - Verwenden Sie diese Strategie, wenn Sie den Auftrag an das Lagerort freigeben, um die Pick-and-Put-Arbeit zu erstellen. Sie können diesen Ansatz für mehrere Ladungsträger verwenden. Diese Strategie versucht, die Lagerplätze mit den angeforderten Ladungsträgern, die mit den Transportauftragszeilen verknüpft wurden, zu reservieren und die Kommissionierarbeit zu erstellen. Wenn diese Aktionen jedoch nicht durchgeführt werden können, Sie aber dennoch Kommissionierarbeit erstellen möchten, sollten Sie auf eine andere Strategie für Lagerplatzrichtlinien-Aktionen zurückgreifen. Abhängig von Ihren Geschäftsprozessanforderungen möchten Sie vielleicht auch in einem anderen Bereich des Lagers nach Bestand suchen.
-    - **Leerer Lagerplatz ohne eingehende Arbeit** - Verwenden Sie diese Strategie, um leere Lagerplätze zu finden. Ein Lagerplatz wird als leer angesehen, wenn er keinen physischen Bestand und keine erwartete eingehende Arbeit hat. Sie können diese Strategie nur für Lagerplatzrichtlinien verwenden, die eine Arbeitsart von *Pick* haben.
+    - **Leerer Lagerplatz ohne eingehende Arbeit** - Verwenden Sie diese Strategie, um leere Lagerplätze zu finden. Ein Lagerplatz wird als leer angesehen, wenn er keinen physischen Bestand und keine erwartete eingehende Arbeit hat. Sie können diese Strategie nur für Lagerplatzrichtlinien verwenden, die einen Arbeitstyp von *Einlagern* haben.
     - **Lagerplatzfälligkeit FIFO** - Verwenden Sie die Strategie „First in, first out“ (FIFO), um sowohl chargenverfolgte Artikel als auch nicht chargenverfolgte Artikel zu versenden, basierend auf dem Datum, an dem der Bestand ins Lager kam. Diese Funktionalität kann besonders für nicht chargenverfolgte Bestände nützlich sein, bei denen kein Verfallsdatum für die Sortierung verfügbar ist. Die FIFO-Strategie findet den Lagerplatz, der das älteste Verfallsdatum enthält, und teilt dann die Kommissionierung basierend auf diesem Verfallsdatum zu.
     - **Lagerplatzfälligkeit LIFO** - Verwenden Sie die LIFO-Strategie (last in, last out), um sowohl chargenverfolgte Elemente als auch nicht chargenverfolgte Elemente zu versenden, basierend auf dem Datum, an dem der Bestand ins Lager kam. Diese Funktionalität kann besonders für nicht chargenverfolgte Bestände nützlich sein, bei denen kein Verfallsdatum für die Sortierung verfügbar ist. Die LIFO-Strategie findet den Lagerplatz, der das jüngste Alterungsdatum enthält, und weist dann die Kommissionierung basierend auf diesem Alterungsdatum zu.
 
@@ -251,9 +249,12 @@ Für dieses Szenario müssen zwei Lagerplatzrichtlinien-Aktivitäten definiert w
 
 ## <a name="next-step"></a>Nächster Schritt
 
-Wenn Sie Lagerplatzrichtlinien erstellt haben, können Sie jeden Richtliniencode zu einem Arbeitsvorlagencode zur Arbeitserstellung zuordnen. (Weitere Informationen finden Sie unter [Steuern von Lagerarbeit mithilfe von Arbeitsvorlagen und Lagerplatzrichtlinien](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/control-warehouse-location-directives).)
+Wenn Sie Lagerplatzrichtlinien erstellt haben, können Sie jeden Richtliniencode zu einem Arbeitsvorlagencode zur Arbeitserstellung zuordnen. (Weitere Informationen finden Sie unter [Steuern von Lagerarbeit mithilfe von Arbeitsvorlagen und Lagerplatzrichtlinien](./control-warehouse-location-directives.md).)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 - Video: [Tiefe Einblicke in die Konfiguration der Lagerortverwaltung](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Hilfethema: [Steuern Sie die Lagerarbeit mit Hilfe von Arbeitsvorlagen und Lagerplatzrichtlinien](control-warehouse-location-directives.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Rahmenbestellungen
 description: Dieser Artikel gibt Informationen zu Kaufverträge. Ein Kaufvertrag ist ein Vertrag, der eine Organisation bindet, eine angegebene Menge oder einen Betrag zu kaufen, indem sie mehrere Bestellungen tätigt. Für diese Zusage erhält der Käufer Sonderpreise und Rabatte.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9cd3c18129724cc67560aee7bf9fc0e5dcd2ebc3
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: d8084ebed80a509d543053867bb1f4d483b3f8eb
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017186"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103737"
 ---
 # <a name="purchase-agreements"></a>Rahmenbestellungen
 
@@ -43,10 +41,7 @@ Um zu verhindern, dass Ihr Kaufvertrag verwendet und bestätigt wird, markieren 
 Sie können einen primären und einen sekundären verantwortlichen Mitarbeiter in der Klassifizierung des Kaufvertrags identifizieren. Diese Werte werden vom resultierenden Kaufvertrag übernommen. Sie müssen dem Kaufvertrag keine verantwortlichen Mitarbeiter hinzufügen, und diese können im Kaufvertrag selbst fallweise direkt geändert werden. Sie können keinen sekundärverantwortlichen Mitarbeiter ohne einen primärverantwortlichen Mitarbeiter angeben, obwohl Sie keinen sekundärverantwortlichen Mitarbeiter benötigen. Sie können nicht denselben Mitarbeiter als primären und sekundären verantwortlichen Mitarbeiter angeben.
 
 > [!IMPORTANT]
-> Bevor Sie die Funktion Zuständige Partei nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
-> 
-> - **Modul:** *Beschaffung*
-> - **Funktionsname:** *Zuständige Partei für Kaufvertrag*
+> Um die Funktion „Zuständige Partei“ nutzen zu können, muss es in Ihrem System aktiviert sein. Ab Supply Chain Management 10.0.25 ist diese Funktion standardmäßig aktiviert. Administratoren können diese Funktionalität an- oder ausschalten, indem Sie nach der Funktion *Zuständige Partei für Kaufvertrag* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ## <a name="commitment-types"></a>Zusagetypen
 Jede Position in einem Kaufvertrag drückt eine Zusage für den Kauf eines Artikels aus. Sie können Positionen aus mehreren Bestellungen (POs) verwenden, um die Zusage zu erfüllen. Es gibt vier Typen von Zusagen:
@@ -104,12 +99,13 @@ Wenn Sie eine Intercompany-Bestellung anlegen, die den Intercompany-Kaufvertrag 
 ## <a name="financial-dimensions-on-purchase-agreements"></a>Finanzdimensionen in Kaufverträgen
 Sie können Finanzdimensionen in Dokumentüberschriften oder einzelne Positionen eines Kaufvertrags kopieren. Wenn Sie die Dimensionen im Vereinbarungskopf oder in der Kaufvertragsposition ändern, wirkt sich diese Änderung keine freigegebenen Aufträgen, es wird jedoch über alle neuen Aufträge angezeigt.
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Kaufvertrag erstellen](tasks/create-purchase-agreement.md)
-
-[Einen Freigabeauftrag für den Einkauf aus einem Kaufvertrag erstellen](tasks/create-purchase-release-order-purchase-agreement.md)
+- [Kaufvertrag erstellen](tasks/create-purchase-agreement.md)
+- [Einen Freigabeauftrag für den Einkauf aus einem Kaufvertrag anwenden](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

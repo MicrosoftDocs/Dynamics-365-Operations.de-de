@@ -1,12 +1,10 @@
 ---
 title: Manuelle Anpassungen an der Grundplanung
 description: In diesem Thema wird beschrieben, wie Sie manuelle Anpassungen an einer Grundplanung vornehmen und Details der Planung anzeigen können.
-author: roxanadiaconu
-manager: tfehr
+author: ChristianRytt
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqDemPlanForecastViewer
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 72704
 ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afdcbb98c96b2a685f64a16886b9a064ed13c2c0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4d00061efa551c9fe2ad9d0e441bba44e70b071c
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967029"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103762"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Manuelle Anpassungen an der Grundplanung
 
@@ -69,14 +67,13 @@ Auf der Seite **Bedarfsplanungsdetails** werden die folgenden Informationen in g
 
 **Hinweise:**
 
--   Wenn Sie **Auswahl des Prognosemodells bei Bedarfsplanungsdetails** über die Funktionsverwaltung aktivieren, können Sie die Prognosemodelle, die für die historische Prognose einbezogen werden sollen, auf der Seite **Bedarfsplanungsdetails** auswählen.
--   Das Zuverlässigkeitsintervall, das im Abschnitt **Planung** der Seite angezeigt wird, stellt die Differenz zwischen der Obergrenze des Zuverlässigkeitsintervalls und der Untergrenze des Zuverlässigkeitsintervalls dar. Um die Werte für den oberen und unteren Grenzwert anzuzeigen, bewegen Sie die Maus über das Diagramm im Abschnitt **Historische(r) Bedarf und Planung, grafisch**.
--   Wenn Sie den Microsoft Azure Machine Learning-Dienst der Bedarfsplanung verwenden, können Sie die Zuverlässigkeitsstufe angeben, die die generierte Planung haben soll. Eine Zuverlässigkeitsintervall besteht aus einem Wertebereich, der eine gute Einschätzung der Bedarfsplanung ermöglicht. Eine Zuverlässigkeitsstufe von 95 % bedeutet beispielsweise, dass die Bedarfsplanung mit einer Chance von 5 % aus dem Intervallbereich der Zuverlässigkeit fällt.
+- Die Funktion *Auswahl des Planzahlenmodells bei Bedarfsplanungsdetails* fügt Einstellungen auf der Seite **Bedarfsplanungsdetails** hinzu, mit denen Sie das einzufügende Planzahlenmodell auswählen können. Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Auswahl des Planzahlenmodells bei Bedarfsplanungsdetails* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
+- Das Zuverlässigkeitsintervall, das im Abschnitt **Planung** der Seite angezeigt wird, stellt die Differenz zwischen der Obergrenze des Zuverlässigkeitsintervalls und der Untergrenze des Zuverlässigkeitsintervalls dar. Um die Werte für den oberen und unteren Grenzwert anzuzeigen, bewegen Sie die Maus über das Diagramm im Abschnitt **Historische(r) Bedarf und Planung, grafisch**.
+- Wenn Sie den Microsoft Azure Machine Learning-Dienst der Bedarfsplanung verwenden, können Sie die Zuverlässigkeitsstufe angeben, die die generierte Planung haben soll. Eine Zuverlässigkeitsintervall besteht aus einem Wertebereich, der eine gute Einschätzung der Bedarfsplanung ermöglicht. Eine Zuverlässigkeitsstufe von 95 % bedeutet beispielsweise, dass die Bedarfsplanung mit einer Chance von 5 % aus dem Intervallbereich der Zuverlässigkeit fällt.
 
 Sie können manuelle Anpassungen an der Planung auf der Seite **Bedarfsplanungsdetails** vornehmen, indem Sie die Werte in der Zeile **Planung** im Abschnitt **Planung** ändern.
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Planungsgenauigkeit überwachen](monitor-forecast-accuracy.md)
 
@@ -84,3 +81,6 @@ Sie können manuelle Anpassungen an der Planung auf der Seite **Bedarfsplanungsd
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

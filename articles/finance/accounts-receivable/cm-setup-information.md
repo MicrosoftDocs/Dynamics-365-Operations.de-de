@@ -2,22 +2,22 @@
 title: Kreditverwaltungseinstellungen
 description: In diesem Thema wird die Einstellung beschrieben, das für das Kreditmanagement erforderlich ist.
 author: JodiChristiansen
-ms.date: 09/04/2019
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9b9e756b678786d2c5a8c5bb9e890ce988090c09
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 6977789b039c3e77e6d697e32bf4cac69c35a901
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753667"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182442"
 ---
 # <a name="credit-management-setup"></a>Kreditverwaltungseinstellungen 
 
@@ -39,7 +39,7 @@ Sie können einen Auftrag sperren, wenn die Zahlungsbedingungen in der Bestellun
 
 Wenn die Rangfolge für Zahlungsbedingungen aktiv ist und wenn die Zahlungsbedingungen für die Bestellung einen höheren Rang als die Standardzahlungsbedingungen für den Debitor haben, wird der Auftrag gesperrt.
 
-Sie können die Rangfolge der Zahlungsbedingungen auf der Seite **Kredit und Inkasso \> Einrichten \> Kreditmanagement einrichten \>Rangfolge der Zahlungsbedingungen** festlegen  
+Sie können die Rangfolge der Zahlungsbedingungen auf der Seite **Kredit und Inkasso \> Einrichten \> Kreditmanagement einrichten \>Rangfolge der Zahlungsbedingungen** festlegen.  
 
 ### <a name="ranking-settlement-discounts"></a>Bewertung Ausgleichsrabatte
 
@@ -57,7 +57,7 @@ Im Kreditmanagement werden verschiedene Arten von Gründen verwendet:
 - Freigabegründe werden einem Auftrag zugeordnet, wenn er aus dem Wartezustand freigegeben wird.
 - Statusgründe geben an, warum einem Debitor ein Kontostatus zugewiesen wurde.
 
-Sie können Gründe auf der Seite **Gründe für das Kreditmanagement** (**Kredit und Inkasso \> Einrichten\> Kreditmanagement \> Gründe für das Kreditmanagement**) einstellen.
+Sie können Gründe auf der Seite **Gründe für das Kreditmanagement** (**Kredit und Inkasso \> Einrichten \> Kreditmanagement \> Gründe für das Kreditmanagement**) einstellen.
 
 1. Wählen Sie im Feld **Grundtyp** den Grund aus: **Sperren**, **Freigeben** oder **Status**.
 2. Geben Sie im Feld **Grund** einen Namen für die Grund ein.
@@ -86,9 +86,9 @@ Sie können Kontostatus auf der Seite **Kontostatus** (**Kredit und Inkasso \> E
 
 ## <a name="scoring-groups"></a>Bewertungsgruppen
 
-Sie können Bewertungsgruppen einrichten, um Risikofaktoren und die Kriterien zu definieren, anhand derer diese gemessen werden. Wenn Informationen zu einem Debitor auf eine Bewertungsgruppe angewendet werden, wird für jeden Risikofaktor eine Bewertung berechnet und verwendet, um den Debitor in eine Risikogruppe einzuteilen. Die Risikogruppe kann verwendet werden, um die Kreditwürdigkeit zu identifizieren und automatische Kreditlimits zu berechnen.
+Sie können **Bewertungsgruppen** einrichten, um Risikofaktoren und die Kriterien zu definieren, anhand derer diese gemessen werden. Wenn Informationen zu einem Debitor auf eine Bewertungsgruppe angewendet werden, wird für jeden Risikofaktor eine Bewertung berechnet und verwendet, um den Debitor in eine Risikogruppe einzuteilen. Die Risikogruppe kann verwendet werden, um die Kreditwürdigkeit zu identifizieren und automatische Kreditlimits zu berechnen.
 
-Sie können Bewertungsgruppen auf der Seite **Bewertungsgruppen** (**Kreditmanagement und Inkasso \> Installieren \> Kreditmanagement einrichten \>  Risiko \> Bewertungsgruppen**) erstellen.
+Sie können Bewertungsgruppen auf der Seite **Bewertungsgruppen** (**Kreditmanagement und Inkasso \> Installieren \> Kreditmanagement einrichten \> Risiko \> Bewertungsgruppen**) erstellen.
 
 1. Erstellen sie eine Bewertungsgruppe und geben Sie ihr einen beschreibenden Namen.
 2. Geben Sie eine Beschreibung ein, um die Bewertungsgruppe näher zu beschreiben.
@@ -142,7 +142,7 @@ Sie können Kriterien für automatische Kreditlimiten auf der Seite **Automatisc
 
 1. Wählen Sie eine Risikogruppe aus, der das automatische Kreditlimit zugewiesen werden soll.
 2. Wählen Sie die Währung für das automatische Kreditlimit. Sie können mehrere automatische Kreditlimits in verschiedenen Währungen für dieselbe Risikogruppe erstellen.
-3. Geben Sie den Erlösbetrag ein, der den maximalen Unternehmenserlös darstellt, der für dieses automatische Kreditlimit verwendet werden kann. Wenn Kreditlimits erstellt werden, wird der Einnahmenbetrag mit einem Einnahmenwert verglichen, der auf der Seite **Finanzen** (**Debitoren \>Alle Debitoren \>Einen Debitoren auswählen \>Allgemeines \>Statistiken \>Finanzen**) gefunden wird. Das System verwendet den neuesten Wert im Abschnitt **Überblick**.
+3. Geben Sie den Erlösbetrag ein, der den maximalen Unternehmenserlös darstellt, der für dieses automatische Kreditlimit verwendet werden kann. Wenn Kreditlimits erstellt werden, wird der Einnahmenbetrag mit einem Einnahmenwert verglichen, der auf der Seite **Finanzen** (**Debitoren \> Alle Debitoren \> Einen Debitoren auswählen \> Allgemeines \> Statistiken \> Finanzen**) gefunden wird. Das System verwendet den neuesten Wert im Abschnitt **Überblick**.
 
 Führen Sie die folgenden Schritte aus, um Zeilen hinzuzufügen, die das Kreditlimit darstellen, das anhand der ausgewählten Kriterien generiert wird.
 

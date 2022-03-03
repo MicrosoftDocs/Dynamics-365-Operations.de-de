@@ -2,27 +2,24 @@
 title: Zusammenfassende Meldung
 description: Dieser Artikel enthält Informationen über Verkaufslisten-Berichte der Europäischen Union (EU).
 author: EvgenyPopovMBS
-manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/17/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EUSalesList
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 12811
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68cbd8d3495f8c10c57fa0751fabb03a6946c7dd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: af49817667999dd02a96a7a9bd5bb966be652d35
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407742"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323475"
 ---
 # <a name="eu-sales-list-reporting"></a>Zusammenfassende Meldung
 
@@ -30,8 +27,7 @@ ms.locfileid: "4407742"
 
 Dieser Artikel enthält Informationen über Verkaufslisten-Berichte der Europäischen Union (EU).
 
-<a name="eu-sales-list-reporting"></a>Zusammenfassende Meldung
------------------------
+## <a name="eu-sales-list-reporting"></a>Zusammenfassende Meldung
 
 Ein Lieferant, der innergemeinschaftliche Lieferungen von Waren oder Dienstleistungen an Unternehmen ausführt, die innerhalb der Europäischen Union (EU) gegründet wurden, muss eine Erklärung für innergemeinschaftliche Lieferungen (zusammenfassende Meldung oder ESL) einreichen. Im Allgemeinen muss die ESL an die Steuerbehörden spätestens bis zum letzten Tag des Monats nach dem Kalenderzeitraum, den die ESL umfasst, übermittelt werden. Der Lieferant muss seine Umsatzsteuer-Identifikationsnummer auf der ESL und nach Debitor auch die folgenden Informationen angeben:
 
@@ -72,13 +68,19 @@ In der folgenden Tabelle werden die Voraussetzungen angezeigt, die vorhanden sei
 <td>Richten Sie die Parameter für Umsatzsteuernummer auf der Seite <strong>Länder-/Regionsparameter</strong> ein (klicken Sie auf <strong>Steuer</strong> &gt; <strong>Einstellungen</strong> &gt; <strong>Mehrwertsteuer</strong> &gt; <strong>Länder-/Regionsparameter</strong>). Für jede(s) Land/Region, in dem/der Sie Gegenparteien haben, erstellen Sie einen Datensatz auf der Seite und geben Sie die folgenden Informationen ein:
 <ul>
 <li><strong>Land/Region</strong> – Hier können Sie ein Land/eine Region auswählen, um es bzw. sie einer Umsatzsteuer-Identifikationsnummer zuzuordnen.</li>
-<li><strong>Mehrwertsteuer</strong> – Geben Sie die Umsatzsteuernummer (das heißt, das Umsatzsteuernummernpräfix) für das/die ausgewählte Land/Region ein.</li>
+<li><strong>Mehrwertsteuer</strong> – Geben Sie die Umsatzsteuernummer (das heißt, die Umsatzsteuer-Identifikationsnummer oder Umsatzsteuernummernpräfix) für das/die ausgewählte Land/Region ein.</li>
 <li><strong>Umsatzsteuernummer überprüfen</strong> – Aktivieren Sie dieses Kontrollkästchen, um die Umsatzsteuer-Identifikationsnummer für das ausgewählte Land/die ausgewählte Region zu überprüfen.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><strong>Einrichten:</strong> USt-IdNr.</td>
-<td>Erstellen Sie Umsatzsteuer-ID-Nummern für Ihre Gegenparteien auf der Seite <strong>USt-IdNr.</strong> (klicken Sie auf <strong>Steuer</strong> &gt; <strong>Einstellungen</strong> &gt; <strong>Mehrwertsteuer</strong> &gt; <strong>USt-IdNr</strong>.). Erstellen Sie für jede Umsatzsteuernummer einen Datensatz auf der Seite, und geben Sie die folgenden Informationen an:
+<td><strong>Festlegen:</strong> Umsatzsteuer-Identifikationsnummern</td>
+<td>Richten Sie Umsatzsteuer-Identifikationsnummern für Ihre Gegenparteien entweder auf der Seite <strong>Alle Debitoren</strong> (klicken Sie auf <strong>Vertrieb und Marketing</strong> &gt; <strong>Debitoren</strong> &gt; <strong>Alle Debitoren</strong>, wählen Sie einen Debitorendatensatz und dann <strong>Debitoren</strong> &gt; <strong>Registrierungs-IDs</strong> aus) oder auf der Seite <strong>Kreditoren</strong> (gehen Sie zu <strong>Beschaffung</strong> &gt; <strong>Kreditoren</strong> &gt; <strong>Kreditoren</strong>, wählen Sie einen Kreditorendatensatz aus und gehen Sie dann auf <strong>Kreditoren</strong> &gt; <strong>Registrierungs-ID</strong>) ein. Erstellen Sie im Inforegister <strong>Registrierungs-ID</strong> auf der Registerkarte <strong>Allgemein</strong> einen Datensatz und geben Sie die folgenden Informationen an:
+<ul>
+<li><strong>Registrierungstyp</strong>: Wählen Sie den Registrierungstyp aus, der der <strong>USt-IdNr.</strong>-Registrierungskategorie für das Land/die Region der Gegenpartei zugewiesen ist.</li>
+<li><strong>Registrierungsnummer</strong>: Geben Sie die Umsatzsteuer-Identifikationsnummer für die Gegenpartei ein.</li>
+<li><strong>Gültig</strong>: Wählen Sie den Beginn des Nutzungszeitraums der Umsatzsteuer-Identifikationsnummer aus.</li>
+</ul>  
+Alternativ können Sie Umsatzsteuer-Identifikationsnummer für Ihre Gegenparteien auf der Seite <strong>USt-Identifikationsnummer</strong> erstellen (gehen Sie auf <strong>Steuer</strong> &gt; <strong>Einstellungen</strong> &gt; <strong>Mehrwertsteuer</strong> &gt; <strong>USt-Identifikationsnummer</strong>). Erstellen Sie für jede Umsatzsteuernummer einen Datensatz auf der Seite, und geben Sie die folgenden Informationen an:
 <ul>
 <li><strong>Land/Region</strong> – Wählen Sie das Land/die Region der Steuerregistrierung der Gegenpartei aus.</li>
 <li><strong>Umsatzsteuernummer</strong> – Geben Sie die Umsatzsteuernummer der Gegenpartei ein.</li>
@@ -87,7 +89,7 @@ In der folgenden Tabelle werden die Voraussetzungen angezeigt, die vorhanden sei
 </tr>
 <tr class="even">
 <td><strong>Einstellungen:</strong> Steuerregistrierung von Gegenparteien</td>
-<td>Richten Sie Steuerregistrierungsinformationen für Ihre Gegenparteien entweder auf der Seite <strong>Alle Debitoren</strong> (klicken Sie auf <strong>Vertrieb und Marketing</strong> &gt; <strong>Debitoren</strong> &gt; <strong>Alle Debitoren</strong>, wählen Sie einen Debitorendatensatz aus, und klicken Sie dann auf <strong>Optionen</strong> &gt; <strong>Ansicht wechseln</strong> &gt; <strong>Detailansicht</strong>) oder der Seite <strong>Kreditoren</strong> (klicken Sie auf <strong>Beschaffung</strong> &gt; <strong>Kreditoren</strong> &gt; <strong>Kreditoren,</strong> wählen Sie einen Kreditorendatensatz aus, und klicken Sie dann auf <strong>Optionen</strong> &gt; <strong>Ansicht wechseln</strong> &gt; <strong>Detailansicht</strong>) ein. Wählen Sie im <strong>Rechnung und Lieferung</strong>-Inforegister im Feld <strong>Umsatzsteuernummer</strong> die USt-IdNr. aus.</td>
+<td>Richten Sie Steuerregistrierungsinformationen für Ihre Gegenparteien entweder auf der Seite <strong>Alle Debitoren</strong> (klicken Sie auf <strong>Vertrieb und Marketing</strong> &gt; <strong>Debitoren</strong> &gt; <strong>Alle Debitoren</strong>, wählen Sie einen Debitorendatensatz aus, und klicken Sie dann auf <strong>Optionen</strong> &gt; <strong>Ansicht wechseln</strong> &gt; <strong>Detailansicht</strong>) oder der Seite <strong>Kreditoren</strong> (klicken Sie auf <strong>Beschaffung</strong> &gt; <strong>Kreditoren</strong> &gt; <strong>Kreditoren,</strong> wählen Sie einen Kreditorendatensatz aus, und klicken Sie dann auf <strong>Optionen</strong> &gt; <strong>Ansicht wechseln</strong> &gt; <strong>Detailansicht</strong>) ein. Wählen Sie im Inforegister <strong>Rechnung und Lieferung</strong> im Feld <strong>Umsatzsteuernummer</strong> die Umsatzsteuer-Identifikationsnummer aus.</td>
 </tr>
 <tr class="odd">
 <td><strong>Einrichten:</strong> Mehrwertsteuer</td>
@@ -160,3 +162,6 @@ Wenn Sie den Berichterstellungsprozess für eine bestimmte Periode abgeschlossen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Problembehandlung beim Einrichten von Finance Insights
 description: In diesem Thema werden Probleme aufgelistet, die auftreten können, wenn Sie die Funktionen von Finance Insights verwenden. Außerdem wird erläutert, wie Sie diese Probleme beheben können.
 author: panolte
-ms.date: 01/29/2022
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: f77cddfdab22bef8af7f62d49723e330c4f13261
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: fc616e5fce6bbfeaa3b36ccc35f1b1cf407af4a6
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8064865"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109859"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Problembehandlung beim Einrichten von Finance Insights
 
@@ -111,6 +111,14 @@ Weitere Informationen über die Anpassung der Kategorien **Pünktlich**, **Versp
 
 ### <a name="resolution"></a>Lösung
 
-Für das Training des Modells **Cashflow Planung** werden Daten benötigt, die sich über mehr als ein Jahr erstrecken und mehr als 100 Transaktionen enthalten. Diese Transaktionen müssen sich auf Liquiditätskonten auswirken, die in der Einrichtung der Cashflowplanung enthalten sind.
+Für das Training des Modells **Cashflow Planung** werden Daten benötigt, die mehr als 100 Transaktionen enthalten und sich über mehr als ein Jahr erstrecken. Wir empfehlen Ihnen mindestens zwei Jahre Daten mit mehr als 1.000 Transaktionen.
 
-Die **Zahlungsprognosen für Kunden** erfordern mindestens 100 Rechnungs- und Zahlungstransaktionen von Debitor in den letzten sechs bis neun Monaten, um Prognosen zu erstellen.  
+Die Funktion **Vorhersagen für Kundenzahlungen** erfordert mehr als 100 Transaktionen in den letzten sechs bis neun Monaten. Bei den Transaktionen kann es sich um Freitextrechnungen, Verkaufsaufträge und Kundenzahlungen handeln. Diese Daten müssen über die Einstellungen **Pünktlich**, **Spät** und **Sehr spät** verteilt sein, die auf der Seite **Konfiguration** sind.    
+
+Die Funktion **Budgetvorschlag** erfordert Budget- oder Istdaten aus mindestens drei Jahren. Diese Lösung verwendet drei bis zehn Jahre Daten in den Projektionen. Mehr als drei Jahre liefern bessere Ergebnisse. Die Daten selbst funktionieren am besten, wenn die Werte variieren. Wenn die Daten nur konstante Daten enthalten, wie z. B. Leasingkosten, kann das Training fehlschlagen, da die KI aufgrund der fehlenden Abwechslung keine Prognosen der Beträge erstellen muss.
+
+## <a name="symptom-error-message-states-that-the-table-with-name-msdyn_paypredpredictionresultentities-does-not-exist-the-remote-server-returned-an-error-404-not-found"></a>Symptom: Die Fehlermeldung besagt, dass die „Tabelle mit dem Namen ‚msdyn_paypredpredictionresultentities‘ nicht existiert. Der Remoteserver hat einen Fehler zurückgegeben: (404) nicht gefunden ...“
+
+### <a name="resolution"></a>Lösung
+
+Die Umgebung hat den maximalen Tabellengrenzwert der Data-Lake-Services erreicht. Weitere Informationen zum Limit finden Sie im Abschnitt **Datenänderungen in Quasi-Echtzeit aktivieren** des Themas [Übersicht über den Export in Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).

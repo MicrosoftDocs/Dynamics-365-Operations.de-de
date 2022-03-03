@@ -1,33 +1,30 @@
 ---
-title: Kennzeichenempfang über die Warehouse-App
-description: In diesem Thema wird erläutert, wie Sie die Warehouse-App so einrichten, dass die Verwendung eines Kennzeichenempfangsprozesses zum Empfangen von Bestand unterstützt wird.
+title: Kennzeicheneingang über die mobile Warehouse Management Mobile App
+description: In diesem Thema wird erläutert, wie Sie die Warehouse Management Mobile App so einrichten, dass die Verwendung eines Kennzeichenempfangsprozesses zum Empfangen von Inventar unterstützt wird.
 author: perlynne
-manager: tfehr
 ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSParameters, WHSRFMenuItem, WHSLicensePlate, WHSPackingStructure
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
-ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 0d6894c0adb5671818e976dbb5116ecb947025d2
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.11
+ms.openlocfilehash: 6663188334c70035906f924c7850a0dc5002f306
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429086"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103062"
 ---
-# <a name="license-plate-receiving-via-the-warehouse-app"></a>Kennzeichenempfang über die Warehouse-App
+# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Kennzeicheneingang über die mobile Warehouse Management Mobile App
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie die Warehouse-App einrichten, sodass sie die Verwendung eines Kennzeichenempfangsprozesses zum Empfangen von Bestand unterstützt.
+In diesem Thema wird erläutert, wie Sie die Warehouse Management Mobile App einrichten, so dass sie die Verwendung eines Kennzeichenempfangsprozesses zum Empfangen von Bestand unterstützt.
 
 Mit dieser Funktion können Sie schnell den Eingang des eingehenden Bestands aufzeichnen, der sich auf eine Vorabmitteilung (ASN) bezieht. Das System erstellt automatisch einen Lieferavis, wenn Lagerverwaltungsprozesse zum Versenden eines Transportauftrags verwendet werden. Für den Bestellvorgang kann ein ASNs manuell erfasst oder mithilfe eines eingehenden ASN-Datenentitätsprozesses automatisch importiert werden.
 
@@ -73,22 +70,20 @@ Um diese Funktionalität auf Ihrem System verfügbar zu machen, müssen Sie die 
 
 ## <a name="show-or-skip-the-receiving-summary-page"></a>Zeigen Sie die empfangende Zusammenfassungsseite an oder überspringen Sie sie
 
-Sie können die Funktion *Steuern Sie, ob auf Mobilgeräten eine Empfangsübersichtsseite angezeigt werden soll* verwenden, um einen zusätzlichen detaillierten Warehouse-App-Ablauf als Teil des Kennzeichenempfangsprozesses zu nutzen.
+Sie können die Funktion *Steuern Sie, ob auf Mobilgeräten eine Empfangsübersichtsseite angezeigt werden soll* verwenden, um einen zusätzlichen detaillierten Warehouse Management Mobile App-Flow als Teil des Kennzeichenempfangsprozesses zu nutzen.
 
 Wenn diese Funktion aktiviert ist, bieten Menüelemente für mobile Geräte zum Empfangen von Kennzeichen oder zum Empfangen und Einlagerungen eine Einstellung **Empfangsübersichtsseite anzeigen** an. Diese Einstellung bietet folgende Optionen:
 
 - **Eine detaillierte Zusammenfassung anzeigen** – Während des Empfangs des Kennzeichens wird den Mitarbeitern eine zusätzliche Seite mit den vollständigen ASN-Informationen angezeigt.
 - **Überspringen Sie die Zusammenfassung** – Die Mitarbeiter sehen nicht die vollständigen ASN-Informationen. Lagerarbeiter können während des Empfangsprozesses auch keinen Dispositionscode festlegen oder Ausnahmen hinzufügen.
 
-Um diese Funktionalität auf Ihrem System verfügbar zu machen, müssen Sie die Funktion *Steuern Sie, ob auf Mobilgeräten eine Empfangsübersichtsseite angezeigt werden soll* aktivieren in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Um diese Funktionalität zu nutzen, muss die Funktion *Steuern, ob eine Empfangszusammenfassungsseite auf mobilen Geräten angezeigt wird* in Ihrem System aktiviert sein. Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Steuern, ob eine Empfangszusammenfassungsseite auf mobilen Geräten angezeigt wird* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ## <a name="prevent-transfer-ordershipped-license-plates-from-being-used-at-warehouses-other-than-the-destination-warehouse"></a>Verhindern Sie, dass Kennzeichen mit Transportauftragsversand in anderen Lagern als dem Ziellager verwendet werden
 
 Ein Kennzeichenempfangsprozess kann nicht verwendet werden, wenn ein ASN eine Kennzeichen-ID enthält, die bereits vorhanden ist und physische Daten an einem anderen Lagerort als dem Lagerort enthält, an dem die Kennzeichenregistrierung erfolgt.
 
-Für Transportauftragsszenarien, in denen das Transitlager keine Kennzeichen erfasst (und daher auch keinen physischen Lagerbestand pro Kennzeichen erfasst), können Sie die Funktion *Verhindern Sie, dass Versandkennzeichen für Transportaufträge in anderen Lagern als dem Ziellager verwendet werden* verwenden, um physische Aktualisierungen von unterwegs befindlichen Kennzeichen zu verhindern.
-
-Um diese Funktionalität auf Ihrem System verfügbar zu machen, müssen Sie die Funktion aktivieren *Verhindern Sie, dass Versandkennzeichen für Transportaufträge in anderen Lagern als dem Ziellager verwendet werden* in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Für Transportauftragsszenarien, in denen das Transitlager keine Kennzeichen erfasst (und daher auch keinen physischen Lagerbestand pro Kennzeichen erfasst), können Sie die Funktion *Verhindern Sie, dass Versandkennzeichen für Transportaufträge in anderen Lagern als dem Ziellager verwendet werden* verwenden, um physische Aktualisierungen von unterwegs befindlichen Kennzeichen zu verhindern. Um diese Funktionalität verfügbar zu machen, müssen Sie die Funktion *Verhindern, dass Kennzeichen für gelieferte Umlagerungsaufträge an anderen Lagerorten als dem Ziellagerort verwendet werden* in Ihrem System aktiviert sind. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktion ein- oder ausschalten, indem sie im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) danach suchen.
 
 Führen Sie die folgenden Schritte aus, um die Funktionalität zu verwalten, wenn diese Funktion verfügbar ist.
 
@@ -105,3 +100,6 @@ Weitere Informationen zu Menüelementen für Mobilgeräte finden Sie unter [Rich
 Weitere Informationen zum *Als fertig melden* Produktionsszenario finden sie unter [Übersicht über die Lagerarbeitsrichtlinien](warehouse-work-policies.md).
 
 Weitere Informationen über eingehende Auslastungverwaltung finden Sie unter [Lagerortverwaltung von eingehender Auslastung für Bestellungen](inbound-load-handling.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

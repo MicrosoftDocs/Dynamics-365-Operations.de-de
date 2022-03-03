@@ -1,12 +1,10 @@
 ---
 title: Zuweisen von Benutzern zu Sicherheitsrollen
-description: Für den Zugriff auf Finance and Operations müssen Benutzer Sicherheitsrollen zugewiesen werden.
+description: Um auf Finance and Operations-Apps zuzugreifen, müssen Benutzer Sicherheitsrollen zugewiesen werden.
 author: Peakerbl
-manager: AnnBe
-ms.date: 05/06/2020
+ms.date: 02/09/2022
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm, SysSecRoleExcludeUsers
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f78c24e8c2ffe5418ce119e19b7c0193f01f64b8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 36874b996cc5708f6fd7fbc45251f3066b5b1c97
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679863"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105537"
 ---
-# <a name="assign-users-to-security-roles"></a>Zuweisen von Benutzern zu Sicherheitsrollen
+# <a name="manage-users-and-security-roles"></a>Benutzer und Sicherheitsrollen verwalten
 
 [!include [banner](../../includes/banner.md)]
 
-Um etwas außerhalb der allgemeinen Funktionen in Finance and Operations-Apps verwenden zu können, müssen Benutzern Sicherheitsrollen zugewiesen werden. Sie können Benutzer Rollen basierend auf Regeln und Geschäftsdaten automatisch zuweisen, Benutzer von der automatischen Rollenzuweisung ausschließen oder Benutzer manuell zu Rollen hinzufügen.
+Um etwas außerhalb der allgemeinen Funktionen in Finanz- und Betriebs-Apps verwenden zu können, müssen Benutzern Sicherheitsrollen zugewiesen werden. Sie können Benutzer Rollen basierend auf Regeln und Geschäftsdaten automatisch zuweisen, Benutzer von der automatischen Rollenzuweisung ausschließen oder Benutzer manuell zu Rollen hinzufügen.
 
 ## <a name="automatically-assign-users-to-roles"></a>Weisen Sie Benutzer automatisch Rollen zu
 Diese Prozedur zeigt, wie Systemadministratoren Benutzer automatisch zu Rollen zuweisen können, basierend auf Geschäftsdaten. 
@@ -42,6 +40,8 @@ Diese Prozedur zeigt, wie Systemadministratoren Benutzer automatisch zu Rollen z
 10. Überprüfen Sie die Rollen, die unterschiedlichen Benutzern zugewiesen sind, um zu bestätigen, dass die Rollenzuweisungsabfrage korrekt war. Passen Sie bei Bedarf die Werte an, und führen Sie den Vorgang erneut aus.
 
 ## <a name="exclude-users-from-automatic-role-assignment"></a>Schließen Sie Benutzer von der automatischen Rollenzuweisung aus
+In diesem Verfahren wird erläutert, wie Sie Benutzer von der automatischen Rollenzuweisung ausschließen.
+
 1. Schließen Sie die Seite.
 2. Wechseln Sie zu **Navigationsbereich > Module > Systemverwaltung > Sicherheit > Benutzer zu Rollen zuweisen**.
 3. In der Struktur wählen Sie "Supervisor Buchhaltung" aus. Wählen Sie hier eine Rolle aus. Wählen Sie für dieses Beispiel "Supervisor Buchhaltung" aus.  
@@ -57,3 +57,19 @@ Benutzer, die manuell Sicherheitsrollen zugewiesen werden, müssen auch manuell 
 2. In der Struktur wählen Sie eine Rolle aus, und im Menü **Der Rolle zugewiesene Benutzer** wählen Sie **Benutzer manuell zuweisen/ausschließen** aus.
 4. Im **Benutzer der Rolle zuweisen oder von der Rolle ausschließen** werden Benutzer, denen die Rolle nicht zugewiesen ist, mit dem **Zuweisungsmodus** auf **Keiner** festgelegt aufgelistet. Wählen Sie einen oder mehrere Benutzer aus, denen die Rolle zugewiesen werden soll.
 5. Wählen Sie im **Aktionsbereich** die Option **Der Rolle zuweisen** aus. Der **Zuweisungsmodus** wird aktualisiert auf **Manuell** und den Benutzern wurde jetzt eine neue Rolle zugewiesen.
+
+## <a name="manually-remove-users-from-roles"></a>Benutzer manuell aus Rollen entfernen
+Benutzer, die manuell Sicherheitsrollen zugewiesen werden, müssen auch manuell vom Administrator entfernt werden. Diese Benutzer werden nicht durch Regeln für automatische Rollenzuweisung von Rollen entfernt.
+
+1. Wechseln Sie zu **Navigationsbereich > Module > Systemverwaltung > Sicherheit > Benutzer zu Rollen zuweisen**.
+2. Gehen Sie folgendermaßen vor, um einen Benutzer zu entfernen:
+   1. Wählen Sie in der Struktur eine Rolle aus. 
+   2. Wählen Sie im Bereich **Der Rolle zugewiesene Benutzer** den Benutzer aus, der entfernt werden soll.
+   3. Wählen Sie **Entfernen** und der Benutzer wird aus der Rolle entfernt.
+3. Gehen Sie folgendermaßen vor, um mehrere Benutzer zu entfernen:
+   1. Wählen Sie in der Struktur eine Rolle aus. 
+   2. Wählen Sie im Bereich **Der Rolle zugewiesene Benutzer** **Benutzer manuell zuweisen/ausschließen** aus.
+   3. Auf der Seite **Benutzer der Rolle zuweisen oder von der Rolle ausschließen** wird bei Benutzern, denen die Rolle nicht zugewiesen wurde, **Keine** in der Spalte **Zuweisungsmodus** angezeigt. Wählen Sie die Benutzer aus, die von der Rolle ausgeschlossen werden sollen.
+   4. Wählen Sie im **Aktivitätsbereich** die Option **Von Rolle ausschließen** aus. Die Spalte **Zuweisungsmodus** ist jetzt auf **Manuell** aktualisiert und die Benutzern sind jetzt von der Rolle ausgeschlossen.
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

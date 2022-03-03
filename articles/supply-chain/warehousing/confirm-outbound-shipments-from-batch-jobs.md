@@ -2,25 +2,22 @@
 title: Ausgehende Lieferungen aus Stapelverarbeitungsaufträgen bestätigen
 description: In diesem Thema wird beschrieben, wie Sie einen Stapelverarbeitungsauftrag einrichten, der ausgehende Transportauftragslieferungen für versandfertige Ladungen automatisch bestätigt.
 author: perlynne
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 41dbfb90b7b19c964e725ee0a4c769402414fb17
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: f68dcfc0c1454ee5b095e186c52faa6c83bf8dc6
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428468"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103914"
 ---
 # <a name="confirm-outbound-shipments-from-batch-jobs"></a>Ausgehende Lieferungen aus Stapelverarbeitungsaufträgen bestätigen
 
@@ -28,12 +25,9 @@ ms.locfileid: "4428468"
 
 In diesem Thema wird beschrieben, wie Sie einen Stapelverarbeitungsauftrag einrichten, der ausgehende Transportauftragslieferungen für versandfertige Ladungen automatisch bestätigt. Der hier beschriebene Stapelverarbeitungsauftrag gilt nur für Transportauftragssendungen, nicht für Aufträge.
 
-## <a name="enable-the-confirm-outbound-shipments-from-batch-jobs-feature"></a>Aktivieren Sie die Funktion Ausgehende Lieferungen bestätigen in der Funktion Stapelverarbeitungsaufträge
+## <a name="turn-the-confirm-outbound-shipments-from-batch-jobs-feature-on-or-off"></a>Die Funktion „Ausgehende Lieferungen aus Stapelverarbeitungsaufträgen bestätigen“ ein- oder ausschalten
 
-Bevor Sie diese Funktion nutzen können, müssen Sie diese auf Ihrem System aktivieren. Administratoren können die Seite [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktion zu überprüfen und sie bei Bedarf zu aktivieren. Die Funktion ist aufgeführt als:
-
-- **Modul** - *Lagerortverwaltung*
-- **Funktionsname** - *Ausgehende Lieferungen aus Stapelverarbeitungsaufträgen bestätigen*
+Um die Funktionalität zu verwenden, die in diesem Thema beschrieben wird, die Funktion *Ausgehende Lieferungen aus Stapelverarbeitungsaufträgen bestätigen* für Ihr System eingeschaltet werden. Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Ausgehende Lieferungen aus Stapelverarbeitungsaufträgen bestätigen* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="process-outbound-shipments"></a>Ausgehende Lieferungen verarbeiten
 
@@ -54,3 +48,6 @@ Um einen geplanten Stapelverarbeitungsauftrag einzurichten, um die Bestätigung 
 1. Wählen Sie **OK** im Dialogfeld **Lieferung bestätigen**, um den Stapelverarbeitungsauftrag der Wartestelle hinzuzufügen.
 
 Weitere Informationen finden Sie unter [Stapelverarbeitung – Übersicht](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Aktivitätsabhängige EB-Ziele konfigurieren
 description: In diesem Thema wird erläutert, wie für ein EB-Format (elektronische Berichterstellung), das zum Generieren ausgehender Dokumente konfiguriert wird, aktivitätsabhängige Ziele konfiguriert werden.
 author: NickSelin
-manager: AnnBe
 ms.date: 02/09/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ea7543fddef085cfd1e92edf0b1dabf6d0aac38a
-ms.sourcegitcommit: 5264aaec3723c40a219e4d2867afe1ba9cc5f2a2
+ms.openlocfilehash: e0c836d4a0be47b753d74dc9d6d40ea7d9197176
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5153638"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323978"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Aktivitätsabhängige EB-Ziele konfigurieren
 
 [!include [banner](../includes/banner.md)]
 
-Sie können [Ziele](electronic-reporting-destinations.md) für jede Ausgabekomponente (Ordner oder Datei) einer [EB](general-electronic-reporting.md)-[Format](general-electronic-reporting.md#FormatComponentOutbound)[konfiguration](general-electronic-reporting.md#Configuration) konfigurieren, die zum Generieren eines ausgehenden Dokuments verwendet wird. Benutzer, die ein Eb-Format dieses Typs ausführen und über entsprechende Zugriffsrechte verfügen, können die konfigurierten Zieleinstellungen zur Laufzeit auch ändern.
+Sie können [Ziele](electronic-reporting-destinations.md) für jede Ausgabekomponente (Ordner oder Datei) einer [Konfiguration](general-electronic-reporting.md#Configuration) für das Format für die [elektronische Berichterstellung (EB)](general-electronic-reporting.md) konfigurieren, die zum Generieren eines ausgehenden Dokuments verwendet wird. Benutzer, die ein Eb-Format dieses Typs ausführen und über entsprechende Zugriffsrechte verfügen, können die konfigurierten Zieleinstellungen zur Laufzeit auch ändern.
 
 In Microsoft Dynamics 365 Finance **Version 10.0.17 und höher** kann ein EB-Format ausgeführt werden durch [Bereitstellung](er-apis-app10-0-17.md) eines Aktionscodes, den der Benutzer durch Ausführen dieses EB-Formats ausführt. Zum Beispiel im Modul **Debitoren** können Sie in den Einstellungen für die Druckverwaltung ein EB-Format auswählen, das ein bestimmtes Geschäftsdokument generiert, z. B. eine Freitextrechnung. Sie können dann **Ansicht** auswählen, um eine Vorschau der Rechnung anzuzeigen, oder **Drucken**, um es an einen Drucker zu senden. Wenn zur Laufzeit eine Benutzeraktion für das laufende EB-Format übergeben wird, können Sie verschiedene EB-Ziele für verschiedene Benutzeraktionen konfigurieren. In diesem Thema wird erläutert, wie EB-Ziele für diese Art von EB-Format konfiguriert werden.
 
@@ -62,7 +60,7 @@ Wenn Sie den Dokumenttyp **Beliebige** auswählen, wird im Feld **Druckverwaltun
     - Wenn die Aktion **Senden** zur Laufzeit bereitgestellt wird, wird das EB-Ziel **E-Mail** angewendet.
     - Wenn die Aktion **Drucken** zur Laufzeit bereitgestellt wird, wird das EB-Ziel **Drucker** angewendet.
 
-Zum Beispiel können Sie das EB-Format **Freitextrechnung (Excel)** verwenden, um eine [Freitextrechnung](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) zu drucken, wenn Sie sie buchen. Um ein generiertes Dokument weiterzuleiten, müssen Sie EB-Ziele für dieses EB-Format konfigurieren. Beispielsweise müssen Sie diese EB-Ziele möglicherweise so konfigurieren, dass für ein generiertes Dokument Folgendes ausgeführt wird:
+Zum Beispiel können Sie das EB-Format **Freitextrechnung (Excel)** verwenden, um eine [Freitextrechnung](../../../finance/accounts-receivable/create-free-text-invoice-new.md) zu drucken, wenn Sie sie buchen. Um ein generiertes Dokument weiterzuleiten, müssen Sie EB-Ziele für dieses EB-Format konfigurieren. Beispielsweise müssen Sie diese EB-Ziele möglicherweise so konfigurieren, dass für ein generiertes Dokument Folgendes ausgeführt wird:
 
 - Archivieren Sie das Dokument, wenn das EB-Format ausgeführt wird, aber kein Aktionscode bereitgestellt wird (z. B. wenn das Dokument elektronisch gesendet wird).
 - Zeigen Sie eine Vorschau des Dokuments in einem Webbrowser an, wenn ein Benutzer die Aktion **Ansicht** ausführt.
@@ -71,11 +69,11 @@ Zum Beispiel können Sie das EB-Format **Freitextrechnung (Excel)** verwenden, u
 
 Die folgende Abbildung zeigt, wie Sie diese Konfiguration von EB-Zielen als Satz einzelner Zieldatensätze erreichen können, wenn jeder Datensatz für eine einzelne Benutzeraktion konfiguriert ist:
 
-![Zielseite für die elektronische Berichterstellung mit aktivitätsabhängigen Zieleinstellungen für ein EB-Format, wenn jeder Zieldatensatz für eine einzelne Benutzeraktion konfiguriert ist](./media/er-destination-action-dependent-01.png)
+![Zielseite für die elektronische Berichterstellung mit aktivitätsabhängigen Zieleinstellungen für ein EB-Format, wenn jeder Zieldatensatz für eine einzelne Benutzeraktion konfiguriert ist.](./media/er-destination-action-dependent-01.png)
 
 Die folgende Abbildung zeigt, wie Sie das Gleiche erreichen können, indem Sie alternativ EB-Ziele als Satz einzelner Zieldatensätze konfigurieren, wenn jeder Datensatz für ein einzelnes Ziel konfiguriert ist:
 
-![Zielseite für die elektronische Berichterstellung mit aktivitätsabhängigen Zieleinstellungen für ein EB-Format, wenn jeder Zieldatensatz für ein einzelnes Ziel konfiguriert ist](./media/er-destination-action-dependent-01a.png)
+![Zielseite für die elektronische Berichterstellung mit aktivitätsabhängigen Zieleinstellungen für ein EB-Format, wenn jeder Zieldatensatz für ein einzelnes Ziel konfiguriert ist.](./media/er-destination-action-dependent-01a.png)
 
 > [!NOTE]
 > Wenn für das laufende EB-Format ein Aktionscode bereitgestellt wird, für diesen Aktionscode jedoch keine Ziele konfiguriert wurden, wird das [standardmäßige](electronic-reporting-destinations.md#default-behavior) Zielverhalten angewendet.
@@ -84,9 +82,9 @@ Die folgende Abbildung zeigt, wie Sie das Gleiche erreichen können, indem Sie a
 
 Wenn ein EB-Format ausgeführt wird und Benutzeraktionen von Benutzern bereitgestellt wurden, die über die entsprechenden [Berechtigungen](electronic-reporting-destinations.md#security-considerations) verfügen, um die konfigurierten Zieleinstellungen zur Laufzeit zu ändern, wird ein Dialogfeld angezeigt, in dem die konfigurierten Zieleinstellungen geändert werden können. Dieses Dialogfeld ist optional und hängt davon ab, wie der Aufruf des EB-Frameworks zum Ausführen eines EB-Formats implementiert wurde. Wenn dieses Dialogfeld angezeigt wird, werden die darin enthaltenen EB-Ziele entsprechend der bereitgestellten Benutzeraktion aktiviert.
 
-Die folgende Abbildung zeigt ein Beispiel für das Dialogfeld **Ziele für elektronisches Berichterstellungsformat**, das angezeigt wird, wenn eine Freitextrechnung [gebucht wird](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) und das EB-Format **Freitextrechnung (Excel)** ausgeführt wird, um dieses Dokument zu generieren, wenn die Aktion **Drucker** bereitgestellt wurde und EB-Ziele für dieses Format konfiguriert wurden (siehe weiter oben in diesem Thema).
+Die folgende Abbildung zeigt ein Beispiel für das Dialogfeld **Ziele für elektronisches Berichterstellungsformat**, das angezeigt wird, wenn eine Freitextrechnung [gebucht wird](../../../finance/accounts-receivable/create-free-text-invoice-new.md) und das EB-Format **Freitextrechnung (Excel)** ausgeführt wird, um dieses Dokument zu generieren, wenn die Aktion **Drucker** bereitgestellt wurde und EB-Ziele für dieses Format konfiguriert wurden (siehe weiter oben in diesem Thema).
 
-![Dialogfeld, in dem Sie die anfänglich konfigurierten EB-Ziele für das laufende EB-Format ändern können](./media/er-destination-action-dependent-02.gif)
+![Dialogfeld, in dem Sie die anfänglich konfigurierten EB-Ziele für das laufende EB-Format ändern können.](./media/er-destination-action-dependent-02.gif)
 
 > [!NOTE]
 > Wenn Sie EB-Ziele für mehrere Komponenten des laufenden EB-Formats konfiguriert haben, wird für jede konfigurierte Komponente des EB-Formats eine separate Option angeboten.
@@ -105,7 +103,7 @@ Befolgen Sie diese Schritte, um den bereitgestellten Benutzeraktionscode zu übe
 6. Auf der Seite **Konfigurations-Debug-Protokolle** filtern Sie die EB-Ausführungsprotokolle, um das Protokoll für Ihre EB-Formatausführung zu finden.
 7. Überprüfen Sie die Protokolleinträge, die den Datensatz enthalten müssen, der den bereitgestellten Benutzeraktionscode enthält, wenn für die EB-Formatausführung eine Aktion bereitgestellt wurde.
 
-    ![Protokollprotokollseite für elektronische Berichterstellung, die Informationen zum Benutzeraktionscode enthält, der für die gefilterte Ausführung eines EB-Formats bereitgestellt wurde](./media/er-destination-action-dependent-03.png)
+    ![Protokollprotokollseite für elektronische Berichterstellung, die Informationen zum Benutzeraktionscode enthält, der für die gefilterte Ausführung eines EB-Formats bereitgestellt wurde.](./media/er-destination-action-dependent-03.png)
 
 ## <a name=""></a><a name="reports-list-wave1">Liste der Geschäftsdokumente (Zyklus 1)</a>
 
@@ -117,7 +115,6 @@ Die folgende Liste von Geschäftsdokumenten wird von der Funktion **Ausgabe von 
 - Einkaufsabfrage für Bestellung
 - Auftragsbestätigung
 - Mahnung
-- Debitorenkontoauszug
 - Zinsrechnung
 - Zahlungsavis des Kreditors
 - Angebotsanforderung
@@ -129,3 +126,6 @@ Die folgende Liste von Geschäftsdokumenten wird von der Funktion **Ausgabe von 
 [Zielorte für elektronische Berichterstellung (ER)](electronic-reporting-destinations.md)
 
 [Änderungen an der Framework-API für elektronische Berichterstellung für Application Update 10.0.17](er-apis-app10-0-17.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

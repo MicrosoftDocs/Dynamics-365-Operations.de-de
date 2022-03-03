@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 4b7c01a21dcbe7543332439ee6fd371b426851f4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b89a13e72816bbf140986bd5450d037cf2510753
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579927"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103512"
 ---
 # <a name="wave-creation-and-processing"></a>Wellen erstellen und verarbeiten
 
@@ -190,9 +190,9 @@ Bei Bedarf können Sie eine Welle abbrechen, die verarbeitet wurde. Um eine Well
 
 Verwenden Sie die Seite **Wellenstapelverarbeitungsdetails**, um Stapelverarbeitungen und die dazugehörigen Aufgaben zu überprüfen, die mit einer Welle verbunden sind. Dies ist besonders für die Problembehandlung bei einer fehlgeschlagenen Welle nützlich. Ohne diese Funktion haben normalerweise nur Administratoren Zugriff auf Stapelverarbeitungsdetails. Die Seite **Stapelverarbeitungsdetails** kann Nicht-Administratoren zur Verfügung gestellt werden und bietet eine schreibgeschützte Ansicht von Stapelverarbeitungen und den dazugehörigen Aufgaben.
 
-### <a name="enable-the-wave-batch-job-details-page"></a>Seite „Wellenstapelverarbeitungsdetails“ aktivieren
+### <a name="turn-the-wave-batch-job-details-page-on-or-off"></a>Seite „Wellenstapelverarbeitungsdetails“ ein- oder ausschalten
 
-Wenn Ihr System die Seite **Wellenstapelverarbeitungsdetails** noch nicht enthält, gehen Sie zu [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und schalten Sie die Funktion *Wellenstapelverarbeitungsdetails* an.
+Ab Supply Chain Management Version 10.0.25 ist die Seite **Wellenstapelverarbeitungsdetails** standardmäßig aktiviert. Administratoren können diese Funktionalität an- oder ausschalten, indem Sie nach der Funktion *Wellenstapelverarbeitungsdetails* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ### <a name="use-the-wave-batch-job-details-page"></a>Seite „Stapelverarbeitungsdetails“ verwenden
 

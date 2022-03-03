@@ -2,25 +2,25 @@
 title: Dreiseitige Abgleichsrichtlinien
 description: Dieser Artikel enthält Beispiele für den dreiseitigen Abgleich.
 author: abruer
-ms.date: 10/26/2017
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 2761
 ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d33a8cb001f1cd2f79c2a174710af90af423b9b3abc66eb80aa4811953ea4a14
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cffdc06216ce8ab1bfb79265f265bec1aee334c5
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722838"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109992"
 ---
 # <a name="three-way-matching-policies"></a>Dreiseitige Abgleichsrichtlinien
 
@@ -42,15 +42,15 @@ Die Rechnungsabgleichsrichtlinien in diesem Beispiel unterstützen Mitarbeiter m
 
 ### <a name="prerequisites"></a>Voraussetzungen
 
--   Kurt legt die Abgleichsrichtlinie auf der Ebene der juristischen Person auf "Dreiseitiger Abgleich" fest.
--   Kurt legt die Umschaltfläche "Abgleichstatus des Kopfes automatisch aktualisieren" bei der juristischen Person auf „Ja“ fest.
--   Kurt legt das Feld "Preissummen abgleichen" für die juristische Person auf "Prozentsatz" fest und gibt 15 % als Toleranzprozentsatz ein.
--   Kurt legt die Abgleichsrichtlinie auf der Artikelebene für Artikel 1500 - Maschine CNC Milicron auf "Dreiseitiger Abgleich" fest. Dieser Artikel ist ein Aktivposten, der bei Fabrikam für die Produktion verwendet wird. Rechnungen über diesen Artikel werden in Bezug auf die Preise mit Bestellpositionen und in Bezug auf die Mengen mit Produktzugängen abgeglichen.
--   Tony gibt eine Anforderung für fünf CNC Milicron-Maschinen ein. Alicia, eine Bestellungssekretärin bei Fabrikam, gibt eine Bestellung an eine juristische Person mit dem Namen Contoso aus, welche die Artikel liefern soll.
+-   Ken legt die **Abgleichsrichtlinie** auf der Ebene der juristischen Person auf **Dreiseitiger Abgleich** fest.
+-   Ken legt die Umschaltfläche **Abgleichstatus des Kopfes automatisch aktualisieren** bei der juristischen Person auf **Ja** fest.
+-   Kurt legt das Feld **Preissummen abgleichen** für die juristische Person auf **Prozentsatz** fest und gibt 15 % als **Toleranzprozentsatz** ein.
+-   Ken legt die Abgleichsrichtlinie auf der Artikelebene für Artikel 1500 – Maschine CNC Milicron auf **Dreiseitiger Abgleich** fest. Dieser Artikel ist ein Aktivposten, der bei Fabrikam für die Produktion verwendet wird. Rechnungen über diesen Artikel werden in Bezug auf die Preise mit Bestellpositionen und in Bezug auf die Mengen mit Produktzugängen abgeglichen.
+-   Tony gibt eine Anforderung für fünf CNC Milicron-Maschinen ein. Alicia, Bestellungssekretärin bei Fabrikam, gibt eine Bestellung an eine juristische Person mit dem Namen Contoso aus, welche die Artikel liefern soll.
 
-    | Artikelnummer                 | Leistung | Preis je Einheit | Nettobetrag | Kennung der sonstigen Zuschläge        | Wert der sonstigen Zuschläge |
+    | Artikelnummer                 | Menge | Preis je Einheit | Nettobetrag | Kennung der sonstigen Zuschläge        | Wert der sonstigen Zuschläge |
     |-----------------------------|----------|------------|------------|---------------------|---------------|
-    | 1500 – Maschine CNC Milicron | 5        | 8.000,00   | 40.000,00  | Lieferung und Bearbeitung | 3,000.00      |
+    | 1500 – Maschine CNC Milicron | 5        | 8.000,00   | 40.000,00  | Lieferung und Bearbeitung | 3.000,00      |
 
 -   Arnie, Debitorensekretär bei Contoso, prüft die Lieferungen für die Woche. Arnie wählt Lieferungsbuchungen aus, um Fabrikam für die Lieferung der CNC Milicron-Maschinen zu fakturieren. Arnie fügt einen Zuschlag für Lieferung und Bearbeitung hinzu. Fabrikam wird betrachtet den Zuschlag als Teil der Anlagekosten.
 
@@ -65,7 +65,7 @@ Die Rechnungsabgleichsrichtlinien in diesem Beispiel unterstützen Mitarbeiter m
 
 Die Papierrechnung von Contoso enthält folgende Informationen.
 
-| Artikel                        | Leistung | Preis je Einheit | Nettobetrag |
+| Artikel                        | Menge | Preis je Einheit | Nettobetrag |
 |-----------------------------|----------|------------|------------|
 | 1500 – Maschine CNC Milicron | 5        | 8.100,00   | 40,500.00  |
 | Versandkostenanteil       |          |            | 4,000.00   |
@@ -91,11 +91,11 @@ Die Rechnungsabgleichsrichtlinien in diesem Beispiel unterstützen Mitarbeiter m
 
 ### <a name="prerequisites"></a>Voraussetzungen
 
--   Kurt legt die Abgleichsrichtlinie auf der Ebene der juristischen Person auf "Zweiseitiger Abgleich" fest.
--   Kurt legt das Feld "Preissummen abgleichen" für die juristische Person auf "Prozentsatz" fest und gibt 10 % als Toleranzprozentsatz ein.
--   Kurt legt die Stückpreistoleranz für alle Artikel auf 2 % fest.
--   Cassie legt die Abgleichsrichtlinie auf der Ebene der Kombination von Artikel und Kreditor für den Artikel PH2500 fest – Computer und Kreditor Contoso auf „Dreiseitiger Abgleich“.
--   Alicia, Bestellungssekretärin in der Malaysia-Division von Fabrikam, sendet Bestellungen über die Lieferung von drei Artikeln an Contoso, wie in der folgenden Tabelle dargestellt wird. Wenn sie die Bestellung erstellt, überschreibt sie die Abgleichsrichtlinie für die drahtlose Maus, sodass ein dreiseitiger Abgleich anstelle eines zweiseitigen Abgleichs erfolgt.
+-   Ken legt die **Abgleichsrichtlinie** auf der Ebene der juristischen Person auf **Zweiseitiger Abgleich** fest.
+-   Ken legt das Feld **Preissummen abgleichen** für die juristische Person auf **Prozentsatz** fest und gibt **10 %** als **Toleranzprozentsatz** ein.
+-   Kurt legt die Stückpreistoleranz für alle Artikel auf 2 % fest.
+-   Cassie legt die **Abgleichsrichtlinie** auf der Ebene der Kombination von Artikel und Kreditor für den Artikel PH2500 – Computer und Kreditor Contoso auf **Dreiseitiger Abgleich** fest.
+-   Alicia, Bestellungssekretärin in der Malaysia-Division von Fabrikam, sendet Bestellungen über die Lieferung von drei Artikeln an Contoso, wie in der folgenden Tabelle dargestellt wird. Wenn sie die Bestellung erstellt, überschreibt sie die **Abgleichsrichtlinie** für die drahtlose Maus, sodass ein dreiseitiger Abgleich anstelle eines zweiseitigen Abgleichs erfolgt.
 
     | Artikelnummer           | Menge | Preis je Einheit | Nettobetrag | Abgleichsrichtlinie (Standardeintrag) | Abgleichsrichtlinie (in der Bestellposition) |
     |-----------------------|----------|------------|------------|---------------------------------|----------------------------------------------|
@@ -114,7 +114,7 @@ Die Rechnungsabgleichsrichtlinien in diesem Beispiel unterstützen Mitarbeiter m
 
 Die Papierrechnung von Contoso enthält folgende Informationen.
 
-| Artikel                  | Leistung | Preis je Einheit | Nettobetrag |
+| Artikel                  | Menge | Preis je Einheit | Nettobetrag |
 |-----------------------|----------|------------|------------|
 | PH2500 – Computer     | 2        | 2.500,00   | 5.000,00   |
 | MM01 – drahtlose Maus | 2        | 41.00      | 82.00      |
@@ -134,7 +134,7 @@ Beachten Sie die folgenden Punkte:
 -   Bei der Position "MM01 – Drahtlose Maus" ist in der Spalte "Produktzugangsmenge" ein Warnsymbol zu sehen, da die Rechnungsposition nicht mit einem Produktzugang abgeglichen ist. Die Spalte Stückpreis-Abgleich enthält ein Warnsymbol, da die Nettostückpreis-Toleranz von 2 % überschritten wird.
 -   Bei der Position "USB-Laufwerk" ist die Spalte "Produktzugang-Mengenabgleich" leer, da der zweiseitige Abgleich nicht den Mengen der Rechnungsposition und der Produktzugangsposition entspricht.
 
-Wenn eine Genehmigung erforderlich ist, damit Rechnungen mit Abweichungen beim Rechnungsabgleich gebucht werden können, muss die Umschaltfläche "Buchungen mit beim Abgleich erkannten Abweichungen genehmigen" auf der Seite "Details zum Rechnungsabgleich" ausgewählt sein. Erst dann kann die Rechnung mit Preis- und Mengenabgleichsfehlern gebucht werden. Ist keine Genehmigung erforderlich, kann die Fakturierung fortgesetzt werden, wenn es keine weiteren Buchungsfehler gibt.
+Wenn eine Genehmigung erforderlich ist, damit Rechnungen mit Abweichungen beim Rechnungsabgleich gebucht werden können, muss die Umschaltfläche **Buchungen mit beim Abgleich erkannten Abweichungen genehmigen** auf der Seite **Details zum Rechnungsabgleich** ausgewählt sein. Erst dann kann die Rechnung mit Preis- und Mengenabgleichsfehlern gebucht werden. Ist keine Genehmigung erforderlich, kann die Fakturierung fortgesetzt werden, wenn es keine weiteren Buchungsfehler gibt.
 
 
 Weitere Informationen finden Sie unter [Übersicht zum Abgleich der Kreditorenrechnungen](accounts-payable-invoice-matching.md).

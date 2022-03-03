@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f0fba0a9234e5b7cb055f7b97578bff72f1d06ac
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e356ef8339f8f71965bf9313e14fed3d0810152d
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571976"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103612"
 ---
 # <a name="enable-change-management-on-existing-products"></a>Änderungsmanagement für vorhandene Produkte aktivieren
 
@@ -27,12 +27,9 @@ Dieses Thema erklärt, wie Sie die Änderungsverwaltung für bestehende Produkte
 
 Wenn Sie die Änderungsverwaltung für ein bestehendes Produkt aktivieren, können Sie Versionen dieses Produkts erstellen und Änderungen, die daran vorgenommen werden, während seiner gesamten Lebensdauer verfolgen. Daher können Sie diese Änderungen mit Hilfe von Änderungsaufträgen nachverfolgen. Um die Änderungsverwaltung zu aktivieren, müssen Sie die entsprechenden Produkte in *technische Artikel* (auch als technische Produkte bezeichnet) umwandeln. Technische Produkte sind Produkte, die versioniert sind und über die Änderungsverwaltung verwaltet werden. Ein Assistent führt Sie durch den Konvertierungsprozess.
 
-## <a name="turn-on-the-feature-in-your-system"></a>Funktion in Ihrem System aktivieren
+## <a name="turn-this-feature-on-or-off"></a>Schalten Sie diese Funktion ein oder aus
 
-Um diese Funktionalität zu nutzen, müssen Sie die folgenden Aufgaben ausführen:
-
-1. Aktivieren Sie die Funktion für technische Änderungsverwaltung und ihren Konfigurationsschlüssel wie in [Übersicht über die Änderungsverwaltung](product-engineering-overview.md) beschrieben.
-1. Schalten Sie die Funktion *Änderungsverwaltung für bestehende Produkte aktivieren* in der Funktionsverwaltung ein. Weitere Informationen finden Sie unter [Funktionsverwaltung – Übersicht](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Für die in diesem Thema beschriebene Funktionalität müssen die Funktionen *Verwaltung für technische Änderung* und *Änderungsmanagement für vorhandene Produkte aktivieren* für Ihr System eingeschaltet sein. Einzelheiten zum Ein- und Ausschalten dieser Funktionen finden Sie unter [Verwaltung für technische Änderung – Übersicht](product-engineering-overview.md).
 
 ## <a name="restrictions-and-limitations"></a>Beschränkungen und Einschränkungen
 

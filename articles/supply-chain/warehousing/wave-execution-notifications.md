@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 26810f6e21f9c8ba6e92621a8e1ddee17837b6048107b961afb0e428059051af
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: af3983db1a96116a88914411a26f1ac5d4857ae9
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752583"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103238"
 ---
 # <a name="wave-execution-notifications"></a>Wellenausführungsbenachrichtigungen
 
@@ -28,14 +28,11 @@ Die Funktion *Wellenausführungsbenachrichtigungen* verwendet Geschäftsereignis
 
 Die Schaltfläche **Nachrichten anzeigen** (Glockensymbol) auf der rechten Seite der Navigationsleiste zeigt an, wann eine Aktionszentrumsnachricht für den aktuellen Benutzer verfügbar ist. Der Benutzer kann die Schaltfläche **Nachrichten anzeigen** auswählen, um das Aktionszentrum zu öffnen und die Nachrichten zu lesen.
 
-Geschäftsereignisse treten auf, wenn Geschäftsprozesse ausgeführt werden. Geschäftsprozesse bestehen aus Aufgaben. Während eines Geschäftsprozesses führen die Benutzer, die daran teilnehmen, Geschäftsaktionen aus, um diese Aufgaben zu erledigen. Geschäftsereignisse bieten einen Mechanismus, mit dem externe Systeme Benachrichtigungen von Finance and Operations-Anwendungen erhalten. Auf diese Weise können die Systeme Geschäftsaktionen als Reaktion auf die Geschäftsereignisse ausführen. Weitere Informationen finden Sie unter [Übersicht über Geschäftsereignisse](../../fin-ops-core/dev-itpro/business-events/home-page.md).
+Geschäftsereignisse treten auf, wenn Geschäftsprozesse ausgeführt werden. Geschäftsprozesse bestehen aus Aufgaben. Während eines Geschäftsprozesses führen die Benutzer, die daran teilnehmen, Geschäftsaktionen aus, um diese Aufgaben zu erledigen. Geschäftsereignisse bieten einen Mechanismus, mit dem externe Systeme Benachrichtigungen von Finanz- und Betriebs-Anwendungen erhalten. Auf diese Weise können die Systeme Geschäftsaktionen als Reaktion auf die Geschäftsereignisse ausführen. Weitere Informationen finden Sie unter [Übersicht über Geschäftsereignisse](../../fin-ops-core/dev-itpro/business-events/home-page.md).
 
-## <a name="turn-on-the-wave-execution-notifications-feature"></a>Funktion für Wellenausführungsbenachrichtigungen aktivieren
+## <a name="turn-the-wave-execution-notifications-feature-on-or-off"></a>Funktion „Wellenausführungsbenachrichtigung“ ein- oder ausschalten
 
-Bevor Sie die Funktion *Wellenausführungsbenachrichtigungen* verwenden können, muss sie in Ihrem System aktiviert sein. Administratoren können mit der Einstellung [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und ggf. aktivieren. Dort wird die Funktion folgendermaßen aufgelistet:
-
-- **Module:** *Lagerortverwaltung*
-- **Funktionsname:** *Wellenausführungsbenachrichtigungen*
+Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert. Administratoren können diese Funktionalität an- oder ausschalten, indem Sie nach der Funktion *Wellenausführungsbenachrichtigung* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ## <a name="scenario-send-wave-batch-execution-notifications-to-the-action-center"></a>Szenario: Senden Sie Benachrichtigungen zur Ausführung von Wellenstapelverarbeitungen an das Aktionszentrum
 

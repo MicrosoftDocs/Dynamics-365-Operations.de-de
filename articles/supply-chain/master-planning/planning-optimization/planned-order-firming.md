@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: a709528b04e82c32f644073f79513b7ef11bb6bf
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 7e3a86e2aa0e7182f7f9e853b9e8667e677a8ad6
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920722"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102712"
 ---
 # <a name="firm-planned-orders"></a>Fest geplante Aufträge
 
@@ -35,17 +35,15 @@ Dieses Thema beschreibt jede Methode im Detail.
 
 Die meisten Funktionen für geplante Aufträge sind in allen Standardinstallationen von Microsoft Dynamics 365 Supply Chain Management verfügbar, die die Planungsoptimierung verwenden. Einige der Funktionen, die in diesem Thema beschrieben werden, müssen jedoch in der Funktionsverwaltung eingeschaltet werden, bevor Sie sie verwenden können.
 
-### <a name="enable-parallelized-firming-of-planned-orders"></a>Parallelisierte Umwandlung geplanter Aufträge ermöglichen
+### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Parallelisierte Umwandlung geplanter Aufträge an- oder ausschalten
 
-Die Parallelisierung der Firmung hilft, den Umwandlungsprozess zu beschleunigen, indem er über mehrere Threads parallelisiert wird. Diese Vorgehensweise kann sinnvoll sein, wenn viele geplante Aufträge umgewandelt werden.
-
-Um diese Funktion in Ihrem System verfügbar zu machen, gehen Sie zu [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), und schalten Sie die Funktion *Parallele Umwandlung geplanter Aufträge* ein. (Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert.)
+Die parallelisierte Umwandlung hilft, den Umwandlungsprozess zu beschleunigen, indem er über mehrere Threads parallelisiert wird. Diese Vorgehensweise kann sinnvoll sein, wenn viele geplante Aufträge umgewandelt werden. Um diese Funktionalität nutzen zu können, muss die Funktion *Parallele Umwandlung geplanter Aufträge* für Ihr System aktiviert sein. Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Sie diese Funktionalität ein- oder ausschalten, indem sie die [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) öffnen und nach der Funktion *Parallelisierte Umwandlung geplanter Aufträge* suchen.
 
 ### <a name="enable-planned-order-firming-with-filtering"></a>Ermöglicht das Umwandeln geplanter Aufträge mit Filterung
 
 Bei der Umwandlung geplanter Aufträge mit Filterung können Sie logische Kriterien für die Auswahl der zu wandelnden geplanten Aufträge definieren. Sie können auch eine Vorschau anzeigen, welche geplanten Aufträge ausgewählt wurden, den Prozess im Hintergrund ausführen und/oder ihn als Batchauftrag einplanen.
 
-Um diese Funktion in Ihrem System verfügbar zu machen, gehen Sie zu [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), und schalten Sie die Funktion *Geplante Aufträge umwandeln mit Filterung* ein.
+Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert. Administratoren können diese Funktionalität an- oder ausschalten, indem Sie nach der Funktion *Parallelisierte Umwandlung geplanter Aufträge* im Arbeitsbereich [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ### <a name="enable-auto-firming-for-planning-optimization"></a>Aktivieren Sie die automatische Umwandlung für die Planungsoptimierung
 

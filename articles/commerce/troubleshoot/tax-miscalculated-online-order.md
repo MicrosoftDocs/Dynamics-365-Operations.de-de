@@ -2,7 +2,7 @@
 title: Falsch berechnete Steuern auf Onlinebestellungen
 description: Dieses Thema enthält Anleitungen zur Fehlerbehebung, die hilfreich sein können, wenn Steuern auf Onlinebestellungen falsch berechnet werden oder die Steuergruppe in der Verkaufsposition nicht richtig festgelegt ist.
 author: Reza-Assadi
-ms.date: 03/11/2021
+ms.date: 02/16/2022
 ms.topic: Troubleshooting
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: e51ae789dad2c7b5118be2cf8a88f4e4090a8c74c8259b4eaaddad1a134af80a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0e4361b436cc78eccaff29dfa2927d342e26072d
+ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715259"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8312030"
 ---
 # <a name="taxes-on-online-orders-are-incorrectly-calculated"></a>Falsch berechnete Steuern auf Onlinebestellungen
 
@@ -33,6 +33,17 @@ Dieses Thema enthält Anleitungen zur Fehlerbehebung, die hilfreich sein können
 Wenn ein E-Commerce-Auftrag aufgegeben wird, werden die Steuern falsch berechnet oder die Steuergruppe in der Verkaufsposition ist falsch festgelegt.
 
 ## <a name="resolution"></a>Lösung
+
+### <a name="configure-general-sales-tax-groups-in-commerce-headquarters"></a>Allgemeine Mehrwertsteuergruppen in der Commerce-Zentralverwaltung konfigurieren
+
+Befolgen Sie diese Schritte, um allgemeine Mehrwertsteuergruppen in der Commerce-Zentralverwaltung zu konfigurieren.
+
+1. Rufen Sie **Steuer \> Indirekte Steuern \> Mehrwertsteuer \> Mehrwertsteuergruppen** auf.
+1. Wählen Sie im linken Navigationsbereich die zu konfigurierende Steuergruppe aus.
+1. Konfigurieren Sie im Inforegister **Auf Adresse des Einzelhandels bezogene Steuer** die Steuern für die Mehrwertsteuergruppe.
+
+> [!NOTE]
+> Bei einem Versand, der aufgrund der Debitorenadresse ohne Mehrwertsteuer erfolgt, bestimmen die Lieferadresse der Position sowie die adressbezogenen Steuern, die für die Steuergruppe konfiguriert sind, die Steuergruppe. Weitere Informationen finden Sie unter [Steuern für Online-Shops auf der Grundlage des Ziels einrichten](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
 
 ### <a name="configure-the-sales-tax-for-a-retail-store-in-commerce-headquarters"></a>Die Mehrwertsteuer für ein Einzelhandelsgeschäft in der Commerce-Zentralverwaltung konfigurieren
 
@@ -57,17 +68,6 @@ Befolgen Sie diese Schritte, um die Mehrwertsteuer für eine Debitorenadresse in
 
 > [!NOTE]
 > Bei mehrwertsteuerpflichtigem Versand der Debitorenadresse bestimmt die Lieferadresse der Position die Steuergruppe für die Position. Wenn der Debitor an eine vorhandene Adresse versendet, für die bereits eine Steuergruppe konfiguriert ist, wird die vorhandene Steuergruppe verwendet. Standardmäßig haben Adressen beim Erstellen keine Steuergruppe.
-
-### <a name="configure-general-sales-tax-groups-in-commerce-headquarters"></a>Allgemeine Mehrwertsteuergruppen in der Commerce-Zentralverwaltung konfigurieren
-
-Befolgen Sie diese Schritte, um allgemeine Mehrwertsteuergruppen in der Commerce-Zentralverwaltung zu konfigurieren.
-
-1. Rufen Sie **Steuer \> Indirekte Steuern \> Mehrwertsteuer \> Mehrwertsteuergruppen** auf.
-1. Wählen Sie in der linken Navigation die zu konfigurierende Steuergruppe aus.
-1. Konfigurieren Sie im Inforegister **Auf Adresse des Einzelhandels bezogene Steuer** die Steuern für die Mehrwertsteuergruppe.
-
-> [!NOTE]
-> Bei Versand ohne Mehrwertsteuer der Debitorenadresse bestimmen die Lieferadresse der Position sowie die adressbezogenen Steuern, die für die Steuergruppe konfiguriert sind, die Steuergruppe. Weitere Informationen finden Sie unter [Steuern für Online-Shops auf der Grundlage des Ziels einrichten](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

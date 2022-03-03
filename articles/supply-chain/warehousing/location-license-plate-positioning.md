@@ -2,26 +2,23 @@
 title: Standortkennzeichenpositionierung
 description: Durch die Standortkennzeichenpositionierung können Sie sehen, wo sich ein Kennzeichen an einem Ort mit mehreren Paletten befindet, z. B. an einem Ort, an dem doppelt tiefe Palettenregale verwendet werden.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLicensePlate, WHSLocationProfile, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 7b0ebfb965e5a8f1bfe1857a9642d998dac2faf3
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: f87723ebd6684efba8464a7d64c7e1ea99f194eb
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429025"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102788"
 ---
 # <a name="location-license-plate-positioning"></a>Standortkennzeichenpositionierung
 
@@ -33,12 +30,9 @@ Die Funktion fügt jedem Kennzeichen, das an einem Lagerort abgelegt wird, eine 
 
 In diesem Thema wird ein Szenario vorgestellt, in dem gezeigt wird, wie die Funktion eingerichtet und verwendet wird.
 
-## <a name="turn-on-the-location-license-plate-positioning-feature"></a>Funktion für Standortkennzeichenpositionierung aktivieren
+## <a name="turn-the-location-license-plate-positioning-feature-on-or-off"></a>Funktion für Standortkennzeichenpositionierung aktivieren oder deaktiveren
 
-Bevor Sie die Standortkennzeichenpositionierung verwenden können, muss die Funktion in Ihrem System aktiviert sein. Administratoren können mit der Einstellung [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und ggf. aktivieren. Dort wird die Funktion folgendermaßen aufgelistet:
-
-- **Module:** *Lagerortverwaltung*
-- **Funktionsname:** *Standortkennzeichenpositionierung*
+Um die Funktionalität zu verwenden, die in diesem Thema beschrieben wird, die Funktion *Standortkennzeichenpositionierung* für Ihr System aktiviert werden. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Standortkennzeichenpositionierung* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="example-scenario"></a>Beispielszenario
 
@@ -91,7 +85,7 @@ Die Funktion muss im Lagerplatzprofil für jeden Lagerplatz aktiviert sein, an d
 1. Während **Kennzeichen** noch ausgewählt ist, wählen Sie **Tabellenverknüpfung hinzufügen** aus.
 1. Wählen Sie in der Liste der angezeigten Tabellen in der Spalte **Beziehung** die Option **Standortkennzeichenpositionierung (Kennzeichen)** aus. Wählen Sie dann **Auswählen** aus, um **Standortkennzeichenpositionierung** zur Tabellenverknüpfung **Lagerungsdimensionen** hinzuzufügen.
 
-    ![Tabellenverknüpfungen](media/LpTableJoin.png "Tabellenverknüpfungen")
+    ![Tabellenverknüpfungen.](media/LpTableJoin.png "Tabellenverknüpfungen")
 
 1. Wählen Sie **OK** aus, um die aktualisierten verknüpften Tabellen zu bestätigen und den Abfrageeditor zu schließen.
 1. Wählen Sie im Inforegister **Lagerplatzrichtlinienaktivitäten** erneut die Option **Abfrage bearbeiten** aus, um den Abfrageeditor erneut zu öffnen.
@@ -103,7 +97,7 @@ Die Funktion muss im Lagerplatzprofil für jeden Lagerplatz aktiviert sein, an d
     - **Feld:** *LP-Position*
     - **Kriterien:** *1*
 
-    ![Neuer Bereich](media/LpPositionCriteria.png "Neuer Bereich")
+    ![Neuer Bereich.](media/LpPositionCriteria.png "Neuer Bereich")
 
 1. Wählen Sie **OK** aus, um Ihre Änderungen zu bestätigen und den Abfrageeditor zu schließen.
 
@@ -278,6 +272,9 @@ Nun, da die Funktion *Standortkennzeichenpositionierung* eingerichtet und der La
 1. Wählen Sie auf der Seite **Arbeits-/Kennzeichen-ID scannen** das Feld **ID** aus, und geben Sie dann die Arbeits-ID aus der Verkaufsposition ein.
 1. Beachten Sie, dass Sie bei der Kommissionierung angewiesen werden, den Artikel *A0002* vom Lagerplatz *01A01R1S2B* zu kommissionieren. Sie erhalten diese Anweisung, weil sich Artikel *A0002* auf einem Kennzeichen befindet, das in Position *1* an diesem Lagerplatz ist.
 
-    ![Lagerplatz Position 1](media/LocationLicensePlatePositioning.png "Lagerplatz Position 1")
+    ![Lagerplatz Position 1.](media/LocationLicensePlatePositioning.png "Lagerplatz Position 1")
 
 1. Geben Sie die Kennzeichen-ID ein, die Sie für den Lagerplatz erstellt haben, und befolgen Sie die Anweisungen, um den Auftrag auszuwählen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

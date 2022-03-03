@@ -2,39 +2,33 @@
 title: Lagerort-App-Ereignisse
 description: In diesem Thema wird die Verarbeitung von Lager-App-Ereignissen beschrieben, mit der Lager-App-Ereignismeldungen als Teil eines Stapelauftrags verarbeitet werden.
 author: perlynne
-manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileDeviceQueueEvent
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 210008c4a1366773f465c59b38eca30f11f0b38c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8c92bf179006d668f8673e9abc3419a10e644184
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428564"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103262"
 ---
 # <a name="warehouse-app-event-processing"></a>Verarbeitung von Lager-App-Ereignissen
 
 [!include [banner](../includes/banner.md)]
 
-Batchaufträge, die in Supply Chain Management ausgeführt werden, können Daten aus einer Warteschlange zur Verarbeitung von Ereignissen verwenden, die von der Lager-App ausgegeben wurden, um bei Bedarf auf die signalisierten Ereignisse zu reagieren. Diese Funktion fügt der Warteschlange relevante Ereignisse als Reaktion auf bestimmte Arten von Aktionen hinzu, die von Mitarbeitern ausgeführt werden, die die App verwenden. Ein Beispiel ist die Verwendung von **Erstellen und Verarbeiten von Umlagerungsaufträgen über die Lager-App**. Mit dieser Funktion werden die Überschrift und Positionen des Umlagerungsauftrags im Back-End erstellt und aktualisiert, wenn das System den Stapelauftrag **Verarbeiten von Lager-App-Ereignissen** ausführt.
+Batchaufträge, die in Supply Chain Management ausgeführt werden, können Daten aus einer Warteschlange zur Verarbeitung von Ereignissen verwenden, die von der Warehouse Management Mobile App ausgegeben wurden, um bei Bedarf auf die signalisierten Ereignisse zu reagieren. Diese Funktion fügt der Warteschlange relevante Ereignisse als Reaktion auf bestimmte Arten von Aktionen hinzu, die von Mitarbeitern ausgeführt werden, die die App verwenden. Ein Beispiel ist die Verwendung von *Erstellen und Verarbeiten von Umlagerungsaufträgen über die Lager-App*. Mit dieser Funktion werden die Überschrift und Positionen des Umlagerungsauftrags im Back-End erstellt und aktualisiert, wenn das System den Stapelauftrag **Verarbeiten von Lager-App-Ereignissen** ausführt.
 
-## <a name="enable-the-process-warehouse-app-events-feature"></a>Aktivieren Sie die Funktion Lager-App-Ereignisse verarbeiten
+## <a name="turn-the-process-warehouse-app-events-feature-on-or-off"></a>Die Funktion „Lagerort-App-Ereignisse verarbeiten“ ein- oder ausschalten
 
-Bevor Sie diese Funktion nutzen können, müssen Sie diese auf Ihrem System aktivieren. Administratoren können die Seite [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktion zu überprüfen und sie bei Bedarf zu aktivieren. Die Funktion Lager-App-Ereignisse verarbeiten ist aufgeführt als:
-
-- **Module** ‑ Lagerortverwaltung
-- **Funktionsname** - Lager-App-Ereignisse verarbeiten
+Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert. Administratoren können diese Funktionalität an- oder ausschalten, indem Sie nach der Funktion zur *Lagerort-App-Ereignisse verarbeiten* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ## <a name="set-up-a-batch-job-to-process-warehouse-app-events"></a>Richten Sie einen Stapelauftrag ein, um Lager-App-Ereignisse zu verarbeiten
 
@@ -51,11 +45,11 @@ Richten Sie einen geplanten Stapelauftrag ein, um die Lager-App-Ereignisse für 
 
 ## <a name="query-warehouse-app-events"></a>Abfrage von Lager-App-Ereignissen
 
-Sie können die Ereigniswarteschlange und die von der Lager-App generierten Ereignismeldungen anzeigen, indem Sie zu **Lagerortverwaltung \> Abfragen und Berichte \> Protokolle für mobile Geräte\> Lager-App-Ereignisse** gehen.
+Sie können die Ereigniswarteschlange und die von der Warehouse Management Mobile App generierten Ereignismeldungen anzeigen, indem Sie zu **Lagerortverwaltung \> Abfragen und Berichte \> Protokolle für mobile Geräte \> Lagerort-App-Ereignisse** gehen.
 
 ## <a name="the-standard-event-queue-process"></a>Der Standardprozess für Ereigniswarteschlangen
 
-Die Ereigniswarteschlange für Lager-Apps wird normalerweise mit dem folgenden beschriebenen Flow verwendet:
+Die Ereigniswarteschlange für die Lagerort-App wird normalerweise mit dem folgenden beschriebenen Flow verwendet:
 
 1. Ein Ereignis wird mit einer Ereignismeldung zur Warteschlange hinzugefügt. Die neue Nachricht hat zunächst den Ereignisstatus **Warten**, was bedeutet, dass der Stapelauftrag **Verarbeiten von Lager-App-Ereignissen** diese Nachricht nicht aufnimmt und nicht verarbeitet.
 1. Sobald der Nachrichtenstatus auf **In Warteschlange** aktualisiert wird, nimmt der Stapelauftrag **Lager-App-Ereignisse verarbeiten** das Ereignis auf und verarbeitet es.
@@ -78,3 +72,6 @@ So setzen Sie eine fehlgeschlagene Lager-App-Ereignismeldung zurück:
 1. Arbeiten Sie weiter, bis alle relevanten Meldungen zurückgesetzt sind.
 
 Sie können auch eine **Fehlgeschlagen**-Ereignismeldung mit der Option **Löschen** auf der Symbolleiste **Lager-App-Ereignismeldungen** entfernen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

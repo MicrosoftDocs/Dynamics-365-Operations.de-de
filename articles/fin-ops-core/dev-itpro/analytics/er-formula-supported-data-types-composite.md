@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72b97b2f7091883e445b2e8474ca140217bda004b0c4d8988411b9ed4209e254
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf7178888e39a5f26ae92e77df9c996374b76bf3
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758263"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323664"
 ---
 # <a name="supported-composite-data-types-for-electronic-reporting-formulas"></a>Unterstützte zusammengesetzte Datentypen für elektronische Berichtsformeln
 
@@ -27,7 +27,7 @@ Dieses Thema enthält Informationen zu den zusammengesetzte Datentypen, die in A
 
 Der Datentyp *Klasse* bezieht sich auf eine öffentliche Anwendungsklasse. In ER wird es als [*Datensatz*](#record) dargestellt, der für jede öffentliche Methode der referenzierten Klasse ein eigenes Feld enthält. Wenn der Aufruf der Methode parametrisiert ist, müssen Sie auch die erforderlichen Argumente der entsprechenden Typen in einem ER-Ausdruck angeben, der für den Aufruf der Methode konfiguriert ist.
 
-In den EB_Komponenten [Mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) und [Format](general-electronic-reporting.md#FormatComponentOutbound) können Sie die Datenquelle **Klasse**, die als Datenquelle dargestellt wird und einen Wert des Typs *Klasse* zurückgibt. Diese Datenquelle macht öffentliche Methoden der Klasse verfügbar, die zur Laufzeit aufgerufen werden können.
+In den EB-Zuordnungs- und Formatkomponenten können Sie die Datenquelle **Klasse** hinzufügen, die als Datenquelle dargestellt wird und einen Wert des Typs *Klasse* zurückgibt. Diese Datenquelle macht öffentliche Methoden der Klasse verfügbar, die zur Laufzeit aufgerufen werden können.
 
 > [!NOTE]
 > Aus ER-Ausdrücken können nur Methoden aufgerufen werden, die einen Wert zurückgeben.

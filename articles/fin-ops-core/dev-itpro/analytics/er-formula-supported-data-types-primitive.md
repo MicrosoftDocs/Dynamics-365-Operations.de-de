@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72c372a4d9b6af337731ff0bbd750b3b58f27bb79cb3813a0b5e4f79707d9f5c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 96fdf33f4cc5f22015c00c57858bd438e6465764
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730606"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323639"
 ---
 # <a name="supported-primitive-data-types-for-electronic-reporting-formulas"></a>Unterstützte primitive Datentypen für elektronische Berichtsformeln
 
@@ -101,7 +101,7 @@ Vergleichs [operatoren](er-formula-language.md#Operators) sind der einzige Opera
 
 ## <a name="enumeration"></a><a name="enumeration"></a>Aufzählung
 
-Der primitive Datentyp *Enumeration* ist eine Liste von Literalen. Sie können Aufzählungen verwenden, die in der Anwendung [Quellcode](../dev-ref/xpp-data-primitive.md#enum) definiert sind. Sie können auch Ihre eigenen Aufzählungen in die Komponenten EB-[Datenmodell](general-electronic-reporting.md#data-model-and-model-mapping-components) und EB-[Format](general-electronic-reporting.md#FormatComponentOutbound) einführen.
+Der primitive Datentyp *Enumeration* ist eine Liste von Literalen. Sie können Aufzählungen verwenden, die in der Anwendung [Quellcode](../dev-ref/xpp-data-primitive.md#enum) definiert sind. Sie können auch Ihre eigenen Aufzählungen in die Komponenten EB-Datenmodell und EB-Format einführen.
 
 Eine Anwendung *Enumeration* kann in Ausdrücken jedes EB-Modell-Mappings und EB-Formats verwendet werden.
 

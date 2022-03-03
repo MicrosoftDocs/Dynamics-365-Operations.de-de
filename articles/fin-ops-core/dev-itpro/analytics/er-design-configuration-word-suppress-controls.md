@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: cfabd6f544dca6f48448da4ef9ff8383c6583f8488a718a7c971ff7b39c1f2cb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f8e74902e939355aba9bbadd8e7f8f8aa46fe5c5
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737974"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323924"
 ---
 # <a name="suppress-word-content-controls-in-generated-reports"></a>Steuerelemente für Word-Inhalte in generierten Berichten unterdrücken
 
 [!include [banner](../includes/banner.md)]
 
-Um Berichte als Microsoft Word-Dokumente zu generieren, müssen Sie für diese eine Vorlage als Word-Dokument entwerfen. Diese Vorlage muss Steuerelemente für Word-Inhalte als Platzhalter für Daten enthalten, die während der Laufzeit ausgefüllt werden. Um das für Ihre Berichte als Vorlage erstellte Word-Dokument zu verwenden, können Sie eine neue [Lösung](er-quick-start1-new-solution.md) für die [elektronische Berichterstellung (EB)](general-electronic-reporting.md) [konfigurieren](er-design-configuration-word.md). Die Lösung muss eine EB-[Konfiguration](general-electronic-reporting.md#Configuration) enthalten, die eine Komponente im EB-[Format](general-electronic-reporting.md#FormatComponentOutbound) aufweist. Dieses EB-Format muss so konfiguriert sein, dass die entworfene Vorlage für die Berichtsgenerierung verwendet wird.
+Um Berichte als Microsoft Word-Dokumente zu generieren, müssen Sie für diese eine Vorlage als Word-Dokument entwerfen. Diese Vorlage muss Steuerelemente für Word-Inhalte als Platzhalter für Daten enthalten, die während der Laufzeit ausgefüllt werden. Um das für Ihre Berichte als Vorlage erstellte Word-Dokument zu verwenden, können Sie eine neue [Lösung](er-quick-start1-new-solution.md) für die [elektronische Berichterstellung (EB)](general-electronic-reporting.md) [konfigurieren](er-design-configuration-word.md). Die Lösung muss eine EB-[Konfiguration](general-electronic-reporting.md#Configuration) enthalten, die eine Komponente im EB-Format aufweist. Dieses EB-Format muss so konfiguriert sein, dass die entworfene Vorlage für die Berichtsgenerierung verwendet wird.
 
 In Dynamics 365 Finance Version 10.0.6 und höher können Sie Formeln in Ihrem EB-Format konfigurieren, um einige Word-Inhaltssteuerelemente in generierten Dokumenten zu unterdrücken.
 

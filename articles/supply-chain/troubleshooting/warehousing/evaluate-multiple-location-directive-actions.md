@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-06-24
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: ea265166902f85c2c09cae08ee6de5cd7094e1b4
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 2d5f7cf548eb6c18d9700c73ef084f197b78542e
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778401"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102962"
 ---
 # <a name="multiple-sku-option-doesnt-evaluate-multiple-location-directive-actions"></a>Die Option „Mehrfach-SKU“ wertet nicht mehrere Lagerplatzrichtlinien-Aktivitäten aus.
 
@@ -25,4 +25,4 @@ Lagerplatzrichtlinien der Arbeitsauftragsart *Verkaufsaufträge* und der Arbeits
 
 ## <a name="resolution"></a>Lösung
 
-Eine neue Funktion, *Alle Aktionen für Multi SKU Lagerplatzrichtlinien auswerten*, wurde in Version 10.0.15 hinzugefügt (siehe [KB 4579866](https://fix.lcs.dynamics.com/Issue/Details?kb=4579866&bugId=475946&dbType=3&qc=1bc41a56de7a3ee419fa76397a6bf282fce5be9b93e427c08a6d916d1dfa3091)). Diese Funktion wertet alle Aktionen für Multi-SKU Lagerplatzrichtlinien aus. Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Administratoren können die Seite [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktion zu überprüfen und sie bei Bedarf zu aktivieren oder zu deaktivieren.
+Eine neue Funktion, *Alle Aktionen für Multi SKU Lagerplatzrichtlinien auswerten*, wurde in Version 10.0.15 hinzugefügt (siehe [KB 4579866](https://fix.lcs.dynamics.com/Issue/Details?kb=4579866&bugId=475946&dbType=3&qc=1bc41a56de7a3ee419fa76397a6bf282fce5be9b93e427c08a6d916d1dfa3091)). Diese Funktion wertet alle Aktionen für Multi-SKU Lagerplatzrichtlinien aus. Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert.  Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Administratoren können die Seite [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktion zu überprüfen und sie bei Bedarf zu aktivieren oder zu deaktivieren.

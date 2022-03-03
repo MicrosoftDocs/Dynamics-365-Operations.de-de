@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: Mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f5c9ba7079895feeb0c171f2021479587aa13cc9
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 21dd01448fcf6c2b3ca90a5476fad061bb0f55e4
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777665"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102738"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Aufgeschobene Verarbeitung von manuellen Bestandsbewegungen
 
@@ -32,10 +32,10 @@ Die Verarbeitung im Hintergrund wird durch die Funktion [Verarbeiten von Lageror
 
 Um diese Funktion verfügbar zu machen, schalten Sie die folgenden Funktionen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ein. Sie müssen sie in dieser Reihenfolge einschalten:
 
-1. Organisationsweite Arbeitssperrung (Ab Supply Chain Management Version 10.0.21 ist diese Funktion obligatorisch, daher ist sie standardmäßig aktiviert und kann nicht wieder deaktiviert werden.)
-1. Lagerort-App-Ereignisse verarbeiten
-1. Verzögerte Put-Vorgänge
-1. Verzögerte Verarbeitung des manuellen Lagerbestandsumlagerungsvorgangs
+1. *Organisationsweite Arbeitssperrung*<br>(Ab Supply Chain Management Version 10.0.21 ist diese Funktion obligatorisch, daher ist sie standardmäßig aktiviert und kann nicht wieder deaktiviert werden.)
+1. *Lagerort-App-Ereignisse verarbeiten*<br>(Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert.)
+1. *Verzögerte Put-Vorgänge*
+1. *Verzögerte Verarbeitung des manuellen Bestandsumlagerungsvorgangs*<br>(Ab Supply Chain Management Version 10.0.25 ist diese Funktion obligatorisch, daher ist sie standardmäßig aktiviert und kann nicht wieder deaktiviert werden.)
 
 ## <a name="configure-the-work-processing-policies"></a>Konfigurieren Sie die Richtlinien für die Verarbeitung von Arbeit
 
