@@ -2,11 +2,9 @@
 title: Benutzeroberflächenelemente
 description: Dieses Thema beschreibt die in der App verwendeten Elemente der Benutzeroberfläche (UI).
 author: tlefor
-manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,14 +12,17 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 3e087a1abec9bf177bb831b9bbfa12895054ad07
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 60e85841ec940ed65d73dc052848168be70301d6
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797936"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069322"
 ---
 # <a name="user-interface-elements"></a>Benutzeroberflächenelemente
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Dieses Thema beschreibt die in der App verwendeten Elemente der Benutzeroberfläche (UI). Bevor Benutzer durch die Oberfläche navigieren können, ist es wichtig, die Namen und Funktionen der Elemente zu kennen, aus denen sich die Oberfläche zusammensetzt.
 
@@ -77,7 +78,7 @@ Die folgende Abbildung zeigt Beispiele für diese Art von Benachrichtigungen.
 
 - **Nachrichtenbox** - Diese erscheint über die Schnittstelle und muss mit ihr interagiert werden, bevor Sie das Produkt weiter verwenden können.  
 
-![Das folgende Bild zeigt ein Beispiel für ein Nachrichtenfeld.](media/user-interface-07.png)
+![Das folgende Bild zeigt ein Beispiel eines Nachrichtenfelds.](media/user-interface-07.png)
 
 ## <a name="toolbars-grids-and-lists"></a>Symbolleisten, Gitter und Listen
 
@@ -86,3 +87,6 @@ Eine *Werkzeugleiste* enthält Werkzeuge, wie z.B. die Möglichkeit, Felder hinz
 Eine *Liste* ist der Name einer Sammlung von Datensätzen, durch die Sie blättern können. Sie können diese Datensätze auf die Seite bringen, indem Sie sie auswählen. Häufig wird dadurch ein Raster geöffnet.
 
 ![Die folgende Abbildung zeigt Beispiele für Symbolleisten, Raster und Listen.](media/user-interface-08.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

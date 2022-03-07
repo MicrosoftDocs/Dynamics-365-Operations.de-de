@@ -1,28 +1,25 @@
 ---
 title: Stückentnahmebestätigung
-description: In diesem Thema wird beschrieben, wie Sie Stückentnahmebestätigung über ein mobiles Gerät einrichten und anwenden.
+description: Die Stückentnahme ermöglicht Ihnen, jedes Teil des Bestands zu bestätigen über Entnahme- oder Inventurarbeit auf einem mobilen Gerät.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFAutoConfirm, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ed63245066799d7d8f14362ab6c9193c0cda7c4a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3f9da533998341de60d210e196baae64d285d372
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428582"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818847"
 ---
 # <a name="piece-picking-confirmation"></a>Stückentnahmebestätigung
 
@@ -30,7 +27,7 @@ ms.locfileid: "4428582"
 
 Die Stückentnahme ermöglicht Ihnen, jedes Teil des Bestands zu bestätigen über Entnahme- oder Inventurarbeit auf einem mobilen Gerät. Bei der Entnahme können Sie die Menge der zu verarbeitenden Arbeit bis zu der Menge bestätigen, die für die zu entnehmende Arbeit angegeben ist. Bei Inventurarbeit können Sie den Bestand scannen, den Sie zählen und die Gesamtsumme nachverfolgen.
 
-Wenn Sie die Stückentnahme aktivieren, wird die Produktbestätigung automatisch aktiviert. Für Arbeitstypentnahmen wird eine maximale Anzahl an Stücken aktiviert. Dadurch wird es Ihnen ermöglicht, eine Maximalzahl an Stücken festzulegen, die während des Arbeitsprozesses bestätigt werden müssen. Die maximale Menge basiert auf der aktuellen Leistungseinheit, die verarbeitet wird. Der Inventurarbeitstyp erlaubt kein Maximum.
+Wenn Sie die Stückentnahme aktivieren, wird die Produktbestätigung automatisch aktiviert. Für Arbeitstypentnahmen können Sie eine maximale Anzahl an Stücken festlegen. Dadurch wird es Ihnen ermöglicht, eine Maximalzahl an Stücken festzulegen, die während des Arbeitsprozesses bestätigt werden müssen. Die maximale Menge basiert auf der aktuellen Leistungseinheit, die verarbeitet wird. Der Inventurarbeitstyp erlaubt kein Maximum.
 
 Sie können die Menge und die Maßeinheit (UOM) verwenden, die einem gescannten Strichcode zugeordnet ist. Dies funktioniert für den Empfang an eingehenden Flüssen einschließlich des Empfangs gemischter Ladungsträger, Bestellungsartikel, Umlagerungsauftragsartikel und Ladungsartikel. Es funktioniert auch für die Stückentnahme, bei der durch das Scannen des Barcodes die Menge zur Gesamtanzahl bestätigter Stücke hinzugefügt wird und es zu einer Konvertierung zwischen der UOM auf dem Barcode und der Leistungseinheit kommt. Wenn beim Zählen der Maßeinheit im Barcode bestätigt ist, dass die Menge für das Zählen in der Nummernkreisgruppe zulässig ist, wird die Menge zur Gesamtzählung hinzugefügt.
 
@@ -51,3 +48,6 @@ Die folgenden Optionen sind zur Auswahl verfügbar, wenn der Arbeitstyp Entnahme
 | Stückentnahmebestätigung | Verfügbar für Entnahme- und Inventurarbeitstypen. Produktbestätigung wird automatisch ausgewählt. Ermöglicht Ihnen, jeden Inventurartikel über das mobile Gerät zu bestätigen. |
 |  Maximale Anzahl von Stücken  |                   Verfügbar für Entnahmearbeit, wenn Stückentnahmebestätigung aktiviert ist. Beschränkt die Anzahl der Teile, die Sie bestätigen müssen.                   |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

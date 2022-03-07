@@ -2,36 +2,29 @@
 title: Produktsammelmodule
 description: Dieses Thema bietet eine Übersicht über Produktsammelmodule in Microsoft Dynamics 365 Commerce.
 author: v-chgri
-manager: annbe
-ms.date: 09/15/2020
-ms.topic: article
+ms.date: 01/28/2021
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2d19cac142b870d8ecc677665443602b0a8837d2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7bc76aa8d5728005711ee8f9758532a989e3568c
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412436"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984543"
 ---
 # <a name="product-collection-modules"></a>Produktsammelmodule
-
 
 [!include [banner](includes/banner.md)]
 
 Dieses Thema bietet eine Übersicht über Produktsammelmodule in Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Übersicht
 
 Die Produkterfassung ist ein wichtiges Tool, mit dem Einzelhändler ihre Kunden auf einer E-Commerce-Website ansprechen können. Produktsammelmodule helfen Einzelhändlern dabei, überzeugende Einkaufserlebnisse zu schaffen, indem sie eine intuitive visuelle Oberfläche bereitstellen, mit der Produktsammlungen schnell erstellt werden können.
 
@@ -46,7 +39,7 @@ Die Quelle für Produktsammlungen kann eine der vier folgenden Listentypen sein:
 
 Die folgende Abbildung zeigt die verschiedenen Arten von Produktsammlungen, die auf einer E-Commerce-Site verwendet werden.
 
-![Beispiel für die verschiedenen Arten von Produktsammlungen auf einer E-Commerce-Website](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
+![Beispiel für die verschiedenen Arten von Produktsammlungen auf einer E-Commerce-Website.](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
 > [!NOTE]
 > Verwenden Sie immer Produktsammelmodule, um eine Gruppe von Produkten eines ähnlichen Typs anzuzeigen.
@@ -67,6 +60,10 @@ In der folgenden Tabelle werden verschiedene Arten von Produktsammelmodulen in D
 | Wird häufig zusammen gekauft | Künstliche Intelligenz/Maschinelles Lernen | Dieses Modul verwendet maschinelles Lernen, um Kaufmuster von Verbrauchern zu analysieren und verwandte Artikel zu empfehlen, die häufig zusammen mit einem bestimmten Produkt gekauft werden. Diese Liste kann personalisierte Ergebnisse für einen angemeldeten Benutzer anzeigen, wenn der Site-Autor diese Option auswählt. |
 | Personen gefällt auch           | Künstliche Intelligenz/Maschinelles Lernen | Dieses Modul verwendet maschinelles Lernen, um Kaufmuster von Verbrauchern zu analysieren und verwandte Artikel zu empfehlen, die sich auf ein bestimmtes Produkt beziehen. Diese Liste kann personalisierte Ergebnisse für einen angemeldeten Benutzer anzeigen, wenn der Site-Autor diese Option auswählt. |
 | Entnahmen für Sie              | Künstliche Intelligenz/Maschinelles Lernen | Dieses Modul verwendet maschinelles Lernen, um die Kaufmuster des angemeldeten Benutzers zu analysieren und personalisierte Empfehlungen bereitzustellen, die auf diesen Kaufmustern basieren. Für einen Gastbenutzer wird diese Liste reduziert. |
+
+## <a name="supported-modules"></a>Unterstützte Module 
+
+Das Produktsammlungsmodul unterstützt das [Schnellansichtsmodul](quick-view-module.md), mit dem sich Benutzer Produktinformationen anzeigen lassen und Artikel über eine Produktsammlungsseite dem Warenkorb hinzufügen können.
 
 ## <a name="add-a-product-collection-module-to-a-category-page"></a>Hinzufügen eines Produktsammelmoduls zu einer Kategorieseite
 
@@ -109,3 +106,8 @@ In der folgenden Tabelle sind die Listentypen aufgeführt, die im Dialogfeld **P
 [Kauffeldmodul](add-buy-box.md)
 
 [Überblick über Produktempfehlungen](product-recommendations.md)
+
+[Schnellansichtsmodul](quick-view-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

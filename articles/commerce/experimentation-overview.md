@@ -2,28 +2,24 @@
 title: Experimentieren in Dynamics 365 Commerce
 description: Das Experimentieren ermöglicht das Erstellen, Bearbeiten und Verwalten von Seitenlayouts und Inhaltsbehandlungen im Site Builder. Die Unterstützung von End-to-End-Experimenten ist für E-Commerce-Seiten und -Entitäten innerhalb einer Seite aktiviert.
 author: sushma-rao
-manager: AnnBe
 ms.date: 10/21/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 85eb7a661cc66c42699797cca4fa6820941de7c0
-ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
+ms.openlocfilehash: 292a8934e735c76389e36603a708fd2a1bbf7691
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "4412704"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986540"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Experimentieren in Dynamics 365 Commerce
 Verwenden Sie Experimente in Dynamics 365 Commerce, um Hypothesen über die Effektivität Ihrer E-Commerce-Seiten zu validieren und Entscheidungen mit datengesteuertem Vertrauen zu treffen. Commerce unterstützt A/B-Tests auf Seiten, in Modulen und Fragmenten und ermöglicht es Ihnen, die Auswirkungen vorgeschlagener Änderungen an Ihrer Website zu messen.
@@ -42,7 +38,7 @@ Sie können Seiten- und Inhaltsbehandlungen erstellen, bearbeiten und verwalten,
 ## <a name="experimentation-lifecycle"></a>Experimentierlebenszyklus
 Das Einrichten eines Experiments, das Erstellen von Variationen und das Ausführen eines Experiments ist ein iterativer Prozess. Das folgende Diagramm zeigt den Experimentierlebenszyklus in Commerce und dem Drittanbieterdienst. 
 
-[ ![Experimentierlebenszyklus](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
+[ ![Experimentierlebenszyklus.](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
 
 Weitere Informationen zu den einzelnen Schritten des Experimentierprozesses finden Sie in den folgenden Themen.
 - [Eine Hypothese identifizieren und Metriken für ein Experiment bestimmen](experimentation-identify.md)
@@ -57,3 +53,6 @@ Weitere Informationen zu den einzelnen Schritten des Experimentierprozesses find
 
 ## <a name="next-step"></a>Nächster Schritt
 [Eine Hypothese identifizieren und Erfolgsmetriken für ein Experiment bestimmen](experimentation-identify.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

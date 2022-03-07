@@ -2,11 +2,9 @@
 title: Bericht "Deutsches Journal"
 description: In diesem Artikel wird beschrieben, für was der deutsche Erfassungslistenbericht verwendet wird, wer ihn in der Regel verwendet und wie er ausgeführt wird.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalizeReport
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Germany
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8cf7b18463c9d4630cd7e263818ef42cce31bd10
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ad6ae1f4504fbdd26de9be5d4db74a8237248332a17ceb33ee931f5e9ba0d9e1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962816"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736906"
 ---
 # <a name="german-journal-list-report"></a>Bericht "Deutsches Journal"
 
@@ -37,3 +35,6 @@ Der Bericht **Deutsches Journal** enthält eine Liste mit Buchungen, die produzi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

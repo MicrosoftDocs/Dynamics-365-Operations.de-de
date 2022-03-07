@@ -1,27 +1,27 @@
 ---
 title: Dokumentendruck – Übersicht
 description: Sie können Dokumente drucken, indem Sie entweder einen lokalen Drucker oder ein mit dem Netzwerk verbundenes Gerät verwenden. Dieser Artikel gibt eine Übersicht, wie Dokumente gedruckt werden.
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Application User
 ms.reviewer: kfend
-ms.custom: 69161
+ms.custom:
+- "69161"
+- intro-internal
 ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b1d64a2efeade5e9ba24f4dfe61c861f5a4cbad4
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8b9105ef39e411ac33043f1941d4e1dd32b758e5
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680095"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984907"
 ---
 # <a name="document-printing-overview"></a>Dokumentendruck – Übersicht
 
@@ -51,10 +51,10 @@ In der folgenden Tabelle werden die drei primären Druckszenarien beschrieben.
 Da die Auflösun je nach spezifischem Szenario ändert, stellt einen integrierten Dienst und Werkzeuge bereit, die dem Benutzer helfen, die Ziele zu erreichen:
 
 - **Szenario 1** wird über das Rendering des Browsers des HTML5 Clients unterstützt.
-- **Szenario 2** verwendet Clientanwendungen und Microsoft 365 Dienstleistungen.
+- **Szenario 2** verwendet Clientanwendungen und Microsoft 365-Dienstleistungen.
 - **Szenario 3** erfordert Unterstützung von benutzerdefinierten Anwendungen und von Diensten, die in Microsoft Azure gehostet werden.
 
-Neben der Plattform, die im Azure Abonnement bereitgestellt wird, stellen Finance and Operations-Anwendungen Kunden eine integrierte Azure Anwendung des Erstanbieters bereit, damit sie einfacher Domäne-gehostete Geräte verwenden können, um Dokumente zu drucken.
+Neben der Plattform, die im Azure Abonnement bereitgestellt wird, stellen Finance and Operations Anwendungen Kunden eine integrierte Azure Anwendung des Erstanbieters bereit, damit sie einfacher Domäne-gehostete Geräte verwenden können, um Dokumente zu drucken.
 
 ## <a name="service-overview"></a>Dienstleistungsüberblick
 Während Dokumente, die über gehostete Anwendungen produziert werden, darauf warten, auf einem mit dem Netzwerk verbundenen Gerät gedruckt zu werden, werden diese im Azure BLOB-Speicher gespeichert. [Installieren des Document Routing Agent, um das Drucken im Netzwerk zu ermöglichen](install-document-routing-agent.md) verwendet die Azure-Authentifizierung, um einen sicheren Kanal zu den Azure-Diensten herzustellen.
@@ -71,6 +71,9 @@ Das clientbasierte Lösung ermöglicht Debitoren, ihre Druckenanforderungen zu v
 
 Im folgenden Diagramm werden die Grundkomponenten gezeigt, die Netzwerkdruckvorgänge unterstützen.
 
-![[Service-Komponenten für Netzwerkdrucker\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
+![[Service-Komponenten für Netzwerkdrucker\_2016.](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
 
 Beachten Sie, dass ein einzelner Drucker mit mehreren Dokument-Routing-Agenten erfasst werden kann. Um die Druckereinstellungen aufzulösen, verwendet die gehostete Dienstleistung den Netzwerkpfad, der jeden Netzwerkdrucker eindeutig identifiziert. Selbst wenn ein Drucker mehrere Kunden erfasst, erscheint dieser als einzelne Auswahl in der Liste der Drucker, die in den Anwendungen verfügbar sind.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

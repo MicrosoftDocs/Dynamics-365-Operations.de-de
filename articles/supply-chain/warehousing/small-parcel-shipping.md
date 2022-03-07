@@ -2,9 +2,11 @@
 title: Kleinpaketlieferung
 description: Dieses Thema enthält Informationen zur Kleinpaketlieferung. Diese Funktion aktiviert Microsoft Dynamics 365 Supply Chain Management, um Details zu einem gepackten Container an den Spediteur zu senden und dann ein Adressetikett, einen Frachtsatz und eine Sendungsverfolgungsnummer von diesem Spediteur zu erhalten.
 author: Mirzaab
+manager: tfehr
 ms.date: 01/08/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSRateEngine, TMSCarrier, CustTable, TMSShippingCarrierCustomerAccount, TMSSmallParcelShippingFeature
 audience: Application User
@@ -13,17 +15,18 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
-ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: cb5a4195d94750fcbee00e7301bd250f653cb347
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.16
+ms.openlocfilehash: 37f07139853c30da25c067a3d736b4b9bf4eb361
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576087"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501173"
 ---
 # <a name="small-parcel-shipping"></a>Kleinpaketlieferung
 
 [!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Die Kleinpaketlieferung ermöglicht Microsoft Dynamics 365 Supply Chain Management die direkte Interaktion mit Spediteuren durch die Bereitstellung eines Frameworks für die Kommunikation über Spediteur-APIs. Diese Funktion ist nützlich, wenn Sie einzelne Aufträge über kommerzielle Spediteure versenden, anstatt sich für den Containerversand oder den Versand mit weniger als Wagenladung zu entscheiden.
 
@@ -58,7 +61,7 @@ Befolgen Sie diese Schritte, um das Demotarifmodul zu erhalten.
 Informationen zum Erstellen und Bereitstellen funktionsfähiger Tarifmodule, die in einer Produktions- oder Testumgebung verwendet werden können, finden Sie in den folgenden Themen:
 
 - [Erstellen eines neuen Transportverwaltungsmoduls](../transportation/create-new-transportation-management-engine.md)
-- [Einrichten von Transportverwaltungsmodulen](/dynamicsax-2012/appuser-itpro/set-up-transportation-management-engines)
+- [Einrichten von Transportverwaltungsmodulen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-transportation-management-engines)
 
 Weitere Informationen zum Erstellen eines Tarifmoduls für die Kleinpaketlieferung finden Sie im folgenden Blogbeitrag: [Kleinpaketlieferung: Nutzung der Kleinpaketlieferung in Microsoft Dynamics 365](https://hub.bhsolutions.com/creating-a-mock-parcel-engine-in-d365?submissionGuid=46a1fccf-80b0-4b70-a6a0-4bf45a8756b5).
 
@@ -274,7 +277,7 @@ Gehen Sie folgendermaßen vor, um die Lieferung zu verpacken.
 
     Das Adressetikett sollte jetzt auf dem zuvor ausgewählten ZPL-Drucker gedruckt werden. Es sollte dem folgenden Beispiel ähneln.
 
-    ![Beispieladressetikett.](media/sps-label-example.png "Beispieladressetikett")
+    ![Beispieladressetikett](media/sps-label-example.png "Beispieladressetikett")
 
 1. Beachten Sie, dass die Werte für **Containermanifestierungs-ID** und **Gesamtfracht** als vom Spediteur erhalten hinzugefügt wurden.
 

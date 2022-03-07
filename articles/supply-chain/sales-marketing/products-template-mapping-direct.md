@@ -2,16 +2,13 @@
 title: Produkte direkt von Supply Chain Management mit Produkten in Sales synchronisieren
 description: Dieses Thema beschreibt die Vorlagen und die zugrunde liegende Aufgaben, die verwendet werden, um die Produkte aus Dynamics 365 Supply Chain Management mit Dynamics 365 Sales zu synchronisieren.
 author: ChristianRytt
-manager: tfehr
 ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 6ffd55585ff43f993876de6c669eb61e74a9fd79
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 8976bc69f63fe5b05ab7dcb8d415515436902658
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527313"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909083"
 ---
 # <a name="synchronize-products-directly-from-supply-chain-management-to-products-in-sales"></a>Produkte direkt von Supply Chain Management mit Produkten in Sales synchronisieren
 
@@ -33,7 +30,7 @@ ms.locfileid: "4527313"
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> Damit Sie die Prospect to Cash-Lösung verwenden können, müssen Sie mit [Integration von Daten in Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator) vertraut sein.
+> Damit Sie die Prospect to Cash-Lösung verwenden können, müssen Sie mit [Integration von Daten in Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator) vertraut sein.
 
 Dieses Thema beschreibt die Vorlagen und die zugrunde liegende Aufgaben, die verwendet werden, um die Produkte direkt aus Dynamics 365 Supply Chain Management mit Dynamics 365 Sales zu synchronisieren.
 
@@ -80,7 +77,7 @@ Extern verwaltete Produkte werden automatisch der ersten gültigen Preisliste mi
 
 > [!NOTE]
 > - Produktsynchronisierung ist nicht erfolgreich, es sei denn, es gibt eine Liste mit Preisen, die eine entsprechende Währung haben.
-> - Sie können die verwendete Preisliste mit der Integration steuern, indem Sie die pricelevelid.name [Standardpreisliste (Name)] im Datenintegrationsprojekt zuordnen. Die Eingabe muss in Kleinbuchstaben sein. Die Vorgabe für eine Preisliste in Sales mit dem Namen „Standard“ wäre zum Beispiel: Zielfeld: pricelevelid.name [Standardpreisliste (Name)] und Zuordnungstyp: [ { „transformType“: „Standard“, „defaultValue“: „Standard“ } ].
+> - Sie können auch die verwendete Preisliste mit der Integration steuern, indem Sie den pricelevelid.name [Standard-Preisliste (Name)] im Daten-Integrationsprojekt zuordnen. Die Eingabe muss in Kleinbuchstaben sein. Beispielsweise kann der Standardwert für eine Liste mit Preisen auf Verkäufen mit dem Namen "Standard" wie folgt sein: Empfangsfeld: pricelevelid.name [Standard-Preisliste (Name)] und Zuordnungstyp: [ { "transformType" "Standard", "defaultValue": "Standard" } ].
 
 ## <a name="preconditions-and-mapping-setup"></a>Voraussetzungen und Einrichtung der Zuordnung
 
@@ -124,3 +121,6 @@ Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung im Dat
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

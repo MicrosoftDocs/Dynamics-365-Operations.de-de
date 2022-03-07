@@ -1,45 +1,44 @@
 ---
-title: Umsatzerkennungsübersicht
-description: Dieses Thema enthält Informationen zur Umsatzerkennungsfunktion. Diese Funktion stellt ein flexibles Framework bereit, mit dem Sie unternehmensspezifische Regeln zur Erfassung des Umsatzerlöspreises und des Umsatzerlöszeitplans für Aufträge mit mehreren Elementen definieren können.
+title: Übersicht über die Umsatzerkennung (enthält Video)
+description: Dieses Thema enthält Informationen zur Umsatzerkennungsfunktion. Diese Funktion stellt ein flexibles Framework bereit, mit dem Sie unternehmensspezifische Regeln zur Erfassung des Umsatzerlöspreises und des Umsatzerlöszeitplans bei Aufträgen mit mehreren Elementen festlegen können.
 author: kweekley
-manager: aolson
 ms.date: 11/11/2019
-ms.topic: index-page
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 92af567499c1a8a23cd4d51e5bab48eaab2d8422
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: a5e7b6407fe72c56ea04920532d4327d2b89f8d1
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4459115"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982586"
 ---
-# <a name="revenue-recognition-overview"></a>Umsatzerkennungsübersicht
+# <a name="revenue-recognition-overview"></a>Übersicht zur Umsatzerkennung
 
 [!include [banner](../includes/banner.md)]
 
+Unternehmen in Branchen, bei denen Verkäufe auf mehreren Ebenen getätigt werden, wie beispielsweise Produkte, Services, Abonnements usw., müssen Aufträge mit mehreren Elementen erstellen können, damit Umsatzerlöse basierend auf unternehmens- sowie branchenspezifischen Richtlinien erfasst werden können.
+
 > [!NOTE]
-> Die Umsatzerkennungsfunktion kann nicht über die Funktionsverwaltung aktiviert werden. Sie müssen derzeit Konfigurationsschlüssel verwenden, um sie zu aktivieren.
+> Die Funktion zur Umsatzerkennung kann nicht mithilfe der Funktionsverwaltung aktiviert werden. Derzeit erfolgt die Aktivierung mit Konfigurationsschlüsseln.
 
-Unternehmen in Branchen, bei denen Verkäufe auf mehreren Ebenen getätigt werden, wie beispielsweise Produkte, Services, Abonnements usw., müssen Aufträge mit mehreren Elementen erstellen können, sodass die Umsatzerlöse basierend auf unternehmensspezifischen wie branchenspezifischen Richtlinien erfasst werden können.
+> Die Umsatzerkennung, einschließlich Bündelfunktion, wird in Commerce-Kanälen (E-Commerce, POS, Callcenter) nicht unterstützt. Mit Umsatzerkennung konfigurierte Artikel dürfen nicht in Bestellungen oder Transaktionen ergänzt werden, die in Commerce-Kanälen erstellt wurden.
 
-Im Allgemeinen lässt sich der Umsatzerkennungsprozess verwenden, um folgende Aufgaben auszuführen:
+Im Allgemeinen dient die Umsatzerkennung zur Erledigung folgender Aufgaben:
 
-* Umsatzerlöse zuweisen – um sicherzustellen, dass der entsprechende Umsatzerlöspreis auf Grundlage der Komponentenwerte bei Aufträgen mit mehreren Elementen realisiert wird.
+* Umsatzerlöse zuweisen – um sicherzustellen, dass der entsprechende Umsatzerlöspreis bei Aufträgen mit mehreren Elementen auf den Werten der Bestandteile beruht.
 * Umsatzerlöse verzögern – basierend auf einem Umsatzerlöszeitplan, der den Vertragszeitrahmen und die prozentualen Anteile für Umsatzerlöse im Zeitverlauf erkennt, werden die Umsatzerlöse verzögert dargestellt.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44iER]
 
-Das Video [Verwendung der Umsatzerkennung in Dynamics 365 Finance](https://youtu.be/v3amIsiqvoo) (oben) ist in der [Finance and Operations-Playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) auf YouTube enthalten.
+Das Video [Verwendung der Umsatzerkennung in Dynamics 365 Finance](https://youtu.be/v3amIsiqvoo)(oben) ist teil der [Finance and Operations-Playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) auf YouTube.
 
 Die Umsatzerkennungsfunktion stellt ein flexibles Framework bereit, mit dem Sie unternehmensspezifische Regeln zur Erfassung des Umsatzerlöspreises und des Umsatzerlöszeitplans definieren können.
 
@@ -54,3 +53,6 @@ Nach der Bestätigung des Verkaufsauftrags wird auch ein Zeitplan für den vorau
 Die Details des Umsatzerkennungszeitplans werden für jede Auftragsposition verwaltet. Daher kann der Umsatzerkennungsmanager die Details anzeigen und Positionen für den Umsatzerlös freigeben, wenn die vertragliche Verpflichtung abgeschlossen wurde. Am Ende jeder Periode kann der Umsatzerkennungsmanager eine Umsatzerlöserfassung erstellen, um alle Zeitplanpositionen freizugeben, die an oder vor einem definierten Datum fällig werden. Diese Umsatzerlöserfassung wird nicht sofort gebucht. Daher kann der Umsatzerkennungsmanager überprüfen, ob die richtigen Beträge aus dem verzögerten Umsatzerlös aus dem tatsächlichen Umsatz freigegeben werden.
 
 Wenn eine Vertragsänderung dafür sorgt, dass eine neue Verkaufsauftragsposition entweder dem vorhandenen Verkaufsauftrag oder einem neuen Verkaufsauftrag hinzugefügt wird, kann ein Umlegungsverfahren ausgeführt werden, um den Umsatzerlöspreis für alle Positionen in allen Verkaufsaufträgen zu berichtigen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

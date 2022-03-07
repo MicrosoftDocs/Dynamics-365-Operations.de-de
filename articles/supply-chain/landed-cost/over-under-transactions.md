@@ -13,13 +13,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 60f4f31e9da762a89b034961a703e1d7b1bbd903
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.17
+ms.openlocfilehash: 53b1ebf27a58b1c16c6c249ca044fd746cce1436
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580743"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020910"
 ---
 # <a name="overunder-transactions"></a>Über-/Unterbuchungen
 
@@ -125,7 +125,7 @@ Um den Dokumenttyp für die Zeile anzuzeigen, die auf der oberen Registerkarte *
 | Neuer Dokumenttyp | Dieses Feld ist entweder auf *Umlagerungserfassung* oder *Einkaufsbestellung* festgelegt, abhängig von der Aktion, die in der ausgewählten Über/Unter-Transaktionszeile angezeigt wird. |
 | Anzahl | Ein Verweis und eine Verknüpfung entweder zur Einkaufsbestellung oder zum Umlagerungserfassung, die mit der ausgewählten Über/Unter-Transaktionszeile verknüpft ist. |
 | Grund für Über/Unter | Der Grund, der mit der ausgewählten Über/Unter-Transaktionszeile verknüpft ist. |
-| Menge | Die Menge, die Sie für die Einkaufsbestellung oder das Umlagerungserfassung ausgewählt haben, das mit der ausgewählten Über/Unter-Transaktionszeile verknüpft ist. |
+| Leistung | Die Menge, die Sie für die Einkaufsbestellung oder das Umlagerungserfassung ausgewählt haben, das mit der ausgewählten Über/Unter-Transaktionszeile verknüpft ist. |
 
 ### <a name="lower-general-tab"></a>Untere Registerkarte Allgemein
 

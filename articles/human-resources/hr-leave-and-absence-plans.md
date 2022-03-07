@@ -2,7 +2,7 @@
 title: Erstellen Sie einen Urlaubs- und Abwesenheitsplan
 description: Urlaubspläne erstellen in Dynamics 365 Human Resources für verschiedene Arten von Urlaub.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cb42860292c5e3e654917cf2f62b525993aa795a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f90e49c6191134a99b306fdc9de6b46c07844dea
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418727"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463405"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Erstellen Sie einen Urlaubs- und Abwesenheitsplan
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Urlaubs – und Abwesenheitspläne definieren in Dynamics 365 Human Resources für jede Art von Urlaub, den Sie anbieten. Urlaubs- und Abwesenheitspläne können mit unterschiedlichen Häufigkeiten anfallen, z. B. jährlich, monatlich oder halbmonatlich. Sie können Pläne auch als genehmigt definieren, wenn eine einzelne Abgrenzung an einem bestimmten Datum anfällt. Sie können beispielsweise einen Plan erstellen, der jährlich wechselnde Feiertage gewährt.
 
@@ -383,3 +385,6 @@ Geplanter Saldo (30) = Antizipierter Betrag (10 × 1) + Aktueller Saldo (40) –
 - [Urlaubs- und Abwesenheitsübersicht](hr-leave-and-absence-overview.md)
 - [Urlaubs- und Abwesenheitstypen konfigurieren](hr-leave-and-absence-types.md)
 - [Urlaubs- und Abwesenheitspläne antizipieren](hr-leave-and-absence-accrue.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

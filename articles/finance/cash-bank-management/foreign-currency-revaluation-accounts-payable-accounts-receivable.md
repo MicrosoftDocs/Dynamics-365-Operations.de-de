@@ -1,10 +1,12 @@
 ---
 title: Währungsneubewertung für Kreditoren- und Debitorenkonten
-description: Dieses Thema gibt Informationen zum Prozess der Neubewertung der Fremdwährung, der ausgeführt wird, um den Wert offener Buchungen in „Kreditoren“ und „Debitoren“ zu aktualisieren.
+description: Schwankungen in den Wechselkursen sorgen langfristig für Veränderungen im theoretischen Wert (Buchwert) offener Buchungen in Fremdwährungen. Dieser Artikel gibt Informationen zum Prozess der Neubewertung der Fremdwährung, der ausgeführt wird, um den Wert offener Buchungen in "Kreditoren" und "Debitoren" zu aktualisieren.
 author: kweekley
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustExchRateAdjustment, VendExchRateAdjustment
 audience: Application User
@@ -15,18 +17,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c84a373363fc066f46eb7891b421be098c0033526f2604d0ee52ff9c3fd9db3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ec17572612da7152ca0737cbd9f327d29dc54f8c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774352"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985236"
 ---
 # <a name="currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Währungsneubewertung für Kreditoren- und Debitorenkonten
 
 [!include [banner](../includes/banner.md)]
 
-Schwankungen in den Wechselkursen sorgen langfristig für Veränderungen im theoretischen Wert (Buchwert) offener Buchungen in Fremdwährungen. Dieses Thema gibt Informationen zum Prozess der Neubewertung der Fremdwährung, der ausgeführt wird, um den Wert offener Buchungen in „Kreditoren“ und „Debitoren“ zu aktualisieren. 
+Schwankungen in den Wechselkursen sorgen langfristig für Veränderungen im theoretischen Wert (Buchwert) offener Buchungen in Fremdwährungen. Dieser Artikel gibt Informationen zum Prozess der Neubewertung der Fremdwährung, der ausgeführt wird, um den Wert offener Buchungen in "Kreditoren" und "Debitoren" zu aktualisieren. 
 
 Der theoretische Wert oder Buchwert offener Transaktionen in Fremdwährungen verändert sich über längere Zeiträume wegen Schwankungen der Wechselkurse. Um den Wert offener Transaktionen in "Kreditoren" und "Debitoren" zu aktualisieren, führen Sie den Prozess zur Neubewertung der Fremdwährung aus. Neubewertung der Fremdwährung kann sowohl für "Kreditoren" als auch "Debitoren" ausgeführt werden. Der Prozess verwendet einen neuen Wechselkurs zur Neubewertung der offenen Beträge oder der nicht ausgeglichenen Beträge an einem bestimmten Datum. Die Unterschiede zwischen der ursprünglichen gebuchten Beträge und die vorkalkulierten Beträge einen neu führen unrealisierten Gewinn oder ein Verlust für alle offenen Posten. Die Kreditoren und Debitoruntergeordneten sachkonten werden dann aktualisiert, um den unrealisierten Gewinn oder der Verlust widerzuspiegeln, und ein wird Buchhaltungseintrags im Hauptbuch gebucht.
 
@@ -55,7 +57,7 @@ Jedes Mal, wenn Sie eine Neubewertung der Fremdwährung ausführen, wird ein Dat
     -   **Buchung** – Das Buchungsprofil der Debitorentransaktion wird verwendet.
     -   **Auswählen** – Geben Sie das Buchungsprofil im Feld **Buchungsprofil** ein.
 -   **Buchungsprofil** – Wenn die Option **Auswahl** im Feld **Verwenden des Buchungsprofils aus** ausgewählt wird, bestimmt das Buchungsprofil, das sie in diesem Feld eingeben, das Buchungsprofil der Transaktionen zur Neubewertung der Fremdwährung.
--   **Finanzdimensionen**: Die Finanzdimensionen, die bei den Buchungseinträgen der Transaktionen zur Neubewertung der Fremdwährung gebucht werden. Die Finanzdimensionen werden nicht anhand der Regeln für die Kontostruktur geprüft. Die Kontostruktur, die zum Zeitpunkt der Rechnungsstellung vorhanden war, entspricht möglicherweise nicht den Regeln, die bei der Neubewertung gegolten haben. Es gibt keine Möglichkeit, bestimmte Finanzdimensionen im Neubewertungsprozess auszuwählen, sodass die Prüfung der Kontostruktur übersprungen wird.  
+-   **Finanzdimensionen** – Die Finanzdimensionen, die bei den Buchungseinträgen der Transaktionen zur Neubewertung der Fremdwährung gebucht werden:
     -   **Kein** – Keine Finanzdimensionen werden gebucht. Wenn Sie eine erforderliche Finanzdimension in der Kontostruktur haben, wird der Neubewertungsprozess weiterhin ausgeführt und er erstellt Buchhaltungseinträge, die keine Finanzdimensionen haben. Sie erhalten zuerst einen Warnmeldung, um die Neubewertung stornieren zu können.
     -   **Tabelle** – Die Finanzdimensionen des Debitorenkontos oder Kreditorenkontos werden bei den Transaktionen zur Neubewertung der Fremdwährung gebucht.
     -   **Buchung** – Die Finanzdimensionen der Transaktion, die neu bewertet wird, werden bei den Transaktionen zur Neubewertung der Fremdwährung gebucht. Standardmäßig werden die Finanzdimensionen aus dem Sachkonto für Debitoren und Kreditoren der ursprünglichen Transaktion für das Hauptkonto für Debitoren und Kreditoren der Neubewertungstransaktion verwendet. Die Finanzdimensionen des Sachkontos für Ausgaben/Anlage/Umsatz der ursprünglichen Transaktion werden außerdem für das Hauptkonto für unrealisierten Gewinn/Verlust der Neubewertungstransaktion verwendet.
@@ -63,6 +65,3 @@ Jedes Mal, wenn Sie eine Neubewertung der Fremdwährung ausführen, wird ein Dat
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

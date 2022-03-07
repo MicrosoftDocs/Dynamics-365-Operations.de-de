@@ -1,28 +1,25 @@
 ---
 title: Erfassen von Artikeln für einen grundlegendes Warehousing aktivierten Artikel mithilfe eines Artikels eine Wareneingangserfassung
 description: Dieses Verfahren zeigt Ihnen an, wie Artikel mithilfe der Wareneingangserfassung erfasst werden, wenn Sie grundlegendes Warehousing im Inventurverwaltungsmodul verwenden.
-author: ShylaThompson
-manager: tfehr
+author: Mirzaab
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, WMSJournalTable, WMSJournalCreate, PurchEditLines
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 940fa33b10c5f60f469187b11dd066091581996f
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 76dd2bfd57db7dfd5c2baf59a864e59a509a64e0
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429035"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577791"
 ---
 # <a name="register-items-for-a-basic-warehousing-enabled-item-using-an-item-an-item-arrival-journal"></a>Erfassen von Artikeln für einen grundlegendes Warehousing aktivierten Artikel mithilfe eines Artikels eine Wareneingangserfassung
 
@@ -58,3 +55,6 @@ Dieses Verfahren zeigt Ihnen an, wie Artikel mithilfe der Wareneingangserfassung
 2. Klicken Sie auf "Produktzugang".
 3. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

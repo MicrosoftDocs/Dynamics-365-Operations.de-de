@@ -1,28 +1,25 @@
 ---
 title: Kaufverträge eingeben
 description: Dieses Thema erklärt, wie Sie einen Kaufvertrag erstellen, der einen Debitor verpflichtet, ein Produkt in einer bestimmten Menge über einen vorgegebenen Zeitraum zu erwerben, wobei ihm im Gegenzug Rabatte zustehen.
-author: omulvad
-manager: tfehr
+author: Henrikan
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesAgreementListPage, SalesAgreementCreate, SalesAgreement, InventItemIdLookupSimple, AgreementConfirmRunForm, SrsReportViewerForm, SalesAgreementCustomerReferencesPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5d69f3eaacea641460b407c1456ee50600262fee
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ee2c1494842c5fd2aa598546ba655c33d6fd3f16
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428506"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568302"
 ---
 # <a name="enter-sales-agreements"></a>Kaufverträge eingeben
 
@@ -57,3 +54,6 @@ Dieses Thema erklärt, wie Sie einen Kaufvertrag erstellen, der einen Debitor ve
 11. Wählen Sie **OK**.
 12. Schließen Sie die Seite. Die Vereinbarung ist jetzt wirksam. Sie können jetzt Kundenaufträge mit der Vereinbarung verknüpfen, um diese dem Zusageziel zuzurechnen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

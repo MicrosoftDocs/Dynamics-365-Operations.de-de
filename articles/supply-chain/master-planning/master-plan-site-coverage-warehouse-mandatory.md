@@ -1,30 +1,27 @@
 ---
 title: Produktprogrammplanungslauf - Standort- und Lagerdisposition, Lagerort obligatorisch
 description: In diesem Thema wird beschrieben wie ein Artikel, der Standort und Lagerort als Deckungsdimension hat, geplant wird. Die Lagerortdimension ist eine zwingende Dimension.
-author: roxanadiaconu
-manager: tfehr
+author: ChristianRytt
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResStorageDimensionGroup, ReqItemTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2454
 ms.assetid: aa135030-f98c-48bf-902c-e52f680dc247
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b1890f14351734c26952511f6245efe4cce5f3e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5dbc73911fcb3e0b0515f490f9f1236b4a12c648
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428938"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573714"
 ---
 # <a name="master-planning-for-site-coverage-mandatory-warehouse"></a>Produktprogrammplanungslauf - Standort- und Lagerdisposition, Lagerort obligatorisch
 
@@ -41,17 +38,16 @@ Für dieses Produktprogrammplanungsszenario müssen die folgenden Bedingungen er
 
 In der folgenden Grafik wird der Ablauf der Produktprogrammplanung veranschaulicht. Die Parameter, auf die in der Grafik Bezug genommen wird, sowie deren Position werden im Folgenden erläutert:
 -   Für den Artikel ist die Artikeldeckung definiert. Klicken Sie auf **Produktinformationsverwaltung &gt; Produkte &gt; Freigegebene Produkte**. Wählen Sie den Artikel aus, und klicken Sie auf **Planen &gt; Artikeldeckung**.
--   Für den Lagerort sind Auffüllbeziehungen definiert. Klicken Sie auf **Lagerverwaltung &gt; Einstellungen &gt; Lageraufschlüsselung &gt; Lagerorte**. Wählen Sie auf der Registerkarte **Produktprogrammplanung** die Feldgruppe **Hauptlagerort**.
+-   Für den Lagerort sind Auffüllbeziehungen definiert. Klicken Sie auf **Lagerverwaltung &gt; Einstellungen &gt; Lageraufschlüsselung &gt; Lagerorte**. Wählen Sie auf der Registerkarte **Produktprogrammplanung** die Feldgruppe **Hauptlagerort**.
 -   Der standardmäßige Auftragstyp wird zur Produktion, der Bestellung oder dem Kanban festgelegt. Klicken Sie auf **Produktinformationsverwaltung &gt; Produkte &gt; Freigegebene Produkte**. Wählen Sie den Artikel aus, und klicken Sie auf **Planen &gt; Standardauftragseinstellungen**. Im Formular **Standardauftragseinstellungen** sehen Sie den **Standardauftragstyp**.
 
-![Bedarf für Disposition an Standort, Lagerort obligatorisch](./media/multisitedemandexplosionscenarioforsitecoveragewarehousemandatory.jpg)
+![Bedarf für Disposition an Standort, Lagerort obligatorisch.](./media/multisitedemandexplosionscenarioforsitecoveragewarehousemandatory.jpg)
 
 
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Hauptpläne und Funktion für mehrere Standorte – Übersicht](master-plan-multisite-functionality.md)
+[Übersicht über Produktprogrammpläne und Funktionen für mehrere Standorte](master-plan-multisite-functionality.md)
 
 [Produktprogrammplanung für Disposition an Standort und Lagerort, Lagerort obligatorisch](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
@@ -63,3 +59,6 @@ In der folgenden Grafik wird der Ablauf der Produktprogrammplanung veranschaulic
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

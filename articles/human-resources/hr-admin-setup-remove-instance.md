@@ -2,11 +2,9 @@
 title: Eine Instanz entfernen
 description: Diese Artikel führt Sie durch den Prozess des Entfernens eine Testversions- oder Produktionsumgebung für Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
@@ -18,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0a8eac74f0d840251ab56445dd5af4d19d3c0490
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a6f23adedc287b85018fe0b0af445677f6dc597c
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418711"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889907"
 ---
 # <a name="remove-an-instance"></a>Eine Instanz entfernen
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Diese Artikel führt Sie durch den Prozess des Entfernens eine Testversions- oder Produktionsumgebung für Microsoft Dynamics 365 Human Resources.
 
@@ -81,7 +81,10 @@ So stellen Sie die Umgebung wieder her:
 
 1. Folgen Sie den Anweisungen unter [Die Power Apps Umgebung wiederherstellen](/power-platform/admin/recover-environment.md).
 
-2. Wenden Sie sich an den Support, um die Human-Resources-Umgebung wiederherzustellen. Weitere Informationen erhalten Sie über den [Support](hr-admin-troubleshooting-support.md).
+2. Wenden Sie sich an den Support, um die Human-Resources-Umgebung wiederherzustellen. Weitere Informationen erhalten Sie über den [Support](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
 
 > [!Warning]
 > Power Apps Umgebungen werden nach dem Löschen nur sieben Tage lang gespeichert. Sie müssen die Umgebung innerhalb dieser sieben Tage wiederherstellen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

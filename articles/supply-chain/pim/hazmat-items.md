@@ -1,27 +1,31 @@
 ---
 title: Gefährliche Stoffe in Produkten, Bestellungen, Sendungen und Ladungen
 description: In diesem Thema wird erläutert, wie Sie die gefährliche Stoffe für freigegebene Produkte festlegen, wie Sie Bestandsbeschränkungen für Gefahrengüter festlegen und wie Sie gefährliche Stoffe in einen Auftrag, eine Lieferung oder eine Ladung einbeziehen.
-author: t-benebo
+author: dasani-madipalli
+manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: damadipa
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 64d31cd86045ff28aa007666a3877271eecf0106
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.11
+ms.openlocfilehash: d3573aa5f8f986fa4fbf1c9ea8b322a1256aee36
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570704"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428900"
 ---
 # <a name="hazardous-materials-in-products-orders-shipments-and-loads"></a>Gefährliche Stoffe in Produkten, Bestellungen, Sendungen und Ladungen
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 In diesem Thema wird erläutert, wie Sie die gefährliche Stoffe für freigegebene Produkte festlegen, wie Sie Bestandsbeschränkungen für Gefahrengüter festlegen und wie Sie gefährliche Stoffe in einen Auftrag, eine Lieferung oder eine Ladung einbeziehen.
 
@@ -92,7 +96,7 @@ In der folgenden Tabelle werden die Felder beschrieben, die im Inforegister **Ma
 | Verpackungsbeschreibungen | Wählen Sie den entsprechenden Verpackungsbeschreibungscode aus. Dieser Code verweist auf eine Beschreibung, die angibt, wie das Produkt verpackt werden muss. |
 | Gefahrstoffetikette | Wählen Sie einen Code aus, der auf das zutreffende Gefahrgutetikett verweist, das auf das Produkt aufgebracht werden soll. |
 | Begrenzte Menge | Legen Sie diese Option auf **Ja** fest, um das Gesamtproduktgewicht anzugeben, das in jeder Ladung und in jeder Ladeposition enthalten ist. |
-| Menge | Geben Sie die Menge des gefährlichen Materials im Produkt in der angegebenen Einheit ein. Dieser Wert wird verwendet, um die Gesamtbewertung gefährlicher Stoffe für Ladungen und Lieferungen zu berechnen, die das Produkt enthalten. |
+| Leistung | Geben Sie die Menge des gefährlichen Materials im Produkt in der angegebenen Einheit ein. Dieser Wert wird verwendet, um die Gesamtbewertung gefährlicher Stoffe für Ladungen und Lieferungen zu berechnen, die das Produkt enthalten. |
 | Multiplikator | Geben Sie den Multiplikator ein, der angewendet wird, wenn die Bewertung des Gefahrstoffs für jede Ladungsposition berechnet wird, die das Produkt enthält. Dieser Wert wird durch die gültige Vorschrift vorgegeben, gemäß dem Typ des Gefahrstoffs, der im Produkt enthalten ist. |
 | Einheit | Wählen Sie die Maßeinheit aus, die für die Menge der Gefahrstoffe im Produkt gilt, wie im Feld **Menge** angegeben. Dieser Wert wird verwendet, um die Gesamtbewertung gefährlicher Stoffe für Ladungen und Lieferungen zu berechnen, die das Produkt enthalten. |
 
@@ -217,6 +221,3 @@ Gehen Sie folgendermaßen vor, um die Kompatibilitätsprüfung auszuführen.
 1. Wählen Sie im Aktionsbereich auf der Registerkarte **Ladungen** in der Gruppe **Aktionen** die Option **Kompatibilitätsprüfung** aus.
 
 Sie erhalten eine Nachricht, die Sie über die Ergebnisse der Prüfung informiert.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

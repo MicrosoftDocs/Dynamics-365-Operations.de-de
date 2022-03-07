@@ -2,25 +2,23 @@
 title: Österreich – Übersicht
 description: Dieses Thema bietet eine Übersicht der Dynamics 365 Finance-Funktionen, die für Österreich spezifisch sind.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.custom: intro-internal
 ms.search.region: Austria
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 5c9b261ca1e71bc705b3b11def199a6a6b4b3311
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 46cb65fd398a0397c131165104597bcbd1c3611c
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407740"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6339178"
 ---
 # <a name="austria-overview"></a>Österreich – Übersicht
 
@@ -57,11 +55,14 @@ Weitere Informationen zu den Einstellungen des MwSt. -Auszugs finden Sie unter [
 
 | Bericht                     | Bericht abrufen | Weitere Informationen                 |
 |----------------------------|--------------------------|----------------------------------------|
-|Bericht "Grenzüberschreitende Dienstleistungen"|**Hauptbuch** > **Berichte** > **Extern** > **Grenzüberschreitende Dienstleistungen**|Mit diesem Bericht wird eine Zusammenfassung der eingehenden und ausgehenden grenzübergreifenden Dienstleistungen, der Länder, die Anbieter oder Empfänger grenzübergreifender Dienstleistungen sind, sowie Nettobeträge, die für die Dienstleistungen bezahlt werden, gedruckt. Dieser Bericht wird in der Regel von Buchhaltungsleitern, Buchhaltern und Vertriebsleitern verwendet, um sich über den Status von Verkaufstransaktionen zu erkundigen. |
+|Bericht "Grenzüberschreitende Dienstleistungen"|**Hauptbuch** > **Berichte** > **Extern** > **Grenzüberschreitende Dienstleistungen**|Mit diesem Bericht wird eine Zusammenfassung der eingehenden und ausgehenden grenzübergreifenden Dienstleistungen, der Länder, die Anbieter oder Empfänger grenzübergreifender Dienstleistungen sind, sowie Nettobeträge, die für die Dienstleistungen bezahlt werden, gedruckt. Dieser Bericht wird in der Regel von Buchhaltungsleitern, Buchhaltern und Vertriebsleitern verwendet, um sich über den Status von Verkaufstransaktionen zu erkundigen. Weitere Informationen finden Sie unter [Bericht zu grenzüberschreitenden Dienstleistungen](emea-aut-cross-border-services-report.md).|
 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 - [Microsoft Dynamics-Lokalisierungs-Portal: Österreich-Bericht](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Austria.html)
-- [Überblick über die elektronische Berichterstellung](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Überblick über die elektronische Berichterstellung](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+- [Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

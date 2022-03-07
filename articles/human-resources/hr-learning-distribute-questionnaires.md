@@ -1,37 +1,39 @@
 ---
-title: Verteilen und Planen von Fragebögen
-description: In diesem Artikel wird beschrieben, wie die Fragebögen verteilen die Sie entworfen haben, sodass sie für die Person oder Gruppe von Personen verfügbar sind, die sie beantworten sollen.
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/04/2017
+title: Fragebögen verteilen und planen
+description: In diesem Artikel wird beschrieben, wie Sie die Fragebögen verteilen die Sie entworfen haben, sodass sie für die Person oder Gruppe von Personen verfügbar sind, die sie beantworten sollen.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters, HcmLearningWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0329b80615eed6efcc22bb0b140970988f5c306a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dbb069110b46c38a994a7be6276137360b14397a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418737"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069528"
 ---
-# <a name="distribute-and-schedule-questionnaires"></a>Verteilen und Planen von Fragebögen
+# <a name="distribute-and-schedule-questionnaires"></a>Fragebögen verteilen und planen
 
-In diesem Artikel wird beschrieben, wie die Fragebögen verteilen die Sie entworfen haben, sodass sie für die Person oder Gruppe von Personen verfügbar sind, die sie beantworten sollen. 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+In diesem Artikel wird beschrieben, wie Sie die Fragebögen verteilen die Sie entworfen haben, sodass sie für die Person oder Gruppe von Personen verfügbar sind, die sie beantworten sollen. 
 
 Es gibt mehrere Möglichkeiten, einen Fragebogen zu verteilen:
 
--   Markieren Sie den Fragebogen als aktiv. Der Fragebogen ist für alle Mitarbeiter verfügbar, sofern keine Fragebogengruppe eingerichtet wird, um den Zugriff auf den Fragebogen zu beschränken.
+-   Markieren Sie den Fragebogen als **Aktiv**. Der Fragebogen ist für alle Mitarbeiter verfügbar, sofern keine Fragebogengruppe eingerichtet wird, um den Zugriff auf den Fragebogen zu beschränken.
 -   Zuweisen von Rechten zu einer Fragebogengruppe. Der Fragebogen ist dann für alle Mitglieder der ausgewählten Gruppe verfügbar.
 -   Erstellen von geplanten Antwortsitzungen. Der Fragebogen steht dann für eine bestimmte Person zur Verfügung.
 -   Zeitplan erstellen. Der Fragebogen kann dann für mehrere Personen verfügbar sein.
@@ -131,3 +133,6 @@ Nachdem Sie einen Fragebogen entworfen und verteilt haben, kann der Fragebogen v
 Fragebögen können entweder allen Personen im Netzwerk oder lediglich bestimmten Benutzern oder Benutzergruppen zur Verfügung gestellt werden.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,26 +2,23 @@
 title: Waren zur doppelten Verwendung
 description: In diesem Thema wird erläutert, wie Produkte nachverfolgt werden, die als Waren mit doppeltem Verwendungszweck identifiziert wurden, Zertifikatsnummern für jedes relevante Produkt und Zielland gespeichert werden und gültige Zertifikatsnummern auf relevanten Rechnungen, Lieferscheinen und/oder Aufträgen gedruckt werden.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: COODualUseCerts, COORules, COODualUseCountries
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 8f2b738fd87219be383b103eaf5fafeb971fc702
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 15e8696b2bfa9f1df3cecd2d98b9ad2f6c5d6000
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428902"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829473"
 ---
 # <a name="dual-use-goods"></a>Waren zur doppelten Verwendung
 
@@ -108,3 +105,6 @@ Sie verwenden die Seite **Zertifikate für doppelte Verwendung**, um die erforde
     | Auf Rechnung drucken | Aktivieren Sie dieses Kontrollkästchen, um die Zertifikatsnummer auf Rechnungen zu drucken, die im angegebenen Datumsbereich an das angegebene Land adressiert sind. |
     | Auf Lieferscheinen drucken | Aktivieren Sie dieses Kontrollkästchen, um die Zertifikatsnummer auf Lieferscheine zu drucken, die im angegebenen Datumsbereich an das angegebene Land adressiert sind. |
     | Auf Auftrag drucken | Aktivieren Sie dieses Kontrollkästchen, um die Zertifikatsnummer auf Aufträge zu drucken, die im angegebenen Datumsbereich an das angegebene Land adressiert sind. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,36 +2,30 @@
 title: Neue Seite hinzufügen
 description: In diesem Thema wird beschrieben, wie Sie eine neue Websiteseite in Microsoft Dynamics 365 Commerce hinzufügen.
 author: psimolin
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b0f1e290526c25aa6e6300c65e24044a325bee53
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4b031431499eba0e109ac04dc46ec187250eba694284864bf78bb1f90265d788
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412511"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6725385"
 ---
 # <a name="add-a-new-site-page"></a>Neue Seite hinzufügen
-
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie eine neue Websiteseite in Microsoft Dynamics 365 Commerce hinzufügen.
-
-## <a name="overview"></a>Übersicht
 
 Nachdem Sie Vorlagen und Fragmente für Ihre Site erstellt haben, besteht der nächste Schritt darin, die Seiten zu erstellen, von denen die Kategorien verwendet werden. Um anzufangen, müssen Sie eine Vorlage oder ein Layout, einen Seitenname und eine URL Seite auswählen.
 
@@ -88,6 +82,11 @@ Um eine neue Seite Ihrer Site hinzufügen, führen Sie die folgenden Schritte au
 
 [Erweitern einer Produktseite](enrich-product-page.md)
 
-[Füllen einer Kategorie-Landingpage](enrich-category-page.md)
+[Kategoriezielseite erweitern](enrich-category-page.md)
 
 [Überprüfen der Zugänglichkeit des Seiteninhalts](verify-accessibility.md)
+
+[Dynamische E-Commerce-Seiten basierend auf URL-Parametern erstellen](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

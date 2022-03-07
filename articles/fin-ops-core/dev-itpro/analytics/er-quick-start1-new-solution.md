@@ -9,20 +9,18 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
+ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 36998d299e166709778bfaa7bfd0d8980890d4fe
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 6a3e0e4a8389fdd6580f66004d86ef4b1980dd9f
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323841"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891792"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Entwerfen einer neuen EB-Lösung zum Drucken eines benutzerdefinierten Berichts
 
@@ -123,17 +121,17 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer in den Rollen "Syst
 
 In diesem Beispiel erstellen Sie eine neue EB-Lösung für das Modul [Fragebogen](../../../human-resources/hr-learning-questionnaires.md). Mit dieser neuen EB-Lösung können Sie einen Bericht mithilfe eines Microsoft Excel-Arbeitsblatts als Vorlage erstellen. Sie können dann den Bericht **Fragebogen** im Excel- oder PDF-Format zusätzlich zum vorhandenen SSRS-Bericht (SQL Server Reporting Services) generieren. Auf Anfrage können Sie den neuen Bericht auch später ändern. Eine Codierung ist nicht erforderlich.
 
-1. Um den vorhandenen Bericht auszuführen, wählen Sie **Fragebogen** \> **Entwurf** \> **Fragebogenbericht**.
+1. Um den vorhandenen Bericht auszuführen, wählen Sie **Fragebogen**\>**Entwurf**\>**Fragebogenbericht**.
 
-    ![Auswählen des Fragebogenbericht-Menüpunkts im Fragebogenmodul, um den vorhandenen SSRS-Bericht auszuführen.](./media/er-quick-start1-application-menu-origin.png)
+    ![Auswählen des Fragebogenbericht-Menüpunkts im Fragebogenmodul, um den vorhandenen SSRS-Bericht auszuführen](./media/er-quick-start1-application-menu-origin.png)
 
 2. Geben Sie im Dialogfeld **Fragebogenbericht** Auswahlkriterien angeben. Wenden Sie einen Filter an, sodass der Bericht nur den Fragebogen **SBCCrsExam** enthält.
 
-    ![Festlegen von Auswahlkriterien im Dialogfeld „Fragebogenbericht“.](./media/er-quick-start1-ssrs-report-dialog.png)
+    ![Festlegen von Auswahlkriterien im Dialogfeld "Fragebogenbericht"](./media/er-quick-start1-ssrs-report-dialog.png)
 
 Die folgende Abbildung zeigt die generierte Version des SSRS-Berichts für den Fragebogen **SBCCrsExam**.
 
-![Generierter SSRS-Bericht.](./media/er-quick-start1-ssrs-report.png)
+![Generierter SSRS-Bericht](./media/er-quick-start1-ssrs-report.png)
 
 ## <a name="configure-the-er-framework"></a><a name="ConfigureFramework"></a>Konfigurieren des EB-Frameworks
 
@@ -181,13 +179,13 @@ Weitere Informationen zu EB-Konfigurationsanbietern finden Sie unter [Erstellen 
 
 ## <a name="design-a-domain-specific-data-model"></a><a name="DesignModel"></a>Entwerfen eines domänenspezifischen Datenmodells
 
-Sie müssen eine neue EB-Konfiguration erstellen, die eine Datenmodellkomponente für den Geschäftsbereich **Fragebogen** enthält. Dieses Datenmodell wird später als Datenquelle verwendet, wenn Sie ein EB-Format zum Generieren des Berichts **Fragebogen** entwerfen.
+Sie müssen eine neue EB-Konfiguration erstellen, die eine [Datenmodell](general-electronic-reporting.md#data-model-and-model-mapping-components)-Komponente für den Geschäftsbereich **Fragebogen** enthält. Dieses Datenmodell wird später als Datenquelle verwendet, wenn Sie ein EB-Format zum Generieren des Berichts **Fragebogen** entwerfen.
 
 Durch Ausführen der Schritte im Abschnitt [Importieren einer neuen Datenmodellkonfiguration](#ImportDataModel) können Sie das erforderliche Datenmodell aus der bereitgestellten XML-Datei importieren. Alternativ können Sie mit den Schritten im Abschnitt [Erstellen einer neuen Datenmodellkonfiguration](#DesignDataModel) dieses Datennmodell neu entwerfen.
 
 ### <a name="import-a-new-data-model-configuration"></a><a name="ImportDataModel"></a>Importieren einer neuen Datenmodellkonfiguration
 
-1. Laden Sie die Datei [Fragebögen model.version.1.xml](https://download.microsoft.com/download/b/6/3/b633bd34-d200-4422-96d9-8f62eb5218f8/Questionnaires_model.version.1.xml) herunter und speichern Sie sie auf Ihrem lokalen Computer.
+1. Laden Sie die Datei [Fragebögen model.version.1.xml ](https://go.microsoft.com/fwlink/?linkid=851448) herunter und speichern Sie sie auf Ihrem lokalen Computer.
 2. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
 3. Wählen Sie im Arbeitsbereich **Elektronische Berichterstellung** die Option **Berichterstellungskonfigurationen** aus.
 4. Wählen Sie im Aktivitätsbereich **Austausch** \> **Aus XML-Datei laden** aus.
@@ -247,7 +245,7 @@ Durch Ausführen der Schritte im Abschnitt [Importieren einer neuen Datenmodellk
     | Stamm                                                          |             | Der Bezugspunkt zum Anfordern von Fragebogendaten. |
     | Stamm\\CompanyName                                             | Zeichenfolge      | Der Name des aktuellen Unternehmens. |
     | Stamm\\ExecutionContext                                        | Aufzeichnen      | Formatausführungsdetails. |
-    | Stamm\\ExecutionContext\\Formatname                            | Zeichenfolge      | Der Name des ausgeführten EB-Formats. |
+    | Stamm \\ExecutionContext \\Formatname                            | Zeichenfolge      | Der Name des ausgeführten EB-Formats. |
     | Stamm\\Fragebogen                                           | Datensatzliste | Die Liste der Fragebögen |
     | Stamm\\Fragebogen\\Aktiv                                   | Zeichenfolge      | Der Status des aktuellen Fragebogens. |
     | Stamm\\Fragebogen\\Code                                     | Zeichenfolge      | Der Code des aktuellen Fragebogens. |
@@ -273,7 +271,7 @@ Durch Ausführen der Schritte im Abschnitt [Importieren einer neuen Datenmodellk
 
     Die folgende Abbildung zeigt das fertige bearbeitbare Datenmodell auf der Seite **Datenmodelldesigner**.
 
-    ![Konfiguriertes Datenmodell im EB-Datenmodelldesigner.](./media/er-quick-start1-model2.png)
+    ![Konfiguriertes Datenmodell im EB-Datenmodelldesigner](./media/er-quick-start1-model2.png)
 
 7. Speichern Sie die Änderungen.
 8. Schließen Sie die Seite **Datenmodelldesigner**.
@@ -287,7 +285,7 @@ Durch Ausführen der Schritte im Abschnitt [Importieren einer neuen Datenmodellk
 
 Der Status von Version 1 dieser Konfiguration wird von **Entwurf** zu **Abgeschlossen** geändert. Version 1 kann nicht mehr geändert werden. Diese Version enthält das konfigurierte Datenmodell und kann als Basis für andere EB-Konfigurationen verwendet werden. Version 2 dieser Konfiguration wird erstellt und hat den Status **Entwurf**. Sie können diese Version bearbeiten, um das Datenmodell **Fragebogen** anzupassen.
 
-![Versionen der bearbeitbaren Konfiguration auf der Seite „Konfigurationen“.](./media/er-quick-start1-model-configuration.png)
+![Versionen der bearbeitbaren EB-Konfiguration auf der Seite "Konfigurationen"](./media/er-quick-start1-model-configuration.png)
 
 Weitere Informationen zur Versionierung für EB-Konfigurationen finden Sie unter [Übersicht über die elektronische Berichterstattung (EB)](general-electronic-reporting.md#component-versioning).
 
@@ -296,13 +294,13 @@ Weitere Informationen zur Versionierung für EB-Konfigurationen finden Sie unter
 
 ## <a name="design-a-model-mapping-for-the-configured-data-model"></a><a name="DesignMapping"></a>Entwerfen einer Modellzuordnung für das konfigurierte Datenmodell
 
-Als Benutzer in der Rolle des Entwicklers für elektronische Berichterstellung müssen Sie eine neue EB-Konfiguration erstellen, die eine Modellzuordnungskomponente für das Datenmodell **Fragebogen** enthält. Da diese Komponente das konfigurierte Datenmodell für Finanzen implementiert, ist es finanzspezifisch. Sie müssen die Modellzuordnungskomponente so konfigurieren, dass die Anwendungsobjekte angegeben werden, die zum Ausfüllen des konfigurierten Datenmodells mit Anwendungsdaten zur Laufzeit verwendet werden müssen. Um diese Aufgabe durchzuführen, müssen Sie die Implementierungsdetails der Datenstruktur der Geschäftsdomäne **Fragebogen** im Finanzbereich berücksichtigen.
+Als Benutzer in der Rolle des Entwicklers für elektronische Berichterstellung müssen Sie eine neue EB-Konfiguration erstellen, die eine Komponente [Modellabbildung](general-electronic-reporting.md#data-model-and-model-mapping-components) für das Datenmodell **Fragebogen** enthält. Da diese Komponente das konfigurierte Datenmodell für Finanzen implementiert, ist es finanzspezifisch. Sie müssen die Modellzuordnungskomponente so konfigurieren, dass die Anwendungsobjekte angegeben werden, die zum Ausfüllen des konfigurierten Datenmodells mit Anwendungsdaten zur Laufzeit verwendet werden müssen. Um diese Aufgabe durchzuführen, müssen Sie die Implementierungsdetails der Datenstruktur der Geschäftsdomäne **Fragebogen** im Finanzbereich berücksichtigen.
 
 Durch Ausführen der Schritte im Abschnitt [Importieren einer neuen Modellzuordnungskonfiguration](#ImportModelMapping) können Sie die erforderliche Modellzuordungskonfiguration aus der bereitgestellten XML-Datei importieren. Alternativ können Sie mit den Schritten im Abschnitt [Erstellen einer neuen Modellzuordnungskonfiguration](#CreateModelMapping) diese Modellzuordnung neu entwerfen.
 
 ### <a name="import-a-new-model-mapping-configuration"></a><a name="ImportModelMapping"></a>Importieren einer neuen Modellzuordnungskonfiguration
 
-1. Laden Sie die Datei [Questionnaires mapping.version.1.1.xml](https://download.microsoft.com/download/7/b/2/7b258e4e-4bd5-46a4-8114-27419ae4acd8/Questionnaires_mapping.version.1.1.xml) herunter und speichern Sie sie auf Ihrem lokalen Computer.
+1. Laden Sie die Datei [Questionnaires mapping.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) herunter und speichern Sie sie auf Ihrem lokalen Computer.
 2. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
 3. Wählen Sie im Arbeitsbereich **Elektronische Berichterstellung** die Option **Berichterstellungskonfigurationen** aus.
 4. Wählen Sie im Aktivitätsbereich **Austausch** \> **Aus XML-Datei laden** aus.
@@ -336,7 +334,7 @@ Für die Definition **Stamm** wird automatisch eine neue Zuordnung hinzugefügt.
 
 Sie müssen Datenquellen konfigurieren, um auf die Anwendungstabellen zuzugreifen, die Fragebogendetails enthalten.
 
-1. Wählen Sie auf der Seite **Modellzuordnungsdesigner** im Bereich **Datenquellentypen** die Option **Dynamics 365 for Operations\\Tabellendatensätze** aus.
+1. Wählen Sie auf der Seite **Modellzuordnungsdesigner** im Bereich **Datenquellentypen** die Option **Dynamics 365 for Operations\\ Tabellendatensätze** aus.
 2. Fügen Sie eine neue Datenquelle hinzu, die für den Zugriff auf die KMCollection-Tabelle verwendet wird, wobei jeder Datensatz einen einzelnen Fragebogen darstellt:
 
     1. Wählen Sie **Stamm hinzufügen** im Bereich **Datenquellen** aus.
@@ -368,7 +366,7 @@ Sie müssen Datenquellen konfigurieren, um auf die Anwendungstabellen zuzugreife
     2. Wählen Sie **Hinzufügen** aus.
     3. Geben Sie im Dialogfeld im Feld **Name** den Eintrag **\$ResultGroup** ein.
     4. Wählen Sie **Formel bearbeiten** aus.
-    5. Geben Sie im [EB-Formeleditor](general-electronic-reporting-formula-designer.md) im Feld **Formel** den Eintrag **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** ein, um den [Pfad](er-formula-language.md#Paths) der 1:n-Beziehung zwischen den KMCollection- und KMQuestionResultGroup-Tabellen zu verwenden.
+    5. Geben Sie im [EB-Formeleditor](general-electronic-reporting-formula-designer.md) im Feld **Formel** den Eintrag **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** ein, um den [Pfad](er-formula-language.md#paths) der 1:n-Beziehung zwischen den KMCollection- und KMQuestionResultGroup-Tabellen zu verwenden.
     6. Klicken Sie auf **Speichern** und schließen Sie den Formeleditor.
     7. Wählen Sie **OK** aus, um das neue berechnete Feld hinzuzufügen.
 
@@ -406,7 +404,7 @@ Sie müssen Datenquellen konfigurieren, um auf die Anwendungstabellen zuzugreife
 
 Sie müssen Datenquellen konfigurieren, um auf Anwendungsaufzählungen zuzugreifen und deren Werte mit den Werten der Felder des Typs **Aufzählung** in den Anwendungstabellen zu vergleichen. Sie müssen das Ergebnis des Vergleichs verwenden, um die entsprechenden Felder des Datenmodells auszufüllen.
 
-1. Wählen Sie auf der Seite **Modellzuordnungsdesigner** im Bereich **Datenquellentypen** den Eintrag **Dynamics 365 for Operations\\Aufzählung** aus.
+1. Wählen Sie auf der Seite **Modellzuordnungsdesigner** im Bereich **Datenquellentypen** den Eintrag **Dynamics 365 for Operations\\ Aufzählung** aus.
 2. Fügen Sie eine neue Datenquelle hinzu, mit der auf die Werte der Aufzählung **EnumAppNoYes** zugegriffen wird:
 
     1. Wählen Sie **Stamm hinzufügen** im Bereich **Datenquellen** aus.
@@ -414,7 +412,7 @@ Sie müssen Datenquellen konfigurieren, um auf Anwendungsaufzählungen zuzugreif
     3. Geben Sie im Feld **Aufzählung** den Eintrag **NoYes** ein.
     4. Wählen Sie **OK** aus, um die neue Datenquelle hinzuzufügen.
 
-3. Wählen Sie im Bereich **Datenquellentypen** den Eintrag **Dynamics 365 for Operations\\Aufzählung** aus.
+3. Wählen Sie im Bereich **Datenquellentypen** den Eintrag **Dynamics 365 for Operations\\ Aufzählung** aus.
 4. Fügen Sie eine neue Datenquelle hinzu, mit der auf die Werte der Aufzählung **KMCollectionQuestionMode** zugegriffen wird:
 
     1. Wählen Sie **Stamm hinzufügen** im Bereich **Datenquellen** aus.
@@ -441,7 +439,7 @@ Sie können EB-Beschriftungen hinzufügen, um einige Ihrer Datenquellen so zu ko
 5. Schließen Sie das Dialogfeld **Textübersetzung**.
 6. Wählen Sie **Abbrechen** aus.
 
-![Hinzufügen von EB-Beschriftungen für die bearbeitbare Modellzuordnung.](./media/er-quick-start1-adding-labels.png)
+![Hinzufügen von EB-Beschriftungen für die bearbeitbare Modellzuordnung](./media/er-quick-start1-adding-labels.png)
 
 Sie haben EB-Beschriftungen nur für die Standardsprache eingegeben. Informationen darüber, wie EB-Etiketten in andere Sprachen übersetzt werden können, finden Sie unter [Entwerfen mehrsprachiger Berichte](er-design-multilingual-reports.md).
 
@@ -475,7 +473,7 @@ Da Sie die Ergebnisse des Vergleichs zwischen Aufzählungswerten und Textwerten 
     8. Klicken Sie auf **Speichern** und schließen Sie den Formeleditor.
     9. Wählen Sie **OK** aus, um die neue Datenquelle hinzuzufügen.
 
-![Konfigurierte Modellzuordnung im EB-Modellzuordnungsdesigner.](./media/er-quick-start1-added-data-sources.png)
+![Konfigurierte Modellzuordnung im EB-Modellzuordnungsdesigner](./media/er-quick-start1-added-data-sources.png)
 
 #### <a name="bind-data-sources-to-data-model-fields"></a><a name="AddMmBindings1"></a>Binden von Datenquellen an Datenmodellfelder
 
@@ -494,7 +492,7 @@ Sie müssen die konfigurierten Datenquellen an die Felder des Datenmodells binde
 
     1. Wählen Sie **Aktiv** im Bereich **Datenmodell** aus.
     2. Wählen Sie **Bearbeiten** im Bereich **Datenmodell** aus.
-    3. Geben Sie im Feld **Formel** den Eintrag **Helper.NoYesEnumToString (\@.Active = EnumAppNoYes.Yes)** ein, um das text- und sprachabhängige Ergebnis des Vergleichs zwischen Aufzählungswerten zu füllen.
+    3. Geben Sie im Feld **Formel** den Eintrag **Helper.NoYesEnumToString ( \@.Active = EnumAppNoYes.Yes)** ein, um das text- und sprachabhängige Ergebnis des Vergleichs zwischen Aufzählungswerten zu füllen.
 
 6. Binden Sie Datenquellen weiterhin auf dieselbe Weise an Datenmodellfelder, bis Sie das folgende Ergebnis erzielen.
 
@@ -508,7 +506,7 @@ Sie müssen die konfigurierten Datenquellen an die Felder des Datenmodells binde
     | Fragebogen\\QuestionnaireType                        | Zeichenfolge      | Binden   | \@.'&gt;Relations'.kmCollectionTypeId.Description |
     | Fragebogen\\QuestionOrder                            | Zeichenfolge      | Bearbeiten   | CASE (\@.questionMode,<br>EnumAppQuestionOrder.Conditional, "Conditional",<br>EnumAppQuestionOrder.Random, "Zufällig (Prozentsatz im Fragebogen)",<br>EnumAppQuestionOrder.RandomGroup, "Zufällig (Prozentsatz in Ergebnisgruppen)",<br>EnumAppQuestionOrder.Sequence, "Sequenziell",<br>"") |
     | Fragebogen\\ResultsGroup                             | Aufzeichnen      |        | |
-    | Fragebogen\\ResultsGroup\\Code                       | Zeichenfolge      | Binden   | \@.'\$ResultGroup'.kmQuestionResultGroupId |
+    | Fragebogen\\ResultsGroup\\Code                       | Zeichenfolge      | Binden   | \@. ' \$ResultGroup'.kmQuestionResultGroupId |
     | Fragebogen\\ResultsGroup\\Beschreibung                | Zeichenfolge      | Binden   | \@.'\$ResultGroup'.description |
     | Fragebogen\\ResultsGroup\\MaxNumberOfPoints          | Gleitkommazahl        | Binden   | \@.'\$ResultGroup'.maxPoint |
     | Fragebogen\\Frage                                 | Datensatzliste | Binden   | \@.'&lt;Relations'.KMCollectionQuestion |
@@ -526,7 +524,7 @@ Sie müssen die konfigurierten Datenquellen an die Felder des Datenmodells binde
 
     Die folgende Abbildung zeigt den Endzustand der konfigurierten Modellzuordnung auf der Seite **Modellzuordnungsdesigner**.
 
-    ![Vollkonfigurierte Modellzuordnung im EB-Modellzuordnungsdesigner.](./media/er-quick-start1-mapping2.png)
+    ![Vollkonfigurierte Modellzuordnung im EB-Modellzuordnungsdesigner](./media/er-quick-start1-mapping2.png)
 
 7. Speichern Sie die Änderungen.
 8. Schließen Sie die Seite **Modellzuordnungsdesigner**.
@@ -540,7 +538,7 @@ Sie müssen die konfigurierten Datenquellen an die Felder des Datenmodells binde
 
 Der Status von Version 1.1 dieser Konfiguration wird von **Entwurf** zu **Abgeschlossen** geändert. Version 1.1 kann nicht mehr geändert werden. Diese Version enthält das konfigurierte Modellzuordnung und kann als Basis für andere EB-Konfigurationen verwendet werden. Version 1.2 dieser Konfiguration wird erstellt und hat den Status **Entwurf**. Sie können diese Version bearbeiten, um die Konfiguration **Fragebogenzuordnung** anzupassen.
 
-![Versionen der bearbeitbaren EB-Konfiguration auf der Seite „Konfigurationen“.](./media/er-quick-start1-mapping-configuration.png)
+![Versionen der bearbeitbaren EB-Konfiguration auf der Seite "Konfigurationen"](./media/er-quick-start1-mapping-configuration.png)
 
 > [!NOTE]
 > Die konfigurierte Modellzuordnung ist Ihre finanzspezifische Implementierung des abstrakten Datenmodells, das die Geschäftsdomäne **Fragebogen** darstellt.
@@ -549,32 +547,32 @@ Der Status von Version 1.1 dieser Konfiguration wird von **Entwurf** zu **Abgesc
 
 Das EB-Framework verwendet vordefinierte Vorlagen, um Berichte in Microsoft Office-Formaten zu generieren (Excel-Arbeitsmappen oder Word-Dokumente) zu erstellen. Während der Erstellung des erforderlichen Berichts wird eine Vorlage mit den erforderlichen Daten gemäß dem konfigurierten Datenfluss ausgefüllt. Daher müssen Sie zuerst eine Vorlage für Ihren benutzerdefinierten Bericht entwerfen. Diese Vorlage muss als Excel-Arbeitsmappe konzipiert sein, deren Struktur das Layout eines benutzerdefinierten Berichts darstellt. Sie müssen jedes Excel-Element benennen, das Sie mit den erforderlichen Daten füllen möchten.
 
-1. Laden Sie die Datei [Questionnaires report template.xlsx](https://download.microsoft.com/download/3/8/2/382c3cf0-87bb-473f-b7bb-3015b4facb74/Questionnaires_report_template.xlsx) herunter, und speichern Sie sie auf Ihrem lokalen Computer.
+1. Laden Sie die Datei [Questionnaires report template.xslx](https://go.microsoft.com/fwlink/?linkid=851448) herunter und speichern Sie sie auf Ihrem lokalen Computer.
 2. Öffnen Sie die Datei in Excel und überprüfen Sie die Struktur der Arbeitsmappe.
 
 Wie die folgende Abbildung zeigt, wurde die heruntergeladene Vorlage so gestaltet, dass bestimmte Fragebögen gedruckt werden, in denen die Fragen eines Fragebogens zusammen mit den entsprechenden Antworten dargestellt werden.
 
-![Excel-Vorlage zum Drucken bestimmter Fragebögen.](./media/er-quick-start1-template-layout.png)
+![Excel-Vorlage zum Drucken bestimmter Fragebögen](./media/er-quick-start1-template-layout.png)
 
 Zu dieser Vorlage wurden Excel-Namen hinzugefügt, um die Details des Fragebogens auszufüllen. Mit dem Namensmanager können Sie die Excel-Namen überprüfen.
 
-![Verwenden des Namensmanagers zum Überprüfen von Excel-Namen in der bereitgestellten Excel-Vorlage.](./media/er-quick-start1-template-names.png)
+![Verwenden des Namensmanagers zum Überprüfen von Excel-Namen in der bereitgestellten Excel-Vorlage](./media/er-quick-start1-template-names.png)
 
 Berichtsbezeichnungen wurden als fester Text in englischer Sprache hinzugefügt. Sie können die Berichtsbeschriftungen durch neue Excel-Namen ersetzen, die die Beschriftungen mit sprachabhängigem Text ausfüllen, indem Sie das EB-Format verwenden [Beschriftungen](#AddMmLabels), wie Sie es für sprachabhängige Ausdrücke in der konfigurierten Modellzuordnung getan haben. In diesem Fall müssen EB-Beschriftungen im bearbeitbaren EB-Format hinzugefügt werden.
 
 Wie die folgende Abbildung zeigt, wurde der benutzerdefinierte Berichtskopf angegeben, damit Excel Paging ausführen kann.
 
-![Benutzerdefinierter Berichtskopf in der bereitgestellten Excel-Vorlage.](./media/er-quick-start1-template-header.png)
+![Benutzerdefinierter Berichtskopf in der bereitgestellten Excel-Vorlage](./media/er-quick-start1-template-header.png)
 
 ## <a name="design-a-format"></a><a name="DesignFormat"></a>Entwerfen eines Formats
 
-Als Benutzer in der Rolle des Electronic Reporting Functional Consultant müssen Sie eine neue EB-Konfiguration erstellen, die eine Komponente Format enthält. Sie müssen die Formatkomponente konfigurieren, um anzugeben, wie eine Berichtsvorlage zur Laufzeit mit den erforderlichen Daten gefüllt wird.
+Als Benutzer in der Rolle des Electronic Reporting Functional Consultant müssen Sie eine neue EB-Konfiguration erstellen, die eine Komponente [Format](general-electronic-reporting.md#FormatComponentOutbound) enthält. Sie müssen die Formatkomponente konfigurieren, um anzugeben, wie eine Berichtsvorlage zur Laufzeit mit den erforderlichen Daten gefüllt wird.
 
 Durch Ausführen der Schritte im Abschnitt [Importieren einer entworfenen Formatkonfiguration](#FormatImport) können Sie das erforderliche Format aus der bereitgestellten XML-Datei importieren. Alternativ können Sie mit den Schritten im Abschnitt [Erstellen einer neuen Formatkonfiguration](#FormatCreate) dieses Format neu entwerfen.
 
 ### <a name="import-a-designed-format-configuration"></a><a name="FormatImport"></a>Importieren einer entworfenen Formatkonfiguration
 
-1. Laden Sie die Datei [Questionnaires format.version.1.1.xml](https://download.microsoft.com/download/1/b/a/1ba39ec2-257a-44d8-972f-25bf7d18fb41/Questionnaires_format.version.1.1.xml) herunter und speichern Sie sie auf Ihrem lokalen Computer.
+1. Laden Sie die Datei [Questionnaires format.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) herunter und speichern Sie sie auf Ihrem lokalen Computer.
 2. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
 3. Wählen Sie im Arbeitsbereich **Elektronische Berichterstellung** die Option **Berichterstellungskonfigurationen** aus.
 4. Wählen Sie im Aktivitätsbereich **Austausch** \> **Aus XML-Datei laden** aus.
@@ -614,11 +612,11 @@ Durch Ausführen der Schritte im Abschnitt [Importieren einer entworfenen Format
     2. Suchen und wählen Sie die lokal gespeicherte Datei **Questionnaires report template.xslx** und dann **Öffnen** aus.
     3. Wählen Sie **OK** aus, um die Vorlage zu importieren.
 
-    ![Importieren einer Berichtvorlage.](./media/er-quick-start1-template-import.png)
+    ![Importieren einer Berichtvorlage](./media/er-quick-start1-template-import.png)
 
 Das Formatelement **Excel\\Datei** wird automatisch als Stammelement in das bearbeitbare Format eingefügt. Zusätzlich wird entweder das Formatelement **Excel\\Bereich** oder das Formatelement **Excel\\Zelle** automatisch für jeden erkannten Excel-Namen der importierten Vorlage hinzugefügt. Das Format **Excel\\Header**, in dem das verschachtelte Element **String** enthalten ist, wird automatisch entsprechend der Header-Einstellung der importierten Vorlage hinzugefügt.
 
-![Formatstruktur, die automatisch hinzugefügte Elemente im EB Operation Designer enthält.](./media/er-quick-start1-template-import2.png)
+![Formatstruktur, die automatisch hinzugefügte Elemente im EB Operation Designer enthält](./media/er-quick-start1-template-import2.png)
 
 #### <a name="configure-a-format"></a><a name="ConfigureFormat"></a>Konfigurieren eines Formats
 
@@ -629,12 +627,12 @@ Das Formatelement **Excel\\Datei** wird automatisch als Stammelement in das bear
 
     Informationen zum Festlegen der Sprach- und Kulturkontexte für einen EB-Prozess finden Sie unter [Entwerfen mehrsprachiger Berichte](er-design-multilingual-reports.md).
 
-    ![Konfigurieren der Sprach- und Kultureinstellungen für den erstellten Bericht im EB Operation Designer.](./media/er-quick-start1-template-format-structure1.png)
+    ![Konfigurieren der Sprach- und Kultureinstellungen für den erstellten Bericht im ER Operation Designer](./media/er-quick-start1-template-format-structure1.png)
 
 5. Erweitern Sie im Formatbaum den Stammknoten und wählen Sie dann **ResultsGroup** aus.
 6. Wählen Sie auf der Registerkarte **Format** im Feld **Replikationsrichtung** den Eintrag **Keine Replikation** aus, weil Sie nicht erwarten, mehrere Ergebnisgruppen für einen einzelnen Fragebogen zu haben.
 
-    ![Definieren der Replikationsrichtung für Elemente im Bereichsformat im EB Operation Designer.](./media/er-quick-start1-template-format-structure2.png)
+    ![Definieren der Replikationsrichtung für Elemente im Bereichsformat im ER Operation Designer](./media/er-quick-start1-template-format-structure2.png)
 
 7. Wählen Sie **Speichern** aus.
 
@@ -654,7 +652,7 @@ Sie müssen eine Datenbindung für ein Formatelement angeben, mit dem der Titel 
 
 5. Schließen Sie den Formeleditor.
 
-    ![Konfigurieren der Bindung zum Ausfüllen des Titels eines generierten Berichts.](./media/er-quick-start1-add-report-title-label.png)
+    ![Konfigurieren der Bindung zum Ausfüllen des Titels eines generierten Berichts](./media/er-quick-start1-add-report-title-label.png)
 
 Mit dieser Methode können Sie alle anderen Beschriftungen der aktuellen Vorlagensprache abhängig machen. Informationen dazu, wie die hinzugefügten Beschriftungen einer einzelnen EB-Konfiguration in alle unterstützten Sprachen übersetzt werden können, finden Sie unter [Entwerfen mehrsprachiger Berichte](er-design-multilingual-reports.md).
 
@@ -664,7 +662,7 @@ Mit dieser Methode können Sie alle anderen Beschriftungen der aktuellen Vorlage
 2. Wählen Sie **Bearbeiten** aus.
 3. Überprüfen Sie die Informationen im Dialogfeld **Datenquelleneigenschaften**. Diese Datenquelle steht für die Version 1 des Datenmodell **Fragebögen**, die sich in der EB-Konfiguration **Fragebogenmodell** befinden.
 
-![Eigenschaften der Modelldatenquelle im EB Operation Designer.](./media/er-quick-start1-model-data-source.png)
+![Eigenschaften der Modelldatenquelle im ER Operation Designer](./media/er-quick-start1-model-data-source.png)
 
 #### <a name="bind-format-elements-to-data-source-fields"></a><a name="BindFormatElements"></a>Binden von Formatelementen an Datenquellenfelder
 
@@ -673,27 +671,27 @@ Um anzugeben, wie eine Vorlage zur Laufzeit ausgefüllt wird, müssen Sie jedes 
 1. Wählen Sie auf der Seite **Formatdesigner** im Formatbaum das Formatelement **Bericht\\CompanyName**.
 2. Wählen Sie auf der Registerkarte **Zuordnung** das Datenquellenfeld **model.CompanyName** des Typs **String** aus.
 3. Wählen Sie **Binden** aus, um einen Firmennamen in eine Vorlage einzugeben.
-4. Wählen Sie im Formatbaum das Element **Bericht\\Fragebogen** aus.
+4. Wählen Sie im Formatbaum das Element **Bericht \\Fragebogen** aus.
 5. Wählen Sie auf der Registerkarte **Zuordnung** das Datenquellenfeld **model.Questionnaire** des Typs **Zuordnungsliste** aus.
 6. Wählen Sie **Bindung** aus.
 7. Wählen Sie **Details anzeigen**, um weitere Details für Formatelemente anzuzeigen.
 
     Das Bereichsformatelement **Fragebogen** ist als vertikal repliziert konfiguriert. Wenn es an einer Datenquelle des Typs **Datensatzliste** gebunden ist, wird der entsprechende Bereich **Fragebogen** der Excel-Vorlage für jeden Datensatz der gebundenen Datenquelle wiederholt.
  
-    ![Binden des Fragebogenbereichsformatelements an die entsprechenden Datenquellen der Datensatzliste im EB Operation Designer.](./media/er-quick-start1-bindings1.png)
+    ![Binden des Fragebogenbereichsformatelements an die entsprechenden Datenquellen der Datensatzliste im ER Operation Designer](./media/er-quick-start1-bindings1.png)
 
     Weil der Bereich **Fragebogen** der Excel-Vorlage zwischen den Zeilen 5 und 14 definiert ist, werden diese Zeilen für jeden gemeldeten Fragebogen wiederholt.
 
-    ![Zeilen in der Excel-Vorlage, die in einem generierten Bericht für jeden Datensatz der Datenquellen der Datensatzliste wiederholt werden.](./media/er-quick-start1-template-questionnaire-range.png)
+    ![Zeilen in der Excel-Vorlage, die in einem generierten Bericht für jeden Datensatz der Datenquellen der Datensatzliste wiederholt werden](./media/er-quick-start1-template-questionnaire-range.png)
 
 8. Konfigurieren Sie ähnliche Bindungen für die verbleibenden Formatelemente, wie in der folgenden Tabelle beschrieben.
 
     > [!NOTE]
-    > In dieser Tabelle wird bei den Informationen in der Spalte "Datenquellenpfad" davon ausgegangen, dass die EB-Funktion [relativer Pfad](relative-path-data-bindings-er-models-format.md) aktiviert ist.
+    > In dieser Tabelle wird bei den Informationen in der Spalte "Datenquellenpfad" davon ausgegangen, dass die EB-Funktion [relativer Pfad ](relative-path-data-bindings-er-models-format.md) aktiviert ist.
 
     | Formatelementpfad                                      | Datenquellenpfad |
     |----------------------------------------------------------|------------------|
-    | Excel\\ReportTitle                                       | **\@"GER\_LABEL:ReportTitle"** |
+    | Excel \\ReportTitle                                       | **\@"GER\_LABEL:ReportTitle"** |
     | Excel\\CompanyName                                       | **model.CompanyName** |
     | Excel\\Fragebogen                                     | **model.Questionnaire** |
     | Excel\\Fragebogen\\Aktiv                             | **\@.Active**, wobei **\@** **model.Questionnaire** ist |
@@ -720,7 +718,7 @@ Um anzugeben, wie eine Vorlage zur Laufzeit ausgefüllt wird, müssen Sie jedes 
 
 Die folgende Abbildung zeigt den Endzustand der konfigurierten Datenbindungen auf der Seite **Formatdesigner**.
 
-![Konfigurierte Datenbindungen im EB Operation Designer.](./media/er-quick-start1-bindings2.png)
+![Konfigurierte Datenbindungen im ER Operation Designer](./media/er-quick-start1-bindings2.png)
 
 > [!IMPORTANT]
 > Die gesamte Sammlung angegebener Datenquellen und Bindungen stellt eine Formatzuordnungskomponente des konfigurierten Formats dar. Diese Formatzuordnung wird aufgerufen, wenn Sie das konfigurierte Format für die Berichterstellung ausführen.
@@ -738,11 +736,11 @@ Sie können jetzt ein entworfenes Format für Testzwecke über die Seite **Konfi
 7. Wählen Sie zum Ausführen des Berichts **OK** aus.
 8. Prüfen Sie den generierten Bericht.
 
-Über [Standard](electronic-reporting-destinations.md#default-behavior) wird ein generierter Bericht als Excel-Datei geliefert, die Sie herunterladen können. Die folgenden Abbildungen zeigen zwei Seiten des generierten Berichts im Excel-Format.
+Über [Standard ](electronic-reporting-destinations.md#default-behavior) wird ein generierter Bericht als Excel-Datei geliefert, die Sie herunterladen können. Die folgenden Abbildungen zeigen zwei Seiten des generierten Berichts im Excel-Format.
 
-![Beispiel eines generierten Berichts im Excel-Format, Seite 1.](./media/er-quick-start1-report1a.png)
+![Beispiel eines generierten Berichts im Excel-Format, Seite 1](./media/er-quick-start1-report1a.png)
 
-![Beispiel eines generierten Berichts im Excel-Format, Seite 2.](./media/er-quick-start1-report1b.png)
+![Beispiel eines generierten Berichts im Excel-Format, Seite 2](./media/er-quick-start1-report1b.png)
 
 ## <a name="tune-a-designed-format"></a><a name="TuneFormat"></a>Anpassen eines entworfenes Format
 
@@ -763,7 +761,7 @@ Die Fragen sind in einem generierten Bericht nicht richtig geordnet. Sie können
 1. Wählen Sie auf der Seite **Formatdesigner** das Stammobjekt **Bericht** aus.
 2. Erweitern Sie auf der Registerkarte **Zuordnung** in der Formatstruktur **Bericht\\Fragebogen\\Frage**.
 
-    ![Fragenformatelement des Bereichstyps im EB Operation Designer.](./media/er-quick-start1-bindings3.png)
+    ![Fragenformatelement des Bereichstyps im ER Operation Designer](./media/er-quick-start1-bindings3.png)
 
 3. Wählen Sie auf der Registerkarte **Zuordnung** den Eintrag **model.Questionnaire** aus.
 4. Wählen Sie **Hinweis** \> **Funktionen\\Berechnetes Feld** aus und geben Sie im Feld **Name** den Eintrag **OrderedQuestions** ein.
@@ -776,7 +774,7 @@ Die Fragen sind in einem generierten Bericht nicht richtig geordnet. Sie können
 11. Wählen Sie **Binden** aus und bestätigen Sie dann, dass der aktuelle Pfad **model.Questionnaire.Questions** in allen Bindungen verschachtelter Elemente durch den neuen Pfad **model.Questionnaire.OrderedQuestions** ersetzt wird.
 12. Wählen Sie **Speichern** aus.
 
-![Binden des Fragenformatelements an die konfigurierte OrderedQuestions-Datenquelle im EB Operation Designer.](./media/er-quick-start1-bindings4.png)
+![Binden des Fragenformatelements an die konfigurierte OrderedQuestions-Datenquelle im ER Operation Designer](./media/er-quick-start1-bindings4.png)
 
 ### <a name="run-a-modified-format-from-er"></a><a name="RunFormatFromER2"></a>Verwenden eines geänderten Formats aus EB
 
@@ -790,7 +788,7 @@ Sie können jetzt ein geändertes Format zu Testzwecken über das EB-Framework a
 
 Die folgende Abbildung zeigt einen generierten Bericht im Excel-Format, in dem die Fragen korrekt sortiert sind.
 
-![Generierter Bericht im Excel-Format mit korrekt geordneten Fragen.](./media/er-quick-start1-report2.png)
+![Generierter Bericht im Excel-Format mit korrekt geordneten Fragen](./media/er-quick-start1-report2.png)
 
 ### <a name="complete-the-format-design"></a><a name="CompleteFormat"></a>Abschließen des Formatentwurfs
 
@@ -801,7 +799,7 @@ Die folgende Abbildung zeigt einen generierten Bericht im Excel-Format, in dem d
 
 Der Status von Version 1.1 dieser Konfiguration wird von **Entwurf** zu **Abgeschlossen** geändert. Version 1.1 kann nicht mehr geändert werden. Diese Version enthält das konfigurierte Format und kann zum Drucken Ihres benutzerdefinierten Berichts verwendet werden. Version 1.2 dieser Konfiguration wird erstellt und hat den Status **Entwurf**. Sie können diese Version bearbeiten, um das Format Ihres Berichts **Fragebogen** anzupassen.
 
-![Bearbeitbare EB-Konfiguration auf der Seite „Konfigurationen“.](./media/er-quick-start1-format-configuration.png)
+![Versionen der bearbeitbaren EB-Konfiguration auf der Seite "Konfigurationen"](./media/er-quick-start1-format-configuration.png)
 
 > [!NOTE]
 > Das konfigurierte Format ist Ihr Design des Berichts **Fragebogen** und es enthält keine Beziehungen zu den finanzspezifischen Artefakten.
@@ -1049,9 +1047,9 @@ Erstellen Sie Ihr Projekt, um Benutzern eine neue Menüoption zur Verfügung zu 
 
 ### <a name="run-a-format-from-the-application"></a><a name="RunFormatFromApp"></a>Verwenden eines Formats von der Anwendung aus
 
-1. Wählen Sie **Fragebogen** \> **Design** \> **Fragebogenbericht (unterstützt von EB)** aus.
+1. Wählen Sie **Fragebogen**\>**Design**\>**Fragebogenbericht (unterstützt von EB)** aus.
 
-    ![Auswählen des Menüpunkts „Fragebogenbericht (unterstützt von EB)“ im Modul „Fragebogen“, um den vorhandenen SSRS-Bericht auszuführen.](./media/er-quick-start1-application-menu-modified.png)
+    ![Auswählen des Menüpunkts "Fragebogenbericht (unterstützt von EB)" im Modul "Fragebogen", um den vorhandenen SSRS-Bericht auszuführen](./media/er-quick-start1-application-menu-modified.png)
 
 2. Wählen Sie im Dialogfeld im Feld **Formatzuordnung** den Eintrag **Fragebogenbericht** aus.
 3. Wählen Sie **OK**.
@@ -1059,7 +1057,7 @@ Erstellen Sie Ihr Projekt, um Benutzern eine neue Menüoption zur Verfügung zu 
 5. Wählen Sie **OK**, um die Filteroptionen zu bestätigen.
 6. Wählen Sie zum Ausführen des Berichts **OK** aus.
 
-    ![Festlegen der Auswahlkriterien im Dialogfeld „Elektronischer Bericht“.](./media/er-quick-start1-report-run-dialog-page.png)
+    ![Festlegen der Auswahlkriterien im Dialogfeld „Elektronischer Bericht“](./media/er-quick-start1-report-run-dialog-page.png)
 
 7. Prüfen Sie den generierten Bericht.
 
@@ -1084,13 +1082,13 @@ Sie können die konfigurierte EB-Lösung so ändern, dass sie die von Ihnen entw
 
 Die hinzugefügte Datenquelle enthält Informationen zur Datensatz-ID der laufenden EB-Formatzuordnung.
 
-![Datenquelle im EB-Modellzuordnungsdesigner hinzugefügt.](./media/er-quick-start1-mapping3.png)
+![Datenquelle im EB-Modellzuordnungsdesigner hinzugefügt](./media/er-quick-start1-mapping3.png)
 
 #### <a name="add-a-data-source-to-access-er-format-mapping-records"></a><a name="AddDataSource2"></a>Hinzufügen einer Datenquelle, um auf EB-Formatzuordnungsdatensätze zuzugreifen
 
 Bearbeiten Sie die ausgewählte Modellzuordnung weiter, indem Sie eine Datenquelle hinzufügen, um auf EB-Formatzuordnungsdatensätze zuzugreifen.
 
-1. Wählen Sie auf der Seite **Modellzuordnungsdesigner** im Bereich **Datenquellentypen** die Option **Dynamics 365 for Operations\\Tabellendatensätze** aus.
+1. Wählen Sie auf der Seite **Modellzuordnungsdesigner** im Bereich **Datenquellentypen** die Option **Dynamics 365 for Operations\\ Tabellendatensätze** aus.
 2. Wählen Sie **Stamm hinzufügen** im Bereich **Datenquellen** aus.
 3. Geben Sie im Dialogfeld im Feld **Name** den Eintrag **ER1** ein.
 4. Geben Sie im Feld **Tabelle** den Eintrag **ERFormatMappingTable** ein.
@@ -1119,7 +1117,7 @@ Bearbeiten Sie die ausgewählte Modellzuordnung weiter, sodass der Name des akti
 
 Da Sie das Feld **FormatName** verwendet haben, zeigt die konfigurierte Modellzuordnung jetzt den Namen eines EB-Formats, durch den diese Modellzuordnung bei der Ausführung aufgerufen wird.
 
-![Binden des Datenmodellfelds an die Methode der hinzugefügten Datenquelle im EB-Modellzuordnungsdesigner.](./media/er-quick-start1-mapping4.png)
+![Binden des Datenmodellfelds an die Methode der hinzugefügten Datenquelle im EB-Modellzuordnungsdesigner](./media/er-quick-start1-mapping4.png)
 
 #### <a name="complete-the-design-of-the-model-mapping"></a><a name="CompleteModelMapping2"></a>Vervollständigen des Designs der Modellzuordnung
 
@@ -1142,10 +1140,10 @@ Sie können das konfigurierte EB-Format so ändern, dass sein Name in der Fußze
 3. Wählen Sie **Designer** aus.
 4. Wählen Sie auf der Seite **Formatdesigner** das Stammobjekt **Bericht** aus.
 5. Wählen Sie **Hinzufügen**, um ein neues verschachteltes Formatelement für das ausgewählte Stammelement **Bericht** hinzuzufügen.
-6. Wählen Sie **Excel\\Fußzeile** aus.
+6. Wählen Sie **Excel \\Fußzeile** aus.
 7. Geben Sie im Feld **Name** die Bezeichnung **Fußzeile** ein.
 8. Wählen Sie **Bericht\Fußzeile** und dann **Hinzufügen** aus.
-9. Wählen Sie **Text\\String** aus.
+9. Wählen Sie **Text \\String** aus.
 
 #### <a name="bind-the-added-format-element"></a><a name="BindAddedFormatElement"></a>Binden des hinzugefügten Formatelements
 
@@ -1154,9 +1152,9 @@ Sie können das konfigurierte EB-Format so ändern, dass sein Name in der Fußze
 3. Klicken Sie auf **Speichern** und schließen Sie den Formeleditor.
 4. Wählen Sie **Speichern** aus.
 
-Das konfigurierte Format wurde jetzt so geändert, dass sein Name in die Fußzeile eines generierten Berichts im Format **Fußzeile\\String**-Element eingegeben wird.
+Das konfigurierte Format wurde jetzt so geändert, dass sein Name in die Fußzeile eines generierten Berichts im Format **Fußzeile \\String**-Element eingegeben wird.
 
-![Hinzufügen des Fußzeilenformatelements zum konfigurierten Format im EB Operation Designer.](./media/er-quick-start1-template-format-structure3.png)
+![Hinzufügen des Fußzeilenformatelements zum konfigurierten Format im ER Operation Designer](./media/er-quick-start1-template-format-structure3.png)
 
 #### <a name="complete-the-format-design"></a><a name="CompleteFormat2"></a>Abschließen des Formatentwurfs
 
@@ -1168,7 +1166,7 @@ Der Status der Version 1.2 dieser Konfiguration wird von **Entwurf** zu **Abgesc
 
 ### <a name="run-a-format-from-the-application"></a><a name="RunFormatFromApp2"></a>Verwenden eines Formats von der Anwendung aus
 
-1. Wählen Sie **Fragebogen** \> **Design** \> **Fragebogenbericht (unterstützt von EB)** aus.
+1. Wählen Sie **Fragebogen**\>**Design**\>**Fragebogenbericht (unterstützt von EB)** aus.
 2. Wählen Sie im Dialogfeld im Feld **Formatzuordnung** den Eintrag **Fragebogenbericht** aus.
 3. Wählen Sie **OK**.
 4. Konfigurieren Sie im Dialogfeld **EB-Parameter** im Inforegister **Einzuschließende Datensätze** die Filteroptionen, sodass nur der Fragebogen **SBCCrsExam** inhalten ist.
@@ -1178,7 +1176,7 @@ Der Status der Version 1.2 dieser Konfiguration wird von **Entwurf** zu **Abgesc
 
 Beachten Sie, dass die Fußzeile des generierten Berichts den Namen des EB-Formats enthält, mit dem er generiert wurde.
 
-![Generierter Bericht im Excel-Format.](./media/er-quick-start1-report4.png)
+![Generierter Bericht im Excel-Format](./media/er-quick-start1-report4.png)
 
 ### <a name="run-a-format-from-er"></a><a name="RunFormatFromER3"></a>Verwenden eines Formats von EB aus
 
@@ -1199,11 +1197,11 @@ Beachten Sie, dass die Fußzeile des generierten Berichts nicht den Namen des EB
 3. Richten Sie auf dem Inforegister **Dateizielort** die **Anzeige** [Ziel](er-destination-type-screen.md) für die Formatkomponente **Bericht** ein, die mit [hinzugefügt](#AddFormatRootElement) als Stammelement des konfigurierten EB-Formats **Fragebogenbericht** aufgenommen wurde.
 4. Geben Sie auf dem Inforegister **PDF-Konvertierungseinstellungen** das Ziel ein, um einem Bericht in das [PDF-Format](electronic-reporting-destinations.md#OutputConversionToPDF) zu konvertieren, das die Seitenausrichtung **Querformat** verwendet.
 
-![Konfigurieren des benutzerdefinierten Bildschirmziels für das EB-Format auf der Zielseite für die elektronische Berichterstellung.](./media/er-quick-start1-destination.png)
+![Konfigurieren des benutzerdefinierten Bildschirmziels für das EB-Format auf der Zielseite für die elektronische Berichterstellung](./media/er-quick-start1-destination.png)
 
 ### <a name="run-a-format-from-the-application-to-preview-it-as-a-pdf-document"></a><a name="RunFormatFromApp3"></a>Ausführen eines Format von der Anwendung aus, um es als PDF-Dokument anzuzeigen
 
-1. Wählen Sie **Fragebogen** \> **Design** \> **Fragebogenbericht (unterstützt von EB)** aus.
+1. Wählen Sie **Fragebogen**\>**Design**\>**Fragebogenbericht (unterstützt von EB)** aus.
 2. Wählen Sie im Dialogfeld im Feld **Formatzuordnung** den Eintrag **Fragebogenbericht** aus.
 3. Wählen Sie **OK**.
 4. Konfigurieren Sie im Dialogfeld **Elektronische Berichtparameter** im Inforegister **Einzuschließende Datensätze** die Filteroptionen, sodass nur der Fragebogen **SBCCrsExam** enthalten ist.
@@ -1211,12 +1209,12 @@ Beachten Sie, dass die Fußzeile des generierten Berichts nicht den Namen des EB
 
     Beachten Sie auf dem Inforegister **Zielorte**, dass das Feld **Ausgabe** auf **Anzeige** gesetzt ist. Wenn Sie das konfigurierte Ziel ändern möchten, wählen Sie **Ändern** aus.
 
-    ![Dialogfeld zur Laufzeit des EB-Berichts, in dem Sie das konfigurierte Ziel ändern können.](./media/er-quick-start1-run-settings.png)
+    ![Dialogfeld zur Laufzeit des EB-Berichts, in dem Sie das konfigurierte Ziel ändern können](./media/er-quick-start1-run-settings.png)
 
 6. Wählen Sie zum Ausführen des Berichts **OK** aus.
 7. Überprüfen Sie den generierten Bericht im PDF-Format.
 
-    ![Bildschirmvorschau des generierten Berichts im PDF-Format.](./media/er-quick-start1-preview-PDF.png)
+    ![Bildschirmvorschau des generierten Berichts im PDF-Format](./media/er-quick-start1-preview-PDF.png)
 
 ## <a name="additional-resources"></a><a name="References"></a>Zusätzliche Ressourcen
 

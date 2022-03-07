@@ -1,10 +1,12 @@
 ---
 title: Faktorabschreibung
 description: Dieser Artikel gibt einen Überblick über die Faktorabschreibungsmethode.
-author: moaamer
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: roschlom
 ms.custom: 13831
 ms.assetid: 2b6c4fe4-02ff-4191-bcad-32f1f34c15f2
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aab5ab518f2806e1b27f352e354dc9280fd27def
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 4920f7f90b859006ecdcd486eaa9f4449442e51a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674454"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976140"
 ---
 # <a name="factor-depreciation"></a>Faktorabschreibung
 
@@ -28,7 +30,7 @@ ms.locfileid: "7674454"
 
 Dieser Artikel gibt einen Überblick über die Faktorabschreibungsmethode.
 
-Faktoren sind die zum Abschreiben von Anlagen verwendeten Prozentsätze. Wenn Sie ein Anlagenabschreibungsprofil einrichten und **Faktor** im Feld **Methode** auf der Seite **Abschreibungsprofile** auswählen, können Sie progressive, degressive oder lineare Abschreibung einrichten.
+Faktoren sind die zum Abschreiben von Anlagen verwendeten Prozentsätze. Wenn Sie ein Anlagenabschreibungsprofil einrichten und **Faktor** im Feld **Methode** auf der Seite **Abschreibungsprofile** auswählen, können Sie progressive, degressive oder lineare Abschreibung einrichten:
 
 -   Bei der progressiven Abschreibung nimmt der Abschreibungsbetrag mit jedem Abschreibungszeitraum zu.
 -   Bei degressiver Abschreibung nimmt der Abschreibungsbetrag pro Zeitraum im zeitlichen Verlauf ab.
@@ -76,6 +78,3 @@ Der Wert im Feld **Faktor** ist gleich **50**. In diesem Fall ist die Abschreibu
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

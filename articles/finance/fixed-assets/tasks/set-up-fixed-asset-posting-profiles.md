@@ -1,7 +1,7 @@
 ---
 title: Einrichten von Anlagenbuchungsprofilen
-description: Dieses Verfahren zeigt, wie Sie Anlagenbuchungsprofile einrichten.
-author: moaamer
+description: Mit dieser Aufgabenanleitung werden "Anlagenbuchungsprofile" eingerichtet.
+author: saraschi2
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,21 +10,21 @@ ms.search.form: AssetPosting
 audience: Application User
 ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ee0006c9588a22d720687e7aceb49acc756b83e1
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: a2708997848352205cab2e425c9ae1fb531b8a566ba86a65ba2cbeb7e0b5c2b8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883767"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767622"
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a>Einrichten von Anlagenbuchungsprofilen
 
 [!include [banner](../../includes/banner.md)]
 
-Dieses Verfahren zeigt, wie Sie Anlagenbuchungsprofile einrichten. Die Beispiele aus dem Thema sind für ein grundlegendes Buchungsprofil, obwohl Buchungsprofile für Ihren speziellen Kontenplans und Ihre Finanzberichterstellungsanforderungen erstellt werden müssen.
+Mit dieser Aufgabenanleitung werden "Anlagenbuchungsprofile" eingerichtet.  Dabei werden die "Buchhalterrolle" und die Demodaten für die juristische Person USMF verwendet.  Die Beispiele, die in der Aufgabenanleitung angegeben sind, sind für ein grundlegendes Buchungsprofil, obwohl Buchungsprofile für Ihren speziellen Kontenplans und Ihre Finanzberichterstellungsanforderungen erstellt werden müssen.
 
 1. Wechseln Sie im Navigationsbereich zu **Module > Anlagen > Einstellungen > Anlagenbuchungsprofile**.
 2. Klicken Sie auf **Neu**.

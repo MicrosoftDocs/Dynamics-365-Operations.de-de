@@ -13,12 +13,12 @@ ms.search.region: Austria
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 249be0ecf36c9517b0d5739717b99dc5b70a204eded2849ea93018287d3babff
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 404d4a0f413a74cec4bd08506eb013322aa65f9e
+ms.sourcegitcommit: f2dfec2f4c427e37a574e6acdfaaf150bc92ebb6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761216"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6661077"
 ---
 # <a name="purchase-duties"></a>Einkaufsaufgaben
 

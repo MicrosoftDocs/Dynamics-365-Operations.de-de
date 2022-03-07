@@ -2,11 +2,9 @@
 title: Steuerrückerstattungsdokumente für Ungarn
 description: In diesem Thema wird erläutert, wie Steuerrückerstattungsdokumente für Ungarn eingerichtet und erstellt werden.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 03/27/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Austria
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 926be74d8273ebe3d9af644bd45af7d46cf605f2
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3677279aeb012d413b5bfc0c2e0bcab8710cfc53c9560cd575c05e528a6c2892
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962654"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775871"
 ---
 # <a name="tax-reimbursement-documents-for-hungary"></a>Steuerrückerstattungsdokumente für Ungarn
 
@@ -81,3 +79,6 @@ Wenn Ihre Organisation einem Debitor für Mehrwertsteuer Erstattung bietet, müs
 3. Wählen Sie **Steuerrückerstattung** &gt; **MwSt. ausgeglichen.** aus.
 
 Das Kontrollkästchen **MwSt. ausgeglichen.** ist für die Rechnung und die Rechnungspositionen aktiviert.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

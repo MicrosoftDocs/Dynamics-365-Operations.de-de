@@ -1,16 +1,13 @@
 ---
-title: Kontoverwaltungsseiten und Module
+title: Seiten und Module zur Kontenverwaltung
 description: In diesem Thema werden Kundenbetreuungsseiten und Module in Microsoft Dynamics 365 Commerce behandelt.
 author: v-chgri
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b0f963bcf65ae622522fe52fd59996c6ec0ecf17
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5b26f9f83ad368a7e0fbc0ffe1263a8fec86f99b8a66ee6c4a28d5e061efbc21
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412485"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716249"
 ---
-# <a name="account-management-pages-and-modules"></a>Kontoverwaltungsseiten und Module
+# <a name="account-management-pages-and-modules"></a>Seiten und Module zur Kontenverwaltung
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema werden Kundenbetreuungsseiten und Module in Microsoft Dynamics 365 Commerce behandelt.
-
-## <a name="overview"></a>Übersicht
 
 Kundenbetreuung bezieht sich auf eine Gruppe von Seiten, die benötigt wird, um Konto-zugeordnete Benutzerinformationen in Dynamics 365 Commerce zu verwalten. Zu den Kontoverwaltungsseiten gehören die Startseite, die Benutzerprofilseite, die Benutzeradressenseite, der Bestellverlauf, die Bestelldetailseite, Treuepunkteseite und die Wunschlistenseite.
 
@@ -54,9 +49,9 @@ Die Auftragsverlaufseite verwendet das Auftragsarchivierungsmodul, um alle neuen
 
 Die Bestelldetailseite stellt Detailinformationen zu jedem Auftrag bereit und wird über die Auftragsverlaufsseite abgerufen. Es verwendet das Bestelldetailmodul, das die Vertriebs-ID oder -Transaktions-ID erfordert, um die Auftragsdetails abzurufen.
 
-### <a name="user-profile-page"></a>Benutzerprofilseite
+### <a name="my-profile-page"></a>Eigene Profilseite
 
-Die Benutzerprofilseite zeigt die Benutzerkontodetails, beispielsweise den Benutzernamen und die E-Mail-Adresse an. Es verwendet die Benutzerprofildetails und Benutzerprofilbearbeitungsmodule. Obwohl die E-Mail-Adresse nicht entfernt werden kann, kann sie bearbeitet werden. Auf der Benutzerprofilseite werden auch Benutzereinstellungen angezeigt, mit denen ein Benutzer bestimmte Funktionen wie die Personalisierung von Empfehlungslisten aktivieren oder deaktivieren kann. 
+Auf der Seite „Mein Profil“ werden die Kontoprofildetails des Benutzers mithilfe des Kontoprofilmoduls angezeigt. Auf der Seite werden die mit dem Benutzerkonto verknüpfte E-Mail-Adresse sowie die für das Konto eingerichteten Einstellungen angezeigt. Wenn Sie benutzerdefinierte Debitorenattribute einrichten, werden diese Attribute auch in einem Abschnitt „Weitere Informationen“ angezeigt. Benutzer können ihren Namen, ihre Einstellungen oder weitere Informationen (falls verfügbar) bearbeiten.
 
 ### <a name="user-address-page"></a>Adressenseite des Benutzers
 
@@ -89,3 +84,6 @@ Um dem Treueprogramm beizutreten, kann eine Marketingseite mit Modulen für die 
 [Kopfzeilenmodul](author-header-module.md)
 
 [Fußzeilenmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

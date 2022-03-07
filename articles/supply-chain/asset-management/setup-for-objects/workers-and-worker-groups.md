@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b81de02f144712786704a46d2096dfb510d5ce68
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 00ada9e43ae08e1757de618bd2d63dc147beeca0
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017391"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5226832"
 ---
 # <a name="maintenance-workers-and-worker-groups"></a>Wartungsarbeiter und Arbeitskräftegruppen
 
@@ -63,3 +63,6 @@ Sie können auch Wartungsarbeitergruppen erstellen und diesen Wartungsarbeiter z
 6. Wenn eine Ressourcengruppe der ausgewählten Wartungsarbeitergruppe zugeordnet sein soll, wählen Sie **Aus Ressourcengruppe kopieren** aus. Wählen Sie im Feld **Gruppe** die Ressourcengruppe aus, aus der Kalendereinstellungen kopiert werden sollen. Wählen Sie anschließend im Feld **Arbeitskraftgruppe** die Arbeitskraftgruppe aus, zu der die Kalendereinstellungen der Ressourcengruppe kopiert werden sollen. Dieser Schritt ist nur relevant, wenn Wartungsarbeiter während der Arbeitsauftragsplanung den Kalender verwenden sollen, der einer Ressource zugeordnet ist.
 
     Das Feld auf dem Inforegister **Details** zeigt die Anzahl der Wartungsarbeiter, die in der ausgewählte Wartungsarbeitergruppe eingerichtet wurden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

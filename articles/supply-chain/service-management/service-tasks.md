@@ -1,29 +1,26 @@
 ---
 title: Übersicht der Serviceaufgaben
 description: Serviceaufgaben dienen zum Beschreiben der Aufgabe, die im Zuge eines Serviceauftrags auszuführen ist. Diese Informationen stehen sowohl dem Techniker als auch dem Debitor zur Verfügung.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceTask
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b433632523bfd64119fda62f8e4b108ff9b5dccd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4dd44b3cfe1d88f19b960b1a0c3d2ab90a4e6c04
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428385"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567870"
 ---
 # <a name="service-tasks-overview"></a>Übersicht der Serviceaufgaben
 
@@ -90,3 +87,6 @@ Bei der automatischen Erstellung von Serviceaufträgen können Serviceaufgaben a
 2. Auf der Registerkarte **Einstellungen** wählen Sie **Nach Serviceaufgabe** im Feld **Serviceaufträge kombinieren** aus.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

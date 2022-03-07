@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 98641f9989322feb77ab683df66c2c1f9ad50a0d
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 51107731090b77e75a0e5a8c91b052d494b452e4
+ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077064"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "7944914"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-germany-legacy"></a>Bereitstellungsrichtlinien für das Steuererfassungsdienst-Integrationsbeispiel für Deutschland (Legacy)
 
@@ -156,13 +156,13 @@ In der vorherigen Prozedur aktivieren Sie die Erweiterungen, die Komponenten des
 
 ## <a name="design-of-extensions"></a>Entwurf von Erweiterungen
 
-Die Beispiele für diese steuerliche Integration für Deutschland basiert auf der [steuerlichen Integrationsfunktionalität](fiscal-integration-for-retail-channel.md). Weitere Informationen über das Design der Lösung für die steuerliche Integration finden Sie unter [Überblick über die steuerliche Integration für Commerce-Kanäle](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
+Die Beispiele für diese steuerliche Integration für Deutschland basiert auf der [steuerlichen Integrationsfunktionalität](fiscal-integration-for-retail-channel.md). Weitere Informationen über das Design der Lösung für die steuerliche Integration finden Sie unter [Überblick über die steuerliche Integration für Commerce-Kanäle](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
 ### <a name="commerce-runtime-extension-design"></a>Commerce-Laufzeiterweiterungsentwurf
 
 Der Zweck der Erweiterung ist es, dass ein Steuerdokumentanbieter dienstspezifische Dokumente erzeugt und Antworten aus dem Steuererfassungsdienst handhabt.
 
-Die CRT-Erweiterung ist **Runtime.Extensions.DocumentProvider.EFRSample**. Weitere Informationen über das Design der Lösung für die steuerliche Integration finden Sie unter [Überblick über die steuerliche Integration für Commerce-Kanäle](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
+Die CRT-Erweiterung ist **Runtime.Extensions.DocumentProvider.EFRSample**. Weitere Informationen über das Design der Lösung für die steuerliche Integration finden Sie unter [Überblick über die steuerliche Integration für Commerce-Kanäle](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
 #### <a name="request-handler"></a>Anforderungshandler
 

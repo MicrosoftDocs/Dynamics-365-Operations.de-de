@@ -2,16 +2,13 @@
 title: Kundenaufträge in Point of Sale (POS)
 description: Dieses Thema enthält Informationen zu Kundenaufträgen in Point of Sale (POS). Debitorenaufträge sind auch Sonderauftrag. Das Thema enthält eine Diskussion zu zugehörigen Parametern und Buchungsflüssen.
 author: josaw1
-manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 260594
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 9e5770de82638e6cef6d4c1dffd1dc85549fb11f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a310c7067b399fb35ccc8a1b17d8bd6822a27a62
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412551"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821007"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Kundenaufträge in Point of Sale (POS)
 
@@ -52,9 +49,9 @@ Um Kundenbestellungen verwenden zu können, müssen Sie die Lieferarten konfigur
 
 ### <a name="set-up-fulfillment-groups"></a>Erfüllungsgruppen einrichten
 
-Einige Läden oder Lagerorte sind möglicherweise nicht in der Lage, Kundenaufträge zu erfüllen. Durch die Konfiguration von Erfüllungsgruppen kann eine Organisation angeben, welche Filialen und Lagerorte als Optionen für Benutzer angezeigt werden, die Kundenaufträge am POS erstellen. Erfüllungsgruppen werden auf der Seite **Erfüllungsgruppen** konfiguriert. Organisationen können beliebig viele Erfüllungsgruppen erstellen. Nachdem eine Erfüllungsgruppe definiert wurde, wird sie über eine Schaltfläche auf der Registerkarte **Einrichtung** mit Aktionsbereich der Seite **Shops** verknüpft.
+Einige Läden oder Lagerorte sind möglicherweise nicht in der Lage, Kundenaufträge zu erfüllen. Durch die Konfiguration von Erfüllungsgruppen kann eine Organisation angeben, welche Filialen und Lagerorte als Optionen für Benutzer angezeigt werden, die Kundenaufträge am POS erstellen. Erfüllungsgruppen werden auf der Seite **Erfüllungsgruppen** konfiguriert. Organisationen können beliebig viele Erfüllungsgruppen erstellen. Verknüpfen Sie die Erfüllungsgruppe – sobald sie definiert ist – mit einem Shop, indem Sie **Erfüllungsgruppenzuweisung** auf der Registerkarte im Aktivitätsbereich **Einrichten** der Seite **Shops** auswählen.
 
-In Commerce Version 10.0.12 und höher können Organisationen definieren, ob die in Erfüllungsgruppen definierten Lagerort- oder Lagerort/Store-Kombinationen für den Versand, die Abholung oder sowohl für den Versand als auch für die Abholung verwendet werden können. Daher verfügt das Geschäft über zusätzliche Flexibilität, um die Lagerort- und Geschäftsoptionen zu steuern, die Benutzern angezeigt werden, die eine Bestellung zur Abholung im Vergleich zu einer Bestellung zum Versand erstellen. Um diese Konfigurationsoptionen nutzen zu können, müssen Sie die Funktion **Möglichkeit, die in der Erfüllungsgruppe aktivierten Standorte als „Versand“ oder „Abholung“ anzugeben** aktivieren. Wenn ein Lagerort, das mit einer Erfüllungsgruppe verknüpft ist, kein Geschäft ist, kann es nur als Versandort konfiguriert werden. Es kann nicht verwendet werden, wenn Bestellungen für die Abholung am POS konfiguriert sind.
+In Commerce Version 10.0.12 und höher können Organisationen definieren, ob die in Erfüllungsgruppen definierten Lagerort- oder Lagerort und Shop-Kombinationen für den Versand, die Abholung oder sowohl für den Versand als auch für die Abholung verwendet werden können. Dies ermöglicht dem Unternehmen zusätzliche Flexibilität bei der Bestimmung, welche Lagerorte beim Erstellen eines Debitorenauftrags für zu versendende Artikel und welche Shops beim Erstellen eines Debitorenauftrags für die Abholung von Artikeln ausgewählt werden können. Aktivieren Sie zur Nutzung dieser Konfigurationsoptionen die Funktion **Möglichkeit, die in der Erfüllungsgruppe aktivierten Standorte als „Versand“ oder „Abholung“ anzugeben** aktivieren. Wenn ein Lagerort, der mit einer Erfüllungsgruppe verknüpft ist, kein Geschäft ist, kann es nur als Versandort konfiguriert werden. Es kann nicht verwendet werden, wenn Bestellungen für die Abholung am POS konfiguriert sind.
 
 ![Seite „Erfüllungsgruppen“](media/customer-order-fulfillment-group.png)
 
@@ -62,7 +59,8 @@ In Commerce Version 10.0.12 und höher können Organisationen definieren, ob die
 
 Wenn Sie mit Kundenbestellungen am POS arbeiten, müssen Sie einige Einstellungen des Geschäftskanals berücksichtigen. Diese Einstellungen finden Sie auf der Seite **Shops** in der Commerce-Zentralverwaltung.
 
-- **Lagerort** – Dieses Feld gibt den Lagerort an, in dem Bestellungen ausgeführt werden, die für den Versand aus dem Geschäft konfiguriert sind.
+- **Lagerort** – Dieses Feld gibt den Lagerort an, der verwendet wird, wenn der Bestände für Mitnahme- und Debitorenabholaufträge abgezogen werden, die an diesen Shop gebunden sind. Es hat sich bewährt, eindeutige Lagerorte für jeden Shopkanal zu verwenden, um Probleme mit widersprüchlichen Geschäftslogiken in allen Shops zu vermeiden.
+- **Versandlagerort** – Dieses Feld gibt den Lagerort an, der verwendet wird, wenn der Bestände für Debitorenaufträge abgezogen werden, die von dem gewählten Shop versandt werden. Wenn die Funktion **Option, Standorte in der Erfüllungsgruppe als „Versand“ oder „Abholung“ anzugeben** in Ihrer Umgebung aktiviert wurde, können POS-Benutzer einen bestimmten Lagerort für den Versand von einem POS auswählen, anstatt einen Shop für den Versand auszuwählen. Wenn diese Funktion aktiviert ist, wird der Versandlagerort daher nicht mehr verwendet, da der Benutzer den spezifischen Lagerort auswählt, ab dem der Auftrag versendet werden soll, wenn er erstellt wird.
 - **Zuordnung von Erfüllungsgruppen** – Wählen Sie diese Schaltfläche (auf der **Einrichten**-Registerkarte im Aktionsbereich) aus, um die Erfüllungsgruppen zu verknüpfen, auf die verwiesen wird, um Optionen für Abholorte oder Sendungsursprünge anzuzeigen, wenn Kundenaufträge am POS erstellt werden.
 - **Zielbasierte Steuer verwenden** – Diese Option gibt an, ob die Lieferadresse verwendet wird, um die Steuergruppe zu bestimmen, die auf Bestellpositionen angewendet wird, die an die Adresse des Kunden versendet werden.
 - **Debitorenbasierte Steuer verwenden** – Diese Option gibt an, ob die Steuergruppe, die für die Lieferadresse des Kunden definiert ist, zur Besteuerung von Kundenbestellungen verwendet wird, die am POS für den Versand zum Kunden nach Hause erstellt wurden.
@@ -99,7 +97,10 @@ Stellen Sie sicher, dass der POS [Bildschirmlayout](https://docs.microsoft.com/d
 
 ![Vorgänge auf dem POS-Transaktionsbildschirm](media/customer-order-screen-layout.png)
 
-## <a name="working-with-customer-orders-in-pos"></a>Arbeiten mit Kundenaufträgen am POS
+## <a name="work-with-customer-orders-in-pos"></a>Mit Kundenaufträgen in POS arbeiten
+
+> [!NOTE]
+> Die Funktionen zur Umsatzerkennung wird derzeit nicht für die Verwendung in Commerce-Kanälen (E-Commerce, POS, Callcenter) unterstützt. Mithilfe der Umsatzerkennung konfigurierte Artikel sollten nicht Aufträgen hinzugefügt werden, die in Commerce-Kanälen erstellt wurden. 
 
 ### <a name="create-a-customer-order-for-products-that-will-be-shipped-to-the-customer"></a>Einen Kundenauftrag für Produkte erstellen, die an den Kunden versendet werden
 
@@ -118,7 +119,7 @@ Stellen Sie sicher, dass der POS [Bildschirmlayout](https://docs.microsoft.com/d
 2. Produkte zum Warenkorb hinzufügen
 3. Wählen Sie **Ausgewählte abholen** oder **Alle abholen** aus, um die Konfiguration der Auftragsabholung zu starten.
 4. Wählen Sie den Shopstandort aus, in dem der Kunde die ausgewählten Artikel abholen möchte.
-5. Wählen Sie ein Abholdatum aus.
+5. Wählen Sie ein Datum aus, an dem der Artikel abgeholt wird.
 6. Verwenden Sie die Zahlungsfunktionen, um alle berechneten Beträge zu bezahlen, die fällig sind, oder verwenden Sie die **Einzahlung überschreiben**-Operation, um die fälligen Beträge zu ändern und dann die Zahlung anzuwenden.
 7. Wenn die vollständige Bestellsumme nicht bezahlt wurde, wählen Sie aus, ob der Kunde die Zahlung später (bei der Abholung) vornehmen wird oder ob eine Kreditkarte jetzt mit einem Token versehen und zum Zeitpunkt der Abholung verwendet und erfasst wird.
 
@@ -127,12 +128,10 @@ Stellen Sie sicher, dass der POS [Bildschirmlayout](https://docs.microsoft.com/d
 Einzelhandelsaufträge, die entweder im Online- oder im Shop-Kanal erstellt wurden, können bei Bedarf über den POS abgerufen und bearbeitet werden.
 
 > [!IMPORTANT]
-> Aufträge, die in einem Call Center-Kanal erstellt werden, können nicht über POS bearbeitet werden, wenn die Einstellung [Auftragsabschluss aktivieren](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) für den Call Center-Kanal aktiviert ist. Um eine korrekte Zahlungsabwicklung sicherzustellen, müssen Aufträge, die aus einem Callcenter-Kanal stammen und die Funktion „Auftragsabschluss aktivieren“ verwenden, über die Callcenter-Anwendung in der Commerce-Zentrale bearbeitet werden.
+> Nicht alle Einzelhandelsaufträge können über die POS-Anwendung bearbeitet werden. Aufträge, die in einem Call Center-Kanal erstellt werden, können nicht über POS bearbeitet werden, wenn die Einstellung [Auftragsabschluss aktivieren](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) für den Call Center-Kanal aktiviert ist. Um eine korrekte Zahlungsabwicklung sicherzustellen, müssen Aufträge, die aus einem Callcenter-Kanal stammen und die Funktion „Auftragsabschluss aktivieren“ verwenden, über die Callcenter-Anwendung in der Commerce-Zentrale bearbeitet werden.
 
-In Commerce-Version 10.0.13 und früheren Versionen können Benutzer unterstützte Kundenaufträge nur dann über den POS bearbeiten, wenn die Bestellungen vollständig geöffnet sind. Wenn bereits Positionen eines Auftrags zur Erfüllung verarbeitet wurden (Kommissionieren, Verpacken usw.), wird die Bestellung für die Bearbeitung am POS gesperrt.
+In Version 10.0.17 und höher können Benutzer berechtigte Aufträge über die POS-Anwendung bearbeiten, auch wenn die Bestellung teilweise erfüllt ist. Bestellungen, die vollständig in Rechnung gestellt werden, können jedoch immer noch nicht über den POS bearbeitet werden. Aktivieren Sie die Funktion **Teilweise erfüllte Aufträge in der Verkaufsstelle bearbeiten** im Arbeitsbereich **Funktionsverwaltung**, um diese Funktionalität zu aktivieren. Wenn diese Funktion nicht aktiviert ist oder wenn Sie Version 10.0.16 oder früher verwenden, können Benutzer Debitorenaufträge nur in POS bearbeiten, wenn der Auftrag noch vollständig offen ist. Außerdem können Sie, wenn die Funktion aktiviert ist, einschränken, in welchen Shops teilweise erfüllte Aufträge bearbeitet werden können. Die Option zum Deaktivieren dieser Funktion für bestimmte Shops kann über das **Funktionsprofil** im Inforegister **Allgemein** konfiguriert werden.
 
-> [!NOTE]
-> In Commerce-Version 10.0.14 können POS-Benutzer mit einer Funktion, die in der [öffentlichen Vorschau](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms) veröffentlicht wurde Kundenaufträge über POS bearbeiten, auch wenn ein Teil des Auftrags bereits ausgeführt wurde. Bestellungen, die vollständig in Rechnung gestellt werden, können jedoch immer noch nicht über den POS bearbeitet werden. Aktivieren Sie die Option, um diese Vorschaufunktion zu testen und zusätzliches Feedback zur **(Vorschauversion) Teilweise erfüllte Aufträge in der Verkaufsstelle bearbeiten**-Funktion im Arbeitsplatz **Funktionsverwaltung** zu geben. Kundenaufträge, die aus einem Callcenter-Kanal stammen und die Funktion „Auftragsabschluss aktivieren“ verwenden, können auch nach Aktivierung dieser Funktion nicht bearbeitet werden.
 
 1. Wählen Sie **Auftrag zurückrufen**.
 2. Verwenden Sie **Suche**, um Filter einzugeben, um den Auftrag zu finden, und wählen Sie dann **Anwenden** aus.
@@ -170,3 +169,6 @@ Wenn die Option **Kundenauftrag in asynchronem Modus** auf **Ja** festgelegt wur
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Hybriddebitorenaufträge](hybrid-customer-orders.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

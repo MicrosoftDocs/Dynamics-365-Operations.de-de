@@ -2,16 +2,13 @@
 title: Bildschirmlayouts für Demodaten in Modern POS (MPOS) und Cloud POS
 description: Dieses Thema enthält Informationen zu den Bildschirmlayouts, die in den Demodaten einbezogen sind, die für die Verkaufsstelle (POS)-Erfahrungen in Dynamics 365 Commerce festgelegt werden.
 author: josaw1
-manager: AnnBe
 ms.date: 10/05/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 935e1a550160515e2c325c39eab86be3b9fa5394
-ms.sourcegitcommit: d82f319cf7dd26c93a3fd342de4fd537272fa8d2
+ms.openlocfilehash: c141325580d698cccc7d186496a0902913961d47764b93fa73c64c3eddf6e791
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "4412721"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6761661"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>Bildschirmlayouts für Demodaten in Modern POS (MPOS) und Cloud POS
 
@@ -36,13 +33,13 @@ Dieses Thema enthält Informationen zu den Bildschirmlayouts, die in den Demodat
 
 Die Beispielbildschirmlayouts, die mit Commerce-Demodaten einbezogen werden, enthalten Inhalt, der für verschiedene Retail-Segmente, Shoparbeitskraftrollen und Geräte optimiert ist. Ein einzelnes Layout kann mehrere Layoutgrößen und Schaltflächenrastern oder Kombinationen von enthalten, um sicherzustellen, dass Shoparbeitskräfte zwischen Stationen und Geräten wechseln. In diesem Thema werden die Unterschiede zwischen diesen Layouts, den Arbeitsgängen, die sie bieten, und den Gesamterfahrungen hervorgehoben, die sie beinhalten.
 
-![Geräteübergreifende Demo-Datenlayouts](../commerce/media/demo-screen-layouts-fig-1-1.png)
+![Geräteübergreifende Demo-Datenlayouts.](../commerce/media/demo-screen-layouts-fig-1-1.png)
 
 ## <a name="anatomy-of-a-screen-layout-id"></a>Struktur einer Bildschirmlayout-ID
 
-Um Bildschirmlayouts in Retail zu suchen, gehen Sie zu **Retail und Commerce** \> **Kanaleinstellung** \>**POS-Einstellung** \>**POS**\>**Bildschirmdarstellung**.
+Um Bildschirmlayouts in Retail zu suchen, gehen Sie zu **Einzelhandel und Handel** \> **Kanaleinstellung** \> **POS-Einstellung** \> **POS** \> **Bildschirmdarstellung**.
 
-![Seite Bildschirmlayouts](../commerce/media/demo-screen-layouts-fig-2-1.png)
+![Seite Bildschirmlayouts.](../commerce/media/demo-screen-layouts-fig-2-1.png)
 
 Bildschirmlayout-IDs können maximal 10 Zeichen haben. Die Kennung ist eine Zeichenfolge, die aus drei Informationen besteht, in dieser Reihenfolge:
 
@@ -50,13 +47,13 @@ Bildschirmlayout-IDs können maximal 10 Zeichen haben. Die Kennung ist eine Zeic
 2. Layoutversion
 3. Person
 
-### <a name="company"></a>Unternehmen
+### <a name="company"></a>Firma
 
-| Buchstabe | Unternehmen         |
+| Buchstabe | Firma         |
 |--------|-----------------|
-| H      | Adventure Works |
-| F      | Fabrikam        |
-| k      | Contoso         |
+| K      | Adventure Works |
+| Fr      | Fabrikam        |
+| C      | Contoso         |
 
 ### <a name="layout-version"></a>Layoutversion
 
@@ -82,7 +79,7 @@ F4MGR
 
 In der folgenden Abbildung wird ein Beispiel des Begrüßungsbildschirms für einen Fabrikam-Shopleiter angezeigt.
 
-![Begrüßungsbildschirm für den Fabrikam-Shopleiter](../commerce/media/demo-screen-layouts-fig-2-2.png)
+![Begrüßungsbildschirm für den Fabrikam-Shopleiter.](../commerce/media/demo-screen-layouts-fig-2-2.png)
 
 ## <a name="layout-sizes"></a>Layoutgrößen
 
@@ -111,7 +108,7 @@ In der folgenden Tabelle werden die Layoutgrößen angezeigt, die aus für typis
 > [!TIP]
 > POS wählt automatisch Layoutgrößen, basierend auf der nächsten Größe, für die die Bildschirmauflösung des aktuellen App-Fensters verfügbar ist. Um die Bildschirmlayout-ID- und -Layoutlösung, die derzeit verwendet werden, in Modern POS (MPOS) oder Retail Cloud POS (CPOS) zu finden, öffnen Sie die Seite **Einstellungen** im Abschnitt **Sitzungsinformationen**. Sie können die aktuelle Fensterauflösung für die aktuelle Anwendung oder Browserrahmen finden. Nachdem Sie diese Informationen erhalten haben, können Sie die Quelle des Layoutinhalts finden, indem Sie zu **Kanaleinstellung** \> **POS-Einstellung** \> **POS** \> **Bildschirmlayouts** gehen.
 
-![Bildschirmlayouts und Layoutlösungen/Größen in Commerce und POS](../commerce/media/demo-screen-layouts-fig-3-1.png)
+![Bildschirmlayouts und Layoutlösungen/Größen in Commerce und POS.](../commerce/media/demo-screen-layouts-fig-3-1.png)
 
 ## <a name="companies-and-brands"></a>Unternehmen und Marken
 
@@ -132,19 +129,19 @@ Die folgenden Abbildungen zeigen Beispiele der Willkommensseite und Buchungsseit
 
 ### <a name="adventure-works"></a>Adventure Works
 
-![Demodatwillkommensseite für Adventure Works](../commerce/media/demo-screen-layouts-fig-4-1a.png)
+![Demodatenwillkommensseite für Adventure Works.](../commerce/media/demo-screen-layouts-fig-4-1a.png)
 
-![Demodatenbuchungsseite für Adventure Works](../commerce/media/demo-screen-layouts-fig-4-1b.png)
+![Demodatenbuchungsseite für Adventure Works.](../commerce/media/demo-screen-layouts-fig-4-1b.png)
 
 ### <a name="fabrikam"></a>Fabrikam
 
-![Demodaten-Willkommensseite für Fabrikam](../commerce/media/demo-screen-layouts-fig-4-2a.png)
+![Demodatenwillkommensseite für Fabrikam.](../commerce/media/demo-screen-layouts-fig-4-2a.png)
 
-![Demodatenbuchung-Willkommensseite für Fabrikam](../commerce/media/demo-screen-layouts-fig-4-2b.png)
+![Demodatenbuchungwillkommensseite für Fabrikam.](../commerce/media/demo-screen-layouts-fig-4-2b.png)
 
 ### <a name="contoso"></a>Contoso
 
-![Demodatlayouts für Contoso](../commerce/media/demo-screen-layouts-fig-4-3.png)
+![Demodatenlayouts für Contoso.](../commerce/media/demo-screen-layouts-fig-4-3.png)
 
 ## <a name="user-sign-in-matrix"></a>Benutzeranmeldung in Matrix
 
@@ -171,8 +168,11 @@ Benutzer wurden für die verschiedenen Bildschirmlayouts bereitgestellt. Mit der
 
 <!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail and Commerce \> Channel setup \> POS setup \> POS \> Images**. -->
 
-<!-- ![Images in Dynamics 365 Commerce](../commerce/media/demo-screen-layouts-fig-5-1.png) -->
+<!-- ![Images in Dynamics 365 Commerce.](../commerce/media/demo-screen-layouts-fig-5-1.png) -->
 
 <!-- Use the [POS Icon and Image Mapping](../commerce/media/POS_Icon_and_Image_Mapping.xlsx) reference spreadsheet to locate operation icons, reference photos, swap logos, or provide new images of your own that can be referenced in custom designs. -->
 
 <!-- END HIDDEN CONTENT -->
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,28 +2,25 @@
 title: Empfangen von Teillieferungen zurückgelieferter Artikel
 description: Teillieferungen werden in Bezug auf Rücklieferungspositionen und nicht Rücklieferungen definiert.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf35169d8afd6e88b8ebe921514ed6d55607a4dd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 51213f8f46638b0cce10251e761d7f276c39d924
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428450"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836133"
 ---
 # <a name="receive-partial-deliveries-of-returned-items"></a>Empfangen von Teillieferungen zurückgelieferter Artikel    
 
@@ -51,3 +48,6 @@ Wenn eine Rücklieferung weniger als die volle Menge einer Rücklieferungspositi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

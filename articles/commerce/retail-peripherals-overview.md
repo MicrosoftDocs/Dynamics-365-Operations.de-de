@@ -2,28 +2,25 @@
 title: Peripheriegeräte
 description: In diesem Thema werden einige Konzepte in Verbindung mit Commerce-Peripheriegeräten beschrieben.
 author: rubencdelgado
-manager: AnnBe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
 audience: Application User, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 268444
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: dd2ce6b223c99d890691d5fdb9f93a5ceaf33a0d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d2cbab3177756fbf5df4f07350a6449f0b22e028
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412685"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791946"
 ---
 # <a name="peripherals"></a>Peripheriegeräte
 
@@ -35,11 +32,11 @@ In diesem Thema werden die Konzepte erläutert, die sich auf Speicherperipherieg
 
 ### <a name="pos-registers"></a>POS-Register
 
-Navigieren: Klicken Sie auf **Retail und Commerce** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Register**. Das POS-Register ist eine Entität, die verwendet wird, um die Merkmale einer bestimmten Instanz des POS zu definieren. Diese umfassen das Hardwareprofil bzw. die Einrichtung für Peripheriegeräte, die für das Register verwendet werden, die Filiale, der das Register zugeordnet ist, und die Sichterfahrung für den Benutzer, der sich an dem Register anmeldet.
+Navigieren: Klicken Sie auf **Einzelhandel und Handel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Register**. Das POS-Register ist eine Entität, die verwendet wird, um die Merkmale einer bestimmten Instanz des POS zu definieren. Diese umfassen das Hardwareprofil bzw. die Einrichtung für Peripheriegeräte, die für das Register verwendet werden, die Filiale, der das Register zugeordnet ist, und die Sichterfahrung für den Benutzer, der sich an dem Register anmeldet.
 
 ### <a name="devices"></a>Geräte
 
-Navigieren: Klicken Sie auf **Retail und Commerce** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Geräte**. Ein Gerät ist eine Entität, die eine physische Instanz eines Gerätes darstellt, das dem POS-Register zugeordnet ist. Wenn ein Gerät eingerichtet wird, wird es einem POS-Register zugeordnet. Die Geräteentität verfolgt Informationen darüber, ob ein POS-Register aktiviert ist, welcher Client verwendet wird und das Anwendungspaket, das für ein bestimmtes Gerät bereitgestellt wurde. 
+Navigieren: Klicken Sie auf **Einzelhandel und Handel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Geräte**. Ein Gerät ist eine Entität, die eine physische Instanz eines Gerätes darstellt, das dem POS-Register zugeordnet ist. Wenn ein Gerät eingerichtet wird, wird es einem POS-Register zugeordnet. Die Geräteentität verfolgt Informationen darüber, ob ein POS-Register aktiviert ist, welcher Client verwendet wird und das Anwendungspaket, das für ein bestimmtes Gerät bereitgestellt wurde. 
 
 Geräte können zu folgenden Anwendungsarten zugeordnet werden: Retail Modern POS, Retail Cloud POS, Retail Modern POS, Windows Phone, Retail Modern POS – Android und Retail Modern POS – IOS
 
@@ -69,7 +66,7 @@ Navigation: Klicken Sie auf **Retail and Commerce** &gt; **Kanäle** &gt; **Fili
 
 ### <a name="hardware-profile"></a>Hardwareprofil
 
-Navigation: Klicken Sie auf **Retail und Commerce** &gt; **Kanaleinrichtung** &gt; **POS-Einrichtung** &gt; **POS-Profile** &gt; **Hardwareprofile**. Das Hardwareprofil identifiziert die Geräte, die für eine POS-Register oder einer Hardwarestation konfiguriert sind. Das Hardwareprofile kann direkt zu einer POS-Register oder einer Hardwarestation zugewiesen werden.
+Navigation: Klicken Sie auf **Einzelhandel und Handel** &gt; **Kanaleinrichtung** &gt; **POS-Einrichtung** &gt; **POS-Profile** &gt; **Hardwareprofile**. Das Hardwareprofil identifiziert die Geräte, die für eine POS-Register oder einer Hardwarestation konfiguriert sind. Das Hardwareprofile kann direkt zu einer POS-Register oder einer Hardwarestation zugewiesen werden.
 
 ## <a name="devices-classes"></a>Geräteklassen
 POS-Peripheriegeräte werden in der Regel in Klassen aufgeteilt. Dieser Abschnitt beschreibt und gibt einen Überblick der Geräte, die Modern POS unterstützt.
@@ -536,7 +533,7 @@ Diese Konfiguration kann für alle Modern POS-Clients verwendet werden, die die 
     -   **Hostname** – Der Name des Hostcomputers, wo die Hardwarestation ausgeführt wird.
     -   **Beschreibung** – Text, der die Erkennung der Hardwarestation unterstützt (z. B. **Rücklieferungen** oder **Vorne im Laden**).
     -   **Port** – Der Port, der verwendet wird, damit die Hardwarestation mit dem Modern POS-Client kommunizieren kann.
-    -   **Hardwareprofil** – Für freigegebene Hardwarestationen, jede Hardwarestation soll ein Hardwareprofil eingerichtet haben. Hardwareprofile können unter Hardwarestationen freigegeben werden, jedoch müssen sie jeder Hardwarestation zugeordnet werden. Außerdem wird empfohlen, dass sie freigegebenen Schichten verwendet, wenn mehrere Geräte gleiche freigegebene Hardwarestation verwenden. Um eine freigegebene Schicht einzurichten, klicken Sie auf **Retail und Commerce** &gt; **Kanaleinrichtung** &gt; **POS-Einrichtung** &gt; **POS-Profile** &gt; **Hardwareprofile**. Für jedes freigegebene Hardwareprofil wählen Sie die Kassenlade aus und legen Sie die **Schichtkassenlade** Option auf **Ja**.
+    -   **Hardwareprofil** – Für freigegebene Hardwarestationen, jede Hardwarestation soll ein Hardwareprofil eingerichtet haben. Hardwareprofile können unter Hardwarestationen freigegeben werden, jedoch müssen sie jeder Hardwarestation zugeordnet werden. Außerdem wird empfohlen, dass sie freigegebenen Schichten verwendet, wenn mehrere Geräte gleiche freigegebene Hardwarestation verwenden. Um eine freigegebene Schicht einzurichten, klicken Sie auf **Einzelhandel und Handel** &gt; **Kanaleinrichtung** &gt; **POS-Einrichtung** &gt; **POS-Profile** &gt; **Hardwareprofile**. Für jedes freigegebene Hardwareprofil wählen Sie die Kassenlade aus und legen Sie die **Schichtkassenlade** Option auf **Ja**.
     -   **EFT POS-Nummer** – Die EFT-Terminal-ID, das verwendet werden soll, wenn EFT-Autorisierungen übermittelt werden. Diese Kennung wird von der Kreditkartenverarbeitungsstelle bereitgestellt.
     -   **Paketname** – Das Hardwarestationspaket, das verwendet werden soll, wenn die Hardwarestation bereitgestellt wird.
 
@@ -763,7 +760,6 @@ Die folgenden Peripheriegeräte wurden getestet, indem eine freigegeben IIS-Hard
 | Epson        | TM-T88V  | OPOS      |                           |
 | Epson        | TM-T88   | Benutzerdefiniert    | Per Netzwerk verbunden     |
 | Star         | TSP650II | Benutzerdefiniert    | Per Netzwerk verbunden     |
-| Star         | TSP100   | OPOS      | Erfordert TSP650II-Treiber |
 | HP           | F7M67AA  | OPOS      | USB               |
 
 #### <a name="payment-terminal"></a>Zahlungsterminal
@@ -837,3 +833,6 @@ Die folgenden Peripheriegeräte wurden getestet, indem eine freigegeben IIS-Hard
 [Peripheriesimulator für den Handel](dev-itpro/retail-peripheral-simulator.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

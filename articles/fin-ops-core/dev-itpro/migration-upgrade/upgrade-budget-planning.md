@@ -1,27 +1,25 @@
 ---
 title: Budgetplanung aktualisieren
-description: Zwischen Microsoft Dynamics AX 2012 und Dynamics 365 Finance gibt es erhebliche Unterschiede in der Budgetplanung. Einige Funktionen wurden nicht aktualisiert und erfordern daher eine Rekonfiguration. In diesem Thema wird erläutert, was umkonfiguriert werden muss und es werden auch neue Funktionen beschrieben, die berücksichtigt werden sollten, wenn die Aktualisierung abgeschlossen ist.
-author: ryansandness
-manager: AnnBe
+description: In diesem Thema wird erläutert, was umkonfiguriert werden muss und es werden auch neue Funktionen beschrieben, die berücksichtigt werden sollten, wenn die Aktualisierung abgeschlossen ist.
+author: panolte
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.custom: 272923
 ms.assetid: 17cdfe74-bdfd-466a-9bdd-c12583f250c7
 ms.search.region: Global
-ms.author: ryansand
+ms.author: panolte
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 1c62771170212039112c777e55d45a0d88d2f49d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c52de15faddd797d31d0875882863b8fe37a7d173b38be058e51a06b2e7fe078
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680997"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769190"
 ---
 # <a name="upgrade-budget-planning"></a>Budgetplanung aktualisieren
 
@@ -162,3 +160,6 @@ Einige Datenentitäten wurden hinzugefügt, um eine rasche Implementierung der B
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

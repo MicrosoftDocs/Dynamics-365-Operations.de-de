@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustEntryCertificateJour_W
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 591e267da5f486fe3d06e6519cb33d98f4522ae7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4a38dc241c48b719c800a4ee2fad6a73adfcfe97
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407727"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5227950"
 ---
 # <a name="eur-00012-receive-an-eu-entry-certificate"></a>EUR-00012 Erhalt einer EU-Gelangensbestätigung
 
@@ -42,3 +41,6 @@ Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, is
     * Weitere Informationen zur Identifikation der Charge.  
     * So fügen Sie ein gescanntes Bild der EU-Eintragsbescheinigung der Erfassung pflegen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

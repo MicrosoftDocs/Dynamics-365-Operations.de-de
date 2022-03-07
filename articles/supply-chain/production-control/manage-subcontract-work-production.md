@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup, ProdBOMVendorListPagePreviewPane, ProdBOMVendor
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 268174
 ms.assetid: fe47c498-4f48-42a2-a0cf-5436c19ab3ea
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9119655384cd05e5aa3622712e699b346a43f492
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 66aed16cc3e2c3b33dfd40982d2211816c4e5047
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428927"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5245996"
 ---
 # <a name="manage-subcontracting-work-in-production"></a>Verwalten Sie Lohnarbeit in der Produktion
 
@@ -103,3 +102,6 @@ In der Regel werden der Ausgangslagerort und der Speicherort einer von Ressource
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

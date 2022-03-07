@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2248b8a35b076eb778a50bbbc67d083380ceee62
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 4ee1ae4d8a106e467640a8cbcf5986e770395431
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324007"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343859"
 ---
 # <a name="email-er-destination-type"></a>E-Mail-ER-Zieltyp
 
@@ -75,7 +75,7 @@ Sie können den E-Mail-Absender und die E-Mail-Empfänger angeben. Standardmäß
 >
 > Wenn ein E-Mail-Ziel zur Änderung bei der [Runtime](electronic-reporting-destinations.md#security-considerations) angeboten wird, ist das Feld **Von** nur für Benutzer sichtbar, die über das `ERFormatDestinationSenderEmailMaintain`-Sicherheitsprivileg **Die Sender-E-Mail-Adresse für EB-Formatziel beibehalten** verfügen.
 >
-> Wenn das Feld **Von** so konfiguriert ist, dass eine andere E-Mail-Adresse als die des aktuellen Benutzers verwendet wird, muss entweder die **Senden als**- oder **Senden im Auftrag von**-Berechtigung im Voraus richtig [eingestellt](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group) sein. Andernfalls wird zur Runtime die folgende Ausnahme geworfen: „E-Mail konnte nicht als \<from email account\> von dem \<current user account\>-Konto gesendet werden. Bitte überprüfen Sie die ‚Senden als‘-Berechtigungen auf dem \<from email account\>.“
+> Wenn das Feld **Von** so konfiguriert ist, dass eine andere E-Mail-Adresse als die des aktuellen Benutzers verwendet wird, muss entweder die **Senden als**- oder **Senden im Auftrag von**-Berechtigung im Voraus richtig [eingestellt](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group?view=o365-worldwide) sein. Andernfalls wird zur Runtime die folgende Ausnahme geworfen: „E-Mail konnte nicht als \<from email account\> von dem \<current user account\>-Konto gesendet werden. Bitte überprüfen Sie die ‚Senden als‘-Berechtigungen auf dem \<from email account\>.“
 
 Sie können das Feld **Von** konfigurieren, um mehr als eine E-Mail-Adresse zurückzugeben. In diesem Fall wird die erste Adresse in der Liste als E-Mail-Senderadresse verwendet.
 
@@ -140,7 +140,7 @@ Um den Typ der E-Mail-Adressen anzugeben, die zur Laufzeit verwendet werden müs
 
 ### <a name="configuration-email"></a>Konfigurations-E-Mail
 
-Wählen Sie **Konfigurations-E-Mail** als E-Mail-Adresstyp aus, wenn die von Ihnen verwendete Konfiguration einen Knoten in den Datenquellen enthält, der entweder eine einzelne E-Mail-Adresse oder mehrere E-Mail-Adressen zurückgibt, die durch Semikolons (;) getrennt sind. Sie können Datenquellen und [Funktionen](er-formula-language.md#Functions) im Formeldesigner verwenden, um eine korrekt formatierte E-Mail-Adresse oder korrekt formatierte E-Mail-Adressen zu erhalten, die durch Semikolons getrennt sind. Wenn Sie beispielsweise die Konfiguration **Kreditübertragung (ISO 20022)** verwenden, ist es der Knoten `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`, der die primäre E-Mail-Adresse eines Lieferanten aus den Kontaktdaten des Lieferanten darstellt, an die das Anschreiben gesendet werden soll.
+Wählen Sie **Konfigurations-E-Mail** als E-Mail-Adresstyp aus, wenn die von Ihnen verwendete Konfiguration einen Knoten in den Datenquellen enthält, der entweder eine einzelne E-Mail-Adresse oder mehrere E-Mail-Adressen zurückgibt, die durch Semikolons (;) getrennt sind. Sie können [Datenquellen](general-electronic-reporting.md#FormatComponentOutbound) und [Funktionen](er-formula-language.md#Functions) im Formeldesigner verwenden, um eine korrekt formatierte E-Mail-Adresse oder korrekt formatierte E-Mail-Adressen zu erhalten, die durch Semikolons getrennt sind. Wenn Sie beispielsweise die Konfiguration **Kreditübertragung (ISO 20022)** verwenden, ist es der Knoten `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`, der die primäre E-Mail-Adresse eines Lieferanten aus den Kontaktdaten des Lieferanten darstellt, an die das Anschreiben gesendet werden soll.
 
 [![Eine Quelle für E-Mail-Adressen konfigurieren.](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
 

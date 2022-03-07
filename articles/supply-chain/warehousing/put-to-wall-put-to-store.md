@@ -2,26 +2,23 @@
 title: Put-to-Wall - Put-to-Store
 description: Dieses Thema enthält Informationen zu den Funktionen „Put-to-Wall - Put-to-Store“. Mit dieser Funktion können Sie Szenarien behandeln, in denen Sie ein Produkt basierend auf konfigurierbaren Kriterien in einem Prepack-Staging-Bereich konsolidieren müssen. Dies verkürzt die Kommissionierzeit, da es die Kommissionierung auf ein einzelnes Zielkennzeichen ermöglicht und mehr Put-Positionen als die Cluster-Kommissionierung verwenden kann.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationType, WHSLocationProfile, WHSLocation, WHSPackProfile, WHSWaveStepCode, WHSOutboundSortTemplate, WHSPostMethod, WHSWaveTemplateTable, WHSLocDirTable, WHSWorkClass, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 12501b90e4b31ec11e3c59784ace9fd9a8b7d934
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.9
+ms.openlocfilehash: 372bb556ec1207096a8ff3c7df8bac9b7011b5c4
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429038"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574136"
 ---
 # <a name="put-to-wall---put-to-store"></a>Put-to-Wall - Put-to-Store
 
@@ -525,7 +522,7 @@ Nachdem der gesamte Bestand an den Sortierort gebracht wurde, muss es an der ric
 
 Wenn Sortierpositionen manuell geschlossen werden sollen, muss die Option **Sortierposition automatisch schließen** für die Vorlage für die Ausgangssortierung auf *Nein* gesetzt sein und das Schließen muss erfolgen, bevor der Bestand in den Bereich der Frachttür gebracht werden kann. Positionen können auf verschiedene Arten geschlossen werden:
 
-- Über die Warehouse-App:
+- Über die Warehouse Management Mobile App:
 
     - Der Benutzer kann einen der Artikel scannen, die sich bereits an der Position befinden, und dann **Schließen** auswählen, um die Position zu schließen.
     - Wenn der Benutzer einen Container sortiert, der bereits sortiert wurde, wird eine Fehlermeldung angezeigt. Der Benutzer kann die Position jedoch weiterhin schließen.
@@ -541,3 +538,6 @@ Wenn Sortierpositionen manuell geschlossen werden sollen, muss die Option **Sort
 
 > [!IMPORTANT]
 > Nachdem die Umlagerungsarbeit vom Sortierort aus erstellt wurde, dürfen Sie die Arbeit nicht abbrechen. Andernfalls werden die Position und die darin enthaltenen Container aus dem System gelöscht und stehen nicht zur weiteren Verarbeitung zur Verfügung. Der Bestand wird ebenfalls entfernt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

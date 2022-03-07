@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1f919d953c3aa0c8d16366167a12e52d35f32cdf
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a809b9867b4ca96fb53f1849f57ef470253d9d17
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684618"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5559265"
 ---
 # <a name="import-configurations-to-generate-documents-that-have-application-data"></a>Importieren von Konfigurationen, um Dokumente zu generieren, die Anwendungsdaten haben
 
@@ -75,3 +74,6 @@ Die Schritte in dieser Prozedur erläutern, wie elektronische Berichtskonfigurat
     * Wiederholen Sie die Struktur des Formats, das verwendet wird, um den Intrastat-Bericht zu generieren. Beachten Sie, dass er entwickelt wurde, um damti eine XML-Datei zu generieren, indem Daten vom Datenmodell aufgefüllt, die auf der Basis des Stammartikel „für ausgehendes Dokument“ basiert.. Stellen Sie sicher, dass der Name für die enerierte Datei im Benutzerdialogfeldformular definiert wurde („FN“ Datenquelle wird dafür verwendet).   
 30. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

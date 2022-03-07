@@ -2,30 +2,30 @@
 title: Erstellen von Plänen für variable Vergütung
 description: Die variable Vergütung ist ein irregulärer Lohn eines Mitarbeiters, wie Prämien oder Bestandsprämien. In diesem Artikel werden die Komponenten beschrieben, die eingerichtet werden müssen, bevor Sie eine variable Vergütung erstellen und Mitarbeiter in einem variablen Vergütungsplan registrieren können.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HCMCompEligibility, HcmJobFunction, HcmWorker, HRMCompPerfPlan, HcmCompensationWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 16011
 ms.assetid: fc3a394e-9ac6-4f8c-9162-dc16ec22720f
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 85e64c4186c7782391a3db6dc4deb3fab0ea9f4f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 874d879c04e6b16889ca6900962394036278ba10
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418617"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5800878"
 ---
 # <a name="create-variable-compensation-plans"></a>Erstellen von Plänen für variable Vergütung
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Die variable Vergütung ist ein irregulärer Lohn eines Mitarbeiters, wie Prämien oder Bestandsprämien. In diesem Artikel werden die Komponenten beschrieben, die eingerichtet werden müssen, bevor Sie eine variable Vergütung erstellen und Mitarbeiter in einem variablen Vergütungsplan registrieren können.
 
@@ -99,3 +99,6 @@ Sie können die Registerkarte **Überschreibung** verwenden, um bestimmte Werte 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

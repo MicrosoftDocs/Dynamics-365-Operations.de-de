@@ -2,27 +2,24 @@
 title: Abholinformationsmodul
 description: Dieses Thema behandelt das Abholinformationsmodul und beschreibt, wie es zu Auftragsabschlussseiten in Microsoft Dynamics 365 Commerce hinzugefügt wird.
 author: anupamar-ms
-manager: annbe
 ms.date: 11/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-09021
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 61b97d72b6a397737c10476cd6c02764e60f10b1
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.openlocfilehash: 063701d5cd5714febeb32907346d9f6e5c2a2ca1
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665347"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5804404"
 ---
 # <a name="pickup-information-module"></a>Abholinformationsmodul
 
@@ -70,3 +67,6 @@ Die folgende Abbildung zeigt ein Beispiel für eine E-Commerce-Auftragsabschluss
 [Auftragsbestätigungsmodul](order-confirmation-module.md)
 
 [Auftragsdetailmodul](account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

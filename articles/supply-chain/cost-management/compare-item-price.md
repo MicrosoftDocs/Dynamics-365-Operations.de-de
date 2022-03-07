@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, InventItemPriceCompareStorage, InventItemPriceCompareStorageDetailsChart, InventItemPriceCompareStorageDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 73e43a685f390fd718028de6add0370dfcd6cf3b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f40faa7919e6fb5ce0de2594b3d2f264fe42fa1a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428903"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5222920"
 ---
 # <a name="compare-item-prices-storage-report"></a>Bericht Lagerungsbericht mit Artikelpreisvergleich
 
@@ -121,3 +120,6 @@ Das folgende Beispiel zeigt, wie Sie einen Bericht **Lagerungsbericht mit Artike
 1. Die Seite **Ausführungszusammenfassung** wird geöffnet, auf der Sie den Status Ihres Exportauftrags und eine Liste der exportierten Entitäten sehen können. Wählen Sie den Bereich **Preisvergleich für Artikel** Entität, die im Bereich **Verarbeitungsstatus der Entität** aufgelistet ist, und wählen Sie dann **Datei herunterladen**, um die von dieser Entität exportierten Daten herunterzuladen.
 
 Weitere Informationen über die Verwendung der Datenverwaltung für den Datenexport finden Sie unter [Übersicht über Datenimport- und -exportjobs](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

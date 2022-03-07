@@ -2,11 +2,9 @@
 title: Unternehmenskonzept in Dataverse
 description: In diesem Thema wird die Integration von Unternehmensdaten zwischen Finance and Operations und Dataverse beschrieben.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 08/04/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: bbe634b87b3cb30ed993f9b3afeb4321d70f07e6
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: 6a858135d377b30d6e8885ae18b2dc50da11813b
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744878"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941028"
 ---
 # <a name="company-concept-in-dataverse"></a>Unternehmenskonzept in Dataverse
 
@@ -91,7 +89,7 @@ Es gibt verschiedene Möglichkeiten, den Unternehmensnamen in Kundenbindungs-App
 
     :::image type="content" source="media/autopopulate-company-name-3.png" alt-text="Durch Auswahl einer Zeile wird das Standardunternehmen geändert.":::
 
-+ Wenn Sie ein Systemkonfigurator oder -Administrator sind und Unternehmensdaten automatisch in ein benutzerdefiniertes Formular einfügen möchten, können Sie [Formularereignisse](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids) verwenden. Fügen Sie einen JavaScript-Verweis auf **msdyn_/DefaultCompany.js** hinzu, und verwenden Sie die folgenden Ereignisse. Sie können jedes sofort einsatzbereite Formular verwenden, z. B. das **Konto**-Formular.
++ Wenn Sie ein Systemkonfigurator oder -Administrator sind und Unternehmensdaten automatisch in ein benutzerdefiniertes Formular einfügen möchten, können Sie [Formularereignisse](/powerapps/developer/model-driven-apps/clientapi/events-forms-grids) verwenden. Fügen Sie einen JavaScript-Verweis auf **msdyn_/DefaultCompany.js** hinzu, und verwenden Sie die folgenden Ereignisse. Sie können jedes sofort einsatzbereite Formular verwenden, z. B. das **Konto**-Formular.
 
     + **OnLoad**-Ereignis für das Formular: Legen Sie die Spalte **defaultCompany** fest.
     + **OnChange**-Ereignis für die Spalte **Unternehmen**: Legen Sie die Spalte **updateDefaultCompany** fest.
@@ -102,3 +100,6 @@ Um die Filterung in Ihren benutzerdefinierten Formularen oder in benutzerdefinie
 
 :::image type="content" source="media/apply-company-context.png" alt-text="Unternehmenskontext anwenden":::
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

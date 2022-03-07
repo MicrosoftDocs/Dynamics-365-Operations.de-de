@@ -1,30 +1,27 @@
 ---
 title: Entfernen Sie Ausreißer aus den historischen Buchungsdaten, wenn Sie eine Bedarfsplanung berechnen.
 description: In diesem Artikel wird beschrieben, wie Ausreißer aus den historischen Daten ausgeschlossen werden, die verwendet werden, um eine Bedarfsplanung zu berechnen. Wenn Sie Ausreißer ausschließen, können Sie die Prognosegenauigkeit verbessern.
-author: roxanadiaconu
-manager: tfehr
+author: ChristianRytt
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqDemPlanForecastParameters, ReqDemPlanOutlierQuerySetup, ReqDemPlanOutlierQueryPreview
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 72621
 ms.assetid: 88a964af-14eb-4c5c-945b-388e5908362c
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9dec963ed5abd6f77e82029a3ea5ba1a69d44e36
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bc0826d3a0dd8ded19590867e9a8138bb772c89a
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428574"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568638"
 ---
 # <a name="remove-outliers-from-historical-transaction-data-when-calculating-a-demand-forecast"></a>Entfernen Sie Ausreißer aus den historischen Buchungsdaten, wenn Sie eine Bedarfsplanung berechnen.
 
@@ -42,8 +39,7 @@ Wenn Sie Ausreißer ausschließen, können Sie die Prognosegenauigkeit verbesser
 
 **Hinweis:** Sie können eine Abfrage auch erstellen, die auf einer vorhandenen Abfrage basiert. Wählen Sie die Abfrage aus, die kopiert werden soll, und klicken Sie dann auf **Duplizieren**. Das Feld **Abfragedatum** kennzeichnet die Version. Sie können die Abfrage verwenden, belassen, oder Sie können auf **Abfrage bearbeiten** klicken, um die Kriterien zu ändern. Sie können den Namen und die Beschreibung der neuen Abfrage optional ändern.
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Bedarfsplanung – Übersicht](introduction-demand-forecasting.md)
 
@@ -51,3 +47,6 @@ Wenn Sie Ausreißer ausschließen, können Sie die Prognosegenauigkeit verbesser
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

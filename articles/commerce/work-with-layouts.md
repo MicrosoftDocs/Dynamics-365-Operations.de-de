@@ -1,37 +1,31 @@
 ---
 title: Arbeiten mit Voreinstellungslayouts
-description: In diesem Thema wird beschrieben, wie Sie mit vordefinierten Layouts in Microsoft Dynamics 365 Commerce arbeiten.
+description: In diesem Thema wird beschrieben, wie Sie in Microsoft Dynamics 365 Commerce mit vordefinierten Layouts arbeiten.
 author: phinneyridge
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f31dfa1fdbb3732610748abe4a9de851033f2b89
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0f6effd4dda669041a269d568bd39beda607a2bcc05c65e40bb76c6f1d02cd5e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412583"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775311"
 ---
 # <a name="work-with-preset-layouts"></a>Arbeiten mit Voreinstellungslayouts
 
-
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie mit vordefinierten Layouts in Microsoft Dynamics 365 Commerce arbeiten.
-
-## <a name="overview"></a>Übersicht
+In diesem Thema wird beschrieben, wie Sie in Microsoft Dynamics 365 Commerce mit vordefinierten Layouts arbeiten.
 
 Bevor Sie die Prozeduren in diesem Thema abschließen, lesen Sie unbedingt [Vordefinierte und benutzerdefinierte Layouts](templates-layouts-overview.md#preset-and-custom-layouts). Einen allgemeinen Überblick erhalten Sie in [Übersicht über Vorlagen und Layouts](templates-layouts-overview.md).
 
@@ -109,3 +103,6 @@ Führen Sie einen der folgenden Schritte aus, um das Layout auf Ihrer Live-Site 
 [Übersicht über Vorlagen und Layouts](templates-layouts-overview.md)
 
 [Arbeiten mit Vorlagen](work-with-templates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,30 +1,28 @@
 ---
-title: Erstellen und Verwalten von Kundenportalbenutzern
+title: Erstellen und Verwalten von Kundenportalbenutzern (enthält Video)
 description: In diesem Thema wird erläutert, wie Sie Kundenportal-Benutzerkonten erstellen und Berechtigungen für diese festlegen.
-author: dasani-madipalli
-manager: tfehr
+author: Henrikan
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-04-22
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e2001d5c0b17ecadf4cb42529d9beb4b3b81805a
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 4615182e6c3341a376e8e55a1417480e3e3f5ea7
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528292"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062489"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Erstellen und Verwalten von Kundenportalbenutzern
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [banner](../includes/banner.md)]
+
 
 In der Out-of-Box-Implementierung können sich Benutzer nicht selbst für Websites registrieren, die mithilfe des Kundenportals erstellt wurden. Um sich anzumelden und eine Website zu nutzen, müssen Benutzer vom Administrator eingeladen werden. Microsoft hat absichtlich die Möglichkeit der Benutzer blockiert, sich selbst zu registrieren.
 
@@ -35,38 +33,38 @@ Wenn sich Benutzer selbst registrieren, werden automatisch Kontaktdatensätze f�
 ## <a name="video"></a>-Video
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ADkI]
 
-Das Video [Kunden zur Nutzung Ihres Kundenportals auffordern](https://youtu.be/drGUYHX9QIQ) (oben) gehört zur [Finance and Operations-Playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) auf YouTube.
+Das Video [Kunden einladen, sich zu registrieren und Ihr Kundenportal zu nutzen](https://youtu.be/drGUYHX9QIQ) (siehe oben) ist in der Wiedergabeliste [Finance und Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) enthalten, die auf YouTube verfügbar ist.
 
 ## <a name="prerequisite-setup"></a>Voraussetzungen für die Einrichtung
 
-Kontakte in Power Apps Portal werden als Datensätze in der Entität **Kontakte** in Common Data Service gespeichert. Duales Schreiben synchronisiert diese Datensätze dann mit Microsoft Dynamics 365 Supply Chain Management wie erforderlich.
+Kontakte in Power Apps Portal werden als Datensätze in der Tabelle **Kontakte** in Microsoft Dataverse gespeichert. Duales Schreiben synchronisiert diese Datensätze dann mit Microsoft Dynamics 365 Supply Chain Management wie erforderlich.
 
-![Systemdiagramm für Kundenportal-Kontakte](media/customer-portal-contacts.png "Systemdiagramm für Kundenportal-Kontakte")
+![Systemdiagramm für Kundenportal-Kontakte.](media/customer-portal-contacts.png "Systemdiagramm für Kundenportal-Kontakte")
 
-Stellen Sie vor dem Einladen neuer Kunden sicher, dass Sie die Option **Kontakt** Entität zuordnen in dualem Schreiben aktiviert haben.
+Stellen Sie vor dem Einladen neuer Kunden sicher, dass Sie die Tabellenzuordnung **Kontakt** in dualem Schreiben aktiviert haben.
 
 ## <a name="the-invitation-process"></a>Der Einladungsprozess
 
-Führen Sie die folgenden Schritte aus, um einen vorhandenen Kontakt zum Kundenportal einzuladen [Laden Sie Kontakte zu Ihren Portalen ein](https://docs.microsoft.com/powerapps/maker/portals/configure/invite-contacts) in der Power Apps Portaldokumentation.
+Führen Sie die folgenden Schritte aus, um einen vorhandenen Kontakt zum Kundenportal einzuladen [Laden Sie Kontakte zu Ihren Portalen ein](/powerapps/maker/portals/configure/invite-contacts) in der Power Apps Portaldokumentation.
 
-Stellen Sie vor dem Einladen eines Kunden zum Kundenportal sicher, dass der [Kontaktdatensatz](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) des Kunden verfügbar ist und wie folgt eingerichtet ist:
+Stellen Sie vor dem Einladen eines Kunden zum Kundenportal sicher, dass der [Kontaktdatensatz](/powerapps/maker/portals/configure/configure-contacts) des Kunden verfügbar ist und wie folgt eingerichtet ist:
 
 1. Legen Sie das Feld **Unternehmen** auf die juristische Person fest, zu der der Kunde in Supply Chain Management gehören soll.
 2. Legen Sie das Feld **Kontonummer** auf die Kontonummer des Kunden fest, zu der der Kunde in Supply Chain Management gehören soll.
 
 Nachdem ein Kontakt erstellt wurde, sollte er im Supply Chain Management angezeigt werden können.
 
-Weitere Informationen finden Sie unter [Konfigurieren Sie einen Kontakt für die Verwendung in einem Portal](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) in der Power Apps Portaldokumentation.
+Weitere Informationen finden Sie unter [Konfigurieren Sie einen Kontakt für die Verwendung in einem Portal](/powerapps/maker/portals/configure/configure-contacts) in der Power Apps Portaldokumentation.
 
-## <a name="out-of-box-web-roles-and-entity-permissions"></a>Out-of-Box-Webrollen und Entitätsberechtigungen
+## <a name="out-of-box-web-roles-and-table-permissions"></a>Out-of-Box-Webrollen und Tabellenberechtigungen
 
-Benutzerrollen in Power Apps Portalen sind definiert durch [Webrollen](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) und [Entitätsberechtigungen](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). Für das Kundenportal sind sofort einige Rollen definiert. Sie können neue Rollen erstellen und vorhandene Rollen ändern oder entfernen.
+Benutzerrollen in Power Apps Portalen sind definiert durch [Webrollen](/powerapps/maker/portals/configure/create-web-roles) und [Tabellenberechtigungen](/powerapps/maker/portals/configure/assign-entity-permissions). Für das Kundenportal sind sofort einige Rollen definiert. Sie können neue Rollen erstellen und vorhandene Rollen ändern oder entfernen.
 
 ### <a name="out-of-box-web-roles"></a>Out-of-Box-Webrollen
 
 In diesem Abschnitt werden die Webrollen beschrieben, die mit dem Kundenportal bereitgestellt werden.
 
-Weitere Informationen zum Ändern der Standardbenutzerrollen finden Sie unter [Erstellen Sie Webrollen für Portale](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) und [Fügen Sie datensatzbasierte Sicherheit hinzu, indem Sie Entitätsberechtigungen für Portale verwenden](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) in der Power Apps Portaldokumentation.
+Weitere Informationen zum Ändern der Standardbenutzerrollen finden Sie unter [Erstellen Sie Webrollen für Portale](/powerapps/maker/portals/configure/create-web-roles) und [Fügen Sie datensatzbasierte Sicherheit hinzu, indem Sie Tabellenberechtigungen für Portale verwenden](/powerapps/maker/portals/configure/assign-entity-permissions) in der Power Apps Portaldokumentation.
 
 #### <a name="administrator"></a>Administrator
 
@@ -90,9 +88,12 @@ Die folgende Tabelle zeigt, welche Kundenaufträge die Benutzer in jeder Webroll
 
 | Auftrag | Administrator | Kundenvertreter für Kunde&nbsp;X | Autorisierter Benutzer: Jane | Autorisierter Benutzer: Sam | Nicht autorisierte Benutzer: May |
 |---|---|---|---|---|---|
-| Kunde&nbsp;X Besteller:&nbsp;Jane | Ja | Ja | Ja | Nr. | Nr. |
-| Kunde&nbsp;X Besteller:&nbsp;Sam | Ja | Ja | Nr. | Ja | Nr. |
-| Kunde&nbsp;Y Besteller:&nbsp;May | Ja | Nr. | Nr. | Nr. | Nr. |
+| Kunde&nbsp;X Besteller:&nbsp;Jane | Ja | Ja | Ja | Nein | Nein |
+| Kunde&nbsp;X Besteller:&nbsp;Sam | Ja | Ja | Nein | Ja | Nein |
+| Kunde&nbsp;Y Besteller:&nbsp;May | Ja | Nein | Nein | Nein | Nein |
 
 > [!NOTE]
 > Obwohl sowohl Sam als auch Jane Kontakte sind, die für Kunde X arbeiten, können sie nur die Bestellungen sehen, die sie selbst aufgegeben haben, und sonst nichts. Obwohl May eine Bestellung im System hat, kann sie diese Bestellung nicht im Kundenportal sehen, da sie eine nicht autorisierte Benutzerin ist. (Außerdem muss sie die Bestellung über einen anderen Kanal als das Kundenportal aufgegeben haben.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: LIFO-Datum mit physischem Wert und Markierung
 description: Beim LIFO-Datum (Last In, First Out) handelt es sich um ein Lagermodell, das auf dem LIFO-Prinzip basiert. Abgänge aus dem Lager werden mit den neuesten Zugängen im Lager auf der Grundlage des Datums der Lagerbuchung abgeglichen. Bei Verwendung des LIFO-Datums wird der Abgang mit beliebigen Zugängen ausgeglichen, die nach dem Datum des Artikelabgangs liegen, wenn vor dem Abgang kein Zugang zu verzeichnen ist. Mehrere Abgänge am gleichen Datum können in der Reihenfolge "Neuester Abgang, neuester Zugang" ausgeglichen werden.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2c06443532519ad5d6c36a6f4ed1f1c4d136664
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f033dee70f3423ec560885d59e2db1bc61cb6009e9c9c151c15c0ecd8d697862
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967632"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748008"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO-Datum mit physischem Wert und Markierung
 
@@ -57,7 +55,7 @@ In diesem Beispiel ist die Artikelmodellgruppe so konfiguriert, dass der physisc
 
 Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig aktualisierten Buchungen in Höhe von EUR 15,00 berücksichtigt. 
 
-Die folgende Abbildung zeigt die Auswirkungen des Lagermodells LIFO-Datum an, wenn die Option **Physischen Wert einbeziehen** nicht verwendet wird. ![LIFO-Datum mit "Physischen Wert einbeziehen"](./media/lifodatewithoutincludephysicalvalue.gif) 
+Die folgende Abbildung zeigt die Auswirkungen des Lagermodells LIFO-Datum an, wenn die Option **Physischen Wert einbeziehen** nicht verwendet wird. ![LIFO-Datum mit „Physischen Wert einbeziehen“.](./media/lifodatewithoutincludephysicalvalue.gif) 
 
 **Diagrammschlüssel**
 
@@ -92,7 +90,7 @@ Die folgende Abbildung zeigt diese Buchungen an:
 
 Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig aktualisierten Buchungen in Höhe von EUR 20,00 berücksichtigt. 
 
-Die folgende Abbildung zeigt die Auswirkungen des LIFO-Lagermodells LIFO an, wenn die Option **Physischen Wert einbeziehen** verwendet wird. ![LIFO-Datum mit "Physischen Wert einbeziehen"](./media/lifodatewithincludephysicalvalue.gif) 
+Die folgende Abbildung zeigt die Auswirkungen des LIFO-Lagermodells LIFO an, wenn die Option **Physischen Wert einbeziehen** verwendet wird. ![LIFO-Datum mit „Physischen Wert einbeziehen“.](./media/lifodatewithincludephysicalvalue.gif) 
 
 **Diagrammschlüssel**
 
@@ -138,7 +136,7 @@ Die folgende Abbildung zeigt diese Buchungen an:
 
 Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig und physisch aktualisierten Buchungen in Höhe von EUR 27,50 berücksichtigt. 
 
-Die folgende Abbildung gibt Aufschluss über die Auswirkungen der Auswahl des LIFO-Lagermodells mit markierten Ab- und Zugängen: ![LIFO-Datum mit Markierung](./media/lifodatewithmarking.gif) 
+Die folgende Abbildung gibt Aufschluss über die Auswirkungen der Auswahl des LIFO-Lagermodells mit markierten Ab- und Zugängen: ![LIFO-Datum mit Markierung.](./media/lifodatewithmarking.gif) 
 
 **Diagrammschlüssel**
 
@@ -156,3 +154,6 @@ Die folgende Abbildung gibt Aufschluss über die Auswirkungen der Auswahl des LI
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,28 +2,25 @@
 title: Service Management Übersicht
 description: Mit der Serviceverwaltung können Sie Serviceverträge und Daueraufträge einrichten, Serviceaufträge und Debitorenanfragen handhaben und die Servicebereitstellung für Kunden verwalten und analysieren.
 author: ShylaThompson
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 451aeebd46d60251eed940016486509c4aa3f458
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 915815d6be726141aa78d55c4fe98b75ae762189
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428393"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835893"
 ---
 # <a name="service-management-overview"></a>Service Management Übersicht
 
@@ -71,3 +68,6 @@ Die Serviceverwaltung kann in die folgenden Module in  integriert werden:
 
   
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

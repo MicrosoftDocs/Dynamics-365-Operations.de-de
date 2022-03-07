@@ -1,26 +1,24 @@
 ---
 title: Kreditoren für spezifische Beschaffungskategorien genehmigen
 description: In diesem Thema wird erläutert, wie Kreditoren für bestimmte Beschaffungskategorien in Dynamics 365 Supply Chain Management genehmigt werden.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 07/30/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTable, DirPartyEcoResCategory, EcoResCategorySingleLookup, ProcCategoryHierarchyManagement
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 159d918a4dd3b6502bc8ab411d0353545eb4fcba
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 887905c35c684f2f60c3ce17eb652532831193cc
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016348"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5812445"
 ---
 # <a name="approve-vendors-for-specific-procurement-categories"></a>Kreditoren für spezifische Beschaffungskategorien genehmigen
 
@@ -43,3 +41,6 @@ In diesem Thema wird erläutert, wie Kreditoren für bestimmte Beschaffungskateg
 13. Wählen Sie **Nein** im Feld **Kreditoren aus übergeordneter Kategorie erben:** aus.
 14. Wählen Sie **Ja** im Feld **Kreditoren aus übergeordneter Kategorie erben:** aus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

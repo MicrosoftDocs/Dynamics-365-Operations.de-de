@@ -2,27 +2,24 @@
 title: Spediteure einrichten
 description: In diesem Thema erfahren Sie, wie Sie einen Spediteur einrichten und Details wie Service, Versandart, Transportausschreibung, Transportbeschränkungen und Frachtrate definieren.
 author: ShylaThompson
-manager: tfehr
 ms.date: 07/19/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSShippingCarrierCustomerAccount,TMSCarrier
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a71ea3983018b136d4fe3b22eadc0c332d2a698
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 1c292470e6c70af4dfe11bbe324ebcf93438e29d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429073"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840460"
 ---
 # <a name="set-up-shipping-carriers"></a>Spediteure einrichten
 
@@ -73,3 +70,6 @@ In diesem Thema erfahren Sie, wie Sie einen Spediteur einrichten und Details wie
 9. Wählen Sie im Feld **Transitzeit-Engine** eine Option aus dem Dropdown-Menü.
 10. Wählen Sie **Speichern**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

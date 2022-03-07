@@ -1,28 +1,25 @@
 ---
 title: Bestandsnachverfolgungsinformationen korrigieren
 description: Diese Prozedur führt Sie durch den einzelnen Schritte der Erstellung und des Buchens einer Umlagerungserfassung, um Lagerbestandsnachverfolgungsinformationen zu korrigieren.
-author: MarkusFogelberg
-manager: tfehr
+author: yufeihuang
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalTransfer, InventJournalCreate, InventItemIdLookupSimple, InventBatchIdLookup, InventLocationIdLookup, InventDimTracking, InventTrans
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mafoge
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a8a488d4c30923445b3ebc2626a79b8fa45012c7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 69921651ecd0969e9cdd3cdd3740db212a1953e1
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428971"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573800"
 ---
 # <a name="correct-inventory-tracking-information"></a>Bestandsnachverfolgungsinformationen korrigieren
 
@@ -64,3 +61,6 @@ Diese Prozedur führt Sie durch den einzelnen Schritte der Erstellung und des Bu
 2. Klicken Sie auf "Transaktionen".
     * Hier können Sie die Transaktionen anzeigen, die erstellt wurden, als Sie Ihre Erfassung gebucht haben.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

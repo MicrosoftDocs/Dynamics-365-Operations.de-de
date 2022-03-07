@@ -1,28 +1,25 @@
 ---
 title: Eine Formel durch Kopieren aus einer vorhandenen Formel erstellen
 description: Im folgenden Verfahren sehen Sie, wie schnell eine neue Formel durch das Kopieren aus einer vorhandenen Formel erstellt wird.
-author: ShylaThompson
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMTable, BOMRouteCopyDialog, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3a553add531da9a8117af0830efb2d1b68e9b2e3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 11d430d1f02789566d136a0e0f0d8dde80934dad
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428429"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579183"
 ---
 # <a name="create-a-formula-by-copying-from-an-existing-formula"></a>Eine Formel durch Kopieren aus einer vorhandenen Formel erstellen
 
@@ -57,3 +54,6 @@ Im folgenden Verfahren sehen Sie, wie schnell eine neue Formel durch das Kopiere
 3. Klicken Sie auf "OK".
 4. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

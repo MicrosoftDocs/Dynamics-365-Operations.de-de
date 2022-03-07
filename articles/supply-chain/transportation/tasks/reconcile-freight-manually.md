@@ -2,27 +2,24 @@
 title: Fracht manuell abstimmen
 description: Dieses Verfahren zeigt, wie Fracht manuell abgestimmt wird.
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadPlanningWorkbench, TMSFreightBillDetail, TMSInvoiceTable, TMSFreightBillInvoiceReconcile, TMSInvoiceJournal, LedgerJournalTable, LedgerJournalTransDaily, TMSFBDetailReconcile
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fc4fc51955544df4d0156a4c83bcc5b5a0e13df3
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 0a0a5450697a09e5e54e74b35b2576eb6bbd4cdf
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429077"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838513"
 ---
 # <a name="reconcile-freight-manually"></a>Fracht manuell abstimmen
 
@@ -61,3 +58,6 @@ Wenn Sie eine Spediteursrechnung und einen Frachtbrief abstimmen, passiert dies 
 5. Klicken Sie, um dem Link im Feld "Referenzerfassungsnummer".
 6. Klicken Sie auf "Positionen".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

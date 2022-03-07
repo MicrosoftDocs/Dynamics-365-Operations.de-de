@@ -2,6 +2,7 @@
 title: Vordefinierte Produktvarianten erstellen
 description: Diese Prozedur führt Sie durch das Erstellen von Produktvarianten für einen Produktmaster mithilfe der Kombinationen von Produktdimensionen.
 author: t-benebo
+manager: tfehr
 ms.date: 04/22/2021
 ms.topic: business-process
 ms.prod: ''
@@ -13,12 +14,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 6d3a4ae8efd438e01c263af1c0a1746d9484e491
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: acd2e3f1464dfed09ee24764270b06970b747d7c
+ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103097"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5938201"
 ---
 # <a name="predefined-product-variants"></a>Vordefinierte Produktvarianten
 
@@ -77,6 +78,8 @@ Um Produktvarianten zu generieren:
 
 ## <a name="improved-variant-suggestions"></a>Verbesserte Variantenvorschläge
 
+[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
+
 Die Funktion *Verbesserungen auf der Seite für Variantenvorschläge* verbessert die Seite **Variant suggestions**, um Probleme mit der Leistung und der Benutzerfreundlichkeit für Firmen zu beheben, die eine hohe Anzahl von Produktdimensions-Kombinationen haben. Der verbesserte Prozess zur Auswahl der Werte für die Produktdimensionen, für die Variantenvorschläge generiert werden sollen, macht es schneller und einfacher, den relevanten Satz von Produktvarianten festzulegen und freizugeben.
 
 Die folgenden Verbesserungen werden durch diese Funktion hinzugefügt:
@@ -84,9 +87,12 @@ Die folgenden Verbesserungen werden durch diese Funktion hinzugefügt:
 - **Aufgeschobene Generierung von Variantenvorschlägen:** Die Seite **Variantenvorschläge** zeigt keine Vorschläge mehr an, wenn Sie sie zum ersten Mal öffnen. Stattdessen müssen Sie explizit auswählen, welche Werte Sie benötigen und dann die Schaltfläche **Vorschlagen** wählen, um die Kombinationen zu generieren. Dadurch wird der Prozess sichtbarer und interaktiver.
 - **Auswahl von Dimensions-Werten:** Wenn Sie viele Dimensions-Werte haben, sind Sie typischerweise daran interessiert, Variantenvorschläge zu generieren, die nur einige von ihnen enthalten (z. B. bei der Einführung eines neuen Satzes von Farben oder Stilen). Mit dem verbesserten Design können Sie die Dimensionswerte auswählen, für die Sie Produktvariantenvorschläge generieren möchten. Dies erhöht die Relevanz der vorgeschlagenen Varianten erheblich und verbessert sowohl die Systemleistung als auch die Benutzerproduktivität.
 
-### <a name="turn-the-variant-suggestions-page-improvements-feature-on-or-off"></a>Die Funktion „Verbesserungen an der Seite mit Variantenvorschlägen“ ein- oder ausschalten
+### <a name="turn-on-the-variant-suggestions-page-improvements-feature"></a>Schalten Sie die Funktion Variantenvorschläge Seitenverbesserungen ein
 
-Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert. Administratoren können diese Funktionalität an- oder ausschalten, indem Sie nach der Funktion *Verbesserungen an der Seite mit Variantenvorschlägen* im Arbeitsbereich [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
+Bevor Sie die Funktion *Variantenvorschläge Seitenverbesserungen* verwenden können, muss sie in Ihrem System eingeschaltet sein. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+
+- **Modul:** *Produktinformationsverwaltung*
+- **Funktionsname:** *Variantenvorschläge Seite Verbesserungen*
 
 ### <a name="work-with-the-improved-variant-suggestions"></a>Arbeit mit den verbesserten Variantenvorschlägen
 

@@ -2,27 +2,24 @@
 title: Halbjährliche Abschreibung auf sonstige Anschaffungen für Österreich
 description: Dieses Thema enthält Informationen zur Abschreibung sonstiger Anschaffungen, wenn die Halbjahreskonvention für die Abschreibung von Anlagevermögen verwendet wird.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetBook, AssetDepreciationProfile, AssetParameters
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 272663
 ms.search.region: Austria
 ms.author: sndray
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: da3d7b9fa1c85a987746f0ea2aa6520b410c44b8
-ms.sourcegitcommit: 0297fd1f594c59a39014a592231ce5999b173848
+ms.openlocfilehash: 6be75a9274bc7da8b2886d2bb5da11f8eae2acbfd903039828cb30cabb403a42
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "4663311"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744923"
 ---
 # <a name="half-year-depreciation-on-additional-acquisitions-for-austria"></a>Halbjährliche Abschreibung auf sonstige Anschaffungen für Österreich
 
@@ -37,15 +34,17 @@ Bei juristischen Personen in Österreich werden die Abschreibung für zusätzlic
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-|                                       |                                                                                                                                                                                                                                                                                                                                                               |
+| Voraussetzung                      | Informationen                |
 |---------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Voraussetzung**                      | **Informationen**                                                                                                                                                                                                                                                                                                                                              |
-| Einrichten von **Abschreibungsprofilen**       | Wechseln Sie zu **Anlagen** > **Einstellungen** > **Abschreibungsprofile**. Für ein Abschreibungsprofil mit **Abschreibungsmethoden** = Verbleibende lineare Nutzungsdauer** wählen Sie das Kontrollkästchen **Halbjährliche Abschreibung für sonstige Anschaffungen**. Wenn diese Option aktiviert ist, wird die Abschreibungskonvention **Halbes Jahr (Startjahr)** für zusätzliche Anschaffungen implementiert. |
+| Einrichten von **Abschreibungsprofilen**       | Wechseln Sie zu **Anlagen** > **Einstellungen** > **Abschreibungsprofile**. Für ein Abschreibungsprofil mit der **Abschreibungsmethode** = `Straight line life remaining` wählen Sie das Kontrollkästchen **Halbjährliche Abschreibung für sonstige Anschaffungen**. Wenn diese Option aktiviert ist, wird die Abschreibungskonvention **Halbes Jahr (Startjahr)** für zusätzliche Anschaffungen implementiert. |
 | Einrichten von **Anlagenparametern**    | Wechseln Sie zu **Anlagen** > **Einstellungen** > **Anlagenparameter**. Auf der Registerkarte **Allgemeines** wählen Sie **Bestimmte Regeln zur halbjährlichen Abschreibung anwenden** und **Automatische Abschreibungsregulierungsbeträge mit Abgang erstellen**.                                                                                  |
 
 ## <a name="half-year-depreciation-on-additional-acquisitions-calculation"></a>Halbjährliche Abschreibung auf sonstige Anschaffungsberechnung
-Wenn die Kontrollkästchen **Bestimmte Regeln zur halbjährlichen Abschreibung anwenden** und **Automatisch Abschreibungsregulierungsbeträge mit Abgang erstellen** aktiviert sind, wird der Abschreibungsregulierungsbetrag für Anlagen mit der Abschreibungsmethode **Verbleibende lineare Nutzungsdauer** und **Halbjahr (Jahresanfang)**, die verwendet wird, automatisch mit dem Abgang gebucht, der gemäß den Halbjahreskonventionsregeln berechnet wird.
+Wenn die Kontrollkästchen **Bestimmte Regeln zur halbjährlichen Abschreibung anwenden** und **Automatisch Abschreibungsregulierungsbeträge mit Abgang erstellen** aktiviert sind, wird der Abschreibungsregulierungsbetrag für Anlagen mit der Abschreibungsmethode `Straight line life remaining` und der Konvention **Halbjahr (Jahresanfang)** automatisch mit dem Abgang gebucht, der gemäß den Halbjahreskonventionsregeln berechnet wird.
 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

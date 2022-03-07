@@ -2,9 +2,11 @@
 title: Importieren von Währungswechselkursen
 description: Dieses Thema enthält Informationen zu den Anforderungen für den Import von Fremdwährungsreferenzkursen, die von Wechselkursanbietern veröffentlicht werden.
 author: EvgenyPopovMBS
+manager: AnnBe
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f96622132be3c8a404f3f4e9c34f3ac5085a4fdc007ecb627d06a95d7c80932b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 37f3897f9f2a0db0bb7ccb6851fba36814ab0c7b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727323"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5249118"
 ---
 # <a name="import-currency-exchange-rates"></a>Importieren von Währungswechselkursen
 
@@ -33,8 +35,9 @@ Die folgenden Abschnitte beschreiben den allgemeinen Informationsfluss, der für
 ## <a name="configure-an-exchange-rate-provider"></a>Wechselkursanbieter konfigurieren
 Bevor Sie Wechselkurse importieren können, müssen Sie die Informationen einrichten, die von den Anbietern erforderlich ist, die die Wechselkurse anbieten. Auf der **Konfigurieren von Wechselkursanbietern** Seite, um die Wechselkursanbieter auszuwählen. Einige Wechselkursanbieter sind mit den Demodaten in Dynamics 365 Finance enthalten. Die folgende Tabelle enthält Beschreibungen der Steuerelemente in diesem Seite.
 
-| Feld | Beschreibung                   |
-|-----------|-----------------------------------|
+|           |                                                                                                                                                                                                                             |
+|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Feld** | **Beschreibung**                                                                                                                                                                                                             |
 | **Name**  | Der Name des Wechselkursanbieters.                                                                                                                                                                                     |
 | **Schlüssel**   | Der eindeutige Bezeichner für jede Konfigurationsinformation, die vom Anbieter benötigt wird. Diese Informationen werden automatisch für jeden Wechselkursanbieter hinzugefügt, den Sie hinzufügen, indem Sie auf die Schaltfläche Hinzufügen klicken. |
 | **Value** | Informationen für jeden Schlüssel. Diese Informationen werden automatisch für jeden Wechselkursanbieter hinzugefügt, den Sie hinzufügen, indem Sie auf die Schaltfläche Hinzufügen klicken.                                                                                         |
@@ -42,8 +45,9 @@ Bevor Sie Wechselkurse importieren können, müssen Sie die Informationen einric
 ## <a name="import-currency-exchange-rates"></a>Importieren von Währungswechselkursen
 Sie können Wechselkurse der Wechselkursanbieterquelle importieren und sie in der **Währungswechselkurse** Seite festgelegt. Verwenden Sie die **Importwährungswechselkurse** Seite, um Kurse zu importieren. Die folgende Tabelle enthält Beschreibungen der Felder, die erforderlich sind, um den Importvorgang erfolgreich ausgeführt.
 
-| Feld | Beschreibung                   |
-|-----------|-----------------------------------|
+|                                        |                                                                                                                                                                                                                                                                                                                                                                             |
+|----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Feld**                              | **Beschreibung**                                                                                                                                                                                                                                                                                                                                                             |
 | **Wechselkurstyp**                 | Ein Wechselkurstyp                                                                                                                                                                                                                                                                                                                                                      |
 | **Wechselkursanbieter**             | Eine Wechselkursanbieterkennung                                                                                                                                                                                                                                                                                                                                                  |
 | **Importieren ab**                       | Dieser Parameter verwaltet, ob zum aktuellen Datum oder für ein bestimmtes Datum importiert werden soll. Geben Sie ein Start- und Enddatum ein, oder wählen Sie ein Start- oder Enddatum.                                                                                                                                                                                                                |

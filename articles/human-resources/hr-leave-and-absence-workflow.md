@@ -2,7 +2,7 @@
 title: Einen Urlaubsanforderungsworkflow erstellen
 description: Erstellen Sie einen Workflow für Urlaubsanträge und Abwesenheitsanträge, um Urlaubsanträge in Dynamics 365 Human Resources konsistent zu verwalten.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 05/08/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 209f0ec7236778cc0a828102e554b02206b45b73
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c2c2020c68c4aca3594a2532d32f968ab76f6b7b
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418614"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463309"
 ---
 # <a name="create-a-leave-request-workflow"></a>Einen Urlaubsanforderungsworkflow erstellen
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Sie können einen Workflow für Urlaubsanträge und Abwesenheitsanträge erstellen, um Urlaubsanträge in Dynamics 365 Human Resources konsistent zu verwalten. Mit einem Workflow **Urlaub und Abwesenheit** können Sie:
 
@@ -81,3 +83,6 @@ Diese Beispiele zeigen, wie Sie mithilfe dieser Datenelemente verschiedene Typen
 ## <a name="see-also"></a>Siehe auch
 
 - [Urlaubs- und Abwesenheitsübersicht](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

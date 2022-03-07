@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ReqGroup, DefaultDashboard, EcoResProductDetailsExtended, EcoResProductCreate, InventItemOrderSetup, ReqItemTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 11d92185bdbcf7aa1a668b6d2aa311805e42293c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9b10aa50c4a89b2642262f624ac3a6d89cd6ebb4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428720"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5258648"
 ---
 # <a name="define-coverage-rules-for-items"></a>Dispositionsregeln für Artikel definieren
 
@@ -102,3 +101,6 @@ Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, is
 11. Geben Sie im Feld **Bestellzeit** den Wert „5“ ein.
 12. Klicken Sie auf **Speichern**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

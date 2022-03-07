@@ -2,35 +2,30 @@
 title: Konfigurieren von Bewertungen und Prüfungen
 description: In diesem Thema wird beschrieben, wie Sie Ihre E-Commerce-Webseite konfigurieren, um Beurteilungen und Bewertungen in Microsoft Dynamics 365 Commerce anzuzeigen.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 02/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: edd2082b5d2cafcb955f8e3c7762bcba523ac479
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e3f9ff4b0654ec5fa7548ac62e16ae64f44383e7
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412467"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968101"
 ---
-# <a name="configure-ratings-and-reviews"></a>Konfigurieren von Bewertungen und Prüfungen
+# <a name="configure-ratings-and-reviews"></a>Bewertungen und Prüfungen konfigurieren
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie Ihre E-Commerce-Webseite konfigurieren, um Beurteilungen und Bewertungen in Microsoft Dynamics 365 Commerce anzuzeigen.
-
-## <a name="overview"></a>Übersicht
 
 Bewertungen und Rezensionen auf E-Commerce-Websites helfen den Kunden, sich über Produkte zu informieren, bevor sie eine Kaufentscheidung treffen, indem sie ihnen zeigen, was andere Kunden über diese Produkte denken. Für E-Commerce-Websites sind Bewertungen und Prüfungen auch ein Mechanismus für das Zusammenfassen des Kundenfeedbacks zu Produkten. 
 
@@ -49,7 +44,7 @@ Um eine Site zu konfigurieren, damit Bewertungen und Prüfungen angezeigt werden
 
 Die folgende Abbildung zeigt, wie diese Kongiguration aussieht in Dynamics 365 Commerce.
 
-![Konfigurieren einer Site, die Bewertungen und Prüfungen anzeigt](media/rnr-eCommerce-site-appsettings.png)
+![Konfigurieren einer Site, die Bewertungen und Prüfungen anzeigt.](media/rnr-eCommerce-site-appsettings.png)
 
 ## <a name="link-a-product-rating-to-the-reviews-section-of-a-pdp"></a>Verknüpfen Sie eine Produktbewertung mit dem Bewertungsbereich auf einer PDP
 
@@ -63,7 +58,7 @@ Wenn Sie eine Produktbewertung mit dem Abschnitt **Bewertung** des PDP bewerten,
 
 Die folgende Abbildung zeigt, wie diese Kongiguration aussieht in Dynamics 365 Commerce.
 
-![Verknüpfen Sie eine Produktbewertung mit dem Bewertungsbereich auf einer PDP](media/rnr-eCommerce-buy-box-rating-summary.png)
+![Verknüpfen Sie eine Produktbewertung mit dem Bewertungsbereich auf einer PDP.](media/rnr-eCommerce-buy-box-rating-summary.png)
 
 ## <a name="configure-the-link-for-the-privacy-and-policy-page"></a>Konfigurieren Sie den Link für die Datenschutz- und Richtlinienseite
 
@@ -78,7 +73,7 @@ Um den Link für die Datenschutz- und Richtlinienseite zu konfigurieren, gehen S
 
 Die folgende Abbildung zeigt, wie diese Kongiguration aussieht in Dynamics 365 Commerce.
 
-![Konfigurieren Sie den Link für die Datenschutz- und Richtlinienseite](media/rnr-eCommerce-rnr-privacy-policy-link.png)
+![Konfigurieren Sie den Link für die Datenschutz- und Richtlinienseite.](media/rnr-eCommerce-rnr-privacy-policy-link.png)
 
 ## <a name="configure-ratings-and-reviews-modules-on-product-details-pages"></a>Konfigurieren Sie Bewertungen und Rezensionsmodule auf den Produktdetailseiten
 
@@ -88,10 +83,21 @@ Informationen zur Konfiguration von Bewertungen und Rezensionsmodulen auf den Pr
 
 [Überblick über Bewertungen und Prüfungen](ratings-reviews-overview.md)
 
-[Verwenden von Bewertungen und Prüfungen abonnieren](opt-in-ratings-reviews.md)
+[Nutzung von Bewertungen und Prüfungen aktivieren](opt-in-ratings-reviews.md)
 
 [Bewertungen und Prüfungen verwalten](manage-reviews.md)
 
-[Konfigurieren Sie die Bewertungen und Rezensionsmodule auf den Produktdetailseiten](ratings-reviews-modules.md)
-
 [Synchronisieren von Produktbewertungen in Dynamics 365 Retail](sync-product-ratings.md)
+
+[Manuelle Veröffentlichung von Bewertungen und Prüfungen durch einen Moderator aktivieren](manual-publish-rating-reviews.md)
+
+[Bewertungen und Rezensionen importieren und exportieren](import-export-reviews.md)
+
+[Authentifizierung zwischen Diensten konfigurieren](service-to-service-auth.md)
+
+[Häufig gestellte Fragen zu Bewertungen und Prüfungen](ratings-reviews-faq.md)
+
+[Bewertungs‑ und Prüfungsmodule](ratings-reviews-modules.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

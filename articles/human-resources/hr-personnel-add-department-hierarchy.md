@@ -2,7 +2,7 @@
 title: Abteilungen erstellen und sie in die Abteilungshierarchie einbeziehen
 description: Eine Abteilung ist eine Organisationseinheit, die eine Kategorie oder einen funktionalen Bereich einer Organisation darstellt. Eine Abteilung ist für einen bestimmten Bereich der Organisation wie zum Beispiel Verkauf, Buchhaltung oder Personalverwaltung zuständig. Sie können Abteilungen verwenden, um zu Funktionsbereiche zu melden. Abteilungen können Gewinn- und Verlustzuständigkeit haben.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,19 +11,19 @@ ms.technology: ''
 ms.search.form: HierarchyDesigner, OMOperatingUnit, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 63213
 ms.assetid: 5dbc62fc-0184-4c0e-9856-e735fc68799e
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 8dbaddf0165f36db07378e817639fd8b17a4a96f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ab9d16c8b8596f0890e0256f33608fda99a5312f
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418609"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130372"
 ---
 # <a name="create-departments-and-include-them-in-the-department-hierarchy"></a>Abteilungen erstellen und sie in die Abteilungshierarchie einbeziehen
 

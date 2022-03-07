@@ -12,16 +12,14 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-06-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 4e5faf8e4544b2bcb58f3c578789b2bd379a27b0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 4158fa93d9e424e796c038d0c907ea155868440bfcb79666c3e13fa997d4834b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572360"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774728"
 ---
 # <a name="container-packing-strategies"></a>Container-Packstrategien
-
-[!include [banner](../includes/banner.md)]
 
 Eine *Behälter-Packstrategie* ist eine Strategie, die Sie verwenden können, um Element-Zuordnungen über Container hinweg zu definieren. In diesem Thema werden die Unterschiede zwischen den Strategien *Packen in alle offenen Container* und *Nur in den aktuellen Container packen* erläutert.
 
@@ -51,7 +49,7 @@ Sie legen auch den folgenden Karton fest, der für die Verpackung verwendet wird
 
 Schließlich legen Sie eine Bestellung mit den folgenden Produkten und Mengen fest.
 
-| Auftragsposition | Menge |
+| Auftragsposition | Leistung |
 |---|---|
 | HDMI-Kabel 12' | 9 |
 | HDMI-Kabel 18' | 8 |

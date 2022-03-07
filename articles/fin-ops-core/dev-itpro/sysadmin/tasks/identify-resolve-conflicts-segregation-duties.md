@@ -2,11 +2,9 @@
 title: Identifizieren und Beheben von Konflikten bei der Aufgabentrennung
 description: In diesem Thema wird erläutert, wie Sie Konflikte bei der Aufgabentrennung ermitteln und lösen.
 author: peakerbl
-manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysSecSegregationOfDutiesConflict, SysSecSegregationOfDutiesRule
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: deff97c7728db91089d3ea834d15de738da500fa
-ms.sourcegitcommit: 316200579dd5b04ad76f276a2ed6b0f55fa8c812
+ms.openlocfilehash: 0638699c0e569bbe67024a87d6c55729642557cb085ee899aa98aa0022b12840
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "4826367"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748311"
 ---
 # <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a>Identifizieren und Beheben von Konflikten bei der Aufgabentrennung
 
@@ -59,3 +57,6 @@ Wenn Sie Benutzern Rollen zuweisen, werden die Regeln für die Aufgabentrennung 
 
 > [!NOTE]
 > Wenn mehrere Konflikte für denselben Benutzer aufgelistet sind, wählen Sie den Benutzerdatensatz aus, und bewerten Sie die zugewiesenen Rollen auf der Seite **Benutzer**. Um diesen Konflikt zu vermeiden, überprüfen Sie jede Regel, nachdem sie hinzugefügt oder geändert wurde.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

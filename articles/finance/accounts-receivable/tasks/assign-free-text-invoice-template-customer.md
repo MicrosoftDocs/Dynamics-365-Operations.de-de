@@ -2,11 +2,9 @@
 title: Einem Debitor eine Freitextrechnungsvorlage zuweisen
 description: In dieser Aufgabe wird dargestellt, wie Sie eine Freitextrechnungsvorlage zu einem Debitor zuweisen.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/12/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustTable, CustRecurrenceInvoice
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fb5dd96cb71dcee6db97ad1074e7e75565ac4101
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fb8a683792051a95b443fac47b4670f37c12cc4b4142ee2290b89ee1845662cf
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969627"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740097"
 ---
 # <a name="assign-a-free-text-invoice-template-to-a-customer"></a>Einem Debitor eine Freitextrechnungsvorlage zuweisen
 
@@ -49,3 +47,6 @@ In dieser Aufgabe wird dargestellt, wie Sie eine Freitextrechnungsvorlage zu ein
     + Jährlich – Wählen Sie diese Option aus, und geben Sie im Feld "Pro" die Anzahl von Jahren ein. Beispiel: Wenn Sie 2 eingeben, wird für diesen Debitor alle zwei Jahre eine Rechnung generiert.  
 14. Geben Sie im Feld **Pro** eine Zahl ein.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e0c836d4a0be47b753d74dc9d6d40ea7d9197176
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 93adc5b91667fdcd5969439994170fe7d28258fc9f5762d1262d8e72862c4f5f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323978"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762247"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Aktivitätsabhängige EB-Ziele konfigurieren
 
 [!include [banner](../includes/banner.md)]
 
-Sie können [Ziele](electronic-reporting-destinations.md) für jede Ausgabekomponente (Ordner oder Datei) einer [Konfiguration](general-electronic-reporting.md#Configuration) für das Format für die [elektronische Berichterstellung (EB)](general-electronic-reporting.md) konfigurieren, die zum Generieren eines ausgehenden Dokuments verwendet wird. Benutzer, die ein Eb-Format dieses Typs ausführen und über entsprechende Zugriffsrechte verfügen, können die konfigurierten Zieleinstellungen zur Laufzeit auch ändern.
+Sie können [Ziele](electronic-reporting-destinations.md) für jede Ausgabekomponente (Ordner oder Datei) einer [EB](general-electronic-reporting.md)-[Format](general-electronic-reporting.md#FormatComponentOutbound)[konfiguration](general-electronic-reporting.md#Configuration) konfigurieren, die zum Generieren eines ausgehenden Dokuments verwendet wird. Benutzer, die ein Eb-Format dieses Typs ausführen und über entsprechende Zugriffsrechte verfügen, können die konfigurierten Zieleinstellungen zur Laufzeit auch ändern.
 
 In Microsoft Dynamics 365 Finance **Version 10.0.17 und höher** kann ein EB-Format ausgeführt werden durch [Bereitstellung](er-apis-app10-0-17.md) eines Aktionscodes, den der Benutzer durch Ausführen dieses EB-Formats ausführt. Zum Beispiel im Modul **Debitoren** können Sie in den Einstellungen für die Druckverwaltung ein EB-Format auswählen, das ein bestimmtes Geschäftsdokument generiert, z. B. eine Freitextrechnung. Sie können dann **Ansicht** auswählen, um eine Vorschau der Rechnung anzuzeigen, oder **Drucken**, um es an einen Drucker zu senden. Wenn zur Laufzeit eine Benutzeraktion für das laufende EB-Format übergeben wird, können Sie verschiedene EB-Ziele für verschiedene Benutzeraktionen konfigurieren. In diesem Thema wird erläutert, wie EB-Ziele für diese Art von EB-Format konfiguriert werden.
 
@@ -115,6 +115,7 @@ Die folgende Liste von Geschäftsdokumenten wird von der Funktion **Ausgabe von 
 - Einkaufsabfrage für Bestellung
 - Auftragsbestätigung
 - Mahnung
+- Debitorenkontoauszug
 - Zinsrechnung
 - Zahlungsavis des Kreditors
 - Angebotsanforderung

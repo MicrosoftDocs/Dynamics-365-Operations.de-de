@@ -11,13 +11,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f7ab6165e85cd2b1165292b74cd036f1233b22b4
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 12707774c780a0f805deed532af27c3705ea1f55
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103012"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500597"
 ---
 # <a name="product-readiness"></a>Produktbereitschaft
 
@@ -159,7 +159,7 @@ Legen Sie für jede Zeile, die Sie hinzufügen, die folgenden Felder fest.
 
 ## <a name="assign-readiness-policies-to-standard-and-engineering-products"></a>Weitere Informationen finden Sie unter Weisen Sie Standard- und Engineering-Produkten Bereitschaftsrichtlinien zu
 
-Wenn Sie ein neues Produkt basierend auf einer Engineering-Kategorie erstellen, erstellen Sie sowohl ein *freigegebenes Produkt* wie auch ein verwandtes *gemeinsames Produkt*. Die Art und Weise, wie Bereitschaftsrichtlinien für ein veröffentlichtes Produkt aufgelöst werden, hängt davon ab, ob die Funktion *Produktbereitschaftsprüfungen* für Ihr System aktiviert ist (siehe Einzelheiten zu dieser Funktion sowie Informationen zu seiner Aktivierung und Deaktivierung finden Sie im Abschnitt [Bereitschaftsprüfungen bei Standardprodukten](#standard-products) weiter unten in diesem Thema).
+Wenn Sie ein neues Produkt basierend auf einer Engineering-Kategorie erstellen, erstellen Sie sowohl ein *freigegebenes Produkt* wie auch ein verwandtes *gemeinsames Produkt*. Die Art und Weise, wie Bereitschaftsrichtlinien für ein freigegebenes Produkt aufgelöst werden, hängt davon ab, ob Sie die Funktion *Produktbereitschaftsprüfungen* aktiviert haben. (Weitere Informationen finden Sie im Abschnitt [Bereitschaftsprüfungen bei Standardprodukten](#standard-products) weiter unten in diesem Thema.)
 
 - Wenn die Funktion *Produktbereitschaftsprüfungen* in Ihrem System *deaktiviert* ist, wird die Bereitschaftsrichtlinie festgelegt und nur im Bericht [technische Kategorie](engineering-versions-product-category.md) angezeigt. Um zu erfahren, welche Richtlinie für ein freigegebenes Produkt gilt, überprüft das System das Feld **Produktbereitschaftsrichtlinie** für die zugehörige Engineering-Kategorie. Sie können die Bereitschaftsrichtlinie für ein vorhandenes Produkt ändern, indem Sie die zugehörige Engineering-Kategorie (nicht das freigegebene Produkt) bearbeiten.
 - Wenn die Funktion *Produktbereitschaftsprüfungen* *aktiviert* ist, fügt sie ein Feld **Produktbereitschaftsrichtlinie** zur Seite **Produkt** (dort, wo gemeinsam genutzte Produkte eingerichtet sind) und zur Seite **Freigegebenes Produkt** hinzu, (wobei der Wert schreibgeschützt ist und aus dem zugehörigen freigegebenen Produkt stammt). Das System ermittelt die Bereitschaftsrichtlinie für ein freigegebenes Produkt, indem es das zugehörige freigegebene Produkt überprüft. Wenn Sie eine Engineering-Kategorie verwenden, um ein neues Engineering-Produkt zu erstellen, erstellt das System sowohl ein freigegebenes Produkt als auch ein freigegebenes Produkt und kopiert jede Einstellung **Produktbereitschaftsrichtlinie** Einstellung für die Engineering-Kategorie für das neue freigegebene Produkt. Sie können dann die Bereitschaftsrichtlinie für ein vorhandenes Produkt ändern, indem Sie die zugehörige freigegebene Produkt-Kategorie (nicht das freigegebene EngineeringProdukt) bearbeiten.
@@ -182,9 +182,30 @@ Um eine Bereitschaftsrichtlinie einer Engineering-Kategorie zuzuweisen, gehen Si
 
 Sie können die Produktbereitschaftsprüfung für Standardprodukte (nicht technische Produkte) aktivieren, indem Sie die Funktion *Produktbereitschaftsprüfungen* in der Funktionsverwaltung aktivieren. Diese Funktion nimmt einige kleine Änderungen am Bereitschaftsprüfungssystem vor, sodass es Standardprodukte unterstützt.
 
-### <a name="enable-or-disable-readiness-checks-on-standard-products"></a>Bereitschaftsprüfungen bei Standardprodukten aktivieren oder deaktivieren
+### <a name="enable-readiness-checks-on-standard-products"></a>Bereitschaftsprüfungen bei Standardprodukten aktivieren
 
-Für diese Funktion müssen sowohl die Funktion *Verwaltung für technische Änderung* als auch die Funktion *Produktbereitschaftsprüfungen* für Ihr System eingeschaltet sein. Einzelheiten zum Ein- und Ausschalten dieser Funktionen finden Sie unter [Verwaltung für technische Änderung – Übersicht](product-engineering-overview.md).
+Führen Sie die folgenden Schritte aus, damit Ihr System Bereitschaftsprüfungen für Standardprodukte durchführen kann.
+
+- Aktivieren Sie die Funktion für technische Änderungsverwaltung in Ihrem System wie in [Übersicht über die Änderungsverwaltung](product-engineering-overview.md) beschrieben.
+- Benutzen Sie die [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um die benannte Funktion *Produktbereitschaftsprüfungen* zu aktivieren.
+
+<!-- KFM: This section requires confirmation before publishing
+
+### How readiness checks are created for standard products
+
+When you create a new non-engineering *released product*, the system determines whether a readiness check policy has been set up for the related shared product. If a policy has been set up, the following events occur:
+
+- Readiness checks are created for the released product, according to the applicable policy.
+- The released product is blocked from being used until all checks are marked as completed.
+
+If a new *variant* is created for a product, the system checks whether readiness checks have been set up on the related shared product. If a readiness check has been set up, the following events occur:
+
+- Readiness checks are created for the released product, according to the applicable policy.
+- The released product is blocked from being used until all checks are marked as completed.
+
+For engineering products, readiness checks are created in the same way that they are created when the *Product readiness checks* feature is turned off. For more information, see the [How readiness checks are created for a new engineering product, variant, or version](#checks-engineering) section earlier in this topic.
+
+-->
 
 ### <a name="create-readiness-policies-for-standard-products"></a>Erstellen Sie Bereitschaftsrichtlinien für Standardprodukte
 

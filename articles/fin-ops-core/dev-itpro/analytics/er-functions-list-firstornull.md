@@ -2,8 +2,11 @@
 title: FIRSTORNULL EB-Funktion
 description: In diesem Thema wir die Verwendung der FIRSTORNULL-Funktion bei der elektronischen Berichterstellung (EB) erklärt
 author: NickSelin
+manager: kfend
 ms.date: 11/29/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 18c8f79d7d6306d9973c5a3f129b9cde38d05d58502a2c83ac89a2bd10aaaeab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3547eeea3c6fef5cca0699002cc0c35cffd940b3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749708"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688042"
 ---
 # <a name="firstornull-er-function"></a>FIRSTORNULL EB-Funktion
 
@@ -52,6 +55,3 @@ Der Ausdruck `FIRSTORNULL(SPLIT("",1)).Value` gibt eine leere Zeichenkette zurü
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Listenfunktionen](er-functions-category-list.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

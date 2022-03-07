@@ -2,26 +2,23 @@
 title: Eine Formel kopieren
 description: Diese Prozedur fokussiert sich auf das Erstellen einer Formel, die die gleichen Substanzen wie eine vorhandene Formel umfasst, jedoch mit kleinen Unterschieden.
 author: ShylaThompson
-manager: tfehr
 ms.date: 11/11/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26524f886a8af545869bacef4d57bfc14c0ed225
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e7c586082d8bbe29844140bd3637ad849e444e8e2f82ce26303f348a565c8f3c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428430"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731840"
 ---
 # <a name="copy-a-formula"></a>Eine Formel kopieren
 
@@ -65,3 +62,6 @@ Diese Prozedur fokussiert sich auf das Erstellen einer Formel, die die gleichen 
 5. Klicken Sie auf Auswählen.
 6. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

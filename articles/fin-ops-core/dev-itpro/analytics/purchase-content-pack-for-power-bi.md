@@ -1,12 +1,10 @@
 ---
 title: Einkaufs- und Ausgabenanalyse Power BI-Inhalt
-description: In diesem Thema wird beschrieben, was in den Inhalten der Einkaufs- und Ausgabenanalyse Power BI enthalten ist. Es wird beschrieben, wie auf die Berichte, die im Inhalt enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet werden.
+description: In diesem Thema wird beschrieben, was in den Inhalten der Einkaufs- und Ausgabenanalyse Power BI enthalten ist.
 author: FrankDahl
-manager: AnnBe
 ms.date: 04/24/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: PurchaseSpendAnalysisPowerBI
 audience: Application User, IT Pro
@@ -17,18 +15,18 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3f556cf2e506c57e465c2a86485d2cdd4cf8b65e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a40d4f39a7119def9ed0393d4ced2be1f7e801a5c1c3f984b002e5224299915a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680613"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716111"
 ---
 # <a name="purchase-spend-analysis-power-bi-content"></a>Einkaufs- und Ausgabenanalyse Power BI-Inhalt
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, was in den Inhalten der **Einkaufs- und Ausgabenanalyse** Microsoft Power BI enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
+In diesem Thema wird beschrieben, was im Microsoft Power BI-Inhalt zur **Einkaufs- und Ausgabenanalyse** enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
 
 ## <a name="overview"></a>Übersicht
 
@@ -154,3 +152,6 @@ Die folgenden wichtigen Dimensionen im Inhaltspaket werden als Filter verwendet,
 | Daten                  | Daten, Jahresausgleich                                    |
 
 Standardmäßig zeigt das Inhaltspaket Daten während des laufenden Kalenderjahrs an. Allerdings können Sie den im Berichtsfilterabschnitt Datumsfilter ändern. Sie können das den Unternehmensfilter auch ändern.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

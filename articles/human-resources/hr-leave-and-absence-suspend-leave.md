@@ -2,7 +2,7 @@
 title: Urlaub aussetzen
 description: Sie können den Urlaub für einen Mitarbeiter in Dynamics 365 Human Resources aussetzen.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0a65eed44de41ae35bf241166ee22dd280ce5d7a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7cec59a0ed478752b44fd28494f549007cbfbddb
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418728"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463237"
 ---
 # <a name="suspend-leave"></a>Urlaub aussetzen
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Sie können den Urlaub für einen Mitarbeiter aussetzen, um zu verhindern, dass Urlaubsrückstellungen für ausgewählte Urlaubstypen verarbeitet werden. 
 
@@ -49,3 +51,6 @@ Wenn Rückstellungen bearbeitet werden, während der Urlaub des Mitarbeiters aus
 - [Urlaubs- und Abwesenheitstypen konfigurieren](hr-leave-and-absence-types.md)
 - [Urlaubs- und Abwesenheitspläne antizipieren](hr-leave-and-absence-accrue.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

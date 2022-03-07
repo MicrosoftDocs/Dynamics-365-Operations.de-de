@@ -2,27 +2,27 @@
 title: Übersicht über die Lagerkonfiguration
 description: In diesem Artikel wird beschrieben, wie ein Lagerort konfiguriert wird. Es enthält Informationen zum Aktivieren eines Lagerortlayouts und Lagerortverfahren.
 author: perlynne
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfile, WHSLocationType, WHSLocDirTable, WHSParameters, WHSWaveTemplateTable, WHSWorkPool, WHSWorkTemplateTable, WHSZone, WHSZoneGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 11554
+ms.custom:
+- "11554"
+- intro-internal
 ms.assetid: 262b7b88-2cce-44f7-9a5b-77c12af1be20
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7b0ebb5d7f77e2104d0280bcee7c018d9cf97bd5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 091eb23397ed8f8efb50db6acba956fc49ef5a044a7d5fcc9d1e3201a68d54fe
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970155"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755905"
 ---
 # <a name="warehouse-configuration-overview"></a>Übersicht über die Lagerkonfiguration
 
@@ -111,10 +111,12 @@ Lagerplatzrichtlinien werden verwendet, um die Arbeitstransaktionen an die entsp
 
 Um das Definieren der Aktivitäten, die den einzelnen Richtlinienpositionen für Lagerplätze zugeordnet sind, zu erleichtern verwenden Sie eine der vordefinierten Strategien. Sie können beispielsweise die Strategie **Leerer Lagerplatz ohne eingehende Arbeit** verwenden, um freie Lagerplätze an einem Lagerort zu suchen, oder Sie können die Strategie **FEFO-Chargenreservierung** für ausgehende Verkaufskommissionierung verwenden.
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Lagerplätze an einem für WMS aktivierten Lagerort konfigurieren](tasks/configure-locations-wms-enabled-warehouse.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

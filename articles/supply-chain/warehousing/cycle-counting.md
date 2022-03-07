@@ -1,29 +1,26 @@
 ---
 title: Permanente Inventur
 description: In diesem Artikel wird beschrieben, wie Sie Zykluszählungen mit der Warehousing-Lösung verwenden können, die in der Warehouse-Verwaltung verfügbar ist. Dieser Artikel gilt nicht für die Warehousing-Lösung, die in der Lagerverwaltung verfügbar ist.
-author: MarkusFogelberg
-manager: tfehr
+author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage, SalesShipmentDeviation, WHSRFMenuItemCycleCount, WHSWorkLineCycleCount
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 50671
 ms.assetid: 49f5c431-b043-4170-aa24-b7d5d1ee063e
 ms.search.region: Global
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17b8504b2aecbe375fe178eac76da9c30c9b12bd
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: adaed1d5a4f1ac62df35bcc1497610ce0f44043c
+ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429042"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7902220"
 ---
 # <a name="cycle-counting"></a>Permanente Inventur
 
@@ -37,7 +34,7 @@ Zykluszählung ist ein Lagerortprozess, den Sie verwenden können, um Artikel de
 2.  **Zykluszählung verarbeiten** Nachdem Sie Zykluszählungsarbeit erstellt haben, führen Sie die Zykluszählungsarbeit aus, indem Sie Artikel in einem Lagerort zählen und dann ein mobiles Gerät verwenden, um das Ergebnis in Dynamics 365 Supply Chain Management einzugeben. Alternativ können Sie Artikel in einem Lagerort zählen ohne Zykluszählungsarbeit zu erstellen. Dieser Prozess wird als *Stichprobenzykluszählung* bezeichnet.
 3.  **Beheben einer Differenz im gezählten Wert** – Nach einer Zykluszählung haben alle Artikel, die Unterschiede im gezählten Wert aufweisen, auf der Seite **Alle Arbeit** den Arbeitsstatus **Prüfung ausstehend**. Sie können diese Differenz auf der Seite **Ausstehende Prüfung der Zykluszählungsarbeit** beheben.
 
-Die folgende Abbildung zeigt den Zykluszählprozess. ![Prozessfluss für Zykluszählung](./media/performcyclecountinginawarehouselocation.jpg)
+Die folgende Abbildung zeigt den Zykluszählprozess. ![Prozessfluss für Zykluszählung.](./media/performcyclecountinginawarehouselocation.jpg)
 
 ## <a name="cycle-counting-prerequisites"></a>Zykluszählung-Voraussetzungen
 In der folgenden Tabelle werden die Voraussetzungen angezeigt, die vorhanden sein müssen, bevor Sie die Zykluszählung verwenden können.
@@ -140,3 +137,6 @@ Sie können Abweichungen in den gezählten Werten anpassen und dann den gezählt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

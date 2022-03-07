@@ -2,16 +2,13 @@
 title: Masterplanungsauftrag abbrechen
 description: In diesem Thema wird erläutert, wie Sie einen aktiven Planungsauftrag abbrechen, der die Funktion „Integrierte Planung“ verwendet.
 author: ChristianRytt
-manager: tfehr
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace, ReqProcessList
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-12-16
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6f5ce460cc2915d1d4d9b5699723a62ed7f94599
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 27a48473a934e0db9986d6e588fc769ba9d2f605d72b2465976cb20a1ad93d16
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428952"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718010"
 ---
 # <a name="cancel-a-master-planning-job"></a>Masterplanungsauftrag abbrechen
 
@@ -53,3 +50,6 @@ Diese sollten nur dann verwendet werden, wenn der Abbruch des Generalplanungsjob
 4. Wählen Sie in **Batchaufgaben** die zu beendenden Aufgaben aus.
 5. Klicken Sie auf **Status ändern**, wählen Sie **Abbrechen**, und klicken Sie auf **OK**.
 6. Klicken Sie auf dem Inforegister **Batchaufgaben** auf **Abbrechen**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

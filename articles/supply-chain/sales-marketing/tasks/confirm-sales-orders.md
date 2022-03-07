@@ -2,26 +2,23 @@
 title: Aufträge bestätigen
 description: Diese Verfahren zeigt, wie Aufträge bestätigt werden.
 author: omulvad
-manager: tfehr
 ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesTable, SalesEditLines,  SrsReportViewerForm, CustConfirmJournal, SysQueryForm, SysQueryFieldLookUp, SysLookup, SalesParmIdLookup, SalesUnconfirmedOrdersPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d6476271689feaaa00e44f98f17ac34976c46644
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ac5217ecd74e3a8d4dd6a82112788a7aaba4698857cd5854eed1f8c91aa97e73
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428511"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6779157"
 ---
 # <a name="confirm-sales-orders"></a>Aufträge bestätigen
 
@@ -64,3 +61,6 @@ Diese Verfahren zeigt, wie Aufträge bestätigt werden. Es wird angezeigt, wie e
 11. Klicken Sie auf **OK**.
 12. Klicken Sie auf **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,27 +2,24 @@
 title: Eine Kanalnavigationshierarchie erstellen
 description: In diesem Thema wird beschrieben, wie eine Kanalnavigationshierarchie in Microsoft Dynamics 365 Commerce erstellt wird.
 author: samjarawan
-manager: annbe
-ms.date: 01/27/2020
+ms.date: 04/27/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e83860667f142adcc85cd8542d521e18f16dbc2c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5df46de9dadfa0b7160a9b340ef36fdf963a0ad3
+ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412461"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5951907"
 ---
 # <a name="create-a-channel-navigation-hierarchy"></a>Eine Kanalnavigationshierarchie erstellen
 
@@ -39,7 +36,7 @@ Eine Kanalnavigationshierarchie dient zur Gruppierung und Organisierung von Prod
 
 Um eine Kanalnavigationshierarchie zu erstellen, führen Sie die folgenden Schritte aus.
 
-1. Gehen Sie im Navigationsbereich zu **Module \> Retail und Commerce \> Produkte und Kategorien \> Kanalnavigationskategorien**.
+1. Gehen Sie im Navigationsbereich zu **Module \> Einzelhandel und Handel \> Produkte und Kategorien \> Kanalnavigationskategorien**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 1. Geben Sie im Kästchen **Name** einen Namen ein.
 1. Geben Sie im Kästchen **Beschreibung** eine Beschreibung ein.
@@ -80,7 +77,7 @@ Gehen Sie folgendermaßen vor, um Produkte zu Kategorieknoten hinzuzufügen.
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
 
 > [!NOTE]
-> Das Hinzufügen von Produkten zu einem Knoten in der Kanalnavigationshierarchie reicht nicht aus, damit die Produkte in einem ausgewählten Kanal angezeigt werden. Die Produkte müssen auch zu einem Produkt sortiert werden.
+> Das Hinzufügen von Produkten zu einem Knoten innerhalb der Channel-Navigationshierarchie reicht nicht aus, damit die Produkte in einem ausgewählten Channel angezeigt werden, die Produkte müssen auch einem Channel zugeordnet werden. Weitere Informationen zu Sortimenten finden Sie unter [Sortimentsverwaltung](assortments.md).
 
 Das folgende Bild zeigt einen Beispielknoten mit hinzugefügten Produkten.
 
@@ -107,3 +104,6 @@ Das folgende Bild zeigt einen Beispielknoten mit hinzugefügten Produktattributg
 [Sortimente einrichten](set-up-assortments.md)
 
 [Attribute und Attributgruppen verwalten](attribute-attributegroups-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

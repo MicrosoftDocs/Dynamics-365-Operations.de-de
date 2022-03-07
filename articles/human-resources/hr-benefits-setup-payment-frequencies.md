@@ -1,31 +1,30 @@
 ---
 title: Zahlungshäufigkeiten einrichten
 description: Microsoft Dynamics 365 Human Resources verwendet Zahlungshäufigkeiten zur Berechnung des jährlichen Vorteilsgehalts, zur Bestimmung des Vorteilszulagenbetrags, den ein Mitarbeiter für jede Lohnperiode zahlt, und zur Festlegung der Häufigkeit, mit der Zahlungen an Anbieter erfolgen.
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a5d562b64a161891bf34b0dfa94fbf68325e21b5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1a11023f6b80b74ff4e4e5523550288f7c15cdb9
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418701"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423389"
 ---
 # <a name="set-up-payment-frequencies"></a>Zahlungshäufigkeiten einrichten
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Microsoft Dynamics 365 Human Resources verwendet Zahlungshäufigkeiten zur Berechnung des jährlichen Vorteilsgehalts, zur Bestimmung des Vorteilszulagenbetrags, den ein Mitarbeiter für jede Lohnperiode zahlt, und zur Festlegung der Häufigkeit, mit der Zahlungen an Anbieter erfolgen.
 
@@ -56,3 +55,6 @@ Die Felder für die Umrechnungsfaktoren identifizieren den Umrechnungsfaktor von
    | **Stündlicher Umrechnungsfaktor** | Der jährliche Umrechnungsfaktor für die Zahlungshäufigkeit. Zum Beispiel lautet der jährliche Umrechnungsfaktor für die monatliche Lohnzahlungshäufigkeit: </br></br>(12 monatliche Zahlungen/2080 Stunden) = 0,005769
 
 4. Wählen Sie **Speichern**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

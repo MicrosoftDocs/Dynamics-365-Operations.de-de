@@ -2,16 +2,13 @@
 title: Migration zur Planungsoptimierung für die Produktprogrammplanung
 description: Dieses Thema enthält Informationen über die neue Engine für die Produktprogrammplanung, die Planungsoptimierung, und über die Migration von der bestehenden Engine.
 author: ChristianRytt
-manager: tfehr
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 94e5668da45c524ed9ab9eef10b40d0fb5336a65
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 9590213ef73f7623aff10d4c8ee3efbea0e7984b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645995"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823456"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Migration zur Planungsoptimierung für die Produktprogrammplanung
 
@@ -116,3 +113,6 @@ Ich verwende Version 10.0.16 oder höher und erhalte die folgende Fehlermeldung,
 > Bitte füllen Sie dazu den folgenden Fragebogen aus und beantragen Sie ggf. eine Ausnahme von der Migration zur Planungsoptimierung.
 
 **Antwort:** Nein, die Produktprogrammplanung ist nicht blockiert. Ihre Produktprogrammplanung wurde erfolgreich abgeschlossen, und Sie können das Ergebnis wie gewohnt verwenden. Um jedoch zu vermeiden, dass Sie diese Fehlermeldung bei zukünftigen Läufen der Produktprogrammplanung erhalten, müssen Sie entweder sofort zur Planungsoptimierung migrieren oder eine Ausnahme über den Link in der Fehlermeldung anfordern.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

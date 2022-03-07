@@ -1,29 +1,27 @@
 ---
-title: Kanalübersicht
+title: Übersicht über Kanäle
 description: Dieses Thema bietet einen Überblick über Kanäle in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e060fe2a578296f079653244ed4d5676313e5ea8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 64dcb02e9d35f530ea498c65473a98de3d18912e
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963059"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6335713"
 ---
-# <a name="channels-overview"></a>Kanalübersicht
+# <a name="channels-overview"></a>Übersicht über Kanäle
 
 
 [!include [banner](includes/banner.md)]
@@ -88,3 +86,6 @@ After you create a channel, you may need to complete some of the below tasks:
 [Einen Callcenterkanal einrichten](channel-setup-callcenter.md)
 
 [Organisationshierarchien einrichten](channels-org-hierarchies.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

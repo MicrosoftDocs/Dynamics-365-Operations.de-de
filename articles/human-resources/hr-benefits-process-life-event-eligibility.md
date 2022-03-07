@@ -1,33 +1,32 @@
 ---
-title: Lebensereignisberechtigungen verarbeiten
-description: Dieser Artikel beschreibt, wie Sie den Prozess für Lebensereignisberechtigung ausführen.
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+title: Lebensereignisberechtigung verarbeiten
+description: Dieses Thema erklärt, wie Sie die Berechtigung für Lebensereignisse verarbeiten.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes, BenefitEligibilityProcessResultViewer
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 17ecef1412eb0232fbb4782bd9d2d79f210c7e80
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b6cb4a8b815db561785ee56a0cd21376f1079cbd
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418624"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417428"
 ---
-# <a name="process-life-event-eligibility"></a>Lebensereignisberechtigungen verarbeiten
+# <a name="process-life-event-eligibility"></a>Lebensereignisberechtigung verarbeiten
 
-Dieser Artikel beschreibt, wie Sie den Prozess für Lebensereignisberechtigung ausführen.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Dieses Thema erklärt, wie Sie die Berechtigung für Lebensereignisse verarbeiten können.
 
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Bearbeitung** die Option **Verarbeitung von Lebensereignisberechtigung**.
 
@@ -48,3 +47,6 @@ Dieser Artikel beschreibt, wie Sie den Prozess für Lebensereignisberechtigung a
    4. Wählen Sie **OK**. Der Prozess wird mit den von Ihnen festgelegten Parametern ausgeführt.
 
 4. Wählen Sie **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

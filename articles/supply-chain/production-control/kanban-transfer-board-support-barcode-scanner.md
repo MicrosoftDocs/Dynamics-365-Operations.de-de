@@ -1,39 +1,35 @@
 ---
 title: Unterstützung der Kanban-Übertragungskarte für Strichcodescanner
-description: Die Kanban-Umlagerungsübersicht unterstützt die Scanner-Eingabe von einem Widgetstrichcodescanner bei der Auswahl, dem Starten, dem Abschluss und dem Leeren eines Kanban-Einzelvorgangs.
-author: ChristianRytt
-manager: tfehr
+description: Die Kanban-Übertragungstafel unterstützt die Scanner-Eingabe von einem Widget-Barcodescanner, um einen Kanban-Auftrag auszuwählen, zu starten, abzuschließen und zu leeren.
+author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardTransferJob
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19391
 ms.assetid: a426f645-d59b-4c98-8d78-eba8d64a562e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bd6f1bdd847f74cee7d3594d19b72454063c0cb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b18aad4dcdbf8c2d18960ae306556c3ea679d622
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428930"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566810"
 ---
-# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Unterstützung der Kanban-Übertragungskarte für Strichcodescanner
+# <a name="kanban-transfer-board-support-for-bar-code-scanners"></a>Unterstützung der Kanban-Übertragungskarte für Strichcodescanner
 
 [!include [banner](../includes/banner.md)]
 
-Die Kanban-Umlagerungsübersicht unterstützt die Scanner-Eingabe von einem Widgetstrichcodescanner bei der Auswahl, dem Starten, dem Abschluss und dem Leeren eines Kanban-Einzelvorgangs.
+Die Kanban-Übertragungstafel unterstützt die Scanner-Eingabe von einem Widget-Barcodescanner, um einen Kanban-Auftrag auszuwählen, zu starten, abzuschließen und zu leeren.
 
-<a name="registration-modes"></a>Erfassungsmodi
-------------------
+## <a name="registration-modes"></a>Erfassungsmodi
 
 Auf dem Inforegister **Scanner-Erfassung** können Sie den Registrierungsmodus auswählen, der die Aktivität steuert, wenn Sie eine Kanban-Kartennummer scannen oder manuell im Nummernfeld eingeben.
 
@@ -44,11 +40,10 @@ Auf dem Inforegister **Scanner-Erfassung** können Sie den Registrierungsmodus a
 | Leer                 | Registriert die Handhabungseinheit, auf die von der Kanban-Karte verwiesen wird, als leer.              |
 | Auswählen                | Registriert eine Kanban-Kartennummer und wählt automatisch den Einzelvorgang in der Kanban-Einzelvorgangsliste aus. |
 
- 
-Erfassungsmodusauswahl
-------------------------
+ 
+## <a name="registration-mode-select"></a>Erfassungsmodusauswahl
 
-Wenn Sie einen Barcodeleser verwenden, um einen Einzelvorgang auszuwählen, ändert sich der Ansichtsmodus der Kanban-Übersicht.In diesem Modus gelten folgende Bedingungen:
+Wenn Sie einen Barcodeleser verwenden, um einen Einzelvorgang auszuwählen, ändert sich der Ansichtsmodus der Kanban-Übersicht. In diesem Modus gelten folgende Bedingungen:
 
 -   Nur der gescannte Kanban-Einzelvorgang wird angezeigt.
 -   Die Details des gewählten Einzelvorgangs werden auf dem Inforegister **Details** angezeigt.
@@ -192,3 +187,6 @@ Der Status des ausgewählten Einzelvorgangs und der Status sämtlicher angeschlo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

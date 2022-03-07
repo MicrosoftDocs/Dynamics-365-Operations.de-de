@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines,  EUSalesList, EUSalesListSelection, SysQueryForm, SysLookup
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 37f1a6e3bf39e16702d1367a325134ec84369945
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fdedf153ae17ac90032e8998ce3b97ba9b734b64
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407730"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5227980"
 ---
 # <a name="eur-00011-generate-the-eu-sales-list-report"></a>EUR-00011 Bericht 'Zusammenfassende Meldung' generieren
 
@@ -101,3 +100,6 @@ Diese Prozedur ist für Buchhalter vorgesehen.
 7. Klicken Sie auf "OK".
 8. Wählen Sie im Feld "Abschnitt" "Abgeschlossen" aus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

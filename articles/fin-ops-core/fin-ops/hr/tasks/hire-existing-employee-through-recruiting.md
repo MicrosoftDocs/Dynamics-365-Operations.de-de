@@ -2,11 +2,9 @@
 title: Vorhandene Mitarbeiter mittels Personalbeschaffung einstellen
 description: Manchmal können offene Stellen von den Kandidaten ausgefüllt werden, die bereits Mitarbeiter in der Organisation sind.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/10/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42a6fbdad19db3c85509078c9f7549a6397f93fc
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 057dfd841524ad331aadb2ceca762a867d47fa86
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797258"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751957"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Vorhandene Mitarbeiter mittels Personalbeschaffung einstellen
 
@@ -40,3 +38,6 @@ Manchmal können offene Stellen von den Kandidaten ausgefüllt werden, die berei
 9. Klicken Sie auf "Position ändern".
     * Sie werden zu diesem Zeitpunkt möglicherweise auch die Vergütung ändern. Wenn Sie die Vergütung jetzt nicht zuweisen, können Sie sie ändern, indem Sie zum Arbeitskraftformular zurückkehren, die Registerkarte "Vergütung" auswählen und "Fester Plan" auswählen. Nachdem Sie "Position ändern" auswählen, wird der Status in der Anwendung auf "Eingestellt" aktualisiert.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,28 +1,31 @@
 ---
-title: Teilzahlungen vor dem Rabattdatum ausgleichen mit vollständiger Zahlung nach dem Rabattdatum
+title: Eine teilweise Debitorenzahlung vor dem Skontodatum mit einer vollständigen Zahlung nach dem Skontodatum abgleichen
 description: Dieser Artikel erläutert die Auswirkung von Zahlungsvereinbarungen auf Rechnungen für Debitoren. Das Szenario konzentriert sich auf die Auswirkungen im untergeordneten Sachkonto, nicht im Hauptbuch.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14584
 ms.assetid: e54936f5-053b-4ed3-b778-42c7e9aeb7cf
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 10ba8d59855b60b3d05b4c6b44c98905e10487ecdcf7bc459acca73c12bc72d1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a71d0931445f3501f1b74f26c5eef583ab598b3c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740169"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443472"
 ---
-# <a name="settle-partial-payment-before-discount-date-with-final-payment-after-discount-date"></a>Teilzahlungen vor dem Rabattdatum ausgleichen mit vollständiger Zahlung nach dem Rabattdatum
+# <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Eine teilweise Debitorenzahlung vor dem Skontodatum mit einer vollständigen Zahlung nach dem Skontodatum abgleichen
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +41,7 @@ Am 25. Juni gibt Arnie eine Rechnung für 1.000,00 für den Debitor 4027 ein und
 | FTI-10020 | Rechnung          | 6/25/2015 | 10020   | 1.000,00                             |                                       | 1.000,00 | USD      |
 
 ## <a name="partial-payment-before-the-cash-discount-date"></a>Teilzahlung vor dem Skontodatum
-Am 2. Juli leistet Debitor 4027 eine Teilzahlung von 297,00 für die Rechnung. Die Zahlung ist für ein Skonto freigegeben, da Fabrikam Skonti auf Teilzahlungen anbietet, und die Teilzahlungs vor dem Skontodatum geleistet wurde. Daher zahlt nimmt Debitor 4027 ein Skonto von 3,00 in Anspruch. Arnie erfasst die Zahlung für Debitor 4027, indem er die Zahlungserfassung verwendet. Arnie öffnet anschließend die Seite **Buchungen ausgleichen**, sodass Arnie die Rechnung zum Ausgleichen markieren kann.
+Am 2. Juli leistet Debitor 4027 eine Teilzahlung von 297,00 für die Rechnung. Die Zahlung ist für ein Skonto freigegeben, da Fabrikam Skonti auf Teilzahlungen anbietet, und die Teilzahlungs vor dem Skontodatum geleistet wurde. Daher zahlt nimmt Debitor 4027 ein Skonto von 3,00 in Anspruch. Arnie erfasst die Zahlung für Debitor 4027, indem er die Zahlungserfassung verwendet. Arnie öffnet anschließend die Seite **Buchungen ausgleichen**, sodass er die Rechnung zum Ausgeleichen markieren kann.
 
 | Markieren     | Skonto verwenden | Beleg   | Konto | Datum      | Fälligkeitsdatum  | Rechnung | Geschuldeter Betrag in Buchungswährung | Währung | Auszugleichender Betrag |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|----------|------------------|
@@ -46,10 +49,10 @@ Am 2. Juli leistet Debitor 4027 eine Teilzahlung von 297,00 für die Rechnung. D
 
 Rabattinformationen werden am unteren Rand der Seite **Offene Buchungen ausgleichen** angezeigt. Wenn Sie den Wert **Auszugleichender Betrag** nicht auf **297,00** ändern, weichen die erscheinenden Werte für Skontobetrag ab. Allerdings werden 3,00 als das Skonto übernommen, wenn die Zahlung gebucht wurde, da der Ausgleich automatisch den Wert **Auszugleichender** Betrag für Sie anpasst.
 
-| Feld                        | Wert     |
+|                              |           |
 |------------------------------|-----------|
 | Skontodatum           | 09. Juli 2015 |
-| Skontobetrag         | 10.00     |
+| Skontobetrag         | 10,00     |
 | Skonto verwenden            | Normal    |
 | Verwendetes Skonto          | 0,00      |
 | Zu verwendender Skontobetrag | 3,00      |
@@ -63,7 +66,7 @@ Arnie bucht diese Zahlung. Die Rechnung hat nun einem Saldo von 700,00. Folgende
 | DISC-10020 |  Skonto   | 1. Juli 2015  |         |                                      | 3,00                                  | 0,00    | USD      |
 
 ## <a name="remaining-payment-after-the-cash-discount-date"></a>Verbleibende Teilzahlung nach dem Skontodatum
-Am 11. Juli, also nach der Rabattperiode, zahlt Debitor 4027 den Rest dieser Rechnung. Auf der **Offene Buchungen ausgleichen** Seite wird kein Rabattbetrag im Feld **Vorkalkuliertes Skonto** angezeigt, und der Wert im Feld **Skontobetrag** beträgt **0,00**. Wenn Debitor 4027 die verbleibenden 700,00 bezahlt, wird kein zusätzlicher Rabatt genommen.
+Am 11. Juli, also nach der Rabattperiode, zahlt Debitor 4027 den Rest dieser Rechnung. Auf der **Offene Buchungen ausgleichen** Seite wird kein Rabattbetrag im **Vorkalkuliertes Skonto** Feld angezeigt, und der Wert im Feld **Skontobetrag** beträgt **0,00**. Wenn Debitor 4027 die verbleibenden 700,00 bezahlt, wird kein zusätzlicher Rabatt genommen.
 
 | Markieren     | Skonto verwenden | Beleg   | Konto | Datum      | Fälligkeitsdatum  | Rechnung | Geschuldeter Betrag in Buchungswährung | Währung | Auszugleichender Betrag |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|----------|------------------|
@@ -71,7 +74,7 @@ Am 11. Juli, also nach der Rabattperiode, zahlt Debitor 4027 den Rest dieser Rec
 
 Rabattinformationen werden am unteren Rand der Seite **Offene Buchungen ausgleichen** angezeigt.
 
-| Feld                        | Wert     |
+|                              |           |
 |------------------------------|-----------|
 | Skontodatum           | 09. Juli 2015 |
 | Skontobetrag         | 0,00      |
@@ -87,15 +90,15 @@ Wenn Arnie den Wert im **Skonto verwenden**-Feld auf **Immer** ändert, wird die
 
 Rabattinformationen werden am unteren Rand der Seite **Offene Buchungen ausgleichen** angezeigt.
 
-| Feld                        | Wert     |
+|                              |           |
 |------------------------------|-----------|
 | Skontodatum           | 09. Juli 2015 |
-| Skontobetrag         | 7.00      |
+| Skontobetrag         | 7:00      |
 | Skonto verwenden            | Immer    |
 | Verwendetes Skonto          | 3,00      |
 | Zu verwendender Skontobetrag | 7:00      |
 
-Arnie ändert der Wert im Feld **Skonto verwenden** wieder zu **Normal**, da Arnie diesem Debitor nicht den verbleibenden Barzahlungsrabatt von 7,00 gewährt. Arnie bucht anschließend die Zahlung. Wenn Arnie die Seite **Debitorentransaktionen** öffnet, hat die Rechnung einen Saldo von 0,00. Es gibt zwei Zahlungen. Eine Zahlung ist für 297,00 und hat ein Skonto von 3,00, während die anderen Zahlung für 700,00 ist.
+Arnie ändert der Wert im Feld **Skonto verwenden** wieder zu **Normal**, da er diesem Debitor nicht den verbleibenden Barzahlungsrabatt von 7,00 gewährt. Arnie bucht anschließend die Zahlung. Wenn Arnie die Seite **Debitorentransaktionen** öffnet, sieht er, dass die Rechnung einem Saldo von 0,00 hat. Er sieht auch, dass es zwei Zahlungen gibt. Eine Zahlung ist für 297,00 und hat ein Skonto von 3,00, während die anderen Zahlung für 700,00 ist.
 
 | Beleg    | Transaktionstyp | Datum      | Rechnung | Geschuldeter Betrag in Buchungswährung | Gutschriftsbetrag in Buchungswährung | Gesamtbetrag | Währung |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
@@ -108,6 +111,3 @@ Arnie ändert der Wert im Feld **Skonto verwenden** wieder zu **Normal**, da Arn
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,40 +2,29 @@
 title: Prospect-to-cash in Dual-Write
 description: Dieses Thema bietet Informationen über die Prospect-to-Cash iDual-Write.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 01/07/2021
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 3f88d7249af515670c0a3e73a5ef890f04133d19
-ms.sourcegitcommit: 6af7b37b1c8950ad706e684cc13a79e662985b34
+ms.openlocfilehash: 7c53bcd1084d89b59d0f6b2674a85d7c3481a9bf
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "4959600"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781790"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Prospect-to-cash in Dual-write
 
 [!include [banner](../../includes/banner.md)]
 
-
-
 Ein wichtiges Ziel der meisten Unternehmen ist es, Interessenten in Kunden umzuwandeln und dann eine kontinuierliche Geschäftsbeziehung mit diesen Kunden aufrechtzuerhalten. In Microsoft Dynamics 365 Apps erfolgt der Prospect-to-Cash-Prozess durch Angebots- oder Auftragsbearbeitungs-Workflows, und die Finanzzahlen werden abgestimmt und anerkannt. Durch die Integration von Prospect-to-Cash mit Dual-Write wird ein Workflow erstellt, der ein Angebot und einen Auftrag, die entweder aus Dynamics 365 Sales oder Dynamics 365 Supply Chain Management stammen, aufnimmt und das Angebot und den Auftrag in beiden Anwendungen verfügbar macht.
 
 In den App-Schnittstellen können Sie in Echtzeit auf die Verarbeitungsstatus und Rechnungsinformationen zugreifen. So können Sie Funktionen wie Produktlagerung, Bestandsabwicklung und Erfüllung im Supply Chain Management einfacher verwalten, ohne Angebote und Aufträge neu erstellen zu müssen.
 
-![Dual-Write-Flow in Prospect-to-Cash](../dual-write/media/dual-write-prospect-to-cash[1].png)
+![Dual-Write-Flow in Prospect-to-Cash.](../dual-write/media/dual-write-prospect-to-cash[1].png)
 
 Informationen zur Kunden- und Kontaktintegration finden Sie unter [Integrierte Masterdaten von Debitoren](customer-mapping.md). Informationen zur Produktintegration finden Sie unter [Einheitliche Produktumgebung](product-mapping.md).
 
@@ -50,7 +39,7 @@ Bevor Sie Angebote synchronisieren können, müssen Sie die folgenden Einstellun
 
 Gehen Sie in Sales zu **Einstellungen \> Verwaltung \> Systemeinstellungen \> Vertrieb** und stellen Sie sicher, dass die folgenden Einstellungen verwendet werden:
 
-- Die Einstellung **Systempreisberechnung verwenden** ist auf **Ja** gesetzt.
+- Die Option **Systempreisberechnungssystem verwenden** wird auf **Ja** festgelegt.
 - Die Spalte **Rabattberechnungsmethode** wird auf **Positionsartikel** festgelegt.
 
 ### <a name="sites-and-warehouses"></a>Standorte und Lagerhäuser
@@ -72,6 +61,7 @@ Angebote können entweder im Vertrieb oder im Supply Chain Management erstellt w
 + Die Spalten **Frachtkonditionen**, **Lieferbedingungen**, **Versandmethode** und **Liefermodus** sind nicht Teil der Standardzuordnungen. Um diese Spalten zuzuordnen, müssen Sie eine Wertzuordnung, die für die Daten in den Organisationen, zwischen denen die Tabelle synchronisiert wird, spezifisch ist.
 
 Wenn Sie auch die Field Service-Lösung verwenden, müssen Sie den **Angebotsanforderungspositions-Erstellungs**-Parameter erneut aktivieren. Durch erneutes Aktivieren des Parameters können Sie mit der Schnellerstellungsfunktion weiterhin Angebotspositionen erstellen.
+
 1. Navigieren Sie zu Ihrer Dynamics 365 Sales-Anwendung.
 2. Wählen Sie das Einstellungssymbol in der oberen Navigationsleiste.
 3. Wählen Sie **Erweiterte Einstellungen**.
@@ -123,40 +113,25 @@ Prospect-to-Cash umfasst eine Sammlung von Kerntabellenzuordnungen, die während
 
 | Finance and Operations Apps | Customer Engagement-Apps | Beschreibung |
 |-----------------------------|-----------------------------------|-------------|
-| Verkaufsrechnungskopfzeilen V2    | Rechnungen                          | Die Tabelle „Verkaufsrechnungskopfzeilen V2“ in der Finance and Operations-App enthält Rechnungen für Aufträge und Freitextrechnungen. Ein Filter wird in Dataverse für duales Schreiben angewendet, der alle Freitext-Rechnungsdokumente herausfiltert. |
-| Verkaufsrechnungspositionen V2      | Rechnungsdetails                    |             |
-| Auftragskopfzeilen CDS     | salesorders                       |             |
-| CDS-Auftragspositionen       | salesorderdetails                 |             |
-| Auftragsgrundlagencodes    | msdyn\_salesorderorigins          |             |
-| CDS-Verkaufsangebotskopf  | Angebote                            |             |
-| CDS-Verkaufsangebotspositionen   | quotedetails                      |             |
+[Alle Produkte](mapping-reference.md#138) | msdyn_globalproducts | |
+[Debitoren V3](mapping-reference.md#101) | Konten | |
+[Debitoren V3](mapping-reference.md#116) | Kontakte | |
+[Kontakte V2](mapping-reference.md#221) | msdyn_contactforparties | |
+[Auftragskopfzeilen CDS](mapping-reference.md#217) | salesorders | |
+[CDS-Auftragspositionen](mapping-reference.md#216) | salesorderdetails | |
+[CDS-Verkaufsangebotskopf](mapping-reference.md#215) | Angebote | |
+[CDS-Verkaufsangebotspositionen](mapping-reference.md#214) | quotedetails | |
+[Freigegebene Produkte V2](mapping-reference.md#189) | msdyn_sharedproductdetails | |
+[Verkaufsrechnungskopfzeilen V2](mapping-reference.md#118) | Rechnungen | Die Tabelle „Verkaufsrechnungskopfzeilen V2“ in der Finance and Operations-App enthält Rechnungen für Aufträge und Freitextrechnungen. Ein Filter wird in Dataverse für duales Schreiben angewendet, der alle Freitext-Rechnungsdokumente herausfiltert. |
+[Verkaufsrechnungspositionen V2](mapping-reference.md#117) | Rechnungsdetails | |
+[Auftragsgrundlagencodes](mapping-reference.md#186) | msdyn_salesorderorigins | |
 
-Hier sind die zugehörigen Kerntabellenzuordnungen für Prospect-to-Cash:
-
-+ [Debitoren V3 zu Konten](customer-mapping.md#customers-v3-to-accounts)
-+ [CDS-Kontakte V2 zu Kontakten](customer-mapping.md#cds-contacts-v2-to-contacts)
-+ [Debitoren V3 zu Kontakten](customer-mapping.md#customers-v3-to-contacts)
-+ [Freigegebene Produkte V2 zu msdyn_sharedproductdetails](product-mapping.md#released-products-v2-to-msdyn_sharedproductdetails)
-+ [Alle Produkte zu msdyn_globalproducts](product-mapping.md#all-products-to-msdyn_globalproducts)
-+ [Preisliste](product-mapping.md)
+Informationen zu Preislisten finden Sie unter [Einheitliche Produktumgebung](product-mapping.md).
 
 ## <a name="limitations"></a>Einschränkungen
+
 - Rücklieferungen werden nicht unterstützt.
 - Gutschriften werden nicht unterstützt.
-- Für die Stammdaten müssen Finanzdimensionen festgelegt werden, z. B. Debitor und Kreditor. Wenn ein Kunde zu einem Angebot oder Auftrag hinzugefügt wird, fließen die mit dem Kundendatensatz verknüpften Finanzdimensionen automatisch in den Auftrag ein. Derzeit enthält duales Schreiben keine Daten zu Finanzdimensionen für Stammdaten. 
+- Für die Stammdaten müssen Finanzdimensionen festgelegt werden, z. B. Debitor und Kreditor. Wenn ein Kunde zu einem Angebot oder Auftrag hinzugefügt wird, fließen die mit dem Kundendatensatz verknüpften Finanzdimensionen automatisch in den Auftrag ein. Derzeit enthält duales Schreiben keine Daten zu Finanzdimensionen für Stammdaten.
 
-[!include [symbols](../../includes/dual-write-symbols.md)]
-
-[!include [sales invoice](includes/SalesInvoiceHeaderV2Entity-invoice.md)]
-
-[!include [sales invoice line](includes/SalesInvoiceLineV2Entity-invoicedetail.md)]
-
-[!include [sales order header](includes/SalesOrderHeaderCDSEntity-salesorder.md)]
-
-[!include [sales order line](includes/SalesOrderLineCDSEntity-salesorderdetails.md)]
-
-[!include [sales order origin](includes/SalesOrderOriginEntity-msdyn-salesorderorigin.md)]
-
-[!include [sales quotation header](includes/SalesQuotationHeaderCDSEntity-quote.md)]
-
-[!include [sales quotation line](includes/SalesQuotationLineCDSEntity-QuoteDetails.md)]
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

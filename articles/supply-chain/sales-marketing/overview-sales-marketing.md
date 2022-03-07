@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 92303
 ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f03db7f830d0b7efa4ba32b9e194a4e3a65266e8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7b079e560f006c7dc9df1cb6e4642f6bff0e1417
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428499"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5218416"
 ---
 # <a name="sales-and-marketing-overview"></a>Vertriebs- und Marketingübersicht
 
@@ -125,3 +124,6 @@ Bei einer Proforma-Rechnung handelt es sich um eine Rechnung, die vor dem Buchen
 #### <a name="blogs"></a>Blogs
 
 Einen Überblick über einen Verkaufsprozess finden Sie im Beitrag [Vertriebsarbeit in Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/05/15/how-sales-work-in-dynamics-365-for-finance-and-operations).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

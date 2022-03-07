@@ -1,27 +1,26 @@
 ---
 title: Globalisierungsressourcen
 description: Dieses Thema enthält eine Liste mit Ressourcen, durch die Sie mehr über länder-/regionsspezifische Funktionalität und Angebote erfahren können.
-author: ShylaThompson
+author: kfend
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 02/19/2021
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: sericks
 ms.custom: 104173
 ms.search.region: Global
-ms.author: sericks
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ee422b2bdc8b94c2a465d0e48f5da983a410674
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 26411c24751f698a6789bbbd687aca8f378f7d65
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685052"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5560917"
 ---
 # <a name="globalization-resources"></a>Globalisierungsressourcen
 
@@ -51,12 +50,11 @@ Die folgenden Ressourcen enthalten Tipps und Hinweise für Entwickler und ISVs, 
 -   [Ländercodes – ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
 ### <a name="regulatory-updates-and-communication"></a>Rechtliche Updates und Kommunikation
-Die folgenden Ressourcen enthalten Informationen zu geplanten und neuen Lokalisierungsfunktionen. 
+In den folgenden Ressourcen finden Sie weitere Informationen zu geplanten und neuen Lokalisierungsfunktionen. 
 
 #### <a name="regulatory-updates"></a>Neues zu rechtlichen Bestimmungen
--   [Neues zu rechtlichen Bestimmungen](../../../finance/localizations/regulatory-updates.md)
--   [Lokalisierungsportal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (Wöchentliche Aktualisierung)
--   [Problemsuche in den Lifecycle Services (LCS)](../lifecycle-services/issue-search-lcs.md) (täglich aktualisiert)
+-   [Aktualisierungen der Vorschriften](../../../finance/localizations/regulatory-updates.md)
+-   [Problemsuche in Lifecycle Services (LCS)](../lifecycle-services/issue-search-lcs.md) (täglich aktualisiert)
 
 #### <a name="communication-and-alerts"></a>Kommunikation und Warnungen
 -   [Rechtliche Überwachung und Kommunikation von rechtlichen Aktualisierungen](regulatory-watch-communication.md)
@@ -133,3 +131,6 @@ Weitere Informationen finden Sie im [Hilfesystem](../../fin-ops/get-started/help
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

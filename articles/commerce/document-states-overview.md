@@ -2,29 +2,27 @@
 title: Dokumentstatus und -Lebenszyklus
 description: In diesem Thema werden die verschiedenen Dokumentstatus von Seitenelementen in Microsoft Dynamics 365 Commerce behandelt.
 author: phinneyridge
-manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8aad7ef8425e46182c669686710dfc178abc418f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ad8547fe6b36caf75ce78cb09fb2caf901c63afe43fa4755bb9e5c69427829d4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412570"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727580"
 ---
-# <a name="document-states-and-lifecycle"></a>Dokumentstatus und -Lebenszyklus
+# <a name="document-states-and-lifecycle"></a>Dokumentstatus und -lebenszyklus
 
 [!include [banner](includes/banner.md)]
 
@@ -61,3 +59,6 @@ Die folgende Tabelle enthält die möglichen Dokumentstatus von Seitenelementen 
 [Übersicht über Vorlagen und Layouts](templates-layouts-overview.md)
 
 [Anpassen der Sitenavigation](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,41 +1,41 @@
 ---
 title: Übersicht über die Steuerintegration für Commerce-Kanäle
 description: Dieses Thema bietet einen Überblick der Steuerintegrationsfunktionen, die in Dynamics 365 Commerce verfügbar sind.
-author: josaw
+author: EvgenyPopovMBS
 manager: annbe
-ms.date: 02/01/2019
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 ms.reviewer: josaw
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2f1abf29058e773f1645301fcd7a960df488d92b
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 35612714f9443f1f37b744d87eda373df84aaadd
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017466"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343286"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Übersicht über die Steuerintegration für Commerce-Kanäle
 
 [!include [banner](../includes/banner.md)]
 
-## <a name="introduction"></a>Einführung
+Dieses Thema bietet einen Überblick der Steuerintegrationsfunktionen, die in Dynamics 365 Commerce verfügbar sind. 
 
-Dieses Thema bietet einen Überblick der Steuerintegrationsfunktionen, die in Dynamics 365 Commerce verfügbar sind. Die Steuerintegration enthält die Integration in unterschiedliche steuerbezogene Geräte und Dienste, die Benutzern die Steuerregistrierung von Verkäufen entsprechend lokaler Steuergesetze zur Verhinderung von Steuerhinterziehung im Einzelhandel ermöglicht. Nachfolgend einige typische Szenarien, die erfasst werden können, indem die Steuerintegration verwendet wird:
+Die Steuerintegration enthält die Integration in unterschiedliche steuerbezogene Geräte und Dienste, die Benutzern die Steuerregistrierung von Verkäufen entsprechend lokaler Steuergesetze zur Verhinderung von Steuerhinterziehung im Einzelhandel ermöglicht. Nachfolgend einige typische Szenarien, die erfasst werden können, indem die Steuerintegration verwendet wird:
 
 - Erfassen Sie einen Verkauf auf einem steuerbezogenen Gerät, das mit einem Retail Point of Sale (POS) verbunden ist, z. B. einem Belegdrucker, und drucken Sie einen Steuerbeleg für den Kunden.
 - Senden Sie Informationen, die Verkäufen und Rücksendungen zugeordnet sind, die in Retail POS abgeschlossen werden, sicher an einen externen Webdienst, der von der Steuerbehörde betrieben wird.
 - Gewährleisten Sie die Unveränderbarkeit von Verkaufsbuchungsdaten durch digitale Signaturen.
 
-Die Steuerintegrationsfunktionen sind ein Framework, das eine allgemeine Lösung für die weitere Entwicklung und Anpassung der Integration zwischen Retail POS und steuerbezogenen Geräten und Diensten bereitstellt. Die Funktionalität umfasst auch Beispiele für die fiskalische Integration, die grundlegende Szenarien für bestimmte Länder oder Regionen unterstützen und die mit bestimmten fiskalischen Geräten oder Diensten arbeiten. Ein Steuerintegrationsbeispiel besteht aus mehreren Erweiterungen von Commerce-Komponenten und ist im Software Development Kit (SDK) enthalten. Weitere Informationen zu Steuerintegrationsbeispielen finden Sie unter [Steuerintegrationsbeispiele im Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). Informationen zur Installation und Verwendung des Retail SDK finden Sie unter [Retail Software Development Kit (SDK) Architektur](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+Die Steuerintegrationsfunktionen sind ein Framework, das eine allgemeine Lösung für die weitere Entwicklung und Anpassung der Integration zwischen Retail POS und steuerbezogenen Geräten und Diensten bereitstellt. Die Funktionalität umfasst auch Beispiele für die fiskalische Integration, die grundlegende Szenarien für bestimmte Länder oder Regionen unterstützen und die mit bestimmten fiskalischen Geräten oder Diensten arbeiten. Ein Steuerintegrationsbeispiel besteht aus mehreren Erweiterungen von Commerce-Komponenten und ist im Software Development Kit (SDK) enthalten. Weitere Informationen zu den Beispielen für die steuerliche Integration finden Sie unter [Beispiele für die steuerliche Integration im Commerce SDK](#fiscal-integration-samples-in-the-commerce-sdk). Informationen zur Installation und Verwendung des Commerce SDK finden Sie unter [Retail Software Development Kit (SDK) Architektur](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 Um andere Szenarien zu unterstützen, die nicht von einem Steuerintegrationsbeispiel unterstützt werden, um Retail POS in andere steuerbezogene Geräte oder Dienste zu integrieren, oder um Anforderungen anderer Länder/Regionen zu erfüllen, müssen Sie entweder ein vorhandenes Steuerintegrationsbeispiel erweitern oder ein neues Beispiel mithilfe eines vorhandenen Beispiels erstellen.
 
@@ -46,7 +46,7 @@ Ein Steuerregistrierungsprozess in Retail POS kann aus einem oder mehreren Schri
 - **Commerce Runtime (CRT)-Erweiterung** – Diese Komponente serialisiert Transaktions-/Ereignisdaten in das Format, das auch für die Interaktion mit dem steuerbezogenen Gerät verwendet wird, analysiert Antworten vom steuerbezogenen Gerät und speichert die Antworten in der Kanaldatenbank. Die Erweiterung definiert auch die spezifischen Transaktionen und Ereignisse, die erfasst werden müssen. Diese Komponente wird häufig als *Steuerdokumentanbieter* bezeichnet.
 - **Hardwarestationserweiterung** – Diese Komponente initialisiert die Kommunikation mit dem steuerbezogenen Gerät, sendet Anforderungen und direkte Befehle an das steuerbezogene Gerät auf Basis der Transaktions-/Ereignisdaten, die aus dem Steuerdokument extrahiert werden, und empfängt Antworten vom steuerbezogenen Gerät. Diese Komponente wird häufig als *Steuerkonnektor* bezeichnet.
 
-Ein Steuerintegrationsbeispiel für ein steuerbezogenes Gerät enthält jeweils die CRT und Hardwarestationserweiterungen für einen Steuerdokumentanbieter und Steuerkonnektor. Es enthält auch die folgenden Komponentenkonfigurationen:
+Ein Steuerintegrationsbeispiel für ein steuerbezogenes Gerät enthält jeweils die CRT und Hardwarestationserweiterungen für einen Steuerdokumentanbieter und Steuerkonnektor. Es enthält auch die folgenden Komponentenkonfigurationen:
 
 - **Steuerdokumentanbieter-Konfiguration** – Diese Konfiguration definiert eine Ausgabemethode und ein Format für Steuerdokumente. Es enthält auch eine Datenzuordnung für Steuern und Zahlungsmethoden, um Daten aus Retail POS mit den Werten, die in der Firmware des steuerbezogenen Geräts vordefiniert werden, kompatibel zu machen.
 - **Steuerkonnektorkonfiguration** – Diese Konfiguration definiert die physische Kommunikation mit dem betreffenden steuerbezogenen Gerät.
@@ -56,15 +56,15 @@ Ein Steuerregistrierungsprozess für ein bestimmtes POS-Register wird von einer 
 Das folgende Beispiel zeigt einen typischen Steuerregistrierungs-Ausführungsfluss für ein steuerbezogenes Gerät. Der Fluss startet mit einem Ereignis im POS (beispielsweise dem Abschluss einer Verkaufsbuchung) und implementiert die folgende Schrittfolge:
 
 1. Der POS fordert ein Steuerdokument von CRT an.
-2. CRT bestimmt, ob das aktuelle Ereignis eine Steuerregistrierung erfordert.
-3. Auf Grundlage der Steuerregistrierungsprozess-Einstellungen identifiziert CRT einen Steuerkonnektor und entsprechenden Steuerdokumentanbieter, der für die Steuerregistrierung verwendet werden soll.
-4. CRT führt den Steuerdokumentanbieter aus, der ein Steuerdokument generiert (beispielsweise ein XML-Dokument), das die Transaktion oder das Ereignis darstellt.
-5. Der POS sendet das Steuerdokument, das CRT vorbereitet, an eine Hardwarestation.
-6. Die Hardwarestation führt den Steuerkonnektor aus, der das Steuerdokument verarbeitet und es an das steuerbezogene Gerät oder den steuerbezogenen Dienst kommuniziert.
-7. Der POS analysiert die Antwort vom steuerbezogenen Gerät oder Dienst, um zu bestimmen, ob die Steuerregistrierung erfolgreich war.
-8. CRT speichert die Antwort in der Kanaldatenbank.
+1. CRT bestimmt, ob das aktuelle Ereignis eine Steuerregistrierung erfordert.
+1. Auf Grundlage der Steuerregistrierungsprozess-Einstellungen identifiziert CRT einen Steuerkonnektor und entsprechenden Steuerdokumentanbieter, der für die Steuerregistrierung verwendet werden soll.
+1. CRT führt den Steuerdokumentanbieter aus, der ein Steuerdokument generiert (beispielsweise ein XML-Dokument), das die Transaktion oder das Ereignis darstellt.
+1. Der POS sendet das Steuerdokument, das CRT vorbereitet, an eine Hardwarestation.
+1. Die Hardwarestation führt den Steuerkonnektor aus, der das Steuerdokument verarbeitet und es an das steuerbezogene Gerät oder den steuerbezogenen Dienst kommuniziert.
+1. Der POS analysiert die Antwort vom steuerbezogenen Gerät oder Dienst, um zu bestimmen, ob die Steuerregistrierung erfolgreich war.
+1. CRT speichert die Antwort in der Kanaldatenbank.
 
-![Lösungsschema](media/emea-fiscal-integration-solution.png "Lösungsschema")
+![Lösungsschema.](media/emea-fiscal-integration-solution.png "Lösungsschema")
 
 ## <a name="error-handling"></a>Fehlerbehandlung
 
@@ -100,11 +100,11 @@ Der POS führt die Integritätsprüfung aus, wenn die folgenden Ereignisse auftr
 
 Wenn die Integritätsprüfung fehlschlägt, wird im POS das Integritätsprüfungsdialogfeld angezeigt. Dieses Dialogfeld enthält die folgenden Schaltflächen:
 
-- **OK** – Mit dieser Schaltfläch kann der Mitarbeiter einen Integritätsprüfungsfehler ignorieren und den Arbeitsgang weiter verarbeiten. Mitarbeiter können diese Schaltfläche nur auswählen, wenn die Berechtigung **integritätsprüfungsfehler überspringen zulassen**  aktiviert ist.
+- **OK** – Mit dieser Schaltfläch kann der Mitarbeiter einen Integritätsprüfungsfehler ignorieren und den Arbeitsgang weiter verarbeiten. Mitarbeiter können diese Schaltfläche nur auswählen, wenn die Berechtigung **integritätsprüfungsfehler überspringen zulassen** aktiviert ist.
 - **Abbrechen** – Wenn der Mitarbeiter diese Schaltfläche auswählt, bricht der POS die letzte Aktion ab (beispielsweise wird ein Artikel der neuen Transaktlion nicht hinzugefügt).
 
 > [!NOTE]
-> Die Integritätsprüfung wird nur ausgeführt, wenn der aktuelle Arbeitsgang eine Steuererfassung erfordert und wenn der Parameter **Bei Fehler fortsetzen** für den aktuellen Schritt des steuerlichen Anmeldeprozesses deaktiviert wird. Weitere Informationen finden Sie unter[Fehlerbehandlungseinstellungen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+> Die Integritätsprüfung wird nur ausgeführt, wenn der aktuelle Arbeitsgang eine Steuererfassung erfordert und wenn der Parameter **Bei Fehler fortsetzen** für den aktuellen Schritt des steuerlichen Anmeldeprozesses deaktiviert wird. Weitere Informationen finden Sie unter [Fehlerbehandlungseinstellungen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 ## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Speichern der Steuerantwort in der Steuertransaktion
 
@@ -118,6 +118,8 @@ Eine Steuertransaktion speichert die folgenden Details:
 - Der Status der Steuerregistrierung: **Abgeschlossen** für die erfolgreiche Registrierung, **Übersprungen**, wenn der Operator die Option **Überspringen** für eine fehlerhafte Registrierung ausgewählt hat, oder **Als registriert markiert**, wenn der Operator die Option **Als registriert markieren** ausgewählt hat.
 - Infocodetransaktionen im Zusammenhang mit einer ausgewählten Steuertransaktion. Um die Infocodetransaktionen anzuzeigen, wählen Sie im Inforegister **Steuertransaktionen** eine Steuertransaktionen aus, die den Status **Übersprungen** oder **Als registriert markiert** aufweist, und wählen Sie dann **Infocodetransaktionen** aus.
 
+Indem Sie **Erweiterte Daten** wählen, können Sie auch einige Eigenschaften der fiskalischen Transaktion anzeigen. Die Liste der Eigenschaften, die angezeigt werden können, ist spezifisch für die Fiskalregistrierungsfunktion, die die fiskalische Transaktion erzeugt hat. Sie können z. B. die digitale Signatur, die fortlaufende Nummer, den Thumbprint des Zertifikats, die Identifizierung des Hash-Algorithmus und andere Eigenschaften der fiskalischen Transaktion für die digitale Signierfunktion für Frankreich anzeigen.
+
 ## <a name="fiscal-texts-for-discounts"></a>Steuertexte für Rabatte
 
 Einige Länder/Regionen haben spezielle Anforderungen zu zusätzlichen Texten, die auf Steuerbelege gedruckt werden müssen, wenn verschiedene Arten von Rabatten angewendet werden. Mit den Steuerintegrationsfunktionen können Sie einen bestimmten Text für einen Rabatt einrichten, der nach einer Rabattposition auf einen Steuerbeleg gedruckt wird. Bei manuellen Rabatten können Sie einen Steuertext für den Infocode konfigurieren, der als **Produktrabatt**-Infocode im POS-Funktionsprofil angegeben ist. Weitere Informationen zum Einrichten von Steuertexten für Rabatte finden Sie unter [Einrichten von Steuertexten für Rabatte](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
@@ -129,23 +131,29 @@ Die Steuerintegrationsfunktionen unterstützen die Generierung von Tagesendeausz
 - Neue Schaltflächen, die die entsprechenden Vorgänge ausführen, sollten zum POS-Bildschirmlayout hinzugefügt werden. Weitere Informationen finden Sie unter [Einrichten von Steuer X/Z-Berichten vom POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
 - Im Steuerintegrationsbeispiel sollten diese Vorgänge mit den gewünschten Vorgängen des steuerbezogenen Geräts abgeglichen werden.
 
-## <a name="fiscal-integration-samples-in-the-retail-sdk"></a>Steuerintegrationsbeispiele im Retail SDK
+## <a name="fiscal-integration-samples-in-the-commerce-sdk"></a>Beispiele für die Fiskalintegration im Commerce SDK
 
-Die folgenden Steuerintegrationsbeispiele sind derzeit im Retail SDK verfügbar:
+Die folgenden Beispiele für die Fiskalintegration sind derzeit im Commerce SDK verfügbar:
 
-- [Beispiel für die Integration eines Belegdruckers für Italien](emea-ita-fpi-sample.md)
-- [Beispiel für Belegdruckerintegration für Polen](emea-pol-fpi-sample.md)
-- [Integrationsbeispiel für Steuererfassungsdienst für Österreich](emea-aut-fi-sample.md)
-- [Integrationsbeispiel für Steuererfassungsdienst für Tschechische Republik](emea-cze-fi-sample.md)
+- [Beispiel für die Integration eines Belegdruckers für Italien](./emea-ita-fpi-sample.md)
+- [Beispiel für Belegdruckerintegration für Polen](./emea-pol-fpi-sample.md)
+- [Integrationsbeispiel für Steuererfassungsdienst für Österreich](./emea-aut-fi-sample.md)
+- [Integrationsbeispiel für Steuererfassungsdienst für Tschechische Republik](./emea-cze-fi-sample.md)
 - [Beispiel zur Integration der Kontrolleinheit für Schweden](./emea-swe-fi-sample.md)
 - [Integrationsbeispiel für Steuererfassungsdienst für Deutschland](./emea-deu-fi-sample.md)
 
-Die folgenden Steuerintegrationsfunktionen sind ebenfalls im Retail SDK verfügbar, nutzen derzeit jedoch nicht das Steuerintegrationsframework. Die Migration dieser Funktionen in das Steuerintegrationsframework ist für spätere Aktualisierungen geplant.
+Die folgende Fiskalintegrationsfunktionalität wird auch durch die Verwendung des Fiskalintegrations-Frameworks implementiert, ist aber "out of the box" verfügbar und ist nicht im Commerce SDK enthalten:
 
+- [Fiskalische Registrierung für Brasilien](./latam-bra-commerce-localization.md#fiscal-registration-for-brazil)
+- [Digitale Signatur für Frankreich](./emea-fra-cash-registers.md)
 
-- [Digitale Signatur für Frankreich](emea-fra-cash-registers.md)
-- [Digitale Signatur für Norwegen](emea-nor-cash-registers.md)
+Die folgende Fiskalintegrationsfunktionalität ist ebenfalls im Commerce SDK verfügbar, nutzt aber derzeit nicht das Fiskalintegrations-Framework. Die Migration dieser Funktionen in das Steuerintegrationsframework ist für spätere Aktualisierungen geplant.
 
-Die folgenden älteren Funktionen für die steuerliche Integration, die im Retail SDK verfügbar sind, verwenden nicht das Framework für die steuerliche Integration und werden in späteren Updates nicht mehr unterstützt:
+- [Digitale Signatur für Norwegen](./emea-nor-cash-registers.md)
+
+Die folgende, im Commerce SDK verfügbare Funktionalität zur Fiskalintegration nutzt nicht das Fiskalintegrations-Framework und wird in späteren Updates außer Betrieb genommen:
 
 - [Beispiel zur Integration der Kontrolleinheit für Schweden (veraltet)](./retail-sdk-control-unit-sample.md)
+- [Digitale Signatur für Frankreich (veraltet)](./emea-fra-deployment.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

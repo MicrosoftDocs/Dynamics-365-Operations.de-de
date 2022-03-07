@@ -1,6 +1,6 @@
 ---
 title: Neuerungen oder Änderungen in Dynamics 365 Human Resources (19. November 2021)
-description: Dieses Thema beschreibt Funktionen, die entweder neu sind oder in der eigenständigen Microsoft Dynamics 365 Human Resources für den 19. November 2021 geändert wurden.
+description: Dieses Thema beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources ab 19. November 2021 neu sind oder geändert wurden.
 author: marcelbf
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 618d90f95637002f444b334e16d3fef466dda65e
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 3a86c1c24fbc758f4e3d0fd8b052e02078bee41e
+ms.sourcegitcommit: 88f8a0369ce66b82314db9639491b695e18a7e5c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087473"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7902602"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-november-19-2021"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources (19. November 2021)
 

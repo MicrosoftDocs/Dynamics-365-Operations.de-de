@@ -2,9 +2,11 @@
 title: ER-Konfigurationen zum Ausfüllen von PDF-Vorlagen entwerfen
 description: Dieses Thema enthält Informationen dazu, wie ein elektronisches Berichtsformat (ER) gestaltet wird, um eine PDF-Vorlage auszufüllen.
 author: NickSelin
-ms.date: 03/24/2021
+manager: AnnBe
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 81da1b4f9ca5d2884122266312b2f7cb298572eef3a5c6151daba2f9b17326f2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: de31469e79addfb82b3b57e647ff82e4d254881a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758287"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688124"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>ER-Konfigurationen zum Ausfüllen von PDF-Vorlagen entwerfen
 
@@ -45,21 +47,21 @@ Bevor Sie beginnen, müssen Sie eine der folgenden Arten des Zugriffs haben, abh
 
 Außerdem müssen Sie die Prozedur [Konfigurationsanbieter anlegen ausfüllen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-Laden Sie abschließend die folgenden Dateien herunter.
+Schließlich müssen Sie die folgenden Dateien herunterladen von[CustomerSource](https://go.microsoft.com/fwlink/?linkid=874111).
 
 | Inhaltsbeschreibung                       | Dateiname                                     |
 |-------------------------------------------|-----------------------------------------------|
-| Vorlage für die erste Seite des Berichts | [IntrastatReportTemplate1.pdf](https://download.microsoft.com/download/0/8/3/0832c82b-4448-4562-afbf-01e0efc8d999/IntrastatReportTemplate1.pdf)                  |
-| Vorlage für die anderen Seiten des Berichts    | [IntrastatReportTemplate2.pdf](https://download.microsoft.com/download/c/7/a/c7a8a806-2192-4034-9052-e8b84b527d5e/IntrastatReportTemplate2.pdf)                  |
-| Beispielformat ER - PDF                          | [Intrastat-Bericht (PDF) .version.1.1.xml](https://download.microsoft.com/download/a/8/7/a87aea3e-3f60-404c-8899-c471d20e7ea9/IntrastatreportPDFversion1.1.xml)        |
-| Beispiel-ER-Format - Excel                          | [Intrastat (Import von Excel).version.1.1.xml](https://download.microsoft.com/download/a/2/c/a2c0c145-d989-4e55-9d47-9647c02e4ee4/IntrastatimportfromExcelversion1.1.xml) |
-| Beispieldatensatz                            | [Intrastat-Beispiel data.xlsx](https://download.microsoft.com/download/9/f/1/9f1c5b96-3800-475f-8cf6-1ddd42873758/Intrastatsampledata.xlsx)                    |
+| Vorlage für die erste Seite des Berichts | [IntrastatReportTemplate1.pdf](https://mbs.microsoft.com/Files/public/CS)                  |
+| Vorlage für die anderen Seiten des Berichts    | [IntrastatReportTemplate2.pdf](https://mbs.microsoft.com/Files/public/CS/AX/IntrastatReportTemplate2.pdf)                  |
+| Beispielformat ER - PDF                          | [Intrastat-Bericht (PDF) .version.1.1.xml](https://mbs.microsoft.com/Files/public/CS/AX/IntrastatreportPDFversion11.xml)        |
+| Beispiel-ER-Format - Excel                          | [Intrastat (Import von Excel).version.1.1.xml](https://mbs.microsoft.com/Files/public/CS/AX/IntrastatimportfromExcelversion11.xml) |
+| Beispieldatensatz                            | [Intrastat-Beispiel data.xlsx](https://mbs.microsoft.com/Files/public/CS/AX/Intrastatsampledata.xlsx)                    |
 
 ## <a name="design-the-format-configuration"></a>Eine Formatkonfiguration entwerfen
 
 ### <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a>Zugriff auf die Liste von Microsoft bereitgestellte von den Konfigurationen erhalten
 
-1. Wechseln Sie zu **Organisationsverwaltung \> Arbeitsbereiche \> Elektronische Berichterstellung**.
+1. Wechseln Sie zu **Organisationsverwaltung  \>Arbeitsbereiche \>  Elektronische Berichterstellung**.
 2. Überprüfen Sie, ob der Anbieter **Litware, Inc** verfügbar und als aktiv markiert ist.
 3. Auf der Kachel für den Anbieter **Microsoft**, wählen Sie **Repositorys** aus.
 
@@ -97,7 +99,7 @@ Laden Sie abschließend die folgenden Dateien herunter.
 
 4. Im Drop-Down-Dialogfeld in der Feldgruppe **Neu**, wählen Sie die Option **Format basierend aud Intrastat-Datenmodell** aus.
 5. Geben Sie im Feld **Name** den **Intrastat-Bericht (PDF)** ein.
-6. Im Feld **Beschreibung** geben Sie **Intrastat-Bericht im PDF-Format** ein.
+6. Im Feld **Beschreibung** geben Sie  **Intrastat-Bericht im PDF-Format** ein.
 
     > [!NOTE]
     > Der aktive Konfigurationsanbieter wird automatisch eingegeben. Dieser Anbieter ist in der Lage, diese Konfiguration verwalten. Obwohl andere Anbieter diese Konfiguration verwenden können, werden sie nicht in der Lage sein, sie zu verwalten.
@@ -115,11 +117,11 @@ In jedem beliebigen PDF-Viewer öffnen Sie die PDF-Vorlagen Sie, die heruntergel
 
 Die folgende Abbildung zeigt die PDF-Vorlage für die erste Seite des Berichts an.
 
-![Vorlage 1.](media/rcs-ger-filloutpdf-template1.png)
+![Vorlagen 1](media/rcs-ger-filloutpdf-template1.png)
 
 Die folgende Abbildung zeigt die PDF-Vorlage für die anderen Seiten des Berichts an.
 
-![Vorlage 2.](media/rcs-ger-filloutpdf-template2.png)
+![Vorlagen 2](media/rcs-ger-filloutpdf-template2.png)
 
 1. Wählen Sie auf der Seite **Konfigurationen** die Option **Designer** aus.
 2. Wählen Sie **Stamm hinzufügen** aus.
@@ -133,7 +135,7 @@ Die folgende Abbildung zeigt die PDF-Vorlage für die anderen Seiten des Bericht
 7. Wählen Sie **OK**.
 8. Klicken Sie im Aktivitätsbereich auf die Registerkarte **Importieren**, und wählen Sie **Importieren aus PDF** aus.
 
-    Wenn ein auffüllbares PDF-Dokument als Vorlage für dieses ER-Format importiert wird, werden alle erforderlichen ER-Formatelemente (**PDF-Datei**, **Feldgruppe** und **Feld** Elemente) automatisch im Format erstellt, das entwickelt wurde, basierend auf der Struktur des PDF-Dokuments, das importiert wird.
+    Wenn ein auffüllbares PDF-Dokument als Vorlage für dieses ER-Format importiert wird, werden alle erforderlichen ER-Formatelemente (**PDF-Datei**,**Feldgruppe** und **Feld** Elemente) automatisch im Format erstellt, das entwickelt wurde, basierend auf der Struktur des PDF-Dokuments, das importiert wird.
 
 9. Wählen Sie **Durchsuchen** aus. Navigieren Sie zu **IntrastatReportTemplate1.pdf** und wählen Sie die Datei aus, die Sie eben als Vorbedingung heruntergeladen haben.
 10. Wählen Sie **OK**.
@@ -144,19 +146,19 @@ Die folgende Abbildung zeigt die PDF-Vorlage für die anderen Seiten des Bericht
 
     Ist die Option auf **Nein** festgelegt, werden die erforderlichen ER-Formatelemente als flache Liste von Elementen erstellt, die im Formatelementr **PDF-Datei** geschachtelt werden, das erstellt wird.
 
-12. Wählen Sie **OK** aus.
+12. Wählen Sie **OK**.
 
-    ![Import aus PDF-Dialogfeld.](media/rcs-ger-filloutpdf-importtemplate.png)
+    ![Import aus PDF-Dialogfeld](media/rcs-ger-filloutpdf-importtemplate.png)
 
 13. Erweitern Sie in der Struktur **Ausgabe**.
 
     Beachten Sie, dass die Komponente **PDF-Datei** automatisch erstellt wurde, um die Erstellung der ersten Seite des Berichts zu verwalten, der zur Laufzeit generiert wird.
 
-14. Erweitern Sie in der Struktur **Ausgabe \> PDF-Datei**.
+14. Erweitern Sie in der Struktur **Ausgabe \>PDF-Datei**.
 
     Beachten Sie, dass die strukturierte Liste der Formatelementen automatisch in diesem ER-Format erstellt wurde, auf der die Struktur des ausfüllbaren PDF-Dokuments basiert, die Sie eben importierten.
 
-15. Wählen Sie in der Struktur **Ausgabe \> PDF-Datei**.
+15. Wählen Sie in der Struktur **Ausgabe \>PDF-Datei**.
 16. Geben Sie im Feld **Name** **Seite 1** ein.
 
     Dieses Formatelement wird verwendet, um die erste Seite des **Intrastat-Steuerelement** Berichts zu generieren. Die Seite zeigt eine Zusammenfassung des Berichts und Details der Außenhandelbuchungen an.
@@ -165,7 +167,7 @@ Die folgende Abbildung zeigt die PDF-Vorlage für die anderen Seiten des Bericht
 
     Wenn Sie das Feld **Kulturpräferenz** leer lassen, wir die Einstellung **Kulturpräferenz** des übergeordneten **zusammengeführten PDF-Dokuments** das Gebietsschema des Berichts bestimmen, das mithilfe dieses Formatelements erstellt wurde. Das Gebietsschema bestimmt das Format von Werten und Datumswerte auf den Seiten des Berichts. Sie können einen anderen Wert auswählen, um die Einstellung des übergeordneten Artikels zu überschreiben.
 
-17. Im Aktivitätsbereich wählen Sie die Registerkarte **Importieren** aus. Beachten Sie die Schaltfläche **Aktualisierung von PDF-** ist für ausgewählte Formatelement verfügbar geworden **PDF-Datei**.
+17. Im Aktivitätsbereich wählen Sie die Registerkarte **Importieren** aus. Beachten Sie die Schaltfläche **Aktualisierung von PDF-** ist  für ausgewählte Formatelement verfügbar geworden **PDF-Datei**.
 
     Sie können diese Schaltfläche verwenden, um die hochgeladene PDF-Vorlage in das bearbeitbare Format zu importieren. Wenn die aktualisierte PDF-Vorlage importiert wird, wird die Liste der Formatelementen entsprechend geändert:
 
@@ -176,9 +178,9 @@ Die folgende Abbildung zeigt die PDF-Vorlage für die anderen Seiten des Bericht
 
     Beachten Sie, dass das importierte PDF-Dokument dem bearbeiteten ER-Format angehängt wird.
 
-    ![Vorschau PDF-Anhang.](media/rcs-ger-filloutpdf-attachedtemplate.png)
+    ![Vorchau PDF-Anhang](media/rcs-ger-filloutpdf-attachedtemplate.png)
 
-19. Fahren Sie fort, dieses Format zu entwerfen, indem Sie die zweite PDF-Vorlage importieren und erforderliche Berichtsbeziehungen den Datenquellen hinzufügen usw.
+19. Fahren Sie fort, dieses Format zu entwerfen, indem Sie die zweite PDF-Vorlage importieren und erforderliche Berichtsbeziehungen den Datenquellen hinuzufügen, usw. 
 20. Wählen Sie **Speichern**.
 21. Schließen Sie die Seite.
 22. Wählen Sei **Löschen**.
@@ -190,7 +192,7 @@ Um zu ermitteln wie neue **PDF-Fusion**, **PDF-Datei**, **Feldgruppe** und **Fel
 
 Danach importieren Sie das Beispiel-ER-Format, das Sie zuvor heruntergeladen haben, um den **Intrastat-Steuerelement** Bericht im PDF-Format zu generieren. Die erste Seite des Berichts muss eine Zusammenfassung des Berichts und der Details der Außenhandelbuchungen anzeigen, die gemeldet werden. Die anderen Seiten müssen nur Details der Außenhandelbuchungen anzeigen, die als abgeschlossen gemeldet werden.
 
-1. Wählen Sie auf der Seite **Konfigurationen** **Austausch \> Last von der XML-Datei** aus.
+1. Wählen Sie auf der Seite **Konfigurationen** **Austausch\> Last von der XML-Datei** aus.
 2. Wählen Sie **Durchsuchen** aus. Navigieren Sie zu **Intrastat-Bericht (PDF).Version.1.1.xml** und wählen Sie die Datei aus, die Sie eben als Vorbedingung heruntergeladen haben.
 3. Wählen Sie **OK**.
 
@@ -213,21 +215,21 @@ Danach importieren Sie das Beispiel-ER-Format, das Sie zuvor heruntergeladen hab
 ### <a name="format-mapping"></a>Formularzuordnung
 
 1. Auf der Seite **Formatdesigner** wählen Sie die Registerkarte **Zuordnung** aus.
-2. In der Struktur **Seitenweise darstellen \> Seiten**.
+2. In der Struktur **Seitenweise darstellen \>Seiten**.
 
-    ![Formeldesignerseite, in der das Modell erweitert wird.](media/rcs-ger-filloutpdf-reviewformat.png)
+    ![Formeldesignerseite, in der das Modell erweitert wird](media/rcs-ger-filloutpdf-reviewformat.png)
 
     Beachten Sie jedoch die folgenden Details:
 
-    - Das Formatelement **Ausgabe \> Seite 1** des Tpys **PDF-Datei** ist nicht an eine Datenquelle gebunden und der **Aktiviert** Ausdruck des Formatelements ist leer. Daher wird zur Bearbeitungszeit die PDF-Vorlage **IntrastatReportTemplate1** nur einmal angezeigt, wenn ein einzelnes PDF- Dokument generiert wird.
+    - Das Formatelement  **Ausgabe \> Seite 1** des Tpys **PDF-Datei** ist nicht an eine Datenquelle gebunden und der  **Aktiviert** Ausdruck des Formatelements ist leer. Daher wird zur Bearbeitungszeit die PDF-Vorlage **IntrastatReportTemplate1** nur einmal angezeigt, wenn ein einzelnes PDF- Dokument generiert wird.
     - Das Formularelement **Ausgabe \> Seite N** des Typs **PDF-Datei** ist an die Datenquelle **Paging.PageN** des Typs **Rekordliste** gebunden und der Ausdruck **Aktiviert** von diesem Formatelement ist leer. Daher wird zur Bearbeitungszeit die PDF-Vorlage **IntrastatReportTemplate2** für jeden Datensatz der gebundenen Datensatzliste angezeigt, wenn ein einzelnes PDF-Dokument generiert wird.
     - Da die Formatelemente **Seite 1: PDF-Datei** und **Seite N: PDF-Datei** untergeordnete Elemente des Formatelements **Ausgabe: PDF-Merge-Programms** sind, werden alle PDF-Dokumente, die übernommen werden, in ein einzelnes PDF-Dokument zusammengeführt.
     - Die Felder **Paging.Page1** und **Paging.PageN** Datenquellen werden als Filter der Datensätzen aus der Datenquelle **Paging.Pages** konfiguriert. Diese Datenquelle wird konfiguriert, um die gesamten Außenhandelstransaktionen in Chargen aufzuteilen. Jede Charge enthält bis zu 42 Datensätze. Der folgende ER-Ausdruck wird verwendet, um die Transaktiionen in Chargen aufzuteilen:
 
         SPLITLIST (Totals.CommodityRecord, 42)
 
-    - Die **Paging.Pages** Datenquelle enthält das **Paging.Pages.Enumerated**, das die einzelnen Datensätze zurückgibt, die in einer Charge enthalten ist. Zu diesen Details zählt die Datensatzsequenz in der aktuellen Charge (das Feld **Paging.Pages.Enumerated.Number** ). Das Feld **Paging.Pages.Enumerated.Number** wird im Ausdruck **Name** des Formatelementes **PDF-Feld** verwendet, um einen Feldnamen dynamisch zu generieren, der auf der Transaktionsnummer einer Charge basiert. Der Feldname, der generiert wird, wird dann verwendet, um das korrekte PDF-Feld in der PDF-Vorlage einzugeben, die verwendet wird.
-    - Das **Ausgabe \> N Seite \> Details 2** Formatelement des Typs **PDF-Gruppe** ist an die **Paging.PageN.Enumerated** Datenquelle (oder **\@.Enumerated**, wenn der Ansichtsmodus **Relativer Pfad** verwendet wird), des **Rekordliste** gebunden. Daher werden zur Bearbeitungszeit die geschachtelten Elemente dieser PDF-Gruppe für jeden einzelnen Datensatz der gebundenen Datensatzliste eingetragen. Auf diese Weise werden einzelne PDF-Positionen virtuell generiert, wenn für jeden n-ten der 42 Datensätze der Liste **Paging.PageN.Enumerated** die folgenden PDF-Felder ausgefüllt werden: Datum N, Übertragungsrichtung N, Waren N, usw. Daher ähnelt in dieser Hinsicht das Verhalten der **Feldgruppe** dieses Formatelements dem Verhalten der Formatelemente **XML \> Sequenz** und **Text \> Sequenz**.
+    - Die **Paging.Pages** Datenquelle enthält das **Paging.Pages.Enumerated**, das die einzelnen Datensätze zurückgibt, die in einer Charge enthalten ist. Zu diesen Details zählt die Datensatzsequenz in der aktuellen Charge (das Feld **Paging.Pages.Enumerated.Number** ). Das Feld **Paging.Pages.Enumerated.Number** wird im Ausdruck **Name** des Formatelementes **PDF-Feld** verwendet, um einen Feldnamen dynamisch zu generieren, der auf der Transaktionsnummer einer Charge basiert. Der Feldname, der generiert wird, wird dann verwendet, um das korrekte PDF-Feld in der PDF-Vorlage einzugeben,  die verwendet wird.
+    - Das **Ausgabe \> N Seite \> Details 2** Formatelement des Typs **PDF-Gruppe** ist an die  **Paging.PageN.Enumerated** Datenquelle (oder **\@.Enumerated**, wenn der Ansichtsmodus **Relativer Pfad** verwendet wird), des **Rekordliste** gebunden. Daher werden zur Bearbeitungszeit die geschachtelten Elemente dieser PDF-Gruppe für jeden einzelnen Datensatz der gebundenen Datensatzliste eingetragen. Auf diese Weise werden einzelne PDF-Positionen virtuell generiert, wenn für jeden n-ten der 42 Datensätze der Liste **Paging.PageN.Enumerated** die folgenden PDF-Felder ausgefüllt werden: Datum N,  Übertragungsrichtung N, Waren N, usw. Daher ähnelt in dieser Hinsicht das Verhalten der **Feldgruppe** dieses Formatelements dem Verhalten der Formatelemente **XML \> Sequenz** und **Text \> Sequenz**.
 
 3. In der Struktur erweitern Sie **Ausgabe \> Seite N \> Details2**.
 4. In der Struktur wählen Sie **Ausgabe \> Seite B \> Details2 \> PageFooter** aus.
@@ -238,7 +240,7 @@ Danach importieren Sie das Beispiel-ER-Format, das Sie zuvor heruntergeladen hab
 
     Beachten Sie, dass das Attribut **Name** dieses Formatelements als **Korrektur 1** definiert ist. Beachten Sie auch, dass der Ausdruck des Formatelements **Name** als **Paging.FldName ("Korrektur",\@. Nummer)** definiert ist.
 
-![Formatdesigner, in dem eine Zuordnung ausgewählt wird.](media/rcs-ger-filloutpdf-reviewformat2.png)
+![Formatdesigner, in dem eine Zuordnung ausgewählt wird](media/rcs-ger-filloutpdf-reviewformat2.png)
 
 Beachten Sie, dass das Formatelement **Feld** verwendet wird, um ein einzelnes Feld eines ausfüllbaren PDF-Dokuments auszufüllen, das als Vorlage des übergeordneten **PDF-Datei** Formatelements definiert ist. Die Bindung des **PDF-Datei** Formatelements oder der geschachtelten Elemente, wenn es geschachtelte Elemete aufweist, definiert den Wert, der in die entsprechenden PDF-Felder eingegeben wird. Verschiedene Eigenschaften des **Feld** Formatelements können verwendet werden, um anzugeben, welches PDF-Feld durch ein einzelnes Formatelement ausgefüllt wird:
 
@@ -263,8 +265,8 @@ Da beide Eigenschaften für ein **Feld** Formatelement optional sind, werden die
 
 Danach laden Sie das **Intrastat (Import aus Excel)** Beispiel-ER-Format. Dieses Format ist dafür vorgesehen, eine benutzerdefinierte Microsoft Excel Arbeitsmappe zu analysieren, die Außenhandelstransaktionen simuliert.
 
-1. Wählen Sie auf der Seite **Konfigurationen** **Austausch \> Last von der XML-Datei** aus.
-2. Wählen Sie **Durchsuchen** aus. Navigieren Sie zur **Intrastat-Version 1.1.xml (aus Excel importieren)** Datei und wählen Sie die Datei, die Sie zuvor als Vorbedingung heruntergeladen haben.
+1. Wählen Sie auf der Seite **Konfigurationen** **Austausch\> Last von der XML-Datei** aus.
+2. Wählen Sie **Durchsuchen** aus. Navigieren Sie zur **Intrastat-Version 1.1.xml (aus Excel importieren)** Datei und wählen Sie die Datei, die Sie zuvor als  Vorbedingung heruntergeladen haben.
 3. Wählen Sie **OK**.
 4. Wählen Sie in der Strukturdarstellung **Intrastatmodell \> Intrastat (aus Excel importieren)** aus.
 5. Wählen Sie **Bearbeiten** aus.
@@ -275,7 +277,7 @@ Danach laden Sie das **Intrastat (Import aus Excel)** Beispiel-ER-Format. Dieses
 
     Wenn die Option **Standard für Modellzuordnung** auf **Ja** festgelegt wurde, gilt das importierte ER-Format **Intrastat (Import aus Excel)** als die Standarddatenquelle für die Formatkonfiguration **Intrastat-Bericht (PDF)**. Wenn die **Intrastat-Bericht (PDF)** Formatkonfiguration ausgeführt wird, wird der Inhalt der Excel-Arbeitsmappe, die vom EB-Format **Intrastat (Import- aus Excel)** analysiert wird, die Außenhandelstransaktionen simulieren, die gemeldet werden müssen. Die folgende Abbildung zeigt das Beispiel eines Excel-Arbeitsbuches.
 
-    ![Excel-Arbeitsmappe, die Beispieldaten hat.](media/rcs-ger-filloutpdf-excelworkbook.png)
+    ![Excel-Arbeitsmappe, die Beispieldaten hat](media/rcs-ger-filloutpdf-excelworkbook.png)
 
 ### <a name="run-the-format-configuration"></a>Eine Formatkonfiguration ausführen
 
@@ -289,16 +291,13 @@ Danach laden Sie das **Intrastat (Import aus Excel)** Beispiel-ER-Format. Dieses
 
 Die folgende Abbildung zeigt ein Beispiel der ersten Seite des Berichts, der erstellt wurde.
 
-![Die erste Seite des generierten Berichts.](media/rcs-ger-filloutpdf-generatedreport.png)
+![Die erste Seite des generierten Berichts](media/rcs-ger-filloutpdf-generatedreport.png)
 
 Die folgende Abbildung zeigt ein Beispiel einer anderen Seite des Berichts, der erstellt wurde.
 
-![Andere Seite des generierten Berichts.](media/rcs-ger-filloutpdf-generatedreport2.png)
+![Andere Seite des generierten Berichts](media/rcs-ger-filloutpdf-generatedreport2.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 - [ER Entwerfen einer Konfiguration für das Generieren von Berichten im OPENXML-Format (November 2016)](tasks/er-design-reports-openxml-2016-11.md)
 - [EB-Konfigurationen entwerfen, um Berichte im Word-Format zu generieren](tasks/er-design-configuration-word-2016-11.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

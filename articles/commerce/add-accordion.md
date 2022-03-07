@@ -1,16 +1,13 @@
 ---
 title: Akkordeon Modul
-description: Dieses Thema enthält Akkordeonmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+description: Dieses Thema behandelt Akkordeonmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2bb18539f610e5af05f8d9a20a0ba9f34db5c94f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fa2515a0cbc5b69a1a69e15ec9e1ba2739fa2fbeffb5b0eb22b49fd8cab18e6f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412483"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719526"
 ---
-# <a name="accordion-module"></a>Akkordeon Modul
+# <a name="accordion-module"></a>Akkordeonmodul
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält Akkordeonmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
-
-## <a name="overview"></a>Übersicht
+Dieses Thema behandelt Akkordeonmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 
 Akkordeonmodule sind containerähnliche Module, mit denen die Informationen oder Module auf einer Seite organisiert werden, indem eine zusammenklappbare schubladenähnliche Funktion bereitgestellt wird. Ein Akkordeonmodul kann auf jeder Seite verwendet werden.
 
@@ -39,7 +34,7 @@ In jedem Akkordeonmodul können ein oder mehrere Akkordeongegenstandsmodule hinz
 
 Das folgende Bild zeigt ein Beispiel eines Akkordeonmoduls, mit dem Informationen auf der Seite mit häufig gestellten Fragen (FAQ) eines Geschäfts organisiert werden.
 
-![Beispiel eines Akkordeonmoduls](./media/ecommerce-accordion.PNG)
+![Beispiel eines Akkordeonmoduls.](./media/ecommerce-accordion.PNG)
 
 ## <a name="accordion-module-properties"></a>Eigenschaften des Akkordeonmoduls
 
@@ -87,3 +82,6 @@ Um ein Akkordeonmodul einer FAQ-Seite hinzuzufügen und die erforderlichen Eigen
 [Registerkartenmodul](add-tab.md)
 
 [Textblockmodul](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

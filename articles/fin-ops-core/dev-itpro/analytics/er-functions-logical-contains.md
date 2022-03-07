@@ -2,8 +2,11 @@
 title: CONTAINS ER-Funktion
 description: In diesem Thema werden Informationen zur Verwendung von CONTAINS Electronic reporting (ER)-Funktion bereitgestellt.
 author: NickSelin
+manager: kfend
 ms.date: 02/11/2021
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: ae6c96b5754946ee971a8f47d4c618751d25f7e86fb9fb115861e97c5e6f536e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 81964681688cebf870bc9b6c59aff0b7fdd82449
+ms.sourcegitcommit: 08ac570bece3e4ee4a0f632f51623e328536dfcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765145"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5557521"
 ---
 # <a name="contains-er-function"></a>CONTAINS ER-Funktion
 
@@ -51,7 +54,7 @@ Der resultierende *boolesche* Wert.
 
 ## <a name="usage-notes"></a>Anwendungshinweise
 
-Diese Funktion kann nur dann zur Angabe eines Bedingungsausdrucks der [FILTER](er-functions-list-filter.md)-Funktion verwendet werden, wenn die entsprechende Zuordnung in [Regulatory Configuration Services](../../../finance/localizations/rcs-globalization-feature.md) für den Zugriff auf [Microsoft Dataverse](/power-platform/admin/data-integrator) konfiguriert ist. Andernfalls wird während der Entwurfszeit eine Ausnahme ausgelöst. Die Nachricht, die Sie erhalten, empfiehlt, die [WHERE](er-functions-list-where.md)-Funktion anstelle der `FILTER`-Funktion zu verwenden.
+Diese Funktion kann nur dann zur Angabe eines Bedingungsausdrucks der [FILTER](er-functions-list-filter.md)-Funktion verwendet werden, wenn die entsprechende Zuordnung in [Regulatory Configuration Services](../../../finance/localizations/rcs-globalization-feature.md) für den Zugriff auf [Microsoft Dataverse](../data-entities/data-integration-cds.md) konfiguriert ist. Andernfalls wird während der Entwurfszeit eine Ausnahme ausgelöst. Die Nachricht, die Sie erhalten, empfiehlt, die [WHERE](er-functions-list-where.md)-Funktion anstelle der `FILTER`-Funktion zu verwenden.
 
 ## <a name="example-1"></a>Beispiel 1
 

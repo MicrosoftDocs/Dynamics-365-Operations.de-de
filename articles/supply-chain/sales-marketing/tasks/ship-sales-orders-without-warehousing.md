@@ -2,26 +2,23 @@
 title: Aufträge ohne Lagerort liefern
 description: In diesem Thema wird erläutert, wie Sie einen Kundenauftrag aktualisieren, wenn Produkte an den Kunden geliefert werden.
 author: omulvad
-manager: tfehr
 ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesTable, SalesEditLines,  SrsReportViewerForm, SalesTableLineQuantity, CustPackingSlipJournal
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b6b1dbb4d53785c226f7c9d40339d9dd19f47152
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2bd59a16d0fc1cde6e83bd51d1eaf82da7bf26d9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428980"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819159"
 ---
 # <a name="ship-sales-orders-without-warehousing"></a>Aufträge ohne Lagerort liefern
 
@@ -56,3 +53,6 @@ In diesem Thema wird erläutert, wie Sie einen Kundenauftrag aktualisieren, wenn
 19. Wählen Sie im Aktionsbereich **Auswahl und packen Sie**.
 20. Wählen Sie **Packzettel**. Die Seite **Packzetteljournal** enthält alle Packzettel-Dokumente, die für Ihre Bestellung generiert wurden. Sie können Details jedes Dokuments zu prüfen und drucken, wenn Sie wünschen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

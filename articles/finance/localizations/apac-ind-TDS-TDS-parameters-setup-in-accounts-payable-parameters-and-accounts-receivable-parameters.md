@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 2205ddc1b651ff851a4285b1ded17106600e6058c719fecf0b447ac8c87d43cb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4540cdfff2362d8fb7cc2b4cccf9c340be9750ce
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755615"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6023268"
 ---
 # <a name="set-tds-parameters-in-accounts-payable-and-accounts-receivable"></a>TDS-Parameter für Kreditoren- und Debitorenkonten einrichten
 
@@ -38,12 +38,12 @@ In diesem Thema wird erklärt, wie Sie Parameter in Kreditoren- und Debitorenkon
     - **Eingabeaufforderung**: Benutzer erhalten eine Nachricht, die sie auffordert, die TDS-Gruppe in den Auftragspositionen zu aktualisieren.
 4. Wählen Sie **OK** aus.
 
-    [![Dialogfeld „Auftragspositionen aktualisieren“.](./media/apac-ind-TDS-26.PNG)](./media/apac-ind-TDS-26.PNG)
+    [![Dialogfeld „Auftragspositionen aktualisieren“](./media/apac-ind-TDS-26.PNG)](./media/apac-ind-TDS-26.PNG)
 
 5. Gehen Sie zu **Steuern \> Setup \> Parameter \> Kreditorenparameter**.
 6. Stellen Sie auf der Registerkarte **Allgemein** im Inforegister **Aufteilung basierend auf Lieferinformationen** die Option **Produktzugang** auf **Ja** ein, um einen Produktzugang mit unterschiedlichen Lieferadressen und Steuerkontonummern (TAN) zu buchen und aufzuteilen. Wenn diese Option auf **Nein** gesetzt ist, können Sie keinen Lieferschein mit unterschiedlichen Lieferadressen und TAN buchen.
 7. Stellen Sie die Option **Rechnung** auf **Ja** um eine Einkaufsrechnung mit unterschiedlichen Lieferadressen und TAN zu buchen und aufzuteilen.
 
-    [![Inforegister „Aufteilung basierend auf Lieferinformationen“.](./media/apac-ind-TDS-25.png)](./media/apac-ind-TDS-25.png)
+    [![Inforegister „Aufteilung basierend auf Lieferinformationen“](./media/apac-ind-TDS-25.png)](./media/apac-ind-TDS-25.png)
 
 8. Schließen Sie die Seite.

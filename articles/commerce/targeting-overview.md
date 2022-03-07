@@ -2,8 +2,8 @@
 title: Adressierung von Geräten, Märkten und Geolocations
 description: In diesem Thema wird beschrieben, wie Sie Zielgruppen und Ziele in Microsoft Dynamics 365 Commerce Site Builder mithilfe von Geräte-, Markt- und Geolocation-Informationen erstellen, bearbeiten und verwalten.
 author: sushma-rao
-ms.date: 02/03/2022
-ms.topic: overview
+ms.date: 07/30/2021
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2021-07-31
 ms.dyn365.ops.version: AX 10.0.21
-ms.openlocfilehash: 0c8ceb5e59c801e0d3dbc3a57e54c40fa8d967ac
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 3ecc04c97b42b17f257aa40f665136c70de398748b9bda0da860c7000c062807
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090693"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730850"
 ---
 # <a name="device-market-and-geolocation-targeting"></a>Adressierung von Geräten, Märkten und Geolocations
 
@@ -96,18 +96,6 @@ Um eine Zielgruppe zu bearbeiten, wählen Sie den Hyperlink dafür auf der Regis
 
 > [!NOTE]
 > Zielgruppen sind ein Konzept auf Site-Ebene im Commerce Site Builder. Sie können dieselbe Zielgruppe für mehrere Ziele freigeben.
-
-### <a name="rename-an-audience-in-site-builder"></a>Umbenennen einer Zielgruppe in Site Builder
-
-Um eine bestehende Zielgruppe in Commerce umzubenennen, gehen Sie wie folgt vor.
-
-1. Wählen Sie im linken Navigationsbereich die Option **Zielgruppen** aus.
-1. Wählen Sie den Namen des Zielgruppensegments, das Sie umbenennen möchten.
-1. Wählen Sie **Bearbeiten**, um mit der Bearbeitung der Zielgruppe zu beginnen.
-1. Wählen Sie im Bereich Eigenschaften der Zielgruppe das Stiftsymbol neben dem Namen der Zielgruppe.
-1. Bearbeiten Sie den Namen der Zielgruppe nach Bedarf.
-1. Aktivieren Sie das Kontrollkästchen, um die Namensänderung zu bestätigen.
-1. Wählen Sie **Beenden Sie die Bearbeitung**.
 
 ## <a name="targets"></a>Ziele
 

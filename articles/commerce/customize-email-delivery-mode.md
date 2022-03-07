@@ -10,24 +10,22 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Commerce, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: faf5fba70bf9297727464e6046806696ab725001
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: d0d96ddb20b2b09751d8c0c0bf8af713de35279a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594966"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5222632"
 ---
 # <a name="customize-transactional-emails-by-mode-of-delivery"></a>Transaktions-E-Mails nach Lieferart anpassen
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie benutzerdefinierte E-Mail-Vorlagen für bestimmte Benachrichtigungstypen und Lieferarten in Microsoft Dynamics 365 Commerce einrichten.
 
@@ -73,3 +71,6 @@ Führen Sie die folgenden Schritte aus, um E-Mail-Vorlagen für bestimmte Liefer
 [Callcenteraufträge erstellen](tasks/create-call-center-orders.md)
 
 [Lieferart in POS ändern](pos-change-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

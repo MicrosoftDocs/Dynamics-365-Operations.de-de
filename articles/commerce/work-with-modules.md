@@ -2,35 +2,30 @@
 title: Arbeiten mit Modulen
 description: In diesem Thema wird beschrieben, wie und wann Module in Microsoft Dynamics 365 Commerce verwendet werden.
 author: phinneyridge
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 301eb6206fb9e02c3aa7d3c07cf368ba800a1ab9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ce16aa98a37cd5dec60bcdbf86f59f74810da9755a6d3514bdd3e38a21afb748
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412582"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728263"
 ---
 # <a name="work-with-modules"></a>Arbeiten mit Modulen
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie und wann Module in Microsoft Dynamics 365 Commerce verwendet werden.
-
-## <a name="overview"></a>Übersicht
 
 Module sind logische Bausteine, aus denen sich Ihre Seitenstruktur zusammensetzt. Sie dienen verschiedenen Zwecken und Bereichen. Einige Module sind übergeordnete Container, und ihr einziger Zweck besteht darin, andere Module (untergeordnete Module) zu speichern und zu organisieren. Andere Module, z. B. ein einfaches Bildplatzierungsmodul, haben einen ganz bestimmten Zweck. Weitere Module, z. B. ein Karussellmodul, lassen sich irgendwo zwischen diesen beiden Kategorien einordnen.
 
@@ -58,7 +53,7 @@ Die Mehrzahl der typischen täglichen Seiten- und Inhaltserstellungsaktivitäten
 
 Die folgende Abbildung zeigt, wie Module in übergeordneten Containermodul-Slots verschachtelt sind.
 
-![Verschachteln von Modulen](../commerce/media/basic-module-nesting.png)
+![Verschachteln von Modulen.](../commerce/media/basic-module-nesting.png)
 
 ## <a name="add-or-remove-modules"></a>Module hinzufügen oder entfernen
 
@@ -173,3 +168,6 @@ Um ein Containermodul auf einer Seite zu konfigurieren, befolgen Sie diese Schri
 
 [Arbeiten mit Veröffentlichungsgruppen](publish-groups.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

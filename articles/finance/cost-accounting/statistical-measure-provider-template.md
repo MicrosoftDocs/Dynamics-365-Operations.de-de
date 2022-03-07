@@ -2,11 +2,9 @@
 title: Anbietervorlagen für statistische Dimensionsmitglieder und Messanbieter
 description: Dieses Thema enthält Informationen über statische Dimensionselemente und statistische Maßnahmenanbieter-Vorlagen Statistische Dimensionswerte können als Verrechnungsgrundlage in den Richtlinien wie Kostenaufteilung und Prozentsatz verwendet werden. Sie können auch verwendet werden, um nicht-monetären Verbrauch durch Kosten zu melden.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate, CAMAXStatisticalMeasureProviderConfiguration, CAMStatisticalDimensionMember, CAMDataConnectorStatisticalMeasure, CAMImportedStatisticalMeasure, CAMImportedStatisticalMeasureProviderConfiguration
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 79e8bf0714871ffd342bb6053153e6e4d0f5c668
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c79451a5145a6e419ae0e332c67f06ca2df65996f959333a508dbf62dbf435ff
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969452"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767646"
 ---
 # <a name="provider-templates-for-statistical-dimension-members-and-measure-providers"></a>Anbietervorlagen für statistische Dimensionsmitglieder und Messanbieter
 
@@ -162,7 +160,7 @@ Nachdem die Quelldaten für statistische Maßnahmen verarbeitet wurden, werden d
 
 **Statistische Einträge**
 
-| Kostenobjekt |    | Abschlussstichtag | Statistisches Dimensionselement |  Beschreibung        | Größe |
+| Kostenobjekt |  Beschreibung  | Abschlussstichtag | Statistisches Dimensionselement |  Beschreibung        | Größe |
 |-------------|----|-----------------|------------------------------|---------------------|-----------|
 | CC001       | Personalverwaltung | 31-01-2017      | FTEs                         | Vollzeitmitarbeiter | 1,00      |
 | CC002       | FI | 31-01-2017      | FTEs                         | Vollzeitmitarbeiter | 2.00      |
@@ -328,7 +326,7 @@ Gehen Sie zu **Kostenrechnungssachkonto** \> **Tatsächliche Version** \> **Verw
 
 **Statistische Einträge**
 
-| Kostenobjekt |    | Abschlussstichtag | Statistisches Dimensionselement |      Beschreibung                   | Größe  |
+| Kostenobjekt | Beschreibung | Abschlussstichtag | Statistisches Dimensionselement |      Beschreibung                   | Größe  |
 |-------------|----|-----------------|------------------------------|-------------------------|------------|
 | CC001       | Personalverwaltung | 31-01-2017      | Elektrizität                  | Stromverbrauch | 2,450.00   |
 | CC002       | FI | 31-01-2017      | Elektrizität                  | Stromverbrauch | 4,100.00   |
@@ -336,12 +334,15 @@ Gehen Sie zu **Kostenrechnungssachkonto** \> **Tatsächliche Version** \> **Verw
 
 Wenn die vordefinierte Dimensionsmitgliedzuweisungsbasis Elektrizität als Verrechnungsgrundlage einer Kostenaufteilungsregel zugewiesen wird, werden die Kosten aufgeteilt, indem Sie den folgenden Zuweisungsfaktor verwenden.
 
-| Kostenobjekt |    | Größe | Zuweisungsfaktor          |
-|-------------|----|-----------|----------------------------|
-| CC001       | Personalverwaltung | 2,450.00  | (2.450 ÷ 21.550) × Betrag  |
-| CC002       | FI | 4,100.00  | (4.100 ÷ 21.550) × Betrag  |
-| CC003       | LU | 15.000,00 | (15.000 ÷ 21.550) × Betrag |
+| Kostenobjekt | Beschreibung   | Größe | Zuweisungsfaktor          |
+|-------------|---------------|-----------|----------------------------|
+| CC001       | Personalverwaltung            | 2,450.00  | (2.450 ÷ 21.550) × Betrag  |
+| CC002       | FI            | 4,100.00  | (4.100 ÷ 21.550) × Betrag  |
+| CC003       | LU            | 15.000,00 | (15.000 ÷ 21.550) × Betrag |
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Zuteilungsbasen](allocation-bases.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 73acfc92777b8fe07b89bea782e13213d38000cd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ba9f58bc21bed25a5e86cb0c9133507a83371d83
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459075"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5245663"
 ---
 # <a name="revenue-recognition-setup"></a>Umsatzerkennungseinstellungen
 [!include [banner](../includes/banner.md)]
@@ -29,9 +28,11 @@ ms.locfileid: "4459075"
 Es wurde ein neues Modul **Umsatzerkennung** hinzugefügt, das Menüoptionen für alle erforderlichen Einstellungen enthält. In diesem Thema werden die Einrichtungsoptionen und deren Auswirkungen behandelt.
 
 > [!NOTE]
-> Die Umsatzerkennungsfunktion kann nicht über die Funktionsverwaltung aktiviert werden. Sie müssen derzeit Konfigurationsschlüssel verwenden, um sie zu aktivieren.
+> Die Funktion zur Umsatzerkennung kann nicht mithilfe der Funktionsverwaltung aktiviert werden. Derzeit erfolgt die Aktivierung mit Konfigurationsschlüsseln.
 
-Das Modul **Umsatzerkennung** bietet folgende Optionen:
+> Die Umsatzerkennung, einschließlich Bündelfunktion, wird in Commerce-Kanälen (E-Commerce, POS, Callcenter) nicht unterstützt. Mit Umsatzerkennung konfigurierte Artikel dürfen nicht in Bestellungen oder Transaktionen ergänzt werden, die in Commerce-Kanälen erstellt wurden.
+
+Das Modul **Umsatzerkennung** hat folgende Einrichtungsoptionen:
 
 - Umsatzerkennungserfassungen
 - Parameter für die Umsatzerkennung
@@ -192,3 +193,6 @@ Die Umsatzerkennung kann auch für Aufträge verwendet werden, die durch ein Auf
 
 - **Verzögerter Rechnungsumsatz** (unter **Umsatzerlöskonten**) – Geben Sie das Hauptkonto für den Umsatzerlöspreis ein, der für den verzögerten Umsatzerlös (anstelle des Umsatzerlöses) gebucht wird. Der Umsatzerlöspreis wird verzögert, wenn die Auftragsposition einen Umsatzerlöszeitplan hat.
 - **Verzögerte Kosten** (unter **Kostenkonten**) – Geben Sie das Hauptkonto für den Wareneinsatzbetrag ein, der für den verzögerten Wareneinsatz gebucht wird, wenn der Umsatzerlös auch verzögert wird.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

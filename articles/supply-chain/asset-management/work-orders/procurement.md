@@ -1,12 +1,10 @@
 ---
 title: Beschaffung
 description: In diesem Thema wird die Beschaffung im Anlagenmanagement erläutert.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderPurchaseListPagePreviewPane, EntAssetWorkOrderPurchaseListPage, EntAssetWorkOrderPurchaseLineAmountInfoPart, EntAssetWorkOrderPurchReqListPage
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fce60f6ac2ac0dabe1c0ecd804a1dec1e7e373a2
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 2b5e160beb4743db2530b91020f21b686d84237b17cfa7ff7f0cc1da97695d08
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020203"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743649"
 ---
 # <a name="procurement"></a>Beschaffung
 
@@ -38,7 +36,7 @@ Auf der Listenseite **Arbeitsauftragsbestellanforderung** (**Anlagenmanagement**
 
 In der folgenden Abbildung wird ein Beispiel der Listenseite **Arbeitsauftragsbestellanforderung** angezeigt.
 
-![Abbildung 1](media/08-work-orders.png)
+![Abbildung 1.](media/08-work-orders.png)
 
 
 Auf der Listenseite **Arbeitsauftragsbestellanforderung** (**Anlagenmanagement** > **Allgemein** > **Beschaffung** > **Arbeitsauftragsbestellung**) wird eine Liste von Bestellungen zu Arbeitsaufträgen angezeigt. Wenn Sie einen Arbeitsauftragseinzelvorgang auf dieser Seite auswählen, können Sie die Schaltflächen in der Gruppe **Anzeigen** auf der Registerkarte **Arbeitsauftragsbestellung** des Aktivitätsbereichs verwenden, um verschiedene Aktionen auszuführen:
@@ -49,7 +47,7 @@ Auf der Listenseite **Arbeitsauftragsbestellanforderung** (**Anlagenmanagement**
 
 In der folgenden Abbildung wird ein Beispiel der Listenseite **Arbeitsauftragsbestellung** angezeigt.
 
-![Abbildung 2](media/09-work-orders.png)
+![Abbildung 2.](media/09-work-orders.png)
 
 
 Auf der Listenseite **Arbeitsauftragsbestellung** und der Listenseite **Arbeitsauftragsbestellanforderung** der Listenseite wird ein Symbol angezeigt, das zu dem Lieferdatumsteuerelement rechts neben jeder Position gehört. Wenn das Symbol ein Ausrufezeichen in einem roten Kreis anzeigt, bedeutet dies, dass sich die Lieferung der zugehörigen Bestellanforderung oder Bestellung verzögern kann.
@@ -95,7 +93,10 @@ Um die Aktivitätsnummer einzugeben oder anzuzeigen, die zu einer Bestellpositio
 
 Die folgende Abbildung zeigt ein Beispiel der Seite **Bestellung** mit Fokus auf der **Aktivitätsnummer**.
 
-![Abbildung 3](media/10-work-orders.png)
+![Abbildung 3.](media/10-work-orders.png)
 
 Um die Aktivitätsnummer einzugeben oder anzuzeigen, die zu der Bestellposition eines Arbeitsauftrags gehört, wählen Sie auf der Listenseite **Arbeitsauftragsbestellanforderung** den Bestellanforderungsdatensatz und dann in der Spalte **Bestellanforderung** den Link für die Bestellanforderung aus. Sie können das Feld **Aktivitätsnummer** auf der Registerkarte **Projekt** im Inforegister **Positionsdetails** finden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

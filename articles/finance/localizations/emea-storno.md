@@ -2,11 +2,9 @@
 title: Stornobuchung
 description: Stornobuchung ist die Verwendung negativer Zahlen, um Originaleinträge im Journalkonto rückgängig zu machen.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -15,12 +13,12 @@ ms.search.region: Czech Republic, Germany, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ee59d879a0500b5addfd9540f35cd818d7126c5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6c8bea5d5ec8069e78f3ed5e7d1d6a74ee28ce2dea1891ad71e410d4c309a79c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968320"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764211"
 ---
 # <a name="storno-accounting"></a>Stornobuchung
 
@@ -121,7 +119,7 @@ Finance verarbeitet negative Erfassungsbeträge auf besondere Weise. Der allgeme
 <tbody>
 <tr class="row-2">
 <td class="column-1"> Soll</td>
-<td class="column-2">Nr.</td>
+<td class="column-2">Nein</td>
 <td class="column-3">0. &gt;</td>
 <td class="column-4" align="right">Dauer</td>
 <td class="column-5" align="right">Dauer</td>
@@ -131,7 +129,7 @@ Finance verarbeitet negative Erfassungsbeträge auf besondere Weise. Der allgeme
 </tr>
 <tr class="row-3">
 <td class="column-1"> Entlastung</td>
-<td class="column-2">Nr.</td>
+<td class="column-2">Nein</td>
 <td class="column-3">0. &lt;</td>
 <td class="column-4" align="right">-Betrag</td>
 <td class="column-5" align="right">Dauer</td>
@@ -164,8 +162,11 @@ Finance verarbeitet negative Erfassungsbeträge auf besondere Weise. Der allgeme
 
 Sie können die Anzeige von Storno in Formularen, Tabellen, Spalten und Feldern anpassen. Beispielsweise können Sie die Anzeige des Vorzeichens deaktivieren oder den Zellenabstand für negative Beträge ändern. Außerdem können Sie das Feld **Korrektur** mit allen Anzeigeeinstellungen verwenden. Wenn das Feld **Korrektor** den Wert „Ja“ enthält, handelt es sich um einen Stornoeintrag.
 
-![Journaleintrag-Stornobeträge](./media/journal-storno.png)
+![Journaleintrag-Stornobeträge.](./media/journal-storno.png)
 
 ## <a name="how-documents-create-storno"></a>Wie Dokumente Storno erstellen
 Bestimmte Dokumente erzeugen Stornierungstransaktionen. Beispielsweise stornieren die Fremdwährungsüberprüfung für das Sachkonto, Kreditoren- und Debitorendokumente nicht realisierte Gewinne und Verluste. Weitere Details finden Sie unter [Neubewertung der Fremdwährung für Hauptbuch](../general-ledger/foreign-currency-revaluation-general-ledger.md) oder [Neubewertung der Fremdwährung für Kreditorenkonten und Debitoren](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). Nachdem eine Stornierungstransaktion erstellt wurde, werden neue Transaktionen mit nicht realisierten Gewinnen und Verlusten erstellt. Stornierungstransaktionen werden auch für Bestand erstellt. Weitere Informationen finden Sie unter [Bestandsabschluss](../../supply-chain/cost-management/inventory-close.md). Es gibt Dokumente, in denen Sie das zuvor gebuchte Dokument stornieren können. Beispielsweise kann der Benutzer eine Gutschriftanzeige erstellen, um eine zuvor erstellte Rechnung zu stornieren. Dokumente verwenden spezifische Parameter, um Gegenbuchungen oder Stornotransaktionen zu erstellen. Beispielsweise erzeugt die Fremdwährungsüberprüfung Gegenbuchungs- oder Stornotransaktionen basierend auf dem Korrekturparameter für das Sachkonto. Die Kundengutschriftanzeige erzeugt Gegenbuchungs- oder Stornotransaktionen basierend auf dem Korrekturparameter für die Debitorengutschriftsanzeige.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

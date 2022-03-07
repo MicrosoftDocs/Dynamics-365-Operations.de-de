@@ -1,12 +1,10 @@
 ---
 title: Anlagenansicht
 description: In diesem Thema wird die Anlagenansicht in Asset Management beschrieben.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectTree, EntAssetFunctionalLocationTree
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0256cc86dc306c8addb37d2c8f335470b19177a
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 4265928fc5cb899a77eee6e5b9ff0a928efbe99c99ec7fe31eecffcb0f98f752
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019403"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765537"
 ---
 # <a name="asset-view"></a>Anlagenansicht
 
@@ -47,3 +45,6 @@ Kennung des funktionalen Standorts/Kennung des funktionalen Standorts (falls es 
 Wenn Sie eine Anlage in der Baumstruktur ausgewählt haben, können Sie **Aktive Anfragen** oder **Aktive Arbeitsaufträge** auswählen, um die Wartungsanfragen oder die Arbeitsaufträge anzuzeigen, die der Anlage zugeordnet sind. Sie können auch **Öffnen** \> **Funktionaler Standort**, **Anlage** oder **Anlagenstückliste** auswählen, um die zugehörige Ansicht zu öffnen.
 
 Die Option **Funktionale Standorte der Anlage**, die Sie im Feld **Ansicht** auswählen können, ist ebenfalls bei jeder Anlagensuche verfügbar, in der Sie eine Anlage auswählen können. Die Strukturansicht wird auf einer Registerkarte **Anlagenansicht** angezeigt, auf der Sie beispielsweise [eine Anlage erstellen](../objects/create-an-object.md), eine Wartungsanfrage erstellen oder einen Arbeitsauftrag erstellen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

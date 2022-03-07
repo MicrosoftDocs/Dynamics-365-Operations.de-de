@@ -2,11 +2,9 @@
 title: " Callcenteraufträge erstellen"
 description: Diese Prozedur führt Sie Schritt für Schritt durch die Suche nach einem Debitor, das Erstellen eines neuen Auftrags, die Suche nach einem Produkt und das Einziehen einer Zahlung vom Debitor.
 author: josaw1
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: MCRCustomerService, SalesTable, MCRSourceIdTargetLookup, MCRSalesQuickQuote, MCRSalesOrderRecap, MCRCustPaymDialog, MCRCustPaymLookup
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 08a806514a92a99a9f0b18b36817f49a09516ab8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8d8dc9e19ecd6b835569ba80563bce33134895cb
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964844"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791654"
 ---
 # <a name="create-call-center-orders"></a> Callcenteraufträge erstellen
 
@@ -61,3 +59,6 @@ Diese Prozedur führt Sie Schritt für Schritt durch die Suche nach einem Debito
 
 [Lieferart in POS ändern](../pos-change-delivery-mode.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

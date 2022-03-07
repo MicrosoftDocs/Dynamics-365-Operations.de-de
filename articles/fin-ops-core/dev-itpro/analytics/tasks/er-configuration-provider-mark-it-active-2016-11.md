@@ -1,12 +1,11 @@
 ---
 title: Erstellen von Konfigurationsanbietern und Markieren als aktiv
-description: In diesem Thema wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle „Entwickler für elektronische Berichterstellung“ zugewiesen ist, einen Konfigurationsanbieter für elektronische Berichterstellung (ER) erstellen kann.
+description: In diesem Thema wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle „Entwickler für elektronische Berichterstellung“ zugewiesen ist, einen Konfigurationsanbieter erstellen kann.
 author: NickSelin
 manager: AnnBe
 ms.date: 07/02/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERVendorTable
 audience: Application User
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7fb9f5be8571974237154ea704c93b8666c539a7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 11ff1d531b0467cf75ec98b092fe6010f4fa95c0
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681996"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5569786"
 ---
 # <a name="create-configuration-providers-and-mark-them-as-active"></a>Erstellen von Konfigurationsanbietern und Markieren als aktiv
 
@@ -44,3 +43,6 @@ In diesem Thema wird erläutert, wie ein Benutzer, der der Systemadministratorro
 2. Wählen Sie **Als aktiv festlegen**.
 
 ![Elektronische Berichterstellung – Seite „Arbeitsbereich“](../media/GER-Task-ActiveProvider-1.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

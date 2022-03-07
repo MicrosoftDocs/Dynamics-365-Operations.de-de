@@ -4,19 +4,19 @@ description: In diesem Thema werden Intercompany-Parameter erläutert
 author: GalynaFedorova
 ms.date: 09/01/2021
 ms.topic: article
-ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder, InterCompanyTradingRelationSetupCustomer
+ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: face3cbd21998edcba528548ec4ae52354330aa3
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 705efee84b255105ba39c603d23d2509e77b331a
+ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778496"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7548287"
 ---
 # <a name="intercompany-parameters"></a>Intercompany-Parameter
 

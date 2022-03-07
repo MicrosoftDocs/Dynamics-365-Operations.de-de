@@ -1,27 +1,25 @@
 ---
 title: Mobiler Arbeitsbereich für Bestellungsgenehmigung
 description: Dieses Thema enthält Informationen zum mobilen Arbeitsbereich für Bestellungsgenehmigungen, mit dem Sie Bestellungen anzeigen und auf sie durch Aktionen antworten können. Sie können beispielsweise eine Bestellung genehmigen oder ablehnen.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchVendorPortalRequests
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 30211
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7f952f3af36620a20a5c991fd9e1ccfd56119f47
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: fc88f20b50e034f2f27b7e2576fe6a4bb3486e23
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022305"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570560"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>Mobiler Arbeitsbereich für Bestellungsgenehmigung
 
@@ -38,7 +36,7 @@ Im Arbeitsbereich **mobile Bestellungsgenehmigung** können Sie Bestellungen vom
 Die Voraussetzungen unterscheiden sich basierend auf der Version von Supply Chain Management, die für Ihre Organisation bereitgestellt wurde.
 
 ### <a name="prerequisites-if-you-use-supply-chain-management"></a>Voraussetzungen, wenn Sie verwenden Supply Chain Management 
-Wenn Supply Chain Management für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator den mobilen **Arbeitsbereich Bestellungsgenehmigung** veröffentlichen. Anweisungen finden Sie unter [Einen mobilen Arbeitsbereich veröffentlichen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+Wenn Supply Chain Management für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator den mobilen **Arbeitsbereich Bestellungsgenehmigung** veröffentlichen. Anweisungen finden Sie unter [Einen mobilen Arbeitsbereich veröffentlichen](../../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher verwenden
 Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator die folgenden Voraussetzungen erfüllen. 
@@ -57,16 +55,16 @@ Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 od
 <td>Systemadministrator</td>
 <td>4017918 KB ist ein X++-Aktualisierungs- oder -Metadatenhotfix, der den mobilen Arbeitsbereich <strong>Bestellungsgenehmigung</strong> enthält. Um KB 4017918 muss Ihr Systemadministrator folgende Schritte ausführen.
 <ol>
-<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Den Metadatenhotfix von Microsoft Dynamics Lifecycle Services (LCS) herunterladen</a>.</li>
-<li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Installieren Sie den Metadatenhotfix</a>.</li>
-<li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Erstellen eines zur Bereitstellung geeigneten Paket</a>, das das <strong>SCMMobile</strong> Modell enthält und laden Sie dann das zur Bereitstellung geeignete Paket in LCS hoch.</li>
-<li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Das bereitstellbare Paket übernehmen</a>.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs">Den Metadatenhotfix von Microsoft Dynamics Lifecycle Services (LCS) herunterladen</a>.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Installieren Sie den Metadatenhotfix</a>.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">Erstellen eines zur Bereitstellung geeigneten Paket</a>, das das <strong>SCMMobile</strong> Modell enthält und laden Sie dann das zur Bereitstellung geeignete Paket in LCS hoch.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Das bereitstellbare Paket übernehmen</a>.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Mobiler Arbeitsbereich für <strong>Bestellungsgenehmigung</strong> veröffentlichen.</td>
 <td>Systemadministrator</td>
-<td>Siehe <a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">Einen mobilen Arbeitsbereich veröffentlichen</a>.</td>
+<td>Siehe <a href="/dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace">Einen mobilen Arbeitsbereich veröffentlichen</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -85,7 +83,7 @@ Herunterladen und Installieren der Finance and Operations mobilen App:
 3. Bei der erstmaligen Anwendung werden Sie nach Ihrem Benutzernamen und dem Kennwort gefragt. Geben Sie Ihre Anmeldeinformationen ein.
 4. Nachdem Sie sich angemeldet haben, werden verfügbare Arbeitsbereiche für Ihr Unternehmen angezeigt. Beachten Sie, dass Sie, wenn Ihr Systemadministrator einen neuen Arbeitsbereich später veröffentlicht, die Liste der mobilen Arbeitsbereiche aktualisieren müssen.
 
-![Bestellungsgenehmigungsarbeitsbereich in der Liste verfügbarer Arbeitsbereiche](./media/po-workspaces.png)
+![Bestellungsgenehmigungsarbeitsbereich in der Liste verfügbarer Arbeitsbereiche.](./media/po-workspaces.png)
 
 ## <a name="view-orders-that-are-assigned-to-you"></a>Anzeigen der Ihnen zugewiesenen Aufträge
 1. Wählen Sie auf Ihrem mobilen Gerät den Arbeitsbereich **Bestellungsgenehmigung**.
@@ -112,3 +110,6 @@ Nachdem die Bestellung angezeigt wurde, die Ihnen zugewiesen wurde und Sie die W
 5. Wählen Sie die entsprechende Aktivität aus.
 6. Auf der Seite **Aufgabe beenden** geben Sie einen Kommentar ein. Beachten Sie, dass, wenn Sie die Aktivität **Delegieren** auswählen, müssen Sie einen Benutzer auswählen, an die Aufgabe delegiert werden soll.
 7. Wählen Sie **Fertig**. Nachdem Sie den Arbeitsbereich aktualisiert haben, ist die Bestellung nicht mehr in der Liste. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

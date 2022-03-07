@@ -1,28 +1,25 @@
 ---
 title: Produkte vom Verteilzentrum zu Shops mithilfe von Käuferübertragung übertragen
 description: Diese Prozedur führt Sie Schritt für Schritt durch die Erstellung und Verarbeitung einer Käuferübertragung zum Vertreiben von Produkten von einem Lagerplatz an einen oder viele Shops.
-author: rubencdelgado
-manager: AnnBe
+author: BrianShook
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailBuyersPush, InventLocationIdLookup, InventItemIdLookupSimple, RetailReplenishmentTreeLookup
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dad74855ab9a9c225a5cd64a8c27663aedcd21e4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 30d82e4b282bac2ea888971ad5c6298adfa8332b
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412599"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779619"
 ---
 # <a name="push-products-from-distribution-center-to-store-using-buyers-push"></a>Produkte vom Verteilzentrum zu Shops mithilfe von Käuferübertragung übertragen
 
@@ -53,3 +50,6 @@ Diese Prozedur führt Sie Schritt für Schritt durch die Erstellung und Verarbei
 19. Klicken Sie auf "Auftrag erstellen".
 20. Klicken Sie auf "Ja".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

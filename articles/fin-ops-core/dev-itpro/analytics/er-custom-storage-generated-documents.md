@@ -2,11 +2,9 @@
 title: Angeben eines benutzerdefinierten Speicherorts für generierte Dokumente
 description: In diesem Thema wird erläutert, wie Sie die Liste der Speicherorte für Dokumente erweitern, die von Formaten der electronischen Berichterstellung (ER) generiert werden.
 author: NickSelin
-manager: AnnBe
 ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 5e9afad936a353c8db3c316ad45c4ce28d33b129
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 61a1e46497d650e2c063a5fe7537d17cf7aa1828a5a4504bb781e84aeb88f04a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680805"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718500"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Angeben eines benutzerdefinierten Speicherorts für generierte Dokumente
 
@@ -29,7 +27,7 @@ Mit der Anwendungsprogrammierschnittstelle (API) des Framework der elektronische
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Sie müssen eine Topologie bereitstellen, die einen fortlaufenden Build unterstützt. (Weitere Informationen finden Sie unter [Bereitstellen von Topologien, die fortlaufenden Build und Testautomatisierung unterstützen](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation).) Für eine der folgenden Rollen benötigen Sie Zugriff auf diese Topologie:
+Sie müssen eine Topologie bereitstellen, die einen fortlaufenden Build unterstützt. (Weitere Informationen finden Sie unter [Bereitstellen von Topologien, die fortlaufenden Build und Testautomatisierung unterstützen](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation).) Für eine der folgenden Rollen benötigen Sie Zugriff auf diese Topologie:
 
 - Entwickler für elektronische Berichterstellung
 - Funktionaler Berater für elektronische Berichterstellung
@@ -41,7 +39,7 @@ Sie müssen zudem Zugriff auf die Entwicklungsumgebung für diese Topologie habe
 
 In der aktuellen Topologie [erstellen Sie ein neues ER-Format](tasks/er-format-configuration-2016-11.md), um Dokumente zu generieren, für die Sie einen benutzerdefinierten Speicherort hinzuzufügen möchten. Alternativ [importieren Sie ein vorhandenes ER-Format in diese Topologie](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-![Formatdesignerseite](media/er-extend-file-storages-format.png)
+![Formatdesignerseite.](media/er-extend-file-storages-format.png)
 
 > [!IMPORTANT]
 > Das ER-Format, das Sie erstellen oder importieren, muss mindestens eines der folgenden Formatelemente enthalten:
@@ -55,12 +53,12 @@ In der aktuellen Topologie [erstellen Sie ein neues ER-Format](tasks/er-format-c
 
 Um festzulegen, wie Dokumente, die von einem ER-Format erzeugt werden, weitergeleitet werden, müssen Sie [Elektronische Berichtsziele (ER)](electronic-reporting-destinations.md) konfigurieren. In jedem ER-Ziel, das konfiguriert wird, um generierten Dokumente als Dateien zu speichern, müssen Sie einen Dokumenttyp des Dokumentverwaltungsframework angeben. Verschiedene Dokumenttypen können verwendet werden, um Dokumente weiterzuleiten, die von verschiedenen ER-Formaten generiert werden.
 
-1. Fügen Sie einen neuen [Dokumenttyp](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) für das ER-Format hinzu, das Sie bereits erstellt oder importiert haben. In der folgenden Abbildung lautet der Dokumenttyp **FileX**.
+1. Fügen Sie einen neuen [Dokumenttyp](../../fin-ops/organization-administration/configure-document-management.md) für das ER-Format hinzu, das Sie bereits erstellt oder importiert haben. In der folgenden Abbildung lautet der Dokumenttyp **FileX**.
 2. Um dieses Dokumenttyp von anderen Dokumenttypen zu unterscheiden, schließen Sie ein bestimmtes Schlüsselwort in seinem Namen ein. Beispielsweise lautet der Name in der folgenden Abbildung **(LOKALER) Ordner**.
 3. Geben Sie im Feld **Klasse** die Option **Datei zuordnen** an.
 4. Geben Sie im Feld **Gruppe** die Option **Datei** an.
 
-![Seite „Dokumenttypen”](media/er-extend-file-storages-document-type.png)
+![Seite „Dokumenttypen“.](media/er-extend-file-storages-document-type.png)
 
 > [!NOTE]
 > Dokumenttypen sind unternehmensspezifisch Zur Verwendung eines ER-Formats mit einem konfigurierten Ziel in mehreren Unternehmen müssen Sie einen separaten Dokumenttyp für jedes Unternehmen konfigurieren.
@@ -115,18 +113,18 @@ Das Ereignis **AttachingFile()** wird ausgelöst, wenn die folgenden ER-Ziele ve
 - **Archiv** – Wenn das Ziel verwendet wird, wird ein neuer Datensatz für das ER-Format, das ausgeführt wird, in der ERFormatMappingRunJobTable-Tabelle erstellt. Das Feld **Archiviert** in diesem Datensatz wird auf **Falsch** festgelegt. Wenn das ER-Format erfolgreich ausgeführt wird, wird das generierte Dokument an diesen Datensatz angefügt, und das Ereignis **AttachingFile()** wird verwendet. Der Dokumenttyp, der in diesem ER-Ziel ausgewählt wird, bestimmt den Speicherort für die angefügte Datei (Microsoft Azure-Speicher oder ein Microsoft SharePoint-Ordner).
 - **Einzelvorgangsarchiv** – Wenn dieses Ziel verwendet wird, wird ein neuer Datensatz für das ER-Formular, das ausgeführt wird, in der ERFormatMappingRunJobTable-Tabelle erstellt. Das Feld **Archiviert** in diesem Datensatz wird auf **Wahr** festgelegt. Wenn das ER-Format erfolgreich ausgeführt wird, wird das generierte Dokument an diesen Datensatz angefügt, und das Ereignis **AttachingFile()** wird verwendet. Der Dokumenttyp, der in den ER-Parametern konfiguriert wird, bestimmt den Speicherort für die angefügte Datei (Azure-Speicher oder ein SharePoint-Ordner).
 
-![Parameterseite der elektronischen Berichterstellung](media/er-extend-file-storages-parameters.png)
+![Parameterseite der elektronischen Berichterstellung.](media/er-extend-file-storages-parameters.png)
 
 ## <a name="configure-an-er-destination"></a>Das Ziel einer elektronischen Berichterstellung konfigurieren
 
-1. Konfigurieren Sie das archivierte Ziel für eines der zuvor genannten Elemente (Datei, Ordner, Merger-Programm oder Anhang) des ER-Formats, das von Ihnen erstelltoder importiert wurde. Eine Anleitung finden Sie unter [ER-Konfigurationsziele](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
+1. Konfigurieren Sie das archivierte Ziel für eines der zuvor genannten Elemente (Datei, Ordner, Merger-Programm oder Anhang) des ER-Formats, das von Ihnen erstelltoder importiert wurde. Eine Anleitung finden Sie unter [ER-Konfigurationsziele](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
 2. Verwenden Sie den Dokumenttyp, den Sie zuvor für das konfigurierte Ziel hinzugefügt haben. (Im Beispiel in diesem Thema lautet der Dokumenttyp **FileX**.)
 
-![Dialogfeld" Zieleinstellungen"](media/er-extend-file-storages-destination.png)
+![Dialogfeld „Zieleinstellungen“.](media/er-extend-file-storages-destination.png)
 
 ## <a name="modify-source-code"></a>Quellcode ändern
 
-1. Fügen Sie Ihrem Microsoft Visual Studio-Projekt eine neue Klasse hinzu, und schreiben Sie Code, um das **AttachingFile()**-Ereignis zu abonnieren, das zuvor erwähnt wurde. (Weitere Informationen zum Erweiterbarkeitsmuster, das verwendet wird, finden Sie unter [Reaktion unter Verwendung von EventHandlerResult](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/extensibility/respond-event-handler-result)) Beispiel: In der neuen Klasse schreiben Sie Code, der die folgenden Aktionen ausführt:
+1. Fügen Sie Ihrem Microsoft Visual Studio-Projekt eine neue Klasse hinzu, und schreiben Sie Code, um das **AttachingFile()**-Ereignis zu abonnieren, das zuvor erwähnt wurde. (Weitere Informationen zum Erweiterbarkeitsmuster, das verwendet wird, finden Sie unter [Reaktion unter Verwendung von EventHandlerResult](/dynamics365/unified-operations/dev-itpro/extensibility/respond-event-handler-result)) Beispiel: In der neuen Klasse schreiben Sie Code, der die folgenden Aktionen ausführt:
 
     1. Generierte Dateien in einem Ordner des lokalen Dateisystems des Servers speichern, auf dem Application Object Server (AOS) ausgeführt wird.
     2. Speichern Sie diese generierten Dateien nur, wenn der neuen Dokumenttyp (beispielsweise der Typ **FileX** mit "(LOKALE)-Schlüsselwort im Namen) verwendet wird, während eine Datei an den Datensatz im ER-AusführungsJobprotokoll angefügt ist.
@@ -168,10 +166,13 @@ Das Ereignis **AttachingFile()** wird ausgelöst, wenn die folgenden ER-Ziele ve
 ## <a name="run-the-er-format-that-you-created-or-imported"></a>Ausführen des erstellten oder importierten ER-Formats
 
 1. Führen Sie das ER-Format aus, das von Ihnen erstellt oder importiert wurde.
-2. Wechseln Sie zu **Organisationsverwaltung \>Elektronische Berichterstellung \> Einzelvorgänge für elektronische Berichterstellung**. Suchen Sie den Datensatz, der für diesen Ausführungseinzelvorgang erstellt wurde, und dem die generierte Datei angehängt wurde.
+2. Wechseln Sie zu **Organisationsverwaltung \> Elektronische Berichterstellung \> Einzelvorgänge für elektronische Berichterstellung**. Suchen Sie den Datensatz, der für diesen Ausführungseinzelvorgang erstellt wurde, und dem die generierte Datei angehängt wurde.
 3. Untersuchen Sie den lokalen **C:\\0**-Ordner, um dieselbe generierte Datei zu finden.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 - [Ziele für elektronische Berichterstellung (EB)](electronic-reporting-destinations.md)
 - [Startseite für Erweiterbarkeit](../extensibility/extensibility-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

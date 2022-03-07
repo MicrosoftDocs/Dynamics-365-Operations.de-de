@@ -2,9 +2,11 @@
 title: Einstellungen für Lieferinformationen
 description: Dieses Thema beschreibt, wie Sie Lieferinformationen für das Modul Gesamttransportkosten festlegen.
 author: sherry-zheng
+manager: tfehr
 ms.date: 12/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ITMPortTable, ITMLeadTimeTable, ITMLegTable
 audience: Application User
@@ -13,17 +15,18 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-09
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 57f17d481f9660d67b96ac2c8e68558407b1bcf9
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.17
+ms.openlocfilehash: 7b65e1c6bb1b6bf345fdde0f4de7015190052efa
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577599"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500525"
 ---
 # <a name="delivery-information-setup"></a>Einstellungen für Lieferinformationen
 
 [!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie Lieferinformationen für das Modul **Gesamttransportkosten** festlegen.
 
@@ -55,7 +58,7 @@ Die folgende Tabelle zeigt die Felder, die für alle drei Erstellungsarten im Tr
 | Quelltabelle, Quellfeld | Diese Felder identifizieren eine Quelltabelle und ein Quellfeld in der Datenbank. Die Regel lädt den Wert in das Feld und verwendet ihn dann auf die Weise, die durch andere Einstellungen der Regel festgelegt ist. |
 | Zieltabelle, Zielfeld | Diese Felder identifizieren eine Zieltabelle und ein Zielfeld in der Datenbank. Die Regel lädt den Wert in das Feld und verwendet (oder überschreibt) ihn dann auf die Weise, die durch andere Einstellungen der Regel festgelegt ist. |
 | Aktivität | Dieses Feld identifiziert die Art der Aktivität, die auf einen Transportcontainer angewendet werden soll, auf den eine Regel zutrifft. |
-| Passende Kriterien | Dieses Feld bestimmt, wie das System eine Übereinstimmung für eine Regel identifiziert. In jedem Fall überprüft das System die Daten in den Quell- und Zieltabellen, um zu bestimmen, ob und wann ein Feld in der Zieltabelle aktualisiert werden soll.<p>Zum Beispiel ist die Quelltabelle *Fahrtn* und die Zieltabelle ist *Kauf Kopfzeile* oder *Kauf Zeilen*. Die Tabelle *Fahrten* hat einen **Von Hafen**-Wert von *Hongkong*, und die Tabelle *Kauf Kopfzeile* hat einen **Von Hafen**-Wert von *Shanghai*. Dann wird eine Regel erstellt, die *Hongkong* als Von Hafen hat. In diesem Fall funktionieren die Werte des Feldes **Übereinstimmende Kriterien** folgendermaßen:</p><ul><li>**Beide** - Das Zielfeld wird nicht aktualisiert, weil einer der beiden Häfen nicht übereinstimmt.</li><li>**Quelle** - Das Zielfeld wird aktualisiert, weil der „Von“-Hafen der Quelltabelle *Hongkong* ist.</li><li>**Ziel** - Das Zielfeld wird nicht aktualisiert, weil der „Von“-Hafen der Zieltabelle *Shanghai* ist (nicht *Hongkong*).</li></ul> |
+| Passende Kriterien | Dieses Feld bestimmt, wie das System eine Übereinstimmung für eine Regel identifiziert. In jedem Fall überprüft das System die Daten in den Quell- und Zieltabellen, um zu bestimmen, ob und wann ein Feld in der Zieltabelle aktualisiert werden soll.<p>Zum Beispiel ist die Quelltabelle *Fahrtn* und die Zieltabelle ist *Kauf Kopfzeile* oder *Kauf Zeilen*. Die Tabelle *Fahrtn* hat einen **Von Hafen**-Wert von *Hongkong*, und die Tabelle *Kauf Kopfzeile* hat einen **Von Hafen**-Wert von *Shanghai*. Dann wird eine Regel erstellt, die *Hongkong* als Von Hafen hat. In diesem Fall funktionieren die Werte des Feldes **Übereinstimmende Kriterien** folgendermaßen:</p><ul><li>**Beide** - Das Zielfeld wird nicht aktualisiert, weil einer der beiden Häfen nicht übereinstimmt.</li><li>**Quelle** - Das Zielfeld wird aktualisiert, weil der „Von“-Hafen der Quelltabelle *Hongkong* ist.</li><li>**Ziel** - Das Zielfeld wird nicht aktualisiert, weil der „Von“-Hafen der Zieltabelle *Shanghai* ist (nicht *Hongkong*).</li></ul> |
 | Aktivität kopieren | Die verfügbaren Werte sind *Kopieren* und *Standard*. Wählen Sie *Kopieren*, um den Wert im Quellfeld in das Zielfeld zu kopieren. Wählen Sie *Vorgabe*, um einen statischen Wert für das Zielfeld festzulegen. |
 | Standard | Wenn das Feld **Kopieraktion** auf *Standard* festgelegt ist, definiert das Feld **Standard** den Standardwert für das Zielfeld. Wenn sich die Aktion beispielsweise auf eine Hafenaktualisierung bezieht und das Feld **Aktion kopieren** auf *Vorgabe* festgelegt ist, identifiziert das Feld **Vorgabe** einen Hafen. |
 | Teilstrecke | Dieses Feld identifiziert den Abschnitt der Route, für den die angegebene Aktion stattfindet, z. B. Ladung oder Zoll. |

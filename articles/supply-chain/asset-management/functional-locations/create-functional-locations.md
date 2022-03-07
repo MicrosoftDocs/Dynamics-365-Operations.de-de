@@ -1,12 +1,10 @@
 ---
 title: Funktionale Standorte erstellen
 description: In diesem Thema wird erklärt, wie in der Anlagenverwaltung funktionalen Standorte erstellt werden.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetFunctionalLocationCopyStructure, EntAssetFunctionalLocationCreate
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 81b5b81d7c318ba0a195dbc6324d700ccb8d39bf
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: e5dd5ea59b27c594752ff82428723f3afe555b5f2426a812c70e10b968c920a5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018220"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767531"
 ---
 # <a name="create-functional-locations"></a>Funktionale Standorte erstellen
 
@@ -131,3 +129,6 @@ Ein funktionaler Standort mit zugehörigen Unterstandorten kann gelöscht werden
 
 >[!NOTE]
 >Wenn Sie einen funktionalen Standort nicht löschen können, können Sie die Löschung vornehmen, indem Sie einen funktionalen Standortlebenszyklusstatus zu diesem Zweck einrichten. So können beispielsweise „ausrangierte“oder „gelöschte“ Phase, die über keine aktive Phase werden sollen, im Formular **Funktionale Standortlebenszyklusstatus** einrichten.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

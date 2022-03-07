@@ -2,27 +2,24 @@
 title: MwSt-Berichtdetails für Österreich
 description: In diesem Thema wird erläutert, wie der MwSt Bericht für juristische Personen in Österreich erfasst wird.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 264334
 ms.search.region: Austria
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 1915ea783af984e5d67d51e543ae97f2b3df3a39
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6a96818fba1505ed26802a41258e48933415a75e11b8f859251c5e94ca72d1a9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407735"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744291"
 ---
 # <a name="vat-statement-details-for-austria"></a>MwSt-Berichtdetails für Österreich
 
@@ -109,3 +106,6 @@ Um eine MwSt. -XML-Datei zu generieren, verwenden Sie die Seite the **Mehrwertst
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

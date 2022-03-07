@@ -2,11 +2,9 @@
 title: Formate durch erneute Anwendung von Excel-Vorlagen ändern
 description: Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte im Aufgabenleitfaden „Eine ER-Konfiguration zum Generieren von Berichten im OPENXML-Format erstellen” abschließen.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5b1bc5f227a0944c513dee2c12a5042decde872
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 24eb64679b458d14e30dc5b4365c7305d71cfc4c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684234"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754889"
 ---
 # <a name="modify-formats-by-reapplying-excel-templates"></a>Formate durch erneute Anwendung von Excel-Vorlagen ändern
 
@@ -83,3 +81,6 @@ Dieses Verfahren zeigt, wie eine Konfiguration für das Format der elektronische
 ## <a name="use-the-modified-draft-version-of-the-er-format-for-payment-journal-processing"></a>Nutzen Sie die geänderte Entwurfsversion des ER-Formats für die Verwendung bei Zahlungserfassungsverarbeitungen
 
 Wiederholen Sie das erstellte Arbeitsblatt, einschließlich neue Details der Zahlungszeilen - Zahlungsdatum.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -9,18 +9,15 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2021-06-24
-ms.openlocfilehash: ad980889247e0239ad743078cb013c1c5839f676
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ceb0a60ccf3d1c989d8663e933faaa5e430d314695e20990c9086cd1b8325ff1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070145"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773726"
 ---
 # <a name="configure-expenditure-reviewers"></a>Aufwendungsprüfer konfigurieren
 [!include[banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Sie können dynamische Aufwendungsprüfer einrichten, damit zu prüfende Aufwendungen basierend auf dem Benutzer weitergeleitet werden, der entweder einer Projektrolle oder der Finanzdimension zugewiesen ist, der die Aufwendung zugeschlagen wird. Im Workflowprozess wird die angegebene Projektrolle oder der Besitzer der Finanzdimension verwendet, um zu bestimmen, an wen die Aufwendungen weitergeleitet werden sollen.
 
@@ -52,7 +49,7 @@ Finanzdimensionen werden durch die Kontostrukturen in jeder juristischen Person 
 
 ## <a name="example-1-expenditure-reviewers-based-on-organization-distributions"></a>Beispiel 1: Aufwendungsprüfer basierend auf Organisationsverteilungen
 
-Sie arbeiten für Contoso Appliances, und Ihr Unternehmen hat sechs Abteilungen und 10 Kalkulationsstellen. Als eine neue Bestellanforderung eingeht, muss sie zuerst vom Abteilungsleiter und dann vom Kostenstellenleiter genehmigt werden.
+Sie arbeiten für Contoso Appliances und Ihre Organisation hat sechs Abteilungen und zehn Kostenstellen. Als eine neue Bestellanforderung eingeht, muss sie zuerst vom Abteilungsleiter und dann vom Kostenstellenleiter genehmigt werden.
 
 Für dieses Beispiel konfigurieren Sie zwei *Aufwendungsprüfer für Bestellanforderungen*:
 
@@ -65,7 +62,7 @@ Beim Anlegen der Bestellanforderung werden den Positionen der Bestellanforderung
 
 ## <a name="example-2-expenditure-reviewers-based-on-project-distributions"></a>Beispiel 2: Aufwendungsprüfer basierend auf Projektverteilungen
 
-Sie arbeiten in der Abteilung für Dienstleistungen von Contoso Appliances. Die Organisation verlangt, dass der Projektmanager für jede Bestellung die Ausgabe genehmigen muss. Außerdem muss der Kostenstellenleiter des Projekts es genehmigen. Die Genehmigungen können gleichzeitig erfolgen. In jedem Fall müssen beide Benutzer die Bestellung genehmigen, bevor der Workflow fortgesetzt werden kann.
+Sie arbeiten im Bereich Services von Contoso Applicances. Die Organisation verlangt, dass der Projektmanager für jede Bestellung die Ausgabe genehmigen muss. Außerdem muss der Kostenstellenleiter des Projekts es genehmigen. Die Genehmigungen können gleichzeitig erfolgen. In jedem Fall müssen beide Benutzer die Bestellung genehmigen, bevor der Workflow fortgesetzt werden kann.
 
 Für dieses Beispiel erstellen Sie einen *Aufwendungsprüfer für Bestellungen* namens **PM und Kostenstelle**. Sie wählen das Kontrollkästchen **Projektmanager** aus und setzen Sie die Option **Kostenstellendimension** auf **Ja** in der Registerkarte **Projektverteilungen** der Seite **Aufwendungsprüfer für Bestellungen**. Im Rahmen der Konfiguration müssen Sie sicherstellen, dass das Feld **Projektmanager** für alle Projekte festgelegt ist und dass für alle Kostenstellen auf der Seite **Finanzdimensionswerte** ein Besitzer festgelegt ist.
 

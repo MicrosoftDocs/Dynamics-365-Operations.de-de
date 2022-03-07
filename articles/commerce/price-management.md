@@ -2,27 +2,24 @@
 title: Einzelhandelspreisverwaltung
 description: In diesem Thema werden die Konzepte für das Erstellen und Verwalten von Verkaufspreisen in Dynamics 365 Commerce behandelt.
 author: ShalabhjainMSFT
-manager: AnnBe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a90f5706c87d398f495fae40f42f6c2d408b1c2a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 85f6188bff4d3535369e4af145f8f55a3263c4a3
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412441"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794162"
 ---
 # <a name="retail-sales-price-management"></a>Verwaltung von Einzelhandelsverkaufspreisen
 
@@ -240,3 +237,6 @@ Außerdem unterstützt **nur** das Preisfindungssystem die folgenden Preisfindun
 Der Preis ist einer der wichtigsten Faktoren, die bei der Einkaufsentscheidung vieler Kunden entscheidend sind. Viele Kunden vergleichen Preise auf verschiedenen Websites, bevor sie einen Kauf tätigen. Zur Sicherstellung dass sie konkurrenzfähige Preise bereitstellen, behalten die Einzelhändler ihre Konkurrenten genau im Blick und führen oft Verkaufsförderungsmaßnahmen durch. Um diese Einzelhändler bei ihrer Kundengewinnung zu unterstützen, ist es sehr wichtig, dass die Produktsuche, die Funktion fürs Durchsuchen und die Seite für Produktdetails die genauesten Preise anzeigen.
 
 In einer bevorstehenden Version von Commerce wird die Anwendungsprogrammierungsschnittstelle (API) **GetActivePrices** Preise zurückgeben, die einfache Rabatte enthalten (z. B. Einzelpositionsrabatte, die nicht von anderen Artikeln im Warenkorb abhängen). Auf diese Weise sind die Preise, die angezeigt werden, dem tatsächlichen Betrag ziemlich nahe, den Kunden für Artikel bezahlen werden. Diese API wird alle Typen einfacher Rabatte umfassen: zugehörigkeitsbasierte, treuebasierte, katalogbasierte sowie kanalbasierte Rabatte. Darüber hinaus wird die API die Namen und Gültigkeitsinformationen für die angewendeten Rabatte zurückgeben, sodass Einzelhändler eine ausführlichere Beschreibung des Preises bereitstellen können und einen Eindruck der Dringlichkeit vermitteln können, wenn die Gültigkeit des Rabatts bald abläuft.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

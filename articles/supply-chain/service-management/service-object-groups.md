@@ -1,31 +1,28 @@
 ---
 title: Serviceobjektgruppen
 description: Objektgruppen sind zum Sortieren und Filtern der Daten von Objekten für Berichte und Statistiken nützlich.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/11/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceObjectGroups
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4438487fa234cf093b557bca9455717b2cd3ca0b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bfee8bacbf9c62950ff45b90d19258516ec20b20
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428391"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568974"
 ---
-# <a name="service-object-groups"></a>Serviceobjektgruppen 
+# <a name="service-object-groups"></a>Serviceobjektgruppen
 
 [!include [banner](../includes/banner.md)]
 
@@ -35,17 +32,17 @@ Objektgruppen sind zum Sortieren und Filtern der Daten von Objekten für Bericht
 
 Mit dieser Gruppierungsmethode kann angezeigt werden, wo sich die verschiedenen Objekte befinden, für die das Unternehmen Services anbietet. Das Gruppieren von Objekten nach geografischer Position kann außerdem hilfreich sein, wenn z. B. die Objekte bestimmt werden müssen, für die in einem bestimmten Land oder einer Region bereits Services erbracht werden.
 
-## <a name="example"></a>Beispiel
+## <a name="example-of-grouping-by-geographical-location"></a>Beispiel für die Gruppierung nach geografischer Position
 
-Ein Debitor aus Belgien ruft beim Kundendienst an und möchte eine Servicevereinbarung für das Objekt ABC erstellen. Sie haben eine Objektgruppe mit geografischer Position Belgien allen Objekten in Belgien zugeordnet. Unter Verwendung dieser Gruppe als Filter kann schnell festgestellt werden, ob ABC bereits als Datensatz in der Anwendung vorhanden ist oder ob ein neues Objekt eingerichtet werden muss. 
+Ein Debitor aus Belgien ruft beim Kundendienst an und möchte eine Servicevereinbarung für das Objekt ABC erstellen. Sie haben eine Objektgruppe mit geografischer Position Belgien allen Objekten in Belgien zugeordnet. Unter Verwendung dieser Gruppe als Filter kann schnell festgestellt werden, ob ABC bereits als Datensatz in der Anwendung vorhanden ist oder ob ein neues Objekt eingerichtet werden muss.
 
 ## <a name="group-by-type"></a>Gruppieren nach Typ
 
 Mit dieser Gruppierungsmethode kann angezeigt werden, für welche Objekttypen das Unternehmen Services anbietet. Das Gruppieren von Objekten nach Typ kann außerdem hilfreich sein, wenn z. B. ein neues Objekt basierend auf ähnlichen in der Anwendung bereits vorhandenen Objekten erstellt werden soll.
 
-## <a name="example"></a>Beispiel
+## <a name="example-of-grouping-by-type"></a>Beispiel für die Gruppierung nach Typ
 
-Ein Debitor ruft an und möchte eine Servicevereinbarung für eine Klimaanlage HIJ einrichten. Für diese Anlage ist noch kein Datensatz vorhanden. Es ist jedoch bereits eine Objektgruppe Klimaanlagen eingerichtet, die allen Klimaanlagenobjekten zugeordnet wurde. Sie können deshalb schnell nach allen anderen Klimaanlagen suchen und die Vorlageninformationen aus diesen Objekten als Grundlage für Servicevertragspositionen für HIJ verwenden. Wenn Sie Objektgruppen auf diese Weise verwenden, können Sie umgehend neue Objekte einrichten und die Serviceaufgaben bestimmen, die dafür ausgeführt werden müssen. 
+Ein Debitor ruft an und möchte eine Servicevereinbarung für eine Klimaanlage HIJ einrichten. Für diese Anlage ist noch kein Datensatz vorhanden. Es ist jedoch bereits eine Objektgruppe Klimaanlagen eingerichtet, die allen Klimaanlagenobjekten zugeordnet wurde. Sie können deshalb schnell nach allen anderen Klimaanlagen suchen und die Vorlageninformationen aus diesen Objekten als Grundlage für Servicevertragspositionen für HIJ verwenden. Wenn Sie Objektgruppen auf diese Weise verwenden, können Sie umgehend neue Objekte einrichten und die Serviceaufgaben bestimmen, die dafür ausgeführt werden müssen.
 
 ## <a name="create-service-object-groups"></a>Erstellen von Serviceobjektgruppen
 
@@ -66,3 +63,6 @@ Sie können Serviceobjekte der Gruppe zuordnen, indem Sie das Formular **Service
 [Erstellen von Serviceobjekten](create-service-objects.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

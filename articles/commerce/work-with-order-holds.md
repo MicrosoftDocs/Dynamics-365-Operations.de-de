@@ -2,16 +2,13 @@
 title: Callcenter-Auftragssperren konfigurieren und mit ihnen arbeiten
 description: In diesem Thema wird beschrieben, wie Sie mit Sperren auf Aufträgen arbeitet, indem Dynamics 365 Commerce verwendet wird.
 author: josaw1
-manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: MCRHoldCodeTable, MCRSalesTableOrderHistory, MCRHoldCodeTrans, MCROrderEventSetup, MCROrderEventTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 79132
 ms.assetid: 7c00dc35-73e5-400a-8587-22f37ddfc0e0
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b11dd48ac629910a82b4d5bfdf9889809b0d829d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f474b5936f2ae154ad54185becd91865642e8efe3cf10e7dcdbb650c6c833b21
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412581"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762595"
 ---
 # <a name="configure-and-work-with-call-center-order-holds"></a>Konfigurieren und Arbeiten mit Callcenter-Auftragssperren
 
@@ -38,7 +35,7 @@ Um die Callcenterauftrags-Sperrfunktionen zu verwenden, müssen Sie zunächst Sp
 
 Um den Typ des zu erstellenden Hinweises anzugeben der beim Melden aufgezeichnet wird, geben Benutzer, die einen Auftrag sperren, optionale Hinweise ein. Gehen Sie zu **Debitoren** \> **Einstellungen** \> **Debitorenparameter**, und klicken Sie dann auf dem Inforegister **Vertriebseinstellung**, auf der Registerkarte, Satz **Allgemeines** **Hinweistyp**. Verwenden Sie das Feld **Gesperrter Auftragsstatus**, um die Farbe festzulegen, die verwendet wird, um Aufträge hervorzuheben, die gesperrt sind, wenn sie auf der Seite **Kundendienst** angezeigt werden.
 
-Um einen optionalen Satz von Ursachensperrcodes zu erstellen, wechseln Sie zu **Retail und Commerce** \> **Kanaleinrichtung** \> **Infocodes**. Diese Infocodes können als sekundäre Ursachencode verwendet werden, um den Hautsperrcode wieter zu definieren. Wählen Sie **Neu**, um einen Ursachencodesatz zu erstellen, und wählen Sie dann **Untercodes** um die Liste weiterer Gründe zu definieren. Um sämtliche Infocodes zu verknüpfen, die Sie im Callcenterkanal definieren, wechseln Sie zu **Retail und Commerce** \> **Kanäle** \> **Callcenter** \> **Alle Callcenter**. Auf dem Inforegister **Allgemeines** legen Sie das Feld **Sperrcode** fest.
+Um einen optionalen Satz von Ursachensperrcodes zu erstellen, wechseln Sie zu **Einzelhandel und Handel** \> **Kanaleinrichtung** \> **Infocodes**. Diese Infocodes können als sekundäre Ursachencode verwendet werden, um den Hautsperrcode wieter zu definieren. Wählen Sie **Neu**, um einen Ursachencodesatz zu erstellen, und wählen Sie dann **Untercodes** um die Liste weiterer Gründe zu definieren. Um sämtliche Infocodes zu verknüpfen, die Sie im Callcenterkanal definieren, wechseln Sie zu **Einzelhandel und Handel** \> **Kanäle** \> **Callcenter** \> **Alle Callcenter**. Auf dem Inforegister **Allgemeines** legen Sie das Feld **Sperrcode** fest.
 
 ## <a name="putting-orders-on-hold"></a>Gesperrte Aufträge
 
@@ -46,7 +43,7 @@ Aufträge, die Callcenterbenutzer im Back-Office-Commerce-Programm erstellen, k�
 
 Während der Verkaufserfassung aber vor Auftragsunterordnung und Bestätigung, sollten Callcenterbenutzer einen Auftrag manuell sperren, um ihn an freigegeben werden dem Lagerort das für die weitere Verarbeitung verhindert. Zum Beispiel ist der Debitor, der den Auftrag platziert, noch nicht bereit oder es fehlen zentrale Daten, um den Prozess erfolgreich zu verarbeiten.
 
-Auf der Auftragserfassungsseite kann der Callcenterbenutzer einen Auftrag sperren, indem er die Option **Auftragsgriffe** der Registerkarte **Auftrag** Auftragserfassungsmenüs verwendet. Alternativ kann der Benutzer die Menüoption **Sperren** auf der Seite **Auftragszusammenfassung** auswählen, die angezeigt wird, wenn sie bei einem Callcenterauftrag **Vollständig** auswählen.
+Auf der Auftragserfassungsseite kann der Callcenterbenutzer einen Auftrag sperren, indem er die Option **Auftragsgriffe** der Registerkarte **Auftrag** Auftragserfassungsmenüs verwendet. Alternativ kann der Benutzer die Menüoption **Sperren** auf der Seite **Auftragszusammenfassung** auswählen, die angezeigt wird, wenn der Benutzer bei einem Callcenterauftrag **Vollständig** auswählt.
 
 In beiden Fällen wird die Seite **Auftragssperre** angezeigt. Der Benutzer kann dann **Neu** auswählen, um eine Sperre für den Auftrag zu erstellen. Im Feld **Code sperren** sollte der Benutzer den Code auswählen, der den Grund für die Sperre am besten beschreibt. Im Feld **Ursachencode** kann der Benutzer einen zusätzlicher optionalen Code auswählen, um eine zweite Sperre des Werts bereitzustellen.
 
@@ -56,7 +53,7 @@ Nachdem Sie die Sperrinformationen eingegeben und gespeichert haben, kann der Be
 
 Wenn die Markierung **Aktivieren Sie Auftragsabschluss** im Callcenterkanal aktiviert ist, wird die Zahlung für einen gesperrten Auftrag nicht angewendet. Durch Kontrast für einen Auftrag, der nicht gesperrt ist, können Benutzer die Auftragseintragsseite nicht verlassen, bis die Zahlung angewendet wird. Selbstverständlich ist Zahlung erforderlich, bevor die Auftragssperre freigegeben wird.
 
-Darüber hinaus können Callcenterbenutzer eine manuelle Sperre für Aufträge erstellen, die aus einem bestimmten Grund verdächtig erscheinen. Aufträge können auch automatisch gesperrt werden, wenn sie mit Betrugskriterien und aktiven Regeln übereinstimmen. Weitere Informationen zu diesen Auftragssperrtypen, finden Sie unter [Einstellungsbetrugswarnungen](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-fraud-alerts).
+Darüber hinaus können Callcenterbenutzer eine manuelle Sperre für Aufträge erstellen, die aus einem bestimmten Grund verdächtig erscheinen. Aufträge können auch automatisch gesperrt werden, wenn sie mit Betrugskriterien und aktiven Regeln übereinstimmen. Weitere Informationen zu diesen Auftragssperrtypen, finden Sie unter [Einstellungsbetrugswarnungen](/dynamics365/unified-operations/retail/set-up-fraud-alerts).
 
 ## <a name="viewing-and-managing-orders-that-are-on-hold"></a>Aufträge anzeigen und verwalten, die gesperrt sind
 
@@ -73,7 +70,7 @@ Um die Details eines bestimmten Auftrags anzuzeigen, kann der Benutzer eine deta
 
 ### <a name="viewing-all-orders-that-are-on-hold"></a>Alle Aufträge anzeigen und verwalten, die gesperrt sind
 
-Um alle Aufträge anzuzeigen, die auf manuelle oder automatische Sperre gesetzt wurden, gehen Sie zu **Retail und Commerce** \> **Kunden** \> **Auftragssperren**.
+Um alle Aufträge anzuzeigen, die auf manuelle oder automatische Sperre gesetzt wurden, gehen Sie zu **Einzelhandel und Handel** \> **Kunden** \> **Auftragssperren**.
 
 Workbench enthält eine Listenansicht **Auftragssperren**, die alle Aufträge enthält, die aufgrund von manuellen oder Betrug-zugeordneten Aktivitäten gesperrt sind. Mithilfe der Standardfilterungs- und Sortierfunktionen auf der Seite können Benutzer Ansichten erstellen, mit denen sie arbeiten mit oder bestimmte Sperrcodes verwalten lassen, für die Sie für die Überprüfung zuständig sind. Der Workbench **Aufträge sperren** gibt auch die Anzahl von Tagen an, für die ein Auftrag gesperrt war. Diese Informationen können Benutzer unterstützen, die Warteschlange zu priorisieren.
 
@@ -102,4 +99,7 @@ Wenn Benutzer einen Sperre verrechnen aber zusätzliche Änderungen am Auftrag v
 
 ## <a name="reporting-options"></a>Sonstige Berichtsoptionen
 
-Gehen Sie zu **Retail und Commerce** \> **Abfragen und Berichte** \> **Callcenterberichte** \> **Auftragssperrenbericht**, um einen Bericht zu Auftragssperren nach Datumsbereich, Sperrcode oder zugehörigen Kriterien auszuführen.
+Gehen Sie zu **Einzelhandel und Handel** \> **Abfragen und Berichte** \> **Callcenterberichte** \> **Auftragssperrenbericht**, um einen Bericht zu Auftragssperren nach Datumsbereich, Sperrcode oder zugehörigen Kriterien auszuführen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

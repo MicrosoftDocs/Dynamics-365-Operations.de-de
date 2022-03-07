@@ -2,26 +2,23 @@
 title: Nummernkreise für Lagerflows konfigurieren
 description: Dieses Thema bietet einen Überblick über die Funktionen, die Nummernkreiserweiterungen für Kennzeichen-IDs, Wellenetikett-IDs, Container-IDs und Frachtbrief-IDs.
 author: GarmMSFT
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSNumberSequenceExt
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: e6faab834b4c1c514bcc23a59d74e2bd0e069754
-ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
+ms.openlocfilehash: e9ba06908b9e82763557e98715e495cfaf649753
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4429145"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574712"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>Nummernkreise für Lagerflows konfigurieren
 
@@ -92,3 +89,6 @@ Führen Sie die folgenden Schritte aus, um Nummernkreise zu erstellen und zu bea
     | Prüfziffer | Dieser Segmenttyp fügt eine Prüfziffer hinzu, bei der es sich um eine Modulo 10-Berechnung handelt. (Dieses Verhalten entspricht der vorhandenen Logik für Kennzeichen-IDs.) Für diesen Segmenttyp wird das Feld **Wert** immer auf ein Caretzeichen festgelegt (*^*), und das Feld **Länge** wird immer auf *1* festgelegt. |
 
 1. Um ein Beispiel für Ihr endgültiges Zahlenformat anzuzeigen, überprüfen Sie das Feld **Format** am unteren Rand des Inforegisters **Segmente**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,17 +4,24 @@ description: In diesem Thema wird die Verwendung des Preisgestaltungsmoduls in M
 author: RamaKrishnamoorthy
 ms.date: 03/10/2019
 ms.topic: article
+ms.prod: ''
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: ramasri
-ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 134bfc2ec0e69938c945e384a98676d3708c8e17
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.dyn365.ops.version: ''
+ms.search.validFrom: 2020-03-10
+ms.openlocfilehash: bf4154816f01040a236dde77b92ee69396158614
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783306"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750763"
 ---
 # <a name="sync-on-demand-with-the-supply-chain-management-pricing-engine"></a>On-Demand-Synchronisierung mit dem Preisgestaltungsmodul von Supply Chain Management
 
@@ -38,10 +45,10 @@ Microsoft Dynamics 365 Supply Chain Management enthält ein Preisgestaltungsmodu
     + Skonto
     + Vorfrachtbetrag
     + Frachtbetrag
-    + Gesamtsteuer
+    + Gesamte Steuern
     + Gesamtbetrag
     
-5. Stellen Sie sicher, dass das System Handelsvereinbarungen zur Berechnung des Preises berücksichtigt:
+5. Stellen Sie sicher, dass das System Handelsvereinbarungen und Kaufverträge zur Berechnung des Preises berücksichtigt:
     1. Navigieren Sie zu Ihrer Supply Chain Management-Umgebung.
     2. Navigieren Sie zu **Debitoren \> Einrichtung \> Debitorenparameter**.
     3. Wählen Sie in der seitlichen Navigationsleiste die Registerkarte **Preise** aus.
@@ -51,7 +58,7 @@ Microsoft Dynamics 365 Supply Chain Management enthält ein Preisgestaltungsmodu
 
 Wenn Sie in Sales **Preis für Auftrag** auswählen, wird die Funktion **Summen** in der Registerkarte **Auftrag \> Anzeigen** in Supply Chain Management für den zugehörigen Kundenauftrag aufgerufen. Die Werte in der Auftragssumme in Sales werden verwendet, um die entsprechenden Spalten in Supply Chain Management auszufüllen.
 
-Wenn die Kundenauftragssumme im Supply Chain Management berechnet wird, wertet die Berechnung die vorhandenen Handelsvereinbarungen für den Kunden und die im Kundenauftrag aufgeführten Produkte aus. Diese Daten werden zum Berechnen der Summen verwendet. Wenn die Option **Preis für Auftrag** ausgewählt ist, spiegelt Sales automatisch alle Einstellungen wider, die im Supply Chain Management vorgenommen wurden.
+Wenn die Kundenauftragssumme im Supply Chain Management berechnet wird, wertet die Berechnung die vorhandenen Handelsvereinbarungen und Verkaufsvereinbarungen für den Kunden und die im Kundenauftrag aufgeführten Produkte aus. Diese Daten werden zum Berechnen der Summen verwendet. Wenn die Option **Preis für Auftrag** ausgewählt ist, spiegelt Sales automatisch alle Einstellungen wider, die im Supply Chain Management vorgenommen wurden.
 
 ## <a name="limitations"></a>Einschränkungen
 
@@ -60,7 +67,6 @@ Wenn die Spalten in Sales ausgefüllt sind, gelten folgende Einschränkungen:
 + Das Einrichten von Gebühren und Gebührenzuordnungen im Supply Chain Management wird in Sales nicht repliziert.
 + Bei der Preisgestaltung werden keine speziellen Einzelhandelspreise berücksichtigt, die in der Spalte **Retail Channel** auf der Seite „Auftragsposition“ in Supply Chain Management angegeben sind.
 + Rabatte, die im Abschnitt **Handelsvergütungsverwaltung** des Supply Chain Management definiert sind, werden nicht berücksichtigt.
-+ Die Preisgestaltung berücksichtigt keine Kaufverträge.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

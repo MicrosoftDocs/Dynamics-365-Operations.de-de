@@ -2,11 +2,9 @@
 title: Chargenausgleich
 description: In diesem Thema wird der Chargenausgleichprozess beschrieben.
 author: johanhoffmann
-manager: tfehr
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMTable, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 8c1f52239b2050425c37a8130507e689b29205a8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 104c8bdf50bfcb7f598020f669a431d6e9d51c83
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966554"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5811821"
 ---
 # <a name="batch-balancing"></a>Chargenausgleich
 
@@ -186,3 +184,6 @@ Es gibt zwei Ausnahmen zur Regel, dass Chargenausgleiche in den Chargenaufträge
 1. Wenn sich die Formelmaßeinheit von der Lagermaßeinheit der Wirksubstanz unterscheidet, gilt der Chargenauftrag nicht für den Chargenausgleich.
 
 Ein Chargenauftrag, der nicht für Chargenausgleich anwendbar ist, durchläuft den normalen Prozesszyklus für Chargenaufträge.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

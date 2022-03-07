@@ -1,29 +1,26 @@
 ---
 title: Einsatzteams einrichten
 description: In diesem Abschnitt wird beschrieben, wie Sie ein Versandteam erstellen.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMADispatchTeamTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b2b41b9ed763971feba489769ebad6f4076925e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 48d35e4a49393a73f6c22c3ba78c65e72701d335
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428383"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571352"
 ---
 # <a name="set-up-dispatch-teams"></a>Einsatzteams einrichten 
 
@@ -50,7 +47,10 @@ In diesem Abschnitt wird beschrieben, wie Sie ein Versandteam erstellen. Nachdem
 
 
 > [!NOTE]
-> <P>Sie können im Formular <STRONG>Arbeitskraft</STRONG> eine Arbeitskraft zu diesem Versandteam zuweisen. Weitere Informationen zum Zuweisen einer Arbeitskraft zu einem Versandteam finden Sie unter <A href="https://technet.microsoft.com/library/dn776288(v=ax.60)">Arbeitskräfte disponieren (Formular)</A>.</P>
+> <P>Sie können im Formular <STRONG>Arbeitskraft</STRONG> eine Arbeitskraft zu diesem Versandteam zuweisen. Weitere Informationen zum Zuweisen einer Arbeitskraft zu einem Versandteam finden Sie unter <A href="/dynamicsax-2012//dispatch-workers-form">Arbeitskräfte disponieren (Formular)</A>.</P>
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

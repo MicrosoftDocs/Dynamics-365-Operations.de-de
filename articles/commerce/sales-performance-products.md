@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: SysOperationsTemplateForm
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 85153
 ms.assetid: b3ac056f-0e4f-4e16-8479-37366f488793
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f429fa38a7d68631449acb0a0ea5872771400b85
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 27308f9991a6ddb36ef1f2e93082187fbf867132
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412681"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5254864"
 ---
 # <a name="assess-sales-performance-by-product"></a>Verkaufsleistung nach Produkt
 
@@ -42,5 +41,8 @@ Im Rahmen von Commerce können Benutzer auch die Rentabilität der wichtigsten P
 Für diese Bewertung können Sie den vordefinierten **Bericht über Top-Produkte** verwenden, den Sie an folgenden Stellen öffnen können:
 
 - **Shopverwaltung**-Arbeitsbereich &gt; **Retail and Commerce** &gt; **Kanäle** &gt; **Shopverwaltung** &gt; **Berichte** &gt; **Bericht „Wichtigste Produkte”**
-- Arbeitsbereich **Kategorie- und Produktverwaltung** &gt; **Retail und Commerce** &gt; **Kanäle** &gt; **Shopverwaltung** &gt; **Berichte** &gt; **Bericht über Top-Produkte**
-- **Abfragen und Berichte**-Abschnitt &gt; **Retail und Commerce** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht über Top-Produkte**
+- Arbeitsbereich **Kategorie- und Produktverwaltung** &gt; **Einzelhandel und Handel** &gt; **Kanäle** &gt; **Shopverwaltung** &gt; **Berichte** &gt; **Bericht über Top-Produkte**
+- **Abfragen und Berichte**-Abschnitt &gt; **Einzelhandel und Handel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht über Top-Produkte**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

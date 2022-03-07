@@ -2,29 +2,28 @@
 title: Spediteurgruppen
 description: In diesem Thema wird beschrieben, wie Sie Daten für Spediteur-Gruppen festlegen.
 author: Henrikan
-manager: ''
 ms.date: 10/30/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSCarrierGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 2570479edac9bc8cc7aa998a8b69f54ffc10cd61
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 10a30d8fae52a25b7d65b5a9cc991677df33a2a7
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646394"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574880"
 ---
 # <a name="carrier-groups"></a>Spediteurgruppen
+
+[!include [banner](../../includes/banner.md)]
 
 Eine Spediteurgruppe ist eine Sammlung von Spediteuren und Speditionsdiensten. Jede Spediteurgruppe gibt die bevorzugte Sequenz für die zu ihr gehörenden Spediteure und Speditionsdienste an.
 
@@ -38,3 +37,6 @@ Wenn mehrere Spediteure und Zustelldienste für denselben Streckenabschnitt exis
 1. Geben Sie in das Feld **Name** einen beschreibenden Namen für die Gruppe ein.
 1. Fügen Sie auf dem Inforegister **Details** eine Zeile hinzu und wählen Sie einen Spediteur und einen Speditionsdienst dafür aus. Wiederholen Sie diesen Schritt, bis Sie so viele Spediteure hinzugefügt haben, wie Sie für die Gruppe benötigen.
 1. Schließen Sie die Seite.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

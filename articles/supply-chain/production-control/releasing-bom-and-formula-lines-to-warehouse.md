@@ -2,27 +2,24 @@
 title: Stücklisten- und Formelpositionen für den Lagerort freigeben
 description: In diesem Thema wird der Prozess für die Freigabe von Rohmaterial für Stücklistenpositionen und Formelpositionen zum Lagerort beschrieben.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysOperationTemplateForm, ProdParmReleaseToWarehouse, WHSReleaseToWarehouseProdBOM
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: bf2beef30ba1cf6877325e686b76de5dc8d3ba55
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: c9956290ce8f90f04bc144d710ad35b5a0243e3898a8f3e75692b1a9da506149
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429048"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731222"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Stücklisten- und Formelpositionen für den Lagerort freigeben
 
@@ -64,7 +61,7 @@ In der Abfrage für den Batchauftrag **Automatische Freigabe der Stücklisten- u
 
 Die folgende Abbildung zeigt einen Produktionsauftrag, der zwei Einzelvorgänge hat, 10 und 20, die die Zusammenstellung und Verpackung für den Produktionsauftrag abdecken. Jeder Einzelvorgang ist so eingerichtet, dass er eine Menge von Material verbraucht. In dieser Abbildung entspricht der Freigabezeitraum, der durch den grünen Pfeil unter der Zeitposition angezeigt wird der Anzahl der Tage, die im Kriterium **(LessThanDate())** festgelegt wurde. Beispielsweise gibt **(LessThanDate (2))** an, dass der Einzelvorgang nur innerhalb eines Zeitraums von zwei Tagen nach nicht freigegebenen Mengen suchen soll.
 
-![Beispiel eines Produktionsauftrags, der zwei Batchaufträge hat](media/bach-job-setup.PNG)
+![Beispiel eines Produktionsauftrags, der zwei Batchaufträge hat.](media/bach-job-setup.PNG)
 
 ## <a name="releasing-material-per-operation-number-or-in-proportion-to-the-amount-of-finished-goods"></a>Freigabe von Material pro Arbeitsgangnummer oder im Verhältnis zur Menge der Fertigartikel
 
@@ -81,7 +78,7 @@ Um die Arbeitsgänge zu steuern, zu denen Material freigegeben werden soll, verw
 
 Die folgende Abbildung zeigt einen Produktionsauftrag, der zwei Arbeitsgänge hat, 10 und 20. Wenn Sie in diesem Beispiel die Freigabe auf Arbeitsgang 10 einschränken, wird nur Material M9203 freigegeben.
 
-![Beispiel der Freigabe von Material pro Arbeitsgangnummer](media/two-operations.PNG)
+![Beispiel der Freigabe von Material pro Arbeitsgangnummer.](media/two-operations.PNG)
 
 Für eine rasche Demonstration zur Freigabe von Material in Relation zum Betrag von Endartikeln schauen Sie dieses kurze YouTube-Video an: [Erweiterungen für den Produktionsauftragsfreigabenprozess](https://www.youtube.com/watch?v=Rm3ojAz6Zu0)
 
@@ -98,3 +95,6 @@ Sie können Rohmaterial für eine Teilmenge der Fertigartikel oder in einer best
     Die Einheiten, die zur Verfügung stehen, werden in der Einheitsnummernkreisgruppen-ID der Fertigartikel definiert.
 
     Ein Fertigartikel weist beispielsweise die folgende Einheitskonvertierung zwischen Kilogramm (kg) und Palette (PL) auf: 1 PL = 50 kg. Um einen Produktionsauftrag für 5.000 kg von Fertigkartikeln zu erstellen, können Sie Rohmaterialen für die Anzahl der Paletten freigeben, für die Sie die Fertigung planen. Wählen Sie **PL** als Einheit aus, und wählen Sie dann eine entsprechende Zahl im Feld **Menge** aus.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

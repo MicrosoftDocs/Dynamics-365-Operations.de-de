@@ -2,35 +2,30 @@
 title: Bewertungs- und Prüfungsmodule
 description: Dieses Thema umfasst Bewertungen und Rezensionsmodule, die auf den Produktdetailseiten in Microsoft Dynamics 365 Commerce verwendet werden.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: 85fb1272103eed7d6e44635b7c20438471d96b34
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dee9a6a7e2a5278f069958ce00689b1beb9b1bd7
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412666"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792146"
 ---
-# <a name="ratings-and-reviews-modules"></a>Bewertungs- und Prüfungsmodule
+# <a name="ratings-and-reviews-modules"></a>Bewertungs‑ und Prüfungsmodule
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema behandelt Bewertungen und Rezensionsmodule, die auf den Produktdetailseiten (PDPs) in Microsoft Dynamics 365 Commerce verwendet werden.
-
-## <a name="overview"></a>Übersicht
+Dieses Thema umfasst Bewertungen und Rezensionsmodule, die auf den Produktdetailseiten (Product Details Pages, PDP) in Microsoft Dynamics 365 Commerce verwendet werden.
 
 Bewertungen und Rezensionen auf E-Commerce-Websites helfen Kunden, sich über Produkte zu informieren, bevor sie eine Kaufentscheidung treffen, und sind auch ein Mechanismus zum Sammeln von Kundenfeedback zu Produkten. 
 
@@ -100,3 +95,6 @@ Das Produktprüfungs-Listenmodul enthält einen Slot, in dem Sie ein Bewertungsh
 [Kopfzeilenmodul](author-header-module.md)
 
 [Fußzeilenmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

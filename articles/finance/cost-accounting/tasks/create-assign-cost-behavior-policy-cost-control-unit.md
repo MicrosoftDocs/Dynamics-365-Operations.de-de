@@ -2,11 +2,9 @@
 title: Eine Kostenverhaltensrichtlinie für eine Kostenkontrollsteuereinheit erstellen und zuweisen
 description: Kostenverhalten ist die Klassifizierung von Kosten, entweder als fix oder als variabel.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostBehaviorRule
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 110ab87586c926d719537d2c30225d1630ce7710
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 757e5a5be94e7190f4dbb51d667dc8adec4b824a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969302"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826322"
 ---
 # <a name="create-and-assign-a-cost-behavior-policy-to-a-cost-control-unit"></a>Eine Kostenverhaltensrichtlinie für eine Kostenkontrollsteuereinheit erstellen und zuweisen
 
@@ -85,3 +83,6 @@ Kostenverhalten ist die Klassifizierung von Kosten, entweder als fix oder als va
 15. Geben Sie im Feld "Kostenkontrolleinheit" einen Wert ein oder wählen Sie einen Wert aus.
 16. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

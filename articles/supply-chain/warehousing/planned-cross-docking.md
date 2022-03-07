@@ -2,11 +2,9 @@
 title: Geplantes Crossdocking
 description: In diesem Thema wird das erweiterte geplante Crossdocking beschrieben, bei dem die für eine Bestellung erforderliche Lagerbestandsmenge direkt vom Eingang oder der Erstellung zum richtigen ausgehenden Dock oder Stagingbereich geleitet wird. Der gesamte verbleibende Lagerbestand aus der eingehenden Quelle wird durch den regulären Einlagerungsprozess an den richtigen Lagerort geleitet.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCrossDockingTemplate, WHSLoadPostMethod, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSPlannedCrossDocking
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: fb598b3ac7dd72e8c500f0c2eaf07462009c67f7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: c28639a4a575f5f356bf947ba8e0aee6bcd256b4
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970305"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573032"
 ---
 # <a name="planned-cross-docking"></a>Geplantes Crossdocking
 
@@ -30,19 +28,21 @@ In diesem Thema wird das erweiterte geplante Crossdocking beschrieben. Crossdock
 
 Durch Crossdocking können Mitarbeiter eingehende Einlagerungen und ausgehende Kommissionierungen vom Lagerbestand überspringen, der bereits für eine ausgehende Bestellung markiert ist. Daher wird die Häufigkeit, mit der der Lagerbestand berührt wird, nach Möglichkeit minimiert. Da weniger Interaktion mit dem System besteht, wird außerdem die Zeit- und Platzersparnis im Lagerortfertigungsbereich erhöht.
 
-Bevor Crossdocking ausgeführt werden kann, muss der Benutzer eine neue Crossdocking-Vorlage konfigurieren, in der die Bezugsquelle und andere Anforderungen für das Crossdocking angegeben sind. Beim Erstellen der ausgehenden Bestellung muss die Position mit einer eingehenden Bestellung markiert werden, die denselben Artikel enthält.
+Bevor Sie Crossdocking ausführen können, müssen Sie eine neue Crossdocking-Vorlage konfigurieren, in der die Bezugsquelle und andere Anforderungen für das Crossdocking angegeben sind. Beim Erstellen der ausgehenden Bestellung muss die Position mit einer eingehenden Bestellung markiert werden, die denselben Artikel enthält. Sie können das Feld „Richtliniencode“ in der Crossdocking-Vorlage auswählen, ähnlich wie Sie Wiederbeschaffungen und Bestellungen einrichten.
 
 Zum Zeitpunkt des Eingangs eingehender Bestellungen erkennt das Crossdocking-Setup automatisch den Bedarf an Crossdocking und erstellt die Bewegungsarbeit für die erforderliche Menge basierend auf dem Setup der Lagerplatzrichtlinie.
 
 > [!NOTE]
-> Lagerbuchungen sind **nicht** unregistriert, wenn Crossdocking-Arbeiten abgebrochen werden, auch wenn die Einstellung für diese Funktion in den Lagerortverwaltungsparametern aktiviert ist.
+> Lagerbuchungen sind *nicht* unregistriert, wenn Crossdocking-Arbeiten abgebrochen werden, auch wenn die Einstellung für diese Funktion in den Lagerortverwaltungsparametern aktiviert ist.
 
-## <a name="turn-on-the-planned-cross-docking-feature"></a>Funktion für geplantes Crossdocking aktivieren
+## <a name="turn-on-the-planned-cross-docking-features"></a>Schalten Sie die Funktionen für das geplante Cross Docking ein
 
-Bevor Sie das erweiterte geplante Crossdocking verwenden können, muss die Funktion in Ihrem System aktiviert sein. Administratoren können mit der Einstellung [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und ggf. aktivieren. Dort wird die Funktion folgendermaßen aufgelistet:
+Wenn Ihr System nicht bereits die in diesem Thema beschriebenen Funktionen enthält, gehen Sie zu [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und schalten Sie die folgenden Funktionen in der folgenden Reihenfolge ein:
 
-- **Module:** *Lagerortverwaltung*
-- **Funktionsname:** *Geplantes Crossdocking*
+1. *Geplantes Crossdocking*
+1. *Crossdockingvorlagen mit Lagerplatzrichtlinien*
+    > [!NOTE]
+    > Diese Funktion aktiviert das **Richtliniencode**, das in der Crossdocking-Vorlage angegeben werden soll, ähnlich wie Sie Wiederaufbauvorlagen einrichten. Durch Aktivieren dieser Funktion können Sie keinen Richtliniencode in die Crossdocking-Arbeitsvorlagenzeilen für die letzte *Einlagern*-Zeile. Dies stellt sicher, dass der endgültige Einlagerungsort während der Arbeitserstellung bestimmt werden kann, bevor Arbeitsvorlagen berücksichtigt werden.
 
 ## <a name="setup"></a>Einstellung
 
@@ -90,6 +90,10 @@ Das geplante Crossdocking wird als Ladebuchungsmethode implementiert. Nachdem Si
 
         Diese Option definiert, ob die Lieferung während des Eingangs erneut validiert werden soll. Wenn diese Option auf *Ja* festgelegt ist, werden sowohl das maximale Zeitfenster als auch der Ablauftagebereich überprüft.
 
+    - **Richtliniencode:** Lassen Sie dieses Feld leer
+
+        Diese Option wird durch die Funktion *Crossdockingvorlagen mit Lagerplatzrichtlinien* aktiviert. Das System benutzt Lagerplatzrichtlinien, um den besten Lagerplatz zu bestimmen, an den der Bestand beim Crossdocking gebracht werden soll. Sie können sie festlegen, indem Sie jeder relevanten Cross-Docking-Vorlage einen Richtliniencode zuweisen. Beachten Sie, dass bei festgelegtem Richtliniencode das System die Lagerplatzrichtlinie nach dem Richtliniencode sucht, wenn Arbeit erstellt wird. Auf diese Weise können Sie Lagerplatzrichtlinien einschränken, die für eine bestimmte Crossdockingvorlage verwendet werden.
+
     - **Zeitfenster validieren:** *Ja*
 
         Diese Option definiert, ob das maximale Zeitfenster ausgewertet werden soll, wenn eine Bezugsquelle ausgewählt wird. Wenn diese Option auf *Ja* festgelegt ist, werden die Felder verfügbar, die sich auf das maximale und minimale Zeitfenster beziehen.
@@ -112,6 +116,9 @@ Das geplante Crossdocking wird als Ladebuchungsmethode implementiert. Nachdem Si
 
     - **Sequenznummer:** *1*
     - **Bezugsquelle:** *Bestellung*
+
+> [!NOTE]
+> Sie können eine Abfrage einrichten, um zu steuern, wann eine bestimmte Crossdocking-Vorlage verwendet wird. Die Abfrage nach Crossdocking-Vorlagen hat nur die (Artikel-)Tabelle *InventTable* und die innere verknüpfte (WHS-Artikel-)Tabelle *WHSInventTable*. Wenn Sie der Abfrage weitere Tabellen hinzufügen möchten, können Sie sie nur mit *Bestehende Verknüpfungen* oder *Nicht bestehende Verknüpfungen* verknüpfen. Wenn Sie nach den verknüpften Tabellen filtern, wird für jeden übereinstimmenden Datensatz in der verknüpften Tabelle ein Datensatz aus der Haupttabelle abgerufen. Wenn der Verknüpfungstyp *Verknüpfung besteht* ist, endet die Suche, nachdem die erste Übereinstimmung gefunden wurde. Wenn Sie beispielsweise die Auftragspositionstabelle mit der Artikeltabelle verknüpfen, validiert das System Artikel und gibt sie zurück, für die mindestens eine Kundenauftragsposition die definierte Bedingung aufweist. Im Wesentlichen werden die Daten aus der übergeordneten (Artikel-)Tabelle (Artikel) abgerufen, nicht aus der untergeordneten (Auftragspositions-)Tabelle. Daher ist das Filtern nach Quelldokumenten wie Auftragspositionen oder Debitoren nicht sofort möglich.
 
 ### <a name="create-a-work-class"></a>Eine Arbeitsklasse erstellen
 
@@ -147,6 +154,9 @@ Das geplante Crossdocking wird als Ladebuchungsmethode implementiert. Nachdem Si
     - **Arbeitsklassen-ID:** *CrossDock*
 
 1. Wählen Sie **Speichern** aus, und bestätigen Sie, dass das Kontrollkästchen **Gültig** für die Vorlage *51 Crossdocking* ausgewählt ist.
+1. Optional: Wählen Sie **Abfrage bearbeiten**, wenn Sie Kriterien festlegen möchten, um zu steuern, wann und wo die Arbeitsvorlage verwendet wird.
+
+    Sie können eine Abfrage einrichten, um zu steuern, wann eine spezifische Arbeitsvorlage verwendet wird. Sie können beispielsweise festlegen, dass eine Vorlage nur für die Arbeit an einem bestimmten Lagerplatz verwendet werden kann. Wenn Sie möchten, dass die Crossdocking-Arbeitsvorlage an einem bestimmten Lagerplatz angewendet wird, müssen Sie nach dem Feld **Ausgangslagerplatz** nicht dem Feld **Lagerplatz** filtern, da die Arbeitserstellung für die eingehenden Prozesse (Kauf, Crossdocking und Wiederbeschaffung) von der Einlagerungsposition aus beginnt. Wenn Arbeit erstellt wird, legt die Lagerplatzrichtlinie das Feld **Lagerplatz** auf den Einlagerungslagerplatz festlegt. Der Entnahmelagerplatz wird jedoch im Feld **Ausgangslagerort** gespeichert.
 
 > [!NOTE]
 > Die Arbeitsklassen-IDs für die Arbeitstypen *Entnehmen* und *Einlagern* müssen gleich sein.
@@ -314,4 +324,7 @@ Derzeit haben beide Arbeits-IDs das gleiche Zielkennzeichen. Um die nächsten Sc
 
 Die folgende Abbildung zeigt, wie die abgeschlossene Crossdocking-Arbeit in Microsoft Dynamics 365 Supply Chain Management aussehen könnte.
 
-![Crossdocking-Arbeit abgeschlossen](media/PlannedCrossDockingWork.png "Crossdocking-Arbeit abgeschlossen")
+![Crossdocking-Arbeit abgeschlossen.](media/PlannedCrossDockingWork.png "Crossdocking-Arbeit abgeschlossen")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,30 +1,32 @@
 ---
 title: Client wurde getrennt
-description: In diesem Artikel wird erläutert, was zu tun ist, wenn der Kunde/die Kundin von seiner/ihrer Umgebung getrennt ist und den Grund nicht kennt.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+description: Dieses Thema erklärt, was zu tun ist, wenn der Debitor nicht mehr mit der Umgebung verbunden ist.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2088706baf8735fa371960955a2ffc3240ccac76
-ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
+ms.openlocfilehash: b15c5db19f1b07e3d469986ac700138ecb1d1525
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4418761"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071134"
 ---
 # <a name="client-disconnects"></a>Client wurde getrennt
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Umgebungsdetails** 
 
@@ -32,7 +34,7 @@ Dieses Problem kann in allen Umgebungen auftreten.
  
 **Symptom** 
 
-Der Kunde/die Kundin ist von seiner/ihrer Umgebung getrennt und kennt den Grund nicht. Der Kunde erhält eine der folgenden Fehlermeldungen:
+Kunden sind von der Umgebung getrennt und kennen den Grund nicht. Der Kunde erhält eine der folgenden Fehlermeldungen:
 
 - Die Verbindung wurde getrennt Klicken Sie auf „Schließen”, um die Arbeit fortzusetzen.
 - Die Netzwerkverbindung wurde anscheinend unterbrochen. Klicken Sie auf 'Wiederholen', um es erneut zu versuchen.
@@ -52,3 +54,6 @@ Microsoft Dynamics 365 Human Resources trennt die Verbindung von Benutzern, wenn
 Stellen Sie sicher, dass nur eine Umgebung gleichzeitig für einen bestimmten Browsertyp geöffnet ist. Benutzer können mehrere Sitzungen für die gleiche Umgebung öffnen (das heißt, mehrere Registerkarten im selben Browser).
 
 Benutzer, die zwischen zwei Umgebung gleichzeitig hin- und herwechseln möchten, sollten jede Umgebung in einem anderen Browsertyp öffnen. (Beispielsweise kann Benutzer A Umgebung 1 in Chrome und Umgebung 2 in Microsoft Edge anzeigen.)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,29 +2,26 @@
 title: Verbessern der Leistung des Planungsmoduls
 description: Dieses Thema enthält Informationen zum Planungsmodul und zur Verbesserung der Leistung.
 author: ChristianRytt
-manager: tfehr
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1c1b940754021956998fe27ba16020d4b16aedf1
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: 2495339f25469af705cff841f090c5df95b4d996
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429016"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578439"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Verbessern der Leistung des Planungsmoduls
 
@@ -69,13 +66,13 @@ Betrachten Sie als Beispiel einen Arbeitsplan, der in der folgenden Tabelle und 
 | 10 | Sekundär&nbsp;1 | | | | 1 | 20 |
 | 20 | Primär | | 3.00 | 1.00 | 3 | 0 |
 
-![Beispiel eines Arbeitsplandiagramms](media/scheduling-engine-route.png "Beispiel eines Arbeitsplandiagramms")
+![Beispiel eines Arbeitsplandiagramms.](media/scheduling-engine-route.png "Beispiel eines Arbeitsplandiagramms")
 
 Wenn Sie dies an das Modul senden, wird es in acht Einzelvorgänge aufgeteilt, wie in der folgenden Abbildung gezeigt (wählen Sie das Bild aus, um es zu vergrößern).
 
 [![Planen von Moduleinzelvorgängen](media/scheduling-engine-jobs.png "Planen von Moduleinzelvorgängen")](media/scheduling-engine-jobs-large.png)
 
-Die Standardverbindung zwischen zwei Einzelvorgängen ist `FinishStart`. Dies bedeutet, dass die Endzeit eines Einzelvorgangs vor der Startzeit eines anderen Einzelvorgangs liegen muss. Da das Setup von derselben Ressource ausgeführt werden muss, die später den Prozess ausführt, gibt es `OnSameResource`-Einschränkungen zwischen ihnen. Zwischen den Einzelvorgängen für den primären und den sekundären Betrieb für 10 gibt es `StartStart`- und`FinishFinish`-Links, was bedeutet, dass die Einzelvorgänge gleichzeitig beginnen und enden müssen, und es gibt `NotOnSameResource`-Einschränkungen, die verhindern, dass die gleiche Ressource für primäre und sekundäre Arbeitsvorgänge verwendet wird.
+Die Standardverbindung zwischen zwei Einzelvorgängen ist `FinishStart`. Dies bedeutet, dass die Endzeit eines Einzelvorgangs vor der Startzeit eines anderen Einzelvorgangs liegen muss. Da das Setup von derselben Ressource ausgeführt werden muss, die später den Prozess ausführt, gibt es `OnSameResource`-Einschränkungen zwischen ihnen. Zwischen den Einzelvorgängen für den primären und den sekundären Betrieb für 10 gibt es `StartStart`- und `FinishFinish`-Links, was bedeutet, dass die Einzelvorgänge gleichzeitig beginnen und enden müssen, und es gibt `NotOnSameResource`-Einschränkungen, die verhindern, dass die gleiche Ressource für primäre und sekundäre Arbeitsvorgänge verwendet wird.
 
 Für Arbeitsgang 20, bei dem die Ressourcenmenge auf 3 festgelegt wurde, wurde der Prozesseinzelvorgang in drei verschiedene Einzelvorgänge aufgeteilt, bei denen alle Einzelvorgänge genau zur gleichen Zeit ausgeführt werden müssen.
 In diesem Fall wurde die Arbeitsplangruppe so eingerichtet, dass keine Kapazität für die Warteschlange nach Zeiten reserviert wird. Daher gibt es nur einen einzigen Einzelvorgang für die Warteschlange danach.
@@ -329,3 +326,6 @@ Der Wert für **Zeitlimit für Optimierungsversuche** steuert, wie viele Sekunde
 
 > [!NOTE]
 > Die für die Zeitüberschreitungen festgelegten Werte werden sowohl für die Planung von freigegebenen Produktionsaufträgen und von geplanten Aufträgen im Rahmen der Materialbedarfsplanung angewendet. Infolgedessen kann das Festlegen sehr hoher Werte die Laufzeit der Materialbedarfsplanung erheblich verlängern, wenn ein Plan mit vielen geplanten Produktionsaufträgen ausgeführt wird.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

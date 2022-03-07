@@ -2,28 +2,25 @@
 title: Retouren
 description: Die Themen dieses Abschnitts enthalten Informationen zu Rücklieferungen. Er umfasst Informationen zu einer Rücksendung und ihren Auswirkungen auf Nachkalkulations- und Lagerbestandmengen.
 author: omulvad
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReturnTableListPage, ReturnTable, ReturnTableListPagePreviewPane, ReturnTableReferences, SalesReturnExpiredOrdersPart, SalesReturnFindOrderFormPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.assetid: 98a4b517-e606-4036-b55f-1ab248898bdf
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd194042303797fe41507065d0d7e4df28309cfb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 511652c50354a440d6a165d82cb9563ce1136040
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428495"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359052"
 ---
 # <a name="sales-returns"></a>Retouren
 
@@ -36,7 +33,7 @@ Debitoren können Rückgabeartikel unterschiedlichen Gründen vornehmen. So kann
 ## <a name="return-order-process"></a>Rücklieferungsprozess
 Die folgende Abbildung bietet eine Übersicht über den Rücklieferungprozess.  
 
-[![Rücklieferungsprozess](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
+[![Rücklieferungsprozess.](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
 
 Es gibt zwei Typen von Rücklieferungsprozessen: Physische Rückgabe und nur Gutschrift
 
@@ -65,7 +62,7 @@ Die Verarbeitung der Rücksendungsnummer basiert auf der Auftragsfunktionen. Die
 ## <a name="create-a-return-order"></a>Erstellen einer Rücklieferung
 Der Rücklieferungsprozess startet wenn der Debitor Ihre Organisation kontaktiert, um ein fehlerhaftes oder unerwünschtes Produkt zurückzusenden und/oder gutzuschreiben. Nachdem die Organisation die Rücklieferung akzeptiert, wird die Rücklieferung über eine Rücklieferung dokumentiert. Diese wird zum Fokuspunkt bei der internen Verarbeitung der Rücklieferung des zurückgegebenen Produkts. Die folgende Abbildung zeigt die Verfahren zum Erstellen einer Rücklieferung.  
 
-[![Verfahren zum Erstellen einer Rücklieferung](./media/salesreturn02.png)](./media/salesreturn02.png)
+[![Verfahren zum Erstellen einer Rücklieferung.](./media/salesreturn02.png)](./media/salesreturn02.png)
 
 ### <a name="create-a-return-order-header"></a>Erstellt eine neue Rücklieferungskopfzeile
 
@@ -87,7 +84,7 @@ Nachdem Sie den Rückgabekopf erstellt haben, können Sie Rücksendepositionen e
 -   Geben Sie manuell die Artikeldetails, die Menge und andere Informationen für jede Rückgabeposition ein.
 -   Erstellen Sie einer Rückgabeposition, indem Sie die **Auftrag suchen** Funktion nutzen. Es wird empfohlen, diese Funktion zu verwenden, wenn Sie einer Rücklieferung erstellen. Die **Auftrag suchen** Funktion erstellt eine Referenz aus der Rückgabeposition für die fakturierte Auftragsposition und ruft Positionsdetails wie Artikelnummer, Menge, Preis, Rabatt und Kostenwerte aus der Auftragsposition ab. Die Referenz stellt sicher, dass, wenn das Produkt an das Unternehmen zurückgegeben ist, sein Wert dieselben Einheitenkosten hat, mit dem es verkauft wurde. Die Referenz geprüft außerdem, dass Rücklieferungen nicht für eine Menge erstellt werden, für die die Menge überschreitet, die in der Rechnung verkauft wurde.
 
->[Hinweis!] Rücklieferungszeilen, die einen Bezug zu einem Verkaufsauftrag haben, werden als Korrekturen bzw. Stornierungen des Verkaufs behandelt. Weitere Informationen finden Sie im Abschnitt "Sachkonto buchen" weiter unten in diesem Thema.
+>[Hinweis!] Rückgabepositionen, die eine Referenz zu einem Auftrag haben, werden als Korrekturen oder Rückbuchungen des Verkaufs behandelt. Weitere Informationen finden Sie im Abschnitt "Sachkonto buchen" weiter unten in diesem Thema.
 
 ### <a name="charges"></a>Belastungen
 
@@ -180,7 +177,7 @@ Zusätzlich zum bestimmten der Disposition der zurückgegebenen Güter können D
 ## <a name="arrival-at-the-warehouse-for-inspection"></a>Eintreffen am Lagerort zur Prüfung.
 Bevor Sie zurückgelieferte Artikel im Lager physisch empfangen können, indem Sie einen Lieferschein buchen, müssen die Artikel Eingangserfassung und eine optionale Prüfung durchlaufen. Die folgende Abbildung bietet eine Übersicht über den Eingangsprozess. In den folgenden Abschnitten wird jede Schritt beschrieben, die in der Abbildung gezeigt wird.  
 
-[![Eingangsprozess](./media/salesreturn03.png)](./media/salesreturn03.png)  
+[![Eingangsprozess.](./media/salesreturn03.png)](./media/salesreturn03.png)  
 
 Der Prozess umfasst mehrere andere Abweichungen, die nicht in diesem Thema abgedeckt werden. Beispiele für solche Abweichungen:
 
@@ -193,7 +190,7 @@ Während des Eingangsprozesses werden Rücklieferungen mit dem allgemeinen Proze
 ### <a name="identify-products-in-the-arrival-overview-list"></a>Identifizieren von Produkte in der Wareneingangsübersichtliste
 
 Die **Wareneingangsübersicht** Seite zeigt alle geplanten eingehenden Wareneingängen an. 
->[Hinweis!] Eingänge aus Rücklieferungen müssen getrennt von anderen Arten von Eingangstransaktionen verarbeitet werden. Nachdem ein eingehendes Paket für die **Wareneingangsübersicht** Seite, (beispielsweise mit Rücksendungsdokument) identifiziert wurde, klicken Sie im Aktivitätsbereich auf **Wareneingang starten**, um eine Wareneingangserfassung zu erstellen und zu initialisieren, die mit dem Zugang übereinstimmt.
+>[Hinweis!] Anzeigen der Rücklieferungen müssen separat verarbeitet werden als anderen Typen von Eingangsbuchungen. Nachdem ein eingehendes Paket für die **Wareneingangsübersicht** Seite, (beispielsweise mit Rücksendungsdokument) identifiziert wurde, klicken Sie im Aktivitätsbereich auf **Wareneingang starten**, um eine Wareneingangserfassung zu erstellen und zu initialisieren, die mit dem Zugang übereinstimmt.
 
 ### <a name="edit-the-arrival-journal"></a>Bearbeiten der Eingangserfassung.
 
@@ -223,7 +220,7 @@ Es gibt zwei Methoden zum Verwalten von Ersatzprodukten:
 
 Beim Vorabersatz wird der Ersetzungsartikel der an den Debitor geliefert werden, bevor der Artikel zurückgegeben wird. Diese Methode eignet sich, wenn zum Beispiel der Artikel ein Maschinenteil ist, das nicht entfernt werden kann, es sei denn, dass ein Ersatzteil verfügbar ist. Der Vorabersatzauftrag ist ein unabhängiger Auftrag. Die Kopfdaten werden vom Debitor initialisiert, und Positionsinformationen werden aus der Rücklieferung initialisiert. Sie können den Ersetzungsauftrag unabhängig von der Rücklieferung verarbeitet, bearbeiten und löschen. Wenn Sie einen Ersetzungsauftrag löschen, werden Sie darüber benachrichtigt, dass der Auftrag als Ersetzungsauftrag erstellt wurde. Die folgende Abbildung veranschaulicht den Prozess für Vorabersatz.  
 
-![Vorabersatzprozess](./media/SalesReturn04.png)
+![Vorabersatzprozess.](./media/SalesReturn04.png)
 
 Der Rückgabeauftrag umfasst eine Referenz zum Ersetzungsauftrag. Wenn ein Vorabersatzauftrag für eine Rücklieferung erstellt wird, bevor der fehlerhaften Artikel zurückgegeben wird, können Sie keine Dispositionscodes für den Ersatz nach der Rückgabe des fehlerhaften Artikel auswählen.
 
@@ -231,11 +228,11 @@ Der Rückgabeauftrag umfasst eine Referenz zum Ersetzungsauftrag. Wenn ein Vorab
 
 Wenn Sie einen Ersatzartikel an den Debitor versenden, und die **Ersetzen und verschrotten** oder **Ersatz und Entlastung** Dispositionsaktivität für die Rücklieferung nutzen, verwenden Sie den Prozess, der in der folgenden Abbildung dargestellt wird.  
 
-![Ersetzungsprozess, wenn ein Dispositionscode verwendet wird](./media/SalesReturn05.png)
+![Ersetzungsprozess, wenn ein Dispositionscode verwendet wird.](./media/SalesReturn05.png)
 
 Der Ersetzungsartikel wird geliefert, indem ein unabhängiger Auftrag verwendet wird (der Ersetzungsauftrag). Dieser Auftrag wird erstellt, wenn der Lieferschein für die Rücklieferung generiert wird. Der Auftragskopf verwendet Informationen des Debitors, auf den der Rücklieferungskopf verweist. Die Positionsinformationen werden aus den Informationen gesammelt, die auf die Seite **Ersetzungsartikel** eingegeben werden. Die **Ersetzungsartikel** Seite muss für Positionen gefüllt sein, die Dispositionsaktivitäten haben, die mit dem Begriff "Ersetzen" beginnen. Allerdings wird weder die Menge noch die Identität des Wiederbeschaffungsartikel geprüft oder beschränkt. Dieses Verhalten ermöglicht Fälle, in denen der Debitor den gleichen Artikel in einer anderen Konfiguration oder Größe wünscht, und auch Anfragen, in denen Debitoren einen vollständig anderen Artikel wünscht. Standardmäßig wird ein identischer Artikel auf die Seite **Ersetzungsartikel** eingegeben. Sie können jedoch einen anderen Artikel auswählen, vorausgesetzt, dass die Funktion eingerichtet wurde. 
 
->[Hinweis!] Sie können den Ersatzverkaufsauftrag bearbeiten und löschen, nachdem er erstellt wurde.
+>[Hinweis!] Der Ersetzungsauftrag kann bearbeitet und gelöscht werden, wenn er erstellt wurde.
 
 ## <a name="generate-a-packing-slip"></a>Lieferschein generieren
 Bevor zurückgelieferte Artikel im Lager entgegengenommen werden können, muss der Lieferschein für den zugehörigen Auftrag aktualisiert werden. So wie die Rechnungsaktualisierung die Aktualisierung für die Finanzbuchung darstellt, ist die Lieferscheinaktualisierung die physische Aktualisierung des Lagerdatensatzes. Das bedeutet, dieser Prozess übernimmt die Änderungen in das Lager. Bei Retouren werden die der Dispositionsaktivität zugeordneten Schritte bei der Lieferscheinaktualisierung implementiert. Wenn Sie den Lieferschein generieren, treten folgende Ereignisse auf:
@@ -256,8 +253,8 @@ Obwohl die **Rücklieferung** Seite die Informationen und Aktivitäten enthält,
 
 ### <a name="credit-correction"></a>Habenkorrektur
 
-Als Teil des Rechnungsstellungsprozesses überprüften Sie, ob sonstige Zuschläge korrekt sind. Sollen die Sachkontobuchungen zu Korrekturen (Storno) werden, sollten Sie die Option **Kreditkorrektur** auf der Registerkarte **Andere** der Seite **Buchungsrechnung**  verwenden wenn Sie die Rechnung/eine Gutschrift buchen. 
->[Hinweis!] Standardmäßig ist die Option **Gutschriftkorrektur** aktiviert, wenn die Option **Gutschrift als Korrektur** auf der Seite **Debitorenparameter** aktiviert wurde. Es wird jedoch empfohlen, dass Sie Rücklieferungen nicht mit Storno buchen.
+Als Teil des Rechnungsstellungsprozesses überprüften Sie, ob sonstige Zuschläge korrekt sind. Sollen die Sachkontobuchungen zu Korrekturen (Storno) werden, sollten Sie die Option **Kreditkorrektur** auf der Registerkarte **Andere** der Seite **Buchungsrechnung** verwenden wenn Sie die Rechnung/eine Gutschrift buchen. 
+>[Hinweis!] Standardmäßig ist die **Habenkorrektur** Option aktiviert, wenn die **Gutschrift als Korrektur** Option auf der Seite **Debitorenparameter** aktiviert wurde. Es wird jedoch empfohlen, dass Sie Rücklieferungen nicht mit Storno buchen.
 
 ## <a name="create-intercompany-return-orders"></a>Intercompany-Rücklieferung erstellen
 Rücklieferungen können zwischen zwei Unternehmen innerhalb Ihrer Organisation abgeschlossen werden. Folgende Szenarios werden unterstützt:
@@ -271,7 +268,7 @@ Rücklieferungen können zwischen zwei Unternehmen innerhalb Ihrer Organisation 
 
 Die folgende Abbildung zeigt die erforderlichen Mindesteinstellungen, die erforderlich ist, sodass zwei Unternehmen in einer Intercompany-Beziehung den Intercompany-Handel nutzen können.  
 
-![Mindesteinstellungen](./media/SalesReturn06.png)
+![Mindesteinstellungen.](./media/SalesReturn06.png)
 
 Im folgenden Szenario ist CompBuy das kaufende Unternehmen, und CompSell das verkaufende Unternehmen. Normalerweise versendet das Verkaufsunternehmen Waren entweder an das Käuferunternehmen oder, in Direktlieferungslieferungsszenarien, direkt an den Endkunden. In CompBuy wird der Kreditor IC\_CompSell als Intercompany-Endpunkt definiert, der dem Unternehmen CompSell zugeordnet ist. Gleichzeitig wird in CompSell der Kreditor IC\_CompBuy als Intercompany-Endpunkt definiert, der dem Unternehmen CompBuy zugeordnet ist. Die passenden Aktionsrichtliniendetails und Wertzuordnungen müsssen in beiden Unternehmen definiert werden. In einem Direktlieferungslieferungsszenario wird eine Intercompany-Rücklieferung, die auch ein Intercompany-Auftrag ist, im verkaufende Unternehmen erstellt. Die Rücksendungsnummer der Intercompany-Rücklieferung kann vom Rücksendungsnummernummernkreis in CompSell entnommen werden, oder sie kann aus der Rücksendungsnummer kopiert werden, die der ursprünglichen Rücklieferung im CompBuy zugewiesen wird. Die Rücksendungsnummereinstellungen der **PurchaseRequisition** Aktivitätsrichtlinie in CompBuy bestimmen diese Aktivitäten. Wenn die Rücksendungsnummer synchronisiert wurde, sollten Sie planen, das Risiko von Nummerkonflikten zu minimieren, wenn die zwei Unternehmen den gleichen Nummernkreis verwenden.
 
@@ -279,7 +276,7 @@ Im folgenden Szenario ist CompBuy das kaufende Unternehmen, und CompSell das ver
 
 Dieses Szenario umfasst zwei Unternehmen in derselben Organisation, wie in der folgenden Abbildung dargestellt.  
 
-![Einfache Intercompany-Rücklieferung](./media/SalesReturn07.png)
+![Einfache Intercompany-Rücklieferung.](./media/SalesReturn07.png)
 
 Die Auftragskette kann eingerichtet werden, wenn ein Kreditorenrücklieferungsauftrag im Käuferunternehmen erstellt wird, oder ein Debitorenrücklieferungsauftrag im verkaufenden Unternehmen erstellt wird. Der entsprechende Auftrag wird im anderen Unternehmen erstellt und stellt sicher, dass die Kopf- und Positionsinformationen zum Kreditorenrücklieferungsauftrag die Einstellungen für den Debitorenrücklieferungsauftrag widerspiegeln. Der Rückgabeauftrag, der eingerichtet wird, kann die Referenz auf einen bestehende Debitorenrechnung entweder einbeziehen oder ignorieren (**Auftrag suchen**). Die Lieferscheinen und Rechnungen der beiden Aufträge können einzeln verarbeitet werden. Sie müssen beispielsweise einen Lieferschein für den Kreditorenrücklieferungsauftrag nicht generieren, bevor Sie den Lieferschein für den Debitorenrücklieferungsauftrag generieren.
 
@@ -287,7 +284,7 @@ Die Auftragskette kann eingerichtet werden, wenn ein Kreditorenrücklieferungsau
 
 Dieses Szenario kann genutzt werden, wenn ein vorheriger Verkauf des Typs **Direktlieferung** abgeschlossen wurde und wenn eine Rechnung für den Debitor im Unternehmen vorhanden ist, das mit dem Debitor interagiert. In der folgenden Abbildung hat das Unternehmen CompBuy zuvor Produkte an den Debitor Extern verkauft und fakturiert. Die Produkte wurden direkt vom Unternehmen CompSell an den Debitor über eine Intercompany-Auftragskette versendet.  
 
-![Direktlieferungslieferungsrücklieferungen unter drei Parteien](./media/SalesReturn08.png)
+![Direktlieferungsrückgaben unter drei Parteien.](./media/SalesReturn08.png)
 
 Wenn der Debitor Extern Produkten zurückgeben möchte, wird eine Rücklieferung (RMA02) für den Debitor im Unternehmen CompBuy erstellt. Um die Intercompany-Kette zu bilden, muss der Rücklieferung für Direktlieferung markiert werden. Bei Verwendung **Auftrag suchen**-Funktion um die Debitorenrechnung für die Rückgabe auszuwählen, wird eine Intercompany-Auftragskette erstellt, die sich aus den folgenden Dokumenten besteht:
 
@@ -309,25 +306,28 @@ In dem folgenden Beispielen wird der Rücklieferungseinstandspreis als **Lagerko
 
 Die Rückgabe verweist auf keine Debitorenrechnung. Der zurückgelieferten Artikel wird gutgeschrieben. Der **Kreditkorrektur** Parameter ist nicht ausgewählt wenn die Rücklieferungsrechnung oder Gutschrift generiert wird.  
 
-![Die Rückgabe verweist auf keine Debitorenrechnung](./media/SalesReturn09.png)  
+![Die Rückgabe verweist auf keine Debitorenrechnung.](./media/SalesReturn09.png)  
 
->[Hinweis!] Der Artikelstammpreis wird als Standardwert für den Parameter **Rückgabe Einstandspreis** verwendet. Der Standardpreis unterscheidet sich von dem Einstandspreis zum Zeitpunkt des Lagerabgangs. Daher ist die Auswirkungen, dass ein Verlust von 3 verursacht wurde. Darüber hinaus enthält die Rücklieferung nicht den Rabatt, dem Debitor im Auftrag der angegeben wurde. Daher tritt ein übermäßiges Haben auf.
+>[Hinweis!] Der Artikelmaster-Preis wird als Standardwert für den **Rücklieferungseinstandspreis** Parameter verwendet. Der Standardpreis unterscheidet sich von dem Einstandspreis zum Zeitpunkt des Lagerabgangs. Daher ist die Auswirkungen, dass ein Verlust von 3 verursacht wurde. Darüber hinaus enthält die Rücklieferung nicht den Rabatt, dem Debitor im Auftrag der angegeben wurde. Daher tritt ein übermäßiges Haben auf.
 
 ### <a name="example-2-credit-correction-is-selected-for-the-return-order"></a>Beispiel 2: Habenkorrektur ist für die Rücklieferung ausgewählt
 
 Beispiel 2 entspricht Beispiel 1, aber der **Habenkorrektur** Parameter ist aktiviert, wenn die Rücklieferungsrechnung generiert wird.  
 
-![Habenkorrektur ist für die Rücklieferung ausgewählt ](./media/SalesReturn10.png)  
+![Habenkorrektur ist für die Rückgabe ausgewählt.](./media/SalesReturn10.png)  
 
->[Hinweis!] Die Ledger-Buchungen werden als negative Korrekturen eingegeben.
+>[Hinweis!] Die Sachkontobuchungen werden als negative Korrekturen eingegeben.
 
 ### <a name="example-3-the-return-order-line-is-created-by-using-the-find-sales-order-function"></a>Beispiel 3: Die Rücklieferungsposition wird erstellt, indem die Auftrag suchen-Funktion verwendet wird
 
 In diesem Beispiel wird die Rücklieferungsposition erstellt, indem die **Auftrag suchen**-Funktion verwendet wird. Der **Kreditkorrektur** Parameter ist nicht aktiviert, wenn die Rechnung erstellt wird.  
 
-![Die Rücklieferungsposition wird erstellt, indem die Auftrag suchen-Funktion verwendet wird ](./media/SalesReturn11.png)  
+![Die Rückgabeposition wird erstellt, indem die Auftrag-suchen-Funktion verwendet wird.](./media/SalesReturn11.png)  
 
->[Hinweis!] **Rabatt** und **Rückgabe-Einstandspreis** sind korrekt festgelegt. Aus diesem Grund tritt eine genaue Stornierung der Debitorenrechnung auf.
+>[Hinweis!] **Rabatt** und **Rücklieferungseinstandspreis** werden ordnungsgemäß festgelegt. Aus diesem Grund tritt eine genaue Stornierung der Debitorenrechnung auf.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

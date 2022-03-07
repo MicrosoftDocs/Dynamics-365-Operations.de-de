@@ -2,39 +2,42 @@
 title: Rechnungsautomatisierung für gescannte Dokumente
 description: In diesem Thema werden die Funktionen, die für die weitere Automatisierung von Kreditorenrechnungen verfügbar sind, selbst Rechnungen mit Anlagen, erklärt.
 author: abruer
-ms.date: 03/24/2021
+manager: AnnBe
+ms.date: 05/22/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendEditInvoiceHeaderStagingListPage
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f407d42fe624206e32a2f58fe8c7fcaf2df52c729a1d945d3d801f450b6ed129
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f6d19d0e10f477e498e8f0fff1f431bc4bfdd9a1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722766"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443517"
 ---
-# <a name="invoice-automation-for-scanned-documents"></a>Rechnungsautomatisierung bei gescannten Dokumenten
+# <a name="invoice-automation-for-scanned-documents"></a>Rechnungsautomatisierung für gescannte Dokumente
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die Datenentitäten erklärt, die für die End-to-End-Automatisierung von Kreditorenrechnungen verfügbar sind, auch Rechnungen mit Anlagen.
+In diesem Thema werden die Funktionen, die für die weitere Automatisierung von Kreditorenrechnungen verfügbar sind, selbst Rechnungen mit Anlagen, erklärt.
 
-Organisationen, die ihre Kreditorenkontenprozesse (AP) optimieren möchten, identifizieren häufig den Fakturierungsprozess als einen ersten Prozessbereich, der effizienter sein sollte. In vielen Fällen lagern diese Organisationen die Verarbeitung von Papierrechnungen an einem Dienstanbieter für die optische Zeichenerkennung aus. Sie erhalten maschinenlesbare Rechnungsmetadaten zusammen mit einem Bild jeder gescannten Rechnung. Um bei der Automatisierung zu unterstützen, wird eine Lösung erstellt, um den Verbrauch dieser Artefakte im Fakturierungssystem zu aktivieren. Dieser Automatisierungsstandard ist jetzt aktiviert, um eine Rechnungsautomatisierungslösung zu erhalten.
+Organisationen, die ihre Kreditorenkontenprozesse (AP) optimieren möchten, identifizieren häufig den Fakturierungsprozess als einen ersten Prozessbereich, der effizienter sein sollte. In vielen Fällen lagern diese Organisationen die Verarbeitung von Papierrechnungen an einem Dienstanbieter  für die optische Zeichenerkennung aus. Sie erhalten maschinenlesbare Rechnungsmetadaten zusammen mit einem Bild jeder gescannten Rechnung. Um bei der Automatisierung zu unterstützen, wird eine Lösung erstellt, um den Verbrauch dieser Artefakte im Fakturierungssystem zu aktivieren. Dieser Automatisierungsstandard ist jetzt aktiviert, um eine Rechnungsautomatisierungslösung zu erhalten.
 
 ## <a name="solution-context"></a>Lösungskontext
 
 Die Rechnungsautomatisierungslösung ermöglicht eine Standardschnittstelle, die Rechnungsmetadaten für den Rechnungskopf und Rechnungspositionen akzeptieren kann, und auch Anhänge, die der Rechnung zugeordnet sind. Jedes System, das externe Artefakte generieren kann, die mit dieser Schnittstelle entsprechen, ist, in den Feed für die automatischen Verarbeitung von Rechnungen sowie Anhängen zu senden.
 
-Die folgende Abbildung zeigt ein Beispielintegrationsszenario, wobei Contoso mit einem OCR-Dienstanbieter für die Kreditorenrechnungsverarbeitung zusammengearbeitet hat. Die Contoso-Kreditoren senden die Rechnung dem Dienstanbieter per E-Mail. Durch verarbeitendes OCR, generiert der Dienstanbieter Rechnungsmetadaten (Kopfdaten und Positionen und/oder) ein gescanntes Bild der Rechnung. Eine Integrationsebene verarbeitet diese Artefakte, sodass diese weiterverarbeitet werden können.
+Die folgende Abbildung zeigt ein Beispielintegrationsszenario, wobei Contoso mit einem OCR-Dienstanbieter für die Kreditorenrechnungsverarbeitung zusammengearbeitet hat. Der Contoso-Kreditoren sendet die Rechnung dem Rechnungen Dienstanbieter per E-Mail. Durch verarbeitendes OCR, generiert der Dienstanbieter Rechnungsmetadaten (Kopfdaten und Positionen und/oder) ein gescanntes Bild der Rechnung. Eine Integrationsebene verarbeitet diese Artefakte, sodass diese weiterverarbeitet werden können.
 
-![Integrationsbeispielszenarien.](media/vendor_invoice_automation_01.png)
+![Integrationsbeispielszenarien](media/vendor_invoice_automation_01.png)
 
 Einige Abweichungen des vorhergehenden Szenarios sind möglich, wenn Rechnungsintegration erforderlich ist. Datenmigration ist ein anderer Anwendungsfall, bei dem diese Schnittstelle verwendet werden kann, um Rechnungen und Anhänge zu erstellen.
 
@@ -63,7 +66,7 @@ Ausführliche Informationen zu Datenpaketen finden Sie unter [Datenverwaltungsü
 Um schnell Testdaten zu generieren, die Rechnungen und Anhänge enthalten, führen Sie die folgenden Schritte aus.
 
 1. Anmelden bei Ihrer Instanz.
-1. Wechseln Sie zu **Kreditoren** > **Rechnungen** > **Offene Kreditorenrechnungen**.
+1. Wechseln Sie zu **Kreditoren**  > **Rechnungen**  > **Offene Kreditorenrechnungen**.
 1. Erstellen von Rechnungen, die Positionen und Anhänge haben.
 
     > [!NOTE]
@@ -88,11 +91,11 @@ Rechnungen, die über Datenenpakete importiert werden, können der juristischen 
 
 In Szenarios, in dem Kreditorenrechnungen über Integration in Finance and Operations kommen, muss es einen einfachen Weg für das Kreditorteammitglied geben, Ausnahmen oder fehlgeschlagene Rechnungen zu verarbeiten, und hängige Rechnungen zu verarbeiten und hängige Rechnungen der fehlgeschlagenen Rechnunge zu erstellen. Diese Ausnahme, die für Kreditorenrechnungen verarbeitet wird, ist nun Teil von Finance and Operations.
 
-### <a name="vendor-invoices-that-failed-to-import-list-page"></a>Lieferantenrechnungen, bei denen die Listenseite nicht importiert werden konnte
+### <a name="exceptions-list-page"></a>Seite Ausnahmeliste
 
-Die Listenseite für neue Rechnungsausnahmen ist unter **Kreditoren** > **Rechnungen** > **Importfehler** > **Kreditorenrechnungen, die nicht importiert werden können** verfügbar. Diese Seite enthält alle Kreditorenrechnungsheaderdatensätze von der Stagingtabelle der Kreditorenrechnungskopfdatenentität angezeigt. Beachten Sie, dass Sie dieselben Datensätze im Arbeitsbereich **Datenverwaltung** anzeigen können. Sie können auch die gleichen Aktivitäten ausführen, die in der Ausnahmebehandlungsfunktion im Arbeitsbereich **Datenverwaltung** bereitgestellt werden. Die Ausnahmebehandlungsfunktion wurde für einen funktionalen Benutzer optimiert, wodurch die Verwendung vereinfacht wird.
+Die Listenseite für neue Rechnungsausnahmen ist unter **Kreditoren** > **Rechnungen** > **Importfehler** > **Kreditorenrechnungen, die nicht importiert werden können** verfügbar. Diese Seite enthält alle Kreditorenrechnungsheaderdatensätze von der Stagingtabelle der Kreditorenrechnungskopfdatenentität angezeigt. Beachten Sie, dass Sie die gleichen Datensätze vom **Datenverwaltung** Arbeitsbereich angezeigt werden können, in dem Sie die gleichen Aktivitäten auch ausgeführt werden können, die in der Ausnahmebehandlungsfunktion bereitgestellt werden. Allerdings wird die Benutzeroberfläche, die die Ausnahmebehandlungsfunktion bereitstellt, für einen funktionalen Benutzer optimiert.
 
-![Seite Ausnahmeliste.](media/vendor_invoice_automation_02.png)
+![Seite Ausnahmeliste](media/vendor_invoice_automation_02.png)
 
 Diese Listenseite enthält die folgenden Felder, die über Feed: eintreffen:
 
@@ -116,17 +119,24 @@ Diese Listenseite enthält die folgenden Felder, die über Feed: eintreffen:
 Diese Listenseite besitzt ebenfalls ein Vorschaufenster, das Sie wie folgt verwendet werden können:
 
 + Hier werden alle geladenen Fehlermeldung angezeigt, um die Spalte **Fehlermeldung** im Raster nicht erweitern zu müssen.
++ Hier wird die gesamte Liste der Anlagen für die Rechnung an, sofern vorhanden kamen Anlagen mit der Rechnung.
 
 Die Listenseite unterstützt die folgenden Aktivitäten:
 
 + **Bearbeiten** – Öffnet den Ausnahmedatensatz im Bearbeitungsmodus, damit die Probleme behoben werden können.
 + **Optionen** – Sie greifen auf die Standardoptionen zu, die auf Listenseiten verfügbar sind. Sie können die Option **Zum Arbeitsbereich hinzufügen** auf die Ausnahmelistenseite in Ihrem Arbeitsbereich als Liste oder Kachel hinzufügen.
 
-### <a name="vendor-invoices-that-failed-to-import-details-page"></a>Kreditorenrechnungen, bei denen die Detailseite nicht importiert werden konnte
+### <a name="exception-details-page"></a>Ausnahmedetail-Seite
 
-Wenn Sie den Bearbeitungsmodus starten, wird die Seite **Kreditorenrechnungen, bei denen die Details nicht importiert werden konnten** für die Rechnung mit Problemen geöffnet. Wenn es Probleme mit einer Rechnung mit Anhang gibt, wird der Anhang nicht angezeigt. Der Anhang muss erneut an die Rechnung angehängt werden.
+Wenn Sie den Bearbeitungsmodus starten, wird die Ausnahmedetailseite für die Rechnung mit Problemen angezeigt. Wenn es Anlagen gibt, werden die Rechnung und der Standardanhang nebeneinander in der Rechnung auf der Seite mit den Ausnahmedetails angezeigt
 
-Auf der Seite **Kreditorenrechnungen, bei denen die Detailseite nicht importiert werden konnte** können Sie eine ausstehende Rechnung erstellen. Wenn Sie das Problem auf der Rechnung als Teil der Verarbeitung einer Ausnahme korrigiert haben, wählen Sie die Schaltfläche **Ausstehende Rechnung erstellen** aus, um die ausstehende Rechnung zu erstellen. Die ausstehende Rechnung wird im Hintergrund erstellt. 
+![Ausnahmedetail-Seite](media/vendor_invoice_automation_03.png)
+
+In der vorherigen Abbildung hat keine Positionen für den Kreditorenrechnungskopf, der hereinkam. Daher ist dieser Bereich leer.
+
+Die Ausnahmedetailseite unterstützt den folgenden Arbeitsgang:
+
++ **Pendente Rechnung erstellen** – Wenn Sie das Problem auf der Rechnung als Teil der Ausnahme Verarbeitungseinstellungen korrigiert haben, können Sie darauf klicken, um ausstehende Rechnungen zu erstellen. Die Erstellung der ausstehenden Rechnungen erfolgt im Hintergrund (als asynchroner Vorgang).
 
 ### <a name="shared-service-vs-organization-based-exception-processing"></a>Freigegebener Service für das Organisation-basierte Ausnahmeverarbeiten
 
@@ -136,7 +146,7 @@ Die Ausnahmelistenseite unterstützt die Standardsicherheitskonstrukte, die der 
 + Nach Benutzer
 + Nach juristischer Person
 
-![Importieren Sie den Einzelvorgang, der von der Benutzerrolle und der juristischen Person gesichert wird.](media/vendor_invoice_automation_04.png)
+![Importieren Sie den Einzelvorgang, der von der Benutzerrolle und bei der juristischen Person gesichert wird](media/vendor_invoice_automation_04.png)
 
 Wenn die Sicherheit für den Rechnungsimporteinzelvorgang konfiguriert wird, ehrt die Ausnahmelistenseite diese Einstellungen. Benutzer sind, nur die Rechnungsausnahmedatensätze anzuzeigen, die Ihnen diese Einstellung können, um festzustellen.
 
@@ -178,7 +188,7 @@ Nur ein Dokument kann als potenzieller Standardanhang festgelegt werden. Nach de
 
 Eine neue Schaltfläche, die unter **Ausnahme verarbeiten** **Ausstehende Rechnung** und **Rechnungserfassung** verfügbar ist, mit der Sie den Anhangviewer anzeigen oder ausblenden können.
 
-## <a name="security"></a>Sicherheit
+### <a name="security"></a>Sicherheit
 
 Folgende Aktivitäten im Anhangviewer werden über die rollenbasierte Sicherheit gesteuert:
 
@@ -191,11 +201,11 @@ Folgende Aktivitäten im Anhangviewer werden über die rollenbasierte Sicherheit
 Die folgenden Rechte bieten Lese- oder Lese-/Schreibzugriff auf den Anhangviewer für die Aktivität Hervorhebung, Blockierung und Anmerkungen.
 
 + **Kreditorenrechnungsbild verwalten** – Dies Recht bietet Lese-/und Schreibzugriff.
-+ **Kreditorenrechnungsbild verwalten** – Dieses Recht bietet nur Leserechte.
++ **Kreditorenrechnungsbild verwalten** – Dieses Recht  bietet nur Leserechte.
 
 Die folgenden Aufgaben schreibgeschützten bieten Zugriff oder und Schreibzugriff auf das Anhangviewer für die Aktivitäten:
 
-+ **Kreditorenrechnungen verwalten** – Das Recht zur Verwaltung von Kreditorenbildrechnungen wird dieser Aufgabe zugeordnet.
++ **Kreditorenrechnungen verwalten** – Das Recht zur Verwaltung von Kreditorenbildrechnungen wird dieser  Aufgabe zugeordnet.
 + **Kreditorenrechnungen verwalten** – Das Wartungskreditorenrechnungs-Bildrecht wird zu der Aufgabe zugeordnet.
 
 Die folgenden Rollen bieten Lesezugriff oder Lese- und Schreibzugriff auf den Anhangviewer für diese Aktivitäten:
@@ -203,7 +213,7 @@ Die folgenden Rollen bieten Lesezugriff oder Lese- und Schreibzugriff auf den An
 + **Sachbearbeiter Kreditorenkonten** und **Leiter Kreditorenkonten** – die Wartungskreditorenrechnungsabgabe wird für diese Rollen zugewiesen.
 + **Sachbearbeiter Kreditorenkonten**, **Leiter Kreditorenkonten**, **Sachbearbeiter für zentralisierte Zahlungen im Modul 'Kreditoren'** und **Sachbearbeiter Kreditorenkontozahlungen** – Die Abfrage für den Kreditorenrechnungsstatus wird diesen Rollen zugewiesen.
 
-### <a name="vendor-invoice-attachment"></a>Kreditorenrechungsanhang
+### <a name="invoice-exception-details-page"></a>Ausnahmedetail-Seite
 
 Die folgenden Rechte bieten Lese- und oder Lese-/Schreibzugriff auf den Anhangviewer für die Aktivitäten Hervorhebung, Sperrung oder Anmerkungen.
 
@@ -222,6 +232,3 @@ Die folgenden schreibgeschützten Aufgaben bieten Zugriff auf den Anhangviewer f
 + **Sachbearbeiter Kreditorenkonten** und **Leiter Kreditorenkonten** – die Wartungskreditorenrechnungsabgabe wird für diese Rollen zugewiesen.
 
 Standardmäßig hat die Benutzerrolle, die Bearbeitungsrechte für eine Seite hat, auch die Bearbeitungsrechte für den Anhangviewer für die Aktivitäten Hervorhebung, Sperrung und Anmerkungen. Wenn Szenarien vorhanden sind, für die eine bestimmte Rolle Bearbeitungsrechte auf der Seite aber nicht im Anhangviewer haben soll, kann das entsprechende Recht aus der obigen Liste verwendet werde, um diesen Fall abzudecken.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

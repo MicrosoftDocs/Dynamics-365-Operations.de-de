@@ -2,41 +2,38 @@
 title: Erstellen von Daueraufträgen auf der Grundlage einer Dauerauftragsgruppe
 description: Sie können Daueraufträge auf der Grundlage einer Dauerauftragsgruppe erstellen.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMASubscriptionGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f37acb8a931e6120ff8269df4dc4fec5c0535ce1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3f71042f743ccf09abbce341d46f8b83d2ce233a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428796"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819087"
 ---
-# <a name="create-service-subscriptions-from-a-subscription-group"></a>Erstellen von Daueraufträgen auf der Grundlage einer Dauerauftragsgruppe 
+# <a name="create-service-subscriptions-from-a-subscription-group"></a>Erstellen von Servicedaueraufträgen von einer Dauerauftragsgruppe aus 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Klicken Sie auf **Servicemanagement** \> **Einrichtung** \> **Daueraufträge** \> **Dauerauftragsgruppen**.
+1.  Wählen Sie **Service-Verwaltung** \> **Einrichten** \> **Service-Abonnements** \> **Abonnementgruppen**.
 
 2.  Wählen Sie eine Dauerauftragsgruppe aus.
 
-3.  Klicken Sie auf die Schaltfläche **Servicedaueraufträge**.
+3.  Wählen Sie die Schaltfläche **Service-Abonnements**.
 
-4.  Erstellen Sie durch Drücken von STRG+N einen neuen Dauerauftrag. Im Feld für die Dauerauftragsgruppe werden Informationen aus der Dauerauftragsgruppe im Formular **Dauerauftrag** angezeigt.
+4.  Wählen Sie **Neu**, um ein neues Abonnement zu erstellen. Im Feld für die Dauerauftragsgruppe werden Informationen aus der Dauerauftragsgruppe im Formular **Dauerauftrag** angezeigt.
 
 5.  Geben Sie Informationen in die verbleibenden Felder ein.
 
@@ -45,3 +42,6 @@ ms.locfileid: "4428796"
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: 'ER – Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 5: Format verändern und ausführen)'
-description: In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Format zur Nutzung von Dokumentverwaltungsdateien (Anhänge) in ER-Berichten nutzen kann.
+description: In diesem Thema wird beschrieben, wie Sie ein elektronisches Berichtsformat (EB) für die Verwendung von Dokumentenverwaltungsdateien (Anhängen) in der EB-Ausgabe konfigurieren. (Teil 5)
 author: NickSelin
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, EROperationDesigner, ERComponentTypeDropDialog, ERExpressionDesignerFormula, SysQueryForm
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8b949c2629df0e9db8c11322c9d0d090b200edc2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f954b76a09bf7c5edd4c608d400318fbd9386778
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681756"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749092"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-5---modify-and-run-format"></a>ER – Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 5: Format verändern und ausführen)
 
@@ -96,3 +94,6 @@ Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Versio
 7. Klicken Sie auf "OK".
     * Prüfen Sie das generierte Ergebnis. Beachten Sie, das neben der Rechnungsnachricht im XML-Format eine einzelne Datei für jede Anlage erstellt wurde. Die Anhangdateien werden mit der gezippten Ausgabe im Binärformat ausgefüllt.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

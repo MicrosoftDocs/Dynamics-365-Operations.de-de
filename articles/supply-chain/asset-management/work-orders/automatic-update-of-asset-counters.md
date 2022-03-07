@@ -1,12 +1,10 @@
 ---
 title: Die automatische Aktualisierung von Anlagenzählern
 description: In diesem Thema wird die automatische Aktualisierung von Anlagenzählern in Asset Management beschrieben.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d3e8619439545cf3ea42f84a6dd7ee6ffdf1026e
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 9a3814a575fbe4379b59723f269d83379a253ede71962c0c82b5f4cc55d36e6c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021929"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738294"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Die automatische Aktualisierung von Anlagenzählern
 
@@ -51,9 +49,9 @@ Wie bereits angegeben können automatische Zähler aus Produktionserfassungen ak
 
     In der folgenden Abbildung wird ein Beispiel des Dialogfelds **Anlagenzähler aktualisieren** angezeigt.
 
-    ![Abbildung 1](media/12-work-orders.png)
+    ![Abbildung 1.](media/12-work-orders.png)
 
-5. Wählen Sie **OK**. 
+5. Wählen Sie **OK** aus. 
 
 Wenn die automatische Aktualisierung von Anlagenzählern erfolgt ist, können Sie die Zählererfassungen anzeigen, die auf die Anlage auf der Seite **Anlagenzähler** bezogen sind. Wählen Sie **Anlagenverwaltung** > **Allgemein** > **Anlagen** > **Alle Anlagen** aus, wählen Sie die Anlage aus, und wählen Sie dann im Aktivitätsbereich auf der **Anlage**-Registerkarte in der Gruppe **Vorbeugend** **Zähler** aus.
 
@@ -61,7 +59,7 @@ Auf der Seite **Aggregierter Wert für Anlage** können Sie einen Überblick der
 
 In der folgenden Abbildung wird ein Beispiel der Seite **Aggregierter Wert für Anlage** angezeigt.
 
-![Abbildung 2](media/13-work-orders.png)
+![Abbildung 2.](media/13-work-orders.png)
 
 Beachten Sie die folgenden Punkte:
 
@@ -69,3 +67,6 @@ Beachten Sie die folgenden Punkte:
 
 - Sie können Zähler einrichten, die einem anderen Zähler zugeordnet werden. In diesem Fall, wenn ein Zähler aktualisiert wird, werden zugehörige Zähler automatisch gleichzeitig aktualisiert. Weitere Informationen zum Einrichten von zugehörigen Zählern finden Sie unter [Zähler](../setup-for-objects/counters.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

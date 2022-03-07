@@ -1,29 +1,31 @@
 ---
 title: Leistungsbeurteilungen erstellen
 description: Dieses Thema erklärt, wie eine Leistungsüberprüfung erstellt wird, und es beschreibt den Zweck der Abschnitte der Prüfung.
-author: andreabichsel
-manager: AnnBe
-ms.date: 05/05/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EssWorkspace, HcmDiscussionNewDialog, HcmDiscussion, HcmDiscussionChangeSettings, HcmDiscussionAddGoalDialog, HcmTopicCreate, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmEmployeeDevelopmentWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 99825dd580d617bb47b4f0ece784afbf6573ae8a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9c3ab4e769008bd8b401967e454aa6402f013773
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418669"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066949"
 ---
 # <a name="create-performance-reviews"></a>Leistungsbeurteilungen erstellen
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 Dieses Thema erklärt, wie eine Leistungsüberprüfung erstellt wird, und es beschreibt den Zweck der Abschnitte der Prüfung. Diese Prozedur wurde mit dem Demodatenunternehmen USMF erstellt.
@@ -66,15 +68,18 @@ Dieses Thema erklärt, wie eine Leistungsüberprüfung erstellt wird, und es bes
 30. Wählen Sie die Registerkarte **Bewertungen** aus.  
 
     - Über das Inforegister **Bewertungsdetails** können Mitarbeiter sich selbst und der Manager den Mitarbeiter bewerten. Wenn Gewichtungen verwendet werden, wird der Gewichtungswert der Bewertungen automatisch berechnet.  
-    - Um diesen Abschnitt anzuzeigen, aktivieren Sie die Parametereinstellungen für das Anzeigen von Mitarbeiterbewertungen.  
+    - Um diesen Abschnitt anzuzeigen, aktivieren Sie die Parametereinstellungen für die Anzeige von Mitarbeiterbewertungen auf der Seite **Freigegebene Human-Resources-Parameter**.  
 
-31. Wählen Sie die Registerkarte **Abzeichnungen** aus. Wenn die Überprüfung einen Workflow verwendet, werden die Abzeichnungen erst angezeigt, nachdem der Workflow abgeschlossen ist. Wird kein Workflow verwendet wird, dann werden die Arbeitskraft und der Manager hier aufgeführt. Das erforderliche Kontrollkästchen wird auf der Grundlage der Einstellungen im Überprüfungstyp ausgewählt.  
+31. Wählen Sie die Registerkarte **Abzeichnungen** aus. Wenn die Überprüfung einen Workflow verwendet, werden die Abzeichnungen erst angezeigt, nachdem der Workflow abgeschlossen ist. Wird kein Workflow verwendet wird, dann werden die Arbeitskraft und der Manager hier aufgeführt. Das Kontrollkästchen **Erforderlich** für **Abzeichnungen** wird auf der Grundlage der Einstellungen im Überprüfungstyp aktiviert.  
 32. Wählen Sie die Registerkarte **Allgemein**.
 
     - Die Leistungsperiode definiert das standardmäßige Start- und Enddatum. Diese Daten können geändert werden.  
-    - Der Status steuert den Zugriff zur Prüfung. Der Status **Nicht gestartet** ermöglicht jedem die Bearbeitung der Prüfung. Der Status **In Bearbeitung** gestattet nur dem Mitarbeiter die Bearbeitung und Anzeige der Überprüfung. **Bereit zur Überprüfung** gestattet nur dem Manager das Anzeigen und Bearbeiten der Überprüfung. **Endgültige Überprüfung**-Status ermöglicht dem Mitarbeiter und Manager das Anzeigen und Bearbeiten der Überprüfung, wenn es im Überprüfungstyp eingerichtet ist. Die Status **Abgeschlossen**, **Abgebrochen** markieren die Überprüfung als schreibgeschützt. Wenn eine Bewertung **Abgelehnt** ist und an den Mitarbeiter zurückgesendet wird, können sowohl der Mitarbeiter als auch der Manager die erforderlichen Änderungen vornehmen, damit der Mitarbeiter sie erneut einreichen kann.
+    - Der Status steuert den Zugriff zur Prüfung. Der Status **Nicht gestartet** ermöglicht jedem die Bearbeitung der Prüfung. Der Status **In Bearbeitung** gestattet nur dem Mitarbeiter die Bearbeitung und Anzeige der Überprüfung. **Bereit zur Überprüfung** gestattet nur dem Manager das Anzeigen und Bearbeiten der Überprüfung. Der Status **Abschließende Überprüfung** ermöglicht sowohl dem Mitarbeiter als auch dem Vorgesetzten das Anzeigen und Bearbeiten der Überprüfung, falls die Option **Bearbeitung in abschließender Überprüfung zulassen** im Überprüfungstyp ausgewählt ist. Die Status **Abgeschlossen**, **Abgebrochen** markieren die Überprüfung als schreibgeschützt. Wenn eine Bewertung **Abgelehnt** ist und an den Mitarbeiter zurückgesendet wird, können sowohl der Mitarbeiter als auch der Manager die erforderlichen Änderungen vornehmen, damit der Mitarbeiter sie erneut einreichen kann.
 
 33. Geben Sie im Feld **Überblick** einen Wert ein.
 34. Wählen Sie die Registerkarte **Überprüfung** aus. Während die Überprüfung die Statuswerte durchläuft, können der Mitarbeiter und Manager Kommentare für jedes Ziel oder jede Kompetenz hinzufügen.  
-35. Wählen Sie die Registerkarte **Abzeichnungen** aus. Die Arbeitskraft und der Manager können die Prüfung abzeichnen. Wenn alle erforderlichen Abzeichnungen abgeschlossen sind, wird der Status zu **Abgeschlossen** und keine weiteren Änderungen können vorgenommen werden.  
+35. Wählen Sie die Registerkarte **Abzeichnungen** aus. Die Arbeitskraft und der Manager können die Prüfung abzeichnen. Wenn alle erforderlichen Abzeichnungen abgeschlossen sind, wird der Status zu **Abgeschlossen** und es können keine weiteren Änderungen vorgenommen werden.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

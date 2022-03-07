@@ -1,12 +1,10 @@
 ---
 title: Beschaffungsworkflows
 description: Einige Organisationen verlangen, dass Bestellanforderungen und Bestellungen von einem Benutzer bestätigt werden, der die Transaktion nicht eingegeben hat. Zum Einrichten eines Genehmigungsprozesses können Sie einen Workflow erstellen.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WorkflowTableListPageRnr
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2074
 ms.assetid: e54a1d59-b9fb-421b-821d-01f32878aa9b
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af614b7f29144d02a853ef15b008f2a21d3d3aa5
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: fd9ee69e180f2ff605c4f373a95d2346ccc73c0e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019753"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5807943"
 ---
 # <a name="procurement-and-sourcing-workflows"></a>Beschaffungsworkflows
 
@@ -79,3 +77,6 @@ Sie können folgenden Teilnehmergruppen einen Genehmigungsschritt zuweisen.
 - [Definieren von geschäftlichen Prozessworkflows für Bestellanforderungen.](https://www.microsoft.com/download/details.aspx?id=101821)
 - [Bestellanforderungs-Workflow](purchase-requisitions-workflow.md)
 - [Kreditoren aufnehmen](vendor-onboarding.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

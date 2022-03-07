@@ -2,11 +2,13 @@
 title: Monatliche Erfassungseinträge in einem Batch erstellen
 description: In diesem Thema wird erläutert, wie Sie Journaleinträge in einem Batch erstellen, um die Effizienz bei der Erfassung monatlicher Mietkosten zu steigern.
 author: moaamer
-ms.date: 08/10/2021
+manager: Ann Beebe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: Dialog
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,18 +17,16 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 22e2892a6866123ecf0e72511bdce19fe12895df
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 6fd1815620095909e290fd03c404d964baa04a94
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344852"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5241561"
 ---
 # <a name="create-monthly-journal-entries-in-a-batch"></a>Monatliche Erfassungseinträge in einem Batch erstellen
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 In diesem Thema wird erläutert, wie Sie Journaleinträge in einem Batch erstellen, um die Effizienz bei der Erfassung monatlicher Mietkosten zu steigern. Mit der Stapelverarbeitung können Journaleinträge aus mehreren Zeitplänen erstellt werden. Diese Journaleinträge können Mietzahlungen, Amortisationen von Verbindlichkeiten, Amortisationen von Nutzungsrechten am Leasingobjekt und Aufwendungen für Nebenkosten beim Leasing umfassen. Sie können die Stapelverarbeitung auch verwenden, um die erstmalige Erfassung mehrerer Mietverträge gleichzeitig durchzuführen oder Übergangsanpassungen für mehrere Mietverträge gleichzeitig zu erstellen.
 
@@ -37,6 +37,5 @@ Um einen Batch-Auftrag einzurichten oder Zahlungsrechnungen, Abschreibungen oder
 >
 > Die Journaleinträge werden erstellt, aber erst gebucht, wenn Sie den **Ausführen**-Befehl auswählen.
 
-Um das Journal für die erstmalige Erfassung an einem anderen Datum als dem Datum des Leasingbeginns zu buchen, wählen Sie **Buchungsdatum der erstmaligen Erfassung zuweisen**. Es erscheint ein Feld **Datum**, in dem Sie das richtige Buchungsdatum angeben können.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

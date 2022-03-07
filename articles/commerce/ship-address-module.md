@@ -1,36 +1,31 @@
 ---
 title: Versandadressmodul
-description: In diesem Thema wird das Versandadressmodul behandelt und beschrieben, wie es in Microsoft Dynamics 365 Commerce konfiguriert wird.
+description: Dieses Thema behandelt das Versandadressenmodul und erläutert, wie es in Microsoft Dynamics 365 Commerce konfiguriert wird.
 author: anupamar-ms
-manager: annbe
-ms.date: 08/05/2020
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: aeaa410fde29b285fdbbdd6acac19b0c4e917aa5
-ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
+ms.openlocfilehash: 30baef62e03cdaa766133efc4b182c61da3dc7b67e077d80716a035f0b5e40e2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "4412726"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765193"
 ---
-# <a name="shipping-address-module"></a>Versandadressmodul
+# <a name="shipping-address-module"></a>Versandadressenmodul
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird das Versandadressmodul behandelt und beschrieben, wie es in Microsoft Dynamics 365 Commerce konfiguriert wird.
-
-## <a name="overview"></a>Übersicht
+Dieses Thema behandelt das Versandadressmodul und erläutert, wie es in Microsoft Dynamics 365 Commerce konfiguriert wird.
 
 Das Versandadressmodul ermöglicht Debitoren die Versandadresse für einen Auftrag während des Checkout-Flows hinzuzufügen oder auszuwählen. Wenn der Debitor angemeldet ist, werden alle zuvor gespeicherten Adressen für diesen Debitor angezeigt, und der Debitor kann zwischen diesen auswählen. Der Debitor kann auch eine neue Adresse hinzufügen. Die Versandadressmodul wird für alle Artikel in einem Auftrag verwendet, die Versand erfordern.
 
@@ -42,7 +37,7 @@ Obwohl das Versandadressmodul keine Adressüberprüfung bereitstellt, kann diese
 
 Die folgende Abbildung zeigt ein Beispiel eines neuen Versandadressenmoduls auf einer Checkout-Seite.
 
-![Beispiel eines Versandadressenmoduls auf einer Checkout-Seite](./media/ecommerce-shippingaddress.PNG)
+![Beispiel eines Versandadressenmoduls auf einer Checkout-Seite.](./media/ecommerce-shippingaddress.PNG)
 
 ## <a name="module-properties"></a>Moduleigenschaften
 
@@ -50,6 +45,8 @@ Die folgende Abbildung zeigt ein Beispiel eines neuen Versandadressenmoduls auf 
 |---------------|--------|-------------|
 | Überschrift | Überschriftentext und eine Überschriftsmarkierung (**H1**, **H2**, **H3**, **H4**, **H5** oder **H6**) | Eine optionale Überschrift für das Versandadressmodul. |
 | Adresstyp anzeigen | **True** oder **False** | Wenn diese optionale Eigenschaft auf **True** gesetzt ist, wird ein Adresstyp, wie z. B. **Start** oder **Unternehmen**, angezeigt. Wenn kein Adresstyp angegeben ist, wird die Adresse automatisch als **Art**=**Sonstige** gespeichert. |
+| Automatisches Vorschlagen aktivieren| **True** oder **False** | Wenn diese optionale Eigenschaft auf **True** gesetzt ist, werden automatische Adressvorschläge bereitgestellt. Diese Vorschläge werden von Bing Maps unterstützt. Informationen zum Einrichten der Bing Maps-Integration auf Ihrer Website finden Sie unter [Shopauswahlmodul](store-selector.md). Diese Funktion ist ab der Commerce-Version 10.0.15 verfügbar.|
+|Optionen für automatisches Vorschlagen| Eine Anzahl| Wenn automatische Adressvorschläge aktiviert sind, können Sie zusätzliche Optionen angeben, z. B. die maximale Anzahl von Vorschlägen, die bereitgestellt werden sollen.|
 
 ## <a name="add-a-shipping-address-module-to-a-checkout-page-and-set-the-required-properties"></a>Ein Versandadressmodul in eine Checkout-Seite hinzufügen und die erforderlichen Eigenschaften bestimmen
 
@@ -72,3 +69,8 @@ Ein Versandadressmodul kann nur zu einem Checkout-Modul hinzugefügt werden. Wei
 [Auftragsdetailmodul](order-confirmation-module.md)
 
 [Geschenkkartenmodul](add-giftcard.md)
+
+[Shopauswahlmodul](store-selector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

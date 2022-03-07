@@ -2,9 +2,11 @@
 title: Einrichtung des erweiterten Bankabstimmungsprozesses
 description: Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in Microsoft Dynamics 365 Finance automatisch mit Bankbuchungen abstimmen. Dieser Artikel erläutert die Einrichtung von Prozessen für die Abstimmung.
 author: panolte
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankReconciliationMatchRule, BankReconciliationMatchRuleSet
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42c86a120403d8d87d62c76d56993decca7f6cdafaeb67c7afec29da0bf8f18f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ee84ad09806e8efbf37de659851c086a6e955921
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757168"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232440"
 ---
 # <a name="advanced-bank-reconciliation-setup-process"></a>Einrichtung des erweiterten Bankabstimmungsprozesses
 

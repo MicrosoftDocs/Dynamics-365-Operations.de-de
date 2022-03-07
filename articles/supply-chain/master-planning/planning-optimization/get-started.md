@@ -2,16 +2,13 @@
 title: Erste Schritte mit der Planungsoptimierung
 description: In diesem Thema wird erläutert, wie Sie mit der Verwendung der Funktionalität der Planungsoptimierung beginnen.
 author: ChristianRytt
-manager: tfehr
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 54ad180b7f4691ead3563b077eadadc3b9b20588
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: e85c18e548d82b2a369a1e8a5573800067b1935c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4429149"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808063"
 ---
 # <a name="get-started-with-planning-optimization"></a>Erste Schritte mit der Planungsoptimierung
 
@@ -41,21 +38,42 @@ Die Funktionalität der Planungsoptimierung unterstützt derzeit nicht alle Funk
 
 Bevor Sie die Planungsoptimierung einschalten, empfehlen wir Ihnen dringend, die Ergebnisse der Anpassungsanalyse der Planungsoptimierung auszuwerten. Weitere Informationen finden Sie unter [Planungsoptimierung Fit-Analyse](planning-optimization-fit-analysis.md).
 
-### <a name="availability"></a>Verfügbarkeit
-Die Planungsoptimierung ist derzeit in den folgenden geografischen Azure-Regionen verfügbar: USA, Kanada, Europa, Großbritannien und Australien. Wenn Sie versuchen, das Add-In aus einer anderen geografischen Region zu installieren, zeigt LCS die Meldung an, dass diese geografische Region nicht unterstützt wird.
+## <a name="availability"></a>Verfügbarkeit
+
+Die Planungsoptimierung ist derzeit in den folgenden geografischen Azure-Regionen verfügbar: USA, Kanada, Europa, Vereinigtes Königreich, Australien und Asien-Pazifik. Wenn Sie versuchen, das Add-In aus einer anderen geografischen Region zu installieren, zeigt LCS die Meldung an, dass diese geografische Region nicht unterstützt wird.
 
 Beachten Sie, dass Planungsoptimierung keine lokalen Bereitstellungen von Dynamics 365 Supply Chain Management unterstützt.
 
-### <a name="licensing"></a>Lizenzierung
+## <a name="licensing"></a>Lizenzierung
 
 Wenn Sie die Masterplanung mit Ihrer aktuellen Lizenz durchführen können, müssen Sie keine zusätzliche Lizenz kaufen, um mit der Planungsoptimierung zu beginnen.
 
-### <a name="install-the-add-in"></a>Installieren des Add-Ins
+## <a name="install-and-enable-planning-optimization"></a>Planungsoptimierung installieren und aktivieren
 
-Um die Planungsoptimierung zu nutzen, installieren Sie das Add-In Planungsoptimierung für Dynamics 365 Supply Chain Management. Sie können auf das Add-In aus Ihrem LCS-Projekt zugreifen und die Funktionalität der Planungsoptimierung über die Benutzeroberfläche (UI) von Supply Chain Management einschalten.
+Um die Planungsoptimierung verwenden zu können, müssen Sie sicherstellen, dass auf Ihrem System alle Voraussetzungen vorhanden sind, den Lizenzschlüssel aktivieren und das Planungsoptimierungs-Add-In für Dynamics 365 Supply Chain Management installieren.
 
-> [!NOTE]
-> Die Voraussetzung für die Planungsoptimierung ist eine LCS-fähige Hochverfügbarkeitsumgebung, Ebene 2 oder höher (keine OneBox-Umgebung) mit Dynamics 365 Supply Chain Management Version 10.0.7 oder höher. Wenn Sie versuchen, das Add-In in einer OneBox-Umgebung zu installieren, wird die Installation nicht abgeschlossen und Sie müssen die Installation abbrechen.
+### <a name="prerequisites"></a>Voraussetzungen
+
+Bevor Sie die das Planungsoptimierungs-Add-In installieren, müssen die folgenden Voraussetzungen erfüllt sein:
+
+- Sie müssen Supply Chain Management in einer LCS-fähigen Hochverfügbarkeitsumgebung, Ebene 2 oder höher (keine OneBox-Umgebung) mit Dynamics 365 Supply Chain Management Version 10.0.7 oder höher ausführen. Wenn Sie versuchen, das Add-In in einer OneBox-Umgebung zu installieren, wird die Installation nicht abgeschlossen und Sie müssen die Installation abbrechen.
+
+- Ihr System muss für die Power Platform-Integration eingerichtet sein. Weitere Informationen finden Sie unter [Voraussetzungen für die Einrichtung von Add-Ins](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#prerequisites-for-setting-up-add-ins) und [Add-Ins einrichten](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#set-up-add-ins).
+
+### <a name="enable-the-planning-optimization-license"></a>Planungsoptimierungslizenz aktivieren
+
+Um die Planungsoptimierung verwenden zu können, müssen Sie den Konfigurationsschlüssel aktivieren. Führen Sie folgende Schritte durch:
+
+1. Legen Sie Ihr System in den Wartungsmodus ein, wie in [Wartungsmodus](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) beschrieben.
+1. Gehen Sie zu **Systemadministration \> Einrichten \> Lizenzkonfiguration**.
+1. Auf der Registerkarte **Konfigurationsschlüssel** aktivieren Sie das Kontrollkästchen für **Planungsoptimierung**.
+1. Schalten Sie den Wartungsmodus aus, wie in [Wartungsmodus](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) beschrieben.
+
+### <a name="install-the-planning-optimization-add-in"></a>Planungsoptimierungs-Add-In installieren
+
+Sie müssen das Add-In aus Ihrem LCS-Projekt installieren und dann die Funktionalität der Planungsoptimierung über die Benutzeroberfläche von Supply Chain Management aktivieren.
+
+So installieren Sie das Planungsoptimierungs-Add-In:
 
 1. Melden Sie sich bei LCS an und öffnen Sie die gewünschte Umgebung.
 1. Gehen Sie zu **Vollständige Details**.
@@ -69,11 +87,11 @@ Um die Planungsoptimierung zu nutzen, installieren Sie das Add-In Planungsoptimi
 
 Der Hauptzweck der Installation des Add-Ins Planungsoptimierung besteht darin, den Dienst und die Umgebung miteinander zu verbinden. Daher müssen Sie das Add-In in jeder Umgebung, in der Sie die Planungsoptimierung verwenden werden, separat installieren, unabhängig davon, ob Code zwischen den Umgebungen verschoben wird.
 
-### <a name="planning-optimization-integration"></a>Integration der Planungsoptimierung
+## <a name="integrate-planning-optimization-with-your-system"></a>Integrieren der Planungsoptimierung in Ihr System
 
 Um zu konfigurieren, ob das Planungsoptimierungs-Add-In für die Masterplanung verwendet werden soll, gehen Sie zu **Produktprogrammplanung** \> **Setup** \> **Parameter für Planungsoptimierung**.
 
-#### <a name="connection-status"></a>Verbindungsstatus
+### <a name="connection-status"></a>Verbindungsstatus
 
 Der Verbindungsstatus zeigt den aktuellen Status der Verbindung zwischen Supply Chain Management und dem Service Planungsoptimierung an. Die folgende Tabelle zeigt die möglichen Werte.
 
@@ -85,7 +103,7 @@ Der Verbindungsstatus zeigt den aktuellen Status der Verbindung zwischen Supply 
 | Verbindung wird deaktiviert | Eine Aufforderung zum Deaktivieren der Verbindung zum Dienst Planungsoptimierung ist derzeit in Bearbeitung. | Nein |
 | Status wird abgerufen... | Das System wartet auf Statusinformationen vom Service Planungsoptimierung. | Nein |
 
-#### <a name="the-use-planning-optimization-option"></a>Die Option Planungsoptimierung verwenden
+### <a name="the-use-planning-optimization-option"></a>Die Option Planungsoptimierung verwenden
 
 Die Einstellung der Option **Verwendungsplanoptimierung** bestimmt, welche Planungs-Engine für die Masterplanung verwendet wird:
 
@@ -112,3 +130,6 @@ Wenn die Planungsoptimierung eingeschaltet ist, wird die Produktprogrammplanung 
 [Filter auf einen Plan anwenden](plan-filters.md)
 
 [Abbrechen eines Planungsauftrags](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

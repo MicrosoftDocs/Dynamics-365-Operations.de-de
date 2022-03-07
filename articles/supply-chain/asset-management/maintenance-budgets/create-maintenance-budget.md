@@ -1,12 +1,10 @@
 ---
 title: Erstellen von Wartungsbudgets
 description: In diesem Thema wird erläutert, wie Wartungsbudgets in der Anlagenverwaltung erstellt werden.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetBudgetLineAdjust, EntAssetBudget, EntAssetBudgetRecalc, EntAssetBudgetCopy, EntAssetBudgetLine, EntAssetBudgetCreate, EntAssetBudgetApprove, EntAssetBudgetCalculateActualCost
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 602a00060c1e56285d9954981d019bececaf90fd
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: b91b398c4ef864a92a5318b7e80f71a5a572844e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020988"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836757"
 ---
 # <a name="create-maintenance-budgets"></a>Erstellen von Wartungsbudgets
 
@@ -58,3 +56,6 @@ Sie können auch ein neues Wartungsbudget erstellen, indem Sie ein vorhandenes B
 
 > [!NOTE]
 > Das Wartungsbudget berechnet nur Budgetkosten auf Grundlage der Wartungsplanpositionen. Um Istkosten für die gleiche Periode zu berechnen, können Sie diese Berechnung auf der Seite **Kostensteuerung für Anlagen** vornehmen. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

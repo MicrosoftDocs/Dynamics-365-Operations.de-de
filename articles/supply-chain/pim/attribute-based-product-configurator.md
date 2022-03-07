@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2020-08-17
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: c0f9c1bb94b4dcc3c3c1e7656868ef6e6bd903db
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 65ab96c71fa44d6acad0bcb5cd7a65321109b93d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428368"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5221966"
 ---
 # <a name="attribute-based-sales-prices-for-constraint-based-product-configuration"></a>Attributbasierte Verkaufspreise bei einschränkungsbasierter Produktkonfiguration
 
@@ -141,3 +140,6 @@ Der letzte Schritt besteht darin, attributbasierte Verkaufspreise für die Produ
 1. Öffnen Sie im Aktivitätsbereich die Registerkarte **Modell** und wählen Sie aus der Gruppe **Produktmodelldetails** die Option **Versionen** aus.
 1. Die Seite **Versionen** wird angezeigt. Stellen Sie sicher, dass **Preis** auf **Attributbasiert** festgelegt ist.
     ![Festlegen des Preises auf attributbasiert](media/prod-config-versions.png "Festlegen des Preises auf attributbasiert")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

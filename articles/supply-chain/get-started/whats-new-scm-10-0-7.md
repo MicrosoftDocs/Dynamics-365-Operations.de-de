@@ -1,27 +1,25 @@
 ---
 title: Was ist neu oder geändert in Dynamics 365 Supply Chain Management 10.0.7 (Januar 2020)
 description: In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Supply Chain Management 10.0.7 neu oder geändert wurden.
-author: josaw1
-manager: tfehr
+author: kamaybac
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: josaw
+ms.author: kamaybac
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 4da0c95d753685cc9cce774dc63309a53bd2fbd0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 23d9e186a75c79659ddccb07eeaff805f8e1702f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963534"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572864"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1007-january-2020"></a>Was ist neu oder geändert in Dynamics 365 Supply Chain Management 10.0.7 (Januar 2020)
 
@@ -52,7 +50,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.7 enthält das Plattform-Upd
 ### <a name="dynamics-365-2019-release-wave-2-plan"></a>Dynamics 365: 2019 Veröffentlichungsplan Welle 2
 Sie möchten Informationen über zukünftige und vor Kurzem veröffentlichte Funktionen unserer Unternehmens-Apps oder -Plattformen erhalten?
 
-Testen Sie [Dynamics 365: 2019 Release Welle 2 Plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/). Hier finden Sie zentral und übersichtlich in einem Dokument alle Informationen, die Sie für Ihre Planung benötigen.
+Testen Sie [Dynamics 365: 2019 Release Welle 2 Plan](/dynamics365-release-plan/2019wave2/). Hier finden Sie zentral und übersichtlich in einem Dokument alle Informationen, die Sie für Ihre Planung benötigen.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Entfernte und veraltete Supply Chain Management-Funktionen
 
@@ -64,3 +62,5 @@ Das Thema [Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Mana
 Bevor eine Funktion aus dem Produkt entfernt wird, wird der Verfallshinweis im Thema [Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 Monate vor dem Entfernen angezeigt.
 
 Bei Änderungen, die sich nur auf die Kompilierungszeit auswirken, aber binär mit Sandbox- und Produktionsumgebungen kompatibel sind, beträgt die Entfernungszeit weniger als 12 Monate. In der Regel handelt es sich hierbei um Funktionsaktualisierungen, die am Compiler vorgenommen werden müssen.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

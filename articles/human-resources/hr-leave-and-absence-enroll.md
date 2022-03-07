@@ -2,15 +2,12 @@
 title: Eine Arbeitskraft einem Urlaubsplan zuweisen
 description: Weisen Sie Mitarbeiter und Auftragnehmer zu, um die Pläne in Dynamics 365 Human Resources einzuhalten.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,19 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3407acc164aab1bd1afb2429fc5a221edd0a2493
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8e0253c6122d736e311ea65d6228cbaabecff8dc
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418730"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070626"
 ---
 # <a name="assign-workers-to-a-leave-plan"></a>Eine Arbeitskraft einem Urlaubsplan zuweisen
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Nachdem Sie einen Urlaubs- und Abwesenheitsplan in erstellt haben Dynamics 365 Human Resources, weisen Sie ihn den Arbeitern zu.
 
@@ -60,3 +62,5 @@ Nachdem Sie einen Urlaubs- und Abwesenheitsplan in erstellt haben Dynamics 365 H
 
 - [Urlaubs- und Abwesenheitsübersicht](hr-leave-and-absence-overview.md)
 - [Einen Urlaubs- und Abwesenheitsplan erstellen](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

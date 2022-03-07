@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 60bce611ae1f6ed5d63860793cd5d1da3c421a9e
-ms.sourcegitcommit: e3290eb58ae569a59d6ae2e6922e7d8be8f1980f
+ms.openlocfilehash: 8dc312e66dc666ac6c23bac6b705ffc7893fd06b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "7551803"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187996"
 ---
 # <a name="overhead-calculation"></a>Gemeinkostenberechnung
 
@@ -48,7 +48,7 @@ Gemeinkostenberechnung wird in der Kostenrechnungsmethoden in der korrekten Reih
 
 Die Gemeinkostenberechnung wird unabhängig von der Version ausgeführt. Daher können Sie die Budgetversion vor der tatsächlichen Version berechnen. Gemeinkostenberechnung besteht aus vier Schritten, wie in der folgenden Abbildung dargestellt. In jedem Schritt wird ein Erfassungskopf erstellt, der Journaleinträge hat. Dieser Erfassungskopf führt die Eingabedaten für jeden Berechnungsschritt aus. Richtlinien und Regeln werden für jede Erfassungsposition übernommen, und Kosteneinträge werden generiert. Deshalb ist die Nachweisbarkeit immer gegeben. 
 
-[![Gemeinkostenberechnung.](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
+[![Gemeinkostenberechnung](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
 ## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>Berechnen Sie die Elektrizitäts-Gemeinkosten und weisen Sie diese zu
 In der Finanzbuchhaltung werden einige Kosten wie Elektrizität als Pauschalbetrag erfasst. Daher wird ein detaillierter Verwaltungseinblick für Kostenrechnung nicht bereitgestellt. In der Kostenrechnung müssen die Kosten die Organisationseinheit durchlaufen, um auf allen Organisationsstufen und Ebenen korrekt dargestellt zu werden. Dieser Fluss muss entweder auf einem genauen Datensatz des Verbrauchs oder einer reellen Bewertung basieren. Im Hauptbuch können Stromkosten wie unten in der Tabelle dargelegt gebucht werden.
@@ -76,7 +76,7 @@ In der Finanzbuchhaltung werden einige Kosten wie Elektrizität als Pauschalbetr
 
 ### <a name="step-1-process-the-cost-behavior-calculation"></a>Schritt 1: Verarbeiten Sie die Kostenverhaltensberechnung
 
-Standardmäßig wenn Einträge mit Kosten von den Daten importiert werden, erhalten Sie die Verhaltensklassifizierung **Nicht klassifiziert** in der Kostenrechnung. Wenn Sie Kostenverhaltensrichtlinienregeln anwenden, können sie die Kosteneinträge entweder als **Fixkosten** oder **Variable Kosten** neu klassifizieren.
+Standardmäßig wenn Einträge mit Kosten von den Daten importiert werden, erhalten Sie die Verhaltensklassifizierung **Nicht klassifiziert** in der Kostenrechnung. Wenn Sie Kostenverhaltensrichtlinienregeln anwenden, können sie die Kosteneinträge entweder als  **Fixkosten** oder **Variable Kosten** neu klassifizieren.
 
 #### <a name="define-the-cost-behavior-rule"></a>Definieren Sie die Kostenverhaltensregel
 
@@ -257,7 +257,7 @@ Die folgende Tabelle zeigt das Ergebnis, wenn Stromverbrauch als Verrechnungsgru
 </tbody>
 </table>
 
-Die fixen Kosten sollten den jeweiligen Kostenträgern gleichmäßig aufgeteilt werden, die Elektrizität verbraucht haben. Sie können dieses Ergebnis erreichen, indem Sie das statistische Dimensionsmitglied in einer Formelverrechnungsgrundlage verwenden: (Elektrizität &gt; 0,00) Die folgende Tabelle zeigt das Ergebnis an, wenn Stromverbrauch als Verrechnungsgrundlage für variable Kosten angewendet wird.
+Die fixen Kosten sollten den jeweiligen Kostenträgern gleichmäßig aufgeteilt werden, die Elektrizität verbraucht haben. Sie können dieses Ergebnis erreichen, indem Sie das statistische Dimensionsmitglied in einer Formelverrechnungsgrundlage verwenden: (Elektrizität &gt;0,00) Die folgende Tabelle zeigt das Ergebnis an, wenn Stromverbrauch als Verrechnungsgrundlage für variable Kosten angewendet wird.
 
 <table>
 <thead>
@@ -618,7 +618,7 @@ Weitere Informationen finden Sie unter [Gemeinkostenberechnung ausführen](cost-
 
 Die Zuteilung wird verwendet, um den Saldo eines Kostenträgers zu anderen Kostenträgern zuweisen, indem eine Verrechnungsgrundlage angewendet wird. Finance unterstützt die gegenseitige Zuordnungsmethode. In der gegenseitigen Zuordnungsmethode werden die gegenseitigen Dienstleistungen, die Unterkostenobjekte austauschen, vollständig berücksichtigt werden. Das System bestimmt automatisch die korrekte Reihenfolge, in der die Zuordnungen ausgeführt werden. Der Saldo eines Kostenträgers wird durch eine einzelne Verrechnungsgrundlage zugewiesen. Zuweisungen für Kostenträgerdimensionen und ihre jeweiligen Mitglieder werden unterstützt. Der Zuweisungsauftrag wird durch die Kostenkontrollsteuereinheit gesteuert. 
 
-[![Reziproke Methode.](./media/reciprocal-method.png)](./media/reciprocal-method.png)
+[![Reziproke Methode](./media/reciprocal-method.png)](./media/reciprocal-method.png)
 
 #### <a name="define-the-cost-allocation"></a>Kostenzuteilung definieren
 
@@ -1328,12 +1328,83 @@ Die folgende Tabelle zeigt das Ergebnis an, wenn die Verrechnungsgrundlage für 
 ## <a name="conclusion"></a>Schlussfolgerung
 In der Finanzrechnung werden Kosten von 10.000,00 für Elektrizität einer blinden Kostenstellen-Kennung zugeordnet. Daher wissen Buchhaltern dass diese Kosten zugewiesen werden müssen. In der Kostenrechnung fließen die Kosten über Organisationseinheiten und Ebenen, basierend auf den Richtlinien und Regeln, die angewendet werden. Jeder Kostenträger gehören zu einer Verrechnungsgrundlage,die die beste Bewertung für die Kostenverteilung bereitstellt.
 
-Kostenelement | Kostenobjekt<br>CC099 | Kostenobjekt<br>CC001 | Kostenobjekt<br>CC002 | Kostenobjekt<br>CC003 | Kostenobjekt<br>CC004 | Kostenobjekt<br>Proj 1 | Kostenobjekt<br>Proj 2 | Kostenobjekt<br>Produktion 1 | Kostenobjekt<br>Produktion 2 | Gesamt
----|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:
-100'1 Elektrizität | 0,00 | 0,00 | 0,00 | 0,00 |  | 30.00 | 10.00 | 7,770.57 | 2,189.43 | 10,000.00 |
-Nicht klassifiziert | 0,00 |  |  |  |  |  |  |  |  |  |
-Fixkosten | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |  |  | 776.36 | 223.64 | 1,000.00 |
-Variable Kosten | 000 | 0,00 | 0,00 | 0,00 | 0,00 | 30,00 | 10,00 | 6,994.21 | 1,965.79 | 9,000.00 |
+<table>
+<thead>
+<tr>
+<th colspan="2" rowspan="2">Kostenelement</th>
+<th colspan="9">Kostenobjekt</th>
+<th rowspan="2">Gesamt</th>
+</tr>
+<tr>
+<th>CC099</th>
+<th>CC001</th>
+<th>CC002</th>
+<th>CC003</th>
+<th>CC004</th>
+<th>Proj 1</th>
+<th>Proj 2</th>
+<th>Produktion 1</th>
+<th>Produktion 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">100'1 Elektrizität</td>
+<td style="text-align: right;"><strong>0.00</strong></td>
+<td style="text-align: right;"><strong>0.00</strong></td>
+<td style="text-align: right;"><strong>0.00</strong></td>
+<td style="text-align: right;"><strong>0.00</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>30.00</strong></td>
+<td style="text-align: right;"><strong>10.00</strong></td>
+<td style="text-align: right;"><strong>7,770.57</strong></td>
+<td style="text-align: right;"><strong>2,189.43</strong></td>
+<td style="text-align: right;"><strong>10,000.00</strong></td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align: left;">Nicht klassifiziert</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;">Fixkosten</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">776.36</td>
+<td style="text-align: right;">223.64</td>
+<td style="text-align: right;"><strong>1,000.00</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;">Variable Kosten</td>
+<td style="text-align: right;">000</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">30,00</td>
+<td style="text-align: right;">10,00</td>
+<td style="text-align: right;">6,994.21</td>
+<td style="text-align: right;">1,965.79</td>
+<td style="text-align: right;"><strong>9,000.00</strong></td>
+</tr>
+</tbody>
+</table>
 
 > [!NOTE]
 > Dieses Thema veranschaulicht, wie ein Selbstkostenelement, hier 10001 Elektrizität die Kostenträger durchläuft. Daher werden diese Gemeinkosten der niedrigsten Ebene in der Organisation zugeordnet. Das bedeutet, die Kostenträger auf unterster Ebene müssen die Kosten tragen. Wenn Sie einen visuellen Fluss der Kosten zwischen dem Kostenträger und dem Kostenobjekt anfordern, können Sie die Richtlinie Kostenzusammenfassung verwenden, um den Kostenfluss zu visualisieren. Weitere Informationen finden Sie unter [Kostenrollup-Richtlinie und Zuschlagsberechnung](cost-rollup.md).

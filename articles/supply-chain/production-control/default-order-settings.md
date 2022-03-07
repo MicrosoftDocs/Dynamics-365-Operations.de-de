@@ -1,7 +1,7 @@
 ---
 title: Standardauftragseinstellungen für Dimensionen und Produktvarianten
 description: Standardauftragseinstellungen definieren den Standort und Lagerort, aus dem Artikel bezogen oder in dem sie gelagert werden, die Mindest-, Höchst-, Mehrfach- und Standardmengen, die für den Handel oder die Lagerverwaltung verwendet werden, die Lieferzeiten, das Beendigungskennzeichen sowie die Auftragszusagemethode.
-author: johanhoffmann
+author: t-benebo
 ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 223084
 ms.assetid: fbfbcd7b-dc75-44ab-bffc-8bad576804a4
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: benebotg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: dca0aba081321dff5ae061ebe4bddcae0e42bc54
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 4e389a6af02b8ee30bc491606f72a2e8e250ef00
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102762"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193305"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standardmäßige Auftragseinstellungen für Dimensionen und Produktvarianten
 
@@ -186,9 +186,12 @@ Sie können wählen, wie streng das System bei der Überprüfung der im Feld **S
 
 Es gilt eine strikte Überprüfung für Werte der **Standardbestellmenge**, die in den Inforegistern **Bestellung**, **Bestand** und **Auftrag** der Seite **Standardauftragseinstellungen** festgelegt sind. Jedes Inforegister hat seine eigene **Mehrfach**-Einstellung, die zur Überprüfung des Werts der **Standardbestellmenge** für dieses Inforegister verwendet wird.
 
-### <a name="turn-the-strict-validation-option-on-or-off"></a>Option zur strengen Überprüfung an- oder ausschalten
+### <a name="enable-the-strict-validation-option"></a>Strikte Überprüfung aktivieren
 
-Um die strikte Überprüfung zu verwenden, muss die Funktion *Strenge Überprüfung der Standardauftragsmengen* in Ihrem System aktiviert sein. Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Sie diese Funktionalität ein- oder ausschalten, indem sie die [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) öffnen und nach der Funktion *Strenge Überprüfung der Standardauftragsmengen* suchen.
+Bevor Sie die strikte Überprüfung nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können die Seite [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktion zu überprüfen und sie bei Bedarf zu aktivieren. Hier wird die Funktion als aufgeführt:
+
+- **Modul** - *Produktinformationsverwaltung*
+- **Funktionsname** - *Strikte Überprüfung von Standardbestellmengen*
 
 ### <a name="set-the-validation-option"></a>Überprüfungsoption festlegen
 

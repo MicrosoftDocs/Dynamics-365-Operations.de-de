@@ -1,31 +1,30 @@
 ---
 title: Neuerungen oder Änderungen in Dynamics 365 Human Resources (03. Februar 2020)
 description: Dieser Artikel beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 03. Februar 2020 neu sind oder geändert wurden.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b9efcea4fa52f73ac09a3e0ae74582fc563aeb64
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 766f542096b8e93e435b77fc51c1478a866b1634
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527001"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6051280"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-3-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources (3. Februar 2020)
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -45,7 +44,7 @@ Die folgenden Vorschaufunktionen sind am 3. Februar 2020 verfügbar:
 
 ## <a name="coming-soon"></a>Bald verfügbar
 
-Eine neue Common Data Service Lösung wird in Kürze mit den folgenden Änderungen verfügbar sein:
+Eine neue Dataverse Lösung wird in Kürze mit den folgenden Änderungen verfügbar sein:
 
 | Beschreibung | Änderung |
 | ----------------------------------------- | --- |
@@ -56,12 +55,15 @@ Eine neue Common Data Service Lösung wird in Kürze mit den folgenden Änderung
 | Neue variable Vergütung-Einrichtungsentitäten | **Plantyp für variable Vergütung**</br>**Plan für variable Vergütung**</br>**Übertragungsregeln**</br>**Variable Planstufe zur Vergütung** |
 | Neue **Arbeitskraftkalender-Beschäftigung** Entität | **Arbeitkraftkalender-Entität** hinzugefügt |
 | Neue **Lohnpositionsdetail** Entität | **Lohnpositionsdetail** hinzugefügt |
-| Neue **Titel** Entität | **Titel** hinzugefügt. Die neue Einheit **Titel** wird in den Synchronisationsprozess zwischen Human Resources und Common Data Service einbezogen. Sie wird nicht zunächst von **Job-Position** oder **Job** Entitäten referenziert. |
+| Neue **Titel** Entität | **Titel** hinzugefügt. Die neue Einheit **Titel** wird in den Synchronisationsprozess zwischen Human Resources und Dataverse einbezogen. Sie wird nicht zunächst von **Job-Position** oder **Job** Entitäten referenziert. |
 
 ## <a name="see-also"></a>Siehe auch
 
 [Neuigkeiten oder Änderungen in Human Resources](hr-admin-whats-new.md)</br>
-[Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2 ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2 ](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
 [Funktionen verwalten](hr-admin-manage-features.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

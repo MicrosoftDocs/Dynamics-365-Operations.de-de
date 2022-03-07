@@ -2,26 +2,23 @@
 title: Dimensionsbasierten Produktmaster erstellen
 description: Im folgenden Verfahren, wie einen neuen Produktmaster mit Technologie der dimensionsbasierten Konfiguration erstellt.
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductMasterDraftFormPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 886405431e1362c7919cc7f7a49034d154260123
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 167f138e5088c0f0c5cac53057daf5a4776a779a45969338c0996947afe2d01c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428706"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712957"
 ---
 # <a name="create-a-dimension-based-product-master"></a>Dimensionsbasierten Produktmaster erstellen
 
@@ -42,3 +39,6 @@ Im folgenden Verfahren, wie einen neuen Produktmaster mit Technologie der dimens
     * Wählen Sie die Technologie der dimensionsbasierten Konfiguration aus.  
 9. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

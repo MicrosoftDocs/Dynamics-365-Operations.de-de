@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a07bed244152327047efd68cfacb329a722c0049
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fcb21c037c4492ce215780913301c0c0b54ab9d2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412494"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5259469"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Einrichten von Coupons für Einzelhandelsverkäufe
 
@@ -82,3 +81,6 @@ Couponfunktionen enthalten mehrere eindeutige Funktionen in Retail. Die Commerce
 - **HQ wird teilweise aktualisiert, wobei Commerce-Skalierungseinheit und POS nicht aktualisiert werden.** In einer Hauptniederlassungsaktualisierung werden die Coupon- und Rabattseiten aktualisiert, und das Handelspreismodul wird ebenfalls aktualisiert. Wenn nur eine dieser zwei Komponenten aktualisiert wird, stimmen mehrere Seiten in Commerce nicht mit den Preisberechnungsdaten überein. Daher können unerwartete Rabattberechnungen oder möglicherweise Fehler während der Rabattberechnungen auftreten.
 - **HQ wird aktualisiert, wobei Commerce-Skalierungseinheit und POS nicht aktualisiert werden (N-1).** Da nicht alle Filialen gleichzeitig aktualisiert werden können, empfehlen wir, dass Sie zuerst die Hauptniederlassung aktualisieren, bevor Sie Filialen aktualisieren. Im Szenario N-1 sind neue Funktionen, die den Coupons zugeordnet ist, nicht in den Filialen verfügbar, die noch nicht aktualisiert wurden. So führen die Couponfunktionen "Positionen ausschließen" ein. Wenn Sie „Positionen ausschließen“ für einen Rabatt verwenden, werden diese nicht in einer Filiale angewendet, in der eine frühere Version ausgeführt wird.
 - **HQ wird nicht aktualisiert, wobei Commerce-Skalierungseinheit und POS aktualisiert werden (N+1).** Weil das aktualisierte Preismodul in der Commerce-Skalierungseinheit ältere Rabattcodes während der Preisberechnungen verarbeiten kann, sollte die Aktualisierung in diesem Szenario keine funktionalen Auswirkungen haben.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

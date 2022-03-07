@@ -2,27 +2,24 @@
 title: Auswählen von Seitenlayouts
 description: In diesem Thema wird erläutert, wie Sie Seitenlayouts in Microsoft Dynamics 365 Commerce erstellen und auswählen.
 author: psimolin
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0cbcba7ce4f40298e0f2665fa811b125f11e9490
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e7424755ed794f4e4b8ff640a7e7b9dd96b2145fddcf91511266fa166626112d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412688"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737998"
 ---
 # <a name="select-page-layouts"></a>Auswählen von Seitenlayouts
 
@@ -74,7 +71,12 @@ Gehen Sie folgendermaßen vor, um ein anderes Layout für eine vorhandene Seite 
 
 [Erweitern einer Produktseite](enrich-product-page.md)
 
-[Füllen einer Kategorie-Landingpage](enrich-category-page.md)
+[Kategoriezielseite erweitern](enrich-category-page.md)
 
 [Überprüfen der Zugänglichkeit des Seiteninhalts](verify-accessibility.md)
 
+[Dynamische E-Commerce-Seiten basierend auf URL-Parametern erstellen](create-dynamic-pages.md)
+
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Struktur einer Geschäftsdokumentvorlage aktualisieren
 description: In diesem Thema wird erläutert, wie Sie die Struktur einer Geschäftsdokumentvorlage mithilfe der Funktion zur Verwaltung von Geschäftsdokumenten aktualisieren.
 author: NickSelin
-manager: AnnBe
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERBDWorkspace, ERBDParameters, ERBDTemplateEditor
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-12-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: cb0188e372b5f6275472cf040d10bb796eed1858
-ms.sourcegitcommit: 95d2fc0fa7d17d3a96f7969f12c985b018b4ff94
+ms.openlocfilehash: 2f57e3f3a84a6e767755c69074bc194e90793e6edd79d0e07ae7449d45ec7539
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "4728088"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775285"
 ---
 # <a name="update-the-structure-of-a-business-document-template"></a>Struktur einer Geschäftsdokumentvorlage aktualisieren 
 
@@ -60,7 +58,7 @@ Führen Sie die folgenden Prozeduren in [Geschäftsdokumentverwaltung – Über
 
     Die neue Vorlage wird zur Bearbeitung in der eingebetteten Excel Online-Steuerung auf der Seite des Vorlagen-Editors geöffnet.
 
-[![Verwenden des Arbeitsbereichs zur Geschäftsdokumentverwaltung, um mit der Bearbeitung einer Geschäftsdokumentvorlage zu beginnen](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
+[![Verwenden des Arbeitsbereichs zur Geschäftsdokumentverwaltung, um mit der Bearbeitung einer Geschäftsdokumentvorlage zu beginnen.](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
 
 ### <a name="review-the-current-structure-of-the-editable-template"></a>Aktuelle Struktur der bearbeitbaren Vorlage überprüfen
 
@@ -70,7 +68,7 @@ Führen Sie die folgenden Prozeduren in [Geschäftsdokumentverwaltung – Über
 4. Erweitern Sie im Bereich **Vorlagenstruktur** die Struktur **Bericht \> Rechnung \> rptHeader \> rptHeaderPart1**.
 5. Beachten Sie, dass in der Vorlagenstruktur in Finance das Element **rptHeaderCompLogo** als untergeordnetes Element von **Bericht \> Rechnung \> rptHeader \> rptHeaderPart1** dargestellt wird.
 
-[![Verwenden des Arbeitsbereichs zur Verwaltung von Geschäftsdokumenten zum Überprüfen der aktuellen Struktur einer bearbeitbaren Vorlage](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
+[![Verwenden des Arbeitsbereichs zur Verwaltung von Geschäftsdokumenten zum Überprüfen der aktuellen Struktur einer bearbeitbaren Vorlage.](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
 
 ### <a name="update-the-structure-of-a-business-document-template-by-deleting-a-picture"></a>Struktur einer Geschäftsdokumentvorlage durch Löschen eines Bilds aktualisieren
 
@@ -87,7 +85,7 @@ Führen Sie die folgenden Prozeduren in [Geschäftsdokumentverwaltung – Über
 4. Erweitern Sie im Bereich **Vorlagenstruktur** die Struktur **Bericht \> Rechnung \> rptHeader \> rptHeaderPart1**.
 5. Beachten Sie, dass das Element **rptHeaderCompLogo** in der Vorlagenstruktur in Finance nicht mehr enthalten ist.
 
-[![Verwenden des Arbeitsbereichs zur Geschäftsdokumentverwaltung, um ein Bild aus einer Geschäftsdokumentvorlage zu löschen](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
+[![Verwenden des Arbeitsbereichs zur Geschäftsdokumentverwaltung, um ein Bild aus einer Geschäftsdokumentvorlage zu löschen.](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
 
 ### <a name="update-the-structure-of-a-business-document-template-by-adding-a-picture"></a>Struktur einer Geschäftsdokumentvorlage durch Hinzufügen eines Bilds aktualisieren
 
@@ -99,10 +97,13 @@ Führen Sie die folgenden Prozeduren in [Geschäftsdokumentverwaltung – Über
 6. Erweitern Sie im Bereich **Vorlagenstruktur** die Struktur **Bericht \> Rechnung \> rptHeader \> rptHeaderPart1**.
 7. Beachten Sie, dass das neue Bild jetzt als ein Element in der Vorlagenstruktur in Finance enthalten ist.
 
-[![Verwenden des Arbeitsbereichs zur Geschäftsdokumentverwaltung, um ein Bild zu einer Geschäftsdokumentvorlage hinzuzufügen](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
+[![Verwenden des Arbeitsbereichs zur Geschäftsdokumentverwaltung, um ein Bild zu einer Geschäftsdokumentvorlage hinzuzufügen.](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
 
 ## <a name="related-links"></a>Zugehörige Links
 
 [Überblick über die elektronische Berichterstellung (ER)](general-electronic-reporting.md)
 
 [Geschäftsdokumentverwaltung – Übersicht](er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

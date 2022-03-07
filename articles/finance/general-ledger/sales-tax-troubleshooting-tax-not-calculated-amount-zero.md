@@ -5,6 +5,7 @@ author: shtao
 ms.date: 04/01/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user
 ms.reviewer: kfend
@@ -13,12 +14,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 45aa5931b5d958dd32bd165b414957fa7b366d077cef67621221ce19b56b67d8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ead979081692d4dcee9812c89f5f10c7879d3f7e
+ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772802"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5947644"
 ---
 # <a name="tax-isnt-calculated-or-the-tax-amount-is-zero"></a>Die Steuer wird nicht berechnet oder der Steuerbetrag ist Null
 
@@ -32,17 +33,17 @@ Wenn die Transaktion nicht die richtigen Steuerkennzeichen auswählt oder wenn s
 
 1. Stellen Sie in der Zeile der Transaktion auf dem Inforegister **Zeilendetails**, auf der Registerkarte **Einrichten**, im Abschnitt **Mehrwertsteuer** sicher, dass die richtigen Mehrwertsteuergruppen in den Feldern **Element Mehrwertsteuergruppe** und **Mehrwertsteuergruppe** ausgewählt sind. Wenn die richtigen Steuergruppen nicht ausgewählt sind, wählen Sie sie aus.
 
-    [![Felder „Element Mehrwertsteuergruppe und Mehrwertsteuergruppe“.](./media/tax-not-calculated-tax-amount-zero-Picture1.png)](./media/tax-not-calculated-tax-amount-zero-Picture1.png)
+    [![Felder „Element Mehrwertsteuergruppe und Mehrwertsteuergruppe“](./media/tax-not-calculated-tax-amount-zero-Picture1.png)](./media/tax-not-calculated-tax-amount-zero-Picture1.png)
 
 2. Gehen Sie zu **Steuern** \> **Direkte Steuern** \> **Mehrwertsteuer** \> **Mehrwertsteuergruppen**.
 3. Wählen Sie die entsprechende Mehrwertsteuergruppe und notieren Sie sich dann auf dem Inforegister **Einrichten** das Steuerkennzeichen im Feld **Umsatzsteuerkennzeichen**.
 
-    [![Mehrwertsteuergruppen Seite.](./media/tax-not-calculated-tax-amount-zero-Picture2.png)](./media/tax-not-calculated-tax-amount-zero-Picture2.png)
+    [![Mehrwertsteuergruppen Seite](./media/tax-not-calculated-tax-amount-zero-Picture2.png)](./media/tax-not-calculated-tax-amount-zero-Picture2.png)
 
 4. Gehen Sie zu **Steuern** \> **Indirekte Steuern** \> **Mehrwertsteuer** \> **Element Mehrwertsteuergruppen**.
 5. Wählen Sie das entsprechende Element Mehrwertsteuer-Gruppe und stellen Sie dann im Inforegister **Einrichten** sicher, dass das Steuerkennzeichen im Feld **Steuerkennzeichen** mit dem Steuerkennzeichen der Mehrwertsteuergruppe übereinstimmt.
 
-    [![Element Mehrwertsteuergruppen Seite.](./media/tax-not-calculated-tax-amount-zero-Picture3.png)](./media/tax-not-calculated-tax-amount-zero-Picture3.png)
+    [![Element Mehrwertsteuergruppen Seite](./media/tax-not-calculated-tax-amount-zero-Picture3.png)](./media/tax-not-calculated-tax-amount-zero-Picture3.png)
 
 6. Wenn die Steuerkennzeichen nicht übereinstimmen, aktualisieren Sie das Mehrwertsteuerkennzeichen für eine der Gruppen.
 
@@ -53,12 +54,12 @@ Wenn die Steuerkennzeichen befreit sind oder der Steuersatz 0 (Null) ist, ist da
 1. Gehen Sie zu **Steuern** \> **Direkte Steuern** \> **Mehrwertsteuer** \> **Mehrwertsteuergruppen**.
 2. Wählen Sie die entsprechende Mehrwertsteuergruppe aus und stellen Sie dann im Inforegister **Einrichtung** sicher, dass das Kontrollkästchen **Befreit** deaktiviert ist. Wenn er ausgewählt ist, löschen Sie ihn.
 
-    [![Kontrollkästchen „Befreit“ auf der Seite „Mehrwertsteuergruppen“.](./media/tax-not-calculated-tax-amount-zero-Picture4.png)](./media/tax-not-calculated-tax-amount-zero-Picture4.png)
+    [![Kontrollkästchen Befreit auf der Seite Mehrwertsteuergruppen](./media/tax-not-calculated-tax-amount-zero-Picture4.png)](./media/tax-not-calculated-tax-amount-zero-Picture4.png)
 
 3. Wechseln Sie zu **Steuern** \> **Direkte Steuern** \> **Umsatzsteuer** \> **Umsatzsteuercodes**.
 4. Wählen Sie das entsprechende Mehrwertsteuerkennzeichen und überprüfen Sie, ob der Wert des Steuersatzes im Feld **Wert** nicht 0 (Null) ist. Wenn es 0 ist, aktualisieren Sie das Feld, so dass es auf den richtigen Steuersatz festgelegt ist.
 
-    [![Feld „Wert“ auf der Seite „Werte für Mehrwertsteuer-Code“.](./media/tax-not-calculated-tax-amount-zero-Picture5.png)](./media/tax-not-calculated-tax-amount-zero-Picture5.png)
+    [![Feld „Wert“ auf der Seite „Werte für Mehrwertsteuer-Code“](./media/tax-not-calculated-tax-amount-zero-Picture5.png)](./media/tax-not-calculated-tax-amount-zero-Picture5.png)
 
 ## <a name="determine-whether-zero-is-the-correct-tax-amount"></a>Bestimmen Sie, ob Null der korrekte Steuerbetrag ist
 
@@ -67,7 +68,7 @@ In einigen Szenarien ist ein Steuerwert von 0 (Null) korrekt. Führen Sie diese 
 1. Gehen Sie zu **Hauptbuch** \> **Hauptbuch einrichten** \> **Hauptbuch-Parameter**.
 2. Stellen Sie auf der Registerkarte **Mehrwertsteuer** im Feld **Berechnungsmethode** sicher, dass **Gesamt** ausgewählt ist.
 
-    [![Feld „Berechnungsmethode“ auf der Seite „Parameter Hauptbuch“.](./media/tax-not-calculated-tax-amount-zero-Picture6.png)](./media/tax-not-calculated-tax-amount-zero-Picture6.png)
+    [![Feld „Berechnungsmethode“ auf der Seite „Parameter Hauptbuch“](./media/tax-not-calculated-tax-amount-zero-Picture6.png)](./media/tax-not-calculated-tax-amount-zero-Picture6.png)
 
 3. Wechseln Sie zu **Steuern** \> **Direkte Steuern** \> **Umsatzsteuer** \> **Umsatzsteuercodes**.
 4. Wählen Sie das entsprechende Umsatzsteuerkennzeichen, wählen Sie **Berechnung** \> **Margenbasis**, und überprüfen Sie, ob die Margenbasis auf **Nettobetrag des Rechnungssaldos** oder **Rechnungssumme inkl. sonstiger Umsatzsteuerbeträge** festgelegt ist. Für weitere Informationen, siehe [Rechnungssumme inkl. sonstiger Mehrwertsteuerbeträge](marginal-base-field.md#invoice-total-incl-other-sales-tax-amounts).

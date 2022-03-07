@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren einer Dynamics 365 Commerce-Auswertungsumgebung
+title: Eine Dynamics 365 Commerce-Evaluierungsumgebung konfigurieren
 description: In diesem Thema wird erläutert, wie eine Microsoft Dynamics 365 Commerce-Auswertungsumgebung nach ihrer Bereitstellung konfiguriert wird.
 author: psimolin
 manager: annbe
@@ -10,27 +10,24 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6a1ae960f0f530104af7bdea9a8fcb78b01571f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9b11ab600bb2aa17cf330947304f5b22dd522081
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412458"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477972"
 ---
-# <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurieren einer Dynamics 365 Commerce-Auswertungsumgebung
+# <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Eine Dynamics 365 Commerce-Evaluierungsumgebung konfigurieren
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird erläutert, wie eine Microsoft Dynamics 365 Commerce-Auswertungsumgebung nach ihrer Bereitstellung konfiguriert wird.
-
-## <a name="overview"></a>Übersicht
 
 Führen Sie die in diesem Thema beschriebenen Prozeduren erst aus, nachdem Ihre Commerce-Auswertungsumgebung bereitgestellt wurde. Informationen zum Bereitstellen Ihrer Commerce-Auswertungsumgebung finden Sie unter [Bereitstellen einer Commerce-Auswertungsumgebung](provisioning-guide.md).
 
@@ -53,7 +50,7 @@ Stellen Sie bei Aktivitäten nach der Bereitstellung in der Commerce-Zentralverw
 
 Gehen Sie in der Commerce-Zentralverwaltung folgendermaßen vor, um einen Mitarbeiter Ihrer Identität zuzuordnen.
 
-1. Verwenden Sie das Menü auf der linken Seite, um zu **Module \> Retail und Commerce \> Mitarbeiter \> Arbeitskräfte** zu gehen.
+1. Verwenden Sie das Menü auf der linken Seite, um zu **Module \> Einzelhandel und Handel \> Mitarbeiter \> Arbeitskräfte** zu gehen.
 1. Suchen Sie in der Liste den folgenden Datensatz, und wählen Sie ihn aus: **000713 - Andrew Collette**.
 1. Wählen Sie im Aktionsbereich **Commerce** aus.
 1. Wählen Sie **Vorhandene Identität zuordnen** aus.
@@ -164,3 +161,6 @@ Informationen zum Konfigurieren optionaler Funktionen für Ihre Commerce-Auswert
 [Microsoft Azure-Portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-Website](https://aka.ms/Dynamics365CommerceWebsite)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

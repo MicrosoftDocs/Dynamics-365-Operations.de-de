@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a80bedd0224f1e31dfec4e9f4c39ad1ed75d7f2f
-ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
+ms.openlocfilehash: ec6d47c44136f7a105a702358370dd676d9339c1
+ms.sourcegitcommit: 96f936267d3f314f06da6ce6f809eba2ec3b205f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "8024566"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "8018347"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge---release-10025-update"></a>Dynamics 365 Human Resources-Infrastrukturzusammenführung – Aktualisierung auf Version 10.0.25
 
@@ -53,7 +53,7 @@ Die Zusammenführung bietet den Benutzern von Human Resources auf folgende Weise
     | Leistungsbeurteilungen drucken | Sie können Leistungsbeurteilungen im PDF-Format ausdrucken. | Allgemein verfügbar | 
     | Benutzerdefinierte Links im **Manager-Self-Service** | Sie können benutzerdefinierte Links erstellen, die im **Ähnliche Links**-Abschnitt von **Manager-Self-Service** angezeigt werden. | Allgemein verfügbar | 
     | Ansicht für unternehmensübergreifende Vergütung | Benutzer können Vergütungspläne in **Manager-Self-Service** über alle juristischen Personen hinweg anzeigen, ohne das Unternehmen wechseln zu müssen. | Allgemein verfügbar | 
-    | Mehrere Vergütungsstufen nach Stellen konfigurieren\*&dagger; | Stellen unterstützen jetzt mehrere Vergütungsstufen. | Vorschau | 
+    | Mehrere Vergütungsstufen nach Stellen konfigurieren\*&dagger; | Stellen unterstützen jetzt mehrere Vergütungsstufen. | Allgemein verfügbar | 
     | Aufgabenverwaltung\* | Sie können Checklisten und Aufgaben für den Onboarding-, Offboarding- und Übergangsprozess erstellen. | Vorschau | 
     | Optimierter Mitarbeitereintrag | Diese Funktion bietet eine aktualisierte Benutzererfahrung auf der bestehenden **Arbeitskraft**-Seite. | Vorschau | 
     | Verbesserungen der Benutzererfahrung für das Personalwesen | Siehe Tabelle im nächsten Abschnitt.  | Vorschau | 

@@ -1,6 +1,6 @@
 ---
 title: Werbebanner-Modul
-description: Dieses Thema enthält Werbebanner-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+description: Dieses Thema behandelt Werbebanner-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 manager: annbe
 ms.date: 09/15/2020
@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d9debd16b18300d090bde1862a16920d8e9185eb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0b9325ef31fc61d451584930b09c2039156c0c05
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412480"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206582"
 ---
-# <a name="promo-banner-module"></a>Werbebanner-Modul
+# <a name="promo-banner-module"></a>Werbebannermodul
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält Werbebanner-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
-
-## <a name="overview"></a>Übersicht
+Dieses Thema behandelt Werbebanner-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 
 Werbebanner-Module werden verwendet, um Informationsmeldungen auf einer Seite anzeigen. Sie können verwendet werden, um Standort-weite Aktionen anzuzeigen, die auf allen Seiten einer E-Commerce-Webseite verwendet werden. 
 
@@ -96,3 +93,6 @@ Um ein Werbebanner-Modul einer neuen Seite hinzuzufügen und die erforderlichen 
 [Inhaltsblockmodul](add-hero-module.md)
 
 [Video-Player-Modul](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

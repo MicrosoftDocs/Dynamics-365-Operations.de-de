@@ -1,22 +1,22 @@
 ---
 title: Planen des Wellenetikettendrucks während der Welle
 description: Dieses Thema beschreibt, wie Sie die Funktionalität für aufgabenbasierten Wellenetikettendruck festlegen und verwenden.
-author: perlynne
+author: MSFTGarm
 ms.date: 06/09/2021
 ms.topic: article
 ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: perlynne
+ms.author: v-obaranov
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 1323538765308ec3dd366456e31f5e08b08ce5ab
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 4883f8a548645436e17b933d87d4ee6330570d48
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920148"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777864"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Planen des Wellenetikettendrucks während der Welle
 
@@ -40,7 +40,7 @@ Um die Funktionen zu verwenden, die in diesem Thema beschrieben werden, müssen 
 
 Sie müssen zunächst die neue Wellenschrittmethode erstellen und sie für die parallele, asynchrone Aufgabenverarbeitung aktivieren.
 
-1. Wechseln Sie zu **Lagerortverwaltung \> Setup \> Wellen \> Wellenverarbeitungsmethoden**.
+1. Wechseln Sie zu  **Lagerortverwaltung \> Setup \> Wellen \> Wellenverarbeitungsmethoden**.
 1. Wählen Sie im Aktionsbereich **Methode neu generieren**. Beachten Sie, dass *waveLabelPrinting* der Liste der Wellenschrittmethoden hinzugefügt wird, die Sie in Ihren Versandwellenvorlagen verwenden können.
 1. Wählen Sie den Datensatz, bei dem das Feld **Methodenname** auf *waveLabelPrinting* festgelegt ist, und wählen Sie dann im Aktionsbereich **Aufgabenkonfiguration**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus, um eine Zeile zum Raster hinzuzufügen. Legen Sie für die neue Zeile die folgenden Felder fest:
@@ -51,7 +51,7 @@ Sie müssen zunächst die neue Wellenschrittmethode erstellen und sie für die p
 
 Sie können nun eine bestehende Wellenvorlage so aktualisieren, dass sie die *Wellenetikettendruck* Wellenverarbeitungsmethode verwendet. Alternativ können Sie auch eine neue Wellenvorlage erstellen, die diese Methode verwendet.
 
-1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Wellen \> Wellenvorlagen**.
+1. Wechseln Sie zu  **Lagerortverwaltung \> Einstellungen \> Wellen \> Wellenvorlagen**.
 1. Wählen Sie im Aktionsbereich **Bearbeiten** aus.
 1. Wählen Sie im Listenbereich die Wellenvorlage aus, die Sie aktualisieren möchten. (Wenn Sie Demodaten zu Testzwecken verwenden, können Sie *24 Versand Standard* wählen).
 1. Wählen Sie im Inforegister **Methoden** in der Spalte **Restliche Methoden** die Zeile, in der das Feld **Name** auf *waveLabelPrinting* festgelegt ist.

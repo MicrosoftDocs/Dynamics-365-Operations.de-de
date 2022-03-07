@@ -1,30 +1,32 @@
 ---
 title: Eine Anlage übertragen
 description: In diesem Aufgabenleitfaden werden die Finanzdaten für ein Anlagenbuch aus einem Finanzdimensionssatz zu einem neuen Finanzdimensionssatz übertragen.
-author: moaamer
+author: saraschi2
+manager: AnnBe
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetTransfer, DimensionLookup, AssetTransferConfirmation
 audience: Application User
 ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e573386ddbb97bf60e2e501ba92b225f8716c73a
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: a0770011a76b1e4cc8b4d13e54fab2d0fba43f8a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883361"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975915"
 ---
 # <a name="transfer-a-fixed-asset"></a>Eine Anlage übertragen
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Aufgabenleitfaden werden die Finanzdaten für ein Anlagenbuch aus einem Finanzdimensionssatz zu einem neuen Finanzdimensionssatz übertragen.  
+In diesem Aufgabenleitfaden werden die Finanzdaten für ein Anlagenbuch aus einem Finanzdimensionssatz zu einem neuen Finanzdimensionssatz übertragen.  Dabei werden die "Buchhalterrolle" und die Demodaten für die juristische Person USMF verwendet.
 
 1. Wechseln Sie im Navigationsbereich zu **Module > Anlagen > Anlagen > Anlagen**.
 2. Suchen Sie in der Liste die zu übertragende Anlage und wählen Sie diese aus.
@@ -45,6 +47,3 @@ In diesem Aufgabenleitfaden werden die Finanzdaten für ein Anlagenbuch aus eine
     * Überprüfen Sie die Ergebnisse, bevor Sie die Anlagenbücher übertragen.  
 10. Klicken Sie auf **Übertragen**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

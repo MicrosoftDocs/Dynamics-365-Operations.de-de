@@ -1,12 +1,10 @@
 ---
 title: Typen kritischer Werte für Anlagen
 description: In diesem Thema wird erläutert, was Typen kritischer Werte für Anlagen in Asset Management sind.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetCriticality, EntAssetObjectCriticality
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9d2c5e8b6676abf03fe0d3de8b23f125713d6f2
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: f9edf55c22375a66fda04ae7ff76d7a0a191140e5ffb3a377b9ac1a7ba604a8d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021703"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6776919"
 ---
 # <a name="asset-criticality-types"></a>Typen kritischer Werte für Anlagen
 
@@ -42,7 +40,7 @@ Um kritische Anlagenzustände einzurichten, erstellen Sie zunächst die Typen de
 4. Geben Sie im Feld **Name** einen Namen für den Kritikalitätstyp ein.
 5. Geben Sie im Feld **Faktor** einen Faktor ein. Dieser Faktor wird bei der Berechnung der Arbeitsauftragsplanung verwendet, um den Kritikalitätsdatensatz zu bestimmen, der verwendet werden soll. (Es wird immer der Datensatz mit dem höchsten Faktor verwendet). Diese Einstellung ist relevant, wenn, wie in der folgenden Abbildung dargestellt, Kritikalitätspositionen erstellt werden, die den gleichen Kritikalitätswert haben.
 
-    ![Seite „Typen kritischer Werte“](media/23-setup-for-objects.png)
+    ![Seite „Typen kritischer Werte“.](media/23-setup-for-objects.png)
 
 ## <a name="set-up-asset-criticalities"></a>Kritische Anlagenzustände einrichten
 
@@ -61,3 +59,6 @@ Um kritische Anlagenzustände einzurichten, erstellen Sie zunächst die Typen de
 - Die Kritikalität eines Arbeitsauftrags wird jedes Mal neu berechnet, wenn eine Arbeitsauftragsposition zum Arbeitsauftrag hinzugefügt oder daraus gelöscht wird.
 - Wenn ein Arbeitsauftrag mehrere Arbeitsauftragseinzelvorgänge enthält, wird die höchste Kritikalität, gemäß dem Feld **Faktor** auf der Seite **Typen kritischer Werte**, immer für den Arbeitsauftrag verwendet.
 - Im Allgemeinen kann sich die Anlagenkritikalität mit der Zeit ändern. Kritikalität kann durch den Einkauf von neuer Ausrüstung, Wiederaufbereitungen usw. beeinflusst werden. Sie sollten die kritischen Anlagenzustände regelmäßig erneut bewerten (beispielsweise einmal pro Jahr), um sicherzustellen, dass die Kritikalitätsdefinitionen mit den Einstellungen der aktuellen Produktion übereinstimmen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

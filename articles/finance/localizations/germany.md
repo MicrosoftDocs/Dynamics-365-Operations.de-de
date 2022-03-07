@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Germany
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8d23b60695513e3e45d87ffd4dde28b1b2494a56
-ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
+ms.openlocfilehash: 9e4924abd120e96b36722879111578f875f6e942
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "4512271"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232424"
 ---
 # <a name="germany-overview"></a>Deutschland – Übersicht
 
@@ -67,3 +66,6 @@ Auf der Seite **Juristische Personen** können Sie die Option **Rechnungskorrekt
 - [Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Lokalisierung und rechtliche Funktionen](../../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json)
 - [Erstellen Sie eine Umsatzsteuervoranmeldung im XML-Format, ohne Daten für ELSTER (Whitepaper)](https://www.microsoft.com/download/details.aspx?id=101929)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

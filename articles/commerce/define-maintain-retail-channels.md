@@ -2,16 +2,13 @@
 title: Einzelhandelskanäle definieren und verwalten
 description: Dieses Thema bietet einen Überblick über den Prozess für das Einrichten von physischen Shops, die in Dynamics 365 Commerce als Geschäfte bezeichnet werden. Er umfasst Informationen über die Aufgaben, die Sie durchführen müssen, bevor und nachdem Sie ein Geschäft einrichten.
 author: mugunthanm
-manager: AnnBe
 ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailStoreTableListPagePreviewPane
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16481
 ms.assetid: 14496d96-1c72-43ce-a2e7-8467bab4ae46
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0fbca2c9178cd372653287afdf72deaf75442604
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ef06d79e1fa4d024dc1de0125cc72bdba5671aad384c7988dc63d407323b7abc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412482"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6760201"
 ---
 # <a name="define-and-maintain-retail-channels"></a>Definieren und Verwalten von Retail-Kanälen
 
@@ -89,3 +86,6 @@ Commerce verwendet Organisationshierarchien, um Kanäle zu strukturieren. Organi
 > [!NOTE]
 > Um die Commerce-Verkaufsfunktionalität zu nutzen, muss der Konfigurationsschlüssel für **Mehrfache Wareneingänge** aktiviert werden. Diesen Konfigurationsschlüssel finden Sie in den Konfigurationsschlüsseln **Handel** unter **Systemverwaltung**\> **Einstellungen** \> **Lizenzkonfiguration**. Dies ist aufgrund verschiedener Validierungen auf der Grundlage der auf der Ebene der Kundenauftragszeile konfigurierten Lieferadresse erforderlich.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

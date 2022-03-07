@@ -1,36 +1,39 @@
 ---
 title: Auftragsrechnungen erstellen
-description: Dieses Thema beschreibt, wie Sie einen Verkaufsauftrag fakturieren, einschließlich Zusammenführen von Rechnungen und Batch-Verarbeitung.
+description: Dieses Aufgabenhandbuch beschreibt, wie ein Auftrag fakturiert wird, einschließlich des Zusammenführens von Rechnungen sowie der Stapelverarbeitung.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesEditLines,  SysQueryForm, SysRecurrence
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b6712779ca64f5934edd37730597541679b86e43
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: c504ef36f61613c7aa7db5a1e5ddba6e69cd7285
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394609"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443703"
 ---
 # <a name="create-sales-order-invoices"></a>Auftragsrechnungen erstellen
 
 [!include [banner](../../includes/banner.md)]
 
-Dieses Thema beschreibt, wie Sie einen Verkaufsauftrag fakturieren, einschließlich Zusammenführen von Rechnungen und Batch-Verarbeitung. Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
+Dieses Aufgabenhandbuch beschreibt, wie ein Auftrag fakturiert wird, einschließlich des Zusammenführens von Rechnungen sowie der Stapelverarbeitung. Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 
 
 ## <a name="create-an-invoice-from-a-sales-order"></a>Eine Rechnung von einem Auftrag erstellen
 1. Wechseln Sie zu **Navigationsbereich > Module > Debitoren > Aufträge > Versendete, jedoch nicht fakturierte Aufträge**.
 2. Wählen Sie einen Auftrag in der Liste aus. 
-3. Klicken Sie im **Aktionsbereich** auf **Rechnung > Generieren > Rechnung**. Beachten Sie, dass diesem Auftrag mehrere Lieferscheine zugeordneten sind. Es wird nur das Wort *Mehrfach* anstelle der Lieferscheinnummer angezeigt.  
+3. Klicken Sie im **Aktionsbereich** auf **Rechnung > Generieren > Rechnung**. Beachten Sie, dass diesem Auftrag mehrere Lieferscheine zugeordneten sind. Darin wird nur das Wort <multiple> anstelle der Lieferscheinnummer angezeigt.  
 4. Erweitern Sie den Abschnitt **Parameter**.
     - Buchen muss auf "Ja" festgelegt werden, um die Rechnung zu buchen. Sie können auch das Buchen ausschalten und die Rechnung nur drucken. Sie können jedoch das gleiche Ergebnis erreichen, indem Sie eine Proforma-Rechnung anstelle einer Rechnung erstellen.  
     - Diese Option wird für Stapelverarbeitungsaufträge genutzt. Die Anfrage läuft, wenn der Batchauftrag ausgeführt wrid.
@@ -65,6 +68,3 @@ Dieses Thema beschreibt, wie Sie einen Verkaufsauftrag fakturieren, einschließl
 10. Klicken Sie auf **Abbrechen**.
 11. Klicken Sie auf **Ja**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 02aee8c6ec3b2720c2fcbb17f15791d88d688a34
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: ba8f20e7b4ca6579016fa60d0bbf69f7b4e9c7d3
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323760"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605360"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Debuggen Sie Datenquellen eines ausgeführten EB-Formats, um den Datenfluss und die Transformation zu analysieren
 
@@ -28,7 +28,7 @@ ms.locfileid: "8323760"
 
 [!include[banner](../includes/preview-banner.md)]
 
-Wenn Sie eine elektronische Berichterstellungs-(EB)-Lösung [konfigurieren](tasks/er-format-configuration-2016-11.md), um ausgehende Dokumente zu generieren, definieren Sie Methoden, die verwendet werden, um Daten aus der Anwendung abzurufen und sie in die Ausgabe einzugeben, die generiert wird. Um die Lebenszyklusunterstützung der EB-Lösung effizienter zu gestalten, sollte Ihre Lösung aus einem EB-Datenmodell und deren Zuordnungskomponenten bestehen und auch einem EB-Format und dessen Zuordnungskomponenten bestehen, sodass die Modellzuordnung anwendungsspezifisch ist, wohingegen andere Komponenten anwendungsunabhängig bleiben. Daher beeinflussen möglicherweise mehrere EB-Komponenten den Prozess der Dateneingabe in die generierte Ausgabe.
+Wenn Sie eine elektronische Berichterstellungs-(EB)-Lösung [konfigurieren](tasks/er-format-configuration-2016-11.md), um ausgehende Dokumente zu generieren, definieren Sie Methoden, die verwendet werden, um Daten aus der Anwendung abzurufen und sie in die Ausgabe einzugeben, die generiert wird. Um die Lebenszyklusunterstützung der EB-Lösung effizienter zu gestalten, sollte Ihre Lösung aus einem EB-[Datenmodell](general-electronic-reporting.md#DataModelComponent) und deren [Zuordnung](general-electronic-reporting.md#ModelMappingComponent)-Komponenten bestehen und auch einem EB-[Format](general-electronic-reporting.md#FormatComponentOutbound) und dessen Zuordnungskomponenten bestehen, sodass die Modellzuordnung anwendungsspezifisch ist, wohingegen andere Komponenten anwendungsunabhängig bleiben. Daher [beeinflussen](general-electronic-reporting.md#FormatComponentOutbound) möglicherweise mehrere EB-Komponenten den Prozess der Dateneingabe in die generierte Ausgabe.
 
 Manchmal sehen die Daten der generierten Ausgabe anders aus als die gleichen Daten in der Anwendungsdatenbank. In diesen Fällen möchten Sie bestimmen, welche EB-Komponente für die Datentransformation verantwortlich ist. Die EB-Datenquellendebugger-Funktion reduziert den Zeit- und Kostenaufwand für diese Untersuchung erheblich. Sie können die Ausführung eines EB-Formats unterbrechen und die Datenquellendebugger-Schnittstelle öffnen. Dort können Sie die verfügbaren Datenquellen durchsuchen und eine einzelne Datenquelle für die Ausführung auswählen. Diese manuelle Ausführung simuliert die Ausführung der Datenquelle während der realen Ausführung eines EB-Formats. Das Ergebnis wird auf einer Seite dargestellt, auf der Sie die empfangenen Daten analysieren können.
 
@@ -190,9 +190,9 @@ Wenn Sie eine EB-Lösung verwenden möchten, um eine elektronische Zahlungsdatei
 
 Zusätzlich zum ausgewählten EB-Format müssen die folgenden [Konfigurationen](general-electronic-reporting.md#Configuration) automatisch in Ihre Microsoft Dynamics 365 Finance-Instanz als Teil der EB-Lösung **ISO20022-Kreditübertragung** importiert werden.
 
-- **Zahlungsmodell** EB-Datenmodellkonfiguration
-- **ISO20022-Kreditübertragung** EB-Formatkonfiguration
-- **Zahlungsmodellzuordnung 1611** ER-Modellzuordnungskonfiguration
+- **Zahlungsmodell** [EB-Datenmodellkonfiguration](general-electronic-reporting.md#DataModelComponent)
+- **ISO20022-Kreditübertragung** [EB-Formatkonfiguration](general-electronic-reporting.md#FormatComponentOutbound)
+- **Zahlungsmodellzuordnung 1611** [EB-Modellzuordnungskonfiguration](general-electronic-reporting.md#ModelMappingComponent)
 - **Zahlungsmodellzuordnung zu Ziel ISO20022** EB-Modellzuordnungskonfiguration
 
 Sie finden diese Konfigurationen auf der Seite **Konfigurationen** des EB-Frameworks (**Organisationsverwaltung** \> **Elektronische Berichterstellung** \> **Konfigurationen**).

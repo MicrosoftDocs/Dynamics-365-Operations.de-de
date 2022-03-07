@@ -2,26 +2,23 @@
 title: Artikelkonsolidierung – Auslastung von Lagerplatz
 description: Dieses Thema enthält Informationen zu Funktionen, mit denen Lagerverwalter die volumetrische Auslastung von Standorten im gesamten Lager problemlos anzeigen und filtern können. Manager können direkt auf der Seite „Positionskonsolidierung“ Standorte auswählen und Lagerumlagerungsarbeiten erstellen, um Artikel zu konsolidieren und so den Lagerraum besser zu nutzen.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSPhysDimUOM, WHSMovementType, WHSItemConsolidationForm, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 6a328b20c1cfb2fc376ab4656c64cf585a5aa015
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: f858eae57b8b354076f5ed026a4b84ed680866b0
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429028"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578607"
 ---
 # <a name="item-consolidation---location-utilization"></a>Artikelkonsolidierung – Auslastung von Lagerplatz
 
@@ -150,7 +147,7 @@ In diesem Abschnitt wird beschrieben, wie Sie Ihr System auf die Verwendung der 
 
 ## <a name="example-scenario"></a>Beispielszenario
 
-Im folgenden Szenario wird die Lagerort-App auf einem mobilen Gerät verwendet, um eine Bestandsaufnahme *Anpassung in* an zwei Standorten im Lagerort durchzuführen.
+Im folgenden Szenario wird die Warehouse Management Mobile App auf einem mobilen Gerät verwendet, um eine Bestandsaufnahme *Anpassung in* an zwei Standorten im Lagerort durchzuführen.
 
 ### <a name="add-inventory-to-locations"></a>Lagerbestand zu Lagerplätzen hinzufügen
 
@@ -208,3 +205,6 @@ Im folgenden Szenario wird die Lagerort-App auf einem mobilen Gerät verwendet, 
 
     > [!NOTE]
    > Das System erstellt eine Arbeits-ID für jede Bewegung, die abgeschlossen werden muss. Wenn Sie einen Lagerplatz angeben, der bereits Bestand enthält, wird nur eine Arbeits-ID erstellt. Wenn Sie einen neuen Lagerplatz angeben, werden zwei Arbeits-IDs erstellt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

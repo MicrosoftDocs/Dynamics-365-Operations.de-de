@@ -1,12 +1,10 @@
 ---
 title: Manuelle Abschreibung
 description: Dieser Artikel enthält eine Übersicht der manuellen Abschreibungsmethode.
-author: ShylaThompson
-manager: AnnBe
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 13811
 ms.assetid: b0e837c9-515a-4aed-9060-5ec94f37edeb
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 228e6c94042942a26793eb0bebc1186dd4767e7f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b5b62bbdd5d745bc9d0745cc6fa6d6e8034a61e3
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969028"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674826"
 ---
 # <a name="manual-depreciation"></a>Manuelle Abschreibung
 
@@ -32,11 +30,11 @@ Dieser Artikel enthält eine Übersicht der manuellen Abschreibungsmethode.
 
 Wenn Sie ein Anlagenabschreibungsprofil einrichten und auf der Seite **Abschreibungsprofile** im Feld **Methode** die Option **Manuell** auswählen, entspricht die Abschreibung von Anlagen, die diesem Abschreibungsprofil zugeordnet sind, dem Prozentsatz, den Sie für jedes Intervall im Kalenderjahr eingeben. Die Intervalle, für die Sie Prozentsätze einrichten, werden gemäß Ihrer Auswahl auf der Seite **Abschreibungsprofile** auf dem Inforegister **Allgemeines** im Feld **Periodenhäufigkeit** gebucht. Folgende Werte stehen zur Auswahl:
 
--   Jährlich
--   Monatlich
--   Vierteljährlich
--   Halbjährlich
--   Täglich
+- Jährlich
+- Monatlich
+- Vierteljährlich
+- Halbjährlich
+- Täglich
 
 Klicken Sie nach Auswahl der Periodenhäufigkeit auf **Manuelle Zeitpläne**, und richten Sie Prozentsätze für jedes Buchungsintervall ein. Die manuellen Zeitpläne und die Buchungsintervalle definieren zusammen den Abschreibungsbetrag (siehe Beispiele weiter unten in diesem Artikel). Die manuelle Abschreibung wird immer als Prozentsatz des Anschaffungspreises berechnet. Für manuellen Abschreibung müssen die von Ihnen für die Abschreibungsintervalle eingegebenen Prozentsätze nicht unbedingt 100 Prozent ergeben. Bei manueller Abschreibung handelt es sich um eine flexible Abschreibungsmethode, die häufig verwendet wird, um auf der Seite **Bücher** ein außerordentliches Abschreibungsprofil zu definieren – beispielsweise eine nicht periodische Abschreibung für besondere (ggf. steuerliche) Zwecke.
 
@@ -75,3 +73,6 @@ Die Summe der Prozentsätze für alle Intervalle muss nicht unbedingt 100 ergebe
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

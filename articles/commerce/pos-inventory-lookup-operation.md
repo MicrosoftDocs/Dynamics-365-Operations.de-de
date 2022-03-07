@@ -2,7 +2,7 @@
 title: Bestandssuchvorgänge in POS
 description: In diesem Thema wird beschrieben, wie Sie den Bestandssuchvorgang in Dynamics 365 Commerce Point of Sale (POS) verwenden, um die Verfügbarkeit von Produkten in den Filialen und Lagerorten anzuzeigen.
 author: boycezhu
-ms.date: 08/12/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: ded7c0aa00d0806dfe4eb4e182abbbf66fd76d5b
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: c0f753febb0d347015fde1374148835f90df55a3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343835"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353779"
 ---
 # <a name="inventory-lookup-operation-in-pos"></a>Bestandssuchvorgänge in POS
 
@@ -38,10 +38,10 @@ Wenn der Bestandssuchvorgang über die POS-Anwendung gestartet wird, gibt der PO
 
 Für ein einzelnes Produkt bietet der Bestandssuchvorgang eine Listenansicht für die Bestandssuche mit den folgenden Produktinformationen für eine Liste der Standorte:
 
-- **Bestand** - Bezieht sich auf die "verfügbare physische" Menge eines Produkts.
-- **Reserviert** - Bezieht sich auf die "physisch reservierte" Menge, die von der Zentrale abgerufen wird.
-- **Bestellt** - Bezieht sich auf die "insgesamt bestellte" Menge, die von der Zentrale abgerufen wird.
-- **Einheit** - Bezieht sich auf die Maßeinheit des Bestands, die in der Zentrale konfiguriert wurde.
+- **Bestand**: Bezieht sich auf die „verfügbare physische“ Menge eines Produkts.
+- **Reserviert**: Bezieht sich auf die „physisch reservierte“ Menge, die von der Zentralverwaltung abgerufen wurde.
+- **Bestellt**: Bezieht sich auf die „insgesamt bestellte“ Menge, die von der Zentralverwaltung abgerufen wurde.
+- **Einheit**: Bezieht sich auf die in der Zentralverwaltung konfigurierte Maßeinheit des Bestands.
 
 Die Listenansicht der Standorte enthält alle Filialen und Lagerorte, die in den Erfüllungsgruppen konfiguriert sind, mit denen die aktuelle Filiale verknüpft ist, wie im folgenden Beispielbild dargestellt.
 
@@ -52,26 +52,25 @@ Die Listenansicht der Standorte enthält alle Filialen und Lagerorte, die in den
 
 Die folgenden Aktionen sind in der Leiste der POS-App verfügbar:
 
-- **Sortieren** - Mit dieser Aktion kann der POS-Benutzer die Daten in der Listenansicht nach verschiedenen Kriterien sortieren. Standardmäßig ist die Sortierung nach Standort eingestellt.
-
-    - **Geo-Standort** (vom nächstgelegenen bis zum entferntesten Lagerort, basierend auf der Entfernung zur aktuellen Filiale)
-    - **Name** (in aufsteigender oder absteigender Reihenfolge)
-    - **Filialnummer** (in aufsteigender oder absteigender Reihenfolge)
-    - **Bestand** (in absteigender Reihenfolge)
-    - **Reserviert** (in absteigender Reihenfolge)
-    - **Bestellt** (in absteigender Reihenfolge)
-
-- **Filter** - Mit dieser Aktion kann der POS-Benutzer gefilterte Daten für einen bestimmten Lagerort anzeigen.
-- **Filialverfügbarkeit anzeigen** - Mit dieser Aktion kann der POS-Benutzer die ATP-Mengen (Available-to-Promise) für ein Produkt in der ausgewählten Filiale anzeigen.
-- **Filialstandort anzeigen** - Diese Aktion öffnet eine separate Seite, um die Kartenansicht, die Adresse und die Öffnungszeiten des ausgewählten Lagerorts anzuzeigen.
-- **Im Geschäft abholen** - Diese Aktion erstellt eine Kundenbestellung für das Produkt, das im ausgewählten Geschäft kommissioniert werden soll, und leitet den Benutzer zur Transaktionsmaske weiter.
-- **Produkt versenden** - Diese Aktion erstellt eine Kundenbestellung für das Produkt, das aus dem gewählten Geschäft versandt wird, und leitet den Benutzer zur Transaktionsmaske weiter.
-- **Alle Varianten anzeigen** - Bei einem Produkt mit Varianten wechselt diese Aktion von einer Listenansicht zu einer Matrixansicht, die Bestandsinformationen für alle Varianten des Produkts anzeigt.
-- **Zur Transaktion hinzufügen** - Diese Aktion fügt das Produkt zum Warenkorb hinzu und leitet den Benutzer zur Transaktionsmaske weiter.
+- **Sortieren**: Mit dieser Aktion kann der POS-Benutzer die Daten in der Listenansicht nach verschiedenen Kriterien sortieren. Standardmäßig ist die Sortierung nach Standort eingestellt. 
+  - **Geografischer Standort** (vom nächstgelegenen zum am weitesten entfernten Standort im Vergleich zur aktuellen Filiale)
+  - **Name** (in aufsteigender oder absteigender Reihenfolge)
+  - **Filialnummer** (in aufsteigender oder absteigender Reihenfolge)
+  - **Bestand** (in absteigender Reihenfolge)
+  - **Reserviert** (in absteigender Reihenfolge)
+  - **Bestellt** (in absteigender Reihenfolge)
+- **Filter**: Mit dieser Aktion kann der POS-Benutzer gefilterte Daten für einen bestimmten Standort anzeigen.
+- **Verfügbarkeit in Filiale anzeigen**: Mit dieser Aktion kann der POS-Benutzer die für eine Zusage verfügbaren Mengen (ATP-Mengen) für ein Produkt in der ausgewählten Filiale anzeigen.
+- **Filialstandort anzeigen**: Diese Aktion öffnet eine separate Seite mit der Kartenansicht, der Adresse und den Öffnungszeiten der ausgewählten Filiale.
+- **Abholung im Shop**: Diese Aktion erstellt einen Debitorenauftrag für das Produkt, das von der ausgewählten Filiale abgeholt wird, und leitet den Benutzer zum Transaktionsbildschirm weiter.
+- **Produkt versenden**: Diese Aktion erstellt einen Debitorenauftrag für das Produkt, das von der ausgewählten Filiale versandt wird, und leitet den Benutzer zum Transaktionsbildschirm weiter.
+- **Alle Varianten anzeigen**: Bei einem Produkt mit Varianten wechselt diese Aktion von einer Listenansicht zu einer Matrixansicht, in der Bestandsinformationen für alle Produktvarianten angezeigt werden.
+- **Zur Transaktion hinzufügen**: Diese Aktion fügt das Produkt dem Warenkorb hinzu und leitet den Benutzer zum Transaktionsbildschirm weiter.
 
 > [!NOTE]
-> Die standortbasierte Sortierung, die in der Commerce-Version 10.0.17 eingeführt wurde, zeigt den aktuellen Lagerort ganz oben an. Für andere Lagerorte wird die Entfernung zwischen dem Lagerort und dem aktuellen Geschäft durch die Koordinaten (Breitengrad und Längengrad) bestimmt, die in der Commerce-Zentrale definiert sind. Für einen Lagerort wird die Standortinformation in der primären Adresse der operativen Einheit definiert, die mit dem Lagerort verbunden ist. Bei einem Lagerort, bei dem es sich nicht um eine Filiale handelt, werden die Standortinformationen in der Lagerortadresse festgelegt. Vor Version 10.0.17 zeigt die Listenansicht immer den aktuellen Lagerort oben an und sortiert andere Lagerorte alphabetisch.
->
+> Bei einer Sortierung nach Standort wird die Entfernung zwischen einem Standort und der aktuellen Filiale durch die Koordinaten (Breiten- und Längengrad) bestimmt, die in der Commerce-Zentralverwaltung festgelegt sind. Für eine Filiale werden die Standortinformationen in der primären Adresse der der Filiale zugeordneten Organisationseinheit festgelegt. Bei einem Lagerort, bei dem es sich nicht um eine Filiale handelt, werden die Standortinformationen in der Lagerortadresse festgelegt. Wenn für die aktuelle Filiale keine Koordinaten festgelegt sind, zeigt die Sortieroption nach Standort die aktuelle Filiale oben in der Liste an und sortiert dann andere Standorte nach Namen.
+
+> [!NOTE]
 > Die Aktionen **Verfügbarkeit in Filiale anzeigen**, **Filialstandort anzeigen**, **Abholung im Shop** und **Produkt versenden** sind für Standorte, bei denen es sich nicht um eine Filiale handelt, nicht verfügbar.
 
 ## <a name="inventory-lookup-matrix-view-for-variants"></a>Matrixansicht der Bestandssuche für Varianten
@@ -94,12 +93,12 @@ Die Anzeigereihenfolge der Abmessungswerte in der Matrixansicht basiert auf der 
 
 Die folgenden Aktionen sind in der Zelle Matrixansicht verfügbar:
 
-- **Jetzt verkaufen** - Diese Aktion fügt die gewählte Variante dem Warenkorb hinzu und leitet den Benutzer zur Transaktionsmaske weiter.
-- **Im Laden abholen** - Diese Aktion erstellt eine Kundenbestellung für die ausgewählte Variante, die im ausgewählten Laden kommissioniert wird, und leitet den Benutzer zur Transaktionsmaske weiter.
-- **Produkt versenden** - Diese Aktion erstellt eine Kundenbestellung für die gewählte Variante, die vom gewählten Geschäft versendet wird, und leitet den Benutzer zur Transaktionsmaske weiter.
-- **Verfügbarkeit** - Diese Aktion führt den Benutzer zu einer separaten Seite, die die ATP-Mengen für die gewählte Variante im gewählten Geschäft anzeigt.
-- **Alle Lagerorte anzeigen** - Diese Aktion wechselt zur Standardansicht der Lagerort-Verfügbarkeitsliste, die die Bestandsinformationen für die gewählte Variante anzeigt.
-- **Produktdetails anzeigen** - Diese Aktion leitet den Benutzer auf die Produktdetailseite (PDP) der ausgewählten Variante um.
+- **Jetzt verkaufen**: Diese Aktion fügt die ausgewählte Variante dem Warenkorb hinzu und leitet den Benutzer zum Transaktionsbildschirm weiter.
+- **Abholung im Shop**: Diese Aktion erstellt einen Debitorenauftrag für die ausgewählte Variante, das von der ausgewählten Filiale abgeholt wird, und leitet den Benutzer zum Transaktionsbildschirm weiter.
+- **Produkt versenden**: Diese Aktion erstellt einen Debitorenauftrag für die ausgewählte Variante, das von der ausgewählten Filiale versandt wird, und leitet den Benutzer zum Transaktionsbildschirm weiter.
+- **Verfügbarkeit**: Diese Aktion leitet den Benutzer zu einer separaten Seite weiter, auf der die ATP-Mengen für die ausgewählte Variante in der ausgewählten Filiale angezeigt werden.
+- **Alle Standorte anzeigen**: Diese Aktion wechselt zur Standardansicht der Bestandsverfügbarkeitsliste, in der die Bestandsinformationen für die ausgewählte Variante angezeigt werden.
+- **Produktdetails anzeigen**: Diese Aktion leitet den Benutzer zur Produktdetailseite (PDP) der ausgewählten Variante weiter.
 
 ## <a name="access-inventory-lookup-from-other-pages-in-pos"></a>Von anderen Seiten im POS auf die Bestandssuche zugreifen
 
@@ -125,5 +124,7 @@ In der Commerce-Version 10.0.9 und früheren Versionen wird der Wert **physisch
 [Visuelle Konfigurationen der POS-Benutzeroberfläche](pos-screen-layouts.md)
 
 [Lagerverfügbarkeit für Retail Channels berechnen](calculated-inventory-retail-channels.md)
+
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

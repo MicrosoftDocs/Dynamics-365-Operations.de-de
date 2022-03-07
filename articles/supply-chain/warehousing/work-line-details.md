@@ -2,26 +2,23 @@
 title: Arbeitspositionsdetails
 description: Dieses Thema enthält Informationen zur Seite „Arbeitspositionsdetails“, auf der eine umfassende, sortierbare und filterbare Liste der einzelnen Arbeitspositionen in Ihrem System angezeigt wird.
 author: mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkLocationChange, WHSWorkLineDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: bcb340b21e06b294a40784bf3a1da71b0daf7655
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: f37d161bf3d27e15eaaf1230c05270f3769f9901
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429081"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778280"
 ---
 # <a name="work-line-details"></a>Arbeitspositionsdetails
 
@@ -31,7 +28,7 @@ Die Seite **Arbeitspositionsdetails** zeigt eine umfassende, sortierbare und fil
 
 ## <a name="turn-on-the-work-line-details-feature"></a>Funktion für Arbeitspositionsdetails aktivieren
 
-Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit den Einstellungen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie gegebenenfalls aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Administratoren können die Seite [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktion zu überprüfen und sie bei Bedarf zu aktivieren oder zu deaktivieren. Hier wird die Funktion als aufgeführt:
 
 - **Module:** *Lagerortverwaltung*
 - **Funktionsname:** *Arbeitspositionsdetails*
@@ -128,3 +125,6 @@ Befolgen Sie diese Schritte, um einige Kommissionierarbeiten zu erstellen.
 
 > [!IMPORTANT]
 > Wenn Sie nur einen Teil der Menge für eine Arbeitsposition stornieren, müssen Sie auch die veraltete Menge aus der Ladungsposition entfernen. Andernfalls kann die Ladungsposition nicht per Schiff bestätigt werden, es sei denn, die Unterlieferung ist korrekt eingerichtet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

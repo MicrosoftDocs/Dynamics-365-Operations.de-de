@@ -2,16 +2,13 @@
 title: Produktempfehlungs-FAQs
 description: Dieses Thema enthält Informationen über die Prozesse und Tools, die Sie verwenden können, um Probleme zu beheben, die den Produktempfehlungen oder deren Ergebnisse zugeordnet werden.
 author: bebeale
-manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: cf3df2267671b50c20b28dbdb1c6a21696bf2515
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 88ad0efd8f678c3082c31b1c3162b8288e14fc9edb69e8756f1641461b808e07
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412455"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733964"
 ---
 # <a name="product-recommendations-faq"></a>Produktempfehlungs-FAQs
 
@@ -71,7 +68,7 @@ Wenn Sie möchten, dass ein Artikel von Shop nicht angezeigt wird, müssen Die d
 
 ## <a name="how-do-i-add-a-list-to-an-e-commerce-page"></a>Wie wird eine Liste einer E-Commerce-Seite hinzugefügt?
 
-Für Informationen dazu, wie Produktempfehlungsseiten Ihrer E-Commerce-Website hinzugefügt werden, finden Sie unter [Produktempfehlungslisten der Seite hinzufügen](add-reco-list-to-page.md).
+Für Informationen dazu, wie Produktempfehlungsseiten Ihrer E-Commerce-Website hinzugefügt werden, finden Sie unter [Produktempfehlungslisten der Seite hinzufügen](./product-recommendations.md).
 
 ## <a name="how-do-i-enable-recommendations-on-pos"></a>Wie aktiviere ich Empfehlungen für POS?
 
@@ -100,3 +97,6 @@ Nachdem Sie Produktempfehlungen aktiviert haben, müssen Sie den Empfehlungsbere
 [Manuell kuratierte Empfehlungen erstellen](create-editorial-recommendation-lists.md)
 
 [Empfehlungen mit Demodaten erstellen](product-recommendations-demo-data.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

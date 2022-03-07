@@ -2,28 +2,25 @@
 title: Startseite zum Supply Chain Management
 description: Diese Seite enthält eine Liste der Hilfethemen und anderer Ressourcen für die Supply Chain Management-Funktionen.
 author: kamaybac
-manager: tfehr
-ms.date: 06/30/2020
+ms.date: 01/08/2021
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
 ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9255640240ae07c3857c0b6f55a7ee27ba3bf85b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0fc784c3d0a1df7984761c95b5f6955cc1b441e7a51ac75eecd971a42a47a317
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459111"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743601"
 ---
 # <a name="supply-chain-management-home-page"></a>Startseite zum Supply Chain Management
 
@@ -88,9 +85,8 @@ In den folgenden Aufzeichnungen von Fachkonferenzen werden die Funktionen der Li
 - **Produktinformationsverwaltung:**
   - [Produktkonfigurator in Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
 - **Lagerortverwaltung:**
-  - [Ihr Lagerortverwaltungssystem optimal nutzen](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
-  - [Beschriftungen in der neuen Microsoft Dynamics AX 2012 R3-Lagerortverwaltung](https://youtu.be/5w1MngVchBA)
-  - [Dynamics AX 2012 R3: Erweiterte Lagerortverwaltung – ein Tag in der Prozessfertigung](https://www.youtube.com/embed/QUxXUrN-7n4)
+  - [Das Lagerortverwaltungssystem optimal nutzen](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
+  - [Dynamics AX 2012 R3: erweiterte Lagerortverwaltung – ein Tag in der Prozessfertigung](https://www.youtube.com/embed/QUxXUrN-7n4)
 - **Videos zur Produktionssteuerung:**
   - [Fremdarbeit und Aktivitäten in der Fertigung](https://youtu.be/y1jrd3A_k70)
 - **Video zur Transportverwaltung:**
@@ -98,13 +94,16 @@ In den folgenden Aufzeichnungen von Fachkonferenzen werden die Funktionen der Li
 
 ## <a name="blogs"></a>Blogs
 
-Im [Blog des Teams für F&E in der Fertigung von Dynamics AX](https://blogs.msdn.microsoft.com/axmfg/) und im [Blog des Teams für Supply Chain Management in Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/) finden Sie viele weitere Themen zu Fertigung und Supply Chain Management. Die meisten dieser Beiträge beziehen sich auf die ältere Version, aber es gelten weiterhin die gleichen Konzepte und die Vorgehensweisen sind in der aktuellen Version vergleichbar.
+Im [Blog des Teams für F&E in der Fertigung von Dynamics AX](/archive/blogs/axmfg/) und im [Blog des Teams für Supply Chain Management in Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/) finden Sie viele weitere Themen zu Fertigung und Supply Chain Management. Die meisten dieser Beiträge beziehen sich auf die ältere Version, aber es gelten weiterhin die gleichen Konzepte und die Vorgehensweisen sind in der aktuellen Version vergleichbar.
 
 ## <a name="white-papers"></a>Whitepapers
 
-- [Lean Manufacturing: Verfügbarkeitszusage und Kanban-Feinterminierung](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/)
+- [Lean Manufacturing: Verfügbarkeitszusage und Kanban-Feinterminierung](/dynamics/s-e/)
 - [Stücklistenberechnung anhand eines Nachkalkulationsbogens](https://www.microsoft.com/download/details.aspx?id=101937/)
 
 ## <a name="elearning-courses"></a>E-Learning-Schulungen
 
-Informationen zu Onlinetrainings und Schulungen finden Sie bei [Microsoft Learn unter Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path).
+Informationen zu Onlinetrainings und Schulungen finden Sie bei [Microsoft Learn unter Dynamics 365 Supply Chain Management](/learn/browse/?products=dynamics-scm&resource_type=learning+path).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

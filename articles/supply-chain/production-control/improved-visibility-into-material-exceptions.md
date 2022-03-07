@@ -2,27 +2,24 @@
 title: Sichtbarkeit von Materialausnahmen
 description: In diesem Thema wird beschrieben, wie Sie eine bessere Sichtbarkeit von Ausnahmen bei Rohmaterialien für Produktionsaufträge und Chargenaufträge erhalten.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage
+ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage, WHSProdWaveTableManageBOMPool
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 0c17997d9dd04559fb7022fe39bb2b961c1cfc4a
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: d3ea260535e76d7ac3d73d4bca930b7b4b2d22b2b2c076d4d1346785eaed85b8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429050"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6726800"
 ---
 # <a name="visibility-into-material-exceptions"></a>Sichtbarkeit von Materialausnahmen
 
@@ -40,7 +37,7 @@ Eine unveröffentlichte Stücklistenposition oder Formelposition erfordert auße
 
 In der folgenden Abbildung stellt der blaue Balken einen Produktionseinzelvorgang dar, der zu einer Ressource geplant wurde. Der Einzelvorgang beginnt planmäßig am 1. Mai 2017 (01.05.2017). Dieses Datum ist das Rohmaterialdatum. In anderen Worten, die Materialien, die diesem Einzelvorgang in den Stücklisten- und den Formelpositionen zugewiesen sind, müssen an diesem Datum fertig sein. Das andere Datum in der Abbildung, der 6. Mai 2017 (06.05.2017) stellt das Arbeitsbereichsdatum dar. In diesem Beispiel liegt das Rohmaterialdatum vor dem Arbeitsbereichsdatum. Das Datum, an dem der Verbrauch des Rohmaterials hätte anfangen sollen, ist deshalb verstrichen, und die Stücklisten- und Formelpositionen erfüllen die Kriterien, dass sie die Aufmerksamkeit erfordern.
 
-![Beispiel eines Produktionseinzelvorgangs, bei dem das Rohmaterialdatum vor dem Arbeitsbereichsdatum liegt](./media/improved-visibility.png)
+![Beispiel eines Produktionseinzelvorgangs, bei dem das Rohmaterialdatum vor dem Arbeitsbereichsdatum liegt.](./media/improved-visibility.png)
 
 ## <a name="unreleased-material-lines-needing-attention"></a>Nicht freigegebene Materialpositionen, die Aufmerksamkeit erfordern
 
@@ -60,10 +57,17 @@ Wenn Sie die Kachel auswählen, wird die Seite **An Lagerort freigeben** geöffn
 
 Wenn eine Stücklisten- oder Formelposition freigegeben wird, wird sie entweder einer neuen Produktionswelle oder einer vorhandenen offenen Welle hinzugefügt, je nach Konfiguration der Produktionswellenvorlage. Durch die Konfiguration der Wellenvorlage können Sie auch eine Welle einrichten, sodass sie automatisch verarbeitet wird, wenn eine Stücklisten- oder Formelposition freigegeben wird. Wenn die Welle verarbeitet wird, wird Lagerortarbeit für Rohmaterialentnahme generiert. Wenn die Wellenvorlage konfiguriert wird, sodass Wellen nicht zum Zeitpunkt der Freigabe verarbeitet werden, verbleibt die Welle in einem nicht verarbeiteten Status. Die Kachel **Nicht verarbeitete Wellen, die Aufmerksamkeit benötigen** zeigt die Anzahl von Stücklisten- und Formelpositionen an, die für den Lagerort auf nicht verarbeiteten Wellen freigegeben wurden und die ein Rohmaterialdatum haben, das vor dem Arbeitsbereichsdatum liegt oder mit diesem übereinstimmt. Die Positionen müssen auch durch eine Vorgangsressource verbraucht werden, die für den Filter des Arbeitsbereichs gilt.
 
-Wenn die Kachel ausgewählt ist, wird die Seite **Alle Produktionswellen** geöffnet. Diese Seite wird durch die Anzahl offener Wellen gefiltert, die Wellenpositionen freigegebener Stücklisten- und Formelpositionen enthalten, die die Kriterien für die Kachel erfüllen. Über die Seite **Alle Produktionswellen** können Sie manuell die Welle verarbeiten.
+Wenn die Kachel ausgewählt ist, öffnet sich die Seite **Alle Produktionswellen**. Diese Seite wird durch die Anzahl offener Wellen gefiltert, die Wellenpositionen freigegebener Stücklisten- und Formelpositionen enthalten, die die Kriterien für die Kachel erfüllen.
+
+### <a name="manually-maintain-production-waves"></a>Manuelle Verwaltung von Produktionswellen
+
+Auf der Seite **Alle Produktionswellen** können Sie Schaltflächen auf der Registerkarte **Welle** des Aktivitätsbereichs verwenden, um eine Welle manuell zu **verarbeiten** und **freizugeben**. Sie können auch die Option **Produktionen verwalten** zum Anzeigen und Verwalten von **Produktionsstücklistenpool**-Daten verwenden, die zur Abwicklung des Wellenprozesses verwendet werden.
 
 ## <a name="open-warehouse-work-needing-attention"></a>Offene Lagerortarbeit, die Aufmerksamkeit erfordert
 
 Die Kachel **Lagerortarbeit öffnen, die Aufmerksamkeit benötigt** zeigt die Anzahl von Stücklisten- und Formelpositionen an, die für den Lagerort freigegeben wurden, die nicht verarbeitete Arbeit haben und ein Rohmaterialdatum haben, das vor dem Arbeitsbereichsdatum liegt oder mit diesem übereinstimmt. Die Positionen müssen auch durch eine Vorgangsressource verbraucht werden, die für den Filter des Arbeitsbereichs gilt.
 
 Wenn die Kachel ausgewählt ist, wird die Seite **Alle Arbeit** geöffnet. Diese Seite wird durch die Anzahl offener Arbeitskopfzeilen gefiltert, die Arbeitspositionen freigegebener Stücklisten- und Formelpositionen enthalten, die die Kriterien für die Kachel erfüllen. Über die Seite **Alle Arbeit** können Sie manuell die Arbeit verarbeiten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

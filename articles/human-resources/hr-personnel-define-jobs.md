@@ -2,7 +2,7 @@
 title: Neue Einzelvorgänge definieren
 description: Diese Aufgabe konzentriert sich auf die Erstellung einer neuen Stelle.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,19 +11,21 @@ ms.technology: ''
 ms.search.form: HcmJob, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 47a81d5c872b49b2395ed687855798fe04772b7e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 56f7d2129724d8f75ac6dcfc0d1442f757de8957
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418695"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467746"
 ---
 # <a name="define-new-jobs"></a>Neue Einzelvorgänge definieren
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -71,3 +73,6 @@ Diese Aufgabe konzentriert sich auf die Erstellung einer neuen Stelle. Sie wird 
 33. Schalten Sie die Erweiterung des Abschnitts "Ausbildung" ein/aus.
 34. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

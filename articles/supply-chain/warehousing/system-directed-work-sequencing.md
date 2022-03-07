@@ -2,11 +2,9 @@
 title: Systemgeleitete Arbeitsabfolgen
 description: Dieses Thema enthält Informationen zu systemgeleiteten Arbeitsabfolgen. Mit dieser Funktion können Sie die Arbeitsaufträge sortieren und filtern, die das System den Benutzern zur Ausführung vorlegt. Dies ist hilfreich in Szenarien, in denen zusätzliche Kriterien erforderlich sind, um den Lagerkommissioniervorgang voranzutreiben.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFSystemDirectedWorkSequenceQuery, WHSLocDirTable
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 3811486a31d079cac7f7c27ea6323f16de4478d5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: b433787f330de3634c59f7b1b2babfe07e3bdf09
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970205"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577815"
 ---
 # <a name="system-directed-work-sequencing"></a>Systemgeleitete Arbeitsabfolgen
 
@@ -304,3 +302,6 @@ Die systemgeleiteten Arbeitsabfolgeabfragen sind *inklusive*. Es ist wichtig, da
 Daher wurde im Beispiel aus diesem Szenario die Arbeits-ID *4* auch von der Abfrage erfasst. Bei der Erstellung wurden zwei Positionen hinzugefügt: eine für 25 EA und eine für 10 EA. Die Arbeit wurde dem Benutzer weiterhin präsentiert, da mindestens eine Arbeitsposition eine Menge von weniger als 20 EA aufweist.
 
 Je nach Szenario können Sie dieses Verhalten mithilfe von Arbeitspausen verhindern.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

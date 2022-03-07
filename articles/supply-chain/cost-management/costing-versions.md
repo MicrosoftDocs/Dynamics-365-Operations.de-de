@@ -2,29 +2,28 @@
 title: Nachkalkulationsversionen – Übersicht
 description: Dieser Artikel enthält Informationen zu Nachkalkulationsversionen, deren Verwaltung und die Datentypen, die Sie darin einschließen können. Der Hauptzweck einer Nachkalkulationsversion besteht in der Speicherung von Kostendatensätzen für Artikel sowie von Kostenkategorien und Berechnungsformeln für indirekte Kosten.
 author: AndersGirke
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: 54532
+ms.custom:
+- "54532"
+- intro-internal
 ms.assetid: cd239da5-f434-4d1b-8196-5414c888d76d
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cefee7d678789f462eedbf9f9a3fbc9b591e25a2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3fa4f14d6a6b5afe6bb58f94f636be58ea2e721e
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428992"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7565974"
 ---
 # <a name="costing-versions-overview"></a>Nachkalkulationsversionen – Übersicht
 
@@ -68,3 +67,6 @@ Die Einkaufspreisdatensätze für Artikel dienen auch zu Referenzzwecken. Durch 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

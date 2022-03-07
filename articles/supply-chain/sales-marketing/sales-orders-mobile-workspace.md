@@ -2,15 +2,12 @@
 title: Aufträge, mobiler Arbeitsbereich
 description: Dieses Thema enthält Informationen zum mobilen Arbeitsbereich Verkaufsaufträge Mit diesem Arbeitsbereich sind Sie jederzeit auf dem neuesten Stand hinsichtlich Ihrer Aufträge, jederzeit und überall.
 author: Mirzaab
-manager: tfehr
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 267134
 ms.assetid: 0ce96511-002b-4de7-b31e-4303f94edc84
 ms.search.region: global
@@ -18,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 7e586496212c0cf5c964b434e442725fcdb25fca
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 712b45cf1fd35de9f823af1bf89db9c4a572d61ebf7aa3e1fded16902c09557a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428896"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767363"
 ---
 # <a name="sales-orders-mobile-workspace"></a>Aufträge, mobiler Arbeitsbereich
 
@@ -84,7 +81,7 @@ Zeigt Listen mit Aufträgen nach Debitor an.
 Die Voraussetzungen unterscheiden sich basierend auf der Version von Microsoft Dynamics 365, die für Ihre Organisation bereitgestellt wurde.
 
 ### <a name="prerequisites-if-you-use-supply-chain-management"></a>Voraussetzungen, wenn Sie verwenden Supply Chain Management 
-Wenn Supply Chain Management für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator den mobilen Arbeitsbereich **Aufträge** veröffentlichen. Anweisungen finden Sie unter [Einen mobilen Arbeitsbereich veröffentlichen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+Wenn Supply Chain Management für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator den mobilen Arbeitsbereich **Aufträge** veröffentlichen. Anweisungen finden Sie unter [Einen mobilen Arbeitsbereich veröffentlichen](../../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Voraussetzungen, wenn Sie Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher verwenden
 Wenn Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator die folgenden Voraussetzungen erfüllen. 
@@ -104,17 +101,17 @@ Wenn Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher 
 
 <td>KB 4013633 ist ein X++-Aktualisierungs- oder -Metadatenhotfix, der den mobilen Arbeitsbereich <strong>Verkaufsaufträge</strong> enthält. Um KB 4013633 muss Ihr Systemadministrator folgende Schritte ausführen.
 <ol>
-<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Den Metadatenhotfix von Microsoft Dynamics Lifecycle Services (LCS) herunterladen</a>.</li>
-<li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Installieren Sie den Metadatenhotfix</a>.</li>
-<li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Erstellen eines zur Bereitstellung geeigneten Paket</a>, das das <strong>SCMMobile</strong> Modell enthält und laden Sie dann das zur Bereitstellung geeignete Paket in LCS hoch.</li>
-<li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Das bereitstellbare Paket übernehmen</a>.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs">Den Metadatenhotfix von Microsoft Dynamics Lifecycle Services (LCS) herunterladen</a>.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Installieren Sie den Metadatenhotfix</a>.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">Erstellen eines zur Bereitstellung geeigneten Paket</a>, das das <strong>SCMMobile</strong> Modell enthält und laden Sie dann das zur Bereitstellung geeignete Paket in LCS hoch.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Das bereitstellbare Paket übernehmen</a>.</li>
 
 </ol></td>
 </tr>
 <tr class="even">
 <td><strong>Mobiler Arbeitsbereich für Aufträge</strong> veröffentlichen.</td>
 <td>Systemadministrator</td>
-<td>Siehe <a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">Einen mobilen Arbeitsbereich veröffentlichen</a>.</td>
+<td>Siehe <a href="/dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace">Einen mobilen Arbeitsbereich veröffentlichen</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -132,7 +129,7 @@ Herunterladen und Installieren der Finance and Operations mobilen App:
 3.  Bei der erstmaligen Anwendung werden Sie nach Ihrem Benutzernamen und dem Kennwort gefragt. Geben Sie Ihre Anmeldeinformationen ein.
 4.  Nachdem Sie sich angemeldet haben, werden verfügbare Arbeitsbereiche für Ihr Unternehmen angezeigt. Beachten Sie, dass Sie, wenn Ihr Systemadministrator einen neuen Arbeitsbereich später veröffentlicht, die Liste der mobilen Arbeitsbereiche aktualisieren müssen.
 
-[![Zum Aktualisieren ziehen](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![Zum Aktualisieren nach unten ziehen.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-information-about-sales-orders-for-a-customer-by-using-the-sales-order-mobile-workspace"></a>Informationen zu Aufträgen für einen Debitor mithilfe dem mobilen Arbeitsbereich "Verkaufsaufträge"anzeigen
 
@@ -142,3 +139,6 @@ Herunterladen und Installieren der Finance and Operations mobilen App:
 4.  Auswählen des Debitors
 5.  Wählen Sie **Kontaktinformationen** oder **Aufträge** aus. Wenn Sie **Aufträge** auswählen, wird eine Liste der Aufträge für den Debitor angezeigt.
 6.  **Auftrag** auswählen. Sie können nun Informationen zu Auftragspositionen, Lieferungen, Debitorenkontaktinformationen und Auftragsannahmekontaktinformationen anzeigen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

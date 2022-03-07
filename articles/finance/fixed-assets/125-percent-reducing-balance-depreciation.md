@@ -1,12 +1,10 @@
 ---
 title: Degressiven Abschreibung von 125 Prozent
-description: Dieser Artikel gibt eine Übersicht die 125 Prozent Reduktionssaldomethode der Abschreibung.
-author: saraschi2
-manager: AnnBe
+description: Dieser Artikel gibt eine Übersicht der 125 prozentigen Reduktionssaldomethode der Abschreibung.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -14,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 13871
 ms.assetid: 3abc263e-59d6-4f1a-986d-1be388948bd3
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9511917d72a1bb45daf2ce7e4b56d94c17825daf
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 605f9fd3dea02e01c2c49b8e1a6cc52310132304
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969227"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883517"
 ---
 # <a name="125-percent-reducing-balance-depreciation"></a>Degressiven Abschreibung von 125 Prozent
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel gibt eine Übersicht die 125 Prozent Reduktionssaldomethode der Abschreibung.
+Dieser Artikel gibt eine Übersicht der 125 prozentigen Reduktionssaldomethode der Abschreibung.
 
 Wenn Sie ein Abschreibungsprofil für Anlagen einrichten und **125 % degressiv** im Feld **Methode** auf der Seite **Abschreibungsprofile** auswählen, werden Anlagen, denen das Abschreibungsprofil zugewiesen wird, in jedem Abschreibungszeitraum um denselben Prozentsatz abgeschrieben. Dieser Prozentsatz wird auf Grundlage der Nutzungsdauer der Anlage berechnet. Wenn eine Anlage beispielsweise eine Nutzungsdauer von fünf Jahren hat, beträgt der Prozentsatz 25 Prozent (125 % ÷ 5).
 
@@ -66,7 +64,7 @@ Wenn als Abschreibungsjahr **Steuerlich** ausgewählt wird, stehen im Feld **Per
 
 ## <a name="example-of-125-reducing-balance-depreciation"></a>Beispiel für die Abschreibungsmethode "125 % degressiv"
 
-|                                |        |
+| &nbsp;                         | &nbsp; |
 |--------------------------------|--------|
 | Anschaffungskosten               | 11.000 |
 | Schrottwert                  | 1.000  |
@@ -87,3 +85,6 @@ Bei der Abschreibungsmethode „125 % degressiv“ werden 125 Prozent durch die
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,29 +2,29 @@
 title: Vergütung verarbeiten
 description: Die Vergütungsverarbeitung ermöglicht Ihnen die Berechnung neuer Grundvergütungsbeträge für Mitarbeiter basierend auf Eigenkapitalanpassungen, Verdiensterhöhungsziele und Leistungsfähigkeit.
 author: andreabichsel
-manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 979a4f311d59cb51cdf0fc6ce85d5b3338ffa870
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 59627edd4503d9d4d5a87d8eb09b4be4f855c112
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418672"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5800926"
 ---
 # <a name="process-compensation"></a>Vergütung verarbeiten
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Die Vergütungsverarbeitung ermöglicht Ihnen die Berechnung neuer Grundvergütungsbeträge für Mitarbeiter basierend auf Eigenkapitalanpassungen, Verdiensterhöhungsziele und Leistungsfähigkeit. Dieser Artikel beschreibt den grundlegenden Ablauf der Vergütungsverarbeitung für feste Vergütungspläne, ohne die Leistung eines Mitarbeiters zu faktorieren.
 
@@ -77,3 +77,6 @@ Wenn die Vergütungsbeträge für einen Mitarbeiter überprüft wurden und alle 
 Wenn für ein oder mehrere Mitarbeiterereignisse der Status in Genehmigt geändert wurde, können sie in die festen Vergütungsdatensätze des Mitarbeiters geladen werden. Dies kann erfolgen, indem jedes Mitarbeiterereignis einzeln ausgewählt wird und auf der Seite **Mitarbeiterergebnisse** auf die Schaltfläche **Mitarbeitervergütung laden** geklickt wird, oder indem auf der Seite **Ergebnisse bearbeiten** auf die Schaltfläche **Vergütung laden** geklickt wird, um alle genehmigten Mitarbeiterereignisse gleichzeitig zu laden.
 
 Durch Klicken auf **OK** im Dialogfeld **Vergütung laden** werden Vergütungsaktivitätspositionen ungleich Null zur Seite **Feste Mitarbeitervergütung** hinzugefügt.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

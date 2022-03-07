@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: de4ee98198f441b8f42a8a55aa5ff1015f485234
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 68fa26daac055cd0fd72035683f05ed36052b3a3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412552"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995819"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Berechnen der Bestandsverfügbarkeit für Einzelhandelskanäle
 
@@ -84,7 +83,7 @@ Um die kanalseitige Berechnungslogik zu verwenden und Echtzeitserviceaufrufe fü
 
 Führen Sie die folgenden Schritte aus, um das **Funktionsprofil** zu ändern:
 
-1. Gehen Sie zu **Retail und Commerce \> Kanaleinrichtung \> POS-Einrichtung \> POS-Profile \> Funktionsprofile**.
+1. Gehen Sie zu **Einzelhandel und Handel \> Kanaleinrichtung \> POS-Einrichtung \> POS-Profile \> Funktionsprofile**.
 1. Wählen Sie ein Funktionsprofil aus.
 1. Ändern Sie auf den Inforegister **Funktionen** im Abschnitt **Verfügbarkeitsberechnung** von **Verfügbarkeitsberechnungsmodus** von **Echtzeitdienst** auf **Kanal**. Standardmäßig verwenden alle Funktionsprofile Echtzeit-Serviceabrufe. Daher müssen Sie den Wert dieses Feldes ändern, wenn Sie die kanalseitige Berechnungslogik verwenden möchten. Jedes Einzelhandelsgeschäft, das mit dem ausgewählten Funktionsprofil verknüpft ist, ist von dieser Änderung betroffen.
 

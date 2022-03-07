@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: ff67198980765f288b5394d91927ae1826266841
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 828954402d223c62f52d7a13fcc9efab84630c80
+ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103337"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6261779"
 ---
 # <a name="cycle-counting-example-scenarios"></a>Beispielszenarien zur Zykluszählung
 
@@ -32,7 +32,10 @@ Jedes Szenario in diesem Thema verweist auf Werte und Datensätze, die in den St
 
 ### <a name="turn-on-support-for-the-warehouse-management-mobile-app"></a>Schalten Sie die Unterstützung für die Warehouse Management Mobile-App ein
 
-Um die Warehouse Management Mobile App zu verwenden, muss die Funktion *Benutzereinstellungen, Symbole und Schritttitel für die neue Lagerort-App* in Ihrem System aktiviert sein. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Benutzereinstellungen, Symbole und Schritttitel für die neue Lagerort-App* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
+Bevor Sie die neue Warehouse Management Mobile-App verwenden können, müssen Sie die Unterstützung dafür in Ihrem System einschalten. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+
+- **Module:** *Lagerortverwaltung*
+- **Funktionsname:** *Benutzereinstellungen, Symbole und Schritttitel für die neue Lagerort-App*
 
 ### <a name="prepare-demo-data-for-the-scenarios"></a><a name= "prepare-demo-data"></a>Bereiten Sie Demo-Daten für die Szenarien vor
 
@@ -138,7 +141,7 @@ Bevor eine geführte Zykluszählung stattfinden kann, müssen Sie eine Arbeit er
 
 Führen Sie die folgenden Schritte aus, um Zykluszählungsarbeit für den Elementplatz *01A02R2S2B* (BULK-06) im Lagerort *61* zu erstellen.
 
-1. Gehen Sie zu **Lagerortverwaltung \> Zykluszählung \> Zykluszählungsarbeit nach Lagerort**.
+1. Gehen Sie zu **Lagerverwaltung \> Zykluszählung \> Zykluszählungsarbeit nach Lagerort**.
 1. Legen Sie in der Dialogbox **Zykluszählungsarbeit nach Lagerplatz erstellen** das Feld **Arbeitspool-ID** auf *CycleCount* fest.
 1. Wählen Sie auf der Seite **Einschließende Datensätze** Inforegister die Option **Filter**.
 1. Führen Sie im Dialogfeld Abfrage-Editor auf der Registerkarte **Bereich** die folgenden Schritte aus:
@@ -232,7 +235,7 @@ Nachdem Sie die Zykluszählungsarbeit erstellt haben, folgen Sie diesen Schritte
 1. Wählen Sie im Menü **Inventar** die Option **Zykluszählung blind**.
 1. Wählen Sie das Feld **Zonen-ID**, geben Sie *BULK06* ein und wählen Sie dann **OK** (die Schaltfläche mit dem Häkchen).
 1. Wählen Sie das Feld **Element**, geben Sie *L0101* ein, und wählen Sie dann **OK** (die Schaltfläche mit dem Häkchen).
-1. Wählen Sie das Feld **Kennzeichen**, geben Sie *LP\_BULK\_06\_01* ein, und wählen Sie dann **OK** (die Schaltfläche mit dem Häkchen).
+1. Wählen Sie das Feld **Kennzeichen**, geben Sie *LP \_BULK \_06\_01* ein, und wählen Sie dann **OK** (die Schaltfläche mit dem Häkchen).
 1. Wählen Sie das Feld **Anzahl**, geben Sie *10* ein, und wählen Sie dann **OK** (die Schaltfläche mit dem Häkchen).
 
     > [!NOTE]
@@ -268,7 +271,7 @@ Folgen Sie diesen Schritten, um die Zykluszählungsarbeit in der Warehouse Manag
 
 1. Wählen Sie **LP oder Element hinzufügen**.
 1. Wählen Sie das Feld **Element**, geben Sie *L0101* ein, und wählen Sie dann **OK** (die Schaltfläche mit dem Häkchen).
-1. Wählen Sie das Feld **Kennzeichen**, geben Sie *LP\_BULK\_06\_01* ein, und wählen Sie dann **OK** (die Schaltfläche mit dem Häkchen).
+1. Wählen Sie das Feld **Kennzeichen**, geben Sie *LP \_BULK \_06\_01* ein, und wählen Sie dann **OK** (die Schaltfläche mit dem Häkchen).
 1. Wählen Sie das Feld **Anzahl**, geben Sie *9* ein und wählen Sie dann **OK** (die Schaltfläche mit dem Häkchen).
 
     Da das System erkennt, dass der angegebene Ladungsträger bereits an einem anderen Lagerplatz im Supply Chain Management vorhanden ist, wird dieser Ladungsträger an den aktuellen Lagerplatz verschoben. Daher fordert das System Sie auf, die Verschiebung zu bestätigen.

@@ -2,7 +2,7 @@
 title: Systemanforderungen
 description: Dieser Artikel beschreibt die Anforderungen für Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f68b8f642ada1345e7097b5e7220e222b132b1dd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b8b94c1844470938d5e53423f045f5af4c1793d3
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418708"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466807"
 ---
 # <a name="system-requirements"></a>Systemanforderungen
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dieser Artikel beschreibt die Anforderungen für Microsoft Dynamics 365 Human Resources. Es werden auch die Länder und Regionen beschrieben, in denen Human Resources verfügbar ist, außerdem werden Informationen zu Sprachen und zur Lokalisierung für Human Resourcessdaten bereitgestellt.
 
@@ -64,3 +66,6 @@ Sie können eine PDF-Datei der Länder, Regionen der und der von Human Resources
 > Auch wenn die Benutzeroberfläche in andere Sprachen lokalisiert ist, werden alle Benutzerdaten in der Sprache gespeichert, in der sie eingegeben wurden. Sie können E-Mails und Vorlagen in anderen Sprachen erstellen, aber Daten wie Planungsinformationen sind derzeit nur auf Englisch verfügbar.
 
 Wenn Sie Entwickler sind, der an dem Erstellen länder- oder regionsspezifischer Anpassungen interessiert ist, oder an der Erstellung einer Lösung für ein Land oder eine Region, die derzeit nicht von Microsoft unterstützt wird, finden weitere Informationen unter [Globalisierung](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

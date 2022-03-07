@@ -1,12 +1,10 @@
 ---
 title: Garantien auf Anlagen und Anlagearten
 description: In diesem Abschnitt wird erläutert, wie Sie im Anlagenmanagement Garantien auf Anlagen und Anlagenarten einrichten.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/30/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8c0359bfe31b3d01f28028bb17d5d30af39a1db9
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 27a079e0fdc0fe1644e59a454659d77ec0eb416b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021603"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354203"
 ---
 # <a name="warranties-on-assets-and-asset-types"></a>Garantien auf Anlagen und Anlagearten
 
@@ -49,7 +47,10 @@ In diesem Abschnitt wird erläutert, wie Sie im Anlagenmanagement Garantien auf 
     > [!IMPORTANT]
     > Wenn bei einem Arbeitsauftrag im Feld **Gewährleistungsbeginn** ein Datum ausgewählt wird, gilt die Garantie für den Arbeitsauftrag zu diesem Datum. Wenn Sie einen Arbeitsauftrag anlegen, wird das Feld **Garantiebeginn** automatisch auf das Erstellungsdatum gesetzt. Sie können das Datum jedoch so ändern, dass es z.B. dem Startdatum einer Garantievereinbarung entspricht.
     >
-    > ![Arbeitsauftragsseite](media/02-warranty.png)
+    > ![Arbeitsauftragsseite.](media/02-warranty.png)
 
 > [!NOTE]
 > Wenn Sie einen Arbeitsauftrag für eine Anlage anlegen, die unter eine Lieferantengarantie fällt, erhalten Sie eine Benachrichtigung über die Garantievereinbarung, wenn der Arbeitsauftrag ein voraussichtliches Startdatum innerhalb der Garantiezeit hat. Anschließend können Sie den Arbeitsauftrag nach Bedarf stornieren.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

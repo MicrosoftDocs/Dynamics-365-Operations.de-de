@@ -2,27 +2,27 @@
 title: Erstellen von Workflows – Übersicht
 description: Dieses Thema erläutert, wie Sie einen Workflow erstellen.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WorkflowSelectTemplateRnr, WorkflowTableListPageRnr
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.custom: 195583
+ms.custom:
+- "195583"
+- intro-internal
 ms.assetid: 836ddd01-cc34-45c3-a4b0-20647357dbc6
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: d1402019dbaaa60827499fcb6b93ee31440cfc3d
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 877587601c780a2724517afe88f046ff11caf7d2
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797651"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6335546"
 ---
 # <a name="create-workflows-overview"></a>Erstellen von Workflows – Übersicht
 
@@ -83,3 +83,6 @@ Führen Sie zum Speichern und Aktivieren des Workflows die folgenden Schritte au
 
     - Klicken Sie zum Aktivieren dieser Version des Workflows auf **Neue Version aktivieren**. Wenn ein Workflow aktiv ist, können Benutzer Dokumente zwecks Verarbeitung übermitteln.
     - Wenn diese Version nicht aktiviert werden soll, klicken Sie **Neue Version nicht aktivieren** an. Der Workflow kann auch später aktiviert werden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

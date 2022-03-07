@@ -1,34 +1,29 @@
 ---
 title: Wartungsanfragen
 description: Dieses Thema bietet einen Überblick über die Verwaltung von Wartungsanfragen in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/01/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRequestTable, EntAssetRequestWorkspace, EntAssetRequestActivePart, EntAssetRequestWorkOrderActive, EntAssetRequestType, EntAssetRequestTableCreateWO, EntAssetRequestTableLookup, EntAssetRequestTableActivePart, EntAssetMobileRequestDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1e0071ae745987a1217525b2841e3320933a9242
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 6d247457b83036dba2fad8fd9f94e04c29a3aa5e
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019628"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985252"
 ---
 # <a name="maintenance-requests"></a>Wartungsanfragen
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 Wartungsanfragen sind Hinweise oder Erklärungen, die erstellt werden, um einen Manager oder Planer zu informieren, dass für eine Anlage möglicherweise ein Wartungs- oder Reparaturauftrag erforderlich ist, ohne dass jedoch ein Arbeitsauftrag erstellt wird. Wenn den Inhalt einer Wartungsanfrage als gültig betrachtet wird, kann ein Arbeitsauftrag auf Basis der Wartungsanfrage erstellt werden.
 
@@ -44,7 +39,7 @@ Wartungsanfragen können für jede Anlage in Asset Management erstellt werden. U
 
 Um Wartungsanfragen anzuzeigen, wählen Sie **Anlagenverwaltung** \> **Allgemeines** \> **Wartungsanfragen** \> **Alle Wartungsanfragen**, **Aktive Wartungsanfragen** oder **Meine Wartungsanfragen für funktionale Standorte** aus. Jede Listenseite zeigt einige der Informationen an, die sich auf eine Wartungsanfrage bezieht.
 
-![Wartungsanfragen anzeigen](media/01-manage-maintenance-requests.png)
+![Wartungsanfragen anzeigen.](media/01-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Verwenden Sie die Listenseite **Meine Wartungsanfragen für funktionale Standorte**, um eine Liste der Wartungsanfragen anzuzeigen, die entweder funktionalen Standorte enthalten, denen Sie als Arbeitskraft zugeordnet sind, oder Anlagen, die an funktionalen Standorten eingerichtet sind, denen Sie als Arbeitskraft zugeordnet sind. (Informationen darüber, wie Sie funktionale Standorte für Wartungsarbeiter einrichten, finden Sie unter [Wartungsarbeiter und Arbeitskräftegruppen](../setup-for-objects/workers-and-worker-groups.md).)
@@ -53,7 +48,7 @@ Um Wartungsanfragen anzuzeigen, wählen Sie **Anlagenverwaltung** \> **Allgemein
 
 Um die Detailansicht eines Datensatzes zu öffnen, wählen Sie auf der Listenseite **Alle Wartungsanfragen** in der Rasteransicht eine Verknüpfung in der Spalte **Wartungsanfrage** aus.
 
-![Details der Wartungsanfrage anzeigen](media/02-manage-maintenance-requests.png)
+![Details der Wartungsanfrage anzeigen.](media/02-manage-maintenance-requests.png)
 
 Die Schaltflächen im Aktivitätsbereich sind auf Registerkarten zusammengefasst. Die folgende Tabelle beschreibt kurz die Schaltflächen, die sich auf Anlagenmanagement beziehen.
 
@@ -72,3 +67,6 @@ Die Schaltflächen im Aktivitätsbereich sind auf Registerkarten zusammengefasst
 | Anlagenausleihe senden                  | Wählen Sie eine Anlagenausleihe aus, die als temporäre Ersetzung der Anlage dienen soll, die in der ausgewählten Wartungsanfrage ausgewählt ist. |
 | Anlagenausleiche zurückgeben                | Erfassen Sie die Anlagenausleihe als zurückgegeben. |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

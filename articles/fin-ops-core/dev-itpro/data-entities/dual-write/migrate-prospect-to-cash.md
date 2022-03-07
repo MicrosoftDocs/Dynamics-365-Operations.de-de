@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2021-01-04
-ms.openlocfilehash: f1478f0246e7f1ff8bd72232cbaf4c2034cf4edb
-ms.sourcegitcommit: 6af7b37b1c8950ad706e684cc13a79e662985b34
+ms.openlocfilehash: 93614e43b108671de686458887c1d6dd6fe04f7a
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "4959845"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5570563"
 ---
 # <a name="migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>Migrieren von Prospect-to-Cash-Daten vom Datenintegrator nach Dual-Write
 
@@ -98,3 +97,6 @@ Da die Daten aus der Tabelle **Produkte** so konzipiert sind, dass sie nur in ei
 ## <a name="quote-and-quote-product-tables"></a>Anbegots- und Angebotsproduktetabellen
 
 Befolgen Sie für die Tabelle **Angebot** die Anweisungen im Abschnitt [Auftragstabelle](#order-table) weiter oben in diesem Thema. Befolgen Sie für die Tabelle **Angebotsprodukt** die Anweisungen im Abschnitt [Auftragsproduktetabelle](#order-products-table).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

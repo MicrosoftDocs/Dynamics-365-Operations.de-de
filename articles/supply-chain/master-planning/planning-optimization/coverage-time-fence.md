@@ -2,11 +2,13 @@
 title: Planungszeiträume
 description: In diesem Thema wird beschrieben, wie Sie Planungszeiträume einrichten, wenn Sie die Planungsoptimierung verwenden. Ein Planungszeitraum gibt Ihren Planungshorizont und Ihr Limit an.
 author: ChristianRytt
+manager: tfehr
 ms.date: 01/18/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ReqGroup, ReqItemTable, ReqPlanSched
+ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -16,16 +18,14 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2021-01-18
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 32bf890d1ff74155a75862afd6b0e861fbfc10e2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f970d7aa9f758d3bc35b7a1b9d1e43be928fd250
+ms.sourcegitcommit: 995c678b4715be267f1f97148902a6b3dde3bcab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567318"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "5033210"
 ---
 # <a name="coverage-time-fences"></a>Planungszeiträume
-
-[!include [banner](../../includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie *Planungszeiträume* einrichten, wenn Sie die Planungsoptimierung verwenden. Planer können den Planungshorizont (den Planungszeitraum in Tagen) definieren und Angebot und Nachfrage ausschließen, die über diesen Horizont hinausgehen. Daher helfen Planungszeiträume dabei, „Rauschen“ zu vermeiden, das durch Liefervorschläge verursacht wird, auf die Sie monatelang nicht reagieren müssen. Beispiele hierfür sind Prognosen für das nächste Jahr und Kundenaufträge, die weit über die normale Vorlaufzeit hinausgehen.
 
@@ -85,6 +85,3 @@ Berücksichtigen Sie beim Einrichten von Planungszeiträumen die folgenden Punkt
 - Der Intercompany-Bedarf wird ignoriert, wenn das angeforderte Lieferdatum, das berechnet wird, nicht innerhalb des Planungszeitraums liegt. Beachten Sie, dass bei der integrierten Produktprogrammplanung der Intercompany-Bedarf nicht durch den Planungszeitraum begrenzt ist.
 - Bedarfsplanungen werden ignoriert, wenn das Budgetdatum nicht innerhalb des Planungszeitraums liegt. Beachten Sie, dass bei der integrierten Produktprogrammplanung Bedarfsplanungen nicht durch den Planungszeitraum begrenzt sind.
 - Die Planungsoptimierung ist zeitzonenabhängig. Dabei werden die Zeitzone an den Angebots- und Nachfragestellen sowie der Zeitpunkt des Planungslaufs berücksichtigt. Beispielsweise wird die Produktprogrammplanung am 15. Oktober um 11:00 Uhr von einem Standort in Dänemark (Zeitzone GMT + 1) aus ausgelöst, und es wird ein Planungszeitraum von zehn Tagen verwendet. In diesem Fall werden Angebot und Nachfrage von einem Standort in Seattle (GMT-8-Zeitzone) bis 2 Uhr morgens am 25. Oktober berücksichtigt (= zehn 24-Stunden-Tage nach Auslösung der Produktprogrammplanung abzüglich der Zeitzonendifferenz von neun Stunden). Beachten Sie, dass die integrierte Produktprogrammplanung nur das Datum des Zeitrahmens berücksichtigt. Daher kann das Ergebnis abweichen.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

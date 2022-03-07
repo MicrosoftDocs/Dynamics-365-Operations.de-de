@@ -1,12 +1,10 @@
 ---
 title: Anlagenstücklisten
 description: In diesem Thema werden die Anlagenstücklisten (BOMs) in Asset Management beschrieben.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetStandardSparePartsItemGroup, EntAssetObjectBOM
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: baaf516eb386c3cf63d72bf31800b8731121fe26
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 0430891607ac4558c91b86318aee318d0076007daf59a32eda65cb411d274b3a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019519"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6751984"
 ---
 # <a name="asset-boms"></a>Anlagenstücklisten
 
@@ -83,3 +81,6 @@ Sie können Artikelpositionen für Anlagen manuell erstellen.
 5. Wenn der Artikel ablaufen soll, geben Sie im Feld **Ablauf** ein Enddatum ein.
 6. Wählen Sie im Feld **Artikelnummer** den Artikel aus. Der Name wird automatisch in das Feld **Produktname** eingetragen.
 7. Geben Sie im Feld **Menge** die verwendete Menge ein. Das Feld **Einheit** wird automatisch aktualisiert.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

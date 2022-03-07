@@ -2,11 +2,9 @@
 title: Laden Sie ER-Konfigurationen aus dem globalen Repository des Konfigurationsdienstes herunter
 description: In diesem Thema wird erläutert, wie Sie ER-Konfigurationen (Electronic Reporting) aus dem globalen Repository des Konfigurationsdienstes herunterladen.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionImport, ERWorkspace, ERSolutionRepositoryTable
 audience: Application User, IT Pro
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: a96e78a64fe0559ae5f3bfddabf3fe1cad8a3dcb
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 32eb5206fadefbd024f2dd2af888d166c81b950f
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679557"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605330"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>Laden Sie ER-Konfigurationen aus dem globalen Repository des Konfigurationsdienstes herunter
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie [ER-Konfigurationen (Electronic Reporting)](general-electronic-reporting.md#Configuration) aus dem globalen Repository des Konfigurationsdienstes herunterladen. Weitere Informationen finden Sie unter [Microsoft Dynamics 365 for Finance and Operations – Regulatory services](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+In diesem Thema wird erläutert, wie Sie [ER-Konfigurationen (Electronic Reporting)](general-electronic-reporting.md#Configuration) aus dem globalen Repository des Konfigurationsdienstes herunterladen. Weitere Informationen finden Sie unter [Microsoft Dynamics 365 for Finance and Operations – Regulatory services](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="open-configurations-repository"></a>Konfigurations-Repository öffnen
 
@@ -42,7 +40,7 @@ In diesem Thema wird erläutert, wie Sie [ER-Konfigurationen (Electronic Reporti
 3. Wählen Sie im Abschnitt **Konfigurationsanbieter** die Kachel **Microsoft** aus.
 3. Klicken Sie auf der Kachel **Microsoft** auf **Repositorys**.
 
-    ![Elektronische Berichterstellung – Arbeitsbereich](./media/er-download-configurations-global-repo-er-workspace.png)
+    ![Elektronische Berichterstellung – Arbeitsbereich.](./media/er-download-configurations-global-repo-er-workspace.png)
 
 4. Auf der Seite **Konfigurationsrepositorys** wählen Sie im Raster ein vorhandenes Repository vom Typ **Global** aus. Wenn dieses Repository nicht im Raster angezeigt wird, führen Sie die folgenden Schritte aus:
 
@@ -54,7 +52,7 @@ In diesem Thema wird erläutert, wie Sie [ER-Konfigurationen (Electronic Reporti
 
 5. Wählen Sie **Öffnen**, um die Liste der ER-Konfigurationen für das ausgewählte Repository anzuzeigen.
 
-    ![Konfigurationsrepository-Seite](./media/er-download-configurations-global-repo-repositories-list.png)
+    ![Konfigurationsrepository-Seite.](./media/er-download-configurations-global-repo-repositories-list.png)
 
 ## <a name="import-a-single-configuration"></a>Einzelne Konfiguration importieren
 
@@ -65,7 +63,7 @@ In diesem Thema wird erläutert, wie Sie [ER-Konfigurationen (Electronic Reporti
     > [!NOTE]
     > Die Schaltfläche **Importieren** ist nicht für ER-Konfigurationsversionen verfügbar, die in der aktuellen Instanz bereits vorhanden sind.
 
-    ![Konfigurationsrepository-Seite](./media/er-download-configurations-global-repo-repository-content.png)
+    ![Seite „Konfigurations-Repository“, Inforegister „Konfigurationen“.](./media/er-download-configurations-global-repo-repository-content.png)
 
 ## <a name="import-filtered-configurations"></a>Importierte Konfigurationen filtern
 
@@ -79,7 +77,7 @@ In diesem Thema wird erläutert, wie Sie [ER-Konfigurationen (Electronic Reporti
 4. Auf dem Inforegister **Konfigurationen** wählen Sie **Importieren**, um die gefilterten Konfigurationen aus dem globalen Repository auf die aktuelle Instanz herunterzuladen.
 5. Im Inforegister **Konfigurationen** wählen Sie **Filter zurücksetzen**, um die angegebenen Auswahlbedingungen zu bereinigen.
 
-    ![Konfigurationsrepository-Seite](./media/er-download-configurations-global-repo-filtered-configurations.png)
+    ![Seite „Konfigurations-Repository“, Inforegister „Versionen“, Schaltfläche „Importieren“.](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
 > Abhängig von den ER-Einstellungen werden Konfigurationen überprüft, nachdem diese importiert wurden. Sie werden über alle Inkonsistenz-Probleme benachrichtigt, die ermittelt werden. Sie müssen diese Probleme beheben, bevor Sie die importierten Konfigurationsversionen verwenden können. Weitere Informationen finden Sie in der Liste der zugehörigen Ressourcen.
@@ -90,3 +88,6 @@ In diesem Thema wird erläutert, wie Sie [ER-Konfigurationen (Electronic Reporti
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Überblick über die elektronische Berichterstellung (ER)](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

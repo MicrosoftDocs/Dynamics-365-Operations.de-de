@@ -1,10 +1,12 @@
 ---
 title: Häufig gestellte Fragen zur Finanzberichterstellung
-description: Dieser Artikel gibt Antwort auf einige häufig gestellte Fragen zur Finanzberichterstellung.
+description: In diesem Artikel werden Fragen anderer Benutzer zur Finanzberichterstellung beantwortet.
 author: jiwo
-ms.date: 07/07/2021
+manager: tfehr
+ms.date: 01/13/2021
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,115 +16,78 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3690a541b503281f204221a72bfb5a371984d9e4
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 2d49213ea18e09f04b026559bdca49fee1de0ef7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605278"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5249302"
 ---
-# <a name="financial-reporting-faq"></a>Häufig gestellte Fragen zur Finanzberichterstellung
+# <a name="financial-reporting-faq"></a>Häufig gestellte Fragen zur Finanzberichterstellung 
 
-Dieser Artikel gibt Antwort auf häufig gestellte Fragen zur Finanzberichterstellung.
+In diesem Artikel werden Fragen anderer Benutzer zur Finanzberichterstellung beantwortet. 
 
-## <a name="how-do-i-restrict-access-to-a-report-by-using-tree-security"></a>Wie beschränke ich den Zugriff auf einen Bericht mithilfe der Baumstruktursicherheit?
 
-Das folgende Beispiel zeigt, wie der Zugriff auf einen Bericht mithilfe der Baumstruktursicherheit eingeschränkt werden kann.
+## <a name="how-do-i-restrict-access-to-a-report-using-tree-security"></a>Wie beschränke ich den Zugriff auf einen Bericht mithilfe der Baumstruktursicherheit?
 
-Auf den **Bilanzbericht** des USMF-Demounternehmens sollen nicht alle Benutzer der Finanzberichterstellung zugreifen dürfen. Mithilfe der Baumstruktursicherheit können Sie den Zugriff auf einzelne Berichte so einschränken, damit nur bestimmte Benutzer Zugriff erhalten.
+Szenario: Das Demounternehmen USMF hat eine Bilanz erstellt, die nicht alle Benutzer der Finanzberichterstellung in Dynamics 365 einsehen sollen. Lösung: Mithilfe der Baumstruktursicherheit können Sie den Zugriff auf einzelne Berichte so einschränken, damit nur bestimmte Benutzer die Berichte aufrufen können. 
 
-1. Melden Sie sich bei Financial Reporter Report Designer an.
-2. Wählen Sie **Datei \> Neu \> Baumdefinition** aus, um eine neue Baumdefinition zu erstellen.
-3. Doppeltippen oder -klicken Sie in der Spalte **Einheitssicherheit** auf **Zusammenfassung**.
-4. Wählen Sie **Benutzer und Gruppen** aus.
-5. Wählen Sie die Benutzer oder Gruppen aus, die auf diesen Bericht zugreifen müssen.
-6. Wählen Sie **Speichern** aus.
-7. Ergänzen Sie die neue Baumdefinition in der Berichtsdefinition.
-8. Wählen Sie in der Baumdefinition **Einstellung** aus. Wählen Sie dann unter **Auswahl der Berichtseinheit** die Option **Alle Einheiten einschließen** aus.
+1.  Im Berichts-Designer der Finanzberichterstellung anmelden
 
-## <a name="how-do-i-identify-which-accounts-dont-match-my-balances"></a>Wie finde ich heraus, welche Konten nicht mit meinen Salden übereinstimmen?
+2.  Neue Baumdefinition erstellen (Datei | Neu | Baumdefinition) a.    Doppelklicken Sie in der Spalte **Einheitssicherheit** auf **Zusammenfassung**.
+  i.    Klicken Sie auf „Benutzer und Gruppen“.  
+          1. Wählen Sie den/die Benutzer oder die Gruppe aus, die auf diesen Bericht zugreifen möchte. 
+          
+[![Benutzerbildschirm](./media/FR-FAQ_users.png)](./media/FR-FAQ_users.png)
 
-Bei einem Bericht, in dem die Salden nicht übereinstimmen, verwenden Sie die folgenden Verfahren, um die einzelnen Konten und Abweichungen zu ermitteln.
+[![Sicherheitsbildschirm](./media/FR-FAQ_security.jpg)](./media/FR-FAQ_security.jpg)
 
-### <a name="in-financial-reporter-report-designer"></a>In Financial Reporter Report Designer
+  b.    Klicken Sie auf **Speichern**.
+  
+[![Schaltfläche „Speichern“](./media/FR-FAQ_save.png)](./media/FR-FAQ_save.png)
 
-1. Erstellen Sie eine neue Zeilendefinition.
-2. Wählen Sie **Bearbeiten \> Zeilen aus Dimensionen einfügen** aus.
-3. Wählen Sie **MainAccount** aus.
-4. Wählen Sie **OK** aus.
-5. Speichern Sie die Zeilendefinition.
-6. Erstellen Sie eine neue Spaltendefinition.
-7. Erstellen Sie eine neue Berichtsdefinition.
-8. Wählen Sie **Einstellungen** aus, und deaktivieren Sie diese Option.
-9. Erstellen Sie den Bericht. 
-10. Exportieren Sie den Bericht in Microsoft Excel.
+3.  Neue Baumdefinition in der Berichtsdefinition ergänzen
 
-### <a name="in-dynamics-365-finance"></a>In Dynamics 365 Finance
+[![Formular „Baumdefinition“](./media/FR-FAQ_tree-definition.jpg)](./media/FR-FAQ_tree-definition.jpg)
 
-1. Wechseln Sie zu **Hauptbuch \> Anfragen und Berichte \> Zwischenbilanz** aus.
-2. Stellen Sie die folgenden Felder ein:
+A.  Klicken Sie in der Baumdefinition auf „Einstellung“ und danach unter „Auswahl der Berichtseinheit“ auf „Alle Einheiten einschließen“.
 
-    - **Ab Datum** – Geben Sie das Startdatum des Geschäftsjahres ein.
-    - **Bis Datum** – Geben Sie das Datum ein, zu dem der Bericht erstellt wird.
-    - **Finanzdimension** – Setzen Sie dieses Feld auf **Hauptkonto festgelegt**.
+[![Formular zur Auswahl der Berichtseinheit](./media/FR-FAQ_reporting-unit-selection.jpg)](./media/FR-FAQ_reporting-unit-selection.jpg)
 
-3. Wählen Sie **Berechnen** aus.
-4. Exportieren Sie den Bericht in Excel.
+**Vorher:** [![Screenshot „Vorher“](./media/FR-FAQ_before.png)](./media/FR-FAQ_before.png)
 
-Nun sollten sich die Daten aus dem Excel-Bericht in Financial Reporter in den Bericht zur **Zwischenbilanz** kopieren lassen, damit Sie die Spalten zur **Abschlussbilanz** vergleichen können.
+**Nachher:** [![Screenshot „Nachher“](./media/FR-FAQ_after.png)](./media/FR-FAQ_after.png)
 
-## <a name="when-i-design-a-report-in-report-designer-or-when-i-generate-a-financial-report-i-received-the-following-message-the-operation-could-not-be-completed-due-to-a-problem-in-the-data-provider-framework-how-should-i-respond"></a>Beim Entwerfen eines Berichts im Report Designer oder beim Generieren eines Finanzberichts erhalten ich die folgende Meldung: „Der Vorgang konnte aufgrund eines Problems im Datenanbieter-Framework nicht abgeschlossen werden.“ Wie soll ich reagieren?
+Hinweis: Die obige Meldung wird angezeigt, weil der Benutzer nach Übernahme der Einheitssicherheit keinen Zugriff mehr auf den Bericht hat.
 
-Die Nachricht weist darauf hin, dass ein Fehler aufgetreten ist, als das System versucht hat, Finanzmetadaten aus dem Data Mart abzurufen, während Sie die Finanzberichterstellung verwendet haben. Es gibt zwei Möglichkeiten, auf dieses Problem zu reagieren:
 
-- Überprüfen Sie den Integrationsstatus der Daten, indem Sie in Report Designer zu **Extras \> Integrationsstatus** wechseln. Wenn die Integration unvollständig ist, warten Sie, bis sie abgeschlossen ist. Wiederholen Sie dann den Vorgang, bei dem Sie die Nachricht erhalten haben.
-- Wenden Sie sich an den Support, um das Problem zu identifizieren und zu beheben. Möglicherweise sind inkonsistente Daten im System vorhanden. Supporttechniker können Ihnen helfen, das Problem auf dem Server zu ermitteln und die Daten zu finden, die ggf. aktualisiert werden müssen.
 
-## <a name="how-does-the-selection-of-historical-rate-translation-affect-report-performance"></a>Wie wirkt sich die Auswahl der Umrechnung historischer Kurse auf die Leistung bei der Berichterstellung aus?
+## <a name="how-do-i-determine-which-accounts-do-not-matching-my-balances-in-d365"></a>Wie finde ich heraus, welche Konten nicht mit meinen Saldo in D365 übereinstimmen?
 
-Historische Kurse werden in der Regel bei Konten im Zusammenhang mit einbehaltenen Gewinnen, Liegenschaften, Werken und Maschinen sowie Eigenkapital verwendet. Je nach den Richtlinien des US-amerikanischen Financial Accounting Standards Board (FASB) oder den US-amerikanischen Rechnungslegungsvorschriften (US-GAAP) können historische Kurse erforderlich sein. Weitere Informationen finden Sie unter [Währungsfunktionen in der Finanzberichterstellung](financial-reporting-currency-capability.md).
+Wenn ein Bericht in D365 nicht den Erwartungen entspricht, können Sie Konten und Abweichungen wie folgt ermitteln. 
 
-## <a name="how-many-types-of-currency-rate-are-there"></a>Wie viele Währungskurstypen gibt es?
+### <a name="in-financial-reporter-report-designer"></a>Im Berichts-Designer der Finanzberichterstellung
 
-Es gibt drei Typen:
+1.  Neue Zeilendefinition erstellen a.    Auf „Bearbeiten“ | „Zeilen aus Dimensionen einfügen“ i.  „MainAccount“ auswählen [![Hauptbildschirm auswählen](./media/FR-FAQ_selectmain_.png)](./media/FR-FAQ_selectmain_.png)
+    
+    ii. Auf „OK“ klicken b.    Zeilendefinition speichern
 
-- **Aktueller Kurs**: Dieser Typ wird üblicherweise bei Bilanzkonten verwendet. Er ist auch als *Devisenkassakurs* bekannt und kann der Kurs am letzten Tag des Monats oder der Kurs zu einem anderen vorab festgelegten Datum sein.
-- **Durchschnittskurs**: Dieser Typ wird üblicherweise bei Gewinn- und Verlustkonten verwendet. Der Durchschnittskurs kann entweder als einfacher Durchschnitt oder gewichteter Durchschnitt festgelegt werden.
-- **Historischer Kurs**: Dieser wird in der Regel bei Konten im Zusammenhang mit einbehaltenen Gewinnen, Liegenschaften, Werken und Maschinen sowie Eigenkapital verwendet. Diese Konten können je nach den Richtlinien von FASB oder US-GAAP erforderlich sein.
+2.  Eine neue Spaltendefinition erstellen     [![Eine neue Spaltendefinition erstellen](./media/FR-FAQ_column.png)](./media/FR-FAQ_column.png)
 
-## <a name="how-does-historical-currency-translation-work"></a>Wie funktioniert die historische Währungsumrechnung?
+3.  Eine neue Berichtsdefinition erstellen a.    Auf „Einstellungen“ klicken und das Kontrollkästchen [![Einstellungsformular](./media/FR-FAQ_settings.png)](./media/FR-FAQ_settings.png) deaktivieren
+   
+4.  Erstellen Sie den Bericht. 
 
-Kurse hängen vom Transaktionsdatum ab. Das heißt, jede Transaktion wird individuell anhand des nächsten Wechselkurses umgerechnet.
+5.  Exportieren Sie den Bericht in Excel.
 
-Bei der historischen Währungsumrechnung können anstelle individueller Transaktionsangaben die vorab berechneten Periodensalden verwendet werden. Diese Funktionsweise unterscheidet sich von der Umrechnung aktueller Kurse.
+### <a name="in-d365"></a>In D365: 
+1.  Auf „Hauptbuch“ | „Anfragen und Berichte“ | „Zwischenbilanz“ klicken a.    Parameter i.  Ab Datum: Beginn des Geschäftsjahres ii. Bis Datum: Datum, zu dem der Bericht erstellt wurde iii.    Finanzdimensionssatz, „Hauptkonto“ festgelegt [![Hauptkontoformular](./media/FR-FAQ_mainacct.png)](./media/FR-FAQ_mainacct.png)
+      
+  b.    Auf „Berechnen“ klicken
 
-## <a name="how-does-historical-currency-translation-affect-performance"></a>Wie wirkt sich die historische Währungsumrechnung auf die Leistung aus?
+2.  Bericht in Excel exportieren
 
-Bei der Aktualisierung von Berichtsdaten kann es zu Verzögerungen kommen, weil die Beträge durch Überprüfung der Transaktionsangaben erneut berechnet werden müssen. Diese Verzögerung tritt immer dann auf, wenn Kurse aktualisiert oder weitere Transaktionen gebucht werden. Werden beispielsweise tausende Konten mehrmals am Tag zur historischen Umrechnung eingerichtet, kann es zu einer Verzögerung von bis zu einer Stunde kommen, bevor die Berichtsdaten aktualisiert werden. Bei weniger Konten dauert die Verarbeitung von Änderungen im Bericht mitunter nur wenige Minuten.
+Sie sollten nun in der Lage sein, die Daten aus dem Excel-Bericht in der Finanzberichterstellung in den D365-Zwischenbilanzbericht zu kopieren und die Spalten mit der Abschlussbilanz zu vergleichen.
 
-Auch bei der Erstellung von Berichten mithilfe der Währungsumrechnung bei Konten mit historischem Typ kommt es zu zusätzlichen Berechnungen pro Transaktion. Je nach Anzahl der Konten kann die Berichterstellung doppelt so lange dauern.
-
-## <a name="what-are-the-estimated-data-mart-integration-intervals"></a>Was sind die geschätzten Data Mart-Integrationsintervalle?
-
-Financial Reporter verwendet 16 Aufgaben, um Daten von Dynamics 365 Finance in die Financial Reporter-Datenbank zu kopieren. Die folgende Tabelle listet diese 16 Aufgaben auf und zeigt das Intervall an, das angibt, wie oft jede Aufgabe ausgeführt wird. Die Intervalle können nicht geändert werden.
-
-| Name                                                       | Intervall | Intervallzeitmessung |
-|------------------------------------------------------------|----------|-----------------|
-| AX 2012 Kontokategorien nach Kontokategorie            | 41       | Minuten         |
-| AX 2012-Konten nach Konto                                | 7        | Minuten         |
-| AX 2012-Unternehmen nach Unternehmen                               | 300      | Sekunden         |
-| AX 2012-Unternehmen nach Organisation                          | 23       | Minuten         |
-| AX 2012-Dimensionskombinationen nach Dimensionskombination    | 1        | Minuten         |
-| AX 2012-Dimensionswerte nach Dimensionswert                | 11       | Minuten         |
-| AX 2012-Dimensionen nach Dimension                            | 31       | Minuten         |
-| AX 2012-Wechselkurse nach Wechselkurs                    | 17       | Minuten         |
-| AX 2012-Geschäftsjahr nach Geschäftsjahr                        | 13       | Minuten         |
-| AX 2012-Hauptbuchtransaktionen nach Fakt                | 1        | Minuten         |
-| AX 2012-Organisationshierarchien nach Struktur                   | 3.600    | Sekunden         |
-| AX 2012-Szenarien nach Szenario                              | 29       | Minuten         |
-| AX 2012-Transaktionstyp-Qualifizierer nach Faktentyp-Qualifizierer | 19       | Minuten         |
-| Wartungsaufgabe                                           | 1        | Minuten         |
-| MR-Berichtsdefinitionen nach AX7-Finanzberichten             | 45       | Sekunden         |
-| MR-Berichtsversionen nach AX-Finanzberichtsversionen         | 45       | Sekunden         |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

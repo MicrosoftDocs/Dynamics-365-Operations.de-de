@@ -1,12 +1,10 @@
 ---
 title: Konfigurationen entwerfen, um Dokumente zu generieren, die Anwendungsdaten haben
-description: Um die Schritte in dieser Prozedur auszuführen, müssen Sie zuerst das Verfahren abschließen, "ER generiert Dokumente mit Anwendungsdatenenaktualisierung (Teil 1 - Importkonfigurationen).
+description: Dieses Thema zeigt, wie elektronische Berichterstellungskonfigurationen (EB) entworfen werden, um ein elektronisches Dokument zu generieren. (Teil 1 – Konfigurationen importieren).
 author: NickSelin
-manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d099836ba00ffa1d4fd002af4ac3e6045b41c6a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3f335721ee97919af20e73fc9da6c9bf07dcae50aca8f8904d144d75c2f4d7b1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684594"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6726260"
 ---
 # <a name="design-configurations-to-generate-documents-that-have-application-data"></a>Konfigurationen entwerfen, um Dokumente zu generieren, die Anwendungsdaten haben
 
@@ -58,3 +56,6 @@ Bevor Sie beginnen, ändern Sie den Landkontext für das DEMF-Unternehmen DEU (D
 10. Schließen Sie die Seite.
 11. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,28 +1,28 @@
 ---
 title: Überblick über die Einkaufsrichtlinien
 description: Dieser Artikel enthält Informationen zu Einkaufsrichtlinien. Eine Einkaufsrichtlinie ist Sammlung von Regeln, mit denen der Bestellanforderungsprozess kontrolliert wird. Einkaufsrichtlinien unterstützen Beschaffungsadministratoren beim Implementieren der Beschaffungsstrategie, indem eine Richtlinienstruktur erstellt wird, die auf die Anforderungen einer Organisation für den strategischen Einkauf ausgerichtet ist.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage, PurchReqControlRule, RequisitionReplenishCatAccessPolicyRule, PurchReApprovalPolicyRule, RequisitionReplenishControlRule, PurchReqControlRFQRule
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 11614
+ms.custom:
+- "11614"
+- intro-internal
 ms.assetid: 729a304d-0f3f-4ccb-bd5b-46ee0976c57f
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: def842116e0c6c57d407cb4fb30a26a9e17d9a2c
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 3cc150ae1a912fbfb4daf505e4240786c2f380a3
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022205"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982276"
 ---
 # <a name="purchasing-policies-overview"></a>Überblick über die Einkaufsrichtlinien
 
@@ -134,7 +134,7 @@ Die Richtlinie definiert Richtlinienregeln, die beim Generieren einer Bestellung
 -   Auf der Registerkarte **Preistoleranz** können Sie Preistoleranzregeln definieren, um genehmigte Bestellanforderungen erneut durch den Prüfprozess zu leiten, wenn sich der Preis eines Beschaffungskatalogartikels erhöht. Legen Sie den maximalen Betrag fest, um den der Nettobetrag einer Position in einer Bestellanforderung zwischen der Genehmigungszeitpunkt der Bestellanforderung und dem Erstellungszeitpunkt der Bestellung erhöht werden kann. Der Nettobetrag wird berechnet, indem die folgende Formel verwendet wird: (\[Menge × (Preis je Einheit – Rabatt) ÷ Preiseinheit\] + Sonstige Zuschläge) × (100 – Rabattprozent) ÷ 100. Bestellanforderungspositionen, die die Preistoleranz überschreiten, müssen manuell verarbeitet werden. Mit den auf der Registerkarte **Fehlerverarbeitung** konfigurierten Regeln wird bestimmt, wie die Bestellanforderungspositionen verarbeitet werden.
 -   Auf der Registerkarte **Fehlerverarbeitung** konfigurieren Sie die Verarbeitungsregel, die auf eine Bestellanforderung angewendet wird, wenn die Prüfung bei der Erstellung der Bestellung aufgrund eines Kreditoren- oder Preistoleranzfehlers nicht erfolgreich ist. Folgende Optionen stehen zur Auswahl:
     -   **Keine Aktion** – Die Bestellanforderungspositionen verbleiben auf der **Genehmigte Bestellanforderungen freigeben** Seite. Der Status der Bestellanforderungspositionen ist weiterhin **Genehmigt**. Die Fehler müssen jedoch behoben werden, bevor für die Bestellanforderungspositionen eine Bestellung generiert werden kann.
-    -   **Bestellanforderungsposition stornieren** – Die Bestellanforderungspositionen werden storniert. Die anfordernde Person kann eine neue Bestellanforderung für die stornierten Positionen erstellen, wenn die Positionen immer noch angefordert werden sollen.
+    -   **Bestellanforderungsposition stornieren** – Die Bestellanforderungspositionen werden storniert. Die anfordernde Person kann eine neue Bestellanforderung für die stornierten Positionen erstellen, wenn sie die Positionen immer noch anfordern möchten.
     -   **Neue Bestellanforderungsposition erstellen** – Die Bestellanforderungspositionen werden storniert. Es werden dann neue Bestellanforderungen generiert, die nur die Bestellanforderungspositionen enthalten, für die die Prüfung nicht erfolgreich war. Die neuen Bestellanforderungen, die generiert werden, haben den Status **Entwurf**. Diese Bestellanforderungen können erneut zur Prüfung übermittelt werden, nachdem die Prüfungsfehler behoben wurden. Der Antragsteller der Bestellanforderungspositionen wird benachrichtigt, dass die Positionen storniert wurden und dass für die Bestellanforderungspositionen, deren Prüfung nicht erfolgreich war, neue Bestellanforderungen generiert wurden.
 -   Auf der Registerkarte **Manuelle Erstellung der Bestellung** definieren Sie dann die Parameter, mit denen ermittelt wird, ob eine Bestellanforderung manuell verarbeitet werden muss oder ob sie automatisch in eine Bestellung konvertiert werden kann. Die Parameter können auf interne Katalogartikel, externe Katalogartikel oder Nicht-Katalogartikel angewendet werden. Folgende Optionen stehen zur Auswahl:
     -   **Bestellungen manuell erstellen** – Bestellungen für alle genehmigten Bestellanforderungen manuell erstellen.
@@ -150,3 +150,6 @@ Die Richtlinie definiert Richtlinienregeln, die beim Generieren einer Bestellung
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 847ae83102345a8005a8b2a630805d22ccfd736d
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: f45def44a285dbc937a2a602aa873f8a04486902
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019227"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5210288"
 ---
 # <a name="budget-planning-overview"></a>Budgetplanung – Übersicht
 
@@ -204,3 +204,6 @@ Sie können auch das Menü **Aktionen** verwenden, um einen neuen Prozess anzule
 Ein anderer nützlicher Befehl im Menü **Aktivitäten** ist **Budgetprozessstatus anzeigen**. Dieser Befehl zeigt die Budgetpläne in einem Prozess grafisch an, zusammen mit relevanten Daten, wie z.B. dem Workflow-Status der Pläne, Zusammenfassungen nach Betrag und Einheit und die Navigation zu den Budgetplänen selbst mit einem Klick.
 
 [![Status des Budgetplanungsprozesses](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

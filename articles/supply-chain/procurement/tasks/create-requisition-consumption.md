@@ -1,25 +1,23 @@
 ---
 title: Anforderung für Verbrauch erstellen
 description: In diesem Thema wird der Prozess zum Erstellen einer Anforderung beschrieben.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c76a24999eef16f239578dd6c8cf9e2e5a8ca634
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 0f7ca6e843688e0415f7ef31ed7cd40a77eccdeb
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018920"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579447"
 ---
 # <a name="create-a-requisition-for-consumption"></a>Anforderung für Verbrauch erstellen
 
@@ -91,3 +89,6 @@ In diesem Thema wird der Prozess zum Erstellen einer Anforderung beschrieben. Es
 6. Schließen Sie die Seite.
 7. Aktualisieren Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Engineering-Firmen und Datenbesitzregeln
 description: Dieses Thema erklärt, wie Sie eine oder mehrere Engineering-Firmen verwenden können, um sicherzustellen, dass die Stammdaten für Produkte zentral erstellt und gepflegt werden. Eine Engineering-Firma stellt die Firma dar, die Eigentümerin der Engineering-Produkte und ihrer engineering-relevanten Daten ist.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgEngineeringOrganization
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: ab5ca3bee65bb0ee8ce7f44ba97c00347fe38366
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 1a05ad1a9d24239e2659c1ffecc21e5e186b1e96
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963662"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572912"
 ---
 # <a name="engineering-companies-and-data-ownership-rules"></a>Engineering-Firmen und Datenbesitzregeln
 
@@ -66,3 +64,6 @@ Da die Engineering-Firma Eigentümerin der Engineering-relevanten Daten ist, kon
 
     - Wenn diese Dokumente an andere juristische Entitäten freigegeben werden, sind die Dokumente davor geschützt, von der Betriebsfirma entfernt zu werden.
     - Andere juristische Entitäten können völlig neue, lokale Dokumente hinzufügen. Die Betriebsfirma ist Eigentümerin und Verwalterin dieser lokalen Dokumente.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

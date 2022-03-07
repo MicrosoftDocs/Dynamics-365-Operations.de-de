@@ -1,29 +1,26 @@
 ---
 title: Spezielle Zahlungsterminals und Eingabeaufforderungen für einen Drucker und eine Kassenschublade
 description: Dieses Thema enthält Informationen zur Möglichkeit eines dedizierten Zahlungsterminals und fordert den Benutzer auf, eine Kassenschublade und einen Belegdrucker auszuwählen.
-author: rubendel
-manager: AnnBe
+author: BrianShook
 ms.date: 05/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 03cb68ede82668523e6970d33df676738e65fd83
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b955e55271471ac43ff4c2b217c6448b30536e06
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412591"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779769"
 ---
 # <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Spezielle Zahlungsterminals und Eingabeaufforderungen für einen Drucker und eine Kassenschublade
 
@@ -53,13 +50,13 @@ Die in diesem Thema beschriebenen Funktionen werden vom Modern POS für Windows 
 
 Diese Funktion unterstützt netzwerkfähige Zahlungsterminals und Belegdrucker. Sie können die Kassenschublade unterstützen, indem Sie die Kassenschublade über den d/k-Anschluss an den netzwerkfähigen Belegdrucker anschließen.
 
-Die sofort einsatzbereite Unterstützung für diese Funktionalität wird von [Dynamics 365 Payment Connector für Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3) bereitgestellt. Andere Zahlungsconnectors werden jedoch möglicherweise über das Commerce Software Development Kit (SDK) für Zahlungen unterstützt. Zu den unterstützten Belegdruckern gehören netzwerkfähige Belegdrucker von Star Micronics und Epson.
+Die sofort einsatzbereite Unterstützung für diese Funktionalität wird von [Dynamics 365 Payment Connector für Adyen](./dev-itpro/adyen-connector.md?tabs=8-1-3) bereitgestellt. Andere Zahlungsconnectors werden jedoch möglicherweise über das Commerce Software Development Kit (SDK) für Zahlungen unterstützt. Zu den unterstützten Belegdruckern gehören netzwerkfähige Belegdrucker von Star Micronics und Epson.
 
 Verwenden Sie zum Einrichten von Star Micronics-Belegdruckern das Star Micronics-Druckerdienstprogramm, um das Gerät so zu konfigurieren, dass es über das Netzwerk verwendet werden kann. Dieses Dienstprogramm gibt auch die IP-Adresse des Geräts an.
 
 Verwenden Sie zum Einrichten von Epson-Belegdruckern das Dienstprogramm Epson ePOS-Print, um das Gerät für die Verwendung von Netzwerkprotokollen einzurichten.
 
-Weitere Informationen zum Einrichten von Netzwerkperipheriegeräten finden Sie unter [Übersicht über die Unterstützung von Netzwerkperipheriegeräten](https://go.microsoft.com/fwlink/?linkid=2129965).
+Weitere Informationen zum Einrichten von Netzwerkperipheriegeräten finden Sie unter [Übersicht über die Unterstützung von Netzwerkperipheriegeräten](./dev-itpro/network-peripherals.md).
 
 ## <a name="set-up-a-dedicated-payment-terminal-and-a-prompt-for-a-printer-and-cash-drawer"></a>Dedizierte Zahlungsterminals und Eingabeaufforderungen für einen Drucker und eine Kassenschublade einrichten
 
@@ -78,9 +75,9 @@ Führen Sie die folgenden Schritte aus, um das dem Register zugewiesene Hardware
 
     | Gerät | Typ | Gerätename | Zusätzliche Details |
     |---|---|---|---|
-    | Drucker | Fallback | *Beliebige* | Der Gerätename berücksichtigt Groß-/Kleinschreibung. Das **Belegprofil-ID** sollte gleich sein wie das **Belegprofil-ID**, das dem Netzwerkdrucker zugeordnet ist, der in dem Hardwareprofil eingerichtet ist, das der Hardwarestation auf Kanalebene zugewiesen ist. |
-    | Geldlade | Fallback | *Beliebige* | Der Gerätename berücksichtigt Groß-/Kleinschreibung. Legen Sie die Option **Geteilte Schicht verwenden** auf **Ja** fest. |
-    | Elektronische Überweisung - Dienst | Adyen | Nicht zutreffend | Informationen darüber, wie der Adyen-Zahlungskonnektor für Onlineshops konfiguriert wird, finden Sie unter [Dynamics 365 Zahlungskonnektor für Ayden](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Andere Zahlungsconnectors werden jedoch möglicherweise über das [Commerce Software Development Kit (SDK) für Zahlungen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/end-to-end-payment-extension) unterstützt. |
+    | Drucker | Netzwerk | *Beliebige* | Der Gerätename berücksichtigt Groß-/Kleinschreibung. Das **Belegprofil-ID** sollte gleich sein wie das **Belegprofil-ID**, das dem Netzwerkdrucker zugeordnet ist, der in dem Hardwareprofil eingerichtet ist, das der Hardwarestation auf Kanalebene zugewiesen ist. |
+    | Geldlade | Netzwerk | *Beliebige* | Der Gerätename berücksichtigt Groß-/Kleinschreibung. Legen Sie die Option **Geteilte Schicht verwenden** auf **Ja** fest. |
+    | Elektronische Überweisung - Dienst | Adyen | Nicht zutreffend | Informationen darüber, wie der Adyen-Zahlungskonnektor für Onlineshops konfiguriert wird, finden Sie unter [Dynamics 365 Zahlungskonnektor für Ayden](./dev-itpro/adyen-connector.md?tabs=8-1-3). Andere Zahlungsconnectors werden jedoch möglicherweise über das [Commerce Software Development Kit (SDK) für Zahlungen](./dev-itpro/end-to-end-payment-extension.md) unterstützt. |
     | PIN-Feld | Netzwerk | **MicrosoftAdyenDeviceV001** | Keiner. |
 
 5. In Dynamics 365 Commerce nach **Register** suchen.
@@ -88,7 +85,7 @@ Führen Sie die folgenden Schritte aus, um das dem Register zugewiesene Hardware
 7. Weisen Sie das soeben erstellte Hardwareprofil dem Register zu, das ein dediziertes Zahlungsterminal verwenden soll. Das Gerät, das diesem Register zugeordnet ist, muss entweder die Anwendung Modern POS für Windows oder Modern POS für Android Anwendung verwenden.
 8. Wählen Sie **Speichern** aus.
 9. Klicken Sie im Aktivitätsbereich auf die Registerkarte **Register**, und wählen Sie **IP-Adressen konfigurieren** aus.
-10. Auf dem Inforegister **PIN-Pad** geben Sie die IP-Adresse des Zahlungsterminals ein. Informationen zum Abrufen der IP-Adresse des Zahlungsterminals mithilfe des Adyen-Connectors finden Sie unter [Dynamics 365 Payment Connector für Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3).
+10. Auf dem Inforegister **PIN-Pad** geben Sie die IP-Adresse des Zahlungsterminals ein. Informationen zum Abrufen der IP-Adresse des Zahlungsterminals mithilfe des Adyen-Connectors finden Sie unter [Dynamics 365 Payment Connector für Adyen](./dev-itpro/adyen-connector.md?tabs=8-1-3).
 11. Wählen Sie **Speichern** aus.
 
 #### <a name="set-up-a-hardware-profile-for-the-receipt-printer-and-cash-drawer"></a>Richten Sie ein Hardwareprofil für den Belegdrucker und die Kassenschublade ein
@@ -103,7 +100,7 @@ Führen Sie die folgenden Schritte aus, um das Hardwareprofil einzurichten, mit 
     | Gerät | Typ | Beschreibung | Zusätzliche Details |
     |---|---|---|---|
     | Drucker | Netzwerk | **Epson** oder **Star** | Der Gerätename berücksichtigt Groß-/Kleinschreibung. Die **Belegprofil-ID** sollte gleich sein wie die **Belegprofil-ID**, die dem Netzwerkdrucker zugeordnet ist, der in dem Hardwareprofil eingerichtet ist, das der Hardwarestation auf Kanalebene zugewiesen ist. |
-    | Geldlade | Netzwerk | **Epson** oder **Star** | Der Gerätename berücksichtigt Groß-/Kleinschreibung. Legen Sie die Option **Geteilte Schicht verwenden** auf **Ja** fest. |
+    | Geldlade | Fallback | **Epson** oder **Star** | Der Gerätename berücksichtigt Groß-/Kleinschreibung. Legen Sie die Option **Geteilte Schicht verwenden** auf **Ja** fest. |
 
 5. Wählen Sie **Speichern** aus.
 
@@ -151,6 +148,9 @@ Filialmitarbeiter werden aufgefordert, eine Hardwarestation nur einmal pro Trans
 
 ## <a name="related-articles"></a>Zugehörige Artikel
 
-- [POS Hybrid-App unter Android und iOS einrichten](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)
-- [Zahlungskonnektor von Dynamics 365 für Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
-- [Übersicht über die Unterstützung von Netzwerkperipheriegeräten](https://go.microsoft.com/fwlink/?linkid=2129965)
+- [POS Hybrid-App unter Android und iOS einrichten](./dev-itpro/hybridapp.md)
+- [Zahlungskonnektor von Dynamics 365 für Adyen](./dev-itpro/adyen-connector.md?tabs=8-1-3)
+- [Übersicht über die Unterstützung von Netzwerkperipheriegeräten](./dev-itpro/network-peripherals.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

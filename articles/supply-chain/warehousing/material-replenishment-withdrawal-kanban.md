@@ -2,16 +2,13 @@
 title: Wiederbeschaffung mit Entnahme-Kanbans
 description: In diesem Thema wird beschrieben, wie der Entnahme-Kanban für die Materialwiederbeschaffung für Fertigungsaktivitäten verwendet wird.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules, WHSKanbanWaveTable, WHSKanbanWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0caa0020083138f702e4a1fda457b7075a9c87e
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: b90e4699c440d0dd753cd16ff17cf958507e7872138a7f2c2c84f645f713d3db
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429019"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742583"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Wiederbeschaffung mit Entnahme-Kanbans
 
@@ -33,13 +30,12 @@ ms.locfileid: "4429019"
 In diesem Thema wird beschrieben, wie der Entnahme-Kanban für die Materialwiederbeschaffung für Fertigungsaktivitäten verwendet wird.
 
 ## <a name="workflow-for-material-replenishment-that-uses-the-withdrawal-kanban"></a>Workflow für die Materialwiederbeschaffung, die den Entnahme-Kanban verwendet
--------------------------------------------------------------------
 
 Der Entnahme-Kanban kann verwendet werden, um einen Kanban eines einzelnen Artikels zwischen Lagerorten und Produktionslagerplätze zu verschieben, in denen das Material verbraucht wird. Der Entnahme-Kanban unterstützt eine entnahmebasierte Lösung für die Materialwiederbeschaffung, wobei das Entnahmesignal erforderlich ist, um die Lieferung für einen bestimmten Bedarf zu starten. 
 
 Im folgenden Szenario wird ein entnahmebasierten Wiederbeschaffungssystem gezeigt, bei dem das Entnahmesignal die Erstellung eines Kanbans auslöst, um Material für einen Produktionsprozess zu ergänzen. 
 
-[![Entnahmesignal löst die Erstellung eines Kanban aus, um Material für einen Produktionsprozess wiederzubeschaffen](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
+[![Entnahmesignal löst die Erstellung eines Kanban aus, um Material für einen Produktionsprozess wiederzubeschaffen.](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
 
 1.  Entnahme-Kanban
 2.  Kanban "von" Lagerplatz und Einlieferungslagerplatz für Lagerortarbeit
@@ -76,7 +72,7 @@ Wenn der Abstand zwischen den Lagerort-Lagerplätzen und dem Lagerplatz für Pro
 
 Im folgenden Szenario wird die Umlagerungsaktivität des Entnahme-Kanban für die Umlagerung zwischen zwei Lagerplätzen am selben Lagerort konfiguriert. Die Umlagerungsaktivität des Entnahme-Kanbank ist so eingerichtet, dass diese automatisch abgeschlossen wird. 
 
-[![Automatischer Abschluss der Umlagerungsaktivität nach Verarbeitung der Kanban-Entnahmearbeit](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
+[![Automatischer Abschluss der Umlagerungsaktivität nach Verarbeitung der Kanban-Entnahmearbeit.](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
 
 1.  Gemeinsamer Lagerort für Rohmaterialen und Produktion
 2.  Lagerortlagerplätze für Rohmaterialen
@@ -87,3 +83,6 @@ Im folgenden Szenario wird die Umlagerungsaktivität des Entnahme-Kanban für di
 
 Wenn ein Kanban am Lagerplatz für Produktions-Wareneingang verbraucht ist, wird der Kanban als leer erfasst und eine neuer Kanban wird zum Fluss hinzugefügt. Wenn der Kanban erstellt wird, wird eine Wellenposition zu einer Kanbanwelle hinzugefügt. Wenn die Kanbanwelle verarbeitet wird, wird Lagerortarbeit für die Kanban-Entnahme erstellt. Der Lagerarbeiter verarbeitet die Arbeit für die Kanban-Entnahme und wird angewiesen, das Material für den Kanban von einem Lagerort-Lagerplatz zu entnehmen. Wenn der Lagerarbeiter die Entnahme bestätigt hat, wird der Kanban automatisch abgeschlossen, und der Lagerarbeiter wird angewiesen, das Material im Lagerplatz für Produktions-Wareneingang einzulagern.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,27 +2,24 @@
 title: " Auffüllungsregeln für Crossdocking und Käuferübertragung einrichten"
 description: Diese Prozedur zeigt die Schritte, um Auffüllungsregeln zu erstellen.
 author: josaw1
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailReplenishmentRuleTable, RetailReplenishmentTreeLookup
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9bccd92946783628dce37c3fd018e4dd927efd49
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 776defca4a9d2a860901efe9e8890fd11ec8ce7302c53dc1507cc77ff501aded
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412595"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753051"
 ---
 # <a name="set-up-rules-and-parameters-for-cross-docking-and-buyers-push"></a> Auffüllungsregeln für Crossdocking und Käuferübertragung einrichten
 
@@ -48,3 +45,6 @@ Diese Prozedur zeigt die Schritte, um Auffüllungsregeln zu erstellen. Auffüllu
 14. Geben Sie im Feld "Gewicht" eine Zahl ein.
 15. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

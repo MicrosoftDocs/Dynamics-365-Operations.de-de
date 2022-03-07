@@ -2,11 +2,9 @@
 title: DATETIMEFORMAT EB-Funktion
 description: In diesem Thema werden Informationen zur Verwendung von DATETIMEFORMAT bei der elektronischen Berichterstellungsfunktion (EB) bereitgestellt.
 author: NickSelin
-manager: kfend
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 90bd2900434b1be509f72ec82375e52ea32bc424
-ms.sourcegitcommit: 7cfe8931dd454e811a691f5118a4ecae7ba4b478
+ms.openlocfilehash: 859753c04e3b3d3b61d9a61edaf396637ed5a003
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "4825372"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5746986"
 ---
 # <a name="datetimeformat-er-function"></a>DATETIMEFORMAT EB-Funktion
 
@@ -86,3 +84,6 @@ Wenn die Funktion `DATETIMEFORMAT` einen bestimmten Datums-/Zeitwert konvertiert
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Datums- und Zeitfunktionen](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

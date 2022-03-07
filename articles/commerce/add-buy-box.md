@@ -1,38 +1,33 @@
 ---
 title: Kauffeldmodul
-description: Dieses Thema enthält Kauffeldmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+description: Dieses Thema behandelt Kauffeldmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fa9d42c20540f2ee2240cc4f2b180140c3f9a628
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: 4f49c7a1519744cda9cfba31a3938fd23e692841a851a52ec9d18a241f8c0458
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517087"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717794"
 ---
 # <a name="buy-box-module"></a>Kauffeldmodul
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält Kauffeldmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+Dieses Thema behandelt Kauffeldmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 
-## <a name="overview"></a>Übersicht
-
-Der Begriff *Kauffeld* bezieht sich in der Regel auf einen Produktdetailseiten-Bereich, der „über der Falte“ angezeigt wird und die wichtigsten Informationen enthält, die erforderlich sind, um einen Produkteinkauf abzuschließen. (Ein Bereich, der „über der Falte“ ist, wird angezeigt, wenn die Seite zuerst geladen wird, sodass Benutzer nicht nach unten scrollen müssen, um sie zu sehen.)
+Der Begriff *Kauffeld* bezieht sich in der Regel auf einen Bereich einer Produktdetailseite (PDP), der „über der Falte“ angezeigt wird und die wichtigsten Informationen enthält, die erforderlich sind, um einen Produkteinkauf abzuschließen. (Ein Bereich, der „über der Falte“ ist, wird angezeigt, wenn die Seite zuerst geladen wird, sodass Benutzer nicht nach unten scrollen müssen, um sie zu sehen.)
 
 Ein Kauffeldmodul ist ein spezieller Container, der verwendet wird, um alle zu Module verwenden, die im Kauffeldbereich einer Produktdetailseite angezeigt werden.
 
@@ -40,7 +35,7 @@ Die URL einer Produktdetailseite, die in einer Produktkennung enthalten ist. All
 
 Das folgende Bild zeigt ein Beispiel eines Kaufelementmoduls auf einer Produktdetailseite.
 
-![Beispiel eines Kaufelementmoduls](./media/ecommerce-pdp-buybox.PNG)
+![Beispiel eines Kauffeldmoduls.](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="buy-box-module-properties-and-slots"></a>Kaufen Sie Feldmoduleigenschaften und -Slots 
 
@@ -72,14 +67,16 @@ Die folgenden Kaufelementmoduleigenschaften können unter **Site-Einstellungen \
 
 - **Warenkorbartikel-Höchstmenge** – Diese Eigenschaft dient zur Angabe der maximalen Anzahl jedes Artikels, die dem Einkaufskorb hinzugefügt werden kann. Beispielsweise kann ein Einzelhändler festlegen, dass nur 10 eines Produkts als einzelne Transaktion verkauft werden können.
 - **Bestand** – Informationen zum Anwenden von Bestandeinstellungen finden Sie unter [Wenden Sie Bestandeinstellungen an](inventory-settings.md).
-- **Produkt in den Warenkorb legen** – Mit dieser Eigenschaft wird das Verhalten angegeben, nachdem ein Artikel zum Warenkorb hinzugefügt wurde. Die möglichen Werte sind **Zur Warenkorbseite navigieren**, **Nicht zur Warenkorbseite navigieren** und **Benachrichtigung anzeigen**. Wenn der Wert auf **Zur Warenkorbseite navigieren** festgelegt ist, werden Benutzer Warenkorbseite weitergeleitet, nachdem Sie einen Artikel hinzugefügt haben. Wenn der Wert auf **Nicht zur Warenkorbseite navigieren** festgelegt ist, werden Benutzer nach dem Hinzufügen eines Artikels nicht zur Warenkorbseite weitergeleitet. Wenn der Wert auf **Benachrichtigung anzeigen** festgelegt ist, wird Benutzern eine Bestätigungsbenachrichtigung angezeigt, und sie können weiter die Seite mit den Produktdetails durchsuchen. 
+- **Produkt in den Warenkorb legen** – Informationen zur Anwendung der Einstellungen von **Produkt in den Warenkorb legen** finden Sie unter [Einstellungen „Produkt in den Warenkorb legen“](add-cart-settings.md).
+
+## <a name="buy-box-module-definition-extensions-in-the-adventure-works-theme"></a>Definitionserweiterungen des Kauffeldmoduls im Adventure Works-Design
+
+Das Kauffeldmodul, das das Adventure Works-Thema bereitstellt, verfügt über eine Moduldefinitionserweiterung, die die Implementierung eines Produktspezifikationsmoduls in einem Akkordeonmodul in einem PDP-Kauffeld unterstützt. Um Produktspezifikationsattribute in einem PDP-Kauffeld zu präsentieren, fügen Sie ein Produktspezifikationsmodul zum Akkordeon-Modulslot im Kauffeldslot hinzu.
+
 
 > [!IMPORTANT]
-> Die Website-Einstellungen **Produkt in den Warenkorb legen** sind im Release Dynamics 365 Commerce 10.0.11 verfügbar. Wenn Sie eine Aktualisierung von einer älteren Version von Dynamics 365 Commerce durchführen, müssen Sie die Datei appsettings.json manuell aktualisieren. Anweisungen zum Aktualisieren der Datei appsettings.json finden Sie unter [SDK- und Modulbibliothekupdates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
+> Das Adventure Works-Design steht ab der Dynamics 365 Commerce-Version 10.0.20 zur Verfügung.
 
-Das folgende Bild zeigt ein Beispiel einer Benachrichtigung Zum Warenkorb hinzugefügt auf der Fabrikam-Site.
-
-![Beispiel eines Benachrichtigungs-Moduls](./media/ecommerce-addtocart-notifications.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit-Interaktion
 
@@ -133,6 +130,11 @@ Um ein Kauffeldmodul einer neuen Seite hinzuzufügen und die erforderlichen Eige
 
 [Social Share-Modul](social-share-module.md)
 
+[Einstellungen „Produkt in den Warenkorb legen“](add-cart-settings.md)
+
 [Lagerverfügbarkeit für Retail Channels berechnen](calculated-inventory-retail-channels.md)
 
-[SDK- und Modulbibliothekupdates](e-commerce-extensibility/sdk-updates.md)
+[SDK- und Modulbibliotheksupdates](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

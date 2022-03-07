@@ -1,12 +1,10 @@
 ---
 title: Anlagenlebenszyklusstatus
 description: In diesem Thema werden Anlagenlebenszyklusstatus und Lebenszyklusmodelle in Asset Management erläutert.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetLifecycleModelStateNext, EntAssetObjectLifecycleState, EntAssetLifecycleStateUpdate, EntAssetObjectLifecycleModel
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dffedfafd9d75320accf0e27f072bab6fd51f135
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 55139c6458e569b15518f0f11f1c12c3a26cae2f26c6a2046a7ebdc1277cb144
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016551"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6722462"
 ---
 # <a name="asset-lifecycle-states"></a>Anlagenlebenszyklusstatus
 
@@ -63,9 +61,12 @@ Nachdem Sie die erforderlichen Anlagenlebenszyklusstatus erstellt haben, können
 
 5. Wählen Sie auf dem Inforegister **Lebenszyklusstatus** die Anlagenlebenszyklusstatus aus, die in das Anlagenlebenszyklusmodell einbezogen werden sollen:
 
-    - Um einen Lebenszyklusstatus für das Modell zu verwenden, wählen Sie ihn im Bereich **Verbleibende Lebenszyklusstatus** aus, und klicken Sie dann auf die Schaltfläche mit dem Pfeil nach rechts ![Nach-Rechts-Pfeil](media/15-setup-for-objects.png), um ihn in den Bereich **Ausgewählte Lebenszyklusstatus** zu verschieben.
+    - Um einen Lebenszyklusstatus für das Lebenszyklusmodell zu verwenden, wählen Sie ihn im Bereich **Verbleibende Lebenszyklusstatus** aus, und klicken Sie dann auf die Schaltfläche mit dem Pfeil nach rechts ![Nach-rechts-Pfeil,](media/15-setup-for-objects.png) um ihn in den Abschnitt **Ausgewählte Lebenszyklusstatus** zu verschieben.
     - Um alle verfügbaren Lebenszyklusstatus im Modell zu verwenden, wählen Sie die Schaltfläche **Alle verfügbaren Lebenszyklusstatus** ![Alle verfügbaren Lebenszyklusstatus](media/20-setup-for-objects.png) aus. Alle Lebenszyklusstatus werden in den Bereich **Ausgewählte Lebenszyklusstatus** verschoben.
-    - Um einen Lebenszyklusstatus aus dem Modell zu entfernen, wählen Sie ihn im Bereich **Ausgewählte Lebenszyklusstatus** aus, und klicken Sie dann auf die Schaltfläche mit dem Pfeil nach links ![Nach-Links-Pfeil](media/16-setup-for-objects.png), um ihn in den Bereich **Verbleibende Lebenszyklusstatus** zu verschieben.
+    - Um einen Lebenszyklusstatus aus dem Modell zu entfernen, wählen Sie ihn im Bereich **Ausgewählte Lebenszyklusstatus** aus, und klicken Sie dann auf die Schaltfläche mit dem Pfeil nach links ![Nach-links-Pfeil,](media/16-setup-for-objects.png) um ihn in den Abschnitt **Verbleibende Lebenszyklusstatus** zu verschieben.
 
 6. Wählen Sie **Lebenszyklusstatusaktualisierungen**, um festzulegen, welche Anlagenlebenszyklusstatus einem ausgewählten Lebenszyklusstatus folgen können.
 7. Verwenden Sie das Inforegister **Anlagenstatus**, wenn Sie Anlagen behandelt, die Sie zwecks Reparatur erhalten. Im Abschnitt **Ein-/ausgehend** können Sie Anlagenlebenszyklusstatus auswählen, um den Workflow einer Anlage anzugeben, die Sie zwecks Reparatur erhalten. Wenn Sie Kunden oder Abteilungen Anlagenausleihen anbieten, wählen Sie im Abschnitt **Ausleihe** die Lebenszyklusstatus für Anlagenausleihen aus.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

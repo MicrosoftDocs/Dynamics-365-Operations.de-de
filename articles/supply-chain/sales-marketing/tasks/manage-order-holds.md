@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: MCRHoldCodeTable, SalesTableListPage, SalesCreateOrder, SalesTable, MCRHoldCodeTrans, MCRHoldCheckOutOverride, MCRHoldCodeTable, MCRItemListCopying, MCRItemListTable, MCROMHoldList
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9caf6651813f0111b873db1769140d973f1a2e3b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4e9c91061b82b8e172d8b93e9b255d0c9f400b5b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428797"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5254988"
 ---
 # <a name="manage-order-holds"></a>Auftragssperren verwalten
 
@@ -70,3 +69,6 @@ Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen D
     - Die Aktion **Deaktivieren und übermitteln** kann nur verwendet werden, wenn Sie Callsenterfunktionen verwenden.  
 8. Klicken Sie auf **Sperren aufhaben**. Die Sperre ist nun aus dem Auftrag deaktiviert worden und aus der Liste von aktiver Sperren entfernt worden. Um alle Sperren oder ihre Teilmengen nach einem spezifischen Status anzuzeigen, ändern Sie den Wert im Feld „Anzeigen”.     
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

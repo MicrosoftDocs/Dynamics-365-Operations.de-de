@@ -2,7 +2,7 @@
 title: Externe Daten in Cashflow Planungen
 description: In diesem Thema werden die Einrichtungsschritte beschrieben, die Sie durchführen müssen, damit externe Daten eingegeben oder in Cashflow-Planungen importiert werden können.
 author: rcarlson
-ms.date: 02/16/2022
+ms.date: 12/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 23342114c25cd1b59d47aa7ce63f09de029fa690
-ms.sourcegitcommit: 465c84eb5cdc211692e2ae09b45d1400f9a315ee
+ms.openlocfilehash: 8284ccd7ac383c53960f7fd6a1333aeb0e7e6f3c
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8314707"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7969011"
 ---
 # <a name="external-data-in-cash-flow-forecasts"></a>Externe Daten in Cashflow Planungen
 
@@ -38,7 +38,7 @@ Weitere Informationen dazu, wie Cashflow-Planungen eingerichtet wird, finden Sie
 
 ## <a name="enter-external-data"></a>Externe Daten eingeben
 
-Um externe Daten für Cashflow-Planungen einzugeben und zu ändern, können Sie die Umgebung zum **Öffnen in Excel** verwenden. Wählen Sie die Schaltfläche **Externe Daten** auf der Seite des Arbeitsbereichs der **Cashflow-Planungseinstellung** und dann entweder **Externe Daten hinzufügen** oder **Vorhandene externe Daten bearbeiten** aus. Wenn die Microsoft Excel-Datei geöffnet ist, können Sie Informationen in die folgenden Felder eingeben:
+Um externe Daten für Cashflow-Planungen einzugeben und zu ändern, können Sie die Umgebung zum **Öffnen in Excel** verwenden. Wählen Sie die Schaltfläche **Externe Daten** auf der Seite **Cashflow-Planungseinstellung** und dann entweder **Externe Daten hinzufügen** oder **Vorhandene externe Daten bearbeiten** aus. Wenn die Microsoft Excel-Datei geöffnet ist, können Sie Informationen in die folgenden Felder eingeben:
 
 - **Eintragskennung** (eindeutig)
 - **Beschreibung** (optional)

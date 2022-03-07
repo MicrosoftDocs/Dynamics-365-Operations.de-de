@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 031b92f827979c01dbf0208ba21ae827fb13920b
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: 4906fa0459c12594fe0473158784d4c929d8644413091a122808b57fd27c18af
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103487"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6778481"
 ---
 # <a name="location-product-dimension-mixing"></a>Lagerplatz-Produktdimensionsmischung
 
@@ -26,11 +26,14 @@ ms.locfileid: "8103487"
 
 Die Lagerplatz-Produktdimensionsmischung ist eine Lagerplatzprofilfunktion, die bei der Verbesserung der Standortverwaltung hilft, wenn Produktvarianten oder Produkte mit Dimensionen verwendet werden, z. B. in der Modebranche. Hier können Sie entscheiden, ob Konfigurationen, Farben, Stile und Größen für ein bestimmtes Lagerplatzprofil gemischt werden können oder ob nur eine dieser Dimensionen oder eine Kombination davon an demselben Lagerplatz platziert werden kann.
 
-## <a name="turn-the-location-product-dimension-mixing-feature-on-or-off"></a>Funktion für Lagerplatz-Produktdimensionsmischung aktivieren oder deaktiveren
+## <a name="turn-on-the-location-product-dimension-mixing-feature"></a>Funktion für Lagerplatz-Produktdimensionsmischung aktivieren
 
-Um die Funktionalität zu verwenden, die in diesem Thema beschrieben wird, die Funktion *Lagerplatz-Produktdimensionsmischung* für Ihr System aktiviert werden. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Lagerplatz-Produktdimensionsmischung* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
+Bevor Sie die Lagerplatz-Produktdimensionsmischung verwenden können, muss die Funktion in Ihrem System aktiviert sein. Administratoren können mit der Einstellung [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und ggf. aktivieren. Dort wird die Funktion folgendermaßen aufgelistet:
 
-## <a name="setup"></a>Einrichtung
+- **Module:** *Lagerortverwaltung*
+- **Funktionsname:** *Lagerplatz-Produktdimensionsmischung*
+
+## <a name="setup"></a>Einstellung
 
 Jedem Standort im Lagerort muss ein Lagerplatzprofil zugeordnet sein, das die Eigenschaften des Lagerplatzes beschreibt. Daher können alle Standorte, die dasselbe Lagerplatzprofil verwenden, die Produktdimensionsmischung nach dem Einrichten ermöglichen.
 

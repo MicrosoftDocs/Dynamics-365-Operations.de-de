@@ -2,26 +2,23 @@
 title: Auto-Freigabelieferung für Crossdocking
 description: In diesem Thema wird eine Crossdockingstrategie beschrieben, mit der Sie automatisch einen Bedarfsauftrag für den Lagerort freigeben können, wenn der Produktionsauftrag, der die Bedarfsmenge liefert, als fertig gemeldet wird, sodass die Menge direkt vom Produktions-Warenabgang zum ausgehenden Lagerplatz bewegt wird.
 author: omulvad
-manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCrossDockingTemplate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: b86fe2f3ea4321dbe598233018934187ba0d713a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 74e26953fc964a3cfdee182433a017bb53fa45d62beab442b2c224e8365adef0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428502"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755953"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Auto-Freigabelieferung für Crossdocking
 
@@ -164,7 +161,7 @@ Für ein Crossdocking der Menge von Fertigerzeugnissen für den ausgehenden Lage
 8. Auf der Seite **Produktionsauftrag** im Aktivitätsbereich auf der **Produktionsauftrag**-Registerkarte in der Gruppe **Prozess** wählen Sie **Vorkalkulation** und dann **OK** aus. Der Auftrag wird vorkalkuliert und die Rohmaterialmenge wird für die Produktion reserviert.
 9. Im Aktivitätsbereich auf der **Produktionsauftrag**-Registerkarte in der Gruppe **Prozess** wählen Sie **Freigabe** und dann **OK** aus. Die Lagerortentnahmearbeit wird für die Rohmaterialien erstellt.
 10. Öffnen und überprüfen Sie die Arbeit. Wählen Sie im Aktivitätsbereich, auf der Registerkarte **Lagerort** in der Gruppe **Allgemein** die Option **Arbeitsdetails** aus. Notieren Sie die Arbeits-ID.
-11. Melden Sie sich bei der Warehouse-App an, um die Arbeit an Lagerort 51 auszuführen.
+11. Melden Sie sich bei der Warehouse Management Mobile App an, um die Arbeit an Lagerort 51 auszuführen.
 12. Gehen Sie zu **Produktion** \> **Produktionsentnahme**.
 13. Geben Sie die Arbeits-ID ein, um schließen Sie die Rohmaterialentnahme ab. 
 
@@ -179,3 +176,6 @@ Beachten Sie, dass die folgenden Ereignisse auftreten:
 - Die Freigabe für einen Lagerort wird für den verknüpften Auftrag ausgelöst.
 - Auf Grundlage der Freigabe wird die Lieferungs- und Crossdockingarbeit erstellt. Diese Arbeit weist den Lagerortoperator an, die Mengen zu entnehmen, die erforderlich sind, um die Auftragsposition zu erfüllen, und im ausgehenden Lagerplatz einzulagern, der in den Crossdockinglagerplatzrichtlinien angegeben ist.
 - Wenn die Produktionsauftragsmenge mehr ist als die Menge, die für den Auftrag erforderlich ist, wird reguläre Einlagerungsarbeit erstellt. Diese Arbeit weist den Lagerortoperator an, die Menge von Fertigerzeugnissen zu entnehmen, die nach dem Crossdocking verbleibt, und zum regulären Lagerplatz zu bewegen, gemäß den Lagerplatzrichtlinie.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

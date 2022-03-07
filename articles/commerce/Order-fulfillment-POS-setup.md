@@ -1,33 +1,29 @@
 ---
 title: Auftragserfüllung für Filialen einrichten
 description: Dieses Thema enthält eine Übersicht darüber, wie die Filialauftragserfüllung eingerichtet wird.
-author: rubencdelgado
-manager: AnnBe
+author: BrianShook
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8d6cfa0d1eba4ccb0b24839b7cc632835b17107e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ed709c2a15a2d9e1675da55fc87284127e64ba39
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965313"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779595"
 ---
-# <a name="set-up-order-fulfillment-for-stores"></a>Auftragserfüllung für Filialen einrichten
+# <a name="set-up-order-fulfillment-for-stores"></a>Einrichten von Auftragserfüllung für Shops
 
 [!include [banner](includes/banner.md)]
-
-## <a name="overview"></a>Überblick
 
 Viele Einzelhändler möchten die Auftragserfüllung optimieren, indem Sie es Filialen ermöglichen, Aufträge zu erfüllen. Durch Auftragserfüllung auf Filialebene können zu große Lagerbestände für eine bestimmte Filiale vermieden werden. Sie kann auch aus logistischer Sicht in bestimmten Fällen erforderlich sein, wenn eine Filiale zusätzliche Kapazitäten besitzt oder sich in einer geringeren Versandentfernung zum Debitoren befindet. Um dieser Anforderung zu entsprechen, ist ein vereinheitlichter Auftragserfüllungsarbeitsgang in der Verkaufsstelle verfügbar.
 
@@ -37,9 +33,9 @@ Der Auftragserfüllungsarbeitsgang in der Verkaufsstelle enthält einen einzelne
 
 ## <a name="set-up-the-order-fulfillment-operation"></a>Den Auftragserfüllungsarbeitsgang einrichten
 
-Auftragserfüllung, [Arbeitsgangskennungs-ID 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations), kann dazu verwendet werden, um auf den Arbeitsbereich für die Filialauftragserfüllung in der Verkaufsstelle zuzugreifen.
+Auftragserfüllung, [Arbeitsgangskennungs-ID 928](pos-operations.md), kann dazu verwendet werden, um auf den Arbeitsbereich für die Filialauftragserfüllung in der Verkaufsstelle zuzugreifen.
 
-Führen Sie die Schritte unter [Fügen Sie den Arbeitsgang einem Schaltflächenraster hinzu](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) durch, um anzugeben, welcher Parameter verwendet werden soll, wenn die Auftragserfüllung in der Verkaufsstelle aufgerufen werden soll. Standardmäßig wird nach Festlegung der Auftragserfüllungsarbeitsgänge die Option **Alle Aufträge** ausgewählt. Wenn er mit diesem Parameter konfiguriert wurde, werden durch den Arbeitsgang alle Auftragspositionen für die Erfüllung in der aktuellen Filiale aufgelistet. Zudem ist **Nicht ausgelieferte Bestellungen** verfügbar, was einer Schaltfläche zugewiesen und verwendet werden kann, wenn der Benutzer nur Aufträge sehen möchte, die aus der Filiale versendet werden. Schließlich gibt es **Aufträge zur Abholung**. Wenn dies in der Verkaufsstelle aufgerufen wird, werden dadurch nur Aufträge aufgelistet, die in der Filiale abgeholt werden müssen. Die verschiedenen Parameter können unterschiedlichen Schaltflächen zugewiesen werden, sodass der Benutzer verschiedene Möglichkeiten hat, die Auftragserfüllung anzuzeigen.
+Führen Sie die Schritte unter [Fügen Sie den Arbeitsgang einem Schaltflächenraster hinzu](pos-screen-layouts.md) durch, um anzugeben, welcher Parameter verwendet werden soll, wenn die Auftragserfüllung in der Verkaufsstelle aufgerufen werden soll. Standardmäßig wird nach Festlegung der Auftragserfüllungsarbeitsgänge die Option **Alle Aufträge** ausgewählt. Wenn er mit diesem Parameter konfiguriert wurde, werden durch den Arbeitsgang alle Auftragspositionen für die Erfüllung in der aktuellen Filiale aufgelistet. Zudem ist **Nicht ausgelieferte Bestellungen** verfügbar, was einer Schaltfläche zugewiesen und verwendet werden kann, wenn der Benutzer nur Aufträge sehen möchte, die aus der Filiale versendet werden. Schließlich gibt es **Aufträge zur Abholung**. Wenn dies in der Verkaufsstelle aufgerufen wird, werden dadurch nur Aufträge aufgelistet, die in der Filiale abgeholt werden müssen. Die verschiedenen Parameter können unterschiedlichen Schaltflächen zugewiesen werden, sodass der Benutzer verschiedene Möglichkeiten hat, die Auftragserfüllung anzuzeigen.
 
 ### <a name="enable-users-to-access-order-fulfillment-at-the-point-of-sale"></a>Aktivieren Sie Benutzer, um auf die Auftragserfüllung in der Verkaufsstelle zuzugreifen.
 
@@ -108,9 +104,9 @@ Standardmäßig haben Aufträge den Status **Angenommen**. Der Auftragsstatus ka
 
 - **Bearbeiten** – Wenn ein Auftragsstatus aussteht, kann er in der Verkaufsstelle bearbeitet werden. Aufträge, die bereits teilweise entnommen, verpackt oder fakturiert wurden, können nicht von der Auftragserfüllungsansicht aus bearbeitet werden.
 - **Annehmen** – Wenn **Manuell annehmen** auf der Kanalebene konfiguriert ist, müssen Positionen zuerst angenommen werden, bevor sie den Auftragserfüllungsprozess durchlaufen können.
-- **Entnehmen** – Die Entnahmeoption unterstützt mehrere Aktivitäten. Zuallererst wird durch **Entnahme** der Status der Auftragsposition aktualisiert, damit andere in der Filiale nicht versuchen, dieselbe Position zu entnehmen. Als Nächstes wird durch **Kommissionierliste drucken** eine Kommissionierliste für die ausgewählte Position bzw. Positionen ausgedruckt und es wird auch deren Status zu **Entnahme** geändert. Kommissionierlistenformate werden als Teil der Bonformate gesteuert. Weitere Informationen zum Einrichten von Bonformaten finden Sie unter [Bonvorlagen und Drucken](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing). Schließlich wird durch **Als entnommen markieren** die Position angegeben, die entnommen wurde. **Als entnommen markieren** initiiert entsprechende Lagerbuchungen im Backoffice. Entnahmeaktivitäten können für mehrere Auftragspositionen gleichzeitig über verschiedene Aufträge hinweg sowie für alle Lieferarten ausgeführt werden.
+- **Entnehmen** – Die Entnahmeoption unterstützt mehrere Aktivitäten. Zuallererst wird durch **Entnahme** der Status der Auftragsposition aktualisiert, damit andere in der Filiale nicht versuchen, dieselbe Position zu entnehmen. Als Nächstes wird durch **Kommissionierliste drucken** eine Kommissionierliste für die ausgewählte Position bzw. Positionen ausgedruckt und es wird auch deren Status zu **Entnahme** geändert. Kommissionierlistenformate werden als Teil der Bonformate gesteuert. Weitere Informationen zum Einrichten von Bonformaten finden Sie unter [Bonvorlagen und Drucken](receipt-templates-printing.md). Schließlich wird durch **Als entnommen markieren** die Position angegeben, die entnommen wurde. **Als entnommen markieren** initiiert entsprechende Lagerbuchungen im Backoffice. Entnahmeaktivitäten können für mehrere Auftragspositionen gleichzeitig über verschiedene Aufträge hinweg sowie für alle Lieferarten ausgeführt werden.
 - **Ablehnen** – Positionen oder Teilpositionen können abgelehnt werden. Dadurch können sie vom Backoffice einer anderen Filiale oder einem anderen Lagerort zugewiesen werden. Positionen können nur abgelehnt werden, wenn sie noch nicht entnommen oder verpackt wurden. Um eine Position abzulehnen die bereits entnommen oder verpackt wurde, muss vom Backoffice die Entnahme storniert und die Position wieder ausgepackt werden.
-- **Verpacken** – Die Packoption unterstützt zwei Aktivitäten: Durch **Lieferschein drucken** wird ein Lieferschein für die ausgewählten Positionen gedruckt, und durch **Als gepackt markieren** werden die Positionen als gepackt markiert und die Positionen als geliefert im Backoffice markiert. Nur Auftragspositionen die zum selben Auftrag gehören und mit derselben Lieferart können gleichzeitig verpackt werden. Lieferscheinformate werden als Teil der Bonformate gesteuert. Weitere Informationen zum Einrichten von Bonformaten finden Sie unter [Bonvorlagen und Drucken](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+- **Verpacken** – Die Packoption unterstützt zwei Aktivitäten: Durch **Lieferschein drucken** wird ein Lieferschein für die ausgewählten Positionen gedruckt, und durch **Als gepackt markieren** werden die Positionen als gepackt markiert und die Positionen als geliefert im Backoffice markiert. Nur Auftragspositionen die zum selben Auftrag gehören und mit derselben Lieferart können gleichzeitig verpackt werden. Lieferscheinformate werden als Teil der Bonformate gesteuert. Weitere Informationen zum Einrichten von Bonformaten finden Sie unter [Bonvorlagen und Drucken](receipt-templates-printing.md).
 - –**Versenden** – Durch die Aktivität „Versenden” werden ausgewählte Positionen als **Geliefert** im Backoffice markiert. Nachdem eine Position vollständig versendet wurde, wird sie nicht mehr in der Auftragserfüllungsansicht angezeigt.
 - **Abholen** – Durch die Abholungsaktivität werden die Positionen der Buchungsansicht für die Abholung hinzugefügt. Wenn es andere Positionen im Auftrag gibt, die aktuell nicht abgeholt werden, werden sie der Buchungsansicht mit der Menge null hinzugefügt. Nachdem eine Position vollständig abgeholt wurde, wird sie nicht mehr in der Auftragserfüllungsansicht angezeigt.
 
@@ -130,3 +126,6 @@ Auftragserfüllung in der Verkaufsstelle umfasst Filterung, sodass der Benutzer 
 - Erstellungsdatum
 - Lieferdatum
 - Wareneingangsdatum
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

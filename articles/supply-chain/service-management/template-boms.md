@@ -1,12 +1,10 @@
 ---
 title: Vorlagenstücklisten
 description: Mit einer Vorlagenstückliste verfügen Sie über eine standardisierte Liste von Komponenten für Serviceobjekte, die regelmäßig verwaltet werden.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 09/19/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMATemplateBOMTable
 audience: Application User
@@ -17,25 +15,23 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01cd4cf03fb0ac1a3399673097895513f7180cf1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d34502d74590595f26ba5aae78158ed893a095df
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965778"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571306"
 ---
-# <a name="template-boms"></a>Vorlagenstücklisten    
+# <a name="template-boms"></a>Vorlagenstücklisten
 
 [!include [banner](../includes/banner.md)]
-
 
 Mit einer Vorlagenstückliste verfügen Sie über eine standardisierte Liste von Komponenten für Serviceobjekte, die regelmäßig verwaltet werden. Die in der Vorlagenstückliste aufgeführten Komponenten stellen die einzelnen Unterkomponenten des Serviceobjekts dar. Indem Sie eine Vorlagenstückliste auf ein Serviceobjekt anwenden, können Sie die verfolgen, welche Unterkomponenten im Serviceobjekt ersetzt wurden.
 
 Um eine Vorlagenstückliste auf eine Servicevereinbarung oder einen Serviceauftrag anzuwenden, ordnen Sie sie einer Serviceobjektbeziehung zu.
 
-
 > [!NOTE]
-> <P>Einem Serviceobjekt kann nur eine Vorlagenstückliste zugeordnet werden.</P>
+> Einem Serviceobjekt kann nur eine Vorlagenstückliste zugeordnet werden.
 
 ## <a name="create-a-template-bom"></a>Erstellen einer Vorlagenstückliste
 
@@ -43,8 +39,8 @@ Die folgende Tabelle enthält Informationen zu den verschiedenen Methoden, die S
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -72,7 +68,6 @@ Die folgende Tabelle enthält Informationen zu den verschiedenen Methoden, die S
 </tbody>
 </table>
 
-
 ## <a name="apply-the-template-bom-to-a-service-agreement-or-service-order"></a>Wenden Sie die Vorlagenstückliste auf eine Servicevereinbarung oder einen Serviceauftrag an
 
 Die Vorlagenstückliste kann auf eine Servicevereinbarung, einen Serviceauftrag oder beides angewendet werden. Die Servicevereinbarung deckt in der Regel eine langfristige Beziehung zu einem Debitor ab. Bei dem in der Vorlagenstückliste aufgezeichnete Verlauf von Ersetzungen handelt es sich um nützliche Daten für die Servicevereinbarung.
@@ -83,7 +78,7 @@ Vorlagenstücklisten können auch auf einen Serviceauftrag angewendet werden, um
 
 Der Verlauf einer Servicestücklistenposition kann zwischen Servicevereinbarungen kopiert werden. Durch das Kopieren des Serviceverlaufs zwischen Servicevereinbarungen kann der Datensatz zu Ersetzungen für einen Artikel erhalten werden.
 
-**Beispiel**
+### <a name="example"></a>Beispiel
 
 Sie haben eine Servicevereinbarung über drei Jahre für das Auto eines Kunden eingerichtet. Während dieser Periode gewöhnt sich der Debitor an den guten Service, die das Unternehmen anbietet. Nach dem Ablauf der Vereinbarung möchte der Debitor daher eine neue Vereinbarung treffen. Sie können nun eine günstigere Vereinbarung für das Unternehmen aushandeln. Da der Datensatz ersetzter Komponenten in der Zukunft nützlich sein kann, kopieren Sie den Verlauf der Servicestückliste in die neue Vereinbarung.
 
@@ -101,26 +96,18 @@ Die Anzeige der Stücklistenpositionsdaten kann für alle Vorlagen- und Services
 
 Um Vorlagenstücklisten verwenden möchten, müssen Sie zwei Nummernkreise einrichten. Richten Sie einen Nummernkreis für die Vorlagenstückliste und einen die für die Positionsnummer des Stücklistenverlaufs ein.
 
-
 > [!NOTE]
-> <P>Nummernkreise werden in Sequenzen verwendet, um Datensätzen, die dies erfordern, Kennungen zuzuweisen. Bevor Sie einen Nummernkreis einer Vorlagenstückliste oder Positionsnummer des Stücklistenverlaufs zuweisen können, müssen Sie Nummernkreiscodes einrichten.</P>
-
+> Nummernkreise werden in Sequenzen verwendet, um Datensätzen, die dies erfordern, Kennungen zuzuweisen. Bevor Sie einen Nummernkreis einer Vorlagenstückliste oder Positionsnummer des Stücklistenverlaufs zuweisen können, müssen Sie Nummernkreiscodes einrichten.
 
 ## <a name="set-up-number-sequences"></a>Nummernkreise einrichten
 
-1.  Erstellen Sie auf der Listenseite **Nummernkreise** Nummernkreise für Vorlagenstücklisten und die Positionsnummer des Stücklistenverlaufs. 
-
-2.  Klicken Sie auf **Serviceverwaltung** \> **Einrichtung** \> **Serviceverwaltungsparameter**.
-
-3.  Klicken Sie auf **Nummernkreise**, und wählen Sie dann einen Nummernkreiscode für Nummernkreisreferenzen aus, die Sie im Formular **Nummernkreise** erstellt haben.
-
-4.  Schließen Sie das Formular, um Ihre Änderungen zu speichern.
-
+1. Erstellen Sie auf der Listenseite **Nummernkreise** Nummernkreise für Vorlagenstücklisten und die Positionsnummer des Stücklistenverlaufs.
+1. Wählen Sie **Serviceverwaltung** \> **Einrichtung** \> **Serviceverwaltungsparameter** aus.
+1. Wählen Sie **Nummernkreise** und dann einen Nummernkreiscode für Nummernkreisreferenzen aus, die Sie im Formular **Nummernkreise** erstellt haben.
+1. Schließen Sie das Formular, um Ihre Änderungen zu speichern.
 
 > [!NOTE]
-> <P>Die Positionsnummer des Stücklistenverlaufs wird verwendet, um die Buchungen im Stücklistenverlauf einem Servicevertrag oder Serviceauftrag zuzuordnen. Die Nummer wird nicht in der Benutzeroberfläche angezeigt.</P>
-
-
+> Die Positionsnummer des Stücklistenverlaufs wird verwendet, um die Buchungen im Stücklistenverlauf einem Servicevertrag oder Serviceauftrag zuzuordnen. Die Nummer wird nicht in der Benutzeroberfläche angezeigt.
 
 ## <a name="see-also"></a>Siehe auch
 
@@ -130,6 +117,4 @@ Um Vorlagenstücklisten verwenden möchten, müssen Sie zwei Nummernkreise einri
 
 [Ändern einer Servicestückliste](modify-service-bom.md)
 
- 
-
-
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

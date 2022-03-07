@@ -2,7 +2,7 @@
 title: Zurücksetzen von Data Marts FAQ
 description: In diesem Thema finden Sie Antworten auf einige häufig gestellte Fragen zum Zurücksetzen des Data Marts.
 author: jinniew
-ms.date: 02/14/2022
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 53f45f469c39f9e389763aa0daed658e5a62d377
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: 90abe1fc3e84e0a9777f3eabd790a4b7e9b509c5
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119511"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638266"
 ---
 # <a name="data-mart-resets-faq"></a>Zurücksetzen von Data Marts FAQ
 
@@ -35,9 +35,8 @@ Um sicherzustellen, dass keine alten Daten eingefügt werden, kann ein Data Mart
 
 Wenn eine oder mehrere der folgenden Aussagen auf Ihre Situation zutreffen, kann Ihre Organisation von einem Data Mart-Reset profitieren:
 
-- **Die Anwendungsdatenbank wurde wiederhergestellt**
-- **Sie haben ein Support-Ticket geöffnet**: Ein Support-Techniker hat Sie angewiesen, den Data Mart im Rahmen einer Problembehebung zurückzusetzen.
-- **Großer Prozentsatz veralteter Datensätze**: Veraltete Datensätze allein rechtfertigen nicht unbedingt, einen Data Mart zurückzusetzen. Ein hoher Prozentsatz an veralteten Daten kann die Gesamtleistung der Berichtgenerierung und Integration beeinträchtigen und zusätzlichen Speicherplatz in der Datenbank beanspruchen. Wir empfehlen, dass Sie einen Data Mart zurücksetzen, um die veralteten Daten zu entfernen, wenn mehr als 80 % veraltete Daten im Data Mart vorhanden sind.
+- Die Anwendungsdatenbank wurde wiederhergestellt.
+- Sie haben ein Support-Ticket geöffnet, und ein Support-Techniker hat Sie angewiesen, den Data Mart als Teil einer Fehlerbehebung zurückzusetzen.
  
 > [!NOTE]
 > Der Vorgang des Zurücksetzens eines Data Mart wird von der Anzahl der Hauptbuch- und Budgetbuchungen in Ihrer Datenbank beeinflusst. Abhängig von der Anzahl der Transaktionen in Ihrem System kann ein Zurücksetzen des Data Mart in nur 15 Minuten abgeschlossen sein oder bis zu vier Stunden dauern. Sollte Ihr Zurücksetzen jedoch länger als vier Stunden dauern, empfehlen wir Ihnen, sich an den Support zu wenden.
@@ -46,12 +45,13 @@ Wenn eine oder mehrere der folgenden Aussagen auf Ihre Situation zutreffen, kann
 
 Im Folgenden sind einige der Umstände aufgeführt, unter denen wir nicht empfehlen, den Data Mart zurückzusetzen:
 
-- Sie haben Leistungsprobleme bei der Datenintegration.
+- Sie haben Leistungsprobleme, die mit der Datensynchronisierung zusammenhängen.
 - Sie haben ein wiederkehrendes Rücksetzungsmuster aus einem der folgenden Gründe:
 
-    - **Fehlende oder unerwartete Daten im Bericht**: Wenn Sie feststellen, dass Daten fehlen, eröffnen Sie ein Support-Ticket bei Microsoft, um Ihr Berichtsformat und mögliche Probleme bei der Datensynchronisation zu überprüfen.
+    - **Fehlende Daten** – Wenn Sie feststellen, dass Daten fehlen, eröffnen Sie ein Support-Ticket bei Microsoft, um Ihr Berichtsformat und mögliche Probleme bei der Datensynchronisation zu überprüfen.
     - **Hängengebliebener Integrationszustand**
-   
+    - **Veraltete Datensätze** – Veraltete Datensätze allein rechtfertigen nicht unbedingt einen Data Mart Reset. Wenn Sie ein großes Dataset haben, dauert es einige Zeit, bis der Rücksetzungsprozess ausgeführt wird, aber es ist unwahrscheinlich, dass er zu einer Verbesserung führt.
+
 ## <a name="if-i-reset-the-data-mart-will-i-lose-reports-that-ive-already-designed"></a>Verliere ich Berichte, die ich bereits erstellt habe, wenn ich den Data Mart zurücksetze?
 
 Nein. Ihre Berichte sind in SQL-Tabellen gespeichert, die von einem Data Mart-Reset nicht betroffen sind. Wenn Sie befürchten, dass von Ihnen entworfene Berichte verloren gehen, können Sie die Entwürfe, die Sie nicht verlieren möchten, sichern. Um Designs zu sichern, öffnen Sie den Report Designer und gehen Sie zu **Firma \> Firmen \> Bausteine \> Export**.

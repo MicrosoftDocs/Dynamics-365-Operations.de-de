@@ -1,28 +1,28 @@
 ---
 title: Finanzberichterstellung
-description: Die Finanzberichterstellung ermöglicht Finanz- und Geschäftsexperten Finanzaufstellungen zu erstellen, zu verwalten, bereitzustellen und anzuzeigen. Es bewegt sich über die traditionellen Berichtseinschränkungen hinaus, um effizient verschiedene Arten von Berichten zu entwerfen.
+description: Die Finanzberichterstellung ermöglicht Finanz- und Geschäftsexperten Finanzaufstellungen zu erstellen, zu verwalten, bereitzustellen und anzuzeigen.
 author: aprilolson
-manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinanicalReportingSetup
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 68813
+ms.custom:
+- "68813"
+- intro-internal
 ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7da0d1aa4bb10658c66fce996e00b5714125f100
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 20e2b4cb2b68500eeee06f1be5d95fc2cbab246f43b5e4a0e83eca7a8be53005
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682695"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769873"
 ---
 # <a name="financial-reporting"></a>Finanzberichterstellung
 
@@ -96,3 +96,6 @@ Die folgenden Komponenten der Finanzberichterstellung erleichtern das Erstellen,
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 [Finanzberichte generieren](generate-financial-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

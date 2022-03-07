@@ -2,28 +2,25 @@
 title: Bezugsprinzipien
 description: Dieses Thema beschreibt die vier Bezugsprinzipien für den Rohmaterialverbrauch.
 author: johanhoffmann
-manager: tfehr
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgShopSupervisorReleaseOrders
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9f7546b70ddef30d88a79b00fe31d4e82d9bfb9b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7f644f26098bf7ac7d13292d6fbabb09a488d61e29fcd5fbd3cf0d261f0529bc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428638"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6768022"
 ---
 # <a name="flushing-principles"></a>Bezugsprinzipien
 
@@ -33,7 +30,7 @@ Die Bezugsprinzipien reflektieren verschiedene Verbrauchsstrategien für Rohmate
 
 Vor dem Materialverbrauch werden die Materialien an den Eingangsstandort transportiert. Die folgende Abbildung zeigt den Zykluszählprozess.
 
-[![scenario4a](./media/scenario4a.png)](./media/scenario4a.png)
+[![scenario4a.](./media/scenario4a.png)](./media/scenario4a.png)
 
 1. Materiallagerort
 2. Rohmaterialentnahme
@@ -63,3 +60,6 @@ Das Bezugsprinzip Fertigstellung zeigt an, dass Material automatisch verbraucht 
 
 ### <a name="available-at-location"></a>Am Lagerplatz verfügbar
 Das Bezugsprinzip Am Lagerplatz verfügbar zeigt an, dass das Material automatisch verbraucht wird, wenn es als für die Produktion entnommen registriert wird. Das Material wird als vom Standort entnommen registriert, wenn die Arbeit für die Rohmaterialentnahme abgeschlossen ist, oder wenn das Material am Produktionseingangsstandort zur Verfügung steht und die Materialposition für das Lager freigegeben wird. Die Entnahmeliste, die während des Prozesses erzeugt wird, wird in einem Chargenauftrag gebucht. Dieses Prinzip ist beispielsweise relevant, wenn Sie sehr viele Entnahmeaktivitäten für einen Produktionsauftrag haben. In diesem Fall müssen Sie die Entnahmeliste nicht manuell aktualisieren, und Sie können eine aktuelle Ansicht des RIF-Saldos erhalten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

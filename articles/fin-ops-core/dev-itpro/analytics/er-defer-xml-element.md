@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: b804e840b98321ee9e509ea483b360ec42d12880
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: f89c671ae012907a4c3e07c09bdc867c1d67a101
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323714"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348068"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>Verzögern der Ausführung von XML-Elementen in ER-Formaten
 
@@ -28,7 +28,7 @@ ms.locfileid: "8323714"
 
 ## <a name="overview"></a>Übersicht
 
-Sie können den Arbeitsgangdesigner des Frameworks für die [Elektronische Berichterstellung (EB)](general-electronic-reporting.md) für das [Konfigurieren](./tasks/er-format-configuration-2016-11.md) der Formatkomponente einer EB-Lösung verwenden, die zum Generieren ausgehender Dokumente im XML-Format verwendet wird. Die hierarchische Struktur der konfigurierten Formatkomponente besteht aus Formatelementen verschiedener Typen. Diese Formatelemente werden verwendet, um generierte Dokumente zur Laufzeit mit den erforderlichen Informationen zu füllen. Wenn Sie ein ER-Format ausführen, werden die Formatelemente standardmäßig in der Reihenfolge ausgeführt, in der sie in der Formathierarchie dargestellt werden: einzeln nacheinander, von oben nach unten. Zur Entwurfszeit können Sie jedoch die Ausführungsreihenfolge für alle XML-Elemente der konfigurierten Formatkomponente ändern.
+Sie können den Arbeitsgangdesigner des Frameworks für [Elektronische Berichterstattung (ER)](general-electronic-reporting.md) für das [Konfigurieren](./tasks/er-format-configuration-2016-11.md) der [Formatkomponente](general-electronic-reporting.md#FormatComponentOutbound) einer ER-Lösung verwenden, die zum Generieren ausgehender Dokumente im XML-Format verwendet wird. Die hierarchische Struktur der konfigurierten Formatkomponente besteht aus Formatelementen verschiedener Typen. Diese Formatelemente werden verwendet, um generierte Dokumente zur Laufzeit mit den erforderlichen Informationen zu füllen. Wenn Sie ein ER-Format ausführen, werden die Formatelemente standardmäßig in der Reihenfolge ausgeführt, in der sie in der Formathierarchie dargestellt werden: einzeln nacheinander, von oben nach unten. Zur Entwurfszeit können Sie jedoch die Ausführungsreihenfolge für alle XML-Elemente der konfigurierten Formatkomponente ändern.
 
 Durch Aktivieren der Option <a name="DeferredXmlElementExecution"></a>**Verzögerte Ausführung** für ein XML-Element im konfigurierten Format können Sie die Ausführung des Elements verzögern (hinausschieben). In diesem Fall wird das Element erst ausgeführt, wenn alle anderen Elemente des übergeordneten Elements ausgeführt wurden.
 

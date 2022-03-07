@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, InventItemGTIN, UnitOfMeasureLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9ab7d28469b7b5218b3aaa62449279ebf9b8ea9b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0fc95d34125f3e1d9b07339d4134a4a974b3fcbf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428690"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5216032"
 ---
 # <a name="enter-the-gtin-code-for-a-product"></a>GTIN-Code für ein Produkt eingeben
 
@@ -42,3 +41,6 @@ GTIN-Codes werden von der GS1-Organisation zugewiesen. In diesem Beispiel geben 
 11. Geben Sie im Feld "GTIN" einen Wert ein.
 12. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

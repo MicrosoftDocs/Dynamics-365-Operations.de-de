@@ -2,16 +2,13 @@
 title: Physischen Wert einbeziehen
 description: Verwenden Sie das Kontrollkästchen "Physischen Wert einbeziehen"auf dem Inforegister "Lagermodell" im Formular "Artikelmodellgruppen", um anzugeben, ob physisch aktualisierte Buchungen in der Berechnung des laufenden Durchschnittseinstandspreises für einen Artikel berücksichtigt werden sollen.
 author: AndersGirke
-manager: tfehr
 ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 79033
 ms.assetid: 1928c145-bf82-436d-87ca-e7a173e31923
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6e70a40b15bf08d88958cbf3ee3e82ed63e7a48
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 16ab5ecc74d41610098bf927fc4768bc216e42f4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428682"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816675"
 ---
 # <a name="include-physical-value"></a>Physischen Wert einbeziehen
 
@@ -60,3 +57,6 @@ Bei der Buchung eines Auftrags wird der Einstandspreis mit EUR 10,00 gebucht, da
 
 > [!NOTE]
 > Wenn Sie zum Vergleich für diese Position das Kontrollkästchen **Physischen Wert** einbeziehen aktivieren, beträgt der gebuchte Kostenbetrag bei der Buchung eines Kundenauftrags USD 12,00.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

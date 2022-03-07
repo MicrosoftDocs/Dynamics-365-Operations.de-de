@@ -1,26 +1,24 @@
 ---
 title: Eine wiederholte Bestellung erstellen
 description: Dieses Thema zeigt Ihnen, wie man eine Wiederholungsbestellung (PO) erstellt, indem Positionen von früheren Bestelldokumenten zu einer neuen Bestellung oder einer vorhandenen Bestellung kopiert werden.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, PurchCopying
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 65eb801fb363ce2484dcce4d086d1b2b5ad3388f
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3af29594326501359e4722b92d6c5235cf25af9c
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017341"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569384"
 ---
 # <a name="create-a-repeat-purchase-order"></a>Eine wiederholte Bestellung erstellen
 
@@ -69,3 +67,6 @@ Anstatt einen gesamten Auftrag zu kopieren, ist es üblicher, eine neue Bestellu
 4. Wählen Sie die Position für die gewünschte Bestellung aus. Beachten Sie, dass die einzelne Auftragsposition, die auf dieser Bestellung ist, ebenfalls ausgewählt ist.  
 5. Wählen Sie **OK**. Die zusätzliche Auftragsposition ist Ihrer Bestellung hinzugefügt worden.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

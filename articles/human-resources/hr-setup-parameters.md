@@ -1,52 +1,152 @@
 ---
-title: Personalverwaltungsparameter konfigurieren
-description: Die Einstellungen einiger Personalverwaltungsparameter werden über Unternehmen freigegeben, während die Einstellungen anderer Parameter unternehmensspezifisch sind. In diesem Artikel wird beschrieben, wie unternehmensspezifische Personalverwaltungsparameter eingerichtet werden.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+title: Parameter in Human Resources konfigurieren
+description: Dieses Thema erklärt, wie Sie firmenspezifische Parameter in Dynamics 365 Human Resources festlegen.
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HRMParameters, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bac50c5f302797e28df2bc792893c8a682899a93
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fd9bb907f95ba4c368871a470ca9b2bc807646ee
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418619"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771434"
 ---
-# <a name="configure-human-resources-parameters"></a>Personalverwaltungsparameter konfigurieren
+# <a name="configure-human-resources-parameters"></a>Parameter in Human Resources konfigurieren
 
-Die Einstellungen einiger Personalverwaltungsparameter (HR) werden über Unternehmen freigegeben, während die Einstellungen anderer Parameter unternehmensspezifisch sind. In diesem Artikel wird beschrieben, wie unternehmensspezifische Personalverwaltungsparameter eingerichtet werden.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Zwei Seiten werden verwendet, um Personalverwaltungsparameter (HR-Parameter) festzulegen. Für Parameter, die innerhalb des Unternehmens freigegeben werden, verwenden Sie die Seite **Freigegeben Parameter für Personalverwaltung**. Für Parameter, die unternehmensspezifisch sind (das heißt, die Einstellungen beziehen sich auf ein einzelnes Unternehmen), verwenden Sie die Seite **Personalverwaltungsparameter**. Auf der Seite **Personalverwaltungsparameter** sind die Einstellungen in sechs Registerkarten unterteilt:
+Die Einstellungen einiger Human Resources-Parameter sind firmenübergreifend, während die Einstellungen anderer Parameter firmenspezifisch sind. In diesem Thema wird erklärt, wie Sie firmenspezifische Human Resources-Parameter festlegen.
 
--   Allgemein
--   Personalbeschaffung - Dies ist nicht in Dynamics 365 Human Resourcesenthalten
--   Vergütung
--   Nummernkreise
--   Family and Medical Leave Act (FMLA)
--   Mitarbeiter-Self-Service
+Zum Festlegen der Human Resources-Parameter werden zwei Seiten verwendet. Für Parameter, die innerhalb des Unternehmens freigegeben werden, verwenden Sie die Seite **Freigegeben Parameter für Personalverwaltung**. Für Parameter, die unternehmensspezifisch sind (das heißt, die Einstellungen beziehen sich auf ein einzelnes Unternehmen), verwenden Sie die Seite **Personalverwaltungsparameter**.
 
-Jede Registerkarte enthält Informationen, die sich auf ein einzelnes Unternehmen beziehen. Die Einstellungen auf der Registerkarte **Allgemein** definieren die Darstellung von Informationen zu Abwesenheitszeiten, Verletzung und Krankheit und Neueinstellungen. Die Einstellungen in dieser Registerkarte können auch mehrere Standardeingaben definieren, die angezeigt werden, während Sie arbeiten. Mit dieser Registerkarte können Sie eine Farbe für offene Abwesenheitsbuchungen auswählen, die Formatvorlage für Berichte definieren, die Integration zwischen Trainingskursen und der Abwesenheitserfassung aktivieren und den Abwesenheitscode währen, der für die Steuerung dieser Integration verwendet wird. Sie können auch angeben, wie lange Verletzungs- und Krankheitsfallvorfälle gehalten werden sollen und die standardmäßige Kennnummer angeben, die angezeigt wird, wenn eine neue Arbeitskraft eingestellt wird. 
+![Gehen Sie zu Personalverwaltungsparameter.](./media/hr-employee-self-service-human-resources-parameters.png)
 
-Die Einstellungen auf der Registerkarte **Personalbeschaffung** definieren die Dokumenttypen, die für die Korrespondenz verwendet wird, die automatisch an Bewerber gesendet wird und das Personalbeschaffungsprojekt, das für unaufgeforderte Bewerbungen verwendet wird (Bewerbungen, die nicht für ein bestimmtes Personalbeschaffungsprojekt sind). Die Periode, die für die Personalbeschaffungsprojektfälligkeit definiert wird, bestimmt die Personalbeschaffungsprojekte, die auf der Kachel im Arbeitsbereich **Fälligkeitsdatum-Projekte** **Einstellungsverwaltung** eingeschlossen wird. Die Periode, die für die Bewerbungsfristwarnung definiert ist, wird verwendet, um Personalbeschaffungsprojekte, deren Bewerbungsfrist demnächst abläuft im Arbeitsbereich auf der Kachel **Personalbeschaffung** **Bewerbungsfrist läuft demnächst ab** anzuzeigen. 
+Auf der Seite **Personalverwaltungsparameter** sind die Einstellungen in sechs Registerkarten unterteilt:
 
-Die Einstellungen auf der Registerkarte fest **Vergütung**, ob Benutzer müssen bestätigen, dass sie die Informationen für einen festen oder variablen Vergütungsplan speichern möchten. Wenn Sie das **Speicherprüfung aktivieren**-Kontrollkästchen aktivieren, wenn immer dieses Benutzer eine Seite Kompensation-zugeordnete schließen, erhalten diese eine Meldung, der Frage angezeigt, ob sie den Datensatz gespeichert werden soll. In einigen Seiten innerhalb der Vergütungsverwaltung können die Informationen von den Benutzern nicht gelöscht werden. Indem der Benutzer gefragt wird, ob er die Informationen speichern möchte, können Sie die Menge an Informationen verringern, die gespeichert werden, können aber später nicht mehr gelöscht werden. Wenn das Kontrollkästchen **Validierung aktivieren** deaktiviert ist, werden Datensätze immer sofort gespeichert, möglicherweise bevor der Benutzer dazu bereit ist. Wenn Sie die Leistungsverwaltung nutzen, können Sie über die Registerkarte **Vergütung** ein Bewertungsmodell auswählen, das beim Bewerten der Leistung anstelle des Modells verwendet wird, das Vergütungsplänen zugewiesen ist. 
+- **Allgemeines**
+- **Rekrutierung** (diese Registerkarte ist nicht in Dynamics 365 Human Resources enthalten)
+- **Kompensation**
+- **Nummernkreise**
+- **FMLA**
+- **Mitarbeiter-Self-Service**
+- **Manager-Self-Service**
+- **Vergütungsverwaltung**
+- **Beurlaubung und Abwesenheit**
+- **Zahlungsmethoden**
 
-### <a name="previously-released-functionality"></a>Bereits freigegebene Funktionen
+Jede Registerkarte enthält Informationen, die sich auf ein einzelnes Unternehmen beziehen.
 
-Die Einstellungen in der Registerkarte **Zahlensequenz** bestimmt die Sequenzen, die verwendet werden, um Elementen in der Personalverwaltung IDs zuzuweisen, wie Bewerbungen, Abwesenheitserfassungen, Vergütungsprozessergebnisse, Fallnummern, Kurse und Kursagenden. Um Nummernsequenzreferenzen und - codes zu verwalten, verwenden Sie die Seite **Nummernsequenzliste** (Klicken Sie **Organisationsverwaltung** &gt; **Nummernsequenzen** &gt; **Nummernsequenzen**) an.
+## <a name="general"></a>Allgemeines
+
+Die Einstellungen auf der Registerkarte **Allgemein** definieren die Darstellung von Informationen zu Abwesenheitszeiten, Verletzung und Krankheit und Neueinstellungen. Die Einstellungen in dieser Registerkarte können auch mehrere Standardeingaben definieren, die angezeigt werden, während Sie arbeiten. Auf dieser Registerkarte können Sie insbesondere:
+
+- Eine Farbe auswählen, die auf offene Transaktionen zur Abwesenheit angewendet werden soll.
+- die Formatvorlage für die Berichte festlegen.
+- die Integration zwischen Schulungskursen und Abwesenheitsregistrierung aktivieren.
+- Den Abwesenheitscode auswählen, der zur Steuerung dieser Integration verwendet wird.
+- Geben Sie an, wie lange Fälle von Verletzungen und Krankheiten aufbewahrt werden sollen.
+- Legen Sie die Standard-Identifikationsnummer fest, die angezeigt wird, wenn eine neue Arbeitskraft eingestellt wird.
+- Geben Sie das Datum an, das zur Berechnung der Dienstjahre verwendet wird. 
+
+![Registerkarte „Allgemeines“.](./media/hr-setup-parameters-general.png)
+
+## <a name="recruitment"></a>Personalbeschaffung
+
+Die Einstellungen auf der Registerkarte **Rekrutierung** legen die Dokumenttypen fest, die für die Korrespondenz verwendet werden, die automatisch an Bewerber gesendet wird. Sie können auch das Rekrutierungsprojekt angeben, das für Spontanbewerbungen verwendet wird.
+
+Die Periode, die für die **Personalbeschaffungsprojektfälligkeit** definiert wird, bestimmt die Personalbeschaffungsprojekte, die auf der Kachel **Fälligkeitsdatum-Projekte** im Arbeitsbereich **Einstellungsverwaltung** eingeschlossen wird. Die Periode, die für die Bewerbungsfristwarnung definiert ist, wird verwendet, um Personalbeschaffungsprojekte, deren Bewerbungsfrist demnächst abläuft im Arbeitsbereich **Personalbeschaffung** auf der Kachel **Bewerbungsfrist läuft demnächst ab** anzuzeigen.
+
+Weitere Informationen zur Rekrutierung finden Sie unter [Bewerbung von Kandidaten](hr-personnel-recruit.md).
+
+## <a name="compensation"></a>Kompensation
+
+In Dynamics 365 Finance legen die Einstellungen auf der Registerkarte **Vergütung** fest, ob Benutzer bestätigen müssen, dass sie Informationen für einen festen oder variablen Vergütungsplan speichern wollen. Wenn Sie **Speichervalidierung aktivieren** wählen, erhalten Benutzer beim Schließen einer vergütungsbezogenen Seite eine Meldung, die sie fragt, ob sie den Datensatz speichern wollen. Einige Seiten im Vergütungsmanagement erlauben es Benutzern nicht, Informationen zu löschen. Indem Sie Benutzer auffordern, zu bestätigen, dass sie Informationen speichern möchten, können Sie möglicherweise die Menge der Informationen begrenzen, die gespeichert werden, aber später nicht gelöscht werden können. Wenn Sie **Speichervalidierung aktivieren** deaktivieren, werden Datensätze sofort gespeichert, möglicherweise bevor der Benutzer dazu bereit ist. Wenn Sie das Leistungsmanagement verwenden, können Sie auf der Registerkarte **Vergütung** auch ein Bewertungsmodell auswählen, das anstelle des Modells, das den Vergütungsplänen zugeordnet ist, bei der Bewertung der Leistung verwendet wird.
+
+In Human Resources können Sie auf der Registerkarte **Vergütung** wählen, ob Sie den Zugriff auf Vergütungspläne beschränken und eine Standardwährung festlegen wollen.
+
+Weitere Informationen über Vergütungen finden Sie unter [Übersicht über Vergütungspläne](hr-compensation-overview.md).
+
+![Registerkarte „Vergütung“.](./media/hr-setup-parameters-compensation.png)
+
+## <a name="number-sequences"></a>Nummernkreise
+
+Die Einstellungen auf der Registerkarte **Nummernkreis** legen die Sequenzen fest, mit denen Artikeln in Human Resources automatisch IDs zugewiesen werden, z.B:
+
+- Bewerbungen
+- Abwesenheitserfassungen
+- Ergebnisse des Vergütungsprozesses
+- Fallnummern
+- Kurse
+- Kurs-Agenden
+
+Um Nummernkreis-Referenzen und -Codes zu pflegen, verwenden Sie die Listenseite **Nummernkreise** (wählen Sie **Organisationsverwaltung > Nummernkreise > Nummernkreise**).
+
+Weitere Informationen finden Sie unter [Übersicht über Nummernkreise](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 > [!NOTE]
-> Die Anzahl der gearbeiteten Stunden kann 1,250 Stunden und eine Beschäftigungsdauer von 12 Monate nicht überschreiten. Diese maximalen Werte sind in Übereinstimmung mit dem Bundesgesetz in den USA festgelegt. Schließlich bestimmen die Einstellungen auf der Registerkarte **Mitarbeiter-Self-Service** die Informationen, die ein Manager im Auftrag der Angestellter eingeben kann.
+> Die Anzahl der gearbeiteten Stunden kann 1,250 Stunden und eine Beschäftigungsdauer von 12 Monate nicht überschreiten. Diese maximalen Werte sind in Übereinstimmung mit dem Bundesgesetz in den USA festgelegt.
+
+![Registerkarte „Nummernkreise“.](./media/hr-setup-parameters-number-sequences.png)
+
+## <a name="fmla"></a>FMLA
+
+Auf der Registerkarte FMLA legen Sie die FMLA-Berechtigungsvoraussetzungen und die FMLA-Anspruchsstunden fest. Weitere Informationen finden Sie unter [Urlaub- und Abwesenheitsparameter konfigurieren](hr-leave-and-absence-parameters.md).
+
+![Registerkarte FMLA.](./media/hr-setup-parameters-fmla.png)
+
+## <a name="employee-self-service"></a>Mitarbeiter-Self-Service
+
+Die Einstellungen auf der Registerkarte **Mitarbeiter-Self-Service** beeinflussen, wie der **Mitarbeiter-Self-Service** den Mitarbeitern erscheint. Auf dieser Registerkarte können die folgenden Aufgaben ausgeführt werden:
+
+- Einen Namen für den Arbeitsbereich des **Mitarbeiter-Self-Service** eingeben
+- auswählen, welche Informationen ein Manager für Mitarbeiter eingeben kann
+- Nützliche Links für Mitarbeiter hinzufügen
+- Mitarbeitern das Hinzufügen oder Bearbeiten von geschäftlichen Kontaktdetails verbieten. Weitere Informationen finden Sie unter [Bearbeiten von persönlichen Informationen einschränken](hr-employee-self-service-restrict-editing.md).
+
+Weitere Informationen zum Festlegen des **Mitarbeiter-Self-Service** finden Sie unter [Übersicht über den Mitarbeiter- und Manager-Self-Service](hr-employee-manager-self-service-overview.md).
+
+![Registerkarte Mitarbeiter-Self-Service.](./media/hr-setup-parameters-employee-self-service.png)
+
+## <a name="manager-self-service"></a>Manager-Self-Service
+
+Die Einstellungen auf der Registerkarte **Manager-Self-Service** beeinflussen, was Manager im **Manager-Self-Service** sehen. Auf dieser Registerkarte können Sie die folgenden Optionen konfigurieren:
+
+- Der Bereich für auslaufende Datensätze
+- Informationen, die Manager in auslaufenden Datensätzen sehen können
+- Ob Manager offene Positionen für erweiterte Berichte anzeigen können
+- Ansichten von auslaufenden Arbeitskräften
+- Nützliche Links für Manager
+
+Weitere Informationen zum Einrichten des **Manager-Self-Service** finden Sie unter [Übersicht über den Mitarbeiter- und Manager-Self-Service](hr-employee-manager-self-service-overview.md).
+
+![Registerkarte Manager-Self-Service.](./media/hr-setup-parameters-manager-self-service.png)
+
+## <a name="benefits-management"></a>Vorteilsverwaltung
+
+Auf der Registerkarte **Vorteilsverwaltung** können Sie E-Mail-Optionen für den die Vorteilsverwaltung konfigurieren. Informationen zum Einrichten und Verwenden der Vorteilsverwaltung finden Sie unter [Übersicht zur Vorteilsverwaltung](hr-benefits-management-overview.md).
+
+![Registerkarte „Vorteilsverwaltung“.](./media/hr-setup-parameters-benefits-management.png)
+
+## <a name="leave-and-absence"></a>Beurlaubung und Abwesenheit
+
+Informationen zum Festlegen und Verwenden von Urlaub und Abwesenheit finden Sie unter [Übersicht über Urlaub und Abwesenheit](hr-leave-and-absence-overview.md).
+
+## <a name="payment-methods"></a>Zahlungsmethoden
+
+Auf der Registerkarte **Zahlungsmethoden** können Sie die von Ihrer Organisation unterstützten Zahlungsmethoden auswählen. Weitere Informationen zum Konfigurieren von Vergütungen finden Sie unter [Übersicht über Vergütungspläne](hr-compensation-overview.md).
+
+![Registerkarte „Zahlungsmethoden“.](./media/hr-setup-parameters-payment-methods.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

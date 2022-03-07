@@ -2,16 +2,13 @@
 title: Optionen zur Sperrung von Rabatten für Einzelhandelsprodukte
 description: Es gibt verschiedene Ursachen, warum Einzelhändler mehrere Produkte nicht als ermäßigt anzeigen wollen, entweder während einer Aktion oder während des Verkaufs am Point-of-Sale.
 author: jblucher
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailPeriodicDiscount
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 85183
 ms.assetid: e8c5a24f-7edd-4fd6-af80-5e0ac9f03127
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 6a683ffce487dc4388711ad160c2e8dc55a690dd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f808eb51de30eb8000cfc33ba0683bdac0709051
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412495"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352251"
 ---
 # <a name="options-for-preventing-discounts-for-retail-products"></a>Optionen zur Sperrung von Rabatten für Einzelhandelsprodukte
 
@@ -40,4 +37,7 @@ Die folgenden Optionen, die auf der Registerkarte **Commerce** aus freigegebenen
 > [!NOTE]
 > Hinweis: Diese Einstellungen schränken nicht den Preisüberschreibungsarbeitsgang ein, da dieses den Basispreis festlegt und Rabatt nicht behandelt werden. .
 
-[![Rabattfeld verhindern](./media/prevent-discounts.png)](./media/prevent-discounts.png)
+[![Rabattfeld verhindern.](./media/prevent-discounts.png)](./media/prevent-discounts.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

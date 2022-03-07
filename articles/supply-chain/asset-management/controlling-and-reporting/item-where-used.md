@@ -1,12 +1,10 @@
 ---
 title: Artikelverwendungsort
 description: In diesem Thema erfahren Sie, wie Sie sich einen Überblick darüber verschaffen können, wo ein Artikel im Asset Management verwendet wird.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetItemWhereUsed, EntAssetItemWhereUsedCalculate
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: db0932c5a52030c1a7f0411163aee120e2173ca0
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 262a5a9d83767599f6e15183d6afcacf4b5901fe
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021138"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808639"
 ---
 # <a name="item-where-used"></a>Artikelverwendungsort
 
@@ -70,3 +68,6 @@ Im nachfolgenden Screenshot finden Sie ein Beispiel für eine Artikelverwendungs
 
 ![Beispiel einer Artikelverwendungsort-Berechnung](media/12-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

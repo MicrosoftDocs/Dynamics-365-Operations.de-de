@@ -2,9 +2,11 @@
 title: Ausgleichen einer teilweisen Kreditorenzahlung und Ausgleichen der vollständigen Zahlung vollständig vor dem Skontodatum
 description: Dieser Artikel führt Sie durch ein Szenario, in dem Teilzahlungen für eine Kreditorenrechnung vorgenommen werden, und ein Skonto abgezogen wird.
 author: abruer
+manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 46d5025af229c9002967973a0d897708cd3d67dd7d22d887cc611c5c8213d2bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1aaedddae59b1a4883ac737d30436d8d7268103f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737064"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979412"
 ---
 # <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Ausgleichen einer teilweisen Kreditorenzahlung und Ausgleichen der vollständigen Zahlung vollständig vor dem Skontodatum
 
@@ -139,6 +141,3 @@ April bucht diese Zahlungserfassung und prüft die Kreditorentransaktionen auf d
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

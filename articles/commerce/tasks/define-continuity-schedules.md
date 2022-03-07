@@ -2,27 +2,24 @@
 title: " Anschlusszeitpläne definieren"
 description: In diesem Thema lernen Sie das Einrichten eines Anschlussprogramms kennen (auch als wiederkehrende Aufträge bezeichnet).
 author: josaw1
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: MCRContinuitySchedule, EcoResProductDetailsExtended
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 06fd1e23ad84fdc5e94e309717d5a96fbff45035
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8414377ddec0e001f003f842866725eb58bd75a3
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412610"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791606"
 ---
 # <a name="define-continuity-schedules"></a> Anschlusszeitpläne definieren
 
@@ -64,3 +61,6 @@ In diesem Thema lernen Sie das Einrichten eines Anschlussprogramms kennen (auch 
     * Wenn dieser Artikel in einem Callcenter verkauft wird, wird über das ausgewählte Anschlussprogramm eine zusätzliche Geschäftslogik angewendet.  
 7. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

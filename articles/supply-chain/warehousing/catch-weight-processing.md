@@ -2,31 +2,27 @@
 title: Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
 description: In diesem Thema wird beschrieben, wie Arbeitsvorlagen und Lagerplatzrichtlinien verwendet werden, um festzustellen, wie und wo Arbeit am Lagerort ausgeführt wird.
 author: perlynne
-manager: tfehr
 ms.date: 08/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench
+ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench, WHSCatchWeightTagRegistration, WHSCatchWeightTagFullDimDiscrepancies, WHSCatchWeightTagChangeWeightDropDownDialog, WHSCatchWeightLinkWorkLineTagDropDownDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 710446db7746ed3cd3fb9754caeaa15fd2f76641
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 830e05db47e2e2d3bb5970869bc395cfa73ad603
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429064"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087369"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
 
 [!include [banner](../includes/banner.md)]
-
 
 ## <a name="feature-exposure"></a>Funktionsbereitstellung
 
@@ -44,7 +40,7 @@ Bevor Sie das Produkt in der Lagerortverwaltung verwenden können, müssen Sie e
 - Richten Sie eine Einheitsnummernkreisgruppe ein, in der die Artikelgewichtseinheit als niedrigste Lagermengeneinheit (SKU) definiert wird.
 - Richten Sie eine Artikelgewichtsartikel-Handhabungsrichtlinie ein.
 
-Weitere Informationen finden Sie unter [Einrichten und Verwalten von Artikelgewichtsartikeln](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-catch-weight-items).
+Weitere Informationen finden Sie unter [Einrichten und Verwalten von Artikelgewichtsartikeln](/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-catch-weight-items).
 
 ## <a name="transaction-adjustments"></a>Transaktionsregulierungen
 
@@ -53,7 +49,7 @@ Da das Gewicht des Bestands bei Ankunft am Lagerort vom Gewicht des Bestands bei
 > [!NOTE]
 > Die Aktivität des Mobilgeräts löst die Transaktionsanpassungen nur aus, wenn die ausgehende Gewichtsabweichungsmethode der Richtlinie zur Handhabung von Gegenständen mit Artikelgewicht **Gewichtsabweichung zulassen** lautet.
 
-**Beispiel 1**
+### <a name="example-1"></a>Beispiel 1
 
 Während des Produktionsprozesses **Fertigmeldung** wird das Eingangsgewicht eines Ladungsträgers, der acht Boxen eines Artikelgewichtsprodukts enthält, mit 80,1 kg erfasst. Der Ladungsträger wird dann im Bereich für fertiggestellte Güter gelagert, und während des Lagerungszeitraums wird Gewicht in die Luft abgegeben.
 
@@ -61,7 +57,7 @@ Später wird das Gewicht des gleichen Ladungsträgers als Teil eines Auftragskom
 
 In diesem Fall passt das System automatisch die Differenz an, indem eine Transaktion für die fehlenden 0,3 kg gebucht wird.
 
-**Beispiel 2**
+### <a name="example-2"></a>Beispiel 2
 
 In der Definition wird ein Produkt so eingerichtet, dass ein Mindestgewicht von 8 kg und ein Höchstgewicht von 12 kg für die **Box**-Artikelgewichtseinheit toleriert wird.
 
@@ -107,7 +103,7 @@ Wenn ein Element mit einem Tag verfolgt wird, gibt es außerdem einen Parameter 
 **Wenn die Artikelgewichtstag-Rückverfolgung verwendet wird**, muss ein Tag immer für jede eingegangene Artikelgewichtseinheit erstellt werden, und jedes Tag muss immer einem Gewicht zugeordnet werden.
 
 Beispielsweise ist **Box** die Artikelgewichteinheit, und Sie erhalten eine Palette mit acht Boxen. In diesem Fall müssen acht eindeutige Artikelgewichtsmarkierungen erstellt werden, und ein Gewicht muss jeder Markierung zugeordnet werden. Je nach Eingangsartikelgewichts-Markierung kann entweder das Gewicht aller acht Boxen erfasst werden und das Durchschnittsgewicht dann auf jede Box verteilt werden, oder ein eindeutiges Gewicht kann für jede Box erfasst werden.
-Wenn Sie die Funktion **Bestehende Artikelgewicht-Tags verwenden, wenn Sie Produktionsaufträge als abgeschlossen melden**, wobei der Prozess über einen Menüpunkt des Mobilgeräts aktiviert ist, wird der Bestand auf der Grundlage der vorhandenen Artikelgewicht-Tag-Informationen aktualisiert. Daher fordert die Warehouse-App nicht dazu auf, die Daten der Artikelgewicht-Tags als Teil eines Produktionsberichts als fertigen Vorgang zu erfassen.
+Wenn Sie die Funktion **Bestehende Artikelgewicht-Tags verwenden, wenn Sie Produktionsaufträge als abgeschlossen melden**, wobei der Prozess über einen Menüpunkt des Mobilgeräts aktiviert ist, wird der Bestand auf der Grundlage der vorhandenen Artikelgewicht-Tag-Informationen aktualisiert. Daher fordert die Warehouse Management Mobile App nicht dazu auf, die Daten der Artikelgewicht-Tags als Teil eines Produktionsberichts als fertigen Vorgang zu erfassen.
 
 **Wenn die Artikelgewichtstag-Rückverfolgung nicht verwendet wird**, kann das Gewicht für jeden Dimensionssatz erfasst werden (z. B. für jeden Ladungsträger und alle Rückverfolgungsangaben). Alternativ kann das Gewicht auf Basis einer aggregierten Ebene erfasst werden, z. B. fünf Ladungsträger (Paletten).
 
@@ -142,7 +138,6 @@ Nicht alle Workflows unterstützen die Artikelgewichtsproduktverarbeitung mit La
 - Artikelgewichtsprodukte, die für Varianten aktiviert sind, können nicht zusammen mit der Funktion für das Konvertieren von Varianten-Maßeinheiten verwendet werden.
 - Artikelgewichtsprodukte können nicht als Commerce-„Produktset“ markiert werden.
 - Artikelgewichtsprodukte können nur mit einer Einheitsnummernkreisgruppe verwendet werden, die über Artikelgewichts-Handhabungseinheiten verfügt, und bei der die Artikelgewichtseinheit den niedrigsten Nummernkreis aufweist.
-- Für Artikelgewichtsprodukte kann die Bestandseinheit nur dann in die Artikelgewichtseinheit umgerechnet werden, wenn die Umrechnung eine nominelle Menge ergibt, die mehr als 1 beträgt.
 - Die Einrichtung von Strichcodes für Artikelgewichtsprodukte unterstützt keine Einrichtung für variables Gewicht.
 
 ### <a name="order-processing"></a>Auftragsverarbeitung
@@ -195,7 +190,11 @@ Nicht alle Workflows unterstützen die Artikelgewichtsproduktverarbeitung mit La
 
 ### <a name="catch-weight-tags"></a>Artikelgewichtsmarkierungen
 
-Ein Artikelgewicht-Tag kann mithilfe eines Warehouse-App-Prozesses, manuell im Formular oder mithilfe eines Datenentitätsprozesses erstellt werden. Wenn ein Artikelgewichtstag einer eingehenden Quelldokumentposition zugeordnet wird, z. B. Bestellposition, wird das Tag registriert. Wenn die Zeile für die Ausgangsverarbeitung verwendet wird, wird das Tag im Auslieferungszustand aktualisiert.
+Ein Artikelgewicht-Tag kann mithilfe eines Warehouse Management Mobile App-Prozesses, manuell im Formular über **Lagerortmanagement > Abfragen und Berichte > Artikelgewicht-Tag** oder mithilfe eines Datenentitätsprozesses erstellt werden. Wenn ein Artikelgewichtstag einer eingehenden Quelldokumentposition zugeordnet wird, z. B. Bestellposition, wird das Tag registriert. Wenn die Zeile für die Ausgangsverarbeitung verwendet wird, wird das Tag im Auslieferungszustand aktualisiert. Sie können alle historischen Registrierungsereignisse für Artikelgewicht-Tags über die Option **Artikelgewicht-Tag-Registrierung** von der Seite **Artikelgewicht-Tag** aus anzeigen.
+
+Du kannst den die Option **Tag erfasstes Gewicht ändern**, um den Gewichtswerts für ein Artikelgewichts-Tag manuell zu aktualisieren. Beachten Sie, dass das Gewicht für den vorhandenen Bestand im Rahmen dieses manuellen Vorgangs nicht angepasst wird. Sie können jedoch problemlos die Seite **Vorliegende Unstimmigkeiten bei Artikeln mit Artikelgewichts-Tags** verwenden, um etwaige Unstimmigkeiten zwischen den derzeit aktiven Artikelgewichts-Tags und dem aktuellen Bestand nachzuschlagen.
+
+Weitere manuelle Optionen sind **Tag registrieren** für eine Quelldokumentposition und **Arbeit registrieren** für bestehende Lagerortarbeit.
 
 Zusätzlich zu den Einschränkungen, die derzeit für Artikelgewichtsprodukte gelten, gelten für Artikelgewichtsprodukte mit Tags weitere derzeit geltende Einschränkungen.
 
@@ -210,3 +209,6 @@ Zusätzlich zu den Einschränkungen, die derzeit für Artikelgewichtsprodukte ge
 
 > [!NOTE]
 > Die vorstehenden Informationen zu Artikelgewichtstags sind nur gültig, wenn das Artikelgewichtsprodukt über eine Methode zur Verfolgung der Dimension von Artikelgewichtstags verfügt, die vollständig verfolgt wird (d. h. der Parameter der **Dimensionsrückverfolgungsmethode des Artikelgewichtstags** in der Richtlinie zur Handhabung von Gegenständen mit Artikelgewicht ist auf **Produktdimensionen, Rückverfolgungsangaben und alle Lagerdimensionen** gesetzt). Wenn der Gegenstand mit dem Artikelgewicht nur teilweise mit Tags verfolgt wird (d. h. wenn der Parameter **Dimensionsrückverfolgungsmethode des Artikelgewichtstags** in der Richtlinie zur Handhabung von Gegenständen mit Artikelgewicht auf **Produktdimensionen, Rückverfolgungsangaben und Inventarstatus** gesetzt ist) gelten zusätzliche Einschränkungen. Da in diesem Fall die Sichtbarkeit zwischen Tag und Inventar verloren geht, werden einige zusätzliche Szenarien nicht unterstützt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

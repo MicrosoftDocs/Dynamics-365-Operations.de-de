@@ -2,26 +2,24 @@
 title: SQL Server Reporting Services für lokale Bereitstellungen konfigurieren
 description: Dieses Thema liefert Informationen über die Konfiguration von SQL Server Reporting Services (SSRS) für eine lokale Bereitstellung.
 author: PeterRFriis
-manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.custom: 55651
 ms.assetid: ''
 ms.search.region: Global
-ms.author: perahlff
+ms.author: peterfriis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 2577705b04beef1f8b03f83ed8536be2e6ab6e83
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 88e6d5470ff7808a9b6263b6426e19f6ea11493d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683920"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5755523"
 ---
 # <a name="configure-sql-server-reporting-services-for-on-premises-deployments"></a>SQL Server Reporting Services für lokale Bereitstellungen konfigurieren
 
@@ -93,3 +91,6 @@ Gehen Sie nach den Schritten in diesem Thema vor, um SQL Server Reporting Servic
 13. Klicken Sie auf **Beenden**, um den **Reporting Services-Konfigurations-Manager** zu schließen.
 
     [![Reporting Services-Konfigurations-Manager schließen](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,7 +3,7 @@ title: Überblick Integration Dynamics 365 Commerce und Microsoft Teams
 description: Dieses Thema bietet einen Überblick über die Integration von Microsoft Dynamics 365 Commerce und Microsoft Teams.
 author: gvrmohanreddy
 ms.date: 03/31/2021
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 39de59d182fd6f4cb1616a47a09b44cd249f2187
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: c22af9bf76818dd682b4147c3677cd1715e4cbf8
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984194"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021988"
 ---
 # <a name="dynamics-365-commerce-and-microsoft-teams-integration-overview"></a>Überblick Integration Dynamics 365 Commerce und Microsoft Teams
 
@@ -50,7 +50,7 @@ Die folgenden Voraussetzungen müssen erfüllt sein, bevor Sie mit der Verwendun
 
 Die folgende Abbildung zeigt die konzeptionelle Architektur der Integration von Dynamics 365 Commerce und Microsoft Teams am Beispiel eines Shops in San Francisco. Sowohl Teams als auch die Commerce-POS-Anwendung verwenden Microsoft Planner als Repository, sodass von Teams veröffentlichte Aufgaben in der POS-Anwendung angezeigt werden und von Filialleitern in der POS-Anwendung erstellte Ad-hoc-Aufgaben in Teams angezeigt werden, was zu einer nahtlosen Aufgabenverwaltung zwischen den Anwendungen führt.    
 
-![Architektur der Integration von Commerce und Teams.](media/d365-commerce-teams-integration-conceptual-architecture.png)
+![Architektur der Integration von Commerce und Teams](media/d365-commerce-teams-integration-conceptual-architecture.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

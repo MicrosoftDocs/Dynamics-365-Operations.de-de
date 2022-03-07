@@ -2,7 +2,7 @@
 title: Finanzberichte generieren
 description: Dieses Thema enthält allgemeine Informationen zun Generieren von Finanzberichten.
 author: jinniew
-ms.date: 02/08/2022
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 00a860089265800ca1a0058f222d5e85c360501c
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: c6cde37124d4a3337bca2a9b445af5fdfd87f453
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119526"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750009"
 ---
 # <a name="generate-financial-reports"></a>Finanzberichte generieren
 
@@ -28,27 +28,14 @@ ms.locfileid: "8119526"
 
 Dieses Thema enthält allgemeine Informationen zun Generieren von Finanzberichten.
 
-Öffnen Sie zum Generieren eines Berichts die Berichtsdefinition, und wählen Sie anschließend in der Symbolleiste **Generieren**. Die Seite **Berichtswarteschlangenstatus** öffnet sich und gibt die Position Ihres Berichts in der Warteschlange an.
+Öffnen Sie zum Generieren eines Berichts die Berichtsdefinition, und wählen Sie anschließend die Schaltfläche **Generieren** in der Symbolleiste aus. Die Seite **Berichtswarteschlangenstatus** wird geöffnet und gibt die Position Ihres Berichts in der Warteschlange an. Standardmäßig wird der generierte Bericht in Web Viewer geöffnet.
 
-Während die Berichtsgenerierung läuft, können die folgenden Berichtswarteschlangestatus auf der Seite **Berichtswarteschlangenstatus** angezeigt werden.
-
-| Status          | Bundesstaat | Description|
-|-----------------|--------|--------------------|
-| Einfügen in die Warteschlange        | Vorläufig |Die Berichtsdefinition wird validiert, bevor der Bericht in die Generierungswarteschlange gestellt wird.                    |
-| In Warteschlange          | Vorläufig | Der Bericht wird in die Warteschlange für die Berichterstellung weitergeleitet und wartet auf die Verarbeitung.                      |
-| Bearbeitung      | Vorläufig | Dieser Status folgt normalerweise dem Status **In Warteschlange** und geht normalerweise in den Status **Endgültig** über, wenn die Bearbeitung abgeschlossen ist.       |
-| Nachbearbeitung | Vorläufig | Dieser Status folgt dem Status **Bearbeitung** und gibt an, dass alle Berichtsdaten erfasst wurden, aber dass abgeleitete Aktionen, wie Berechnung und Roll-up, ausgeführt werden.            |
-| Wird abgebrochen...      | Vorläufig | Die Berichterstellung wird auf Wunsch des Benutzers abgebrochen. Dieser Status ergibt sich aus einem vom Benutzer angeforderten Abbruch für einen Bericht mit dem Status **In Warteschlange** oder **Bearbeitung**. Das System versucht, den Bericht in den Status **Storniert** zu versetzen, es sei denn, das System ist zu weit fortgeschritten und muss ihn in einem anderen Status finalisieren. |
-| Storniert        | Endgültig | Die Verarbeitung des Berichts ist abgeschlossen, wurde jedoch aufgrund eines vom Benutzer angeforderten Stopps nicht abgeschlossen.            |
-| Fertiggestellt       | Endgültig | Der Bericht kann verwendet werden.                      |
-| Nicht bestanden          | Endgültig | Der Bericht wurde verarbeitet, ist jedoch fehlgeschlagen und sollte nicht verwendet werden. |
-
-Standardmäßig wird der generierte Bericht in Web Viewer geöffnet. Für die Erstellung von Berichten sind die folgenden Optionen verfügbar:
+Für die Erstellung von Berichten sind die folgenden Optionen verfügbar:
 
 - Einrichten eines Zeitplans, um einen Bericht oder eine Gruppe von Berichten automatisch zu generieren
 - Prüfen auf fehlende Konten oder Daten in einem Bericht und Validieren der Richtigkeit eines Berichts
 
-Wenn Sie einen Bericht generieren, werden die Optionen verwendet, die Sie auf den Registerkarten „Berichtsdefinition“ angegeben haben.
+Wenn Sie einen Bericht generieren, werden die Optionen verwendet, die Sie auf den Registerkarten Berichtsdefinition angegeben haben.
 
 ## <a name="generate-a-financial-report"></a>Finanzbericht generieren
 
@@ -76,7 +63,7 @@ Berichtsgruppen sind eine effiziente Möglichkeit, mehrere Berichte gleichzeitig
 ## <a name="schedule-report-generation"></a>Planen der Berichtsgenerierung
 Viele Unternehmen verwenden einen Kernsatz von Berichten, die in Einklang mit ihren Geschäftsprozessen in geplanten Intervallen ausgeführt werden. Sie können festlegen, dass ein Bericht regelmäßig generiert wird, beispielsweise täglich, wöchentlich, monatlich oder jährlich. Sie können einen einzelnen Bericht oder eine Gruppe von Berichten, die mehrere Unternehmen umfasst, planen. Für jedes der Unternehmen, die z. B. in einer Berichtsbaumstruktur-Definition angegeben sind, müssen Anmeldeinformationen eingegeben werden. Wenn die Anmeldeinformationen nicht gültig sind, zeigt der Bericht nur die Informationen, für die Sie eine Zugriffsberechtigung haben, beispielsweise für das Unternehmen, bei dem Sie zu dem Zeitpunkt angemeldet sind. Die Ausgabeinformationen werden zuerst von der Berichtsgruppe und anschließend von den einzelnen Berichten gelesen.
 
-Während Berichtszeitpläne erstellt und gespeichert werden, werden diese im Navigationsbereich unter „Berichtszeitplan“ angezeigt. Sie können Ordner zum Organisieren der Berichte erstellen. Wird ein einzelner Bericht in einem Berichtszeitplan nicht ausgeführt, hat dies keinen Einfluss auf die Ausführung aller anderen Berichte.
+Während Berichtszeitpläne erstellt und gespeichert werden, werden diese im Navigationsbereich unter Report Schedules angezeigt. Sie können Ordner zum Organisieren der Berichte erstellen. Wird ein einzelner Bericht in einem Berichtszeitplan nicht ausgeführt, hat dies keinen Einfluss auf die Ausführung aller anderen Berichte.
 
 > [!IMPORTANT]
 > Zum Erstellen, Ändern und Löschen von Berichtszeitplänen benötigen Sie die Rolle „Designer“ oder „Administrator“. Wenn ein Bericht ausgeführt wird, werden die Anmeldeinformationen des Benutzers, der den Zeitplan erstellt hat, verwendet, um den Bericht zu generieren.

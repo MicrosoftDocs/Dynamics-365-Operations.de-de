@@ -2,14 +2,11 @@
 title: Vermeiden Sie abgeschnittenen Text in der Positionshierarchie und beim Exportieren in Visio
 description: In diesem Artikel wird erläutert, wie ein Problem gelöst wird, bei dem Namen von Einzelpersonen und Positionen abgeschnitten werden, wenn Kunden die Positionshierarchie in Microsoft Dynamics 365 Human Resources anzeigen. Das Abschneiden von Text erschwert das Erstellen von Screenshots oder das Drucken der Hierarchie.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
@@ -17,14 +14,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 02fb0098cc6f5a0b353e827653b1c8c96af2470c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a03c8f340e8ebb2fb0440518c154ed3bdd0197f6
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418682"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6053250"
 ---
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Vermeiden Sie das Abschneiden von Text in der Positionshierarchie und beim Export nach Visio
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Abgang**
 
@@ -38,7 +37,7 @@ Dieses Verhalten ist beabsichtigt.
 
 **Auflösung**
 
-Leider können Benutzer die Größe des Texts nicht einfach ändern. Sie können jedoch die Positionshierarchie von Human Resources heraus exportieren und sie dann in Microsoft Visio importieren. Obwohl der folgende Artikel für Microsoft Dynamics AX 2012 verfasst wurde, gilt der Prozess nach wie vor für Human Resources: [Exportieren einer Positionshierarchie nach Microsoft Visio](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).
+Leider können Benutzer die Größe des Texts nicht einfach ändern. Sie können jedoch die Positionshierarchie von Human Resources heraus exportieren und sie dann in Microsoft Visio importieren. Obwohl der folgende Artikel für Microsoft Dynamics AX 2012 verfasst wurde, gilt der Prozess nach wie vor für Human Resources: [Exportieren einer Positionshierarchie nach Microsoft Visio](/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).
 
 Gehen Sie folgendermaßen vor beim Export nach Visio.
 
@@ -104,3 +103,6 @@ Anhand der Felder, die Sie ausgewählt haben, um sie ins Diagramm einzubeziehen,
 **Zusätzliche Option**
 
 In Human Resources sind Sie möglicherweise auch in der Lage, den Arbeitsbereich **Personen** zu verwenden, um der Hierarchie zugehörige Informationen anzuzeigen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

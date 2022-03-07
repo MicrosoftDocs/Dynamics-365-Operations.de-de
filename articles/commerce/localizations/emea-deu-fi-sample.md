@@ -2,11 +2,9 @@
 title: Integrationsbeispiel für Steuererfassungsdienst für Deutschland
 description: In diesem Thema erhalten Sie einen Überblick über das steuerliche Integrationsbeispiel für Deutschland.
 author: josaw
-manager: annbe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2020-5-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 8fc7f2aa60992fe14c3759e99fabb7c5e4c86ce9
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 520c4e0ea56335d1750a17eb782f9262cd366cc1
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018883"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798845"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-germany"></a>Integrationsbeispiel für Steuererfassungsdienst für Deutschland
 
@@ -29,7 +27,7 @@ ms.locfileid: "5018883"
 
 ## <a name="introduction"></a>Einführung
 
-Um die lokalen steuerlichen Anforderungen für Kassen in Deutschland zu erfüllen, umfassen die Microsoft Dynamics 365 Commerce-Funktionen für Deutschland eine Beispielintegration der Verkaufsstelle (POS) in einen externen Steuerregistrierungsservice. Das Beispiel erweitert die [steuerliche Integrationsfunktionen](fiscal-integration-for-retail-channel.md). Es basiert auf der [EFR (Electronisches Fiskalregister)](https://www.efsta.eu/de/fiskalloesungen/deutschland)-Lösung von [EFSTA](https://www.efsta.eu/de/) und ermöglicht die Kommunikation mit dem EFR-Service über das HTTPS-Protokoll. Der EFR-Dienst sollte entweder in der Retail Hardware station oder auf einem separaten Computer gehostet werden, zu dem von der Hardarestation aus eine Verbindung hergestellt werden kann. Das Beispiel wird in der Form eines Quellcodes bereitgestellt und ist Teil des Retail Software Development Kit (SDK).
+Um die lokalen fiskalischen Anforderungen für Registrierkassen in Deutschland zu erfüllen, enthält die Microsoft Dynamics 365 Commerce-Funktionalität für Deutschland eine Beispielintegration der Kasse mit einem externen fiskalischen Registrierungsdienst. Das Beispiel erweitert die [steuerliche Integrationsfunktionen](fiscal-integration-for-retail-channel.md). Es basiert auf der [EFR (Electronisches Fiskalregister)](https://www.efsta.eu/de/fiskalloesungen/deutschland)-Lösung von [EFSTA](https://www.efsta.eu/de/) und ermöglicht die Kommunikation mit dem EFR-Service über das HTTPS-Protokoll. Der EFR-Dienst sollte entweder in der Retail Hardware station oder auf einem separaten Computer gehostet werden, zu dem von der Hardarestation aus eine Verbindung hergestellt werden kann. Das Beispiel wird in der Form eines Quellcodes bereitgestellt und ist Teil des Retail Software Development Kit (SDK).
 
 Microsoft gibt keine Hardware, Software oder Dokumentation von EFSTA aus frei. Um Informationen darüber zu erhalten, wie Sie die EFR-Lösung beziehen und betreiben, wenden Sie sich an [EFSTA](https://www.efsta.eu/de/kontakt/kontakt).
 
@@ -486,3 +484,6 @@ Die folgenden Einstellungen werden hinzugefügt:
 - **Endpunktadresse** – Die URL des Steuererfassungsdiensts.
 - **Zeitlimit** – Die Zeitdauer in Millisekunden (ms), die der Treiber auf eine Antwort vom Steuererfassungsdienst wartet.
 - **Steuerregistrierungsbenachrichtigungen anzeigen** – Wenn dieser Parameter aktiviert ist, werden Benachrichtigungen vom Finanzdienst als Benutzermeldungen am POS angezeigt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

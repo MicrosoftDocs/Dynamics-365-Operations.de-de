@@ -2,27 +2,24 @@
 title: Kennzeichenbeschriftungs-Druck aktivieren
 description: In diesem Thema wird gezeigt, wie Sie das automatische Drucken einer Beschriftung mit der Nummer der Versandeinheit (NVE) aktivieren, nachdem der letzte Artikel aus dem Bestand im Verkaufskommissionierungs-Arbeitsprozess entnommen wurde.
 author: perlynne
-manager: tfehr
 ms.date: 07/19/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysCorpNetPrinterList, WHSParameters, NumberSequenceTableListPage, NumberSequenceDetails, WHSDocumentRoutingLayout, WHSDocumentRouting, WHSRFMenuItem, WHSRFMenu, WHSWorkTemplateTable, WHSLicensePlateLabelBuildConfig, WHSLicensePlateLabel
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e548e5e5528733412d47478dd740b87217cdac2
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 0a608e9a2356f9dd49bbec1bcbe5489af5931d44
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429060"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830881"
 ---
 # <a name="enable-license-plate-label-printing"></a>Kennzeichenbeschriftungs-Druck aktivieren
 
@@ -101,3 +98,6 @@ In diesem Thema wird gezeigt, wie Sie das automatische Drucken einer Beschriftun
 7. Wählen Sie **Speichern**.
 8. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

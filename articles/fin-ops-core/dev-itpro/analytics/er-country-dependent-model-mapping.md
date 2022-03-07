@@ -2,11 +2,9 @@
 title: Länderkontextabhängige ER-Modellzuordnungen konfigurieren
 description: In diesem Thema wird erläutert, wie Sie ER-Modellzuordnungen so einrichten können, dass sie vom Länder-/Regionalkontext der juristischen Person abhängen, die ihre Verwendung kontrolliert.
 author: NickSelin
-manager: AnnBe
 ms.date: 11/11/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: a9035f128a1db4bcd126f09c0fe30c1857fa884a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5b26c605bd64b8d8e5a90f4389261e8e56825111
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680875"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605370"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>Länderkontextabhängige ER-Modellzuordnungen konfigurieren
 
@@ -50,7 +48,7 @@ Einige Schritte in diesem Thema erfordern die Ausführung eines ER-Formats. In e
 
 Führen Sie die Schritte in [Anhang 1](#appendix1) zu diesem Thema aus, um die erforderlichen ER-Komponenten zu entwerfen. Sie haben nun die **Zuordnung (Allgemein)** Modellzuordnungskonfiguration, die das Modellzuordnung für die Definition **Eingangspunkt 1** enthält.
 
-![ER-Konfigurationsseite](./media/RCS-Context-specific-mapping-Tree.PNG)
+![ER-Konfigurationsseite, Format zum Erlernen der Zuordnungskonfiguration.](./media/RCS-Context-specific-mapping-Tree.PNG)
 
 ### <a name="run-the-configured-format"></a>Ausführen des konfigurierten Formats
 
@@ -63,7 +61,7 @@ Beachten Sie, dass der Webbrowser anbietet, die Textdatei herunterzuladen, die d
 
 Führen Sie die Schritte in [Anhang 2](#appendix2) zu diesem Thema aus, um die erforderlichen ER-Komponenten zu entwerfen. Sie haben nun **Zuordnung (Allgemein)** und **Zuordnung (Allgemein) benutzerdefinierte** Modellzuordnungskonfigurationen, von denen jede die Modellzuordnung für die Definition von **Einstiegspunkt 1** enthält.
 
-![ER-Konfigurationsseite](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
+![ER-Konfigurationsseite, Zuordnung allgemeiner benutzerdefinierter Konfiguration.](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
 
 ### <a name="run-the-configured-format"></a>Ausführen des konfigurierten Formats
 
@@ -73,7 +71,7 @@ Führen Sie die Schritte in [Anhang 2](#appendix2) zu diesem Thema aus, um die e
 
 Beachten Sie, dass die Ausführung des ausgewählten ER-Formats erfolglos ist. Eine Fehlermeldung informiert Sie darüber, dass es mehr als ein Modellzuordnung für das **Modell zum Erlernen von Zuordnungs** Modell und den **Einstiegspunkt 1** Definition in den Konfigurationen **Zuordnung (Allgemein)** und **Zuordnung (Allgemein) benutzerdefiniert** Modellzuordnung gibt. Die Meldung empfiehlt auch, dass Sie eine dieser Konfigurationen als Standardkonfiguration auswählen.
 
-![ER-Konfigurationsseite](./media/RCS-Context-specific-mapping-FormatRunCustomFailed.PNG)
+![ER-Konfigurationsseite mit Fehlermeldung.](./media/RCS-Context-specific-mapping-FormatRunCustomFailed.PNG)
 
 ### <a name="define-a-default-mapping-configuration"></a>Definieren Sie eine Standardzuordnungskonfiguration.
 
@@ -82,9 +80,9 @@ Führen Sie diese Schritte aus, um die Konfiguration **Zuordnung (Allgemein) cus
 1.  Wählen Sie auf der Seite **Konfigurationen** im Konfigurationsbaum **Zuordnung (Allgemein) benutzerdefiniert**.
 2.  Wählen Sie bei Bedarf **Bearbeiten**, um die aktuelle Seite für die Bearbeitung bereit zu machen.
 3.  Hier können Sie die Option **Standard für Modellzuordnung** auf **Ja** festlegen.
-4.  Wählen Sie **Speichern**.
+4.  Wählen Sie **Speichern** aus.
 
-![ER-Konfigurationsseite](./media/RCS-Context-specific-mapping-MappingsCustomDefault.PNG)
+![ER-Konfigurationsseite, Schieberegler „Standard für Modellzuordnung“ auf „Ja“ eingestellt.](./media/RCS-Context-specific-mapping-MappingsCustomDefault.PNG)
 
 ### <a name="run-the-configured-format"></a>Ausführen des konfigurierten Formats
 
@@ -103,7 +101,7 @@ Führen Sie die Schritte in [Anhang 3](#appendix3) zu diesem Thema aus, um die e
 
 Beachten Sie, dass die Version 1 der Modellzuordnungskonfiguration **Zuordnung (FR)** so konfiguriert ist, dass sie nur für ER-Formate des **Modells gilt, um Zuordnung Modell zu lernen**, die in Finance-Firmen ausgeführt werden, die einen französischen Länder/Regionen-Kontext haben.
 
-![ER-Konfigurationsseite](./media/RCS-Context-specific-mapping-TreeFR.PNG)
+![ER-Konfigurationsseite, Konfiguration von „Modellzuordnung (FR)“.](./media/RCS-Context-specific-mapping-TreeFR.PNG)
 
 ### <a name="run-the-configured-format"></a>Ausführen des konfigurierten Formats
 
@@ -121,9 +119,9 @@ Führen Sie diese Schritte aus, um die benutzerdefinierte **Zuordnung (FR)** Mod
 1.  Wählen Sie auf der Seite **Konfigurationen** im Konfigurationsbaum **Zuordnung (FR)**.
 2.  Wählen Sie bei Bedarf **Bearbeiten**, um die aktuelle Seite für die Bearbeitung bereit zu machen.
 3.  Hier können Sie die Option **Standard für Modellzuordnung** auf **Ja** festlegen.
-4.  Wählen Sie **Speichern**.
+4.  Wählen Sie **Speichern** aus.
 
-![ER-Konfigurationsseite](./media/RCS-Context-specific-mapping-TreeFRDefault.PNG)
+![ER-Konfigurationsseite, Konfiguration von „Zuordnung (FR)“, Schieberegler „Standard für Modellzuordnung“ auf „Ja“ eingestellt.](./media/RCS-Context-specific-mapping-TreeFRDefault.PNG)
 
 ### <a name="run-the-configured-format"></a>Ausführen des konfigurierten Formats
 
@@ -149,7 +147,7 @@ Wie Sie gesehen haben, funktioniert die Auswahl einer Modellzuordnung für die A
 Die folgende Tabelle gibt Auskunft über die Ergebnisse der Modellzuordnungsauswahl für alle möglichen Fälle von Modellzuordnungseinstellungen:
 
 - Spalte 1 zeigt an, ob die erste Modellzuordnung, die keine Kontextbeschränkungen für Länder/Regionen aufweist (z.B. die gemeinsame Zuordnung **Zuordnung (Allgemein)**) dargestellt wird und, wenn ja, ob die Option **Standard für Modellzuordnung** auf **Ja** gesetzt ist.
-- Spalte 2 zeigt an, ob die zweite Modellabbildung, die keine Kontextbeschränkungen für Länder/Regionen aufweist (z.B. die gemeinsame **Zuordnung (allgemein) benutzerdefiniert** Zuordnung), dargestellt wird und, wenn ja, ob die Option **Standard für Zuordnung** auf **Ja** für sie gesetzt ist.
+- Spalte 2 zeigt an, ob die zweite Modellabbildung, die keine Kontextbeschränkungen für Länder/Regionen aufweist (z.B. die gemeinsame **Zuordnung (allgemein) benutzerdefiniert**-Zuordnung), dargestellt wird und, wenn ja, ob die Option **Standard für Zuordnung** auf **Ja** für sie gesetzt ist.
 - Spalte 3 zeigt an, ob die erste Modellzuordnung mit Kontextbeschränkungen für Land/Region A (z.B. das Frankreich-spezifische **Zuordnung (FR)** Zuordnung) dargestellt wird und, wenn ja, ob die Option **Standard für Modellzuordnung** auf **Ja** gesetzt ist.
 - Spalte 4 zeigt an, ob die zweite Modellzuordnung mit Kontextbeschränkungen für Land/Region A dargestellt wird und, wenn ja, ob die Option **Standard für Modellzuordnung** auf **Ja** für sie gesetzt ist.
 - Spalte 5 zeigt das Ergebnis einer Modellzuordnungsauswahl für die Ausführung eines ER-Formats unter der Kontrolle eines Unternehmens, das einen Kontext zwischen Land und Region A hat.
@@ -197,7 +195,7 @@ In der Tabelle zeigt ein Pluszeichen (+) das Vorhandensein einer Modellzuordnung
 1.  Gehen Sie im Navigationsbereich zu **Module \> Organisationsverwaltung \> Elektronische Berichterstattung \> Konfiguration Debug-Log**.
 2.  Wählen Sie die Schaltfläche **Diese Seite neu laden**.
 
-![ER-Ausführungsprotokolle Seite](./media/RCS-Context-specific-mapping-DebugLog.PNG)
+![EB-Ausführungsprotokolle-Seite.](./media/RCS-Context-specific-mapping-DebugLog.PNG)
 
 Beachten Sie, dass dem ER-Debug-Protokoll für das ausgeführte ER-Format ein neuer Datensatz hinzugefügt wurde. Da das Feld **Level** dieses Datensatzes auf **Info** gesetzt ist, ist der Datensatz informativ. Da das Feld Formatkomponente auf **Zuordnugnskonfiguration** gesetzt ist, informiert Sie der Datensatz über ein Model-Zuordnung, das während der Ausführung des **Formats zum Erlernen von Zuordnungen** ER-Format verwendet wurde (ausgewählt im Feld **Konfigurationsname**). Der Inhalt des Feldes **Generierter Text** informiert Sie darüber, dass die Zuordnungs-Komponente **Zuordnung (FR)**, die sich in der Konfiguration **Zuordnung (FR)** befindet, zur Ausführung dieses Berichts verwendet wurde.
 
@@ -238,9 +236,9 @@ Beachten Sie, dass der Entwurf der Version 1 dieser ER-Konfiguration zur Bearbei
 14. Geben Sie im Dropdown-Dialogfeld im Feld **Name** **Funktionsbeschreibung** ein.
 15. Wählen Sie **Hinzufügen** aus.
 
-    ![ER Datenmodell Designerseite](./media/RCS-Context-specific-mapping-Model.PNG)
+    ![EB-Datenmodelldesignerseite.](./media/RCS-Context-specific-mapping-Model.PNG)
 
-16. Wählen Sie **Speichern**.
+16. Wählen Sie **Speichern** aus.
 17. Schließen Sie die Seite.
 
 #### <a name="complete-the-modified-version-of-the-model-configuration"></a>Vervollständigen Sie die modifizierte Version der Modellkonfiguration.
@@ -278,9 +276,9 @@ Beachten Sie, dass der Entwurf der Version 1 dieser ER-Konfiguration zur Bearbei
 5.  Wählen Sie **Speichern**.
 6.  Schließen Sie die Seite **Formeldesigner**.
 
-    ![ER-Modellzuordnungsdesigner – Seite](./media/RCS-Context-specific-mapping-Mapping1.PNG)
+    ![ER-Modellzuordnungsdesigner-Seite, Definition von Einstiegspunkt 1.](./media/RCS-Context-specific-mapping-Mapping1.PNG)
 
-7.  Wählen Sie **Speichern**.
+7.  Wählen Sie **Speichern** aus.
 8.  Schließen Sie die Seite **Modellzuordnungsdesigner**.
 9.  Wählen Sie **Neu** aus.
 10. Wählen Sie im Feld **Definition** **Eingabepunkt 2**.
@@ -291,12 +289,12 @@ Beachten Sie, dass der Entwurf der Version 1 dieser ER-Konfiguration zur Bearbei
 15. Wählen Sie **Speichern**.
 16. Schließen Sie die Seite **Formeldesigner**.
 
-    ![ER-Modellzuordnungsdesigner – Seite](./media/RCS-Context-specific-mapping-Mapping2.PNG)
+    ![ER-Modellzuordnungsdesigner-Seite, Definition von Einstiegspunkt 2.](./media/RCS-Context-specific-mapping-Mapping2.PNG)
 
-17. Wählen Sie **Speichern**.
+17. Wählen Sie **Speichern** aus.
 18. Schließen Sie die Seite **Modellzuordnungsdesigner**.
 
-    ![Seite mit den Zuordnungen von ER-Modellen](./media/RCS-Context-specific-mapping-Mappings.PNG)
+    ![ER-Modellzuordnungsseite mit Einstiegspunktdefinitionen.](./media/RCS-Context-specific-mapping-Mappings.PNG)
 
 19. Schließen Sie die Seite **Modellzuordnungen**.
 
@@ -337,9 +335,9 @@ Beachten Sie, dass der Entwurf der Version 1 dieser ER-Konfiguration zur Bearbei
 2.  Wählen Sie das Feld **Funktionsbeschreibung**.
 3.  Wählen Sie **Bindung** aus.
 
-    ![ER-Formatdesigner – Seite](./media/RCS-Context-specific-mapping-Format.PNG)
+    ![EB-Formatdesignerseite.](./media/RCS-Context-specific-mapping-Format.PNG)
 
-4.  Wählen Sie **Speichern**.
+4.  Wählen Sie **Speichern** aus.
 5.  Schließen Sie die Seite.
 
 ## <a name="appendix-2"></a><a name="appendix2"></a> Anhang 2
@@ -368,26 +366,26 @@ Beachten Sie, dass der Entwurf der Version 1 dieser ER-Konfiguration zur Bearbei
 3.  Wählen Sie **Designer** aus.
 4.  Wählen Sie im Abschnitt **Datenmodell** **Bearbeiten**.
 5.  Geben Sie im Feld **Formel** **„Allgemeine Funktionalität 1 benutzerdefiniert“** ein.
-6.  Wählen Sie **Speichern**.
+6.  Wählen Sie **Speichern** aus.
 7.  Schließen Sie die Seite.
 
-    ![ER-Modellzuordnungsdesigner – Seite](./media/RCS-Context-specific-mapping-Mapping1Custom.PNG)
+    ![ER-Modellzuordnungsdesigner-Seite, Formel „Allgemeine Funktionalität 1 benutzerdefiniert“.](./media/RCS-Context-specific-mapping-Mapping1Custom.PNG)
 
-8.  Wählen Sie **Speichern**.
+8.  Wählen Sie **Speichern** aus.
 9.  Schließen Sie die Seite.
 10. Wählen Sie die Zuordnung **Zuordnung (Allgemein) 2 Kopie** Zuordnung.
 11. Wählen Sie **Designer** aus.
 12. Wählen Sie im Abschnitt **Datenmodell** **Bearbeiten**.
 13. Geben Sie im Feld **Formel** **„Allgemeine Funktionalität 2 benutzerdefiniert“** ein.
-14. Wählen Sie **Speichern**.
+14. Wählen Sie **Speichern** aus.
 15. Schließen Sie die Seite.
 
-    ![ER-Modellzuordnungsdesigner – Seite](./media/RCS-Context-specific-mapping-Mapping2Custom.PNG)
+    ![ER-Modellzuordnungsdesigner-Seite, Formel „Allgemeine Funktionalität 2 benutzerdefiniert“.](./media/RCS-Context-specific-mapping-Mapping2Custom.PNG)
 
-16. Wählen Sie **Speichern**.
+16. Wählen Sie **Speichern** aus.
 17. Schließen Sie die Seite.
 
-    ![Seite mit den Zuordnungen von ER-Modellen](./media/RCS-Context-specific-mapping-MappingsCustom.PNG)
+    ![Seite für die Zuordnung vom ER-Modell zur Datenquelle für die Zuordnung „Zuordnung (Allgemein) Kopie“.](./media/RCS-Context-specific-mapping-MappingsCustom.PNG)
 
 18. Schließen Sie die Seite.
 
@@ -431,27 +429,27 @@ Beachten Sie, dass der Entwurf der Version 1 dieser ER-Konfiguration zur Bearbei
 4.  Wählen Sie **Designer** aus.
 5.  Wählen Sie im Abschnitt **Datenmodell** **Bearbeiten**.
 6.  Geben Sie im Feld **Formel** **„FR Funktionalität 1“** ein.
-7.  Wählen Sie **Speichern**.
+7.  Wählen Sie **Speichern** aus.
 8.  Schließen Sie die Seite.
 
-    ![ER-Modellzuordnungsdesigner – Seite](./media/RCS-Context-specific-mapping-Mapping1FR.PNG)
+    ![ER-Modellzuordnungsdesigner-Seite, Formel „FR-Funktionalität 1“.](./media/RCS-Context-specific-mapping-Mapping1FR.PNG)
 
-9.  Wählen Sie **Speichern**.
+9.  Wählen Sie **Speichern** aus.
 10. Schließen Sie die Seite.
 11. Wählen Sie die Zuordnung **Zuordnung (Allgemein) 2 Kopie Kopie Kopie**.
 12. Benennen Sie es um **Zuordnung (FR) 2**.
 13. Wählen Sie **Designer** aus.
 14. Wählen Sie im Abschnitt **Datenmodell** **Bearbeiten**.
 15. Geben Sie im Feld **Formel** **„FR-Funktionalität 2“** ein.
-16. Wählen Sie **Speichern**.
+16. Wählen Sie **Speichern** aus.
 17. Schließen Sie die Seite.
 
-    ![ER-Modellzuordnungsdesigner – Seite](./media/RCS-Context-specific-mapping-Mapping2FR.PNG)
+    ![ER-Modellzuordnungsdesigner-Seite, Formel „FR-Funktionalität 2“.](./media/RCS-Context-specific-mapping-Mapping2FR.PNG)
 
-18. Wählen Sie **Speichern**.
+18. Wählen Sie **Speichern** aus.
 19. Schließen Sie die Seite.
 
-    ![Seite mit den Zuordnungen von ER-Modellen](./media/RCS-Context-specific-mapping-MappingsFR.PNG)
+    ![Seite für die Zuordnung vom ER-Modell zur Datenquelle.](./media/RCS-Context-specific-mapping-MappingsFR.PNG)
 
 20. Schließen Sie die Seite.
 
@@ -496,3 +494,6 @@ Stellen Sie sicher, dass die Konfiguration der gemeinsamen Modellzuordnung nicht
 - Mindestens eine Version der ER-Modellzuordnungskonfiguration hat entweder den Status **Abgeschlossen** oder **Gemeinsam**. In diesem Fall wird die Version mit der höchsten Versionsnummer für die Ausführung des ER-Formats verwendet.
 - Die Option **Entwurf ausführen** für die Konfiguration der ER-Modellzuordnung ist aktiviert. In diesem Fall wird die Version mit dem Status **Entwurf** für die Ausführung des ER-Formats verwendet.
 > Die Option **Entwurf ausführen** wird auf der Seite **Konfigurationen** für jede ER-Modellzuordnungskonfiguration verfügbar, wenn der Benutzerparameter **Einstellung ausführen** ER eingeschaltet ist.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

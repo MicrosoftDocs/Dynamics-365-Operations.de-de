@@ -2,11 +2,13 @@
 title: Produktprogrammplanung mit Bedarfsprognosen
 description: In diesem Thema wird erklärt, wie Sie Bedarfsplanungen bei der Produktprogrammplanung mit der Planungsoptimierung einbeziehen können.
 author: ChristianRytt
+manager: tfehr
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
+ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -16,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: cbac68b79b2a10f05e0e442d4f0aa716e5a04634
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: cb696c365e02ab3e3b28da19b8b33f1975c142f8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867246"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983543"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Produktprogrammplanung mit Bedarfsprognosen
 
@@ -84,11 +86,11 @@ In diesem Abschnitt finden Sie Informationen zu den verschiedenen Methoden, die 
 
 Wenn Sie eine Planung in einem Produktprogrammplan integrieren, können Sie auswählen, wie der Planungsbedarf verringert wird, wenn der tatsächliche Bedarf enthalten ist. Beachten Sie, dass die Masterplanung Prognoseanforderungen aus der Vergangenheit ausschließt, d.h. alle Prognoseanforderungen vor dem aktuellen Datum.
 
-Wenn Sie eine Planung in einem Produktprogrammplan einschließen und die Methode auswählen die verwendet wird, um den Planungsbedarfe zu reduzieren, gehen Sie zu **Produktprogrammplanung \> Einstellungen \> Pläne \> Produktprogrammpläne**. Im Feld **Planzahlenmodell** wählen Sie Planzahlenmodell. Im Feld **Methode, die verwendet wird, um den Planungsbedarf zu reduzieren** wählen Sie eine Methode aus. Die folgenden Optionen sind verfügbar:
+Wenn Sie eine Planung in einem Produktprogrammplan einschließen und die Methode auswählen die verwendet wird, um den Planungsbedarfe zu reduzieren, gehen Sie zu **Produktprogrammplanung \> Einstellungen \> Pläne \> Produktprogrammpläne**. Im Feld **Planzahlenmodell** wählen Sie Planzahlenmodell. Im Feld **Methode, die verwendet wird, um den Planungsbedarf zu reduzieren** wählen Sie eine Methode aus. Die folgenden Optionen stehen zur Verfügung:
 
-- Keiner
+- Keines
 - Prozent – Planzahlenverrechnungsschlüssel
-- Transaktionen – Planzahlenverrechnungsschlüssel
+- Vorgänge - Reduzierungsschlüssel (noch nicht mit Planungsoptimierung unterstützt)
 - Transaktionen – dynamische Periode
 
 Die folgenden Abschnitte enthalten mehr Informationen zu den einzelnen Optionen.
@@ -137,85 +139,32 @@ Wenn Sie die Umsatzplanungslauf am 1. Januar ausführen, wird die Bedarfsplanung
 
 #### <a name="transactions--reduction-key"></a>Transaktionen – Planzahlenverrechnungsschlüssel
 
-Wenn Sie das Feld **Methode zur Reduzierung des Planungsbedarfs** auf *Buchungen – Planzahlenverrechnungsschlüssel* festlegen, werden die Planungsbedarfe um die qualifizierten Bedarfsbuchungen reduziert, die in den durch den Planzahlenverrechnungsschlüssel definierten Zeiträumen anfallen.
-
-Der qualifizierte Bedarf wird durch das Feld **Planungswert verringern um** auf der Seite **Dispositionssteuerungsgruppen** definiert. Wenn Sie das Feld **Planungswert verringern um** auf *Aufträge* festlegen, werden nur Auftragsbuchungen als qualifizierter Bedarf betrachtet. Wenn Sie es auf *Alle Buchungen* festlegen, werden alle abgehenden Nicht-Intercompany-Bestandsbuchungen als qualifizierter Bedarf betrachtet. Falls Intercompany-Aufträge ebenfalls als qualifizierter Bedarf berücksichtigt werden sollen, legen Sie die Option **Intercompany-Aufträge einschließen** auf *Ja* fest.
-
-Die Prognoseverrechnung beginnt mit dem ersten (frühesten) Bedarfsplanungsdatensatz im Planzahlenverrechnungsschlüssel-Zeitraum. Wenn die Menge der qualifizierten Bestandsbuchungen größer ist als die Menge der Bedarfsplanungspositionen im selben Planzahlenverrechnungsschlüssel-Zeitraum, wird der Saldo der Bestandsbuchungsmenge verwendet, um die Bedarfsplanungsmenge im vorherigen Zeitraum zu reduzieren (sofern nicht verbrauchte Planungsmengen vorhanden sind).
-
-Wenn im vorherigen Planzahlenverrechnungsschlüssel-Zeitraum keine nicht verbrauchten Planungsmengen verbleiben, wird der Saldo der Bestandsbuchungsmenge verwendet, um die Planungsmenge im nächsten Monat zu reduzieren (sofern nicht verbrauchte Planungsmengen vorhanden sind).
-
-Der Wert im Feld **Prozent** in den Planzahlenverrechnungsschlüssel-Positionen wird nicht verwendet, wenn das Feld **Methode zur Reduzierung des Planungsbedarfs** auf *Buchungen – Planzahlenverrechnungsschlüssel* festgelegt ist. Nur die Daten werden verwendet, um den Planzahlenverrechnungsschlüssel-Zeitraum zu definieren.
-
-> [!NOTE]
-> Alle Planungen, die am oder vor dem heutigen Datum gebucht werden, werden ignoriert und nicht zum Erstellen von Planaufträgen verwendet. Wenn Ihre Bedarfsplanung für den Monat beispielsweise am 1. Januar generiert wird und Sie eine Masterplanung mit Bedarfsplanung am 2. Januar ausführen, ignoriert die Berechnung die Bedarfsplanungsposition vom 1. Januar.
+Wenn Sie **Transaktionen - Planzahlenverrechnungsschlüssel** wählen wird der Planungsbedarf um die Transaktion reduziert, die während der im Planzahlenverrechnungsschlüssel definierten Zeitperioden stattfinden.
 
 ##### <a name="example-transactions--reduction-key"></a>Beispiel: Transaktionen – Planzahlenverrechnungsschlüssel
 
 Dieses Beispiel verdeutlicht, wie tatsächliche Aufträge, die in den vom Planzahlenverrechnungsschlüssel definierten Perioden anfallen, den Bedarf der Bedarfsplanung verringern.
 
-[![Tatsächliche Aufträge und Planung vor dem Ausführen der Masterplanung.](media/forecast-reduction-keys-1-small.png)](media/forecast-reduction-keys-1.png)
+Für dieses Beispiel wählen Sie auf der Seite **Produktprogrammpläne** im Feld **Verwendete Methode, um den Planungsbedarfe zu reduzieren** **Transaktion - Planzahlenverrechnungsschlüssel** aus.
 
-Für dieses Beispiel wählen Sie auf der Seite *Produktprogrammpläne* im Feld **Verwendete Methode, um den Planungsbedarfe zu reduzieren** **Transaktion - Planzahlenverrechnungsschlüssel** aus.
+Am 1. Januar lagen die folgenden Aufträge vor.
 
-Die folgenden Bedarfsplanungspositionen sind am 1. April vorhanden.
+| Monat    | Bestellte Stückzahl |
+|----------|--------------------------|
+| Januar  | 956                      |
+| Februar | 1.176                    |
+| März    | 451                      |
+| April    | 119                      |
 
-| Datum     | Geplante Stückzahl |
-|----------|-----------------------------|
-| April 5  | 100                         |
-| April 12 | 100                         |
-| April 19 | 100                         |
-| April 26 | 100                         |
-| Mai 3    | 100                         |
-| Mai 10   | 100                         |
-| Mai 17   | 100                         |
+Wenn Sie die selbe Bedarfsplanung von 1000 Stück pro Monat verwenden, die im vorherigen Beispiel verwendet wurde, werden die folgenden Bedarfsmengen in den Produktprogrammplan übertragen.
 
-Die folgenden Auftragspositionen sind im April vorhanden.
-
-| Datum     | Angeforderte Stückzahl |
-|----------|----------------------------|
-| April 27 | 240                        |
-
-[![Geplante Lieferung, die basierend auf den Aufträgen für April generiert wurde.](media/forecast-reduction-keys-2-small.png)](media/forecast-reduction-keys-2.png)
-
-Die folgenden Bedarfsmengen werden in den Masterplan übertragen, wenn die Masterplanung am 1. April ausgeführt wird. Wie Sie sehen, wurden die Planungsbuchungen für April um die Bedarfsmenge von 240 nacheinander reduziert, beginnend mit der ersten dieser Buchungen.
-
-| Datum     | Erforderliche Stückzahl |
-|----------|---------------------------|
-| April 5  | 0                         |
-| April 12 | 0                         |
-| April 19 | 60                        |
-| April 26 | 100                       |
-| April 27 | 240                       |
-| Mai 3    | 100                       |
-| Mai 10   | 100                       |
-| Mai 17   | 100                       |
-
-Nehmen wir nun an, dass für den Zeitraum Mai neue Aufträge importiert wurden.
-
-Die folgenden Auftragspositionen sind im Mai vorhanden.
-
-| Datum   | Angeforderte Stückzahl |
-|--------|----------------------------|
-| Mai 4  | 80                         |
-| Mai 11 | 130                        |
-
-[![Geplante Lieferung, die basierend auf den Aufträgen für April und Mai generiert wurde.](media/forecast-reduction-keys-3-small.png)](media/forecast-reduction-keys-3.png)
-
-Die folgenden Bedarfsmengen werden in den Masterplan übertragen, wenn die Masterplanung am 1. April ausgeführt wird. Wie Sie sehen, wurden die Planungsbuchungen für April um die Bedarfsmenge von 240 nacheinander reduziert, beginnend mit der ersten dieser Buchungen. Die Planungsbuchungen für Mai wurden jedoch um insgesamt 210 reduziert, beginnend mit der ersten Bedarfsplanungsbuchung im Mai. Die Gesamtmengen pro Zeitraum bleiben jedoch erhalten (400 im April und 300 im Mai).
-
-| Datum     | Erforderliche Stückzahl |
-|----------|---------------------------|
-| April 5  | 0                         |
-| April 12 | 0                         |
-| April 19 | 60                        |
-| April 26 | 100                       |
-| April 27 | 240                       |
-| Mai 3    | 0                         |
-| Mai 4    | 80                        |
-| Mai 10   | 0                         |
-| Mai 11   | 130                       |
-| Mai 17   | 90                        |
+| Monat                | Erforderliche Stückzahl |
+|----------------------|---------------------------|
+| Januar              | 44                        |
+| Februar             | 0                         |
+| März                | 549                       |
+| April                | 881                       |
+| Mai - Dezember | 1.000                     |
 
 #### <a name="transactions--dynamic-period"></a>Transaktionen – dynamische Periode
 
@@ -250,7 +199,7 @@ Sie erstellen auch die folgenden Aufträge.
 
 In diesem Fall werden die folgenden Aufträge erstellt.
 
-| Bedarfsplanungsdatum | Menge | Erläuterung                           |
+| Bedarfsplanungsdatum | Leistung | Erläuterung                           |
 |--------------------- |----------|---------------------------------------|
 | 1. Januar            | 800      | Planungsanforderungen verringern (= 1,000 – 200) |
 | 15. Januar           | 200      | Auftragsanforderungen             |
@@ -287,7 +236,7 @@ In diesem Fall wird die Planung auf folgende Weise reduziert:
 
 Deshalb werden die folgenden Aufträge erstellt.
 
-| Bedarfsplanungsdatum             | Menge | Erläuterung                                                         |
+| Bedarfsplanungsdatum             | Leistung | Erläuterung                                                         |
 |----------------------------------|----------|---------------------------------------------------------------------|
 | 15. Dezember Im Jahr zuvor | 500      | Auftragsanforderungen                                            |
 | 1. Januar                        | 900      | Planungsbedarfperiode vom 1. Januar bis zum 5. Januar (= 1.000 - 100 ) |
@@ -300,7 +249,7 @@ Deshalb werden die folgenden Aufträge erstellt.
 Ein Planungsverrechnungsschlüssel wird in den Formularen **Transaktionen - Planzahlenverrechnungsschlüssel** und **Prozentplanzahlenverrechnungsschlüssel**-Methoden zum Reduzieren des Planungsbedarfes verwendet. Gehen Sie folgendermaßen vor, um einen Planzahlenverrechnungsschlüssel zu erstellen und einzurichten.
 
 1. Gehen Sie zu **Produktprogrammplanung \> Einstellungen \> Abdeckung \> Planzahlenverrechnungsschlüssel**.
-2. Wählen Sie **Neu**, um einen Reduzierungsschlüssel zu erstellen.
+2. Klicken Sie auf **Neu** oder drücken Sie **STRG+N**, um einen neuen Planzahlenverrechnungsschlüssel zu erstellen.
 3. Im Feld **Planzahlenverrechnungsschlüssel** geben Sie eine eindeutige Kennung für den Planzahlenverrechnungsschlüssel ein. Geben Sie im Feld  **Namen** einen Namen ein. 
 4. Hier können Sie die Perioden sowie die Planzahlenverrechnungsschlüsselprozentsatz in jeder Periode eingeben:
 
@@ -316,78 +265,11 @@ Ein Planzahlenverrechnungsschlüssel muss der Deckungsgruppe des Artikels zugewi
 2. Wählen Sie im Feld **Planzahlenverrechnungsschlüssel** auf der Registerkarte **Andere** den Planzahlenverrechnungsschlüssel aus, der der Deckungsgruppe zugewiesen werden soll. Der Planzahlenverrechnungsschlüssel gilt dann für die Artikel, die zur Deckungsgruppe gehören.
 3. Wenn der Planzahlenverrechnungsschlüsse eine Reduktion während der Produktprogrammplanung verwendet werden soll, müssen Sie diese Einstellungen in der Absatzplanung oder in den Einstellungen der Produktprogrammplanung definieren. Gehen Sie zu den folgenden Standorten:
 
-    - **Produktprogrammplanung \> Einrichten \> Pläne \> Prognosepläne**
-    - **Produktprogrammplanung \> Einrichten \> Pläne \> Gesamtpläne**
+    - Produktprogrammpläne \>Einstellungen \>Pläne \> Absatzplanungen
+    - Produktprogrammplanung \> Einstellungen \> Pläne \> Produktprogrammpläne
 
 4. Auf der Seite **Absatzpläne** oder **Produktprogrammpläne** auf dem Inforegister **Allgemeine** im Feld **Methode, um die Planungsbedarfe zu reduzieren**, wählen Sie entweder **Prozent - Planzahlenverrechnungsschlüssel** oder **Transaktionen - Planzahlenverrechnungsschlüssel** aus.
 
 ### <a name="reduce-a-forecast-by-transactions"></a>Reduzieren einer Planung durch Transaktionen
 
 Wenn Sie **Transaktionen - Planzahlenverrechnungsschlüssel** oder **Transaktioen - dynamische Periode** als Methode für das Reduzieren von Planungsbedarfen aktivieren, können Sie angeben, welche Transaktionen die Planung verringert. Wählen Sie auf der Seite **Dispositionssteuerungsgruppe** im Inforegister **Sonstiges** für das Feld **Planungswert verringern um** die Option **Alle Transaktionen** aus, wenn alle Transaktionen die Planung reduzieren sollen, oder die Option **Aufträge**, wenn nur Aufträge die Planung reduzieren sollen.
-
-## <a name="forecast-models-and-submodels"></a>Prognosemodelle und Untermodelle
-
-Dieser Abschnitt beschreibt, wie Sie Prognosemodelle erstellen und wie Sie mehrere Prognosemodelle durch Festlegen von Untermodellen kombinieren können.
-
-Ein *Prognosemodell* benennt und identifiziert eine bestimmte Planung. Nachdem Sie das Prognosemodell erstellt haben, können Sie ihm Prognosezeilen hinzufügen. Um Prognosezeilen für mehrere Artikel hinzuzufügen, verwenden Sie die Seite **Bedarfsplanung Zeilen**. Um Planungszeilen für einen bestimmten ausgewählten Artikel hinzuzufügen, verwenden Sie die Seite **Freigegebene Produkte**.
-
-Ein Prognosemodell kann Prognosen aus anderen Prognosemodellen enthalten. Dazu fügen Sie andere Prognosemodelle als *Untermodelle* eines übergeordneten Prognosemodells hinzu. Sie müssen jedes relevante Modell erstellen, bevor Sie es als Untermodell eines übergeordneten Prognosemodells hinzufügen können.
-
-Die sich daraus ergebende Struktur bietet Ihnen eine leistungsfähige Möglichkeit zur Steuerung von Planungen, da Sie damit die Eingaben aus mehreren einzelnen Planungen kombinieren (aggregieren) können. Daher ist es vom Standpunkt der Planung aus gesehen einfach, Prognosen für Simulationen zu kombinieren. Sie könnten z. B. eine Simulation festlegen, die auf der Kombination einer regulären Prognose mit der Planung für eine Frühjahrsaktion basiert.
-
-### <a name="submodel-levels"></a>Untermodellebenen
-
-Es gibt keine Begrenzung für die Anzahl der Untermodelle, die zu einem übergeordneten Planungsmodell hinzugefügt werden können. Die Struktur kann jedoch nur eine Ebene tief sein. Mit anderen Worten: Ein Prognosemodell, das ein Untermodell eines anderen Prognosemodells ist, kann keine eigenen Untermodelle haben. Wenn Sie einem Prognosemodell Untermodelle hinzufügen, prüft das System, ob dieses Prognosemodell bereits ein Untermodell eines anderen Prognosemodells ist.
-
-Wenn die Produktprogrammplanung auf ein Untermodell stößt, das seine eigenen Untermodelle hat, erhalten Sie eine Fehlermeldung.
-
-#### <a name="submodel-levels-example"></a>Beispiel für Untermodellebenen
-
-Prognosemodell A hat Prognosemodell B als Untermodell. Daher kann das Planungsmodell B keine eigenen Untermodelle haben. Wenn Sie versuchen, ein Untermodell zu Prognosemodell B hinzuzufügen, erhalten Sie die folgende Fehlermeldung: „Prognosemodell B ist ein Untermodell für Modell A.“
-
-### <a name="aggregating-forecasts-across-forecast-models"></a>Aggregieren von Prognosen über Prognosemodelle hinweg
-
-Prognosezeilen, die am selben Tag auftreten, werden über ihr Prognosemodell und dessen Untermodelle aggregiert.
-
-#### <a name="aggregation-example"></a>Beispiel für Aggregation
-
-Prognosemodell A hat die Prognosemodelle B und C als Untermodelle.
-
-- Prognosemodell A enthält eine Bedarfsplanung für 2 Stück (Stk) am 15. Juni.
-- Prognosemodell B enthält eine Bedarfsplanung für 3 Stk. am 15. Juni.
-- Prognosemodell C enthält eine Bedarfsplanung für 4 Stk. am 15. Juni.
-
-Die resultierende Bedarfsplanung ist eine einzelne Planung für 9 Stk (2 + 3 + 4) am 15. Juni.
-
-> [!NOTE]
-> Jedes Untermodell verwendet seine eigenen Parameter und nicht die Parameter des übergeordneten Prognosemodells.
-
-### <a name="create-a-forecast-model"></a>Erstellen eines Prognosemodells
-
-Gehen Sie folgendermaßen vor, um ein Prognosemodell zu erstellen.
-
-1. Gehen Sie zu **Produktprogrammplanung \> Einrichten \> Bedarfsplanung \> Prognosemodelle**.
-1. Wählen Sie im Aktivitätsbereich **Neu** aus.
-1. Legen Sie die folgenden Felder für das neue Prognosemodell fest:
-
-    - **Modell** - Geben Sie einen eindeutigen Bezeichner für das Modell ein.
-    - **Name** - Geben Sie einen beschreibenden Namen für das Modell ein.
-    - **Gestoppt** - Normalerweise sollten Sie diese Option auf *Nein* festlegen. Legen Sie sie nur dann auf *Ja* fest, wenn Sie die Bearbeitung aller Zeilen der Planung, die dem Modell zugeordnet sind, verhindern wollen.
-
-    > [!NOTE]
-    > Das Feld **In Cash Flow Prognosen einbeziehen** und die Felder auf dem Inforegister **Projekt** haben keinen Bezug zur Produktprogrammplanung. Daher können Sie sie in diesem Zusammenhang ignorieren. Sie müssen sie nur berücksichtigen, wenn Sie mit Planungen für das Modul **Projektmanagement und Buchhaltung** arbeiten.
-
-### <a name="assign-submodels-to-a-forecast-model"></a>Zuweisen von Untermodellen zu einem Prognosemodell
-
-Um einem Planungsmodell Untermodelle zuzuweisen, gehen Sie wie folgt vor.
-
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichten \> Prognose \> Prognosemodelle**.
-1. Wählen Sie im Listenbereich das Prognosemodell, für das Sie ein Untermodell festlegen wollen.
-1. Wählen Sie auf der Inforegisterkarte **Untermodell** die Option **Hinzufügen**, um dem Raster eine Zeile hinzuzufügen.
-1. Legen Sie in der neuen Zeile die folgenden Felder fest.
-
-    - **Submodell** - Wählen Sie das Planungsmodell, das Sie als Untermodell hinzufügen möchten. Dieses Planungsmodell muss bereits existieren und es darf keine eigenen Untermodelle haben.
-    - **Name** - Geben Sie einen beschreibenden Namen für das Untermodell ein. Dieser Name kann z. B. die Beziehung des Untermodells zum übergeordneten Prognosemodell angeben.
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

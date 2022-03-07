@@ -2,15 +2,12 @@
 title: Verfügbarer Lagerbestand, mobiler Arbeitsbereich
 description: Dieses Thema enthält Informationen zum mobilen Arbeitsbereich für Lagerbestand. Dieser Arbeitsbereich bietet mobile Einblicke in reservierten und zur verfügbaren Bestand, jederzeit und überall.
 author: Mirzaab
-manager: tfehr
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 267094
 ms.assetid: 3fa385ba-894d-4a9e-b394-ef3697abf895
 ms.search.region: global
@@ -18,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 4a41f877816e331351a0950dcdc07ee07f643beb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b60be589394c506137c60ed0bc9c95d5a7af5e9a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428460"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816651"
 ---
 # <a name="inventory-on-hand-mobile-workspace"></a>Verfügbarer Lagerbestand, mobiler Arbeitsbereich
 
@@ -130,3 +127,6 @@ Herunterladen und Installieren der Finance and Operations mobilen App:
     -   Durch physischen Bestand (Ansicht stellt den Gesamtbetrag dar).
     -   Durch physischen Reservierungen (Ansicht stellt den reservierten Betrag dar).
     -   Durch verfügbare physische Menge (Ansicht stellt den verfügbare Betrag dar, der keine Reservierungen hat).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

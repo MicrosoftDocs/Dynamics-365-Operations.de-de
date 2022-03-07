@@ -2,27 +2,24 @@
 title: Domänen in Dynamics 365 Commerce
 description: In diesem Thema wird beschrieben, wie Domänen in Microsoft Dynamics 365 Commerce behandelt werden.
 author: BrShoo
-manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: cb2b003168d32d05387bd45796d313736b11a41f
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: 0a494a36d1d8fa55521c416efd4262d860e1a708
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517354"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022835"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domänen in Dynamics 365 Commerce
 
@@ -41,7 +38,7 @@ Bei der Bereitstellung einer E-Commerce-Umgebung in [Microsoft Dynamics Lifecycl
 
 Die folgende Abbildung zeigt den LCS-E-Commerce-Bereitstellungsbildschirm mit hervorgehobenem Feld **Unterstützte Hostnamen**. 
 
-![LCS-E-Commerce-Bereitstellungsbildschirm mit hervorgehobenem Feld **Unterstützte Hostnamen**](./media/Domains_ProvisioningeCommerceScreen.png)
+![LCS-E-Commerce-Bereitstellungsbildschirm mit hervorgehobenem Feld **Unterstützte Hostnamen**](./media/Domains_ProvisioningeCommerceScreen_publish.png)
 
 Sie können eine Serviceanforderung erstellen, um einer Umgebung zusätzliche Domänen hinzuzufügen, wenn die Bereitstellung bereits erfolgt ist. Um in LCS eine Serviceanforderung zu erstellen, wechseln Sie in Ihrer Umgebung zu **Support \> Support-Probleme** und wählen Sie **Einen Vorfall einreichen**.
 
@@ -154,7 +151,7 @@ Die von Commerce bereitgestellte Azure Front Door-Instanz unterstützt keine Ape
 
   [Neuen E-Commerce-Mandanten bereitstellen](deploy-ecommerce-site.md)
 
-  [Onlineshopkanal einrichten](online-stores.md)
+  [Onlineshopkanal einrichten](./channel-setup-online.md)
 
   [E-Commerce-Website erstellen](create-ecommerce-site.md)
 
@@ -173,3 +170,6 @@ Die von Commerce bereitgestellte Azure Front Door-Instanz unterstützt keine Ape
   [Hinzufügen von Unterstützung für ein Content Delivery Network (CDN)](add-cdn-support.md)
 
   [Standortbasierte Shop-Erkennung aktivieren](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

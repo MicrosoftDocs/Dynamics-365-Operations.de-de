@@ -1,27 +1,24 @@
 ---
 title: Workflows für die Genehmigung von Bestandserfassungen
 description: In diesem Thema wird beschrieben, wie Sie Workflows für die Genehmigung von Bestandserfassungen für verschiedene Typen von physischen Bestandsbuchungen einrichten und verwenden, Bestandserfassungs-Workflows stellen sicher, dass nur genehmigte Bestandserfassungen in Buchungen gebucht werden können.
-author: sherry-zheng
-manager: tfehr
+author: yufeihuang
 ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalTableWorkflowDropDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: chuzheng
+ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 623c628f3359efc1f76e1d06387905f981deca0b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: fd73c515c653de9160301e069fb25d995db40741
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428461"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778304"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Workflows für die Genehmigung von Bestandserfassungen
 
@@ -31,6 +28,13 @@ In diesem Thema wird beschrieben, wie Sie Workflows für die Genehmigung von Bes
 
 > [!NOTE]
 > Workflows für die Genehmigung von Bestandserfassungen gelten nur für Buchungen, die mit dem Modul Bestandsverwaltung erfasst wurden. Sie funktionieren nicht mit Bestandserfassungen, die vom Modul Lagerortverwaltung ausgelöst werden.
+
+## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Funktion für Workflows zur Genehmigung von Lagererfassungen aktivieren
+
+Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Administratoren können die Seite [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktion zu überprüfen und sie bei Bedarf zu aktivieren oder zu deaktivieren. Hier wird die Funktion als aufgeführt:
+
+- **Modul:** *Bestands- und Lagerortverwaltung*
+- **Funktionsname:** *Workflow für die Genehmigung von Bestandserfassungen*
 
 ## <a name="create-your-inventory-journal-approval-workflows"></a>Workflows für die Genehmigung von Bestandserfassungen anlegen
 
@@ -51,7 +55,7 @@ Legen Sie Workflows für die Genehmigung von Bestandserfassungen wie folgt an:
     - **Bestandsstücklistenerfassung**
     - **Lagerregulierungserfassung**
 
-    ![Das Dialogfeld „Workflow erstellen“](media/journal-workflow-create-workflow.png "Das Dialogfeld „Workflow erstellen“")
+    ![Das Dialogfeld „Workflow erstellen“.](media/journal-workflow-create-workflow.png "Das Dialogfeld „Workflow erstellen“")
 
 1. Die Workflow-Editor-App wird auf Ihrem Computer gestartet. (Möglicherweise werden Sie aufgefordert, diese Aktion zu genehmigen.) Verwenden Sie den Editor, um Ihren Workflow nach Bedarf zu gestalten. Ausführliche Informationen zur Verwendung des Workflow-Editors finden Sie unter [Workflowsystem – Übersicht](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
 1. Nach dem Speichern und Schließen der Workflow-Editor-App müssen Sie auswählen, ob diese Workflow-Version aktiviert werden oder inaktiv bleiben soll.
@@ -69,7 +73,7 @@ Um einem Bestandserfassungsworkflow einen Bestandserfassungsnamen zuzuweisen, ge
 1. Wählen Sie einen Erfassungsnamen aus der Listenspalte aus, um die Einstellungsseite zu öffnen.
 1. Auf dem Inforegister **Allgemein** stellen Sie die Option **Genehmigungsworkflow** auf **Ja**. Klicken Sie auf **Ja**, wenn Sie zum Bestätigen Ihrer Auswahl aufgefordert werden.
 
-    ![Einem Erfassungsnamen einen Workflow zuweisen](media/journal-workflow-journal-name.png "Einem Erfassungsnamen einen Workflow zuweisen")
+    ![Einem Erfassungsnamen einen Workflow zuweisen.](media/journal-workflow-journal-name.png "Einem Erfassungsnamen einen Workflow zuweisen")
 
 1. Öffnen Sie die **Workflow**-Drop-down-Liste und wählen Sie den gewünschten Workflow aus. Die Liste zeigt alle aktiven Workflows, die Sie mit der Workflow-Editor-App erstellt haben.
 
@@ -83,7 +87,7 @@ Nachdem Sie einen Bestandserfassungsnamen mit dem entsprechenden Workflow für d
 1. Füllen Sie die Erfassung wie erforderlich aus.
 1. Wenn Sie eine Bestandserfassung mit einem damit verbundenen Genehmigungsworkflow erstellen oder öffnen, wird die Schaltfläche **Workflow** im Aktionsbereich aktiviert. Wenn Sie bereit sind, die Erfassung zur Genehmigung einzureichen, wählen Sie die Schaltfläche **Workflow**, um ein Drop-down-Dialogfeld zu öffnen, und wählen Sie dann **Übermitteln**. Die Genehmigungsanforderung wird dann an den entsprechenden Genehmiger weitergeleitet, der mithilfe der für den Workflow konfigurierten Methode benachrichtigt wird.
 
-    ![Eine Erfassung zur Genehmigung übermitteln](media/journal-workflow-inventory-journal.png "Eine Erfassung zur Genehmigung übermitteln")
+    ![Eine Erfassung zur Genehmigung übermitteln.](media/journal-workflow-inventory-journal.png "Eine Erfassung zur Genehmigung übermitteln")
 
 Um eine Genehmigungsanforderung zurückzurufen, öffnen Sie die entsprechende Erfassung und wählen Sie die Schaltfläche **Workflow** und dann **Zurückrufen**. Dadurch wird der Workflow zurückgesetzt.
 
@@ -112,3 +116,6 @@ So überprüfen Sie die Workflowhistorie für eine Erfassung:
 1. Erweitern Sie im Navigationsbereich **Bestandsverwaltung \> Erfassungseinträge \> Artikel** und wählen Sie dann einen Bestandserfassungstyp aus.
 1. Öffnen Sie die relevante Erfassung.
 1. Wählen Sie die Schaltfläche **Workflow** im Aktionsbereich, um ein Drop-down-Dialogfeld zu öffnen. Wählen Sie **Workflowhistorie**. Weitere Informationen finden Sie unter [Workflowhistorie anzeigen](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

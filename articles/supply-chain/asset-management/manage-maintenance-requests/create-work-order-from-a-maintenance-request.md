@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 23039306bb827beb861eaacc3177f4917fabc8bf
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 5bf147104909302173c32b8376f16c66784110cb
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018095"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253326"
 ---
 # <a name="create-work-orders-from-maintenance-requests"></a>Arbeitsaufträge aus Wartungsanfragen erstellen
 
@@ -54,3 +54,6 @@ Nachdem Sie Wartungsanforderungen erstellt haben, können Sie sie ohne Weiteres 
 
     ![Neuen Arbeitsauftrag öffnen](media/05-manage-maintenance-requests.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

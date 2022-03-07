@@ -2,11 +2,9 @@
 title: Adressbücher – Häufig gestellte Fragen
 description: In diesem Thema finden Sie Antworten auf häufig gestellte Fragen zu Adressbüchern.
 author: msftbrking
-manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 audience: Application User
@@ -17,16 +15,17 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 922900b20b878dd8b479158d47a9f7792caa684d
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 57462e673a5f2a13f1b4a74d44482df3d0dab08f
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796897"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5747560"
 ---
 # <a name="address-books-faq"></a>FAQs zu Adressbüchern
 
 [!include [banner](../includes/banner.md)]
+[!include [preview-banner](../includes/preview-banner.md)]
 
 ## <a name="how-do-i-check-for-duplicate-records"></a>Wie prüfe ich auf doppelte Verzeichnisdatensätze?
 
@@ -67,3 +66,11 @@ Sie können Parteidatensätze entweder im globalen Adressbuch oder auf der entsp
 ## <a name="can-i-translate-address-information-for-party-records"></a>Kann ich Adressinformationen für Parteidatensätze übersetzen?
 
 Sie können Übersetzungen von Adressinformationen einrichten, damit die Information in Ihrem Programm in der Sprache des Benutzers (Systemsprache) und in anderen Dokumenten, wie z. B. Aufträgen, in einer anderen Sprache angezeigt wird. Sie können Übersetzungen für Namen von Ländern/Regionen, zu Adresszwecken und Namensfolgen eingeben. Ihre Systemsprache ist z. B. Dänisch, und Sie erstellen einen Auftrag für einen Kunden in Frankreich. In diesem Fall können Sie den Debitorendatensatz auf Dänisch im Programm anzeigen, die Adressinformationen jedoch in dem gedruckten Auftrag auf französisch anzeigen. Wenn Sie Übersetzungen einrichten, sollten Sie eine Übersetzung für jeden Artikel in der Liste eingegeben. Alle Artikel, für die Sie keine Übersetzung eingeben, werden in der Systemsprache angezeigt. Ihre Systemsprache ist z. B. Dänisch, und Sie senden ein Dokument an einen Kunden in Spanien. Wenn Sie keine spanischen (ESP) Übersetzungen für die Adressdaten eingegeben haben, werden die Informationen im System und auf gedruckten Materialien auf Dänisch angezeigt.
+
+## <a name="after-importing-addresses-when-i-access-the-records-why-am-i-unable-to-edit-imported-addresses"></a>Warum kann ich, wenn ich nach dem Importieren von Adressen auf die Datensätze zugreife, importierte Adressen nicht bearbeiten?
+
+Beim Importieren von Adressen wird ein Feld mit der Bezeichnung **IsLocationOwner** angezeigt. Dies gibt an, ob die Partei, die dem Standort (der Adresse) zugeordnet ist, der Eigentümer der Adresse ist. Wenn die Partei der Eigentümer der Adresse ist, kann die Adresse beim Zugriff über die Partei im globalen Adressbuch oder über das Masterdatensatzformular (z. B. Debitor, Kreditor oder Arbeitskraft) bearbeitet werden. Wenn die Partei nicht der Eigentümer der Adresse ist, kann der Datensatz nicht über die zuvor aufgelisteten Formulare bearbeitet werden. Beim Importieren von Adressen sollte **IsLocationOwner** auf **Ja** eingestellt werden, wenn Sie möchten, dass die Adresse über die zugeordnete Partei bearbeitet werden kann. Es gibt jedoch Situationen, in denen dieses Feld falsch importiert wird. Um dieses Problem zu beheben, kann der Standorteigentümer im globalen Adressbuch über den Datensatz der Partei oder über die Seite **Standorteigentümer bestätigen** aktualisiert werden. Um einen einzelnen Parteidatensatz zu aktualisieren, rufen Sie **Globales Adressbuch > Adresse** auf. Wählen Sie **Bearbeiten** aus, um die Seite **Adresse bearbeiten** zu starten und den Standorteigentümer zu ändern. Wählen Sie **Standorteigentümer ändern** aus, um den vorherigen Standorteigentümer anzuzeigen, wobei die aktuell ausgewählte Partei der neue Standorteigentümer ist. Wenn kein vorheriger Standorteigentümer angegeben ist, bedeutet dies, dass kein Standorteigentümer eingerichtet wurde. Wird die Option **Erweitert** ausgewählt, öffnet sich die Seite **Adressen verwalten**, auf der der Standorteigentümer ebenfalls festgelegt werden kann. Wählen Sie den zu aktualisierenden Standort aus, und wählen Sie anschließend im Menü **Standorteigentümer festlegen** aus. Um den Standorteigentümer für mehrere Datensätze zu aktualisieren, rufen Sie **Globales Adressbuch > Standorte > Standorteigentümer bestätigen** auf. Die Liste enthält Standorte, die mit einer einzelnen Partei verknüpft sind. Diese Partei ist jedoch nicht der Eigentümer. Die Auswahl der Option **Eigentümer bestätigen** legt die **ID der vorgeschlagenen Eigentümerpartei** als den Eigentümer der verknüpften Adresse fest. Sobald die Partei als Eigentümer festgelegt wurde, kann die verknüpfte Adresse über den Datensatz der Partei bearbeitet werden. Um den Standorteigentümer ändern zu können, muss Ihnen die Berechtigung für **Standortbesitzer festlegen** auf der Seite **Sicherheitskonfiguration** zugewiesen werden.  Standardmäßig wird dem Systemadministrator diese Berechtigung gewährt.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

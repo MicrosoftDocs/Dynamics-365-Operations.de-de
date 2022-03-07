@@ -1,26 +1,25 @@
 ---
 title: Überblick über Warnungen
 description: Dieses Thema enthält allgemeine Informationen zu Warnungen. Sie können Warnungen verwenden, um über Ereignisse informiert zu bleiben, die Sie während des Arbeitstags nachverfolgen möchten.
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
+ms.custom: intro-internal
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 473f53d230d7272ba0fcf78bd05d7020635a870f
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: d504b751a3a14309ab84192b6af0946018f43b61d8b27d86dd3cbea4299a69ce
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798580"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757242"
 ---
 # <a name="alerts-overview"></a>Überblick über Warnungen
 
@@ -88,3 +87,6 @@ Das Video [Warnungen zur Überwachung gefilterter Daten verwenden](https://youtu
 Das Video [Warnregeloptionen](https://youtu.be/cpzimwOjicM) (oben angezeigt) ist in der [Finance and Operations Wiedergabeliste](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) enthalten, die auf YouTube verfügbar ist.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Einrichten von Komponenten eines Einzelvorgangs
 description: In diesem Artikel werden die Begriffselemente, die ein Einzelvorgang enthalten kann beschriben und es enthält Beispiele dafür, wie die Elemente in der Organisation verwendet werden können.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,20 +12,22 @@ ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManage
 audience: Application User
 ms.author: anbichse
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources, Retail
+ms.search.scope: Human Resources
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 69759c0488563a904f6e80afacb1802611ab1930
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0148518ca80832ecb7a26e28ec76c4b14bb1a194
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418665"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464861"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Einrichten von Komponenten eines Einzelvorgangs
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 In diesem Artikel werden die Begriffselemente, die ein Einzelvorgang enthalten kann beschriben und es enthält Beispiele dafür, wie die Elemente in der Organisation verwendet werden können. 
 
@@ -87,3 +89,6 @@ Verwenden Sie Zuständigkeitsbereiche, um die Arbeitsrollen, Prozesse und Produk
 
 ## <a name="steps-for-creating-a-job"></a>Schritte zum Erstellen einer Stelle
 Im Artikel [Definieren neuer Stellen](../fin-and-ops/hr/tasks/define-new-jobs.md) finden Sie die detaillierte Prozedur zum Erstellen einer neuen Stelle. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

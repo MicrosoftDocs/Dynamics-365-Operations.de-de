@@ -2,28 +2,25 @@
 title: Ändern Sie die Sortierreihenfolge für Verkaufsentitäten
 description: In diesem Thema werden die Konzepte erläutert, die zum Steuern der Anzeigereihenfolge für verschiedene verkaufsbezogene Entitäten in Dynamics 365 Commerce zugeordnet werden.
 author: josaw1
-manager: AnnBe
 ms.date: 08/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: Category, Retail product hierarchy, Navigation hierarchy
 audience: Application User, Merchandising manager, Catalog manager
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 268444
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b983cb5c63db171c76d34375a93a2b9086185d3a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d9b0e66397d132315ee8a8d9c4b051b5012df8027b8060d0237ade16d65d703c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412572"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6724555"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Ändern Sie die Sortierreihenfolge für Verkaufsentitäten
 
@@ -54,9 +51,9 @@ Bevor Sie dieses Verfahren ausführen können, müssen Demodaten in Ihrer Umgebu
 
 Der Anzeigereihenfolge für die Kanalnavigationshierarchie wird in HQ für die Produkthierarchie und freigegebene Produkte nach Kategorie angezeigt.
 
-![Produkthierarchie: Benutzerdefinierte Sortierung mit negativen Werten](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
+![Produkthierarchie: Benutzerdefinierte Sortierung mit negativen Werten.](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
 
-![Freigegebene Produkte nach Kategorie: Benutzerdefinierte Sortierung auf Basis der Produkthierarchie](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
+![Freigegebene Produkte nach Kategorie: Benutzerdefinierte Sortierung auf Basis der Produkthierarchie.](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
 
 ## <a name="configure-the-display-order-for-categories-in-the-channel-navigation-hierarchy"></a>Konfigurieren der Anzeigereihenfolge für Kategorien in der Kanalnavigationshierarchie
 
@@ -80,11 +77,14 @@ Bevor Sie dieses Verfahren ausführen können, müssen Demodaten in Ihrer Umgebu
 
 Der Anzeigereihenfolge für die Kanalnavigationshierarchie wird in HQ, im Katalog und in Kanälen angezeigt.
 
-![Kanalnavigationshierarchie: Benutzerdefinierte Sortierung](./media/ChannelNavCustomSorted.png)
+![Kanalnavigationshierarchie: Benutzerdefinierte Sortierung.](./media/ChannelNavCustomSorted.png)
 
-![Katalognavigationshierarchie: Benutzerdefinierte Sortierung auf Basis der Kanalnavigationshierarchie](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
+![Katalognavigationshierarchie: Benutzerdefinierte Sortierung auf Basis der Kanalnavigationshierarchie.](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
 
-![POS mit benutzerdefiniert sortierten Kategorien](./media/POSChannelCategoriesCustomSorted.png)
+![POS mit benutzerdefiniert sortierten Kategorien.](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
-> Standardmäßig ist die Funktion für die benutzerdefinierte Sortierreihenfolge deaktiviert. Um zu erfahren, wie Sie diese Funktion und andere Funktionen aktivieren können, siehe [Funktionsverwaltung](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
+> Standardmäßig ist die Funktion für die benutzerdefinierte Sortierreihenfolge deaktiviert. Um zu erfahren, wie Sie diese Funktion und andere Funktionen aktivieren können, siehe [Funktionsverwaltung](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

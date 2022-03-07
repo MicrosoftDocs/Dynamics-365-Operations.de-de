@@ -1,12 +1,10 @@
 ---
 title: Erweiterte Filter- und Abfragesyntax
-description: In diesem Thema werden die Filter- und Abfrageoptionen beschrieben, die verfügbar sind, wenn Sie das Dialogfeld Erweitertes Filter/Sortierung oder den Übereinstimmungsoperator im Filterbereich oder die Filter in den Spaltenüberschriften des Gitters verwenden.
+description: In diesem Thema werden die Filter- und Abfrageoptionen für das Dialogfeld „Erweiterter Filter/Sortierung“ und den Übereinstimmungsoperator im Filterbereich oder in den Filtern in den Spaltenüberschriften des Gitters beschrieben.
 author: jasongre
-manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysQueryForm
 audience: Application User
@@ -17,16 +15,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 650f1c209b1797973634c788645a4659bff28f13
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: c0fefac5a7a2b299ba606a854824ee456c572487
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798670"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070008"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Erweiterte Filter- und Abfragesyntax
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 In diesem Thema werden die Filter- und Abfrageoptionen beschrieben, die verfügbar sind, wenn Sie das Dialogfeld Erweitertes Filter/Sortierung oder den Operator **Übereinstimmungen** im Filterbereich oder den Spaltenüberschriftsfiltern des Gitters verwenden.
 
@@ -121,9 +122,9 @@ In diesem Thema werden die Filter- und Abfrageoptionen beschrieben, die verfügb
 <td>Zwei aufeinanderfolgende doppelte Anführungszeichen (<strong>""</strong>) finden Zeilen ohne Wert für die aktuelle Spalte.</td>
 </tr>
 <tr>
-<td>(<span class="code">Finance and Operations-Abfrage</span>) (Finance and Operations-Abfrage zwischen Klammern)</td>
+<td>(<span class="code">Abfrage von Finance und Operations</span>) (Finance und Operations-Abfrage in Klammern)</td>
 <td>Übereinstimmung mit einer definierten Abfrage</td>
-<td>Geben Sie eine Abfrage als SQL-Anweisung zwischen Klammern in der Abfragesprache Finance and Operations ein.</td>
+<td>Geben Sie eine Abfrage als SQL-Anweisung zwischen Klammern ein und verwenden Sie dabei die Abfragesprache Finance und Operations.</td>
   <td><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
        als Syntaxbeispiel für eine Filterbedingung auf ein Feld aus der Stammdatensammlung sowie ein Feld aus einer anderen Datenquelle (für die Seite Alle Kunden)</td>
 </tr>
@@ -242,3 +243,6 @@ In der Tabelle im nächsten Abschnitt finden Sie zusätzliche Details zu <strong
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

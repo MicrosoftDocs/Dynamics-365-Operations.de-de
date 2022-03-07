@@ -1,39 +1,38 @@
 ---
 title: Lagerabwicklung eingehender Ladungen für Bestellungen
 description: In diesem Thema wird der Lagerbehandlungsprozess für eingehende Ladungen für Bestellungen beschrieben.
-author: omulvad
-manager: tfehr
+author: Mirzaab
 ms.date: 03/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
-ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 41a05bcd0148d0a553cb50575cae47f48397ae9b
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.10
+ms.openlocfilehash: 464d49f4e096fdd4fe47f73efc253c97200f4de3
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429029"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778058"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerabwicklung eingehender Ladungen für Bestellungen
 
+[!include [banner](../includes/banner.md)]
+
 In diesem Thema wird der Lagerbehandlungsprozess für eingehende Ladungen für Bestellungen beschrieben.
 
-Für jede eingehende Ladung sollte Ihr System bereits einen zugehörigen Kundenauftrag enthalten, und sie kann auch eine zugehörige Ladungsspezifikation und/oder einen zugehörigen Transportplan enthalten. Weitere Informationen zum Erstellen und Verwalten eingehender Auslastungen finden Sie unter [Geschäftsprozess: Transport für eingehende Ladungen planen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
+Für jede eingehende Ladung sollte Ihr System bereits einen zugehörigen Kundenauftrag enthalten, und sie kann auch eine zugehörige Ladungsspezifikation und/oder einen zugehörigen Transportplan enthalten. Weitere Informationen zum Erstellen und Verwalten eingehender Auslastungen finden Sie unter [Geschäftsprozess: Transport für eingehende Ladungen planen](/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
 
 ## <a name="overview-how-inbound-loads-are-created-registered-and-received"></a>Übersicht: Wie eingehende Lasten erstellt, registriert und empfangen werden
 
 Die folgende Abbildung zeigt den typischen Ablauf für die Bearbeitung eingehender Ladungen mit Bestellmengen, wenn diese in Ihrem Lager eintreffen.
 
-![Der Eingangsladebehandlungsprozess](media/inbound-process.png "Der Eingangsladebehandlungsprozess")
+![Der Eingangsladebehandlungsprozess.](media/inbound-process.png "Der Eingangsladebehandlungsprozess")
 
 1. **Der Lieferant bestätigt die Bestellung.**
 
@@ -41,11 +40,11 @@ Die folgende Abbildung zeigt den typischen Ablauf für die Bearbeitung eingehend
 
 1. **Ein eingehender Ladedatensatz wird erstellt, um die Ankunft und den Inhalt zu planen.**
 
-    Der Eingangsladedatensatz repräsentiert eine Lieferantensendung einer oder mehrerer Bestellungen. Es wird erwartet, dass die Ladung als eine einzige physische Transporteinheit (z. B. eine LKW-Ladung) im Lager ankommt. Der eingehende Ladungsdatensatz wird zu Planungszwecken verwendet und ermöglicht es dem Logistikkoordinator, den Fortschritt der Ladung vom Lieferanten zu verfolgen. Es wird auch verwendet, um Bestellpostenmengen zu registrieren und den Fortschritt durch Lageroperationen wie Ankunfts- und Einlagerungsarbeiten zu verwalten. Ladungen können entweder automatisch oder manuell erstellt werden und sie können entweder auf einer Bestellung oder einem Lieferavis (ASN) des Lieferanten basieren. Weitere Informationen finden Sie unter [Erstellen oder ändern Sie eine eingehende Last](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
+    Der Eingangsladedatensatz repräsentiert eine Lieferantensendung einer oder mehrerer Bestellungen. Es wird erwartet, dass die Ladung als eine einzige physische Transporteinheit (z. B. eine LKW-Ladung) im Lager ankommt. Der eingehende Ladungsdatensatz wird zu Planungszwecken verwendet und ermöglicht es dem Logistikkoordinator, den Fortschritt der Ladung vom Lieferanten zu verfolgen. Es wird auch verwendet, um Bestellpostenmengen zu registrieren und den Fortschritt durch Lageroperationen wie Ankunfts- und Einlagerungsarbeiten zu verwalten. Ladungen können entweder automatisch oder manuell erstellt werden und sie können entweder auf einer Bestellung oder einem Lieferavis (ASN) des Lieferanten basieren. Weitere Informationen finden Sie unter [Erstellen oder ändern Sie eine eingehende Last](/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
 
 1. **Der Lieferant bestätigt den Ladungsversand.**
 
-    Wenn der Lieferant die Ladung versendet, bestätigt der Logistikkoordinator im empfangenden Lager die Ladungssendung. Wenn die empfangende Firma das Modul **Transport-Management** verwendet, löst die Versandbestätigung andere Lastmanagementprozesse aus, die den eingehenden Ladungen zugeordnet sind. Weitere Informationen finden Sie unter [Bestätigen Sie eine Ladung für den Versand](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
+    Wenn der Lieferant die Ladung versendet, bestätigt der Logistikkoordinator im empfangenden Lager die Ladungssendung. Wenn die empfangende Firma das Modul **Transport-Management** verwendet, löst die Versandbestätigung andere Lastmanagementprozesse aus, die den eingehenden Ladungen zugeordnet sind. Weitere Informationen finden Sie unter [Bestätigen Sie eine Ladung für den Versand](/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
 
 1. **Die Ladung kommt im Lager an und die Arbeiter registrieren Mengen.**
 
@@ -67,7 +66,7 @@ Wenn eine eingehende Ladung zum ersten Mal im Lager ankommt, müssen die Lagerar
 
 - **Ein Menü für mobile Geräte, das so konfiguriert ist, dass es den Lastempfang unterstützt**
 
-    Die [Warehouse-App](install-configure-warehousing-app.md) für mobile Geräte unterstützt die folgenden Arbeitserstellungsprozesse:
+    Die [Warehouse Management Mobile App](../warehousing/install-configure-warehouse-management-app.md) für mobile Geräte unterstützt die folgenden Arbeitserstellungsprozesse:
 
     - Artikelempfang aus Ladung
     - Artikelempfang und -einlagerung aus Ladung
@@ -130,7 +129,7 @@ In der folgenden Tabelle werden die Optionen beschrieben, die für das Feld **Em
 | Wert | Beschreibung |
 |---|---|
 | Zulassen | Arbeiter können den Eingang von Mengen registrieren, die die verbleibende nicht registrierte Menge für eine ausgewählte Ladung überschreiten, jedoch nur, wenn die gesamte registrierte Menge die Menge der Bestellposition, die der Ladung zugeordnet ist, nicht überschreitet (nach Anpassung des Prozentsatzes für die Mehrlieferung). |
-| Sperren | <p>Mitarbeiter können den Empfang von Mengen nicht registrieren, die größer sind als die verbleibende nicht registrierte Menge für eine ausgewählte Auslastung (nach Anpassung des Prozentsatzes der Mehrlieferung). Ein Mitarbeiter, der versucht, die Belege zu registrieren, erhält einen Fehler und kann erst fortfahren, wenn er eine Menge registriert, die der verbleibenden nicht registrierten Ladungsmenge entspricht oder darunter liegt.</p><p>Standardmäßig wird der Wert des Prozentsatzes der Mehrlieferung in einer Ladezeile aus der zugehörigen Bestellposition kopiert. Wenn das Feld <b>Quittung der Mehrladung</b> auf <i>Sperren</i> festgelegt ist, berechnet das System anhand des prozentualen Mehrlieferungswerts die Gesamtmenge, die für eine Ladeposition registriert werden kann. Dieser Wert kann jedoch bei Bedarf für einzelne Lasten überschrieben werden. Dieses Verhalten wird beim Empfang von Flüssen relevant, bei denen ein Teil oder die gesamte überschüssige Menge, die den Prozentsatz der Mehrlieferung der Bestellposition darstellt, überproportional auf mehrere Ladungen verteilt ist. Hier ist ein Beispielszenario:</p><ul><li>Es gibt mehrere Ladungen für eine Bestellposition.</li><li>Die Bestellungsposition hat einen Mehrlieferungsprozentsatz von mehr als 0 (Null).</li><li>Mengen wurden bereits für eine oder mehrere Ladungen registriert, ohne den Prozentsatz der Mehrlieferung zu berücksichtigen.</li><li>Die Mehrlieferungsmenge kommt mit der letzten Ladung an.</li></ul><p>In diesem Szenario kann ein mobiles Gerät nur dann verwendet werden, um die überschüssige Menge für die letzte Ladung zu registrieren, wenn der Lagerleiter den Prozentsatz der Mehrlieferung für die betreffende Ladelinie vom Standardwert auf einen Wert erhöht, der groß genug ist, damit die vollständige Mehrlieferung mit der endgültigen Ladung registriert werden kann.</p> |
+| Sperren | <p>Mitarbeiter können den Empfang von Mengen nicht registrieren, die größer sind als die verbleibende nicht registrierte Menge für eine ausgewählte Auslastung (nach Anpassung des Prozentsatzes der Mehrlieferung). Eine Arbeitskraft, die versucht, die Belege zu registrieren, erhält einen Fehler und kann erst fortfahren, wenn sie eine Menge registriert, die der verbleibenden nicht registrierten Ladungsmenge entspricht oder darunter liegt.</p><p>Standardmäßig wird der Wert des Prozentsatzes der Mehrlieferung in einer Ladezeile aus der zugehörigen Bestellposition kopiert. Wenn das Feld <b>Quittung der Mehrladung</b> auf <i>Sperren</i> festgelegt ist, berechnet das System anhand des prozentualen Mehrlieferungswerts die Gesamtmenge, die für eine Ladeposition registriert werden kann. Dieser Wert kann jedoch bei Bedarf für einzelne Lasten überschrieben werden. Dieses Verhalten wird beim Empfang von Flüssen relevant, bei denen ein Teil oder die gesamte überschüssige Menge, die den Prozentsatz der Mehrlieferung der Bestellposition darstellt, überproportional auf mehrere Ladungen verteilt ist. Hier ist ein Beispielszenario:</p><ul><li>Es gibt mehrere Ladungen für eine Bestellposition.</li><li>Die Bestellungsposition hat einen Mehrlieferungsprozentsatz von mehr als 0 (Null).</li><li>Mengen wurden bereits für eine oder mehrere Ladungen registriert, ohne den Prozentsatz der Mehrlieferung zu berücksichtigen.</li><li>Die Mehrlieferungsmenge kommt mit der letzten Ladung an.</li></ul><p>In diesem Szenario kann ein mobiles Gerät nur dann verwendet werden, um die überschüssige Menge für die letzte Ladung zu registrieren, wenn der Lagerleiter den Prozentsatz der Mehrlieferung für die betreffende Ladelinie vom Standardwert auf einen Wert erhöht, der groß genug ist, damit die vollständige Mehrlieferung mit der endgültigen Ladung registriert werden kann.</p> |
 | Nur für geschlossene Ladungen sperren | Arbeiter können Mehrmengen für offene Lasten empfangen, jedoch nicht für Lasten mit dem Status _Empfangen_. |
 
 > [!NOTE]
@@ -206,7 +205,7 @@ Die folgende Tabelle fasst die Auswirkungen der Einstellung **Mehrere Produktein
 | Mehrere Produkteingänge pro Ladung zulassen | Mengen laden | Ladungsstatus | Notiz |
 |---|---|---|---|
 | Wenn dieses Feld nicht verfügbar ist (Versionen vor 10.0.10) | <p>Die Lademenge wird so eingestellt, dass sie der registrierten Menge entspricht.</p><p>Wenn die Lademenge auf 0 (Null) aktualisiert wird, bedeutet das, dass keine Registrierung durchgeführt wurde und die Ladezeile gelöscht wurde.</p><p>Wenn die Last keine Lastlinien enthält, wird die Last gelöscht.</p> | _Eingegangen_ | Wenn für die registrierte Menge der Bestellposition mehrere Ladungen vorhanden sind, wird nur der Status der Ladung auf _Empfangen_ aktualisiert, von der aus der Beleg gebucht wurde. |
-| Nr. | <p>Die Lademenge wird so eingestellt, dass sie der registrierten Menge entspricht, die der Lade-ID zugeordnet ist.</p><p>Wenn für die Inventurtransaktion keine Lade-ID aufgezeichnet wurde, entspricht das Verhalten dem Verhalten in Versionen vor 10.0.10.</p> | _Eingegangen_ | |
+| Nein | <p>Die Lademenge wird so eingestellt, dass sie der registrierten Menge entspricht, die der Lade-ID zugeordnet ist.</p><p>Wenn für die Inventurtransaktion keine Lade-ID aufgezeichnet wurde, entspricht das Verhalten dem Verhalten in Versionen vor 10.0.10.</p> | _Eingegangen_ | |
 | Ja | Keine Aktualisierungen | _Empfangen_, wenn die gesamte registrierte Ladungsmenge gleich oder größer als die Ladungsmenge ist | |
 | Ja | Keine Aktualisierungen | _Empfangen_ oder _In Verarbeitung_, wenn die gesamte registrierte Ladungsmenge kleiner als die Ladungsmenge ist | |
 
@@ -219,7 +218,7 @@ Um zusätzliche registrierte Ladungsmengen gegen eine Ladung mit dem Status _Emp
 
 ### <a name="post-registered-quantities-from-the-purchase-order-page"></a>Veröffentlichen Sie registrierte Mengen auf der Seite Bestellung
 
-Um den Produktbeleg zu erhalten, senden Sie die registrierten Mengen von der Seite **Bestellung**, Der Benutzer führt die folgenden Aufgaben aus, bevor er die Aktion **Produktbeleg** auswählt:
+Um den Produktbeleg für die registrierte Mengen von der Seite **Bestellung** zu erstellen, führt der Benutzer die folgenden Aufgaben aus, bevor er die Aktion **Produktbeleg** auswählt:
 
 - Legen Sie das Feld **Menge** im Abschnitt **Parameter** auf der Registerkarte **Einstellungen** auf _registrierte Menge_ fest.
 - In dem Feld **Produktbeleg** geben Sie die Nummern der Bestellungen ein, die in der Buchung enthalten sind.
@@ -268,7 +267,7 @@ Diese Szenarien erfordern die Funktion _Mehrere Produktbelegbuchungen pro Ladung
 
 1. Öffnen Sie den Arbeitsbereich **Funktionsverwaltung**. (Ausführliche Informationen zum Suchen und Verwenden dieses Arbeitsbereichs finden Sie unter [Funktionsverwaltungsübersicht](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
 
-1. Aktivieren Sie die Funktion _Ordnen Sie Bestelltransaktionen der Bestellung zu_, die wie folgt aufgelistet ist:
+1. Stellen Sie sicher, dass die Funktion _Zuordnung von Bestellbestandsbuchungen zur Ladung_ aktiviert ist. Ab Supply Chain Management Version 10.0.21 ist diese Funktion obligatorisch, daher ist sie standardmäßig aktiviert und kann nicht wieder deaktiviert werden. Die Funktion ist jedoch immer noch in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aufgeführt:
 
     - **Module:** _Lagerortverwaltung_
     - **Funktionsname:** _Ordnen Sie Bestelltransaktionen der Bestellung zu_
@@ -286,7 +285,7 @@ Um diese Szenarien mithilfe der angegebenen Beispieldatensätze und -werte zu ve
 
 Bevor Lagerort-Empfangsmitarbeiter ein mobiles Gerät verwenden können, um eingehende Bestand zu registrieren, der mit einer Last verknüpft ist, müssen Sie zu diesem Zweck einen Menüpunkt für mobile Geräte erstellen.
 
-In diesem Abschnitt erstellen Sie einen Menüpunkt für mobile Geräte und fügen ihn einem vorhandenen Menü hinzu. Ein Lagerarbeiter kann dann den Menüpunkt in der Warehouse-App auswählen.
+In diesem Abschnitt erstellen Sie einen Menüpunkt für mobile Geräte und fügen ihn einem vorhandenen Menü hinzu. Ein Lagerarbeiter kann dann den Menüpunkt in der Warehouse Management Mobile App auswählen.
 
 1. Gehen Sie zu **Lagerverwaltung \> Konfiguration \> Mobilgerät \> Menüpunkte für mobile Geräte** und stellen Sie sicher, dass das Menü Ihres Mobilgeräts einen Menüpunkt mit den folgenden Einstellungen enthält:
 
@@ -296,7 +295,7 @@ In diesem Abschnitt erstellen Sie einen Menüpunkt für mobile Geräte und füge
 
     Sie können alle anderen Einstellungen auf ihren Standardwerten belassen.
 
-    ![Einstellungen von Menüelementen für ein mobiles Gerät](media/inbound-mobile-menu-items.png "Einstellungen von Menüelementen für ein mobiles Gerät")
+    ![Einstellungen von Menüelementen für ein mobiles Gerät.](media/inbound-mobile-menu-items.png "Einstellungen von Menüelementen für ein mobiles Gerät")
 
     Weitere Informationen zu, Einrichten von Menüelementen für Mobilgeräte finden Sie unter [Richten Sie mobile Geräte für die Lagerarbeit ein](configure-mobile-devices-warehouse.md).
 
@@ -331,7 +330,7 @@ In diesem Verfahren erstellen Sie manuell eine Bestellung und eine zugehörige L
     - Im Inforegister **Ladung** ist das Feld **Ladungsstatus** auf _Offen_ festgelegt.
     - Im Abschnitt **Ladungszeile** gibt es eine einzelne Zeile, in der das Feld **Menge** auf _10_ und das Feld **Aus Arbeit erstellt Menge** auf _0_ (Null) festgelegt ist.
 
-    ![Ladungsdetails](media/inbound-load-details.png "Ladungsdetails")
+    ![Ladungsdetails.](media/inbound-load-details.png "Ladungsdetails")
 
 1. Im Aktivitätsbereich auf der Registerkarte wählen Sie **Liefern und Empfangen** und wählen dann **Bestätigen \> Eingehende Lieferung**. Beachten Sie, dass der **Status der Ladung** auf _Versandt_ geändert hat.
 1. Notieren Sie sich den Wert der **Ladungs-ID**, damit Sie ihn in der nächsten Prozedur verwenden können.
@@ -350,7 +349,7 @@ Wenn die Ladung am Wareneingangsdock ankommt, registriert ein Empfangsmitarbeite
 
 1. Fahren Sie mit dem Workflow fort und lassen Sie alle anderen Felder leer oder setzen Sie sie auf Ihre Standardwerte, bis Ihr Gerät Sie darüber informiert, dass die Arbeit abgeschlossen ist.
 
-Die Ladungsempfangsaufgabe ist nun abgeschlossen, und der Empfangsmitarbeiter kann mit seiner nächsten Aufgabe fortfahren. Das Lagerempfangspersonal überprüft jedoch eventuell den Ladungsdatensatz und kann feststellen, dass die empfangene Menge unter der erwarteten Menge lag. Anschließend führen sie die folgende Prozedur mithilfe des Webclients aus.
+Die Ladungsempfangsaufgabe ist nun abgeschlossen, und der Empfangsmitarbeiter kann mit der nächsten Aufgabe fortfahren. Das Lagerempfangspersonal überprüft jedoch eventuell den Ladungsdatensatz und kann feststellen, dass die empfangene Menge unter der erwarteten Menge lag. Anschließend führen sie die folgende Prozedur mithilfe des Webclients aus.
 
 1. Gehen Sie zu **Lagerortverwaltung \> Ladungen \> Alle Ladungen**.
 1. Suchen Sie in der Liste die Ladung, die Sie gerade erhalten haben. (Möglicherweise müssen Sie das Kontrollkästchen **Abgeschlossene Anzeigen** auswählen, um die eingehenden Ladungen mit dem Ladungsstatus von _Versandt_ einzuschließen.) Wählen Sie dann den Link in der Spalte **ID laden**, um die Ladung zu öffnen.
@@ -478,3 +477,6 @@ In diesem Szenario registriert der empfangende Sachbearbeiter eine Menge, die di
     - **Menge** – Geben Sie _7_ ein. Dies ist die verbleibende Menge, zu deren Lieferung der Verkäufer berechtigt ist, als Teil der gesamten Bestellmenge von 12 (wobei 10 die ursprüngliche Bestellmenge und 2 die zulässige Mehrmenge von 20 Prozent ist). Denken Sie daran, dass bereits 5 Stück für die erste Ladung registriert wurden.
 
 Die zweite Ladung wurde jetzt mit der Menge 7 aktualisiert und kann basierend auf dieser Menge als Produktbeleg aktualisiert werden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,16 +2,13 @@
 title: Fertigmeldungen für Stücklisten ausführen
 description: Dieser Artikel enthält Informationen zum Berichten von Stücklisten als fertig.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMReportFinish, BOMReportFinishMax, BOMSetupReportFinish
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 53251
 ms.assetid: 510d05a3-0073-438d-b0c4-b6a6df1882ea
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c68ff6fdb77cb8de23b6b803b0300c6daa0fd106
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ff88622c2cbbdcff6130fb8c500ea12a1e454ecb5f33834bc0a69718038c9e89
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428995"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766582"
 ---
 # <a name="report-boms-as-finished"></a>Fertigmeldungen für Stücklisten ausführen
 
@@ -89,3 +86,6 @@ In diesem Fall werden die zwei verfügbaren Artikel aus Artikelnummer COMP berü
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

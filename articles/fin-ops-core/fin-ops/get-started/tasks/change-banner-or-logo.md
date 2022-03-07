@@ -2,11 +2,9 @@
 title: Das Banner oder das Logo ändern
 description: Im Folgenden werden die Schritte aufgeführt, die Systemadministratoren verwenden können, um das Banner- oder Logobild zu aktualisieren, das für eine juristische Person angezeigt wird.
 author: aneesmsft
-manager: AnnBe
 ms.date: 06/21/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMLegalEntity, DefaultDashboard
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 73c66d189035f7bdc302480038c44645eccb50f9
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 3dd795b86e4aa05ac96123ed6b879d3dbca9166e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798069"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745618"
 ---
 # <a name="change-the-banner-or-logo"></a>Das Banner oder das Logo ändern
 
@@ -39,3 +37,6 @@ Im Folgenden werden die Schritte aufgeführt, die Systemadministratoren verwende
 6. Wechseln Sie zu **Navigationsbereich > Module > Allgemein > Allgemein > Standarddashboard**. Sie sollten das neue Banner- oder Logobild im Dashboard finden.  
     
     Möglicher Weise müssen Sie Ihr Unternehmen mithilfe der Unternehmens-Auswahl in das Unternehmen ändern, für das Sie das Banner für hochgeladen haben.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

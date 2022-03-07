@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SalesQuotationListPage, SalesCreateQuotation, SalesQuotationTable, SalesQuotationTotals, SalesQuotationPriceSimulation, SalesQuotationEditLines, SrsReportViewerForm, smmSetNumSeqIfManual, CustTable, SalesTable, CustQuotationConfirmationJournal, CustQuotationJournal, CustSalesLines, SalesQuotationCopying, SalesQuotationDeleteQuotations, SalesQuotationListPagePreviewPane, SalesQuotationTypeGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 73c15b41a4b0979ec79c8dbd8d88627bffcf6ed3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9d208d51d5299109a500e55e1304ea296ee4378c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428509"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5252725"
 ---
 # <a name="create-and-edit-sales-quotations"></a>Verkaufsangebote erstellen und bearbeiten
 
@@ -70,3 +69,6 @@ Diese Verfahren zeigt, wie ein Verkaufsangebot erstellt und aktualisiert wird. S
 13. Klicken Sie auf **Aufträge**
 14. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
