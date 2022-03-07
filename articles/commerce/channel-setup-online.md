@@ -1,37 +1,31 @@
 ---
-title: Onlinechannel einrichten
+title: Einen Onlinechannel einrichten
 description: In diesem Thema wird beschrieben, wie Sie einen neuen Onlinechannel in Microsoft Dynamics 365 Commerce erstellen.
 author: samjarawan
-manager: annbe
-ms.date: 07/02/2020
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 07225d97af76ea665fa28362cc205c6e8dc4fdf4
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: f32872fcc27e2e74300c4f18dfa08d666e4ad8a8
+ms.sourcegitcommit: fefe93f3f44d8aa0b7e6d54cc4a3e5eca6e64feb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4412716"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092111"
 ---
-# <a name="set-up-an-online-channel"></a>Onlinechannel einrichten
-
+# <a name="set-up-an-online-channel"></a>Einen Onlinechannel einrichten
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie einen neuen Onlinechannel in Microsoft Dynamics 365 Commerce erstellen.
-
-## <a name="overview"></a>Übersicht
 
 Dynamics 365 Commerce unterstützt mehrere Retail Channels. Diese Vertriebskanäle umfassen Onlineshops, Callcenter und Einzelhandelsgeschäfte (auch physische Läden genannt). Onlineshops geben Kunden die Gelegenheit, Produkte über die Onlinepräsenz des Einzelhändlers sowie aus dessen Einzelhandelsgeschäften zu erwerben.
 
@@ -58,19 +52,23 @@ Um einen Onlinechannel zu erstellen und zu konfigurieren, führen Sie die folgen
 
 Das folgende Bild zeigt die Erstellung eines neuen Onlinechannel.
 
-![Neuer Onlinechannel](media/channel-setup-online-1.png)
+![Neuer Onlinechannel.](media/channel-setup-online-1.png)
 
 Das folgende Bild zeigt ein Beispiel für einen Onlinechannel.
 
-![Beispiel-Onlinechannel](media/channel-setup-online-2.png)
+![Beispiel-Onlinechannel.](media/channel-setup-online-2.png)
+
+## <a name="assign-the-channel-to-a-commerce-scale-unit"></a>Weisen Sie den Kanal einer Commerce Scale Unit zu
+
+Ihr neuer Channel muss einer Commerce Scale Unit zugewiesen werden. Anweisungen finden Sie unter [Kanäle für die Verwendung von Commerce Scale Unit konfigurieren](../fin-ops-core/dev-itpro/deployment/initialize-retail-channels.md#configure-channels-to-use-commerce-scale-unit).
 
 ## <a name="set-up-languages"></a>Sprachen einrichten
 
-Wenn Ihre E-Commerce-Site mehrere Sprachen unterstützt, erweitern Sie den Abschnitt **Sprachen** und fügen Sie nach Bedarf weitere Sprachen hinzu.
+Wenn Ihre E-Commerce Website mehrere Sprachen unterstützt, erweitern Sie den Abschnitt **Sprachen** und fügen Sie bei Bedarf weitere Sprachen hinzu.
 
 ## <a name="set-up-payment-account"></a>Zahlungskonto einrichten
 
-Aus dem Abschnitt **Zahlungskonto** können Sie einen Drittanbieter für Zahlungen hinzufügen. Mehr Informationen zum Einrichten eines Adyen-Zahlungskonnektors finden Sie unter [Dynamics 365 Adyen-Zahlungskonnektor](../retail/dev-itpro/adyen-connector.md).
+Aus dem Abschnitt **Zahlungskonto** können Sie einen Drittanbieter für Zahlungen hinzufügen. Mehr Informationen zum Einrichten eines Adyen-Zahlungskonnektors finden Sie unter [Dynamics 365 Adyen-Zahlungskonnektor](./dev-itpro/adyen-connector.md).
 
 ## <a name="additional-channel-setup"></a>Einrichtung eines zusätzlichen Kanals
 
@@ -78,7 +76,7 @@ Zusätzliche Aufgaben, die für das Einrichten des Onlinechannel erforderlich si
 
 Das folgende Bild zeigt die Einrichtungsoptionen **Lieferarten**, **Zahlungsmethoden** und **Zuordnung der Erfüllungsgruppen** auf der Registerkarte **Installieren**.
 
-![Zusätzliche Aktionen zum Einrichten von Onlinechannels](media/channel-setup-online-3.png)
+![Zusätzliche Aktionen zum Einrichten von Onlinechannels.](media/channel-setup-online-3.png)
 
 ### <a name="set-up-payment-methods"></a>Einrichten von Zahlungsmethoden
 
@@ -93,7 +91,7 @@ Führen Sie die folgenden Schritte aus, um die Zahlungsmethoden für jede auf di
 
 Das folgende Bild zeigt ein Beispiel für eine Bargeldzahlungsmethode.
 
-![Beispielzahlungsmethoden](media/channel-setup-retail-5.png)
+![Beispielzahlungsmethoden.](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Lieferarten einrichten
 
@@ -107,7 +105,7 @@ Gehen Sie folgendermaßen vor, um eine Lieferart zu ändern oder hinzuzufügen.
 
 Das folgende Bild zeigt ein Beispiel für eine Lieferart.
 
-![Lieferarten einrichten](media/channel-setup-retail-7.png)
+![Lieferarten einrichten.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-a-fulfillment-group-assignment"></a>Eine Erfüllungsgruppenzuweisung einrichten
 
@@ -121,16 +119,19 @@ Gehen Sie zum Einrichten einer Erfüllungsgruppe folgendermaßen vor:
 
 Die folgende Abbildung zeigt ein Beispiel für die Einrichtung einer Erfüllungsgruppenzuweisung.
 
-![Erfüllungsgruppenzuweisung einrichten](media/channel-setup-retail-9.png)
+![Erfüllungsgruppenzuweisung einrichten.](media/channel-setup-retail-9.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Kanalübersicht](channels-overview.md)
+[Übersicht über Kanäle](channels-overview.md)
 
-[Voraussetzungen der Kanaleinrichtung](channels-prerequisites.md)
+[Kanaleinstellungen – Voraussetzungen](channels-prerequisites.md)
 
 [Einen Retail Channel einrichten](channel-setup-retail.md)
 
 [Einen Callcenterkanal einrichten](channel-setup-callcenter.md)
 
-[Connector für Adyen-Zahlungen für Dynamics 365](../retail/dev-itpro/adyen-connector.md)
+[Connector für Adyen-Zahlungen für Dynamics 365](./dev-itpro/adyen-connector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

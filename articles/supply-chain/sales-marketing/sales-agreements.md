@@ -2,28 +2,27 @@
 title: Übersicht über die Verkaufsvereinbarungen
 description: Dieses Thema enthält Informationen zu Kaufverträgen. Durch einen Kaufvertrag verpflichtet sich der Debitor, Produkte in einer bestimmten Menge oder für einen bestimmten Preis über einen vorgegebenen Zeitraum zu erwerben, wobei ihm im Gegenzug Sonderpreise und Rabatte zustehen.
 author: omulvad
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage, SalesAgreementInvoiceJournal, SalesAgreementInvoicePart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: 9554
+ms.custom:
+- "9554"
+- intro-internal
 ms.assetid: c5d55c8d-99f2-44f9-a897-5b0dee85fc81
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b848a0450c1cce1b3c6f7954397c75a44526d2b1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4d6351b58149cd66875459708973e9a8f987ca80
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428629"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6335891"
 ---
 # <a name="sales-agreements-overview"></a>Übersicht über die Verkaufsvereinbarungen
 
@@ -37,7 +36,7 @@ Die Gültigkeitsperiode der Kaufvertragsposition wird durch die Felder **Gültig
 
 Sie können einen Auftrag direkt von einem Kaufvertrag erstellen, indem Sie die Aktivität **Freigabeauftrag** verwenden. Alternativ können Sie einen gültigen Kaufvertrag auswählen, wenn Sie Aufträge entgegennehmen (mehr unter "Kaufverträge im Bestellungsprozess übernehmen" in diesem Artikel).  
 
-> [Hinweis!] In früheren Versionen wurden Verkaufsvereinbarungen als pauschale Aufträge bezeichnet.
+> [Hinweis!] In früheren Versionen wurden Kaufverträge als Rahmenaufträge bezeichnet.
 
 ## <a name="commitment-types"></a>Zusagetypen
 Jede Position in einem Kaufvertrag drückt eine Zusage für den Verkauf eines Artikels aus. Im Allgemeinen gibt es zwei Kategorien von Zusagen:
@@ -113,3 +112,6 @@ Sie können Finanzdimensionen in Dokumentüberschriften oder einzelne Positionen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

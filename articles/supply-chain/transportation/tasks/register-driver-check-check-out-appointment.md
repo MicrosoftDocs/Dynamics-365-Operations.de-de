@@ -2,27 +2,24 @@
 title: Ein- und Auschecken des Fahrers für einen Termin erfassen
 description: Dieses Verfahren zeigt, wie Sie ein Fahrereinchecken und ein Fahrerauschecken erfassen.
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSDriverLogListPage, TMSDriverCheckIn
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 34074a6ad2c929085dc6fd43efa8da620ce18584
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: c1f97612f308063edeaca2c31eafa3caa5c42a31
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429076"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838489"
 ---
 # <a name="register-driver-check-in-and-check-out-for-an-appointment"></a>Ein- und Auschecken des Fahrers für einen Termin erfassen
 
@@ -46,3 +43,6 @@ Dieses Verfahren zeigt, wie das Ein- und Ausschecken eines Fahrers erfasst wird.
 1. Klicken Sie auf "Auschecken durch Fahrer".
 2. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

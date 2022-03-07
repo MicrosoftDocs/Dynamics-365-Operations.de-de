@@ -1,27 +1,24 @@
 ---
 title: Umsatzsteuererklärung für Deutschland
-description: Dieses Thema enthält Informationen zum Generieren von QR-Rechnungen (QR-Slips) und zum Verarbeiten eingehender QR-Rechnungen.
-author: v-lurodi
-manager: AnnBe
-ms.date: 05/12/2020
+description: Dieses Thema enthält Informationen zum Generieren von QR-Rechnungen und zum Verarbeiten eingehender QR-Rechnungen.
+author: anasyash
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Germany
 ms.author: v-lenest
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 089178474c44ce4efa3c74a4183e2a80b68d9303
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0caac8f705e8e8d96c4cb56ba83949a56407b6c8
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407756"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839850"
 ---
 # <a name="vat-declaration-for-germany"></a>Umsatzsteuererklärung für Deutschland
 
@@ -56,7 +53,7 @@ Richten Sie die Codes für die Mehrwertsteuererklärung ein, indem Sie die Anwei
 <tbody>
 <tr>
 <td colspan="4" width="614">
-<p><strong>Steuerfreier Verkauf mit Vorsteuerabzug für innergemeinschaftliche Lieferungen (&sect; 4, Nr. 1b des UStG [Umsatzsteuergesetz</strong><strong></strong><strong>])</strong></p>
+<p><strong>Steuerfreier Verkauf mit Vorsteuerabzug für innergemeinschaftliche Lieferungen (&sect;4, Nr. 1b des UStG [Umsatzsteuergesetz</strong><strong> oder </strong><strong>Mehrwertsteuergesetz])</strong></p>
 </td>
 </tr>
 <tr>
@@ -719,6 +716,10 @@ Richten Sie die Codes für die Mehrwertsteuererklärung ein, indem Sie die Anwei
 > [!NOTE]
 > Beispiele für Formen von Mehrwertsteuererklärungen, die Deklarationszeilencodes enthalten, finden Sie unter [Formulare im Mehrwertsteuerverfahren für das Jahr 2020](https://umsatzsteuer-voranmeldung-2020.taxpool.net/Umsatzsteuer-Voranmeldung-2020.pdf).
 
+## <a name="prerequisite"></a>Voraussetzung
+
+Bevor Sie beginnen, rufen Sie die Seite **Hauptbuchparameter** auf, und erweitern Sie das Inforegister **Steueroptionen**. Vergewissern Sie sich, dass in der Feldgruppe **Sonderbericht** der Parameter **Korrekturen einbeziehen** nicht aktiviert ist. 
+
 ## <a name="set-up-sales-tax-codes"></a>Mehrwertsteuercodes einrichten
 
 Richten Sie die Codes für die Mehrwertsteuererklärung ein, indem Sie die Anweisungen in [Mehrwertsteuercodes für MwSt-Berichterstattung](emea-vat-reporting.md#sales-tax-codes-for-vat-reporting) und [Mehrwertsteuerübersicht](../general-ledger/indirect-taxes-overview.md) befolgen.
@@ -865,16 +866,16 @@ Die folgende Tabelle zeigt, wie Sie die Mehrwertsteuer-Berichtscodes den Mehrwer
 7. Wechseln Sie zu **Steuer** \> **Meldungen** \> **Mehrwertsteuer** \> **Protokoll der elektronischen Steuererklärung**, und wählen Sie die erforderliche Position aus.
 8. Wählen Sie **Vorschau** aus, klicken Sie auf die Registerkarte und überprüfen Sie die gemeldeten Werte.
 
-![Vorschau des Protokolls der elektronischen Steuererklärung](media/5_Electronic_tax_declaration_log.png)
+    ![Vorschau des Protokolls der elektronischen Steuererklärung](media/5_Electronic_tax_declaration_log.png)
 
-Beachten Sie, dass eine Korrekturtransaktion zur Erklärung in Codes **86** und **83** hinzugefügt wird.
+    Eine Korrekturbuchung ist der Erklärung anhand der Codes **86** und **83** hinzugefügt worden.
 
 9. Wählen Sie das Büroklammersymbol in der oberen rechten Ecke.
 10. Wählen Sie **Öffnen** und überprüfen Sie die XML-Datei oben auf der Seite.
 
-![XML-Datei](media/6_XML_file.png)
+    ![Zu überprüfende XML-Datei](media/6_XML_file.png)
 
-Beachten Sie, dass eine Korrekturtransaktion zur Erklärung in Codes **86** und **83** hinzugefügt wird.
+    Eine Korrekturbuchung ist der Erklärung anhand der Codes **86** und **83** hinzugefügt worden.
 
 ## <a name="review-sales-tax-report-amounts"></a>Überprüfen Sie die Beträge des Umsatzsteuerberichts 
 
@@ -959,3 +960,6 @@ Sie können den deutschen Mehrwertsteuerbericht auch mit der **Umsatzsteuer für
 | 181                | 19                   |
 | 186                | 7                    |
 | 193                | 7                    |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

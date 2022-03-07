@@ -1,7 +1,7 @@
 ---
 title: Datenvorlagen mit mehreren Arbeitsblättern
 description: In diesem Thema wird beschrieben, wie Daten mithilfe der Excel-Datenentitätsvorlagen in Finance and Operations importiert werden.
-author: peakerbl
+author: Sunil-Garg
 ms.date: 01/01/2018
 ms.topic: article
 ms.prod: ''
@@ -11,22 +11,19 @@ ms.reviewer: sericks
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: cf3c423bdf06685a3c4025551927123773ae818a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 6205797ead0569eeeeae5deb47534c66eb030b0bfdd177dd3cc6d9fa5d326ecf
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070060"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737457"
 ---
 # <a name="data-templates-with-multiple-worksheets"></a>Datenvorlagen mit mehreren Arbeitsblättern
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Die Datenverwaltung in der Anwendung unterstützt Microsoft Excel-basierte Vorlagen für Datenentitäten. Diese Vorlagen können eines oder mehrere Arbeitsblätter enthalten. Vorlagen mit mehreren Arbeitsblättern werden häufig verwendet, wenn es von Vorteil ist, Daten in einer einzigen Datei zu verwalten und diese in mehrere Datenentitäten zu importieren. Ein Beispiel wären Standorte und Lagerorte.
 

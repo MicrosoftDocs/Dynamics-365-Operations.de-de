@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -18,18 +17,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3c7ca41b9e8a4c3127c98c756348959530a87996
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cce0d408ac6d372fb726eff8fa4b0358ec200243
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459050"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5210994"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Konsistenzprüfung für Einzelhandelstransaktionen
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden die Funktionen der Konsistenzprüfung für Transaktionen in Microsoft Dynamics 365 Commerce beschrieben. Die Konsistenzprüfung ermittelt und isoliert inkonsistente Transaktionen, bevor sie im Aufstellungsbuchungsprozess verarbeitet werden.
+In diesem Thema wird die Funktion zur Konsistenzprüfung für Einzelhandelstransaktionen in Microsoft Dynamics 365 Commerce beschrieben. Die Konsistenzprüfung ermittelt und isoliert inkonsistente Transaktionen, bevor sie im Auszugsbuchungsprozess verarbeitet werden.
 
 Wird eine Aufstellung gebucht, kann die Buchung aufgrund der inkonsistenten Daten in den Handelstransaktionstabellen fehlschlagen. Die Datenfehler können durch unvorhergesehene Probleme in der Verkaufsstellenanwendung oder durch Fehler beim Importieren von Buchungen aus POS-Systemen von Drittanbietern auftreten. Im Folgenden sind Beispiele für diese Inkonsistenzen aufgeführt: 
 
@@ -79,3 +78,6 @@ Wenn ein Überprüfungsfehler gefunden wird, können Sie ihn nur beheben, indem 
 
 > [!NOTE]
 > In zukünftigen Versionen werden zudem zusätzliche Validierungsregeln zur Unterstützung weiterer Szenarien hinzugefügt.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

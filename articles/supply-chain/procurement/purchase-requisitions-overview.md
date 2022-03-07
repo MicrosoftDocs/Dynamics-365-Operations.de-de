@@ -1,28 +1,28 @@
 ---
 title: Übersicht über Bestellanforderung
 description: Dieses Thema beschreibt den Bestellanforderungsworkflow und die verschiedenen Statuswerte, die eine Bestellanforderung haben kann.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage, PurchReqConsolidationPartByVendor, PurchReqConsolidationLineDetail, PurchReqConsolidationCreate, PurchReqConsolidationBulkEdit, PurchReqConsolidationAddLine
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 2174
+ms.custom:
+- "2174"
+- intro-internal
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 189debe46ea28808cf3081a7d8f49686298e8c8e
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 08902aa8f7376fb394f319f186a339bb967a871dfa9151eb99b80e89cf797716
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020078"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769538"
 ---
 # <a name="purchase-requisition-overview"></a>Übersicht über Bestellanforderung
 
@@ -49,7 +49,7 @@ Der Workflowprozess für Bestellanforderungen kann so konfiguriert werden, dass 
 
 Das folgende Diagramm zeigt die Statuswerte an, die einer Bestellanforderung und einer Bestellanforderungsposition zugewiesen werden, wenn diese den Workflowprozess durchlaufen.  
 
-[![Statuswerte von Bestellanforderungskopf und -position](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
+[![Statuswerte von Bestellanforderungskopfzeile und -position.](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
 ### <a name="purchase-requisition-header-and-line-status-relationships"></a>Statusbeziehungen von Bestellanforderungskopf und -position
 
@@ -181,7 +181,7 @@ Um eine Bestellung für Bestellanforderungspositionen zu erstellen, die nicht f�
 
 Der Prozess für die Bedarfskonsolidierung beginnt, wenn eine Bestellanforderung in einem Workflow genehmigt wird und wenn die Budgetsteuerung für Ihre Organisation konfiguriert wird, wenn die Budgetreservierungen und Vorabbelastungen erfasst worden sind. Das folgende Diagramm zeigt den Prozessfluss für die Bedarfskonsolidierung an.  
 
-[![Ablaufdiagramm zur Bedarfskonsolidierung](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
+[![Ablaufdiagramm zur Bedarfskonsolidierung.](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
 
 Um genehmigte Bestellanforderungspositionen zu konsolidieren, führen Sie folgende Schritte aus:
 
@@ -192,8 +192,7 @@ Um genehmigte Bestellanforderungspositionen zu konsolidieren, führen Sie folgen
 5.  Erstellen Sie Bestellungen für konsolidierte Anforderungspositionen oder für Bestellanforderungspositionen in einer Konsolidierungseinheit.
 
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Anforderung für Verbrauch erstellen](tasks/create-requisition-consumption.md)
 
@@ -201,3 +200,6 @@ Um genehmigte Bestellanforderungspositionen zu konsolidieren, führen Sie folgen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

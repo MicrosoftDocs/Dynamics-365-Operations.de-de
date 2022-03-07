@@ -1,27 +1,24 @@
 ---
 title: Debitorenrückvergütungen generieren und verarbeiten
 description: Diese Verfahren zeigt, wie von Debitorenrückvergütungen aus der Anspruchsgenerierung so weit des Übergebens sie als Abgrenzungen zu Debitoren verarbeitet.
-author: omulvad
-manager: tfehr
+author: Henrikan
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesTable, MCRPriceHistory, SalesEditLines,  PdsRebateTableListPage, MCRBrokerWriteOffReason, MRCHierarchyAddCust, PdsItemRebateGroup, PdsRebate, PdsRebateProgramTMATable, PdsRebateTable, PdsRebateTableListPagePreviewPane, PdsRebateTrans, PdsRebateType_CustLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a8ebc281036842bdc8965e062990438e1fb466ff
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a85c027571a6d77ed61cd874bb9d97221b099967
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428830"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7969086"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Debitorenrückvergütungen generieren und verarbeiten
 
@@ -65,14 +62,14 @@ Diese Verfahren zeigt, wie von Debitorenrückvergütungen aus der Anspruchsgener
 
 ## <a name="process-rebate-claims"></a>Nachlassansprüche verarbeiten
 1. Wechseln Sie zu **Navigationsbereich > Module > Vertrieb und Marketing > Debitorenrückvergütungen > Rückvergütungen**.
-    - Die Rückvergütungsseite agiert ein Werktisch, in dem Sie prüfen, genehmigen und können Prozeßrückvergütungsansprüche. Verarbeiten Sie nun die Ansprüche, die bei der Fakturierung eines Auftrags für Debitor US-009 erstellt wurden, der der Betreff der Rückvergütungsvereinbarung USMF-000001 ist.   
+    - Die Seite Rabatte dient als Werkbank, in der Sie Rabattanträge überprüfen, genehmigen und verarbeiten können. Verarbeiten Sie nun die Ansprüche, die bei der Fakturierung eines Auftrags für Debitor US-009 erstellt wurden, der der Betreff der Rückvergütungsvereinbarung USMF-000001 ist.   
     - Die erste Zeile stellt einen Rückvergütungsanspruch für 800 EUR, der auf dem Verkauf von 40 Einheiten des Produkts T0020 ist, berechnet bei 20 EUR pro Einheit dar. Dieses entspricht die Bedingungen der ersten Mengenpause in der Nachlassvereinbarung ab.  
     - Der zweite Anspruch liegt bei 2.400 EUR, der auf dem Verkauf von 60 Einheiten des Produkts T0020 ist, berechnet bei 40 EUR pro Einheit, aufgrund der zweiten Mengenpause in der Vereinbarung.  
     - Beide Ansprüche sind im Status „Zu berechnen“. Das bedeutet, dass sie mit einer Vereinbarung zugeordnet sind, die das Verkaufsleistung des Debitors auf Basis regelmäßiger verfolgt und dass sie neu berechnet werden müssen, um das Gesamtumsatzvolumen innerhalb der betreffenden Periode abzulegen.   
 2. Klicken Sie auf **Kumulieren**.
 3. Geben Sie im Feld **Debitor** einen Wert ein, oder wählen Sie einen Wert aus.
 4. Das **Startdatum** darf nicht vor dem heutigen Datum liegen.
-5. Klicken Sie auf **OK**. Infolge der Ausführung im Funktion **Kumulieren**, ist der vorkalkulierte Anspruchsbetrag nun reguliert wurden, um die Verwendung zu erläutern, dass das Gesamtumsatzvolumen des Debitors in die zutreffende Periode höher als ist, als erste Nachlass generiert wurde. Im bestimmten Fertigartikel da die Summe eingekaufte Menge 100 Einheiten erreicht hat, gemäß Abschnitt der Debitor nun für 40 EUR pro Einheit (gemäß der zweiten Mengenpause der Vereinbarung) oder 400 EUR des gesamten Rückvergütungsbetrags. Die Differenz wird als neuer Anspruch "Regulierung" für die zusätzlichen 800 EUR erfasst. Der Status der Rückvergütungsansprüche, die in im Aktualisierung einbezogen waren, werden jetzt zu berechnetem festgelegt. 
+5. Klicken Sie auf **OK**. Infolge der Ausführung im Funktion **Kumulieren**, ist der vorkalkulierte Anspruchsbetrag nun reguliert wurden, um die Verwendung zu erläutern, dass das Gesamtumsatzvolumen des Debitors in die zutreffende Periode höher als ist, als erste Nachlass generiert wurde. Im bestimmten Fertigartikel da die Summe eingekaufte Menge 100 Einheiten erreicht hat, gemäß Abschnitt der Debitor nun für 40 EUR pro Einheit (gemäß der zweiten Mengenpause der Vereinbarung) oder 4,000 EUR des gesamten Rückvergütungsbetrags. Die Differenz wird als neuer Anspruch "Regulierung" für die zusätzlichen 800 EUR erfasst. Der Status der Rückvergütungsansprüche, die in im Aktualisierung einbezogen waren, werden jetzt zu berechnetem festgelegt. 
 6. Schalten Sie in der Liste 'Alle Zeilen markieren' ein/aus.
 7. Klicken Sie auf **Genehmigen**.
 8. Klicken Sie auf **Verarbeiten**.
@@ -82,3 +79,6 @@ Diese Verfahren zeigt, wie von Debitorenrückvergütungen aus der Anspruchsgener
     - Die Rückvergütungs-Abgrenzungserfassung wurde gutgeschrieben, um die zukünftigen Verbindlichkeiten für den Debitor darzustellen.
     - Das ist Rückvergütungsausgabenkonto wurde belastet, um die Kosten darzustellen, die in Verbindung mit dem Verkauf angefallen sind.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

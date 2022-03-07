@@ -2,11 +2,9 @@
 title: Delegieren von Arbeitsaufgaben in einem Workflow
 description: Wenn Sie für einige Zeit abwesend oder anderweitig für Arbeitsaufgaben nicht verfügbar sind, können Sie Ihre Arbeitsaufgaben an andere Benutzer delegieren oder diesen neu zuweisen.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 07/07/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysUserSetup, WorkflowDelegationUserListLookup
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 48d8fd06217d318fa8208e11ffa5624f6be25be1
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 72ffe8123203123b75ea424814393d73ea8f728078e9e34fe903e5944ec11cfb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796705"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749555"
 ---
 # <a name="delegate-work-items-in-a-workflow"></a>Delegieren von Arbeitsaufgaben in einem Workflow
 
@@ -60,3 +58,6 @@ Wenn Sie planen, für einen Zeitraum nicht im Büro anwesend oder anderweitig ni
 8. Geben Sie im Feld **Enddatum/-uhrzeit** ein Datum und eine Uhrzeit ein.
 9. Aktivieren Sie die Delegierungsregel durch Aktivieren des Kontrollkästchens **Aktiviert**. 
 10. Geben Sie in das Feld **Kommentar** einen Kommentar ein, der den Grund für die Delegierung der Arbeitsaufgaben erläutert.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,25 +2,25 @@
 title: Kreditorenrechnungsdaten
 description: In diesem Thema werden die Daten beschrieben, die auf Kreditorenrechnungen erscheinen. Außerdem wird erläutert, wie Sie das System so einrichten, dass es das Buchungsdatum automatisch anpasst.
 author: sunfzam
-ms.date: 2/09/2022
+ms.date: 08/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 064a125d448ebb3511db2d9b1f4228380805dc44
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: a066f828b47f297b8ad520b9eb0f4f311d49b111
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105462"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647890"
 ---
 # <a name="vendor-invoice-dates"></a>Kreditorenrechnungsdaten
 
@@ -50,9 +50,6 @@ Führen Sie diese Schritte aus, damit das System das Buchungsdatum für Kreditor
     - **Buchungsdatum immer auf Systemdatum ändern** – Das System ändert das Buchungsdatum beim Buchen automatisch auf das Systemdatum.
     - **Buchungsdatum in Systemdatum ändern, wenn Buchungsdatumsperiode geschlossen oder gesperrt ist** – Das System ändert beim Buchen das Buchungsdatum auf das Systemdatum, jedoch nur, wenn die entsprechende Periode des Buchungsdatums den Status **Abgeschlossen** oder **Gesperrt** hat.
     - **Buchungsdatum in den ersten Tag der neuen Periode ändern, wenn Buchungsdatumsperiode geschlossen oder gesperrt ist** – Das System ändert das Buchungsdatum auf den ersten Tag der neuen offenen Periode, jedoch nur, wenn die entsprechende Periode des Buchungsdatums den Status **Abgeschlossen** oder **Gesperrt** hat.
-
-> [!NOTE]
-> Liegt das automatisch angepasste neue Buchungsdatum in einem neuen Geschäftsjahr, wird das Buchungsdatum der Rechnung nicht fortgeschrieben. Der Benutzer erhält eine Fehlermeldung „Das Geschäftsjahr hat sich geändert. Bitte überprüfen Sie das Buchungsdatum und geben Sie es erneut ein.“ Das Rechnungsbuchungsdatum muss zum Buchen auf das neue Geschäftsjahrsdatum aktualisiert werden.
 
 ## <a name="impact-of-posting-date-changes"></a>Auswirkungen von Änderungen des Buchungsdatums
 

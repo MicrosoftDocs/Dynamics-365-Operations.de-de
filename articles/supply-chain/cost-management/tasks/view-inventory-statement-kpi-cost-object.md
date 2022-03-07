@@ -1,28 +1,25 @@
 ---
 title: Lageraufstellung und KPI nach Kostenobjekt anzeigen
-description: Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
+description: In diesem Thema wird erläutert, wie Sie die Lageraufstellung und KPI nach Kostenobjekt anzeigen.
 author: AndersGirke
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, CostAdminWorkspace, CostLastInventoryCloseCard, CostLastBackflushCostingCard, CostStatementCacheCard, CostReleasedProductsMissingCostingDataFormPart, CostCalculationPeriodTopVariancesChartFormPart, EcoResProductDetailsExtended, InventCostOnhandItem, CostStatement, CostInventoryFlowChart, CostInventoryTurnCard, CostInventoryAccuracyCard
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bc60d442b9ed59b0bf882f578c31b8c591f4959a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f813b0e04a2450cb64e92128d36495a483ad14e1
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428577"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568158"
 ---
 # <a name="view-inventory-statement-and-kpi-by-cost-object"></a>Lageraufstellung und KPI nach Kostenobjekt anzeigen
 
@@ -30,12 +27,15 @@ ms.locfileid: "4428577"
 
 Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Diese Prozedur ist für den Kostencontroller vorgesehen.
 
-1. Klicken Sie auf "Kostenverwaltung".
-2. Klicken Sie auf "Freigegebene Produkte".
-3. Verwenden Sie den Schnellfilter, um Datensätze zu suchen. Filtern Sie beispielsweise im Feld "Artikelnummer" mit dem Wert "d0005".
-4. Klicken Sie im Aktivitätsbereich auf "Kosten verwalten".
-5. Klicken Sie auf "Kostenobjekte".
-6. Klicken Sie auf "Lageraufstellung & KPIs".
-7. Geben Sie in das Feld "Von Datum" ein Datum ein.
-8. Geben Sie in das Feld "Bis Datum" ein Datum ein.
+1. Wählen Sie **Kostenverwaltung** aus.
+2. Wählen Sie ein **Freigegebene Produkte** aus.
+3. Verwenden Sie den Schnellfilter, um Datensätze zu suchen. Filtern Sie beispielsweise das Feld **Artikelnummer** nach dem Wert *d0005*.
+4. Wählen Sie im Aktionsbereich **Kosten verwalten** aus.
+5. Wählen Sie **Kostenobjekte** aus.
+6. Wählen Sie **Lageraufstellung und KPIs** aus.
+7. Geben Sie im Feld **Von Datum** ein Datum ein.
+8. Geben Sie im Feld **Bis Datum** ein Datum ein.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

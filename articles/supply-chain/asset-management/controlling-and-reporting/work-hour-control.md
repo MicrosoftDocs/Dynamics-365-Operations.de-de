@@ -1,12 +1,10 @@
 ---
 title: Arbeitszeitsteuerung
 description: In diesem Thema wird die Arbeitszeitsteuerung im Asset Management erläutert.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetHourControl
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: cc4382d72e032fdfad05f2077ffe8e41e64c6a55
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 90c4f649cc9ea45341ede923294a7c5a892cd68714db356c3799430d18f5de60
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018470"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742775"
 ---
 # <a name="work-hour-control"></a>Arbeitszeitsteuerung
 
@@ -44,7 +42,7 @@ Die Berechnungen für Anlagen, Technische Standorte und Arbeitsaufträge sind na
 
 4. Wählen Sie bei Bedarf ein **Finanzdimensionssatz**, das in die Berechnung einbezogen werden soll.
 
-5. Wählen Sie „Ja“ auf der Schaltfläche **Null überspringen** Umschalten, wenn Sie keine Ergebnisse mit Nullstunden anzeigen möchten.
+5. Wählen Sie „Ja“ auf der Schaltfläche **Null überspringen** umschalten, wenn Sie keine Ergebnisse mit Nullstunden anzeigen möchten.
 
 6. Im Feld **Stufe** können Sie angeben, wie detailliert die Stundenkontrollzeilen zu Technischen Standorten sein sollen. 
 
@@ -68,8 +66,11 @@ Die Abbildung zeigt ein Beispiel für eine Berechnung der **Anlagenstundensteuer
 - Das Feld **Iststunden** zeigt gebuchte Stunden auf Arbeitsaufträgen. 
 - Das Feld **Verpflichtete Stunden** zeigt die Gesamtzahl der Stunden, die Ihr Unternehmen in Bezug auf Arbeitsaufträge verpflichtet ist.
 
-![Beispiel der Berechnung der Anlagenstundensteuerung](media/04-controlling-and-reporting.png)
+![Beispiel der Berechnung der Anlagenstundensteuerung.](media/04-controlling-and-reporting.png)
 
 Eine weitere Möglichkeit, eine Stundenberechnung durchzuführen, besteht darin, Anlagen in **Alle Anlagen** oder **Aktive Anlagen** mehrfach auszuwählen. Dann klicken Sie auf die Schaltfläche **Stundensteuerung** auf dem Inforegister **Allgemein**. Die ausgewählten Anlagen werden automatisch in das Feld **Anlagen** auf der Seite **Einzubeziehende Anlagen** FastTab eingefügt. Klicken Sie im Dialog **Anlagenstundensteuerung** auf **OK**, und die Berechnung für die ausgewählten Anlagen wird angezeigt. Das gleiche Verfahren kann für Technische Standorte in **Alle Technischen Standorte** oder **Aktive Technische Standorte** und für Arbeitsaufträge in **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** durchgeführt werden.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

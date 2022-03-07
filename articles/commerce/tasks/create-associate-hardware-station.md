@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: adbd5ef1cafe778cf897aafb05c77fca89be3e20
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d0c02246a20ef28c0f4f28b73dfe5ff56f38a68b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964919"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5247043"
 ---
 # <a name="create-and-associate-a-hardware-station"></a> Eine Hardwarestation erstellen und zuordnen
 
@@ -57,3 +57,6 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen einer neuen H
 23. Geben Sie einen Wert in das Feld "Terminalkennung für Überweisung (elektronisch)" ein.
 24. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

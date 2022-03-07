@@ -2,35 +2,30 @@
 title: Die kanalübergreifende Freigabe aktivieren und verwenden
 description: In diesem Thema wird beschrieben, wie Sie die kanalübergreifende Freigabefunktion von Microsoft Dynamics 365 Commerce Site Builder aktivieren und verwenden.
 author: psimolin
-manager: annbe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 77284045bda193500117978102c0565c5f15ec6d
-ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
+ms.openlocfilehash: 05614b3ec14bfca9551242e5cf31aee0cb21c39a85150114af446a187fac998a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4412694"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742415"
 ---
-# <a name="enable-and-use-cross-channel-sharing"></a>Die kanalübergreifende Freigabe aktivieren und verwenden
+# <a name="enable-and-use-cross-channel-sharing"></a>Kanalübergreifende Freigabe aktivieren und verwenden
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie die kanalübergreifende Freigabefunktion von Microsoft Dynamics 365 Commerce Site Builder aktivieren und verwenden.
-
-## <a name="overview"></a>Übersicht
 
 Durch die kanalübergreifende Freigabe können Einzelhändler Inhalte wiederverwenden und zwischen mehreren Kanälen einer Website austauschen. Diese Funktion ist nützlich, wenn die Site-Kanäle eine kompatible Basissprache haben oder wenn sie zahlreiche gemeinsame Inhaltselemente haben.
 
@@ -53,15 +48,15 @@ Führen Sie die folgenden Schritte aus, um die kanalübergreifende Freigabe im C
 1. Gehen Sie zu **Site-Einstellungen \> Funktionen**.
 1. Stellen Sie die Option für die **kanalübergreifende** Freigabe-Funktion auf **Ein**.
 
-    ![Die auf „Ein“ gesetzte Option „Kanalübergreifend“ im Commerce Site Builder](./media/enabling-cross-channel-sharing.png)
+    ![Die auf „Ein“ gesetzte Option „Kanalübergreifend“ im Commerce-Website-Generator.](./media/enabling-cross-channel-sharing.png)
 
 Nachdem Sie die kanalübergreifende Freigabe aktiviert haben, werden kanalübergreifende Informationen im Abschnitt **Kanäle** bei **Site-Einstellungen \> Funktionen** angezeigt, wie das Beispiel in der folgenden Abbildung zeigt.
 
-![Kanalinformationen, die nach der aktivierten kanalübergreifenden Freigabe sichtbar sind](./media/channels-cross-channel.png)
+![Kanalinformationen, die nach der aktivierten kanalübergreifenden Freigabe sichtbar sind.](./media/channels-cross-channel.png)
 
 Nachdem Sie die kanalübergreifende Freigabe aktiviert haben, enthält das Feld **Kanal** oben rechts im Commerce Site Builder eine Option **Kanalübergreifender Onlineshop**, mit der Sie kanalübergreifende Inhalte verwalten können, wie in der folgenden Abbildung dargestellt.
 
-![Option „Kanalübergreifender Onlineshop“ im Feld „Kanäle“, nachdem die kanalübergreifende Freigabe aktiviert wurde](./media/cross-channel-dropdown.png)
+![Option „Kanalübergreifender Onlineshop“ im Feld „Kanäle“, nachdem die kanalübergreifende Freigabe aktiviert wurde.](./media/cross-channel-dropdown.png)
 
 ## <a name="create-and-use-cross-channel-content"></a>Erstellen und verwenden kanalübergreifender Inhalte
 
@@ -137,3 +132,6 @@ Wenn Sie nun die Basis-URL des Kanals verwenden und zur URL der kanalübergreife
 [Dokumentstatus und -Lebenszyklus](document-states-overview.md)
 
 [Arbeiten mit Veröffentlichungsgruppen](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

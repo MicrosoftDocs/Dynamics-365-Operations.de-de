@@ -2,16 +2,13 @@
 title: In Stücklistenberechnungen mit Standardkosten verwendete Informationen
 description: In einer Stücklistenberechnung werden anhand von Daten aus mehreren Quellen die Standardkosten eines produzierten Artikels berechnet. Zu diesen Quellen zählen Informationen zu Artikeln, Listenrouten, Berechnungsformeln für indirekte Kosten sowie die Nachkalkulationsversion.
 author: AndersGirke
-manager: tfehr
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcGroup, BOMCalcTable, ProdParmBOMCalc
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 65571
 ms.assetid: ca17e6dd-b16a-4bbc-8682-b16345ab9906
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bbc7e4105d085e2af0e8e6e574244f5083d08c15
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 26d5590943ece1480e11a17a684cd7ec8cbaae451ddd5e0407bc72576ae53055
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428681"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731864"
 ---
 # <a name="information-used-in-bom-calculations-with-standard-costs"></a>In Stücklistenberechnungen mit Standardkosten verwendete Informationen
 
@@ -84,3 +81,6 @@ Beim Initiieren der Herstellkostenkalkulation können eine Reihe von Information
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

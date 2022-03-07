@@ -2,27 +2,24 @@
 title: Arbeitsvorlage für Bestellungen einrichten
 description: In diesem Thema wird beschrieben, wie Sie eine einfache Arbeitsvorlage einrichten, die beim Einlagern empfangener Artikel verwendet wird.
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkTemplateTable, SysQueryForm
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6628936a56619de255ca7dc7b332b5819918c310
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1e79c4e1810cf095a342a370018190fd0d587c15
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428914"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817292"
 ---
 # <a name="set-up-a-work-template-for-purchase-orders"></a>Arbeitsvorlage für Bestellungen einrichten
 
@@ -61,3 +58,6 @@ In diesem Thema wird beschrieben, wie Sie eine einfache Arbeitsvorlage einrichte
 6. Geben Sie im Feld **Arbeitsklassenkennung** einen Wert ein. Die Entnahme- und Einlagerungsanweisungen sind ein Satz. Jede Entnahme/Einlagerung muss dieselbe Arbeitsklasse aufweisen. Verwenden Sie die gleiche Arbeitsklasse, die Sie für die Entnahmeanweisung angegeben haben.  
 7. Wählen Sie **Speichern**. Beachten Sie, dass das Kontrollkästchen **Valid** nun aktiviert ist.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

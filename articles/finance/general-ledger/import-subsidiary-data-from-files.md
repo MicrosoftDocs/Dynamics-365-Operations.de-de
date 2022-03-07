@@ -2,9 +2,11 @@
 title: Importieren der Daten einer Tochtergesellschaft aus Dateien
 description: In diesem Thema wird erläutert, wie Sie Daten von externen Systemen so vorbereiten, dass sie in Microsoft Dynamics 365 Finance importiert werden können.
 author: jinniew
+manager: AnnBe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 4be1e748724331c4e2089da8a08a9ac7e5cf88a2ac6d3d89b37b9fcd4480f516
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7ced1b970aefa20a27ab16e005dff8fabace78d1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727299"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988823"
 ---
 # <a name="import-subsidiary-data-from-files"></a>Importieren der Daten einer Tochtergesellschaft aus Dateien
 
@@ -58,6 +60,3 @@ In diesem Thema wird erläutert, wie Sie Daten von externen Systemen so vorberei
 8. Stellen Sie die **Stapelverarbeitung**-Option auf **Ja**, um die Konsolidierung zu einem bestimmten Zeitpunkt als Stapelaufgabe auszuführen. Um die Konsolidierung sofort auszuführen, wählen Sie **OK**. 
 
 Die in den Tochtergesellschaften für die Konsolidierung angegebenen Buchungen und Salden werden den entsprechenden Konten der konsolidierten juristischen Person hinzugefügt.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

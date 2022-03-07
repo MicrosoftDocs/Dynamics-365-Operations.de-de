@@ -1,12 +1,10 @@
 ---
-title: " Kanalattribute definieren"
+title: Kanalattribute definieren
 description: Erweitern Sie den Kanal, indem Sie Kanal- und Produktattribute hinzufügen.
 author: jashanno
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailInternalOrganization, EcoResAttributeGroup, EcoResAttributeGroupAttribute, RetailAddChannelItems, RetailCatalogProductAttributeValue, RetailMedia
 audience: Application User
@@ -16,14 +14,14 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f50e925689f11f67285c956aec1a7ece235cdb74
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e99c59eba133427dad6d6a27a96b64f06621c932924293e3978d7f540e86153e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964694"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6726406"
 ---
-# <a name="define-channel-attributes"></a> Kanalattribute definieren
+# <a name="define-channel-attributes"></a>Kanalattribute definieren
 
 [!include [banner](../includes/banner.md)]
 
@@ -32,8 +30,8 @@ Erweitern Sie den Kanal, indem Sie Kanal- und Produktattribute hinzufügen. Sie 
 
 ## <a name="define-channel-product-attribute"></a>Definieren Sie die Kanalproduktattribute.
 1. Wählen Sie Einzelhandel und Handel > Kanaleinstellung > Kanalkategorien und Produktattribute.
-2. In der Struktur wählen Sie "Contoso Einzelhandel\Mode\Houston".
-3. Klicken Sie auf "Bearbeiten".
+2. In der Struktur wählen Sie „Contoso Einzelhandel\Mode\Houston“.
+3. Klicken Sie auf Bearbeiten.
 4. Geben Sie im Feld "Kategoriehierarchie" einen Wert ein oder wählen Sie einen Wert aus.
     * Die Navigationshierarchie wird für das Navigieren des Produkts in Ihren Kanäle verwendet.  
 5. Erweitern Sie den Abschnitt "Attributgruppe".
@@ -71,3 +69,6 @@ Erweitern Sie den Kanal, indem Sie Kanal- und Produktattribute hinzufügen. Sie 
 33. Klicken Sie auf "OK".
 34. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

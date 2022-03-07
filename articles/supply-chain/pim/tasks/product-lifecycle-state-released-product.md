@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5e7df272a946506dfa4e8d7a04181dd0cb40972c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2ec43b628550b156fb8a62a68442fb66b59da797
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428555"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5251912"
 ---
 # <a name="assign-a-product-lifecycle-state-to-a-released-product"></a>Ein Produktlebensyklusstatus einem freigegebenen Produkt zuweisen
 
@@ -37,3 +36,6 @@ Diese Prozedur zeigt, wie ein Produktlebenszyklus-Status einem freigegebenen Pro
 5. Geben Sie im Feld „Produktlebenszyklus-Status” einen Wert ein, oder wählen Sie einen Wert aus.
 6. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

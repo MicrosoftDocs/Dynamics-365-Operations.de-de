@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Commerce-Auswertungsumgebung – Übersicht
+title: Dynamics 365 Commerce-Evaluierungsumgebung – Überblick
 description: Dieses Thema enthält eine Übersicht der Microsoft Dynamics 365 Commerce-Auswertungsumgebung.
 author: v-chgri
 manager: annbe
@@ -10,21 +10,20 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 25c0574e8d4502bcb846fba0ddf913d81eded87b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cc6bffba6ee402c6b48d6a3c8f8356eb32b5423b
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412459"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478019"
 ---
-# <a name="dynamics-365-commerce-evaluation-environment-overview"></a>Dynamics 365 Commerce-Auswertungsumgebung – Übersicht
+# <a name="dynamics-365-commerce-evaluation-environment-overview"></a>Dynamics 365 Commerce-Evaluierungsumgebung – Überblick
 
 [!include [banner](includes/banner.md)]
 
@@ -32,8 +31,6 @@ Dieses Thema enthält eine Übersicht der Microsoft Dynamics 365 Commerce-Auswer
 
 > [!NOTE]
 > Commerce-Auswertungsumgebungen sind nicht allgemein verfügbar und sie werden Partner und Kunden auf Anfrage gewährt. Für weitere Informationen wenden Sie sich an den Ansprechpartner Ihres Microsoft-Partners.
-
-## <a name="overview"></a>Übersicht
 
 Die Commerce-Auswertungsumgebung ist eine optionale End-to-End-Umgebung von Dynamics 365 Commerce, mit der Partner und potenzielle Kunden das Commerce-Produkt testen können.
 
@@ -64,3 +61,6 @@ Informationen zum Bereitstellen der Commerce-Auswertungsumgebung finden Sie unte
 [Optionale Funktionen für eine Dynamics 365 Commerce-Auswertungsumgebung konfigurieren](cpe-optional-features.md)
 
 [Dynamics 365 Commerce-Auswertungsumgebung – FAQ](cpe-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

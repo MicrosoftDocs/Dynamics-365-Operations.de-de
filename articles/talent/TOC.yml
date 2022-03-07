@@ -1,6 +1,8 @@
-- name: Dynamics 365 for Talent
-  href: talent-welcome.md
+- name: Einstellung von Dynamics 365 Talent
+  href: ../human-resources/hr-talent-retire.md?toc=/dynamics365/talent/toc.json
   items:
+    - name: Startseite von Dynamics 365 Talent
+      href: ./index.md
     - name: Erste Schritte
       items:
         - name: Erste Schritte mit Talent
@@ -151,7 +153,7 @@
         - name: Daten aus Attract und Onboard exportieren
           href: attract-onboard-export-data.md
         - name: Canvas-Apps aus Power Apps einbetten
-          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
         - name: Support zu Talent anfordern
           href: talent-support.md
     - name: Ihr Unternehmen mit Attract ausstatten

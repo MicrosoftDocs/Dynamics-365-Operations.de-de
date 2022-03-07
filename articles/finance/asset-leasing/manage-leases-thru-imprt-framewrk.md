@@ -2,11 +2,13 @@
 title: Leasingobjekte über das Framework für Mietvertragsimport verwalten
 description: In diesem Thema wird erläutert, wie Sie mithilfe des Mietvertragsimport-Frameworks mehrere Mietverträge gleichzeitig anpassen.
 author: moaamer
-ms.date: 04/12/2021
+manager: Ann Beebe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: AssetLeaseLeaseImportHeader
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 534584a7da494b427d48b1bc97bf6554d25f4a79d9d62f59ec5f2afb65e67431
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7df2f55f596cab54315c2da2ec0492422514f49c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758896"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971302"
 ---
 # <a name="manage-leases-through-the-lease-import-framework"></a>Leasingobjekte über das Framework für Mietvertragsimport verwalten
 
@@ -51,9 +53,9 @@ Um die Mietvertrags-Staging-Daten anzuzeigen, bevor die Verarbeitung ausgeführt
 Mit der Vergleichsfunktion können Sie einen Datensatz, den Sie importieren, mit dem entsprechenden Datensatz vergleichen, der sich bereits in Ihrem System befindet. Um einen einzelnen Mietvertragsdatensatz zu vergleichen, wählen Sie einen Mietvertrag aus und wählen Sie dann **Vergleichen** aus. Sie sollten diesen Schritt ausführen, um einen **Unterschiede**-Bericht zu generieren, bevor Sie die Mietvertragsdatensätze migrieren. Die Vergleichsfunktion vergleicht die Werte in den Staging-Daten mit den Werten für Mietverträge, die sich derzeit im System befinden.
 
 > [!NOTE]
-> Die Vergleichsfunktion funktioniert nicht für Mietverträge mit dem **Datensatz hinzufügen**-Prozesstyp, da mit diesem Mietvertrag nichts verglichen werden kann.
+> Die Vergleichsfunktion funktioniert nicht für Mietverträge mit dem **Datensatz hinzufügen**-Prozesstyp, da mit diesem Mietvertrag nichts zu vergleichen ist.
 >
-> Um mehrere Mietverträge gleichzeitig zu vergleichen, gehen Sie zu **Anlagenleasing \> Mietvertragsimport-Framework \> Periodisch** und wählen Sie **Vergleichen** aus.
+> Um mehrere Mietverträge gleichzeitig zu vergleichen, gehen Sie zu **Anlagenleasing \> Mietvertragsimport-Framework \> Periodisch \> Vergleichen** und wählen Sie **Vergleichen** aus.
 
 Für jede Entität können Sie die Unterschiede zwischen dem, was sich derzeit im System befindet, und dem, was sich in den Staging-Tabellen befindet, anzeigen. Wählen Sie für jede Entität in den Staging-Tabellen **Unterschiede anzeigen** aus. Das angezeigte Dialogfeld zeigt den aktuellen Wert und den vorgeschlagenen Staging-Wert an.
 
@@ -62,17 +64,17 @@ Sie können den Staging-Wert auch aktualisieren, indem Sie ihn in der **Neuer We
 Sie können Mietverträge validieren, um sicherzustellen, dass die Datensätze ohne Fehler in das System übernommen werden können. Bevor ein Mietvertragsdatensatz migriert wird, führt das System mehrere Überprüfungen durch, um sicherzustellen, dass der Datensatz erfolgreich importiert wird. Wählen Sie **Validieren** aus, um einen einzelnen Mietvertrag zu validieren.
 
 > [!NOTE]
-> Um mehrere Mietverträge gleichzeitig zu validieren, gehen Sie zu **Anlagenleasing \> Mietvertragsimport-Framework \> Periodisch** und wählen Sie **Überprüfen** aus.
+> Um mehrere Mietverträge gleichzeitig zu validieren, gehen Sie zu **Anlagenleasing \> Mietvertragsimport-Framework \> Periodisch \> Validieren** und wählen Sie **Vergleichen** aus.
 
 Um einen einzelnen Mietvertrag zu bearbeiten, wählen Sie **Mietvertragsdatensätze migrieren** auf der **Header importieren**-Seite. Wenn ein Mietvertrag migriert wird, führt das System die im **Prozesstyp**-Feld angegebenen Aktion aus.
 
 > [!NOTE]
-> Um mehrere Mietverträge gleichzeitig zu migrieren, gehen Sie zu **Anlagenleasing \> Mietvertragsimport-Framework \> Periodisch** und wählen Sie **Migrieren** aus.
+> Um mehrere Mietverträge gleichzeitig zu validieren, gehen Sie zu **Anlagenleasing \> Mietvertragsimport-Framework \> Periodisch \> Validieren** und wählen Sie **Vergleichen** aus.
 
 Nach dem Vergleich der Mietverträge können Sie einen Bericht ausführen, um die Unterschiede für jeden Mietvertrag anzuzeigen, der in der Import-ID enthalten ist. Um den Bericht für einen Mietvertrag auszuführen, wählen Sie diese Mietverträge in den Staging-Daten aus und wählen Sie dann **Bericht vergleichen und anzeigen \> Differenzbericht** aus.
 
 > [!NOTE]
-> Um mehrere Mietverträge gleichzeitig zu vergleichen, gehen Sie zu **Anlagenleasing \> Mietvertragsimport-Framework \> Periodisch** und wählen Sie **Vergleichen** aus. 
+> Um mehrere Mietverträge gleichzeitig zu validieren, gehen Sie zu **Anlagenleasing \>Anfragen und Berichte \> Differenzbericht** und wählen Sie **Validieren** aus.
 
 ## <a name="set-up-update-fields"></a>Einrichten von Aktualisierungsfeldern
 
@@ -80,6 +82,3 @@ Wenn Sie das Mietvertragsimport-Framework zum Aktualisieren von Mietverträgen v
 
 1. Gehen Sie zu **Anlagenleasing \> Mietvertragsimport Framework \> Installieren \> Feldauswahl aktualisieren**.
 2. Wählen Sie auf der angezeigten Seite die zu aktualisierenden Felder aus und klicken Sie dann auf den grünen Pfeil, um sie in die Liste **Ausgewählte Felder** zu verschieben. Nur Felder in der Liste **Ausgewählte Felder** können mithilfe der Mietvertragsimport-Suite aktualisiert werden.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

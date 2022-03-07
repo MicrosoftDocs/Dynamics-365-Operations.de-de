@@ -2,27 +2,24 @@
 title: Neuerungen und Änderungen in Dynamics 365 Supply Chain Management 10.0.11 (Juni 2020)
 description: In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Supply Chain Management 10.0.11 neu oder geändert wurden.
 author: kamaybac
-manager: tfehr
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 52090645b0bb00399a88926c0b48a3cee8fcd114
-ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
+ms.openlocfilehash: 76a28b9285bb8edfaaee7f9bc3cb4f03deb7a731abb55624394278d72398c748
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4429010"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723526"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>Neuerungen und Änderungen in Dynamics 365 Supply Chain Management 10.0.11 (Juli 2020)
 
@@ -36,19 +33,19 @@ In diesem Thema werden die Funktionen aufgeführt, die in Microsoft Dynamics 365
 
 ## <a name="features-included-in-this-release"></a>In dieser Version enthaltene Funktionen
 
-Die folgenden Funktionen sind in diesem Release enthalten. Die Funktionen-Titel verweisen auf zusätzliche Informationen auf der Seite [Release-Pläne](https://docs.microsoft.com/dynamics365/release-plans/). Zusätzliche Links verweisen auf zusätzliche Dokumentationen oder Videos, die derzeit für diese Funktion verfügbar sind. Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), bevor Sie sie verwenden können.
+Die folgenden Funktionen sind in diesem Release enthalten. Die Funktionen-Titel verweisen auf zusätzliche Informationen auf der Seite [Release-Pläne](/dynamics365/release-plans/). Zusätzliche Links verweisen auf zusätzliche Dokumentationen oder Videos, die derzeit für diese Funktion verfügbar sind. Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), bevor Sie sie verwenden können.
 
-- [Speicher für den Bericht zum verfügbaren Lagerbestand](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
+- [Speicher für den Bericht zum verfügbaren Lagerbestand](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
 
-- [Verbesserungen beim Kennzeichenempfang für die Warehouse-App](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - Weitere Informationen finden Sie unter [Kennzeichenempfang über die Warehouse-App](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Verbesserungen beim Kennzeichenempfang für die Warehouse-App](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - Weitere Informationen finden Sie unter [Kennzeichenempfang über die Warehouse Management Mobile App](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 
-- [Verbesserungen der Positionsreservierung für das Chargennummernreservierungsformular](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form)<br> - Weitere Informationen finden Sie unter [Dieselbe Charge für einen Auftrag reservieren](../sales-marketing/reserve-same-batch-sales-order.md).
+- [Verbesserungen der Positionsreservierung für das Chargennummernreservierungsformular](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form)<br> - Weitere Informationen finden Sie unter [Dieselbe Charge für einen Auftrag reservieren](../sales-marketing/reserve-same-batch-sales-order.md).
 
-- [Neue Datenentitäten für den Fertigungsbereich](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
+- [Neue Datenentitäten für den Fertigungsbereich](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 
-- [Zu hoher Zugang bei Ladungspositionsmenge](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - Weitere Informationen finden Sie unter [Lagerinterne Abwicklung eingehender Ladungen für Bestellungen](../warehousing/inbound-load-handling.md).
+- [Zu hoher Zugang bei Ladungspositionsmenge](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - Weitere Informationen finden Sie unter [Lagerinterne Abwicklung eingehender Ladungen für Bestellungen](../warehousing/inbound-load-handling.md).
 
-- [Melden Sie die Chargennummern vom Jobkartengerät als fertig](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)<br> - Weitere Informationen finden Sie unter [Vom Einzelvorgangskartengerät als erledigt melden](../production-control/report-finished-job-device.md).
+- [Melden Sie die Chargennummern vom Jobkartengerät als fertig](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)<br> - Weitere Informationen finden Sie unter [Vom Einzelvorgangskartengerät als erledigt melden](../production-control/report-finished-job-device.md).
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
@@ -64,7 +61,7 @@ Melden Sie sich bei Lifecycle Services (LCS) an, um Informationen zu den Fehlerb
 
 Sie möchten Informationen über zukünftige und vor Kurzem veröffentlichte Funktionen unserer Unternehmens-Apps oder -Plattformen erhalten?
 
-Testen Sie [Dynamics 365: 2020 Release Welle 1 Plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). Hier finden Sie zentral und übersichtlich in einem Dokument alle Informationen, die Sie für Ihre Planung benötigen.
+Testen Sie [Dynamics 365: 2020 Release Welle 1 Plan](/dynamics365-release-plan/2020wave1/index). Hier finden Sie zentral und übersichtlich in einem Dokument alle Informationen, die Sie für Ihre Planung benötigen.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Entfernte und veraltete Supply Chain Management-Funktionen
 
@@ -76,3 +73,6 @@ Das Thema [Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Mana
 Bevor eine Funktion aus dem Produkt entfernt wird, wird der Verfallshinweis im Thema [Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 Monate vor dem Entfernen angezeigt.
 
 Bei Änderungen, die sich nur auf die Kompilierungszeit auswirken, aber binär mit Sandbox- und Produktionsumgebungen kompatibel sind, beträgt die Entfernungszeit weniger als 12 Monate. In der Regel handelt es sich hierbei um Funktionsaktualisierungen, die am Compiler vorgenommen werden müssen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

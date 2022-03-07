@@ -1,37 +1,31 @@
 ---
-title: Verwalten von robots.txt-Dateien
+title: Robots.txt-Dateien verwalten
 description: In diesem Thema wird beschrieben, wie Sie robots.txt-Dateien in Microsoft Dynamics 365 Commerce verwalten.
 author: BrianShook
-manager: annbe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2019-12-18
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ad87594b9c20d0c2b53e8d4e7c1170a78babe74b
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: e1078de354a96cc50b7c1b79a864db5041ea5069df650670e65531faaeb32e0a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517451"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754391"
 ---
-# <a name="manage-robotstxt-files"></a>Verwalten von robots.txt-Dateien
-
+# <a name="manage-robotstxt-files"></a>Robots.txt-Dateien verwalten
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie robots.txt-Dateien in Microsoft Dynamics 365 Commerce verwalten.
-
-## <a name="overview"></a>Übersicht
 
 Der Robots-Ausschlussstandard oder robots.txt ist ein Standard, den Websites für die Kommunikation mit Webrobotern verwenden. Er weist Webroboter an, welche Bereiche einer Website nicht besucht werden sollten. Roboter werden häufig von Suchmaschinen verwendet, um Websites zu indizieren.
 
@@ -107,3 +101,6 @@ Gehen Sie folgendermaßen vor, um eine robots.txt-Datei in Commerce zu löschen.
 [Hinzufügen von Unterstützung für ein Content Delivery Network (CDN)](add-cdn-support.md)
 
 [Standortbasierte Shop-Erkennung aktivieren](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,19 +2,19 @@
 title: Servicebeschreibung für die Finance and Operations Apps
 description: Dieses Thema enthält die Servicebeschreibung für die Finance and Operations Apps.
 author: tomhig
-ms.date: 01/05/2022
+ms.date: 09/29/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 85f82a863f0bde4c0414760fa2477651242538f2
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: a1547f0cc6c6f705cd0e2ff6e5be751cb97b946a
+ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952365"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7581815"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Servicebeschreibung für die Finance and Operations Apps
 
@@ -50,7 +50,7 @@ Das Betriebsmodell von Finance and Operations Apps definiert spezifische Rollen 
 
 ### <a name="customer-activities"></a>Benutzerdefinierte Aktivitäten
 
-Kunden arbeiten mit ihrem Partner und [Microsoft FastTrack](/dynamics365/fasttrack/) nach dem [Dynamics 365-Implementierungshandbuch](https://community.dynamics.com/365/dynamics-365-fasttrack/p/dynamics365implementationguide), dem [Success by Design](/dynamics365/fasttrack/success-by-design-overview)-Framework und nutzen Tools und Best-Practice-Vorlagen in [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md), um ihre Lösung umzusetzen. Zu den gemeinsamen Aktivitäten gehören:
+Kunden arbeiten mit ihrem Partner und [Microsoft FastTrack](/dynamics365/fasttrack/) nach dem [Success by Design](/dynamics365/fasttrack/success-by-design-overview) Framework und nutzen Tools und Best-Practice-Vorlagen in [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md), um ihre Lösung umzusetzen. Zu den gemeinsamen Aktivitäten gehören:
 
 - Benutzeridentitäts- und Sicherheitsmanagement
 - Geschäftsprozesse definieren, entwickeln und betreiben
@@ -117,7 +117,7 @@ Finance and Operations Apps werden aus mehreren Azure-Regionen auf der ganzen We
 ### <a name="countryregion-specific-considerations"></a>Landes-/regionsspezifische Betrachtungen
 
 - Kunden in regulierten Branchen oder kommerziellen Organisationen, die mit Unternehmen in Frankreich Geschäfte machen, die eine lokale Datenresidenz erfordern, sollten dies überprüfen [Finance and Operations in Frankreich](../../dev-itpro/deployment/france-local-deployment.md).
-- Kunden, die in China tätig sind, sollten [Azure China Playbook](/azure/china/) und [Finance and Operations betrieben von 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md) überprüfen.
+- Kunden, die in China tätig sind, sollten [Finance and Operations betrieben von 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md) überprüfen.
 - Kunden, die in Russland tätig sind, sollten das [Russisches Gesetz zur Lokalisierung personenbezogener Daten](/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia) überprüfen.
 
 ### <a name="general-data-protection-regulation-gdpr"></a>Datenschutz-Grundverordnung (DSGVO)
@@ -314,7 +314,7 @@ Die Notfallwiederherstellunbgspläne und -Verfahren von Microsoft werden regelm�
 | Microsoft stellt eine sekundäre Umgebung im gepaarten Azure-Rechenzentrum bereit, wenn die primäre Produktionsinstanz bereitgestellt wird. Weitere Informationen finden Sie unter [Business Continuity & Disaster Recovery (BCDR): gekoppelte Azure Regionen](/azure/best-practices-availability-paired-regions). | Ohne |
 | Microsoft aktiviert die Georedundanz von Azure SQL und Azure Blob Storage, wenn die primäre Produktionsinstanz bereitgestellt wird. | Ohne |
 | Microsoft aktiviert die automatische Sicherung der Azure SQL-Datenbanken. | Ohne |
-| <p>Bei einem Ausfall bestimmt Microsoft, ob für den Kunden ein Failover durchgeführt werden muss und ob es zu Datenverlusten kommt. Bei Kunden kann es je nach Art und Zeitpunkt des Ausfalls zu Datenverlusten von bis zu 15 Minuten kommen. | Im Falle eines Datenverlusts muss der Kunde möglicherweise eine schriftliche Abmeldung vorlegen, um das Failover auszulösen. |
+| <p>Bei einem Ausfall bestimmt Microsoft, ob für den Kunden ein Failover durchgeführt werden muss und ob es zu Datenverlusten kommt. Der Datenverlust kann bis zu fünf Sekunden dauern. Weitere Informationen finden Sie unter [Geowiederherstellung der Azure SQL-Datenbank](https://azure.microsoft.com/blog/azure-sql-database-geo-restore).</p><p>Im Falle eines Datenverlusts fordert Microsoft die Abmeldung des Kunden für ein Failover an.</p> | Im Falle eines Datenverlusts muss der Kunde möglicherweise eine schriftliche Abmeldung vorlegen, um das Failover auszulösen. |
 | Wenn ein Failover auftritt, arbeitet der entsprechende Dienst im eingeschränkten Modus. Die Updatewartung kann im Failover-Modus nicht ausgelöst werden. | Der Kunde kann im Failover-Modus keine Paketbereitstellungen oder andere regelmäßige Wartungsanforderungen anfordern. |
 | Wenn das Rechenzentrum betriebsbereit ist, führt Microsoft ein Failback zur Produktionsinstanz in der primären Azure-Region durch. Der normale Betrieb wird fortgesetzt. | Der Kunde muss sich möglicherweise beim Failback bei der Produktionsinstanz in der primären Azure-Region abmelden. |
 
@@ -356,7 +356,6 @@ Microsoft verpflichtet sich zu einer Verfügbarkeitsrate von 99,9 Prozent pro Mo
 - **[Lizenzierungsleitfaden](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365)** – Verwenden Sie diese Anleitung, um mehr über die Lizenzierung von Dynamics 365 zu erfahren.
 - **[Kundendienst](https://dynamics.microsoft.com/support/)** – Erhalten Sie branchenführenden Support für Ihre Dynamics 365-Apps.
 - **[Dynamics Lifecycle Services](https://lcs.dynamics.com/)** – Verwalten Sie Ihren Anwendungslebenszyklus und gehen Sie zu vorhersehbaren, wiederholbaren und qualitativ hochwertigen Implementierungen.
-- **[Dynamics 365-Implementierungsleitfaden](https://aka.ms/D365ImplementationGuideFlip)** – Der Dynamics 365-Implementierungsleitfaden dokumentiert bewährte Success by Design-Prinzipien und bietet präskriptive Anleitungen zum Entwerfen, Erstellen, Testen und Bereitstellen von Dynamics 365-Lösungen.
 
 ## <a name="definitions"></a>Definitionen
 
@@ -429,10 +428,6 @@ Das SLA gilt für Microsoft-Onlinedienste. Weitere Informationen finden Sie unte
 ### <a name="service-update"></a>Serviceupdate
 
 Microsoft-Dienste Finance and Operations Umgebungen auf konsistenter Basis durch Service-Updates. Kunden legen ihren eigenen Service-Update-Kalender basierend auf ihren Geschäftsanforderungen fest. Weitere Informationen finden Sie unter [Dienstupdates für eine Version](../../dev-itpro/lifecycle-services/oneversion-overview.md).
-
-### <a name="success-by-design"></a>[Success by Design](/dynamics365/fasttrack/success-by-design-overview)
-
-Das Framework, das eine Implementierung systematisch durch eine Reihe von Bewertungen in kritischen Phasen führt, um eine optimale Architektur, Sicherheit, Leistung und Benutzererfahrung für eine Dynamics 365-Lösung sicherzustellen.
 
 ### <a name="user"></a>Benutzer
 

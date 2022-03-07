@@ -2,11 +2,9 @@
 title: Vorteilsmanagement- und Mitarbeiter-Self-Service-Parameter für alle Unternehmen festlegen
 description: Konfigurieren Sie Vorteilsmanagement- und Mitarbeiter-Self-Service-Parameter für alle Unternehmen in Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
@@ -18,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b50c4f71789c34f08ce810312f3c3198303b031e
-ms.sourcegitcommit: d02fae79d5c02a4bc4f4b16a410c2f5ce026c204
+ms.openlocfilehash: 10f5310ba4feba4a196d02c406ff3217637e447e
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "4962439"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791484"
 ---
 # <a name="set-benefits-management-and-employee-self-service-parameters-for-all-companies"></a>Vorteilsmanagement- und Mitarbeiter-Self-Service-Parameter für alle Unternehmen festlegen
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Bevor Sie Vorteilspläne in Microsoft Dynamics 365 Human Resources einrichten können, müssen Sie die Vorteilsverwaltungsparameter konfigurieren. Diese Parameter legen Standardwerte, Ursachencodes und andere Optionen fest. 
 
@@ -68,3 +68,6 @@ Bevor Sie Vorteilspläne in Microsoft Dynamics 365 Human Resources einrichten k�
 3. Wählen Sie **Speichern**.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,25 +2,28 @@
 title: Dioppelte Berichterstellung
 description: Dieses Thema führt Sie durch ein Beispiel, das zeigt, wie Sie die Anforderungen sowohl für die Berichterstattung nach dem International Financial Reporting Standard (IFRS) als auch für die gesetzliche Berichterstattung im Analgenleasing erfüllen können.
 author: moaamer
-ms.date: 04/12/2021
+manager: Ann Beebe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: AssetLeaseBookMaster
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 406fbb53fc4cd17a7c257b5f5463227118c9051f44d81db000fbe87dca142efe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 96e1d4d460aef2f74422d5e4bd4fc68255466455
+ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767055"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "4443761"
 ---
 # <a name="dual-reporting"></a>Dioppelte Berichterstellung
 
@@ -47,7 +50,7 @@ Das IFRS 16-Buch ist so angelegt, dass es dem Rechnungslegungsstandard IFRS 16 e
 | Einrichtung von Barwert/Anlagenzeitwert | 0,00           |
 | Kurzfristiger Schwellenwert                    | 12             |
 | Schwellenwert für geringen Wert                     | 5,000.00       |
-| An Kreditor bezahlen                           | Nein             |
+| An Kreditor bezahlen                           | Nr.             |
 
 **Gesetzliches Buch**
 
@@ -64,7 +67,7 @@ Das gesetzliche Buch ist ein Cash-Basis-Buch, in dem das Unternehmen die Mietkos
 | Einrichtung von Barwert/Anlagenzeitwert | 0,00        |
 | Kurzfristiger Schwellenwert                    | 0           |
 | Schwellenwert für geringen Wert                     | 0           |
-| An Kreditor bezahlen                           | Nein          |
+| An Kreditor bezahlen                           | Nr.          |
 
 **Gesetzliches Stornobuch**
 
@@ -81,7 +84,7 @@ Das gesetzliche Stornobuch ist wie das gesetzliche Buch aufgebaut.
 | Einrichtung von Barwert/Anlagenzeitwert | 0,00                           |
 | Kurzfristiger Schwellenwert                    | 0                              |
 | Schwellenwert für geringen Wert                     | 0                              |
-| An Kreditor bezahlen                           | Nein                             |
+| An Kreditor bezahlen                           | Nr.                             |
 
 In diesem Beispiel wurde ein Mietvertrag mit den folgenden Einstellungen auf den Registerkarten **Allgemein** und **Zahlungspläne** erstellt.
 
@@ -520,6 +523,3 @@ Nachdem alle diese Journaleinträge erstellt und gebucht wurden, werden die folg
 | 11         | Kumulierte Abschreibung |                                                   |                                                   |                                                   | 0\.00                   |   |                                                 |                                                |                                                |                                                | \-949\.75                                      | \-949\.75                               |
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

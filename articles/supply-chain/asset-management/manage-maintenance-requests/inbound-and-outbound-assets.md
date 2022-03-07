@@ -1,12 +1,10 @@
 ---
 title: Ein- und ausgehende Anlagen
 description: In diesem Thema wird erläutert, wie Sie ein- und ausgehende Anlagen in Asset Management erfassen.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetOutboundObjectsListPage, EntAssetOutboundObjectsDeliver, EntAssetInboundObjectsListPage, EntAssetInboundObjectsRecieve
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e6dfadf6824c6a3df7be9b3b6f3d9f5dd2749e34
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 0bd3127df1b583acc6841c3e115d3beceabcab2756098e567b2269c1dcc94004
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018070"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759622"
 ---
 # <a name="inbound-and-outbound-assets"></a>Ein- und ausgehende Anlagen
 
@@ -44,7 +42,7 @@ Die Einrichtung von Asset Management bestimmt, ob Sie mit ein- und ausgehenden A
 3. Wählen Sie **Wartungsanforderungsstatus aktualisieren** aus.
 4. Wählen Sie **Eingehend** aus (oder einen anderen Lebenszyklusstatus, den Sie für eingehende Anlagen erstellt haben), und wählen Sie anschließend **OK**.
 
-![Erfassen von Anlagen als eingehend](media/07-manage-maintenance-requests.png)
+![Erfassen von Anlagen als eingehend.](media/07-manage-maintenance-requests.png)
 
 ## <a name="register-inbound-assets-as-received"></a>Erfassen von eingehenden Anlagen als empfangen
 
@@ -53,7 +51,7 @@ Die Einrichtung von Asset Management bestimmt, ob Sie mit ein- und ausgehenden A
 3. Wählen Sie **Anlagen entgegennehmen** aus.
 4. Geben Sie im Feld **Eingegangen** das Datum und die Uhrzeit ein. Wählen Sie dann **OK** aus. Der Datensatz wird von der Listenseite **Eingehende Anlagen** entfernt.
 
-![Erfassen von eingehenden Anlagen als empfangen](media/08-manage-maintenance-requests.png)
+![Erfassen von eingehenden Anlagen als empfangen.](media/08-manage-maintenance-requests.png)
 
 ## <a name="register-assets-as-outbound"></a>Erfassen von Anlagen als ausgehend
 
@@ -70,3 +68,6 @@ Wenn Sie den Wartungs- oder Reparaturauftrag erledigt haben, können Sie die Anl
 2. Wählen Sie die Anlage oder die Wartungsanfrage aus.
 3. Wählen Sie **Anlagen liefern** aus.
 4. Geben Sie im Feld **Geliefert** das Datum und die Uhrzeit ein. Wählen Sie dann **OK** aus. Der Datensatz wird von der Listenseite **Ausgehende Anlagen** entfernt.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

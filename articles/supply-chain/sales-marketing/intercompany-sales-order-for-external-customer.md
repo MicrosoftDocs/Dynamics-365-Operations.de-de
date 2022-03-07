@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: b5f7342a997407c8701b836c2a6a6222d8512121
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 72273a125da2e6c4a2fc16b449cd5077f3d767df
+ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074993"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7548280"
 ---
 # <a name="create-and-invoice-an-intercompany-sales-order-for-an-external-customer"></a>Einen Intercompany-Auftrag für einen externen Debitor erstellen und abrechnen
 
@@ -75,18 +75,5 @@ Führen Sie diese Schritte unter „Juristische Person B“ aus. Dieses Verfahre
 1. Wählen Sie den Auftrag und anschließend **OK** aus.
 
 Die Debitorenrechnung für den Intercompany-Auftrag wird automatisch unter „Juristische Person B“ gebucht. Die Intercompany-Kreditorenrechnung wird automatisch unter „Juristische Person A“ erstellt und gebucht. Ist der Originalauftrag als Direktlieferung eingerichtet, wird die Debitorenrechnung für den Originalauftrag unter „Juristische Person A“ erstellt.
-
-> [!NOTE]
-> Bisher konnte bei Intercompany-Verkaufsszenarien der Verkaufsauftrag nicht erfolgreich fakturiert werden, wenn der Workflow für die Einkaufsrechnung des Kreditors in der Intercompany-Einkaufsfirma konfiguriert war. Daher musste der Workflow für die Einkaufsrechnungen des Kreditors für die Intercompany einkaufende Firma ausgeschaltet werden. 
-> 
-> Diese Einschränkung wurde durch eine neue Funktion in Version 10.0.25 behoben. Intercompany Verkaufsaufträge können jetzt fakturiert werden, wenn der Workflow für Einkaufsrechnungen in der Firma des Einkäufers konfiguriert ist.
-> 
-> Um diese Funktion zu aktivieren, gehen Sie folgendermaßen vor.
->
-> 1. Wählen Sie die juristische Entität des Intercompany-Verkaufs.  
-> 2. Gehen Sie zu **Debitorenkonten \> Debitoren \> Alle Debitoren**.
-> 3. Wählen Sie den Debitor für die Firma, die intercompany Einkäufe tätigt.
-> 4. Gehen Sie auf **Allgemein \> Einrichten \> Intercompany**.
-> 5. Wählen Sie auf der Registerkarte **Richtlinien für Bestellungen** den Parameter **Workflow für Einkaufsrechnungen zwischen Kreditor und Unternehmen umgehen**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

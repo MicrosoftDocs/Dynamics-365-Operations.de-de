@@ -1,9 +1,9 @@
 ---
 title: Neuerungen oder Änderungen in Dynamics 365 Human Resources (03. September 2020)
 description: Dieses Thema beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 3. September 2020 neu sind oder geändert wurden.
-author: Darinkramer
+author: andreabichsel
 manager: tfehr
-ms.date: 9/03/2020
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ddffff18e1d6d16bd5a5f7e7021f9a34651307fa
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 41763a8817d0c39b14284a247cf3e46678e7811b
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527457"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130854"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-3-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources (3. September 2020)
 
@@ -106,9 +106,9 @@ Diese Funktion fördert auch die Workflow-Optionen, die in den Formularen für P
 
 ## <a name="coming-soon"></a>Bald verfügbar
 
-### <a name="checklist-entities-included-in-common-data-service"></a>In Common Data Service enthaltene Prüflistenentitäten
+### <a name="checklist-entities-included-in-dataverse"></a>In Dataverse enthaltene Prüflistenentitäten
 
-Prüflistenentitäten für Onboarding, Offboarding, Übergänge und Geschäftsprozesse werden in Kürze in Common Data Service verfügbar sein.
+Prüflistenentitäten für Onboarding, Offboarding, Übergänge und Geschäftsprozesse werden in Kürze in Dataverse verfügbar sein.
 
 ### <a name="benefits-management-reason-codes"></a>Ursachencodes für die Vergütungsverwaltung
 

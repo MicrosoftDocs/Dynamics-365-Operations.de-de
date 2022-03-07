@@ -1,12 +1,10 @@
 ---
 title: Verbrauch registrieren
 description: In diesem Abschnitt wird erläutert, wie Sie den Verbrauch im Anlagenmanagement erfassen.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/21/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderJournal, EntAssetWorkOrderAddSparePart
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ea1522f8a8e4867d8d70fea59b493d139a1b01ef
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 619da584ea37e80b1803ae5983e52e8ee4053f3751a8df75a8f5bc1ddf7e65d6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020779"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765579"
 ---
 # <a name="register-consumption"></a>Verbrauch registrieren
 
@@ -56,7 +54,7 @@ In einigen Fällen können Sie einem Arbeitsauftrag Prognosezeile hinzufügen od
 
 Der folgende Screenshot zeigt ein Beispiel für Stunden- und Artikelregistrierungen auf einem Arbeitsauftrag in **Arbeitsauftragserfassungen**.
 
-![Abbildung 1](media/01-consumption.png)
+![Abbildung 1.](media/01-consumption.png)
 
 
 ## <a name="split-hours-on-work-orders-with-several-work-order-jobs"></a>Teilzeitarbeitszeit auf Arbeitsaufträgen mit mehreren Arbeitsaufträgen
@@ -75,13 +73,13 @@ Wenn ein Arbeitsauftrag mehrere Arbeitsaufträge enthält, können Sie die Arbei
 
 6. Geben Sie in das Feld **Stunden** die Anzahl der zu teilenden Arbeitsstunden ein.
 
-    ![Abbildung 2](media/02-consumption.png)
+    ![Abbildung 2.](media/02-consumption.png)
 
 7. Klicken Sie auf **OK**.
 
 *Beispiel:* Im folgenden Screenshot werden Journalzeilen für einen Arbeitsauftrag mit drei Arbeitsaufträgen angezeigt. Die erste Zeile mit drei Arbeitsstunden wurde aufgeteilt, und für jeden Arbeitsauftrag wird eine Arbeitsstunde registriert. Nachdem die dreistündigen Registrierungszeilen erstellt wurden, entscheiden Sie, was mit der ursprünglichen Stundenregistrierungszeile (der ersten Zeile im Beispiel) geschehen soll. Sie können es so lassen, wie es ist, oder es löschen. 
 
-![Abbildung 3](media/03-consumption.png)
+![Abbildung 3.](media/03-consumption.png)
 
 ## <a name="financial-dimensions-on-consumption-registrations"></a>Finanzielle Dimensionen der Verbrauchserfassung
 
@@ -94,3 +92,6 @@ Wenn Sie Verbrauchserfassungen durchführen, werden die Registrierungen in einer
 >[!NOTE]
 >Für alle drei Registrierungsarten wird die Kombination der finanziellen Dimension validiert und ungültige Kombinationen werden ausgeblendet. Dies ist Standard-Setup mit anderen Finance and Operations Apps.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

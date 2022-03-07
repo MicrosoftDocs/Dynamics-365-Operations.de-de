@@ -2,15 +2,12 @@
 title: Mitarbeiter-Sonderurlaub verwalten
 description: Mitarbeiter-Sonderurlaub in Dynamics 365 Human Resources verwalten.
 author: andreabichsel
-manager: tfehr
 ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,16 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 627c8959b1845fbad761a85bdca7dc93bfc6a105
-ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
+ms.openlocfilehash: 33080fc5ca43f3d83ee9d17565f4c229ced7b94f
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "4418764"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6055627"
 ---
 # <a name="manage-employee-leave"></a>Mitarbeiter-Sonderurlaub verwalten
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Sie können die Abwesenheit eines Mitarbeiters nach Abwesenheitstyp verwalten. Dies umfasst das Ablaufen der Abwesenheitsregistrierung und das Anpassen der Abwesenheitstypsguthaben. 
 
@@ -56,3 +55,6 @@ Sie können einen Ursachencode und einen Kommentar einfügen, wenn Sie das Abwes
 
 - [Urlaubs- und Abwesenheitsübersicht](hr-leave-and-absence-overview.md)
 - [Urlaubs- und Abwesenheitsanforderungen verwalten](hr-employee-self-service-manage-requests.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

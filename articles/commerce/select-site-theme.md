@@ -1,36 +1,31 @@
 ---
 title: Auswählen eines Sitedesigns
-description: In diesem Thema wird beschrieben, wie Sie das Design Ihrer Site in Microsoft Dynamics 365 Commerce festlegen oder ändern.
+description: In diesem Thema wird beschrieben, wie Sie das Design Ihrer Website in Microsoft Dynamics 365 Commerce festlegen oder ändern.
 author: bicyclingfool
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c54a3e9471fdeb56f27fe7c567c7cd7f0b7fd218
-ms.sourcegitcommit: 2ef23dcd4e42362186b9951e675010d97d55c6bd
+ms.openlocfilehash: a13400258a86087b6137b08ca724cbbfc1a90ad4
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4556428"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964780"
 ---
-# <a name="select-a-site-theme"></a>Auswählen eines Sitedesigns
+# <a name="select-a-site-theme"></a>Sitedesign auswählen
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie das Design Ihrer Site in Microsoft Dynamics 365 Commerce festlegen oder ändern.
-
-## <a name="overview"></a>Übersicht
+In diesem Thema wird beschrieben, wie Sie das Design Ihrer Website in Microsoft Dynamics 365 Commerce festlegen oder ändern.
 
 Das Layout und der Stil einer Site (z. B. Schriftarten, Größen und Farben) werden durch das Design definiert, das Sie auswählen und auf die Site anwenden. Ein Design wird von einem Entwickler in Ihrem Unternehmen erstellt und bereitgestellt. Eine Überblick über die Designs erhalten Sie in [Designüberblick](e-commerce-extensibility/theming.md). Weitere Informationen zum Erstellen und Bereitstellen von Designs finden Sie unter [Neues Design erstellen](e-commerce-extensibility/create-theme.md).
 
@@ -56,8 +51,6 @@ Gehen Sie folgendermaßen vor, um das Design auszuwählen, das auf Ihre Site ang
 
 [Hinzufügen eines Favicons](add-favicon.md)
 
-[Hinzufügen einer Begrüßungsnachricht](add-welcome-message.md)
-
 [Hinzufügen eines Urheberrechtshinweises](add-copyright-notice.md)
 
 [Hinzufügen von Sprachen zu Ihrer Website](add-languages-to-site.md)
@@ -68,3 +61,6 @@ Gehen Sie folgendermaßen vor, um das Design auszuwählen, das auf Ihre Site ang
 
 [Neues Design erstellen](e-commerce-extensibility/create-theme.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

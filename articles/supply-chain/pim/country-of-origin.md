@@ -1,38 +1,34 @@
 ---
 title: Ursprungsland
 description: Viele Organisationen stellen ihren Lieferanten Zertifikate aus, um sicherzustellen, dass die Produkte bestimmten Zertifizierungsstandards entsprechen. Diese Zertifikate hängen häufig vom Herkunftsland ab. Dieses Thema enthält Informationen zur Herkunftslandfunktion, mit der Sie ein Produkt mit seinem Herkunftsland verknüpfen und die Produktzertifizierungen verfolgen können.
-author: dasani-madipalli
-manager: tfehr
+author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: COOVendorCerts
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-07-15
-ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 0471785991a307de11147e9773d9abe1e02941d6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.9
+ms.openlocfilehash: a2740f6b1ccb52073b013e613d8ab779cc088180
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428367"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777620"
 ---
 # <a name="country-of-origin"></a>Ursprungsland
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Viele Organisationen stellen ihren Lieferanten Zertifikate aus, um sicherzustellen, dass die Produkte bestimmten Zertifizierungsstandards entsprechen. Diese Zertifikate hängen häufig vom Herkunftsland ab. Mit der Herkunftslandfunktion können Sie ein Produkt mit seinem Herkunftsland verknüpfen und seine Produktzertifizierungen nachverfolgen.
 
 ## <a name="turn-on-the-country-of-origin-feature"></a>Aktivieren der Herkunftslandfunktion
 
-Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Administratoren können die Seite [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktion zu überprüfen und sie bei Bedarf zu aktivieren oder zu deaktivieren. Hier wird die Funktion als aufgeführt:
 
 - **Modul:** *Produktinformationsverwaltung*
 - **Funktionsname:** *Funktion zur Verwaltung des Herkunftslandes*
@@ -90,4 +86,7 @@ Wenn Sie einen Stücklistenbericht erstellen, können Sie das Herkunftsland für
 
 Ein Bericht mit Informationen zum Herkunftsland jedes Teils wird generiert und angezeigt. Hier ist ein Beispiel des Berichts.
 
-![Herkunftslandbericht](media/country-of-origin-report.png "Herkunftslandbericht")
+![Herkunftslandbericht.](media/country-of-origin-report.png "Herkunftslandbericht")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

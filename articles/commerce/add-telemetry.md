@@ -2,27 +2,24 @@
 title: Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie
 description: In diesem Thema wird beschrieben, wie ein clientseitiger Skriptcode den Standortsseiten hinzugefügt wird, um die Sammlung der clientseitigen Telemetrie zu unterstützen.
 author: bicyclingfool
-manager: annbe
 ms.date: 09/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e15ba6a0d624bd97c25936aa6d3bfafb844b66c0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f796a3e10345da41ff461b656d88affb3adbdf9e
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412508"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964528"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie
 
@@ -30,12 +27,10 @@ ms.locfileid: "4412508"
 
 In diesem Thema wird beschrieben, wie ein clientseitiger Skriptcode den Standortsseiten hinzugefügt wird, um die Sammlung der clientseitigen Telemetrie zu unterstützen.
 
-## <a name="overview"></a>Übersicht
-
 Internet-Analyse ist ein wichtiges Tool, wenn Sie verstehen möchten, wie Ihre Debitoren mit der Site interagieren und Entscheidungen treffen, die Ihnen helfen, die Erfahrung für maximale Umrechnung zu optimieren. Viele Internet-Analysepakete sind verfügbar, um zu helfen, diese Ziele zu erreichen wie Google Analytics, Clicky, Moz-Analyse und KISSMetrics. Die meisten Internet-Analysepakete erfordern, dass Sie clientseitigen Scriptcode im **\<head\>**-Element der HTML für alle Seiten Ihrer Website hinzufügen.
 
 > [!NOTE]
-> Die Anweisungen in diesem Thema gelten auch für benutzerdefinierte clientseitige andere Funktionen, die Microsoft Dynamics 365 Commerce System intern nicht bereitstellt.
+> Die Anweisungen in diesem Thema gelten auch für andere benutzerdefinierte clientseitige Funktionen, die Microsoft Dynamics 365 Commerce intern nicht bereitstellt.
 
 ## <a name="create-a-reusable-fragment-for-your-script-code"></a>Erstellen Sie ein wiederverwendbares Fragment für Ihren Skriptcode
 
@@ -111,14 +106,15 @@ Führen Sie die folgenden Schritte aus, um ein externes Skript direkt zu einer V
 
 [Hinzufügen eines Logos](add-logo.md)
 
-[Auswählen eines Sitedesigns](select-site-theme.md)
+[Sitedesign auswählen](select-site-theme.md)
 
 [Arbeiten mit CSS-Überschreibungsdateien](css-override-files.md)
 
 [Hinzufügen eines Favicons](add-favicon.md)
 
-[Hinzufügen einer Begrüßungsnachricht](add-welcome-message.md)
-
 [Hinzufügen eines Urheberrechtshinweises](add-copyright-notice.md)
 
 [Hinzufügen von Sprachen zu Ihrer Website](add-languages-to-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

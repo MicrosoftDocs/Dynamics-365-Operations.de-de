@@ -2,40 +2,36 @@
 title: Kreditorenzusammenarbeit mit Debitoren
 description: In diesem Thema wird beschrieben, wie Sie Kreditorenzusammenarbeit verwenden können, um mit Bestellungen zu arbeiten und Lieferungsbestand zu überwachen.
 author: TaylorVH
-manager: tfehr
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 ms.custom: 221234
 ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
 ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: dc97b230f23056db90e654b4aea3272bb8f1ba13
-ms.sourcegitcommit: 0c33864efdd66c6ac11a4f35d971c0bb4efb15db
+ms.openlocfilehash: f699b00ab7ea2d043e12824015c54439caf8e63c
+ms.sourcegitcommit: d58a891d9fe0aa0e6b2c20329250c8d74ffbee90
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4654339"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "8022973"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Kreditorenzusammenarbeit mit Debitoren
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie Kreditorenzusammenarbeit verwenden können, um mit Debitoren in Microsoft Dynamics 365 Supply Chain Management zu arbeiten. Kreditoren können eine Serie von Geschäftsprozesse aus den folgenden Arbeitsbereichen ausführen:
 
 - **Bestellungsbestätigung** – Überwachen von Bestellungen und auf sie antworten.
 - **Kreditorenangebotsabgabe** – Angebotsanforderungen anzeigen und durch Eingeben von Angeboten auf sie antworten.
 - **Kreditoreninformationen** – Kreditorenmasterdaten anzeigen und aktualisieren.
-- **Rechnungsstellung** – Mit Rechnungen arbeiten. In diesem Thema wird der Arbeitsbereich **Rechnungsstellung** nicht behandelt. Weitere Informationen über diesen Arbeitsbereich finden Sie unter [Arbeitsbereich für Kreditorenzusammenarbeitsrechnungsstellung](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Rechnungsstellung** – Mit Rechnungen arbeiten. In diesem Thema wird der Arbeitsbereich **Rechnungsstellung** nicht behandelt. Weitere Informationen über diesen Arbeitsbereich finden Sie unter [Arbeitsbereich für Kreditorenzusammenarbeitsrechnungsstellung](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 Kreditoren können außerdem Informationen zu Lieferungsbestand überwachen.
 
@@ -82,7 +78,7 @@ Wenn Sie Lieferungsbestand verwenden, können Sie die Kreditorenzusammenarbeitsc
 
 ## <a name="working-with-rfqs-in-the-vendor-bidding-workspace"></a>Arbeiten mit Angebotsanforderungen im Arbeitsbereich für Kreditorenangebotsabgabe
 
-Im Arbeitsbereich **Lieferantenausschreibung** können Sie die Anfragen (RFQs) anzeigen, auf die Ihr Unternehmen zur Beantwortung eingeladen wurde. Sie können auch auf die Angebotsanforderungen antworten. 
+Im Arbeitsbereich **Lieferantenausschreibung** können Sie die Anfragen (RFQs) anzeigen, auf die Ihr Unternehmen zur Beantwortung eingeladen wurde. Sie können auch auf die Angebotsanforderungen antworten.
 
 Der Arbeitsbereich zeigt auch alle Angebotsanforderungen an, die Sie verloren oder gewonnen haben. Wenn das System für den öffentlichen Sektor konfiguriert ist, zeigt der Arbeitsbereich außerdem die öffentlich zugänglichen Ausschreibungen an.
 
@@ -100,20 +96,28 @@ Der Arbeitsbereich zeigt auch alle Angebotsanforderungen an, die Sie verloren od
 
 ### <a name="working-with-rfqs-that-are-publicly-available"></a>Mit Angebotsanforderungen arbeiten, die öffentlich verfügbar sind
 
-Personen, die im öffentlichen Sektor arbeiten, können offene und abgelaufene Angebotsanforderungen sehen, die für die Öffentlichkeit verfügbar gemacht wurden.
+Personen, die im öffentlichen Sektor arbeiten, können offene und abgelaufene Ausschreibungen sehen, die der Öffentlichkeit zugänglich gemacht wurden.
 
 - Wählen Sie den Link **Offene veröffentlichte Angebotsanforderungen** aus, um eine Liste offener Angebotsanforderungen anzuzeigen, die für die Öffentlichkeit verfügbar sind. Eine offene Angebotsanforderung ist eine Angebotsanforderung, die noch nicht abgelaufen ist. Sie können das Ablaufdatum und -uhrzeit im Kopf der Angebotsanforderung finden.
 
-    Wenn Sie eingeladen wurden, ein Angebot zu unterbreiten, können Sie die gleiche Angebotsanforderung auf der Seite **Neue Angebotseinladungen** finden. Manchmal möchten Sie vielleicht auf eine offene Angebotsanforderung hin ein Angebot unterbreiten, aber Sie sind nicht zum bieten eingeladen worden. In diesem Fall könnten Sie möglicherweise sich selbst einladen, vorausgesetzt der Debitor hat die Selbsteinladung für die Angebotsanforderungsanfrage aktiviert.
+    Wenn Sie eingeladen wurden, ein Angebot zu unterbreiten, können Sie die gleiche Angebotsanforderung auf der Seite **Neue Angebotseinladungen** finden. Manchmal möchten Sie vielleicht auf eine offene Angebotsanforderung hin ein Angebot unterbreiten, aber Sie sind nicht zum bieten eingeladen worden. In diesem Fall könnten Sie möglicherweise sich selbst einladen, vorausgesetzt der Debitor hat die Selbsteinladung für die Angebotsanforderungsanfrage aktiviert. 
 
-    Erhöhen Sie den Zugriff auf den Link **Veröffentlichte Ausschreibungen öffnen**, indem Sie die Funktion **Link „Veröffentlichte Ausschreibungen öffnen“ als Kachel anzeigen** einschalten. Diese Funktion wandelt den Link in eine Kachel um und verschiebt ihn an einen prominenten Lagerplatz, sodass er leicht zu finden ist.
+    Die Seite **Neue Ausschreibungen** kann einen Filter bereitstellen, mit dem Sie die offenen Ausschreibungen anzeigen und diejenigen identifizieren können, die Zeilen enthalten, die Ihren genehmigten Beschaffungskategorien entsprechen. Um diesen Filter verfügbar zu machen, müssen Sie die Funktion *Lieferanten nach Beschaffungskategorien suchen lassen* in Ihrem System aktivieren. Admins können den Arbeitsbereich **Funktionsverwaltung** verwenden, um den Status dieser Funktion zu überprüfen und sie bei Bedarf zu aktivieren. Dort wird die Funktion folgendermaßen aufgelistet:
+
+    - **Modul:** *Kreditorenbuchhaltung*
+    - **Name der Funktion:** *Lassen Sie Kreditor nach Ausschreibungen nach Beschaffungskategorie suchen* <!-- KFM: I don't see this here, is this right? -->
+
+    Sie können die Barrierefreiheit des Links **Veröffentlichte Angebotsanfragen öffnen** verbessern, indem Sie die Funktion *Den Link „Veröffentlichte Angebotsanfragen öffnen“ als Kachel anzeigen* aktivieren. Diese Funktion wandelt den Link in eine Kachel um und verschiebt ihn an eine prominente Stelle, sodass er leicht zu finden ist. Admins können den Arbeitsbereich **Funktionsverwaltung** verwenden, um den Status dieser Funktion zu überprüfen und sie bei Bedarf zu aktivieren. (Ab Supply Chain Management Version 10.0.21 ist die Funktion standardmäßig eingeschaltet.) Dort wird die Funktion wie folgt aufgelistet:
+
+    - **Modul:** *Beschaffung*
+    - **Name der Funktion:** *Anzeige des Links „Veröffentlichte Ausschreibungen öffnen“ als Kachel*
 
 - Wählen Sie den Link **Geschlossene veröffentlichte Angebotsanforderungen** aus, um eine Liste geschlossener Angebotsanforderungen anzuzeigen, die für die Öffentlichkeit verfügbar sind. Eine geschlossene Angebotsanforderung ist eine Angebotsanforderung, die abgelaufen ist. Sie können das Ablaufdatum und -uhrzeit im Kopf der Angebotsanforderung finden.
 
     Eine geschlossene Angebotsanforderung zeigt alle Kreditorenangebote bis hinunter zur Positionsebene an. Während Angebote gewährt oder abgelehnt werden, spiegeln sich diese Informationen in der geschlossen Angebotsanforderung wider. Alle Anhänge, die im Angebot enthalten sind, sind auch verfügbar.
 
 > [!NOTE]
-> Diese Funktionalität ist nur verfügbar, wenn die Konfiguration Öffentlicher Sektor eingeschaltet ist.
+> Diese Funktion ist nur verfügbar, wenn die Konfiguration für den öffentlichen Sektor aktiviert ist.
 
 ### <a name="bidding"></a>Angebot unterbreiten
 
@@ -147,3 +151,6 @@ Die Informationen, auf die zugegriffen werden kann, sind der Name des Kreditors,
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Benutzer für Kreditorenzusammenarbeit verwalten](manage-vendor-collaboration-users.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

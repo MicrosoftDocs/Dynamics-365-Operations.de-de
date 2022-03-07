@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: de8286c7612cd588b28cf4667340374906962dde
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 4d4eb4fd4ea32db5aa19e9d2b1300818b3aaf6fc
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324061"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594983"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>EB-Konfigurationen mit Excel-Vorlagen wiederverwenden, um Berichte im Word-Format zu erstellen
 
 [!include [banner](../../includes/banner.md)]
 
-Um Berichte als Microsoft Word-Dokumente zu generieren, können Sie ein neues Format für die [elektronische Berichterstellung (EB)](../general-electronic-reporting.md) [konfigurieren](../er-design-configuration-word.md). Alternativ können Sie ein EB-Format wiederverwenden, das ursprünglich zum Generieren von Berichten als Excel-Arbeitsmappen entwickelt wurde. In diesem Fall müssen Sie die Excel-Vorlage durch eine Word-Vorlage ersetzen.
+Um Berichte als Microsoft Word-Dokumente zu generieren, können Sie ein neues [EB-](../general-electronic-reporting.md)[Format](../general-electronic-reporting.md#FormatComponentOutbound) (elektronische Berichterstellung) [konfigurieren](../er-design-configuration-word.md). Alternativ können Sie ein EB-Format wiederverwenden, das ursprünglich zum Generieren von Berichten als Excel-Arbeitsmappen entwickelt wurde. In diesem Fall müssen Sie die Excel-Vorlage durch eine Word-Vorlage ersetzen.
 
 Die folgenden Verfahren zeigen, wie ein Benutzer in der Rolle des Systemadministrators oder des Entwicklers für elektronische Berichterstellung ein EB-Format konfigurieren kann, um Berichte als Word-Dateien zu generieren, indem er ein EB-Format wiederverwendet, das zum Generieren von Berichten als Excel-Dateien entwickelt wurde.
 

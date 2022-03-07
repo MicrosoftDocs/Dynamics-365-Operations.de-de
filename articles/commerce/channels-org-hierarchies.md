@@ -2,36 +2,30 @@
 title: Organisationshierarchien einrichten
 description: In diesem Thema wird beschrieben, wie man in Microsoft Dynamics 365 Commerce Organisationshierarchien aufbaut.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 29d4b686cbb66715196fca06e4642fbb8a337ace
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ce0732f32a9a80fc5b0ede7ae9f1c1ab9a68a89b2fb0b1821cb5df123ca5ca4a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412526"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746015"
 ---
 # <a name="set-up-organization-hierarchies"></a>Organisationshierarchien einrichten
-
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie man in Microsoft Dynamics 365 Commerce Organisationshierarchien aufbaut.
-
-## <a name="overview"></a>Übersicht
 
 Bevor Sie Kanäle erstellen, müssen Sie sicherstellen, dass Ihre Organisationshierarchien eingerichtet wurden.
 
@@ -49,7 +43,7 @@ Weitere Informationen finden Sie unter folgenden Themen.
 
 Führen Sie die folgenden Schritte aus, um eine Organisationshierarchie zu erstellen.
 
-1. Gehen Sie im Navigationsbereich zu **Module \> Retail und Commerce \> Kanaleinrichtung \> Organisationshierarchien**.
+1. Gehen Sie im Navigationsbereich zu **Module \> Einzelhandel und Handel \> Kanaleinrichtung \> Organisationshierarchien**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 1. Geben Sie im Feld **Name** einen Wert ein.
 1. Wählen Sie im Abschnitt **Zweck** die Option **Zweck zuweisen**.
@@ -60,7 +54,7 @@ Führen Sie die folgenden Schritte aus, um eine Organisationshierarchie zu erste
 
 Die folgende Abbildung zeigt eine beispielhafte Organisationshierarchie, die für eine fiktive Gruppe von „Adventure Works”-Läden erstellt wurde.
 
-![Beispiel einer Organisationshierarchie](media/organizational-hierarchies.png)
+![Beispiel einer Organisationshierarchie.](media/organizational-hierarchies.png)
 
 ### <a name="add-organizations-to-a-hierarchy"></a>Hinzufügen von Organisationen zu einer Hierarchie
 
@@ -73,7 +67,7 @@ Gehen Sie folgendermaßen vor, um Organisationen zu einer Hierarchie hinzuzufüg
 
 Die folgende Abbildung zeigt eine juristische Person, die im Hierarchie-Stammverzeichnis hinzugefügt wurde. Für die Kanäle „Mall“, „Outlet“, „Online“ und „Callcenter“ wurden vier Kostenstellen hinzugefügt. Anschließend können jeweils verschiedene Einzelhandels-, Callcenter- und Online-Kanäle hinzugefügt werden.
 
-![Beispiel eines Hierarchiedesigners](media/hierarchy-designer.png)
+![Beispiel eines Hierarchiedesigners.](media/hierarchy-designer.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
@@ -88,3 +82,6 @@ Die folgende Abbildung zeigt eine juristische Person, die im Hierarchie-Stammver
 [Kanalübersicht](channels-overview.md)
 
 [Voraussetzungen der Kanaleinrichtung](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

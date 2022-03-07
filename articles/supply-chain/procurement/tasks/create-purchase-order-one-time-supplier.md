@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c4885547cdf2f8496446761e27ce39e67e670f15
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: d1abd942da608bc221a7a66e03b5269fa30e2c20
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016401"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5212029"
 ---
 # <a name="create-a-purchase-order-for-a-one-time-supplier"></a>Eine Bestellung für einen einmaligen Lieferanten erstellen
 
@@ -38,3 +38,6 @@ Diese Prozedur zeigt Ihnen, wie Sie eine Bestellung für einen einmaligen Liefer
 5. Klicken Sie auf "OK".
     * Die Bestellung kann jetzt wie jeder andere Auftrag abgeschlossen und verarbeitet werden. Es gibt keine speziellen Eigenschaften, in Bezug darauf, wie dies erfolgen soll. Die Rechnung berücksichtigt eine fällige Transaktion zum Kreditorenkonto, das mit dem Auftrag erstellt wurde, und die Zahlung wird dann verarbeitet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

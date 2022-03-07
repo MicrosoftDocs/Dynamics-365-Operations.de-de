@@ -1,12 +1,11 @@
 ---
 title: Sicherheit für den Power BI-Inhalt der Kostenrechnungsanalyse einrichten
-description: In diesem Thema wird erläutert, wie Sie Zugriffebenensicherheit in der Kostenrechnung auf Positionsebene in Microsoft Power BI umsetzen können. Diese Funktion stellt sicher, dass Benutzer nur Power BI-Daten sehen, für die Ihnen Zugriff erteilt werden.
+description: In diesem Thema wird erläutert, wie Sie Zugriffebenensicherheit in der Kostenrechnung auf Positionsebene in Microsoft Power BI umsetzen können.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -16,14 +15,14 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 04ff1523f7b05fe8398513e913702b0f3c7c354c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 10b87d01fd1172f4509f6fa803522eb25e73f9f5
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682188"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5559674"
 ---
-# <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Sicherheit für den Power BI-Inhalt der Kostenrechnungsanalyse einrichten
+# <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Sicherheit für den Power BI-Inhalt zur Kostenrechnungsanalyse einrichten
 
 [!include [banner](../includes/banner.md)]
 
@@ -63,3 +62,6 @@ Es wird davon ausgegangen, dass Ihre Organisation möchte den Datenzugriff einsc
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 Weitere Informationen über die Sicherheit auf Positionsebene in Power BI finden Sie unter [Sicherheit für Ihr Modell in Power BI verwalten](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/#manage-security-on-your-model).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

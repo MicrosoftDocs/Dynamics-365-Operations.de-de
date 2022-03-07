@@ -1,28 +1,25 @@
 ---
 title: Lagerplatzdirektive für Bestellungseinlagerung einrichten
 description: In diesem Thema wird erläutert, wie Sie eine einfache Standortanweisung einrichten.
-author: ShylaThompson
-manager: tfehr
+author: Henrikan
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSInventFixedLocation
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b07cd8af0fd619a71d3fe5188f41d0a0ed954f93
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 6a363b452cbee539aeee62146f545b1f7c2eb842
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429074"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576207"
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Lagerplatzdirektive für Bestellungseinlagerung einrichten
 
@@ -86,3 +83,6 @@ In diesem Thema wird erläutert, wie Sie eine einfache Standortanweisung einrich
 4. Geben Sie im Feld **Kriterien** einen Wert ein.
 5. Wählen Sie **OK**. Sie können fortfahren, um richtungweisende Positionen und richtungweisende Aktivitäten hinzuzufügen, bis Sie alle möglichen Szenarien am Lagerort abgedeckt haben.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

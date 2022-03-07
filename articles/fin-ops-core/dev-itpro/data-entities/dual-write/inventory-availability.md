@@ -1,29 +1,20 @@
 ---
 title: Inventarverfügbarkeit in dualem Schreiben
 description: Dieses Thema bietet Informationen zum Prüfen der Bestandverfügbarkeit in dualem Schreiben.
-author: yijialuan
-manager: AnnBe
+author: RamaKrishnamoorthy
 ms.date: 05/26/2020
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
-ms.author: riluan
-ms.dyn365.ops.version: ''
+ms.author: ramasri
 ms.search.validFrom: 2020-05-26
-ms.openlocfilehash: a7bfe998d2d787203a507a831c171fc43b03fedc
-ms.sourcegitcommit: cc9921295f26804259cc9ec5137788ec9f2a4c6f
+ms.openlocfilehash: 175e1cc568ed027feee39eabfd9f08de6fe7f4b4
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "4839548"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542636"
 ---
 # <a name="inventory-availability-in-dual-write"></a>Inventarverfügbarkeit in dualem Schreiben
 
@@ -66,55 +57,12 @@ Wenn Sie die Schaltfläche **Verfügbarer Bestand** auf der Seite **Angebote**, 
 - Anforderungen zu verfügbarem CDS-Lagerbestand (msdyn_inventoryonhandrequests)
 
 ## <a name="templates"></a>Vorlagen
+
 Die folgenden Vorlagen stehen zur Verfügung, um die Daten zu vorhandenen Lagerbestand verfügbar zu machen.
 
-Finance and Operations Apps | Customer Engagement-App | Beschreibung 
+Finance and Operations-Apps | Customer Engagement-Apps     | Beschreibung
 ---|---|---
-[Einträge für verfügbaren CDS-Bestand](#145) | msdyn_inventoryonhandentries |
-[Anfragen für verfügbaren CDS-Bestand](#147) | msdyn_inventoryonhandrequests |
+[Einträge für verfügbaren CDS-Bestand](mapping-reference.md#145) | msdyn_inventoryonhandentries |
+[Anfragen für verfügbaren CDS-Bestand](mapping-reference.md#147) | msdyn_inventoryonhandrequests |
 
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-###  <a name="cds-inventory-on-hand-entries-msdyn_inventoryonhandentries"></a><a name="145"></a>Einträge zu verfügbarem CDS-Lagerbestand (msdyn_inventoryonhandentries)
-
-Diese Vorlage synchronisiert Daten zwischen Finance and Operations-Apps und Dataverse.
-
-Finance and Operations-Feld | Zuordnungstyp | Customer Engagement-Feld | Standardwert
----|---|---|---
-`REQUESTID` | = | `msdyn_request.msdyn_requestid` |
-`INVENTORYSITEID` | = | `msdyn_inventorysite.msdyn_siteid` |
-`INVENTORYWAREHOUSEID` | = | `msdyn_inventorywarehouse.msdyn_warehouseidentifier` |
-`AVAILABLEONHANDQUANTITY` | > | `msdyn_availableonhandquantity` |
-`AVAILABLEORDEREDQUANTITY` | > | `msdyn_availableorderedquantity` |
-`ONHANDQUANTITY` | > | `msdyn_onhandquantity` |
-`ONORDERQUANTITY` | > | `msdyn_onorderquantity` |
-`ORDEREDQUANTITY` | > | `msdyn_orderedquantity` |
-`RESERVEDONHANDQUANTITY` | > | `msdyn_reservedonhandquantity` |
-`RESERVEDORDEREDQUANTITY` | > | `msdyn_reservedorderedquantity` |
-`TOTALAVAILABLEQUANTITY` | > | `msdyn_totalavailablequantity` |
-`ATPDATE` | = | `msdyn_atpdate` |
-`ATPQUANTITY` | > | `msdyn_atpquantity` |
-`PROJECTEDISSUEQUANTITY` | > | `msdyn_projectedissuequantity` |
-`PROJECTEDONHANDQUANTITY` | > | `msdyn_projectedonhandquantity` |
-`PROJECTEDRECEIPTQUANTITY` | > | `msdyn_projectedreceiptquantity` |
-`ORDERQUANTITY` | > | `msdyn_orderquantity` |
-`UNAVAILABLEONHANDQUANTITY` | > | `msdyn_unavailableonhandquantity` |
-
-###  <a name="cds-inventory-on-hand-requests-msdyn_inventoryonhandrequests"></a><a name="147"></a>Anforderungen zu verfügbarem CDS-Lagerbestand (msdyn_inventoryonhandrequests)
-
-Diese Vorlage synchronisiert Daten zwischen Finance and Operations-Apps und Dataverse.
-
-Finance and Operations-Feld | Zuordnungstyp | Customer Engagement-Feld | Standardwert
----|---|---|---
-`REQUESTID` | = | `msdyn_requestid` |
-`PRODUCTNUMBER` | < | `msdyn_product.msdyn_productnumber` |
-`ISATPCALCULATION` | << | `msdyn_isatpcalculation` |
-`ORDERQUANTITY` | < | `msdyn_orderquantity` |
-`INVENTORYSITEID` | < | `msdyn_inventorysite.msdyn_siteid` |
-`INVENTORYWAREHOUSEID` | < | `msdyn_inventorywarehouse.msdyn_warehouseidentifier` |
-`REFERENCENUMBER` | < | `msdyn_referencenumber` |
-`LINECREATIONSEQUENCENUMBER` | < | `msdyn_linecreationsequencenumber` |
-
-
-
-
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,16 +2,13 @@
 title: Materielle Ersetzung in der Fertigung
 description: In diesem Thema wird beschrieben, wie Materialien während des Produktionsprozesses ersetzt werden.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdBOM
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 70171
 ms.assetid: ce3b11ef-550e-49b7-8942-2607c2ec3c5c
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0b7ee4bbb832fc21d52ff30b7acc8e6a5fd3aece
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f24ed91c7a99eba6129d18c385cea9c9312aebefc325c7e0914b1c0b32231e32
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428441"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766558"
 ---
 # <a name="material-substitution-in-manufacturing"></a>Materielle Ersetzung in der Fertigung
 
@@ -49,3 +46,6 @@ Betrachten wir das folgende Szenario: Ein Artikel der Metallplatte ist für eine
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

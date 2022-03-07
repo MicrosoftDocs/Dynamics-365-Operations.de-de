@@ -1,33 +1,30 @@
 ---
 title: Anlage teilen
 description: In diesem Abschnitt wird erläutert, wie Sie einen Prozentsatz eines Anlagenbuchs in ein neues Anlagenbuch aufteilen.
-author: saraschi2
-manager: AnnBe
+author: moaamer
 ms.date: 08/06/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook, AssetSplit, AssetBookLookup, LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: da2dd4889a5f4722ff60a76a4a023c63fb59ad55
-ms.sourcegitcommit: 9f32389715b226c11e74c53547527e0a8b51e300
+ms.openlocfilehash: a2fbca50342196dd9f5acb53027fb9c0052a81de
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "4514325"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883542"
 ---
 # <a name="split-a-fixed-asset"></a>Anlage teilen
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Abschnitt wird erläutert, wie Sie einen Prozentsatz eines Anlagenbuchs in ein neues Anlagenbuch aufteilen. Dabei werden die "Buchhalterrolle" und die USMF-Demodaten verwendet.
+In diesem Abschnitt wird erläutert, wie Sie einen Prozentsatz eines Anlagenbuchs in ein neues Anlagenbuch aufteilen. 
 
 ## <a name="create-a-new-fixed-asset"></a>Neue Anlage erstellen
 
@@ -63,3 +60,6 @@ Bevor ein vollständig abgeschriebener Vermögenswert aufgeteilt wird, sollte de
     - Eine "Anschaffungstransaktion" wird für die neue Anlage für denselben Betrag erstellt.
 
 4. Wählen Sie **Buchen** aus.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

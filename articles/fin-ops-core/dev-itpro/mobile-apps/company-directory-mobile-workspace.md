@@ -2,11 +2,9 @@
 title: Unternehmensverzeichnis für mobilen Arbeitsbereich
 description: Dieses Thema enthält Informationen über den mobilen Arbeitsbereich "Unternehmensverzeichnis", mit dem Benutzer andere Mitarbeiter in ihrer Organisation anzeigen und Kontakt mit ihnen aufnehmen können.
 author: jcart1106
-manager: AnnBe
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 3193fbc4d4b3492960c7c13dc24b41bb920e7d23
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 51ed47075ad7fdea490bd0d06831449388ecdf6e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683431"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360791"
 ---
 # <a name="company-directory-mobile-workspace"></a>Unternehmensverzeichnis für mobilen Arbeitsbereich
 
@@ -79,7 +77,7 @@ Herunterladen und Installieren der Finance and Operations mobilen App:
 3.  Bei der erstmaligen Anwendung werden Sie nach Ihrem Benutzernamen und dem Kennwort gefragt. Geben Sie Ihre Anmeldeinformationen ein.
 4.  Nachdem Sie sich angemeldet haben, werden verfügbare Arbeitsbereiche für Ihr Unternehmen angezeigt. Beachten Sie, dass Sie, wenn Ihr Systemadministrator einen neuen Arbeitsbereich später veröffentlicht, die Liste der mobilen Arbeitsbereiche aktualisieren müssen.
 
-[![Zum Aktualisieren ziehen](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![Zum Aktualisieren nach unten ziehen.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-the-company-directory-by-using-the-mobile-workspace"></a>Anzeigen des Unternehmensverzeichnisses mithilfe des mobilen Arbeitsbereichs
 1.  Wählen Sie in der mobilen App den Arbeitsbereich **Unternehmensverzeichnis** aus. Eine Liste von Mitgliedern wird angezeigt.
@@ -89,3 +87,6 @@ Herunterladen und Installieren der Finance and Operations mobilen App:
 1.  Wählen Sie in der mobilen App den Arbeitsbereich **Unternehmensverzeichnis** aus.
 2.  Geben Sie im Feld **Suchen** den Vornamen, den Nachnamen, den Titel oder die Abteilung des Mitarbeiters ein, um die Suche zu starten.
 3.  Wählen Sie einen Mitarbeiter aus. Die Seite **Mitarbeiterprofil** wird angezeigt. Die Informationen auf dieser Seite umfassen den Vornamen, Nachnamen, Titel und die Abteilung des Mitarbeiters.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

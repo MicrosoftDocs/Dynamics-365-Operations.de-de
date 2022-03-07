@@ -2,11 +2,9 @@
 title: Laden Sie die elektronische Berichtskonfigurationen der Lifecycle Services herunter
 description: Dieses Thema zeigt, wie Sie Konfigurationen zur elektronischen Berichterstellung (EB) von Microsoft Dynamics Lifecycle Services (LCS) herunterladen.
 author: NickSelin
-manager: AnnBe
 ms.date: 08/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionImport, ERWorkspace
 audience: Application User, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 719b277fb828ea2085ea80bc4a36c2af3412f66b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 418586113c038c3227f0704495a561eac319bdc9
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683304"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745086"
 ---
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen
 
@@ -76,3 +74,6 @@ In diesem Thema wird erläutert, wie Sie die neueste Version der [Konfiguratione
 [Überblick über die elektronische Berichterstellung (ER)](general-electronic-reporting.md)
 
 [Laden Sie ER-Konfigurationen aus dem globalen Repository des Konfigurationsdienstes herunter](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

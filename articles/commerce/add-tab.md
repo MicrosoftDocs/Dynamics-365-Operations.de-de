@@ -1,16 +1,13 @@
 ---
 title: Registerkartenmodul
-description: Dieses Thema enthält Registerkartenmodule und es wird beschrieben, wie diese den Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+description: Dieses Thema behandelt Registerkartenmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c9d897113442f14b95539efb9fec9482be96447a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9062e584d159e0f1986c46140d535f06f5d2817af048f30e812f9049bd52d4f6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412509"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723286"
 ---
 # <a name="tab-module"></a>Registerkartenmodul
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält Registerkartenmodule und es wird beschrieben, wie diese den Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
-
-## <a name="overview"></a>Übersicht
+Dieses Thema behandelt Registerkartenmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 
 Registerkartenmodule sind containerähnliche Module, mit denen die Informationen auf einer Site-Seite auf Registerkarten organisiert werden. Sie können auf jeder Seite verwendet werden, auf der Informationen auf Registerkarten angezeigt werden müssen.
 
@@ -39,7 +34,7 @@ In jedem Registerkartenmodul kann ein oder mehrere Registerkartenelemente hinzug
 
 Das folgende Bild zeigt ein Beispiel eines Registerkartenmoduls, das auf einer Homepage verwendet wird. In diesem Beispiel ist die **Versand** Registerkarte ausgewählt.
 
-![Beispiel eines Registerkarten-Moduls](./media/ecommerce-tab.PNG)
+![Beispiel eines Registerkarten-Moduls.](./media/ecommerce-tab.PNG)
 
 ## <a name="tab-module-properties"></a>Registerkartenmoduleigenschaften
 
@@ -84,3 +79,6 @@ Um ein Registerkartenmodul einer Seite hinzuzufügen und die erforderlichen Eige
 [Akkordeonmodul](add-accordion.md)
 
 [Textblockmodul](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

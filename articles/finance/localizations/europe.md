@@ -2,25 +2,23 @@
 title: Europa – Übersicht
 description: Dieses Thema bietet Links zu Microsoft Dynamics 365 Finance-Dokumentationsressourcen für Europa.
 author: ShylaThompson
-manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.custom: intro-internal
 ms.search.region: global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d63d5682521b1991c387604c2cc219c7f147c8d
-ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
+ms.openlocfilehash: 638e0468f9d200083d8263786f5f5750b6129e73
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "4512210"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6336685"
 ---
 # <a name="europe-overview"></a>Europa – Übersicht
 
@@ -41,6 +39,7 @@ Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren 
 - [Zusammenfassende Meldung](emea-eu-sales-list.md)
 - [Wechselkursregulierungen](emea-exchange-rate-adjustments.md)
 - [Dateiformate für Zahlungsmethoden](emea-select-file-formats-for-the-method-of-payments.md)
+- [Finanzleitfaden (Globalisierung) zu den Auswirkungen des Brexit](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
 - [Steuerdienste ERS-Integration](emea-fiscal-service-integration.md)
 - [Anlagenveräußerungen für Estland und Litauen](emea-credit-note-reverse-fixed-asset-sale.md)
 - [Umlagerungsdokument für eine interne Umlagerung generieren](tasks/transfer-document-internal-inventory-transfer.md)
@@ -65,6 +64,7 @@ Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren 
 - [Rechnungsverarbeitung](emea-invoice-processing.md)
 - [EU-Gelangensbestätigung ausstellen](tasks/eur-00012-issue-eu-entry-certificate.md)
 - [Unterstützte Standards für die elektronische Rechnungsstellung](emea-oioubl-standards-electronic-invoicing.md)
+- [Erzwungene Generierung elektronischer Rechnungen](emea-eur-forced-einvoices.md)
 - [Originalrechnungsreferenz (Osteuropa)](tasks/ee-00004-original-invoice-reference.md)
 - [Suche nach Partei per MwSt.-Kennung](tasks/eur-00015-party-search-vat-id.md)
 - [Werkzeug zur Generierung von Zahlungsreferenzen](tasks/ee-00015-payment-reference-generation-tool.md)
@@ -78,7 +78,7 @@ Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren 
 - [SEPA-Kreditübertragungsübersicht](../accounts-payable/sepa-credit-transfer.md)
 - [SEPA-Lastschriftüberblick](../accounts-receivable/sepa-direct-debit-overview.md)
 - [Einrichten der Debitoren- und Kreditorenvergütung](emea-compensation-customer-vendor-transactions.md)
-- [Zusammenfassende Meldung einrichten](tasks/eur-00011-eu-sales-list-reporting.md)
+- [Berichterstellung für zusammenfassende Meldung einrichten](tasks/eur-00011-eu-sales-list-reporting.md)
 - [Zahlungsbelegformats für Projektrechnungen einrichten](tasks/set-up-payment-slip-format-project-invoices.md)
 - [Signaturgeber für Druckformulare einrichten](emea-set-up-signers-for-printing-forms.md)
 - [Stornobuchung](emea-storno.md)
@@ -97,5 +97,8 @@ Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-- [Überblick über die elektronische Berichterstellung](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Überblick über die elektronische Berichterstellung](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+- [Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

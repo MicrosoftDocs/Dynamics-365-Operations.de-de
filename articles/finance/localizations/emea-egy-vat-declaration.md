@@ -2,23 +2,24 @@
 title: MwSt.-Erklärung für Ägypten
 description: In diesem Thema wird erläutert, wie Sie das MwSt.-Rückgabeformular für Ägypten konfigurieren und generieren.
 author: sndray
-ms.date: 06/03/2021
+ms.date: 03/10/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: sndray
+ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a67c6e00b94d49b3eb279416407f603923e53b2e
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 3ebb78f3fa481cc63376b7d6428cf4944bbf6f4c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403947"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839815"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>MwSt.-Erklärung für Ägypten (EG-00002)
 
@@ -77,7 +78,7 @@ Mit den anwendungsspezifischen Parametern können Sie die Kriterien festlegen, n
 
 Die Verkaufs- und Einkaufsbuchberichte für Ägypten enthalten eine Reihe von Spalten, die bestimmten Transaktionsklassifizierungen als Arten von Vorgängen, Produkten und Dokumenten entsprechen, die für Ägypten spezifisch sind. Anstatt diese neuen Klassifizierungen als neue Eintragsdaten einzuschließen, wenn die Transaktionen gebucht werden, werden die Klassifizierungen basierend auf den verschiedenen in **Konfigurationen** > **Anwendungsspezifische Parameter einrichten** > **Einrichten** eingeführten Suchvorgängen bestimmt, um die Anforderungen der Mehrwertsteuerberichte für Ägypten zu erfüllen. 
 
-![Seite für anwendungsspezifische Parameter.](media/egypt-vat-declaration-setup1.png)
+![Seite für anwendungsspezifische Parameter](media/egypt-vat-declaration-setup1.png)
 
 Diese folgenden Suchkonfigurationen werden verwendet, um die Transaktionen in Berichten über Vorsteuer- und Ausgangssteuerbücher zu klassifizieren:
 
@@ -85,7 +86,6 @@ Diese folgenden Suchkonfigurationen werden verwendet, um die Transaktionen in Be
 - **VATRateTypeLookup** > Spalte B: Steuertyp
 - **VATRateTypeLookup** > Spalte C: Tabellenartikeltyp
 - **PurchaseOperationTypeLookup** > Spalte A: Dokumenttyp
-- **CustomerTypeLookup** > Spalte A: Dokumenttyp
 - **SalesOperationTypeLookup** > Spalte N: Vorgangstyp
 - **SalesItemTypeLookup** > Spalte O: Artikeltyp
 
@@ -99,8 +99,6 @@ Führen Sie die folgenden Schritte aus, um die verschiedenen Suchvorgänge einzu
 6. Wiederholen Sie die Schritte 3 bis 5 für alle verfügbaren Suchvorgänge.
 7. Wählen Sie **Hinzufügen** aus, um die letzte Belegzeile aufzunehmen, und in der **Suchergebnis**-Spalte wählen Sie **Unzutreffend** aus. 
 8. Wählen Sie in den restlichen Spalten **Nicht leer** aus. 
-9. Wählen Sie im Feld **Status** die Option **Abgeschlossen** aus.
-10. Wählen Sie **Speichern** aus und schließen Sie dann die Seite **Anwendungsspezifische Parameter**.
 
 > [!NOTE]
 > Wenn Sie den letzten Datensatz **Unzutreffend** hinzufügen, definieren Sie die folgende Regel: Wenn die Mehrwertsteuergruppe, Artikel-Mehrwertsteuergruppe, der Steuercode und Name, die/der als Argument übergeben werden, keine der vorherigen Regeln erfüllen, werden die Transaktionen nicht in das Ausgangssteuerbuch aufgenommen. Obwohl diese Regel beim Generieren des Berichts nicht verwendet wird, hilft die Regel, Fehler bei der Berichterstellung zu vermeiden, wenn eine Regelkonfiguration fehlt.
@@ -141,7 +139,7 @@ Die folgenden Tabellen stellen ein Beispiel für eine vorgeschlagene Konfigurati
 | Dienste       | 7    | VAT_SERV                | *Nicht leer* | SaleExempt            |
 | Dienste       | 8    | VAT_SERV                | *Nicht leer* | SalesExemptCreditNote |
 | Regulierungen    | 9    | *Leer*                 | VAT_ADJ     | Verk.                 |
-| Regulierungen    | 10   | *Leer*                 | VAT_ADJ     | SalesCreditNote       |
+| Regulierungen    | 10   | *Leer*                 | VAT_ADJ     | Einkauf              |
 | Nicht zutreffend | 11   | *Nicht leer*             | *Nicht leer* | *Nicht leer*           |
 
 **PurchaseItemTypeLookup**
@@ -151,14 +149,16 @@ Die folgenden Tabellen stellen ein Beispiel für eine vorgeschlagene Konfigurati
 | Waren                  | 1    | VAT_GOODS               | *Nicht leer* | Einkauf                 |
 | Waren                  | 2    | VAT_GOODS               | *Nicht leer* | PurchaseCreditNote       |
 | Dienste               | 3    | VAT_SERV                | *Nicht leer* | Einkauf                 |
-| Dienste               | 4    | VAT_SERV                | *Nicht leer* | PurchaseCreditNote       |
+| Dienste               | 4    | VAT_SERV                | *Nicht leer*  | PurchaseCreditNote       |
 | Maschine und Ausrüstung  | 5    | VAT_M&E                 | *Nicht leer* | Einkauf                 |
 | Maschine und Ausrüstung  | 6    | VAT_M&E                 | *Nicht leer* | PurchaseCreditNote       |
 | Teilemaschinen         | 7    | VAT_PARTS               | *Nicht leer* | Einkauf                 |
 | Teilemaschinen         | 8    | VAT_PARTS               | *Nicht leer* | PurchaseCreditNote       |
 | Befreiungen             | 9    | VAT_EXE                 | *Keine Bank*  | PurchaseExempt           |
 | Befreiungen             | 10   | VAT_EXE                 | *Nicht leer* | PurchaseExemptCreditNote |
-| Nicht zutreffend         | 11   | *Nicht leer*             | *Nicht leer* | *Nicht leer*              |
+| Nicht zutreffend         | 11   | *Leer*                 | VAT_ADJ     | *Nicht leer*              |
+| Nicht zutreffend         | 12   | *Nicht leer*             | *Nicht leer* | *Nicht leer*              |
+| Nicht zutreffend         | 13   | *Leer*                 | *Nicht leer* | *Nicht leer*              |
 
 **PurchaseOperationTypeLookup**
 
@@ -173,19 +173,8 @@ Die folgenden Tabellen stellen ein Beispiel für eine vorgeschlagene Konfigurati
 | Importiert       | 7    | VAT_IMPORT       | *Nicht leer* | PurchaseExempt           |
 | Importiert       | 8    | VAT_IMPORT       | *Nicht leer* | PurchaseExemptCreditNote |
 | Regulierungen    | 9    | *Leer*          | VAT_ADJ     | PurchaseCreditNote       |
-| Regulierungen    | 10   | *Leer*          | VAT_ADJ     | Kaufen                 |
+| Regulierungen    | 10   | *Leer*          | VAT_ADJ     | Einkauf                 |
 | Nicht zutreffend | 11   | *Nicht leer*      | *Nicht leer* | *Nicht leer*              |
-
-**CustomerTypeLookup**
-
-|    Suchergebnis    | Position | Mehrwertsteuergruppe |
-|---------------------|------|-----------------|
-| Organisation        |  1   | VAT_LOCAL       |
-| Organisation        |  2   | VAT_EXPORT      |
-| Organisation        |  3   | VAT_EXE         |
-| Endverbraucher      |  4   | VAT_FINALC      |
-| Öffentliche Organisation |  5   | VAT_PUBLIO      |
-| Nicht zutreffend      |  6   | *Nicht leer*     |
 
 **VATRateTypeLookup**
 
@@ -206,7 +195,7 @@ Um den MwSt.-Rückgabeformularbericht im Microsoft Excel-Format zu generieren, d
 2. Auf der **Mehrwertsteuer**-Registerkarte im Abschnitt **Steueroptionen** im Feld **MwSt.-Abrechnungs-Formatzuordnung** wählen Sie **MwSt.-Erklärung Excel (EG)** aus. Wenn Sie das Feld leer lassen, wird der Standardmehrwertsteuerbericht im SSRS-Format erstellt.
 3. Wählen Sie die **Kategoriehierarchie** aus. Diese Kategorie aktiviert den Warencode in Transaktionen auf der Außenhandel-Registerkarte , damit Benutzer Waren und Dienstleistungen auswählen und klassifizieren können. Die Beschreibung dieser Klassifizierung finden Sie in Verkaufs- und Einkaufstransaktionsberichten. Diese Konfiguration ist optional.
 
-![Erklärungsformular.](media/egypt-vat-declaration-setup2.png)
+![Erklärungsformular](media/egypt-vat-declaration-setup2.png)
 
 
 ## <a name="generate-a-vat-return-report"></a>MwSt.-Rückgabebericht generieren

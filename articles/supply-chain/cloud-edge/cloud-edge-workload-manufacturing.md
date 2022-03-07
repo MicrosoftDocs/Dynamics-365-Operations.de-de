@@ -2,11 +2,9 @@
 title: Arbeitsauslastungen bei der Fertigungsausführung für Cloud- und Edge-Scale-Einheiten
 description: Dieses Thema beschreibt, wie Arbeitsauslastungen für die Fertigungsausführung mit Cloud- und Edge Scale-Units funktionieren.
 author: cabeln
-manager: ''
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,22 +16,23 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 08c46655d3966ad1433935318c5e60667dd10bb6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9cd7dd8b9241171bdfdb3cc1379211a2fe99bbe1
+ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967762"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6183995"
 ---
-# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Arbeitsauslastungen bei der Fertigungsausführung für Cloud- und Edge-Scale-Einheiten
+# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Workloads in der Fertigungsausführung für Cloud- und Edge-Skalierungseinheiten
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
+> Der Workload für die Fertigungsausführung ist zu diesem Zeitpunkt in der Vorschau verfügbar.
 > Einige Geschäftsfunktionen werden in der öffentlichen Vorschau nicht vollständig unterstützt, wenn Arbeitsauslastungen mit Scale-Units verwendet werden.
 
-Bei der Fertigungsausführung bieten Cloud- und Edge-Scale-Einheiten die folgenden Funktionalitäten, auch wenn die Edge-Einheiten nicht mit dem Hub verbunden sind:
+Bei der Ausführung der Fertigung bieten Skalierungseinheiten die folgenden Funktionen:
 
 - Maschinenbediener und Werkstattleiter können auf den operativen Produktionsplan zugreifen.
 - Maschinenbediener können den Plan auf dem neuesten Stand halten, indem sie diskrete und Prozessfertigungsaufträge ausführen.
@@ -60,7 +59,7 @@ Wie die folgende Abbildung zeigt, wird bei Verwendung von Scale-Units die Phase 
 
 Das Modell geht nun von einer Einzelinstanz-Installation zu einem Modell über, das auf dem Hub und Scale-Units basiert. Die Phasen _Planen_ und _Finalisieren_ laufen als Back-Office-Operationen auf dem Hub, und die Arbeitsauslastung der Fertigungsausführung läuft auf den Scale-Units. Die Daten werden asynchron zwischen dem Hub und den Scale-Units übertragen.
 
-Wenn ein Produktionsauftrag auf dem Hub freigegeben wird, werden alle Daten, die zur Verarbeitung von Produktionsaufträgen erforderlich sind, an die Scale-Unit übertragen. Zu diesen Daten gehören Produktionsaufträge, Arbeitspläne, Stücklisten und Produkte. Daten, die sich nicht auf einen Produktionsauftrag beziehen (z. B. indirekte Aktivitäten, Abwesenheitscodes und Produktionsparameter), werden ebenfalls vom Hub an die Scale-Unit übertragen. In der Regel können Daten, die aus dem Hub stammen und an die Scale-Unit übertragen werden, nur im Hub erstellt oder aktualisiert werden. Zum Beispiel kann ein neuer Abwesenheitscode oder eine indirekte Aktivität nicht auf der Scale-Unit erstellt werden &mdash;, sie können nur für die Registrierung verwendet werden. Die Registrierungen, die während der Ausführung auf der Scale-Unit vorgenommen werden, werden dann an den Hub übertragen, wo die Zeit- und Anwesenheitsgenehmigung, der Bestand und die finanziellen Aktualisierungen verarbeitet werden.
+Wenn ein Produktionsauftrag auf dem Hub freigegeben wird, werden alle Daten, die zur Verarbeitung von Produktionsaufträgen erforderlich sind, an die Scale-Unit übertragen. Zu diesen Daten gehören Produktionsaufträge, Arbeitspläne, Stücklisten und Produkte. Daten, die sich nicht auf einen Produktionsauftrag beziehen (z. B. indirekte Aktivitäten, Abwesenheitscodes und Produktionsparameter), werden ebenfalls vom Hub an die Scale-Unit übertragen. In der Regel können Daten, die aus dem Hub stammen und an die Scale-Unit übertragen werden, nur im Hub erstellt oder aktualisiert werden. Zum Beispiel kann ein neuer Abwesenheitscode oder eine indirekte Aktivität nicht auf der Scale-Unit erstellt werden – sie können nur für die Registrierung verwendet werden. Die Registrierungen, die während der Ausführung auf der Scale-Unit vorgenommen werden, werden dann an den Hub übertragen, wo die Zeit- und Anwesenheitsgenehmigung, der Bestand und die finanziellen Aktualisierungen verarbeitet werden.
 
 ## <a name="manufacturing-execution-tasks-that-can-be-run-on-workloads"></a>Manufacturing Execution Tasks, die auf Arbeitsauslastungen ausgeführt werden können
 
@@ -73,6 +72,7 @@ Die folgenden Manufacturing Execution Tasks können derzeit auf Arbeitsauslastun
 - Ausschuss melden
 - Indirekte Aktivität
 - Pause
+- Fertig melden und einlagern (erfordert, dass Sie auch den Workload für die Lagerausführung auf Ihrer Skalierungseinheit ausführen, siehe auch [Fertig melden und auf einer Skalierungseinheit einlagern](#RAF))
 
 ## <a name="working-with-manufacturing-execution-workloads-on-the-hub"></a>Arbeiten mit Arbeitsauslastungen zur Fertigungsausführung auf dem Hub
 
@@ -109,3 +109,27 @@ Um die Historie der Fertigungsaufträge einzusehen, die auf einer Scale-Unit ver
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Fertigungs-Hub zu Scale-Unit Nachrichtenprozessorauftrag
 
 Der Job _Manufacturing hub to scale unit message processor_ verarbeitet Daten vom Hub zur Scale-Unit. Dieser Job wird automatisch gestartet, wenn die Arbeitsauslastung der Fertigungsausführung bereitgestellt wird. Sie können ihn jedoch jederzeit manuell ausführen, indem Sie zu **Produktionssteuerung \> Periodische Aufgaben \> Backoffice-Arbeitsauslastung \> Manufacturing Hub to Scale-Unit Message Processor** gehen.
+
+<a name="RAF"></a>
+
+## <a name="report-as-finished-and-putaway-on-a-scale-unit"></a>Fertig melden und auf einer Skalierungseinheit einlagern
+
+<!-- KFM: 
+This section describes how to enable the abilities to report as finished and then putaway finished items when you are using to a scale unit.
+
+### Enable and use report as finished and putaway on a scale unit -->
+
+Im aktuellen Release werden Vorgänge zum Fertig melden und einlagern (für Fertig-, Co- und Nebenprodukte) vom [Workload für die Lagerausführung](cloud-edge-workload-warehousing.md) unterstützt (nicht der Workload für die Fertigungsausführung). Um diese Funktionalität bei der Verbindung mit einer Skalierungseinheit zu verwenden, müssen Sie daher Folgendes tun:
+
+- Installieren Sie sowohl den Workload für die Lagerausführungs als auch für die Fertigungsausführung auf Ihrer Skalierungseinheit.
+- Verwenden Sie die Mobile Warehouse Management-App, um den Abschluss zu melden und die Einlagerungsarbeiten zu verarbeiten. Die Produktionsausführungsoberfläche unterstützt diese Prozesse derzeit nicht.
+
+<!-- KFM: API details needed
+
+### Customize report as finished and putaway functionality
+
+ -->
+
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

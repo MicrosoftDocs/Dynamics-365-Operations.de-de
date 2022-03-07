@@ -2,27 +2,24 @@
 title: Kanban-Status aktualisieren
 description: Wenn ein Kanban versehentlich geleert wird, oder ein empfangener Kanban geleert werden muss, müssen Sie den Kanbanstatus aktualisieren.
 author: ChristianRytt
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Kanban, KanbanResetEmpty
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bb8559c0843d7e6e538b5b29dc394a50d05462ee
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 741a2a29e6b222c722e94db4e07dee6c8f4014030364753e3352fa30594dac0d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428870"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715673"
 ---
 # <a name="update-kanban-status"></a>Kanban-Status aktualisieren
 
@@ -48,3 +45,6 @@ Wenn ein Kanban versehentlich geleert wird, oder ein empfangener Kanban geleert 
 2. Markieren Sie in der Liste die ausgewählte Zeile.
     * Beachten Sie, dass die "Handhabungseinheit" den Status "Geleert" hat.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,34 +1,29 @@
 ---
 title: Erfüllen von Serviceverträgen (Überblick)
 description: Dieses Theam bieten einen Überblick über die Aufgaben zum Erfüllen von Serviceverträgen.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/03/2018
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65c26c5bcea386e7cdb3a2be95da26dcb53ce44c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 39fe65638c413f5fbc1ea6ad4922e97f6e8fb35e
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428925"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985885"
 ---
-# <a name="fulfill-service-agreements-overview"></a>Erfüllen von Serviceverträgen (Überblick) 
+# <a name="fulfill-service-agreements-overview"></a>Erfüllen von Serviceverträgen (Überblick)
 
 [!include [banner](../includes/banner.md)]
-
 
 Dieses Theam bieten einen Überblick über die Aufgaben zum Erfüllen von Serviceverträgen. Darüber hinaus werden die Formulare aufgeführt und die Aufgaben behandelt, die den einzelnen Geschäftsprozesskomponenten zugeordnet sind.
 
@@ -44,9 +39,9 @@ In der folgenden Tabelle sind die Formulare aufgeführt, die die Geschäftsproze
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -67,9 +62,9 @@ In der folgenden Tabelle sind die Formulare aufgeführt, die die Geschäftsproze
 <td><p>Erstellen und Verwalten von Daueraufträgen</p></td>
 </tr>
 <tr class="odd">
-<td><p> </p></td>
-<td><p> </p></td>
-<td><p> </p></td>
+<td><p> </p></td>
+<td><p> </p></td>
+<td><p> </p></td>
 </tr>
 <tr class="even">
 <td><p>Überwachen und Implementieren des Vertrags</p></td>
@@ -82,9 +77,9 @@ In der folgenden Tabelle sind die Formulare aufgeführt, die die Geschäftsproze
 <td><p>Erstellen und Verwalten von Serviceaufträgen</p></td>
 </tr>
 <tr class="even">
-<td><p> </p></td>
-<td><p> </p></td>
-<td><p> </p></td>
+<td><p> </p></td>
+<td><p> </p></td>
+<td><p> </p></td>
 </tr>
 <tr class="odd">
 <td><p>Aktualisieren und Bewerten des Vertrags</p></td>
@@ -107,3 +102,6 @@ In der folgenden Tabelle sind die Formulare aufgeführt, die die Geschäftsproze
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

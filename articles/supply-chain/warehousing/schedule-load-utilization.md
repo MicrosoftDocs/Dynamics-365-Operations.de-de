@@ -1,28 +1,25 @@
 ---
 title: Auslastungsnutzung planen
 description: In diesem Thema wird erläutert, wie die Auslastung für einen Lagerort eingerichtet und und geplant wird.
-author: MarkusFogelberg
-manager: tfehr
+author: Mirzaab
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WMSSpaceUtilSetup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87455077c69834c9ace6409f4cc611ae6e14beb4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 728cf6e0b1bce660328f970176c218f66646ec8a
+ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428494"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7902070"
 ---
 # <a name="schedule-load-utilization"></a>Auslastungsnutzung planen
 
@@ -72,3 +69,6 @@ Sie können die Platznutzung projizieren, indem Sie den Bericht **Lagerort-Ausla
 
 4. Geben Sie im Feld **Auslastungstyp** **Volumen** oder **Gewicht** an, um die Lagerortorganisationseinheit anzugeben, für die Platz projiziert werden soll.
 5. Wählen Sie im Feld **Platzauslastungseinstellungen** die Einstellungen für die Platznutzung aus, auf denen die Projektion basiert.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

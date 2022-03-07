@@ -1,10 +1,12 @@
 ---
 title: Tastenkombinationen
-description: Dieses Thema bietet einen Überblick über die Tastenkombinationen, die Sie bei der Arbeit mit Apps für Finanzen und Betrieb verwenden können.
+description: Dieses Thema bietet einen Überblick über die Tastenkombinationen, die Sie in Finance and Operations-Apps verwenden können.
 author: jasongre
-ms.date: 02/11/2022
+manager: AnnBe
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,21 +16,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5243ea35138aa37d9fc54821e0923d0fa47c95de
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: 2c5b25ea3bc91ac427d0d57db45fbc4169895d3e
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119551"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693724"
 ---
 # <a name="keyboard-shortcuts"></a>Tastenkombinationen
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
-
-Tastenkombinationen können Ihnen helfen, Daten in Apps für Finanzen und Betrieb schnell und effizient einzugeben. 
+Mit den folgenden Tastaturkombinationen können Sie Daten in Finance and Operations-Apps schnell und effizient eingeben.
 
 > [!NOTE]
 > Die hier beschriebenen Tastenkürzel beziehen sich auf das US-Tastaturlayout. Möglicherweise entsprechen die Tasten anderer Tastaturlayouts nicht exakt den Tasten auf der US-Tastatur.
@@ -37,11 +36,11 @@ Einige der Verknüpfungen auf dieser Seite sind *Tastenakkorde*. Dies bedeutet, 
 
 ## <a name="finding-a-shortcut"></a>Eine Tastenkombination suchen
 
-Benutzer können zur Zeit verfügbaren Tastenkombinationen direkt über die Benutzeroberfläche ermitteln. Klicken Sie einfach auf einem Steuerelement mit der rechten Maustaste und wählen Sie **Tastenkombinationen anzeigen** aus. Daraufhin wird ein Dialogfeld geöffnet, welches die Tastenkombinationen anzeigt, die Sie verwenden können, basierend darauf, wo Sie auf der Seite sind. Alternativ können Sie Alt + Umschalt + K drücken, um dieses Dialogfeld zu öffnen (und Sie können Alt +Umschalt +K ein zweites Mal drücken, um alle derzeit verfügbaren Kombinationen für die Seite anzuzeigen).    
+Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombinationen direkt über die Benutzeroberfläche ermitteln. Klicken Sie einfach auf einem Steuerelement mit der rechten Maustaste und wählen Sie **Tastenkombinationen anzeigen** aus. Daraufhin wird ein Dialogfeld geöffnet, welches die Tastenkombinationen anzeigt, die Sie verwenden können, basierend darauf, wo Sie auf der Seite sind.
 
 ## <a name="action-shortcuts"></a>Aktivitätskürzel
 
-| Aktion                                      | Drücken Sie folgende Taste: .                            |
+| Aktion                                      | Taste(n)                            |
 |-------------------------------------------------|----------------------------------|
 | Aktivitätssuche öffnen                              | STRG+’ oder ALT+Q                  |
 | Zum Standardaktivitätsbereich wechseln                | ALT+M,A oder STRG+F6               |
@@ -130,10 +129,8 @@ Benutzer können zur Zeit verfügbaren Tastenkombinationen direkt über die Benu
 
 ## <a name="grid-shortcuts"></a>Rasterverknüpfungen
 
-| Aktion                                                                                                             | Drücken Sie folgende Taste: .                           |
+| Aktion                                                                                                             | Taste(n)                           |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| Vertikales Scrollen                                                                                                     | Mausrad                     |
-| Horizontales Scrollen                                                                                                   | Umschalt + Mausrad             |
 | Zur nächsten/vorherigen Spalte wechseln                                                                                       | Registerkarte / UMSCHALT+TAB                 |
 | Zur nächsten/vorherigen Zeile wechseln                                                                                          | NACH-UNTEN-TASTE / NACH-OBEN-TASTE           |
 | Ohne Auswahl zur nächsten/vorherigen Zeile wechseln<blockquote>[!NOTE] Diese Verknüpfung gilt nur für Szenarien mit Mehrfachauswahl.</blockquote> | STRG+NACH-OBEN-TASTE / STRG+NACH-UNTEN-TASTE |
@@ -145,24 +142,22 @@ Benutzer können zur Zeit verfügbaren Tastenkombinationen direkt über die Benu
 | Zum ersten Datensatz wechseln                                                                                               | STRG+POS1                       |
 | Zum letzten Datensatz wechseln                                                                                                | STRG+ENDE                        |
 | Alle Zeilen auswählen oder löschen                                                                                               | STRG+UMSCHALT+M                    |
-| Zur ersten markierten Zeile wechseln                                                                                           | ALT+UMSCHALT+M, F                  |
-| Zur nächsten markieren Zeile wechseln                                                                                            | ALT+UMSCHALT+M, L                  |
-| Zur vorherigen markieren Zeile wechseln                                                                                        | ALT+UMSCHALT+M, P                  |
-| Zur letzten markierten Zeile wechseln                                                                                           | ALT+UMSCHALT+M, N                  |
+| Zur ersten markierten Zeile wechseln                                                                                           | ALT+UMSCHALT+M, F                    |
+| Zur nächsten markieren Zeile wechseln                                                                                            | ALT+UMSCHALT+M, L                    |
+| Zur vorherigen markieren Zeile wechseln                                                                                        | ALT+UMSCHALT+M, P                    |
+| Zur letzten markierten Zeile wechseln                                                                                           | ALT+UMSCHALT+M, N                    |
 | Die Standardaktivität in einem Raster ausführen<blockquote>[!NOTE] Die Tastenkombination wird aktiviert, wenn der Fokus auf einer Zelle liegt, die einen Link enthält und alle Zellen in dieser Spalte Links haben</blockquote> | EINGABETASTE                           |
 | Fokus zwischen ausgewählter Zeile und Kopfzeile umschalten                                                               | ALT+UMSCHALT+H                     |
 | Die aktuelle Spalte vergrößern/verkleinern (mit Fokus in der Kopfzeile)                                                  | NACH-RECHTS-TASTE / NACH-LINKS-TASTE        |
-| Größe der aktuellen Spalte zur nächsten/vorherigen Position bewegen (mit Fokus in der Kopfzeile)                                   | STRG+UMSCHALT+NACH-RECHTS-TASTE / STRG+UMSCHALT+NACH-LINKS-TASTE |
-| Rasterfilterung für die aktuelle Spalte öffnen (mit Fokus in der Kopfzeile)                                              | Eingeben                           |
-| Größe der aktuellen Spalte an den Inhalt anpassen (mit Fokus in der Kopfzeile)                                           | A (oder doppelklicken Sie auf den Ziehpunkt für die Spaltengröße) |
+| Rasterfilterung für die aktuelle Spalte öffnen (mit Fokus in der Kopfzeile)                                              | EINGABETASTE                           |
 
 ## <a name="input-control-shortcuts"></a>Eingabesteuerungsverknüpfungen
 
-| Aktion                                                                   | Drücken Sie folgende Taste: .                         |
+| Aktion                                                                   | Taste(n)                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Den Link öffnen                                                           | STRG+EINGABETASTE                    |
-| Sitzungsdatum in ein Datumsfeld eingeben                                       | S                             |
-| Aktuelles Datum in ein Datumsfeld eingeben                                       | Di                             |
+| Sitzungsdatum in ein Datumsfeld eingeben                                       | S                         |
+| Aktuelles Datum in ein Datumsfeld eingeben                                       | Di                         |
 | Suche, Kombinationsfeld, Datumsauswahl, Ablagedialogfeld öffnen                         | ALT+NACH-UNTEN-TASTE                |
 | Suche, Kombinationsfeld, Datumsauswahl, Ablagedialogfeld schließen                        | ESC                           |
 | Fokus in eine Suche verschieben (wenn die Suche bereits offen ist)                   | ALT+NACH-UNTEN-TASTE                |
@@ -209,8 +204,8 @@ Benutzer können zur Zeit verfügbaren Tastenkombinationen direkt über die Benu
 | Das Tool „Verschieben” verwenden (wenn im Personalisierungsmodus)                                                                       | M                                   |
 | Das aktuelle Steuerelemente als das zu verschiebende auswählen (wenn das Tool „Verschieben” verwendet wird und noch kein Steuerelement zum Verschieben ausgewählt ist)  | LEERTASTE oder EINGABETASTE                      |
 | Das Steuerelement zum Verschieben deaktivieren (wenn das Tool „Verschieben” verwendet wird)                                                                   | ESC                                 |
-| Zur nächsten Position für das ausgewählte Steuerelement wechseln (wenn das Tool „Verschieben“ verwendet wird)                                              | Registerkarte oder NACH-RECHTS-TASTE oder NACH-UNTEN-TASTE    |
-| Zur vorherigen Position für das ausgewählte Steuerelement wechseln (wenn das Tool „Verschieben“ verwendet wird)                                          | UMSCHALT+TAB oder NACH-LINKS-TASTE oder NACH-OBEN-TASTE |
+| Zur nächsten Position für das ausgewählte Steuerelement wechseln (wenn das Tool „Verschieben” verwendet wird)                                          | Registerkarte oder NACH-RECHTS-TASTE oder NACH-UNTEN-TASTE    |
+| Zur vorherigen Position für das ausgewählte Steuerelement wechseln (wenn das Tool „Verschieben” verwendet wird)                                      | UMSCHALT+TAB oder NACH-LINKS-TASTE oder NACH-OBEN-TASTE |
 | Das Tool „Ausblenden” verwenden (wenn im Personalisierungsmodus)                                                                       | H                                   |
 | Wechseln, ob das aktuelle Steuerelement sichtbar oder ausgeblendet ist (wenn das Tool „Ausblenden” verwendet wird)                                     | LEERTASTE oder EINGABETASTE                      |
 | Das Tool „Überspringen” verwenden (wenn im Personalisierungsmodus)                                                                       | K                                   |
@@ -256,14 +251,7 @@ Benutzer können zur Zeit verfügbaren Tastenkombinationen direkt über die Benu
 | Erweitern/reduzieren Sie die animierte Popup-Eingabeaufforderung (während Sie eine Aufgabenanleitung abspielen)              | Alt+R,C                    |
 | Zeigen Sie mehr/weniger Informationen in der animierten Popup-Eingabeaufforderung an (während Sie einen Aufgabenleitfaden abspielen) | Alt+R,M                    |
 
-## <a name="focus-management"></a>Fokusverwaltung 
-Die Fokusverwaltung beschreibt, wie der Benutzerfokus in einer Anwendung gehandhabt wird. Apps für Finanzen und Betrieb verfügen, insbesondere bei Dateneingabeszenarien, über spezialisierte Fokusverhalten, die die Benutzerproduktivität optimieren sollen. Das Fokusverhalten umfasst Folgendes:  
-
--  Wenn eine Seite geladen wird, hat das erste bearbeitbare Eingabesteuerelement auf der Seite den Fokus und kann Benutzereingaben sofort annehmen. Wenn auf der Seite kein bearbeitbares Eingabesteuerelement vorhanden ist, ist die Fallbackoption für den anfänglichen Fokus das erste Eingabesteuerelement auf der Seite, gefolgt vom ersten fokussierbaren Steuerelement auf der Seite.   
--  Wenn eine Schaltfläche ausgewählt wird, wird die Aktion normalerweise verarbeitet und der Fokus kann auf die Seite zurückkehren. In diesem Fall kehrt der Fokus in der Regel zum ausgewählten Schaltflächensteuerelement zurück. Dies gilt für Apps für Finanzen und Betrieb, **außer** wenn sich die Schaltfläche im Aktivitätsbereich oder auf einer Symbolleiste befindet. In diesen Fällen kehrt der Fokus nach Abschluss der Aktion zum letzten Steuerelement *außerhalb* des Aktivitätsbereichs (oder der Symbolleiste) zurück, der den Fokus hatte, bevor die Schaltfläche ausgewählt wurde.
-
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Tastenkombinationen für eine Analyse für fehlende Konten](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

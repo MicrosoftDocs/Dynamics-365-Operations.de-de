@@ -1,12 +1,10 @@
 ---
 title: Arbeitsaufträge terminieren
 description: In diesem Abschnitt wird erläutert, wie Sie Arbeitsaufträge im Anlagenmanagement planen.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderSchdulePreviewPart, EntAssetWorkOrderScheduleExclusively, EntAssetWorkOrderSchduleInfoPart, EntAssetWorkOrderScheduleListPage, EntAssetWorkOrderSchedule, EntAssetWorkOrderScheduleDelete
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7e7751e3e2f216abf46f02ee0644909c6894c5b2
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: becd06c46afd92bf07d9a69147b7768e780aefa57f9045c11698c04154d6ddb8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020228"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718058"
 ---
 # <a name="schedule-work-orders"></a>Arbeitsaufträge terminieren
 
@@ -58,9 +56,9 @@ Es können nur Arbeitsaufträge mit einem Arbeitsauftragslebenszyklusstatus term
 
 *Beispiel:* In der folgenden Abbildung wird die Formel, die in das Feld **Erwarteter Start** eingefügt wird, eine Arbeitsauftragsplanung für alle Arbeitsaufträge mit erwartetem Startdatum in einer Woche von heute und später erzeugen. Diese Formel kann nützlich sein, wenn Sie die Arbeitsauftragsplanung fortlaufend durchführen, aber Sie möchten sicherstellen, dass die für die nächsten 5-6 Tage geplanten Arbeitsaufträge nicht verschoben werden.
 
-![Abbildung 1](media/03-work-order-scheduling.png)
+![Abbildung 1.](media/03-work-order-scheduling.png)
 
-Die auf Arbeitsaufträge bezogene Arbeitsauftragsart kann die Terminierung für einen Wartungsmitarbeiter einrichten (**Anlagenmanagement** > **Einrichtung** > **Aufträge** > **Auftragsarten** > **Ein Wartungsmitarbeiter** Umschalttaste auf „Ja“ eingestellt). Das bedeutet, dass, wenn die Auftragsart auf einem Arbeitsauftrag verwendet wird, die Umschalttaste **Ein Wartungsarbeiter** automatisch auf „Ja“ auf der Seite **Alle Arbeitsaufträge** Detailseite > **Kopf** Ansicht > **Terminplan** FastTab gesetzt wird. Bei der Arbeitsauftragsplanung werden alle auf dem Arbeitsauftrag erstellten Arbeitsaufträge anschließend auf den gleichen Instandhalter eingeplant. Bei Bedarf können Sie die Auswahl über die Schaltfläche **Ein Wartungsarbeiter** Umschalten in **Alle Arbeitsaufträge** bearbeiten, um die Planung mehrerer Mitarbeiter oder eines Mitarbeiters auf den Arbeitsaufträgen zu ermöglichen.
+Die auf Arbeitsaufträge bezogene Arbeitsauftragsart kann die Terminierung für einen Wartungsmitarbeiter einrichten (**Anlagenmanagement** > **Einrichtung** > **Aufträge** > **Auftragsarten** > **Ein Wartungsmitarbeiter** Umschalttaste auf „Ja“ eingestellt). Das bedeutet, dass, wenn die Auftragsart auf einem Arbeitsauftrag verwendet wird, die Umschalttaste **Ein Wartungsarbeiter** automatisch auf „Ja“ auf der Seite **Alle Arbeitsaufträge** Detailseite > **Kopf** Ansicht > **Terminplan** FastTab gesetzt wird. Bei der Arbeitsauftragsplanung werden alle auf dem Arbeitsauftrag erstellten Arbeitsaufträge anschließend auf den gleichen Instandhalter eingeplant. Bei Bedarf können Sie die Auswahl über die Schaltfläche **Ein Wartungsarbeiter** umschalten in **Alle Arbeitsaufträge** bearbeiten, um die Planung mehrerer Mitarbeiter oder eines Mitarbeiters auf den Arbeitsaufträgen zu ermöglichen.
 
 Der Terminierungsprozess im Anlagenmanagement berücksichtigt mehrere Faktoren in der Terminberechnung:
 
@@ -137,3 +135,6 @@ So zeigen Sie das Gantt-Diagramm an und arbeiten damit:
     - Um einen angezeigten Arbeitsauftrag neu zu planen, wählen Sie ihn aus und ziehen Sie ihn auf das entsprechende neue Datum und die entsprechende neue Uhrzeit.
 
 1. Wenn Sie Änderungen vorgenommen haben, wählen Sie im Aktivitätsbereich **Speichern** aus, um sie zu speichern.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

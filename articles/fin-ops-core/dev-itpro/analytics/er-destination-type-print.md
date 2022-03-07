@@ -1,12 +1,10 @@
 ---
 title: Drucker-ER-Zieltyps
-description: Dieses Thema enthält Informationen zum Konfigurieren eines Druckerziels für jede ORDNER- oder DATEI-Komponente eines ER-Formats (Electronic Reporting), das zum Generieren ausgehender Dokumente in PDF- oder Microsoft Office-Formaten (Excel\Word) konfiguriert ist.
+description: In diesem Thema wird erläutert, wie für jede FOLDER- oder FILE-Komponente eines EB-Formats (elektronische Berichterstellung) ein Druckerziel konfiguriert werden kann.
 author: NickSelin
-manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -17,14 +15,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: b7a279dcb30e7681ae654ab17d898a5364391d57
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 83081f8c17a903cd447a34596df2e61ebda0cafc
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679605"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753431"
 ---
-# <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Druckerziel
+# <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Druckziel
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,8 +47,6 @@ Das **Drucker**-Ziel kann nur für Dateikomponenten konfiguriert werden, die zum
 
 ### <a name="limitations"></a>Einschränkungen
 
-Diese Funktion ist eine Vorschau-Funktion und unterliegt den angegebenen Nutzungsbedingungen, die in [Ergänzende Nutzungsbedingungen für Microsoft Dynamics 365-Vorschauen](https://go.microsoft.com/fwlink/?linkid=2105274) beschrieben sind.
-
 Das **Drucker**-Ziel ist nur für Cloud-Bereitstellungen implementiert.
 
 ### <a name="use-the-printer-destination"></a>Druckerziel verwenden
@@ -70,3 +66,6 @@ Um eine bestimmte [Seitenausrichtung](electronic-reporting-destinations.md#Selec
 
 - [Überblick über die elektronische Berichterstellung (ER)](general-electronic-reporting.md)
 - [Zielorte für elektronische Berichterstellung (ER)](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

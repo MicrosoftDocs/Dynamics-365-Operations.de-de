@@ -2,11 +2,9 @@
 title: EB-Konfigurationen entwerfen, um eingehende Dokumente zu analysieren
 description: Diese Prozedur zeigt, wie elektronische Berichterstellungskonfigurationen (EB) entworfen werden, um ein eingehendes elektronisches Dokument für die Anwendungsdatenaktualisierung zu analysieren.
 author: NickSelin
-manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 446a4676ad00c93d691d3048408c32d7ad373d2d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8068850ee143540ff9f3b6222485d3ecd2a2a82020063f34cfd7b5a69826eda3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682092"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6756380"
 ---
 # <a name="design-er-configurations-to-parse-incoming-documents"></a>EB-Konfigurationen entwerfen, um eingehende Dokumente zu analysieren
 
@@ -113,3 +111,6 @@ Sie führen die erstellte Modellzuordnung für Testzwecke durch um zu sehen, wie
     * Wählen Sie „Durchsuchen“ aus und wählen Sie dann die Datei Response4.xml aus.
 16. Wählen Sie OK.
     * Prüfen Sie das generierte Ergebnis. Der Antworttyp wurde nun ordnungsgemäß als gleich für die Datei Response1.xml-Datei erkannt.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

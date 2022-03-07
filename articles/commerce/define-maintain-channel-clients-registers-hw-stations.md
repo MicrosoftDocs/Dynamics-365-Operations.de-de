@@ -2,16 +2,13 @@
 title: Peripheriegeräte mit der Verkaufsstelle (POS) verbinden
 description: Dieses Thema erläutert, wie Sie Peripheriegeräte mit Ihrer Retail POS verbinden.
 author: rubencdelgado
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 92383
 ms.assetid: 83f31ea6-f0a2-4501-9d4d-a37b6eec2599
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ec64cb8a7c490c6798a897fd20a56e5af5c8be3a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 64b228954c040050f605d60cd416c112f3b12e25
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412484"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5802044"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Peripheriegeräte mit der Verkaufsstelle (POS) verbinden
 
@@ -41,13 +38,13 @@ Eine Reihe von Komponenten werden zum Definieren der Beziehung zwischen einem Sh
 
 ### <a name="pos-registers"></a>POS-Register
 
-Navigieren: Klicken Sie auf **Retail und Commerce** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Register**.
+Navigieren: Klicken Sie auf **Einzelhandel und Handel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Register**.
 
 Das POS-Register ist eine Entität, die verwendet wird, um die Merkmale einer bestimmten Instanz des POS zu definieren. Zu diesen Merkmalen gehören das Hardwareprofil oder die Einrichtung der Peripheriegeräte, die an der Kasse verwendet werden, die Filiale, der die Kasse zugeordnet ist, und die visuelle Erfahrung für den Benutzer, der sich an der Kasse anmeldet.
 
 ### <a name="devices"></a>Geräte
 
-Navigieren: Klicken Sie auf **Retail und Commerce** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Geräte**.
+Navigieren: Klicken Sie auf **Einzelhandel und Handel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Geräte**.
 
 Ein Gerät ist eine Entität, die eine physische Instanz eines Gerätes darstellt, das dem POS-Register zugeordnet ist. Wenn ein Gerät eingerichtet wird, wird es einem POS-Register zugeordnet. Die Geräteentität verfolgt Informationen darüber, ob ein POS-Register aktiviert ist, welcher Client verwendet wird und das Anwendungspaket, das für ein bestimmtes Gerät bereitgestellt wurde. Es werden zwei Typen von Geräten unterschieden: **Retail Modern POS** (MPOS) oder **Retail Cloud POS** (Cloud POS).
 
@@ -85,11 +82,11 @@ Während die Hardwarestation selbst auf der Kanalebene unter Einbeziehung Instan
 
 Um MPOS mit POS-Peripheriegeräte in einem herkömmlichen, festen POS-Szenario zu verbinden, navigieren Sie zuerst zum Register selbst und weisen Sie dann ein Hardwareprofil zu. Sie finden die POS-Register unter **Retail nd Commerce** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Register**. 
 
-Nachdem Sie das Hardwareprofil zugewiesen haben, synchronisieren Sie die Änderungen mit der Kanaldatenbank unter Verwendung des Vertriebsplans **Register**. Sie finden die Vertriebspläne unter **Retail und Commerce** &gt; **Retail and Commerce IT** &gt; **Vertriebsplan**. 
+Nachdem Sie das Hardwareprofil zugewiesen haben, synchronisieren Sie die Änderungen mit der Kanaldatenbank unter Verwendung des Vertriebsplans **Register**. Sie finden die Vertriebspläne unter **Einzelhandel und Handel** &gt; **Retail and Commerce IT** &gt; **Vertriebsplan**. 
 
 Nun richten Sie eine "lokale" Hardwarestation auf dem Kanal ein. Klicken Sie auf **Retail and Commerce** &gt; **Kanäle** &gt; **Filialen** &gt; **Alle Filialen**, und wählen Sie eine Filiale aus. 
 
-Klicken Sie dann im Inforegister **Hardwarestationen** auf **Hinzufügen**, um eine Hardwarestation hinzuzufügen. Geben Sie eine Beschreibung ein, **Localhost** als Hostname und synchronisieren Sie dann die Änderungen mit dem Kanal, indem Sie den Vertriebsplan **Kanalkonfiguration** verwenden. Sie finden die Vertriebspläne unter **Retail und Commerce** &gt; **Retail and Commerce IT** &gt; **Vertriebsplan**. 
+Klicken Sie dann im Inforegister **Hardwarestationen** auf **Hinzufügen**, um eine Hardwarestation hinzuzufügen. Geben Sie eine Beschreibung ein, **Localhost** als Hostname und synchronisieren Sie dann die Änderungen mit dem Kanal, indem Sie den Vertriebsplan **Kanalkonfiguration** verwenden. Sie finden die Vertriebspläne unter **Einzelhandel und Handel** &gt; **Retail and Commerce IT** &gt; **Vertriebsplan**. 
 
 Abschließend verwenden Sie den Vorgang **Hardwarestation auswählen** in MPOS und wählen die Hardwarestation **Localhost**. Legen Sie die Hardwarestation auf **Aktiv** fest. Das Hardwareprofil, das in diesem Szenario verwendet wird, sollte aus dem POS-Register selbst stammen. Für dieses Szenario ist kein Hardwarestationsprofil notwendig.
 
@@ -102,7 +99,7 @@ Abschließend verwenden Sie den Vorgang **Hardwarestation auswählen** in MPOS u
 
 [![Freigegebene Peripheriegeräte](./media/shared-300x254.png)](./media/shared.png)
 
-In diesem Szenario ist eine eigenständige Hardwarestation für MPO- und Cloud POS-Kunden freigegeben. Dieses Szenario erfordert die Erstellung eines Hardwarestationsprofils zum Spezifizieren des Download-Pakets, des Ports und des Hardwareprofils, das die Hardwarestation verwendet. Sie können die Hardwarestationsprofile unter **Retail und Commerce** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS-Profile** &gt; **Hardwarestationsprofile** finden. 
+In diesem Szenario ist eine eigenständige Hardwarestation für MPO- und Cloud POS-Kunden freigegeben. Dieses Szenario erfordert die Erstellung eines Hardwarestationsprofils zum Spezifizieren des Download-Pakets, des Ports und des Hardwareprofils, das die Hardwarestation verwendet. Sie können die Hardwarestationsprofile unter **Einzelhandel und Handel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS-Profile** &gt; **Hardwarestationsprofile** finden. 
 
 Nachdem Sie das Hardware-Stationsprofil erstellt haben, navigieren Sie zu dem entsprechenden Kanal (**Retail and Commerce** &gt; **Kanäle** &gt; **Läden** &gt; **Alle Läden**) und fügen Sie eine neue Hardware-Station hinzu. Weisen Sie diese neue Hardwarestation dem Hardwarestationsprofil zu, das zuvor erstellt wurde. 
 
@@ -122,7 +119,7 @@ POS-Register werden hauptsächlich über die Register selbst und die den Registe
 
 ### <a name="pos-profiles"></a>POS-Profile
 
-Sie finden die POS-Profile unter **Retail und Commerce** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS-Profile**. Es empfiehlt sich, viele Aspekte eines Registers über Profile zu verwalten, da die Profile für mehrere Register freigegeben werden können. Profile können entweder einem einzelnen Register oder einem Geschäft, sollte ein Profil auf shopweiter Basis gültig sein, zugeordnet werden. Die folgenden Abschnitte beschreiben die POS-Profile und ihre Verwendung.
+Sie finden die POS-Profile unter **Einzelhandel und Handel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS-Profile**. Es empfiehlt sich, viele Aspekte eines Registers über Profile zu verwalten, da die Profile für mehrere Register freigegeben werden können. Profile können entweder einem einzelnen Register oder einem Geschäft, sollte ein Profil auf shopweiter Basis gültig sein, zugeordnet werden. Die folgenden Abschnitte beschreiben die POS-Profile und ihre Verwendung.
 
 #### <a name="offline-profile"></a>Offlineprofil
 
@@ -205,3 +202,6 @@ Zusätzliche Informationen zur Aktivierungen beinhalten die Arbeitskraft,die den
 ### <a name="client-data-synchronization"></a>Client-Datensynchronisierung
 
 Alle Änderungen an einem POS-Client, ausgenommen der Änderungen am Geräteaktivierungsstatus, müssen mit der Kanaldatenbank synchronisiert werden, um wirksam zu werden. Um Änderungen an der Kanaldatenbank zu synchronisieren, navigieren Sie zu **Retail and Commerce** &gt; **IT für Retail and Commerce** &gt; **Vertriebsplan**, und führen Sie den erforderlichen Vertriebsplan aus. Für Änderungen am Client sollten Sie die Vertriebszeitpläne **Register** und **Kanalkonfiguration** ausführen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

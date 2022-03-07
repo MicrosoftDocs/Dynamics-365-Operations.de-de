@@ -2,11 +2,9 @@
 title: Den Status eines Experiments überprüfen
 description: In diesem Thema wird erläutert, welchen Status ein Experiment im Experimentierlebenszyklus in Dynamics 365 Commerce hat.
 author: sushma-rao
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 5ae29fe5ac49d92c261c59d115664b50e87880a0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f7bdd292893ee42d49bdf977a55d8b10896ca1cd
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965102"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792438"
 ---
 # <a name="review-the-status-of-an-experiment"></a>Den Status eines Experiments überprüfen
 Das Einrichten und Ausführen eines Experiments in Dynamics 365 Commerce umfasst viele Schritte. Informationen zum Experimentierlebenszyklus finden Sie unter [Experimentieren in Dynamics 365 Commerce](experimentation-overview.md).
@@ -44,3 +42,6 @@ Entsprechend können in der Spalte **Drittanbieterstatus** die folgenden Werte a
 Das folgende Diagramm zeigt beide Statussätze und ihre Beziehung zueinander.
 
 [ ![Experimentierstatus](./media/experimentation_statuses.svg) ](./media/experimentation_statuses.svg#lightbox)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

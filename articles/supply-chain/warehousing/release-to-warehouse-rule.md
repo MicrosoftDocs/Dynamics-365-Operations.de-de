@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 27030e8dd58b290d80f6b00cbd250e09c1e50819
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b23ef104b918f44eed6508319d9b58f2b8355ff1
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428497"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5228416"
 ---
 # <a name="release-to-warehouse-rule"></a>Lagerortfreigaberegel
 
@@ -131,3 +130,6 @@ Dieses Szenario zeigt, wie die Funktion für Lagerorte funktioniert, die auf **T
 
 > [!NOTE]
 > Das gleiche Ergebnis wird erwartet, wenn die zweite Position teilweise reserviert ist. In diesem Fall wird Arbeit für die reservierte Positionsmenge erstellt, nicht jedoch für die nicht reservierte Menge.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

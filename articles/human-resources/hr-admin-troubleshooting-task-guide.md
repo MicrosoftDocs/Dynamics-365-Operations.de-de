@@ -2,14 +2,11 @@
 title: Aufgabenleitfäden in LCS speichern und erneut wiedergeben
 description: In diesem Artikel wird erläutert, wie Aufgabenleitfäden in Microsoft Dynamics Lifecycle Services (LCS) gespeichert und dann wiedergegeben werden.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
@@ -17,14 +14,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b55937c0867117809471f50f1987f7bf12a4b25d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 46532fce05b7faf15b3dc2e843dcd93a976c0da1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418683"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357264"
 ---
 # <a name="save-task-guides-to-lcs-and-replay-them"></a>Aufgabenleitfäden in LCS speichern und erneut wiedergeben
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Umgebungsdetails** 
 
@@ -32,9 +31,9 @@ Microsoft Dynamics 365 Human Resources, das über Microsoft Dynamics Lifecycle S
 
 **Abgang**
 
-Der Kunde/die Kundin möchte neue Aufgabenaufzeichnungen in seinem oder ihrem LCS-Projekt speichern und dann die gespeicherten Aufgabenleitfäden wiedergeben.
+Kunden möchte neue Aufgabenaufzeichnungen im LCS-Projekt speichern und dann die gespeicherten Aufgabenleitfäden wiedergeben.
 
-**Auflösung**
+**Lösung**
 
 Folgen Sie diesen Schritten, um eine Aufgabenaufzeichnung in LCS zu speichern.
 
@@ -53,7 +52,7 @@ Folgen Sie diesen Schritten, um eine Aufgabenaufzeichnung in LCS zu speichern.
 10. Erstellen Sie eine Aufgabenaufzeichnung.
 11. Wenn Sie fertig sind, wählen Sie **In Lifecycle Services speichern** aus.
 
-    ![In Lifecycle Services speichern](media/task-guides.png)
+    ![In Lifecycle Services speichern.](media/task-guides.png)
 
 12. Wählen Sie die BPM-Bibliothek und -Knoten aus, um der Aufgabenaufzeichnung zu speichern.
 
@@ -63,3 +62,6 @@ Gehen Sie folgendermaßen vor, um einen Aufgabenleitfaden von LCS wiederzugeben.
 2. Wählen Sie **Von LCS aus öffnen** aus.
 3. Wählen Sie die Bibliothek und den BPM-Knoten aus, die den gespeicherten Aufgabenleitfaden haben.
 4. Öffnen Sie den Aufgabenleitfaden.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7cdc22eeabda6cf9f08484d698e5096f66af4a12
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: ae02846c0ec937ebaff440dc5272a135e16c8aa7355ecc303929e760a54b6627
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920697"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6760297"
 ---
 # <a name="quantity-exceeds-under-delivery-percentage-during-packing-slip-generation"></a>Menge überschreitet Unterlieferungsprozentsatz bei Lieferscheinerstellung
 
@@ -49,8 +49,8 @@ Gehen Sie wie folgt vor, um den Unterlieferungsprozentsatz anzupassen.
 
 1. Gehen Sie zu **Debitoren \> Aufträge \> Alle Aufträge**.
 1. Wählen Sie den Verkaufsauftrag aus, für den Sie keinen Lieferschein für die Ladung buchen können.
-1. Wählen Sie auf der Registerkarte **Kundenauftragszeilen** die Verkaufsauftragszeile für das Element aus, das den Prozentsatz der Unterlieferung überschreitet.
-1. Auf der Registerkarte **Zeilendetails** wählen Sie **Lieferung**.
+1. Wählen Sie auf der Registerkarte  **Kundenauftragszeilen** die Kundenauftragszeile für das Element, das den Unterlieferungsprozentsatz überschreitet.
+1. Auf der Registerkarte  **Zeilendetails** wählen Sie **Lieferung**.
 1. Legen Sie das Feld **Unterlieferung** auf einen größeren Prozentsatz fest, der die kommissionierte Menge gegen die Ladungsmenge aufwiegt, so dass die Lieferscheinerstellung fortgesetzt werden kann.
 
 ### <a name="reverse-and-make-adjustments"></a>Stornieren und Anpassungen vornehmen
@@ -60,14 +60,14 @@ Stornieren Sie alles, was für die Ladung gebucht wurde (z. B. den Lieferschein,
 Gehen Sie wie folgt vor, um einen Lieferschein zu stornieren.
 
 1. Gehen Sie zu **Lagerortverwaltung \> Ladungen \> Alle Ladungen**.
-1. Wählen Sie im Aktionsbereich auf der Registerkarte **Versand und Empfang** in der Gruppe **Umkehren** die Option **Lieferscheine stornieren**.
+1. Wählen Sie im Aktionsbereich auf der Registerkarte **Versand und Empfang** in der Gruppe **Stornieren** die Option **Lieferscheine stornieren**.
 
 Gehen Sie wie folgt vor, um eine Versandbestätigung zu stornieren.
 
 1. Gehen Sie zu **Lagerortverwaltung \> Ladungen \> Alle Ladungen**.
-1. Wählen Sie im Aktionsbereich auf der Registerkarte **Versand und Empfang** in der Gruppe **Stornieren** die Option **Sendungsbestätigung stornieren**.
+1. Wählen Sie im Aktionsbereich auf der Registerkarte **Versand und Empfang** in der Gruppe **Stornieren** die Option **Sendungsbestätigung stornieren**.
 
 Gehen Sie wie folgt vor, um Arbeiten zu stornieren.
 
 1. Gehen Sie zu **Lagerortverwaltung \> Ladungen \> Alle Ladungen**.
-1. Im Aktionsbereich, auf der Registerkarte **Ladungen**, wählen Sie in der Gruppe **Arbeit** die Option **Arbeit umkehren**.
+1. Wählen Sie im Aktionsbereich auf der Registerkarte **Ladungen** in der Gruppe **Arbeit** die Option **Arbeit stornieren**.

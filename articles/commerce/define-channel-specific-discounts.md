@@ -2,16 +2,13 @@
 title: Kanalspezifische Rabatte definieren
 description: Einzelhändler legen häufig verschiedene Rabatte in verschiedenen Kanälen fest. Dieses Thema prüft die Konzepte, die Sie kennen müssen, um einen Rabatt für einen bestimmten Kanal zu erstellen.
 author: scott-tucker
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailAffiliationPriceGroup, RetailCatalogPriceGroup, RetailChannelPriceGroup, RetailDiscountPriceGroup, RetailDiscountPricingWorkspace, RetailPeriodicDiscount, RetailStoreItemPriceList, RetailStoreTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16401
 ms.assetid: d807fd51-86aa-47a0-8e00-6c5ddd21ff6b
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 539a6f2df46450c5e0fd18ba69501432d6f3fbdd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 14b6f8f4a7d344111718fad94418bc3dbb5c9b1e113c0fd613350c49a2511d4f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412575"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759310"
 ---
 # <a name="define-channel-specific-discounts"></a>Kanalspezifische Rabatte definieren
 
@@ -40,20 +37,20 @@ Commerce verwendet Preisgruppen, um kanalspezifische Rabatte zu definieren. Prei
 
 ## <a name="price-groups"></a>Preisgruppen
 
-[![Preisgruppen](./media/price-groups-1024x608.png)](./media/price-groups.png)
+[![Preisgruppen.](./media/price-groups-1024x608.png)](./media/price-groups.png)
 
 Im Diagramm wird die Beziehung zwischen Entitäten dargelegt die auf einer Buchung (Kanal, Katalog, Zugehörigkeit, Debitor, Treuekarte) erscheinen und die verschiedenen Rabatttypen, die konfiguriert werden können. Alle Buchungen sind in einem Kanal vorhanden, daher ist sichergestellt, dass der Kanal in einer Buchung vorhanden ist. Die verbleibende Entitäten sind optional. Auf jeder Masterdaten Seite ist ein Link zu einer zugehörigen Preisgruppenseite, in der Sie Preisgruppen nach Bedarf anzeigen und hinzufügen können. Eine Preisgruppe wird verwendet, um vier unterschiedliche Arten Entitäten zu unterscheiden die auf Rabatte, Preisregulierungen und Handelsvereinbarungen angewendet werden soll. Es wird empfohlen, eine Strategie für die Planung zu erstellen, wie die Preisgruppen benannt werden sollen, um sie organisiert zu behalten. Eine Option wäre, einen Buchstaben oder eine Nummer als Präfix oder Suffix zu verwenden, um zwischen unterschiedlichen Arten zu unterscheiden. Beispiel 1 xxxxx für Kanalpreisgruppen und 2 xxxxx für Katalogpreisgruppen. Es gibt vier Abfrageseiten für die verschiedenen Commerce-Entitäten für die Rabatten möglich sind.
 
 - **Kanal Channel-Preisgruppen**– Diese Seite enthält eine Liste der Kanäle und Rabatte, die für die jeweilige Preisgruppe verknüpft sind.
 - **Katalogpreisgruppen**- Diese Seite enthält eine Liste der Kataloge und Rabatte, die für die jeweilige Preisgruppe verknüpft sind.
-- **Treuepreisgruppen**- Diese Seite  enthält eine Liste der Treueprogramme und Rabatte, die für die jeweilige Preisgruppe verknüpft sind.
+- **Treuepreisgruppen**- Diese Seite enthält eine Liste der Treueprogramme und Rabatte, die für die jeweilige Preisgruppe verknüpft sind.
 - **Zugehörigkeitspreisgruppen**- Diese Seite enthält eine Liste der Zugehörigkeiten und Rabatte, die für jede Preisgruppe verknüpft sind.
 
 ## <a name="example-channel-discount-set-up"></a>Beispieleinrichtung für Kanalrabatte
 
 Das folgende Beispiel veranschaulicht die Aufgaben zur Einrichtung von Kanalrabatten.
 
-1. In vorliegenden Beispiel haben Sie einen  Kanal namens **Houston** und erstellen einen neuen Rabatt namens **Zurück zur Schule**.
+1. In vorliegenden Beispiel haben Sie einen Kanal namens **Houston** und erstellen einen neuen Rabatt namens **Zurück zur Schule**.
 2. Da die Preisgestaltungs- und Rabattstrategie die Möglichkeit von Kanalrabatten umfasst, erstellen Sie immer eine kanalspezifische Preisgruppe, wenn Sie einen Kanal erstellen.
 3. Sie haben die Preisgruppe **Houston-PG** und diese ist dem Kanal **Houston** zugewiesen.
 4. Nachdem Sie den neuen Rabatt **Zurück zur Schule** erstellt haben, müssen Sie auf **Preisgruppen** oben auf der Seite **Rabatt** klicken. Die **Rabattpreisgruppen**-Seite wird geöffnet. Danach klicken Sie auf **Neu** und wählen die Preisgruppe **Houston-PG** aus.
@@ -62,3 +59,6 @@ Das folgende Beispiel veranschaulicht die Aufgaben zur Einrichtung von Kanalraba
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Preisregulierungen und Rabatte](price-adjustments-discounts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,27 +1,24 @@
 ---
 title: Verzögerte Verarbeitung der Lagerarbeit
 description: In diesem Thema werden die Funktionen beschrieben, die die verzögerte Verarbeitung von Einlagerungsvorgängen in Dynamics 365 Supply Chain Management verfügbar machen.
-author: josaw1
-manager: tfehr
+author: Mirzaab
 ms.date: 11/18/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: perlynne
+ms.author: mirzaab
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: cc8321c55bc867db065af0cddf356fb497a956e8
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f99e960ffe7ca383563cc49c2e0825592ef5de57
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429041"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577863"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Verzögerte Verarbeitung der Lagerarbeit
 
@@ -31,7 +28,7 @@ In diesem Thema werden die Funktionen beschrieben, die die verzögerte Verarbeit
 
 Mit der verzögerten Verarbeitungsfunktion können Lagerarbeiter weiterhin andere Aufgaben erledigen, während im Hintergrund der Einlagerungsvorgang verarbeitet wird. Die verzögerte Verarbeitung ist hilfreich, wenn zahlreiche Arbeitspositionen verarbeitet werden müssen und die Arbeitskraft diese Arbeit asynchron verarbeiten lassen kann. Sie ist außerdem nützlich, wenn es beim Server zu spontanen oder ungeplanten Zunahmen bei der Verarbeitungszeit kommen kann und sich diese erhöhte Verarbeitungszeit auf die Produktivität des Benutzers auswirken kann.
 
-Eine Hintergrundverarbeitung wird durch Verwendung des SysOperations-Frameworks erreicht. Weitere Informationen finden Sie unter [Übersicht über das SysOperation-Framework](https://docs.microsoft.com/dynamicsax-2012/developer/sysoperation-framework-overview).
+Eine Hintergrundverarbeitung wird durch Verwendung des SysOperations-Frameworks erreicht. Weitere Informationen finden Sie unter [Übersicht über das SysOperation-Framework](/dynamicsax-2012/developer/sysoperation-framework-overview).
 
 ## <a name="configuring-the-work-processing-policies"></a>Konfigurieren der Arbeitsverarbeitungsrichtlinien
 
@@ -110,3 +107,9 @@ Der Arbeitsbereich **Überwachung ausgehender Arbeit** hat zwei Kacheln, die Ihn
 ## <a name="deleting-completed-tasks"></a>Löschen abgeschlossener Aufgaben
 
 Sie können verzögerte Einlagerungsverarbeitungsaufgaben löschen, die abgeschlossen wurden, indem Sie sie auswählen und sie auf der Seite löschen.
+
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+- [Verzögerte Verarbeitung des manuellen Bestandsumlagerungsvorgangs](deferred-processing-manual-inventory-movement.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

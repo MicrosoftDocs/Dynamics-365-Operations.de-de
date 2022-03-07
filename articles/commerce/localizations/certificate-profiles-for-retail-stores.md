@@ -2,11 +2,9 @@
 title: Benutzerdefinierte Zertifikatprofile für Einzelhandelsgeschäfte
 description: Dieses Thema bietet einen Überblick über die Verwendung von Zertifikaten in Einzelhandelsgeschäften.
 author: josaw
-manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFormLayout, RetailParameters
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 81fa3770a137471e3d7f8cab3c7d7f37febe64fa
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 9cb82a6d6336bb69fe818fb33e04ad621382b383055b24a4e79eee5ddff217ac
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018867"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719929"
 ---
 # <a name="user-defined-certificate-profiles-for-retail-stores"></a>Benutzerdefinierte Zertifikatprofile für Einzelhandelsgeschäfte
 
@@ -81,7 +79,7 @@ Wenn Sie auf der Seite **Zertifikatprofileinstellungen** eine neue Zeile hinzuf�
 - **Key Vault-Zertifikat**: Dieses Feld ist erforderlich, wenn Sie für das Feld **Speicherort** die Option **Schlüsseltresor** festlegen. Verwenden Sie diese Option, um ein Key Vault-Zertifikatgeheimnis anzugeben.
 
     > [!NOTE]
-    > Bevor Sie ein Key Vault-Zertifikat in Zertifikatprofilen verwenden, müssen Sie ein Zertifikat in den Schlüsseltresor hochladen und die Anweisungen in [Einrichten des Azure Key Vault-Client](https://docs.microsoft.com/dynamics365/finance/localizations/setting-up-azure-key-vault-client) befolgen.
+    > Bevor Sie ein Key Vault-Zertifikat in Zertifikatprofilen verwenden, müssen Sie ein Zertifikat in den Schlüsseltresor hochladen und die Anweisungen in [Einrichten des Azure Key Vault-Client](../../finance/localizations/setting-up-azure-key-vault-client.md) befolgen.
 
 - **Speichername**: Dieses Feld ist optional und nur verfügbar, wenn Sie das Feld **Speicherort** auf **Lokales Zertifikat** festlegen. Verwenden Sie dieses Feld, um einen Standardspeichernamen festzulegen, der zum Durchsuchen lokaler Zertifikate verwendet werden soll.
 - **Speicherort**: Dieses Feld ist optional und nur verfügbar, wenn Sie das Feld **Speicherort** auf **Lokales Zertifikat** festlegen. Verwenden Sie dieses Feld, um einen Standardspeicherort festzulegen, der zum Durchsuchen lokaler Zertifikate verwendet werden soll.
@@ -121,3 +119,6 @@ Wenn eine neue Version des Zertifikats eingeführt wird, diese jedoch nicht in a
 
 > [!NOTE]
 > In Commerce Runtime wird die neue Version des Zertifikats zuerst aufgerufen. Wenn das Zertifikat in einem bestimmten Geschäft oder auf einem bestimmten Terminal noch nicht aktualisiert wurde, wird die vorherige Version aufgerufen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

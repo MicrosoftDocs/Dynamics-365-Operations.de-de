@@ -2,15 +2,12 @@
 title: Aufträge aus einer anderen Filiale mithilfe der Funktion „Belastung übermitteln“ versenden
 description: In diesem Thema wird beschrieben die Funktion Belastung senden.
 author: ashishmsft
-manager: AnnBe
 ms.date: 10/10/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +15,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-10-10
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 0bbebcc7b2ab89bf2f5db7294acfca1d8a5ad96e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8c9c435c9ef8f692551a216d72a76f8a71b4ce6dc03dc6b13c23364a0aa81662
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412556"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746698"
 ---
 # <a name="ship-orders-from-another-store-by-using-the-charge-send-feature"></a>Aufträge aus einer anderen Filiale mithilfe der Funktion „Belastung übermitteln“ versenden
 
@@ -42,3 +39,6 @@ Die Belastung senden Funktion verwendet die folgenden POS-Vorgänge: Versand all
 Die Möglichkeit, Versand zu"-Adressen auszuwählen bleibt unverändert.
 
 Die Versandmethoden, die verwendet werden können, um die Auftragsposition zu decken, basieren auf der Konfiguration mit gültigen Lieferarten für Produkte und Adressen. Da die Regeln, die von Lieferarten gültig sind, nur im Zentralverwaltung (HQ) hat, der POS-Kunde ermöglicht einem Echtzeitanruf die gültigen Lieferarten für eine Schiffsposition abrufen verwaltet werden.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

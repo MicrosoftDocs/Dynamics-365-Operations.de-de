@@ -1,12 +1,10 @@
 ---
 title: Einrichten eines Lagerorts mithilfe einer Lagerortkonfigurationsvorlage
 description: In diesem Thema wird erklärt, wie ein Lagerort mithilfe einer Lagerortkonfigurationsvorlage eingerichtet wird.
-author: perlynne
-manager: tfehr
+author: yufeihuang
 ms.date: 11/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
 audience: Application User
@@ -15,21 +13,21 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: d533eed984c188c5b6520232f2b875bddd1f57bf
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6698d615826a1555426824bb76db654fde539360
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967129"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571088"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Einrichten eines Lagerorts mithilfe einer Lagerortkonfigurationsvorlage
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erklärt, wie ein Lagerort mithilfe einer Lagerortkonfigurationsvorlage eingerichtet wird. Es gibt mehrere vordefinierte Konfigurationsvorlagen, die Sie verwenden können. Informationen darüber, wie diese Vorlagen verwendet werden, finden Sie unter [Konfigurationsdatenvorlagen](../../dev-itpro/data-entities/configuration-data-templates.md).
+In diesem Thema wird erklärt, wie ein Lagerort mithilfe einer Lagerortkonfigurationsvorlage eingerichtet wird. Es gibt mehrere vordefinierte Konfigurationsvorlagen, die Sie verwenden können. Informationen darüber, wie diese Vorlagen verwendet werden, finden Sie unter [Konfigurationsdatenvorlagen](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
 ## <a name="scenarios-where-configuration-templates-can-be-helpful"></a>Szenarien, bei denen Konfigurationsvorlagen hilfreich sein können
 
@@ -90,10 +88,13 @@ Sie können eine ZIP-Datei für das Datenpaket herunterladen. Diese Datei beinha
 4. Wählen Sie **+ Datei hinzufügen** aus, und laden Sie die ZIP-Datei für das Datenpaket hoch.
 5. **Import** auswählen In der Ansicht **Erweitert** können Sie die Option **Filter** verwenden, um schnell eine Übersicht über Probleme abzurufen, die möglicherweise beim Import auftreten.
 
-Das Protokoll **Ansichtsausführung** enthält detaillierte Informationen zu jeder Datenentität, die importiert wird. Sie können die Stagingdatenansicht verwenden, um schnell zu den Zieldaten zu gelangen. Auf diese Weise können Sie sehen, wie die importierten Daten auf den zugeordneten Seiten in der Anwendung aussehen. Wenn Sie die Standarddatenvorlagen verwenden, funktioniert die Importsequenz für jede Datenentität in der vordefinierten Weise, um sicherzustellen, dass alle abhängigen Daten zuerst importiert werden. Wenn benutzerdefinierte Datenentitäten Teil des Projekts sind, müssen Sie sicherstellen, dass die korrekte Reihenfolge definiert wird. Weitere Informationen finden Sie unter [Konfigurieren von Datenvorlagen](../../dev-itpro/data-entities/configuration-data-templates.md).
+Das Protokoll **Ansichtsausführung** enthält detaillierte Informationen zu jeder Datenentität, die importiert wird. Sie können die Stagingdatenansicht verwenden, um schnell zu den Zieldaten zu gelangen. Auf diese Weise können Sie sehen, wie die importierten Daten auf den zugeordneten Seiten in der Anwendung aussehen. Wenn Sie die Standarddatenvorlagen verwenden, funktioniert die Importsequenz für jede Datenentität in der vordefinierten Weise, um sicherzustellen, dass alle abhängigen Daten zuerst importiert werden. Wenn benutzerdefinierte Datenentitäten Teil des Projekts sind, müssen Sie sicherstellen, dass die korrekte Reihenfolge definiert wird. Weitere Informationen finden Sie unter [Konfigurieren von Datenvorlagen](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
 Weitere Informationen zum Ändern der Lagerortvorlage, um die Konfiguration eines Lagerorts aus einem Unternehmen in ein neues Unternehmen in der gleichen Instanz zu kopieren, sehen Sie sich dieses 3-minütige YouTube Video an: [Verwendung von Lagerortvorlagen, um die Konfiguration in Finance and Operations zu kopieren](https://www.youtube.com/watch?v=K2WIfFlqJYs).
 
 ## <a name="related-topic"></a>Verwandtes Thema
 
-[Konfigurationsdatenvorlagen](../../dev-itpro/data-entities/configuration-data-templates.md)
+[Konfigurationsdatenvorlagen](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

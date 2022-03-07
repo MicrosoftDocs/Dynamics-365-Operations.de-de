@@ -2,36 +2,30 @@
 title: Einen Einzelhandelskanal einrichten
 description: In diesem Thema wird beschrieben, wie Sie einen neuen Retail Channel in Microsoft Dynamics 365 Commerce erstellen.
 author: samjarawan
-manager: annbe
-ms.date: 01/27/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: a9291dddf7d4dc080b6eb1ec60702de32a761f45
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6a8db8bb4b42c7ad6c0c0e0c257bc03e356de7d525f524c22eab46e38c018d49
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412527"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745405"
 ---
 # <a name="set-up-a-retail-channel"></a>Einen Retail Channel einrichten
-
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie einen neuen Retail Channel in Microsoft Dynamics 365 Commerce erstellen.
-
-## <a name="overview"></a>Übersicht
 
 Dynamics 365 Commerce unterstützt mehrere Retail Channels. Diese Vertriebskanäle umfassen Onlineshops, Callcenter und Einzelhandelsgeschäfte (auch physische Läden genannt). Jeder Einzelhandelskanal kann seine eigenen Zahlungsmethoden, Preisgruppen, POS-Register, Ein- und Ausgabenkonten und Mitarbeiter einrichten. Sie müssen alle Elemente einrichten, bevor Sie ein Ladengeschäftskanal erstellen können. 
 
@@ -39,7 +33,7 @@ Stellen Sie vor dem Erstellen eines Retail Channel sicher, dass Sie die folgende
 
 ## <a name="create-and-configure-a-new-retail-channel"></a>Einen neuen Retail Channel erstellen und konfigurieren
 
-1. Gehen Sie im Navigationsbereich zu **Module \> Kanäle \> Geschäfte \>Alle Geschäfte**.
+1. Gehen Sie im Navigationsbereich zu **Module \> Kanäle \> Geschäfte \> Alle Geschäfte**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 1. Geben Sie im Feld **Name** einen Namen für den neuen Kanal ein.
 1. Wählen Sie im Feld **Shopnummer** eine einmalige Shopnummer aus. Die Nummer kann alphanumerisch mit maximal 10 Zeichen sein.
@@ -56,37 +50,37 @@ Stellen Sie vor dem Erstellen eines Retail Channel sicher, dass Sie die folgende
 
 Das folgende Bild zeigt die Erstellung eines neuen Retail Channel.
 
-![Neuer Retail Channel](media/channel-setup-retail-1.png)
+![Neuer Retail Channel.](media/channel-setup-retail-1.png)
 
 Das folgende Bild zeigt ein Beispiel für einen Retail Channel.
 
-![Beispiel für einen Retail Channel](media/channel-setup-retail-2.png)
+![Beispiel für einen Retail Channel.](media/channel-setup-retail-2.png)
 
 ## <a name="other-settings"></a>Andere Einstellungen
 
 Es gibt zahlreiche andere optionale Einstellungen, die in den Abschnitten **Auszug/Abschluss** und **Sonstiges** basierend auf den Bedürfnissen des Einzelhandelsgeschäfts eingestellt werden können.
 
-Darüber hinaus siehe [Bildschirmlayouts für den Point of Sale (POS)](pos-screen-layouts.md)für Informationen zum Einrichten des Standard-Bildschirmlayouts im Abschnitt **Bildschirmlayout** und [konfigurieren und installieren Sie die Retail Hardware station](retail-hardware-station-configuration-installation.md) für Informationen zum Einrichten über den Abschnitt **Hardwarestationen**.
+Darüber hinaus siehe [Bildschirmlayouts für den Point of Sale (POS)](pos-screen-layouts.md) für Informationen zum Einrichten des Standard-Bildschirmlayouts im Abschnitt **Bildschirmlayout** und [konfigurieren und installieren Sie die Retail Hardware station](retail-hardware-station-configuration-installation.md) für Informationen zum Einrichten über den Abschnitt **Hardwarestationen**.
 
 Das folgende Bild zeigt ein Beispiel für einen Retail Channel-Einrichtungskonfiguration.
 
-![Retail Channel-Beispielkonfiguration](media/channel-setup-retail-3.png)
+![Retail Channel-Beispielkonfiguration.](media/channel-setup-retail-3.png)
 
 ## <a name="additional-channel-set-up"></a>Einrichtung eines zusätzlichen Kanals
 
-Für einen Kanal, der im **Aktionsbereich** im Abschnitt **Einrichtung** zu finden ist, müssen zusätzliche Elemente eingerichtet werden.
+Es gibt zusätzliche Elemente, die für einen Kanal festgelegt werden müssen, die Sie im Aktivitätsbereich unter dem Abschnitt **Einrichten** finden.
 
 Zusätzliche Aufgaben, die für das Einrichten des Onlinekanals erforderlich sind, umfassen das Einrichten von Zahlungsmethoden, Bargelddeklaration, Lieferarten, Einnahmen-/Aufwandskonto, Abteilungen, Erfüllungsgruppenzuweisungen und Safes.
 
 Das folgende Bild zeigt verschiedene zusätzliche Optionen zum Einrichten von Retail Channels auf der Registerkarte **Einrichten**.
 
-![Kanal einrichten](media/channel-setup-retail-4.png)
+![Kanal einrichten.](media/channel-setup-retail-4.png)
 
 ### <a name="set-up-payment-methods"></a>Einrichten von Zahlungsmethoden
 
 Führen Sie die folgenden Schritte aus, um die Zahlungsmethoden für jede auf diesem Kanal unterstützte Zahlungsart einzurichten.
 
-1. Wählen Sie im Aktionsbereich die Registerkarte **Einrichten** und dann **Zahlungsmethoden**.
+1. Wählen Sie im Aktivitätsbereich die Registerkarte **Einrichten** und wählen Sie dann **Zahlungsmethoden**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 1. Wählen Sie im Navigationsbereich eine gewünschte Zahlungsmethode aus.
 1. Geben Sie im Abschnitt **Allgemeines** einen **Operationsname** an und konfigurieren Sie alle anderen gewünschten Einstellungen.
@@ -95,36 +89,36 @@ Führen Sie die folgenden Schritte aus, um die Zahlungsmethoden für jede auf di
 
 Das folgende Bild zeigt ein Beispiel für eine Bargeldzahlungsmethode.
 
-![Beispielzahlungsmethoden](media/channel-setup-retail-5.png)
+![Beispielzahlungsmethoden.](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-cash-declaration"></a>Bargelddeklaration einrichten
 
-1. Wählen Sie im Aktionsbereich die Registerkarte **Einrichten** und dann **Bargelddeklaration**.
-1. Wählen Sie im Aktionsbereich **Neu** aus und erstellen Sie dann alle zutreffenden Denominationen **Münze** und **Hinweis**.
+1. Wählen Sie im Aktivitätsbereich die Registerkarte **Einrichten** und klicken Sie dann auf **Kassenerklärung**.
+1. Wählen Sie im Aktivitätsbereich **Neu**, und erstellen Sie dann alle **Münzen** und **Noten**, die in Frage kommen.
 
 Das folgende Bild zeigt ein Beispiel für eine Bargelddeklaration.
 
-![Bargelddeklarationen einrichten](media/channel-setup-retail-6.png)
+![Bargelddeklarationen einrichten.](media/channel-setup-retail-6.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Lieferarten einrichten
 
-Sie können die konfigurierten Zustellmodi anzeigen, indem Sie **Lieferarten** aus der Registerkarte **Einrichten** im **Aktionsbereich** auswählen.  
+Sie können die konfigurierten Lieferarten sehen, indem Sie **Lieferarten** auf der Registerkarte **Einrichten** im Aktivitätsbereich auswählen.  
 
 Gehen Sie folgendermaßen vor, um eine Lieferart zu ändern oder hinzuzufügen.
 
 1. Gehen Sie im Navigationsbereich zu **Module \> Bestandsverwaltung \> Lieferarten**.
-1. Wählen Sie im Aktionsbereich **Neu** aus, um eine neue Lieferart zu erstellen oder wählen Sie einen vorhandenen Modus aus.
+1. Wählen Sie im Aktivitätsbereich **Neu**, um eine neue Art der Zustellung zu erstellen, oder wählen Sie eine vorhandene Art aus.
 1. Im Abschnitt **Retail Channels** wählen Sie **Zeile hinzufügen** aus, um den Kanal hinzuzufügen. Durch das Hinzufügen von Kanälen mithilfe von Organisationsknoten, anstatt jeden Kanal einzeln hinzuzufügen, kann das Hinzufügen von Kanälen rationalisiert werden.
 
 Das folgende Bild zeigt ein Beispiel für eine Lieferart.
 
-![Lieferarten einrichten](media/channel-setup-retail-7.png)
+![Lieferarten einrichten.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-incomeexpense-account"></a>Einnahmen-/Aufwandskonto einrichten
 
 Gehen Sie zum Einrichten eines Einnahmen-/Aufwandskontos folgendermaßen vor:
 
-1. Wählen Sie im Aktionsbereich die Registerkarte **Einrichten** und dann **Einnahmen-/Aufwandskonto**.
+1. Wählen Sie im Aktivitätsbereich die Registerkarte **Einrichten** und wählen Sie dann **Einnahme-/Ausgabekonto**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 1. Geben Sie unter **Name** einen Namen ein.
 1. Geben Sie unter **Suchbegriff** einen Suchbegriff ein.
@@ -135,13 +129,13 @@ Gehen Sie zum Einrichten eines Einnahmen-/Aufwandskontos folgendermaßen vor:
 
 Die folgende Abbildung zeigt ein Beispiel für ein Einnahmen-/Ausgabenkonto.
 
-![Einnahmen-/Aufwandskonten einrichten](media/channel-setup-retail-8.png)
+![Einnahmen-/Aufwandskonten einrichten.](media/channel-setup-retail-8.png)
 
 ### <a name="set-up-sections"></a>Abschnitte einrichten
 
 Gehen Sie zum Einrichten von Abschnitten folgendermaßen vor:
 
-1. Wählen Sie im Aktionsbereich die Registerkarte **Einrichten** aus und klicken Sie dann auf **Abschnitte**.
+1. Wählen Sie im Aktionsbereich die Registerkarte **Einrichten** und klicken Sie auf **Abschnitte**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 1. Geben Sie unter **Abschnittsnummer** eine Abschnittsnummer ein.
 1. Geben Sie unter **Beschreibung** eine Beschreibung ein.
@@ -153,32 +147,66 @@ Gehen Sie zum Einrichten von Abschnitten folgendermaßen vor:
 
 Gehen Sie zum Einrichten einer Erfüllungsgruppe folgendermaßen vor:
 
-1. Wählen Sie im Aktionsbereich die Registerkarte **Einrichten** und dann **Erfüllungsgruppenzuweisung** aus.
+1. Wählen Sie im Aktivitätsbereich die Registerkarte **Einrichten** und wählen Sie dann **Erfüllungsgruppenzuordnung**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 1. Wählen Sie in der Dropdown-Liste **Erfüllungsgruppe** eine Erfüllungsgruppe aus.
 1. Geben Sie in der Dropdown-Liste **Beschreibung** eine Beschreibung ein.
-1. Wählen Sie im Aktionsbereich **Speichern** aus
+1. Wählen Sie im Aktivitätsbereich **Speichern**.
 
 Die folgende Abbildung zeigt ein Beispiel für die Einrichtung einer Erfüllungsgruppenzuweisung.
 
-![Erfüllungsgruppenzuweisung einrichten](media/channel-setup-retail-9.png)
+![Erfüllungsgruppenzuweisung einrichten.](media/channel-setup-retail-9.png)
 
 ### <a name="set-up-safes"></a>Safes einrichten
 
 Gehen Sie zum Einrichten von Safes folgendermaßen vor:
 
-1. Wählen Sie im Aktionsbereich die Registerkarte **Einrichten** aus und klicken Sie dann auf **Safes**.
+1. Wählen Sie im Aktionsbereich die Registerkarte **Einrichten** und klicken Sie auf **Sicherheiten**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 1. Geben Sie einen Namen für den Safe ein.
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
 
+### <a name="ensure-unique-transaction-ids"></a>Stellen Sie eindeutige Transaktions-IDs sicher
+
+Ab der Commerce-Version 10.0.18 sind die für den Point of Sale (POS) generierten Transaktions-IDs sequenziell und umfassen die folgenden Teile:
+
+- Ein fester Teil, der eine Verkettung von Filial-ID und Terminal-ID ist. 
+- Ein sequenzieller Teil, bei dem es sich um eine Sequenz von Zahlen handelt. 
+
+Konkret lautet das Format *{store}-{terminal}-{numbersequence}*. 
+
+Da Transaktions-IDs im Offline- und Online-Modus erzeugt werden können, gab es Fälle, in denen doppelte Transaktions-IDs erzeugt wurden. Das Eliminieren von doppelten Transaktions-IDs erfordert eine Menge manueller Datenkorrekturen. 
+
+Mit Commerce Version 10.0.19 wurde das Format der Transaktions-ID aktualisiert, um den sequenziellen Teil zu entfernen und stattdessen eine 13-stellige Nummer zu verwenden, die durch Berechnung der Zeit in Millisekunden seit 1970 erzeugt wird. Mit dieser Änderung lautet das neue Format der Transaktions-ID *{store}-{terminal}-{millisecondsSince1970}*. Diese Aktualisierung macht die Transaktions-ID nicht-sequentiell und stellt sicher, dass die Transaktions-IDs immer eindeutig sind. 
+
+> [!NOTE]
+> Transaktions-IDs sind nur für den internen Systemgebrauch gedacht, sie müssen also nicht fortlaufend sein. In vielen Ländern müssen die Beleg-IDs jedoch sequentiell sein.
+
+Die neue Funktion für das Format der Transaktions-ID kann im Arbeitsbereich **Funktionsverwaltung** aktiviert werden. 
+
+Um die Verwendung neuer Transaktions-IDs zu aktivieren, führen Sie diese Schritte aus:
+
+1. Gehen Sie in der Commerce-Zentrale zu **Systemadministration \> Arbeitsbereiche \> Funktionen verwalten**.
+1. Filter für das Modul „Retail und Commerce“.
+1. Suchen Sie nach der Funktion **Neue Transaktions-ID aktivieren, um doppelte Transaktions-IDs zu vermeiden**.
+1. Wählen Sie die Funktion aus und wählen Sie dann **Jetzt aktivieren** im rechten Fensterbereich.  
+1. Gehen Sie zu **Einzelhandel und Handel \> Einzelhandel und Handel IT \> Vertriebsplan**.
+1. Führen Sie die Jobs **1070 Kanalkonfiguration** und **1170 POS-Datensatz** aus, um die aktivierte Funktion mit den Filialen zu synchronisieren.
+1. Nachdem die Änderungen an die Filialen gesendet wurden, müssen die POS-Terminals geschlossen und erneut geöffnet werden, um das neue Transaktions-ID-Format zu verwenden. 
+
+> [!NOTE]
+> Nachdem die Funktion für das neue Transaktions-ID-Format aktiviert ist, können Sie diese Funktion nicht mehr deaktivieren. Wenn es deaktiviert werden muss, wenden Sie sich bitte an den Commerce Support.
+
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Kanalübersicht](channels-overview.md)
+[Übersicht über Kanäle](channels-overview.md)
 
-[Voraussetzungen der Kanaleinrichtung](channels-prerequisites.md)
+[Kanaleinstellungen – Voraussetzungen](channels-prerequisites.md)
 
 [Einen Onlinekanal einrichten](channel-setup-online.md)
 
 [Einen Callcenterkanal einrichten](channel-setup-callcenter.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

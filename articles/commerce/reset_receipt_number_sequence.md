@@ -2,16 +2,13 @@
 title: Zurücksetzen der Belegnummern
 description: In diesem Thema wird beschrieben, wie Sie die Belegnummern zurücksetzen, die für verschiedene Vorgänge an einem gewünschten Datum verwendet werden (zum Beispiel das Geschäftsjahr oder das Kalenderjahr).
 author: ShalabhjainMSFT
-manager: AnnBe
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-Commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail, Commerce
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: 31ba82ac5e032734e00f2aee12339bc85a53550b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 855c39f15db6de8fac1f0cd4667eec485c70542b9aebde0d7085e2703f4609bb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412497"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733868"
 ---
 # <a name="reset-receipt-numbers"></a>Bonnummern zurücksetzen 
 
@@ -52,13 +49,13 @@ Sie können die fortlaufende Nummerierung des Belegs an einem bestimmten Datum z
 
 Um das Zurücksetzen zu aktivieren, folgen Sie diesen Schritten.
 
-1. Gehen Sie zu **Retail und Commerce \> Kanaleinrichtung \> POS-Einrichtung \> POS-Profile \> Funktionsprofile**.
+1. Gehen Sie zu **Einzelhandel und Handel \> Kanaleinrichtung \> POS-Einrichtung \> POS-Profile \> Funktionsprofile**.
 1. Wählen Sie auf dem Inforegister **Belegnummerierung** die Option **Belegnummer-Rücksetzdatum zurücksetzen** aus.
 1. Wählen Sie im Dropdown-Dialogfeld im Feld **Rücksetzdatum** ein zukünftiges Datum aus, an dem das Zurücksetzen erfolgen soll.
 1. Wählen Sie im Feld **Belegtyp zurücksetzen** die Option **Nur einmal** oder **Jährlich** aus.
-1. Wählen Sie **OK**.
+1. Wählen Sie **OK** aus.
 
-![Auswählen eines Belegrücksetzdatums](media/Enable_receipt_reset.png "Auswählen eines Belegrücksetzdatums")
+![Auswählen eines Belegrücksetzdatums.](media/Enable_receipt_reset.png "Auswählen eines Belegrücksetzdatums")
 
 Nachdem Sie ein Datum ausgewählt haben, wird es in der Spalte **Rücksetzdatum der nächsten Belegnummer** angezeigt. Das Rücksetzdatum gilt für alle Belegtransaktionstypen. Daher wird die Belegnummernsequenz für alle Belegtypen zurückgesetzt.
 
@@ -68,3 +65,6 @@ Sie können die Funktion **Rücksetzdatum löschen** verwenden, um zukünftige R
 
 > [!NOTE]
 > Abhängig vom ausgewählten Rücksetzdatum und dem Belegformat haben Sie möglicherweise doppelte Belegnummern. Obwohl das POS-System (Point of Sale) diese Situationen bewältigen kann, erhöhen sie den Zeitaufwand für die Bearbeitung von Rücklieferungen, da Vertriebsmitarbeiter unter den doppelten Belegen auswählen müssen. Andere Komplikationen im Zusammenhang mit der Datenbereinigung können auftreten, wenn die doppelten Belege keine geplante Folge waren. Aus diesem Grund empfehlen wir die Verwendung dynamischer Datumszeichen (zum Beispiel **ddd**, **MM**, **DD** und **YY**), um doppelte Belegnummern nach einem Rücksetzvorgang zu vermeiden.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

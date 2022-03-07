@@ -2,25 +2,22 @@
 title: Strategien zur Wiederbeschaffung
 description: Dieses Thema enthält Informationen über Wiederbeschaffungsstrategien und erklärt, wie Sie das Feld Wiederbeschaffungsstrategie auf den Zeilen der Wave Demand Wiederbeschaffungsvorlage verwenden können, um auszuwählen, wie die Wiederbeschaffung durchgeführt wird.
 author: mirzaab
-manager: tfehr
 ms.date: 10/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
-ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 45b3b1a4d2e92a52ee69c17865634a6578181ac7
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.dyn365.ops.version: 10.0.16
+ms.openlocfilehash: bd2ddbfeef454f2759ca09d8d763bada36a1fc83
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646132"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574160"
 ---
 # <a name="replenishment-strategies"></a>Strategien für die Wiederbeschaffung
 
@@ -48,7 +45,7 @@ Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert wer
 
 Um auf die Vorlagen zuzugreifen, gehen Sie zu **Lagerortverwaltung \> Einrichten \> Wiederbeschaffung \> Wiederbeschaffungsvorlagen**. Wählen oder erstellen Sie im Abschnitt **Übersicht** eine Wiederbeschaffungsvorlage, bei der das Feld **Wiederbeschaffungstyp** auf *Wellenbedarf* festgelegt ist. Legen Sie dann die Zeilen der Wiederbeschaffungsvorlage im Abschnitt **Details der Wiederbeschaffungsvorlage** fest. Wählen Sie für jede Zeile im Feld **Nachschubstrategie** die Wiederbeschaffungsstrategie, die Sie verwenden möchten.
 
-![Nachschubvorlagen Seite](media/ReplenTempWaveDmdMaxLocCap.png "Seite Wiederbeschaffung Vorlagen")
+![Nachschubvorlagen-Seite.](media/ReplenTempWaveDmdMaxLocCap.png "Seite Wiederbeschaffung Vorlagen")
 
 Wenn die Spalte **Wiederbeschaffungsstrategie** nicht im Raster im Abschnitt **Details der Wiederbeschaffungsvorlagen** erscheint, stellen Sie sicher, dass die Funktion eingeschaltet ist und dass die ausgewählte Wiederbeschaffungsvorlage einen Wiederbeschaffungstyp *Wellenbedarf* hat.
 
@@ -88,7 +85,7 @@ Wenn Sie stattdessen die Wiederbeschaffungsstrategie auf *Maximale Kapazität de
 - **Nachschubarbeit 1:** Entnehmen Sie 4 Kartons aus dem Bulk-Lagerplatz und lagern Sie sie in Lagerplatz pick-001 ein.
 - **Nachschubarbeit 2:** Entnehmen Sie 5 Kartons aus dem Bulk-Lagerplatz und lagern Sie sie in Lagerplatz pick-002 ein.
 
-[![Beispiel 1](media/ReplenTemp_example_1.png "Beispiel 1")](media/ReplenTemp_example_1_large.png)
+[![Beispiel 1.](media/ReplenTemp_example_1.png "Beispiel 1")](media/ReplenTemp_example_1_large.png)
 
 ### <a name="example-2"></a>Beispiel 2
 
@@ -112,6 +109,9 @@ Abhängig von der Einstellung der Option **Teilen zulassen** in den Lagerplatzri
 
 Die Ergebnisse unterscheiden sich aufgrund der Informationen, die beim Erstellen der Arbeit verfügbar sind. Wenn die Option **Teilen zulassen** bei den Lagerplatzrichtlinien für die Wiederbeschaffung auf *Ja* festgelegt ist, wissen Sie, dass Sie 160 Stk entnehmen konnten. Daher können Sie Arbeit für diese Menge erstellen. Wenn jedoch die Option **Aufteilung zulassen** auf *Nein* festgelegt ist, wissen Sie nicht, dass die 160 Stk. vorhanden sind. Da es sich bei der zusätzlichen Menge, die Sie wiederbeschaffen wollten, um 3 Kartons handelte, lassen Sie diese zusätzliche Menge fallen und versuchen es erneut mit der ursprünglichen Menge.
 
-[![Beispiel 2](media/ReplenTemp_example_2.png "Beispiel 2")](media/ReplenTemp_example_2_large.png)
+[![Beispiel 2.](media/ReplenTemp_example_2.png "Beispiel 2")](media/ReplenTemp_example_2_large.png)
 
 Um die maximale Menge an den aufgefüllten Lagerplätzen zu erhalten, sollten Sie daher in den Lagerplatzrichtlinien für die Wiederbeschaffung die Option **Aufteilung zulassen** auf *Ja* festlegen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

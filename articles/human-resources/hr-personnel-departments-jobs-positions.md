@@ -2,30 +2,29 @@
 title: Organisieren der Mitarbeiter anhand von Abteilungen, Stellen und Positionen
 description: Abteilungen, Stellen und Positionen sind Organisationselemente, die innerhalb der Personalverwaltung verwaltet werden. Dieser Artikel behandelt die grundlegenden Informationen zu diesen Elementen.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmJob, HcmPosition, OMOperatingUnit, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources, Retail
+ms.search.scope: Human Resources
 ms.custom: 87933
 ms.assetid: eb5dcacb-a5fe-451d-b30a-7ef14da65d81
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 826de9e1e5d70ba1ec088b44254c871726b5c38e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 84e7017cb0bd799e27e19fc82009307d2955dea7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418659"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189749"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Verwalten der Belegschaft mittels Abteilungen, Stellen und Positionen
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Abteilungen, Stellen und Positionen sind Organisationselemente, die innerhalb der Personalverwaltung verwaltet werden. Dieser Artikel behandelt die grundlegenden Informationen zu diesen Elementen. 
 
@@ -43,8 +42,7 @@ Im folgenden Beispiel werden die Konzepte veranschaulicht, die in diesem Artikel
 |**Personalverwaltung**|Leiter der Personalabteilung (zentral)|Leiter der Personalabteilung|
 
 
- <a name="departments"></a>Abteilungen
-------------
+##  <a name="departments"></a>Abteilungen
 
 Eine Abteilung ist eine Organisationseinheit, die eine Kategorie oder einen Funktionsbereich einer Organisation darstellt, die für einen bestimmten Bereich der Organisation, beispielsweise Vertrieb oder Buchhaltung zuständig ist. Eine Abteilung wird verwendet, um zu Funktionsbereiche zu berichten und sie kann Gewinn- und Verlustzuständigkeit haben. Eine Abteilung kann möglicherweise auch eine Gruppe von Kostenstellen umfassen. Verkäufe, Buchhaltung und Personalverwaltung sind einige Beispiele von Abteilungen in einer Organisation.
 
@@ -97,8 +95,7 @@ Verwenden Sie Stellentypen, um ähnliche Stellen in Kategorien zu klassifizieren
 
 Verwenden Sie Zuständigkeitsbereiche, um die Arbeitsrollen, Prozesse und Produkte anzugeben, für die eine Arbeitskraft in einer Position für diesen Einzelvorgang zuständig sein würde. Ein Beispiel für einen Zuständigkeitsbereich für eine Stelle mit dem Titel "Buchhalter" könnte "Finanzberichterstellung für Produkt A" sein.
 
-<a name="positions"></a>Positionen
-----------
+## <a name="positions"></a>Positionen
 
 Positionen ist ein wichtiges Element der untergeordneten Ebene einer Organisationshierarchie. Eine Position ist eine einzelne Instanz eines Einzelvorgangs. Beispielsweise ist die Position, "Verkaufsleiter (Ost) derzeit eine der Positionen, die der Stelle "Verkaufsleiter zugeordnet wird. Positionen sind in einer Abteilung und werden Arbeitskräften zugewiesen.
 ### <a name="position-creation-and-maintenance"></a>Erstellung und Verwaltung von Positionen
@@ -120,7 +117,7 @@ Wenn Sie eine Arbeitskraft einer Position zuweisen, füllen Sie diese Position a
 
 Positionen sind wichtiges Elemente der untergeordneten Ebene einer Organisationshierarchie. Im Formular "Position" können Sie die Position angeben, der eine Position untergeordnet ist. Wenn Sie eine Arbeitskraft einer Position zuweisen, die einer andere Position untergeben ist, erstellen Sie Berichtbeziehung zwischen den Arbeitskräften, die den beiden Positionen zugewiesen werden. Beispielsweise ist Stellung "Buchhalter-A" der Stellung "Buchhaltungs-Vorgesetzter" untergeben. Kim Akers wird der Position "Buchhaltungs-Vorgesetzter" zugewiesen und Sanjay Patel wird der Position "Buchhalter-A" zugewiesen. Das bedeutet, dass Sanjay Patel an Kim Akers berichtet. 
 
-Wenn Ihre Organisation eine Matrixhierarchie oder eine andere benutzerdefinierte Hierarchie verwendet, können Sie Positionshierarchietypen einrichten und dann Berichtsbeziehungen zu den Positionen für jede Hierarchie hinzufügen, Sie einrichten. Beispielsweise ist Lori Penor ein Generaldirektor bei Adventure Works und wird der Position "Generaldirektor" zugewiesen. Lori verwaltet die Entwicklung eines Produkts, das verwendet wird, um Produkte zu säubern. Lori fordert einen Buchhalter an, der ihr mit den Finanzen zum Entwickeln des Produkts helfen soll. Daher hat sie Sanjay Patel herangezogen, um ihr Buchhalter zu werden. Sanjay ist direkt Kim Akers unterstellt, arbeitet aber auch mit Lori Penor an der Arbeit, die den Finanzen zum Entwickeln des Gerätereinigers zugeordnet ist. 
+Wenn Ihre Organisation eine Matrixhierarchie oder eine andere benutzerdefinierte Hierarchie verwendet, können Sie Positionshierarchietypen einrichten und dann Berichtsbeziehungen zu den Positionen für jede Hierarchie hinzufügen, Sie einrichten. Beispielsweise ist Lori Penor ein Generaldirektor bei Adventure Works und wird der Position "Generaldirektor" zugewiesen. Lori verwaltet die Entwicklung eines Produkts, das verwendet wird, um Produkte zu säubern. Lori fordert jemanden von der Buchhaltung an, um mit den Finanzen zum Entwickeln des Produkts zu helfen. Daher hat sie Sanjay Patel herangezogen, um dies zu übernehmen. Sanjay ist direkt Kim Akers unterstellt, arbeitet aber auch mit Lori Penor an der Arbeit, die den Finanzen zum Entwickeln des Gerätereinigers zugeordnet ist. 
 
 Für das vorherige Beispiel würden Sie die folgenden Aufgaben ausführen, um das Arbeitsverhältnis zwischen Sanjay Patel und Lori Penor einzurichten:
 1.  Erstellen Sie einen benutzerdefinierten Positionshierarchietyp mit der Bezeichnung "Gerät" erstellt, um eine Hierarchie zu erstellen, die die Positionen enthält, die für die Arbeit an dem Gerätereinigerprodukt zuständig sind.
@@ -159,9 +156,12 @@ Für einige Datensätze können Sie zukünftige Änderungen am Datensatz angeben
 </tbody>
 </table>
 
-Sie können die in der vorherigen Tabelle für eine Position oder Einzelvorgangs aufgeführten Informationen ändern und das Datum angeben, an dem die Änderungen an der Position oder dem Einzelvorgang wirksam werden sollen. Zum Beispiel kann eine Position nur einer Arbeitskraft zugewiesen sein, aber Sanjay Patel, dem die Position Buchhalter-A zugewiesen ist, wird in zwei Wochen gehen. Jens Healy ersetzt Sanjay Patel, wenn dieser geht. Obwohl Sanjay noch seiner Position zugeordnet ist, können Sie Jens Healy der gleichen Position zuweisen, sodass die Zuweisung erst nach Sanjays letzten Tag gültig ist.
+Sie können die in der vorherigen Tabelle für eine Position oder Einzelvorgangs aufgeführten Informationen ändern und das Datum angeben, an dem die Änderungen an der Position oder dem Einzelvorgang wirksam werden sollen. Zum Beispiel kann eine Position nur einer Arbeitskraft zugewiesen sein, aber Sanjay Patel, dem die Position Buchhalter-A zugewiesen ist, wird in zwei Wochen gehen. Jens Healy ersetzt Sanjay Patel, wenn Sanjay geht. Obwohl Sanjay noch seiner Position zugeordnet ist, können Sie Jens Healy der gleichen Position zuweisen, sodass die Zuweisung erst nach Sanjays letzten Tag gültig ist.
 
 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

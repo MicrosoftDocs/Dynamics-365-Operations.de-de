@@ -1,37 +1,31 @@
 ---
-title: Übersicht über die Erstellung von Seiten
+title: Übersicht über die Seite zur Dokumenterstellung
 description: Dieser Artikel enthält eine Übersicht über die Erstellungsseite in Microsoft Dynamics 365 Commerce.
 author: brendans
-manager: annbe
 ms.date: 10/31/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application USer
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brendans
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 95908c3a8b6c5231f2f5b283fa05f07c4e91b5d7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 68487c899edccaeff9c339d746d21b1d27b498aa
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412544"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984620"
 ---
-# <a name="authoring-page-overview"></a>Übersicht über die Erstellung von Seiten
+# <a name="authoring-page-overview"></a>Übersicht über die Seite zur Dokumenterstellung
 
   
  [!include [banner](includes/banner.md)]
 
 Dieser Artikel enthält eine Übersicht über die Erstellungsseite in Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Übersicht
 
 Websites können erstellt werden, um verschiedene Anforderungen zu unterstützen. Sie können ein ganzes Unternehmen darstellen, einen einzelnen Kanal des Unternehmens oder sich an eine bestimmte Zielgruppe wenden. So kann beispielsweise ein Kleidungshersteller eine Website haben, die alle Marken zeigt, die er besitzt. Der gleiche Kleidungshersteller kann dann eine neue Website für jede dieser Marken haben und auch eine Gruppe von Websites, die sich auf Luxusmode, Sportmode und Kindermode fokussiert.
 
@@ -45,7 +39,7 @@ Momentan besteht die Erstellungsseite aus den folgenden Abschnitten.
 
 Die folgende Abbildung zeigt diese Erstellungsseite.
 
-![Dynamics 365 Commerce Erstellungsseite](../commerce/media/authoring_tools_01.png)
+![Dynamics 365 Commerce-Erstellungsseite.](../commerce/media/authoring_tools_01.png)
 
 ## <a name="use-the-home-button-to-select-a-tool"></a>Nutzen Sie die Startschaltfläche, um ein Tool auszuwählen
 
@@ -122,3 +116,6 @@ Nachdem das Erstellungstool geladen ist, können Sie die **Startseite** auswähl
 [Überlegungen zur Suchmaschinenoptimierung (SEO) für Ihre Site](search-engine-optimization-considerations.md)
 
 [Verwalten der Inhaltssicherheitsrichtlinie](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

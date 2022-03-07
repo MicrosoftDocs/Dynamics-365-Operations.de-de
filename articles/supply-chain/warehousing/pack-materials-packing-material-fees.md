@@ -2,16 +2,13 @@
 title: Verpackungsmaterialien und Gebühren
 description: Dieses Thema informiert über Verpackungsmaterialgebühren, die in bestimmten Abständen an Recyclingunternehmen gezahlt werden.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 02/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagingMaterialFee, InventPackagingMaterialTrans, InventPackagingMaterialTransPurch, InventPackagingUnit
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2194
 ms.assetid: 040b65dc-43c9-4256-b69f-b2d6e736fbe9
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1061f336701461df7a2cf78661788e4c6100c84d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b37e61a3c48d646dce9007229fcb7fa4ecde45a8
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428587"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816339"
 ---
 # <a name="packing-materials-and-fees"></a>Verpackungsmaterialien und Gebühren
 
@@ -112,3 +109,6 @@ Sie können das Gewicht des Verpackungsmaterials auf einer Rechnung ausdrucken u
 
 1. Gehen Sie zu **Debitoren \> Einrichtung \> Debitorenparameter**.
 1. Auf der Registerkarte **Aktualisierungen**, auf der Registerkarte **Rechnung** FastTab, setzen Sie die Option **Verpackungsmaterialgewicht drucken** auf **Ja**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

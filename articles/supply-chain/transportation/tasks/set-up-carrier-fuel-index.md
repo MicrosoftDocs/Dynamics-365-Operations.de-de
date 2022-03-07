@@ -2,27 +2,24 @@
 title: Spediteur-Kraftstoffindex einrichten
 description: Dieses Handbuch zeigt, wie eine Kraftstoffindex-Region, ein Kraftstoffindex und einen Spediteur-Kraftstoffindex erstellt wird.
 author: ShylaThompson
-manager: tfehr
 ms.date: 11/14/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSFuelIndexRegion,TMSCarrierFuelIndexTable,TMSFuelIndex
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12ade30b63454dfd997aa47a62cde21b066140fa
-ms.sourcegitcommit: fe7ac653efcb1ac6318083f482394b96ed82b4c7
+ms.openlocfilehash: c1e972f2ba8211c47b11a4b83dac9ff60f813b1a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4429169"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837581"
 ---
 # <a name="set-up-a-carrier-fuel-index"></a>Spediteur-Kraftstoffindex einrichten
 
@@ -67,3 +64,6 @@ Dieses Handbuch zeigt, wie eine Kraftstoffindex-Region, ein Kraftstoffindex und 
 12. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 13. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

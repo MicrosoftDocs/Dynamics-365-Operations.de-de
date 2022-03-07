@@ -2,34 +2,29 @@
 title: Sammlung von Webaktivitätsereignissen kündigen
 description: In diesem Thema wird erläutert, wie Sie Besuchern Ihrer Website erlauben können, die Sammlung von Webaktivitätsereignissen in Microsoft Dynamics 365 Commerce zu kündigen.
 author: aamiral
-manager: AnnBe
 ms.date: 05/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4b0e48307527a8fea729d8dfdcdbc6337be0faf1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 25464c89352f44a77a96dee6ad2f633b7a55669e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412584"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350279"
 ---
-# <a name="opt-out-of-web-activity-event-collection"></a>Sammlung von Webaktivitätsereignissen kündigen
+# <a name="opt-out-of-web-activity-event-collection"></a>Erfassung von Webaktivitätsereignissen deaktivieren
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird erläutert, wie Sie Kunden erlauben können, die Sammlung von Webaktivitätsereignissen in Microsoft Dynamics 365 Commerce zu kündigen.
-
-## <a name="overview"></a>Übersicht
 
 Dynamics 365 Commerce ermöglicht den Websiteadministratoren die Analyse der Webaktivität der Benutzer ihrer E-Commerce-Sites. Auf diese Weise können sie besser verstehen, wie ihre Websites verwendet werden, und die Websites optimieren, um eine verbesserte Benutzererfahrung zu erzielen und Geschäftsziele zu erreichen.
 
@@ -45,7 +40,7 @@ In der Kontoverwaltung in der Commerce-Zentrale können sich Administrator für 
 1. Im HQ-Client auf der Seite **Alle Kunden** suchen und wählen Sie einen Kunden aus.
 1. Auf der Kundendetailseite im Inforegister **Einzelhandel**, im Abschnitt **Privatsphäre** stellen Sie die Option **Webaktivität nicht verfolgen** auf **Ja**.
 
-    ![Datenschutzeinstellungen](media/Disablepersonalizationpart2.png)
+    ![Datenschutzeinstellungen.](media/Disablepersonalizationpart2.png)
 
 1. Klicken Sie auf **Speichern** und schließen Sie die Seite.
 
@@ -56,3 +51,6 @@ Administratoren können authentifizierte Benutzer die Erfassung von Webaktivitä
 ### <a name="custom-extensions"></a>Benutzerdefinierte Erweiterungen
 
 Administratoren können ihre eigenen Erweiterungen erstellen, um das Abmelde-Erlebnis für Benutzer zu verwalten. Weitere Informationen finden Sie unter [Rufen Sie die Retail Server APIs auf](e-commerce-extensibility/call-retail-server-apis.md) und [Online-Kanal-Erweiterbarkeit](e-commerce-extensibility/overview.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

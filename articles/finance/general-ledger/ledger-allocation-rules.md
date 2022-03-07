@@ -1,7 +1,7 @@
 ---
 title: Sachkonto-Zuordnungsregeln
 description: Dieser Artikel enthält Informationen zu Sachkonto-Zuordnungsregeln. Er beschreibt die verschiedenen Komponenten dieser Zuordnungsregeln und der Zuordnungsmethoden, die für sie verwendet werden können.
-author: kweekley
+author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 15402
 ms.assetid: 8147e148-7c11-45ef-95c6-f9889a875b54
 ms.search.region: Global
-ms.author: kweekley
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 718640390cd1d4c6c2e9fb1d6bdeba21b515be4a
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: 61b332470a42d23ec039c7a32529f84e8e5c9d0c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726870"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826569"
 ---
 # <a name="ledger-allocation-rules"></a>Sachkonto-Zuordnungsregeln
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Informationen zu Sachkonto-Zuordnungsregeln. Er beschreibt die verschiedenen Komponenten dieser Zuordnungsregeln und der Zuordnungsmethoden, die für sie verwendet werden können.
+Dieser Artikel enthält Informationen zu Sachkonto-Zuordnungsregeln. Er beschreibt die verschiedenen Komponenten dieser Zuordnungsregeln und der Zuordnungsmethoden, die für sie verwendet werden können.
 
 Sachkonto-Zuordnungsregeln werden verwendet, um Zuordnungserfassungen und Kontoeinträge für die Zuordnung von Sachkontosalden oder -festen Beträgen automatisch zu berechnen und zu generieren. Zuordnungsmethoden können variabel oder fest sein. Folgende Zuordnungsmethoden können für Sachkontozuordnungsregeln verwendet werden:
 

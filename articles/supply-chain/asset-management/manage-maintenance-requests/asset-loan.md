@@ -1,12 +1,10 @@
 ---
 title: Anlagendarlehen
 description: In diesem Thema wird beschrieben, wie Anlagendarlehen in der Anlagenverwaltung erfasst werden.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectLoanSend, EntAssetObjectLoanListPage, EntAssetObjectLoanReturn, EntAssetObjectLoanInfoPart
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 355e3d3e0e952db14a03810145528f9701804ca2
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 712f3e7cdfb8d521ae2afb59d90bc5102da53cb7
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022331"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813386"
 ---
 # <a name="asset-loans"></a>Anlagendarlehen
 
@@ -57,3 +55,6 @@ Auf der Seite **Aktive Anlagendarlehen** können Sie eine Liste aller Anlagendar
 3. Geben Sie im Feld **Zurückgegeben** das Datum und die Uhrzeit ein.
 4. Wählen Sie **OK**.
 5. Aktualisieren Sie die Listenseite **Aktive Anlagendarlehen**. Sie sehen, dass das Anlagendarlehen nicht mehr in der Liste angezeigt wird.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

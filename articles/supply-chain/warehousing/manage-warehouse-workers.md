@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage, WHSResetUserPassword
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 72891
 ms.assetid: feaa6f15-49d2-41f5-9b87-453463c52e4e
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2156b5de6abc3751cae1822b3825acbbd0b9a712
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 18dbcf32f85bca51bf48e5ed8c64fedc99f66082
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429020"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5216834"
 ---
 # <a name="manage-warehouse-workers"></a>Verwalten der Lagerortarbeitskräfte
 
@@ -57,3 +56,6 @@ Eine Analyse der Zeit, die benötigt wird, um Arbeitsaufgaben zu verarbeiten, ka
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

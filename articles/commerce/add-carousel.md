@@ -1,16 +1,13 @@
 ---
 title: Karussellmodul
-description: Dieses Thema enthält Karusellmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+description: Dieses Thema behandelt Karussellmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f09f3f98d174f965a75e27ee6a5c2ed8599042fc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cfbe254d225366f89779ffeef410bb0b1a29056e51a4719106e9bc495b898161
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412492"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721054"
 ---
 # <a name="carousel-module"></a>Karussellmodul
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält Karusellmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
-
-## <a name="overview"></a>Übersicht
+Dieses Thema behandelt Karussellmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 
 Ein Karussellmodul wird verwendet, um mehrere Werbeartikel (einschließlich Rich-Bilder) in ein rotierenden Karussellbanner einzusetzen, den Debitoren durchsuchen können. So kann beispielsweise ein Einzelhänder ein Karussellmodul auf eine Startseite verwenden, um mehrere neue Produkte oder Promotionen zu veröffentlichen.
 
@@ -45,7 +40,7 @@ Sie können Inhaltsblockmodule innerhalb eines Karussellmoduls hinzufügen. Die 
 
 Das folgende Bild zeigt ein Beispiel eines Karussellmoduls, das auf einer Homepage verwendet wird. Dieses Karussellmodul enthält mehrere Inhaltsblockelemente.
 
-![Beispiel eines Karussell-Moduls](./media/Hero.PNG)
+![Beispiel eines Karussell-Moduls.](./media/Hero.PNG)
 
 ## <a name="carousel-module-properties"></a>Karussellmoduleigenschaften
 
@@ -86,3 +81,6 @@ Um ein Karussellmodul einer neuen Seite hinzuzufügen und die erforderlichen Eig
 [Inhaltsblockmodul](add-hero-module.md)
 
 [Video-Player-Modul](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

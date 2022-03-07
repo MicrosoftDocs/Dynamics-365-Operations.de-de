@@ -1,12 +1,10 @@
 ---
-title: EB-Modellzuordnung in getrennten EB-Konfigurationen verwalten
-description: In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" zugewiesen ist, einen Konfigurationsanbieter für elektronische Berichterstellung (ER) erstellen kann.
+title: ER-Modellzuordnungen in separaten EB-Konfigurationen verwalten
+description: In diesem Thema wird beschrieben, wie Sie EB-Modellzuordnungen (elektronische Berichterstellung) in separaten EB-Konfigurationen verwalten.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e59e9f2dd5a0fa6d5955e3d93d25759a478ede7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0370074766e92802164d96daee4204836b7f17c2
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684426"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751509"
 ---
 # <a name="manage-er-model-mapping-in-separate-er-configurations"></a>EB-Modellzuordnung in getrennten EB-Konfigurationen verwalten
 
@@ -161,3 +159,6 @@ Da ER-Konfigurationen unter Unternehmen freigegeben werden, können Sie diese Au
 7. Klicken Sie auf "OK".
     * Die Standardkonfiguration der Modellzuordnung wird von dieser Formatkonfiguration zur Generierung elektronischer Dokumente verwendet (die erstellte Ausgabe enthält den Buchungskreis).  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

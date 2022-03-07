@@ -2,26 +2,26 @@
 title: Kostenberechnungsstufe
 description: In diesem Thema wird die Stücklistenebene beschrieben, die als Kostenberechnungsstufe bezeichnet wird. Diese Stücklistenstufe schließt Produktions- und Chargenaufträge von ihren Berechnungen aus.
 author: AndersGirke
-manager: tfehr
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-23
-ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 42088d8c005cf3fc04e768f1b8e8c8ca0b8c6993
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.12
+ms.openlocfilehash: e08d11c8e9d98e56c5ef076cbab7bb68bedea62a
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967727"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7581031"
 ---
 # <a name="cost-calculation-level"></a>Kostenberechnungsstufe
+
+[!include [banner](../includes/banner.md)]
 
 Die Stücklistenebene (BOM) die **Kostenberechnungsstufe** benannt ist, schließt Fertigungsaufträge und Chargenaufträge von den Berechnungen aus. Das System verwendet diese Ebene, wenn es Kostenberechnungen in Kalkulationsversionen ausführt. In Prozessen wie Neuberechnung und Bestandsabschluss verwendet das System die **Kostenstufe** Stücklistenebene.
 
@@ -56,3 +56,6 @@ Anschließend wird ein Fertigungsauftrag für Produkt C erstellt und Produkt A z
     - **Produkt C:** 2
 
 Dieses Verhalten stellt sicher, dass Änderungen an Fertigungsauftragsstücklisten keine Auswirkungen auf nachfolgende Kostenberechnungen haben.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Einrichten Inkassi
 description: In diesem Artikel wird beschrieben, wie Inkassofunktionen eingerichtet werden.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustCollectionsActivitiesListPage
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2e06da265271e2148804c51abc7cd9ffc29a3e20e73dda3a1a23966f0e6586e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dfd20b984d0e47ceb7660be763b7d1ae886bfdd8
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769817"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5228124"
 ---
 # <a name="set-up-collections"></a>Einrichten Inkassi
 
@@ -40,7 +42,8 @@ In diesem Artikel wird beschrieben, wie Inkassofunktionen eingerichtet werden. S
 
 Diese Punkte werden im weiteren Verlauf dieses Themas ausführlicher behandelt. 
 
-## <a name="set-up-aging-period-definitions"></a>Zahlungsfristdefinitionen einrichten
+<a name="set-up-aging-period-definitions"></a>Zahlungsfristdefinitionen einrichten
+-------------------------------
 
 Eine Zahlungsfristdefinition einrichten. Eine Zahlungsfristdefinition legt die in den Listenseiten **Saldenrückblick**, **Inkassoaktivitäten** und **Inkassofälle** angezeigten Spalten fest. Sie definiert auch die Perioden, die auf der Seite **Inkassi** angezeigt werden. Beim Einrichten eines Debitorenpools wird die Zahlungsfristdefinition für den Pool verwendet. Werden keine Pools eingerichtet, wird die standardmäßige Zahlungsfristdefinition verwendet, die auf der Seite **Debitorenparameter** angegeben ist. Ist keine standardmäßige Zahlungsfristdefinition angegeben, wird die erste Zahlungsfristdefinition auf der Seite **Zahlungsfristdefinitionen** verwendet.
 

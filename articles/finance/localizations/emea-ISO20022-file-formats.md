@@ -2,26 +2,23 @@
 title: ISO20022-Dateien importieren
 description: Dieses Thema beschreibt den Import von Zahlungsdateien in den Formaten ISO 20022 camt.054 und pain.002 in Microsoft Dynamics 365 Finance.
 author: neserovleo
-manager: AnnBe
 ms.date: 07/27/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPaymMode, CustBankAccounts, VendPaymMode, VendBankAccounts
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Italy, Latvia, Lithuania, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom
 ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b809ba8d92772d8f3f416d4854d4af322e6f954a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a95dd6caf01e2c1079d6d9690b52e9ef65d87ea8
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407738"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839959"
 ---
 # <a name="import-iso20022-files"></a>ISO20022-Dateien importieren
 
@@ -129,3 +126,6 @@ Weitere Informationen über die elektronische Berichterstattung finden Sie unter
 - [Zahlungsmethode für ISO20022-Kreditübertragung einrichten](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
 - [Zahlungsmethode für ISO20022-Direktbelastungen einrichten](./tasks/setup-method-payment-iso20022-direct-debit.md)
 - [Kreditoren und Kreditorenbankkonten für ISO20022-Überweisungen einrichten](./tasks/set-up-vendor-iso20022-credit-transfers.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

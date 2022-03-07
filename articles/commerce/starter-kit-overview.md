@@ -1,16 +1,13 @@
 ---
-title: Übersicht über die Modulbibliothek
+title: Informationen zur Modulbibliothek
 description: Dieses Thema bietet einen Überblick über die Microsoft Dynamics 365 Commerce-Modulbibliothek.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dfc52dd8e14bb2e9f2f9c026ee0e058aee4cedcb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 76fd75c2ed9a3ba4728129b77a43b50267be3bf3
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412637"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795332"
 ---
-# <a name="module-library-overview"></a>Übersicht über die Modulbibliothek
+# <a name="module-library-overview"></a>Informationen zur Modulbibliothek
 
 [!include [banner](includes/banner.md)]
 
 Dieses Thema bietet einen Überblick über die Microsoft Dynamics 365 Commerce-Modulbibliothek.
-
-## <a name="overview"></a>Übersicht
 
 Die Dynamics 365 Commerce-Modulbibliothek ist eine Sammlung von Modulen, mit denen eine E-Commerce-Website erstellt werden kann. Module besitzen sowohl Aspekte der Benutzeroberfläche (UI) als auch Aspekte des funktionalen Verhaltens.
 
@@ -66,3 +61,6 @@ Die folgenden Modultypen sind in der Modulbibliothek enthalten:
 [Kopfzeilenmodul](author-header-module.md)
 
 [Fußzeilenmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

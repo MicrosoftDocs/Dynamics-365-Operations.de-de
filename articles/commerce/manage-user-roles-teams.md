@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b76e831641d6fcef02ce14a99d63654f657fddf6087f80bbaf044f485026d635
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7b4734fd363cd5ee44f228e0c0f9ce73abad1aaa
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747416"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021851"
 ---
 # <a name="manage-user-roles-in-microsoft-teams"></a>Benutzerrollen in Microsoft Teams verwalten
 
@@ -30,7 +30,7 @@ Wenn Sie ein Team für jeden Shop oder jeden Kanal in Teams erstellen, wird eine
 
 Die folgende Abbildung zeigt ein Beispiel für eine Liste der Teammitglieder und ihrer Benutzerrollen im Microsoft Teams Admin Center.
 
-![Teammitglieder und Benutzerrollen im Microsoft Teams Admin Center.](media/d365-commerce-teams-integration-user-roles.png)
+![Teammitglieder und Benutzerrollen im Microsoft Teams Admin Center](media/d365-commerce-teams-integration-user-roles.png)
 
 Weitere Informationen finden Sie unter [Zuweisen von Teambesitzern und -mitgliedern in Microsoft Teams](/microsoftteams/assign-roles-permissions).
 

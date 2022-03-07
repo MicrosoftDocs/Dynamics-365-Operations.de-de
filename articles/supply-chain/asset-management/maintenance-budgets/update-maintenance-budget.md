@@ -1,12 +1,10 @@
 ---
 title: Aktualisierung der Wartungsbudgets
 description: In diesem Abschnitt erfahren Sie, wie Sie ein Instandhaltungsbudget im Anlagenmanagement aktualisieren.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b04549700b51f73a3629fe9cd67a3e1f6c1bafbb
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 87c054cb96d56e40e35ee44142396f59d61395263ff41232423f6c7911478b0d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021023"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6724939"
 ---
 # <a name="update-maintenance-budgets"></a>Aktualisierung der Wartungsbudgets
 
@@ -74,3 +72,6 @@ Auf der Seite **Wartungsbudgetlinien** können Sie manuell eine neue Budgetposit
 
 - Sie wissen, dass sich die Renovierung einiger Anlagen derzeit in der Planungsphase befindet, aber damit verbundene Arbeitsplätze im Asset Management noch nicht geschaffen wurden. Sie möchten jedoch, dass die Budgetkosten für diese Stellen in das Wartungsbudget aufgenommen werden.
 - Neue Anlagen oder Anlagenarten wurden seit der Erstellung des Wartungsbudgets angelegt, aber für diese Anlagen oder Anlagenarten wurden noch keine Wartungspläne eingerichtet. Sie möchten jedoch, dass die Budgetkosten für diese Anlagenarten in das Wartungsbudget aufgenommen werden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

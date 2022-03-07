@@ -2,16 +2,13 @@
 title: Planungsoptimierung – Übersicht
 description: Dieses Thema gibt einen Überblick über die Funktionalität der Planungsoptimierung.
 author: ChristianRytt
-manager: tfehr
 ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 110045d4c7e4f32c29b73096dd4df3a09b5434ac
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5ecfa8ac4db050ee1e38f3b420d81beba19b9409
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428484"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5812954"
 ---
 # <a name="planning-optimization-overview"></a>Planungsoptimierung – Übersicht
 
@@ -78,3 +75,6 @@ Die folgende Abbildung zeigt den Datenfluss.
 [Filter auf einen Plan anwenden](plan-filters.md)
 
 [Abbrechen eines Planungsauftrags](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

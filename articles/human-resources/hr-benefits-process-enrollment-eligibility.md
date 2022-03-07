@@ -2,11 +2,9 @@
 title: Registrierungsberechtigung verarbeiten
 description: In diesem Artikel wird erläutert, wie der Prozess der Registrierungsberechtigung ausgeführt wird.
 author: andreabichsel
-manager: AnnBe
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
@@ -18,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dfb7f13dce48f33c111af491918702763f7e3b8a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f9b1febe2690fab17586033994b10ebf260630af
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418629"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5805705"
 ---
 # <a name="process-enrollment-eligibility"></a>Registrierungsberechtigung verarbeiten
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 In diesem Artikel wird erläutert, wie der Prozess der Registrierungsberechtigung ausgeführt wird.
 
@@ -72,3 +72,6 @@ In diesem Artikel wird erläutert, wie die Berechtigung der Prozessergebnisse an
    | **Ergebnisstatus** | Dies ist berechtigt oder nicht berechtigt. Der Ergebnisstatus ist nicht berechtigt, wenn der Arbeitnehmer die Kriterien für die Berechtigungsregel nicht erfüllt, wenn dem Arbeitnehmer die erforderlichen Informationen wie eine Gehaltshäufigkeit oder eine feste Vergütung fehlen oder wenn im Leistungsplan Informationen fehlen, die die Einschreibung von Arbeitnehmern verhindern. |
    | **Ergebnismeldung** | Gibt an, warum ein Arbeitnehmer keinen Anspruch auf einen Leistungsplan hat oder ob die Anspruchsregel erfüllt wurde. |
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

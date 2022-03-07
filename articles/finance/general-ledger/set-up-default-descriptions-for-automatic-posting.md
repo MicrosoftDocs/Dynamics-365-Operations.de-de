@@ -2,9 +2,11 @@
 title: Standardbeschreibungen für automatische Buchungen einrichten
 description: In diesem Thema wird beschrieben, wie Sie Standardtext einrichten, der verwendet wird, um Buchhaltungseinträge auszufüllen, die automatisch im Hauptbuch gebucht werden. Sie können Standardbeschreibungstext einrichten, indem Sie Freihandtext verwenden oder indem Sie feste Variablen auswählen.
 author: aprilolson
+manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -14,12 +16,12 @@ ms.search.region: global
 ms.author: aolson
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 89ea19753abdc4e5d4219a123a832bb3606515a43b439d5f94a9619857b6c7d0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d1b73b104ed8a8a015cb97dcf3055a648cfb083d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722694"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994739"
 ---
 # <a name="set-up-default-descriptions-for-automatic-posting"></a>Standardbeschreibungen für automatische Buchungen einrichten
 
@@ -84,6 +86,3 @@ Nachdem Sie die Schritte in [Einrichten von Standardbeschreibungen](#set-up-defa
 2. Wählen Sie im Feld **Bezugstabelle** die Datenbanktabelle aus, aus der der Beschreibung Parameterdaten hinzugefügt werden sollen.
 3. Wählen Sie im Feld **Referenzfeld** das Feld aus, aus dem der Beschreibung Parameterdaten hinzugefügt werden sollen.
 4. Wiederholen Sie zum Hinzufügen weiterer Parameter die Schritte 1 bis 3.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

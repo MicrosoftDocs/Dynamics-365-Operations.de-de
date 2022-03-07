@@ -2,11 +2,9 @@
 title: Übersicht über Vorlagen und Layouts
 description: In diesem Thema werden Vorlagen und Layouts in Microsoft Dynamics 365 Commerce behandelt.
 author: phinneyridge
-manager: annbe
 ms.date: 12/12/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 835b283ea93f761791745a41c74b6a12c11eea02
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 888f5295dce601d4ce5d823f14169bbcdfe48d6b
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962959"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986093"
 ---
 # <a name="templates-and-layouts-overview"></a>Übersicht über Vorlagen und Layouts
 
@@ -34,7 +32,7 @@ Ein guter Einstieg in die Arbeit mit Vorlagen besteht darin, die funktionalen Vo
 
 Die folgende Abbildung zeigt die Seitenmodellhierarchie hinter einer gerenderten Webseite.
 
-![Seitenmodelldiagramm](../commerce/media/page-model-diagram.png)
+![Seitenmodelldiagramm.](../commerce/media/page-model-diagram.png)
 
 | Entität        | Grundfunktion |
 |---------------|----------------|
@@ -100,7 +98,7 @@ Vordefinierte und benutzerdefinierte Layouts werden in verschiedenen Teilen des 
 
 Die folgenden Abbildungen zeigen Szenarien für vordefinierte und benutzerdefinierte Layouts.
 
-![Vordefinierte und benutzerdefinierte Layoutszenarien](../commerce/media/template-figure1.png)
+![Vordefinierte und benutzerdefinierte Layoutszenarien.](../commerce/media/template-figure1.png)
 
 Um mit der Verwendung von vordefinierten Layouts zu starten, lesen Sie [Arbeiten mit Voreinstellungslayouts](work-with-layouts.md).
 
@@ -111,3 +109,6 @@ Um mit der Verwendung von vordefinierten Layouts zu starten, lesen Sie [Arbeiten
 [Arbeiten mit Voreinstellungslayouts](work-with-layouts.md)
 
 [Arbeiten mit Veröffentlichungsgruppen](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

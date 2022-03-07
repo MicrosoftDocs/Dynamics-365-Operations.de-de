@@ -2,16 +2,13 @@
 title: Interessent zu Bargeld
 description: Dieses Thema enthält einen Überblick der Prospect to Cash-Lösung zwischen Dynamics 365 Supply Chain Management und Dynamics 365 Sales.
 author: ChristianRytt
-manager: tfehr
 ms.date: 04/25/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustTable, SalesTable, EcoResProductListPage
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 55c39fac40498488519fcb539b3c3f7560a46b30
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7b70b44a1d61d956f133cf0994647bd56adffa6b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428631"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836517"
 ---
 # <a name="prospect-to-cash"></a>Prospect-to-Cash
 
@@ -82,3 +79,6 @@ Um die Interessent zu Bargeld-Lösung zu nutzen, müssen Sie Folgendes installie
 
 - Dynamics 365 Sales-Version 1612 (8.2.1.207) (DB 8.2.1.207) online oder höher.
 - Interessent zu Bargeld-Lösung für Dynamics 365 Sales, Version 1.15.0.0 oder eine spätere Version. Die Lösung ist aus AppSource zum Download verfügbar. [Laden Sie Dynamics 365, Prospect to Cash herunter](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

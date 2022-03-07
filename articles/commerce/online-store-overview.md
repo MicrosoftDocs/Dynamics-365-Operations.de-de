@@ -2,31 +2,27 @@
 title: E-Commerce-Website-Übersicht
 description: Dieses Thema bietet eine Übersicht über die Unterstützung für E-Commerce-Websites in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-manager: AnnBe
 ms.date: 11/05/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a5ced6311f32405e544e66d18c912ce40deb177f
-ms.sourcegitcommit: 33a746e41cd6f7b6b056b19b550a84f6a1b905d4
+ms.openlocfilehash: c7f679e8d11b0ec01e912a4ad64f02e50b20f299
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "4512916"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984568"
 ---
-# <a name="e-commerce-site-overview"></a>E-Commerce-Website-Übersicht
+# <a name="e-commerce-site-overview"></a>E-Commerce-Site – Übersicht
 
 [!include [banner](includes/banner.md)]
 
@@ -40,37 +36,37 @@ In Dynamics 365 Commerce können Sie einen Onlineshopkanal verwenden, um die Pro
 
 Nur ein Onlineshopkanal muss eingerichten werden, bevor Sie mit Dynamics 365 Commerce loslegen können. Jedoch kann eine einzelne E-Commerce-Website die Online-Umgebung für mehrere Onlineshops bereitstellen. Wenn zum Beispiel mehrere Online-Shops eingerichtet sind, um unterschiedliche geografische Regionen zu unterstützen, kann ein einzelner Satz von E-Commerce-Seiten verwendet werden, um die von jedem Shop definierten einzigartigen Umgebungen und Funktionalitäten bereitzustellen. Weitere Informationen zum Konfigurieren einer Site für die Unterstützung mehrerer Onlineshops finden Sie unter [Verknüpfen Sie eine Online-Site mit einem Kanal](associate-site-online-store.md).
 
-Nachdem ein Online-Shop eingerichtet wurde, kann er der Dynamics 365 Commerce-Site zugeordnet werden, die als Ihre Online-Storefront dient. Weitere Informationen zu Onlineshops und deren Einrichtung finden Sie unter [Richten Sie Online-Shops ein](https://docs.microsoft.com/dynamics365/unified-operations/retail/online-stores).
+Nachdem ein Online-Shop eingerichtet wurde, kann er der Dynamics 365 Commerce-Site zugeordnet werden, die als Ihre Online-Storefront dient. Weitere Informationen zu Onlineshops und deren Einrichtung finden Sie unter [Richten Sie Online-Shops ein](/dynamics365/unified-operations/retail/online-stores).
 
 ## <a name="deploy-a-new-e-commerce-tenant"></a>Neuen E-Commerce-Mandanten bereitstellen
 
-Während der Initialisierung einer E-Commerce-Website werden Sie zur Eingabe eines Domänennamens aufgefordert. Weitere Informationen zu Domänen in Commerce finden Sie unter [Ihren Domänennamen konfigurieren](configure-your-domain-name.md) und [Domänen in Dynamics 365 Commerce](domains-commerce.md). Um einen neuen E-Commerce-Mandanten mithilfe von [Microsoft Dynamics Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide) bereitzustellen, folgen Sie den Schritten in [Einen neuen E-Commerce-Mandanten bereitstellen](deploy-ecommerce-site.md). Nachdem Ihr E-Commerce-Mandant in LCS eingerichtet wurde, wird ein Link zum Commerce-Website-Generator bereitgestellt. Sie können dann den Commerce-Website-Generator verwenden, um Ihre E-Commerce-Websites zu initialisieren und zu konfigurieren.
+Während der Initialisierung einer E-Commerce-Website werden Sie zur Eingabe eines Domänennamens aufgefordert. Weitere Informationen zu Domänen in Commerce finden Sie unter [Ihren Domänennamen konfigurieren](configure-your-domain-name.md) und [Domänen in Dynamics 365 Commerce](domains-commerce.md). Um einen neuen E-Commerce-Mandanten mithilfe von [Microsoft Dynamics Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide) bereitzustellen, folgen Sie den Schritten in [Einen neuen E-Commerce-Mandanten bereitstellen](deploy-ecommerce-site.md). Nachdem Ihr E-Commerce-Mandant in LCS eingerichtet wurde, wird ein Link zum Commerce-Website-Generator bereitgestellt. Sie können dann den Commerce-Website-Generator verwenden, um Ihre E-Commerce-Websites zu initialisieren und zu konfigurieren.
 
 ## <a name="initialize-your-e-commerce-site"></a>Ihre E-Commerce-Website initialisieren
 
 Wenn Sie den Commerce-Website-Generator von LCS aus starten, wird die Seite **Websites** angezeigt. Diese Seite enthält zwei vorkonfigurierte Websites **Standard** und **fabrikam**, wie im Beispiel in der folgenden Abbildung gezeigt.
 
-![Seite „Websites“ im Commerce-Website-Generator](media/e-commerce-site-01.png)
+![Seite „Websites“ im Commerce-Website-Generator.](media/e-commerce-site-01.png)
 
 Wenn Sie eine dieser Websites auswählen, werden Sie aufgefordert, einen Domänennamen, einen standardmäßigen Online-Shop-Kanal, eine unterstützte Sprache für den ausgewählten Kanal und einen Pfad auszuwählen. Wenn nur ein Kanal verwendet wird, können Sie den Pfad leer lassen. Weitere Online-Shop-Kanäle oder -Sprachen können später im Commerce-Website-Generator konfiguriert werden. Jeder zusätzliche Kanal oder jede zusätzliche Sprache erfordert einen eindeutigen Pfad. Sie haben beispielsweise zwei Online-Kanäle, die einer einzigen Website zugeordnet sind, und der Domänenname für die Website lautet `www.fabrikam.com`. In diesem Fall kann der Pfad für einen Kanal der Standardwert sein, der keinen Pfad hat (`https://www.fabrikam.com`), und der zweite Kanal kann auf einen neuen Pfad festgelegt werden, wie z. B. **site2**, der dann die folgende URL `https://www.fabrikam.com/site2` hat. Die folgende Abbildung zeigt ein Beispiel für ein Dialogfeld zur Website-Initialisierung im Commerce-Website-Generator.
 
-![Dialogfeld „Website-Initialisierung“ im Commerce-Website-Generator](media/e-commerce-site-02.png)
+![Dialogfeld „Website-Initialisierung“ im Commerce-Website-Generator.](media/e-commerce-site-02.png)
 
 Die Seite **Websites** enthält auch eine Schaltfläche **Neue Website**. Das Dialogfeld, das angezeigt wird, wenn Sie diese Schaltfläche auswählen, ähnelt dem Dialogfeld für die Website-Initialisierung, wird jedoch zum Erstellen einer neuen Website verwendet. Neue Websites sind leer. Sie enthalten nicht dieselben Standardvorlagen, Fragmente, Seiten und Bilder, die mit den Websites **Standard** und **fabrikam** bereitgestellt werden. Bei Bedarf können Sie jedoch ein Supportticket öffnen, um das Hinzufügen einer Kopie des Standardinhalts zu einer neuen leeren Website anzufordern. Weitere Informationen finden Sie unter [Eine E-Commerce-Website erstellen](create-ecommerce-site.md).
 
 Nachdem eine neue Website initialisiert wurde, wird die **Start**-Seite des Commerce-Website-Generators angezeigt. Diese Seite enthält Links zu allgemeinen Aktionen und Anleitungsinhalten, wie im Beispiel in der folgenden Abbildung gezeigt.
 
-![Links auf der Startseite im Commerce-Website-Generator](media/e-commerce-site-03.png)
+![Links auf der Startseite im Commerce-Website-Generator.](media/e-commerce-site-03.png)
 
 ## <a name="modify-online-store-channels-or-add-online-store-channels-to-an-e-commerce-site"></a>Online-Shop-Kanäle ändern oder Online-Shop-Kanäle zu einer E-Commerce-Website hinzufügen
 
 Nachdem eine E-Commerce-Website erstellt wurde, können Sie den Kanal ändern, dem sie zugeordnet ist, indem Sie den Schritten in [Eine E-Commerce-Website einem Online-Kanal zuordnen](associate-site-online-store.md) folgen. Das Beispiel in der folgenden Abbildung zeigt, wie eine Kanalvorgangseinheitsnummer (OUN) auf der Seite **Kanäle** geändert werden kann (**Website-Einstellungen \> Kanäle**). Nachdem Sie eine Änderung vorgenommen haben, vergessen Sie nicht, **Speicher und veröffentlichen** auszuwählen. Auf diese Weise stellen Sie sicher, dass die Änderung veröffentlicht wird.
 
-![Seite „Kanäle“ im Commerce-Website-Generator](media/e-commerce-site-04.png)
+![Seite „Kanäle“ im Commerce-Website-Generator.](media/e-commerce-site-04.png)
 
 Sie können neue Kanäle hinzufügen, indem Sie auswählen **Kanal hinzufügen** auswählen. Um einem Kanal neue Sprachen hinzuzufügen, wählen Sie den Kanal aus und wählen Sie dann **Gebietsschema hinzufügen** im angezeigten Kanaldialogfeld aus. Bevor Gebietsschemas im Dialogfeld angezeigt werden können, müssen sie für den Online-Shop-Kanal in der Commerce-Zentralverwaltung vorkonfiguriert sein.
 
-![Dialogfeld „Kanal“ im Commerce-Website-Generator](media/e-commerce-site-05.png)
+![Dialogfeld „Kanal“ im Commerce-Website-Generator.](media/e-commerce-site-05.png)
 
 ## <a name="set-up-an-azure-b2c-tenant"></a>Azure B2C-Mandant einrichten
 
@@ -121,3 +117,6 @@ Informationen zum Verwalten von Website-Inhalten finden Sie in den folgenden The
 [Standortbasierte Shop-Erkennung aktivieren](enable-store-detection.md)
 
 [Einrichten angepasster Seiten für die Benutzeranmeldungen](custom-pages-user-logins.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

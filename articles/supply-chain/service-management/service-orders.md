@@ -1,34 +1,30 @@
 ---
 title: Serviceaufträge
-description: Ein Serviceauftrag steht für den Besuch eines Servicetechnikers am Standort eines Debitors zu einem bestimmten Datum.
-author: ShylaThompson
-manager: tfehr
+description: Dieses Thema gibt einen Überblick über das Arbeiten mit Serviceaufträgen.
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b049b166edf2b5a318a4b1af85e7f74cfe433f2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8dc88d445e1331e1532cb3b7385cda39c4f22e80
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428388"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566118"
 ---
-# <a name="service-orders"></a>Serviceaufträge   
+# <a name="service-orders"></a>Serviceaufträge
 
 [!include [banner](../includes/banner.md)]
-
 
 Ein Serviceauftrag steht für den Besuch eines Servicetechnikers am Standort eines Debitors zu einem bestimmten Datum. Jeder Serviceauftrag besteht aus mindestens einer Serviceauftragsposition. Serviceauftragspositionen repräsentieren die Arbeitsstunden, die vom Servicetechniker ausgeführt werden müssen, und die zugehörigen Artikel, Ausgaben und Gebühren.
 
@@ -42,19 +38,19 @@ Serviceaufträge können auch einzeln erstellt werden, ohne sie einer Vereinbaru
 
 
 > [!NOTE]
-> <P>Um Serviceaufträge zu erstellen die nicht einer Servicevereinbarung zugeordnet sind, müssen Sie das Kontrollkästchen <STRONG>Ohne Servicevertrag zulassen</STRONG> im Formular <STRONG>Serviceverwaltungsparameter</STRONG> auswählen.</P>
+> Um Serviceaufträge zu erstellen die nicht einer Servicevereinbarung zugeordnet sind, müssen Sie das Kontrollkästchen **Ohne Servicevertrag zulassen** auf der Seite **Serviceverwaltungsparameter** auswählen.
 
-**Szenario**
+### <a name="scenario"></a>Szenario
 
 Im folgenden Szenario wird eine andere Situation beschrieben, in der es nützlich ist, einen Serviceauftrag zu erstellen, der nicht einer Servicevereinbarung zugeordnet ist.
 
-Der Unternehmensdisponent erhält einen Anruf, in dem der Notfallservice für einen Aufzug verlangt wird. Es ist keine Zeit vorhanden, eine Servicevereinbarung und ein Projekt für den Service einzurichten. Daher erstellt der Disponent einen Serviceauftrag direkt im Formular **Serviceaufträge**, fügt den Serviceauftrag einem vorhandenen Projekt hinzu und erstellt die Serviceauftragspositionen. Darüber hinaus erstellt er eine Aufgaben- oder Objektbeziehung für einen vorhandenen Serviceauftrag. Auf diese Weise können Arbeiten erfasst werden, die nicht mit der Servicevereinbarung in Verbindung stehen. Weitere Informationen finden Sie unter [Manuelles Erstellen von Serviceaufträgen](create-service-orders-manually.md) und [Erstellen von Serviceaufgabenbeziehungen](create-service-task-relations.md).
+Der Unternehmensdisponent erhält einen Anruf, in dem der Notfallservice für einen Aufzug verlangt wird. Es ist keine Zeit vorhanden, eine Servicevereinbarung und ein Projekt für den Service einzurichten. Daher erstellt der Disponent einen Serviceauftrag direkt auf der Seite **Serviceaufträge**, fügt den Serviceauftrag einem vorhandenen Projekt hinzu und erstellt die Serviceauftragspositionen. Darüber hinaus erstellt er eine Aufgaben- oder Objektbeziehung für einen vorhandenen Serviceauftrag. Auf diese Weise können Arbeiten erfasst werden, die nicht mit der Servicevereinbarung in Verbindung stehen. Weitere Informationen finden Sie unter [Manuelles Erstellen von Serviceaufträgen](create-service-orders-manually.md) und [Erstellen von Serviceaufgabenbeziehungen](create-service-task-relations.md).
 
 ## <a name="monitor-the-progress-of-service-orders"></a>Überwachen des Fortschritts von Serviceaufträgen
 
 Zur Überwachung des Fortschritts eines Auftrags durch die einzelnen Teams und Arbeitsprozesse können Sie ein System von Phasen und Ursachecodes einrichten. Für jede Phase können Sie die Aktivitäten angeben, die zulässig sind. Weitere Informationen zu Ursachencodes finden Sie unter [Erstellen von Ursachencodes](create-reason-codes.md).
 
-**Beispiel**
+### <a name="example"></a>Beispiel
 
 Ein Serviceauftrag wird von dem Disponenten genehmigt. Der Disponent aktualisiert die Phase des Serviceauftrags und gibt einen Ursachencode an, der angibt, dass der Serviceauftrag für den Servicetechniker freigegeben wurde. Der Servicetechniker begibt sich an den Standort des Debitors und führt den Serviceauftrag aus.
 
@@ -62,7 +58,7 @@ Ein Serviceauftrag wird von dem Disponenten genehmigt. Der Disponent aktualisier
 
 Sie können die Lagerartikel angeben, die für Serviceaufträge erforderlich sind. Allerdings muss der Serviceauftrag einem Projekt zugeordnet sein. Artikelbedarf für Serviceaufträge wird im Rahmen eines Projekts verarbeitet. 
 
-**Beispiel**
+### <a name="example"></a>Beispiel
 
 Die auf der Grundlage der Servicevereinbarung erstellten Serviceaufträge werden durch den Disponenten verarbeitet. Beim ersten Serviceauftrag erkennt der Disponent, dass der Techniker ein wichtiges Ersatzteil benötigt, das nicht vorrätig ist. Aus diesem Grund erstellt er direkt im Serviceauftrag einen Artikelbedarf für das Ersatzteil.
 
@@ -76,7 +72,7 @@ Einer der für Januar generierten Serviceaufträge wird nicht mehr benötigt, da
 
 ## <a name="post-from-projects"></a>Buchen vom Modul "Projekt" aus
 
-Am Ende jeder Woche möchte der Disponent alle Serviceaufträge buchen, die einem bestimmten Projekt zugeordnet sind. Daher sucht er das entsprechende Projekt im Formular **Projekte** und bucht die Serviceaufträge, die abgeschlossen wurden. Weitere Informationen finden Sie unter [Klassenformular "Serviceaufträge buchen"](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
+Am Ende jeder Woche möchte der Disponent alle Serviceaufträge buchen, die einem bestimmten Projekt zugeordnet sind. Daher sucht er das entsprechende Projekt auf der Seite **Projekte** und bucht die Serviceaufträge, die abgeschlossen wurden. Weitere Informationen finden Sie unter [Klassenformular "Serviceaufträge buchen"](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
 
 ## <a name="delete-service-orders"></a>Serviceaufträge löschen
 
@@ -89,3 +85,6 @@ In der zweiten Jahreshälfte teilt Ihnen Ihr Debitor mit, dass die Servicebesuch
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

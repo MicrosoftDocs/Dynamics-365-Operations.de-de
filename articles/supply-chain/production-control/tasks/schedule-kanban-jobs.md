@@ -2,26 +2,23 @@
 title: Kanban-Einzelvorgänge planen
 description: Der Schwerpunkt dieser Prozedur liegt auf der Planung von Kanban-Bearbeitungseinzelvorgängen für eine spezielle Arbeitsgruppe.
 author: ChristianRytt
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanJobSchedulingListPage, KanbanPeriodCapacityPart, SysLookupMultiSelectGrid, KanbanBoardScheduleJobForward
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c8342bf6c56adc41cc4944dc709152246ad93a3e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d017599d1e9e7c1406a9501b9c8dd5c9e760e124fbb1eebf00ad3ad712f36da6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428898"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6711566"
 ---
 # <a name="schedule-kanban-jobs"></a>Kanban-Einzelvorgänge planen
 
@@ -62,3 +59,6 @@ Der Schwerpunkt dieser Prozedur liegt auf der Planung von Kanban-Bearbeitungsein
     * Beachten Sie, dass beide Einzelvorgänge zur gewünschten Periode hinzugefügt werden.  
     * Im Abschnitt "Periodenkapazität" können Sie die Auslastung für jede Periode sehen. Das Feld "Verbrauch" zeigt den geplanten Verbrauch in dieser Periode an. Wenn der geplante Verbrauch höher als die verfügbare Kapazität in dieser Periode ist, wird der überladene Verbrauch ausgewählt.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

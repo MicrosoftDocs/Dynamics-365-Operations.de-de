@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-10-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: ceb3930cdb7764f846e88edfff6906b902a7f5fa
-ms.sourcegitcommit: fe7ac653efcb1ac6318083f482394b96ed82b4c7
+ms.openlocfilehash: 0d41d8665252a978962bf6a2e307dce3dad64a5b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4429168"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5233438"
 ---
 # <a name="transportation-management-modes-and-methods"></a>Modi und Methoden der Transportverwaltung
 
@@ -47,3 +46,6 @@ Um eine Transportmethode zu erstellen, gehen Sie wie folgt vor:
 1. Wählen Sie **Neu**, um eine neue Transportmethode zu erstellen.
 1. Geben Sie eine eindeutige ID und einen beschreibenden Namen für die Transportmethode ein.
 1. Schließen Sie die Seite.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

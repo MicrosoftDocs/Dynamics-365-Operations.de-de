@@ -1,12 +1,10 @@
 ---
 title: Zielentitäten
 description: In diesem Thema erfahren Sie, wie Sie sich einen Überblick über die Ziel-Entitäten im Anlagenmanagement verschaffen können.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 09/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb22c5b604f9bc7aacad014385b036e78d9110e6
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 3b9fd32d539a8f2e038f571910314889f92e3fd9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017211"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838633"
 ---
 # <a name="target-entities"></a>Zielentitäten
 
@@ -52,3 +50,6 @@ In Arbeitsbereich **Datenverwaltung** können Sie sich einen Überblick über Zi
 
     ![Abbildung 3](media/03-data-management.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

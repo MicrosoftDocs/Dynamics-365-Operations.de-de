@@ -1,9 +1,9 @@
 ---
 title: Überblick über Kreditorenrechnungen
-description: Dieses Thema enthält allgemeine Informationen zu Kreditorenrechnungen. Kreditorenrechnungen sind Zahlungsaufforderungen für Produkte und Dienste, die empfangen wurden. Kreditorenrechnungen können eine Rechnung für laufende Dienstleistungen darstellen oder auf Bestellungen für bestimmte Artikel und Dienstleistungen basieren.
+description: Dieses Thema enthält allgemeine Informationen zu Kreditorenrechnungen.
 author: abruer
 manager: AnnBe
-ms.date: 07/17/2019
+ms.date: 12/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,31 +11,30 @@ ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d51a5ff2dca764a534ea4bf92c30bcf0bf0a5dad
-ms.sourcegitcommit: 51cd470ee885d12f7d51c66201b092aaa16dfaa6
+ms.openlocfilehash: 1799fb18a1dd4b7c532259ab198e1ba30a89c09d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "4701675"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5264130"
 ---
-# <a name="vendor-invoices-overview"></a>Überblick über Kreditorenrechnungen
+# <a name="vendor-invoices-overview"></a>Kreditorenrechnungen – Übersicht
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält allgemeine Informationen zu Kreditorenrechnungen. Kreditorenrechnungen sind Zahlungsaufforderungen für Produkte und Dienste, die empfangen wurden. Kreditorenrechnungen können eine Rechnung für laufende Dienstleistungen darstellen oder auf Bestellungen für bestimmte Artikel und Dienstleistungen basieren.
+Dieses Thema enthält allgemeine Informationen zu Kreditorenrechnungen. Kreditorenrechnungen sind Zahlungseingangsaufforderungen für Produkte und Dienstleistungen. Kreditorenrechnungen können eine Rechnung für laufende Dienstleistungen darstellen oder auf Bestellungen für bestimmte Artikel und Dienstleistungen basieren.
 
 ## <a name="vendor-invoices"></a>Kreditorenrechnungen
 
-Eine Kreditorenrechnung für eine Bestellung ist eine Rechnung, die produziert wird, wenn Produkte oder Dienstleistungen gemäß einer vom Kreditor getätigten Bestellung zugestellt wurden. Die Kreditorenrechnung enthält eine Kopfzeile und eine oder mehrere Positionen für Artikel oder Dienstleistungen. Mit der Kreditorenrechnung wird der Zyklus aus Bestellung, Produktempfang und Kreditorenrechnung abgeschlossen.
+Eine Kreditorenrechnung für eine Bestellung wird erzeugt, wenn Produkte oder Dienstleistungen gemäß einer vom Kreditor getätigten Bestellung zugestellt wurden. Die Kreditorenrechnung enthält eine Kopfzeile und eine oder mehrere Positionen für Artikel oder Dienstleistungen. Mit der Kreditorenrechnung wird der Zyklus aus Bestellung, Produktempfang und Kreditorenrechnung abgeschlossen.
 
-Obwohl einige Kreditorenrechnungen mit einer Bestellung verbunden sind, können Kreditorenrechnungen auch Positionen enthalten, die nicht den Bestellpositionen entsprechen. Sie können auch Kreditorenrechnungen erstellen, die keinen Bestellungen zugeordnet sind. Diese Kreditorenrechnungen stellen möglicherweise laufende Dienstleistungen dar, wie eine Nutzungsrechnung. Wenn Sie diese hinzufügen, muß sie nicht auf eine Bestellung verweisen.
+Obwohl einige Kreditorenrechnungen mit einer Bestellung verbunden sind, können Kreditorenrechnungen auch Positionen enthalten, die nicht den Bestellpositionen entsprechen. Sie können auch Kreditorenrechnungen erstellen, die keinen Bestellungen zugeordnet sind. Diese Kreditorenrechnungen können laufende Dienstleistungen darstellen, z. B. eine Stromrechnung. Sie müssen nicht auf eine Bestellung verweisen, wenn Sie eine laufende Dienstleistung hinzufügen.
 
 Es gibt mehrere Möglichkeiten, eine Kreditorenrechnung einzugeben:
 
@@ -48,12 +47,12 @@ In der nachstehenden Erläuterung finden Sie weitere Informationen dazu, wie Sie
 
 ## <a name="understanding-invoice-line-quantities"></a>Rechnungspositionsmengen verstehen
 
-Wenn Sie eine Kreditorenrechnung für eine entsprechenden Bestellung öffnen, werden die Rechnungspositionen aus der Bestellung erstellt. Standardmäßig werden die Mengen aus der Produktzugangsmenge übernommen. Allerdings können Sie jedes der folgenden Standardverhalten verwenden:
+Wenn Sie eine Kreditorenrechnung für eine zugehörige Bestellung öffnen, erstellt das System die Rechnungspositionen aus der Bestellung. Das System übernimmt standardmäßig die Mengen aus dem Produktzugang. Allerdings können Sie jedes der folgenden Standardverhalten verwenden:
 
-- **Menge der aktuellen Lieferung** - Verwenden Sie diese Option für Teillieferungen. Der Standardwert im Feld **Menge** stammt von der Menge, die im Feld **Aktuelle Lieferung** der Bestellung angegeben ist.
-- **Bestellte Menge** - Verwenden Sie diese Option für vollständige Lieferungen. Der Standardwert im Feld **Menge** stammt von der Menge, die im Feld **Bestellt** der Bestellung angegeben ist.
+- **Menge der aktuellen Lieferung** - Verwenden Sie diese Option für Teillieferungen. Das System legt den Standardwert im Feld **Menge** fest. Dieser stammt von der Menge, die im Feld **Aktuelle Lieferung** der Bestellung angegeben ist.
+- **Bestellte Menge** - Verwenden Sie diese Option für vollständige Lieferungen. Das System legt den Standardwert im Feld **Menge** fest. Dieser stammt von der Menge, die im Feld **Bestellt** der Bestellung angegeben ist.
 - **Erfasste Menge** - Verwenden Sie diese Option, wenn der Artikel erfasst werden muss, wie auf der Seite **Lagersteuerungsgruppen** angegeben. Bei dem Standardwert im Feld **Menge** handelt es sich um die registrierte physische Aktualisierungsmenge.
-- **Produktzugangsmenge** – Verwenden Sie diese Option, wenn für den Auftrag bereits ein Produktzugang eingegangen ist. Beim Standardwert im Feld **Menge** handelt es sich um die Gesamtmenge der verfügbaren Produktzugänge.
+- **Produktzugangsmenge** – Verwenden Sie diese Option, wenn für den Auftrag bereits ein Produktzugang eingegangen ist. Das System übernimmt den Standardwert im Feld **Menge** aus der Gesamtmenge der verfügbaren Produktzugänge.
 - **Erfasste Menge und Services** – Verwenden Sie diese Option, wenn Mengen für gelagerte oder nicht gelagerte Artikel in der Wareneingangserfassungen registriert wurden. Diese Option schließt auch registrierte und nicht registrierte Dienstleistungen ein.
 
 Wenn Ihre juristische Person den Rechnungsabgleich verwendet, können Sie die Ergebnisse der Menge anzeigen, die mit der Spalte **Produktzugang-Mengenabgleich** übereinstimmt. Sie können auch die Schaltfläche **Detailabgleich** auf der Registerkarte **Prüfen** des Aktivitätsbereichs verwenden, um die Ergebnisse des Mengenabgleichens anzuzeigen.
@@ -64,23 +63,25 @@ Sie können der Kreditorenrechnung eine Position hinzuzufügen, die nicht in der
 
 ## <a name="submitting-a-vendor-invoice-for-review"></a>Senden einer Kreditorenrechnung zur Prüfung
 
-Möglicherweise werden in der Organisation Workflows zur Verwaltung des Prüfprozesses für Kreditorenrechnungen verwendet. Der Prüfungsworkflow kann für den Rechnungskopf und/oder die Rechnungsposition erforderlich sein. Die Steuerelemente des Workflows werden je nachdem, worauf der Fokus beim Auswählen auf das Steuerelement lag, auf die Kopfzeile oder die Position angewendet. Statt der Schaltfläche **Buchen** finden Sie eine **Übermitteln** Schaltfläche, die Sie verwenden können, um die Kreditorenrechnung durch den Prüfprozess zu senden.
+Möglicherweise werden in der Organisation Workflows zur Verwaltung des Prüfprozesses für Kreditorenrechnungen verwendet. Der Prüfungsworkflow kann für den Rechnungskopf und/oder die Rechnungsposition erforderlich sein. Die Steuerelemente des Workflows werden je nachdem, worauf der Fokus beim Auswählen auf das Steuerelement lag, auf die Kopfzeile oder die Position angewendet. Statt der Schaltfläche **Buchen** wird eine **Übermitteln**-Schaltfläche angezeigt, um die Kreditorenrechnung durch den Prüfprozess zu schicken.
 
 ### <a name="preventing-invoice-from-being-submitted-to-workflow"></a>Verhindern, dass die Rechnung an den Workflow gesendet wird 
 
 Im Folgenden finden Sie verschiedene Möglichkeiten, wie Sie verhindern können, dass eine Rechnung an einen Workflow gesendet wird.
 
-- **Rechnungssumme und registrierte Summe sind nicht gleich.** Die Person, die die Rechnung eingereicht hat, erhält eine Benachrichtigung, dass die Gesamtsummen nicht gleich sind, sodass sie die Salden korrigieren kann, bevor sie die Rechnung erneut an den Workflow sendet. Diese Funktion ist verfügbar, wenn die **Verbieten Sie die Übermittlung an den Workflow, wenn die Rechnungssumme und die registrierte Rechnungssumme nicht gleich sind** Parameter auf der **Funktionsverwaltung** Seite eingeschaltet ist. 
+- **Rechnungssumme und registrierte Summe sind nicht gleich.** Die Person, die die Rechnung übermittelt hat, erhält eine Warnung, wenn die Gesamtsummen nicht gleich sind. Die Warnung bietet die Möglichkeit, die Salden zu korrigieren, bevor die Rechnung erneut an den Workflow gesendet wird. Diese Funktion ist verfügbar, wenn die **Verbieten Sie die Übermittlung an den Workflow, wenn die Rechnungssumme und die registrierte Rechnungssumme nicht gleich sind** Parameter auf der **Funktionsverwaltung** Seite eingeschaltet ist. 
 
 - **Die Rechnung enthält nicht zugeordnete Gebühren.** Die Person, die die Rechnung eingereicht hat, erhält eine Benachrichtigung, dass die Rechnung nicht zugewiesene Belastungen enthält, sodass sie die Salden korrigieren kann, bevor sie die Rechnung erneut an den Workflow sendet. Diese Funktion ist verfügbar, wenn die **Verbieten Sie die Übermittlung an den Workflow, wenn nicht zugewiesene Belastungen auf einer Kreditorenrechnung sind** Parameter auf der **Funktionsverwaltung** Seite eingeschaltet ist.
 
-- **Die Rechnung enthält dieselbe Rechnungsnummer wie eine andere gebuchte Rechnung.** Die Person, die die Rechnung eingereicht hat, erhält eine Benachrichtigung, dass eine Rechnung mit gleicher Rechnungsnummer gefunden wurde, sodass sie sie korrigieren kann, bevor sie die Rechnung erneut an den Workflow sendet. Diese Warnung wird angezeigt, wenn der Parameter Kreditorenbuchhaltung gekennzeichnet ist **Überprüfen Sie die verwendete Rechnungsnummer** eingestellt ist auf **Duplikat ablehnen**. Diese Funktion ist verfügbar, wenn die **Verbieten Sie die Übermittlung an den Workflow, wenn die Rechnungsnummer bereits auf einer gebuchten Rechnung vorhanden ist und Ihr System nicht für die Annahme doppelter Rechnungsnummern eingerichtet ist** Parameter auf der **Funktionsverwaltung** Seite eingeschaltet ist.  
+- **Die Rechnung enthält dieselbe Rechnungsnummer wie eine andere gebuchte Rechnung.** Die Person, die die Rechnung eingereicht hat, erhält eine Benachrichtigung, dass eine Rechnung mit gleicher Rechnungsnummer gefunden wurde, sodass sie sie korrigieren kann, bevor sie die Rechnung erneut an den Workflow sendet. Diese Warnung wird angezeigt, wenn der Parameter **Die verwendete Rechnungsnummer überprüfen** im Kreditorenkonto verwendet wird und auf **Duplikat ablehnen** eingestellt ist. Diese Funktion ist verfügbar, wenn die **Verbieten Sie die Übermittlung an den Workflow, wenn die Rechnungsnummer bereits auf einer gebuchten Rechnung vorhanden ist und Ihr System nicht für die Annahme doppelter Rechnungsnummern eingerichtet ist** Parameter auf der **Funktionsverwaltung** Seite eingeschaltet ist.  
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Abgleichen von Kreditorenrechnungen mit Produktzugängen
 
 Sie können Informationen zu Kreditorenrechnungen eingeben und speichern, und Sie können Rechnungspositionen mit Produktzugangspositionen abgleichen. Für eine Position können auch Teilmengen abgeglichen werden.
 
 Sie können eine Kreditorenrechnung basierend auf den über das aktuelle Datum empfangenen Artikeln der Produktzugangspositionen erstellen, auch wenn noch nicht alle Artikel einer bestimmten Bestellung eingegangen sind. Das kann der Fall sein, wenn ein Kreditor monatlich eine Rechnung sendet, um alle Lieferungen abzudecken, die während des betreffenden Monats geliefert wurden. Jeder Produktzugang stellt eine teilweise oder vollständig abgeschlossene Artikellieferung für die Bestellung dar.
+
+Wenn sich eine Rechnung im Workflow befindet, kann die genehmigende Person die Rechnungsmengen so aktualisieren, dass sie mit dem Wert im Feld **Abzugleichende Menge im Produktzugang** übereinstimmen. Wählen Sie dazu die Funktion **Rechnungsmengen zum Abgleichen von Produktzugangsmengen im Workflow aktualisieren** im Arbeitsbereich **Funktionsverwaltung**, und wählen Sie **Aktivieren** aus. Wenn eine genehmigende Person im Workflow-Prozess alle Abgleichungen aus allen Produktzugängen aus der Rechnungsposition entfernt hat, wird die Rechnungsposition gelöscht. Wenn diese Funktion nicht aktiviert ist, werden die Rechnungsmengen für Rechnungen im Workflow nicht aktualisiert.
 
 Durch Buchen der Rechnung wird die Menge des **Rechnungsrestbetrags** jedes Artikels mit der Summe der eingegangenen Mengen aus den ausgewählten Produktzugängen aktualisiert. Wenn sowohl die Menge für den **Rechnungsrestbetrag** als auch die Menge **Rest liefern** für alle Artikel des Auftrags gleich 0 (Null) ist, wird der Status der Bestellung zu **In Rechnung gestellt** geändert. Ist die Menge des **Rechnungsrestbetrags** nicht 0 (Null), bleibt der Status der Bestellung unverändert, und es können weitere Rechnungen für den Auftrag erstellt werden.
 
@@ -128,3 +129,6 @@ Sie können die Rechnungssumme auf der **Ausstehende Lieferantenrechnungen**-Sei
 - [Rechnungsdaten mit einer Genehmigungserfassung in Kreditorenkonten eingeben](tasks/key-invoice-data-into-ap-system-approval-journal.md)
 - [Rechnungsdaten mit dem Rechnungspool in das Kreditorensystem eingeben](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
 - [Eine Kreditorenrechnung in der Rechnungserfassung erfassen](tasks/record-vendor-invoice-invoice-journal.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

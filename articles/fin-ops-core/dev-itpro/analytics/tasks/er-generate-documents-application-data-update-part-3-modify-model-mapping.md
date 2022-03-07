@@ -1,12 +1,10 @@
 ---
 title: Modelle und Zuordnungen ändern, um Dokumente zu generieren, die Anwendungsdaten haben
-description: Um die Schritte in dieser Prozedur auszuführen, müssen Sie zuerst das Verfahren abschließen, „ER generiert Dokumente mit Anwendungsdatenenaktualisierung (Teil 2 - Dokumente erstellen)“.
+description: Dieses Thema zeigt, wie Sie Berichtskonfigurationen entwerfen, um ein elektronisches Dokument zu generieren und Anwendungsdaten zu aktualisieren. (Teil 2 – Dokumente generieren).
 author: NickSelin
-manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3401ec98ac1b61572d07fbb30d4465de78473fca
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2d7df46bab244d11509b86a27eeed3c2725400b5eb4d0fbf50af1750e7de45d1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684570"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745887"
 ---
 # <a name="modify-models-and-mappings-to-generate-documents-that-have-application-data"></a>Modelle und Zuordnungen ändern, um Dokumente zu generieren, die Anwendungsdaten haben
 
@@ -168,3 +166,6 @@ Die Schritte in dieser Prozedur erläutern, wie elektronische Berichtskonfigurat
 66. Schließen Sie die Seite.
 67. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

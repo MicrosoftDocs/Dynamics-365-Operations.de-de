@@ -2,11 +2,9 @@
 title: Grobterminierung
 description: Dieses Thema enthält allgemeine Informationen zur Grobterminierung. Diese Grobplanung wird häufig verwendet, wenn eine allgemeine Schätzung der Dauer des Produktionsprozesses benötigt wird.
 author: ChristianRytt
-manager: tfehr
 ms.date: 06/20/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdSchedule
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eb4e1a38c675a3c8d102741a027d54294e335ac1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 94ac865db8a01f6b3c72e3a8851d6be4fe2ce0cf9faaa21bdb0d465605066b4f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966404"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734138"
 ---
 # <a name="operations-scheduling"></a>Grobterminierung
 
@@ -76,10 +74,12 @@ Wenn Sie die Grobterminierung ausführen, können Sie bestimmte Teile des Arbeit
 ## <a name="finite-materials"></a>Begrenztes Material
 Wenn Sie mit begrenztem Material arbeiten, hängt die Planung auch von der Verfügbarkeit des Materials ab, das für die Produktion benötigt wird. Wenn die verfügbaren Komponenten für die Produktion nicht ausreichen, kann die Produktion verzögert werden. Sie können die Planung auf der Materialverwendung beruhen lassen, indem Sie das Material angeben, das für die Produktion verfügbar sein muss. Wenn Sie sowohl die Ressourcenkapazität als auch die Verfügbarkeit des Materials optimieren, wird die Produktion gemäß diesen Einschränkungen berechnet. Der Start eines Produktionsauftrag kann erst geplant werden, wenn Kapazität und Material gleichzeitig und in den erforderlichen Mengen verfügbar sind.
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Grobterminierungsoptionen](operation-scheduling-options.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

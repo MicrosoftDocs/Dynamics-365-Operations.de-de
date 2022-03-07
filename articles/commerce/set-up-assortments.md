@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 32edf6534716236706847556a14b951f18ef40ae
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d61addbc4eac691351c2d8cac013c9d94bd900e9
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969825"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5264599"
 ---
 # <a name="set-up-assortments"></a>Sortimente einrichten
 
@@ -54,3 +54,6 @@ Nachdem Sie die Voraussetzungen abgeschlossen haben, können Sie ein Sortiment e
 2. Wählen Sie die Kanäle oder die übergeordneten Gruppen von Kanälen aus, für die das Sortiment gilt.
 3. Fügen Sie Produktkategorien, Einzelprodukte oder Produktvarianten dem Sortiment hinzu. Sie können alle Produkte in einer bestimmten Kategorie einschließen oder Sie können bestimmte Produkte aus einer Kategorie ausschließen, die im Sortiment enthalten ist.
 4. Veröffentlichen Sie das Sortiment. Wenn Sie ein Sortiment veröffentlichen, wird der Sortimentplaner automatisch ausgeführt. Dieser Vorgang generiert die Liste der Produkte. Wenn dieser Prozess abgeschlossen ist, werden die Produkte für die Kanäle verfügbar gemacht, denen das Produktsortiment zugeordnet ist. Wenn Änderungen an einem Sortiment vorgenommen werden, das veröffentlicht wurde, oder an den Kanälen, denen das Sortiment zugeordnet ist, muss das Sortiment aktualisiert werden. Um das Sortiment zu aktualisieren wenn Änderungen vorgenommen wurden, können Sie den Sortimentplaner als Batchauftrag ausführen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

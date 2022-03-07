@@ -1,12 +1,10 @@
 ---
 title: In früheren Versionen entfernte oder veraltete Funktionen
-description: Dieses Thema beschreibt Funktionen, die aus Dynamics 365 for Finance and Operations und früheren Versionen dieses Produkts entfernt wurden oder für die Entfernung geplant waren.
+description: Dieses Thema beschreibt Funktionen, die aus Dynamics 365 for Finance and Operations und früheren Versionen entfernt wurden oder für die Entfernung geplant waren.
 author: sericks007
-manager: AnnBe
-ms.date: 09/21/2020
+ms.date: 02/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -16,21 +14,21 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ce6b3fb5217ad5d5228841a91d0b0406c305969
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6dfe1cf9d3d67c6b65f64248d48a2e7420a47c93
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679955"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063236"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>In früheren Versionen entfernte oder veraltete Funktionen
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 > [!IMPORTANT]
-> Dieses Thema wird nicht mehr aktualisiert. Um eine aktuelle Liste von Funktionen zu sehen, die aus Finance and Operations Anwendungen entfernt oder veraltet sind, suchen Sie nach **„Entfernte oder veraltete Funktionen“** Inhalt, der sich auf die von Ihnen verwendete Anwendung bezieht.
+> Dieses Thema wird nicht mehr aktualisiert. Um eine aktuelle Liste der Funktionen anzuzeigen, die aus Apps für Finanzen und Betrieb entfernt oder außer Betrieb genommen wurden, suchen Sie nach **„Entfernte oder außer Betrieb genommene Funktionen“**, die sich auf die App beziehen, die Sie verwenden.
 
 Dieses Thema beschreibt Funktionen, die aus Dynamics 365 for Finance and Operations und früheren Versionen dieses Produkts entfernt oder veraltet sind.
 
@@ -39,7 +37,7 @@ Dieses Thema beschreibt Funktionen, die aus Dynamics 365 for Finance and Operati
 
 Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen bei Ihrer eigenen Planung zu berücksichtigen. 
 
-Detaillierte Informationen über Objekte in Finance and Operations Apps finden Sie in den [Technischen Referenzberichten](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die sich in jeder Version von Finance and Operations-Anwendungen geändert haben oder entfernt wurden.
+Ausführliche Informationen über Objekte in Apps für Finanzen und Betrieb finden Sie in den [Technischen Referenzberichten](/dynamics/s-e/global/axtechrefrep_61). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die in den einzelnen Versionen der Apps für Finanzen und Betrieb geändert oder entfernt wurden.
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 mit Plattformupdate 31
 
@@ -86,7 +84,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet: Wir planen, die Methode **setUtcString()** bis zum 1. Oktober 2020 nicht mehr zu unterstützen. Entwickler können stattdessen die Methode **setUtcDateTime()** verwenden. |
 
-### <a name="blacklist-report-it--feature-reference-it-00001"></a>Blacklist-Bericht (IT) – Funktionsreferenz IT-00001
+### <a name="blocklist-report-it--feature-reference-it-00001"></a>Sperrlistenbericht (IT) – Funktionsreferenz IT-00001
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -94,7 +92,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | **Ersetzt durch eine andere Funktion?**   | Nein |
 | **Betroffene Produktbereiche**         | Italienische Lokalisierung |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Veraltet: Bis 1. Oktober 2020 planen wir, **Blacklist-Bericht (IT) – Funktionsreferenz IT-00001** nicht mehr zu unterstützen. |
+| **Status**                         | Veraltet: Wir planen, diesen Bericht bis zum 1. Oktober 2020 nicht mehr zu unterstützen. |
 
 ### <a name="domestic-tax-report--feature-reference-it-00003"></a>InInlandssteuererklärung – Funktionsreferenz IT-00003
 
@@ -106,6 +104,39 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet: Bis 1. Oktober 2020 planen wir, **Inlandssteuererklärung – Funktionsreferenz IT-00003** nicht mehr zu unterstützen. |
 
+## <a name="october-2019-deprecation-announcement"></a>Ankündigung der Außerbetriebnahme im Oktober 2019
+
+### <a name="flowchart-diagrams-in-business-process-modeler"></a>Flussdiagramme im Geschäftsprozessmodellierer
+
+<table>
+<tbody>
+<tr>
+<td><strong>Grund für veralteten Zustand/Entfernung</strong></td>
+<td>Die Flowchart-Diagrammkomponente im Geschäftsprozessmodellierer (BPM) wird nicht mehr empfohlen, da das Legacy-Design zu einer geringen Nutzung geführt hat.</td>
+</tr>
+<tr>
+<td><strong>Ersetzt durch eine andere Funktion?</strong></td>
+<td>Nein</td>
+</tr>
+<tr>
+<td><strong>Betroffene Bereiche</strong></td>
+<td>Geschäftsprozessmodellierer</td>
+</tr>
+<tr>
+<td><strong>Status</strong></td>
+<td>Veraltet: Die Flussdiagrammkomponente in BPM wird voraussichtlich im Jahr 2020 entfernt. Folgende Funktion wird nicht mehr verfügbar sein:
+<ul>
+<li>Alle Flussdiagramme sind schreibgeschützt und können nicht bearbeitet werden. Die Formeigenschaften, die Flussdiagrammaktivitäten zugeordnet sind, sind ebenfalls nicht verfügbar. Diese Flussdiagramme umfassen sowohl automatisch generierte Standardflussdiagramme als auch benutzerdefinierte Flussdiagramme, die auf der Grundlage dieser Standardflussdiagramme geändert werden.</li>
+<li>Die Prozessschritte sind schreibgeschützt und können nicht bearbeitet werden.</li>     
+<li>Die Funktion zur Analyse älterer Anpassungen/Lücken ist nicht verfügbar. Daher wird keine Lückenliste automatisch erstellt oder steht für den Export zur Verfügung.
+<p><strong>Hinweis:</strong> Diese Funktion war zuvor veraltet und wurde durch Microsoft Azure DevOps-Integrationen ersetzt.</p>
+</li>
+<li>Der Versionsverlauf des Flussdiagramms ist nicht verfügbar.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## <a name="finance-and-operations-1005-with-platform-update-29"></a>Finance and Operations 10.0.5 mit Plattformupdate 29
 
@@ -149,7 +180,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Kopfzeilenausrichtung an anderen Dynamics- und Office-Produkten. Weitere Informationen finden Sie unter [Aktualisierte Navigationsleiste, die an der Office-Kopfzeile ausgerichtet ist](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar).
+| **Grund für veralteten Zustand/Entfernung** | Kopfzeilenausrichtung an anderen Dynamics- und Office-Produkten. Weitere Informationen finden Sie unter [Aktualisierte Navigationsleiste, die an der Office-Kopfzeile ausgerichtet ist](/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar).
 | **Ersetzt durch eine andere Funktion?**   | Ab Plattformupdate 24 wurde eine neu formatierte Navigationsleiste eingeführt, die eine Suchfunktion enthält. |
 | **Betroffene Produktbereiche**         | Webclient |
 | **Bereitstellungsoption**              | Alle |
@@ -163,7 +194,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Das Vorgängerverhalten für Standardaktivitäten in Rastern führt dazu, dass eine unerwartete Spalte den Standardaktivitätslink hat, nachdem Rasterspalten über die Personalisierung neu geordnet wurden. Die neue Kurzstandardaktivitätsfunktion korrigiert das. Weitere Informationen finden Sie unter [Kurzstandardaktivitäten in Rastern](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
+| **Grund für veralteten Zustand/Entfernung** | Das Vorgängerverhalten für Standardaktivitäten in Rastern führt dazu, dass eine unerwartete Spalte den Standardaktivitätslink hat, nachdem Rasterspalten über die Personalisierung neu geordnet wurden. Die neue Kurzstandardaktivitätsfunktion korrigiert das. Weitere Informationen finden Sie unter [Kurzstandardaktivitäten in Rastern](/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
 | **Ersetzt durch eine andere Funktion?**   | Ab Plattformupdate 21 wurde eine Funktion für „Kurzstandardaktivitäten” eingeführt. Diese Funktion kann auf der Seite **Leistungsoptionen des Clients** aktiviert werden. |
 | **Betroffene Produktbereiche**         | Raster im Webclient |
 | **Bereitstellungsoption**              | Alle |
@@ -174,7 +205,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 |&nbsp;   | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die Filterfunktion „gehört zu” wurde im Plattformupdate 22 neu konzipiert. Geplant ist, dass dies letztendlich die einzige „gehört zu”-Filterfunktion sein soll. |
-| **Ersetzt durch eine andere Funktion?**   | Ab Plattformupdate 22 ist eine verbesserte „gehört zu”-Filterfunktion auf der Seite **Leistungsoptionen des Clients** verfügbar. Weitere Informationen finden Sie unter [Optimierte „gehört zu”-Filterfunktion](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
+| **Ersetzt durch eine andere Funktion?**   | Ab Plattformupdate 22 ist eine verbesserte „gehört zu”-Filterfunktion auf der Seite **Leistungsoptionen des Clients** verfügbar. Weitere Informationen finden Sie unter [Optimierte „gehört zu”-Filterfunktion](/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
 | **Betroffene Produktbereiche**         | Webclient |
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet: Ab April 2020 wird die verbesserte „gehört zu”-Funktionalität zum Standardverhalten ohne einen Mechanismus, um zum Vorgängerverhalten zurückzukehren. |
@@ -185,7 +216,7 @@ Unterstützung für das Erstellen von projektbasierten Aufträgen, bei denen der
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Diese Funktionalität wird immer aktiviert sein, nachdem der Parameter entfernt wurde. |
-| **Ersetzt durch eine andere Funktion?**   | Nr. Die Funktionalität, um projektbasierte Aufträge mit mehreren Finanzierungsquellen zu unterstützen, wird immer aktiviert sein.   |
+| **Ersetzt durch eine andere Funktion?**   | Nein Die Funktionalität, um projektbasierte Aufträge mit mehreren Finanzierungsquellen zu unterstützen, wird immer aktiviert sein.   |
 | **Betroffene Produktbereiche**         |Der Parameter **Aufträge für Projekte mit mehreren Finanzierungsquellen zulassen** wird entfernt. Die folgenden Methoden werden geändert, wenn der Parameter entfernt wird: Methode **ctrlSalesOrderTable** in Klasse **ProjStatusType**, Methode **validate** für Feld **ProjId** und Methode **run** im Formular **SalescreateOrder**. Folgende Methoden sind veraltet, wenn der Parameter entfernt wird: **IsSalesOrderAllowedForMultipleFundingSources** in der Tabellendatei **ProjTable**, Methode **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** in der Tabellendatei **ProjTable**, Datenfeld **AllowSalesOrdersForMultipleFundingSources** im Formular **ProjParameters** und Dateien **ProjParameterEntity**, private Methode **IsAssociatedToMultipleFundingSourcesContract** in Tabellendatei **ProjTable**. |
 | **Bereitstellungsoption**              | Alle  |
 | **Status**                         | Veraltung ist für die Versionswelle von April 2020 geplant. |
@@ -231,21 +262,21 @@ Unterstützung für das Erstellen von projektbasierten Aufträgen, bei denen der
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Wenn Sie die Funktion **Primärschlüssel umbenennen** verwenden, um das ItemId eines freigegebenen Produkts zu ändern, werden nur direkte Fremdschlüsselreferenzen aktualisiert. Alle anderen Referenzen zum freigegebenen Produkt, wie von Produktionsaufträgen, behalten die alte ItemId bei. Daher kann es inkonsistente Daten geben, die die Geschäftsprozesse letztlich blockieren. |
-| **Ersetzt durch eine andere Funktion?**   | Nr. |
+| **Ersetzt durch eine andere Funktion?**   | Nein |
 | **Betroffene Produktbereiche**         | Produktinformationsverwaltung |
 | **Bereitstellungsoption**              | Alle  |
-| **Status**                         | Entfernt ab Finance and Operations 10.0.0 mit Plattform-Update 24.|
+| **Status**                         | Entfernt ab Finance and Operations 10.0.0 mit Plattformupdate 24.|
 
 
 ## <a name="finance-and-operations-813-with-platform-update-23"></a>Finance and Operations 8.1.3 mit Plattformupdate 23
 
 ### <a name="sql-server-reporting-services-reportviewer-control"></a>SQL Server Reporting Services-ReportViewer-Steuerelement
-Kunden können die Aktion **Export** verwenden, die von der eingebetteten SQL Server Reporting Services (SSRS) ReportViewer-Steuerung bereitgestellt wird, um Dokumente herunterzuladen, die von Finance and Operations-Anwendungen erstellt wurden. Diese HTML-basierte Präsentation des Berichts bietet Benutzern eine nicht paganierte Vorschau des Dokuments.
+Debitoren können die Aktivität **Exportieren** verwenden, die vom eingebetteten SQL Server Reporting Services (SSRS)-ReportViewer-Steuerelement bereitgestellt wird, um Dokumente herunterzuladen, die von Finance and Operations-Anwendungen erstellt werden. Diese HTML-basierte Präsentation des Berichts bietet Benutzern eine nicht paganierte Vorschau des Dokuments.
 
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Die nicht paginierte Natur der HTML-basierten Vorschau-Erfahrung liefert **nicht** Treue zu den physischen Dokumenten, die letztendlich von Finance and Operations produziert werden. Indem PDF vollständig als das Standardformat für Geschäftsdokumente übernommen werden, können Benutzer eine moderne Anzeigefunktionalität mit verbesserter Leistung nutzen, wenn sie Bewerbungsberichte erstellen. |
-| **Ersetzt durch eine andere Funktion?**   | Zukünftig werden PDF-Dokumente das Standardformat für Berichte sein, die von Finance and Operations gerendert werden.   |
+| **Grund für veralteten Zustand/Entfernung** | Die nicht-paganierte Art der HTML-basierten Vorschauerfahrung ist den letztlich von Finance and Operations erstellten physischen Dokumenten **nicht** treu. Indem PDF vollständig als das Standardformat für Geschäftsdokumente übernommen werden, können Benutzer eine moderne Anzeigefunktionalität mit verbesserter Leistung nutzen, wenn sie Bewerbungsberichte erstellen. |
+| **Ersetzt durch eine andere Funktion?**   | Ab jetzt gelten PDF-Dokumente als das Standardformat für Berichte von Finance and Operations.   |
 | **Betroffene Produktbereiche**         | Diese Änderung wirkt sich **nicht** auf die Debitorenszenarien aus, in denen Berichte elektronisch verteilt oder direkt an den Druckern gesendet werden.    |
 | **Bereitstellungsoption**              | Alle  |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden. Die Funktion zur automatischen Vorschau von Bewerbungsberichten mithilfe einer eingebetteten PDF-Anzeige ist für das Plattformupdate im Mai 2019 geplant. |
@@ -271,7 +302,7 @@ Integrierte Key Performance Indicators (KPIs) können in Visual Studio von einem
 | **Ersetzt durch eine andere Funktion?**   | Diese Warnung wird in Zukunft durch einen Kompelierfehler ersetzt. |
 | **Betroffene Produktbereiche**         | Visual Studio-Entwicklungstools |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Veraltet: Die Warnung ist ein Compiler-Fehler in Plattform-Updates für Version 10.0.11 von Finance and Operations-Apps. |
+| **Status**                         | Außer Betrieb genommen: Bei der Warnung handelt es sich um einen Kompilierungsfehler bei Plattform-Updates für Version 10.0.11 von Apps für Finanzen und Betrieb. |
 
 #### <a name="complete-list"></a>Vollständige Liste
 Die vollständige Liste der veralteten APIs finden Sie unter [Veraltete Methoden und Metadatenelemente](deprecation-deletion-apis.md).
@@ -298,7 +329,7 @@ Funktion für das Konfigurieren von .txt und .xml-Datei-Formaten für Meldungen.
 | **Ersetzt durch eine andere Funktion?**   | Ja. |
 | **Betroffene Produktbereiche**         | Hauptbuch |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Ab Finance and Operations 8.1 mit dem Plattform-Update 20 entfernt. |
+| **Status**                         | Entfernt ab Finance and Operations 8.1 mit Plattformupdate 20. |
 
 ### <a name="financial-reports-generator-for-russia"></a>Finanzberichtsgenerator für Russland
 Ein Tool, für die Einrichtung der Datenerfassung für Buchhaltungs- und Steuerberichte und um Daten in XLS- und DOC-Berichtsvorlagen zu exportieren. Funktionale Teile: Exportieren von Daten in XLS- und DOC-Berichtsvorlagen, Abfragen, feste Erfordernisse, werden entfernt. 
@@ -309,7 +340,7 @@ Ein Tool, für die Einrichtung der Datenerfassung für Buchhaltungs- und Steuerb
 | **Ersetzt durch eine andere Funktion?**   | Ja. Finanzberichtseinstellungsbenutzeroberfläche soll zum Einrichten von Datenerfassungsregeln nach Steuerregister Hauptbuchkonten verwendet werden. Datenexpot in verschiedenen Dateitypen, feste Erfordernisse und Abfrage ähnliche Datenerfassungsregeln sollten in der elektronischen Berichterstellung konfiguriert werden. |
 | **Betroffene Produktbereiche**         | Hauptbuch. |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Ab Finance and Operations 8.1 mit dem Plattform-Update 20 entfernt. |
+| **Status**                         | Entfernt ab Finance and Operations 8.1 mit Plattformupdate 20. |
 
 ### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Integration mit externen Anbietern zum Senden der elektronischen Berichterstellung nach Kommunikationswegen für Russland
 Funktion, die Karteien generierte elektronische Meldungen zum Ordner für das weitere Versenden an offizielle Anbieter von elektronischer Berichterstellung exportiert sowie den Status zurück importiert.
@@ -320,7 +351,7 @@ Funktion, die Karteien generierte elektronische Meldungen zum Ordner für das we
 | **Ersetzt durch eine andere Funktion?**   | Ja.  |
 | **Betroffene Produktbereiche**         | Hauptbuch, Steuer |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Ab Finance and Operations 8.1 mit dem Plattform-Update 20 entfernt. |
+| **Status**                         | Entfernt ab Finance and Operations 8.1 mit Plattformupdate 20. |
 
 
 ### <a name="profit-tax-register-wizard"></a>Gewinnsteuerregister-Assistent
@@ -328,17 +359,27 @@ Funktion zum Erstellen von Vorlagen für neue Gewinnsteuerregister. Diese Funkti
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Die Funktion ist nicht mit dem Finance and Operations-Erweiterbarkeitsmodell kompatibel. |
-| **Ersetzt durch eine andere Funktion?**   | Nr. |
-| **Betroffene Produktbereiche**         | Steuerl. Buchung |
+| **Grund für veralteten Zustand/Entfernung** | Funktion ist nicht mit dem Finance and Operations-Erweiterbarkeitsmodell kompatibel. |
+| **Ersetzt durch eine andere Funktion?**   | Nein |
+| **Betroffene Produktbereiche**         | Steuern |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Ab Finance and Operations 8.1 mit dem Plattform-Update 20 entfernt. |
+| **Status**                         | Entfernt ab Finance and Operations 8.1 mit Plattformupdate 20. |
 
+### <a name="payroll-and-human-resources-for-russia"></a>Gehaltsabrechnung und Personalverwaltung für Russland
+Russisches länderspezifisches Modul zur Verwaltung von Personalverwaltungsinformationen, Arbeitszeittabellendetails für Mitarbeiter, Gehaltsabrechnung und Erstellung von Gehaltsabrechnungen. 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Die Personalabrechnung ist nicht im globalen strategischen Fokus des Dynamics 365-Portfolios enthalten. Partner und ISVs sind am besten positioniert, um Gehaltsabrechnungsfunktionen bereitzustellen, die den lokalen Vorschriften und Steueraktualisierungen entsprechen.|
+| **Ersetzt durch eine andere Funktion?**   | Nein|
+| **Betroffene Produktbereiche**         | Verwaltung für russische Gehaltsabrechnung und Personalverwaltung |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet: Zielzeitrahmen für die Entfernung der Funktionalität ist eine der künftigen Aktualisierungen von Version 10.0. |
 
 ## <a name="finance-and-operations-80-with-platform-update-15"></a>Finance and Operations 8.0 mit Plattformupdate 15
 Keine Funktionen sind in dieser Version entfernt oder veraltet worden. Plattformupdate 15 ist kumulativ und enthält neue oder geänderte Funktionen aus Plattformupdate 13, Plattformupdate 14 und Plattformupdate 15.
 
-## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations, Enterprise Edition 7.3 mit Plattform-Update 12
+## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations, Enterprise Edition 7.3 mit Plattformupdate 12
 
 ### <a name="personalized-product-recommendations"></a>Personalisierte Produktempfehlungen 
 Ab 15. Februar 2018 können Einzelhändler nicht mehr personalisierte Produktempfehlungen in einem Verkaufsstelle (POS)- Gerät anzeigen. Weitere Informationen finden Sie unter [Überblick über die Produktempfehlungen](../../../commerce/product-recommendations.md).  
@@ -346,7 +387,7 @@ Ab 15. Februar 2018 können Einzelhändler nicht mehr personalisierte Produktemp
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Wir entfernen die aktuelle Version des Produktempfehlungs-Service, da wir für diese Funktion einen besseren Algorithmus und neuere Einzelhandels-ausgerichtete Funktionen neu entwerfen.  |
-| **Ersetzt durch eine andere Funktion?**   | Nr. Ab Frühling 2018 planen wir, diese Funktion zurückzubringen, um einen neuen Empfehlungs-Service zu nutzen.   |
+| **Ersetzt durch eine andere Funktion?**   | Nein Ab Frühling 2018 planen wir, diese Funktion zurückzubringen, um einen neuen Empfehlungs-Service zu nutzen.   |
 | **Betroffene Produktbereiche**         | Personalisierte Produktempfehlungen in POS.                                                    |
 | **Bereitstellungsoption**              | Alle                                                                                      |
 | **Status**                         |Entfernt ab 15. Februar 2018. Dies betrifft Kunden mit Dynamics 365 for Operations 1611 und höher.  |
@@ -364,7 +405,7 @@ Die Möglichkeit, benutzerdefinierte Funktionen zur Verwendung im ER-Ausdrucks-G
 
 ### <a name="inventory-by-item-group-and-inventory-by-inventory-dimension-aging-reports"></a>Bestand nach Artikelgruppe und Bestand nach Fälligkeitsberichten für Lagerungsdimension
 
-Diese beiden Berichte werden in Finance and Operations nicht mehr unterstützt. Stattdessen kann der Bericht **Bestandsfälligkeit** verwendet werden, um die Benutzerfreundlichkeit zu verbessern.
+Diese beiden Berichte werden nicht mehr in Finance and Operations unterstützt. Stattdessen kann der Bericht **Bestandsfälligkeit** verwendet werden, um die Benutzerfreundlichkeit zu verbessern.
 
 | &nbsp;  | &nbsp; |
 |--------------|-----------------------|
@@ -375,7 +416,7 @@ Diese beiden Berichte werden in Finance and Operations nicht mehr unterstützt. 
 | **Status**                       | Veraltet: Die Menüoptionen für die beiden Berichte sind in Version 7.3 entfernt worden. Allerdings bleibt der Code für die Berichte im Produkt bestehen. Es ist geplant, den Code in einer zukünftigen Version zu entfernen. |
 
 ### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI-Inhaltspakete verfügbar für AppSource
-Die Inhaltspakete **Kostenverwaltung**, **Finanzleistung** und **Retail Channel Performance**, die auf der [Microsoft AppSource](https://appsource.microsoft.com)-Site verfügbar sind, sind infolge von Produktupdates in Microsoft Power BI veraltet. Systemadministrationsformen, die zur Bereitstellung dieser Inhaltspakete auf PowerBI.com verwendet werden, werden ebenfalls in Finance and Operations veraltet.
+Die Inhaltspakete **Kostenverwaltung**, **Finanzleistung** und **Retail Channel Performance**, die auf der [Microsoft AppSource](https://appsource.microsoft.com)-Site verfügbar sind, sind infolge von Produktupdates in Microsoft Power BI veraltet. Die Systemverwaltungsformulare, die verwendet werden, um diese Inhaltspakete in PowerBI.com bereitzustellen, werden auch in Finance and Operations veraltet.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -414,7 +455,7 @@ Diese Steuern sind in der indischen GST klassifiziert worden.
 |              &nbsp;                               |      &nbsp;                                                                   |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Grund für Entfernung oder veralteten Zustand**       | Fehlender Einsatz durch die Kunden.                                                  |
-| **Ersetzt durch eine andere Funktion?**            | Nr.                                                                      |
+| **Ersetzt durch eine andere Funktion?**            | Nein                                                                      |
 | **Betroffene Produktbereiche**                  | Indische Quellensteuer                                                  |
 | **Bereitstellungsoption**                       | Alle Module                                                                    |
 | **Status**                                  | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.   |        
@@ -426,7 +467,7 @@ Benutzer können dies vom Behördenportal herunterladen.
 |             &nbsp;                                |    &nbsp;                                                                     |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Grund für Entfernung oder veralteten Zustand**       | Fehlender Einsatz durch die Kunden.                                                  |
-| **Ersetzt durch eine andere Funktion?**            | Nr.                                                                      |
+| **Ersetzt durch eine andere Funktion?**            | Nein                                                                      |
 | **Betroffene Produktbereiche**                  | Indische Quellensteuer                                                  |
 | **Bereitstellungsoption**                       | Alle Module                                                                   |
 | **Status**                                  | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.     |    
@@ -437,7 +478,7 @@ Benutzer können dies vom Behördenportal herunterladen.
 |              &nbsp;                               |        &nbsp;                                                                 |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Grund für Entfernung oder veralteten Zustand**       | Fehlender Einsatz durch die Kunden.                                                  |
-| **Ersetzt durch eine andere Funktion?**            | Nr.                                                                      |
+| **Ersetzt durch eine andere Funktion?**            | Nein                                                                      |
 | **Betroffene Produktbereiche**                  | Importieren und Exportieren                                                       |
 | **Bereitstellungsoption**                       | Alle Module                                                                    |
 | **Status**                                  | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.  |    
@@ -451,13 +492,13 @@ Ab 15. Februar 2018 können Einzelhändler nicht mehr personalisierte Produktemp
 |  &nbsp; |  &nbsp;|
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Wir entfernen die aktuelle Version des Produktempfehlungs-Service, da wir für diese Funktion einen besseren Algorithmus und neuere Einzelhandels-ausgerichtete Funktionen neu entwerfen.  |
-| **Ersetzt durch eine andere Funktion?**   | Nr. Ab Frühling 2018 planen wir, diese Funktion zurückzubringen, um einen neuen Empfehlungs-Service zu nutzen.   |
+| **Ersetzt durch eine andere Funktion?**   | Nein Ab Frühling 2018 planen wir, diese Funktion zurückzubringen, um einen neuen Empfehlungs-Service zu nutzen.   |
 | **Betroffene Produktbereiche**         | Personalisierte Produktempfehlungen in POS.                                                    |
 | **Bereitstellungsoption**              | Alle                                                                                      |
 | **Status**                         |Entfernt ab 15. Februar 2018. Dies betrifft Kunden mit Dynamics 365 for Retail 7.2 und höher. |
 
 
-## <a name="finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Finance and Operations, Enterprise Edition Juli 2017 mit Plattform-Update 8
+## <a name="finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Finance and Operations, Enterprise Edition Juli 2017 mit Plattformupdate 8
 
 ### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a>Währungskonvertierung für Buchhaltungs- und Berichtswährungen
 
@@ -473,12 +514,12 @@ Die Währungskonvertierung für Buchhaltungs- und Berichtswährungen wurde mit d
 
 ### <a name="warehouse-mobile-devices-portal"></a>Portal für mobile Geräte für das Lager
 
-Portal für mobile Geräte für das Lager (Warehouse Mobile Devices Portal – WMDP) war eine eigenständige Komponente, die für lokale Selbstbereitstellung vorgesehen war. Diese Komponente wird in Finance and Operations nicht mehr unterstützt. Eine systemeigener App, die die Benutzererfahrung verbessert, hat die Funktionalität von WMDP ersetzt.
+Portal für mobile Geräte für das Lager (Warehouse Mobile Devices Portal – WMDP) war eine eigenständige Komponente, die für lokale Selbstbereitstellung vorgesehen war. Diese Komponente wird nicht mehr in Finance and Operations unterstützt. Eine systemeigener App, die die Benutzererfahrung verbessert, hat die Funktionalität von WMDP ersetzt.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Doppelte Funktionen.       |
-| **Ersetzt durch eine andere Funktion?**   | Ja. Diese Funktion wurde durch Finance and Operations - Warehousing ersetzt. Weitere Informationen zu Einstellungen und Voraussetzungen finden Sie unter [Installieren und Konfigurieren der Warehousing-App – Übersicht](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
+| **Ersetzt durch eine andere Funktion?**   | Ja. Diese Funktion wurde von Finance and Operations - Warehousing ersetzt. Weitere Informationen zu Einstellungen und Voraussetzungen finden Sie unter [Installieren und Konfigurieren der Warehousing-App – Übersicht](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Betroffene Produktbereiche**         | Lagerortverwaltung und Transportverwaltung     |
 | **Bereitstellungsoption**              | Portal für mobile Geräte für das Lager (Warehouse Mobile Devices Portal – WMDP) war eine eigenständige Komponente, die für lokale Selbstbereitstellung vorgesehen war.               |
 | **Status**                         | Veraltet: Zielzeitrahmen für das Entfernen der Funktion ist Q4 2019.   |
@@ -490,7 +531,7 @@ Eine Abgleichsregel, die verwendet wurde, um ein Bankdokument beim manuellen Abg
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Begrenzte Verwendung.                                                                         |
-| **Ersetzt durch eine andere Funktion?**   | Nr. Funktionen zur Spaltenfilterung sollten verwendet werden, um nach Dokumente für die Abstimmung zu suchen. |
+| **Ersetzt durch eine andere Funktion?**   | Nein Funktionen zur Spaltenfilterung sollten verwendet werden, um nach Dokumente für die Abstimmung zu suchen. |
 | **Betroffene Produktbereiche**         | Bargeld- und Bankverwaltung                                                               |
 | **Bereitstellungsoption**              | Alle                                                                                    |
 | **Status**                         | Entfernt ab Juli 2017.                                                               |
@@ -537,7 +578,7 @@ Dieses Tool wird verwendet, wenn ein Kontenplan in Spanien größere Änderungen
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Begrenzte Verwendung                                                  |
-| **Ersetzt durch eine andere Funktion?**   | Nr.                                                             |
+| **Ersetzt durch eine andere Funktion?**   | Nein                                                             |
 | **Betroffene Produktbereiche**         | Hauptbuch                                                 |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden. |
 
@@ -581,7 +622,7 @@ EDIVAT ist ein veralteter belgischer Standard für elektronische Meldungen über
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die Funktionalität wird nicht mehr verwendet.                           |
-| **Ersetzt durch eine andere Funktion?**   | Nr.                                                             |
+| **Ersetzt durch eine andere Funktion?**   | Nein                                                             |
 | **Betroffene Produktbereiche**         | Hauptbuch                                                 |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden. |
 
@@ -614,7 +655,7 @@ Ein Tool, um die Datenerfassung für die Berechnung und die Steuererklärungen e
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Begrenzte Verwendung                                                                            |
-| **Ersetzt durch eine andere Funktion?**   | Nr. Das Tool wird durch die elektronische Berichterstellungskonfigurationen in künftigen Versionen ersetzt. |
+| **Ersetzt durch eine andere Funktion?**   | Nein Das Tool wird durch die elektronische Berichterstellungskonfigurationen in künftigen Versionen ersetzt. |
 | **Betroffene Produktbereiche**         | Hauptbuch                                                                           |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.                           |
 
@@ -647,7 +688,7 @@ Isabel ist das Framework für Electronic Banking in Europa und kein tatsächlich
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Integration mit Isabel-Kunden ist eingestellt.   |
-| **Ersetzt durch eine andere Funktion?**   | Nr. Die Zahlungsformate, die nicht mehr verwendet werden, werden durch Transferzahlungsformat des Kredits ISO20022 für Belgien ersetzt. |
+| **Ersetzt durch eine andere Funktion?**   | Nein Die Zahlungsformate, die nicht mehr verwendet werden, werden durch Transferzahlungsformat des Kredits ISO20022 für Belgien ersetzt. |
 | **Betroffene Produktbereiche**         | Kreditorenkonten     |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.    |
 
@@ -658,7 +699,7 @@ Diese Funktion wurde für Änderungen im Kontenplan und bei den Buchhaltungsvors
 |  &nbsp; |&nbsp;  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Begrenzte Verwendung                                                  |
-| **Ersetzt durch eine andere Funktion?**   | Nr.                                                             |
+| **Ersetzt durch eine andere Funktion?**   | Nein                                                             |
 | **Betroffene Produktbereiche**         | Hauptbuch                                                 |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden. |
 
@@ -724,7 +765,7 @@ Leistungsverwaltung enthält Zielverwaltung und Integration mit Leistungsbeurtei
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Leistungsverwaltung wurde neu gestaltet und die Anzahl von Zielseiten wurde verringert, um den Prozess zu vereinfachen.                 |
-| **Ersetzt durch eine andere Funktion?**   | Nr. Ziele sind für Manager über das Manager-Self-Service-Portal sichtbar und können vom Manager angezeigt und geändert werden. |
+| **Ersetzt durch eine andere Funktion?**   | Nein Ziele sind für Manager über das Manager-Self-Service-Portal sichtbar und können vom Manager angezeigt und geändert werden. |
 | **Betroffene Produktbereiche**         | Human Capital Management       |
 | **Status**                         | Entfernt ab Dynamics 365 for Operations Version 1611.    |
 
@@ -746,7 +787,7 @@ RFID (Radiofrequenz-Identifikation) ist eine Technologie zum Sammeln von Daten. 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Geringe Kundennutzung und ein begrenzter Funktionsumfang.   |
-| **Ersetzt durch eine andere Funktion?**   | Nr.                                              |
+| **Ersetzt durch eine andere Funktion?**   | Nein                                              |
 | **Betroffene Produktbereiche**         | Lagerverwaltung                            |
 | **Status**                         | Entfernt ab Dynamics 365 for Operations 1611. |
 
@@ -757,7 +798,7 @@ Lettische Gesetzgebung schafft bestimmte Regeln dazu, wie Verkaufsrechnungen num
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die Bundeslandrechnungsnummerierung muss nicht mehr verwaltet werden. Der Bericht zu verwendeten Rechnungsnummern wird nicht mehr benötigt. |
-| **Ersetzt durch eine andere Funktion?**   | Nr.       |
+| **Ersetzt durch eine andere Funktion?**   | Nein       |
 | **Betroffene Produktbereiche**         | Debitoren    |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.  |
 
@@ -819,7 +860,7 @@ Personalverwaltung-Lohndaten
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Geringe Verwendung                                                           |
-| **Ersetzt durch eine andere Funktion?**   | Nr.                                                                  |
+| **Ersetzt durch eine andere Funktion?**   | Nein                                                                  |
 | **Betroffene Produktbereiche**         | Personalverwaltung                                                     |
 | **Status**                         | Entfernt ab Dynamics 365 for Operations Version 1611 |
 
@@ -829,7 +870,7 @@ Ein Workflow für das Verwalten der Erstellung der Mitarbeiterziele ist einer vo
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Die Leistungsverwaltung wurde in Finance and Operations komplett überarbeitet.     |
+| **Grund für veralteten Zustand/Entfernung** | Die Leistungsverwaltung wurde in Finance and Operations vollständig neu gestaltet.     |
 | **Ersetzt durch eine andere Funktion?**   | Die neu entworfene Leistungsverwaltungsfunktion gibt mehr Kontrolle über den Inhalt der Ziele, die Messungen, die verwendet werden, um den Fortschritt zu verfolgen, und die Zuordnung der Begleitunterlagen. Ziele können als Vorlagen gespeichert werden und anschließend wieder verwendet werden. Diese Funktion kann Ihnen helfen, zusätzliche Ziele für Ihre Mitarbeiter schneller einzurichten. |
 | **Betroffene Produktbereiche**         | Human Capital Management                 |
 | **Status**                         | Entfernt ab Dynamics 365 for Operations Version 1611. |
@@ -842,7 +883,7 @@ Ein Workflow für das Verwalten der Erstellung der Mitarbeiterziele ist einer vo
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Leistungsverbesserung        |
-| **Ersetzt durch eine andere Funktion?**   | Nr.                             |
+| **Ersetzt durch eine andere Funktion?**   | Nein                             |
 | **Betroffene Produktbereiche**         | Kreditorenkonten               |
 | **Status**                         | Entfernt ab Dynamics AX 7.0. |
 
@@ -875,7 +916,7 @@ Wurde der **Stücklistenversionen**-Konfigurationsschlüssel deaktiviert, so wur
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Verwenden eines Konfigurationsschlüssels, um die Skalierung von Stücklistenversionen in einer Cloudumgebung zu verhindern. |
-| **Ersetzt durch eine andere Funktion?**   | Nr.                                                                                      |
+| **Ersetzt durch eine andere Funktion?**   | Nein                                                                                      |
 | **Betroffene Produktbereiche**         | Produktinformationsverwaltung, Lagerverwaltung                                    |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.                                                          |
 
@@ -886,7 +927,7 @@ Bestimmte Zahlungsmethode für brasilianische Unternehmen
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Unterstützung für die brasilianische Bordero-Zahlungsmethode wurde in der brasilianischen Version eingestellt. |
-| **Ersetzt durch eine andere Funktion?**   | Nr.   |
+| **Ersetzt durch eine andere Funktion?**   | Nein   |
 | **Betroffene Produktbereiche**         | Kreditorenkonten   |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden. |
 
@@ -897,7 +938,7 @@ Bundessteuerauszug für ICMS-Steuer
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Dieser Auszug gilt nicht mehr für einige brasilianische Bundesländer. |
-| **Ersetzt durch eine andere Funktion?**   | Nr. Benutzer können das generische elektronische Berichtstool verwenden, um sofern erforderlich den Auszug für bestimmten Situationen zu konfigurieren. |
+| **Ersetzt durch eine andere Funktion?**   | Nein Benutzer können das generische elektronische Berichtstool verwenden, um sofern erforderlich den Auszug für bestimmten Situationen zu konfigurieren. |
 | **Betroffene Produktbereiche**         | Steuerbücher    |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.   |
 
@@ -908,7 +949,7 @@ Bundessteuerauszug für ICMS-Steuer
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Diese Notfallmethode gilt nicht mehr in allen brasilianischen Bundesländern |
-| **Ersetzt durch eine andere Funktion?**   | Nr.                                                                          |
+| **Ersetzt durch eine andere Funktion?**   | Nein                                                                          |
 | **Betroffene Produktbereiche**         | Debitoren                                                         |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.              |
 
@@ -919,7 +960,7 @@ Diese mobile Anwendung ermöglicht dem Benutzer die Prüfung von wichtigen Gesch
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die Funktion wurde durch eine andere Funktion ersetzt.   |
-| **Ersetzt durch eine andere Funktion?**   | Das Inhaltspaket "Finanzielle Leistung überwachen" für Microsoft Power BI umfasst entscheidende Finanzmetriken, die zuvor im Business Analyzer verfügbar waren. |
+| **Ersetzt durch eine andere Funktion?**   | Das Inhaltspaket „Finanzielle Leistung überwachen“ für Microsoft Power BI umfasst entscheidende Finanzmetriken, die zuvor im Business Analyzer verfügbar waren. |
 | **Betroffene Produktbereiche**         | Hauptbuch      |
 | **Status**                         | Veraltet: Die Verwendung des Business Analyzer wurde veraltet.    |
 
@@ -959,7 +1000,7 @@ Das Compliance Center war eine Enterprise Portal-Website für die Verwaltung der
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Fehlender Einsatz durch die Kunden. Microsoft SharePoint umfasst die gleichen Funktionen, die im Compliance Center verfügbar waren. |
-| **Ersetzt durch eine andere Funktion?**   | Nr.   |
+| **Ersetzt durch eine andere Funktion?**   | Nein   |
 | **Betroffene Produktbereiche**         | Konformität und interne Kontrollen  |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.    |
 
@@ -970,7 +1011,7 @@ Dieses Tool wurde verwendet, um Schlüsseldaten aus Microsoft Dynamics CRM in Dy
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die Funktion wurde durch eine andere Funktion ersetzt. |
-| **Ersetzt durch eine andere Funktion?**   | Common Data Service                                      |
+| **Ersetzt durch eine andere Funktion?**   | Dataverse                                      |
 | **Betroffene Produktbereiche**         | Connector für Dynamics                         |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.                           |
 
@@ -988,7 +1029,7 @@ Dieses Tool wurde verwendet, um Schlüsseldaten aus Microsoft Dynamics CRM in Dy
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Cue-Gruppen wurden verwendet, um eine oder mehrere Cues im Infoboxbereich anzuzeigen. Der Nutzen war beschränkt. Es gab außerdem Leistungsbedenken, da eine Datensatzändern in einem übergeordneten Formular eine Abfrage pro Cue aus der Cue-Gruppe verursacht hat. |
-| **Ersetzt durch eine andere Funktion?**   | Nr.      |
+| **Ersetzt durch eine andere Funktion?**   | Nein      |
 | **Betroffene Produktbereiche**         | Alle Module    |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.  |
 
@@ -1006,7 +1047,7 @@ Dieses Tool wurde verwendet, um Schlüsseldaten aus Microsoft Dynamics CRM in Dy
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die Unterstützung für das dänische Scheckformatlayout ist eingestellt wurden, und der Bericht ist aus der DK-Lokalisierung entfernt worden. |
-| **Ersetzt durch eine andere Funktion?**   | Nr.    |
+| **Ersetzt durch eine andere Funktion?**   | Nein    |
 | **Betroffene Produktbereiche**         | Alle Module    |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.  |
 
@@ -1016,8 +1057,8 @@ Datenpartitionen enthalten eine logische Trennung von Daten in der Dynamics AX-D
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Datenpartitionen wurden in Dynamics AX 2012 R2 eingeführt, um Datenisolation zu ermöglichen. In einem häufigen Szenario verfügt ein Unternehmen über Tochtergesellschaften und die Daten einer Tochtergesellschaft sollen einer anderen nicht angezeigt werden, obwohl beide Tochterunternehmen von derselben IT-Abteilung verwaltet werden. Zusätzliche Skripts und Verwaltungsaufwand im gesamten Programm sind jedoch erforderlich, um neue Partitionen zu erstellen und mit Daten zu füllen und Partitionsdaten sichern. In der Cloud, in der wir über Platform-as-a-Service (PaaS)-Datenbankdienste (Microsoft Azure SQL-Datenbank) verfügen, ist es sehr viel effizienter, eine Datenbank als Isolationscontainer zu verwenden, als Isolationen im Programm durchzuführen. Unabhängig davon, ob eine Datenpartitionierung für Tochterunternehmen, für mehrere Mandanten oder nur aus Gründen der Skalierung erforderlich ist, glauben wir, dass die Szenarien durch mehrere Instanzen von Finance and Operations besser gehandhabt werden können. |
-| **Ersetzt durch eine andere Funktion?**   | Kunden, die Datenpartitionen verwenden, müssen mehrere Instanzen von Finance and Operations verwenden, wenn die Trennung auf Datenbankebene ein kritisches Problem darstellt.    |
+| **Grund für veralteten Zustand/Entfernung** | Datenpartitionen wurden in Dynamics AX 2012 R2 eingeführt, um Datenisolation zu ermöglichen. In einem häufigen Szenario verfügt ein Unternehmen über Tochtergesellschaften und die Daten einer Tochtergesellschaft sollen einer anderen nicht angezeigt werden, obwohl beide Tochterunternehmen von derselben IT-Abteilung verwaltet werden. Zusätzliche Skripts und Verwaltungsaufwand im gesamten Programm sind jedoch erforderlich, um neue Partitionen zu erstellen und mit Daten zu füllen und Partitionsdaten sichern. In der Cloud, in der wir über Platform-as-a-Service (PaaS)-Datenbankdienste (Microsoft Azure SQL-Datenbank) verfügen, ist es sehr viel effizienter, eine Datenbank als Isolationscontainer zu verwenden, als Isolationen im Programm durchzuführen. Egal, ob eine Datenpartitionierung für Tochterunternehmen, mehrere Mandanten oder nur zur Skalierung benötigt wird, glauben wir, dass die Szenarien besser über mehrere Datenbanken oder mehrere Instanzen von Finance and Operations behandelt werden können. |
+| **Ersetzt durch eine andere Funktion?**   | Debitoren, die Datenpartitionen verwenden, müssen mehrere Instanzen von Finance and Operations verwenden, wenn die Datenbankebenentrennung ein kritisches Problem ist.    |
 | **Betroffene Produktbereiche**         | Alle Module  |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.  |
 
@@ -1028,7 +1069,7 @@ Dynamics AX 2012 erlaubte die Speicherung von Anhängen in der Datenbank und in 
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Der Dateifreigabespeicher wird nicht mehr unterstützt, weil in der Cloud gehostete Umgebungen nicht mit lokalen Dateifreigaben kommunizieren können. Der Datenbankspeicher wurde zugunsten von Azure Blob-Speicher eingestellt. Azure Blob-Speicher ist äquivalent zur Speicherung in der Datenbank, weil der Zugriff auf Dokumente nur über Client-Formulare von Finance and Operations möglich ist. Auf diese Weise entsteht der zusätzliche Vorteil, dass Speicher bereitgestellt wird, der sich nicht negativ auf die Leistung der Datenbank auswirkt. Blob-Speicher ist der Standardspeichermechanismus für die Dokumentenverwaltung und funktioniert unmittelbar. |
+| **Grund für veralteten Zustand/Entfernung** | Der Dateifreigabespeicher wird nicht mehr unterstützt, weil in der Cloud gehostete Umgebungen nicht mit lokalen Dateifreigaben kommunizieren können. Der Datenbankspeicher wurde zugunsten von Azure Blob-Speicher eingestellt. Azure Blob-Speicher ist äquivalent zur Speicherung in der Datenbank, weil der Zugriff auf Dokumente nur über Finance and Operations-Client-Formulare möglich ist. Auf diese Weise entsteht der zusätzliche Vorteil, dass Speicher bereitgestellt wird, der sich nicht negativ auf die Leistung der Datenbank auswirkt. Blob-Speicher ist der Standardspeichermechanismus für die Dokumentenverwaltung und funktioniert unmittelbar. |
 | **Ersetzt durch eine andere Funktion?**   | Der Datenbankspeicher wurde zugunsten von Azure Blob-Speicher eingestellt.   |
 | **Betroffene Produktbereiche**         | Alle Module  |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.   |
@@ -1038,7 +1079,7 @@ Dynamics AX 2012 erlaubte die Speicherung von Anhängen in der Datenbank und in 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Kein Verwendung der Funktionen gefunden. |
-| **Ersetzt durch eine andere Funktion?**   | Nr.                                     |
+| **Ersetzt durch eine andere Funktion?**   | Nein                                     |
 | **Betroffene Produktbereiche**         | Zeit und Anwesenheit                    |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.         |
 
@@ -1057,8 +1098,8 @@ In Dynamics AX 2012 R3 konnte sich Retail Modern POS direkt mit der Kanal-DB ver
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Direkte Datenbankkonnektivität erforderte ein geringeres Sicherheitsprotokolle und wurde hauptsächlich verwendet, um den höchsten Leistungsstandard zu erreichen. Aufgrund der Leistungs- und Sicherheitsverbesserungen, die bei Finance and Operations aufgetreten sind, verursacht diese Funktionalität jetzt mehr Probleme, als sie löst. |
-| **Ersetzt durch eine andere Funktion?**   | Nr. Nur Standard Retail Server Kommunikation wird nun unterstützt.  |
+| **Grund für veralteten Zustand/Entfernung** | Direkte Datenbankkonnektivität erforderte ein geringeres Sicherheitsprotokolle und wurde hauptsächlich verwendet, um den höchsten Leistungsstandard zu erreichen. Aufgrund der Leistung und der Sicherheitserweiterungen, die in Finance and Operations aufgetreten sind, führen diese Funktionen nun zu mehr Problemen, als sie lösen. |
+| **Ersetzt durch eine andere Funktion?**   | Nein Nur Standard Retail Server Kommunikation wird nun unterstützt.  |
 | **Betroffene Produktbereiche**         | Kanal-DB/Retail Modern POS   |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.  |
 
@@ -1096,7 +1137,7 @@ Diese Funktionen stellten die eXtensible Business Reporting Language (XBRL)-Ausg
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Geringe Kundennutzung und ein begrenzter Funktionsumfang.  |
-| **Ersetzt durch eine andere Funktion?**   | Nr.              |
+| **Ersetzt durch eine andere Funktion?**   | Nein              |
 | **Betroffene Produktbereiche**         | Konformität und interne Kontrollen, Kreditorenkonten  |
 | **Status**                         | Entfernt ab Dynamics AX 7.0. |
 
@@ -1152,7 +1193,7 @@ Testtransaktionsgenerierung kann nicht mithilfe einer Charge verwendet werden. S
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Das XML-Format für EU-Umsatzliste für Deutschland wird nicht mehr unterstützt. Nur das Format der Textdatei ELMA5 kann verwendet werden, um den Bericht zur EU-Umsatzliste der deutschen Steuerbehörde zu senden. |
-| **Ersetzt durch eine andere Funktion?**   | Nr.         |
+| **Ersetzt durch eine andere Funktion?**   | Nein         |
 | **Betroffene Produktbereiche**         | MwSt.        |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.   |
 
@@ -1205,7 +1246,7 @@ Diese Funktion aktivierte die Generierung der mexikanischen elektronischen Rechn
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die Methode ist nicht mehr verfügbar. Die Generierung elektronischer Rechnungen über die CFD-Methode wurde von den Steuerbehörden als veraltet definiert und durch die Comprobante Fiscal Digital a través de Internet (CFDI)-Methode ersetzt, bei der die Signierung an einen Drittanbieter (PAC) delegiert wird. Der monatliche Bericht ist entfernt wurden. Eine Abfragemöglichkeit ermöglicht Benutzern die Abfrage von historischen Transaktionen. |
-| **Ersetzt durch eine andere Funktion?**   | Nr.    |
+| **Ersetzt durch eine andere Funktion?**   | Nein    |
 | **Betroffene Produktbereiche**         | Debitoren, Projekt   |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden. |
 
@@ -1237,7 +1278,7 @@ Die Bestands- und Lagerorterfassungen unterstützen nicht mehr die Möglichkeit,
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Kein Verwendung der Funktionen gefunden. |
-| **Ersetzt durch eine andere Funktion?**   | Nr.                                     |
+| **Ersetzt durch eine andere Funktion?**   | Nein                                     |
 | **Betroffene Produktbereiche**         | Lagerverwaltung                   |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.         |
 
@@ -1270,7 +1311,7 @@ Mit dieser Funktion können Sie den Namen einer der drei Standardproduktdimensio
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die aktuelle Version von Dynamics AX unterstützt keine Beschriftungsänderungen zur Laufzeit. |
-| **Ersetzt durch eine andere Funktion?**   | Nr.                                                                            |
+| **Ersetzt durch eine andere Funktion?**   | Nein                                                                            |
 | **Betroffene Produktbereiche**         | Produktinformationsverwaltung                                                |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.                                                |
 
@@ -1281,7 +1322,7 @@ In Dynamics AX 2012 R3 konnte der Retail Server mithilfe der HTTP-Kommunikation 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Aufgrund der neuen Sicherheitsanforderungen wird nur noch die gesicherte Kommunikation mit TLS 1.2 (oder höher, wenn verfügbar) unterstützt. Der Self-Service-Installer konfiguriert automatisch den Computer für die Kommunikation. |
-| **Ersetzt durch eine andere Funktion?**   | Nr. Nur Standard HTTPS-Kommunikation wird nun unterstützt. |
+| **Ersetzt durch eine andere Funktion?**   | Nein Nur Standard HTTPS-Kommunikation wird nun unterstützt. |
 | **Betroffene Produktbereiche**         | Retail Server  |
 | **Status**                         | Entfernt ab Dynamics AX 7.0. |
 
@@ -1299,7 +1340,7 @@ In Dynamics AX 2012 R3 konnte der Retail Server mithilfe der HTTP-Kommunikation 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Geringe Kundennutzung und ein begrenzter Funktionsumfang. |
-| **Ersetzt durch eine andere Funktion?**   | Nr.                                           |
+| **Ersetzt durch eine andere Funktion?**   | Nein                                           |
 | **Betroffene Produktbereiche**         | US-Mehrwertsteuer                                 |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.               |
 
@@ -1310,7 +1351,7 @@ Sites Services lassen Sie Websites erstellen, die Ihre Geschäftsprozesse mit de
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die Microsoft Azure-Infrastruktur, die von Dynamics AX verwendet wird, hat neue Funktionen, die stattdessen verwendet werden können (beispielsweise Azure-Sites). |
-| **Ersetzt durch eine andere Funktion?**   | Nr.   |
+| **Ersetzt durch eine andere Funktion?**   | Nein   |
 | **Betroffene Produktbereiche**         | Personalverwaltungs-Pesonalbeschaffung, Anfragenverwaltung, Angebotsanforderungen, Kreditorenerfassung, kooperative Arbeitsbereiche für Verkaufschancen und Kampagnen  |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.    |
 
@@ -1335,7 +1376,7 @@ Sites Services lassen Sie Websites erstellen, die Ihre Geschäftsprozesse mit de
 
 ### <a name="virtual-company-accounts"></a>Virtuelle Unternehmenskonten
 
-Die virtuelle Unternehmensfunktion wird nicht mehr in Dynamics AX unterstützt. Die virtuelle Unternehmensfunktion ermöglicht es Benutzern, Tabellen einzurichten, die für eine Gruppe von Unternehmen freigegeben werden könnten. Eine Beschreibung der Funktion finden Sie unter [Unternehmenskonten und virtuelle Unternehmenskonten](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx). Die Funktion arbeitet, indem sie Tabellen in Sammlungen gruppiert die virtuellen Unternehmen zugewiesen werden (Gruppen von "tatsächlichen" Unternehmen). Abfragen werden erstellt, sodass alle Unternehmen im virtuellen Unternehmen auf die Daten in Tabellen der zugeordneten Tabellensammlungen zugreifen können.
+Die virtuelle Unternehmensfunktion wird nicht mehr in Dynamics AX unterstützt. Die virtuelle Unternehmensfunktion ermöglicht es Benutzern, Tabellen einzurichten, die für eine Gruppe von Unternehmen freigegeben werden könnten. Eine Beschreibung der Funktion finden Sie unter [Unternehmenskonten und virtuelle Unternehmenskonten](../../fin-ops/get-started/ax4-content-retired.md). Die Funktion arbeitet, indem sie Tabellen in Sammlungen gruppiert die virtuellen Unternehmen zugewiesen werden (Gruppen von "tatsächlichen" Unternehmen). Abfragen werden erstellt, sodass alle Unternehmen im virtuellen Unternehmen auf die Daten in Tabellen der zugeordneten Tabellensammlungen zugreifen können.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -1351,7 +1392,7 @@ Die bereitgestellte Funktionen der Windows 8-Tablet-App für Speseneintrag und G
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Finance and Operations ist mit Tablets kompatibel. Die Tablet-App wird nicht mehr benötigt.    |
-| **Ersetzt durch eine andere Funktion?**   | Nr.          |
+| **Ersetzt durch eine andere Funktion?**   | Nein          |
 | **Betroffene Produktbereiche**         | Spesenverwaltung   |
 | **Status**                         | Entfernt: Diese Funktionalität ist nur für Dynamics AX 2012 R3 verfügbar. |
 
@@ -1373,3 +1414,6 @@ Die bereitgestellte Funktionen der Windows 8-Tablet-App für Speseneintrag und G
 |     <strong>Betroffene Produktbereiche</strong>     |                                              Hauptbuch                                              |
 |             <strong>Status</strong>             |                                      Entfernt ab Dynamics AX 2012                                      |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

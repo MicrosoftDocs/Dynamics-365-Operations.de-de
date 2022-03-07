@@ -1,37 +1,39 @@
 ---
 title: Integration mit Finance konfigurieren
-description: Dieser Artikel beschreibt die Funktionen, die für die Integration von Dynamics 365 Human Resources und Dynamics 365 Finance verfügbar sind.
-author: andreabichsel
-manager: AnnBe
-ms.date: 03/26/2020
+description: Dieses Thema beschreibt die Integration zwischen Dynamics 365 Human Resources und Dynamics 365 Finance.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3b4d6369ab567879e23e1f132265aaff45c8ce47
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 0a2c5dd0ce97f33f5f8b65c801fbc15dfc65e8d4
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527913"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065015"
 ---
 # <a name="configure-integration-with-finance"></a>Integration mit Finance konfigurieren
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Um Dynamics 365 Human Resources in Dynamics 365 Finance zu integrieren, können Sie die Vorlage „Human Resources to Finance“ in [Datenintegrator](https://docs.microsoft.com/powerapps/administrator/data-integrator) verwenden. Die Vorlage „Human Resources to Finance“ ermöglicht den Datenfluss für Jobs, Positionen und Mitarbeiter. Die Vorlage ermöglicht den Datenfluss von der Personalabteilung in die Finanzabteilung, jedoch nicht den Datenfluss von der Finanzabteilung in die Personalabteilung.
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
-![Human Resources nach Finance – Integrationsfluss](./media/hr-admin-integration-finance-flow.png)
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+
+
+Um Dynamics 365 Human Resources in Dynamics 365 Finance zu integrieren, können Sie die Vorlage „Human Resources to Finance“ in [Datenintegrator](/powerapps/administrator/data-integrator) verwenden. Die Vorlage „Human Resources to Finance“ ermöglicht den Datenfluss für Jobs, Positionen und Mitarbeiter. Die Vorlage ermöglicht den Datenfluss von der Personalabteilung in die Finanzabteilung, jedoch nicht den Datenfluss von der Finanzabteilung in die Personalabteilung.
+
+![Human Resources nach Finance – Integrationsfluss.](./media/hr-admin-integration-finance-flow.png)
 
 Die Human Resources zu Finance-Lösung bietet die folgenden Arten der Datensynchronisierung:
 
@@ -44,7 +46,7 @@ Die Human Resources zu Finance-Lösung bietet die folgenden Arten der Datensynch
 
 Die Integrationslösung erfordert die folgenden Versionen von Human Resources und Finance: 
 
-- Dynamics 365 Human Resources am Common Data Service
+- Dynamics 365 Human Resources am Dataverse
 - Dynamics 365 Finance Version 7.2 und höher
 
 ## <a name="template-and-tasks"></a>Vorlage und Aufgaben
@@ -55,7 +57,7 @@ So greifen Sie auf die Vorlage Human Resources to Finance zu.
 
 2. Wählen Sie **Projekte** und dann **Neues Projekt** in der oberen rechten Ecke aus. Erstellen Sie für jede juristische Person, die Sie in Finance integrieren möchten, ein neues Projekt.
 
-3. Wählen Sie **Personalverwaltung (Human Resources Common Data Service to Finance)**, um Datensätze von Human Resources nach Finance zu synchronisieren.
+3. Wählen Sie **Personalverwaltung (Human Resources Dataverse to Finance)**, um Datensätze von Human Resources nach Finance zu synchronisieren.
 
 Die folgenden zugrunde liegenden Aufgaben werden verwendet, um Datensätze von Human Resources nach Finance zu synchronisieren:
 
@@ -81,14 +83,14 @@ In den folgenden Vorlagenzuordnungstabellen enthält der Name der Aufgabe die in
 
 ### <a name="job-functions-to-compensation-job-function"></a>Job-Funktionen zu Vergütung (Stellenfunktion)
 
-| Common Data Service-Entität (Quelle) | Finance-Entität (Ziel) |
+| Dataverse-Tabelle (Quelle) | Finance-Entität (Ziel) |
 |-------------------------------------|---------------------------------------------|
 | cdm_name (cdm_Job Funktionsname)  | JOBFUNCTIONID   (JOBFUNCTIONID)            |
 | cdm_description   (cdm_description) | BESCHREIBUNG   (BESCHREIBUNG)                 |
 
 ### <a name="departments-to-operating-unit"></a>Abteilungen zu Organisationseinheit
 
-| Common Data Service-Entität (Quelle)           | Finance-Entität (Ziel) |
+| Dataverse-Tabelle (Quelle)           | Finance-Entität (Ziel) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                           | NAME (NAME)                                 |
 | cdm_departmentnumber   (cdm_departmentnumber) | OPERATINGUNITNUMBER   (OPERATINGUNITNUMBER) |
@@ -97,7 +99,7 @@ In den folgenden Vorlagenzuordnungstabellen enthält der Name der Aufgabe die in
 
 ### <a name="job-types-to-compensation-job-type"></a>Stellentypen zu Vergütung (Stellentyp)
 
-| Common Data Service-Entität (Quelle)   | Finance-Entität (Ziel) |
+| Dataverse-Tabelle (Quelle)   | Finance-Entität (Ziel) |
 |---------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                   | JOBTYPEID   (JOBTYPEID)                     |
 | cdm_description   (cdm_description)   | BESCHREIBUNG   (BESCHREIBUNG)                 |
@@ -105,7 +107,7 @@ In den folgenden Vorlagenzuordnungstabellen enthält der Name der Aufgabe die in
 
 ### <a name="jobs-to-jobs"></a>Stellen zu Stellen
 
-| Common Data Service-Entität (Quelle)                           | Finance-Entität (Ziel)           |
+| Dataverse-Tabelle (Quelle)                           | Finance-Entität (Ziel)           |
 |---------------------------------------------------------------|-------------------------------------------------------|
 | cdm_name (cdm_name)                                           | JOBID (JOBID)                                         |
 | cdm_maximumnumberofpositions   (cdm_maximumnumberofpositions) | MAXIMUMNUMBEROFPOSITIONS   (MAXIMUMNUMBEROFPOSITIONS) |
@@ -115,7 +117,7 @@ In den folgenden Vorlagenzuordnungstabellen enthält der Name der Aufgabe die in
 
 ### <a name="jobs-to-job-detail"></a>Stellen zu Stellendetails
 
-| Common Data Service-Entität (Quelle)                             | Finance-Entität (Ziel) |
+| Dataverse-Tabelle (Quelle)                             | Finance-Entität (Ziel) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                                             | JOBID (JOBID)                               |
 | cdm_jobtypeid.cdm_name   (Job-Typ (Job-Typ-Name))             | JOBTYPEID   (JOBTYPEID)                     |
@@ -126,7 +128,7 @@ In den folgenden Vorlagenzuordnungstabellen enthält der Name der Aufgabe die in
 
 ### <a name="position-types-to-position-type"></a>Positionstypen zu Positionstyp
 
-| Common Data Service-Entität (Quelle)       | Finance-Entität (Ziel) |
+| Dataverse-Tabelle (Quelle)       | Finance-Entität (Ziel) |
 |-------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                       | POSITIONTYPEID   (POSITIONTYPEID)           |
 | cdm_description   (cdm_description)       | BESCHREIBUNG   (BESCHREIBUNG)                 |
@@ -134,15 +136,15 @@ In den folgenden Vorlagenzuordnungstabellen enthält der Name der Aufgabe die in
 
 ### <a name="job-positions-to-base-position"></a>Stellenpositionen zu Basisposition
 
-| Common Data Service-Entität (Quelle)           | Finance-Entität (Ziel) |
+| Dataverse-Tabelle (Quelle)           | Finance-Entität (Ziel) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber (Stellenpositionsnummer) | POSITIONID (POSITIONID)                      |
 
 ### <a name="job-positions-to-position-details"></a>Stellenpositionen zu Positionsdetails
 
-| Common Data Service-Entität (Quelle)              | Finance-Entität (Ziel)       |
+| Dataverse-Tabelle (Quelle)              | Finance-Entität (Ziel)       |
 |--------------------------------------------------------------------------|---------------------------------------------------|
-| cdm_jobpositionnumber  (Stellenpositionsnummer)                            | POSITIONID (POSITIONID)                             |
+| cdm_jobpositionnumber (Stellenpositionsnummer)                            | POSITIONID (POSITIONID)                             |
 | cdm_jobid.cdm_name   (Stelle (Name))                                        | JOBID (JOBID)                                    |
 | cdm_description   (cdm_description)                                        | BESCHREIBUNG   (BESCHREIBUNG)                       |
 | cdm_departmentid.cdm_departmentnumber   (Abteilung (Abteilungsnummer)) | DEPARTMENTNUMBER   (DEPARTMENTNUMBER)             |
@@ -154,7 +156,7 @@ In den folgenden Vorlagenzuordnungstabellen enthält der Name der Aufgabe die in
 
 ### <a name="job-positions-to-position-durations"></a>Stellenpositionen zu Positionsdauern
 
-| Common Data Service-Entität (Quelle)             | Finance-Entität (Ziel) |
+| Dataverse-Tabelle (Quelle)             | Finance-Entität (Ziel) |
 |-------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber (Stellenpositionsnummer)   | POSITIONID (POSITIONID)                      |
 | Berechnete Aktivierung (Berechnete Aktivierung) | VALIDFROM (VALIDFROM)                        |
@@ -162,7 +164,7 @@ In den folgenden Vorlagenzuordnungstabellen enthält der Name der Aufgabe die in
 
 ### <a name="job-positions-to-position-hierarchies"></a>Stellenpositionen zu Positionshierarchien
 
-| Common Data Service-Entität (Quelle)        | Finance-Entität (Ziel) |
+| Dataverse-Tabelle (Quelle)        | Finance-Entität (Ziel) |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber (Stellenpositionsnummer)                                                 | POSITIONID(POSITIONID)                      |
 | cdm_parentjobpositionid.cdmjobpositionnumber   (cdm_parentjobpositionid.cdmjobpositionnumber) | PARENTPOSITIONID (PARENTPOSITIONID)         |
@@ -172,7 +174,7 @@ In den folgenden Vorlagenzuordnungstabellen enthält der Name der Aufgabe die in
 
 
 ### <a name="workers-to-worker"></a>Arbeitskräfte zu Arbeitskraft
-| Common Data Service-Entität (Quelle)           | Finance-Entität (Ziel)       |
+| Dataverse-Tabelle (Quelle)           | Finance-Entität (Ziel)       |
 |-----------------------------------------------|---------------------------------------------------|
 | cdm_birthdate   (cdm_birthdate)               | GEBURTSDATUM   (GEBURTSDATUM)                           |
 | cdm_gender   (cdm_gender)                     | GENDER (GENDER)                                   |
@@ -191,7 +193,7 @@ In den folgenden Vorlagenzuordnungstabellen enthält der Name der Aufgabe die in
 
 ### <a name="employments-to-employment"></a>Beschäftigungen zu Beschäftigung
 
-| Common Data Service-Entität (Quelle)                             | Finance-Entität (Ziel) |
+| Dataverse-Tabelle (Quelle)                             | Finance-Entität (Ziel) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE) |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)     |
@@ -201,7 +203,7 @@ In den folgenden Vorlagenzuordnungstabellen enthält der Name der Aufgabe die in
 
 ### <a name="employments-to-employment-detail"></a>Beschäftigungen zu Beschäftigung - Details
 
-| Common Data Service-Entität (Quelle)                             | Finance-Entität (Ziel)   |
+| Dataverse-Tabelle (Quelle)                             | Finance-Entität (Ziel)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE)   |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)       |
@@ -219,7 +221,7 @@ In den folgenden Vorlagenzuordnungstabellen enthält der Name der Aufgabe die in
 
 ### <a name="position-worker-assignment-to-position-worker-assignments"></a>Position der Arbeitskraftzuordnung zu Position der Arbeitskraftzuordnungen
 
-| Common Data Service-Entität (Quelle)                             | Finance-Entität (Ziel)   |
+| Dataverse-Tabelle (Quelle)                             | Finance-Entität (Ziel)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
 | cdm_jobpositionnumber (Stellenpositionsnummer)                   | POSITIONID(POSITIONID)                        |
@@ -228,7 +230,7 @@ In den folgenden Vorlagenzuordnungstabellen enthält der Name der Aufgabe die in
 
 ### <a name="worker-addresses-to-worker-postal-address-v2"></a>Arbeitskräfteadressen zu Arbeitskraft-Postanschrift V2
 
-| Common Data Service-Entität (Quelle)                             | Finance-Entität (Ziel)   |
+| Dataverse-Tabelle (Quelle)                             | Finance-Entität (Ziel)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
 | cdm_addresstype   (cdm_addresstype)                             | ADDRESSLOCATIONROLES   (ADDRESSLOCATIONROLES) |
@@ -248,10 +250,12 @@ Bei der Integration von Daten von Human Resources in Finance wird versucht, Date
 
 Dieses Problem kann bei **Arbeitskraft** auftreten. Diese nutzen **Personalnummer** und **Positionen** zum Abgleich. Für Stellen werden keine Nummernkreise verwendet. Wenn also dieselbe Stellen-ID in Human Resources und Finance vorhanden ist, überschreiben die Daten aus Human Resources die Daten aus Dynamics 365 Finance. 
 
-Um Probleme mit doppelten IDs zu vermeiden, können Sie entweder ein Präfix zum [Nummernkreis](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json) hinzufügen oder eine Anfangsnummer für den Nummernkreis festlegen, die außerhalb des Bereichs des anderen Systems liegt. 
+Um Probleme mit doppelten IDs zu vermeiden, können Sie entweder ein Präfix zum [Nummernkreis](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json) hinzufügen oder eine Anfangsnummer für den Nummernkreis festlegen, die außerhalb des Bereichs des anderen Systems liegt. 
 
 Die Lagerplatzkennung, die für die Arbeitskraftadresse verwendet wird, gehört nicht zum Nummernkreis. Wenn eine Arbeitskraftadresse von Human Resources in Finance integriert wird und die Arbeitskraft bereits in Finance vorhanden ist, wird möglicherweise ein neuer Datensatz erstellt. 
 
 Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung im Datenintegrator. 
 
-![Vorlagenzuordnung](./media/IntegrationMapping.png)
+![Vorlagenzuordnung.](./media/IntegrationMapping.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Kalender und Terminplanung für Wartungspersonal
 description: In diesem Thema wird der Kalender des Instandhalters in Bezug auf die Terminierung im Anlagenmanagement erläutert.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorker
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c8856d0c7a7b76318755dc6bcdbb1859de1fa20a
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: ad76850fe055e96f3ed96e8a5d9524c58d8a187a87641a8669288468d542bb1e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021478"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780277"
 ---
 # <a name="maintenance-worker-calendar-and-scheduling"></a>Kalender und Terminplanung für Wartungspersonal
 
@@ -34,7 +32,10 @@ Wenn Sie Arbeitsaufträge planen, erstellen Sie einen Zeitplan für Wartungspers
 
 Der folgende Screenshot zeigt ein Beispiel für einen Instandhalter, der mit einer Ressource verwandt ist, die den Arbeitszeitkalender „Produktion“ verwendet.
 
-![Abbildung 1](media/01-work-order-scheduling.png)
+![Abbildung 1.](media/01-work-order-scheduling.png)
 
 Die Kalendereinrichtung für Werkzeuge und Anlagen ist im Zusammenhang mit der Arbeitsauftragsplanung nicht erforderlich. Es wird davon ausgegangen, dass Werkzeuge und Anlagen 24 Stunden am Tag für die Wartung zur Verfügung stehen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

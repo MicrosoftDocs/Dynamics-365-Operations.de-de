@@ -2,11 +2,9 @@
 title: Bereiten Sie anwendungsspezifische Metadaten für RCS und ER vor
 description: In diesem Thema wird erläutert, wie anwendungsspezifische Metadaten für Regulatory Configuration Service (RCS) und elektronische Berichterstellung (ER) vorbereitet werden.
 author: NickSelin
-manager: AnnBe
 ms.date: 04/04/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
@@ -15,12 +13,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f15b78d3ed5b4df47540f9f89cc69c0b535a7241
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9136bd3db2aee1447d6af3b3c47b908177cee966aba630490cc6e72072525d29
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680193"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735597"
 ---
 # <a name="prepare-application-specific-metadata-for-rcs-and-er"></a>Bereiten Sie anwendungsspezifische Metadaten für RCS und ER vor
 
@@ -280,3 +278,6 @@ Wenn Sie diese Modellzuordnung überprüfen müssen, indem Sie die Metadaten ein
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 Alternativ können Sie den Aufgabenleitfaden **Anwendungsmetadaten vorbereiten, die in RCS verwendet werden können** in der Anwendung sowie die Aufgabenleitfäden **Zugriff auf Anwendungsmetadaten über eine ER-Konfiguration** und **Zugriff auf Anwendungsmetadaten mithilfe verbundener Bewerbungen** in RCS wiedergeben. Diese Aufgabenleitfäden können von der Seite [Aufgabenleitfäden für elektronische Berichterstellung für Dynamics 365 for Finance and Operations 8,1](https://go.microsoft.com/fwlink/?linkid=2082739) heruntergeladen werden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: MCRRFMDefinition
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 78943
 ms.assetid: 8ff9aac3-5ada-4150-85fd-18901c926d53
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c7cb79fa82b579bee01e51cb635597cc5f711a98
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6a5f87d005b41bb7f3910661e67a69e28685acb4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412640"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5234436"
 ---
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Einrichten von Aktualitäts-, Häufigkeits- und Finanzanalyse (RFM)
 
@@ -97,3 +96,6 @@ Verwenden Sie diese Prozedur, um die Historie eines RFM-Analysedatendsatzes anzu
 2. Wählen Sie auf der Seite **RFM-Analyse** den anzuzeigenden Datensatz aus.
 3. Um die Historie des Datensatzes anzuzeigen, wählen Sie das Inforegister **Historie**.
 4. Um die Historie des Datensatzes zu löschen, wählen Sie **Historie löschen** aus.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

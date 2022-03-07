@@ -2,11 +2,9 @@
 title: Positionsworkflows konfigurieren
 description: In diesem Thema wird erläutert, wie das Positionsworkflowelement konfiguriert wird.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c19693151399fc02ea9562757af7fc24124c9b6c
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 2d6d9dcb99e00d4ce3f99e525a72421cb12af178
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798828"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070120"
 ---
 # <a name="configure-line-item-workflows"></a>Positionsworkflows konfigurieren
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 In diesem Thema wird erläutert, wie das Positionsworkflowelement konfiguriert wird.
 
@@ -54,3 +55,6 @@ Gehen Sie folgendermaßen vor, um anzugeben, ob derselbe Workflow zum Verarbeite
     6. Klicken Sie auf **Test**, um zu überprüfen, ob die eingegebenen Bedingungen korrekt konfiguriert sind. Auf der Seite **Workflowbedingung testen** im Bereich **Bedingung überprüfen** wählen Sie einen Datensatz aus und klicken auf **Test**. Der Datensatz wird ausgewertet, um zu bestimmen, ob er den festgelegten Bedingungen entspricht. Klicken Sie auf **OK** oder **Abbrechen**, um zur Seite **Eigenschaften** zurückzukehren.
 
     Wählen Sie auf der Registerkarte **Workflow** den Workflow aus, der verwendet werden soll zum Verarbeiten von Positionen, die die definierten Bedingungen erfüllen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

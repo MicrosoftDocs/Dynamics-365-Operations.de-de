@@ -2,16 +2,13 @@
 title: Produktprogrammplanung mit Kaufverträgen
 description: In diesem Thema wird beschrieben, wie die Planungsoptimierung den Lieferanten und/oder die Vorlaufzeit für einen geplanten Auftrag basierend auf dem besten Preis oder der besten Vorlaufzeit in Kaufverträgen ermitteln kann.
 author: ChristianRytt
-manager: tfehr
 ms.date: 06/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: b302c5ace34a11a53a98c733b59633a11a463bfa
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 10b4f9f45899b808bd0baa73974a173cf120aa6c3fd33e10d0d79a59614f1f70
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428481"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757757"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Produktprogrammplanung mit Kaufverträgen
 
@@ -70,23 +67,26 @@ Nachdem Sie Ihr System wie im vorherigen Abschnitt beschrieben vorbereitet haben
 1. Wiederholen Sie diese Schritte für jedes relevante Produkt.
 
 > [!NOTE]
-> Die Währung in der Kaufvertragszeile muss mit der Währung des ausgewählten Lieferanten übereinstimmen. Die Produktprogrammplanung enthält nur Informationen aus Kaufverträgen, bei denen die Währung mit der Währung des Lieferanten übereinstimmt.
+> Die Planungsoptimierung unterstützt Handelsvereinbarungen für den Kauf in mehreren Währungen. Bei der Suche nach einer Handelsvereinbarung mit der Option **Niedrigster Preis pro Einheit** werden Zeilen von Handelsvereinbarungen mit unterschiedlichen Währungen berücksichtigt, sofern ein Wechselkurs zwischen der Währung der Handelsvereinbarungszeile und der Buchhaltungswährung der juristischen Entität definiert wurde. Andernfalls wird die Zeile mit der Handelsvereinbarung ignoriert, und es wird ein Fehler bei der Produktprogrammplanung angezeigt. Daher wird die Produktprogrammplanung Informationen aus allen relevanten Zeilen der Handelsvereinbarungen für den Kauf enthalten, in denen die Preise in die Buchhaltungswährung umgerechnet werden können. Bitte beachten Sie, dass Rundungsregeln bei der Preisumrechnung für Handelsvereinbarungenzeilen nicht berücksichtigt werden.
 
 ## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>Beispiele dafür, wie die Planungsoptimierung Lieferanten- und Vorlaufzeiten ermittelt
 
-Die folgende Tabelle enthält Beispiele, die zeigen, wie sich verschiedene Einstellungen für ein freigegebenes Produkt und die damit verbundenen Kaufverträge auf die Werte auswirken, die für die resultierende geplante Auftrag gefunden werden. Der Wert **Fett gedruckt** in den beiden Spalten ganz rechts sind die Werte, die von der Planungsoptimierung ausgewählt werden. Die Werte ***fett und kursiv*** in den anderen Spalten sind die Einstellungen, die die resultierenden Werte für jede Zeile erzeugt haben.
+Die folgende Tabelle enthält Beispiele, die zeigen, wie sich verschiedene Einstellungen für ein freigegebenes Produkt und die damit verbundenen Kaufverträge auf die Werte auswirken, die für die resultierende geplante Auftrag gefunden werden. Der Wert **Fett gedruckt** in den beiden Spalten ganz rechts sind die Werte, die von der Planungsoptimierung ausgewählt werden. Die **_fetten und kursiven_** Werte in den anderen Spalten sind die Einstellungen, die diese resultierenden Werte für jede Zeile erzeugt haben.
 
 | Freigegebenes Produkt: Lieferant | Standardmäßige Auftragseinstellung: Vorlaufzeit | Artikelabdeckung: Lieferant überschreiben | Artikelabdeckung: Vorlaufzeit überschreiben | Kaufvertrag: Lieferant | Kaufvertrag: Lieferzeit | Kaufvertrag: Vorlaufzeit ignorieren | Resultierender Anbieter | Resultierende Vorlaufzeit |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ***US001*** | ***1*** | Nr. | Nr. | US003 | 3 | Nr. | **US001** | **1** |
-| US001 | 1 | ***JA: US002*** | ***Ja: 2*** | US003 | 3 | Nr. | **US002** | **2** |
-| *(Leer)* | 1 | Nr. | Nr. | ***US003*** | ***3*** | Nr. | **US003** | **3** |
-| *(Leer)* | ***1*** | Nr. | Nr. | ***US003*** | 3 | Ja | **US003** | **1** |
-| *(Leer)* | ***1*** | ***JA: US002*** | Nr. | US003 | 3 | Nr. | **US002** | **1** |
-| *(Leer)* | ***1*** | ***JA: US002*** | Nr. | US003 | 3 | Nr. | **US002** | **1** |
-| *(Leer)* | 1 | Nr. | Ja: 2 | ***US003*** | ***3*** | Nr. | **US003** | **3** |
-| *(Leer)* | 1 | Nr. | ***Ja: 2*** | ***US003*** | 3 | Ja | **US003** | **2** |
+| ***US001** _ | _*_1_*_ | Nein | Nein | US003 | 3 | Nein | _ *US001** | **1** |
+| US001 | 1 | ***Ja: US002** _ | _*_Ja: 2_*_ | US003 | 3 | Nein | _ *US002** | **2** |
+| *(Leer)* | 1 | Nein | Nein | ***US003** _ | _*_3_*_ | Nein | _ *US003** | **3** |
+| *(Leer)* | ***1** _ | Nein | Nein | _*_US003_*_ | 3 | Ja | _ *US003** | **1** |
+| *(Leer)* | ***1** _ | _*_Ja: US002_*_ | Nein | US003 | 3 | Nein | _ *US002** | **1** |
+| *(Leer)* | ***1** _ | _*_Ja: US002_*_ | Nein | US003 | 3 | Nein | _ *US002** | **1** |
+| *(Leer)* | 1 | Nein | Ja: 2 | ***US003** _ | _*_3_*_ | Nein | _ *US003** | **3** |
+| *(Leer)* | 1 | Nein | ***Ja: 2** _ | _*_US003_*_ | 3 | Ja | _ *US003** | **2** |
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Rahmenbestellungen](../../procurement/purchase-agreements.md)
+[Kaufverträge](../../procurement/purchase-agreements.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

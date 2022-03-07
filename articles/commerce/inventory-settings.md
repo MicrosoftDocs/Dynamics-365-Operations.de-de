@@ -1,16 +1,13 @@
 ---
 title: Wenden Sie Inventareinstellungen an
-description: In diesem Thema werden Inventareinstellungen behandelt und beschrieben, wie sie in Microsoft Dynamics 365 Commerce angewendet werden.
+description: Dieses Thema behandelt Inventareinstellungen und beschreibt, wie sie in Microsoft Dynamics 365 Commerce angewendet werden.
 author: anupamar-ms
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dfa8b2bdc03e3698feda26932db757421097140d
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: 4ba3e67cf9c72b9a9606528c02f9e57d19a74c1f
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517063"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647583"
 ---
-# <a name="apply-inventory-settings"></a>Wenden Sie Inventareinstellungen an
+# <a name="apply-inventory-settings"></a>Bestandseinstellungen anwenden
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden Inventareinstellungen behandelt und beschrieben, wie sie in Microsoft Dynamics 365 Commerce angewendet werden.
-
-## <a name="overview"></a>Übersicht
+Dieses Thema behandelt Inventareinstellungen und beschreibt, wie sie in Microsoft Dynamics 365 Commerce angewendet werden.
 
 Die Inventareinstellungen geben an, ob das Inventar überprüft werden soll, bevor Produkte in den Warenkorb gelegt werden. Sie definieren auch inventarbezogene Merchandising-Nachrichten wie Auf Lager und Nur noch wenige übrig. Diese Einstellungen stellen sicher, dass ein Produkt nicht gekauft werden kann, wenn es nicht vorrätig ist.
 
@@ -44,12 +39,22 @@ In Commerce Site Builder können Bestandsschwellenwerte und -bereiche für ein P
 
 ## <a name="inventory-settings"></a>Bestandeinstellungen
 
-In Commerce werden Bestandeinstellungen unter **Seiteneinstellungen \> Erweiterungen \> Bestandsverwaltung** im Site Builder definiert. Es gibt vier Bestandeinstellungen, von denen eine veraltet (veraltet) ist:
+In Commerce werden Bestandeinstellungen unter **Seiteneinstellungen \> Erweiterungen \> Bestandsverwaltung** im Site Builder definiert. Es gibt sechs Bestandseinstellungen, von denen eine veraltet ist (außer Betrieb genommen):
 
 - **Bestandsüberprüfung in App aktivieren** – Diese Einstellung aktiviert eine Produktbestandsüberprüfung. Wenn Sie Box-, Warenkorb- und Abholmodule kaufen, wird der Produkbestand überprüft und das Hinzufügen eines Produkts zum Warenkorb nur dann ermöglicht, wenn Bestand verfügbar ist.
 - **Lagerbestand basierend auf** – Diese Einstellung definiert, wie die Lagerbestände berechnet werden. Die verfügbaren Werte sind **Insgesamt verfügbar**, **Physisch verfügbar** und **Nicht verfügbar**. In Commerce Site Builder können die Bestandsschwellenwerte und -bereiche für ein Produkt oder eine Kategorie definiert werden. Die Inventar-APIs geben Produktbestandinformationen für die Eigenschaft **Insgesamt verfügbar** und **Physisch verfügbar** zurück. Der Händler entscheidet, ob der Wert **Insgesamt verfügbar** oder **Physisch verfügbar** verwendet wird, um die Anzahl der Bestände und die entsprechenden Bereiche für den Status Lagerbestand verfügbar und Lagerbestand nicht verfügbar zu bestimmen.
 
     Der Wert **Nicht vorrätige Schwelle** des **Lagerbestand basierend auf** Einstellungen ist ein alter (veralteter) Wert. Wenn er ausgewählt ist, wird die Bestandanzahl aus den Ergebnissen des Werts **Insgesamt verfügbar** ermittelt, aber der Schwellenwert wird durch die Einstellung **Nicht vorrätige Schwelle** numerische Einstellung definiert, die später beschrieben wird. Diese Schwellenwerteinstellung gilt für alle Produkte auf einer E-Commerce-Website. Wenn der Lagerbestand unter dem Schwellenwert liegt, gilt ein Produkt als nicht vorrätig. Ansonsten gilt es als auf Lager. Die Möglichkeiten des Werts **Nicht vorrätige Schwelle** ist begrenzt und wir empfehlen nicht, ihn in Version 10.0.12 und höher zu verwenden.
+
+- **Bestand für mehrere Lagerorte** – Mit dieser Einstellung kann der Bestand gegen den Standardlagerort oder mehrere Lagerorte berechnet werden. Die Option **Basierend auf individuellem Lagerort** wird die Bestände basierend auf dem Standardlagerort berechnen. Alternativ kann eine E-Commerce-Seite auf mehrere Lagerorte verweisen, um die Erfüllung zu erleichtern. In diesem Fall wird die Option **Basierend auf Aggregat für Versand und Abholung Lagerorte** verwendet, um die Verfügbarkeit des Bestands anzuzeigen. Wenn ein Debitor z. B. ein Element kauft und „Versand“ als Liefermodus auswählt, kann das Element von jedem Lagerort in der Erfüllungsgruppe versendet werden, der über einen verfügbaren Bestand verfügt. Auf der Produktdetailseite (PDP) wird für den Versand die Nachricht „Auf Lager“ angezeigt, wenn ein verfügbares Versandlager in der Erfüllungsgruppe über Bestand verfügt. 
+
+    > [!IMPORTANT] 
+    > Die Einstellung **Bestandsebene für mehrere Lagerorte** ist ab der Commerce-Version 10.0.19 verfügbar. Wenn Sie ein Update von einer älteren Version von Commerce durchführen, müssen Sie die Datei appsettings.json manuell aktualisieren. Anweisungen finden Sie unter [SDK- und Modulbibliotheks-Updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
+- **Inventareinstellungen für Produktlistenseiten** – Diese Einstellung definiert, wie nicht vorrätige Produkte in Produktlisten angezeigt werden, die von Produktsammlungs- und Suchergebnismodulen gerendert werden. Die verfügbaren Werte sind **In der Reihenfolge mit anderen Produkten anzeigen**, **Nicht vorrätige Produkte aus der Liste ausblenden** und **Nicht vorrätige Produkte am Ende der Liste anzeigen**. Um diese Einstellung zu verwenden, müssen Sie zunächst einige erforderliche Einstellungen in der Commerce-Zentrale konfigurieren. Weitere Informationen finden Sie unter [Inventarerkennung für das Suchergebnismodul aktivieren](search-result-module.md#enable-inventory-awareness-for-the-search-results-module).
+
+    > [!IMPORTANT] 
+    > Die Einstellung **Bestandseinstellungen für Produktlistenseiten** ist ab der Commerce-Version 10.0.20 verfügbar. Wenn Sie ein Update von einer älteren Version von Commerce durchführen, müssen Sie die Datei appsettings.json manuell aktualisieren. Anweisungen finden Sie unter [SDK- und Modulbibliotheks-Updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 - **Bestandsbereiche** – Diese Einstellung definiert die Bestandbereiche, für die die Meldung vor Ort angezeigt wird. Er ist nur anwendbar, wenn entweder der **Insgesamt verfügbar** oder der Wert **Physisch verfügbar** ausgewählt für die Einstellung **Lagerbestand basierend auf**. Die verfügbaren Werte sind **Alle**, **Niedrig und vergriffen** und **Ausverkauft**.
 
@@ -66,21 +71,21 @@ In Commerce werden Bestandeinstellungen unter **Seiteneinstellungen \> Erweiteru
 
 Kaufbox, Wunschliste, Filialauswahl, Warenkorb und Warenkorbsymbolmodule verwenden Bestandeinstellungen, um die Inventarbereiche und Meldungen anzuzeigen.
 
-Das folgende Bild zeigt ein Beispiel für eine Produktdetailseite (PDP), auf der eine Meldung Auf Lager (Verfügbar) angezeigt wird.
+In dem Beispiel in der folgenden Abbildung zeigt eine PDP die Nachricht „Auf Lager“ („Verfügbar“) an.
 
-![Beispiel eines PDP-Moduls mit einer Nachricht auf Lager](./media/pdp-InStock.png)
+![Beispiel eines PDP-Moduls mit einer Nachricht „Auf Lager“.](./media/pdp-InStock.png)
 
-Das folgende Bild zeigt ein Beispiel für eine Produktdetailseite (PDP), auf der eine Meldung Nicht auf Lager (Nicht Verfügbar) angezeigt wird.
+Im Beispiel in der folgenden Abbildung zeigt eine PDP die Nachricht „Nicht vorrätig“ an.
 
-![Beispiel eines PDP-Moduls mit einer Nachricht Nicht auf Lager](./media/pdp-outofstock.png)
+![Beispiel eines PDP-Moduls mit einer Nachricht „Nicht auf Lager“.](./media/pdp-outofstock.png)
 
-Das folgende Bild zeigt ein Beispiel für einen Einkaufswagen, mit der Meldung auf Lager (Verfügbar).
+Im Beispiel in der folgenden Abbildung zeigt ein Warenkorb die Nachricht „Auf Lager“ („Verfügbar“).
 
-![Beispiel eines Einkaufswagenmoduls mit einer Nachricht auf Lager](./media/cart-instock.png)
+![Beispiel eines Einkaufswagenmoduls mit einer Nachricht „Auf Lager“.](./media/cart-instock.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Übersicht über die Modulbibliothek](starter-kit-overview.md)
+[Informationen zur Modulbibliothek](starter-kit-overview.md)
 
 [Bestandpuffer und Bestandsebenen konfigurieren](inventory-buffers-levels.md)
 
@@ -93,3 +98,6 @@ Das folgende Bild zeigt ein Beispiel für einen Einkaufswagen, mit der Meldung a
 [Shopauswahlmodul](store-selector.md)
 
 [SDK- und Modulbibliothekupdates](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

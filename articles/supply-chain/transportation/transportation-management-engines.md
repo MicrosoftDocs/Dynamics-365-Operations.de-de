@@ -1,29 +1,26 @@
 ---
 title: Transportverwaltungsmodule
 description: Transportverwaltungsmodule definieren die Logik, die verwendet wird, um Transportsätze in der Transportverwaltung zu generieren und zu verarbeiten.
-author: MarkusFogelberg
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateEngine, TMSTransitTimeEngine, TMSZoneEngine, TMSFreightBillTypeAssignment, TMSZoneMaster, TMSEngineParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 12234
 ms.assetid: b878478c-0e04-4a1e-a037-6fdbb345a9a3
 ms.search.region: Global
-ms.author: mafoge
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab6667ac02ca55eeb093fa5854a962ac4357aaac
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: bce886b8029b3a00c6572642d339efa9dcad4267
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429072"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580119"
 ---
 # <a name="transportation-management-engines"></a>Transportverwaltungsmodule
 
@@ -46,8 +43,7 @@ Die folgende Tabelle zeigt die Transportverwaltungsmodule, die verfügbar sind.
 | **Frachtbrieftyp**            | Standardisiert die Frachtrechnungs- und Frachtbriefpositionen und wird für den automatischen Frachtbriefabgleich verwendet.                                                                                                                                                                                                                |
 
 
-<a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Welche Module müssen konfiguriert werden, um eine Lieferung zu bewerten?
----------------------------------------------------
+## <a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Welche Module müssen konfiguriert werden, um eine Lieferung zu bewerten?
 
 Um eine Lieferung mithilfe eines bestimmten Spediteurs zu bewerten, müssen Sie mehrere Transportverwaltungsmodule konfigurieren. Das **Tarifmodul** ist erforderlich, möglicherweise jedoch auch andere Transportverwaltungsmodule, um das **Tarifmodul** zu unterstützen. So kann das **Tarifmodul** beispielsweise verwendet werden, um Daten aus dem **Kilometerleistungsmodul** abzurufen und den Satz anhand der Kilometerleistung zwischen den Start und Ziel zu berechnen.
 
@@ -65,8 +61,7 @@ In den meisten Fällen können Sie auf die Schaltfläche **Parameter** in den Ei
 |  <em>MileageEngineCode</em>  |                       Code des Kilometerleistungsmoduls, der den Datensatz des Kilometerleistungsmoduls in der Datenbank kennzeichnet.                        |
 | <em>Umlagenmodul</em> |                        Code des allgemeinen Moduls, der den Datensatz des Umlagenmoduls in der Datenbank kennzeichnet.                        |
 
-<a name="how-is-metadata-used-in-transportation-management-engines"></a>Wie werden Metadaten in den Transportverwaltungsmodulen verwendet?
-----------------------------------------------------------
+## <a name="how-is-metadata-used-in-transportation-management-engines"></a>Wie werden Metadaten in den Transportverwaltungsmodulen verwendet?
 
 Transportverwaltungsmodule, die auf Daten beruhen, die in Supply Chain Management definiert sind, können verschiedene Datenschemas verwenden. Das Transportverwaltungssystem ermöglicht verschiedenen Transportverwaltungsmodulen die Verwendung der gleichen allgemeinen physischen Datenbanktabellen. Um sicherzustellen, dass die Laufzeitinterpretation der Moduldaten korrekt ist, können Sie Metadaten für die Datenbanktabellen definieren. Dies reduziert die Kosten für die Erstellung neuer Transportverwaltungsmodule, da in Operations keine zusätzlichen Tabellen und Formularstrukturen erforderlich sind.
 
@@ -89,7 +84,7 @@ Metadaten für Transportverwaltungsmodule werden für die verschiedenen Arten vo
 | **Zonenmodul**                                | Erfordert Metadaten, die direkt auf dem Zonenmaster eingerichtet werden.                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **Transitzeitmodul** und **Kilometerleistungsmodul** | Ruft die Metadaten direkt aus dem Formular für die Konfigurationseinrichtung des Kilometerleistungsmoduls ab.                                                                                                                                                                                                                                                                                                                                                                                  |
 
-  **Beispiel für Metadaten für ein Tarifmodul** Das Transportverwaltungsmodul erfordert die Kennung der Ursprungsadresse, des Zielstaats und des Ziellands/der Zielregion sowie des Ausgangs-und Endpunkts der Lieferung. Wenn Sie diese Anforderungen verwenden, würden die Metadaten wie die Daten in der folgenden Tabelle aussehen. Die Tabelle enthält auch Informationen zum Typ der Eingabedaten, der erforderlich ist.
+  **Beispiel für Metadaten für ein Tarifmodul** Das Transportverwaltungsmodul erfordert die Kennung der Ursprungsadresse, des Zielstaats und des Ziellands/der Zielregion sowie des Ausgangs-und Endpunkts der Lieferung. Wenn Sie diese Anforderungen verwenden, würden die Metadaten wie die Daten in der folgenden Tabelle aussehen. Die Tabelle enthält auch Informationen zum Typ der Eingabedaten, der erforderlich ist.
 -   Definieren Sie diese Informationen unter **Transportverwaltung** &gt; **Einstellungen** auf der Seite **Satzbasistyp**.
 
 | Sequenz | Name                          | Feldtyp | Datentyp | Suchtyp    | Obligatorisch |
@@ -99,3 +94,12 @@ Metadaten für Transportverwaltungsmodule werden für die verschiedenen Arten vo
 | 3        | Zielstartpostleitzahl | Zuweisung | Zeichenfolge    | Postleitzahl    | Ausgewählt  |
 | 4        | Zielendepostleitzahl   | Zuweisung | Zeichenfolge    | Postleitzahl    | Ausgewählt  |
 | 5        | Zielland           | Zuweisung | Zeichenfolge    | Land/Region |           |
+
+### <a name="whitepaper"></a>Whitepaper
+
+Laden Sie für weitere Informationen das folgende Whitepaper herunter (geschrieben zur Unterstützung von AX2012, gilt jedoch weiterhin für Dynamics 365 Supply Chain Management)
+
+- [Transportverwaltungsmodule](https://download.microsoft.com/download/e/0/9/e0957665-c12f-43c7-94c0-611cc49d7d61/TransportationManagementEnginesInAX.pdf)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

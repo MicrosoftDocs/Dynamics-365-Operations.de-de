@@ -2,15 +2,12 @@
 title: Bild-Brennpunkte anpassen
 description: In diesem Thema wird beschrieben, wie die Bildfokuspunkte in Microsoft Dynamics 365 Commerce Site Builder angepasst werden können.
 author: psimolin
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b20fbc20f18243c712595795a0b16ae417e755e6
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: 9c8a1b6de774a4d89c0ebcf46847c1b2c5b62374b3e5ac25a0bea2ff30b47510
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594331"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727605"
 ---
-# <a name="customize-image-focal-points"></a>Bild-Brennpunkte anpassen
+# <a name="customize-image-focal-points"></a>Bildfokuspunkte anpassen
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie die Bildfokuspunkte in Microsoft Dynamics 365 Commerce Site Builder angepasst werden können.
-
-## <a name="overview"></a>Übersicht
 
 Wenn ein Bild in die Medienbibliothek des Commerce-Site-Builders hochgeladen wird, versucht das System, den Brennpunkt des Bildes zu bestimmen. Wenn sich beispielsweise eine Person auf dem Bild befindet, setzt das System den Fokus standardmäßig auf das Gesicht der Person. In den meisten Fällen funktioniert der automatisch gesetzte Fokuspunkt für alle Ansichtsfenster gut, aber manchmal möchten Sie den Fokuspunkt vielleicht anpassen, um sicherzustellen, dass ein bestimmter Teil des Bildes immer sichtbar ist.
 
@@ -60,3 +55,6 @@ Um einen benutzerdefinierten Brennpunkt für ein Bild zu definieren, gehen Sie w
 [Bilder zuschneiden](dam-crop-images.md)
 
 [Statische Dateien hochladen und bedienen](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

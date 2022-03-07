@@ -1,29 +1,26 @@
 ---
 title: Reparaturverwaltung
 description: Für die Reparaturverwaltung können Probleme systematisch gruppiert werden. Dadurch können Lösungsvorschläge gemacht werden, die bereits in der Vergangenheit funktioniert haben.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAConditionTable, SMASymptomArea, SMADiagnosisArea, SMAResolutionTable, SMARepairStage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d45732ff35069a64b37b6c53d9e22adf9a9a46d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1456c65f28d2a1d06497ddde81c9e68cc078c061
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428445"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567918"
 ---
 # <a name="repair-management"></a>Reparaturverwaltung       
 
@@ -38,15 +35,11 @@ Zu diesem Zweck werden Einstellungen für Symptome, Diagnose und Lösung eingeri
 
 Verwenden Sie die folgenden Einrichtungsformulare, um Informationen über Symptome, Diagnose und Lösung in Bezug auf die Reparatur einzugeben.
 
-1.  Klicken Sie auf **Serviceverwaltung** \> **Einrichten** \> **Reparatur** \> **Bedingungen**.
-
-2.  Klicken Sie auf **Serviceverwaltung** \> **Einrichten** \> **Reparatur** \> **Symptombereiche**.
-
-3.  Klicken Sie auf **Serviceverwaltung** \> **Einrichten** \> **Reparatur** \> **Diagnosebereiche**.
-
-4.  Klicken Sie auf **Serviceverwaltung** \> **Einrichten** \> **Reparatur** \> **Lösungen**.
-
-5.  Klicken Sie auf **Serviceverwaltung** \> **Einrichten** \> **Reparatur** \> **Reparaturphasen**.
+- **Serviceverwaltung** \> **Einrichten** \> **Reparatur** \> **Bedingungen**.
+- **Service-Management** \> **Einrichten** \> **Reparatur** \> **Symptombereiche**.
+-  **Serviceverwaltung** \> **Einrichten** \> **Reparatur** \> **Diagnosebereiche**.
+- **Service-Management** \> **Einrichten** \> **Reparatur** \> **Lösungen**.
+- **Serviceverwaltung** \> **Einrichten** \> **Reparatur** \> **Reparaturstufen**.
 
 ## <a name="symptoms-and-conditions"></a>Symptome und Bedingungen
 
@@ -82,19 +75,19 @@ Reparaturpositionen können für jeden Schritt des Reparaturvorgangs erstellt we
 
 ## <a name="create-a-repair-line-on-a-service-order"></a>Erstellen einer Reparaturposition in einem Serviceauftrag
 
-1.  Klicken auf **Serviceverwaltung** \> **Gemeinsam** \> **Serviceaufträge** \> **Serviceaufträge**.
+1.  Gehen Sie zu **Serviceverwaltung** \> **Allgemein** \> **Serviceaufträge** \> **Serviceaufträge**.
 
 2.  Wählen Sie den Serviceauftrag mit dem zu reparierenden Serviceobjekt aus.
 
-3.  Klicken Sie **Reparatur** \> **Reparaturpositionen**, um das Formular **Reparaturpositionen** zu öffnen.
+3.  Wählen Sie **Reparatur** \> **Reparaturleitungen**, um das Formular **Reparaturleitungen** zu öffnen.
 
-4.  Erstellen Sie durch Drücken von Strg+N eine neue Position.
+4.  Wählen Sie **Neu**, um eine neue Zeile zu erstellen.
 
 5.  Wählen Sie ein Serviceobjekt aus. Sie können jedes beliebige Serviceobjekt auswählen, für das im Serviceauftrag eine Objektbeziehung eingerichtet wurde.
 
-6.  Wählen Sie in der Reparaturposition die zutreffenden Werte für Symptome, Diagnose und Ausführung aus, und klicken Sie ggf. zum Erstellen eines Hinweises für die Reparaturposition auf die Registerkarte **Hinweis**.
+6.  Wählen Sie eines der voreingestellten Symptome, Diagnosen und Ausführungswerte, die in der Reparaturzeile relevant sind, und wählen Sie dann die Registerkarte **Notiz**, um bei Bedarf eine Notiz zur Reparaturzeile zu erstellen.
 
-7.  Drücken Sie zum Speichern der neuen Reparaturposition die Tastenkombination STRG+S. Das Feld **Erstellungsdatum und -uhrzeit** auf der Registerkarte **Allgemein** des Formulars **Reparaturpositionen** wird mit dem Zeitpunkt des Speichervorgangs aktualisiert.
+7.  Wählen Sie **Speichern**, um die neue Reparaturzeile zu speichern. Das Feld **Erstellungsdatum und -uhrzeit** auf der Registerkarte **Allgemein** des Formulars **Reparaturpositionen** wird mit dem Zeitpunkt des Speichervorgangs aktualisiert.
 
 ## <a name="tracking-progress-and-resolving-a-repair-issue"></a>Nachverfolgen des Status und Beheben eines Reparaturproblems
 
@@ -113,3 +106,6 @@ Nach erfolgter Reparatur kann die Reparaturposition abgeschlossen werden. Hierzu
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

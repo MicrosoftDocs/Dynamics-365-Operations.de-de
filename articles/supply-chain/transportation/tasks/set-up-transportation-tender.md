@@ -2,27 +2,24 @@
 title: Transportausschreibung einrichten
 description: Dieses Verfahren zeigt Ihnen an, wie eine Transportausschreibung eingerichtet wird.
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadPlanningWorkbench, TMSRouteWorkbench, TMSTransportationTender
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 62458fd0f7eb9d2155d70f013c96027953c4d4e1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 15dc99f6b355e71e9890ba78709e5959a32d35f2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428485"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808965"
 ---
 # <a name="set-up-a-transportation-tender"></a>Transportausschreibung einrichten
 
@@ -48,3 +45,6 @@ Dieses Verfahren zeigt Ihnen an, wie eine Transportausschreibung eingerichtet wi
 7. Klicken Sie auf Absenden.
 8. Wählen Sie einen Arbeitsplan aus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

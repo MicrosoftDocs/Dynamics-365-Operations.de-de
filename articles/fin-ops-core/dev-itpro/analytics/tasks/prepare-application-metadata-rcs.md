@@ -1,12 +1,10 @@
 ---
 title: Vorbereiten von Anwendungs-Metadaten zur Verwendung in RCS
-description: Die Schritte in diesem Thema erläutern, wie ein Benutzer eine neue elektronische Berichterstellungskonfiguration (ER) erstellen kann, die die Anwendungsmetadaten für das Entwerfen von Regulatory Configuration Service (RCS) enthält.
+description: In diesem Thema wird beschrieben, wie Sie eine neue Berichterstellungskonfiguration erstellen, die Anwendungsmetadaten enthält.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/28/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dbc1ca45a39f2a5c3309276f9e2f5d2b7d2ba5f7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a5fe475bd0fceea7e1e8edf7c375d34a4be6d92a
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684090"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751033"
 ---
 # <a name="prepare-application-metadata-to-be-used-in-rcs"></a>Vorbereiten von Anwendungs-Metadaten zur Verwendung in RCS
 [!include [banner](../../includes/banner.md)]
@@ -80,3 +78,6 @@ Es werden Metadateninformationen zur Intrastat-Tabelle der Datensätze hinzugef�
 3.    Klicken Sie auf **OK**. 
     
 Die erstellte ER-Metadatenkonfiguration ist als XML Datei gespeichert, die in RCS importiert werden kann und als die Informationsquelle über Metadaten für die Außenhandelsdomäne verwendet werden kann. Auf Basis dieser Informationen können wir die Zuordnung zwischen Bewerbungsmetadaten und ER-Datenmodell angeben.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 261164
 ms.assetid: 9d99a5b9-4662-499a-bece-3ea1d6092934
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1c2105aa99e0489d7643d076e84123eec628679e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b663ead82367f5682189012349bd4ebc6450d8c3
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412651"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206171"
 ---
 # <a name="hybrid-customer-orders"></a>Hybrid-Kundenaufträge
 
@@ -41,3 +40,6 @@ Wenn eine Einkaufswagenposition ausgewählt und **Auswahl entnehmen**, **Auswahl
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Debitorenaufträge in Modern POS (MPOS)](customer-orders-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

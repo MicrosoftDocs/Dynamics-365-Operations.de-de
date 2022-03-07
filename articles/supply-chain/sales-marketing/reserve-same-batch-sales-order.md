@@ -1,30 +1,27 @@
 ---
 title: Reservieren derselben Charge für einen Auftrag
 description: In diesem Artikel wird beschrieben, wie ein Produkt eingerichtet wird, um Bestandreservationen für eine einzelne Bestandcharge zu ermöglichen.
-author: omulvad
-manager: tfehr
+author: Henrikan
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, EcoResStorageDimensionGroup, EcoResTrackingDimensionGroup, InventBatch, InventModelGroup, PdsAskSameLotForm, PdsCustSellableDays, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 28911
 ms.assetid: 5823d75e-f839-46dd-beb3-e09b79fc8aa4
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce750745d6f094a296b43827568ee1745179de2d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 0d4f3ee5d99648155e663c9ad0849b0b9ae3f80e
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429116"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576615"
 ---
 # <a name="reserve-the-same-batch-for-a-sales-order"></a>Reservieren derselben Charge für einen Auftrag
 
@@ -44,4 +41,7 @@ Beim Reservieren von Bestand für ein Produkt in einer Auftragsposition, die fü
 - Die Charge ist abgelaufen (unter Berücksichtigung des Ablaufdatums und aller zutreffenden Verkaufstage für Debitoren). Der Artikel kann nach wie vor für die Reservierung berücksichtigt werden, wenn die Lagermodellgruppe für den Artikel First Expiry First Out (FEFO)-datumsgesteuert ist und Mindesthaltbarkeitsdatum als Kommissionierungskriterium ausgewählt wird.
 - Die verbleibende Haltbarkeitsdauer der Charge ist unzureichend (dabei werden das Ablauf- bzw. Mindesthaltbarkeitsdatum sowie alle Verkaufstage für Debitoren berücksichtigt).
 
-Für Elemente, die einer Speicherdimensionsgruppe zugeordnet sind, bei der **Benutzerfehlerprotokoll für Lagerortverwaltungsprozesse verwenden** aktiviert ist, können Sie bestimmte Chargennummern mithilfe einer Reservierungshierarchie reservieren, wobei die Chargennummern-Inventardimension über der Standortdimension definiert ist. Auf der Seite **Chargenreservierung** für Verkaufs- und Transportauftragspositionen können Sie auch mehrere Positionen basierend auf den verfügbaren Chargennummern auswählen und reservieren. Weitere Informationen dazu, was zu tun ist, wenn Sie eine Reservierungshierarchie verwenden, deren Chargennummer unter dem Speicherort liegt, finden Sie unter [Flexible Reservierungsrichtlinie für Dimensionen auf Lagerebene](../warehousing/flexible-warehouse-level-dimension-reservation.md).
+Für Elemente, die einer Speicherdimensionsgruppe zugeordnet sind, bei der **Benutzerfehlerprotokoll für Lagerortverwaltungsprozesse verwenden** aktiviert ist, können Sie bestimmte Chargennummern mithilfe einer Reservierungshierarchie reservieren, wenn die Chargennummern-Inventardimension über der Standortdimension definiert ist. Dieser Typ der Reservierungshierarchie wird auch als eine Reservierungshierarchie *Charge oberhalb \[Lagerplatz\]* bezeichnet. Auf der Seite **Chargenreservierung** für Verkaufs- und Transportauftragspositionen können Sie auch mehrere Positionen basierend auf den verfügbaren Chargennummern auswählen und reservieren. Weitere Informationen dazu, was zu tun ist, wenn Sie eine Reservierungshierarchie verwenden, deren Chargennummer unter dem Lagerplatz liegt (*Charge unterhalb \[Lagerplatz\]*), finden Sie unter [Flexible Reservierungsrichtlinie für Dimensionen auf Lagerebene](../warehousing/flexible-warehouse-level-dimension-reservation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

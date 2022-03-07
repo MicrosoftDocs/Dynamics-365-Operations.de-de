@@ -1,17 +1,14 @@
 ---
 title: Personalisierte Empfehlungen abmelden
-description: In diesem Thema wird erläutert, wie Sie Kunden davon abhalten können, personalisierte Empfehlungen in Microsoft Dynamics 365 Commerce zu erhalten.
+description: In diesem Thema wird erläutert, wie Sie über Microsoft Dynamics 365 Commerce Kunden die Möglichkeit geben, sich vom Empfang personalisierter Empfehlungen abzumelden.
 author: bebeale
-manager: AnnBe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,20 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6a64b45e1326673dd84c3c705491c9c100cdd069
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f634e39fe8ca7ffecfd1952933cb82e1bfe7d5a8eec28a61e1d78d21847f95f6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412537"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772936"
 ---
-# <a name="opt-out-of-personalized-recommendations"></a>Personalisierte Empfehlungen abmelden
+# <a name="opt-out-of-personalized-recommendations"></a>Personalisierte Empfehlungen kündigen
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie Kunden davon abhalten können, personalisierte Empfehlungen in Microsoft Dynamics 365 Commerce zu erhalten.
-
-## <a name="overview"></a>Übersicht
+In diesem Thema wird erläutert, wie Sie über Microsoft Dynamics 365 Commerce Kunden die Möglichkeit geben, sich vom Empfang personalisierter Empfehlungen abzumelden.
 
 Während der Kontoerstellung werden neue Kunden automatisch eingerichtet, um personalisierte Empfehlungen zu erhalten. Jedoch bietet Dynamics 365 Commerce Einzelhändlern verschiedene Möglichkeiten, Benutzern zu ermöglichen, diese Empfehlungen nicht zu erhalten und die Verarbeitung ihrer personenbezogenen Daten einzuschränken. Authentifizierte Benutzer, die sich gegen personalisierte Empfehlungen entscheiden, sehen keine personalisierten Listen mehr. Darüber hinaus werden alle persönlichen Daten, die zur Personalisierung gesammelt werden, aus personalisierten Empfehlungsmodellen entfernt.
 
@@ -49,11 +44,11 @@ In der Kontoverwaltung im Commerce-Backoffice können sich Einzelhändler für B
 1. Suchen Sie auf der Back-Office-Startseite nach **alle Kunden**.
 1. Suchen Sie nach einem Kunden und wählen Sie dann die Registerkarte **Einzelhandel**.
 
-    ![Registerkarte für den Einzelhandel](./media/Disablepersonalizationpart1.png)
+    ![Inforegister „Einzelhandel“.](./media/Disablepersonalizationpart1.png)
 
 1. Unter **Privatsphäre** stellen Sie die Option **Deaktivieren Sie die Personalisierung** auf **Ja** ein.
 
-    ![Datenschutzeinstellungen](./media/Disablepersonalizationpart2.png)
+    ![Datenschutzeinstellungen.](./media/Disablepersonalizationpart2.png)
 
 1. Klicken Sie auf **Speichern** und schließen Sie die Seite.
 
@@ -71,7 +66,7 @@ Kunden möchten möglicherweise eine digitale Kopie ihrer persönlichen Daten er
 
 Das folgende Beispiel zeigt, wie ein Einzelhändler diese Aufgabe ausführen kann.
 
-1. Der Einzelhändler erstellt eine benutzerdefinierte Erweiterung, um persönliche Empfehlungsdaten im Namen des Benutzers abzurufen. Informationen zum Erstellen von Modulen, zum Klonen vorhandener Module, zum Aufrufen von Retail Server-APIs und zum Aufrufen von Datenaktionen finden Sie unter [Online-Kanal-Erweiterbarkeit ](e-commerce-extensibility/overview.md).
+1. Der Einzelhändler erstellt eine benutzerdefinierte Erweiterung, um persönliche Empfehlungsdaten im Namen des Benutzers abzurufen. Informationen zum Erstellen von Modulen, zum Klonen vorhandener Module, zum Aufrufen von Retail Server-APIs und zum Aufrufen von Datenaktionen finden Sie unter [Online-Kanal-Erweiterbarkeit](e-commerce-extensibility/overview.md).
 2. Die benutzerdefinierte Nebenstelle ruft die **Empfehlungen abrufen** Kerndatenaktion ab und übergibt die erforderlichen Informationen an sie, basierend auf den Anforderungen der Liste. Im Falle der **Tipps für Sie** Liste muss die Erweiterung den richtigen Listennamen und die richtige Kunden-ID an die Datenaktion übergeben.
 
     Eine Möglichkeit zum Erstellen der benutzerdefinierten Erweiterung besteht darin, das vorhandene Produktsammlungsmodul zu klonen, das zum Zurückgeben von Empfehlungsergebnissen verwendet wird. Durch Klonen dieses vorhandenen Moduls kann ein Einzelhändler den vorhandenen Code ändern und eine neue Schaltfläche hinzufügen, mit der die Empfehlungsergebnisse in eine CSV-Datei exportiert werden. Weitere Informationen finden Sie unter [Klonen Sie eine Modulbibliothek](e-commerce-extensibility/clone-starter-module.md) und [Produktsammelmodule](product-collection-module-overview.md).
@@ -104,3 +99,6 @@ Das folgende Beispiel zeigt, wie ein Einzelhändler diese Aufgabe ausführen kan
 [Empfehlungen mit Demodaten erstellen](product-recommendations-demo-data.md)
 
 [Produktempfehlungs-FAQs](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

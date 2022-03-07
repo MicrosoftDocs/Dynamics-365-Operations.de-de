@@ -1,26 +1,23 @@
 ---
 title: Anlagenverwaltung in Anlagen integrieren
 description: In diesem Thema wird erläutert, wie Sie die Module Anlagenverwaltung und Anlagevermögen integrieren, damit Sie Sachanlagen mit Wartungsanlagen verknüpfen können.
-author: kamaybac
-manager: tfehr
+author: johanhoffmann
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: dabourq
+ms.author: johanho
 ms.search.validFrom: 2020-04-17
-ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: cdda44d361011706fe0ba170309908533aa0c2f7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.11
+ms.openlocfilehash: 40e4fdce50b335668a53d2efe53b7cf6c66f364f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428594"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567582"
 ---
 # <a name="integrate-asset-management-with-fixed-assets"></a>Anlagenverwaltung in Anlagen integrieren
 
@@ -115,3 +112,6 @@ Um eine vorhandene Zuordnung zwischen einer Wartungsanlage und einer Anlage zu e
 1. Suchen und öffnen Sie die Anlage.
 1. Auf dem Inforegister **Anlage** löschen Sie den Wert aus dem Feld **Funktionaler Standort**.
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,33 +1,35 @@
 ---
 title: Lebensereignisse verarbeiten
 description: Während des Mitarbeiterlebenszyklus in Microsoft Dynamics 365 Human Resources kann es bei jedem Mitarbeiter zu verschiedenen Änderungen von Lebensereignissen kommen.
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes, BenefitEligibilityProcessResultViewer
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ada986888a22afe83885985a694cd00ff94c9217
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9155795edf657d6589539e58d4c1536f7e9d64c3
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418625"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069654"
 ---
 # <a name="process-life-events"></a>Lebensereignisse verarbeiten
 
-Während des Mitarbeiterlebenszyklus in Microsoft Dynamics 365 Human Resources kann es bei jedem Mitarbeiter zu verschiedenen Änderungen von Lebensereignissen kommen. Beispiel: Ehe, Wechsel der Beschäftigung oder Wechsel von Unterhaltsberechtigten/Begünstigten. Um Lebensereignisse zu verwenden, müssen Sie Lebensereignisse im Formular „Vorteilparameter“ aktivieren, Lebensereignistypen einrichten und Lebensereignisoptionen für Plantypen einrichten.
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Während des Mitarbeiterlebenszyklus in Microsoft Dynamics 365 Human Resources kann es bei jedem Mitarbeiter zu verschiedenen Änderungen von Lebensereignissen kommen. Beispiel: Ehe, Wechsel der Beschäftigung oder Wechsel von Unterhaltsberechtigten/Begünstigten. Um Lebensereignisse zu verwenden, müssen Sie Lebensereignisse auf der Seite **Leistungsparameter** aktivieren, Lebensereignistypen festlegen und Lebensereignisoptionen für Plantypen einrichten.
 
 Bevor Sie Lebensereignisse verarbeiten können, müssen Sie mindestens einmal während einer Einstellungsperiode eine offene Registrierung durchgeführt haben. In den USA erfolgt die offene Registrierung in der Regel einmal pro Jahr. Außerhalb der USA kann eine offene Registrierung zum Zeitpunkt der Einstellung durchgeführt werden. Eine Arbeitskraft muss keinen Vorteilsplan auswählen, damit Lebensereignisse verarbeitet werden können, sie muss jedoch in die offene Registrierungsverarbeitung einbezogen worden sein. 
 
@@ -57,3 +59,6 @@ Wenn beispielsweise heute der 1. Februar ist und die Arbeitskraft Joe Smith am 
    4. Wählen Sie **OK**. Der Prozess wird mit den von Ihnen festgelegten Parametern ausgeführt.
 
 4. Wählen Sie **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

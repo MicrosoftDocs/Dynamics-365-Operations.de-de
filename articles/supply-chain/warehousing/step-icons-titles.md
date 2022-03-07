@@ -1,21 +1,21 @@
 ---
 title: Weisen Sie der mobilen Warehouse Management-App Schrittsymbole und -titel zu
 description: In diesem Thema wird beschrieben, wie Sie Schrittsymbole und -titel für neue oder angepasste Aufgabenabläufe für die mobile Warehouse Management-App zuweisen.
-author: Mirzaab
+author: MarkusFogelberg
 ms.date: 05/17/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: mafoge
 ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a687c26cacc0dbdaf0091b2d26277864553ca1bf
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: a74847b50512d2f712e5a9a5125e520afc732591
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103312"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344494"
 ---
 # <a name="assign-step-icons-and-titles-for-the-warehouse-management-mobile-app"></a>Weisen Sie der mobilen Warehouse Management-App Schrittsymbole und -titel zu
 
@@ -27,9 +27,12 @@ Die folgenden Abbildungen zeigen, wie Schrittsymbole und -titel in der mobilen W
 
 ![Beispiel für ein Schrittsymbol und einen Schritttitel in der mobilen Warehouse Management-App.](media/step-icon-example.png "Beispiel für ein Schrittsymbol und einen Schritttitel in der mobilen Warehouse Management-App")
 
-## <a name="turn-this-feature-on-or-off"></a>Schalten Sie diese Funktion ein oder aus
+## <a name="turn-on-this-feature-in-your-system"></a>Diese Funktion in Ihrem System aktivieren
 
-Um die in diesem Thema beschriebene Funktionalität zu verwenden, muss die Funktion *Benutzereinstellungen, Symbole und Schritttitel für die neue Lagerort-App* für Ihr System aktiviert sein. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Benutzereinstellungen, Symbole und Schritttitel für die neue Lagerort-App* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
+Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Admins können die Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktion zu prüfen und sie einzuschalten. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+
+- **Module:** *Lagerortverwaltung*
+- **Funktionsname:** *Benutzereinstellungen, Symbole und Schritttitel für die neue Lagerort-App*
 
 ## <a name="standard-step-ids-classes-and-icons"></a>Standard-Schritt-IDs, Klassen und Symbole
 

@@ -1,12 +1,10 @@
 ---
 title: Power BI-Inhalt – Practice Manager
-description: In diesem Thema wird beschrieben, was im Power BI-Inhalt – Practice Manager enthalten ist. Es wird beschrieben, wie auf die Berichte, die im Inhalt enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet werden.
+description: In diesem Thema wird beschrieben, was im Power BI-Inhalt – Practice Manager enthalten ist.
 author: KimANelson
-manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ProjManagementWorkspace
 audience: Application User, IT Pro
@@ -16,18 +14,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 17a68e5aedb8b085c85d1ed7b6ad87f3eaecfc25
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 77079a8013cb98acc5f36787ca10706c361736d3
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685704"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753089"
 ---
 # <a name="practice-manager-power-bi-content"></a>Power BI-Inhalt – Practice Manager
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, was im Power BI-Inhalt – **Practice Manager** enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
+In diesem Thema wird beschrieben, was im Microsoft Power BI-Inhalt **Practice Manager** enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
 
 ## <a name="overview"></a>Übersicht
 
@@ -117,3 +115,6 @@ In den folgenden Abschnitten werden die aggregierten Messungen, die in jeder Ent
 | Zentrale aggregierte Messungen       | Feld               | Beschreibung |
 |---------------------------------|---------------------|-------------|
 | Geplante Kosten für abgeschlossene Aktivität | Sum(TotalCostPrice) | Der Gesamteinstandspreis in Vorkalkulationen für alle Projektbuchungsarten mit abgeschlossenen Aufgaben. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

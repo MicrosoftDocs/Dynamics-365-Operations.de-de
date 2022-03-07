@@ -2,15 +2,12 @@
 title: IFrame-Modul
 description: Dieses Thema behandelt das iFrame-Modul und beschreibt, wie es Webseiten in Microsoft Dynamics 365 Commerce hinzugefügt wird.
 author: anupamar-ms
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 11/04/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 4afd8f60938c99d1981be1625ef28f91d9e4bb4c
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.openlocfilehash: bce6a50e8c145f8961bd0c839fe16c1f4d69e811
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665395"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7754013"
 ---
-# <a name="iframe-module"></a>IFrame-Modul
+# <a name="iframe-module"></a>Iframe-Modul
 
 [!include [banner](includes/banner.md)]
 
 Dieses Thema behandelt das iFrame-Modul und beschreibt, wie es Webseiten in Microsoft Dynamics 365 Commerce hinzugefügt wird.
-
-## <a name="overview"></a>Übersicht
 
 Ein iFrame-Modul stellt einen iFrame (Inlineframe) bereit, der externe Inhalte auf einer Website hostet. Zum Beispiel kann es verwendet werden, um auf einer Webseite ein YouTube-Video oder einen PDF-Datei-Viewer zu hosten. 
 
@@ -42,7 +37,7 @@ Ein iFrame-Modul benötigt eine Ziel-URL. Anschließend wird der Inhalt der Ziel
 
 Das folgende Bild zeigt Beispiele für iFrame-Module, die externe Videos auf Webseiten zeigen.
 
-![Beispiel für iFrame-Module, die externe Videos zeigen](./media/ecommerce-iframe.PNG)
+![Beispiel für iFrame-Module, die externe Videos zeigen.](./media/ecommerce-iframe.PNG)
 
 ## <a name="iframe-module-properties"></a>Hinzufügen von iFrame-Eigenschaften
 
@@ -71,9 +66,15 @@ Gehen Sie wie folgt vor, um einer Seite ein iFrame-Modul hinzuzufügen und ein e
 1. Legen Sie weitere benötigte Eigenschaften fest, wie **Überschrift** und **Höhe**.
 1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
 1. Gehen Sie zur Marketingseite Ihrer Website. Sie sollten sehen, dass das Video im iFrame-Modul gerendert wird.
- 
+
+> [!NOTE]
+> Da das iFrame-Modul externe Inhalte hostet, müssen Site-Autoren sicherstellen, dass die in einem iFrame-Modul gehosteten Inhalte nicht gegen die Richtlinien zur Inhaltseinschränkung des jeweiligen Marktes verstoßen. Wenn auf einer Seite, die das iFrame-Modul verwendet, eine Verletzung der Inhaltsrichtlinien vorliegt, kann der Site-Autor das iFrame-Modul entfernen, indem er die Seite im Site-Builder öffnet und **Modul entfernen** im iFrame-Modulsteckplatz auswählt, speichern Sie die Seite und veröffentlichen Sie sie erneut.
+
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Übersicht über die Modulbibliothek](starter-kit-overview.md)
+[Informationen zur Modulbibliothek](starter-kit-overview.md)
 
 [Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) verwalten](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

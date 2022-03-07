@@ -2,11 +2,9 @@
 title: Sicherungsspeicher von ER-Vorlagen
 description: In diesem Thema wird erläutert, wie der Sicherungsspeicher der elektronischen Berichterstellung (Electronic Reporting, ER) zum Wiederherstellen von Vorlagen verwendet wird.
 author: NickSelin
-manager: AnnBe
 ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 136a81e661590d7af879e816c1142de85fb72e06
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b5de8b9dc06cf10bda1932d5f4ee4484cdae591564fdcd5dd28c5036b82abc66
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681399"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767876"
 ---
 # <a name="backup-storage-of-er-templates"></a>Sicherungsspeicher von ER-Vorlagen
 
@@ -67,19 +65,19 @@ Um den Parameter **Prozedur zur Wiederherstellung der fehlerhaften Vorlagen auto
 > [!NOTE]
 > Dieser Parameter ist als Anwendungsbenutzer definiert und als unternehmensspezifisch protokolliert.
 
-![ER-Konfigurationsseite](./media/GER-BackupTemplates-1.png)
+![EB-Konfigurationsseite.](./media/GER-BackupTemplates-1.png)
 
 Die folgende Abbildung zeigt ein Beispiel der Meldung an, die angezeigt wird, wenn der Parameter **Prozedur zur Wiederherstellung der fehlerhaften Vorlagen automatisch im Stapelverarbeitungsmodus ausführen** auf **Aktiviert** festgelegt ist.
 
-![Seite „Kreditorenzahlungserfassung“](./media/GER-BackupTemplates-2.png)
+![Seite „Kreditorenzahlungserfassung“.](./media/GER-BackupTemplates-2.png)
 
 Die folgende Abbildung zeigt den Stapelverarbeitungsvorgang **Fehlerhafte Vorlagen aus interner Datenbanksicherung wiederherstellen** auf der Seite **Stapelverarbeitungsauftrag**.
 
-![Seite „Batchaufträge“](./media/GER-BackupTemplates-3.png)
+![Seite „Batchaufträge“.](./media/GER-BackupTemplates-3.png)
 
 Das Ausführungsprotokoll des abgeschlossenen Stapelverarbeitungsvorgangs **Fehlerhafte Vorlagen aus interner Datenbanksicherung wiederherstellen** enthält Informationen zu den Vorlagen, die aus dem Sicherungsspeicherort im primären Speicherort wiederhergestellt wurden.
 
-![Seite „Historie des Stapelverarbeitungsauftrags“](./media/GER-BackupTemplates-4.png)
+![Seite „Historie des Stapelverarbeitungsauftrags“.](./media/GER-BackupTemplates-4.png)
 
 Die automatische Erstellung von Sicherungskopien, die sich in ER-Formatkonfigurationen befinden, ist standardmäßig aktiviert. Um die Erstellung von Sicherungskopien von Vorlagen zu beenden, legen Sie die Option **Erstellung von Sicherungskopien von Vorlagen beenden** auf der Registerkarte **Anhänge** der Seite **Elektronische Berichterstellungsparameter** auf **Ja** fest. Sie können diese Seite über den Arbeitsbereich **Elektronische Berichterstellung** öffnen.
 
@@ -87,7 +85,7 @@ Wenn Sie die Option **Erstellung von Sicherungskopien von Vorlagen beenden** auf
 
 Wenn Sie Ihre Umgebung auf Finance and Operations 10.0.5 (Oktober 2019)aktualisiert haben und zu einer neuen Umgebung migrieren möchten, die EB-Formatkonfigurationen enthält, die ausgeführt werden können, wählen Sie **Sicherungsspeicher füllen** auf der Seite **Elektronische Berichterstellungsparameter** aus, bevor die Migration ausgeführt wird. Mit dieser Schaltfläche wird die Erstellung von Sicherungskopien aller verfügbaren Vorlagen gestartet, sodass sie im ER-Sicherungsspeicherort für Vorlagen gespeichert werden können.
 
-![Parameterseite der elektronischen Berichterstellung](./media/GER-BackupTemplates-5.png)
+![Parameterseite der elektronischen Berichterstellung.](./media/GER-BackupTemplates-5.png)
 
 ## <a name="manual-recovery"></a>Manuelle Wiederherstellung
 
@@ -102,3 +100,6 @@ In Finance and Operations Version 10.0.5 ist die Sicherungsspeicherung der EB-Vo
 [Überblick über die elektronische Berichterstellung (Electronic reporting, ER)](general-electronic-reporting.md)
 
 [Konfigurieren Sie das Electronic Reporting (ER) Framework](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

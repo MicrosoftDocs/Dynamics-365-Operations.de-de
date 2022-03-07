@@ -2,7 +2,7 @@
 title: Vorteile von Arbeitskräften registrieren und entfernen
 description: Diese Verfahren zeigt, wie einzelne Arbeitskräfte für einen oder mehrere Vorteile registriert werden können und wie mehrere Arbeitskräfte für einen Vorteil registriert werden können.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
@@ -11,19 +11,21 @@ ms.technology: ''
 ms.search.form: HcmWorker, HcmWorkerEnrollment, HcmBenefitByEligibilityLookup, HcmMassBenefitEnrollment, HcmBenefitLookup, HcmMassBenefitEnrollmentResults, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 36fd724ff27cbb646f3f8a35ca1b30dc86a5afe4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cb56d11cb3acd1e8e39765284269234fc632f17f
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418594"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465101"
 ---
 # <a name="enroll-and-remove-benefits-from-workers"></a>Vorteile von Arbeitskräften registrieren und entfernen
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -58,3 +60,6 @@ Diese Verfahren zeigt, wie einzelne Arbeitskräfte für einen oder mehrere Vorte
 14. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 15. Auf dieser Seite können Sie anzeigen, welche Mitarbeiter für die Leistung registriert wurden, sowie alle Mitarbeiter, die nicht registriert wurden.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

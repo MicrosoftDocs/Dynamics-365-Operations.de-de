@@ -1,16 +1,13 @@
 ---
-title: Übersicht
+title: Verwaltungsüberblick
 description: Dieses Administratorhandbuch unterstützt Sie bei der Einrichtung, Verwaltung und Problembehandlung von Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8008a7e78bb1d1568a79fab436194a04d1ff683c
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 2009b3965f032ae54b83835ae481c47b0234a231
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527860"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6053730"
 ---
-# <a name="overview"></a>Übersicht
+# <a name="administration-overview"></a>Verwaltungsüberblick
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -41,15 +40,15 @@ Dieses Administratorhandbuch unterstützt Sie bei der Einrichtung, Verwaltung un
 
 - Datenintegration einrichten
   - [Datenintegrationstechnologie auswählen](hr-admin-integration-choose-technology.md)
-  - [Common Data Service-Integration konfigurieren](hr-admin-integration-common-data-service.md)
+  - [Dataverse-Integration konfigurieren](hr-admin-integration-common-data-service.md)
   - [Integration mit Finance konfigurieren](hr-admin-integration-finance.md)
   - [Integration mit Dayforce konfigurieren](hr-admin-integration-dayforce.md)
   - [Eine wiederkehrende Datenexport-App erstellen](hr-admin-integration-recurring-data-export.md)
   - In Office integrieren
-    - [Lernprogramm zur Office-Integration](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Entitätsdaten in Excel aktualisieren](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Möglichkeit „In Excel öffnen“ schaffen](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Problembehandlung bei der Office-Integration](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Lernprogramm zur Office-Integration](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Entitätsdaten in Excel aktualisieren](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Möglichkeit „In Excel öffnen“ schaffen](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Problembehandlung bei der Office-Integration](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
 
 - [Funktionen verwalten](hr-admin-manage-features.md)
 
@@ -84,7 +83,7 @@ Dieses Administratorhandbuch unterstützt Sie bei der Einrichtung, Verwaltung un
   - [Dokumentation oder Schulung mit der Aufgabenaufzeichnung erstellen](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
 
 - Problembehandlung in der Personalverwaltung
-  - [Support anfordern](hr-admin-troubleshooting-support.md)
+  - [Support anfordern](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
   - [Leistung mit automatischen Bereinigungsaufgaben optimieren](hr-admin-troubleshooting-batch-history.md)
   - [Analytics-Berichte werden nicht aktualisiert](hr-admin-troubleshooting-analytic-reports.md)
   - [Erstellen einer Umgebung im Power Apps Admin Center nicht möglich](hr-admin-troubleshooting-power-apps.md)
@@ -102,3 +101,5 @@ Dieses Administratorhandbuch unterstützt Sie bei der Einrichtung, Verwaltung un
 - [Neuerungen oder Änderungen in Human Resources](hr-admin-whats-new.md)
 - [Entwicklerhandbuch](hr-developer-overview.md)
 - [Benutzerhandbuch](hr-hrpro-overview.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

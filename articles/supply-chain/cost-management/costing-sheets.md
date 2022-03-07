@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: CostSheetDesigner, CostSheetCalculationFactor
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 53201
 ms.assetid: e7d72b43-3892-49ae-8821-9eede3f4d24a
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f83c18bb8700e274bcf8cb369a7436a17450bf7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 34924491b92a043354354d6421df7e9af2dda68d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428989"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232373"
 ---
 # <a name="costing-sheets"></a>Nachkalkulationsbögen
 
@@ -50,3 +49,6 @@ Der Nachkalkulationsbogen wird als Teil der Seite **Artikelkosten berechnen** an
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Kunden-FAQs
 description: Dieser Artikel enthält Antworten auf häufig gestellte Fragen zum Finance and Operations-Client.
 author: jasongre
-manager: AnnBe
 ms.date: 09/11/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -16,16 +14,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6fe6da2575b7de866de614ad399c8ad5c0110d9a
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: e64fb2453f17760b17ca2a7d3f593ac34cde0cc9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798498"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071032"
 ---
-# <a name="client-faq"></a>Kunden-FAQ
+# <a name="client-faq"></a>Kunden-FAQs
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Dieser Artikel enthält Antworten auf häufig gestellte Fragen zum Finance and Operations-Client.
 
@@ -54,3 +55,6 @@ Die **Details anzeigen**-Option ist auf mehrere Arten verfügbar:
 
 - Wenn ein Steuerelemente die Funktionen **Details anzeigen** hat, und wenn das Steuerelement einen Wert enthält, dann wird der Wert als Link angezeigt. Sie können auf die Verknüpfung klicken, um die Seite zu öffnen, die zusätzliche Details enthält.
 - **Details anzeigen** ist außerdem eine Option in den Kontextmenüs. Weitere Informationen zur Anzeige von Kontextmenüs, die beim Rechtsklick angezeigt werden, finden Sie im vorherigen Abschnitt.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,30 +1,27 @@
 ---
 title: Bonformate einrichten und entwerfen
 description: Dieser Artikel beschreibt, Sie wie Sie Formularlayouts erstellen und ändern, um zu steuern, wie Bons, Rechnungen und andere Dokumente gedruckt werden. Dynamics 365 Commerce umfasst einen Formularlayout-Designer, mit dem Sie einfach verschiedene Formularlayouts erstellen und ändern können.
-author: rubencdelgado
-manager: AnnBe
-ms.date: 06/20/2017
+author: BrianShook
+ms.date: 09/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFormLayout
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 57841
 ms.assetid: e530dd8e-95e2-4021-90bd-ce1235f9e250
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ab6b01d6833850af8c04167d94b0a60c7312075c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dac0ad75ff35367b5d6ac84c75c68e22e2cb0cb1
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412669"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779400"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Bonformate einrichten und entwerfen
 
@@ -37,7 +34,7 @@ Dieser Artikel beschreibt, Sie wie Sie Formularlayouts erstellen und ändern, um
 
 ## <a name="set-up-a-receipt-format"></a>Einrichten eines Bonformats
 
-1. Klicken Sie auf **Retail und Commerce** &gt; **Kanaleinrichtung** &gt; **POS-Einrichtung** &gt; **POS** &gt; **Bonlayouts**.
+1. Klicken Sie auf **Einzelhandel und Handel** &gt; **Kanaleinrichtung** &gt; **POS-Einrichtung** &gt; **POS** &gt; **Bonlayouts**.
 2. Klicken Sie auf der Seite **Bonlayout** auf **Neu**, um ein neues Formularlayout zu erstellen oder ein vorhandenes Formularlayout auszuwählen.
 3. Geben Sie im Feld **Bonlayout** eine Kennung für das Formularlayout ein, und wählen Sie anschließend den Bontyp aus, für den dieses Layout verwendet wird. Sie können auch eine Beschreibung und einen Kurznamen für den Bon in das Feld **Titel** eingeben.
 4. Wählen Sie auf dem Inforegister **Allgemein** eine Option aus, um das Druckverhalten zu definieren:
@@ -47,11 +44,20 @@ Dieser Artikel beschreibt, Sie wie Sie Formularlayouts erstellen und ändern, um
     - **Bedienerführung für Benutzer** - Der Benutzer wird aufgefordert, den Bon zu drucken.
     - **Nach Bedarf** - Diese Option wird nur für Geschenkbons verwendet. Wenn diese Option aktiviert ist, kann der Benutzer einen Geschenkbon auf der Seite **Änderung** drucken, wenn ein Geschenkbon erforderlich ist.
 
+## <a name="print-images"></a>Bilder drucken
+
+Der Belegdesigner enthält eine **Logo**-Variable. Sie können diese Variable verwenden, um ein Bild anzugeben, das auf Belegen gedruckt werden soll. Bilder, die durch die **Logo**-Variable auf Belegen gedruckt werden, sollten ein monochromer Bitmap-Dateityp (.bmp) sein. Wenn im Belegdesigner ein Bitmap-Bild angegeben ist, aber beim Senden des Belegs an den Drucker nicht gedruckt wird, kann eines der folgenden Probleme die Ursache sein:
+
+- Die Dateigröße ist zu groß oder die Pixelabmessungen des Bildes sind nicht mit dem Drucker kompatibel. Versuchen Sie in diesem Fall, die Auflösung oder die Abmessungen der Bilddatei zu reduzieren.
+- Einige Object Linking and Embedding for Point of Sale (OPOS)-Druckertreiber implementieren die **PrintMemoryBitmap**-Methode, die Hardwarestationen zum Drucken von Logobildern verwenden. Versuchen Sie in diesem Fall, der Datei **HardwareStation.Extension.config** die folgende Markierung Ihrer dedizierten oder gemeinsam genutzten Hardwarestation hinzuzufügen:
+
+    `<add name="HardwareStation.UsePrintBitmapMethod" value="true"/>`
+
 ## <a name="design-a-receipt-format"></a>Entwerfen eines Bonformats
 
 Mit dem Designer für Formularlayout können Sie das Layout des Formulardokuments grafisch erstellen. Die Seite **Designer für Bonformat** hat drei Abschnitte: **Kopfzeile**, **Positionen** und **Fußzeile**. Bei einigen Formularlayouttypen werden Elemente aus allen drei Abschnitten werden, bei anderen nur Elemente aus einem oder zwei der Abschnitte. Klicken Sie zum Anzeigen der verfügbaren Elemente für jeden Abschnitt auf die entsprechende Schaltfläche im Navigationsbereich links auf der Seite.
 
-1. Klicken Sie auf **Retail und Commerce** &gt; **Kanaleinrichtung** &gt; **POS-Einrichtung** &gt; **POS** &gt; **Bonlayouts**.
+1. Klicken Sie auf **Einzelhandel und Handel** &gt; **Kanaleinrichtung** &gt; **POS-Einrichtung** &gt; **POS** &gt; **Bonlayouts**.
 2. Wählen Sie auf der Seite **Bonlayout** ein Formularlayout aus, und klicken Sie anschließend auf **Designer**.
 3. Klicken Sie auf **Ausführen**, um mit der Installation des Commerce-Designer-Hosts zu beginnen.
 4. Klicken Sie auf der Benachrichtigungsleiste, die unten im Internet Explorer-Fenster angezeigt wird, auf **Öffnen**, um den Ein-Klick-Designer zu starten. (Die Benachrichtigungsleiste wird möglicherweise an einem anderen Speicherort in anderen Browsern.) Anhand der Statusleiste wird der Fortschritt des Installationsvorgangs angezeigt.
@@ -77,8 +83,11 @@ Mit dem Designer für Formularlayout können Sie das Layout des Formulardokument
 
 Bonprofile werden durch das Hardwareprofil direkt zu den Druckern zugewiesen.
 
-1. Öffnen Sie das Hardwareprofil, indem Sie auf **Retail und Commerce** &gt; **Kanaleinrichtung** &gt; **POS-Einrichtung** &gt; **POS-Profile** &gt; **Hardwareprofil** klicken.
+1. Öffnen Sie das Hardwareprofil, indem Sie auf **Einzelhandel und Handel** &gt; **Kanaleinrichtung** &gt; **POS-Einrichtung** &gt; **POS-Profile** &gt; **Hardwareprofil** klicken.
 2. Wählen Sie den Drucker aus, und weisen Sie dann im Feld **Bonprofil** das Bonprofil zu, das im Register verwendet werden soll.
 
 > [!NOTE]
 > Wenn zwei Drucker verwendet werden, kann ein Drucker verwendet werden, um standardmäßige Thermobons mit 40 Spalten zu drucken. Der zweite Drucker wird in der Regel verwendet, um ganzseitige Bontypen zu drucken, die weitere Informationen enthalten. Zu diesen Bontypen gehören Bons für Debitorenaufträge und Debitorenrechnungen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

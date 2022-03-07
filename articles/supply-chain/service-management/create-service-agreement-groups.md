@@ -1,12 +1,10 @@
 ---
 title: Erstellen von Servicevereinbarungsgruppen
-description: Servicevereinbarungsgruppen sind hilfreich beim Sortieren und Filtern von Servicevereinbarungen.
-author: ShylaThompson
-manager: tfehr
+description: Dieses Thema enthält ein Verfahren, das zeigt, wie Servicevertagsgruppen erstellt werden.
+author: kamaybac
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAAgreementGroup
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bbafd65073e6aba8f02aaed6877b8c1658a6dedc
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5770bd9d958b63e4c62135f39224aee68247beff
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965929"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580431"
 ---
 # <a name="create-service-agreement-groups"></a>Erstellen von Servicevereinbarungsgruppen 
 
@@ -30,7 +28,7 @@ ms.locfileid: "4965929"
 
 Servicevereinbarungsgruppen sind hilfreich beim Sortieren und Filtern von Servicevereinbarungen.
 
-1. Klicken Sie auf **Serviceverwaltung** \> **Einstellungen** \> **Servicevereinbarungen** \> **Serviceverinbarungsgruppen**.
+1. Wechseln Sie zu **Serviceverwaltung** \> **Einstellungen** \> **Servicevereinbarungen** \> **Serviceverinbarungsgruppen**.
 2. Erstellen Sie durch Drücken von **Alt+N** eine neue Servicevereinbarungsgruppe.
 3. Weisen Sie im Feld **Servicevereinbarungsgruppe**  die Servicevereinbarung einer vorhandenen Servicevereinbarungsgruppe zu.
 4. Geben Sie im Feld **Beschreibung** eine Beschreibung für die Servicevereinbarungsgruppe ein.
@@ -42,3 +40,6 @@ Servicevereinbarungsgruppen sind hilfreich beim Sortieren und Filtern von Servic
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Servicevereinbarung – Übersicht](service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
