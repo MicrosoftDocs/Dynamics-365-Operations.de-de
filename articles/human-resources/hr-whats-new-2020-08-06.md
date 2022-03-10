@@ -2,15 +2,12 @@
 title: Neuerungen und Änderungen in Dynamics 365 Human Resources (06. August 2020)
 description: Dieses Thema beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 06. August 2020 neu sind oder geändert wurden.
 author: andreabichsel
-manager: tfehr
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
@@ -18,40 +15,40 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-08-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 235af2d4d10687e9d7d7676c29c95428eab99b0a
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: dbcf854330b7c5ba6ca812a5aed384584c05ce8d
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5467722"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062185"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-06-2020"></a>Neuerungen und Änderungen in Dynamics 365 Human Resources (06. August 2020)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Human Resources neu oder geändert wurden. Änderungen gelten für Build-Nummer 8.1.3444. Die Zahlen in Klammern in einigen Überschriften beziehen sich zur Referenz auf die LCS-Supportnummern.
 
 ## <a name="platform-update-1001236-is-now-available"></a>Plattform-Update 10.0.12(36) ist jetzt verfügbar
 
-Weitere Informationen finden Sie unter [Plattform-Updates für Version 10.0.12 von Finance and Operations Apps (August 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12).
+Weitere Informationen finden Sie unter [Plattform-Updates für die Version 10.0.12 der Apps für Finanzen und Betrieb (August 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
 
 ## <a name="data-management-framework-dmf-entities-for-benefits-management"></a>Data Management Framework (DMF) Entitäten für das Leistungsmanagement
  
 Leistungsverwaltungsentitäten geben frei. Mit DMF-Entitäten können Daten importiert und exportiert werden, um so das Leistungsmanagement einfach zu konfigurieren. Zum Verschieben von Daten steht auch eine Vorlage für das Leistungsmanagement bereit. Die Vorlage exportiert und importiert die Daten nacheinander, um die Datenabhängigkeiten zu berücksichtigen. Weitere Informationen finden Sie hier:
 
-- [Unterstützung für DMF-Entitäten](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/dmf-entity-support) im Dynamics 365 2020 Veröffentlichungsplan Welle 1
-- [Datenverwaltung – Übersicht](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages)
+- [Unterstützung für DMF-Entitäten](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/dmf-entity-support) im Dynamics 365 2020 Veröffentlichungsplan Welle 1
+- [Datenverwaltung – Übersicht](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md)
 
 
 ## <a name="claire-creates-a-workflow-for-buying-and-selling-leave-requests-446557"></a>Claire erstellt einen Workflow für den Kauf und Verkauf von Urlaubsanträgen (446557)
 
 Weitere Informationen finden Sie hier:
 
-- [Mitarbeitern erlauben, Urlaub zu kaufen und zu verkaufen](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) im Dynamics 365 2020 Veröffentlichungsplan Welle 2
-- [Kauf- und Verkaufsurlaubsrichtlinien verwalten](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-buy-and-sell-leave-policies)
-- [Urlaub kaufen und verkaufen](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-buy-sell-leave)
+- [Mitarbeitern erlauben, Urlaub zu kaufen und zu verkaufen](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) im Dynamics 365 2020 Veröffentlichungsplan Welle 2
+- [Kauf- und Verkaufsurlaubsrichtlinien verwalten](./hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+- [Urlaub kaufen und verkaufen](./hr-employee-self-service-buy-sell-leave.md)
 
 
 ## <a name="worker-postal-addresses-v2-entity-has-access-across-legal-entities-with-restricted-access-459126"></a>Postanschriften der Entität „Arbeitskraft-Postanschrift“ V2 hat Zugriff auf juristische Personen mit eingeschränktem Zugriff (459126)
@@ -64,7 +61,7 @@ Wenn Sie den Platzhalter verwenden, um eine Leistungsüberprüfung im Überprüf
 
 ## <a name="new-entities-for-buying-and-selling-leave-473180"></a>Neue Entitäten für den Kauf und Verkauf von Urlaub(473180)
 
-Datenverwaltungs-Framework-Entitäten stehen jetzt zum Kauf und Verkauf von Urlaub zur Verfügung. Weitere Informationen finden Sie unter [Datenverwaltung – Übersicht](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).
+Datenverwaltungs-Framework-Entitäten stehen jetzt zum Kauf und Verkauf von Urlaub zur Verfügung. Weitere Informationen finden Sie unter [Datenverwaltung – Übersicht](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
 ## <a name="when-viewing-record-information-and-using-advanced-filters-a-user-could-gain-access-to-other-employees-records-472490"></a>Beim Anzeigen von Datensatzinformationen und Verwenden erweiterter Filter kann ein Benutzer auf die Datensätze anderer Mitarbeiter zugreifen (472490)
 
@@ -98,9 +95,9 @@ Mit dieser Änderung ist die Zirkelbezugserkennung der Positionshierarchie auf e
 
 Einige Organisationen bieten eine Leistung, mit dem Mitarbeiter ihren Urlaub kaufen oder verkaufen können. Dieser Prozess wird häufig manuell verwaltet. Diese Funktion automatisiert die Verwaltung von Richtlinien und Anforderungen für die Personalabteilung. Es rationalisiert den Urlaubsmanagementprozess und hilft, Fehler zu beseitigen. Weitere Informationen finden Sie hier:
 
-- [Mitarbeitern erlauben, Urlaub zu kaufen und zu verkaufen](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) im Dynamics 365 2020 Veröffentlichungsplan Welle 2
-- [Kauf- und Verkaufsurlaubsrichtlinien verwalten](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-buy-and-sell-leave-policies)
-- [Urlaub kaufen und verkaufen](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-buy-sell-leave)
+- [Mitarbeitern erlauben, Urlaub zu kaufen und zu verkaufen](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) im Dynamics 365 2020 Veröffentlichungsplan Welle 2
+- [Kauf- und Verkaufsurlaubsrichtlinien verwalten](./hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+- [Urlaub kaufen und verkaufen](./hr-employee-self-service-buy-sell-leave.md)
 
 ## <a name="leave-accrual-for-a-single-company-or-single-plan"></a>Hinterlassen Sie die Rückstellung für ein einzelnes Unternehmen oder einen einzelnen Plan
 
@@ -128,15 +125,15 @@ Sie können eine Regel erstellen, um Abwesenheitsansammlungen für Mitarbeiter m
 
 Mithilfe der Personalisierungsfunktionen für die Personalabteilung können Sie Felder zu Pflichtfeldern machen. Diese Funktion erfordert **Gespeicherte Ansichten**. Weitere Informationen zu gespeicherten Ansichten finden Sie hier:
 
-- [Gespeicherte Ansichten – allgemeine Verfügbarkeit](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) im Dynamics 365 2020 Veröffentlichungsplan Welle 2
-- [Buildformulare, die gespeicherte Ansichten vollständig verwenden](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/understanding-saved-views)
+- [Gespeicherte Ansichten – allgemeine Verfügbarkeit](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) im Dynamics 365 2020 Veröffentlichungsplan Welle 2
+- [Buildformulare, die gespeicherte Ansichten vollständig verwenden](../fin-ops-core/dev-itpro/user-interface/understanding-saved-views.md)
 
 ### <a name="human-resources-application-in-teams"></a>Human Resources Anwendung in Teams
 
 Mitarbeiter können Abwesenheiten von der Arbeit mit Microsoft Teams anfordern. Sie können mit einem Bot interagieren, um Urlaubsanträge zu erstellen. Weitere Informationen finden Sie hier:
 
-- [Abwicklung von Urlaub und Abwesenheit von Mitarbeitern in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) im der Dynamics 365 2020 Veröffentlichungsplan Welle 1
-- [Human Resources-App in Teams](https://go.microsoft.com/fwlink/?linkid=2127841)
+- [Abwicklung von Urlaub und Abwesenheit von Mitarbeitern in Microsoft Teams](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) im der Dynamics 365 2020 Veröffentlichungsplan Welle 1
+- [Human Resources-App in Teams](./hr-admin-teams-leave-app.md)
 
 ### <a name="dmf-entity-available-for-accrual-suspensions"></a>DMF-Entität verfügbar für Ansammlungsaussetzungen
 
@@ -174,7 +171,7 @@ Im Arbeitsbereich **Funktionsverwaltung** werden möglicherweise Funktionen ange
 ## <a name="see-also"></a>Siehe auch
 
 [Neuerungen oder Änderungen in Human Resources](hr-admin-whats-new.md)</br>
-[Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
 [Funktionen verwalten](hr-admin-manage-features.md)
 

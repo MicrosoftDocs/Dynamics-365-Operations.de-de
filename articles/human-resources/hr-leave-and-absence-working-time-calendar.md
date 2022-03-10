@@ -1,31 +1,33 @@
 ---
 title: Erstellen eines Arbeitszeitkalenders
 description: Definieren Sie einen Arbeitszeitkalender, Feiertage und arbeitsfreie Zeiten in Dynamics 365 Human Resources.
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/01/2020
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2bedbe65f146c4159c2a809de8f683815fd4a01f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 54aa85acb43c1e9a474bea9996c72c7e7017c245
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418656"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068918"
 ---
 # <a name="create-a-working-time-calendar"></a>Erstellen eines Arbeitszeitkalenders
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Ein Arbeitszeitkalender in Dynamics 365 Human Resources zeigt die Tage und Stunden an, an denen Mitarbeiter in Ihrer Organisation arbeiten. Wenn ein Mitarbeiter eine Freistellung beantragt, muss er sich keine Gedanken über Feiertage und Schließungen machen.
 
@@ -65,7 +67,7 @@ Sie können Feiertage und Schließungen separat von einem Arbeitszeitkalender hi
 
 Sie können Feiertage und Schließungen separat von einem Arbeitszeitkalender hinzufügen oder ändern.
 
-1. Klicken Sie auf der Seite **Organisationsadministration** auf **Arbeitsfreie Zeit**.
+1. Wählen Sie auf der Seite **Organisationsadministration** auf **ARBEITSFREIE ZEIT**.
 
 2. Wählen Sie **Neu** und geben Sie einen Namen und den Zeitraum für die arbeitsfreie Zeit ein.
 
@@ -75,3 +77,6 @@ Wenn Sie die Vorschau für Urlaubs- und Abwesenheitskorrekturen für Feiertage a
 
 - [Urlaubs- und Abwesenheitsübersicht](hr-leave-and-absence-overview.md)
 - [Urlaubs- und Abwesenheitstypen konfigurieren](hr-leave-and-absence-types.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

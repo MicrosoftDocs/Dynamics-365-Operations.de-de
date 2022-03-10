@@ -1,37 +1,36 @@
 ---
-title: Cashflow-Planung (Vorschau)
+title: Bargeldplanung
 description: In diesem Thema wird die Funktion zur Cashflow-Planung beschrieben.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 05/19/2020
+ms.date: 12/21/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 14151
+ms.custom:
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 0df58d3571b124acbd1edbc6d6acdd49479c309e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 62e30e382d94e4eff73789b3e884c6b81afce6c1
+ms.sourcegitcommit: c8dc60bb760553f166409c2e06dd2377f601c006
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4990588"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "7945828"
 ---
-# <a name="cash-flow-forecast-preview"></a>Cashflow-Planung (Vorschau)
+# <a name="cash-forecast"></a>Bargeldplanung
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Der Cashflow ist für jedes Unternehmen von entscheidender Bedeutung. Selbst profitable Unternehmen können insolvent werden, wenn sie den Cashflow nicht aufrechterhalten, um den unmittelbaren Bedarf zu decken. Die Funktion zur Cashflow-Planung in Finance Insights kann Unternehmen dabei helfen, ihre Bargeldbilanz effektiv zu überwachen und zu verwalten. Diese Funktion verwendet Machine Learning, um Unternehmen dabei zu helfen, Cashflows genauer als bisher vorherzusagen. Es kann Managern auch dabei helfen, Entscheidungen zu treffen, die die Chancen im Kontext ihrer aktuellen Bargeldposition optimieren. 
 
-Für die meisten Unternehmen ist die Verwaltung des Cashflows und die Durchführung von Cashflow-Planungen ein langwieriger, sich wiederholender und manueller Prozess. Die meisten Unternehmen verlassen sich auf Microsoft Excel-Lösungen mit unterschiedlicher Komplexität. Zu den Herausforderungen bei der genauen Prognose des Cashflows gehören:
+Für die meisten Unternehmen ist die Verwaltung des Cashflows und die Durchführung von Cashflow-Planungen ein langwieriger, sich wiederholender und manueller Prozess. Die meisten Unternehmen verlassen sich auf Microsoft Excel-Lösungen mit unterschiedlicher Komplexität. Zu den Herausforderungen bei der genauen Prognose des Cashflows gehören folgende Punkte:
 
 - Daten stehen Entscheidungsträgern nicht zur Verfügung, da sie an mehreren Stellen verteilt sind, darunter: 
   - Das Buchhaltungs- oder Unternehmensressourcenplanungssystem
@@ -44,26 +43,17 @@ Für die meisten Unternehmen ist die Verwaltung des Cashflows und die Durchführ
 ## <a name="details-of-the-cash-flow-forecasts-capability"></a>Details zur Fähigkeit zur Cashflow-Planung
 Die Cashflow-Planungsfunktion umfasst die folgenden Funktionen. 
 
-- Erleichtert die Integration von Cashflow-Daten von externen Systemen in Dynamics 365 Finance. Cashflow-Planungen können auch das Framework für Datenimport-Export verwenden. Dieses Framework erleichtert die Integration in Excel OData. Sie können auch Daten aus mehreren Quellen kombinieren, um eine umfassende Cashflow-Lösung zu erstellen. 
-
-- Führt eine intelligente Bargeldposition ein. Die Bargeldposition wird basierend auf dem Zahlungsverhalten des Debitors erstellt, um vorherzusagen, wann ein Unternehmen mit Bargeld auf seinen Konten rechnen kann. Außerdem werden die historischen Muster zahlender Kreditoren analysiert, um vorherzusagen, wann zukünftige Rechnungen und Bestellungen voraussichtlich bezahlt werden. 
-
 - Einführung einer intelligenten Cashflow-Planung für Langzeitprognosen unter Verwendung von Zeitreihenprognosen durch automatisierte Integration in AI Builder.
 
-- Bietet die Möglichkeit, bestimmte Cashflow-Positionen oder Prognosen zu speichern, zu bearbeiten und dann die Prognoseleistung einfach mit den tatsächlichen Finanzdaten zu vergleichen und zu messen.
+- Bietet Ihnen die Möglichkeit, bestimmte Cashflow-Positionen oder Prognosen zu speichern, zu bearbeiten und dann die Prognoseleistung einfach mit den tatsächlichen Finanzdaten zu vergleichen und zu messen.
 
 - Aktiviert die Was-wäre-wenn-Analyse durch den Vergleich von Momentaufnahmen. Sie können beispielsweise mehrere Momentaufnahmen erstellen, die optimistische, pessimistische und realistischste Ansichten Ihres Cashflows darstellen, und dann die Unterschiede vergleichen und anzeigen.
 
-- Bietet die Möglichkeit, die Cashflow-Planung in mehreren Währungen über juristische Personen hinweg anzuzeigen und den Cashflow in Bezug auf ein Bankkonto zu filtern und anzuzeigen. 
+- Bietet Ihnen die Möglichkeit, die Cashflow-Planung in mehreren Währungen über juristische Personen hinweg anzuzeigen und den Cashflow in Bezug auf ein Bankkonto zu filtern und anzuzeigen. 
 
 - Hiermit können Sie Bankkonten filtern und anzeigen, die sich auf Finanzdimensionen beziehen.
 
 Die Funktion zur Cashflow-Planung in Dynamics 365 Finance ermöglicht Ihrem Unternehmen, langwierige, komplexe und sich wiederholende Cashflow-Planungen in einen einfachen, automatisierten Prozess umzuwandeln. Durch die Automatisierung der langwierigsten Aspekte der Cashflow-Planung können Sie sich auf kritische Entscheidungen konzentrieren, um die gewünschten Geschäftsergebnisse zu erzielen.
 
-## <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>Einrichten von Dimensionen für die Cashflow-Planung
-Auf der neuen Registerkarte auf der **Einrichtung der Cashflow-Planung** Seite können Sie steuern, welche Finanzdimensionen für die Filterung im **Cashflow-Planung**-Arbeitsbereich verwendet werden sollen. Diese Registerkarte wird nur angezeigt, wenn die Cashflow-Planungsfunktion aktiviert ist. 
 
-Wählen Sie auf der Registerkarte **Dimensionen** aus der Liste der zur Filterung verwendeten Dimensionen aus und verschieben Sie sie mit den Pfeiltasten in die rechte Spalte. Zum Filtern von Cashflow-Planungsdaten können nur zwei Dimensionen ausgewählt werden. 
-
-#### <a name="privacy-notice"></a>Datenschutzhinweis
-Vorschauen (1) wenden möglicherweise weniger Datenschutz- und Sicherheitsmaßnahmen an als der Dynamics 365 Finance and Operations-Dienst, (2) sind nicht in der Service Level Agreement (SLA) für diesen Dienst enthalten, (3) sollten nicht zur Verarbeitung personenbezogener Daten oder anderer Daten verwendet werden, die gesetzlichen oder behördlichen Compliance-Anforderungen unterliegen, und (4) hat begrenzten Support.
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

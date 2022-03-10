@@ -2,11 +2,9 @@
 title: Eine Dynamics 365 Commerce-Evaluierungsumgebung konfigurieren
 description: In diesem Thema wird erläutert, wie eine Microsoft Dynamics 365 Commerce-Auswertungsumgebung nach ihrer Bereitstellung konfiguriert wird.
 author: psimolin
-manager: annbe
-ms.date: 07/16/2020
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9b11ab600bb2aa17cf330947304f5b22dd522081
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: 5883a6e68628d706fa19d7d23b68f17007c32890
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477972"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913726"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Eine Dynamics 365 Commerce-Evaluierungsumgebung konfigurieren
 
@@ -41,6 +39,7 @@ Nachdem Ihre Commerce-Auswertungsumgebung vollständig bereitgestellt wurde, mü
 1. Wählen Sie Ihre Umgebung in der Liste aus.
 1. Wählen Sie in den Umgebungsinformationen rechts die Option **Bei Umgebung anmelden** aus. Sie werden zur Zentralverwaltung von Commerce übermittelt.
 1. Stellen Sie sicher, dass die juristische Person **USRT** oben rechts ausgewählt ist.
+2. Wechseln Sie zu **Commerce-Parameters > Konfigurationsparameter** und vergewissern Sie sich, dass eine Eintrag für **ProductSearch.UseAzureSearch** auf **true** festgelegt ist. Wenn dieser Eintrag fehlt, können Sie diesen Eintrag hinzufügen und **Kanaldatenbank > Vollständige Synchronisierung** für die Commerce Scale Unit ausführen, die Ihrer eCommerce-Website zugeordnet ist.
 
 Stellen Sie bei Aktivitäten nach der Bereitstellung in der Commerce-Zentralverwaltung sicher, dass die juristische Person **USRT** immer ausgewählt ist.
 
@@ -108,6 +107,12 @@ Um Jobs in Commerce zu ermöglichen, folgen Sie diesen Schritten.
     1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Batchauftrag** die Option **Status ändern** aus.
     1. Wählen Sie **Wird abgebrochen** aus, und wählen Sie dann **OK** aus.
 
+1. Wenn der Status des Auftrags **Zurückgehalten** lautet, führen Sie die folgenden Schritte aus:
+
+    1. Wählen Sie den Datensatz aus.
+    1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Batchauftrag** die Option **Status ändern** aus.
+    1. Wählen Sie **Im Wartezustand** und dann **OK** aus.
+
 Optional können Sie auch das Serienintervall für die folgenden Einzelvorgänge auf eine (1) Minute festlegen:
 
 * E-Mail-Benachrichtigungseinzelvorgang für Einzelhandelsauftrag verarbeiten
@@ -130,7 +135,7 @@ Um die vollständige Datensynchronisierung in Commerce auszuführen, führen Sie
 Um Testtransaktionen auf der Site durchzuführen, können Sie diese Testkreditkartendaten verwenden:
 
 - **Kartennummer:** 4111-1111-1111-1111
-- **Ablaufdatum:** 10/20
+- **Ablaufdatum:** 10/30
 - **Kartenprüfwert-Code (CVV):** 737
 
 > [!IMPORTANT]
@@ -142,9 +147,12 @@ Nachdem die Bereitstellungs- und Konfigurationsschritte abgeschlossen sind, kön
 
 Informationen zum Konfigurieren optionaler Funktionen für Ihre Commerce-Auswertungsumgebung erhalten Sie unter [Optionale Funktionen für eine Commerce-Auswertungsumgebung konfigurieren](cpe-optional-features.md).
 
+> [!NOTE]
+> Commerce-Evaluierungsumgebungen werden mit einem vorinstallierten Azure Active Directory (Azure AD) business-to-consumer (B2C) Mandant zu Demonstrationszwecken geliefert. Die Konfiguration eines eigenen Azure AD B2C-Mandanten ist für Evaluierungsumgebungen nicht erforderlich. Wenn Sie jedoch die Evaluierungsumgebung so konfigurieren, dass Sie Ihren eigenen Azure AD B2C-Mandanten verwenden, stellen Sie bitte sicher, dass Sie ``https://login.commerce.dynamics.com/_msdyn365/authresp`` als Antwort-URL in der Azure AD B2C-Anwendung über das Azure-Portal hinzufügen.
+
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Dynamics 365 Commerce-Auswertungsumgebung – Übersicht](cpe-overview.md)
+[Dynamics 365 Commerce-Evaluierungsumgebung – Übersicht](cpe-overview.md)
 
 [Bereitstellen einer Dynamics 365 Commerce-Auswertungsumgebung](provisioning-guide.md)
 
@@ -154,13 +162,15 @@ Informationen zum Konfigurieren optionaler Funktionen für Ihre Commerce-Auswert
 
 [Dynamics 365 Commerce-Auswertungsumgebung – FAQ](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Retail Cloud Scale Unit (RCSU)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure-Portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-Website](https://aka.ms/Dynamics365CommerceWebsite)
+
+[B2C-Mandanten in Commerce einrichten](set-up-B2C-tenant.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

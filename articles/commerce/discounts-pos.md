@@ -1,17 +1,14 @@
 ---
-title: Rabatte im POS anzeigen
+title: Rabatte in POS anzeigen
 description: In diesem Thema wird erläutert, wie Microsoft Dynamics 365 Commerce Vertriebsmitarbeitern dabei hilft, sich über Werbeaktionen zu informieren und wie sie für Cross- und Upsell-Bewegungen genutzt werden können.
 author: ShalabhjainMSFT
-manager: AnnBe
 ms.date: 07/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-Commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail, Commerce
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 7531e250580019a1e9892d22fc7761770227c61f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9e3fa5030cb684c01153d255ca2bd34d9be7dc9945f0c7ec26985cf74540b73d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412569"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731666"
 ---
 # <a name="show-discounts-in-pos"></a>Rabatte im POS anzeigen
 
@@ -36,7 +33,7 @@ Werbeaktionen spielen eine wichtige Rolle bei der Motivation von Kunden, die Kau
 
 Der Handel umfasst einen Vorgang mit dem Namen „Alle Rabatte anzeigen“. Diese Operation zeigt alle Rabatte an, die derzeit in einem Geschäft laufen. Die Operation „Alle Rabatte anzeigen“ kann auf eine Schaltfläche in der Verkaufsstelle (POS) abgebildet werden, und diese Schaltfläche kann der Seite **Willkommen** oder der Seite **Transaktion** hinzugefügt werden. Die folgende Abbildung zeigt ein Beispiel für die geöffnete Seite **Alle Rabatte**.
 
-![Alle Rabatte Seite](./media/View_all_discounts.png "Alle Rabatte Seite")
+![Seite „Alle Rabatte“.](./media/View_all_discounts.png "Alle Rabatte Seite")
 
 Um die Rabatte anzuzeigen, sucht das System nach allen Rabatten, die eine oder mehrere der folgenden Bedingungen erfüllen:
 
@@ -64,8 +61,11 @@ Die folgenden Abbildungen zeigen die Logik, die bestimmt, welche Rabatte in fort
 
 Die folgende Abbildung zeigt die Logik, die verwendet wird, wenn die Steuerung der Rabattgleichzeitigkeit auf **Bester Preis und Verbindung innerhalb der Priorität, niemals Verbindung über die Prioritäten** gesetzt wird.
 
-![Logik für Bestpreis und Verbindung innerhalb der Priorität, niemals Verbindung über die Prioritäten](./media/Model_1.png "Logik für den besten Preis und die Verbindung innerhalb der Priorität, niemals über die Prioritäten hinweg").
+![Logik für „Bester Preis“ und Verbindung innerhalb der Priorität, niemals Verbindung über die Prioritäten.](./media/Model_1.png "Logik für den besten Preis und die Verbindung innerhalb der Priorität, niemals über die Prioritäten hinweg").
 
 Die folgende Abbildung zeigt die Logik, die verwendet wird, wenn die Steuerung der Rabattgleichzeitigkeit auf **Bester Preis nur innerhalb der Priorität, immer über die Prioritäten hinweg zusammengesetzt** gesetzt wird.
 
-![Logik für Bestpreis nur innerhalb der Priorität, immer über die Priorität zusammengesetzt](./media/Model_2.png "Logik für den besten Preis nur innerhalb der Priorität, immer zusammengesetzt über die Priorität").
+![Logik für „Bester Preis“ nur innerhalb der Priorität, immer über die Priorität zusammengesetzt.](./media/Model_2.png "Logik für den besten Preis nur innerhalb der Priorität, immer zusammengesetzt über die Priorität").
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

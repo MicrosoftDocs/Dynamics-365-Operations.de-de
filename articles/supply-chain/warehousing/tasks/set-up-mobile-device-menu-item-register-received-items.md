@@ -1,27 +1,25 @@
 ---
 title: Eine Menüoption für das mobile Gerät einrichten, um die eingegangenen Artikel zu erfassen
 description: In diesem Thema geht es um die Einrichtung eines Menüpunktes für mobile Geräte.
-author: ShylaThompson
-manager: tfehr
+author: Mirzaab
 ms.date: 08/16/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem, WHSRFMenu, WHSRFDefaultData
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d6f9cf258a991b88faa0d2db90cd3c21f9703267
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 410a70294e5a417950ed5332ec5fdd7da321a31d
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976962"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7565158"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-register-received-items"></a>Eine Menüoption für das mobile Gerät einrichten, um die eingegangenen Artikel zu erfassen
 
@@ -59,3 +57,6 @@ Sie können diese Anleitung im Demodatenunternehmen USMF ausführen. Diese Proze
 6. Wählen Sie **Speichern**.
 7. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

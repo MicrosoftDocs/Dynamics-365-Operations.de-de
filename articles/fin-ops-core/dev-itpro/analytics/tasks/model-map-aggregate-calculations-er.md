@@ -2,11 +2,9 @@
 title: Verwenden von Modellzuordnungskonfigurationen für aggregierte Berechnungen auf Datenbankebene
 description: In diesem Thema wird beschrieben, wie Sie eine neue Konfiguration der Modellzuordnung für die elektronische Berichterstellung (EB) entwerfen und integrierte EB-Funktionen für effiziente Aggregationsberechnungen zu verwenden.
 author: NickSelin
-manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6a392697f6b91bc6555d0d72d09ecd7da32e1a3f
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 9f4ca926414e36e04e6e908a55eebeca8c24a696da4bca0c1c3a6f836373627d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5094264"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745863"
 ---
 # <a name="use-model-mapping-configurations-for-aggregate-calculations-at-the-database-level"></a>Verwenden von Modellzuordnungskonfigurationen für aggregierte Berechnungen auf Datenbankebene
 
@@ -116,3 +114,6 @@ Diese Prozedur wird für Benutzer erstellt, die die Rolle des Systemadministrato
 68. Klicken Sie auf Speichern.
     * Beachten Sie, dass das Feld „Ausführung bei“ angibt, dass diese Gruppierung zur Laufzeit im Arbeitsspeicher ausgeführt wird, obwohl keine Aggregationen definiert sind und die ausgewählte Datenquelle vom Typ „Tabellendatensätze“ sich auf dieselbe „Intrastat“-Tabelle bezieht. Dies ist erforderlich, weil in der Datenquelle einige berechneten Felder enthält, die noch nicht zur SQL-Datenbankebene übersetzt werden können.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

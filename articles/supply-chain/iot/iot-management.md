@@ -1,28 +1,25 @@
 ---
 title: IoT-Intelligenz überwachen und verwalten
 description: In diesem Thema wird erläutert, wie Sie IoT-Intelligenz überwachen und verwalten.
-author: robinarh
-manager: tfehr
+author: tonyafehr
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
+ms.reviewer: tfehr
 ms.custom: ''
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 15021281b9ec33cd0552bca16e3054d0d3cdd589
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8fbd750aa4a316f5e04f3c8622d0847ad9318360
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428954"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782656"
 ---
 # <a name="monitor-and-manage-iot-intelligence"></a>IoT-Intelligenz überwachen und verwalten
 
@@ -59,6 +56,9 @@ Wenn ein Szenario ausgeführt wird, können dürfen die folgende Änderungen nic
 
 Sie können werkseitige Maschinensignale simulieren. Weitere Informationen finden Sie in den folgenden Themen:
 
-+ [IoT DevKit AZ3166 mit Azure IoT Hub verbinden](https://docs.microsoft.com/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
-+ [Raspberry Pi-Onlinesimulator mit Azure IoT Hub (Node.js) verbinden](https://docs.microsoft.com/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
-+ [Übersicht über den Solution Accelerator für die Gerätesimulation](https://docs.microsoft.com/azure/iot-accelerators/iot-accelerators-device-simulation-overview)
++ [IoT DevKit AZ3166 mit Azure IoT Hub verbinden](/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
++ [Raspberry Pi-Onlinesimulator mit Azure IoT Hub (Node.js) verbinden](/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
++ [Übersicht über den Solution Accelerator für die Gerätesimulation](/azure/iot-accelerators/iot-accelerators-device-simulation-overview)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

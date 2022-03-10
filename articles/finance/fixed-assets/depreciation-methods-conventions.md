@@ -1,8 +1,8 @@
 ---
 title: Abschreibungsmethoden und -konventionen
 description: Dieser Artikel gibt einen Überblick über die Abschreibungskonventionen und Abschreibungsmethoden, die von Microsoft Dynamics 365 Finance unterstützt werden.
-author: ShylaThompson
-ms.date: 04/25/2017
+author: moaamer
+ms.date: 12/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 3441
 ms.assetid: 1d8267b1-86a8-44bf-8814-f56b5d45a0ae
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afd771f3f2f0434aa3663a9f99512f0c31adbb78
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3f0f3b8be86225fd68df9b099e5c8e13a220a213
+ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826929"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "7927428"
 ---
 # <a name="depreciation-methods-and-conventions"></a>Abschreibungsmethoden und -konventionen
 
@@ -32,7 +32,7 @@ Es können verschiedene Abschreibungsmethoden und -konventionen ausgewählt werd
 
 Wenn Sie bei der Verwendung von Abschreibungskonventionen das letzte Ausführungsdatum der Abschreibung für eine Anlage ändern, woraufhin einige Abschreibungen übersprungen werden, ist die Abschreibung für das letzte Jahr möglicherweise größer oder kleiner als erwartet. Die Abschreibung wird durch die Anzahl der Abschreibungszeiträume reguliert, die von der Änderung des letzten Anfangsdatums der Abschreibung betroffen sind.
 
-Wenn Sie zum Beispiel die Abschreibungskonvention "Halbjahr" über einen Zeitraum von drei Jahren verwenden, erstreckt sich der Abschreibungszeitraum in der Regel auf 3,5 Jahre. Wenn Sie das letzte Anfangsdatum während dieser 3,5 Jahre ändern, wird das letzte Abschreibungsjahr um die Anzahl der betroffenen Zeiträume verlängert. Verschieben Sie z. B. das Datum um drei Monate, umfasst das letzte Jahr neun Abschreibungsmonate, während es normalerweise sechs Monate umfassen würde.
+Wenn Sie zum Beispiel die Abschreibungskonvention „Halbjahr“ über einen Zeitraum von drei Jahren verwenden, erstreckt sich der Abschreibungszeitraum in der Regel auf dreieinhalb Jahre. Wenn Sie das letzte Anfangsdatum während dieser dreieinhalb Jahre ändern, wird das letzte Abschreibungsjahr um die Anzahl der betroffenen Zeiträume verlängert. Verschieben Sie z. B. das Datum um drei Monate, umfasst das letzte Jahr neun Abschreibungsmonate, während es normalerweise sechs Monate umfassen würde.
 
 Die folgenden Abschreibungskonventionen stehen zur Auswahl.
 
@@ -46,7 +46,7 @@ Die folgenden Abschreibungskonventionen stehen zur Auswahl.
 -   Halbes Jahr (nächstes Jahr)
 
 Die folgenden Abschreibungsmethoden stehen zur Auswahl.
--   Lineare Nutzungsdauer
+-   Lineare Dienstdauer
 -   Degressiv
 -   Manuell
 -   Faktor
@@ -61,8 +61,7 @@ Die folgenden Abschreibungsmethoden stehen zur Auswahl.
 
 
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Anlagenabschreibung](fixed-asset-depreciation.md)
 
@@ -76,9 +75,9 @@ Die folgenden Abschreibungsmethoden stehen zur Auswahl.
 
 [Verbrauchsabschreibung](consumption-depreciation.md)
 
-[Abschreibungsmethode "Verbleibende lineare Nutzungsdauer"](straight-line-life-remaining-depreciation.md)
+[Abschreibungsmethode „Verbleibende lineare Nutzungsdauer“](straight-line-life-remaining-depreciation.md)
 
-[Degressiven Abschreibung von 125 Prozent](125-percent-reducing-balance-depreciation.md)
+[Degressive Abschreibung (125 Prozent)](125-percent-reducing-balance-depreciation.md)
 
 [Degressiven Abschreibung von 150 Prozent](150-percent-reducing-balance-depreciation.md)
 

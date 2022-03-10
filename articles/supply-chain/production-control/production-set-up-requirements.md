@@ -2,16 +2,13 @@
 title: Anforderungen für Produktionseinstellungen
 description: Dieser Artikel gibt Informationen zu Einrichtungsanforderungen, bevor Sie mit der Produktionssteuerung arbeiten können.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdParameters, RouteOpr, RouteOprTable, WorkCalendarTable, WorkTimeTable, WrkCtrTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 55561
 ms.assetid: 1953059f-478d-4706-b461-25b89ace5fc3
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0513392fe066e02f0789bcfadb0ee676559cb223
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bfde8b40927ceaa216878d58ef72c5d91e9ebe01
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428455"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968795"
 ---
 # <a name="production-setup-requirements"></a>Anforderungen für Produktionseinstellungen
 
@@ -42,7 +39,7 @@ Vor der Verwendung des Moduls Produktionssteuerung müssen zunächst Information
 -   Definieren von Artikelgruppen
 -   Einrichten von Sachkonten für Artikelgruppen
 -   Einrichten der Lagerartikeltabelle im Modul Bestandsverwaltung.
--   Erstellen Sie Stücklisten (BOMs) und Stücklistenversionen im Modul Bestandsverwaltung.
+-   Erstellen Sie Stücklisten (BOMs) und Stücklistenversionen in der Produktinformationsverwaltung.
 
 ## <a name="required-calendar-and-resource-setup"></a>Erforderliche Kalender- und Ressourceneinstellungen
 Öffnen Sie vor der Verwendung des Moduls Produktionssteuerung das Modul Organisationsverwaltung, und erstellen bzw. definieren Sie den Kalender und die betrieblichen Ressourcen in der folgenden Reihenfolge:
@@ -81,3 +78,6 @@ Bei Verwendung von Arbeitsplänen müssen Arbeitsgänge für jeden einzelnen ein
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

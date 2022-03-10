@@ -2,7 +2,7 @@
 title: Online- und Offlineverkaufsstellen-(POS)-Vorgänge
 description: Dieses Thema enthält Informationen zu den Verkaufsstelle (POS)-Arbeitsgängen in Dynamics 365 Commerce. Es gibt an, an welcher Position in der Anwendung die Arbeitsgänge aufgerufen werden können, und ob sie im Offline-Modus verfügbar sind.
 author: jblucher
-ms.date: 02/21/2020
+ms.date: 02/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,22 +15,23 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dc4835258c7a1968c51e4d1a3a4d0eb33aaf2cddf31efd965adff0ac80aa4ec1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5e139b7b12b8f2e549fb9c2c8e39125e190c7396
+ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745283"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8311978"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online- und Offlineverkaufsstellen-(POS)-Vorgänge
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Die meisten Aktivitäten, die Benutzer in Verkaufsstelle (POS) vornehmen, gelten als Arbeitsgänge. Arbeitsgänge werden im Dynamics 365 Commerce-Backoffice konfiguriert und verwaltet. Viele Arbeitsgänge können den Schaltflächen im POS-Schaltflächenraster hinzugefügt werden. Benutzer können die Schaltflächen dann auswählen, um Vorgänge aufzurufen und die Funktion auszuführen. Andere Arbeitsgänge sind Teil der Haupt-POS-Anwendung und Schaltflächen werden entweder von Bildschirm-Schaltflächen oder als Bestandteil anderer Workflows oder Prozessen aufgerufen.
 
-Die folgende Tabelle enthält Informationen zu den Arbeitsgängen, die in Modern POS und Cloud POS verfügbar sind. Die Tabelle gibt auch an, an welcher Position in der Anwendung die Arbeitsgänge aufgerufen werden können, und ob POS im Offline-Modus verfügbar sind.
+Die folgende Tabelle enthält Informationen zu den Arbeitsgängen, die in Modern POS und Cloud POS verfügbar sind. Die Tabelle gibt auch an, an welcher Position in der Anwendung die Arbeitsgänge aufgerufen werden können und ob POS im Offline-Modus verfügbar sind.
 
-Einige Arbeitsgänge sind derzeit nicht in Modern POS oder Cloud POS für verfügbar. Einige dieser Arbeitsgänge sind jeder gebietsschemaspezifische Arbeitsgänge, die weitere Konfiguration und Erweiterungen erfordern. Auch einige Funktionen von Microsoft Dynamics AX 2012 werden derzeit nicht unterstützt.
+Einige Arbeitsgänge sind derzeit nicht in Modern POS oder Cloud POS für verfügbar. Einige dieser Arbeitsgänge sind gebietsschemaspezifische Arbeitsgänge, die weitere Konfiguration und Erweiterungen erfordern. Auch einige Funktionen von Microsoft Dynamics AX 2012 werden derzeit nicht unterstützt.
 
 Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden können:
 
@@ -40,6 +41,7 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 
 > [!NOTE]
 > Die Arbeitsgänge unten gelten für die neueste Version von Commerce. Einige Vorgänge haben sich möglicherweise geändert oder sind möglicherweise in früheren Versionen nicht verfügbar.
+
 
 | ID | Arbeitsgang | Beschreibung | Schaltflächenraster | Transaktionsbildschirm | Willkommensbildschirm | Verfügbar offline | Gebietsschemaspezifisch |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|
@@ -72,18 +74,17 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 | 121 | Verkäufer löschen | Der Vorgang wird nicht unterstützt. | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nein |
 | 1055 | Schicht schließen | Schließt die aktuelle Schicht, Drucken eines Z-Berichts und meldet den Benutzer aus dem System ab. | Ja | Ja | Ja | Nein | Nein |
 | 139 | Transaktion einbeziehen | Fordert Benutzer dazu auf, eine Zahlungsmethode auswählen | Ja | Ja | Nein | Ja | Nein |
-| 620 | Kundenauftrag erstellen | POS-Buchung in einen Debitor-Auftrag umwandeln | Ja | Ja | Nein | Ja\* | Nein |
 | 925 | Bankscheck kopieren | Der Vorgang wird nicht unterstützt. | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Ja |
 | 620 | Debitorenauftrag erstellen | POS-Buchung in einen Debitor-Auftrag umwandeln | Ja | Ja | Nein | Ja\* | Nein |
 | 621 | Angebot erstellen | POS-Buchung in ein Vertriebsangebot umwandeln | Ja | Ja | Nein | Ja\* | Nein |
-| 636 | Einzelhandelstransaktion erstellen | Dieser Arbeitsgang ermöglicht dem Benutzer, eine Standardverkaufsbuchung zu erstellen, wenn das Standardverhalten des POS ist, Kundenaufträge zu erstellen. | Ja | Ja | Nein | Ja | Nein |
+| 636 | Einzelhandelstransaktion erstellen | Erstellt eine Standardverkaufsbuchung, wenn das Standardverhalten des POS ist, Kundenaufträge zu erstellen. | Ja | Ja | Nein | Ja | Nein |
 | 600 | Kunde | Fügen Sie den angegeben Debitor der Buchung hinzu. | Nein | Nein | Nein | Ja | Nein |
 | 1100 | Einzahlung auf Debitorenkonto | Nimmt eine Einzahlung auf dem Konto eines Debitors vor. | Ja | Ja | Ja | Ja | Ja |
-| 612 | Debitor hinzufügen | Dieser Arbeitsgang ermöglicht dem Benutzer, einen neuen Debitorendatensatz zu erstellten. | Ja | Ja | Ja | Ja† | Nein |
+| 612 | Debitor hinzufügen | Dient zum Erstellen eines neuen Debitorendatensatzes. | Ja | Ja | Ja | Ja† | Nein |
 | 603 | Debitor löschen | Den Debitor aus der aktuellen Buchung entfernten. | Ja | Ja | Nein | Ja | Nein |
-| 602 | Debitorensuche | Dieser Arbeitsgang erlaubt dem Benutzer die Suche nach einem Debitorendatensatz, indem er zur Debitorensuchseite am Point-of-Sale wechselt. | Ja | Ja | Ja | Ja | Nein |
+| 602 | Debitorensuche | Sucht nach einem Debitorendatensatz, indem er zur Debitorensuchseite am Point-of-Sale wechselt. | Ja | Ja | Ja | Ja | Nein |
 | 609 | Debitorenbuchungen | Der Vorgang wird nicht unterstützt. | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nein |
-| 917 | Datenbankverbindungsstatus | Mit diesem Arbeitsgang können die Benutzer aktuelle Verbindungseinstellungen anzeigen und zwischen online oder offline Modi wechseln. | Ja | Ja | Ja | Ja | Nein |
+| 917 | Datenbankverbindungsstatus | Zeigt aktuelle Verbindungseinstellungen an und wechselt zwischen online oder offline Modi. | Ja | Ja | Ja | Ja | Nein |
 | 1200 | Ausgangsbetrag deklarieren | Deklariert den Betrag, der zu Tages- oder Schichtbeginn in der Kassenlade vorhanden ist. | Ja | Ja | Ja | Ja | Nein |
 | 132 | Einzahlung überschreiben | Überschreibt die standardmäßige Einzahlung für Kundenaufträge. | Ja | Ja | Nein | Ja\* | Nein |
 | 913 | Entwurfsmodus deaktivieren | Der Vorgang wird nicht unterstützt. | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nein |
@@ -96,14 +97,16 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 | 615 | Angebot bearbeiten | Rufen Sie das ausgewählte Angebot zurück, damit es am Point-of-Sale geändert werden kann. | Nein | Nein | Nein | Nein | Nein |
 | 518 | Aufwandskonten | Dient zum Erfassen des Geldes, das der Geldlade für gelegentliche Ausgaben entnommen wird. | Ja | Ja | Ja | Ja | Nein |
 | 919 | Erweiterte Anmeldung | Weisen Sie Berechtigungen zum Anmelden hinzu oder entfernen Sie sie, indem Sie einen Strichcode scannen oder indem Sie eine Karte durch ein Lesegerät ziehen. | Ja | Ja | Ja | Ja | Nein |
-| 1201 | Mittelzugang | Dieser Arbeitsgang ermöglicht dem Benutzer, zusätzliches Geld der aktuellen Schicht oder Kassenlade hinzufügen. | Ja | Ja | Ja | Ja | Nein |
+| 1201 | Mittelzugang | Fügt zusätzliches Geld zur aktuellen Schicht oder Kassenlade hinzu. | Ja | Ja | Ja | Ja | Nein |
 | 1218 | Entsperren von Peripheriegerät erzwingen | Das System verwendet diesen Arbeitsgang intern, um die Sperrung der POS-Peripheriegeräte aufzuheben. | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nein |
 | 520 | Geschenkkartensaldo | Zeigt den Saldo einer Geschenkkarte an. | Ja | Ja | Nein | Nein | Nein |
 | 708 | Gerät deaktivieren | Deaktivieren Sie das aktuelle Gerät, damit es nicht als POS-Register verwendet werden kann. | Nein | Nein | Nein | Nein | Nein |
 | 804 | Eingangsvorgang | Greifen Sie auf die Funktionen der Bestandsverwaltung eingehender Filialen zu. | Ja | Nein | Ja | Nein| Nein |
 | 517 | Ertragskonten | Dient zum Erfassen des Geldes, das der Geldlade hinzugefügt wird, aber nicht aus einem Verkauf stammt. | Ja | Ja | Ja | Ja | Nein |
 | 801 | Bestandssuche | Suchen Sie verfügbare, bestellte oder für Zusage verfügbare (ATP) Mengen für den aktuellen Shop und an anderen verfügbaren Lagerplätzen. | Ja | Ja | Ja | Nein | Nein |
-| 122 | Rechnungskommentar | Dieser Arbeitsgang ermöglicht dem Benutzer, einen Kommentar zur aktuellen Buchung einzugeben. | Ja | Ja | Nein | Ja | Nein |
+| 806 | Lagerregulierung | Passen Sie den Bestand innerhalb oder außerhalb des Lagers mithilfe der Regulierungs- oder Umlagerungserfassung an. | Ja | Ja | Ja | Nein | Nein |
+| 807 | Lagerbestandsumlagerung | Lagern Sie Artikel von einem Lagerplatz an einen anderen im Lager um. | Ja | Ja | Ja | Nein | Nein |
+| 122 | Rechnungskommentar | Dient zum Eingeben eines Kommentars zur aktuellen Buchung. | Ja | Ja | Nein | Ja | Nein |
 | 511 | Gutschrift ausstellen | Geben Sie eine Gutschrift aus, um einen Beleg anstelle einer Rückerstattung bereitzustellen. | Ja | Ja | Nein | Nein | Nein |
 | 512 | Geschenkkarte ausstellen | Geben Sie eine neuen Geschenkkarte für den angegebenen Betrag aus. | Ja | Ja | Nein | Nein | Nein |
 | 625 | Treuekarte ausstellen | Geben Sie eine Treuekarte an den Debitor aus, damit dieser am Treueprogramm des Geschäfts teilnehmen kann. | Ja | Ja | Ja | Nein | Nein |
@@ -147,42 +150,42 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 | 1056 | X drucken | X-Bericht für die aktuelle Schicht drucken | Ja | Ja | Ja | Nein | Nein |
 | 103 | Produktkommentar | Fügt dem in der Buchung ausgewählten Positionsartikel einen Kommentar hinzu. | Ja | Ja | Nein | Ja | Nein |
 | 100 | Produktverkauf | Fügt der Buchung ein angegebenes Produkt hinzu. | Ja | Ja | Ja | Ja | Nein |
-| 108 | Produktsuche | Dieser Arbeitsgang erlaubt dem Benutzer die Suche nach einem Produkt, indem er zur Produktsuchseite am Point-of-Sale wechselt. | Ja | Ja | Ja | Ja | Nein |
-| 633 | Ablaufdatum für Angebot | Dieser Arbeitsgang erlaubt dem Benutzer, das Ablaufdatum auf einem Verkaufsangebot anzuzeigen oder zu ändern. | Ja | Ja | Nein | Ja\* | Nein |
+| 108 | Produktsuche | Sucht nach einem Produkt, indem er zur Produktsuchseite am Point-of-Sale wechselt. | Ja | Ja | Ja | Ja | Nein |
+| 633 | Ablaufdatum für Angebot | Dient zur Anzeige oder Änderung des Ablaufdatums auf einem Verkaufsangebot. | Ja | Ja | Nein | Ja\* | Nein |
 | 627 | Neu berechnen | Berechnen Sie alle Debitoren-Auftragspositionen und Steuern auf Basis der aktuellen Konfiguration. | Ja | Ja | Nein | Ja\* | Nein |
 | 143 | Belastung neu berechnen | Neuberechnung der auf den Auftrag angewendeten automatischen Gebühren. | Ja | Ja | Nein | Nein| Nein |
-| 515 | Auftrag zurückrufen | Dieser Arbeitsgang erlaubt Benutzern die Suche nach und das Zurückrufen von Debitorenaufträgen und Verkaufsangeboten. | Ja | Ja | Ja | Nein | Nein |
-| 504 | Buchung zurückrufen | Dieser Arbeitsgang ermöglicht dem Benutzer, eine zuvor unterbrochene Buchung vom aktuellen Shops zurückzurufen. | Ja | Ja | Nein | Ja‡ | Nein |
+| 515 | Auftrag zurückrufen | Ermöglicht die Suche nach und das Zurückrufen von Debitorenaufträgen und Verkaufsangeboten. | Ja | Ja | Ja | Nein | Nein |
+| 504 | Buchung zurückrufen | Dient zum Zurückrufen einer zuvor unterbrochenen Buchung vom aktuellen Shop. | Ja | Ja | Nein | Ja‡ | Nein |
 | 305 | Treuepunkte einlösen | Der Vorgang wird nicht unterstützt. | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Ja |
-| 635 | Rückerstattung der Versandgebühren | Dieser Arbeitsgang ermöglicht dem Benutzer, Versandkosten auf einem stornierten Auftrag zu erstatten. | Nein | Nein | Nein | Nein | Nein |
+| 635 | Rückerstattung der Versandgebühren | Erstattet die Versandkosten für eine stornierte Bestellung. | Nein | Nein | Nein | Nein | Nein |
 | 644 | Couponcode entfernen | Fordern Sie den Benutzer auf, Coupons zu entfernen, indem Sie diese in einer Liste auswählen Coupons, die momentan mit der Buchung zusammenhängen. | Ja | Ja | Nein | Ja | Nein |
 | 1057 | Z erneut drucken | Druckt den Z-Bericht für die vorherige Schicht oder einer ausgewählten Schicht aus. | Ja | Ja | Ja | Nein | Nein |
 | 1216 | Ein neues Kennwort eingeben | Diesen Vorgang kann ein Benutzer, der über die Kennwortrücksetzungsberechtigung verfügt, verwenden kann, um das Kennwort eines Mitarbeiters zurückzusetzen, indem er ein temporäres Kennwort verwendet. | Ja | Ja | Ja | Nein | Nein |
-| 1219 | URL in POS öffnen | Mithilfe dieses Arbeitsgangs kann ein Benutzer eine von einem Administrator konfigurierte URL in POS öffnen. | Ja | Ja | Ja | Ja | Nein | 
+| 1219 | URL in POS öffnen | Öffnet eine vom Administrator konfigurierte URL in POS. | Ja | Ja | Ja | Ja | Nein |
 | 109 | Produkt zurückgeben | Dient zum Ausführen einer Retoure für einzelne Produkte. Das nächste gescannte Produkt wird als zurückgegebenes Produkt mit einer negativen Menge und einem negativen Preis angezeigt. | Ja | Ja | Nein | Ja | Nein |
 | 114 | Retourenbuchung | Zurückrufen einer vorherigen Buchung anhand der Bonnummer, um einige oder alle Produkte zurückzugeben. | Ja | Ja | Ja | Ja§ | Nein |
 | 1211 | Ablage in Tresor | Führt eine Ablage im Tresor durch, um Geld aus dem Register in einen Tresor einzuschließen. | Ja | Ja | Ja | Ja | Nein |
 | 516 | Verkaufsrechnung | Dieser Arbeitsgang ermöglicht dem Debitor, Zahlungen für die ausgewählte Rechnung vorzunehmen. | Ja | Ja | Nein | Nein | Nein |
-| 502 | Verkäufer | Dieser Arbeitsgang ermöglicht dem Benutzer, den **Sales Erfasser**-Wert in einem Auftrag für Kundenaufträge am Point-of-Sale festzulegen. | Ja | Ja | Nein | Ja\* | Nein |
+| 502 | Verkäufer | Legt den **Sales Erfasser**-Wert in einem Auftrag für Kundenaufträge am Point-of-Sale fest. | Ja | Ja | Nein | Ja\* | Nein |
 | 2000 | Zeitplanverwaltung | Dieser Vorgang wird noch nicht unterstützt. | Ja | Ja | Ja | Nein | Nein |
 | 2001 | Zeitplananforderungen | Dieser Vorgang wird noch nicht unterstützt. | Ja | Ja | Ja | Nein | Nein |
 | 622 | Durchsuchen | Dieser Arbeitsgang erlaubt Benutzern, POS-Schaltflächen vorzukonfigurieren, um Suchen nach Kategorie oder Artikel, Debitor auszuführen. | Ja | Ja | Ja | Ja | Nein |
 | 1213 | Versandadresse suchen | Der Vorgang wird nicht unterstützt. | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nein |
-| 709 | Hardwarestation auswählen | Dieser Arbeitsgang ermöglicht dem Benutzer, eine Hardwarestation in einer Liste der verfügbaren Hardwarestationen auszuwählen. | Ja | Ja | Ja | Ja | Nein |
-| 637 | Standardverkäufer für Buchung festlegen | Dieser Arbeitsgang ermöglicht dem Benutzer, eine der freigegebenen Provisionsverkaufsgruppen (Verkaufsripse) als der Standardvertriebsmitarbeiter für Positionen auszuwählen, die zu einem späteren Zeitpunkt hinzugefügt werden. | Ja | Ja | Nein | Ja | Nein |
+| 709 | Hardware Station auswählen | Wählt eine Hardwarestation aus einer Liste der verfügbaren Hardwarestationen aus. | Ja | Ja | Ja | Ja | Nein |
+| 637 | Standardverkäufer für Buchung festlegen | Wählt eine der freigegebenen Provisionsverkaufsgruppen (Verkaufsrepräsentanten) als der Standardvertriebsmitarbeiter für Positionen aus, die zu einem späteren Zeitpunkt hinzugefügt werden. | Ja | Ja | Nein | Ja | Nein |
 | 105 | Menge festlegen | Dient zum Ändern der Menge eines Positionsartikels in der Buchung. | Ja | Ja | Nein | Ja | Nein |
-| 638 | Verkäufer für Position festlegen | Dieser Arbeitsgang ermöglicht dem Benutzer, eine der freigegebenen Provisionsverkaufsgruppen (Verkaufsrepräsentanten) als für die aktuell ausgewählte Position auszuwählen. | Ja | Ja | Nein | Ja | Nein |
+| 638 | Verkäufer für Position festlegen | Wählt eine der freigegebenen Provisionsverkaufsgruppen (Verkaufsrepräsentanten) als für die aktuell ausgewählte Position aus. | Ja | Ja | Nein | Ja | Nein |
 | 630 | Alle Produkte versenden | Legen Sie den Erfüllungsmodus auf **Versand** für alle Positionsartikel fest. | Ja | Ja | Nein | Ja\* | Nein |
 | 629 | Ausgewählte Produkte versenden | Legen Sie den Erfüllungsmodus für die ausgewählten Positionen auf **Versenden** fest. | Ja | Ja | Nein | Ja\* | Nein |
 | 115 | Erfassung anzeigen | Anzeigen der Erfassung der Filiale. Sie können Buchungen, Neuauflagenzugänge und Geschenkzugänge anzeigen und Rückruf für Rücklieferung. | Ja | Ja | Ja | Ja\*\* | Nein |
-| 802 | Bestandsmenge | Dieser Arbeitsgang erlaubt Benutzer, Inventurerfassungen vordefinierten physischen Bestand oder Gangzählungen zu erstellen oder zu ändern. | Ja | Ja | Ja | Nein | Nein |
+| 802 | Bestandsmenge | Dient zum Erstellen und Ändern von Inventurerfassungen von physischem Bestand oder Zykluszählungen. | Ja | Ja | Ja | Nein | Nein |
 | 401 | Untermenü | Dieser Arbeitsgang leitet den Benutzer zu einem anderen verknüpften Schaltflächenraster. | Ja | Ja | Ja | Ja | Nein |
 | 1054 | Schicht aussetzen | Aktuelle Schicht aussetzen, sodass eine neue oder eine andere Schicht im aktuellen Schichtregister aktiviert werden kann. | Ja | Ja | Ja | Nein | Nein |
 | 503 | Buchung aussetzen | Aktuelle Verkaufsbuchung aussetzen, sodass sie im Shop später zurückgerufen werden kann. | Ja | Ja | Nein | Ja‡ | Nein |
 | 1004 | Aufgabenaufzeichnung | Öffnen der Aufgabenaufzeichnung, um Schritte im POS zu erfassen. | Nein | Nein | Nein | Ja | Nein |
-| 1052 | Kassensturz | Dieser Arbeitsgang ermöglicht dem Benutzer, den Geldbetrag in der Kassenlade für jede Zahlungsmethode anzugeben. | Ja | Ja | Ja | Ja | Nein |
-| 1210 | Zahlungsmittel entfernen | Dieser Arbeitsgang ermöglicht dem Benutzer, Geld aus der aktuellen Schicht oder Kassenlade zu entfernen. | Ja | Ja | Ja | Ja | Nein |
-| 920 | Zeituhr | Dieser Arbeitsgang erlaubt Benutzern, aus Arbeitsschichten und Pausen ein- und auszustempeln. | Ja | Ja | Ja | Nein | Nein |
+| 1052 | Zahlungsmitteldeklaration | Dient zur Angabe des Geldbetrags in der Kassenlade für jede Zahlungsmethode. | Ja | Ja | Ja | Ja | Nein |
+| 1210 | Zahlungsmittel entfernen | Entnimmt Geld aus der aktuellen Kassenlade oder Schicht. | Ja | Ja | Ja | Ja | Nein |
+| 920 | Zeituhr | Ermöglicht Ein‑ und Ausstempeln aus Arbeitsschichten und Pausen. | Ja | Ja | Ja | Nein | Nein |
 | 302 | Betrag für Rechnungsrabatt | Einen Rabattbetrag für die Buchung eingeben. Dieser Vorgang kann ausschließlich für rabattfähige Artikel verwendet und nur innerhalb der angegebenen Rabattgrenzen angegeben werden. | Ja | Ja | Nein | Ja | Nein |
 | 303 | Rechnungsrabatt gesamt (in Prozent) | Einen Rabattprozentsatz für die Buchung eingeben. Dieser Vorgang kann ausschließlich für rabattfähige Artikel verwendet und nur innerhalb der angegebenen Rabattgrenzen angegeben werden. | Ja | Ja | Nein | Ja | Nein |
 | 501 | Buchungskommentar | Fügt der aktuellen Buchung einen Kommentar hinzu. | Ja | Ja | Nein | Ja | Nein |

@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 70ebe47997f3b5945a433150ae66de6eb41ff12acf4f4f3c8268351116bdd313
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 7b487684980f60112d9af6bea02672f7e919c834
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767950"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103588"
 ---
 # <a name="confirm-and-transfer"></a>Bestätigen und übertragen
 
@@ -45,20 +45,17 @@ Sie können nur Ladungen aufteilen, die alle der folgenden Kriterien erfüllen:
 
 - Einer oder mehrerer Ladungspositionen wurden Mengen entnommen.
 - Der Ladungsstatus ist geringer als geladen.
-- Es gibt keine Ladungspositionsdaten. (Diese Daten werden durch Ladungsträger-Konsolidierung am Bereitstellungslagerplatz erstellt und die Funktion *Bestätigen und übertragen* unterstützt keine Ladungsträger-Konsolidierung.)
-- Derzeit wartet kein Bestand auf das Verpacken an einem Verpackungslagerplatz. (Die Funktion *Bestätigen und übertragen* unterstützt keinen bereits für die Packstation entnommenen Bestand, der noch nicht verpackt wurde.)
+- Es gibt keine Ladungspositionsdaten. (Diese Daten werden durch Ladungsträger-Konsolidierung am Bereitstellungslagerplatz erstellt und die Funktion Bestätigen und übertragen unterstützt keine Ladungsträger-Konsolidierung.)
+- Derzeit wartet kein Bestand auf das Verpacken an einem Verpackungslagerplatz. (Die Funktion *Bestätigen und übertragen* unterstützt keinen für die Packstation entnommenen Bestand, der noch nicht verpackt wurde, es sei denn, verpackte Container werden an Staginglagerplätze mit erstellter Ladearbeit platziert.)
 
 > [!NOTE]
 > Diese Funktion unterscheidet sich von der Transportladungsfunktion, die an Lagerorten verwendet werden sollte, die vor der Entnahme niemals Ladungen planen und erstellen können, sondern die stattdessen den verfügbaren Transportraum nach Abschluss der Entnahme laden.
 >
 > Verwenden Sie die Funktion *Bestätigen und übertragen* in Situationen, in denen Ladungen normalerweise im Voraus geplant und erstellt werden, in denen jedoch gelegentlich Ausnahmen auftreten, in denen die Ladung nicht zum verfügbaren Transport passt (z. B. einem LKW).
 
-## <a name="turn-on-confirm-and-transfer"></a>Aktivieren der Bestätigung und Übetragung
+## <a name="turn-the-confirm-and-transfer-feature-on-or-off"></a>Schalten Sie die Bestätigungs- und Übertragungsfunktion ein oder aus
 
-Bevor Sie die Funktion *Bestätigen und übertragen* verwenden können, muss sie in Ihrem System aktiviert sein. Administratoren können mit den Einstellungen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie gegebenenfalls aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
-
-- **Module:** *Lagerortverwaltung*
-- **Funktionsname:** *Bestätigen und übertragen*
+Um die Funktionalität zu verwenden, die in diesem Thema beschrieben wird, die Funktion *Bestätigung und Übertragung* für Ihr System eingeschaltet werden. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Bestätigung und Übertragung* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ## <a name="set-up-confirm-and-transfer"></a>Einrichten der Bestätigung und Übetragung
 

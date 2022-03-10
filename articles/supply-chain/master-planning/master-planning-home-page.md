@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 135c8bf66f4bbd7bdbc06b50ab2a8630c934c50bc0a51c7cdb2575d3c8f5d5ae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7dd25fdd1549fb2fddff57dc2d9cf8762cfd6823
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766654"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416526"
 ---
 # <a name="master-planning-home-page"></a>Startseite für die Produktprogrammplanung
 
@@ -83,8 +83,8 @@ Zusätzliche Hilfe steht über Aufgabenhandbücher zur Verfügung. Um auf Aufgab
 ### <a name="tech-conference-recordings"></a>Technologiekonferenzaufzeichnungen
 
 - [Bedarfsplanungsfunktionen erweitern](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
-- [Produktprogrammplanung – Hinweise und Tricks zur Problembehebung im Bereich der Leistung](https://youtu.be/7v8BPmEs9Dg)
-- [Hilfe! PPS ist langsam!](https://youtu.be/RLXybx20B5o)
+- [Produktprogrammplanung – Hinweise und Tricks zur Behebung von Leistungsproblemen](https://youtu.be/7v8BPmEs9Dg)
+- [MRP-Leistungsabstimmung](https://youtu.be/RLXybx20B5o)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

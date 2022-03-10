@@ -1,37 +1,31 @@
 ---
-title: Arbeiten mit Veröffentlichungsgruppen
+title: Mit Veröffentlichungsgruppen arbeiten
 description: In diesem Thema wird die Funktion der Veröffentlichungsgruppen in Microsoft Dynamics 365 Commerce beschrieben.
 author: phinneyridge
-manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: a83affb5b383b50317ddf53de4d3bf565f0d9439
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d757f34d3e16850e4f5de122f63b2b3342f612e49f07c7cf6585362999f03c02
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412674"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717671"
 ---
-# <a name="work-with-publish-groups"></a>Arbeiten mit Veröffentlichungsgruppen
-
+# <a name="work-with-publish-groups"></a>Mit Veröffentlichungsgruppen arbeiten
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird die Funktion der Veröffentlichungsgruppen in Microsoft Dynamics 365 Commerce beschrieben.
-
-## <a name="overview"></a>Übersicht
 
 E-Commerce-Websites werden das ganze Jahr über ständig mit neuen Inhalten aktualisiert. Aktualisierungen werden häufig stapelweise zu geschäftigen E-Commerce-Ereignissen wie Feiertagen, saisonalen Marketingkampagnen oder Werbemaßnahmen veröffentlicht. Diese Aktualisierungen erfordern häufig, dass Gruppen von Website-Inhalten (z. B. Seiten, Bilder, Fragmente und Vorlagen) gleichzeitig in einer einzigen Aktion bereitgestellt, validiert und veröffentlicht werden.
 
@@ -155,3 +149,6 @@ Derzeit unterstützt die Funktion „Gruppen veröffentlichen“ nur Website-Inh
 [Übersicht über Vorlagen und Layouts](templates-layouts-overview.md)
 
 [Anpassen der Sitenavigation](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

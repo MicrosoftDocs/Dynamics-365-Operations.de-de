@@ -1,30 +1,28 @@
 ---
-title: Berichtsstruktur-Definitionen in Finanzberichten
-description: Dieser Artikel enthält Informationen zu Berichtsstruktur-Definitionen. Eine Berichtsstruktur-Definition ist eine Berichtkomponente oder ein Baustein, die/der Sie dabei unterstützt, die Struktur und die Hierarchie Ihrer Organisation zu definieren.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 10/07/2019
+title: Definitionen für Berichtsbaumstrukturen in Finanzberichten
+description: Dieser Artikel beschreibt Definitionen für Berichtsbaumstrukturen. Eine Definition für Berichtsbaumstrukturen ist eine Berichtskomponente, die die Struktur einer Organisation definiert.
+author: jinniew
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: roschlom
 ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8ae024c2d791e1219c7383dc95283219a9300eac
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 92da476f64b937d339b5f0c6088b8ce722a0584938ccf2a6c6cbd39fdc15544d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682672"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714634"
 ---
-# <a name="reporting-tree-definitions-in-financial-reports"></a>Berichtsstruktur-Definitionen in Finanzberichten
+# <a name="reporting-tree-definitions-in-financial-reports"></a>Definitionen für Berichtsbaumstrukturen in Finanzberichten
 
 [!include [banner](../includes/banner.md)]
 
@@ -41,10 +39,10 @@ Bevor Sie eine Berichtstruktur erstellen, ziehen die folgenden bewährten Method
 - Sie müssen sich auch für die beste Methode entscheiden, in der Sie Ihre Strukturen erstellen. Sie können einen automatischen Erstellungsprozess generieren, um eine Berichtstruktur zu erstellen, oder Sie können diese manuell erstellen. Es ist wichtig, dass Sie beide Methoden verstehen, bevor Sie Ihre Strukturen entwerfen.
 - Sie können die Berichtseinheiten verwenden, die in Ihrem Finanzdatensystem definiert werden, um der Berichtsbaumstruktur-Definition Berichtseinheiten hinzuzufügen.
 
-## <a name="create-multiple-reporting-trees"></a> Erstellen mehrerer Berichtsbaumstrukturen
+## <a name="create-multiple-reporting-trees"></a>Erstellen mehrerer Berichtsbaumstrukturen
 Sie können eine unbegrenzte Anzahl von Berichtsbaumstrukturen erstellen, um die Daten der Organisation auf verschiedene Weise anzuzeigen. Jede Berichtsbaumstruktur kann eine beliebige Kombination von Abteilungen und Konsolidierungseinheiten enthalten. Eine Berichtsdefinition kann eine Verknüpfung mit nur einer Berichtsbaumstruktur nach einander enthalten. Wenn Sie die Struktur der Berichtseinheiten neu anordnen, können Sie verschiedene Berichtsbaumstrukturen erstellen. Sie können nun dieselben Zeilen- und Spaltendefinitionen für jede Berichtstruktur verwenden. Auf diese Weise können Sie schnell unterschiedliche Finanzbericht-Layouts erstellen. Wenn Sie mehrere verschiedene Berichtstrukturen erstellen, können Sie jeden Monat eine Serie von Finanzaufstellungen drucken, die die Arbeitsgänge des Unternehmens auf unterschiedliche Weise analysieren und darstellen. Weitere Informationen finden Sie in den Beispielen zu Berichtseinheitenstrukturen am Ende dieses Artikels.
 
-## <a name="create-a-reporting-tree-definition"></a> Erstellen einer Berichtsbaumstruktur-Definition
+## <a name="create-a-reporting-tree-definition"></a>Erstellen einer Berichtsbaumstruktur-Definition
 Die Berichtstruktur-Definition enthält die Spalten, die in der folgenden Tabelle beschrieben werden.
 
 | Berichtsbaumstrukturspalte | Beschreibung |
@@ -54,11 +52,9 @@ Die Berichtstruktur-Definition enthält die Spalten, die in der folgenden Tabell
 | Einheitenbeschreibung      | Der Berichtseinheitentitel wird in der Kopf- oder Fußzeile des Berichts angezeigt, wenn Sie **UnitDesc** als Code auf der Registerkarte **Kopf- und Fußzeilen** eingeben. Der Titel wird in der Berichtszeilenbeschreibung angezeigt, wenn Sie **UnitDesc** in der Zelle **Beschreibung** der Zeilendefinition eingeben. |
 | Dimensionen            | Eine Berichtserstellungseinheit, die Informationen direkt aus den Finanzdaten bezieht. Sie definiert den logische Standort und die Längen für das Konto und die zugehörigen Segmente. Jede Berichtseinheitszeile muss eine Dimension in dieser Spalte enthalten. Sie können eine Dimension auch in einer zusammengefassten Einheitszeile festlegen (z. B. für die Ausgaben, die dieser Einheit direkt zugeordnet sind). Wenn Sie eine Dimension in einer zusammengefassten Einheitszeile eingeben, sollten Konten, die in den untergeordneten Einheiten verwendet werden nicht in den untergeordneten Einheiten verwendet werden. Andernfalls könnten Beträge dupliziert werden. |
 | Zeilendefinitionen       | Der Name der Zeilendefinition für die Berichtserstellungseinheit. Dieselbe Zeilendefinition wird für jede Einheit der Berichtsbaumstruktur verwendet. Wenn Sie einen Bericht generieren, wird diese Zeilendefinition für jede Berichtseinheit verwendet. Die Zeilendefinition kann mehrere Finanzdimensionsverknüpfung enthalten. Wenn eine Zeilendefinition in der Berichtstruktur angegeben ist, aktivieren Sie das Kontrollkästchen **Zeilendefinition aus Berichtstruktur verwenden** auf der Registerkarte **Bericht** der Berichtsdefinition. |
-| Zeilenlink              | Der Zeilenlink für die Berichtseinheit. Zeilenlinks sind für die Zeilendefinition definiert, um die Finanzdimensionen zu kennzeichnen, zu denen eine Verknüpfung hergestellt wird. |
-| Externer Link         | Der Zeilenlink für diese Berichtseinheit. Zeilenlinks werden für die Zeilendefinition definiert, um den Bericht zu identifizieren, mit dem die Verknüpfung erstellt werden soll. |
-| Externe Datei         | Der Dateipfad des Finanzbericht-Arbeitsblatts, aus dem Daten gezogen werden sollen. |
+| Finanzdimensionenlink| Der Finanzdimensionenlink, der für die Berichtseinheit verwendet werden soll. Finanzdimensionenlinks sind für die Zeilendefinition festgelegt, um die Finanzdimensionen zu kennzeichnen, zu denen eine Verknüpfung hergestellt wird. |
 | Seitenoptionen          | Diese Spalte steuert, ob die Details der Berichterstattungseinheit unterdrückt werden, wenn der Bericht angezeigt oder gedruckt wird. |
-| Rollup %              | Der Prozentsatz der Berichtserstellungseinheit, der der übergeordneten Einheit zugewiesen werden soll. Der Prozentsatz, den Sie in diese Spalte eingeben, gilt für jede Zeile der Zeilendefinition, bevor der Wert in der Zeile dem übergeordneten Bericht hinzugefügt wird. Wenn beispielsweise eine untergeordnete Einheit gleichmäßig zwischen zwei Abteilungen aufgeteilt werden muss, werden die Beträge in jeder Zeile mit 50 Prozent multipliziert, bevor der Wert dem Abteilungsbericht hinzugefügt werden. Eine Berichtseinheit kann keine zwei übergeordnete Einheiten haben. Um die Beträge aus einer Berichtseinheit zwei übergeordneten Einheiten zuzuweisen, erstellen Sie eine weitere Berichtseinheit mit derselben Dimension für einen Rollup der zusätzlichen 50 Prozent. Geben Sie gesamte Prozentsätze ohne Dezimalstellen ein. Beispielsweise stellt **25** eine 25 Prozent-Zuteilung zum übergeordneten Objekt dar. Wenn Sie eine Nachkommastelle angeben (**0,25**), werden dem übergeordneten Objekt 0,25 Prozent zugeordnet. Zum Verwenden eines Prozentsatzes, der unter einem Prozent liegt, können Sie die Option **Rollup zulassen&lt;1 %** in der Berichtsdefinition verwenden. Diese Option befindet sich auf der Registerkarte **Weitere Optionen** im Dialogfeld **Berichtseinstellungen**. Rufen Sie dieses Dialogfeld über die Schaltfläche **Sonstiges** auf der Registerkarte **Einstellungen** der Berichtsdefinition auf. |
+| Rollup %              | Der Prozentsatz der Berichtserstellungseinheit, der der übergeordneten Einheit zugewiesen werden soll. Der Prozentsatz, den Sie in diese Spalte eingeben, gilt für jede Zeile der Zeilendefinition, bevor der Wert in der Zeile dem übergeordneten Bericht hinzugefügt wird. Wenn beispielsweise eine untergeordnete Einheit gleichmäßig zwischen zwei Abteilungen aufgeteilt werden muss, werden die Beträge in jeder Zeile mit 50 Prozent multipliziert, bevor der Wert dem Abteilungsbericht hinzugefügt werden. Eine Berichtseinheit kann keine zwei übergeordnete Einheiten haben. Um die Beträge aus einer Berichtseinheit zwei übergeordneten Einheiten zuzuweisen, erstellen Sie eine weitere Berichtseinheit mit derselben Dimension für einen Rollup der zusätzlichen 50 Prozent. Geben Sie gesamte Prozentsätze ohne Dezimalstellen ein. Beispielsweise stellt **25** eine 25 Prozent-Zuteilung zum übergeordneten Objekt dar. Wenn Sie eine Nachkommastelle angeben (**0,25**), werden dem übergeordneten Objekt 0,25 Prozent zugeordnet. Zum Verwenden eines Prozentsatzes, der unter einem Prozent liegt, können Sie die Option **Rollup zulassen &lt;1 %** in der Berichtsdefinition verwenden. Diese Option befindet sich auf der Registerkarte **Weitere Optionen** im Dialogfeld **Berichtseinstellungen**. Rufen Sie dieses Dialogfeld über die Schaltfläche **Sonstiges** auf der Registerkarte **Einstellungen** der Berichtsdefinition auf. |
 | Einheitssicherheit         | Beschränkungen der Benutzer und Gruppen, die auf Informationen der Berichtseinheit zugreifen können. |
 | Weiterer Text       | Text, den der Bericht beinhaltet. |
 
@@ -75,7 +71,7 @@ Um eine Berichtstruktur-Definition zu erstellen, führen Sie die folgenden Schri
     | Einschließen/Zeichenposition       | Dieser Abschnitt listet die Dimensionen auf, die in den Finanzdaten definiert werden und gibt die Anzahl der Zeichen im längsten Wert an, der für jede Dimension definiert wurde. Wählen Sie ein Kontrollkästchen für eine Dimension aus, um diese Dimension in die Berichtstruktur-Hierarchie einzuschließen. |
     | Segmenthierarchie und -bereiche     | Dieser Abschnitt zeigt die Dimensionshierarchie. Sie können die Dimensionen in der Liste verschieben, um die Reihenfolge ihre Berichterstellung zu ändern. In den Feldern **Ausgangsdimension** und **Zieldimension** können Sie den Wertebereich jeder Dimension angeben. Wenn Sie keinen Bereich angeben, werden alle Dimensionswerte in die Berichtsstruktur eingefügt.<blockquote>[!NOTE] Falls Sie mehr als eine Dimension verwenden, werden nur Dimensionskombinationen, in denen Buchungen vorgenommen wurden, in den Ergebnissen zurückgegeben.</blockquote> |
 
-    Einen Screenshot, der ein Beispiel für das Dialogfenster **Berichtseinheiten aus Dimensionen einfügen** zeigt, finden Sie im Abschnitt „Beispiel für das Dialogfenster „Berichtseinheiten aus Dimensionen einfügen““ weiter unten in diesem Artikel.
+    Eine Abbildung, die ein Beispiel für das Dialogfenster **Berichtseinheiten aus Dimensionen einfügen** zeigt, finden Sie im Abschnitt „Beispiel für das Dialogfenster „Berichtseinheiten aus Dimensionen einfügen““ weiter unten in diesem Artikel.
 
 5. Um zusätzliche Segmente zu erstellen (z. B. durch das Teilen eines Segments in zwei kürzere Segmente), klicken Sie auf die richtige Position in einem **Zeichenposition**-Feld, und klicken Sie auf **Segmente teilen**.
 6. Um zwei Segmente in einem Segment zusammenführen, klicken Sie in jedes der Segmentfelder, die zusammengeführt werden sollen, und klicken Sie anschließend auf **Segmente kombinieren**.
@@ -105,22 +101,22 @@ Unter Verwendung einer Berichtstruktur können Sie Beträge aus untergeordneten 
     > Wenn Sie Dimensionen für untergeordnete Einheiten und übergeordnete Einheiten angeben, könnten Daten im Bericht dupliziert werden.
 
 - Berichtseinheiten, die Dimensionen in der Berichtsbaumstruktur enthalten, entsprechen den Dimensionen, die in den Zeilen- und in den Spaltendefinitionen verwendet werden. Die Kombination der Dimensionen bestimmt die Beträge, die für diese Einheit zurückgegeben werden. So geben in Beispiel 2 weiter unten in diesem Artikel die Positionen 6 und 7 jeweils nur die Werte für Abteilung 00 und 01 zurück.
-- Die Beträge für übergeordnete Berichtseinheiten, die keine Dimensionen in der Berichtstruktur enthalten, werden vom untergeordneten Einheitsbericht bestimmt und führen einen Rollup des Betrags auf der angegebenen übergeordneten Einheit durch. Wenn z. B. die übergeordnete Einheit (siehe Contoso-USA in Beispiel 2 des Daten-Rollup-Beispiels) zwei untergeordnete Einheiten (022 und 023) aufweist und keine Dimensionen enthält, wird ein Bericht für jedes untergeordnete und das übergeordnete Element generiert. Die übergeordnete Summe ist die Summe der zwei untergeordneten Beträge.
+- Die Beträge für übergeordnete Berichtseinheiten, die keine Dimensionen in der Berichtstruktur enthalten, werden vom untergeordneten Einheitsbericht bestimmt und führen einen Rollup des Betrags auf der angegebenen übergeordneten Einheit durch. Wenn z. B. die übergeordnete Einheit (siehe Contoso USA in Beispiel 2 des Daten-Rollup-Beispiels) zwei untergeordnete Einheiten (022 und 023) aufweist und keine Dimensionen enthält, wird ein Bericht für jedes untergeordnete und das übergeordnete Element generiert. Die übergeordnete Summe ist die Summe der zwei untergeordneten Beträge.
 
 ### <a name="manage-reporting-units"></a>Verwalten von Berichtseinheiten
 
 Jede Berichtstruktur-Definition wird als individuelle Ansicht angezeigt. Es gibt eine grafische Ansicht, die die über- und untergeordneten Hierarchie darstellt und eine Arbeitsblattansicht, die die spezifischen Informationen für jede Berichtseinheit anzeigt. Die grafische Ansicht und die Arbeitsblattansicht werden verbunden. Wenn Sie eine Berichtseinheit in einer Ansicht auswählen, wird diese auch in der anderen Ansicht ausgewählt. Sie können dimensionsübergreifende Hierarchien auf Grundlage der Dimensionsbeziehungen in den Finanzdaten aufbauen. Wenn Sie eine Berichtstruktur-Definition erstellen, können Sie dieselben Zeilendefinitionen mehrfach verwenden, egal ob Sie eine Einkommensaufstellung aller Abteilungen oder eine konsolidierte zusammenfassende Einkommensaufstellung generieren. Die Dimensionen, die in der Zeilendefinition festgelegt werden, können mit Dimensionen in der Berichtstruktur-Definition kombiniert werden, um eine Vielzahl von Ansichten der Leistung Ihrer Organisation bereitzustellen.
 
-### <a name="reporting-unit-structure"></a> Berichtseinheitenstruktur
+### <a name="reporting-unit-structure"></a>Berichtseinheitenstruktur
 
 Folgende Typen von Berichtseinheiten werden in der Finanzberichterstellung verwendet:
 
-- Eine Detaileinheit bezieht Informationen direkt aus den Finanzdaten, einem Excel-Arbeitsblatt oder einem anderen Finanzberichterstellungs-Arbeitsblatt.
+- Eine Detaileinheit bezieht die Informationen direkt aus den Finanzdaten.
 - Eine zusammengefasste Einheit fasst Daten von Einheiten auf niedrigerer Ebene zusammen.
 
-Eine übergeordnete Berichtseinheit ist eine zusammengefasste Einheit, die zusammengefasste Informationen aus einer Detaileinheit zusammengefasst. Eine zusammengefasste Einheit kann eine Detaileinheit und eine zusammengefasste Einheit sein. Das bedeutet, dass eine zusammengefasste Einheit Informationen aus einer unteren Einheit, den Finanzdaten oder einem Excel-Arbeitsblatt beziehen kann. Eine übergeordnete Einheit kann die untergeordnete Einheit für eine übergeordnete Einheit einer höheren Ebene sein. Eine untergeordnete Berichtseinheit kann eine Detaileinheit sein, die Informationen direkt aus den Finanzdaten oder einem Excel-Arbeitsblatt bezieht. Eine untergeordnete Berichtseinheit kann auch eine zwischenzeitlich zusammengefasste Einheit sein. Das bedeutet, es kann also die übergeordnete Einheit einer niedrigeren Einheit sowie die untergeordnete Einheit einer Einheit auf höherer Ebene sein. Im häufigsten Szenario für Berichtseinheiten ist in einer übergeordnete Einheit die Zelle in der Spalte **Dimensionen** leer und die untergeordnete Einheit enthält Links zu bestimmten oder Platzhalter-Dimensionskombinationen.
+Eine übergeordnete Berichtseinheit ist eine zusammengefasste Einheit, die zusammengefasste Informationen aus einer Detaileinheit zusammengefasst. Eine zusammengefasste Einheit kann eine Detaileinheit und eine zusammengefasste Einheit sein. Das bedeutet, dass eine zusammengefasste Einheit Informationen aus einer unteren Einheit oder den Finanzdaten beziehen kann. Eine übergeordnete Einheit kann die untergeordnete Einheit für eine übergeordnete Einheit einer höheren Ebene sein. Eine untergeordnete Berichtseinheit kann eine Detaileinheit sein, die Informationen direkt aus den Finanzdaten bezieht. Eine untergeordnete Berichtseinheit kann auch eine zwischenzeitlich zusammengefasste Einheit sein. Das bedeutet, es kann also die übergeordnete Einheit einer niedrigeren Einheit sowie die untergeordnete Einheit einer Einheit auf höherer Ebene sein. Im häufigsten Szenario für Berichtseinheiten ist in einer übergeordnete Einheit die Zelle in der Spalte **Dimensionen** leer und die untergeordnete Einheit enthält Links zu bestimmten oder Platzhalter-Dimensionskombinationen.
 
-### <a name="organize-reporting-units"></a> Organisieren von Berichtseinheiten
+### <a name="organize-reporting-units"></a>Organisieren von Berichtseinheiten
 
 Sie können die Organisationsstruktur einer Berichtsbaumstruktur-Definition anpassen, indem Sie in der grafischen Ansicht die Berichtseinheiten verschieben. Sie können Berichtseinheiten auch auf einer höheren Ebene in der Berichtstruktur einstufen oder sie zu einer niedrigeren Ebene herunterstufen.
 
@@ -129,7 +125,7 @@ Sie können die Organisationsstruktur einer Berichtsbaumstruktur-Definition anpa
 3. Ziehen Sie die Einheit an eine neue Position. Alternativ klicken Sie mit der rechten Maustaste auf die Einheit, und wählen dann **Berichtseinheit höherstufen** oder **Berichtseinheit herunterstufen** aus.
 4. Klicken Sie auf **Datei** &gt; **Speichern**, um die Änderungen zu speichern.
 
-### <a name="add-text-about-a-reporting-unit"></a> Hinzufügen von Text über eine Berichtseinheit
+### <a name="add-text-about-a-reporting-unit"></a>Hinzufügen von Text über eine Berichtseinheit
 
 Eine Zusatztexteingabe ist eine statische Textzeichenfolge von bis zu 255 Zeichen, die Informationen zu der Berichtstruktur-Definition hinzufügt. Beispielsweise kann der Zusatztext eine kurze Unternehmensbeschreibung sein. Sie können bis zu zehn Zusatztexteingaben für jede Berichtseinheit in einer Berichtsbaumstruktur-Definition erstellen. Der Zusatztext wird im Bericht für die Berichtseinheit angezeigt, der der Text zugewiesen ist. Sie können Texteinträge aus der Spalte **Beschreibung** der Zeilendefinition hinzufügen und der Registerkarte **Kopf- und Fußzeilen** in der Berichtsdefinition.
 
@@ -164,19 +160,6 @@ Sie können den Zugriff bestimmter Benutzer und Gruppen auf einer Berichtseinhei
 3. Wählen Sie im Dialogfeld **Einheitssicherheit** einen Namen aus, und klicken Sie dann auf **Entfernen**.
 4. Klicken Sie auf **OK**.
 
-### <a name="link-to-reports"></a>Berichtverknüpfung
-
-Nachdem Sie in der Zeilendefinition eine Spalte **Bericht** erstellt und den Bericht angegeben haben, der in den Bericht einbezogen werden soll, müssen Sie die Berichtstruktur mit der verknüpften Spalte und der Berichtsinformation aktualisieren. Ein Bericht kann in jede Einheit in der Berichtstruktur importiert werden.
-
-### <a name="identify-the-report-in-a-reporting-tree"></a>Identifizieren des Berichts in einer Berichtstruktur
-
-1. Öffnen Sie die zu ändernde Berichtsbaumstruktur-Definition im Berichts-Designer.
-2. In der Spalte **Zeilendefinitionen** zeigen die Zellen Informationen basierend auf den ausgewählten Zeilenformationen an, da die gleiche Zeilendefinition für alle Einheiten der Berichtstruktur verwendet werden muss. Doppelklicken Sie auf die Zelle **Zeilendefinitionen**, und wählen Sie dann die Zeilendefinition aus, die Informationen zum Bericht enthält.
-3. Wählen Sie in der Zelle **Arbeitsblatt-Verknüpfung** einer Berichtseinheit den Namen der Verknüpfung aus, der dem Bericht entspricht.
-4. In der Zelle **Arbeitsmappen- oder Berichtspfad** einer Berichtseinheit, geben Sie den Namen des Berichts ein oder suchen danach, um den Bericht auszuwählen.
-5. Um ein Arbeitsblatt in einem Bericht anzugeben, geben Sie den Namen des Arbeitsblatts in der Zelle **Arbeitsblattname** ein.
-6. Wiederholen Sie die Schritte 3 bis 5 für jede Berichtseinheit, die Daten von einem Bericht erhalten soll. Damit keine falschen Daten im Bericht angezeigt werden, stellen Sie sicher, dass die richtigen Berichtsnamen in der entsprechenden Einheit der Berichtstruktur angezeigt werden.
-
 ## <a name="examples"></a>Beispiele
 ### <a name="reporting-unit-structure--example-1"></a>Berichtseinheitsstruktur - Beispiel 1
 
@@ -187,36 +170,39 @@ Die Berichtseinheitenstruktur in der folgenden Berichtstruktur ist wie folgt:
 - Die Detailberichtseinheiten der niedrigsten Ebene (Home Sales, Auto Sales, Client Services, und Operations) stellen Abteilungen in den Finanzdaten dar. Diese Berichtseinheiten befinden sich im schattierten Bereich des Diagramms.
 - Die zusammengefassten Einheiten auf höherer Ebene fassen Informationen aus den Detaileinheiten zusammen.
 
-[![ContosoEntertainmentSummaryReportStructure](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
+[![Contoso-Zusammenfassungsberichtsstruktur – Beispiel 1.](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
 
 ### <a name="reporting-unit-structure--example-2"></a>Berichtseinheitsstruktur - Beispiel 2
 
 Das folgende Diagramm zeigt eine Berichtstruktur mit eine Organisationsstruktur, die nach Unternehmensfunktion aufgeteilt ist.
 
-[![summaryofallunitscontoso](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
+[![Contoso-Zusammenfassungsberichtsstruktur – Beispiel 2.](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Beispiel für das Dialogfeld "Berichtseinheiten aus Dimensionen einfügen"
 
 Die folgende Abbildung zeigt ein Beispiel für das Dialogfeld **Berichtseinheiten aus Dimensionen einfügen**. In diesem Beispiel ist das Ergebnis eine Kombination aus Unternehmenseinheiten, Kostenstellen und Abteilungen.
 
-[![InsertReportingUnits](./media/insertreportingunits.png)](./media/insertreportingunits.png)
+[![Berichtseinheiten einfügen.](./media/insertreportingunits.png)](./media/insertreportingunits.png)
 
 Die resultierende Berichtstruktur-Definition ist nach Geschäftseinheit, dann nach Kostenstelle und dann nach Abteilung sortiert. Die Dimension für die fünfte Berichtseinheit ist **Unternehmenseinhet = \[001\] Kostenstelle =\[\], Abteilung = \[022\]**, und identifiziert eine Berichtseinheit für Konten die spezifisch für die Unternehmenseinheit 001 und Abteilung 022 sind.
 
-[![ReportingTree](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+[![Abbildung des Berichtsbaums.](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### <a name="examples-of-data-roll-up"></a>Beispiele für Daten-Rollup
 
 Die folgenden Beispiele zeigen mögliche Informationen an, die in einer Berichtsstruktur-Definition als ein Beispiel für Daten-Rollup verwendet werden.
 
-#### <a name="example-1"></a>Beispiel 1
+#### <a name="example-1"></a>Beispiel 1
 
-[![MutliCompanyRollUp](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
+[![Roll-up für mehrere Unternehmen.](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
 
-#### <a name="example-2"></a>Beispiel 2
+#### <a name="example-2"></a>Beispiel 2
 
-[![CrossCompanyDepartmentRollUp](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
+[![Abteilungsübergreifendes Roll-up.](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Finanzberichterstellung](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

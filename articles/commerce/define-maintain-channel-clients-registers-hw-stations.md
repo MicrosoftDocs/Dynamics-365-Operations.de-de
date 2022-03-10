@@ -1,7 +1,7 @@
 ---
 title: Peripheriegeräte mit der Verkaufsstelle (POS) verbinden
 description: Dieses Thema erläutert, wie Sie Peripheriegeräte mit Ihrer Retail POS verbinden.
-author: rubencdelgado
+author: BrianShook
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 92383
 ms.assetid: 83f31ea6-f0a2-4501-9d4d-a37b6eec2599
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 64b228954c040050f605d60cd416c112f3b12e25
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 66912443c25adfae6fa11e6a25c4a97f63a438ba
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802044"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779517"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Peripheriegeräte mit der Verkaufsstelle (POS) verbinden
 
@@ -78,7 +78,7 @@ Während die Hardwarestation selbst auf der Kanalebene unter Einbeziehung Instan
 
 ### <a name="mpos-with-connected-peripheral-devices"></a>MPOS mit verbundenen Peripheriegeräten
 
-[![Herkömmlich, feste Verkaufsstelle](./media/traditional-300x279.png)](./media/traditional.png)
+[![Herkömmlich, feste Verkaufsstelle.](./media/traditional-300x279.png)](./media/traditional.png)
 
 Um MPOS mit POS-Peripheriegeräte in einem herkömmlichen, festen POS-Szenario zu verbinden, navigieren Sie zuerst zum Register selbst und weisen Sie dann ein Hardwareprofil zu. Sie finden die POS-Register unter **Retail nd Commerce** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Register**. 
 
@@ -97,7 +97,7 @@ Abschließend verwenden Sie den Vorgang **Hardwarestation auswählen** in MPOS u
 
 ### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>MPOS oder Cloud POS mit eigenständiger Hardwarestation
 
-[![Freigegebene Peripheriegeräte](./media/shared-300x254.png)](./media/shared.png)
+[![Freigegebene Peripheriegeräte.](./media/shared-300x254.png)](./media/shared.png)
 
 In diesem Szenario ist eine eigenständige Hardwarestation für MPO- und Cloud POS-Kunden freigegeben. Dieses Szenario erfordert die Erstellung eines Hardwarestationsprofils zum Spezifizieren des Download-Pakets, des Ports und des Hardwareprofils, das die Hardwarestation verwendet. Sie können die Hardwarestationsprofile unter **Einzelhandel und Handel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS-Profile** &gt; **Hardwarestationsprofile** finden. 
 

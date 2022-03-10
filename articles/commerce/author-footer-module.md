@@ -2,11 +2,9 @@
 title: Fußzeilenmodul
 description: In diesem Thema werden Fußzeilenmodule behandelt nd wie sie in Dynamics 365 Commerce erstellt werden.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 16c9ca145aff97f0af242da4cf662367f1f4ca3d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0fdf183afe0df71e43a05b65fba06126f75f85b981b78afc4a543fb9310c6906
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5211447"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719985"
 ---
 # <a name="footer-module"></a>Fußzeilenmodul  
 
@@ -33,7 +31,7 @@ Das Fußzeilenmodul ist ein spezielle Container, der verwendet wird, um die Modu
 
 Das folgende Bild zeigt ein Beispiel eines Fußzeilenmoduls, das auf einer Homepage verwendet wird.
 
-![Beispiel eines Fußzeilenmoduls](./media/ecommerce-footer.PNG)
+![Beispiel eines Fußzeilenmoduls.](./media/ecommerce-footer.PNG)
 
 ## <a name="footer-module-properties"></a>Fußzeilenmoduleigenschaften 
 

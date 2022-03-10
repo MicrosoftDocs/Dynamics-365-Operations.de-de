@@ -2,7 +2,7 @@
 title: Mitarbeiter-Sonderurlaub verwalten
 description: Mitarbeiter-Sonderurlaub in Dynamics 365 Human Resources verwalten.
 author: andreabichsel
-ms.date: 11/02/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 33080fc5ca43f3d83ee9d17565f4c229ced7b94f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: ccdf2346e3fdecf4f27fc9f34f0641d3b1fb5b55
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055627"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067376"
 ---
 # <a name="manage-employee-leave"></a>Mitarbeiter-Sonderurlaub verwalten
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -44,12 +47,11 @@ Sie können die Abwesenheit eines Mitarbeiters nach Abwesenheitstyp verwalten. D
 
 Sie können einen Ursachencode und einen Kommentar einfügen, wenn Sie das Abwesenheitsguthaben eines Mitarbeiters anpassen. 
 
->[!IMPORTANT]
->Zusätzliche Informationen zu Abwesenheitsguthaben werden in der Vorschau angezeigt. Sie müssen es in Ihrer **Sandbox**-Umgebung aktivieren. Weitere Informationen zum Aktivieren der Vorschaufunktionen finden Sie unter [Funktonen verwalten](hr-admin-manage-features.md).<br>
->Wenn Sie die Maus über ein Abwesenheitsguthaben bewegen, wird Folgendes angezeigt:<br>
->- **Verfügbar**: In diesem Jahr insgesamt – in diesem Jahr genommen
->- **In diesem Jahr insgesamt**: Alle aufgelaufenen, angepassten und übertragenen arbeitsfreien Zeiten des Jahres
->- **In diesem Jahr genommen**: Alle genehmigten arbeitsfreien Zeiten
+Wenn Sie nun mit der Maus über einen beliebigen Urlaubssaldo fahren, werden die folgenden Informationen angezeigt:
+
+- **Verfügbar** – Der **Gesamtwert dieses Jahr** abzüglich dem Wert **Dieses Jahr bezogen**.
+- **Gesamtwert in diesem Jahr**: Alle aufgelaufenen, angepassten und übertragenen arbeitsfreien Zeiten des Jahres.
+- **In diesem Jahr genommen** -  Alle genehmigten arbeitsfreien Zeiten.
 
 ## <a name="see-also"></a>Siehe auch
 

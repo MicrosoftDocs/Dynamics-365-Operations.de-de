@@ -1,29 +1,30 @@
 ---
 title: Einzelvorgänge für Datenimport und ‑export – Übersicht
 description: Verwenden Sie den Datenverwaltungsarbeitsbereich, um Datenimport- und Exporteinzelvorgänge zu erstellen und zu verwalten.
-author: Sunil-Garg
-manager: AnnBe
-ms.date: 11/02/2020
-ms.topic: article
+author: peakerbl
+ms.date: 10/21/2021
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3af49d9355f37e0016f491ed37050f75bbc65d72
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e63daad6f206500bfa21c28635648c717f5bbdde
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684059"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071084"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Einzelvorgänge für Datenimport und ‑export – Übersicht
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Um Datenimport- und Datenexporteinzelvorgänge zu erstellen und zu verwalten, verwenden Sie den Arbeitsbereich **Datenverwaltung**. Standardmäßig der Datenimport und der Exportvorgang eine für jede Stagingtabelle Entität in der Zieldatenbank erstellt. Mit Stagingtabellen können Sie Daten prüfen, bereinigen oder konvertieren, bevor Sie diese verschieben.
 
@@ -70,6 +71,9 @@ Wenn Sie eine Einheit auswählen, müssen Sie die Verpackungseinheiten das Forma
 | XML                    | \-k. A.-                                      | XML-Element XML-Attribut |
 | Mit Trennzeichen, fest mit | Komma, Semikolon, Registerkarte, senkrechter Strich, Doppelpunkt | \-k. A.-                     |
 
+> [!NOTE]
+> Es ist wichtig, den richtigen Wert für **Zeilentrennzeichen**, **Spaltentrennzeichen** und **Textqualifizierer** auszuwählen, wenn die **Datei Format**-Option auf **Getrennt** eingestellt ist. Stellen Sie sicher, dass Ihre Daten nicht das als Trennzeichen oder Qualifizierer verwendete Zeichen enthalten, da dies beim Import und Export zu Fehlern führen kann.
+
 ### <a name="sequence-the-entities"></a>Sequenz der Entitäten
 Entitäten können in einer Datenvorlage in den Serverkonfigurationsdateien oder im Import- und Exporteinzelvorgang sequenziert werden. Wenn Sie einen Einzelvorgang ausführen, der mehr als eine Datenentität enthält, müssen Sie prüfen, ob die Datenentitäten ordnungsgemäß geordnet werden. Sie ordnen die Entitäten hauptsächlich so, dass Sie beliebige funktionalen Abhängigkeiten unter den Entitäten adressieren können. Wenn Entitäten keine funktionalen Abhängigkeiten haben, können Sie diese für Parallelimport oder Export planen.
 
@@ -108,7 +112,7 @@ Es gibt zwei zuzuordnende Ansichten: **Zuordnungsvisualisierung**, das die Stand
 
 Sie können auf der Seite eine Zuordnung generieren, indem Sie **Generieren Sie Quellzuordnung** auswählen. Eine generierte Zuordnung verhält sich wie eine automatische Zuordnung. Daher müssen Sie alle nicht zugeordneten Felder manuell zuordnen.
 
-![Datenzuordnung](./media/dixf-map.png)
+![Datenzuordnung.](./media/dixf-map.png)
 
 ## <a name="verify-the-security-for-your-import-or-export-job"></a>Überprüfen Sie die Sicherheit für den Export- oder Importvorgang.
 Der Zugriff auf den Arbeitsbereich **Datenverwaltung** kann eingeschränkt werden, damit Benutzer nur auf bestimmte Dateneneinzelvorgänge zugreifen können. Der Zugriff auf einen Dateneneinzelvorgang bedeutet Zugriff auf die Ausführungshistorie dieses Einzelvorgangs und Zugriff auf die Tabellen. Daher müssen Sie prüfen, ob übereinstimmende Zugriffssteuerungen vorhanden sind, wenn Sie einen Dateneneinzelvorgang erstellen.
@@ -134,7 +138,7 @@ Sie können einen Einzelvorgang gleichzeitig aktivieren, indem Sie **Importieren
 ## <a name="validate-that-the-job-ran-as-expected"></a>Überprüfen Sie, ob der Einzelvorgang wie erwartet ausgeführt wurde
 Die Einzelvorgangshistorie ist zur Problembehebung und Untersuchung auf Import- und Exporteinzelvorgängen verfügbar. Historische Einzelvorgangsausführungen werden nach Perioden sortiert.
 
-![Historie des Stapelverarbeitungsauftrags](./media/dixf-job-history.md.png)
+![Historie des Stapelverarbeitungsauftrags.](./media/dixf-job-history.md.png)
 
 Jede Einzelvorgangsausführung enthält die folgenden Details:
 
@@ -163,19 +167,7 @@ Um den Import von Daten zu beschleunigen, kann die parallele Verarbeitung des Im
     - Geben Sie im Feld **Importschwellenwert für Datensatzanzahl** die Anzahl der Schwellenwerte für den Import ein. Dies bestimmt die Anzahl der Datensätze, die von einem Thread verarbeitet werden sollen. Wenn eine Datei 10 KB an Datensätzen enthält, bedeutet eine Datensatzanzahl von 2500 mit einer Aufgabenanzahl von 4, dass jeder Thread 2500 Datensätze verarbeitet.
     - Im Feld **Aufgabenanzahl importieren** geben Sie die Anzahl der Importaufgaben ein. Dies darf die maximale Anzahl von Batch-Threads nicht überschreiten, die für die Stapelverarbeitung in **Systemadministration \>Serverkonfiguration** zugewiesen sind.
 
-## <a name="clean-up-the-staging-tables"></a>Bereinigen der Tabellen
-Mit Plattformupdate 29 wurde diese Funktion eingestellt. Sie wird durch eine neue Version der Bereinigungsfunktion für den Auftragsverlauf ersetzt, die nachstehend erläutert wird.
-
-Sie können Tabellen bereinigen, indem Sie die Funktion **Bereinigen der Tabellen** im **Datenverwaltung** Arbeitsbereich verwenden. Sie können folgende Optionen verwenden, um auszuwählen, welche Datensätze gelöscht werden sollen, aus den Stagingtabellen:
-
-- **Entität** – Wenn nur eine Entität angegeben wurde, werden alle Datensätze ab dieser Stagingtabellen Entität gelöscht. Wählen Sie diese Option aus, um alle Daten für die Entität zu allen Datenprojekten und allen Einzelvorgängen zu bereinigen.
-- **Auftrags-ID** – Wenn nur eine Einzelvorgangskennung angegeben wurde, werden alle Datensätze für allen Entitäten im ausgewählten Einzelvorgang aus den entsprechenden Tabellen gelöscht.
-- **Datenprojekte** – Wenn nur ein Datenprojekt aktiviert ist, werden alle Datensätze für alle Entitäten und zu allen Einzelvorgängen für das ausgewählte Datenprojekt gelöscht.
-
-Sie können auch die Optionen kombinieren, um den Datensatz einzuschränken, der gelöscht werden soll.
-
-## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>Bereinigung des Auftragsverlaufs (verfügbar ab Plattformupdate 29)
-
+## <a name="job-history-clean-up"></a>Auftragshistorie bereinigen 
 Die Funktion zur Bereinigung des Auftragsverlaufs in der Datenverwaltung muss verwendet werden, um eine regelmäßige Bereinigung des Ausführungsverlaufs einzuplanen. Diese Funktion ersetzt die vorherige Bereinigungsfunktion für Stagingtabellen, die ab sofort nicht mehr bereitgestellt wird. Die folgenden Tabellen werden durch den Bereinigungsprozess bereinigt.
 
 -   Alle Stagingtabellen
@@ -211,16 +203,10 @@ Wenn Sie den Bereinigungsprozess planen, müssen die folgenden Parameter angegeb
 > [!NOTE]
 > Wenn Sätze in den Staging-Tabellen nicht vollständig bereinigt werden, stellen Sie sicher, dass der Bereinigungsjob für die Ausführung in Wiederholung eingeplant wird. Wie oben erläutert, wird der Job bei jeder Bereinigungsausführung nur so viele Ausführungs-IDs bereinigen, wie innerhalb der vorgegebenen maximalen Stunden möglich sind. Um mit der Bereinigung der verbleibenden Staging-Datensätze fortzufahren, muss der Job für eine periodische Ausführung eingeplant werden.
 
-## <a name="job-history-clean-up-and-archival-available-for-preview-in-platform-update-39-or-version-10015"></a>Bereinigen und Archivieren des Einzelvorgangsverlaufs (verfügbar zur Vorschau in Plattformupdate 39 oder Version 10.0.15)
+## <a name="job-history-clean-up-and-archival"></a>Bereinigung und Archivierung des Einzelvorgangsverlaufs 
 Die Funktionen zum Bereinigen und Archivieren des Einzelvorgangsverlaufs ersetzen die vorherigen Versionen der Bereinigungsfunktion. In diesem Abschnitt werden diese neuen Funktionen erläutert.
 
-Eine der wichtigsten Änderungen an der Bereinigungsfunktion ist die Verwendung eines System-Batchauftrags zum Bereinigen des Verlaufs. Die Verwendung von System-Batchaufträgen ermöglicht Finance and Operations-Apps die automatische Planung und Ausführung des Batchauftrags zur Bereinigung, sobald das System bereit ist. Es ist nicht mehr erforderlich, den Batchauftrag manuell zu planen. In diesem Standardausführungsmodus wird der Batchauftrag ab Mitternacht jede Stunde ausgeführt und der Ausführungsverlauf für die letzten 7 Tage beibehalten. Der gelöschte Verlauf wird für den zukünftigen Abruf archiviert.
-
-> [!NOTE]
-> Da sich diese Funktion in der Vorschau befindet, löscht der System-Batchauftrag keinen Ausführungsverlauf, bevor er nicht über den Flight DMFEnableExecutionHistoryCleanupSystemJob aktiviert wird. Sobald die Funktion in einer zukünftigen Version allgemein verfügbar sein wird, wird dieser Flight nicht mehr erforderlich sein und der System-Batchauftrag wird, wie oben beschrieben, basierend auf dem definierten Zeitplan mit der Bereinigung und der Archivierung beginnen, wenn das System bereit ist. 
-
-> [!NOTE]
-> In einer zukünftigen Version werden die vorherigen Versionen der Bereinigungsfunktion aus den Finance and Operations-Apps entfernt.
+Eine der wichtigsten Änderungen an der Bereinigungsfunktion ist die Verwendung des System-Batchauftrags zum Bereinigen des Verlaufs. Die Verwendung des System-Batchauftrags ermöglicht Apps für Finanzen und Betrieb die automatische Planung und Ausführung des Batchauftrags zur Bereinigung, sobald das System bereit ist. Es ist nicht mehr erforderlich, den Batchauftrag manuell zu planen. In diesem Standardausführungsmodus wird der Batchauftrag ab Mitternacht jede Stunde ausgeführt und der Ausführungsverlauf für die letzten 7 Tage beibehalten. Der gelöschte Verlauf wird für den zukünftigen Abruf archiviert. Ab Version 10.0.20 ist diese Funktion immer aktiviert.
 
 Die zweite Änderung am Bereinigungsprozess ist die Archivierung des gelöschten Ausführungsverlaufs. Der Bereinigungsauftrag archiviert die gelöschten Datensätze im Blob Storage, den DIXF für regelmäßige Integrationen verwendet. Die archivierte Datei liegt im DIXF-Paketformat vor und ist 7 Tage lang im Blob verfügbar. Während dieser Zeit kann sie heruntergeladen werden. Die Standardlebensdauer von 7 Tagen für die archivierte Datei kann in den Parametern auf maximal 90 Tage geändert werden.
 
@@ -243,3 +229,6 @@ Um den archivierten Ausführungsverlauf herunterzuladen, wechseln Sie zum Datenv
 -   DMFSTAGINGLOGDETAILS
 -   DMFSTAGINGVALIDATIONLOG
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

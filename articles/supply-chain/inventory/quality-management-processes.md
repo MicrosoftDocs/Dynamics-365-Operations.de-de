@@ -1,9 +1,9 @@
 ---
 title: Übersicht Qualitätsmanagement und Qualitätsmangel
 description: Dieses Thema stellt die Funktionen für das Qualitäts- und Qualitätsmangel-Management in Microsoft Dynamics 365 Supply Chain Management vor und erklärt, wie sie zur Verbesserung der Produktqualität in Ihrer Lieferkette beitragen können.
-author: perlynne
+author: yufeihuang
 ms.date: 03/23/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: InventItemSampling, InventNonConformanceHistory, InventNonConformanceTable, InventQualityOrderLineResults, InventQualityOrderTable, InventTestCorrection, InventTestDiagnosticType, InventTestInstrument, InventTestReportSetup, InventTestTable
@@ -14,15 +14,15 @@ ms.custom:
 - intro-internal
 ms.assetid: 5ac8a059-5cb4-4cb5-ba14-b944bd08dae9
 ms.search.region: Global
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc50ca0510de7c0a53050ae1f5754294e77beb7891b450d8efca2686981c2014
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1bb4bcb7f554c22b4e1ab1b41867bd2d3dcca4d4
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739849"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985508"
 ---
 # <a name="quality-and-nonconformance-management-overview"></a>Übersicht Qualitätsmanagement und Qualitätsmangel
 

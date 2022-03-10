@@ -1,12 +1,10 @@
 ---
 title: Bestellanforderungsworkflow
 description: Der Workflowprozess leitet Bestellanforderungen durch den Prüfungsprozess, vom Anfangsstatus "Übersicht" bis zum Endstatus "Genehmigt". Wenn eine Bestellanforderung zur Prüfung übermittelt wird, wird der Workflowprozess gestartet. Nachdem die Bestellanforderung genehmigt wurde, kann eine Bestellung für die Bestellanforderungspositionen generiert und zur Auftragserfüllung an den Kreditor übermittelt werden.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqAuthorization, WorkflowParticipantExpenToken
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2234
 ms.assetid: dad3ba5a-2892-45d2-874a-300896f59b34
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67bad698584c4a49cc5ce82682bb32cd1e32bbd5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 66305688d1613b9882d3778a81886728df934931
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5215912"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569456"
 ---
 # <a name="purchase-requisition-workflow"></a>Bestellanforderungsworkflow
 
@@ -53,7 +51,7 @@ Die folgende Abbildung zeigt, wie eine Bestellanforderung als einzelnes Dokument
 -   **Einkaufsvertreter** – Der Benutzer, der die Beschaffungsprüfung durchführt und das Dokument genehmigen kann.
 -   **Der Vorgesetzte der anfordernden Person** – Der Benutzer, der die Prüfung auf Managerebene durchführt und das Dokument genehmigen kann.
 
-![Workflowüberprüfungsprozess für Bestellanforderungen](./media/purchreqworkflowoverview_submission.gif)  
+![Workflowüberprüfungsprozess für Bestellanforderungen.](./media/purchreqworkflowoverview_submission.gif)  
 In diesem Beispiel umfasst der Workflowprozess für die Bestellanforderung die folgenden Schritte:
 
 1.  Der Antragsteller übermittelt eine Bestellanforderung zur Prüfung.
@@ -76,7 +74,7 @@ In diesem Beispiel umfasst der Workflowprozess die folgenden Rollen:
 -   **Abteilungsleiter** – Der Benutzer, der eine Aufwendungsprüfung durchführt und das Dokument genehmigen kann.
 -   **Gruppenleiter** – Der Benutzer, der eine Prüfung als Unterzeichnungsberechtigter durchführt und das Dokument genehmigen kann.
 
-![Workflowüberprüfungsprozess für Bestellanforderungspositionen](./media/purchreqlineworkflowoverview.gif)  
+![Workflowüberprüfungsprozess für Bestellanforderungspositionen.](./media/purchreqlineworkflowoverview.gif)  
 In diesem Beispiel umfasst der Workflowprozess für die Bestellanforderungspositionen die folgenden Schritte:
 
 1.  Der Antragsteller übermittelt eine Bestellanforderung zur Prüfung. Jede Position wird an den Prüfer weitergeleitet, der im Workflowprozess als Empfänger konfiguriert ist.
@@ -107,8 +105,7 @@ Sie können die Aufwendungsprüfer auf der Seite **Aufwendungsprüfer für Beste
 
 Um einen der Aufwendungsprüfer zu verwenden, den Sie in einem Workflow eingerichtet haben, müssen Sie die Option **Art von Teilnehmer** auf **Aufwendungsbeteiligte** in den Eigenschaften **Zuweisung** für das relevante Workflowelement festlegen.
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Anforderung für Verbrauch erstellen](tasks/create-requisition-consumption.md)
 

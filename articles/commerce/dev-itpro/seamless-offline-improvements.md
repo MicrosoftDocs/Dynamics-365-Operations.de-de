@@ -1,7 +1,7 @@
 ---
 title: Nahtloser Offline-Schalter für Geschenkkarten- und Gutschriftsvorgänge
 description: Dieses Thema bietet einen Überblick über Verbesserungen, die einen nahtlosen Offline-Switch für bestimmte Zahlungsarten ermöglichen.
-author: rubendel
+author: BrianShook
 ms.date: 02/11/2020
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.custom: 141393
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: a8eda003e4cd4cf0d43bb07c93bd8d68a2fb9e57
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 59f1a0b213bd22906ba8b2c3e7da38a9818f6d4f
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792956"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779491"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>Nahtloser Offline-Schalter für Geschenkkarten- und Gutschriftsvorgänge
 
@@ -36,7 +36,7 @@ Verliert die Kasse jedoch die Verbindung, nachdem eine Geschenkkarte einer Trans
 
 Um die Funktionalität zum Abschluss von Geschenkkartentransaktionen nach dem Wechsel in den Offline-Modus zu aktivieren, gehen Sie auf die Registerkarte **Buchung** auf der Seite **Commerce-Parameter**. Suchen Sie auf dieser Registerkarte die Registerkarte **Geschenkkarte** und stellen Sie **Abschließen von Geschenkkartentransaktionen im Offline-Modus** auf **Ja** ein.
 
-![Offline-Geschenkkarteneinstellung](../media/gift.png)
+![Offline-Geschenkkarteneinstellung.](../media/gift.png)
 
 Commerce-Prameter werden normalerweise im Cache gespeichert. Daher kann es nach der Aktualisierung der Einstellung dieses Parameters und der Einleitung des Verteilungsplans zur Synchronisierung der Änderung mit dem Kanal bis zu 24 Stunden dauern, bis die Änderung wirksam wird. Um die Änderung sofort wirksam werden zu lassen, setzen Sie Microsoft Internet Information Services (IIS) zurück.
 
@@ -46,14 +46,14 @@ Wie die internen Geschenkkarten werden auch die Gutschriften zentral in Commerce
 
 Um die Funktionalität zum Abschluss von Gutschriftstransaktionen nach dem Wechsel in den Offline-Modus zu aktivieren, gehen Sie auf die Registerkarte **Posting** auf der Seite **Commerce-Parameter**. Suchen Sie auf dieser Registerkarte die Registerkarte **Gutschrift** und stellen Sie **Abschließen von Gutschriftstransaktionen im Offline-Modus** auf **Ja** ein.
 
-![Einstellung der Offline-Gutschrift](../media/creditmemo.png)
+![Einstellung der Offline-Gutschrift.](../media/creditmemo.png)
 
 Commerce-Prameter werden normalerweise im Cache gespeichert. Daher kann es nach der Aktualisierung der Einstellung dieses Parameters und der Einleitung des Verteilungsplans zur Synchronisierung der Änderung mit dem Kanal bis zu 24 Stunden dauern, bis die Änderung wirksam wird. Um die Änderung sofort wirksam werden zu lassen, setzen Sie den IIS zurück.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Offline-Verkaufsstellen (POS) Funktionalität](https://docs.microsoft.com/dynamics365/retail/pos-offline-functionality)
-- [Online- und Offlineverkaufsstellen-(POS)-Vorgänge](https://docs.microsoft.com/dynamics365/retail/pos-operations)
+- [Offline-Verkaufsstellen (POS) Funktionalität](../pos-offline-functionality.md)
+- [Online- und Offlineverkaufsstellen-(POS)-Vorgänge](../pos-operations.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

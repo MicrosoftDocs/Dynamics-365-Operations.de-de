@@ -2,7 +2,7 @@
 title: Cashflow-Vorhersage aktivieren
 description: In diesem Thema wird erläutert, wie Sie die Funktion „Cashflow-Planung“ in Finance Insights aktivieren.
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: d968f28126cf205a487d84301aa28f1251713386
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 763818f70095964d77ff82cf02178367d05eaf23
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752687"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109578"
 ---
 # <a name="enable-cash-flow-forecasting"></a>Cashflow-Vorhersage aktivieren
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 In diesem Thema wird erläutert, wie Sie die Funktion „Cashflow-Planung“ in Finance Insights aktivieren.
 
@@ -49,6 +48,9 @@ In diesem Thema wird erläutert, wie Sie die Funktion „Cashflow-Planung“ in 
 
     1. Auf der **Cashflow-Planung**-Registerkarte wählen Sie **Funktion aktivieren**.
     2. Wählen Sie **Vorhersagemodell erstellen**.
+
+> [!NOTE]
+> Für das Training des Modells **Cashflow Planung** werden Daten mit mehr als 100 Transaktionen benötigt, die sich über mehr als ein Jahr erstrecken. Wir empfehlen Ihnen mindestens zwei Jahre Daten mit mehr als 1.000 Transaktionen.
 
 Weitere Informationen dazu, wie die Cashflow-Planungsfunktion eingerichtet wird, finden Sie unter [Cashflow-Planung](cash-flow-forecast-intro.md).
 

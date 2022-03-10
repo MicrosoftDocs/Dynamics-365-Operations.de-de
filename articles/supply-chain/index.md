@@ -2,7 +2,7 @@
 title: Startseite zum Supply Chain Management
 description: Diese Seite enthält eine Liste der Hilfethemen und anderer Ressourcen für die Supply Chain Management-Funktionen.
 author: kamaybac
-ms.date: 01/08/2021
+ms.date: 09/15/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0fc784c3d0a1df7984761c95b5f6955cc1b441e7a51ac75eecd971a42a47a317
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ea45b238200d4d9d43d563e160e8574271a8ce7
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743601"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7487862"
 ---
 # <a name="supply-chain-management-home-page"></a>Startseite zum Supply Chain Management
 
@@ -62,7 +62,6 @@ In diesem kurzen Video werden die neuen Funktionen der Lieferkettenverwaltung zu
 
 In diesen kurzen Videos werden die neuen Funktionen der Lieferkettenverwaltung zusammengefasst, mit denen Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (Dezember 2017), ergänzt wurde.
 
-- [Integration der Konvertierung eines Interessenten in Bargeld](https://youtu.be/AVV9x5x-XCg) 
 - [Optimierungsratgeber](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Lagerortvorlage zum Kopieren der Konfiguration verwenden](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
@@ -81,7 +80,7 @@ In den folgenden Aufzeichnungen von Fachkonferenzen werden die Funktionen der Li
 - **Produktprogrammplanung:**
   - [Bedarfsplanungsfunktionen erweitern](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
   - [Produktprogrammplanung – Hinweise und Tricks zur Behebung von Leistungsproblemen](https://youtu.be/7v8BPmEs9Dg)
-  - [Hilfe! PPS ist langsam!](https://youtu.be/RLXybx20B5o)
+  - [MRP-Leistungsabstimmung](https://youtu.be/RLXybx20B5o)
 - **Produktinformationsverwaltung:**
   - [Produktkonfigurator in Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
 - **Lagerortverwaltung:**

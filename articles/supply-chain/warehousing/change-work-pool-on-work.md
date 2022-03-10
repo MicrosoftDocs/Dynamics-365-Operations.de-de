@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 513d74af52c9b3581827b653d58c95d7d1f2f78a75bea03296495fed0ea85de7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 9255b7d2eaf030592207b557b3b6567a1a5bda98
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771130"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102862"
 ---
 # <a name="change-work-pool-on-work"></a>Arbeitspool für Arbeit ändern
 
@@ -28,12 +28,9 @@ Sie können Arbeitspools verwenden, um die Arbeit in Gruppen organisieren. So k�
 
 Die Funktion *Arbeitspool bei Arbeit ändern* fügt dem Aktionsbereich für Arbeitsaufgaben eine Schaltfläche **Arbeitspool ändern** hinzu. Daher können Lagerverwalter den Arbeitspool vorhandener Arbeit problemlos ändern. Mit dieser Funktion können Manager schnell auf Änderungen vor Ort im Lager reagieren und sie können sich leichter auf ändernde Situationen anpassen und Arbeit an einen anderen Arbeitspool übertragen.
 
-## <a name="turn-on-the-change-work-pool-on-work-feature"></a>Die Funktion „Arbeitspool bei Arbeit ändern“ aktivieren
+## <a name="turn-the-change-work-pool-on-work-feature-on-or-off"></a>Die Funktion „Arbeitspool bei Arbeit ändern“ ein- oder ausschalten
 
-Bevor Sie mit der Einrichtung oder Verwendung dieser Funktion beginnen, müssen Sie sicherstellen, dass sie in Ihrem System verfügbar ist. Administratoren können mit den Einstellungen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie gegebenenfalls aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
-
-- **Module:** *Lagerortverwaltung*
-- **Funktionsname:** *Arbeitspool bei Arbeit ändern*
+Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Arbeitspool bei Arbeit ändern* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-the-change-work-pool-on-work-feature"></a>Die Funktion „Arbeitspool bei Arbeit ändern“ einrichten
 

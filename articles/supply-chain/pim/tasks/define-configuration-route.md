@@ -1,27 +1,24 @@
 ---
 title: Konfigurationsroute definieren
 description: Fokusse dieser Prozedur im Definieren eines Variantenarbeitsplans, der die Reihenfolge bestimmt, in der die Variantengruppen dargestellt werden.
-author: ShylaThompson
-manager: tfehr
+author: t-benebo
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1904e771915b8808b854437412639e2bc0d4677a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 54fd7d70f219a0a77957d421088f732032614ff0
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428692"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567054"
 ---
 # <a name="define-configuration-route"></a>Konfigurationsroute definieren
 
@@ -46,3 +43,6 @@ Fokusse dieser Prozedur im Definieren eines Variantenarbeitsplans, der die Reihe
 15. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 16. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

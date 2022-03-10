@@ -1,25 +1,23 @@
 ---
 title: Eine Fremdarbeitszelle für Lean Manufacturing erstellen
 description: Um Arbeit für Lean Manufacturing zu modellieren, müssen Sie eine Fertigungszelle erstellen, die dem Kreditor zugeordnet ist, der die Arbeit bereitstellt.
-author: cvocph
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/23/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86838eb81f42b0f930f3989f7edfa5ee724bd05e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f37a38227ef57e6e66a77e90883bf157792e7f81
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006890"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576831"
 ---
 # <a name="create-a-subcontracted-work-cell-for-lean-manufacturing"></a>Eine Fremdarbeitszelle für Lean Manufacturing erstellen
 
@@ -70,3 +68,6 @@ Um Arbeit für Lean Manufacturing zu modellieren, müssen Sie eine Fertigungszel
 24. Klicken Sie im Feld "Einheit" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
 25. "Auflösen" verändert die Einheit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

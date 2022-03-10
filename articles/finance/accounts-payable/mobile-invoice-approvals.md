@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5d3b85e076292b9d41de6a4cf3198ed9b38d27c8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 83d95ef6d9fcff060ac992b11ab5773af075fea5409e43430b4826dc097570c7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828033"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737354"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobile Rechnungsgenehmigungen
 
@@ -27,12 +27,11 @@ ms.locfileid: "5828033"
 
 Mithilfe der mobilen Funktionen können Geschäftsbenutzer mobile Erfahrungen entwerfen. Bei erweiterten Szenarien ermöglicht die Plattform auch Entwickler die Funktionen zu erweitern. Die effektivste Möglichkeit, einige der neuen mobilen Konzepten kennenzulernen, ist, den Prozess des Entwurfs einiger Szenarios durchzulaufen. Dieses Thema soll einen praktischen Ansatz zum Entwerfen von mobilen Szenarien bereitstellen, indem es mobile Kreditorenrechnungsgenehmigungen als Anwendungsfall zeigt. Dieses Thema soll helfen, andere der Szenarien zu entwerfen und kann auch auf anderen Szenarios angewendet werden, die nicht den Kreditorenrechnungen zugeordnet werden.
 
-<a name="prerequisites"></a>Voraussetzungen
--------------
+## <a name="prerequisites"></a>Voraussetzungen
 
 | Voraussetzung                                                                                            | Beschreibung                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Vorbereitung                                                                                |[Mobile Plattform](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
+| Vorbereitung                                                                                |[Mobile Plattform](../../fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 Finance                                                                              | Eine Umgebung mit Version 1611 und Plattform-Update 3 (November 2016)                   |
 | Hotfix KB 3204341 installieren.                                                                              | Die Aufgabenaufzeichnung kann fälschlicherweise zwei Scließen-Befehle für Dropdowndialogfelder erfassen, die in Plattform-Update 3 (November 2016) einbezogen sind |
 | Hotfix KB 3207800 installieren.                                                                              | Dieser Hotfix ermöglicht das Anzeigen von Anhängen im mobilen Client, der in Plattform-Update 3 (November 2016) enthalten ist.           |
@@ -90,7 +89,7 @@ Allgemeine, wenn mit dem mobilen Designer gearbeitet wird, vergewissern Sie sich
 <td>Welche Felder aus den Rechnungsposition wünschen die Benutzer in mobilen Umgebungen und in welcher Reihenfolge?</td>
 <td><ol>
 <li>Beschaffungskategorie</li>
-<li>Leistung</li>
+<li>Menge</li>
 <li>Preis je Einheit</li>
 <li>Nettobetrag der Position</li>
 <li>Steuerbetrag (US 1099)</li>
@@ -137,7 +136,7 @@ Die erste mobile Seite soll die Liste der Rechnungen, die dem Benutzer zur Geneh
 
 1.  In der URL ersetzen Sie den Namen der Menüoption durch **VendMobileInvoiceAssignedToMeListPage**, um die mobile Version der Listenseite **Ausstehende Kreditorenrechnungen – mir zugewiesen** im **Kreditor**-Modul zu öffnen. Je nach der Anzahl von Rechnungen, die Sie in Ihrem System besitzen, das Ihnen zugeordnet ist, wird auf dieser Seite die Rechnungen angezeigt. Sie können den Filter links verwenden um eine bestimmte Rechnung zu suchen. Allerdings benötigen wir keine bestimmte Rechnung für dieses Beispiel. Es benötigen nur eine Rechnung, die Ihnen zugewiesen ist. Die neuen Seiten, die verfügbar sind, wurden insbesondere zum Entwickeln von mobilen Szenarien für Kreditorenrechnung entworfen. Daher müssen Sie diesen Seiten nutzen. Die URL muss der folgenden URL ähneln. Nachdem Sie sie eingeben haben, muss die Seite, die in der Abbildung dargestellt wird, angezeigt werden: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile 
 
-    [![Seite „Ausstehende Kreditorenrechnungen – mir zugewiesen“](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+    [![Seite „Ausstehende Kreditorenrechnungen – mir zugewiesen“.](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
     
 2.  Klicken Sie auf **Einstellungen** (Zahnrad) in der oberen rechten Ecke der Seite und klicken dann auf **Mobile App**.
 3.  Wählen Sie einen und Arbeitsbereich aus und klicken sie **Bearbeiten**
@@ -146,7 +145,7 @@ Die erste mobile Seite soll die Liste der Rechnungen, die dem Benutzer zur Geneh
 6.  Klicken Sie auf **Fertig**.
 7.  Im mobilen Designer auf der Registerkarte **Felder** klicken Sie auf **Felder wählen**. Die Spalten auf der Listenseite müssen der folgenden Abbildung ähneln. 
 
-    [![Spalten auf der Seite "Mir zugeweisene ausstehenden Kreditorenrechnungen"](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
+    [![Spalten auf der Seite „Mir zugewiesene ausstehenden Kreditorenrechnungen“.](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
     
 8.  Fügen Sie die erforderlichen Spalten von der Listenseite hinzu, die für Benutzern in der mobilen Seite angezeigt werden. Die Reihenfolge, in der Sie hinzufügen, entspricht der Reihenfolge, in der die Felder an Endbenutzer angezeigt werden. Die einzige Methode, die Reihenfolge der Felder zu ändern ist, indem alle Felder erneut auswählen. Basierend auf den Anforderungen für dieses Szenarios, sind die folgenden acht Felder obligatorisch. Allerdings erachten mehrere Benutzer acht Felder für zu viele Informationen, die auf einem mobilen Gerät zu haben. Daher werden nur die wichtigsten Felder in der mobilen Listenansicht angezeigt. Die übrigen Felder erscheinen in der Detailansicht, die Sie später entwerfen. Jetzt fügen Sie nur die folgenden Felder hinzu. Klicken Sie auf das Pluszeichen (**+**) in den Spalten die Sie zum mobilen Seite hinzuzufügen wollen.
     - Kreditorenname
@@ -157,7 +156,7 @@ Die erste mobile Seite soll die Liste der Rechnungen, die dem Benutzer zur Geneh
 
     Nachdem die Felder hinzugefügt sind, muss die mobile Seite der folgenden Abbildung ähneln. 
     
-    [![Seite nach Felder hinzugefügt](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+    [![Seite nach Hinzufügen von Feldern.](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
 
 9.  Sie müssen außerdem die folgenden Spalten hinzufügen, sodass wir Workflowaktivitäten später aktivieren können.
     - Abgeschlossene Aufgabe anzeigen
@@ -176,7 +175,7 @@ Die erste mobile Seite soll die Liste der Rechnungen, die dem Benutzer zur Geneh
 
 Um die Rechnungsdetailseite für die mobile App zu entwerfen, verwenden Sie die **VendMobileInvoiceHeaderDetails**-Seite. Beachten Sie diese, abhängig von der Anzahl der Rechnungen, die Sie in Ihrem System gibt, enthält dieser Seite die älteste Rechnung (die Rechnung, die zuerst erstellt wurde). Sie können den Filter links verwenden um eine bestimmte Rechnung zu suchen. Allerdings benötigen wir keine bestimmte Rechnung für dieses Beispiel. Es müssen nur einige Rechnungsinformationen, sodass wir die mobile Seite zu entwerfen. 
 
-[![Workflowseite](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
+[![Workflowseite.](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
 1. In der URL ersetzen Sie den Namen der Menüoption durch **VendMobileInvoiceHeaderDetails**, um das Formular zu öffnen
 
@@ -206,14 +205,14 @@ Um die Rechnungsdetailseite für die mobile App zu entwerfen, verwenden Sie die 
 
 10. Fügen Sie die folgenden Felder aus Positionsraster auf der Seite hinzu:
     - Beschaffungskategorie
-    - Leistung
+    - Menge
     - Preis je Einheit
     - Nettobetrag der Position
     - Steuerbetrag (US 1099)
 
 11. Nachdem alle Felder aus den früheren zwei Schritten hinzugefügt wurden, klicken Sie auf **Fertig**. Die müssen der folgenden Abbildung ähneln.
     
-    [![Seite nach Felder hinzugefügt](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+    [![Abbildung mit zusätzlichen Feldern hinzugefügt.](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 
 12. Klicken Sie auf **Fertig**, um den Bearbeitungsmodus zu verlassen.
 
@@ -323,7 +322,7 @@ Um Workflow-Aktionen hinzuzufügen, verwenden Sie die Seite **VendMobileInvoiceH
 
 4. Legen Sie die **Dokumentverwaltung** Option **Ja** wie weiter unten fest. **Hinweis:** Wenn keine Anforderungen gibt, Zuordnungen im mobilen Gerät angezeigt werden, können Sie diese Option **Nein**, mit der die Standardeinstellung ist.
    
-   ![Dokumentverwaltung](./media/docmanagement-216x300.png)
+   ![Dokumentverwaltung.](./media/docmanagement-216x300.png)
 
 5. Klicken Sie auf **Fertig**, um den Bearbeitungsmodus zu verlassen.
 
@@ -340,7 +339,7 @@ Die Anforderungen für dieses Szenarios bestätigen, dass nur Verteilungen auf P
 
 1.  In der URL ersetzten Sie den Name der Menüoption. Die Seite, die angezeigt wird, sollte der folgenden Abbildung ähneln.
 
-    [![Alle Verteilungen-Seite](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+    [![Seite „Alle Verteilungen“.](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
 
 2.  Öffnen Sie den Designer von mobilen **Einstellungen** (Zahnrad) Schaltfläche.
 
@@ -489,7 +488,7 @@ Die mobile Seite **Buchhaltung anzeigen** ist derzeit mit keiner mobilen Seiten 
 <td>Welche Felder aus den Rechnungsposition wünschen die Benutzer in mobilen Umgebungen und in welcher Reihenfolge?</td>
 <td><ol>
 <li>Beschaffungskategorie</li>
-<li>Leistung</li>
+<li>Menge</li>
 <li>Preis je Einheit</li>
 <li>Nettobetrag der Position</li>
 <li>Steuerbetrag (US 1099)</li>

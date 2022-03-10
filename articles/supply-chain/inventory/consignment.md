@@ -1,7 +1,7 @@
 ---
 title: Sendung einrichten
 description: In diesem Thema wird erläutert, wie eingehende Lieferungsbestandsprozesse verwendet werden.
-author: perlynne
+author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 220834
 ms.assetid: 3c9d6de4-45d4-459a-aef7-0d9ad2c22b3a
 ms.search.region: Global
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a41fb3118359ab9a597f3c3242759fcbcf1e090a
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 4a1b96d18048a1ae6e380374f32d2bfa2270ae24
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6015852"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577719"
 ---
 # <a name="set-up-consignment"></a>Sendung einrichten
 
@@ -61,7 +61,7 @@ Ein Lieferungswiederbeschaffungsauftrag ist ein Dokument, das verwendet wird, um
 
 Die Dimension **Besitzer** wird verwendet, um Informationen darüber zu trennen, welcher Bestand sich im Besitz des Kreditors und welcher sich im Besitz der empfangenden juristischen Person befindet. Lieferungswiederbeschaffungsauftragspositionen haben einen **Offenen Auftrag**-Status, sofern die gesamte Menge der Positionen nicht eingegangenen oder storniert wurde. Wenn die gesamte Menge eingegangenen oder abgebrochen wurde, wird der Status in **Abgeschlossen** geändert. Der physische verfügbare Lagerbestand, der einem Lieferungswiederbeschaffungsauftrag zugeordnet ist, kann mithilfe eines Anmeldeprozesses sowie eines Produktzugangsaktualisierungsprozesses erfasst werden. Die Registrierung kann als Teil des Artikeleingangsprozesses erfolgen oder durch die manuelle Aktualisierung der Auftragspositionen. Wenn der Produktzugangs-Aktualisierungsprozess verwendet wird, wird ein Beleg in der Produktzugangserfassung erstellt, der zur Bestätigung des Zugangs von Waren an die Kreditoren verwendet werden kann.
 
-[![Unterlieferungs-Wiederbeschaffungsaufträge](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
+[![Unterlieferungs-Wiederbeschaffungsaufträge.](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
 ## <a name="inventory-ownership-change-journal"></a>Erfassung für die Änderung von Bestandseigentümern
 
@@ -74,7 +74,7 @@ Es werden nur Lagerbuchungen erstellt, die einer gebuchten Erfassung zugeordnet 
 
 Es ist nicht möglich, die Menge auf Lieferungsbestellpositionen zu aktualisieren, nachdem der Auftrag erstellt wurde.
 
-[![Erfassung für die Änderung von Bestandseigentümern](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
+[![Bestandeigentümer-Änderungserfassung.](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Kreditorenzusammenarbeit in den Lieferungsprozessen
 
@@ -90,13 +90,13 @@ Weitere Informationen zur Einrichtung von Kreditoren zur Verwendung der Kreditor
 
 Um physischen, eingehenden Lieferungsbestand zu erfassen, müssen Sie einen Kreditoreneigentümer definieren. Dies erfolgt auf der Seite **Bestandseigentümer**. Wenn Sie ein **Kreditorenkonto** auswählen, generiert dies Standardwerte für die Felder **Name** und **Besitzer**. Der Wert im Feld **Besitzer** wird für den Kreditor angezeigt, somit möchten Sie ihn möglicherweise ändern, wenn die Namen Ihres Kreditorenkontos von externen Personen nicht einfach erkannt werden können. Es ist möglich, das Feld **Besitzer** zu bearbeiten. Dies gilt jedoch nur bis zu dem Zeiptunkt, an dem Sie den Datensatz **Bestandsbesitzer** speichern. Das Feld **Name** wird mit dem Namen der Partei aufgefüllt, dem das Kreditorenkonto zugeordnet ist, und dieser kann nicht geändert werden.
 
-[![Bestandsbesitzer](./media/inventory-owners.png)](./media/inventory-owners.png)
+[![Bestandsbesitzer.](./media/inventory-owners.png)](./media/inventory-owners.png)
 
 ## <a name="tracking-dimension-group"></a>Rückverfolgungsgruppe
 
 Artikel, die bei Lieferungsprozessen verwendet werden, müssen einer **Rückverfolgungsangabengruppe** zugeordnet werden, wobei die Dimension **Besitzer** auf **Aktiv** festgelegt ist. Bei der „Besitzerdimension” sind die Optionen **Physischer Bestand** und **Wertmäßiger Bestand** immer aktiviert. Die Option **Disposition nach Dimensionen** ist nie aktiviert.
 
-[![Rückverfolgungsgruppe](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
+[![Rückverfolgungsgruppe.](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Mehrwertsteuer-Berechnungsmethoden im Feld "Ursprung"
 description: In diesem Artikel wird beschrieben die Optionen im Feld "Ursprung" auf der Mehrwertsteuercodeseite und wie Mehrwertsteuer basierend auf der ausgewählten Option für einen Mehrwertsteuercode berechnet wird.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be935b80e06158d9634989ba03747f4a59247f8e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9ac37858c68996c6c8140303327003d93bd357b512f9c634650b7e9df1284496
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5204929"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769745"
 ---
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Mehrwertsteuer-Berechnungsmethoden im Feld "Ursprung"
 
@@ -54,8 +52,7 @@ Wenn der Nettobetrag 10,00 beträgt, dann ist ABGABE 1 "1,00 (10,00 x 10 %)" und
 | Nur ein Steuercode mit Ursprung = "Prozentanteil des Bruttobetrags" kann für eine Buchung verwendet werden. Wenn mehr als ein Steuercode für eine Buchung bestimmt wird, wird ein Fehler angezeigt, dass keine Steuer berechnet werden kann. |
 
 
-<a name="percentage-of-sales-tax"></a>Mehrwertsteuer-Prozentsatz
------------------------
+## <a name="percentage-of-sales-tax"></a>Mehrwertsteuer-Prozentsatz
 
 Wenn Sie im Feld "Ursprung" die Berechnungsmethode "Mehrwertsteuer-Prozentsatz" auswählen, wird die Mehrwertsteuer als Prozentsatz der im Feld "Mehrwertsteuer auf Mehrwertsteuer" ausgewählten Mehrwertsteuer berechnet. Die im Feld "Mehrwertsteuer auf Mehrwertsteuer" ausgewählte Mehrwertsteuer wird zuerst berechnet. Die zweite Mehrwertsteuer wird anschließend auf Basis des ersten Mehrwertsteuerbetrags berechnet.
 ### <a name="example"></a>Beispiel
@@ -121,8 +118,7 @@ Dokument/Erfassung ist auf "Beträge einschließlich Mehrwertsteuer" festgelegt 
 
 
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Mehrwertsteuersteuersätze auf Grundlage der Felder Berechnungsgrundlage und Berechnungsmethode](marginal-base-field.md)
 

@@ -1,83 +1,119 @@
 ---
-title: Konsistenzprüfung für Einzelhandelstransaktionen
-description: In diesem Thema werden die Funktionen der Konsistenzprüfung für Transaktionen in Dynamics 365 Commerce beschrieben.
-author: josaw1
-manager: AnnBe
-ms.date: 10/07/2020
+title: Geschäftstransaktionen für die Aufstellungsberechnung validieren
+description: In diesem Thema wird die Funktionalität zur Überprüfung von Geschäftstransaktionen in Microsoft Dynamics 365 Commerce beschrieben.
+author: analpert
+ms.date: 01/31/2022
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chgriffin
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: josaw
+ms.author: analpert
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: cce0d408ac6d372fb726eff8fa4b0358ec200243
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f51b1f39aa212fe8587761721194db7791bec5bc
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210994"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087448"
 ---
-# <a name="retail-transaction-consistency-checker"></a>Konsistenzprüfung für Einzelhandelstransaktionen
+# <a name="validate-store-transactions-for-statement-calculation"></a>Geschäftstransaktionen für die Aufstellungsberechnung validieren
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird die Funktion zur Konsistenzprüfung für Einzelhandelstransaktionen in Microsoft Dynamics 365 Commerce beschrieben. Die Konsistenzprüfung ermittelt und isoliert inkonsistente Transaktionen, bevor sie im Auszugsbuchungsprozess verarbeitet werden.
+In diesem Thema wird die Funktionalität zur Überprüfung von Geschäftstransaktionen in Microsoft Dynamics 365 Commerce beschrieben. Im Prüfungsprozess werden Transaktionen identifiziert und markiert, die Buchungsfehler verursachen, bevor sie vom Auszugsbuchungsprozess erfasst werden.
 
-Wird eine Aufstellung gebucht, kann die Buchung aufgrund der inkonsistenten Daten in den Handelstransaktionstabellen fehlschlagen. Die Datenfehler können durch unvorhergesehene Probleme in der Verkaufsstellenanwendung oder durch Fehler beim Importieren von Buchungen aus POS-Systemen von Drittanbietern auftreten. Im Folgenden sind Beispiele für diese Inkonsistenzen aufgeführt: 
+Wenn Sie versuchen, eine Anweisung zu buchen, kann der Prüfungsprozess aufgrund inkonsistenter Daten in den Handelstransaktionstabellen fehlschlagen. Im Folgenden finden Sie einige Beispiele für Faktoren, die diese Inkonsistenzen verursachen können:
 
 - Der Transaktionsgesamtbetrag in der Kopftabelle entspricht nicht dem Transaktionsgesamtbetrag der Positionen.
-- Die Positionsanzahl in der Kopftabelle entspricht nicht der Anzahl von Positionen in der Transaktionstabelle.
+- Die in der Kopfzeilentabelle angegebene Anzahl von Elementen stimmt nicht mit der Anzahl von Elementen in der Transaktionstabelle überein.
 - Die Steuern in der Kopftabelle stimmen nicht mit dem Steuerbetrag in den Positionen überein. 
 
-Wenn inkonsistente Transaktionen durch den Aufstellungsbuchungsprozess verarbeitet werden, werden inkonsistente Verkaufsrechnungen und Zahlungserfassungen erstellt, und der gesamte Aufstellungsbuchungsprozess schlägt anschließend fehl. Das Wiederherstellen der Aufstellungen aus einem solchen Zustand umfasst komplexe Datenkorrekturen in mehreren Transaktionstabellen. Die Konsistenzprüfung für Transaktionen verhindert solche Probleme.
+Wenn inkonsistente Transaktionen durch den Aufstellungsbuchungsprozess verarbeitet werden, können die erstellten Verkaufsrechnungen und Zahlungserfassungen für ein Fehlaschlagen des gesamten Aufstellungsbuchungsprozesses sorgen. Der Prozess **Geschäftsbuchungen überprüfen** verhindert diese Probleme, indem sichergestellt wird, dass nur Transaktionen, die die Transaktionsprüfungsregeln erfüllen, an den Transaktions-Aufstellungsberechnungsprozess weitergeleitet werden.
 
-Das folgende Diagramm veranschaulicht den Buchungsprozess mit Transaktionskonsistenzprüfung.
+Die folgende Abbildung zeigt die wiederkehrenden Tagesprozesse zum Hochladen von Transaktionen, Prüfen von Transaktionen, Berechnen und Buchen von Transaktionsaufstellungen sowie die Tagesendprozesse zur Berechnung und Buchung von Finanzaufstellungen.
 
-![Aufstellungsbuchungsprozess mit der Transaktionskonsistenzprüfung](./media/validchecker.png "Aufstellungsbuchungsprozess mit der Konsistenzprüfung für Einzelhandelstransaktionen")
+![Abbildung mit wiederkehrenden Tagesprozessen zum Hochladen von Transaktionen, Prüfen von Transaktionen, Berechnen und Buchen von Transaktionsaufstellungen sowie Tagesendprozesse zur Berechnung und Buchung von Finanzaufstellungen.](./media/valid-checker-statement-posting-flow.png)
 
-Der Stapelverarbeitungsvorgang **Geschäftsbuchungen überprüfen** prüft die Konsistenz der Handelstransaktionstabellen in folgenden Szenarien.
+## <a name="store-transaction-validation-rules"></a>Transaktionsprüfungsregeln speichern
 
-- **Debitorenkonto** – Überprüft, dass das Debitorenkonto in den Transaktionstabellen in den HQ-Debitorenmasterdaten vorhanden ist.
-- **Positionsanzahl** – Prüft, ob die Positionsanzahl, wie in der Tabelle in der Transaktionskopfzeile angegeben, mit der Anzahl der Positionen in den Verkaufstransaktionstabellen übereinstimmt.
-- **Preis enthält Steuer** prüft, ob der Parameter **Preis enthält Steuer** in den Buchungspositionen konsistent ist und ob der Preis aus der Auftragsposition der Konfiguration für Steuern und Steuerbefreiungen entspricht.
-- **Zahlungsbetrag** prüft, ob die Zahlungsdatensätze dem Zahlungsbetrag in der Kopfzeile entsprechen. Auch die Konfiguration zur Centrundung im Hauptbuch wird hierbei berücksichtigt.
-- **Bruttobetrag** prüft, ob der Bruttobetrag in der Kopfzeile der Summe der Nettobeträge aus den Positionen zuzüglich der Steuern entspricht. Auch die Konfiguration zur Centrundung im Hauptbuch wird hierbei berücksichtigt.
-- **Nettobetrag** prüft, ob der Nettobetrag in der Kopfzeile der Summe der Nettobeträge aus den Positionen entspricht. Auch die Konfiguration zur Centrundung im Hauptbuch wird hierbei berücksichtigt.
-- **Unter-/Überzahlung** prüft, ob die Differenz zwischen dem Bruttobetrag in der Kopfzeile und dem Zahlungsbetrag nicht die maximale Unter- bzw. Überzahlungskonfiguration übersteigt. Auch die Konfiguration zur Centrundung im Hauptbuch wird hierbei berücksichtigt.
-- **Rabattbetrag** prüft, ob der Rabattbetrag in den Rabatttabellen und der Rabattbetrag in den Tabellen mit den Buchungspositionen konsistent ist, und ob der Rabattbetrag in der Kopfzeile der Summe der Rabattbeträge aus den Positionen entspricht. Auch die Konfiguration zur Centrundung im Hauptbuch wird hierbei berücksichtigt.
-- **Positionsrabatt** prüft, ob der Positionsrabatt der Buchungsposition der Summe aller Positionen in der Rabatttabelle entspricht, die sich auf die Buchungsposition bezieht.
-- **Geschenkkartenartikel** – Commerce unterstützt keine Rückgabe von Geschenkkartenartikeln. Allerdings kann der Wert einer Geschenkkarte bar ausgezahlt werden. Bei allen Geschenkkartenartikeln, die anstelle einer Barauszahlungsposition als Rückgabeposition verarbeitet werden, schlägt der Aufstellungsbuchungsprozess fehl. Bei der Validierung von Geschenkkartenartikeln wird sichergestellt, dass die einzigen Rückgabepositionsartikel der Geschenkkarte in den Transaktionstabellen Barauszahlungspositionen sind.
-- **Negativer Preis** – Überprüft, dass es keine Transaktionspositionen mit negativen Preisen gibt.
-- **Artikel und Variante**: Prüft, ob Artikel und Varianten aus den Transaktionspositionen in der Masterdatei mit Artikeln und Varianten vorhanden sind.
-- **Steuerbetrag**: Prüft, ob die Steuerdatensätze den Steuerbeträgen in den Positionen entsprechen.
-- **Seriennummer** - Überprüft, ob die Seriennummer in den Transaktionspositionen für Artikel vorhanden ist, die über die Seriennummer gesteuert werden.
-- **Vorzeichen** - Überprüft, ob die Vorzeichen für die Menge und den Nettobetrag in allen Transaktionspositionen gleich sind.
-- **Geschäftsdatum** prüft, ob die Finanzperioden bei allen Geschäftsdaten der Buchungen offen sind.
-- **Belastungen** prüft, ob der Betrag in Kopfzeile und Position dem Preis entspricht. Hierbei wird auch die Konfiguration für Steuern und Steuerbefreiungen berücksichtigt.
-
-## <a name="set-up-the-consistency-checker"></a>Konsistenzprüfung einrichten
-
-Konfigurieren Sie unter **Retail und Commerce \> Retail und Commerce IT \> POS-Buchung** den Stapelverarbeitungsvorgang „Geschäftsbuchungen überprüfen“ so, dass er regelmäßig ausgeführt wird. Der Batchauftrag kann basierend auf der Shoporganisationshierarchie in ähnlicher Weise wie die Funktionen zum Berechnen und Buchen im Stapel geplant werden. Es wird empfohlen, diesen Batchauftrag so zu konfigurieren, dass mehrmals am Tag ausgeführt wird, und ihn so zu planen, dass er am Ende jeder P-Auftragsausführung ausgeführt wird.
-
-## <a name="results-of-validation-process"></a>Ergebnisse des Überprüfungsprozesses
-
-Die Ergebnisse der Überprüfung durch den Stapelverarbeitungsvorgang werden in der entsprechenden Handelstransaktion markiert. Das Feld **Überprüfungsstatus** im Transaktionsdatensatz wird entweder auf **Erfolgreich** oder **Fehler** festgelegt und das Datum der letzten Prüfungsausführung wird im Feld **Uhrzeit der letzten Überprüfung** angezeigt.
-
-Um eine ausführlichere Fehlerbeschreibung in Bezug auf einen Validierungsfehler zu erhalten, wählen Sie den entsprechenden Shoptransaktionsdatensatz aus und klicken auf die Schaltfläche **Überprüfungsfehler**.
-
-Transaktionen mit Überprüfungsfehlern und noch nicht validierte Transaktionen werden nicht in Aufstellungen einbezogen. Während des Prozesses „Auszug berechnen“ werden Benutzer darüber informiert, wenn Transaktionen vorliegen, die in die Aufstellung aufgenommen hätten werden können, wo dies jedoch nicht der Fall war.
-
-Wenn ein Überprüfungsfehler gefunden wird, können Sie ihn nur beheben, indem Sie sich an den Microsoft Support wenden. In einer zukünftigen Version werden Funktionen hinzugefügt, mit denen Benutzer die Fehler, die in der Benutzeroberfläche erfolgten, in den Datensätzen selbst beheben können. Es werden außerdem Protokollierungs- und Überwachungsfunktionen zur Nachverfolgung des Änderungsverlaufs bereitgestellt.
+Der Stapelverarbeitungsvorgang **Geschäftsbuchungen überprüfen** prüft die Konsistenz der Handelstransaktionstabellen basierend auf folgenden Überprüfungsregeln.
 
 > [!NOTE]
-> In zukünftigen Versionen werden zudem zusätzliche Validierungsregeln zur Unterstützung weiterer Szenarien hinzugefügt.
+> Prüfungsregeln werden weiterhin in nachfolgenden Versionen hinzugefügt.
 
+### <a name="transaction-header-validation-rules"></a>Transaktionskopfzeilen-Prüfungsregeln
+
+In der folgenden Tabelle sind die Transaktionskopfzeilen-Prüfungsregeln aufgeführt, die mit den Kopfzeilen von Einzelhandelstransaktionen verglichen werden, bevor diese Transaktionen an die Aufstellungsbuchung übergeben werden.
+
+| Regel | Beschreibung |
+|-------|-------------|
+| Geschäftstermin | Diese Regel überprüft, ob das Geschäftsdatum der Transaktion mit einem offenen Finanzzeitraum im Sachkonto verknüpft ist. |
+| Währungsrundung | Diese Regel überprüft, ob die Transaktionsbeträge gemäß der Währungsrundungsregel gerundet werden. |
+| Kundenkonto | Diese Regel überprüft, ob der Kunde, der in der Transaktion verwendet wird, in der Datenbank vorhanden ist. |
+| Rabattbetrag | Diese Regel prüft, ob der Rabattbetrag in der Kopfzeile mit der Summe der Rabattbeträge der Positionen übereinstimmt. |
+| Buchungsstatus des Steuerbelegs (Brasilien) | Diese Regel überprüft, ob der Steuerbeleg erfolgreich gebucht werden kann. |
+| Bruttobetrag | Diese Regel prüft, ob der Bruttobetrag in der Transaktionskopfzeile mit dem Nettobetrag, einschließlich Steuern, der Transaktionspositionen, zuzüglich Gebühren, übereinstimmt. |
+| Netto | Diese Regel prüft, ob der Nettobetrag in der Transaktionskopfzeile mit dem Nettobetrag, ausgenommen Steuern, der Transaktionspositionen, zuzüglich Gebühren, übereinstimmt. |
+| Netto + Steuern | Diese Regel prüft, ob der Bruttobetrag in der Transaktionskopfzeile mit dem Nettobetrag, ausgenommen Steuern, der Transaktionspositionen, zuzüglich aller Steuern und Gebühren, übereinstimmt. |
+| Artikelanzahl | Diese Regel prüft, ob die Anzahl der Artikel, die in der Transaktionskopfzeile angegeben ist, mit der Summe der Mengen in den Transaktionspositionen übereinstimmt. |
+| Zahlungsbetrag | Diese Regel prüft, ob der Zahlungsbetrag in der Transaktionskopfzeile der Summe aller Zahlungstransaktionen entspricht. |
+| Steuerbefreiungsberechnung | Diese Regel prüft, ob die Summe des berechneten Betrags und des steuerbefreiten Betrags der Gebührenpositionen dem ursprünglich berechneten Betrag entspricht. |
+| Preise inklusive Steuern | Diese Regel prüft, ob das Flag **Steuer ist in den Preisen enthalten** in allen Transaktionskopfzeilen und Steuertransaktionen konsistent ist. |
+| Transaktion ist nicht leer | Diese Regel prüft, ob die Transaktion Positionen enthält und dass mindestens eine Position nicht storniert wird. |
+| Unter-/Überzahlung | Diese Regel prüft, ob die Differenz zwischen dem Bruttobetrag und dem Zahlungsbetrag nicht die maximale Unter- bzw. Überzahlungskonfiguration übersteigt. |
+
+### <a name="transaction-line-validation-rules"></a>Transaktionspositions-Prüfungsregeln
+
+In der folgenden Tabelle sind die Transaktionspositions-Prüfungsregeln aufgeführt, die mit den Positionsdetails von Einzelhandelstransaktionen verglichen werden, bevor diese Transaktionen an die Aufstellungsbuchung übergeben werden.
+
+| Regel | Beschreibung |
+|-------|-------------|
+| Strichcode | Diese Regel prüft, ob alle Artikelstrichcodes, die in den Transaktionspositionen verwendet werden, in der Datenbank vorhanden sind. |
+| Gebührenpositionen | Diese Regel prüft, ob die Summe des berechneten Betrags und des steuerbefreiten Betrags der Gebührenpositionen dem ursprünglich berechneten Betrag entspricht. |
+| Geschenkkartenretouren | Diese Regel prüft, ob bei der Transaktion keine Geschenkkarten zurückgegeben werden. |
+| Artikelvariante | Diese Regel prüft, ob alle Artikel und alle Varianten, die in den Transaktionspositionen verwendet werden, in der Datenbank vorhanden sind. |
+| Positionsrabatt | Diese Regel prüft, ob der Positionsrabattbetrag mit der Summe der Rabatttransaktionen übereinstimmt. |
+| Positionssteuer | Diese Regel prüft, ob der Positionssteuerbetrag mit der Summe der Steuertransaktionen übereinstimmt. |
+| Negativer Preis | Diese Regel prüft, dass keine negativen Preise bei Transaktionspositionen verwendet werden. |
+| Seriennummer gesteuert | Diese Regel prüft, ob die Seriennummer in der Transaktionsposition für Artikel vorhanden ist, die über die Seriennummer gesteuert werden. |
+| Seriennummer-Lagerungsdimension | Diese Regel prüft, dass keine Seriennummer angegeben wird, wenn die Seriennummerndimension des Artikels inaktiv ist. |
+| Vorzeichenwiderspruch | Diese Regel prüft, ob die Vorzeichen für die Menge und den Nettobetrag in allen Transaktionspositionen gleich sind. |
+| Steuerbefreiung | Diese Regel prüft, ob die Summe des Positionsartikelpreises und des steuerbefreiten Betrags dem ursprünglichen Preis entspricht. |
+| Steuergruppenzuweisung | Diese Regel prüft, ob die Kombination der Mehrwertsteuergruppe und der Artikelsteuergruppe eine gültige Steuerschnittmenge ergibt. |
+| Maßeinheitenkonvertierungen | Diese Regel prüft, ob die Maßeinheit aller Positionen eine gültige Konvertierung in die Maßeinheit des Lagerbestands aufweist. |
+
+## <a name="enable-the-store-transaction-validation-process"></a>Shop-Transaktionsprüfungsprozess aktivieren
+
+Konfigurieren Sie den Einzelvorgang **Geschäftsbuchungen überprüfen** (**Retail und Commerce \> Retail und Commerce IT \> POS-Buchung**) so in der Commerce-Zentralverwaltung, dass er regelmäßig ausgeführt wird. Der Batchauftrag wird basierend auf der Organisationshierarchie des Shops geplant. Wir empfehlen, dass Sie diesen Stapelverarbeitungsvorgang so konfigurieren, dass er mit der gleichen Häufigkeit ausgeführt wird wie die Batchaufträge **P-Auftrag** und **Transaktionsaufstellungen stapelweise berechnen**.
+
+## <a name="results-of-the-validation-process"></a>Ergebnisse des Überprüfungsprozesses
+
+Die Ergebnisse des Stapelverarbeitungsvorgangs **Geschäftsbuchungen überprüfen** können bei jeder Einzelhandelstransaktion angezeigt werden. Das Feld **Überprüfungsstatus** im Transaktionsdatensatz ist auf **Erfolgreich**, **Fehler** oder **Kein** festgelegt. Im Feld **Uhrzeit der letzten Überprüfung** wird das Datum der letzten Überprüfungsausführung angezeigt.
+
+In der folgenden Tabelle werden die einzelnen Überprüfungsstatus beschrieben.
+
+| Überprüfungsstatus | Beschreibung |
+|-------------------|-------------|
+| Erfolgreich | Alle aktivierten Überprüfungsregeln wurden bestanden. |
+| Fehler | Eine aktivierte Überprüfungsregel hat einen Fehler festgestellt. Sie können weitere Details zum Fehler anzeigen, indem Sie im Aktionsbereich **Überprüfungsfehler** auswählen. |
+| Kein | Für den Transaktionstyp müssen keine Überprüfungsregeln angewendet werden. |
+
+![Seite „Geschäftstransaktionen“ mit dem Feld „Überprüfungsstatus“ und der Schaltfläche „Überprüfungsfehler“.](./media/valid-checker-validation-status-errors.png)
+
+Es werden nur Transaktionen mit einem Überprüfungsstatus von **Erfolgreich** in die Transaktionsaufstellungen übernommen. Um Transaktionen anzuzeigen, die den Status **Fehler** haben, überprüfen Sie die Kachel **Fehler bei Abholungstransaktionsprüfung** im Arbeitsbereich **Finanzdaten für Shop**.
+
+![Kacheln im Arbeitsbereich „Finanzdaten für Shop“.](./media/valid-checker-cash-carry-validation-failures.png)
+
+Weitere Informationen zum Beheben von Fehlern bei Abholungstransaktionsprüfungen finden Sie unter [Abholungs- und Bargeldverwaltungstransaktionen bearbeiten und prüfen](edit-cash-trans.md).
+
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+[Abholungs- und Bargeldverwaltungstransaktionen bearbeiten und prüfen](edit-cash-trans.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

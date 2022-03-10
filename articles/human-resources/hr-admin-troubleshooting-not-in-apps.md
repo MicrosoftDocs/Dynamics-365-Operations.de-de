@@ -1,8 +1,8 @@
 ---
 title: Human Resources wird nicht in Microsoft Dynamics 365-Apps angezeigt
-description: In diesem Artikel wird erklärt, was zu tun ist, wenn der Kunde die Microsoft Dynamics 365 Human Resources-App nicht unter den Microsoft Dynamics 365-Apps sieht.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Dieses Thema erklärt, was zu tun ist, wenn Microsoft Dynamics 365 Human Resources nicht unter den Microsoft Dynamics 365 Apps aufgeführt ist.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,21 +11,24 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 17a454cd32a08db105a13577c32368ad819bed1c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 4bdbe6c4065a8266fd30a3b093743ded91524f6a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053375"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069679"
 ---
-# <a name="human-resources-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Human Resources wird nicht in Microsoft Dynamics 365-Apps angezeigt
+# <a name="human-resources-app-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Die Human Resources App erscheint nicht unter den Microsoft Dynamics 365 Apps
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-**Abgang**
+**Problem**
 
 Der Kunde sieht Dynamics 365 Human Resources nicht bei den Microsoft Dynamics 365-Apps.
 
@@ -39,19 +42,19 @@ Der Benutzer muss der Umgebungsersteller-Rolle für die Umgebung in Microsoft Po
 
 3. Wählen Sie auf der Registerkarte **Sicherheit** auf der Registerkarte **Umgebungsrollen** die Option **Umgebungsersteller** aus.
 
-    ![Registerkarte „Umgebungsrollen”](media/environment-roles.png)
+    ![Registerkarte „Umgebungsrollen“.](media/environment-roles.png)
 
 4. Fügen Sie auf der Registerkarte **Benutzer** den Benutzer oder Ihre Organisation hinzu.
 
-    ![Registerkarte „Benutzer”](media/environment-maker.png)
+    ![Registerkarte „Benutzer“.](media/environment-maker.png)
 
-5. Wählen Sie **Speichern**.
+5. Wählen Sie **Speichern** aus.
 
 6. Der Benutzer muss sich jetzt bei [Microsoft Dynamics 365](https://home.dynamics.com/) anmelden.
 
 7. Wählen Sie **Synchronisieren** aus, m die Benutzer-Apps zu aktualisieren.
 
-    ![Schaltfläche „Synchronisieren”](media/get-more.png)
+    ![Schaltfläche „Synchronisieren“.](media/get-more.png)
 
     Nachdem die Synchronisierung abgeschlossen ist, wird Human Resources auf der Startseite angezeigt.
 

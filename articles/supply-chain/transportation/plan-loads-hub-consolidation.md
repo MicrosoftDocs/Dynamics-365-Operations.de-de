@@ -1,9 +1,9 @@
 ---
 title: Planen Sie Belastungen mit Hilfe der Hub-Konsolidierungsübersicht.
 description: Dieser Artikel beschreibt die Funktion zur Konsolidierung von Lieferungen in einem Hub bei der Lieferung von Waren aus unterschiedlichen Lagerorten an einen Kunden oder bei der Lieferung von mehreren Kreditoren an einen Lagerort.
-author: MarkusFogelberg
+author: Henrikan
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: WHSLoadPlanningWorkbench, WHSHistory, WHSLoadTable, WHSLoadPlanningListPage, TMSParameters
@@ -15,15 +15,15 @@ ms.custom:
 ms.assetid: d27b0926-a534-4caf-a2a3-acbc7c440bca
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mafoge
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c53110f583feeb3ef77226fb57396cfc2988e9f
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: fd47a5745719873cc491d93b9a98a7fde609fe38
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345305"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985810"
 ---
 # <a name="plan-loads-using-hub-consolidation-overview"></a>Planen Sie Belastungen mit Hilfe der Hub-Konsolidierungsübersicht.
 

@@ -1,29 +1,26 @@
 ---
 title: Anlagendokumente
 description: In diesem Thema werden Anlagendokumente in Asset Management erläutert.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectDocument
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1e251dbbede23466109f6219671db7f62d6d420
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 77b7265b1ba56dbd1cd955f5d90afea02f589ce2eebdd05a2fef3a7ddebc0ee1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428612"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6722486"
 ---
 # <a name="asset-documents"></a>Anlagendokumente
 
@@ -50,3 +47,6 @@ In Asset Management können Sie Dokumente beispielsweise so einrichten, dass die
 
 4. Wählen Sie **Anhänge** aus. Die Standardseite **Handhabung von Dokumenten** wird angezeigt.
 5. Hier können Sie die Dokumente oder Hinweise einrichten, die dem Anlagendokumentdatensatz zugeordnet werden sollen. Nachdem Sie Dokumente zugeordnet haben, wird im Feld **Anhänge** die Anzahl der Dokumente angezeigt, die dem Datensatz zugeordnet sind.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Konfigurieren Sie die Aufgabenverwaltung
-description: In diesem Thema wird beschrieben, wie die Aufgabenverwaltungsfunktionen in Microsoft Dynamics 365 Commerce konfiguriert werden.
+description: In diesem Thema wird beschrieben, wie Aufgabenverwaltungsfunktionen in Microsoft Dynamics 365 Commerce konfiguriert werden.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,20 +13,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: e880305d02fd9f10464fe3f65a2774a44da258c6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0ae0f3bd58db587d9024beceedd790cc3d3e4ee990a2f4c727dfda96b2f0785c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006234"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730802"
 ---
-# <a name="configure-task-management"></a>Konfigurieren der Aufgabenverwaltung
+# <a name="configure-task-management"></a>Aufgabenverwaltung konfigurieren
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie die Aufgabenverwaltungsfunktionen in Microsoft Dynamics 365 Commerce konfiguriert werden.
-
-## <a name="overview"></a>Übersicht
+In diesem Thema wird beschrieben, wie Aufgabenverwaltungsfunktionen in Microsoft Dynamics 365 Commerce konfiguriert werden.
 
 Bevor Dynamics 365 Commerce Manager und Mitarbeiter die Aufgabenverwaltungsfunktionen im Handel nutzen können, muss die Aufgabenverwaltung konfiguriert werden. Zu den Konfigurationsschritten gehören die Erteilung von Berechtigungen an Manager und Mitarbeiter, die Verteilung von Berechtigungen an POS-Kunden, die Einrichtung von POS-Benachrichtigungen und die Konfiguration der Kachel **Aufgaben** auf der Startseite einer POS-Anwendung.
 
@@ -48,7 +44,7 @@ Führen Sie die folgenden Schritte aus, um Aufgabenverwaltungsberechtigungen fü
 
 Die folgende Abbildung zeigt, wie Sie Aufgabenverwaltungsberechtigungen für Filialleiter konfigurieren können.
 
-![Konfigurieren von Aufgabenverwaltungsberechtigungen für Filialleiter](media/HQ-POS-Tasks-Notifications-User-Permission.png)
+![Konfigurieren von Aufgabenverwaltungsberechtigungen für Filialleiter.](media/HQ-POS-Tasks-Notifications-User-Permission.png)
 
 ## <a name="configure-permissions-for-employees"></a>Konfigurieren Sie Berechtigungen für Mitarbeiter
 
@@ -82,7 +78,7 @@ Um POS-Benachrichtigungen für Aufgaben zu konfigurieren, führen Sie folgende S
 
 Die folgende Abbildung zeigt die Operation **Aufgabenverwaltung** auf der Seite **POS-Operationen**.
 
-![Vorgang der Aufgabenverwaltung auf der Seite POS-Operationen](media/HQ-POS-Tasks-Notifications.png)
+![Vorgang der Aufgabenverwaltung auf der Seite POS-Operationen.](media/HQ-POS-Tasks-Notifications.png)
 
 Weitere Informationen über die Konfiguration von POS-Benachrichtigungen finden Sie unter [Bestellbenachrichtigungen in der Verkaufsstelle (POS)](notifications-pos.md) anzeigen.
 
@@ -99,14 +95,17 @@ Um die Kachel **Aufgaben** auf der Homepage einer POS-Anwendung zu konfigurieren
 
 Die folgende Abbildung zeigt ein Beispiel für eine Kachel **Aufgaben** auf einer POS-Homepage.
 
-![Aufgaben-Kachel auf einer POS-Homepage](media/POS-home-screen-tasks-button-image.png)
+![Aufgaben-Kachel auf einer POS-Homepage.](media/POS-home-screen-tasks-button-image.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Überblick über die Aufgabenverwaltung](task-mgmt-overview.md)
+[Aufgabenverwaltung – Übersicht](task-mgmt-overview.md)
 
 [Aufgabenlisten erstellen und Aufgaben hinzufügen](task-mgmt-create-lists.md)
 
 [Arbeitspläne den Filialen oder Mitarbeitern zuweisen](task-mgmt-assign-lists.md)
 
 [Aufgabenverwaltung in POS](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

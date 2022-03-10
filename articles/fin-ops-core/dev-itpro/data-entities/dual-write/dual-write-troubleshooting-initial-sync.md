@@ -2,45 +2,36 @@
 title: Probleme bei der anfänglichen Synchronisierung behandeln
 description: Dieses Thema enthält Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit der initialen Synchronisierung zusammenhängen.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: a2f0e0cbf0f8710dc020a48506775fa28df9c2d2
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 030e565ffff561f6c1efbdd0de9928f70c7c46c0
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744636"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063057"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Probleme bei der anfänglichen Synchronisierung behandeln
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Dieses Thema enthält Problembehandlungsinformationen zur dualen Schreibintegration zwischen den Apps Finance and Operations und Dataverse. Dieses Thema enthält insbesondere Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit der initialen Synchronisierung zusammenhängen.
+
+Dieses Thema enthält Informationen zur Problembehandlung für die duales Schreiben-Integration zwischen Apps für Finanzen und Betrieb und Dataverse. Dieses Thema enthält insbesondere Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit der initialen Synchronisierung zusammenhängen.
 
 > [!IMPORTANT]
 > Einige der in diesem Thema behandelten Probleme erfordern möglicherweise entweder die Systemadministratorrolle oder Microsoft Azure Active Directory (Azure AD) Anmeldeinformationen des Mandantenadministrators. Im Abschnitt zu jedem Problem wird erläutert, ob eine bestimmte Rolle oder Anmeldeinformationen erforderlich sind.
 
-## <a name="check-for-initial-synchronization-errors-in-a-finance-and-operations-app"></a>Überprüfen Sie eine Finance and Operations App auf anfängliche Synchronisationsfehler
+## <a name="check-for-initial-synchronization-errors-in-a-finance-and-operations-app"></a>Prüfen Sie auf anfängliche Synchronisationsfehler in einer Finance und Operations App
 
 Nachdem Sie die Zuordnungsvorlagen aktiviert haben, sollte der Status der Zuordnungen lauten **Laufen**. Wenn der Status ist **Nicht ausgeführt** angezeigt wird, sind bei der ersten Synchronisierung Fehler aufgetreten. Um die Fehler anzuzeigen, wählen Sie die **Anfängliche Synchronisierungsdetail** Registerkarte auf der **Duales Schreiben** Seite.
 
-![Fehler auf der Registerkarte Details zur Erstsynchronisierung](media/initial_sync_status.png)
+![Fehler auf der Registerkarte Details zur Erstsynchronisierung.](media/initial_sync_status.png)
 
 ## <a name="you-cant-complete-initial-synchronization-400-bad-request"></a>Sie können die anfängliche Synchronisierung nicht abschließen: 400 Bad Request
 
@@ -48,7 +39,7 @@ Nachdem Sie die Zuordnungsvorlagen aktiviert haben, sollte der Status der Zuordn
 
 Möglicherweise wird die folgende Fehlermeldung angezeigt, wenn Sie versuchen, das Mapping und die anfängliche Synchronisierung auszuführen:
 
-*(\[Unzulässige Anforderung\], der Remote-Server hat einen Fehler zurückgegeben: (400) Unzulässige Anforderung), AX beim Export ist ein Fehler aufgetreten*
+*(\[Bad Request \], Der Remote-Server hat einen Fehler zurückgegeben: (400) Bad Request.), AX Export ist auf einen Fehler gestoßen.*
 
 Hier ist ein Beispiel für die vollständige Fehlernachricht.
 
@@ -72,7 +63,7 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
 Wenn dieser Fehler konsistent auftritt und Sie die anfängliche Synchronisierung nicht abschließen können, führen Sie die folgenden Schritte aus, um das Problem zu beheben.
 
-1. Melden Sie sich bei der virtuellen Maschine (VM) für die Finance and Operations App an.
+1. Melden Sie sich bei der virtuellen Maschine (VM) für die Finance und Operations App an.
 2. Öffnen Sie die Microsoft Management Console.
 3. In dem Bereich **Dienstleistungen** stellen Sie sicher, dass der Microsoft Dynamics 365 Data Import Export Framework-Dienst wird ausgeführt. Starten Sie ihn neu, wenn er gestoppt wurde, da die anfängliche Synchronisierung dies erfordert.
 
@@ -84,10 +75,10 @@ Während der ersten Synchronisierung wird möglicherweise die folgende Fehlermel
 
 Führen Sie folgende Schritte aus, um das Problem zu beheben.
 
-1. Bei der Finance and Operations App anmelden.
+1. Melden Sie sich bei der Finance und Operations App an.
 2. Auf der **Azure Active Directory Anwendungen** Seite löschen Sie den **DtAppID** Client, und fügen Sie ihn dann erneut hinzu.
 
-![DtAppID-Client in der Liste von Azure AD Anwendungen](media/aad_applications.png)
+![DtAppID-Client in der Liste von Azure AD Anwendungen.](media/aad_applications.png)
 
 ## <a name="self-reference-or-circular-reference-failures-during-initial-synchronization"></a>Selbstreferenzfehler oder Zirkelreferenzfehler während der ersten Synchronisation
 
@@ -111,17 +102,17 @@ Im Folgenden finden Sie einige Beispiele hierfür:
 
 Wenn Sie Zeilen mit Werten in der Kreditorentabelle in den Spalten **PrimaryContactPersonID** und **InvoiceVendorAccountNumber** haben, führen Sie die Schritte im folgenden Abschnitt aus, um die erste Synchronisierung erfolgreich abzuschließen.
 
-1. In der Finance and Operations-App löschen Sie die Spalten **PrimaryContactPersonId** und **InvoiceVendorAccountNumber** aus der Zuordnung, und speichern Sie die Änderungen.
+1. Löschen Sie in der App Finance und Operations die Spalten **PrimaryContactPersonId** und **InvoiceVendorAccountNumber** aus der Zuordnung, und speichern Sie die Zuordnung.
 
-    1. Wählen Sie auf der Zuordnungsseite für duales Schreiben für **Lieferant V2 (msdyn\_vendors)** auf der Registerkarte **Tabellenzuordnungen** im linken Filter **Finance and Operations apps.Vendors V2** aus. Wählen Sie im rechten Filter **Sales.Vendor**.
+    1. Auf der Seite duales Schreiben Zuordnung für **Kreditoren V2 (msdyn\_vendors)**, auf der Registerkarte **Tabellenzuordnungen**, im linken Filter, wählen Sie **Apps für Finanzen und Betrieb.Vendors V2**. Wählen Sie im rechten Filter **Sales.Vendor**.
     2. Suchen Sie nach **primarycontactperson**, um das Quellfeld **PrimaryContactPersonId** zu finden.
     3. Wählen Sie **Aktionen** und dann **Löschen**.
 
-        ![Löschen der Spalte „PrimaryContactPersonId“](media/vend_selfref3.png)
+        ![Löschen der Spalte „PrimaryContactPersonId“.](media/vend_selfref3.png)
 
     4. Wiederholen Sie diese Schritte, um die Spalte **InvoiceVendorAccountNumber** zu löschen.
 
-        ![Löschen des Feldes „InvoiceVendorAccountNumber“](media/vend-selfref4.png)
+        ![Löschen des Feldes „InvoiceVendorAccountNumber“.](media/vend-selfref4.png)
 
     5. Speichern Sie Ihre Änderungen am Mapping.
 
@@ -131,11 +122,11 @@ Wenn Sie Zeilen mit Werten in der Kreditorentabelle in den Spalten **PrimaryCont
     2. Wählen Sie die Tabelle **Kreditoren V2** aus.
     3. Wählen Sie im Aktionsbereich **Optionen** und wählen Sie dann **Änderungsnachverfolgung**.
 
-        ![Auswahl der Option Änderungsnachverfolgung ändern](media/selfref_options.png)
+        ![Auswahl der Option Änderungsnachverfolgung ändern.](media/selfref_options.png)
 
     4. Wählen Sie **Änderungsverfolgung deaktivieren**.
 
-        ![Wählen Sie Änderungsverfolgung deaktivieren](media/selfref_tracking.png)
+        ![Wählen Sie Änderungsnachverfolgung deaktivieren.](media/selfref_tracking.png)
 
 3. Führen Sie die erste Synchronisierung erneut für die **Anbieter V2** (msdyn\_vendors) Zuordnung aus. Die erstmalige Synchronisierung sollte ohne Fehler erfolgreich ausgeführt werden.
 4. Führen Sie die erste Synchronisierung für **CDS-Kontakte V2 (Kontakte)** Zuordnung aus. Sie müssen diese Zuordnung synchronisieren, wenn Sie die Spalte des primären Kontakts in der Tabelle der Kreditoren synchronisieren möchten, da die Kontaktzeilen zunächst synchronisiert werden müssen.
@@ -158,17 +149,17 @@ Im Folgenden finden Sie einige Beispiele hierfür:
 
 Wenn Sie Zeilen mit Werten in der Debitorentabelle in den Spalten **ContactPersonID** und **InvoiceAccount** haben, führen Sie die Schritte im folgenden Abschnitt aus, um die erste Synchronisierung erfolgreich abzuschließen. Sie können diesen Ansatz für alle sofort einsatzbereiten Tabellen wie **Konten** und **Kontakte** verwenden.
 
-1. In der Finance and Operations-App löschen Sie Spalten **ContactPersonID** und **InvoiceAccount** aus der Zuordnung **Debitoren V3 (Konten)**, und speichern Sie dann die Zuordnung.
+1. Löschen Sie in der App Finance und Operations die Spalten **ContactPersonID** und **InvoiceAccount** aus der Zuordnung **Customers V3 (accounts)** und speichern Sie die Zuordnung.
 
-    1. Wählen Sie auf der Zuordnungsseite für duales Schreiben für **Kunden V3 (Konten)** auf der Registerkarte **Tabellenzuordnungen** im linken Filter **Finance and Operations app.Customers V3** aus. Wählen Sie im rechten Filter **Dataverse Konto**.
+    1. Wählen Sie auf der Seite duales Schreiben Zuordnung für **Kunden V3 (Konten)** auf der Registerkarte **Tabellenzuordnungen** im linken Filter **Finance und Operations App.Customers V3**. Wählen Sie im rechten Filter **Dataverse Konto**.
     2. Suchen Sie nach **contactperson**, um die Quellspalte **ContactPersonID** zu finden.
     3. Wählen Sie **Aktionen** und dann **Löschen**.
 
-        ![Löschen der Spalte „ContactPersonID“](media/cust_selfref3.png)
+        ![Löschen der Spalte „ContactPersonID“.](media/cust_selfref3.png)
 
     4. Wiederholen Sie diese Schritte, um die Spalte **InvoiceAccount** zu löschen.
 
-        ![Löschen der Spalte „InvoiceAccount“](media/cust_selfref4.png)
+        ![Löschen der Spalte „InvoiceAccount“.](media/cust_selfref4.png)
 
     5. Speichern Sie Ihre Änderungen am Mapping.
 
@@ -178,36 +169,70 @@ Wenn Sie Zeilen mit Werten in der Debitorentabelle in den Spalten **ContactPerso
     2. Wählen Sie die Tabelle **Debitoren V3** aus.
     3. Wählen Sie im Aktionsbereich **Optionen** und wählen Sie dann **Änderungsnachverfolgung**.
 
-        ![Auswahl der Option Änderungsnachverfolgung ändern](media/selfref_options.png)
+        ![Auswahl der Option Änderungsnachverfolgung ändern.](media/selfref_options.png)
 
     4. Wählen Sie **Änderungsverfolgung deaktivieren**.
 
-        ![Wählen Sie Änderungsverfolgung deaktivieren](media/selfref_tracking.png)
+        ![Wählen Sie Änderungsnachverfolgung deaktivieren.](media/selfref_tracking.png)
 
 3. Führen Sie die erste Synchronisierung nochmals für die **Debitoren V3 (Konten)** Zuordnung aus. Die erstmalige Synchronisierung sollte ohne Fehler erfolgreich ausgeführt werden.
 4. Führen Sie die erste Synchronisierung für **CDS-Kontakte V2 (Kontakte)** Zuordnung aus.
 
     > [!NOTE]
-    > Es gibt zwei Karten mit demselben Namen. Stellen Sie sicher, dass Sie jene Zuordnung mit der folgenden Beschreibung auf der Registerkarte **Details** auswählen: Duales Schreiben für die Synchronisierung zwischen FO.CDS-Kontakten V2 und CDS.Contacts.  Benötigt neues Paket \[**Dynamics365SupplyChainExtended\].**
+    > Es gibt zwei Karten mit demselben Namen. Stellen Sie sicher, dass Sie jene Zuordnung mit der folgenden Beschreibung auf der Registerkarte **Details** auswählen: **Duales Schreiben für die Synchronisierung zwischen FO.CDS-Kontakten V2 und CDS.Contacts. Benötigt neues Paket \[Dynamics365SupplyChainExtended\]**.
 
 5. Fügen Sie die Spalten **InvoiceAccount** und **ContactPersonID** wieder der Zuordnung **Debitoren V3 (Konten)** hinzu, und speichern Sie dann die Zuordnung. Jetzt sind die Spalte **InvoiceAccount** und die Spalte **ContactPersonID** wieder Teil des Live-Synchronisationsmodus. Im nächsten Schritt machen Sie die anfängliche Synchronisierung für diese Spalten.
-6. Führen Sie die erste Synchronisierung noch einmal für die **Debitoren V3 (Konten)** Zuordnung aus. Da die Änderungsverfolgung deaktiviert ist, werden die Daten für **InvoiceAccount** und **ContactPersonId** von der Finance and Operations App zu Dataverse synchronisiert.
-7. Um die Daten für **Rechnungskonto** und **ContactPersonId** von Dataverse zu Finance and Operations zu synchronisieren, müssen Sie ein Datenintegrationsprojekt verwenden.
+6. Führen Sie die erste Synchronisierung noch einmal für die **Debitoren V3 (Konten)** Zuordnung aus. Da die Änderungsverfolgung ausgeschaltet ist, werden die Daten für **InvoiceAccount** und **ContactPersonId** von der App Finance und Operations auf Dataverse synchronisiert.
+7. Um die Daten für **InvoiceAccount** und **ContactPersonId** aus Dataverse mit der App Finance und Operations zu synchronisieren, müssen Sie ein Datenintegrationsprojekt verwenden.
 
-    1. Erstellen Sie in Power Apps ein Datenintegrationsprojekt zwischen den Tabellen **Sales.Account** und **Finance and Operations apps.Customers V3**. Die Datenrichtung muss von Dataverse zu Finance and Operations App sein. Weil **Rechnungskonto** ein neues Attribut in dualem Schreiben ist, wollen Sie möglicherweise die anfängliche Synchronisierung dazu überspringen. Weitere Informationen finden Sie unter [Datenintegration in Dataverse](https://docs.microsoft.com/power-platform/admin/data-integrator).
+    1. In Power Apps erstellen Sie ein Datenintegrationsprojekt zwischen den Tabellen **Verkauf.Konto** und **Apps für Finanzen und Betrieb.Kunden V3**. Die Datenrichtung muss von Dataverse zur Finance und Operations App sein. Weil **Rechnungskonto** ein neues Attribut in dualem Schreiben ist, wollen Sie möglicherweise die anfängliche Synchronisierung dazu überspringen. Weitere Informationen finden Sie unter [Datenintegration in Dataverse](/power-platform/admin/data-integrator).
 
         Das folgende Illustration zeigt ein Projekt, das **Kundenkonto** und **ContactPersonId** aktualisiert.
 
-        ![Datenintegrationsprojekt zum Aktualisieren von CustomerAccount und ContactPersonId](media/cust_selfref6.png)
+        ![Datenintegrationsprojekt zum Aktualisieren von CustomerAccount und ContactPersonId.](media/cust_selfref6.png)
 
-    2. Fügen Sie die Firmenkriterien im Filter auf der Seite von Dataverse ein, da nur die Zeilen, die den Filterkriterien entsprechen, in der Finance and Operations-App aktualisiert werden. Wählen Sie zum Hinzufügen die Schaltfläche Filter. In dem Dialog **Abfrage bearbeiten** können Sie eine Filterabfrage hinzufügen wie **\_msdyn\__company\_value eq\<guid\>**. 
+    2. Fügen Sie die Kriterien für die Firma im Filter auf der Seite Dataverse hinzu, sodass nur Zeilen, die den Filterkriterien entsprechen, in der Finance und Operations App aktualisiert werden. Wählen Sie zum Hinzufügen die Schaltfläche Filter. In dem Dialog **Abfrage bearbeiten** können Sie eine Filterabfrage hinzufügen wie **\_msdyn\__company\_value eq\<guid\>**.
 
         > [HINWEIS] Wenn die Schaltfläche Filter nicht vorhanden ist, erstellen Sie ein Support-Ticket, um das Datenintegrationsteam zu bitten, die Filterfunktion für Ihren Mandanten zu aktivieren.
 
         Wenn Sie keine Filterabfrage für **\_msdyn\_company\_value** eingeben, werden alle Zeilen synchronisiert.
 
-        ![Hinzufügen einer Filterabfrage](media/cust_selfref7.png)
+        ![Hinzufügen einer Filterabfrage.](media/cust_selfref7.png)
 
     Die anfängliche Synchronisierung der Zeilen ist nun abgeschlossen.
 
-8. Aktivieren Sie die Änderungsnachverfolgung in Finance and Operations für die Tabelle **Debitoren V3**.
+8. Schalten Sie in der App Finance und Operations die Änderungsverfolgung für die Tabelle **Kunden V3** wieder ein.
+
+## <a name="initial-sync-failures-on-maps-with-more-than-10-lookup-fields"></a>Anfängliche Sync-Fehler bei Zuordnungen mit mehr als 10 Nachschlagefeldern
+
+Sie erhalten möglicherweise die folgende Fehlermeldung, wenn Sie versuchen, eine anfängliche Synchronisierung für **Kunden V3 - Konten**, **Verkaufsaufträge**-Zuordnungen oder eine beliebige Zuordnung mit mehr als 10 Nachschlagefeldern auszuführen:
+
+*CRMExport: Paketausführung abgeschlossen. Fehlerbeschreibung 5 Versuche, Daten von https://xxxxx//datasets/yyyyy/tables/accounts/items?$select=accountnumber, address2_city, address2_country, ... (msdyn_company/cdm_companyid eq 'id')&$orderby=accountnumber asc schlug fehl.*
+
+Aufgrund der Nachschlagefeld-Beschränkung der Abfrage schlägt die anfängliche Synchronisierung fehl, wenn die Zuordnung der Entitäten mehr als 10 Nachschlagefelder enthält. Weitere Informationen finden Sie unter [Abrufen von Datensätzen der Bezugstabelle mit einer Abfrage](/powerapps/developer/common-data-service/webapi/retrieve-related-entities-query).
+
+Um dieses Problem zu beheben, führen Sie die folgenden Schritte aus:
+
+1. Entfernen Sie optionale Nachschlagefelder aus der Dual-Write-Entitätszuordnung, so dass die Anzahl der Nachschlagefelder 10 oder weniger beträgt.
+2. Speichern Sie die Zuordnung und führen Sie die erste Synchronisierung durch.
+3. Wenn die initiale Synchronisierung für den ersten Schritt erfolgreich ist, fügen Sie die restlichen Nachschlagefelder hinzu und entfernen die Nachschlagefelder, die Sie im ersten Schritt synchronisiert haben. Stellen Sie sicher, dass die Anzahl der Nachschlagefelder 10 oder weniger beträgt. Speichern Sie die Zuordnung und führen Sie die erste Synchronisierung aus.
+4. Wiederholen Sie diese Schritte, bis alle Nachschlagefelder synchronisiert sind.
+5. Fügen Sie alle Nachschlagefelder wieder zur Zuordnung hinzu, speichern Sie die Zuordnung und führen Sie die Zuordnung mit **Anfangssynchronisation überspringen** aus.
+
+Durch diesen Vorgang wird die Zuordnung für den Live-Sync-Modus aktiviert.
+
+## <a name="known-issue-during-initial-sync-of-party-postal-addresses-and-party-electronic-addresses"></a>Bekanntes Problem bei der Erstsynchronisation von postalischen Adressen der Partei und elektronischen Adressen der Partei
+
+Wenn Sie versuchen, die initiale Synchronisation von Postadressen der Partei und elektronischen Adressen der Partei auszuführen, erhalten Sie möglicherweise die folgende Fehlermeldung:
+
+*Partei-Nummer konnte nicht in Dataverse gefunden werden.*
+
+Es gibt einen auf **DirPartyCDSEntity** festgelegten Bereich in Apps für Finanzen und Betrieb, der Parteien vom Typ **Person** und **Organisation** filtert. Infolgedessen wird eine anfängliche Synchronisierung der Zuordnung **CDS-Parteien - msdyn_parties** keine Parteien anderer Typen zuordnen, einschließlich **Juristische Entität** und **Betriebseinheit**. Wenn die anfängliche Synchronisierung für **CDS Partei Postadressen (msdyn_partypostaladdresses)** oder **Partei Kontakte V3 (msdyn_partyelectronicaddresses)** ausgeführt wird, erhalten Sie möglicherweise den Fehler.
+
+Wir arbeiten an einer Lösung, um den Bereich der Parteien in der Entität Finance und Operations zu entfernen, damit Parteien aller Art erfolgreich mit Dataverse synchronisiert werden können.
+
+## <a name="are-there-any-performance-issues-while-running-initial-sync-for-customers-or-contacts-data"></a>Gibt es Leistungsprobleme beim Ausführen der anfänglichen Synchronisierung für Kunden oder Kontakte?
+
+Wenn Sie die Erstsynchronisation für **Kunden**-Daten ausgeführt haben und die **Kunden**-Zuordnungen laufen haben und dann die Erstsynchronisation für **Kontakte**-Daten ausführen, kann es zu Leistungsproblemen beim Einfügen und Aktualisieren der **LogistikPostalAdresse**- und **LogistikElektronischeAdresse**-Tabellen für **Kontakte**-Adressen kommen. Die gleichen globalen Postadress- und elektronischen Adresstabellen werden für **CustomerV3Entity** und **VendVendorV2Entity** verfolgt und Dual-Write versucht, weitere Abfragen zu erstellen, um Daten auf die andere Seite zu schreiben. Wenn Sie die initiale Synchronisierung für **Debitor** bereits ausgeführt haben, dann stoppen Sie die entsprechende Zuordnung, während Sie die initiale Synchronisierung für **Kontakte**-Daten ausführen. Machen Sie das Gleiche für die **Kreditor**-Daten. Wenn die initiale Synchronisierung beendet ist, können Sie alle Zuordnungen ausführen, indem Sie die initiale Synchronisierung überspringen.
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

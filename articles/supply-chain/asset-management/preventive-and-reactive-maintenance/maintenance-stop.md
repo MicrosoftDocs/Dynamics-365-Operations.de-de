@@ -1,12 +1,10 @@
 ---
 title: Wartungsausfallaktivitäten
 description: In diesem Thema wird erklärt, wie Wartungsausfallzeiten dazu verwendet werden, sich einen Überblick über die Kapazität zu verschaffen, die für die Durchführung von Wartungsarbeiten an bestimmten Anlagen in einem bestimmten Zeitraum erforderlich ist.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetMaintenanceStopCopy, EntAssetMaintenanceStopObject, EntAssetObjectProductionStop, EntAssetProductionStopType, EntAssetMaintenanceStop
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6251422755cf39930d48221e9de82ef16b4d96a7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0e6168033afb97c6f4f1b8466801a6f16332df82a039927ec1b45e03aa3694b8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5252917"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727917"
 ---
 # <a name="maintenance-downtime-activities"></a>Wartungsausfallaktivitäten
 
@@ -42,7 +40,7 @@ Wenn Anlagen bei einer Ausfallregistrierung ausgewählt wurden, werden alle offe
 
 Klicken Sie auf **Anlagenmanagement** > **Allgemein** > **Wartungsausfallzeiten** > **Alle Wartungsausfallzeiten**, um eine Liste aller Wartungsausfallzeiten zu öffnen und einige der mit den Aktivitäten verbundenen Informationen anzuzeigen. Klicken Sie auf einen Link in der Spalte **Ausfallzeiten pflegen**, um die Detailansicht zu öffnen. Die folgende Abbildung zeigt ein Beispiel der Liste **Wartungsausfallaktivitäten**.
 
-![Abbildung 1](media/19-preventive-maintenance.png)
+![Abbildung 1.](media/19-preventive-maintenance.png)
 
 
 ## <a name="create-a-maintenance-downtime-activity"></a>Erstellen einer Wartungsausfallaktivität
@@ -59,11 +57,11 @@ Klicken Sie auf **Anlagenmanagement** > **Allgemein** > **Wartungsausfallzeiten*
 
 6. Klicken Sie auf **Speichern**, wenn alle Objekte hinzugefügt wurden. Die folgende Abbildung zeigt das Beispiel einer Wartungsausfallaktivität mit zugehörigen Anlagen und Wartungsaufträge angezeigt.
 
-7. Die Wartungsaufträge und offenen Wartungseinteilungen, die sich auf die ausgewählten Anlagen beziehen, werden auf den Zeilen **Ergebnis der Wartungsaufträge** und **Wartungseinteilungen** FastTabs angezeigt. Im Feld **Allgemein** FastTab > **Arbeitsaufträge** Gruppe > **Wartungsprognose Stunden** Feld und **Allgemein** FastTab > **Wartungsplan** Gruppe > **Wartungsprognose Stunden** sehen Sie die Gesamtzahl der prognostizierten Stunden für Wartungsaufträge und Wartungseinteilungen.
+7. Die Wartungsaufträge und offenen Wartungseinteilungen, die sich auf die ausgewählten Anlagen beziehen, werden auf den Zeilen **Ergebnis der Wartungsaufträge** und **Wartungseinteilungen** FastTabs angezeigt. Im **Allgemein**-FastTab > **Arbeitsaufträge**.Gruppe > **Wartungsprognose Stunden**-Feld und **Allgemein**-FastTab > **Wartungsplan**-Gruppe > **Wartungsprognosestunden** sehen Sie die Gesamtzahl der prognostizierten Stunden für Wartungsaufträge und Wartungseinteilungen.
 
 Die folgende Abbildung zeigt ein Beispiel der Detailansicht **Wartungsausfallaktivitäten**.
 
-![Abbildung 2](media/20-preventive-maintenance.png)
+![Abbildung 2.](media/20-preventive-maintenance.png)
 
 >[!NOTE]
 >Die Wartungsaufträge und Wartungseinteilungen, die sich auf die ausgewählten Anlagen beziehen, werden automatisch aktualisiert, wenn neue Arbeitsaufträge oder Wartungseinteilungen angelegt werden, nachdem Sie die Wartungsausfallzeitaktivität angelegt haben. Wenn Sie z.B. zwei Tage nach dem Anlegen der Ausfallzeitaktivität Wartungspläne oder Wartungsrunden für die zugehörigen Anlagen terminieren, werden neue Wartungseinteilungen automatisch in die Ausfallzeitaktivität der Instandhaltung eingefügt.
@@ -74,7 +72,7 @@ Die folgende Abbildung zeigt ein Beispiel der Detailansicht **Wartungsausfallakt
 
 10. Klicken Sie auf **OK**, um die Berechnung zu starten. Die Gesamtzahl der Stunden wird in der Übersicht **Kapazitätsbelastung** angezeigt. Klicken Sie auf der Registerkarte **Kapazitätsbelastung** > die Gruppen des Aktionsbereichs **Gruppieren nach...** auf die entsprechenden Schaltflächen, um einen detaillierteren Überblick über die Zuordnung der prognostizierten Stunden zu erhalten. In der folgende Abbildung wird die Ergebnisse einer **Kapazitätsauslastung** angezeigt.
 
-![Abbildung 3](media/21-preventive-maintenance.png)
+![Abbildung 3.](media/21-preventive-maintenance.png)
 
 11. Nachdem Sie sich einen Überblick über die Kapazitätsauslastung verschafft haben, kehren Sie, wenn Sie Anpassungen an Instandhaltungsaufträgen oder Wartungseinteilungen vornehmen möchten, zur Detailansicht **Wartungsausfallzeitaktivitäten** zurück und markieren Sie die zu korrigierenden Einteilungen auf den Seiten **Ergebnisarbeitsaufträge Wartungsaufträge** und **Wartungseinteilungen** FastTabs.
 
@@ -91,7 +89,7 @@ Die folgende Abbildung zeigt ein Beispiel der Detailansicht **Wartungsausfallakt
 
 16. Klicken Sie auf **OK**, um die Berechnung zu starten. Die Gesamtzahl der Positionsprognosen wird in der Übersicht **Positionsprognose** angezeigt. Klicken Sie auf der Registerkarte **Einzelteilprognose** > die Gruppen des Aktionsbereichs **Gruppieren nach...** auf die entsprechenden Schaltflächen, um einen detaillierteren Überblick über die Zuordnung der prognostizierten Elemente zu erhalten. Die folgende Abbildung zeigt die Ergebnisse einer Berechnung für **Artikelplanung**.
 
-![Abbildung 4](media/22-preventive-maintenance.png)
+![Abbildung 4.](media/22-preventive-maintenance.png)
 
 - Sie können Anlagen von einer Wartungsausfallaktivität in eine andere kopieren. Wählen Sie unter **Alle Wartungsausfallaktivitäten** die Schaltfläche **Wartungsausfallzeiten kopieren** und treffen Sie Ihre Auswahl in den Feldern **Wartungsausfallzeiten** und **Wartungsausfallzeiten**, und klicken Sie auf **OK**.
 - Klicken Sie unter **Alle Wartungsausfallzeiten** auf die Schaltfläche **Wartungseinteilungen** oder die Schaltfläche **Aktive Arbeitsaufträge**, um die zugehörigen Listen zu öffnen und die Zeilen anzuzeigen, die sich auf die ausgewählte IWartungsausfallzeitaktivität beziehen.

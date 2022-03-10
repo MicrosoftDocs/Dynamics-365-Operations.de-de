@@ -2,11 +2,9 @@
 title: Arbeiten mit Fragmenten
 description: In diesem Thema wird beschrieben, warum, wann und wie Fragmente in Microsoft Dynamics 365 Commerce verwendet werden.
 author: phinneyridge
-manager: annbe
-ms.date: 10/16/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8436fd3621e94fb761c076454423fe9842306c78
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 98cb1fba158ea99427d2068ca49b257cb5290de3
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4982237"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090743"
 ---
 # <a name="work-with-fragments"></a>Arbeiten mit Fragmenten 
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, warum, wann und wie Fragmente in Microsoft Dynamics 365 Commerce verwendet werden.
-
-## <a name="overview"></a>Übersicht
 
 Fragmente ermöglichen ein zentrales Authoring für Modulkonfigurationen, die auf Ihrer Website wiederverwendet werden müssen. Beispielsweise werden Kopf- und Fußzeilen sowie Banner häufig als Fragmente konfiguriert, da sie auf mehreren Seiten gemeinsam genutzt werden. Sie können sich Fragmente als Miniaturwebseiten vorstellen, die in andere Seiten Ihrer Site eingefügt werden können. Fragmente haben ihren eigenen Lebenszyklus. Mit anderen Worten, sie werden als unabhängige Entitäten in den Authoring-Tools erstellt, referenziert, aktualisiert und gelöscht.
 
@@ -49,7 +45,7 @@ Alle Stellen, an denen das Fragment hinzugefügt wird, verweisen auf das von Ihn
 
 Die folgende Abbildung zeigt, wie Fragmente verwendet werden können, um das Authoring gemeinsam genutzter Modulkonfigurationen auf einer E-Commerce-Site zu zentralisieren.
 
-![Eine Abbildung, die zeigt, wie Fragmente zum Zentralisieren des Erstellens gemeinsam genutzter Modulkonfigurationen auf einer E-Commerce-Site verwendet werden können](./media/fragment-figure1.png)
+![Eine Abbildung, die zeigt, wie Fragmente zum Zentralisieren des Erstellens gemeinsam genutzter Modulkonfigurationen auf einer E-Commerce-Site verwendet werden können.](./media/fragment-figure1.png)
 
 ## <a name="create-a-fragment"></a>Fragment erstellen
 
@@ -66,7 +62,7 @@ Gehen Sie folgendermaßen vor, um ein zuvor konfiguriertes Modul in ein wiederve
 1. Geben Sie im Dialogfeld **Als Fragment speichern** einen Namen für das Fragment ein.
 1. Wählen Sie **OK** aus, um die Modulkonfiguration als Fragment zu speichern, das anderen Seiten hinzugefügt werden kann.
 <!-- The following image shows how to save a module configuration as a fragment.-->
-<!--![A screen capture of how to save a module configuration as a fragment](./media/save-as-fragment.png)-->
+<!--![A screen capture of how to save a module configuration as a fragment.](./media/save-as-fragment.png)-->
 
 ### <a name="create-a-new-fragment"></a>Neues Fragment erstellen
 
@@ -77,7 +73,7 @@ Führen Sie die folgenden Schritte aus, um ein neues Fragmente im Commerce Site 
 1. Wählen Sie einen Modultyp für Ihr Fragment.
 
 <!-- The following image shows where to create a new fragment.-->
-<!-- ![A screen capture of where to create a new fragment](./media/fragment-nav-menu.png)-->
+<!-- ![A screen capture of where to create a new fragment.](./media/fragment-nav-menu.png)-->
 > [!TIP]
 > Durch Auswahl eines generischen Containermodultyps erhalten Sie die größte Flexibilität, wenn Sie Ihr Fragment später aktualisieren und konfigurieren müssen.
 
@@ -92,14 +88,14 @@ Führen Sie die folgenden Schritte aus, um ein Fragmente im Commerce Site Builde
 1. Wählen Sie im Gliederungsbereich links oder direkt im Visual Page Builder einen Container oder Slot aus, zu dem untergeordnete Module hinzugefügt werden können.
 1. Wählen Sie die Auslassungspunkte (**...**) neben dem Namen des Containers oder Slots aus.  Wenn Sie alternativ Visual Page Builder verwenden, wählen Sie das Pluszeichen (**+**) aus.  
 1. Wählen Sie **Fragment hinzufügen**.
-    <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
+    <!-- ![A screen capture of how to add an existing fragment to a slot or container.](./media/add-fragment.png)-->
  
     > [!NOTE]
     > Wenn der Container oder Slot keine neuen untergeordneten Module unterstützt, ist die Option **Fragment hinzufügen** nicht verfügbar.
     
 1. Suchen Sie im Dialogfeld **Fragment auswählen** nach einem Fragment, das Sie hinzufügen möchten, und wählen Sie es aus. Wenn keine verfügbaren Fragmente aufgelistet sind, müssen Sie möglicherweise zuerst ein Fragment aus einem Modultyp erstellen, den der ausgewählte Container oder Slot unterstützt.
 1. Wählen Sie Ihr gewünschtes Fragment aus, das dem Container oder Slot auf Ihrer Seite hinzugefügt werden soll.
-<!--    ![A screen capture of the fragment picker modal window](./media/fragment-picker.png)-->
+<!--    ![A screen capture of the fragment picker modal window.](./media/fragment-picker.png)-->
 
 > [!NOTE]
 > Die Module, die in einem Container oder Slot zulässig sind, werden durch die Seitenvorlage oder die eigenen Definitionen der Module definiert.
@@ -126,6 +122,20 @@ Führen Sie die folgenden Schritte aus, um ein neues Fragmente im Commerce Site 
 
 Sie können ein Fragment auch bearbeiten, indem Sie es auf einer Seite, in einer Vorlage oder in einem übergeordneten Fragment auswählen und dann **Fragment bearbeiten** im Eigenschaftenbereich rechts.
 
+### <a name="rename-a-fragment"></a>Ein Fragment umbenennen
+
+Um ein vorhandenes Fragment in Site Builder umzubenennen, führen Sie diese Schritte aus.
+
+1. Wählen Sie im linken Navigationsbereich **Fragmente**.
+1. Wählen Sie den Fragmentnamen des Fragments, das Sie umbenennen möchten.
+1. Wählen Sie **Bearbeiten**, um die Bearbeitung des Fragments zu starten. Beachten Sie, dass Sie ein Fragment nicht bearbeiten können, wenn jemand anderes das Fragment bereits bearbeitet.
+1. Wählen Sie im Bereich Fragmenteigenschaften das Stiftsymbol neben dem Fragmentnamen.
+1. Bearbeiten Sie den Fragmentnamen nach Bedarf.
+1. Aktivieren Sie das Kontrollkästchen, um die Namensänderung zu bestätigen.
+1. Wählen Sie **Beenden Sie die Bearbeitung**.
+
+Sie können ein Fragment umbenennen, nachdem es erstellt wurde, indem Sie es bearbeiten und dann das Stiftsymbol neben dem Fragmentnamen im Eigenschaftenbereich auswählen.
+
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Übersicht über Vorlagen und Layouts](templates-layouts-overview.md)
@@ -135,3 +145,6 @@ Sie können ein Fragment auch bearbeiten, indem Sie es auf einer Seite, in einer
 [Arbeiten mit Voreinstellungslayouts](work-with-layouts.md)
 
 [Arbeiten mit Veröffentlichungsgruppen](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

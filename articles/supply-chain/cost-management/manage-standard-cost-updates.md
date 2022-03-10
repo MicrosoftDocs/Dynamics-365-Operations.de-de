@@ -15,13 +15,13 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: d4ea62a680c9bcf68de29f3e0d4cec8d5001c1563e988cbbd49eb961604072c8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.17
+ms.openlocfilehash: 3485f0722b8b99d7dc2d6dab470fdcc465b1da3d
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764133"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678664"
 ---
 # <a name="manage-standard-cost-updates"></a>Standardkostenaktualisierungen verwalten
 
@@ -43,8 +43,6 @@ Das folgende Beispiel veranschaulicht, wie der Einzelversions- und der Zwei-Vers
 In diesem Beispiel wurde eine zusätzliche Nachkalkulationsversion zum Verwalten von Aktualisierungen im Laufe des Jahres 2020 verwendet. Es können auch mehrere zusätzliche Nachkalkulationsversionen verwendet werden, beispielsweise getrennte Versionen für jede einzelne Änderung. Falls mehrere zusätzliche Nachkalkulationen verwendet werden, muss das Fallback als aktive Kosten ausgedrückt werden, da sie sich über mehrere Nachkalkulationsversionen erstrecken würden.
 
 ## <a name="financial-dimensions-for-the-standard-cost-revaluation"></a>Finanzdimensionen für die Standardkostenneubewertung
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Durch Aktivieren eines neuen Standardpreises wird der verfügbare Lagerbestand in der Regel durch Standardkosten-Neubewertungstransaktionen neu bewertet. Normalerweise werden die Finanzdimensionen des Artikels anschließend in den Transaktionen gebucht. Wenn Sie jedoch steuern möchten, ob und wie die Finanzdimensionen gebucht werden, verwenden Sie die [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um die Funktion *Optionen für standardmäßige Finanzdimensionen zur Neubewertung der Standardkosten des Bestands* zu aktivieren. Wechseln Sie nach dem Aktivieren dieser Funktion zu **Kostenmanagement > Einrichtung der Bestandsbuchhaltungsrichtlinien> Parameter** und wählen Sie in der neuen Dropdownliste **Ursprung der Finanzdimension** einen der folgenden Werte aus:
 

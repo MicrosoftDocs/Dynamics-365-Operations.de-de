@@ -2,11 +2,9 @@
 title: Social-Share-Modul
 description: Dieses Thema enthält Social-Share-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 0a5ad1f4a9bb317e128ad14f21a4e6c48cab8a72
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2e997cad97d45949c8f542764126a08fb6daa73551079eb2d400d7edfb98ca2b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985535"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730946"
 ---
-# <a name="social-share-module"></a>Social-Share-Modul
+# <a name="social-share-module"></a>Social Share-Modul
 
 [!include [banner](includes/banner.md)]
 
 Dieses Thema enthält Social-Share-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
-
-## <a name="overview"></a>Übersicht
 
 Mithilfe von Social-Share-Modulen können Benutzer URLs von E-Commerce-Websiteseiten in sozialen Medien wie z. B. Facebook, Twitter, Pinterest und LinkedIn verwenden. Webite-Seiten-URLs können auch per E-Mail freigegeben werden. Social-Share-Module werden häufig auf Produktdetailseiten (PDPs) verwendet, um Benutzern den Austausch von Produktinformationen zu erleichtern.
 
@@ -40,7 +36,7 @@ Jede Social-Media-Plattform kann Cookies verfolgen. Daher müssen Benutzer der W
 
 Die folgende Abbildung zeigt ein Beispiel für ein Social-Share-Modul, das auf einer Produktdetailseite verwendet wird.
 
-![Beispiel eines Social-Share-Moduls](./media/ecommerce-socialshare.png)
+![Beispiel eines Social-Share-Moduls.](./media/ecommerce-socialshare.png)
 
 ## <a name="social-share-module-properties"></a>Social-Share-Moduleigenschaften
 
@@ -81,3 +77,6 @@ Um ein Social-Share-Modul einem Kauffeldmodul hinzuzufügen, befolgen Sie diese 
 [Kauffeldmodul](add-buy-box.md)
 
 [Cookie-Compliance](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

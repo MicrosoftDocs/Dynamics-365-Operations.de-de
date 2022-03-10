@@ -1,7 +1,7 @@
 ---
 title: Ein Bild zu einem Produkt hinzufügen
 description: Dieses Verfahren zeigt, wie einem Produkt ein Bild hinzugefügt wird. Das zur Erstellung dieser Aufgabe verwendete Demodatunternehmen ist USMF.
-author: ShylaThompson
+author: t-benebo
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: EcoResProductDetailsExtended, EcoResProductPerCompanyImagePart, 
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 99a097c2f0e1717be2354329026ccdaf35a07db6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f6edb45f95414f5bd98a3db2150b80ebf4992daf
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812618"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7565662"
 ---
 # <a name="add-an-image-to-a-product"></a>Ein Bild zu einem Produkt hinzufügen
 

@@ -1,12 +1,10 @@
 ---
 title: Automatisches Erstellen von Serviceaufträgen
 description: Serviceaufträge können auf der Grundlage einer Servicevereinbarung für die Gültigkeitsperiode der Servicevereinbarung generiert werden.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53369ef2b7ff93ae4f0523accbc31cc88575a383
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1acf4620556fe7ec5ae40f0a98b0a23602e2524a
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010671"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7565136"
 ---
 # <a name="automatically-create-service-orders"></a>Automatisches Erstellen von Serviceaufträgen 
 
@@ -58,3 +56,6 @@ Die Servicevereinbarung gilt vom 1. Januar 2012 bis zum 31. Dezember 2012. D
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

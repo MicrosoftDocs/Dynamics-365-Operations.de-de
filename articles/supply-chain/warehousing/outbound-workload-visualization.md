@@ -11,13 +11,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: acfde5961f481f5d939f0c6388b80edfd65ee339
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: db6ceb40279e53e9c4751a7ceb3db895e889a7c0
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351416"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102887"
 ---
 # <a name="outbound-workload-visualization"></a>Ausgehende Workloadvisualisierung
 
@@ -27,12 +27,9 @@ Erweiterte Funktionalitäten, die über die Seite **Visualisierung der Arbeitsau
 
 Diese Funktionalität kann verwendet werden, um den Fortschritt von Entnahmearbeiten zu verfolgen. Die Funktion ist mit der Arbeitsverwaltung integriert, und wenn die Arbeitsverwaltung festgelegt ist, können die Visualisierungen der ausgehenden Arbeitsauslastung eine Berechnung der Anzahl der Stunden anzeigen, die für die angezeigte (gefilterte) Entnahmearbeit verbleiben.
 
-## <a name="turn-on-the-outbound-workload-visualization-feature"></a>Einschalten der Funktion zur Visualisierung der ausgehenden Arbeitsauslastung
+## <a name="turn-the-outbound-workload-visualization-feature-on-or-off"></a>Die Funktion zur Visualisierung der ausgehenden Arbeitsauslastung ein- oder ausschalten
 
-Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Admins können die Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktion zu prüfen und sie einzuschalten. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
-
-- **Module:** *Lagerortverwaltung*
-- **Name der Funktion:** *Visualisierung der ausgehenden Arbeitsauslastung*
+Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert. Administratoren können diese Funktionalität an- oder ausschalten, indem Sie nach der Funktion zur *Visualisierung der ausgehenden Arbeitsauslastung* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ## <a name="set-up-outbound-workload-visualizations"></a>Visualisierungen der ausgehenden Arbeitsauslastung festlegen
 

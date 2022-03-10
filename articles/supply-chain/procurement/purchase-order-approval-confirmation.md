@@ -1,7 +1,7 @@
 ---
 title: Bestellungen genehmigen und bestätigen
 description: Dieser Artikel beschreibt die Statuswerte einer Bestellung nach der Erstellung und den Effekt des Änderungsmanagements für Bestellungen.
-author: kamaybac
+author: Henrikan
 ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95f1f6971e645a0aae8679c94a4bbd4cba946dc3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7ae625950e62b2bf5ec092ccda414ee306c62d79
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825421"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570536"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Bestellungen genehmigen und bestätigen
 
@@ -83,8 +83,7 @@ Um die gesamte Menge einer Bestellposition zu stornieren, sollten Sie die verble
 
 Wenn eine Bestellung im Änderungsmanagement ist, muss jede Änderung, z. B. eine Stornierung des Auftrags oder des Lieferungsrestes, an das Workflowsystem übermittelt und genehmigt werden, bevor der Prozess vollständig durchgeführt werden kann und die Lagerbuchungen als storniert aktualisiert werden können.
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Übersicht über Bestellungen](purchase-order-overview.md)
 

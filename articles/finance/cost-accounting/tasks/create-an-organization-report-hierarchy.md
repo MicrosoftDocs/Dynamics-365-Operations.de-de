@@ -2,25 +2,22 @@
 title: Eine Organisationsberichtshierarchie erstellen
 description: Gehen Sie folgendermaßen vor, um eine Berichtshierarchie für Organisationsberichterstellung zu erstellen.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 57203a7ddbacd631cbf800fb3a98e35a485cb74f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4e9d5cc6fd6188c988a433fcd7f2bf81bf31668edf762c0ed3bcbf67477a4e35
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443722"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719269"
 ---
 # <a name="create-an-organization-report-hierarchy"></a>Eine Organisationsberichtshierarchie erstellen
 
@@ -95,3 +92,6 @@ Gehen Sie folgendermaßen vor, um eine Berichtshierarchie für Organisationsberi
     * Wählen Sie das Dimensionsmitglied aus, das dem Knoten entspricht.  
 59. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

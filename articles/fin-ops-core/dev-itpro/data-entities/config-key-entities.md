@@ -1,8 +1,7 @@
 ---
 title: Konfigurationsschlüssel und Datenentitäten
 description: In diesem Thema wird die Beziehung zwischen Konfigurationsschlüsseln und Datenentitäten beschrieben.
-author: Sunil-Garg
-manager: AnnBe
+author: peakerbl
 ms.date: 05/10/2019
 ms.topic: article
 ms.prod: ''
@@ -12,19 +11,22 @@ ms.reviewer: sericks
 ms.custom: 25341
 ms.assetid: 8e214c95-616b-4ee1-b5a4-fa5ce5147f2c
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 383b8664b7e8cc063b980c52997ddf273d363033
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: e9cc92563c426136b2543511ad943fd64b335b70
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5569172"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065738"
 ---
 # <a name="configuration-keys-and-data-entities"></a>Konfigurationsschlüssel und Datenentitäten
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Bevor Sie Datenentitäten verwenden, um Daten zu importieren oder zu exportieren, wird empfohlen, dass sie zuerst die Auswirkung von Konfigurationsschlüsseln auf die Datenentitäten bestimmen, die Sie verwenden möchten.
 
@@ -53,24 +55,24 @@ In der folgenden Tabelle wird zusammengefasst, wie Konfigurationsschlüsselwerte
 ### <a name="entity-list-refresh"></a>Entitätslistenaktualisierung
 Wenn die Entitätsliste aktualisiert wird, werden vom Datenverwaltungsframework die Konfigurationsschlüsselmetadaten für die Laufzweitverwendung erstellt. Diese Metadaten werden mithilfe der oben beschriebenen Logik erstellt. Vor der Verwendung von Einzelvorgängen und Entitäten im Datenverwaltungsframework wird dringend empfohlen, dass Sie warten, bis die Entitätslistenaktualisierung abgeschlossen ist. Wenn Sie nicht warten, sind die Konfigurationsschlüsselmetadaten möglicherweise nicht auf dem neuesten Stand und könnten unerwartete Ergebnisse hervorrufen. Wenn die Entitätsliste aktualisiert wird, wird die folgende Nachricht in der Entitätslistenseite angezeigt.
 
-![Entitätslistenaktualisierung](./media/Entity_refresh_list.png)
+![Entitätslistenaktualisierung.](./media/Entity_refresh_list.png)
 
 ### <a name="data-entity-list-page"></a>Datenentitätslistenseite
 Die Datenentitätslistenseite im Datenverwaltungsarbeitsbereich zeigt die Konfigurationsschlüsseleinstellungen für die Entitäten an. Beginnen Sie von dieser Seite, um die Auswirkungen von Konfigurationsschlüsseln auf die Datenentität zu verstehen.
 
 Diese Informationen werden mithilfe der Metadaten angezeigt, die während der Entitätsaktualisierung erstellt werden. Die Konfigurationsschlüsselspalte zeigt den Namen des Konfigurationsschlüssels an, der der Datenentität zugeordnet ist. Wenn diese Spalte leer ist, bedeutet dies, dass es keinen Konfigurationsschlüssel gibt, der der Datenentität zugeordnet ist. Die Konfigurationsschlüssel-Statusspalte zeigt den Status des Konfigurationsschlüssels an. Wenn sie ein Häkchen hat, bedeutet dies, dass der Schlüssel aktiviert ist. Wenn sie leer ist, bedeutet dies, dass entweder der Schlüssel deaktiviert ist, oder dass kein Schlüssel zugeordnet ist.
 
-![Entitätslistenseite](./media/Data_entity_list_page.png)
+![Entitätslistenseite.](./media/Data_entity_list_page.png)
 
 ### <a name="target-fields"></a>Zielfelder
 Im nächsten Schritt wird ein Drillinto in die Datenentität ausgeführt, um die Auswirkung der Konfigurationsschlüssel auf Tabellen und Felder anzuzeigen. Das Zielfelderformular für eine Datenentität zeigt Konfigurationsschlüssel und Schlüsselstatusinformationen für die zugeordneten Tabellen und Felder in der Datenentität an. Wenn bei der Datenentität selbst ihr Konfigurationsschlüssel deaktiviert ist, wird eine Warnmeldung angezeigt, um zu informieren, dass die Tabellen und Felder im Zielfelderformular für diese Entität überhaupt nicht verfügbar sein werden, ungeachtet ihres Konfigurationsschlüsselstatus.
 
-![Zielfelder](./media/Target_fields_1.png)
+![Zielfelder.](./media/Target_fields_1.png)
 
 ### <a name="child-entities"></a>Untergeordnete Entitäten 
 Bestimmte Entitäten haben andere Entitäten als Datenquellen oder sind zusammengesetzte Datenentitäten: Konfigurationsschlüsselinformationen für diese Entitäten werden im Formular für untergeordnete Entitäten angezeigt. Verwenden Sie dieses Formular in ähnlicher Weise wie die oben beschriebene Entitätenlistenseite. Das Zielfelderformular für die untergeordnete Entität verhält sich auch wie das, was oben beschrieben wird.
 
-![Zielfelder](./media/Target_fields_2.png)
+![Zielfelder.](./media/Target_fields_2.png)
 
 ### <a name="using-data-entities"></a>Datenentitäten verwenden
 Nachdem Sie die gesamte Auswirkung – sofern es eine gibt – von Konfigurationsschlüsseln auf die Datenentitäten verstehen, die Sie verwenden möchten, können Sie jetzt damit fortfahren, die Datenentitäten zu verwenden, indem Sie diese zu Datenprojekten hinzufügen. 
@@ -92,7 +94,7 @@ Mithilfe der Konfigurationsschlüsselmetadaten, die während der Entitätsaktual
 ### <a name="managing-configuration-key-changes"></a>Konfigurationsschlüsseländerungen verwalten
 Immer wenn Sie Konfigurationsschlüssel auf der Entitäts-, Tabellen- oder Feldebene aktualisieren, muss die Entitätsliste im Datenverwaltungsframework aktualisiert werden. Durch diesen Prozess wird sichergestellt, dass der Framework die aktuellsten Konfigurationsschlüsseleinstellungen auswählt. Bis die Entitätsliste aktualisiert ist, wird die folgende Warnung in der Entitätslistenseite angezeigt. Die aktualisierten Konfigurationsschlüsseländerungen treten sofort in Kraft, nachdem die Entitätsliste aktualisiert ist. Es wird empfohlen, dass Sie die vorhandenen Datenprojekte und Einzelvorgänge überprüfen, um sicherzustellen, dass sie erwartungsgemäß funktionieren, nachdem die Konfigurationsschlüsseländerungen wirksam werden.
 
-![Zielfelder](./media/Target_fields_3.png)
+![Zielfelder.](./media/Target_fields_3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

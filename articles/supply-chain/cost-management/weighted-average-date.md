@@ -2,11 +2,9 @@
 title: Gewichteter Durchschnitt (Datum)
 description: Das Datum für gewichteten Durchschnitt ist ein auf dem Prinzip des gewichteten Durchschnitts basierendes Lagermodell. Dabei werden Lagerabgänge mit dem durchschnittlichen Wert der Artikel bewertet, die an den einzelnen Tagen in der Lagerabschlussperiode im Lager entgegengenommen werden.
 author: AndersGirke
-manager: tfehr
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f82a7b9f21d27ff368bc7c5824055bf29ce20e8a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ce056a661130d30426ccfa4c288a0ce5b62ff959
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235483"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572024"
 ---
 # <a name="weighted-average-date"></a>Gewichteter Durchschnitt (Datum)
 
@@ -41,7 +39,7 @@ Gewichteter Durchschnitt = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) �
 
 Während des Lagerabschlusses wird die Berechnung innerhalb der Abschlussperiode täglich ausgeführt (siehe folgende Grafik). 
 
-![Gewichteter Durchschnitt – Modell für tägliche Berechnung](./media/weightedaveragedatedailycalculationmodel.gif) 
+![Gewichteter Durchschnitt – Modell für tägliche Berechnung.](./media/weightedaveragedatedailycalculationmodel.gif) 
 
 Lagerbuchungen für Lagerabgänge – einschließlich Aufträge, Lagererfassungen und Produktionsaufträge – werden zu einem vorkalkulierten Einstandspreis zum Buchungsdatum ausgeführt. Dieser vorkalkulierte Einstandspreis wird auch als laufender Durchschnittseinstandspreis bezeichnet. Zum Zeitpunkt des Lagerabschlusses werden die Lagerbuchungen vom System für die vorangegangenen Perioden und Tage sowie für den aktuellen Tag analysiert. Mithilfe dieser Analyse wird ermittelt, welches der folgenden Abschlussprinzipien verwendet werden soll:
 
@@ -74,7 +72,7 @@ Die folgende Abbildung zeigt diese Buchungen an:
 -   2b. Der wertmäßige Lagerabgang wird für die Menge "2" zu jeweils EUR 10,00 (Kosten) aktualisiert.
 -   3. Der Lagerabschluss erfolgt unter Verwendung der Methode für den direkten Ausgleich, um den wertmäßigen Lagerzugang mit dem wertmäßigen Lagerabgang auszugleichen.
 
-![Direkter Ausgleich mit Datum für den gewichteten Durchschnitt und ohne die Option "Physischen Wert einbeziehen"](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
+![Direkter Ausgleich mit Datum für den gewichteten Durchschnitt und ohne die Option „Physischen Wert einbeziehen“.](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Schlüssel der Abbildung:**
 
@@ -128,7 +126,7 @@ Das System generiert und bucht die zusammengefasste Umlagerungsbuchung. Darüber
 
 Die folgende Abbildung zeigt eine Reihe von Transaktionen und die Auswirkungen der Verwendung des Lagermodells mit gewichtetem Durchschnitt und des Prinzips des zusammengefassten Ausgleichs, aber ohne Verwendung der Option **Physischen Wert einbeziehen**. 
 
-![Zusammengefasster Ausgleich mit Datum für den gewichteten Durchschnitt und ohne die Option "Physischen Wert einbeziehen"](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![Zusammengefasster Ausgleich mit Datum für den gewichteten Durchschnitt und ohne die Option „Physischen Wert einbeziehen“.](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Schlüssel der Abbildung:**
 
@@ -177,7 +175,7 @@ Sie können vor der Ausführung der Buchung eine Abgangsbuchung für einen Zugan
 
 Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig und physisch aktualisierten Buchungen in Höhe von EUR 27,50 berücksichtigt. Die folgende Abbildung zeigt eine Reihe von Transaktionen und die Auswirkungen der Verwendung des Lagermodells für das Datum des gewichteten Durchschnitts sowie der Verwendung der Markierung.
 
-![Datum für den gewichteten Durchschnitt mit Markierung](./media/weightedaveragedatewithmarking.gif) 
+![Datum für den gewichteten Durchschnitt mit Markierung.](./media/weightedaveragedatewithmarking.gif) 
 
 **Schlüssel der Abbildung:**
 

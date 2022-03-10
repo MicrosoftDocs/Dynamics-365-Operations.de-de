@@ -2,11 +2,9 @@
 title: Verbesserungen bei der Bargeldverwaltung
 description: In diesem Thema werden die Verbesserungen bei der Bargeldverwaltung in POS für Dynamics 365 Commerce beschrieben.
 author: anpurush
-manager: AnnBe
 ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ce75a191726fc430347f057ac511188acfbbf76e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f878f39e8e9913edbe1da192e199090139a88adb6b7ed9a1e9b779c5748171b5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5213161"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735653"
 ---
 # <a name="cash-management-improvements"></a>Verbesserungen bei der Bargeldverwaltung
 

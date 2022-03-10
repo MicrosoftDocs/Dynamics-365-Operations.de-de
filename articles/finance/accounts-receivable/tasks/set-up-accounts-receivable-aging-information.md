@@ -1,7 +1,7 @@
 ---
 title: Debitoren-Fälligkeitsinformationen einrichten und generieren
 description: Dieses Handbuch unterstützt Sie dabei, eine Zahlungsfristdefinition sowie Dauerdebitorensalden einzurichten und Salden in der Liste "Saldorückblick" und auf der Seite "Inkasso" anzuzeigen.
-author: mikefalkner
+author: abruer
 ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 68d2e4a440ba99e52d715b9e5e3cfd77bb61814f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 996fb289c32a1819103fd67ffddc940dfd2870fb
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816171"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753559"
 ---
 # <a name="set-up-and-generate-accounts-receivable-aging-information"></a>Debitoren-Fälligkeitsinformationen einrichten und generieren
 

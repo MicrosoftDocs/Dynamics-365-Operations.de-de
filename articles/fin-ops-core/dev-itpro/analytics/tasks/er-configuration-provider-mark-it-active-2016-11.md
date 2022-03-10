@@ -2,7 +2,6 @@
 title: Erstellen von Konfigurationsanbietern und Markieren als aktiv
 description: In diesem Thema wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle „Entwickler für elektronische Berichterstellung“ zugewiesen ist, einen Konfigurationsanbieter erstellen kann.
 author: NickSelin
-manager: AnnBe
 ms.date: 07/02/2019
 ms.topic: business-process
 ms.prod: ''
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 11ff1d531b0467cf75ec98b092fe6010f4fa95c0
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: e5b429badcbcc0e9829d82785a6e1f1a2504f5ec9b9ac74d249032f272dea103
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5569786"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747246"
 ---
 # <a name="create-configuration-providers-and-mark-them-as-active"></a>Erstellen von Konfigurationsanbietern und Markieren als aktiv
 
@@ -42,7 +41,7 @@ In diesem Thema wird erläutert, wie ein Benutzer, der der Systemadministratorro
 1. Wählen Sie den "Litware, Inc."- Anbieter.
 2. Wählen Sie **Als aktiv festlegen**.
 
-![Elektronische Berichterstellung – Seite „Arbeitsbereich“](../media/GER-Task-ActiveProvider-1.png)
+![Elektronische Berichterstellung – Seite „Arbeitsbereich“.](../media/GER-Task-ActiveProvider-1.png)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

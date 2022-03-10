@@ -1,8 +1,8 @@
 ---
-title: App für wiederkehrenden Datenexport erstellen
-description: Dieser Artikel zeigt das Erstellen einer Microsoft Azure Logic App, die regelmäßig nach einem Zeitplan Daten aus Microsoft Dynamics 365 Human Resources exportiert.
-author: andreabichsel
-ms.date: 02/03/2020
+title: Eine wiederkehrende Datenexport-App erstellen
+description: Dieses Thema beschreibt, wie Sie eine Microsoft Azure Logic App erstellen, die Daten von Microsoft Dynamics 365 Human Resources in einem wiederkehrenden Zeitplan exportiert.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,24 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ba4f0eca471cf9734230bb2a23d53ff2e233ba2f
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 368eee6bb182f363f47467a5c5ad8208a57db7ec
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6361223"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069781"
 ---
-# <a name="create-a-recurring-data-export-app"></a>App für wiederkehrenden Datenexport erstellen
+# <a name="create-a-recurring-data-export-app"></a>Eine wiederkehrende Datenexport-App erstellen
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dieser Artikel zeigt das Erstellen einer Microsoft Azure Logic App, die regelmäßig nach einem Zeitplan Daten aus Microsoft Dynamics 365 Human Resources exportiert. Das Tutorial nutzt die Vorteile der REST-Anwendungsprogrammierschnittstelle (API) des Human Resources-DMF-Pakets, um die Daten zu exportieren. Nachdem die Daten exportiert wurden, speichert die Logic App das exportierte Datenpaket in einem Microsoft OneDrive for Business-Ordner.
+Dieses Thema beschreibt, wie Sie eine Microsoft Azure Logic App erstellen, die Daten von Microsoft Dynamics 365 Human Resources in einem wiederkehrenden Zeitplan exportiert. Das Tutorial nutzt die Vorteile der REST-Anwendungsprogrammierschnittstelle (API) des Human Resources-DMF-Pakets, um die Daten zu exportieren. Nachdem die Daten exportiert wurden, speichert die Logic App das exportierte Datenpaket in einem Microsoft OneDrive for Business-Ordner.
 
 ## <a name="business-scenario"></a>Geschäftsszenario
 

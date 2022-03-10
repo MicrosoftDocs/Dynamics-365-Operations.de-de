@@ -1,8 +1,8 @@
 ---
 title: Stellenanforderung erstellen und freigeben
 description: Mithilfe von Personalbeschaffungsprojekten können Sie den Personalbeschaffungsprozess verwalten.
-author: andreabichsel
-ms.date: 02/03/2021
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruiting
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: df60f6461c52e45849d3de89fde4ae53f915dbc3cce417a30790acf443c5fecc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d59ccb88b8a76de6e2f00453f185fec2f149873
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778771"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731560"
 ---
 # <a name="create-and-open-job-requisition"></a>Stellenanforderung erstellen und freigeben
 
@@ -39,7 +39,7 @@ Mithilfe von Personalbeschaffungsprojekten können Sie den Personalbeschaffungsp
 6. Suchen Sie in der Liste Ihren Datensatz, und wählen Sie ihn aus.
 7. Wählen Sie in der Liste den Link in der ausgewählten Zeile.
 8. Wählen Sie **Auswählen**.
-9. Wählen Sie im Feld „Abteilung“ die Dropdown-Schaltfläche, um die Suche zu öffnen.
+9. Wählen Sie im Feld **Abteilung** die Dropdown-Schaltfläche, um die Suche zu öffnen.
 10. Wählen Sie in der Liste den Link in der ausgewählten Zeile.
 11. Wählen Sie im Feld **Stelle** die Dropdown-Schaltfläche aus, um die Suche zu öffnen.
 12. Suchen Sie in der Liste Ihren Datensatz, und wählen Sie ihn aus.
@@ -58,10 +58,10 @@ Mithilfe von Personalbeschaffungsprojekten können Sie den Personalbeschaffungsp
 25. Geben Sie im Feld **Enddatum** ein Datum ein.
 26. Wählen Sie **Speichern** aus.
 27. Schließen Sie die Seite.
-28. Stellenanzeigen auswählen.
+28. **Stellenanzeigen** auswählen.
 29. Wählen Sie **Speichern** aus.
 30. Schließen Sie die Seite.
-31. Aktivieren bzw. deaktivieren Sie das Kontrollkästchen **Auf Mitarbeiter-Self-Service anzeigen**. Aktivieren das Kontrollkästchen **Auf Mitarbeiter-Self-Service anzeigen**. Diese Auswahl macht das Personalbeschaffungsprojekt für Mitarbeiter auf ihren MItarbeiter-Self-Service-Seiten sichtbar.
+31. Aktivieren bzw. deaktivieren Sie das Kontrollkästchen **Auf Mitarbeiter-Self-Service anzeigen**. Aktivieren das Kontrollkästchen **Auf Mitarbeiter-Self-Service anzeigen**. Diese Auswahl macht das Personalbeschaffungsprojekt für Mitarbeiter auf ihrer **Mitarbeiter-Self-Service**-Seite sichtbar.
 32. Wählen Sie Sie auf **Status des Personalbeschaffungsprojekts**.
 33. Wählen Sie **Starten** aus. Der Status **Gestartet** bedeutet, dass das Projekt bereit ist, Bewerbungen zu erhalten.  
 34. Wählen Sie **OK**.

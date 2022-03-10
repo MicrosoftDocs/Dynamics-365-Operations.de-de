@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 780902bf6abb0fe93ca9c57be6aa75ee5bc121b1779ea42effdaa0c7f08b5e1b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 84ff0a466c037db05aecaff14aa2e17990ce8799
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746842"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103137"
 ---
 # <a name="work-with-location-directives"></a>Arbeiten mit Lagerplatzrichtlinien
 
@@ -164,7 +164,7 @@ Die Felder auf dem Inforegister **Lagerplatzrichtlinien** sind spezifisch für d
     > [!NOTE]
     > Dieses Feld ist nur für ausgewählte Arbeitsauftragstypen verfügbar, bei denen eine Wiederbeschaffung erlaubt ist. Eine vollständige Liste finden Sie im Abschnitt [Felder, die für Arbeitsauftragstypen spezifisch sind](#fields-specific-types) weiter oben in diesem Thema.
 
-- **Finden nach** - Geben Sie an, ob es sich bei der Einlagerungsmenge um die gesamte Menge auf dem Ladungsträger handeln soll, oder ob sie Element für Element erfolgen soll. Verwenden Sie dieses Feld, um sicherzustellen, dass der gesamte Inhalt eines Ladungsträgers an einem Lagerplatz eingelagert wird und dass das System nicht vorschlägt, den Inhalt auf mehrere Lagerplätze für die Prozesse **ASN** (Ladungsträger-Empfang), **Gemischte Ladungsträger** und **Cluster**-Empfang aufzuteilen. (Der **Cluster**-Empfangsprozess erfordert, dass die Funktion *Clustereinlagerung* eingeschaltet ist.) Das Verhalten der Abfrage der Lagerplatzrichtlinie, der Zeilen und der Aktionen der Lagerplatzrichtlinie variiert je nach dem von Ihnen gewählten Wert. Das **Zeilen** Inforegister wird nur verwendet, wenn das **Finden nach** auf *Element* festgelegt ist.
+- **Finden nach** - Geben Sie an, ob es sich bei der Einlagerungsmenge um die gesamte Menge auf dem Ladungsträger handeln soll, oder ob sie Element für Element erfolgen soll. Verwenden Sie dieses Feld, um sicherzustellen, dass der gesamte Inhalt eines Ladungsträgers an einem Lagerplatz eingelagert wird und dass das System nicht vorschlägt, den Inhalt auf mehrere Lagerplätze für die Prozesse **ASN** (Ladungsträger-Empfang), **Gemischte Ladungsträger** und **Cluster**-Empfang aufzuteilen. (Der **Cluster**-Empfangsprozess erfordert, dass die Funktion [Clustereinlagerung](putaway-clusters.md) eingeschaltet ist.) Das Verhalten der Abfrage der Lagerplatzrichtlinie, der Zeilen und der Aktionen der Lagerplatzrichtlinie variiert je nach dem von Ihnen gewählten Wert. Das **Zeilen** Inforegister wird nur verwendet, wenn das **Finden nach** auf *Element* festgelegt ist.
 
     > [!NOTE]
     > Dieses Feld ist nur für ausgewählte Arbeitsauftragstypen verfügbar, bei denen eine Wiederbeschaffung erlaubt ist. Eine vollständige Liste finden Sie im Abschnitt [Felder, die für Arbeitsauftragstypen spezifisch sind](#fields-specific-types).

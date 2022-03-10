@@ -1,36 +1,33 @@
 ---
 title: Gefahrengüter einrichten
 description: In diesem Thema wird erläutert, wie Sie die Daten einrichten, die zur Klassifizierung von Artikeln als gefährliche Materialien erforderlich sind. Wenn Sie einen Kundenauftrag erstellen, der einen Artikel enthält, der als Gefahrgut eingestuft ist, generiert das System beim Versand eine Gefahrstoffdokumentation für diesen Kundenauftrag.
-author: dasani-madipalli
-manager: tfehr
+author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: db0d78c7a6fa69aa4e0c4c82f92c33daabda073f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.11
+ms.openlocfilehash: 6923bd24fc8f9aad6e758603e3b20f7d5f2b8fde
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4983340"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778008"
 ---
 # <a name="set-up-hazardous-materials"></a>Gefahrengüter einrichten
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Um die Gefahrstofffunktionalität nutzen zu können, müssen Sie zunächst die Daten einrichten, die zur Klassifizierung von Artikeln als Gefahrgüter erforderlich sind. Wenn Sie dann einen Auftrag erstellen, der einen Artikel enthält, der als Gefahrgut eingestuft ist, generiert das System beim Versand eine Gefahrstoffdokumentation für diesen Kundenauftrag.
 
 ## <a name="turn-on-the-hazardous-materials-feature-for-your-system"></a>Aktivieren Sie die Gefahrstofffunktion für Ihr System
 
-Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Administratoren können die Seite [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktion zu überprüfen und sie bei Bedarf zu aktivieren oder zu deaktivieren. Hier wird die Funktion als aufgeführt:
 
 - **Modul:** *Produktinformationsverwaltung*
 - **Funktionsname:** *Produktinformationen zu Gefahrstoffen und Versanddokumentation*
@@ -179,7 +176,7 @@ Um Gefahrstoffsparten einzurichten, wechseln Sie zu **Produktinformationsverwalt
 |---|---|
 | Division | Geben Sie einen Code ein, der als Referenznummer für die Sparte verwendet werden soll. |
 | Beschreibung | Geben Sie eine Beschreibung der Sparte ein. |
-| Klasse  | Suchen Sie nach der Klasse, zu der die Sparte gehört, und weisen Sie sie zu. |
+| Klasse | Suchen Sie nach der Klasse, zu der die Sparte gehört, und weisen Sie sie zu. |
 
 ## <a name="hazardous-material-compatibility-groups"></a><a name="compatibility-groups"></a>Gefahrstoffkompatibilitätsgruppen
 
@@ -204,7 +201,7 @@ Jede Kompatibilitätsgruppe legt eine Liste von Klassen und Sparten von Gefahrst
 
 | Feld | Beschreibung |
 |---|---|
-| Klasse  | Wählen Sie eine Gefahrstoffklasse aus, die mit allen anderen Klassen in der Gruppe kompatibel ist. |
+| Klasse | Wählen Sie eine Gefahrstoffklasse aus, die mit allen anderen Klassen in der Gruppe kompatibel ist. |
 | Division | Wählen Sie eine Gefahrstoffsparte aus, die zur ausgewählten Klasse gehört. |
 
 ## <a name="hazardous-material-specification-values"></a>Werte der Gefahrstoffspezifikation
@@ -283,3 +280,6 @@ Um Werte für diese Spezifikation einzurichten, gehen Sie zu **Produktinformatio
 Die Spezifikation *Gefahrstofftunnel* begrenzt die Arten von Tunneln, durch die ein gefährliches Material transportiert werden kann, indem die Arten von Tunneln identifiziert werden, die verwendet werden müssen. Tunnelkategorien werden durch geltende Vorschriften für den Gefahrguttransport festgelegt. Diese Spezifikation gilt normalerweise nur für den Straßentransport.
 
 Um Werte für diese Spezifikation einzurichten, gehen Sie zu **Produktinformationsverwaltung \> Setup \> Gefahrstoff-Versanddokumentation \> Gefahrstofftunnel**. Auf der Seite **Gefahrstofftunnel** können Sie eine beliebige Anzahl von Tunnelbezeichnern erstellen und diese jeweils mit einem identifizierenden Code und einer kurzen Beschreibung konfigurieren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,8 +1,8 @@
 ---
 title: Urlaubsanträge in Teams verwalten
 description: In diesem Thema wird beschrieben, wie Sie arbeitsfreie Zeit in der Dynamics 365 Human Resources-App in Microsoft Teams beantragen.
-author: andreabichsel
-ms.date: 05/25/2021
+author: twheeloc
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 661bb8369fe4dbe6cdf6ee0fb05d16f4350ecf5a
-ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
+ms.openlocfilehash: d004e33d01dbd171626d7e23f93df081bc0210a9
+ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6097258"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "7924746"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Urlaubsanträge in Teams verwalten
 
@@ -36,12 +36,15 @@ Sie finden die App Dynamics 365 Human Resources im Teams-Store.
  
 2. Suchen Sie nach Dynamics 365 Human Resources, und wählen Sie dann die Kachel **Human Resources** aus.
 
+> [!NOTE]
+> Ab dem 20. Dezember 2021 werden die Bot-Dienste der Human Resources App (Version 1.1.4), die im Microsoft Mandant gehostet werden, außer Betrieb genommen. Die aktuellste Erweiterung (Version 1.1.5) steht zur Installation zur Verfügung. Weitere Informationen finden Sie unter [Verwaltung von Urlaubsanträgen in Teams](hr-admin-teams-leave-app.md#update-app).
+
 3. Wählen Sie die Schaltfläche **Hinzufügen** aus, um die App zu installieren.
 
 Wenn Sie nicht automatisch von der App angemeldet werden, wählen Sie die Registerkarte **Einstellungen** aus, um sich anzumelden.
 
 > [!NOTE]
-> Wenn kein Anmeldedialogfeld angezeigt wird, überprüfen Sie die Einstellungen Ihres Browsers, um Popupfenster zuzulassen. 
+> Wenn kein Anmeldedialogfeld angezeigt wird, aktualisieren Sie die Einstellungen Ihres Browsers, um Popupfenster zuzulassen. 
 
 Wenn Sie Zugriff auf mehrere Human Resources-Instanzen haben, können Sie auf der Registerkarte **Einstellungen** festlegen, zu welcher Umgebung Sie eine Verbindung herstellen möchten.
 
@@ -53,15 +56,15 @@ Wenn Sie Zugriff auf mehrere Human Resources-Instanzen haben, können Sie auf de
 Nach der Installation der App wird eine Willkommensnachricht angezeigt, in der Sie über die Aktivitätstypen informiert werden, die der Bot in Ihrem Namen ausführen kann.
 
 > [!NOTE]
-> Bei der ersten Interaktion mit dem Bot müssen Sie sich möglicherweise anmelden. Wenn kein Anmeldedialogfeld angezeigt wird, überprüfen Sie die Einstellungen Ihres Browsers, um Popupfenster zuzulassen.
+> Bei der ersten Interaktion mit dem Bot müssen Sie sich eventuell anmelden. Wenn kein Anmeldedialogfeld angezeigt wird, aktualisieren Sie die Einstellungen Ihres Browsers, um Popupfenster zuzulassen.
 
 Sie können den Bot bitten, die folgenden Aktionen durchzuführen:
 
 - Zeigen Sie Ihre aktuellen Urlaubsguthaben an. Senden Sie beispielsweise eine Nachricht mit dem Titel Urlaubssalden anzeigen.
 
-- Urlaubsanforderung für Sie starten Senden Sie beispielsweise eine Nachricht mit der Aufschrift Nehmen Sie sich frei oder Ich möchte nächsten Donnerstag und Freitag Urlaub machen, um genauer zu sagen, ob Sie Urlaub für den Urlaubstyp beantragen möchten. 
+- Urlaubsanforderung für Sie starten Senden Sie beispielsweise eine Nachricht mit der Aufschrift „Nehmen Sie sich frei“ oder „Ich möchte nächsten Donnerstag und Freitag Urlaub machen“, um genauer zu sagen, ob Sie Urlaub für den Urlaubstyp beantragen möchten. 
 
-  ![Starten Sie einen Urlaubsantrag im Teams-Chat](./media/hr-teams-leave-app-initiate.png)
+  ![Starten Sie einen Urlaubsantrag im Teams-Chat.](./media/hr-teams-leave-app-initiate.png)
 
 - Der Chat-Bot wird einen Urlaubsantrag für Sie ausfüllen. Wählen Sie **Abwesenheitsantrag** und bearbeiten Sie die Details für Ihren Antrag.
 
@@ -69,11 +72,11 @@ Sie können den Bot bitten, die folgenden Aktionen durchzuführen:
 
    Wenn Sie einen halbtägigen Urlaub auswählen, während die Urlaubsantragseinheit in Tagen angegeben ist, können Sie angeben, ob Sie eine Freistellung für den ersten halben Tag oder den zweiten halben Tag beantragen möchten, indem Sie die Option **Halbtagesdefinition** aus dem Menü **Mehr Optionen** auswählen.
    
-   ![Halbtagesdefinitionen](./media/HalfDayDefinitions.png)
+   ![Halbtagesdefinitionen.](./media/HalfDayDefinitions.png)
 
 - Wenn Sie mit der Bearbeitung der Details Ihres Urlaubsantrags fertig sind, wählen Sie **Senden**, um ihn zur Genehmigung zu senden.
 
-  ![Urlaubsantrag senden](./media/hr-teams-leave-app-submit.png)
+  ![Urlaubsantrag senden.](./media/hr-teams-leave-app-submit.png)
 
 ## <a name="manage-your-leave-in-teams"></a>Urlaub in Teams verwalten
 
@@ -93,7 +96,7 @@ Auf der Registerkarte **Arbeitsfreie Zeit** können Sie Folgendes anzeigen:
 
 2. Geben Sie den/die Tag(e) ein, den/die Sie sich frei nehmen möchten, und wählen Sie dann **Hinzufügen** aus.
 
-   ![Human Resources-App für Abwesenheiten in Teams – Arbeitsfreie Zeit hinzufügen](./media/TimeOffHours.png)
+   ![Human Resources-App für Abwesenheiten in Teams – arbeitsfreie Zeit hinzufügen.](./media/TimeOffHours.png)
 
 3. Geben Sie gegebenenfalls einen Ursachencode ein. Geben Sie auch Kommentare ein, und fügen Sie Anhänge hinzu.
 
@@ -113,7 +116,7 @@ Auf der Registerkarte **Arbeitsfreie Zeit** können Sie Folgendes anzeigen:
    
 ### <a name="respond-to-teams-notifications"></a>Antworten auf Teams-Benachrichtigungen
 
-Wenn Sie oder ein Mitarbeiter, für den Sie Genehmiger sind, einen Urlaubsantrag stellen, erhalten Sie eine Benachrichtigung in der Human Resources-App in Teams. Sie können die Benachrichtigung auswählen, um sie anzuzeigen. Benachrichtigungen werden auch im **Plaudern**-Bereich angezeigt.
+Wenn Sie oder eine Arbeitskraft, für den Sie Genehmiger sind, einen Urlaubsantrag stellen, erhalten Sie eine Benachrichtigung in der Human Resources-App in Teams. Sie können die Benachrichtigung auswählen, um den Urlaubsantrag anzuzeigen. Benachrichtigungen werden auch im **Plaudern**-Bereich angezeigt.
 
 Wenn Sie ein Genehmiger sind, können Sie in der Benachrichtigung **Genehmigen** oder **Verweigern** auswählen. Sie können auch eine optionale Nachricht bereitstellen.
 
@@ -123,7 +126,7 @@ Nachdem Sie die Human Resources-App für Teams installiert haben, können Sie Ih
 
 1. Wählen Sie in einem Team oder Chat in Teams die Schaltfläche Human Resources unter dem Chatfenster.
 
-   ![Schaltfläche „Human Resources“ unter dem Chatfenster](./media/hr-teams-leave-app-chat-button.png)
+   ![Schaltfläche „Human Resources“ unter dem Chatfenster.](./media/hr-teams-leave-app-chat-button.png)
 
 2. Wählen Sie die Urlaubsanfrage aus, die Sie teilen möchten. Wenn Sie einen Entwurf für einen Urlaubsantrag freigeben möchten, wählen Sie zuerst **Entwürfe**.
 
@@ -167,17 +170,21 @@ Wenn Sie Probleme bei der Anmeldung oder Verwendung der Dynamics 365 Human Resou
 
 Wenn Sie sich nicht bei der App anmelden können, ist es möglich, dass das Konto, das Sie zur Anmeldung bei Microsoft Teams verwenden, keinem Mitarbeiterdatensatz in Dynamics 365 Human Resources zugeordnet ist. Wenden Sie sich an Ihren Systemadministrator, um sicherzustellen, dass Ihr Mitarbeiterdatensatz korrekt zugeordnet ist.
 
+### <a name="cant-find-the-dynamics-365-human-resources-environment-in-settings"></a>Kann die Dynamics 365 Human Resources Umgebung in den Einstellungen nicht finden
+
+Wenn Sie nicht die richtige Dynamics 365-Umgebung auswählen können, wurde der Benutzerdatensatz möglicherweise nicht korrekt synchronisiert. Wenden Sie sich an Ihren Systemadministrator, um den Benutzerdatensatz neu zu erstellen und ihn mit den Benutzeranmeldeinformationen zu verknüpfen. Dann versuchen Sie, sich in ein paar Minuten bei der Human Resources App für Microsoft Teams anzumelden.
+
 ### <a name="translations-dont-display-correctly"></a>Übersetzungen werden nicht korrekt angezeigt
 
 Wenn die Übersetzungen nicht wie erwartet angezeigt werden, stellen Sie sicher, dass die Sprache, die Sie in Teams auswählen, mit der in Human Resources **Benutzeroptionen** ausgewählten Sprache übereinstimmt.
 
 In Teams sehen Sie sich **App-Sprache** in **Einstellungen** an.
 
-![Teams-Einstellungen](./media/hr-teams-leave-app-settings.png)
+![Teams-Einstellungen.](./media/hr-teams-leave-app-settings.png)
 
 Wählen Sie in Human Resources **Einstellungen** und wählen Sie dann **Benutzeroptionen**. Stellen Sie sicher, dass das Feld **Sprache** mit dem Feld **App-Sprache** in Teams übereinstimmt.
 
-![Human Resources Benutzeroptionen](./media/hr-teams-leave-app-user-options.png)
+![Human Resources-Benutzeroptionen.](./media/hr-teams-leave-app-user-options.png)
 
 Wenn Sie immer noch Übersetzungsprobleme haben, lassen Sie es uns wissen. Informationen finden Sie unter [Unterstützung für Finance and Operations-Apps oder Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
@@ -195,7 +202,7 @@ Wenn Sie beim Versuch, Urlaubsanträge in der Teams-App zu genehmigen, eine Fehl
 
 2. Stellen Sie sicher, dass die Benutzer auf der Registerkarte **Chats** mit denselben Anmeldeinformationen angemeldet sind, die sie für die Genehmigung von Urlaubsanträgen verwenden. Verwenden Sie die Nachrichten „Abmelden“ und dann „Anmelden“, um sich mit den richtigen Anmeldeinformationen anzumelden.
 
-3. Wenn das Problem weiterhin besteht, überprüfen Sie als Systemadministrator den Status des Batchauftrags für das System Business Events. Wenn es sich in einer Warte- oder Ausführungsphase befindet, schauen Sie in ein paar Minuten noch einmal nach. Wenn der Status unverändert bleibt, protokollieren Sie ein Support-Ticket, damit unser Team das Problem beheben kann.
+3. Wenn das Problem weiterhin besteht, überprüfen Sie als Systemadministrator den Status des Batchauftrags für das **Geschäftsereignissesystem**. Wenn es sich in einer **Warte-** oder **Ausführungsphase** befindet, schauen Sie in ein paar Minuten wieder nach. Wenn der Status unverändert bleibt, protokollieren Sie ein Support-Ticket, sodass unser Team helfen kann, das Problem zu beheben.
 
 ## <a name="known-accessibility-issues"></a>Bekannte Probleme mit den Eingabehilfen
 
@@ -204,7 +211,7 @@ In der Human Resources-App in Teams gibt es die folgenden Probleme mit den Einga
 | Abgang | Problemumgehung oder Erklärung |
 | --- | --- |
 | Bei Zoomen auf 400 % auf dem Desktop werden einige der Aktionsschaltflächen ausgeblendet. | Sie sollten eine Bildschirmlupe verwenden, bis wir diese Zoomstufe unterstützen können. |
-| Auf der Registerkarte **Arbeitsfreie Zeit** gibt das Voiceover eine Schaltfläche „Aktion“ an, wenn die Kopfzeile für das Raster für arbeitsfreie Zeit vorliest. | Die Kopfzeile und die Elemente im Raster sind nach Jahr gruppiert und können ausgeblendet werden. Das Voiceover interpretiert dies als umsetzbares Element, obwohl dies nicht der Fall ist. |
+| Auf der Registerkarte **Arbeitsfreie Zeit** gibt das Voiceover eine Schaltfläche „Aktion“ an, wenn es die Kopfzeile für das Raster für arbeitsfreie Zeit vorliest. | Die Kopfzeile und die Elemente im Raster sind nach Jahr gruppiert und können ausgeblendet werden. Das Voiceover interpretiert diese Anzeige als umsetzbares Element, obwohl dies nicht der Fall ist. |
 | In der Registerkarte **Arbeitsfreie Zeit** gibt es eine zusätzliche Wischgeste, wenn Sie zum **Ursachencode** in einem neuen Antrag navigieren. | Es gibt kein verstecktes Steuerelement, zu dem die Wischnavigation gelangen möchte. |
 | Wenn Sie in der Registerkarte **Arbeitsfreie Zeit** wischen, während der Kalender geöffnet ist, befinden Sie sich außerhalb des Steuerelements, anstatt in einem neuen Antrag oder beim Bearbeiten eines Antrags ganz oben. | Wenn Sie **Zu heute gehen** erreichen, betrachten Sie dies als Ende des Steuerelements und wischen Sie in die entgegengesetzte Richtung, um wieder nach oben zu gelangen. |
 | In der Registerkarte **Chat** springt der Fokus wieder nach oben, wenn Sie ein Datum eingeben, während Sie das Hilfsmittel oder die Tastaturnavigation verwenden. | Tippen Sie, bis Sie Ihren Eingabebereich wieder erreichen. |
@@ -223,7 +230,7 @@ Wechseln Sie zum [Microsoft Teams Admin Center](https://admin.teams.microsoft.co
 
 ### <a name="microsoft-teams-azure-event-grid-and-azure-cosmos-db"></a>Microsoft Teams, Azure Event Grid und Azure Cosmos DB
 
-Bei Verwendung der Dynamics 365 Human Resources-App in Microsoft Teams fließen möglicherweise bestimmte Kundendaten außerhalb der geografischen Region, in der der Human Resources-Dienst Ihres Mandanten bereitgestellt wird.
+Bei Verwendung der Dynamics 365 Human Resources-App in Microsoft Teams fließen möglicherweise bestimmte Kundendaten außerhalb der geografischen Region, in welcher der Human Resources-Dienst Ihres Mandanten bereitgestellt wird.
 
 Dynamics 365 Human Resources überträgt die Urlaubsantrags- und Workflow-Aufgabendetails des Mitarbeiters an Microsoft Azure Event Grid und Microsoft Teams. Diese Daten können bis zu 24 Stunden in Microsoft Azure Event Grid gespeichert werden und werden in den USA verarbeitet, werden während des Transports und als Daten in Ruhe verschlüsselt und werden von Microsoft oder seinen untergeordneten verarbeitenden Betrieben nicht für Schulungen oder Serviceverbesserungen verwendet. Um zu verstehen, wo Ihre Daten in Teams gespeichert sind, lesen Sie bitte: [Speicherort von Daten in Microsoft Teams](/microsoftteams/location-of-data-in-teams?preserve-view=true&view=o365-worldwide).
 

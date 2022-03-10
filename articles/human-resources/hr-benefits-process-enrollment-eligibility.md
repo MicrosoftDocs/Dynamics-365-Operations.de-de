@@ -1,33 +1,35 @@
 ---
-title: Registrierungsberechtigung verarbeiten
-description: In diesem Artikel wird erläutert, wie der Prozess der Registrierungsberechtigung ausgeführt wird.
-author: andreabichsel
-ms.date: 04/06/2020
+title: Vergütungsberechtigung verarbeiten
+description: Dieses Thema erklärt, wie Sie den Anmeldeberechtigungsprozess ausführen.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f9b1febe2690fab17586033994b10ebf260630af
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: e8997cf24bf24097e46a05acffef8b3839056c57
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805705"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067628"
 ---
-# <a name="process-enrollment-eligibility"></a>Registrierungsberechtigung verarbeiten
+# <a name="process-enrollment-eligibility"></a>Vergütungsberechtigung verarbeiten
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In diesem Artikel wird erläutert, wie der Prozess der Registrierungsberechtigung ausgeführt wird.
+Dieses Thema erklärt, wie Sie den Anmeldeberechtigungsprozess ausführen.
 
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Bearbeitung** die Option **Verarbeitung von Registrierungsberechtigung**.
 
@@ -50,15 +52,15 @@ In diesem Artikel wird erläutert, wie der Prozess der Registrierungsberechtigun
 
    4. Wählen Sie **OK**. Der Prozess wird mit den von Ihnen festgelegten Parametern ausgeführt.
 
-4. Wählen Sie **OK**.
+4. Wählen Sie **OK** aus.
 
 ## <a name="view-process-results"></a>Anzeigen von Prozessergebnissen
 
-In diesem Artikel wird erläutert, wie die Berechtigung der Prozessergebnisse angezeigt wird.
+Dieses Thema erklärt, wie Sie die Ergebnisse des Berechtigungsprozesses anzeigen können.
 
 1.  Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Prozess** die Option **Prozessergebnisse**.
 
-2.  In dem Formular **Prozessergebnisse** sind die folgenden Felder angegeben:
+2.  Auf der Seite **Prozessergebnisse** werden die folgenden Felder angegeben:
 
    | Feld | Beschreibung |
    | --- | --- |

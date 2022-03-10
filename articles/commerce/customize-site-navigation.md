@@ -1,12 +1,10 @@
 ---
 title: Anpassen der Sitenavigation
-description: In diesem Thema wird beschrieben, wie Sie eine benutzerdefinierte Online-Navigationshierarchie erstellen, um die Produkte für das Durchsuchen auf Ihrer Microsoft Dynamics 365 Commerce Site zu organisieren.
+description: In diesem Thema wird beschrieben, wie Sie eine benutzerdefinierte Online-Navigationshierarchie erstellen, um die Produkte für das Durchsuchen auf Ihrer Microsoft Dynamics 365 Commerce-Site zu organisieren.
 author: bicyclingfool
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2d45f116acc19130e09108a246d276bb4b62a1e6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8af68fff17f2f92356ade356da0e75867ed54950d744c6cbe730ad8db4ac3975
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4972906"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755881"
 ---
-# <a name="customize-site-navigation"></a>Anpassen der Sitenavigation
-
+# <a name="customize-site-navigation"></a>Navigation auf der Website anpassen
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie eine benutzerdefinierte Online-Navigationshierarchie erstellen, um die Produkte für das Durchsuchen auf Ihrer Microsoft Dynamics 365 Commerce Site zu organisieren.
-
-## <a name="overview"></a>Übersicht
+In diesem Thema wird beschrieben, wie Sie eine benutzerdefinierte Online-Navigationshierarchie erstellen, um die Produkte für das Durchsuchen auf Ihrer Microsoft Dynamics 365 Commerce-Site zu organisieren.
 
 Online-Schaufenster ermöglichen es Debitoren, Produkte zu entdecken und zu suchen, indem sie durch Produktkategorien navigieren. Diese Funktion wird normalerweise von den Registerkarten am oberen Seitenrand oder auf einer Navigationsleiste links bereitgestellt. In Dynamics 365 Commerce können Sie die hierarchische Struktur der Kategorienavigation und der Produkte erstellen und verwalten, die in den unterschiedlichen Kategorien enthalten sind.
 
@@ -109,3 +104,6 @@ Um benutzerdefinierte Navigationsoptionen Ihrem Navigationsmenü hinzuzufügen, 
 [Erstellen einer Seiten-URL](create-page-url.md)
 
 [Arbeiten mit Veröffentlichungsgruppen](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,6 @@
 title: Bereinigung der EB-Migration
 description: In diesem Thema wird erläutert, wie Sie die EB-Migrationsbereinigungsfunktion verwenden können, um Probleme mit EB-Vorlagen zu beheben.
 author: NickSelin
-manager: AnnBe
 ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: b09afc30c401e2dccfc4114261dc5e713c8c470c
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: d437bed9b9873f82bcd047e85245bd2a8c66fb3572c06660f29fc19f66aebae1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5565514"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723140"
 ---
 # <a name="er-migration-cleanup"></a>Bereinigung der EB-Migration 
 
@@ -31,11 +30,11 @@ Wenn Sie Ihre Finance-Instanzen verwalten, können Sie entscheiden, Ihre aktuell
 
 Wenn Sie versuchen, ein EB-Format auszuführen, das eine Vorlage zum Generieren von Geschäftsdokumenten verwendet, tritt eine Ausnahme auf, und Sie erhalten eine Benachrichtigung, dass die Vorlage fehlt. Sie erhalten auch eine Anleitung dazu, wie Sie die EB-Migrationsbereinungsoption verwenden, um die EB-Formatkonfiguration, die die Vorlage enthält, zu löschen und dann erneut zu importieren.
 
-[![Ausführen eines EB-Formats](./media/er-migration-cleanup-run.png)](./media/er-migration-cleanup-run.png)
+[![Ausführen eines EB-Formats.](./media/er-migration-cleanup-run.png)](./media/er-migration-cleanup-run.png)
 
 Sie erhalten eine ähnliche Fehlermeldung, wenn Sie zur Seite **Konfigurationen** (**Organisationsverwaltung** \> **Elektronische Berichterstellung** \> **Konfigurationen**) navigieren und in der Konfigurationsstruktur versuchen, eine EB-Formatkonfiguration zu löschen, die eine Vorlage verwendet.
 
-[![Löschen eines EB-Formats](./media/er-migration-cleanup-delete.png)](./media/er-migration-cleanup-delete.png)
+[![Löschen eines EB-Formats.](./media/er-migration-cleanup-delete.png)](./media/er-migration-cleanup-delete.png)
 
 Führen Sie die folgenden Schritte aus, um Probleme mit EB-Vorlagen zu beheben, auf die Sie nicht zugreifen können.
 
@@ -51,7 +50,7 @@ Führen Sie die folgenden Schritte aus, um Probleme mit EB-Vorlagen zu beheben, 
 >
 > Wenn Sie die Option **Migrationsbereinigung** verwenden, um eine EB-Formatkonfiguration zu löschen, wenn die bevorzugte Vorlage im Blob-Speicher verfügbar ist, können Sie zur zugehörige Konfigurationsartefakte in der Anwendungsdatenbank löschen. Die physische Datei der Vorlage im Blob-Speicher bleibt erhalten. Das Überschreiben von Dateien im Blob-Speicher ist nicht mehr zulässig. Weitere Informationen finden Sie unter [KB4557217](https://fix.lcs.dynamics.com/Issue/Details?kb=4557217). Darüber hinaus können Sie die mithilfe der Migrationsbereinigung in dieser Umgebung gelöschten Konfigurationen nicht mehr erneut importieren. Um dieses Problem zu beheben, müssen Sie die entsprechende Datei im Blob-Speicher suchen und manuell löschen.
 
-[![Importieren eines EB-Formats](./media/er-migration-cleanup-import.png)](./media/er-migration-cleanup-import.png)
+[![Importieren eines EB-Formats.](./media/er-migration-cleanup-import.png)](./media/er-migration-cleanup-import.png)
 
 Ein ähnliches Problem kann auftreten, wenn Sie Ihre Anwendungsinstanz an einen anderen Speicherort migrieren, der mehrmals als Migrationsziel verwendet wurde und für den der Blob-Speicher bereits EB-Vorlagendateien enthält.
 

@@ -2,26 +2,23 @@
 title: Schwellenwert für Zonenwiederbeschaffung
 description: Die zonenbasierte Wiederbeschaffung verwendet eine minimale/maximale (min/max) Wiederbeschaffungsstrategie, bewertet jedoch ganze Lagerortzonen anstelle nur einzelner Lagerplätze. Daher können Lagerverwalter schneller erkennen, wann in einer Kommissionierzone zusätzlicher Bestand erforderlich ist.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates, WHSLocDirHint, WHSLocDirTable, WHSRequestType
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6f4ddd03ec16ac43b007b904eb688563735e0941
-ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: f3e94cc79f0daac9107f9876ac8414d2c4cff366
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4654171"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568998"
 ---
 # <a name="zone-threshold-replenishment"></a>Schwellenwert für Zonenwiederbeschaffung
 
@@ -344,3 +341,6 @@ Hier sind einige Hinweise und Tipps zum Arbeiten mit der Funktion:
 
 - Wenn Sie dynamische Lagerplätze verwenden, werden Wiederbeschaffungsarbeiten entweder für den ersten verfügbaren Lagerplatz oder für einen Lagerplatz erstellt, der bereits Bestand enthält, wenn die Lagerplatzrichtlinienaktivität für die Verwendung der Strategie **Konsolidieren** eingerichtet ist.
 - Wenn Sie feste Lagerplätze anstelle von Zonen verwenden, sollten Sie die [Min./Max.-Standardwiederbeschaffung](tasks/set-up-min-max-replenishment-process.md) verwenden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

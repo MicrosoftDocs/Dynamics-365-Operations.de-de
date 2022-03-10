@@ -1,46 +1,44 @@
 ---
-title: Budgetierung – Startseite
+title: Startseite der Budgetierung
 description: Dieses Thema enthält eine Übersicht über die Budgetierungsfunktionskomponenten, die Budgetierungstools und die Berichtsfunktionen in Microsoft Dynamics 365 Finance.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 08/09/2017
-ms.topic: index-page
+author: panolte
+ms.date: 04/29/2021
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanningWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
-ms.custom: 106043
+ms.custom:
+- "106043"
+- intro-internal
 ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ms.search.region: Global
-ms.author: roschlom
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a910aa7f54905f305ed69e9dd9eea0909e5558d
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 6ad0d055702a3801bf9fe9ac3159eba7c297b6f0
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528544"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983951"
 ---
-# <a name="budgeting-home-page"></a>Budgetierung – Startseite
+# <a name="budgeting-home-page"></a>Startseite der Budgetierung
 
 [!include [banner](../includes/banner.md)]
 
 Dieses Thema enthält eine Übersicht über die Budgetierungsfunktionskomponenten, die Budgetierungstools und die Berichtsfunktionen. 
 
-<a name="components-of-budgeting-functionality"></a>Budgetfunktionskomponenten
--------------------------------------
+## <a name="components-of-budgeting-functionality"></a>Budgetfunktionskomponenten
 
 Der Ressourcenplanungszyklus für ein Unternehmen besteht normalerweise aus folgenden Aktivitäten: Planung, Budgetierung und Prognose.
 
-[![Budgetfunktionskomponenten](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
+[![Budgetfunktionskomponenten.](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
 
 Der Prozess sowohl für die langfristige strategische Planung als auch für die Jahresbudgetplanung werden von einem Budgetplandokument unterstützt. Budgetplandokumente sind eng in Microsoft Excel integriert. Benutzer können unbegrenzt monetäre und quantitative Szenarien konfigurieren sowie eine Budgetplanungs-Organisationshierarchie anlegen, um die Budgetplanungsmethoden Top-Down und Bottom-Up zu unterstützen. Nach dem Einrichten und Genehmigen eines Budgets in der Anwendung konvertieren Sie den Budgetplan in einen Budgetregistereintrag. Budgetregistereinträge enthalten Tools zur Verwaltung des Budgets und für die Nachverfolgung von Beträgen über Budgetcodes. Mit Budgetregistereinträgen können Sie ursprüngliche Budgets überarbeiten, Umbuchungen tätigen und Budgetbeträge vom Vorjahr übertragen. Auf Grundlage eines eingerichteten Budgets kann ein Unternehmen Budgetsteuerung aktivieren. Das Maß an Kontrolle hängt von der Kultur einer Organisation und vom Maturitätsgrad der Organisation ab. Organisationen mit einem niedrigen Reifegrad möchten das Budget möglicherweise nicht verändern und sind eher reaktiv als proaktiv, falls ein Budget nicht den Erwartungen entspricht. Andere Organisationen aktivieren möglicherweise Budgetsteuerungsrichtlinien, die Benutzer am Einkauf hindern, wenn keine Budgetmittel verfügbar sind.
 
-Schließlich etablieren sehr erfahrene Organisationen möglicherweise eine Organisationskultur, in der die Mitarbeiter über organisatorische Ziele informiert sind und versuchen, diese Ziele mittels Richtlinien wie z. B. „Ziehen Sie eine Online-Besprechung einer Dienstreise vor“ zu erreichen. Die Anwendung beinhaltet ein Budgetsteuerungsframework, mit dem das Unternehmensmanagement entweder strikte Kontrolle (wodurch Buchungen verhindert werden, die über das Budget hinausgehen) oder weniger strikte Kontrolle (der Benutzer wird gewarnt, wenn die verfügbaren Budgetmittel überschritten werden, kann jedoch selbst entscheiden, ob er fortfahren möchte) wählen kann. Schließlich können Sie rollende Planungen verwenden. Eine rollende Planung ist ein regelmäßiger Vergleich des Budgets mit Istwerten und wird verwendet, um zu ermitteln, inwieweit das Unternehmen im Rahmen des Budgets agiert. Eine rollende Planung wird auch verwendet, um Trends zu erkennen. In Finance and Operations werden rollende Planungen durch ein Budgetplandokument als Erstplanungsaktivitäten unterstützt. Rollende Planungen können parallel zur Planung des bevorstehenden Budgetzyklus ausgeführt werden.
+Schließlich etablieren sehr erfahrene Organisationen möglicherweise eine Organisationskultur, in der die Mitarbeiter über organisatorische Ziele informiert sind und versuchen, diese Ziele mittels Richtlinien wie z. B. „Ziehen Sie eine Online-Besprechung einer Dienstreise vor“ zu erreichen. Die Anwendung beinhaltet ein Budgetsteuerungsframework, mit dem das Unternehmensmanagement entweder strikte Kontrolle (wodurch Buchungen verhindert werden, die über das Budget hinausgehen) oder weniger strikte Kontrolle (der Benutzer wird gewarnt, wenn die verfügbaren Budgetmittel überschritten werden, kann jedoch selbst entscheiden, ob er fortfahren möchte) wählen kann. Schließlich können Sie rollende Planungen verwenden. Eine rollende Planung ist ein regelmäßiger Vergleich des Budgets mit Istwerten und wird verwendet, um zu definieren, inwieweit das Unternehmen im Rahmen des Budgets agiert. Eine rollende Planung wird auch verwendet, um Trends zu erkennen. In Finance and Operations werden rollende Planungen durch ein Budgetplandokument als Erstplanungsaktivitäten unterstützt. Rollende Planungen können parallel zur Planung des bevorstehenden Budgetzyklus ausgeführt werden.
 
 -   [Budgetierungsüberblick](basic-budgeting-overview-configuration.md)
 -   [Budgetsteuerung – Übersicht](budget-control-overview-configuration.md)
@@ -50,7 +48,7 @@ Schließlich etablieren sehr erfahrene Organisationen möglicherweise eine Organ
 -   [Budgetplanungsvorlagen für Excel](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools"></a>Budgetierungstools
-[![Budgetierungstools](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
+[![Budgetierungstools.](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
 
 Es sind zusätzliche Planungs- und Budgetierungsfunktionalitäten verfügbar und in Sachkontenbudgets integriert.
 
@@ -71,3 +69,6 @@ Sie können beispielsweise definieren, wer die Budgetierung vornimmt, was budget
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Beispiele und Logik für Inventarfäligkeitsberichte
 description: In diesem Thema werden einige Beispiele vorgestellt, die zeigen, wie die Ergebnisse eines Inventaralterungsberichts interpretiert werden.
-author: RichardLuan
-manager: tfehr
+author: AndersGirke
 ms.date: 5/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: riluan
+ms.author: aevengir
 ms.search.validFrom: 2020-5-29
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b3822cf4c26d7ef9cd0d062d57fa909140d7e258
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 59c1740f6e07be08ad9379d4ccb6aeca29220d557aceb38bf6faef946e16fee7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4983924"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752777"
 ---
 # <a name="inventory-aging-report-examples-and-logic"></a>Beispiele und Logik für Inventarfäligkeitsberichte
 
@@ -44,7 +42,7 @@ Das Beispielsystem enthält die folgenden Einstellungen für die Speicherabmessu
 | Name      | Aktiv | Physischer Bestand | Wertmäßiger Bestand |
 |-----------|--------|--------------------|---------------------|
 | Site      | Ja    | Ja                | Ja                 |
-| Lagerort | Ja    | Ja                | Nr.                  |
+| Lagerort | Ja    | Ja                | Nein                  |
 
 ### <a name="inventory-model"></a>Lagermodell
 
@@ -54,7 +52,7 @@ Für das Beispielsystem lautet das Bestandsmodell für die freigegebenen Produkt
 
 Das Beispielsystem enthält die folgenden Inventurtransaktionen für ein freigegebenes Produkt mit der Artikelnummer *1000*.
 
-| Referenz      | Site | Lagerort | Zugang   | Abgang | Physisches Datum | Finanzdatum | Leistung | Betrag KORE | Phys. Einstandsbetrag |
+| Referenz      | Site | Lagerort | Zugang   | Abgang | Physisches Datum | Finanzdatum | Menge | Betrag KORE | Phys. Einstandsbetrag |
 |----------------|------|-----------|-----------|-------|---------------|----------------|----------|-------------|----------------------|
 | Bestellung | 1    | 11        | Eingekauft |       | 15. März      | 15. März       | 10       | 1.000       | 1.000                |
 | Bestellung | 2    | 21        | Eingekauft |       | 15. März      | 15. März       | 10       | 2,000       | 2,000                |
@@ -364,3 +362,6 @@ Der neue Bericht sieht ähnlich aus wie das folgende Beispiel.
 </tr>
 </tfoot>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

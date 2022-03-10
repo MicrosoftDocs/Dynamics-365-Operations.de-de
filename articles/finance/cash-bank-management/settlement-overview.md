@@ -1,9 +1,9 @@
 ---
 title: Übersicht über Ausgleiche
 description: Dieses Thema enthält allgemeine Informationen zum Ausgleichsprozess. Es beschreibt, welche Transaktionstypen ausgeglichen werden können und wann und wie diese ausgeglichen werden. Es beschreibt auch die Ergebnisse des Ausgleichsprozesses.
-author: kweekley
-ms.date: 04/10/2020
-ms.topic: article
+author: panolte
+ms.date: 07/30/2021
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
@@ -17,16 +17,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 30a96b377d70c74a29e9e90699ccb077c727b20758378b5336660c6c056c6022
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 57f2b209a852bb9513218fab3df118c7d7a2a1e7
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755689"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986382"
 ---
 # <a name="settlement-overview"></a>Übersicht über Ausgleiche
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 Dieses Thema enthält allgemeine Informationen zum Ausgleichsprozess. Es beschreibt, welche Transaktionstypen ausgeglichen werden können und wann und wie diese ausgeglichen werden. Es beschreibt auch die Ergebnisse des Ausgleichsprozesses.
 
@@ -74,9 +76,25 @@ Ausgleiche können auch Buchungen generieren. Beispielsweise erzeugt der Ausglei
 
 Wenn Sie versuchen, eine Transaktion auszugleichen, wird möglicherweise ein Symbol angezeigt, das angibt, dass die Transaktion an einem anderen Ort markiert ist. In diesem Fall können Sie die Transaktion auf der Seite **Transaktionen ausgleichen** auswählen, und dann **Abfrage \> Ausgleich aus dem Ausgleichsfenster** auswählen. In der Ansicht für diese Abfrage werden Erfassungen, Aufträge, Rechnungen, Zahlungsvorschläge und Kundenstandorte angezeigt, die möglicherweise den Ausgleich der Transaktion verhindern. Um das Problem zu beheben, können Sie den Link auswählen, um direkt von der Abfrage zum gesperrten Standort zu gelangen. Anschließend können Sie das Dokument mit den Anpassungen aktualisieren, die für den Ausgleich erforderlich sind. Sie können auch den Indikator **Markiert** zur Identifizierung anderer Dokumente verwenden, die am selben Sperrstandort enthalten sind.
 
+## <a name="resolve-issues-with-transactions-that-cant-be-settled"></a>Beheben von Problemen mit Transaktionen, die nicht abgerechnet werden können
+
+Manchmal können Sie Transaktionen nicht abrechnen, weil eine andere Aktivität den Beleg gerade verarbeitet. Wenn Sie versuchen, die Transaktionen abzurechnen, tritt ein Fehler auf, weil diese Transaktionen verwendet werden. Um dieses Problem zu beheben, können Sie die Seite **Details zu markierten Transaktionen** verwenden, um Transaktionen zu finden, die für die Abrechnung markiert sind, und alle anderen Prozesse zu identifizieren, die auf sie zugreifen.
+
+Transaktionen werden zur Abrechnung markiert, wenn entweder Kreditor-Rechnungen bezahlt werden oder wenn Kunden ihre offenen Rechnungen bezahlen. Gelegentlich kann es vorkommen, dass diese Rechnungen bereits für die Abrechnung markiert sind. Daher können Benutzer sie nicht zur Zahlung markieren. Die Rechnungen könnten durch ein anderes Zahlungsausgangs Buch.-Blatt des Kunden, einen Verkaufsauftrag, ein Zahlungsausgangs Buch des Kreditors oder eine Einkaufsrechnung in der aktuellen juristischen Entität oder einer anderen juristischen Entität markiert sein.
+
+Wenn eine Transaktion für die Abrechnung gesperrt ist, wenn Sie eine Kundenzahlung erfassen, öffnen Sie die Seite **Details zur vom Debitor markierten Transaktion** (**Debitoren \> Periodische Aufgaben \> Details zur vom Debitor markierten Transaktion**). Um schnell zu erkennen, wo eine Transaktion gesperrt ist, können Sie einen der folgenden Auswahlparameter festlegen: **Kundenkonto**, **Gutschein**, **Datum**, oder **Rechnung**. Wenn Sie keine Auswahlparameter festlegen, werden alle gesperrten Belege der aktuellen Firma oder einer anderen Firma, die Sie auswählen, angezeigt. Nachdem die für die Abrechnung gesperrte Transaktion identifiziert wurde, können Sie sie auswählen und dann **Ausgewählte Transaktionen entmarkieren** wählen. Die ausgewählte Transaktion wird dann aus allen Erfassungen entfernt, die sie enthalten. Der Beleg wird jedoch nicht aus dem anderen Lagerort entfernt. Nur die Markierungsinformationen werden aus diesem Journal entfernt.
+
+Wenn eine Transaktion für die Abrechnung gesperrt ist, während Sie eine Kreditor-Zahlung eingeben, öffnen Sie die Seite **Kreditor markierte Transaktion Details** (**Kreditoren \> Periodische Aufgaben \> Kreditor markierte Transaktion Details**). Um schnell zu erkennen, wo eine Transaktion gesperrt ist, können Sie einen der folgenden Auswahlparameter festlegen: **Kreditorenkonto**, **Beleg**, **Datum**, oder **Rechnung**. Wenn Sie keine Auswahlparameter festlegen, werden alle gesperrten Belege der aktuellen Firma oder einer anderen Firma, die Sie auswählen, angezeigt. Nachdem die Transaktion identifiziert wurde, können Sie sie markieren und dann **Markierung ausgewählter Transaktionen aufheben** wählen, um das Blockierungsproblem zu beheben. Die markierte Transaktion wird dann aus allen anderen Erfassungen, in denen sie markiert ist, entfernt. Der Beleg wird jedoch nicht aus dem anderen Lagerort entfernt. Nur die Markierungsinformationen werden aus diesem Journal entfernt.
+
+Um alle gesperrten Belege zu identifizieren, öffnen Sie die Seite **Alle markierten Transaktionsdetails** (**Debitoren \> Periodische Aufgaben \> Alle markierten Transaktionsdetails** oder **Kreditoren \> Periodische Aufgaben \> Alle markierten Transaktionsdetails**). Um schnell zu erkennen, wo eine Transaktion gesperrt ist, können Sie einen der folgenden Auswahlparameter festlegen: **Debitorenkonto**, **Kreditorenkonto**, **Beleg**, **Datum**, oder **Rechnung**. Wenn Sie keine Auswahlparameter festlegen, werden alle gesperrten Belege der aktuellen Firma oder einer anderen Firma, die Sie auswählen, angezeigt. Nachdem die Transaktion identifiziert wurde, können Sie sie markieren und dann **Markierung ausgewählter Transaktionen aufheben** wählen, um das Blockierungsproblem zu beheben. Die markierte Transaktion wird dann aus allen anderen Erfassungen, in denen sie markiert ist, entfernt. Der Beleg wird jedoch nicht aus dem anderen Lagerort entfernt. Nur die Markierungsinformationen werden aus diesem Journal entfernt.
+
+Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit der Einstellung **Funktionsverwaltung** den Status der Funktion überprüfen und ggf. aktivieren. Dort wird die Funktion folgendermaßen aufgelistet:
+
+- **Modul:** Kassen- und Bankverwaltung
+- **Name der Funktion:** Detailformular für markierte Transaktionen
+
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 - [Rest ausgleichen](settle-remainder.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

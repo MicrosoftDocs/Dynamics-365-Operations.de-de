@@ -1,27 +1,24 @@
 ---
 title: Berechtigungen zum Bestellen von Produkten im Auftrag einer anderen Person einrichten
 description: In diesem Thema wird erläutert, wie Sie den Mitarbeitern die Erlaubnis erteilen, Bestellanforderungen im Namen anderer Mitarbeiter zu erstellen.
-author: mkirknel
-manager: tfehr
+author: Henrikan
 ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqAuthorization, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 145d8a0e341857bf238fc934cd668ff12b8505b8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a29b7ebece8009f29f4313b380889635a87473b5
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428751"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577119"
 ---
 # <a name="set-up-permissions-for-ordering-products-on-behalf-of-someone-else"></a>Berechtigungen zum Bestellen von Produkten im Auftrag einer anderen Person einrichten
 
@@ -45,3 +42,6 @@ In diesem Thema wird erläutert, wie Sie den Mitarbeitern die Erlaubnis erteilen
 2. Verwenden Sie den Schnellfilter, um die Arbeitskraft zu suchen, die Sie soeben als anfordernde Person hinzugefügt haben.
 3. Wählen Sie die anfordernde Person aus. Die Antragstellerliste zeigt die Personen an, die die Berechtigung haben, Artikel im Auftrag des Antragstellers zu bestellen, der im linken Bereich ausgewählt ist.  Sie können zusätzliche Antragsteller hier hinzufügen. In dieser Ansicht können Sie der anfordernden Person auch die Berechtigung erteilen, Anforderungen in juristischen Personen und Organisationseinheiten zu erstellen, die nicht die primäre juristische Person oder Organisationseinheit dieser Person sind.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

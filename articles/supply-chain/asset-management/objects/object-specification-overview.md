@@ -1,29 +1,28 @@
 ---
 title: Anlagenattributübersicht
 description: Dieses Thema bietet einen Überblick über Anlagenattribute in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectAttributeOverview
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: 2214
+ms.custom:
+- "2214"
+- intro-internal
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b91e88292acf8e67de924a746b02858664ae9ec6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 98386b6ffe2a5f9c79c0ee1f18073ac13fc3a039
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428837"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986459"
 ---
 # <a name="asset-attribute-overview"></a>Anlagenattributübersicht
 
@@ -40,3 +39,6 @@ Die Seite **Anlagenattributübersicht** zeigt jede Anlage in einer einzelnen Zei
 3. Wählen Sie **OK**. Eine Liste zeigt alle Anlagen an, die den ausgewählten Anlagentyp verwenden. Für jede Anlage werden alle zugehörigen Anlagenattributtypen in derselben Zeile angezeigt.
 
 Die Seite **Anlagenattribut** zeigt jeden Attributtyp, der in der Anlage verwendet wird, in einer eigenen Zeile an. Wählen Sie **Anlagenverwaltung** \> **Abfragen** \> **Anlagen** \> **Anlagenattribut** aus, um diese Seite zu öffnen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Unterstützen parametrisierter Aufrufe von ER-Datenquellen des Typs „Berechnetes Feld“
 description: Dieses Thema enthält Informationen zum Verwenden des Typs „Berechnetes Feld“ für ER-Datenquellen.
 author: NickSelin
-manager: AnnBe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3f21b323ddbf653bf8ca8dd1f879a6bdbddcdefc
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fb09e1ccd4b2be08e43784330adf4092ca25f5a6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681255"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349159"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Unterstützen parametrisierter Aufrufe von ER-Datenquellen des Typs „Berechnetes Feld“
 
@@ -88,7 +86,7 @@ In diesem Beispiel erstellen Sie eine Konfiguration für die Musterfirma Litware
 
     Die Modellzuordnung in dieser Konfiguration implementiert das Basisdatenmodell für alle EB-Formate, für die dieses Modell erstellt und in Finance and Operations ausgeführt werden. Demzufolge wird der Inhalt der **Steuer**- und **GR**-Datenquellen für ER-Formate wie abstrakte Datenquellen bereitgestellt.
 
-    ![Seite „Modellzuordnungsdesigner“ mit Steuer- und GR-Datenquellen](media/er-calculated-field-type-01.png)
+    ![Seite „Modellzuordnungsdesigner“ mit Steuer- und GR-Datenquellen.](media/er-calculated-field-type-01.png)
 
 5.  Schließen Sie die Seite **Modellzuordnungsdesigner**.
 6.  Schließen Sie die Seite **Modellzuordnung**.
@@ -103,21 +101,21 @@ In diesem Beispiel erstellen Sie eine Konfiguration für die Musterfirma Litware
     - Stellen Sie die folgenden Besteuerungsstufen im Steuerauszug dar: „Regulär“, „Reduziert“ und „Keine“.
     - Stellen Sie mehrere Details für jedes Besteuerungsniveau dar, die jeweils eine andere Anzahl von Details auf jeder Stufe aufweisen.
 
-    ![Formatdesignerseite](media/er-calculated-field-type-02.png)
+    ![Formatdesignerseite.](media/er-calculated-field-type-02.png)
 
 4. Wählen Sie **Zuordnung** aus.
 5. Erweitern Sie die Elemente **Modell**, **Daten,** und **Zusammenfassung**. 
 
     Das berechnete Feld **Model.Data.Summary.Level** enthält den Ausdruck, der den Code des Besteuerungsniveaus (**Regulär**, **Reduziert**, **Kein,** oder **Sonstige**) als Textwert für jeden Steuercode zurückgibt, der zur Laufzeit aus der Datenquelle **Model.Data.Summary** abgerufen werden kann.
 
-    ![Seite „Formatdesigner“ mit Details des Datenmodells „Modell zum Lernern parametrisierter Aufrufe“](media/er-calculated-field-type-03.png)
+    ![Seite „Formatdesigner“ mit Details des Datenmodells „Modell zum Lernen parametrisierter Aufrufe“.](media/er-calculated-field-type-03.png)
 
 6. Erweitern Sie das Element **Modell**.**Data2**.
 7. Erweitern Sie das Element **Modell**.**Data2.Summary2**.
    
     Die Datenquelle **Modell**.**Data2.Summary2** ist zum Gruppieren der Transaktionsdetails der Datenquelle **Model.Data.Summary** nach Besteuerungsniveau (die vom berechneten Feld **Model.Data.Summary.Level** zurückgegeben werden) und zum Berechnen der Aggregationen konfiguriert.
 
-    ![Die Seite „Formatdesigner“ mit Details der Datenquelle „Model.Data2.Summary2“](media/er-calculated-field-type-04.png)
+    ![Die Seite „Formatdesigner“ mit Details der Datenquelle „Model.Data2.Summary2“.](media/er-calculated-field-type-04.png)
 
 8. Überprüfen Sie die berechneten Felder **Model**.**Data2.Level1**, **Model**.**Data2.Level2** und **Model**.**Data2.Level3.** Diese berechneten Felder werden verwendet, um die Datensatzliste **Model**.**Data2.Summary2** zu filtern und nur Datensätze zurückzugeben, die ein bestimmtes Besteuerungsniveau darstellen.
 9. Seite **Format-Designer** schließen.
@@ -157,9 +155,9 @@ Sie können das bereitgestellte Format verbessern, indem Sie ein berechnetes Fel
 
     Für ein einzelnes berechnetes Feld können maximal 8 Parameter angegeben werden.
 
-    ![Liste der Parameterdatenquellen](media/er-calculated-field-type-05.png)
+    ![Liste der Parameterdatenquellen.](media/er-calculated-field-type-05.png)
 
-5. Wählen Sie **OK**.
+5. Wählen Sie **OK** aus.
 
 Durch das Hinzufügen dieses Parameters legen Sie die Bedingung fest, die vorliegen muss, um dieses berechnete Feld aufzurufen. Wenn Sie dieses berechnete Feld aufrufen, müssen Sie das Argument des Paramaters **Besteuerungsniveau** als Wert mit dem Format **Zeichenfolge** angeben.
 
@@ -167,7 +165,7 @@ Durch das Hinzufügen dieses Parameters legen Sie die Bedingung fest, die vorlie
 
    Der konfigurierte Parameter ist in der Liste der Datenquellen für dieses berechnete Feld verfügbar. Sie können dem konfigurierten Ausdruck den Parameter hinzuzufügen, indem Sie **Datenquelle hinzufügen** auswählen.
 
-   ![Datenquellenfelder](media/er-calculated-field-type-06.png)
+   ![Datenquellenfelder.](media/er-calculated-field-type-06.png)
 
 ### <a name="define-an-expression-for-adding-a-calculated-field"></a>Definieren eines Ausdrucks für das Hinzufügen eines berechneten Felds
 
@@ -181,9 +179,9 @@ Durch das Hinzufügen dieses Parameters legen Sie die Bedingung fest, die vorlie
 
     **WHERE(\@.Summary2, \@.Summary2.grouped.Level = 'Taxation Level')**
 
-5. Wählen Sie **Speichern**.
+5. Wählen Sie **Speichern** aus.
 
-    ![Informationen zu Datenquellenfeldern](media/er-calculated-field-type-07.png)
+    ![Informationen zu Datenquellenfeldern.](media/er-calculated-field-type-07.png)
 
 6. Schließen Sie die Seite **Formeldesigner**.
 
@@ -193,7 +191,7 @@ Durch das Hinzufügen dieses Parameters legen Sie die Bedingung fest, die vorlie
 
 Für das konfigurierte, parametrisierte berechnete Feld **Ebenen** auf der Seite **Formatdesigner** ist ein Argument vom Typ **Zeichenfolge** erforderlich.
 
-![Erweiterte Liste der Ebenen des berechneten Felds](media/er-calculated-field-type-08.png)
+![Erweiterte Liste der Ebenen des berechneten Felds.](media/er-calculated-field-type-08.png)
 
 ### <a name="use-the-configured-calculated-field-for-binding-format-elements"></a>Verwenden Sie das berechnete Feld für konfigurierte verbindliche Formatelemente
 
@@ -222,7 +220,7 @@ Wiederkehrende Aufrufe von parametrisierten berechneten Feldern werden nicht unt
 
 Sie können **Formel bearbeiten** auswählen und das standardmäßig übernommene Argument des parametrisierten berechneten Felds in der ausgewählten Bindung ändern. Wenn dieses Argument nicht vorhanden ist, kann dies zu Fehlern während der Laufzeit kommen. Benutzer werden über solch eine Situation informiert, wenn das aktuelle Format überprüft wird.
 
-![Benachrichtigung zu Überprüfungswarnungen](media/er-calculated-field-type-10.png)
+![Benachrichtigung zu Überprüfungswarnungen.](media/er-calculated-field-type-10.png)
 
 ## <a name="configure-a-parameterized-calculated-field-to-return-a-record"></a>Konfigurieren eines parametrisierten berechneten Felds für die Rückgabe eines Datensatzes
 Wenn ein parametrisiertes berechnetes Feld einen Datensatz zurückgibt, müssen Sie die Bindung einzelner Felder dieses Datensatzes zu Formatelementen unterstützen. In solchen Fällen ist keine übergeordnete Bindung vorhanden, die den Wert eines Arguments zum Aufrufen eines parametrisierten berechneten Felds enthält. Dieser Wert muss in der Bindung des Felds einen einzelnen Datensatz definiert werden.
@@ -274,7 +272,7 @@ Wenn ein parametrisiertes berechnetes Feld einen Datensatz zurückgibt, müssen 
 8. Wählen Sie **Formel bearbeiten** aus.
 9. Ändern Sie den Ausdruck in **Model.Data2.LevelRecord("None").aggregated.Base**.
 
-![Aktualisierter Ausdruck](media/er-calculated-field-type-11.png)
+![Aktualisierter Ausdruck.](media/er-calculated-field-type-11.png)
 
 ## <a name="remove-calculated-fields-that-are-not-used"></a>Entfernen von berechneten Feldern, die nicht verwendet werden
 
@@ -342,3 +340,6 @@ Sie können überprüfte Konfigurationen aus RCS importieren, indem Sie das ER-R
 - [Formeldesigner in der elektronischen Berichterstellung (EB)](general-electronic-reporting-formula-designer.md)
 - [Verbessern Sie die Leistung von EB-Lösungen, indem Sie parametrisierte CALCULATED FIELD-Datenquellen hinzufügen](er-calculated-field-ds-performance.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

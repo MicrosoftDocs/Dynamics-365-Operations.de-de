@@ -1,34 +1,31 @@
 ---
-title: Aktualisiert die zusammengesetzte Bankerfassungs-Entität
-description: Gehen Sie folgendermaßen vor, um das zusätzliche Feld "BankTransactionType" der zusammengesetzten BankJournalEntity hinzuzufügen.
-author: ShylaThompson
-manager: panolte
+title: Die zusammengefasste Entität der Bankerfassung aktualisieren
+description: In diesem Thema werden die erforderlichen Schritte zum Hinzufügen des zusätzlichen Felds „BankTransactionType“ zum zusammengesetzten BankJournalEntity beschrieben.
+author: panolte
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 221654
 ms.assetid: adb8146b-eb21-4be2-a338-a5b299fcc9a0
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ec196600a54a2aed4565cf422dc386d6646ff524
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0d4334e9aa333aad116f0a0291d9175268661f11
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443439"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595433"
 ---
-# <a name="update-the-bank-journal-composite-entity"></a>Aktualisiert die zusammengesetzte Bankerfassungs-Entität
+# <a name="update-the-bank-journal-composite-entity"></a>Die zusammengefasste Entität der Bankerfassung aktualisieren
 
 [!include [banner](../includes/banner.md)]
 
-Gehen Sie folgendermaßen vor, um das zusätzliche Feld "BankTransactionType" der zusammengesetzten BankJournalEntity hinzuzufügen.
+In diesem Thema werden die erforderlichen Schritte zum Hinzufügen des zusätzlichen Felds „BankTransactionType“ zum zusammengesetzten BankJournalEntity beschrieben.
 
 Gehen Sie folgendermaßen vor, um den BankTransactionType-Feld der zusammengesetzten BankJournalEntity hinzuzufügen.
 
@@ -55,3 +52,6 @@ Gehen Sie folgendermaßen vor, um den BankTransactionType-Feld der zusammengeset
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Einrichten von Aktualitäts-, Häufigkeits- und Finanzanalyse (RFM)
 description: In diesem Thema wird erläutert, wie ein Recency-, Häufigkeits- und monetäre (RFM) Analyse Ihrer Debitoren eingerichtet wird.
 author: josaw1
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: MCRRFMDefinition
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 6a5f87d005b41bb7f3910661e67a69e28685acb4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d058401541d37dac55d0a500835ce9c357468656e467951f789207452f798d94
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234436"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765218"
 ---
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Einrichten von Aktualitäts-, Häufigkeits- und Finanzanalyse (RFM)
 
@@ -41,7 +39,7 @@ So verfügt beispielsweise Ihre Organisation ein Bewertungssystem mit einer Skal
 
 - **Aktualitätsbewertung von 5** – Der Kunde hat erst vor kurzem einen Einkauf getätigt.
 - **Häufigkeitsbewertung 3** - Der Kunde erwirbt Produkte von Ihrer Organisation mit mäßiger Häufigkeit.
-- **Geldbetragwertung 5** – Wenn der Kunde einen Einkauf tätigt, gibt er einen beträchtlichen Geldbetrag aus.
+- **Geldbetragwertung 5**: Wenn der Kunde einen Einkauf tätigt, gibt er einen beträchtlichen Geldbetrag aus.
 
 Wenn Ihre Organisation für die Bewertung eine Aggregatzahl verwendet, werden die einzelnen Bewertungen zusammengezählt. Für das gleiche Beispiel hat der Debitor eine Bewertung von 13 (5 + 3 + 5).
 

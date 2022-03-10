@@ -1,25 +1,23 @@
 ---
 title: Automatische Zuteilung von Gebühren
 description: Die Gebührenfunktion in Microsoft Dynamics 365 Supply Chain Management hilft Ihnen dabei, Bestellungen oder Aufträgen automatisch Gebühren zuzuweisen.
-author: dasani-madipalli
-manager: tfehr
-ms.date: 10/01/2020
+author: Henrikan
+ms.date: 09/30/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-10-01
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: eddcf275c14565dfe77fbe7efa676be4a34da686
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 6032539e57961998e7130e9cb6578248aaa2843e
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5244158"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592539"
 ---
 # <a name="automatic-allocation-of-charges"></a>Automatische Zuteilung von Gebühren
 
@@ -28,6 +26,16 @@ ms.locfileid: "5244158"
 Abhängig vom Kunden, mit dem Sie arbeiten, oder dem Artikel, den Sie verkaufen, möchten Sie möglicherweise bestimmte zusätzliche Gebühren erheben. Die *Gebühren*-Funktion in Microsoft Dynamics 365 Supply Chain Management hilft Ihnen dabei, Bestellungen oder Aufträgen automatisch Gebühren zuzuweisen.
 
 Automatische Belastungen werden automatisch angewendet, wenn Sie einen Auftrag oder eine Bestellung erstellen. Sie können automatische Zuschläge für bestimmte Kreditoren, Debitoren oder Artikel oder für Gruppen von Kreditoren, Debitoren oder Artikel definieren. Sie können auch automatische Zuschläge festlegen, die für alle Kreditoren, Debitoren oder Artikel gültig sind.
+
+## <a name="set-up-parameters"></a>Parameter einrichten
+
+Die Seite **Beschaffungs- und Bezugsquellenparameter** enthält einige Einstellungen, die besonders relevant sind, wenn Sie Belastungen automatisch zuweisen möchten. Gehen Sie wie folgt vor, um diese Einrichtung abzuschließen.
+
+1. Gehen Sie zu **Beschaffung und Ursproung\> Einstellungen \> Beschaffungs- und Ursprungsparameter**.
+1. Öffnen Sie die Registerkarte **Preise**.
+1. Nehmen Sie im Inforegister **Preise** die folgenden Einstellungen vor:
+    - **Auto-Belastungen für Kopfzeile finden** – Gibt an, ob für Bestellköpfe automatisch Belastungen verrechnet werden sollen. Legen Sie diese Einstellung auf *Ja* fest, um die automatische Zuweisung von Belastungen zu verwenden.
+    - **Auto-Belastungen für Position finden** – Gibt an, ob für Bestellpositionen automatisch Belastungen verrechnet werden sollen. Legen Sie diese Einstellung auf *Ja* fest, um die automatische Zuweisung von Belastungen zu verwenden.
 
 ## <a name="set-up-charges-codes"></a>Richten Sie einen Belastungscode ein
 
@@ -146,7 +154,7 @@ Führen Sie nach dem Einrichten Ihrer Gebührencodes die folgenden Schritte aus,
     - **Site** und **Lager** – Geben Sie einen Standort und ein Lager an, wenn Gebühren nur für einen bestimmten Standort und ein bestimmtes Lager erhoben werden sollen.
     - **Beibehalten** - Aktivieren Sie dieses Kontrollkästchen , um die Zuschlagsbuchungen nach der Fakturierung beizubehalten, damit der Zuschlag immer angewendet wird, wenn Sie eine neue Rechnung für das ausgewählte Debitorenkonto erstellen.
 
-1. **Nur für Kundenaufträge:** Wenn Sie gestaffelte Gebühren berechnen möchten, lesen Sie [Staffelgebühren für Kundenaufträge](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders) für weitere Information.
+1. **Nur für Kundenaufträge:** Wenn Sie gestaffelte Gebühren berechnen möchten, lesen Sie [Staffelgebühren für Kundenaufträge](/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders) für weitere Information.
 
 ## <a name="allocate-charges-from-the-header-to-a-line"></a>Ordnen Sie einer Zeile Gebühren aus dem Header zu
 

@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4b6169362c9e8cb3a9ace2f300dd9d80aa9cd085
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 606bc23f552b57d0f4e3fdad28d1144cdf43e5d5
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568878"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103537"
 ---
 # <a name="inventory-blocking"></a>Sperrung von Lagerbestand
 
@@ -61,7 +61,7 @@ Im folgenden Beispiel wird ein Qualitätsprüfungsauftrag generiert, wenn ein Li
 
 ## <a name="blocking-items-by-using-inventory-status-blocking"></a>Sperrung von Artikeln mithilfe der Lagerstatussperrung
 
-Sie können angeben, welche Lagerstatus Sperrenstatus sind, indem Sie den Parameter **Sperrung von Lagerbestand** auf der Seite **Lagerstatus** verwenden.  Sie können Lagerstatus nicht als Sperrenstatus für Produktionsaufträge, Aufträge, Umlagerungsaufträge, ausgehende Transaktionen oder Projektintegrationen verwenden. Für ausgehende Arbeit verwenden Sie Artikel, die den Bestandsstatus "verfügbar" aufweisen. Wenn Artikel den Status **Kaputt** haben und der Produktprogrammplan für diese Artikel ausgeführt wird, werden die Artikel als fehlend betrachtet und der Bestand wird automatisch aufgefüllt.
+Sie können angeben, welche Lagerstatus Sperrenstatus sind, indem Sie den Parameter **Sperrung von Lagerbestand** auf der Seite **Lagerstatus** verwenden. Sie können Lagerstatus nicht als Sperrenstatus für Produktionsaufträge, Aufträge, Umlagerungsaufträge, ausgehende Transaktionen oder Projektintegrationen verwenden. Für ausgehende Arbeit verwenden Sie Artikel, die den Bestandsstatus "verfügbar" aufweisen. Wenn Artikel den Status **Kaputt** haben und der Produktprogrammplan für diese Artikel ausgeführt wird, werden die Artikel als fehlend betrachtet und der Bestand wird automatisch aufgefüllt.
 
 ## <a name="take-care-when-blocking-items-that-use-both-inventory-status-blocking-and-quality-order-blocking"></a>Seien Sie vorsichtig, wenn Sie Artikel sperren, die sowohl die Sperrung des Bestands als auch die Sperrung des Qualitätsauftrags verwenden
 
@@ -74,7 +74,7 @@ Sie können einen Qualitätsauftrag erstellen, der mit einem Bestand verbunden i
 
 Wenn **Bestellte Artikel reservieren** aktiviert ist, haben alle Transaktionen zur Bestandssperrung entweder den Status *Reserviert physisch* oder *Reserviert bestellt*.
 
-| Referenz der Bestandstransaktion | Zugang | Abgang | Leistung | Standort | Lagerort | Bestandsstatus | Ziel | Ladungsträger | Kommentar |
+| Referenz der Bestandstransaktion | Zugang | Abgang | Menge | Standort | Lagerort | Bestandsstatus | Ziel | Ladungsträger | Kommentar |
 |---|---|---|---|---|---|---|---|---|---|
 | Bestellung | Eingekauft | | 10 Pcs | 2 | 24 | Sperrung | RECV | receiptLp1 | | 
 | Sperrung von Lagerbestand | | Physisch reserviert | -9 Pcs | 2 | 24 | Sperrung | | | Transaktion, die durch die Bestandssperrung erzeugt wird |
@@ -86,7 +86,7 @@ Wenn **Bestellte Artikel reservieren** aktiviert ist, haben alle Transaktionen z
 
 Wenn **Bestellte Artikel reservieren** deaktiviert ist, können die erwarteten Eingänge nicht reserviert werden, da sie sich im Status *Bestellt* befinden, so dass einige Sperren im Status *Auf Bestellung* verbleiben.
 
-| Referenz für Bestandstransaktionen | Zugang | Abgang | Leistung | Standort | Lagerort | Bestand Status | Ziel | Ladungsträger | Kommentar |
+| Referenz für Bestandstransaktionen | Zugang | Abgang | Menge | Standort | Lagerort | Bestand Status | Ziel | Ladungsträger | Kommentar |
 |---|---|---|---|---|---|---|---|---|---|
 | Bestellung | Eingekauft | | 10 Pcs | 2 | 24 | Sperrung | RECV | receiptLp1 | |
 | Sperrung von Lagerbestand | | Physisch reserviert | -9 Pcs | 2 | 24 | Sperrung | | | Transaktion, die durch die Bestandssperrung erzeugt wird |
@@ -96,13 +96,11 @@ Wenn **Bestellte Artikel reservieren** deaktiviert ist, können die erwarteten E
 
 Beachten Sie den Unterschied im Transaktionsstatus und in den Dimensionen zwischen den beiden Fällen. Aus diesem Grund empfehlen wir, die Option **Bestellte Artikel reservieren** zu aktivieren.
 
-<!-- KFM: (Enable this section when the feature leaves private preview)
+### <a name="disable-expected-receipts-from-quality-orders-that-sample-blocked-inventory-feature"></a>Erwartete Zugänge aus Qualitätsprüfungsaufträgen mit gesperrter Bestandsfunktion deaktivieren
 
-### Disable expected receipts from quality orders that sample blocked inventory feature
+Um die Lagerbuchungen im Fall von Qualitätsprüfungsaufträgen zu vereinfachen, bei denen der Beispielbestand als Folge des Bestandsstatus gesperrt ist, stellt das System eine Funktion bereit, das erwartete Zugänge von solchen Qualitätsprüfungsaufträgen deaktiviert. Da der erwartete Zugang sofort durch die Sperrung des Bestandsstatus gesperrt wird, wird der Bestand aufgrund dieser Änderung nicht gesenkt.
 
-To simplify the inventory transactions in the case of quality orders that sample inventory blocked as a consequence of inventory status, the system provides a feature that disables expected receipts from such quality orders. As the expected receipt is in any case immediately blocked by inventory status blocking, there is no reduction of on-hand inventory because of this change.
-
--->
+Diese Funktion ist standardmäßig deaktiviert. Administratoren können es ein- oder ausschalten, indem sie nach der Funktion *Erwartete Zugänge aus Qualitätsprüfungsaufträgen mit gesperrtem Beispielbestand deaktivieren* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

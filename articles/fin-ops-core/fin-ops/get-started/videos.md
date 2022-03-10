@@ -2,7 +2,7 @@
 title: Videos
 description: Diese Seite listet von Microsoft erstellte „How-to“- und Tech-Talk-Videos zu Finance and Operations-Apps auf, die auf YouTube und anderen Websites verfügbar sind.
 author: sericks007
-ms.date: 04/12/2021
+ms.date: 09/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: fc34f1691447b9c34e1572229f9c545913039626
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: 3fe44a9a7fcef2f22dff3be00ddfadd5b8c59574
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881735"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7487990"
 ---
 # <a name="videos"></a>Videos 
 
@@ -34,7 +34,6 @@ Auf dem [Microsoft Dynamics 365 YouTube-Kanal](https://www.youtube.com/channel/U
 
 ### <a name="data-integration"></a>Datenintegration
 
-- [Integration der Konvertierung eines Interessenten in Bargeld](https://youtu.be/AVV9x5x-XCg)
 - [Arbeitsauftrag synchronisieren zwischen Dynamics 365 for Field Service und Finance and Operations-Apps](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### <a name="data-management"></a>Datenverwaltung

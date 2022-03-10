@@ -2,27 +2,24 @@
 title: Checkoutmoduls
 description: In diesem Thema wird beschrieben, wie Sie ein Auscheckenmodul einer Seite hinzufügen und die erforderlichen Eigenschaften festlegen.
 author: anupamar-ms
-manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 28d58caba71ea98ccf163e756e879587aa254bb3
-ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
+ms.openlocfilehash: 031c70181e0dff9bc81450d2454f21e1dbaf1285d41b38ff6f7df6045923c27c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "4412723"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715505"
 ---
 # <a name="checkout-module"></a>Auschecken-Modul
 
@@ -30,15 +27,13 @@ ms.locfileid: "4412723"
 
 In diesem Thema wird beschrieben, wie Sie ein Auscheckenmodul einer Seite hinzufügen und die erforderlichen Eigenschaften festlegen.
 
-## <a name="overview"></a>Übersicht
-
 Ein Auscheckenmodul ist ein spezieller Container, der alle Module hostet, die erforderlich sind, um einen Auftrag zu erstellen. Der Bericht stellt einen schrittweisen Fluss dar, die ein Kunde verwendet, um die gesamten relevanten Informationen einzugeben, um eine Bestellung abzuschließen. Es erfasst die Versandadresse, die Versandmethode und die Rechnungsinformationen. Es enthält auch eine Bestellübersicht und andere Informationen, die sich auf eine Kundenbestellung beziehen.
 
 Ein Auscheckenmodul rendert Daten basierend auf der Warkenkorb-Kennung Diese Kennung wird als Browsercookie gespeichert. Eine Einkaufskorb-Kennung ist erforderlich, um Informationen im Auscheckenmodul zu rendern, wie Artikel im Auftrag, im Gesamtbetrag und bei den Rabatten. 
 
 Das folgende Bild zeigt ein Beispiel eines Fabrikam-Checkoutmoduls auf einer Checkout-Seite.
 
-![Beispiel eines Checkout-Moduls](./media/Checkout.PNG)
+![Beispiel eines Checkout-Moduls.](./media/Checkout.PNG)
 
 ## <a name="checkout-module-properties"></a>Checkoutmodul-Eigenschaften
 
@@ -57,13 +52,13 @@ Ein Checkout-Modul zeigt eine Bestellübersicht an und bietet die Funktionalitä
 
     Das folgende Bild zeigt ein Beispiel eines Versandadressenmoduls auf einer Checkout-Seite.
 
-    ![Beispiel eines Versandadressmoduls](./media/ecommerce-shippingaddress.PNG)
+    ![Beispiel eines Versandadressmoduls.](./media/ecommerce-shippingaddress.PNG)
 
 - **Lieferoptionen** – Dieses Modul ermöglicht einem Kunden, einen Liefermodus für einen Auftrag auszuwählen. Weitere Informationen zu diesem Modul finden Sie unter [Lieferoptionsmodul](delivery-options-module.md).
 
     Das folgende Bild zeigt ein Beispiel eines Lieferoptionsmoduls auf einer Kassenseite.
  
-    ![Beispiel eines Lieferoptionsmoduls](./media/ecommerce-deliveryoptions.PNG)
+    ![Beispiel eines Lieferoptionsmoduls.](./media/ecommerce-deliveryoptions.PNG)
 
 - **Containerabschnitt Auschecken** – Dieses Modul ist ein Container, der mehrere Module aufnehmen kann, um einen Bereich innerhalb des Auscheckflusses zu erstellen. So können Sie alle zahlungsrelevanten Module innerhalb dieses Containers speichern, damit diese in einem Bereich angezeigt werden. Dieses Modul wirkt sich nur auf das Layout des Flusses aus.
 
@@ -85,7 +80,7 @@ Ein Checkout-Modul zeigt eine Bestellübersicht an und bietet die Funktionalitä
 
     Das folgende Bild zeigt ein Beispiel für die allgemeinen Geschäftsbedingungen auf einer Checkout-Seite.
 
-    ![Beispiel für die allgemeinen Geschäftsbedingungen auf einer Checkout-Seite](./media/ecommerce-checkout-terms.PNG)
+    ![Beispiel für die allgemeinen Geschäftsbedingungen auf einer Checkout-Seite.](./media/ecommerce-checkout-terms.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit-Interaktion
 
@@ -127,3 +122,6 @@ Um ein Auschecken-Modul einer neuen Seite hinzuzufügen und die erforderlichen E
 [Auftragsdetailmodul](order-confirmation-module.md)
 
 [Geschenkkartenmodul](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,26 +2,23 @@
 title: Debitorenzahlungen empfangen
 description: Zahlen Sie Debitorenzahlungen ein.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 07/18/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransCustPaym, CustTableLookup
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1d903f557fbaeb720dd4a34dc1c772be0dcb56eb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 776871aad417d26486ec109f8b0b7f51db32d065d801e51459584c82269f9ac7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443568"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6771775"
 ---
 # <a name="deposit-customer-payments"></a>Debitorenzahlungen empfangen
 
@@ -48,3 +45,6 @@ Zahlen Sie Debitorenzahlungen ein. Für diese Aufgabe wird das Demo-Unternehmen 
 17. Wählen Sie **OK**. Die erste Seite wird verwendet, um den Einzahlungsbeleg zu erstellen.  
 18. Wählen Sie **OK**. Der zweite Schritt ist, den Einzahlungsbeleg zu drucken, aber dieser Schritt ist nicht erforderlich.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

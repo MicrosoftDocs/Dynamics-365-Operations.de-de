@@ -1,34 +1,31 @@
 ---
 title: Verbesserungen der Auszugsbuchungsfunktionalität
 description: In diesem Thema wird beschrieben, welche Verbesserungen der Auszugsbuchungsfunktion vorgenommen wurden.
-author: josaw1
-ms.date: 05/14/2019
+author: analpert
+ms.date: 01/31/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: retail
-ms.author: anpurush
+ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7e9f41a65ca092606e79d5aaa4e3af0ec444604f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6ee0cea76be05634aa21643acef5b341f19d75ef
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795308"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087602"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Verbesserungen der Auszugsbuchungsfunktionalität
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 In diesem Thema wird beschrieben, welche Verbesserungen der Auszugsbuchungsfunktion vorgenommen wurden. Verbesserungen Diese sind in Microsoft Dynamics 365 for Finance and Operations 7.3.2 verfügbar.
 
 ## <a name="activation"></a>Aktivierung
 
-Standardmäßig ist das Programm bei der Bereitstellung von Finance and Operations 7.3.2 so eingestellt, dass es die Legacy-Funktion für Kontoauszugsbuchungen verwendet. Um die verbesserte Auszugsbuchung zu aktivieren, müssen Sie den Konfigurationsschlüssel dafür einschalten.
+Standardmäßig ist das Programm beim Deployment von Finance and Operations 7.3.2 so eingestellt, dass es das Legacy-Feature für Kontoauszugsbuchungen verwendet. Um die verbesserte Auszugsbuchung zu aktivieren, müssen Sie den Konfigurationsschlüssel dafür einschalten.
 
 - Gehen Sie zu **Systemverwaltung** \> **Einrichtung** \> **Lizenzkonfiguration**, und deaktivieren Sie dann unter dem Knoten **Retail and Commerce** das Kontrollkästchen **Auszüge (Veraltet)**, und markieren Sie das Kontrollkästchen **Auszüge**.
 
@@ -53,12 +50,24 @@ Als Teil der Verbesserungen der Kontoauszugsbuchungsfunktion wurden drei neue Pa
 
 - **Deaktivierung der Zählung erforderlich** - Wenn diese Option auf **Ja** gesetzt ist, wird der Buchungsvorgang für einen Auszug fortgesetzt, auch wenn die Differenz zwischen dem gezählten Betrag und dem Transaktionsbetrag auf dem Auszug außerhalb des Schwellenwerts liegt, der auf der Seite **Auszug** für Filialen definiert ist.
 
+> [!NOTE]
+> Ab Commerce Version 10.0.14, wenn die Funktion **Einzelhandelsauszüge - Trickle feed** aktiviert ist, ist der Batchauftrag **Bestand buchen** nicht mehr anwendbar und kann nicht ausgeführt werden.
+
 Zusätzlich wurden die folgenden Parameter auf der Seite **Batch-Verarbeitung** auf der Registerkarte **Buchung** der Seite **Commerce-Parameter** eingeführt: 
 
 - **Maximale Anzahl von parallelen Auszugsbuchungen** – Dieses Feld definiert die Anzahl der Stapelverarbeitungsaufgaben, die verwendet werden, um mehrere Aufstellungen zu buchen. 
 - **Maximaler Thread für die Auftragsverarbeitung pro Abrechnung** – Dieses Feld stellt die maximale Anzahl der Threads dar, die vom Batchauftrag für die Abrechnungsbuchung verwendet wird, um Aufträge für eine einzelne Abrechnung zu erstellen und zu fakturieren. Die Gesamtanzahl der Threads, die vom Abrechnungsbuchungsprozess verwendet werden, wird auf Grundlage des Werts in diesem Parameter multipliziert mit dem Wert im Parameter **Maximale Anzahl von parallelen Abrechnungsbuchungen** berechnet. Wird der Wert dieses Parameters zu hoch festgelegt, kann dies die Leistung des Abrechnungsbuchungsprozesses negativ beeinflussen.
-- **Maximale Buchungspositionen in der Aggregierung** – Dieses Feld definiert die Anzahl von Transaktionspositionen, die in einer einzelnen zusammengefassten Transaktion eingeschlossen sind, bevor eine neue erstellt wird. Aggregierte Transaktionen werden auf Grundlage unterschiedlicher Aggregationskriterien erstellt, beispielsweise Debitor, Geschäftsdatum oder Finanzdimensionen. Es ist wichtig zu beachten, dass die Zeilen einer einzelnen Transaktion nicht auf verschiedene aggregierte Transaktionen aufgeteilt werden. Das bedeutet, dass es eine Möglichkeit gibt, dass die Anzahl der Positionen in eine zusammengefassten Transaktion etwas höher oder nidriger liegt, je nach solchen Faktoren wie Anzahl der eindeutig identifizierbare Produkte.
+- **Maximale Buchungspositionen in der Aggregierung** – Dieses Feld definiert die Anzahl von Transaktionspositionen, die in einer einzelnen zusammengefassten Transaktion eingeschlossen sind, bevor eine neue erstellt wird. Aggregierte Transaktionen werden auf Grundlage unterschiedlicher Aggregationskriterien erstellt, beispielsweise Debitor, Geschäftsdatum oder Finanzdimensionen. Es ist wichtig zu beachten, dass die Zeilen einer einzelnen Transaktion nicht auf verschiedene aggregierte Transaktionen aufgeteilt werden. Das bedeutet, dass es eine Möglichkeit gibt, dass die Anzahl der Positionen in eine zusammengefassten Transaktion etwas höher oder niedriger liegt, je nach solchen Faktoren wie Anzahl der eindeutig identifizierbare Produkte.
 - **Maximale Anzahl von Threads zur Validierung von Speichertransaktionen** - Dieses Feld definiert die Anzahl der Threads, die zur Validierung von Transaktionen verwendet werden. Die Validierung von Transaktionen ist ein erforderlicher Schritt, der durchgeführt werden muss, bevor die Transaktionen in die Anweisungen gezogen werden können. Sie müssen auch ein **Geschenkkartenprodukt** auf der Seite **Geschenkkarte** auf der Registerkarte **Buchung** der Seite **Commerce-Parameter** definieren. Dies muss auch definiert werden, wen Geschenkkarten nicht von der Organisation verwendet werden.
+
+In der folgenden Tabelle sind die empfohlenen Werte für die vorstehenden Parameter aufgeführt. Diese Werte sollten getestet und an die Bereitstellungskonfiguration und die verfügbare Infrastruktur angepasst werden. Jede Erhöhung der empfohlenen Werte kann sich negativ auf andere Batch-Verarbeitungen auswirken und sollte daher validiert werden.
+
+| Parameter | Empfohlener Wert | Informationen |
+|-----------|-------------------|---------|
+| Maximale Anzahl paralleler Aufstellungsbuchung | <p>Legen Sie diesen Parameter auf die Anzahl der Batch-Aufgaben fest, die für die Batch-Gruppe verfügbar sind, die den **Auftrag** ausführt.</p><p>**Allgemeine Regel:** Multiplizieren Sie die Anzahl der virtuellen Server von Application Object Server (AOS) mit der Anzahl der Batch-Aufgaben, die pro virtuellem AOS-Server verfügbar sind.</p> | Dieser Parameter ist nicht anwendbar, wenn die Funktion **Einzelhandelsauszüge - Trickle feed** aktiviert ist. |
+| Maximaler Thread für die Auftragsverarbeitung pro Auszug | Beginnen Sie, Werte bei **4** zu testen. In der Regel sollte der Wert **8** nicht überschreiten. | Dieser Parameter gibt die Anzahl der Threads an, die zum Erstellen und Buchen von Verkaufsaufträgen verwendet werden. Sie gibt die Anzahl der Threads an, die pro Anweisung für die Buchung zur Verfügung stehen. |
+| Maximale Transaktionspositionen, die in der Aggregation enthalten sind | Beginnen Sie, Werte bei **1000** zu testen. Je nach Konfiguration der Zentrale können kleinere Aufträge für die Leistung vorteilhafter sein. | Dieser Parameter bestimmt die Anzahl der Zeilen, die bei der Auszugsbuchung in jeden Verkaufsauftrag aufgenommen werden. Nachdem diese Anzahl erreicht ist, werden die Zeilen in eine neue Reihenfolge aufgeteilt. Die Anzahl der Verkaufszeilen ist zwar nicht exakt, da die Aufteilung auf der Ebene des Verkaufsauftrags erfolgt, aber sie liegt nahe an der auf festgelegten Anzahl. Dieser Parameter wird verwendet, um Verkaufsaufträge für Transaktionen im Einzelhandel zu generieren, die keinen benannten Debitor haben. |
+| Maximale Anzahl von Threads für Überprüfung von Geschäftbuchungen | Wir empfehlen Ihnen, diesen Parameter auf **4** festzulegen und ihn nur dann zu erhöhen, wenn Sie keine akzeptable Leistung erreichen. Die Anzahl der Threads, die dieser Prozess verwendet, darf die Anzahl der Prozessoren, die dem Batch-Server zur Verfügung stehen, nicht überschreiten. Wenn Sie hier zu viele Threads zuweisen, könnten Sie andere Batch-Verarbeitungen beeinträchtigen. | Dieser Parameter steuert die Anzahl der Transaktionen, die gleichzeitig für einen bestimmten Store validiert werden können. |
 
 > [!NOTE]
 > Alle Einstellungen und Parameter, die sich auf Auszugsbuchungen beziehen und die in den Geschäften und auf der Seite **Commerce-Parameter** definiert sind, sind auf die verbesserte Funktion zur Auszugsbuchung anwendbar.
@@ -116,9 +125,17 @@ Ein Auszug durchläuft mehrere Operationen (z.B. Anlegen, Berechnen, Löschen un
 
 ### <a name="aggregated-transactions"></a>Zusammengeführte Transaktionen
 
-Während des Buchungsvorgangs werden die Verkaufsbuchungen gemäß den Einstellungen zusammengefasst. Diese aggregierten Transaktionen werden im System gespeichert und zum Anlegen von Debitorenaufträgen verwendet. Jede aggregierte Transaktion erzeugt einen entsprechenden Debitorenauftrag im System. Sie können die aggregierten Transaktionen über die Schaltfläche **Zusammengeführte Transaktionen** in der Gruppe **Ausführungsdetails** des Auszugs anzeigen.
+Während des Buchungsprozesses werden Cash-and-Carry-Transaktionen nach Kunde und Produkt aggregiert. Daher wird die Anzahl der erstellten Kundenaufträge und Positionen reduziert. Die aggregierten Transaktionen werden im System gespeichert und zum Anlegen von Debitorenaufträgen verwendet. Jede aggregierte Transaktion erzeugt einen entsprechenden Debitorenauftrag im System. 
 
-Die Registerkarte **Debitorenauftragsdetail** einer aggregierten Transaktion zeigt die folgenden Informationen an:
+Wenn ein Auszug nicht vollständig gebucht ist, können Sie aggregierte Transaktionen im Auszug anzeigen. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Auszug** in der Gruppe **Ausführungsdetails** die Option **Aggregierte Transaktionen** aus.
+
+![Schaltfläche „Aggregierte Transaktionen“ für einen Auszug, der nicht vollständig gebucht wurde.](media/aggregated-transactions.png)
+
+Bei gebuchten Auszügen können Sie aggregierte Transaktionen auf der Seite **Gebuchte Auszüge** anzeigen. Wählen Sie im Aktionsbereich **Abfragen** und dann **Aggregierte Transaktionen** aus.
+
+![Befehl „Aggregierte Transaktionen“ für gebuchte Auszüge.](media/aggregated-transactions-posted-statements.png)
+
+Das Inforegister **Debitorenauftragsdetails** einer aggregierten Transaktion zeigt die folgenden Informationen an:
 
 - **Datensatz-ID** - Die ID der aggregierten Transaktion.
 - **Auszugsnumber** - Der Auszug, zu dem die aggregierte Transaktion gehört.
@@ -127,17 +144,33 @@ Die Registerkarte **Debitorenauftragsdetail** einer aggregierten Transaktion zei
 - **Anzahl aggregierter Positionen** - Gesamtzahl der Zeilen für den aggregierten Vorgang und Debitorenauftrag.
 - **Status** - Der letzte Status der aggregierten Transaktion.
 - **Rechnungskennung** - Wenn der Debitorenauftrag für den aggregierten Vorgang fakturiert wird, wird die Verkaufsrechnungs-ID angezeigt. Wenn dieses Feld leer ist, wurde die Rechnung für den Debitorenauftrag nicht gebucht.
+- **Fehlercode** – Dieses Feld wird gesetzt, wenn sich die Aggregation in einem Fehlerzustand befindet.
+- **Fehlermeldung** – Dieses Feld wird gesetzt, wenn sich die Aggregation in einem Fehlerzustand befindet. Es zeigt Details darüber an, was das Fehlschlagen des Prozesses verursacht hat. Sie können die Informationen im Fehlercode verwenden, um das Problem zu beheben, und den Vorgang dann manuell neu starten. Abhängig von der Art der Lösung müssen aggregierte Verkäufe möglicherweise gelöscht und auf einem neuen Auszug verarbeitet werden.
 
-Das Register **Transaktionsdetails** einer aggregierten Transaktion zeigt alle Transaktionen, die in die aggregierte Transaktion gezogen wurden. Die aggregierten Zeilen der aggregierten Transaktion zeigen alle aggregierten Datensätze aus den Transaktionen an. Die aggregierten Positionen zeigen auch Details wie Artikel, Variante, Menge, Preis, Nettobetrag, Einheit und Lager. Grundsätzlich entspricht jede aggregierte Zeile einer Auftragszeile.
+![Felder im Inforegister „Auftragsdetails“ einer aggregierten Transaktion.](media/aggregated-transactions-error-message-view.png)
 
-Von der Seite **Aggregierte Transaktionen** können Sie das XML für eine bestimmte aggregierte Transaktion über die Schaltfläche **Auftrags-XML exportieren** herunterladen. Sie können das XML verwenden, um Probleme zu debuggen, die das Anlegen und Buchen von Aufträgen betreffen. Laden Sie einfach das XML herunter, laden Sie es in eine Testumgebung hoch und debuggen Sie das Problem in der Testumgebung. Die Funktionalität zum Herunterladen des XML für aggregierte Transaktionen steht für gebuchte Auszüge nicht zur Verfügung.
+Das Inforegister **Transaktionsdetails** einer aggregierten Transaktion zeigt alle Transaktionen, die in die aggregierte Transaktion gezogen wurden. Die aggregierten Zeilen der aggregierten Transaktion zeigen alle aggregierten Datensätze aus den Transaktionen an. Die aggregierten Positionen zeigen auch Details wie Artikel, Variante, Menge, Preis, Nettobetrag, Einheit und Lager. Grundsätzlich entspricht jede aggregierte Zeile einer Auftragszeile.
+
+![Inforegister „Transaktionsdetails“ einer aggregierten Transaktion.](media/aggregated-transactions-sales-details.png)
+
+In einigen Situationen kann es sein, dass aggregierte Transaktionen ihren konsolidierten Kundenauftrag nicht buchen. In diesen Situationen wird dem Auszugsstatus ein Fehlercode zugeordnet. Um nur aggregierte Transaktionen anzuzeigen, die Fehler aufweisen, können Sie den Filter **Nur Fehler anzeigen** in der aggregierten Transaktionsansicht anwenden, indem Sie das Kontrollkästchen aktivieren. Durch Aktivieren dieses Filters begrenzen Sie die Ergebnisse auf aggregierte Transaktionen mit Fehlern, die behoben werden müssen. Weitere Informationen zum Beheben dieser Fehler finden Sie unter [Onlineauftrag und asynchrone Debitorenauftragstransaktionen bearbeiten und prüfen](edit-order-trans.md).
+
+![Kontrollkästchen für den Filter „Nur Fehler anzeigen“ in der aggregierten Transaktionsansicht.](media/aggregated-transactions-failure-view.png)
+
+Auf der Seite **Aggregierte Transaktionen** können Sie das XML für eine bestimmte aggregierte Transaktion über die Schaltfläche **Aggregationsdaten exportieren** herunterladen. Sie können die XML in jedem XML-Formatierer überprüfen, um die tatsächlichen Datendetails anzuzeigen, die die Erstellung und Buchung von Kundenaufträgen betreffen. Die Funktionalität zum Herunterladen des XML für aggregierte Transaktionen steht für gebuchte Auszüge nicht zur Verfügung.
+
+![Schaltfläche „Aggregationsdaten exportieren“ auf der Seite „Aggregierte Transaktionen“.](media/aggregated-transactions-export.png)
+
+Falls Sie den Fehler nicht beheben können, indem Sie Daten zum Kundenauftrag oder Daten, die den Kundenauftrag unterstützen, korrigieren, ist die Schaltfläche **Kundenauftrag löschen** verfügbar. Um einen Auftrag zu löschen, wählen Sie die aggregierte Transaktion aus, die fehlgeschlagen ist, und wählen Sie dann **Kundenauftrag löschen**. Die aggregierte Transaktion und der entsprechende entsprechenden Auftrag wird gelöscht. Sie können die Transaktionen jetzt mit der Bearbeitungs- und Prüffunktion überprüfen. Alternativ können sie durch einen neuen Auszug nachbearbeitet werden. Nachdem alle Fehler behoben wurden, können Sie die Auszugsbuchung fortsetzen, indem Sie die Funktion „Auszug buchen“ für den entsprechenden Auszug ausführen.
+
+![Schaltfläche „Kundenauftrag löschen“ in der aggregierten Transaktionsansicht.](media/aggregated-transactions-delete-cust-order.png)
 
 Die aggregierte Transaktionssicht bietet folgende Vorteile:
 
 - Der Benutzer hat Einblick in die aggregierten Transaktionen, die bei der Debitorenauftragserstellung fehlgeschlagen sind, und die Debitorenaufträge, die bei der Fakturierung fehlgeschlagen sind.
 - Der Benutzer hat Transparenz darüber, wie Transaktionen aggregiert werden.
 - Der Benutzer verfügt über einen vollständigen Prüfpfad, von Transaktionen über Kundenaufträge bis hin zu Verkaufsrechnungen. Diese Historie war in der Funktion zum Buchen von Legacy-Auszügen nicht verfügbar.
-- Eine aggregierte XML-Datei erleichtert die Identifizierung von Problemen bei der Auftragserstellung und Fakturierung.
+- Mit der aggregierten XML-Datei lassen sich Probleme bei der Erstellung von Verkaufsaufträgen und Rechnungen leichter erkennen.
 
 ### <a name="journal-vouchers"></a>Erfassungsbelege
 

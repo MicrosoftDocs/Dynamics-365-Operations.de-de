@@ -2,11 +2,9 @@
 title: Clusterposition voll
 description: Dieses Thema enthält Informationen zur Funktion Clusterposition voll. Diese Funktion bietet eine Alternative zur strengeren Durchsetzung von Arbeitsunterbrechungsregeln, wenn die Clusterkommissionierung verwendet wird, da sie eine größere Fehlerquote bei den volumetrischen Einschränkungen von Containern oder Behältern ermöglicht.
 author: Mirzaab
-manager: tfehr
 ms.date: 08/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSClusterProfile
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9c90380cb5d109e331a2552ba779525b66d10fa6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 459c8fce892d9437c7466458b7e53743c71da38f
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001098"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102826"
 ---
 # <a name="cluster-position-full"></a>Clusterposition voll
 
@@ -30,14 +28,11 @@ Die Funktion *Clusterposition voll* bietet eine Alternative zur strengeren Durch
 
 Diese Funktion bietet die Möglichkeit, die Schaltfläche **Voll** auf einer der Arbeitseinheiten in einem Cluster auszuführen. In älteren Versionen war diese Option nur für die reguläre Kommissionierung verfügbar, nicht für die Clusterkommissionierung. Diese Funktion unterscheidet sich jedoch von der Standard **Voll**-Schaltfläche, da die verbleibende Arbeit abgebrochen wird. Es wird nicht vorgeschlagen, dass der Benutzer dem gleichen Cluster ein weiteres Lagerfach hinzufügt, und es wird nicht automatisch eine neue Arbeit erstellt.
 
-## <a name="turn-on-the-cluster-position-full-feature"></a>Aktivieren der Funktion Clusterposition voll
+## <a name="turn-the-cluster-position-full-feature-on-or-off"></a>Funktion „Clusterposition voll“ ein- oder ausschalten
 
-Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+Um die Funktionalität zu verwenden, die in diesem Thema beschrieben wird, muss die Funktion *Clusterposition voll* für Ihr System eingeschaltet werden. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Clusterposition voll* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- **Module:** *Lagerortverwaltung*
-- **Name der Funktion:** *Clusterposition voll*
-
-## <a name="setup"></a>Setup
+## <a name="setup"></a>Einrichtung
 
 Dieser Abschnitt enthält Richtlinien und ein Beispiel, das zeigt, wie Sie die *Clusterposition voll*-Funktion einrichten und verwenden.
 
@@ -213,7 +208,7 @@ Es sollten zwei Arbeits-IDs erstellt worden sein, von denen jede zwei Kommission
 
 ### <a name="mobile-device-flow-execution--work-confirmation-setup-for-the-product"></a>Flow-Ausführung für mobile Geräte – Einrichtung der Arbeitsbestätigung für das Produkt
 
-1. Melden Sie sich bei der Warehouse-App als ein Benutzer im Lagerort *61* an.
+1. Melden Sie sich bei der Warehouse Management Mobile App als ein Benutzer im Lagerort *61* an.
 1. Wechseln Sie zu **Ausgehend \> Clusterkommissionierung erstellen**.
 
     Die **AUFGABE: Arbeit dem Cluster zuweisen**-Seite erscheint.
@@ -275,3 +270,6 @@ In diesem Szenario wurde die Clusterkommissionierung abgeschlossen, und der Benu
     Sie erhalten die Nachricht „Cluster abgeschlossen“.
 
 Sie können jetzt den **Verkaufsauswahl**-Menüpunkt verwenden, um die verbleibende Menge auszuwählen. Sie können dann das **Verkaufsverladung**-Menüelement verwenden, um Artikel vom Staging-Lagerplatz zum Verladedock zu verschieben.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

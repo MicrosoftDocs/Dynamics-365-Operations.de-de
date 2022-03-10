@@ -1,31 +1,33 @@
 ---
-title: Entwerfen von Fragebögen
-description: In diesem Artikel wird der Prozess zum Erstellen eines Fragebogens beschrieben. Der erste Schritt ist das Entwerfen des Fragebogens. Wenn Sie einen Fragebogen entwerfen, schreiben Sie nicht nur Fragen und Antworten, Sie erstellen auch die Struktur, die es ermöglicht, Antworten zu erfassen und zu tabellieren.
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/20/2017
+title: Fragebögen erstellen
+description: In diesem Artikel wird der Prozess zum Erstellen eines Fragebogens beschrieben.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection, HcmLearningWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 17341
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: da4250b281438c29c82150af8db9cb8cca41c6c9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 90dd59b605c21abd03d2e0d64a89dc787850c26e
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418739"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065200"
 ---
-# <a name="design-questionnaires"></a>Entwerfen von Fragebögen
+# <a name="create-questionnaires"></a>Fragebögen erstellen
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 In diesem Artikel wird der Prozess zum Erstellen eines Fragebogens beschrieben. Der erste Schritt ist das Entwerfen des Fragebogens. Wenn Sie einen Fragebogen entwerfen, schreiben Sie nicht nur Fragen und Antworten, Sie erstellen auch die Struktur, die es ermöglicht, Antworten zu erfassen und zu tabellieren. 
 
@@ -64,7 +66,7 @@ Bevor Sie Fragebögen, Antworten und Fragen einrichten können, müssen Sie eini
 
 ### <a name="questionnaire-types"></a>Fragebogentypen
 
-Fragebogentypen sind erforderlich und müssen zugewiesen werden, wenn Sie einen Fragebogen erstellen. Fragebogentypen helfen Ihnen dabei, Fragebögen leichter zu verwalten und zu klassifizieren. Verwenden Sie Fragebogentypen, um Fragebögen zu klassifizieren und voneinander zu unterscheiden. Wenn Sie beispielsweise mehrere Fragebögen zur Auswahl haben, können Sie sie nach Typ filtern, um einen bestimmten Fragebogen leichter finden zu können. Beispiele für Fragebogentypen:
+**Fragebogentypen** sind erforderlich und müssen zugewiesen werden, wenn Sie einen Fragebogen erstellen. **Fragebogentypen** helfen Ihnen dabei, Fragebögen leichter zu verwalten und zu klassifizieren. Verwenden Sie Fragebogentypen, um Fragebögen zu klassifizieren und voneinander zu unterscheiden. Wenn Sie beispielsweise mehrere Fragebögen zur Auswahl haben, können Sie sie nach Typ filtern, um einen bestimmten Fragebogen leichter finden zu können. Beispiele für Fragebogentypen:
 
 -   Personalverwaltung – Entwicklung
 -   Kundenumfragen
@@ -72,9 +74,9 @@ Fragebogentypen sind erforderlich und müssen zugewiesen werden, wenn Sie einen 
 
 ### <a name="question-types"></a>Fragetypen
 
-Wenn Sie eine Frage erstellen, sind Fragebogentypen erforderlich und müssen zugewiesen werden. 
+Wenn Sie eine Frage erstellen, sind **Fragebogentypen** erforderlich und müssen zugewiesen werden. 
 
-Verwenden Sie Fragentypen, die Fragen für die Berichterstellung kategorisieren. Fragetypen erleichtern es, nach Fragen zu suchen, da Sie Typen als Filter für die Seite **Fragen** verwenden können. Beispiele für Fragetypen:
+Verwenden Sie **Fragentypen**, die Fragen für die Berichterstellung kategorisieren. **Fragetypen** erleichtern es, nach Fragen zu suchen, da Sie Typen als Filter für die Seite **Fragen** verwenden können. Beispiele für Fragetypen:
 
 -   Personalverwaltung
 -   Geschäftsverwaltung
@@ -91,9 +93,9 @@ Nummernkreiscodes werden verwendet, um Fragen und Antworten zu organisieren. Bas
 Alle Parameter sollten definiert worden sein, bevor Sie mit der Datenerstellung beginnen. Sie können die Fragebogenparametereinstellungen jederzeit ändern.
 
 ## <a name="questionnaire-components"></a>Fragebogen-Komponenten
-Fragebögen enthalten drei wichtigste Elemente: Antwortgruppen, die für die Antworten Auswahlfragen, Fragen und Fragebogen selbst enthalten. Sie können die Fragen für einen Fragebogen optional in Ergebnisgruppen gruppieren. Mithilfe von Ergebnisgruppen können Sie Fragen kategorisieren und für weitere Analysen auf dem Fragebogen bereitstellen. 
+Fragebögen enthalten drei wichtigste Elemente: Antwortgruppen, die für die Antworten Auswahlfragen, Fragen und Fragebogen selbst enthalten. Sie können die Fragen für einen Fragebogen optional in Ergebnisgruppen gruppieren. Mithilfe von Ergebnisgruppen können Sie Fragen kategorisieren und für weitere Analysen auf dem Fragebogen bereitstellen. 
 
-[![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
+[![QuestionnaireComponents.](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
 ### <a name="answer-groups-and-answers"></a>Antwortgruppen und Antworten
 
@@ -106,10 +108,10 @@ Um eine Liste möglicher Antworten für Fragen mit vordefinierten Antworten verf
 
 Antwortgruppen und Antworten sind Komponenten der Informationen, aus denen Fragebögen erstellt werden. Nachdem Sie eine Antwortgruppe erstellt haben, können Sie sie im Feld **Antwortgruppe** auf der Seite **Fragen** einer Frage zuordnen. 
 
-Eine Antwortgruppe kann für mehrere Fragen im gleichen Fragebogen oder in mehreren Fragebögen verwendet werden. 
+Eine **Antwortgruppe** kann für mehrere Fragen im gleichen Fragebogen oder in mehreren Fragebögen verwendet werden. 
 
 > [!NOTE]
-> Wenn Sie Antworttexte in den Antwortgruppen ändern, die bereits in ausgefüllten Fragebögen verwendet wurden, kann es schwierig werden, die Daten zu überprüfen und Fragebogenergebnisse sind möglicherweise nicht mehr gültig. Wenn Sie eine Antwortgruppe ändern müssen, sollten Sie erwägen, eine neue Antwortgruppe zu erstellen, anstatt eine vorhandene zu ändern. Antwortgruppen, die einer Frage oder Antwort zugeordnet sind oder bereits beantwortet wurden, können nicht gelöscht werden.
+> Wenn Sie Antworttexte in den Antwortgruppen ändern, die bereits in ausgefüllten Fragebögen verwendet wurden, kann es schwierig werden, die Daten zu überprüfen und Fragebogenergebnisse sind möglicherweise nicht mehr gültig. Wenn Sie eine Antwortgruppe ändern müssen, sollten Sie erwägen, eine neue Antwortgruppe zu erstellen, anstatt eine vorhandene zu ändern. Antwortgruppen, die einer Frage oder Antwort zugeordnet sind oder bereits beantwortet wurden, können nicht gelöscht werden.
 
 ### <a name="questions"></a>Fragen
 
@@ -172,7 +174,7 @@ In einem Fragebogen können Sie die folgenden Typen von Fragen nicht löschen:
 
 ### <a name="result-groups"></a>Ergebnisgruppen
 
-Ergebnisgruppen sind optional, wenn Sie Fragen einem Fragebogen zuordnen. 
+**Ergebnisgruppen** sind optional, wenn Sie Fragen einem Fragebogen zuordnen. 
 
 Eine Ergebnisgruppe wird verwendet, um Punkte zu berechnen und die Ergebnisse eines Fragebogens zu kategorisieren. Wenn Sie Ergebnisgruppen verwenden, können Sie die folgenden Aufgaben ausführen:
 
@@ -233,6 +235,8 @@ Um mithilfe bedingter Fragen eine Fragenhierarchie in einem Fragebogen zu erstel
 
 #### <a name="examples"></a>Beispiele
 
-Eine juristische Person bietet seinen Kunden sowohl Artikel als auch Dienstleistungen an. Typischer Weise kaufen einige Kunden nur Artikel oder nur Dienstleistungen und manche beides. Wenn die juristische Person eine Umfrage zur Kundenzufriedenheit verteilt, kann mithilfe einer bedingten Struktur des Fragebogens verhindert werden, sodass Kunden, die nur Dienstleistungen kaufen, Fragen zu Artikeln beantworten müssen. 
+Eine juristische Person bietet seinen Kunden sowohl Artikel als auch Dienstleistungen an. Typischer Weise kaufen einige Kunden nur Artikel oder nur Dienstleistungen und manche beides. Wenn die juristische Person eine Umfrage zur Kundenzufriedenheit verteilt, kann mithilfe einer bedingten Struktur des Fragebogens verhindert werden, sodass Kunden, die nur Dienstleistungen kaufen, Fragen zu Artikeln beantworten müssen. 
 
 Alternativ können Sie einen Fragebogen z. B. so einrichten, dass Frage 2 die nächste Frage in der Folge ist, wenn ein Befragter die Antwort A für Frage 1 auswählt. Wenn der Befragte Antwort B für Frage 1 auswählt, dann könnte Frage 5 als nächstes folgen.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

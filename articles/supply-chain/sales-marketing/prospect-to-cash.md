@@ -1,7 +1,7 @@
 ---
 title: Interessent zu Bargeld
 description: Dieses Thema enthält einen Überblick der Prospect to Cash-Lösung zwischen Dynamics 365 Supply Chain Management und Dynamics 365 Sales.
-author: ChristianRytt
+author: Henrikan
 ms.date: 04/25/2018
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 7b70b44a1d61d956f133cf0994647bd56adffa6b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b96f22d711ce5b34c2f8de5a86caf5f89dd3f337
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836517"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578991"
 ---
 # <a name="prospect-to-cash"></a>Prospect-to-Cash
 

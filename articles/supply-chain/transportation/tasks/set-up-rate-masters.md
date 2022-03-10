@@ -1,27 +1,25 @@
 ---
 title: Satzmaster einrichten
 description: Dieses Verfahren zeigt Ihnen an, wie ein Satzmaster eingerichtet wird.
-author: ShylaThompson
-manager: tfehr
+author: Henrikan
 ms.date: 10/16/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSBreakMaster,TMSRateMaster,TMSRateMasterBase,TMSRateBaseType, TMSRouteWorkbench
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47fa7edeba81d826a00668a2da74113f552437f4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e6177458f2fc4651a10353afaa6f59ba6da4e28b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4974259"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567702"
 ---
 # <a name="set-up-rate-masters"></a>Satzmaster einrichten
 
@@ -96,3 +94,6 @@ Dieses Verfahren zeigt Ihnen an, wie ein Satzmaster eingerichtet wird. Der Logis
     * Geben Sie an, für welche Postleitzahl diese Satzbasiszuweisung gültig sein soll aus.
 10. Geben Sie in das Feld **Land Region** „USA“ ein.
 11. Wählen Sie **Speichern** aus.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -9,18 +9,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderLineNote, EntAssetWorkOrderTable, EntAssetWorkOrderActive, EntAssetWorkOrderHoursInfoPart, EntAssetWorkOrderLineListPage, EntAssetWorkOrderAddObjectBOMItem, EntAssetWorkOrderTablePoolAdd, EntAssetWorkOrderPurchReqListPagePreviewPane, EntAssetWorkOrderPoolReferenceAdd, EntAssetWorkOrderWorkspace, EntAssetWorkOrderTableAdjust, EntAssetWorkOrderGantt, EntAssetWorkOrderNotes, EntAssetWorkOrderActivePart, EntAssetWorkOrderTableInfoPart, EntAssetWorkOrderLineListPagePreviewPane, EntAssetWorkOrderTool, EntAssetMobileWorkOrderLineDetails, EntAssetMobileWorkOrderLineList, EntAssetMobileWorkOrderDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b0f33dad05fc9a17fc673525ac5ab79f9cf0ab08
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3891ea08a484950d8fef57d6229117e90ed93a92ab800f9de3ad82db3aff956d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821632"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754703"
 ---
 # <a name="introduction-to-work-orders"></a>Einführung in Arbeitsaufträge
 
@@ -51,7 +51,7 @@ Wählen Sie **Anlagenverwaltung** > **Allgemein** > **Arbeitsaufträge** > **All
 
 In der folgenden Abbildung wird ein Beispiel der Listenseite **Alle Arbeitsaufträge** angezeigt.
 
-![Abbildung 1](media/01-work-orders.png)
+![Abbildung 1.](media/01-work-orders.png)
 
 Wählen Sie **Anlagenverwaltung** > **Allgemein** > **Arbeitsaufträge** > **Aktive Arbeitsaufträge** aus, um eine Liste von nur aktiven Arbeitsaufträgen anzuzeigen. 
 
@@ -69,7 +69,7 @@ Nachfolgend einige Möglichkeiten, wie Sie die Seite **Alle Arbeitsaufträge** v
 
 In der folgenden Abbildung wird ein Beispiel der Detailansicht **Alle Arbeitsaufträge** angezeigt.
 
-![Abbildung 2](media/02-work-orders.png)
+![Abbildung 2.](media/02-work-orders.png)
 
 
 Die Schaltflächen im Aktivitätsbereich sind auf Registerkarten zusammengefasst. Die folgende Tabelle beschreibt kurz die Schaltflächen, die sich auf Anlagenmanagement beziehen:

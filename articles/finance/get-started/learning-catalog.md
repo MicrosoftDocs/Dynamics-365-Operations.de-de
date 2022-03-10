@@ -6,29 +6,28 @@ ms.topic: article
 ms.date: 07/23/2020
 ms.author: margoc
 ms.prod: ''
-ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 0b166956a8242a3e4520002c0ca1af648a798c9a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4b0a96307109674321ebc81aab7d77502a434dd994163232d012627f52d7b409
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5009192"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758026"
 ---
 # <a name="dynamics-365-finance-learning-catalog"></a>Dynamics 365 Finance-Lernkatalog
 
 Finden Sie das richtige Onlinetraining, persönliche Workshops und Veranstaltungen für Ihre Rolle als Benutzer der Dynamics 365 Finance-Anwendung.
 
-<!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
 
 :::row:::
     :::column:::
-<!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
 
     ### <a name="business-and-technical-decision-makers"></a>Geschäfts- und technische Entscheidungsträger
 
@@ -178,3 +177,6 @@ Finden Sie das richtige Onlinetraining, persönliche Workshops und Veranstaltung
 
     :::column-end:::
 :::row-end:::
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

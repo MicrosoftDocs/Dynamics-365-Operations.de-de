@@ -1,12 +1,10 @@
 ---
-title: Hinzufügen eines Logos
+title: Logo hinzufügen
 description: In diesem Thema wird beschrieben, wie Sie ein Logo zu Ihrer Site in Microsoft Dynamics 365 Commerce hinzufügen.
 author: bicyclingfool
-manager: AnnBe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -18,20 +16,18 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 073c3d6f8d5ee88d51efb41f6b9c1a204b82fa12
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 583462755838e51b4c988b8da057dbeeee773e0b
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980306"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964578"
 ---
-# <a name="add-a-logo"></a>Hinzufügen eines Logos
+# <a name="add-a-logo"></a>Logo hinzufügen
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie ein Logo zu Ihrer Site in Microsoft Dynamics 365 Commerce hinzufügen.
-
-## <a name="overview"></a>Übersicht
 
 Wenn Sie Ihre Site erstellen, ist eines der ersten Dinge, die Sie wahrscheinlich tun werden, das Hinzufügen Ihres Firmen- oder Markenlogos zum Header der Site. Die Dynamics 365 Commerce-Onlinemodulbibliothek enthält ein Modul, das diese Aufgabe vereinfacht.
 
@@ -59,13 +55,11 @@ Nachdem Sie das aktualisierte Headerfragment veröffentlicht haben, wird auf all
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Auswählen eines Sitedesigns](select-site-theme.md)
+[Sitedesign auswählen](select-site-theme.md)
 
 [Arbeiten mit CSS-Überschreibungsdateien](css-override-files.md)
 
 [Hinzufügen eines Favicons](add-favicon.md)
-
-[Hinzufügen einer Begrüßungsnachricht](add-welcome-message.md)
 
 [Hinzufügen eines Urheberrechtshinweises](add-copyright-notice.md)
 
@@ -73,3 +67,6 @@ Nachdem Sie das aktualisierte Headerfragment veröffentlicht haben, wird auf all
 
 [Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Dispositionscodes einrichten
 description: Sie können Sie Dispositionscodes einrichten, um anzugeben, wie ein Artikel verarbeitet wird, der von einem Debitor zurückgegeben wird.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReturnDispositionCode
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 518b70223b2f6bf86809ccce77a2cf67c30e4168
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 973d270d186244904a8390b700aa2ee1fc84cbbc
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4977537"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576279"
 ---
 # <a name="set-up-disposition-codes"></a>Dispositionscodes einrichten 
 
@@ -33,15 +31,15 @@ Sie können Sie Dispositionscodes einrichten, um anzugeben, wie ein Artikel vera
 
 Sie können auch einen Ursachencode einrichten, der dabei hilft zu erläutern, warum ein Artikel zurückgegeben wurde. Weitere Informationen zu den Differenzgründen finden Sie unter [Rückgabegrundcodes einrichten](set-up-return-reason-code.md).
 
-1.  Klicken Sie auf **Vertrieb und Marketing** \> **Einstellungen** \> **Aufträge** \> **Retouren** \> **Dispositionscodes**.
+1.  Gehen Sie zu **Vertrieb und Marketing** \> **Einrichten** \> **Verkaufsaufträge** \> **Rücklieferungen** \> **Dispositioncodes**.
 
-2.  Klicken Sie **Neu** oder drücken Sie STRG+N, um einen neuen Dispositionscode zu erstellen.
+2.  Wählen Sie **Neu**, um einen neuen Dispositionscode zu erstellen.
 
 3.  Geben Sie einen eindeutigen, aussagekräftigen Namen ein, wählen Sie eine Aktion aus, und geben Sie eine Beschreibung für den Dispositionscode ein.
 
-4.  Wenn Sie eine Debitorenbelastungen mit diesem Dispositionscode zuordnen möchten, klicken Sie auf die Schaltfläche **Belastungen**, um das Formular **Belastungen einrichten** zu öffnen.
+4.  Wenn Sie diesem Dispositionscode irgendwelche Kundengebühren zuordnen wollen, wählen Sie die Schaltfläche **Gebühren**, um das Formular **Gebühren festlegen** zu öffnen.
 
-5.  Wenn Sie externe Codes auf die Dispositionscodes des Unternehmens abstimmen möchten, klicken Sie auf die Schaltfläche **Externe Codes**, um das Formular **Externe Codes** zu öffnen.
+5.  Wenn Sie irgendwelche externen Codes definieren wollen, die mit den firmeneigenen Dispositionscodes übereinstimmen sollen, wählen Sie die Schaltfläche **Externe Codes**, um das Formular **Externe Codes** zu öffnen.
 
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,3 +54,6 @@ Sie können auch einen Ursachencode einrichten, der dabei hilft zu erläutern, w
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

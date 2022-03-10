@@ -10,15 +10,15 @@ ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Germany
-ms.author: v-lenest
+ms.author: anasyash
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 0caac8f705e8e8d96c4cb56ba83949a56407b6c8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 71d677546f69dcdae39270a093696780760e5b13
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839850"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592504"
 ---
 # <a name="vat-declaration-for-germany"></a>Umsatzsteuererklärung für Deutschland
 
@@ -736,7 +736,7 @@ Richten Sie die Codes für die Mehrwertsteuererklärung ein, indem Sie die Anwei
 
     - **Elster (DE)**
 
-    Weitere Informationen finden Sie unter [Elektronische Berichtskonfigurationen aus Lifecycle Services herunterladen](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+    Weitere Informationen finden Sie unter [Elektronische Berichtskonfigurationen aus Lifecycle Services herunterladen](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 2. Wechseln Sie zu **Steuer** \> **Einstellungen** \> **Mehrwertsteuer** \> **Mehrwertsteuer-Erklärungscodes**.
 3. Im Feld **Formatzuordnung** wählen Sie das Format **Elster (DE)** aus, das Sie zuvor heruntergeladen haben.
@@ -760,7 +760,7 @@ Richten Sie die Codes für die Mehrwertsteuererklärung ein, indem Sie die Anwei
 
 8. Wählen Sie **OK**. Auf der **Elektronisches Steuererklärungsprotokoll**-Seite (**Steuer** \> **Meldungen** \> **Mehrwertsteuer** \> **Protokoll der elektronischen Steuererklärung**) wird eine neue Zeile erstellt.
 
-![Seite „Protokoll der elektronischen Steuererklärung“](media/1_Electronic_tax_declaration_log.png)
+![Seite „Protokoll der elektronischen Steuererklärung“.](media/1_Electronic_tax_declaration_log.png)
 
 ## <a name="preview-the-xml-file"></a>Vorschau der XML-Datei
 
@@ -835,16 +835,16 @@ Die folgende Tabelle zeigt, wie Sie die Mehrwertsteuer-Berichtscodes den Mehrwer
 11. Wechseln Sie zu **Steuer** \> **Meldungen** \> **Mehrwertsteuer** \> **Protokoll der elektronischen Steuererklärung**, und wählen Sie die erforderliche Position aus.
 12. Auf der **Protokoll der elektronischen Steuererklärung**-Seite, wählen Sie die **Allgemein**-Registerkarte und überprüfen die allgemeinen Informationen.
 
-![Seite „Protokoll der elektronischen Steuererklärung“, Registerkarte „Allgemein“](media/2_Electronic_tax_declaration_log.png)
+![Seite „Protokoll der elektronischen Steuererklärung“, Registerkarte „Allgemein“.](media/2_Electronic_tax_declaration_log.png)
 
 13. Wählen Sie **Vorschau** aus, klicken Sie auf die Registerkarte und überprüfen Sie die gemeldeten Werte.
 
-![Vorschau des Protokolls der elektronischen Steuererklärung](media/3_Electronic_tax_declaration_log.png)
+![Vorschau des Protokolls der elektronischen Steuererklärung.](media/3_Electronic_tax_declaration_log.png)
 
 14. Wählen Sie das Büroklammersymbol in der oberen rechten Ecke.
 15. Wählen Sie **Öffnen** und überprüfen Sie die XML-Datei oben auf der Seite.
 
-![XML-Datei](media/4_XML_file.png)
+![XML-Datei.](media/4_XML_file.png)
 
 ### <a name="correction-transactions"></a>Korrekturtransaktionen
 
@@ -866,14 +866,14 @@ Die folgende Tabelle zeigt, wie Sie die Mehrwertsteuer-Berichtscodes den Mehrwer
 7. Wechseln Sie zu **Steuer** \> **Meldungen** \> **Mehrwertsteuer** \> **Protokoll der elektronischen Steuererklärung**, und wählen Sie die erforderliche Position aus.
 8. Wählen Sie **Vorschau** aus, klicken Sie auf die Registerkarte und überprüfen Sie die gemeldeten Werte.
 
-    ![Vorschau des Protokolls der elektronischen Steuererklärung](media/5_Electronic_tax_declaration_log.png)
+    ![Vorschau des Protokolls der elektronischen Steuererklärung.](media/5_Electronic_tax_declaration_log.png)
 
     Eine Korrekturbuchung ist der Erklärung anhand der Codes **86** und **83** hinzugefügt worden.
 
 9. Wählen Sie das Büroklammersymbol in der oberen rechten Ecke.
 10. Wählen Sie **Öffnen** und überprüfen Sie die XML-Datei oben auf der Seite.
 
-    ![Zu überprüfende XML-Datei](media/6_XML_file.png)
+    ![Zu überprüfende XML-Datei.](media/6_XML_file.png)
 
     Eine Korrekturbuchung ist der Erklärung anhand der Codes **86** und **83** hinzugefügt worden.
 
@@ -899,9 +899,9 @@ Berechnen Sie am Ende des MwSt.-Berichtszeitraums die Mehrwertsteuerbeträge fü
 
 Wenn Sie Transaktionen wie in Schritt 5 des [Beispiels](#example) zu Beginn dieses Themas buchen, werden die folgenden Daten angezeigt.
 
-![Generierter deutscher Mehrwertsteuerbericht, Seite 1](media/7_Sales_tax_reporting.png)
+![Generierter deutscher Mehrwertsteuerbericht, Seite 1.](media/7_Sales_tax_reporting.png)
 
-![Generierter deutscher Mehrwertsteuerbericht, Seite 2](media/8_Sales_tax_reporting.png)
+![Generierter deutscher Mehrwertsteuerbericht, Seite 2.](media/8_Sales_tax_reporting.png)
 
 ### <a name="print-a-sales-tax-payment-report-from-a-sales-tax-payment"></a>Drucken Sie einen Mehrwertsteuerzahlungsbericht aus einer Mehrwertsteuerzahlung
 

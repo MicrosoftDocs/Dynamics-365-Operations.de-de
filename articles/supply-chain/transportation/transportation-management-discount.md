@@ -2,24 +2,22 @@
 title: Rabatte der Transportverwaltung
 description: Dieses Thema beschreibt die Möglichkeiten zum Festlegen von Rabatten für Transportkosten.
 author: Henrikan
-manager: tfehr
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-10-16
-ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: fdee8315573faa09c502fa7792215a047d0e3c88
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.dyn365.ops.version: 10.0.14
+ms.openlocfilehash: 479572cf3d252531a790e515f153ff33cb674649
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233486"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580143"
 ---
 # <a name="transportation-management-discounts"></a>Rabatte der Transportverwaltung
 

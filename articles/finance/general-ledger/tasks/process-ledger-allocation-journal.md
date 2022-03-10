@@ -2,26 +2,23 @@
 title: Sachkonto-Zuordnungserfassung verarbeiten
 description: In diesem Thema wird erläutert, wie Sie unter Dynamics 365 Finance eine Zuordnungsanforderung bearbeiten.
 author: aprilolson
-manager: AnnBe
 ms.date: 07/26/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerAllocationRequest, LedgerJournalTable, LedgerJournalTransAllocation
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 33e989d3641ae1eaa28a55398fcf51674ac1ed72
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7d37b1a9869cc130786d0e8fde68184e04c881bad1f64c86943174213025db82
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443600"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765667"
 ---
 # <a name="process-ledger-allocation-journal"></a>Sachkonto-Zuordnungserfassung verarbeiten
 
@@ -44,3 +41,6 @@ In diesem Thema wird erläutert, wie Sie eine Zuordnungsanforderung bearbeiten. 
 9. Wählen Sie **Buchen** aus.
 10. Wählen Sie **Buchen** aus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

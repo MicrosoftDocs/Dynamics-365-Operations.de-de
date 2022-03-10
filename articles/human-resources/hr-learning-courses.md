@@ -1,8 +1,8 @@
 ---
 title: Kursschulungen einrichten
 description: Personalverwaltungsadministratoren und ein Manager können die Kursfunktionen verwenden, um Informationen zur Schulung zu verwalten, welche für Arbeitskräfte angeboten wird.
-author: andreabichsel
-ms.date: 06/24/2019
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,24 +12,26 @@ ms.search.scope: Human Resources
 ms.custom: 7532
 ms.assetid: a6950c29-8b3e-45b2-9084-ddfb1317ffaa
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: f573dadeab88ead57fdb4b91ade21c244325058c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: c66459a044419535d66875cddac7eb73af744ca7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054018"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066749"
 ---
 # <a name="set-up-training-courses"></a>Kursschulungen einrichten
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Personalverwaltungsadministratoren und ein Manager können die Kursfunktionen verwenden, um Informationen zur Schulung zu verwalten, welche für Arbeitskräfte angeboten wird.
 
- <a name="set-up-prerequisites"></a>Einrichten von Voraussetzungen
----------------------
+##  <a name="set-up-prerequisites"></a>Einrichten von Voraussetzungen
 
 Die folgenden Informationen werden benötigt und müssen eingerichtet werden, bevor Sie Kurse erstellen.
 -   **Kurstypen**
@@ -81,7 +83,7 @@ Für jeden Kurs können die folgenden Aufgaben ausgeführt werden.
 - Festlegen der minimalen und maximalen Teilnehmerzahl.
 - Zuweisen eines Kursorts und Kursraums
 - Empfehlen von Hotels für Kursteilnehmer
-- Erstellen einer Kursbeschreibung, mit der Sie im Mitarbeiter-Self-Service-Portal werben können.
+- Erstellen einer Kursbeschreibung, die Sie im **Mitarbeiter-Self-Service** verwenden können
 
   >**Hinweis** Sie können einen Kurs nur löschen, wenn niemand für ihn registriert ist. 
 
@@ -127,8 +129,7 @@ In der folgenden Tabelle werden die möglichen Kursstatus und Aktivitäten aufge
 ## <a name="course-participants"></a>Kursteilnehmer
 Kursteilnehmer sind Arbeitskräfte, die an einem Schulungskurs oder Ereignis teilnehmen. Sie können nur Teilnehmer für offene Kurse registrieren. Die Höchst- und Mindestzahl der Teilnehmer, die für einen Kurs registriert werden können, wird im Inforegister **Allgemein** auf der Seite **Kurse** definiert.
 
-<a name="workflow"></a>Workflow
---------
+## <a name="workflow"></a>Workflow
 
 Mitarbeiter, die sich über die Seite **Mitarbeiter-Self-Service** erfassen, können ihre Erfassung per Workflow zur Genehmigung weiterleiten. Sie können einen Workflow für einen Kurs im Inforegister **Allgemein** auf der Seite **Kurse** zuweisen.
 

@@ -2,11 +2,9 @@
 title: Einrichten eines Sachkontoalias
 description: Das folgende Verfahren zeigt die Erstellung eines Kontoalias als Kürzel zur Eingabe einer Kontonummer.
 author: aprilolson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerAccountAlias
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 08fcbc4e7e593c7d1a632183409ae85423545263
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 60e1dc0e61fd11e5498966031fbe7e6e65af2c6f57a820e1c99df05c6ad7f8f2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968402"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745795"
 ---
 # <a name="set-up-a-ledger-account-alias"></a>Einrichten eines Sachkontoalias
 
@@ -40,3 +38,6 @@ Das folgende Verfahren zeigt die Erstellung eines Kontoalias als Kürzel zur Ein
 9. Wählen Sie im Feld "Anfänglicher Fokus" die Dimension aus, die den Fokus hat, wenn der Alias verwendet wird.
     * Um nachdem Sie das Tastenkürzel verwendet haben, werden das Konto und die Dimensionen aufgefüllt. Der Cursor oder der Fokus wird zum Feld "Anfänglicher Fokus" verschoben.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6ce0a12aff70da1ec556b69198aa5210519b6af2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c6119a8b52eece5935bf05d0f2300feeb8d4e90b08f26e949870f491bc9254e8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834739"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743120"
 ---
 # <a name="import-letter-of-credit"></a>Importkreditbrief importieren
 
@@ -128,7 +128,8 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 12. Schließen Sie die Seite.
 13. Schließen Sie die Seite.
 
-## <a name="verify-import-letter-of-credit-status"></a>Überprüfen Sie den Status des Importkreditbriefs.
+## <a name="verify-import-letter-of-credit-status-and-printing"></a>Überprüfen Sie den Importkreditbriefstatus und Drucken
+
 1. Wechseln Sie zu "Bargeld- und Bankverwaltung" > "Kreditbrief" > "Importkreditbrief und Importinkasso".
 2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 3. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.

@@ -2,13 +2,11 @@
 title: Gebuchte Leasingtransaktionen stornieren
 description: In diesem Thema wird erläutert, wie Sie eine gebuchte Leasingtransaktion stornieren. Jede Transaktion, die durch Anlagenleasing erstellt wird, kann rückgängig gemacht werden.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeaseTransactions
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 22d8eee22221efaf5e7a715c8b95dff261bee62f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f76b75a968e9ee9a3c545f646077c16282b5b185aa88025653f7443fbcfd9581
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5249724"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6770664"
 ---
 # <a name="reverse-posted-lease-transactions"></a>Gebuchte Leasingtransaktionen stornieren
 

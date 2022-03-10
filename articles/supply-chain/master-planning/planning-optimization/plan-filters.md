@@ -2,11 +2,9 @@
 title: Filter auf einen Plan anwenden
 description: In diesem Thema wird erläutert, wie Sie Filter auf einem Plan verwenden, wenn Sie die Funktionalität der Planungsoptimierung verwenden.
 author: ChristianRytt
-manager: tfehr
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b5262cc5dc72ffcc50770cf5a2e2dda216d7ff8e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3612dd45a3f4b8c3597c81962a66c21ed14fb206
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5212101"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729026"
 ---
 # <a name="apply-filters-to-a-plan"></a>Filter auf einen Plan anwenden
 
@@ -45,7 +43,7 @@ Es wird ein Planfilter eingerichtet, der die Positionen A, B und C enthält. Die
 - **Laufzeitfilter, der alle Positionen beinhaltet (Blindfilter):** Die Positionen A, B und C werden in den Planungslauf einbezogen, und die bisherige Planungsausgabe für die Positionen A und B wird überschrieben.
 
 > [!NOTE]
-> Sie sollten es vermeiden, einen Planfilter auf den Plan zu setzen, der als **Aktueller dynamischer Masterplan** auf der Seite **Masterplanparameter** ausgewählt ist. Andernfalls beschränkt sich die Funktionalität des dynamischen Masterplans auf die gefilterten Elemente. Wenn beispielsweise der Nettobedarf für eine Position aktualisiert wird, die nicht Teil des Planfilters ist, wird kein Ergebnis erzeugt.
+> Wenn Sie einen Planfilter für den Plan festlegen, der als **Aktueller dynamischer Produktprogrammplan** auf der Seite **Produktprogrammplanparameter** ausgewählt wird, dann wird die Funktionalität des dynamischen Produktprogrammplans auf die gefilterten Elemente beschränkt. Wenn beispielsweise der Nettobedarf für eine Position aktualisiert wird, die nicht Teil des Planfilters ist, wird kein Ergebnis erzeugt.
 
 ## <a name="related-resources"></a>Zugehörige Ressourcen
 

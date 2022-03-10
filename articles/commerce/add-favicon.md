@@ -2,11 +2,9 @@
 title: Hinzufügen eines Favicons
 description: In diesem Thema wird erläutert, wie ein favicon der Site hinzufügt wird.
 author: bicyclingfool
-manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,20 +14,18 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 786ba02c312b7cdb3cf7f0689737084887d536bc
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 080ef4da7313bd6b9d91e616f576b3ff774509d9
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206342"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964731"
 ---
 # <a name="add-a-favicon"></a>Hinzufügen eines Favicons
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird erläutert, wie ein favicon der Site hinzufügt wird.
-
-## <a name="overview"></a>Übersicht
 
 Ein favicon ist eine kleine Grafikdatei, die auf einer Webbrowserregisterkarte im Browserverlauf der Adressleiste sowie in Lesezeichen oder in den Favoriten angezeigt wird. Es wird empfohlen, ein favicon dem Standort hinzufügen, da es Ihre Marke darstellt und verstärkt und hilft, den Standort von anderen Websites, die Ihre Kunden suchen, zu unterscheiden.
 
@@ -86,11 +82,9 @@ Wenn Sie Seiten in der Vorschau anzeigen, die auf der Vorlage basieren, der Sie 
 
 [Hinzufügen eines Logos](add-logo.md)
 
-[Auswählen eines Sitedesigns](select-site-theme.md)
+[Sitedesign auswählen](select-site-theme.md)
 
 [Arbeiten mit CSS-Überschreibungsdateien](css-override-files.md)
-
-[Hinzufügen einer Begrüßungsnachricht](add-welcome-message.md)
 
 [Hinzufügen eines Urheberrechtshinweises](add-copyright-notice.md)
 

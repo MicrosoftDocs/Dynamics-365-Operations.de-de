@@ -2,11 +2,9 @@
 title: Freitextrechnung erstellen
 description: In diesem Thema wird erläutert, wie Freitextrechnungen erstellt werden.
 author: mikefalkner
-manager: AnnBe
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 7ccc652a407e9ed09c2ffffd3c86ff5070d6399b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e5ca9e00ec881707248d966470288fd3ddba4e785127f30bd0e6dd4e7186c7e6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217505"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763285"
 ---
 # <a name="create-a-free-text-invoice"></a>Freitextrechnung erstellen
 

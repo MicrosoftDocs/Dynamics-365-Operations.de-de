@@ -1,29 +1,28 @@
 ---
 title: Überblick über Bestellungen
 description: Dieser Artikel enthält allgemeine Informationen zu Bestellungen (POs) und Links zu Artikeln zu den verschiedenen Phasen die eine Bestellung durchläuft.
-author: mkirknel
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder, PurchConfirmationRequestJournal
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
-ms.custom: 93083
+ms.custom:
+- "93083"
+- intro-internal
 ms.assetid: e9b7bc5b-1d7e-4ec2-97be-d655274b0613
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cfb35d6db74f965911329dbd6215d1108149fa6c
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: b2e01f73aa78c0fabf0f5a1e0acd3bbc4f69cfc4
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429138"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982303"
 ---
 # <a name="purchase-order-overview"></a>Überblick über Bestellungen
 
@@ -44,7 +43,7 @@ Der folgenden Artikel bieten einen Überblick über die verschiedenen Phasen, di
 -   [Bestellungen erstellen](purchase-order-creation.md)
 -   [Bestellungen genehmigen und bestätigen](purchase-order-approval-confirmation.md)
 -   [Produkteingang für Bestellungen](product-receipt-against-purchase-orders.md)
--   [Überblick über Kreditorenrechnungen](../../financials/accounts-payable/vendor-invoices-overview.md)
+-   [Überblick über Kreditorenrechnungen](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 ## <a name="types-of-purchase-orders"></a>Typ der Bestellungen
 Es gibt drei Typen von Bestellungen: Wenn Sie eine Bestellung erstellen, muss der Typ für angegeben. Sie können auf der **Beschaffungsparameter**-Seite einen Standardauftragstyp für neue Aufträge einrichten.
@@ -79,8 +78,7 @@ Das **Genehmigungsstatus**-Feld wird verwendet, wenn eine Bestellung einen Über
 -   **Bestätigt** – Dieser Status wird zugewiesen, nachdem die Bestellung bestätigt wurde. Normalerweise ist dieser Status der letzte Genehmigungsstatus, der die einer Bestellung zugeordnet ist.
 
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Bestellungen erstellen](purchase-order-creation.md)
 
@@ -88,7 +86,10 @@ Das **Genehmigungsstatus**-Feld wird verwendet, wenn eine Bestellung einen Über
 
 [Produkteingang für Bestellungen](product-receipt-against-purchase-orders.md)
 
-[Überblick über Kreditorenrechnungen](../../financials/accounts-payable/vendor-invoices-overview.md)
+[Überblick über Kreditorenrechnungen](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

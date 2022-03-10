@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: f7bdd292893ee42d49bdf977a55d8b10896ca1cd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: af19a1c2e6a3205cd76c9fe998d1c8268f9077661b96c43b9aa9733286bd32d9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792438"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777523"
 ---
 # <a name="review-the-status-of-an-experiment"></a>Den Status eines Experiments überprüfen
 Das Einrichten und Ausführen eines Experiments in Dynamics 365 Commerce umfasst viele Schritte. Informationen zum Experimentierlebenszyklus finden Sie unter [Experimentieren in Dynamics 365 Commerce](experimentation-overview.md).
@@ -41,7 +41,7 @@ Entsprechend können in der Spalte **Drittanbieterstatus** die folgenden Werte a
 
 Das folgende Diagramm zeigt beide Statussätze und ihre Beziehung zueinander.
 
-[ ![Experimentierstatus](./media/experimentation_statuses.svg) ](./media/experimentation_statuses.svg#lightbox)
+[ ![Experimentierstatus.](./media/experimentation_statuses.svg) ](./media/experimentation_statuses.svg#lightbox)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

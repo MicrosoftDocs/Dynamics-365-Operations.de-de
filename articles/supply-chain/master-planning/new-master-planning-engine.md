@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9590213ef73f7623aff10d4c8ee3efbea0e7984b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8d3edeefca2e2194a8d5484afbfabf2091da4a1c1538d238351a5d389177ccfd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823456"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728578"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Migration zur Planungsoptimierung für die Produktprogrammplanung
 
@@ -63,8 +63,12 @@ Derzeit sind Ausnahmen für die Migration der Planungsoptimierung nur dann relev
 
 Nachdem die erforderlichen Funktionen verfügbar sind, gewährt Microsoft eine Gnadenfrist, bis die Ausnahme ausläuft. Der Admin der Umgebung wird informiert, wenn die erforderlichen Funktionen verfügbar geworden sind und die Schonfrist begonnen hat.
 
+Das folgende Flussdiagramm fasst die Informationen in diesem Thema zusammen, damit Sie schnell herausfinden können, ob Sie eine Ausnahme anfordern sollten. Wenn Sie eine Ausnahme anfordern müssen, füllen Sie bitte den [Fragebogen zur Migration und zu Ausnahmen zur Planungsoptimierung](https://go.microsoft.com/fwlink/?linkid=2144962) aus und senden Sie ihn ab.
+
+![Ausnahmenflussdiagramm.](media/exception-diagram.png "Ausnahmenflussdiagramm")
+
 > [!NOTE]
-> Sie können eine Ausnahme nur für Produktionsumgebungen beantragen, nicht für Sandbox-Umgebungen. Wenn Sie den Ausnahmefehler für die Planungsoptimierung in einer Infrastruktur-as-a-Service (IaaS)-Sandbox-Umgebung deaktivieren müssen, führen Sie die SQL-Abfrage aus, die unter [Sandbox-Umgebungen](#faq-sandbox) bereitgestellt wird.
+> Sie können eine Ausnahme nur für Mandanten anfordern, die derzeit eine Produktionsumgebung enthalten oder enthalten werden, nicht nur für Mandanten mit Sandbox-Umgebungen. Wenn Sie den Ausnahmefehler für die Planungsoptimierung in einer Infrastruktur-as-a-Service (IaaS)-Sandbox-Umgebung deaktivieren müssen, führen Sie die SQL-Abfrage aus, die unter [Sandbox-Umgebungen](#faq-sandbox) bereitgestellt wird.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 

@@ -2,11 +2,9 @@
 title: Kostenelementdimensionen
 description: Als eine der Kernpfeiler bei der Kostenrechnung werden Kostenelementdimensionen verwendet, um zu kategorisieren und nachzuverfolgen, wo Kosten hinfließen.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMDimension
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: be2f984c1ce5c76e3f995108d25f57c29e8c8457
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 667fb81a2c1c8f564c09fe8fb7921c7aff75920bfa4326e82078583df61576e0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5226362"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728768"
 ---
 # <a name="cost-element-dimensions"></a>Kostenelementdimensionen
 
@@ -65,7 +63,7 @@ Es gibt zwei Typen von Kostenelementen: primäre Kostenelemente und sekundäre K
 ## <a name="cost-element-dimensions-and-cost-element-dimension-members"></a>Kostenelementdimensionen und Kostenelement-Dimensionsmitglieder
 Kostenelemente werden als *Kostenelementdimensionen* bezeichnet. Die einzelnen Dimensionswerte werden *Kostenelement-Dimensionsmitglieder* genannt. Beispielsweise haben Sie eine US-Kontenplanstruktur (COA), die die Basis für ihre Offenlegungspflicht ist. Diese COA wird als Kostenelementdimension verwendet. Die Konten, die primäre Kostenelemente sind, werden als Kostenelement-Dimensionsmitglieder in der Kostenrechnung dargestellt. Das folgende Screenshot zeigt ein Beispiel der Hauptkonten als die Kostenelementdimension mit ihren tatsächlichen Hauptkonten als die Kostenelement-Dimensionsmitglieder an. 
 
-[![Screenshot von Hauptkonten als Kostenelementdimension](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
+[![Screenshot von Hauptkonten als Kostenelementdimension.](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
 
 ## <a name="import-cost-element-dimension-members-through-data-connectors"></a>Kostenelement-Dimensionsmitglieder über Datenkonnektoren importieren
 Um die Einstellungen der Kostenelement-Dimensionsmitglieder in der Kostenrechnung zu vereinfachen, können Sie Datenkonnektoren verwenden, die entweder vorkonfiguriert sind oder Ihr benutzerdefinierter Build sind, um die primären Kostenelemente aus einem oder mehreren Quellsystemen abzurufen.

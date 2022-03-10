@@ -1,12 +1,10 @@
 ---
 title: Arbeitsaufträge aus Wartungsanfragen erstellen
 description: In diesem Thema wird erläutert, wie Sie einen Wartungsauftrag aus einer Wartungsanfrage in der Anlagenverwaltung erstellen.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5bf147104909302173c32b8376f16c66784110cb
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1c69ad91e931475dd4c8e5a126190e867bd193f881ad58525c1d2ac8997c972a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5253326"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6726920"
 ---
 # <a name="create-work-orders-from-maintenance-requests"></a>Arbeitsaufträge aus Wartungsanfragen erstellen
 
@@ -52,7 +50,7 @@ Nachdem Sie Wartungsanforderungen erstellt haben, können Sie sie ohne Weiteres 
 
 6. Wählen Sie **Anlagenverwaltung** \> **Allgemeines** \> **Arbeitsaufträge** \> **Alle Arbeitsaufträge** aus, und öffnen Sie den neuen Arbeitsauftrag.
 
-    ![Neuen Arbeitsauftrag öffnen](media/05-manage-maintenance-requests.png)
+    ![Neuen Arbeitsauftrag öffnen.](media/05-manage-maintenance-requests.png)
 
 
 

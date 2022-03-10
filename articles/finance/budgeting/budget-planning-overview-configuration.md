@@ -2,27 +2,27 @@
 title: Budgetplanung – Übersicht
 description: Dieses Thema beschreibt die Budgetplanung. Es enthält Informationen, die Ihnen bei der Konfiguration der Budgetplanung und der Einrichtung von Budgetplanungsprozessen helfen können.
 author: panolte
-manager: AnnBe
 ms.date: 01/11/2018
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 17251
+ms.custom:
+- "17251"
+- intro-internal
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f45def44a285dbc937a2a602aa873f8a04486902
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 391f62f42e482f79420bbe1bbd4cec4930790229
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210288"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982064"
 ---
 # <a name="budget-planning-overview"></a>Budgetplanung – Übersicht
 
@@ -42,7 +42,7 @@ Eine Organisation kann Budgetplanung konfigurieren und anschließend Budgetplanu
 - **Budgetplanungsphasen** - Die Budgetplanungsphasen definieren die Schritte, denen ein Budgetplan von seinem Beginn bis zur endgültigen Genehmigung folgt. Budgetplanungsphasen werden in Budgetplanungsworkflows angeordnet.
 - **Budgetplanungsworkflows** - Budgetplanungsworkflows bestehen aus Budgetplanungsphasen und legen diese fest. Die Workflows der Budgetplanung sind mit den Budgetierungs-Workflows verbunden. Budgetierungsworkflows sind die automatisierten und manuelle Prozesse, die Budgetpläne durch die Budgetplanungsphasen verschieben.
 
-[![Budgetplanungsterminologie](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
+[![Budgetplanungsterminologie.](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
 
 ### <a name="typical-tasks"></a>Typische Aufgaben
 
@@ -67,17 +67,17 @@ Ein optionaler, aber empfohlener erster Schritt ist die Erstellung eines Schemas
 
 Die folgende Abbildung zeigt ein generisches Beispiel, in dem separate Budgetplanungsworkflows für verschiedene Ebenen der Organisation erstellt werden. In jedem Workflow werden Stufen definiert, und jeder Stufe werden spezifische Szenarien zugeordnet, um die Budgetdaten zu halten. Die Aufgaben werden abgeschlossen, um die Daten von einer Stufe zur nächsten zu verschieben. So können Beträge z. B. auf verschiedenen Konten, Genehmigungen oder anderen Überprüfungen zugewiesen oder zusammengefasst werden. In dieser Abbildung weist kursiver Text auf ein Szenario hin, das während der Phase nicht bearbeitet werden kann, oder auf Daten, die historisch sind oder in einer früheren Phase genehmigt wurden und daher nicht geändert werden sollten.
 
-[![Beispiel eines Budgetplanungsschemas](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
+[![Beispiel eines Budgetplanungsschemas.](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
 
 Die folgende Abbildung zeigt ein Beispiel, bei dem die Unternehmenszentrale die Basisbeträge für das Anfangsbudget schätzt und an die Vertriebsabteilungen verteilt. Die Vertriebsabteilungen schätzen dann ihre Prognose und übermitteln sie an den Hauptsitz zurück, wo der Budgetverantwortliche die Prognose aggregiert und anpasst. Schließlich sendet der Budgetverantwortliche die angepassten Budgetbeträge an den Chief Financial Officer (CFO) zur Überprüfung, abschließenden Anpassung und Genehmigung.
 
-[![Beispiel eines Budgetplanungsschemas](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
+[![Beispiel eines Budgetplanungsschemas.](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
 
 ### <a name="organization-hierarchy-for-budget-planning"></a>Organisationshierarchie für Budgetplanung
 
 Auf der Seite **Organisationshierarchie** können Sie für jeden Budgetplanungsprozess eine Organisationshierarchie als Budgetplanungshierarchie festlegen. Die Budgetplanungshierarchie muss mit der Standardorganisationshierarchie nicht übereinstimmen, die für andere Zwecke verwendet wird. Da diese Hierarchie verwendet wird, um Daten zu aggregieren und zu verteilen, sollten sie eine andere Struktur haben. In dem Beispielschema befinden sich die Vertriebsabteilungen unter einer Hauptsitz-Ebene, die die Budget- und Finanzabteilungen umfasst. Diese Struktur unterscheidet sich wahrscheinlich von der Struktur, die für die Verwaltung der Vorgänge für die Vertriebsabteilungen verwendet wird. Nur eine Organisationshierarchie kann einem Budgetplanungsprozess zugewiesen werden.
 
-Weitere Informationen zu den finden Sie unter [Organisationen und Organisationshierarchien](../../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md).
+Weitere Informationen zu den finden Sie unter [Organisationen und Organisationshierarchien](../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md).
 
 ### <a name="user-security"></a>Benutzersicherheit
 
@@ -95,7 +95,7 @@ Eine bewährte Methode ist das Erstellen eines Budgetplanungsworkflows für jede
 
 Sie erstellen einen Budgetierungs-Workflow für die Budgetplanung auf der Seite **Budgetierungs-Workflows**. Der Vorgang ähnelt dem Vorgang zum Erstellen anderer Workflows. Die folgende Abbildung zeigt ein Beispiel für einen Workflow für die Zentrale.
 
-[![Budgetierungsworkflow für Budgetplanung](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
+[![Budgetierungsworkflow für Budgetplanung.](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
 
 Der Workflow umfasst die folgenden Elemente:
 
@@ -143,11 +143,11 @@ Wenn Sie eine Phasenzuteilung einrichten, ordnen Sie den Budgetplanungsworkflow 
 
 In dem Beispielschema, das weiter oben in diesem Thema erscheint, wird eine Zuweisung vorgenommen, um Beträge von einem Budgetplan und Szenarien in der Phase „Baseline“ für die Zentrale auf einen anderen Budgetplan und Szenarien in der Phase „Schätzung“ für die Vertriebsabteilungen zu übertragen. Die folgende Abbildung zeigt den relevanten Abschnitt des Beispielsschemas.
 
-[![Phasenzuteilungen](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
+[![Phasenzuteilungen.](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
 
 Zusätzlich wird im Beispielschema eine Aggregation von Budgetplänen und Szenarien in der Phase „Eingereicht“ für die Vertriebsabteilungen auf einen übergeordneten Plan in der Phase „Rollup“ für den Hauptsitz vorgenommen. Die folgende Abbildung zeigt den relevanten Abschnitt des Beispielsschemas.
 
-[![Aggregation](./media/aggregation-109x300.png)](./media/aggregation.png)
+[![Aggregation.](./media/aggregation-109x300.png)](./media/aggregation.png)
 
 ### <a name="priorities"></a>Prioritäten
 
@@ -165,7 +165,7 @@ Zusätzlich zu den Spalten für Budgetbeträge können Sie Spalten für die Feld
 
 Für das Beispielschema könnten Sie Spalten für die Szenarien „Jahresumsatz“, „Verträge“ und „Prognose“ anlegen. (Die folgende Abbildung zeigt den entsprechenden Abschnitt des Schemas.) Sie können dann eines oder alle diese Szenarien in separate Spalten für jedes Quartal des Geschäftsjahres aufgliedern, sodass der Leiter der Vertriebsabteilung die Prognosebeträge für jede Periode genau eingeben kann.
 
-[![Spalten](./media/columns.png)](./media/columns.png)
+[![Abbildung von Abschnitten des Schemas zum Hinzufügen von Spalten.](./media/columns.png)](./media/columns.png)
 
 Sie geben auch an, ob jedes Layoutelement (Spalte) bearbeitbar ist und ob es in jeder Arbeitsblattvorlage, die für dieses Layout erstellt wird, verfügbar ist. Für das Beispielschema sind in dem Layout, das für die Phase „Schätzung“ verwendet wird, die Spalten „Prognose“ editierbar, die Spalten „PY Verkauf“ und „Verträge“ sind jedoch schreibgeschützt.
 
@@ -203,7 +203,7 @@ Sie können auch das Menü **Aktionen** verwenden, um einen neuen Prozess anzule
 
 Ein anderer nützlicher Befehl im Menü **Aktivitäten** ist **Budgetprozessstatus anzeigen**. Dieser Befehl zeigt die Budgetpläne in einem Prozess grafisch an, zusammen mit relevanten Daten, wie z.B. dem Workflow-Status der Pläne, Zusammenfassungen nach Betrag und Einheit und die Navigation zu den Budgetplänen selbst mit einem Klick.
 
-[![Status des Budgetplanungsprozesses](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+[![Status des Budgetplanungsprozesses.](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

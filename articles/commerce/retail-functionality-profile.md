@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b8d481597485775796290f61de19ef7682cb9f43
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9043486050e230fd9ecdefaaa65427264c8e40f5c3e8602c923bbede595a7243
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791996"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717621"
 ---
 # <a name="create-a-retail-functionality-profile"></a>Ein Einzelhandelsfunktionsprofil erstellen
 
@@ -47,7 +47,7 @@ Führen Sie die folgenden Schritte aus, um ein Funktionsprofil zu erstellen.
   
 Die folgende Abbildung zeigt ein Beispiel für ein Funktionsprofil.
   
-![Beispiel für ein Funktionalitätsprofil](media/retail-functionality-profile.png)
+![Beispiel für ein Funktionalitätsprofil.](media/retail-functionality-profile.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

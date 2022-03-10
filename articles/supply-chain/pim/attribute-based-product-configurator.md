@@ -1,27 +1,27 @@
 ---
 title: Attributbasierte Verkaufspreise bei einschränkungsbasierter Produktkonfiguration
 description: In diesem Thema wird beschrieben, wie Sie Verkaufspreismodelle mit Verkaufspreisen erstellen, die auf Komponenten und Attributen basieren und nicht auf der physischen Stückliste und der Route.
-author: sorenva
-manager: tfehr
+author: t-benebo
 ms.date: 10/2/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: sorenand
+ms.author: benebotg
 ms.search.validFrom: 2020-08-17
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 65ab96c71fa44d6acad0bcb5cd7a65321109b93d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: e50b2d1e9ccf03a58e0ddf6d4ecfb34c6c504161
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5221966"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577455"
 ---
 # <a name="attribute-based-sales-prices-for-constraint-based-product-configuration"></a>Attributbasierte Verkaufspreise bei einschränkungsbasierter Produktkonfiguration
+
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie Verkaufspreismodelle mit Verkaufspreisen erstellen, die auf Komponenten und Attributen basieren und nicht auf der physischen Stückliste und der Route. Sie können für jedes Produktkonfigurationsmodell mehrere Verkaufspreismodelle erstellen.
 
@@ -35,7 +35,7 @@ So legen Sie Ihre Standardwährung fest:
 1. Öffnen Sie die Registerkarte **Details zum einschränkungsbasierten Produktkonfigurationsmodell**.
 1. Öffnen Sie die Dropdownliste **Standardwährung** und wählen Sie Ihre Währung aus.
 
-    ![Festlegen der Standardwährung für die einschränkungsbasierte Produktkonfiguration](media/prod-config-currency.png "Festlegen der Standardwährung für die einschränkungsbasierte Produktkonfiguration")
+    ![Festlegen der Standardwährung für die einschränkungsbasierte Produktkonfiguration.](media/prod-config-currency.png "Festlegen der Standardwährung für die einschränkungsbasierte Produktkonfiguration")
 
 1. Wenn Sie für alle Auftrags- oder Bestellpositionen eine Excel-Datei mit einer Preisaufschlüsselung anhängen möchten, legen Sie im Bereich **Preismodell** die Option **Anhängen** auf *Ja* fest.
 
@@ -62,7 +62,7 @@ Das folgende Beispiel zeigt einen festen Grundpreis von 899,95 EUR an, der abh�
 - Für Rosenholzgehäuse 119,95 EUR addieren.
 - Für jede Einheit an Lautsprecherhöhe 12,95 EUR addieren.
 
-![Beispiel für ein Preismodell](media/prod-config-rules-example.png "Beispiel für ein Preismodell")
+![Beispiel für ein Preismodell.](media/prod-config-rules-example.png "Beispiel für ein Preismodell")
 
 ## <a name="add-support-for-multiple-currencies"></a>Hinzufügen von Support für mehrere Währungen
 
@@ -83,7 +83,7 @@ So fügen Sie explizite Preise in einer zusätzlichen Währung hinzu:
 
 Im folgenden Beispiel ist _EUR_ die Standardwährung und _USD_ wurde als zusätzliche Währung hinzugefügt.
 
-![Beispiel eines Modells mit mehreren Währungen](media/prod-config-rules-currency-example.png "Beispiel eines Modells mit mehreren Währungen")
+![Beispiel eines Modells mit mehreren Währungen.](media/prod-config-rules-currency-example.png "Beispiel eines Modells mit mehreren Währungen")
 
 > [!NOTE]
 > Sie können keine Ausdrucksregeln hinzufügen, die für eine nicht standardmäßige Währung eindeutig sind. Um Ausdrucksregeln zu erstellen, die nur für eine andere Währung als die Standardwährung relevant sind, legen Sie für den Preisausdruck für die Standardwährung den Wert „Null“ fest. Legen Sie dann den entsprechenden Ausdruck für die nicht standardmäßige Währung fest.
@@ -95,11 +95,11 @@ Um zu testen, wie die Verkaufspreise in einer Konfigurationssitzung funktioniere
 - Verwenden Sie die hier angebotenen Konfigurationseinstellungen, um Produktoptionen auszuwählen und dann zu beobachten, wie sie sich auf den für **Preis und Versanddatum** angezeigten Wert auswirken.
 - Wählen Sie **Preisaufschlüsselung anzeigen** aus, um ein Excel-Dokument herunterzuladen, das alle Details zur Kalkulation des Preises enthält.
 
-![Testen Ihres Produktmodells](media/prod-config-test.png "Testen Ihres Produktmodells")
+![Testen Ihres Produktmodells.](media/prod-config-test.png "Testen Ihres Produktmodells")
 
 Die heruntergeladene Tabelle zeigt für jedes aktive Preiselement sowohl den absoluten Wert als auch den Beitrag als Prozentsatz an. Wenn Sie die Preismodelloption **Anhängen** auf der Seite **Parameter für Produktinformationsverwaltung** ausgewählt haben, wird diese Excel-Tabelle an die Auftrags- oder Bestellposition angehängt.
 
-![Excel-Tabelle mit Preisaufschlüsselung](media/prod-config-excel-example.png "Excel-Tabelle mit Preisaufschlüsselung")
+![Excel-Tabelle mit Preisaufschlüsselung.](media/prod-config-excel-example.png "Excel-Tabelle mit Preisaufschlüsselung")
 
 ## <a name="set-up-selection-criteria-for-price-models"></a>Einrichten der Auswahlkriterien für Preismodelle
 
@@ -118,7 +118,7 @@ So richten Sie die Auswahlkriterien für Preismodelle ein:
     - **Gültig ab**: Geben Sie den ersten Tag an, ab dem die Abfrage angewendet werden soll.
     - **Ablaufzeitpunkt**: Geben Sie das Datum des letzten Tages an, an dem die Abfrage angewendet werden soll.
 
-    ![Preismodellkriterien](media/prod-config-price-model-criteria.png "Preismodellkriterien")
+    ![Preismodellkriterien.](media/prod-config-price-model-criteria.png "Preismodellkriterien")
 
 1. Wählen Sie die Zeile für die Abfrage aus, die Sie definieren möchten, und wählen Sie dann die Option **Bearbeiten** im **Aktivitätsbereich** aus. Der Abfragedesigner wird geöffnet. Er funktioniert wie die meisten Abfragedesigner in Supply Chain Management. Verwenden Sie ihn, um die Bedingungen zu definieren, unter denen das Preismodell für die ausgewählte Zeile angewendet werden soll.
 
@@ -139,7 +139,7 @@ Der letzte Schritt besteht darin, attributbasierte Verkaufspreise für die Produ
 1. Wählen Sie das Ziel-Produktkonfigurationsmodell aus.
 1. Öffnen Sie im Aktivitätsbereich die Registerkarte **Modell** und wählen Sie aus der Gruppe **Produktmodelldetails** die Option **Versionen** aus.
 1. Die Seite **Versionen** wird angezeigt. Stellen Sie sicher, dass **Preis** auf **Attributbasiert** festgelegt ist.
-    ![Festlegen des Preises auf attributbasiert](media/prod-config-versions.png "Festlegen des Preises auf attributbasiert")
+    ![Festlegen des Preises auf attributbasiert.](media/prod-config-versions.png "Festlegen des Preises auf attributbasiert")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

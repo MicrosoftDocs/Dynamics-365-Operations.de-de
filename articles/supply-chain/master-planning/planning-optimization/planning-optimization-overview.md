@@ -3,25 +3,24 @@ title: Planungsoptimierung – Übersicht
 description: Dieses Thema gibt einen Überblick über die Funktionalität der Planungsoptimierung.
 author: ChristianRytt
 ms.date: 10/31/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 5ecfa8ac4db050ee1e38f3b420d81beba19b9409
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 49da88be9faff8f327f8079245b3c07db79308e6
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812954"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983441"
 ---
 # <a name="planning-optimization-overview"></a>Planungsoptimierung – Übersicht
 
@@ -33,7 +32,7 @@ Um die Planungsoptimierung nutzen zu können, müssen Sie das Add-In Planungsopt
 
 Die folgende Abbildung zeigt den Vorteil der Planungsoptimierung während der Bürozeiten.
 
-![Vorteil der laufenden Planungsoptimierung während der Bürozeiten](media/PlanningOptimization1.png)
+![Vorteil der laufenden Planungsoptimierung während der Bürozeiten.](media/PlanningOptimization1.png)
 
 ## <a name="improved-performance"></a>Verbesserte Leistung
 
@@ -62,7 +61,7 @@ Wenn das Add-In Planungsoptimierung deinstalliert wird, werden alle zugehörigen
 
 Die folgende Abbildung zeigt den Datenfluss.
 
-![Datenfluss für Regenerationsläufe](media/PlanningOptimization2.png)
+![Datenfluss für Regenerationsläufe.](media/PlanningOptimization2.png)
 
 ## <a name="related-resources"></a>Zugehörige Ressourcen
 

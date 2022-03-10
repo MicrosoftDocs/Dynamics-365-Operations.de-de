@@ -2,11 +2,9 @@
 title: Flexibler Durchschnitt
 description: Der flexible Durchschnitt ist eine kontinuierliche Nachkalkulationsmethode, basierend auf dem Durchschnittsprinzip, in dem die Kosten in Lagerabgängen sich nicht ändern, wenn der Kaufpreis sich ändert. Der Unterschied ist aktiviert und basiert auf eine proportionale Berechnung. Der verbleibende Betrag wird in Aufwand gebucht.
 author: AndersGirke
-manager: tfehr
 ms.date: 08/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 65531
 ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f3a996ebbfb8c3a75b302925ffe0a3ef40e18a5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6721c01fd0ad3eec30de99dee3b5e98de6bd3b52
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5263589"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567534"
 ---
 # <a name="moving-average"></a>Flexibler Durchschnitt
 

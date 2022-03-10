@@ -2,11 +2,9 @@
 title: Einen Standarddebitoren erstellen
 description: In diesem Thema wird beschrieben, wie Sie einen Standarddebitoren erstellen, der beim Erstellen eines Kanals in Microsoft Dynamics 365 Commerce verwendet wird.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 1dd4dfc5b8ca7af66941d081b4c20be0f5d6001d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ff9e5665ffd82982e09f63e34b30ae6937666231855587ad2f27c5231ead8419
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993399"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720958"
 ---
 # <a name="create-a-default-customer"></a>Einen Standarddebitoren erstellen
-
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie einen Standarddebitoren erstellen, der beim Erstellen eines Kanals in Microsoft Dynamics 365 Commerce verwendet wird.
-
-## <a name="overview"></a>Übersicht
 
 Wenn Sie einen Channel anlegen, müssen Sie einen Standardkunden angeben. Ein Standardkunde kann einfach erstellt werden, nachdem zuerst die Kundengruppe und das Kundenadressbuch erstellt wurden.
 
@@ -52,7 +47,7 @@ Gehen Sie folgendermaßen vor, um eine Debitorengruppe zu erstellen.
 
 Das folgende Bild zeigt mehrere konfigurierte Kundengruppen.
 
-![Debitorengruppen](media/customer-groups.png)
+![Debitorengruppen.](media/customer-groups.png)
 
 ## <a name="create-a-customer-address-book"></a>Ein neues Debitorenadressbuch erstellen
 
@@ -68,7 +63,7 @@ Gehen Sie folgendermaßen vor, um ein Adressbuch zu erstellen.
 
 Das folgende Bild zeigt ein Beispiel für ein Adressbuch.
 
-![Adressbuch](media/address-book.png)
+![Adressbuch.](media/address-book.png)
 
 ## <a name="create-a-default-customer"></a>Einen Standarddebitoren erstellen
 
@@ -91,11 +86,11 @@ Gehen Sie folgendermaßen vor, um einen Standarddebitor zu erstellen.
 
 Die folgende Abbildung zeigt ein Beispiel für die Erstellung eines Debitors.
 
-![Erstellung eines Standarddebitors](media/default-customer-creation.png)
+![Erstellung eines Standarddebitors.](media/default-customer-creation.png)
 
 Das folgende Bild zeigt die Konfiguration eines Standarddebitors.
 
-![Beispieldebitorenkonfiguration](media/default-customer-configuration1.png)
+![Beispieldebitorenkonfiguration.](media/default-customer-configuration1.png)
 
 Die meisten Standardwerte auf dem Debitorendetailsbildschirm können beibehalten werden, es sollten jedoch zwei Werte geändert werden.
 
@@ -105,10 +100,13 @@ Die meisten Standardwerte auf dem Debitorendetailsbildschirm können beibehalten
 
 Die folgende Abbildung zeigt ein Beispiel für die Konfiguration eines Debitors.
 
-![Beispielkonfiguration eines Debitors](media/default-customer-configuration2.png)
+![Beispielkonfiguration eines Debitors.](media/default-customer-configuration2.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Kanäle – Übersicht](channels-overview.md)
+[Übersicht über Kanäle](channels-overview.md)
 
 [Kanaleinstellungen – Voraussetzungen](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

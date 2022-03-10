@@ -1,29 +1,26 @@
 ---
 title: Erstellen einer Debitorenrechnung
-description: Bei einer **Debitorenrechnung für einen Auftrag** handelt es sich um eine Rechnung, die sich auf einen Auftrag bezieht, und die ein Debitor von einer Organisation erhält.
+description: Bei einer Debitorenrechnung für einen Auftrag handelt es sich um eine Rechnung, die sich auf einen Auftrag bezieht, und die ein Debitor von einer Organisation erhält.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 01/12/2018
+ms.date: 02/01/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
 ms.custom: 77772
 ms.assetid: 00b4b40c-1576-4098-9aed-ac376fdeb8c5
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f5b9866fc7afba205b84b372c6a204ec4c8f64d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d408ca5265802cf17a53dd5cb004f707f6f7855b
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443444"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087422"
 ---
 # <a name="create-a-customer-invoice"></a>Erstellen einer Debitorenrechnung
 
@@ -45,6 +42,23 @@ Weitere Informationen finden Sie unter ''.
 
 
 Bei einer **Proforma-Rechnung** handelt es sich um eine Rechnung, die vor dem Buchen der Rechnung als Vorkalkulation der tatsächlichen Rechnungsbeträge vorbereitet wird. Proforma-Rechnungen können sowohl für eine Debitorenrechnung für einen Auftrag als auch für Freitextrechnungen gedruckt werden.
+
+## <a name="using-sales-order-customer-invoice-data-entities"></a>Verwendung von Entitäten für Verkaufsaufträge und Debitor-Rechnungen
+Sie können Entitäten verwenden, um Informationen zu einer Verkaufsrechnung für einen Verkaufsauftrag zu importieren und zu exportieren. Es gibt verschiedene Entitäten für die Informationen auf dem Kopf der Verkaufsrechnung und den Zeilen der Verkaufsrechnung.
+
+Die folgenden Entitäten stehen für die Informationen zum Kopf der Verkaufsrechnungen zur Verfügung:
+
+- **Verkaufsrechnungen Journal Kopf** Entität (SalesInvoiceJournalHeaderEntity)
+- **Verkaufsrechnungsköpfe V2** Entität (SalesInvoiceHeaderV2Entity)
+
+Wir empfehlen Ihnen, die Entität **Erfassung von Verkaufsrechnungen** zu verwenden, da sie für den Import und Export von Verkaufsrechnungen eine höhere Leistung bietet. Diese Entität enthält nicht die Spalte **Umsatzsteuerbetrag** (INVOICEHEADERTAXAMOUNT), die den Wert der Mehrwertsteuer im Kopf der Verkaufsrechnung darstellt. Wenn Ihr Geschäftsszenario diese Informationen erfordert, verwenden Sie die Entität **Verkaufsrechnungskopfdaten V2**, um die Kopfdaten der Verkaufsrechnungen zu importieren und zu exportieren.
+
+Die folgenden Entitäten sind für die Informationen zu Verkaufsrechnungszeilen verfügbar:
+
+- **Kundenrechnungszeilen** - Entität (BusinessDocumentSalesInvoiceLineItemEntity)
+- **Verkaufsrechnung Zeilen V3** Entität (SalesInvoiceLineV3Entity)
+
+Wenn Sie festlegen, welche Entität für den Export verwendet werden soll, überlegen Sie, ob ein vollständiger Push oder ein inkrementeller Push verwendet werden soll. Beachten Sie außerdem die Zusammensetzung der Daten. Die Entität **Zeilen der Verkaufsrechnungen V3** unterstützt komplexere Szenarien (z.B. die Zuordnung zu den Bestandsfeldern). Es unterstützt auch Full-Push-Export-Szenarien. Für inkrementelle Pushs empfehlen wir Ihnen, die Entität **Kundenrechnungszeilen** zu verwenden. Diese Entität enthält eine viel einfachere Datenzusammensetzung als die Entität **Verkaufsrechnungen V3** und wird bevorzugt, insbesondere wenn die Integration von Bestandsfeldern nicht erforderlich ist. Aufgrund von Unterschieden in der Zuordnung zwischen den Zeilen-Entitäten ist die Entität **Kundenrechnung Zeilen** in der Regel schneller als die Entität **Verkaufsrechnungen Zeilen V3**.
 
 ## <a name="post-and-print-individual-customer-invoices-that-are-based-on-sales-orders"></a>Buchen und Drucken einzelner Debitorenrechnungen anhand von Aufträgen
 Erstellen Sie mit diesem Prozess eine Rechnung, die auf einem Auftrag basiert. Das kann z. B. der Fall sein, wenn Sie dem Kunden vor Lieferung der Waren oder Dienstleistungen eine Rechnung senden möchten. 
@@ -167,3 +181,6 @@ Die folgenden Felder ändern das Verhalten des Buchungsprozesses.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Zahlungsmethoden
 description: Jeder Zahlungstyp, der von einem Einzelhändler akzeptiert wird, muss beim Einrichten des Systems konfiguriert werden. In diesem Artikel wird beschrieben, wie Sie die Zahlungstypen einrichten können und beschreibt den Prozess, um sie einzurichten.
-author: rubencdelgado
-manager: AnnBe
-ms.date: 06/17/2020
+author: BrianShook
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTenderTypeTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 54bff6b7962ade09ea5c1f5f8d7721757dea1fc3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0450dbaa37365705ca59fd2223c9d3866054c12a
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5012365"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779569"
 ---
 # <a name="payment-methods"></a>Zahlungsmethoden
 
@@ -48,3 +46,11 @@ Zum Einrichten von Zahlungsmethoden müssen Sie die folgenden Aufgaben abschlie�
 2. Einrichten von organisationsweiten Kartentypen und Kartennummern Wenn Kredit- oder Debitkarten akzeptiert werden, müssen Sie eine Zahlungsmethode für Karten und anschließend die organisationsweiten Kartentypen und Kartennummern erstellen.
 3. Einrichten von Shopzahlungsmethoden Ordnen Sie die Zahlungsmethoden den einzelnen Shops zu, und geben Sie dann für jede Zahlungsmethode shopspezifische Einstellungen ein.
 4. Einrichten von Kartenzahlungsmethoden für Shops Schließen Sie für alle Zahlungsmittel vom Typ "Karte", die im Shop akzeptiert werden, die Karteneinrichtung ab.
+
+## <a name="handle-change-tendering-for-payment-methods"></a>Zahlungsmittel für Rückgeld für Zahlungsmethoden bearbeiten
+
+Einige Zahlungsmethoden unterstützen keine direkte Rückgeldzahlung, wenn bei Transaktionen am Point-of-Sale Gelder an Kunden zurückgezahlt werden. Nur die Zahlungsmethoden **Bargeld** und **Währung** können verwendet werden, um Rückgeld zu leisten. 
+
+Um Fälle zu behandeln, in denen während einer Transaktion Rückgeldzahlungen erforderlich sind, die Zahlungsmethode dies jedoch nicht unterstützt, können Sie eine Zahlungsmethode **Rückgeld - Zahlungsmittel** definieren. Wählen Sie beim Einrichten von Shop-Zahlungsmethoden für den Shop die zu verwendende Zahlungsmethode aus. Geben Sie dann im Abschnitt **Ändern** im Feld **Rückgeld - Zahlungsmittel** eine Zahlungsoption für das Rückgeldzahlungsmittel ein. Sie können beispielsweise **1** eingeben, um anzugeben, dass Bargeld als Zahlungsoption für Rückgeld verwendet werden kann.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

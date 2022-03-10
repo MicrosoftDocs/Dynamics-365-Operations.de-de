@@ -2,11 +2,9 @@
 title: Debitorenzahlungen für einen Teilbetrag
 description: Es kann vorkommen, dass Debitoren eine Zahlung leisten, die geringer als der in der Rechnung gestellte Betrag ist. In diesem Artikel werden die verschiedenen Möglichkeiten der Vorgehensweise in einer solchen Situation beschrieben. Die zur Verfügung stehenden Optionen sind von den jeweiligen Geschäftsanforderungen und der Konfiguration abhängig.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 01/08/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPaymEntry
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 382efadbac2cece209331c79de4095586f12d4a7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2b4a930f7bb070d3105eff3978774bfd8a3ffbfd2b8eb77097028411da619c64
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5012216"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769034"
 ---
 # <a name="customer-payments-for-a-partial-amount"></a>Debitorenzahlungen für einen Teilbetrag
 
@@ -30,8 +28,7 @@ ms.locfileid: "5012216"
 
 Es kann vorkommen, dass Debitoren eine Zahlung leisten, die geringer als der in der Rechnung gestellte Betrag ist. In diesem Artikel werden die verschiedenen Möglichkeiten der Vorgehensweise in einer solchen Situation beschrieben. Die zur Verfügung stehenden Optionen sind von den jeweiligen Geschäftsanforderungen und der Konfiguration abhängig.
 
-<a name="partial-payment-with-no-discount"></a>Teilzahlung ohne Rabatte
---------------------------------
+## <a name="partial-payment-with-no-discount"></a>Teilzahlung ohne Rabatte
 
 Debitoren könnten eine Teilzahlung leisten, da sie derzeit nicht genügend Bargeld haben, um die Rechnung vollständig zu bezahlen, oder weil es eine Streitigkeit zu einem Rechnungsposten gibt. In diesem Fall kann die Rechnung mit der Zahlung teilweise ausgeglichen werden. Die Rechnung bleibt offen und zeigt einen offenen Saldo.
 
@@ -59,3 +56,6 @@ Debitoren machen möglicherweise eine Teilzahlung, in der der verbleibende Betra
 
 
 Weitere Informationen finden Sie unter [Überfällige Debitorenzahlungen](tasks/deposit-customer-payments.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

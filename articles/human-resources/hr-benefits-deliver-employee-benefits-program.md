@@ -1,8 +1,8 @@
 ---
 title: Mitarbeitervergütungsprogramm bereitstellen
-description: Dieser Artikel beschreibt, wie Vorteilselemente erstellt werden, die verwendet werden, wenn ein neuer Vorteil erstellt wird.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Dieses Thema erklärt, wie Sie Leistungselemente erstellen, die beim Erstellen einer neuen Leistung verwendet werden.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,21 +10,24 @@ ms.search.form: HcmBenefitElementSetup, HcmBenefit, HcmBenefitNewBenefit, HcmBen
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: eba305a6a5e1b32636e17bba090047d6167ecebd4f0fe49b17b5267c71b98773
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 868ddb9b372b90ec75a5f35ebf3c987f2d39bd74
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757014"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066067"
 ---
 # <a name="deliver-employee-benefits-program"></a>Mitarbeitervergütungsprogramm bereitstellen
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dieser Artikel beschreibt, wie Vorteilselemente erstellt werden, die verwendet werden, wenn ein neuer Vorteil erstellt wird. Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USMF. Diese Aufgabe ist für einen "Leiter Vergütungen/Bezüge" vorgesehen.
+Dieses Thema erklärt, wie Sie Leistungselemente erstellen, die beim Erstellen einer neuen Leistung verwendet werden. Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USMF. Diese Aufgabe ist für einen "Leiter Vergütungen/Bezüge" vorgesehen.
 
 
 ## <a name="create-benefit-elements"></a>Vorteilselemente erstellen

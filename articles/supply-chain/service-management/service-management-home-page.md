@@ -1,26 +1,25 @@
 ---
 title: Service Management Übersicht
 description: Mit der Serviceverwaltung können Sie Serviceverträge und Daueraufträge einrichten, Serviceaufträge und Debitorenanfragen handhaben und die Servicebereitstellung für Kunden verwalten und analysieren.
-author: ShylaThompson
+author: kamaybac
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 915815d6be726141aa78d55c4fe98b75ae762189
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b9b8444c635fe08a224314d1b76de5ac8d9defbc
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835893"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983021"
 ---
 # <a name="service-management-overview"></a>Service Management Übersicht
 
@@ -47,7 +46,7 @@ Mithilfe der Berichtstools können Sie Gewinnspannen für Serviceaufträge und D
 
 Im folgenden Diagramm werden die Geschäftsprozesse auf oberer Ebene für **Serviceverwaltung** dargestellt. Das Diagramm veranschaulicht, wo Serviceprozesse in andere Module integriert werden.
 
-[![Geschäftsprozessdiagramm für Serviceverwaltung](./media/sm_home_page.gif)](./media/sm_home_page.gif)
+[![Geschäftsprozessdiagramm für Serviceverwaltung.](./media/sm_home_page.gif)](./media/sm_home_page.gif)
 
 ## <a name="service-management-at-a-glance"></a>Serviceverwaltung auf einen Blick
 
@@ -61,10 +60,10 @@ Im folgenden Diagramm werden die Geschäftsprozesse auf oberer Ebene für **Serv
 
 ## <a name="integration-of-service-management"></a>Integration der Serviceverwaltung
 
-Die Serviceverwaltung kann in die folgenden Module in  integriert werden:
+Die Serviceverwaltung kann in die folgenden Module in integriert werden:
 
   - [Vertrieb und Marketing – Übersicht](../sales-marketing/overview-sales-marketing.md)
-  - [Personalverwaltung](https://docs.microsoft.com/dynamics365/unified-operations/talent/index)
+  - [Personalverwaltung](/dynamics365/unified-operations/talent/index)
 
   
 

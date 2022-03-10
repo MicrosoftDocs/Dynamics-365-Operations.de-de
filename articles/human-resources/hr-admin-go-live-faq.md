@@ -2,15 +2,12 @@
 title: FAQ live schalten
 description: In diesem Thema werden häufig gestellte Fragen zur Liveschaltung mit einem Dynamics 365 Human Resources Implementierungsprojekt behandelt.
 author: rachel-profitt
-manager: tfehr
 ms.date: 10/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,16 +15,21 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c5041d515b261bb3e4b14885e0ec0ce788edf729
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: c449ae6eb84fb4150072c386d02b100ca3cca219
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5112651"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067225"
 ---
 # <a name="go-live-faq"></a>FAQ live schalten 
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+
 
 In diesem Thema werden häufig gestellte Fragen zur Liveschaltung mit einem Dynamics 365 Human Resources Implementierungsprojekt behandelt. 
 
@@ -48,7 +50,7 @@ Eine Liste der Voraussetzungen finden Sie unter [Bereiten Sie sich auf die Inb
 
 ## <a name="what-is-a-go-live-assessment"></a>Was ist eine Go-Live-Bewertung?  
 
-Die Go-Live-Bewertung ist Teil des [Microsoft FastTrack-Programms](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview). Während dieser Überprüfung bewertet ein Lösungsarchitekt, ob ein Implementierungsprojekt für eine erfolgreiche Umstellung und Inbetriebnahme bereit ist. Diese Überprüfung ist für jedes Implementierungsprojekt obligatorisch, bevor Sie die Inbetriebnahme in einer Produktionsumgebung anfordern können. 
+Die Go-Live-Bewertung ist Teil des [Microsoft FastTrack-Programms](/dynamics365/fasttrack/). Während dieser Überprüfung bewertet ein Lösungsarchitekt, ob ein Implementierungsprojekt für eine erfolgreiche Umstellung und Inbetriebnahme bereit ist. Diese Überprüfung ist für jedes Implementierungsprojekt obligatorisch, bevor Sie die Inbetriebnahme in einer Produktionsumgebung anfordern können. 
 
 ## <a name="our-sandbox-environments-are-deployed-in-the-central-us-datacenter-we-want-our-production-environments-to-be-deployed-in-the-west-us-datacenter-can-i-select-west-us-as-the-datacenter-in-my-production-configuration"></a>Unsere Sandbox-Umgebungen werden im zentralen US-Rechenzentrum bereitgestellt. Wir möchten, dass unsere Produktionsumgebungen im Rechenzentrum im Westen der USA bereitgestellt werden. Kann ich in meiner Produktionskonfiguration West US als Rechenzentrum auswählen? 
 
@@ -56,7 +58,7 @@ LCS hindert Sie nicht daran, ein anderes Rechenzentrum auszuwählen, wenn Sie ei
 
 Wenn Sie möchten, dass sich Ihre Produktionsumgebung im Rechenzentrum in den USA befindet, sollten Sie zuerst Ihre Sandbox-Umgebungen im Rechenzentrum in den USA erneut bereitstellen, testen und abmelden. 
 
-Informationen zur Auswahl des richtigen Rechenzentrums finden Sie unter [Netzwerkanforderungen](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements#network-requirements). 
+Informationen zur Auswahl des richtigen Rechenzentrums finden Sie unter [Netzwerkanforderungen](../fin-ops-core/fin-ops/get-started/system-requirements.md#network-requirements). 
 
 ## <a name="what-level-of-access-do-i-have-to-the-azure-resources-for-my-human-resources-environments"></a>Welche Zugriffsebene habe ich für meine Personalumgebungen auf die Azure-Ressourcen?  
 
@@ -64,7 +66,7 @@ Der Zugriff auf die Personalumgebungen ist begrenzt. Sie können nicht auf die v
 
 Sie können zwar nicht auf Ihre Azure-Ressourcen Dynamics 365 Human Resources Umgebungen direkt zugreifen, aber es gibt es zusätzliche Funktionen, mit denen Sie auf Ihre Daten zugreifen können:
 
-- Sie können eine Azure SQL-Datenbank in Ihrem eigenen Azure-Mandanten bereitstellen und die BYOD-Funktion (Bring Your Own Database) zum Synchronisieren von Daten verwenden. Weitere Informationen finden Sie unter [Eigene Datenbank nutzen (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database).
+- Sie können eine Azure SQL-Datenbank in Ihrem eigenen Azure-Mandanten bereitstellen und die BYOD-Funktion (Bring Your Own Database) zum Synchronisieren von Daten verwenden. Weitere Informationen finden Sie unter [Eigene Datenbank nutzen (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md).
 
 - Sie können Dataverse Integration zum Synchronisieren ausgewählter Entitäten in die Dataverse Datenbank verwenden. Weitere Informationen finden Sie in den [Dataverse-Tabellen](hr-developer-entities.md). 
 
@@ -80,11 +82,11 @@ Datenbanken werden durch automatische Sicherungen mit den folgenden Frequenzen g
 
 Microsoft verfügt über ausreichende Sicherungen, um die Point-in-Time-Wiederherstellung (PITR) innerhalb der letzten 14 Tage zu ermöglichen. 
 
-Weitere Informationen über Sicherungen finden Sie unter  [Informationen zu automatischen SQL-Datenbanksicherungen](https://docs.microsoft.com/azure/azure-sql/database/automated-backups-overview?tabs=single-database). 
+Weitere Informationen über Sicherungen finden Sie unter  [Informationen zu automatischen SQL-Datenbanksicherungen](/azure/azure-sql/database/automated-backups-overview?tabs=single-database). 
 
 ## <a name="can-i-request-a-copy-of-the-backup-of-my-production-database"></a>Kann ich eine Kopie der Sicherung meiner Produktionsdatenbank anfordern? 
 
-Nr. Sie können jedoch eine Datenbankaktualisierungsdienstanforderung senden, um Ihre Produktionsumgebung in Ihre Sandbox-Umgebung zu kopieren. Sie können eine Azure SQL-Datenbank in Ihrem eigenen Azure-Mandanten bereitstellen und die BYOD-Funktion zum Synchronisieren von Daten aus Ihrer Produktionsumgebung verwenden. Weitere Informationen finden Sie unter [Eigene Datenbank nutzen (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database). 
+Nr. Sie können jedoch eine Datenbankaktualisierungsdienstanforderung senden, um Ihre Produktionsumgebung in Ihre Sandbox-Umgebung zu kopieren. Sie können eine Azure SQL-Datenbank in Ihrem eigenen Azure-Mandanten bereitstellen und die BYOD-Funktion zum Synchronisieren von Daten aus Ihrer Produktionsumgebung verwenden. Weitere Informationen finden Sie unter [Eigene Datenbank nutzen (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md). 
 
 ## <a name="how-do-i-move-my-sandbox-environment-to-production-for-go-live"></a>Wie verschiebe ich meine Sandbox-Umgebung für die Inbetriebnahme in die Produktion? 
 
@@ -94,8 +96,11 @@ Wir empfehlen, während des gesamten Projekts eine übersichtliche Liste der in 
 
 ## <a name="what-should-i-do-if-my-production-environment-is-down"></a>Was soll ich tun, wenn meine Produktionsumgebung nicht verfügbar ist? 
 
-Befolgen Sie die unter  [Produktionsausfall melden](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/report-production-outage) beschriebenen Schritte. 
+Befolgen Sie die unter  [Produktionsausfall melden](../fin-ops-core/dev-itpro/lifecycle-services/report-production-outage.md) beschriebenen Schritte. 
 
  ## <a name="see-also"></a>Siehe auch
 
  [Liveschaltung vorbereiten](hr-admin-go-live-prepare.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

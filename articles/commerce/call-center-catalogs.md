@@ -2,16 +2,13 @@
 title: Callcenterkataloge
 description: Dieses Thema beschreibt die spezifische Funktionalität für Callcenter für Kataloge in Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, RetailCatalogDetails
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16231
 ms.assetid: f28a827c-3a50-4d5e-83eb-e5a768db70a1
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9abe493746719d2e229ef09c2eb5f436b91b2171
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: 6fae877b04fdbd84e1c2508f91bbf53b5412b350c5d2c8978aafb2d7f49783f6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4412712"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742511"
 ---
 # <a name="call-center-catalogs"></a>Callcenterkataloge
 
@@ -40,11 +37,11 @@ Direct-to-Consumer-Marketing-Unternehmen sind sehr darauf ausgerichtet, die Reak
 
 ## <a name="basic-catalog-setup"></a>Grundlegende Katalogeinrichtung
 
-Gehen Sie zu **Retail und Commerce**\> **Kataloge und Sortimente** \> **Alle Kataloge**, um Ihren Katalog zu konfigurieren.
+Gehen Sie zu **Einzelhandel und Handel**\> **Kataloge und Sortimente** \> **Alle Kataloge**, um Ihren Katalog zu konfigurieren.
 
-Wenn Sie einen neuen Katalog anlegen, müssen Sie diesen zunächst mit einem oder mehreren Kanälen verknüpfen. Dies geschieht im Inforegister **Commerce-Kanäle** im Formular **Katalogeinrichtung**. Klicken Sie auf **Hinzufügen** und wählen Sie einen oder mehrere Kanäle aus. Nur Artikel, die mit dem ausgewählten Kanal [Sortimente](https://docs.microsoft.com/dynamics365/unified-operations/retail/assortments) verknüpft sind, können bei der Erstellung des Katalogs verwendet werden.
+Wenn Sie einen neuen Katalog anlegen, müssen Sie diesen zunächst mit einem oder mehreren Kanälen verknüpfen. Dies geschieht im Inforegister **Commerce-Kanäle** im Formular **Katalogeinrichtung**. Klicken Sie auf **Hinzufügen** und wählen Sie einen oder mehrere Kanäle aus. Nur Artikel, die mit dem ausgewählten Kanal [Sortimente](/dynamics365/unified-operations/retail/assortments) verknüpft sind, können bei der Erstellung des Katalogs verwendet werden.
 
-Um Produkte in einen Katalog aufzunehmen, muss eine Navigationshierarchie gewählt werden. Die Navigationshierarchie unterstützt die Kategoriestruktur für den Katalog. Sie müssen aus einer der Navigationshierarchien wählen, die mit den ausgewählten Kanäle auf dem Inforegister **Commerce-Kanäle** der Seite **Katalog** verknüpft sind. Wenn ein Navigationskanal vorher nicht mit einem Kanal verknüpft war, gehen Sie zu **Retail und Commerce** \>**Kanaleinrichtung**\>**Kanalkategorien und Produktattribute**, um eine Navigationshierarchievorgabe mit jedem Ihrer Einzelhandelskanäle zu verknüpfen.
+Um Produkte in einen Katalog aufzunehmen, muss eine Navigationshierarchie gewählt werden. Die Navigationshierarchie unterstützt die Kategoriestruktur für den Katalog. Sie müssen aus einer der Navigationshierarchien wählen, die mit den ausgewählten Kanäle auf dem Inforegister **Commerce-Kanäle** der Seite **Katalog** verknüpft sind. Wenn ein Navigationskanal vorher nicht mit einem Kanal verknüpft war, gehen Sie zu **Einzelhandel und Handel** \>**Kanaleinrichtung**\>**Kanalkategorien und Produktattribute**, um eine Navigationshierarchievorgabe mit jedem Ihrer Einzelhandelskanäle zu verknüpfen.
 
 Klicken Sie auf der Menüregisterkarte **Kataloge** auf der Seite **Katalogeinrichtung** auf **Produkte hinzufügen**, um die Produkte zu konfigurieren, die dem Katalog hinzugefügt werden sollen, oder wählen Sie einen Knoten in der Navigationshierarchie aus (die Auswahl eines Knotens ändert die Bildschirmdarstellung und ermöglicht Ihnen, Produkte direkt zu einer Kategorie innerhalb des Katalogs hinzuzufügen)
 
@@ -52,7 +49,7 @@ Klicken Sie auf den obersten Knoten der Kataloghierarchie, um in die Kopfansicht
 
 Bevor der Katalog verwendet werden kann, muss er veröffentlicht werden. Klicken Sie auf **Katalog überprüfen** im Menü **Kataloge**, um die Prüfung zu verarbeiten. Dies ist eine notwendige Aktivität und bestätigt, dass die erforderliche Einstellung korrekt ist. Klicken Sie auf **Ergebnisse anzeigen**, um die Details der Prüfung zu sehen. Wenn Fehler gefunden werden, müssen Sie die Daten korrigieren und die Prüfung erneut durchführen, bis die Prüfung abgeschlossen ist.
 
-Nachdem die Prüfung bestätigt wurde, klicken Sie im Menü auf **Workflow**, um den Genehmigungs-Workflow zu starten. Klicken Sie auf **Senden** im Menü **Workflow**, um den Vorgang ausführen. Konfigurieren Sie die Schritte und berechtigten Benutzer für den Workflow von **Retail und Commerce**\>**Headquarters-Einstellungen**\>**Commerce-Workflows**. Der Workflow definiert die Schritte, die notwendig sind, um den Katalog in den Status **Genehmigt** zu bringen. Wenn sich der Katalog im Status **Genehmigt** befindet, können Sie auf die Option **Veröffentlichen** im Menü **Kataloge** klicken, um den Vorgang abzuschließen. Nachdem der Katalog in einem Status **Veröffentlicht** ist, kann er in der Callcenterauftragserfassung verwendet werden und Katalogprozesse senden.
+Nachdem die Prüfung bestätigt wurde, klicken Sie im Menü auf **Workflow**, um den Genehmigungs-Workflow zu starten. Klicken Sie auf **Senden** im Menü **Workflow**, um den Vorgang ausführen. Konfigurieren Sie die Schritte und berechtigten Benutzer für den Workflow von **Einzelhandel und Handel**\>**Headquarters-Einstellungen**\>**Commerce-Workflows**. Der Workflow definiert die Schritte, die notwendig sind, um den Katalog in den Status **Genehmigt** zu bringen. Wenn sich der Katalog im Status **Genehmigt** befindet, können Sie auf die Option **Veröffentlichen** im Menü **Kataloge** klicken, um den Vorgang abzuschließen. Nachdem der Katalog in einem Status **Veröffentlicht** ist, kann er in der Callcenterauftragserfassung verwendet werden und Katalogprozesse senden.
 
 ## <a name="use-catalogs-to-drive-sales-order-pricing-and-promotions"></a>Verwenden Sie Kataloge, um Auftragspreiskalkulation und verkaufsfördernde Maßnahmen voranzutreiben
 
@@ -64,7 +61,7 @@ Im Inforegister **Quellcodes** klicken Sie auf **Hinzufügen**, um eine oder meh
 
 ## <a name="use-the-source-id-to-track-costs-and-response-rates"></a>Verwenden Sie die Quellenkennung, um Kosten und Rücklaufquoten zu verfolgen.
 
-Bei der Definition der **Quellcodekennung** können Sie diese Kennung optional mit einer **Zielmarktkennung** verknüpfen. Die **Zielmarktkennung** kann unter **Retail und Commerce** \> **Kunden** \> **Zielmarkt** definiert werden. Der Zielmarkt ist eine Liste der Kunden und/oder Interessenten, die zu einem benutzerdefinierten Segment gehören. Die Verknüpfung der Kunden- oder Interessentendaten mit der Quellcodekennung ermöglicht eine bessere Einsicht in die Empfänger des Katalogs. Wenn ein Kunde mit einem Zielmarkt verbunden ist und dieser Zielmarkt mit einer aktiven Quellcodekennung/Katalog verknüpft ist, können Call-Center-Benutzer sehen, welche Kataloge ein Kunde erhalten hat, indem sie den Menüpunkt **Quellcodes** auf der Registerkarte **Kunden** auf der Seite **Kundenservice** auswählen. Während der Auftragserfassung können Call-Center-Benutzer auch die spezifischen Kataloge sehen, die einem Kunden in der Dropdown-Liste **Quelle** auf dem Auftragsauftragskopf gesendet wurden. Das Ändern des Filters von **Alle** auf **Angestrebt** erlaubt dem Benutzer, die spezifischen aktiven Kataloge zu sehen, die dem Kunden gesendet wurde. Dies ist hilfreich, wenn der Kunde seinen Katalog vergessen hat oder den Katalogcode beim Anlegen eines Auftrags nicht finden oder lesen kann.
+Bei der Definition der **Quellcodekennung** können Sie diese Kennung optional mit einer **Zielmarktkennung** verknüpfen. Die **Zielmarktkennung** kann unter **Einzelhandel und Handel** \> **Kunden** \> **Zielmarkt** definiert werden. Der Zielmarkt ist eine Liste der Kunden und/oder Interessenten, die zu einem benutzerdefinierten Segment gehören. Die Verknüpfung der Kunden- oder Interessentendaten mit der Quellcodekennung ermöglicht eine bessere Einsicht in die Empfänger des Katalogs. Wenn ein Kunde mit einem Zielmarkt verbunden ist und dieser Zielmarkt mit einer aktiven Quellcodekennung/Katalog verknüpft ist, können Call-Center-Benutzer sehen, welche Kataloge ein Kunde erhalten hat, indem sie den Menüpunkt **Quellcodes** auf der Registerkarte **Kunden** auf der Seite **Kundenservice** auswählen. Während der Auftragserfassung können Call-Center-Benutzer auch die spezifischen Kataloge sehen, die einem Kunden in der Dropdown-Liste **Quelle** auf dem Auftragsauftragskopf gesendet wurden. Das Ändern des Filters von **Alle** auf **Angestrebt** erlaubt dem Benutzer, die spezifischen aktiven Kataloge zu sehen, die dem Kunden gesendet wurde. Dies ist hilfreich, wenn der Kunde seinen Katalog vergessen hat oder den Katalogcode beim Anlegen eines Auftrags nicht finden oder lesen kann.
 
 Es ist möglich, mehrere Quellcodekennungen mit einem Katalog zu verknüpfen. Dies ist häufig erforderlich, wenn ein Unternehmen die Antwortgeschwindigkeit nach verschiedenen Segmenten verfolgen möchte. Das Unternehmen gibt verschiedenen Kundensegmenten einen eindeutigen Katalogcode, der es ermöglicht, die Antwortgeschwindigkeit bis auf Segmentebene innerhalb eines bestimmten Katalogereignisses zu verfolgen.
 
@@ -88,11 +85,11 @@ Weitere/ergänzende Verkaufsartikel können auch die Skriptfunktionen nutzen, um
 
 Auf der Registerkarte **Kataloge** stehen Optionen zur Verfügung, um **Katalogseiten** zu konfigurieren. Mit dieser Funktion können Sie bestimmte Seiten und Seitentypen für den gedruckten Katalog und die ihnen zugeordneten Kosten definieren.
 
-Wenn Sie die Produkte im Katalog konfigurieren, verwenden Sie die Aktivität **Produktseitenlayout**, um die spezifischen Seiten, den Prozentsatz der Seite und die Position der Seitendetails für den Artikel zu definieren. Die Konfiguration dieser Daten ermöglicht es den Benutzern, die Vorteile des **Katalogbereichsanalyse-Bericht** zu nutzen. Dieser Bericht wird gefunden, indem Sie zu **Retail und Commerce** \> **Callcenter-Berichte** \> **Katalogbereichsanalyse**-Bericht navigieren. Dieser Bericht analysiert die Verkäufe gegen den Katalog (Aufträge, bei denen die Quellkennung für den Katalog an den Auftragskopf oder die Auftragszeile gebunden war) und die damit verbundenen Seiten- und Kostenanteile, um einen traditionellen Direktmarketing- **Quadratzollanalyse**-Bericht zu erstellen.
+Wenn Sie die Produkte im Katalog konfigurieren, verwenden Sie die Aktivität **Produktseitenlayout**, um die spezifischen Seiten, den Prozentsatz der Seite und die Position der Seitendetails für den Artikel zu definieren. Die Konfiguration dieser Daten ermöglicht es den Benutzern, die Vorteile des **Katalogbereichsanalyse-Bericht** zu nutzen. Dieser Bericht wird gefunden, indem Sie zu **Einzelhandel und Handel** \> **Callcenter-Berichte** \> **Katalogbereichsanalyse**-Bericht navigieren. Dieser Bericht analysiert die Verkäufe gegen den Katalog (Aufträge, bei denen die Quellkennung für den Katalog an den Auftragskopf oder die Auftragszeile gebunden war) und die damit verbundenen Seiten- und Kostenanteile, um einen traditionellen Direktmarketing- **Quadratzollanalyse**-Bericht zu erstellen.
 
 ## <a name="catalog-requests"></a>Kataloganforderungen
 
-Da Kataloge in Commerce konfiguriert und veröffentlicht werden, kann die Funktion **Katalog senden** genutzt werden. Diese Funktion ist auf den Seiten **Kundensuche** und **Kundendienst** verfügbar. Nach der Auswahl eines Kundendatensatzes über **Kundensuche** oder während der Anzeige eines ausgewählten Kundenkontos über **Kundenservice** kann der Benutzer die Option **Katalog senden** auswählen, die ein Dialogfeld öffnet, in dem der Benutzer aus einer Liste aller veröffentlichten und aktiven Kataloge auswählen kann. Ein Benutzer kann einen Katalog und eine Menge sowie eine bestimmte Quellcodekennung zum Versenden auswählen. Wenn sie auf die Schaltfläche **Senden** klicken, wird eine Anforderung gespeichert, die dann durch Drucken des Berichts **Kataloganforderungen** verwaltet werden kann. Dieser Bericht wird gefunden, indem Sie zu **Retail und Commerce** \> **Callcenter-Berichte** \> **Bericht „Kataloganforderungen”** navigieren. Er listet alle Kataloganforderungen auf, einschließlich des Kundennamens und der Adressdaten des Kunden, der den Katalog angefordert hat. Dieser Report kann intern verwendet werden oder die Daten können auch an eine dritte Partei übermittelt werden, die externe Prozesse zur physischen Versendung des Katalogs an den Kunden unterstützt.
+Da Kataloge in Commerce konfiguriert und veröffentlicht werden, kann die Funktion **Katalog senden** genutzt werden. Diese Funktion ist auf den Seiten **Kundensuche** und **Kundendienst** verfügbar. Nach der Auswahl eines Kundendatensatzes über **Kundensuche** oder während der Anzeige eines ausgewählten Kundenkontos über **Kundenservice** kann der Benutzer die Option **Katalog senden** auswählen, die ein Dialogfeld öffnet, in dem der Benutzer aus einer Liste aller veröffentlichten und aktiven Kataloge auswählen kann. Ein Benutzer kann einen Katalog und eine Menge sowie eine bestimmte Quellcodekennung zum Versenden auswählen. Wenn sie auf die Schaltfläche **Senden** klicken, wird eine Anforderung gespeichert, die dann durch Drucken des Berichts **Kataloganforderungen** verwaltet werden kann. Dieser Bericht wird gefunden, indem Sie zu **Einzelhandel und Handel** \> **Callcenter-Berichte** \> **Bericht „Kataloganforderungen”** navigieren. Er listet alle Kataloganforderungen auf, einschließlich des Kundennamens und der Adressdaten des Kunden, der den Katalog angefordert hat. Dieser Report kann intern verwendet werden oder die Daten können auch an eine dritte Partei übermittelt werden, die externe Prozesse zur physischen Versendung des Katalogs an den Kunden unterstützt.
 
 ## <a name="additional-features"></a>Zusätzliche Funktionen
 
@@ -100,4 +97,7 @@ Auf der Registerkarte **Kataloge** sind auch Optionen zur Konfiguration eines **
 
 ## <a name="additional-notes"></a>Weitere Hinweise
 
-Derzeit wird eine Quellcodekennung für einen Kundenauftrag im Call Center verwendet, um Preise, Aktionen, Skripte und weitere/ergänzende Verkäufe, die katalogspezifisch sind, zu steuern. Das System verbietet oder verhindert nicht, daß ein Produkt, das nicht im Katalog enthalten ist, auf dem Auftrag bestellt wird. Wenn ein Artikel bestellt wird, der nicht Teil des Katalogs ist, verwendet das System zunächst die **Preisgruppe** die auf dem Callcenterkanal definiert ist (**Retail und Commerce** \>**Kanäle** \> **Callcenter** \> **Alle Callcenter**) für Artikelpreise oder Aktionen. Wenn kein bestimmter Kanalpreis gefunden wird, wird der Basisverkaufspreis des Artikels verwendet.
+Derzeit wird eine Quellcodekennung für einen Kundenauftrag im Call Center verwendet, um Preise, Aktionen, Skripte und weitere/ergänzende Verkäufe, die katalogspezifisch sind, zu steuern. Das System verbietet oder verhindert nicht, daß ein Produkt, das nicht im Katalog enthalten ist, auf dem Auftrag bestellt wird. Wenn ein Artikel bestellt wird, der nicht Teil des Katalogs ist, verwendet das System zunächst die **Preisgruppe** die auf dem Callcenterkanal definiert ist (**Einzelhandel und Handel** \>**Kanäle** \> **Callcenter** \> **Alle Callcenter**) für Artikelpreise oder Aktionen. Wenn kein bestimmter Kanalpreis gefunden wird, wird der Basisverkaufspreis des Artikels verwendet.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

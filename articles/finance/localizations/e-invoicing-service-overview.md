@@ -3,7 +3,7 @@ title: Informationen zur elektronischen Rechnungsstellung
 description: Dieses Thema enthält Informationen zur elektronischen Rechnungsstellung in Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management.
 author: gionoder
 ms.date: 03/29/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c3a0cc24a77b29cedaa10ebb4d6e2ad2a4cbf629
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 6983abeb4d0fdd1a595a53ea0fd9cd840b24030b
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344757"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983850"
 ---
 # <a name="electronic-invoicing-overview"></a>Informationen zur elektronischen Rechnungsstellung
 
@@ -50,8 +50,10 @@ Derzeit steht Kunden die elektronische Rechnungsstellung über das Vorschauprogr
 
 Die elektronische Rechnungsstellung wird in den folgenden Azure-Regionen bereitgestellt:
 
-- Vereinigte Staaten
+- USA
 - Europa
+- Vereinigtes Königreich
+- Asien
 
 > [!NOTE]
 > Die elektronische Rechnungsstellung unterstützt keine lokalen Bereitstellungen.

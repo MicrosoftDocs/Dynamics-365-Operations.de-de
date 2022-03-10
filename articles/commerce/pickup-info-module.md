@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-09021
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 063701d5cd5714febeb32907346d9f6e5c2a2ca1
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 52015fb973642bfc6f45901e7c1a265f0ccfc415b1324bc62ef77a5fc72550bb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804404"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764560"
 ---
 # <a name="pickup-information-module"></a>Abholinformationsmodul
 
@@ -40,7 +40,7 @@ Wenn mehrere Artikel für die Abholung in mehreren Filialen ausgewählt werden, 
 
 Die folgende Abbildung zeigt ein Beispiel für die Auswahl eines Zeitfensters über das Abholinformationsmodul auf einer Auftragsabschlussseite.
 
-![Beispiel eines Abholinformationsmoduls auf einer Auftragsabschlussseite](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![Beispiel eines Abholinformationsmoduls auf einer Auftragsabschlussseite.](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## <a name="module-properties"></a>Moduleigenschaften
 
@@ -56,7 +56,7 @@ Anweisungen zum Hinzufügen eines Abholinformationsmoduls zu einer Auftragsabsch
 
 Die folgende Abbildung zeigt ein Beispiel für eine E-Commerce-Auftragsabschlussseite, die Zeitfenster für Abholpositionsartikel enthält.
 
-![Beispiel für eine E-Commerce-Auftragsabschlussseite, die Zeitfenster für Abholpositionen enthält](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Beispiel für eine E-Commerce-Auftragsabschlussseite, die Zeitfenster für Abholpositionen enthält.](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

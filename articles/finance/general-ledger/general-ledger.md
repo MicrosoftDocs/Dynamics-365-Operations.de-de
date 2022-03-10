@@ -2,27 +2,27 @@
 title: Hauptbuch und Finanzberichterstellung-Übersicht
 description: Verwenden Sie das Hauptbuch zum Verwalten der Finanzdatensätze der juristischen Person.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/14/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: GeneralJournalEntryWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 65431
+ms.custom:
+- "65431"
+- intro-internal
 ms.assetid: d2c604df-daae-42cd-82d9-c80e3dee4a60
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3fc00cc29e37c853d7cabfa928d8e069c40a581
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 639d77e43fc9a55e43ebb030f8fc292ce8fb7fce
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5249190"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985236"
 ---
 # <a name="general-ledger-home-page"></a>Hauptbuch-Homepage
 
@@ -36,10 +36,10 @@ Verwenden Sie das Hauptbuch zum Verwalten der Finanzdatensätze der juristischen
 Sie können Geldbeträge auf Grundlage von Zuordnungsregeln einem oder mehreren Konten oder einer Kombination von Konten und Dimensionen zuteilen bzw. verteilen. Zur Verfügung stehen zwei Arten von Zuteilungen: fest und variabel. Sie können auch Buchungen zwischen Sachkonten ausgleichen und Währungsbeträge neu bewerten. Am Ende eines Geschäftsjahrs müssen Sie Abschlussbuchungen generieren und die Konten für das nächste Geschäftsjahr vorbereiten. Sie können die Konsolidierungsfunktion verwenden, um die finanziellen Ergebnisse mehrerer juristischer Personen vom Typ Tochtergesellschaft in Ergebnissen für nur eine konsolidierte Organisation zusammenzufassen. Die Tochtergesellschaften können sich in der gleichen Datenbank oder in anderen Datenbanken befinden.
 
 - [Konsolidierungs- und Löschungsüberblick](../budgeting/consolidation-elimination-overview.md)
-- [Kontosalden für das Hauptbuch](general-ledger-account-balances.md)
+- [Kontosalden für Sachkonto](general-ledger-account-balances.md)
 - [Finanzdimensionen](financial-dimensions.md)
 
-[![Geschäftsprozess](./media/GL-process.PNG)](./media/GL-process.PNG)
+[![Geschäftsprozess.](./media/GL-process.PNG)](./media/GL-process.PNG)
 
 ## <a name="sales-tax"></a>Mehrwertsteuer
 Jedes Unternehmen erfasst und zahlt Steuern an verschiedene Steuerbehörden. Die Regeln und Sätze unterscheiden sich je nach Land/Region, Bundesland, Landkreis und Ort.
@@ -54,14 +54,14 @@ Zudem müssen sie in regelmäßigen Abständen aktualisiert werden, wenn Steuerb
 
 #### <a name="whats-new-and-in-development"></a>Neuigkeiten und Entwicklungen
 
-Lesen Sie die [Microsoft Dynamics 365-Veröffentlichungspläne](https://go.microsoft.com/fwlink/?linkid=2010158), um zu erfahren, welche neuen Funktionen geplant wurden. 
+Lesen Sie die [Microsoft Dynamics 365-Veröffentlichungspläne](/dynamics365/release-plans/), um zu erfahren, welche neuen Funktionen geplant wurden. 
 
 #### <a name="financial-reporting"></a>Finanzberichterstellung
 Weitere Informationen zu Financial Reporting finden Sie im Thema [Financial Reporting – Übersicht](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md).
 
 #### <a name="blogs"></a>Blogs
 
-Meinungen, Neuigkeiten und weitere Informationen finden Sie im [Microsoft Dynamics 365-Blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) und dem [Microsoft Dynamics 365 Finance and Operations – Financials-Blog](https://community.dynamics.com/365/financeandoperations/b/financials).
+Meinungen, Neuigkeiten und weitere Informationen zu finden Sie im [Microsoft Dynamics 365-Blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) und dem [Microsoft Dynamics 365 Finance Finanzen und Betrieb – Financials-Blog](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 Der [Microsoft Dynamics Operations-Partner-Community-Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) fasst alle Informationen zu Neuigkeiten und Trends bei Dynamics 365 für Microsoft Dynamics-Partner in einer einzigen Ressource zusammen.
 

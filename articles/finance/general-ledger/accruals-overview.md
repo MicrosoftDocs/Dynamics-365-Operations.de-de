@@ -3,24 +3,26 @@ title: Abgrenzungsüberblick
 description: Dieser Artikel beschreibt Abgrenzungen und gibt Informationen, wie sie aufgesetzt werden und wie Transaktionen erstellt werden.
 author: aprilolson
 ms.date: 01/11/2018
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerAccuralTable
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 14131
+ms.custom:
+- "14131"
+- intro-internal
 ms.assetid: 0489b59a-37a7-4a78-87bf-4b597e9efad9
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a441828cb7db9b5346ecf086e8be0b2c3a20029a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dc3234c1a64155e1d0ad53cb7008d91847f7af7d
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823811"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985286"
 ---
 # <a name="accruals-overview"></a>Abgrenzungsüberblick
 

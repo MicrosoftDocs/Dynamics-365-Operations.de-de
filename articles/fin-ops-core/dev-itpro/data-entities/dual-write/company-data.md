@@ -4,30 +4,23 @@ description: In diesem Thema wird die Integration von Unternehmensdaten zwischen
 author: RamaKrishnamoorthy
 ms.date: 08/04/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 6a858135d377b30d6e8885ae18b2dc50da11813b
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 3657e41363ca6c1ce8eabfeaf3ba6da9b93f5e2a
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941028"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061025"
 ---
 # <a name="company-concept-in-dataverse"></a>Unternehmenskonzept in Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 
 In Finance and Operations ist das Konzept *Unternehmen* sowohl ein juristisches als auch ein unternehmerisches Konstrukt. Es ist außerdem ein Sicherheits- und Sichtbarkeitsgrenze für Daten. Benutzer arbeiten immer im Kontext eines einzelnen Unternehmens, und die meisten Daten werden von dem Unternehmen gekennzeichnet.
@@ -36,37 +29,37 @@ Dataverse hat kein entsprechendes Konzept. Das nächste Konzept ist *Unternehmen
 
 Da Unternehmenseinheit und Unternehmen keine entsprechenden Konzepte sind, ist es nicht möglich, eine 1:1-Zuordnung zum Zwecke der Dataverse-Integration zu erzwingen. Da Benutzer aber standardmäßig in der Lage sein müssen, dieselben Zeilen in der Anwendung und in Dataverse anzuzeigen, hat Microsoft eine neue Tabelle in Dataverse mit dem Namen „cdm\_Company“ eingeführt. Diese Tabelle entspricht der Unternehmenstabelle in der Anwendung. Um sicherzustellen, dass die Sichtbarkeit von Zeilen in der Anwendung und in Dataverse standardmäßig äquivalent ist, empfehlen wir die folgende Einstellung für Daten in Dataverse:
 
-+ Für jede Unternehmensdatenszeile in Finance and Operations, für die duales Schreiben aktiviert ist, wird eine zugehörige cdm\_Company-Zeile erstellt.
++ Für jede Finance und Operations Unternehmenszeile, die für duales Schreiben aktiviert ist, wird eine zugehörige cdm\_Company erstellt.
 + Wenn eine cdm\_Company-Zeile erstellt und für duales Schreiben aktiviert wird, wird eine Standardunternehmenseinheit mit demselben Namen erstellt. Es wird zwar automatisch ein Standardteam für diese Geschäftseinheit erstellt, die Geschäftseinheit wird aber nicht verwendet.
 + Ein separates Eigentümerteam wird erstellt, das denselben Namen hat. Es wird ebenfalls der Geschäftseinheit zugeordnet.
 + Standardmäßig wird der Eigentümer einer beliebigen Zeile, die erstellt und in Dataverse dual geschrieben wird, auf das Team „DW-Eigentümer“ festgelegt, das mit der zugehörigen Unternehmenseinheit verknüpft ist.
 
 Die folgende Abbildung zeigt ein Beispiel für diese Dateneinreichtung in Dataverse.
 
-![Dateneinrichtung in Dataverse](media/dual-write-company-1.png)
+![Dateneinrichtung in Dataverse.](media/dual-write-company-1.png)
 
 Aufgrund dieser Konfiguration ist jede Zeile, due mit dem USMF-Unternehmen verknüpft ist, im Besitz eines Teams, das mit der USFM-Unternehmenseinheit in Dataverse verknüpft ist. Daher kann jeder Benutzer, der über eine Sicherheitsrolle Zugriff auf diese Unternehmenseinheit hat, die auf Sichtbarkeit auf Unternehmenseinheitsebene festgelegt ist, diese Zeilen nun anzeigen. Das folgende Beispiel veranschaulicht, wie Teams verwendet werden können, um den richtigen Zugang zu diesen Zeilen bereitzustellen.
 
 + Die Rolle „Vertriebsmanager“ ist Mitgliedern des Teams „USMF-Vertrieb“ zugewiesen.
 + Benutzer mit der Rolle „Vertriebsmanager“ können auf beliebige Kontozeilen zugreifen, die Mitglieder derselben Unternehmenseinheit wie sie sind.
 + Das Team „USMF-Vertrieb“ wird mit der zuvor erwähnten USMF-Geschäftseinheit verknüpft.
-+ Daher können Mitglieder des Teams „USMF-Vertrieb“ ein beliebiges Konto sehen, das im Besitz des Benutzers „USMF DW“ ist, der aus der Tabelle des USMF-Unternehmens in Finance and Operations stammt.
++ Daher können die Mitglieder des Teams „USMF Sales“ jedes Konto sehen, das dem Benutzer „USMF DW“ gehört und das aus der Tabelle USMF Company in Finance und Operations stammen würde.
 
-![Wie Teams verwendet werden können](media/dual-write-company-2.png)
+![Wie Teams verwendet werden können.](media/dual-write-company-2.png)
 
 Wie in der vorherigen Abbildung dargestellt, ist diese 1:1-Zuordnung zwischen Geschäftseinheit, Unternehmen und Team nur ein Anfangspunkt. In diesem Beispiel wird eine neue Geschäftseinheit „Europa“ manuell in Dataverse als übergeordnetes Element für DEMF und ESMF erstellt. Diese neue Stammgeschäftseinheit ist nicht mit dem dualen Schreiben verknüpft. Sie kann allerdings verwendet werden, um Mitgliedern des Teams „EUR-Vertrieb“ Zugriff auf Kontodaten sowohl in DEMF als auch in ESMF zu gewähren, indem die Datensichtbarkeit in der zugehörigen Sicherheitsrolle auf **Übergeordnete/untergeordnete Geschäftseinheit** festgelegt wird.
 
 Ein abschließendes Thema ist, wie durch das duale Schreiben bestimmt wird, welchem Eigentümerteam Zeilen zugewiesen werden sollen. Dieses Verhalten wird von der Spalte **Standardeigentümerteam** in der Zeile cdm\_Company gesteuert. Wenn eine cdm\_Company-Zeile für duales Schreiben aktiviert ist, erstellt ein Plug-In automatisch die zugewiesene Unternehmenseinheit sowie das Eigentümerteam (wenn nicht bereits vorhanden) und legt die Spalte **Standardeigentümerteam** fest. Der Administrator kann die Spalte in einen anderen Wert ändern. Allerdings kann der Administrator die Spalte nicht deaktivieren, sofern die Tabelle für duales Schreiben aktiviert ist.
 
 > [!div class="mx-imgBorder"]
-![Spalte „Standardeigentümerteam“](media/dual-write-default-owning-team.jpg)
+![Spalte „Standardeigentümerteam“.](media/dual-write-default-owning-team.jpg)
 
 ## <a name="company-striping-and-bootstrapping"></a>Unternehmensstriping und Bootstrapping
 
 Die Dataverse-Integration bringt Unternehmensparität durch Verwendung eines Unternehmensbezeichners zum Kennzeichen von Daten. Wie in der folgenden Abbildung dargestellt, werden alle unternehmensspezifischen Tabellen so erweitert, dass sie eine Viele-zu-Eins-Beziehung (N:1) mit der cdm\_Company-Tabelle haben.
 
 > [!div class="mx-imgBorder"]
-![N:1-Beziehung zwischen einer unternehmensspezifischen Tabelle und der cdm_Company-Tabelle](media/dual-write-bootstrapping.png)
+![N:1-Beziehung zwischen einer unternehmensspezifischen Tabelle und der cdm_Company-Tabelle.](media/dual-write-bootstrapping.png)
 
 + Für Zeilen wird der Wert schreibgeschützt, nachdem ein Unternehmen hinzugefügt und gespeichert wird. Daher sollten Benutzer sicherstellen, dass Sie das korrekte Unternehmen auswählen.
 + Nur Zeilen mit Unternehmensdaten kommen für duales Schreiben zwischen der Anwendung und Dataverse infrage.
@@ -98,7 +91,7 @@ Es gibt verschiedene Möglichkeiten, den Unternehmensnamen in Kundenbindungs-App
 
 Um die Filterung in Ihren benutzerdefinierten Formularen oder in benutzerdefinierten Suchspalten, die den Standardformularen hinzugefügt wurden, basierend auf dem Unternehmenskontext anzuwenden, öffnen Sie das Formular, und verwenden Sie den Abschnitt **Filterung zugehöriger Datensätze**, um den Unternehmensfilter anzuwenden. Sie müssen dies für jede Suchspalte festlegen, die die Filterung basierend auf dem zugrunde liegenden Unternehmen für eine bestimmte Zeile erfordert. Die Einstellung wird für **Konto** in der folgenden Abbildung angezeigt.
 
-:::image type="content" source="media/apply-company-context.png" alt-text="Unternehmenskontext anwenden":::
+:::image type="content" source="media/apply-company-context.png" alt-text="Unternehmenskontext anwenden.":::
 
 
 

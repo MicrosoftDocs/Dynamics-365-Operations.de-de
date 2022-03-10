@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: ae7df6679c261b5e5dcd39e4ca6fe0e21d993927
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: a8fec96eb644cccea3566a32f3eb2ac3c699faa412be2bb9cdb2690d34999542
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216766"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745355"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Mehrere Lieferarten zur Abholung für Kundenaufträge
 
@@ -32,7 +32,7 @@ Um diese Funktionalität zu nutzen, aktivieren Sie die Funktion **Unterstützung
 
 In Commerce Version 10.0.15 und früheren Versionen können Organisationen nur eine Lieferart als festgelegte Abhollieferart definieren. Diese Definition erfolgt auf der Seite **Commerce-Parameter**. In Version 10.0.16 und höher wird bei Aktivierung der Funktion **Unterstützung für mehrere Abhollieferarten** die zuvor auf der Seite **Commerce-Parameter** definierte Lieferart automatisch in die neue Konfiguration für Abhollieferarten kopiert.
 
-![Abhollieferarten auf der Seite „Commerce-Parameter“](media/multiplepickupparameter.png)
+![Abhollieferarten auf der Seite „Commerce-Parameter“.](media/multiplepickupparameter.png)
 
 Nachdem Sie die Funktion **Unterstützung für mehrere Abhollieferarten** aktivieren, können Sie mehrere Abhollieferarten im Raster **Abhollieferart** im Inforegister **Lieferarten** auf der Registerkarte **Kundenaufträge** auf der Seite **Commerce-Parameter** definieren.
 
@@ -40,7 +40,7 @@ Die Felder **Lieferart durchführen** und **Elektronische Lieferart** und die Op
 
 Bevor Sie zusätzliche Abhollieferarten konfigurieren, müssen Sie die Lieferarten definieren. Auf der Seite **Lieferarten** in der Commerce-Zentralverwaltung fügen Sie Lieferarten hinzu, die als Abhollieferarten gelten sollen. Stellen Sie sicher, dass die gesamte Konfiguration abgeschlossen ist. Wenn Sie beispielsweise Ihren Online-Shoppern für bestimmte Geschäfte die Abholung bis zur Bordsteinkante als Lieferoption anbieten, müssen Sie hierfür einen neuen Liefermodus erstellen. Sie können diese Lieferart mit „Abholung am Straßenrand“ als Beschreibung erstellen. Stellen Sie dann sicher, dass die Lieferart „Abholung am Straßenrand“ allen E-Commerce-Kanälen zugeordnet ist, die sie anbieten können, einschließlich Online-Shops, die diese Option anbieten, und den einzelnen Shop-Kanälen, die diese Versandmethode anbieten. Auch die Lieferarten müssen mit den Produkten verknüpft sein. In diesem Beispiel müssen Sie sicherstellen, dass diese Artikel ausgeschlossen werden, wenn bestimmte Produkte nicht mit der „Abholung am Straßenrand“ geliefert werden können. Wenn Sie fertig alle neuen Lieferarten hinzugefügt haben, führen Sie den Einzelvorgang **Lieferarten verarbeiten** aus, um die Beziehungen zwischen den Lieferarten, Kanälen und Artikeln zu erstellen. Wenn die Ausführung des Einzelvorgangs beendet ist, öffnen Sie die Seite **Verteilungszeitplan** in der Commerce-Zentralverwaltung und führen Sie den Verteilungseinzelvorgang **1120** aus, um sicherzustellen, dass die relevanten Commerce-Kanaldatenbanken mit Ihrer neuen Lieferartkonfiguration aktualisiert werden.
 
-![Beispiel für eine Lieferartkonfiguration für die Abholung am Straßenrand](media/pickupmodes.png)
+![Beispiel für eine Lieferartkonfiguration für die Abholung am Straßenrand.](media/pickupmodes.png)
 
 Nachdem Sie die zusätzlichen Abhollieferarten definiert haben, fügen Sie diese dem Raster **Abhollieferart** auf der Seite **Commerce-Parameter** hinzu. Führen Sie dann die entsprechenden Verteilungseinzelvorgänge aus, um die relevanten Commerce-Kanaldatenbanken mit der Konfigurationsänderung zu aktualisieren.
 
@@ -69,16 +69,16 @@ Wenn für einen Kanal mehrere Abhollieferarten verfügbar sind, wird Kunden eine
 
 - In E-Commerce-Kanälen können Einkäufer jede beliebige gültige Abhollieferart auswählen, die verfügbar ist. Beispielsweise definiert ein Einzelhändler zwei Abhollieferarten (Abholung im Laden und Abholung am Straßenrand), beide werden im Raster **Abhollieferart** konfiguriert und beide sind für den Auftragserfüllungskanal sowie das Produkt, das der Einkäufer aktuell kauft, gültig. In diesem Fall kann der Käufer seine bevorzugte Abhollieferart auswählen. Die bevorzugte Abhollieferart wird dann die Lieferart, die mit der Auftragsposition verknüpft wird, wenn der Auftrag in der Commerce-Zentralverwaltung erstellt wird.
 
-    ![Auswahl einer Abholoption in E-Commerce](media/pickupecommerce.png)
+    ![Auswahl einer Abholoption in E-Commerce.](media/pickupecommerce.png)
 
 - In Geschäftskanälen, wenn ein Kundenauftrag zur Abholung über die Verkaufsstellen-(POS)-Anwendung erstellt wird, wird der Vertriebsmitarbeiter dazu aufgefordert, aus den verfügbaren Abhollieferarten auszuwählen, sofern welche konfiguriert wurden. Wenn nur eine gültige Abhollieferart für den Kanal und Artikel verfügbar ist, wird der Vertriebsmitarbeiter nicht dazu aufgefordert, sie auszuwählen. Stattdessen wird die verfügbare Abhollieferart automatisch auf die Auftragspositionen angewendet.
 
-    ![Auswahl einer Abholoption in der POS-Anwendung](media/pickuppos.png)
+    ![Auswahl einer Abholoption in der POS-Anwendung.](media/pickuppos.png)
 
 - Wenn in Callcenterkanälen Benutzer Abholaufträge erstellen, können sie manuell jede beliebige definierte Abhollieferart auswählen, die mit dem Callcenterkanal verknüpft ist. Das System überprüft dann, ob die ausgewählte Abhollieferart verwendet werden kann, wenn der Artikel, der mit ihr verknüpft wird, bestellt wird. Wenn in Callcenterkanälen eine Abhollieferart ausgewählt wird, müssen die Auftragspositionen mit einem gültigen Geschäftslagerort verknüpft sein. Wenn für eine Callcenterverkaufsposition ein nicht zum Geschäft gehöriger Lagerort definiert wird, kann für diese Verkaufsposition keine Abhollieferart festgelegt werden.
 - Vertriebsmitarbeiter können den Vorgang **Auftragsrückruf** oder **Auftragserfüllung** in der POS-Anwendung verwenden, um eine Auftragsliste oder Auftragspositionen für die Abholung abzurufen. Wenn ein Vertriebsmitarbeiter einen vordefinierten Suchfilter verwendet, um alle Aufträge anzuzeigen, die im aktuellen Geschäft abgeholt werden, werden die Abfragen geändert, um sicherzustellen, dass die Suchergebnisse alle in Frage kommenden Aufträge umfassen, die irgendeine Abhollieferart verwenden. POS-Benutzer können auch vorhandene Filter verwenden, um die Liste der Aufträge auf eine bestimmte Abhollieferart einzugrenzen. Beispielsweise können sie nur Auftrage für die Abholung am Straßenrand anzeigen.
 
-    ![Filter für Abhollieferarten, der auf eine Liste von Rückrufaufträgen angewendet wird](media/pickuprecallorder.png)
+    ![Filter für Abhollieferarten, der auf eine Liste von Rückrufaufträgen angewendet wird.](media/pickuprecallorder.png)
 
 ## <a name="considerations-for-distributed-order-management"></a>Berücksichtigungen bei der verteilten Auftragsverwaltung
 

@@ -2,11 +2,9 @@
 title: Produktdimensionen
 description: Es gibt fünf Produktdimensionen – Farbe, Konfiguration, Größe, Stil und Version. Sie kombinieren Produktdimensionen in den Dimensionsgruppen und weisen diesen Dimensionsgruppen Produktmaster zu. Diese Kombinationen der Produktdimensionen bestimmen, wie Produktvarianten definiert sind.
 author: t-benebo
-manager: tfehr
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ca0a7233004522de2af7281416169f0393feeb11
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 46079daafc744421abcbdf0a3539428f2a39f13c
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5260646"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920522"
 ---
 # <a name="product-dimensions"></a>Produktdimensionen
 
@@ -80,7 +78,7 @@ Ein Unternehmen verkauft Denim-Jeans. Für den Artikel *Jeans* werden die Produk
 
 ## <a name="the-version-product-dimension"></a>Die Produktdimension „Version“
 
-„Version“ ist eine Produktdimension, mit der Sie mehrere Versionen eines Produkts in der gesamten Lieferkette verwalten und verfolgen können. Die Versionsverfolgung ist entscheidend für den Erfolg von Herstellern, die in einer Welt mit ständig verkürzten Produktlebenszyklen, erhöhten Qualitäts‑ und Zuverlässigkeitsanforderungen und einem erhöhten Fokus auf Produktsicherheit tätig sind.
+„Version“ ist eine Produktdimension, mit der Sie mehrere Versionen eines Produkts in der gesamten Lieferkette verwalten und verfolgen können. Die Versionsverwaltung ist für den Erfolg von Herstellern unerlässlich, die in einer Welt ständig kürzer werdender Produktlebenszyklen, erhöhter Qualitäts- und Zuverlässigkeitsanforderungen und eines verstärkten Fokus auf die Produktsicherheit tätig sind.
 
 Als Standardproduktdimension verhält sich die „Version“ ähnlich wie die vorhandenen Produktdimensionen (Größe, Stil, Farbe und Konfiguration). Daher können Sie sie neben der Verfolgung von Produktversionen auch für andere Zwecke verwenden.
 

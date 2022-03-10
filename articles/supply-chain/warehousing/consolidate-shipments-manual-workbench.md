@@ -2,25 +2,23 @@
 title: Lieferungen mithilfe der Workbench zur Lieferungskonsolidierung konsolidieren
 description: In diesem Thema wird ein Szenario vorgestellt, in dem mehrere Bestellungen an das Lager freigegeben werden und anschließend mit der Workbench zur Lieferungskonsolidierung später in Lieferungen automatisch konsolidiert werden.
 author: GarmMSFT
-manager: tfehr
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationSetShipment
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 9b7dc72d789fd331c3636c406ac6a45566ba81ca
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 916d83c3773b557ae2d89d554846263a740111ea
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5242180"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578655"
 ---
 # <a name="consolidate-shipments-by-using-the-shipment-consolidation-workbench"></a>Lieferungen mithilfe der Workbench zur Lieferungskonsolidierung konsolidieren
 

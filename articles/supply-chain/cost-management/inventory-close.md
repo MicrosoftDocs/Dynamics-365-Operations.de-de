@@ -2,29 +2,26 @@
 title: Lagerabschluss
 description: Im Rahmen des Prozesses, um Abgangstransaktionen mit Zugangstransaktionen auszugleichen, können Sie wählen, dass das Hauptbuch ausgeglichen wird, um die Regulierungen widerzuspiegeln, die vorgenommen wurden.
 author: AndersGirke
-manager: tfehr
 ms.date: 04/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventClosing
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 61973
 ms.assetid: c210c882-6849-4704-b78c-a777dd6cfdb6
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a4cad461c6ff4ef6badeeba868eef45165cf5d33
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 078969e12275c3abd2e4ea2f8c6c9579dce73e5f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428679"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574016"
 ---
 # <a name="inventory-close"></a>Lagerabschluss
 
@@ -60,7 +57,7 @@ Viele der Aufgaben, die Sie auf der Seite **Abschluss und Regulierung** ausführ
 Bei den durch diese Aufgaben aktualisierten Sachkonten handelt es sich um die Sachkonten, die mit der ursprünglichen Lagerbuchung verknüpft sind. Wird beispielsweise ein Auftrag mit einer Bestellung ausgeglichen, werden die für den ursprünglichen Auftrag verwendeten Hauptbuchkonten entsprechend reguliert. Dies gilt auch, wenn sich die Sachkonten der Artikelgruppe, die dem Artikel zugewiesen sind, seit der Buchung des Auftrags geändert haben. Nachdem durch einen Lagerabschluss ein Ausgleichsbetrag erstellt wurde, wird der Ausgleichsbetrag auf die ursprünglichen Sachkonten gebucht, nicht auf die neuen, dem Artikel zugeordneten Sachkonten. Sie können das Hauptbuch auch aktualisieren, indem Sie einen Lagerabschluss stornieren. 
 
 > [!NOTE] 
-> - Der Bestandsabschluss ist ein erforderlicher Schritt im Abschlussverfahren zum Monatsende für alle Bestandsmodelle. Dies beinhaltet Standard- und gleitende Durchschnittskosten. Sie können den Finanzzeitraum erst schließen, wenn zum Ende des Berichtszeitraums ein Bestandsabschluss durchgeführt wurde.
+> - Der Bestandsabschluss ist ein erforderlicher Schritt im Abschlussverfahren zum Monatsende für alle Bestandsmodelle mit Ausnahme des gleitenden Durchschnitts.  Sie werden gewarnt, wenn Sie versuchen, eine Finanzperiode zu schließen, ohne zuerst den Bestandsabschluss ab dem Periodenenddatum durchzuführen.
 > - Bevor Sie die Abschlussprozedur ausführen, können Sie eine Liste der Artikel anzeigen, die während der Aktualisierung nicht ausgeglichen werden können.
 > - Es empfiehlt sich, den Lagerabschluss nicht zu Spitzenzeiten auszuführen, um eine gleichmäßigere Verteilung der Berechnungsressourcen zu gewährleisten.
 
@@ -87,3 +84,6 @@ Gelegentlich muss ein bereits abgeschlossener Lagerabschluss storniert werden, u
 > [!NOTE] 
 > Es kann jeweils nur die letzte abgeschlossene Lagerbuchungsperiode erneut geöffnet werden. Um einen älteren Lagerabschluss zu stornieren, müssen Sie jeden nachfolgenden Lagerabschluss, beginnend dem letzten Abschluss einzeln stornieren.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

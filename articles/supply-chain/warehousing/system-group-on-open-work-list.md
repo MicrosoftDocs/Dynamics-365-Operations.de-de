@@ -2,11 +2,9 @@
 title: Systemgruppierung in einer offenen Arbeitsliste
 description: In diesem Thema wird beschrieben, wie die offenen Arbeitslisten auf einem mobilen Gerät gefiltert werden.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 826920980bdd2d30337c92553bd0367b119f676c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 588744ea19f387b57405030618a6ff176161a8a3639bd58232a657bdaf064a04
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4977337"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733299"
 ---
 # <a name="system-grouping-on-an-open-work-list"></a>Systemgruppierung in einer offenen Arbeitsliste
 
@@ -41,3 +39,6 @@ Diese Schritte ausführen, um Systemgruppierung in einer offenen Arbeitsliste ei
 | Systemgruppierungsfeld | Verfügbar, wenn <strong>Systemarbeit zulassen</strong> auf <strong>Ja</strong> festgelegt ist. Wählen Sie das Feld aus, das bestimmt, wie Entnahmearbeit für die Arbeitskraft gruppiert wird. Wenn Sie beispielsweise das Feld <strong>ShipmentId</strong> auswählen, scannt die Arbeitskraft die Lieferkennung, um die Entnahmearbeit zu gruppieren. Alle Arbeit für die Lieferung wird dann der Arbeitskraft zugewiesen. Dieses Feld setzt voraus, dass Sie eine Menüoption erstellen, um vorhandene Arbeit zu nutzen, die vom System gruppiert wird. Verwenden Sie das Feld <strong>Systemgruppierungsbeschriftung</strong>, um die Arbeitskraft zu informieren, was zu scannen ist. |
 | Systemgruppierungsbezeichnung |                       Verfügbar, wenn <strong>Systemarbeit zulassen</strong> auf <strong>Ja</strong> festgelegt ist. Geben Sie die Information für den Arbeiter ein, was zu scannen ist, wenn Entnahmearbeit gruppiert wird. Wenn Sie beispielsweise das Feld <strong>Lieferungs-ID</strong> verwenden, um Entnahmearbeit nach Lieferung zu gruppieren, können Sie Lieferkennung in das Feld Lieferungs-ID eingeben. Dieses Feld setzt voraus, dass Sie eine Menüoption erstellen, um vorhandene Arbeit zu nutzen, die vom System gruppiert wird. Sie müssen auch das Feld auswählen, um nach <strong>Systemgruppierung</strong> zu gruppieren.                       |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

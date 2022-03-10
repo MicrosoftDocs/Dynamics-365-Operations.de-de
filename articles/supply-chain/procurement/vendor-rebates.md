@@ -1,26 +1,24 @@
 ---
 title: Kreditorenrückvergütungen
 description: Dieses Thema bietet einen Überblick die gebräuchlichsten Aufgaben, die Sie möglicherweise ausführen möchten, wenn Sie mit Kreditorenrückvergütungen arbeiten. Mithilfe von Kreditorenrückvergütungen können Unternehmen ihre Lieferantenrückvergütungsprogramme anhand automatisierter Aufgaben besser verwalten, die erforderlich sind, um Rückvergütungen, die verdient wurden, zu verwalten, nachzuverfolgen und zu fordern.
-author: omulvad
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TAMVendRebateAgreement
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: 46d6beb287f7d034c6fde09999f7854695a4987c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ec8d054d023b7e3f6611199e60f661c480d44d57
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966654"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566862"
 ---
 # <a name="vendor-rebates"></a>Kreditorenrückvergütungen
 
@@ -55,7 +53,7 @@ Eine Kreditorenrückvergütungsvereinbarung ist ein Datensatz eines Vertrags mit
 
 Um die Seite **Kreditorenrückvergütungsvereinbarungen** zu öffnen, wählen Sie **Beschaffung** &gt; **Kreditorenrückvergütungen** &gt; **Rückvergütungsvereinbarungen** aus.
 
-![Rahmenbestellung](media/purchase-agreement.PNG)
+![Rahmenbestellung.](media/purchase-agreement.PNG)
 
 Auf der Seite **Kreditorenrückvergütungsvereinbarungen** können Sie Details über die verhandelten Bedingungen einer Kreditorenvereinbarung anzeigen.
 
@@ -131,7 +129,7 @@ Wenn Ansprüche genehmigt wurden, können sie nach Kreditorenkonten bearbeitet w
 
     Eine Rückvergütungs-Abgrenzungserfassung wird für den Forderungsbetrag gebucht. Diese Buchung belastet das Konto der antizipierten Kreditorenrückvergütungsforderungen mit dem erwarteten Kreditorenkredit und schreibt dem Interimskonto für antizipierten Kreditorenrückvergütungsforderungen den erwarteten Gewinn gut.
 
-    ![Nachricht](media/message.png)
+    ![Meldung.](media/message.png)
 
 5. In der Rückvergütungsliste wählen Sie die Position aus, und wählen Sie dann im Aktionsbereich die Option **Rückvergütungsbuchungen** aus, um die Nummer der Stapelverarbeitungserfassung für diese Rückvergütungs-Abgrenzungsbuchung anzuzeigen und zu ihr zu navigieren.
 
@@ -166,3 +164,6 @@ Der Prozess für die Bearbeitung von Kreditorenrückvergütungen beinhaltet mehr
 - Generieren von genauen Rückvergütungsansprüchen
 - Die erwarteten Forderungen und Zwischengewinne im Hauptbuch antizipieren
 - Den Kreditorensaldo und die Gewinn- & Verlustrechnung mit der fälligen Vergütung aktualisieren
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

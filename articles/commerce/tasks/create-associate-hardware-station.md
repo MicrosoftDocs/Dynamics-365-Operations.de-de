@@ -2,11 +2,9 @@
 title: " Eine Hardwarestation erstellen und zuordnen"
 description: Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen einer neuen Hardwarestation.
 author: jashanno
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailHardwareStation, RetailStoreTable
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d0c02246a20ef28c0f4f28b73dfe5ff56f38a68b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 582530f53a401519ed78442041415dffd4a4756ca2a18721f6b4761d8a735331
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5247043"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6756500"
 ---
 # <a name="create-and-associate-a-hardware-station"></a> Eine Hardwarestation erstellen und zuordnen
 

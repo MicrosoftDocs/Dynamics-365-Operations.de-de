@@ -2,11 +2,8 @@
 title: FILTER EB-Funktion
 description: In diesem Thema werden Informationen zur Verwendung der FILTER-Funktion bei der elektronischen Berichterstellung (EB) bereitgestellt.
 author: NickSelin
-manager: kfend
-ms.date: 12/12/2019
-ms.topic: article
+ms.date: 12/14/2021
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55fa3d4ad4427e2a45f7c5fce679c50a91c40b6d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e857306574dda7bad5dd25fc7708514997d8e86f
+ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679437"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "7922422"
 ---
 # <a name="filter-er-function"></a>FILTER EB-Funktion
 
@@ -52,11 +49,17 @@ Ein gültiger Bedingungsausdruck, mit dem Datensätze der angegebenen Liste gefi
 
 Die resultierende Liste der Datensätze.
 
-## <a name="usage-notes"></a>Anwendungshinweise
+## <a name="usage-notes"></a><a name="usage-notes"></a>Anwendungshinweise
 
 Diese Funktion unterscheidet sich von der Funktion [WO](er-functions-list-where.md), da die angegebene Bedingung auf jede beliebige Datenquelle der elektronischen Berichtserstellung (EB) des Typs *Tabellendatensätze* auf Datenbankebene angewendet wird. Die Liste und die Bedingung können definiert werden, indem Tabellen und Relationen verwendet werden.
 
 Wenn eines oder beide Argumente, die für diese Funktion konfiguriert sind (`list` und `condition`), nicht die Übersetzung dieser Anforderung für den direkten SQL-Aufruf zulassen, wird zur Entwurfszeit eine Ausnahme ausgelöst. Diese Ausnahme informiert den Benutzer darüber, dass entweder `list` oder `condition` nicht zum Abfragen der Datenbank verwendet werden kann.
+
+> [!NOTE]
+> Die Funktion `FILTER` verhält sich anders als die Funktion `WHERE`, wenn die Funktion [`VALUEIN`](er-functions-logical-valuein.md) zur Angabe der Auswahlkriterien verwendet wird.
+> 
+> - Wenn die Funktion `VALUEIN` im Rahmen der Funktion `WHERE` verwendet wird und das zweite Argument von `VALUEIN` auf eine Datenquelle verweist, die keine Datensätze liefert, wird der boolesche Wert *[Falsch](er-formula-supported-data-types-primitive.md#boolean)* berücksichtigt, den `VALUEIN` zurückgibt. Daher gibt der Ausdruck `WHERE(Vendors, VALUEIN(Vendors.VendGroup, VendGroups, VendGroups.VendGroup))` keine Datensätze von Lieferanten zurück, wenn die Datenquelle **VendGroups** keine Datensätze von Lieferantengruppen zurückgibt.
+> - Wenn die Funktion `VALUEIN` im Rahmen der Funktion `FILTER` verwendet wird und das zweite Argument von `VALUEIN` auf eine Datenquelle verweist, die keine Datensätze zurückgibt, wird der boolesche Wert *[Falsch](er-formula-supported-data-types-primitive.md#boolean)*, den `VALUEIN` zurückgibt, ignoriert. Daher gibt der Ausdruck `FILTER(Vendors, VALUEIN(Vendors.VendGroup, VendGroups, VendGroups.VendGroup))` alle Datensätze der Datenquelle **Vendors** zurück, auch wenn die Datenquelle **VendGroups** keine Datensätze der Vendor Groups zurückgibt.
 
 ## <a name="example-1"></a>Beispiel 1
 
@@ -73,3 +76,6 @@ Sie geben die Datenquelle **DS** des Typs *Berechnetes Feld* ein, und sie enthä
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Listenfunktionen](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

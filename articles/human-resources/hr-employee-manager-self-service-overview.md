@@ -1,28 +1,33 @@
 ---
 title: Mitarbeiter- und Manager-Self-Service-Übersicht
 description: Dieser Artikel bietet einen Überblick über den Self-Service-Arbeitsbereich für Mitarbeiter und Manager.
-author: andreabichsel
-ms.date: 10/20/2020
-ms.topic: article
+author: twheeloc
+ms.date: 08/26/2021
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HRMParameters, EssWorkspace
 audience: Application User
 ms.search.scope: Human Resources
-ms.custom: 51941
+ms.custom:
+- "51941"
+- intro-internal
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 09efb52a76be8ee458135b013b577666a56953f7
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 28bf4ff4e456505efda3777a4f820c54f270c74b
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052120"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068943"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>Mitarbeiter- und Manager-Self-Service-Übersicht
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -38,7 +43,7 @@ Wenn Sie Ihren Benutzer nicht mit einem **Arbeitskraft**-Datensatz auf der Seite
 
 **Die Benutzerkennung ist dem Mitarbeiterdatensatz im System nicht zugeordnet. Sie können die Informationen erst anzeigen oder aktualisieren, wenn die entsprechende Zuordnung erfolgt ist. Wenden Sie sich hierzu an Ihren Vorgesetzten oder Ihr Support-Team.**
 
-Um einen Benutzer mit einem **Arbeitskraft**-Datensatz zu verknüpfen, navigieren Sie zu **Benutzer**, und wählen Sie den Benutzer aus. Wählen Sie **Bearbeiten** aus, fügen Sie die entsprechende Arbeitskraft im Feld **Person** auf dem Formular hinzu, und wählen Sie **Speichern** aus. Sie sollten jetzt Zugriff auf Employee Self-Service haben.
+Um einen Benutzer mit einem **Arbeitskraft**-Datensatz zu verknüpfen, navigieren Sie zu **Benutzer**, und wählen Sie den Benutzer aus. Wählen Sie **Bearbeiten** aus, fügen Sie die entsprechende Arbeitskraft im Feld **Person** auf der Seite hinzu, und wählen Sie **Speichern** aus. Sie sollten jetzt Zugriff auf **Mitarbeiter-Self-Service** haben.
 
 ## <a name="security-requirements-for-employee-and-manager-self-service"></a>Sicherheitsanforderungen Employee und Manager Self-Service
 
@@ -53,7 +58,7 @@ Employee und Manager Self-Service benötigen zwei Sicherheitsrollen:
 
 ## <a name="employee-self-service"></a>Mitarbeiter-Self-Service
 
-Auf der Registerkarte **Meine Information** werden die folgenden Informationen für den Mitarbeiter-Self-Service angezeigt.  
+Auf der Registerkarte **Meine Information** werden die folgenden Informationen für den **Mitarbeiter-Self-Service** angezeigt.  
 
 ### <a name="summary"></a>Summe
 
@@ -67,29 +72,29 @@ Auf der Registerkarte **Meine Information** werden die folgenden Informationen f
 
 ### <a name="my-career-information"></a>Meine Laufbahninformationen
 
-Der Abschnitt **Meine Karriereinformationen** von Mitarbeiter-Self-Service enthält Karten zu Urlaub und Abwesenheit, Leistungsmanagement, Kompetenzen, Vorteilen, Aufgaben und Anhängen.
+Der Abschnitt **Meine Karriereinformationen** von **Mitarbeiter-Self-Service** zeigt Kacheln zu Urlaub und Abwesenheit, Leistungsmanagement, Kompetenzen, Vorteilen, Aufgaben und Anhängen an.
 
-Die Karte **Freizeitguthaben** zeigt die Guthaben für alle registrierten Pläne an. Diese Karte prognostiziert Ihr Guthaben basierend auf Ihrer Abgrenzungsmethode. Sie können Freistellungsanfragen eingeben und senden, die dann einen Genehmigungsworkflow durchlaufen. Weitere Informationen zu Urlaub und Abwesenheit finden Sie unter [Urlaubs- und Abwesenheitsübersicht](hr-leave-and-absence-overview.md).
+Die Kachel **Freizeitguthaben** zeigt die Guthaben für alle registrierten Pläne an. Diese Kachel prognostiziert Ihr Guthaben basierend auf Ihrer Abgrenzungsmethode. Sie können Freistellungsanfragen eingeben und senden, die dann einen Genehmigungsworkflow durchlaufen. Weitere Informationen zu Urlaub und Abwesenheit finden Sie unter [Urlaubs- und Abwesenheitsübersicht](hr-leave-and-absence-overview.md).
 
-Die Karte **Aufgaben** zeigt Aufgaben an, die Ihnen zugewiesen sind, und ermöglicht Ihnen das Anzeigen und Verwalten dieser Aufgaben.
+Die Kachel **Aufgaben** zeigt Aufgaben an, die Ihnen zugewiesen sind, und ermöglicht Ihnen das Anzeigen und Verwalten dieser Aufgaben.
 
-Die Karte **Nächster registrierter Kurs** zeigt den nächsten Kurs an, für den Sie registriert sind. Sie können alle offene Kurse anzeigen und sich dafür registrieren. Alle Kurse, die zur Anmeldung geöffnet sind, haben den Status **Gestartet** und es Mitarbeitern ermöglichen, sich selbst zu registrieren, erscheinen auf dieser Karte. Abhängig von den Einstellungen Ihrer Organisation wird Ihre Kursregistrierung möglicherweise einem Genehmigungsprozess unterzogen.
+Die Kachel **Nächster registrierter Kurs** zeigt den nächsten Kurs an, für den Sie registriert sind. Sie können alle offene Kurse anzeigen und sich dafür registrieren. Alle Kurse, die zur Anmeldung geöffnet sind, haben den Status **Gestartet** und Mitarbeiter können sich selbst registrieren. Abhängig von den Einstellungen Ihrer Organisation wird Ihre Kursregistrierung möglicherweise einem Genehmigungsprozess unterzogen.
 
-Diwe Karte **Zertifikate** zeigt das Zertifikat und das Ablaufdatum des Zertifikats an, das dem aktuellen Datum am nächsten kommt. Sie können Zertifikate aktualisieren, hinzufügen oder entfernen. Abhängig von den Einstellungen Ihrer Organisation werden Kursaktualisierungen möglicherweise einem Genehmigungsprozess unterzogen.
+Die Kachel **Zertifikate** zeigt das Zertifikat und das Ablaufdatum des Zertifikats an, das dem aktuellen Datum am nächsten kommt. Sie können Zertifikate aktualisieren, hinzufügen oder entfernen. Abhängig von den Einstellungen Ihrer Organisation werden Kursaktualisierungen möglicherweise einem Genehmigungsprozess unterzogen.
 
-Die Karte **Nächste geplante Überprüfung** zeigt Ihre nächste Leistungsbeurteilung an. Mit dieser Karte können Sie eine neue Überprüfung starten. Ihr Manager oder Personalvertreter kann auch Überprüfungen einleiten. Abhängig von den Einstellungen Ihres Unternehmens können Sie möglicherweise auch Exit-Bewertungen von dieser Karte anzeigen, aktualisieren und senden.
+Die Kachel **Nächste geplante Überprüfung** zeigt Ihre nächste Leistungsbeurteilung an. Über diese Kachel können Sie eine neue Überprüfung starten. Ihr Manager oder Personalvertreter kann auch Überprüfungen einleiten. Abhängig von den Einstellungen Ihres Unternehmens können Sie möglicherweise auch Exit-Bewertungen anzeigen, aktualisieren und senden.
 
-Sie können Ihre Ziele mit der Karte **Leistungsziele** verwalten. Diese Karte zeigt die Anzahl der Ziele an, die Sie in jedem Status haben (**Nicht angefangen**, **Auf dem richtigen Weg**, und **Muss verbessert werden**). Sie können Ziele erstellen, aktualisieren und entfernen, abhängig von Ihrer zugewiesenen rollenbasierten Sicherheit. Wenn Sie möchten, können Sie neue Ziele aus Gruppen oder Vorlagen hinzufügen. Manager und HR können auch im Namen der Mitarbeiter Ziele erstellen und bestimmen, wie detailliert jedes Ziel sein wird. Manager und Mitarbeiter können gemeinsam an Zielen arbeiten und Aktivitäten, Messungen und Status aktualisieren. Sie können auch Anhänge einfügen.
+Sie können Ihre Ziele über **Leistungsziele** verwalten. Diese Kachel zeigt die Anzahl der Ziele an, die Sie in jedem Status haben (**Nicht angefangen**, **Auf dem richtigen Weg**, und **Muss verbessert werden**). Sie können Ziele erstellen, aktualisieren und entfernen, abhängig von Ihrer zugewiesenen rollenbasierten Sicherheit. Wenn Sie möchten, können Sie neue Ziele aus Gruppen oder Vorlagen hinzufügen. Manager und HR können auch im Namen der Mitarbeiter Ziele erstellen und bestimmen, wie detailliert jedes Ziel sein wird. Manager und Mitarbeiter können gemeinsam an Zielen arbeiten und Aktivitäten, Messungen und Status aktualisieren. Sie können auch Anhänge einfügen.
 
-Sie können Ihre vorhandenen Fähigkeiten auf der Karte **Kompetenzen** anzeigen. Sie können Fähigkeiten aktualisieren, neue hinzufügen oder nicht mehr relevante entfernen. Abhängig von den Einstellungen Ihrer Organisation werden Änderungen an Ihren Kompetenzen möglicherweise einem Genehmigungsprozess unterzogen.
+Sie können Ihre vorhandenen Fähigkeiten auf der Kachel **Kompetenzen** anzeigen. Sie können Fähigkeiten aktualisieren, neue hinzufügen oder nicht mehr relevante entfernen. Abhängig von den Einstellungen Ihrer Organisation werden Änderungen an Ihren Kompetenzen möglicherweise einem Genehmigungsprozess unterzogen.
 
-Sie können Ihre aktuelle Vergütung über die Karte **Vergütung** anzeigen. Wählen **Anzeigen** aus, um Ihren Jahreslohn und den letzten Erhöhungsbetrag anzuzeigen. Wenn Sie in mehr als einem Unternehmen beschäftigt sind, wird jeder Jahresbetrag auf der Karte angezeigt. Um Ihre detaillierte Vergütungshistorie anzuzeigen, wählen Sie den jährlichen Gehaltsbetrag aus, um das Formular **Feste und variable Vergütungshistorie** zu öffnen. Zukünftige Vergütungen werden in dieser Form nicht angezeigt. Wenn Sie mehr als eine Beschäftigung haben, können Sie innerhalb dieses Formulars zwischen Unternehmen wechseln, um Ihren Vergütungsverlauf anzuzeigen, ohne sich bei jedem Unternehmen anzumelden.
+Sie können Ihre aktuelle Vergütung auf **Vergütung** anzeigen. Wählen **Anzeigen** aus, um Ihren Jahreslohn und den letzten Erhöhungsbetrag anzuzeigen. Wenn Sie in mehr als einem Unternehmen beschäftigt sind, wird jeder Jahresbetrag angezeigt. Um Ihre detaillierte Vergütungshistorie anzuzeigen, wählen Sie den Betrag **Jährliches Gehalt** aus, um die Seite **Feste und variable Vergütungshistorie** zu öffnen. Zukünftige Vergütungen werden auf dieser Seite nicht angezeigt. Wenn Sie mehr als eine Beschäftigung haben, können Sie auf dieser Seite zwischen Unternehmen wechseln, um Ihren Vergütungsverlauf anzuzeigen, ohne sich bei jedem Unternehmen anzumelden.
 
-Mit der Karte **Anhänge** können Sie Dokumente anzeigen und verwalten. Sie können alle **Externen** Anhänge verwalten. Sowohl die Personalabteilung als auch die Mitarbeiter können Anhänge über den Mitarbeiter-Self-Service oder über das Formular **Arbeitskraft** hinzufügen. Anhänge werden standardmäßig auf **Extern** gesetzt.
+Mit der Kachel **Anhänge** können Sie Dokumente anzeigen und verwalten. Sie können alle **Externen** Anhänge verwalten. Sowohl die Personalabteilung als auch die Mitarbeiter können Anhänge über den **Mitarbeiter-Self-Service** oder über die Seite **Arbeitskraft** hinzufügen. Anhänge werden standardmäßig auf **Extern** gesetzt.
 
-### <a name="additional-information"></a>Weitere Informationen
+### <a name="additional-information"></a>Zusätzliche Informationen
 
-Dieser Abschnitt enthält Links zu anderen Self-Service-Bereichen für Mitarbeiter, ähnlich dem Aschnitt **Meine Karriereinformationen**.
+Dieser Abschnitt enthält Links zu anderen Bereichen des **Mitarbeiter-Self-Service**, ähnlich dem Abschnitt **Meine Karriereinformationen**.
 
 Melden Sie sich über den Link **Vorteile** für Vorteile an. Weitere Informationen zur Vorteilsverwaltung finden Sie unter [Vorteilsübersicht](hr-benefits-management-overview.md).
 
@@ -101,13 +106,13 @@ Sie können Jobdetails unter **Organisation** anzeigen. Zu den Jobdetails gehör
 
 Unter **Fragebogen** können Sie ausgefüllte Fragebögen sehen. Sie können auch unternehmensweite Fragebögen anzeigen, die noch nicht ausgefüllt wurden. Sie können jederzeit einen Fragebogen ausfüllen. Der Autor des Fragebogens kann den Zeitrahmen bestimmen und für wen der Fragebogen gilt.
 
-Sie können benutzerdefinierte Links in **Personalverwaltungsparameter** verwalten. Sie können beispielsweise Links zu Gehaltsabrechnungen, Jahresenddokumentation oder externen Lösungen definieren. Diese Links werden am Ende dieses Abschnitts angezeigt. Sie können sie jedoch mithilfe der Personalisierung verschieben.
+Sie können benutzerdefinierte Links in **Human-Resources-Parameter** verwalten. Sie können beispielsweise Links zu Gehaltsabrechnungen, Jahresenddokumentation oder externen Lösungen definieren. Diese Links werden am Ende dieses Abschnitts angezeigt. Sie können sie jedoch mithilfe der Personalisierung verschieben.
 
-Sie können durch Einbetten von Power Apps auch zusätzliche Registerkarten innerhalb des Mitarbeiter-Self-Service-Arbeitsbereichs erstellen. Verwenden Sie das Menü **Einstellungen**, um die Seite mit einer beliebigen Power Apps zu personalisieren. Im Menü **Einstellungen** können Sie eine Power App hinzufügen, die Details vervollständigen und die App einfügen. Standardmäßig wird Power Apps als erste Registerkarte in der Sequenz angezeigt. Sie können die Reihenfolge über die standardmäßige Personalisierung ändern.
+Sie können durch Einbetten von Power Apps auch zusätzliche Registerkarten innerhalb des Arbeitsbereichs **Mitarbeiter-Self-Service** erstellen. Verwenden Sie das Menü **Einstellungen**, um die Seite mit einer beliebigen Power Apps zu personalisieren. Im Menü **Einstellungen** können Sie eine Power App hinzufügen, die Details vervollständigen und die App einfügen. Standardmäßig wird Power Apps als erste Registerkarte in der Sequenz angezeigt. Sie können die Reihenfolge über die standardmäßige Personalisierung ändern.
 
 ## <a name="my-team"></a>Mein Team
 
-Auf der Registerkarte **Mein Team** werden die folgenden Informationen für den Manager-Self-Service angezeigt. Nur Manager können auf die Registerkarte **Mein Team** zugreifen.
+Auf der Registerkarte **Mein Team** werden die folgenden Informationen für den **Manager-Self-Service** angezeigt. Nur Manager können auf die Registerkarte **Mein Team** zugreifen.
 
 ### <a name="personnel-actions"></a>Personalaktivitäten
 
@@ -130,7 +135,7 @@ Sie können diese Optionen auch so konfigurieren, dass sie einen optionalen Übe
 
 ### <a name="summary"></a>Summe
 
-Informationen im Abschnitt **Zusammenfassung** hängen von den Optionen ab, die HR in **Personalverwaltungsparameter** ausgewählt hat. Auf der Registerkarte **Manager-Self-Service** der Seite **Personalverwaltungsparameter** können Sie Optionen für die Anzeige ablaufender Datensätze und offener Positionen konfigurieren. Durch Aktivieren dieser Optionen wird festgelegt, was Manager im Abschnitt **Zusammenfassung** sehen können.
+Informationen im Abschnitt **Zusammenfassung** hängen von den Optionen ab, die HR in **Human-Resources-Parameter** ausgewählt hat. Auf der Registerkarte **Manager-Self-Service** der Seite **Human Resources-Parameter** können Sie Optionen für die Anzeige ablaufender Datensätze und offener Positionen konfigurieren. Durch Aktivieren dieser Optionen wird festgelegt, was Manager im Abschnitt **Zusammenfassung** sehen können.
 
 Sie können die folgenden Kacheln für Manager konfigurieren:
 
@@ -158,11 +163,11 @@ Sie können die folgenden Optionen für Manager konfigurieren, um Änderungen vo
 
 ### <a name="my-team-information"></a>Meine Teaminformationen
 
-Mit meinen Teaminformationen können Manager direkte und erweiterte Berichte anzeigen und aktualisieren. Um auf erweiterte Berichte zuzugreifen, wählen Sie den Mitarbeiter mit den Anweisungen aus und wählen Sie dann **Team anzeigen** auf der Karte. Alle gleichen Optionen gelten für erweiterte Berichte als direkte Berichte. 
+Über **Mein Team** können Manager direkte und erweiterte Berichte anzeigen und aktualisieren. Um auf erweiterte Berichte zuzugreifen, wählen Sie zunächst den Mitarbeiter mit den Anweisungen und anschließend **Team anzeigen** auf der Kachel aus. Alle gleichen Optionen gelten für erweiterte Berichte als direkte Berichte. 
 
 #### <a name="summary-tab"></a>Registerkarte „Zusammenfassung“
 
-Die Registerkarte **Zusammenfassung** bietet eine schnelle Ansicht Ihrer direkten Berichte. Wenn in einem direkten Bericht auch Mitarbeiter Bericht erstatten, wird auf der Karte die Anzahl der direkten Berichte im oberen Bereich zusammen mit einer Schaltfläche **Team anzeigen** angezeigt. Optionen über jeder Karte gelten für den ausgewählten Mitarbeiter. Wenn Sie beispielsweise im Namen eines Mitarbeiters einen Urlaubsantrag stellen möchten, wählen Sie den Mitarbeiter aus und wählen Sie dann **Arbeitsfreie Zeit anfordern** über den Karten aus. 
+Die Registerkarte **Zusammenfassung** bietet eine schnelle Ansicht Ihrer direkten Berichte. Wenn in einem direkten Bericht auch Mitarbeiter Bericht erstatten, wird auf der Karte die Anzahl der direkten Berichte im oberen Bereich zusammen mit einer Schaltfläche **Team anzeigen** angezeigt. Optionen über jeder Kachel gelten für den ausgewählten Mitarbeiter. Wenn Sie beispielsweise im Namen eines Mitarbeiters einen Urlaubsantrag stellen möchten, wählen Sie den Mitarbeiter aus und wählen Sie dann **Arbeitsfreie Zeit anfordern** aus. 
 
 Wenn Sie die Schaltfläche **Details** nach Auswahl eines Mitarbeiters auswählen, werden die folgenden Optionen angezeigt:
 
@@ -181,26 +186,26 @@ Abhängig von den Einstellungen Ihrer Organisation können Sie entweder Änderun
 
 #### <a name="position-tab"></a>Registerkarte „Position“
 
-Die Registerkarte **Positionen** bietet eine zusammenfassende Ansicht der Mitarbeiter in ihrer primären Position. Name, Kachel und Abteilung werden im Überschriftenbereich jeder Karte angezeigt. Diese Karte enthält:
+Die Registerkarte **Position** bietet eine zusammenfassende Ansicht der Mitarbeiter in ihrer primären Position. Name, Kachel und Abteilung werden im Überschriftenbereich jeder Kachel angezeigt. Diese Kachel umfasst Folgendes:
 
-- **Dienstalter** – Wird im Abschnitt „Arbeitskraftzusammenfassung“ des Arbeitskraftformulars angezeigt
-- **Dienstjahre** – Berechnet auf der Grundlage des Beschäftigungsbeginns des Mitarbeiters
-- **Anzahl der vorherigen Positionen** – Durch Auswahl dieser Nummer wird basierend auf dem Positionsverlauf die Detailansicht aller zuvor gehaltenen Positionen geöffnet
-- **Geburtsdatum** – Monat und Tag des Geburtsdatums des Mitarbeiters
+- **Dienstalter** – Wird im Abschnitt „Arbeitskraftzusammenfassung“ der Seite **Arbeitskraft** angezeigt.
+- **Dienstjahre** – Wird auf der Grundlage des Beschäftigungsbeginns des Mitarbeiters berechnet.
+- **Anzahl der vorherigen Positionen** – Durch Auswahl dieser Nummer wird basierend auf dem Positionsverlauf die Detailansicht aller zuvor gehaltenen Positionen geöffnet.
+- **Geburtsdatum** – Monat und Tag des Geburtsdatums des Mitarbeiters.
 
 Sie können Positionsdaten sowohl für direkte als auch für erweiterte Berichte anzeigen.
 
 #### <a name="compensation-tab"></a>Registerkarte „Vergütung“
 
-Auf der Registerkarte **Vergütung** wird das Jahresgehalt des Mitarbeiters angezeigt. Unter dem Gehaltsbetrag wird eine Firmenkennung angezeigt. Wenn ein Mitarbeiter mehr als eine Beschäftigung hat und von mehreren juristischen Personen bezahlt wird, verfügt der Mitarbeiter über mehrere Vergütungspläne. Um alle Vergütungspläne für juristische Personen ohne Unternehmenswechsel anzuzeigen, müssen Sie die Kreuzvergütung aktivieren unter **Personal > Gemeinsame Parameter > Erweiterter Zugriff > Unternehmensübergreifende Vergütung aktivieren**.
+Auf der Registerkarte **Vergütung** wird das Jahresgehalt des Mitarbeiters angezeigt. Unter dem Gehaltsbetrag wird eine Firmenkennung angezeigt. Wenn ein Mitarbeiter mehr als eine Beschäftigung hat und von mehreren juristischen Personen bezahlt wird, verfügt der Mitarbeiter über mehrere Vergütungspläne. Um alle Vergütungspläne für juristische Personen ohne Unternehmenswechsel anzuzeigen, müssen Sie die Kreuzvergütung aktivieren unter **Human Resources > Gemeinsame Parameter > Erweiterter Zugriff > Unternehmensübergreifende Vergütung aktivieren**.
 
-Um den Vergütungsverlauf anzuzeigen, wählen Sie den Gehaltsbetrag aus, um das Formular **Details** zu öffnen. Im Formular **Vergütung** werden nur aktuelle und historische feste und variable Vergütungsdatensätze angezeigt. Wenn ein Mitarbeiter mehr als eine Beschäftigung hat, können Sie zwischen Unternehmen wechseln, um den Vergütungsverlauf in jedem Unternehmen anzuzeigen, oder die unternehmensübergreifende Vergütung in den Parametern Gemeinsame Personalabteilung aktivieren, um alle Vergütungspläne anzuzeigen.
+Um den Vergütungsverlauf anzuzeigen, wählen Sie den **Gehaltsbetrag** aus, um die Seite **Details** zu öffnen. Auf der Seite **Vergütung** werden nur aktuelle und historische feste und variable Vergütungsdatensätze angezeigt. Wenn ein Mitarbeiter mehr als eine Beschäftigung hat, können Sie zwischen Unternehmen wechseln, um den Vergütungsverlauf in jedem Unternehmen anzuzeigen, oder die unternehmensübergreifende Vergütung unter **Freigegebene Human-Resources-Parameter** aktivieren, um alle Vergütungspläne anzuzeigen.
 
 Sie können Vergütungen sowohl für direkte als auch für erweiterte Berichte anzeigen.
 
 #### <a name="leave-and-absence-tab"></a>Registerkarte „Urlaub und Abwesenheit“
 
-Auf der Registerkarte **Urlaub und Abwesenheit** werden die Top-Salden für Mitarbeiter mit Aktivität angezeigt. Wählen Sie **Details** und dann **Arbeitsfreie Zeit** aus, um Maßnahmen zu ergreifen oder eine vollständige Liste der Aktivitäten anzuzeigen. Auf dem Formular **Arbeitsfreie Zeit** können Sie Salden, Anfragen, genehmigte arbeitsfreie Zeit und prognostizierte Salden anzeigen, um den Mitarbeitern zu helfen, die Zeit besser zu verwalten. Abhängig von den Einstellungen Ihres Unternehmens können Sie auch eine Freistellung für Ihre Direktiven und erweiterten Berichte beantragen.
+Auf der Registerkarte **Urlaub und Abwesenheit** werden die Top-Salden für Mitarbeiter mit Aktivität angezeigt. Wählen Sie **Details** und dann **Arbeitsfreie Zeit** aus, um Maßnahmen zu ergreifen oder eine vollständige Liste der Aktivitäten anzuzeigen. Auf der Seite **Arbeitsfreie Zeit** können Sie Salden, Anfragen, genehmigte arbeitsfreie Zeit und prognostizierte Salden anzeigen, um den Mitarbeitern zu helfen, die Zeit besser zu verwalten. Abhängig von den Einstellungen Ihres Unternehmens können Sie auch eine Freistellung für Ihre Direktiven und erweiterten Berichte beantragen.
 
 #### <a name="performance-goals-tab"></a>Registerkarte „Leistungsziele“
 

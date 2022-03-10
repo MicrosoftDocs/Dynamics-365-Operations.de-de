@@ -1,33 +1,35 @@
 ---
 title: Integration mit Dayforce konfigurieren
-description: Die Integration zwischen Microsoft Dynamics 365 Human Resources und Ceridian Dayforce erfordert mehrere Konfigurationsschritte, die in diesem Artikel beschrieben sind. Sie müssen die Integration sowohl in Human Resources als auch in Dayforce konfigurieren, bevor Sie einen Zahlungslauf verarbeiten können.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Dieses Thema beschreibt die erforderlichen Konfigurationsschritte, die für die Integration zwischen Microsoft Dynamics 365 Human Resources und Ceridian Dayforce erforderlich sind.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: PersonnelIntegrationConfiguration
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bcb57082a49fc07a4139aa37f9507890ca7ed620
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7e2043e75aa647e21f3e0816247dcf651be64730
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805081"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067075"
 ---
 # <a name="configure-integration-with-dayforce"></a>Integration mit Dayforce konfigurieren
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Die Integration zwischen Microsoft Dynamics 365 Human Resources und Ceridian Dayforce erfordert mehrere Konfigurationsschritte, die in diesem Artikel beschrieben sind. Sie müssen die Integration sowohl in Human Resources als auch in Dayforce konfigurieren, bevor Sie einen Zahlungslauf verarbeiten können.
+Die Integration zwischen Microsoft Dynamics 365 Human Resources und Ceridian Dayforce beruht auf mehreren Konfigurationsschritten, die in diesem Thema beschrieben sind. Sie müssen die Integration sowohl in Human Resources als auch in Dayforce konfigurieren, bevor Sie einen Zahlungslauf verarbeiten können.
 
 Wenn Sie einen Dienst wie Dayforce verwenden, um Zahlungsläufe abzuschließen, müssen Sie die Integration in Human Resources ermöglichen. Die Integration erfordert bestimmte Daten aus Human Resources. Daher müssen Sie überprüfen, dass die Daten, die Dayforce zugeordnet sind, in Human Resources in einer Weise konfiguriert werden, die die Integration unterstützt. Bei der Integration werden die folgenden allgemeinen Kategorien von Daten verwendet:
 
@@ -36,7 +38,7 @@ Wenn Sie einen Dienst wie Dayforce verwenden, um Zahlungsläufe abzuschließen, 
 - Lohndaten, wie Lohnzyklen, Lohnperioden und Einkommenscodes
 - Arbeitskraftdaten
 
-In diesem Artikel werden die Schritte beschrieben, die Sie befolgen müssen, um die Integration zu ermöglichen. Es werden auch die Datentypen und die Konfigurationsdetails erklärt, die für die Integration erforderlich sind.
+Dieses Thema beschreibt die Schritte, die Sie ausführen müssen, um die Integration zu aktivieren, und erläutert die Datentypen und die Konfigurationsdetails, die für die Integration erforderlich sind.
 
 ## <a name="enable-the-integration"></a>Die Integration aktivieren
 
@@ -51,10 +53,10 @@ Um die Integration in Human Resources zu aktivieren, gehen Sie folgendermaßen v
 
 Wenn die Integration aktiviert ist, werden Datenexportpaket und Dateien erstellt und die Häufigkeit wird festgelegt. Sie können diese Häufigkeit nach Bedarf ändern.
 
-Weitere Informationen zu Azure-Speicherkonten und Azure Storage-Verbindungszeichenfolgen finden Sie in den folgenden Azure-Artikeln:
+Weitere Informationen zu Azure-Speicherkonten und Azure Storage-Verbindungszeichenfolgen finden Sie in den folgenden Azure-Themen:
 
-- [Über Azure-Speicherkonten](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
-- [Azure Storage-Verbindungszeichenfolgen konfigurieren](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
+- [Über Azure-Speicherkonten](/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
+- [Azure Storage-Verbindungszeichenfolgen konfigurieren](/azure/storage/common/storage-configure-connection-string)
 
 ### <a name="technical-details-when-payroll-integration-is-enabled"></a>Technische Details, wenn Lohnintegration aktiviert ist
 
@@ -122,12 +124,12 @@ Dayforce erstellt die folgenden Abzüge, basierend auf den Lohnauswirkungen, die
 | Nur Beitrag          | Ein Arbeitgeberabzug wird erstellt.             |
 | Abzug und Beitrag | Mitarbeiter- und Arbeitgeberabzüge werden erstellt. |
 
-Weitere Informationen darüber, wie Sie ein Vorteilsprogramm definieren und verwalten finden Sie in den folgenden Artikeln:
+Weitere Informationen darüber, wie Sie ein Vorteilsprogramm definieren und verwalten finden Sie in den folgenden Themen:
 
-- [Mitarbeitervorteilsprogramm anbieten](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
-- [Neue Vergütung erstellen](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
-- [Vorteilsberechtigungsregeln und Richtlinien definieren](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
-- [Vorteile von Arbeitskräften registrieren und entfernen](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
+- [Mitarbeitervergütungsprogramm bereitstellen](/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
+- [Neuen Vorteil erstellen](/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
+- [Vorteilsberechtigungsregeln und Richtlinien definieren](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
+- [Vorteile von Arbeitskräften registrieren und entfernen](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
 
 #### <a name="compensation"></a>Vergütung 
 
@@ -135,22 +137,22 @@ Die Vergütungsverwaltung dient zum Steuern der Abwicklung des Grundlohns und de
 
 Dayforce verwendet Vergütungsinformationen, um einen Stunden- oder Jahressatz für einen Mitarbeiter zu berechnen. Feste Vergütungspläne und Lohnsatzumrechnungen sind erforderlich. Mitarbeiter müssen einem festen Vergütungsplan zugeordnet werden.
 
-Weitere Informationen zu Kompensationsplänen finden Sie in den folgenden Artikeln:
+Weitere Informationen zu Vergütungsplänen finden Sie in den folgenden Themen:
 
-- [Feste Vergütungspläne erstellen](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
-- [Variable Vergütungspläne erstellen](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-variable-compensation-plans)
-- [Gehalts-/Vergütungsstruktur und -pläne entwickeln](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
-- [Vergütung verarbeiten](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
-- [Vergütungsprozess definieren und Ergebnisse berechnen](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
-- [Einen Mitarbeiters in einem Plan für eine feste Vergütung registrieren](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
-- [Einen Mitarbeiter in einem Plan für variable Vergütung registrieren](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
+- [Feste Vergütungspläne erstellen](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+- [Variable Vergütungspläne erstellen](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+- [Gehalts-/Vergütungsstruktur und -pläne entwickeln](/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
+- [Vergütung verarbeiten](/dynamics365/unified-operations/talent/process-compensation)
+- [Vergütungsprozess definieren und Ergebnisse berechnen](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
+- [Einen Mitarbeiters in einem Plan für eine feste Vergütung registrieren](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
+- [Einen Mitarbeiter in einem Plan für variable Vergütung registrieren](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
 
 #### <a name="jobs"></a>Stellentyp 
 
-Eine Stelle ist eine Sammlung der Aufgaben und Zuständigkeiten, die für eine Person, die eine Tätigkeit ausführt, obligatorisch sind. Weitere Informationen finden Sie in folgenden Artikeln:
+Eine Stelle ist eine Sammlung der Aufgaben und Zuständigkeiten, die für eine Person, die eine Tätigkeit ausführt, obligatorisch sind. Weitere Informationen finden Sie in folgenden Themen:
 
-- [Komponenten einer Stelle einrichten](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-job)
-- [Neue Stellen definieren](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
+- [Komponenten einer Stelle einrichten](/dynamics365/unified-operations/talent/create-job)
+- [Neue Einzelvorgänge definieren](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
 
 ##### <a name="positions"></a>Positionen
 
@@ -172,19 +174,19 @@ Bedenken Sie die folgenden Daten und Konfigurationen, wenn Sie Positionen einric
 
 Wenn mehrere Positionen in derselben Abteilung derselben Stelle zugeordnet sind, werden sie in einer einzelnen Position in Dayforce konsolidiert.
 
-Weitere Informationen finden Sie in folgenden Artikeln:
+Weitere Informationen finden Sie in folgenden Themen:
 
-- [Belegschaft mittels Abteilungen, Stellen und Positionen verwalten](https://docs.microsoft.com/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
-- [Positionen einrichten](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
+- [Organisieren der Belegschaft anhand von Abteilungen, Stellen und Positionen](/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
+- [Positionen einrichten](/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
 
 #### <a name="departments"></a>Abteilungen
 
 Eine Abteilung ist eine Organisationseinheit, die eine Kategorie oder einen funktionalen Bereich einer Organisation darstellt. Eine Abteilung ist für einen bestimmten Bereich der Organisation wie zum Beispiel Verkauf, Buchhaltung oder Personalverwaltung zuständig. Sie können Abteilungen verwenden, um zu Funktionsbereiche zu melden. Abteilungen können Gewinn- und Verlustzuständigkeit haben.
 
-Weitere Informationen finden Sie in folgenden Artikeln:
+Weitere Informationen finden Sie in folgenden Themen:
 
-- [Abteilung erstellen und der Abteilungshierarchie zuordnen](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
-- [Neue Abteilungen definieren](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
+- [Eine Abteilung erstellen und der Abteilungshierarchie zuordnen](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
+- [Neue Abteilungen definieren](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
 
 #### <a name="pay-cycles-and-pay-periods"></a>Lohnzyklen und Lohnperioden
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 262a5a9d83767599f6e15183d6afcacf4b5901fe
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2308fc4fabe541b8affeba5860a3154f81e8903e4853fd36d777f15a503d9dd8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808639"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752825"
 ---
 # <a name="item-where-used"></a>Artikelverwendungsort
 
@@ -66,7 +66,7 @@ Sie können eine Kalkulation für einen bestimmten Artikel durchführen, um sich
 
 Im nachfolgenden Screenshot finden Sie ein Beispiel für eine Artikelverwendungsort-Berechnung für Artikelnummer „1000“.
 
-![Beispiel einer Artikelverwendungsort-Berechnung](media/12-controlling-and-reporting.png)
+![Beispiel einer Artikelverwendungsort-Berechnung.](media/12-controlling-and-reporting.png)
 
 
 
