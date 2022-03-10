@@ -1,12 +1,10 @@
 ---
 title: Allgemeine Erfassungsverarbeitung
 description: Dieses Thema beschreibt die Funktionen in Microsoft Dynamics 365 Finance, mit denen die allgemeine Erfassung einfacher wird und die auch helfen, sicherzustellen, dass die korrekten Daten erfasst und die internen Kontrollen nicht beeinträchtigt werden.
-author: ShylaThompson
-manager: AnnBe
+author: kweekley
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd854b2188b07830e5641ccdd4bb02804a07b55c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7f9f4019618891909e674c6b936f79778ac84744
+ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4975632"
+ms.lasthandoff: 10/31/2021
+ms.locfileid: "7726776"
 ---
 # <a name="general-journal-processing"></a>Allgemeine Erfassungsverarbeitung
 
@@ -44,14 +42,14 @@ Auf der Seite **Journale** können Sie folgende Elemente einrichten:
 
 Ein Journal kann nur für Regulierungen verwendet werden. In diesem Fall können Sie angeben, dass nur die **Sachkonto**-Kontenart für alle Unternehmen gültig ist. 
 
-[![Erfassungssteuerungs-Kontotypen](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+[![Erfassungssteuerungs-Kontotypen.](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
 
 Ein Journal kann nur für ein bestimmtes Segment oder für einen Bereich für Hauptkonten verwendet werden. 
 
-[![Erfassungssteuerungssegment](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
+[![Erfassungssteuerungssegment.](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
 Die Option **Automatische Rückbuchung** ist nur in allgemeinen Erfassungen verfügbar. Beispiel: Sie haben eine Abgrenzungsregulierung, in der das eigentliche Dokument noch nicht verarbeitet wurde, wie in der folgenden Abbildung dargestellt.
-[![Erfassungsrücksetzung](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
+[![Erfassungsrücksetzung.](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
 Das Microsoft Excel-Add-in für Journaleinträge bietet eine weitere Ebene der Automatisierung und erleichtert die Dateneingabe. Die **Positionen in Excel öffnen**-Aktivität ist auf den Seiten **Allgemeine Erfassung** und **Alle Journale** verfügbar. 
 
@@ -81,7 +79,7 @@ Die Hauptkontoeinstellung stellt viele Optionen zum Verarbeiten der allgemeinen 
 
 ### <a name="accounting-structures-and-advanced-rules-structures"></a>Buchhaltungsstrukturen und Strukturen für erweiterte Regeln
 
-Buchhaltungsstrukturen und Strukturen für die erweiterten Regeln sind sehr wichtig, um sicherzustellen, dass die Daten, die für die Finanzberichterstellung und die Leistungsnachverfolgung erforderlich sind, während der allgemeinen Erfassungsverarbeitung und in allen Dokumentationen erfasst werden. Mit Buchhaltungsstrukturen und Strukturen für erweiterten Regeln können Sie die Dateneingabeerfahrung anpassen. Sie können die Dateneingabe nur für Finanzdimensionen zulassen, die in jeder Situation relevant sind. Sie können auch die Anforderung erzwingen, dass die erforderlichen und korrekte  Daten immer erfasst werden.
+Buchhaltungsstrukturen und Strukturen für die erweiterten Regeln sind sehr wichtig, um sicherzustellen, dass die Daten, die für die Finanzberichterstellung und die Leistungsnachverfolgung erforderlich sind, während der allgemeinen Erfassungsverarbeitung und in allen Dokumentationen erfasst werden. Mit Buchhaltungsstrukturen und Strukturen für erweiterten Regeln können Sie die Dateneingabeerfahrung anpassen. Sie können die Dateneingabe nur für Finanzdimensionen zulassen, die in jeder Situation relevant sind. Sie können auch die Anforderung erzwingen, dass die erforderlichen und korrekte Daten immer erfasst werden.
 
 Weitere Informationen finden Sie in folgenden Themen:
 - [Kontenplan planen](plan-chart-of-accounts.md) 
@@ -104,3 +102,6 @@ Die Möglichkeit, eine Erfassung in einem Workflow mit dem Status „Nicht Wiede
 
 ## <a name="delete-journal-lines"></a>Erfassungspositionen löschen
 Die Möglichkeit, schnell alle Erfassungspositionen zu löschen, wird in einer Erfassung unter **Funktionen** > **Erfassungspositionen löschen** aktiviert. Um diese Funktion zu aktivieren, wählen Sie in der **Funktionsverwaltung** die Option **Erfassungsleistungsoptimierungen löschen** aus.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

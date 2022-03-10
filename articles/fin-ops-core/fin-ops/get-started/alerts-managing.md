@@ -1,24 +1,23 @@
 ---
 title: Stapelverarbeitung von Warnungen
 description: Dieses Thema enthält Informationen über Stapelverarbeitungsvorgänge von Warnungen.
-author: tjvass
-manager: AnnBe
-ms.date: 09/10/2010
+author: RichdiMSFT
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 57208e87dbbd0ae6fc05644229a8a9cf08da4249
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 0ec2a9bd925ccd7dc7c6a8251629bf565ece2268
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5562409"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416428"
 ---
 # <a name="batch-processing-of-alerts"></a>Stapelverarbeitung von Warnungen
 

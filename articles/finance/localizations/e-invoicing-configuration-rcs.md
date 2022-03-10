@@ -1,12 +1,10 @@
 ---
-title: Das Add-On für die elektronische Rechnungsstellung in Regulatory Configuration Services (RCS) konfigurieren
-description: In diesem Thema wird erläutert, wie Sie das Add-On für die elektronische Rechnungsstellung in Dynamics 365 Regulatory Configuration Services (RCS) konfigurieren.
+title: Elektronische Rechnungsstellung in Regulatory Configuration Services (RCS) konfigurieren
+description: In diesem Thema wird erläutert, wie Sie die elektronische Rechnungsstellung in Dynamics 365 Regulatory Configuration Services (RCS) konfigurieren.
 author: gionoder
-manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,46 +15,44 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 99fac9a42dc2b180c220612c66fe753d43e5bd7f
-ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
+ms.openlocfilehash: 640244612a2a553ec09661635787cb7f8694283b
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "5592621"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779669"
 ---
-# <a name="configure-the-electronic-invoicing-add-on-in-regulatory-configuration-services-rcs"></a>Das Add-On für die elektronische Rechnungsstellung in Regulatory Configuration Services (RCS) konfigurieren
+# <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Elektronische Rechnungsstellung in Regulatory Configuration Services (RCS) konfigurieren
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/banner.md)]
+Dieses Thema enthält Informationen zu den Konfigurationsfunktionen der elektronischen Rechnungsstellung in RCS (Dynamics 365 Regulatory Configuration Services).
 
-Dieses Thema enthält Informationen zu den Konfigurationsfunktionen des Add-Ons für die elektronische Rechnungsstellung in RCS (Dynamics 365 Regulatory Configuration Services).
-
-Dank der Konfigurationsfunktionen können Sie mit dem Add-On für die elektronische Rechnungsstellung die geschäftlichen und behördlichen Anforderungen elektronischer Rechnungen erfüllen, ohne eine Codierung vornehmen zu müssen. In Szenarien, in denen elektronische Rechnungen von einem Webdienst elektronisch genehmigt werden müssen, können Sie mithilfe der Konfigurationsfunktionen auch die Anforderungen für den Austausch von Nachrichten mit einem Webdienst erfüllen, ohne Code ausführen zu müssen.
+Dank der Konfigurationsfunktionen können Sie mit der elektronischen Rechnungsstellung die geschäftlichen und behördlichen Anforderungen elektronischer Rechnungen erfüllen, ohne eine Codierung vornehmen zu müssen. In Szenarien, in denen elektronische Rechnungen von einem Webdienst elektronisch genehmigt werden müssen, können Sie mithilfe der Konfigurationsfunktionen auch die Anforderungen für den Austausch von Nachrichten mit einem Webdienst erfüllen, ohne Code ausführen zu müssen.
 
 ## <a name="electronic-reporting"></a>Elektronische Berichterstellung
 
-Die elektronische Berichterstellung (Electronic Reporting, ER) unterstützt das Add-On für die elektronische Rechnungsstellung.
+Die elektronische Berichterstellung (Electronic Reporting, ER) unterstützt die elektronische Rechnungsstellung.
 
-Die Datenmodellzuordnung und -formate sind konfigurierbare Komponenten, die über ER erstellt und verwaltet sowie im Add-On für die elektronische Rechnungsstellung verwendet werden. Der ER-Formatdesigner ist das Tool zum Erstellen und Verwalten von Dateiformaten. Es wird verwendet, um die Funktionen für die elektronische Rechnungsstellung zu konfigurieren.
+Die Datenmodellzuordnung und -formate sind konfigurierbare Komponenten, die über ER erstellt und verwaltet sowie in der elektronischen Rechnungsstellung verwendet werden. Der ER-Formatdesigner ist das Tool zum Erstellen und Verwalten von Dateiformaten. Es wird verwendet, um die Funktionen für die elektronische Rechnungsstellung zu konfigurieren.
 
 Weitere Informationen finden Sie unter [Überblick über die elektronische Berichtserstellung (Electronic Reporting, ER)](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 ## <a name="electronic-invoicing-features"></a>Funktionen für die elektronische Rechnungsstellung
 
-Die Funktionen für die elektronische Rechnungsstellung sind für die Erstellung elektronischer Rechnungen über das Add-On für die elektronische Rechnungsstellung verantwortlich. Sie beinhalten die Konfigurationsregeln und verwenden sie zur Verarbeitung der von Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management an das Add-On für die elektronische Rechnungsstellung und an elektronische Rechnungen übermittelten Daten.
+Die Funktionen für die elektronische Rechnungsstellung sind für die Erstellung elektronischer Rechnungen über die elektronische Rechnungsstellung verantwortlich. Sie beinhalten die Konfigurationsregeln und verwenden sie zur Verarbeitung der von Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management an die elektronische Rechnungsstellung und an elektronische Rechnungen übermittelten Daten.
 
 Die Funktionen unterstützen auch Szenarien, in denen die Einhaltung der Dateiformatspezifikationen erforderlich und die Ausgabe eine eigenständige elektronische Datei ist. In den meisten Fällen werden die Dateiformatspezifikationen von der Steuerbehörde veröffentlicht.
 
 Schließlich unterstützen die Funktionen den Austausch von Nachrichten mit externen Webdiensten, die entweder von der Steuerbehörde oder einer akkreditierten Partei gehostet werden, sowie Anträge auf Genehmigung oder einen Genehmigungsstempel in der elektronischen Rechnung.
 
-### <a name="availability-of-electronic-invoicing-features"></a>Verfügbarkeit von Funktionen für die elektronische Rechnungsstellung
+## <a name="availability-of-electronic-invoicing-features"></a>Verfügbarkeit von Funktionen für die elektronische Rechnungsstellung
 
 Die Verfügbarkeit von Funktionen für die elektronische Rechnungsstellung hängt vom Land oder der Region ab. Obwohl einige Funktionen grundsätzlich verfügbar sind, befinden sich andere in der Vorschauversion.
 
-#### <a name="preview-features"></a>Vorschaufunktionen
+### <a name="generally-available-features"></a>Allgemein verfügbare Funktionen
 
-Die folgende Tabelle zeigt die Funktionen für die elektronische Rechnungsstellung an, die sich derzeit in der Vorschauversion befinden.
+Die folgende Tabelle zeigt die Funktionen für die elektronische Rechnungsstellung an, die allgemein verfügbar sind.
 
 | Land/Region | Funktionsname                         | Geschäftsdokument |
 |----------------|--------------------------------------|-------------------|
@@ -64,30 +60,40 @@ Die folgende Tabelle zeigt die Funktionen für die elektronische Rechnungsstellu
 | Belgien        | Elektronische Rechnungen für Belgien (BE)      | Verkaufs- und Projektrechnungen |
 | Brasilien         | Brasilianisches NF-e (BR)                  | Steuerdokumentmodell 55, Korrekturschreiben, Stornierungen und Verwerfungen |
 | Brasilien         | Brasilianisches NFS-e ABRASF Curitiba (BR) | Dienst Steuerdokumente |
+| Brasilien         | Brasilianisches NF-e aus E-Mail importieren (BR) | Steuerdokument Modell 55 |
 | Dänemark        | Elektronische Rechnungen für Dänemark (DK)       | Verkaufs- und Projektrechnungen |
-| Ägypten          | Elektronische Rechnungen für Ägypten (EG) | Verkaufs- und Projektrechnungen |
+| Ägypten          | Elektronische Rechnungen für Ägypten (EG)     | Verkaufs- und Projektrechnungen |
 | Estland        | Elektronische Rechnungen für Estland (EE)     | Verkaufs- und Projektrechnungen |
 | Finnland        | Elektronische Rechnungen für Finnland (FI)      | Verkaufs- und Projektrechnungen |
 | Frankreich         | Elektronische Rechnungen für Frankreich (FR)       | Verkaufs- und Projektrechnungen |
 | Deutschland        | Elektronische Rechnungen für Deutschland (DE)       | Verkaufs- und Projektrechnungen |
 | Italien          | FatturaPA (IT)                       | Verkaufs- und Projektrechnungen |
-| Mexiko         | Mexikanisches CFDI (MX)                    | Verkaufsrechnungen, Lieferscheine, Bestandsumlagerungen, Zahlungsergänzungen und Stornierungen |
 | Niederlande    | Elektronische Rechnungen für die Niederlande (NL)        | Verkaufs- und Projektrechnungen |
 | Norwegen         | Elektronische Rechnungen für Norwegen (NO)    | Verkaufs- und Projektrechnungen |
 | Spanien          | Elektronische Rechnungen für Spanien (ES)      | Verkaufs- und Projektrechnungen |
 | Europa         | Elektronische Rechnungen im PEPPOL-Format            | PEPPOL Verkaufs- und Projektrechnungen |
+| Europa         | PEPPOL-Kreditorenrechnung                | PEPPOL-Kreditorenrechnungen importieren |
+| Saudi-Arabien   | Saudi-arabische elektronische Rechnung (SA)| Verkaufs- und Projektrechnungen |
+
+### <a name="preview-features"></a>Vorschaufunktionen
+
+Die folgende Tabelle zeigt die Funktionen für die elektronische Rechnungsstellung an, die sich derzeit in der Vorschauversion befinden.
+
+| Land/Region | Funktionsname                         | Geschäftsdokument |
+|----------------|--------------------------------------|-------------------|
+| Mexiko         | Mexikanisches CFDI (MX)                    | Verkaufsrechnungen, Lieferscheine, Bestandsumlagerungen, Zahlungsergänzungen und Stornierungen |
 
 ### <a name="configurable-components-of-electronic-invoicing-features"></a>Konfigurierbare Komponenten elektronischer Rechnungsstellungsfunktionen
 
 Die Funktionen für die elektronische Rechnungsstellung bestehen aus den folgenden Gruppen konfigurierbarer Komponenten:
 
-- **Formate** – Mithilfe von Formaten können Sie konfigurieren, was das Add-On für die elektronische Rechnungsstellung generieren muss, damit aus einem elektronischen Dokument eine elektronische Rechnung wird. Die Formate umfassen die Formatkonfiguration für die elektronische Rechnung sowie für Dateien und Nachrichten, die zum Übermitteln von Anfragen und zum Empfangen von Antworten verwendet werden, wenn die Kommunikation mit einem externen Webdienst erforderlich ist.
-- **Aktionen** – Mithilfe von Aktionen können Sie konfigurieren, wie das Add-On für die elektronische Rechnungsstellung die Umwandlung eines elektronischen Dokuments, das von Finance und Supply Chain Management übermittelt wurde, in eine elektronische Rechnung generiert.
-- **Anwendbarkeitsregeln** – Mithilfe von Anwendbarkeitsregeln können Sie den Kontext konfigurieren, den das Add-On für die elektronische Rechnungsstellung berücksichtigen muss, um eine Funktion für die elektronische Rechnungsstellung zu verarbeiten.
-- **Variablen** – Mithilfe von Variablen können Sie die Unterstützung für den Aufbau der Konfigurationslogik konfigurieren. Variablen können zur Eingabe von Werten dienen, um eine bestimmte Aktion auszuführen. Alternativ können sie für den Austausch von Werten zwischen Finance und Supply Chain Management sowie dem Add-On für die elektronische Rechnungsstellung dienen.
-- **Elektronische Dokumentmodellzuordnung** – Mithilfe der elektronischen Dokumentmodellzuordnung können Sie die ER-Modellzuordnung konfigurieren. Die Modellzuordnung definiert die Datenzuordnung der abstrakten Rechnung, die beim Übermitteln elektronischer Dokumente im Add-On für die elektronische Rechnungsstellung integriert ist.
-- **Rechnungskontextmodell** – Mithilfe des Rechnungskontextmodells können Sie das ER-Rechnungskontextmodell konfigurieren und den Kontext einer elektronischen Rechnungsstellungsfunktion definieren.
-- **Antworttypen** – Mithilfe von Antworttypen können Sie konfigurieren, was das Add-On für die elektronische Rechnungsstellung in Finance und Supply Chain Management als Ergebnis der elektronischen Rechnungsverarbeitung aktualisieren muss.
+- **Formate**: Mithilfe von Formaten können Sie konfigurieren, was die elektronische Rechnungsstellung generieren muss, damit aus einem elektronischen Dokument eine elektronische Rechnung wird. Die Formate umfassen die Formatkonfiguration für die elektronische Rechnung sowie für Dateien und Nachrichten, die zum Übermitteln von Anfragen und zum Empfangen von Antworten verwendet werden, wenn die Kommunikation mit einem externen Webdienst erforderlich ist.
+- **Aktionen**: Mithilfe von Aktionen können Sie konfigurieren, wie die elektronische Rechnungsstellung die Umwandlung eines elektronischen Dokuments, das von Finance und Supply Chain Management übermittelt wurde, in eine elektronische Rechnung generiert.
+- **Anwendbarkeitsregeln**: Mithilfe von Anwendbarkeitsregeln können Sie den Kontext konfigurieren, den die elektronische Rechnungsstellung berücksichtigen muss, um eine Funktion für die elektronische Rechnungsstellung zu verarbeiten.
+- **Variablen**: Mithilfe von Variablen können Sie die Unterstützung für den Aufbau der Konfigurationslogik konfigurieren. Variablen können zur Eingabe von Werten dienen, um eine bestimmte Aktion auszuführen. Alternativ können sie für den Austausch von Werten zwischen Finance und Supply Chain Management sowie der elektronischen Rechnungsstellung dienen.
+- **Elektronische Dokumentmodellzuordnung**: Mithilfe der elektronischen Dokumentmodellzuordnung können Sie die EB-Modellzuordnung konfigurieren. Die Modellzuordnung definiert die Datenzuordnung der abstrakten Rechnung, die beim Übermitteln elektronischer Dokumente in der elektronischen Rechnungsstellung integriert ist.
+- **Rechnungskontextmodell**: Mithilfe des Rechnungskontextmodells können Sie das EB-Rechnungskontextmodell konfigurieren und den Kontext einer elektronischen Rechnungsstellungsfunktion definieren.
+- **Antworttypen**: Mithilfe von Antworttypen können Sie konfigurieren, was die elektronische Rechnungsstellung in Finance und Supply Chain Management als Ergebnis der elektronischen Rechnungsverarbeitung aktualisieren muss.
 
 ### <a name="formats"></a>Formate
 
@@ -192,6 +198,13 @@ Die folgenden Listen zeigen die ER-Formatkonfigurationen, die für die Funktione
 - Vertriebsrechnung (ES)
 - Projektrechnung (ES)
 
+#### <a name="saudi-arabian-sa-electronic-invoice-sales-and-project-invoices-for-saudi-arabia"></a>Saudi-arabische (SA) elektronische Rechnung: Verkaufs- und Projektrechnungen für Saudi-Arabien
+
+- E-Verkaufsrechnung (SA)
+- E-Projektrechnung (SA)
+
+Zusätzlich zu den ER-Formatkonfigurationen, die standardmäßig für den elektronischen Rechnungsstellungsservice verfügbar sind, können Sie auch Ihre eigenen ER-Formatkonfigurationen erstellen. Die Formatkonfigurationen, die für die Verwendung mit Funktionen für die elektronische Rechnungsstellung erstellt wurden, unterstützen jedoch keinen direkten Verweis auf Tabellen für Finance oder Supply Chain Management oder die entsprechenden Metadaten. Es werden nur Referenzen auf die ER-Modellzuordnung unterstützt.
+
 ### <a name="actions"></a>Aktionen
 
 In der folgenden Tabelle sind die verfügbaren Aktionen aufgeführt, und ob sie derzeit allgemein verfügbar sind oder sich noch in der Vorschauversion befinden.
@@ -199,13 +212,98 @@ In der folgenden Tabelle sind die verfügbaren Aktionen aufgeführt, und ob sie 
 | Vorgang                                        | Beschreibung                                                                  | Verfügbarkeit         |
 |-----------------------------------------------|------------------------------------------------------------------------------|----------------------|
 | Umwandeln des Dokuments                            | Führen Sie das elektronische Berichterstellungsformat aus, um das Dokument umzuwandeln.                   | Allgemein verfügbar  |
-| XML-Dokument unterzeichnen                             | Unterzeichnen Sie XML-Dokumente mit einer digitalen Signatur.                                   | Vorschau           |
-| JSON-Dokument für die ägyptische Steuerbehörde unterzeichnen | Unterzeichnen Sie JSON-Dokumente für die ägyptische Steuerbehörde mit einer digitalen Signatur.       | Allgemein verfügbar  |
+| XML-Dokument unterzeichnen                             | Unterzeichnen Sie XML-Dokumente mit einer digitalen Signatur.                                   | Allgemein verfügbar  |
+| JSON-Dokument für die ägyptische Steuerbehörde signieren | Unterzeichnen Sie JSON-Dokumente für die ägyptische Steuerbehörde mit einer digitalen Signatur.       | Allgemein verfügbar  |
 | In ägyptischen ETA-Dienst integrieren           | Kommunizieren Sie mit der ägyptischen Steuerbehörde.                                     | Allgemein verfügbar  |
-| Brasilianischen SEFAZ-Dienst aufrufen                  | Integration in den brasilianischen SEFAZ-Dienst zur Übermittlung von Steuerdokumenten.       | Vorschau           |
+| Brasilianischen SEFAZ-Dienst aufrufen                  | Integration in den brasilianischen SEFAZ-Dienst zur Übermittlung von Steuerdokumenten.       | Allgemein verfügbar  |
 | Mexikanischen PAC-Dienst aufrufen                      | Integration in den mexikanischen PAC-Dienst zur CFDI-Übermittlung.                      | Vorschau           |
 | Verarbeiten der Antwort                              | Analysieren Sie die vom Webdienstaufruf erhaltene Antwort.                     | Allgemein verfügbar  |
-| MS Power Automate verwenden                         | Integrieren Sie in den in Microsoft Power Automate eingebauten Flow.                       | Vorschau           |
+| MS Power Automate verwenden                         | Integrieren Sie in den in Microsoft Power Automate eingebauten Flow.                       | Vorschau           |
+
+### <a name="applicability-rules"></a>Regeln für die Anwendbarkeit
+
+Regeln für die Anwendbarkeit sind konfigurierbare Klauseln, die auf der Ebene der Funktionen für die elektronische Rechnungsstellung definiert werden. Die Regeln sind so konfiguriert, dass sie einen Kontext für die Ausführung von Funktionen für die elektronische Rechnungsstellung über den Funktionsumfang für die elektronische Rechnungsstellung bereitstellen.
+
+Wenn für ein Geschäftsdokument aus Finance oder Supply Chain Management eine elektronische Rechnungsstellung durchgeführt wird, enthält das Geschäftsdokument keine explizite Referenz, die es der Funktion „Elektronische Rechnungsstellung“ ermöglicht, eine bestimmte elektronische Rechnungsstellungsfunktion aufzurufen, um die Übermittlung zu verarbeiten.
+
+Bei ordnungsgemäßer Konfiguration enthält das Geschäftsdokument jedoch die erforderlichen Elemente, mit denen die elektronische Rechnungsstellung festlegen kann, welche Funktion für die elektronische Rechnungsstellung ausgewählt werden muss, und anschließend die elektronische Rechnung erstellt wird.
+
+Mithilfe der Regeln für die Anwendbarkeit kann die Funktion für die elektronische Rechnungsstellung die genauen Funktionen für die elektronische Rechnungsstellung ermitteln, die zur Verarbeitung der Übermittlung verwendet werden müssen. Dazu wird der Inhalt des eingereichten Geschäftsdokuments mit den Klauseln aus den Regeln für die Anwendbarkeit abgeglichen.
+
+Beispielsweise werden zwei Funktionen für die elektronische Rechnungsstellung mit zugehörigen Regeln für die Anwendbarkeit im Funktionsumfang für die elektronische Rechnungsstellung bereitgestellt.
+
+| Funktion der elektronischen Rechnungsstellung | Regeln für die Anwendbarkeit        |
+|------------------------------|--------------------------- |
+| K                            | <p>Land = BR</p><p>und</p><p>Juristische Person = BRMF</p>  |
+| Mrd                            | <p>Land = MX</p><p>und</p><p>Juristische Person = MXMF</p>  |
+
+Wenn ein Geschäftsdokument aus Finance oder Supply Chain Management an die Funktionen für die elektronische Rechnungsstellung gesendet wird, enthält das Geschäftsdokument die folgenden Attribute:
+
+- Land = BR
+- Juristische Person = BRMF
+
+Mit den Funktionen für die elektronische Rechnungsstellung wird die Funktion **A** der elektronischen Rechnungsstellung ausgewählt, um die Einreichung zu bearbeiten und die elektronische Rechnung zu erstellen.
+
+Das Gleiche gilt, wenn das Geschäftsdokument Folgendes enthält:
+
+- Land = MX
+- Juristische Person = MXMF
+
+Funktion **B** der elektronischen Rechnungsstellung wird ausgewählt, um die elektronische Rechnung zu erstellen.
+
+Die Konfiguration der Regeln für die Anwendbarkeit darf nicht mehrdeutig sein. Dies bedeutet, dass zwei oder mehr Funktionen der elektronischen Rechnungsstellung nicht dieselben Klauseln enthalten können, da sonst keine Auswahl getroffen wird. Wenn doppelte Funktionen der elektronischen Rechnungsstellung vorhanden sind, verwenden Sie zusätzliche Klauseln, um Unklarheiten zu vermeiden, damit die elektronische Rechnungsstellung zwischen den beiden Funktionen der elektronischen Rechnungsstellung unterscheiden kann.
+
+Ziehen Sie zum Beispiel die Funktion **C** der elektronischen Rechnungsstellung in Betracht. Diese Funktion ist eine Kopie der Funktion **A** der elektronischen Rechnungsstellung.
+
+| Funktion der elektronischen Rechnungsstellung | Regeln für die Anwendbarkeit        |
+|------------------------------|--------------------------- |
+| K                            | <p>Land = BR</p><p>und</p><p>Juristische Person = BRMF</p>  |
+| C                            | <p>Land = BR</p><p>und</p><p>Juristische Person = BRMF</p>  |
+
+In diesem Beispiel steht Funktion **C** vor der Übermittlung eines Geschäftsdokuments, das Folgendes enthält:
+
+- Land = BR
+- Juristische Person = BRMF
+
+Die Funktion der elektronischen Rechnungsstellung kann nicht unterscheiden, welche Funktion der elektronischen Rechnungsstellung zur Verarbeitung der Übermittlung verwendet werden muss, da die Übermittlungen genau dieselben Klauseln enthalten.
+
+Um eine Unterscheidung zwischen den beiden Funktionen anhand der Regeln für die Anwendbarkeit zu schaffen, muss einer der Funktionen eine neue Klausel hinzugefügt werden, damit die elektronische Rechnungsstellung die richtige Funktion der elektronischen Rechnungsstellung auswählen kann.
+
+| Funktion der elektronischen Rechnungsstellung | Regeln für die Anwendbarkeit        |
+|------------------------------|--------------------------- |
+| K                            | <p>Land = BR</p><p>und</p><p>Juristische Person = BRMF</p>  |
+| C                            | <p>Land = BR</p><p>und</p><p>Juristische Person = BRMF</p><p>und</p><p>Modell = 55</p>  |
+
+Zur Unterstützung der Erstellung komplexerer Klauseln stehen folgende Ressourcen zur Verfügung:
+
+Logische Operatoren:
+- Und
+- Oder
+
+Operatortypen:
+- Equal
+- Not equal
+- Greater than
+- Less than
+- Größer oder gleich
+- Kleiner oder gleich
+- Contains
+- Beginnt mit
+
+Datentypen:
+- Zeichenfolge
+- Anzahl
+- Aktiv
+- Datum
+- UUID
+
+Fähigkeit zum Gruppieren und Aufheben der Gruppierung von Klauseln.
+Das Beispiel sieht so aus.
+
+| Funktion der elektronischen Rechnungsstellung | Regeln für die Anwendbarkeit        |
+|------------------------------|--------------------------- |
+| C                            | <p>Land = BR</p><p>und</p><p>(Juristische Person = BRMF</p><p>oder</p><p>Modell = 55)</p>  |
+
 
 ## <a name="configuration-providers"></a>Konfigurationsanbieter
 
@@ -237,7 +335,7 @@ Die Versionen der elektronischen Rechnungsfunktion folgen einem Lebenszyklus mit
 
 - **Entwurf** – Wenn sich eine Funktionsversion in diesem Status befindet, können Sie ihre Konfigurationsattribute und alle Artefakte (z. B. Dateiformatkonfigurationen) bearbeiten.
 - **Abgeschlossen** – Befindet sich eine Funktionsversion in diesem Status, wurde sie im globalen Repository veröffentlicht, das Ihrer Organisation zugeordnet ist. Sie können die Funktionsversion oder eine der ER-Komponenten nicht mehr bearbeiten.
-- **Veröffentlicht** – Befindet sich eine Funktionsversion in diesem Status, wurde sie im Add-On für die elektronische Rechnungsstellung veröffentlicht. Sie können die Funktionsversion oder eine der ER-Komponenten nicht mehr bearbeiten.
+- **Veröffentlicht** – Befindet sich eine Funktionsversion in diesem Status, wurde sie in der elektronischen Rechnungsstellung veröffentlicht. Sie können die Funktionsversion oder eine der ER-Komponenten nicht mehr bearbeiten.
 
 ### <a name="feature-configurations"></a>Funktionskonfigurationen
 
@@ -266,14 +364,14 @@ Die Anwendungseinrichtung muss einer zuvor erstellten verbundenen Anwendung zuge
 
 Verwenden Sie in RCS den Befehl **Bereitstellen** zum gezielten Veröffentlichen einer Funktionsversion für die elektronische Rechnungsstellung. Wählen Sie **Bereitstellen** und anschließend eine der folgenden Optionen aus, um das Ziel der Bereitstellung zu definieren: 
 
-- **Service-Umgebung** – Wenn das Ziel der Bereitstellung die Service-Umgebung ist, wird die Funktionsversion für die elektronische Rechnungsstellung in der Service-Umgebung veröffentlicht. Das Add-On für die elektronische Rechnungsstellung ist dann bereit, elektronische Dokumente zu empfangen und zu verarbeiten, die von Finance und Supply Chain Management gesendet werden.
+- **Service-Umgebung** – Wenn das Ziel der Bereitstellung die Service-Umgebung ist, wird die Funktionsversion für die elektronische Rechnungsstellung in der Service-Umgebung veröffentlicht. Die elektronische Rechnungsstellung ist dann bereit, elektronische Dokumente zu empfangen und zu verarbeiten, die von Finance und Supply Chain Management gesendet werden.
 - **Verbundene Anwendung** – Wenn das Ziel der Bereitstellung die verbundene Anwendung ist, wird die Konfiguration, die von der Anwendungseinrichtung bereitgestellt wird, in die zuvor zugeordnete Instanz für Finance und Supply Chain Management geschrieben.
 
 Es können nur Funktionsversionen für die elektronische Rechnungsstellung mit dem Status **Abgeschlossen** bereitgestellt werden – entweder in einer Service-Umgebung oder in einer verbundenen Anwendung.
 
 ### <a name="removing-feature-versions"></a>Entfernen von Funktionsversionen
 
-Verwenden Sie in RCS den Befehl **Bereitstellung zurücknehmen**, um eine bestimmte Funktionsversion für die elektronische Rechnungsstellung aus einer Service-Umgebung im Add-On für die elektronische Rechnungsstellung zu entfernen.
+Verwenden Sie in RCS den Befehl **Bereitstellung zurücknehmen**, um eine bestimmte Funktionsversion für die elektronische Rechnungsstellung aus einer Service-Umgebung in der elektronischen Rechnungsstellung zu entfernen.
 
 > [!IMPORTANT]
 > Der Befehl **Bereitstellung zurücknehmen** funktioniert nur in Service-Umgebungen. Es werden keine Funktionsversionen für die elektronische Rechnungsstellung aus verbundenen Anwendungen entfernt.

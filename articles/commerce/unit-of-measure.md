@@ -2,7 +2,6 @@
 title: Einstellungen für die Maßeinheit festlegen
 description: Dieses Thema behandelt die Einstellungen der Maßeinheit und beschreibt, wie sie auf Microsoft Dynamics 365 Commerce festgelegt werden.
 author: anupamar-ms
-manager: annbe
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2c5750ae506978dfac842eebf4ba6036322bdd7f
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: 7fe5cf6b57a8897a0bd541146cb1ad17b496d5633c0a1df9d58b2a4fbc868139
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937587"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6761513"
 ---
 # <a name="apply-unit-of-measure-settings"></a>Einstellungen für die Maßeinheit festlegen
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dieses Thema behandelt die Einstellungen der Maßeinheit und beschreibt, wie sie auf Microsoft Dynamics 365 Commerce festgelegt werden.
 
@@ -34,7 +32,7 @@ Ein Produkt kann in verschiedenen Einheiten verkauft werden, z. B. „pro Stück
 
 Im Beispiel in der folgenden Abbildung wurde für ein Produkt in der Commerce-Zentrale eine Maßeinheit **ea** (pro Stück) konfiguriert.
 
-![Beispiel für ein Produkt, das mit einer Maßeinheit in der Commerce-Zentrale konfiguriert ist](./media/Productunit-headquarters.PNG)
+![Beispiel für ein Produkt, das mit einer Maßeinheit in der Commerce-Zentralverwaltung konfiguriert ist.](./media/Productunit-headquarters.PNG)
 
 > [!NOTE]
 > Unterstützung für die Anwendung und Anzeige der Maßeinheit ist ab der Commerce-Version 10.0.19 verfügbar.
@@ -56,11 +54,11 @@ Zu den Modulen, die die Einstellungen für die Maßeinheit verwenden, gehören d
 
 Im Beispiel in der folgenden Abbildung zeigt eine Produkt-Detailseite (PDP) die Maßeinheit (**ea**) für ein Produkt an.
 
-![Beispiel für ein PDP, das die Maßeinheit anzeigt](./media/Productunit-PDP.png)
+![Beispiel für ein PDP, das die Maßeinheit anzeigt.](./media/Productunit-PDP.png)
 
 In dem Beispiel in der folgenden Abbildung zeigt ein Produktsammlungsmodul die Maßeinheit (**ea**) für ein Produkt an.
 
-![Beispiel eines Produktsammlung-Moduls, das die Maßeinheit anzeigt](./media/Productunit-productcollection.png)
+![Beispiel eines Produktsammlung-Moduls, das die Maßeinheit anzeigt.](./media/Productunit-productcollection.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

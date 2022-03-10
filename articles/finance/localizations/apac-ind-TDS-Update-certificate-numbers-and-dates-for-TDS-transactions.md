@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 248de8e12703a84482b67d0899857a6efb33531c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: da835306e523129fb667153ff6a5fbe574f2769649639595c90af603f1258e4a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023264"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757998"
 ---
 # <a name="update-certificate-numbers-and-dates-for-tds-transactions"></a>Zertifikatsnummern und -daten für TDS-Buchungen aktualisieren
 
@@ -33,7 +33,7 @@ Gehen Sie wie folgt vor, um die Zertifikatsnummern und -daten für TDS-Buchungen
 
 1. Gehen Sie zu **Steuer \> Erklärungen \> Quellensteuer \> Zertifikat aktualisieren**.
 
-    [![Seite „Zertifikat aktualisieren“](./media/apac-ind-TDS-45.png)](./media/apac-ind-TDS-45.png)
+    [![Seite „Zertifikat aktualisieren“.](./media/apac-ind-TDS-45.png)](./media/apac-ind-TDS-45.png)
 
 2. Wählen Sie auf der Seite **Zertifikat aktualisieren** im Abschnitt **Auswählen** im Feld **Steuertyp** **TDS** aus.
 3. Wählen Sie im Feld **Zertifikatsnummer** die TDS-Zertifikatsnummer des Debitors oder Kreditors aus.
@@ -60,4 +60,4 @@ Gehen Sie wie folgt vor, um die Zertifikatsnummern und -daten für TDS-Buchungen
 8. Wählen Sie **Aktualisieren**, um die Felder **Zertifikatsnummer** und **Zertifikatsdatum** für TDS-Buchungen im unteren Raster zu aktualisieren.
 10. Gehen Sie zu **Steuer \> Indirekte Steuern \> Quellensteuer \> Wiederherstellbares Zertifikat** und wählen Sie **Anfrage** aus, um die aktualisierten Buchungspositionen mit den neuen Zertifikatsnummern auf der Seite **Zertifikatsbuchungen** anzuzeigen.
 
-    [![Seite „Zertifikatsbuchungen“](./media/apac-ind-TDS-46.png)](./media/apac-ind-TDS-46.png)
+    [![Seite „Zertifikatsbuchungen“.](./media/apac-ind-TDS-46.png)](./media/apac-ind-TDS-46.png)

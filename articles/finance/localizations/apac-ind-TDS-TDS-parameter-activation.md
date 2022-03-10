@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: dda276b7d634317aae26728f7d9f51af9ccfb896
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: e0c0c830391b790f3bc066e319a855b44f7e243f4e086144bbafaa6bb2fa1df3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023266"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6781706"
 ---
 # <a name="set-the-tds-parameters"></a>TDS-Parameter festlegen
 
@@ -34,13 +34,13 @@ In diesem Thema wird erklärt, wie Sie Parameter festlegen, um die in bestimmten
 3. Stellen Sie die Option **Rechnung** auf **Ja**, um die Felder zu aktivieren, mit denen TDS auf Rechnungsebene berechnet und abgezogen werden.
 4. Stellen Sie die Option **Zahlung** auf **Ja**, um die Felder zu aktivieren, mit denen TDS auf Zahlungsebene berechnet und abgezogen werden.
 
-    [![Registerkarte „Direkte Steuern“](./media/apac-ind-TDS-1.png)](./media/apac-ind-TDS-1.png)
+    [![Registerkarte „Direkte Steuern“.](./media/apac-ind-TDS-1.png)](./media/apac-ind-TDS-1.png)
 
 5. Suchen Sie in der Registerkarte **Nummerkreise** die Zeile, bei der das Feld **Referenz** auf **Quellensteuerzahlung** gesetzt ist. Wählen Sie dann im Feld **Nummernkreiscode** der Zeile den Nummernkreiscode aus. Der Nummernkreiscode wird verwendet, um Belegnummern für den periodischen TDS-Ausgleichsprozess zu generieren.
 
     > [!NOTE]
     > Um den periodischen TDS-Ausgleichsprozess auszuführen, gehen Sie zu **Steuern \> Erklärung \> Quellensteuer \> Quellensteuerzahlung**.
 
-    [![Registerkarte Nummernkreise](./media/apac-ind-TDS-2.png)](./media/apac-ind-TDS-2.png)
+    [![Registerkarte „Nummernkreise“.](./media/apac-ind-TDS-2.png)](./media/apac-ind-TDS-2.png)
 
 6. Schließen Sie die Seite.

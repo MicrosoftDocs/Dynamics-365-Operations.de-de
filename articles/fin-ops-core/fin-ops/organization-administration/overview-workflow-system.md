@@ -2,30 +2,33 @@
 title: Workflowsystem – Übersicht
 description: In diesem Thema wird das Workflowsystem beschrieben.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.custom: 56381
+ms.custom:
+- "56381"
+- intro-internal
 ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: feb4ef0233b99420ebdd8781aae0191c9fa379f8
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 70776ba0a0461998d2c1f62ba05b55cd4307a0f7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4692841"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067932"
 ---
 # <a name="workflow-system-overview"></a>Workflowsystem – Übersicht
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 In diesem Thema wird das Workflowsystem beschrieben.
 
@@ -41,7 +44,7 @@ Der Workflow ist ein System, das auf dem Anwendungsobjektserver (AOS) ausgeführ
 
 Ein Workflow stellt einen Geschäftsprozess dar. Ein Workflow definiert, wie ein Dokument das System durchläuft, indem angezeigt wird, wer eine Aufgabe abschließen, eine Entscheidung treffen oder ein Dokument genehmigen muss. Die folgende Abbildung zeigt z. B. einen Workflow für Spesenabrechnungen.
 
-![Workflow mit Elementen, die Benutzern zugewiesen sind](./media/workflow_user.gif)
+![Workflow mit Elementen, die Benutzern zugewiesen sind.](./media/workflow_user.gif)
 
 Beispiel zum besseren Verständnis dieses Workflows: Steffen reicht eine Spesenabrechnung in Höhe von 7.000 Euro ein. In diesem Szenario muss Joachim die Belege prüfen, die Steffen an ihn weiterleitet. Anschließend muss die Spesenabrechnung von Frank und Saskia genehmigt werden. Nehmen wir nun an, Steffen reicht eine Spesenabrechnung in Höhe von 11.000 Euro ein. In diesem Szenario muss Joachim die Belege prüfen, und Frank, Saskia und Anne müssen die Spesenabrechnung genehmigen.
 
@@ -71,3 +74,6 @@ Die Verwendung des Workflowsystems in der Organisation verspricht mehrere Vortei
 + [Konfigurieren paralleler Verzweigungen in einem Workflow](configure-parallel-branch-workflow.md)
 + [Konfigurieren von Positionsworkflows](configure-line-item-workflow.md)
 + [Workflow-FAQs](workflow-FAQ.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

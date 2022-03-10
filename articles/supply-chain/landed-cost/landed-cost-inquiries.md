@@ -13,13 +13,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-21
-ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: c1441a7006bc8647efc449bec6fa6fa801c141b0
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.dyn365.ops.version: 10.0.17
+ms.openlocfilehash: b1d94621b68e443175102a1af5a5fdb4a25d0d1e
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018660"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571760"
 ---
 # <a name="landed-cost-inquiries"></a>Gesamttransportkosten-Abfragen
 

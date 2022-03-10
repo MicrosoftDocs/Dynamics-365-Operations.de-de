@@ -2,11 +2,9 @@
 title: Die Rückerstattung einer Rücklieferung wird abgelehnt
 description: Dieses Thema enthält Anleitungen zur Fehlerbehebung, die hilfreich sein können, wenn eine Rückerstattung für eine Rücklieferung abgelehnt wird, da sich die für die Fakturierung verwendete Kreditkarte von der Karte unterscheidet, die während der ursprünglichen Zahlungsautorisierung verwendet wurde.
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: e202c6b4b9e025d5af1cd5eb6235884aab6444e6
-ms.sourcegitcommit: 6c108be3378b365e6ec596a1a8666d59b758db25
+ms.openlocfilehash: 8880d72d702758d611755bce48a331e3f2e28ca1b7abf485e8b4f7301317c875
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "5585345"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738623"
 ---
 # <a name="refund-on-a-return-order-is-declined"></a>Die Rückerstattung einer Rücklieferung wird abgelehnt
 
@@ -36,7 +34,7 @@ Eine Rückerstattung wird abgelehnt, wenn die Kreditkarte, mit der eine Rücklie
 
 Die Details der Zahlungsautorisierung enthalten folgende Fehlermeldung: „Adyen-Gateway SendRequest() ist mit dem Status 'InternalServerError'.22144 fehlgeschlagen; leere Antwort von Adyen zurückgegeben.(22001);“
 
-![Abgelehnte Rückerstattung einer Rücklieferung – Fehler](media/refund-order-decline.jpg)
+![Abgelehnte Rückerstattung einer Rücklieferung – Fehler.](media/refund-order-decline.jpg)
 
 ## <a name="resolution"></a>Lösung
 

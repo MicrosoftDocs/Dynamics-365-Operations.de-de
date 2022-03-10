@@ -1,7 +1,7 @@
 ---
 title: Ermöglicht Qualitäts- und Qualitätsmangel-Management
 description: Dieses Thema bietet einen Überblick über den Prozess zum Einrichten und Konfigurieren der Funktionen zum Management von Qualitätsmängeln und Abweichungen in Microsoft Dynamics 365 Supply Chain Management.
-author: perlynne
+author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67d5da648e31d07d054246f5d308a6c6cdeb506c
-ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
+ms.openlocfilehash: 7c2c8b7e9a1a8d7692e1d2215e38de1b0f4d2d82
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5956253"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567414"
 ---
 # <a name="enable-quality-and-nonconformance-management"></a>Ermöglicht Qualitäts- und Qualitätsmangel-Management
 

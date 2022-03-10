@@ -2,26 +2,23 @@
 title: Rechnungskorrektur
 description: Eine Gutschrift oder ein Gutschriftvermerk (Memo) ist ein Dokument, das den Betrag, den ein Käufer zahlen muss, reduziert oder wegfallen lässt.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/15/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 1174003
 ms.search.region: Denmark, Germany, France, Ireland, Netherlands, United Kingdom
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7bdf90fb35380cde6c7ab2c7920ffd29196efdf
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b0aa893c7c3435ac08e66888e2bab92d2eb24de72ab43a5964d3a575f53ecc7e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407757"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712149"
 ---
 # <a name="corrective-invoicing"></a>Rechnungskorrektur
 
@@ -36,3 +33,6 @@ Eine Gutschrift listet die Produkte, Mengen und vereinbarten Preise für Produkt
 
 -   Statt "Rechnung" wird auf der Gutschrift "Gutschrift" als Dokumentenname angezeigt.
 -   Die Gutschrift enthält die Felder **Hauptrechnungsnr.** und **Grund für Berichtigung**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

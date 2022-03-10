@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: a7b5f4f042aa5457ff33e9762f0902c5c72f5921
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 93aca34239affb41998f4309d7c03f29f7b5f003
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944839"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8076885"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-italy-legacy"></a>Bereitstellungsrichtlinien für das Steuerdrucker-Integrationsbeispiel für Italien (Legacy)
 
@@ -126,7 +126,7 @@ Der Zweck der Erweiterung ist es, dass ein Steuerdokumentanbieter druckerspezifi
 
 Die CRT-Erweiterung ist **Runtime.Extensions.DocumentProvider.EpsonFP90IIISample**.
 
-Genauere Informationen zum Entwurf der Steuerintegrationslösung finden Sie unter [Steuererfassungsprozess und Steuerintegrationsbeispiele für steuerbezogene Geräte](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+Weitere Informationen über den Aufbau der Fiskalintegrationslösung finden Sie unter [Fiskalischer Registrierungsprozess und Fiskalintegrationsbeispiele für Fiskalgeräte und -dienste](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 #### <a name="request-handler"></a>Anforderungshandler
 

@@ -8,23 +8,26 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 25391
 ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b07da82086696409b128d76d8845c61b241a34b0
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 448c2b302136e595852c423d53e49adfcc40d12d
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188074"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070525"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Dokumentation oder Schulung mit der Aufgabenaufzeichnung erstellen
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 In diesem Thema werden die Aufgabenaufzeichnung und Aufgabenleitfäden erläutert. Zudem erfahren Sie, wie Aufgabenaufzeichnungen angelegt werden und wie Microsoft-Aufgabenleitfäden angepasst und in die Hilfe aufgenommen werden.
 
@@ -62,21 +65,21 @@ Ob Sie eine neue Aufgabenaufzeichnung erstellen oder Ihre Aufzeichnung einer Mic
 
 Dies ist der Bearbeitungsbereich, den Sie sehen, wenn Sie eine Anmerkung hinzufügen, während Sie die Aufzeichnung erstellen. Geben Sie eine Titelanmerkung im Feld **Titel** ein. 
 
-[![Bearbeitungsbereich mit Titelanmerkung](./media/screen1.png)](./media/screen1.png) 
+[![Bearbeitungsbereich mit Titelanmerkung.](./media/screen1.png)](./media/screen1.png) 
 
 So sieht die Titelanmerkung in der "Blase" im Aufgabenleitfaden aus. 
 
-[![Darstellung der Titelanmerkung im Aufgabenleitfaden](./media/screen2.png)](./media/screen2.png)
+[![Darstellung der Titelanmerkung im Aufgabenleitfaden.](./media/screen2.png)](./media/screen2.png)
 
 -   **Hinweise:** Eine Hinweisanmerkung, die automatisch von der Aufgabenaufzeichnung generiert wurde, wird nach dem Text zum Schritt angezeigt. Im Aufgabenleitfaden wird sie nur angezeigt, wenn der Benutzer auf den Link **Mehr anzeigen** in der Aufgabenleitfadenblase klickt. Verwenden Sie diesen Typ der Anmerkung, um alles Wissenswerte zu beschreiben, das der Benutzer benötigt, um den Schritt abzuschließen.
 
 Dies ist der Bearbeitungsbereich, den Sie sehen, wenn Sie eine Anmerkung hinzufügen, während Sie die Aufzeichnung erstellen. Geben Sie eine Titelanmerkung im Feld **Anmerkung** ein. 
 
-[![Bearbeitungsbereich mit Anmerkung im Hinweisfeld](./media/screen3.png)](./media/screen3.png) 
+[![Bearbeitungsbereich mit Anmerkung im Hinweisfeld.](./media/screen3.png)](./media/screen3.png) 
 
 So sieht die Hinweisanmerkung in der "Blase" im Aufgabenleitfaden aus.
 
-[![Darstellung der Hinweisanmerkung im Aufgabenleitfaden](./media/screen4.png)](./media/screen4.png)
+[![Darstellung der Hinweisanmerkung im Aufgabenleitfaden.](./media/screen4.png)](./media/screen4.png)
 
 -   **Infoschritt**: Diese Anmerkungen werden erstellt, indem man mit der rechten Maustaste auf ein Steuerelement oder auf irgendeine Stelle in einem Formular &lt; **Aufgabenaufzeichnung** &lt; **Infoschritt hinzufügen** klickt. Infoschritte werden an jeder Stelle, an der Sie sie einfügen, als nummerierter Schritt angezeigt, auch wenn keine Aktion in der Benutzeroberfläche aufgezeichnet wurde. Sie können einen Infoschritt auf Formularebene hinzufügen oder einen Infoschritt, der einem Steuerelement zugeordnet ist. Wenn ein Infoschritt einem Formular zugeordnet ist, wird die "Blase" des Aufgabenleitfadens ohne Zeiger irgendwo im Formular plaziert, wenn der Aufgabenleitfaden wiedergegeben wird. Wenn ein Infoschritt einem Steuerelement zugeordnet ist, wird die "Blase" des Aufgabenleitfadens auf das Steuerelement zeigen, wenn der Aufgabenleitfaden wiedergegeben wird. Im Hilfebereich wird ein Infoschritt als nummerierter Schritt mit dem Text angezeigt, den Sie eingegeben haben. Verwenden Sie Infoschritte, um den Benutzer auf die nächsten Schritte vorbereiten, Schritte zu beschreiben, die außerhalb der Anwendung abgeschlossen werden müssen, oder um auf andere Aufzeichnungen zu verweisen (jedoch können Sie in den Anmerkungen keine Hyperinks erstellen.).
 

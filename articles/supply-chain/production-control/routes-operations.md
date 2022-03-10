@@ -1,13 +1,13 @@
 ---
 title: Arbeitsplan und Arbeitsgänge
 description: Dieses Thema enthält allgemeine Informationen zu Arbeitsplan und Arbeitsgänge.
-author: sorenva
+author: johanhoffmann
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, RouteOpr, RouteOprTable, ProdRouteJob, ProdRouteTrans, ProdRouteOverview, ProdRouteJobOverview, ProdRouteJobListPagePreviewPane, RouteTable, RouteVersionFeasibility, ProdRouteJobCurrent, RouteGroup, RouteProductionOrder, EngChgCaseRouteTablePart, EcoResProductProdTypeFormulaNoActiveRouteFormPart,
-ms.author: sorenand
+ms.author: johanho
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 268124
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bfcbeaa64aa00f19dc72cf5256ead47654808ed9
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ab825227e7cd8848dbad58c58f5c6d7afc338f9c
+ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350497"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7891952"
 ---
 # <a name="routes-and-operations"></a>Arbeitspläne und Arbeitsgänge
 
@@ -223,7 +223,7 @@ Wenn Sie diesen Ansatz verwenden, wird die Seite **Arbeitsgangzuordnungen** Ihr 
 Wenn Sie keine betriebliche Ressourcen oder eine Ressourcengruppe als Teil der Ressourcenanforderungen für einen Arbeitsgang angegeben, arbeiten möglicherweise die entsprechenden Ressourcen mit unterschiedlichen Geschwindigkeiten. Daher kann die Dauer, die erforderlich ist, um einen Arbeitsgang zum Verarbeiten, abweichen. Zur Behebung dieses Problems, können Sie das Feld **Formel** in der Arbeitsgangzuordnung verwenden, um die Berechnung von Zeitintervall festzulegen. Die folgenden Optionen sind verfügbar:
 
 - **Standard** – (Standardeinstellung) Die Berechnung verwendet nur die Felder aus der Arbeitsgangzuordnung und multipliziert die angegebene Bearbeitungszeit und die Auftragsmenge.
-- **Kapazität** – Die Berechnung umfasst das **Kapazität** Feld aus der betrieblichen Ressource. Daher ist die Zeit ressourceabhängig. Der Wert, der in dieser betrieblichen Ressource angegeben wird, ist Kapazität pro Stunde. Die **Prozesszeit** wird berechnet als **Bestellmenge** geteilt durch **Kapazität**.
+- **Kapazität** – Die Berechnung umfasst das **Kapazität** Feld aus der betrieblichen Ressource. Daher ist die Zeit ressourceabhängig. Der Wert, der in dieser betrieblichen Ressource angegeben wird, ist Kapazität pro Stunde. Die **Prozesszeit** wird berechnet als **Bestellmenge** geteilt durch **Kapazität**. Der Kapazitätswert ist nicht spezifisch für eine bestimmte Maßeinheit und wird daher nicht basierend auf dem Feld **Kapazitätseinheit** konvertiert, das nur ein beschreibendes Feld ist, das nicht in Berechnungen verwendet wird.
 - **Charge** – Eine Chargenkapazität wird berechnet, indem die Informationen aus der Arbeitsgangzuordnung verwendet werden. Die Anzahl von Chargen und daher die Bearbeitungszeit können auf Basis der Auftragsmenge dann berechnet werden.
 - **Ressourcencharge** – Diese Option ist grundlegend die gleiche wie die **Charge** Option. Allerdings umfasst die Berechnung das **Chargenkapazität** Feld aus der betrieblichen Ressource. Daher ist die Zeit ressourceabhängig.
 

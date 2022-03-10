@@ -2,11 +2,9 @@
 title: Auszüge für ein Einzelhandelsgeschäft erstellen, berechnen und buchen
 description: Dieses Thema führt Sie Schritt für Schritt durch manuelle Verfahren zum Erstellen, Berechnen und Buchen eines Auszugs für einen Shop.
 author: jashanno
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailChannelOperationsWorkspace, RetailStatementTable
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0ef31bc02fe1761a587ff6bcbecf4a0f34daea9b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0a3d82daed16c1b37d10653f04c1dc473cd5c5abc3a6443972da6e8ecf9820f1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964869"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719871"
 ---
 # <a name="create-calculate-and-post-statements-for-a-retail-store"></a>Auszüge für ein Einzelhandelsgeschäft erstellen, berechnen und buchen
 
@@ -47,3 +45,6 @@ Dieses Thema führt Sie Schritt für Schritt durch manuelle Verfahren zum Erstel
 12. Wählen Sie auf der Startseite **Shopfinanzdaten**.
 13. Wählen Sie die Registerkarte **Gebuchte Auszüge** aus.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

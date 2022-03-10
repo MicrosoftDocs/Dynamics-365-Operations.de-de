@@ -2,25 +2,22 @@
 title: Automatische Belastungen nach Kanal aktivieren und konfigurieren
 description: In diesem Thema wird erläutert, wie Sie automatische Gebühren nach Kanal in Microsoft Dynamics 365 Commerce aktivieren und konfigurieren.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 1be07c754e563298d82f6ca54f09ae3aa9118602
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d905819d1e0c8223c74509bfb357b3aaa51d20305a2857061eadb0b0ff8f6b9b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412543"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727629"
 ---
 # <a name="enable-and-configure-auto-charges-by-channel"></a>Automatische Belastungen nach Kanal aktivieren und konfigurieren
 
@@ -47,7 +44,7 @@ Führen Sie die folgenden Schritte aus, um automatische Gebühren nach Kanal in 
 1. Auf der Registerkarte **Nicht aktiviert** in der Liste **Funktionsname** finden und wählen Sei **Aktivieren Sie die automatische Filterladung nach Kanal**.
 1. Wählen Sie in der unteren rechten Ecke **Jetzt aktivieren**. Nachdem die Funktion aktiviert wurde, wird sie in der Liste auf der Registerkarte **Alle** angezeigt.
 1. Gehen Sie zu **Retail and Commerce \> Retail and Commerce IT \> Vertriebsplan**.
-1. Suchen und wählen Sie im linken Bereich den Auftrag **1110** ( **Globale Konfiguration**).
+1. Suchen und wählen Sie im linken Bereich den Auftrag **1110** (**Globale Konfiguration**).
 1. Wählen Sie im Aktionsbereich **jetzt ausführen**, um die Konfigurationsänderungen zu verbreiten.
 
 > [!WARNING]
@@ -69,7 +66,7 @@ Führen Sie die folgenden Schritte aus, um einem Organisationshierarchiezweck in
 1. Wählen Sie im Aktivitätsbereich **Jetzt ausführen** aus.
 1. Wiederholen Sie die beiden vorherigen Schritte, um Aufträge **1070** (**Kanalkonfiguration**) und **1110** (**Globale Konfiguration**) auszuführen.
 
-![Konfiguration des Hierarchiezwecks der automatischen Organisation für den Einzelhandel](media/Auto-charges-org-hierarchy-purpose.png)
+![Konfiguration des Hierarchiezwecks der automatischen Organisation für den Einzelhandel.](media/Auto-charges-org-hierarchy-purpose.png)
 
 ## <a name="define-auto-charges-by-channel"></a>Definieren Sie automatische Gebühren nach Kanal
 
@@ -77,7 +74,7 @@ Nachdem Sie die Funktion **Aktivieren Sie die automatische Filterladung nach Kan
 
 Führen Sie die folgenden Schritte aus, um automatische Gebühren nach Kanal in Commerce zu definieren.
 
-1. Gehen Sie zu  **Debitoren \> Belastungen einrichten \> Auto-Belastungen**.
+1. Wechseln Sie zu **Debitoren \> Belastungen einrichten \> Auto-Belastungen**.
 1. Im linken Bereich im Feld **Ebene** wählen Sie entweder **Kopf** oder **Linie** aus, abhängig von Ihren Geschäftsanforderungen.
 1. In dem Feld **Retail Channel-Code** wählen Sie im Feld den entsprechenden Kanalcode aus (z. B. **Tabelle** oder **Gruppe**). Wenn die Standardeinstellung, **Alle** verwendet wird, werden Gebührenregeln auf alle Kanäle angewendet.
 
@@ -89,7 +86,7 @@ Führen Sie die folgenden Schritte aus, um automatische Gebühren nach Kanal in 
 1. Wählen Sie im Aktivitätsbereich **Jetzt ausführen** aus.
 1. Wiederholen Sie die beiden vorherigen Schritte, um Aufträge **1070** (**Kanalkonfiguration**) und **1110** (**Globale Konfiguration**) auszuführen.
     
-![Automatische Gebühren nach Kanal definiert](media/Auto-charges-line-charge-by-channel.png)
+![Automatische Gebühren nach Kanal definiert.](media/Auto-charges-line-charge-by-channel.png)
 
 ## <a name="example-scenario"></a>Beispielszenario
 
@@ -97,7 +94,7 @@ Im folgenden Beispiel werden die Schritte beschrieben, die zum Konfigurieren ein
 
 Die Organisation definiert einen Gebührencode, der **RECYCELN** benannt wird, wie in der folgenden Abbildung gezeigt.
 
-![RECYCLE berechnet den Code](media/Auto-charges-charge-code.png)
+![RECYCLE berechnet den Code.](media/Auto-charges-charge-code.png)
 
 Eine automatische Belastung wird auf Positionsebene erstellt. Es weist die folgenden Konfigurationen auf:
 
@@ -115,16 +112,19 @@ Eine automatische Gebührenzeile wird erstellt. Es weist die folgenden Konfigura
 - Das Feld **Kategorie** ist auf **Fest** festgelegt.
 - Das Feld **Belastung** wird mit auf **$6.25** festgelegt.
 
-![Konfiguration der Zeile automatischen Belastungsebene und automatische Belastung](media/Auto-charges-recyclingfee-line-fee.png)
+![Konfiguration der Zeile automatischen Belastungsebene und automatische Belastung.](media/Auto-charges-recyclingfee-line-fee.png)
 
 In der POS-Anwendung wird ein Auftrag im Shopkanal **San Francisco** erstellt. Die Position **Belastungen** zeigen die Recyclinggebühr von **6,25 $**.
 
 Durch die Auswahl von **Transaktionsoptionen \> Gebühren \> Gebühren verwalten** in der POS-Anwendung können Sie den Gebührencode und die Beschreibung der Recyclinggebühr anzeigen.
 
-![Recyclinggebühr in der POS-Anwendung](media/pos-auto-charges-recyclingfee-line-fee.png)
+![Recyclinggebühr in der POS-Anwendung.](media/pos-auto-charges-recyclingfee-line-fee.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Erweiterte automatische Omni-Channel-Belastungen](omni-auto-charges.md)
 
 [Kopfbelastungen auf übereinstimmende Verkaufspositionen aufteilen](pro-rate-charges-matching-lines.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

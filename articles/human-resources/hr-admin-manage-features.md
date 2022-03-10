@@ -1,37 +1,39 @@
 ---
-title: Funktionen verwalten
-description: Erfahren Sie, wie Sie neue Funktionen in Dynamics 365 Human Resources aktivieren oder deaktivieren.
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+title: Verwalten von Funktionen in der Personalverwaltung
+description: In diesem Thema werden die Funktionsverwaltungsfunktion und deren Verwendung beschrieben.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: FeatureManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9176e9519c3bf65ef7a4f1b5ae43dbeb411750f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2d5a27c02df841dfbb17a9375aaf75f93d05cd8e
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418715"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069706"
 ---
-# <a name="manage-features"></a>Funktionen verwalten
+# <a name="manage-features-in-human-resources"></a>Verwalten von Funktionen in der Personalverwaltung
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Im Rahmen unseres kontinuierlichen Rollouts von neuen Funktionen für Microsoft Dynamics 365 Human Resources wollen wir unseren Kunden so schnell wie möglich neue Funktionen zur Verfügung stellen. Wir bieten Vorschaufunktionen, die fast bereit für die allgemeine Verfügbarkeit sind und ausgiebig getestet wurden. Wir sind nur auf der Suche nach einer letzten Runde von Kunden-Feedback und Validierung, bevor wir sie zur allgemeinen Verfügbarkeit veröffentlichen.
 
-Weitere Informationen über neue Funktionen im Human Resources finden Sie unter [Neuerungen in Human Resources](hr-admin-whats-new.md) und [Dynamics 365 und Power Platform-Versionsveröffentlichungsplan](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1).
+Weitere Informationen über neue Funktionen im Human Resources finden Sie unter [Neuerungen in Human Resources](hr-admin-whats-new.md) und [Dynamics 365 und Power Platform-Versionsveröffentlichungsplan](/dynamics365/release-plans/?panel=products1#pivot=products).
 
-Der Arbeitsbereich **Funktionsverwaltung** bietet eine Liste der in jedem Release ausgelieferten Features. Standardmäßig sind neue Funktionen ausgeschaltet. Sie können den Arbeitsbereich verwenden, um sie zu aktivieren und die Dokumentation für sie anzuzeigen. Weitere Informationen zur Feature-Verwaltung finden Sie unter [Feature-Verwaltung Übersicht](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Der Arbeitsbereich **Funktionsverwaltung** bietet eine Liste der in jedem Release ausgelieferten Features. Standardmäßig sind neue Funktionen ausgeschaltet. Sie können den Arbeitsbereich verwenden, um sie zu aktivieren und die Dokumentation für sie anzuzeigen. Weitere Informationen zur Feature-Verwaltung finden Sie unter [Feature-Verwaltung Übersicht](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Alle neuen Funktionen bleiben mindestens 30 Tage und in der Regel 30-60 Tage in der Vorschau. Die wichtigsten Funktionen sind in der Regel im Oktober und April eines jeden Jahres nach dem Vorschauzeitraum verfügbar. Sobald Sie neue Funktionen im Arbeitsbereich **Feature-Management** sehen, können Sie diese einschalten. Einige Funktionen sind möglicherweise standardmäßig aktiviert.
 
@@ -70,7 +72,7 @@ Vorteilsverwaltung ersetzt die Funktionalität im Arbeitsbereich **Vorteile**. W
 - **Vorteilsberechtigungsrichtlinien**
 - **Berechtigungsereignisse**
 
-Sie können die Informationen in diesen Formularen im schreibgeschützten Modus anzeigen. Wenn Sie die Informationen bearbeiten möchten, müssen Sie zuerst die Vorschaufunktion für die Vorteilsverwaltung deaktivieren (gilt nur für **Sandkasten** Umgebungen).
+Sie können die Informationen auf diesen Seiten im schreibgeschützten Modus anzeigen. Wenn Sie die Informationen bearbeiten möchten, müssen Sie zuerst die Vorschaufunktion für die Vorteilsverwaltung deaktivieren (gilt nur für **Sandkasten** Umgebungen).
 
 ## <a name="enable-or-disable-leave-and-absence"></a>Urlaub und Abwesenheit aktivieren oder deaktivieren
 
@@ -93,4 +95,6 @@ Bitte geben Sie keine persönlichen Daten (Informationen, die Sie identifizieren
 ## <a name="see-also"></a>Siehe auch
 
 - [Neuerungen in Human Resources](hr-admin-whats-new.md)
-- [Dynamics 365 und Power Platform-Versionsveröffentlichungsplan](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
+- [Dynamics 365 und Power Platform-Versionsveröffentlichungsplan](/dynamics365/release-plans/?panel=products1#pivot=products)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

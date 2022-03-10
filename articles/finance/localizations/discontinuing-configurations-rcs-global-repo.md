@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2021-02-02
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 2bd22e991de376cfd93f75158f1f29716d2559e1
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 340fc96e7dfe56da9ee8d4831a5980e3e96ec3ee0f2f5a8fb2ab72f713de9737
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018732"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712169"
 ---
 # <a name="discontinue-configurations-in-the-rcs-global-repository"></a>Konfigurationen im RCS Global-Repository einstellen
 
@@ -45,7 +45,7 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration einzustellen.
 2. Stellen Sie den Parameter **Nicht fortsetzen** auf **Ja**.
 3. Wählen Sie **OK** aus, um die Konfigurationen abzubrechen. Das Feld **Aufgabedatum** wird ausgefüllt, wenn Sie die Änderungen speichern.
 
-![Konfigurationsinformationen beenden](media/Discontinue-details-2.png)
+![Konfigurationsinformationen beenden.](media/Discontinue-details-2.png)
   
 Sie können die Konfiguration auf **Freigegeben** zurücksetzen oder die Abbruchinformationen jederzeit anpassen. Wenn Sie eine Konfiguration freigeben, geben Sie das Datum **Unterstützt bis** und alle anderen Informationen im Zusammenhang mit der Einstellung an, um Ihre Pläne für eine zukünftige Einstellung anzuzeigen.
 

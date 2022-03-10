@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 07d3222680d9d9bff639f34eca5fea64d753ffd1
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: f5b3c013996253de75cd85c4bcfc52ed159e8f9d
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336978"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860507"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Einstieg in die Globale Bestandsbuchhaltung
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 4/30/2022 -->
 
 Mit der Globalen Bestandsbuchhaltung können Sie mehrere Bestandsbuchhaltungen in den von Ihnen festgelegten Sachkonten der Globalen Bestandsbuchhaltung durchführen. Sie müssen jedes Sachkonto der Globalen Bestandsbuchhaltung mit einer *Konvention* verknüpfen. Eine Konvention ist eine Sammlung der folgenden Arten von Rechnungslegungsgrundsätzen:
 
@@ -42,7 +43,7 @@ Die Globale Bestandsbuchhaltung unterstützt derzeit nicht alle Funktionen der K
 > [!IMPORTANT]
 > Um die Globale Bestandsbuchhaltung zu verwenden, müssen Sie über eine LCS-fähige Hochverfügbarkeitsumgebung verfügen (keine OneBox-Umgebung). Außerdem müssen Sie Supply Chain Management Version 10.0.19 oder höher ausführen.
 
-Um sich für die öffentliche Vorschau der Globalen Bestandsbuchhaltung anzumelden, senden Sie Ihre LCS Umgebungs-ID per E-Mail an das [Globale Bestandsbuchhaltung Team](mailto:GlobalInventoryAccounting@service.microsoft.com). Nachdem Sie für das Programm genehmigt wurden, sendet Ihnen das Team eine Nachverfolgungs-E-Mail, die einen Beta-Schlüssel für die Globale Bestandsbuchhaltung und Ihre Service-Endpunkte enthält. Nachdem Sie den Beta-Schlüssel erhalten haben, können Sie [das Add-In installieren](#install).
+Um sich für die öffentliche Vorschau der Globalen Bestandsbuchhaltung anzumelden, senden Sie Ihre LCS Umgebungs-ID per E-Mail an das [Globale Bestandsbuchhaltung Team](mailto:GlobalInvAccount@microsoft.com). Nachdem Sie für das Programm genehmigt wurden, sendet Ihnen das Team eine Nachverfolgungs-E-Mail, die einen Beta-Schlüssel für die Globale Bestandsbuchhaltung und Ihre Service-Endpunkte enthält. Nachdem Sie den Beta-Schlüssel erhalten haben, können Sie [das Add-In installieren](#install).
 
 ## <a name="licensing"></a>Lizenzierung
 
@@ -60,9 +61,9 @@ Bevor Sie die Add-In-Funktionalität aktivieren können, müssen Sie die Microso
 1. Aktivieren Sie im Dialogfeld **Einrichten der Power Platform Umgebung** das Kontrollkästchen und wählen Sie dann **Einrichten**. In der Regel dauert das Einrichten zwischen 60 und 90 Minuten.
 1. Nachdem das Einrichten der Microsoft Power Platform-Umgebung abgeschlossen ist, wird auf der Seite der Name Ihrer Umgebung angezeigt. Außerdem wird im Abschnitt **Power Platform-Integration** die Aussage „Power Platform-Umgebung einrichten ist abgeschlossen.“ Für die Globale Bestandsbuchhaltung ist keine Dual-Write-Anwendung erforderlich.
 
-Weitere Informationen finden Sie unter [Einrichten nach Bereitstellen der Umgebung](../../fin-ops-core/dev-itpro/power-platform/overview.md#set-up-after-environment-deployment).
+Weitere Informationen finden Sie unter [Nach Bereitstellen der Umgebung aktivieren](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-### <a name="set-up-dataverse"></a>Festlegen von Dataverse
+### <a name="set-up-dataverse"></a>Dataverse einrichten
 
 Bevor Sie Dataverse festlegen, fügen Sie die Serviceprinzipien der Globalen Bestandsbuchhaltung zu Ihrem Mandant hinzu, indem Sie die folgenden Schritte ausführen.
 

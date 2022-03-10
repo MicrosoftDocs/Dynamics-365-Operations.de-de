@@ -13,13 +13,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: a0cde0c22b69e7605708a647d47530840ce823b1
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.dyn365.ops.version: 10.0.18
+ms.openlocfilehash: e6b178704fde18036d526e7a645cb9b4f8bd66c7
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270932"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579063"
 ---
 # <a name="rebate-reduction-principles"></a>Prinzipien zur Rückvergütungsreduzierung
 
@@ -47,11 +47,11 @@ Die folgende Tabelle zeigt einige typische Beispiele für Einstellungen mit Prin
 
 | Prinzip der Rückvergütungsminderung | Beschreibung | Reduzierung anwenden | Reduzierungsbasis | Von Reduzierung ausschließen |
 |---|---|---|---|---|
-| Verzögert | Rückvergütung reduzieren | Ja | Beides | Nr. |
+| Verzögert | Rückvergütung reduzieren | Ja | Beides | Nein |
 | Exclreb | Rückvergütung ausschließen | Ja | Rückvergütung | Ja |
 | Mehrfach | Mehrere Rückvergütungen | Ja | Beides | Ja |
-| Keines | Nur Rückstellungen und Rückvergütungen | Nr. | Beides | Ja |
-| Bereitstellung | Nur Rückstellung | Ja | Bereitstellung | Nr. |
+| Keines | Nur Rückstellungen und Rückvergütungen | Nein | Beides | Ja |
+| Bereitstellung | Nur Rückstellung | Ja | Bereitstellung | Nein |
 | Rückvergütung | Nur Rückvergütung | Ja | Rückvergütung | Ja |
 
 ## <a name="examples-of-rebate-reduction-principle-calculations"></a>Beispiele für Berechnungen von Prinzipien zur Rückvergütungsreduzierung

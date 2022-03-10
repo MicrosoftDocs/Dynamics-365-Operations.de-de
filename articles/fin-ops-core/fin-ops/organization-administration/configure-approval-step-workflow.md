@@ -2,11 +2,9 @@
 title: Genehmigungsschritte in einem Workflow konfigurieren
 description: Dieses Thema erläutert, wie Sie die Eigenschaften eines Genehmigungsschritts konfigurieren können.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 09f32833d914c05a1830e2bba36ebe4c66a8a52c
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 84ff82dcb9f4ce930b4f1122790f7989c56fac35
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797095"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070776"
 ---
 # <a name="configure-approval-steps-in-a-workflow"></a>Genehmigungsschritte in einem Workflow konfigurieren
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Dieses Thema erläutert, wie Sie die Eigenschaften eines Genehmigungsschritts konfigurieren können.
 
@@ -158,7 +159,7 @@ Gehen Sie folgendermaßen vor, um anzugeben, wem der Genehmigungsschritt zugewie
 
     - **Einzelne genehmigende Person** – Die Aktivität für das Dokument wird von der ersten antwortenden Person bestimmt. Nehmen wir an, Steffen hat eine Spesenabrechnung in Höhe von 15.000 Euro eingereicht. Die Spesenabrechnung ist derzeit Saskia, Jens und Bastian zugewiesen. Falls Saskia die erste Person ist, die das Dokument beantwortet, wird ihre Aktivität für das Dokument übernommen. Falls Saskia das Dokument ablehnt, wird es abgelehnt und an Steffen zurückgesendet. Wenn Saskia das Dokument genehmigt, wird es zur Genehmigung an Anne gesendet.
 
-        ![Workflow mit Genehmigungsprozesses](./media/workflow_multipleusersinstep.gif)
+        ![Workflow mit Genehmigungsprozesses.](./media/workflow_multipleusersinstep.gif)
 
     - **Mehrheit der genehmigenden Personen** – Die Aktivität für das Dokument wird bei Antwort der Mehrheit der genehmigenden Personen bestimmt. Nehmen wir an, Steffen hat eine Spesenabrechnung in Höhe von 15.000 Euro eingereicht. Die Spesenabrechnung ist derzeit Saskia, Jens und Bastian zugewiesen. Falls Saskia und Jens die ersten beiden genehmigenden Personen sind, die antworten, wird ihre Aktivität für das Dokument übernommen.
 
@@ -276,3 +277,6 @@ Wenn ein Benutzer ein Dokument nicht innerhalb der vorgesehenen Zeit bearbeitet,
 
 5. Wiederholen Sie die Schritte 3 bis 4 für alle Benutzer, die dem Eskalationspfad hinzugefügt werden sollen. Sie können die Reihenfolge der Benutzer ändern.
 6. Wenn die Benutzer im Eskalationspfad nicht innerhalb der vorgesehenen Zeit antworten, wird das Dokument automatisch bearbeitet. Um die vom System auszuführende Aktivität anzugeben, wählen Sie die Zeile **Aktivität** aus, klicken Sie dann auf die Registerkarte **Aktivität bei Beendigung** und wählen eine Aktivität aus.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

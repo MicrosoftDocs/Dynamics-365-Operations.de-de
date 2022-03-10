@@ -1,24 +1,26 @@
 ---
 title: Deutsche Intrastat
 description: Dieses Thema enthält Informationen zur Intrastat-Meldung in Deutschland.
-author: andosip
-ms.date: 08/2/2021
+author: anasyash
+ms.date: 09/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: e1dbf0997417f9f1ad313e6a7b3c2c9cfae41efc6b1cfda60a5500ae0af94709
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 50c412fdfd7118843d285cbb70e8e44847c9d4a5
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759842"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7487924"
 ---
 # <a name="german-intrastat"></a>Deutsche Intrastat
 
-Die **Intrastaz** Seite wird verwendet, um Informationen zum Handel zwischen EU-Ländern/Regionen generieren und melden. Die deutsche Intrastat-Meldung enthält meldepflichtige Informationen über den Warenverkehr.
+[!include [banner](../includes/banner.md)]
+
+Die **Intrastaz** Seite wird verwendet, um Informationen zum Handel zwischen EU-Ländern/Regionen generieren und melden. Die deutsche Intrastat-Meldung enthält meldepflichtige Informationen über den Warenverkehr. Der Bericht ist nach den Richtlinien der deutschen Behörden formatiert, die auf der Seite [6.2 Dateierklärungen im INSTAT/XML-Format](https://www-idev.destatis.de/idev/doc/intra_en/hilfe6_2.html) dargestellt sind.
 
 Die folgende Tabelle zeigt die Felder, die in der deutschen Intrastat-Meldung enthalten sind.
 
@@ -71,15 +73,16 @@ Die folgende Tabelle zeigt die Felder, die in der deutschen Intrastat-Meldung en
     3. Im Feld **Berichtformatzuordnung** **Intrastatbericht** auswählen.
     4. Auf dem Inforegister **Warencodehierarchie** im Feld **Kategoriehierarchie** wählen Sie **Intrastat**.
     5. Wählen Sie im Feld **Art des Geschäfts** die Art des Geschäfts für Eigentumsübertragungen aus. Sie verwenden diesen Code für Transaktionen, die zu tatsächlichen oder geplanten Eigentumsübertragung gegen eine (finanzielle oder anderweitige) Entschädigung führen. Sie verwenden ihn auch für Korrekturen.
-    6. Wählen Sie im Feld **Gutschrift** die Art des Geschäfts für die Warenrücksendung aus. Sie verwenden diesen Code für die Rücksendung von Waren, die ursprünglich Transaktion unter der Art des Geschäfts erfasst wurde.
-    7. Wählen Sie im Feld **Behörde** die Intrastat-Behörde aus.
-    8. Gehen Sie zu **Steuer** > **Indirekte Steuern** > **Mehrwertsteuer** > **Mehrwertsteuerbehörden**, und geben Sie die folgenden Informationen für die Intrastat-Behörde ein, die Sie im vorherigen Schritt ausgewählt haben:
+    6. Wählen Sie im Feld **Gutschrift** die Art des Geschäfts für die Warenrücksendung aus.
+    7. Wählen Sie im Feld **Arbeitskraft** die Kontaktperson für den Intrastat-Bericht aus. Geben Sie alternativ auf der Registerkarte **Kontakt** in den Feldern **Name**, **Telefon**, **Fax**, **E-Mail** und **Internetadresse** Werte ein oder wählen Sie sie aus. Diese Felder sind im Bericht enthalten.
+    8. Wählen Sie im Feld **Behörde** die Intrastat-Behörde aus.
+    9. Gehen Sie zu **Steuer** > **Indirekte Steuern** > **Mehrwertsteuer** > **Mehrwertsteuerbehörden**, und geben Sie die folgenden Informationen für die Intrastat-Behörde ein, die Sie im vorherigen Schritt ausgewählt haben:
 
        - Nummer des Finanzamtes
        - Adresse
        - Kontaktinformationen
 
-    9. Auf der Registerkarte **Länder-/Regionseigenschaften** führen Sie im Feld **Land/Region** alle Länder oder Regionen auf, mit denen Ihre Unternehmen Geschäfte macht. Für jedes Land oder jede Region wählen Sie im Feld **Land-/Regionsart** **EU** aus, damit das Land oder die Region in Ihrem Intrastat-Bericht erscheint.
+    10. Auf der Registerkarte **Länder-/Regionseigenschaften** führen Sie im Feld **Land/Region** alle Länder oder Regionen auf, mit denen Ihre Unternehmen Geschäfte macht. Für jedes Land oder jede Region wählen Sie im Feld **Land-/Regionsart** **EU** aus, damit das Land oder die Region in Ihrem Intrastat-Bericht erscheint.
 
 4. Richten Sie Regionscodes ein.
 

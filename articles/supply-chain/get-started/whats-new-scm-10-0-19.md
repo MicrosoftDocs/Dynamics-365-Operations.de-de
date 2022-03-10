@@ -4,24 +4,24 @@ description: In diesem Thema werden die Funktionen beschrieben, die in Dynamics 
 author: kamaybac
 ms.date: 04/23/2021
 ms.topic: article
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 98f9fffcbf93871de302a0d8b4b9675889ef5e40
-ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
+ms.openlocfilehash: 03ed2d52f44bd38910b01ffbd3767f750da2cbf8
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6641127"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920572"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Was ist neu oder geändert in Dynamics 365 Supply Chain Management Version 10.0.19 (Juni 2021)
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die Funktionen aufgeführt, die in Microsoft Dynamics 365 Supply Chain Management  Version 10.0.19 entweder neu oder geändert sind. Diese Version hat die Build-Nummer 10.0.837 und ist wie folgt verfügbar:
+In diesem Thema werden die Funktionen aufgeführt, die in Microsoft Dynamics 365 Supply Chain Management Version 10.0.19 entweder neu oder geändert sind. Diese Version hat die Build-Nummer 10.0.837 und ist wie folgt verfügbar:
 
 - **Vorschau auf die Veröffentlichung:** April 2021
 - **Allgemeine Verfügbarkeit der Freigabe (Selbst-Update):** Juni 2021
@@ -35,12 +35,12 @@ Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsve
 
 | Funktionsbereich | Funktion | Weitere Informationen |
 |---|---|---|
+| Bestand&nbsp;und&nbsp;Logistik | [Die vom Kreditor übermittelte Bankverbindung genehmigen und speichern](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/approve-save-vendor-submitted-bank-details) | [Kontoinformationen von Kreditoren pflegen](../../finance/accounts-payable/maintain-vendor-bank-info.md) |
 | Bestand und Logistik | [Optimierung beim Export von Datenentitäten der Kontaktperson](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/contact-person-data-entity-export-optimization)  | Wenn diese Funktion aktiviert ist, werden zugehörige Aufträge (oder Positionen) nicht aufgrund von Änderungen an referenzierten Daten im nächsten inkrementellen Export berücksichtigt. Wenn diese Funktion deaktiviert ist, werden zugehörige Aufträge (oder Positionen) nicht aufgrund von Änderungen an referenzierten Daten im nächsten inkrementellen Export berücksichtigt. |
 | Bestand und Logistik | [Erweiterungen der Funktionalitäten für die Lagerort-Ausführung mit Scale-Units](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/incremental-enhancements-warehouse-execution-capabilities-scale-units) |[Nachrichtenverarbeitungsmeldungen](../cloud-edge/cloud-edge-message-processor-messages.md)<br><br>[Lagerregulierung des Lagerorts](../cloud-edge/cloud-edge-warehouse-inventory-adjustment.md)<br><br>[Workloads in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten](../cloud-edge/cloud-edge-workload-warehousing.md) |
 | Bestand und Logistik | [Nachschlagefeld für die Felder Belegeinleitung und Belegabschluss auf der Angebotsseite](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | Diese Funktion fügt das Nachschlagefeld für die Felder **Belegeinleitung** und **Belegabschluss** auf der Seite **Verkaufsangebot** hinzu.<br><br>Diese Funktion ist standardmäßig aktiviert. |
 | Bestand und Logistik | [Lagerort-Ausführung mit Edge Scale-Einheiten auf Ihrer angepassten Hardware](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-edge-scale-units-custom-hardware) | [Skalierte Einheiten auf angepasster Hardware mit LBD bereitstellen](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
-| Fertigung | [Fertigungsausführung mit Scale-Einheiten auf Ihrer angepassten Hardware](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [Edge-Skalierungseinheiten mithilfe von LBD auf benutzerdefinierter Hardware bereitstellen](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
-| Planung | [Endloskapazitätsplanung zur Planungsoptimierung](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | Diese Funktion ermöglicht die Kapazitätsplanung mit unendlicher Kapazität für die Planungsoptimierung. Ohne diese Funktion erhalten geplante Fertigungsaufträge ihre Vorlaufzeit aus der Vorlaufzeit des freigegebenen Produktbestands, unabhängig vom Zeitplan. |
+| Fertigung | [Fertigungsausführung mit Scale-Einheiten auf Ihrer angepassten Hardware](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [Skalierte Einheiten auf angepasster Hardware mit LBD bereitstellen](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
 | Planung | Abfragebasierte geplanter Auftrag umwandeln | [Fest geplante Aufträge](../master-planning/planning-optimization/planned-order-firming.md) |
 | Produktinformationsverwaltung | [Verbesserungen an der Seite mit Variantenvorschlägen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/variant-suggestions-page-improvements) | [Vordefinierte Produktvarianten erstellen](../pim/tasks/create-predefined-product-variants.md) |
 
@@ -48,9 +48,9 @@ Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsve
 
 Die folgende Tabelle listet die Funktionsverbesserungen auf, die in dieser Version enthalten sind. Jede dieser Funktionen bietet eine schrittweise Verbesserung einer vorhandenen Funktion. Da es sich nur um Verbesserungen handelt, sind sie nicht in der Liste [Releaseplan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) aufgeführt. Um jedoch sicherzustellen, dass diese Verbesserungen nicht mit Ihren vorhandenen Anpassungen oder Einstellungen in Konflikt stehen, ist jede standardmäßig deaktiviert (sofern nicht anders angegeben). Wenn Sie eine dieser Funktionen verwenden möchten, müssen Sie sie explizit aktivieren unter [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Funktionsbereich | Funktion&nbsp;Name&nbsp;in Funktion&nbsp;Verwaltung | Weitere Informationen |
+| Modul | Funktion&nbsp;Name&nbsp;in Funktion&nbsp;Verwaltung | Mehr erfahren |
 |---|---|---|
-| Vertrieb und Marketing | Leistungsverbesserungen bei der Bereinigung des Verkaufsverlaufs | Die Bereinigung des Verkaufsverlaufs kann lange dauern, wenn sie in Umgebungen mit einem hohen Volumen an Verkaufsaktualisierungen nur selten ausgeführt wird. Um die Dauer zu verringern und die Zuverlässigkeit zu verbessern, teilt diese Funktion die Bereinigung in Stapel auf, die für eine begrenzte Dauer ausgeführt werden. Wenn möglich werden Datenbankfunktionen genutzt, um das Sperren zu minimieren und das Verbinden von Transaktionstabellen während der Bereinigung zu vermeiden. |
+| Vertrieb und Marketing | Leistungsverbesserungen bei der Bereinigung des Verkaufsverlaufs | Die Bereinigung des Verkaufsverlaufs kann lange dauern, wenn sie in Umgebungen mit einem hohen Volumen an Verkaufsaktualisierungen nur selten ausgeführt wird. Um die Dauer zu verringern und die Zuverlässigkeit zu verbessern, teilt diese Funktion die Bereinigung in Stapel auf, die für eine begrenzte Dauer ausgeführt werden. Wenn möglich werden Datenbankfunktionen genutzt, um das Sperren zu minimieren und das Verbinden von Transaktionstabellen während der Bereinigung zu vermeiden. Weitere Informationen finden Sie unter [Leistungsverbesserungen bei der Bereinigung der Verkaufshistorie](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Vertrieb und Marketing | Angefordertes Wareneingangsdatum mit bestätigtem Datum bei Intercompany-Aufträgen aktualisieren | Mit dieser Funktion können Sie steuern, was mit den Feldwerten für Verkaufs- und Kaufdatum geschieht, wenn Sie die konzerninterne Direktlieferung verwenden. Sie können wählen, ob das System die angeforderten Daten aktualisiert oder die Aktualisierung überspringt. Wenn Sie die Aktualisierung überspringen, entsprechen die angeforderten Daten den Anforderungen des Kunden. Wenn Sie die Aktualisierung aktivieren, stellen die angeforderten Daten (bei Verwendung der Lieferterminsteuerung) zunächst nur das dar, was der Kunde angefordert hat. Kontrolle des Liefertermins, falls abweichend von *Keiner* wird außer Kraft setzen, was ursprünglich angefordert wurde. Sie können diese Option mit der neuen Option **Aktualisieren Sie das angeforderte Empfangsdatum mit dem bestätigten Datum** in den Einstellungen des konzerninternen Anbieters oder Kunden einstellen.<br><br>Wenn die Funktion deaktiviert ist, überschreibt das System das angeforderte Empfangsdatum für ursprüngliche Kundenaufträge basierend auf der Regel zur Kontrolle des Lieferdatums. Das angeforderte Versanddatum bleibt jedoch unverändert. |
 | Lagerortverwaltung | Mengen bei Freigabe an Lager auf nächste Verkaufseinheit abrunden | Diese Funktion fügt eine Option hinzu, mit der die Bestellmengen bei der Freigabe an das Lager eingeschränkt werden können. Wenn diese Option aktiviert ist, werden Bestellmengen auf die nächste ganze Verkaufseinheit abgerundet, und Bestellungen, die Mengen für weniger als eine Verkaufseinheit enthalten, werden zur Freigabe abgelehnt. |
 | Lagerortverwaltung | Organisationsweite Zyklusmethode „Arbeitserstellung planen“ | Bei Aktivierung dieser Funktion wird die Wellenmethode *Arbeitserstellung planen* so konfiguriert, dass sie für alle juristischen Personen parallel ausgeführt wird. Einige zusätzliche Einstellungen sind ebenfalls betroffen. Alle Details finden Sie unter [Planen der Arbeitserstellung während der Welle](../warehousing/configure-wave-schedule-work-creation.md). |
@@ -66,8 +66,7 @@ Wir haben die folgenden Hilfethemen kürzlich hinzugefügt oder erheblich aktual
 | Produktinformationsverwaltung | [Maßeinheit verwalten](../pim/tasks/manage-unit-measure.md)<br><br>[Berechnungen für Produktkonfigurationsmodelle](../pim/config-model-calculations.md) |
 | Produktionssteuerung | [Vereinheitlichte Nummernkreise für Einzelvorgangskennungen](../production-control/unified-job-ids.md) |
 | Transportverwaltung | [LTL-Klassen](../transportation/ltl-class.md)<br><br>[NMFC-Codes](../transportation/nmfc-codes.md) |
-| Lagerortverwaltung | [Fehlerbehebung bei Chargen- und Serienreservierungshierarchien für Lagerorte](../warehousing/troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md) |
-| Lagerortverwaltung, Wellenerstellung und -verarbeitung | [Wellenerstellung und -verarbeitung](../warehousing/wave-processing.md)<br><br>[Lagerparameter für Wellenverarbeitung](../warehousing/wave-warehouse-parameters.md)<br><br>[Wellenvorlagen](../warehousing/wave-templates.md)<br><br>[Wellenzuteilung](../warehousing/wave-allocation-method.md)<br><br>[Arbeitserstellung während Welle planen](../warehousing/configure-wave-schedule-work-creation.md)<br><br>[Containerisierung](../warehousing/wave-containerization.md)<br><br>[Zyklusausführungsbenachrichtigungen](../warehousing/wave-execution-notifications.md) |
+| Lagerortverwaltung, Wellenerstellung und -verarbeitung | [Zykluserstellung und -verarbeitung](../warehousing/wave-processing.md)<br><br>[Lagerparameter für Wellenverarbeitung](../warehousing/wave-warehouse-parameters.md)<br><br>[Wellenvorlagen](../warehousing/wave-templates.md)<br><br>[Wellenzuteilung](../warehousing/wave-allocation-method.md)<br><br>[Arbeitserstellung während Welle planen](../warehousing/configure-wave-schedule-work-creation.md)<br><br>[Containerisierung](../warehousing/wave-containerization.md)<br><br>[Zyklusausführungsbenachrichtigungen](../warehousing/wave-execution-notifications.md) |
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

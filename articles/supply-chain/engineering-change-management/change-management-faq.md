@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-03-25
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 69232eed8520bafeb734ffad43b333bf9e36909e
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: dee16f9d6f8ea583f221a7f6eb466675c8c622d0
+ms.sourcegitcommit: 9638d3a2bd592dc28f5952bda4af7dcf06edfaa4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018684"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8007606"
 ---
 # <a name="engineering-change-management-faq"></a>Verwaltung für technische Änderungen FAQ
 
@@ -46,7 +46,7 @@ Diese Option ist viel einfacher zu verwalten, denn wenn Sie von einer Version zu
 
 Die meisten Unternehmen entscheiden sich für diese Option, weil sie Versions- und Änderungsverwaltung bietet, aber nicht den zusätzlichen Aufwand für die Verfolgung der Version in jeder Transaktion, im Bestand und bei der Produktprogrammplanung mit sich bringt.
 
-## <a name="which-fields-are-copied-to-the-released-item-template"></a>Welche Felder werden in die Vorlage für zugelassene Artikel kopiert?
+## <a name="which-fields-are-copied-from-the-released-item-template"></a>Welche Felder werden aus der Vorlage für zugelassene Artikel kopiert?
 
 Wenn eine Engineering-Firma ein technisches Produkt erstellt, wird dieses Produkt als freigegebenes Produkt in der Engineering-Firma erstellt. Das erstellte freigegebene Produkt basiert auf der ausgewählten *Vorlage für freigegebene Artikel*. (Die Vorlage für zugelassene Artikel ist selbst ein bestehendes zugelassenes Produkt.) Die Vorlage für zugelassene Artikel wird auch verwendet, wenn das Produkt für eine Betriebsfirma freigegeben wird. In jedem Fall definiert die Vorlage für zugelassene Artikel die meisten Feldwerte für das zugelassene Produkt, und diese Werte stammen von der zugehörigen Seite **Details zu zugelassenen Artikeln**.
 
@@ -63,6 +63,11 @@ Die folgenden Tabellen zeigen die Felder, die bei diesen Prozessen kopiert werde
 | **Produktvarianten** | Alle Felder im Abschnitt **Standard-Produktvariante** | Die gleichen Felder, die für die Engineering-Firma kopiert werden |
 
 Zusätzlich zu den Feldern, die in der vorherigen Tabelle gezeigt werden, werden alle Standardauftragseinstellungen aus der Vorlage für freigegebene Artikel übernommen, sowohl wenn das Produkt in der Engineering-Firma erstellt wird, als auch wenn es für eine Betriebsfirma freigegeben wird. (Um die Standardauftragseinstellungen für eine Vorlage für zugelassene Artikel anzuzeigen, öffnen Sie die entsprechende Seite **Details zu einem freigegebenen Produkt** und wählen Sie dann im Aktivitätsbereich auf der Registerkarte **Lagerbestand verwalten** die Option **Standardauftragseinstellungen**.)
+
+> [!NOTE]
+>
+> - Die Einheit stammt standardmäßig aus der Vorlage.
+> - Für Einzelhändler mit Dynamics 365 Commerce-Funktionalität: wenn Sie einem Produkt eine Einzelhandelskategorie zuweisen, wendet die Einzelhandelskategorie Standardwerte für viele der Felder für die freigegebene Produktebene an. Diese Voreinstellungen überschreiben Voreinstellungen, die möglicherweise bereits von der Vorlage festgelegt oder aus dem Engineering übernommen wurden.
 
 ## <a name="should-i-create-a-separate-legal-entity-for-engineering-products-or-use-an-existing-legal-entity"></a>Soll ich eine eigene juristische Entität für technische Produkte erstellen oder eine bestehende juristische Entität verwenden?
 

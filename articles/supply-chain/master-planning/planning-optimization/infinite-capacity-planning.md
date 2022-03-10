@@ -1,8 +1,8 @@
 ---
 title: Planung mit unendlicher Kapazität
 description: Dieses Thema enthält Informationen zur Planung mit unbegrenzter Kapazität für die Planungsoptimierung. Außerdem werden aktuelle Funktionseinschränkungen beschrieben.
-author: crytt
-ms.date: 09/02/2021
+author: ChristianRytt
+ms.date: 09/21/2021
 ms.topic: article
 ms.search.form: RouteInventProd
 audience: Application User
@@ -11,23 +11,27 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 2e730340cddac107b04a6b5877e51b84f4dd7b21
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: 6ea27f4e38697d517b1520176eb5dfeee651a598
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471667"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982149"
 ---
 # <a name="scheduling-with-infinite-capacity"></a>Planung mit unendlicher Kapazität
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
 Die Funktion *Unendliche Kapazitätsplanung für die Planungsoptimierung* führt eine Planung auf Basis von Arbeitsplaninformationen ein. Sie können Aufträge basierend auf einer Vielzahl von Arbeitsplankonfigurationen planen. Die Planung für die Planungsoptimierung umfasst häufig verwendete Arbeitsplaneinstellungen, einschließlich der Arbeitsplan-Arbeitsgangsequenz oder Anforderungen an Arbeitsplan-Arbeitsgangressourcen.
 
 ## <a name="turn-on-the-infinite-capacity-scheduling-feature"></a>Die Planungsfunktion für unbegrenzte Kapazitäten aktivieren
 
-Wenn Ihr System noch nicht über die in diesem Thema beschriebene Funktion verfügt, öffnen Sie die [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und schalten Sie die Funktion *Unendliche Kapazitätsplanung für die Planungsoptimierung* ein.
+Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+
+- **Modul:** *Produktprogrammplanung*
+- **Funktionsname:** *Zeitplanung mit unbegrenzter Kapazität für Planungsoptimierung*
+
+Weitere Informationen zu dieser Funktion finden Sie unter [Planung mit Ressourcenauswahl basierend auf der Funktion](capability-based-scheduling.md).
 
 ## <a name="added-functionality"></a>Hinzugefügte Funktionalität
 
@@ -42,10 +46,12 @@ Bei des Planungsprozesses berücksichtigt das System auch die *Ressourcenanforde
 - Ressourcentyp
 - Ressource
 - Ressourcengruppe
-- Fähigkeit
+- Funktion (Weitere Informationen finden Sie unter [Planung mit Ressourcenauswahl basierend auf der Funktion](capability-based-scheduling.md)).
 
 > [!NOTE]
-> Anforderungen, die sich auf die Personalverwaltung beziehen, wie z. B. Fähigkeiten oder Zertifikatsanforderungen, werden noch nicht unterstützt.
+>
+> - Wenn die Ressource und/oder die Ressourcengruppe auf unbegrenzte Kapazität eingestellt sind, betrachtet die Hauptplanung sie als unbegrenzte Kapazität.
+> - Anforderungen, die sich auf die Personalverwaltung beziehen, wie z. B. Fähigkeiten oder Zertifikatsanforderungen, werden noch nicht unterstützt.
 
 Die Funktion unterstützt auch die **Rüstzeit** und die **Runtime** betriebliche Eigenschaften. Wenn Sie diese Eigenschaften für einen Arbeitsplan-Arbeitsgang festlegen, erstellt der Planungsprozess die entsprechenden Einrichtungs- und Verarbeitungsvorgänge.
 
@@ -55,7 +61,6 @@ Zusammenfassend lässt sich sagen, dass die Planung für die Planungsoptimierung
 
 Die folgenden Einschränkungen gelten, wenn Sie die Planung für die Planungsoptimierung verwenden:
 
-- Die Funktion unterstützt nur die Auftragsplanung. Einstellungen, die sich auf die Arbeitsgangplanung beziehen, werden bei der Planung nicht berücksichtigt, unabhängig von der Planungsmethoden in Produktprogrammplänen.
 - Die Funktion unterstützt nur unendliche Kapazität.
 - Die Funktion unterstützt keine Funktionalität der Ressourcenauslastung.
 - Die Funktion berücksichtigt keinen Arbeitsplanausschuss.

@@ -1,34 +1,24 @@
 ---
 title: Integriertes Sachkonto
 description: In diesem Thema wird die Integration von Sachkontodaten zwischen Finance and Operations und anderen Dynamics 365-Anwendungen mithilfe von Dataverse beschrieben.
-author: robinarh
-manager: AnnBe
+author: tonyafehr
 ms.date: 09/06/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
-ms.author: rhaertle
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: f8095b0a755e40e5665d951d33ea4ce60e749165
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.author: tfehr
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 0deb4198acb59b90bf06e4050889d028df2223e3
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5567695"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063646"
 ---
 # <a name="integrated-ledger"></a>Integriertes Sachkonto
 
 [!include [banner](../../includes/banner.md)]
-
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
@@ -38,55 +28,20 @@ In einer Geschäftsanwendung definieren Sachkontodaten den Kern der Geschäftsab
 
 Sachkontodaten enthalten eine Sammlung von wichtigen Tabellenzuordnungen, die während der Dateninteraktion zusammenarbeiten, wie in der folgenden Tabelle dargestellt.
 
-Finance and Operations Apps      | Modellgesteuerte App in Dynamics 365 | Beschreibung
+Finance and Operations-Apps | Customer Engagement-Apps     | Beschreibung
 ---------------------------------|----------------------------------|------------
-Währungen                       | transactioncurrencies            |
-FiscalCalendar                   | msdyn\_fiscalcalendars        |
-FiscalCalendarYear               | msdyn\_fiscalcalendaryears        |
-ExchRateType                     | msdyn\_exchangeratetypes        |
-ExchangeRateCurrencyPair         | msdyn\_currencyexchangeratepairs        |
-FiscalPeriodEntity               | msdyn\_fiscalcalendarperiods        |
-MainAccountCategory              | msdyn\_mainaccountcategory        |
-MainAccount                      | msdyn\_mainaccounts        |
-Unternehmen                           | msdyn\_ledgers        |
-ExchangeRates                    | msdyn\_currencyexchangerates        |
-FinancialCalendarPeriod          | msdyn\_fiscalcalendarperiods        |
-DimensionAttributeEntity         | msdyn\_dimensionattributes        |
-DimensionIntegrationFormatEntity | msdyn\_financialdimensionformats        |
-LedgerChartOfAccounts            | msdyn\_chartofaccounts        |
-
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Currency](includes/Currencies-transactioncurrencies.md)]
-
-[!include [Fiscal calendar](includes/FiscalCalendar-msdyn-fiscalcalendars.md)]
-
-[!include [Fiscal calendar year](includes/FiscalCalendarYear-msdyn-fiscalcalendaryears.md)]
-
-[!include [Exchange rate types](includes/ExchRateType-msdyn-exchangeratetypes.md)]
-
-[!include [Exchange rate pair](includes/ExchangeRateCurrencyPair-msdyn-currencyexchangeratepairs.md)]
-
-[!include [Main account category](includes/MainAccountCategory-msdyn-mainaccountcategory.md)]
-
-[!include [Main account](includes/MainAccount-msdyn-mainaccounts.md)]
-
-[!include [Ledger](includes/Ledger-msdyn-ledgers.md)]
-
-[!include [Exchange rates](includes/ExchangeRates-msdyn-currencyexchangerates.md)]
-
-[!include [Financial Calendar Period](includes/FiscalPeriodEntity-msdyn-fiscalcalendarperiods.md)]
-
-[!include [Dimension attribute](includes/DimensionAttributeEntity-msdyn-dimensionattributes.md)]
-
-[!include [Dimension integration format](includes/DimensionIntegrationFormatEntity-msdyn-financialdimensionformats.md)]
-
-[!include [Chart Of Account](includes/LedgerChartOfAccounts-msdyn-chartofaccounts.md)]
-
-
-
-
-
+[CDS-Wechselkurse](mapping-reference.md#123) | msdyn_currencyexchangerates |
+[Kontenplan](mapping-reference.md#121) | msdyn_chartofaccountses |
+[Währungen](mapping-reference.md#218) | transactioncurrencies |
+[Währungspaar für Wechselkurs](mapping-reference.md#122) | msdyn_currencyexchangeratepairs |
+[Wechselkurstyp](mapping-reference.md#129) | msdyn_exchangeratetypes |
+[Finanzdimensionsformat](mapping-reference.md#130) | msdyn_financialdimensionformats |
+[Finanzdimensionen](mapping-reference.md#128) | msdyn_dimensionattributes |
+[Entität „Steuerkalenderintegration“](mapping-reference.md#132) | msdyn_fiscalcalendars |
+[Steuerkalenderperiode](mapping-reference.md#131) | msdyn_fiscalcalendarperiods |
+[Entität „Steuerkalender-Jahresintegration“](mapping-reference.md#133) | msdyn_fiscalcalendaryears |
+[Unternehmen](mapping-reference.md#148) | msdyn_ledgers |
+[Hauptkonto](mapping-reference.md#152) | msdyn_mainaccounts |
+[Hauptkontokategorien](mapping-reference.md#151) | msdyn_mainaccountcategories |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -5,7 +5,6 @@ author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7e3156d1aa9a05dc5d159b6f9b33ae341de640bf
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4887cde3e4243ae7a4da6402782e69e780ae20331ed80df63ba1239ef5187e41
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801698"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769270"
 ---
 # <a name="save-for-my-next-payment-option-doesnt-appear"></a>Die Option „Für meine nächste Zahlung speichern“ wird nicht angezeigt
 
@@ -35,7 +34,7 @@ Das Kontrollkästchen **Für meine nächste Zahlung speichern** wird nicht im Ab
 
 Die folgende Abbildung zeigt ein Beispiel für eine Checkout-Seite, die das Kontrollkästchen **Für meine nächste Zahlung speichern** enthält.
 
-![Kontrollkästchen „Für meine nächste Zahlung speichern“ im Zahlungsmodul](media/payment-module-save-payment.jpg)
+![Kontrollkästchen „Für meine nächste Zahlung speichern“ im Zahlungsmodul.](media/payment-module-save-payment.jpg)
 
 ## <a name="resolution"></a>Lösung
 
@@ -47,7 +46,7 @@ Befolgen Sie diese Schritte, um sicherzustellen, dass der Dynamics 365 Payment C
 1. Wählen Sie den Onlineshop aus.
 1. Vergewissern Sie sich, dass im Inforegister **Zahlungskonten** das Feld **Speichern von Zahlungsinformationen in E-Commerce zulassen** auf **True** gesetzt ist.
 
-![Das Feld „Speichern von Zahlungsinformationen in E-Commerce zulassen“ in der Commerce-Zentralverwaltung](media/payment-connector-save-payment.jpg)
+![Das Feld „Speichern von Zahlungsinformationen in E-Commerce zulassen“ in der Commerce-Zentralverwaltung.](media/payment-connector-save-payment.jpg)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

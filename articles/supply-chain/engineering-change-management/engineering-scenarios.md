@@ -11,13 +11,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 9440471d6983136971878c8ee9e327d4dd407833
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 4c1c67559a8f2e9d0abb512f4231aea495d1957c
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346153"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573992"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Exemplarische Vorgehensweise für die Funktionen der Verwaltung für technische Änderung
 

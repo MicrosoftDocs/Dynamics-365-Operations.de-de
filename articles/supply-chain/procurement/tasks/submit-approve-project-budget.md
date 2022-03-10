@@ -1,58 +1,45 @@
 ---
-title: Überarbeiten und Übermitteln eines Projektbudgets
+title: Ein Projektbuget erstellen und übermitteln – Workflow
 description: Diese Prozedur zeigt Ihnen, wie Sie das Budget für ein Projekt erstellen und übermitteln.
-author: RichardLuan
-manager: tfehr
-ms.date: 08/13/2019
-ms.topic: business-process
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
+author: Henrikan
+ms.date: 11/22/2021
+ms.topic: article
 ms.search.form: ProjProjectsListPage, ProjTable, ProjBudget, WorkflowSubmitDialog
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.search.industry: Service industries
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b871a3fef3515d3a79fb4b55406a93fc16d02faa
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6f410d824be717537e6dfb5dbd8b71ff7d992e0a
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018727"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860408"
 ---
-# <a name="submit-and-approve-project-budget"></a>Überarbeiten und Übermitteln eines Projektbudgets
+# <a name="create-and-submit-a-project-budget-workflow"></a>Ein Projektbuget erstellen und übermitteln – Workflow
 
 [!include [banner](../../includes/banner.md)]
 
-Diese Prozedur zeigt Ihnen, wie Sie das Budget für ein Projekt erstellen und übermitteln. 
+Wenn Sie ein Projektbudget erstellen, können Sie die vorkalkulierten Umsatzerlöse und Kosten für ein Projekt eingegeben und diese Werte anschließend zum Steuern der tatsächlichen Projektbuchungen verwenden. Bei der Projektbudgetierung müssen alle ursprünglichen Budgets und Überarbeitungen an den Projektworkflow zur Genehmigung gesendet werden. Der Workflow verbessert die Steuerung der Budegetierung, und der Änderungsverlauf wird aufgezeichnet. Nachdem Sie ein [Projekt erstellen](/dynamicsax-2012/appuser-itpro/create-a-project), verwenden Sie die Prozedur, um das Budget zu erstellen und zu übermitteln.
 
-Wenn Sie ein Projektbudget erstellen, können Sie die vorkalkulierten Umsatzerlöse und Kosten für ein Projekt eingegeben und diese anschließend zum Steuern der tatsächlichen Projektbuchungen verwenden. Bei der Projektbudgetierung müssen alle ursprünglichen Budgets und Überarbeitungen an den Projektworkflow zur Genehmigung gesendet werden. Der Workflow ermöglicht eine bessere Steuerung des Prozesses, und der Änderungsverlauf wird aufgezeichnet.
-
-Diese Aufgabe wurde mit dem USSI-Dataset erstellt.
-
-1. Gehen Sie im Navigationsbereich **Navigationsbereich** zu **Module > Projektmanagement und Rechnungswesen > Projekte > Alle Projekte**.
-2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-3. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-4. Klicken Sie im **Aktivitätsbereich** auf **Plan**.
-5. Klicken Sie auf **Projektbudget**.
-6. Geben Sie im Feld **Beschreibung** einen Wert ein.
-7. Erweitern Sie die **Kosten** FastTab.
-8. Klicken Sie auf **Neu**.
-9. Wählen Sie im Feld **Transaktionsart** eine Option aus.
-10. Geben Sie im Feld **Kategorie** einen Wert ein, oder wählen Sie einen Wert aus.
-11. Geben Sie im Feld **Originalbudget** eine Zahl ein.
-12. Erweitern Sie die **Erlöse** fastTab.
-13. Klicken Sie auf **Neu**.
-14. Markieren Sie in der Liste die ausgewählte Zeile.
-15. Wählen Sie im Feld **Transaktionsart** eine Option aus.
-16. Geben Sie im Feld **Kategorie** einen Wert ein, oder wählen Sie einen Wert aus.
-17. Geben Sie im Feld **Originalbudget** eine Zahl ein.
-18. Klicken Sie auf **Speichern**.
-19. Klicken Sie auf **Workflow**.
-20. Klicken Sie auf **Absenden**.
-21. Geben Sie in das Feld **Kommentar** einen Wert ein.
-22. Klicken Sie auf **Absenden**.
-
+1. Wechseln Sie zu **Module** > **Projektverwaltung und -verrechnung** > **Projekte** > **Alle Projekte**.
+1. Wählen Sie in der Projektliste ein Projekt aus.
+1. Wählen Sie auf der Detailseite des Projekts die Registerkarte **Planen** aus.
+1. Wählen Sie in der Gruppe **Budget** **Projektbudget** aus.
+1. Geben Sie auf dem Inforegister **Allgemein** die folgenden Informationen ein:
+   - Geben Sie im Feld **Beschreibung** einen Wert ein.
+   - Option auswählen für **Ursprüngliches Budget**.
+   - Option auswählen für **Verbleibendes Budget**.
+1. Erweitern Sie das Inforegister **Kosten** und wählen Sie **Neu**. Legen Sie dann die folgenden Einstellungen fest:
+   - Wählen Sie für **Transaktionsart** eine Option aus.
+   - Wählen Sie eine geeignete **Kategorie**.
+   - Geben Sie einen Wert in **Ursprüngliches Budget** ein.
+1. Erweitern Sie das Inforegister **Erlöse** und wählen Sie **Neu**. Legen Sie dann die folgenden Einstellungen fest:
+   - Wählen Sie für **Transaktionsart** eine Option aus.
+   - **Kategorie** auswählen.
+   - Geben Sie einen Wert für **Ursprüngliches Budget** ein.
+1. Wählen Sie **Speichern** aus.
+1. Wählen Sie **Workflow \> Absenden** aus.
+1. Geben Sie auf der **Workflow des ursprünglichen Budgets überprüfen – Absenden**-Seite einen **Kommentar** ein und wählen Sie **Absenden** aus.

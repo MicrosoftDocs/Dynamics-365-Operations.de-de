@@ -5,7 +5,6 @@ author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TAMRebateGroup
 audience: Application User
@@ -14,13 +13,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 0e806af55247fc78b5e353f3ae1dd624809feb43
-ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
+ms.dyn365.ops.version: 10.0.18
+ms.openlocfilehash: edffccfec552d90ce704190b4be0b4594964fa81
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5919916"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574328"
 ---
 # <a name="rebate-management-posting-setup"></a>Einrichtung von Rückvergütungsverwaltungsbuchungen
 
@@ -42,9 +41,9 @@ In der folgenden Tabelle werden die Einstellungen beschrieben, die im Kopfbereic
 |---|---|
 | Buchungsprofil | Geben Sie einen eindeutigen Namen für das Profil ein. |
 | Beschreibung | Geben Sie eine Beschreibung des Profils ein. |
-| Modul | Wählen Sie die Art der Rückvergütungen und Lizenzgebühren aus, mit denen das Profil verknüpft ist (*Debitor* oder *Kreditor*). |
+| Modul | Wählen Sie das Modul, dem die Rabatte und Lizenzgebühren des Profils zugeordnet sind (*Kunde* oder *Kreditor*). |
 | Typ | Wählen Sie den Profiltyp (*Rückvergütung* oder *Lizenzgebühr*). |
-| Zahlungstyp | <p>Dieses Feld bestimmt das Format der gebuchten Rückvergütungsausgabe.<p><p>Wenn das Feld **Typ** auf *Rückvergütung* gesetzt ist, stehen folgende Werte zur Verfügung:</p><ul><li>*Keiner* – Es gibt keinen Standardbuchungstyp. Daher müssen Sie den Typ bei der Verarbeitung festlegen.</li><li>*Bezahlen mit Kreditorenkonten* – Wenn Sie die Rückvergütung buchen, wird eine Kreditorenrechnung für den Remissekreditor erstellt, die für den Rückvergütungsdebitor eingerichtet wurde.</li><li>*Debitorabzüge* – Wenn Sie die Rückvergütung buchen, wird eine Debitorabzugserfassung für den Rückvergütungsdebitor erstellt.</li><li>*Steuerrechnung-Debitorabzüge* – Wenn Sie die Rückvergütung buchen, wird eine Freitextrechnung für den Rückvergütungsdebitor erstellt.</li><li>*Handelsausgaben* – Wenn Sie die Rückvergütung buchen, wird eine Debitorabzugserfassung für den Rückvergütungsdebitor erstellt.</li><li>*Berichterstellung* – Wenn Sie die Rückvergütung buchen, wird eine Debitorabzugserfassung für den Rückvergütungsdebitor erstellt.</li></ul><p>Wenn das Feld **Typ** auf *Lizenzgebühr* gesetzt ist, stehen folgende Werte zur Verfügung:</p><ul><li>*Keiner* – Es gibt keinen Standardbuchungstyp. Daher müssen Sie den Typ bei der Verarbeitung festlegen.</li><li>*Bezahlen mit Kreditorenkonten* – Wenn Sie die Rückvergütung buchen, wird eine Kreditorenrechnung für das Rückvergütungsdebitorkonto eingerichtet erstellt.</li><li>*Berichterstellung* – Wenn Sie die Rückvergütung buchen, wird eine Kreditorenrechnung für das Rückvergütungsdebitorkonto eingerichtet erstellt.</li></ul><p>Weitere Informationen finden Sie im folgenden Abschnitt zu [Zahlungstypen](#payment-types). |
+| Zahlungstyp | <p>Dieses Feld bestimmt das Format der gebuchten Rückvergütungsausgabe.<p><p>Wenn das Feld **Typ** auf *Rückvergütung* gesetzt ist, stehen folgende Werte zur Verfügung:</p><ul><li>*Bezahlen mit Kreditorenkonten* – Wenn Sie eine Rückvergütung für einen Kunden buchen, wird eine Kreditorenrechnung für den Remissekreditor erstellt, die für den Rückvergütungsdebitor eingerichtet wurde. Wenn Sie eine Rückvergütung für einen Lieferanten buchen, wird eine Kreditorenrechnung für das Rückvergütungsdebitorkonto eingerichtet erstellt.</li><li>*Debitorabzüge* – Wenn Sie die Rückvergütung buchen, wird eine Debitorabzugserfassung für den Rückvergütungsdebitor erstellt.</li><li>*Steuerrechnung-Debitorabzüge* – Wenn Sie die Rückvergütung buchen, wird eine Freitextrechnung für den Rückvergütungsdebitor erstellt.</li><li>*Handelsausgaben* – Wenn Sie die Rückvergütung buchen, wird eine Debitorabzugserfassung für den Rückvergütungsdebitor erstellt.</li><li>*Berichterstellung* – Wenn Sie die Rückvergütung buchen, wird eine Debitorabzugserfassung für den Rückvergütungsdebitor erstellt.</li></ul><p>Wenn das Feld **Typ** auf *Lizenzgebühr* gesetzt ist, stehen folgende Werte zur Verfügung:</p><ul><li>*Bezahlen mit Kreditorenkonten* – Wenn Sie die Rückvergütung buchen, wird eine Kreditorenrechnung für das Rückvergütungsdebitorkonto eingerichtet erstellt.</li><li>*Berichterstellung* – Wenn Sie die Rückvergütung buchen, wird eine Kreditorenrechnung für das Rückvergütungsdebitorkonto eingerichtet erstellt.</li></ul><p>Weitere Informationen finden Sie im folgenden Abschnitt zu [Zahlungstypen](#payment-types). |
 | Firma | Wählen Sie das Unternehmen (juristische Person) aus, für das Rückstellungen gebildet werden und von dem Ansprüche bezahlt werden. |
 
 ### <a name="payment-types"></a>Zahlungstypen
@@ -67,7 +66,7 @@ Die folgende Tabelle fasst zusammen, wie die verschiedenen Einstellungen des Fel
 > Berücksichtigen Sie beim Einrichten von [Rückvergütungsverwaltungsdeals](rebate-management-deals.md) die folgenden Punkte:
 >
 > - Für Deals, bei denen das Feld **Abstimmen nach** auf *Deal* gesetzt ist, können Sie das dynamische Dealkonto während der Buchung nicht verwenden. Sie müssen ein bestimmtes Debitoren- oder Kreditorenkonto verwenden.
-> - Für Deals, bei denen das Feld **Abstimmen nach** auf *Position* gesetzt ist, können Sie ein Buchungsprofil verwenden, das mit einem dynamischen Dealkonto in der Deal-Position verrechnet wird, da der Debitor pro Deal-Position festgelegt ist.
+> - Für Deals, bei denen das Feld **Abstimmen durch** auf *Zeile* festgelegt ist, können Sie ein Buchungsprofil verwenden, das auf ein dynamisches Deal-Konto in der Deal-Zeile verrechnet, da der Debitor oder Kreditor pro Deal-Zeile festgelegt ist.
 
 ## <a name="posting-fasttab"></a>Buchungs-Inforegister
 
@@ -75,15 +74,15 @@ In der folgenden Tabelle werden die Felder beschrieben, die im Inforegister **Bu
 
 | Feld | Beschreibung |
 |---|---|
-| Gutschrifttyp | Wählen Sie aus, ob die Gutschrift an ein Sachkonto oder einen Debitor oder Kreditor gehen soll. |
-| Habenkonto | Das Konto, auf das die Gutschriften gebucht werden, wenn Rückstellungen für Rückvergütungen gebildet werden. Dieses Konto wird auch als Sollkonto verwendet, wenn die Rückvergütung zur Gutschrift an den Debitor gebucht wird. |
+| Gutschrifttyp | Wählen Sie aus, ob ein Sachkonto oder ein Debitor gutgeschrieben werden soll. Wenn das Feld **Zahlungsart** in der Kopfzeile auf *Steuerrechnungskundenabzüge* festgelegt ist, wird dieses Feld auf *Sachkonto* festgelegt. Für Kreditor-Rabatte wird dieses Feld auf *Sachkonto* festgelegt. |
+| Habenkonto | Wählen Sie das Konto aus, auf das die Gutschriften bei der Rückstellung von Rabatten gebucht werden. Dieses Konto wird auch als Gegenkonto verwendet, wenn der Rabatt gebucht wird, um den Debitor gutzuschreiben oder den Kreditor zu belasten. |
 | Name der Erfassung<br>(Im Abschnitt **Rückstellung**) | Wählen Sie den Namen der Erfassung aus, in der die gebuchte Rückstellung aufgezeichnet werden soll. |
 | Typ | Wählen Sie aus, ob die Rückvergütung an ein Sachkonto oder einen Debitor oder Kreditor gebucht werden soll. Wenn das Feld **Zahlungstyp** in der Kopfzeile auf *Steuerrechnungs-Debitorabzüge* gesetzt ist, steht dieses Feld auf *Debitor/Kreditor*. |
-| Kontoquelle verwenden | <p>Wählen Sie einen der folgenden Werte aus:</p><ul><li>*Keiner* – Wenn Sie diesen Wert auswählen, müssen Sie im Feld **Rückvergütungskonto** ein Konto angeben.</li><li>*Dealkonto* – Verwenden Sie das Debitor- oder Kreditorenkonto, das in der Rückvergütungsposition angegeben ist. Sie können diesen Wert nur für Deals auswählen, bei denen das Feld **Abstimmen nach** auf *Position* und das Feld **Kontocode** auf *Tabelle* gesetzt ist. Dies gilt nicht für Debitorenbuchungsprofile für Lizenzgebühren.</li></ul> |
+| Kontoquelle verwenden | <p>Wählen Sie einen der folgenden Werte aus:</p><ul><li>*Festes Konto* – Wenn Sie diesen Wert wählen, müssen Sie ein Konto im Feld **Rabattkonto** angeben.</li><li>*Abschlusszeilenkonto* – Verwenden Sie das Kunden- oder Kreditorenkonto, das in der Rabattzeile angegeben ist. Sie können diesen Wert nur für Deals auswählen, bei denen das Feld **Abstimmen nach** auf *Position* und das Feld **Kontocode** auf *Tabelle* gesetzt ist. Es gilt nicht für Debitor-Lizenzbuchungsprofile oder Kreditor-Rabatte, die auf Kundenaufträgen basieren.</li></ul> |
 | Rückvergütungskonto | Das Konto, auf das tatsächliche Rückvergütungsausgaben gebucht werden. |
-| Name der Erfassung<br>(Im Abschnitt **Rückvergütungsverwaltung**) | Wählen Sie den Namen der Erfassung aus, mit der eine Gutschrift für den Rückvergütungsbetrag an den Debitor gebucht werden soll. Dieses Feld steht nicht zur Verfügung, wenn das Feld **Zahlungstyp** in der Kopfzeile auf *Steuerrechnungs-Debitorabzüge* gesetzt ist. |
+| Name der Erfassung<br>(In der Feldgruppe **Rabattverwaltung**) | Wählen Sie den Namen des Journals, mit dem eine Gutschrift für den Rabattbetrag an den Debitor oder Kreditor gebucht werden soll. Dieses Feld steht nicht zur Verfügung, wenn das Feld **Zahlungstyp** in der Kopfzeile auf *Steuerrechnungs-Debitorabzüge* gesetzt ist. Für Debitor-Rabatte stehen Journalnamen des Journaltyps *Täglich* zur Verfügung. Für Debitor-Lizenzgebühren und Kreditor-Rabatte stehen Journale des Typs *Kreditorische Rechnungserfassung* zur Verfügung. |
 | Artikel-Mehrwertsteuergruppe | Geben Sie an, ob die Rückvergütung steuerpflichtig ist. |
-| Name der Erfassung<br>(Im Abschnitt **Abschreibung**) | Wenn die gebuchte Rückvergütung nicht der Rückstellung entspricht, kann die Differenz abgeschrieben werden. Wählen Sie den Namen der Erfassung aus, in der die gebuchte Abschreibung aufgezeichnet werden soll. |
+| Name der Erfassung<br>(In der Feldgruppe **Abschreiben**) | Wenn die gebuchte Rückvergütung nicht der Rückstellung entspricht, kann die Differenz abgeschrieben werden. Wählen Sie den Namen der Erfassung aus, in der die gebuchte Abschreibung aufgezeichnet werden soll. |
 
 ## <a name="posting-by-company-fasttab"></a>Inforegister „Buchung nach Unternehmen“
 
@@ -93,6 +92,6 @@ Verwenden Sie die Schaltflächen in der Symbolleiste, um dem Raster Unternehmen 
 
 Wählen Sie die Zeile für jedes Unternehmen aus und geben Sie die folgenden Informationen in die Felder unter dem Raster ein:
 
-- **Solltyp** – Wählen Sie aus, ob die Lastschrift an ein Sachkonto oder einen Debitor oder Kreditor gehen soll.
+- **Belastungstyp** – Wählen Sie, ob ein Sachkonto oder ein Kreditor belastet werden soll. Für Debitor-Rabatte und -Lizenzgebühren wird dieses Feld auf *Sachkonto* festgelegt.
 - **Sollkonto** – Geben Sie das Konto ein, auf das der Lastschriftbetrag gebucht wird, wenn Rückstellungen für Rückvergütungen gebildet werden.
 - **Hauptkonto** – Wählen Sie das Hauptkonto für Abschreibungen aus.

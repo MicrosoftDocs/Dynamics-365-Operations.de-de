@@ -1,7 +1,7 @@
 ---
 title: Power BI-Inhalt – Practice Manager
 description: In diesem Thema wird beschrieben, was im Power BI-Inhalt – Practice Manager enthalten ist.
-author: KimANelson
+author: kfend
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 77079a8013cb98acc5f36787ca10706c361736d3
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4acef3c595f25fa0be16945a9f41611832cfcea9
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753089"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500220"
 ---
 # <a name="practice-manager-power-bi-content"></a>Power BI-Inhalt – Practice Manager
 

@@ -1,27 +1,24 @@
 ---
 title: Kreditlimits für Debitoren
 description: Dieser Artikel stellt eine Übersicht der Kreditlimitprüfung in Dynamics 365 Supply Chain Management bereit.
-author: omulvad
-manager: tfehr
+author: Henrikan
 ms.date: 09/15/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e98203f03f10b3a7c530cb91211df2af025710dc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4e3476f1f25ac01d8740cce0442ac48ef25101a0
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428799"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574304"
 ---
 # <a name="credit-limits-for-customers"></a>Kreditlimits für Debitoren
 
@@ -93,7 +90,7 @@ Verwenden Sie das Formular **Debitorenparameter**, um die Informationen zum Verg
 
 **Wo werden Informationen zu dem verbleibenden Kredit eines Debitors verwendet?**
 
-Informationen zum Saldo sowie den verbleibenden Habenbetrag eines Debitors werden berechnet und gespeichert, wenn Sie eine Fälligkeitsmomentaufnahme erstellen, und sie werden im Formular **Inkassi** angezeigt. Die Beträge, die im Formular **Inkassi** angezeigt werden, umfassen möglicherweise nicht alle Buchungsaktivitäten, bis eine neue Fälligkeitsmomentaufnahme erstellt wird. Weitere Informationen finden Sie unter [Inkassi und Kredit in Debitorenparametern](https://technet.microsoft.com/library/hh209221.aspx).
+Informationen zum Saldo sowie den verbleibenden Habenbetrag eines Debitors werden berechnet und gespeichert, wenn Sie eine Fälligkeitsmomentaufnahme erstellen, und sie werden im Formular **Inkassi** angezeigt. Die Beträge, die im Formular **Inkassi** angezeigt werden, umfassen möglicherweise nicht alle Buchungsaktivitäten, bis eine neue Fälligkeitsmomentaufnahme erstellt wird. Weitere Informationen finden Sie unter [Inkassi und Kredit in Debitorenparametern](/dynamicsax-2012/appuser-itpro/collections-and-credit-in-accounts-receivable).
 
 Abhängig von den Dokumenten, die ausgewählt wurden, werden Informationen zu den Saldi und verbleibenden Habenbetrag eines Debitors berechnet, wenn Aufträge, Lieferscheine und Debitorenrechnungen aktualisiert werden. Wenn der Betrag des Dokuments, mit dem Sie arbeiten, dazu führen würde, dass das Kreditlimit überschritten wird, wird eine Meldung angezeigt.
 
@@ -138,3 +135,6 @@ Manchmal können Sie das Kreditlimit eines Debitors manuell prüfen. Beispielswe
 1.  Klicken auf Bereichsseitenknoten: **Vertrieb und Marketing** \> **Gemeinsam** \> **Aufträge** \> **Alle Aufträge**. Doppelklicken Sie auf einen Auftrag.
 
 2.  Klicken Sie im Aktivitätsbereich auf der Registerkarte **Verkaufsauftrag** in der Gruppe **Verwalten** auf **Kreditlimite überprüfen**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

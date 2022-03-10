@@ -1,8 +1,8 @@
 ---
 title: FAQ zur Integration mit Finance
-description: In diesem Artikel wird erläutert, welche Daten in einer Human Resources‑ und Finance-Integration synchronisiert werden.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Dieses Thema erklärt, welche Daten in einer Human Resources und Finance Integration synchronisiert werden.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,21 +11,24 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d2ac28a1bd09cf68c711295116fb007bdfab2070
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 308e2a538666522edf4a76be13b93c82c3f3a774
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053394"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071109"
 ---
 # <a name="integration-with-finance-faq"></a>FAQ zur Integration mit Finance
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Dieses Thema beantwortet häufige Fragen darüber, welche Daten synchronisiert werden, wenn Dynamics 365 Human Resources mit Dynamics 365 Finance integriert ist.
 
@@ -37,7 +40,7 @@ Nr. Wenn Sie den Human Resources-Anwendungsbenutzer bearbeiten, schlägt die Int
 | --- | --- | --- | --- |
 | Dynamics365 for Talent | f9be0c49-aa22-4ec6-911a-c5da515226ff | 27fd8129-4b3c-43f7-b1bf-47495d3a049b | f9be0c49-aa22-4ec6-911a-c5da515226ff |
 
-![Standardeinstellungen für Talent-Anwendungsbenutzer](media/DynamicsApplicationUser.png)
+![Standardeinstellungen für Talent-Anwendungsbenutzer.](media/DynamicsApplicationUser.png)
 
 ## <a name="is-all-data-synchronized-or-just-some-data-entities"></a>Sind alle Daten synchronisiert oder nur einige Dateneinheiten?
 
@@ -57,7 +60,7 @@ Finanzdimension sind derzeit nicht in Dataverse enthalten und gehören daher nic
 
 Für Daten, die sich in Finance befinden, aber nicht in Human Resources vorhanden sind, verbinden Sie die beiden Systeme miteinander, indem Sie **Links in Human Resources konfigurieren**.
 
-![Finanzdimensionen zuordnen](media/MapFinancialDimensions.png)
+![Finanzdimensionen zuordnen.](media/MapFinancialDimensions.png)
 
 ## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-why"></a>Manchmal, wenn ich Mitarbeiter importiere, gehen sie in inaktive Mitarbeiter in Finance. Warum?
 
@@ -71,14 +74,14 @@ Die Datensynchronisation erfolgt nach dem Ausführungsplan. Die Integration nimm
 
 Mit der Verwendung der "Erweiterten Suche" können Sie Quelldaten filtern und umgestalten, bevor Sie sie an das Ziel übergeben.
 
-![Erweiterte Abfrage – aktive Arbeitskräfte](media/MapOnlyActiveWorkersAdvancedQuery.png)
+![Erweiterte Abfrage – aktive Arbeitskräfte.](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-for-a-specific-entity"></a>Kann ich angeben, welche Felder für eine bestimmte Einheit an Finance gesendet werden sollen?
 
 Felder können der Integrationsaufgabe hinzugefügt oder entfernt werden. Nicht alle Datenfelder, die in der Dataverse-Tabelle vorhanden sind, werden aus Human Resources gefüllt.
 Zusätzliche Daten können über Power Apps gefüllt werden.
 
-![Felder einer Integrationsaufgabe hinzufügen oder von dieser entfernen](media/SpecifyFieldsIncludedInIntegration.png)
+![Felder einer Integrationsaufgabe hinzufügen oder von dieser entfernen.](media/SpecifyFieldsIncludedInIntegration.png)
 
 ## <a name="i-set-up-integration-as-a-batch-job-but-human-resources-lost-connection-to-the-destination-system-how-can-i-send-the-same-set-of-changes-to-the-destination-system"></a>Ich habe die Integration als Batch-Job eingerichtet, aber Human Resources hat die Verbindung zum Zielsystem verloren. Wie kann ich den gleichen Satz von Änderungen an das Zielsystem senden?
 
@@ -86,7 +89,7 @@ Für die Ausnahmebehandlung ist keine spezielle Einrichtung erforderlich. Der Da
 
 ## <a name="can-i-set-up-bi-directional-integration"></a>Kann ich eine bidirektionale Integration einrichten?
 
-Nein, die Integration ist derzeit einseitig (Human Resources zu Finance and Operations). Es steht jedoch eine Standardvorlage zur Verfügung, um Daten aus Human Resources an Finance zu senden.
+Nein, die Integration erfolgt derzeit in eine Richtung (Human Resources zu Finance und Operations). Es steht jedoch eine Standardvorlage zur Verfügung, um Daten aus Human Resources an Finance zu senden.
 
 ## <a name="can-i-allow-record-deletion-as-part-of-my-integration"></a>Kann ich im Rahmen meiner Integration das Löschen von Datensätzen zulassen?
 
@@ -126,21 +129,21 @@ Verfolgen Sie die Zeit aus der Ausführungshistorie des Data Integrator und such
 
 1. Erfassen Sie den Aufgabenindex aus dem Data Integrator (in diesem Beispiel ist es "9").
 
-    ![Erfassen des Aufgabenindexes aus dem Data Integrator](media/CaptureTaskIndex.png)
+    ![Erfassen des Aufgabenindexes aus dem Datenintegrator.](media/CaptureTaskIndex.png)
 
 2. Verfolgen Sie die Ausführungszeit des Projekts.
 
-    ![Verfolgung der Ausführungszeit des Projekts](media/CaptureTimeOfExecution.png)
+    ![Verfolgung der Ausführungszeit des Projekts.](media/CaptureTimeOfExecution.png)
 
 3. In Finance identifizieren Sie Index - 1. In diesem Beispiel stimmt das Projekt mit dem Suffix "8" und der Ausführungszeit des Index "0" Projekts mit der Ausführungszeit in Schritt 2 überein.
 
-    ![Index identifizieren](media/IdentifyIndex.png)
+    ![Index identifizieren.](media/IdentifyIndex.png)
 
 ## <a name="after-integrating-human-resources-and-finance-i-dont-see-my-human-resources-data-in-finance-what-do-i-do"></a>Nach der Integration von Human Resources und Finance sehe ich meine Human Resources-Daten in Finance nicht mehr. Was soll ich tun?
 
 Die Integration in Finance ist ein zweistufiger Prozess. Stellen Sie zunächst sicher, dass die Human Resources-Daten aktualisiert und in Dataverse verfügbar sind. Dies ist eine echtzeitnahe Synchronisation und kann in Power Apps überprüft werden, indem man sich die Daten innerhalb der Datentabellen ansieht.
 
-![Daten im Dataverse](media/DataInCDS.png)
+![Daten im Dataverse.](media/DataInCDS.png)
 
 Wenn die Daten nicht wie erwartet im Dataverse angezeigt werden, überprüfen Sie, ob die Entität in der Integration unterstützt wird. Um zusätzliche Daten in Dataverse aufzunehmen, ist eine Änderung auf der Microsoft-Seite erforderlich.
 
@@ -158,14 +161,13 @@ Achten Sie beim Erstellen Ihrer Verbindungen darauf, dass Sie Dynamics 365 Finan
 
 ## <a name="when-syncing-employments-i-get-the-errors-companyinfo_fk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Bei der Synchronisation von Arbeitsverhältnissen erhalte ich die Fehlermeldung "CompanyInfo_FK existiert nicht" oder "Der Wert '12/31/2154 11:59:59 pm' im Feld 'Arbeitsenddatum' ist in der zugehörigen Tabelle 'Beschäftigung' nicht enthalten". Was soll ich tun?
 
-Stellen Sie sicher, dass Sie die Zuordnung zu den richtigen juristischen Personen vornehmen. Die Synchronisierung von juristischen Personen ist nicht Teil der Standardvorlage, so dass erwartet wird, dass jede juristische Person, die in Human Resources und Dataverse vorhanden ist, auch in Finance vorhanden ist.
-Stellen Sie außerdem sicher, dass Sie die richtigen juristischen Personen für das zugehörige Verbindungsset auswählen.
+Stellen Sie sicher, dass Sie die Zuordnung zu den richtigen juristischen Personen vornehmen. Die Synchronisierung von juristischen Personen ist nicht Teil der Standardvorlage, so dass erwartet wird, dass jede juristische Person, die in Human Resources und Dataverse vorhanden ist, auch in Finance vorhanden ist. Stellen Sie außerdem sicher, dass Sie die richtigen juristischen Personen für das zugehörige Verbindungsset auswählen.
 
 ## <a name="after-setting-up-my-project-the-field-mapping-for-finance-appears-to-be-empty-what-should-i-do"></a>Nach der Einrichtung meines Projekts scheint die Feldzuordnung für Finance leer zu sein. Was soll ich tun?
 
 Aktualisieren Sie die Dateneinheiten in Finance, indem Sie zu **Datenmanagement \> Rahmenparameter \> Entitätseinstellungen \> Entitätsliste aktualisieren** gehen. Dies sollte einige Minuten dauern, dann sollten Sie diese Zuordnungen sehen. Dieses Problem tritt auf, wenn neue Projekte erstellt werden.
 
-![Fehlende Feldzuordnung](media/MissingFieldMapping.png)
+![Fehlende Feldzuordnung.](media/MissingFieldMapping.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
