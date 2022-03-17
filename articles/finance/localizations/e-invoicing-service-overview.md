@@ -1,8 +1,8 @@
 ---
 title: Informationen zur elektronischen Rechnungsstellung
-description: Dieses Thema enthält Informationen zur elektronischen Rechnungsstellung in Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management.
+description: Dieses Thema bietet einen Überblick über die Elektronische Rechnungsstellung in Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 01/21/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6983abeb4d0fdd1a595a53ea0fd9cd840b24030b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 23a98706bc2ab0abc2c72e9f20d8e8fbff56b2b9
+ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983850"
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "8371453"
 ---
 # <a name="electronic-invoicing-overview"></a>Informationen zur elektronischen Rechnungsstellung
 
 [!include [banner](../includes/banner.md)]
 
-Die elektronische Rechnungsstellung für Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management ist ein hyperskalierbarer mandantenfähiger Dienst, der die konfigurierbare Verarbeitung elektronischer Rechnungsdokumente sowie den konfigurierbaren Dokumentenaustausch ermöglicht. Die Verarbeitungs- und Integrationsregeln sind vollständig konfigurierbar und die Logik wird außerhalb von Finance und Supply Chain Management ausgeführt. Der Dienst zielt hauptsächlich auf die Verarbeitung elektronischer Rechnungen in Übermittlungsszenarien zwischen Unternehmen und Behörden ab, kann jedoch auch für andere Zwecke konfiguriert werden.
+Elektronische Rechnungsstellung für Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management ist ein hyper-skalierbarer mandantenfähiger Dienst, der die konfigurierbare Verarbeitung elektronischer Rechnungen und den konfigurierbaren Austausch elektronischer Belege ermöglicht. Die Verarbeitungs- und Integrationsregeln sind vollständig konfigurierbar und die Logik wird außerhalb von Finance und Supply Chain Management ausgeführt. Der Dienst ist hauptsächlich für die Verarbeitung elektronischer Belege in Business-to-Government-Szenarien gedacht. Es kann jedoch für andere Zwecke angepasst werden, z.B. für business-to-business Szenarien für verschiedene Arten von Dokumenten.
 
 Mit der elektronischen Rechnungsstellung können Sie die folgenden Ziele erreichen:
 
@@ -37,80 +37,49 @@ Mit der elektronischen Rechnungsstellung können Sie die folgenden Ziele erreich
 - Verbesserte Rückverfolgbarkeit des Dokumentverlaufs
 - Kürzerer Implementierungszyklus
 - Senkung der Gesamtbetriebskosten
-- Leicht anpassbare Konfigurationen, für die keine Codeänderungen erforderlich sind
+- Leicht anpassbare Konfigurationen, die keine Codeänderungen erfordern
 - Vereinfachte Konfigurationsverpackung
-- Integrierter Export, Import und Integration sowie einfache Erweiterbarkeit bei der Verarbeitung elektronischer Rechnungsdokumente
+- Integrierter Export, Import und Integration sowie einfache Erweiterbarkeit bei der Verarbeitung elektronischer Belege für Rechnungen
 - Einfache Wiederverwendung derselben Export-, Import- und Integrationskonfigurationen in allen Unternehmen
 
-Um die elektronische Rechnungsstellung verwenden zu können, müssen Sie sie über Ihr Projekt in Microsoft Dynamics Lifecycle Services (LCS) installieren. Befolgen Sie anschließend die Einrichtungsprozedur um die Integration in Finance oder Supply Chain Management zu aktivieren. Weitere Informationen finden Sie unter [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md).
+## <a name="service-availability"></a>-Dienstverfügbarkeit
 
-## <a name="service-availability"></a><a name="availability"></a>-Dienstverfügbarkeit
+Derzeit ist die Elektronische Rechnungsstellung nur für Kunden aus den Bereichen Finance und Supply Chain Management verfügbar. Weitere Informationen finden Sie in den Lizenzbedingungen für Ihre Anwendung.
 
-Derzeit steht Kunden die elektronische Rechnungsstellung über das Vorschauprogramm zur Verfügung. In der nächsten Phase wird der Dienst allgemein verfügbar sein. Da Funktionen, die landes-/regionsspezifische Anforderungen berücksichtigen, in verschiedenen Phasen des Release möglicherweise eingeschränkt sind, sollten Sie sich stets anhand der aktuellsten Dokumentation informieren, in der die Abdeckung und der Umfang der unterstützten landes-/regionsspezifischen Lösungen hervorgehoben werden.
+Da die Funktionalität, die länder- bzw. regionalspezifische Anforderungen erfüllt, in verschiedenen Phasen der Veröffentlichung eingeschränkt sein kann, sollten Sie immer die aktuellste Dokumentation lesen, die den Umfang der unterstützten länder- bzw. regionalspezifischen Lösungen aufzeigt.
 
 Die elektronische Rechnungsstellung wird in den folgenden Azure-Regionen bereitgestellt:
 
 - USA
 - Europa
-- Vereinigtes Königreich
 - Asien
 
 > [!NOTE]
 > Die elektronische Rechnungsstellung unterstützt keine lokalen Bereitstellungen.
 
-## <a name="extended-configurability"></a>Erweiterte Konfigurierbarkeit
-
-Die elektronische Rechnungsstellung kann in Szenarien verwendet werden, in denen Sie ein elektronisches Dokument erstellen und an die vorgesehenen Parteien senden müssen. Es wurde speziell für die Ausführung eines konfigurierbaren Flows von Verarbeitungsaktionen basierend auf empfangenen Daten entwickelt. Die Konfigurationsoptionen, die in Finance und Supply Chain Management verfügbar sind, beschränken sich auf die Dokumentumwandlung. Der Dienst erweitert diese Optionen um die konfigurierbaren Integrationen, die darin verfügbar sind. Darüber hinaus werden alle zuvor verfügbaren Funktionen für elektronische Rechnungen, z. B. Nota Fiscal Eletrônica (NF-e) für Brasilien, Comprobante Fiscal Digital por Internet (CFDI) für Mexiko oder andere UBL-/PEPPOL-Funktionen (Universal Business Language / Pan-European Public Procurement OnLine) für Westeuropa, Konfigurationen für den Export und Import sowie für die Integration in externe Webdienste verwenden.
-
 ## <a name="feature-highlights"></a>Besondere Funktionen
 
-- Vordefinierte Integration in Finance und Supply Chain Management
-- Konsistente Benutzererfahrung für die Konfiguration und Überwachung des elektronischen Rechnungsprozesses für alle Länder oder Regionen
+- Standardmäßige Integration mit Finance und Supply Chain Management
+- Eine einheitliche Benutzererfahrung für die Konfiguration und Überwachung des elektronischen Rechnungsprozesses für alle Länder und Regionen
 - Schnellere, einfachere und kostengünstigere Einführung von Lösungen für die elektronische Rechnungsstellung in neuen Ländern oder Regionen
-- Konfiguration des Dienstes über die Einrichtung des Regulatory Configuration Service (RCS) und der Globalisierungsfunktion
-- Transformation von Geschäftsdaten in mehrere elektronische Rechnungsformate (XML, JavaScript Object Notation \[JSON\], TXT und durch Komma getrennten Werte \[CSV\]) mithilfe von Konfigurationen, die in RCS definiert sind:
+- Konfiguration des Dienstes durch die Einrichtung von Regulatory Configuration Service (RCS) und Globalisierungsfunktionen
+- Umwandlung von Geschäftsdaten in mehrere elektronische Rechnungsformate (XML, JavaScript Object Notation \[JSON\], TXT und kommagetrennte Werte \[CSV\]) unter Verwendung von Konfigurationen, die in RCS definiert sind:
 
-    - Elektronische Berichtsformate, die für Länder oder Regionen verfügbar sind, in denen die Konfigurierbarkeit für die Transformation elektronischer Rechnungen nicht verfügbar ist
+    - Elektronische Berichtsformate (ER), die für Länder und Regionen verfügbar sind, in denen die Konfigurierbarkeit für die elektronische Rechnungsumwandlung nicht verfügbar ist
 
-- Konfigurierbare Übermittlung von elektronischen Rechnungen an externe Webdienste, einschließlich der Bearbeitung von Zertifizierungen durch digitale Signaturen:
+- Konfigurierbare Übermittlung elektronischer Rechnungen an externe Webdienste, einschließlich der Handhabung von Zertifikaten durch digitale Signaturen:
 
-    - Integrierte, leicht erweiterbare und konfigurierbare Integration mit zusätzlichen Inhalten für mehrere Länder
+    - Integrierte, leicht erweiterbare und konfigurierbare Integration mit zusätzlichen Inhalten für mehrere Länder und Regionen
 
-    > [!NOTE]
-    > Derzeit wird eine begrenzte Anzahl von direkten Übermittlungen unterstützt. Weitere Informationen finden Sie im Abschnitt [Dienstverfügbarkeit](#availability) weiter oben in diesem Thema. Der Support wird in Zukunft erweitert.
-
-- Behandlung von Antworten von Webdiensten, einschließlich konfigurierbarer Behandlung von Ausnahmemeldungen
-- Unterstützung für elektronische Signaturen (z. B. mithilfe des XMLDSig-Signaturalgorithmus)
-- Stapelverarbeitung von elektronischen Rechnungsnachrichten
-
-## <a name="architecture-and-data-flow"></a>Architektur und Datenfluss
-
-Wenn die elektronische Rechnungsstellung über LCS installiert wird und die erforderliche Einrichtung in allen erforderlichen Anwendungen abgeschlossen ist, wird eine sichere Verbindung hergestellt. Der Dienst befindet sich derzeit in Rechenzentren in den USA und in Europa. Daher kann sich der Standort des Dienstes vom Standort der zugehörigen Instanz von Finance oder Supply Chain Management unterscheiden. Nachdem Sie die Einrichtung der elektronischen Rechnungsstellung abgeschlossen und die Integration aktiviert haben, werden bei jedem Versand einer elektronischen Rechnung Masterdaten und Transaktionsdaten, die sich auf ein bestimmtes Dokument beziehen, an die elektronische Rechnungsstellung gesendet.
-
-> [!NOTE]
-> Wenn Ihre elektronische Rechnung oder ein anderes Dokument persönliche Daten enthält, überprüfen Sie, ob Ihre Verwendung dieser Funktion der Datenschutz-Grundverordnung (DSGVO) und anderen Bestimmungen im Zusammenhang mit der Übermittlung persönlicher Daten entspricht.
-
-### <a name="high-level-description-of-the-data-flow"></a>Übergeordnete Beschreibung des Datenflusses
-
-1. Der Client sendet ein vorschriftsmäßiges Geschäftsdokument an den Dienst.
-2. Basierend auf den Kontextinformationen, die vom Client empfangen werden, wählt der Dienst den entsprechenden Verarbeitungs-Flow aus.
-3. Der Dienst führt die Verarbeitungsaktionen aus. Diese Aktionen können das Transformieren des Geschäftsdokuments in eine elektronische Rechnung, das Anwenden einer elektronischen Signatur und das Übermitteln des Dokuments an einen externen Webdienst umfassen.
-4. Alle empfangenen und verarbeiteten Dokumente werden im Azure Blob-Speicher des Kunden gespeichert.
-5. Alle für die Verarbeitung verwendeten Mandantengeheimnisse und -zertifikate werden im Azure-Schlüsseltresor des Kunden gespeichert.
-6. Der Dienst stellt dem Kunden bei Bedarf Informationen zum Verarbeitungsstatus des gesendeten Geschäftsdokuments zur Verfügung.
-7. Der Client empfängt Informationen über die abgeschlossene Verarbeitung und stellt alle Protokollinformationen zur Verfügung. Außerdem wird das Dokument verfügbar gemacht, das während der Flow-Verarbeitung erstellt oder empfangen wurde.
-
-Die folgende Abbildung zeigt, wie Daten zu und von der elektronischen Rechnungsstellung fließen.
-
-![Datenfluss für die elektronische Rechnungsstellung.](media/e-invoicing-service-data-flow-diagram-overview.png)
+- Behandlung von Antworten aus Webdiensten, einschließlich konfigurierbarer Behandlung von Ausnahmenachrichten
+- Unterstützung für elektronische Signaturen (z.B. elektronische Signaturen, die den XMLDSig-Signieralgorithmus verwenden)
+- Die Funktionalität, Dokumente an E-Mails zu senden und sie in SharePoint zu speichern
+- Batch-Verarbeitung von elektronischen Nachrichten über Rechnungen
+- Konfigurierbare Umwandlung von eingehenden Belegen und Verarbeitung dieser Belege im Finance und Supply Chain Management
+- Die Funktionalitäten für den Empfang eingehender Belege über Kanäle wie E-Mail und SharePoint.
 
 ## <a name="privacy-notice"></a>Datenschutzhinweis
-Für die Aktivierung und Verwendung der elektronischen Rechnungsstellung müssen möglicherweise nur begrenzte Daten gesendet werden, einschließlich der Steuerregistrierungskennung für die Organisation. Diese Daten werden an von den Steuerbehörden autorisierte Drittagenturen weitergeleitet, um elektronische Rechnungen in den für die Integration in den Webdienst der Behörde erforderlichen Formaten zu senden. Daten, die aus diesen externen Systemen in diesen Dynamics 365-Onlinedienst importiert werden, unterliegen unseren [Datenschutzbestimmungen](https://go.microsoft.com/fwlink/?LinkId=512132). Weitere Informationen finden Sie in den Abschnitten zum Datenschutz in der landesspezifischen Funktionsdokumentation.
 
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
-- [Dienstverwaltung](e-invoicing-service-administration.md)
-- [Elektronische Rechnungen in RCS konfigurieren](e-invoicing-configuration-rcs.md)
-- [Elektronische Rechnungen in Finance und Supply Chain Management ausstellen](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
-
+Die Aktivierung und Verwendung der Elektronischen Rechnungsstellung kann die Übermittlung begrenzter Daten erfordern. Zu diesen Daten gehört die Steueridentifikationsnummer der Organisation. Diese Daten werden an Drittanbieter übermittelt, die von den Steuerbehörden autorisiert sind, um elektronische Rechnungen in den vordefinierten Formaten zu versenden, die für die Integration mit staatlichen Webdiensten erforderlich sind. Daten, die aus diesen externen Systemen in diesen Dynamics 365-Online-Service importiert werden, unterliegen unserer [Datenschutzerklärung](https://go.microsoft.com/fwlink/?LinkId=512132). Weitere Informationen finden Sie in den Abschnitten zum Datenschutz in der landes-und regionenspezifischen Funktionsdokumentation.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

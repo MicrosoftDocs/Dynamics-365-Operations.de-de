@@ -2,7 +2,7 @@
 title: Allgemeine Erfassungsverarbeitung
 description: Dieses Thema beschreibt die Funktionen in Microsoft Dynamics 365 Finance, mit denen die allgemeine Erfassung einfacher wird und die auch helfen, sicherzustellen, dass die korrekten Daten erfasst und die internen Kontrollen nicht beeinträchtigt werden.
 author: kweekley
-ms.date: 08/09/2019
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f9f4019618891909e674c6b936f79778ac84744
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: 7096d8576cf124e5e1d814c360d96639f66a742a
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726776"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367879"
 ---
 # <a name="general-journal-processing"></a>Allgemeine Erfassungsverarbeitung
 
@@ -101,7 +101,7 @@ Eine Schaltfläche ist auf der Erfassungsseite verfügbar, um eine fehlerhafte E
 Die Möglichkeit, eine Erfassung in einem Workflow mit dem Status „Nicht Wiederherstellbar“ erneut aufzurufen, wird aktiviert, indem die Schaltfläche **Workflow** auf einer Erfassung und auf der Seite **Workflowhistorie** verwendet wird. Dies wird von der Funktion **Zurücksetzen des Workflowstatus für Erfassungen** auf der Seite **Funktionsverwaltung** aktiviert.
 
 ## <a name="delete-journal-lines"></a>Erfassungspositionen löschen
-Die Möglichkeit, schnell alle Erfassungspositionen zu löschen, wird in einer Erfassung unter **Funktionen** > **Erfassungspositionen löschen** aktiviert. Um diese Funktion zu aktivieren, wählen Sie in der **Funktionsverwaltung** die Option **Erfassungsleistungsoptimierungen löschen** aus.
+Die Möglichkeit, schnell alle Erfassungspositionen zu löschen, wird in einer Erfassung unter **Funktionen** > **Erfassungspositionen löschen** aktiviert. Um diese Funktion zu aktivieren, wählen Sie in der **Funktionsverwaltung** die Option **Erfassungsleistungsoptimierungen löschen** aus. Diese Funktion wirkt sich auf Erweiterungen der Tabelle **LedgerJournalTrans** und deren Methode **Löschen** aus, da die festgelegten Zeilen entfernt werden, ohne die Methode **Löschen** für jede Zeile aufzurufen. 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Übersicht über die Steuerberechnung
 description: In diesem Thema werden der Gesamtumfang und die Funktionen der Steuerberechnung erläutert.
 author: wangchen
-ms.date: 11/17/2021
+ms.date: 03/02/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1dff1767b8e19215a2b27f87c45325e6abd1266e
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: a02767e4a90fa6b7414c796d66e758afe0501cf5
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105436"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388494"
 ---
 # <a name="tax-calculation-overview"></a>Übersicht über die Steuerberechnung
 
@@ -58,6 +58,7 @@ Die Steuerberechnung wird in den folgenden Azure-Regionen bereitgestellt. Weiter
 - Kanada
 - Europa
 - Japan
+- Schweiz
 - Vereinigtes Königreich
 - USA
 
@@ -77,6 +78,7 @@ Wir empfehlen Ihnen, Ihre Steuerberechnungskonfiguration mit der Version zu impo
 | 10.0.23         | Steuerberechnungs-Konfiguration 40.50.221 |
 | 10.0.24         | Steuerberechnungs-Konfiguration 40.50.225 |
 | 10.0.25         | Steuerberechnungs-Konfiguration 40.50.225 |
+| 10.0.26         | Steuerberechnungs-Konfiguration 40.54.234 |
 
 
 ## <a name="data-flow"></a>Datenfluss
@@ -136,6 +138,11 @@ Die folgenden Transaktionen werden in Version 10.0.23 unterstützt:
 
 - Freitextrechnung
 
+Die folgenden Transaktionen werden in Version 10.0.26 unterstützt: 
+
+- Allgemeine Erfassungen
+- Kreditorenrechnungserfassung
+
 ## <a name="supported-countriesregions"></a>Unterstützte Länder/Regionen
 
 Die Steuerberechnung kann für juristische Entitäten aktiviert werden. 
@@ -187,6 +194,12 @@ Die folgenden Länder/Regionen für die Hauptadresse einer juristischen Entität
 Die folgenden Länder/Regionen für die Hauptadresse einer juristischen Entität werden in Version 10.0.24 unterstützt:
 
 - Mexiko
+
+Die folgenden Länder/Regionen für die Hauptadresse einer juristischen Entität werden in Version 10.0.26 unterstützt:
+
+- China
+- Tschechische Republik
+- Spanien
 
 ## <a name="related-resources"></a>Zugehörige Ressourcen
 

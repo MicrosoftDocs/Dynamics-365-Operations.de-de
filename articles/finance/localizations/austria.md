@@ -1,23 +1,23 @@
 ---
 title: Österreich – Übersicht
 description: Dieses Thema bietet eine Übersicht der Dynamics 365 Finance-Funktionen, die für Österreich spezifisch sind.
-author: ShylaThompson
-ms.date: 07/25/2019
+author: kfend
+ms.date: 03/04/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Austria
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: a578b80c763c7d8ad6b9f3939c2cb731d0187118
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 830f08ca4b6e1e69dbf18b87e622024413242312
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983889"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388539"
 ---
 # <a name="austria-overview"></a>Österreich – Übersicht
 
@@ -59,7 +59,7 @@ Weitere Informationen zum neuen Design der MwSt.-Erklärung U30 für Österreich
 |----------------------------|--------------------------|----------------------------------------|
 |Bericht "Grenzüberschreitende Dienstleistungen"|**Hauptbuch** > **Berichte** > **Extern** > **Grenzüberschreitende Dienstleistungen**|Mit diesem Bericht wird eine Zusammenfassung der eingehenden und ausgehenden grenzübergreifenden Dienstleistungen, der Länder, die Anbieter oder Empfänger grenzübergreifender Dienstleistungen sind, sowie Nettobeträge, die für die Dienstleistungen bezahlt werden, gedruckt. Dieser Bericht wird in der Regel von Buchhaltungsleitern, Buchhaltern und Vertriebsleitern verwendet, um sich über den Status von Verkaufstransaktionen zu erkundigen. Weitere Informationen finden Sie unter [Bericht zu grenzüberschreitenden Dienstleistungen](emea-aut-cross-border-services-report.md).|
 |Intrastat-Bericht|**Steuer** > **Meldungen** > **Außenhandel** > **Intrastat**|Sie können die Intrastat-Seite verwenden, um Informationen zum Handel zwischen EU-Ländern/Regionen zu generieren und zu melden. Die österreichische Intrastat-Meldung enthält Informationen über die Inzahlungnahme von Waren zur Meldung. Weitere Informationen finden Sie unter [Österreichisches Intrastat](emea-aut-intrastat.md).|
-
+|EU-Verkaufsliste für Österreich|**Steuern** > **Erklärungen** > **Außenhandel** > **EU-Verkaufsliste**|In diesem Thema finden Sie Informationen über den Bericht zur Verkaufsliste der Europäischen Union (EU), der auf dem Formular U13 basiert. Der Bericht EU-Verkaufsliste Österreich enthält Informationen über den Verkauf von Waren und Dienstleistungen. Weitere Informationen finden Sie unter [EU-Verkaufsliste für Österreich](emea-aut-eu-sales-list.md).|
 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen

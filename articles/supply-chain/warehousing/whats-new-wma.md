@@ -2,7 +2,7 @@
 title: Was ist neu oder geändert in der Warehouse Management Mobile-App
 description: Dieses Thema listet die neuen und geänderten Funktionen für jede freigegebene Version der Warehouse Management Mobile-App für Microsoft Dynamics 365 Supply Chain Management auf.
 author: Mirzaab
-ms.date: 01/18/2022
+ms.date: 02/21/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,51 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ceb327599bb2651a37ac51c3e0fdffc39d20c7f6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b146fb12f89559efcb3b0973b0dd1ce9b98ffe2a
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067250"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384369"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Was ist neu oder geändert in der Warehouse Management Mobile-App
 
 [!include [banner](../includes/banner.md)]
 
 Dieses Thema listet neue Funktionen, Korrekturen, Verbesserungen und bekannte Probleme für jede freigegebene Version der Warehouse Management Mobile-App für Microsoft Dynamics 365 Supply Chain Management auf.
+
+## <a name="version-20170"></a>Version 2.0.17.0
+
+Diese Version führt die folgenden neuen Funktionen, Korrekturen und Verbesserungen ein:
+
+- Es wurde ein Problem behoben, bei dem Barcodes falsch gescannt wurden.
+- Das GS1-Scanproblem für den Kamerascanner wurde behoben.
+- Das GS1-Scanproblem für den Barcode-Scanner auf Zebra-Geräten wurde behoben.
+- Der Flow für Abfragen auf Umwegen wurde verbessert, so dass die Auswahl einer Karte auf einem Umweg nun zum Haupt-Flow zurückkehrt.
+- Unterstützung für einen generischen Flow zur Abfrage von Daten wurde hinzugefügt.
+- Es wurde eine Nachricht hinzugefügt, um die Benutzer über Änderungen des Netzwerkverbindungsstatus zu informieren.
+- Anpassen der Berechtigungen für den Speicher an die Richtlinie zum Datenschutz für den Speicher in Android 10.
+- Für Flows, die dies benötigen, enthält der Mengenregler jetzt eine Position, mit der Benutzer einen leeren numerischen Wert senden können.
+- Probleme mit der Ausrichtung des Mengenreglers wurden behoben.
+- Es wurde ein Problem behoben, bei dem der Mengenregler auf den falschen Wert sprang.
+- Es wurde ein Problem behoben, bei dem die Eingaben auf der Primärseite verloren gingen, wenn sie von der Detailseite aus eingegeben wurden.
+- Es wurde ein Problem behoben, bei dem Platzhaltertext in Auswahllisten als der ursprünglich ausgewählte Wert behandelt wurde.
+- Die Schaltfläche „Senden“ auf den Bestätigungsschritten ist jetzt automatisch aktiviert, wenn es vorausgewählte Werte gibt.
+- Die Detailkarte zeigt jetzt so viele Zeilen wie möglich für Textfelder mit mehreren Zeilen an.
+- Die Höhe der Schaltflächen „Senden“ und „Weitere Aktionen“ wurde korrigiert, so dass sie jetzt weniger Platz auf dem Bildschirm einnehmen.
+- Fehlende Titel für Auswahllisten wurden hinzugefügt.
+- Ein Problem wurde behoben, bei dem die Schaltfläche „Zurück“ nicht funktionierte.
+- Verschiedene Korrekturen und Verbesserungen der Tastaturnavigation wurden hinzugefügt, auch auf den folgenden Seiten:
+  - Anmeldung des Benutzers
+  - Wählen Sie eine Verbindung
+  - Verbindung bearbeiten
+- Das Scrollen bei Verwendung der Tastaturnavigation wurde korrigiert.
+- Verbesserte Barrierefreiheit, einschließlich der folgenden Verbesserungen:
+  - Die Sichtbarkeit und der Kontrast von Farben wurden korrigiert.
+  - Verhinderter Verlust des Tastaturfokus beim Schließen von Popup-Seiten.
+  - Fehlermeldungen in der Erzählung hinzugefügt.
+  - Erhöhen Sie die Größe der Platzhalterwerte im Schrittbanner.
+- Das Beispiel für die angepasste veraltete Seite im Demomodus wurde korrigiert.
 
 ## <a name="version-20150"></a>Version 2.0.15.0
 
@@ -39,12 +72,12 @@ Diese Version führt die folgenden neuen Funktionen, Korrekturen und Verbesserun
 ## <a name="version-20130"></a>Version 2.0.13.0
 
 Diese Version führt die folgenden neuen Funktionen, Korrekturen und Verbesserungen ein:
- 
+
 - Verbessertes Scrollen zwischen Seiten mit flüssigeren Animationen.
 - Kontraintuitive Reaktionen auf Wischbewegungen und gelegentliches Einfrieren des Bildschirms wurden behoben.
 - Verbesserte Text- und Hintergrundfarbkombinationen im Dunkelmodus für eine bessere Lesbarkeit.
 - Es wurde ein Problem behoben, bei dem Text beim Ändern der Größe des App-Fensters sehr klein werden konnte.
-- Es wurde ein Problem behoben, das beim Scannen von Barcodes gelegentlich zum Absturz der App führen konnte.
+- Es wurde ein Problem behoben, bei dem die App beim Scannen von Barcodes manchmal abstürzen konnte.
 - Die Möglichkeit wurde hinzugefügt, einen Schieberegler durch eine Schaltfläche zu ersetzen.
 - Es wurde ein Problem behoben, das dazu führen konnte, dass die App die Fehlermeldung „AADSTS7000215: Ungültiger geheimer Clientschlüssel wurde bereitgestellt“ anzeigte.
 - Die Hinweisanimation, die zeigt, wie eine Seite mit einer Wischgeste nach unten geschlossen wird, wurde korrigiert.
@@ -73,7 +106,7 @@ Diese Version führt die folgenden neuen Funktionen, Korrekturen und Verbesserun
 - Verbesserte Detailkarten.
 - Verbesserte Umleitungen für Menüpunkte.
 - Kleinere Verbesserungen der Benutzeroberfläche.
-- Es wurde ein Problem behoben, das zum Absturz der App beim Scannen von Barcodes führen konnte.
+- Es wurde ein Problem behoben, das beim Scannen von Barcodes zum Absturz der App führen konnte.
 - Verschiedene Probleme behoben, die dazu führen könnten, dass das System nicht mehr reagierte, wurden behoben.
 
 ## <a name="version-20100"></a>Version 2.0.10.0

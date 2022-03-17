@@ -2,231 +2,249 @@
 title: Gewichteter Durchschnitt mit physischem Wert und Markierung
 description: Beim gewichteten Durchschnitt handelt es sich um ein auf dem Prinzip des gewichteten Durchschnitts basierendes Lagermodell. Für dieses Modell werden Abgänge aus dem Bestand mit dem Durchschnittswert der Artikel, die im Rahmen der Lagerabschlussperiode in den Bestand eingehen, sowie des gesamten verfügbaren Bestands der vorangegangenen Periode bewertet.
 author: AndersGirke
-ms.date: 10/25/2017
+ms.date: 02/21/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 65501
-ms.assetid: 25041ff0-bafe-484d-a94a-e1772ad43204
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d94e61384ad2d0880a6d62b963e9a99518a41db1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6c124716b70be837573506a738ef2034397f2bda
+ms.sourcegitcommit: addae271ddfc5a8b0721c23337f69916153db4cd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572000"
+ms.lasthandoff: 02/21/2022
+ms.locfileid: "8330225"
 ---
 # <a name="weighted-average-with-physical-value-and-marking"></a>Gewichteter Durchschnitt mit physischem Wert und Markierung
 
 [!include [banner](../includes/banner.md)]
 
-Beim gewichteten Durchschnitt handelt es sich um ein auf dem Prinzip des gewichteten Durchschnitts basierendes Lagermodell. Für dieses Modell werden Abgänge aus dem Bestand mit dem Durchschnittswert der Artikel, die im Rahmen der Lagerabschlussperiode in den Bestand eingehen, sowie des gesamten verfügbaren Bestands der vorangegangenen Periode bewertet.
+Der gewichtete Durchschnitt ist ein Bestandsmodell, das auf einem Durchschnitt basiert, der sich aus der Multiplikation jeder Komponente (Element-Transaktion) mit einem Faktor (Einstandspreis) ergibt, der ihre Bedeutung (Menge) widerspiegelt. Eine andere Möglichkeit, dies zu sagen, ist, dass der gewichtete Durchschnitt ein Bestandsmodell ist, das die Kosten für Ausgabetransaktionen auf der Grundlage des Mittelwerts aller während der Periode eingegangenen Bestände zuzüglich aller Lagerbestände aus der Vorperiode zuweist.
 
-Beim Ausführen eines Lagerabschlusses werden alle Zugänge anhand eines virtuellen Abgangs ausgeglichen, der die Gesamtmenge sowie den Gesamtwert der Zugänge enthält. Für diesen virtuellen Abgang ist auch ein entsprechender virtueller Zugang vorhanden, von dem aus die Abgänge ausgeglichen werden. Auf diese Weise erhalten alle Abgänge die gleichen Durchschnittskosten. Der virtuelle Abgang sowie der virtuelle Zugang können als virtueller Übertrag (als Lagerabschlussübertrag mit gewichtetem Durchschnitt bezeichnet) gesehen werden.
+Wenn Sie einen Bestandsabschluss nach dem Modell des gewichteten Durchschnittsbestands ausführen, gibt es zwei Möglichkeiten, eine Abrechnung zu erstellen. Normalerweise werden alle Eingänge mit einer virtuellen Ausgabe verrechnet, die die gesamte eingegangene Menge und den Wert enthält. Für diesen virtuellen Abgang ist auch ein entsprechender virtueller Zugang vorhanden, von dem aus die Abgänge ausgeglichen werden. Auf diese Weise erhalten alle Abgänge die gleichen Durchschnittskosten. Der virtuelle Warenausgang und -eingang ist als virtuelle Übertragung zu sehen, die *Gewichteter durchschnittlicher Bestand Abschlussübertragung* genannt wird. Diese Abrechnungsmethode wird als *Gewichteter Durchschnitt zusammengefasste Abrechnung* bezeichnet. Ist lediglich ein Zugang vorhanden, können alle Abgänge anhand dieses Zugangs ausgeglichen werden, und es wird kein virtueller Übertrag erstellt. Diese Abrechnungsmethode wird als *direkte Abrechnung* bezeichnet. Jeder Bestand, der nach dem Abschluss der Inventur vorhanden ist, wird mit dem gewichteten Durchschnitt der Vorperiode bewertet und in der nächsten Periode in die Berechnung des gewichteten Durchschnitts einbezogen.
 
-Ist lediglich ein Zugang vorhanden, können alle Abgänge anhand dieses Zugangs ausgeglichen werden, und es wird kein virtueller Übertrag erstellt. 
-
-Bei Verwendung des gewichteten Durchschnitts können Lagerbuchungen markiert werden, damit ein bestimmter Artikelzugang mit einem bestimmten Abgang ausgeglichen und nicht die Regel für den gewichteten Durchschnitt verwendet wird. 
-
-Wenn Sie den gewichteten Durchschnitt verwenden, empfiehlt es sich, einen monatlichen Lagerabschluss durchzuführen. 
+Sie können das Prinzip des gewichteten Durchschnitts außer Kraft setzen, indem Sie Transaktionen im Bestand so markieren, dass ein bestimmter Wareneingang mit einem bestimmten Warenausgang verrechnet wird. Ein periodischer Bestandsabschluss ist erforderlich, wenn Sie das Modell des gewichteten Durchschnittsbestands verwenden, um Abrechnungen zu erstellen und den Wert von Ausgaben nach dem Prinzip des gewichteten Durchschnitts anzupassen. Bis Sie den Bestandsabschlussprozess ausführen, werden Ausgabetransaktionen zum laufenden Durchschnitt bewertet, wenn die physischen und finanziellen Aktualisierungen erfolgt sind. Sofern Sie nicht die Markierung verwenden, wird der laufende Durchschnitt berechnet, wenn die physische oder finanzielle Aktualisierung ausgeführt wird.
 
 Die Lagernachkalkulationsmethode für den gewichteten Durchschnitt wird nach folgender Formel berechnet:
--   Gewichteter Durchschnitt = (M1\*P1 + M2\*P2 + Mn\*Pn) / (M1 + M2 + Mn)
 
-Lagerbuchungen, die die Lagerabgänge auslösen, z. B. Aufträge, Lagererfassungen, Einkaufsgutschriften und Produktionsaufträge, werden zu einem vorkalkulierten Einstandspreis zum Buchungsdatum ausgeführt. Dieser vorkalkulierte Einstandspreis wird auch als laufender Durchschnitt bezeichnet. Zum Zeitpunkt des Lagerabschlusses werden die Lagerbuchungen vom System für vorangegangene sowie für aktuelle Perioden analysiert, um zu bestimmen, welches der folgenden Abschlussprinzipien verwendet werden soll:
--   Direkter Ausgleich
--   Zusammengefasster Ausgleich
+- Gewichteter Durchschnitt = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) ÷ (Q1 + Q2 + Q *n*)
+
+Q = Menge der Transaktion  
+P = Preis der Transaktion
 
 Bei einem Ausgleich handelt es sich um eine Lagerabschlussbuchung zur Anpassung der Abgänge an den korrekten gewichteten Durchschnitt des Abschlussdatums. In den folgenden Beispielen werden die Auswirkungen der Verwendung des gewichteten Durchschnitts anhand von fünf unterschiedlichen Konfigurationen veranschaulicht:
--   Direkter Ausgleich mit gewichtetem Durchschnitt ohne Option "Physischen Wert einbeziehen"
--   Zusammengefasster Ausgleich mit gewichtetem Durchschnitt ohne die Option "Physischen Wert einbeziehen"
--   Direkter Ausgleich mit gewichtetem Durchschnitt und der Option "Physischen Wert einbeziehen"
--   Zusammengefasster Ausgleich mit gewichtetem Durchschnitt und der Option "Physischen Wert einbeziehen"
--   Gewichteter Durchschnitt mit Markierung
+
+- Gewichtete durchschnittliche Direktabrechnung ohne die Option **Physikalischen Wert einbeziehen**
+- Gewichteter Durchschnitt zusammengefasste Abrechnung ohne die Option **Physikalischen Wert einbeziehen**.
+- Gewichtete durchschnittliche Direktabrechnung mit der Option **Physikalischen Wert einbeziehen**
+- Gewichtete durchschnittliche zusammengefasste Abrechnung mit der Option **Physikalischen Wert einbeziehen**
+- Gewichteter Durchschnitt mit Markierung
 
 ## <a name="weighted-average-direct-settlement-without-include-physical-value"></a>Direkter Ausgleich mit gewichtetem Durchschnitt ohne "Physischen Wert einbeziehen"
-Das Prinzip des direkten Ausgleichs ist das gleiche, das auch in früheren Versionen für den gewichteten Durchschnitt verwendet wurde. Der Ausgleich erfolgt direkt zwischen Zugängen und Abgängen. Das System nutzt das Prinzip des direkten Ausgleichs in bestimmten Situationen:
--   In der Periode wurden ein Zugang und mindestens ein Abgang gebucht.
--   In der Periode wurden ausschließlich Abgänge gebucht, und das Lager enthält verfügbare Artikel aus einem früheren Abschluss.
 
-Im Szenario in den folgenden Abschnitten wurden ein wertmäßig aktualisierter Zugang sowie ein wertmäßig aktualisierter Abgang gebucht. Beim Lagerabschluss wird der Zugang durch das System direkt mit dem Abgang ausgeglichen, und für den Abgang ist keine Regulierung des Einstandspreises erforderlich. In der Grafik werden die folgenden Buchungen veranschaulicht.
--   1a. Physische Aktualisierung des Lagerzugangs für die Menge "5" zu jeweils EUR 10,00.
--   1b. Wertmäßige Aktualisierung des Lagerzugangs für die Menge "5" zu jeweils EUR 10,00.
--   2a. Physische Aktualisierung des Lagerabgangs für die Menge "2" zu jeweils EUR 10,00.
--   2b. Wertmäßige Aktualisierung des Lagerabgangs für die Menge "2" zu jeweils EUR 10,00.
--   3. Der Lagerabschluss erfolgt unter Verwendung der Methode für den direkten Ausgleich, um den wertmäßigen Lagerzugang mit dem wertmäßigen Lagerabgang auszugleichen.
+Das Prinzip der direkten Abrechnung erstellt Abrechnungen direkt zwischen Zu- und Abgängen, ohne zusätzliche Transaktionen im Bestand zu erstellen. Das System verwendet dieses Prinzip der direkten Abrechnung in den folgenden Situationen:
 
-Das folgende Diagramm gibt Aufschluss über diese Reihe von Buchungen sowie über die Auswirkungen der Auswahl des Lagermodells für den gewichteten Durchschnitt und des Prinzips des direkten Ausgleichs ohne die Option "Physischen Wert einbeziehen": 
+- Ein Beleg und eine oder mehrere Ausgaben wurden in der Periode gebucht.
+- Nur Ausgaben wurden in der Periode gebucht und der Bestand enthält Lagerbestände aus einem früheren Abschluss.
 
-![WeightedAverage – Direkter Ausgleich ohne Einbeziehung des physischen Werts.](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
+In diesem Beispiel ist das Kontrollkästchen **Physikalischen Wert einbeziehen** auf der **Elementmodellgruppe** für das zugelassene Produkt deaktiviert. Die folgende Abbildung zeigt diese Buchungen an:
+
+- 1a. Physischer Lagerzugang für die Menge "10" zu jeweils EUR 10,00 (Kosten).
+- 1b. Wertmäßiger Lagerzugang für die Menge "10" zu jeweils EUR 10,00 (Kosten).
+- 2a. Physischer Lagerzugang für die Menge "10" zu jeweils EUR 20,00 (Kosten).
+- 3a. Physischer Bestandsabgang für eine Menge von 1 zu einem Einstandspreis von USD 10,00 (laufender Durchschnitt der finanziell gebuchten Transaktionen).
+- 3b. Bestandsfinanzausgang für eine Menge von 1 zu einem Einstandspreis von USD 10,00 (laufender Durchschnitt der finanziell gebuchten Transaktionen).
+- 4a. Physischer Bestandsabgang für eine Menge von 1 zu Kosten von jeweils USD 10,00 (laufender Durchschnitt der finanziell gebuchten Transaktionen).
+- 4b. Finanzielle Bestandsausgabe für eine Menge von 1 zu einer Kalkulation von jeweils USD 10,00 (laufender Durchschnitt der finanziell gebuchten Transaktionen).
+- 5a. Physischer Bestandsabgang für eine Menge von 1 zu Kosten von jeweils USD 10,00 (laufender Durchschnitt der finanziell gebuchten Transaktionen).
+- 6\. Lagerabschluss wird vorgenommen. Basierend auf der Methode des gewichteten Durchschnitts verwendet das System die Methode der direkten Abrechnung, da nur ein Beleg in der Periode finanziell fortgeschrieben wird. In diesem Beispiel wird eine Abrechnung zwischen 1b und 3b erstellt, eine weitere zwischen 1b und 4b. Es wird keine Anpassung vorgenommen, da der laufende Durchschnitt gleich dem gewichteten Durchschnitt ist.
+
+Das folgende Diagramm veranschaulicht diese Reihe von Transaktionen mit den Auswirkungen der Wahl des Modells des gewichteten Durchschnittsbestands und des Prinzips der direkten Abrechnung ohne die Option **Physikalischen Wert einbeziehen**.
+
+![WeightedAverage DS ohne Include physical value.](media/weighted-average-direct-settlement-without-include-physical-value.png)
 
 **Diagrammschlüssel**
+
 - Lagerbuchungen sind durch vertikale Pfeile dargestellt.
-- Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
-- Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
-- Über (oder unter) den einzelnen vertikalen Pfeilen ist im Format Menge@Einheitenpreis der Wert der Lagerbuchung angegeben.
-- Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
-- Ein Lagerbuchungswert ohne Klammer weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
+- Physische Transaktionen werden durch kürzere hellgraue Pfeile dargestellt.
+- Finanzielle Transaktionen werden durch längere schwarze Pfeile dargestellt.
+- Eingänge in den Bestand werden durch vertikale Pfeile oberhalb der Achse dargestellt.
+- Ausgaben, die nicht im Bestand sind, werden durch vertikale Pfeile unterhalb der Achse dargestellt.
 - Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
-- Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Sequenz der Lagerbuchungen auf der Zeitachse angegeben.
-- Lagerabschlüsse sind durch eine vertikale rote gestrichelte Linie und die Beschriftung "Lagerabschluss" gekennzeichnet.
-- Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch einen roten gepunkteten Pfeil dargestellt, der diagonal von einem Zugang zu einem Abgang verläuft.
+- Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Reihenfolge der Lagerbuchungen auf der Zeitachse angegeben.
+- Jedes Datum im Diagramm ist durch eine dünne schwarze vertikale Linie getrennt. Das Datum ist am unteren Rand des Diagramms vermerkt.
+- Bestandsabschlüsse werden durch eine rote vertikale gestrichelte Zeile dargestellt.
+- Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch rote diagonale gestrichelte Pfeile dargestellt, die von einem Zugang zu einem Abgang verlaufen.
 
 ## <a name="weighted-average-summarized-settlement-without-the-include-physical-value-option"></a>Zusammengefasster Ausgleich mit gewichtetem Durchschnitt ohne die Option "Physischen Wert einbeziehen"
-Beim gewichteten Durchschnitt wird ein Ausgleichsprinzip verwendet, bei dem alle Zugänge innerhalb einer Abschlussperiode in einer neuen Buchung mit der Bezeichnung Lagerabschluss mit gewichtetem Durchschnitt zusammengefasst werden. Alle Zugänge der Periode werden mit dem Abgang der neu erstellten Umlagerungsbuchung ausgeglichen. Alle Abgänge der Periode werden mit dem Zugang der neu erstellten Umlagerungsbuchung ausgeglichen. Ist der verfügbare Bestand nach dem Lagerabschluss positiv, werden der verfügbare Bestand sowie der Wert des Lagers in der neuen Umlagerungsbuchung (Zugang) zusammengefasst. Ist der verfügbare Bestand nach dem Lagerabschluss negativ, handelt es sich bei dem verfügbaren Bestand und dem Wert des Lagers um die Summe der einzelnen Abgänge, die noch nicht vollständig ausgeglichen wurden. Im folgenden Szenario wurden mehrere wertmäßig aktualisierte Zugänge sowie ein Abgang gebucht: 
 
-Während des Lagerabschlusses wird vom System die zusammengefasste Umlagerungsbuchung generiert und gebucht, und alle Zugänge der Periode werden mit der zusammengefassten Umlagerungsabgangsbuchung ausgeglichen. Alle für die Periode gebuchten Abgänge werden mit der zusammengefassten Umlagerungszugangsbuchung ausgeglichen. Der gewichtete Durchschnitt wird mit EUR 15,00 berechnet. Der Abgang wurde ursprünglich mit einem vorkalkulierten Einstandspreis von EUR 14,67 gebucht. Daher wird für diesen Abgang eine negative Regulierung in Höhe von EUR 0,33 erstellt und gebucht. Zum Lagerabschlussdatum besitzt der verfügbare Bestand die Menge "3" mit einem Wert von EUR 45,00. 
+Wenn es mehrere Eingänge in einer Periode gibt, verwendet der gewichtete Durchschnitt das Prinzip der zusammengefassten Abrechnung, bei dem alle Eingänge innerhalb einer Abschlussperiode in einer Transaktion namens *gewichteter durchschnittlicher Bestand Abschluss* zusammengefasst werden. Alle Eingänge für den Zeitraum werden mit der Ausgabe der neu erstellten Bestandstransaktion verrechnet. Alle Ausgaben für die Periode werden mit dem Eingang der neuen Transaktion für den Bestand verrechnet. Wenn nach dem Inventarabschluss noch ein Lagerbestand vorhanden ist, wird dieser in die Eingangstransaktion der gewichteten durchschnittlichen Inventarabschluss-Transaktionen aufgenommen.
 
-In der Grafik weiter unten werden die folgenden Buchungen veranschaulicht:
--   1a. Physische Aktualisierung des Lagerzugangs für die Menge "2" zu jeweils EUR 11,00 (Kosten).
--   1b. Wertmäßige Aktualisierung des Lagerzugangs für die Menge "2" zu jeweils EUR 14,00 (Kosten).
--   2a. Physische Aktualisierung des Lagerzugangs für die Menge "1" zu jeweils EUR 12,00 (Kosten).
--   2b. Wertmäßige Aktualisierung des Lagerzugangs für die Menge "1" zu jeweils EUR 16,00 (Kosten).
--   3a. Physische Aktualisierung des Lagerabgangs für die Menge "1" zu jeweils EUR 14,67 (laufender Durchschnitt).
--   3b. Wertmäßige Aktualisierung des Lagerabgangs für die Menge "1" zu jeweils EUR 14,67 (laufender Durchschnitt).
--   4a. Physische Aktualisierung des Lagerzugangs für die Menge "1" zu jeweils EUR 14,00 (Kosten).
--   4b. Wertmäßige Aktualisierung des Lagerzugangs für die Menge "1" zu jeweils EUR 16,00 (Kosten).
--   5. Lagerabschluss wird vorgenommen.
--   6a. Wertmäßiger Abgang vom Typ "Lagerabschlussbuchung mit gewichtetem Durchschnitt" wird erstellt, um die Ausgleiche aller wertmäßigen Lagerzugänge zu summieren.
--   6b. Wertmäßiger Zugang vom Typ "Lagerabschlussbuchung mit gewichtetem Durchschnitt" wird zum Ausgleich von 5a erstellt.
+Die folgenden Transaktionen sind in der folgenden Grafik dargestellt:
 
-Das folgende Diagramm gibt Aufschluss über diese Reihe von Buchungen sowie über die Auswirkungen der Auswahl des Lagermodells für den gewichteten Durchschnitt und des Prinzips des zusammengefassten Ausgleichs ohne die Option "Physischen Wert einbeziehen": 
+- 1a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 10,00 (Kosten).
+- 1b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 10,00 (Kosten).
+- 2a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 20,00 (Kosten).
+- 2b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 22,00 (Kosten).
+- 3a. Physischer Bestandsabgang für eine Menge von 1 zu einem Einstandspreis von USD 16,00 (laufender Durchschnitt der finanziell gebuchten Transaktionen).
+- 3b. Bestandsfinanzausgang für eine Menge von 1 zu einem Einstandspreis von USD 16,00 (laufender Durchschnitt der finanziell gebuchten Transaktionen).
+- 4a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 25,00 (Kosten).
+- 5a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 30,00 (Kosten).
+- 5b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 30,00 (Kosten).
+- 6a. Physischer Bestandsabgang für eine Menge von 1 zu einem Einstandspreis von USD 23,00 (laufender Durchschnitt der finanziell gebuchten Transaktionen).
+- 7\. Lagerabschluss wird vorgenommen.
+- 7a. Der gewichtete durchschnittliche Finanzausgang der Transaktion zum Abschluss des Bestands wird erstellt, um die Abrechnungen aller finanziellen Eingänge des Bestands zu summieren.
+  - Transaktion 1b wird für eine Menge von 1 mit einem Betrag von USD 10,00 abgerechnet.
+  - Transaktion 2b wird für eine Menge von 1 mit einem Abrechnungsbetrag von USD 22,00 abgerechnet.
+  - Transaktion 5b wird für eine Menge von 1 mit einem Abrechnungsbetrag von USD 30,00 abgerechnet.
+  - Transaktion 7a. wird für eine Menge von 3 mit einem beglichenen Betrag von USD 62,00 erstellt. Diese Transaktion gleicht die Summe der drei Eingangstransaktionen aus, die in der Periode finanziell fortgeschrieben werden.
+- 7b. Der gewichtete durchschnittliche finanzielle Eingang der Transaktion zum Bestandsabschluss wird als Ausgleich für die finanziell gebuchten Ausgaben erstellt.
+  - Die Transaktion 3b wird für eine Menge von 1 mit einem Abrechnungsbetrag von USD 20,67 abgerechnet. Diese Transaktion wird um USD 4,67 korrigiert, um den ursprünglichen Wert von USD 16,00 auf 20,67 zu bringen, was dem gewichteten Durchschnitt der finanziell gebuchten Transaktionen für den Zeitraum entspricht.
+  - Transaktion 7b. wird für eine Menge von 1 mit einem Rechnungsbetrag von USD 20,67 erstellt, um 3b auszugleichen. Diese Transaktion gleicht die Summe der einen Emissionstransaktion aus, die in der Periode finanziell verbucht wird.
 
-![Gewichteter Durchschnitt – Zusammengefasster Ausgleich ohne Einbeziehung des physischen Werts.](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
+Das folgende Diagramm veranschaulicht diese Reihe von Transaktionen mit den Auswirkungen der Wahl des Modells des gewichteten Durchschnittsbestands und des Prinzips der summarischen Abrechnung ohne die Option **Physikalischen Wert einbeziehen**.
+
+![Gewichteter Durchschnitt SS ohne Einbeziehung des physischen Wertes.](media/weighted-average-summarized-settlement-without-include-physical-value.png)
 
 **Diagrammschlüssel**
+
 - Lagerbuchungen sind durch vertikale Pfeile dargestellt.
-- Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
-- Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
-- Über (oder unter) den einzelnen vertikalen Pfeilen ist im Format Menge@Einheitenpreis der Wert der Lagerbuchung angegeben.
-- Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
-- Ein Lagerbuchungswert ohne Klammer weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
+- Physische Transaktionen werden durch kürzere hellgraue Pfeile dargestellt.
+- Finanzielle Transaktionen werden durch längere schwarze Pfeile dargestellt.
+- Eingänge in den Bestand werden durch vertikale Pfeile oberhalb der Achse dargestellt.
+- Ausgaben, die nicht im Bestand sind, werden durch vertikale Pfeile unterhalb der Achse dargestellt.
 - Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
-- Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Sequenz der Lagerbuchungen auf der Zeitachse angegeben.
-- Lagerabschlüsse sind durch eine vertikale rote gestrichelte Linie und die Beschriftung "Lagerabschluss" gekennzeichnet.
-- Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch einen roten gepunkteten Pfeil dargestellt, der diagonal von einem Zugang zu einem Abgang verläuft.
-- Rote Pfeile stehen für die Zugangsbuchungen, die mit der vom System erstellten Abgangsbuchung ausgeglichen werden.
-- Der grüne Pfeil steht für die vom System generierte Zugangsgegenbuchung, mit der die ursprünglich gebuchte Abgangsbuchung ausgeglichen wird.
+- Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Reihenfolge der Lagerbuchungen auf der Zeitachse angegeben.
+- Jedes Datum im Diagramm ist durch eine dünne schwarze vertikale Linie getrennt. Das Datum ist am unteren Rand des Diagramms vermerkt.
+- Bestandsabschlüsse werden durch eine rote vertikale gestrichelte Zeile dargestellt.
+- Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch rote diagonale gestrichelte Pfeile dargestellt, die von einem Zugang zu einem Abgang verlaufen.
 
 ## <a name="weighted-average-direct-settlement-with-the-include-physical-value-option"></a>Direkter Ausgleich mit gewichtetem Durchschnitt und der Option "Physischen Wert einbeziehen"
-Die Verwendung des Parameters "Physischen Wert einbeziehen" für den gewichteten Durchschnitt unterscheidet sich von der Funktionsweise in früheren Versionen. Wählen Sie das Feld "Physischen Wert einbeziehen" für einen Artikel im Formular "Lagersteuerungsgruppe" aus. Vom System werden zur Berechnung des vorkalkulierten Einstandspreises (oder des laufenden Durchschnitts) physisch aktualisierte Zugänge verwendet. Die Buchung der Abgänge während der Periode erfolgt auf Basis dieses vorkalkulierten Einstandspreises. Beim Lagerabschluss werden wertmäßig aktualisierte Zugänge ausschließlich in der Berechnung des gewichteten Durchschnitts berücksichtigt. Wenn Sie den gewichteten Durchschnitt verwenden, empfiehlt es sich, einen monatlichen Lagerabschluss durchzuführen. In diesem Beispiel für einen direkten Ausgleich mit gewichtetem Durchschnitt ist die Artikelmodellgruppe so konfiguriert, dass der physische Wert einbezogen wird. 
 
-In der Grafik weiter unten werden die folgenden Buchungen veranschaulicht:
--   1a. Physische Aktualisierung des Lagerzugangs für die Menge "1" zu jeweils EUR 11.00 (Kosten).
--   1b. Wertmäßige Aktualisierung des Lagerzugangs für die Menge "1" zu jeweils EUR 10.00 (Kosten).
--   2a. Physische Aktualisierung des Lagerzugangs für die Menge "1" zu jeweils EUR 15.00 (Kosten).
--   3a. Physische Aktualisierung des Lagerabgangs für die Menge "1" zu jeweils EUR 12,50 (laufende Durchschnittskosten, da der physische Zugangswert berücksichtigt wird).
--   3b. Wertmäßige Aktualisierung des Lagerabgangs für die Menge "1" zu jeweils EUR 12,50 (laufende Durchschnittskosten, da der physische Zugangswert berücksichtigt wird).
--   4. Lagerabschluss wird vorgenommen. Beim Lagerabschluss werden vom System alle Lagerbuchungen ignoriert, die lediglich physisch aktualisiert wurden. Stattdessen kommt das Prinzip des direkten Ausgleichs zum Einsatz, da lediglich ein wertmäßiger Zugang vorhanden ist. Für die Lagerbuchung, bei der bis zum Lagerabschluss ein wertmäßiger Abgang vorliegt, erfolgt eine Regulierung in Höhe von EUR 2,50. Nach dem Lagerabschluss besitzt der verfügbare Bestand die Menge "1" und einen laufenden Durchschnittseinstandspreis von EUR 15,00.
+Der Parameter **Physikalischen Wert einbeziehen** funktioniert mit dem Modell für den gewichteten durchschnittlichen Bestand anders als in früheren Versionen des Produkts. Wenn Sie die Option **Physikalischen Wert einbeziehen** für ein Element im Formular **Elementmodellgruppe** wählen, verwendet das System bei der Berechnung des geschätzten Ausgabepreises oder des laufenden Durchschnitts physisch aktualisierte Belege. Die Buchung der Abgänge während der Periode erfolgt auf Basis dieses vorkalkulierten Einstandspreises. Beim Lagerabschluss werden wertmäßig aktualisierte Zugänge ausschließlich in der Berechnung des gewichteten Durchschnitts berücksichtigt.
 
-Das folgende Diagramm gibt Aufschluss über diese Reihe von Buchungen sowie über die Auswirkungen der Auswahl des Lagermodells für den gewichteten Durchschnitt und des Prinzips des direkten Ausgleichs mit der Option "Physischen Wert einbeziehen": 
+Die folgenden Transaktionen sind in der folgenden Grafik dargestellt:
 
-![Gewichteter Durchschnitt – Direkter Ausgleich mit Einbeziehung des physischen Werts.](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
+- 1a. Physischer Lagerzugang für die Menge "10" zu jeweils EUR 10,00 (Kosten).
+- 1b. Wertmäßiger Lagerzugang für die Menge "10" zu jeweils EUR 10,00 (Kosten).
+- 2a. Physischer Lagerzugang für die Menge "10" zu jeweils EUR 20,00 (Kosten).
+- 3a. Inventarabgang für eine Menge von 1 zu einem Einstandspreis von USD 15,00 (laufender Durchschnitt der physisch und finanziell gebuchten Transaktionen).
+- 3b. Finanzieller Bestandsabgang für eine Menge von 1 zu einem Einstandspreis von USD 15,00 (laufender Durchschnitt der physisch und finanziell gebuchten Transaktionen).
+- 4a. Physischer Bestandsabgang für eine Menge von 1 zu Kosten von jeweils USD 15,00 (laufender Durchschnitt der physisch und finanziell gebuchten Transaktionen).
+- 4b. Finanzieller Bestandsabgang für eine Menge von 1 zu einem Preis von jeweils USD 15,00 (laufender Durchschnitt der physisch und finanziell gebuchten Transaktionen).
+- 5a. Physischer Bestandsabgang für eine Menge von 1 zu Kosten von jeweils USD 15,00 (laufender Durchschnitt der physisch und finanziell gebuchten Transaktionen).
+- 6\. Lagerabschluss wird vorgenommen. Basierend auf der Methode des gewichteten Durchschnitts verwendet das System die Methode der direkten Abrechnung, da nur ein Beleg in der Periode finanziell fortgeschrieben wird. In diesem Beispiel wird eine Abrechnung zwischen 1b und 3b erstellt, eine weitere zwischen 1b und 4b. Die Transaktionen 3b und 4b werden jeweils um USD -5,00 korrigiert, um den Wert auf USD 10,00 zu bringen.
+
+Das folgende Diagramm veranschaulicht diese Reihe von Transaktionen mit den Auswirkungen der Wahl des Modells für den gewichteten durchschnittlichen Bestand und des Prinzips der direkten Abrechnung mit der Option **Physikalischen Wert einbeziehen**.
+
+![Gewichteter Durchschnitt DS mit Include physical value.](media/weighted-average-direct-settlement-with-include-physical-value.png)
 
 **Diagrammschlüssel**
+
 - Lagerbuchungen sind durch vertikale Pfeile dargestellt.
-- Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
-- Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
-- Über (oder unter) den einzelnen vertikalen Pfeilen ist im Format Menge@Einheitenpreis der Wert der Lagerbuchung angegeben.
-- Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
-- Ein Lagerbuchungswert ohne Klammer weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
+- Physische Transaktionen werden durch kürzere hellgraue Pfeile dargestellt.
+- Finanzielle Transaktionen werden durch längere schwarze Pfeile dargestellt.
+- Eingänge in den Bestand werden durch vertikale Pfeile oberhalb der Achse dargestellt.
+- Ausgaben, die nicht im Bestand sind, werden durch vertikale Pfeile unterhalb der Achse dargestellt.
 - Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
-- Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Sequenz der Lagerbuchungen auf der Zeitachse angegeben.
-- Lagerabschlüsse sind durch eine vertikale rote gestrichelte Linie und die Beschriftung "Lagerabschluss" gekennzeichnet.
-- Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch einen roten gepunkteten Pfeil dargestellt, der diagonal von einem Zugang zu einem Abgang verläuft.
+- Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Reihenfolge der Lagerbuchungen auf der Zeitachse angegeben.
+- Jedes Datum im Diagramm ist durch eine dünne schwarze vertikale Linie getrennt. Das Datum ist am unteren Rand des Diagramms vermerkt.
+- Bestandsabschlüsse werden durch eine rote vertikale gestrichelte Zeile dargestellt.
+- Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch rote diagonale gestrichelte Pfeile dargestellt, die von einem Zugang zu einem Abgang verlaufen.
 
 ## <a name="weighted-average-summarized-settlement-with-the-include-physical-value-option"></a>Zusammengefasster Ausgleich mit gewichtetem Durchschnitt und der Option "Physischen Wert einbeziehen"
-Die Verwendung des Parameters "Physischen Wert einbeziehen" für den gewichteten Durchschnitt unterscheidet sich von der Funktionsweise in früheren Versionen. Wählen Sie das Feld "Physischen Wert einbeziehen" für einen Artikel auf der Seite "Lagersteuerungsgruppe" aus. Vom System werden zur Berechnung des vorkalkulierten Einstandspreises (oder des laufenden Durchschnitts) physisch aktualisierte Zugänge verwendet. Die Buchung der Abgänge während der Periode erfolgt auf Basis dieses vorkalkulierten Einstandspreises. Beim Lagerabschluss werden wertmäßig aktualisierte Zugänge ausschließlich in der Berechnung des gewichteten Durchschnitts berücksichtigt. Wenn Sie den gewichteten Durchschnitt verwenden, empfiehlt es sich, einen monatlichen Lagerabschluss durchzuführen. In diesem Beispiel für einen zusammengefassten Ausgleich mit gewichtetem Durchschnitt ist die Lagersteuerungsgruppe so konfiguriert, dass der physische Wert einbezogen wird. 
 
-In der Grafik weiter unten werden die folgenden Buchungen veranschaulicht:
--   1a. Physische Aktualisierung des Lagerzugangs für die Menge "2" zu jeweils EUR 11,00 (Kosten).
--   1b. Wertmäßige Aktualisierung des Lagerzugangs für die Menge "2" zu jeweils EUR 14,00 (Kosten).
--   2. Physische Aktualisierung des Lagerzugangs für die Menge "1" zu jeweils EUR 10,00 (Kosten).
--   3a. Physische Aktualisierung des Lagerzugangs für die Menge "1" zu jeweils EUR 12,00 (Kosten).
--   3b. Wertmäßige Aktualisierung des Lagerzugangs für die Menge "1" zu jeweils EUR 16,00 (Kosten).
--   4a. Physische Aktualisierung des Lagerabgangs für die Menge "1" zu jeweils EUR 13,50 (laufende Durchschnittskosten, da der physische Zugangswert berücksichtigt wird).
--   4b. Wertmäßige Aktualisierung des Lagerabgangs für die Menge "1" zu jeweils EUR 13,50 (laufende Durchschnittskosten, da der physische Zugangswert berücksichtigt wird).
--   5a. Physische Aktualisierung des Lagerzugangs für die Menge "1" zu jeweils EUR 14,00 (Kosten).
--   5b. Wertmäßige Aktualisierung des Lagerzugangs für die Menge "1" zu jeweils EUR 16,00 (Kosten).
--   6. Lagerabschluss wird vorgenommen. Beim Lagerabschluss werden vom System alle Lagerbuchungen ignoriert, die lediglich physisch aktualisiert wurden. Das Prinzip des direkten Ausgleichs kommt zum Einsatz, da lediglich ein wertmäßiger Zugang vorhanden ist. Für die Lagerbuchung, bei der bis zum Lagerabschluss ein wertmäßiger Abgang vorliegt, erfolgt eine Regulierung in Höhe von EUR 1,50. Nach dem Lagerabschluss besitzt der verfügbare Bestand die Menge "3" und einen laufenden Durchschnittseinstandspreis von EUR 15,00.
--   7a. Wertmäßiger Abgang vom Typ "Lagerabschlussbuchung mit gewichtetem Durchschnitt" wird erstellt, um die Ausgleiche aller wertmäßigen Lagerzugänge zu summieren.
--   7b. Wertmäßiger Zugang vom Typ "Lagerabschlussbuchung mit gewichtetem Durchschnitt" wird zum Ausgleich von 5a erstellt.
+Der Parameter **Physikalischen Wert einbeziehen** funktioniert mit gewichtetem Durchschnitt anders als in früheren Versionen. Markieren Sie das Kontrollkästchen **Physikalischen Wert einbeziehen** für ein Element auf der Seite **Elementmodellgruppe**. Vom System werden zur Berechnung des vorkalkulierten Einstandspreises (oder des laufenden Durchschnitts) physisch aktualisierte Zugänge verwendet. Die Buchung der Abgänge während der Periode erfolgt auf Basis dieses vorkalkulierten Einstandspreises. Beim Lagerabschluss werden wertmäßig aktualisierte Zugänge ausschließlich in der Berechnung des gewichteten Durchschnitts berücksichtigt. Wenn Sie den gewichteten Durchschnitt verwenden, empfiehlt es sich, einen monatlichen Lagerabschluss durchzuführen. In diesem Beispiel für einen zusammengefassten Ausgleich mit gewichtetem Durchschnitt ist die Lagersteuerungsgruppe so konfiguriert, dass der physische Wert einbezogen wird.
 
-Das folgende Diagramm gibt Aufschluss über diese Reihe von Buchungen sowie über die Auswirkungen der Auswahl des Lagermodells für den gewichteten Durchschnitt und des Prinzips des zusammengefassten Ausgleichs ohne die Option "Physischen Wert einbeziehen": 
+Die folgenden Transaktionen sind in der folgenden Grafik dargestellt:
 
-![WeightedAverage – Zusammengefasster Ausgleich mit Einbeziehung des physischen Werts.](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
+- 1a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 10,00 (Kosten).
+- 1b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 10,00 (Kosten).
+- 2a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 20,00 (Kosten).
+- 2b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 22,00 (Kosten).
+- 3a. Inventarabgang für eine Menge von 1 zu einem Einstandspreis von USD 16,00 (laufender Durchschnitt der physisch und finanziell gebuchten Transaktionen).
+- 3b. Finanzieller Bestandsabgang für eine Menge von 1 zu einem Einstandspreis von USD 16,00 (laufender Durchschnitt der physisch und finanziell gebuchten Transaktionen).
+- 4a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 25,00 (Kosten).
+- 5a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 30,00 (Kosten).
+- 5b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 30,00 (Kosten).
+- 6a. Physischer Bestandsabgang für eine Menge von 1 zu einem Einstandspreis von USD 23,67 (laufender Durchschnitt der physisch und finanziell gebuchten Transaktionen).
+- 7\. Lagerabschluss wird vorgenommen.
+- 7a. Der gewichtete durchschnittliche Finanzausgang der Transaktion zum Abschluss des Bestands wird erstellt, um die Abrechnungen aller finanziellen Eingänge des Bestands zu summieren.
+  - Transaktion 1b wird für eine Menge von 1 mit einem Betrag von USD 10,00 abgerechnet.
+  - Transaktion 2b wird für eine Menge von 1 mit einem Abrechnungsbetrag von USD 22,00 abgerechnet.
+  - Transaktion 5b wird für eine Menge von 1 mit einem Abrechnungsbetrag von USD 30,00 abgerechnet.
+  - Transaktion 7a. wird für eine Menge von 3 mit einem beglichenen Betrag von USD 62,00 erstellt.  
+- 7b. Die gewichtete durchschnittliche Bestandsabschluss-Transaktion Finanzieller Eingang wird erstellt, um die Transaktionen des Finanziellen Ausgangs zu verrechnen.
+  - Die Transaktion 3b wird für eine Menge von 1 mit einem Abrechnungsbetrag von USD 20,67 abgerechnet. Diese Transaktion wird um USD 4,67 korrigiert, um den ursprünglichen Wert von USD 16,00 auf 20,67 zu bringen, was dem gewichteten Durchschnitt der finanziell gebuchten Transaktionen für den Zeitraum entspricht.
+  - Transaktion 7b. wird für eine Menge von 1 mit einem Rechnungsbetrag von USD 20,67 erstellt, um 3b auszugleichen.
+
+Das folgende Diagramm veranschaulicht diese Reihe von Transaktionen mit den Auswirkungen der Wahl des Modells des gewichteten Durchschnittsbestands und des Prinzips der summarischen Abrechnung ohne die Option **Physikalischen Wert einbeziehen**.
+
+![WeightedAverage SS mit Include physical value.](media/weighted-average-summarized-settlement-with-include-physical-value.png)
 
 **Diagrammschlüssel**
+
 - Lagerbuchungen sind durch vertikale Pfeile dargestellt.
-- Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
-- Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
-- Über (oder unter) den einzelnen vertikalen Pfeilen ist im Format Menge@Einheitenpreis der Wert der Lagerbuchung angegeben.
-- Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
-- Ein Lagerbuchungswert ohne Klammer weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
+- Physische Transaktionen werden durch kürzere hellgraue Pfeile dargestellt.
+- Finanzielle Transaktionen werden durch längere schwarze Pfeile dargestellt.
+- Eingänge in den Bestand werden durch vertikale Pfeile oberhalb der Achse dargestellt.
+- Ausgaben, die nicht im Bestand sind, werden durch vertikale Pfeile unterhalb der Achse dargestellt.
 - Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
-- Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise 1a) versehen. Mit dieser Kennung wird die Sequenz der Lagerbuchungen auf der Zeitachse angegeben.
-- Lagerabschlüsse sind durch eine vertikale rote gestrichelte Linie und die Beschriftung "Lagerabschluss" gekennzeichnet.
-- Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch einen roten gepunkteten Pfeil dargestellt, der diagonal von einem Zugang zu einem Abgang verläuft.
-- Rote Pfeile stehen für die Zugangsbuchungen, die mit der vom System erstellten Abgangsbuchung ausgeglichen werden.
-- Der grüne Pfeil steht für die vom System generierte Zugangsgegenbuchung, mit der die ursprünglich gebuchte Abgangsbuchung ausgeglichen wird.
+- Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Reihenfolge der Lagerbuchungen auf der Zeitachse angegeben.
+- Jedes Datum im Diagramm ist durch eine dünne schwarze vertikale Linie getrennt. Das Datum ist am unteren Rand des Diagramms vermerkt.
+- Bestandsabschlüsse werden durch eine rote vertikale gestrichelte Zeile dargestellt.
+- Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch rote diagonale gestrichelte Pfeile dargestellt, die von einem Zugang zu einem Abgang verlaufen.
 
 ## <a name="weighted-average-with-marking"></a>Gewichteter Durchschnitt mit Markierung
-Der Begriff "Markierung" bezeichnet ein Verfahren zum Verknüpfen (oder Markieren) einer Abgangsbuchung mit einer Zugangsbuchung. Eine Markierung kann entweder vor oder nach Ausführung der Buchung erfolgen. Durch die Verwendung einer Markierung lassen sich bei der Ausführung der Buchung oder des Lagerabschlusses die exakten Kosten des Lagers ermitteln. 
 
-Beispiel: In der Kundendienstabteilung wurde der Eilauftrag eines wichtigen Debitors angenommen. Da es sich hierbei um einen Eilauftrag handelt, müssen Sie für diesen Artikel einen höheren Preis bezahlen, um den Wunsch des Debitors erfüllen zu können. Deshalb möchten Sie sichergehen, dass bei der Auftragsrechnung die Kosten für diesen Lagerartikel in der Gewinnspanne (auch: Wareneinsatz, COGS) berücksichtigt werden. 
+Der Begriff "Markierung" bezeichnet ein Verfahren zum Verknüpfen (oder Markieren) einer Abgangsbuchung mit einer Zugangsbuchung. Eine Markierung kann entweder vor oder nach Ausführung der Buchung erfolgen. Durch die Verwendung einer Markierung lassen sich bei der Ausführung der Buchung oder des Lagerabschlusses die exakten Kosten des Lagers ermitteln.
 
-Bei der Buchung der Bestellung erhält das Lager einen Zugang in Höhe von EUR 120,00 (Kosten). Beispielsweise wird dieses Auftragsdokument vor der Buchung des Lieferscheins oder der Rechnung für die Bestellung markiert. Der Wareneinsatz (COGS) beträgt anstelle der aktuellen laufenden Durchschnittskosten für den Artikel dann EUR 120,00. Wird der Lieferschein oder die Rechnung des Auftrags gebucht, bevor die Markierung vorgenommen wird, erfolgt die Buchung des Wareneinsatzes zum laufenden Durchschnittseinstandspreis. 
+Beispiel: In der Kundendienstabteilung wurde der Eilauftrag eines wichtigen Debitors angenommen. Da es sich um eine Eilbestellung handelt, müssen Sie für dieses Element mehr bezahlen, um den Wunsch Ihres Kunden zu erfüllen. Deshalb möchten Sie sichergehen, dass bei der Auftragsrechnung die Kosten für diesen Lagerartikel in der Gewinnspanne (auch: Wareneinsatz, COGS) berücksichtigt werden.
 
-Die Markierung der beiden Buchungen kann noch bis zur Ausführung des Lagerabschlusses nachgeholt werden. 
+Bei der Buchung der Bestellung erhält das Lager einen Zugang in Höhe von EUR 120,00 (Kosten). Beispielsweise wird dieses Auftragsdokument vor der Buchung des Lieferscheins oder der Rechnung für die Bestellung markiert. Der Wareneinsatz (COGS) beträgt anstelle der aktuellen laufenden Durchschnittskosten für den Artikel dann EUR 120,00. Wird der Lieferschein oder die Rechnung des Auftrags gebucht, bevor die Markierung vorgenommen wird, erfolgt die Buchung des Wareneinsatzes zum laufenden Durchschnittseinstandspreis.
 
-Eine Zugangsbuchung wird für eine Abgangsbuchung markiert. Anschließend wird die für die Artikelmodellgruppe des Artikels ausgewählte Bewertungsmethode ignoriert, und die Buchungen werden vom System gegenseitig ausgeglichen. 
+Die Markierung der beiden Buchungen kann noch bis zur Ausführung des Lagerabschlusses nachgeholt werden.
 
-Sie können vor der Ausführung der Buchung eine Abgangsbuchung für einen Zugang markieren. Dies kann von einer Auftragsposition auf der Seite "Auftragsdetails" aus erfolgen. Sie können die offenen Zugangsbuchungen auf der Seite "Markierung" anzeigen. 
+Eine Zugangsbuchung wird für eine Abgangsbuchung markiert. Dann wird die für die Artikelmodellgruppe des Elements ausgewählte Bewertungsmethode nicht berücksichtigt und das System rechnet diese Transaktionen miteinander ab.
 
-Sie können nach der Ausführung der Buchung eine Abgangsbuchung für einen Zugang markieren. Sie können eine Abgangsbuchung für eine offene Zugangsbuchung für einen gelagerten Artikel aus einer gebuchten Lagerregulierungserfassung abgleichen oder markieren. 
+Sie können vor der Ausführung der Buchung eine Abgangsbuchung für einen Zugang markieren. Dies kann von einer Auftragsposition auf der Seite **Auftragsdetails** aus erfolgen. Die offenen Quittungstransaktionen werden auf der Seite **Markierung** angezeigt.
 
-In der Grafik weiter unten werden die folgenden Buchungen veranschaulicht:
--   1a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 10,00 (Kosten).
--   1b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 10,00 (Kosten).
--   2a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 20,00 (Kosten).
--   2b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 20,00 (Kosten).
--   3a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 25,00 (Kosten).
--   4a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 30,00 (Kosten).
--   4b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 30,00 (Kosten).
--   5a. Physischer Lagerabgang für die Menge "1" zu einem Einstandspreis von EUR 21,25 (laufender Durchschnitt wertmäßig und physisch aktualisierter Buchungen).
--   5b. Wertmäßiger Lagerabgang für die Menge "1" wird für den Lagerzugang aus 2b markiert, bevor die Buchung ausgeführt wird. Diese Buchung erfolgt mit einem Einstandspreis von EUR 20,00.
--   6a. Physischer Lagerabgang für die Menge "1" zu einem Einstandspreis von jeweils EUR 21,25.
--   7. Lagerabschluss wird vorgenommen. Da die wertmäßig aktualisierte Buchung für einen vorhandenen Zugang markiert ist, werden diese Buchungen gegenseitig ausgeglichen, und es ist keine Regulierung erforderlich.
+Sie können nach der Ausführung der Buchung eine Abgangsbuchung für einen Zugang markieren. Sie können eine Abgangsbuchung für eine offene Zugangsbuchung für einen gelagerten Artikel aus einer gebuchten Lagerregulierungserfassung abgleichen oder markieren.
 
-Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig und physisch aktualisierten Buchungen in Höhe von EUR 27,50 berücksichtigt. 
+Die folgenden Transaktionen sind in der folgenden Grafik dargestellt:
 
-Das folgende Diagramm gibt Aufschluss über diese Reihe von Buchungen sowie über die Auswirkungen der Auswahl des Lagermodells für den gewichteten Durchschnitt mit angewendeter Markierung: 
+- 1a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 10,00 (Kosten).
+- 1b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 10,00 (Kosten).
+- 2a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 20,00 (Kosten).
+- 2b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 22,00 (Kosten).
+- 3a. Physischer Bestandsabgang für eine Menge von 1 zu einem Einstandspreis von USD 16,00 (laufender Durchschnitt der finanziell gebuchten Transaktionen).
+- 3b. Bestandsfinanzausgang für eine Menge von 1 zu einem Einstandspreis von USD 16,00 (laufender Durchschnitt der finanziell gebuchten Transaktionen).
+- 3c. Der Bestandsfinanzausgang für 3b wird mit dem Bestandsfinanzausgang für 2b markiert.
+- 4a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 25,00 (Kosten).
+- 5a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 30,00 (Kosten).
+- 5b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 30,00 (Kosten).
+- 6a. Physischer Bestandsabgang für eine Menge von 1 zu einem Einstandspreis von USD 23,00 (laufender Durchschnitt der finanziell gebuchten Transaktionen).
+- 7\. Lagerabschluss wird vorgenommen. Beim Markierungsprinzip nach der Methode des gewichteten Durchschnitts werden die markierten Transaktionen miteinander verrechnet. In diesem Beispiel wird 3b gegen 2b abgerechnet und eine Korrektur von 6,00 USD auf 3b gebucht, um den Wert auf 22,00 USD zu bringen. In diesem Beispiel werden keine weiteren Abrechnungen vorgenommen, da der Abschluss nur Abrechnungen für finanziell aktualisierte Transaktionen erstellt.
 
-![Gewichteter Durchschnitt mit Markierung.](./media/weightedaveragewithmarking.gif) 
+Das folgende Diagramm veranschaulicht diese Reihe von Transaktionen mit den Auswirkungen der Wahl des gewichteten durchschnittlichen Bestandsmodells mit Markierung.
+
+![Gewichteter Durchschnitt mit Markierung.](media/weighted-average-with-marking.png)
 
 **Diagrammschlüssel**
+
 - Lagerbuchungen sind durch vertikale Pfeile dargestellt.
-- Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
-- Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
-- Über (oder unter) den einzelnen vertikalen Pfeilen ist im Format Quantity@"Unitprice" der Wert der Lagerbuchung angegeben.
-- Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
-- Ein Lagerbuchungswert ohne Klammer weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
+- Physische Transaktionen werden durch kürzere hellgraue Pfeile dargestellt.
+- Finanzielle Transaktionen werden durch längere schwarze Pfeile dargestellt.
+- Eingänge in den Bestand werden durch vertikale Pfeile oberhalb der Achse dargestellt.
+- Ausgaben, die nicht im Bestand sind, werden durch vertikale Pfeile unterhalb der Achse dargestellt.
 - Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
-- Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Sequenz der Lagerbuchungen auf der Zeitachse angegeben.
-- Lagerabschlüsse sind durch eine vertikale rote gestrichelte Linie und die Beschriftung "Lagerabschluss" gekennzeichnet.
-- Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch einen roten gepunkteten Pfeil dargestellt, der diagonal von einem Zugang zu einem Abgang verläuft.
-
-
-
-
-
-
+- Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Reihenfolge der Lagerbuchungen auf der Zeitachse angegeben.
+- Jedes Datum im Diagramm ist durch eine dünne schwarze vertikale Linie getrennt. Das Datum ist am unteren Rand des Diagramms vermerkt.
+- Bestandsabschlüsse werden durch eine rote vertikale gestrichelte Zeile dargestellt.
+- Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch rote diagonale gestrichelte Pfeile dargestellt, die von einem Zugang zu einem Abgang verlaufen.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

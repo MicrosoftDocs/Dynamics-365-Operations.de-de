@@ -1,8 +1,8 @@
 ---
 title: Entfernte oder veraltete Plattformfunktionen
-description: Dieses Thema beschreibt Funktionen, die in den Plattform-Updates von Finance and Operations-Anwendungen entfernt wurden oder deren Entfernung geplant ist.
+description: In diesem Thema werden Funktionen beschrieben, die bei Plattform-Updates der Apps Finance + Operations entfernt wurden oder deren Entfernung geplant ist.
 author: sericks007
-ms.date: 12/16/2021
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,25 +12,25 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 4ac68cfdd8f8b2c65993fbd91587e52cce56a437
-ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
+ms.openlocfilehash: 6b4c514d34e4afbaac4afabed6865496747c0411
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7927478"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384719"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Entfernte oder veraltete Plattformfunktionen
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema beschreibt Funktionen, die in den Plattform-Updates von Finance and Operations-Anwendungen entfernt wurden oder deren Entfernung geplant ist.
+In diesem Thema werden Funktionen beschrieben, die bei Plattform-Updates der Apps Finance + Operations entfernt wurden oder deren Entfernung geplant ist.
 
 - Eine Funktion *entfernt* ist nicht mehr im Produkt verfügbar.
 - Eine Funktion *veraltet* wird nicht aktiv entwickelt und könnte bei einem zukünftigen Update entfernt werden.
 
 Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen bei Ihrer eigenen Planung zu berücksichtigen. 
 
-Detaillierte Informationen über Objekte in Finance and Operations Apps finden Sie in den [Technischen Referenzberichten](/dynamics/s-e/global/axtechrefrep_61). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die sich in jeder Version von Finance and Operations-Anwendungen geändert haben oder entfernt wurden.
+Ausführliche Informationen über Objekte in Apps für Finanzen und Betrieb finden Sie in den [Technischen Referenzberichten](/dynamics/s-e/global/axtechrefrep_61). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die in den einzelnen Versionen der Apps für Finanzen und Betrieb geändert oder entfernt wurden.
 
 ## <a name="feature-removal-effective-october-2021"></a>Entfernung der Funktion ab Oktober 2021
 
@@ -67,7 +67,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet  |
 
-## <a name="platform-updates-for-version-10023-of-finance-and-operations-apps"></a>Plattform-Updates für Version 10.0.23 von Finance and Operations Apps
+## <a name="platform-updates-for-version-10023-of-finance-and-operations-apps"></a>Plattform-Updates für die Version 10.0.23 der Apps für Finance + Operations
 
 ### <a name="ondbsynchronize-event"></a>OnDBSynchronize-Ereignis
 
@@ -90,7 +90,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet. Geplanter Entfernungstermin ist April 2023. |
 
-## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>Plattform-Updates für Version 10.0.21 von Finance and Operations Apps
+## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>Plattform-Updates für die Version 10.0.21 der Apps für Finance + Operations
 
 ### <a name="skype-for-business-online-support"></a>Skype for Business Online-Support
 
@@ -145,15 +145,15 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Um den Aufwand für den Betrieb, die Überwachung und die Pflege der Indexverwaltung durch Kunden zu verringern, wurde diese Funktion entfernt. |
 | **Ersetzt durch eine andere Funktion?**   | In Zukunft wird die Indexpflege von Microsoft-Diensten durchgeführt. Dies geschieht kontinuierlich, ohne die Arbeitslast der Benutzer zu beeinträchtigen. |
-| **Betroffene Produktbereiche**         | Finance and Operations Apps|
+| **Betroffene Produktbereiche**         | Finance and Operations-Apps|
 | **Bereitstellungsoption**              | Cloud-Bereitstellung: Wirkt sich auf von Microsoft verwaltete Produktionsumgebungen und Sandbox-Umgebungen der Stufen 2 bis 5 aus. |
 | **Status**                         | Diese Funktion wird entfernt. |
 
 
-## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>Plattform-Updates für Version 10.0.17 von Finance and Operations Apps
+## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>Plattform-Updates für die Version 10.0.17 der Apps für Finance + Operations
 
 
-### <a name="visual-studio-2015"></a>Visual Studio 2015
+### <a name="visual-studio-2015"></a>Visual Studio2015
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -177,24 +177,25 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Die mit Dynamicse AX 2012 Enterprise Portal (EP) verknüpften Metadatenartefakt sind veraltet, da EP in den Finance and Operations-Apps nie unterstützt wurde. |
+| **Grund für veralteten Zustand/Entfernung** | Die Metadaten-Artefakte, die mit Dynamics AX 2012 Enterprise Portal (EP) verbunden sind, wurden veraltet, da EP in den Apps Finance + Operations nie unterstützt wurde. |
 | **Ersetzt durch eine andere Funktion?**   | Nein |
 | **Betroffene Produktbereiche**         | Webclient |
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet: Der gesamte EP-Code soll in der Version vom Oktober 2021 entfernt werden. |
 
-## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Plattform-Updates für Version 10.0.15 von Finance and Operations Apps
+## <a name="deprecation-effective-december-2020"></a>Veraltet seit Dezember 2020
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11 Unterstützung für Dynamics 365 wird außer Betrieb genommen
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Ab Dezember 2020 wird die Unterstützung von Microsoft Internet Explorer 11 für alle Dynamics 365-Produkte veraltet sein und Internet Explorer 11 wird nach August 2021 nicht mehr unterstützt werden.<br><br>Dies wirkt sich auf Kunden aus, die Dynamics 365-Produkte verwenden, die für die Verwendung über eine Internet Explorer 11-Schnittstelle entworfen wurden. Nach August 2021 wird Internet Explorer 11 für solche Dynamics 365-Produkte nicht mehr unterstützt. |
+| **Grund für veralteten Zustand/Entfernung** | Ab Dezember 2020 wird der Microsoft Internet Explorer 11 Support für alle Dynamics 365 Produkte und Dynamics Lifecycle Services (LCS) veraltet sein, und Internet Explorer 11 wird ab August 2021 nicht mehr unterstützt.<br><br>Dies wirkt sich auf Kunden aus, die Dynamics 365 Produkte und LCS verwenden, die für die Verwendung über eine Internet Explorer 11-Schnittstelle konzipiert sind. Nach August 2021 wird Internet Explorer 11 für diese Dynamics 365 Produkte und LCS nicht mehr unterstützt. |
 | **Ersetzt durch eine andere Funktion?**   | Wir empfehlen den Kunden den Übergang zu Microsoft Edge.|
-| **Betroffene Produktbereiche**         | Alle Dynamics 365-Produkte |
+| **Betroffene Produktbereiche**         | Alle Dynamics 365 Produkte und LCS |
 | **Bereitstellungsoption**              | Alle|
 | **Status**                         | Veraltet: Internet Explorer 11 wird nach August 2021 nicht mehr unterstützt.|
 
+## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Plattform-Updates für die Version 10.0.15 der Apps für Finance + Operations
 
 ### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>Visual Studio Add-In zum Anwenden von Metadaten-Hotfixes
 
@@ -207,7 +208,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | **Status**                         | Ab Version 10.0.15 ist das Add-In nicht mehr in den Visual Studio-Tools enthalten. |
 
 
-## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Plattform-Updates für Version 10.0.14 von Finance and Operations Apps
+## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Plattform-Updates für Version 10.0.14 der Finance + Operations Apps
 
 ### <a name="online-users-page"></a>Seite „Onlinebenutzer“ 
 
@@ -220,7 +221,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | **Status**                         | Bis Oktober 2021 wird dieses Formular entfernt.   |
 
 
-## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Plattform-Updates für Version 10.0.13 von Finance and Operations Apps
+## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Plattform-Updates für Version 10.0.13 der Finance + Operations Apps
 
 
 ### <a name="custom-code-defined-in-ssrs-report-properties"></a>Benutzerdefinierter Code, der in den SSRS-Berichtseigenschaften definiert ist 
@@ -264,19 +265,19 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | **Status**                         | In Version 10.0.13/Plattformupdate 37 ist die Funktion für gespeicherte Ansichten allgemein verfügbar und Kunden können diese Funktion optional aktivieren. Die Funktion für gespeicherte Ansichten wird im Release vom Oktober 2021 obligatorisch. |
 
 
-## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Plattform-Updates für Version 10.0.12 von Finance and Operations Apps
+## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Plattform-Updates für Version 10.0.12 von Finance + Operations Apps
 
 ### <a name="grid-or-group-control-form-extensions-containing-invalid-field-references"></a>Formularerweiterungen für Raster- oder Gruppensteuerelemente mit ungültigen Feldreferenzen
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Die Datengruppeneigenschaft in Raster- oder Gruppensteuerelementen wird verwendet, um automatisch alle Felder einer Feldgruppe anzuzeigen. Ein durch Erweiterung hinzugefügtes Raster- oder Gruppensteuerelement kann Felder enthalten, die in der Feldgruppe nicht mehr definiert sind, oder es fehlen möglicherweise Felder, die in der Feldgruppe definiert sind. Dies kann zur Laufzeit zu inkonsistentem Verhalten führen. Plattform-Updates für Version 10.0.12 von Finance and Operations Apps kategorisieren jetzt dieses Problem als Compiler *Warnung*. Um dieses Problem zu beheben, öffnen Sie die Formularerweiterung und speichern Sie sie.
+| **Grund für veralteten Zustand/Entfernung** | Die Datengruppeneigenschaft in Raster- oder Gruppensteuerelementen wird verwendet, um automatisch alle Felder einer Feldgruppe anzuzeigen. Ein durch Erweiterung hinzugefügtes Raster- oder Gruppensteuerelement kann Felder enthalten, die in der Feldgruppe nicht mehr definiert sind, oder es fehlen möglicherweise Felder, die in der Feldgruppe definiert sind. Dies kann zur Laufzeit zu inkonsistentem Verhalten führen. Plattform-Updates für Version 10.0.12 von Finance + Operations Apps kategorisieren dieses Problem jetzt als Compiler *Warnung*. Um dieses Problem zu beheben, öffnen Sie die Formularerweiterung und speichern Sie sie.
 | **Ersetzt durch eine andere Funktion?**   | Diese Compiler-Warnung wird in einem zukünftigen Update durch einen Compiler-Fehler ersetzt. |
 | **Betroffene Produktbereiche**         | Visual Studio-Entwicklungstools |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Eine Compiler-Warnung wird in Plattform-Updates für Version 10.0.12 von Finance and Operations Apps eingeführt. |
+| **Status**                         | Eine Compiler-Warnung wird in den Plattform-Updates für Version 10.0.12 der Apps Finance + Operations eingeführt. |
 
-## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Plattform-Updates für Version 10.0.11 von Finance and Operations Apps
+## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Plattform-Updates für Version 10.0.11 der Finance + Operations Apps
 
 ### <a name="explicit-safe-lists-for-self-service-environments"></a>Explizite sichere Listen für Self-Service-Umgebungen
 
@@ -302,11 +303,11 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Feldgruppen in Tabellenmetadatendefinitionen können ungültige Feldreferenzen enthalten. Wenn diese Feldgruppen bereitgestellt werden, kann dies dieses zu Laufzeitfehlern in Financial Reporting und Microsoft SQL Server Reporting Services (SSRS) führen. Mit dem Plattform-Update 23 wurde ein Compiler *Warnung* eingeführt, der dazu führte, dass dieses Metadatenproblem adressiert wurde. Plattform-Updates für Version 10.0.11 von Finance and Operations Apps kategorisieren dieses Problem als Compiler *Fehle*.<p>Führen Sie folgende Schritte aus, um dieses Problem zu beheben.</p><ol><li>Entfernen Sie die ungültige Feldreferenz aus der Tabellenfeldgruppendefinition.</li><li>Neu kompilieren.</li><li>Stellen Sie sicher, dass alle Fehler behoben sind.</li></ol> |
+| **Grund für veralteten Zustand/Entfernung** | Feldgruppen in Tabellenmetadatendefinitionen können ungültige Feldreferenzen enthalten. Wenn diese Feldgruppen bereitgestellt werden, kann dies dieses zu Laufzeitfehlern in Financial Reporting und Microsoft SQL Server Reporting Services (SSRS) führen. Mit dem Plattform-Update 23 wurde ein Compiler *Warnung* eingeführt, der dazu führte, dass dieses Metadatenproblem adressiert wurde. Die Plattform-Updates für Version 10.0.11 von Finance + Operations Apps stufen dieses Problem als Compiler *Fehler* ein.<p>Führen Sie folgende Schritte aus, um dieses Problem zu beheben.</p><ol><li>Entfernen Sie die ungültige Feldreferenz aus der Tabellenfeldgruppendefinition.</li><li>Neu kompilieren.</li><li>Stellen Sie sicher, dass alle Fehler behoben sind.</li></ol> |
 | **Ersetzt durch eine andere Funktion?**   | Dieser Compilerfehler ersetzt dauerhaft die Compilerwarnung.  |
 | **Betroffene Produktbereiche**         | Visual Studio-Entwicklungstools |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Veraltet: Die Compiler-Warnung ist ein Compiler-Fehler in Plattform-Updates für Version 10.0.11 von Finance and Operations Apps. |
+| **Status**                         | Veraltet: Die Compiler-Warnung ist ein Compiler-Fehler in den Plattform-Updates für Version 10.0.11 der Apps Finance + Operations. |
 
 ### <a name="isv-licenses-created-by-using-the-sha1-hashing-algorithm"></a>ISV-Lizenzen, die mit dem SHA1-Hashing-Algorithmus erstellt wurden
 

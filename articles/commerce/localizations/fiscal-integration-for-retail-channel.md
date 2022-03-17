@@ -1,22 +1,22 @@
 ---
-title: Übersicht über die Steuerintegration für Commerce-Kanäle
+title: Übersicht über die Fiskalintegration für Commerce-Kanäle
 description: Dieses Thema bietet einen Überblick der Steuerintegrationsfunktionen, die in Dynamics 365 Commerce verfügbar sind.
 author: EvgenyPopovMBS
-ms.date: 01/31/2022
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 82913eaca1d56a5b0609480d8825717278eca132
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 46e0afd5a8cb692da56a7d5f261ca30d9b3aaa80
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077191"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388312"
 ---
-# <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Übersicht über die Steuerintegration für Commerce-Kanäle
+# <a name="fiscal-integration-overview-for-commerce-channels"></a>Übersicht über die Fiskalintegration für Commerce-Kanäle
 
 [!include [banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
@@ -27,7 +27,7 @@ Die Steuerintegration enthält die Integration in unterschiedliche steuerbezogen
 
 - Erfassen Sie einen Verkauf auf einem steuerbezogenen Gerät, das mit einem Retail Point of Sale (POS) verbunden ist, z. B. einem Belegdrucker, und drucken Sie einen Steuerbeleg für den Kunden.
 - Senden Sie Informationen, die Verkäufen und Rücksendungen zugeordnet sind, die in Retail POS abgeschlossen werden, sicher an einen externen Webdienst, der von der Steuerbehörde betrieben wird.
-- Gewährleisten Sie die Unveränderbarkeit von Verkaufsbuchungsdaten durch digitale Signaturen.
+- Sie helfen dabei, die Unveränderbarkeit der Daten von Verkaufstransaktionen durch digitale Signaturen sicherzustellen.
 
 Die Steuerintegrationsfunktionen sind ein Framework, das eine allgemeine Lösung für die weitere Entwicklung und Anpassung der Integration zwischen Retail POS und steuerbezogenen Geräten und Diensten bereitstellt. Die Funktionalität umfasst auch Beispiele für die fiskalische Integration, die grundlegende Szenarien für bestimmte Länder oder Regionen unterstützen und die mit bestimmten fiskalischen Geräten oder Diensten arbeiten. Ein Steuerintegrationsbeispiel besteht aus mehreren Erweiterungen von Commerce-Komponenten und ist im Software Development Kit (SDK) enthalten. Weitere Informationen zu den Beispielen für die steuerliche Integration finden Sie unter [Beispiele für die steuerliche Integration im Commerce SDK](#fiscal-integration-samples-in-the-commerce-sdk). Informationen zur Installation und Verwendung des Commerce SDK finden Sie unter [Retail Software Development Kit (SDK) Architektur](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
@@ -46,6 +46,9 @@ Ein Beispiel für eine Fiskalintegration kann die Commerce Runtime (CRT), die Ha
 - **Fiscal Konnektor Konfiguration** - Diese Konfiguration definiert die physische Kommunikation mit dem spezifischen Fiskalgerät oder -dienst.
 
 Ein Steuerregistrierungsprozess für ein bestimmtes POS-Register wird von einer entsprechenden Einstellung im POS-Funktionsprofil definiert. Weitere Einzelheiten zum Konfigurieren eines fiskalischen Registrierungsprozesses, zum Hochladen von Konfigurationen für fiskalische Belege und fiskalische Konnektoren sowie zum Ändern von Konfigurationsparametern finden Sie unter [Einrichten eines fiskalischen Registrierungsprozesses](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+
+> [!NOTE]
+> Wenn Sie Geräte für nicht fiskalische Vorgänge benötigen, wie z.B. die Suche im Produktkatalog, das Nachschlagefeld für Kunden oder die Erstellung von Transaktionsentwürfen, können Sie diese als Register mit fiskalischen Prozesseinschränkungen auswählen. Weitere Informationen finden Sie unter [Register mit steuerlichen Registrierungsbeschränkungen festlegen](setting-up-fiscal-integration-for-retail-channel.md#set-up-registers-with-fiscal-registration-restrictions).
 
 Der folgende typische Fiskalregistrierungs Flow beginnt mit einem Ereignis in der Kasse (z.B. Abschluss einer Verkaufstransaktion) und implementiert eine vordefinierte Sequenz von Schritten, an denen andere Commerce Komponenten beteiligt sind (z.B. die CRT und Hardware Station).
 

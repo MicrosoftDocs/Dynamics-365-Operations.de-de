@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5e139b7b12b8f2e549fb9c2c8e39125e190c7396
-ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
+ms.openlocfilehash: 0c62e11cc6d39c351321419bb862a5169b162fb7
+ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8311978"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8349716"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online- und Offlineverkaufsstellen-(POS)-Vorgänge
 
@@ -159,7 +159,7 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 | 305 | Treuepunkte einlösen | Der Vorgang wird nicht unterstützt. | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Ja |
 | 635 | Rückerstattung der Versandgebühren | Erstattet die Versandkosten für eine stornierte Bestellung. | Nein | Nein | Nein | Nein | Nein |
 | 644 | Couponcode entfernen | Fordern Sie den Benutzer auf, Coupons zu entfernen, indem Sie diese in einer Liste auswählen Coupons, die momentan mit der Buchung zusammenhängen. | Ja | Ja | Nein | Ja | Nein |
-| 1057 | Z erneut drucken | Druckt den Z-Bericht für die vorherige Schicht oder einer ausgewählten Schicht aus. | Ja | Ja | Ja | Nein | Nein |
+| 1057 | Z erneut drucken | Drucken Sie den Z-Bericht für die vorherige Schicht neu aus. | Ja | Ja | Ja | Nein | Nein |
 | 1216 | Ein neues Kennwort eingeben | Diesen Vorgang kann ein Benutzer, der über die Kennwortrücksetzungsberechtigung verfügt, verwenden kann, um das Kennwort eines Mitarbeiters zurückzusetzen, indem er ein temporäres Kennwort verwendet. | Ja | Ja | Ja | Nein | Nein |
 | 1219 | URL in POS öffnen | Öffnet eine vom Administrator konfigurierte URL in POS. | Ja | Ja | Ja | Ja | Nein |
 | 109 | Produkt zurückgeben | Dient zum Ausführen einer Retoure für einzelne Produkte. Das nächste gescannte Produkt wird als zurückgegebenes Produkt mit einer negativen Menge und einem negativen Preis angezeigt. | Ja | Ja | Nein | Ja | Nein |

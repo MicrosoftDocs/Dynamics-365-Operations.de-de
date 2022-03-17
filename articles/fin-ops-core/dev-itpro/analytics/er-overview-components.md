@@ -15,12 +15,12 @@ ms.topic: overview
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a24aa52c805722c20045b6227ceac0103cfbe6b
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: aca1b9bbca490a8a9551ed97d6e100c9115a0d41
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324034"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367823"
 ---
 # <a name="electronic-reporting-components"></a>Komponenten der elektronischen Berichterstellung
 
@@ -91,9 +91,23 @@ Mit einer Formatkomponente können Sie bestimmte Dateien anzufügen, die in der 
 
 Die folgende Abbildung zeigt, wie die Daten für diese Formate fließen.
 
-[![Datenfluss für eingehende Formatkomponenten.](./media/ER-overview-03.png)](./media/ER-overview-03.png)
+[![Datenfluss für ausgehende Formatkomponenten](./media/ER-overview-02.png)](./media/ER-overview-02.png)
 
-Wenn Sie eine einzelne ER-Formatkonfiguration ausführen, um Daten von einem eingehenden elektronischen Dokument zu importieren, müssen Sie die gewünschte Zuordnung einer Formatkonfiguration und den Integrationspunkt einer Modellzuordnung identifizieren. Sie können dieselbe Modellzuordnung und Ziele zusammen mit verschiedenen Formaten für unterschiedliche Typen von eingehenden Dokumenten verwenden.
+Um eine einzelne ER-Formatkonfiguration ausführen und ein ausgehendes elektronisches Dokument zu generieren, müssen Sie die Zuordnung der Formatkonfiguration identifizieren.
+
+#### <a name="format-components-for-incoming-electronic-documents"></a>Formatkomponenten für eingehende elektronische Dokumente
+Eine Formatkomponente ist das Schema des eingehenden Dokuments, das zur Laufzeit importiert wird. Ein Schema besteht aus folgenden Elementen:
+
+- Ein Format, das die Struktur und den Inhalt des zur Laufzeit importierten eingehenden elektronischen Dokuments festlegt, das Daten enthält. Eine Formatkomponente wird verwendet, um ein eingehendes Dokument in verschiedenen Formaten, z. B. Text und XML, zu analysieren.
+- Eine Formatzuordnung, die einzelne Formatelemente an die Elemente eines domänenspezifischen Datenmodells bindet. Zur Laufzeit geben die Elemente im Datenmodell den Datenfluss und die Regeln für das Importieren von Daten von einem eingehenden Dokument an und speichern die Daten anschließend in einem Datenmodell.
+- Eine Formatprüfung als Satz konfigurierbarer Regeln, die den Datenimport zur Laufzeit abhängig von ausgeführtem Kontext steuern. Beispielsweise könnte es eine Regel geben, die den Datenimport eines Bankauszugs mit einer Kreditorzahlung beendet und eine Ausnahme auslöst, wenn die Attribute eines bestimmten Kreditors fehlen, z. B: der Lieferantenidentifizierungscode.
+
+Die folgende Abbildung zeigt, wie die Daten für diese Formate fließen.
+
+[![Datenfluss für eingehende Formatkomponenten](./media/ER-overview-03.png)](./media/ER-overview-03.png)
+
+Um eine einzelne ER-Formatkonfiguration auszuführen, um Daten von einem eingehenden elektronischen Dokument zu importieren, müssen Sie die gewünschte Zuordnung einer Formatkonfiguration und auch den Integrationspunkt einer Modellzuordnung identifizieren. Sie können dieselbe Modellzuordnung und Ziele zusammen mit verschiedenen Formaten für unterschiedliche Arten von eingehenden Dokumenten verwenden.
+
 
 ## <a name="component-versioning"></a>Teilversionsverwaltung
 

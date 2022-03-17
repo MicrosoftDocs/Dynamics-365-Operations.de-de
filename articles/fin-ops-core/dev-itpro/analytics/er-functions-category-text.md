@@ -2,7 +2,7 @@
 title: Liste der EB-Funktionen in der Textkategorie
 description: Dieses Thema enthält Informationen zu den Textfunktionen, die in der elektronischen Berichterstellung (EB) unterstützt werden.
 author: NickSelin
-ms.date: 09/09/2021
+ms.date: 02/28/2022
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afe45bf1ff5c641346997aa4f32f3241dce2f0a2
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 5d185c128de1120e93d1779db04a7666ba557707
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075499"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367766"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Liste der EB-Funktionen in der Textkategorie
 
@@ -51,7 +51,7 @@ Mithilfe der Textfunktionen für die elektronische Berichterstellung (EB) könne
 | [NACH-RECHTS-TASTE](er-functions-text-right.md) | Diese Funktion gibt den Wert *String* zurück, der die angegebene Anzahl von Zeichen ab dem Ende der angegebenen Zeichenfolge angibt. |
 | [Text](er-functions-text-text.md) | Diese Funktion gibt die angegebene Zahl mit dem Wert *String* zurück, nachdem sie in eine Textzeichenfolge konvertiert wurde, die gemäß den Servergebietsschemaeinstellungen der aktuellen Anwendungsinstanz formatiert ist. |
 | [Übersetzen](er-functions-text-translate.md) | Diese Funktion gibt einen *Zeichenfolgen* Wert zurück, der das Ergebnis der Ersetzung des angegebenen Textes in Zeichen für einen anderen bereitgestellten Zeichensatz enthält. |
-| [Trim](er-functions-text-trim.md) | Diese Funktion gibt die angegebene Textzeichenfolge mit dem Wert *String* zurück, nachdem führende und nachfolgende Leerzeichen abgeschnitten wurden und nachdem mehrfache Leerzeichen zwischen Wörtern entfernt wurden. |
+| [Trim](er-functions-text-trim.md) | Diese Funktion gibt die angegebene Textzeichenfolge als *String* zurück, nachdem Tabulator-, Wagenrücklauf-, Zeilenvorschub- und Formularvorschubzeichen durch ein einzelnes Leerzeichen ersetzt wurden, nachdem führende und nachfolgende Leerzeichen abgeschnitten wurden und nachdem mehrere Leerzeichen zwischen Wörtern entfernt wurden. |
 | [Upper](er-functions-text-upper.md) | Diese Funktion gibt die angegebene Textzeichenfolge mit dem Wert *String* zurück, nachdem er in Großbuchstaben umgewandelt wurde. |
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen

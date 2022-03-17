@@ -2,7 +2,7 @@
 title: Drucker-ER-Zieltyps
 description: In diesem Thema wird erläutert, wie für jede FOLDER- oder FILE-Komponente eines EB-Formats (elektronische Berichterstellung) ein Druckerziel konfiguriert werden kann.
 author: NickSelin
-ms.date: 02/24/2021
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 672b1d70607a32d30c703ce39573d7480462fec45739b6e1e49ef27166a50e2c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2513fc4f86519c71602089cd46e9757813b1a708
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712711"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388287"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Druckziel
 
@@ -43,7 +43,24 @@ Damit das **Drucker**-Ziel in der aktuellen Instanz von Microsoft Dynamics 365 F
 
 ### <a name="applicability"></a>Anwendbarkeit
 
-Das **Drucker**-Ziel kann nur für Dateikomponenten konfiguriert werden, die zum Generieren von Ausgaben im druckbaren PDF-Format (PDF Merger- oder PDF-Dateiformatelemente) oder Microsoft Office Excel-/Word-Format (Excel-Datei) verwendet werden. Wenn die Ausgabe im PDF-Format erstellt wird, wird sie an einen Drucker gesendet. Wenn die Ausgabe im Microsoft Office-Format generiert wird, wird es automatisch in das PDF-Format konvertiert und dann an einen Drucker gesendet.
+#### <a name="pdf-printing"></a>PDF-Druck
+
+In Versionen von Finance vor Version 10.0.18 kann das Ziel **Drucker** nur für Dateikomponenten konfiguriert werden, die zur Erzeugung von Ausgaben im druckbaren PDF-Format (**PDF Merger** oder **PDF-Datei** Formatelemente) oder Microsoft Office Excel und Word-Format (**Excel-Datei** Formatelement) verwendet werden. Wenn die Ausgabe im PDF-Format erstellt wird, wird sie an einen Drucker gesendet. Wenn die Ausgabe im Office-Format mit dem Formatelement **Excel-Datei** erstellt wird, wird sie automatisch in das PDF-Format konvertiert und an einen Drucker gesendet.
+
+Ab Version 10.0.18 können Sie jedoch das **Drucker**-Ziel für das **Gemeinsame Datei**-Formatelement konfigurieren. Dieses Formatelement wird meist verwendet, um Ausgaben im TXT- oder XML-Format zu erzeugen. Sie können ein ER-Format konfigurieren, das das Formatelement **Gemeinsame Datei** als Stammformatelement und das Formatelement **Binärer Inhalt** als einziges verschachteltes Element darunter enthält. In diesem Fall erzeugt das Formatelement **Gemeinsame Datei** eine Ausgabe in dem Format, das durch die Bindung angegeben wird, die Sie für das Formatelement **Binärer Inhalt** konfigurieren. Sie können diese Bindung beispielsweise so konfigurieren, dass dieses Element mit dem Inhalt eines [Dokumentenmanagement](../../fin-ops/organization-administration/configure-document-management.md) Anhangs im PDF- oder Office-Format (Excel oder Word) [ausgefüllt](tasks/er-document-management-files-5.md#modify-the-format-to-populate-attachments-into-generating-messages-in-binary-format) wird. Sie können die Ausgabe über das konfigurierte **Drucker**-Ziel ausdrucken. 
+
+> [!NOTE]
+> Wenn Sie das Formatelement **Common\\File** auswählen, um das **Drucker**-Ziel zu konfigurieren, gibt es keine Möglichkeit, zur Entwurfszeit zu garantieren, dass das ausgewählte Element eine Ausgabe im PDF-Format oder eine Ausgabe, die in das PDF-Format konvertiert werden kann, erzeugt. Daher erhalten Sie die folgende Warnmeldung: „Bitte vergewissern Sie sich, dass die Ausgabe, die von der ausgewählten Formatkomponente erzeugt wird, in PDF konvertiert werden kann. Andernfalls deaktivieren Sie die Option „In PDF konvertieren“. Sie müssen Maßnahmen ergreifen, um Laufzeitprobleme zu vermeiden, wenn eine nicht-PDF- oder nicht-PDF-konvertierbare Ausgabe für den Druck zur Laufzeit bereitgestellt wird. Wenn Sie eine Ausgabe im Office-Format (Excel oder Word) erwarten, muss die Option **In PDF konvertieren** aktiviert sein.
+>
+> Ab Version 10.0.26 müssen Sie, um die Option **In PDF konvertieren** zu verwenden, **PDF** für den Parameter **Dokumentenroutingtyp** des konfigurierten **Druckers** auswählen.
+
+#### <a name="zpl-printing"></a>ZPL-Drucken
+
+Ab Version 10.0.26 können Sie das Ziel **Drucker** für das Formatelement **Common\\File** konfigurieren, indem Sie **ZPL** für den Parameter **Dokumentenroutingtyp** auswählen. In diesem Fall wird die Option **In PDF konvertieren** zur Laufzeit ignoriert und die TXT- oder XML-Ausgabe wird direkt an einen ausgewählten Drucker gesendet, indem der Zebra Programming Language (ZPL)-Vertrag des [Document Routing Agent (DRA)](install-document-routing-agent.md) verwendet wird. Verwenden Sie diese Funktion für ein ER-Format, das ein ZPL II Etikettenlayout darstellt, um verschiedene Etiketten zu drucken.
+
+[![Festlegen des Parameters Dokument-Routing-Typ im Dialogfeld Zieleinstellungen.](./media/ER_Destinations-SetDocumentRoutingType.png)](./media/ER_Destinations-SetDocumentRoutingType.png)
+
+Weitere Informationen zu dieser Funktion finden Sie unter [Entwerfen Sie eine neue ER-Lösung zum Drucken von ZPL-Etiketten](er-design-zpl-labels.md).
 
 ### <a name="limitations"></a>Einschränkungen
 

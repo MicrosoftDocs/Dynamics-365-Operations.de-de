@@ -2,7 +2,7 @@
 title: Tastenkombinationen
 description: Dieses Thema bietet einen Überblick über die Tastenkombinationen, die Sie bei der Arbeit mit Apps für Finanzen und Betrieb verwenden können.
 author: jasongre
-ms.date: 02/11/2022
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5243ea35138aa37d9fc54821e0923d0fa47c95de
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: 7d66c1fd08c29b85ca14bf1ae5d08c603e4a1945
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119551"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384562"
 ---
 # <a name="keyboard-shortcuts"></a>Tastenkombinationen
 
 [!include [banner](../includes/banner.md)]
-
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -199,9 +199,12 @@ Benutzer können zur Zeit verfügbaren Tastenkombinationen direkt über die Benu
 | Zum Hauptseiteninhalt wechseln (mit Fokus auf einem anderen Bereich)                    | ALT+M,M                    |
 | Zum Bereich „Infobox” wechseln (was möglicherweise einschließt, ihn zu öffnen)                       | ALT+M,B oder STRG+F2         |
 
+> [!NOTE]
+> Die in Version 10.0.26 eingeführte Funktion **Streamline-Tabbing-Verhalten in ganzseitigen Formularen** lässt es zu, dass Benutzer mit der Tabulatortaste durch alle Bereiche einer Seite navigieren können, ohne dass die Maus oder ein spezielles Tastaturkürzel für den Wechsel zwischen den Bereichen erforderlich ist. Sie können weiterhin die vorhandenen Tastenkombinationen (z.B. Alt+M) verwenden, um schnell zwischen den Regionen auf einer Seite zu wechseln.
+
 ## <a name="personalization-shortcuts"></a>[Personalisierung](personalize-user-experience.md)-Verknüpfungen 
 
-| Aktion                                                                                                             | Taste(n)                               |
+| Aktion                                                                                                             | Drücken Sie folgende Taste: .                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | Die Seite in den Personalisierungsmodus umstellen                                                                          | STRG+UMSCHALTTASTE+P                        |
 | Das Tool „Auswählen” verwenden (wenn im Personalisierungsmodus)                                                                     | A                                   |

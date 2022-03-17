@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 30f36ccf967c47d6a034c00544d45cdfdc3d1907
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 5a0ead85eaeb6b96b80716614990af8c8e5e70f7
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103387"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384746"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Produktionsausführungsschnittstelle konfigurieren
 
@@ -75,9 +75,41 @@ Diese Funktion ermöglicht das Hinzufügen eines Suchfelds zur Einzelvorgangslis
 
 ### <a name="enable-reporting-on-co-products-and-by-products"></a>Berichte zu Kuppel- und Nebenprodukten aktivieren
 
-Mit dieser Funktion können Mitarbeiter die Ausführungsschnittstelle der Produktionshalle verwenden, um den Fortschritt von Batchaufträgen zu melden. Diese Berichte umfassen Kuppel- und Nebenprodukten. Um diese Funktion zu nutzen, aktivieren Sie die folgenden Funktionen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Mit dieser Funktion können Mitarbeiter die Ausführungsschnittstelle der Produktionshalle verwenden, um den Fortschritt von Batchaufträgen zu melden. Diese Berichte umfassen Kuppel- und Nebenprodukten. Um diese Funktion zu nutzen, schalten Sie die folgende Funktion in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ein:
 
 - *Bericht zu Co- und Nebenprodukten von der Produktionsausführungsoberfläche*
+
+### <a name="enable-the-display-of-full-serial-batch-and-license-plate-numbers"></a>Anzeige der vollständigen Serien-, Batch- und Ladungsträger-Nummern
+
+Diese Funktion bietet eine verbesserte Erfahrung beim Anzeigen von Listen von Serien-, Chargen- und Kennzeichennummern in der Produktionsausführungsoberfläche. Die Anzeige wechselt von einer Kartenansicht, die eine begrenzte Anzahl von Zeichen anzeigt, zu einer Listenansicht, die genügend Platz für die Anzeige der vollständigen Werte bietet. Die Liste bietet auch die Möglichkeit, nach bestimmten Nummern zu suchen.
+
+Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert. Admins können diese Funktion ein- oder ausschalten, indem sie im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) nach der Funktion *Vollständige Serien-, Batch- und Ladungsträger-Nummern in der Produktionsausführungsoberfläche anzeigen* suchen.
+
+### <a name="enable-registering-of-material-consumption"></a>Ermöglicht die Registrierung des Materialverbrauchs
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Diese Funktion ermöglicht es Arbeitern, die Produktionsausführungsoberfläche zu verwenden, um Materialverbrauch, Chargennummern und Seriennummern zu registrieren. Einige Hersteller, insbesondere in der Prozessindustrie, müssen explizit die Materialmenge registrieren, die für jede Batch oder jeden Produktionsauftrag verbraucht wird. Arbeitskräfte könnten zum Beispiel eine Waage verwenden, um die Menge des Materials zu wiegen, das sie bei ihrer Arbeit verbrauchen. Um eine vollständige Rückverfolgbarkeit der Materialien zu gewährleisten, müssen diese Organisationen auch die Batch-Nummern registrieren, die zur Herstellung der einzelnen Produkte verbraucht wurden.
+
+Es gibt zwei Versionen dieser Funktion. Eine unterstützt Elemente, die *nicht* für die Verwendung von erweiterten Lagerprozessen (WMS) aktiviert sind. Die anderen unterstützen Elemente, die *für die Verwendung von WMS aktiviert sind*. Um diese Funktionalität zu nutzen, aktivieren Sie eine oder beide der folgenden Funktionen in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in dieser Reihenfolge), je nachdem, ob Sie Artikel haben, die für WMS aktiviert sind:
+
+- *(Vorschau) Materialverbrauch in der Produktionsausführungsoberfläche (nicht WMS) registrieren*
+- *(Vorschauversion) Materialverbrauch in der Produktionsausführungsoberfläche registrieren (WMS-fähig)*
+
+> [!IMPORTANT]
+> Sie können die Nicht-WMS-Funktion allein verwenden. Wenn Sie jedoch WMS verwenden, müssen Sie beide Funktionen aktivieren.
+
+### <a name="enable-reporting-on-catch-weight-items"></a>Ermöglicht die Berichterstattung über Artikelgewichte
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Arbeitskräfte können die Produktionsausführungsoberfläche verwenden, um den Fortschritt bei Batch-Aufträgen für Artikel mit Artikelgewicht zu melden. Batch-Aufträge werden aus Formeln erstellt, die so definiert werden können, dass Artikelgewichte als Formelpositionen, Kuppelprodukte und Nebenprodukte enthalten sind. Eine Formel kann auch so definiert werden, dass sie Formelzeilen für Zutaten enthält, die für das Artikelgewicht definiert sind. Artikel mit Artikelgewicht verwenden zwei Maßeinheiten, um den Bestand zu verfolgen: die Menge des Artikelgewichts und die Menge des Bestands. In der Lebensmittelbranche kann z.B. verpacktes Fleisch als Element mit Artikelgewicht definiert werden, wobei die Menge des Artikelgewichts zur Erfassung der Anzahl der Kartons und die Bestandsmenge zur Erfassung des Gewichts der Kartons verwendet wird.
+
+Um diese Funktion zu nutzen, schalten Sie die folgende Funktion in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ein:
+
+- *(Vorschau) Bericht über Artikel mit Artikelgewicht über die Produktionsausführungsoberfläche*
 
 ## <a name="work-with-production-floor-execution-configurations"></a>Arbeiten mit Produktionsausführungsoberflächen-Konfigurationen
 

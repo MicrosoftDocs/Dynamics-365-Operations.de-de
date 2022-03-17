@@ -1,80 +1,106 @@
 ---
-title: Erste Schritte mit der elektronischen Rechnungsstellung für Ägypten
-description: Dieses Thema enthält Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung für Ägypten in Finance und Supply Chain Management erleichtern.
+title: Elektronische Rechnungsstellung für Ägypten
+description: Dieses Thema enthält Informationen, die Ihnen den Einstieg in die Elektronische Rechnungsstellung für Ägypten in Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management erleichtern.
 author: gionoder
-ms.date: 04/20/2021
+ms.date: 02/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: b25a3489d009a02b45d66d4c3a0271a56a92f5ac
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 6fe1dd4254db8b390c17558320a6eaff2b0dcd19
+ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985624"
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "8371355"
 ---
-# <a name="get-started-with-electronic-invoicing-for-egypt"></a>Erste Schritte mit der elektronischen Rechnungsstellung für Ägypten
+# <a name="electronic-invoicing-for-egypt"></a>Elektronische Rechnungsstellung für Ägypten
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung für Ägypten erleichtern. Das Thema führt Sie durch die Konfigurationsschritte, die in Regulatory Configuration Services (RCS) länderabhängig sind, und ergänzen die unter [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md) beschriebenen Schritte.
+Dieses Thema enthält Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung für Ägypten erleichtern. Es führt Sie durch die Konfigurationsschritte, die im Regulatory Configuration Service (RCS) länderabhängig sind. Diese Schritte ergänzen die Schritte, die unter [Elektronische Rechnungsstellung festlegen](e-invoicing-set-up-overview.md) beschrieben sind.
 
-## <a name="country-specific-configuration-for-egyptian-electronic-invoice-eg-electronic-invoicing-feature"></a>Länderspezifische Konfiguration der Funktion zur elektronischen Rechnungsstellung für die elektronische Rechnung für Ägypten (EG)
+## <a name="prerequisites"></a>Voraussetzungen
 
-Einige der Parameter aus der **Funktion zur elektronischen Rechnungsstellung für die elektronische Rechnung für Ägypten (EG)** werden mit Standardwerten veröffentlicht. Überprüfen Sie die Werte und aktualisieren Sie sie gegebenenfalls, damit sie Ihre Geschäftsvorgänge besser reflektieren, bevor Sie die Funktion für die elektronische Rechnungsstellung in der Serviceumgebung bereitstellen.
+Bevor Sie mit den Verfahren in diesem Thema beginnen, müssen Sie die folgenden Voraussetzungen erfüllen:
 
-Dieser Abschnitt ergänzt den Abschnitt **Länderspezifische Konfiguration der Funktion für die elektronische Rechnungsstellung** im Thema [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md).
+- Machen Sie sich mit der Elektronischen Rechnungsstellung vertraut, wie sie in [Übersicht über die Elektronische Rechnungsstellung](e-invoicing-service-overview.md) beschrieben ist.
+- Melden Sie sich bei RCS an, und legen Sie die Elektronische Rechnungsstellung fest. Weitere Informationen finden Sie in folgenden Themen:
 
-### <a name="prerequisites"></a>Voraussetzungen
+    - [Melden Sie sich für den Dienst für die elektronische Rechnungsstellung an und installieren Sie ihn](e-invoicing-sign-up-install.md)
+    - [Einrichten von Azure-Ressourcen für die Elektronische Rechnungsstellung](e-invoicing-set-up-azure-resources.md)
+    - [Das Add-In für Microservices in Lifecycle Services installieren](e-invoicing-install-add-in-microservices-lcs.md)
+    
+- Aktivieren Sie die Integration zwischen Ihrer Microsoft Dynamics 365 Finance oder Dynamics 365 Supply Chain Management Anwendung und dem Dienst für die elektronische Rechnungsstellung, wie in [Integration mit der elektronischen Rechnungsstellung aktivieren und einrichten](e-invoicing-activate-setup-integration.md) beschrieben.
+- Erstellen Sie ein digitales Zertifikatsgeheimnis in Azure Key Vault und legen Sie es wie in [Kundenzertifikate und Geheimnisse](e-invoicing-customer-certificates-secrets.md) beschrieben fest. Zu Testzwecken stellt die ägyptische Steuerbehörde spezielle digitale Testzertifikate zur Verfügung, die nur während der Test- und Lösungsvalidierungsphase verwendet werden dürfen. Weitere Informationen finden Sie auf der Website der ägyptischen Steuerbehörde unter dem Link, der in [Egyptian e-invoicing SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/) angegeben ist.
 
-Vor der Ausführung der Schritte in diesem Abschnitt müssen Sie:
+## <a name="country-specific-configuration-for-the-egyptian-electronic-invoice-eg-feature"></a>Länderspezifische Konfiguration für die Funktion der ägyptischen elektronischen Rechnung (EG)
 
-- Erstellen Sie ein digitales Zertifikatgeheimnis, wie im Abschnitt **Ein digitales Zertifikatgeheimnis erstellen** in [Erste Schritte mit der Dienstverwaltung für die elektronische Rechnungsstellung](e-invoicing-get-started-service-administration.md) beschrieben. Zu Testzwecken stellt die ägyptische Steuerbehörde spezielle digitale Testzertifikate zur Verfügung, die nur während der Test- und Lösungsvalidierungsphase verwendet werden dürfen. Weitere Informationen finden Sie auf der Website der ägyptischen Steuerbehörde unter dem Link im [Ägyptischen E-Invoicing-SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/).
+Einige der Parameter aus der Funktion **Elektronische Rechnungsstellung (EG)** werden mit Standardwerten veröffentlicht. Bevor Sie die Funktion Elektronische Rechnungsstellung in der Umgebung des Dienstes bereitstellen, überprüfen Sie die Standardwerte und aktualisieren Sie sie bei Bedarf, damit sie Ihren geschäftlichen Vorgang besser widerspiegeln.
 
-1. Wählen Sie in RCS im Abschnitt **Funktionen** des Arbeitsbereichs **Globalisierungsfunktion** die Kachel **Elektronische Rechnungsstellung** aus.
-2. Auf der Seite **Funktionen für die elektronische Rechnungsstellung** überprüfen Sie, ob die von Ihnen erstellte elektronische Rechnungsfunktion **Elektronische Rechnungen für Ägypten (EG)** ausgewählt ist.
+1. Importieren Sie die neueste Version der **Globalisierungsfunktion für elektronische Rechnungen (EG)**, wie unter [Importieren von Funktionen aus dem globalen Repository](e-invoicing-import-feature-global-repository.md) beschrieben.
+2. Erstellen Sie eine Kopie der importierten Funktion Globalisierung und wählen Sie Ihren Konfigurationsanbieter dafür aus, wie in [Erstellen einer Funktion Globalisierung](e-invoicing-create-new-globalization-feature.md) beschrieben.
 3. Überprüfen Sie auf der Registerkarte **Versionen**, ob die **Entwurf**-Version ausgewählt ist.
-4. Wählen Sie im Raster auf der Registerkarte **Einrichtungen** die Funktionseinrichtung **Verkaufsrechnung** aus.
-5. Wählen Sie **Bearbeiten** und auf der **Aktionen**-Registerkarte in der **Aktionen**-Feldgruppe **JSON-Dokument für die ägyptische Steuerbehörde unterzeichnen** aus.
-6. Wählen Sie in der Feldgruppe **Parameter** den Parameter **Zertifikatname** aus, und wählen Sie den Namen des digitalen Zertifikats aus, das für die Verwendung mit der Funktion für die elektronische Rechnungsstellung erstellt wurde.
-7. Wählen Sie in der **Aktionen**-Feldgruppe **In ägyptischen ETA-Dienst integrieren** aus. Wiederholen Sie diesen Schritt für die beiden Vorkommen dieser Aktion.
-8. Wählen Sie in der **Parameter**-Feldgruppe **Webdienst-URL** und **Anmeldedienst-URL** aus, und überprüfen Sie gegebenenfalls die URL-Parameter. Besuchen Sie die Website der ägyptischen Steuerbehörde unter dem Link im [Ägyptischen E-Invoicing-SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/), um die Test- und Produktions-URL zu erhalten.
-9. Wählen Sie **Speichern** aus und schließen Sie die Seite.
-10. Informationen zum Bereitstellen der Funktion für die elektronische Rechnungsstellung in der Service-Umgebung finden Sie unter [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md).
+4. Wählen Sie auf der Registerkarte **Einstellungen** im Raster die Funktion **Abgeleitete Verkaufsrechnungen**.
+5. Wählen Sie **Bearbeiten** aus.
+6. Wählen Sie auf der Registerkarte **Verarbeitungspipeline** im Abschnitt **Verarbeitungspipeline** die Option **Json-Dokument für die ägyptische Steuerbehörde signieren**.
+7. Wählen Sie im Bereich **Parameter** die Option **Zertifikatsname** und wählen Sie dann den Namen des von Ihnen erstellten digitalen Zertifikats.
+8. Wählen Sie im Bereich **Pipeline verarbeiten** die Option **Integration mit Egyptian ETA Service**. Wiederholen Sie diesen Schritt für die beiden Vorkommen dieser Aktion.
+9. Wählen Sie im Abschnitt **Parameter** die **Webdienst-URL** und **Login-Dienst-URL**. Prüfen Sie dann die URL-Parameter. Um die Test- und Produktions-URL zu erhalten, gehen Sie auf die Website der ägyptischen Steuerbehörde, indem Sie den Link verwenden, der in [Egyptian e-invoicing SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/) angegeben ist.
+10. Klicken Sie auf **Speichern** und schließen Sie die Seite.
+11. Wiederholen Sie die Schritte 4 bis 10 für die Einrichtung der Funktion **Projektrechnung abgeleitet**.
 
-## <a name="country-specific-configuration-of-the-application-setup-for-the-egyptian-electronic-invoice-eg-electronic-invoicing-feature"></a>Länderspezifische Konfiguration der Anwendungseinrichtung für die Funktion zur elektronischen Rechnungsstellung für die elektronische Rechnung für Ägypten (EG)
+## <a name="country-specific-configuration-for-the-egyptian-electronic-invoice-eg-application-setup"></a>Länderspezifische Konfiguration für die Einrichtung der ägyptischen Anwendung für elektronische Rechnungen (EG)
 
-Führen Sie diese Schritte aus, bevor Sie die Anwendungseinrichtung in Ihrer mit Finance oder Supply Chain Management verbundenen Anwendung bereitstellen.
+Es gibt Parameter, die in Ihrer Finance oder Supply Chain Management Umgebung festgelegt werden müssen. Sie können diese Einrichtung an einem von zwei Orten vornehmen:
 
-Dieser Abschnitt ergänzt den Abschnitt **Länderspezifische Konfiguration der Anwendungseinrichtung** im Thema [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md).
+- Direkt in Ihrer Finance oder Supply Chain Management Umgebung. Weitere Informationen finden Sie unter [Parameter für die Elektronische Rechnungsstellung einrichten](e-invoicing-set-up-parameters.md).
+- In RCS. Im Rahmen der Einrichtung der Funktion Elektronische Rechnungsstellung können Sie alle Parameter definieren und sie dann direkt in Ihrer Finance oder Supply Chain Management Umgebung bereitstellen, wenn Sie die Funktion Elektronische Rechnungsstellung einrichten.
 
-1. Wählen Sie in RCS im Abschnitt **Funktionen** des Arbeitsbereichs **Globalisierungsfunktion** die Kachel **Elektronische Rechnungsstellung** aus.
-2. Auf der Seite **Funktionen für die elektronische Rechnungsstellung** überprüfen Sie, ob die elektronische Fakturierungsfunktion **Elektronische Rechnungen für Ägypten (EG)** ausgewählt ist.
-3. Überprüfen Sie auf der Registerkarte **Versionen**, ob die **Entwurf**-Version ausgewählt ist.
-4. Wählen Sie auf der **Einrichtungen**-Registerkarte **Anwendungseinrichtung** und im Feld **Verbundene Anwendung** die Anwendung aus, in der Sie bereitstellen möchten.
-5. Überprüfen Sie im Feld **Tabellenname**, ob die Kundenrechnungserfassung ausgewählt ist.
-6. Wählen Sie **Antworttypen** und dann **Neu** aus.
-7. Geben Sie im Feld **Antworttyp** „Antwort“ ein, und geben Sie im Feld **Beschreibung** „Beschreibung“ ein.
-8. Wählen Sie im Feld **Übermittlungsstatus** die Option **Ausstehend** aus.
-9. Wählen Sie im Feld **Modellzuordnung** die Option **Modellzuordnung aus Antwortnachricht** mit **(Vorschau) Importformat für Antwortnachrichten** und dann **Speichern** aus.
-10. Wählen Sie **Neu** aus, und geben Sie im Feld **Antworttyp** „ResponseData“ als festen Wert ein. Geben Sie im Feld **Beschreibung** „Beschreibung“ ein.
-11. Wählen Sie im Feld **Übermittlungsstatus** die Option **Ausstehend** aus.
-12. Wählen Sie im **Name der Datenentität**-Feld **Verkaufsrechnungskopfzeilen V2** aus.
-13. Wählen Sie im Feld **Modellzuordnung** die Option **Import von Antwortdaten für Ägypten** mit **(Vorschau) Import von Antwortdaten für Ägypten** und dann **Speichern** aus.
-14. Informationen zum Bereitstellen der Anwendungseinrichtung in der mit Finance oder Supply Chain Management verbundenen Anwendung finden Sie unter [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md).
+Für beide Optionen sind die Parameter identisch. Wenn Sie Ihre erste Funktion im Dienst für die elektronische Rechnungsstellung einrichten, empfehlen wir Ihnen, die folgenden Schritte zu befolgen, um die Parameter in RCS festzulegen und sie dann in Ihrer verbundenen Anwendung bereitzustellen.
+
+> [!NOTE]
+> Einige Funktionen der Elektronischen Rechnungsstellung enthalten möglicherweise einen vordefinierten Satz anwendungsspezifischer Parameter für Finance oder Supply Chain Management. In diesem Fall sollten Sie sich vergewissern, dass die Daten korrekt sind. Andernfalls müssen Sie die Parameter manuell festlegen.
+
+1. Suchen Sie die Kopie der Funktion **Elektronische Rechnung (EG)** Globalisierung, die Sie erstellt haben.
+2. Überprüfen Sie auf der Registerkarte **Versionen**, ob die **Entwurf**-Version ausgewählt ist.
+3. Wählen Sie auf der Registerkarte **Einrichtungen** **Anwendungseinrichtung** aus.
+4. Wählen Sie im Feld **Verbundene Anwendungen** die Anwendung, in der Sie die Parameter bereitstellen möchten.
+5. Auf der Seite **Elektronische Belege** wählen Sie **Hinzufügen**, um einen Datensatz zu erstellen.
+6. Fügen Sie in das Feld **Tabellenname** **CustInvoiceJour** ein.
+7. Fügen Sie im Feld **Kontext** einen Verweis auf den Namen der Zuordnung **Kundenrechnungskontext** hinzu. Die Konfiguration lautet **Kundenrechnungskontextmodell**.
+8. Fügen Sie im Feld **Zuordnung elektronischer Belege** einen Verweis auf den Zuordnungsnamen **Kundenrechnung** hinzu. Die Konfiguration lautet **Rechnungsmodell-Zuordnung**.
+9. Wählen Sie **Speichern** aus.
+10. Auf der Seite **Antworttypen** wählen Sie **Hinzufügen**.
+11. Geben Sie im Feld **Antworttyp** den Text **Antwort** ein.
+12. Geben Sie in das Feld **Beschreibung** **Antwort verarbeiten** ein.
+13. Wählen Sie im Feld **Übermittlungsstatus** die Option **Ausstehend** aus.
+14. Wählen Sie im Feld **Modellzuordnung** die Option **Import von Nachrichten als Antwort**. Die Konfiguration ist **Ägyptische Antwort Nachrichtenimport (EG)**.
+15. Wählen Sie **Speichern** aus.
+16. Wählen Sie **Hinzufügen** aus.
+17. Geben Sie in das Feld **Antworttyp** **ResponseData** ein.
+18. Geben Sie in das Feld **Beschreibung** **Antwortdaten verarbeiten** ein.
+19. Wählen Sie im Feld **Übermittlungsstatus** die Option **Ausstehend** aus.
+20. Wählen Sie im Feld **Name der Entität** **SalesInvoiceHeaderV2Entity**.
+21. Wählen Sie im Feld **Modellzuordnung** die Option **Response Datenimport**. Die Konfiguration lautet **Ägyptisches Antwortdaten-Importformat (EG)**.
+22. Klicken Sie auf **Speichern** und schließen Sie die Seite.
+23. Schließen Sie die Seite.
+
+Wie Sie eine Funktion in der Umgebung des Dienstes und eine Anwendungseinrichtung für die mit Finance oder Supply Chain Management verbundene Anwendung bereitstellen, erfahren Sie unter [Globalisierungsfunktion vervollständigen, veröffentlichen und bereitstellen](e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ## <a name="privacy-notice"></a>Datenschutzhinweis
 
-Zur Aktivierung der Funktion **Elektronische Rechnungen für Ägypten (EG)** müssen möglicherweise nur begrenzte Daten gesendet werden, einschließlich der Steuerregistrierungskennung für die Organisation. Diese Daten werden an von der Steuerbehörde autorisierte Drittagenturen weitergeleitet, um elektronische Rechnungen in dem für die Integration in den Webdienst der Behörde erforderlichen Format an diese Steuerbehörde zu senden. Ein Administrator kann die Funktion aktivieren und deaktivieren, indem er zu **Organisationsverwaltung** > **Einrichtung** > **Parameter elektronischer Dokumente** navigiert. Wählen Sie auf der Registerkarte **Funktionen** die Zeile mit der Funktion **Elektronische Rechnungen für Ägypten (EG)** aus und treffen Sie die entsprechende Auswahl. Daten, die aus diesen externen Systemen in diesen Dynamics 365-Onlinedienst importiert werden, unterliegen unseren [Datenschutzbestimmungen](https://go.microsoft.com/fwlink/?LinkId=512132). Weitere Informationen finden Sie in den Abschnitten zum Datenschutz in der landesspezifischen Funktionsdokumentation.
+Die Aktivierung der Funktion **Ägyptische Elektronische Rechnungsstellung (EG)** erfordert möglicherweise die Übermittlung begrenzter Daten. Zu diesen Daten gehört die Steueridentifikationsnummer der Organisation. Die Daten werden an Drittanbieter übermittelt, die von der Steuerbehörde autorisiert wurden, elektronische Rechnungen in dem vordefinierten Format an diese Steuerbehörde zu senden, das für die Integration mit dem Webservice der Regierung erforderlich ist. Ein Administrator kann die Funktion unter **Organisationsverwaltung** \> **Einrichtung** \> **Parameter für elektronische Belege** aktivieren und deaktivieren. Wählen Sie auf der Registerkarte **Funktionen** die Zeile mit der Funktion **Elektronische Rechnungen für Ägypten (EG)** aus und treffen Sie die entsprechende Auswahl. Daten, die aus externen Systemen in diesen Dynamics 365 Online-Service importiert werden, unterliegen unserer [Datenschutzerklärung](https://go.microsoft.com/fwlink/?LinkId=512132). Weitere Informationen finden Sie im Abschnitt „Datenschutz“ in der länderspezifischen Dokumentation der Funktionen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
@@ -82,6 +108,5 @@ Zur Aktivierung der Funktion **Elektronische Rechnungen für Ägypten (EG)** mü
 - [Erste Schritte mit der Dienstverwaltung für die elektronische Rechnungsstellung](e-invoicing-get-started-service-administration.md)
 - [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md)
 - [Elektronische Rechnungen für Debitoren in Ägypten](emea-egy-e-invoices.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

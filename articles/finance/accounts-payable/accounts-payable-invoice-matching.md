@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "27361"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7ffcd731b127b9a51551d4fe966dcfd69a34e54
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 2959df58dbde71ba516c1a230e64d38b885c23f5
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984076"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358263"
 ---
 # <a name="accounts-payable-invoice-matching-overview"></a>Rechnungsabgleich von Kreditorenkonten – Übersicht
 
@@ -36,24 +36,24 @@ Angenommen, Sie geben eine Bestellung mit einem Positionsartikel (1.000 Batterie
 
 Eine Rechnung über 1.000 Batterien zu einem Preis von jeweils 1,10 EUR geht ein. Gemäß der Richtlinie für die juristische Person ist bei dieser Artikelkategorie eine Nettostückpreis-Toleranz von 5 Prozent zulässig. Ein Preis von 1,05 EUR wäre also in Ordnung, 1,10 EUR sind jedoch zu viel. Bei der Eingabe der Rechnungsinformationen wird eine Preisabweichung erkannt, und die Rechnung kann gespeichert werden, bis die Abweichung behoben ist.
 
-Die folgenden Arten von Kreditorenrechnungsabgleich können verwendet werden:
+Sie können die folgenden Arten des **Abgleichs von Debitorenrechnungen** verwenden:
 
--   Rechnungssummenabgleich – Die Gesamtbeträge der Rechnung werden mit den Gesamtbeträgen der Bestellung abgeglichen. Bei dieser Art von Rechnungsabgleich werden die wenigsten Details einbezogen. Deshalb können Sie mit dieser Option Steuerfunktionen zur Minimierung der Arbeitszeit einrichten, die für die Prüfung der Informationen aus dem Abgleich erforderlich ist.
--   Zweiseitiger Abgleich – Die Preisinformationen der Rechnung werden mit den Preisinformationen der Bestellung abgeglichen.
--   Dreiseitiger Abgleich – Die Preisinformationen der Rechnung werden mit den Preisinformationen der Bestellung abgeglichen. Zudem werden die Mengeninformationen der Rechnung mit den Mengeninformationen der Produktzugänge abgeglichen, die für die Rechnung ausgewählt sind.
--   Abgleich für Zuschläge – Die Informationen zu Zuschlägen (Beträge) der Rechnung werden mit den Informationen zu Zuschlägen (Beträge) der Bestellung abgeglichen.
+-   **Rechnungssummenablgeich** – Die Gesamtbeträge der Rechnung werden mit den Gesamtbeträgen der Bestellung abgeglichen. Bei dieser Art von Rechnungsabgleich werden die wenigsten Details einbezogen. Deshalb können Sie mit dieser Option Steuerfunktionen zur Minimierung der Arbeitszeit einrichten, die für die Prüfung der Informationen aus dem Abgleich erforderlich ist.
+-   **Zwei-Wege-Abgleich** - Gleichen Sie die Preisinformationen auf der Rechnung mit den Preisinformationen auf der Kauf-Bestellung ab.
+-   **Drei-Wege-Abgleich** - Gleichen Sie die Preisinformationen auf der Rechnung mit den Preisinformationen auf der Bestellung ab. Zudem werden die Mengeninformationen der Rechnung mit den Mengeninformationen der Produktzugänge abgeglichen, die für die Rechnung ausgewählt sind.
+-   **Abgleich der Belastungen** - Gleichen Sie die Angaben zu Belastungen (Beträge) auf der Rechnung mit den Angaben zu Belastungen (Beträge) auf der Bestellung ab.
 
 > [!NOTE]
 > Mithilfe von Kreditorenrechnungsrichtlinien können weitere Formen der Rechnungsprüfung vorgenommen werden. 
 
 Beim zweiseitigen und beim dreiseitigen Abgleich werden Preisinformationen stets nach dem Einheitspreis abgeglichen. Sie können diese Abgleichsrichtlinien für einen Abgleich der Preisinformationen nach dem Preissumme konfigurieren.
--   Nettostückpreis-Abgleich – Die Preisinformationen beim zweiseitigen oder dreiseitigen Abgleich werden durch einen Vergleich des Nettostückpreises jeder Rechnungsposition mit dem entsprechenden Nettostückpreis der Bestellung abgeglichen. Der Nettostückpreis ergibt sich aus der folgenden Formel: Nettobetrag der Position / die Menge der Position.
--   Preissummenabgleich – Die Preisinformationen beim zweiseitigen oder dreiseitigen Abgleich werden durch einen Vergleich des Nettobetrags (Preissumme) jeder Rechnungsposition mit dem entsprechenden Nettobetrag der Bestellung abgeglichen. Der Nettobetrag ergibt sich aus der folgenden Formel: *(Einheitspreis \* Positionsmenge) + Positionszuschläge - Positionsrabatte*. Bei einem Abgleich der Preissummen nach Prozentsatz vergleicht das System Werte mithilfe der Transaktionswährung. Bei einem Abgleich der Preissummen nach Menge vergleicht das System die Werte mithilfe der Buchungswährung. Wenn Sie eine Bestellposition teilweise in Rechnung stellen, erfolgt die Validierung des Preis-Gesamt-Abgleichs auf der letzten Rechnung für diese Position. 
+-   **Nettopreisabgleich** - Gleichen Sie Preisinformationen für den Zwei- oder Drei-Wege-Abgleich ab, indem Sie den Netto-Einheitspreis für jede Zeile auf der Rechnung mit dem entsprechenden Netto-Einheitspreis auf der Bestellung vergleichen. Der Nettostückpreis ergibt sich aus der folgenden Formel: Nettobetrag der Position / die Menge der Position.
+-   **Preissummenabgleich** - Gleichen Sie Preisinformationen für den Zwei- oder Drei-Wege-Abgleich ab, indem Sie den Nettobetrag (Preissumme) für jede Zeile auf der Rechnung mit dem entsprechenden Nettobetrag auf der Einkaufsrechnung vergleichen. Der Nettobetrag ergibt sich aus der folgenden Formel: *(Einheitspreis \* Positionsmenge) + Positionszuschläge - Positionsrabatte*. Bei einem Abgleich der Preissummen nach Prozentsatz vergleicht das System Werte mithilfe der Transaktionswährung. Bei einem Abgleich der Preissummen nach Menge vergleicht das System die Werte mithilfe der Buchungswährung. Wenn Sie eine Bestellposition teilweise in Rechnung stellen, erfolgt die Validierung des Preis-Gesamt-Abgleichs auf der letzten Rechnung für diese Position. 
 
-Rechnungsabgleichsberechnungen werden in der Regel ausgeführt, wenn Kreditorenrechnungen auf der Seite "Kreditorenrechnung" bearbeitet werden. Alternativ kann der Rechnungsabgleich bei Bedarf ausgeführt werden, falls erforderlich. Der Rechnungsabgleich bei Bedarf wird für die juristischen Person über "Rechnungskopfstatus automatisch aktualisieren" auf der Seite "Kreditorenkontenparameter" in der Registerkarte "Rechnungsprüfung" durchgeführt. Der Rechnungsabgleich kann auch im Rahmen eines Rechnungsprüfungsprozesses erfolgen. Sie können die Ergebnisse eines Rechnungsabgleichs auf der Seite "Kreditorenrechnung" und den zugehörigen Rechnungsabgleichseiten anzeigen.
+Normalerweise werden die Berechnungen für den Rechnungsabgleich automatisch durchgeführt, wenn Sie Lieferantenrechnungen auf der Seite **Lieferantenrechnung** bearbeiten. Alternativ kann der Rechnungsabgleich bei Bedarf ausgeführt werden, falls erforderlich. Der Rechnungsabgleich bei Bedarf wird für die juristische Entität über den Kopfstatus **Rechnung automatisch aktualisieren** auf der Seite **Kreditorenparameter** auf der Registerkarte **Rechnungsvalidierung** gesteuert. Der Rechnungsabgleich kann auch als Teil einer Rechnungsprüfung durchgeführt werden. Sie können die Ergebnisse des Rechnungsabgleichs auf der Seite **Lieferantenrechnung** und den zugehörigen Rechnungsabgleichsseiten einsehen.
 
 ## <a name="invoice-totals-matching"></a>Rechnungssummenabgleich
-Mit dem Rechnungssummenabgleich können Sie sicherstellen, dass die Abweichung der Gesamtbeträge in Rechnungen von den erwarteten Beträgen in einem akzeptablen Rahmen bleibt. Sechs Summen werden auf der Seite "Detailabgleich für Rechnungssummen" verglichen (siehe folgende Tabelle). Wenn die zulässige Toleranz für den Rechnungssummenabgleich bei 20 % liegt, wird der Abweichungsprozentsatz von 100 % für den Gesamtrabattbetrag als Abgleichsabweichung angesehen.
+Mit dem Rechnungssummenabgleich können Sie sicherstellen, dass die Abweichung der Gesamtbeträge in Rechnungen von den erwarteten Beträgen in einem akzeptablen Rahmen bleibt. Auf der Seite **Summen der Rechnungen, die mit den Details übereinstimmen** werden sechs Summen verglichen, wie in der folgenden Tabelle dargestellt. Wenn die zulässige Toleranz für den Rechnungssummenabgleich bei 20 % liegt, wird der Abweichungsprozentsatz von 100 % für den Gesamtrabattbetrag als Abgleichsabweichung angesehen.
 
 | Summenfeld    | Tatsächliche Rechnungssumme | Erwartete Rechnungssumme | Abweichung in Prozent | Status des Abgleichs |
 |----------------|----------------------|------------------------|---------------------|--------------|
@@ -64,7 +64,7 @@ Mit dem Rechnungssummenabgleich können Sie sicherstellen, dass die Abweichung d
 | Rundung      | 0,00                 | 0,00                   | 0 %                  | Erfolgreich       |
 | Rechnungsbetrag | 699,88               | 687,50                 | 2 %                  | Erfolgreich       |
 
-Der Rechnungssummenabgleich wird für die juristischen Person über die Option "Rechnungssummen abgleichen" auf der Kreditorenparameterseite gesteuert. Der Abgleich wird basierend auf den erwarteten Rechnungssummen und den tatsächlichen Summen ausgeführt. Die Berechnung der erwarteten Rechnungssummen erfolgt basierend auf den Preisen, Zuschlägen und Mehrwertsteuerinformationen aus der Bestellung und auf den Mengen aus der Rechnung.
+Der Abgleich von Rechnungssummen wird für die juristische Entität über die Schaltfläche **Rechnungssummen abgleichen** auf der Seite **Kreditorenparameter** gesteuert. Der Abgleich wird basierend auf den erwarteten Rechnungssummen und den tatsächlichen Summen ausgeführt. Die Berechnung der erwarteten Rechnungssummen erfolgt basierend auf den Preisen, Zuschlägen und Mehrwertsteuerinformationen aus der Bestellung und auf den Mengen aus der Rechnung.
 
 ## <a name="two-way-price-totals-matching"></a>Zweiseitiger Preissummenabgleich
 Mit dem zweiseitigen Abgleich können Sie sicherstellen, dass die Abweichung zwischen den Preisinformationen auf der Bestellung und den Rechnungen in einem akzeptablen Rahmen bleibt. Sie können die Preisinformationen für den Nettobetrag der einzelnen Rechnungspositionen sowie alle ausstehenden und bereits gebuchten Rechnungspositionen mit den Nettobetrag der entsprechenden Bestellposition vergleichen. Dieser Vorgang wird Preissummenabgleich genannt. 
@@ -74,33 +74,33 @@ Der Preissummenabgleich kann auf einem Prozentsatz, einem Betrag oder auf einem 
 Wenn der Toleranzprozentsatz einer Einkaufspreissumme angegeben wird, werden fünf Felder verglichen (siehe folgende Tabelle). Da der Toleranzprozentsatz der Einkaufspreissumme bei 10 % liegt, stellt der Prozentsatz der Preissummenabweichung von 50 % ein Abgleichsabweichung dar.
 
 | Status des Abgleichs | Nettobetrag der Rechnung | Erwarteter Nettobetrag | Nicht abgeglichene Einkaufspreissumme (Abweichungsbetrag) | Nicht abgeglichene Einkaufspreissumme in Prozent (Abweichung in Prozent) | Toleranz für die Einkaufspreissumme in Prozent |
-|--------------|--------------------|---------------------|--------------------------------------------------|-----------------------------------------------------------------|----------------------------------------|
-| Erfolgreich       | 105,00             | 100,00              | 5,00                                             | 5 %                                                              | 10 %                                    |
-| Fehlgeschlagen       | 150,00             | 100,00              | 50,00                                            | 50 %                                                             | 10 %                                    |
+|--------------|--------------------|---------------------|--------------------------------------------------|--------------------------------|---------------------------|
+| Erfolgreich       | 105,00             | 100,00              | 5,00                                             | 5 %                             | 10 %                 |
+| Fehlgeschlagen       | 150,00             | 100,00              | 50,00                                            | 50 %                            | 10 %                     |
 
 Wenn der Toleranzbetrag einer Einkaufspreissumme angegeben wird, werden fünf Felder verglichen (siehe folgende Tabelle). Da der Toleranzbetrag der Einkaufspreissumme bei 100,00 EUR liegt, stellt der Betrag der Preissummenabweichung von 105,00 EUR ein Abgleichsabweichung dar.
 
 | Status des Abgleichs | Nettobetrag der Rechnung | Erwarteter Nettobetrag | Nicht abgeglichene Einkaufspreissumme (Abweichungsbetrag) | Nicht abgeglichene Einkaufspreissumme in Buchhaltungswährung (Abweichungsbetrag) | Toleranz für die Einkaufspreissumme |
-|--------------|--------------------|---------------------|--------------------------------------------------|-------------------------------------------------------------------------|--------------------------------|
-| Erfolgreich       | 150,00             | 100,00              | 50,00                                            | 50,00                                                                   | 100,00                         |
-| Fehlgeschlagen       | 205,00             | 100,00              | 105,00                                           | 105,00                                                                  | 100,00                         |
+|--------------|--------------------|---------------------|-----------------------------------------------|-------------------------------|--------------------------------|
+| Erfolgreich       | 150,00             | 100,00              | 50,00                                            | 50,00                    | 100,00                         |
+| Fehlgeschlagen       | 205,00             | 100,00              | 105,00                                           | 105,00                  | 100,00                         |
 
 Wenn der Preissummenabgleich mit einen Toleranzprozentsatz und einem Toleranzbetrag (auch als nicht zu überschreitender Betrag bezeichnet) eingerichtet ist, werden beide Toleranzen bei der Auswertung, ob bei der Position eine Abgleichsabweichung vorliegt, berücksichtigt. Überschreitet der Prozentsatz oder der Betrag den Toleranzwert, weist die Position eine Abgleichsabweichung auf, wie an den Positionen 150,00 und 205,00 in der folgenden Tabelle zu sehen ist.
 
 | Status des Abgleichs | Nettobetrag der Rechnung | Erwarteter Nettobetrag | Nicht abgeglichene Einkaufspreissumme in Prozent (Abweichung in Prozent) | Toleranz für die Einkaufspreissumme in Prozent | Nicht abgeglichene Einkaufspreissumme in Buchhaltungswährung (Abweichungsbetrag) | Toleranz für die Einkaufspreissumme |
-|--------------|--------------------|---------------------|-----------------------------------------------------------------|----------------------------------------|-------------------------------------------------------------------------|--------------------------------|
-| Erfolgreich       | 105,00             | 100,00              | 5 %                                                              | 10 %                                    | 5,00                                                                    | 100,00                         |
-| Fehlgeschlagen       | 150,00             | 100,00              | 50 %                                                             | 10 %                                    | 50,00                                                                   | 100,00                         |
-| Fehlgeschlagen       | 205,00             | 100,00              | 105 %                                                            | 10 %                                    | 105,00                                                                  | 100,00                         |
+|--------------|--------------------|---------------------|-----------------------------|------------------|----------------------------------|--------------------------------|
+| Erfolgreich       | 105,00             | 100,00              | 5 %                     | 10 %                         | 5,00           | 100,00                         |
+| Fehlgeschlagen       | 150,00             | 100,00              | 50 %                   | 10 %                     | 50,00            | 100,00                         |
+| Fehlgeschlagen       | 205,00             | 100,00              | 105 %                 | 10 %                      | 105,00                                  | 100,00                         |
 
-Der zweiseitige Rechnungssummenabgleich wird für die juristische Person gesteuert, die im Feld Positionsabgleichsrichtlinien der Seite Kreditorenparameter angegeben ist. Abhängig von der Auswahl im Feld "Überschreiben der Abgleichsrichtlinie zulassen" können Sie einen zweiseitigen Abgleich für einen bestimmten Kreditor, Artikel oder eine Kombination aus Artikel und Kreditor auf der Seite "Abgleichsrichtlinie" und für eine bestimmte Bestellung auf der Seite "Bestellung" auswählen.
+Der zweiseitige Abgleich wird für die juristische Entität über das Feld **Zeilenabgleichsrichtlinie** auf der Seite **Kreditorenparameter** gesteuert. Abhängig von der Auswahl im Feld **Richtlinie zum Abgleich zulassen** können Sie auf der Seite **Richtlinie zum Abgleich** einen beidseitigen Abgleich für einen bestimmten Lieferanten, ein Element oder eine Kombination aus Element und Lieferant und auf der Seite **Bestellung** für eine bestimmte Bestellung auswählen.
 
-Der Preissummenabgleich wird für die juristischen Person über die Option "Preissummen abgleichen" auf der Kreditorenparameterseite gesteuert. Der Toleranzprozentsatz einer Einkaufspreissumme und der Toleranzbetrag (nicht zu überschreitender Betrag) werden ebenfalls auf dieser Seite angegeben.
+Der Abgleich von Preissummen wird für die juristische Entität über das Feld **Preissummen abgleichen** auf der Seite **Kreditorenparameter** gesteuert. Der Toleranzprozentsatz einer Einkaufspreissumme und der Toleranzbetrag (nicht zu überschreitender Betrag) werden ebenfalls auf dieser Seite angegeben.
 
 ## <a name="two-way-net-unit-price-matching"></a>Zweiseitiger Nettostückpreis-Abgleich
 Mit dem zweiseitigen Abgleich können Sie sicherstellen, dass die Abweichung zwischen den Preisinformationen auf der Bestellung und der Rechnung in einem akzeptablen Rahmen bleibt. Sie können die Preisinformationen für den Nettostückpreis der einzelnen Artikel in der Rechnung vergleichen. Dieser Vorgang ist der Nettostückpreis-Abgleich. 
 
-Neun Positionsbeträge werden auf der Seite "Details zum Rechnungsabgleich" verglichen (siehe folgende Tabelle). Wenn die zulässige Preistoleranz für den Nettostückpreis-Abgleich bei 10 % liegt, wird der Abweichungsprozentsatz von 22,61 % für den Nettostückpreis als Abgleichsabweichung angesehen.
+Auf der Seite **Details zum Rechnungsabgleich** werden neun Zeilenbeträge verglichen, wie in der folgenden Tabelle dargestellt. Wenn die zulässige Preistoleranz für den Nettostückpreis-Abgleich bei 10 % liegt, wird der Abweichungsprozentsatz von 22,61 % für den Nettostückpreis als Abgleichsabweichung angesehen.
 
 | Positionsfeld                    | Rechnungswert | Wert der Erstbestellung | Abweichung in Prozent | Status des Abgleichs |
 |-------------------------------|---------------|----------------------|---------------------|--------------|
@@ -114,9 +114,9 @@ Neun Positionsbeträge werden auf der Seite "Details zum Rechnungsabgleich" verg
 | Nettobetrag                    | 271,60        | 221,52               | 22,61 %              | Fehlgeschlagen       |
 | Nettostückpreis                | 67,9000       | 55,3800              | 22,61 %              | Fehlgeschlagen       |
 
-Der zweiseitige Rechnungssummenabgleich wird für die juristische Person gesteuert, die im Feld Positionsabgleichsrichtlinien der Seite Kreditorenparameter angegeben ist. Abhängig von der Auswahl im Feld "Überschreiben der Abgleichsrichtlinie zulassen" können Sie einen zweiseitigen Abgleich für einen bestimmten Kreditor, Artikel oder eine Kombination aus Artikel und Kreditor auf der Seite "Abgleichsrichtlinie" und für eine bestimmte Bestellung auf der Seite "Bestellung" auswählen. 
+Der zweiseitige Abgleich wird für die juristische Entität über das Feld **Zeilenabgleichsrichtlinie** auf der Seite **Kreditorenparameter** gesteuert. Abhängig von der Auswahl im Feld **Richtlinie zum Abgleich zulassen** können Sie auf der Seite **Richtlinie zum Abgleich** einen beidseitigen Abgleich für einen bestimmten Lieferanten, ein Element oder eine Kombination aus Element und Lieferant und auf der Seite **Bestellung** für eine bestimmte Bestellung auswählen. 
 
-Der Nettostückpreisabgleich wird für die juristischen Person über die Option "Rechnungsabgleichüberprüfung aktivieren" auf der Kreditorenparameterseite gesteuert. Die Toleranzprozentsätze für Nettostückpreise können auf der Seite "Preistoleranzen" für Artikel, Artikelgruppen, Kreditoren, Kreditorengruppen, Kombinationen aus Artikel und Kreditor oder für eine juristische Person konfiguriert werden.
+Der Abgleich des Nettopreises pro Einheit wird für die juristische Entität über das Feld **Überprüfung des Rechnungsabgleichs aktivieren** auf der Seite **Parameter für Verbindlichkeiten** gesteuert. Die prozentualen Toleranzen für den Netto-Einheitspreis können für Artikel, Artikelgruppen, Lieferanten, Lieferantengruppen, Artikel- und Lieferantenkombinationen oder juristische Entitäten über die Seite **Preistoleranzen** konfiguriert werden.
 
 ## <a name="two-way-price-totals-matching-and-net-unit-price-matching"></a>Zweiseitiger Preissummenabgleich und Nettostückpreis-Abgleich
 Preissummenabgleich und Nettostückpreis-Abgleich können zusammen verwendet werden. Das folgende Beispiel basiert auf folgender Konfiguration:
@@ -162,10 +162,10 @@ Auf der Seite "Details zum Rechnungsabgleich" werden dieselben Positionsbeträge
 | Rechnungsmenge               | 4,00          |              |
 | Gesamtanzahl abgeglichener Produktzugänge | 0,00          | Fehlgeschlagen       |
 
-Der dreiseitige Rechnungssummenabgleich wird für die juristische Person gesteuert, die im Feld Positionsabgleichsrichtlinien der Seite Kreditorenparameter angegeben ist. Abhängig von der Auswahl im Feld "Überschreiben der Abgleichsrichtlinie zulassen" können Sie einen dreiseitigen Abgleich für einen bestimmten Kreditor, Artikel oder eine Kombination aus Artikel und Kreditor auf der Seite "Abgleichsrichtlinie" und für eine bestimmte Bestellung auf der Seite "Bestellung" auswählen.
+Der dreifache Abgleich wird für die juristische Entität über das Feld **Zeilenabgleichsrichtlinie** auf der Seite **Kreditorenparameter** gesteuert. Abhängig von der Auswahl im Feld **Außerkraftsetzen von übereinstimmenden Richtlinien zulassen** können Sie auf der Seite **Übereinstimmende Richtlinie** den dreifachen Abgleich für einen bestimmten Lieferanten, ein Element oder eine Kombination aus Element und Lieferant und auf der Seite **Bestellung** für eine bestimmte Bestellung auswählen.
 
 ## <a name="charges-matching"></a>Abgleich von Belastungen
-Mit dem Abgleich für Zuschläge können Sie sicherstellen, dass die Abweichung der Zuschlagsbeträge von den erwarteten Beträgen in einem akzeptablen Prozentrahmen bleibt. Die Gesamtbeträge der einzelnen Zuschlagscodes, die für die Rechnung und die Bestellung gelten, werden auf der Seite „Werte für Belastungen vergleichen - Rechnung:“, wie in der folgenden Tabelle dargestellt. Wenn die zulässige Toleranz für den Zuschlagscode bei 25 % liegt, wird der Abweichungsprozentsatz von 99.999.999.999,99 % für den Zuschlagscode "Lizenz" als Abgleichsabweichung angesehen.
+Mit dem Abgleich für Zuschläge können Sie sicherstellen, dass die Abweichung der Zuschlagsbeträge von den erwarteten Beträgen in einem akzeptablen Prozentrahmen bleibt. Die Gesamtbeträge für jeden Gebührencode, der für die Rechnung und die Bestellung gilt, werden auf der Seite **Vergleich Gebührenwerte - Rechnung:** verglichen, wie in der folgenden Tabelle dargestellt. Wenn die zulässige Toleranz für den Gebührencode 25% beträgt, wird die prozentuale Abweichung von 99.999.999.999,99% für den **Lizenzgebührencode** als übereinstimmende Diskrepanz betrachtet.
 
 > [!NOTE] 
 > Ein Abweichungsprozentsatz von 99.999.999.999,99 % bedeutet, dass der auf der Bestellung basierende erwartete Betrag null und der tatsächliche Betrag der Rechnung ein positiver Wert ist. 
@@ -176,10 +176,10 @@ Mit dem Abgleich für Zuschläge können Sie sicherstellen, dass die Abweichung 
 | Erfolgreich               | Fracht              | 200                           | 200                             | 0               | 0 %                  | 25 %                  |
 | Fehlgeschlagen               | Eillieferung             | 4                             | 2                               | 2               | 100 %                | 25 %                  |
 
-Der Abgleich von Belastungen wird für die juristischen Person über die Option "Belastungen abgleichen" auf der Kreditorenparameterseite gesteuert. Sie können Toleranzprozentsätze für Abweichungen bei Zuschlägen auf der Seite "Toleranzen für Belastungen" einrichten.
+Der Abgleich von Belastungen wird für die juristische Entität durch den Schalter **Belastungen abgleichen** auf der Seite **Kostenpflichtige Parameter** gesteuert. Auf der Seite **Toleranzen für Belastungen** können Sie prozentuale Abweichungstoleranzen für Belastungen festlegen.
 
 > [!NOTE]
-> Der Abgleich für Zuschläge wird nur bei Zuschlägen ausgeführt, für die die Option "Bestellungs- und Rechnungswerte vergleichen" auf der Belastungscodeseite aktiviert ist.
+> Der Abgleich von Belastungen wird nur für Kostencodes durchgeführt, für die auf der Seite **Kostencode** das Umschaltfeld **Bestell- und Rechnungswerte vergleichen** ausgewählt ist.
 
 ## <a name="related-functionality"></a>Zugehörige Funktionen
 Kreditorenrechnungen basieren häufig auf Produktzugängen, die für die tatsächlichen Lieferungen stehen, und weniger auf Bestellungen. In manchen Fällen stimmen die fakturierten Beträge nicht mit den Beträgen der Bestellung überein, in anderen liegt eine Diskrepanz zwischen der Liefermenge und der fakturierten Menge vor. Sie haben folgende Möglichkeiten, um die Verwaltung dieser Informationen zu vereinfachen:

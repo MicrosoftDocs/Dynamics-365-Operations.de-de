@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: f5b3c013996253de75cd85c4bcfc52ed159e8f9d
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: 88f1e9ef8c8b2aa494c44ea3b33713adc470eb96
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860507"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384796"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Einstieg in die Globale Bestandsbuchhaltung
 
@@ -121,7 +121,7 @@ Führen Sie die folgenden Schritte aus, um die Integration zwischen Globaler Bes
 1. Melden Sie sich im Supply Chain Management an.
 1. Gehen Sie zu **Systemadministration \> Funktion Management**.
 1. Wählen Sie **Nach Updates suchen**.
-1. Suchen Sie auf der Registerkarte **Alle** nach der Funktion mit dem Namen *Globale Bestandsbuchhaltung*.
+1. Suchen Sie auf der Registerkarte **Alle** nach der Funktion mit dem Namen *(Vorschau) Globale Bestandsbuchhaltung*.
 1. Wählen Sie **Jetzt aktivieren**.
 1. Gehen Sie zu **Globale Bestandsbuchhaltung \> Einrichten \> Globale Bestandsbuchhaltungsparameter \> Integrationsparameter**.
 1. Geben Sie in die Felder **Datendienst-Endpunkt** und **Endpunkt Globale Bestandsbuchhaltung** die URLs aus der E-Mail ein, die das Team der Globalen Bestandsbuchhaltung bei der Anmeldung für die Vorschau gesendet hat.

@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: afc1b5996667835c460f467526493380aa2d6403
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 9174612743c68595d12dd223f0932ace1857c0fb
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062085"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358363"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Organisationshierarchie in Dataverse
 
@@ -36,11 +36,11 @@ Für die einseitige Synchronisierung von Daten aus Apps für Finanzen und Betrie
 
 ## <a name="templates"></a>Vorlagen
 
-Produktinformationen enthält alle Informationen, die mit dem Produkt und seiner Definition in Verbindung stehen, z. B. den Produktdimensionen oder den Nachverfolgungs- und Lagerdimensionen. Wie die folgende Tabelle zeigt, wird eine Sammlung von Tabellenzuordnungen erstellt, um Produkte und zugehörige Informationen zu synchronisieren.
+Eine Organisation ist eine Gruppe von Personen, die zusammenarbeiten, um einen Geschäftsprozess durchzuführen oder ein Ziel zu erreichen. Organisationshierarchien stellen die Beziehungen zwischen den Organisationen dar, aus denen das Unternehmen besteht. Sie können die folgenden Typen von internen Organisationen definieren: juristische Personen, Organisationseinheiten und Teams. Wie die folgende Tabelle zeigt, wird eine Sammlung von Tabellenzuordnungen erstellt, um die juristischen Entitäten, die operativen Einheiten und die zugehörigen Hierarchieinformationen der Organisation zu synchronisieren.
 
-Finance and Operations-Apps | Customer Engagement-Apps     | Beschreibung
+Finance and Operations-Apps | Customer Engagement-Apps     | Description
 -----------------------|--------------------------------|---
-[Juristische Personen](mapping-reference.md#102) | cdm_companies | Bietet eine bidirektionale Synchronisierung von Daten von juristischen Person (Unternehmen).
+[Juristische Personen](mapping-reference.md#102) | cdm_companies | 
 [Juristische Personen](mapping-reference.md#142) | msdyn_internalorganizations |
 [Organisationseinheit](mapping-reference.md#143) | msdyn_internalorganizations |
 [Organisationshierarchie – veröffentlicht](mapping-reference.md#139) | msdyn_internalorganizationhierarchies | Diese Vorlage bietet eine unidirektionale Synchronisierung der Tabelle „Veröffentlichte Organisationshierarchie“.

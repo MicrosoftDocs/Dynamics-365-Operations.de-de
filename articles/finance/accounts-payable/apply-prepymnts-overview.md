@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 5b07c1d4c2189184b2ad29d46ec2aef0ee03c1c0
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 8583962c41a7ac5e27463f325ddc2ccd367331cc
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985361"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358218"
 ---
 # <a name="automatically-apply-to-vendor-invoices"></a>Automatisch auf Kreditorenrechnungen anwenden
 
@@ -36,12 +36,12 @@ Die folgenden Punkte beschreiben, wie Vorauszahlungen bei verschiedenen Einkaufs
 - **Mehrere Kreditorenrechnungen pro Bestellung** – Die Vorauszahlung der Bestellung wird auf die erste importierte Lieferantenrechnung verrechnet. Wenn der Vorauszahlungsbetrag den Rechnungsbetrag übersteigt, schlägt der Vorauszahlungsantrag fehl und Sie müssen die Vorauszahlung manuell anwenden.
 - **Mehrere Kreditorenrechnungen für mehrere Bestellungen** – Die Vorauszahlungen der Bestellungen werden auf die erste relevante Rechnung verrechnet. Wenn der Vorauszahlungsbetrag den Rechnungsbetrag übersteigt, schlägt der Vorauszahlungsantrag fehl und Sie müssen die Vorauszahlungen manuell anwenden. Wenn Vorauszahlungen, die nach Vorauszahlungen verbleiben, auf die erste Rechnung angewendet werden, können sie auf die folgenden Rechnungen angewendet werden.
 
-Wenn das System versucht, eine Vorauszahlung anzuwenden, die Anwendung jedoch fehlschlägt, hängt das Verhalten von der Einstellung der Option **Folgeautomatisierungsprozess für den Fall nlovkirtrn, dass der Antrag auf Vorauszahlung fehlschlägt**:
+Wenn der Versuch, eine Vorauszahlung zu beantragen, fehlschlägt, bestimmt die Einstellung der Option **Nachfolge-Automatisierungsprozess bei fehlgeschlagenem Vorauszahlungsantrag sperren** die nächsten Schritte:
 
 - **Ja** – Die Fehlermeldung „Automatische Beantragung der Vorauszahlung: fehlgeschlagen“ wird in die Automatisierungshistorie aufgenommen und die Rechnung verbleibt in der Liste der offenen Kreditorenrechnungen. Die Rechnung bleibt gesperrt, bis Sie die Vorauszahlung manuell vornehmen.
 
-    Um Vorauszahlungen manuell anzuwenden, rufen Sie die ausstehende Kreditorenrechnung auf. Stellen Sie auf der **Rechnungsdetails**-Seite die Option **In die automatisierte Verarbeitung einbeziehen** für die gesperrte Rechnung auf **Nein**. Sie können die Vorauszahlung nun manuell anwenden. Nachdem die Vorauszahlung verrechnet wurde, stellen Sie die Option **In die automatisierte Verarbeitung einbeziehen** zurück auf **Ja**, damit die Rechnung automatisch verarbeitet werden kann.
+Um Vorauszahlungen manuell anzuwenden, rufen Sie die ausstehende Kreditorenrechnung auf. Stellen Sie auf der **Rechnungsdetails**-Seite die Option **In die automatisierte Verarbeitung einbeziehen** für die gesperrte Rechnung auf **Nein**. Sie können die Vorauszahlung nun manuell anwenden. Nachdem die Vorauszahlung verrechnet wurde, stellen Sie die Option **In die automatisierte Verarbeitung einbeziehen** zurück auf **Ja**, damit die Rechnung automatisch verarbeitet werden kann.
 
-    Sie können die automatische Beantragung der Vorauszahlung auch umgehen, indem Sie die Option **In die automatisierte Verarbeitung einbeziehen** auf **Nein** und dann wieder auf **Ja** stellen. Sie erhalten folgende Meldung: „Für die Bestellung ist bereits eine Vorauszahlung vorhanden. Möchten Sie sie für die ausgewählte Kreditorenrechnung ignorieren?“ Wählen Sie **Ja** aus. Die Meldung „Antrag der Vorauszahlung manuell umgangen“ wird in der Automatisierungshistorie hinzugefügt und die Kreditorenrechnung wird nicht gesperrt, wenn der automatisierte Prozess erneut ausgeführt wird.
+Sie können die automatische Beantragung der Vorauszahlung auch umgehen, indem Sie die Option **In die automatisierte Verarbeitung einbeziehen** auf **Nein** und dann wieder auf **Ja** stellen. Sie erhalten folgende Meldung: „Für die Bestellung ist bereits eine Vorauszahlung vorhanden. Möchten Sie sie für die ausgewählte Kreditorenrechnung ignorieren?“ Wählen Sie **Ja** aus. Die Meldung „Antrag der Vorauszahlung manuell umgangen“ wird in der Automatisierungshistorie hinzugefügt und die Kreditorenrechnung wird nicht gesperrt, wenn der automatisierte Prozess erneut ausgeführt wird.
 
 - **Nein** – Folgeautomatisierungsprozesse werden fortgesetzt. Sie können die Vorauszahlung noch während der Abrechnung anwenden.

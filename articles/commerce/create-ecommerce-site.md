@@ -2,7 +2,7 @@
 title: E-Commerce-Website erstellen
 description: In diesem Thema werden die Schritte und Informationen beschrieben, die zum Erstellen einer neuen E-Commerce-Website im Dynamics 365 Commerce-Website-Generator erforderlich sind.
 author: bicyclingfool
-ms.date: 02/03/2022
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 01f22772fd8c8984a2f92c516972d6659325a18c
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 5e451b1c95c3e26d1292e7b8300b62af43c81f2f
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090768"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388210"
 ---
 # <a name="create-an-e-commerce-site"></a>E-Commerce-Website erstellen
 
@@ -30,6 +30,19 @@ ms.locfileid: "8090768"
 In diesem Thema werden die Schritte und Informationen beschrieben, die zum Erstellen einer neuen E-Commerce-Website im Dynamics 365 Commerce-Website-Generator erforderlich sind.
 
 Wenn Sie die Dynamics 365 Commerce-Funktionen lizenzieren, wird der Website-Generator mit einer Starter Site bereitgestellt, die Sie als Grundlage für Ihre eigene Website verwenden können. Wenn Sie jedoch von Grund auf neu beginnen oder eine zweite Site einrichten möchten, müssen Sie eine neue Site in der Site-Erstellungsumgebung einrichten. 
+
+## <a name="site-creation-prerequisites"></a>Voraussetzungen für die Erstellung von Websites
+
+Ein Site Builder-Benutzer muss über ein Microsoft Azure Active Directory (Azure AD)-Benutzerkonto verfügen, das in der Sicherheitsgruppe Azure AD enthalten ist, die für die E-Commerce-Systemadministratoren zugewiesen wurde. Weitere Informationen finden Sie unter [Einrichten eines neuen E-Commerce-Mandanten](deploy-ecommerce-site.md).
+
+> [!NOTE]
+> Azure AD-Gastbenutzer können in Ihrem Azure AD-Mandanten unterschiedliche Zugriffsberechtigungen haben. Selbst wenn ein Gastbenutzer in der Sicherheitsgruppe Azure AD enthalten ist, die den Systemadministratoren für E-Commerce zugewiesen wurde, müssen die Berechtigungs-Einstellungen für Azure AD **Externe Benutzer** angepasst werden, um eine E-Commerce-Seite in Commerce erstellen zu können. 
+
+Um die Azure AD Einstellungen für **externe Benutzer** festzulegen, gehen Sie folgendermaßen vor.
+
+1. Navigieren Sie im Azure-Portal zu Ihrem Azure AD Mandant.
+1. Gehen Sie auf **Benutzereinstellungen \> Externe Benutzer** und wählen Sie den Link **Einstellungen für externe Zusammenarbeit verwalten**. Öffnet die Seite **Einstellungen für die externe Zusammenarbeit**, auf der Sie den Zugriff von Gastbenutzern, die Einstellungen für Gasteinladungen und Einschränkungen für die Zusammenarbeit festlegen können. 
+1. Passen Sie die Einstellungen für die externe Zusammenarbeit in Übereinstimmung mit den Sicherheitsrichtlinien Ihrer Firma an. 
 
 ## <a name="set-up-your-site"></a>Site einrichten
 

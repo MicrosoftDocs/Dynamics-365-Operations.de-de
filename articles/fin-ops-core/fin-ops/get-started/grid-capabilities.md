@@ -2,7 +2,7 @@
 title: Rasterfunktionen
 description: In diesem Thema werden mehrere leistungsstarke Funktionen der Rastersteuerung beschrieben. Sie müssen die neue Rasterfunktion aktivieren, damit auf diese Fähigkeiten zugegriffen werden kann.
 author: jasongre
-ms.date: 02/01/2022
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 83d0b6243efd802ffc959f8de14f6232736fc88c
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 58a05f893549a8b9e2e5cb83d02475d0fb5b7277
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087573"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384439"
 ---
 # <a name="grid-capabilities"></a>Rasterfunktionen
 
@@ -67,7 +67,10 @@ Wenn Sie einen Fehler gemacht haben und keine Summe mehr in einer bestimmten Spa
 ### <a name="calculating-totals"></a>Summen berechnen
 Wenn Sie zu einer Seite mit sichtbarer Fußzeile und Spalten kommen, die bereits für Summen konfiguriert sind, werden Summen möglicherweise in der Fußzeile angezeigt oder nicht. Das Verhalten ist abhängig von der Größe des Datasets auf der Seite. Wenn das Dataset ausreichend klein ist, werden automatisch die Gesamtsummen sowie die Anzahl der Zeilen im Dataset angezeigt. Befinden sich in der Fußzeile unter den Spalten, die Sie für Gesamtsummen konfiguriert haben, Bindestriche, ist das Dataset zu groß für das System, um Gesamtsummen sofort anzuzeigen. Eine explizite Aktion ist erforderlich, um die Gesamtsummen zu berechnen. Klicken Sie dazu auf die Schaltfläche **Berechnung** in der Fußzeile oder klicken Sie mit der rechten Maustaste auf eine Spalte, für die Sie eine Gesamtsumme wünschen, und wählen Sie **Summe für diese Spalte** aus.
 
-Wenn die Berechnung zu lange dauert, können Sie den Vorgang abbrechen, indem Sie **Abbrechen** auswählen. Manchmal ist das Dataset jedoch zu groß, um Summen zu berechnen (eine von Ihrer Organisation aufgelegte Beschränkung). In diesem Fall werden Sie aufgefordert, die Daten stärker zu filtern.
+Wenn die Berechnung sehr lange dauert, können Sie den Vorgang durch Auswahl der Schaltfläche **Abbrechen** abbrechen. Manchmal ist das Dataset zu groß, um Summen zu berechnen (eine von Ihrem Unternehmen auferlegte Grenze), und Sie werden stattdessen benachrichtigt, Ihre Daten stärker zu filtern. 
+
+> [!NOTE]
+> Systemadministratoren können das Limit für die Anzahl der Datensätze, die für die Berechnung von Summen zur Verfügung stehen, ändern, indem sie den Parameter **Maximale Anzahl lokaler Datensätze für jedes Raster** auf der Seite **Client-Leistungsoptionen** anpassen. Der Standardwert ist 25.000 Datensätze. Administratoren sollten bei der Anpassung dieses Wertes vorsichtig sein, da ein zu großer Wert den verfügbaren Speicher auf dem Rechner des Benutzers erschöpfen kann. Es wird empfohlen, 50.000 Datensätze nicht zu überschreiten.   
 
 Die Summen werden automatisch aktualisiert, wenn Sie Zeilen im Dataset aktualisieren, löschen oder erstellen.
 

@@ -2,7 +2,7 @@
 title: Die Benutzerumgebung personalisieren
 description: In diesem Thema wird erläutert, wie Sie die App personalisieren können.
 author: jasongre
-ms.date: 01/28/2022
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 840a68d506664043c9affb67e801429e0594f0bd
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 4bdce3cd12358112e40a783c73795bd6f35545c8
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075421"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384642"
 ---
 # <a name="personalize-the-user-experience"></a>Die Benutzerumgebung personalisieren
 
@@ -158,6 +158,7 @@ Für mehrere Seiten, die Listen enthalten, ist die Personalisierungsfunktion **Z
 
 - Um eine Liste einem Arbeitsbereich hinzuzufügen, sortieren oder filtern Sie zuerst die Liste auf der Seite, sodass die Informationen so angezeigt werden, wie Sie sie im Arbeitsbereich wünschen. (Wenn die Funktion **Gespeicherte Ansichten** aktiviert ist, können Sie nicht fortfahren, bis Sie eine Ansicht speichern, die den angegebenen Bedingungen entspricht.) Wählen Sie dann **Zum Arbeitsbereich hinzufügen** aus. Wählen Sie einen Arbeitsbereich und dann im Feld **Präsentation** wählen Sie **Liste** aus. Nachdem Sie **Konfigurieren** auswählen, wird ein Dialogfeld angezeigt, wo Sie die Spalten auswählen können, die in der Liste im Arbeitsbereich angezeigt werden sollen. Sie können auch die Beschriftung definieren, die für die Liste im Arbeitsbereich verwendet wird.
 - Um eine Kachel zu einem Arbeitsbereich hinzuzufügen, filtern Sie zuerst die Liste auf der Seite, um die Daten darzustellen, die Sie zusammenfassen möchten (oder auf die Sie schnellen Zugriff wünschen). (Wenn die Funktion **Gespeicherte Ansichten** aktiviert ist, können Sie nicht fortfahren, bis Sie eine Ansicht speichern, die den angegebenen Bedingungen entspricht.) Wählen Sie dann **Zum Arbeitsbereich hinzufügen** aus. Wählen Sie einen Arbeitsbereich und dann im Feld **Präsentation** wählen Sie **Kachel** aus. Nachdem Sie **Konfigurieren** auswählen, wird ein Dialogfeld angezeigt, in dem Sie die Beschriftung angeben können, die für die Kachel im Arbeitsbereich zu verwenden ist. Sie können auch angeben, ob die Kachel eine Anzahl anzeigen soll. Nachdem Sie die Kachel dem Arbeitsbereich hinzugefügt haben, können Sie sie auswählen, um die aktuelle Seite über den Arbeitsbereich zu öffnen. Sie können anschließend die gefilterte Liste anzeigen, die der Kachel zugeordnet ist.
+    - Ab Version 10.0.26 können Sie, wenn die Funktion **Benutzern die Auswahl und Änderung von Kachelgrößen erlauben** aktiviert ist, im Dialog **Kachel konfigurieren** eine von vier verfügbaren **Kachelgrößen** für Ihre neue Kachel auswählen. Diese Funktion lässt auch zu, dass Sie die Größe der Kachel anpassen, nachdem sie direkt aus dem Arbeitsbereich erstellt wurde.   
 - Um einen Link einem Arbeitsbereich hinzuzufügen, filtern Sie zuerst die Liste auf der Seite, sodass Sie die Daten sehen, die für Sie interessant sind. (Wenn die Funktion **Gespeicherte Ansichten** aktiviert ist, können Sie nicht fortfahren, bis Sie eine Ansicht speichern, die den angegebenen Bedingungen entspricht.) Wählen Sie dann **Zum Arbeitsbereich hinzufügen** aus. Wählen Sie einen Arbeitsbereich und dann im Feld **Präsentation** wählen Sie **Link** aus. Nachdem Sie **Konfigurieren** auswählen, wird ein Dialogfeld angezeigt, in dem Sie die Beschriftung angeben können, die für Links im Arbeitsbereich zu verwenden ist. Optional können Sie auch ein Label für den Bereich angeben, in dem dieser Link platziert werden kann. Wenn der Bereich nicht vorhanden ist, wird ein neuer Bereich erstellt.
 
 > [!NOTE]
@@ -168,6 +169,9 @@ Nachdem eine Liste, Kachel oder einen Link dem Arbeitsbereich hinzugefügt wurde
 ### <a name="adding-a-summary-from-a-workspace-to-a-dashboard"></a>Hinzufügen einer Zusammenfassung von einem Arbeitsbereich zu einem Dashboard
 
 Einige Arbeitsbereiche enthalten Zählkacheln (das heißt, Kacheln, die Zahlen enthalten) und Sie wollen möglicherweise diese Kacheln auch auf Ihrem Dashboard anzeigen. Klicken Sie in einem Arbeitsbereich auf eine Anzahlkachel mit der rechten Maustaste, wählen Sie **Anpassen** und anschließend im Eigenschaftenfenster der Kachel **An Dashboard anheften**. Das nächste Mal, wenn Sie das Dashboard öffnen und aktualisieren, finden Sie die Zahl unter der Navigationskachel dieses Arbeitsbereichs. Sie können diese Anzahl auswählen, um direkt zu den Daten zu wechseln, die dargestellt werden.
+
+### <a name="changing-the-size-of-a-tile"></a>Ändern der Größe einer Kachel
+Ab Version 10.0.26 lässt die Funktion **Benutzern erlauben, Kachelgrößen auszuwählen und zu ändern** zu, dass Benutzer die Größe einer beliebigen Nicht-KPI-Kachel über die Personalisierung ändern können. Klicken Sie in einem Arbeitsbereich mit der rechten Maustaste auf eine Kachel und wählen Sie dann **Personalisieren**. Wählen Sie im Eigenschaftsfenster der Kachel die gewünschte Größe aus den Optionen **Kachelgröße**. Die Kachelgröße wird sofort angepasst. Wenn die Funktion **(Vorschau) Gespeicherte Ansichten Unterstützung für Arbeitsbereiche** aktiviert ist, können Sie diese Personalisierung in einer Arbeitsbereichsansicht speichern.  
 
 ### <a name="personalizing-your-dashboard"></a>Ihr Dashboard personalisieren
 

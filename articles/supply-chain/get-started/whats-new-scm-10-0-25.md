@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 8a9b873b7b4bba43b7b3e6e83c389ac35b4e223e
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 068e65d0bd76d7a9af36c6c3539d0c813efd528a
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102995"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384537"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10025-april-2022"></a>Vorschauversion von Dynamics 365 Supply Chain Management 10.0.25 (April 2022)
 
@@ -34,10 +34,10 @@ Die folgende Tabelle listet die Funktionen auf, die in dieser Version enthalten 
 
 | Funktionsbereich | Funktion | Mehr erfahren | Aktiviert von |
 |---|---|---|---|
-| Bestand&nbsp;und&nbsp;Logistik | Erweiterungen zu Gefahrengütern | Diese Erweiterungen bauen auf den bestehenden Funktionen für Gefahrgut auf, um Unternehmen bei der Einhaltung lokaler Vorschriften beim Transport von Gefahrgut über verschiedene Länder hinweg zu unterstützen. <!-- KFM: Update to 2022w1 link when published -->| Funktionsverwaltung:<br>*Erweiterungen zu Gefahrengütern* |
-| Bestand&nbsp;und&nbsp;Logistik | Verpackungsarbeit für Verpackungsstationen | Diese Funktion verbessert die Flexibilität und Agilität Ihrer Verpackungs- und Versandvorgänge erheblich. Während des Packvorgangs können die Arbeitskräfte im Lager nun einzelne Pakete verpacken und versenden, die sich auf dieselbe Sendung und Ladung beziehen. Auftragszeilen, die Teil derselben Sendung sind, müssen nicht unbedingt zusammen versandt werden, wenn einige Artikel sofort versandfertig sind. Eine einzelne Bestellung kann in mehreren Paketen zu unterschiedlichen Versandzeiten verpackt und versandt werden, wodurch sich die Wartezeiten verringern und die Flexibilität erhöht wird.<!-- KFM: Update to 2022w1 link when published --> | Funktionsverwaltung:<br>*Verpackungsarbeit für Verpackungsstationen* |
-| Bestand&nbsp;und&nbsp;Logistik | [Barcodes im Lagerort mit GS1-Formatstandards scannen](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) <!-- KFM: Update to 2022w1 link when published --> | [GS1-Barcodes und QR-Codes](../warehousing/gs1-barcodes.md) | Funktionsverwaltung:<br>*GS1-Barcodes scannen* |
-| Fertigung | [Materialverbrauch und Reservierungen in der Produktionsausführungsoberfläche](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte](../production-control/production-floor-execution-use.md) | Funktionsverwaltung:<br>*(Vorschauversion) Materialverbrauch in der Produktionsausführungsoberfläche registrieren (WMS-fähig)* |
+| Bestand&nbsp;und&nbsp;Logistik | [Erweiterungen zu Gefahrengütern](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/hazardous-materials-enhancements) | Demnächst | Funktionsverwaltung:<br>*Erweiterungen zu Gefahrengütern* |
+| Bestand&nbsp;und&nbsp;Logistik | [Verpackungsarbeit für Verpackungsstationen](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/packing-work-packing-stations) | Demnächst | Funktionsverwaltung:<br>*Verpackungsarbeit für Verpackungsstationen* |
+| Bestand&nbsp;und&nbsp;Logistik | [Barcodes im Lagerort mit GS1-Formatstandards scannen](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-Barcodes und QR-Codes](../warehousing/gs1-barcodes.md) | Funktionsverwaltung:<br>*GS1-Barcodes scannen* |
+| Fertigung | [Materialverbrauch und Reservierungen in der Produktionsausführungsoberfläche](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte](../production-control/production-floor-execution-use.md) | Funktionsverwaltung:<br>*(Vorschau) Materialverbrauch in der Produktionsausführungsoberfläche (nicht WMS) registrieren*<br><br>Und/oder:<br><br>Funktionsverwaltung:<br>*(Vorschauversion) Materialverbrauch in der Produktionsausführungsoberfläche registrieren (WMS-fähig)* |
 | Fertigung | [Materialverbrauch auf Scale-Einheiten registrieren](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/register-material-consumption-scale-units) | [Workloads in der Fertigungsausführung für Cloud- und Edge-Skalierungseinheiten](../cloud-edge/cloud-edge-workload-manufacturing.md) | Funktionsverwaltung:<br>*Materialverbrauch mit der mobilen App an einer Skalierungseinheit registrieren* |
 | Planung | [Vorschläge für die Planungsoptimierung zur Optimierung des bestehenden Vorrats](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-suggestions-optimize-existing-supply) | [Aktivitätsmeldungen](../master-planning/action-messages.md) | Standardmäßig aktiviert |
 | Planung | Geplante Aufträge vereinfacht | [Geplante Aufträge vereinfacht](../master-planning/planning-optimization/planned-orders-simplified.md ) | Funktionsverwaltung:<br>*Geplante Aufträge vereinfacht* |

@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2d8a2e44713607ff2a4df91271c70d96c4d71d9
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 1b7a3dd75f526a076b6fe696f71ec623e20abb24
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982093"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367847"
 ---
 # <a name="europe-overview"></a>Europa – Übersicht
 
@@ -36,13 +36,13 @@ Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren 
 - [Rechnungs-IDs auf Kundenaufträgen für Osteuropa bearbeiten](emea-edit-invoice-id-sales-orders.md)
 - [EU-Gelangensbestätigung](emea-entry-certificates.md)
 - [Zusammenfassende Meldung](emea-eu-sales-list.md)
+  - [Beispiel für generische EU-Verkaufsliste](emea-eu-sales-list-example.md)
 - [Wechselkursregulierungen](emea-exchange-rate-adjustments.md)
 - [Dateiformate für Zahlungsmethoden](emea-select-file-formats-for-the-method-of-payments.md)
 - [Finanzleitfaden (Globalisierung) zu den Auswirkungen des Brexit](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
 - [Steuerdienste ERS-Integration](emea-fiscal-service-integration.md)
 - [Anlagenveräußerungen für Estland und Litauen](emea-credit-note-reverse-fixed-asset-sale.md)
 - [Umlagerungsdokument für eine interne Umlagerung generieren](tasks/transfer-document-internal-inventory-transfer.md)
-- [Erstellen des Berichts für die zusammenfassende Meldung](tasks/eur-00011-eu-sales-list-report.md)
 - ISO20022-Dateien
   - [ISO20022-Dateien importieren](emea-ISO20022-file-formats.md)
   - [ISO20022-Direktbelastungskonfiguration importieren](tasks/import-iso20022-direct-debit-configuration.md)
@@ -77,7 +77,6 @@ Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren 
 - [SEPA-Kreditübertragungsübersicht](../accounts-payable/sepa-credit-transfer.md)
 - [SEPA-Lastschriftüberblick](../accounts-receivable/sepa-direct-debit-overview.md)
 - [Einrichten der Debitoren- und Kreditorenvergütung](emea-compensation-customer-vendor-transactions.md)
-- [Berichterstellung für zusammenfassende Meldung einrichten](tasks/eur-00011-eu-sales-list-reporting.md)
 - [Zahlungsbelegformats für Projektrechnungen einrichten](tasks/set-up-payment-slip-format-project-invoices.md)
 - [Signaturgeber für Druckformulare einrichten](emea-set-up-signers-for-printing-forms.md)
 - [Stornobuchung](emea-storno.md)

@@ -2,7 +2,7 @@
 title: Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
 description: Dieses Thema enthält Informationen zum Entwerfen eines Formats für die elektronische Berichterstellung (EB), um eine Excel-Vorlage auszufüllen und ausgehende Dokumente im Excel-Format zu generieren.
 author: NickSelin
-ms.date: 01/05/2022
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9b1c83894d93789a270ed4521ba7f80da70285ac
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 1b2f38aa9e5eff9366697afd57ceefd06f026096
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952651"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388262"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
 
@@ -83,31 +83,48 @@ Auf der Registerkarte **Zuordnung** des EB-Vorgangs-Designers können Sie die Ei
 
 ## <a name="range-component"></a>Komponente „Bereich“
 
-Die Komponente **Bereich** gibt einen Excel-Bereich an, der von dieser EB-Komponente gesteuert werden muss. Der Name des Bereichs ist in der Eigenschaft **Excel-Bereich** dieser Komponente definiert.
-
-### <a name="replication"></a>Wiederholung
-
-Die Eigenschaft **Replikationsrichtung** gibt an, ob und wie der Bereich in einem generierten Dokument wiederholt wird:
-
-- Wenn die Eigenschaft **Replikationsrichtung** auf **Keine Replikation** festgelegt ist, wird der entsprechende Excel-Bereich nicht im generierten Dokument wiederholt.
-- Wenn die Eigenschaft **Replikationsrichtung** auf **Vertikal** festgelegt ist, wird der entsprechende Excel-Bereich im generierten Dokument wiederholt. Jeder replizierte Bereich wird in einer Excel-Vorlage unter den ursprünglichen Bereich eingefügt. Die Anzahl der Wiederholungen wird durch die Anzahl der Datensätze in einer Datenquelle des Typs **Datensatzliste** definiert, der an diese EB-Komponente gebunden ist.
-- Wenn die Eigenschaft **Replikationsrichtung** auf **Horizontal** festgelegt ist, wird der entsprechende Excel-Bereich im generierten Dokument wiederholt. Jeder replizierte Bereich wird in einer Excel-Vorlage rechts neben dem ursprünglichen Bereich eingefügt. Die Anzahl der Wiederholungen wird durch die Anzahl der Datensätze in einer Datenquelle des Typs **Datensatzliste** definiert, der an diese EB-Komponente gebunden ist.
-
-Führen Sie die Schritte unter [Horizontal erweiterbare Bereiche verwenden, um Spalten in Excel-Berichten dynamisch hinzuzufügen](tasks/er-horizontal-1.md) aus, um weitere Informationen zu erhalten.
-
 ### <a name="nested-components"></a>Verschachtelte Komponenten
 
-Die Komponente **Bereich** kann andere verschachtelte EB-Komponenten aufweisen, die zur Eingabe von Werten in die entsprechenden benannten Excel-Bereiche verwendet werden.
+#### <a name="data-typing"></a>Daten-Typisierung
+
+Die Komponente **Bereich** kann weitere verschachtelte ER-Komponenten enthalten, die zur Eingabe von Werten in die entsprechenden Bereiche verwendet werden.
 
 - Wenn eine Komponente der Gruppe **Text** für die Eingabe von Werten verwendet wird, erfolgt die Eingabe des Werts in einem Excel-Bereich als Textwert.
 
     > [!NOTE]
     > Verwenden Sie dieses Muster, um eingegebene Werte basierend auf dem in der Anwendung definierten Gebietsschema zu formatieren.
 
-- Wenn die Komponente **Zelle** der Gruppe **Excel** verwendet wird, um Werte einzugeben, wird der Wert in einem Excel-Bereich als Wert des Datentyps eingegeben, der durch die Bindung dieser Komponente **Zelle** (z. B. **Zeichenfolge**, **Gleitkommazahl**, oder **Ganzzahl**) definiert ist.
+- Wenn die **Zelle**-Komponente der **Excel**-Gruppe zur Eingabe von Werten verwendet wird, wird der Wert in einem Excel-Bereich als Wert des Datentyps eingegeben, der durch die Bindung dieser **Zelle**-Komponente definiert ist. Der Datentyp kann zum Beispiel **String**, **Real** oder **Integer** sein.
 
     > [!NOTE]
     > Verwenden Sie dieses Muster, damit die Excel-Anwendung eingegebene Werte basierend auf dem Gebietsschema des lokalen Computers formatieren kann, der das ausgehende Dokument öffnet.
+
+#### <a name="row-handling"></a>Behandlung von Zeilen
+
+Die Komponente **Bereich** kann als vertikal repliziert konfiguriert werden, so dass mehrere Zeilen in einem Excel-Arbeitsblatt erzeugt werden. Die Zeilen können von der übergeordneten **Bereich**-Komponente oder von deren verschachtelten **Bereich**-Komponenten erzeugt werden.
+
+In Version 10.0.26 und später können Sie ein generiertes Arbeitsblatt dazu zwingen, die generierten Zeilen auf derselben Seite zu halten. Legen Sie im ER-Formatdesigner die Option **Zeilen zusammenhalten** auf **Ja** für die übergeordnete Komponente **Bereich** im bearbeitbaren ER-Format fest. ER wird dann versuchen, alle Inhalte, die von diesem Bereich generiert werden, auf derselben Seite zu halten. Wenn die Höhe des Inhalts den verbleibenden Platz auf der aktuellen Seite überschreitet, wird ein Seitenumbruch eingefügt, und der Inhalt beginnt am Anfang der nächsten neuen Seite.
+
+> [!NOTE]
+> Wir empfehlen Ihnen, die Option **Zeilen zusammenhalten** nur für Bereiche zu konfigurieren, die sich über die gesamte Breite eines generierten Dokuments erstrecken.
+>
+> Die Option **Zeilen zusammenhalten** gilt nur für **Excel \> Datei** Komponenten, die für die Verwendung einer Excel Arbeitsmappenvorlage konfiguriert sind.
+>
+> Die Option **Zeilen zusammenhalten** kann nur verwendet werden, wenn die Funktion **Verwendung der EPPlus-Bibliothek im Electronic Reporting Framework aktivieren** aktiviert ist.
+>
+> Diese Funktion kann für **Bereich**-Komponenten verwendet werden, die sich unter der **Seite**-Komponente befinden. Es gibt jedoch keine Garantie dafür, dass [Seitenfußsummen](er-paginate-excel-reports.md#add-data-sources-to-calculate-page-footer-totals) durch die Verwendung von [Datensammlung](er-data-collection-data-sources.md)-Datenquellen korrekt berechnet werden.
+
+Um zu erfahren, wie Sie diese Option verwenden, folgen Sie den Beispielschritten in [Entwerfen Sie ein ER-Format, um Zeilen auf derselben Excel-Seite zusammenzuhalten](er-keep-excel-rows-together.md).
+
+### <a name="replication"></a>Wiederholung
+
+Die Eigenschaft **Replikationsrichtung** gibt an, ob und wie ein Bereich in einem generierten Dokument wiederholt wird:
+
+- **Keine Replikation** - Der entsprechende Excel-Bereich wird in dem generierten Dokument nicht wiederholt.
+- **Vertikal** - Der entsprechende Excel-Bereich wird im generierten Dokument vertikal wiederholt. Jeder replizierte Bereich wird in einer Excel-Vorlage unter den ursprünglichen Bereich gestellt. Die Anzahl der Wiederholungen wird durch die Anzahl der Datensätze in einer Datenquelle des Typs **Datensatzliste** definiert, der an diese EB-Komponente gebunden ist.
+- **Horizontal** - Der entsprechende Excel-Bereich wird in dem generierten Dokument horizontal wiederholt. Jeder replizierte Bereich wird in einer Excel-Vorlage rechts neben dem Originalbereich eingefügt. Die Anzahl der Wiederholungen wird durch die Anzahl der Datensätze in einer Datenquelle des Typs **Datensatzliste** definiert, der an diese EB-Komponente gebunden ist.
+
+    Führen Sie die Schritte unter [Horizontal erweiterbare Bereiche verwenden, um Spalten in Excel-Berichten dynamisch hinzuzufügen](tasks/er-horizontal-1.md) aus, um weitere Informationen zu erhalten.
 
 ### <a name="enabling"></a>Wird aktiviert
 
@@ -280,12 +297,12 @@ Wenn ein ausgehendes Dokument in einem Microsoft Excel-Arbeitsmappenformat gener
 
 - Wählen Sie **Automatisch** aus, um alle abhängigen Formeln jedes Mal neu zu berechnen, wenn ein generiertes Dokument an neue Bereiche, Zellen usw. angehängt wird.
 
-    >[!NOTE]
+    > [!NOTE]
     > Dies kann zu Leistungsproblemen bei Excel-Vorlagen führen, die mehrere verwandte Formeln enthalten.
 
 - Wählen Sie **Manuell** aus, um eine Neuberechnung der Formel beim Generieren eines Dokuments zu vermeiden.
 
-    >[!NOTE]
+    > [!NOTE]
     > Die Neuberechnung der Formel wird manuell erzwungen, wenn ein generiertes Dokument in Excel zur Vorschau geöffnet wird.
     > Verwenden Sie diese Option nicht, wenn Sie ein EB-Ziel konfigurieren, das die Verwendung eines generierten Dokuments ohne Vorschau in Excel (PDF-Konvertierung, E-Mail usw.) voraussetzt, da das generierte Dokument möglicherweise keine Werte in Zellen enthält, die Formeln enthalten.
 

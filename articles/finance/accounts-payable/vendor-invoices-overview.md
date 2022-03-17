@@ -2,13 +2,13 @@
 title: Überblick über Kreditorenrechnungen
 description: Dieses Thema enthält allgemeine Informationen zu Kreditorenrechnungen.
 author: abruer
-ms.date: 06/03/2021
+ms.date: 02/25/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "13971"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22535f4bc320bde096214e2044cfeb00d4e9fbbc
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: b54a60ac3b1868ea7cc5ed88d5a31203b4bd29d3
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985336"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358423"
 ---
 # <a name="vendor-invoices-overview"></a>Kreditorenrechnungen – Übersicht
 
@@ -51,10 +51,10 @@ In der nachstehenden Erläuterung finden Sie weitere Informationen dazu, wie Sie
 
 Wenn Sie eine Kreditorenrechnung für eine zugehörige Bestellung öffnen, erstellt das System die Rechnungspositionen aus der Bestellung. Das System übernimmt standardmäßig die Mengen aus dem Produktzugang. Allerdings können Sie jedes der folgenden Standardverhalten verwenden:
 
-- **Menge der aktuellen Lieferung** - Verwenden Sie diese Option für Teillieferungen. Das System legt den Standardwert im Feld **Menge** fest. Dieser stammt von der Menge, die im Feld **Aktuelle Lieferung** der Bestellung angegeben ist.
-- **Bestellte Menge** - Verwenden Sie diese Option für vollständige Lieferungen. Das System legt den Standardwert im Feld **Menge** fest. Dieser stammt von der Menge, die im Feld **Bestellt** der Bestellung angegeben ist.
+- **Menge der aktuellen Lieferung** - Verwenden Sie diese Option für Teillieferungen. Der Standardwert im Feld **Menge** wird auf die Menge festgelegt, die im Feld **Jetzt erhalten** in der Bestellung angegeben ist.
+- **Bestellte Menge** - Verwenden Sie diese Option für vollständige Lieferungen. Der Standardwert im Feld **Menge** wird auf die Menge festgelegt, die im Feld **Bestellt** auf der Kauf-Bestellung angegeben ist.
 - **Erfasste Menge** - Verwenden Sie diese Option, wenn der Artikel erfasst werden muss, wie auf der Seite **Lagersteuerungsgruppen** angegeben. Bei dem Standardwert im Feld **Menge** handelt es sich um die registrierte physische Aktualisierungsmenge.
-- **Produktzugangsmenge** – Verwenden Sie diese Option, wenn für den Auftrag bereits ein Produktzugang eingegangen ist. Das System übernimmt den Standardwert im Feld **Menge** aus der Gesamtmenge der verfügbaren Produktzugänge.
+- **Produktzugangsmenge** – Verwenden Sie diese Option, wenn für den Auftrag bereits ein Produktzugang eingegangen ist. Der Standardwert im Feld **Menge** ist die Gesamtmenge der verfügbaren Produktzugänge.
 - **Erfasste Menge und Services** – Verwenden Sie diese Option, wenn Mengen für gelagerte oder nicht gelagerte Artikel in der Wareneingangserfassungen registriert wurden. Diese Option schließt auch registrierte und nicht registrierte Dienstleistungen ein.
 
 Wenn Ihre juristische Person den Rechnungsabgleich verwendet, können Sie die Ergebnisse der Menge anzeigen, die mit der Spalte **Produktzugang-Mengenabgleich** übereinstimmt. Sie können auch die Schaltfläche **Detailabgleich** auf der Registerkarte **Prüfen** des Aktivitätsbereichs verwenden, um die Ergebnisse des Mengenabgleichens anzuzeigen.
@@ -65,7 +65,7 @@ Sie können der Kreditorenrechnung eine Position hinzuzufügen, die nicht in der
 
 ## <a name="submitting-a-vendor-invoice-for-review"></a>Senden einer Kreditorenrechnung zur Prüfung
 
-Möglicherweise werden in der Organisation Workflows zur Verwaltung des Prüfprozesses für Kreditorenrechnungen verwendet. Der Prüfungsworkflow kann für den Rechnungskopf und/oder die Rechnungsposition erforderlich sein. Die Steuerelemente des Workflows werden je nachdem, worauf der Fokus beim Auswählen auf das Steuerelement lag, auf die Kopfzeile oder die Position angewendet. Statt der Schaltfläche **Buchen** wird eine **Übermitteln**-Schaltfläche angezeigt, um die Kreditorenrechnung durch den Prüfprozess zu schicken.
+Möglicherweise werden in der Organisation Workflows zur Verwaltung des Prüfprozesses für Kreditorenrechnungen verwendet. Der Prüfungsworkflow kann für den Rechnungskopf und/oder die Rechnungsposition erforderlich sein. Die Steuerelemente des Workflows werden je nachdem, worauf der Fokus beim Auswählen auf das Steuerelement lag, auf die Kopfzeile oder die Position angewendet. Anstelle der Schaltfläche **Buchen** sendet eine Schaltfläche **Senden** die Lieferantenrechnung durch den Überprüfungsprozess.
 
 ### <a name="preventing-invoice-from-being-submitted-to-workflow"></a>Verhindern, dass die Rechnung an den Workflow gesendet wird 
 
@@ -102,7 +102,7 @@ Sie können die Anzahl der Rechnungen, die in die Charge aufgenommen werden soll
 
 ## <a name="working-with-multiple-invoices"></a>Arbeiten mit mehreren Rechnungen
 
-Mehrere Rechnungen können zur gleichen Zeit bearbeitet und alle gleichzeitig gebucht werden. Wenn Sie mehrere Rechnungen erstellen müssen, nutzen Sie die Seite **Ausstehende Kreditorenrechnungen**. Wenn sie mehrere Kreditorenrechnungen buchen und drucken müssen, verwenden Sie die Rechnungsgenehmigungserfassung. Wenn Sie die Rechnungsgenehmigungserfassung verwenden, muss mindestens ein Produktzugang der Bestellung und eine Rechnung für die Bestellung in einem Rechnungsbuch gebucht sein. Die Finanzdaten für die Rechnung stammen aus der im Register gebuchten Rechnung.
+Mehrere Rechnungen können zur gleichen Zeit bearbeitet und alle gleichzeitig gebucht werden. Wenn Sie mehrere Rechnungen erstellen müssen, nutzen Sie die Seite **Ausstehende Kreditorenrechnungen**. Wenn Sie mehrere Lieferantenrechnungen buchen und drucken müssen, verwenden Sie die **Erfassung der genehmigten Rechnungen**. Wenn Sie das **Rechnungsfreigabejournal** verwenden, muss mindestens ein Produktzugang für die Bestellung gebucht werden, und eine Rechnung für die Bestellung muss in einem Rechnungsregister gebucht werden. Die Finanzdaten für die Rechnung stammen aus der im Register gebuchten Rechnung.
 
 ## <a name="recovering-vendor-invoices-that-are-being-used"></a>Wiederherstellen von Kreditorenrechnungen, die gerade verwendet werden
 

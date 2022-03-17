@@ -2,7 +2,7 @@
 title: ER-Konfigurationen zum Ausfüllen von PDF-Vorlagen entwerfen
 description: Dieses Thema enthält Informationen dazu, wie ein elektronisches Berichtsformat (ER) gestaltet wird, um eine PDF-Vorlage auszufüllen.
 author: NickSelin
-ms.date: 03/24/2021
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 81da1b4f9ca5d2884122266312b2f7cb298572eef3a5c6151daba2f9b17326f2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a568ddd93bfbc7d536e951a13470b3dedb796e1b
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758287"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367855"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>ER-Konfigurationen zum Ausfüllen von PDF-Vorlagen entwerfen
 
@@ -294,6 +294,20 @@ Die folgende Abbildung zeigt ein Beispiel der ersten Seite des Berichts, der ers
 Die folgende Abbildung zeigt ein Beispiel einer anderen Seite des Berichts, der erstellt wurde.
 
 ![Andere Seite des generierten Berichts.](media/rcs-ger-filloutpdf-generatedreport2.png)
+
+## <a name="limitations"></a>Einschränkungen
+
+Die Namen der ausfüllbaren Felder sollten in dem PDF-Formular, das Sie als Berichtsvorlage verwenden möchten, eindeutig sein. Für jedes dieser Felder wird ein individuelles Formatelement mit dem entsprechenden Namen im editierbaren ER-Format erstellt, wenn ein PDF-Formular importiert wird. Wenn ein PDF Formular mehrere gleichnamige Felder enthält, wird ein einziges Formatelement für die Felder erstellt, das es nicht zulässt, dass sie zur Laufzeit einzeln ausgefüllt werden.
+
+## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
+
+### <a name="when-i-run-the-er-format-to-generate-a-report-in-pdf-format-why-do-i-get-the-following-errors--cannot-handle-iref-streams-the-current-implementation-of-pdfsharp-cannot-handle-this-pdf-feature-introduced-with-acrobat-6-and-a-pdf-name-must-start-with-a-slash-"></a>Wenn ich das ER-Format ausführe, um einen Bericht im PDF-Format zu erstellen, warum erhalte ich dann die folgenden Fehler?  **Kann iref-Streams nicht verarbeiten. Die aktuelle Implementierung von PDFSharp kann diese mit Acrobat 6 eingeführte PDF-Funktion nicht verarbeiten.** und **Ein PDF-Name muss mit einem Schrägstrich (/) beginnen.**
+
+Das ER Framework verwendet die Version 1.5 der PDFSharp-Bibliothek, um diese PDF-Berichte zu erstellen. Einige Funktionen von PDF 1.5 (Adobe Reader 6.0) sind in dieser Bibliothek noch nicht implementiert. Daher kann PDFSharp einige Dateien, die als **für PDF 1.5 oder höher** gekennzeichnet sind, noch nicht öffnen und kann zu den erhaltenen Fehlern führen. Verwenden Sie eine der folgenden Lösungen, um das Problem zu beheben:
+
+-   Wenn Sie Ihre eigene PDF-Vorlage verwenden: Downgraden Sie die Vorlage auf eine frühere Adobe-Version und verwenden Sie eine neue Vorlage in Ihrem ER-Format.
+-   Wenn Sie eine ER-Formatvorlage verwenden, die Ihnen von einem anderen Konfigurationsanbieter als Teil einer ER-Lösung zur Verfügung gestellt wurde: Wenden Sie sich an den Besitzer dieser ER-Lösung und geben Sie eine Beschreibung des Problems.
+-   Wenn Sie die ISV-Lösung verwenden, die eine frühere Version der PDFSharp-Bibliothek enthält: Kontaktieren Sie den Besitzer der Lösung und schlagen Sie ein Upgrade auf die neuere PDFSharp-Version vor.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

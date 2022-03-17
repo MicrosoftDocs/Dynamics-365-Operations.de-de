@@ -2,19 +2,19 @@
 title: Steuerintegration für Commerce-Kanäle einrichten
 description: Dieses Thema enthält Richtlinien zum Einrichten der Steuerintegrationsfunktionen für Commerce-Kanäle.
 author: EvgenyPopovMBS
-ms.date: 01/31/2022
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: fd37934e1ebd103d66c5181e0bfb75047f4cb6a3
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: c15104e0f34c1f6cb6a599d506dad741be3e5e9e
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076962"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388389"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Steuerintegration für Commerce-Kanäle einrichten
 
@@ -46,6 +46,7 @@ Der Prozess der Einrichtung der Steuerintegration umfasst die folgenden allgemei
 - Konfigurieren Sie den Steuerregistrierungsprozess, der eine Reihe von Schritten der Steuerregistrierung definiert, und die Steuerkonnektoren und Steuerdokumentanbieter, die für jeden Schritt verwendet werden.
 - Ordnen Sie den Steuerregistrierungsprozess den Funktionsprofilen der Verkaufsstellen (POS) zu.
 - Ordnen Sie die technischen Profile des Konnektors den Hardwareprofilen zu.
+- Weisen Sie den Konnektoren technische Profile für die POS-Hardware oder Funktionsprofile zu.
 
 ### <a name="upload-configurations-of-fiscal-document-providers"></a>Konfigurationen von Anbietern von Fiskalbelegen hochladen
 
@@ -161,10 +162,12 @@ Um Entitäten des fiskalischen Registrierungsprozesses POS-Profilen zuzuordnen, 
 1. Gehen Sie in der Commerce-Zentralverwaltung auf die Seite **POS-Funktionsprofile** (**Retail und Commerce \> Channel Einrichtung \> POS Einrichtung \> POS Profile \> Funktionsprofile**). 
 1. Weisen Sie den steuerlichen Registrierungsprozess einem POS-Funktionsprofil zu.
 1. Wählen Sie **Bearbeiten**, und wählen Sie dann auf der Registerkarte **Steuerregistrierungsprozess** im Feld **Prozessnummer** einen Prozess aus.
+1. Auf der Registerkarte **Steuerliche Dienste** wählen Sie technische Profile des Konnektors mit dem Konnektorstandort **Registrieren**.
 1. Gehen Sie auf die Seite **POS-Hardwareprofil** (**Retail und Commerce \> Einrichtung der Kanäle \> Einrichtung der Kassen \> POS-Profile \> Hardwareprofile**).
 1. Weisen Sie einem Hardwareprofil technische Profile für Konnektoren zu. 
 1. Wählen Sie **Bearbeiten** und fügen Sie dann auf der Registerkarte **Steuerliche Peripheriegeräte** eine Zeile hinzu. 
 1. Wählen Sie im Feld **Profilnummer** ein technisches Profil für den Konnektor aus.
+1. Wählen Sie auf der Registerkarte **Steuerliche Peripheriegeräte** technische Profile für Konnektoren mit dem Standort des Konnektors **Hardware Station**.
 
 > [!NOTE]
 > Sie können mehrere technische Profile dem gleichen Hardwareprofil hinzufügen. Ein Hardwareprofil oder POS-Funktionalitätsprofil sollte jedoch nur einen Schnittpunkt mit einer beliebigen Steuerkonnektorgruppe aufweisen.
@@ -175,6 +178,17 @@ Der Flow der Fiskalregistrierung wird durch den Prozess der Fiskalregistrierung 
 - Die Steuerdokumentanbieter ist auch für das Identifizieren des Steuerkonnektors zuständig, der zur Steuerregistrierung verwendet wird. Es stimmt die funktionalen Profile des Konnektors, die in der Steuerkonnektorgruppe enthalten sind, die für den aktuellen Schritt des Steuerregistrierungsprozess spezifiziert ist, mit dem dem Profil des Konnektors ab, das dem Hardwareprofil der Hardwarestation zugeordnet ist, mit der der POS gekoppelt ist.
 - Der Steuerdokumentanbieter verwendet die Datenmapping-Einstellungen aus der Konfiguration des Steuerdokumentanbieters, um Transaktions-/Ereignisdaten wie Steuern und Zahlungen zu transformieren, während ein Steuerdokument erzeugt wird.
 - Wenn der Steuerdokumentanbieter ein Steuerdokument erzeugt, kann der Steuerkonnektor es entweder unverändert an das Fiskalgerät senden oder es analysieren und in eine Folge von Befehlen der API (Device Application Programming Interface) umwandeln, je nachdem, wie die Kommunikation gehandhabt wird.
+
+### <a name="set-up-registers-with-fiscal-registration-restrictions"></a>Register mit steuerlichen Registrierungsbeschränkungen festlegen
+
+Sie können Register auswählen, bei denen die fiskalische Registrierung verboten ist, z.B. in Fällen, in denen Sie auf diesen Geräten nur nicht-fiskalische Vorgänge wie die Suche im Produktkatalog, das Nachschlagefeld für Kunden oder die Erstellung von Transaktionsentwürfen anbieten möchten.
+
+Um Register mit fiskalischen Registrierungsbeschränkungen festzulegen, folgen Sie diesen Schritten.
+
+1. Gehen Sie in der Commerce-Zentrale zu **Einzelhandel und Commerce \> Channel-Einrichtung \> Steuerliche Integration \> Steuerliche Registrierungsprozesse**.
+1. Wählen Sie den gewünschten Prozess.
+1. Wählen Sie die Registerkarte **POS-Register mit fiskalischen Verarbeitungsbeschränkungen**.
+1. Fügen Sie nach Bedarf Register mit fiskalischen Prozessbeschränkungen hinzu.
 
 ### <a name="validate-the-fiscal-registration-process"></a>Validieren Sie den Prozess der steuerlichen Registrierung
 

@@ -2,7 +2,7 @@
 title: Lieferoptionsmodul
 description: Dieses Thema enthält Beschreibungen der Lieferoptionsmodule und Erklärungen zu ihrer Konfiguration in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/23/2021
+ms.date: 02/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 69d3da5cbee5d7b921b0b0b422d838b9821e9c877d6f1951e85aeb49474bd4bc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9b9a7ad05974b98511cfc582af62c19c5fb4dbf5
+ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760899"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8349793"
 ---
 # <a name="delivery-options-module"></a>Lieferoptionenmodul
 
@@ -56,9 +56,12 @@ Das folgende Bild zeigt ein Beispiel eines Lieferoptionsmoduls auf einer Checkou
 
 Ein Lieferoptionsmodul kann nur zu einem Auschecken-Modul hinzugefügt werden. Weitere Informationen zum Konfigurieren des Lieferoptionsmoduls und zum Hinzufügen zu einer Checkout-Seite finden Sie unter [Checkout-Modul](add-checkout-module.md).
 
+> [!NOTE]
+> Es kann sein, dass die Zustellung nicht einheitlich gehandhabt wird oder dass Sie in Ihrem E-Commerce-Kanal keine nicht anteiligen Belastungen auf Kopfzeilenebene sehen. Eine Anleitung zur Behebung dieser Probleme finden Sie unter [Konsistente Handhabung des Liefermodus in E-Commerce-Kanälen aktivieren](consistent-delivery-mode-handling.md).
+
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Einkaufswagenmodul](add-cart-module.md)
+[Einkaufskorbmodul](add-cart-module.md)
 
 [Auschecken-Modul](add-checkout-module.md)
 

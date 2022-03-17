@@ -15,20 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3030bc7d2501e2162758c94c0dc1a073655c9c0f
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: df0d2178d1ebd3dcb154e2c4f7821a4007da55d4
+ms.sourcegitcommit: 5033d42a2aac852916d726e40bd98a164d1a837d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182517"
+ms.lasthandoff: 02/23/2022
+ms.locfileid: "8331741"
 ---
 # <a name="centralized-payments-for-accounts-payable"></a>Zentralisierte Zahlungen für Kreditorenkonten
 
 [!include [banner](../includes/banner.md)]
 
 Organisationen mit mehreren juristischen Personen können zum Erstellen und Verwalten von Zahlungen eine juristische Person festlegen, die alle Zahlungen abwickelt. Daher müssen die gleichen Zahlungen nicht in mehrere juristische Personen eingegeben werden. Dieses Thema enthält Beispiele, die zeigen, wie das Buchen für zentralisierte Zahlungen in verschiedenen Szenarien behandelt wird.
-
-Organisationen mit mehreren juristischen Personen können zum Erstellen und Verwalten von Zahlungen eine juristische Person festlegen, die alle Zahlungen abwickelt. Daher müssen die gleichen Zahlungen nicht in mehrere juristische Personen eingegeben werden. Darüber hinaus spart die Organisation Zeit, da der Zahlungsvorgang rationalisiert wird.
 
 In einer Organisation mit zentralisierten Zahlungen gibt es viele juristische Personen für betriebliche Vorgänge. Dabei werden die Informationen zu Kreditorenrechnungen von den einzelnen juristischen Personen verwaltet. Die Zahlungen für alle tätigen juristischen Personen werden von einer einzigen juristischen Person (der so genannten juristischen Person für die Zahlung) generiert. Im Zuge des Ausgleichsprozesses werden die erforderlichen Buchungen vom Typ "Fällig bis" und "Fällig von" generiert. Sie können angeben, welche juristische Person in der Organisation die Buchungen für realisierte Gewinne oder Verluste erhält und wie Skontobuchungen für unternehmensübergreifende Zahlungen zu behandeln sind. Auf der zentralisierten Zahlungserfassungsposition sollte **Kontenart** auf Kreditor festgelegt werden. Die **Gegenkontenart** sollte auf Bank oder Sachkonto festgelegt werden. Das Bankkonto solle auf das aktuelle Unternehmen lauten. 
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 086d05b4080015f6185a083ca20963539f76619f
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: a677eb71f97a953c625a1f667b055e5b7696fbe6
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075018"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384418"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte
 
@@ -71,6 +71,18 @@ Die Liste der aktiven Aufträge enthält die folgenden Spalten:
 - **Abgeschlossen** – Diese Spalte zeigt die Menge, die bereits für einen Einzelvorgang abgeschlossen wurde.
 - **Verschrottet** – Diese Spalte zeigt die Menge, die bereits für einen Einzelvorgang verschrottet wurde.
 - **Verbleibend** – In dieser Spalte wird die Menge angezeigt, die für einen Einzelvorgang noch zu erledigen ist.
+
+## <a name="my-jobs-tab"></a>Registerkarte Meine Aufträge
+
+Auf der Registerkarte **Meine Aufträge** können Arbeitskräfte ganz einfach alle nicht gestarteten und nicht beendeten Aufträge einsehen, die ihnen speziell zugewiesen sind. Es ist nützlich in Unternehmen, in denen Aufträge manchmal oder immer bestimmten Arbeitskräften (Human Resources) statt anderen Arten von Ressourcen (z.B. Maschinen) zugewiesen werden. 
+
+Das Planungssystem ordnet jeden Produktionsauftrag automatisch einem bestimmten Datensatz zu, und jeder Ressourcendatensatz hat einen Typ (z.B. Maschine oder Mensch). Wenn Sie einen Mitarbeiter als Arbeitskraft in der Produktion festlegen, können Sie das Konto des Mitarbeiters mit einem eindeutigen Datensatz der Humanressourcen verknüpfen. 
+
+Die Registerkarte **Meine Aufträge** listet alle nicht gestarteten und nicht beendeten Aufträge auf, die dem Datensatz der angemeldeten Arbeitskraft zugewiesen wurden, sofern eine Arbeitskraft angemeldet ist. Es listet niemals Aufträge auf, die einer Maschine oder einer anderen Art von Ressource zugewiesen wurden, selbst wenn die angemeldete Arbeitskraft mit der Arbeit an diesen Aufträgen begonnen hat.
+
+Um alle Aufträge anzuzeigen, die von der angemeldeten Arbeitskraft gestartet wurden, unabhängig von der Art der Ressource, der der jeweilige Auftrag zugewiesen ist, verwenden Sie die Registerkarte **Aktive Aufträge**. Um alle nicht beendeten Aufträge anzuzeigen, die der Konfiguration des lokalen Auftragsfilters entsprechen, unabhängig von der Arbeitskraft oder dem Startstatus, verwenden Sie die Registerkarte **Alle Aufträge**.
+
+![Registerkarte „Meine Aufträge“](media/pfei-my-jobs-tab.png "Registerkarte Meine Aufträge")
 
 ## <a name="my-machine-tab"></a>Registerkarte „Meine Maschine“
 
@@ -133,6 +145,13 @@ Wenn ein Chargenauftrag aus einer Formelversion erstellt wird, in der die Option
 
 In diesem Fall kann die Arbeitskraft das Kuppelprodukt und die zu meldende Menge angeben, indem sie **Kuppelproduktvarianten** im Dialogfeld Berichtsfortschritt auswählt. Die Arbeitskraft kann dann aus allen freigegebenen Produkten auswählen, die als Kuppelprodukte definiert sind.
 
+### <a name="reporting-catch-weight-items"></a>Bericht Artikelgewicht
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Arbeitskräfte können die Produktionsausführungsoberfläche verwenden, um über den Fortschritt von Batch-Aufträgen zu berichten, die für Artikel mit Catch-Gewicht erstellt wurden. Batch-Aufträge werden aus Formeln erstellt, die so definiert werden können, dass Artikelgewichte als Formelpositionen, Kuppelprodukte und Nebenprodukte enthalten sind. Eine Formel kann auch so definiert werden, dass sie Formelzeilen für Zutaten enthält, die für das Artikelgewicht definiert sind. Artikel mit Artikelgewicht verwenden zwei Maßeinheiten, um den Bestand zu verfolgen: die Menge des Artikelgewichts und die Menge des Bestands. In der Lebensmittelbranche kann z.B. verpacktes Fleisch als Element mit Artikelgewicht definiert werden, wobei die Menge des Artikelgewichts zur Erfassung der Anzahl der Kartons und die Bestandsmenge zur Erfassung des Gewichts der Kartons verwendet wird.
+
 ## <a name="reporting-scrap"></a>Schrott melden
 
 Wenn ein Mitarbeiter einen Einzelvorgang abschließt oder teilweise abschließt, kann er Schrott melden, indem er den Einzelvorgang auf der Registerkarte **Aktive Einzelvorgänge** auswählt und dann **Schrott melden** auswählt. Im Dialogfeld **Schrott melden** gibt die Arbeitskraft dann die Schrottmengen über die Zifferntastatur ein. Die Arbeitskraft wählt auch einen Grund aus (*Keiner*, *Maschine*, *Operator*, oder *Material*).
@@ -187,6 +206,13 @@ Die folgenden Aktionen können durchgeführt werden:
 
 Die Schaltfläche **Material anpassen** kann so konfiguriert werden, dass sie in der Symbolleiste auf der rechten Seite erscheint. (Weitere Informationen finden Sie unter [Design der Produktionsausführungsoberfläche](production-floor-execution-tabs.md).) Eine Arbeitskraft kann **Material anpassen** für einen laufenden Produktionsauftrag auswählen. In diesem Fall erscheint das Dialogfenster **Material anpassen**, in dem die Arbeitskraft die gewünschten Anpassungen vornehmen kann. Wenn das Dialogfenster geöffnet wird, wird für den Produktionsauftrag eine Kommissionierliste erstellt, die Zeilen für die angepassten Mengen enthält. Wählt die Arbeitskraft **Jetzt buchen**, wird die Anpassung bestätigt und die Kommissionierliste wird gebucht. Wenn die Arbeitskraft **Abbrechen** wählt, wird die Kommissionierliste gelöscht und keine Anpassung vorgenommen.
 
+### <a name="adjust-material-consumption-for-catch-weight-items"></a>Anpassung des Materialverbrauchs für Artikel mit Artikelgewicht
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Arbeitskräfte können den Materialverbrauch für Artikel mit Artikelgewicht anpassen. Diese Funktionalität wird in Szenarien verwendet, in denen die tatsächliche Menge eines Materials mit Artikelgewicht, die von einem Produktionsauftrag verbraucht wurde, mehr oder weniger als die geplante Menge war. Daher muss sie angepasst werden, um die Bestände aktuell zu halten. Wenn eine Arbeitskraft den Verbrauch eines Elements mit Artikelgewicht anpasst, kann sie sowohl die Menge des Artikelgewichts als auch die Menge des Bestands anpassen. Wenn beispielsweise ein Produktionsauftrag fünf Kartons mit einem geschätzten Gewicht von 2 Kilogramm pro Karton verbrauchen soll, kann die Arbeitskraft sowohl die Anzahl der zu verbrauchenden Kartons als auch das Gewicht der Kartons anpassen. Das System prüft, ob das angegebene Gewicht der Kisten innerhalb der für das freigegebene Produkt definierten Mindest- und Höchstwerte liegt.
+
 ### <a name="reserve-materials"></a>Materialien reservieren
 
 In der Dialogbox **Material anpassen** kann eine Arbeitskraft Materialreservierungen vornehmen und anpassen, indem sie **Material reservieren** wählt. Das angezeigte Dialogfenster **Reservematerial** zeigt den physisch verfügbaren Bestand für den Artikel für jede Lager- und Tracking-Dimension an.
@@ -197,6 +223,8 @@ Weitere Informationen darüber, wie Sie den Ort der Produktionseingabe festlegen
 
 > [!NOTE]
 > Reservierungen, die eine Arbeitskraft im Dialogfeld **Material reservieren** vornimmt, bleiben bestehen, wenn die Arbeitskraft im Dialogfeld **Fortschritt melden** oder **Ausschuss melden** die Option **Stornieren** wählt.
+>
+> Es ist nicht möglich, Reservierungen für Elemente mit Artikelgewicht anzupassen.
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Einen Einzelvorgang abschließen und einen neuen Einzelvorgang beginnen
 

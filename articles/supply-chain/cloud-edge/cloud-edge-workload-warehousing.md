@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0d8b0f5a4878a924943f6f8876575d5247875811
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 67f78441b0914d18c2a7853bab54c6b8817be3ac
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068108"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384483"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Workloads in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten
 
@@ -210,9 +210,9 @@ Die folgenden Funktionen der Lagerortverwaltung werden derzeit für Arbeitsausla
 - Verarbeitung mit Artikeln, die nur für die Transportverwaltung (TMS) aktiviert sind.
 - Verarbeitung mit negativem Bestand.
 - Unternehmensübergreifende Datenfreigabe für Produkte. <!-- Planned -->
-- Lagerort-Arbeitsverarbeitung mit Versandschein.
-- Lagerort-Arbeitsverarbeitung mit Materialhandhabung/Lagerortautomatisierung.
+- Verarbeitung von Lagerortarbeit mit Lieferscheinen (z.B. Packzettel am Packplatz).
 - Produktmasterdaten-Images (z. B. in der mobilen Warehouse Management-App).
+- Lagerort-Arbeitsverarbeitung mit Materialhandhabung/Lagerortautomatisierung.
 
 > [!WARNING]
 > Einige Lagerortfunktionen sind für Lageorte, in denen die Arbeitsauslastungen für die Lagerortverwaltung auf einer Skalierungseinheit ausgeführt werden, nicht verfügbar und werden auch auf dem Hub oder der Arbeitsauslastung der Skalierungseinheit nicht unterstützt.
@@ -236,8 +236,7 @@ Die folgende Tabelle zeigt, welche Funktionen im Outbound unterstützt werden un
 | Lieferungen für Welle verwalten                                  | Nein  | Ja|
 | Lagerort-Arbeitsverarbeitung (inkl. Ladungsträger-Druck)        | Nein  | Ja, aber nur für die zuvor genannten, unterstützten Funktionen |
 | Clusterkommissionierung                                              | Nein  | Ja|
-| Manuelle Verpackungsverarbeitung, inkl. Arbeitsverarbeitung „Entnahme aus gepacktem Container“ | Nein <P>Einige Verarbeitungen können nach einem anfänglichen, von einer Scale-Unit kommissionierten Vorgang durchgeführt werden, sind aber aufgrund der folgenden blockierten Vorgänge nicht zu empfehlen.</p>  | Nein |
-| Container aus Gruppe entfernen                                  | Nein  | Nein |
+| Manuelles Verarbeiten von Packstationen  | Nein  | Nein |
 | Ausgehende Sortierverarbeitung                                  | Nein  | Nein |
 | Drucken von ladungsbezogenen Dokumenten                           | Ja | Ja|
 | Konnossement- und ASN-Generierung                            | Nein  | Ja|
@@ -258,6 +257,7 @@ Die folgende Tabelle zeigt, welche Funktionen im Outbound unterstützt werden un
 | Lieferungsbestätigung umkehren                                | Nein  | Ja|
 | Antrag auf Stornierung von Lager-Bestellzeilen                      | Ja | Nein, aber die Anfrage wird genehmigt oder abgelehnt |
 | <p>Umlagerungsaufträge für Wareneingang freigeben</p><p>Dieser Prozess wird automatisch im Rahmen des Versands von Umlagerungsaufträgen durchgeführt. Sie kann jedoch manuell verwendet werden, um den Empfang von Ladungsträgern in einer Scale-Unit zu aktivieren, wenn eingehende Lagerbestellungszeilen storniert wurden oder als Teil eines neuen Workload-Bereitstellungsprozesses.</p> | Ja | Nein|
+<!--| Manuelle Packstation-Verarbeitung, einschließlich der Arbeit 'Kommissionieren von gepackten Containern'.  | Nein  | Ja, aber ohne TMS-Sendungsmanifestierung und Lieferscheinbuchung und ohne Packzettel und Produktbilder |-->
 
 ### <a name="inbound"></a>Zugang
 
@@ -359,6 +359,7 @@ Beim Bereitstellen des Hubs können Sie die folgenden Batchaufträge manuell pfl
     - Hub-Nachrichtenverarbeitung zur Skalierungseinheit
     - Quellauftragszugänge registrieren
     - Lagerortaufträge abschließen
+    - Fehlende ausgehende Lagerbestellungen generieren
 
 - Verwalten Sie die folgenden Batchaufträge unter **Lagerverwaltung \> Periodische Aufgaben \> Workload-Verwaltung**:
 

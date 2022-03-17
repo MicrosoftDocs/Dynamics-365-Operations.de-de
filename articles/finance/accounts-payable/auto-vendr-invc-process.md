@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 4fef5011ead69028a7f667835fd5e5ba2401408d
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f21b76bb0d30370e4ea4fdd718999d537e9ce925
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985655"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358429"
 ---
 # <a name="automated-vendor-invoicing-processes-overview"></a>Überblick über automatisierte Kreditorenabrechnungsprozesse
 
@@ -43,7 +43,7 @@ Die Automatisierungsprozesse können verwendet werden, um folgende Aufgaben ausz
 
 ## <a name="submit-imported-vendor-invoices-to-the-workflow-system"></a>Importierte Kreditorenrechnungen an das Workflowsystem senden
 
-Im Rahmen eines berührungslosen Rechnungsstellungsprozesses für Kreditorenkonten können Sie das System automatisch eine importierte Rechnung an das Workflowsystem senden lassen. Der Prozess wird im Hintergrund mit einer von Ihnen angegebenen Häufigkeit (entweder stündlich oder täglich) ausgeführt. Um importierte Rechnungen automatisch an das Workflowsystem senden zu können, muss Ihr Prozess mit einer importierten Rechnung beginnen. Um sicherzustellen, dass die Rechnung ohne manuellen Eingriff von Anfang bis Ende verarbeitet werden kann, muss eine automatisierte Buchungsaufgabe in der Workflowkonfiguration enthalten sein.
+Als Teil eines berührungslosen Rechnungsstellungsprozesses für Debitorenrechnungen kann eine importierte Rechnung automatisch an das Workflow-System gesendet werden. Der Prozess wird im Hintergrund mit einer von Ihnen angegebenen Häufigkeit (entweder stündlich oder täglich) ausgeführt. Um importierte Rechnungen automatisch an das Workflowsystem senden zu können, muss Ihr Prozess mit einer importierten Rechnung beginnen. Um sicherzustellen, dass die Rechnung ohne manuellen Eingriff von Anfang bis Ende verarbeitet werden kann, muss eine automatisierte Buchungsaufgabe in der Workflowkonfiguration enthalten sein.
 
 
 Rechnungen, die sich auf Bestellungen beziehen, sowie Rechnungen, die eine Beschaffungskategorie ohne Bestellung und nicht vorrätige Positionen enthalten, können automatisch an das Workflow-System gesendet werden. Rechnungen, die manuell eingegeben werden, und Rechnungen, die mit dem Arbeitsbereich **Kreditorkooperationsrechnungen** erstellt werden, müssen manuell an das Workflowsystem gesendet werden. Die Bearbeitung von Vorauszahlungsanträgen muss für importierte Rechnungen manuell durchgeführt werden. Sie können Vorauszahlungen vor oder nach dem Buchen der importierten Rechnung manuell vornehmen. Sie können Vorauszahlungen manuell auf nicht gebuchte Standardrechnungen anwenden, indem Sie die Seite **Kreditorenrechnungen** verwenden. Nach der Buchung steht die abgerechnete Vorauszahlung zur Verfügung, um sie manuell auf andere Rechnungen dieses Lieferanten auf der Seite **Kreditor** anzuwenden (**Kreditorenkonten \> Allgemein \> Kreditoren \> Alle Kreditoren \> Rechnungsregisterkarte \> Anwenden**).
@@ -52,7 +52,7 @@ Die Automatisierungsfunktion stellt ein flexibles Framework bereit, mit dem Sie 
 
 ## <a name="match-product-receipts-to-invoice-lines-that-have-a-three-way-matching-policy"></a>Produktzugänge mit Rechnungsposten abgleichen, für die eine dreiseitige Abgleichsrichtlinie gilt
 
-Das System kann gebuchte Produktzugänge automatisch mit Rechnungspositionen abgleichen, für die eine dreiseitige Abgleichsrichtlinie definiert ist. Der Prozess wird ausgeführt, bis die abgeglichene Produktzugangsmenge der Rechnungsmenge entspricht. Im Rahmen dieses Prozesses können Sie für das System die maximale Anzahl der versuchten Abgleiche der Produktzugänge mit einer Rechnungsposition festlegen, bevor das System zu dem Schluss kommt, dass der Prozess fehlgeschlagen ist. Der Prozess wird entweder stündlich oder täglich im Hintergrund ausgeführt. Sie können den automatisierten Abgleichprozess im Rahmen des Prozesses zum Senden von Rechnungen an das Workflowsystem ausführen. Alternativ können Sie den Prozess auch als eigenständigen Prozess ausführen.
+Gebuchte Produktzugänge können automatisch mit Rechnungszeilen abgeglichen werden, für die eine Richtlinie für den dreifachen Abgleich definiert ist. Der Prozess wird ausgeführt, bis die abgeglichene Produktzugangsmenge der Rechnungsmenge entspricht. Im Rahmen dieses Prozesses können Sie für das System die maximale Anzahl der versuchten Abgleiche der Produktzugänge mit einer Rechnungsposition festlegen, bevor das System zu dem Schluss kommt, dass der Prozess fehlgeschlagen ist. Der Prozess wird entweder stündlich oder täglich im Hintergrund ausgeführt. Sie können den automatisierten Abgleichprozess im Rahmen des Prozesses zum Senden von Rechnungen an das Workflowsystem ausführen. Alternativ können Sie den Prozess auch als eigenständigen Prozess ausführen.
 
 ## <a name="pre-validate-vendor-invoice-posting"></a>Buchung der Kreditorenrechnung vorab überprüfen
 
@@ -60,7 +60,7 @@ Die Buchungssimulation schließt die Prüfungsschritte ab, die während des Buch
 
 ## <a name="enhanced-experience-for-viewing-workflow-and-automation-historical-information-for-vendor-invoices"></a>Verbesserte Erfahrung beim Anzeigen von Informationen aus der Workflow- und Automatisierungshistorie für Kreditorenrechnungen
 
-Es wird eine übersichtliche Ansicht der Workflowhistorie der Kreditorenrechnung bereitgestellt. Auf die Ansicht der Workflowhistorie kann direkt über die Kreditorenrechnung zugegriffen werden. Daher sind weniger Mausklicks erforderlich, um diese Informationen zu finden. Wenn Ihre Organisation die Möglichkeit aktiviert hat, importierte Kreditorenrechnungen automatisch an den Workflow zu senden, wird der Automationsverlauf für die importierten Rechnungen bereitgestellt. Mithilfe des Automationsverlaufs können Sie den aktuellen Prozessschritt sowie die bereits abgeschlossenen Schritte identifizieren. Wenn ein Schritt nicht erfolgreich ist, bietet das System detaillierte Informationen, damit Sie den Grund für den Fehler besser verstehen.
+Es wird eine übersichtliche Ansicht der Workflowhistorie der Kreditorenrechnung bereitgestellt. Auf die Ansicht der Workflowhistorie kann direkt über die Kreditorenrechnung zugegriffen werden. Daher sind weniger Mausklicks erforderlich, um diese Informationen zu finden. Wenn Ihre Organisation die Möglichkeit aktiviert hat, importierte Kreditorenrechnungen automatisch an den Workflow zu senden, wird der Automationsverlauf für die importierten Rechnungen bereitgestellt. Mithilfe des Automationsverlaufs können Sie den aktuellen Prozessschritt sowie die bereits abgeschlossenen Schritte identifizieren. Wenn ein Schritt nicht erfolgreich ist, werden detaillierte Informationen angezeigt, damit Sie den Grund für den Fehler nachvollziehen können.
 
 ## <a name="analytics-and-metrics"></a>Analysen und Metriken
 
@@ -78,9 +78,9 @@ Der Wert **Rechnungseingangsdatum** gibt das Datum an, an dem das Unternehmen di
 
 ## <a name="tracking-the-imported-invoice-amount-and-imported-sales-tax-amount-values"></a>Nachverfolgung der Werte für den importierten Rechnungsbetrag und den importierten Umsatzsteuerbetrag
 
-Die Werte **Importierter Rechnungsbetrag** und **Importierter Umsatzsteuerbetrag** für Kreditorenrechnungen können in der Importdatei für Kreditorenrechnungen angegeben werden. In der Regel stammen diese Werte aus einer Rechnung, die von einem externen Anbieter gescannt und in die Importdatei aufgenommen wurde. Da die Rechnung in der Kreditorenbuchhaltung verarbeitet wird, berechnet das System die Werte basierend auf den Rechnungsdaten. Die Rechnung kann nur gebucht werden, wenn die importierten Werte mit den berechneten Werten übereinstimmen. Übereinstimmende Werte stellen sicher, dass die Rechnung den dem Lieferanten zustehenden Betrag genau wiedergibt. Wenn Ihre Organisation zulässt, dass importierte Rechnungen automatisch an das Workflow-System gesendet werden, können Sie optional verlangen, dass die importierten Summen mit den berechneten Summen übereinstimmen, bevor die Rechnung an das Workflow-System gesendet werden kann.
+Die Werte **Importierter Rechnungsbetrag** und **Importierter Umsatzsteuerbetrag** für Kreditorenrechnungen können in der Importdatei für Kreditorenrechnungen angegeben werden. In der Regel stammen diese Werte aus einer Rechnung, die von einem externen Anbieter gescannt und in die Importdatei aufgenommen wurde. Wenn die Rechnung in den Debitorenrechnungen verarbeitet wird, werden die Werte auf der Grundlage der Rechnungsdaten berechnet. Die Rechnung kann nur gebucht werden, wenn die importierten Werte mit den berechneten Werten übereinstimmen. Übereinstimmende Werte stellen sicher, dass die Rechnung den dem Lieferanten zustehenden Betrag genau wiedergibt. Wenn Ihre Organisation zulässt, dass importierte Rechnungen automatisch an das Workflow-System gesendet werden, können Sie optional verlangen, dass die importierten Summen mit den berechneten Summen übereinstimmen, bevor die Rechnung an das Workflow-System gesendet werden kann.
 
 ## <a name="vendor-invoice-automation---resume-automation-processing-for-multiple-invoices"></a>Automation von Kreditorenrechnungen – Setzen Sie die Automationsverarbeitung für mehrere Rechnungen fort
-Wenn eine importierte Rechnung während des automatisierten Prozesses nicht erfolgreich an den Workflow gesendet wird, wird sie vom System aus der weiteren automatisierten Verarbeitung entfernt. Ein Kreditorenbuchhalter kann die Rechnung überprüfen und bearbeiten, bevor der automatisierte Prozess sie erneut an den Workflow übermittelt. Wenn ein Fehlergrund durch dieselbe Behebung für mehrere Rechnungen behoben werden kann, können Sie den automatisierten Prozess auf der Seite **Automatisierte Rechnungsverarbeitung fortsetzen** neu starten. 
+Wenn eine importierte Rechnung nicht erfolgreich durch den automatisierten Prozess an den Workflow gesendet wird, wird sie von der weiteren automatisierten Verarbeitung ausgeschlossen. Ein Kreditorenbuchhalter kann die Rechnung überprüfen und bearbeiten, bevor der automatisierte Prozess sie erneut an den Workflow übermittelt. Wenn ein Fehlergrund durch dieselbe Behebung für mehrere Rechnungen behoben werden kann, können Sie den automatisierten Prozess auf der Seite **Automatisierte Rechnungsverarbeitung fortsetzen** neu starten. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

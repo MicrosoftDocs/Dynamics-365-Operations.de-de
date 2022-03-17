@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 93f5c3e4951784a6c4925b8f9026816bfaf551ee
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9af5184da4f9507e3c06464a223f0debaea4430e
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102909"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384667"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Änderungen an Verwaltung für technische Änderung verwalten
 
@@ -217,5 +217,15 @@ Die meisten Felder auf Änderungsaufträgen sind die gleichen wie die Felder fü
 
 Mit der Schaltfläche **Änderungsinformationen beibehalten/kopieren** können Sie Änderungsinformationen zwischen betroffenen Produkten kopieren.
 
+## <a name="use-electronic-signatures-to-approve-and-active-boms-and-routes"></a>Verwenden Sie elektronische Signaturen, um Stücklisten und Routen zu genehmigen und zu aktivieren
+
+Um elektronische Signaturen zu verwenden, um Stücklisten (Stückliste) und/oder Routenänderungen zu genehmigen und/oder zu aktivieren, gehen Sie zu **Organisationsverwaltung \> Einrichtung \> Elektronische Signatur \> Elektronische Signaturanforderungen**. Stellen Sie dann sicher, dass bei jedem der folgenden Elemente **Signatur erforderlich** auf *Ja* festgelegt ist:
+
+- Technische Änderungsauftrags-Stückliste aktivieren
+- Produktroute für technischen Änderungsauftrag aktivieren
+- Stückliste des technischen Produkts im Änderungsauftrag genehmigen
+- Technische Änderungsauftrags-Produktroute genehmigen
+- Technische Stückliste und Stücklistenversionen genehmigen
+- Genehmigte technische Version und Routenversion
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,23 +2,24 @@
 title: Bereitstellungsrichtlinien für das Steuererfassungsdienst-Integrationsbeispiel für Österreich (Legacy)
 description: Dieses Thema enthält Richtlinien für die Bereitstellung des Beispiels für die steuerliche Integration für Österreich aus dem Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK).
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 6238b67a35a303a03c51bbd261dd24d1b2acf041
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 65e2a64ed288fb0dcc05ec1ff2db8ed298ed3a76
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077114"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388414"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-austria-legacy"></a>Bereitstellungsrichtlinien für das Steuererfassungsdienst-Integrationsbeispiel für Österreich (Legacy)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Dieses Thema enthält Richtlinien für die Bereitstellung des Integrationsbeispiels für den Steuerregistrierungsdienst für Österreich aus dem Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK) auf einer virtuellen Entwicklermaschine (VM) in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen zu den Beispielen für diese steuerliche Integration finden Sie unter [Beispiele für die steuerliche Integration für Österreich](emea-aut-fi-sample.md). 
 
@@ -87,11 +88,15 @@ Die CRT-Erweiterungskomponenten sind in den CRT-Beispielen enthalten. Um die fol
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.XZReportsAustria" />
     ```
 
-### <a name="enable-hardware-station-extensions"></a>Hardware station-Erweiterungen aktivieren
+### <a name="enable-fiscal-connector-extensions"></a>Erweiterungen für steuerliche Konnektoren aktivieren
+
+Sie können fiskalische Konnektor-Erweiterungen auf der [Hardware-Station](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) oder dem [POS-Register](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network) aktivieren.
+
+#### <a name="enable-hardware-station-extensions"></a>Hardware station-Erweiterungen aktivieren
 
 Die Hardware station-Erweiterungskomponenten sind in den Hardware station-Beispielen enthalten. Um die folgenden Prozeduren abzuschließen, öffnen Sie die Lösung **HardwareStationSamples.sln.sln** unter **RetailSdk\\SampleExtensions\\HardwareStation**.
 
-#### <a name="efrsample-component"></a>EFRSample-Komponente
+##### <a name="efrsample-component"></a>EFRSample-Komponente
 
 1. Suchen Sie das Projekt **HardwareStation.Extension.EFRSample**, und erstellen Sie es.
 2. Im Ordner **Extension.EFRSample\\bin\\Debug** suchen Sie die folgende Assembly-Dateien:
@@ -114,6 +119,30 @@ Die Hardware station-Erweiterungskomponenten sind in den Hardware station-Beispi
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample.dll" />
     ```
+
+#### <a name="enable-pos-extensions"></a>POS-Erweiterungen aktivieren
+
+Das Beispiel für die POS-Erweiterung befindet sich im Ordner **src\\FiscalIntegration\\PosFiscalConnectorSample** des [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) Repository.
+
+Um das Beispiel der POS-Erweiterung im veralteten SDK zu verwenden, führen Sie diese Schritte aus.
+
+1. Kopieren Sie den Ordner **Pos.Extension** in den Ordner POS **Extensions** des veralteten SDK (zum Beispiel `C:\RetailSDK\src\POS\Extensions`).
+1. Benennen Sie die Kopie des Ordners **Pos.Extension** in **PosFiscalConnector** um.
+1. Entfernen Sie die folgenden Ordner und Dateien aus dem Ordner **PosFiscalConnector**:
+
+    - bin
+    - DataService
+    - devDependencies
+    - Bibliotheken
+    - obj
+    - Contoso.PosFiscalConnectorSample.Pos.csproj
+    - RetailServerEdmxModel.g.xml
+    - tsconfig.json
+
+1. Öffnen Sie die **CloudPos.sln** oder **ModernPos.sln** Lösung.
+1. Nehmen Sie in das Projekt **Pos.Extensions** den Ordner **PosFiscalConnector** auf.
+1. Öffnen Sie die Datei **extensions.json**, und fügen Sie die Erweiterung **PosFiscalConnector** hinzu.
+1. Erstellen Sie das SDK.
 
 ### <a name="enable-modern-pos-extension-components"></a>Modern POS-Erweiterungskomponenten aktivieren
 
@@ -243,9 +272,7 @@ Der Zweck dieser Dateien ist es, Einstellungen zu aktivieren, damit der Dokument
 
 ### <a name="hardware-station-extension-design"></a>Hardware station-Erweiterungsentwurf
 
-Der Zweck der Erweiterung, die ein Steuerkonnektor ist, ist die Kommunikation mit dem Steuererfassungsdienst.
-
-Die Hardware station-Erweiterung ist **HardwareStation.Extension.EFRSample**. Sie verwendet das HTTP-Protokoll, um Dokumente, die die CRT-Erweiterung generiert, zum Steuererfassungsdienst zu übermitteln. Sie handhabt auch die Antworten, die vom Steuererfassungsdienst empfangen werden.
+Der Zweck der Fiskalkonnektor-Erweiterung ist die Kommunikation mit dem Fiskalregistrierungsdienst. Die Hardware-Stationserweiterung hat den Namen **HardwareStation.Extension.EFRSample**. Es verwendet das HTTP- oder HTTPS-Protokoll, um Dokumente, die die Erweiterung CRT erzeugt, an den fiskalischen Registrierungsdienst zu senden. Sie handhabt auch die Antworten, die vom Steuererfassungsdienst empfangen werden.
 
 #### <a name="request-handler"></a>Anforderungshandler
 
@@ -265,3 +292,26 @@ Die Konfigurationsdatei befindet sich im Ordner **Konfiguration** des Erweiterun
 
 - **Endpunktadresse** – Die URL des Steuererfassungsdiensts.
 - **Zeitlimit** – Die Zeitdauer in Millisekunden, die der Treiber auf eine Antwort vom Steuererfassungsdienst wartet.
+
+### <a name="pos-fiscal-connector-extension-design"></a>Design der POS Fiskalkonnektor-Erweiterung
+
+Der Zweck der POS Fiskalkonnektor-Erweiterung ist die Kommunikation mit dem Fiskalregistrierungsdienst von POS. Sie verwendet das HTTPS-Protokoll für die Kommunikation.
+
+#### <a name="fiscal-connector-factory"></a>Fiscal Konnektor Fabrik
+
+Die Fiskal Connector Fabrik factory ordnet den Namen des Konnektors der Implementierung des Fiskal Connectors zu und befindet sich in der Datei **Pos.Extension\\Connectors\\FiscalConnectorFactory.ts**. Der Name des Konnektors sollte mit dem Namen des steuerlichen Konnektors übereinstimmen, der in der Commerce-Zentrale angegeben ist.
+
+#### <a name="efr-fiscal-connector"></a>EFR Fiskalischer Konnektor
+
+Der EFR-Fiscal-Konnektor befindet sich in der Datei **Pos.Extension\\Connectors\\Efr\\EfrFiscalConnector.ts**. Es implementiert die Schnittstelle **IFiscalConnector**, die die folgenden Anfragen unterstützt:
+
+- **FiscalRegisterSubmitDocumentClientRequest** - Diese Anfrage sendet Dokumente an den Fiskalregistrierungsdienst und gibt eine Antwort von ihm zurück.
+- **FiscalRegisterIsReadyClientRequest** - Diese Anfrage wird für einen Gesundheitscheck des fiskalischen Registrierungsdienstes verwendet.
+- **FiscalRegisterInitializeClientRequest** - Diese Anfrage wird zur Initialisierung des fiskalischen Registrierungsdienstes verwendet.
+
+#### <a name="configuration"></a>Variante
+
+Die Konfigurationsdatei befindet sich im Ordner **src\\FiscalIntegration\\Efr\\Configurations\\Connectors** des [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) Repository. Der Zweck der Datei besteht darin, die Konfiguration der Einstellungen für den Fiskalkonnektor von der Commerce-Zentrale aus zu ermöglichen. Das Dateiformat wird mit den Anforderungen für die Steuerintegrationskonfiguration ausgerichtet. Die folgenden Einstellungen werden hinzugefügt:
+
+- **Endpunktadresse** – Die URL des Steuererfassungsdiensts.
+- **Timeout** - Die Zeitspanne in Millisekunden, die der Konnektor auf eine Antwort des fiskalischen Registrierungsdienstes warten wird.

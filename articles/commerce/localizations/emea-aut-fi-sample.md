@@ -2,23 +2,24 @@
 title: Beispiel der Steuerregistrierungsserviceintegration für Österreich
 description: In diesem Thema erhalten Sie einen Überblick über das steuerliche Integrationsbeispiel für Österreich in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: d720bffb98965bdc0276660d2a2e50d2bf155e74
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: b41ff8a112f801cd9bf5ebad3aed588ccb40e1f8
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077164"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388362"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>Beispiel für Integration des Steuererfassungsdienstes in Österreich
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 In diesem Thema erhalten Sie einen Überblick über das steuerliche Integrationsbeispiel für Österreich in Microsoft Dynamics 365 Commerce.
 
@@ -301,14 +302,28 @@ Um eine Entwicklungsumgebung zum Testen und Erweitern des Beispiels festzulegen,
             ModernPOS.EFR.Installer.exe install --verbosity 0
             ```
 
-1. Installieren Sie die Hardware Station Extensions:
+1. Installieren Sie die Erweiterungen des Fiskalkonnektors:
 
-    1. In **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\Behälter\\Debuggen\\net461** Ordner finden Sie das **HardwareStation.EFR.Installer** Installationsprogramm.
-    1. Starten Sie das Installationsprogramm für die Erweiterung über die Befehlszeile.
+    Sie können fiskalische Konnektor-Erweiterungen auf der [Hardware Station](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) oder dem [POS Register](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network) installieren.
 
-        ```Console
-        HardwareStation.EFR.Installer.exe install --verbosity 0
-        ```
+    1. Installieren Sie die Hardware Station Extensions:
+
+        1. In **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\Behälter\\Debuggen\\net461** Ordner finden Sie das **HardwareStation.EFR.Installer** Installationsprogramm.
+        1. Starten Sie das Installationsprogramm für die Erweiterung von der Befehlszeile aus, indem Sie den folgenden Befehl ausführen.
+
+            ```Console
+            HardwareStation.EFR.Installer.exe install --verbosity 0
+            ```
+
+    1. Installieren Sie die POS-Erweiterungen:
+
+        1. Öffnen Sie die Beispiellösung für den POS Fiscal Konnektor unter **Dynamics365Commerce.Solutions\\FiscalIntegration\\PosFiscalConnectorSample\\Contoso.PosFiscalConnectorSample.sln**, und erstellen Sie sie.
+        1. Im Ordner **PosFiscalConnectorSample\\StoreCommerce.Installer\\bin\\Debug\\net461** finden Sie den **Contoso.PosFiscalConnectorSample.StoreCommerce.Installer** Installer.
+        1. Starten Sie das Installationsprogramm für die Erweiterung von der Kommandozeile aus, indem Sie den folgenden Befehl ausführen.
+
+            ```Console
+            Contoso.PosFiscalConnectorSample.StoreCommerce.Installer.exe install --verbosity 0
+            ```
 
 #### <a name="production-environment"></a>Produktionsumgebung
 
@@ -321,7 +336,7 @@ Die Beispiele für diese steuerliche Integration für Österreich basiert auf de
 > [!WARNING]
 > Aufgrund der Einschränkungen des [neuen unabhängigen Verpackungs- und Erweiterungsmodells](../dev-itpro/build-pipeline.md) kann es derzeit nicht für dieses Beispiel der steuerlichen Integration verwendet werden. Sie müssen die Vorgängerversion des Retail SDK auf einer Entwickler-VM in LCS verwenden. Weitere Informationen unter [Bereitstellungsrichtlinien für das Steuererfassungsdienst-Integrationsbeispiel für Österreich (Legacy)](emea-aut-fi-sample-sdk.md). Die Unterstützung des neuen unabhängigen Paketierungs- und Erweiterungsmodells für steuerliche Integrationsmuster ist für spätere Versionen geplant.
 
-### <a name="commerce-runtime-extension-design"></a>Commerce-Laufzeiterweiterungsentwurf
+### <a name="commerce-runtime-extension-design"></a>Commerce-Laufzeiterweiterungsentwurf 
 
 Der Zweck der Erweiterung ist es, dass ein Steuerdokumentanbieter dienstspezifische Dokumente erzeugt und Antworten aus dem Steuererfassungsdienst handhabt.
 
@@ -352,7 +367,7 @@ Der Zweck dieser Dateien ist es, Einstellungen zu aktivieren, damit der Steuerdo
 
 ### <a name="hardware-station-extension-design"></a>Hardware station-Erweiterungsentwurf
 
-Der Zweck der Erweiterung, die ein Steuerkonnektor ist, ist die Kommunikation mit dem Steuererfassungsdienst. Die Hardwarestation-Erweiterung verwendet das HTTP-Protokoll, um Dokumente, die die CRT-Erweiterung generiert, zum Steuererfassungsdienst zu übermitteln. Sie handhabt auch die Antworten, die vom Steuererfassungsdienst empfangen werden.
+Der Zweck der Fiskalkonnektor-Erweiterung ist die Kommunikation mit dem Fiskalregistrierungsdienst. Die Erweiterung Hardwarestation verwendet die Protokolle HTTP und HTTPS, um Dokumente, die die Erweiterung CRT erzeugt, an den Fiskalregistrierungsdienst zu senden. Sie handhabt auch die Antworten, die vom Steuererfassungsdienst empfangen werden.
 
 #### <a name="request-handler"></a>Anforderungshandler
 
@@ -369,5 +384,28 @@ Der Steuerkonnektor unterstützt die folgenden Anforderungen:
 #### <a name="configuration"></a>Variante
 
 Die Konfigurationsdatei für den Anbieter von Steuerkonnektoren befindet sich unter **src\\FiscalIntegration\\Efr\\Configurations\\Connectors\\ConnectorEFRSample.xml** in dem [Dynamics 365 Commerce Lösungen](https://github.com/microsoft/Dynamics365Commerce.Solutions/) Repository. Der Zweck der Datei besteht darin, die Konfiguration der Einstellungen des Fiskalkonnektors von der Commerce-Zentrale aus zu ermöglichen. Das Dateiformat wird mit den Anforderungen für die Steuerintegrationskonfiguration ausgerichtet.
+
+### <a name="pos-fiscal-connector-extension-design"></a>Design der POS Fiskalkonnektor-Erweiterung
+
+Der Zweck der POS Fiskalkonnektor-Erweiterung ist die Kommunikation mit dem Fiskalregistrierungsdienst von POS. Sie verwendet das HTTPS-Protokoll für die Kommunikation.
+
+#### <a name="fiscal-connector-factory"></a>Fiscal Konnektor Fabrik
+
+Die Fiskal Connector Fabrik factory ordnet den Namen des Konnektors der Implementierung des Fiskal Connectors zu und befindet sich in der Datei **Pos.Extension\\Connectors\\FiscalConnectorFactory.ts**. Der Name des Konnektors sollte mit dem Namen des steuerlichen Konnektors übereinstimmen, der in der Commerce-Zentrale angegeben ist.
+
+#### <a name="efr-fiscal-connector"></a>EFR Fiskalischer Konnektor
+
+Der EFR-Fiscal-Konnektor befindet sich in der Datei **Pos.Extension\\Connectors\\Efr\\EfrFiscalConnector.ts**. Es implementiert die Schnittstelle **IFiscalConnector**, die die folgenden Anfragen unterstützt:
+
+- **FiscalRegisterSubmitDocumentClientRequest** - Diese Anfrage sendet Dokumente an den Fiskalregistrierungsdienst und gibt eine Antwort von ihm zurück.
+- **FiscalRegisterIsReadyClientRequest** - Diese Anfrage wird für einen Gesundheitscheck des fiskalischen Registrierungsdienstes verwendet.
+- **FiscalRegisterInitializeClientRequest** - Diese Anfrage wird zur Initialisierung des fiskalischen Registrierungsdienstes verwendet.
+
+#### <a name="configuration"></a>Variante
+
+Die Konfigurationsdatei befindet sich im Ordner **src\\FiscalIntegration\\Efr\\Configurations\\Connectors** des [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) Repository. Der Zweck der Datei besteht darin, die Konfiguration der Einstellungen für den Fiskalkonnektor von der Commerce-Zentrale aus zu ermöglichen. Das Dateiformat wird mit den Anforderungen für die Steuerintegrationskonfiguration ausgerichtet. Die folgenden Einstellungen werden hinzugefügt:
+
+- **Endpunktadresse** – Die URL des Steuererfassungsdiensts.
+- **Timeout** - Die Zeitspanne in Millisekunden, die der Konnektor auf eine Antwort des fiskalischen Registrierungsdienstes warten wird.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,23 +1,23 @@
 ---
 title: Deutschland – Übersicht
 description: Dieses Thema bietet eine Übersicht der Dynamics 365 Finance-Funktionen, die für Deutschland spezifisch sind.
-author: ShylaThompson
-ms.date: 05/12/2020
+author: kfend
+ms.date: 03/02/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Germany
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 116879e3b75b15f773bfc22e228a8d98fd54bef5
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: a6eeaa33bbef23754afa0757839fe332ffc4fadd
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984788"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388511"
 ---
 # <a name="germany-overview"></a>Deutschland – Übersicht
 
@@ -34,7 +34,6 @@ Dieses Thema enthält Informationen und Verknüpfungen zu den Ressourcen, die f�
 ## <a name="depreciation"></a>Abschreibung
 -   [Zusätzliche Anschaffungsabschreibung](emea-deu-additional-acquisition-depreciation.md)
 -   [Abschreibungsregulierungen für zusätzliche Anschaffungen im zweiten Jahr](tasks/de-00002-depreciation.md)
--   [Intrastat](emea-deu-intrastat.md)
 
 ## <a name="vat-declaration"></a>MwSt.-Erklärung 
 -   [Umsatzsteuererklärung für Deutschland](emea-deu-vat-declaration-germany.md)
@@ -61,6 +60,10 @@ Auf der Seite **Juristische Personen** können Sie die Option **Rechnungskorrekt
 | Bericht                     |  Beschreibung  |Bericht abrufen |
 |----------------------------|--------------------------|----------------------------------------|
 |Deutscher Journallistenbericht|Der Bericht **Deutsche Erfassungsliste** enthält alle im Journal erfassten Buchungen, die beim Ausführen der Funktionen generiert wurden, und ist nach laufender Nummer sortiert. Dieser Bericht wird verwendet, um den Status von Hauptbuchprozessen zu überprüfen. Er wird normalerweise von leitenden Geschäftsführern, Leitern der Finanzabteilung, Leitern Compliance, Buchhaltungsleitern und Supervisors Buchhaltung und Finanzcontrollern verwendet. Weitere Informationen zu Kommissionierlistenerfassungen finden Sie unter [Deutscher Journallistenbericht](emea-deu-journal-list-report.md).|  **Hauptbuch** > **Periodisch** > **Erfassungen** > **Erstellte Erfassungen** > **Deutsches Journal**|
+
+## <a name="intra-community-reporting"></a>Intra-Community-Berichterstattung
+-   [EU-Verkaufsliste für Deutschland](emea-deu-eu-sales-list.md)
+-   [Intrastat](emea-deu-intrastat.md)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Microsoft Dynamics-Lokalisierungs-Portal: Deutschland-Bericht](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Germany.html)

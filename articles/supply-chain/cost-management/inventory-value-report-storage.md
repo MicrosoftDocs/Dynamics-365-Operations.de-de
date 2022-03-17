@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: banluo
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3da92c384d3074335067433120eccc97d11b6b81
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: d78cde26d238d18744adde9a576552588736e619
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103939"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384694"
 ---
 # <a name="inventory-value-reports"></a>Lagerwertberichte
 
@@ -102,7 +102,7 @@ Verwenden Sie die Seite **Lagerwertberichte**, um den Inhalt einzurichten, der i
         - Erhaltene und noch nicht fakturierte Artikel, wenn die Option **Physischen Bestand buchen** für die entsprechende Artikelmodellgruppe deaktiviert ist.
         - Erhaltene und noch nicht fakturierte Artikel, wenn die Option **Produktzugang auf Sachkonto buchen** im Inforegister **Produktzugang** auf der Registerkarte **Allgemein** der Seite **Kreditorenkontenparameter** deaktiviert ist (**Kreditorenkonten \> Setup \> Kreditorenkontenparameter**).
 
-    - **Durchschnittliche Einheitenkosten berechnen**: Setzen Sie diese Option auf *Ja*, um eine Spalte anzuzeigen, die die durchschnittlichen Einheitenkosten anzeigt. Die durchschnittlichen Einheitenkosten sind die Gesamtmenge geteilt durch den Gesamtbetrag.
+    - **Durchschnittliche Einheitenkosten berechnen**: Setzen Sie diese Option auf *Ja*, um eine Spalte anzuzeigen, die die durchschnittlichen Einheitenkosten anzeigt. Die durchschnittlichen Kosten pro Einheit ergeben sich aus dem Gesamtbetrag geteilt durch die Gesamtmenge.
     - **Gesamtmenge und -wert**: Setzen Sie diese Option auf *Ja*, um Spalten anzuzeigen, die die Gesamtmenge des physischen Bestands (sowie die finanziellen Mengen) und den Gesamtbetrag des physischen Bestand (sowie die finanziellen Beträge) anzeigt. Sie können diese Option nur dann auf *Ja* festlegen, wenn die Option **Physische Werte und Finanzwerte zusammenfassen** auf *Nein* festgelegt ist.
     - **Lagerungsdimensionen**: Wählen Sie in diesem Raster das Kästchen **Ansicht** für jede Dimension aus, die Sie im Bericht anzeigen möchten. Nur Dimensionen, bei denen die Option **Wertmäßiger Bestand** aktiviert ist, zeigen Werte im Bericht an. Andere Dimensionen zeigen nur leere Spalten. Für die Dimensionen, die Sie zum Anzeigen auswählen, können Sie das Kontrollkästchen **Gesamt** auswählen, um auch Summen einzuschließen.
     - **Ressourcen-ID**: Stellen Sie die Option **Ansicht** auf *Ja*, um eine Spalte anzuzeigen, die den Artikel für jede Zeile identifiziert. Setzen Sie die Option **Gesamt** auf *Ja*, um auch Summen einzubeziehen. Je nach Art des Artikels, der in jeder Zeile aufgeführt ist, zeigt die Spalte eine der folgenden Arten von Informationen an:

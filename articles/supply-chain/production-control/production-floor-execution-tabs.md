@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 6207627c1e901ce969e39d960adb5ab50f13e17d
-ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
+ms.openlocfilehash: ee206ced76dbdd356c77d34a4b8f197879e9a3f0
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7790865"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384771"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>Gestalten der Ausführungsschnittstelle auf Produktionsebene
 
@@ -54,7 +54,7 @@ Um eine neue Registerkarte zu erstellen und zu konfigurieren, gehen Sie wie folg
 1. Legen Sie die folgenden Einstellungen in der Kopfzeile der Seite fest:
 
     - **Registerkartenname** – Geben Sie einen Namen für die Registerkarte an.
-    - **Hauptansicht** – Wählen Sie unter den vordefinierten Auftragslisten (*Aktive Aufträge*, *Alle Aufträge* und *Mein Computer*) aus.
+    - **Hauptansicht** - Wählen Sie aus den vordefinierten Auftragslisten (*Aktive Aufträge*, *Alle Aufträge*, *Meine Aufträge* und *Mein Rechner*).
     - **Detailansicht** – Wählen Sie zwischen einem leeren Wert oder **Auftragsdetails**. Wenn Sie den leeren Wert wählen, gibt es in der Registerkarte keine Detailansicht. Wenn Sie **Job-Details** wählen, enthält die Detailansicht eine detaillierte Beschreibung des Jobs, der in der Jobliste in der Hauptansicht ausgewählt ist.
 
 1. Im Bereich **Primäre Symbolleiste** wählen Sie, welche Schaltflächen in der primären Symbolleiste verfügbar sein sollen. Die Spalte **Verfügbare Aktionen** zeigt eine Liste mit allen Schaltflächen, die hinzugefügt werden können. Die Spalten **Ausgewählte Aktionen** zeigt eine Liste aller Schaltflächen, die in der aktuellen Konfiguration enthalten sind. Verwenden Sie die Schaltflächen zwischen den Spalten, um ausgewählte Elemente nach Bedarf zwischen den Spalten zu verschieben. Verwenden Sie die Aufwärts- und Abwärts-Schaltflächen neben der Spalte **Ausgewählte Aktionen**, um die Reihenfolge zu steuern, in der die Schaltflächen in der Benutzeroberfläche angezeigt werden.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fecdafe8765121d6d54389a70e6c2e497a03611a
-ms.sourcegitcommit: 43d0555c17a0643c9e5ba3bc2da3ce5f80754642
+ms.openlocfilehash: f10ddf113f59da4800a97a48300ab1310bfb42dd
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "8325967"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358180"
 ---
 # <a name="accounting-distributions-and-journal-entries-for-vendor-invoices"></a>Buchhaltungsverteilungen und Erfassungseinträge für Kreditorenrechnungen
 
@@ -31,7 +31,7 @@ Mithilfe von Buchhaltungsverteilungen wird definiert, wie ein Betrag kalkuliert 
 ## <a name="accounting-distributions"></a>Buchhaltungsverteilungen 
 
 Sie können die folgenden Schaltflächen auf der Seite "Kreditorenrechnung" verwenden, um die Buchhaltungsverteilungen für jeden Betrag auf der Kreditorenrechnung anzuzeigen und eventuell zu ändern.
--   **Beträge verteilen** - Dient zum Anzeigen und Ändern der Buchhaltungsverteilungen für eine einzelne Position und alle untergeordneten Positionen wie Steuern oder Zuschläge. Sie können auch die Buchhaltungsverteilungen für die untergeordnete Position direkt von der Seite "Mehrwertsteuerbuchungen" oder der Seite "Belastungsbuchungen" aus anzeigen und ändern.
+-   **Beträge verteilen** - Dient zum Anzeigen und Ändern der Buchhaltungsverteilungen für eine einzelne Position und alle untergeordneten Positionen wie Steuern oder Zuschläge. Sie können die buchhalterischen Verteilungen für die untergeordnete Zeile auch direkt über die Seite **Mehrwertsteuer-Transaktionen** oder die Seite **Belastungen-Transaktionen** einsehen und ändern.
     -   Ändern Sie Kopfzeilenbeträge von Kreditorenrechnungen wie Zuschläge oder Währungsrundungsbeträge.
     -   Ändern Sie Kreditorenrechnungspositionsbeträge.
 -   **Verteilungen anzeigen** – Dient zum Anzeigen der Buchhaltungsverteilungen für alle Positionen im Dokument. Sie können die Buchhaltungsverteilungen in dieser Ansicht nicht ändern.
@@ -62,7 +62,7 @@ Wenn Sie eine Kreditorenrechnung eingeben, wird jeder Betrag wie folgt verteilt.
 <td>Produkt auf Lager</td>
 <td><ol>
 <li>Die Buchhaltungsverteilung für die Bestellposition.</li>
-<li>Das Feld **Hauptkonto**, wenn „Einkaufswendungen für Produkt“ auf der Seite **Buchung** ausgewählt ist.</li>
+<li>Das Feld <strong>Hauptkonto</strong>, wenn „Einkaufswendungen für Produkt“ auf der Seite <strong>Buchung</strong> ausgewählt ist.</li>
 </ol></td>
 <td><ol>
 <li>Wenn die Rechnungsposition auf eine Bestellposition verweist, verwenden Sie die Buchhaltungsverteilung für die Bestellposition.</li>
@@ -73,35 +73,35 @@ Wenn Sie eine Kreditorenrechnung eingeben, wird jeder Betrag wie folgt verteilt.
 <td>Eine Beschaffungskategorie oder ein nicht gelagertes Produkt</td>
 <td><ol>
 <li>Die Buchhaltungsverteilung für die Bestellposition, wenn die Kreditorenrechnung auf eine Bestellposition verweist.</li>
-<li>Das Feld **Hauptkonto**, wenn „Einkaufsaufwendungen für Ausgaben“ auf der Seite **Buchung** ausgewählt ist.</li>
+<li>Das Feld <strong>Hauptkonto</strong>, wenn „Einkaufsaufwendungen für Ausgaben“ auf der Seite <strong>Buchung</strong> ausgewählt ist.</li>
 </ol></td>
 <td><ol>
 <li>Wenn die Rechnungsposition auf eine Bestellposition verweist, verwenden Sie die Buchhaltungsverteilung für die Bestellposition.</li>
 <li>Wenn das Hauptkonto ein Zuordnungskonto ist, verwenden Sie den Standardwert der Zuweisungskontodefinition.</li>
 <li>Verwenden Sie die standardmäßigen Finanzdimensionswerte in der Kreidtorenrechnungsposition.</li>
 <li>Verwenden Sie die Finanzdimensionswerte der Kreditorenrechnungsposition.</li>
-<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Hauptkonto auf der Seite **Kontenplan**.</li>
+<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Hauptkonto auf der Seite <strong>Kontenplan</strong>.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Anlage</td>
 <td><ol>
 <li>Die Buchhaltungsverteilung für die Bestellposition, wenn die Kreditorenrechnung auf eine Bestellposition verweist.</li>
-<li>Wenn **Anschaffung** im Feld **Buchungsart** auf der Seite **Kreditorenrechnung** ausgewählt ist, das Feld **Hauptkonto**, wenn **Anschaffung** auf der Seite **Anlagenbuchungsprofile** ausgewählt ist.</li>
-<li>Wenn **Anschaffungsänderung** im Feld **Buchungsart** ausgewählt ist, das Feld **Hauptkonto**, wenn **Anschaffungsänderung** auf der Seite **Anlagenbuchungsprofile** ausgewählt ist.</li>
+<li>Wenn <strong>Zugang</strong> im Feld <strong>Transaktionsart</strong> auf der Seite <strong>Lieferantenrechnung</strong> ausgewählt ist, das Feld <strong>Hauptkonto</strong>, wenn <strong>Zugang</strong> auf der Seite <strong>Anlagenbuchungsprofile</strong> ausgewählt ist.</li>
+<li>Wenn <strong>Akquisitionsanpassung</strong> im Feld <strong>Transaktionsart</strong> ausgewählt ist, wird das Feld <strong>Hauptkonto</strong>, wenn <strong>Akquisitionsanpassung</strong> auf der Seite <strong>Anlagenbuchungsprofile</strong> ausgewählt ist.</li>
 </ol></td>
 <td><ol>
 <li>Verwenden Sie die Buchhaltungsverteilung für die Bestellposition, wenn die Rechnungsposition auf eine Bestellposition verweist.</li>
 <li>Verwenden Sie die Finanzdimensionswerte der Kreditorenrechnungsposition.</li>
-<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Hauptkonto auf der Seite **Kontenplan**.</li>
+<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Hauptkonto auf der Seite <strong>Kontenplan</strong>.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Das Projekt, das in der Kreditorenrechnungsposition definiert ist</td>
 <td><ol>
 <li>Die Buchhaltungsverteilung für die Bestellposition, wenn die Rechnungsposition auf eine Bestellposition verweist.</li>
-<li>Wenn **Saldo** im Feld **Kosten buchen – Artikel** auf der Seite **Projektgruppen** ausgewählt ist, das Feld **Hauptkonto**, wenn **Kosten** auf der Seite **Sachkontobuchungseinstellungen** ausgewählt ist.</li>
-<li>Wenn **Gewinn und Verlust** im Feld **Kosten buchen – Artikel** auf der Seite **Projektgruppen** ausgewählt ist, das Feld **Hauptkonto**, wenn **Kosten – Artikel** auf der Seite **Sachkontobuchungseinstellungen** ausgewählt ist.</li>
+<li>Wenn <strong>Saldo</strong> im Feld <strong>Kosten buchen – Artikel</strong> auf der Seite <strong>Projektgruppen</strong> ausgewählt ist, das Feld <strong>Hauptkonto</strong>, wenn <strong>Kosten</strong> auf der Seite <strong>Sachkontobuchungseinstellungen</strong> ausgewählt ist.</li>
+<li>Wenn <strong>Gewinn und Verlust</strong> im Feld <strong>Kosten buchen – Artikel</strong> auf der Seite <strong>Projektgruppen</strong> ausgewählt ist, das Feld <strong>Hauptkonto</strong>, wenn <strong>Kosten – Artikel</strong> auf der Seite <strong>Sachkontobuchungseinstellungen</strong> ausgewählt ist.</li>
 </ol></td>
 <td><ol>
 <li>Wenn die Rechnungsposition auf eine Bestellposition verweist, verwenden Sie die Buchhaltungsverteilung für die Bestellposition.</li>
@@ -111,18 +111,18 @@ Wenn Sie eine Kreditorenrechnung eingeben, wird jeder Betrag wie folgt verteilt.
 <td>Positionsrabatt</td>
 <td><ol>
 <li>Die Buchhaltungsverteilung für die Bestellposition, wenn die Rechnungsposition auf eine Bestellposition verweist.</li>
-<li>Das Feld **Hauptkonto**, wenn **Rabatt** auf der Seite **Buchung** ausgewählt ist.</li>
+<li>Das Feld <strong>Hauptkonto</strong>, wenn <strong>Rabatt</strong> auf der Seite <strong>Buchung</strong> ausgewählt ist.</li>
 <li>Wenn ein Hauptkonto im Buchungsprofil nicht definiert ist, die Buchhaltungsverteilung des erweiterten Preises in der Bestellposition.</li>
 </ol></td>
 <td><ol>
 <li>Wenn die Rechnungsposition auf eine Bestellposition verweist, verwenden Sie die Buchhaltungsverteilung für die Bestellposition.</li>
 <li>Verwenden Sie die Finanzdimensionen aus den Buchhaltungsverteilungen für den erweiterten Preis in der Kreditorenrechnungsposition.</li>
 <li>Verwenden Sie die Finanzdimensionswerte für die Kreditorenrechnungsposition.</li>
-<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Hauptkonto auf der Seite **Kontenplan**.</li>
+<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Hauptkonto auf der Seite <strong>Kontenplan</strong>.</li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>„Einkaufskosten“, die auf der Registerkarte **Preis und Rabatt** der Bestellposition eingegeben wird</td>
+<td>„Einkaufskosten“, die auf der Registerkarte <strong>Preis und Rabatt</strong> der Bestellposition eingegeben wird</td>
 <td><ol>
 <li>Die Buchhaltungsverteilung für die Bestellposition, wenn die Rechnungsposition auf eine Bestellposition verweist.</li>
 <li>Die Buchhaltungsverteilung des erweiterten Preises in der Bestellposition.</li>
@@ -136,21 +136,21 @@ Wenn Sie eine Kreditorenrechnung eingeben, wird jeder Betrag wie folgt verteilt.
 <td>Positionszuschlag</td>
 <td><ol>
 <li>Die Buchhaltungsverteilung für die Bestellposition, wenn die Rechnungsposition auf eine Bestellposition verweist.</li>
-<li>Wenn **Sachkonto** im Feld **Solltyp** auf der Seite **Belastungscode** ausgewählt ist, das Feld **Sollkonto** auf der Seite **Belastungscode**.</li>
-<li>Wenn **Artikel** im Feld **Solltyp** auf der Seite **Belastungscode** ausgewählt ist, die Buchhaltungsverteilung für den erweiterten Preis in der Bestellposition.</li>
-<li>Wenn **Debitor/Kreditor** im Feld **Solltyp** auf der Seite **Belastungscode** ausgewählt ist, das Feld **Habenkonto** auf der Seite **Belastungscode**.</li>
+<li>Wenn <strong>Sachkonto</strong> im Feld <strong>Belastungsart</strong> auf der Seite <strong>Gebührencode</strong> ausgewählt ist, das Feld <strong>Sachkonto</strong> auf der Seite <strong>Gebührencode</strong>.</li>
+<li>Wenn <strong>Element</strong> im Feld <strong>Belastungsart</strong> auf der Seite <strong>Belastungscode</strong> ausgewählt ist, wird die Buchhaltungsverteilung für den erweiterten Preis auf der Bestellzeile angezeigt.</li>
+<li>Wenn <strong>Kunde/Lieferant</strong> im Feld <strong>Belastungstyp</strong> auf der Seite <strong>Rechnungscode</strong> ausgewählt ist, das Feld <strong>Kreditkonto</strong> auf der Seite <strong>Rechnungscode</strong>.</li>
 </ol></td>
 <td><ol>
 <li>Wenn die Rechnungsposition auf eine Bestellposition verweist, verwenden Sie die Buchhaltungsverteilung für die Bestellposition.</li>
 <li>Verwenden Sie die Finanzdimensionen aus den Buchhaltungsverteilungen für den erweiterten Preis in der Kreditorenrechnungsposition.</li>
 <li>Verwenden Sie die Finanzdimensionswerte der Kreditorenrechnungsposition.</li>
-<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Hauptkonto auf der Seite **Kontenplan**.</li>
+<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Hauptkonto auf der Seite <strong>Kontenplan</strong>.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Steuer, mit der folgenden Bedingung:
 <ul>
-<li>Die Option „US-Steuerregeln anwenden“ ist auf der Seite **Hauptbuchparameter** ausgewählt.</li>
+<li>Die Option <strong>U.S. Besteuerungsregeln anwenden</strong> ist auf der Seite <strong>Hauptbuch Parameter</strong> aktiviert.</li>
 </ul></td>
 <td><ol>
 <li>Die Buchhaltungsverteilung für die Bestellposition, wenn die Rechnungsposition auf eine Bestellposition verweist.</li>
@@ -165,61 +165,61 @@ Wenn Sie eine Kreditorenrechnung eingeben, wird jeder Betrag wie folgt verteilt.
 <tr class="odd">
 <td>Steuer, mit den folgenden Bedingungen:
 <ul>
-<li>Die Option „US-Steuerregeln anwenden“ wird auf der Seite **Hauptbuchparameter** deaktiviert.</li>
-<li>Das Feld **Verbrauchssteuer** für die Mehrwertsteuergruppe wird auf der Seite **Mehrwertsteuergruppen** deaktiviert.</li>
+<li>Die Option <strong>U.S. Besteuerungsregeln anwenden</strong> ist auf der Seite <strong>Parameter für das Hauptbuch</strong> deaktiviert.</li>
+<li>Das Feld <strong>Verbrauchssteuer</strong> für die Mehrwertsteuergruppe wird auf der Seite <strong>Mehrwertsteuergruppen</strong> deaktiviert.</li>
 </ul></td>
 <td><ol>
-<li>Wenn der Steuerbetrag wiederherstellbar ist, das Feld **Vorsteuer** auf der Seite **Sachkontobuchungsgruppen**.</li>
+<li>Wenn der Steuerbetrag wiederherstellbar ist, das Feld <strong>Vorsteuer</strong> auf der Seite <strong>Sachkontobuchungsgruppen</strong>.</li>
 <li>Wenn der Steuerbetrag nicht erstattungsfähig ist, der erweiterte Preis oder die Buchhaltungsverteilung für die Belastung.</li>
 </ol></td>
 <td><ol>
 <li>Wenn die Rechnungsposition auf eine Bestellposition verweist, verwenden Sie die Buchhaltungsverteilung für die Bestellposition.</li>
 <li>Verwenden Sie die Finanzdimensionen aus dem erweiterten Preis oder der Buchhaltungsverteilung für die Belastung in der Kreditorenrechnungsposition.</li>
 <li>Verwenden Sie die Finanzdimensionswerte der Kreditorenrechnungsposition.</li>
-<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Hauptkonto auf der Seite **Kontenplan**.</li>
+<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Hauptkonto auf der Seite <strong>Kontenplan</strong>.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Steuer, mit den folgenden Bedingungen:
 <ul>
-<li>Die Option „US-Steuerregeln anwenden“ wird auf der Seite **Hauptbuchparameter** deaktiviert.</li>
-<li>Das Feld **Verbrauchssteuer** für die Mehrwertsteuergruppe wird auf der Seite **Mehrwertsteuergruppen** ausgewählt.</li>
+<li>Die Option „US-Steuerregeln anwenden“ wird auf der Seite <strong>Hauptbuchparameter</strong> deaktiviert.</li>
+<li>Das Feld <strong>Verbrauchssteuer</strong> für die Mehrwertsteuergruppe wird auf der Seite <strong>Mehrwertsteuergruppen</strong> ausgewählt.</li>
 </ul></td>
 <td><ol>
-<li>Wenn der Steuerbetrag wiederherstellbar ist, das Feld **Vorsteuer** auf der Seite **Sachkontobuchungsgruppen**.</li>
-<li>Wenn der Steuerbetrag nicht wiederherstellbar ist, das Feld **Verbrauchssteuerausgaben** auf der Seite **Sachkontobuchungsgruppen**.</li>
+<li>Wenn der Steuerbetrag wiederherstellbar ist, das Feld <strong>Vorsteuer</strong> auf der Seite <strong>Sachkontobuchungsgruppen</strong>.</li>
+<li>Wenn der Steuerbetrag nicht wiederherstellbar ist, das Feld <strong>Verbrauchssteuerausgaben</strong> auf der Seite <strong>Sachkontobuchungsgruppen</strong>.</li>
 </ol></td>
 <td><ol>
 <li>Wenn die Rechnungsposition auf eine Bestellposition verweist, verwenden Sie die Buchhaltungsverteilung für die Bestellposition.</li>
 <li>Verwenden Sie die Finanzdimensionen aus dem erweiterten Preis oder der Buchhaltungsverteilung für die Belastung in der Kreditorenrechnungsposition.</li>
 <li>Verwenden Sie die Finanzdimensionswerte der Kreditorenrechnungsposition.</li>
-<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Hauptkonto auf der Seite **Kontenplan**.</li>
+<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Hauptkonto auf der Seite <strong>Kontenplan</strong>.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Kopfgebühr</td>
 <td><ol>
-<li>Wenn **Sachkonto** im Feld **Solltyp** auf der Seite **Belastungscode** ausgewählt ist, das Feld **Sollkonto** auf der Seite **Belastungscode**.</li>
-<li>Wenn **Debitor/Kreditor** im Feld **Solltyp** auf der Seite **Belastungscode** ausgewählt ist, das Feld **Habenkonto** auf der Seite **Belastungscode**.</li>
+<li>Wenn <strong>Sachkonto</strong> im Feld <strong>Belastungstyp</strong> auf der Seite <strong>Belastungscode</strong> ausgewählt ist, das Feld <strong>Belastungskonto</strong> auf der Seite <strong>Belastungscode</strong>.</li>
+<li>Wenn <strong>Kunde/Lieferant</strong> im Feld <strong>Belastungstyp</strong> auf der Seite <strong>Rechnungscode</strong> ausgewählt ist, das Feld <strong>Kreditkonto</strong> auf der Seite <strong>Rechnungscode</strong>.</li>
 </ol></td>
 <td><ol>
 <li>Wenn die Rechnungsposition auf eine Bestellposition verweist, verwenden Sie die Buchhaltungsverteilung für die Bestellposition.</li>
 <li>Wenn das Hauptkonto ein Zuordnungskonto ist, verwenden Sie den Standardwert der Zuweisungskontodefinition.</li>
 <li>Verwenden Sie die Finanzdimensionsstandardvorlagewerte aus dem Kreditorenrechnungskopf.</li>
 <li>Verwenden Sie die Finanzdimensionswerte der Kreditorenrechnungsposition.</li>
-<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Hauptkonto auf der Seite **Kontenplan**.</li>
+<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Hauptkonto auf der Seite <strong>Kontenplan</strong>.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Kopfrabatt</td>
 <td><ol>
-<li>Das Feld **Hauptkonto** für die **Buchungsart Kreditorenrechnungsrabatt** auf der Seite **Konten für automatische Buchungen**.</li>
+<li>Das Feld <strong>Hauptkonto</strong> für die <strong>Buchungsart Kreditorenrechnungsrabatt</strong> auf der Seite <strong>Konten für automatische Buchungen</strong>.</li>
 </ol></td>
 <td><ol>
 <li>Wenn die Rechnungsposition auf eine Bestellposition verweist, verwenden Sie die Buchhaltungsverteilung für die Bestellposition.</li>
 <li>Verwenden Sie die Finanzdimensionen aus den Buchhaltungsverteilungen für den erweiterten Preis in der Kreditorenrechnungsposition.</li>
 <li>Verwenden Sie die Finanzdimensionswerte der Kreditorenrechnungsposition.</li>
-<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Hauptkonto auf der Seite **Kontenplan**.</li>
+<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Hauptkonto auf der Seite <strong>Kontenplan</strong>.</li>
 </ol></td>
 </tr>
 </tbody>
@@ -228,7 +228,7 @@ Wenn Sie eine Kreditorenrechnung eingeben, wird jeder Betrag wie folgt verteilt.
 
 ## <a name="distributing-taxes"></a>Verteilen von Steuern
 
-Buchhaltungsverteilungen für Steuern können erst erstellt werden, nachdem Steuern berechnet wurden. Zum Berechnen der Mehrwertsteuer müssen Sie auf der Seite "Kreditorenrechnung" eine der folgenden Aufgaben ausführen:
+Buchhaltungsverteilungen für Steuern können erst erstellt werden, nachdem Steuern berechnet wurden. Um die Mehrwertsteuer zu berechnen, müssen Sie eine der folgenden Aufgaben auf der Seite **Lieferantenrechnung** ausführen:
 -   Zeigen Sie die Rechnungssumme an.
 -   Zeigen Sie den Mehrwertsteuercode an.
 -   Zeigen Sie die Erfassung im untergeordneten Sachkonto an.

@@ -2,7 +2,7 @@
 title: Erträge in POS erstellen
 description: In diesem Thema wird beschrieben, wie Sie Retouren für Cash-and-Carry-Transaktionen oder Kundenbestellungen in der Microsoft Dynamics 365 Commerce Point-of-Sale-Anwendung (POS) initiieren.
 author: hhainesms
-ms.date: 06/01/2021
+ms.date: 02/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: 4a0d5efe043d72f936a15ec9a8ead9987fdb22b891a5a3ae94f95aa5ea7a6e67
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3250f702f033fb8b00763542fd8342c089b47b2e
+ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715529"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8349690"
 ---
 # <a name="create-returns-in-pos"></a>Erträge in POS erstellen
 
@@ -96,6 +96,13 @@ Wenn die kanalseitigen Informationen aus irgendeinem Grund nicht aktuell sind un
 
 > [!NOTE]
 > Wenn die Funktion **Einheitliche Retourenbearbeitungserfahrung in POS** aktiviert ist, stehen neue optionale Funktionen zur Verfügung, die die Validierung von Produktrücksendungen mit Seriennummer unterstützen. Weitere Informationen finden Sie unter [Seriennummergesteuerte Produkte am Point of Sale (POS) zurückgeben](POS-serial-returns.md).
+
+## <a name="version-details"></a>Versionsdetails
+
+Die folgende Liste enthält die Mindestversionsanforderungen für die verschiedenen Komponenten.
+- Commerce-Zentrale: Version 10.0.20
+- Commerce Scale Unit (CSU): Version 9.30
+- Point of Sale (POS): Version 9.30
 
 ## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>Richtige Steuerberechnung für Retouren mit Teilmengen aktivieren
 

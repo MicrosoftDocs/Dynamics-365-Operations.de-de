@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 6c8aa0338ab30e6366601e3759141c7e41bf99fb
-ms.sourcegitcommit: ab1455c67f6ee6ca36bec148bea0dbb0f7704eda
+ms.openlocfilehash: 3269bf3f8a5475fb85e6b51514db29006be9aab1
+ms.sourcegitcommit: b52ff5dfd32580121f74a5f262e5c2495e39d578
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7428932"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376207"
 ---
 # <a name="release-to-warehouse"></a>Für Lagerort freigeben
 
@@ -125,6 +125,7 @@ Zum Einrichten des Batchauftrage, der Aufträge freigibt, folgen Sie diesen Schr
     - **Freizugebende Menge** – Wählen Sie aus, ob die gesamte Menge oder nur die physisch reservierte Menge an das Lager freigegeben werden sollen.
     - **Freigabe von teilweise freigegebenen Aufträgen zulassen** – Geben Sie an, ob Restmengen für teilfreigegebene Aufträge an das Lager freigegeben werden sollen.
     - **Reservierungen bei fehlgeschlagener Freigabe behalten** – Geben Sie an, ob Mengen, die automatisch für einen Auftrag reserviert wurden, reserviert bleiben sollen, wenn die Freigabe an das Lager fehlschlägt.
+    - **Freigaben nach Kunden gruppieren** - Legen Sie fest, ob das System die Freigabe für Vorgänge im Lager für jeden Kunden separat verarbeiten oder alle Verkaufsaufträge gleichzeitig freigeben soll. Wenn diese Option auf *Ja* festgelegt ist, sammelt das System alle Verkaufsauftragszeilen für einen ausgewählten Kunden, gibt diese Aufträge für das Lager frei und verarbeitet dann den nächsten Kunden. Wenn diese Option auf *Nein* festgelegt ist, gibt das System alle verfügbaren Verkaufsauftragszeilen in einer einzigen Freigabe für den Lagervorgang frei. Durch die Aktivierung dieser Option können Sie dazu beitragen, die Leistung und Ausfallsicherheit des Release-to-Warehouse-Prozesses zu verbessern. Seien Sie jedoch vorsichtig, wenn Sie diese Option zusammen mit Wellenvorlagen verwenden, die so konfiguriert sind, dass sie Wellen bei der Freigabe an das Lager verarbeiten, denn diese Kombination könnte viele Wellen für einen einzelnen Kunden erzeugen, von denen jede einzelne Arbeit enthält, die nur für diesen Kunden erstellt wurde. Wenn Sie Arbeiten generieren möchten, bei denen Sendungen für mehrere Kunden zusammengefasst werden, sollten Sie entweder die Option *Freigaben nach Kunden gruppieren* deaktivieren oder Ihre Konfigurationsvorlagen so konfigurieren, dass sie die aufgeschobene Verarbeitung verwenden.
     - **Gesperrte Auftragsabwicklung** – Wählen Sie aus, wie das System Aufträge behandeln soll, die derzeit gesperrt sind, weil sie von anderen Benutzern oder Prozessen bearbeitet werden:
 
         - *Warten, bis die Bestellungen entsperrt werden* – Das System sollte warten, bis die Bestellungen entsperrt sind, bevor es sie an das Lager freigibt. In diesem Fall kann der Prozess der Freigabe an das Lager länger dauern.

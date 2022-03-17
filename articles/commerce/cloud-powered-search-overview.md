@@ -2,7 +2,7 @@
 title: Übersicht über die cloudbasierte Suche
 description: Dieses Thema enthält eine Übersicht der Cloud-betriebenen Suche in Microsoft Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 06/29/2020
+ms.date: 02/28/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eb34780d5bdd41a128fff543fe0f1ef73cfead8b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9116dd415d44a56fbe8c7852382c413b0a75872c
+ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983668"
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "8371428"
 ---
 # <a name="cloud-powered-search-overview"></a>Übersicht über die cloudbasierte Suche
 
@@ -26,13 +26,13 @@ ms.locfileid: "7983668"
 
 Dieses Thema enthält eine Übersicht der Cloud-betriebenen Suche in Microsoft Dynamics 365 Commerce.
 
-Produkt-Auffindbarkeit hilft sicherzustellen, dass Debitoren Produkte über das Durchsuchen von Kategorien schnell und einfach finden. Einzelhändler erachten die Produkterfassung als ein primäres Tool für Debitoreninteraktionen über alle Kanäle hinweg.
+Produkt-Auffindbarkeit hilft sicherzustellen, dass Debitoren Produkte über das Durchsuchen von Kategorien schnell und einfach finden. Für Einzelhändler ist die Produkterkennung ein wichtiges Tool für die Interaktion mit Kunden über alle von der Cloud Scale-Unit (CSU) unterstützten Kanäle, wie E-Commerce und Point of Sale (POS).
 
-Debitoren sind sich an die blitzschnellen Antwortzeiten von Internet-Suchmodulen, tollen E-Commerce-Websites, Sozialen Apps und automatischen Vorschlägen gewöhnt, die angezeigt werden, solange sie Suchbegriffen, facettierte Navigation und Hervorhebungen eingeben. Wenn Kunden das Produkt nicht schnell genug finden, das sie in einem E-Commerce-Shop suchen, zögern sie nicht und wechseln in einen anderen E-Commerce-Shop.
+Debitoren sind sich an die blitzschnellen Antwortzeiten von Internet-Suchmodulen, tollen E-Commerce-Websites, Sozialen Apps und automatischen Vorschlägen gewöhnt, die angezeigt werden, solange sie Suchbegriffen, facettierte Navigation und Hervorhebungen eingeben. Wenn Kunden in einem E-Commerce Store nicht schnell das Produkt finden, das sie suchen, werden sie nicht zögern, einen anderen E-Commerce Store aufzusuchen.
 
-Die Cloud-betriebene Produkt-Auffindbarkeit in Dynamics 365 Commerce hilft Einzelhändler dabei, die Kundenbindung und Konversionsrate über alle Kanäle hinweg zu erhöhen, und zwar in E-Commerce-Kanälen und Verkaufsstellen-Kanälen (POS).
+Die Cloud-gestützte Produktauffindbarkeit in Commerce hilft Einzelhändlern, die Kundenbindung und die Konversionsraten über alle Kanäle hinweg weiter zu erhöhen - powered by CSU.
 
-Die Dynamics 365 Commerce Suchenerfahrung hat verbesserte Funktionen, die Einzelhändler dabei unterstützen, eine bessere Produktauffindbarkeit zu erreichen. Gleichzeitig bieten diese Funktionen die Leistung und Skalierbarkeit, die für E-Commerce-Verkehr erforderlich sind.
+Die Commerce-Suche verfügt über verbesserte Funktionalitäten, um Einzelhändlern eine bessere Auffindbarkeit von Produkten zu ermöglichen. Gleichzeitig bieten diese Funktionalitäten die Skalierbarkeit und Leistung, die für den E-Commerce-Verkehr erforderlich sind.
 
 ## <a name="browse-and-search"></a>Durchsuchen und suchen
 
@@ -54,9 +54,9 @@ Die folgende Abbildung zeigt ein Beispiel an, wo facettierte Navigation bei eine
 
 ## <a name="immersive-autosuggest"></a>Interaktive automatische Vorschläge
 
-Aktuelle automatische Vorschlagsfunktionen zeigt die Schlüsselbegriffe an, die eine Suche für das passende Schlüsselwort auslösen. Aufgrund der neuen Erweiterungen in Dynamics 365 Commerce können Kunden oft Links zu Produkten sehen, bevor Sie die Eingabe abgeschlossen haben.
+Die aktuelle Autosuggest-Funktionalität zeigt Schlüsselwörter an, die eine Suche nach dem passenden Schlüsselwort auslösen. Aufgrund der neuen Verbesserungen in Commerce können Kunden häufig Links zu Produkten entdecken, bevor sie die Eingabe beendet haben.
 
-Dynamics 365 Commerce unterstützt auch Funktionen für Schlüsselwortabgleichungen in den unterschiedlichen Kategorien. Mit dieser Funktionalität können Kunden die Anzahl von entsprechenden Schlüsselwörtern in Kategorien sehen und eine Suche nach Schlüsselwort in anderen Kategorien starten.
+Commerce unterstützt auch Funktionen für Schlüsselwortabgleiche in verschiedenen Kategorien. Mit dieser Funktionalität können Kunden die Anzahl von entsprechenden Schlüsselwörtern in Kategorien sehen und eine Suche nach Schlüsselwort in anderen Kategorien starten.
 
 Die folgende Abbildung zeigt ein Beispiel an, wo interaktives automatisches Vorschlagen verwendet wird.
 
@@ -64,10 +64,10 @@ Die folgende Abbildung zeigt ein Beispiel an, wo interaktives automatisches Vors
 
 ## <a name="sort"></a>Sortieren
 
-Verbessertes Sortieren in Dynamics 365 Commerce ermöglicht Kunden, Suchergebnisse zu sortieren, suchen und durchsuchen und diese durch Kriterien wie Preis, Produktname und Produktnummer zu verfeinern. Debitoren können Ergebnisse auch sortieren, basierend darauf, ob ein Produkt neu ist, meistverkauft, oder vor kurzem hinzugefügt wurde.
+Mit der verbesserten Sortierung in Commerce können Kunden die Suchergebnisse sortieren, durchsuchen und nach Kriterien wie Preis, Produktname und Produktnummer verfeinern. Debitoren können Ergebnisse auch sortieren, basierend darauf, ob ein Produkt neu ist, meistverkauft, oder vor kurzem hinzugefügt wurde.
 
->[!NOTE]
->Diese Cloud-betriebenen Suchfunktionen sind ab Version 10.0.8 verfügbar. Stellen Sie sicher, dass unter **Handelsparameter > Konfigurationsparameter** ein Eintrag für „ProductSearch.UseAzureSearch set to 'true'“ vorhanden ist. 
+> [!NOTE]
+> Diese Cloud-betriebenen Suchfunktionen sind ab Version 10.0.8 verfügbar. Stellen Sie sicher, dass ein Eintrag für „ProductSearch.UseAzureSearch“ auf 'true' festgelegt ist in **Commerce Parameter > Konfigurationsparameter**. 
 ![Konfigurationsparameter für die cloud-betriebene Suche.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
@@ -77,4 +77,4 @@ Verbessertes Sortieren in Dynamics 365 Commerce ermöglicht Kunden, Suchergebnis
 [Verwalten von SEO-Metadaten](manage-seo-metadata.md)
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE [footer-include](../includes/footer-banner.md)]
