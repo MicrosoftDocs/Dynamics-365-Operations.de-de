@@ -238,10 +238,12 @@
               href: data-entities/Azure-Data-Lake-GA-version-overview.md
             - name: Add-In für den Export in Azure Data Lake installieren
               href: data-entities/configure-export-data-lake.md
-            - name: Finance and Operations-Apps in Azure Data Lake
+            - name: Finanz- und Betriebs-Apps in Azure Data Lake
               href: data-entities/finance-data-azure-data-lake.md
             - name: Entitätsspeicher als Data Lake anbieten
               href: data-entities/entity-store-data-lake.md
+            - name: 'Geschäftsereignisse, die vom Dienst „Export in Azure Data Lake“ generiert wurden (Vorschau)'
+              href: data-entities/Azure-Data-Lake-Generates-Biz-events.md
             - name: Daten in Azure Data Lake ändern
               href: data-entities/Azure-data-lake-Change-feeds.md
         - name: Datenbankverschiebungen
@@ -1068,7 +1070,9 @@
                       href: data-entities/dual-write/sales-status-map.md
                     - name: 'Intercompany-Aufträge filtern, um die Synchronisierung von Aufträgen und Auftragspositionen zu vermeiden'
                       href: data-entities/dual-write/filtering-intercompany-orders.md
-                - name: Verwalten von dualem Schreiben
+                    - name: Anwendungsorchestrierungslösungen für duales Schreiben deinstallieren
+                      href: data-entities/dual-write/uninstall-solutions.md
+                - name: Duales Schreiben verwalten
                   items:
                     - name: Entitäts- und Feldzuordnungen anpassen
                       href: data-entities/dual-write/customizing-mappings.md
@@ -1700,17 +1704,17 @@
                       href: migration-upgrade/upgrade-budget-planning.md
             - name: Daten von AX 2009 migrieren
               items:
-                - name: "Datenmigration von AX\_2009 zu Finance and Operations"
+                - name: Datenmigration von AX 2009 zu Finance and Operations
                   href: migration-upgrade/data-migration-tool.md
-                - name: "AX\_2009-Migration – Installieren des Datenmigrationstools"
+                - name: AX 2009-Migration – Installieren des Datenmigrationstools
                   href: migration-upgrade/install-dmt.md
-                - name: "AX\_2009-Migration\_– Generieren von Zuordnungen"
+                - name: "AX 2009-Migration\_– Generieren von Zuordnungen"
                   href: migration-upgrade/generate-maps.md
-                - name: "AX\_2009-Migration\_– Erstellen von Vorlagen"
+                - name: "AX 2009-Migration\_– Erstellen von Vorlagen"
                   href: migration-upgrade/create-package-templates-dmt.md
-                - name: "AX\_2009-Migration\_– Erstellen von Migrationsgruppen"
+                - name: "AX 2009-Migration\_– Erstellen von Migrationsgruppen"
                   href: migration-upgrade/create-definition.md
-                - name: "AX\_2009-Migration\_– Exportieren von Paketen"
+                - name: "AX 2009-Migration\_– Exportieren von Paketen"
                   href: migration-upgrade/ax2009-upgrade-export-package.md
                 - name: AX 2009-Migration – Importieren von Paketen
                   href: migration-upgrade/ax2009-upgrade-import-package.md

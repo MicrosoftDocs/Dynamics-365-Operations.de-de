@@ -743,12 +743,36 @@
                   href: cost-management/costing-versions.md
                 - name: Nachkalkulationsbögen
                   href: cost-management/costing-sheets.md
-                - name: Simulieren von Kostenänderungen mithilfe einer Nachkalkulationsversion für geplante Kosten
+                - name: Kostenänderungen mithilfe einer Nachkalkulationsversion für geplante Kosten simulieren
                   href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
                 - name: Lagerungsbericht mit Artikelpreisvergleich
                   href: cost-management/compare-item-price.md
+            - name: Nachkalkulationsmethodiken
+              items:
+                - name: Laufender Durchschnittseinstandspreis
+                  href: cost-management/running-average-cost-price.md
+                - name: Laufende Durchschnittskosten pro Bestandsdimension nachverfolgen
+                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
+                - name: FIFO mit physischem Wert und Markierung
+                  href: cost-management/fifo-physical-value-marking.md
+                - name: 'LIFO-Datum (LIFO, last in first out, zuletzt eingetroffenen, zuerst versendet) mit physischem Wert und Markierung'
+                  href: cost-management/lifo-date-physical-value-marking.md
+                - name: LIFO mit physischem Wert und Markierung
+                  href: cost-management/lifo-physical-value-marking.md
+                - name: Gewichteter Durchschnitt mit physischem Wert und Markierung
+                  href: cost-management/weighted-average-physical-value-marking.md
+                - name: Gewichteter Durchschnitt (Datum) mit physischem Wert und Markierung
+                  href: cost-management/weighted-average-date.md
+                - name: Gleitender Durchschnitt
+                  href: cost-management/moving-average.md
+                - name: 'Gleitender Durchschnitt, Fallback-Kostensequenz'
+                  href: cost-management/moving-average-fallback.md
             - name: Bestandsbuchhaltung
               items:
+                - name: Physische und finanzielle Updates
+                  href: cost-management/physical-financial-updates.md
+                - name: Physischen Wert einbeziehen
+                  href: cost-management/include-physical-value.md
                 - name: Kostenobjekte
                   href: cost-management/cost-object.md
                 - name: Kostenobjektsaldo anzeigen
@@ -761,30 +785,8 @@
                   href: cost-management/tasks/view-cost-entries-cost-object.md
                 - name: Kostengruppen
                   href: cost-management/cost-groups.md
-                - name: FIFO mit physischem Wert und Markierung
-                  href: cost-management/fifo-physical-value-marking.md
-                - name: Physischen Wert einbeziehen
-                  href: cost-management/include-physical-value.md
                 - name: Lagerobjektwerte
                   href: cost-management/physical-quantity.md
-                - name: 'LIFO-Datum (LIFO, last in first out, zuletzt eingetroffenen, zuerst versendet) mit physischem Wert und Markierung'
-                  href: cost-management/lifo-date-physical-value-marking.md
-                - name: LIFO mit physischem Wert und Markierung
-                  href: cost-management/lifo-physical-value-marking.md
-                - name: Flexibler Durchschnitt
-                  href: cost-management/moving-average.md
-                - name: 'Flexibler Durchschnitt, Fallback-Kostensequenz'
-                  href: cost-management/moving-average-fallback.md
-                - name: Physische und finanzielle Updates
-                  href: cost-management/physical-financial-updates.md
-                - name: Laufender Durchschnittseinstandspreis
-                  href: cost-management/running-average-cost-price.md
-                - name: Laufende Durchschnittskosten pro Bestandsdimension nachverfolgen
-                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
-                - name: Gewichteter Durchschnitt (Datum)
-                  href: cost-management/weighted-average-date.md
-                - name: Gewichteter Durchschnitt mit physischem Wert und Markierung
-                  href: cost-management/weighted-average-physical-value-marking.md
                 - name: Lagerabschluss
                   href: cost-management/inventory-close.md
                 - name: Einstandswerte für verfügbaren Bestand anpassen
@@ -1427,10 +1429,14 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Suchdatenquellen für die Verwendung anwendungsspezifischer EB-Parameter konfigurieren
                       href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: DATENERFASSUNGS-Datenquellen in EB-Formaten
+                    - name: DATENERFASSUNGS-Datenquellen in EB-Formaten verwenden
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Datenquellen debuggen
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Datenmodelle konfigurieren
+                  items:
+                    - name: Unterstützung parametrisierter Aufrufe von EB-Datenmodellen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Modellzuordnungen konfigurieren
                   items:
                     - name: Auf Länderkontext beruhende EB-Modellzuordnungen konfigurieren
@@ -1495,7 +1501,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Ziele konfigurieren
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Aktionsabhängige Ziele konfigurieren
+                    - name: Aktivitätsabhängige Ziele konfigurieren
                       href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Druckverwaltungsdatensatz-spezifische EB-Ziele konfigurieren
                       href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?toc=/dynamics365/supply-chain/toc.json
@@ -3849,13 +3855,15 @@
                   href: troubleshooting/sales/system-administrator.md
             - name: Transportverwaltung
               items:
-                - name: Das Hauptkonto kann nur aus Abstimmungsgründen als Habenkonto hinzugefügt werden.
+                - name: Das Hauptkonto kann nur aus Abstimmungsgründen als Habenkonto hinzugefügt werden
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Lagerortverwaltung
               items:
                 - name: Warehouse mobile app
                   items:
-                    - name: Der Vertrauensanker für den Zertifizierungspfad wurde beim Einrichten der App-Verbindung nicht gefunden.
+                    - name: Unerwarteter Unterschied zwischen Anforderungs- und Sitzungsdaten während des Tests
+                      href: troubleshooting/warehousing/request-session-data-difference.md
+                    - name: Der Vertrauensanker für den Zertifizierungspfad wurde beim Einrichten der App-Verbindung nicht gefunden
                       href: troubleshooting/warehousing/certification-path-app-connection-error.md
                     - name: Der Vertrauensanker für den Zertifizierungspfad wurde beim Aktualisieren und Migrieren nach WMS nicht gefunden.
                       href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
