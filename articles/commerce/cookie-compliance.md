@@ -2,7 +2,7 @@
 title: Cookie-Compliance
 description: In diesem Thema werden Überlegungen zur Einhaltung von Cookies und zu den in Microsoft Dynamics 365 Commerce enthaltenen Standardrichtlinien beschrieben.
 author: BrianShook
-ms.date: 07/30/2021
+ms.date: 03/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 509ae998b4d0fa8ab6dd5e3d242dfb4abc492952cd66addc04050fbaff949326
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2efb866d513ba90630b0397c1ca144c92d40719c
+ms.sourcegitcommit: 4645278a4b4a38dcb18fdfb49ce2e276eabb59de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747696"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "8403146"
 ---
 # <a name="cookie-compliance"></a>Cookie-Compliance
 
@@ -57,7 +57,8 @@ Die folgende Tabelle zeigt die aktuelle Referenzliste der von Dynamics 365 Comme
 | \_msdyn365___tuid_                           | Wird nur verwendet, wenn das Experimentieren für eine Umgebung aktiviert wurde; generiert eine GUID, die als Benutzer-ID dient. Der Wert ändert sich, wenn sich der Anmeldestatus eines Benutzers ändert.      | 1 Jahr |
 | \_msdyn365___aud_0                          | Speichert vom Ziel verwendete Segmentwerte und wird nur verwendet, wenn das Ziel auf einer Seite oder einem Fragment konfiguriert ist, das von einem Site-Benutzer angefordert wird. Das Cookie wird nur platziert, wenn die Segmentwerte von einem Drittanbieter für die Segmentierung stammen.      | 7 Tage |
 | \_msdyn365___aud_1                           | Speichert vom Ziel verwendete Segmentwerte und wird nur verwendet, wenn das Ziel auf einer Seite oder einem Fragment konfiguriert ist, das von einem Site-Benutzer angefordert wird. Das Cookie wird nur platziert, wenn die Segmentwerte von einem Drittanbieter für die Segmentierung stammen.      | 7 Tage |
-| \_msdyn365___aud_2                           | Speichert vom Ziel verwendete Segmentwerte und wird nur verwendet, wenn das Ziel auf einer Seite oder einem Fragment konfiguriert ist, das von einem Site-Benutzer angefordert wird. Das Cookie wird nur platziert, wenn die Segmentwerte von einem Drittanbieter für die Segmentierung stammen.      | 7 Tage |
+| \_msdyn365___aud_2                           | Speichert vom Ziel verwendete Segmentwerte und wird nur verwendet, wenn das Ziel auf einer Seite oder einem Fragment konfiguriert ist, das von einem Site-Benutzer angefordert wird. Das Cookie wird nur platziert, wenn die Segmentwerte von einem Drittanbieter für die Segmentierung stammen.      | 7 Tage |
+| d365gi                                       | Dieses Cookie speichert geografische Standortdaten, wenn ein Geolocationdienst eines Drittanbieters verwendet wird.      | 1 Tag |
 
 Wenn ein Site-Benutzer in einer Site Links zu sozialen Medien auswählt, werden die Cookies in der folgenden Tabelle auch in seinem Browser verfolgt.
 
@@ -65,17 +66,17 @@ Wenn ein Site-Benutzer in einer Site Links zu sozialen Medien auswählt, werden 
 | Domäne                      | Cookie               | Beschreibung                                                  | Grundlage                                          |
 | --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | .linkedin.com                | UserMatchHistory         | Synchronisieren der LinkedIn-Anzeigen-ID                                      | LinkedIn-Feed und Insight-Tag                                |
-| .linkedin.com               | li_sugr                  | Browserkennung                                           | LinkedIn-Insight-Tag, wenn sich die IP-Adresse nicht in einem bestimmten Land befindet |
+| .linkedin.com               | li_sugr                  | Browserkennung                                           | LinkedIn Insight Tag, wenn sich die IP-Adresse nicht in einem bestimmten Land befindet |
 | .linkedin.com               | BizographicsOptOut       | Bestimmt den Abwahlstatus für die Verfolgung durch Dritte.              | LinkedIn-Gastkontrollen und Branchen-Abwahlseiten           |
 | .linkedin.com               | \_guid                    | Browserkennung für Google Ads.                            | LinkedIn-Feed                                                |
 | .linkedin.com               | li_oatml                 | Indirekte Mitgliedskennung für Abschlussbeobachtung, Neuzuweisung und Analyse. | LinkedIn-Ads- und Insight-Tags                                |
 | Verschiedene Erstanbieter-Domains | li_fat_id                | Indirekte Mitgliedskennung für Abschlussbeobachtung, Neuzuweisung und Analyse. | LinkedIn-Ads- und Insight-Tags                                |
-| .adsymptotic.com            | U                        | Browserkennung                                           | LinkedIn-Insight-Tag, wenn sich die IP-Adresse nicht in einem bestimmten Land befindet |
+| .adsymptotic.com            | U                        | Browserkennung                                           | LinkedIn Insight Tag, wenn sich die IP-Adresse nicht in einem bestimmten Land befindet |
 | .linkedin.com                | bcookie                  | Browserkennungs-Cookie                                            | Anfragen an LinkedIn                                         |
 | .linkedin.com                | bscookie                 | Sicheres Browser-Cookie                                        | Anfragen an LinkedIn                                         |
 | .linkedin.com               | lang                     | Legt das Standardgebietsschema und die Standardsprache fest.                                 | Anfragen an LinkedIn                                         |
 | .linkedin.com                | lidc                     | Wird für das Routing verwendet.                                             | Anfragen an LinkedIn                                         |
-| .linkedin.com               | aam_uuid                 | Adobe-Zielgruppenmanagement-Cookie                                                     | Einstellung auf ID-Synchronisierung                                              |
+| .linkedin.com               | aam_uuid                 | Adobe Audience Manager-Cookie                                                     | Einstellung auf ID-Synchronisierung                                              |
 | .linkedin.com               | \_ga                      | Google-Analytics-Cookie                                            | Google Analytics                                             |
 | .linkedin.com               | \_gat                     | Google-Analytics-Cookie                                             | Google Analytics                                             |
 | .linkedin.com               | liap                     | Google-Analytics-Cookie                                             | Google Analytics                                             |

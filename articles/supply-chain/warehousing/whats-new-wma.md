@@ -2,7 +2,7 @@
 title: Was ist neu oder geändert in der Warehouse Management Mobile-App
 description: Dieses Thema listet die neuen und geänderten Funktionen für jede freigegebene Version der Warehouse Management Mobile-App für Microsoft Dynamics 365 Supply Chain Management auf.
 author: Mirzaab
-ms.date: 02/21/2022
+ms.date: 03/11/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b146fb12f89559efcb3b0973b0dd1ce9b98ffe2a
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: c4731c5f0b0a1553deb53753d82d29a34e5525df
+ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384369"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "8418639"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Was ist neu oder geändert in der Warehouse Management Mobile-App
 
 [!include [banner](../includes/banner.md)]
 
 Dieses Thema listet neue Funktionen, Korrekturen, Verbesserungen und bekannte Probleme für jede freigegebene Version der Warehouse Management Mobile-App für Microsoft Dynamics 365 Supply Chain Management auf.
+
+## <a name="version-20190"></a>Version 2.0.19.0
+
+Diese Version führt die folgenden neuen Funktionen, Korrekturen und Verbesserungen ein:
+
+- Der generische Flow zur Abfrage von Daten wurde verbessert.
+- Das Jitter-Problem auf den Seiten **Arbeitsliste** und **Artikelabfrage** wurde verbessert.
+- Reduzierter Batterieverbrauch.
+- Das Limit für die Anzahl der Felder für Arbeitskarten wurde entfernt.
+- Die Höhe der Arbeitskarten wurde so angepasst, dass sie alle die gleiche Größe haben, unabhängig von der Anzahl der jeweiligen Felder.
+- Es wurde ein Problem behoben, bei dem Leerzeichen in Barcodes abgeschnitten wurden.
+- Die **Schaltflächenstil**-Einstellung wurde hinzugefügt, mit der Sie auf allen Gerätetypen zwischen der Schieberegleransicht und der Schaltflächenansicht wechseln können.
+- Verschiedene Probleme, die dazu führen könnten, dass die App abstürzt, wurden behoben.
+- Der Fokus wurde automatisch auf das erste Textfeld auf benutzerdefinierten Seiten gesetzt.
+- Verbesserungen der Barrierefreiheit in Bezug auf Helligkeit, Kontrast, Erzählung und fehlende Platzhaltertexte.
 
 ## <a name="version-20170"></a>Version 2.0.17.0
 

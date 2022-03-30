@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 86322fdf14bdefb5c9d4793a69e95ca913843e53
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: d8f0d91667d22ddd1dd7131ca3d03bb2fa70659c
+ms.sourcegitcommit: 1819a11ae22019f1de6991d233c1c51e9950d7a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087523"
+ms.lasthandoff: 03/18/2022
+ms.locfileid: "8457450"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Neuerungen und Änderungen in Human Resources
 
 > [!IMPORTANT]
-> Die in diesem Thema beschriebene Funktionalität ist derzeit für Debitor auf der Standalone-Station Dynamics 365 Human Resources verfügbar. Einige oder alle dieser Funktionen werden in einem zukünftigen Release der Finance-Infrastruktur nach Finance 10.0.25 verfügbar sein.  
+> Die in diesem Thema beschriebene Funktionalität ist derzeit für Debitor auf der Standalone-Station Dynamics 365 Human Resources verfügbar. Einige oder die gesamten Funktionen werden in einem zukünftigen Release der Finance-Infrastruktur nach Finance-Version 10.0.25 verfügbar sein.  
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Alle zwei Wochenn stellen wir ein neues Release für Microsoft Dynamics 365 Human Resources zur Verfügung. In den hier aufgeführten Themen werden die vorgenommenen Änderungen in jeder Veröffentlichung im Detail beschrieben.
 
 Weitere Informationen über bevorstehende Funktionen oder den Aktualisierungsprozess für die Personalabteilung finden Sie in den folgenden Artikeln: 
 

@@ -2,7 +2,7 @@
 title: E-Commerce-Website erstellen
 description: In diesem Thema werden die Schritte und Informationen beschrieben, die zum Erstellen einer neuen E-Commerce-Website im Dynamics 365 Commerce-Website-Generator erforderlich sind.
 author: bicyclingfool
-ms.date: 03/04/2022
+ms.date: 03/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5e451b1c95c3e26d1292e7b8300b62af43c81f2f
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 37734e2ceea3a50c70a2f7945329d4a9cf660cc6
+ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388210"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "8402774"
 ---
 # <a name="create-an-e-commerce-site"></a>E-Commerce-Website erstellen
 
@@ -70,6 +70,14 @@ Führen Sie diese Schritte aus, um Ihre Website in Site Builder umzubenennen.
 1. Um die Standortlistenansicht zu öffnen, wählen Sie **Standortumschalter** in der oberen rechten Ecke und dann **Standorte verwalten** . 
 1. Aktivieren Sie das Kontrollkästchen neben der Seite, die Sie umbenennen möchten, und wählen Sie dann **Umbenennen** in der Befehlsleiste.
 1. Geben Sie im Dialogfeld **Neuer Standortname** den neuen Standortnamen ein und wählen Sie dann **OK**. Die Site-Liste wird aktualisiert und zeigt den neuen Namen der Site an.
+
+## <a name="delete-a-site"></a>Eine Site löschen
+
+Um eine Site in Site Builder zu löschen, führen Sie diese Schritte aus.
+
+1. Um die Standortlistenansicht zu öffnen, wählen Sie **Standortumschalter** in der oberen rechten Ecke und dann **Standorte verwalten** .
+1. Wählen Sie die zu löschende Site aus und wählen Sie dann in der Befehlsleiste **Löschen**.
+1. Geben Sie im Dialogfeld **\<site name\> löschen** den Sitenamen ein und wählen Sie dann **Löschen**.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

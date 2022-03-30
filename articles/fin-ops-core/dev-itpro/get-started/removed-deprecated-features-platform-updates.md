@@ -2,7 +2,7 @@
 title: Entfernte oder veraltete Plattformfunktionen
 description: In diesem Thema werden Funktionen beschrieben, die bei Plattform-Updates der Apps Finance + Operations entfernt wurden oder deren Entfernung geplant ist.
 author: sericks007
-ms.date: 03/03/2022
+ms.date: 03/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 6b4c514d34e4afbaac4afabed6865496747c0411
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 27be0e720b7eca5883c5d73dfe312c09fcd22c65
+ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384719"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "8396548"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Entfernte oder veraltete Plattformfunktionen
 
@@ -31,6 +31,18 @@ In diesem Thema werden Funktionen beschrieben, die bei Plattform-Updates der App
 Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen bei Ihrer eigenen Planung zu berücksichtigen. 
 
 Ausführliche Informationen über Objekte in Apps für Finanzen und Betrieb finden Sie in den [Technischen Referenzberichten](/dynamics/s-e/global/axtechrefrep_61). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die in den einzelnen Versionen der Apps für Finanzen und Betrieb geändert oder entfernt wurden.
+
+## <a name="feature-removal-effective-march-14-2022"></a>Entfernung der Funktion ab 14 März 2022
+
+### <a name="xslt-scripting-in-data-management"></a>XSLT-Skripterstellung in Datenverwaltung
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Die Unterstützung für XSLT-Skripterstellung in der Datenverwaltung ist veraltet, um die Sicherheit und den Datenschutz in den Finanz- und Betriebs-Apps zu verbessern.  |
+| **Ersetzt durch eine andere Funktion?**   | Nein Kunden und ISVs sollten erwägen, ihre Lösungen anstelle von XSLT-Skripterstellung basierend auf der X++-Sprache neu zu implementieren. |
+| **Betroffene Produktbereiche**         | Finanz- und Betriebs-Apps. |
+| **Bereitstellungsoption**              | Alle. |
+| **Status**                         | Veraltet – geplanter Entfernungstermin ist 14. März 2022.<br><br>Ausnahme: Kunden, die derzeit XLST-Skripterstellung verwenden. Sie können sie weiterhin verwenden, bis sie auf Version 10.0.30 oder höher aktualisieren. Kunden mit dieser Ausnahme haben eine Benachrichtigung im Message Center erhalten, das im Microsoft 365 Admin Center verfügbar ist. |
 
 ## <a name="feature-removal-effective-october-2021"></a>Entfernung der Funktion ab Oktober 2021
 

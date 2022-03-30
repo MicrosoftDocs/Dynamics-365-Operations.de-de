@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fd0fdd677824db823f9bc42f0ad1bdd90cf3b16d
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 440cddca11df8d705757c6f6adf01e08626c5158
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344977"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8408014"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Passanalyse zu Planungsoptimierung
 
@@ -58,7 +58,7 @@ Die folgende Tabelle zeigt die verschiedenen Ergebnisse, die nach einer Anpassun
 | Funktion | Gelistetes Problem | Erläuterung | Erwartete Verfügbarkeit |
 | --- | --- | --- | --- |
 | Aktionen | Dispositionssteuerungsgruppen mit aktivierter Aktionsberechnung: _\#_ | Diese Funktion steht noch aus. Derzeit werden während der Masterplanung keine Aktionen generiert, wenn die Planungsoptimierung aktiviert ist, unabhängig von dieser Einstellung. Der Hauptzweck von Aktionen besteht darin, Änderungen an bestehenden Aufträgen vorzuschlagen. Bewerten Sie, ob Aktionen im Rahmen Ihrer Geschäftsprozesse aktiv angewendet werden oder ob die Verzögerungsinformationen bezüglich der Bestellungen ausreichend sind. | April 2022 |
-| Basiskalender | Kalender, die den Basiskalender verwenden: _\#_ | Diese Funktion steht noch aus. Derzeit wird der Basiskalender ignoriert, wenn die Planungsoptimierung aktiviert ist. Prüfen Sie, ob der Basiskalender für Ihre Geschäftsprozesse benötigt wird oder ob eine direkte Einrichtung in Kalendern ausreicht. | April 2022 | 
+| Basiskalender | Kalender, die den Basiskalender verwenden: _\#_ | Diese Funktion wird jetzt unterstützt. | 2022. März | 
 | Chargendispositionscodes | Nicht kompensierbare Chargendispositionsmaster: _\#_ | Diese Funktion steht noch aus. Derzeit werden Chargendispositionscodes ignoriert, wenn die Planungsoptimierung aktiviert ist. | Oktober 2022 oder später |
 | Verfügbarkeitszusage (CTP) | Standardauftragseinstellungen mit Lieferdatumskontrolle, die auf CTP eingestellt ist: _\#_ | Diese Funktion steht noch aus. Derzeit wird CTP ignoriert, wenn die Planungsoptimierung unabhängig von dieser Einstellung aktiviert ist. | 2022. Oktober |
 | Statischen in dynamischen Plan kopieren | "Statischen in dynamischen Plan kopieren" ist in den Produktprogrammplanungsparametern aktiviert. | Die Planungsoptimierung kopiert den statischen Plan unabhängig von dieser Einstellung nicht in den dynamischen Plan. Im Allgemeinen ist dieses Konzept aufgrund der Geschwindigkeit und vollständigen Regeneration, die die Planungsoptimierung bietet, weniger relevant. Wenn zwei oder mehr Pläne verwendet werden, sollte für jeden Plan eine Masterplanung ausgelöst werden. | 2022. Oktober |

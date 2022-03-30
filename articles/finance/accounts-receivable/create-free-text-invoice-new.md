@@ -1,23 +1,23 @@
 ---
 title: Freitextrechnung erstellen
 description: In diesem Thema wird erläutert, wie Freitextrechnungen erstellt werden.
-author: mikefalkner
-ms.date: 08/24/2018
+author: abruer
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e5ca9e00ec881707248d966470288fd3ddba4e785127f30bd0e6dd4e7186c7e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6e9578d9b2d61f241ab5e92fc9740b88b80969f6
+ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763285"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392884"
 ---
 # <a name="create-a-free-text-invoice"></a>Freitextrechnung erstellen
 
@@ -68,6 +68,7 @@ In diesem Thema wird erläutert, wie Freitextrechnungen erstellt werden. Für di
 
     * Sie können die Zeit des Rechnungsdruckes zu ändern. Wählen sie **Aktuell** um jede Rechnung zu drucken, wenn diese aktualisiert wird Wählen Sie **Später**, um alle Rechnungen zu drucken, die aktualisiert wurden.
     * Um zu ändern wie die Kreditlimite geprüft wird, bevor die Rechnung gebucht wird, ändern Sie den Wert im Feld **Kreditlimit-Typ**.
+    * Sie können auswählen, dass die Freitext-Rechnungsbuchung gestoppt wird, wenn ein Fehler auf der **Aktualisierungen**-Registerkarte auf der **Debitorenparameter**-Seite (**Debitoren > Einrichtung > Debitorenparameter**) auftritt. Wähen Sie **Ja** für den Parameter **Buchung von Freitext-Rechnungen beim ersten Fehler stoppen**, um die Buchung von Freitextrechnungen zu stoppen, wenn ein Fehler auftritt. Wenn in einem Batch gebucht wird, stoppt ein Fehler den Buchungsprozess und der Batchstatus wird auf **Fehler** gesetzt. Wenn diese Option nicht ausgewählt ist, überspringt der Buchungsprozess eine Rechnung mit einem Buchungsfehler und bucht weitere Rechnungen weiter. Wenn Sie in einem Batch buchen, verhindert ein Buchungsfehler nicht, dass andere Rechnungen gebucht werden. Der Batchstatus lautet **Beendet**. Ein detaillierter Buchungsprozessbericht steht zur Überprüfung im Batchauftragsverlauf zur Verfügung.
     * Aktivieren Sie diese Option auf **Ja**, um die Rechnung zu drucken.
     * Aktivieren Sie diese Option auf **Ja**, um die Rechnung zu buchen. Sie können die Rechnung ohne Buchen drucken.
 
@@ -82,6 +83,12 @@ Anschließend können Sie die Informationen nach Bedarf bearbeiten.
 Sie können eine Freitext-Rechnung von einer Vorlage erstellen. Wenn Sie **Neu von Vorlage** aus der **Rechnungs** registerkarte auswählen, können Sie einen Vorlagennamen gür die neue Freitextrechnung auswählen. Sie können die Standardwerte wie die Zahlungsbedingungen und die Zahlungsmethode der Zahlung auch auswählen oder die Werte verwenden, , die mit der Vorlage gespeichert wurden.
 
 Eine neue Freitextrechnung wird erstellt und Sie können die Werte in dieser Rechnung bearbeiten.
+
+## <a name="resetting-the-workflow-status-for-free-text-invoices-from-unrecoverable-to-draft"></a>Zurücksetzen des Workflow-Status für Freitext-Rechnungen von Nicht wiederherstellbar auf Entwurf
+Eine Workflowinstanz, die aufgrund eines nicht behebbaren Fehlers beendet wurde, hat ein Workflowstatus **Nicht behebbar**. Wenn der Status eines Workflows für Debitoren-Freitextrechnung **Nicht wiederherstellbar** ist, können Sie ihn auf **Entwurf** zurücksetzen, indem Sie **Rückruf** in den Workflowaktivitäten auswählen. Anschließend können Sie die Freitextrechnung des Debitoren bearbeiten. Diese Funktion ist verfügbar, wenn der Parameter **Zurücksetzen des Workflow-Status für Freitext-Rechnungen von „Nicht wiederherstellbar“ auf „Entwurf“** auf der Seite **Funktionsverwaltung** aktiviert ist.
+
+Sie können die Seite **Workflowhistorie** verwenden, um den Workflowstatus auf **Entwurf** zurückzusetzen. Sie können diese Seite über **Freitextrechnung** oder **Allgemein > Abfragen > Workflow** öffnen. Um den Workflowstatus auf **Entwurf** zurückzusetzen, wählen Sie **Rückruf** aus. Sie können den Workflowstatus auch auf **Entwurf** zurücksetzen, indem Sie die Aktivität **Rückruf** auf der Seite **Freitextrechnung** oder **Alle Freitextrechnungen** auswählen. Nachdem der Workflowstatus auf **Entwurf** zurückgesetzt ist, wird er zur Bearbeitung auf der Seite **Freitextrechnung** verfügbar.
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

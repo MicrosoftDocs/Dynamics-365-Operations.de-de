@@ -2,7 +2,7 @@
 title: Finanzdimensionssätze
 description: In diesem Thema werden Finanzdimensionssätze beschrieben und einige Tipps zur Optimierung ihrer Verwendung bereitgestellt.
 author: yukonpeegs
-ms.date: 03/23/2021
+ms.date: 03/07/2022
 ms.topic: article
 ems.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: epegors
 ms.search.validFrom: 2021-03-23
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 415a41100cc5be740f064d52598cd256c0aa2ae1d45473c8039bdc6e22381b3c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9274e7f85005ab27d9f2b35fbb0be42e216941c9
+ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739977"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392935"
 ---
 # <a name="financial-dimension-sets"></a>Finanzdimensionssätze
 
@@ -61,6 +61,11 @@ Verwenden Sie die Schaltfläche **Salden neu erstellen**, um die Salden von Grun
 ## <a name="clear-balances"></a>Salden leeren
 
 Verwenden Sie die Schaltfläche **Salden leeren**, um die Salden zu entfernen und weitere Aktualisierungen zu stoppen. Der Dimensionssatz hat keine Auswirkungen mehr auf die Buchungsaktivitäten des Hauptbuchs.
+
+## <a name="delete-a-dimension-set"></a>Löschen eines Dimensionssatzes
+
+Sie sollten Dimensionssätze als eine Form der Problemumgehung nicht **löschen und neu erstellen**, um potenzielle Probleme mit den Bilanzdaten für einen bestimmten Dimensionssatz zu lösen. Das Neuerstellen eines Dimensionssatzes ist kostspielig. Wenden Sie sich für weitere Unterstützung bei Problemen an den Kundendienst. 
+
 
 Weitere Informationen finden Sie unter [Finanzdimensionen](financial-dimensions.md).
 

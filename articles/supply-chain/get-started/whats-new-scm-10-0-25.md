@@ -2,7 +2,7 @@
 title: Vorschauversion von Dynamics 365 Supply Chain Management 10.0.25 (April 2022)
 description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Supply Chain Management 10.0.25 entweder neu oder geändert sind.
 author: kamaybac
-ms.date: 02/01/2022
+ms.date: 03/14/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 068e65d0bd76d7a9af36c6c3539d0c813efd528a
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 26f67be72948e33738cf805b541d3c7e701f8dba
+ms.sourcegitcommit: a8f4d7d21d9af17d80b1213e5e1a81f42fb8b928
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384537"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "8414119"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10025-april-2022"></a>Vorschauversion von Dynamics 365 Supply Chain Management 10.0.25 (April 2022)
 
@@ -39,6 +39,7 @@ Die folgende Tabelle listet die Funktionen auf, die in dieser Version enthalten 
 | Bestand&nbsp;und&nbsp;Logistik | [Barcodes im Lagerort mit GS1-Formatstandards scannen](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-Barcodes und QR-Codes](../warehousing/gs1-barcodes.md) | Funktionsverwaltung:<br>*GS1-Barcodes scannen* |
 | Fertigung | [Materialverbrauch und Reservierungen in der Produktionsausführungsoberfläche](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte](../production-control/production-floor-execution-use.md) | Funktionsverwaltung:<br>*(Vorschau) Materialverbrauch in der Produktionsausführungsoberfläche (nicht WMS) registrieren*<br><br>Und/oder:<br><br>Funktionsverwaltung:<br>*(Vorschauversion) Materialverbrauch in der Produktionsausführungsoberfläche registrieren (WMS-fähig)* |
 | Fertigung | [Materialverbrauch auf Scale-Einheiten registrieren](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/register-material-consumption-scale-units) | [Workloads in der Fertigungsausführung für Cloud- und Edge-Skalierungseinheiten](../cloud-edge/cloud-edge-workload-manufacturing.md) | Funktionsverwaltung:<br>*Materialverbrauch mit der mobilen App an einer Skalierungseinheit registrieren* |
+| Planung | [Von Planungsoptimierung zentralisierte Kalenderpflege](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-centralized-calendar-maintenance) | [Kalender und Produktprogrammplanung](../master-planning/supply-chain-calendars-master-planning.md) | Standardmäßig aktiviert |
 | Planung | [Vorschläge für die Planungsoptimierung zur Optimierung des bestehenden Vorrats](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-suggestions-optimize-existing-supply) | [Aktivitätsmeldungen](../master-planning/action-messages.md) | Standardmäßig aktiviert |
 | Planung | Geplante Aufträge vereinfacht | [Geplante Aufträge vereinfacht](../master-planning/planning-optimization/planned-orders-simplified.md ) | Funktionsverwaltung:<br>*Geplante Aufträge vereinfacht* |
 

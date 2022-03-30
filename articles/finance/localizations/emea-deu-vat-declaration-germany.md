@@ -2,19 +2,19 @@
 title: Umsatzsteuererklärung (Deutschland)
 description: In diesem Thema wird erläutert, wie Sie eine Umsatzsteuervoranmeldung für juristische Personen in Deutschland im offiziellen XML-Format einrichten und erstellen.
 author: anasyash
-ms.date: 11/22/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 29c04e1034c05b4672f3657ce0b7bc9d5f6d7c9c
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: a761a145a876584728098a92b3f3e93ac718a164
+ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860881"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "8402802"
 ---
 # <a name="vat-declaration-germany"></a>Umsatzsteuererklärung (Deutschland)
 
@@ -163,6 +163,9 @@ Weitere Informationen zum Einrichten von Registrierungskategorien und Registrier
 ### <a name="set-up-application-specific-parameters-for-vat-declaration-fields"></a><a name="set-up-application-specific-parameters-for-vat-declaration-fields"></a>Anwendungsspezifische Parameter für Umsatzsteuererklärungsfelder einrichten
 
 Um automatisch eine MwSt.-Erklärung zu generieren, ordnen Sie der Anwendung Mehrwertsteuercodes zu und suchen Sie die Ergebnisse in der ER-Konfiguration.
+
+> [!NOTE]
+> Es wird empfohlen, dass Sie die Funktion **Anwendungsspezifische Parameter aus früheren Versionen von ER-Formaten verwenden** im **Funktionsverwaltung**-Arbeitsbereich aktivieren. Wenn diese Funktion aktiviert ist, gelten Parameter, die für die frühere Version eines ER-Formats konfiguriert wurden, automatisch für die spätere Version desselben Formats. Wenn diese Funktion nicht aktiviert ist, müssen Sie anwendungsspezifische Parameter explizit für jede Formatversion konfigurieren. Die **Anwendungsspezifische Parameter aus früheren Versionen von ER-Formaten verwenden**-Funktion ist ab der Finance-Version 10.0.23 im **Funktionsverwaltung**-Arbeitsbereich verfügbar. Weitere Informationen zum Einrichten der Parameter eines ER-Formats für jede juristische Person finden Sie unter [Parameter eines ER-Formats pro juristischer Person einrichten](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 Führen Sie diese Schritte aus, um zu definieren, welche Mehrwertsteuercodes welche Felder in der Mehrwertsteuererklärung generieren.
 

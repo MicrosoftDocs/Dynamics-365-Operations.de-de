@@ -2,19 +2,19 @@
 title: Auf das Partei- und globale Adressbuchmodell aktualisieren
 description: In diesem Thema wird beschrieben, wie Sie Daten aus dualem Schreiben auf das Partei- und das globale Adressbuchmodell aktualisieren.
 author: RamaKrishnamoorthy
-ms.date: 03/31/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 579a7d19ee7196d3242c78bd9915df24ec479c31
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 95d272d9076f1ab25230e4efa98e321bdd618062
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060478"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407793"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Auf das Partei- und globale Adressbuchmodell aktualisieren
 
@@ -151,13 +151,19 @@ In diesem Abschnitt wird die Einrichtung beschrieben, die erforderlich ist, bevo
 
 ## <a name="run-the-templates"></a>Die Vorlagen ausführen
 
-1. Halten Sie das folgende duale Schreiben für **Konto**, **Kontakt** und **Kreditor** mit der App für Finanzen und Betrieb an:
+1. Halten Sie die folgenden **Partei**-, **Konto**-, **Kontakt**- und **Kreditor**-Zuordnungen für duales Schreiben an, die Finanz- und Betriebs-Apps verwenden:
 
+    + CDS-Parteien (msdyn_parties) 
     + Debitoren V3 (Konten)
     + Debitoren V3 (Kontakte)
     + CDS-Kontakte V2 (Kontakte)
     + CDS-Kontakte V2 (Kontakte)
     + Kreditor V2 (msdyn_vendor)
+    + Kontakte V2 (msdyn_contactforparties)
+    + Postanschriften der CDS-Partei (msdyn_partypostaladdresses)
+    + CDS-Postadressverlauf V2 (msdyn_postaladdresses)
+    + CDS-Postanschriften (msdyn_postaladdresscollections)
+    + Parteikontakte V3 (msdyn_partyelectronicaddresses)
 
 2. Stellen Sie sicher, dass die Karten aus der Tabelle **msdy_dualwriteruntimeconfig** in Dataverse entfernt werden.
 3. Installieren Sie [Partei- und globale Adressbuchlösungen mit dualem Schreiben](https://aka.ms/dual-write-gab) aus AppSource.
