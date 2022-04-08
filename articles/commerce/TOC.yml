@@ -390,7 +390,7 @@
                   href: tasks/worker.md
                 - name: 'Modern Point of Sale (MPOS), Cloud POS und Store Commerce'
                   items:
-                    - name: Store Commerce-App in Microsoft Dynamics 365 Commerce (Vorschauversion)
+                    - name: Store Commerce-App
                       href: dev-itpro/store-commerce.md
                     - name: Implementierungsleitfaden für die Geräteverwaltung
                       href: implementation-considerations-devices.md
@@ -2872,6 +2872,8 @@
               items:
                 - name: Rückerstattung bei Rücklieferung wird abgelehnt
                   href: troubleshoot/refund-declined.md
+                - name: Erstattungsfähige Gebühren werden basierend auf der zurückgegebenen Menge falsch berechnet
+                  href: troubleshoot/refund-miscalculated-partial-return.md
                 - name: Dynamics 365 Payment Connector für Adyen
                   items:
                     - name: Fehler bei Dynamics 365 Payment Connector für Adyen beheben

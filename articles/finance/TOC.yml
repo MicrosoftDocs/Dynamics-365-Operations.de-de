@@ -18,8 +18,6 @@
                   href: get-started/whats-new-changed-10-0-25.md
                 - name: "Finance\_10.0.24 (Februar)"
                   href: get-started/whats-new-changed-10-0-24.md
-                - name: Finance 10.0.23 (Januar)
-                  href: get-started/whats-new-changed-10-0-23.md
             - name: Entfernte oder veraltete Funktionen
               items:
                 - name: Entfernte oder veraltete Funktionen auf der Startseite
@@ -412,10 +410,22 @@
                   href: accounts-receivable/rev-rec-reallocation-scenario-4.md
             - name: Abonnementabrechnung
               items:
-                - name: "Abrechnungsabonnement\_– Übersicht"
+                - name: "Abonnementabrechnung\_– Übersicht"
                   href: accounts-receivable/subscription-billing-summary.md
-                - name: Fakturierungspläne einrichten
-                  href: accounts-receivable/sb-billing-schedules.md
+                - name: Wiederkehrende Vertragsabrechnung
+                  items:
+                    - name: Fakturierungszeitpläne erstellen
+                      href: accounts-receivable/sb-billing-schedules.md
+                    - name: Einen Fakturierungszeitplan kopieren
+                      href: accounts-receivable/sb-copy-schedules-items.md
+                    - name: Abrechnung nach Meilenstein
+                      href: accounts-receivable/sb-milestonebilling.md
+                    - name: Fakturierungszeitpläne beenden
+                      href: accounts-receivable/terminate-billing-schedule.md
+                - name: Umsatzerlös- und Ausgabenstundungen
+                  items: null
+                - name: Umsatzerlöszuteilung mit mehreren Elemente
+                  items: null
             - name: Zahlungen und Ausgleiche
               items:
                 - name: Übersicht über Debitorenzahlungen
@@ -1443,11 +1453,11 @@
                             - name: Einen SharePoint-Kanal konfigurieren
                               href: localizations/e-invoicing-configure-sharepoint-channel.md
                         - name: Elektronische Rechnungsstellung in Finance und Supply Chain Management einrichten und verwenden
-                          items: null
-                        - name: Integration der elektronischen Rechnungsstellung aktivieren und einrichten
-                          href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
-                        - name: Elektronische Rechnungsstellungsparameter einrichten
-                          href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
+                          items:
+                            - name: Integration der elektronischen Rechnungsstellung aktivieren und einrichten
+                              href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
+                            - name: Elektronische Rechnungsstellungsparameter einrichten
+                              href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
                         - name: Mit elektronischer Rechnungsstellung arbeiten
                           items:
                             - name: Elektronische Dokumente zur elektronischen Rechnungsstellung senden
@@ -1532,6 +1542,10 @@
                           items:
                             - name: MwSt.-Erklärung
                               href: localizations/emea-dnk-vat-declaration-denmark.md
+                        - name: Meldung für Finnland
+                          items:
+                            - name: MwSt.-Erklärung
+                              href: localizations/emea-fin-vat-declaration-mult-tax-id.md
                         - name: Meldung für Frankreich
                           items:
                             - name: MwSt.-Erklärung
@@ -1546,7 +1560,11 @@
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: Zusammenfassende Meldung
                               href: localizations/emea-nl-eu-sales-list.md
-                        - name: Berichterstellung in Spanien
+                        - name: Meldung für Norwegen
+                          items:
+                            - name: MwSt.-Erklärung
+                              href: localizations/emea-nor-vat-declaration.md
+                        - name: Meldung für Spanien
                           items:
                             - name: 'Sofortige Bereitstellung von Informationen zur MwSt. (Suministro Inmediato de Información del IVA, SII)'
                               href: localizations/emea-esp-sii-spain.md
@@ -1564,10 +1582,6 @@
                           items:
                             - name: MwSt.-Erklärung
                               href: localizations/emea-gbr-vat-declaration.md
-                        - name: Berichterstellung in Norwegen
-                          items:
-                            - name: MwSt.-Erklärung
-                              href: localizations/emea-nor-vat-declaration.md
                     - name: Steuerberechnung für Überweisungsauftrag aktivieren
                       items:
                         - name: Unterstützung der Steuerfunktion bei Umlagerungsaufträgen
@@ -1694,8 +1708,6 @@
                   href: localizations/emea-aut-half-year-depreciation.md
                 - name: Verpackungsmaterialgebühren
                   href: localizations/emea-aut-packing-material-fee-calculation.md
-                - name: MwSt.-Abrechnung
-                  href: localizations/emea-aut-vat-statement-details.md
                 - name: Bericht zu grenzüberschreitenden Dienstleistungen
                   href: localizations/emea-aut-cross-border-services-report.md
                 - name: Intrastat (Österreich)
@@ -2020,9 +2032,7 @@
                   href: localizations/emea-create-post-periodic-journals.md
                 - name: Anzeige von Beträgen in Berichten und Dokumenten ändern
                   href: localizations/emea-amount-printing-forms.md
-                - name: MwSt.-Abrechnung
-                  href: localizations/emea-cze-vat-statement-details.md
-                - name: MwSt.-Erklärung (Tschechische Republik)
+                - name: MwSt.-Erklärung
                   href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
                 - name: Intrastat (Tschechische Republik)
                   href: localizations/emea-cze-intrastat.md
@@ -2060,9 +2070,11 @@
                   href: localizations/tasks/set-up-payment-slip-format.md
                 - name: Intrastat (Dänemark)
                   href: localizations/emea-dnk-intrastat.md
+                - name: MwSt.-Erklärung
+                  href: localizations/emea-dnk-vat-declaration-denmark.md
             - name: Ägypten
               items:
-                - name: Informationen zu Ägypten
+                - name: Finnland – Übersicht
                   href: localizations/egypt.md
                 - name: Registrierungsnummern in Ägypten konfigurieren
                   href: localizations/emea-egy-reg-numbers.md
@@ -2240,8 +2252,10 @@
                   href: localizations/finland.md
                 - name: Mehrwertsteuer-Zahlungsbericht für Finnland
                   href: localizations/emea-fin-sales-tax-payment-report-finland.md
-                - name: Finnische Intrastat
+                - name: Intrastat (Finnland)
                   href: localizations/emea-fin-intrastat.md
+                - name: MwSt.-Erklärung
+                  href: localizations/emea-fin-vat-declaration.md
             - name: Frankreich
               items:
                 - name: Frankreich – Übersicht
@@ -2332,12 +2346,8 @@
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: MwSt.-Erklärung
                   href: localizations/emea-deu-vat-declaration-germany.md
-                - name: Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)
-                  href: localizations/tasks/de-00003-electronic-transmission-elster.md
                 - name: Intrastat (Deutschland)
                   href: localizations/emea-deu-intrastat.md
-                - name: MwSt.-Abrechnung
-                  href: localizations/emea-de-vat-declaration.md
                 - name: Bericht über elektronische Rechnungen für Kunden
                   href: localizations/emea-deu-e-invoices.md
                 - name: Erfassungslistenbericht
@@ -2348,8 +2358,6 @@
                   href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
                 - name: Zusammenfassende Meldung
                   href: localizations/emea-deu-eu-sales-list.md
-                - name: MwSt.-Erklärung
-                  href: localizations/emea-dnk-vat-declaration-denmark.md
             - name: Ungarn
               items:
                 - name: "Ungarn\_– Übersicht"
@@ -2562,6 +2570,8 @@
                                   href: localizations/apac-ind-GST-import-goods-gst.md
                                 - name: Import von Services mit GST
                                   href: localizations/apac-ind-import-services-gst.md
+                                - name: Gebührenzuteilung auf der Zollanmeldungsseite für Importaufträge
+                                  href: localizations/apac-ind-charge-allocation-boe-page-import-orders.md
                                 - name: Export mehrwertsteuerfreier Waren
                                   href: localizations/apac-ind-GST-export-goods-zero-rated-tax.md
                                 - name: Export mehrwertsteuerfreier Services
@@ -3116,17 +3126,13 @@
               items:
                 - name: Niederlande – Übersicht
                   href: localizations/netherlands.md
-                - name: MwSt.-Erklärung
-                  href: localizations/emea-nl-VAT-declaration.md
-                - name: Elektronische Steuererklärungen (EVAT)
-                  href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Integration von Semansys XBRL
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
                 - name: Protokolldatei (XML Auditfile Financieel XAF)
                   href: localizations/emea-nl-audit-file.md
                 - name: MwSt.-Erklärung (Niederlande)
                   href: localizations/emea-nl-vat-declaration-netherlands.md
-                - name: Intrastat (Niederlande)
+                - name: Intrastat
                   href: localizations/emea-nl-intrastat.md
                 - name: Zusammenfassende Meldung
                   href: localizations/emea-nl-EU-sales-list.md
@@ -3540,9 +3546,9 @@
                   href: localizations/emea-swe-payment-formats-import.md
                 - name: Mehrwertsteuer-Zahlungsbericht für Schweden
                   href: localizations/emea-swe-sales-tax-payment-report-sweden.md
-                - name: MwSt.-Erklärung für Schweden
+                - name: MwSt.-Erklärung
                   href: localizations/emea-swe-VAT-declaration-Sweden.md
-                - name: Schwedisches Intrastat
+                - name: Intrastat (Schweden)
                   href: localizations/emea-swe-intrastat.md
                 - name: Zusammenfassende Meldung
                   href: localizations/emea-swe-eu-sales-list.md
