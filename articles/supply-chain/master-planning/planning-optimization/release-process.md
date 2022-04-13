@@ -1,21 +1,21 @@
 ---
 title: Releaseprozess und Releaseverlauf der Planungsoptimierung
 description: Dieses Thema enthält Informationen zum Releaseprozess und zum Releaseverlauf für Planungsoptimierung.
-author: ChristianRytt
+author: t-benebo
 ms.date: 09/21/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: fd6ecb0b7bc1fcf85feab2588622a96cf43b6155
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 673543ff2c9abefbca0529f35ce20bb26156acc4
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407843"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469700"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Releaseprozess und Releaseverlauf der Planungsoptimierung
 
@@ -33,7 +33,7 @@ Da keine Benachrichtigungen angezeigt werden, wenn die Planungsoptimierung in Ih
 
 | Änderungen | Funktionsverwaltungsdetails | Erscheinungsdaten |
 |---|---|---|
-| <p>Allgemeine Leistungs-, Qualitäts- und Stabilitätsverbesserungen.<p>Von Planungsoptimierung zentralisierte Kalenderpflege<p>Vorschläge für die Planungsoptimierung zur Optimierung des bestehenden Vorrats | Es ist keine Funktionsverwaltung erforderlich. | 7.-11. März 2022 |
+| <p>Allgemeine Leistungs-, Qualitäts- und Stabilitätsverbesserungen.<p>[Von Planungsoptimierung zentralisierte Kalenderpflege](../supply-chain-calendars-master-planning.md)<p>[Vorschläge für die Planungsoptimierung zur Optimierung des bestehenden Vorrats](../action-messages.md)<p>[Unterstützung für die Planungsoptimierung zur Vergabe von Unteraufträgen](../../production-control/manage-subcontract-work-production.md) | Es ist keine Funktionsverwaltung erforderlich. | 7.-11. März 2022 |
 | <p>Unterstützung der Planungspriorität für Produktionsaufträge hinzugefügt. | Verfügbar mit Version 10.0.25 als Teil der Funktion mit dem Namen *Prioritätsgesteuerte MRP-Unterstützung für Planungsoptimierung*. | 12.-18. November 2021 |
 | <p>Allgemeine Leistungs-, Qualitäts- und Stabilitätsverbesserungen. | Es ist keine Funktionsverwaltung erforderlich. | 12.-18. November 2021 |
 | <p>Unterstützung für Prozesszeitberechnungsformeln, Produktionsroute mit Überlappung und Produktionsvorgangsnummer bei Bedarfstransaktionen hinzugefügt.</p><p>Verbesserte Fehlermeldungen für die Produktionsplanung in Bezug auf Zeitüberschreitung, Kapazität konnte nicht gefunden werden und zyklische Route.</p><p>Verbesserte Konsistenz bei der Berechnung von Zugangsdaten und Ausgabedaten sowohl für Bestellvorschläge als auch für feste Bestellungen.</p><p>Allgemeine Leistungs-, Qualitäts- und Stabilitätsverbesserungen. | Funktionsname: *Zeitplanung mit unbegrenzter Kapazität für Planungsoptimierung* | 22.-27. Oktober 2021 |

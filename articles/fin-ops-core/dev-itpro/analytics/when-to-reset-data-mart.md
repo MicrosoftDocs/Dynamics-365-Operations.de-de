@@ -2,7 +2,7 @@
 title: Zurücksetzen von Data Marts FAQ
 description: In diesem Thema finden Sie Antworten auf einige häufig gestellte Fragen zum Zurücksetzen des Data Marts.
 author: jinniew
-ms.date: 02/14/2022
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 53f45f469c39f9e389763aa0daed658e5a62d377
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: ab6417a739e9a7b67b9e67d93f3bef654e55e5e4
+ms.sourcegitcommit: 2c2ef3e312e7221006a9e230c9378bb4c1b4cd33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119511"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8466410"
 ---
 # <a name="data-mart-resets-faq"></a>Zurücksetzen von Data Marts FAQ
 
@@ -47,10 +47,14 @@ Wenn eine oder mehrere der folgenden Aussagen auf Ihre Situation zutreffen, kann
 Im Folgenden sind einige der Umstände aufgeführt, unter denen wir nicht empfehlen, den Data Mart zurückzusetzen:
 
 - Sie haben Leistungsprobleme bei der Datenintegration.
+- Ihre Financial Reporter Integration ist nicht aktiviert. 
+
+    - Dies bedeutet, dass die Daten des Hauptbuchs nicht mehr mit Ihrem Financial Reporting Datamart synchronisiert werden. Ihr Financial Reporter erhält möglicherweise keine aktuellen Zahlen für Ihre Finanzberichte. Dies tritt typischerweise auf, wenn Sie Financial Reporter längere Zeit nicht mehr verwendet haben.
+    - Sie werden aufgefordert, die Integration zu aktivieren, indem Sie den Data Mart zurücksetzen. Sie können fortfahren, indem Sie **Ja** wählen. Sie haben auch die Möglichkeit, den Data Mart zu einem späteren Zeitpunkt zurückzusetzen. Nachdem die Integration aktiviert wurde, werden die Daten Ihres Hauptbuchs in Financial Reporter erneut synchronisiert. 
 - Sie haben ein wiederkehrendes Rücksetzungsmuster aus einem der folgenden Gründe:
 
     - **Fehlende oder unerwartete Daten im Bericht**: Wenn Sie feststellen, dass Daten fehlen, eröffnen Sie ein Support-Ticket bei Microsoft, um Ihr Berichtsformat und mögliche Probleme bei der Datensynchronisation zu überprüfen.
-    - **Hängengebliebener Integrationszustand**
+    - **Stau im Status der Integration** - Wenn Sie bemerken, dass der Status der Integration im Ausführen stecken bleibt, kann dies an einem großen Volumen an Transaktionen im System liegen. Dieser Status wird sich selbst auflösen. Wenn Sie jedoch bemerken, dass der Integrationsstatus länger als vier Stunden festhängt, eröffnen Sie ein Support-Ticket bei Microsoft. 
    
 ## <a name="if-i-reset-the-data-mart-will-i-lose-reports-that-ive-already-designed"></a>Verliere ich Berichte, die ich bereits erstellt habe, wenn ich den Data Mart zurücksetze?
 

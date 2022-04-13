@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 8ba478fef424a6c4688191ed4e5375bbce52de0c
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: adab5ee3f626390355f4bab1227efd5fe58c2fcf
+ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061000"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524520"
 ---
 # <a name="configure-inventory-visibility"></a>Bestandstransparenz konfigurieren
 
@@ -39,22 +39,25 @@ Bevor Sie mit Inventory Visibility arbeiten können, müssen Sie die folgende Ko
 
 Bevor Sie beginnen, installieren Sie das Bestandsanzeige-Add-In und richten es wie in [Bestandsanzeige installieren und einrichten](inventory-visibility-setup.md) beschrieben ein.
 
-## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>Aktivieren Sie die Bestandsanzeigefunktionen in der Funktionsverwaltung von Power Apps
-
-Das Bestandsanzeige-Add-In fügt Ihrer Power Apps-Installation mehrere neue Funktionen hinzu. Standardmäßig sind diese Funktionen ausgeschaltet. Um sie zu verwenden, öffnen Sie die Seite **Konfiguration** in Power Apps und aktivieren Sie dann auf der Registerkarte **Funktionsverwaltung** die folgenden Funktionen.
-
-- *OnHandReservation*
-- *OnHandMostSpecificBackgroundService*
-
-## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Finden Sie den Dienst-Endpunkt
-
-Wenn Sie den richtigen Dienst-Endpunkt für Inventory Visibility nicht kennen, öffnen Sie die Seite **Konfiguration** in Power Apps und wählen Sie dann **Dienst-Endpunkt anzeigen** in der oberen rechten Ecke. Die Seite zeigt den korrekten Dienst-Endpunkt an.
-
 ## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>Die Konfigurationsseite der Bestandsanzeige-App
 
 In Power Apps hilft Ihnen die Seite **Konfiguration** der [Bestandsanzeige-App](inventory-visibility-power-platform.md) beim Festlegen der Konfiguration des Lagerbestands und der Softreservierung. Nach der Installation des Add-Ins enthält die Standardkonfiguration den Wert von Microsoft Dynamics 365 Supply Chain Management (die Datenquelle `fno`). Sie können die Standardeinstellungen überprüfen. Zusätzlich können Sie die Konfiguration basierend auf Ihren geschäftlichen Anforderungen und den Bestandsbuchungsanforderungen Ihres externen Systems ändern, um die Art und Weise zu standardisieren, in der Bestandsänderungen in den verschiedenen Systemen gebucht, organisiert und abgefragt werden können. In den verbleibenden Abschnitten dieses Themas wird erläutert, wie die einzelnen Teile der Seite **Konfiguration** zu verwenden sind.
 
 Nachdem die Konfiguration abgeschlossen ist, wählen Sie in der App unbedingt **Konfiguration aktualisieren** aus.
+
+## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>Aktivieren Sie die Bestandsanzeigefunktionen in der Funktionsverwaltung von Power Apps
+
+Das Bestandsanzeige-Add-In fügt Ihrer Power Apps-Installation mehrere neue Funktionen hinzu. Standardmäßig sind diese Funktionen ausgeschaltet. Um sie zu verwenden, öffnen Sie die Seite **Konfiguration** und schalten Sie dann auf der Registerkarte **Funktionsverwaltung** die folgenden Funktionen nach Bedarf ein.
+
+| Name der Funktionsverwaltung | Description |
+|---|---|
+| OnHandReservation | Mit dieser Funktion können Sie mithilfe von Inventory Visibility Reservierungen erstellen, Reservierungen verbrauchen und/oder bestimmte Bestandsmengen aufheben. Weitere Informationen finden Sie unter [Reservierungen in Inventory Visibility](inventory-visibility-reservations.md). |
+| OnHandMostSpecificBackgroundService | Diese Funktion bietet eine Bestandsübersicht für Produkte zusammen mit allen Dimensionen. Die Bestandsübersicht wird regelmäßig von der Bestandsanzeige synchronisiert. Weitere Informationen finden Sie unter [Bestandsübersicht](inventory-visibility-power-platform.md#inventory-summary). |
+| OnhandChangeSchedule | Die Funktion aktiviert die Funktionen Lagerbestandsänderung und Available to Promise (ATP) (optional). Weitere Informationen finden Sie unter [Inventory Visibility Lagerbestand Änderungspläne und verfügbar zu versprechen](inventory-visibility-available-to-promise.md). |
+
+## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Finden Sie den Dienst-Endpunkt
+
+Wenn Sie den richtigen Dienst-Endpunkt für Inventory Visibility nicht kennen, öffnen Sie die Seite **Konfiguration** in Power Apps und wählen Sie dann **Dienst-Endpunkt anzeigen** in der oberen rechten Ecke. Die Seite zeigt den korrekten Dienst-Endpunkt an.
 
 ## <a name="data-source-configuration"></a>Konfiguration der Datenquelle
 
@@ -178,15 +181,21 @@ Um eine angepasste berechnete Messung festzulegen, befolgen Sie diese Schritte.
 
 1. Melden Sie sich in Ihrer Power Apps-Umgebung an und öffnen Sie **Inventory Visibility**.
 1. Öffnen Sie die Seite **Konfiguration**.
-1. Auf der Registerkarte **Berechnete Messung** wählen Sie **Neue berechnete Messung**, um eine berechnete Messung hinzuzufügen. Legen Sie dann die Felder wie in der folgenden Tabelle beschrieben fest.
+1. Auf der Registerkarte **Berechnete Messung** wählen Sie **Neue berechnete Messung**, um eine berechnete Messung hinzuzufügen.
+1. Legen Sie die folgenden Felder für die neue berechnete Messung fest:
 
-    | Feld | Wert |
-    |---|---|
-    | Name der neuen berechneten Messung | Geben Sie den Namen der berechneten Messung ein. |
-    | Datenquelle | Das abfragende System ist eine Datenquelle. |
-    | Modifier-Datenquelle | Geben Sie die Datenquelle des Modifikators ein. |
-    | Modifizierer | Geben Sie den Namen des Modifikators ein. |
-    | Modifikator-Typ | Wählen Sie den Modifikatortyp (*Addition* oder *Subtraktion*). |
+    - **Neuer Name der berechneten Messung** - Geben Sie den Namen der berechneten Messung ein.
+    - **Datenquelle** - Wählen Sie die Datenquelle aus, die mit dem neuen Modifikator verknüpft ist. Das abfragende System ist eine Datenquelle.
+
+1. Wählen Sie **Hinzufügen**, um der neu berechneten Messung einen Modifikator hinzuzufügen.
+1. Legen Sie die folgenden Felder für den neuen Modifikator fest:
+
+    - **Modifikator** - Wählen Sie den Modifikatortyp (*Zugabe* oder *Subtraktion*).
+    - **Datenquelle** - Wählen Sie die Datenquelle aus, in der die Messung, die den Modifikatorwert liefert, gefunden werden soll.
+    - **Messung** - Wählen Sie den Namen der Messung (aus der ausgewählten Datenquelle), die den Wert für den Modifikator liefert.
+
+1. Wiederholen Sie die Schritte 5 bis 6, bis Sie alle erforderlichen Modifikatoren hinzugefügt haben.
+1. Wählen Sie **Speichern** aus.
 
 Sie erhalten zum Beispiel das folgende Abfrageergebnis.
 
@@ -465,6 +474,10 @@ In diesem Beispiel können Sie Reservierungen in den folgenden Sequenzen von Dim
 - `(SiteId, LocationId, ColorId, SizeId, StyleId)`
 
 Eine gültige Sequenz von Dimensionen sollte strikt der Reservierungshierarchie folgen, Dimension für Dimension. Die Hierarchiesequenz `(SiteId, LocationId, SizeId)` ist z. B. nicht gültig, weil `ColorId` fehlt.
+
+## <a name="available-to-promise-configuration-optional"></a>Verfügbare Konfiguration zum Versprechen (optional)
+
+Sie können die Inventory Visibility festlegen, um zukünftige Lagerbestandsänderungen zu planen und ATP-Mengen (Available-to-Promise) zu berechnen. ATP ist die Menge eines Elements, die verfügbar ist und einem Kunden in der nächsten Periode zugesagt werden kann. Die Verwendung dieser Berechnung kann Ihre Funktionalitäten bei der Auftragsabwicklung erheblich verbessern. Um diese Funktion zu nutzen, müssen Sie sie auf der Registerkarte **Funktionsverwaltung** aktivieren und dann auf der Registerkarte **ATP Einstellung** festlegen. Weitere Informationen finden Sie unter [Inventory Visibility - Lagerbestände, Änderungszeitpläne und Zusagen](inventory-visibility-available-to-promise.md).
 
 ## <a name="complete-and-update-the-configuration"></a>Abschließen und Aktualisieren der Konfiguration
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4dc6cb7c0d6c04371ada611626415d87e9f149f0
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 304cf3f6c913586e08e0a3771ebfe40bc5d2b102
+ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416304"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464908"
 ---
 # <a name="financial-analysis"></a>Finanzanalyse
 
@@ -38,7 +38,7 @@ ms.locfileid: "7416304"
 
 Der **Arbeitsbereich für die Finanzanalyse** konzentriert sich darauf, dass Sie die Daten in bestehenden Berichten anzeigen und filtern können. Sie können dem Arbeitsbereich **Finanzanalyse** neue Visualisierungen hinzufügen. Der Arbeitsbereich **Finanzanalyse** ist sowohl für die aktuelle Firma als auch für alle Firmen verfügbar, um Daten für alle juristischen Entitäten anzuzeigen, unabhängig von den juristischen Entitäten, auf die die Rolle Zugriff hat.
 
-- [Hinzufügen oder Bearbeiten von Power BI-Visualisierungen auf Ihrem Dashboard](/powerapps-docs/user/add-powerbi-dashboards.md)
+- [Hinzufügen oder Bearbeiten von Power BI-Visualisierungen auf Ihrem Dashboard](/powerapps/user/add-powerbi-dashboards)
 
 ## <a name="dynamics-365-finance-setup"></a>Einrichten von Dynamics 365 Finance
 **Hauptbuch**
@@ -96,7 +96,7 @@ Das folgende Vergleichsdiagramm hilft, die zwei Optionen zu unterscheiden:
 | **Berichterstellungshierarchie unterstützen/Organisationshierarchie**   | Ja                                                               | Nein |
 | **Bericht zu Daten von untergeordneten Sachkonten**                             | Ja, beschränkt auf nur einen Kreditor, Debitor                              | Ja, Kreditor, Debitor, Kreditoren-/Debitorengruppen, Kreditoren-/Debitorenadressen, usw. |
 | **Berichtswährung**                                   | Ja, Buchhaltungswährung und in Berichtswährung übersetzen       | Nein, nur Buchhaltungswährung |
-| **Sicherheit**                                             | Ja, erfüllt Financ-Berichterstellungsstruktur-Sicherheit | „Begrenzte Anzeige“-Berichte für alle Unternehmen (ungeachtet der Finance and Operations-Sicherheit) oder nur aktives Unternehmen |
+| **Sicherheit**                                             | Ja, erfüllt Financ-Berichterstellungsstruktur-Sicherheit | „Begrenzte Anzeige”-Berichte für alle Unternehmen (ungeachtet der Finance and Operations-Sicherheit) oder nur aktives Unternehmen |
 | **Unterschiedlichen Kontenplan und Geschäftsjahre unterstützen** | Ja                                                               | Nein |
 | **Bericht zu externen Daten**                              | Nein                                                                | Nein |
 | **Konsolidierungen unterstützen**                               | Ja                                                               | Begrenzter Möglichkeitenbericht zu mehreren Unternehmen, aber nur Verwendung der Buchhaltungswährung |

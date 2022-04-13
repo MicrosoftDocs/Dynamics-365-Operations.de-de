@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c7f679e8d11b0ec01e912a4ad64f02e50b20f299
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 90f0f01115b00f231af8d4ae11be1d18d379399b
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984568"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487767"
 ---
 # <a name="e-commerce-site-overview"></a>E-Commerce-Site – Übersicht
 
@@ -86,7 +86,7 @@ Die Websites **Standard** und **fabrikam** enthalten vorkonfigurierte Vorlagen, 
 Informationen zum Verwalten Ihrer Website-Einstellungen finden Sie in den folgenden Themen:
 
 - [E-Commerce Benutzer und Rollen verwalten](manage-ecommerce-users-roles.md)
-- [Überlegungen zur Suchmaschinenoptimierung (SEO) für Ihre Site](/search-engine-optimization-considerations.md)
+- [Überlegungen zur Suchmaschinenoptimierung (SEO) für Ihre Site](search-engine-optimization-considerations.md)
 - [Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) verwalten](manage-csp.md)
 - [Sitedesign auswählen](select-site-theme.md)
 

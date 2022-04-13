@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-09-15
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f3a930814a1fb98e3b1611adf309c10e66b49b9d
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: c4cb36160e692cc12140b57037d2c9739f7b2ebd
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902096"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462669"
 ---
 # <a name="mobile-device-user-accounts"></a>Benutzerkonten für mobile Geräte
 
@@ -90,8 +90,8 @@ Wenn sich eine Arbeitskraft bei der mobilen Warehouse Management-App anmeldet, �
 1. Wählen Sie im Aktivitätsbereich **Benutzeroptionen**.
 1. Legen Sie auf der Registerkarte **Voreinstellungen** die folgenden Felder fest:
 
-    - **Sprache** – Wählen Sie die Sprache aus, die die Arbeitskraft bevorzugt. Dieses Feld steuert auch das Datumsformat, das in der Lagerort-App angezeigt wird.
-    - **Datums-, Uhrzeit- und Zahlenformat** – Wählen Sie die Sprache aus, die die Zahlenformate bestimmt, die in der Lagerort-App angezeigt werden. Beachten Sie, dass die Datums- und Uhrzeitformate, die in der Lagerort-App angezeigt werden, tatsächlich vom **Sprache** Feld bestimmt werden, nicht durch dieses Feld.
+    - **Sprache** – Wählen Sie die Sprache aus, die die Arbeitskraft bevorzugt. Dieses Feld steuert auch das Zahlenformat, das in der Warehouse-App angezeigt wird.
+    - **Datums-, Zeit- und Zahlenformat** - Wählen Sie das Datums- und Zeitformat, das die Arbeitskraft bevorzugt. Die Lager App verwendet anstelle dieser Einstellung das Zahlenformat, das mit der für das Feld **Sprache** gewählten Sprache verbunden ist.
     - **Zeitzone** – Wählen Sie die Zeitzone aus, in der die Arbeitskraft arbeitet. Dieses Feld wirkt sich auf den Zeitstempel für alle Registrierungen aus, die der Mitarbeiter über die App vornimmt.
 
 > [!NOTE]

@@ -2,7 +2,7 @@
 title: Umsatzsteuererklärung für Deutschland
 description: Dieses Thema enthält Informationen zum Generieren von QR-Rechnungen und zum Verarbeiten eingehender QR-Rechnungen.
 author: anasyash
-ms.date: 01/25/2021
+ms.date: 03/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,18 +13,21 @@ ms.search.region: Germany
 ms.author: anasyash
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 71d677546f69dcdae39270a093696780760e5b13
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: c199278c3bcb95419dc24db92ddcd6e3cf83bfea
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592504"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487658"
 ---
 # <a name="vat-declaration-for-germany"></a>Umsatzsteuererklärung für Deutschland
 
 [!include [banner](../includes/banner.md)]
 
-
+> [!IMPORTANT]
+  > Diese Funktion ist veraltet. Weitere Informationen finden Sie unter [Entfernte und außer Betrieb genommene Funktionen](../get-started/removed-deprecated-features-finance.md#elster-declaration-for-germany-design-based-on-reporting-codes).
+  > Weitere Informationen zur Mehrwertsteuererklärung finden Sie unter [Mehrwertsteuererklärung (Deutschland)](emea-deu-vat-declaration-germany.md)
+  
 In diesem Thema wird erläutert, wie Sie die Mehrwertsteuererklärung für juristische Personen in Deutschland einrichten und erstellen.
 
 Weitere Informationen zur Einrichtung der Mehrwertsteuererklärung finden Sie unter [MwSt-Berichterstattung für Europa](emea-vat-reporting.md).

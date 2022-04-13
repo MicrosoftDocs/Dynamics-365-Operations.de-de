@@ -2,25 +2,27 @@
 title: Überblick über die Finanzberichterstellung
 description: In diesem Thema wird beschrieben, wo Sie in Microsoft Dynamics 365 Finance auf Finanzberichte zugreifen und wie Sie Finanzberichtfunktionen verwenden.
 author: aprilolson
-ms.date: 07/27/2021
+ms.date: 03/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: intro-internal
+ms.custom:
+- "10444"
+- intro-internal
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fbdab1f4f81bbdb8b0b5cb3e6a5237196d7dc76
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: e1db676024f5ec0f254500bd2ceee85ab2150502
+ms.sourcegitcommit: 777f9581dccc0f963c6a04c95b85e00e68573db5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983976"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8527312"
 ---
 # <a name="get-started-with-financial-reporting"></a>Erste Schritte mit der Finanzberichterstellung 
 
@@ -174,7 +176,7 @@ Problem 1: Der Berichts-Designer wird nicht gestartet, wenn Sie **Neu** oder **B
 * Im Internet Explorer wählen Sie **Einstellungen** aus, dann wählen Sie **Internetoptionen** aus. Wähle Sie die Registerkarte **Sicherheit** aus. Wählen Sie „Vertrauenswürdige Sites“ und dann **Sites** aus. Unter **Diese Website zur Zone hinzufügen** geben Sie „\*\.dynamics.com“ (ohne Anführungszeichen) ein und wählen dann **Hinzufügen** aus. 
 * Im Internet Explorer wählen Sie **Einstellungen** aus, dann wählen Sie **Internetoptionen** aus. Wählen Sie die Registerkarte **Sicherheit** aus. Wählen Sie „Vertrauenswürdige Sites“ aus. Im Bereich mit der Bezeichnung „Sicherheitsstufe für diese Zone“ ändern Sie die Option zu **Mittel bis niedrig**.
 * Deaktivieren Sie den Popupblocker in Ihrem Browser.
-* Auf Arbeitsstationen muss Microsoft .NET-Framework 4.6.2 oder höher installiert sein. Diese Version von Microsoft .NET Framework kann heruntergeladen und eingerichtet werden vom [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
+* Auf Arbeitsstationen muss Microsoft .NET-Framework 4.7.2 oder höher installiert sein. Diese Version von Microsoft .NET Framework kann heruntergeladen und eingerichtet werden vom [Microsoft Download Center](https://dotnet.microsoft.com/download/dotnet-framework/net472).
 * Wenn Sie einen Chrome-Browser verwenden, müssen Sie eine ClickOnce-Erweiterung installieren, um den Berichts-Designer-Client herunterzuladen. Wenn Sie Chrome im Incognito-Modus verwenden, sollten Sie sicherstellen, dass die ClickOnce-Erweiterung auch für den privaten Modus aktiviert ist. Weitere Informationen zu der ClickOnce-Erweiterung von Chrome finden Sie unter [Systemanforderungen für Cloud-Bereitstellung](../../fin-ops-core/fin-ops/get-started/system-requirements.md).
 * Wenn Sie Microsoft Edge mit einem Chrome-Browser verwenden, müssen Sie keine ClickOnce-Erweiterung für Edge Chromium installieren. Sie müssen jedoch die ClickOnce-Option aktivieren, um den Report Designer-Client herunterladen zu können. Wenn Sie den Inkognitomodus ausführen, sollten Sie sicherstellen, dass die ClickOnce-Erweiterung auch für den Inkognitomodus aktiviert ist.
 

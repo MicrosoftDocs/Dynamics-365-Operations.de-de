@@ -2,7 +2,7 @@
 title: Rasterfunktionen
 description: In diesem Thema werden mehrere leistungsstarke Funktionen der Rastersteuerung beschrieben. Sie müssen die neue Rasterfunktion aktivieren, damit auf diese Fähigkeiten zugegriffen werden kann.
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 58a05f893549a8b9e2e5cb83d02475d0fb5b7277
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 81577f54bd7fdc7d683c760dd4410f27da8ee1f0
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384439"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462791"
 ---
 # <a name="grid-capabilities"></a>Rasterfunktionen
 
@@ -151,7 +151,7 @@ Beachten Sie, dass die Zeilenauswahl- und Zeilenstatusspalten im neuen Raster im
 
 Die Funktion **Neue Rastersteuerung** ist in jeder Umgebung direkt in der Funktionsverwaltung verfügbar. Nachdem die Funktion in der Funktionsverwaltung aktiviert wurde, verwenden alle nachfolgenden Benutzersitzungen die neue Rastersteuerung. 
 
-Diese Funktion ist ab Version 10.0.21 standardmäßig aktiviert und soll mit Version 10.0.25 obligatorisch werden. 
+Diese Funktion ist ab Version 10.0.21 standardmäßig aktiviert und soll im Oktober 2022 obligatorisch werden.  
 
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Entwickler] Deaktivierung einzelner Seiten für die Verwendung des neuen Rasters 
 Wenn Ihre Organisation eine Seite entdeckt, bei der Probleme bei der Verwendung des neuen Rasters auftreten, steht eine API zur Verfügung, mit der ein einzelnes Formular die Vorgängerrastersteuerung und der Rest des Systems weiterhin die neue Rastersteuerung verwenden kann. Fügen Sie den folgenden Aufruf `super()` in die `run()` Methode für das Formular ein, um das Raster für eine einzelne Seite zu deaktivieren.

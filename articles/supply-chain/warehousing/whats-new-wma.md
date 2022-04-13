@@ -10,18 +10,27 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: c4731c5f0b0a1553deb53753d82d29a34e5525df
-ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
+ms.openlocfilehash: 2544c30afe18f290b681efed1705f7cef0cb7620
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "8418639"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487835"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Was ist neu oder geändert in der Warehouse Management Mobile-App
 
 [!include [banner](../includes/banner.md)]
 
 Dieses Thema listet neue Funktionen, Korrekturen, Verbesserungen und bekannte Probleme für jede freigegebene Version der Warehouse Management Mobile-App für Microsoft Dynamics 365 Supply Chain Management auf.
+
+## <a name="version-20200"></a>Version 2.0.20.0
+
+Diese Version führt die folgenden neuen Funktionen, Korrekturen und Verbesserungen ein:
+
+- Mehrere Absturzprobleme wurden behoben.
+- Es wurde ein Problem behoben, bei dem falsche Werte auf Karten auf der Seite **Arbeitsliste** angezeigt wurden.
+- Auf den Seiten **Arbeitsliste** und **Abfrage von Elementen** in Android wurde das Scrolling verbessert und das Scrolling-Zittern beseitigt.
+- Auf der Anmeldeseite wurde eine Schaltfläche hinzugefügt, mit der Sie die Anwendung verlassen können.
 
 ## <a name="version-20190"></a>Version 2.0.19.0
 

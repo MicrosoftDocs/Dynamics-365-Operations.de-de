@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8917c9b265bc3df19517f052e28fb7644057cb46
-ms.sourcegitcommit: 19f0e69a131e9e4ff680eac13efa51b04ad55a38
+ms.openlocfilehash: 9ec0bedcf1a3a2888a91158ea0353283660d3266
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2022
-ms.locfileid: "8330700"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487580"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integration in Fertigungssteuerungssysteme von Drittanbietern
 
@@ -64,7 +64,9 @@ Sie können einen oder alle der folgenden Prozesse für die Integration aktivier
 
 ## <a name="monitor-incoming-messages"></a>Eingehende Nachrichten überwachen
 
-Um die eingehenden Nachrichten an das System zu überwachen, öffnen Sie die Seite für die **Integration von Fertigungssteuerungssystemen**. Dort können Sie Probleme anzeigen, bearbeiten und beheben.
+Um die eingehenden Nachrichten an das System zu überwachen, öffnen Sie die Seite für die **Integration von Fertigungssteuerungssystemen**. Dort können Sie Probleme anzeigen, verarbeiten und beheben.
+
+Alle Nachrichten für einen bestimmten Produktionsauftrag werden in der Sequenz verarbeitet, in der sie eingegangen sind. Allerdings werden Nachrichten für verschiedene Produktionsaufträge möglicherweise nicht in der empfangenen Sequenz verarbeitet, da Batchaufträge parallel verarbeitet werden. Im Falle eines Fehlschlags versucht der Batchauftrag, jede Nachricht dreimal zu verarbeiten, bevor er den Status *Fehlgeschlagen* festlegt.
 
 ## <a name="call-the-api"></a>API aufrufen
 
@@ -119,13 +121,13 @@ Die folgende Tabelle zeigt die Felder, die jede Zeile im `ReportFinishedLines`-A
 | `ReportedGoodQuantity` | Optional | Gleitkommazahl|
 | `ReportedErrorCatchWeightQuantity` | Optional | Gleitkommazahl |
 | `ReportedGoodCatchWeightQuantity` | Optional | Gleitkommazahl |
-| `AcceptError` | Optional |Boolesch |
+| `AcceptError` | Optional | Enum (Ja \| Nein) |
 | `ErrorCause` | Optional | Enumeration (None \| Material \| Machine \| OperatingStaff), erweiterbar |
 | `ExecutedDateTime` | Optional | DateTime |
 | `ReportAsFinishedDate` | Optional | Datum |
 | `AutomaticBOMConsumptionRule` | Optional | Enumeration (FlushingPrincip \| Always \| Never) |
 | `AutomaticRouteConsumptionRule` | Optional |Enumeration (RouteDependent \| Always \| Never) |
-| `RespectFlushingPrincipleDuringOverproduction` | Optional | Boolesch |
+| `RespectFlushingPrincipleDuringOverproduction` | Optional | Enum (Ja \| Nein) |
 | `ProductionJournalNameId` | Optional | Zeichenfolge |
 | `PickingListProductionJournalNameId` | Optional | Zeichenfolge|
 | `RouteCardProductionJournalNameId` | Optional | Zeichenfolge |
@@ -133,11 +135,11 @@ Die folgende Tabelle zeigt die Felder, die jede Zeile im `ReportFinishedLines`-A
 | `ToOperationNumber` | Optional | Ganzzahl|
 | `InventoryLotId` | Optional | Zeichenfolge |
 | `BaseValue` | Optional | Zeichenfolge |
-| `EndJob` | Optional | Boolesch |
-| `EndPickingList` | Optional | Boolesch |
-| `EndRouteCard` | Optional | Boolesch |
-| `PostNow` | Optional | Boolesch |
-| `AutoUpdate` | Optional | Boolesch |
+| `EndJob` | Optional | Enum (Ja \| Nein) |
+| `EndPickingList` | Optional | Enum (Ja \| Nein) |
+| `EndRouteCard` | Optional | Enum (Ja \| Nein) |
+| `PostNow` | Optional | Enum (Ja \| Nein) |
+| `AutoUpdate` | Optional | Enum (Ja \| Nein) |
 | `ProductColorId` | Optional | Zeichenfolge|
 | `ProductConfigurationId` | Optional | Zeichenfolge |
 | `ProductSizeId` | Optional | Zeichenfolge |
@@ -181,7 +183,7 @@ Die folgende Tabelle zeigt die Felder, die jede Zeile im `PickingListLines`-Absc
 | `OperationNumber` | Optional | Ganzzahl |
 | `LineNumber` | Optional | Gleitkommazahl |
 | `PositionNumber` | Optional | Zeichenfolge |
-| `IsConsumptionEnded` | Optional | Boolesch |
+| `IsConsumptionEnded` | Optional | Enum (Ja \| Nein) |
 | `ErrorCause` | Optional | Enumeration (None \| Material \| Machine \| OperatingStaff), erweiterbar |
 | `InventoryLotId` | Optional | Zeichenfolge |
 
@@ -217,9 +219,9 @@ Die folgende Tabelle zeigt die Felder, die jede Zeile im `RouteCardLines`-Abschn
 | `ConsumptionDate` | Optional | Datum |
 | `TaskType` | Optional | Enumeration (QueueBefore \| Setup \| Process \| Overlap \| Transport \| QueueAfter \| Burden) |
 | `ErrorCause` | Optional | Enumeration (None \| Material \| Machine \| OperatingStaff), erweiterbar |
-| `OperationCompleted` | Optional | Boolesch |
-| `BOMConsumption` | Optional | Boolesch |
-| `ReportAsFinished` | Optional | Boolesch |
+| `OperationCompleted` | Optional | Enum (Ja \| Nein) |
+| `BOMConsumption` | Optional | Enum (Ja \| Nein) |
+| `ReportAsFinished` | Optional | Enum (Ja \| Nein) |
 
 ### <a name="end-production-order-message"></a>Nachricht zum Ende eines Produktionsauftrags
 
@@ -230,9 +232,13 @@ Für die Nachricht *Produktionsauftrag beenden* ist der `_messageType`-Wert `Pro
 | `ProductionOrderNumber` | Obligatorisch | Zeichenfolge |
 | `ExecutedDateTime` | Optional | DateTime |
 | `EndedDate` | Optional | Datum |
-| `UseTimeAndAttendanceCost` | Optional | Boolesch |
-| `AutoReportAsFinished` | Optional | Boolesch |
-| `AutoUpdate` | Optional | Boolesch |
+| `UseTimeAndAttendanceCost` | Optional | Enum (Ja \| Nein) |
+| `AutoReportAsFinished` | Optional | Enum (Ja \| Nein) |
+| `AutoUpdate` | Optional | Enum (Ja \| Nein) |
+
+## <a name="other-production-information"></a>Andere Produktionsinformationen
+
+Die Nachrichten unterstützen Aktionen oder Ereignisse, die in der Werkstatt stattfinden. Sie werden über das in diesem Thema beschriebene MES-Integrations-Framework verarbeitet. Der Entwurf geht davon aus, dass andere Referenzinformationen, die mit dem MES ausgetauscht werden sollen (wie z.B. produktbezogene Informationen oder die Stückliste oder Route (mit ihren spezifischen Einrichtungs- und Konfigurationszeiten), die in einem bestimmten Produktionsauftrag verwendet werden), mit Hilfe von [Daten Entitäten](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) über Filetransfer oder OData vom System abgerufen werden.
 
 ## <a name="receive-feedback-about-the-state-of-a-message"></a>Feedback zum Status einer Nachricht erhalten
 

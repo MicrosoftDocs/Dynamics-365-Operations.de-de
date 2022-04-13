@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 33aab6f0a482ce3d90a7e9828015a8e7bebb7827
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 6aed74656ceb8edd0e88adf53b61fcae81241f54
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371715"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8470165"
 ---
 # <a name="set-up-regulatory-configuration-service-rcs"></a>Regulatory Configuration Service (RCS) festlegen
 
@@ -50,6 +50,13 @@ Eine Kachel für den Arbeitsbereich **Globalisierungsfunktionen** sollte jetzt a
     | Vereinigtes Königreich             | <p>`https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
     | Asien                       | <p>`https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
     | Japan                      | <p>`https://gw.jp-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Schweiz                | <p>`https://gw.ch-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Brasilien                     | <p>`https://gw.br-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> <p>`https://gw.br-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Vereinigte Arabische Emirate       | <p>`https://gw.ae-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Australien                  | <p>`https://gw.au-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> <p>`https://gw.au-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Kanada                     | <p>`https://gw.ca-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> <p>`https://gw.ca-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Frankreich                     | <p>`https://gw.fr-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Indien                      | <p>`https://gw.in-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
 3. Vergewissern Sie sich, dass das Feld **Anwendungs-ID** auf **0cdb527f-a8d1-4bf8-9436-b352c68682b2** festgelegt ist. Dieser Wert ist ein fester Wert. Stellen Sie sicher, dass nur ein global eindeutiger Bezeichner (GUID) eingegeben wird und dass der Wert keine anderen Symbole wie Leerzeichen, Kommas, Punkte oder Anführungszeichen enthält.
 4. Geben Sie in das Feld **LCS-Umgebungs-ID** die ID Ihrer Microsoft Dynamics Lifecycle Services (LCS) Umgebung ein. Dieser Wert ist der Verweis auf die Finance- oder Supply Chain Management-Umgebung, die Sie mit dem Dienst für die elektronische Rechnungsstellung verwenden werden. Um Ihre ID zu erhalten, melden Sie sich bei [LCS](https://lcs.dynamics.com/) an, öffnen Ihr Projekt und suchen dann auf der Registerkarte **Umgebung verwalten** im Abschnitt **Umgebungsdetails** das Feld **Umgebungskennung**.

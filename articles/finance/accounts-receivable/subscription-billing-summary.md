@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2022-02-09
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: b94ac36e49d55ad42909877d77903cd40cb22cbe
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 2796e25ec783941de381fb5ae96145eeba870bde
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182685"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462468"
 ---
 # <a name="subscription-billing-overview"></a>Abonnementabrechnung (Übersicht)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Die Abonnementabrechnung ermöglicht es Unternehmen, Abonnementeinnahmen und wiederkehrende Abrechnungen über Abrechnungszeitpläne zu verwalten. Komplexe Preis- und Abrechnungsmodelle und Umsatzerlöszuteilung lassen sich einfach verwalten und auf Positionsebene abrechnen und erfassen. Die Umsatzerlöszuteilung mit mehreren Elementen ermöglicht die Zuteilung von Umsatzerlösen gemäß den internationalen Rechnungslegungsstandards (International Financial Reporting Standard 15 \[IFRS 15\]) und den allgemein anerkannten Buchhaltungsprinzipien (US-GAAP) (Accounting Standards Codification Topic 606 \[ASC606\]).
 

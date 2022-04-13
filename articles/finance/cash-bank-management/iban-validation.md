@@ -1,23 +1,23 @@
 ---
 title: Verwalten Sie die Kontoprüfung (IBAN) der internationalen Bankkontonummer
 description: Dieses Thema erklärt, wie Sie die internationale Bankkontonummer (IBAN) prüfen.
-author: roschlom
+author: twheeloc
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 210d2f57e21ec5ac38ba8ca07195e40ff507e2b9
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: 89d6c38088e43f0f24fa41accecaa262a64006cf
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860818"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462763"
 ---
 # <a name="manage-international-bank-account-number-iban-account-validation"></a>Verwalten Sie die Kontoprüfung (IBAN) der internationalen Bankkontonummer
 
@@ -25,13 +25,13 @@ ms.locfileid: "7860818"
 
 Internationale Bankkontonummer (IBAN) Kontoüberprüfung erhöht den Betrag der Prüfung, die  ausgeführt wird, wenn Sie eine IBAN einem Bankkonto hinzufügen.
 
-Informationen zur Struktur der IBAN werden in Microsoft Dynamics 365 Finance gespeichert. Diese Informationen werden beim erstmaligen Verwenden der IBAN automatisch auf Bankkonten geladen. Sie enthält die Länge der IBAN, die Anfangspositionen der Bankkontonummer und die Routingnummer und die Länge der Kontonummer und die Routingnummer.
+Informationen über die Struktur der IBAN sind in Microsoft Dynamics 365 Finance gespeichert und werden automatisch geladen, wenn Sie die IBAN zum ersten Mal auf Bankkonten verwenden. Sie enthält die Länge der IBAN, die Anfangspositionen der Bankkontonummer und die Routingnummer und die Länge der Kontonummer und die Routingnummer.
 
 ## <a name="set-up-iban-structures"></a>Einrichten der IBAN-Struktur
 
 1. Gehen Sie zu **Bargeld- und Bankverwaltung \> Einrichten \> IBAN-Struktur**.
 2. Beachten Sie, dass die IBAN-Strukturen für jedes Land oder jede Region automatisch installiert wurden.
-3. Wenn Sie Strukturen für ein bestimmtes Land oder eine Region anpassen möchten, können Sie sie bearbeiten.
+3. Wählen Sie die Schaltfläche **Bearbeiten**, wenn die Struktur für ein bestimmtes Land oder eine bestimmte Region aktualisiert werden muss.
 4. Die Strukturdefinitionen sind Teil einer neuen Version. Sie können das Menü **Rücksetzungsstrukturen** verwenden, um die neuesten Definitionen nach jeder Aktualisierung zu laden.
 
 ## <a name="validate-the-iban-structure-in-a-bank-account"></a>Überprüfen Sie die IBAN-Struktur auf einem Bankkonto

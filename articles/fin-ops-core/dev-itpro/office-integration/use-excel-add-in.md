@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1593206e8e22aed518ebca9bee0772c6620bec9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3b97c585009b50c6623036d10f54e78a65a89cea
+ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068791"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464936"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Anzeigen und Aktualisieren von Entitätsdaten mit Excel 
 
@@ -48,7 +48,7 @@ Weitere Informationen zur Verwendung des Excel-Add-Ins bietet das kurze Video [E
 2. Klicken Sie auf eine **In Excel öffnen**-Option, um die generierte Arbeitsmappe zu öffnen. Diese Arbeitsmappe besitzt Bindungsinformationen für die Entität, einen Mauszeiger auf Ihre Umgebung und einen Zeiger auf das Excel-Add.
 3. Klicken Sie in Excel auf die Option zum **Bearbeiten aktiveren**, damit das Excel Add-In ausgeführt werden kann. Das Excel-Add-In wird in einem Bereich auf der rechten Seite des Excel-Fensters ausgeführt.
 4. Wenn Sie das Excel-Add-In zum ersten Mal ausführen, klicken Sie auf **Diesem Add-In vertrauen**.
-5. Wenn Sie aufgefordert werden, sich anzumelden, wählen Sie **Anmelden** und melden Sie sich mit den Anmeldeinformationen an, die Sie auch für die Finance und Operations App verwendet haben. Das Excel-Add-In verwendet einen vorherigen Anmeldungskontext aus dem Browser und meldet Sie automatisch an, wenn dies möglich ist. (Informationen zum Browser, der basierend auf dem Betriebssystem verwendet wird, finden Sie unter [Von Office-Add-Ins verwendete Browser](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.). Überprüfen Sie den Benutzernamen oben rechts im Excel-Add-In, um sicherzustellen, dass die Anmeldung erfolgreich war. 
+5. Wenn Sie aufgefordert werden, sich anzumelden, wählen Sie **Anmelden** und melden Sie sich mit den Anmeldeinformationen an, die Sie auch für die Finance und Operations App verwendet haben. Das Excel-Add-In verwendet einen vorherigen Anmeldungskontext aus dem Browser und meldet Sie automatisch an, wenn dies möglich ist. (Informationen über den Browser, der je nach Betriebssystem verwendet wird, finden Sie unter [Browser, die von Office Add-Ins verwendet werden](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins). Um sicherzustellen, dass die Anmeldung erfolgreich war, überprüfen Sie den Benutzernamen in der oberen rechten Ecke des Excel-Add-Ins. 
 
 Das Excel-Add-In liest automatisch die Daten für die Entität, die Sie ausgewählt haben. Beachten Sie, dass keine Daten in der Arbeitsmappe sind, bis sie vom Excel-Add-In eingelesen werden.
 

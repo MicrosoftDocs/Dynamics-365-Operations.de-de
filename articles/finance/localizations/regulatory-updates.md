@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 663b7d3162af6d385bc9c445b1e98cf5f74a1471
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: 19aadf844f239ef06ca4d9dbe60b597228d72e52
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105563"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8470092"
 ---
 # <a name="regulatory-updates"></a>Regulatorische Features
 
@@ -39,36 +39,26 @@ Die aktuellsten regulatorischen Aktualisierungspläne finden Sie in der folgende
 
 |Land|Freigabedatum|Version freigeben|Regulatorisches Update|
 |--------------------|---------------|-------|-------| 
-|      Österreich         |   August 2021      | 10.0.22      |   Mehrwertsteuererklärung in XML und Vorschau in Excel   |
-|      Österreich         |   2021. September      | 10.0.22HF      |   Das Intrastat-Format wird ab 2022 aktualisiert – Ursprungsland und USt.-IdNr. des Partners werden bei Sendungen obligatorisch   |
-|      Belgien        |   2021. Oktober      | 10.0.22HF     |   Intrastat-Transaktionscodes werden ab 2022 auf 2 Ziffern geändert  |
-|      Brasilien         |   August 2021      | 10.0.22      |   NF-e NT2020.006 – Identifizierung des Zwischenbenutzers der digitalen Plattform (Aktualisierung der Layout- und Validierungsregeln)   |
-|      Brasilien         |   2021. Dezember         | 10.0.22, 10.0.23, 10.0.24         |    SPED Fiscal Layout 2022  |
-|      Tschechische Republik         |   2021. Oktober         | 10.0.23HF         |     Das Intrastat-Format wird ab 2022 aktualisiert – Ursprungsland und USt.-IdNr. des Partners werden bei Sendungen obligatorisch  |
-|      Dänemark         |   2021. Dezember         | 10.0.22HF         |    Das Intrastat-Format wird ab 2022 aktualisiert  |
-|      Estland         |   2021. Dezember      | 10.0.22HF      |   Das Intrastat-Format wird ab 2022 aktualisiert – Ursprungsland und USt.-IdNr. des Partners werden bei Sendungen obligatorisch  |
-|      Finnland         |   November 2021         | 10.0.22HF         |    Das Intrastat-Format wird ab 2022 aktualisiert.  |
-|      Deutschland        |   August 2021       | 10.0.22HF      |   Das Intrastat-Format INSTAT XML wird ab 2022 aktualisiert. Das Intrastat-Format TXT ist ab 01.07.2021 nicht anwendbar  |
-|      Deutschland        |   2021. Oktober       | 10.0.23      |   Mehrwertsteuererklärung in XML und Vorschau in Excel (neues Design mit Beträgen in Steuercodewährung, sofort einsatzbereit mit Funktion zur Steuerschuldumkehr, kann in juristischen Nicht-DE-Personen ausgeführt werden und Steuertransaktionen von mehreren juristischen Personen erfassen)  |
-|      Italien         |   November 2021         | 10.0.22HF, 10.0.23HF, 10.0.24         |    Elektronische Rechnungsstellung für grenzüberschreitende Transaktionen  |
-|      Mexiko         |   November 2021      | 10.0.22      |   Ergänzung zum Frachtbrief in CFDI-Dokumenten   |
+|      Brasilien         |   2021. Dezember         | 10.0.24, 10.0.25         |    SPED Fiscal Layout 2022  |
+|      Brasilien         |   2022. März    | 10.0.24HF, 10.0.25HF         |    ICMS-DIFAL Sammlung bei Vorgängen, die sich an Nicht-Steuerzahler richten (Ergänzungsgesetz Nr. 190/22)  |
+|      Dänemark         |   2022. Januar  | 10.0.25HF         |    Vorschau auf die Mehrwertsteuererklärung in Excel |
+|      Frankreich   |   November 2021 | 10.0.25         |    Französischer Datenarchivierungsexport (FEC) - „Rechtfertigung fehlender Zahlen“ Anhang |
+|      Italien         |   November 2021         | 10.0.24         |    Elektronische Rechnungsstellung für grenzüberschreitende Transaktionen  |
+|      Italien         |   Februar 2022 | 10.0.24HF, 10.0.25HF| Eindeutiges Zertifikat - 2022 in Dynamics 365 Finance  |
+|      Litauen|   Februar 2022 | 10.0.24HF, 10.0.25HF | i.SAF Änderungen vom 2022-01-01 in Dynamics 365 Finance  |
 |      Mexiko         |   2021. Dezember      | 10.0.24      |   Ergänzung zum Frachtbrief Version 2.0  |
-|      Niederlande        |   2021. Oktober      | 10.0.22HF      |   2-stellige Transaktionscodes im Intrastat-Dateiformat ab 2022  |
-|      Neuseeland         |   August 2021      | 10.0.22    |   Formular für GST-Erklärung GST101A  |
 |      Norwegen        |   November 2021      | 10.0.24      |   Format für MwSt.-Erklärung 2022 mit Direktabgabe – Dynamics 365 Finance |
-|      Oman         |   August 2021      | 10.0.22      |   MwSt.-Erklärung – Version 1 |
-|      Polen          |   2021. Oktober     | 10.0.23, 10.0.24     |   JPK_V7M – neue Schemaversion ab Januar 2022 |
+|      Polen          |   2021. Oktober     | 10.0.24     |   JPK_V7M – neue Schemaversion ab Januar 2022 |
 |      Polen          |   November 2021     | 10.0.24HF     |   Jährlicher Bericht zu den Zahlungsdaten in kommerziellen Transaktionen |
 |      Polen          |   2021. Oktober     | 10.0.24     |   Elektronisches Format der zusammenfassenden Meldung (VAT-UE) |
-|      Russland          |   2021. Oktober     | 10.0.22HF, 10.0.23, 10.0.24    |   Änderungen bei Verkaufs-, Einkaufsbücher und Fakturenerfassungen|
+|      Russland          |   2021. Oktober     | 10.0.24    |   Änderungen bei Verkaufs-, Einkaufsbücher und Fakturenerfassungen|
 |      Russland          |   2021. Oktober     | 10.0.24HF    |   Änderung der Formate der MwSt.-Erklärung mit Anhängen|
 |      Russland          |   November 2021     | 10.0.24    |   Federal Accounting Standard 6/2020 (Anlagen)|
-|      Saudi-Arabien          |   November 2021     | 10.0.22HF, 10.0.23    |   Elektronische Rechnungserstellung in Saudi-Arabien – Phase 1|
-|      Saudi-Arabien          |   November 2021     | 10.0.22HF, 10.0.23HF, 10.0.24    |   Einzelhandel – Elektronische Rechnungserstellung in Saudi-Arabien – Phase 1|
-|      Spanien          |   2021. Oktober     | 10.0.23    |    MwSt.-Erklärungsmodell 303 in txt und Vorschau in Excel|
-|      Spanien          |   2021. September     | 10.0.22    |    Das Intrastat-Format wird für die Erklärung 2022 aktualisiert – USt.-IdNr. des Partners und Ursprungsland werden bei Sendungen obligatorisch|
-|      Schweden          |   2021. Oktober     | 10.0.22HF    |    Das Intrastat-Format wird ab 2022 aktualisiert – Ursprungsland und USt.-IdNr. des Partners werden bei Sendungen obligatorisch. Es werden zweistellige Transaktionscodes verwendet.|
-|      Vereinigtes Königreich          |   August 2021     | 10.0.22    |    Vereinigtes Königreich – MTD-Betrugsprävention 2021)|
+|      Russland          |   2022. Januar     | 10.0.24HF, 10.0.25    |   Aktivieren Sie den Zielort für elektronische Berichte (ER), um russische Buchhaltungsdokumente (Primärdokumente und Buchhaltungsberichte) zu speichern.|
+|      Russland          |   2021. Dezember     | 10.0.25    |   Integration Anlage (Russland) Modul mit Asset-Management Modul|
+|      Russland          |   Februar 2022     | 10.0.24HF, 10.0.25    |  Neues Format der Transportrechnung (Regierungserlass N 2116 30.11.2021)|
+|      Saudi-Arabien          |   November 2021     | 10.0.24    |   Einzelhandel – Elektronische Rechnungserstellung in Saudi-Arabien – Phase 1|
+|      Spanien      |   2022. März| 10.0.24HF, 10.0.25HF | Spanien: Mehrwertsteuererklärung Modell 303 ändert sich zum 1. Januar 2022 in Dynamics 365 Finance|
 
 
 

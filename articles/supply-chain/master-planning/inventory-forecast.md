@@ -1,22 +1,22 @@
 ---
 title: Bestandsprognosen
 description: In diesem Thema werden die Angebots- und Nachfrageprognosefunktionen beschrieben, mit denen Bestandsprognosen in Microsoft Dynamics 365 Supply Chain Management erstellt werden können.
-author: ChristianRytt
+author: t-benebo
 ms.date: 06/08/2021
 ms.topic: article
 ms.search.form: EcoResProductDetailsExtended, ForecastSales, ForecastPurch, ForecastInvent
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 5ce997a0bb3d6766b801f3f4dea8ab3f19085d02
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: abc827139c71f7942335cd2b7e2c7502f7fc1cfe
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577551"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469393"
 ---
 # <a name="inventory-forecasts"></a>Bestandsprognosen
 

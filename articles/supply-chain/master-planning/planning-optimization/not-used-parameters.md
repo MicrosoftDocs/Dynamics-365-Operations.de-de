@@ -1,22 +1,22 @@
 ---
 title: Von der Planungsoptimierung nicht verwendete Parameter
 description: In diesem Thema werden die Parameter aufgelistet, welche die Planungsoptimierung derzeit während des Betriebs nicht berücksichtigt.
-author: ChristianRytt
+author: t-benebo
 ms.date: 09/02/2021
 ms.topic: article
 ms.search.form: ReqParameters, ReqGroup, ReqItemTable, ReqPlanSched, EcoResProductDetailsExtended, InventItemOrderSetup, WorkCalendarTable, PdsDispositionMaster
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 32e5ceb607d2c4f3d9794421db5382441ac30467
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 82bdd522b5b6ca1cf149f9fea508d8d6a96a1466
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8408229"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469113"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>Von der Planungsoptimierung nicht verwendete Parameter
 
@@ -65,18 +65,6 @@ Die Planungsoptimierung verwendet die folgenden Parameter oder Optionen auf der 
   - **Angegebene Stücklisten- oder Formelversion verwenden** – Unterstützung *Formelversionen mit Co-/Nebenprodukt* steht aus.
   - **Angegebenen Arbeitsplanversion verwenden** – Unterstützung *Bedarf mit bestimmten definierten Stücklisten- oder Arbeitsplananforderungen* steht aus.
 
-- Inforegister **Aktivität**:
-
-  - **Aktivitätsmeldung** – Unterstützung *Aktivitäten* steht aus.
-  - **Aktivitätsplanungszeitraum** – Unterstützung *Aktivitäten* steht aus.
-  - **Verschiebungsgrenze** – Unterstützung *Aktivitäten* steht aus.
-  - **Vorverlegungsgrenze** – Unterstützung *Aktivitäten* steht aus.
-  - **Basisdatum** – Unterstützung *Aktivitäten* steht aus.
-  - **Termin vorziehen** – Unterstützung *Aktivitäten* steht aus.
-  - **Termin verschieben** – Unterstützung *Aktivitäten* steht aus.
-  - **Menge reduzieren** – Unterstützung *Aktivitäten* steht aus.
-  - **Menge erhöhen** – Unterstützung *Aktivitäten* steht aus.
-  - **Abgeleitete Aktivitäten** – Unterstützung *Aktivitäten* steht aus.
 
 - Inforegister **Sonstige**:
 
@@ -149,7 +137,6 @@ Die Planungsoptimierung verwendet die folgenden Parameter oder Optionen auf der 
   - **Zeitraum für Absatzplanung** – zusätzliche Unterstützung der *Planung* steht aus.
   - **Kapazität** – Unterstützung *Terminplanung* steht aus.
   - **Anschlussplan** – Unterstützung *Anschlussplanung* steht aus.
-  - **Aktivitätsmeldung** – Unterstützung *Aktivitäten* steht aus.
   - **Berechnete Verzögerungen** – zusätzliche Unterstützung für *berechnete Verzögerungen* steht aus.
   - **Abfolge** – Unterstützung *Produktion* steht aus.
 

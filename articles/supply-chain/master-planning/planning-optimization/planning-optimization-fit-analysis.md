@@ -1,7 +1,7 @@
 ---
 title: Planungsoptimierung Fit-Analyse
 description: In diesem Thema wird erläutert, wie Sie Ihr aktuelles Setup und Ihre Daten mit den Möglichkeiten der Planungsoptimierungsfunktionalität verifizieren können.
-author: ChristianRytt
+author: t-benebo
 ms.date: 07/07/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 440cddca11df8d705757c6f6adf01e08626c5158
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: dccc955492d33e9e0156f2a5feb6b33387d80af3
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8408014"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487641"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Passanalyse zu Planungsoptimierung
 
@@ -84,7 +84,7 @@ Die folgende Tabelle zeigt die verschiedenen Ergebnisse, die nach einer Anpassun
 | Produktion | Stücklisten-/Formelpositionen mit Ressourcenverbrauch: _\#_ | Diese Funktion steht noch aus. Derzeit werden Stücklisten-/Formelpositionen mit Ressourcenverbrauch ignoriert, wenn die Planungsoptimierung aktiviert ist. Wenn diese Funktion unterstützt wird, wird der Materialbedarf auf das Produktionsstartdatum festgelegt. Bis diese Funktion unterstützt wird, werden keine Anforderungen für Materialien generiert, die mit einem Ressourcenverbrauchsflag gekennzeichnet sind. | 2022. Oktober |
 | Produktion | Stücklisten-/Formelpositionen mit Schrittverbrauch: _\#_ | Diese Funktion steht noch aus. Derzeit werden Stücklisten-/Formelpositionen mit Schrittverbrauch ignoriert, wenn die Planungsoptimierung aktiviert ist. | 2022. Oktober |
 | Produktion | Stücklisten mit konstantem Ausschuss oder variablem Ausschuss definiert: _\#_ | Diese Funktion steht noch aus. Derzeit werden Stücklisten mit konstantem Ausschuss oder variablem Ausschuss ignoriert, wenn die Planungsoptimierung aktiviert ist. | 2022. Oktober |
-| Produktion | Stücklisten mit Fremdarbeit: _\#_ | Diese Funktion steht noch aus. Derzeit werden Stücklisten mit Fremdarbeit ignoriert, wenn die Planungsoptimierung unabhängig von dieser Einstellung aktiviert ist. | April 2022 |
+| Produktion | Stücklisten mit Fremdarbeit: _\#_ | Diese Funktion wird jetzt unterstützt. | Unterstützt |
 | Produktion | Stücklisten ohne Standort: _\#_ | Diese Funktion wird jetzt unterstützt. Weitere Informationen finden Sie unter [Produktionsplanung](production-planning.md) | Unterstützt |
 | Produktion | Bedarf mit bestimmten definierten Stücklisten- oder Arbeitsplananforderungen: _\#_ | Diese Funktion steht noch aus. Derzeit werden die spezifischen Stücklisten- oder Routenanforderungen, die im Bedarf definiert sind (z. B. eine Unterstückliste oder Unterroute in einem Kundenauftrag), ignoriert, wenn die Planungsoptimierung aktiviert ist. Unabhängig von dieser Einstellung wird die Standardstückliste oder -Route verwendet. | 2022. Oktober |
 | Produktion | Formelversionen mit Kuppel-/Nebenprodukten: _\#_ | Diese Funktion steht noch aus. Derzeit werden Kuppel-/Nebenprodukten, die der Formelversion zugeordnet sind, ignoriert, wenn die Planungsoptimierung aktiviert ist. | 2022. Oktober |

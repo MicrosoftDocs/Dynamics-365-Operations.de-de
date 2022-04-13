@@ -2,7 +2,7 @@
 title: MwSt-Berichtdetails für Österreich
 description: In diesem Thema wird erläutert, wie der MwSt Bericht für juristische Personen in Österreich erfasst wird.
 author: ShylaThompson
-ms.date: 06/20/2017
+ms.date: 03/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,20 @@ ms.search.region: Austria
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 6a96818fba1505ed26802a41258e48933415a75e11b8f859251c5e94ca72d1a9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2dc87ab68f07d0630339c455cf4aba22bd53bd37
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744291"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487812"
 ---
 # <a name="vat-statement-details-for-austria"></a>MwSt-Berichtdetails für Österreich
 
 [!include [banner](../includes/banner.md)]
+
+> [!IMPORTANT]
+  > Diese Funktion ist veraltet. Weitere Informationen finden Sie unter [Entfernte und außer Betrieb genommene Funktionen](../get-started/removed-deprecated-features-finance.md#vat-statement-for-austria-design-based-on-reporting-codes).
+  > Um mehr über die Mehrwertsteuererklärung zu erfahren, siehe [Mehrwertsteuererklärung (Österreich)](emea-aut-vat-declaration-austria.md)
 
 In diesem Thema wird erläutert, wie der MwSt Bericht für juristische Personen in Österreich erfasst wird.
 

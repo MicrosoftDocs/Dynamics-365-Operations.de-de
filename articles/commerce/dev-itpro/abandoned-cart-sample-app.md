@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 82848f1ff068cea0adfc6ec1b33fc4bb035f78dc
-ms.sourcegitcommit: 374bbdde90fc9a68c0799158a50409bfbe8ca64e
+ms.openlocfilehash: 1db4e988653aa55db2b18fb201edeafc4d16a1bc
+ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8353361"
+ms.lasthandoff: 03/26/2022
+ms.locfileid: "8489029"
 ---
 # <a name="detect-abandoned-carts-and-send-notifications-to-customers"></a>Verlassene Warenkörbe erkennen und Benachrichtigungen an die Kunden senden
 
@@ -127,7 +127,7 @@ Um die Beispiel-App für den Konnektor für verlassene Warenkörbe zu konfigurie
 
 ### <a name="azurecosmosoptions"></a>AzureCosmosOptions
 
-Der Status des Abrufs des abgebrochenen Warenkorbs, die IDs der Warenkörbe und die Zeitstempel der Änderungen werden in Azure Cosmos DB gespeichert. Standardmäßig verweisen die Einstellungen in der Konfigurationsdatei auf die lokale Emulatorinstanz von Azure Cosmos DB. Wenn Sie den Konnektor für die Produktion bereitstellen, müssen Sie diese Einstellungen aktualisieren, damit sie auf die Azure-Instanz Cosmos DB in Ihrem Azure Abonnement verweisen. Für lokale oder Sandbox-Tests können Sie den [Azure Cosmos Emulator](/azure/cosmos-db/local-emulator) verwenden.
+Der Status des Abrufs des abgebrochenen Warenkorbs, die IDs der Warenkörbe und die Zeitstempel der Änderungen werden in Azure Cosmos DB gespeichert. Standardmäßig verweisen die Einstellungen in der Konfigurationsdatei auf die lokale Emulatorinstanz von Azure Cosmos DB. Wenn Sie den Konnektor für die Produktion bereitstellen, müssen Sie diese Einstellungen aktualisieren, damit sie auf die Azure-Instanz Cosmos DB in Ihrem Azure Abonnement verweisen. Zum Testen vor Ort oder in der Sandbox können Sie den [Azure Cosmos DB Emulator](/azure/cosmos-db/local-emulator) verwenden.
 
 | Eigenschaft    | Description |
 | ----------- | ----------- |

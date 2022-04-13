@@ -2,7 +2,7 @@
 title: MwSt-Berichterstattung für Europa
 description: Dieses Thema enthält allgemeine Informationen zum Einrichten und Generierung des Mehrwertsteuer-Auszugs für einige europäische Länder.
 author: ShylaThompson
-ms.date: 06/20/2017
+ms.date: 03/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, L
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b028c5a185b4e7626dd9258630cc469c4439fc37d1c9d1cd7d42007b0ec85736
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a1f7611dcf713e80f637a4b3f5542763050ac4a6
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741488"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487752"
 ---
 # <a name="vat-reporting-for-europe"></a>MwSt-Berichterstattung für Europa
 
@@ -39,6 +39,25 @@ Dieses Thema bietet einen allgemeinen Ansatz zum Einrichten und zum Generieren d
 -   Litauen
 -   Niederlande
 -   Schweden
+
+> [!IMPORTANT]
+> Die in diesem Thema beschriebenen Funktionen für Österreich, die Tschechische Republik, Deutschland, die Niederlande und Schweden sind veraltet. Weitere Informationen finden Sie unter [Entfernte und außer Betrieb genommene Funktionen](../get-started/removed-deprecated-features-finance.md).
+> Verwenden Sie die Links in der folgenden Tabelle, um mehr über das neue Design der Mehrwertsteuererklärungen in den entsprechenden Ländern zu erfahren.
+> 
+>
+> | Land        | Zusätzliche Informationen                                                          |
+> |----------------|---------------------------------------------------------------------------------|
+> | Österreich        | [Mehrwertsteuererklärung (Österreich)](emea-aut-vat-declaration-austria.md)       |                                                                           
+> | Tschechische Republik | [Mehrwertsteuererklärung (Tschechische Republik](emea-cze-vat-declaration-tax-declaration-model.md) |
+> | Dänemark        | [MwSt.-Erklärung (Dänemark)](emea-dnk-vat-declaration-denmark.md)         |
+> | Frankreich         | [Mehrwertsteuererklärung (Frankreich)](emea-fra-vat-declaration-preview-france.md)       |
+> | Deutschland        | [Umsatzsteuererklärung (Deutschland)](emea-deu-vat-declaration-germany.md)           |
+> | Niederlande    | [MwSt.-Erklärung (Niederlande)](emea-nl-vat-declaration-netherlands.md)    |
+> | Norwegen         | [MwSt.-Erklärung mit direkter Übermittlung an Altinn](emea-nor-vat-return.md) |
+> | Spanien          | [Mehrwertsteuererklärung (Spanien)](emea-esp-vat-declaration-spain.md)              |
+> | Schweden         | [Mehrwertsteuererklärung (Schweden)](emea-swe-vat-declaration-sweden.md)          |
+> | Schweiz    | [Mehrwertsteuererklärung (Schweiz)](emea-che-vat-declaration-switzerland.md) |
+> | Vereinigtes Königreich             | [Vorbereitung für die Integration mit MRD für die Mehrwertsteuer](emea-gbr-mtd-vat-integration.md) |
 
 ## <a name="vat-statement-overview"></a>MwSt.-Auszugs, Überblick
 Der MwSt-Auszug basiert auf dem Steuerbuchungsbeträgen. Die Generierung eines MwSt. -Auszugs ist Teil des Mehrwertsteuerzahlungsprozesses, der durch die Bank- und Beitragsmehrwertsteuerfunktion implementiert ist. Mithilfe dieses Funkltion können Sie die für eine Periode fällige Mehrwertsteuer berechnen. Die Ausgleichsberechnung enthält die gebuchte Mehrwertsteuer für den ausgewählten Abrechnungszeitraum für die Steuerbuchungen im Formular . Der Prozess zum Berechnen von Daten für einen MwSt.-Auszug basiert auf der Beziehung zwischen Mehrwertsteuercodes und Mehrwertsteuer-Erklärungscodes, in denen Mehrwertsteuer-Erklärungscodes mit den MwSt.-Auszugsfelder übereinstimmen (oder die Markierungen in XML). Für jeden Mehrwertsteuercode sollen Mehrwertsteuer-Erklärungscodes für jede Buchungsart, zum Beispiel steuerpflichtige Verkäufe, steuerpflichtige Einkäufe, steuerpflichtiger Import eingerichtet werden. Hiermit werden Buchungsarten im Feld Mehrwertsteuercodes für Mehrwertsteuer-Berichte im Abschnitt weiter unten in diesem Thema.
@@ -258,10 +277,10 @@ Der Mehrwertsteuertyp für jedes Land muss den Bedingungen der Gesetzgeber des L
 
 | Land        | Weitere Informationen                                                          |
 |----------------|---------------------------------------------------------------------------------|
-| Österreich        |  [MwSt-Berichtdetails für Österreich](emea-aut-vat-statement-details.md)         |
+| Österreich        | [MwSt-Berichtdetails für Österreich](emea-aut-vat-statement-details.md)         |
 | Belgien        |                                                                                 |
-| Tschechische Republik |  [MwSt.-Abrechnung für die Tschechische Republik](emea-cze-vat-statement-details.md)   |
-| Estland        |  [MwSt-Berichtadetails für Estland](emea-est-vat-statement-details.md) |
+| Tschechische Republik | [MwSt.-Abrechnung für die Tschechische Republik](emea-cze-vat-statement-details.md)   |
+| Estland        | [MwSt-Berichtadetails für Estland](emea-est-vat-statement-details.md) |
 | Finnland        | [Mehrwertsteuererklärung für Finnland](emea-fin-sales-tax-payment-report-finland.md)          |
 | Deutschland        | [Umsatzsteuererklärung für Deutschland](emea-de-vat-declaration.md)                       |
 | Italien          | [MwSt-Abrechnungsdetails für Italien](emea-ita-vat-statements-details.md)            |

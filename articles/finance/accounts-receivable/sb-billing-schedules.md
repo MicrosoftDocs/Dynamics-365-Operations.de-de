@@ -1,5 +1,5 @@
 ---
-title: Abrechnungszeitplan – Übersicht
+title: Erstellen von Abrechnungsplänen
 description: In diesem Thema wird erläutert, wie Sie Abrechnungszeitpläne erstellen, löschen und bearbeiten.
 author: JodiChristiansen
 ms.date: 02/09/2022
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: e42be3f359e96f0861354ebc8e1e9c87478a5d89
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 2c4e3c0edadd00fd3a3f2ae9968248a226147996
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182698"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462586"
 ---
-# <a name="billing-schedule-overview"></a>Abrechnungszeitplan – Übersicht
+# <a name="create-billing-schedules"></a>Erstellen von Abrechnungsplänen
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Auf der Seite **Abrechnungszeitplan** können Sie Abrechnungszeitpläne erstellen, löschen oder bearbeiten. Sie können auch die Liste der Abrechnungszeitpläne überprüfen. Wenn Sie einen Abrechnungszeitplan erstellen, hängen die Standardwerte dafür von der zugehörigen Abrechnungsgruppe ab. Weitere Informationen werden auf der Seite **Wiederkehrende Vertragsabrechnungsparameter** eingerichtet.
 

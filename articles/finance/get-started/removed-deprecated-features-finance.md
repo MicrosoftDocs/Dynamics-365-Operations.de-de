@@ -1,23 +1,23 @@
 ---
 title: Entfernte oder veraltete Funktionen in Dynamics 365 Finance
 description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen von Dynamics 365 Finance.
-author: roschlom
-ms.date: 12/03/2021
+author: kfend
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ad3df2ee9c10972dac8258b6ee41ae0a6eabfbea
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 6df84e5c2d530e708560495bceaeb23e2ee0dd4b
+ms.sourcegitcommit: acac5e59be7c8f4e9a7ae9be58c636c70342e784
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890952"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8466833"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Finance
 
@@ -31,7 +31,21 @@ In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entf
 Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen bei Ihrer eigenen Planung zu berücksichtigen. 
 
 > [!NOTE]
-> Detaillierte Informationen über Objekte in Finance and Operations Apps finden Sie in den [Technischen Referenzberichten](/dynamics/s-e/global/axtechrefrep_61). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die sich in jeder Version von Finance and Operations-Anwendungen geändert haben oder entfernt wurden.
+> Ausführliche Informationen über Objekte in Apps für Finanzen und Betrieb finden Sie in den [Technischen Referenzberichten](/dynamics/s-e/global/axtechrefrep_61). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die in den einzelnen Versionen der Apps für Finanzen und Betrieb geändert oder entfernt wurden.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10026-release"></a>Entfernte oder veraltete Funktionen in Finance Release 10.0.26
+
+### <a name="sales-tax-report-for-finland-design-based-on-reporting-codes"></a>Mehrwertsteuer-Bericht für Finnland (Entwurf auf der Grundlage von Meldecodes)
+
+[Mehrwertsteuererklärung für Finnland](../localizations/emea-fin-sales-tax-payment-report-finland.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Ersetzt durch ein neues Design für die Mehrwertsteuererklärung, [Mehrwertsteuererklärung für Finnland](../localizations/emea-fin-vat-declaration.md). |
+| **Ersetzt durch eine andere Funktion?**   | Ja |
+| **Betroffene Produktbereiche**         | Anwendung |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Außer Betrieb genommen: Ab dem 1. März 2023 werden wir den Mehrwertsteuer-Bericht für Finnland (finnisches Berichtslayout) nicht mehr unterstützen. Neue **Mehrwertsteuererklärung TXT (FI**) und **Mehrwertsteuererklärung Excel (FI)** Elektronische Berichterstattung (ER) werden unter dem **Steuererklärung**-Modell eingeführt. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10024-release"></a>Entfernte oder veraltete Funktionen in Finance Release 10.0.24
 
