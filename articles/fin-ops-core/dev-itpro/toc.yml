@@ -1,10 +1,10 @@
-- name: Entwicklung und Administration von Finance and Operations-Apps
+- name: Entwicklung und Administration von Finanz- und Betriebs-Apps
   items:
-    - name: Entwicklung und Administration von Finance and Operations-Apps
+    - name: Entwicklung und Administration von Finanz- und Betriebs-Apps
       items:
         - name: Finance and Operations-Anwendungsdokumentation
           href: ../fin-ops/index.md
-        - name: Entwicklung und Administration von Finance and Operations-Apps
+        - name: Entwicklung und Administration von Finanz- und Betriebs-Apps
           href: index.md
         - name: Neuerungen oder Änderungen
           items:
@@ -18,11 +18,9 @@
                   href: get-started/whats-new-platform-updates-10-0-26.md
                 - name: Plattformupdates für Version 10.0.25 (April 2022)
                   href: get-started/whats-new-platform-updates-10-0-25.md
-                - name: "Plattformupdates für Version 10.0.24 (Februar\_2022)"
-                  href: get-started/whats-new-platform-updates-10-0-24.md
             - name: Entfernte oder veraltete Funktionen
               items:
-                - name: Entfernte oder veraltete Funktionen auf der Startseite
+                - name: "Entfernte oder veraltete Funktionen\_– Startseite"
                   href: ../fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
                 - name: Entfernte oder veraltete Plattformfunktionen
                   href: get-started/removed-deprecated-features-platform-updates.md
@@ -396,6 +394,8 @@
                       href: deployment/onprem-SSRSHA.md
                     - name: Proxys für lokale Umgebungen konfigurieren
                       href: deployment/onprem-reverseproxy.md
+                    - name: Netzwerkdruckergeräte in lokalen Umgebungen installieren
+                      href: analytics/install-network-printer-onprem.md
                     - name: Lokale Diagnosen
                       href: deployment/on-premises-diagnostics.md
                     - name: Konfiguration für lokale Notfallwiederherstellung
@@ -470,7 +470,7 @@
                   href: help/contributor-guide.md
             - name: Überlegungen zur Bereitstellung
               items:
-                - name: Souveräne und lokale Cloud-Bereitstellungsoptionen bei Dynamics 365 Finance und Dynamics 365 Supply Chain Management
+                - name: "Souveräne und lokale Cloud-Bereitstellungsoptionen bei Dynamics\_365 Finance und Dynamics 365 Supply Chain Management"
                   href: deployment/deployment-options-geo.md
                 - name: Finance und Supply Chain Management in der US-amerikanischen Government Community Cloud (GCC)
                   href: deployment/us-gcc-deployment.md
@@ -494,9 +494,11 @@
                   href: dev-tools/access-instances.md
                 - name: One-Box-Entwicklungsumgebungen konfigurieren
                   href: dev-tools/configure-developer-vm.md
-                - name: 'Häufig gestellte Fragen zu Entwicklungs- und Build-VMs, die keinen Administratorzugriff ermöglichen'
+                - name: 'Häufig gestellte Fragen zu Entwicklungs- und Build-VMs, die keinen Administrator\*innenzugriff ermöglichen'
                   href: sysadmin/VMs-no-admin-access.md
-                - name: Umbenennen lokaler Umgebungen für den Zugriff Azure DevOps
+                - name: Herunterladbare VHD für erste Verwendung einrichten
+                  href: dev-tools/vhd-setup.md
+                - name: Lokale Umgebungen für den Zugriff auf Azure DevOps umbenennen
                   href: migration-upgrade/vso-machine-renaming.md
                 - name: Entwicklungssystemanforderungen
                   href: dev-tools/development-system-requirements.md
@@ -1028,6 +1030,8 @@
                   href: lifecycle-services/use-translation-service-tm.md
                 - name: Azure DevOps-Erweiterung (öffentliche Vorschauversion)
                   href: lifecycle-services/dts-devops-extension.md
+                - name: Tutorial zur Azure DevOps-Erweiterung (öffentliche Vorschauversion)
+                  href: lifecycle-services/dts-ado-tutorial.md
         - name: Microsoft Power Platform-Integration
           items:
             - name: Übersicht
@@ -1506,6 +1510,8 @@
               href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
             - name: Regression Suite Automation Tool (RSAT) mit paralleler Ausführung ausführen
               href: perf-test/rsat/rsat-parallel-execution.md
+            - name: RSAT in Azure DevOps-Pipelines einbinden
+              href: perf-test/rsat/rsat-devops-extension.md
             - name: Problembehandlung
               href: perf-test/rsat/rsat-troubleshooting.md
         - name: Lösungen mithilfe von Lifecycle Services freigeben
@@ -1990,7 +1996,7 @@
                   href: user-interface/task-recorder-training-docs.md
     - name: Dynamics 365 Supply Chain Management
       href: ../../supply-chain/index.md
-    - name: Dynamics 365 Finance
+    - name: "Dynamics\_365 Finance"
       href: ../../finance/index.md
     - name: Dynamics 365 Commerce
       href: ../../commerce/index.md
