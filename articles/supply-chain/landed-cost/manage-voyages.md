@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 50b6f306da1d32b1fd98da68bd997de1f1c23ffb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 996a8b62b59dd27691a1eaa5ed619f94e899e8cf
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570945"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570423"
 ---
 # <a name="manage-voyages"></a>Fahrten verwalten
 
@@ -66,9 +66,9 @@ Die folgende Tabelle beschreibt die Aktionen, die auf der Registerkarte **Verwal
 | Unterwegs | Aktualisieren Sie das Feld **Fahrtstatus** auf den Status in Zustellung, der auf der Seite **[Parameter für Gesamttransportkosten](landed-cost-parameters.md)** festgelegt ist. Für diesen Vorgang gibt es keine weitere Logik. Eine Fahrt kann auch automatisch auf den In-Transit-Status aktualisiert werden, basierend auf den Einstellungen im [Tracking-Control-Center](delivery-information-setup.md).
 | Bereit für die Nachkalkulation | Aktualisieren Sie das Feld **Fahrtstatus** auf den Status „bereit für die Kalkulation“, der auf der Seite **[Gesamttransportkosten-Parameter](landed-cost-parameters.md)** festgelegt ist. Eine Fahrt kann kalkuliert werden, wenn alle Rechnungen bearbeitet wurden (sowohl Lagerrechnungen als auch Fahrtkostenrechnungen) und die Waren eingegangen sind. Wenn die geschätzten Kosten, die mit einer Fahrt verbunden sind, nicht kalkuliert wurden, tritt ein Fehler auf, wenn Sie versuchen, die Kalkulation einer Fahrt zu bearbeiten. |
 | Mit Kosten | Bereinigen Sie alle Unregelmäßigkeiten in der Kalkulation, nachdem eine Rechnung für alle Einkaufsbestellungen und Fahrten vorliegt. Wenn Sie diese Schaltfläche wählen, erscheint die Dialogbox **Fahrt aktualisieren - kalkuliert**. Dort können Sie auswählen, dass zum Standard-Finanzdatum gebucht werden soll oder ein Buchungsdatum angeben und dann die Aktion ausführen. Sie können die Aktion so oft wiederholen, wie Sie wollen. Sie können auch die Dialogbox **Fahrt aktualisieren - kalkuliert** verwenden, um einen Zeitplan für die Ausführung der Aktion als periodische Aufgabe (Batch-Job) einzurichten. Wir empfehlen Ihnen, die Aktion regelmäßig auszuführen, indem Sie sie als Batch-Job festlegen. |
-| Zugangsliste buchen | Buchen Sie eine Eingangsliste für alle Zeilen der Einkaufsbestellung in der Fahrt. Bei Fahrten mit mehreren Firmen wird für jede Firma ein neuer Dialog zum Buchen einer Bonliste geöffnet und muss in jeder juristischen Entität bearbeitet werden. |
-| Produktzugang buchen | Buchen Sie einen Wareneingang für alle Zeilen der Einkaufsbestellung in der Fahrt. Der Wareneingangsprozess für die Bestellzeilen, die mit einer Fahrt verbunden sind, wird nur verwendet, wenn die Waren **nicht** durch die Waren in Zustellung gehen. Wenn die Waren die Waren-in-Zustellung-Verarbeitung durchlaufen, erhalten Sie einen Fehler, wenn Sie versuchen, den Wareneingang für eine Einkaufsbestellung zu buchen. Wenn Fahrten mit mehreren Firmen verwendet werden, wird für jede Firma ein neues Dialogfeld für die Buchung des Lieferscheins geöffnet. |
-| Rechnung buchen | Buchen Sie eine Rechnung für alle Zeilen der Einkaufsbestellung in der Fahrt. Wenn die Waren auf der Fahrt eine Waren in Zustellung durchlaufen, werden die Zeilen der Einkaufsbestellung in Rechnung gestellt, bevor der Empfangsprozess abgeschlossen ist. Wenn die ursprüngliche Bestellung fakturiert wird, werden die Waren in Zustellung erstellt, die mit den ursprünglichen Einkaufsbestellungen verbunden sind. Diese Aufträge können dann vom Lagerort entgegengenommen werden. Bei Sendungen mit mehreren Firmen wird für jede Firma ein neues Dialogfeld für die Rechnungsbuchung geöffnet. |
+| Zugangsliste buchen | Buchen Sie eine Eingangsliste für alle Zeilen der Einkaufsbestellung in der Fahrt.  |
+| Produktzugang buchen | Buchen Sie einen Wareneingang für alle Zeilen der Einkaufsbestellung in der Fahrt. Der Wareneingangsprozess für die Bestellzeilen, die mit einer Fahrt verbunden sind, wird nur verwendet, wenn die Waren **nicht** durch die Waren in Zustellung gehen. Wenn die Waren die Waren-in-Zustellung-Verarbeitung durchlaufen, erhalten Sie einen Fehler, wenn Sie versuchen, den Wareneingang für eine Einkaufsbestellung zu buchen.  |
+| Rechnung buchen | Buchen Sie eine Rechnung für alle Zeilen der Einkaufsbestellung in der Fahrt. Wenn die Waren auf der Fahrt eine Waren in Zustellung durchlaufen, werden die Zeilen der Einkaufsbestellung in Rechnung gestellt, bevor der Empfangsprozess abgeschlossen ist. Wenn die ursprüngliche Bestellung fakturiert wird, werden die Waren in Zustellung erstellt, die mit den ursprünglichen Einkaufsbestellungen verbunden sind. Diese Aufträge können dann vom Lagerort entgegengenommen werden.  |
 | Umlagerungsauftrag versenden | Buchen Sie eine Umlagerungsauftrags-Fahrt für alle Transportauftragszeilen in der Fahrt. Wenn diese Schaltfläche ausgewählt ist, stehen nur Umlagerungsaufträge zur Aktualisierung zur Verfügung. |
 | Umlagerungsauftrag empfangen | Buchen Sie einen Transportauftragseingang für alle Transportauftragszeilen in der Fahrt. |
 | Waren in Zustellung empfangen | Empfangen Sie alle Transportauftragszeilen, die sich in der Fahrt in Zustellung befinden. Diese Schaltfläche ist eine von drei Optionen, die für den Empfang von Waren in Zustellung auf einer Fahrt zur Verfügung stehen. (Die anderen beiden Optionen sind die Schaltfläche **Wareneingangserfassung erstellen**, die später in dieser Tabelle beschrieben wird, und die Warehouse Management Mobile App). Diese Option ist die einfachste und verarbeitet die Waren in Zustellung aus dem Lagerort in Zustellung in das endgültige Ziellager. Wenn Sie mehr Kontrolle über den Prozess haben möchten, verwenden Sie die Wareneingangserfassung oder ein mobiles Gerät, um den Eingang der Waren zu verarbeiten. |
@@ -84,7 +84,7 @@ Die folgende Tabelle beschreibt die Schaltflächen, die auf der Registerkarte **
 
 | Schaltfläche | Beschreibung |
 |---|---|
-| Zugangsliste | Öffnen Sie eine Liste der Produkteingänge für alle Zeilen der Einkaufsbestellung in der Fahrt. Wenn Fahrten mit mehreren Firmen verwendet werden, wird für jede Firma eine neue Wareneingangsliste geöffnet. Wenn noch keine Wareneingangslisten bearbeitet wurden, ist diese Schaltfläche nicht verfügbar. |
+| Zugangsliste | Öffnen Sie eine Liste der Produkteingänge für alle Zeilen der Einkaufsbestellung in der Fahrt.  Wenn noch keine Wareneingangslisten bearbeitet wurden, ist diese Schaltfläche nicht verfügbar. |
 | Produktzugang | Öffnen Sie den Produkteingangsdatensatz für die Zeilen der Einkaufsbestellung, die mit der Fahrt verbunden sind, wenn dieser Datensatz verwendet wird. Wenn noch keine Wareneingänge gebucht wurden, ist diese Schaltfläche nicht verfügbar. Der Wareneingangsprozess wird nicht verwendet, wenn Sie die Waren in Zustellung verwenden. |
 | Wareneingang | Öffnen Sie die Wareneingangserfassung, wenn sie verwendet wird. |
 | Nachverfolgung | Öffnen Sie die Seite **Eingangsverfolgung**, auf der Sie das erwartete Ankunftsdatum von Waren in einem Transportcontainer und einer Fahrt aktualisieren können und anschließend die erwarteten Liefertermine von Einkaufsbestellungen aktualisieren können. |

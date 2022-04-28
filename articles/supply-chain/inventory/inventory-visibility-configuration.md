@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: adab5ee3f626390355f4bab1227efd5fe58c2fcf
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: a2f7929026f41e921b71bc5a899810695c859902
+ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8524520"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547787"
 ---
 # <a name="configure-inventory-visibility"></a>Bestandstransparenz konfigurieren
 
@@ -51,9 +51,10 @@ Das Bestandsanzeige-Add-In fügt Ihrer Power Apps-Installation mehrere neue Funk
 
 | Name der Funktionsverwaltung | Description |
 |---|---|
-| OnHandReservation | Mit dieser Funktion können Sie mithilfe von Inventory Visibility Reservierungen erstellen, Reservierungen verbrauchen und/oder bestimmte Bestandsmengen aufheben. Weitere Informationen finden Sie unter [Reservierungen in Inventory Visibility](inventory-visibility-reservations.md). |
-| OnHandMostSpecificBackgroundService | Diese Funktion bietet eine Bestandsübersicht für Produkte zusammen mit allen Dimensionen. Die Bestandsübersicht wird regelmäßig von der Bestandsanzeige synchronisiert. Weitere Informationen finden Sie unter [Bestandsübersicht](inventory-visibility-power-platform.md#inventory-summary). |
-| OnhandChangeSchedule | Die Funktion aktiviert die Funktionen Lagerbestandsänderung und Available to Promise (ATP) (optional). Weitere Informationen finden Sie unter [Inventory Visibility Lagerbestand Änderungspläne und verfügbar zu versprechen](inventory-visibility-available-to-promise.md). |
+| *OnHandReservation* | Mit dieser Funktion können Sie mithilfe von Inventory Visibility Reservierungen erstellen, Reservierungen verbrauchen und/oder bestimmte Bestandsmengen aufheben. Weitere Informationen finden Sie unter [Reservierungen in Inventory Visibility](inventory-visibility-reservations.md). |
+| *OnHandMostSpecificBackgroundService* | Diese Funktion bietet eine Bestandsübersicht für Produkte zusammen mit allen Dimensionen. Die Bestandsübersicht wird regelmäßig von der Bestandsanzeige synchronisiert. Weitere Informationen finden Sie unter [Bestandsübersicht](inventory-visibility-power-platform.md#inventory-summary). |
+| *OnhandChangeSchedule* | Die optionale Funktion aktiviert die Funktionen Lagerbestandsänderung und Available to Promise (ATP). Weitere Informationen finden Sie unter [Inventory Visibility: verfügbarer Änderungszeitplan und verfügbar für Zusage](inventory-visibility-available-to-promise.md). |
+| *Lagerortartikel in Bestandsanzeige aktivieren* | Diese optionale Funktion ermöglicht es Inventory Visibility, Artikel zu unterstützen, die für erweiterte Lagerprozesse (WHS-Artikel) aktiviert sind. Weitere Informationen finden Sie unter [Inventory Visibility-Unterstützung für WHS-Artikel](inventory-visibility-whs-support.md). |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Finden Sie den Dienst-Endpunkt
 
@@ -61,7 +62,7 @@ Wenn Sie den richtigen Dienst-Endpunkt für Inventory Visibility nicht kennen, �
 
 ## <a name="data-source-configuration"></a>Konfiguration der Datenquelle
 
-Jede Datenquelle steht für ein System, aus dem Ihre Daten stammen. Beispiele für Datenquellennamen sind `fno` (was für „Dynamics 365 Finance und Vorgänge Apps“ steht) und `pos` (was für „Point of Sale“ steht). Standardmäßig ist das Supply Chain Management als Standard-Datenquelle (`fno`) in Inventory Visibility festgelegt.
+Jede Datenquelle steht für ein System, aus dem Ihre Daten stammen. Beispiele für Datenquellennamen sind `fno` (was für „Finanz- und Betriebs-Apps von Dynamics 365“ steht) und `pos` (was für „Point-of-Sale“ steht). Standardmäßig ist das Supply Chain Management als Standard-Datenquelle (`fno`) in Inventory Visibility festgelegt.
 
 > [!NOTE]
 > Die Datenquelle `fno` ist für das Supply Chain Management reserviert. Wenn Ihr Inventory Visibility-Add-In in eine Supply Chain Management Umgebung integriert ist, empfehlen wir Ihnen, keine Konfigurationen zu löschen, die sich auf `fno` in der Datenquelle beziehen.

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9ee6229937ea27adf231dcd1c9921878e53bd981
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: 9eb8a135d2415c867c746a1c40a80cdb84819c0e
+ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8524492"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547900"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Übersicht über das Bestandsanzeige-Add-In
 
@@ -63,7 +63,7 @@ Die ATP Funktion lässt sich leicht in Ihren täglichen Auftragsabwicklungsproze
 
 ### <a name="compatibility-with-advanced-warehouse-management-items"></a>Kompatibilität mit Elementen der erweiterten Lagerverwaltung
 
-Microsoft strebt eine Out-of-Box-Integration mit der erweiterten Lagerverwaltung (WHS) an, damit auch WHS-Kunden in den Genuss der Vorteile des Dienstes Inventory Visibility kommen. In der Version 2022 Wave 1 (öffentliche Vorschau im März) unterstützt der Bestandsservice WHS-Abfragen zum Lagerbestand und ATP. Die Funktion der weichen Reservierung und Zuweisung wird für WHS-Kunden in der nächsten Welle unterstützt. <!-- KFM: Add this link when target is published: For more information, see [Inventory Visibility support for WHS items](inventory-visibility-whs-support.md). -->
+Microsoft strebt eine Out-of-Box-Integration mit der erweiterten Lagerverwaltung (WHS) an, damit auch WHS-Kunden in den Genuss der Vorteile des Dienstes Inventory Visibility kommen. In der Version 2022 Wave 1 (öffentliche Vorschau im März) unterstützt der Bestandsservice WHS-Abfragen zum Lagerbestand und ATP. Die Funktion der weichen Reservierung und Zuweisung wird für WHS-Kunden in der nächsten Welle unterstützt. Weitere Informationen finden Sie unter [Inventory Visibility-Unterstützung für WHS-Artikel](inventory-visibility-whs-support.md).
 
 ## <a name="licensing"></a>Lizenzierung
 

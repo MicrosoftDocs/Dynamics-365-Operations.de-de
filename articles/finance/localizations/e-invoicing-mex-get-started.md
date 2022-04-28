@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f512a6208bc85cd5796ce9515d2bc440f92ea79f
-ms.sourcegitcommit: 5033d42a2aac852916d726e40bd98a164d1a837d
+ms.openlocfilehash: 6fc8a9eaf6c6e4c82719e7c1ebccd4272548e73f
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "7986357"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565998"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Erste Schritte mit der elektronischen Rechnungsstellung für Mexiko
 
@@ -141,7 +141,7 @@ Um eine CFDI-Rechnungsstornierung zu übermitteln, sind die Funktionseinrichtung
 1. Wählen Sie auf der Seite **Einrichtung der Funktionsversion** auf der Registerkarte **Variablen** den Variablennamen **DigitalSignatureXSLT** aus.
 2. Geben Sie im Feld **Werte** Folgendes ein: {„containerUrl“:„https://&lt;AccountStorageName&gt;.blob.core.windows.net/&lt;ContainerName&gt;“,„path“:„&lt;RelativePath&gt;“}
    
-    wobei gilt: <RelativePath> = Ordner\\Ordner\\Dateiname mit doppelten Backslashes muss ContainerName den Container bezeichnen, der für den Dienst verwendet wird.
+    wobei gilt: \<RelativePath\> = Ordner\\Ordner\\Dateiname mit doppelten Backslashes muss ContainerName den Container bezeichnen, der für den Dienst verwendet wird.
    
     Ein Beispiel für die Variable wäre:
     

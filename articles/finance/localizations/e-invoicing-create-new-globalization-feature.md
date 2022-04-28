@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 197a5b983b307758425b1acc1f354d0a8bfbf8a1
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 94038b0eb412632c348081bbf467f44310d9e955
+ms.sourcegitcommit: 6109fc2fe5f407363bb6f240d64b7214657f5914
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371696"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "8603024"
 ---
 # <a name="create-a-globalization-feature"></a>Erstellen Sie eine Globalisierungsfunktion
 
@@ -47,7 +47,7 @@ Um eine Funktion zur elektronischen Rechnungsstellung zu erstellen, befolgen Sie
 8. Suchen Sie im Raster **Konfigurationen** nach den Formatkonfigurationen, die für die Pipeline zur Verarbeitung benötigt werden (z.B. um elektronische Rechnungsdateien zu generieren oder Antworten von externen Webdiensten zu verarbeiten), und wählen Sie diese aus.
 9. Wählen Sie **OK** aus. Sie können die Konfigurationen jetzt in Aktionen der Verarbeitungs Pipeline verwenden. Weitere Informationen finden Sie unter [Arbeiten mit Konfigurationen](e-invoicing-work-configurations.md).
 10. Um eine Einrichtung für die Funktion Elektronische Rechnungsstellung hinzuzufügen, erstellen Sie sie auf der Registerkarte **Einrichtungen** der Seite **Neue Funktion**. Weitere Informationen finden Sie unter [Arbeiten mit Funktionen](e-invoicing-feature-setup.md).
-11. Schließen Sie die Einrichtung ab und stellen Sie die Funktion für die elektronische Rechnungsstellung in der Umgebung bereit. Weitere Informationen finden Sie unter [Eine Funktion zur Globalisierung vervollständigen, veröffentlichen und bereitstellen](e-invoicing-complete-publish-deploy-globalization-feature).
+11. Schließen Sie die Einrichtung ab und stellen Sie die Funktion für die elektronische Rechnungsstellung in der Umgebung bereit. Weitere Informationen finden Sie unter [Eine Funktion zur Globalisierung vervollständigen, veröffentlichen und bereitstellen](e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ### <a name="create-file-format-configurations-that-are-derived-from-the-existing-invoice-model"></a>Erstellen Sie Dateiformatkonfigurationen, die von dem bestehenden Rechnungsmodell abgeleitet sind
 
@@ -91,4 +91,4 @@ Die neuen Dateiformatkonfigurationen müssen für die Microsoft Domäne freigege
     - Überprüfen Sie die Konfigurationen, falls Sie die ER-Formate und deren Bindung mit Formatzuordnungen für die Funktion Version anpassen müssen.
     - Überprüfen Sie die Einrichtung, falls Sie die Registerkarte **Aktionen**, **Anwendbarkeitsregeln** oder **Variablen** für die Funktion anpassen müssen.
 
-9. Schließen Sie die Einrichtung ab und stellen Sie die Funktion für die elektronische Rechnungsstellung in der Umgebung bereit. Weitere Informationen finden Sie unter [Eine Funktion zur Globalisierung vervollständigen, veröffentlichen und bereitstellen](e-invoicing-complete-publish-deploy-globalization-feature).
+9. Schließen Sie die Einrichtung ab und stellen Sie die Funktion für die elektronische Rechnungsstellung in der Umgebung bereit. Weitere Informationen finden Sie unter [Eine Funktion zur Globalisierung vervollständigen, veröffentlichen und bereitstellen](e-invoicing-complete-publish-deploy-globalization-feature.md).

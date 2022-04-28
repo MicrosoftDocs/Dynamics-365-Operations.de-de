@@ -15,18 +15,17 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-02-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 4fb89f4b56ce8189482bf1a86582ef7e3684b15a
-ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
+ms.openlocfilehash: c1bedf1184b45741102000fa68c8d662c7383301
+ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "8392962"
+ms.lasthandoff: 04/16/2022
+ms.locfileid: "8612354"
 ---
 # <a name="design-a-new-er-solution-to-print-zpl-labels"></a>Entwerfen einer neuen ER-Lösung zum Drucken von ZPL-Labels
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 In diesem Thema wird erläutert, wie ein Benutzer in der Rolle Systemadministrator, Entwickler für elektronische Berichterstellung oder Funktionsberater für elektronische Berichterstellung die Parameter des [Frameworks für elektronische Berichterstellung (ER)](general-electronic-reporting.md) konfigurieren, die erforderlichen ER [Konfigurationen](general-electronic-reporting.md#Configuration) einer neuen ER-Lösung entwerfen kann, um auf die Daten des Lagerortverwaltungssystems zuzugreifen und angepasste Lagerort-Etiketten im Format Zebra Programming Language (ZPL) II zu erzeugen. Diese Schritte können im Unternehmen **USRT** ausgeführt werden.
 
@@ -69,7 +68,7 @@ Sie können eine bearbeitbare Version des konfigurierten Datenmodells auf der Se
 
 ## <a name="design-a-model-mapping-for-the-configured-data-model"></a>Entwerfen einer Modellzuordnung für das konfigurierte Datenmodell
 
-Als Benutzer in der Rolle Electronic Reporting Developer müssen Sie eine neue ER-Konfiguration erstellen, die eine [Modellzuordnung](er-overview-components.md#model-mapping-component) Komponente für das Lager-Datenmodell enthält. Diese Komponente implementiert das konfigurierte Datenmodell für Dynamics 365 Finance und ist spezifisch für diese App. Sie müssen es so konfigurieren, dass die Anwendungsobjekte angegeben werden, die verwendet werden, um das konfigurierte Datenmodell zur Laufzeit mit Anwendungsdaten zu füllen. Um diese Aufgabe abzuschließen, müssen Sie verstehen, wie die Datenstruktur der des Geschäftsbereichs Lagerortverwaltung in Finance implementiert ist.
+Als Benutzer in der Rolle Electronic Reporting Developer müssen Sie eine neue ER-Konfiguration erstellen, die eine [Modellzuordnung](er-overview-components.md#model-mapping-component) Komponente für das Lager-Datenmodell enthält. Diese Komponente implementiert das konfigurierte Datenmodell für Microsoft Dynamics 365 Finance und ist spezifisch für diese App. Sie müssen es so konfigurieren, dass die Anwendungsobjekte angegeben werden, die verwendet werden, um das konfigurierte Datenmodell zur Laufzeit mit Anwendungsdaten zu füllen. Um diese Aufgabe abzuschließen, müssen Sie verstehen, wie die Datenstruktur der des Geschäftsbereichs Lagerortverwaltung in Finance implementiert ist.
 
 ### <a name="import-a-model-mapping-configuration"></a>Importieren Sie eine Konfiguration für die Modellzuordnung
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 2b39eef816aaa383f0f8cbf1b2c308a6eafebd8f
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: 996988b1a4d59ae9ad7b4031e492824c0a6abc95
+ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8524436"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547872"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10026-may-2022"></a>Vorschau auf Dynamics 365 Supply Chain Management 10.0.26 (Mai 2022)
 
@@ -34,7 +34,7 @@ Die folgende Tabelle listet die Funktionen auf, die in dieser Version enthalten 
 
 | Funktionsbereich | Funktion | Mehr erfahren | Aktiviert von |
 |---|---|---|---|
-| Bestand und Logistik | [Inventory Visibility Abfrage des Lagerbestands zur Unterstützung von Elementen der erweiterten Lagerortverwaltung](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | Demnächst | Funktionsverwaltung:<br>*Lagerortartikel in Bestandsanzeige aktivieren* |
+| Bestand und Logistik | [Inventory Visibility Abfrage des Lagerbestands zur Unterstützung von Elementen der erweiterten Lagerortverwaltung](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [Inventory Visibility-Unterstützung für WHS-Artikel](../inventory/inventory-visibility-whs-support.md) | Funktionsverwaltung:<br>*Lagerortartikel in Bestandsanzeige aktivieren* |
 | Bestand und Logistik | [Für das Bestandssichtbarkeits-Add-In verfügbar](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [Inventory Visibility - Lagerbestände ändern und zusagen](../inventory/inventory-visibility-available-to-promise.md) | Aktiviert durch Servicekonfiguration |
 | Fertigung | [Elemente mit Artikelgewicht für die Produktionsausführungsoberfläche](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte](../production-control/production-floor-execution-use.md) | Funktionsverwaltung:<br>*(Vorschau) Bericht über Artikel mit Artikelgewicht über die Produktionsausführungsoberfläche* |
 | Fertigung | Registerkarte Meine Einzelvorgänge auf der Produktionsausführungsoberfläche <!-- KFM: Add link to release plan when available --> | [Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte](../production-control/production-floor-execution-use.md) | Funktionsverwaltung:<br>*Registerkarte Meine Einzelvorgänge auf der Produktionsausführungsoberfläche* |
@@ -51,7 +51,7 @@ Wenn Sie eine dieser Funktionen ein‑ oder ausschalten möchten, müssen Sie di
 | Beschaffung | Rückverfolgungsangaben für Intercompany-Auftrags- und -Bestellzeilen synchronisieren | Mit dieser Funktion können Sie steuern, ob die Dimensionen der Seriennummer und der Batch-Nummern bei Intercompany-Verkaufsaufträgen und Kaufaufträgen synchronisiert werden sollen. Es fügt neue Einstellungen auf den Registerkarten **Richtlinien für Bestellungen** und **Richtlinien für Verkaufsaufträge** der Einrichtungsseite **Intercompany** für Kunden und Lieferanten hinzu. Außerdem werden die Namen einiger verwandter, nahe gelegener Einstellungen aktualisiert, um mehr Klarheit zu schaffen.<br><br>Wenn Sie eine erweiterte Lagerortverwaltung verwenden, beachten Sie bitte, dass diese Funktion Batch- und Seriennummern nur dann synchronisiert, wenn diese Dimensionen in der Reservierungshierarchie des Zielortes über dem Ort liegen. |
 | Produktinformationsverwaltung | Produktattributwerte bereinigen | Diese Funktion fügt eine periodische Aufgabe namens **Produktattributwerte bereinigen** hinzu, die Datensätze von Produktattributwerten bereinigt, die nicht mehr mit einem Produkt über eine Produktkategorie verbunden sind. |
 | Lager- und Lagerortverwaltung | (Russland) Verhinderung von Diskrepanzen bei der Ausstellung von GTDs für Bestellungen, die WMS-aktivierte Artikel enthalten | Diese Funktion ist nur für die russische Lokalisierung vorgesehen. Es verhindert Diskrepanzen, die bei der Ausgabe russischer Zollanmeldungsnummern (GTDs) für Importbestellungen auftreten, die Artikel enthalten, die für die erweiterte Lagerhaltung (WMS) aktiviert sind. Der GTD-Ausgabeprozess ändert einige Werte der Bestandsdimensionen in den zugehörigen Bestandstransaktionen für Rechnungen, die in das angepasste Zoll-Journal aufgenommen wurden, was zu Diskrepanzen zwischen den Datensätzen für den Arbeitsauftrag und den Transaktionen für den Kauf führt. Wenn diese Funktion aktiviert ist, erzeugt der GTD-Ausgabeprozess Anpassungsarbeit, die solche Diskrepanzen beseitigt. |
-| Lagerortverwaltung | Erweiterter Parser für GS1-Barcodes | Diese Funktion fügt einen verbesserten Parser für GS1 Symboldaten hinzu. Der neue Parser implementiert den Algorithmus der GS1 Allgemeinen Spezifikation zum Parsen von GS1 Symbolen und bietet eine stärkere Datenvalidierung. |
+| Lagerortverwaltung | Erweiterter Parser für GS1-Barcodes | Diese Funktion fügt einen verbesserten Parser für GS1 Symboldaten hinzu. Der neue Parser implementiert den Algorithmus der GS1 Allgemeinen Spezifikation zum Parsen von GS1 Symbolen und bietet eine stärkere Datenvalidierung. Weitere Informationen finden Sie unter [GS1-Barcodes scannen](../warehousing/gs1-barcodes.md). |
 | Lagerortverwaltung | Neue Workbenchseiten zur Ladungsplanung | Fügt zwei neue Seiten für die Ladungsplanung hinzu: **Eingehende Ladung Planungswerkbank** und **Ausgehende Ladung Planungswerkbank**. |
 | Lagerortverwaltung | Warehouse Management-Anwendung – leere GTD | Diese Funktion ist nur für die russische Lokalisierung vorgesehen. Es lässt zu, dass Arbeitskräfte, die die Warehouse Management-Mobile-App verwenden, bei Bedarf russische Zollanmeldungsnummern (GTDs) leer lassen. Wenn die Dimension für die GTD-Verfolgung so festgelegt ist, dass Leerwerte zugelassen werden, akzeptiert das System Leerwerte für GTD für Vorgänge im Bestand, sofern ein Lagerbestand vorhanden ist. |
 
@@ -68,7 +68,7 @@ Wir haben die folgenden Hilfethemen kürzlich hinzugefügt oder erheblich aktual
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformupdates für Apps für Finanzen und Betrieb
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.26 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattform-Updates für Version 10.0.26 der Apps für Finance + Operations (Mai 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).<!-- KFM Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.26 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattform-Updates für Version 10.0.26 der Apps für Finance + Operations (Mai 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 

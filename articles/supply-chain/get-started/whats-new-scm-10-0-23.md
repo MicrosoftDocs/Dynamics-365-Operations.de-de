@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 83d19f92984c9f67242946aa8faf445d9d2bd881
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 876f5a5f8ebf77a65ba3aa6271a2957b7dc2cb96
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920199"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570477"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Was ist neu oder geändert in Dynamics 365 Supply Chain Management 10.0.23 (Januar 2022)
 
@@ -57,7 +57,7 @@ Wenn Sie eine dieser Funktionen ein- oder ausschalten möchten, müssen Sie dies
 | Beschaffung | Aktualisierungsverlauf für Bestellung bereinigen | Mit dieser Funktion können Sie temporäre historische Aufzeichnungen im Zusammenhang mit Bestellaktualisierungen bereinigen. Es fügt eine neue Schaltfläche namens **Update-Verlauf der Käufe bereinigen** zum Aktionsbereich auf der Seite **Alle Bestellungen** hinzu. Diese Funktion ist standardmäßig aktiviert. |
 | Produktionssteuerung | (Vorschau) Automatische Kommissionierung von für den Lagerort aktivierten Materialien für automatisch gebuchte Kommissionierlisten | Mit dieser Funktion können Sie Lagerungsdimensionen für automatisch gebuchte, abgeleitete und zurückgelieferte Kommissionierlistenerfassungen automatisch kommissionieren und abschließen. |
 | Produktionssteuerung | Validieren Sie das Verfallsdatum von Rohstoffen gegen das geplante Verbrauchsdatum | Diese Funktion ändert, wie das Verfallsdatum von Chargen validiert wird, wenn eine Charge von Rohmaterial zur Verwendung während der Produktion reserviert wird. Wenn diese Funktion aktiviert ist, wird das Ablaufdatum der Charge gegen das geplante Verbrauchsdatum (das Rohmaterialdatum) validiert, das in der Produktionsstücklistenposition oder Chargenauftragsformelposition festgelegt ist. Wenn diese Funktion deaktiviert ist, wird das Ablaufdatum der Charge mit dem geplanten Lieferdatum des Produktions- oder Chargenauftrags (wie zuvor) verglichen. |
-| Vertrieb und Marketing | Aktualisierungsverlauf für Verkauf basierend auf Alter bereinigen | Mit dieser Funktion können Sie das maximale Alter von Datensätzen festlegen, die aufbewahrt werden sollen, wenn die periodische Aufgabe **Bereinigung der Verkaufsaktualisierungshistorie** ausgeführt wird. Ältere Datensätze werden gelöscht. Dies ist nützlich, wenn Sie die regelmäßige Ausführung der Aufgabe festlegen, da das Alter immer relativ zum Ausführungsdatum der Aufgabe berechnet wird. Ohne diese Funktion können Sie nur ein bestimmtes Datum für die ältesten Aufzeichnungen festlegen, die aufbewahrt werden sollen. |
+| Vertrieb und Marketing | Aktualisierungsverlauf für Verkauf basierend auf Alter bereinigen | Mit dieser Funktion können Sie das maximale Alter von Datensätzen festlegen, die aufbewahrt werden sollen, wenn die periodische Aufgabe **Bereinigung der Verkaufsaktualisierungshistorie** ausgeführt wird. Ältere Datensätze werden gelöscht. Dies ist nützlich, wenn Sie die regelmäßige Ausführung der Aufgabe festlegen, da das Alter immer relativ zum Ausführungsdatum der Aufgabe berechnet wird. Ohne diese Funktion können Sie nur ein bestimmtes Datum für die ältesten Aufzeichnungen festlegen, die aufbewahrt werden sollen. Weitere Informationen finden Sie unter [Datenbereinigung der Verkaufshistorie planen](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Vertrieb und Marketing | Berichtsleistung von „Top 100“-Kunden verbessern | Diese Funktion verbessert die Leistung der **Top 100**-Kunden berichten, indem der Bericht immer für alle Kunden ausgeführt wird (was der beabsichtigte Verwendungszweck ist), anstatt benutzerdefinierte Abfragen zuzulassen. Wenn diese Funktion aktiviert ist, werden alle **Einzuschließende Aufzeichnungen**-Einstellungen sind im Berichtsdialog **Top 100** deaktiviert. |
 | Lagerortverwaltung | Unterstützung der Skalierungseinheit für die Freigabe ausgehender Aufträge für den Lagerort | Wenn diese Funktion aktiviert ist, können ausgehende Aufträge vom Hub direkt an die Skalierungseinheit freigegeben werden, von wo aus die Aufträge erfüllt werden sollen. |
 
@@ -79,9 +79,9 @@ Wir haben die folgenden Hilfethemen kürzlich hinzugefügt oder erheblich aktual
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformupdate für Finance and Operations Apps
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformupdates für Apps für Finanzen und Betrieb
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.23 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattformupdates für Version 10.0.23 von Finance and Operations-Apps (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.23 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattformupdates für Version 10.0.23 von Apps für Finanzen und Betrieb (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md).
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 

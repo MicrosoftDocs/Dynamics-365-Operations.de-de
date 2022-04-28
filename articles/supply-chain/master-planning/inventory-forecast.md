@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: abc827139c71f7942335cd2b7e2c7502f7fc1cfe
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 1446928c2f5fe606d1d0732764a2a4460643afcf
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469393"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8548166"
 ---
 # <a name="inventory-forecasts"></a>Bestandsprognosen
 
@@ -39,7 +39,7 @@ Es gibt auch andere Möglichkeiten, Prognosezeilen zu erstellen:
 - [Eine statistische Grundplanung generieren](generate-statistical-baseline-forecast.md).
 - [Verlaufsdaten für Bedarfsplanungen importieren](import-historical-data.md).
 - [Generieren einer Prognose mit dem Microsoft Azure Machine Learning-Webdienst](demand-forecasting-setup.md).
-- [Importieren von Bedarfs- oder Beschaffungsplanungzeilen mithilfe des Datenmanagement-Frameworks (Datenentitäten ForecastDemandForecastEntryStaging und ForecastSupplyForecastEntryStaging)](../../dev-itpro/data-entities/data-entities-data-packages.md).
+- [Importieren von Bedarfs- oder Beschaffungsplanungzeilen mithilfe des Datenmanagement-Frameworks (Datenentitäten ForecastDemandForecastEntryStaging und ForecastSupplyForecastEntryStaging)](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).
 
 Wie die Tabelle in Schritt 1 zeigt, gibt es verschiedene Möglichkeiten, auf die verwendeten Seiten zuzugreifen.
 

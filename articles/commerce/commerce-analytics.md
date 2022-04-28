@@ -8,12 +8,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2021-11-12
-ms.openlocfilehash: 7e3721421e15bc3e5937691cdbaee51e4d3cdd17
-ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
+ms.openlocfilehash: 63d6e5ef7e883578106495d5ec778bbd686ee92d
+ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8349742"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8550006"
 ---
 # <a name="commerce-analytics-preview"></a>Commerce-Analysen (Vorschauversion)
 
@@ -352,15 +352,20 @@ Die Seite **Impressionsbericht** enthält die folgenden Kennzahlen:
 
 ### <a name="enable-and-configure-commerce-analytics-preview"></a><a name="enableCommerceAnalytics"></a>Aktivieren und Konfigurieren von Commerce-Analysen (Vorschau)
 
-Um Commerce-Analysen (Vorschau) zu installieren, müssen Sie über Berechtigungen zum Erstellen von Ressourcen in einem Azure-Abonnement verfügen. Sie müssen auch über Berechtigungen zum Installieren von Add-Ins in LCS verfügen. 
+Um Commerce-Analysen (Vorschau) zu installieren, müssen Sie über Berechtigungen zum Erstellen von Ressourcen in einem Azure-Abonnement verfügen. Sie müssen auch über Berechtigungen zum Installieren von Add-Ins in LCS verfügen.
 
 Gehen Sie folgendermaßen vor, um Commerce Analytics (Vorschau) zu aktivieren und zu konfigurieren.
 
-1. [Aktivieren und konfigurieren Sie das Add-In Export to Data Lake](#enableExportToDataLake).
-1. [Installieren und konfigurieren Sie einen Azure Synapse Workspace](#configureAzureSynapse).
-1. [Hinzufügen von Geheimnissen zum Key Vault](#addSecrets).
-1. [Aktivieren und Konfigurieren von Commerce-Analysen (Vorschau)](#enableCommerceAnalyticsAddin)
-1. [Power BI-Vorlagen-App installieren](#powerbi).
+1. [Senden Sie das Vorschau-Eingangsformular für Commerce-Analysen (Vorschauversion)](#joinPreview)
+2. [Aktivieren und konfigurieren Sie das Add-In Export to Data Lake](#enableExportToDataLake).
+3. [Installieren und konfigurieren Sie einen Azure Synapse Workspace](#configureAzureSynapse).
+4. [Hinzufügen von Geheimnissen zum Key Vault](#addSecrets).
+5. [Aktivieren und Konfigurieren von Commerce-Analysen (Vorschau)](#enableCommerceAnalyticsAddin)
+6. [Power BI-Vorlagen-App installieren](#powerbi).
+
+### <a name="submit-the-preview-intake-form-for-commerce-analytics-preview"></a><a name="joinPreview"></a>Senden Sie das Vorschau-Eingangsformular für Commerce-Analysen (Vorschau).
+
+Senden Sie das [Vorschau-Eingangsformular für Commerce-Analysen (Vorschau)](https://forms.office.com/r/vW5VLJGXZ2). Nach der Bearbeitung wird eine Bestätigungs-E-Mail an die E-Mail-Adresse gesendet, die Sie im Formular angegeben haben.
 
 ### <a name="enable-and-configure-the-export-to-data-lake-add-in"></a><a name="enableExportToDataLake"></a>Aktivieren und konfigurieren Sie das Add-In Export to Data Lake
 

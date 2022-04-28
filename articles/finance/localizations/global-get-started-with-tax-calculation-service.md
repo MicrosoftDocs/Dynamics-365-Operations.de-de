@@ -2,7 +2,7 @@
 title: Erste Schritte mit der Steuerberechnung
 description: In diesem Thema wird erläutert, wie Steuerberechnungen eingerichtet werden.
 author: wangchen
-ms.date: 01/05/2022
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae2c20fe79c2f8fd8d102740441230ae443f16a3
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 61ee15901a091ee733b83c8cbaa5b84801fa8e5d
+ms.sourcegitcommit: 4afd1e0b325d27cd7c4e0d9a198400b038262ac7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952520"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "8558312"
 ---
 # <a name="get-started-with-tax-calculation"></a>Erste Schritte mit der Steuerberechnung
 
@@ -36,7 +36,7 @@ Die Einrichtung besteht aus drei Hauptschritten.
 
 ## <a name="high-level-design"></a>Allgemeines Design
 
-### <a name="runtime-design"></a>Design zur Laufzeit
+### <a name="runtime-design"></a><a name="runtime"></a> Design zur Laufzeit
 
 Die folgende Abbildung zeigt das allgemeine Laufzeit-Design einer Steuerberechnung. Da die Steuerberechnung in mehrere Dynamics 365-Apps integriert werden kann, verwendet die Abbildung die Integration mit Finance als Beispiel.
 
@@ -95,6 +95,14 @@ Bevor Sie die verbleibenden Vorgehensweisen in diesem Thema abschließen können
 - Die folgenden Funktionen müssen im Arbeitsbereich **Funktionsverwaltung** Ihrer bereitgestellten RCS Umgebung aktiviert sein.
 
     - Globalisierungsfunktionen
+
+- Die folgenden Rollen sollten den Benutzer\*innen in Ihrer RCS-Umgebung entsprechend zugewiesen werden:
+
+    - Entwickler für elektronische Berichterstellung
+    - Entwickler der Globalisierungsfunktion
+    - Steuermodul-Entwickler
+    - Funktionaler Berater für Steuermodul
+    - Steuerdienstentwickler
 
 ## <a name="set-up-tax-calculation-in-lcs"></a>Steuerberechnung in LCS einrichten
 
@@ -201,17 +209,23 @@ Die Schritte in diesem Abschnitt beziehen sich nicht auf eine bestimmte juristis
     | ---------------- | --------- | ------- | ------------ |
     | Verk.            | DEU       | DEU     | DEU_Domestic |
     | Verk.            | DEU       | FRA     | DEU_EU       |
-    | Verk.            | BEL       | BEL     | BEL_Domestic |
-    | Verk.            | BEL       | FRA     | BEL_EU       |
+    | Vertrieb            | BEL       | BEL     | BEL_Domestic |
+    | Vertrieb            | BEL       | FRA     | BEL_EU       |
+    
+    > [!NOTE]
+    > Wenn die Standard-Mehrwertsteuergruppe in Ihren steuerpflichtigen Belegzeilen korrekt ist, lassen Sie diese Matrix leer. Weitere Informationen finden Sie im Abschnitt [Design zur Laufzeit](#runtime) in diesem Thema.
 
 22. Wählen Sie auf der Registerkarte **Anwendbarkeit des Steuerkennzeichens** die Spalten aus, die zur Bestimmung des richtigen Steuerkennzeichens erforderlich sind, und wählen Sie dann **Hinzufügen**. Geben Sie Werte für jede Spalte ein oder wählen Sie sie aus. Das Feld **Element Steuerkennzeichen** wird die Ausgabe dieser Matrix sein. Wenn diese Registerkarte nicht konfiguriert ist, wird die Mehrwertsteuergruppe des Elements in der Zeile der Transaktion verwendet.
 
     Hier ist ein Beispiel.
 
-    | Artikelcode | Element-Steuerkennzeichen |
+    | Artikelcode | Artikelsteuergruppe |
     | --------- | -------------- |
     | D0001     | Vollständig           |
     | D0003     | Reduziert        |
+
+    > [!NOTE]
+    > Wenn die standardmäßige Artikel-Mehrwertsteuergruppe in Ihren steuerpflichtigen Belegzeilen korrekt ist, lassen Sie diese Matrix leer. Weitere Informationen finden Sie im Abschnitt [Design zur Laufzeit](#runtime) in diesem Thema.
 
     Weitere Informationen darüber, wie Steuerkennzeichen in der Steuerberechnung ermittelt werden, finden Sie unter [Ermittlungslogik für Mehrwertsteuergruppen und Artikelsteuerkennzeichen](global-sales-tax-group-determination.md).
 

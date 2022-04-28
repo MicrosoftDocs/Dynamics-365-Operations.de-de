@@ -2,19 +2,19 @@
 title: Allgemeine Problembehandlung
 description: Dieses Thema enthält allgemeine Informationen zur Problembehandlung für die duales Schreiben-Integration zwischen Apps für Finanzen und Betrieb und Dataverse.
 author: RamaKrishnamoorthy
-ms.date: 03/16/2020
+ms.date: 04/07/2020
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: f6f5b9f26990e2f4db9bf69040a6c4be31400b40
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8b5951f9f40179ca0bf31f5cccf1f05a0f968213
+ms.sourcegitcommit: 1843235766b6f8cf950a13a310e9f4f2f53c59a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062337"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8554598"
 ---
 # <a name="general-troubleshooting"></a>Allgemeine Problembehandlung
 
@@ -29,20 +29,31 @@ Dieses Thema enthält allgemeine Informationen zur Problembehandlung für die du
 
 ## <a name="enable-and-view-the-plug-in-trace-log-in-dataverse-to-view-error-details"></a><a id="enable-view-trace"></a>Aktivieren und Anzeigen des Plug-In-Überwachungsprotokolls in Dataverse, um Fehlerdetails anzuzeigen
 
+Ablaufverfolgungsprotokolle können bei der Behebung von Problemen mit der Dual-Write-Live-Synchronisierung zwischen Finance & Operations und Dataverse nützlich sein. Diese Protokolle können den Teams, die technischen und entwicklungsbezogenen Support für Dynamics 365 bereitstellen, spezifische Details liefern. In diesem Artikel wird beschrieben, wie Ablaufverfolgungsprotokolle aktiviert und angezeigt werden. Ablaufverfolgungsprotokolle werden auf der Seite „Dynamics 365-Einstellungen“ verwaltet und erfordern zum Ändern und Anzeigen Administrationsrechte. 
+
 **Erforderliche Rolle zum Aktivieren des Ablaufverfolgungsprotokolls und zum Anzeigen von Fehlern:** System Administrator
 
+### <a name="turn-on-the-trace-log"></a>Ablaufverfolgungsprotokoll aktivieren
 Um die Nachverfolgung einzuschalten, führen Sie diese Schritte aus.
 
-1. Melden Sie sich bei der Kundenbindungs-App an, öffnen Sie die Seite **Einstellungen** und dann unter **System**, wählen Sie **Verwaltung**.
-2. Wählen Sie auf der Seite **Verwaltung** die Option **Systemeinstellungen** aus.
-3. Auf der Registerkarte **Anpassung** wählen Sie in der Spalte **Plug-In und benutzerdefinierte Workflow-Aktivitätsverfolgung** **Alle** aus, um das Plug-Trace-Protokoll zu aktivieren. Wenn Sie Ablaufverfolgungsprotokolle nur protokollieren möchten, wenn Ausnahmen auftreten, können Sie stattdessen **Ausnahme** auswählen.
+1.  Melden Sie sich bei Dynamics 365 an, und wählen Sie in der oberen Navigationsleiste **Einstellungen** aus. Klicken Sie auf der Seite „Systeme“ auf **Verwaltung**.
+2.  Wählen Sie auf der Seite „Verwaltung“ die Option **Systemeinstellungen** aus.
+3.  Wählen Sie die Registerkarte **Anpassung** und „Plug-In“, und ändern Sie dann im Abschnitt für die angepasste Workflow-Aktivitätsverfolgung die Dropdown-Auswahl in **Alle**. So werden alle Aktivitäten nachverfolgt und umfassende Daten für die Teams bereitgestellt, die potenzielle Probleme überprüfen müssen.
 
+> [!NOTE]
+> Wenn Sie im Dropdown-Menü **Ausnahme** auswählen, erhalten Sie nur Ablaufverfolgungsinformationen, wenn Ausnahmen (Fehler) auftreten.
 
+Nach der Aktivierung werden die Plug-In-Ablaufverfolgungsprotokolle weiterhin erfasst, bis sie manuell deaktiviert werden. Kehren Sie dazu zu dieser Stelle zurück, und wählen Sie **Aus**.
+
+### <a name="view-the-trace-log"></a>Ablaufverfolgungsprotokoll anzeigen
 Um die Nachverfolgung anzuzeigen, führen Sie diese Schritte aus.
 
-1. Melden Sie sich bei der Kundenbindungs-App an, öffnen Sie die Seite **Einstellungen** und dann unter **Anpassung**, wählen Sie **Plug-In-Ablaufverfolgungsprotokoll**.
-2. Suchen Sie die Ablaufverfolgungsprotokolle, in denen die Spalte **Typname** auf **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin** festgelegt ist.
-3. Doppelklicken Sie auf ein Element, um das vollständige Protokoll anzuzeigen, und klicken Sie dann auf das Inforegister **Ausführung** und üerrprüfen Sie den Text **Nachrichtenblock**.
+1. Wählen Sie auf der Seite mit den Dynamics 365-Einstellungen in der oberen Navigationsleiste **Einstellungen** aus. 
+2. Wählen Sie im Abschnitt **Anpassungen** auf der Seite die Option **Plug-In-Ablaufverfolgungsprotokoll** aus.
+3. Sie können Einträge in der Liste der Ablaufverfolgungsprotokolle basierend auf Typname und/oder Meldungsname finden.
+4. Öffnen Sie den gewünschten Eintrag, um das vollständige Protokoll anzuzeigen. Der Nachrichtenblock im Abschnitt „Ausführung“ stellt verfügbare Informationen für das Plug-In bereit. Falls verfügbar, werden auch Ausnahmedetails bereitgestellt. 
+
+Sie können den Inhalt der Ablaufverfolgungsprotokolle kopieren und in eine andere Anwendung wie Notepad oder andere Tools einfügen, um Protokolle oder Textdateien anzuzeigen und den gesamten Inhalt einfacher darstellen zu können. 
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Debug-Modus aktivieren, um Probleme mit der Live-Synchronisation in Apps für Finanzen und Betrieb zu beheben
 
@@ -69,6 +80,34 @@ Duales Schreiben-Fehler, die ihren Ursprung in Dataverse haben, können in der F
 5. Öffnen Sie nun die Ereignisanzeige.
 6. Wählen Sie **Anwendungs- und Dienstprotokolle \> Microsoft \> Dynamics \> AX-DualWriteSync \> Operativ**.
 7. Überprüfen Sie die Liste der letzten Fehler.
+
+## <a name="dual-write-ui-landing-page-showing-blank"></a>Dual-Write-UI-Zielseite wird leer angezeigt
+Beim Öffnen der Dual-Write-Seite im Browser Microsoft Edge oder Google Chrome, wird die Startseite nicht geladen und Sie sehen eine leere Seite oder einen Fehler wie „Ein Fehler ist aufgetreten“.
+In den Entwicklungstools sehen Sie einen Fehler in den Konsolenprotokollen:
+
+>bundle.eed39124e62c58ef34d2.js:37 DOMException: Eigenschaft 'sessionStorage' von 'Window' konnte nicht gelesen werden: Zugriff für dieses Dokument verweigert. at t.storeInSessionStorage (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:16:136860 ) at new t (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:69:20103 ) at ci (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:44115 ) at Eo (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:58728 ) at jo (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:65191 ) at Nr (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:84692 ) at Or (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:85076 ) at Ss (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:91750 ) at vs (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:91130 ) at hs (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:90151 )
+
+Die Bedienoberfläche verwendet den „Sitzungsspeicher“ des Browsers, um einige Eigenschaftswerte zum Laden der Startseite zu speichern. Damit dies funktioniert, müssen Cookies von Drittanbietern im Browser für die Website zugelassen werden. Der Fehler weist darauf hin, dass die Bedienoberfläche nicht auf den Sitzungsspeicher zugreifen kann. Dieses Problem kann in zwei Szenarien auftreten:
+
+1.  Sie öffnen die Bedienoberfläche im Inkognito-Modus von Edge/Chrome, und Drittanbieter-Cookies im Inkognito-Modus werden blockiert.
+2.  Sie haben Drittanbieter-Cookies in Edge/Chrome vollständig blockiert.
+
+### <a name="mitigation"></a>Mitigation
+Cookies von Drittanbietern müssen in den Browsereinstellungen zugelassen werden.
+
+### <a name="google-chrome-browser"></a>Google Chrome-Browser
+1. Möglichkeit:
+1.  Gehen Sie zu den Einstellungen, indem Sie „chrome://settings/“ in die Adressleiste eingeben, und navigieren Sie dann zu „Datenschutz und Sicherheit -> Cookies und andere Websitedaten“.
+2.  Wählen Sie „Alle Cookies zulassen“ aus. Wenn Sie dies nicht möchten, entscheiden Sie sich für die zweite Option.
+
+2. Möglichkeit:
+1.  Gehen Sie zu den Einstellungen, indem Sie „chrome://settings/“ in die Adressleiste eingeben, und navigieren Sie dann zu „Datenschutz und Sicherheit -> Cookies und andere Websitedaten“.
+2.  Wenn „Cookies von Drittanbietern im Inkognitomodus blockieren“ oder „Drittanbieter-Cookies blockieren“ ausgewählt ist, gehen Sie zu „Websites, die Cookies immer verwenden dürfen“, und klicken Sie auf **Hinzufügen**. 
+3.  Fügen Sie den Namen der Website Ihrer Finanz- und Betriebs-Apps hinzu: https://<Ihre_FinOp_Instanz>.cloudax.dynamics.com. Stellen Sie sicher, dass Sie das Kontrollkästchen für „Alle Cookies, nur auf dieser Website“ aktivieren. 
+
+### <a name="microsoft-edge-browser"></a>Microsoft Edge-Browser
+1.  Navigieren Sie zu „Einstellungen -> Websiteberechtigungen -> Cookies und Websitedaten“.
+2.  Deaktivieren Sie „Cookies von Drittanbietern blockieren“.  
 
 ## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Lösen Sie die Verknüpfung und verknüpfen Sie eine andere Dataverse-Umgebung aus einer Finance und Operations App
 
@@ -97,14 +136,14 @@ Um die Formularoption **Information** wieder zu aktivieren, führen Sie die folg
 
 Das Support-Team muss möglicherweise Netzwerkspuren überprüfen, um einige Probleme zu beheben. Um eine Netzwerkspur zu erstellen, gehen Sie folgendermaßen vor:
 
-### <a name="chrome"></a>Chrome
+### <a name="google-chrome-browser"></a>Google Chrome-Browser
 
 1. Drücken Sie in der geöffneten Registerkarte **F12** oder wählen Sie **Entwickler-Tools**, um die Entwickler-Tools zu öffnen.
 2. Öffnen Sie die Registerkarte **Netzwerk** und geben Sie **integ** in das Filtertextfeld ein.
 3. Führen Sie Ihr Szenario aus und beobachten Sie, wie die Anfragen protokolliert werden.
 4. Klicken Sie mit der rechten Maustaste auf die Einträge und wählen Sie **Alle als HAR mit Inhalt speichern**.
 
-### <a name="microsoft-edge"></a>Microsoft Edge
+### <a name="microsoft-edge-browser"></a>Microsoft Edge-Browser
 
 1. Drücken Sie in der geöffneten Registerkarte **F12** oder wählen Sie **Entwickler-Tools**, um die Entwickler-Tools zu öffnen.
 2. Öffnen Sie die Registerkarte **Netzwerk**.

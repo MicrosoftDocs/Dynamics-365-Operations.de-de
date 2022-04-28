@@ -4,7 +4,8 @@ description: Dieses Thema liefert Informationen über die Konfiguration von SQL 
 author: PeterRFriis
 ms.date: 06/23/2017
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -14,18 +15,18 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 3853158afdab545dacda996c984b265eb8947db7f90faf80319841eb01c14910
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16a35a8dae50cc1bc949f33de87b2beab8b528b3
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726356"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565916"
 ---
 # <a name="configure-sql-server-reporting-services-for-on-premises-deployments"></a>SQL Server Reporting Services für lokale Bereitstellungen konfigurieren
 
 [!include [banner](../includes/banner.md)]
 
-Gehen Sie nach den Schritten in diesem Thema vor, um SQL Server Reporting Services (SSRS) für Ihre Microsoft Dynamics 365 Finance and Operations (On-Premises)-Bereitstellung zu konfigurieren.
+Gehen Sie nach den Schritten in diesem Thema vor, um SQL Server Reporting Services (SSRS) für Ihre Microsoft Dynamics 365 Finance + Operations (on-premises)-Bereitstellung zu konfigurieren.
 
 1. Öffnen Sie die Applikation Reporting Services-Konfigurations-Manager.
 2. Verwenden Sie den standardmäßigen **Servernamen**, das ist der Name der aktuellen Maschine, und die standardmäßige **Berichtsserverinstanz**, **MSSQLSERVER**.

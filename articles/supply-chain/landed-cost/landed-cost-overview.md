@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e4861c0e8b3680f3cd3229facf059b671a4fc765
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 90410585f314aa9f17f2c132afb6568307fb28ab
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983416"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570380"
 ---
 # <a name="landed-cost-module"></a>Modul Gesamttransportkosten
 
@@ -39,7 +39,7 @@ Gesamttransportkosten liefert genaue und zeitnahe Kalkulationen für die Gemeink
 
 ### <a name="voyages"></a>Seereisen
 
-Bei den kalkulierten Gesamttransportkosten ist eine Fahrt eine eindeutige Bewegung von einem ausgehenden Lagerplatz über eine festgelegte Anzahl von Zielen in einem festgelegten Zeitraum zu einem bestimmten eingehenden Lagerplatz. Kaufbestellungen und Auftragszeilen können entweder einem einzelnen Container oder mehreren Containern für eine Fahrt hinzugefügt werden, und die Kosten werden korrekt auf die Artikelzeile zurückgerechnet. Bestellungen und Bestellzeilen können auch über juristische Entitäten hinweg für eine einzelne Fahrt hinzugefügt werden.
+Bei den kalkulierten Gesamttransportkosten ist eine Fahrt eine eindeutige Bewegung von einem ausgehenden Lagerplatz über eine festgelegte Anzahl von Zielen in einem festgelegten Zeitraum zu einem bestimmten eingehenden Lagerplatz. Kaufbestellungen und Auftragszeilen können entweder einem einzelnen Container oder mehreren Containern für eine Fahrt hinzugefügt werden, und die Kosten werden korrekt auf die Artikelzeile zurückgerechnet. 
 
 ### <a name="item-ownership"></a>Eigentum an Artikeln
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 03ed2d52f44bd38910b01ffbd3767f750da2cbf8
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: f0f1830c9f667d617b8aae28e61a8e541b17c77f
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920572"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570324"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Was ist neu oder geändert in Dynamics 365 Supply Chain Management Version 10.0.19 (Juni 2021)
 
@@ -50,7 +50,7 @@ Die folgende Tabelle listet die Funktionsverbesserungen auf, die in dieser Versi
 
 | Modul | Funktion&nbsp;Name&nbsp;in Funktion&nbsp;Verwaltung | Mehr erfahren |
 |---|---|---|
-| Vertrieb und Marketing | Leistungsverbesserungen bei der Bereinigung des Verkaufsverlaufs | Die Bereinigung des Verkaufsverlaufs kann lange dauern, wenn sie in Umgebungen mit einem hohen Volumen an Verkaufsaktualisierungen nur selten ausgeführt wird. Um die Dauer zu verringern und die Zuverlässigkeit zu verbessern, teilt diese Funktion die Bereinigung in Stapel auf, die für eine begrenzte Dauer ausgeführt werden. Wenn möglich werden Datenbankfunktionen genutzt, um das Sperren zu minimieren und das Verbinden von Transaktionstabellen während der Bereinigung zu vermeiden. Weitere Informationen finden Sie unter [Leistungsverbesserungen bei der Bereinigung der Verkaufshistorie](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
+| Vertrieb und Marketing | Leistungsverbesserungen bei der Bereinigung des Verkaufsverlaufs | Die Bereinigung des Verkaufsverlaufs kann lange dauern, wenn sie in Umgebungen mit einem hohen Volumen an Verkaufsaktualisierungen nur selten ausgeführt wird. Um die Dauer zu verringern und die Zuverlässigkeit zu verbessern, teilt diese Funktion die Bereinigung in Stapel auf, die für eine begrenzte Dauer ausgeführt werden. Wenn möglich werden Datenbankfunktionen genutzt, um das Sperren zu minimieren und das Verbinden von Transaktionstabellen während der Bereinigung zu vermeiden. Weitere Informationen finden Sie unter [Datenbereinigung der Verkaufshistorie planen](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Vertrieb und Marketing | Angefordertes Wareneingangsdatum mit bestätigtem Datum bei Intercompany-Aufträgen aktualisieren | Mit dieser Funktion können Sie steuern, was mit den Feldwerten für Verkaufs- und Kaufdatum geschieht, wenn Sie die konzerninterne Direktlieferung verwenden. Sie können wählen, ob das System die angeforderten Daten aktualisiert oder die Aktualisierung überspringt. Wenn Sie die Aktualisierung überspringen, entsprechen die angeforderten Daten den Anforderungen des Kunden. Wenn Sie die Aktualisierung aktivieren, stellen die angeforderten Daten (bei Verwendung der Lieferterminsteuerung) zunächst nur das dar, was der Kunde angefordert hat. Kontrolle des Liefertermins, falls abweichend von *Keiner* wird außer Kraft setzen, was ursprünglich angefordert wurde. Sie können diese Option mit der neuen Option **Aktualisieren Sie das angeforderte Empfangsdatum mit dem bestätigten Datum** in den Einstellungen des konzerninternen Anbieters oder Kunden einstellen.<br><br>Wenn die Funktion deaktiviert ist, überschreibt das System das angeforderte Empfangsdatum für ursprüngliche Kundenaufträge basierend auf der Regel zur Kontrolle des Lieferdatums. Das angeforderte Versanddatum bleibt jedoch unverändert. |
 | Lagerortverwaltung | Mengen bei Freigabe an Lager auf nächste Verkaufseinheit abrunden | Diese Funktion fügt eine Option hinzu, mit der die Bestellmengen bei der Freigabe an das Lager eingeschränkt werden können. Wenn diese Option aktiviert ist, werden Bestellmengen auf die nächste ganze Verkaufseinheit abgerundet, und Bestellungen, die Mengen für weniger als eine Verkaufseinheit enthalten, werden zur Freigabe abgelehnt. |
 | Lagerortverwaltung | Organisationsweite Zyklusmethode „Arbeitserstellung planen“ | Bei Aktivierung dieser Funktion wird die Wellenmethode *Arbeitserstellung planen* so konfiguriert, dass sie für alle juristischen Personen parallel ausgeführt wird. Einige zusätzliche Einstellungen sind ebenfalls betroffen. Alle Details finden Sie unter [Planen der Arbeitserstellung während der Welle](../warehousing/configure-wave-schedule-work-creation.md). |
@@ -66,13 +66,13 @@ Wir haben die folgenden Hilfethemen kürzlich hinzugefügt oder erheblich aktual
 | Produktinformationsverwaltung | [Maßeinheit verwalten](../pim/tasks/manage-unit-measure.md)<br><br>[Berechnungen für Produktkonfigurationsmodelle](../pim/config-model-calculations.md) |
 | Produktionssteuerung | [Vereinheitlichte Nummernkreise für Einzelvorgangskennungen](../production-control/unified-job-ids.md) |
 | Transportverwaltung | [LTL-Klassen](../transportation/ltl-class.md)<br><br>[NMFC-Codes](../transportation/nmfc-codes.md) |
-| Lagerortverwaltung, Wellenerstellung und -verarbeitung | [Zykluserstellung und -verarbeitung](../warehousing/wave-processing.md)<br><br>[Lagerparameter für Wellenverarbeitung](../warehousing/wave-warehouse-parameters.md)<br><br>[Wellenvorlagen](../warehousing/wave-templates.md)<br><br>[Wellenzuteilung](../warehousing/wave-allocation-method.md)<br><br>[Arbeitserstellung während Welle planen](../warehousing/configure-wave-schedule-work-creation.md)<br><br>[Containerisierung](../warehousing/wave-containerization.md)<br><br>[Zyklusausführungsbenachrichtigungen](../warehousing/wave-execution-notifications.md) |
+| Lagerortverwaltung, Wellenerstellung und -verarbeitung | [Zykluserstellung und -verarbeitung](../warehousing/wave-processing.md)<br><br>[Lagerparameter für Wellenverarbeitung](../warehousing/wave-warehouse-parameters.md)<br><br>[Wellenvorlagen](../warehousing/wave-templates.md)<br><br>[Wellenzuteilung](../warehousing/wave-allocation-method.md)<br><br>[Arbeitserstellung während Welle planen](../warehousing/configure-wave-schedule-work-creation.md)<br><br>[Containerisierung](../warehousing/wave-containerization.md)<br><br>[Wellenausführungsbenachrichtigungen](../warehousing/wave-execution-notifications.md) |
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformupdate für Finance and Operations Apps
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformupdates für Apps für Finanzen und Betrieb
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.19 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattform-Updates für Version 10.0.19 von Finance and Operations Apps (Juni 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.19 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattform-Updates für Version 10.0.19 der Finanz- und Betriebs-Apps (Juni 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19.md).
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 

@@ -2,7 +2,7 @@
 title: Unterschied zwischen Sachkontoausgleich und Jahresendabschluss
 description: In diesem Thema finden Sie Informationen zu Verbesserungen, die sich auf Hauptbuchabrechnungen und den Jahresabschluss des Hauptbuchs auswirken.
 author: kweekley
-ms.date: 03/18/2022
+ms.date: 04/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: e18f77d73239de23000b5310d9342c6db95bc524
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 13d0a0a11a8f31e4ba647ccc23906f6b137051c2
+ms.sourcegitcommit: b96e0c70553bca9b3f5eb65105a52cb71d978a36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462351"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8553331"
 ---
 # <a name="awareness-between-ledger-settlement-and-year-end-close"></a>Unterschied zwischen Sachkontoausgleich und Jahresendabschluss
 
@@ -48,12 +48,16 @@ Um die neuen Erweiterungen zu unterstützen, wurden Änderungen an der Sachkonto
 
 Aufgrund der Änderungen in der Funktionalität und im Datenmodell ist es wichtig, dass Sie die folgenden Punkte berücksichtigen, bevor Sie die Funktion aktivieren:
 
+- Da nur abgerechnete Buchungen in die Eröffnungsbilanz übernommen werden, müssen Sie Buchungen aus dem aktuellen Geschäftsjahr abrechnen, die mit Buchungen des vorherigen Geschäftsjahres abgerechnet wurden. Die Buchungen müssen mit Buchungen innerhalb des laufenden Geschäftsjahres verrechnet werden. Dies kann durch eine Korrekturbuchung im laufenden Geschäftsjahr erfolgen. Die Anpassung macht die zusammengefassten Anfangssalden rückgängig und verrechnet sie mit der detaillierten Buchung, die zur Begleichung der Hauptbucheinträge im laufenden Jahr erforderlich sind. 
+
+  > [!IMPORTANT]
+  > Geschieht dies nicht, erhalten Sie den Fehler **Nicht mehr ausgeglichen**, wenn Sie den Jahresabschluss für das aktuelle Geschäftsjahr ausführen. Wenn es nicht möglich ist, die Sachkontobuchungen mit demselben Geschäftsjahr zu stornieren und neu abzurechnen, aktivieren Sie diese Funktion erst nach Abschluss des Jahresabschlusses. Aktivieren Sie die Funktion sofort nach Abschluss des Jahresabschlusses und bevor neue Sachkontobuchungen im nächsten Geschäftsjahr abgerechnet werden. 
+  
 - Alle Transaktionen, die für die Abrechnung markiert sind, aber noch nicht abgerechnet wurden, werden automatisch entmarkiert, wenn die Funktion aktiviert ist. Um Arbeitsverluste zu vermeiden, rechnen Sie alle markierten Transaktionen ab, bevor Sie die Funktion aktivieren.
 - Einige Organisationen führen den Jahresabschluss mehrfach für dasselbe Geschäftsjahr aus. Aktivieren Sie die Funktion nicht, wenn der Jahresabschluss bereits einmal ausgeführt wurde und für dasselbe Geschäftsjahr erneut ausgeführt werden soll. Die Funktion muss aktiviert werden, bevor Sie den ersten Jahresabschluss verarbeiten oder nachdem Sie den letzten Jahresabschluss für das Geschäftsjahr verarbeitet haben.
 
   Wenn Sie die Funktion aktivieren möchten, aber der Jahresabschluss bereits einmal ausgeführt wurde, müssen Sie den Jahresabschluss rückgängig machen, bevor Sie die Funktion aktivieren können.
 
-- Da die Abrechnung über mehrere Geschäftsjahre hinweg nicht mehr zulässig ist, empfehlen wir Ihnen, die Funktion zu aktivieren, bevor Sie mit dem Jahresabschluss beginnen. Um sicherzustellen, dass die Eröffnungssalden des nächsten Geschäftsjahres nicht durch frühere geschäftsjahresübergreifende Abrechnungen beeinflusst werden, sollte die Transaktion für den Eröffnungssaldo für das abzuschließende Geschäftsjahr abgerechnet werden.
 - Da die Abrechnung über Hauptkonten hinweg nicht mehr zulässig ist, passen Sie Ihren Kontenplan oder Ihre Prozesse nach Bedarf an, um sicherzustellen, dass die Sachkontoabrechnung über dasselbe Hauptkonto erfolgen kann.
 - Die Funktion kann nicht aktiviert werden, wenn der Jahresabschluss für den öffentlichen Sektor verwendet wird.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0c856bca32c3dee44469c098961d85b4d8cb70a6
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 65891e380f740f4a1fa404d57789a6f50506d3b5
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060416"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565627"
 ---
 # <a name="provision-human-resources"></a>Human Resources bereitstellen
 
@@ -40,6 +40,10 @@ Bevor Sie mit der Bereitstellung einer neuen Produktionsumgebung beginnen, müss
 
 ## <a name="provision-a-human-resources-trial-environment"></a>Bereitstellen einer Human Resources-Testumgebung
 
+>[!NOTE]
+> Ab April 2022 sind die Human Resources-Testumgebungen nicht mehr in der eigenständigen Anwendung verfügbar. Potenzielle Kunden, die daran interessiert sind, die Human Resources-Funktionen in Finanz- und Betriebs-Apps zu evaluieren, können dies mit der kostenlosen 30-Tage-Testversion zusammen mit den Demodaten tun. Dynamics 365 Finance wird die Human Resources-Funktionen beinhalten, die durch die Zusammenführung der eigenständigen Anwendung in die Infrastruktur von Finance eingebracht werden. Weitere Informationen finden Sie unter [Zusammenführung von HR-Angeboten bündelt Funktionen für Kunden](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers). Weitere Informationen zu den Testversionen von Dynamics 365 Finance finden Sie in der [Schritt-für-Schritt-Anleitung](/fin-ops/get-started/before-you-buy). 
+
+
 Bevor Sie Ihre erste Sandbox- oder Produktionsumgebung bereitstellen, möchten Sie möglicherweise eine [Human Resources Testumgebung](https://go.microsoft.com/fwlink/p/?LinkId=2115962) bereitstellen, um die Human Resources-Funktionalität zu validieren. Probeumgebung enthält fiktive Daten, die verwendet werden können, um das Programm in einem sicheren Verfahren zu untersuchen. Obwohl eine Probeumgebung dem Benutzer gehört, der sie angefordert hat, können andere Benutzer durch die Systemverwaltungserfahrung für Human Resources eingeladen werden. 
 
 Testumgebungen bieten die Möglichkeit, Personalwesenfunktionen für Personen zu bewerten, die noch keinen Zugriff auf eine Personalwesenumgebung haben. Wenn Sie eine Testumgebung bereitstellen und der authentifizierte Benutzer bereits Zugriff auf eine oder mehrere vorhandene Umgebungen des Personalwesens hat, wird der Benutzer an die vorhandene Umgebung oder Liste der Umgebungen umgeleitet.
@@ -58,7 +62,7 @@ Bevor Sie Ihre erste Human Resources-Umgebung erstellen, sollten Sie die Umgebun
 Überlegungen für weitere Umgebungen:
 
 - **Datenmigration**: Möglicherweise müssen Sie eine zusätzliche Umgebung für Datenmigrationsaktivitäten in Betracht ziehen, damit Ihre Sandboxumgebung während des gesamten Projekts zu Testzwecken verwendet werden kann. Durch eine zusätzliche Umgebung können Datenmigrationsaktivitäten fortgesetzt werden, während Test- und Konfigurationsaktivitäten gleichzeitig in einer anderen Umgebung ausgeführt werden.
-- **Integration**: Möglicherweise müssen Sie eine zusätzliche Umgebung in Betracht ziehen, um Integrationen zu konfigurieren und zu testen. Dies kann native Integrationen wie die Ceridian Dayforce LinkedIn Talent Hub-Integrationen oder benutzerdefinierte Integrationen wie die für die Lohn- und Gehaltsabrechnung, Bewerber-Nachverfolgungssysteme oder Vorteilssysteme und -anbieter umfassen.
+- **Integration**: Möglicherweise müssen Sie eine zusätzliche Umgebung in Betracht ziehen, um Integrationen zu konfigurieren und zu testen. Dies kann native Integrationen wie die Ceridian Dayforce LinkedIn Talent Hub-Integrationen oder angepasste Integrationen wie die für die Lohn- und Gehaltsabrechnung, Bewerber-Nachverfolgungssysteme oder Vorteilssysteme und -anbieter umfassen.
 - **Training** : Möglicherweise benötigen Sie eine separate Umgebung, die mit einer Reihe von Trainingsdaten konfiguriert ist, um Ihre Mitarbeiter in der Verwendung des neuen Systems zu trainieren. 
 - **Mehrphasenprojekt**: Möglicherweise benötigen Sie eine zusätzliche Umgebung, um Konfiguration, Datenmigration, Tests oder andere Aktivitäten in einer Projektphase zu unterstützen, die nach der ersten Inbetriebnahme des Projekts geplant ist.
 

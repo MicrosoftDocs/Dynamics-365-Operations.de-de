@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1db676024f5ec0f254500bd2ceee85ab2150502
-ms.sourcegitcommit: 777f9581dccc0f963c6a04c95b85e00e68573db5
+ms.openlocfilehash: fcdb5a934818468e00be960f9afe541966e5eabf
+ms.sourcegitcommit: e8a2a1e34fa48a42afac9724828f4ec72b6d7085
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8527312"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8573649"
 ---
 # <a name="get-started-with-financial-reporting"></a>Erste Schritte mit der Finanzberichterstellung 
 
@@ -138,7 +138,7 @@ Wenn Sie das Menü **Finanzberichterstattung** auswählen, wird die Liste der st
 
 ## <a name="creating-and-modifying-financial-reports"></a>Finanzberichte erstellen und ändern
 
-Über die Finanzberichte Liste können Sie einen neuen Bericht erstellen oder einen vorhandenen Bericht ändern. Wenn Sie die erforderlichen Berechtigungen besitzen, können Sie einen neuen Finanzbericht erstellen, indem Sie **Neu** im Aktionsbereich auswählen. Ein Berichts-Designer-Programm wird auf Ihr Gerät heruntergeladen. Nachdem der Berichts-Designer startete, können Sie den neuen Bericht erstellen. Nachdem Sie den neuen Bericht gespeichert haben, erscheint er in der Finanzberichtsliste. Die Liste zeigt nur Berichte an, die für das Unternehmen erstellt wurden, das Sie in Dynamics 365 Finance verwenden. 
+Über die Finanzberichte Liste können Sie einen neuen Bericht erstellen oder einen vorhandenen Bericht ändern. Wenn Sie die erforderlichen Berechtigungen besitzen, können Sie einen neuen Finanzbericht erstellen, indem Sie **Neu** im Aktionsbereich auswählen. Ein Berichts-Designer-Programm wird auf Ihr Gerät heruntergeladen. Nachdem der Berichts-Designer startete, können Sie den neuen Bericht erstellen. Nachdem Sie den neuen Bericht gespeichert haben, erscheint er in der Finanzberichtsliste. Die Liste enthält nur Berichte, die für das Unternehmen erstellt wurden, das Sie in Dynamics 365 Finance verwenden. 
 
 ## <a name="reporting-tree-definitions"></a>Berichtsbaumstruktur-Definitionen
 
@@ -212,7 +212,7 @@ Hier sind einige Schritte, die Sie unternehmen können, um Ihr Gespräch mit dem
 Die folgenden Schritte führen durch den Prozess zum Aktivieren von Ereignisanzeigenachrichten für die Finanzberichterstellung. Die von der Ereignisanzeige generierten Protokolle helfen Supportmitarbeitern dabei, die Ursache des Verbindungsproblems schnell zu identifizieren. Senden Sie Kopien dieser Protokolle zusammen mit Ihrem Ticket, wenn Sie den Support kontaktieren.
 
 
-1. Kopieren Sie die Datei RegisterETW.zip auf die Client-Arbeitsstation (vorzugsweise den Desktop) und entpacken Sie [RegisterETW.zip](https://dev.azure.com/msdyneng/e6f12261-a46a-4af1-ac0c-e22bc2c5a478/_apis/git/repositories/ff923027-67f0-43fb-b63c-6d6b6423840f/Items?path=%2F.attachments%2FRegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e.zip&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&versionDescriptor.version=wikiMaster).
+1. Kopieren Sie die Datei RegisterETW.zip auf die Client-Arbeitsstation (vorzugsweise den Desktop) und entpacken Sie [RegisterETW.zip](https://mbs2.microsoft.com/fileexchange/?fileID=60b1106b-d5f8-4e0f-8041-039102505122).
 2. Stellen Sie sicher, dass die Windows-Ereignisanzeige geschlossen ist.
 3. Öffnen Sie eine Administrator PowerShell-Eingabeaufforderung und wechseln Sie in das Verzeichnis, in dem sich RegisterETW.ps1 befindet.
 4. Führen Sie den folgenden Befehl aus: .\RegisterETW.ps1
@@ -242,7 +242,7 @@ Problem: Sie erhalten die Fehlermeldung „Verbindung zum Finanzberichterstellun
 * Wenn Sie die Verbindungsfehlermeldung erhalten, wählen Sie **Testen**, um die Verbindung zu testen, um zu sehen, welche Meldung angezeigt wird. 
 * Das Problem könnte darauf zurückzuführen sein, dass ein anderer Benutzer keinen Zugriff auf die Finanzberichterstellung hat. Wenn ein Benutzer keinen Zugriff hat, erhält er eine Nachricht, dass er keine Berechtigung hat.
 * Wenn das Problem in mehreren Browsern auftritt, stellen Sie sicher, dass die Zeitschaltuhr auf Ihrer Arbeitsstation auf „Automatisch“ eingestellt ist.
-* Arbeiten Sie mit einem Benutzer mit Sicherheitsadministratorrechten in Dynamics 365 Finance und Administratorrechte für die Netzwerkdomäne, um sich bei Ihrer Arbeitsstation anzumelden, um zu überprüfen, ob eine Verbindung hergestellt werden kann. Wenn sie eine Verbindung herstellen können, hängt das Problem möglicherweise mit den Netzwerkberechtigungen zusammen.
+* Arbeiten Sie mit einer Person mit Sicherheitsadministrationsrechten in Dynamics 365 Finance und Administrationsrechte für die Netzwerkdomäne, um sich bei Ihrer Arbeitsstation anzumelden, um zu überprüfen, ob eine Verbindung hergestellt werden kann. Wenn sie eine Verbindung herstellen können, hängt das Problem möglicherweise mit den Netzwerkberechtigungen zusammen.
 * Deaktivieren Sie auf der Arbeitsstation vorübergehend die Firewall. Wenn Sie sich dann mit Report Designer verbinden können, liegt das Problem an Ihrer Firewall. Arbeiten Sie mit der IT-Abteilung Ihrer Organisation zusammen, um das Problem zu beheben.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen

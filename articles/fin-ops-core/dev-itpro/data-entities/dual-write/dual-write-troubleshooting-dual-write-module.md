@@ -2,19 +2,19 @@
 title: Probleme mit dem dualen Schreiben in Finance and Operations-Apps behandeln
 description: In diesem Thema finden Sie Informationen zur Problembehandlung, die Ihnen helfen können, Probleme mit dem duales Schreiben-Modul in Apps für Finanzen und Betrieb zu beheben.
 author: RamaKrishnamoorthy
-ms.date: 08/10/2021
+ms.date: 04/12/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: db49c6a4555f39800362a5b248f9757b07ee5481
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 58b20e38269922203b54173509e31c5e6f30c25b
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061807"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565965"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Probleme mit dem dualen Schreiben in Finance and Operations-Apps behandeln
 
@@ -70,6 +70,21 @@ Möglicherweise wird die folgende Fehlermeldung angezeigt, wenn Sie versuchen, d
 Dieser Fehler tritt auf, wenn die verknüpfte Dataverse Umgebung nicht verfügbar ist.
 
 Erstellen Sie ein Ticket für das Datenintegrationsteam, um das Problem zu beheben. Fügen Sie die Netzwerkablaufverfolgung hinzu, damit das Datenintegrationsteam die Zuordnung als **wird nicht ausgeführt** im hinteren Ende markieren kann.
+
+## <a name="enable-parallel-processing-in-finance-and-operations-apps-to-improve-performance"></a>Parallele Verarbeitung in Finanz- und Betriebs-Apps aktivieren, um die Leistung zu verbessern
+
+Die Aktivierung der parallelen Verarbeitung kann die Zeit verkürzen, die zum Importieren von Daten aus Finanz- und Betriebs-Apps in Customer Engagement-Apps und Microsoft Dataverse erforderlich ist. 
+
+So aktivieren Sie die parallele Verarbeitung in Finanz- und Betriebs-Apps:
+
+1. Melden Sie sich bei Ihrer Finanz- und Betriebsumgebung an.
+2. Wechseln Sie zu **Datenverwaltung > Frameworkparameter**.
+3. Wählen Sie **Entitätseinstellungen** und dann **Entitätsausführungsparameter konfigurieren** aus.
+4. Fügen Sie die Parameter für die parallele Verarbeitung hinzu:
+    - **Importschwellendatensatz-Zählung** – Die Anzahl der Datensätze, die erreicht sein muss, bevor die Parallelverarbeitung aktiviert wird.
+    - **Importaufgabenzählung** – Die Anzahl der Threads (Aufgaben), die parallel ausgeführt werden sollen.
+5. Wählen Sie **Speichern** aus.
+
 
 ## <a name="errors-while-trying-to-start-a-table-mapping"></a>Fehler beim Versuch, eine Tabellenzuordnung zu starten
 

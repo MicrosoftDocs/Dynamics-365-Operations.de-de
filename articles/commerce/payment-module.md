@@ -2,7 +2,7 @@
 title: Zahlungsmodul
 description: In diesem Thema wird das Zahlungsmodul behandelt und beschrieben, wie es in Microsoft Dynamics 365 Commerce konfiguriert wird.
 author: anupamar-ms
-ms.date: 01/07/2022
+ms.date: 04/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: de92e137815cb79944a2793fc4841c949ed43346
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: ba95386143ca830aeb1b50b31b4bbd2b54f53a40
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952468"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565728"
 ---
 # <a name="payment-module"></a>Zahlungsmodul
 
@@ -74,6 +74,8 @@ Die folgende Abbildung zeigt ein Beispiel für den PayPal-iframe, der über die 
 | Zahlungsstil überschreiben | Cascading Style Sheets (CSS)-Code | Da das Zahlungsmodul in einem IFrame gehostet wird, sind die Styling-Funktionen eingeschränkt. Mit dieser Eigenschaft können Sie ein gewisses Maß an Styling erzielen. Um Site-Stile zu überschreiben, müssen Sie den CSS-Code als Wert dieser Eigenschaft einfügen. Site Builder CSS-Überschreibungen und Stile gelten nicht für dieses Modul. |
 |Unterstützte Zahlungsmitteltypen| Zeichenfolge| Wenn mehrere Zahlungsconnectors konfiguriert sind, sollten Sie die unterstützte Zeichenfolge für den Zahlungsmitteltyp angeben, wie in der Zahlungsconnector-Konfiguration der Commerce-Zentralverwaltung definiert (siehe folgendes Bild). Wenn dies leer bleibt, wird standardmäßig der Adyen-Zahlungsconnector verwendet. Hinzugefügt in Commerce-Version 10.0.14.|
 |Ist primäre Zahlung|  **True** oder **False** | Wenn **True** werden alle Fehlermeldungen vom primären Zahlungsconnector auf der Auftragsabschlussseite aus generiert. Wenn sowohl Adyen- als auch PayPal-Zahlungsconnectors konfiguriert sind, legen Sie Adyen auf **True** fest, das in Commerce Release 10.0.14 hinzugefügt wurde.|
+|Konnektor-ID verwenden| **True** oder **False** | Verwenden Sie diese Eigenschaft, wenn mehrere Zahlungsconnectors für die Site konfiguriert sind. Bei **Wahr** müssen Connectors die Connector-ID für die Zahlungskorrelation verwenden.|
+|Verwenden Sie den vom Browser festgelegten Sprachcode für iFrame|  **True** oder **False** | (Nur Adyen) Bei **Wahr** rendert das Adyen iFrame die Sprache basierend auf dem Browserkontext des Site-Benutzenden, anstatt den Sprachcode des für die Site konfigurierten E-Commerce-Kanals zu verwenden. Hinzugefügt in Commerce-Version 10.0.27.|
 
 Die folgende Abbildung zeigt ein Beispiel, bei dem der Wert **Unterstützte Zahlungsmitteltypen** in der Zahlungsconnectorkonfiguration in der Commerce-Zentralverwaltung auf „PayPal“ gesetzt ist.
 ![Beispiel für unterstützte Zahlungsmitteltypen in der Commerce-Zentralverwaltung.](./media/ecommerce-paymenttendertypes.png)

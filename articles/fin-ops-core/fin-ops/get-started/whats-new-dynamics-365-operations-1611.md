@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0625010143b7df9c3c897bf7f43ef25993303240
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 43a53d5940b2595abb305a08e6f52661bee8ca62
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752807"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8548079"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Neuerungen oder Änderungen in Dynamics 365 for Operations Version 1611 (1611. November 2016)
 
@@ -816,7 +816,7 @@ Derzeit ist Retail Modern POS nur als Windows 8.1-Anwendung für Desktopcomputer
 | Als Kreditor erhalten Sie Informationen zur Menge des überlieferten Lagerbestands, der an den Debitor übergeben wird. | Um eine Rechnung für den Debitor zu erstellen, benötigt der Kreditor Informationen zu den Rohmaterialien, die vom Lieferungsbestand gekauft wurden, und zum Kaufdatum. Der Kreditor kann auch den verfügbaren Lagerbestand am Standort des Debitors mithilfe der Kreditoren-Zusammenarbeitsschnittstelle überwachen. |
 | Verschieben Sie Lagerbestand im Kreditorenbesitz mit einer Umlagerungserfassung. | Wenn Sie die physische Position des Lagerbestands im Kreditorenbesitz nachverfolgen möchten, muss es möglich sein, die Position im System zu erfassen. Durch die Verwendung einer Umlagerungserfassung können Sie die Bewegung des physischen Bestands erfassen, wie z. B. die Bewegung von einem Lagerplatz an einem Lagerort zu einem anderen. |
 | Passen Sie Lagerbestand im Kreditorenbesitz mit einer Inventurerfassung an. | Es ist wichtig, dass Sie den im System verfügbaren Lagerbestand konsistent mit dem tatsächlichen physischen Bestand synchron halten. Der Lagerbestand im Kreditorenbesitz kann mithilfe von Zählverfahren wie Mengenanpassungs- und in Inventurerfassungsprozessen angepasst werden. |
-| Finden Sie sich über Lieferungssupport in Dynamics 365 for Operations | Weitere Informationen zur Unterstützung von Lieferungsprozessen erhalten Sie unter [Lieferung](../../../supply-chain/inventory/consignment.md), [Lieferung einrichten](../../../supply-chain/inventory/set-up-consignment.md), [Erstellen eines neuen Unterlieferungs-Wiederbeschaffungsauftrags (Aufgabenleitfaden)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) und [Ändern des Besitzes des Lieferungsbestandes auf Grundlage des Produktionsbedarfs (Aufgabenleitfaden)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
+| Finden Sie sich über Lieferungssupport in Dynamics 365 for Operations | Weitere Informationen zur Unterstützung von Lieferungsprozessen erhalten Sie unter [Lieferung](../../../supply-chain/inventory/consignment.md), [Lieferung einrichten](/d365F-O/fin-ops-core/fin-ops/get-started/consignment), [Erstellen eines neuen Unterlieferungs-Wiederbeschaffungsauftrags (Aufgabenleitfaden)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) und [Ändern des Besitzes des Lieferungsbestandes auf Grundlage des Produktionsbedarfs (Aufgabenleitfaden)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
 
 ### <a name="vendor-collaboration-previously-known-as-the-vendor-portal"></a>Kreditorenzusammenarbeit (bisher als Kreditorenportal bezeichnet)
 
@@ -942,7 +942,7 @@ Derzeit ist Retail Modern POS nur als Windows 8.1-Anwendung für Desktopcomputer
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Seite zu Neuerungen oder Änderungen in Finance and Operations](whats-new-changed.md)
+[Neuerungen oder Änderungen in Finance and Operations – Startseite](whats-new-changed.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

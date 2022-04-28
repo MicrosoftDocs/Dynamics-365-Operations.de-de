@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1e06fafe8d8bbe92ddf4fcd94d7271a1fbb6362a
-ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
+ms.openlocfilehash: 4cd99b1d2c0dbbf48e7eee7e1233e3b078d14ba3
+ms.sourcegitcommit: 6109fc2fe5f407363bb6f240d64b7214657f5914
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "7413595"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "8603053"
 ---
 # <a name="configure-print-management-record-specific-er-destinations"></a>Konfigurieren von Druckmanagement-Datensatz-spezifischen ER-Zielen
 
@@ -35,9 +35,9 @@ Die Vorgänge können in der Firma USMF abgeschlossen werden. Eine Codierung ist
 
 ## <a name="introduction"></a>Einführung
 
-Sie können [Ziele](electronic-reporting-destinations.md) für jeden Ordner in der Dateiausgabekomponente eines ER [Formats](general-electronic-reporting.md#FormatComponentOutbound) [Konfiguration](general-electronic-reporting.md#Configuration) konfigurieren, das zur Erzeugung eines ausgehenden Belegs verwendet wird. Wenn Sie ein solches ER-Format ausführen und über die entsprechenden Zugriffsrechte verfügen, können Sie die festgelegten Zieleinstellungen auch zur Laufzeit ändern.
+Sie können [Ziele](electronic-reporting-destinations.md) für jeden Ordner in der Dateiausgabekomponente eines ER [Formats](general-electronic-reporting.md) [Konfiguration](general-electronic-reporting.md#Configuration) konfigurieren, das zur Erzeugung eines ausgehenden Belegs verwendet wird. Wenn Sie ein solches ER-Format ausführen und über die entsprechenden Zugriffsrechte verfügen, können Sie die festgelegten Zieleinstellungen auch zur Laufzeit ändern.
 
-In Microsoft Dynamics 365 Finance **Version 10.0.17 und später** kann für ein ER-Format ein Aktionscode [festgelegt](er-apis-app10-0-17.md) werden, um die Aktion festzulegen, die Benutzer beim Ausführen dieses ER-Formats ausführen. So können Sie z.B. im Modul **Debitoren** in den Einstellungen der Druckverwaltung ein ER-Format auswählen, das einen bestimmten Beleg erzeugt, z.B. eine Freitext-Rechnung. Sie können dann **Ansicht** auswählen, um eine Vorschau der Rechnung anzuzeigen, oder **Drucken**, um es an einen Drucker zu senden. Wenn zur Laufzeit eine Aktion für das ausgeführte ER-Format übergeben wird, können Sie [unterschiedliche ER-Ziele für unterschiedliche Benutzeraktionen konfigurieren](er-action-dependent-destinations.md).
+In Microsoft Dynamics 365 Finance **Version 10.0.17 und später** kann für ein ER-Format ein Aktionscode [festgelegt](er-apis-app10-0-17.md) werden, um die Aktion festzulegen, die Benutzer\*innen beim Ausführen dieses ER-Formats ausführen. So können Sie z.B. im Modul **Debitoren** in den Einstellungen der Druckverwaltung ein ER-Format auswählen, das einen bestimmten Beleg erzeugt, z.B. eine Freitext-Rechnung. Sie können dann **Ansicht** auswählen, um eine Vorschau der Rechnung anzuzeigen, oder **Drucken**, um es an einen Drucker zu senden. Wenn zur Laufzeit eine Aktion für das ausgeführte ER-Format übergeben wird, können Sie [unterschiedliche ER-Ziele für unterschiedliche Benutzeraktionen konfigurieren](er-action-dependent-destinations.md).
 
 In Finance **Version 10.0.21 und höher** kann ein benanntes Ziel [für ein ER-Format festgelegt](er-apis-app10-0-21.md) und dem Druckverwaltungsdatensatz zugewiesen werden, der verarbeitet wird, wenn dieses ER-Format ausgeführt wird. Zum Beispiel möchten Sie im Modul **Debitoren** in den Druckverwaltungseinstellungen den Datensatz **Original** so festlegen, dass er die folgenden Aktionen ausführt:
 

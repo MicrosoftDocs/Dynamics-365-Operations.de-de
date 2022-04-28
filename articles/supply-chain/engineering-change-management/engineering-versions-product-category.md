@@ -2,7 +2,7 @@
 title: Engineering-Versionen und Engineering-Produktkategorien
 description: Dieses Thema informiert Sie über das Konzept der Engineering-Versionen. Engineering-Versionen sorgen dafür, dass unterschiedliche Zustände eines Produkts und seiner Daten aktuell und übersichtlich gehalten und im System visualisiert werden können.
 author: t-benebo
-ms.date: 09/28/2020
+ms.date: 04/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 42faa9e5f073d718c18422e37212c2ae8a28b28d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a4d057c603e6592e491af7597e50fce2497860ec
+ms.sourcegitcommit: b96e0c70553bca9b3f5eb65105a52cb71d978a36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572888"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8553361"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Engineering-Versionen und Engineering-Produktkategorien
 
@@ -137,7 +137,7 @@ Legen Sie für jede Zeile, die Sie dem Raster hinzufügen, die folgenden Felder 
 |---|---|
 | Name | Wählen Sie das Attribut, das Sie hinzufügen möchten. |
 | Wert | Wählen Sie den Standardwert für das Attribut. |
-| Obligatorisch | Bei Attributen vom Typ *Boolean* muss der Benutzer, wenn diese Option auf *Ja* festgelegt ist, das Attribut auf *Ja* setzen. Wenn diese Option auf *Nein* festgelegt ist, können Benutzer das Attribut entweder auf *Ja* oder *Nein* festlegen. Für andere Datentypen hat die Einstellung dieser Option nur informativen Charakter. |
+| Obligatorisch | Wählen Sie aus, ob das Attribut obligatorisch ist, was bedeutet, dass Benutzer\*innen einen gültigen Wert für das Attribut angeben müssen, bevor sie ein Produkt speichern können. Die Auswirkung dieser Einstellung variiert geringfügig je nach Datentyp des ausgewählten Attributs, wie in der folgenden Liste definiert.<ul><li>**Boolesch** – Legen Sie dies auf *Ja* fest, um zu verlangen, dass das Attribut den Wert *Ja* hat (das System weigert sich, ein Produkt zu speichern, für welches das Attribut auf *Nein* eingestellt ist). Legen Sie diese Option auf *Nein* fest, um einen Wert von *Ja* oder *Nein* zu akzeptieren. (Attribute vom Typ *Boolesch* dürfen keinen leeren Wert haben.)</li><li>**Ganzzahl oder Dezimalzahl** – Legen Sie dies auf *Ja* fest, um Benutzer\*innen aufzufordern, einen Wert ungleich Null für dieses Attribut einzugeben. Legen Sie diese Option auf *Nein* fest, damit ein Wert von null gespeichert werden kann.  (Attribute dieser Typen dürfen keinen leeren Wert haben.)</li><li>**Liste** – Listen haben den Datentyp *Text*, enthalten aber auch eine vordefinierte Liste möglicher Werte. Daher ist es nicht möglich, für Attribute dieses Typs einen leeren Wert einzugeben, sodass diese Einstellung keine Auswirkung hat und nur informativ ist.</li><li>**Alle anderen Datentypen** – Legen Sie dies auf *Ja* fest, um das Attribut obligatorisch zu machen. Legen Sie diese Option auf *Nein* fest, um es Benutzer\*innen zu ermöglichen, ein Produkt zu speichern, ohne einen Wert für dieses Attribut anzugeben.</li></ul> |
 | Chargenattribut | Wählen Sie, ob das Attribut über die Batch-Funktionalität propagiert werden soll. |
 
 ### <a name="readiness-policy-fasttab"></a>Richtlinie für Bereitschaft Inforegister
