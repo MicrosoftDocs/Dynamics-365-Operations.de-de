@@ -2,7 +2,7 @@
 title: Geschäftspartnerbenutzer auf B2B-E-Commerce-Websites verwalten
 description: In diesem Thema wird beschrieben, wie Sie Geschäftspartnerbenutzer auf Business-to-Business(B2B)-E-Commerce-Websites von Microsoft Dynamics 365 Commerce hinzufügen, Löschen und bearbeiten können.
 author: josaw1
-ms.date: 02/17/2022
+ms.date: 04/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: def8d4de082ceb4be77ed7e8898cbef82d52b749
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: c2fb4846a8457296a2ce758198ade5f4b0df8124
+ms.sourcegitcommit: 96e2fb26efd2cd07bbf97518b5c115e17b77a0a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323454"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "8616856"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Geschäftspartnerbenutzer auf B2B-E-Commerce-Websites verwalten
 
@@ -28,7 +28,8 @@ ms.locfileid: "8323454"
 In diesem Thema wird beschrieben, wie Sie Geschäftspartnerbenutzer auf Business-to-Business(B2B)-E-Commerce-Websites von Microsoft Dynamics 365 Commerce hinzufügen, Löschen und bearbeiten können.
 
 > [!NOTE]
-> Das Thema [B2B-Geschäftspartner mithilfe von Kundenhierarchien verstehen](partners-customer-hierarchies.md) ist für dieses Dokument Voraussetzung. 
+> - Das Thema [B2B-Geschäftspartner mithilfe von Kundenhierarchien verstehen](partners-customer-hierarchies.md) ist für dieses Dokument Voraussetzung.
+> - Stellen Sie sicher, dass Sie die Dokumenttypenentität in der Commerce-Zentralverwaltung initialisieren, indem Sie das **Dokumenttypen**-Formular unter **Organisationsverwaltung \> Dokumentverwaltung \> Dokumenttypen** öffnen.
 
 Für B2B-E-Commerce-Websites müssen sich Organisationen registrieren, um Geschäftspartner zu werden. Nachdem eine Organisation Registrierungsdaten an eine B2B-E-Commerce-Website übermittelt hat, durchläuft die Registrierungsanforderung einen Qualifizierungsprozess. Wenn die Organisation erfolgreich qualifiziert ist, wird sie als Geschäftspartner eingebunden.
 

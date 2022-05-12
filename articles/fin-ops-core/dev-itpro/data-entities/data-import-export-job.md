@@ -2,7 +2,7 @@
 title: Einzelvorgänge für Datenimport und ‑export – Übersicht
 description: Verwenden Sie den Datenverwaltungsarbeitsbereich, um Datenimport- und Exporteinzelvorgänge zu erstellen und zu verwalten.
 author: peakerbl
-ms.date: 10/21/2021
+ms.date: 04/25/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e63daad6f206500bfa21c28635648c717f5bbdde
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 74430aadc661a49e330960135ce7b0912079f79b
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071084"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644458"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Einzelvorgänge für Datenimport und ‑export – Übersicht
 
@@ -74,8 +74,11 @@ Wenn Sie eine Einheit auswählen, müssen Sie die Verpackungseinheiten das Forma
 > [!NOTE]
 > Es ist wichtig, den richtigen Wert für **Zeilentrennzeichen**, **Spaltentrennzeichen** und **Textqualifizierer** auszuwählen, wenn die **Datei Format**-Option auf **Getrennt** eingestellt ist. Stellen Sie sicher, dass Ihre Daten nicht das als Trennzeichen oder Qualifizierer verwendete Zeichen enthalten, da dies beim Import und Export zu Fehlern führen kann.
 
+> [!NOTE]
+> Achten Sie bei XML-basierten Dateiformaten darauf, nur zulässige Zeichen zu verwenden. Genauere Informationen zu gültigen Zeichen finden Sie unter [Gültige Zeichen in XML 1.0](https://www.w3.org/TR/2006/REC-xml-20060816/Overview.html#charsets/). XML 1.0 erlaubt keine Steuerzeichen mit Ausnahme von Tabulatoren, Wagenrückläufen und Zeilenvorschüben. Beispiele für unzulässige Zeichen sind eckige Klammern, geschweifte Klammern und umgekehrte Schrägstriche. 
+
 ### <a name="sequence-the-entities"></a>Sequenz der Entitäten
-Entitäten können in einer Datenvorlage in den Serverkonfigurationsdateien oder im Import- und Exporteinzelvorgang sequenziert werden. Wenn Sie einen Einzelvorgang ausführen, der mehr als eine Datenentität enthält, müssen Sie prüfen, ob die Datenentitäten ordnungsgemäß geordnet werden. Sie ordnen die Entitäten hauptsächlich so, dass Sie beliebige funktionalen Abhängigkeiten unter den Entitäten adressieren können. Wenn Entitäten keine funktionalen Abhängigkeiten haben, können Sie diese für Parallelimport oder Export planen.
+Entitäten können in einer Datenvorlage in den Serverkonfigurationsdateien oder im Import- und Exporteinzelvorgang sequenziert werden. Wenn Sie einen Einzelvorgang ausführen, der mehr als eine Datenentität enthält, müssen Sie prüfen, ob die Datenentitäten ordnungsgemäß geordnet werden. Sie ordnen die Entitäten hauptsächlich so, dass Sie beliebige funktionalen Abhängigkeiten unter den Entitäten adressieren können. Wenn Entitäten keine funktionalen Abhängigkeiten haben, können Sie diese für Parallelimport oder Export planen. 
 
 #### <a name="execution-units-levels-and-sequences"></a>Ausführungseinheiten, Ebenen und Nummernkreise
 Die Ausführungseinheit, die Ebene in der Ausführungseinheit und die Sequenz der Entität helfen, die Reihenfolge der Daten zu steuern, die importiert oder exportiert werden.

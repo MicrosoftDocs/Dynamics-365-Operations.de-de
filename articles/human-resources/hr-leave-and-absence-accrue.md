@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7f765e7cfd97170bd144dfff12c18ced96e3332a
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: 3c9b9602e5c219be5756f5987b0497f2ce5c269d
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533711"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644301"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Urlaubs- und Abwesenheitspläne antizipieren
 
@@ -105,8 +105,10 @@ Löschen Sie Abgrenzungssätze für einen bestimmten Plan und Zeitraum. Abgrenzu
 **Rückstellungsprüfung verlassen** zeigt jedes Mal an, wenn Sie eine Rückstellung für einen oder alle Mitarbeiter ausführen oder löschen. Das Datum und die Person, die die Aktion ausgeführt hat, werden ebenfalls angezeigt.
 
 1. Auf der Seite **Urlaub- und Abwesenheit** klicken Sie auf die Registerkarte **Links**.
-
 2. Unter **Urlaub verwalten**, wählen Sie **Aufgelaufene Urlaubs- und Abwesenheitsprüfung löschen**.
+
+## <a name="leave-accrual-rounding"></a>Rundung für Urlaubsabgrenzungen
+Wenn ein Mitarbeiter an- oder abgemeldet ist, wird die Rundung für Urlaubsabgrenzungen anteilig berechnet. Bisher war das Runden nur zulässig, wenn ein Urlaubsplan auf anteilig eingestellt war und ein Mitarbeiter in der Mitte des Zeitraums an-/abgemeldet wurde. Urlaubsabgrenzungen werden jetzt unabhängig von der Anmeldung/Abmeldung in der Mitte des Zeitraums oder zu Beginn eines Zeitraums gerundet.
 
 ## <a name="leave-accrual-transaction-auditing"></a>Überwachung von Urlaubsabgrenzungstransaktionen
 

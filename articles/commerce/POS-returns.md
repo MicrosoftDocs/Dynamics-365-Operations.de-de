@@ -2,24 +2,20 @@
 title: Erträge in POS erstellen
 description: In diesem Thema wird beschrieben, wie Sie Retouren für Cash-and-Carry-Transaktionen oder Kundenbestellungen in der Microsoft Dynamics 365 Commerce Point-of-Sale-Anwendung (POS) initiieren.
 author: hhainesms
-ms.date: 02/24/2022
+ms.date: 04/27/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: 3250f702f033fb8b00763542fd8342c089b47b2e
-ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
+ms.openlocfilehash: c8e06c0d83e3bc2f5efea1e3a8124c700706aa2e
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8349690"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8648987"
 ---
 # <a name="create-returns-in-pos"></a>Erträge in POS erstellen
 
@@ -107,9 +103,64 @@ Die folgende Liste enthält die Mindestversionsanforderungen für die verschiede
 ## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>Richtige Steuerberechnung für Retouren mit Teilmengen aktivieren
 
 Diese Funktion stellt sicher, dass bei der Retoure eines Auftrags über mehrere Rechnungen die Steuern letztendlich dem ursprünglich berechneten Steuerbetrag entsprechen.
-1.  Wechseln Sie zum Arbeitsbereich **Funktionsverwaltung** und suchen Sie nach **Richtige Steuerberechnung für Retouren mit Teilmengen aktivieren**.
-2.  Wählen Sie **Richtige Steuerberechnung für Retouren mit Teilmengen aktivieren** aus und klicken Sie dann auf **Aktivieren**.
 
+1. Suchen Sie im Arbeitsbereich **Funktionsverwaltung** nach **Richtige Steuerberechnung für Retouren mit Teilmengen aktivieren**.
+1. Wählen Sie die Funktion **Richtige Steuerberechnung für Retouren mit Teilmengen aktivieren** und dann **Aktivieren** aus.
+
+## <a name="set-up-return-locations-for-retail-stores"></a>Rückgabeorte für Einzelhandelsgeschäfte einrichten
+
+Mit Commerce können Sie Rückgabeorte einrichten, die auf Einzelhandels-Infocodes und Vertriebs- und Marketingursachencodes basieren. Kassierer geben häufig den Grund für die Rückgabe an, wenn Kunden Einkäufe zurückgeben. Sie können festlegen, dass zurückgegebene Produkte verschiedenen Rückgabeorten im Bestand zugewiesen werden sollen, basierend auf Infocodes und Ursachencodes, die Kassierer am POS-Register auswählen.
+
+Beispiel: Ein Kunde gibt ein defektes Produkt zurück, und der Kassierer bearbeitet die Retourenbuchung. Wenn Retail POS den Infocode für Retouren anzeigt, wählt der Kassierer den Untercode für fehlerhafte Retouren aus. Das zurückgegebene Produkt wird dann automatisch einem bestimmten Rückgabeort zugewiesen.
+
+Ein Rückgabeort kann ein Lagerort, ein Lagerplatz in einem Lagerort oder auch eine bestimmte Palette sein, abhängig von den Lagerplätzen für Lagerbestände, die Ihre Organisation eingerichtet hat. Sie können jeden Rückgabeort einem oder mehreren Einzelhandels-Infocodes und Vertriebs- und Marketingursachencodes zuordnen.
+
+### <a name="prerequisites"></a>Voraussetzungen
+
+Bevor Sie Rückgabeorte einrichten können, müssen Sie die folgenden Elemente einrichten:
+
+- **Einzelhandels-Infocodes** – Aufforderungen am POS-Register, die im **Einzelhandel**-Modul eingerichtet werden. Weitere Informationen finden Sie unter [Einrichten von Infocodes](/dynamicsax-2012/appuser-itpro/setting-up-info-codes).
+- **Vertriebs- und Marketingursachencodes** – Aufforderungen am POS-Register, die im **Vertrieb und Marketing**-Modul eingerichtet werden. Weitere Informationen finden Sie unter [Einrichten von Ursachencodes](/dynamicsax-2012/appuser-itpro/set-up-return-reason-codes).
+- **Lagerplätze für Lagerbestand** – Die Orte, an denen Lagerbestand aufbewahrt wird. Weitere Informationen finden Sie unter [Einrichten von Lagerplätzen für Lagerbestand](/dynamicsax-2012/appuser-itpro/about-locations).
+    
+### <a name="set-up-return-locations"></a>Rückgabeorte einrichten
+
+Gehen Sie zum Einrichten von Rückgabeorten folgendermaßen vor.
+
+1. Gehen Sie zu **Einzelhandel und Handel \> Kanaleinstellungen \> Lagerorte**, und wählen Sie einen Lagerort aus.
+1. Wählen Sie auf dem Inforegister **Einzelhandel** im Feld **Standard-Rückgabeort** den Lagerplatz für den Lagerbestand aus, der für Rückgaben verwendet werden soll, wenn die Infocodes oder Ursachencodes keinen Rückgabeorten zugeordnet sind.
+1. Wählen Sie im Feld **Standardrücklieferungspalette** die Palette aus, die für Rückgaben verwendet werden soll, wenn die Infocodes oder Ursachencodes keinen Rückgabeorten zugeordnet sind.
+1. Gehen Sie zu **Einzelhandel und Handel \> Lagerverwaltung \> Rückgabeorte**.
+1. Wählen Sie **Neu** aus, um eine Rückgabeortrichtlinie zu erstellen.
+1. Geben Sie einen eindeutigen Namen und eine Beschreibung für den Rückgabeort ein.
+
+    > [!NOTE]
+    > Wenn ein Nummernkreis für Rückgabeorte eingerichtet wurde, wird der Name automatisch eingegeben.
+
+1. Legen Sie auf dem Inforegister **Allgemein** die Option **Etiketten drucken** auf **Ja** fest, um Etiketten für alle Produkte zu drucken, die Rückgabeorten zugewiesen sind.
+1. Legen Sie die Option **Lagerbestand sperren** auf **Ja** fest, um zurückgegebene Produkte im Standard-Rückgabeort aus dem Bestand zu nehmen und zu verhindern, dass sie verkauft werden.
+1. Gehen Sie wie folgt vor, um bestimmte Einzelhandels-Infocodes und Untercodes Rückgabeorten zuzuordnen:
+
+    1. Wählen Sie auf dem Inforegister **Einzelhandels-Infocodes** **Hinzufügen**.
+    1. Wählen Sie im Feld **Infocode** einen Infocode für Rückgaben aus.
+    1. Wählen Sie im Feld **Untercode** einen Untercode für den Grund für die Rückgabe aus. Das Feld **Beschreibung** zeigt die Beschreibung für den ausgewählten Untercode.
+    1. Wählen Sie im Feld **Store** den Shop aus, in dem der Infocode verwendet wird.
+    1. Verwenden Sie die Felder **Lagerort**, **Lagerplatz** und **Palettennummer**, um einen Rückgabeort anzugeben. Um beispielsweise einen bestimmten Ort in einem Shop anzugeben, wählen Sie einen Shop im Feld **Store** und einen Ort im Feld **Lagerplatz** aus.
+    1. Aktivieren Sie das Kontrollkästchen **Lagerbestand sperren**, um zurückgegebene Produkte aus dem Bestand zu nehmen und um zu verhindern, dass sie verkauft werden.
+
+1. Gehen Sie wie folgt vor, um bestimmte Vertriebs- und Marketingursachencodes Rückgabeorten zuzuordnen:
+
+    1. Auf dem Inforegister **Vertriebs- und Marketingursachencodes** wählen Sie **Hinzufügen** aus.
+    1. Wählen Sie im Feld **Ursachencode** einen Ursachencode für Rückgaben aus. Das Feld **Beschreibung** zeigt die Beschreibung für den ausgewählten Ursachencode.
+    1. Wählen Sie im Feld **Store** den Shop aus, in dem der Ursachencode verwendet wird.
+    1. Verwenden Sie die Felder **Lagerort**, **Lagerplatz** und **Palettennummer**, um einen Rückgabeort anzugeben. Um beispielsweise eine Palette an einem Ort in einem Lagerort anzugeben, wählen Sie einen Lagerort im Feld **Lagerort** aus, einen Ort im Feld **Lagerplatz** und eine Palette im Feld **Palettennummer**.
+    1. Aktivieren Sie das Kontrollkästchen **Lagerbestand sperren**, um zurückgegebene Produkte aus dem Bestand zu nehmen und um zu verhindern, dass sie verkauft werden.
+
+    > [!NOTE]
+    > Wenn für einen Artikel eine Rückgabeortrichtlinie verwendet wird, der Rückgabegrund, den ein Kassierer auswählt, jedoch mit keinem Code übereinstimmt, der auf dem Inforegister **Einzelhandel-Infocodes** oder **Vertriebs- und Marketingursachencodes** angegeben ist, wird der Artikel an den Standardrückgabeort gesendet, der auf der Seite **Lagerort** definiert ist. Außerdem bestimmt die Einstellung des Kontrollkästchens **Lagerbestand sperren** auf dem Inforegister **Allgemein** der Seite **Rückgabeorte**, ob der zurückgegebene Artikel im Bestand gesperrt werden soll.
+
+1. Gehen Sie zu **Einzelhandel und Handel \> Handelsprodukthierarchie**.
+1. Wählen Sie auf dem Inforegister **Bestandskategorieeigenschaften verwalten** im Feld **Rückgabeort** einen Rückgabeort aus. Da für dasselbe Geschäft mehrere Rückgabeortrichtlinien definiert werden können, bestimmt der Wert, den Sie hier auswählen, die verwendete Rückgabeortrichtlinie.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

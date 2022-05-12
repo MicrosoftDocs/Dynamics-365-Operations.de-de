@@ -1,8 +1,8 @@
 ---
-title: Zwischen Modern POS (MPOS) und Cloud POS wählen
-description: In diesem Thema werden die wesentlichen Unterschiede zwischen Modern POS und Cloud POS erklärt. Außerdem werden verschiedene Faktoren beschrieben, die Einzelhändler, die Dynamics 365 Commerce implementieren, bedenken müssen, um die beste Wahl für ihre Anforderungen zu treffen.
+title: Zwischen Store Commerce und Cloud POS wählen
+description: In diesem Thema werden die wichtigsten Unterschiede zwischen Store Commerce und Cloud POS erläutert und verschiedene Faktoren beschrieben, die Einzelhändler, die Dynamics 365 Commerce implementieren, berücksichtigen sollten, um ihnen dabei zu helfen, die beste Wahl für ihre Anforderungen zu treffen.
 author: jblucher
-ms.date: 10/13/2017
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3e2987351e327b5cca27a6ea992a0550cc21d028cecf4330d374768f13711829
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b62e1737bc9e3b9d9e25a7a88e693a9aece80776
+ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714758"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8629289"
 ---
-# <a name="choose-between-modern-pos-mpos-and-cloud-pos"></a>Zwischen Modern POS (MPOS) und Cloud POS wählen
+# <a name="choose-between-store-commerce-and-cloud-pos"></a>Zwischen Store Commerce und Cloud POS wählen
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema gibt Implementierern zusätzliche Hintergrundinformationen, Tipps und Orientierungshilfe für Faktoren, die sie berücksichtigen sollten, wenn sie Dynamics 365 Commerce bereitstellen. Indem diese Anleitung überprüft und befolgt wird als Teil des Bereitstellungsprozesses, können Implementierer Abgänge vermeiden, die möglicherweise die Zufriedenheit oder Leistung der Benutzer beeinträchtigt hat.
+In diesem Thema werden die wichtigsten Unterschiede zwischen Store Commerce und Cloud POS erläutert und verschiedene Faktoren beschrieben, die Einzelhändler, die Dynamics 365 Commerce implementieren, berücksichtigen sollten, um ihnen dabei zu helfen, die beste Wahl für ihre Anforderungen zu treffen. Es gibt Implementierern zudem zusätzliche Hintergrundinformationen, Tipps und Orientierungshilfe für Faktoren, die sie berücksichtigen sollten, wenn sie Dynamics 365 Commerce bereitstellen. Indem diese Anleitung überprüft und befolgt wird als Teil des Bereitstellungsprozesses, können Implementierer Abgänge vermeiden, die möglicherweise die Zufriedenheit oder Leistung der Benutzer beeinträchtigt hat.
 
 ## <a name="insights"></a>Einblicke
 
@@ -36,28 +36,28 @@ Commerce bietet eine breite Palette von Bereitstellungs- und Topologieoptionen. 
 
 Commerce unterstützt die folgenden: POS-Optionen
 
-- Modern POS (MPOS)  für Microsoft Windows
-- MPOS für Microsoft Windows Phone
-- MPOS für Apple iPad oder Google Android-Tablet
-- Cloud POS (CPOS) mit Unterstützung von Microsoft Edge-, Internet Explorer- und Google Chrome-Browsern
+- Store Commerce für Microsoft Windows
+- Store Commerce für iOS und Android
+- Cloud POS (CPOS) mit Unterstützung von Microsoft Edge- und Google Chrome-Browsern
+- Modern POS (MPOS) für Microsoft Windows (MPOS wird im Oktober 2023 eingestellt.) 
 
-In allen Fällen teilt POS (MPOS und CPOS) den gleichen Kernanwendungscode. Dieser Schritt ist wichtig für folgende Gründe:
+In allen Fällen teilt POS (Store Commerce und CPOS) den gleichen Kernanwendungscode. Dieser Schritt ist wichtig für folgende Gründe:
 
 - Die Benutzeroberfläche (UI) ist, ungeachtet der Plattform oder den Formularfaktor einheitlich.
 - Die meisten funktionalen Funktionen sind identisch, dies unabhängig von der Plattform oder dem Formularfaktor. Jedoch gibt es mehrere wichtige Unterschiede. Die Unterschiede werden in diesem Thema vermerkt.
-- In einem bestimmten Shop können die POS-Abweichungen kombiniert und gleichzeitig ausgeführt werden. Für die Hauptregister kann ein MPOS Einzelhändler MPOS beispielsweise auf Computern verwenden, die unter Windows ausgeführt werden. Allerdings kann der Einzelhändler die Terminals oder Register mit browserbasierten mobilen Geräten ergänzen.
+- In jedem Shop können die POS-Abweichungen kombiniert und gleichzeitig ausgeführt werden. Für die Hauptregister kann ein Einzelhändler Store Commerce beispielsweise auf Computern verwenden, die unter Windows ausgeführt werden. Allerdings kann der Einzelhändler die Terminals oder Register mit browserbasierten mobilen Geräten ergänzen.
 - Anpassungen und Erweiterungen können über Formularfaktoren Plattformen leicht verwendet werden. Da der Kernanwendungscode freigegeben wird, können die meisten Anpassungen einmal anstelle mehrmals implementiert werden.
 
-### <a name="mpos-vs-cpos"></a>MPOS und CPOS
+### <a name="store-commerce-vs-cpos"></a>Store Commerce im Vergleich zu CPOS
 
-Obwohl MPOS und CPOS von der Komplexität identisch sind, gibt es mehrere wichtige Unterschiede, die Sie verstehen müssen.
+Obwohl Store Commerce und CPOS weitgehend identisch sind, gibt es mehrere wichtige Unterschiede, die Sie verstehen müssen.
 
-#### <a name="mpos"></a>MPOS
+#### <a name="store-commerce"></a>Store Commerce
 
-MPOS auf einem Windows-, iOS- oder Android-Gerät ist eine Anwendung, die auf dieses Gerät verpackt, eingerichtet und gewartet wird.
+Store Commerce ist eine Desktop-Anwendung, die auf einem Gerät installiert und gewartet wird.
 
-- **Windows** – Die MPOS für Windows-Anwendung enthält den gesamten Anwendungscode und die eingebette Commerce Runtime (CRT). 
-- **iOS/Android** – Auf diesen Plattformen dient die Anwendung als Host für den CPOS-Anwendungscode. Das bedeutet, der Anwendungscode stammt von dem CPOS-Server auf Microsoft Azure oder der Commerce Scale Unit. Weitere Informationen finden Sie unter [Commerce Scale Unit-Übersicht](dev-itpro/retail-store-system-begin.md).
+- **Windows** – Die Store Commerce-Anwendung für Windows enthält den gesamten Anwendungscode, Commerce Runtime (CRT) und Hardware Station (HWS).
+- **iOS/Android** – Auf diesen Plattformen dient die Anwendung als Host für den CPOS-Anwendungscode. Das bedeutet, der Anwendungscode stammt von dem CPOS-Server der auf Commerce Scale Unit gehostet wird. Weitere Informationen finden Sie unter [Commerce Scale Unit-Übersicht](dev-itpro/retail-store-system-begin.md).
 
 #### <a name="cpos"></a>CPOS
 
@@ -67,11 +67,12 @@ Da CPOS in einen Browser ausgeführt wird, wird die Anwendung nicht im Gerät ei
 
 Neben einer Plattform und einem Formularfaktor müssen Einzelhändler eine Bereitstellungsoption auch im Unternehmen auswählen. Die folgenden Tabelle zeigt die Konfiguration, die für jede POS-Option verfügbar ist.
 
-| POS-Bewerbung         | Commerce Scale Unit | Verfügbar offline |
-|-------------------------|---------------|-------------------|
-| MPOS für Windows        | Cloud oder RSSU | Ja               |
-| MPOS für iOS oder Android | Cloud oder RSSU | Nein                |
-| Cloud POS               | Cloud oder RSSU | Nein                |
+| POS-Bewerbung            | Commerce Scale Unit | Verfügbar offline | Lokale HWS-Unterstützung |
+|----------------------------|---------------------|-------------------|-------------------|
+| Store Commerce für Windows | Cloud oder RSSU       | Ja               | Ja               |
+| Store Commerce für Android | Cloud oder RSSU       | Nein                | Ja               |
+| Store Commerce für iOS     | Cloud oder RSSU       | Nein                | Nein                |
+| Cloud POS                  | Cloud oder RSSU       | Nein                | Nein                |
 
 #### <a name="commerce-scale-unit"></a>Commerce Scale Unit
 
@@ -79,11 +80,20 @@ Die Commerce Scale Unit ist eine Komponente, die das CRT hostet. Das gesamte CRT
 
 #### <a name="offline-mode"></a>Offlinemodus
 
-MPOS für Windows unterstützt Offline-Modus. Im Offline-Modus kann der POS weiter Verkäufe verarbeiten, selbst wenn er von der Commerce Scale Unit getrennt ist. Sie kann mit der Kanaldatenbank dann synchronisiert werden, sofern die Konnektivität zurückgesetzt wird. MPOS verwendet eine eigene eingebettete Instanz des CRT und verwendet vorübergehend eine eigene lokale Datenquelle (offline SQL Server-Datenbank). Weitere Informationen finden Sie unter [POS Offline-Funktionalität](pos-offline-functionality.md).
+Der Offlinemodus wird bei Store Commerce für Windows unterstützt. Im Offline-Modus kann der POS weiter Verkäufe verarbeiten, selbst wenn er von der Commerce Scale Unit getrennt ist. Sie kann mit der Kanaldatenbank dann synchronisiert werden, sofern die Konnektivität zurückgesetzt wird. Store Commerce verwendet eine eigene eingebettete Instanz des CRT und verwendet vorübergehend eine eigene lokale Datenquelle (offline SQL Server-Datenbank). Weitere Informationen finden Sie unter [POS Offline-Funktionalität](pos-offline-functionality.md).
 
 ### <a name="pos-peripheralhardware-considerations"></a>POS-Peripheriegeräte-/-Hardwareüberlegungen
 
-Einzelhändler müssen auch entscheiden, wie der POS auf Geräte wie Drucker, Bargeldladen und Zahlungsterminals zugreift. Nur MPOS für Windows unterstützt direkte Kommunikation mit diesen Geräten. MPOS für Windows Phone, IOS oder Android und Cloud POS benötigen eine Hardwarestation, um auf diese Geräte zuzugreifen. Hardwarestationen können einem POS-Register zugewiesen werden oder unter den Kassen in einer Filiale verwendet werden. Weitere Informationen dazu, wie die Hardwarestation installiert wird, finden Sie unter [Retail-Hardwarestation-Konfiguration und -Installation](retail-hardware-station-configuration-installation.md).
+Einzelhändler müssen auch entscheiden, wie der POS auf Geräte wie Drucker, Bargeldladen und Zahlungsterminals zugreift. Hardwarestationen können einem POS-Register zugewiesen werden oder unter den Kassen in einer Filiale verwendet werden.
+
+| POS-Bewerbung            | Lokaler HWS OPOS | Netzwerkperipheriegeräte | Gemeinsame HWS-Unterstützung |
+|----------------------------|----------------|---------------------|--------------------|
+| Store Commerce für Windows | Ja            | Ja                 | Ja                |
+| Store Commerce für Android | Nein             | Ja                 | Ja                |
+| Store Commerce für iOS     | Nein             | Nein                  | Ja                |
+| Cloud POS                  | Nein             | Nein                  | Ja                |
+
+Weitere Informationen dazu, wie die Hardwarestation installiert wird, finden Sie unter [Retail-Hardwarestation-Konfiguration und -Installation](retail-hardware-station-configuration-installation.md).
 
 ## <a name="implementation-considerations"></a>Implementierungsüberlegungen
 
@@ -94,14 +104,14 @@ Berücksichtigen Sie die folgenden Informationen, wie Sie die POS-Implementierun
 
     Sofern die Konnektivität für ein gegebenes Gerät sehr zuverlässig und elastisch ist oder wenn ein bestimmter Betrag von Ausfallzeiten für den Einzelhändler akzeptabel ist, wird eine der folgenden Optionen empfohlen:
 
-    - Verwenden Sie MPOS in Windows, und ermöglichen Sie den Offline-Modus.
+    - Verwenden Sie Store Commerce in Windows, und aktivieren Sie den Offline-Modus.
     - Stellen Sie eine lokale Commerce Scale Unit bereit.
 
     Diese beiden Optionen sind nicht einheitlich exklusiv. Für die zuverlässigste Topologie, können Einzelhändler eine lokale RSSU bereitstellen, um die Abhängigkeit für die Internet-Konnektivität oder Azure-Verfügbarkeit zu reduzieren, und sie können auch POS-Register bereitstellen, in denen der Offline-Modus aktiviert wird, wenn ein Problem mit dem lokalen Server oder im Netzwerk vorhanden ist.
 
-- **Hardwaregeräte/Peripheriegeräte** – Ein wichtiger Aspekt eines Retail POS-Systems ist die Möglichkeit, Drucker, Geldladen und Zahlungsterminals zu verwenden. Obwohl alle verfügbaren POS-Optionen Peripheriegeräte verwenden, können nur MPOS für Windows diese direkt unterstützen. Bei allen anderen Anwendungen ist eine oder mehrere Hardwarestationen erforderlich. Obwohl dieser Ansatz Flexibilität hinzufügt, müssen zusätzliche Komponenten bereitgestellt, konfiguriert und verwaltet werden.
+- **Hardwaregeräte/Peripheriegeräte** – Ein wichtiger Aspekt eines Retail POS-Systems ist die Möglichkeit, Drucker, Geldladen und Zahlungsterminals zu verwenden. Obwohl alle verfügbaren POS-Optionen Peripheriegeräte verwenden können, unterstützt nur Store Commerce für Windows diese direkt. Bei allen anderen Anwendungen ist eine oder mehrere Hardwarestationen erforderlich. Obwohl dieser Ansatz Flexibilität hinzufügt, müssen zusätzliche Komponenten bereitgestellt, konfiguriert und verwaltet werden.
 - **Systemanforderungen** – Die Systemanforderungen für die POS-Anwendung unterscheiden sich. Stellen Sie sicher, die neuesten Informationen zu überprüfen, bevor Sie Ihre Auswahl treffen. Weil CPOS beispielsweise in einen Browser ausgeführt wird, unterstützt sie einen breiteren Bereich von Betriebssystemen. Weitere Informationen zu den Systemanforderungen finden Sie unter [Systemanforderungen für Cloud-Bereitstellung](../fin-ops-core/fin-ops/get-started/system-requirements.md).
-- **Bereitstellung und Verwalten** – Die Komplexität der Bereitstellung und Wartungsanforderungen kann unterschiedlich sein, abhängig von der Anwendungen und der Bereitstellungs-Auswahlen. Beispiel für eine Cloud-gehostete CPOS-Bereitstellung ist, dass Sie nicht jedes Gerät installieren und aktualisieren müssen. Daher verringert dieser Ansatz Komplexität und Kosten. Wenn Sie jedoch MPOS für jedes Register bereitstellen und den Offline-Modus aktivieren, und Sie auch geteilte Hardware-Stationen bereitstellen, erhöhen Sie die Anzahl von Endpunkten, die verwaltet werden müssen.
+- **Bereitstellung und Verwalten** – Die Komplexität der Bereitstellung und Wartungsanforderungen kann unterschiedlich sein, abhängig von der Anwendungen und der Bereitstellungs-Auswahlen. Beispiel für eine Cloud-gehostete CPOS-Bereitstellung ist, dass Sie nicht jedes Gerät installieren und aktualisieren müssen. Daher verringert dieser Ansatz Komplexität und Kosten. Wenn Sie jedoch Store Commerce für jedes Register bereitstellen und den Offline-Modus aktivieren, und Sie auch geteilte Hardware-Stationen bereitstellen, erhöhen Sie deutlich die Anzahl von Endpunkten, die verwaltet werden müssen.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

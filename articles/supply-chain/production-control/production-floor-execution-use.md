@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: a677eb71f97a953c625a1f667b055e5b7696fbe6
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: f163b8feb906470f31a648bf09abf5647c5f1bab
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384418"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644989"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte
 
@@ -74,9 +74,9 @@ Die Liste der aktiven Aufträge enthält die folgenden Spalten:
 
 ## <a name="my-jobs-tab"></a>Registerkarte Meine Aufträge
 
-Auf der Registerkarte **Meine Aufträge** können Arbeitskräfte ganz einfach alle nicht gestarteten und nicht beendeten Aufträge einsehen, die ihnen speziell zugewiesen sind. Es ist nützlich in Unternehmen, in denen Aufträge manchmal oder immer bestimmten Arbeitskräften (Human Resources) statt anderen Arten von Ressourcen (z.B. Maschinen) zugewiesen werden. 
+Auf der Registerkarte **Meine Aufträge** können Arbeitskräfte ganz einfach alle nicht gestarteten und nicht beendeten Aufträge einsehen, die ihnen speziell zugewiesen sind. Es ist nützlich in Unternehmen, in denen Aufträge manchmal oder immer bestimmten Arbeitskräften (Human Resources) statt anderen Arten von Ressourcen (z.B. Maschinen) zugewiesen werden.
 
-Das Planungssystem ordnet jeden Produktionsauftrag automatisch einem bestimmten Datensatz zu, und jeder Ressourcendatensatz hat einen Typ (z.B. Maschine oder Mensch). Wenn Sie einen Mitarbeiter als Arbeitskraft in der Produktion festlegen, können Sie das Konto des Mitarbeiters mit einem eindeutigen Datensatz der Humanressourcen verknüpfen. 
+Das Planungssystem ordnet jeden Produktionsauftrag automatisch einem bestimmten Datensatz zu, und jeder Ressourcendatensatz hat einen Typ (z.B. Maschine oder Mensch). Wenn Sie einen Mitarbeiter als Arbeitskraft in der Produktion festlegen, können Sie das Konto des Mitarbeiters mit einem eindeutigen Datensatz der Humanressourcen verknüpfen.
 
 Die Registerkarte **Meine Aufträge** listet alle nicht gestarteten und nicht beendeten Aufträge auf, die dem Datensatz der angemeldeten Arbeitskraft zugewiesen wurden, sofern eine Arbeitskraft angemeldet ist. Es listet niemals Aufträge auf, die einer Maschine oder einer anderen Art von Ressource zugewiesen wurden, selbst wenn die angemeldete Arbeitskraft mit der Arbeit an diesen Aufträgen begonnen hat.
 
@@ -87,7 +87,7 @@ Um alle Aufträge anzuzeigen, die von der angemeldeten Arbeitskraft gestartet wu
 ## <a name="my-machine-tab"></a>Registerkarte „Meine Maschine“
 
 Auf der Registerkarte **Meine Maschine** können Arbeitskräfte eine Anlage auswählen, die mit einer Maschinenressource innerhalb des auf der Registerkarte **Alle Aufträge** festgelegten Filters liegt. Die Arbeitskraft kann dann den Status und den Zustand der ausgewählten Anlage anzeigen, indem sie Werte für bis zu vier ausgewählte Zähler und Listen der letzten Wartungsanfragen und registrierten Ausfallzeiten abliest. Die Arbeitskraft kann auch eine Wartung für die ausgewählte Anlage anfordern und Ausfallzeiten der Maschine registrieren und bearbeiten. (Dieser Registerkartenname ist anpassbar und kann für Ihr System unterschiedlich sein.)
- 
+
 ![Die Registerkarte „Meine Maschine“.](media/pfei-my-machine-tab.png "Die Registerkarte „Meine Maschine“")
 
 Die Registerkarte **Meine Maschine** enthält die folgenden Spalten. Die Nummern entsprechen den Nummern in der vorherigen Abbildung.
@@ -202,9 +202,9 @@ Die folgenden Aktionen können durchgeführt werden:
 - Wenn die Arbeitskraft **OK** wählt, wird die Kommissionierliste nicht gelöscht. Es wird gepostet, wenn der Auftrag im Dialogfeld **Ausschuss melden** oder **Fortschritt melden** gemeldet wird.
 - Wenn die Arbeitskraft **Abbrechen** in der Dialogbox **Fortschrittsbericht** oder **Ausschussbericht** wählt, wird die Kommissionierliste gelöscht.
 
-### <a name="adjust-material-from-the-toolbar-on-the-right"></a>Passen Sie das Material über die Symbolleiste auf der rechten Seite an
+### <a name="adjust-material-from-the-primary-or-secondary-toolbar"></a>Material über die primäre oder sekundäre Symbolleiste anpassen
 
-Die Schaltfläche **Material anpassen** kann so konfiguriert werden, dass sie in der Symbolleiste auf der rechten Seite erscheint. (Weitere Informationen finden Sie unter [Design der Produktionsausführungsoberfläche](production-floor-execution-tabs.md).) Eine Arbeitskraft kann **Material anpassen** für einen laufenden Produktionsauftrag auswählen. In diesem Fall erscheint das Dialogfenster **Material anpassen**, in dem die Arbeitskraft die gewünschten Anpassungen vornehmen kann. Wenn das Dialogfenster geöffnet wird, wird für den Produktionsauftrag eine Kommissionierliste erstellt, die Zeilen für die angepassten Mengen enthält. Wählt die Arbeitskraft **Jetzt buchen**, wird die Anpassung bestätigt und die Kommissionierliste wird gebucht. Wenn die Arbeitskraft **Abbrechen** wählt, wird die Kommissionierliste gelöscht und keine Anpassung vorgenommen.
+Die Schaltfläche **Material anpassen** kann so konfiguriert werden, dass sie in der primären oder sekundären Symbolleiste erscheint. (Weitere Informationen finden Sie unter [Design der Produktionsausführungsoberfläche](production-floor-execution-tabs.md).) Eine Arbeitskraft kann **Material anpassen** für einen laufenden Produktionsauftrag auswählen. In diesem Fall erscheint das Dialogfenster **Material anpassen**, in dem die Arbeitskraft die gewünschten Anpassungen vornehmen kann. Wenn das Dialogfenster geöffnet wird, wird für den Produktionsauftrag eine Kommissionierliste erstellt, die Zeilen für die angepassten Mengen enthält. Wählt die Arbeitskraft **Jetzt buchen**, wird die Anpassung bestätigt und die Kommissionierliste wird gebucht. Wenn die Arbeitskraft **Abbrechen** wählt, wird die Kommissionierliste gelöscht und keine Anpassung vorgenommen.
 
 ### <a name="adjust-material-consumption-for-catch-weight-items"></a>Anpassung des Materialverbrauchs für Artikel mit Artikelgewicht
 
@@ -260,6 +260,42 @@ In beiden Szenarien wechselt Shannon, nachdem sie ihre Auswahl bestätigt hat, e
 Arbeitskräfte können Pausen registrieren. Pausen können flexibel definiert werden, wie beschrieben in [Lohn auf Basis von Erfassungen](pay-based-on-registrations.md).
 
 Eine Arbeitskraft erfasst eine Pause, indem er **Pause** auswählt und dann die Karte auswählt, die den Pausentyp darstellt (z. B. Mittagessen). Nachdem die Arbeitskraft die Auswahl bestätigt hat, zeigt das Gerät entweder die Anmeldeseite oder eine Seite an, die darauf wartet, dass die Arbeitskraft bestätigt, dass er von der Pause zurückgekehrt ist. Die angezeigte Seite hängt von der Konfiguration der Produktionsausführungsoberfläche ab. (Weitere Informationen finden Sie unter [Einrichten der Produktionsausführungsoberfläche](production-floor-execution-configure.md).)
+
+## <a name="view-the-my-day-dialog"></a>Dialogfeld „Mein Tag“ anzeigen
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Das Dialogfeld **Mein Tag** gibt Arbeitskräften einen Überblick über ihre Registrierungen und Salden. Der Dialog ist in die folgenden drei Abschnitte unterteilt:
+
+- Der Hauptbereich listet die Registrierungen auf, die die aktuelle Arbeitskraft an einem ausgewählten Datum vorgenommen hat. Er zeigt beim Öffnen die Registrierungen für den aktuellen Tag an. Außerdem bietet er eine Datumsauswahl, mit der die Arbeitskraft andere Tage anzeigen kann.
+- Der Abschnitt **Zuletzt berechneter Tagessaldo** zeigt die aktuellen Salden der Arbeitskraft für entlohnte Zeit, entlohnte Überstunden, Abwesenheit und entlohnte Abwesenheit. Diese Werte basieren auf den Registrierungen, die während des Genehmigungsverfahrens berechnet wurden.
+- Der Abschnitt **Salden** bietet einen Überblick über die Salden innerhalb eines definierten Zeitraums für ausgewählte Registrierungskategorien (z. B. Urlaub, Standardzeit und Überstunden). Diese Salden basieren auf der Art und Weise, wie statistische Salden im Modul **Zeit und Anwesenheit** erstellt werden. Weitere Informationen zum Einrichten finden Sie unter [Urlaubssalden in der Produktionsausführungsoberfläche anzeigen](production-floor-execution-payroll-stats.md).
+
+Administratoren können diese Funktion zur Benutzeroberfläche hinzufügen, indem sie die Schaltfläche **Mein Tag** auf einer Symbolleiste für jede relevante Registerkarte platzieren, wie beschrieben in [Produktionsausführungsoberfläche entwerfen](production-floor-execution-tabs.md).
+
+## <a name="working-in-teams"></a>In Teams arbeiten
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Wenn mehrere Arbeitskräfte demselben Produktions-Einzelvorgang zugewiesen werden, können sie ein Team bilden. Das Team kann einen Mitarbeiter als Pilot ernennen. Die verbleibenden Arbeitskräfte werden dann automatisch zu Assistenten dieses Piloten. Für das resultierende Team muss nur der Pilot den Einzelvorgangstatus registrieren. Zeiterfassungen gelten für alle Teammitglieder.
+
+### <a name="prerequisites"></a>Voraussetzungen
+
+Um Teams zu verwenden, muss ein Administrator die Aktion **Assistent** für die primäre Symbolleiste auf der Registerkarte **Alle Einzelvorgänge** der Produktionsausführungsoberfläche aktivieren. Anweisungen finden Sie unter [Produktionsausführungsoberfläche entwerfen](production-floor-execution-tabs.md).
+
+### <a name="form-a-new-team-that-has-a-pilot-and-an-assistant"></a>Ein neues Team mit einem Piloten und einem Assistenten bilden
+
+Eine Arbeitskraft kann sich als Assistent registrieren, indem sie **Assistent** in der Registerkarte **Alle Einzelvorgänge** auswählt. Dann kann die Arbeitskraft im angezeigten Dialogfeld **Mitarbeiter zur Unterstützung auswählen** einen Piloten aus einer Liste von Arbeitskräften auswählen, die aktiv an einem Auftrag arbeiten. Nachdem die Arbeitskraft ihre Auswahl bestätigt hat, wird sie zum Assistenten der ausgewählten Arbeitskraft, die zum Piloten für das neue Team wird.
+
+### <a name="assign-a-new-pilot-to-an-existing-team"></a>Neuen Piloten zu einem vorhandenen Team zuweisen
+
+Wenn ein Team einen neuen Piloten auswählen möchte, muss der aktuelle Pilot eine andere Arbeitskraft im Team als neuen Piloten ernennen. Um einen neuen Piloten zu nominieren, wählt der aktuelle Pilot **Assistent** auf der Registerkarte **Alle Einzelvorgänge** aus. Im angezeigten Dialogfeld **Pilot wechseln** kann der Pilot nun einen neuen Piloten aus einer Liste von Arbeitskräften auswählen, die bereits im Team sind. Nachdem der aktuelle Pilot seine Auswahl bestätigt hat, wird er vollständig aus dem Team gestrichen. Er kann dem Team jedoch bei Bedarf wieder beitreten.
+
+### <a name="assistant-clocks-out"></a>Assistent stempelt aus
+
+Wenn eine Arbeitskraft, die als Assistent arbeitet, ausstempelt, verlässt sie das Team. Wenn die Optionen **Permanente Teams** und **Beim Einstempeln erneut starten** auf *Ja* eingestellt sind, wird eine Arbeitskraft, die sich ausstempelt, automatisch wieder dem Team beitreten, wenn sie sich das nächste Mal einstempelt. Sie finden diese Optionen auf der Registerkarte **Allgemein** der Seite **Zeit‑ und Anwesenheitsparameter**.
 
 ## <a name="opening-instructions"></a>Anweisungen zum Öffnen
 

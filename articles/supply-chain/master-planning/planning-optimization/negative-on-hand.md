@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 4eb8f6aee50d74127ecc816af691a96bb1d8966b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: bb837a38485bad2b9b76a5e4f20d311c0281e192
+ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469141"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8625388"
 ---
 # <a name="planning-with-negative-on-hand-quantities"></a>Planung mit negativen Vorgabemengen
 
@@ -75,7 +75,7 @@ Das Ergebnis ist ein Planauftrag von 25 Stück. (= 25 Stk. &minus; 0 Stk.), um L
 
 ## <a name="planning-when-there-is-a-reservation-against-negative-on-hand-inventory"></a>Planung, wenn eine Reservierung gegen negativen verfügbaren Lagerbestand vorliegt
 
-Wenn Sie den Lagerbestand anpassen, während physische Reservierungen vorhanden sind, können Sie eine Situation verursachen, in der eine Bestellung physisch gegen negativen Lagerbestand reserviert wird. Da in diesem Fall eine physische Reservierung vorhanden ist, geht die Planungsoptimierung davon aus, dass diese vom verfügbaren Lagerbestand gedeckt wird, auch wenn der Eingang des verfügbar Lagerbestands noch nicht im System eingetragen ist. Daher wird davon ausgegangen, dass keine Wiederbeschaffung erforderlich ist, und es wird kein Bestellvorschlag erstellt, um die Auftragsmenge aufzufüllen.
+Wenn Sie den Lagerbestand anpassen, während physische Reservierungen vorhanden sind, können Sie eine Situation verursachen, in der eine Bestellung physisch gegen negativen Lagerbestand reserviert wird. Da in diesem Fall eine physische Reservierung besteht, müssen Sie einen Vorrat haben, um die reservierte Menge zu decken. Daher ist eine Wiederbeschaffung erforderlich, sodass das System entweder einen Auftragsvorschlag erstellt, um die Menge aufzufüllen, die nicht durch den vorhandenen Lagerbestand abgedeckt werden konnte, oder sie mit einer vorhandenen Bestellung für den Artikel abdeckt.
 
 Das folgende Beispiel illustriert dieses Szenario.
 
@@ -88,7 +88,7 @@ Das System ist wie folgt konfiguriert:
 - Ein Auftrag für eine Menge von *10* Stk. des Produkts *FG* liegt vor.
 - Die Auftragsmenge wird physisch für den vorhandenen Lagerbestand reserviert.
 
-Sie passen dann die Menge des Produkts *FG* an, sodass der verfügbare Bestand 0 (null) wird. Da der verfügbare Produktbestand null ist, wird die Auftragsmenge jetzt für den negativen Bestand reserviert. Wenn Sie jedoch jetzt die Produktprogrammplanung ausführen, wird kein Bestellvorschlag zur Erledigung des Auftrags erstellt, da die Planungsoptimierung davon ausgeht, dass der erforderliche verfügbare Lagerbestand für die Erledigung der physischen Reservierung vorhanden ist.
+Sie passen dann die Menge des Produkts *FG* an, sodass der verfügbare Bestand 5 wird. Da der verfügbare Produktbestand 5 beträgt, wird die Auftragsmenge jetzt für eine Menge reserviert, die nicht verfügbar ist (es wäre ähnlich, wenn der verfügbare Bestand 0 wäre, in diesem Fall würde der Auftrag gegen negativen Bestand reserviert werden). Wenn Sie jetzt die Produktprogrammplanung ausführen, wird ein Auftragsvorschlag der Menge 5 für *FG* zur Erledigung des Auftrags erstellt, da die Planungsoptimierung immer vorhandenen Vorrat verwendet oder einen neuen Auftragsvorschlag zur Erledigung der physischen Reservierung erstellt.
 
 ## <a name="related-resources"></a>Zugehörige Ressourcen
 

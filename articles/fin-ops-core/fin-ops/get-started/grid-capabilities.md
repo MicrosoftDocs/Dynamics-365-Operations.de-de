@@ -2,7 +2,7 @@
 title: Rasterfunktionen
 description: In diesem Thema werden mehrere leistungsstarke Funktionen der Rastersteuerung beschrieben. Sie müssen die neue Rasterfunktion aktivieren, damit auf diese Fähigkeiten zugegriffen werden kann.
 author: jasongre
-ms.date: 03/21/2022
+ms.date: 04/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 08348185a424d20b6da1563189496b7dd51944d9
-ms.sourcegitcommit: edc887e0526c415466e9691e642028ecd97cdbe7
+ms.openlocfilehash: 57133a853d1700b2d8ebb938f93af475410b82cb
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "8602961"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644412"
 ---
 # <a name="grid-capabilities"></a>Rasterfunktionen
 
@@ -106,7 +106,7 @@ Um diese Funktion zu verwenden, klicken Sie mit der rechten Maustaste auf die Sp
 - Anzahl der Datenzeilen in dieser Gruppe
 - Zwischensummen für jede Spalte, die zur Anzeige von Gesamtsummen konfiguriert ist
 
-Wenn [Gespeicherte Ansichten](saved-views.md) aktiviert ist, kann diese Gruppierung im Rahmen der Personalisierung als Teil einer Ansicht gespeichert werden, damit Sie beim nächsten Besuch der Seite schnell darauf zugreifen können.
+Wenn [Gespeicherte Ansichten](saved-views.md) aktiviert ist, können Sie die Gruppierung als Teil einer Ansicht auf Seiten speichern, auf denen Abfragen in Ansichten gespeichert werden können. Zum Beispiel solche mit großen Ansichtswählern. Ausführlichere Informationen finden Sie im Abschnitt [Wechsel zwischen Ansichten](saved-views.md#switching-between-views). 
 
 ### <a name="multiple-levels-of-grouping"></a>Mehrere Gruppierungsebenen
 Nachdem Sie Daten nach einer einzelnen Spalte gruppiert haben, können Sie die Daten durch Auswahl von **Nach dieser Spalte gruppieren** für die gewünschte Spalte nach einer anderen Spalte gruppieren. Dieser Prozess kann wiederholt werden, bis Sie 5 verschachtelte Gruppierungsebenen haben. Dies ist die maximal unterstützte Tiefe. Ab diesem Zeitpunkt können Sie nicht mehr nach zusätzlichen Spalten gruppieren.

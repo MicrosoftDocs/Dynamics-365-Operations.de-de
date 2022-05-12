@@ -2,7 +2,7 @@
 title: Übersicht über die Budgetsteuerung
 description: In diesem Thema werden die Budgetsteuerungsfunktionen vorgestellt und Informationen bereitgestellt, die Sie bei der Konfiguration der Budgetsteuerung unterstützen, um die Verwaltung der Finanzressourcen Ihres Unternehmens zu optimieren.
 author: panolte
-ms.date: 11/08/2021
+ms.date: 03/28/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14b852bb4aeca927adeeb2665b9887e467b71158
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 7019b3546b83047e91fa129d8d92f209f131c993
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986055"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644846"
 ---
 # <a name="budget-control-overview"></a>Übersicht über die Budgetsteuerung
 
@@ -80,7 +80,9 @@ Dann können Sie auf der Registerkarte **Verfügbare Budgetmittel** die Formel d
 > [!NOTE]
 > Wenn diese Berechnung während eines Budgetzyklus geändert wird, beachten Sie, dass Dokumente, die möglicherweise zuvor Budgetsteuerungsüberprüfungen bestanden haben und gebucht oder abgeschlossen wurden, diesen Status beibehalten. Mit einer Funktion mit dem Namen **Nur Beträge in der Berechnung der verfügbaren Haushaltsmittel verfolgen** können Sie ändern, welche Daten in den BudgetSourceTracking-Tabellen verfolgt werden. Wenn diese Funktion aktiviert ist, werden Beträge nur gespeichert, wenn sie für die Berechnung der verfügbaren Budgetmittel ausgewählt wurden. Weitere Informationen finden Sie unter [Budgetmittel verfügbar](budget-funds-available.md).
 
-Auf der Registerkarte **Dokumente und Erfassung** können Sie auswählen, welche Quelldokumente und Erfassungen von Budgetsteuerungsüberprüfungen abhängig sind und ob die Prüfung am Positionseintrag oder für das gesamte Dokument durchgeführt wird. 
+### <a name="documents-and-journals"></a>Dokumente und Erfassungen
+
+Auf der Registerkarte **Dokumente und Erfassung** können Sie auswählen, welche Quelldokumente und Erfassungen von Budgetsteuerungsüberprüfungen abhängig sind und ob die Prüfung am Positionseintrag oder für das gesamte Dokument durchgeführt wird. Außerdem bietet die neue Funktion **Filteroptimierung für Budgetsteuerungsdokument** Funktion, die ab Microsoft Dynamics 365 Finance Version 10.0.27 verfügbar ist, eine abfragebasierte Filteroption für jedes Dokument, das in der Budgetsteuerung enthalten ist. Daher können Sie angeben, welche Budgetsteuerungsbelege budgetgeprüft werden. Auf diese Weise ermöglicht die Funktion, dass nur eine Teilmenge eines Dokumententyps budgetgeprüft wird. Beispielsweise können Sie nur Bestellungen prüfen, bei denen das **Pool**-Feld auf **01** eingestellt ist. Eine neue Spalte, die der Registerkarte **Dokumente und Erfassungen** hinzugefügt wird, gibt an, ob für den ausgewählten Dokumenttyp eine Abfrage definiert ist. Darüber hinaus können Sie mit zwei neuen Schaltflächen, die der Symbolleiste über dem Dokumentraster hinzugefügt werden, Filter hinzufügen, bearbeiten oder löschen. 
 
 Wählen Sie die Quelldokumente, die in den Kontrollkästchen aktiviert sind, damit die Summen in der Berechnung der verfügbaren Budgetmittel eingeschlossen sind. Wenn Sie beispielsweise **Budgetreservierungen für Belastungen** ausgewählt haben, sollten Sie die Option **Bestellungen** auswählen. Wenn die Budgetprüfung für die Beträge und Konten in einer Bestellposition ausgeführt wird, ist **Belastung** die Budgetsteuerungskategorie, die der Reservierung zugewiesen wird. Wenn die Budgetprüfung für die Beträge und Konten in einer Bestellanforderung ausgeführt wird, ist die Budgetsteuerungskategorie, die der Reservierung zugewiesen wird **vorbelastet**. 
 

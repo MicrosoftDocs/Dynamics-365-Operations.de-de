@@ -2,7 +2,7 @@
 title: Konfigurieren der Zahlungsmethode des Kundenkontos für B2B-E-Commerce-Websites
 description: In diesem Thema wird beschrieben, wie Sie die Zahlungsmethode des Kundenkontos in Microsoft Dynamics 365 Commerce konfigurieren. Außerdem wird beschrieben, wie sich Kreditlimits auf die Erfassung von Auf-Rechnung-Zahlungen auf Business-to-Business-(B2B)-E-Commerce-Websites auswirken.
 author: josaw1
-ms.date: 02/16/2022
+ms.date: 04/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0366f7b51ac138cc7305f98d5607c554440e6d34
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: a8fdeb109204557f0e44457e23a60224e662474f
+ms.sourcegitcommit: 96e2fb26efd2cd07bbf97518b5c115e17b77a0a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323354"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "8616831"
 ---
 # <a name="configure-the-customer-account-payment-method-for-b2b-e-commerce-sites"></a>Konfigurieren der Zahlungsmethode des Kundenkontos für B2B-E-Commerce-Websites
 
@@ -80,22 +80,22 @@ Die Werte, die von der Eigenschaft **Kreditlimitart** unterstützt werden, sind 
 > [!NOTE]
 > Wir empfehlen Ihnen, die Eigenschaft **Kreditlimitart** auf **Saldo + Lieferschein oder Produktzugang** festzulegen, sodass offene Verkaufsaufträge nicht zur Saldenberechnung beitragen. Wenn Ihre Kunden dann in Zukunft Aufträge aufgeben, müssen sie sich keine Sorgen machen, dass diese Aufträge ihren aktuellen Kontostand beeinträchtigen.
 
-Eine weitere Eigenschaft, die sich auf die Auf-Rechnung-Aufträge auswirkt, ist die Eigenschaft **Kreditlimit erforderlich** im Inforegister **Kredit und Inkasso** des Kundendatensatzes. Wenn Sie diese Eigenschaft für bestimmte Kunden auf **Ja** festlegen, können Sie das System dazu zwingen, ihr Kreditlimit zu prüfen, auch wenn die Eigenschaft **Kreditlimitart** auf **Keine** festgelegt wurde, um anzugeben, dass das Kreditlimit für keinen Kunden geprüft werden soll.
+Eine weitere Eigenschaft, die sich auf die Auf-Rechnung-Aufträge auswirkt, ist die Eigenschaft **Kreditlimit erforderlich** im Inforegister **Kredit und Inkasso** des Kundendatensatzes. Wenn Sie diese Eigenschaft für bestimmte Kunden auf **Ja** festlegen, können Sie das System dazu zwingen, ihr Kreditlimit zu prüfen, auch wenn die Eigenschaft **Kreditlimit-Typ** auf **Keiner** festgelegt wurde, um anzugeben, dass das Kreditlimit für keinen Kunden geprüft werden soll.
 
-Derzeit sind B2B-Sites, auf denen die Eigenschaft **Kreditlimit erforderlich** aktiviert ist, haben zusätzliche Funktionen. Wenn die Eigenschaft in einem Kundendatensatz aktiviert ist und der Kunde einen Auftrag aufgibt, hindert die B2B-Site ihn daran, die Zahlungsmethode „Auf Rechnung“ zu verwenden, um mehr als das verbleibende Guthaben zu zahlen. Wenn das verbleibende Kreditsaldo des Kunden beispielsweise 1.000 $ beträgt, der Auftrag aber einen Wert von 1.200 $ hat, kann der Kunde nur 1.000 $ auf Rechnung bezahlen. Er muss eine andere Zahlungsmethode verwenden, um den Restbetrag zu bezahlen. Wenn die Eigenschaft **Kreditlimit erforderlich** in einem Kundendatensatz deaktiviert ist, kann der Kunde einen beliebigen Betrag mit der Zahlungsmethode „Auf Rechnung“ bezahlen. Obwohl ein Kunde Aufträge aufgeben kann, lässt das System jedoch nicht zu, dass diese Aufträge ausgeführt werden, wenn sie das Kreditlimit überschreiten. Wenn Sie das Kreditlimit für alle Kunden, die Auf-Rechnung-Zahlungen nutzen dürfen, prüfen müssen, empfehlen wir Ihnen, die Eigenschaft **Kreditlimitart** auf **Saldo + Lieferschein oder Produktzugang** und die Eigenschaft **Kreditlimit erforderlich** auf **Nein** festzulegen.
+Aktuell kann ein Kunde mit der Akonto-Zahlungsmethode nicht mehr als das Restguthaben für eine Bestellung bezahlen. Wenn der verbleibende Habensaldo des Kunden beispielsweise 1.000 $ beträgt, der Auftrag aber einen Wert von 1.200 $ hat, kann der Kunde nur 1.000 $ mit der Akonto-Methode bezahlen. Der Kunde muss dann eine andere Zahlungsmethode verwenden, um den Restbetrag zu bezahlen. In einer zukünftigen Version wird eine Commerce-Konfiguration es den Benutzern ermöglichen, mehr als ihr Kreditlimit auszugeben, wenn sie Bestellungen aufgeben.
 
 Das Modul **Kredit und Inkasso** verfügt über neue Kreditmanagementfunktionen. Um diese Funktionen zu aktivieren, aktivieren Sie die Eigenschaft **Kreditmanagement** im Arbeitsbereich **Funktionsverwaltung**. Eine der neuen Funktionen ermöglicht es, Verkaufsaufträge auf der Grundlage von Sperrregeln zu sperren. Die Persona des Kreditmanagers kann die Aufträge dann nach weiterer Analyse freigeben oder ablehnen. Die Möglichkeit, Verkaufsaufträge zu sperren, gilt jedoch nicht für E-Commerce-Aufträge, da Verkaufsaufträge oft eine Vorauszahlung haben und die Funktion **Kreditmanagement** Vorauszahlungsszenarien nicht vollständig unterstützt. 
 
 Egal ob die Funktion **Kreditmanagement** aktiviert ist oder nicht, werden die Verkaufsaufträge nicht gesperrt, wenn ein Kundensaldo während der Auftragserfüllung das Kreditlimit überschreitet. Stattdessen generiert Commerce je nach Wert des Felds **Meldung bei Überschreitung des Kreditlimits** im Inforegister **Kreditlimits** entweder eine Warnmeldung oder eine Fehlermeldung.
 
-Die Eigenschaft **Vom Kreditmanagement ausschließen**, die verhindert, dass Commerce-Verkaufsaufträge gesperrt werden, befindet sich in der Auftragskopfzeile (**Einzelhandel und Handel \> Kunden \> Alle Verkaufsaufträge**). Wenn diese Eigenschaft auf **Ja** (den Standardwert) für Commerce-Verkaufsaufträge eingestellt ist, werden die Aufträge vom gesperrten Workflow des Kreditmanagements ausgeschlossen. Beachten Sie, dass, obwohl die Eigenschaft **Vom Kreditmanagement ausschließen** heißt, das festgelegte Kreditlimit weiterhin während der Auftragserfüllung verwendet wird. Die Aufträge werden nur nicht gesperrt.
+Die Eigenschaft **Vom Kreditmanagement ausschließen**, die verhindert, dass Commerce-Verkaufsaufträge gesperrt werden, befindet sich in der Auftragskopfzeile (**Einzelhandel und Handel \> Kunden \> Alle Verkaufsaufträge**). Wenn diese Eigenschaft auf **Ja** (den Standardwert) für Commerce-Verkaufsaufträge eingestellt ist, werden die Aufträge vom gesperrten Workflow des Kreditmanagements ausgeschlossen. Obwohl die Eigenschaft **Von Kreditmanagement ausschließen** heißt, wird das festgelegte Kreditlimit weiterhin während der Auftragserfüllung verwendet. Die Aufträge werden nur nicht gesperrt.
 
 Die Funktion, Commerce-Verkaufsaufträge basierend auf Sperrregeln zu sperren, ist für zukünftige Commerce-Versionen geplant. Bis dahin können Sie die folgenden XML-Dateien in Ihrer Visual Studio-Lösung anpassen, wenn Sie Commerce-Verkaufsaufträge erzwingen müssen, um die neuen Kreditmanagementflows zu durchlaufen. Ändern Sie in den Dateien die Logik so, dass die Markierung **CredManExcludeSalesOrder** auf **Nein** gesetzt ist. Auf diese Weise wird die Eigenschaft **Vom Kreditmanagement ausschließen** für Commerce-Verkaufsaufträge standardmäßig auf **Nein** gesetzt.
 
 - RetailCreateCustomerOrderExtensions_CredMan_Extension.xml
 - RetailCallCenterOrderExtensions_CredMan_Extension.xml
 
-Beachten Sie, dass, wenn die Markierung **CredManExcludeSalesOrder** auf **Nein** gesetzt ist und ein B2B-Kunde in Geschäften einkaufen, indem er die Point-of-Sale-Anwendung (POS-Anwendung) verwendet, kann die Buchung von Cash-and-Carry-Transaktionen fehlschlagen. Zum Beispiel: Es gibt eine Sperrregel für die Zahlungsart „Bar“ und der B2B-Kunde hat einige Artikel im Geschäft bar bezahlt. In diesem Fall wird der resultierende Verkaufsauftrag nicht erfolgreich in Rechnung gestellt, da er gesperrt wird. Daher schlägt die Buchung fehl. Aus diesem Grund empfehlen wir Ihnen, nach der Implementierung dieser Anpassung End-to-End-Tests durchzuführen.
+Wenn die Markierung **CredManExcludeSalesOrder** auf **Nein** gesetzt ist und ein B2B-Kunde in Geschäften einkaufen kann, indem er die Point-of-Sale-Anwendung (POS-Anwendung) verwendet, kann die Buchung von Cash-and-Carry-Transaktionen fehlschlagen. Zum Beispiel: Es gibt eine Sperrregel für die Zahlungsart „Bar“ und der B2B-Kunde hat einige Artikel im Geschäft bar bezahlt. In diesem Fall wird der resultierende Verkaufsauftrag nicht erfolgreich in Rechnung gestellt, da er gesperrt wird. Daher schlägt die Buchung fehl. Aus diesem Grund empfehlen wir Ihnen, nach der Implementierung dieser Anpassung End-to-End-Tests durchzuführen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

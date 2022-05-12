@@ -2,7 +2,7 @@
 title: Einrichten von Parametern eines EB-Formats pro juristischer Person
 description: In diesem Thema wird erläutert, wie Sie die Parameter eines Elektronische Berichterstellungs(EB)-Formats pro juristischer Entität konfigurieren können.
 author: NickSelin
-ms.date: 10/22/2021
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: cb600c55cb2d40129d1b29ab989bc8f7cf3f4686
-ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
+ms.openlocfilehash: f72ce72e9cbd268efc6ab09dbec7009794d69613
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7927453"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644498"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Einrichten von Parametern eines EB-Formats pro juristischer Person
 
@@ -226,7 +226,7 @@ Wenn Sie anwendungsspezifische Parameter für eine Version eines ER-Formats konf
 Wenn Sie eine Datei für den Import auswählen, wird die Struktur der anwendungsspezifischen Parameter in dieser Datei mit der Struktur der entsprechenden Datenquellen des Typs **Suche** im ER-Format verglichen, die für den Import ausgewählt wird. Standardmäßig ist der Import nur abgeschlossen, wenn die Struktur jedes anwendungsspezifischen Parameters mit der Struktur der entsprechenden Datenquelle im ER-Format übereinstimmt, die für den Import ausgewählt ist. Wenn die Strukturen nicht übereinstimmen, informiert Sie eine Warnmeldung, dass der Import nicht abgeschlossen werden kann. Wenn Sie den Import erzwingen, werden die vorhandenen anwendungsspezifischen Parameter für das ausgewählte ER-Format bereinigt, und Sie müssen Sie noch einmal neu einrichten.
 
 
-Ab Dynamics 365 Finance Version 10.0.24 können Sie das Standardverhalten ändern und das Erhalten einer Warnmeldung vermeiden, indem Sie die **Anwendungsspezifische ER-Parameter beim Importieren ausrichten**-Funktion im **Funktionsverwaltung**-Arbeitsbereich aktivieren. Wenn diese Funktion aktiviert ist, sofern die Struktur der anwendungsspezifischen Parameter, die Sie importieren, sich von der Struktur der entsprechenden Datenquellen im Ziel ER-Format unterscheiden, das für den Import ausgewählt wird, ist der Import in folgenden Fällen erfolgreich:
+Ab Finance-Version 10.0.24 können Sie das Standardverhalten ändern und das Erhalten einer Warnmeldung vermeiden, indem Sie die **Anwendungsspezifische ER-Parameter beim Importieren ausrichten**-Funktion im **Funktionsverwaltung**-Arbeitsbereich aktivieren. Wenn diese Funktion aktiviert ist, sofern die Struktur der anwendungsspezifischen Parameter, die Sie importieren, sich von der Struktur der entsprechenden Datenquellen im Ziel ER-Format unterscheiden, das für den Import ausgewählt wird, ist der Import in folgenden Fällen erfolgreich:
 
 - Die Struktur des Ziel-ER-Formats wurde geändert, indem allen vorhandenen Datenquellen des Typs **Suche** neue Bedingungsspalten hinzugefügt wurden. Wenn der Import abgeschlossen ist, werden die anwendungsspezifischen Parameter aktualisiert. In allen importierten Datensätzen anwendungsspezifischer Parameter werden die Werte in jeder hinzugefügten Bedingungsspalte mit dem Standardwert für den [Datentyp](er-formula-supported-data-types-primitive.md) dieser Spalte initialisiert.
 - Die Struktur des Ziel-ER-Formats wurde geändert, indem einige Bedingungsspalten von allen vorhandenen Datenquellen des Typs **Suche** entfernt wurden. Wenn der Import abgeschlossen ist, werden die anwendungsspezifischen Parameter aktualisiert. In allen importierten Datensätzen anwendungsspezifischer Parameter werden die Werte in jeder entfernten Bedingungsspalte gelöscht.
@@ -235,9 +235,33 @@ Ab Dynamics 365 Finance Version 10.0.24 können Sie das Standardverhalten änder
 
 Nach Abschluss des Imports wird zusätzlich zu den eben beschriebenen Änderungen der Zustand der importierten anwendungsspezifischen Parameter auf **In Bearbeitung** geändert. Eine Warnmeldung weist Sie darauf hin, dass die automatisch angepassten anwendungsspezifischen Parameter manuell bearbeitet werden müssen.
 
+#### <a name="replicate-parameters"></a>Parameter replizieren
+
+Ab Finance-Version 10.0.27 können Sie die Parameter, die Sie in einem Unternehmen konfiguriert haben, gleichzeitig auf andere Unternehmen kopieren.
+
+Um Parameter zu kopieren, führen Sie die folgenden Schritte aus.
+
+1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
+2. Wählen Sie **Berichterstellungskonfigurationen** aus.
+3. Wählen Sie in der Konfigurationsstruktur das Format **Format zum Ermitteln der Vorgehensweise bei der Suche von Daten zu juristischen Personen** aus.
+4. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Konfigurationen** in der Gruppe **Anwendungsspezifische Parameter** die Option **Einrichten** aus.
+5. Wählen Sie Version **1.1.1** des EB-Formats aus.
+6. Wählen Sie im Aktivitätsbereich **Replizieren** aus.
+7. Wählen Sie im **Replizieren**-Dialogfeld auf der **Unternehmen**-Registerkarte die Unternehmen aus, in die Sie Parameter kopieren möchten.
+
+    > [!NOTE]
+    > Die Liste der Zielunternehmen wird nur Benutzern angeboten, denen ein Sicherheits-[Rolle](../sysadmin/role-based-security.md#security-roles) zugewiesen ist, die so konfiguriert ist, dass sie allen Organisationen Zugriff gewährt.
+
+8. Wählen Sie **OK** aus.
+
+    > [!NOTE]
+    > Der Bestätigungsdialog informiert Sie, wenn einige Zielfirmen bereits konfigurierte Parameter für die ausgewählte Version eines ER-Formats enthalten. Wählen Sie **Ja** aus, um die Parameter zu überschreiben, indem Sie sie aus der aktuellen Firma kopieren.
+
+    Der konfigurierte Satz anwendungsspezifischer Parameter wird nun auf die ausgewählten Firmen kopiert.
+
 ### <a name="reuse-existing-parameters"></a>Vorhandene Parameter wiederverwenden
 
-Ab Dynamics 365 Finance Version 10.0.23 können Sie anwendungsspezifische Parameter wiederverwenden, die für eine Version eines ER-Formats konfiguriert wurden, wenn Sie eine höhere Version desselben Formats ausführen. Aktivieren Sie dazu die **Anwendungsspezifische Parameter aus früheren Versionen von ER-Formaten verwenden**-Funktion im **Funktionsverwaltung**-Arbeitsbereich. Wenn diese Funktion aktiviert ist und Sie eine Version eines ER-Formats ausführen, die versucht, anwendungsspezifische Parameter zu lesen, versucht ER, anwendungsspezifische Parameter zu finden, die für die ausgeführte Version dieses Formats konfiguriert wurden. Oder, wenn sie nicht verfügbar sind, für die nächst niedrigere Version dieses Formats.
+Ab Finance-Version 10.0.23 können Sie anwendungsspezifische Parameter wiederverwenden, die für eine Version eines ER-Formats konfiguriert wurden, wenn Sie eine höhere Version desselben Formats ausführen. Aktivieren Sie zum Wiederverwenden vorhandener Parameter die **Anwendungsspezifische Parameter aus früheren Versionen von ER-Formaten verwenden**-Funktion im **Funktionsverwaltung**-Arbeitsbereich. Wenn diese Funktion aktiviert ist und Sie eine Version eines ER-Formats ausführen, die versucht, anwendungsspezifische Parameter zu lesen, versucht ER, anwendungsspezifische Parameter zu finden, die für die ausgeführte Version des Formats konfiguriert wurden. Wenn sie nicht verfügbar sind, versucht ER, sie für die nächst niedrigere Version des Formats zu finden.
 
 > [!NOTE]
 > Anwendungsspezifische Parameter können Sie nur im Geltungsbereich der aktuellen juristischen Person wiederverwenden.

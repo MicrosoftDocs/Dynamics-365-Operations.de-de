@@ -1,8 +1,8 @@
 ---
-title: Abonnementabrechnung (Übersicht)
+title: Abonnementabrechnung – Übersicht
 description: In diesem Thema wird die Abonnementabrechnung in Microsoft Dynamics 365 Finance beschrieben.
 author: JodiChristiansen
-ms.date: 02/09/2022
+ms.date: 04/13/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2022-02-09
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 2796e25ec783941de381fb5ae96145eeba870bde
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 9d46492cca3cc435048fa497f6b1f3a28b77140a
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462468"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644526"
 ---
-# <a name="subscription-billing-overview"></a>Abonnementabrechnung (Übersicht)
+# <a name="subscription-billing-overview"></a>Abonnementabrechnung – Übersicht
 
 [!include [banner](../includes/banner.md)]
 
@@ -33,6 +33,8 @@ Die Lösung besteht aus drei Modulen, die unabhängig voneinander verwendet werd
 - **Wiederkehrende Vertragsabrechnung**: Dieses Modul ermöglicht die wiederkehrende Abrechnung und das Preismanagement, um die Kontrolle über Preis- und Abrechnungsparameter, Vertragsverlängerung und konsolidierte Rechnungsstellung zu ermöglichen.
 - **Umsatzerlös- und Ausgabenstundungen**: Dieses Modul eliminiert manuelle Prozesse und die Abhängigkeit von externen Systemen, indem es Umsatzerlöse verwaltet und Erkenntnisse in Echtzeit in monatlich wiederkehrenden Umsatzerlösen ermöglicht.
 - **Umsatzerlöszuteilung mit mehreren Elementen**: Dieses Modul hilft bei der Umsatzerlöscompliance, indem es die Preisgestaltung und Umsatzerlöszuteilung über mehrere Artikel hinweg handhabt.
+
+Weitere Informationen zur Abonnementabrechnung finden Sie unter [Power BI-Inhalt zur Abonnementabrechnung](sub-bill-power-bi.md).
 
 Die Abonnementabrechnung wird durch die **Funktionsverwaltung** aktiviert. Es kann jedoch nicht mit der Funktion **Umsatzerkennung** verwendet werden. Daher müssen Sie diese Funktion deaktivieren, bevor Sie die Abonnementabrechnung aktivieren.
 

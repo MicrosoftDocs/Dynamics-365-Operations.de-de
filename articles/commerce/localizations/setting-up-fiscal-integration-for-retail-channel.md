@@ -2,27 +2,42 @@
 title: Steuerintegration für Commerce-Kanäle einrichten
 description: Dieses Thema enthält Richtlinien zum Einrichten der Steuerintegrationsfunktionen für Commerce-Kanäle.
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 04/28/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: e4b0b9f7eb4fb0ffab3237459d85ea92c83dd206
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 51a75ce03b0ae6b744ec56df35bd3fdb1f40cf3a
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462156"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661748"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Steuerintegration für Commerce-Kanäle einrichten
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Dieses Thema enthält Richtlinien zum Einrichten der Steuerintegrationsfunktionen für Commerce-Kanäle. Weitere Informationen zur Steuerintegration finden Sie unter [Übersicht der Steuerintegration für Commerce-Kanäle](fiscal-integration-for-retail-channel.md).
 
+## <a name="enable-features-in-commerce-headquarters"></a>Funktionen in der Commerce-Zentralverwaltung aktivieren
+
+Führen Sie die folgenden Schritte aus, um Funktionen zu aktivieren, die sich auf die Steuerintegrationsfunktionalität für Commerce-Kanäle beziehen.
+
+1. Gehen Sie in der Commerce-Zentrale zu **Systemadministration \> Arbeitsbereiche \> Funktionen verwalten**.
+1. Finden und aktivieren Sie die folgenden Funktionen:
+
+    - **Direkte Steuerintegration über POS-Kassen** – Die Funktion erweitert das Steuerintegrationsspektrum durch die Möglichkeit, Steuerkonnektoren zu erstellen, die in der Verkaufsstelle (POS) ausgeführt werden. Diese Art von Konnektor kommuniziert mit einem Finanzgerät oder -dienst, das bzw. der eine HTTP-API bereitgestellt. So muss für das Geschäft kein separates Gerät angeschafft werden. Die Funktion erlaubt die Nutzung von Mobilgeräten zur Steuerintegration, ohne dass eine gemeinsame Hardwarestation erforderlich ist.
+    - **Überschreibungen für technisches Profil der Steuerintegration** – Diese Funktion ermöglicht die Erweiterung der Konfiguration der Steuerintegration und fügt die Möglichkeit hinzu, Verbindungsparameter auf der Einstellungsseite einer POS-Kasse zu überprüfen. Wenn diese Funktion aktiviert ist, können Sie die Parameter eines technischen Profils überschreiben.
+    - **Status der Steuerregistrierung von POS-Kassen** – Wenn diese Funktion aktiviert ist, können Sie die Steuerregistrierung für bestimmte POS-Kassen deaktivieren. In diesem Fall können an der POS-Kasse keine Verkaufsbuchungen erfolgen.
+    - **Lokaler Datenspeicher-Backup für Finanzverflechtung** – Diese Funktion erweitert die Fehlerbehandlungsfunktionen des Steuerintegrationsframework. Sie ermöglicht auch eine automatische Sicherung von Steuerregistrierungsdaten im Falle eines Datenverlusts, sodass die Daten im lokalen Speicher wiederhergestellt werden, während ein Gerät aktiviert wird.
+
 ## <a name="set-up-commerce-parameters"></a>Commerce-Parameter festlegen
+
+Gehen Sie zum Einrichten von Commerce-Parametern folgendermaßen vor.
 
 1. Setzen Sie auf der Seite **Freigegebene Commerce-Parameter** auf der Registerkarte **Allgemein** die Option **Steuerintegration aktivieren** auf **Ja**.
 1. Definieren Sie auf der Registerkarte **Nummernkreise** die Nummernkreise der folgenden Referenzen:
@@ -33,8 +48,8 @@ Dieses Thema enthält Richtlinien zum Einrichten der Steuerintegrationsfunktione
 
 1. Definieren Sie auf der Seite **Commerce-Parameter** die Nummernfolge für die Nummer des funktionalen Steuerprofils.
 
-    > [!NOTE]
-    > Nummernkreise sind optional. Nummern für alle Entitäten der Steuerintegration können entweder aus Zahlenreihen oder manuell generiert werden.
+> [!NOTE]
+> Nummernkreise sind optional. Nummern für alle Entitäten der Steuerintegration können entweder aus Zahlenreihen oder manuell generiert werden.
 
 ## <a name="set-up-a-fiscal-registration-process"></a>Einrichten eines Steuerregistrierungsprozesses
 
@@ -43,7 +58,7 @@ Der Prozess der Einrichtung der Steuerintegration umfasst die folgenden allgemei
 - Konfigurieren Sie Steuerkonnectoren , die steuerbezogene Geräten oder Dienste repräsentieren, die zur Steuerregistrierung verwendet werden, wie beispielsweise Belegdrucker.
 - Konfigurieren Sie Dokumentenanbieter, die Steuerdokumente generieren, die von Steuerkonnektoren in steuerbezogenen Geräten oder Diensten registriert werden.
 - Konfigurieren Sie den Steuerregistrierungsprozess, der eine Reihe von Schritten der Steuerregistrierung definiert, und die Steuerkonnektoren und Steuerdokumentanbieter, die für jeden Schritt verwendet werden.
-- Ordnen Sie den Steuerregistrierungsprozess den Funktionsprofilen der Verkaufsstellen (POS) zu.
+- Weisen Sie den steuerlichen Registrierungsprozess POS-Funktionsprofilen zu.
 - Ordnen Sie die technischen Profile des Konnektors den Hardwareprofilen zu.
 - Weisen Sie den Konnektoren technische Profile für die POS-Hardware oder Funktionsprofile zu.
 
@@ -176,7 +191,7 @@ Der Flow der Fiskalregistrierung wird durch den Prozess der Fiskalregistrierung 
 - Der Dauerauftrag für Ereignisse und Transaktionen der Steuererfassung ist im Steuerdokumentanbieter vordefiniert.
 - Die Steuerdokumentanbieter ist auch für das Identifizieren des Steuerkonnektors zuständig, der zur Steuerregistrierung verwendet wird. Es stimmt die funktionalen Profile des Konnektors, die in der Steuerkonnektorgruppe enthalten sind, die für den aktuellen Schritt des Steuerregistrierungsprozess spezifiziert ist, mit dem dem Profil des Konnektors ab, das dem Hardwareprofil der Hardwarestation zugeordnet ist, mit der der POS gekoppelt ist.
 - Der Steuerdokumentanbieter verwendet die Datenmapping-Einstellungen aus der Konfiguration des Steuerdokumentanbieters, um Transaktions-/Ereignisdaten wie Steuern und Zahlungen zu transformieren, während ein Steuerdokument erzeugt wird.
-- Wenn der Steuerdokumentanbieter ein Steuerdokument erzeugt, kann der Steuerkonnektor es entweder unverändert an das Fiskalgerät senden oder es analysieren und in eine Folge von Befehlen der API (Device Application Programming Interface) umwandeln, je nachdem, wie die Kommunikation gehandhabt wird.
+- Wenn der Steuerdokumentanbieter ein Steuerdokument erzeugt, kann der Steuerkonnektor es entweder unverändert an das Fiskalgerät senden oder es analysieren und in eine Folge von Befehlen der Geräte-API umwandeln, je nachdem, wie die Kommunikation gehandhabt wird.
 
 ### <a name="set-up-registers-with-fiscal-registration-restrictions"></a>Register mit steuerlichen Registrierungsbeschränkungen festlegen
 
@@ -283,4 +298,21 @@ Um die manuelle Ausführung einer aufgeschobenen steuerlichen Erfassung zu aktiv
     1. Führen Sie auf der Seite **Distributionszeitplan** den Auftrag **1090** aus, um Ihre Änderungen in die Kanaldatenbank zu übertragen.
 
 
+## <a name="view-connection-parameters-and-other-information-in-pos"></a>Verbindungsparameter und andere Informationen in POS anzeigen
+
+Gehen Sie wie folgt vor, um Verbindungsparameter und andere Informationen in POS anzuzeigen.
+
+1. Öffnen Sie das Modern POS (MPOS) oder Cloud POS (CPOS).
+1. Wählen Sie **Einstellungen**. Wenn die Steuerintegration aktiviert ist, zeigt der Abschnitt **Steuerintegration** auf der rechten Seite die folgenden Informationen:
+
+    - Der Status der Steuerregistrierung
+    - Der Status der letzten Steuertransaktion
+    - Die Anzahl ausstehender Überwachungsereignisse
+
+1. Wählen Sie **Details**, um die folgenden Informationen anzuzeigen:
+
+    - Registrierungsprozessschritte
+    - Verbindungsparameter
+    - Überwachungsereignisdetails
+ 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

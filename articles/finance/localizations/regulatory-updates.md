@@ -12,14 +12,14 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 19aadf844f239ef06ca4d9dbe60b597228d72e52
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 734a4abf4559d05b1f96bcfbde151b49bba8e827
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470092"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8649128"
 ---
-# <a name="regulatory-updates"></a>Regulatorische Features
+# <a name="regulatory-updates"></a>Neues zu Auflagen
 
 [!include [banner](../includes/banner.md)]
 
@@ -39,26 +39,26 @@ Die aktuellsten regulatorischen Aktualisierungspläne finden Sie in der folgende
 
 |Land|Freigabedatum|Version freigeben|Regulatorisches Update|
 |--------------------|---------------|-------|-------| 
-|      Brasilien         |   2021. Dezember         | 10.0.24, 10.0.25         |    SPED Fiscal Layout 2022  |
-|      Brasilien         |   2022. März    | 10.0.24HF, 10.0.25HF         |    ICMS-DIFAL Sammlung bei Vorgängen, die sich an Nicht-Steuerzahler richten (Ergänzungsgesetz Nr. 190/22)  |
+|      Brasilien         |   2021. Dezember         | 10.0.25         |    SPED Fiscal Layout 2022  |
+|      Brasilien         |   2022. März    | 10.0.25HF, 10.0.26HF, 10.0.27        |    ICMS-DIFAL Sammlung bei Vorgängen, die sich an Nicht-Steuerzahler richten (Ergänzungsgesetz Nr. 190/22)  |
+|      Brasilien         |   2022. März         | 10.0.26HF         |    Sped Fiscal – Neue Felder im Datensatz C500 (34-40) für eingehende Steuerdokumente  |
+|      Brasilien         |   2022. März         | 10.0.27         |    NF-e NT2021.004 v1.00 – Aktualisierung der Layout‑ und Validierungsregeln  |
+|      Brasilien         |   2022. März         | 10.0.27         |    NF-e NT2021.004 v1.00 – Aktualisierung der Layout‑ und Validierungsregeln – Einzelhandel  |
 |      Dänemark         |   2022. Januar  | 10.0.25HF         |    Vorschau auf die Mehrwertsteuererklärung in Excel |
+|      Finnland         |   2022. Januar  | 10.0.26         |    Mehrwertsteuererklärung in TXT und Vorschau in Excel |
 |      Frankreich   |   November 2021 | 10.0.25         |    Französischer Datenarchivierungsexport (FEC) - „Rechtfertigung fehlender Zahlen“ Anhang |
-|      Italien         |   November 2021         | 10.0.24         |    Elektronische Rechnungsstellung für grenzüberschreitende Transaktionen  |
-|      Italien         |   Februar 2022 | 10.0.24HF, 10.0.25HF| Eindeutiges Zertifikat - 2022 in Dynamics 365 Finance  |
-|      Litauen|   Februar 2022 | 10.0.24HF, 10.0.25HF | i.SAF Änderungen vom 2022-01-01 in Dynamics 365 Finance  |
-|      Mexiko         |   2021. Dezember      | 10.0.24      |   Ergänzung zum Frachtbrief Version 2.0  |
-|      Norwegen        |   November 2021      | 10.0.24      |   Format für MwSt.-Erklärung 2022 mit Direktabgabe – Dynamics 365 Finance |
-|      Polen          |   2021. Oktober     | 10.0.24     |   JPK_V7M – neue Schemaversion ab Januar 2022 |
-|      Polen          |   November 2021     | 10.0.24HF     |   Jährlicher Bericht zu den Zahlungsdaten in kommerziellen Transaktionen |
-|      Polen          |   2021. Oktober     | 10.0.24     |   Elektronisches Format der zusammenfassenden Meldung (VAT-UE) |
-|      Russland          |   2021. Oktober     | 10.0.24    |   Änderungen bei Verkaufs-, Einkaufsbücher und Fakturenerfassungen|
-|      Russland          |   2021. Oktober     | 10.0.24HF    |   Änderung der Formate der MwSt.-Erklärung mit Anhängen|
-|      Russland          |   November 2021     | 10.0.24    |   Federal Accounting Standard 6/2020 (Anlagen)|
-|      Russland          |   2022. Januar     | 10.0.24HF, 10.0.25    |   Aktivieren Sie den Zielort für elektronische Berichte (ER), um russische Buchhaltungsdokumente (Primärdokumente und Buchhaltungsberichte) zu speichern.|
+|      Italien         |   Februar 2022 | 10.0.25HF, 10.0.26| Eindeutige Zertifizierung – 2022 in Dynamics 365 Finance  |
+|      Litauen|   Februar 2022 | 10.0.25HF, 10.0.26HF, 10.0.27 | i.SAF Änderungen von 2022-01-01 in Dynamics 365 Finance  |
+|      Malaysia|   Februar 2022 |10.0.26HF | SST-02 Steuererklärung Änderungen in Feldern  |
+|      Mexiko         |   2022. Januar      | 10.0.26      |   MX – CFDI-Version 4.0 (Stornierung)  |
+|      Mexiko         |   2022. März      | 10.0.25, 10.0.26, 10.0.26      |   CFDI-Formate Version 4.0 (Rechnungen und Zahlungen)  |
+|      Mexiko         |   Februar 2022      | 10.0.27      |   Am 1. Januar 2022 tritt Version 4.0 des CFDI in Kraft, mit einer Übergangszeit zwischen Version 3.3 und Version 4.0, die vom 1. Januar bis 30. Juni 2022 läuft.  |
+|      Mexiko         |   2022. März      | 10.0.25, 10.0.26, 10.0.27      |   CFDI-Formate Version 4.0 (Quellensteuer)  |
+|      Polen          |   April 2022     | 10.0.25HF, 10.0.26HF, 10.0.27HF     |   JPK_FA Version 4 ab 1. April 2022; JPK_V7M – neue Schemaversion ab Januar 2022 |
+|      Russland          |   2022. Januar     | 10.0.25    |   Aktivieren Sie den Zielort für elektronische Berichte (ER), um russische Buchhaltungsdokumente (Primärdokumente und Buchhaltungsberichte) zu speichern.|
 |      Russland          |   2021. Dezember     | 10.0.25    |   Integration Anlage (Russland) Modul mit Asset-Management Modul|
-|      Russland          |   Februar 2022     | 10.0.24HF, 10.0.25    |  Neues Format der Transportrechnung (Regierungserlass N 2116 30.11.2021)|
-|      Saudi-Arabien          |   November 2021     | 10.0.24    |   Einzelhandel – Elektronische Rechnungserstellung in Saudi-Arabien – Phase 1|
-|      Spanien      |   2022. März| 10.0.24HF, 10.0.25HF | Spanien: Mehrwertsteuererklärung Modell 303 ändert sich zum 1. Januar 2022 in Dynamics 365 Finance|
+|      Russland          |   März bis April 2022     | 10.0.25, 10.0.26    |  Neues Format der Transportrechnung (Regierungserlass N 2116 30.11.2021)|
+|      Spanien      |   2022. März| 10.0.25HF, 10.0.26HF, 10.0.27 | Mehrwertsteuererklärung Modell 303 ändert sich zum 1. Januar 2022 in Dynamics 365 Finance|
 
 
 

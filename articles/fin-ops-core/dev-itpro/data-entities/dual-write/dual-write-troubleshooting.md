@@ -2,19 +2,19 @@
 title: Allgemeine Problembehandlung
 description: Dieses Thema enthält allgemeine Informationen zur Problembehandlung für die duales Schreiben-Integration zwischen Apps für Finanzen und Betrieb und Dataverse.
 author: RamaKrishnamoorthy
-ms.date: 04/07/2020
+ms.date: 04/18/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 8b5951f9f40179ca0bf31f5cccf1f05a0f968213
-ms.sourcegitcommit: 1843235766b6f8cf950a13a310e9f4f2f53c59a4
+ms.openlocfilehash: 5896b031229c7fe7e02c8ccf038dd2b1a4f2de05
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "8554598"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8614094"
 ---
 # <a name="general-troubleshooting"></a>Allgemeine Problembehandlung
 
@@ -131,6 +131,29 @@ Um die Formularoption **Information** wieder zu aktivieren, führen Sie die folg
 2. Suchen Sie das **Information**-Formular unter dem Formularknoten.
 3. Wählen Sie das Formular **Information** und klicken Sie auf **Sicherheitsrollen aktivieren**.
 4. Ändern Sie die Sicherheitseinstellung in **Anzeige für alle**.
+
+## <a name="how-to-ensure-data-integration-is-using-the-most-current-finance-and-operations-schema"></a>So stellen Sie sicher, dass die Datenintegration das aktuelle Finanz- und Betriebs-Apps-Schema verwendet
+
+Bei Ihrer Datenintegration können Datenprobleme auftreten, wenn nicht das aktuelle Schema verwendet wird. Die folgenden Schritte helfen Ihnen, die Entitätsliste in Finanz- und Betriebs-Apps und die Entitäten im Datenintegrator zu aktualisieren.
+
+### <a name="refresh-entity-list-in-finance-and-operations-environment"></a>Entitätenliste in Finanz- und Betriebs-Apps-Umgebungen aktualisieren
+1.  Melden Sie sich bei Ihrer Finanz- und Betriebs-Apps-Umgebung an.
+2.  Wählen Sie **Datenverwaltung** aus.
+3.  Wählen Sie in der Datenverwaltung **Frameworkparameter** aus.
+4.  Wählen Sie auf der Seite **Parameter für das Datenimport/-export-Framework** die Registerkarte **Entitätseinstellungen** und dann **Entitätsliste aktualisieren** aus. Je nach Anzahl der beteiligten Entitäten kann die Aktualisierung länger als 30 Minuten dauern.
+5.  Navigieren Sie zu **Datenverwaltung**, und wählen Sie **Datenentitäten** aus, um zu überprüfen, ob die erwarteten Entitäten aufgelistet sind. Wenn die erwarteten Entitäten nicht aufgeführt sind, überprüfen Sie, ob die Entitäten in Ihrer Finanz- und Betriebs-Apps-Umgebung angezeigt werden, und stellen Sie die fehlenden Entitäten nach Bedarf wieder her.
+
+#### <a name="if-the-refresh-fails-to-resolve-the-issue-delete-and-re-add-the-entities"></a>Entitäten löschen und erneut hinzufügen, wenn das Problem durch die Aktualisierung nicht behoben werden kann
+
+> [!NOTE]
+> Möglicherweise müssen Sie vor dem Löschen alle Verarbeitungsgruppen stoppen, die die Entitäten aktiv verwenden.
+
+1.  Wählen Sie **Datenverwaltung** in Ihrer Finanz- und Betriebs-Apps-Umgebung und dann **Datenentitäten** aus.
+2.  Suchen Sie nach Entitäten mit Problemen, und notieren Sie sich die Zielentität, die Staging-Tabelle, den Entitätsnamen und andere Einstellungen. Löschen Sie die Entität oder Entitäten aus der Liste.
+3.  Wählen Sie **Neu** aus, und fügen Sie die Entität oder Entitäten mit den Daten aus Schritt 2 erneut hinzu. 
+
+#### <a name="refresh-entities-in-data-integrator"></a>Entitäten im Datenintegrator aktualisieren
+Melden Sie sich beim Power Platform Admin Center an, und wählen Sie **Datenintegration** aus. Öffnen Sie das Projekt, in dem die Probleme auftreten, und wählen Sie **Entitäten aktualisieren** aus.
 
 ## <a name="how-to-enable-and-save-network-trace-so-that-traces-can-be-attached-to-support-tickets"></a>So aktivieren und speichern Sie die Netzwerkaufzeichnung, damit die Aufzeichnungen an Support-Tickets angehängt werden können
 

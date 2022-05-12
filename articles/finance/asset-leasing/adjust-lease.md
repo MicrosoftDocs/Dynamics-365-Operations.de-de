@@ -2,7 +2,7 @@
 title: Mietverträge anpassen
 description: In diesem Thema wird erläutert, wie Sie einen Mietvertrag anpassen. Eine Regulierung kann erforderlich sein, wenn die Mietbedingungen geändert, der Mietvertrag verlängert oder andere Umstände geändert werden.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1016b69fd59bbe90924996f5c931cb5d0f779253de66f5f3821a8c3001d3313b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7d7151c28d124420638dc4e69a8ab5359ecf443c
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729653"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644554"
 ---
 # <a name="adjust-leases"></a>Mietverträge anpassen
 
@@ -134,5 +134,19 @@ Wenn ein Mietvertrag angepasst wurde, können Sie sich die verschiedenen Version
 2. Öffnen Sie den geänderten Mietvertrag über die Seite **Mietvertragsübersicht**, , um historische Zeitpläne anzuzeigen, wählen Sie auf der Seite das gewünschte Buch und dann im Aktionsbereich **Buchversionsverlauf** aus.
 3. Wählen Sie auf der Seite **Buchversion** eine Version und einen Zeitplan aus.
 
+## <a name="adjust-a-lease-book"></a>Ein Mietvertragsbuch anpassen
+
+Führen Sie folgende Schritte aus, um nur ein Mietvertragsbuch anzupassen.
+
+1. Wechseln Sie zu **Anlagenleasing** \> **Mietverträge** \> **Mietvertragsübersicht**.
+2. Mietvertrag auswählen und öffnen.
+3. Wählen Sie auf der **Details zum Mietvertrag**-Seite **Bücher**.
+4. Wählen Sie im Aktionsbereich auf der Seite **Buchdetails** in der Gruppe **Verwalten** die Option **Buch anpassen** aus. 
+5. Entfernen Sie die Zahlungsplanpositionen.
+6. Geben Sie im Feld **Änderungsdatum des Mietvertrags** das Änderungsdatum ein. Erwägen Sie dann, alle zusätzlichen Anlage-/Verbindlichkeitsüberlegungen (anfängliche direkte Kosten, Mietanreiz, Mietvorauszahlung, Kosten für Demontage und Restwertgarantie) zu streichen, sofern vorhanden. 
+7. Um ungenaue Berechnungen für die Mietvertragsregulierung zu vermeiden, fügen Sie neue Zahlungsplanpositionen für die neuen Zahlungsdaten hinzu, die mit dem Änderungsdatum übereinstimmen. 
+
+> [!NOTE] 
+> Wir empfehlen Ihnen, den Assistenten für **Mietvertragsregulierung** zum Anpassen eines Mietvertrags zu verwenden. Der Assistent reduziert die Anzahl der manuellen Schritte, bietet eine Vorschau der Salden nach der Anpassung und ermöglicht es Ihnen, Beträge vor dem Buchen zu ändern.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

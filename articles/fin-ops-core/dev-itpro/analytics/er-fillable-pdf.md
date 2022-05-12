@@ -2,7 +2,7 @@
 title: ER-Konfigurationen zum Ausfüllen von PDF-Vorlagen entwerfen
 description: Dieses Thema enthält Informationen dazu, wie ein elektronisches Berichtsformat (ER) gestaltet wird, um eine PDF-Vorlage auszufüllen.
 author: NickSelin
-ms.date: 02/28/2022
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: a568ddd93bfbc7d536e951a13470b3dedb796e1b
-ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
+ms.openlocfilehash: 706256300cf0b64bc5b5e1e7adb77c1da500d16f
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8367855"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8645106"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>ER-Konfigurationen zum Ausfüllen von PDF-Vorlagen entwerfen
 
@@ -252,10 +252,14 @@ Da beide Eigenschaften für ein **Feld** Formatelement optional sind, werden die
 - Wenn das Attribut **Name** definiert ist und der Ausdruck **Name** konfiguriert ist, wird das PDF-Feld, das den gleichen Namen hat, wie der Wert, der vom Ausdruck **Name** des Formatelements zurückgegeben wird, ausgefüllt.
 
 > [!NOTE]
-> Ein PDF-Kontrollkästchen kann als ausgefüllt folgendermaßen aktiviert werden:
+> Wenn ein Kontrollkästchen in der PDF-Vorlage nicht zu einer Gruppe von Kontrollkästchen gehört, wird es im bearbeitbaren ER-Format als **Feld**-Element dargestellt, das unter dem **PDF-Datei**-Element verschachtelt ist. Dieser PDF-Kontrollkästchentyp kann folgendermaßen als aktiviert festgelegt werden:
 >
-> - Wenn das entsprechende Formatelement **Feld** an ein Datenquellenfeld des Typs **Boolesch** gebunden ist, das den Wert **True** hat
-> - Wenn das entsprechende Formatelement **Feld** ein geschachteltes Formatelement **Zeichenfolge** enthält, das an ein Datenquellenfeld gebunden wird, das einen Textwert von **1**, **Wahr** oder **Ja** hat.
+> - Das entsprechende Formatelement **Feld** ist an ein Datenquellenfeld des Typs *[Boolesch](er-formula-supported-data-types-primitive.md#boolean)* gebunden, das den Wert **True** hat.
+> - Das entsprechende Formatelement **Feld** enthält ein geschachteltes Formatelement **Zeichenfolge**, das an ein Datenquellenfeld gebunden wird, das einen Textwert von **1**, **Wahr** oder **Ja** hat.
+>
+> Ihre Vorlage kann eine Gruppe von Kontrollkästchen enthalten, wobei jeweils nur ein Kontrollkästchen ausgewählt werden kann. Diese Kontrollkästchen werden in einer PDF-Vorlage als mehrere Formularfelder des Typs *Kontrollkästchen* dargestellt. Jedes Feld hat denselben Namen, aber einen anderen Exportwert. Wenn Sie die Vorlage in das bearbeitbare ER-Format importieren, wird jedes Kontrollkästchen in der hierarchischen Struktur des Formats als ein **Kontrollkästchen-Gruppenelement**-Element dargestellt, das unter demselben **Kontrollkästchengruppe**-Element verschachtelt ist. Der Name des **Kontrollkästchengruppe**-Elements entspricht dem Namen der Kontrollkästchenfelder in der PDF-Vorlage. Der Name jedes **Kontrollkästchen-Gruppenelement**-Elements entspricht dem Exportwert des entsprechenden Kontrollkästchenfelds in der PDF-Vorlage.
+>
+> Sie können ein **Kontrollkästchen-Gruppenelement**-Element nur an ein Datenquellenfeld des Datentyps *Boolesch* binden.
 
 ## <a name="run-the-format-configuration"></a>Eine Formatkonfiguration ausführen
 

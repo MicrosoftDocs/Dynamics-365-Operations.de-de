@@ -1,28 +1,28 @@
 ---
-title: Servicebeschreibung für die Finance and Operations Apps
-description: Dieses Thema enthält die Servicebeschreibung für die Finance and Operations Apps.
+title: Servicebeschreibung für Finanz- und Betriebs-Apps
+description: Dieses Thema enthält die Servicebeschreibung für Finanz- und Betriebs-Apps.
 author: tomhig
-ms.date: 01/05/2022
+ms.date: 04/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 85f82a863f0bde4c0414760fa2477651242538f2
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: cd033cfc3df21ddac5572aa70c18db5ffe26f54e
+ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952365"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "8656802"
 ---
-# <a name="service-description-for-finance-and-operations-apps"></a>Servicebeschreibung für die Finance and Operations Apps
+# <a name="service-description-for-finance-and-operations-apps"></a>Servicebeschreibung für Finanz- und Betriebs-Apps
 
 [!include[banner](../includes/banner.md)]
 
-Finance and Operations Apps sind Enterprise Resource Planning (ERP) Software-as-a-Service (SaaS) Angebote, die auf und für [Microsoft Azure](https://azure.microsoft.com/overview/what-is-azure/) erstellt wurden. Der Finance and Operations Service bietet Unternehmen ERP-Funktionalität, die ihre individuellen Anforderungen unterstützt und ihnen hilft, sich an sich ständig ändernde Geschäftsumgebungen anzupassen, ohne dass sie die Infrastruktur verwalten müssen. Finance and Operations Apps können einen oder mehrere der folgenden Lösungsbereiche umfassen:
+Finanz- und Betriebs-Apps sind Enterprise Resource Planning (ERP) Software-as-a-Service (SaaS) Angebote, die auf und für [Microsoft Azure](https://azure.microsoft.com/overview/what-is-azure/) erstellt wurden. Der Finanz- und Betriebs-App-Service bietet Unternehmen ERP-Funktionalität, die ihre individuellen Anforderungen unterstützt und ihnen hilft, sich an sich ständig ändernde Geschäftsumgebungen anzupassen, ohne dass sie die Infrastruktur verwalten müssen. Finanz- und Betriebs-Apps können einen oder mehrere der folgenden Lösungsbereiche umfassen:
 
-- [Dynamics 365 Finance](/dynamics365/finance/)
+- [Dynamics 365 Finance](/dynamics365/finance/)
 - [Dynamics 365 Human Resources](/dynamics365/human-resources/)
 - [Dynamics 365 Supply Chain Management](/dynamics365/supply-chain/)
 - [Dynamics 365 Commerce](/dynamics365/commerce/)
@@ -32,21 +32,21 @@ Zusammen mit [Business Intelligence](/power-bi/fundamentals/power-bi-service-ove
 
 - Erstellt in [Personalisierungserfahrung](personalize-user-experience.md)
 - [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md)-Tools
-- [Visual Studio](https://visualstudio.microsoft.com)-basierend [Finance and Operations Softwareentwicklungskit (SDK)](../../dev-itpro/dev-tools/developer-home-page.md) und [Azure DevOps Build-Automatisierung](../../dev-itpro/dev-tools/developer-home-page.md#build-automation-using-azure)
+- [Visual Studio](https://visualstudio.microsoft.com)-basierend [Finanz- und Betriebs-Softwareentwicklungskit (SDK)](../../dev-itpro/dev-tools/developer-home-page.md) und [Azure DevOps Build-Automatisierung](../../dev-itpro/dev-tools/developer-home-page.md#build-automation-using-azure)
 - Unabhängige Software Vendor (ISV)-Lösungen von [AppSource](https://appsource.microsoft.com/partners)
 
 Basierend auf den Anforderungen wählen Kunden ihren Lösungsansatz. Sie arbeiten mit ihrem Implementierungspartner zusammen, um ihre Lösung zu definieren, zu entwickeln und zu testen, indem sie die Tools und Best Practices verwenden, die in [Microsoft Dynamics Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) bereitgestellt werden. Es gibt vier gängige Szenarien:
 
-- Standard Finance and Operations Apps Standard-Konfiguration (keine Erweiterungen)
-- Finance and Operations Apps-Konfiguration, die eine oder mehrere ISV-Lösungen enthält
-- Finance and Operations Apps-Konfiguration, die eine oder mehrere kundenspezifische Erweiterungen enthält
-- Finance and Operations Apps-Konfiguration, die eine Kombination aus kundenspezifischen Erweiterungen und einer oder mehreren ISV-Lösungen enthält
+- Finanz- und Betriebs-Apps-Standardkonfiguration (keine Erweiterungen)
+- Finanz- und Betriebs-Apps-Konfiguration, die eine oder mehrere ISV-Lösungen umfasst
+- Finanz- und Betriebs-Apps-Konfiguration, die eine oder mehrere kundenspezifische Erweiterungen enthält
+- Finanz- und Betriebs-Apps-Konfiguration, die eine Kombination aus kundenspezifischen Erweiterungen und einer oder mehreren ISV-Lösungen enthält
 
 Unternehmen können ihr Geschäftswachstum durch einfaches Hinzufügen von Benutzern und Geschäftsprozessen über ein einfaches, transparentes Abonnementmodell anpassen. Weitere Informationen finden Sie im [Dynamics 365-Lizenzierungshandbuch](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365).
 
 ## <a name="operating-model"></a>Betriebsmodell
 
-Das Betriebsmodell von Finance and Operations Apps definiert spezifische Rollen und Verantwortlichkeiten für den Kunden, den Implementierungspartner und Microsoft während des gesamten Lebenszyklus des Dienstes. Weitere Informationen finden Sie unter [Cloud-Betrieb und -Service](../../dev-itpro/lifecycle-services/cloud-operations-servicing.md).
+Das Betriebsmodell von Finanz- und Betriebs-Apps definiert spezifische Rollen und Verantwortlichkeiten für den Kunden, den Implementierungspartner und Microsoft während des gesamten Lebenszyklus des Dienstes. Weitere Informationen finden Sie unter [Cloud-Betrieb und -Service](../../dev-itpro/lifecycle-services/cloud-operations-servicing.md).
 
 ### <a name="customer-activities"></a>Benutzerdefinierte Aktivitäten
 
@@ -61,7 +61,7 @@ Kunden arbeiten mit ihrem Partner und [Microsoft FastTrack](/dynamics365/fasttra
 
 ### <a name="microsoft-responsibilities"></a>Microsoft-Aufgaben
 
-Microsoft verwaltet den Finance and Operations Dienst durch Bereitstellung, aktive Überwachung und Wartung von Sandbox- und Produktionsumgebungen von Kunden im Microsoft SaaS-Abonnement. Diese Verwaltung umfasst die Zuweisung der erforderlichen Systeminfrastruktur, um den Dienst auszuführen und proaktiv mit Kunden über den Zustand des Dienstes zu kommunizieren. Zu den Aufgaben gehören:
+Microsoft verwaltet den Finanz- und Betriebs-App-Dienst durch Bereitstellung, aktive Überwachung und Wartung von Sandbox- und Produktionsumgebungen von Kunden im Microsoft SaaS-Abonnement. Diese Verwaltung umfasst die Zuweisung der erforderlichen Systeminfrastruktur, um den Dienst auszuführen und proaktiv mit Kunden über den Zustand des Dienstes zu kommunizieren. Zu den Aufgaben gehören:
 
 **Infrastrukturmanagement**
 - Sicherheit und Isolation
@@ -79,7 +79,7 @@ Microsoft verwaltet den Finance and Operations Dienst durch Bereitstellung, akti
 
 ## <a name="system-configuration"></a>Systemkonfiguration
 
-Finance and Operations Apps skalieren entsprechend dem Transaktionsvolumen und der Benutzerbelastung. Jede Kundenimplementierung erzeugt eine einzigartige Lösung, die aus den folgenden Elementen besteht:
+Finanz- und Betriebs-Apps skalieren entsprechend dem Transaktionsvolumen und der Benutzerbelastung. Jede Kundenimplementierung erzeugt eine einzigartige Lösung, die aus den folgenden Elementen besteht:
 
 - **Datenzusammenstellung** – Ein einzigartiger Satz von Parametern, die das Verhalten, das Layout der Organisation, die Struktur der Stammdaten (wie Finanz- und Bestandsdimensionen) und die Granularität der Transaktionsverfolgung steuern.
 - **Erweiterung und Konfiguration** – Erweiterungsmechanismen, die Codeerweiterungen, ISV-Lösungen und einzigartige Konfigurationen verwenden, die Workflows, Integrationen und Berichtskonfigurationen umfassen.
@@ -89,11 +89,11 @@ Microsoft konfiguriert Kundenproduktionsumgebungen, die so dimensioniert sind, d
 
 - Korrekte Zuweisung der Ressourcen von Produktionsumgebungen, basierend auf den Profiling-Informationen des Kunden im [LCS-Abonnementkalkulator](../../dev-itpro/lifecycle-services/subscription-estimator.md)
 - Kontinuierliche Überwachung und Diagnose der Serviceverfügbarkeit von Produktionsumgebungen
-- Analysieren und Beheben von Systemleistungsproblemen mit Finance and Operations Apps
+- Analysieren und Beheben von Systemleistungsproblemen mit Finanz- und Betriebs-Apps
 
 Um sicherzustellen, dass eine Implementierung für hohe Leistung konfiguriert ist, müssen Kunden die folgenden Aufgaben ausführen:
 
-- Geben Sie genaue Nutzungsinformationen über die Finance and Operations Umsetzung im [LCS-Abonnementkalkulator](../../dev-itpro/lifecycle-services/subscription-estimator.md).
+- Geben Sie genaue Nutzungsinformationen über die Finanz- und Betriebs-App-Umsetzung im [LCS-Abonnementkalkulator](../../dev-itpro/lifecycle-services/subscription-estimator.md).
 - Erstellen und testen Sie Erweiterungen für Leistung und Skalierbarkeit.
 - Testen Sie die Datenkonfigurationen entsprechend auf Leistung.
 - Skalierbarkeit durch [Leistungstest](https://community.dynamics.com/365/b/techtalks/posts/performance-testing-approach-april-30-2018) vor der Veröffentlichung sicherstellen.
@@ -112,17 +112,17 @@ Weitere Informationen finden Sie unter [Onboarding eines Implementierungsprojekt
 
 ## <a name="globalization"></a>Globalisierung
 
-Finance and Operations Apps werden aus mehreren Azure-Regionen auf der ganzen Welt bereitgestellt. Finance and Operations Apps bieten Funktionen zur Unterstützung verschiedener Länder/Regionen und Muttersprachen. Weitere Informationen finden Sie unter [Lokalisierungs- und Regulierungsfunktionen](../../dev-itpro/lcs-solutions/country-region.md#localization-and-regulatory-features).
+Finanz- und Betriebs-Apps werden aus mehreren Azure-Regionen auf der ganzen Welt bereitgestellt. Finanz- und Betriebs-Apps bieten Funktionen zur Unterstützung verschiedener Länder/Regionen und Muttersprachen. Weitere Informationen finden Sie unter [Lokalisierungs- und Regulierungsfunktionen](../../dev-itpro/lcs-solutions/country-region.md#localization-and-regulatory-features).
 
 ### <a name="countryregion-specific-considerations"></a>Landes-/regionsspezifische Betrachtungen
 
-- Kunden in regulierten Branchen oder kommerziellen Organisationen, die mit Unternehmen in Frankreich Geschäfte machen, die eine lokale Datenresidenz erfordern, sollten dies überprüfen [Finance and Operations in Frankreich](../../dev-itpro/deployment/france-local-deployment.md).
-- Kunden, die in China tätig sind, sollten [Azure China Playbook](/azure/china/) und [Finance and Operations betrieben von 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md) überprüfen.
+- Kunden in regulierten Branchen oder kommerziellen Organisationen, die mit Unternehmen in Frankreich Geschäfte machen, die eine lokale Datenresidenz erfordern, sollten [Finanzen und Betriebe in Frankreich](../../dev-itpro/deployment/france-local-deployment.md) lesen.
+- Kunden, die in China tätig sind, sollten [Azure China Playbook](/azure/china/) und [Finanzen und Betriebe betrieben von 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md) überprüfen.
 - Kunden, die in Russland tätig sind, sollten das [Russisches Gesetz zur Lokalisierung personenbezogener Daten](/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia) überprüfen.
 
 ### <a name="general-data-protection-regulation-gdpr"></a>Datenschutz-Grundverordnung (DSGVO)
 
-Für Finance and Operations Apps fungiert Microsoft als Prozessor. Als Datenverarbeiter bietet Finance and Operations Prozesse und Funktionen, die Kunden dabei helfen, die DSGVO-Verpflichtungen als Datenverantwortlicher einzuhalten. Weitere Informationen finden Sie unter [DSGBO Überblick](../../dev-itpro/gdpr/gdpr-guide.md).
+Für Finanz- und Betriebs-Apps fungiert Microsoft als Auftragsverarbeiter. Als Datenverarbeiter bietet Finanz- und Betriebs-App Prozesse und Funktionen, die Kunden dabei helfen, die DSGVO-Verpflichtungen als Datenverantwortlicher einzuhalten. Weitere Informationen finden Sie unter [DSGBO Überblick](../../dev-itpro/gdpr/gdpr-guide.md).
 
 ## <a name="environment-and-data-management"></a>Umgebung und Datenverwaltung
 
@@ -182,7 +182,7 @@ LCS bietet [Self-Service-Bereitstellung](../../dev-itpro/deployment/infrastructu
 
 ## <a name="data-backup-and-retention"></a>Datensicherung und -Aufbewahrung
 
-Datenbanken für Finance and Operations Umgebungen im SaaS-Abonnement werden durch automatische Backups geschützt. In Produktionsumgebungen werden automatische Backups 28 Tage lang aufbewahrt, es sei denn, Microsoft führt ein Rollback durch. In Sandbox-Umgebungen (Tier 2+) werden sie sieben Tage lang aufbewahrt. Ein Rollback der Produktionsumgebung kann durchgeführt werden, wenn während eines geplanten Wartungsupdates ein Fehler auftritt.
+Datenbanken für Finanz- und Betriebs-App-Umgebungen im SaaS-Abonnement werden durch automatische Backups geschützt. In Produktionsumgebungen werden automatische Backups 28 Tage lang aufbewahrt, es sei denn, Microsoft führt ein Rollback durch. In Sandbox-Umgebungen (Tier 2+) werden sie sieben Tage lang aufbewahrt. Ein Rollback der Produktionsumgebung kann durchgeführt werden, wenn während eines geplanten Wartungsupdates ein Fehler auftritt.
 
 Weitere Informationen zu automatischen Backups finden Sie unter [Automatisierte Sicherungen – Azure SQL-Datenbank und verwaltete SQL-Instanz](/azure/azure-sql/database/automated-backups-overview?tabs=single-database).
 
@@ -228,9 +228,9 @@ In der folgenden Tabelle werden einige typische Szenarien und Aktivitäten für 
 
 ## <a name="service-update-strategy"></a>Dienstupdatestrategie
 
-Gemäß der [Software-Lebenszyklusrichtlinie](../../dev-itpro/migration-upgrade/versions-update-policy.md), folgen Finance and Operations Apps der Microsoft [ Richtlinie für den modernen Lebenszyklus](../../dev-itpro/migration-upgrade/versions-update-policy.md#modern-lifecycle-policy), die Produkte abdeckt, die kontinuierlich gewartet und unterstützt werden. 
+Gemäß der [Software-Lebenszyklusrichtlinie](../../dev-itpro/migration-upgrade/versions-update-policy.md) folgen Finanz- und Betriebs-Apps der Microsoft [Richtlinie für den modernen Lebenszyklus](../../dev-itpro/migration-upgrade/versions-update-policy.md#modern-lifecycle-policy), die Produkte abdeckt, die kontinuierlich gewartet und unterstützt werden. 
 
-Microsoft veröffentlicht jährlich acht Serviceupdates für Finance and Operations Apps in den folgenden Monaten:
+Microsoft veröffentlicht jährlich acht Serviceupdates für Finanz- und Betriebs-Apps in den folgenden Monaten:
 
 - Januar
 - Februar
@@ -255,7 +255,7 @@ Für weitere Informationen überprüfen Sie die folgenden Themen:
 
 ## <a name="security-and-administrative-access"></a>Sicherheit und administrativer Zugriff Zugriff
 
-Administratorzugriff auf eine Finance and Operations Produktionsumgebung wird streng kontrolliert und protokolliert. Kundendaten werden gemäß den [Bedingungen für Microsoft Online Services](https://www.microsoft.com/licensing/terms/productoffering) abgewickelt. 
+Administratorzugriff auf eine Finanz- und Betriebs-Apps-Produktionsumgebung wird streng kontrolliert und protokolliert. Kundendaten werden gemäß den [Bedingungen für Microsoft Online Services](https://www.microsoft.com/licensing/terms/productoffering) abgewickelt. 
 
 ### <a name="customer-administrative-access"></a>Administratorzugriff für Kunden
 
@@ -264,7 +264,7 @@ Der Mandantenadministrator des Kunden kann auf Produktionsinstanzen oder Nichtpr
 | Umgebungstyp | Kostenträger | Ebene des Kundenzugangs |
 |---|---|---|
 | **Nicht-Produktion**<br>Sandkasten der Stufe 1 | Eine Nicht-Produktionsumgebung, die Kunden zu Entwicklungs-, Demonstrations- oder Schulungszwecken bereitstellen. | Eine Ebene-1-Sandbox (auch als Cloud-gehostete Umgebung bezeichnet) ist ein vom Kunden verwalteter virtueller Computer, der für das Azure-Abonnement des Kunden von LCS bereitgestellt wird. Da es sich um einen virtuellen Computer im Azure-Abonnement des Kunden handelt, hat der Kunde über Remotedesktop vollen administrativen Zugriff auf die Umgebung. |
-| **Nicht-Produktion**<br>Sandbox der Stufe 2 (oder höher) | Eine Nicht-Produktionsumgebung, die Kunden für Benutzerakzeptanztests, Integrationstests, Schulungen, Staging oder andere Vorproduktionsszenarien bereitstellen. | Sandboxes der Stufe 2 und höher werden für das Finance and Operations SaaS-Abonnement bereitgestellt. Der Zugriff auf Azure SQL-Datenbanken, die der Nicht-Produktionsumgebung zugeordnet sind, wird gewährt über [Just-In-Time-Zugriff](../../dev-itpro/database/database-just-in-time-jit-access.md). Remotedesktopzugriff ist nicht verfügbar. |
+| **Nicht-Produktion**<br>Sandbox der Stufe 2 (oder höher) | Eine Nicht-Produktionsumgebung, die Kunden für Benutzerakzeptanztests, Integrationstests, Schulungen, Staging oder andere Vorproduktionsszenarien bereitstellen. | Sandboxes der Stufe 2 und höher werden für das SaaS-Abonnement von Finanz- und Betriebs-Apps bereitgestellt. Der Zugriff auf Azure SQL-Datenbanken, die der Nicht-Produktionsumgebung zugeordnet sind, wird gewährt über [Just-In-Time-Zugriff](../../dev-itpro/database/database-just-in-time-jit-access.md). Remotedesktopzugriff ist nicht verfügbar. |
 | **Produktion** | Eine Produktionsumgebung wird bereitgestellt, wenn das Projekt [für den ersten Go-Live bereit ist](/imp-lifecycle/environment-planning.md#production-system-readiness). | Produktionsumgebungen werden für das SaaS-Abonnement bereitgestellt. Der gesamte Zugriff erfolgt über den Browser, Dienstendpunkte oder LCS. |
 
 ### <a name="microsoft-administrative-access"></a>Microsoft-Administratorzugriff
@@ -296,7 +296,7 @@ Weitere Informationen zu Schweregraden finden Sie unter [diese Schweregradtabell
 
 ## <a name="business-continuity-through-high-availability-and-disaster-recovery"></a>Geschäftskontinuität durch hohe Verfügbarkeit und Notfallwiederherstellung 
 
-Microsoft bietet Business Continuity & Disaster Recovery für Produktionsinstanzen von Finance and Operations Apps im Falle von Ausfällen in der gesamten Azure-Region. Weitere Informationen finden Sie unter [Business Continuity & Disaster Recovery](../../dev-itpro/sysadmin/business-continuity-disaster-recovery.md).
+Microsoft bietet Business Continuity & Disaster Recovery für Produktionsinstanzen von Finanz- und Betriebs-Apps im Falle von Ausfällen in der gesamten Azure-Region. Weitere Informationen, einschließlich Recovery Time Objective (RTO) und Recovery Point Objective (RPO) des Dienstes, finden Sie unter [Business Continuity & Disaster Recovery](../../dev-itpro/sysadmin/business-continuity-disaster-recovery.md).
 
 - **Hohe Verfügbarkeit** – HA-Funktionalität bietet Möglichkeiten zum Verhindern von Ausfallzeiten, die durch den Ausfall eines einzelnen Knotens in einem Azure-Rechenzentrum verursacht werden. Die Cloudarchitektur jedes Dienstes verwendet Azure-Verfügbarkeitssätze für die Computeebene, um Single-Point-of-Failure-Ereignisse zu verhindern. HA für Datenbanken wird bereitgestellt durch [Azure SQL HA-Funktionen](/azure/azure-sql/database/high-availability-sla).
 - **Notfallwiederherstellung** –[Funktionen für die Azure-Notfallwiederherstellung](/azure/best-practices-availability-paired-regions) Schützen Sie jeden Dienst vor Ausfällen, die ein gesamtes Azure-Rechenzentrum betreffen. Hier sind einige dieser Funktionen:
@@ -305,28 +305,19 @@ Microsoft bietet Business Continuity & Disaster Recovery für Produktionsinstanz
     - Georedundante Kopien von Azure Blob Storage (der Dokumentanlagen enthält) in anderen Azure-Regionen.
     - Sekundäre Region für die Azure SQL- und Azure Blob Storage-Replikationen.
 
-Die primären Datenspeicher werden für die Replikation unterstützt. Daher verwenden Komponenten für jeden Dienst, z. B. Management Reporter und Entitätsspeicher, transformierte Daten aus der Primärdatenbank. Diese Daten müssen nach dem Einrichten der Wiederherstellungs-Site und dem Starten des Dienstes generiert werden. Kundencodeartefakte und wiederhergestellte Datenspeicher werden verwendet, um die Site erneut bereitzustellen. Die erneute Bereitstellung ermöglicht die Zustandsreplikation der Rechenknoten zusammen mit Netzwerk- und anderen Komponenten, um die wiederhergestellten Datenspeicher zum Einrichten des sekundären Standorts zu verwenden. Wenn Notfallwiederherstellung verwendet wird, um die Produktionsinstanz des Kunden wiederherzustellen, erfüllen Microsoft und der Kunde ihre [Vorfallmanagement](service-description.md#incident-management) Verantwortlichkeiten.
+Wenn Notfallwiederherstellung verwendet wird, um die Produktionsinstanz des Kunden wiederherzustellen, erfüllen Microsoft und der Kunde ihre [Vorfallmanagement](service-description.md#incident-management) Verantwortlichkeiten.
 
-Die Notfallwiederherstellunbgspläne und -Verfahren von Microsoft werden regelmäßig im Rahmen von System and Organization Controls (SOC)-Audits überprüft. Diese Compliance-Audits belegen den technischen und verfahrenstechnischen Prozess von Microsofts DR, einschließlich Dynamics 365 Finance and Operations Apps. [SOC-Konformität](/compliance/regulatory/offering-soc-2) Auditberichte und alle anderen Compliance-Berichte sind verfügbar auf [Complianceangebote von Microsoft Trust Center](/compliance/regulatory/offering-home).
+Die Notfallwiederherstellunbgspläne und -Verfahren von Microsoft werden regelmäßig im Rahmen von System and Organization Controls (SOC)-Audits überprüft. Diese Compliance-Audits belegen den technischen und verfahrenstechnischen Prozess von Microsofts DR, einschließlich Finanz- und Betriebs-Apps von Dynamics 365. [SOC-Konformität](/compliance/regulatory/offering-soc-2) Auditberichte und alle anderen Compliance-Berichte sind verfügbar auf [Complianceangebote von Microsoft Trust Center](/compliance/regulatory/offering-home).
 
-| Microsoft-Aufgaben | Verantwortlichkeiten des Kunden |
-|---|---|
-| Microsoft stellt eine sekundäre Umgebung im gepaarten Azure-Rechenzentrum bereit, wenn die primäre Produktionsinstanz bereitgestellt wird. Weitere Informationen finden Sie unter [Business Continuity & Disaster Recovery (BCDR): gekoppelte Azure Regionen](/azure/best-practices-availability-paired-regions). | Ohne |
-| Microsoft aktiviert die Georedundanz von Azure SQL und Azure Blob Storage, wenn die primäre Produktionsinstanz bereitgestellt wird. | Ohne |
-| Microsoft aktiviert die automatische Sicherung der Azure SQL-Datenbanken. | Ohne |
-| <p>Bei einem Ausfall bestimmt Microsoft, ob für den Kunden ein Failover durchgeführt werden muss und ob es zu Datenverlusten kommt. Bei Kunden kann es je nach Art und Zeitpunkt des Ausfalls zu Datenverlusten von bis zu 15 Minuten kommen. | Im Falle eines Datenverlusts muss der Kunde möglicherweise eine schriftliche Abmeldung vorlegen, um das Failover auszulösen. |
-| Wenn ein Failover auftritt, arbeitet der entsprechende Dienst im eingeschränkten Modus. Die Updatewartung kann im Failover-Modus nicht ausgelöst werden. | Der Kunde kann im Failover-Modus keine Paketbereitstellungen oder andere regelmäßige Wartungsanforderungen anfordern. |
-| Wenn das Rechenzentrum betriebsbereit ist, führt Microsoft ein Failback zur Produktionsinstanz in der primären Azure-Region durch. Der normale Betrieb wird fortgesetzt. | Der Kunde muss sich möglicherweise beim Failback bei der Produktionsinstanz in der primären Azure-Region abmelden. |
+## <a name="finance-and-operations-support-offerings"></a>Finanz- und Betriebs-Apps-Supportangebote
 
-## <a name="finance-and-operations-support-offerings"></a>Finance and Operations Unterstützungsangebote
-
-Technischer Support ist in Märkten verfügbar, in denen Finance and Operations Dienstleistungen angeboten werden. [Support-Erfahrungen](../../dev-itpro/lifecycle-services/lcs-support.md) werden in LCS oder Finance and Operations Apps bereitgestellt. Im Folgenden finden Sie einige Beispiele hierfür:
+Technischer Support ist in Märkten verfügbar, in denen Finanz- und Betriebs-Apps-Dienstleistungen angeboten werden. [Supporterfahrungen](../../dev-itpro/lifecycle-services/lcs-support.md) werden in LCS oder Finanz- und Betriebs-Apps geboten. Im Folgenden finden Sie einige Beispiele hierfür:
 
 - [Problemsuche](../../dev-itpro/lifecycle-services/issue-search-lcs.md) in LCS
-- [Integrierter technischer Support](../../dev-itpro/lifecycle-services/support-experience.md) in Finance and Operations Apps
+- [Integrierter technischer Support](../../dev-itpro/lifecycle-services/support-experience.md) in Finanz- und Betriebs-Apps
 - [Cloud-betriebener Support](../../dev-itpro/lifecycle-services/cloud-powered-support-lcs.md) in LCS
 
-Microsoft bietet Finance and Operations Kunden drei Supportpläne an: Premier, Professional Direct und der im Abonnement enthaltene Support. Die Höhe der Unterstützung unterscheidet sich je nach Plan. Die folgende Tabelle zeigt einen Vergleich der drei Pläne.
+Microsoft bietet Finanz- und Betriebs-App-Kunden drei Supportpläne an: Premier, Professional Direct und der im Abonnement enthaltene Support. Die Höhe der Unterstützung unterscheidet sich je nach Plan. Die folgende Tabelle zeigt einen Vergleich der drei Pläne.
 
 | Support-Funktion | Premier | Professional Direct | Abonnement |
 |---|---|---|---|
@@ -341,7 +332,7 @@ Weitere Informationen finden Sie unter [Support-Übersicht](/power-platform/admi
 
 ### <a name="process-to-engage-support"></a>Prozess zur Einbindung des Supports
 
-Bei Vorfällen mit Finance and Operations Apps senden Kunden Supporttickets über LCS an Microsoft. CSS bearbeitet die Vorfälle, basierend auf dem Supportplan des Kunden und dem Schweregrad des Vorfalls, wie von CSS festgelegt.
+Bei Vorfällen mit Finanz- und Betriebs-Apps senden Kunden Supporttickets über LCS an Microsoft. CSS bearbeitet die Vorfälle, basierend auf dem Supportplan des Kunden und dem Schweregrad des Vorfalls, wie von CSS festgelegt.
 
 ### <a name="service-level-agreement"></a>Vereinbarung zum Servicelevel
 
@@ -349,7 +340,7 @@ Microsoft verpflichtet sich zu einer Verfügbarkeitsrate von 99,9 Prozent pro Mo
 
 ## <a name="important-resources"></a>Wichtige Ressourcen
 
-- **[Trustcenter](https://www.microsoft.com/trust-center)** – Holen Sie sich Informationen darüber, wo die Finance and Operations Daten gespeichert werden, sowie zusätzliche Informationen zu Datenschutz, Compliance und Sicherheitsverfahren.
+- **[Trustcenter](https://www.microsoft.com/trust-center)** – Holen Sie sich Informationen darüber, wo die Finanz- und Betriebs-App-Daten gespeichert werden, sowie zusätzliche Informationen zu Datenschutz, Compliance und Sicherheitsverfahren.
 - **[Lizenzbedingungen und Dokumentation](https://www.microsoftvolumelicensing.com/)** – Greifen Sie schnell auf Lizenzbedingungen, -Bestimmungen und ergänzende Informationen zu, die für die Nutzung von Produkten und Diensten relevant sind, die über Microsoft-Volumenlizenzprogramme lizenziert werden.
 - **[Lizenzbedingungen](https://www.microsoft.com/licensing/product-licensing/)** – Die Ressourcen auf dieser Seite definieren die Bedingungen für die Software- und Onlinedienstprodukte, die Sie über kommerzielle Microsoft-Lizenzprogramme erwerben.
 - **[Microsoft-Lebenszyklusrichtlinie](/lifecycle/)** – Diese Seite bietet konsistente und vorhersehbare Richtlinien für die Verfügbarkeit von Support während der gesamten Lebensdauer eines Produkts.
@@ -366,15 +357,15 @@ Eine geografische Region, in der ein oder mehrere Azure-Rechenzentren vorhanden 
 
 ### <a name="business-process-modeler-bpm"></a>[Geschäftsprozessmodellierer](../../dev-itpro/lifecycle-services/bpm-overview.md)
 
-Ein Tool in LCS, das bei der Durchführung einer Fit-Gap-Analyse für eine bestimmte Implementierung hilft, indem es Geschäftsprozessdefinitionen des American Productivity & Quality Center (APQC) verwendet, die in Finance and Operations Apps unterstützt werden.
+Ein Tool in LCS, das bei der Durchführung einer Fit-Gap-Analyse für eine bestimmte Implementierung hilft, indem es Geschäftsprozessdefinitionen des American Productivity & Quality Center (APQC) verwendet, die in Finanz- und Betriebs-Apps unterstützt werden.
 
 ### <a name="cloud-solution-provider"></a>Anbieter von Cloud-Lösungen
 
 Ein Partner, der Teil des Microsoft Cloud Solution Provider (CSP)-Programms ist und Kunden mit Mehrwert-Cloud-Diensten, Support, einer Rechnung und Kundenverwaltung in großem Maßstab versorgt.
 
-### <a name="customer"></a>Debitor
+### <a name="customer"></a>Kunde
 
-Ein Unternehmen, das Finance and Operations Apps konsumiert und durch einen Mandanten in Office 365 dargestellt wird.
+Ein Unternehmen, das Finanz- und Betriebs-Apps konsumiert und durch einen Mandanten in Office 365 dargestellt wird.
 
 ### <a name="development-environment"></a>Entwicklungsumgebung
 
@@ -386,19 +377,19 @@ Jeder Zeitraum, in dem sich Benutzer aufgrund eines Fehlers in der nicht abgelau
 
 ### <a name="implementation-partner"></a>Implementierungspartner
 
-Der Partner, den der Kunde auswählt, um seine Finance and Operations Lösungen anzupassen, zu konfigurieren, zu implementieren oder zu verwalten.
+Der Partner, den der Kunde auswählt, um seine Finanz- und Betriebs-Apps-Lösungen anzupassen, zu konfigurieren, zu implementieren oder zu verwalten.
 
 ### <a name="incident"></a>Vorfall
 
-Ein Problem, auf das Kunden stoßen, während sie den Finance and Operations Service nutzen ein Ticket über LCS einreichen.
+Ein Problem, auf das Kunden stoßen, während sie den Finanz- und Betriebs-Apps-Service nutzen, und für das sie ein Ticket über LCS einreichen.
 
 ### <a name="microsoft-customer-support-services-css"></a>Microsoft-Kundensupportdienste (CSS)
 
-Das globale Microsoft-Supportteam, das sich der Bereitstellung von Qualitätsservice für Finance and Operations Apps verpflichtet hat.
+Das globale Microsoft-Supportteam, das sich der Bereitstellung von Qualitätsservice für Finanz- und Betriebs-Apps verpflichtet hat.
 
 ### <a name="microsoft-dynamics-lifecycle-services-lcs"></a>Microsoft Dynamics Lifecycle Services (LCS)
 
-Das Verwaltungsportal für das Lifecycle-Management von Finance and Operations Apps von der Testphase über die Implementierung bis hin zum Management und Support nach der Produktion. Weitere Informationen finden Sie unter [Ressourcen für Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md).
+Das Verwaltungsportal für das Lifecycle-Management von Finanz- und Betriebs-Apps von der Testphase über die Implementierung bis hin zum Management und Support nach der Produktion. Weitere Informationen finden Sie unter [Ressourcen für Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md).
 
 ### <a name="non-production-instance"></a>Nicht-Produktionsinstanzen
 
@@ -412,15 +403,15 @@ Weitere Informationen zu den Stufen 2 bis 5 finden Sie unter [Auswahl der richti
 
 ### <a name="production-instance"></a>Produktionsinstanz
 
-Eine Finance and Operations Umgebung, die der Kunde nutzt, um seine täglichen Transaktionen und Geschäftsprozesse live zu verwalten.
+Eine Finanz- und Betriebs-Apps-Umgebung, die der Kunde nutzt, um seine täglichen Transaktionen und Geschäftsprozesse live zu verwalten.
 
 ### <a name="sandbox-environment"></a>Sandbox-Umgebung
 
 Eine Nicht-Produktionsumgebung, die der Kunde für Demonstrationen, Schulungen, Benutzerakzeptanztests, Validierung von Erweiterungen und andere Testaufgaben verwendet.
 
-### <a name="service"></a>Dienstleistung
+### <a name="service"></a>Service
 
-Alle Kerndienste, die in Finance and Operations Apps enthalten sind.
+Alle Kerndienste, die in Finanz- und Betriebs-Apps enthalten sind.
 
 ### <a name="service-level-agreement-sla-for-microsoft-online-services"></a>Vereinbarung zum Servicelevel (SLA) für Microsoft-Onlinedienste
 
@@ -428,7 +419,7 @@ Das SLA gilt für Microsoft-Onlinedienste. Weitere Informationen finden Sie unte
 
 ### <a name="service-update"></a>Serviceupdate
 
-Microsoft-Dienste Finance and Operations Umgebungen auf konsistenter Basis durch Service-Updates. Kunden legen ihren eigenen Service-Update-Kalender basierend auf ihren Geschäftsanforderungen fest. Weitere Informationen finden Sie unter [Dienstupdates für eine Version](../../dev-itpro/lifecycle-services/oneversion-overview.md).
+Microsoft wartet Finanz- und Betrieb-Apps-Umgebungen auf konsistenter Basis durch Service-Updates. Kunden legen ihren eigenen Service-Update-Kalender basierend auf ihren Geschäftsanforderungen fest. Weitere Informationen finden Sie unter [Dienstupdates für eine Version](../../dev-itpro/lifecycle-services/oneversion-overview.md).
 
 ### <a name="success-by-design"></a>[Success by Design](/dynamics365/fasttrack/success-by-design-overview)
 
@@ -436,4 +427,4 @@ Das Framework, das eine Implementierung systematisch durch eine Reihe von Bewert
 
 ### <a name="user"></a>Benutzer
 
-Eine einzelne Person, die Finance and Operations Umgebungen verwendet und wer mit dem Mandanten eines Kunden verknüpft ist.
+Eine einzelne Person, die Finanz- und Betriebs-Apps-Umgebungen verwendet und mit dem Mandanten eines Kunden verknüpft ist.

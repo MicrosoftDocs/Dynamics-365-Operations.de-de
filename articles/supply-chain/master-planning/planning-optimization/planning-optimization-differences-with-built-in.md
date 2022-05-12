@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 642ba812156a95e9b0be2e996d4a93096a5809a9
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: c73587015d6714c409819ab19ad68685aaa71cf7
+ms.sourcegitcommit: 70289a33b0a6ff3f9418d91a928db452cfd815bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468327"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "8618259"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>Unterschiede zwischen integrierter Masterplanung und Planungsoptimierung
 
@@ -37,6 +37,7 @@ Die Ergebnisse der Planungsoptimierung können von den Ergebnissen der integrier
 | Bedarfsverursacher für Sicherheitslagerbestand und Nettobedarf | Der Anforderungstyp *Sicherheitslagerbestand* ist nicht enthalten und wird auf der Seite **Nettobedarf** nicht angezeigt. Der Sicherheitslagerbestand stellt keinen Bedarf dar und ist mit keinem Bedarfstermin verknüpft. Stattdessen legt er eine Einschränkung fest, wie viel Inventar zu jeder Zeit vorhanden sein muss. Allerdings wird der Feldwert **Minimum** weiterhin bei der Berechnung von Planaufträgen während der Produktprogrammplanung berücksichtigt. Wir empfehlen Ihnen, die Spalte **Aufgelaufene Menge** auf der Seite **Nettobedarf** zu prüfen, um zu erkennen, ob dieser Wert berücksichtigt wurde. |
 | Transport-Kalender | Der Wert in der Spalte **Transportkalender** auf der Seite **Liefermodi** wird ignoriert. |
 | Min/Max-Dispositionsverfahren ohne Werte| Wenn Sie mit dem integrierten Planungsmodul ein Min/Max-Dispositionsverfahren verwenden, bei dem keine Mindest- oder Höchstwerte festgelegt sind, behandelt das Planungsmodul das Dispositionsverfahren als Anforderung und erstellt eine Bestellung für jede Anforderung. Mit der Planungsoptimierung erstellt das System eine Bestellung pro Tag, um den vollen Betrag für diesen Tag abzudecken.  |
+| Nettobedarf und manuell angelegte Auftragsvorschläge | Mit dem integrierten Planungsmodul erscheinen manuell erstellte Beschaffungsaufträge für einen Artikel automatisch unter dem Nettobedarf für diesen Artikel. Wenn Sie beispielsweise eine Bestellung aus einem Auftrag erstellen, wird die Bestellung auf der **Nettobedarf**-Seite angezeigt, ohne dass vorherige Aktionen erforderlich sind. Dies liegt daran, dass das integrierte Planungsmodul Lagerbuchungen in der `inventLogTTS`-Tabelle protokolliert und Änderungen auf der **Nettobedarf**-Seite für dynamische Pläne zeigt. Bei der Planungsoptimierung werden manuell erstellte Aufträge jedoch nicht unter den Nettobedarfen eines Artikels angezeigt, bis die Planungsoptimierung ausgeführt wird (unter Verwendung eines Plans, der den Artikel enthält), oder bis Sie **Aktualisieren \> Produktprogrammplanung** im Aktivitätsbereich auf der **Nettobedarf**-Seite auswählen, die die Produktprogrammplanung für den Artikel ausführt. Weitere Informationen zum Arbeiten mit der Seite **Nettobedarf** finden Sie unter [Nettobedarf und Informationen zum Bedarfsverursacher in der Planungsoptimierung](net-requirements.md). |
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

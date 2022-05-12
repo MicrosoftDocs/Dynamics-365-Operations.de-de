@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 5a0ead85eaeb6b96b80716614990af8c8e5e70f7
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 083f5a30323cdc813116af7462563c3b8dd5e4f5
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384746"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644343"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Produktionsausführungsschnittstelle konfigurieren
 
@@ -111,17 +111,67 @@ Um diese Funktion zu nutzen, schalten Sie die folgende Funktion in [Funktionsver
 
 - *(Vorschau) Bericht über Artikel mit Artikelgewicht über die Produktionsausführungsoberfläche*
 
+### <a name="enable-the-my-day-dialog"></a>Dialogfeld „Mein Tag“ aktivieren
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Das **Mein Tag**-Dialogfeld bietet den Mitarbeitern einen Überblick über ihre täglichen Erfassungen und aktuellen Salden für bezahlte Zeit, bezahlte Überstunden, Abwesenheit und bezahlte Abwesenheit.
+
+Um diese Funktion zu nutzen, schalten Sie die folgende Funktion in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ein:
+
+- *Ansicht „Mein Tag“ für die Produktionsausführungsoberfläche*
+
+### <a name="enable-teams"></a>Teams aktivieren
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Wenn mehrere Arbeitskräfte demselben Produktions-Einzelvorgang zugewiesen werden, können sie ein Team bilden. Das Team kann einen Mitarbeiter als Pilot ernennen. Die verbleibenden Arbeitskräfte werden dann automatisch zu Assistenten dieses Piloten. Für das resultierende Team muss nur der Pilot den Einzelvorgangstatus registrieren. Zeiterfassungen gelten für alle Teammitglieder.
+
+Um diese Funktion zu nutzen, schalten Sie die folgende Funktion in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ein:
+
+- *Produktionsteams in der Produktionsausführungsoberfläche*
+
+### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>Zusätzliche Konfiguration in der Produktionsausführungsoberfläche aktivieren
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Diese Funktion fügt der Seite **Produktionsausführung konfigurieren** Einstellungen für die folgende Funktionalität hinzu:
+
+- Öffnen Sie automatisch das **Einzelvorgang starten**-Dialogfeld, wenn eine Suche abgeschlossen ist.
+- Öffnen Sie automatisch das **Fortschritt melden**-Dialogfeld, wenn eine Suche abgeschlossen ist.
+- Füllen Sie die Restmenge vorab in das **Fortschritt melden**-Dialogfeld.
+- Aktivieren Sie Anpassungen des Materialverbrauchs über das Dialogfeld **Fortschritt melden**. (Diese Funktionalität erfordert auch die Funktion *Materialverbrauch in der Produktionsausführungsoberfläche (nicht WMS) registrieren*.)
+- Aktivieren Sie Suchen nach Projektkennung.
+
+Informationen zum Verwenden der Einstellungen finden Sie weiter unten in diesem Thema.
+
+Um diese Funktion zu nutzen, schalten Sie die folgende Funktion in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ein:
+
+- *Zusätzliche Konfiguration auf der Produktionsausführungsoberfläche*
+
+
 ## <a name="work-with-production-floor-execution-configurations"></a>Arbeiten mit Produktionsausführungsoberflächen-Konfigurationen
 
 Um Produktionsausführungskonfigurationen zu erstellen und zu verwalten, gehen Sie zu **Produktionskontrolle \> Einrichtung \> Fertigungsausführung \> Produktionsausführung konfigurieren**. Die Seite **Konfigurieren Sie die Ausführung der Produktionsfläche** zeigt eine Liste der vorhandenen Konfigurationen. Auf dieser Seite können folgende Aktivitäten ausgeführt werden:
 
 - Wählen Sie eine Produktionsausführungskonfiguration aus, die in der linken Spalte aufgeführt ist, um sie anzuzeigen und zu bearbeiten.
-- Wählen Sie **Neu** im Aktivitätsbereich, um der Liste eine neue Konfiguration hinzuzufügen. Dann geben Sie im Feld **Konfiguration** einen Namen ein, um die neue Konfiguration identifizieren zu können. Der Name, den Sie eingeben, muss für alle Konfigurationen eindeutig sein und kann später nicht mehr bearbeitet werden.
+- Wählen Sie im Aktivitätsbereich **Neu** aus , um der Liste eine neue Konfiguration hinzuzufügen. Dann geben Sie im Feld **Konfiguration** einen Namen ein, um die neue Konfiguration identifizieren zu können. Der Name, den Sie eingeben, muss für alle Konfigurationen eindeutig sein und kann später nicht mehr bearbeitet werden. Sie können im Feld **Beschreibung** optional eine Beschreibung der Konfiguration eingeben.
 
-Konfigurieren Sie als Nächstes die verschiedenen Einstellungen für die ausgewählte Konfiguration. Folgende Felder sind verfügbar:
+Konfigurieren Sie als Nächstes die verschiedenen Einstellungen für die ausgewählte Konfiguration, wie in den folgenden Unterabschnitten beschrieben.
 
-- **Nur Ein- und Auszeit** - Legen Sie diese Option auf *Ja* fest, um eine vereinfachte Oberfläche zu erstellen, die nur die Ein- und Auszeitfunktionalität bietet. Dadurch werden die meisten anderen Optionen auf dieser Seite deaktiviert. Sie müssen alle Zeilen aus dem Inforegister **Tab-Auswahl** entfernen, bevor Sie diese Option aktivieren können.
-- **Suche aktivieren** – Setzen Sie diese Option auf *Ja*, um ein Suchfeld in die Einzelvorgangsliste aufzunehmen. Mitarbeiter können einen bestimmten Einzelvorgang finden, indem sie die Job-ID eingeben, oder alle Jobs für einen bestimmten Auftrag finden, indem sie die Auftrags-ID eingeben. Arbeitskräfte können die ID über eine Tastatur oder durch Scannen eines Barcodes eingeben.
+### <a name="the-general-fasttab"></a>Inforegister „Allgemein“
+
+Die folgenden Einstellungen sind auf dem Inforegister **Allgemein** verfügbar:
+
+- **Nur Ein- und Ausstempeln** – Legen Sie diese Option auf *Ja* fest, um eine vereinfachte Oberfläche zu erstellen, die nur die Ein- und Ausstempelfunktionalität bietet. Durch diese Einstellung werden die meisten anderen Optionen auf dieser Seite deaktiviert. Sie müssen alle Zeilen aus dem Inforegister **Tab-Auswahl** entfernen, bevor Sie diese Option aktivieren können.
+- **Suche aktivieren** – Setzen Sie diese Option auf *Ja*, um ein Suchfeld in die Einzelvorgangsliste aufzunehmen. Mitarbeiter können einen bestimmten Einzelvorgang finden, indem sie die Einzelvorgangskennung eingeben, oder alle Einzelvorgänge für einen bestimmten Auftrag finden, indem sie die Auftragskennung eingeben. Arbeitskräfte können die ID über eine Tastatur oder durch Scannen eines Barcodes eingeben.
+- **Suche nach Projektkennung aktivieren** – Legen Sie diese Option auf *Ja* fest, um Mitarbeitern zu ermöglichen, nach Projektkennung (zusätzlich zu Einzelvorgangskennung und Auftragskennung) im Suchfeld der Schnittstelle zur Produktionsausführung zu suchen. Sie können diese Option nur dann auf *Ja* festlegen, wenn die Option **Suche aktivieren** ebenfalls auf *Ja* festgelegt ist.
+- **Startdialogfeld automatisch öffnen** – Wenn diese Option auf *Ja* festgelegt ist, wird das Dialogfeld **Einzelvorgang starten** automatisch geöffnet, wenn Arbeitskräfte die Suchleiste zur Suche nach einem Einzelvorgang verwenden.
+- **Dialogfeld für Berichtsfortschritt automatisch öffnen** – Wenn diese Option auf *Ja* festgelegt ist, wird das Dialogfeld **Fortschritt melden** automatisch geöffnet, wenn Arbeitskräfte die Suchleiste zur Suche nach einem Einzelvorgang verwenden.
+- **Anpassen von Material aktivieren** – Legen Sie diese Option auf *Ja* fest, um die Schaltfläche **Material anpassen** im Dialogfeld **Fortschritt melden** zu aktivieren. Arbeitskräfte können diese Schaltfläche auswählen, um den Materialverbrauch für den Einzelvorgang anzupassen.
 - **Menge beim Ausstempeln melden** – Stellen Sie diese Option auf *Ja* ein, um die Mitarbeiter aufzufordern, beim Ausstempeln Feedback zu laufenden Vorgängen zu melden. Wird diese Option auf *Nein* eingestellt, werden Arbeiter nicht dazu aufgefordert.
 - **Mitarbeiter sperren** – Wenn diese Option auf *Nein* eingestellt ist, werden die Arbeitnehmer sofort nach der Registrierung abgemeldet (z. B. bei einem neuen Einzelvorgang). Die Schnittstelle kehrt dann zur Anmeldeseite zurück. Wenn diese Option auf *Ja* festgelegt ist, bleibt jeder Mitarbeiter in der Produktionsausführungsschnittstelle angemeldet. Ein Mitarbeiter kann sich jedoch manuell abmelden, damit sich ein anderer Mitarbeiter anmelden kann, während die Produktionsausführungsschnittstelle weiterhin unter demselben Systembenutzerkonto ausgeführt wird. Weitere Informationen zu diesen Arten von Konten finden Sie unter [Zugewiesene Benutzer](config-job-card-device.md#assigned-users).
 - **Verwenden Sie den tatsächlichen Zeitpunkt der Registrierung** – Stellen Sie diese Option auf *Ja* ein, um die Zeit für jede neue Registrierung so festzulegen, dass sie genau der Zeit entspricht, zu der die Registrierung von einem Arbeitnehmer eingereicht wurde. Wenn diese Option auf *Nein* eingestellt wird, wird stattdessen die Anmeldezeit verwendet. Normalerweise möchten Sie diese auf *Ja* einstellen, wenn Sie die Optionen **Mitarbeiter sperren** und/oder **Einzelner Arbeiter** auf *Ja* festgelegt haben, falls Mitarbeiter häufig länger angemeldet bleiben.
@@ -130,7 +180,17 @@ Konfigurieren Sie als Nächstes die verschiedenen Einstellungen für die ausgew�
 - **Dauer der Bildschirmsperre** – Wenn die Option **Sperren des Touchscreens zulassen** auf *Ja* festgelegt ist, verwenden Sie diese Option, um anzugeben, wieviele Sekunden der Touchscreen für die Bereinigung gesperrt werden soll. Die Dauer muss eine Zahl zwischen 5 und 120 Sekunden sein.
 - **Kennzeichen erstellen** – Setzen Sie diese Option auf *Ja*, um jedes Mal eine neue Kennzeichnung zu erstellen, wenn ein Mitarbeiter die Produktionsausführungsschnittstelle verwendet, um den Vorgang als beendet zu melden. Das Kennzeichen wird aus einer Nummernfolge generiert, die auf der Seite **Lagerverwaltungsparameter** erstellt wird. Wenn diese Option auf *Nein* festgelegt ist, muss die Arbeitskraft eine bestehende Kennzeichnung definieren, wenn er den Vorgang als beendet meldet.
 - **Etikett drucken** – Setzen Sie diese Option auf *Ja*, um ein Kennzeichenetikett zu drucken, wenn eine Arbeitskraft die Produktionsausführungsschnittstelle verwendet, um dann den Vorgang als beendet zu melden. Die Konfiguration des Etiketts wird im Dokumentrouting eingerichtet, wie beschrieben in [Dokumenten-Routing-Layout für Kennzeichenetiketten](../warehousing/document-routing-layout-for-license-plates.md).
-- **Registerkartenauswahl**  - Verwenden Sie die Einstellungen in diesem Abschnitt, um festzulegen, welche Registerkarten von der Produktionsausführungsoberfläche angezeigt werden sollen, wenn die aktuelle Konfiguration aktiv ist. Sie können so viele Registerkarten entwerfen, wie Sie benötigen, und diese dann hier nach Bedarf hinzufügen und anordnen. Details zum Gestalten von Registerkarten und zum Arbeiten mit den Einstellungen hier finden Sie unter [Gestalten der Produktionsausführungsoberfläche](production-floor-execution-tabs.md).
+
+### <a name="the-tab-selection-fasttab"></a>Inforegister „Registerkartenauswahl“
+
+Verwenden Sie die Einstellungen auf dem Inforegister **Registerkartenauswahl**, um auszuwählen, welche Registerkarten von der Produktionsausführungsoberfläche angezeigt werden sollen, wenn die aktuelle Konfiguration aktiv ist. Sie können beliebig viele Registerkarten entwerfen und diese dann mithilfe der Schaltflächen auf der Inforegister-Symbolleiste nach Bedarf hinzufügen und anordnen. Informationen zum Gestalten von Registerkarten und zum Arbeiten mit den Einstellungen hier finden Sie unter [Produktionsausführungsoberfläche entwerfen](production-floor-execution-tabs.md).
+
+### <a name="the-report-progress-fasttab"></a>Inforegister „Fortschritt melden“
+
+Die folgenden Einstellungen sind auf dem Inforegister **Fortschritt melden** verfügbar:
+
+- **Anpassen von Material aktivieren** – Legen Sie diese Option auf *Ja* fest, um die Schaltfläche **Material anpassen** ins Dialogfeld **Fortschritt melden** einzubeziehen. Arbeitskräfte können diese Schaltfläche auswählen, um den Materialverbrauch für den Einzelvorgang anzupassen.
+- **Standardmäßig verbleibende Menge** – Legen Sie diese Option auf *Ja* fest, um die erwartete Restmenge für einen Produktions-Einzelvorgang im Dialogfeld **Fortschritt melden** im Voraus zu füllen.
 
 ## <a name="clean-up-job-configurations"></a>Bereinigen Sie die Einzelvorgangskonfigurationen
 

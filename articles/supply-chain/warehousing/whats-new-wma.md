@@ -2,7 +2,7 @@
 title: Was ist neu oder geändert in der Warehouse Management Mobile-App
 description: Dieses Thema listet die neuen und geänderten Funktionen für jede freigegebene Version der Warehouse Management Mobile-App für Microsoft Dynamics 365 Supply Chain Management auf.
 author: Mirzaab
-ms.date: 03/11/2022
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2544c30afe18f290b681efed1705f7cef0cb7620
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: 679222005fe12009004921fa75a56145ae94c3ba
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487835"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644731"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Was ist neu oder geändert in der Warehouse Management Mobile-App
 
 [!include [banner](../includes/banner.md)]
 
 Dieses Thema listet neue Funktionen, Korrekturen, Verbesserungen und bekannte Probleme für jede freigegebene Version der Warehouse Management Mobile-App für Microsoft Dynamics 365 Supply Chain Management auf.
+
+## <a name="version-20210"></a>Version 2.0.21.0
+
+Diese Version führt die folgenden neuen Funktionen, Korrekturen und Verbesserungen ein:
+
+- Mehrere Absturzprobleme wurden behoben.
+- Es wurde ein Problem behoben, bei dem einige Zeichen beim Scannen oder Tippen auf der Standardseite nicht erkannt wurden.
+- Es wurde ein Problem behoben, bei dem durch die Eingabe einer Rücktaste auf der Standardseite zwei Zeichen gleichzeitig gelöscht wurden.
+- Es wurde ein Problem behoben, bei dem das Feld **Sortieren nach** auf der Seite **Arbeitsliste** einen falschen Wert angezeigt hat, der nicht der tatsächlichen Sortierreihenfolge der Karten entspricht.
+- Es wurde ein Problem behoben, bei dem ein falsches Layout angezeigt wurde, nachdem die Größe des App-Fensters während der Ausführung in Microsoft Windows geändert wurde.
+- Es wurde ein Problem behoben, bei dem das Scrollen in einer Popup-Liste dazu führen konnte, dass einige Listenelemente ausgeblendet oder verzerrt blieben.
+- Die Anmeldeseite wurde neu gestaltet, damit sie die Benutzernamen- und Passwortfelder auf derselben Seite anzeigt, wenn sie auf größeren Displays ausgeführt wird.
+- Die Reaktion der Steuerung auf schnelles Antippen wurde verbessert.
+- Eine In-App-Fehlerprotokollansicht wurde hinzugefügt.
+- Mehrere Verbesserungen der Barrierefreiheit wurden hinzugefügt (verbesserte Erzählung, fehlende Platzhalter in Android behoben, aktivierte Tastatureingabe für Schieberegler und mehr).
 
 ## <a name="version-20200"></a>Version 2.0.20.0
 

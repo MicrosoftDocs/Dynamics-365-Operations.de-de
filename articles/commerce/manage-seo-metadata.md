@@ -2,7 +2,7 @@
 title: Verwalten von SEO-Metadaten
 description: In diesem Thema wird das Verwalten von SEO-Metadaten (Search Engine Optimization) in Microsoft Dynamics 365 Commerce beschrieben.
 author: psimolin
-ms.date: 04/14/2020
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 06d2da60695be499971904451fd56fb8a64dfd64c9192d93f87ababb349e9378
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3d6f56968e9adfe90142955cba8e6c7ecc50fc92
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751566"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644758"
 ---
 # <a name="manage-seo-metadata"></a>Verwalten von SEO-Metadaten
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 In diesem Thema wird das Verwalten von SEO-Metadaten (Search Engine Optimization) in Microsoft Dynamics 365 Commerce beschrieben.
 
@@ -62,17 +63,21 @@ Mit Dynamics 365 Commerce können Sie SEO-Metadaten für einzelne Seiten verwalt
 ### <a name="modify-page-metadata"></a>Seitenmetadaten ändern
 
 Um Seitenmetadaten zu ändern, führen Sie diese Schritte aus.
-
 1. Wählen Sie unter **Sites** **Fabrikam** (oder den Namen Ihrer Site) aus.
 1. Wählen Sie im Navigationsbereich links **Seiten** aus.
 1. Wählen Sie die Startseite aus, um sie im Seiteneditor zu öffnen.
 1. Wählen Sie in der Befehlsleiste **Bearbeiten** aus.
-1. Erweitern Sie im Eigenschaftenbereich rechts **Standard-Metatags**.
-1. Um ein neues Metatag hinzuzufügen, wählen Sie **Hinzufügen** aus und geben Sie den Tag dann im Feld ein. Um ein vorhandenes Metatag zu entfernen, wählen Sie das Papierkorb-Symbol rechts daneben aus.
+1. Wählen Sie im Seiteneditor oben im Seitengliederungssteuerelement auf der linken Seite **Option für Gliederungsmodus** (Zahnradsymbol) und dann **Ansicht der erweiterten Gliederung** aus.
+1. Erweitern Sie in der Gliederungsansicht die Struktursteuerelemente, um den Inhalt des **HTML-Kopf**-Slots anzuzeigen.
+1. Im **HTML-Kopf**-Slot wählen Sie das gewünschte SEO-Modul aus (z. B. **Seitenzusammenfassung**, **Produktseitenzusammenfassung**, **Zusammenfassung der Kategorieseite** oder **Metatags**).
+1. Bearbeiten Sie im Eigenschaftenbereich auf der rechten Seite die gewünschten SEO-Daten für das ausgewählte SEO-Modul (z. B. **Titel**, **Beschreibung** oder **Freigabebild**).
 1. Wählen Sie **Speichern** und dann **Bearbeiten beenden** aus.
-1. Geben Sie im Feld **Kommentare** **Aktualisierte Metatags** ein und wählen Sie dann **OK** aus.
+1. Geben Sie im Feld **Kommentare** **Aktualisierte SEO-Daten** ein und wählen Sie dann **OK** aus.
 1. Wählen Sie **Vorschau** aus, um Ihre Seite in der Vorschau anzuzeigen. Wenn Sie fertig sind, schließen Sie die Vorschauregisterkarte, um zum Erstellungstool zurückzukehren.
 1. Wählen Sie **Veröffentlichen** aus.
+
+> [!TIP]
+> Autoren können die **Option für Gliederungsmodus** (Zahnradsymbol) oben in der linken Gliederungssteuerung im Seiteneditor verwenden, um zwischen der **Ansicht der grundlegenden Gliederung** und der **Ansicht der erweiterten Gliederung** zu wechseln. **Ansicht der grundlegenden Gliederung** ist die Standardeinstellung und filtert die Gliederung so, dass nur Module im **Body**-HTML-Slot für eine Seite angezeigt werden. **Ansicht der erweiterten Gliederung** zeigt das gesamte Seitenmodul, einschließlich der Slots für **HTML-Kopf**, **Textanfang** und **Textende**. Diese Ansicht ist nützlich, wenn Autoren bestimmte SEO- oder Skriptmoduleinstellungen für eine Seite bearbeiten müssen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

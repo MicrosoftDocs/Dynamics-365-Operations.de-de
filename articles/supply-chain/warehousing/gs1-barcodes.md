@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 083748d4aecf551fd326b6c3cbf6d92cf3daf717
-ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
+ms.openlocfilehash: ea928bc8a020035adb36ae2e7873c656e8c3985d
+ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547815"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8625277"
 ---
 # <a name="gs1-bar-codes"></a>GS1-Barcodes
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- Preview until 10.0.25 GA -->
 
 Arbeitskräfte im Lager müssen oft mehrere Aufgaben erledigen, wenn sie einen Scanner eines mobilen Geräts verwenden, um Bewegungen eines Artikels, einer Palette oder eines Containers zu registrieren. Diese Aufgaben können sowohl das Scannen von Barcodes als auch die manuelle Eingabe von Informationen auf dem mobilen Gerät umfassen. Die Barcodes verwenden ein firmenspezifisches Format, das Sie mithilfe von Microsoft Dynamics 365 Supply Chain Management definieren und verwalten.
 

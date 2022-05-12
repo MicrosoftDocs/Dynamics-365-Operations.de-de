@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e9bc4fefb6aabc0b93d4d96f5930590ef99235b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 38bf1f9f201e7f34e6a7ea76fbef399ba94caafa
+ms.sourcegitcommit: 367e323bfcfe41976e5d8aa5f5e24a279909d8ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567655"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "8660378"
 ---
 # <a name="set-up-shipping-carriers"></a>Spediteure einrichten
 
@@ -27,8 +27,8 @@ ms.locfileid: "7567655"
 
 In diesem Thema erfahren Sie, wie Sie einen Spediteur einrichten und Details wie Service, Versandart, Transportausschreibung, Transportbeschränkungen und Frachtrate definieren. Ein Transportkoordinator kann dann einen Spediteur einer ein- und ausgehenden Ladung zuweisen.
 
-
 ## <a name="create-a-new-shipping-carrier"></a>Neuen Spediteur erstellen
+
 1. Gehen Sie zu **Navigationsbereich > Module > Transportmanagement > Einrichtung > Spediteur > Spediteur > Spediteur**.
 2. Wählen Sie im Aktivitätsbereich **Neu** aus.
 3. Geben Sie in das Feld **Spediteur** einen Wert ein.
@@ -36,6 +36,7 @@ In diesem Thema erfahren Sie, wie Sie einen Spediteur einrichten und Details wie
 5. Wählen Sie im Feld **Modus** eine Option aus dem Dropdown-Menü aus.
 
 ## <a name="fill-in-the-general-information-for-the-shipping-carrier"></a>Füllen Sie die allgemeinen Informationen für den Spediteur aus
+
 1. Schaltet die Erweiterung des Abschnitts **Übersicht** um.
 2. Aktivieren oder deaktivieren Sie das Kontrollkästchen **Spediteur aktivieren**.
 3. Wählen Sie im Feld **Lieferantenkonto** eine Option aus dem Dropdown-Menü. Wählen Sie das Kreditorenkonto aus, das dem Spediteur zugeordnet werden soll.  
@@ -43,13 +44,16 @@ In diesem Thema erfahren Sie, wie Sie einen Spediteur einrichten und Details wie
 5. Aktivieren oder deaktivieren Sie das Kontrollkästchen **Spediteur-Rating aktivieren**.
 
 ## <a name="create-the-necessary-services-for-the-shipping-carrier"></a>Erstellen Sie die erforderlichen Dienstleistungen für den Spediteur
+
 1. Schaltet die Erweiterung des Abschnitts **Dienste** um.
 2. Wählen Sie **Neu** aus.
 3. Geben Sie im Feld **Spediteurservice** einen Wert ein.
 4. Geben Sie im Feld **Name** einen Wert ein.
-5. Wählen Sie im Feld **Transportmethode** eine Option aus dem Dropdown-Menü.
+5. Wählen Sie im Feld **Ladungsvorlagenkennung** eine Ladungsvorlage aus, die dem Dienst zugeordnet werden soll. Die Ladungsvorlage definiert die maximale Messung für Gewicht und Volumen einer gesamten Ladung. Beispielsweise könnte die Auslastungsvorlage die Größe eines Containers oder des LKWs darstellen. Ladungsvorlagenkennungen werden auch in Ladungserstellungsvorlagen und bei Verwendung der [Ladungserstellungsworkbench](load-building-workbench.md) angegeben, das Ihnen hilft, Ladungserstellungsstrategien anzuwenden, um Ladungen zu erstellen. Infolgedessen kann das System jede neue Ladung einem geeigneten Spediteurdienst zuordnen, indem es die angegebenen Ladungsvorlagenkennungen vergleicht.
+6. Wählen Sie im Feld **Transportmethode** eine Option aus dem Dropdown-Menü.
 
 ## <a name="set-up-the-address-for-the-carrier-optional"></a>Richten Sie die Adresse für den Spediteur ein (optional)
+
 1. Schaltet die Erweiterung des Abschnitts **Adressen** um.
 2. Wählen Sie **Neu** aus.
 3. Geben Sie in das Feld **Name oder Beschreibung** einen Wert ein.
@@ -59,6 +63,7 @@ In diesem Thema erfahren Sie, wie Sie einen Spediteur einrichten und Details wie
 7. Wählen Sie **OK**.
 
 ## <a name="set-up-the-rating-profile-for-the-shipping-carrier"></a>Richten Sie das Bewertungsprofil für den Spediteur ein.
+
 1. Schaltet die Erweiterung des Abschnitts **Bewertungsprofile** ein.
 2. Wählen Sie **Neu** aus.
 3. Geben Sie im Feld **Bewertungsprofil** einen Wert ein.

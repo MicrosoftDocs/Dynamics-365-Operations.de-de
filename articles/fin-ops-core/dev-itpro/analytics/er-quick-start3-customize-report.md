@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2c8cf4866b6a8c239359d726d8cd4f03a9eb4137
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: a7353d7d8149ff1316fbc0adc55b7e1050f443a8
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324086"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661657"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Passen Sie die Konfigurationen für elektronische Berichte an, um ein elektronisches Dokument zu erstellen
 
 [!include[banner](../includes/banner.md)]
 
-Der [Framework für die elektronische Berichterstattung (EB)](general-electronic-reporting.md) Mit dieser Option können Sie die EB [Konfigurationen](general-electronic-reporting.md#Configuration) hochladen, die in Ihrer Microsoft Dynamics 365 Finance Instanz bereitgestellt wird. Auf diese Weise können die von Microsoft bereitgestellten Konfigurationen als EB-Lösung dienen, mit der elektronische Kundenrechnungen (E-Rechnungen) erstellt werden. Mit dieser EB-Lösung können Sie Ihre benutzerdefinierte EB-Lösung für den Zugriff auf Ihre benutzerdefinierten Datenbankfelder konfigurieren und E-Rechnungen erstellen, die Ihren spezifischen Anforderungen entsprechen, ohne den Quellcode bearbeiten zu müssen.
+Mit [Framework für die elektronische Berichterstellung (ER)](general-electronic-reporting.md) können Sie die ER-[Konfigurationen](general-electronic-reporting.md#Configuration) hochladen, die Microsoft in Ihrer Microsoft Dynamics 365 Finance-Instanz bereitstellt. Auf diese Weise können die von Microsoft bereitgestellten Konfigurationen als EB-Lösung dienen, mit der elektronische Kundenrechnungen (E-Rechnungen) erstellt werden. Mit dieser EB-Lösung können Sie Ihre benutzerdefinierte EB-Lösung für den Zugriff auf Ihre benutzerdefinierten Datenbankfelder konfigurieren und E-Rechnungen erstellen, die Ihren spezifischen Anforderungen entsprechen, ohne den Quellcode bearbeiten zu müssen.
 
 ## <a name="overview"></a>Übersicht
 
@@ -61,7 +61,7 @@ Als Benutzer in der Rolle des Electronic Reporting Functional Consultant oder de
 ### <a name="configure-er-parameters"></a>Parameter der elektronischen Berichterstellung konfigurieren
 
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
-2. Wählen Sie auf der Seite **Lokalisierungskonfigurationen** im Bereich **Zugehörige Links** die Option **Parameter für elektronische Berichterstellung** aus.
+2. Wählen Sie auf der Seite **Lokalisierungsentwurf** im Bereich **Zugehörige Links** die Option **Parameter für elektronische Berichterstellung** aus.
 3. Auf der Seite **Parameter für elektronische Berichterstellung** legen Sie auf der Registerkarte **Allgemein** die Option **Entwurfsmodus aktivieren** auf **Ja** fest.
 4. Auf der **Anhänge** Registerkarte im Feld **Konfigurationen** wählen Sie **Datei** aus.
 5. Wählen Sie in den Feldern **Einzelvorgangsarchiv**, **Temporär**, **Grundlage** und **Andere** den **Dateityp** aus.
@@ -78,13 +78,13 @@ Jede hinzugefügte EB-Konfiguration wird als Eigentum eines EB-Konfigurationsanb
 #### <a name="review-the-list-of-er-configuration-providers"></a>Überprüfen der Liste der EB-Konfigurationsanbieter
 
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
-2. Wählen Sie auf der Seite **Lokalisierungskonfigurationen** im Bereich **Zugehörige Links** die Option **Konfigurationsanbieter** aus.
+2. Wählen Sie auf der Seite **Lokalisierungsentwurf** im Bereich **Zugehörige Links** die Option **Konfigurationsanbieter** aus.
 3. Auf der Seite **Konfigurationsanbietertabelle** hat jeder Anbieterdatensatz einen eindeutigen Namen und eine eindeutige URL. Überprüfen Sie den Inhalt dieser Seite. Wenn bereits ein Datensatz für **Litware, Inc.** (`https://www.litware.com`) vorhanden ist, überspringen Sie die nächste Prozedur [Hinzufügen eines neuen EB-Konfigurationsanbieters](#AddProvider).
 
 #### <a name="add-a-new-er-configuration-provider"></a><a id="AddProvider"></a>Hinzufügen eines neuen EB-Konfigurationsanbieters
 
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
-2. Wählen Sie auf der Seite **Lokalisierungskonfigurationen** im Bereich **Zugehörige Links** die Option **Konfigurationsanbieter** aus.
+2. Wählen Sie auf der Seite **Lokalisierungsentwurf** im Bereich **Zugehörige Links** die Option **Konfigurationsanbieter** aus.
 3. Wählen Sie auf der Seite **Konfigurationsanbieter** die Option **Neu** aus.
 4. Geben Sie im Feld **Name** **Litware, Inc.** ein.
 5. Geben Sie im Feld **Internetadresse** `https://www.litware.com` ein.
@@ -93,7 +93,7 @@ Jede hinzugefügte EB-Konfiguration wird als Eigentum eines EB-Konfigurationsanb
 #### <a name="activate-an-er-configuration-provider"></a>Aktivieren eines EB-Konfigurationsanbieters
 
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
-2. Wählen Sie auf der Seite **Lokalisierungskonfigurationen** im Bereich **Konfigurationsanbieter** die Kachel **Litware, Inc.** aus. Wählen Sie dann **Als aktiv festlegen** aus.
+2. Wählen Sie auf der Seite **Lokalisierungsentwurf** im Bereich **Konfigurationsanbieter** die Kachel **Litware, Inc.** aus. Wählen Sie dann **Als aktiv festlegen** aus.
 
 Weitere Informationen zu EB-Konfigurationsanbietern finden Sie unter [Erstellen von Konfigurationsanbietern und Markieren als aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
@@ -102,7 +102,7 @@ Weitere Informationen zu EB-Konfigurationsanbietern finden Sie unter [Erstellen 
 Um Ihrer aktuellen Instanz von Finance die standardmäßigen EB-Konfigurationen hinzuzufügen, müssen Sie sie aus dem EB [Repository](general-electronic-reporting.md#Repository) importieren, das für diese Instanz konfiguriert wurde.
 
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
-2. Wählen Sie auf der Seite **Lokalisierungskonfigurationen** im Bereich **Konfigurationsanbieter** die Kachel **Microsoft** aus. Wählen Sie dann **Repositorys** aus, um die Liste der Repositorys für den Microsoft-Anbieter anzuzeigen.
+2. Wählen Sie auf der Seite **Lokalisierungsentwurf** im Bereich **Konfigurationsanbieter** die Kachel **Microsoft** aus. Wählen Sie dann **Repositorys** aus, um die Liste der Repositorys für den Microsoft-Anbieter anzuzeigen.
 3. Wählen Sie auf der Seite **Konfigurationsrepositorys** das Repository des Typs **Global** aus. Wählen Sie dann **Öffnen** aus. Wenn Sie aufgefordert werden, das Herstellen einer Verbindung zum Regulatory Configuration Service zu autorisieren, folgen Sie den Autorisierungsanweisungen.
 4. Wählen Sie auf der Seite **Konfigurationsrepositorys** in der Konfigurationsstruktur im linken Bereich die Formatkonfiguration **Peppol Verkaufsrechnung** aus.
 5. Wählen Sie im Inforegister **Versionen** die Version **11.2.2** aus.
@@ -116,7 +116,7 @@ Um Ihrer aktuellen Instanz von Finance die standardmäßigen EB-Konfigurationen 
 ### <a name="review-the-imported-er-configurations"></a>Überprüfen der importierten EB-Konfigurationen
 
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
-2. Auf der Seite **Lokalisierungskonfigurationen** im Abschnitt **Konfigurationen** wählen Sie die Kachel **Berichterstellungskonfigurationen** aus.
+2. Auf der Seite **Lokalisierungsentwurf** im Abschnitt **Konfigurationen** wählen Sie die Kachel **Berichterstellungskonfigurationen** aus.
 3. Auf der Seite **Konfigurationen** erweitern Sie die Registerkarte **Konfigurationskomponenten**.
 4. Erweitern Sie im Konfigurationsbaum im linken Bereich **Rechnungsmodell** und erweitern **UBL Verkaufsrechnung**.
 

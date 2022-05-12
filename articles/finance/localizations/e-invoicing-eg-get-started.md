@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6fe1dd4254db8b390c17558320a6eaff2b0dcd19
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: e21c4ce4d676c3194665672a078dc1e3d0492799
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371355"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661721"
 ---
 # <a name="electronic-invoicing-for-egypt"></a>Elektronische Rechnungsstellung für Ägypten
 
@@ -41,8 +41,8 @@ Bevor Sie mit den Verfahren in diesem Thema beginnen, müssen Sie die folgenden 
     - [Einrichten von Azure-Ressourcen für die Elektronische Rechnungsstellung](e-invoicing-set-up-azure-resources.md)
     - [Das Add-In für Microservices in Lifecycle Services installieren](e-invoicing-install-add-in-microservices-lcs.md)
     
-- Aktivieren Sie die Integration zwischen Ihrer Microsoft Dynamics 365 Finance oder Dynamics 365 Supply Chain Management Anwendung und dem Dienst für die elektronische Rechnungsstellung, wie in [Integration mit der elektronischen Rechnungsstellung aktivieren und einrichten](e-invoicing-activate-setup-integration.md) beschrieben.
-- Erstellen Sie ein digitales Zertifikatsgeheimnis in Azure Key Vault und legen Sie es wie in [Kundenzertifikate und Geheimnisse](e-invoicing-customer-certificates-secrets.md) beschrieben fest. Zu Testzwecken stellt die ägyptische Steuerbehörde spezielle digitale Testzertifikate zur Verfügung, die nur während der Test- und Lösungsvalidierungsphase verwendet werden dürfen. Weitere Informationen finden Sie auf der Website der ägyptischen Steuerbehörde unter dem Link, der in [Egyptian e-invoicing SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/) angegeben ist.
+- Aktivieren Sie die Integration zwischen Ihrer Microsoft Dynamics 365 Finance- oder Dynamics 365 Supply Chain Management-Anwendung und dem Dienst für die elektronische Rechnungsstellung, wie in [Integration mit der elektronischen Rechnungsstellung aktivieren und einrichten](e-invoicing-activate-setup-integration.md) beschrieben.
+- Erstellen Sie ein digitales Zertifikatsgeheimnis in Azure Key Vault und legen Sie es wie in [Kundenzertifikate und Geheimnisse](e-invoicing-customer-certificates-secrets.md) beschrieben fest. Zu Testzwecken stellt die ägyptische Steuerbehörde spezielle digitale Testzertifikate zur Verfügung, die nur während der Test- und Lösungsvalidierungsphase verwendet werden dürfen. Weitere Informationen finden Sie auf der Website der ägyptischen Steuerbehörde unter dem Link, der in [Egyptian e-invoicing SDK](https://sdk.invoicing.eta.gov.eg/faq/) angegeben ist.
 
 ## <a name="country-specific-configuration-for-the-egyptian-electronic-invoice-eg-feature"></a>Länderspezifische Konfiguration für die Funktion der ägyptischen elektronischen Rechnung (EG)
 
@@ -56,7 +56,7 @@ Einige der Parameter aus der Funktion **Elektronische Rechnungsstellung (EG)** w
 6. Wählen Sie auf der Registerkarte **Verarbeitungspipeline** im Abschnitt **Verarbeitungspipeline** die Option **Json-Dokument für die ägyptische Steuerbehörde signieren**.
 7. Wählen Sie im Bereich **Parameter** die Option **Zertifikatsname** und wählen Sie dann den Namen des von Ihnen erstellten digitalen Zertifikats.
 8. Wählen Sie im Bereich **Pipeline verarbeiten** die Option **Integration mit Egyptian ETA Service**. Wiederholen Sie diesen Schritt für die beiden Vorkommen dieser Aktion.
-9. Wählen Sie im Abschnitt **Parameter** die **Webdienst-URL** und **Login-Dienst-URL**. Prüfen Sie dann die URL-Parameter. Um die Test- und Produktions-URL zu erhalten, gehen Sie auf die Website der ägyptischen Steuerbehörde, indem Sie den Link verwenden, der in [Egyptian e-invoicing SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/) angegeben ist.
+9. Wählen Sie im Abschnitt **Parameter** die **Webdienst-URL** und **Login-Dienst-URL**. Prüfen Sie dann die URL-Parameter. Um die Test- und Produktions-URL zu erhalten, gehen Sie auf die Website der ägyptischen Steuerbehörde, indem Sie den Link verwenden, der in [Egyptian e-invoicing SDK](https://sdk.invoicing.eta.gov.eg/faq/) angegeben ist.
 10. Klicken Sie auf **Speichern** und schließen Sie die Seite.
 11. Wiederholen Sie die Schritte 4 bis 10 für die Einrichtung der Funktion **Projektrechnung abgeleitet**.
 

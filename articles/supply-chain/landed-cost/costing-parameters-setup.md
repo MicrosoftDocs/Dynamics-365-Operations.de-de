@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 1bcce7af0a15add63f1d9c3b32563de0ab6698bd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 335bed49b05bf64547d7ded885f365a30487484f
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577647"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644637"
 ---
 # <a name="costing-parameter-values-setup"></a>Kalkulation Parameterwerte einrichten
 
@@ -123,9 +123,9 @@ Die folgende Tabelle beschreibt die Einstellungen, die für jede Vorlage verfüg
 
 ## <a name="volumetric-divisors"></a>Volumetrische Divisoren
 
-Volumendivisoren werden verwendet, um das Volumengewicht zu berechnen. Jede Firma formuliert ihre eigenen volumetrischen Divisoren. Darüber hinaus variieren die Divisoren einer Firma typischerweise je nach Lieferart. Zum Beispiel haben Luft- und Seefracht oft sehr unterschiedliche Divisoren. Eine Firma kann ihre Regeln auch komplexer gestalten, je nachdem, von wo aus sie versendet.
+Volumendivisoren werden verwendet, um das Volumengewicht zu berechnen. Jede Firma formuliert ihre eigenen volumetrischen Divisoren. Darüber hinaus variieren die Divisoren einer Firma typischerweise je nach Lieferart. Zum Beispiel haben Luft- und Seefracht oft sehr unterschiedliche Divisoren. Eine Firma kann ihre Regeln auch komplexer gestalten, je nachdem, von wo aus sie versendet. Das System verwendet die folgende Formel, um das Volumengewicht zu ermitteln: VolumetricWeight = Volume ÷ VolumetricDivisor.
 
-Zum Beispiel hat ein Paket, das per Luftfracht verschickt wird, ein Volumen von 3 Kubikmetern (m³). Die Firma berechnet nach Volumengewicht und wendet einen Volumendivisor von 6 an. Dieser Divisor wird mit dem Volumen multipliziert, um das Volumengewicht zu ermitteln. Daher beträgt das Volumengewicht für dieses Beispiel 3 × 6 = 18 Kilogramm (kg).
+Zum Beispiel hat ein Paket, das per Luftfracht verschickt wird, ein Volumen von 3 Kubikmetern (m³). Die Firma berechnet nach Volumengewicht und wendet einen Volumendivisor von 6 an. Dieser Divisor wird durch das Volumen dividiert, um das Volumengewicht zu ermitteln. Daher beträgt das Volumengewicht für dieses Beispiel 3 ÷ 6 = 0,5 Kilogramm (kg).
 
 Um volumetrische Divisoren festzulegen, gehen Sie zu **Gesamttransportkosten \> Kalkulation einrichten \> Volumetrische Divisoren**. Die Seite **Volumetrische Teiler** bietet ein Raster, das alle vorhandenen volumetrischen Teiler auflistet. Sie können die Schaltflächen im Aktivitätsbereich verwenden, um Zeilen im Raster hinzuzufügen, zu entfernen und zu bearbeiten.
 
@@ -136,4 +136,7 @@ Die folgende Tabelle beschreibt die Felder, die in jeder Zeile des Rasters verf�
 | Versandunternehmen | Wählen Sie das Kreditorenkonto der Firma, die mit dem volumetrischen Teiler verbunden ist. |
 | Kostentypcode | Wählen Sie den Code der Kalkulation, die mit dem volumetrischen Divisor verbunden ist. Verwenden Sie dieses Feld, um die Kalkulationen in die Berichtsbereiche einzulagern. Berichte können entweder nach Berichtskategorien oder nach Kostenart gedruckt werden. |
 | Von-Port | Wählen Sie den „Von Hafen“, für den der Volumendivisor gilt. |
-| Volumetrischer Divisor | Geben Sie den Wert des volumetrischen Divisors ein, der für die Zeile gilt. Der von Ihnen eingegebene Wert wird *mit dem Volumen jedes Pakets multipliziert*, um das Volumengewicht dieses Pakets zu bestimmen. |
+| Volumetrischer Divisor | Geben Sie den Wert des volumetrischen Divisors ein, der für die Zeile gilt. Das Volumen jedes Pakets wird durch den von Ihnen hier eingegebenen Wert dividiert, um das Volumengewicht dieses Pakets zu bestimmen. |
+
+> [!NOTE]
+> Das System verwendet den maximalen Wert zwischen **tatsächliches Gewicht** und **Volumengewicht**.

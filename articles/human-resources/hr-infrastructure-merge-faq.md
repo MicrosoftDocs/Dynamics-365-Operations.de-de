@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c022bb15975a1411230d28067a2225c95c0573bf
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: e43aaad2f5b80996eb0fc10f550f073aec67fe5d
+ms.sourcegitcommit: 26c726bd0b00935e3d2c31fdc5a3b2ae03a8a2b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062724"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661457"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-faq"></a>Dynamics 365 Human Resources Infrastruktur zusammenführen FAQ
 
@@ -32,7 +32,7 @@ Dieses Thema beantwortet häufig gestellte Fragen zur Infrastruktur-Zusammenfüh
 
 ## <a name="what-is-the-dynamics-365-human-resources-infrastructure-merge"></a>Was ist Dynamics 365 Human Resources Infrastruktur zusammenführen?
 
-Dynamics 365 Human Resources ist eine eigenständige Anwendung, die eine andere Infrastruktur nutzt als andere Apps für Finanzen und Betrieb, wie z.B. Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, und Dynamics 365 Project Operations. Durch die Zusammenführung der Infrastruktur wird Dynamics 365 Human Resources in dieselbe Infrastruktur wie andere Apps für Finanzen und Betrieb gebracht.
+Dynamics 365 Human Resources ist eine eigenständige Anwendung, die eine andere Infrastruktur nutzt als andere Finanz- und Betriebs-Apps, wie z. B. Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce und Dynamics 365 Project Operations. Durch die Zusammenführung der Infrastruktur wird Dynamics 365 Human Resources in dieselbe Infrastruktur wie andere Apps für Finanzen und Betrieb gebracht.
 
 ## <a name="value-and-benefits-of-the-infrastructure-merge"></a>Wert und Nutzen der Infrastruktur zusammenführen
 
@@ -43,9 +43,9 @@ Dynamics 365 Human Resources ist eine eigenständige Anwendung, die eine andere 
 - Sie sorgen für Konsistenz zwischen Dynamics 365 Human Resources und anderen Apps für Finanzen und Betrieb in Bezug auf Application Lifecycle Management (ALM), Microsoft Dynamics Lifecycle Services (LCS), geografische Verfügbarkeit, Erweiterbarkeit und mehr.
 - Sie ermöglichen Ihnen die Nutzung von Shared Services und Tools und helfen Ihnen, Kosten zu senken.
 
-### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-what-benefits-will-we-see-from-these-changes"></a>Meine Organisation verwendet das Human Resources Modul in Dynamics 365 Finance, Supply Chain Management, Commerce oder Project Operations. Welche Vorteile werden wir von diesen Veränderungen sehen?
+### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-what-benefits-will-we-see-from-these-changes"></a>Meine Organisation verwendet das Human Resources-Modul in Dynamics 365 Finance, Supply Chain Management, Commerce oder Project Operations. Welche Vorteile werden wir von diesen Veränderungen sehen?
 
-Die Fähigkeiten und Investitionen, die in Dynamics 365 Human Resources gemacht wurden, stehen nun Kunden zur Verfügung, die das HR-Modul in Dynamics 365 Finance verwenden. Einige dieser Funktionen umfassen Urlaubs- und Abwesenheitsmanagement, Leistungsmanagement und Aufgabenmanagement.
+Die Funktionen und Investitionen, die in Dynamics 365 Human Resources gemacht wurden, stehen nun Kunden zur Verfügung, die das HR-Modul in Dynamics 365 Finance verwenden. Einige dieser Funktionen umfassen Urlaubs- und Abwesenheitsmanagement, Leistungsmanagement und Aufgabenmanagement.
 
 ### <a name="will-i-lose-any-features-or-capabilities-that-i-currently-use"></a>Verliere ich alle Funktionen oder Fähigkeiten, die ich derzeit verwende?
 
@@ -57,7 +57,7 @@ Die neuen HR-Funktionen werden über die Funktions-Verwaltung verwaltet. Die Kun
 
 ### <a name="how-does-this-change-affect-me-if-i-am-an-existing-customer-and-i-use-both-the-hr-module-on-the-finance-and-operations-infrastructure-and-dynamics-365-human-resources-through-custom-integrations"></a>Wie wirkt sich diese Änderung auf mich aus, wenn ich ein bestehender Debitor bin und sowohl das HR-Modul auf der Finance und Operations-Infrastruktur als auch Dynamics 365 Human Resources über angepasste Integrationen verwende?
 
-Benutzerdefinierte Integrationen zwischen Dynamics 365 Human Resources und dem HR-Modul in Dynamics 365 Finance wird nicht mehr benötigt. Alle HR-Daten werden in der gleichen Datenbank gespeichert wie die anderen Apps für Finanzen und Betrieb.
+Benutzerdefinierte Integrationen zwischen Dynamics 365 Human Resources und dem HR-Modul in Dynamics 365 Finance werden nicht mehr benötigt. Alle HR-Daten werden in der gleichen Datenbank gespeichert wie die anderen Apps für Finanzen und Betrieb.
 
 ## <a name="migration-from-dynamics-365-human-resources-to-finance-and-operations-apps"></a>Migration von Dynamics 365 Human Resources zu Apps für Finanzen und Betrieb
 
@@ -69,7 +69,7 @@ Darüber hinaus werden Tools bereitgestellt, mit denen Sie den Migrationsprozess
 
 Wenn Ihr Unternehmen sowohl Dynamics 365 Human Resources als auch andere Apps für Finanzen und Betrieb verwendet, sollten Sie mehr Zeit für die Validierung einplanen, um sicherzustellen, dass Ihre Daten korrekt in die neue Umgebung migriert werden. Bei der Migration auf die neue Infrastruktur werden die Daten aus Ihrer Human Resources Umgebung mit Ihrer Finance und Operations Umgebung zusammengeführt. Widersprüchliche Daten erfordern eine Benutzereingabe, um zu bestimmen, wie der Konflikt aufgelöst werden soll. Benutzer und Administratoren müssen die Datenzuordnungen bei Konflikten verwalten und die Migration in Sandbox-Umgebungen vor der Migration von Produktionsumgebungen testen.
 
-### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-what-do-we-have-to-plan-for-to-migrate-to-the-new-experience"></a>Meine Organisation verwendet das Human Resources Modul in Dynamics 365 Finance, Supply Chain Management, Commerce oder Project Operations. Was müssen wir planen, um auf die neue Erfahrung zu migrieren?
+### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-what-do-we-have-to-plan-for-to-migrate-to-the-new-experience"></a>Meine Organisation verwendet das Human Resources-Modul in Dynamics 365 Finance, Supply Chain Management, Commerce oder Project Operations. Was müssen wir planen, um auf die neue Erfahrung zu migrieren?
 
 Für Organisationen, die das HR-Modul in Apps für Finanzen und Betrieb verwenden, werden die neuen Funktionen von Dynamics 365 Human Resources über den Standardprozess für One Version Updates auf Ihre Umgebung angewendet. Sie können davon ausgehen, dass die neuen Funktionen in Ihrer Umgebung in jedem Update verfügbar sind. Sie können die Funktionsverwaltung verwenden, um neue Funktionen einzuschalten, sollten aber eine Validierung dieser Funktionen einplanen. Befolgen Sie die Prozesse, die Sie zum Überprüfen anderer Updates für Ihre Umgebung eingerichtet haben. Weitere Informationen darüber, wie Updates auf Apps für Finanzen und Betrieb angewendet werden, finden Sie unter [One Version Übersicht](../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md).
 
@@ -223,14 +223,11 @@ Diese Dokumentation ersetzt oder ersetzt keine der rechtlichen Dokumentationen, 
 
 Kunden, die Dynamics 365 Human Resources Lizenzen gekauft haben, sind davon nicht betroffen. Für diese Kunden gibt es keine Lizenzmigration. Die zusätzliche Sandbox Lagermengeneinheit (SKU), die für die Personalabteilung spezifisch war, ist nicht mehr anwendbar. Stattdessen können Debitor eine Apps für Finanzen und Betrieb Tier 2 Sandbox zu etwas geringeren Kosten erwerben. Bestehende Debitor, die eine Sandbox für Human Resources gekauft haben, werden ohne zusätzliche Kosten auf eine Sandbox für Apps für Finanzen und Betrieb Tier 2 migriert.
 
-### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-does-my-licensing-or-cost-change"></a>Meine Organisation verwendet das Human Resources Modul in Dynamics 365 Finance, Supply Chain Management, Commerce oder Project Operations. Ändern sich meine Lizenzierung oder meine Kosten?
+### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-does-my-licensing-or-cost-change"></a>Meine Organisation verwendet das Human Resources-Modul in Dynamics 365 Finance, Supply Chain Management, Commerce oder Project Operations. Ändern sich meine Lizenzierung oder meine Kosten?
 
-Bestehende Benutzer von Dynamics 365-Apps und Benutzer von eigenständigen Dynamics 365 Finance, Supply Chain Management, Commerce und Project Operations können im Rahmen dieser Lizenzen bis Februar 2025 oder bis zum Ablauf der aktuellen Lizenzvereinbarung auf Human Resources zugreifen, je nachdem, was früher eintritt. Sie können sich für einen früheren Wechsel zu Human Resources-Lizenzen entscheiden, wenn Sie dadurch bessere Kosteneinsparungen erzielen. Ab Februar 2025 müssen alle bestehenden CSP- und EA-Kunden das HR-Modul ablösen und Human Resources-Lizenzen erwerben, um die neuen Funktionalitäten zu nutzen, die in die Apps Finance und Operations aufgenommen werden.
+Bestehende Benutzer von Dynamics 365-Apps und Benutzer des eigenständigen Dynamics 365 Finance, Supply Chain Management, Commerce und Project Operations können im Rahmen dieser Lizenzen bis Februar 2025 oder bis zum Ablauf der aktuellen Lizenzvereinbarung auf Human Resources zugreifen, je nachdem, was früher eintritt. Sie können sich für einen früheren Wechsel zu Human Resources-Lizenzen entscheiden, wenn Sie dadurch bessere Kosteneinsparungen erzielen. Ab Februar 2025 müssen alle bestehenden CSP- und EA-Kunden das HR-Modul ablösen und Human Resources-Lizenzen erwerben, um die neuen Funktionalitäten zu nutzen, die in die Apps Finance und Operations aufgenommen werden.
 
 ### <a name="my-organization-is-live-with-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-will-we-be-required-to-purchase-an-additional-environment-to-support-the-infrastructure-merge"></a>Meine Organisation ist mit Dynamics 365 Finance, Supply Chain Management, Commerce oder Project Operations live. Müssen wir eine zusätzliche Umgebung erwerben, um die Zusammenführung der Infrastruktur zu unterstützen?
 
 Zusätzliche Umgebungen sind nicht erforderlich, um die Infrastrukturänderung zu unterstützen.
 
-### <a name="where-should-i-go-if-i-have-additional-questions-about-product-licensing"></a>Wohin soll ich mich wenden, wenn ich weitere Fragen zur Produktlizenzierung habe?
-
-Wenn Sie Fragen zur Lizenzierung haben, finden Sie weitere Informationen auf [Biz Apps Hub – D365-Preise und -Lizenzierung](https://businessapplications.transform.microsoft.com/resources/pricing-and-licensing?tab=grandfathering). Wenn diese Informationen bei Ihrem Problem nicht helfen, öffnen Sie eine Anfrage bei LicenseQ.

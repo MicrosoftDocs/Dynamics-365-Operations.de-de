@@ -2,7 +2,7 @@
 title: Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
 description: Dieses Thema enthält Informationen zum Entwerfen eines Formats für die elektronische Berichterstellung (EB), um eine Excel-Vorlage auszufüllen und ausgehende Dokumente im Excel-Format zu generieren.
 author: NickSelin
-ms.date: 02/28/2022
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b2f38aa9e5eff9366697afd57ceefd06f026096
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: ec25065f2e3cc3b5dd3c9004d5330447f7b2ac61
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388262"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8645134"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
 
@@ -141,7 +141,12 @@ Sie können Ihre Excel-Vorlage so konfigurieren, dass Zellen zur Darstellung von
 > [!NOTE]
 > Wegen einer bekannten [Excel-Einschränkung](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353), selbst wenn Sie Zellen so konfigurieren, dass Text umgebrochen wird, und Sie die Zeilen, die diese Zellen enthalten, so konfigurieren, dass ihre Höhe automatisch an den umgebrochenen Text angepasst wird, können Sie die Excel-Funktionen **AutoFit** und **Zeilenumbruch** für verbundene Zellen und die Zeilen, die sie enthalten, eventuell nicht verwenden. 
 
-Ab Dynamics 365 Finance-Version 10.0.23 können Sie EB zwingen, in einem generierten Dokument die Höhe jeder Zeile zu berechnen, die so konfiguriert wurde, dass ihre Höhe automatisch an den Inhalt verschachtelter Zellen angepasst wird, wenn diese Zeile mindestens eine verbundene Zelle enthält, die zum Umbrechen des Texts in der Zelle konfiguriert war. Die berechnete Höhe wird dann verwendet, um die Größe der Zeile zu ändern, um sicherzustellen, dass alle Zellen in der Zeile im generierten Dokument sichtbar sind. Gehen Sie folgendermaßen vor, um diese Funktion beim Ausführen von EB-Formaten zu verwenden, die für die Verwendung von Excel-Vorlagen zum Generieren ausgehender Dokumente konfiguriert wurden.
+Ab Dynamics 365 Finance-Version 10.0.23 können Sie ER zwingen, beim Arbeiten in einem generierten Dokument die Höhe jeder Zeile zu berechnen, die so konfiguriert wurde, dass ihre Höhe automatisch an den Inhalt verschachtelter Zellen angepasst wird, wenn diese Zeile mindestens eine verbundene Zelle enthält, die zum Umbrechen des Texts in der Zelle konfiguriert war. Die berechnete Höhe wird dann verwendet, um die Größe der Zeile zu ändern, um sicherzustellen, dass alle Zellen in der Zeile im generierten Dokument sichtbar sind.
+
+> [!NOTE]
+> Beachten Sie, dass diese Funktion möglicherweise nicht wie erwartet funktioniert, wenn eine benutzerdefinierte Schriftart zum Formatieren einer verbundenen Zelle verwendet wird. Da Excel keine benutzerdefinierten Schriftarten einbettet, werden keine Informationen zur benutzerdefinierten Schriftgröße bereitgestellt. Daher kann die Größe der verbundenen Zelle falsch geschätzt werden.
+
+Gehen Sie folgendermaßen vor, um diese Funktion beim Ausführen von EB-Formaten zu verwenden, die für die Verwendung von Excel-Vorlagen zum Generieren ausgehender Dokumente konfiguriert wurden.
 
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
 2. Wählen Sie auf der Seite **Lokalisierungskonfigurationen** im Bereich **Zugehörige Links** die Option **Parameter für elektronische Berichterstellung** aus.

@@ -14,18 +14,27 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ebf11b55f1034b9a84dda9ada77c2f1b7f587a58
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 89d2f53a761085949885c987d664654c3423524b
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781588"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8645076"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>IoT-Intelligenz-Add-In in LCS installieren
 
 [!include [banner](../../includes/banner.md)]
 
 In diesem Thema wird erläutert, wie Sie das IoT-Intelligenz-Add-In in Microsoft Dynamics Lifecycle Services (LCS) installieren. Beachten Sie, dass Add-Ins nicht in einer Demo-/Testversionsumgebung installiert werden können. Bevor Sie das Add-In installieren können, müssen Sie die [Azure-Ressourcen erstellen](iot-azure-setup.md).
+
+Sie können IoT-Intelligenz einrichten und konfigurieren, ohne Code schreiben zu müssen. Hier sind die grundlegenden Schritte:
+
+1. [Einrichten von Azure-Ressourcen](iot-azure-setup.md) – Erstellen Sie einen IoT-Hub, einen Redis Cache und einen Schlüsseltresor, auf den über Supply Chain Management zugegriffen werden kann.
+2. [Nachrichtenschemaformate für IoT Hub](iot-schema-format.md) – Konfigurieren Sie Ihre Geräte zum Senden von Nachrichten an IoT Hub und definieren Sie das Nachrichtenformat JavaScript Object Notation (JSON).
+3. Aktivieren Sie in der Funktionsverwaltung das IoT-Intelligenz-Funktions-Flag.
+4. Das IoT-Intelligenz-Add-In in Microsoft Dynamics Lifecycle Services (LCS) installieren – Installieren Sie das Add-In in LCS und konfigurieren Sie die Azure-Geheimnisse (wie in diesem Thema beschrieben).
+5. [Metriken einrichten](iot-metrics-setup.md) – Richten Sie Metriken im Supply Chain Management ein.
+6. [Szenario-Einrichtung](iot-scenario-setup.md) – Richten Sie die Szenarien im Supply Chain Management ein.
 
 ## <a name="set-up-the-lcs-environment"></a>LCS-Umgebung einrichten
 

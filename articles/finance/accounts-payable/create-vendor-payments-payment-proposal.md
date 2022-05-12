@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14312
 ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71e87b1102e21e035c25af4c63245eaaa59e4babb82bcf59c5cfba48f7d114f3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 101cbcc77b2e1eab9fb4b6724fc5e3e8925a54c5
+ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749051"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8629436"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Kreditorenzahlungen unter Verwendung eines Zahlungsvorschlags erstellen
 
@@ -48,7 +48,7 @@ Die Zahlungsvorschlagsabfrage enthält verschiedene Registerkarten. Jede davon h
 - **Kreditorenrechnungen aus anderen juristischen Personen einbeziehen** – Wenn in Ihrer Organisation ein zentralisierte Prozess für Zahlungen vorhanden ist und der Zahlungsvorschlag Rechnungen von anderen juristischen Personen einbeziehen sollte, die in den Suchkriterien enthalten sind, legen Sie diese Option auf **Ja** fest.
 - **Separate Kreditorenzahlung pro juristischer Person vorschlagen** – Wenn diese Option auf **Ja** festgelegt ist, wird eine separate Zahlung für jede juristische Person pro Kreditor erstellt. Der Kreditor auf der Zahlung ist der Kreditor aus der Rechnung von jeder juristischen Person. Wenn diese Option auf **Nein** festgelegt ist und derselbe Kreditor Rechnungen in mehreren juristischen Personen hat, wird eine Zahlung für den Gesamtbetrag der ausgewählten Rechnungen erstellt. Der Kreditor zur Zahlung ist der Kreditor in der aktuellen juristischen Person. Wenn das Kreditorenkonto in der aktuellen juristischen Person nicht vorhanden ist, wird das Kreditorenkonto der ersten zu bezahlenden Rechnung verwendet.
 - **Zahlungswährung** – Dieses Feld gibt die Währung an, in der alle Zahlungen erstellt werden. Wenn eine Währung nicht definiert ist, wird die Rechnung in der Währung der Rechnung bezahlt.
-- **Wochentag für Zahlung** – Geben Sie den Wochentag ein, an dem die Zahlung erfolgen soll. Dieses Feld wird nur verwendet, wenn die Zahlungsmethode für gesamte Rechnungen zur Zahlung an einem bestimmten Wochentag eingerichtet ist.
+- **Wochentag für Zahlung** – Geben Sie den Wochentag ein, an dem die Zahlung erfolgen soll. Dieses Feld wird nur verwendet, wenn die Zahlungsmethode auf **Woche** eingestellt ist. Die Rechnungsbeträge zur Zahlung werden am angegebenen Wochentag für die Zahlung summiert.
 - **Gegenkontenart** und **Gegenkonto** - Legen Sie diese Felder fest, um einen bestimmten Typ des Kontos (wie **Sachkonto** oder **Bank**) und Gegenkonto (wie ein bestimmtes Ausgleichskonto) zu definieren. Die Zahlungsmethode für die Rechnung legt die Standardgegenkontenart und das Gegenkonto fest, doch Sie können diese Felder verwenden, um die Standardwerte zu überschreiben.
 - **Datum der zusammengefassten Zahlung** – Dieses wird nur verwendet, wenn das Feld **Periode** für die Zahlungsmethode auf **Summe** gesetzt ist. Wenn ein Datum definiert ist, werden alle Zahlungen an diesem Datum erzeugt. Das Feld **Mindestzahlungsdatum** wird ignoriert.
 - **Zusätzliche Filter**– Im Inforegister **Einzubeziehen Datensätze** können Sie weitere Bereiche von Kriterien definieren. Wenn Sie beispielsweise nur einen bestimmten Bereich von Kreditoren zahlen möchten, können Sie einen Filter für den Kreditorenbereich definieren. Diese Funktion wird häufig verwendet, um Rechnungen für eine bestimmte Zahlungsmethode auszuwählen. Wenn Sie beispielsweise einen Filter unter **Zahlungsmethode** = **Scheck** definieren, werden nur Rechnungen ausgewählt, die dieser Zahlungsmethode entsprechen, vorausgesetzt, dass diese auch anderen Kriterien entsprechen, die in der Abfrage angegebenen sind.
