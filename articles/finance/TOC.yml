@@ -10,8 +10,10 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: Neuerungen oder Änderungen in Finance
               items:
-                - name: "Neuerungen oder Änderungen in Finance\_– Startseite"
+                - name: Neuerungen oder Änderungen der Startseite von Finance
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.27 (Juli)
+                  href: get-started/whats-new-changed-10-0-27.md
                 - name: "Finance\_10.0.26 (Mai)"
                   href: get-started/whats-new-changed-10-0-26.md
                 - name: "Finance\_10.0.25 (April)"
@@ -170,7 +172,7 @@
               items:
                 - name: Implementierung der Lebenszyklusverwaltung – Startseite
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/finance/toc.json
-                - name: Architektur von Finance and Operations-Apps
+                - name: Architektur von Finanz- und Betriebs-Apps
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/finance/toc.json
                 - name: "Microsoft\_FastTrack"
                   href: /dynamics365/fasttrack/index
@@ -412,6 +414,8 @@
                   href: accounts-receivable/subscription-billing-summary.md
                 - name: Wiederkehrende Vertragsabrechnung
                   items:
+                    - name: Wiederkehrende Vertragsabrechnung einrichten
+                      href: accounts-receivable/sb-recur-bill-parameters.md
                     - name: Fakturierungszeitpläne erstellen
                       href: accounts-receivable/sb-billing-schedules.md
                     - name: Einen Fakturierungszeitplan kopieren
@@ -420,22 +424,26 @@
                       href: accounts-receivable/sb-schedule-billing-features.md
                     - name: Abrechnung nach Meilenstein
                       href: accounts-receivable/sb-milestonebilling.md
+                    - name: Umsatzerlöszuteilung
+                      href: accounts-receivable/sb-rev-allocation.md
                     - name: Support- und Verlängerungsprozess
                       href: accounts-receivable/sb-support-renewals.md
+                    - name: Nicht abgerechneter Umsatzerlös
+                      href: accounts-receivable/sb-unbilled-revenue.md
                     - name: Zeitpläne der Verbraucherpreisindizes
                       href: accounts-receivable/cpischedules.md
                     - name: Fakturierungszeitpläne beenden
                       href: accounts-receivable/terminate-billing-schedule.md
+                    - name: Ausrichtungsdatumsszenarien
+                      href: accounts-receivable/sb-alignment-date-examples.md
                 - name: Umsatzerlös- und Ausgabenstundungen
                   items:
                     - name: Umsatzerlös- und Ausgabenstundungen einrichten
                       href: accounts-receivable/sb-deferrals.md
-                    - name: Stundungszeitpläne
-                      items:
-                        - name: Stundungszeitpläne erstellen
-                          href: accounts-receivable/sb-deferrals-schedules.md
-                        - name: Stundungsstandardtransaktionen
-                          href: accounts-receivable/sb-deferral-transactions.md
+                    - name: Stundungszeitpläne erstellen
+                      href: accounts-receivable/sb-deferrals-schedules.md
+                    - name: Stundungsstandardtransaktionen
+                      href: accounts-receivable/sb-deferral-transactions.md
                 - name: Umsatzerlöszuteilung mit mehreren Elementen
                   items:
                     - name: Umsatzerlöszuteilung für mehrere Elemente einrichten
@@ -1429,7 +1437,7 @@
                             - name: Azure-Ressourcen für die elektronische Rechnungsstellung einrichten
                               href: localizations/e-invoicing-set-up-azure-resources.md?toc=/dynamics365/finance/toc.json
                             - name: Einen Azure Key Vault im Azure-Portal einrichten
-                              href: localizations/e-invoicing-create-azure-storage-account-azure-portal.md?toc=/dynamics365/finance/toc.json
+                              href: localizations/e-invoicing-create-azure-key-vault-azure-portal.md?toc=/dynamics365/finance/toc.json
                             - name: "Ein Azure\_Storage-Konto im Azure-Portal einrichten"
                               href: localizations/e-invoicing-create-azure-storage-account-azure-portal.md
                             - name: Eine SharePoint-Verbindung konfigurieren
@@ -1460,6 +1468,8 @@
                           href: localizations/e-invoicing-complete-publish-deploy-globalization-feature.md?toc=/dynamics365/finance/toc.json
                         - name: Mit anderen Organisationen teilen
                           href: localizations/e-invoicing-share-other-organizations.md?toc=/dynamics365/finance/toc.json
+                        - name: Dashboard zur Nutzungsverwaltung
+                          href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
                         - name: Eingehende elektronische Dokumente verarbeiten
                           items:
                             - name: Verarbeiten eingehender elektronischer Dokumente
@@ -1468,12 +1478,12 @@
                               href: localizations/e-invoicing-configure-email.md?toc=/dynamics365/finance/toc.json
                             - name: Einen SharePoint-Kanal konfigurieren
                               href: localizations/e-invoicing-configure-sharepoint-channel.md
-                        - name: Elektronische Rechnungsstellung in Finance und Supply Chain Management einrichten und verwenden
-                          items:
-                            - name: Integration der elektronischen Rechnungsstellung aktivieren und einrichten
-                              href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
-                            - name: Elektronische Rechnungsstellungsparameter einrichten
-                              href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
+                    - name: Elektronische Rechnungsstellung in Finance und Supply Chain Management einrichten und verwenden
+                      items:
+                        - name: Integration der elektronischen Rechnungsstellung aktivieren und einrichten
+                          href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
+                        - name: Elektronische Rechnungsstellungsparameter einrichten
+                          href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
                         - name: Mit elektronischer Rechnungsstellung arbeiten
                           items:
                             - name: Elektronische Dokumente zur elektronischen Rechnungsstellung senden
@@ -1486,12 +1496,6 @@
                       items:
                         - name: Verfügbarkeit von Funktionen für die elektronische Rechnungsstellung
                           href: localizations/e-invoicing-country-specific-availability.md?toc=/dynamics365/finance/toc.json
-                        - name: Erste Schritte mit der Dienstverwaltung für elektronische Rechnungsstellung
-                          href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
-                        - name: Erste Schritte mit der elektronischen Rechnungsstellung
-                          href: localizations/e-invoicing-get-started.md?toc=/dynamics365/finance/toc.json
-                        - name: Neue Funktion zur elektronischen Rechnungsstellung erstellen
-                          href: localizations/e-invoicing-create-new-e-invoicing-feature.md
                         - name: Erste Schritte mit der elektronischen Rechnungsstellung in Brasilien
                           href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Erste Schritte mit der elektronischen Rechnungsstellung in Ägypten
@@ -1504,10 +1508,6 @@
                           href: localizations/e-invoicing-ita-fatturapa-get-started.md
                         - name: Kreditorenrechnungen mit der elektronischen Rechnungsstellung importieren
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
-                        - name: Elektronische Rechnungsstellung einrichten
-                          href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
-                        - name: Administratorreferenz zum Power Platform-Plug-In
-                          href: localizations/e-invoicing-power-platform-plug-in.md
                     - name: Häufig gestellte Fragen zur elektronischen Rechnungsstellung
                       href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Steuerberechnung
@@ -1618,6 +1618,12 @@
                           href: localizations/tcs-troubleshooting-failed-access-tax-service.md
                         - name: Leere Steuerfunktionsliste in den Steuerberechnungsparametern
                           href: localizations/tcs-troubleshooting-tax-feature-list-empty-tax-calculation-parameter.md
+                        - name: Steuercode kann nicht ermittelt werden
+                          href: localizations/tcs-troubleshooting-tax-code-cannot-be-determined.md
+                        - name: Es wurden keine übereinstimmenden Ergebnisse gefunden
+                          href: localizations/tcs-troubleshooting-no-matching-result.md
+                        - name: Den Debug-Modus im Steuerberechnungsdienst aktivieren
+                          href: localizations/tcs-troubleshooting-enable-debug-mode.md
                     - name: Häufig gestellte Fragen zur Steuerberechnung
                       href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json
             - name: Steuern
@@ -3725,6 +3731,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
                 - name: Umsatz- und Rentabilitätsleistung
                   href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/finance/toc.json
+                - name: Inhalt der Power BI-Abonnementabrechnung
+                  href: accounts-receivable/sub-bill-power-bi.md
                 - name: Kreditorenzahlungen
                   href: accounts-payable/Vendor-payments-workspace.md
                 - name: Arbeitskraftkennzahlen

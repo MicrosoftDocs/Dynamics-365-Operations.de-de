@@ -10,19 +10,17 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
             - name: Neuerungen oder Änderungen in Supply Chain Management
               items:
-                - name: Neuerungen oder Änderungen auf der Startseite von Supply Chain Management
+                - name: Neuerungen oder Änderungen der Startseite von Supply Chain Management
                   href: get-started/whats-new-home-page.md
+                - name: "Supply Chain Management\_10.0.27 (Juli 2022)"
+                  href: get-started/whats-new-scm-10-0-27.md
                 - name: "Supply Chain Management\_10.0.26 (Mai 2022)"
                   href: get-started/whats-new-scm-10-0-26.md
                 - name: "Supply Chain Management\_10.0.25 (April\_2022)"
                   href: get-started/whats-new-scm-10-0-25.md
-                - name: "Supply Chain Management\_10.0.24 (Februar 2022)"
-                  href: get-started/whats-new-scm-10-0-24.md
-                - name: "Supply Chain Management\_10.0.23 (Januar\_2022)"
-                  href: get-started/whats-new-scm-10-0-23.md
             - name: Entfernte oder veraltete Funktionen
               items:
-                - name: "Entfernte oder veraltete Funktionen\_– Startseite"
+                - name: Entfernte oder veraltete Funktionen – Startseite
                   href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management
                   href: get-started/removed-deprecated-features-scm-updates.md
@@ -176,7 +174,7 @@
               items:
                 - name: Implementierung der Lebenszyklusverwaltung – Startseite
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Architektur von Finance and Operations-Apps
+                - name: Architektur von Finanz- und Betriebs-Apps
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: "Microsoft\_FastTrack"
                   href: /dynamics365/fasttrack/
@@ -1719,14 +1717,12 @@
                   href: inventory/inventory-visibility-tips.md
         - name: IoT-Intelligenz
           items:
-            - name: IoT-Intelligenz – Startseite
+            - name: "IoT\_Intelligence – Startseite"
               href: iot/iot-intelligence-home-page.md
             - name: Azure-Ressourcen einrichten
               href: iot/iot-azure-setup.md
-            - name: Nachrichtenschemaformate für IoT-Hub
+            - name: Nachrichtenschemaformate für IoT Hub
               href: iot/iot-schema-format.md
-            - name: Add-In in LCS installieren
-              href: iot/iot-lcs-setup.md
             - name: Metriken einrichten
               href: iot/iot-metrics-setup.md
             - name: Szenarioeinrichtung
@@ -2757,6 +2753,8 @@
                   href: production-control/production-floor-execution-setup.md
                 - name: Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte
                   href: production-control/production-floor-execution-use.md
+                - name: Urlaubssalden in der Produktionsausführungsoberfläche anzeigen
+                  href: production-control/production-floor-execution-payroll-stats.md
                 - name: Produktionsausführungsoberfläche entwerfen
                   href: production-control/production-floor-execution-styles.md
                 - name: Produktionsausführungsoberfläche anpassen

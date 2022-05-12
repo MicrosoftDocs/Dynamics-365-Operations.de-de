@@ -2,7 +2,7 @@
 title: Umsatzerkennungseinstellungen
 description: In diesem Thema werden die Einrichtungsoptionen für die Umsatzerkennung und deren Auswirkungen behandelt.
 author: kweekley
-ms.date: 11/24/2021
+ms.date: 04/28/2022
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e8e29ec1ca5a02db67bb4baf522da96ec23c740f
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: 5f72ebd743763db7c68340a833c2501d47d27081
+ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867219"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "8656720"
 ---
 # <a name="revenue-recognition-setup"></a>Umsatzerkennungseinstellungen
 [!include [banner](../includes/banner.md)]
@@ -100,7 +100,7 @@ Geben Sie in den Feldern **Umsatzerlöszeitplan** und **Beschreibung** beschreib
     - **Vorkommen** – Der Betrag wird gleichmäßig auf die Vorkommen verteilt, kann jedoch eine zusätzliche Periode enthalten, wenn Sie **Tatsächliches Startdatum** als Erkennungskonvention auswählen.
     - **Buchhaltungsperiode nach Tagen** – Der Betrag wird auf Grundlage der tatsächlichen Tage der einzelnen Buchhaltungsperioden zugewiesen. 
 
-    Die Ergebnisse von **Monatlich nach Tagen** und **Buchhaltungsperiode nach Tagen** sind gleich, wenn die Buchhaltungsperioden Kalendermonaten entsprechen. Die einzige Ausnahme besteht, wenn die Erkennungskonvention auf **Ende des Monat/Zeitraums** eingestellt ist und die Felder **Vertragsstartdatum** und **Enddatum** in einer Auftragsposition leer gelassen wurden.
+         - Die Ergebnisse von **Monatlich nach Tagen** und **Buchhaltungsperiode nach Tagen** sind gleich, wenn die Buchhaltungsperioden Kalendermonaten entsprechen. Die einzige Ausnahme besteht, wenn die Erkennungskonvention auf **Ende des Monat/Zeitraums** eingestellt ist und die Felder **Vertragsstartdatum** und **Enddatum** in einer Auftragsposition leer gelassen wurden.
 
 - **Erkennungskonvention** – Die Erkennungskonvention bestimmt die Daten, die auf den Umsatzerlöszeitplan für die Rechnung angegeben sind.
 
@@ -108,7 +108,7 @@ Geben Sie in den Feldern **Umsatzerlöszeitplan** und **Beschreibung** beschreib
     - **1. Tag des Monats/Zeitraums** – Das Datum der ersten Zeitplanposition ist das Vertragsstartdatum (oder das Rechnungsdatum). Allerdings werden alle folgenden Zeitplanpositionen für den ersten Tag des Monats bzw. der Buchaltungsperiode erstellt.
     - **Teilung in der Monatsmitte** – Das Datum der ersten Zeitplanposition hängt vom Rechnungsdatum ab. Wenn die Rechnung zwischen dem 1. und dem 15. des Monats gebucht wird, wird der Umsatzerlöszeitplan unter Verwendung des ersten Tag des Monats erstellt. Wenn die Rechnung zwischen dem 16. oder einem späteren Tag des Monats gebucht wird, wird der Umsatzerlöszeitplan unter Verwendung des ersten Tag des folgenden Monats erstellt.
 
-        **Teilung in der Monatsmitte** kann nicht ausgewählt werden, wenn die Erkennungsgrundlage auf **Buchhaltungsperiode nach Tagen** festgelegt ist.
+        - **Teilung in der Monatsmitte** kann nicht ausgewählt werden, wenn die Erkennungsgrundlage auf **Buchhaltungsperiode nach Tagen** festgelegt ist.
 
     - **1. Tag des nächsten Monats/Zeitraums** – Das Datum, zu dem der Zeitplan beginnt, ist der erste Tag des nächsten Monats bzw. der Buchhaltungsperiode.
     - **Ende des Monats/Zeitraums** – Das Datum der ersten Zeitplanposition ist das Vertragsstartdatum (oder das Rechnungsdatum). Allerdings werden alle folgenden Zeitplanpositionen für den letzten Tag des Monats bzw. der Buchhaltungsperiode erstellt. 

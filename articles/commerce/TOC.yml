@@ -10,19 +10,17 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
             - name: Neuerungen oder Änderungen in Commerce
               items:
-                - name: Neuerungen oder Änderungen in Commerce – Startseite
+                - name: Neuerungen oder Änderungen auf der Startseite von Commerce
                   href: get-started/whats-new-home-page.md
+                - name: "Commerce\_10.0.27 (Juli\_2022)"
+                  href: get-started/whats-new-commerce-10-0-27.md
                 - name: "Commerce\_10.0.26 (Mai\_2022)"
                   href: get-started/whats-new-commerce-10-0-26.md
                 - name: "Commerce\_10.0.25 (April\_2022)"
                   href: get-started/whats-new-commerce-10-0-25.md
-                - name: "Commerce\_10.0.24 (Februar 2022)"
-                  href: get-started/whats-new-commerce-10-0-24.md
-                - name: "Commerce\_10.0.23 (Januar 2022)"
-                  href: get-started/whats-new-commerce-10-0-23.md
             - name: Entfernte oder veraltete Funktionen
               items:
-                - name: "Entfernte oder veraltete Funktionen\_– Startseite"
+                - name: Entfernte oder veraltete Funktionen – Startseite
                   href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/commerce/toc.json
                 - name: Entfernte oder veraltete Funktionen in Finance and Operations
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
@@ -196,7 +194,7 @@
               items:
                 - name: Implementierung der Lebenszyklusverwaltung – Startseite
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
-                - name: Architektur von Finance and Operations-Apps
+                - name: Architektur von Finanz- und Betriebs-Apps
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: "Microsoft\_FastTrack"
                   href: /dynamics365/fasttrack/
@@ -356,6 +354,8 @@
                           href: tax-exempt-price-inclusive.md
                         - name: Mehrwertsteuer für Onlinebestellungen konfigurieren
                           href: sales-tax-config.md
+                        - name: Informationen zur Steueraufteilung in Bestellzusammenfassungen ausblenden
+                          href: hide-taxes-breakup.md
                     - name: E-Mail-Benachrichtigungsprofil einrichten
                       href: email-notification-profiles.md
                     - name: Nummernkreise
@@ -394,7 +394,7 @@
                       href: dev-itpro/store-commerce.md
                     - name: Implementierungsleitfaden für die Geräteverwaltung
                       href: implementation-considerations-devices.md
-                    - name: Zwischen MPOS und Cloud POS auswählen
+                    - name: Zwischen Store Commerce und Cloud POS auswählen
                       href: MPOS-or-CPOS.md
                     - name: Online- und Offline-POS-Vorgänge
                       href: pos-operations.md
@@ -496,6 +496,8 @@
                   href: tasks/configure-functionality-profile-sales-representative.md
                 - name: Finanzdimensionen für Retail Channels erstellen und Dimensionswerte für Shops konfigurieren
                   href: tasks/create-financial-dimensions-retail-channels.md
+                - name: Nummernkreise für Einzelhandelsaufstellungen einrichten
+                  href: retail-statements-number-sequences.md
                 - name: Konsistente Verarbeitung der Lieferart in E-Commerce-Kanälen aktivieren
                   href: consistent-delivery-mode-handling.md
             - name: Einen Onlinechannel einrichten
@@ -884,6 +886,8 @@
           items:
             - name: Übersicht zu Aufstellungen
               href: retail-statements.md
+            - name: Commerce-Buchungsparameter
+              href: commerce-posting-parameters.md
             - name: Geschäftstransaktionen für die Aufstellungsberechnung validieren
               href: valid-checker.md
             - name: Regeln in der Konsistenzprüfung für Einzelhandelstransaktionen deaktivieren
@@ -1100,6 +1104,8 @@
                       href: adventure-works-theme.md
                     - name: Adventure Works-Design installieren
                       href: install-adventure-works.md
+                - name: Lokalisierungsanleitung für Commerce
+                  href: e-commerce-localization-guide.md
             - name: Digitale Anlagen verwalten
               items:
                 - name: Übersicht über die Verwaltung digitaler Anlagen
@@ -1312,6 +1318,14 @@
               href: b2b/payment-method.md
             - name: Produktmengenbeschränkungen auf Websites für B2B-E-Commerce festlegen
               href: b2b/quantity-limits.md
+            - name: Commerce-Kataloge für B2B-Websites
+              items:
+                - name: Commerce-Kataloge für B2B-Websites erstellen
+                  href: catalogs-b2b-sites.md
+                - name: Auswirkung der Erweiterbarkeit von Commerce-Katalogen für B2B-Anpassungen
+                  href: catalogs-b2b-sites-dev.md
+                - name: Häufig gestellte Fragen zu Commerce-Kataloge für B2B
+                  href: catalogs-b2b-sites-FAQ.md
         - name: Überwachung und Analyse
           items:
             - name: Umsatz und Margen überwachen
@@ -2474,15 +2488,19 @@
                       href: dev-itpro/extension-resource-localization.md
             - name: Monitorloser Commerce
               items:
+                - name: Übersicht
+                  items:
+                    - name: Einführung in Commerce Scale Unit Core (CSU Core)
+                      href: dev-itpro/CSU-core.md
                 - name: APIs und Referenz
                   items:
                     - name: Kunden- und Verbraucher-APIs der Commerce Scale Unit
                       href: dev-itpro/retail-server-customer-consumer-api.md
                     - name: Retail Server-APIs in externen Anwendungen nutzen
                       href: dev-itpro/consume-retail-server-api.md
-                    - name: Typescript und C#-Proxys für Retail POS
+                    - name: TypeScript und C#-Proxys für Retail POS
                       href: dev-itpro/typescript-proxy-retail-pos.md
-                    - name: Commerce Runtime(CRT)-Architektur und -Konfiguration
+                    - name: Commerce runtime (CRT)-Architektur und -Konfiguration
                       href: dev-itpro/commerce-runtime-overview.md
                     - name: Commerce Runtime(CRT)-Dienste
                       href: dev-itpro/crt-services.md
@@ -2528,7 +2546,9 @@
                       href: dev-itpro/extensions-shipping-carrier-integration.md
                 - name: Verpackung und Bereitstellung
                   items:
-                    - name: Erweiterungen für Cloud-Skalierungseinheiten entfernen
+                    - name: Cloud Scale Unit-Erweiterungspaket erstellen
+                      href: dev-itpro/CSU-packaging.md
+                    - name: Cloud Scale Unit-Erweiterungen entfernen
                       href: dev-itpro/retail-sdk/remove-csu-package.md
             - name: Store Commerce
               items:
@@ -2540,6 +2560,8 @@
                       href: dev-itpro/pos-extension/pos-extension-basics.md
                     - name: POS-Erweiterungen zu Commerce SDK migrieren
                       href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: Store Commerce-Erweiterungen mit VS Code debuggen
+                      href: dev-itpro/sc-debug.md
                 - name: Einrichtung der Umgebung
                   items:
                     - name: Lokale Entwicklungsumgebung
@@ -2614,6 +2636,8 @@
                       href: dev-itpro/pos-extension/mpos-extension-signing.md
                     - name: "Cloud\_POS-Erweiterungspaket erstellen"
                       href: dev-itpro/pos-extension/cpos-extension-package.md
+                    - name: Installationspaket für die Store Commerce-Erweiterung erstellen
+                      href: dev-itpro/store-comm-extension-installer.md
             - name: E-Commerce
               items:
                 - name: Übersicht
@@ -2814,8 +2838,12 @@
                       items:
                         - name: Telemetrieprotokollierung
                           href: e-commerce-extensibility/telemetry-logger.md
-            - name: Commerce HQ
+            - name: Commerce Headquarters
               items:
+                - name: CDX-Erweiterungspaket
+                  items:
+                    - name: 'CDX-Kundenpaket erweitern, um benutzerdefinierte Daten hinzuzufügen'
+                      href: dev-itpro/extend-customer-CDX-package.md
                 - name: Verpackung und Bereitstellung
                   items:
                     - name: Commerce-Zahlungspakete für Finanz- und Betriebsbereitstellungen erstellen

@@ -8,8 +8,10 @@
           items:
             - name: Neuerungen oder Änderungen in Finanz- und Betriebs-Apps
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
-            - name: Neuerungen oder Änderungen in Human Resources
+            - name: Neuerungen und Änderungen in Human Resources
               items:
+                - name: Human Resources 10.0.27 (zusammengeführte Infrastruktur)
+                  href: ./get-started/hr-whats-new-changed-10-0-27.md
                 - name: Human Resources 10.0.26 (zusammengeführte Infrastruktur)
                   href: ./get-started/hr-whats-new-changed-10-0-26.md
                 - name: Human Resources 10.0.25 (zusammengeführte Infrastruktur)
@@ -972,9 +974,9 @@
                   href: hr-admin-integration-payroll-api-benefit-plan-type-cover.md
                 - name: Status des Vergütungsplans für Mitarbeiter
                   href: hr-admin-integration-payroll-api-benefit-employee-plan-status.md
-    - name: Entwicklung und Administration von Apps für Finanzen und operatives Geschäft
+    - name: Entwicklung und Administration von Finanz- und Betriebs-Apps
       href: ../fin-ops-core/dev-itpro/index.md
-    - name: Dynamics 365 Finance
+    - name: "Dynamics\_365 Finance"
       href: ../finance/index.md
     - name: Dynamics 365 Supply Chain Management
       href: ../supply-chain/index.md
