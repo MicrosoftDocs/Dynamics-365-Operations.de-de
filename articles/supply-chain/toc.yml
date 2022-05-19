@@ -86,8 +86,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Finance + Operations (on-premises) kaufen
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Lagerung bei lokalen Bereitstellungen konfigurieren
-                  href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
             - name: Dokumentationsressourcen
               items:
                 - name: Hilfesystem
@@ -2207,7 +2205,7 @@
                   href: procurement/tasks/create-vendor-account.md
                 - name: Ein Kreditorenbankkonto erstellen
                   href: procurement/tasks/create-vendor-bank-account.md
-                - name: Kreditoren-Buchungsprofile
+                - name: Kreditorenbuchungsprofile
                   href: ../finance/accounts-payable/vendor-posting-profiles.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurationen für Kreditorenanforderungen
                   href: procurement/vendor-request-configurations.md
@@ -3299,8 +3297,8 @@
                   href: warehousing/tasks/register-items-advanced-warehousing.md
                 - name: Artikel für einen für grundlegendes Warehousing aktivierten Artikel mithilfe einer Wareneingangserfassung registrieren
                   href: warehousing/tasks/register-items-basic-warehousing.md
-                - name: Eingehende ASNs über die V2-Datenentität importieren
-                  href: warehousing/import-asn-v2-data-entity.md
+                - name: Eingehende ASNs über die V3-Datenentität importieren
+                  href: warehousing/import-asn-data-entity.md
                 - name: Produkte vom empfangenden Lagerort Filialen zuordnen
                   href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
                 - name: Lagerplatzrichtlinie für Einlagerung von Bestellungen festlegen

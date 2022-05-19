@@ -1,6 +1,6 @@
 ---
 title: Erstellen von Blankoschecks
-description: In diesem Thema wird erläutert, wie Sie auf der Seite „Schecks“ Blankoschecks für ein Bankkonto erstellen.
+description: In diesem Artikel wird erläutert, wie Sie Blankoschecks für ein Bankkonto erstellen.
 author: abruer
 ms.date: 10/26/2017
 ms.topic: index-page
@@ -8,25 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: BankChequeTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 21941
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 3c431ed975aecf116fbf626018038b112a0a8cca063e1462e31e206480643e11
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b3a0fbb26f135e567bf6af7b2f10b39a28be4c9e
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720549"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717215"
 ---
 # <a name="create-checks-that-have-blank-status"></a>Erstellen von Blankoschecks
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie Blankoschecks erstellen. Sie müssen möglicherweise einen Blankoscheck erstellen, um einen Scheck zu erfassen, der beschädigt wurde und nicht zur Zahlung verwendet werden kann.
+In diesem Artikel wird erläutert, wie Sie Blankoschecks erstellen. Sie müssen möglicherweise einen Blankoscheck erstellen, um einen Scheck zu erfassen, der beschädigt wurde und nicht zur Zahlung verwendet werden kann.
 
 Auf der Seite **Schecks** führen Sie Verwaltungsaufgaben für Schecks aus. Sie können beispielsweise neue Schecknummern erstellen und Schecks löschen. Sie können auch Schecks erstellen, die den Status **Leer** haben. Nach der Erstellung eines Blankoschecks können sie diesen nicht im System löschen oder erneut verwenden.
 

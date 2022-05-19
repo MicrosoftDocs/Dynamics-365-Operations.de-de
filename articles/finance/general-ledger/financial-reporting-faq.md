@@ -1,25 +1,23 @@
 ---
 title: Häufig gestellte Fragen zur Finanzberichterstellung
 description: Dieser Artikel gibt Antwort auf einige häufig gestellte Fragen zur Finanzberichterstellung.
-author: jiwo
+author: jinniew
 ms.date: 07/07/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3690a541b503281f204221a72bfb5a371984d9e4
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: b5e0702864815c630f35e3f5b753ece1cb1daa71
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605278"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722295"
 ---
 # <a name="financial-reporting-faq"></a>Häufig gestellte Fragen zur Finanzberichterstellung
 
@@ -57,9 +55,9 @@ Bei einem Bericht, in dem die Salden nicht übereinstimmen, verwenden Sie die fo
 9. Erstellen Sie den Bericht. 
 10. Exportieren Sie den Bericht in Microsoft Excel.
 
-### <a name="in-dynamics-365-finance"></a>In Dynamics 365 Finance
+### <a name="in-dynamics-365-finance"></a>In Dynamics 365 Finance
 
-1. Wechseln Sie zu **Hauptbuch \> Anfragen und Berichte \> Zwischenbilanz** aus.
+1. Wechseln Sie zu **Hauptbuch \> Anfragen und Berichte \> Zwischenbilanz**.
 2. Stellen Sie die folgenden Felder ein:
 
     - **Ab Datum** – Geben Sie das Startdatum des Geschäftsjahres ein.
@@ -104,7 +102,7 @@ Auch bei der Erstellung von Berichten mithilfe der Währungsumrechnung bei Konte
 
 ## <a name="what-are-the-estimated-data-mart-integration-intervals"></a>Was sind die geschätzten Data Mart-Integrationsintervalle?
 
-Financial Reporter verwendet 16 Aufgaben, um Daten von Dynamics 365 Finance in die Financial Reporter-Datenbank zu kopieren. Die folgende Tabelle listet diese 16 Aufgaben auf und zeigt das Intervall an, das angibt, wie oft jede Aufgabe ausgeführt wird. Die Intervalle können nicht geändert werden.
+Financial Reporter kopiert mithilfe von 16 Vorgängen Daten aus Dynamics 365 Finance in die Datenbank von Financial Reporter. Die folgende Tabelle enthält diese 16 Aufgaben sowie das Intervall, das angibt, wie oft jeder Vorgang ausgeführt wird. Die Intervalle können nicht geändert werden.
 
 | Name                                                       | Intervall | Intervallzeitmessung |
 |------------------------------------------------------------|----------|-----------------|

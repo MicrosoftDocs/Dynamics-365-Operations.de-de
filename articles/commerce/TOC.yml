@@ -600,6 +600,8 @@
                       href: wallets.md
                     - name: Erweiterte Zahlungen beim Bezahlen im Shop
                       href: dev-itpro/enhanced-sca.md
+                    - name: Expresszahlungen für PayPal konfigurieren
+                      href: dev-itpro/express-payments-paypal.md
                     - name: Häufig gestellte Fragen zu Zahlungen
                       href: dev-itpro/payments-retail.md
                 - name: E-Mails und Benachrichtigungen
@@ -952,17 +954,19 @@
                   href: map-stores-existing-teams.md
                 - name: Integration von Commerce und Teams – Häufig gestellte Fragen
                   href: teams-integration-faq.md
-        - name: Ihre E-Commerce-Site verwalten
+        - name: Ihre E-Commerce-Website verwalten
           items:
-            - name: "E-Commerce-Site\_– Übersicht"
+            - name: Übersicht über die E-Commerce-Website
               href: online-store-overview.md
-            - name: E-Commerce-Site erstellen
+            - name: E-Commerce-Website erstellen
               items:
+                - name: Kanäle E-Commerce-Websites zuordnen
+                  href: map-channels-sites.md
                 - name: Domänennamen konfigurieren
                   href: configure-your-domain-name.md
                 - name: Neuen E-Commerce-Mandanten bereitstellen
                   href: deploy-ecommerce-site.md
-                - name: E-Commerce-Site erstellen
+                - name: E-Commerce-Website erstellen
                   href: create-ecommerce-site.md
                 - name: E-Commerce-Site kopieren
                   href: copy-ecommerce-site.md
@@ -2560,18 +2564,20 @@
                       href: dev-itpro/pos-extension/pos-extension-basics.md
                     - name: POS-Erweiterungen zu Commerce SDK migrieren
                       href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: POS-Erweiterungspaketprojekt erstellen
+                      href: dev-itpro/pos-extension/create-pos-extension-package.md
                     - name: Store Commerce-Erweiterungen mit VS Code debuggen
                       href: dev-itpro/sc-debug.md
+                    - name: Geschlossene MPOS- und CPOS-Erweiterungen
+                      items:
+                        - name: "APPX-Datei für Modern\_POS-Erweiterungspaket erstellen"
+                          href: dev-itpro/pos-extension/create-pos-extension-appx.md
+                        - name: MPOS-Erweiterungen (geschlossen) und CPOS-Erweiterungen
+                          href: dev-itpro/pos-extension/debug-pos-extension.md
                 - name: Einrichtung der Umgebung
                   items:
                     - name: Lokale Entwicklungsumgebung
                       href: dev-itpro/setup-local-dev-env.md
-                    - name: POS-Erweiterungspaketprojekt erstellen
-                      href: dev-itpro/pos-extension/create-pos-extension-package.md
-                    - name: "APPX-Datei für Modern\_POS-Erweiterungspaket erstellen"
-                      href: dev-itpro/pos-extension/create-pos-extension-appx.md
-                    - name: POS-Erweiterungen debuggen
-                      href: dev-itpro/pos-extension/debug-pos-extension.md
                 - name: APIs und Referenz
                   items:
                     - name: Verpackungsinformationen zu POS-Erweiterungen anzeigen
@@ -2834,6 +2840,10 @@
                           href: e-commerce-extensibility/instance-cache.md
                         - name: Modul-CSS-Optimierung
                           href: e-commerce-extensibility/module-css-optimization.md
+                        - name: Bilder auf Produktdetailseiten optimieren
+                          href: e-commerce-extensibility/optimize-images-pdp.md
+                        - name: Bilder auf Such- und Kategorieseiten optimieren
+                          href: e-commerce-extensibility/optimize-images-search-cat.md
                     - name: Telemetrie und Analyse
                       items:
                         - name: Telemetrieprotokollierung

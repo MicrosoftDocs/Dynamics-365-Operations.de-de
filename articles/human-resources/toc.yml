@@ -452,18 +452,16 @@
               href: hr-personnel-positions.md
             - name: Arbeitszeitkalender erstellen
               href: hr-personnel-create-working-time-calendar.md
-            - name: Kandidaten für eine Stelle anwerben
-              href: hr-personnel-recruit.md
             - name: Häufig gestellte Fragen zu Personalaktivitäten
               href: hr-personnel-actions-faq.md
-            - name: Workflows zum Verwalten von Mitarbeiterinformationen verwenden
+            - name: Mitarbeiterinformationen mittels Workflows verwalten
               href: hr-workflow-manage-employee-information.md
             - name: Adressänderungen anzeigen und verwalten
               href: hr-personnel-view-address-changes.md
             - name: Berichtsbeziehungen für eine Position ändern
               href: hr-personnel-modify-reporting-relationships-position.md
             - name: Optimierter Mitarbeitereintrag
-              href: ../talent/streamlined-employee-entry.md?toc=/dynamics365/human-resources/toc.json
+              href: stream-employee-entry.md
             - name: Informationen zur Arbeitskraft eingeben
               href: hr-personnel-enter-worker-information.md
             - name: Arbeitskräfte ohne Beschäftigung
@@ -488,26 +486,34 @@
               href: hr-personnel-set-up-injury-illness-information.md
             - name: Informationen zu Verletzungen und Krankheiten von Mitarbeitern verwalten
               href: hr-personnel-maintain-employee-injury-illness-information.md
-            - name: Kandidaten anwerben
+            - name: Personalbeschaffung
               items:
-                - name: Personalbeschaffungsprozesse verwalten
-                  href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
-                - name: Masseneinstellungsprojekte
-                  href: ../human-resources/hr-personnel-mass-hire-projects.md
-                - name: Masseneinstellungsprojekte erstellen
-                  href: ../human-resources/hr-personnel-create-mass-hire-project.md
-                - name: Bewerber- und Bewerbungsdaten manuell eingeben
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
-                - name: Stellenanforderungen ausarbeiten und freigeben
-                  href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
-                - name: Positionen einrichten
-                  href: ../human-resources/hr-personnel-set-up-positions.md
-                - name: Kandidaten mittels Personalbeschaffung einstellen
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
-                - name: Bestehende Mitarbeiter mittels Personalbeschaffung einstellen
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
-                - name: Hilfsmittel zur Kandidatenauswahl ermitteln und bereitstellen
-                  href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
+                - name: Übersicht
+                  href: ../human-resources/hr-recruit-overview.md
+                - name: Projekte zur Personalbeschaffung
+                  items:
+                    - name: Personalbeschaffungsprozess verwalten
+                      href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
+                    - name: Bewerber- und Bewerbungsdaten manuell eingeben
+                      href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
+                    - name: Stellenanforderungen ausarbeiten und freigeben
+                      href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
+                    - name: Positionen einrichten
+                      href: ../human-resources/hr-personnel-set-up-positions.md
+                    - name: Kandidaten mittels Personalbeschaffung einstellen
+                      href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
+                    - name: Bestehende Mitarbeiter mittels Personalbeschaffung einstellen
+                      href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
+                    - name: Hilfsmittel zur Kandidatenauswahl ermitteln und bereitstellen
+                      href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
+                    - name: Masseneinstellungsprojekte
+                      href: ../human-resources/hr-personnel-mass-hire-projects.md
+                    - name: Masseneinstellungsprojekte erstellen
+                      href: ../human-resources/hr-personnel-create-mass-hire-project.md
+                - name: Personalbeschaffungsanfragen (zusammengeführte Infrastruktur)
+                  items:
+                    - name: Kandidaten für eine Stelle anwerben
+                      href: hr-personnel-recruit.md
         - name: Aufgabenverwaltung
           href: hr-task-mgmt.md
         - name: Beurlaubung und Abwesenheit
@@ -800,6 +806,8 @@
               href: hr-admin-integration-common-data-service-virtual-entities.md
             - name: Integration mit Finance konfigurieren
               href: hr-admin-integration-finance.md
+            - name: Links aus Human Resources zu einer anderen Umgebung erstellen
+              href: configure-links.md
             - name: Integration mit Dayforce konfigurieren
               href: hr-admin-integration-dayforce.md
             - name: Eine wiederkehrende Datenexport-App erstellen

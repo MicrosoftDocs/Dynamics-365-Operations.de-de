@@ -86,8 +86,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/finance/toc.json
                 - name: Finance + Operations (on-premises) kaufen
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
-                - name: Lagerung bei lokalen Bereitstellungen konfigurieren
-                  href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
             - name: Dokumentationsressourcen
               items:
                 - name: Hilfesystem
@@ -266,15 +264,17 @@
               href: accounts-payable/vendor-workflow.md
             - name: Abweichungen beim Abgleich von Rechnungssummen beheben
               items:
-                - name: Beheben von Abweichungen beim Abgleich von Rechnungssummen – Übersicht
+                - name: Übersicht über die Korrektur von Abweichungen beim Abgleich von Rechnungssummen
                   href: accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
-                - name: Ausnahmen untersuchen oder auflösen
+                - name: Ausnahmen untersuchen oder lösen
                   href: accounts-payable/tasks/research-resolve-exceptions.md
-            - name: Kreditoren-Buchungsprofile
+            - name: Kreditorenbuchungsprofile
               href: accounts-payable/vendor-posting-profiles.md
-            - name: Daten von Kreditorenrechnungen
+            - name: Belastungscodes erstellen
+              href: accounts-receivable/create-charges-codes.md
+            - name: Kreditorenrechnungsdaten
               href: accounts-payable/vendor-invoice-dates.md
-            - name: Neubewertung der Fremdwährung für Kreditorenkonten und Debitoren
+            - name: Neubewertung der Fremdwährung für Kreditoren und Debitoren
               href: cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md
             - name: Mobile Rechnungsgenehmigungen
               href: accounts-payable/mobile-invoice-approvals.md
@@ -292,6 +292,8 @@
               items:
                 - name: Zentralisierte Zahlungen für Kreditorenkonten
                   href: accounts-payable/centralized-payments-accounts-payable.md
+                - name: Transferzahlungen einrichten und verarbeiten
+                  href: accounts-receivable/set-up-and-process-bridged-payments.md
                 - name: Ausgleich konfigurieren
                   href: cash-bank-management/configure-settlement.md
                 - name: Rest ausgleichen
@@ -354,11 +356,15 @@
               href: accounts-receivable/set-up-process-recurring-invoices.md
             - name: Buchhaltungsverteilungen und Journaleinträge in untergeordnetem Sachkonto bei Freitextrechnungen
               href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
-            - name: Debitoren-Buchungsprofile
+            - name: Debitorenkontobuchung
+              href: general-ledger/accts-recvble-posting.md
+            - name: Debitorenbuchungsprofile
               href: accounts-receivable/customer-posting-profiles.md
-            - name: SEPA-Lastschriftüberblick
+            - name: Belastungscodes erstellen
+              href: accounts-receivable/create-charges-codes.md
+            - name: Überblick über SEPA-Lastschriften
               href: accounts-receivable/sepa-direct-debit-overview.md
-            - name: SEPA-Direkteinzugsvollmacht einrichten
+            - name: SEPA-Direkteinzugsmandate einrichten
               href: accounts-receivable/sepa-direct-debit-mandate.md
             - name: 'Kreditkarten einrichten, genehmigen und erfassen'
               href: accounts-receivable/credit-card-authorizations.md
@@ -436,6 +442,8 @@
                       href: accounts-receivable/terminate-billing-schedule.md
                     - name: Ausrichtungsdatumsszenarien
                       href: accounts-receivable/sb-alignment-date-examples.md
+                    - name: Umsatzerlösverteilung
+                      href: accounts-receivable/sb-revenue-split.md
                 - name: Umsatzerlös- und Ausgabenstundungen
                   items:
                     - name: Umsatzerlös- und Ausgabenstundungen einrichten
@@ -452,11 +460,13 @@
               items:
                 - name: Übersicht über Debitorenzahlungen
                   href: cash-bank-management/tasks/customer-payment-overview.md
+                - name: Transferzahlungen einrichten und verarbeiten
+                  href: accounts-receivable/set-up-and-process-bridged-payments.md
                 - name: Zentralisierte Zahlungen bei Debitorenkonten
                   href: accounts-receivable/centralized-payments-accounts-receivable.md
                 - name: Debitorenzahlungen anzahlen
                   href: accounts-receivable/tasks/deposit-customer-payments.md
-                - name: SEPA-Lastschriftüberblick
+                - name: Überblick über SEPA-Lastschriften
                   href: accounts-receivable/sepa-direct-debit-overview.md
                 - name: SEPA-Einzugsermächtigung
                   href: accounts-receivable/sepa-direct-debit-mandate.md
@@ -750,7 +760,7 @@
               href: general-ledger/electronic-messaging-example.md
         - name: Anlagen
           items:
-            - name: Startseite für Anlagen
+            - name: Startseite zu Anlagen
               href: fixed-assets/fixed-assets.md
             - name: Anlage erstellen
               href: fixed-assets/tasks/create-fixed-asset.md
@@ -1018,7 +1028,7 @@
                       href: ../fin-ops-core/dev-itpro/financial/add-dimensions-excel-templates.md
                     - name: Buchung (Definitionen)
                       href: general-ledger/posting-definitions.md
-                    - name: Buchungsdefinitionsbeispiele
+                    - name: Beispiele für Buchungsdefinitionen
                       href: general-ledger/example-posting-definitions.md
                 - name: Währung
                   items:
@@ -1026,9 +1036,17 @@
                       href: general-ledger/import-currency-exchange-rates.md
                     - name: Doppelte Währung
                       href: general-ledger/dual-currency.md
+                - name: Buchungsprofile
+                  items:
+                    - name: Übersicht über Buchungsprofile
+                      href: general-ledger/pstg-prfles-ovrvw.md
+                    - name: Empfohlene Verfahren in Bezug auf Buchungsprofile
+                      href: general-ledger/recommended-practices-pstg-prfles.md
+                    - name: Konten für automatische Buchungen
+                      href: general-ledger/accounts-for-auto-transactions.md
                 - name: Zuordnungsregeln
                   items:
-                    - name: Sachkonto-Zuordnungsregeln
+                    - name: Zuordnungsregeln für Sachkonten
                       href: general-ledger/ledger-allocation-rules.md
                     - name: Sachkonto-Zuordnungserfassung verarbeiten
                       href: general-ledger/tasks/process-ledger-allocation-journal.md
@@ -1102,7 +1120,7 @@
                   href: general-ledger/general-ledger-account-balances.md
                 - name: Sachkonto-Zuordnungserfassung verarbeiten
                   href: general-ledger/tasks/process-ledger-allocation-journal.md
-                - name: Sachkonto-Zuordnungsregeln
+                - name: Zuordnungsregeln für Sachkonten
                   href: general-ledger/ledger-allocation-rules.md
                 - name: Gebuchte Journaleinträge journalisieren
                   href: general-ledger/tasks/journalize-posted-journal-entries.md
@@ -2224,7 +2242,7 @@
                   href: localizations/emea-reverse-charge.md
                 - name: SEPA-Kreditübertragungsübersicht
                   href: accounts-payable/sepa-credit-transfer.md
-                - name: SEPA-Lastschriftüberblick
+                - name: Überblick über SEPA-Lastschriften
                   href: accounts-receivable/sepa-direct-debit-overview.md
                 - name: Einrichten der Debitoren- und Kreditorenvergütung
                   href: localizations/emea-compensation-customer-vendor-transactions.md

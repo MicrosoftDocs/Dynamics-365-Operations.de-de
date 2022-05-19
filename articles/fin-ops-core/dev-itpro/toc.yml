@@ -50,15 +50,11 @@
           items:
             - name: Integration zwischen Finanz- und Betriebs-Apps und Drittanbieterdiensten
               href: data-entities/integration-overview.md
-            - name: Prioritätsbasierte Einschränkung
-              hreF: data-entities/priority-based-throttling.md
-            - name: Häufig gestellte Fragen zur prioritätsbasierten Einschränkung
-              href: data-entities/throttling-faq.md
             - name: Datenintegrations-APIs
               items:
-                - name: Datenverwaltungspaket-REST-API
+                - name: REST-API des Datenverwaltungspakets
                   href: data-entities/data-management-api.md
-                - name: Dienstendpunkte
+                - name: Service-Endpunkte
                   items:
                     - name: Service-Endpunkte – Übersicht
                       href: data-entities/services-home-page.md
@@ -72,9 +68,21 @@
                   href: data-entities/service-request-tracing.md
                 - name: Wiederkehrende Integrationen
                   href: data-entities/recurring-integrations.md
-                - name: Diensttests mit Hilfsprogrammen von Drittanbietern
+                - name: Dienste mit Hilfsprogrammen von Drittanbietern testen
                   href: data-entities/third-party-service-test.md
-            - name: Finance and Operations-Konnektor
+            - name: Dienstschutzgrenzwerte
+              items:
+                - name: Grenzwerte der Dienstschutz-API
+                  href: data-entities/service-protection-api-limits.md
+                - name: Einschränkende Priorisierung
+                  href: data-entities/priority-based-throttling.md
+                - name: Widerholvorgänge
+                  href: data-entities/service-protection-retry-operations.md
+                - name: API-Drosselung überwachen
+                  href: data-entities/service-protection-monitoring.md
+                - name: API-Durchsatz maximieren
+                  href: data-entities/service-protection-maximizing-api-throughput.md
+            - name: Konnektor für Finanzen and Betrieb
               href: data-entities/fin-ops-connector.md
             - name: Entwicklung für Integration
               items:
@@ -398,6 +406,8 @@
                       href: deployment/onprem-SSRSHA.md
                     - name: Proxys für lokale Umgebungen konfigurieren
                       href: deployment/onprem-reverseproxy.md
+                    - name: Warehousing-App für lokale Bereitstellungen konfigurieren
+                      href: deployment/warehousing-for-on-premise-deployments.md
                     - name: Netzwerkdruckergeräte in lokalen Umgebungen installieren
                       href: analytics/install-network-printer-onprem.md
                     - name: Lokale Diagnosen
@@ -472,16 +482,14 @@
                   href: help/language-locale.md
                 - name: 'Hilfe erweitern, anpassen und gemeinsam daran arbeiten'
                   href: help/contributor-guide.md
-            - name: Überlegungen zur Bereitstellung
+            - name: Regionale Dienste von Finanz- und Betriebs-Apps
               items:
-                - name: "Souveräne und lokale Cloud-Bereitstellungsoptionen bei Dynamics\_365 Finance und Dynamics 365 Supply Chain Management"
+                - name: Lokale Geografien
                   href: deployment/deployment-options-geo.md
-                - name: Finance und Supply Chain Management in der US-amerikanischen Government Community Cloud (GCC)
+                - name: Community-Cloud der US-Regierung (GCC)
                   href: deployment/us-gcc-deployment.md
-                - name: Finance und Supply Chain Management betrieben von 21Vianet in China
+                - name: Betrieben von 21Vianet in China
                   href: deployment/china-local-deployment.md
-                - name: Finanz- und Betriebs-Apps in Frankreich
-                  href: deployment/france-local-deployment.md
         - name: Entwickeln und anpassen
           items:
             - name: Startseite entwickeln und anpassen
@@ -559,7 +567,7 @@
                     - name: Modelle und Datenmodellelemente erstellen – Übersicht
                       href: dev-tools/create-data-model-elements.md
                     - name: Benennungsrichtlinien für Erweiterungen
-                      href: /dynamics365/fin-ops-core/dev-itpro/naming-guidelines-extensions
+                      href: /dynamics365/fin-ops-core/dev-itpro/extensibility/naming-guidelines-extensions
                     - name: Modellanpassung ausschalten und Funktionalität als veraltet kennzeichnen
                       href: dev-tools/lock-models.md
                 - name: Anpassungsanalysebericht

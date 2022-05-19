@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: kweekley
+ms.author: moaamer
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: b0560024d87ad72c7ab77eaff52a305a4ab5a089
-ms.sourcegitcommit: cd0ba5f0ac7c44d36559a3e6e0fffb6ed18f9a20
+ms.openlocfilehash: 19d23c2c5a8fabd6799c6240c25f3ede4064c001
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "7947261"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8725595"
 ---
 # <a name="year-end-activities-faq"></a>Häufig gestellte Fragen zu Aktivitäten am Jahresende 
 
@@ -172,7 +172,7 @@ Manuell erstellte Buchungen (US 1099) werden nicht im Zuge von **Alle aktualisi
 
 ## <a name="accounts-payable-1099--does-dynamics-365-finance-support-the-1096-form"></a>Kreditorenkonten: 1099 – Wird das 1096-Formular in Dynamics 365 Finance unterstützt? 
 
-Das Formular 1096 mit der jährlichen Zusammenfassung und Übermittlung von US-Informationen kann in Dynamics 365 Finance nicht gedruckt werden.
+Das Formular 1096 mit der jährliche Zusammenfassung und Übermittlung von US-Informationserklärungen kann in Dynamics 365 Finance nicht gedruckt werden.
 
 ## <a name="accounts-payable-1099--are-there-any-new-features-that-support-1099-reporting-for-public-sector"></a>Kreditorenkonten: 1099 – Gibt es neue Funktionen, mit denen die Steuererklärung (US 1099) im öffentlichen Sektor getätigt werden kann? 
 Es wurde eine neue Funktion mit der Bezeichnung **1099-Informationen anhand von Hauptkonto aktualisieren** ergänzt, die Sie im Arbeitsbereich **Funktionsverwaltung** aktivieren können. Damit können die 1099-Werte zu einem Kreditor anhand des Hauptkontos in der Buchhaltungsverteilung und nicht anhand des Standardkontos im Kreditorendatensatz verknüpft werden.
