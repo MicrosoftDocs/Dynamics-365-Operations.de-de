@@ -2,20 +2,20 @@
 title: Getrenntes Dual-write Application Orchestration Paket
 description: Das Paket Dual-write Application Orchestration ist nicht mehr ein einzelnes Paket, sondern wurde in kleinere Pakete aufgeteilt. Dieses Thema erklärt die Lösungen und Zuordnungen, die jedes Paket enthält, sowie seine Abhängigkeit von anderen Paketen.
 author: RamaKrishnamoorthy
-ms.date: 11/29/2021
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: e2f870368dc662032a3e7ca7ddca902feb23a713
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: f6950ec3e6ded49a71f119c21be67f538c8e1c69
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063261"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716551"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Getrenntes Dual-write Application Orchestration Paket
 
@@ -26,19 +26,19 @@ ms.locfileid: "8063261"
 Zuvor war das Dual-write Application Orchestration-Paket ein einzelnes Paket, das die folgenden Lösungen enthielt:
 
 - Dynamics 365 Notes
-- Dynamics 365 Finance und Vorgänge Allgemeiner Anker
-- Dynamics 365 Finance und Vorgänge duales Schreiben Entity Maps
+- Dynamics 365 Finance and Operations – allgemeiner Anker
+- Dynamics 365 Finance and Operations – Entitätszuordnungen für duales Schreiben
 - Dynamics 365 Asset-Management App
 - Dynamics 365 Asset-Management
 - HCM Common
 - Dynamics 365 Supply Chain Extended
 - Dynamics 365 Finance Extended
-- Dynamics 365 Finance und Vorgänge allgemein
+- Dynamics 365 Finance and Operations – allgemein
 - Dynamics 365 Company
 - Währungswechselsätze
 - Field Service Common
 
-Da es sich um ein einziges Paket handelte, erstellte dieses Paket eine „Alles-oder-Nichts“-Situation für Kunden. Microsoft hat sie jedoch jetzt in kleinere Pakete aufgeteilt. Der Kunde kann also nur die Pakete für die Lösungen auswählen, die er benötigt. Wenn Sie zum Beispiel ein Microsoft Dynamics 365 Supply Chain Management-Kunde sind und keine Integration mit Dynamics 365 Human Resources, Notizen und Asset-Management benötigen, können Sie diese Lösungen aus den installierten Lösungen ausschließen. Da die zugrundeliegenden Lösungsnamen, Publisher und Zuordnungsversionen gleich bleiben, ist diese Änderung nicht bahnbrechend. Bestehende Installationen können aktualisiert werden.
+Da es sich um ein einziges Paket handelte, erstellte dieses Paket eine „Alles-oder-Nichts“-Situation für Kunden. Microsoft hat sie jedoch jetzt in kleinere Pakete aufgeteilt. Kunden können also nur die Pakete für die Lösungen auswählen, die sie benötigen. Wenn Sie zum Beispiel ein Microsoft Dynamics 365 Supply Chain Management-Kunde sind und keine Integration mit Dynamics 365 Human Resources, Notizen und Asset-Management benötigen, können Sie diese Lösungen aus den installierten Lösungen ausschließen. Da die zugrundeliegenden Lösungsnamen, Publisher und Zuordnungsversionen gleich bleiben, ist diese Änderung nicht bahnbrechend. Bestehende Installationen können aktualisiert werden.
 
 ![Getrenntes Paket.](media/separated-package-1.png)
 
@@ -51,7 +51,7 @@ Mit dem Dual-write Application Core-Paket können Benutzer Dual-write ohne eine 
 | Eindeutiger Name                           | Anzeigename                               |
 |---------------------------------------|--------------------------------------------|
 | Dynamics365Company                    | Dynamics 365 Company                       |
-| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance und Vorgänge allgemein |
+| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance and Operations – allgemein |
 | CurrencyExchangeRates                 | Währungswechselsätze                    |
 | msdyn_DualWriteAppCoreMaps            | Dual-write Applications Core Zuordnung von Entitäten   |
 | msdyn_DualWriteAppCoreAnchor          | Dual-write Application Core Anker        |
@@ -186,14 +186,14 @@ Das Dual-write Supply Chain-Paket hängt von den folgenden drei Paketen ab. Dahe
 
 ## <a name="dual-write-finance"></a>Dual-write Finance
 
-Das Dual-write Finance-Paket enthält die Lösungen und Zuordnungen, die für die Synchronisierung von Dynamics 365 Finance-Daten erforderlich sind. Es enthält die folgenden vier Lösungen.
+Das Finance-Paket für duales Schreiben enthält die Lösungen und Zuordnungen, die für die Synchronisierung von Dynamics 365 Finance-Daten erforderlich sind. Es enthält die folgenden vier Lösungen.
 
 | Eindeutiger Name                            | Anzeigename                               |
 |----------------------------------------|-------------------------------------------|
 | Dynamics365FinanceExtended             | Dynamics 365 Finance Extended             |
-| msdyn_Dynamics365FinanceExtendedMaps   | Dynamics 365 Finance erweiterte Zuordnung von Entitäten |
+| msdyn_Dynamics365FinanceExtendedMaps   | Dynamics 365 Finance Extended – Entitätszuordnungen |
 | FieldServiceCommon                     | Field Service Common                      |
-| msdyn_Dynamics365FinanceExtendedAnchor | Dynamics 365 Finance erweiterter Anker      |
+| msdyn_Dynamics365FinanceExtendedAnchor | Dynamics 365 Finance Extended – Anker      |
 
 Die folgenden Zuordnungen sind in diesem Paket enthalten.
 
@@ -300,3 +300,47 @@ Project Operations hängt von den folgenden Paketen ab. Daher sollten Sie diese 
 - Dual-write Supply Chain Paket
 - Dual-write Asset-Management-Paket
 - Dual-write Human Resources Paket
+
+## <a name="dual-write-party-and-global-address-book-solutions"></a>Partei- und globale Adressbuchlösungen mit dualem Schreiben
+
+Das Partei- und globale Adressbuchpaket mit dualem Schreiben enthält die folgenden Lösungen und Zuordnungen, die zum Synchronisieren von Party- und globalen Adressbuchdaten erforderlich sind. 
+
+| Eindeutiger Name                       | Anzeigename                            |
+|-----------------------------------|-----------------------------------------|
+| Partei                             | Partei                                   |
+| Dynamics365GABExtended            | Dynamics 365 – GAB, erweitert               |
+| Dynamics365GABDualWriteEntityMaps | Dynamics 365 – GAB, Entitätszuordnungen für duales Schreiben |
+| Dynamics365GABParty_Anchor        | Dynamics 365 – GAB und Partei              |
+
+Die folgenden Zuordnungen sind in diesem Paket enthalten.
+
+| Finance and Operations-Apps | Customer Engagement-Apps | 
+|-----------------------------|--------------------------|
+| CDS-Parteien | msdyn_parties | 
+| CDS Postadressorte | msdyn_postaladdresscollections | 
+| CDS-Verlauf der Postanschrift V2 | msdyn_postaladdresses | 
+| CDS Postadressorte der Partei | msdyn_partypostaladdresses | 
+| Parteikontakte V3 | msdyn_partyelectronicaddresses | 
+| Debitoren V3 | Konten | 
+| Debitoren V3 | Kontakte | 
+| Kreditoren V2 | msdyn_vendors | 
+| Titel von Kontaktpersonen | msdyn_salescontactpersontitles | 
+| Schlussformeln | msdyn_complimentaryclosings | 
+| Anreden | msdyn_salutations | 
+| Entscheidungsfunktionen | msdyn_decisionmakingroles | 
+| Stellenfunktionen | msdyn_employmentjobfunctions | 
+| Treueebenen | msdyn_loyaltylevels | 
+| Arten von Persönlichkeitsmerkmalen | msdyn_personalcharactertypes | 
+| Kontakte V2 | msdyn_contactforparties | 
+| CDS-Verkaufsangebotskopf | Angebote | 
+| Auftragskopfzeilen CDS | salesorders | 
+| Verkaufsrechnungskopfzeilen V2 | Rechnungen | 
+| CDS-Adressrollen | msdyn_addressroles |
+
+**Abhängigkeitsinformationen**
+
+Die Partei- und globale Adressbuchlösungen mit dualem Schreiben hängen von den folgenden drei Paketen ab. Daher sollten Sie diese Pakete installieren, bevor Sie das Paket „Partei- und globale Adressbuchlösungen mit dualem Schreiben“ installieren.
+
+- Dual-write Application Core Paket
+- Dual-write Finance-Paket
+- Dual-write Supply Chain Paket

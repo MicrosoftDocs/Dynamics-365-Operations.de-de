@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerTransSettlement, LedgerTrialBalanceListPage, LedgerTrialBalanceListPageBalanceParms, LedgerTransAccount, LedgerTransSettled
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 711e2f445e043dc74cba0ee11f1ab2dc22215ff30f495e06dce1f6f3ab4a0a09
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a871e379826626edbad2434b11281fce5e29e14e
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723798"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717305"
 ---
 # <a name="settle-transactions-between-ledger-accounts"></a>Ausgleichen von Buchungen zwischen Sachkonten
 
@@ -28,22 +28,22 @@ Diese Prozedur zeigt das Ausgleichen von Buchungen zwischen Sachkonten und das S
 
 
 ## <a name="settle-transaction-between-ledger-accounts"></a>Ausgleichen von Transaktionen zwischen Sachkonten
-1. Wechseln Sie zu "Hauptbuch" > "Periodische Aufgaben" > "Sachkontoausgleiche".
+1. Wechseln Sie zu **Hauptbuch > Periodische Aufgaben > Sachkontoausgleiche**.
 2. Suchen Sie in der Liste die Transaktion, die Sie auszugleichen möchten.
    > [!NOTE]
    > Der Saldo muss null sein.  
-3. Klicken Sie auf "Einschließen"..
-4. Klicken Sie auf "Annehmen".
+3. Klicken Sie auf **Einschließen**.
+4. Klicken Sie auf **Annehmen**.
 
 ## <a name="cancel-a-ledger-settlement"></a>Stornieren eines Sachkontoausgleichs
 
-1. Wechseln Sie zu "Hauptbuch" > "Abfragen und Berichte" > "Zwischenbilanz".
-2. Klicken Sie zum Öffnen des Dropdown-Dialogfeldformulars auf "Parameter".
-3. Klicken Sie auf Aktualisieren.
+1. Wechseln Sie zu **Hauptbuch > Abfragen und Berichte > Zwischenbilanz**.
+2. Klicken Sie zum Öffnen des Dropdown-Dialogfelds auf **Parameter**.
+3. Klicken Sie auf **Aktualisieren**.
 4. Suchen Sie in der Liste das Konto, das die auszugleichende Transaktion hat.
-5. Klicken Sie auf "Alle Transaktionen".
+5. Klicken Sie auf **Alle Transaktionen**.
 6. Verwenden Sie einen Filter, um die Buchung in der Liste zu suchen.
-7. Klicken Sie auf "Sachkontoausgleiche".
+7. Klicken Sie auf **Sachkontoausgleiche**.
 8. Markieren Sie in der Liste die ausgewählte Zeile.
 
 

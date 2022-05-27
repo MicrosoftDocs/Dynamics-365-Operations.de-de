@@ -1,6 +1,6 @@
 ---
-title: Erfassungseinträge und Transaktionen anzeigen
-description: Dieser Artikel erklärt die verschiedenen Methoden zum Ansehen von Journal- und Transaktionseinträgen.
+title: Journaleinträge und Buchungen anzeigen
+description: Dieses Thema erklärt die verschiedenen Methoden zum Ansehen von Journal- und Transaktionseinträgen.
 author: aprilolson
 ms.date: 08/01/2017
 ms.topic: article
@@ -8,25 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerTransVoucher
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 13031
 ms.assetid: 281c7ea6-4dfd-4d1f-994f-c361ee299dbe
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 673d61868d863568ae7613552d95e3fbadd66d2b4072d71315ab43660a8d1866
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f4e33b1516e780c55f753b32ac5ddd50b6f9560c
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731451"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717557"
 ---
-# <a name="view-journal-entries-and-transactions"></a>Erfassungseinträge und Transaktionen anzeigen
+# <a name="view-journal-entries-and-transactions"></a>Journaleinträge und Buchungen anzeigen
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel erklärt die verschiedenen Methoden zum Ansehen von Journal- und Transaktionseinträgen. 
+Dieses Thema erklärt die verschiedenen Methoden zum Ansehen von Journal- und Transaktionseinträgen. 
 
 Benutzer, die Erfassungen und Transaktionen anzeigen möchten, haben mehrere Möglichkeiten für den Datenzugriff. Sie können Anfragenseiten nutzen, die eine Detallanzeige ermöglichen, oder sie können verschiedene Berichtsoptionen im Hauptbuch verwenden.
 

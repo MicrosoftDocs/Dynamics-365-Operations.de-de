@@ -8,21 +8,21 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "17251"
 - intro-internal
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
-ms.author: sigitac
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 391f62f42e482f79420bbe1bbd4cec4930790229
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: d69d3d1620616bd7a136645d6f28f638e8bcf199
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982064"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711742"
 ---
 # <a name="budget-planning-overview"></a>Budgetplanung – Übersicht
 
@@ -87,7 +87,7 @@ Budgetplanung kann einem von zwei Sicherheitsmodellen folgen, um Benutzerrechte 
 
 Budgetplanungs-Workflows werden zusammen mit den Budgetierungs-Workflows verwendet, um die Erstellung und Entwicklung von Budgetplänen zu verwalten.
 
-Ein Budgetplanungsworkflow besteht aus einer geordneten Menge von Phasen, die ein Budgetplan durchläuft. Jeder Budgetplanungs-Workflow ist mit einem Budgetierungs-Workflow verbunden. Budgetierungs-Workflows sind eine der Arten von Workflows, die durchgehend in Dynamics 365 Finance verwendet werden. Sie leiten die Budgetpläne zusammen mit Arbeitsblättern, Begründungen und Anhängen zur Überprüfung und Genehmigung durch die Organisation.
+Ein Budgetplanungsworkflow besteht aus einer geordneten Menge von Phasen, die ein Budgetplan durchläuft. Jeder Budgetplanungs-Workflow ist mit einem Budgetierungs-Workflow verbunden. Budgetierungsworkflows sind einer der Workflowtypen, die in Dynamics 365 Finance verwendet werden. Sie leiten die Budgetpläne zusammen mit Arbeitsblättern, Begründungen und Anhängen zur Überprüfung und Genehmigung durch die Organisation.
 
 Sie erstellen einen Budgetplanungs-Workflow im Abschnitt **Workflow-Stufen** der Seite **Budgetplanungskonfiguration**. Dort können Sie die Phasen und den zu verwendenden Budgetierungs-Workflow auswählen und zusätzliche Einstellungen konfigurieren.
 

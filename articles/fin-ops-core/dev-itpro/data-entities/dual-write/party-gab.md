@@ -2,19 +2,19 @@
 title: Partei und globales Adressbuch
 description: In diesem Thema wird die Partei- und globale Adressbuchfunktionalität von Duales Schreiben beschrieben.
 author: RamaKrishnamoorthy
-ms.date: 03/10/2022
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 2e0d16b29a71da23acc925c09c87f0bb4776759c
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 1e2dcfa69308f6691e787a1ff1893f9080dcaef1
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407764"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717445"
 ---
 # <a name="party-and-global-address-book"></a>Partei und globales Adressbuch
 
@@ -139,7 +139,7 @@ Das Raster enthält die folgenden Spalten:
 
 Mit der Schaltfläche **Neue elektronische Adresse** über dem Raster können Sie so viele Adressen erstellen, wie Sie möchten.
 
-Elektronische Adressen sind nur in diesem Raster verfügbar. In zukünftigen Versionen werden alle Felder für Postanschrift und elektronische Adresse aus anderen Registerkarten entfernt, z.B. aus den Registerkarten **Zusammenfassung** und **Details**. Kontaktdetails, die auf der Registerkarte **Details** angezeigt werden, sind schreibgeschützte Kopien der primären elektronischen Adresse, wie primäre Telefonnummer, primäre E-Mail, primäres Telefon, primäres Fax und primäre Twitter-ID. Während des Lead-Qualifizierungsprozesses können Sie sowohl eine geschäftliche Telefonnummer als auch eine Mobiltelefonnummer angeben. Die geschäftliche Telefonnummer wird als primäres Telefon betrachtet, wenn **IsMobile=No** und die Mobiltelefonnummer wird als sekundäres Telefon betrachtet, wenn **IsMobile=Yes**.
+Während des Lead-Qualifizierungsprozesses können Sie sowohl eine geschäftliche Telefonnummer als auch eine Mobiltelefonnummer angeben. Die geschäftliche Telefonnummer wird als primäre Telefonnummer betrachtet, wenn **IsMobile=No** und die Mobiltelefonnummer wird als sekundäre Telefonnummer betrachtet, wenn **IsMobile=Yes**.
 
 > [!TIP]
 > Verwenden Sie die Registerkarten **Adressen** und **Elektronische Adressen** in den Formularen **Konto** und **Kontakte**, um postalische und elektronische Adressen zu verwalten. Dadurch wird sichergestellt, dass Adressdaten mit den Finanz- und Betriebs-Apps synchronisiert werden.
@@ -148,7 +148,7 @@ Elektronische Adressen sind nur in diesem Raster verfügbar. In zukünftigen Ver
 
 1. Öffnen Sie Ihre Kundenbindungs-App-Umgebung.
 
-2. Installieren Sie die neueste Version (2.2.2.60 oder höher) von [Dual-write application orchestration solution](https://aka.ms/dual-write-app).
+2. Installieren Sie alle vorausgesetzten Lösungen, wie in [Getrenntes Dual-write Application Orchestration Paket](separated-solutions.md) beschrieben.
 
 3. Installieren Sie [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab).
 
@@ -163,10 +163,10 @@ Elektronische Adressen sind nur in diesem Raster verfügbar. In zukünftigen Ver
 
 7. Die folgenden Entitätszuordnungen werden für die Partei-Funktionalität aktualisiert, daher muss die neueste Version auf diese Zuordnungen angewendet werden.
 
-    Zuordnen | Update auf diese Version | Änderungen
+    Karte | Update auf diese Version | Änderungen
     ---|---|---
-    `CDS Parties (msdyn_parties)`| 1.0.0.0 | Dies ist eine neue Zuordnung, die im Rahmen dieses Releases hinzugefügt wurde.
-    `Contacts V2 (msdyn_contactforparties)`| 1.0.0.5 | Dies ist eine neue Zuordnung, die im Rahmen dieses Releases hinzugefügt wurde.
+    `CDS Parties (msdyn_parties)`| 1.0.0.2 | Dies ist eine neue Zuordnung, die im Rahmen dieses Releases hinzugefügt wurde.
+    `Contacts V2 (msdyn_contactforparties)`| 1.0.0.6 | Dies ist eine neue Zuordnung, die im Rahmen dieses Releases hinzugefügt wurde.
     `Customers V3 (accounts)` | 1.0.0.5 |Entfernte `PartyNumber` und andere parteibezogene Felder wie Name, persönliche Daten, postalische Adressfelder und elektronische Kontaktadresse.
     `Customer V3 (contacts)` | 1.0.0.5 | Entfernte `PartyNumber` und andere parteibezogene Felder wie Name, persönliche Daten, postalische Adressfelder und elektronische Kontaktadresse.
     `Vendors V2 (msdyn_vendors)` | 1.0.0.6 | Entfernte `PartyNumber` und andere parteibezogene Felder wie Name, persönliche Daten, postalische Adressfelder und elektronische Kontaktadresse.
@@ -174,16 +174,17 @@ Elektronische Adressen sind nur in diesem Raster verfügbar. In zukünftigen Ver
     `Sales invoice headers V2 (invoices)` | 1.0.0.4 | Ersetzen Sie die Kontaktperson durch die Referenz `ContactforParty`.
     `CDS Sales order headers (salesorders)` | 1.0.0.5 | Ersetzen Sie die Kontaktperson durch die Referenz `ContactforParty`.
     `CDS Party postal address locations (msdyn_partypostaladdresses)` | 1.0.0.1  | Dies ist eine neue Zuordnung, die im Rahmen dieses Releases hinzugefügt wurde.
-    `CDS postal address history V2 (msdyn_postaladdresses)` | 1.0.0.1 | Dies ist eine neue Zuordnung, die im Rahmen dieses Releases hinzugefügt wurde.
+    `CDS postal address history V2 (msdyn_postaladdresses)` | 1.0.0.2 | Dies ist eine neue Zuordnung, die im Rahmen dieses Releases hinzugefügt wurde.
     `CDS postal address locations (msdyn_postaladdresscollections)` | 1.0.0.0 | Dies ist eine neue Zuordnung, die im Rahmen dieses Releases hinzugefügt wurde.
     `Party Contacts V3 (msdyn_partyelectronicaddresses)` | 1.0.0.0 | Dies ist eine neue Zuordnung, die im Rahmen dieses Releases hinzugefügt wurde.
-    `Complimentary Closings ( msdyn_compliemntaryclosings)` | 1.0.0.0 | Dies ist eine neue Zuordnung, die im Rahmen dieses Releases hinzugefügt wurde.
+    `Complimentary Closings (msdyn_compliemntaryclosings)` | 1.0.0.0 | Dies ist eine neue Zuordnung, die im Rahmen dieses Releases hinzugefügt wurde.
     `Decision making roles (msdyn_decisionmakingroles)` | 1.0.0.0 | Dies ist eine neue Zuordnung, die im Rahmen dieses Releases hinzugefügt wurde.
     `Loyalty levels (msdyn_loyaltylevels)` | 1.0.0.0 | Dies ist eine neue Zuordnung, die im Rahmen dieses Releases hinzugefügt wurde.
     `Contact person titles (msdyn_salescontactpersontitles)` | 1.0.0.0 | Dies ist eine neue Zuordnung, die im Rahmen dieses Releases hinzugefügt wurde.
     `Personal character types (msdyn_personalcharactertypes)` | 1.0.0.0 | Dies ist eine neue Zuordnung, die im Rahmen dieses Releases hinzugefügt wurde.
     `Salutations (msdyn_salutations)` | 1.0.0.0 | Dies ist eine neue Zuordnung, die im Rahmen dieses Releases hinzugefügt wurde.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | Dies ist eine neue Zuordnung, die im Rahmen dieses Releases hinzugefügt wurde.
+    `CDS Address roles (msdyn_addressroles)` | 1.0.0.0 | Dies ist eine neue Zuordnung, die im Rahmen dieses Releases hinzugefügt wurde.
 
 8. Bevor Sie die oben genannten Zuordnungen ausführen, müssen Sie die Integrationsschlüssel manuell aktualisieren, wie in den folgenden Schritten beschrieben. Wählen Sie dann **Speichern** aus.
 
@@ -251,14 +252,15 @@ Elektronische Adressen sind nur in diesem Raster verfügbar. In zukünftigen Ver
     [CDS-Verkaufsangebotskopf](mapping-reference.md#215) | Angebote
     [Auftragskopfzeilen CDS](mapping-reference.md#217) | salesorders
     [Verkaufsrechnungskopfzeilen V2](mapping-reference.md#118) | Rechnungen
+    [CDS-Adressrollen](mapping-reference.md#301) | msdyn_addressroles
 
 > [!NOTE]
-> Die Zuordnung `CDS Contacts V2 (contacts)` ist die Zuordnung, die Sie in Schritt 1 angehalten haben. Wenn Sie versuchen, andere Zuordnungen auszuführen, können diese 2 Zuordnungen in der Liste der Abhängigen erscheinen. Führen Sie diese Zuordnungen nicht aus.
+> Die Zuordnung `CDS Contacts V2 (contacts)` ist die Zuordnung, die Sie in Schritt 1 angehalten haben. Wenn Sie versuchen, andere Zuordnungen auszuführen, können diese 2 Zuordnungen in der Liste der Abhängigen erscheinen. Führen Sie diese Zuordnungen nicht aus.
 >
-> Wenn die Lösung für das Partei- und globale Adressbuch installiert ist, müssen Sie die Steckung mit der Bezeichnung `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead` deaktivieren. Wenn Sie die Lösung für das Partei- und globale Adressbuch deinstallieren, müssen Sie das Plugin wieder aktivieren.
+> Wenn die Lösung für das Partei- und globale Adressbuch installiert ist, müssen Sie das Plugin mit der Bezeichnung `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead` deaktivieren. Wenn Sie die Lösung für das Partei- und globale Adressbuch deinstallieren, müssen Sie das Plugin wieder aktivieren.
 >
 > Das Feld `msdyn_*partynumber` (ein einzeiliges Textfeld), das in den Tabellen **Konto**, **Kontakt** und **Kreditor** enthalten ist, sollte in Zukunft nicht mehr verwendet werden. Der Name des Labels hat aus Gründen der Übersichtlichkeit das Präfix **(Veraltet)**. Verwenden Sie stattdessen das Feld **msdyn_partyid**. Das Feld ist ein Nachschlagefeld in der Tabelle **msdyn_party**.
-
+>
 > Tabellenname | Altes Feld | Neues Feld
 > --------|-------|--------
 > Konto | `msdyn_partynumber` | `msdyn_partyid`
@@ -290,21 +292,22 @@ Eine Sammlung von Tabellenzuordnungen arbeitet für die Interaktion von Partei u
 | [Verkaufsrechnungskopfzeilen V2](mapping-reference.md#118) | Rechnungen |
 | [Anreden](mapping-reference.md#228) | msdyn\_salutations |
 | [Kreditoren V2](mapping-reference.md#202) | msdyn\_vendors |
+| [CDS-Adressrollen](mapping-reference.md#301) |msdyn\_addressroles|
 
 Weitere Informationen finden Sie unter [Referenz für die Zuordnung von dualem Schreiben](mapping-reference.md).
+
+## <a name="address-roles-as-a-multi-select-drop-down-list"></a>Adressrollen als Dropdown-Liste mit Mehrfachauswahl
+Eine postalische oder eine elektronische Adresse kann mehr als einem Zweck dienen. Beispielsweise kann eine Postanschrift sowohl als Rechnungsadresse als auch als Lieferadresse dienen. In diesen Fällen kann ein Benutzer sowohl **Rechnung** als auch **Lieferung** in der Dropdown-Liste auswählen, wie in der folgenden Abbildung gezeigt. 
+
+![Dropdown-Liste für Zweck/Rolle.](media/purpose.png)
 
 ## <a name="known-issues-and-limitations"></a>Bekannte Probleme und Einschränkungen
 
 + Wenn Sie in Finanz- und Betriebs-Apps einen Debitor mit Adresse erstellen und speichern, wird die Adresse möglicherweise nicht mit der Tabelle **Adresse** synchronisiert. Der Grund dafür ist ein Problem mit der Sequenzierung der Dual-Write-Plattform. Als Workaround erstellen Sie den Kunden zuerst und speichern ihn. Fügen Sie dann die Adresse hinzu.
 + Wenn in Finanz- und Betriebs-Apps ein Datensatz eines Debitors eine primäre Adresse hat und Sie einen neuen Kontakt für diesen Debitor erstellen, erbt der Kontaktdatensatz eine primäre Adresse aus dem zugehörigen Kundendatensatz. Dies gilt auch für den Kreditor-Kontakt. Dataverse unterstützt dieses Verhalten derzeit nicht. Wenn duales Schreiben aktiviert ist, wird ein Debitor-Kontakt, der mit einer primären Adresse aus der Finanz- und Betriebs-App übernommen wurde, zusammen mit seiner Adresse auf Dataverse synchronisiert.
-+ Elektronische Adressen, die auf der Registerkarte „Elektronische Adresse“ der Formulare **Konto**, **Kontakt** und **Kreditor** festgelegt sind, stammen aus der Tabelle `msdyn_partyelectronicaddress`. Diese Informationen fließen nicht in die zugehörigen Transaktionen wie Verkaufsauftrag, Angebot und Einkaufsbestellung. Wir planen, dieses Problem in einem inkrementellen Release zu beheben. Die bestehenden Daten auf den elektronischen Adressfeldern auf den Konto- und Kontakt-Datensätzen werden weiterhin auf Transaktionen wie Verkaufsauftrag, Angebot und Einkaufsbestellung funktionieren.
 + In Finanz- und Betriebs-Apps können Sie einen Datensatz über das Formular **Kontakt hinzufügen** erstellen. Wenn Sie versuchen, einen neuen Kontakt über das Formular **Kontakt anzeigen** zu erstellen, schlägt die Aktion fehl. Dies ist ein bekanntes Problem.
 
     ![Bekanntes Problem mit Kontakt hinzufügen.](media/party-gab-contact-issue.png)
 
-+ **Initial Sync** unterstützt nicht die Zeitfelder **Verfügbar von** und **Verfügbar bis** auf **KontaktfürPartei**, da DIXF den Wert in einen String statt in eine ganze Zahl umwandelt. Die Konvertierung löst den Fehler `Cannot convert the literal '<say 08:00:00>’ to the expected type edm.int32` aus.
-+ Wenn eine Postadresse für mehr als einen Grund verwendet wird, z.B. als geschäftliche Kommunikationsadresse und Rechnungsadresse, sollte sie als `Business;Invoice` erscheinen, wie im folgenden Bild gezeigt. Wenn Sie ein Leerzeichen zwischen den Werten einfügen, erhalten Sie einen Fehler.
-
-    ![Bekanntes Problem mit Adresse.](media/party-gab-address-issue.png)
-
++ **Initial Sync** unterstützt nicht die Zeitfelder **Verfügbar von** und **Verfügbar bis** auf **KontaktfürPartei**, da DIXF den Wert in einen String statt in eine ganze Zahl umwandelt. Die Konvertierung löst den Fehler `Cannot convert the literal '<say 08:00:00>' to the expected type edm.int32` aus.
 + Sie können mit einer Finanz- und Betriebs-App mit dualem Schreiben keine vorwärts datierte Postadresse eingeben, da Dataverse keine Datumsgültigkeit unterstützt. Wenn Sie eine in der Zukunft liegende Postadresse über eine Finanz- und Betriebs-App eingeben, wird diese vollständig auf Dataverse synchronisiert und Sie sehen die Adresse sofort auf der Benutzeroberfläche. Alle Aktualisierungen dieses Datensatzes führen zu einem Fehler, da er in der Finanz- und Betriebs-App nicht aktuell ist, sondern ein zukünftiges Datum hat.

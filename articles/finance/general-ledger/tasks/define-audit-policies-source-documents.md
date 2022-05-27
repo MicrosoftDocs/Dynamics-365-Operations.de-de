@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SysPolicySourceDocumentRuleType, SysFieldLookUp, SysPolicyListPage, SysPolicy, AuditPolicyRule, SysQueryForm, SysQueryFieldLookUp, AuditPolicyDateSelection, AuditPolicyAdditionalOption, BatchJob, CaseDetail
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0779589a3583909984e35014a2ec0e86455cd30a3833110556f095241e7172ca
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e8698dd2c14321498d23efe1d01be274c56d5721
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722670"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713781"
 ---
 # <a name="define-audit-policies-for-source-documents"></a>Überwachungsrichtlinien für Quelldokumente definieren
 
@@ -39,9 +39,9 @@ Dieses Thema erklärt, wie und Überwachungsrichtlinienregeln eingerichtet und a
 11. Wählen Sie **Neu** aus.
 12. Geben Sie im Feld **Name** einen Wert ein.
 13. Erweitern Sie den Abschnitt **Richtlinienorganisationen**.
-14. Wählen Sie in der Struktur **Contoso Entertainment System USA** aus, und wählen Sie dann **Hinzufügen** aus.
-15. Wählen Sie in der Struktur **Contoso Consulting USA** aus, und wählen Sie dann **Hinzufügen** aus.
-16. Wählen Sie in der Struktur **Contoso Retail USA** aus, und wählen Sie dann **Hinzufügen** aus.
+14. Wählen Sie in der Struktur **Contoso Unterhaltungsanlagen USA** aus, und wählen Sie dann **Hinzufügen** aus.
+15. Wählen Sie in der Struktur **Contoso Beratung USA** aus, und wählen Sie dann **Hinzufügen** aus.
+16. Wählen Sie in der Struktur **Contoso Einzelhandel USA** aus, und wählen Sie dann **Hinzufügen** aus.
 17. Reduzieren Sie den Abschnitt **Richtlinienorganisationen**.
 18. Erweitern Sie den Abschnitt **Richtlinienregeln**.
 19. Suchen Sie in der Liste die zuvor erstellte "Richtlinienregel" und wählen Sie diese aus.

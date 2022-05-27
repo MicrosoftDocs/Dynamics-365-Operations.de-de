@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 10f8754c4156893034117a4d449d464754eacafb0c0f6725c36709632af730ad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 092123d6f5f74d2ff160f2ebffdc2c049ccc3f65
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727358"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716522"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Konsolidierte Finanzaufstellungen erstellen
 
@@ -90,14 +90,14 @@ Ob Sie Konten, Dimensionen oder beides verwenden, mit Finanzberichten können Si
 Ein Unternehmen besitzt ggf. nur einen Anteil eines anderen Unternehmens. Wenn Sie in dieser Situation einen konsolidierten Bericht erstellen, ist es wichtig, dass Sie nur den Anteil berücksichtigen, den das Unternehmen besitzt. Finanzberichterstellung hat mehrere Möglichkeiten, die Minderheitsbeteiligung abhängig von Benutzereinstellungen darzustellen. Eine Möglichkeit ist die Verwendung eines Zusammenfassungsanteils in der Berichtsbaumstruktur-Dimension. Eine weitere Möglichkeit ist das Anzeigen des Minderheitsbesitzes als separate Position im Bericht.
 
 ### <a name="using-the-reporting-tree-definition"></a>Verwenden der Berichtsbaumstruktur-Definition
-Geben Sie in der Berichtsbaumstruktur-Definition den Anteil der Eigentümerschaft in der Spalte **Rollup %** (Spalte H) ein, wie in der folgenden Abbildung dargestellt. Wenn der Bericht erstellt wird, wird dieser Anteil verwendet, um den konsolidierten Betrag zu berechnen. In diesem Beispiel besitzt Contoso nur 80 % von Contoso Deutschland. Sie können entweder **80** oder **.8** in der Spalte **Rollup %** eingeben, und es werden 80 Prozent auf der konsolidierten Ebene ausgeführt.
+Geben Sie in der Berichtsbaumstruktur-Definition den Anteil der Eigentümerschaft in der Spalte **Rollup %** (Spalte H) ein, wie in der folgenden Abbildung dargestellt. Wenn der Bericht erstellt wird, wird dieser Anteil verwendet, um den konsolidierten Betrag zu berechnen. In diesem Beispiel besitzt Contoso nur 80 Prozent von Contoso Deutschland. Sie können entweder **80** oder **.8** in der Spalte **Rollup %** eingeben, und es werden 80 Prozent auf der konsolidierten Ebene ausgeführt.
 
 > [!NOTE]
 > Sie können diesen Anteil der Eigentümerschaft auf jede Berichtseinheit anwenden, nicht nur auf Unternehmensebene. 
 
 ![Verwendung der prozentualen Definition des Berichtsbaums.](./media/Using-reporting-tree-definition-percentage.png "Prozentsatz der Berichtsbaumdefinition verwenden")
 
-Wenn der Bericht generiert wird, zeigt der Bericht für Contoso Deutschland 100 % des Verkaufsbetrags und 80 % des Betrags wird der konsolidierten Ebene für Verkäufe zugewiesen und zusammengefasst.
+Wenn der Bericht generiert wird, zeigt der Bericht für Contoso Deutschland 100 Prozent des Verkaufsbetrags und 80 Prozent des Betrags wird der konsolidierten Ebene für Verkäufe zugewiesen und zusammengefasst.
 
 Wenn Sie weniger als 1 Prozent eines Unternehmens besitzen, können Sie das Kontrollkästchen **Rollup von weniger als 1% zulassen** auf der Registerkarte **Weitere Optionen** der Seite **Berichtseinstellungen** aktivieren, wie in der folgenden Abbildung dargestellt. In diesem Fall werden die Werte in der Spalte **Rollup %** in der Berichtsbaumstruktur als weniger als 1 Prozent behandelt. Wenn Sie beispielsweise **.8** eingeben, werden 0,8 % auf der konsolidierten Ebene ausgeführt, nicht 80 Prozent. Alternativ erreichen Sie das gleiche Ergebnis, indem Sie das Kontrollkästchen **Rollup von weniger als 1% zulassen** deaktiviert lassen und **.008** in der Spalte **Rollup %** eingeben.
 

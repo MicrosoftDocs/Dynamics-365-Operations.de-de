@@ -9,16 +9,15 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8fd6630a92ad9c7ad9b270e99814355fafc5510c
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: 4c74ce27c120342011c3bee53b0790dbc43a583b
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402471"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694201"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-developers"></a>Lernkatalog für Dynamics 365 Commerce Entwickler
 
@@ -26,11 +25,11 @@ Müssen Sie Code schreiben, um ihn in andere Datenquellen zu integrieren, die Ke
 
 Der folgende Katalog wurde aus Kernwissen zu bestimmten Domänen und vom Einfachsten zum Fortgeschrittensten organisiert. Wenn Inhalt in mehreren Formaten vorhanden ist, benachrichtigen wir Sie, damit Sie das Trainingsformat auswählen können, das Ihren Anforderungen am besten entspricht.
 
-Trainings zu Funktionen, die es sich mit anderen Finance and Operations-Apps teilt, finden Sie im [Dynamics 365 Finance-Lernkatalog](../../finance/get-started/learning-catalog-developer.md).
+Trainings zu Funktionen, die mit anderen Finanz- und Betriebs-Apps geteilt werden, finden Sie im [Dynamics 365 Finance-Lernkatalog](../../finance/get-started/learning-catalog-developer.md).
 
 ## <a name="get-started"></a>Erste Schritte<a name="get-started"></a>
 
-| Inhalt  | Beschreibung  | Formate  | Länge    |
+| Inhalt  | Description  | Format  | Länge    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
 | [Kennenlernen des Handelswerts von Microsoft Dynamics 365 und Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/)   | Diese Lernerfahrung beginnt damit, Ihnen zu zeigen, wie digitale Umwandlung und die Leistungsfähigkeit von Geschäftsanwendungen Ihr Unternehmen transformieren können. Wir decken ab, wie Dynamics 365 und Power Platform Ihnen helfen, informierte Entscheidungen basierend auf den Anforderungen und Zielen Ihrer Organisation zu treffen, indem Sie die vier Bausteine der digitalen Umwandlung nutzen: modern, vereinheitlicht, intelligent und anpassbar.                                                                    | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 6.5 Stunden |
 | [Erste Schritte mit Dynamics 365 Commerce](/learn/paths/get-started-dynamics-365-commerce/)                                                              | Dynamics 365 Commerce basiert auf den bewährten Funktionen von Dynamics 365 Retail und bietet eine umfangreiche Omnikanal-Lösung, die Back-Office-, Store-, Callcenter- und digitale Umgebungen vereint. Dynamics 365 Commerce ermöglicht es Ihnen, durch personalisierte Kundenbindungen eine Markentreue aufzubauen, den Umsatz mit verbesserter Mitarbeiterproduktivität zu steigern, die Abläufe zu optimieren, die Kosten zu senken und die Effizienz der Lieferkette zu steigern und letztendlich bessere Geschäftsergebnisse zu erzielen. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 2 Stunden   |

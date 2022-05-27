@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalSetup
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 15631
 ms.assetid: 81613b31-bc3c-43a0-8474-e01c9a482c40
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 253da3d5cf894820e516b6b4f8d2a4fce40c92db
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: 3e49d101bbbe576e0fcf2e9b243f4f29124fbd85
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7727016"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722268"
 ---
 # <a name="ledger-journal-types"></a>Sachkonto-Erfassungstypen
 
@@ -28,7 +28,7 @@ ms.locfileid: "7727016"
 
 In diesem Thema werden die Erfassungstypen beschrieben, die Sie für Finanzerfassungen einrichten können. Verwenden Sie die Seite **Erfassungsnamen**, um Erfassungen einzurichten, die Sie für Dynamics 365 Finance verwenden können.
 
-| Journaltyp                      | Zweck                       | Transaktionen auf dieser Seite eingeben                                |
+| Journaltyp                      | Kostenträger                       | Transaktionen auf dieser Seite eingeben                                |
 |-----------------------------------|-------------------------------|----------------------------------------------------------------|
 | Zuweisung                        | Erstellen Sie Zuweisungsbuchungen in einer Zuordnungserfassung. Vor der Erstellung einer Zuordnungserfassung muss die Zuordnungsregel auf der Seite **Sachkonto-Zuordnungsregel** erstellt werden.      | Zuordnungsanforderung verarbeiten             |
 | Genehmigung                          | Buchen Sie Kreditorenrechnungen, die für die entsprechenden Sachkonten genehmigt wurden.  | Rechnungsgenehmigungs-Erfassung                                       |

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 4fd46ea161fb4441d94a9e7c7f7ffbfb245eb873
-ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
+ms.openlocfilehash: 08e247bac577dc0bb8a4635d61f0082793380da9
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7919500"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722518"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Mail-Vorlagen für Transaktionsereignisse erstellen
 
@@ -64,8 +64,8 @@ Der Benachrichtigungstyp Verpackung abgeschlossen unterstützt die folgenden zus
 | ------------------- | ------- |
 | `pickupstorename`     | Der Name des Geschäfts, in dem die Bestellung zur Abholung bereitsteht. |
 | `pickupstoreaddress`  | Der Adresse des Geschäfts, in dem die Bestellung zur Abholung bereitsteht. |
-| `pickupstorehourfrom` | Die Öffnungszeiten des Abholgeschäfts. |
-| `pickupstorehourto`   | Die Schließzeiten des Abholgeschäfts. |
+| `pickupstoreopenfrom` | Die Öffnungszeiten des Abholgeschäfts. |
+| `pickupstoreopento` | Die Schließzeiten des Abholgeschäfts. |
 | `pickupchannelid`     | Die Geschäftskanal-ID des Abholgeschäfts. |
 | `packingslipid`      | Die ID des Lieferscheins für die Bestellung, die abgeholt wird. |
 | `confirmationid`      | Die Bestellbestätigungs-ID des Lieferscheins für die Bestellung, die abgeholt wird. (Diese ID wird manchmal als Kanalreferenz-ID bezeichnet.) |
@@ -102,7 +102,7 @@ Der Benachrichtigungstyp Geschenkgutschein ausstellen unterstützt die folgenden
 | Platzhaltername      | Kostenträger |
 | --------------------- | ------- |
 | `giftcardnumber`        | Die Geschenkkartennummer für Produkte vom Typ Geschenkkarte. |
-| `giftcardbalance`       | Der Geschenkkartensaldo für Produkte vom Typ Geschenkkarte. |
+| `availablebalance` | Der Restsaldo der Geschenkkarte. |
 | `giftcardmessage`       | Die Geschenkkartennachricht für Produkte vom Typ Geschenkkarte. |
 | `giftcardpin`         | Die Geheimzahl (PIN) der Geschenkkarte für Produkte vom Typ Geschenkkarte. (Dieser Platzhalter gilt nur für externe Geschenkkarten.) |
 | `giftcardexpiration`    | Das Ablaufdatum der Geschenkkarte für Produkte vom Typ Geschenkkarte. (Dieser Platzhalter gilt nur für externe Geschenkkarten.) |

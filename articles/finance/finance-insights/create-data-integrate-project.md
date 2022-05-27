@@ -2,7 +2,7 @@
 title: Erstellen Sie ein Datenintegrationsprojekt
 description: In diesem Thema wird erläutert, wie Sie ein Datenintegrationsprojekt erstellen.
 author: ShivamPandey-msft
-ms.date: 02/09/2022
+ms.date: 05/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 50f435f9d461667a1908baa529d73766085c183a
-ms.sourcegitcommit: 6526acd0300d9c5800d3d7675d54e23090d031df
+ms.openlocfilehash: 4d69ffcb6ccfcc7bae2891f2539941f7b6bbf86e
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "8107286"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722882"
 ---
 # <a name="create-a-data-integration-project"></a>Erstellen Sie ein Datenintegrationsprojekt
 
@@ -55,11 +55,14 @@ In diesem Thema wird erläutert, wie Sie ein Datenintegrationsprojekt erstellen.
 
 5. Öffnen Sie die [Power Apps-Umgebungen](https://admin.powerapps.com/environments) und befolgen Sie diese Schritte:  
 
-    1. Erstellen Sie Datenintegrationsprojekte für die folgenden Vorlagen mit dem soeben erstellten Verbindungssatz:
+    1. Erstellen Sie ein einzelnes Datenintegrationsprojekt für jede der folgenden Vorlagen mit dem soeben erstellten Verbindungssatz:
 
         - Ergebnis der Debitorenzahlungserkenntnisse (CDS an Finance and Operations 10.0.17 oder höher)
         - Ergebnisse der Cashflow-Zeitreihen (CDS an Finance and Operations)
         - Ergebnisse der Budget-Zeitreihen (CDS an Finance and Operations)
+
+      > [!NOTE]
+      > Das Erstellen mehrerer Datenintegrationsprojekte für jede Vorlage kann Fehler verursachen, die die Aktualisierungen blockieren.
 
     2. Legen Sie für jedes Projekt die entsprechende Zeitplanung fest.
 

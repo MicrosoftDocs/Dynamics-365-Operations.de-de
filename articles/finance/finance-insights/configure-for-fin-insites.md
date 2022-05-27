@@ -8,35 +8,35 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: b9bad6445e9e77688f66c6c4186422d7a898edd7
-ms.sourcegitcommit: 7fc0a9a6440ac087292e9e76c26c67f56154b9e6
+ms.openlocfilehash: 6ec7e6a7e616e239128281ba669c8bbbfc5e3c7a
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "8051369"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710613"
 ---
 # <a name="configuration-for-finance-insights"></a>Konfiguration für Finance Insights
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Finance Insights kombiniert Funktionen von Microsoft Dynamics 365 Finance mit Dataverse, Azure und AI Builder, um leistungsstarke Prognosetools für Ihr Unternehmen zu bieten. In diesem Thema werden die Konfigurationsschritte erläutert, mit denen Ihr System die in Finance Insights verfügbaren Funktionen nutzen kann. Um die Prozeduren in diesem Thema erfolgreich abzuschließen, müssen Sie über Systemadministrator- und Systemanpasserzugriff im [Power Portal Admin Center](https://admin.powerplatform.microsoft.com/), Systemadministratorzugriff in Dynamics 365 Finance und Zugriff zum Erstellen von Umgebungen in Microsoft Dynamics Lifecycle Services (LCS).
+Finance Insights kombiniert Funktionen von Microsoft Dynamics 365 Finance mit Dataverse, Azure und AI Builder, um leistungsstarke Prognosetools für Ihr Unternehmen zu bieten. In diesem Thema werden die Konfigurationsschritte erläutert, mit denen Ihr System die in Finance Insights verfügbaren Funktionen nutzen kann. Um die Prozeduren in diesem Thema erfolgreich abzuschließen, müssen Sie über Systemadministrator- und Systemanpasserzugriff im [Power Portal Admin Center](https://admin.powerplatform.microsoft.com/), Systemadministratorzugriff in Dynamics 365 Finance und Zugriff zum Erstellen von Umgebungen in Microsoft Dynamics Lifecycle Services (LCS) verfügen.
 
 > [!NOTE]
 > Die folgenden Prozeduren zum Einrichten von Finance Insights gelten für die Versionen von Dynamics 365 Finance 10.0.21 oder höher.
 
-## <a name="deploy-dynamics-365-finance"></a>Bereitstellung von Dynamics 365 Finance
+## <a name="deploy-dynamics-365-finance"></a>Dynamics 365 Finance bereitstellen
 
 Gehen Sie folgendermaßen vor, um die Umgebungen bereitzustellen.
 
-1. Erstellen oder aktualisieren Sie in LCS eine Dynamics 365 Finance Umgebung. Die Umgebung erfordert App-Version 10.0.21 oder höher.
+1. Im LCS erstellen oder aktualisieren Sie eine Dynamics 365 Finance-Umgebung. Die Umgebung erfordert App-Version 10.0.21 oder höher.
 
     > [!NOTE]
     > Die Umgebung muss eine Hochverfügbarkeitsumgebung (HA-Umgebung) sein. (Diese Art von Umgebung wird auch als Ebene-2-Umgebung bezeichnet.) Weitere Informationen finden Sie unter [Umgebungsplanung](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
@@ -90,7 +90,7 @@ Die Installation des Add-Ins kann einige Minuten dauern.
 
 ## <a name="one-last-thing"></a>Noch eine Sache ...
 
-Nach erfolgreicher Installation des Add-Ins kann es bis zu einer Stunde dauern, bis Sie Finance Insights-Funktionen im Arbeitsbereich **Funktionsverwaltung** in Dynamics 365 Finance. Wenn Sie nicht so lange warten möchten, können Sie den Prozess **Insights-Bereitstellungsstatus überprüfen** manuell ausführen. 
+Nach erfolgreicher Installation des Add-Ins kann es bis zu einer Stunde dauern, bis Sie Finance Insights-Funktionen im Arbeitsbereich **Funktionsverwaltung** in Dynamics 365 Finance aktivieren können. Wenn Sie nicht so lange warten möchten, können Sie den Prozess **Insights-Bereitstellungsstatus überprüfen** manuell ausführen. 
 
 1. Gehen Sie in Dynamics 365 Finance zu **Systemverwaltung \> Einrichten \> Prozessautomatisierung**.
 2. Suchen Sie in der Registerkarte **Hintergrundprozesse** **Insights-Bereitstellungsstatus überprüfen** und wählen Sie **Bearbeiten** aus.

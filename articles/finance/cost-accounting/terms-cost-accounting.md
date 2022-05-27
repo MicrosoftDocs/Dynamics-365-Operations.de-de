@@ -1,27 +1,27 @@
 ---
 title: Kostenrechnungsterminologie
 description: Dieses Thema definiert die Schlüsselbegriffe, die in der Kostenrechnung verwendet werden.
-author: ShylaThompson
+author: aprilolson
 ms.date: 08/31/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostAccountingLedger
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f61ae7a6657eaad3510833c17f342b7266be247aec2a9bfe80b97172f662ae0a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f50f7849ac3c097d64a8499a19157f24d7a7b317
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774376"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712424"
 ---
 # <a name="cost-accounting-terminology"></a>Kostenrechnungsterminologie
 
@@ -124,7 +124,7 @@ Kostenrechnung unterstützt die Integration von Daten aus Quellsystemen über ei
 
 Die meisten Quellsysteme können Daten bereitstellen, die mindestens mit einer Datenquelle in der Kostenrechnung übereinstimmen. Um Daten aus Quellsystemen an der Datenquelle in der Kostenrechnung auszurichten, muss ein Datenanbieter konfiguriert werden. Die folgende Tabelle listet die Verfügbarkeit von Datenanbietern pro Datenkonnektor und Datenquelle auf.
 
-|  **Datenquellen** |  **Importierter Transaktionsdatenkonnektor** | **Dynamics 365 Finance Datenkonnektor**  | **Dynamics AX-Datenkonnektor**  |
+|  **Datenquellen** |  **Importierter Transaktionsdatenkonnektor** | **Dynamics 365 Finance-Datenkonnektor**  | **Dynamics AX-Datenkonnektor**  |
 |---|---|---|---|
 | Kostenelement-Dimensionsmitglieder  |  Ja | Ja  | Ja  |
 |  Mitglieder der Kostenobjektdimension |  Ja | Ja  | Ja  |

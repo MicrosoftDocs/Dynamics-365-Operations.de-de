@@ -1,6 +1,6 @@
 ---
 title: Mobilen Arbeitsbereich für die Anlagenverwaltung einrichten
-description: In diesem Thema wird beschrieben, wie Sie Microsoft Dynamics 365 Supply Chain Management und die mobile Finance and Operations-App (Dynamics 365) einrichten, um einen mobilen Arbeitsbereich für die Anlagenverwaltung auszuführen, mit dem Arbeitskräfte Anlagenverwaltungsaufgaben durchführen können.
+description: In diesem Thema wird beschrieben, wie Sie Microsoft Dynamics 365 Supply Chain Management und die mobile Finance and Operations(Dynamics 365)-App einrichten, um einen mobilen Arbeitsbereich für die Anlagenverwaltung auszuführen, mit dem Arbeitskräfte Anlagenverwaltungsaufgaben durchführen können.
 author: johanhoffmann
 ms.date: 01/15/2021
 ms.topic: article
@@ -8,23 +8,22 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5d628f99d4fc6788ddb38590c65decb871d49f93
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a056be417d266fd400ce1572312f327dc070cb6a
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572192"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8693499"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>Mobilen Arbeitsbereich für die Anlagenverwaltung einrichten
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Microsoft Dynamics 365 Supply Chain Management und die mobile Finance and Operations-App (Dynamics 365) einrichten, um einen mobilen Arbeitsbereich für die **Anlagenverwaltung** auszuführen, mit dem Arbeitskräfte Anlagenverwaltungsaufgaben durchführen können.
+In diesem Thema wird beschrieben, wie Sie Microsoft Dynamics 365 Supply Chain Management und die mobile Finance and Operations(Dynamics 365)-App einrichten, um einen mobilen Arbeitsbereich **Anlagenverwaltung** auszuführen, mit dem Arbeitskräfte Anlagenverwaltungsaufgaben durchführen können.
 
 ## <a name="set-up-maintenance-worker-users-in-supply-chain-management"></a>Einrichten von Benutzern als Wartungsarbeiter in Supply Chain Management
 
@@ -42,7 +41,7 @@ Führen Sie für jeden Benutzer, der Zugriff auf den mobilen Arbeitsbereich für
 
 ## <a name="publish-the-asset-management-mobile-workspace"></a>Mobilen Arbeitsbereich für die Anlagenverwaltung veröffentlichen
 
-Um Funktionen für das Anlagenmanagement in der mobilen Finance and Operations-App (Dynamics 365) verfügbar zu machen, müssen Sie den mobilen Arbeitsbereich für die **Anlagenverwaltung** veröffentlichen.
+Um Funktionen für das Anlagenmanagement in der mobilen Finance and Operations(Dynamics 365)-App verfügbar zu machen, müssen Sie den mobilen Arbeitsbereich **Anlagenverwaltung** veröffentlichen.
 
 1. Wählen Sie in Supply Chain Management die Schaltfläche **Einstellungen** aus (das Zahnradsymbol oben rechts) und wählen Sie dann im Menü **Mobile App** aus.
 1. Suchen Sie im Dialogfeld **Mobile App verwalten** die Kachel **Anlagenverwaltung**. Wenn sie den Text „In Metadaten – nicht veröffentlicht“ enthält, wurde der Arbeitsbereich noch nicht veröffentlicht. Wenn sie den Text „In Metadaten – veröffentlicht“ enthält, wurde der Arbeitsbereich bereits veröffentlicht und Sie können den Rest dieser Prozedur überspringen.
@@ -51,14 +50,14 @@ Um Funktionen für das Anlagenmanagement in der mobilen Finance and Operations-A
 
 1. Wähle Sie die Kachel **Anlagenverwaltung** aus und wählen Sie dann auf der Symbolleiste **Veröffentlichen** aus. Nach einigen Sekunden sollten Sie eine Benachrichtigung erhalten, dass der Arbeitsbereich erfolgreich veröffentlicht wurde. Außerdem sollte sich der Text auf der Kachel in „In Metadaten – veröffentlicht“ ändern.
 
-## <a name="install-and-set-up-the-finance-and-operations-dynamics-365-mobile-app"></a>Installieren und einrichten der mobilen Finance and Operations-App (Dynamics 365)
+## <a name="install-and-set-up-the-finance-and-operations-dynamics-365-mobile-app"></a>Mobile Finance and Operations(Dynamics 365)-App herunterladen und installieren
 
 1. Öffnen Sie einen der folgenden App-Stores, um die App **Microsoft Finance and Operations (Dynamics 365)** auf Ihrem Mobilgerät zu installieren:
 
     - [Für Google Android-Geräte](https://go.microsoft.com/fwlink/?linkid=850662)
     - [Für Apple iOS-Geräte](https://go.microsoft.com/fwlink/?linkid=850663)
 
-1. Öffnen Sie die Finance and Operations-App (Dynamics 365). Die Anmeldeseite sollte angezeigt werden. Geben Sie im Feld **Anmelden** Ihre Supply Chain Management-URL ein oder wählen Sie in der Liste **Letzte Umgebungen** eine aktuelle URL aus und tippen Sie dann auf **Verbinden**.
+1. Öffnen Sie die Finance and Operations(Dynamics 365)-App. Die Anmeldeseite sollte angezeigt werden. Geben Sie im Feld **Anmelden** Ihre Supply Chain Management-URL ein oder wählen Sie in der Liste **Letzte Umgebungen** eine aktuelle URL aus und tippen Sie dann auf **Verbinden**.
 
     ![Anmeldeseite.](media/mobile-app-sign-in.png "Anmeldeseite")
 
@@ -81,7 +80,7 @@ Um Funktionen für das Anlagenmanagement in der mobilen Finance and Operations-A
 
 Weitere Informationen zum Arbeiten mit dem mobilen Arbeitsbereich für die **Anlagenverwaltung** finden Sie unter [Mobilen Arbeitsbereich für die Anlagenverwaltung nutzen](asset-management-mobile-workspace.md).
 
-Weitere Informationen zur mobilen Finance and Operations-App (Dynamics 365) finden Sie unter [Startseite der mobilen App](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
+Weitere Informationen zur mobilen Finance and Operations (Dynamics 365)-App finden Sie unter [Startseite der mobilen App](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

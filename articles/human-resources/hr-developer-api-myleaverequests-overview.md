@@ -1,27 +1,26 @@
 ---
 title: MyLeaveRequests-Überblick
-description: Die MyLeaveRequests-Entität in Microsoft Dynamics 365 Human Resources stellt die Liste der Urlaubsanforderungen im System bereit, die auf diejenigen Anforderungen beschränkt sind, auf die der aktuelle Benutzer, der die Entität abfragt, zugreifen kann.
-author: andreabichsel
+description: Die MyLeaveRequests-Entität in Microsoft Dynamics 365 Human Resources enthält die Liste der Urlaubsanträge.
+author: twheeloc
 ms.date: 02/03/2020
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 41ef8c6fc0e896e7f2cefd94801abab610083b81
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 20cc53ec3bcf38444ccf75f81e28d5efd9fc4537
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070854"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717054"
 ---
-# <a name="myleaverequests-overview"></a>MyLeaveRequests-Überblick
+# <a name="myleaverequests-overview"></a>Überblick über MyLeaveRequests
 
 
 [!INCLUDE [PEAP](../includes/peap-1.md)]

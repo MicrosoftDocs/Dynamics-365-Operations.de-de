@@ -1,25 +1,22 @@
 ---
 title: Phantomartikel
-description: In diesem Thema wird ausführlich beschrieben, wie der Positionstyp "Phantom" für die Positionen einer Stückliste (BOM) und die Formel in Dynamics 365 Supply Chain Management verwendet werden kann.
+description: In diesem Thema wird beschrieben, wie der Positionstyp „Phantom“ für die Positionen einer Stückliste (BOM) und die Formel in Dynamics 365 Supply Chain Management verwendet werden kann.
 author: johanhoffmann
-ms.date: 06/15/2018
+ms.date: 05/05/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
-ms.search.validfrom: ''
-ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8e1b241c826e89909590ae16c8458bc49df995bd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.search.validFrom: 2022-05-05
+ms.dyn365.ops.version: 10.0.23
+ms.openlocfilehash: 5c9768381d35709611e4bec3d2b7793a4d896b34
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572816"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713245"
 ---
 # <a name="phantom-items"></a>Phantomartikel
 
@@ -27,49 +24,55 @@ ms.locfileid: "7572816"
 
 In diesem Thema wird ausführlich beschrieben, wie der Positionstyp "Phantom" für die Positionen einer Stückliste (BOM) und die Formel verwendet werden kann.
 
-In der folgenden Abbildung ist (a) die Stückliste für Produkt H und Teile F, G und und (b) ist der Arbeitsplan für Produkte H und Teil F.
+In Abbildung 1 ist (a) die Stückliste für Produkt H und Teile F und G und (b) ist der Arbeitsplan für Produkte H und Teil F.
 
-![Beispiel für eine Stücklistenstruktur in zwei Ebenen.](media/product-H-part-F.png)
+![Abbildung 1: Entwicklungsstückliste.](media/product-H-part-F.png)
+*Abbildung 1: Entwicklungsstückliste*
 
-Diese Abbildung zeigt ein Beispiel einer Stückliste in zwei Ebenen. Produkt H stellt ein Produkt für eine Maschinenzusammenstellung dar. Die Maschinenmontage besteht aus zwei Teilen, einer elektrische Einheit (F), die zwei Materialien hat (A und B) und eine Gruppe Verpackungsmaterialien (G), die auch zwei Materialien hat (C und D). Ein anderes Material (E) wird bei der allgemeinen Zusammenstellung der Maschine verwendet.
+Abbildung 1 zeigt ein Beispiel einer Stückliste auf zwei Ebenen. Produkt H stellt ein Produkt für eine Maschinenzusammenstellung dar. Die Maschinenmontage besteht aus zwei Teilen, einer elektrische Einheit (F), die zwei Materialien hat (A und B) und eine Gruppe Verpackungsmaterialien (G), die auch zwei Materialien hat (C und D). Ein anderes Material (E) wird bei der allgemeinen Zusammenstellung der Maschine verwendet.
 
-![Die Konstruktionsstückliste für Produkt H.](media/product-H-part-B.png)
+Abbildung 1 zeigt die Entwicklungsstückliste für Produkt H. Diese Struktur bietet einen guten Überblick der Teile und Komponenten der gesamten Maschinenmontage. Aber Produktdesigner ziehen es möglicherweise vor, die Stückliste so zu sehen und diese Struktur wird vielleicht nicht korrekt so dargestellt, wie die Maschine im Fertigungsbereich erstellt wird.
 
-Die hier verwendete Darstellung zeigt die erstellte Stückliste für Produkt H. Diese Struktur bietet einen guten Überblick der Teile und Komponenten der gesamten Maschinenmontage. Aber Produktdesigner ziehen es möglicherweise vor, die Stückliste so zu sehen und diese Struktur wird vielleicht nicht korrekt so dargestellt, wie die Maschine im Fertigungsbereich erstellt wird.
-
-Beispielsweise zeigt die Konstruktionsstückliste in der vorherigen Abbildung, dass das elektrische Einzelteil F als separater Teil auf einem separaten Arbeitsauftrag zusammengestellt wird. Allerdings kann es im Fertigungsbereich möglicherweise optimaler beurteilt werden, die elektrische Einheit im Rahmen der Gesamtmaschinenzusammenstellung und nicht als separaten Arbeitsauftrag zu verwenden.
+Beispielsweise zeigt die Entwicklungsstückliste in Abbildung 1, dass das elektrische Einzelteil F als separater Teil auf einem separaten Arbeitsauftrag zusammengestellt wird. Allerdings kann es im Fertigungsbereich möglicherweise optimaler beurteilt werden, die elektrische Einheit im Rahmen der Gesamtmaschinenzusammenstellung und nicht als separaten Arbeitsauftrag zu verwenden.
 
 Diese Konstruktionsstückliste gibt auch an, dass Teil G ein separater Teil ist. Allerdings ist in dieser Struktur Teil G nicht ein physisches Teil, sondern eine Zusammenstellung von Verpackungsmaterialien.
 
 Auch wenn eine Konstruktionsstückliste möglicherweise einen hohen Wert für den Entwurf eines Produkts sowie der Verwaltung dieses Designs bereitstellt, ist er möglicherweise nicht die logischste Möglichkeit, den Fertigungssteuerungsprozess des Produkts zu unterstützen. Möglicherweise stellt die Produktions-Stückliste die beste Methode dar, ein Produkt zu erstellen.
 
-Die folgende Abbildung zeigt, wie die vorhergehende Konstruktionsstückliste in eine Produktionsstückliste übergeleitet wird. In dieser Grafik ist (a) die Stückliste für Produkt H und b ist der Arbeitsplan für Produkt H.
+Abbildung 2 zeigt, wie die vorhergehende Entwicklungsstückliste in eine Produktionsstückliste übergeleitet wird. In Abbildung 2 ist (a) die Stückliste für Produkt H und (b) ist der Arbeitsplan für Produkt H.
+
+![Abbildung 2: Fertigungsstückliste.](media/product-H-part-B.png)
+*Abbildung 2: Fertigungsstückliste*
 
 In dieser Struktur wird angezeigt, dass es keinen Hinweis von Teilen F und G gibt und das Material, das aus diesen Teile besteht, wurde auf die folgenden Stücklistenebene gehoben.
 
 Im Gegensatz zur Konstruktionsstückliste, die zwei Arbeitskarten hatte, hat die Produktionsstückliste nur eine Arbeitskarte. Der Verpackungsarbeitsgang, der mit Teil G verknüpft war, wurde ebenfalls erhöht und ist nun Teil der Arbeitskarte für Produkt H. Die Zusammenstellung der elektrische Einheit ist der erste Arbeitsgang. Dieser Auftrag ergibt Sinn, weil diese Einheit im folgenden Arbeitsgang verwendet wird, der die Maschinenzusammenstellung ist. Der letzte Arbeitsgang ist der Verpackungsarbeitsgang, der zwei Verpackungsmaterialien verbraucht (C und D).
 
-Der Übergang zwischen der Konstruktionsstückliste und der Produktionsstückliste wird durch den Stücklistenpositionstyp Phantom ermöglicht. Während die Bedingung" Phantom" angegeben wird, sind die Komponenten F und G während des Übergangs zwischen den zwei Stücklistentypen verschwunden. In diesem Beispiel wird der Positionstyps "Phantom" für die Stücklistenpositionen für Teile F und G in der Konstruktionsstückliste angewendet. Wenn ein Produktions- oder Chargenauftrag erstellt wird, wird die Konstruktionsstückliste in die Produktionsstückliste oder den Chargenauftrag kopiert. Wird der Auftrag vorkalkuliert, erfolgt der Übergang von der Konstruktionsstückliste zur Produktionsstückliste wie in den vorhergehenden Bildern dargestellt. Auf der Arbeitskarte in der zweiten Abbildung werden die Verpackungsmaterialien C und D als Input für den Arbeitsgang eingegeben.
+Der Übergang zwischen der Konstruktionsstückliste und der Produktionsstückliste wird durch den Stücklistenpositionstyp Phantom ermöglicht. Während die Bedingung" Phantom" angegeben wird, sind die Komponenten F und G während des Übergangs zwischen den zwei Stücklistentypen verschwunden. In diesem Beispiel wird der Positionstyps "Phantom" für die Stücklistenpositionen für Teile F und G in der Konstruktionsstückliste angewendet. Wenn ein Produktions- oder Chargenauftrag erstellt wird, wird die Konstruktionsstückliste in die Produktionsstückliste oder den Chargenauftrag kopiert. Wird der Auftrag vorkalkuliert, erfolgt der Übergang von der Konstruktionsstückliste zur Produktionsstückliste wie in Abbildung 2 dargestellt. Auf der Arbeitskarte in Abbildung 2 werden die Verpackungsmaterialien C und D als Input für den Arbeitsgang eingegeben.
 
 ## <a name="multilevel-phantom-bom-structures"></a>Mehrstufige Phantomstücklistenstrukturen
 
-Die Phantompositionsart kann in mehrstufigen Stücklistenstrukturen wie in der folgenden Abbildung dargestellt verwendet werden. In dieser Grafik ist (a) die Stückliste für Produkt G und (b) ist der Arbeitsplan für Teile E und F und Produkt G.
+Der Positionstyps „Phantom“ kann in mehrstufigen Stücklistenstrukturen wie in Abbildung 3 dargestellt verwendet werden. In Abbildung 3 ist (a) die Stückliste für Produkt G und (b) ist der Arbeitsplan für Teile E und F und Produkt G.
 
-![Der Phantompositionstyp, der in mehrstufigen Stücklistenstrukturen verwendet wird.](media/product-G-route-sheet-G.png)
+![Abbildung 3: Entwicklungsstückliste Teil G.](media/product-G.png)
+*Abbildung 3: Entwicklungsstückliste Teil G*
 
-Die folgende Abbildung zeigt die resultierende Fertigungsstückliste und den Arbeitsplan, wenn die Stücklistenpositionen für Teile E und F konfiguriert werden, sodass der Positionstyp Phantom ist. In dieser Grafik ist (a) die Stückliste für Produkt G und (b) ist der Arbeitsplan für Produkt G.
+Abbildung 4 zeigt die resultierende Fertigungsstückliste und den Arbeitsplan, wenn die Stücklistenpositionen für Teile E und F konfiguriert werden, sodass der Positionstyp „Phantom“ ist. In Abbildung 4 ist (a) die Stückliste für Produkt G und (b) ist der Arbeitsplan für Produkt G.
 
-![Produkt G.](media/product-G.png)
+![Abbildung 4: Fertigungsstückliste Teil G.](media/product-G-route-sheet-G.png)
+*Abbildung 4: Fertigungsstückliste Teil G*
 
 ## <a name="phantom-and-route-network"></a>Phantom und Arbeitsplan-Netzwerk
 
-Phantomstücklisten können für eine Stückliste verwendet werden, die auch ein Arbeitsplan-Netzwerk haben. In einem Arbeitsplannetzwerk können eine oder mehrere Arbeitsgänge gleichzeitig ausgeführt werden. Die folgende Abbildung zeigt ein Beispiel eines Routennetzes an, das in einer mehrere Ebenen umfassenden Stückliste verwendet wird. In dieser Grafik ist (a) die Stückliste für Produkt G und Teil F und (b) ist der Arbeitsplan für Produkt G und Teil F, die ein Arbeitsplannetzwerk haben.
+Phantomstücklisten können für eine Stückliste verwendet werden, die auch ein Arbeitsplan-Netzwerk haben. In einem Arbeitsplannetzwerk können eine oder mehrere Arbeitsgänge gleichzeitig ausgeführt werden. Abbildung 5 zeigt ein Beispiel eines Routennetzes an, das in einer mehrere Ebenen umfassenden Stückliste verwendet wird. In Abbildung 5 ist (a) die Stückliste für Produkt G und Teil F und (b) ist der Arbeitsplan für Produkt G und Teil F, die ein Arbeitsplannetzwerk haben.
 
-![Beispiel für ein Routennetz, das in einer mehrstufigen Stückliste verwendet wird.](media/product-G-part-F.png)
+![Abbildung 5: Konstruktionsstückliste Teil G, Arbeitsplannetzwerk.](media/product-G-part-F.png)
+*Abbildung 5: Konstruktionsstückliste Teil G, Arbeitsplannetzwerk*
 
-In der folgenden Abbildung ist (a) die Stückliste für Produkt G und Teile F und (b) ist der Arbeitsplan für Produkte G und Teil F.
+In Abbildung 6 ist (a) die Stückliste für Produkt G und Teil F und (b) ist der Arbeitsplan für Produkt G und Teil F.
 
-![Die Stückliste für Produkt G und Teil F und das Arbeitsblatt für Produkt G und Teil F.](media/product-G-part-F-with-route-sheet.png)
+![Abbildung 6: Fertigungsstückliste Teil G, Arbeitsplannetzwerk.](media/product-G-part-F-with-route-sheet.png)
+*Abbildung 6: Fertigungsstückliste Teil G, Arbeitsplannetzwerk*
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
