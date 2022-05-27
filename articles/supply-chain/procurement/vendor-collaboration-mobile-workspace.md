@@ -1,7 +1,7 @@
 ---
 title: Mobiler Arbeitsbereich für Kreditorenzusammenarbeit
 description: Dieses Thema enthält Informationen zur Lieferantenzusammenarbeit im mobilen Arbeitsbereich. Dieser Arbeitsbereich hilft Kreditoren, auf dem neuesten Stand der Bestellungen zu sein, die ihnen zur Genehmigung gesendet wurden. Sie können auch Informationen zu neuen und aktualisierten Bestellungen und Kontakten anzeigen.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: kamaybac
 ms.custom: 267074
 ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
-ms.author: henrikan
+ms.author: gfedorova
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: efbd0afb0d84f76058b75126af200a9b10197559
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: c1e8a6589b16c4a24b151980d01929ed154bbb7b
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577023"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8670103"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobiler Arbeitsbereich für Kreditorenzusammenarbeit
 
@@ -27,7 +27,7 @@ ms.locfileid: "7577023"
 
 Dieses Thema enthält Informationen zur **Lieferantenzusammenarbeit** im mobilen Arbeitsbereich. Dieser Arbeitsbereich hilft Kreditoren, auf dem neuesten Stand der Bestellungen zu sein, die ihnen zur Genehmigung gesendet wurden. Sie können auch Informationen zu neuen und aktualisierten Bestellungen und Kontakten anzeigen.
 
-Dieser mobile Arbeitsbereich soll mit der Finance and Operations Mobile-App verwendet werden.
+Dieser mobile Arbeitsbereich soll mit der Finance and Operations-Mobile-App verwendet werden.
 
 ## <a name="overview"></a>Übersicht 
 Der Arbeitsbereich für die **Kreditor-Kooperation** hält Kreditoren über neue Bestellungen auf dem Laufenden, sodass diese neue Bestellungen im Webclient sehen und auf diese reagieren können. 
@@ -109,7 +109,7 @@ Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 od
 
 ## <a name="download-and-install-the-mobile-app"></a>Herunterladen und Installieren der mobilen App
 
-Herunterladen und Installieren der Finance and Operations mobilen App:
+Laden Sie die mobile Finance and Operations-App herunter und installieren Sie diese:
 
 -   [Für Android-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Für iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

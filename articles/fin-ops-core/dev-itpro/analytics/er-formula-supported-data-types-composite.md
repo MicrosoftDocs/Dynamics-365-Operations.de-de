@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf7178888e39a5f26ae92e77df9c996374b76bf3
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 933c8211276c1335a6a81bf4a8cb1c3f270762d4
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323664"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689241"
 ---
 # <a name="supported-composite-data-types-for-electronic-reporting-formulas"></a>Unterstützte zusammengesetzte Datentypen für elektronische Berichtsformeln
 
@@ -81,7 +81,7 @@ Eine *Datensatzlistr* ist eine Liste von Artikeln vom Typ *Datensatz*. Normalerw
 
 Standardmäßig werden Datensätze einer *Datensatzliste* sequenziell aufgerufen. Um auf einen bestimmten Datensatz zuzugreifen, können Sie die [INDEX](er-functions-list-index.md)-Funktion verwenden und den *Integer*-Index spezifizieren.
 
-Der Standardwert einer *Datensatzliste* ist **leer**. Sie können die [ISEMPTY](/er-functions-list-isempty.md)-Funktion verwenden, um auszuwerten, ob eine *Datensatzliste* leer ist.
+Der Standardwert einer *Datensatzliste* ist **leer**. Sie können die [ISEMPTY](er-functions-list-isempty.md)-Funktion verwenden, um auszuwerten, ob eine *Datensatzliste* leer ist.
 
 > [!NOTE]
 > Wenn eine *Datensatzliste* leer ist, bewirkt jeder Versuch, einen Feldwert für einen *Datensatz* darin abzurufen, dass zur Laufzeit eine Ausnahme ausgelöst wird. Informationen dazu, wie Sie Laufzeitausnahmen dieses Typs verhindern können, finden Sie unter [Berücksichtigung von Leerlistenfällen](er-components-inspections.md#i9).

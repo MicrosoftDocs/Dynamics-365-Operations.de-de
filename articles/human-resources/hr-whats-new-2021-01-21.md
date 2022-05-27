@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 02f0b0664dcb78d20c2719b4377dcc6047f2bf3392225f1cf9c166a1073ecd59
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: be50596cd64839ba82b847b2fabb0f46dc749a3f
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772615"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8686854"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-january-21-2021"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources 21. Januar 2021
 
@@ -43,7 +42,7 @@ Die folgenden Funktionen sind in dieser Version allgemein verfügbar.
 
 | Funktion | Freigabeplan | Dokumentation |
 | --- | --- | --- |
-| Platform Update 10.0.16(40) | -- | [Plattform-Updates für Version 10.0.16 von Finance and Operations Apps (Februar 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md) |
+| Platform Update 10.0.16(40) | -- | [Plattform-Updates für die Version 10.0.16 der Finanz- und Betriebs-Apps (Februar 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md) |
 | Erweiterte Workflow-Anforderungen und Genehmigungen | [Organisations- und Personalmanagement-Workflow wird verbessert](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Konfigurationsoption zum Positionieren der Liste der mir zugewiesenen Arbeitselemente](./hr-whats-new-2020-09-03.md#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
 | Aktualisierungen der Einhaltung des ACA (Affordable Care Act) für Formular 1095-C, Formular 1095-B und elektronische Berichterstattung in veralteten Vorteilen | -- | -- | 
 | Die Vorteilsverwaltung unterstützt jetzt die ACA-Einhaltungs-Berichterstattung für in den USA ansässige juristische Personen | -- | [ACA-Berichte in der Vorteilsverwaltung generieren](hr-benefits-management-aca-reports.md) |

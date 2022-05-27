@@ -1,23 +1,23 @@
 ---
 title: Lernkatalog für Vertriebs- und Marketingrollen von Microsoft Partnern in Dynamics 365 Supply Chain Management
 description: Hier finden Sie alle Trainingsoptionen für Vertriebs- und Marketingrollen bei Microsoft Partner, die mit Dynamics 365 Supply Chain Management arbeiten.
-author: margoc
+author: kamaybac
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: kamaybac
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: e806be95947988f6a612ddbc1efb0b72cf971806
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: 7c25acef2a46abc0481e2e38f40d5c990901090f
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402322"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8671307"
 ---
 # <a name="learning-catalog-for-microsoft-partner-sales-and-marketing-roles-for-dynamics-365-supply-chain-management"></a>Lernkatalog für Vertriebs- und Marketingrollen von Microsoft Partnern in Dynamics 365 Supply Chain Management
 
@@ -31,7 +31,7 @@ Der folgende Katalog wurde aus Kernwissen zu bestimmten Domänen und vom Einfach
 |---------|-------------|--------|--------|
 | [Kennenlernen des Handelswerts von Microsoft Dynamics 365 und Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Sind Sie an Informationen zu Geschäftsanwendungen interessiert? Vielleicht wissen Sie nicht, wo Sie anfangen sollen, Microsoft Dynamics 365- und Power Platform-Anwendungen zu verwenden? Erfahren Sie, wie die Leistungsfähigkeit von Geschäftsanwendungen Ihr Unternehmen verändern kann. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 7 Stunden |
 | [Dynamics 365 und Power Platform-Grundlagen](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Sind Sie an Informationen zu Geschäftsanwendungen interessiert? Beginnen Sie mit diesem Lernpfad, um zu sehen, wie Dynamics 365-Apps verwendet werden. Informieren Sie sich über Cloudkonzepte, Power Platform und die ersten Schritte mit Dynamics 365-Apps. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 5.5 Stunden |
-| [Erste Schritte mit Finance and Operations-Apps](/learn/paths/get-started-finance-operations/) | Erfahren Sie, wie Finance and Operations-Apps Unternehmen unterstützen, um ihre globalen Finanzsysteme, betrieblichen Geschäftsprozesse und optimierten Lieferketten zu verwalten, damit Personen schnelle, informierten Entscheidungen treffen können. Als erster Schritt in Ihrer Karriere bei der Arbeit mit Finance and Operations-Apps müssen Sie sich unabhängig von der gewünschten Rolle mit den Funktionen vertraut machen. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 2 Stunden |
+| [Starten Sie mit Apps für Finanzen und Betrieb](/learn/paths/get-started-finance-operations/) | Erfahren Sie, wie Finance und Operations-Apps Unternehmen dabei unterstützen, ihre globalen Finanzsysteme, operativen Geschäftsprozesse und rationalisierten Vorgänge zu verwalten, um schnelle und fundierte Entscheidungen zu treffen. Als ersten Schritt in Ihrer Karriere bei der Arbeit mit Apps für Finanzen und Betrieb müssen Sie sich mit den Funktionen und dem Funktionsumfang vertraut machen, unabhängig von Ihrer gewünschten Rolle. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 2 Stunden |
 | [Kurs MB-900T01-A: Dynamics 365-Grundlagen](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | Dieser Kurs macht den Kursteilnehmer mit Funktionen Dynamics 365 und Handelswert vertraut. Der Kurs deckt Dynamics 365-Anwendungen, die Power Platform, Cloudkonzepte, das Sicherheitsmodell und Lizenzierungsüberlegungen ab. | Von einem Kursleiter durchgeführtes persönliches oder Onlinetraining; Kosten variieren nach Regionen und Partner | 1 Tag |
 
 ## <a name="exam"></a>Prüfung<a name="exam"></a>

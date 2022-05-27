@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 95d272d9076f1ab25230e4efa98e321bdd618062
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 22b31b46b247ca5f2d6b8b93f58c090b03a2b38c
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407793"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8688373"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Auf das Partei- und globale Adressbuchmodell aktualisieren
 
@@ -281,7 +281,7 @@ In diesem Abschnitt wird die Einrichtung beschrieben, die erforderlich ist, bevo
 
     ![Ausführen der Vorlagen für die Postanschrift der Partei und die elektronischen Adressvorlagen der Partei.](media/ADF-7.png)
 
-10. Um die App für Finanzen und Betrieb mit diesen Daten zu aktualisieren, müssen Sie die CSV-Dateien in eine Excel-Arbeitsmappe konvertieren und [in die App für Finanzen und Betrieb importieren](/data-entities/data-import-export-job). Wenn der CSV-Import bei Ihnen funktioniert, können Sie alternativ die CSV-Dateien direkt importieren. Dieser Schritt kann je nach Volumen einige Stunden dauern.
+10. Um die App für Finanzen und Betrieb mit diesen Daten zu aktualisieren, müssen Sie die CSV-Dateien in eine Excel-Arbeitsmappe konvertieren und [in die App für Finanzen und Betrieb importieren](../data-import-export-job.md). Wenn der CSV-Import bei Ihnen funktioniert, können Sie alternativ die CSV-Dateien direkt importieren. Dieser Schritt kann je nach Volumen einige Stunden dauern.
 
     ![Erfolgreicher Import.](media/ADF-8.png)
 

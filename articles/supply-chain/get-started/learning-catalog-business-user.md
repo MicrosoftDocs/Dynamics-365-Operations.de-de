@@ -1,23 +1,23 @@
 ---
 title: Lernkatalog für Benutzer von Dynamics 365 Supply Chain Management
 description: Hier finden Sie alle Trainingsoptionen für Benutzer von Dynamics 365 Supply Chain Management.
-author: margoc
+author: kamaybac
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: kamaybac
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: fe547f6e224a072301a4d846f1a2867b70c86da3
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: a8324fe183efd956fa39ddd97f562e4c33630580
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402665"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8673185"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-supply-chain-management"></a>Lernkatalog für Benutzer von Dynamics 365 Supply Chain Management
 
@@ -31,7 +31,7 @@ Der folgende Katalog wurde aus Kernwissen zu bestimmten Domänen und vom Einfach
 |---------|-------------|--------|--------|
 | [Kennenlernen des Handelswerts von Microsoft Dynamics 365 und Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Sind Sie an Informationen zu Geschäftsanwendungen interessiert? Vielleicht wissen Sie nicht, wo Sie anfangen sollen, Microsoft Dynamics 365- und Power Platform-Anwendungen zu verwenden? Erfahren Sie, wie die Leistungsfähigkeit von Geschäftsanwendungen Ihr Unternehmen verändern kann. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 8 Stunden |
 | [Dynamics 365 und Power Platform-Grundlagen](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Sind Sie an Informationen zu Geschäftsanwendungen interessiert? Beginnen Sie mit diesem Lernpfad, um zu sehen, wie Dynamics 365-Apps verwendet werden. Informieren Sie sich über Cloudkonzepte, Power Platform und die ersten Schritte mit Dynamics 365-Apps. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 5.5 Stunden |
-| [Erste Schritte mit Finance and Operations-Apps](/learn/paths/get-started-finance-operations/) | Erfahren Sie, wie Finance and Operations-Apps Unternehmen unterstützen, um ihre globalen Finanzsysteme, betrieblichen Geschäftsprozesse und optimierten Lieferketten zu verwalten, damit Personen schnelle, informierten Entscheidungen treffen können. Als erster Schritt in Ihrer Karriere bei der Arbeit mit Finance and Operations-Apps müssen Sie sich unabhängig von der gewünschten Rolle mit den Funktionen vertraut machen. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 2 Stunden |
+| [Starten Sie mit Apps für Finanzen und Betrieb](/learn/paths/get-started-finance-operations/) | Erfahren Sie, wie Finance und Operations-Apps Unternehmen dabei unterstützen, ihre globalen Finanzsysteme, operativen Geschäftsprozesse und rationalisierten Vorgänge zu verwalten, um schnelle und fundierte Entscheidungen zu treffen. Als ersten Schritt in Ihrer Karriere bei der Arbeit mit Apps für Finanzen und Betrieb müssen Sie sich mit den Funktionen und dem Funktionsumfang vertraut machen, unabhängig von Ihrer gewünschten Rolle. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 2 Stunden |
 | [Erste Schritte mit der Anlagenverwaltung für Dynamics 365 Supply Chain Management](/learn/modules/get-started-asset-management/index) | Die Anlagenverwaltung ist ein erweitertes Modul für die Verwaltung von Anlagen und Wartungsaufgaben in Dynamics 365 Supply Chain Management. Asset Management ermöglicht Ihnen, Aufgaben in Bezug auf die Verwaltung und Wartung zahlreicher Ausrüstungen in Ihrem Unternehmen, z. B. Maschinen, Produktionsanlagen und Fahrzeuge, effizient zu verwalten und auszuführen. Asset Management unterstützt Lösungen über zahlreiche Branchen hinweg. | Kostenloses Online-Lernmodul in der eigenen Geschwindigkeit | 1 Stunde |
 | [Starten Sie mit dem Add-In für technische Änderungsverwaltung für Dynamics 365 Supply Chain Management](/learn/modules/get-started-engineering-change-management/) | Dynamics 365 Supply Chain Management gibt Mitarbeitern und Unternehmen die Möglichkeit, eine einheitliche Sicht auf Bestand, Lager, Fertigung, Service und Logistik zu erhalten, mit prädiktiven Analysen, die Daten in Vorhersagen verwandeln, um bessere strategische Entscheidungen zu unterstützen. | Kostenloses Online-Lernmodul in der eigenen Geschwindigkeit | 2 Stunden |
 | [Erste Schritte mit Dynamics 365 Intelligent Order Management](/learn/modules/get-started-intelligent-order-management/) | Mit Dynamics 365 Intelligent Order Management können Kunden die Orchestrierung von Aufträgen bis hin zur Auftragserfüllung verwalten. Diese Funktionen ermöglichen es Unternehmen, Auftragsflows über verschiedene Plattformen und Apps hinweg zu orchestrieren. | Kostenloses Online-Lernmodul in der eigenen Geschwindigkeit | 4 Stunden |
@@ -39,10 +39,10 @@ Der folgende Katalog wurde aus Kernwissen zu bestimmten Domänen und vom Einfach
 
 ## <a name="core-platform-knowledge"></a>Kernplattformwissen<a name="core-platform-knowledge"></a>
 
-| Inhalt | Beschreibung | Formate | Länge |
+| Inhalt | Description | Format | Length |
 |---------|-------------|--------|--------|
-| [Konfigurieren Ihrer Organisation in Finance and Operations-Apps](/learn/paths/configure-your-organization-finance-ops/) | Als funktionaler Berater, der mit Finance and Operations-Apps arbeitet, müssen verstehen, wir Sie eine Organisation für den Debitor einrichten. Dieser Lernpfad zeigt Ihnen unter anderen Aufgaben, wie Sie juristischen Personen einrichten, Sicherheitseinstellungen implementieren, die Benutzeroberfläche für Benutzer personalisieren, mobile Apps entwerfen und erstellen und allgemeine Integrationen implementieren. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 12 Stunden |
-| [Konfigurieren und Arbeiten mit Analyse und Berichterstellung in Finance and Operations-Apps](/learn/paths/configure-analytics-reporting-finance-operations/) | Geschäftsführungskräfte können wichtige Entscheidungen in ihrem Unternehmen treffen, wenn sie genaue Einblicke in die zugrunde liegenden Finanz- und Betriebsdaten haben. Ein Geschäftsbenutzer kann das elektronische Berichterstellungstool auch ohne eine einzige Codezeile konfigurieren und verwenden, um neue gesetzliche Anforderungen zu übernehmen und Geschäftsdokumente im erforderlichen Format zu generieren, um Informationen elektronisch mit Regierungsbehörden, Banken und anderen Parteien auszutauschen. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 4 Stunden |
+| [Ihre Organisation in Finanz- und Betriebs-Apps konfigurieren](/learn/paths/configure-your-organization-finance-ops/) | Als funktionaler Berater, der mit Finanz- und Betriebs-Apps arbeitet, müssen Sie verstehen, wie Sie eine Organisation für den Debitor einrichten. Dieser Lernpfad zeigt Ihnen unter anderen Aufgaben, wie Sie juristischen Personen einrichten, Sicherheitseinstellungen implementieren, die Benutzeroberfläche für Benutzer personalisieren, mobile Apps entwerfen und erstellen und allgemeine Integrationen implementieren. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 12 Stunden |
+| [Konfigurieren von und Arbeiten mit Analysen und Berichterstellung in Finanz- und Betriebs-Apps](/learn/paths/configure-analytics-reporting-finance-operations/) | Geschäftsführungskräfte können wichtige Entscheidungen in ihrem Unternehmen treffen, wenn sie genaue Einblicke in die zugrunde liegenden Finanz- und Betriebsdaten haben. Ein Geschäftsbenutzer kann das elektronische Berichterstellungstool auch ohne eine einzige Codezeile konfigurieren und verwenden, um neue gesetzliche Anforderungen zu übernehmen und Geschäftsdokumente im erforderlichen Format zu generieren, um Informationen elektronisch mit Regierungsbehörden, Banken und anderen Parteien auszutauschen. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 4 Stunden |
 
 ## <a name="supply-chain-management"></a>Lieferkettenverwaltung<a name="supply-chain-management"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: Rücklieferungseinstandspreis und Rücklieferungsloskennung
 description: Unter Umständen sollen die Kosten der zurückgegebenen Produkte jedoch den Produktkosten zum Zeitpunkt des Verkaufs an den Debitor entsprechen. Sie können dies über die **Rücklieferungsloskennung** tun.
-author: kamaybac
+author: sorenva
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c8c5ad2f7e46ecefd490936b950d2b579faed60b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 14442853152764fce7e5a8a275532ed553da16dc
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580335"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8677085"
 ---
 # <a name="return-cost-price-and-return-lot-id"></a>Rücklieferungseinstandspreis und Rücklieferungsloskennung        
 

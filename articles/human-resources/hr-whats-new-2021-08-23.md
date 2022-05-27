@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-08-23
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 21c9ee0206bd77a8a2ec42501d64e83077baef09
-ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
+ms.openlocfilehash: 21c3448c373600ffebca82be41fb5849b952dfe1
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2021
-ms.locfileid: "7441674"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8686826"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-23-2021"></a>Was ist neu oder geändert in Dynamics 365 Human Resources 23. August 2021
 
@@ -73,11 +72,11 @@ Eine vollständige Liste der geplanten Funktionen und ihrer geplanten Versionen 
 
 | Funktion | Informationen |
 | --- | --- |
-| Plattformupdate 10.0.21 (45) | Der Roll-out des Plattform-Updates 10.0.21 wird voraussichtlich mit dem Service-Release am 4. Oktober 2021 beginnen. Weitere Informationen finden Sie unter [Plattform-Updates für Version 10.0.21 von Finance and Operations-Apps (Oktober 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21). |
+| Plattformupdate 10.0.21 (45) | Der Roll-out des Plattform-Updates 10.0.21 wird voraussichtlich mit dem Service-Release am 4. Oktober 2021 beginnen. Weitere Informationen finden Sie unter [Plattform-Updates für die Version 10.0.21 der Finanz- und Betriebs-Apps (Oktober 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21). |
 
 ## <a name="see-also"></a>Siehe auch
 
-[Welche Neuerungen oder Änderungen bietet Human Resources?](hr-admin-whats-new.md)</br>
+[Neuerungen und Änderungen in Human Resources](hr-admin-whats-new.md)</br>
 [Übersicht zu Dynamics 365 Human Resources 2021 Versionswelle 2](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/)</br>
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
 [Funktionen verwalten](hr-admin-manage-features.md)

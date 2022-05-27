@@ -1,7 +1,7 @@
 ---
 title: Kreditoren aufnehmen
 description: In diesem Thema wird der Prozess beschreiben, durch den neue Kreditoren aufgenommen werden. Es werden die Aktivitäten erklärt, die während des Prozesses von verschiedenen Rollen erforderlich sind.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: VendProspectiveVendorRegistrationRequests, SysUserRequestListPag
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c2950cecfaf2c8b19ed14df748810b7d6f926c53
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 396b3c4622c612fa082796080aa230a0d693ce4f
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566886"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8670999"
 ---
 # <a name="onboard-vendors"></a>Kreditoren aufnehmen
 
@@ -46,7 +46,7 @@ In der folgenden Tabelle werden die Schritte und die Rollen angezeigt, die am Pr
 | Administrator            | | | Erstellen Sie einen Benutzer in Supply Chain Management und Microsoft Azure | | | |
 | Kontaktperson des Kreditors    | | | Senden Sie eine E-Mail an die Kontaktperson. | Erfassen Sie Kreditoreninformationen. | | |
 
-Für eine rasche Präsentation des Lieferanten-Onboardingprozesses schauen Sie das kurze YouTube Video zu [Einen neuen Lieferanten in Finance and Operations einführen](https://www.youtube.com/watch?v=0KUc3AGaTKk).
+Für eine schnelle Vorführung des Onboarding-Prozesses des Kreditors, schauen Sie sich dieses kurze YouTube-Video an: [Einen neuen Kreditor in Finance and Operations onboarden](https://www.youtube.com/watch?v=0KUc3AGaTKk).
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>Importieren der Registrierungsanforderung des künftigen Kreditors
 

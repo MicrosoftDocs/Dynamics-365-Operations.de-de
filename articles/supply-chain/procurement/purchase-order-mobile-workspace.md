@@ -1,7 +1,7 @@
 ---
 title: Mobiler Arbeitsbereich für Bestellungsgenehmigung
 description: Dieses Thema enthält Informationen zum mobilen Arbeitsbereich für Bestellungsgenehmigungen, mit dem Sie Bestellungen anzeigen und auf sie durch Aktionen antworten können. Sie können beispielsweise eine Bestellung genehmigen oder ablehnen.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 30211
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fc88f20b50e034f2f27b7e2576fe6a4bb3486e23
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 32c22d582c0af03482767d335b824ccbe81ee607
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570560"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8674308"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>Mobiler Arbeitsbereich für Bestellungsgenehmigung
 
@@ -70,7 +70,7 @@ Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 od
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Herunterladen und Installieren der mobilen App
-Herunterladen und Installieren der Finance and Operations mobilen App:
+Laden Sie die mobile Finance and Operations-App herunter und installieren Sie diese:
 
 - [Für Android-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
 - [Für iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
