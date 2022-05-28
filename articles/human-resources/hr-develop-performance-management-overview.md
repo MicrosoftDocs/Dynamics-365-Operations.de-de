@@ -7,7 +7,6 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom:
 - "221024"
 - intro-internal
@@ -16,18 +15,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fa4d90d568697526adeef52443a01c3251696bf4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: c1ef722eabc3c3bc740f9ff5d959cfa005862a9b
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984745"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735722"
 ---
 # <a name="performance-management"></a>Leistungsverwaltung
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Anhand des Leistungsverwaltungsprozesses können Mitarbeiter ihre Leistung dokumentieren und mit ihrem Vorgesetzten erörtern. Vorgesetzte können wiederum den Mitarbeitern Rückmeldungen und Ratschläge geben.  
+Anhand des Leistungsverwaltungsprozesses können Mitarbeiter ihre Leistung dokumentieren und mit ihrem Vorgesetzten erörtern. Vorgesetzte können wiederum den Mitarbeitern Rückmeldungen und Ratschläge geben.
 
 Wie das folgende Diagramm zeigt, gibt es drei Seiten, die zur Verwaltung dieses Prozesses verwendet werden:
 
@@ -35,11 +34,11 @@ Wie das folgende Diagramm zeigt, gibt es drei Seiten, die zur Verwaltung dieses 
 -   Ziele
 -   Leistungsbeurteilung
 
-Im folgenden Diagramm wird dargestellt, wie die Hauptkomponenten der Leistungsverwaltung miteinander verbunden sind. [![Überblick über den Leistungsprozess.](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
+Im folgenden Diagramm wird dargestellt, wie die Hauptkomponenten der Leistungsverwaltung miteinander verbunden sind. <!--note from editor: This alt text should describe the relationship among the boxes so a reader with low vision will understand. This will require using the :::image type="complex"::: tag and a long description. -->[![Überblick über den Leistungsprozess.](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## <a name="performance-journal"></a>Leistungserfassung
 
-Als Mitarbeiter sammeln Sie vor dem Abschluss einer Leistungsbeurteilung häufig Informationen zu Aktivitäten oder Ereignissen, die Ihnen während der Überprüfungsperiode bei Ihrer Arbeit geholfen haben. Die Leistungserfassung ist die richtige Stelle, um diese Aktivitäten und Ereignisse zu dokumentieren. Darüber hinaus können Sie zukünftige Aktivitäten erstellen, die abgeschlossen werden müssen, damit ein bestimmtes Ziel erreicht wird oder damit die Voraussetzungen für einen Entwicklungsplan oder leistungsorientierte Verpflichtungen erfüllt werden. Leistungserfassungen sind nicht erforderlich, um Ziele oder Leistungsbeurteilungen zu erstellen. 
+Als Mitarbeiter sammeln Sie vor dem Abschluss einer Leistungsbeurteilung häufig Informationen zu Aktivitäten oder Ereignissen, die Ihnen während der Überprüfungsperiode bei Ihrer Arbeit geholfen haben. Die Leistungserfassung ist die richtige Stelle, um diese Aktivitäten und Ereignisse zu dokumentieren. Darüber hinaus können Sie zukünftige Aktivitäten erstellen, die abgeschlossen werden müssen, damit ein bestimmtes Ziel erreicht wird oder damit die Voraussetzungen für einen Entwicklungsplan oder leistungsorientierte Verpflichtungen erfüllt werden. Leistungserfassungen sind nicht erforderlich, damit Sie Ziele oder Leistungsbeurteilungen erstellen. 
 
 Es gibt zwei Arten der Leistungserfassung: die Mitarbeiterversion, auf die über den Arbeitsbereich **Mitarbeiter-Self-Service** zugegriffen werden kann (**ESS**), und die Managerversion, auf die über den Arbeitsbereich **Manager-Self-Service** zugegriffen werden kann (**MSS**). Mitarbeiter können eigene Erfassungen erstellen und auswählen, ob sie diese für ihren Vorgesetzten freigeben. Vorgesetzte können Erfassungen für ihr Team erstellen und auswählen, ob sie diese für ihre Mitarbeiter freigeben. 
 
@@ -49,7 +48,7 @@ Wenn der Zugriff auf die **Leistungserfassung** über den Arbeitsbereich **ESS**
 -   Beschreibung für die Aktivität mit detaillierten Informationen zur Aktivität
 -   Datum, an dem die Erfassung erstellt wurde
 -   Datumsangaben, an denen die Aktivität gestartet und abgeschlossen wurde
--   Statuseinstellung, die angibt, ob die Aktivität für den Vorgesetzten des Mitarbeiters freigegeben werden kann
+-   Eine Statuseinstellung, die angibt, ob die Aktivität für den Vorgesetzten des Mitarbeiters freigegeben werden kann
 -   Einstellung, die angibt, ob der Eintrag Teil eines Entwicklungsplans ist
 -   Schlüsselwörter, die bei der Suche nach ähnlichen Leistungserfassungselementen helfen
 
@@ -57,7 +56,7 @@ Sie können die Leistungserfassung auch mit einer externen Website verknüpfen, 
 
 ### <a name="send-feedback"></a>Feedback senden
 
-Die Leistungserfassung enthält eine zusätzliche Funktion mit der Bezeichnung **Feedback senden**. Wenn Sie auf **Feedback versenden** klicken, können Sie einen Mitarbeiter auswählen und per E-Mail Rückmeldungen für diesen Mitarbeiter bereitstellen. Diese Nachricht wird an den Mitarbeiter gesendet, an den das Feedback gerichtet ist, an den Vorgesetzten dieses Mitarbeiters, an den Mitarbeiter, der das Feddback sendet und an den Vorgesetzten dieses Mitarbeiters. Für jede Person, die diese Nachricht mit dem Feedback erhält, wird ein Leistungserfassungseintrag erstellt.
+Die Leistungserfassung enthält eine zusätzliche Funktion mit der Bezeichnung **Feedback senden**. Wenn Sie **Feedback senden** auswählen, können Sie einen Mitarbeiter auswählen und per E-Mail Rückmeldungen über diesen Mitarbeiter bereitstellen. Die Nachricht wird an den Mitarbeiter gesendet, auf den sich das Feedback bezieht<!--note from editor: Suggested-->, den Vorgesetzten dieses Mitarbeiters, den Mitarbeiter, der das Feedback sendet, und den Vorgesetzten dieses Mitarbeiters. Für jede Person, die diese Nachricht mit dem Feedback erhält, wird ein Leistungserfassungseintrag erstellt.
 
 ## <a name="goals"></a>Ziele
 
@@ -70,13 +69,13 @@ Ein grundlegendes Ziel muss die folgenden Informationen enthalten:
 -   das voraussichtliche Startdatum des Ziels
 -   das voraussichtliche Abschlussdatum des Ziels
 
-Sie können auch eine Zielkategorie angeben, die beim Organisieren von Zielen hilft. Den Vorgesetzten wird auch der Name der Person angezeigt, der das Ziel zugeordnet ist. 
+Sie können auch eine Zielkategorie angeben, die beim Organisieren von Zielen hilft. Den Vorgesetzten wird auch der Name der Person angezeigt, der das Ziel zugewiesen ist. 
 
-Wenn Sie ausführlichere Anweisungen für ein Ziel haben, können Sie Zielthemen erstellen. Diese Themen enthalten einen Titel und eine Beschreibung. Sie können beliebig viele Themen hinzufügen, um sicherzustellen, dass die Zieldetails sowohl für den Mitarbeiter als auch für den Vorgesetzten verständlich sind. Sowohl Mitarbeiter als auch Vorgesetzte können Kommentare zum Fortschritt der Ziele eingeben. 
+Wenn Sie ausführlichere Anweisungen für ein Ziel haben, können Sie Zielthemen erstellen. Diese Themen enthalten einen Titel und eine Beschreibung. Sie können beliebig viele Themen hinzufügen, um sicherzustellen, dass die Zieldetails sowohl für den Mitarbeiter als auch für den Vorgesetzten verständlich sind. Sowohl der Mitarbeiter als auch der Vorgesetzte können Kommentare zum Fortschritt der Ziele eingeben. 
 
 Oftmals sind messbare Ergebnisse für Ziele angegeben. Sie können Messungen hinzufügen, um die festgelegten Zielergebnisse und die tatsächlichen Ergebnisse nachzuverfolgen. Wenn es sich bei der Messung um eine ausgedehnte Zielvorgabe handelt, können Sie die Messung mithilfe der Option **Ziel ausdehnen** markieren. 
 
-Die Leistungserfassung enthält Aktivitäten, die Ihren Vorgesetzten besser darüber informieren, wie Sie das Ziel erreicht haben. Wenn Sie eine Leistungserfassung mit dem Ziel verknüpft haben, wird diese im Abschnitt **Aktivitäten** für dieses Ziel angezeigt. Sie können auch eine neue Leistungserfassung über die Seite **Leistungsziele** hinzufügen. Die Leistungserfassung wird automatisch mit dem Ziel verknüpft. 
+Ihre Leistungserfassung beschreibt<!--note from editor: Suggested.--> Aktivitäten, die Ihren Vorgesetzten besser darüber informieren, wie Sie das Ziel erreicht haben. Wenn Sie eine Leistungserfassung mit dem Ziel verknüpft haben, wird diese im Abschnitt **Aktivitäten** für dieses Ziel angezeigt. Sie können auch eine neue Leistungserfassung über die Seite **Leistungsziele** hinzufügen. Die Leistungserfassung wird automatisch mit dem Ziel verknüpft. 
 
 Wenn Sie dem Ziel ein Dokument zuordnen möchten, z. B. eine Abschlussbescheinigung, können Sie es im Bereich **Anhänge** auf der Seite **Leistungsziele** anhängen. Über eine Dokumentenanzeige können Sie den Inhalt eines angehängten Dokuments schnell anschauen. 
 
@@ -84,20 +83,20 @@ Sie können eine Vorlage anhand eines Ziels erstellen und diese Vorlagen dann ve
 
 ## <a name="performance-reviews"></a>Leistungsbeurteilungen
 
-Leistungsbeurteilungen werden auch als Diskussionen bezeichnet. Sie sind flexibel und unterstützen fortlaufende Rückmeldungen, Entwicklungspläne und formellere Beurteilungen. Sie können schnell Besprechungen im kleinen Kreis für zwei Person erstellen, zum Beispiel persönliche Einzelgespräche. Sie können aber auch komplexere Beurteilungen erstellen, die dem Beurteilungsverfahren in Ihrem Unternehmen entsprechen. 
+Leistungsbeurteilungen werden auch als Diskussionen bezeichnet. Sie sind jetzt flexibel genug, um fortlaufende Feedbacks, Entwicklungspläne und formellere Beurteilungen zu unterstützen. Sie können schnell kleine Besprechungen für zwei Personen erstellen<!--note from editor: I think "one-on-one meeting" is implied by "two people."--> oder eine komplexere Bewertung erstellen, die dem Bewertungsprozess Ihres Unternehmens entspricht. 
 
-Eine Einzelbesprechung ist zum Beispiel eine einfache Beurteilung. Sie erfordert einen Kurznamen, eine längere Beschreibung des Besprechungsinhalts, das Datum der Besprechung und zusätzlich den Beurteilungszeitraum. Den Vorgesetzten wird auch der Name der Person angezeigt, für die diese Beurteilung erstellt wird. 
+Eine Einzelbesprechung ist zum Beispiel eine einfache Beurteilung. Sie erfordert einen Kurznamen, eine längere Beschreibung des Besprechungsinhalts, das Datum der Besprechung und den zu besprechenden Beurteilungszeitraum. Den Vorgesetzten wird auch der Name der Person angezeigt, für die diese Beurteilung erstellt wird. 
 
 Für ausführlichere Beurteilungen können Sie die aktiven und abgeschlossenen Ziele hinzufügen und entsprechende Kommentare eingeben. Alle Leistungserfassungsaktivitäten und Messungen in Bezug auf ein Ziel werden in der Beurteilung angezeigt. Wenn die Beurteilung abgeschlossen ist, wird eine Momentaufnahme der Messungen gespeichert, um den Verlauf dieser Elemente zum Beurteilungszeitpunkt aufzubewahren. 
 
 Sie können auch den Bereich **Kompetenzen** verwenden, um die Mitarbeiterkompetenzen zu erörtern, zu beurteilen und zu bewerten. Sie können beliebig viele Kompetenzen hinzufügen und festlegen, ob die Kompetenz bewertet werden muss. 
 
-Sie können neue Beurteilungen erstellen, die auf den von Ihnen erstellten Vorlagen basieren. Sie können beispielsweise Vorlagen für Einzelgespräche, Entwicklungspläne oder regelmäßige Beurteilungen verwenden. Wenn Sie eine neue Beurteilung erstellen, können Sie die Vorlage auswählen.
+Sie können neue Beurteilungen erstellen, die auf von Ihnen erstellten Vorlagen basieren. Sie können beispielsweise Vorlagen für Einzelgespräche, Entwicklungspläne oder regelmäßige Beurteilungen verwenden. Wenn Sie eine neue Beurteilung erstellen, können Sie die Vorlage auswählen.
 
-Um Bewertungen auszudrucken, wählen Sie die Taste **Druckansicht** aus. Wenn Sie die Taste auf der Seite **Bewertung** nicht sehen, stellen Sie sicher, dass Sie die Funktion im Arbeitsbereich **Funktionsverwaltung** aktiviert haben. Weitere Informationen zur Feature-Verwaltung finden Sie unter [Feature-Verwaltung Übersicht](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Um Bewertungen auszudrucken, wählen Sie die Taste **Druckansicht** aus. Wenn Sie die Schaltfläche auf der Seite **Bewertung** nicht sehen, stellen Sie sicher, dass Sie die Funktion im Arbeitsbereich **Funktionsverwaltung** aktiviert haben. Weitere Informationen zur Funktionsverwaltung finden Sie unter [Funktionsverwaltung – Übersicht](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 > [!NOTE]
-> Leistungsbeurteilungen können nur in Human Ressources gedruckt werden. In Dynamics 365 Finance ist dies nicht möglich.
+> Leistungsbeurteilungen können nur in Human Ressources gedruckt werden. In Dynamics 365 Finance ist es nicht verfügbar.
 
 ## <a name="components-you-can-include-in-performance-reviews"></a>Mögliche Komponenten für Leistungsbeurteilungen
 
@@ -105,7 +104,7 @@ Sie können verschiedene Arten von Informationen in Leistungsbeurteilungen berü
 
 ### <a name="review-detail"></a>Beurteilungsdetails
 
-Sie können Ihre Ziele in die Beurteilungsdetails übernehmen und diese kommentieren. Sie können auch Kompetenzen einrichten und kommentieren.
+Sie können Ihre Ziele in die Beurteilungsdetails übernehmen und diese kommentieren. Sie können auch Kompetenzen einrichten und kommentieren.<!--note from editor: Suggested, in the spirit of using the fewest words to say the same thing.-->
 
 ### <a name="measurements"></a>Messungen
 
@@ -117,11 +116,11 @@ Sie können Leistungserfassungselemente anzeigen, die sich auf die Beurteilung b
 
 ### <a name="ratings"></a>Bewertungen
 
-Sie können für jedes Ziel und jede Kompetenz, die Gegenstand der Beurteilung sind, eine Bewertung hinzufügen. Sie können die Bewertungsmodelle für jede Beurteilung definieren. Die Standardeinstellungen für Bewertungen befinden sich auf der Seite **Gemeinsam verwendete Parameter der Personalverwaltung** unter **Leistung**.
+Sie können auf jedes Ziel und jede Kompetenz, die Gegenstand der Beurteilung sind, eine Bewertung anwenden. Sie können die Bewertungsmodelle für jede Beurteilung definieren. Die Standardeinstellungen für Bewertungen befinden sich auf der Seite **Gemeinsam verwendete Parameter der Personalverwaltung** unter **Leistung**.
 
 ### <a name="sign-offs"></a>Abzeichnungen
 
-Der Mitarbeiter und/oder der Vorgesetzte wird basierend auf den festgelegten Bewertungsparametern in der Beurteilung aufgeführt. Beurteilungen können obligatorisch oder optional sein. Wenn alle erforderlichen Abzeichnungen vorgenommen wurden, erhält die Beurteilung den Status **Abgeschlossen**.
+Der Mitarbeiter und/oder der Vorgesetzte wird basierend auf den festgelegten Bewertungsparametern in der Beurteilung aufgeführt. Beurteilungen können obligatorisch oder optional sein. Nachher<!--note from editor: Via Writing Style Guide.--> alle erforderlichen Abzeichnungen vorgenommen wurden, erhält die Beurteilung den Status **Abgeschlossen**.
 
 ### <a name="attachments"></a>Anhänge
 
@@ -129,11 +128,11 @@ Sie können ein Dokument im Bereich **Anhänge** auf der Seite **Überprüfungen
 
 ## <a name="workflow-for-performance-management"></a>Workflow für die Leistungsverwaltung
 
-Sie können den Workflow für die Arbeitskraftüberprüfung verwenden, um die Genehmigung einer Beurteilung zu steuern. Sie können auch festlegen, dass der automatisierte Workflow übersprungen wird, und Sie können den Status der Beurteilung manuell ändern. So können Sie einfachere Dokumente wie zum Beispiel Einzelbeurteilungen erstellen, ohne den Workflowprozess zu verwenden. Der Zugriff auf eine Beurteilung wird durch den Status der Beurteilung gesteuert.
+Sie können den Workflow für die Arbeitskraftüberprüfung verwenden, um die Genehmigung einer Beurteilung zu steuern. Sie können auch festlegen, dass der automatisierte Workflow übersprungen wird, und Sie können den Status der Beurteilung manuell ändern. So können Sie einfachere Dokumente wie zum Beispiel Einzelbeurteilungen erstellen, ohne den Workflowprozess zu verwenden. Der Zugriff auf eine Beurteilung wird durch den Status der Beurteilung wie folgt gesteuert:<!--note from editor: Suggested as an intro to the list.-->
 
-1.  Wenn die Beurteilung erstellt wird, erhält sie den Status **Nicht gestartet**. Die Beurteilung kann von jedem Benutzer bearbeitet werden.
+1.  Wenn die Beurteilung erstellt wird, wird sie auf **Nicht gestartet** festgelegt. Die Beurteilung kann von jedem Benutzer bearbeitet werden.
 
-2.  Wenn der Mitarbeiter auf die Schaltfläche **Überprüfung beginnen** geklickt hat, erhält die Beurteilung den Status **In Bearbeitung**. Der Mitarbeiter fügt dann Inhalt hinzu. An diesem Punkt kann der Vorgesetzte das Beurteilungsdokument nicht mehr anzeigen.
+2.  Nachdem der Mitarbeiter **Überprüfung beginnen** ausgewählt hat, wird die Beurteilung auf **In Bearbeitung** festgelegt. Der Mitarbeiter fügt dann Inhalt hinzu. An diesem Punkt kann der Vorgesetzte das Beurteilungsdokument nicht mehr anzeigen.
 
 3.  Der Status des Mitarbeiters wechselt zu **Bereit für Überprüfung**.
 
@@ -145,17 +144,17 @@ Sie können den Workflow für die Arbeitskraftüberprüfung verwenden, um die Ge
 
 Der Workflow für die Arbeitskraftüberprüfung besteht aus zwei Elementen:
 
-1.  Überprüfung genehmigen. Fügen Sie dieses Element hinzu, um die Änderung des Status von **In Bearbeitung** zu **Bereit für Überprüfung** zu steuern. Ändern Sie die Zuweisung, damit die Führungsebenenhierarchie verwendet wird (Mitarbeiterposition-Managerebene = 1).
+1.  Überprüfung genehmigen. Fügen Sie dieses Element hinzu, um die Änderung des Status von **In Bearbeitung** zu **Bereit für Überprüfung** zu steuern. Ändern Sie die Zuweisung, damit die Führungsebenenhierarchie verwendet wird (**Employee.line-Managerebene = 1**).<!--note from editor: Edit assumes that this is a UI string. -->
 
-2.  Abschlussüberprüfung. Fügen Sie dieses Element hinzu, um die Änderung des Status von **In Bearbeitung** zu **Letzte Überprüfung** zu steuern. Die Zuweisung ändern Sie auf, um die Verwaltungshierarchie verwendet in der die Employee.line-Managerebene = 1, wenn der Manager der letzten Prüfung genehmigen soll. Ändern Sie die Zuweisung in "Workflowbenutzer", wenn die Genehmigung durch den Mitarbeiter erfolgen soll. Wenn die Genehmigung sowohl durch den Mitarbeiter als auch durch den Vorgesetzten erfolgen soll, fügen Sie zwei Schritte im Workflow hinzu. Nehmen Sie die entsprechende Zuweisung für jeden Schritt in der Reihenfolge vor, in der die Genehmigungen ablaufen sollen.
+2.  Abschlussüberprüfung. Fügen Sie dieses Element hinzu, um die Änderung des Status von **In Bearbeitung** zu **Letzte Überprüfung** zu steuern. Die Zuweisung ändern Sie so, dass die Verwaltungshierarchie verwendet wird, wobei **Employee.line-Managerebene = 1** ist, wenn der Manager die letzte Prüfung genehmigen soll. Ändern Sie die Zuweisung in **Workflowbenutzer**, wenn die Genehmigung durch den Mitarbeiter erfolgen soll. Wenn die Genehmigung sowohl durch den Mitarbeiter als auch durch den Vorgesetzten erfolgen soll, fügen Sie zwei Schritte im Workflow hinzu. Nehmen Sie die entsprechende Zuweisung für jeden Schritt in der Reihenfolge vor, in der die Genehmigungen ablaufen sollen.<!--note from editor: I like this, so succinct.-->
 
 ## <a name="setup"></a>Einrichtung
 
-Die folgenden drei Seiten helfen Ihnen beim Einrichten der Informationen, die zum Abschließen des Leistungsprozesses erforderlich sind: Seite **Messungen**, Seite **Leistungserfassungs-Quelltypen** und die Seite **Überprüfungstypen**.
+Drei Seiten<!--note from editor: Suggested, to avoid "there are" (via Writing Style Guide).--> helfen Ihnen beim Einrichten der Informationen, die zum Abschließen des Leistungsprozesses erforderlich sind: Seite **Messungen**, Seite **Leistungserfassungs-Quelltypen** und die Seite **Überprüfungstypen**.
 
 ### <a name="measurements"></a>Messungen
 
-Auf der Seite **Messungen** können Sie Standardmessungen erstellen, die auf den Seiten **Leistungsziele** und **Überprüfungen** verwendet werden. Sie können Messungen in Form von Datumswerten, Mengen, Beträgen oder Prozentsätzen erstellen sowie Messungen, die auf einem Bewertungsmodell basieren.
+Verwenden Sie die **Messungen**-Seite, um<!--note from editor: Via Writing Style Guide, https://styleguides.azurewebsites.net/Styleguide/Read?id=2700&topicid=35221--> Standardmessungen zu erstellen, die auf den Seiten **Leistungsziele** und **Überprüfungen** verwendet werden. Sie können Messungen in Form von Datumswerten, Mengen, Beträgen, Prozentsätzen oder von Messungen erstellen, die auf einem Bewertungsmodell basieren.
 
 ### <a name="performance-journal-source-types"></a>Leistungserfassungs-Quelltypen
 
@@ -163,6 +162,6 @@ Auf der Seite **Messungen** können Sie Standardmessungen erstellen, die auf den
 
 ### <a name="review-types"></a>Überprüfungstypen
 
-**Überprüfungstypen** steuern das Verhalten einer Leistungsbeurteilung. Sie können den Workflow für eine Beurteilung aktivieren oder deaktivieren. Wenn die Beurteilung keinem Workflow unterliegt, können Sie den Standardstatus definieren, der beim Erstellen der Beurteilung verwendet wird. Sie können außerdem festlegen, ob der Mitarbeiter, der Vorgesetzte oder beide die Beurteilung abzeichnen müssen.
+**Überprüfungstypen** steuern das Verhalten einer Leistungsbeurteilung. Sie können den Workflow für eine Beurteilung aktivieren oder deaktivieren. Wenn die Beurteilung keinen Workflow verwendet, können Sie den Standardstatus definieren, der beim Erstellen der Beurteilung verwendet wird. Sie können außerdem festlegen, ob der Mitarbeiter, der Vorgesetzte oder beide die Beurteilung abzeichnen müssen.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

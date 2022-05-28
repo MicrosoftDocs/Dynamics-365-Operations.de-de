@@ -1,6 +1,6 @@
 ---
 title: Mehrwertsteuer-Ausgleichsperioden einrichten
-description: In diesem Abschnitt wird erläutert, wie Sie unter Dynamics 365 Finance Umsatzsteuerverrechnungsperioden einrichten.
+description: In diesem Thema wird erläutert, wie Mehrwertsteuer-Abrechnungszeiträume in Dynamics 365 Finance eingerichtet werden.
 author: twheeloc
 ms.date: 08/05/2019
 ms.topic: business-process
@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxPeriod
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1f57cd2b5b0f8f86d67500086403c5f484a263f76601453c00f59ede901b01a8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 197b85fb88f966b0a13fc061e2e780dd84e74acb
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732956"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735813"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Mehrwertsteuer-Ausgleichsperioden einrichten
 
@@ -28,7 +28,7 @@ In diesem Abschnitt wird erläutert, wie Sie Umsatzsteuerverrechnungsperioden ei
 
 Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
 
-1. Gehen Sie im Navigationsbereich zu **Module > Steuer > Indirekte Steuern > Umsatzsteuer > Umsatzsteuer > Umsatzsteuerabrechnungsperioden**.
+1. Wechseln Sie zu **Steuer > Indirekte Steuern > Mehrwertsteuer > Mehrwertsteuer-Abrechnungszeiträume**.
 2. Wählen Sie **Neu** aus.
 3. Geben Sie im Feld **Abrechnungszeitraum** einen Wert ein.
 4. Geben Sie im Feld **Beschreibung** einen Wert ein.

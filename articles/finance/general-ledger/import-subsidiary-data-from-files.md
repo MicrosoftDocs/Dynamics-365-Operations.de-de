@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 4be1e748724331c4e2089da8a08a9ac7e5cf88a2ac6d3d89b37b9fcd4480f516
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 045ecd6dfb95ccf38773293d44834531668ac1ff
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727299"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8733818"
 ---
 # <a name="import-subsidiary-data-from-files"></a>Importieren der Daten einer Tochtergesellschaft aus Dateien
 
@@ -29,7 +29,7 @@ In diesem Thema wird erläutert, wie Sie Daten von externen Systemen so vorberei
 1. Erstellen Sie eine juristische Person der Tochtergesellschaft für die Konsolidierung. Informationen zum Erstellen juristischer Personen finden Sie unter [Eine juristische Person erstellen](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md). Weitere Informationen finden Sie unter [Eine juristische Person für den Konsolidierungsprozess vorbereiten](prepare-company-for-consolidation.md) und [Eine juristische Person vom Typ Tochtergesellschaft zur Konsolidierung einrichten](set-up-subsidiary-company-for-consolidation.md).
 
 2. Bereiten Sie eine Datei vor, die die importierten Daten enthält. Weitere Informationen über den Importprozess finden Sie unter [Übersicht über Einzelvorgänge für Datenimport und ‑export](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
-3. Exportieren Sie die Daten in eine Datei, indem Sie die Schritte im Verfahren „Datenimport / -Export“ in [Übersicht über Datenimport- und -exportaufgaben](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) ausführen. Mit diesem Verfahren können Sie Daten aus einer anderen Dynamics 365 Finance-Instanz oder von Dynamics 365 Business Central konsolidieren . Wenn Sie Daten aus externen Systemen importieren, müssen die Daten das in [Exportieren von Daten von Tochtergesellschaften in Dateien](export-subsidiary-data-to-file.md) beschriebene Format haben.
+3. Exportieren Sie die Daten in eine Datei, indem Sie die Schritte im Verfahren „Datenimport / -Export“ in [Übersicht über Datenimport- und -exportaufgaben](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) ausführen. Mit diesem Verfahren können Sie Daten aus einer anderen Dynamics 365 Finance-Instanz oder von Dynamics 365 Business Central konsolidieren. Wenn Sie Daten aus externen Systemen importieren, müssen die Daten das in [Exportieren von Daten von Tochtergesellschaften in Dateien](export-subsidiary-data-to-file.md) beschriebene Format haben.
 4. Wechseln Sie zu **Konsolidierungen \> Mit Import konsolidieren**. Geben Sie auf der Seite **Mit Import konsolidieren** auf der Registerkarte **Kriterien** die Details des Bereichts und/oder des Imports ein, indem Sie die folgenden Felder festlegen.
 
     | Feld                                 | Wert für den Bericht | Wert für den Import |

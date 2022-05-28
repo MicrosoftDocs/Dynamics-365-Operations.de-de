@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschloma
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3c8584c33b4f77b6d1f5a4dc0d62208b76b3ffa3
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: d5ced2f2bc419f18431663273236d21546c5541b
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753969"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734456"
 ---
 # <a name="add-credit-management-information-for-customers"></a>Hinzufügen der Informationen für das Debitorenkreditmanagement
 
@@ -32,7 +32,7 @@ Sie können die Kundendaten auf dem Inforegister **Kredit und Inkasso** auf der 
 1. Stellen Sie die Option **Unbegrenztes Kreditlimit** auf **Ja**, wenn der Debitor nicht durch Kreditlimitprüfungen eingeschränkt werden soll.
 2. Stellen Sie die Option **Vom Kreditmanagement ausschließen** auf **Ja**, um den Kunden von allen Aktionen auszuschließen, die normalerweise während Kreditmanagementprozessen stattfinden.
 3. Wählen Sie die Kreditverwaltungsgruppe für den Kunden aus.
-4. Um das Kreditlimit in der Währung des Debitors zu berechnen, geben Sie im Feld **Kreditlimit in der Debitorwährung** das Kreditlimit des Debitors ein. Das Kreditlimit in der Firmenwährung wird mit den Wechselkursen umgerechnet, die durch den in den Kreditmanagementparametern ausgewählten Kreditlimit-Wechselkurstyp definiert sind.
+4. Um das Kreditlimit in der Währung des Debitors zu berechnen, geben Sie im Feld **Kreditlimit in der Debitorwährung** das Kreditlimit des Debitors ein. Das Kreditlimit in der Firmenwährung wird mit den Wechselkursen umgerechnet, die durch den in den **Kreditverwaltungsparametern** ausgewählten Kreditlimit-Wechselkurstyp definiert sind.
 5. Geben Sie im Feld **Datum der letzten Überprüfung** das Datum ein, an dem das Kreditlimit des Kunden zuletzt von einem Kreditmanager überprüft wurde.
 6. Geben Sie im Feld **Nächstes geplantes Überprüfungsdatum** das Datum ein, an dem für den Debitor eine Kreditprüfung und -aktualisierung geplant ist.
 7. Geben Sie im Feld **Zulässiges Kreditlimit** das höchste Kreditlimit ein, das dem Debitor basierend auf Ihrer Überprüfung des Kreditverlaufs dieses Debitors zugewiesen werden kann. Das zulässige Kreditlimit kann vom Kreditlimit auf dem Inforegister **Kredit und Inkasso** abweichen.
@@ -46,7 +46,8 @@ Sie können die Kundendaten auf dem Inforegister **Kredit und Inkasso** auf der 
 15. Geben Sie im Feld **Debitor seit** das Datum ein, an dem die ersten Transaktionen für den Debitor verarbeitet wurden. Diese Informationen werden verwendet, wenn Risikobewertungen erstellt werden.
 16. Geben Sie Notizen ein, anhand derer das Kreditteam die Kreditwürdigkeit des Debitors weiter beurteilen kann.
 
-Beachten Sie, dass einige der Informationen, die auf der Seite **Debitor** angezeigt werden, von einem anderen Prozess erstellt werden:
+> [!Note] 
+> Einige der Informationen, die auf der Seite **Debitor** angezeigt werden, werden von einem anderen Prozess erstellt:
 
 - Das Feld **Ablaufdatum für das Kreditlimit** zeigt das Datum an, an dem das Kreditlimit abläuft. Wenn Sie dieses Feld nicht festlegen, läuft das Kreditlimit des Debitors nicht ab.
 - Das Feld **Datum Kreditlimit** zeigt das Datum an, an dem das Kreditlimit erstellt wurde. Dieses Feld wird aktualisiert, wenn das Kreditlimit angepasst wird.

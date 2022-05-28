@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschloma
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c171ab99a434e529c48f39be9147ac411fb08b9b
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 4d96f50db4379a44ad8f2b06725db654a27393f9
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753897"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734802"
 ---
 # <a name="credit-limit-adjustments"></a>Kreditlimitanpassungen 
 
@@ -27,7 +27,7 @@ Mit Kreditlimitanpassungen können Kreditmanager die Kreditlimits und Ablaufdate
 
 ## <a name="set-up-credit-limit-adjustments"></a>Kreditlimitanpassungen einrichten
 
-Sie können Einträge im Journal für die Kreditlimitanpassung auf der Seite **Kreditlimitanpassung** (**Kreditmanagement \> Kreditlimitanpassungen \> Kreditlimitanpassungen**) erstellen.
+Sie können Einträge im Journal für die **Kreditlimitanpassung** auf der Seite **Kreditlimitanpassung** (**Kreditverwaltung \> Kreditlimitanpassungen \> Kreditlimitanpassungen**) erstellen.
 
 1. Wählen Sie **Neu** aus. Es wird eine neue Gruppe von Einträgen mit einer Kreditlimitanpassungsnummer erstellt.
 2. Wählen Sie die Art der Kreditlimitanpassung:

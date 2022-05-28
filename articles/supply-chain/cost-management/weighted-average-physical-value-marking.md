@@ -1,7 +1,7 @@
 ---
 title: Gewichteter Durchschnitt mit physischem Wert und Markierung
 description: Beim gewichteten Durchschnitt handelt es sich um ein auf dem Prinzip des gewichteten Durchschnitts basierendes Lagermodell. Für dieses Modell werden Abgänge aus dem Bestand mit dem Durchschnittswert der Artikel, die im Rahmen der Lagerabschlussperiode in den Bestand eingehen, sowie des gesamten verfügbaren Bestands der vorangegangenen Periode bewertet.
-author: AndersGirke
+author: JennySong-SH
 ms.date: 02/21/2022
 ms.topic: article
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
@@ -9,15 +9,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 65501
 ms.search.region: Global
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c124716b70be837573506a738ef2034397f2bda
-ms.sourcegitcommit: addae271ddfc5a8b0721c23337f69916153db4cd
+ms.openlocfilehash: 41c80dcdc08432bb68478827c8763735e644aa4a
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2022
-ms.locfileid: "8330225"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8675262"
 ---
 # <a name="weighted-average-with-physical-value-and-marking"></a>Gewichteter Durchschnitt mit physischem Wert und Markierung
 

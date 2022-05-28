@@ -9,18 +9,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-10-12
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 174cbd85139db5cee75481041fb721dc7646ab66
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: e74336270ab46fc19adb4c797745c9582028391a
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913601"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687470"
 ---
 # <a name="print-tax-information-on-transfer-order-documents"></a>Steuerinformationen auf Überweisungsauftragsdokumenten drucken
 
@@ -39,7 +38,7 @@ Um diese Daten zu konfigurieren, müssen Sie die folgenden Hauptschritte ausfüh
 
 1. [Aktivieren und Einrichten der Steuerfunktion für Überweisungsaufträge](tasks/Tax-feature-support-for-transfer-order.md).
 2. [Erstellen und Einrichten mehrerer Steuerregistrierungsnummern für eine juristische Person](emea-multiple-vat-registration-numbers.md).
-3. Richten Sie den Befreiungscode, die Beschreibung, die Steuerrichtlinien und den Druckcode in Steuercodes ein. In diesem Beispiel werden drei Steuercodesin Microsoft Dynamics 365 Finance erstellt und synchronisiert: **NL-befreit**, **BE-RC-21**, and **BE-RC+21**.
+3. Richten Sie den Befreiungscode, die Beschreibung, die Steuerrichtlinien und den Druckcode in Steuercodes ein. In diesem Beispiel werden drei Steuercodes in Microsoft Dynamics 365 Finance erstellt und synchronisiert: **NL-befreit**, **BE-RC-21** und **BE-RC+21**.
 
     1. Gehen Sie in Finance auf **Steuern** \> **Einrichtung** \> **Mehrwertsteuer** \> **Mehrwertsteuer-Befreiungscodes**.
     2. Wählen Sie **Bearbeiten**, und geben Sie eine Beschreibung für den **EC**-Befreiungsungscode ein. Geben Sie beispielsweise ein: **Steuerfreie EG-Sendungen mit Steueridentifikationsnummer**.

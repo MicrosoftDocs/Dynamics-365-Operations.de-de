@@ -1,7 +1,7 @@
 ---
 title: Vor dem Kauf
 description: Schrittweise Anleitungen, die Sie anwenden sollten, wenn Sie überlegen, Dynamics 365 Finance, Dynamics 365 Supply Chain Management oder Dynamics 365 Commerce zu kaufen.
-author: ShellyBakke
+author: sericks007
 ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
@@ -10,15 +10,15 @@ audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: 21761
 ms.search.region: Global
-ms.author: smiller
+ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: f994acfb85e5bb7ccb9cbd3e6c0a0f3c4eec318a
-ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
+ms.openlocfilehash: 9c2f658fbf7fd4db38d572ff80e9d500b5548e0a
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "7874583"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713275"
 ---
 # <a name="before-you-buy"></a>Vor dem Kauf
 
@@ -26,13 +26,13 @@ ms.locfileid: "7874583"
 
 Neu bei Dynamics 365 Finance, Dynamics 365 Supply Chain Management oder Dynamics 365 Commerce? Wir haben eine Schritt-für-Schritt-Anleitung zusammengestellt, egal, ob Sie die Anwendung noch auswerten oder einen Kauf tätigen wollen.
 
-## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Erster Schritt: Probieren Sie Finance and Operations 30 Tage kostenlos
+## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Schritt 1: Probieren Sie Finance and Operations 30 Tage lang kostenlos aus
 
-Sie können Sie sich einfach per E-Mail für einen 30-tägigen kostenlosen Test von Dynamics 365 for Finance, Dynamics 365 Supply Chain Management oder Dynamics 365 Commerce anmelden. Die Testversion von Finance and Operations-Anwendungen umfasst Aufgabenleitfäden für die ersten Schritte mit schrittweisen Anweisungen, die Ihnen spezifische Szenarien in der Praxis zeigen. Das Produkt steht zur Verfügung, um Szenarien zu beobachten und auszuprobieren, kann jedoch nicht personalisiert werden. Es stehen Demodaten bereit, um die Verwendung des Produkts zu vereinfachen, sodass Sie sich eine bessere Vorstellung machen können. 3 Tage vor Ablauf des Testzeitraums erhalten Sie eine E-Mail zur Erinnerung. Details erhalten Sie unter [Anmelden für Vorschauabonnement](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
+Sie können Sie sich einfach per E-Mail für einen 30-tägigen kostenlosen Test von Dynamics 365 for Finance, Dynamics 365 Supply Chain Management oder Dynamics 365 Commerce anmelden. Die Testversion der Finanz- und Betriebsanwendungen umfasst Aufgabenleitfäden für die ersten Schritte mit schrittweisen Anweisungen, die Ihnen spezifische Szenarien in der Praxis zeigen. Das Produkt steht zur Verfügung, um Szenarien zu beobachten und auszuprobieren, kann jedoch nicht personalisiert werden. Es stehen Demodaten bereit, um die Verwendung des Produkts zu vereinfachen, sodass Sie sich eine bessere Vorstellung machen können. 3 Tage vor Ablauf des Testzeitraums erhalten Sie eine E-Mail zur Erinnerung. Details erhalten Sie unter [Anmelden für Vorschauabonnement](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
 
 ## <a name="step-two-choose-a-deployment-option"></a>Schritt 2: Auswahl einer Bereitstellungsoption
 
-Sie können jetzt Finance and Operations-Anwendungen in der Cloud oder lokal bereitstellen. Cloud-Bereitstellungen bieten einen vollständig von Microsoft verwalteten ERP-Service, während lokale Bereitstellungen lokal im Rechenzentrum des Kunden bereitgestellt werden.
+Sie können jetzt Finanz- und Betriebsanwendungen in der Cloud oder lokal bereitstellen. Cloud-Bereitstellungen bieten einen vollständig von Microsoft verwalteten ERP-Service, während lokale Bereitstellungen lokal im Rechenzentrum des Kunden bereitgestellt werden.
 
 Folgende Überlegungen müssen vorgenommen werden, wenn Sie lokal als Bereitstellungsoption auswählen:
 
@@ -68,7 +68,7 @@ Sie müssen mit einem Partner zusammenarbeiten, um Finance and Operations für d
 
 Wenn Ihre Organisation mehr als 250 Dynamics 365-Benutzer hat, interessieren Sie sich möglicherweise für den Erwerb einer [Volumenlizenzierungsvereinbarung](https://www.microsoft.com/Licensing/product-licensing/dynamics365).
 
-In der Volumenlizenzierung sind Finance and Operations-Anwendungen erhältlich über:
+Bei der Volumenlizenzierung stehen Finanz- und Betriebsanwendungen zur Verfügung über:
 
 - Enterprise Agreement
 - Enterprise Agreement-Abonnement

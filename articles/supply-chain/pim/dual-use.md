@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 21910c61cc330e0c9292990b7b1914f56bac844c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 787d0c4ebcf83d6bfec05943f2bb0ddc5961a93a
+ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570752"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8736032"
 ---
 # <a name="dual-use-goods"></a>Waren zur doppelten Verwendung
 
@@ -34,7 +34,7 @@ Bedenken Sie folgendes Szenario:
 2. Die Seite **Freigegebene Produktdetails** für Produkt X-100 gibt an, dass es sich um eine Ware mit doppelter Verwendung handelt. Code, Kategorie, Gruppe und Regime geben die Exportkontrollklassifizierung an, zu der das Produkt gehört.
 3. Die Seite **Zertifikate für doppelte Verwendung** umfasst ein Zertifikat für Produkt X-100, wenn es nach Frankreich geliefert wird. Dieses Zertifikat läuft am 1. Januar 2020 ab.
 4. Am 17. Juni 2020 erstellen Sie einen Auftrag für ein Kundenunternehmen mit Sitz in Frankreich, und der Auftrag enthält das Produkt X-100.
-5. Wenn Sie den Auftrag speichern, ermittelt das System die folgenden Informationen:
+5. Wenn Sie den Auftrag bestätigen, ermittelt das System die folgenden Informationen:
 
     1. Enthält der Auftrag Produkte, bei denen es sich um Waren mit doppelter Verwendung handelt?
     2. Wenn der Auftrag Waren mit doppelter Verwendung enthält, benötigt das Zielland Zertifikate für die doppelte Verwendung?

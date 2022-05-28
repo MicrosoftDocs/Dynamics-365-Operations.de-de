@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace, CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: db587f5526e0541fc81964d510000a42a671a9bd65224e7167b9d869475c3601
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 36e94ff2cd499a827c631d6836a6c976af53dfa1
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763189"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734603"
 ---
 # <a name="cost-control-workspace"></a>Kostensteuerungs-Arbeitsbereich 
 
@@ -54,7 +54,7 @@ Auf dem Inforegister **Datenenfilterung** können Sie die Datenengrundlage für 
 | Kostenrechnungssachkonto                                            | Das **Kostenrechnungssachkonto**, auf dem der Bericht basiert. Der Wert wird aus dem Feld **Kostenkontrolleinheit** abgeleitet. |
 | Kostensteuerungseinheit                                                 | Der Wert, den Sie auswählen, bestimmt das Kostenrechnungs-Sachkonto und die Kostenobjekte, auf denen dieser Bericht basiert. |
 | Statistische Dimensionshierarchie, Kostenelementdimensionshierarchie | Ein Konfigurationssatz des **Kostensteuerung**-Arbeitsbereichs kann entweder nicht-monetäre oder monetäre Werte melden, aber nicht im gleichen Layout. Wählen Sie einen Wert im Feld **Kostenelement-Dimensionshierarchie** aus, um monetäre Werte zu melden. Wählen Sie einen Wert im Feld **Statistische Dimensionshierarchie** aus, um nicht monetäre Werte zu melden. Der Dimensionshierarchiedatensatz, den Sie auswählen, bestimmt die Struktur die Ebenen der Berichtserstellung und Aggregation.<blockquote>[!NOTE]<br>Um nicht monetäre und monetäre Werte nebeneinander anzuzeigen, können Sie die Daten nach Microsoft Excel für das Microsoft Power BI-Inhaltspaket exportieren.</blockquote> |
-| Kostenobjekt-Dimensionshierarchie                                   | Wählen Sie die Dimensionshierarchie der Kostenelementdimension aus, die dem Zweck der Berichterstellung, die Sie definieren, entspricht. |
+| Kostenobjekt-Dimensionshierarchie      | Wählen Sie die Dimensionshierarchie der Kostenelementdimension aus, die dem Zweck der Berichterstellung, die Sie definieren, entspricht. |
 | Ursprüngliche Budgetversion                                           | Wählen Sie die Budgetversion-ID aus, die als ursprüngliches Budget im Rahmen dieses Berichts dient. |
 | Überarbeitete Budgetversion                                            | Wählen Sie die Budgetversion-ID aus, die als überarbeitetes Budget im Rahmen dieses Berichts dient. |
 

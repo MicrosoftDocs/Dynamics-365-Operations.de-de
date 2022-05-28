@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
-ms.author: aolson
+ms.author: jiwo
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 92da476f64b937d339b5f0c6088b8ce722a0584938ccf2a6c6cbd39fdc15544d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf5062cfc7ce47a2356c72462da805e8d0d6a756
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714634"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8727789"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Definitionen für Berichtsbaumstrukturen in Finanzberichten
 
@@ -101,7 +101,7 @@ Unter Verwendung einer Berichtstruktur können Sie Beträge aus untergeordneten 
     > Wenn Sie Dimensionen für untergeordnete Einheiten und übergeordnete Einheiten angeben, könnten Daten im Bericht dupliziert werden.
 
 - Berichtseinheiten, die Dimensionen in der Berichtsbaumstruktur enthalten, entsprechen den Dimensionen, die in den Zeilen- und in den Spaltendefinitionen verwendet werden. Die Kombination der Dimensionen bestimmt die Beträge, die für diese Einheit zurückgegeben werden. So geben in Beispiel 2 weiter unten in diesem Artikel die Positionen 6 und 7 jeweils nur die Werte für Abteilung 00 und 01 zurück.
-- Die Beträge für übergeordnete Berichtseinheiten, die keine Dimensionen in der Berichtstruktur enthalten, werden vom untergeordneten Einheitsbericht bestimmt und führen einen Rollup des Betrags auf der angegebenen übergeordneten Einheit durch. Wenn z. B. die übergeordnete Einheit (siehe Contoso USA in Beispiel 2 des Daten-Rollup-Beispiels) zwei untergeordnete Einheiten (022 und 023) aufweist und keine Dimensionen enthält, wird ein Bericht für jedes untergeordnete und das übergeordnete Element generiert. Die übergeordnete Summe ist die Summe der zwei untergeordneten Beträge.
+- Die Beträge für übergeordnete Berichtseinheiten, die keine Dimensionen in der Berichtstruktur enthalten, werden vom untergeordneten Einheitsbericht bestimmt und führen einen Rollup des Betrags auf der angegebenen übergeordneten Einheit durch. Wenn z. B. die übergeordnete Einheit (siehe Contoso-USA in Beispiel 2 des Daten-Rollup-Beispiels) zwei untergeordnete Einheiten (022 und 023) aufweist und keine Dimensionen enthält, wird ein Bericht für jedes untergeordnete und das übergeordnete Element generiert. Die übergeordnete Summe ist die Summe der zwei untergeordneten Beträge.
 
 ### <a name="manage-reporting-units"></a>Verwalten von Berichtseinheiten
 
@@ -170,13 +170,13 @@ Die Berichtseinheitenstruktur in der folgenden Berichtstruktur ist wie folgt:
 - Die Detailberichtseinheiten der niedrigsten Ebene (Home Sales, Auto Sales, Client Services, und Operations) stellen Abteilungen in den Finanzdaten dar. Diese Berichtseinheiten befinden sich im schattierten Bereich des Diagramms.
 - Die zusammengefassten Einheiten auf höherer Ebene fassen Informationen aus den Detaileinheiten zusammen.
 
-[![Contoso-Zusammenfassungsberichtsstruktur – Beispiel 1.](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
+[![Contoso-Zusammenfassungsberichtsstruktur – Beispiel 1.](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
 
 ### <a name="reporting-unit-structure--example-2"></a>Berichtseinheitsstruktur - Beispiel 2
 
 Das folgende Diagramm zeigt eine Berichtstruktur mit eine Organisationsstruktur, die nach Unternehmensfunktion aufgeteilt ist.
 
-[![Contoso-Zusammenfassungsberichtsstruktur – Beispiel 2.](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
+[![Contoso-Zusammenfassungsberichtsstruktur – Beispiel 2.](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Beispiel für das Dialogfeld "Berichtseinheiten aus Dimensionen einfügen"
 

@@ -1,20 +1,20 @@
 ---
 title: Schwedisches Intrastat
 description: Dieses Thema enthält Informationen zur Intrastat-Meldung in Schweden.
-author: andosip
+author: anasyash
 ms.date: 8/24/2021
 ms.topic: article
 audience: Application User
-ms.reviewer: kfender
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 152bfd24843867685b1d303484ed61ad98ec652a
-ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
+ms.openlocfilehash: 1031b93950e44fe3b1b6254bf1503b4c09d6fd10
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7486945"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8727397"
 ---
 # <a name="swedish-intrastat"></a>Schwedisches Intrastat
 
@@ -43,7 +43,7 @@ Weitere Informationen finden Sie unter [Herunterladen von ER-Konfigurationen aus
 
 ## <a name="set-up-foreign-trade-parameters"></a>Außenhandelsparameter einrichten
 
-1. Gehen Sie in Microsoft Dynamics 365 Finance zu **Steuern** > **Einrichtung** > **Parameter für den Außenhandel**.
+1. Gehen Sie in Microsoft Dynamics 365 Finance zu **Steuern** > **Einrichtung** > **Außenhandelsparameter**.
 2. Auf der Registerkarte **Intrastat**, auf dem Inforegister **Elektronisches Berichtswesen**, im Feld **Dateiformatzuordnung** wählen Sie **Intrastat (SE)**.
 3. Im Feld **Berichtformatzuordnung** **Intrastatbericht** auswählen.
 4. Auf dem Inforegister **Warencodehierarchie** im Feld **Kategoriehierarchie** wählen Sie **Intrastat**.

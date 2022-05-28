@@ -8,21 +8,21 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "14151"
 - intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
-ms.author: shpandey
+ms.author: panolte
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: fc616e5fce6bbfeaa3b36ccc35f1b1cf407af4a6
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 5669b414283013ae1de095de2201df066ab588dd
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109859"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8725904"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Problembehandlung beim Einrichten von Finance Insights
 
@@ -58,7 +58,7 @@ Führen Sie diese Schritte im [Power Platform Admin-Center](https://admin.powerp
 
 ### <a name="resolution"></a>Lösung
 
-Dynamics 365 Finance Benutzer müssen ein Microsoft Power Apps Benutzerkonto für die Umgebung haben, und dieses Benutzerkonto muss die Rolle Systemanpasser haben. Der Microsoft Power Apps Systemadministrator kann das Benutzerkonto erstellen und die Rolle zuweisen. Dann können Sie zu <https://make.preview.powerapps.com/> gehen, sich mit diesem Benutzerkonto anmelden und es erneut mit den Links versuchen.
+Dynamics 365 Finance-Benutzer müssen ein Microsoft Power Apps-Benutzerkonto für die Umgebung haben, und dieses Benutzerkonto muss die Systemanpasser-Rolle haben. Der Microsoft Power Apps Systemadministrator kann das Benutzerkonto erstellen und die Rolle zuweisen. Dann können Sie zu <https://make.preview.powerapps.com/> gehen, sich mit diesem Benutzerkonto anmelden und es erneut mit den Links versuchen.
 
 ## <a name="symptom-why-doesnt-the-cash-forecast-tab-in-the-cash-flow-forecast-workspace-show-any-data"></a>Symptom: Warum zeigt die Registerkarte „Bargeldplanung“ im Arbeitsbereich „Cashflow-Planungen“ keine Daten an?
 

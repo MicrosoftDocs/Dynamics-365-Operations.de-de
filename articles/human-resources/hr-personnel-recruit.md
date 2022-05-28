@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 77d37cba84fcd6fb8f93da79b10db2db91d91db0
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ef2f2c82708fd48055faa7546e7e0c4da51e7b6c
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066599"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8733984"
 ---
 # <a name="recruit-job-candidates"></a>Kandidaten für eine Stelle anwerben
 
@@ -29,7 +28,7 @@ ms.locfileid: "8066599"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dynamics 365 Human Resources hilft Ihnen bei der Verwaltung von Personalbeschaffungsanträgen. Es hilft Ihnen auch beim Übergang vom Kandidaten zum Mitarbeiter. Wenn Ihre Organisation eine separate Personalbeschaffungsanwendung verwendet, gehören zu Ihrem Personalbeschaffungsprozess möglicherweise die folgenden Schritte:
+Dynamics 365 Human Resources hilft Ihnen bei der Verwaltung von Personalbeschaffungsanträgen. Es hilft Ihnen auch beim Übergang vom Kandidaten zum Mitarbeiter. Wenn Ihre Organisation eine separate Personalbeschaffungsanwendung verwendet, gehören zu Ihrem Personalbeschaffungsprozess möglicherweise die folgenden Schritte:<!--note from editor: Should this be a numbered list? These steps do seem to follow a particular order.-->
 
 - Eingabe des Personalbeschaffungsantrags in Human Resources.
 - Aus der Personalbeschaffungsanwendung an Human Resources weitergeleitete Kandidaten entgegennehmen.
@@ -38,17 +37,22 @@ Dynamics 365 Human Resources hilft Ihnen bei der Verwaltung von Personalbeschaff
 Wenn Sie keine separate Personalbeschaffungsanwendung verwenden, können Sie Kandidaten in der Personalverwaltung auch manuell verwalten.
 
 > [!NOTE]
-> Wenn Sie Administrator oder Entwickler sind und Human Resources mit der Personalbeschaffungsanwendung eines Drittanbieters integrieren möchten, lesen Sie [Dataverse-Integration konfigurieren](hr-admin-integration-common-data-service.md) und [Virtuelle Dataverse-Tabellen konfigurieren](hr-admin-integration-common-data-service-virtual-entities.md)
+> Wenn Sie Administrator oder Entwickler sind und Human Resources mit der Personalbeschaffungsanwendung eines Drittanbieters integrieren möchten, wechseln Sie zu [Dataverse-Integration konfigurieren](hr-admin-integration-common-data-service.md) und [Virtuelle Dataverse-Tabellen konfigurieren](hr-admin-integration-common-data-service-virtual-entities.md)
 >
 > Sie finden Personalbeschaffungsintegrations-Apps auch auf [AppSource](https://appsource.microsoft.com/marketplace/apps?search=recruiting%20dynamics).
 >
-## <a name="enable-recruiting-requests"></a>Personalbeschaffungsanträge aktivieren
+## <a name="enable-recruiting-requests-on-the-merged-infrastructure"></a>Personalbeschaffungsanträge auf der zusammengeführten Infrastruktur aktivieren
 
-Wenn Sie Personalbeschaffungsanträge in Human Resources einreichen möchten, müssen Sie die Funktionalität erst in **Gemeinsame Human Resources-Parameter** aktivieren.
+Wenn Sie Personalbeschaffungsanträge in der HR-Personalbeschaffung stellen möchten, müssen Sie zunächst die Funktionen **HR-Benutzererfahrung** und **Personalbeschaffungsprozessverwaltung** aktivieren.
 
-1. Wählen Sie im Arbeitsbereich **Personalverwaltung** die Registerkarte **Links** aus.
-2. Unter **Einrichtung** wählen Sie **Freigegebene Human Resources-Parameter** aus.
-3. Setzen Sie in der Registerkarte **Personalbeschaffung** unter **Personalbeschaffung** **Personalbeschaffungsanträge aktivieren** auf **Ja**.
+Sobald die Funktionen aktiviert sind, wählen Sie die Funktionalität mit den folgenden Schritten aus: 
+1. Gehen Sie zu **Human Resources** > **Einrichtung** > **Personalverwaltungsparameter**.
+2. Legen Sie auf der Registerkarte  **Personalbeschaffung**  das Feld **Personalbeschaffung deaktiviert** auf **Nein** fest.
+3. Im **Erfahrung in der Personalbeschaffung**-Dropdown wählen Sie **HR-Personalbeschaffung** aus.   
+
+> [!Note] 
+> Wenn einmal **HR-Personalbeschaffung** ausgewählt ist, wird **Personalbeschaffungsprojekte** (Legacy) schreibgeschützt. 
+
 
 ## <a name="add-a-recruiting-request-location"></a>Einen Standort für den Personalbeschaffungsantrag hinzufügen
 
@@ -60,8 +64,8 @@ Wenn Ihre Organisation mehrere Standorte hat, können Sie diese hinzufügen, dam
 
     ![Einen Standort für den Personalbeschaffungsantrag hinzufügen.](./media/hr-recruit-0a-add-location.png)
 
-4. Geben Sie im Feld **Beschreibung** eine Beschreibung für den Standort ein.
-5. Wählen Sie unter **Standort** **Hinzufügen** aus. Geben Sie die Standortadresse ein, wenn das Dialogfeld **Neue Adresse** erscheint.
+4. Geben Sie für **Beschreibung** eine Beschreibung für den Standort ein.
+5. Wählen Sie unter **Standort** **Hinzufügen** aus. Geben Sie die Standortadresse ein, wenn der Dialog **Neue Adresse** erscheint.<!--note from editor: Please make the address in this image less plausible. Via the fictitious guidelines on CELAweb: For street addresses, you should use sequential numbers, common street names, and incorrect zip codes (e.g., 4567 Main St Buffalo, NY 98052). (See https://microsoft.sharepoint.com/sites/CELAWeb-Copyrights-Trademarks-And-Patents/SitePages/trademarks-fictitious-names.aspx)-->
 
     ![Adresse eingeben.](./media/hr-recruit-0b-address.png)
 
@@ -83,25 +87,25 @@ Manager können Personalbeschaffungsanträge in Human Resources einreichen. Wenn
     ![Die Personalbeschaffungsanträge vervollständigen.](./media/hr-recruit-2-request-to-recruit.png)
 
 5. Wählen Sie **Fortsetzen** aus. Der Personalbeschaffungsantrag für Ihre Stelle wird angezeigt.
-6. Wählen Sie unter **Allgemein** einen Personalbeschaffungsmitarbeiter aus der Dropdownliste **Personalbeschaffungsmitarbeiter** und dann einen Standort aus der Dropdownliste **Standort für Personalbeschaffungsantrag** aus.
+6. Wählen Sie unter **Allgemein** einen Personalbeschaffungsmitarbeiter aus der Dropdownliste **Personalbeschaffungsmitarbeiter** und dann einen Standort aus der Dropdownliste **Personalbeschaffungsantragstandort** aus.
 7. Ändern Sie unter **Stelle** alle Informationen nach Bedarf und wählen Sie dann **Details aus Stelle erstellen**.
 
     ![Details aus Stelle erstellen.](./media/hr-recruit-3-create-details-from-job.png)
 
-    Der Rest des Personalbeschaffungsantrags wird mit den Standardinformationen für die von Ihnen eingegebene Stelle automatisch ausgefüllt.
+    Der Rest des Personalbeschaffungsantrags wird mit den Standardinformationen für die von Ihnen eingegebene Stelle ausgefüllt.
 
 8. Geben Sie unter **Externe Beschreibung** eine nach außen gerichtete Stellenbeschreibung ein.
-9. Wählen Sie unter **Positionen** **Hinzufügen** aus und wählen Sie dann eine Position für diesen Personalbeschaffungsantrag aus.
+9. Wählen Sie unter **Positionen** **Hinzufügen** aus und wählen Sie dann eine Position für diesen Personalbeschaffungsantrag aus.<!--note from editor: In all of these images, are they approved fictitious names, or do they come from sample data included with the app?-->
 
     ![Eine Position hinzufügen.](./media/hr-recruit-4-select-position.png)
 
 10. Wählen Sie unter **Qualifikationen** **Hinzufügen** und dann eine Qualifikation aus.
-11. Unter **Ausbildungsanforderungen** wählen Sie **Hinzufügen** und dann die Werte aus den Dropdownlisten **Ausbildung** und **Bildungsgrad** aus.
+11. Unter **Ausbildungsanforderungen** wählen Sie **Hinzufügen** und dann die Werte aus den Dropdownmenüs **Ausbildung** und **Bildungsgrad** aus.
 
     ![Ausbildungsanforderungen hinzufügen.](./media/hr-recruit-5-select-educational-requirements.png)
 
 12. Fügen Sie unter **Kommentar** notwendige Kommentare ein.
-13. Wählen Sie unter **Vergütung** eine Ebene aus der Dropdownliste **Ebene** aus und passen Sie dann den **Niedrigen Schwellenwert**, den **Kontrollpunkt** und den **Hohen Schwellenwert** wie erforderlich an.
+13. Wählen Sie unter **Vergütung** eine Ebene aus der Dropdownliste **Ebene** aus, und passen Sie dann **Niedriger Schwellenwert**, **Kontrollpunkt** und **Hoher Schwellenwert** wie erforderlich an.
 14. Wenn Ihr Personalbeschaffungsantrag fertig ist und Sie bereit sind, den Personalbeschaffungsprozess zu starten, wählen Sie in der Menüleiste **Aktivieren** aus.
 
     ![Personalbeschaffungsantrag aktivieren.](./media/hr-recruit-6-activate-recruit-request.png)
@@ -141,7 +145,7 @@ Wenn Ihre Organisation für die Verwaltung von Personalbeschaffungsanträge eine
 
 4. Um einen Kandidaten hinzuzufügen, wählen Sie **Neu** aus. Um einen vorhandenen Bewerber zu bearbeiten, wählen Sie den Bewerber aus der Liste aus und klicken Sie dann auf **Bearbeiten**. Das Kandidatenprofil wird angezeigt.
 5. Geben Sie unter **Kandidatenzusammenfassung** die Kandidateninformationen ein oder bearbeiten Sie sie nach Bedarf.
-6. Wählen Sie unter **Personalbeschaffungsantrag** einen Personalbeschaffungsantrag aus, mit dem der Kandidat verknüpft werden soll. Füllen Sie dann die Felder **Voraussichtliches Startdatum**, **Zukünftiger Vorgesetzter**, **Position** und **Beschreibung** entsprechend aus.
+6. Wählen Sie unter **Personalbeschaffungsantrag** einen Personalbeschaffungsantrag aus, mit dem der Kandidat verknüpft werden soll. Füllen Sie dann die Felder **Geschätztes Startdatum**, **Zukünftiger Vorgesetzter**, **Position** und **Beschreibung** entsprechend aus.
 
     ![Personalbeschaffungsantrag verlinken.](./media/hr-recruit-10-link-to-recruiting-request.png)
 
@@ -174,7 +178,7 @@ Wenn Sie bereit sind, einen Kandidaten einzustellen, machen Sie den Kandidaten w
 5. Wählen Sie **Fortsetzen** aus, um den Mitarbeiterdatensatz zu erstellen.
 
     > [!NOTE]
-    > Je nach den Workflows Ihrer Organisation durchläuft der Kandidatendatensatz zusätzliche Genehmigungsschritte, bevor er zum Mitarbeiterdatensatz wird.
+    > Je nach den Workflows Ihrer Organisation durchläuft der Kandidatendatensatz möglicherweise zusätzliche Genehmigungsschritte, bevor er zum Mitarbeiterdatensatz wird.
 
 ## <a name="decide-not-to-hire-a-candidate"></a>Einen Kandidaten nicht einstellen
 

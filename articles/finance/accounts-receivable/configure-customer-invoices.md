@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ffb2c42748678ae265a706a00db327a160cc9f5
-ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
+ms.openlocfilehash: 069ada071fe6a7d3e22ad6aa45e3c2f06a9f4b31
+ms.sourcegitcommit: 5a4b8ce4a7ae82c0ef22d2223c11c6b55f048cdd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "8392910"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "8756962"
 ---
 # <a name="create-a-customer-invoice"></a>Erstellen einer Debitorenrechnung
 
@@ -28,9 +28,9 @@ ms.locfileid: "8392910"
 
 Bei einer **Debitorenrechnung für einen Auftrag** handelt es sich um eine Rechnung, die sich auf einen Auftrag bezieht, und die ein Debitor von einer Organisation erhält. Diese Art von Debitorenrechnung wird auf Basis eines Auftrags, der die einzelnen Auftragspositionen und Artikelnummern enthält, erstellt. Die Artikelnummern werden im Sachkonto angegeben und gebucht. Journaleinträge in untergeordnetem Sachkonto sind bei einer Debitorenrechnung für einen Auftrag nicht verfügbar. Weitere Informationen finden Sie unter [Auftragserechnung erstellen](tasks/create-sales-order-invoices.md).
 
-**Freitextrechnungen** sind nicht mit einem Auftrag verknüpft. Sie enthalten Auftragspositionen mit Sachkonten, Freitextbeschreibungen und benutzerdefinierten Verkaufsbeträgen. Bei dieser Art von Rechnung kann keine Artikelnummer eingegeben werden. Geben Sie die geeigneten Mehrwertsteuerinformationen ein. Für jede Rechnungsposition wird ein Hauptkonto für den Verkauf angegeben, das auf mehrere Sachkonten verteilt werden kann, indem Sie auf **Beträge verteilen** auf der Seite **Freitextrechnung** klicken. Der Debitorensaldo wird außerdem auf das Summenkonto aus dem Buchungsprofil gebucht, das für die Freitextrechnung verwendet wird.
+Eine **Freitextrechnung** ist nicht mit einem Auftrag verknüpft. Sie enthalten Auftragspositionen mit Sachkonten, Freitextbeschreibungen und benutzerdefinierten Verkaufsbeträgen. Bei dieser Art von Rechnung kann keine Artikelnummer eingegeben werden. Geben Sie die geeigneten Mehrwertsteuerinformationen ein. Für jede Rechnungsposition wird ein Hauptkonto für den Verkauf angegeben, das auf mehrere Sachkonten verteilt werden kann, indem Sie auf **Beträge verteilen** auf der Seite **Freitextrechnung** klicken. Der Debitorensaldo wird außerdem auf das Summenkonto aus dem Buchungsprofil gebucht, das für die Freitextrechnung verwendet wird.
 
-Weitere Informationen finden Sie unter ''.
+Weitere Informationen finden Sie hier:
 
 [Freitextrechnungen erstellen](../accounts-receivable/create-free-text-invoice-new.md)
 
@@ -41,7 +41,10 @@ Weitere Informationen finden Sie unter ''.
 [Freitextserienrechnungen generieren und buchen](tasks/post-recurring-free-text-invoices.md)
 
 
-Bei einer **Proforma-Rechnung** handelt es sich um eine Rechnung, die vor dem Buchen der Rechnung als Vorkalkulation der tatsächlichen Rechnungsbeträge vorbereitet wird. Proforma-Rechnungen können sowohl für eine Debitorenrechnung für einen Auftrag als auch für Freitextrechnungen gedruckt werden.
+Bei einer **Proforma-Rechnung** handelt es sich um eine Rechnung, die vor dem Buchen der Rechnung als Vorkalkulation der tatsächlichen Rechnungsbeträge vorbereitet wird. **Proforma-Rechnungen** können sowohl für eine Debitorenrechnung für einen Auftrag als auch für eine Freitextrechnung gedruckt werden. 
+
+>[!NOTE]
+> Im Falle einer Systemunterbrechung während des Umsatz-Pro-forma-Rechnungsprozesses kann eine Pro-forma-Rechnung verwaist sein. Eine verwaiste Proforma-Rechnung kann durch Ausführen des periodischen Einzelvorgangs **Proforma-Rechnungen manuell löschen** gelöscht werden. Gehen Sie zu **Vertrieb und Marketing > Periodische Aufgaben > Bereinigen > Proforma-Rechnungen manuell löschen**.
 
 ## <a name="using-sales-order-customer-invoice-data-entities"></a>Verwendung von Entitäten für Verkaufsaufträge und Debitor-Rechnungen
 Sie können Entitäten verwenden, um Informationen zu einer Verkaufsrechnung für einen Verkaufsauftrag zu importieren und zu exportieren. Es gibt verschiedene Entitäten für die Informationen auf dem Kopf der Verkaufsrechnung und den Zeilen der Verkaufsrechnung.
@@ -70,7 +73,7 @@ Auf der Listenseite **Alle Aufträge** können Sie den Status des Auftrags anzei
 ## <a name="post-and-print-individual-customer-invoices-that-are-based-on-packing-slips-and-the-date"></a>Buchen und Drucken einzelner Debitorenrechnungen anhand von Lieferscheinen und dem Datum
 Verwenden Sie diesen Prozess, wenn für den Auftrag ein oder mehr als ein Lieferschein gebucht wurde. Die Debitorenrechnung basiert auf diesen Lieferscheinen und enthält die auf den Lieferscheinen angegebenen Mengen. Die Finanzinformationen für die Rechnung basieren auf den beim Buchen der Rechnung eingegebenen Informationen. 
 
-Sie können basierend auf den bisher versendeten Artikeln der Lieferscheinpositionen eine Debitorenrechnung erstellen, auch wenn noch nicht alle Artikel eines bestimmten Auftrags versendet wurden. Das kann der Fall sein, wenn Ihre juristische Person monatlich eine Rechnung pro Debitor für alle Lieferungen ausstellt, die während des Monats versendet wurden. Jeder Lieferschein stellt eine teilweise oder vollständig abgeschlossene Artikellieferung für einen Auftrag dar. 
+Sie können basierend auf den bisher versendeten Artikeln der Lieferscheinpositionen eine Debitorenrechnung erstellen, auch wenn nicht alle Artikel eines bestimmten Auftrags versendet wurden. Das kann der Fall sein, wenn Ihre juristische Person monatlich eine Rechnung pro Debitor für alle Lieferungen ausstellt, die während des Monats versendet wurden. Jeder Lieferschein stellt eine teilweise oder vollständig abgeschlossene Artikellieferung für einen Auftrag dar. 
 
 Durch Buchen der Rechnung wird die Menge des **Rechnungsrestbetrags** für jeden Artikel mit der Summe der gelieferten Mengen aus den ausgewählten Lieferscheinen aktualisiert. Wenn sowohl die Menge für den **Rechnungsrestbetrag** als auch die Menge **Rest liefern** für alle Artikel des Aufrags gleich 0 (Null) ist, wird der Status des Auftrags zu **In Rechnung gestellt** geändert. Ist die **Rechnungsrestbetrag** nicht 0 (Null), bleibt der Status der Bestellung unverändert, und es können weitere Rechnungen für den Auftrag erstellt werden. 
 
@@ -82,6 +85,11 @@ Auf der Listenseite **Alle Aufträge** können Sie den Status des Auftrags anzei
 Verwenden Sie diesen Prozess, wenn eine oder mehrere Aufträge fakturierungsbereit sind, und Sie möchten sie in einer einzelnen Rechnung konsolidieren. 
 
 Sie können mehrere Rechnungen auf der Listenseite **Auftrag** auswählen und dann **Generieren von Rechnungen** verwenden, um sie zu konsolidieren. Auf der Seite **Rechnung buchen** können Sie die **Einstellungen Sammelaufträge** ändern, um nach Auftragsnummern (wenn es mehrere Lieferscheine für einen einzelnen Auftrag gibt) oder nach Rechnungskonto (wenn es mehrere Aufträge für ein einzelnes Rechnungskonto gibt) zusammenzufassen. Verwenden Sie die Anordnen Schaltfläche, um Aufträge als einzelne Rechnungen, basierend auf den Einstellungen für Sammelaufträge zu konsolidieren. Nutzen Sie die **Ordnet an** Schaltfläche, um Aufträge in einzelne Rechnungen, die auf Grundlage der Einstellungen **Zusammenfassender Auftrag** basieren.
+
+## <a name="split-sales-order-invoices-by-site-and-delivery-information"></a>Auftragsrechnungen nach Standort und Lieferinformationen aufteilen
+Sie können die Aufteilung von Kundenrechnungen für Aufträge nach Standort oder nach Lieferadresse auf der Registerkarte **Sammelaktualisierung** der Seite **Debitorenkontenparameter** konfigurieren. 
+ - Aktivieren Sie die Option **Aufteilung basierend auf Rechnungsstandort**, um beim Buchen eine Rechnung pro Standort zu erstellen. 
+ - Aktivieren Sie die Option **Aufteilung basierend auf Lieferinformationen der Rechnung**, um beim Buchen eine Rechnung pro Auftragsposition-Lieferadresse zu erstellen. 
 
 ## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price"></a>Auf das Umsatzkonto für Auftragspositionen ohne Preise buchen
 Sie haben die Möglichkeit, das **Umsatzerlös**-Konto im **Hauptbuch** für Auftragspositionen ohne Preis zu aktualisieren. Um diese Informationen einzurichten oder anzuzeigen, gehen Sie zum Parameter **Auf das Umsatzkonto für Auftragsrechnungen mit Nullpreisen buchen** auf der **Hauptbuch und Umsatzsteuer**-Registerkarte der **Debitorenparameter**-Seite. (**Debitoren > Einrichtung > Debitorenparameter**). Wählen Sie **Ja**, um das **Umsatzerlös**-Konto für Auftragsrechnungspositionen, die keinen Preis haben, zu aktualisieren. Auf der **Bestandsbuchung**-Parameterseite wird ein Umsatzerlöskonto definiert, auf der Registerkarte **Auftrag**-Kontodefinition. Wenn diese Option nicht ausgewählt ist, werden Positionen, die keine Preisinformationen enthalten, nicht an das **Umsatzerlös**-Konto gebucht.
@@ -152,7 +160,7 @@ Die folgenden Felder ändern das Verhalten des Buchungsprozesses.
 <td>Kreditlimit prüfen</td>
 <td>Hier legen Sie die Daten fest, die bei einer Kreditlimitprüfung analysiert werden sollen.
 <ul>
-<li><strong>Kein</strong> – Es gelten keine Anforderungen für die Kreditlimitprüfung.</li>
+<li><strong>Kein</strong> – Es gelten keine Anforderungen für die Kreditlimitüberprüfung.</li>
 <li><strong>Saldo</strong> – Der Debitorensaldo wird durch Vergleich mit dem Kreditlimit überprüft.</li>
 <li><strong>Saldo + Lieferschein oder Produktzugang</strong> – Das Kreditlimit wird durch Vergleich mit Debitorensaldo und Lieferungen überprüft.</li>
 <li><strong>Saldo+Alles</strong> – Das Kreditlimit wird durch Vergleich mit Debitorensaldo, Lieferungen und offenen Aufträgen überprüft.</li>

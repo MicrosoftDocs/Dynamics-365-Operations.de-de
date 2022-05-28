@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 511d875baed029df9083da36baf6c48ca4b7abf866ae569038b554bf594473c8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 38b7371ab668eb76801fbe7f15894609a846bbd8
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734426"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687668"
 ---
 # <a name="set-up-preferred-maintenance-workers"></a>Bevorzugte Wartungsarbeiter einrichten
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 Während der Arbeitsauftragsplanung können Sie einstellen, welcher Wartungsmitarbeiter oder welche Arbeitskräftegruppe zugeordnet wird, um den Arbeitsauftrag fertig zu stellen. Die Verwendung dieser Funktionalität ist optional, kann Ihnen aber helfen, sich für den am besten qualifizierten Wartungstechniker zu entscheiden, um einen Auftrag auszuführen, basierend auf den Fähigkeiten und Kompetenzen des Arbeiters. Es werden nur Wartungsmitarbeiter geplant, die zur Planungszeit verfügbar sind. Wenn eine bevorzugte Einrichtung eines Wartungsmitarbeiters bei der Terminierung mit einem Arbeitsauftrag übereinstimmt, der Wartungsmitarbeiter aber anderen Aufträgen zugeordnet ist, wird der Arbeitsauftrag einem anderen, verfügbaren Wartungsmitarbeiter zugeordnet.
 
@@ -51,13 +49,15 @@ Je mehr Auswahlen Sie für den gleichen Datensatz treffen, desto spezifischer wi
 
 3. Starten Sie, indem Sie einen standardmäßigen Wartungsarbeiter oder einer standardmäßige Arbeitskräftegruppe erstellen. D.h. Sie treffen nur eine Auswahl im Feld **Bevorzugte Wartungsmitarbeitergruppe** oder im Feld **Bevorzugte Wartungsmitarbeiter**. Im folgenden Screenshot sehen Sie ein Beispiel im ersten Datensatz, in dem „Anfragen“ als **Bevorzugte Wartungsarbeitergruppe** ausgewählt ist.
 
-    [!NOTE] Die Standardkonfiguration wird während der Arbeitsauftragsplanung verwendet, wenn keine andere, spezifischere Kombination dem Inhalt des Arbeitsauftrags entspricht.
+    > [!NOTE]
+    > Die Standardkonfiguration wird während der Arbeitsauftragsplanung verwendet, wenn keine andere, spezifischere Kombination dem Inhalt des Arbeitsauftrags entspricht.
 
 4. Wiederholen Sie Schritt 2, um einen neuen Datensatz zu erstellen. Nehmen Sie die erforderlichen Einstellungen vor, je nach Detaillierungsgrad des bevorzugten Mitarbeiters oder der bevorzugten Mitarbeitergruppe. 
 
     *Beispiel:* Im folgenden Screenshot, im sechsten Datensatz, wird der Wartungsarbeiter Shawn Richardson als bevorzugter Arbeiter ausgewählt. Er wird automatisch bei der Terminierung eines Arbeitsauftrags ausgewählt, der die Anlage „CH-BP1-03-02“ und die Auftragsart „Anlagenbewertung“ beinhaltet, wenn er zum geplanten Zeitpunkt verfügbar ist.
 
-    [!NOTE] Im Allgemeinen, wenn ein bevorzugter Wartungsmitarbeiter während der Arbeitsauftragsplanung ausgewählt wird, durchläuft das Asset Management alle **Bevorzugter Mitarbeiter** Datensätze, um nach einer möglichen Übereinstimmung zu suchen, wobei immer zuerst die spezifischste Kombination geprüft wird. Wenn keine Übereinstimmung gefunden wird, wird der „Standarddatensatz“ mit einer Auswahl entweder im Feld **Bevorzugte Wartungspersonengruppe** oder im Feld **Bevorzugte Wartungsperson** verwendet.
+    > [!NOTE]
+    > Im Allgemeinen, wenn ein bevorzugter Wartungsmitarbeiter während der Arbeitsauftragsplanung ausgewählt wird, durchläuft das Asset Management alle **Bevorzugter Mitarbeiter** Datensätze, um nach einer möglichen Übereinstimmung zu suchen, wobei immer zuerst die spezifischste Kombination geprüft wird. Wenn keine Übereinstimmung gefunden wird, wird der „Standarddatensatz“ mit einer Auswahl entweder im Feld **Bevorzugte Wartungspersonengruppe** oder im Feld **Bevorzugte Wartungsperson** verwendet.
 
 ![Abbildung 1.](media/02-work-order-scheduling.png)
 

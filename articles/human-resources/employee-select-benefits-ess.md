@@ -7,19 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 190eb7e437af7edd8eee97b8f2b7601254cbd240
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 68aa401487a74b9fcd186ec6cbdb268cdb41168c
+ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066417"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "8743485"
 ---
 # <a name="employees-select-plans-by-using-employee-self-service-optional"></a>Mitarbeiter wählen Pläne mit dem Mitarbeiter-Self-Service aus (optional)
 
@@ -35,11 +34,11 @@ Um auf seine Leistungen für die Registrierung zuzugreifen, wechselt der Mitarbe
 Auf der Seite **Leistungs-Self-Service** werden Leistungspläne nach Plantyp gruppiert. Um die Leistungspläne in einem Plantyp anzuzeigen, wählt der Mitarbeiter eine Kachel auf der Seite **Mitarbeiterleistungen** aus. Der Mitarbeiter sieht nur die Leistungen, auf die er Anspruch hat.
 
 > [!IMPORTANT]
-> Bevor ein Plantyp im **Mitarbeiter-Self-Service** angezeigt werden kann, muss er konfiguriert werden. Weitere Informationen finden Sie unter [Mitarbeiter Self-Service konfigurieren](/hr-benefits-setup-employee-self-service.md).
+> Bevor ein Plantyp im **Mitarbeiter-Self-Service** angezeigt werden kann, muss er konfiguriert werden. Weitere Informationen finden Sie unter [Mitarbeiter Self-Service konfigurieren](/dynamics365/human-resources/hr-benefits-setup-employee-self-service).
 
 Je nach Plantyp können ein oder mehrere Leistungen für die Registrierung ausgewählt werden. Beispielsweise kann ein Krankenversicherungsplantyp so konfiguriert werden, dass der Mitarbeiter auf einen Krankenversicherungsplan beschränkt wird. Ein Lebensversicherungsplantyp kann es dem Mitarbeiter ermöglichen, mehrere Lebensversicherungspläne auszuwählen.
 
-Nachdem der Mitarbeiter entschieden hat, für welchen Plan er sich registrieren möchte, muss er möglicherweise Angehörige auswählen. Wenn der Mitarbeiter eine Versicherungsoption gewählt hat, die **Mitarbeiter +1**, **Mitarbeiter + Kinder** oder **Familie** lautet, müssen Angehörige ausgewählt werden. Weitere Informationen über die Deckungsoptionen finden Sie unter [Deckungsoptionen erstellen](/hr-benefits-setup-coverage-options.md).
+Nachdem der Mitarbeiter entschieden hat, für welchen Plan er sich registrieren möchte, muss er möglicherweise Angehörige auswählen. Wenn der Mitarbeiter eine Versicherungsoption gewählt hat, die **Mitarbeiter +1**, **Mitarbeiter + Kinder** oder **Familie** lautet, müssen Angehörige ausgewählt werden. Weitere Informationen über die Deckungsoptionen finden Sie unter [Deckungsoptionen erstellen](/dynamics365/human-resources/hr-benefits-setup-coverage-options).
 
 Um einen Leistungsplan auszuwählen, wählt der Mitarbeiter entweder die Schaltfläche mit den Auslassungspunkten (**...**) oder **In den Warenkorb legen**. Nachdem der Mitarbeiter alle Leistungsoptionen in den Warenkorb gelegt hat, wählt er **Warenkorb anzeigen**. Der Mitarbeiter gelangt dann auf die Seite **Pläne**, auf der er seine ausgewählten und verzichteten Leistungspläne einsehen kann.
 

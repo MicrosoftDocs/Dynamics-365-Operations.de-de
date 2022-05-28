@@ -8,26 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 497d49da84f4df90877908bef3031e079bc36066
-ms.sourcegitcommit: d0e99545d722c924db57ae2bd06f72154a1f1f97
+ms.openlocfilehash: 1af4b4cbf503369565ee64ad8889ee9e59a92b3f
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "8557877"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735520"
 ---
 # <a name="customer-aging-data-storage"></a>Fälligkeitsdatenspeicher für Debitoren
 
 [!include [banner](../includes/banner.md)]
 
-
-In diesem Thema wird der Prozess der Verwendung von externem Speicher für Kundenalterungsdaten beschrieben. Sie können in Microsoft Dynamics 365 Finance den Prozess zur Speicherung von Kund\*innenalterungsdaten ausführen, um die Ausgabe für den Export in ein externes System bereitzustellen. Wenn Sie den Prozess ausführen, stehen den externen Systemen dieselben Fälligkeitsberichtsoptionen zur Verfügung, die im System verfügbar sind. Die Details sind immer in den exportierten Daten enthalten.
+In diesem Thema wird der Prozess der Verwendung von externem Speicher für Kundenalterungsdaten beschrieben. Sie können in Microsoft Dynamics 365 Finance den Prozess **Fälligkeitsdatenspeicher für Debitoren** ausführen, um die Ausgabe für den Export in ein externes System bereitzustellen. Wenn Sie den Prozess ausführen, stehen den externen Systemen dieselben Fälligkeitsberichtsoptionen zur Verfügung, die im System verfügbar sind. Die Details sind immer in den exportierten Daten enthalten.
 
 Es kann hilfreich sein, Kundenalterungsdaten einem externen System zur Speicherung zur Verfügung zu stellen, wenn die Ausgabe viele Kunden und/oder viele Transaktionen enthält. Wenn die vorhandene **Alterung des Kunden** Zeitüberschreitungen meldet, da zu viele Daten zum Drucken vorhanden sind, bietet diese Funktion eine alternative Möglichkeit, dieselben Daten abzurufen.
 

@@ -8,23 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxReportCollection
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b7d12ffa90bde30518780d750e74d20db89f007044f8622480b8bd6e629e00dd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3ff5a5622fa63b6058b9e768f1fd1bc776a48962
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728744"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734838"
 ---
 # <a name="set-up-sales-tax-reporting-codes"></a>Mehrwertsteuer-Erklärungscodes einrichten
 
 [!include [banner](../../includes/banner.md)]
 
-Die Mehrwertsteuer-Erklärungscodes verweisen auf eine Feldnummer, die in einem Mehrwertsteuerbericht aufgeführt wird. Sie werden in länderspezifischen Berichtslayouts verwendet. Sie werden auch im Bericht zu Mehrwertsteuerzahlung nach Code verwendet. Dieser Bericht enthält Mehrwertsteuerbeträge für einen Abrechnungszeitraum, die für jeden Berichtscode zusammengefasst sind. Nachdem Sie die Mehrwertsteuer-Erklärungscodes erstellt haben, können Sie diese auf dem Inforegister Berichtseinstellungen darauf verweisen, auf das Sie von der Seite **Mehrwertsteuercode** zugreifen können. 
+Die **Mehrwertsteuer-Erklärungscodes** verweisen auf eine Feldnummer, die in einem Mehrwertsteuerbericht aufgeführt wird. Sie werden in länderspezifischen Berichtslayouts verwendet. Sie werden auch im Bericht zu Mehrwertsteuerzahlung nach Code verwendet. Dieser Bericht enthält Mehrwertsteuerbeträge für einen Abrechnungszeitraum, die für jeden Berichtscode zusammengefasst sind. Nachdem Sie die **Mehrwertsteuer-Erklärungscodes** erstellt haben, können Sie diese auf dem Inforegister **Berichtseinstellungen** darauf verweisen, auf das Sie von der Seite **Mehrwertsteuercode** zugreifen können. 
 
 Für diese Erfassung wird das Demo-Unternehmen DEMF verwendet.
 

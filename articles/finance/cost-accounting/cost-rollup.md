@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy, CAMOverheadRatePolicy
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f86529359f548bf48fdef8817bd2e2260235561cce57cac28158739687ade2c1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9c36587294ff157266e354e06d107000f198061
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779955"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734428"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Kostenaufschlüsselungsrichtlinie und Gemeinkostenberechnung 
 
@@ -30,9 +30,7 @@ ms.locfileid: "6779955"
 Mit Kostenrechnung können Sie einen Einblick erhalten, wie sich der Kostenfluss auf Produkte und Dienste bezieht, die innerhalb einer Organisation geliefert werden. Um die Kostentransparenz anzuzeigen, ist es wichtig, Kostenzuweisung zwischen Kostenobjekten auf Grundlage einer entsprechenden Zuweisungsgrundlage zu erreichen. Standardmäßig wird die Kostenzuweisung für das primäre Kostenelement erreicht. Das ist in einigen Situationen wünschenswert, hat aber mehrere Auswirkungen, die berücksichtigt werden sollten.
 
 -   Zusätzliche Kostenobjekte werden mit Nullsaldo für das primäre Kostenelement nach Gemeinkostenberechnung beendet.
-
 -   Die Menge der Kosteneinträgen, die durch Gemeinkostenberechnung generiert wird, kann sehr hoch sein.
-
 -   Es ist nicht möglich, den Kostenfluss zwischen Kostenobjekten zu verfolgen.
 
 Um diese Auswirkungen zu vermeiden, können Sie mit der Kostenrechnung die Kostenzuweisung konfigurieren, damit sie in den Anforderungen der Berichterstellung auf Führungsebene in Ihrer Organisation entspricht. Dieses Thema erklärt, wie Sie die korrekte Stufe der sekundären Kostenelemente bestimmen und Kostenrollupregeln erstellen können, die in Organisationsberichterstellung und Kostennachweisbarkeit passen.

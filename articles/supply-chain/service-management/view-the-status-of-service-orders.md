@@ -1,7 +1,7 @@
 ---
 title: Anzeigen des Status von Serviceaufträgen
 description: Sie können das Formular Einsatzplanung verwenden, um den Status von Serviceaktivitäten in Serviceaufträgen anzuzeigen.
-author: kamaybac
+author: sorenva
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a43e93f2ea64f75a559e1429bbc927c6d23a10ae
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ec403359c8a590163401f73126cf37666c4e3170
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571256"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8678490"
 ---
 # <a name="view-the-status-of-service-orders"></a>Anzeigen des Status von Serviceaufträgen 
 

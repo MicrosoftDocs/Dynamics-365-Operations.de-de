@@ -1,6 +1,6 @@
 ---
-title: Abgrenzungsüberblick
-description: Dieser Artikel beschreibt Abgrenzungen und gibt Informationen, wie sie aufgesetzt werden und wie Transaktionen erstellt werden.
+title: Abgrenzungen – Übersicht
+description: Dieses Thema beschreibt Abgrenzungen und gibt Informationen, wie sie eingerichtet werden und wie Transaktionen erstellt werden.
 author: aprilolson
 ms.date: 01/11/2018
 ms.topic: overview
@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerAccuralTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "14131"
 - intro-internal
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc3234c1a64155e1d0ad53cb7008d91847f7af7d
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 62b56e698d3d9eeec08824eb799d74a8c6792ea7
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985286"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735231"
 ---
-# <a name="accruals-overview"></a>Abgrenzungsüberblick
+# <a name="accruals-overview"></a>Abgrenzungen – Übersicht
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel beschreibt Abgrenzungen und gibt Informationen, wie sie aufgesetzt werden und wie Transaktionen erstellt werden.
+Dieses Thema beschreibt Abgrenzungen und gibt Informationen, wie sie eingerichtet werden und wie Transaktionen erstellt werden.
 
 Abgrenzungen werden in der periodengerechten Abgrenzung verwendet, um den Umsatzerlös zu verfolgen, der in der Periode realisiert wird, in der er erzielt wurde und nicht bezahlt, und um Aufwendungen (Kosten) zu verfolgen, die realisiert werden, wenn Sie entstehen, nicht wenn Sie bezahlt werden.
 

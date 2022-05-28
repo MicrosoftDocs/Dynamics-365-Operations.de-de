@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ec7fcb97bd46551846ccee13b369a1b02a589688
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: cf38717ab3768249e3c9b988ee3893c5e539bcd0
+ms.sourcegitcommit: 90ffd763d18f97654b9dbc9e3f71c998e6094c6b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075298"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8739386"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.21. (Oktober 2021)
 
@@ -130,7 +130,7 @@ Wir haben die folgenden Hilfethemen kürzlich hinzugefügt oder erheblich aktual
 | Produktprogrammplanung | [Planhistorie und Planungsprotokolle einsehen](../master-planning/planning-optimization/plan-history-logs.md) |
 | Lagerortverwaltung | [Verpackungsstrategien für Container](../warehousing/container-packing-strategy-overview.md) |
 | Lagerortverwaltung | [Beispiele für Zykluszählungsszenarien](../warehousing/cycle-counting-scenarios.md) |
-| Lagerortverwaltung | [Eingehende ASNs über die V2-Datenentität importieren](../warehousing/import-asn-v2-data-entity.md) |
+| Lagerortverwaltung | [Eingehende ASNs über die V3-Datenentität importieren](../warehousing/import-asn-data-entity.md) |
 | Lagerortverwaltung | [Zu hohe Entnahme für Aufträge und Umlagerungsaufträge verwenden](../warehousing/over-picking-for-sales-and-transfer-orders.md) |
 | Lagerortverwaltung | [Zyklusbeschriftungsdruck während des Zyklus planen](../warehousing/configure-task-based-wave-label-printing.md) |
 | Lagerortverwaltung | [Was ist neu oder geändert in der Warehouse Management Mobile-App](../warehousing/whats-new-wma.md) |

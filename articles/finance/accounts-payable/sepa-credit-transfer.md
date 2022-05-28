@@ -1,6 +1,6 @@
 ---
 title: Überblick zur SEPA-Kreditübertragung
-description: Dieser Artikel stellt allgemeine Informationen zu ISO 20022-Banküberweisungen bereit, die SEPA (Single Euro Payments Area) Banküberweisungen und alle sonstigen elektronische Zahlungen für Kreditoren umfassen. Eine SEPA-Überweisung ist eine Zahlung (in Euro) von einem Unternehmen oder von Einzelperson zu einem anderen Unternehmen oder einer Einzelperson. Der Artikel beschreibt zudem, wie eine SEPA-Überweisung-Zahlungsdatei eingerichtet und übermittelt wird.
+description: In diesem Thema werden allgemeine Informationen zu ISO 20022-Banküberweisungen bereitgestellt, die SEPA(Single Euro Payments Area)-Banküberweisungen und alle sonstigen elektronische Zahlungen für Kreditoren umfassen.
 author: sunfzam
 ms.date: 06/20/2017
 ms.topic: overview
@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "11124"
 - intro-internal
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc37dde8829abdd26a224adbd788538834f4d320
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f43c45aa4f22f5044e7c10329dafa76226970b3d
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984026"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734515"
 ---
 # <a name="sepa-credit-transfer-overview"></a>Überblick zur SEPA-Kreditübertragung
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel stellt allgemeine Informationen zu ISO 20022-Banküberweisungen bereit, die SEPA (Single Euro Payments Area) Banküberweisungen und alle sonstigen elektronische Zahlungen für Kreditoren umfassen. Eine SEPA-Überweisung ist eine Zahlung (in Euro) von einem Unternehmen oder von Einzelperson zu einem anderen Unternehmen oder einer Einzelperson. Der Artikel beschreibt zudem, wie eine SEPA-Überweisung-Zahlungsdatei eingerichtet und übermittelt wird.
+In diesem Thema werden allgemeine Informationen zu ISO 20022-Banküberweisungen bereitgestellt, die SEPA(Single Euro Payments Area)-Banküberweisungen und alle sonstigen elektronische Zahlungen für Kreditoren umfassen. Eine SEPA-Überweisung ist eine Zahlung (in Euro) von einem Unternehmen oder von Einzelperson zu einem anderen Unternehmen oder einer Einzelperson. Der Artikel beschreibt zudem, wie eine SEPA-Überweisung-Zahlungsdatei eingerichtet und übermittelt wird.
 
 ## <a name="what-is-a-credit-transfer-message"></a>Was ist eine SEPA-Mitteilung?
 Die Banküberweisungsnachricht ist eine Anforderung, die eine initiierende Partei (Ihr Unternehmen) zum Verschieben von einem separaten Konto zu einem Kreditgeber sendet. Es gibt viele länder-/regionsspezifische und bankspezifisch Implementierungen von Banküberweisungsnachrichten. Viele hiervon werden innerhalb eines Landes/Regionen verwendet, und werden Standards. Ein Standard ist globaler ISO 20022 und seine Startnachrichten, z.B. Banküberweisung. Die folgende Abbildung zeigt die Beziehungen und Disposition für die ausgewählte Banküberweisungsnachrichten angezeigt. 

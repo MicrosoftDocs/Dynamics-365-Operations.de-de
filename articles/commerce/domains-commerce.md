@@ -2,7 +2,7 @@
 title: Domänen in Dynamics 365 Commerce
 description: In diesem Thema wird beschrieben, wie Domänen in Microsoft Dynamics 365 Commerce behandelt werden.
 author: BrShoo
-ms.date: 03/17/2021
+ms.date: 05/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: bf96c47b8f5e940ffdd9241c3bdda4162a3101c42004c58c431f135f11c39d14
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aab5e983b42aea7d8eb4f198f033634d4663f278
+ms.sourcegitcommit: 7181a022739d6107a75d84546c3379c23f722034
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733990"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8737345"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domänen in Dynamics 365 Commerce
 
@@ -28,6 +28,9 @@ ms.locfileid: "6733990"
 In diesem Thema wird beschrieben, wie Domänen in Microsoft Dynamics 365 Commerce behandelt werden.
 
 Domänen sind Webadressen, mit denen in einem Webbrowser zu Dynamics 365 Commerce-Websites navigiert wird . Sie steuern die Verwaltung Ihrer Domäne mit einem ausgewählten Domänennamenserver (DNS)-Anbieter. Domänen werden durch den Dynamics 365 Commerce-Site Builder referenziert, um zu koordinieren, wie auf eine Website zugegriffen wird, wenn sie veröffentlicht wird. In diesem Thema wird erläutert, wie Domänen während des gesamten Lebenszyklus der Entwicklung und des Starts der Commerce-Website behandelt und referenziert werden.
+
+> [!NOTE]
+> Ab dem 6. Mai 2022 werden alle in Dynamics 365 Commerce erstellten Umgebungen mit der `.dynamics365commerce.ms`-Domäne bereitgestellt und ersetzen das frühere Muster von `.commerce.dynamics.com`. Vorhandene Umgebungen, die mit der `.commerce.dynamics.com`-Domäne bereitgestellt werden, werden weiterhin funktionieren.
 
 ## <a name="provisioning-and-supported-host-names"></a>Bereitstellung und unterstützte Hostnamen
 
@@ -44,7 +47,7 @@ Sie können eine Serviceanforderung erstellen, um einer Umgebung zusätzliche Do
 
 ## <a name="commerce-generated-urls"></a>Von Commerce generierte URLs
 
-Bei der Bereitstellung einer Dynamics 365 Commerce-E-Commerce-Umgebung generiert Commerce eine URL, die die Arbeitsadresse für die Umgebung darstellt. Auf diese URL wird in dem in LCS angezeigten E-Commerce-Website-Link verwiesen, nachdem die Umgebung bereitgestellt wurde. Eine von Commerce generierte URL hat das Format `https://<e-commerce tenant name>.commerce.dynamics.com`, wobei der Name des E-Commerce-Mandanten der in LCS für die Commerce-Umgebung eingegebene Name ist.
+Bei der Bereitstellung einer Dynamics 365 Commerce-E-Commerce-Umgebung generiert Commerce eine URL, die die Arbeitsadresse für die Umgebung darstellt. Auf diese URL wird in dem in LCS angezeigten E-Commerce-Website-Link verwiesen, nachdem die Umgebung bereitgestellt wurde. Eine von Commerce generierte URL hat das Format `https://<e-commerce tenant name>.dynamics365commerce.ms`, wobei der Name des E-Commerce-Mandanten der in LCS für die Commerce-Umgebung eingegebene Name ist.
 
 Sie können Hostnamen für Produktionsstandorte auch in einer Sandbox-Umgebung verwenden. Diese Option ist ideal, wenn Sie eine Website aus einer Sandbox-Umgebung in die Produktion kopieren.
 
@@ -67,11 +70,11 @@ Das Feld **Pfad** kann leer gelassen werden, oder es kann eine zusätzliche Pfad
 
 Wenn Sie im Website-Generator beispielsweise eine Website mit dem Namen „fabrikam“ in einem E-Commerce-Mandanten mit dem Namen „xyz“ haben und die Website mit einem leeren Pfad einrichten, greifen Sie in einem Webbrowser auf den veröffentlichten Website-Inhalt zu, indem Sie direkt zu der von Commerce generierten Basis-URL gehen:
 
-`https://xyz.commerce.dynamics.com`
+`https://xyz.dynamics365commerce.ms`
 
 Wenn Sie während der Einrichtung derselben Website einen Pfad für „fabrikam“ hinzugefügt hätten, würden Sie alternativ über die folgende URL in einem Webbrowser auf den veröffentlichten Website-Inhalt zugreifen:
 
-`https://xyz.commerce.dynamics.com/fabrikam`
+`https://xyz.dynamics365commerce.ms/fabrikam`
 
 ## <a name="pages-and-urls"></a>Seiten und URLs
 
@@ -92,16 +95,16 @@ Die unterstützten Hostnamenwerte können beim Einrichten einer Website als Dom�
 Wenn Sie im Site Builder mit Websites arbeiten und zwei Websites mit zwei verschiedenen Domänen eingerichtet haben, können Sie das **?domain=**-Attribut Ihrer Arbeits-URL anfügen, um in einem Browser auf den veröffentlichten Website-Inhalt zuzugreifen.
 
 Beispielsweise wurde die Umgebung „xyz“ bereitgestellt, und im Site Builder wurden zwei Websites erstellt und zugeordnet: eine mit der Domäne `www.fabrikam.com` und die andere mit der Domain `www.constoso.com`. Jede Website wurde mit einem leeren Pfad eingerichtet. Auf diese beiden Websites kann dann in einem Webbrowser wie folgt mit dem **?domain=**-Attribut zugegriffen werden:
-- `https://xyz.commerce.dynamics.com?domain=www.fabrikam.com`
-- `https://xyz.commerce.dynamics.com?domain=www.contoso.com`
+- `https://xyz.dynamics365commerce.ms?domain=www.fabrikam.com`
+- `https://xyz.dynamics365commerce.ms?domain=www.contoso.com`
 
-Wenn in einer Umgebung mit mehreren bereitgestellten Domänen keine Domänenabfragezeichenfolge angegeben wird, verwendet Commerce die erste von Ihnen bereitgestellte Domäne. Wenn beispielsweise der Pfad „fabrikam“ beim Einrichten der Website zuerst angegeben wurde, könnte die URL `https://xyz.commerce.dynamics.com` verwendet werden, um auf die veröffentlichte Website-Inhaltsseite für `www.fabrikam.com` zuzugreifen.
+Wenn in einer Umgebung mit mehreren bereitgestellten Domänen keine Domänenabfragezeichenfolge angegeben wird, verwendet Commerce die erste von Ihnen bereitgestellte Domäne. Wenn beispielsweise der Pfad „fabrikam“ beim Einrichten der Website zuerst angegeben wurde, könnte die URL `https://xyz.dynamics365commerce.ms` verwendet werden, um auf die veröffentlichte Website-Inhaltsseite für `www.fabrikam.com` zuzugreifen.
 
 ## <a name="traffic-forwarding-in-production"></a>Datenverkehrsweiterleitung in der Produktion
 
-Sie können mehrere Domänen mithilfe von Domänenabfragezeichenfolgenparametern auf dem Endpunkt commerce.dynamics.com selbst simulieren. Wenn Sie jedoch in der Produktion live gehen möchten, müssen Sie den Datenverkehr für Ihre benutzerdefinierte Domäne an den `<e-commerce tenant name>.commerce.dynamics.com`-Endpunkt weiterleiten.
+Sie können mehrere Domänen mithilfe von Domänenabfragezeichenfolgenparametern auf dem Endpunkt commerce.dynamics.com selbst simulieren. Wenn Sie jedoch in der Produktion live gehen möchten, müssen Sie den Datenverkehr für Ihre benutzerdefinierte Domäne an den `<e-commerce tenant name>.dynamics365commerce.ms`-Endpunkt weiterleiten.
 
-Der `<e-commerce tenant name>.commerce.dynamics.com`-Endpunkt unterstützt keine SSLs (Secure Sockets Layers) für benutzerdefinierte Domänen. Daher müssen Sie benutzerdefinierte Domänen mithilfe eines Front-Door-Dienstes oder eines Content Delivery Network (CDN) einrichten. 
+Der `<e-commerce tenant name>.dynamics365commerce.ms`-Endpunkt unterstützt keine SSLs (Secure Sockets Layers) für benutzerdefinierte Domänen. Daher müssen Sie benutzerdefinierte Domänen mithilfe eines Front-Door-Dienstes oder eines Content Delivery Network (CDN) einrichten. 
 
 Um benutzerdefinierte Domänen mithilfe eines Front-Door-Dienstes oder eines CDN einzurichten, haben Sie zwei Möglichkeiten:
 

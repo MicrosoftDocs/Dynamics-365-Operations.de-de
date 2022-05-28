@@ -1,8 +1,8 @@
 ---
-title: Deutschland – Übersicht
+title: Informationen zu Deutschland
 description: Dieses Thema bietet eine Übersicht der Dynamics 365 Finance-Funktionen, die für Deutschland spezifisch sind.
-author: kfend
-ms.date: 03/02/2022
+author: anasyash
+ms.date: 05/09/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -12,14 +12,14 @@ ms.search.region: Germany
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: a6eeaa33bbef23754afa0757839fe332ffc4fadd
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 88e4fe5f6d1a9167181cc004f327f53cdbe64ab3
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388511"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735418"
 ---
-# <a name="germany-overview"></a>Deutschland – Übersicht
+# <a name="germany-overview"></a>Informationen zu Deutschland
 
 [!include[banner](../includes/banner.md)]
 
@@ -56,10 +56,7 @@ Auf der Seite **Juristische Personen** können Sie die Option **Rechnungskorrekt
 
 
 ## <a name="reports-for-germany"></a>Berichte für Deutschland
-
-| Bericht                     |  Beschreibung  |Bericht abrufen |
-|----------------------------|--------------------------|----------------------------------------|
-|Deutscher Journallistenbericht|Der Bericht **Deutsche Erfassungsliste** enthält alle im Journal erfassten Buchungen, die beim Ausführen der Funktionen generiert wurden, und ist nach laufender Nummer sortiert. Dieser Bericht wird verwendet, um den Status von Hauptbuchprozessen zu überprüfen. Er wird normalerweise von leitenden Geschäftsführern, Leitern der Finanzabteilung, Leitern Compliance, Buchhaltungsleitern und Supervisors Buchhaltung und Finanzcontrollern verwendet. Weitere Informationen zu Kommissionierlistenerfassungen finden Sie unter [Deutscher Journallistenbericht](emea-deu-journal-list-report.md).|  **Hauptbuch** > **Periodisch** > **Erfassungen** > **Erstellte Erfassungen** > **Deutsches Journal**|
+[Deutscher Journallistenbericht](emea-deu-journal-list-report.md)
 
 ## <a name="intra-community-reporting"></a>Intra-Community-Berichterstattung
 -   [EU-Verkaufsliste für Deutschland](emea-deu-eu-sales-list.md)

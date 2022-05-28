@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CollectionLetterCourse
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: adeae6e20a799165e086df28b92a1357e8f2f0d3
-ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
+ms.openlocfilehash: af5d0a001fbe705834e116516933be67f2de8826
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7921198"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734157"
 ---
 # <a name="create-a-collection-letter-sequence"></a>Mahnschreibensequenz erstellen
 
@@ -26,10 +26,10 @@ ms.locfileid: "7921198"
 
 Diese Prozedur erstellt eine Sequenz für Sammelbriefe. Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
 
-1. Wechseln Sie im Navigationsbereich zu **Module > Kredit und Inkasso > Einstellungen > Mahnschreibensequenz einrichten**.
+1. Wechseln Sie zu **Kredit und Inkasso > Einrichtung > Mahnschreibensequenz einrichten**.
 2. Klicken Sie auf **Neu**.
 3. Geben Sie im Feld **Mahnschreibensequenz** eine Sequenzkennung ein, die die Reihenfolge darstellt. Sie wird verwendet, wenn Sie ein Buchungsprofil einrichten.
-4. Geben Sie im Feld **Beschreibung** einen Wert ein.  Die Zahlungsbedingungen sind optional. Wenn Sie einen Wert hier eingeben, verwendet die Mahngebührenrechnung diese Zahlungsbedingungen anstelle der Zahlungsbedingungen, die beim Debitor gespeichert sind.  
+4. Geben Sie im Feld **Beschreibung** einen Wert ein. Die Zahlungsbedingungen sind optional. Wenn Sie einen Wert hier eingeben, verwendet die Mahngebührenrechnung diese Zahlungsbedingungen anstelle der Zahlungsbedingungen, die beim Debitor gespeichert sind.  
 5. Wählen Sie im Feld **Mahnschreibencode** den Code für das erste Mahnschreiben aus, das Sie senden möchten. Das erste Mahnschreiben wird gemäß dem Fälligkeitsdatum auf der Rechnung, der Toleranzperiode, die Sie im Feld "Tage" auf dieser Position eingegeben haben und anderen Informationen, die Sie auf dieser Position eingeben, erstellt.  
 6. Geben Sie im Feld **Beschreibung** einen Wert ein. 
 7. Die Standardwährung für die Gebühr ist standardmäßig die Währung der juristischen Person. Dieser Währungscode kann sich von der Rechnungswährung unterscheiden.   
@@ -52,9 +52,9 @@ Diese Prozedur erstellt eine Sequenz für Sammelbriefe. Für diese Aufgabe wird 
 22. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 23. Geben Sie im Feld **Überfälliger Mindestsaldo** eine Zahl ein.
 24. Geben Sie im Feld **Tage** eine Zahl ein.
-25. Aktivieren Sie das Kontrollkästchen **Sperren**, um den Debitor von zusätzlichen Lieferungen und der Rechnungsstellung auszuschließen. Damit das Konto entsperrt wird, wählen Sie im Feld „Rechnungsstellung und Lieferung gesperrt“ der Seite „Debitoren“ **Nein** aus.  
+25. Aktivieren Sie das Kontrollkästchen **Sperren**, um den Debitor von zusätzlichen Lieferungen und der Rechnungsstellung auszuschließen. Damit das Konto entsperrt wird, wählen Sie **Nein** im Feld **Rechnungsstellung und Lieferung gesperrt** der Seite **Debitoren** aus.  
 26. Erweitern Sie das Inforegister **Hinweis**.
-27. Geben Sie den Text ein, der im Mahnschreiben für den ausgewählten Mahnschreibencode angezeigt werden soll. Sie können diesen Text in mehrere Sprachen mithilfe des Menüs "Übersetzungen" über dem Hinweisfeld übersetzen.  
+27. Geben Sie den Text ein, der im Mahnschreiben für den ausgewählten Mahnschreibencode angezeigt werden soll. Sie können diesen Text in mehrere Sprachen mithilfe des Menüs **Übersetzungen** über dem Hinweisfeld übersetzen.  
 
 
 

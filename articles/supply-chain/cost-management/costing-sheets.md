@@ -1,7 +1,7 @@
 ---
 title: Nachkalkulationsbögen
 description: 'Durch die Einrichtung des Nachkalkulationsbogens werden zwei Ziele verfolgt: Zum einen wird das Format definiert, das zum Anzeigen von Wareneinsatzinformationen für einen produzierten Artikel oder einen Produktionsauftrag verwendet wird. Die formatierte Anzeige wird als Nachkalkulationsbogen bezeichnet. Zum anderen wird die Grundlage für die Berechnung indirekter Kosten definiert. Die Einstellungen des Nachkalkulationsbogens basieren auf der Kostengruppenfunktion für die Informationsanzeige sowie für die Berechungsformeln für indirekte Kosten. In diesem Artikel werden die beiden Ziele des Nachkalkulationsbogens beschrieben:'
-author: AndersGirke
+author: JennySong-SH
 ms.date: 11/18/2021
 ms.topic: article
 ms.search.form: CostSheetDesigner, CostSheetCalculationFactor
@@ -9,15 +9,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 53201
 ms.search.region: Global
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 64b8a9b8b29193f25e706e52424de2af3454aec8
-ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
+ms.openlocfilehash: 6891fc4472e714133a7d0cdf77f2908becc0547c
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "7825357"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8672429"
 ---
 # <a name="costing-sheets"></a>Nachkalkulationsbögen
 

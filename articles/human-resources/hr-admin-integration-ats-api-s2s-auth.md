@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-06-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d221e1a47dca85880fd683177ca95dd1b7766fb9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 350fb5a00b85f28fa8aef2ca50cf1f277b8f635e
+ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8064921"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "8743540"
 ---
 # <a name="server-to-server-authentication-for-the-ats-integration-api"></a>Server-zu-Server-Authentifizierung für das API zur ATS-Integration
 
@@ -89,7 +89,7 @@ Für die neue Rolle muss mindestens folgenden Entitäten auf der Registerkarte *
 
 Der zweite Schritt besteht darin, sicherzustellen, dass der Anwendung die entsprechenden Berechtigungen für die Daten in Human Resources erteilt werden, indem sie mit einem Benutzer in der Human Resources-Anwendung verknüpft wird. Für einen Anwendungsbenutzer erfolgen die Server-zu-Server-Aufrufe durch virtuelle Dataverse-Tabellen im Kontext der Identität des Benutzers (App) in Dataverse, das die Aktivität auslöst. Der Adapterservice für virtuelle Tabellen sucht dann den zugeordneten Benutzer in Human Resources und führt die Abfrage im Kontext dieses Benutzers aus. Dies bedeutet, dass in Human Resources ein Benutzer mit den richtigen Rollen angelegt werden muss, um Zugriff auf die Daten zu bereitzustellen, die die integrierende Anwendung benötigen wird.
 
-Dem Benutzer von Human Resources müssen außerdem die richtigen Berechtigungen für die Daten in Human Resources zugewiesen werden. Die **Personalbeschaffungsanwendung** (HcmRecruitingIntegrator) steht mit Berechtigungen für die primären Entitäten zur Verfügung, die für die Integration mit Rekrutierungsdaten erforderlich sind. Diese Rolle kann dem Anwendungsbenutzer auf der Seite **Benutzer** zugewiesen werden, um einen entsprechenden Zugriff auf die Daten zu gewähren. Weitere Informationen zu Sicherheitsrollen in Human Resources finden Sie unter [Rollenbasierte Sicherheit](/fin-ops-core/dev-itpro/sysadmin/role-based-security).
+Dem Benutzer von Human Resources müssen außerdem die richtigen Berechtigungen für die Daten in Human Resources zugewiesen werden. Die **Personalbeschaffungsanwendung** (HcmRecruitingIntegrator) steht mit Berechtigungen für die primären Entitäten zur Verfügung, die für die Integration mit Rekrutierungsdaten erforderlich sind. Diese Rolle kann dem Anwendungsbenutzer auf der Seite **Benutzer** zugewiesen werden, um einen entsprechenden Zugriff auf die Daten zu gewähren. Weitere Informationen zu Sicherheitsrollen in Human Resources finden Sie unter [Rollenbasierte Sicherheit](/dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security).
 
 ### <a name="set-up-the-new-user-with-appropriate-permissions"></a>Den neuen Benutzer mit den entsprechenden Berechtigungen einrichten
 

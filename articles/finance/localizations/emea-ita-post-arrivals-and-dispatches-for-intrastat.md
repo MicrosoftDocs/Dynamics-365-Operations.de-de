@@ -1,20 +1,20 @@
 ---
 title: POST Eingänge und Versendungen für Intrastat buchen
 description: In diesem Thema finden Sie ein Beispiel, das zeigt, wie Sie Eingänge und Versendungen für Intrastat buchen.
-author: andosip
+author: anasyash
 ms.date: 8/23/2021
 ms.topic: article
 audience: Application User
-ms.reviewer: kfender
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: f7bd1811fd0e580a6b6655244c689268915d320e
-ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
+ms.openlocfilehash: 4ab4402740d199043519773b18732bdde9a0fb2f
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7414786"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8724782"
 ---
 # <a name="post-arrivals-and-dispatches-for-intrastat"></a>POST Eingänge und Versendungen für Intrastat buchen
 
@@ -32,7 +32,7 @@ In diesem Thema finden Sie ein Beispiel, das zeigt, wie Sie Eingänge und Versen
 
     Weitere Details finden Sie unter [Download von ER-Konfigurationen aus dem Global Repository des Konfigurationsdienstes](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-2. Definieren Sie in Microsoft Dynamics 365 Finance die folgenden Sequenzen als fortlaufend: **Gene\_397**, **Acco\_16403**, **Gene\_407**, und **PUR\_EU**.
+2. Definieren Sie in Microsoft Dynamics 365 Finance die folgenden Nummernkreise als fortlaufend: **Gene\_397**, **Acco\_16403**, **Gene\_407**, und **PUR\_EU**.
 
     1. Gehen Sie zu **Organisationsverwaltung** > **Nummernkreise** > **Nummernkreise**.
     2. Wählen Sie im Raster einen der Nummernkreis-Codes aus.

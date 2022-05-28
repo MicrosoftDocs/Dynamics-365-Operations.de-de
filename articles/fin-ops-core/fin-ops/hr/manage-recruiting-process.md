@@ -1,31 +1,31 @@
 ---
 title: Personalbeschaffungsprozesse verwalten
 description: Dieses Thema beschreibt ein Konzept, mit dem Personalvermittler die Schritte in einem Personalbeschaffungsprozess verfolgen können.
-author: andreabichsel
+author: twheeloc
 ms.date: 01/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HRMApplication, HRMRecruitingTable
 audience: Application User
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 ms.custom: 7501
 ms.assetid: 1ad725bf-20e2-42a1-8068-111f7ddddad9
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fa1d5201fcc52d49b9d954356f1ca39b7619cd2
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: eb7cc1db906ba0cd07caaa1d82a12182f78b19ba
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075474"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735373"
 ---
 # <a name="manage-recruiting-processes"></a>Personalbeschaffungsprozesse verwalten
 
 > [!IMPORTANT]
-> Die in diesem Thema beschriebene Funktionalität ist derzeit für Debitor-Kunden aus dem Bereich Human Resources auf der Finance-Infrastruktur verfügbar.  
+> Die Personalbeschaffungsfunktionen in diesem Thema werden als Personalbeschaffungsprojekte bezeichnet und konzentrieren sich auf Bewerber, Bewerbungen und Personalbeschaffungsprojekte. 
 
 
 In diesem Artikel wird ein Konzept beschrieben, das Personalbeschaffungssachbearbeiter verwenden können, um die Schritte in einem Personalbeschaffungsprozess nachzuverfolgen. Dazu gehören Bemühungen, offene Positionen zu annoncieren und Bewerber anzuwerben, die Informationen zu Bewerber und Bewerbung nachzuverfolgen, Gespräche mit Bewerbern zu führen und einen oder mehrere Kandidaten auszuwählen, um offene Positionen in Ihrer Organisation zu besetzen.
