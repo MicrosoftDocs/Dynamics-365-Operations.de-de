@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: PaymDay, PaymTerm, CashDisc
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 12c26cfedca3f3b0eec1a3b068184522f87ff8d103a41b81a0775bf5a35d0e03
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16d861294a80ddb44c78760b329e544bc4665130
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766957"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716970"
 ---
 # <a name="establish-customer-payment-terms"></a>Debitorenzahlungsbedingungen einrichten
 
@@ -26,7 +26,7 @@ ms.locfileid: "6766957"
 
 Diese Prozedur definiert eine Skonto- und Fälligkeitsdatumseinstellung. Für diese Aufgabenanleitung wird das Demo-Unternehmen USMF verwendet.
 
-1. Wechseln Sie zu **Navigationsbereich > Module > Debitorenkonten > Zahlungseinrichtung > Zahlungstage**. Die Einstellungen für die **Zahlungsbedingungen** werden für **Debitoren** und **Kreditoren** freigegeben. Wenn Sie diese im Modul definieren, ist dies auch im anderen Modul verfügbar. Für diese Aufgabenanleitung richte ich alle Zahlungsbedingungen unter **Debitoren** ein.
+1. Wechseln Sie zu **Navigationsbereich > Module > Debitorenkonten > Zahlungseinrichtung > Zahlungstage**. Die Einstellungen für die **Zahlungsbedingungen** werden für **Debitoren** und **Kreditoren** freigegeben. Wenn Sie diese im Modul definieren, ist dies auch im anderen Modul verfügbar. Für diesen Aufgabenleitfaden werden alle Zahlungsbedingungen unter **Debitoren** eingerichtet.
 2. Klicken Sie auf **Neu**. Erstellen Sie einen Zahlungstag, wenn Ihre Zahlungsbedingungen einen bestimmten Wochentag (Montag, Dienstag, usw.) oder ein bestimmtes Datum des Monats (5., 10., usw.) erfordern. 
 3. Geben Sie im Feld **Zahlungstag** eine Kennung ein.
 4. Geben Sie im Feld **Beschreibung** eine kurze Beschreibung den Zahlungstag ein.

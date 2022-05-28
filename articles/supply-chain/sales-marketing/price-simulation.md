@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a14e485d1e02247159e1d9eb1c5d81be37626216
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d206654dcb7964ac2ed9aa9ccf7cec709e1bd38c
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580503"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689677"
 ---
 # <a name="price-simulation"></a>Preissimulation
 
@@ -32,7 +32,8 @@ In einer Preissimulation für ein Angebot wird ein neuer Gesamtbetrag auf Basis 
 
 Der Preis im Angebot wird durch eine Preissimulation nicht geändert. Wenn die Preissimulation für ein gesamtes Angebot gilt, wird sie als Sonderrabatt auf den Angebotskopf angewendet. Wenn die Preissimulation für bestimmte Artikel gilt, wird sie als Sonderrabatt auf die Angebotspositionen angewendet. Der Verkaufspreis pro Einheit in einer erstellten Angebotsposition wird bei Anwendung einer Preissimulation nicht geändert. Stattdessen wird ein Rabattprozentsatz angewendet, der der Preisverringerung für die Angebotsposition entspricht. Durch Anwenden einer Preissimulation werden der Verkaufspreis pro Einheit sowie der Rabattprozentsatz in die Angebotsposition oder in den Angebotskopf übertragen.  
 
->[Hinweis!] Bei Ausführung einer Preissimulation wird für die Simulationserstellung ausschließlich die aktuelle Verkaufswährung verwendet. Beim Anzeigen der Angebotssummen wird dann allerdings eine Kombination aus Unternehmenswährung und Verkaufswährung angezeigt.  
+>[!NOTE]
+>Bei Ausführung einer Preissimulation wird für die Simulationserstellung ausschließlich die aktuelle Verkaufswährung verwendet. Beim Anzeigen der Angebotssummen wird dann allerdings eine Kombination aus Unternehmenswährung und Verkaufswährung angezeigt.  
 
 Zusätzliche zu den Positionen eines Angebots hinzugefügte Artikel können die Anwendung von Positionsrabatten oder Sammelrabatten zur Folge haben. Sie können auch zur Aktivierung von Rechnungsrabatten führen, durch die sich Gewinnspanne und Deckungsbeitrag der Angebotspositionen sowie des gesamten Rabatts ändern.  
 

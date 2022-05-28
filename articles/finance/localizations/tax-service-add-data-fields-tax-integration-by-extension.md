@@ -9,18 +9,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 79b51812eac354072ebf2a0ef6fe8d39610c6385
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: 64c68ef6804297f86b5d9dc1933b0c16a0d42aae
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649100"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8695387"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Datenfelder in die Steuerintegration mithilfe von Erweiterungen einfügen
 
@@ -383,7 +382,7 @@ Um das Projekt erfolgreich zu erstellen, fügen Sie die folgenden Referenzmodell
 
 Nachdem Sie die vorherigen Schritte erledigt haben, können Sie Ihre Änderungen validieren.
 
-1. Gehen Sie in Finance zu **Kreditorenkonten** und fügen Sie der URL **&debug=vs%2CconfirmExit&** hinzu. Zum Beispiel: https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&. Das **&** am Ende darf auf keinen Fall fehlen.
+1. Gehen Sie in Finance zu **Kreditorenkonten** und fügen Sie der URL **&debug=vs%2CconfirmExit&** hinzu. Zum Beispiel: `https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&`. Das **&** am Ende darf auf keinen Fall fehlen.
 2. Öffnen Sie die Seite **Bestellung** und wählen Sie **Neu** aus, um eine Bestellung zu erstellen.
 3. Legen Sie den Wert für das angepasste Feld fest und wählen Sie dann **Mehrwertsteuer** aus. Eine Problembehebungsdatei mit dem Präfix **TaxServiceTroubleshootingLog** wird automatisch heruntergeladen. Diese Datei enthält die an den Steuerberechnungsdienst gesendeten Transaktionsinformationen. 
 4. Überprüfen Sie, ob das hinzugefügte angepasste Feld im Abschnitt **JSON-Eingabe für die Steuerdienstberechnung** vorhanden und ob sein Wert korrekt ist. Wenn der Wert nicht korrekt ist, gehen Sie die Schritte in diesem Dokument noch einmal durch.

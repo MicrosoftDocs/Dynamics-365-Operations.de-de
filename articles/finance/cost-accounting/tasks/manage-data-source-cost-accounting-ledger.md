@@ -1,24 +1,24 @@
 ---
 title: Eine Datenquelle für das Sachkonto der Kostenrechnung verwalten
 description: Verwenden Sie diese Prozedur, um die Hauptbuchdatenquelle für ein Kostenrechnungssachkonto zu verwalten.
-author: ShylaThompson
+author: kfend
 ms.date: 06/27/2017
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMAXGeneralLedgerEntryProviderConfiguration
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da218df53fdca98ead748ce364c03502bd1f333959ebacab25339b665bcb9c66
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cb35761fb7a5f6d044832c57a7560b0c3ab2f6fa
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771703"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8721842"
 ---
 # <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a>Eine Datenquelle für das Sachkonto der Kostenrechnung verwalten
 
@@ -34,7 +34,7 @@ Verwenden Sie diese Prozedur, um die Hauptbuchdatenquelle für ein Kostenrechnun
 6. Klicken Sie auf "Neu".
 7. Geben Sie im Feld "Name" einen Wert ein.
 8. Geben Sie im Feld Datenanbieter einen Wert ein, oder wählen Sie einen Wert aus.
-    * Wählen Sie für dieses Beispiel die Option Dynamics 365 Finance - Hauptbucheinträge aus.  
+    * Wählen Sie für dieses Beispiel „Dynamics 365 Finance – Hauptbucheinträge“ aus.  
 9. Geben Sie im Feld "Kostenelementdimensionshierarchie" einen Wert ein oder wählen Sie einen Wert aus.
     * Wählen Sie für dieses Beispiel die Option "Kostenelemente" aus.  
 10. Klicken Sie auf "Speichern".

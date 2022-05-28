@@ -2,7 +2,7 @@
 title: Produktionsausführungsoberfläche anpassen
 description: In diesem Thema wird erläutert, wie Sie aktuelle Formulare erweitern oder neue Formulare und Schaltflächen für die Ausführungsoberfläche der Produktionsumgebung erstellen.
 author: johanhoffmann
-ms.date: 11/08/2021
+ms.date: 05/04/2022
 ms.topic: article
 ms.search.form: ''
 ms.technology: ''
@@ -11,13 +11,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-11-08
-ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 67fb381cbef6f1673afcaa834666b4a859bdf4e6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.dyn365.ops.version: 10.0.25
+ms.openlocfilehash: ad5037442f27a5068b38613655591f1298808eac
+ms.sourcegitcommit: 28537b32dbcdefb1359a90adc6781b73a2fd195e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066545"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712942"
 ---
 # <a name="customize-the-production-floor-execution-interface"></a>Produktionsausführungsoberfläche anpassen
 
@@ -60,7 +60,7 @@ Wenn Sie fertig sind, wird die neue Schaltfläche (Aktivität) automatisch auf d
 1. Erstellen Sie eine Erweiterung mit dem Namen `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>_Extension`, bei der die `getMainMenuItemsList`-Methode erweitert wird, indem der neue Menüpunkt zur Liste hinzugefügt wird. Der folgende Code zeigt ein Beispiel.
 
     ```xpp
-    [ExtensionOf(classStr(JmgProductionFloorExecutionForm))]
+    [ExtensionOf(classStr(JmgProductionFloorExecutionMenuItemProvider))]
     public final class <ExtensionPrefix>_JmgProductionFloorExecutionForm<FormName>_Extension{
         static public List getMainMenuItemsList()
         {
@@ -142,6 +142,79 @@ formRun.setNumpadController(numpadController);
 numpadController.setValueToNumpad(333.56);
 formRun.run();
 ```
+
+## <a name="add-a-date-and-time-controls-to-a-form-or-dialog"></a>Formular oder Dialogfeld ein Datums- und Uhrzeitsteuerelement hinzufügen
+
+Dieser Abschnitt zeigt, wie Sie einem Formular oder Dialogfeld Datums- und Uhrzeitsteuerelemente hinzufügen. Die berührungsfreundlichen Steuerelemente für Datum und Uhrzeit ermöglichen es den Mitarbeitern, Datum und Uhrzeit festzulegen. Die folgenden Screenshots zeigen, wie die Steuerelemente normalerweise auf der Seite angezeigt werden. Die Zeitsteuerung bietet sowohl 12-Stunden- als auch 24-Stunden-Versionen; die angezeigte Version folgt den Einstellungen für das Benutzerkonto, unter dem die Schnittstelle ausgeführt wird.
+
+![Beispiel für Datumssteuerung.](media/pfe-customize-date-control.png "Beispiel für Datumssteuerung")
+
+![Beispiel für Uhrzeitsteuerung mit einer 12-Stunden-Uhr.](media/pfe-customize-time-control-12h.png "Beispiel für Uhrzeitsteuerung mit einer 12-Stunden-Uhr")
+
+![Beispiel für Uhrzeitsteuerung mit einer 24-Stunden-Uhr.](media/pfe-customize-time-control-24h.png "Beispiel für Uhrzeitsteuerung mit einer 24-Stunden-Uhr")
+
+Das folgende Verfahren zeigt ein Beispiel für das Hinzufügen von Datums- und Uhrzeitsteuerelementen zu einem Formular.
+
+1. Fügen Sie dem Formular für jedes Datums- und Uhrzeitsteuerelement, das das Formular enthalten soll, einen Controller hinzu. (Die Anzahl der Controller muss der Anzahl der Datums- und Uhrzeitsteuerelemente im Formular entsprechen.)
+
+    ```xpp
+    private JmgProductionFloorExecutionDateTimeController  dateFromController; 
+    private JmgProductionFloorExecutionDateTimeController  dateToController; 
+    private JmgProductionFloorExecutionDateTimeController  timeFromController; 
+    private JmgProductionFloorExecutionDateTimeController  timeToController;
+    ```
+
+1. Deklarieren Sie die erforderlichen Variablen (vom Typ `utcdatetime`).
+
+    ```xpp
+    private utcdatetime fromDateTime;
+    private utcdatetime toDateTime;
+    ```
+
+1. Erstellen Sie Methoden, bei denen „Datetime“ von den „Datetime“-Controllern aktualisiert wird. Das folgende Beispiel zeigt eine solche Methode.
+
+    ```xpp
+    private void setFromDateTime(utcdatetime _value)
+        {
+            fromDateTime = _value;
+        }
+    ```
+
+1. Richten Sie das Verhalten jedes „Datetime“-Controllers ein und verbinden Sie jeden Controller mit einem Formularteil. Das folgende Beispiel zeigt, wie Sie Daten für „Datum ab“- und „Uhrzeit ab“-Steuerelemente einrichten. Sie könnten ähnlichen Code für „Datum bis“- und „Uhrzeit bis“-Steuerelemente hinzufügen (nicht gezeigt).
+
+    ```xpp
+    /// <summary>
+    /// Initializes all date and time controllers, defines their behavior, and connects them with the form parts.
+    /// </summary>
+    private void initializeDateControlControllers()
+    {
+        dateFromController = new JmgProductionFloorExecutionDateTimeController();
+        dateFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        dateFromController.parmDateTimeValue(fromDateTime);
+    
+        timeFromController = new JmgProductionFloorExecutionDateTimeController();
+        timeFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        timeFromController.parmDateTimeValue(fromDateTime);
+        
+        DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, timeFromController);
+        TimeFromFormPart.getPartFormRun().setTimeControlController(timeFromController, dateFromController);
+        
+        ...
+
+    }
+    ```
+
+    Wenn Sie nur eine Datumssteuerung benötigen, können Sie die Einrichtung der Zeitsteuerung überspringen und stattdessen einfach die Datumssteuerung einrichten, wie im folgenden Beispiel gezeigt:
+
+    ```xpp
+    {
+        dateFromController = new JmgProductionFloorExecutionDateTimeController();
+        dateFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        dateFromController.parmDateTimeValue(fromDateTime);
+    
+        DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, null);
+    }
+    ```
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

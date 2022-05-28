@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 40ae7b61537cdcd1934056b9e289f342e96b57d3eebe5a6e713b2db91310ed9a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 852cfa536ed7e6985ce1f7de612b34e2a492ee07
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766974"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735081"
 ---
 # <a name="dimension-hierarchy"></a>Dimensionshierarchie
 
@@ -203,13 +203,13 @@ Wenn Sie Berichte erstellen, indem Sie Excel oder Power BI verwenden, werden nur
 Das folgende Beispiel veranschaulicht, wie eine Dimensionshierarchie in der Berichtsstruktur aussehen kann.
 
 | Kostenobjekt-Dimensionshierarchie – Ebene 1 | Kostenobjekt-Dimensionshierarchie – Ebene 2 | Kostenobjekt-Dimensionshierarchie – Ebene 3 | Kostenobjekt-Dimensionshierarchie – Ebene 4 | Kostenobjekt-Dimensionshierarchie – Ebene 15 |
-|-------------------------------------------|-------------------------------------------|-------------------------------------------|-------------------------------------------|--------------------------------------------|
-| Organisation                              | Verwaltung                                     | Finanzen                                   | CC002                                     |                                            |
-| Organisation                              | Verwaltung                                     | Finanzen                                   | CC003                                     |                                            |
-| Organisation                              | Verwaltung                                     | Finanzen                                   | CC007                                     |                                            |
-| Organisation                              | Verwaltung                                     | Personalverwaltung                                        | CC001                                     |                                            |
-| Organisation                              | Produktion                                | Verpackung                                 | CC005                                     |                                            |
-| Organisation                              | Produktion                                | Montage                                  | CC006                                     |                                            |
+|----------------------------------|---------------------------------|-------------------------|-------------------------|----------------------------------------|
+| Organisation              | Verwaltung                 | Finanzen                    | CC002              |                                            |
+| Organisation              | Verwaltung                 | Finanzen                    | CC003              |                                            |
+| Organisation              | Verwaltung               | Finanzen                     | CC007               |                                            |
+| Organisation              | Verwaltung                | Personalverwaltung                           | CC001              |                                            |
+| Organisation              | Produktion           | Verpackung                    | CC005             |                                            |
+| Organisation              | Produktion          | Montage                      | CC006            |                                            |
 
 ### <a name="update-the-dimension-hierarchies-that-are-used-for-reporting"></a>Aktualisieren der Dimensionshierarchien, die für die Berichterstellung verwendet werden 
 
@@ -328,7 +328,7 @@ Die Einstellungen für die Zugriffslistenhierarchie werden verwendet, um die Dat
 - Power BI:
 
     - Daten, die in Power BI-Visualisierungen angezeigt werden
-    - Power BI-Datenvisualisierungen, die im Client der Dynamics 365 Finance eingebettet werden
+    - Power BI-Datenvisualisierungen, die im Client von Dynamics 365 Finance eingebettet werden
 
 > [!NOTE] 
 > - Bevor sich die Zugriffslistenhierarchie auf Daten in Power BI auswirken kann, müssen die Zugriffslistenhierarchie und Sicherheit auf Zeilenebene in Power BI zugeordnet werden. Weitere Informationen finden Sie unter [Sicherheit für das Kostenrechnungs-Inhaltspack einrichten](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).

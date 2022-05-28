@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-05-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4519e90e19d0652f855999d1a73ca64777b53b53465d6065987afc1cf2494187
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dc7e89fabe1651c858097a6c564b4910a524331f
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731936"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8692750"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-20-2021"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources 20. Mai 2021
 
@@ -42,7 +41,7 @@ Die folgenden Funktionen sind in dieser Version allgemein verfügbar.
 
 | Funktion | Freigabeplan | Dokumentation |
 | --- | --- | --- |
-| Plattformupdate 10.0.18 (42) | -- | [Plattform-Updates für Version 10.0.18 von Finance and Operations Apps (Mai 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18) |
+| Plattformupdate 10.0.18 (42) | -- | [Plattform-Updates für die Version 10.0.18 der Finanz- und Betriebs-Apps (Mai 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18) |
 | Personal-App für Microsoft Teams unterstützt jetzt Halbtagesdefinitionen und getielte Tages-Funktionen | -- | [Urlaubsanträge in Teams verwalten](/dynamics365/human-resources/hr-teams-leave-app#create-a-new-request) |
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen

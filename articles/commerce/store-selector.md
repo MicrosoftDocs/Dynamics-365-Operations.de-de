@@ -3,7 +3,7 @@ title: Shopauswahlmodul
 description: Dieses Thema enthält das Siteauswahlmodul und es wird beschrieben, wie Websiteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/08/2021
+ms.date: 05/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0ee9d3cec9c524f73472929052d46d87f8270ba67568314eceb462b1803cf149
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7276f25daada8286490ad7e1af2b350e4a2805bb
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772155"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710779"
 ---
 # <a name="store-selector-module"></a>Shopauswahlmodul
 
@@ -59,6 +59,16 @@ Um den Längen- und Breitengrad für den Geschäftsstandort in der Commerce-Zent
     ![Beispiel für die Einrichtung von Längen- und Breitengraden für ein Geschäft in der Zentralverwaltung.](./media/Store-latitude-longitude.png)
 
 1. Wählen Sie im Aktionsbereich **Speichern** aus. 
+
+### <a name="hide-a-store-from-the-store-selector-module"></a>Geschäft aus dem Geschäftsauswahlmodul ausblenden
+
+Einige Geschäfte in einer Auftragserfüllungsgruppe sind möglicherweise keine gültigen Abholorte. Um sicherzustellen, dass nur gültige Abholorte als Optionen im Geschäftsauswahlmodul angezeigt werden, befolgen Sie diese Schritte in Commerce headquarters.
+
+1. Gehen Sie zu **Retail und Commerce \> Commerce-Einrichtung \> Auftragserfüllungsgruppen \> Alle Geschäfte**.
+1. Wählen Sie im Aktionsbereich **Bearbeiten** aus.
+1. Löschen Sie unter **Einrichtung** für jedes Geschäft, das kein gültiger Abholort ist, das Kontrollkästchen **Ist ein Abholort**.
+1. Wählen Sie im Aktionsbereich **Speichern** aus.
+1. Führen Sie den Verteilungsplan-Einzelvorgang 1070 **Kanalkonfiguration** aus.
 
 ## <a name="bing-maps-integration"></a>Bing Maps-Integration
 

@@ -2,25 +2,25 @@
 title: Das anfängliche Vorhersagemodell für Kundenzahlung bewerten
 description: In diesem Thema werden die Schritte beschrieben, die Sie ausführen können, um das Kundenvorhersagemodell zu verstehen und seine Wirksamkeit zu bewerten.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 05/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 874c6e938681537a0420eece6835a4c2124e11fc
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: c0951c8dcf6205ebbb15baf86b1272af4e95547f
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7969111"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8677953"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model"></a>Das anfängliche Vorhersagemodell für Kundenzahlung bewerten
 
@@ -93,6 +93,6 @@ Nachdem Sie die Ergebnisse Ihres ersten Modells besser verstanden haben, möchte
 
 ## <a name="for-more-information"></a>Weitere Informationen
 
-Weitere Informationen dazu, wie Sie Vorhersagemodelle bewerten, finden Sie unter [Ergebnisse von Machine Learning-Modellen](/confusion-matrix.md)
+Weitere Informationen dazu, wie Sie Vorhersagemodelle bewerten, finden Sie unter [Ergebnisse von Machine Learning-Modellen](confusion-matrix.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

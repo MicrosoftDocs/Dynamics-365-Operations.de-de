@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14f76e06f7265a4dc1837a66171d3db13bc2e580
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: c36ace4fe61d4f3add7750c66594c0f1060f8127
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982508"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694367"
 ---
 # <a name="sales-agreements-overview"></a>Übersicht über die Verkaufsvereinbarungen
 
@@ -36,7 +36,8 @@ Die Gültigkeitsperiode der Kaufvertragsposition wird durch die Felder **Gültig
 
 Sie können einen Auftrag direkt von einem Kaufvertrag erstellen, indem Sie die Aktivität **Freigabeauftrag** verwenden. Alternativ können Sie einen gültigen Kaufvertrag auswählen, wenn Sie Aufträge entgegennehmen (mehr unter "Kaufverträge im Bestellungsprozess übernehmen" in diesem Artikel).  
 
-> [Hinweis!] In früheren Versionen wurden Kaufverträge als Rahmenaufträge bezeichnet.
+> [!NOTE] 
+> In früheren Versionen wurden Kaufverträge als Rahmenaufträge bezeichnet.
 
 ## <a name="commitment-types"></a>Zusagetypen
 Jede Position in einem Kaufvertrag drückt eine Zusage für den Verkauf eines Artikels aus. Im Allgemeinen gibt es zwei Kategorien von Zusagen:

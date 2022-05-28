@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMDimension, CAMDimensionMember, CAMDimensionMapping
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 223234
 ms.assetid: 4c66a231-aed2-48b5-9727-b3eb4fe6e6aa
 ms.search.region: global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b9ac59f305afd55edfcfb3b47bf38ddd44d92a706904f55a069a6a9fc9050825
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7654f748fb0cfc70d76718f03a235c5d4d13a908
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728030"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735463"
 ---
 # <a name="map-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Kostenelement-Dimensionselemente einem allgemeinen Satz von Dimensionselementen zuordnen
 
@@ -33,12 +33,12 @@ Wenn Sie ein Weltkonzern sind und den gesetzlichen Buchhaltungsanforderungen ent
 ## <a name="map-cost-element-dimension-members-to-a-common-format"></a>Kostenelement-Dimensionsmitglieder einem gemeinsamen Format zuordnen
 Das folgende Beispiel veranschaulicht, wie Sie als Kostencontroller eine neue Kostenelementdimension in „Kostenrechnung” erstellen können, die Kostenelement-Dimensionsmitglieder aus der US-Kontenplanstruktur und der französischen Kontenplanstruktur einem gemeinsamen Satz von Kostenelement-Dimensionsmitgliedern zuweist. Sie können dann den gemeinsamen Satz von Kostenelement-Dimensionsmitgliedern verwenden, um Kostendaten aus zwei juristischen Personen in einem Kostenrechnungs-Sachkonto zu analysieren.
 
-| Quelle: US-Kontenplan                                          | Quelle: Französischer Kontenplan                                          | Neuer gemeinsamer Satz von Kostenelement-Dimensionsmitgliedern                        |
-|-----------------------------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| Quelle: US-Kontenplan          | Quelle: Französischer Kontenplan           | Neuer gemeinsamer Satz von Kostenelement-Dimensionsmitgliedern                        |
+|------------------------------------|----------------------------------------------|-------------------------------------------------------------------------|
 | Importierte Kostenelement-Dimensionsmitglieder vom US-Kontenplan | Importierte Kostenelement-Dimensionsmitglieder aus dem französischen Kontenplan | Zuordnung von US-amerikanischen und französischen Kostenelement-Dimensionsmitgliedern zu einem gemeinsamen Satz |
-| 5001: Vertrieb                                                           | 5001: Vertrieb und Werbung                                               | 5000: Vertrieb und Werbung                                             |
-| 5030: Werbung                                                     | 6390: Bestandseinkauf\*                                                    | 7000: Reinigungsausgaben                                                 |
-| 7001: Reinigungsausgaben                                               | 7001: Reisekosten                                                      | 7001: Reisekosten                                                   |
+| 5001: Vertrieb                   | 5001: Vertrieb und Werbung                      | 5000: Vertrieb und Werbung                               |
+| 5030: Werbung             | 6390: Bestandseinkauf\*                          | 7000: Reinigungsausgaben                                   |
+| 7001: Reinigungsausgaben              | 7001: Reisekosten                     | 7001: Reisekosten                                                   |
 
 \*Das französische Kostenelement-Dimensionsmitglied des Bestandskaufs ist nicht zugeordnet.
 

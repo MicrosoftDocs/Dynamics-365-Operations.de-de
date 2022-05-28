@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7ce30b64bc7c3889347bec94186614bd6cc337f4
-ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
+ms.openlocfilehash: 79747d0c5c4265315d1757352dfecef09c469dd8
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8625360"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710862"
 ---
 # <a name="provision-human-resources"></a>Human Resources bereitstellen
 
@@ -144,7 +143,7 @@ Verwenden Sie die folgende Anleitung, wenn Sie bestimmen, in welche Power Apps-U
 6. Funktionen für duales Schreiben zur Integration von Daten der Personalverwaltung in der Power Apps-Umgebung können nur verwendet werden, wenn die Option **Dynamics 365-Apps** für die Umgebung ausgewählt ist. Weitere Informationen zum dualen Schreiben finden Sie auf der [Startseite für duales Schreiben](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md).
 
     > [!NOTE]
-    > Die Option **Dynamics 365-Apps aktivieren** muss beim Erstellen der Power Apps-Umgebung ausgewählt werden. Wenn die Option zum Zeitpunkt der Bereitstellung nicht ausgewählt ist, können Sie das duale Schreiben nicht verwenden, um Daten zwischen Dynamics 365 Human Resources und der Power Apps-Umgebung zu integrieren, oder keine Dynamics 365-Apps wie Dynamics 365 Sales und Field Service in der Umgebung installieren. Diese Option kann nicht rückgängig gemacht werden. Weitere Informationen finden Sie unter [Einige wichtige Überlegungen beim Erstellen einer neuen Umgebung](//power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) auf der Power Platform-Dokumentationsseite.
+    > Die Option **Dynamics 365-Apps aktivieren** muss beim Erstellen der Power Apps-Umgebung ausgewählt werden. Wenn die Option zum Zeitpunkt der Bereitstellung nicht ausgewählt ist, können Sie das duale Schreiben nicht verwenden, um Daten zwischen Dynamics 365 Human Resources und der Power Apps-Umgebung zu integrieren, oder keine Dynamics 365-Apps wie Dynamics 365 Sales und Field Service in der Umgebung installieren. Diese Option kann nicht rückgängig gemacht werden. Weitere Informationen finden Sie unter [Einige wichtige Überlegungen beim Erstellen einer neuen Umgebung](/power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) auf der Power Platform-Dokumentationsseite.
 
 7. Nachdem Sie die korrekte Umgebung bestimmt haben, die verwendet werden soll, können Sie mit dem Bereitstellungsprozess fortfahren. 
 

@@ -2,7 +2,7 @@
 title: Eine Dynamics 365 Commerce-Evaluierungsumgebung konfigurieren
 description: In diesem Thema wird erläutert, wie eine Microsoft Dynamics 365 Commerce-Auswertungsumgebung nach ihrer Bereitstellung konfiguriert wird.
 author: psimolin
-ms.date: 12/10/2021
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5883a6e68628d706fa19d7d23b68f17007c32890
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: d9738700ca495d54c91ad91aa9c5a3d32c95a5a5
+ms.sourcegitcommit: 4a973ac0e7af0176270a8070a96a52293567dfbf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913726"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8747636"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Eine Dynamics 365 Commerce-Evaluierungsumgebung konfigurieren
 
@@ -39,7 +39,9 @@ Nachdem Ihre Commerce-Auswertungsumgebung vollständig bereitgestellt wurde, mü
 1. Wählen Sie Ihre Umgebung in der Liste aus.
 1. Wählen Sie in den Umgebungsinformationen rechts die Option **Bei Umgebung anmelden** aus. Sie werden zur Zentralverwaltung von Commerce übermittelt.
 1. Stellen Sie sicher, dass die juristische Person **USRT** oben rechts ausgewählt ist.
-2. Wechseln Sie zu **Commerce-Parameters > Konfigurationsparameter** und vergewissern Sie sich, dass eine Eintrag für **ProductSearch.UseAzureSearch** auf **true** festgelegt ist. Wenn dieser Eintrag fehlt, können Sie diesen Eintrag hinzufügen und **Kanaldatenbank > Vollständige Synchronisierung** für die Commerce Scale Unit ausführen, die Ihrer eCommerce-Website zugeordnet ist.
+1. Wechseln Sie zu **Handelsparameter \> Konfigurationsparameter** und vergewissern Sie sich, dass ein Eintrag für **ProductSearch.UseAzureSearch** vorhanden ist und der Wert auf **true** festgelegt ist. Wenn dieser Eintrag fehlt, können Sie ihn hinzufügen, den Wert auf **true** festlegen und dann **Kanaldatenbank \> Vollständige Datensynchronisierung** für die Commerce Scale Unit auswählen, die Ihrer eCommerce-Website zugeordnet ist.
+1. Gehen Sie zu **Einzelhandel und Handel \> Zentralverwaltungseinrichtung \> Handelsplanung \> Commerce-Steuerprogramm initialisieren**. Legen Sie im Flyoutmenü **Commerce-Steuerprogramm initialisieren** die Option **Vorhandene Konfiguration löschen** auf **Ja** fest, und wählen Sie dann **OK** aus.
+1. Um Kanäle zur Commerce Scale Unit hinzuzufügen, gehen Sie zu **Einzelhandel und Handel \> Zentralverwaltungseinrichtung \> Handelsplanung \> Kanaldatenbank**, und wählen Sie dann im linken Bereich die Commerce Scale Unit aus. Fügen Sie auf dem Inforegister **Retail Channel** die Kanäle **AW-Onlineshop**, **AW Business-Onlineshop** und **Erweiterter Onlineshop von Fabrikam** hinzu. Optional können Sie auch Einzelhandelsgeschäfte hinzufügen, wenn Sie POS verwenden (z. B. **Seattle**, **San Francisco** und **San Jose**).
 
 Stellen Sie bei Aktivitäten nach der Bereitstellung in der Commerce-Zentralverwaltung sicher, dass die juristische Person **USRT** immer ausgewählt ist.
 
@@ -84,7 +86,8 @@ Gehen Sie folgendermaßen vor, um Ihre Auswertungswebsite in Commerce einzuricht
 1. Wählen Sie als Standardkanal **Erweiterter Fabrikam Online-Store** aus. (Stellen Sie sicher, dass Sie **erweiterter** Online-Store auswählen.)
 1. Wählen Sie als Standardsprache **de-de** aus.
 1. Lassen Sie das Feld **Pfad** unverändert.
-1. Wählen Sie **OK**. Die Liste der Seiten auf der Site wird angezeigt.
+1. Wählen Sie **OK** aus. Die Liste der Seiten auf der Site wird angezeigt.
+1. Wiederholen Sie die Schritte 2-7 für die **AdventureWorks**-Site (die dem **AW-Onlineshop**-Kanal zugeordnet ist) und die **AdventureWorks Business**-Site (die dem **AW Business-Onlineshop**-Kanal zugeordnet ist). Wenn das **Pfad**-Feld für die Fabrikam-Site leer ist, müssen Sie Pfade für die beiden AdventureWorks-Sites (z. B. „aw“ und „awbusiness“) hinzufügen.
 
 ## <a name="enable-jobs"></a>Aufträge aktivieren
 
@@ -149,6 +152,28 @@ Informationen zum Konfigurieren optionaler Funktionen für Ihre Commerce-Auswert
 
 > [!NOTE]
 > Commerce-Evaluierungsumgebungen werden mit einem vorinstallierten Azure Active Directory (Azure AD) business-to-consumer (B2C) Mandant zu Demonstrationszwecken geliefert. Die Konfiguration eines eigenen Azure AD B2C-Mandanten ist für Evaluierungsumgebungen nicht erforderlich. Wenn Sie jedoch die Evaluierungsumgebung so konfigurieren, dass Sie Ihren eigenen Azure AD B2C-Mandanten verwenden, stellen Sie bitte sicher, dass Sie ``https://login.commerce.dynamics.com/_msdyn365/authresp`` als Antwort-URL in der Azure AD B2C-Anwendung über das Azure-Portal hinzufügen.
+
+## <a name="troubleshooting"></a>Problembehandlung
+
+### <a name="site-builder-channel-list-is-empty-when-configuring-site"></a>Die Site-Builder-Kanalliste ist beim Konfigurieren der Site leer
+
+Wenn der Site Builder keine Onlineshop-Kanäle anzeigt, stellen Sie in der Zentralverwaltung sicher, dass die Kanäle der Commerce Scale Unit hinzugefügt wurden, wie im Abschnitt [Bevor Sie beginnen](#before-you-start) oben beschrieben. Führen Sie außerdem **Commerce-Steuerprogramm initialisieren** mit dem Wert **Vorhandene Konfiguration löschen** auf **Ja** festgelegt aus.  Sobald diese Schritte abgeschlossen sind, führen Sie auf der Seite **Kanaldatenbank** (**Einzelhandel und Handel \> Zentralverwaltungseinrichtung \> Handelsplanung \> Kanaldatenbank**) den Einzelvorgang **9999** in der Commerce Scale Unit aus.
+
+### <a name="color-swatches-are-not-rendering-on-the-category-page-but-are-rendering-on-the-product-details-page-pdp-page"></a>Farbmuster werden nicht auf der Kategorieseite gerendert, sondern auf der Seite mit den Produktdetails (PDP)
+
+Befolgen Sie diese Schritte, um sicherzustellen, dass die Farb- und Größenmuster so eingestellt sind, dass sie verfeinert werden können.
+
+1. Gehen Sie in der Zentralverwaltung zu **Einzelhandel und Handel \> Kanaleinstellungen \> Kanalkategorien und Produktattribute**.
+1. Wählen Sie im linken Bereich den Onlineshop-Kanal aus, und wählen Sie dann **Attributmetadaten festlegen** aus.
+1. Legen Sie die Option **Attribut für Kanal anzeigen** auf **Ja** fest, setzen Sie die Option **Kann verfeinert werden** auf **Ja**, und wählen Sie dann **Speichern** aus. 
+1. Kehren Sie zur Kanalseite des Onlineshops zurück und wählen Sie dann **Kanalupdates veröffentlichen** aus.
+1. Gehen Sie zu **Einzelhandel und Handel \> Zentralverwaltungseinrichtung \> Handelsplanung \> Kanaldatenbank**, und führen Sie den Einzelvorgang **9999** in der Commerce Scale Unit aus.
+
+### <a name="business-features-dont-appear-to-be-turned-on-for-the-adventureworks-business-site"></a>Funktionen für Unternehmen scheinen für die AdventureWorks Business-Site nicht aktiviert zu sein
+
+Stellen Sie in der Zentralverwaltung sicher, dass der Onlineshop-Kanal so konfiguriert ist, dass **Kundentyp** auf **B2B** festgelegt ist. Wenn **Kundentyp** auf **B2C** festgelegt ist, muss ein neuer Kanal erstellt werden, da der vorhandene Kanal nicht bearbeitet werden kann. 
+
+Demodaten, die in Commerce-Version 10.0.26 und früher ausgeliefert wurden, hatten einen Fehler, bei dem der **AW Business-Onlineshop**-Kanal falsch konfiguriert war. Die Problemumgehung besteht darin, einen neuen Kanal mit denselben Einstellungen und Konfigurationen zu erstellen, mit Ausnahme von **Kundentyp**, der auf **B2B** eingestellt werden sollte.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

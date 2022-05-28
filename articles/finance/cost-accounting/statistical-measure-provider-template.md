@@ -1,6 +1,6 @@
 ---
 title: Anbietervorlagen für statistische Dimensionsmitglieder und Messanbieter
-description: Dieses Thema enthält Informationen über statische Dimensionselemente und statistische Maßnahmenanbieter-Vorlagen Statistische Dimensionswerte können als Verrechnungsgrundlage in den Richtlinien wie Kostenaufteilung und Prozentsatz verwendet werden. Sie können auch verwendet werden, um nicht-monetären Verbrauch durch Kosten zu melden.
+description: Dieses Thema enthält Informationen über statische Dimensionselemente und statistische Maßnahmenanbieter-Vorlagen
 author: AndersGirke
 ms.date: 06/16/2017
 ms.topic: article
@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate, CAMAXStatisticalMeasureProviderConfiguration, CAMStatisticalDimensionMember, CAMDataConnectorStatisticalMeasure, CAMImportedStatisticalMeasure, CAMImportedStatisticalMeasureProviderConfiguration
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c79451a5145a6e419ae0e332c67f06ca2df65996f959333a508dbf62dbf435ff
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5daac80fdc62fb996be82aa4c8bb7bb3c8dc03e9
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767646"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8733905"
 ---
 # <a name="provider-templates-for-statistical-dimension-members-and-measure-providers"></a>Anbietervorlagen für statistische Dimensionsmitglieder und Messanbieter
 
@@ -128,13 +128,13 @@ Bevor Sie statistische Kennzahlen in der Kostenrechnung verwenden können, müss
 > [!NOTE]
 > In diesem Beispiel wird eine Beziehung nur für die **Tatsächliche Version** erstellt.
 
-Gehen Sie zu **Kostenrechnungssachkonto** \> **Tatsächliche Version** \> **Verwalten** \> **Statistische Kennzahlen**, um die Beziehung einzurichten. Für dieses Szenario wählen Sie **Dynamics 365 Finance – statistische Kennzahlen** aus Datenkonnektor, da diese Daten aus Finance extrahiert werden sollen.
+Gehen Sie zu **Kostenrechnungssachkonto** \> **Tatsächliche Version** \> **Verwalten** \> **Statistische Kennzahlen**, um die Beziehung einzurichten. Für dieses Szenario wählen Sie den Datenkonnektor **Dynamics 365 Finance – statistische Kennzahlen** aus, da diese Daten aus Finance extrahiert werden sollen.
 
 **Datenquelle**
 
 | Name        | Datenkonnektor                                                                     | Statistisches Dimensionselement |
 |-------------|------------------------------------------------------------------------------------|------------------------------|
-| FTEs D365FO | Dynamics 365 Finance – Statistische Kennzahlen | FTEs                         |
+| FTEs D365FO | Dynamics 365 Finance – statistische Kennzahlen | FTEs                         |
 
 **Daten-Konfigurationsanbieter**
 
@@ -216,13 +216,13 @@ Bevor Sie statistische Kennzahlen in der Kostenrechnung verwenden können, müss
 > [!NOTE]
 > In diesem Beispiel wird eine Beziehung nur für die **Tatsächliche Version** erstellt.
 
-Gehen Sie zu **Kostenrechnungssachkonto** \> **Tatsächliche Version** \> **Verwalten** \> **Statistische Kennzahlen**, um die Beziehung einzurichten. Für dieses Szenario wählen Sie **Dynamics 365 Finance – statistische Kennzahlen** aus Datenkonnektor, da diese Daten aus Finance extrahiert werden sollen.
+Gehen Sie zu **Kostenrechnungssachkonto** \> **Tatsächliche Version** \> **Verwalten** \> **Statistische Kennzahlen**, um die Beziehung einzurichten. Für dieses Szenario wählen Sie den Datenkonnektor **Dynamics 365 Finance – statistische Kennzahlen** aus, da diese Daten aus Finance extrahiert werden sollen.
 
 **Datenquelle**
 
 | Name           | Datenkonnektor                                                                     | Statistisches Dimensionselement |
 |----------------|------------------------------------------------------------------------------------|------------------------------|
-| Pack CC D365FO | Dynamics 365 Finance – Statistische Kennzahlen | CC Pack                      |
+| Pack CC D365FO | Dynamics 365 Finance – statistische Kennzahlen | CC Pack                      |
 
 Das System erkennt, dass ProdRouteTrans eine Tabelle ist, bei der jeder Datensatz zu einer juristischen Person einem separaten Datensatz gehört. Aus diesem Grund werden Sie gefragt, die juristische Person auszuwählen, für die die Buchungen importiert werden soll.
 

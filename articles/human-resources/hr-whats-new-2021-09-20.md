@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-09-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3f4fc4768f8c96678b216709f78af6d3ddfd4132
-ms.sourcegitcommit: ba8ca42e43e1a5251cbbd6ddb292566164d735dd
+ms.openlocfilehash: a3fd8705c7735cb3c0945f71651fafa767a7addf
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2021
-ms.locfileid: "7556932"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8691581"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-20-2021"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources 20. September 2021
 
@@ -84,8 +83,8 @@ Eine vollständige Liste der geplanten Funktionen und ihrer geplanten Versionen 
 
 | Funktion | Informationen |
 |---|---|
-| Plattformupdate 10.0.21 (45) | Der Roll-out des Plattform-Updates 10.0.21 wird voraussichtlich mit dem Service-Release am 4. Oktober 2021 beginnen. Weitere Informationen finden Sie unter [Plattform-Updates für Version 10.0.21 von Finance and Operations-Apps (Oktober 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21). |
-|Ansicht für erweiterte Berichte für Leistungserfassungen | Diese Funktion wird beim nächsten Rollout standardmäßig aktiviert. |
+| Plattformupdate 10.0.21 (45) | Der Roll-out des Plattform-Updates 10.0.21 wird voraussichtlich mit dem Service-Release am 4. Oktober 2021 beginnen. Weitere Informationen finden Sie unter [Plattform-Updates für die Version 10.0.21 der Finanz- und Betriebs-Apps (Oktober 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21). |
+|Ansicht für erweiterte Berichtende für Leistungserfassungen | Diese Funktion wird beim nächsten Rollout standardmäßig aktiviert. |
 
 
 ## <a name="see-also"></a>Siehe auch

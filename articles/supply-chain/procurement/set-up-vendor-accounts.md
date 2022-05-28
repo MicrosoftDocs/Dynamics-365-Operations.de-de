@@ -1,7 +1,7 @@
 ---
 title: Einrichten von Kreditorenkonten
 description: In diesem Thema werden die Typen von Informationen beschrieben, die Sie angeben müssen, wenn Sie ein neues Kreditorenkonto erstellen.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 191053
 ms.assetid: 06168199-7c54-40e9-a038-4eb274ca958d
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9cbfd3a3c1afd794814bbbae07e1dc31eb9f181
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5d524ff99cba733fdd607d9708abba440248d6cc
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565470"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8676973"
 ---
 # <a name="set-up-vendor-accounts"></a>Einrichten von Kreditorenkonten
 
@@ -63,7 +63,7 @@ Sie können Kreditorenkontakte von Grund auf neu erstellen. Alternativ können S
 
 Sie können keinen Kontaktpersondatensatz löschen, wenn der Kontakt auf ein Dokument verweist. Stattdessen können Sie den Kontakt deaktivieren.  
 
-Sie können Lieferantenkontakte Ihren persönlichen Kontakten in Microsoft 365 hinzufügen. Allerdings müssen Sie zuerst die Synchronisierung zwischen Supply Chain Management und Microsoft 365 sowohl in der Microsoft Exchange Server-Synchronisierung als auch im Microsoft Outlook-Setup-Assistenten einrichten.
+Sie können Kreditorenkontakte Ihren persönlichen Kontakten in Microsoft 365 hinzufügen. Allerdings müssen Sie zuerst die Synchronisierung zwischen Supply Chain Management und Microsoft 365 sowohl in der Microsoft Exchange Server-Synchronisierung als auch im Microsoft Outlook-Setup-Assistenten einrichten.
 
 ## <a name="vendors-in-different-legal-entities"></a>Kreditoren in verschiedenen juristischen Personen
 Wenn ein Kreditor für eine juristische Person in der Organisation erfasst ist und andere juristische Personen den gleichen Kreditor erfassen müssen, können Sie die Seite **Kreditor zu anderer juristischer Person hinzufügen** verwenden, um den Kreditor zu so konfigurieren, dass er Geschäfte mit einer anderen juristischen Person tätigen kann. Wählen Sie für den Kreditor in der ausgewählten juristischen Person eine Kreditorengruppe, eine Währung und einen Sperrstatus aus.  

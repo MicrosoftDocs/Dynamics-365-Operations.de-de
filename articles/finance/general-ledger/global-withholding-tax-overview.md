@@ -1,14 +1,14 @@
 ---
 title: Globale Quellensteuer
 description: Dieses Thema enthält Informationen zur globalen Quellensteuerfunktionalität und zu deren Einrichtung. Die globale Quellensteuerfunktionalität wurde für Kreditoren- und Debitorenbuchungen erweitert, sodass die Quellensteuer auf Artikelebene berechnet wird.
-author: roschlom
+author: kailiang
 ms.date: 01/12/2021
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerParameters
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "15721"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: 7a3bb3c8766c7dd591f66a663d8be17769bb7d53
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9cb02ba77fa33c839bc2a74811131973d1e5877f
+ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986175"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8720222"
 ---
 # <a name="global-withholding-tax"></a>Globale Quellensteuer
 

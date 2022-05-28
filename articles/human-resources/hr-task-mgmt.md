@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-29-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 727e1eb75f807d84f088cf3dd139eb094aa76618
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: ae453bd57217f272038decc7e40ed373f618ae03
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087216"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710220"
 ---
 # <a name="task-management"></a>Aufgabenverwaltung
 
@@ -57,18 +56,14 @@ Die **Offboarding**-Registerkarte enthält eine Liste der Mitarbeiter, die das U
 Die **Übergänge**-Registerkarte enthält eine **Alle Aufgaben**-Liste, die alle Aufgaben für alle Mitarbeiter anzeigt, die die Position wechseln werden oder kürzlich die Position gewechselt haben. Es gibt auch eine Liste der überfälligen Aufgaben und eine Liste der Aufgaben, die dem aktuellen Benutzer zugewiesen sind.
 
 Auf allen drei Registerkarten können Personalassistenten und -Manager die folgenden Aktivitäten ausführen:
-
-- Wenden Sie eine Checkliste auf einen Mitarbeiter an.
-- Aktualisieren des Status einer Aufgabe.
-- Eine Aufgabe neu zuweisen.
-- Aktualisieren Sie das Fälligkeitsdatum einer Aufgabe.
+- Eine Checkliste auf einen Mitarbeiter anwenden
+- Den Status einer Aufgabe aktualisieren
+- Eine Aufgabe neu zuweisen
+- Das Fälligkeitsdatum einer Aufgabe aktualisieren
 
 > [!NOTE]
 > Standardmäßig zeigt die Registerkarte **Onboarding** Mitarbeiter an, die in den letzten sieben Tagen eingestellt wurden. Um diese Einstellung zu ändern, legen Sie auf der Seite **Personalverwaltungsparameter** auf der Registerkarte **Allgemein** einen Zeitrahmen für **Aktuellste Einstellungen** fest. Die Informationen im Abschnitt **Aktuellste Einstellungen** können als Tage, Monate oder Jahre angezeigt werden. Um zum Beispiel die Liste der Mitarbeiter anzuzeigen, die in den letzten 14 Tagen eingestellt wurden, stellen Sie das Feld **Zeitraum** auf **14** und **Einheit** auf **Tage** ein.
->
-> Auf der **Personalparameter**-Seite können Sie auch den Datumsbereich für die Listen der ausscheidenden und ausgeschiedenen Mitarbeiter aktualisieren, die auf der Registerkarte **Offboarding** angezeigt werden.
->
-> Diese Einstellungen gelten auch für den Arbeitsbereich **Personalverwaltung**.
+> Auf der **Personalverwaltungsparameter**-Seite können Sie auch den Datumsbereich für die Listen der ausscheidenden und ausgeschiedenen Mitarbeiter aktualisieren, die auf der Registerkarte **Offboarding** angezeigt werden. Diese Einstellungen gelten auch für den Arbeitsbereich **Personalverwaltung**.
 
 ## <a name="setting-up-tasks"></a>Einrichten von Aufgaben
 
@@ -188,6 +183,13 @@ Sie können eine Checkliste auch auf einen Mitarbeiter anwenden, indem Sie desse
 ## <a name="completing-tasks"></a>Aufgaben abschließen
 
 Auf der Seite **Mitarbeiter-Self-Service** kann ein Mitarbeiter alle ihm zugewiesenen Aufgaben anzeigen. Für jede zugewiesene Aufgabe werden die Werte **Aufgabe**, **Beschreibung**, **Anweisungen** und **Kontaktperson** angezeigt. Darüber hinaus kann der Mitarbeiter für jede Aufgabe die zugehörige externe Webseite oder die zugehörige Seite in der Dynamics 365-App öffnen.
+
+Aufgaben können auch auf dem Standard-Dashboard angezeigt werden. So zeigen Sie Aufgaben im Standard-Dashboard an:
+1. Gehen Sie zu **Benutzeroptionen – Voreinstellungen – Aufgabenverwaltung** 
+2. Legen Sie **Aufgaben im Standard-Dashboard anzeigen** auf **Ein** fest.  
+
+>[!Note] 
+>Die **Aufgabenverwaltung**-Funktion muss in **Funktionsverwaltung** aktiviert sein, damit die Option in **Benutzeroptionen** angezeigt wird.
 
 Aufgaben können als **In Bearbeitung**, **Abgebrochen** oder **Abgeschlossen** markiert werden. Wenn einer Gruppe eine Aufgabe zugewiesen ist, wird die Aufgabe als **Abgeschlossen** gekennzeichnet, wenn eine Person in der Gruppe sie vervollständigt.
 
