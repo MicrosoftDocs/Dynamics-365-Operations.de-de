@@ -10,8 +10,10 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: Neuerungen oder Änderungen in Finance
               items:
-                - name: Neuerungen oder Änderungen der Startseite von Finance
+                - name: Neuerungen oder Änderungen auf der Startseite von Finance
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.28 (August)
+                  href: get-started/whats-new-changed-10-0-28.md
                 - name: Finance 10.0.27 (Juli)
                   href: get-started/whats-new-changed-10-0-27.md
                 - name: "Finance\_10.0.26 (Mai)"
@@ -254,11 +256,13 @@
               href: accounts-payable/automate-vendor-payment-proposal.md
             - name: Eingang von Kreditorenrechnungen erfassen und mit der Menge abgleichen
               href: accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md
-            - name: Überblick über die positive Zahlung
+            - name: Überblick über positive Zahlungen
               href: accounts-payable/positive-pay-overview.md
-            - name: Einrichten und Generieren von Dateien für positive Zahlungen
+            - name: Dateien für positive Zahlungen einrichten und generieren
               href: accounts-payable/set-up-generate-positive-pay-files.md
-            - name: Standardgegenkonten für Kreditorenrechnungserfassungen und Rechnungsgenehmigungserfassungen
+            - name: Dateien für positive Zahlungen mithilfe der elektronischen Berichterstellung einrichten und generieren
+              href: accounts-payable/set-up-positive-pay-ER.md
+            - name: Standardgegenkonten für Kreditorenrechnungserfassungen und Erfassungen zur Rechnungsgenehmigung
               href: accounts-payable/default-offset-accounts-vendor-invoice-journals.md
             - name: Kreditorenworkflow
               href: accounts-payable/vendor-workflow.md
@@ -266,13 +270,15 @@
               items:
                 - name: Übersicht über die Korrektur von Abweichungen beim Abgleich von Rechnungssummen
                   href: accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
-                - name: Ausnahmen untersuchen oder lösen
+                - name: Ausnahmen untersuchen oder beseitigen
                   href: accounts-payable/tasks/research-resolve-exceptions.md
+            - name: Kreditorenkontobuchung
+              href: general-ledger/accts-payble-posting.md
             - name: Kreditorenbuchungsprofile
               href: accounts-payable/vendor-posting-profiles.md
             - name: Belastungscodes erstellen
               href: accounts-receivable/create-charges-codes.md
-            - name: Kreditorenrechnungsdaten
+            - name: Kreditorenrechnungstermine
               href: accounts-payable/vendor-invoice-dates.md
             - name: Neubewertung der Fremdwährung für Kreditoren und Debitoren
               href: cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md
@@ -344,10 +350,14 @@
               href: accounts-receivable/tasks/establish-customer-method-payment.md
             - name: Debitorenzahlungsgebühren festlegen
               href: accounts-receivable/tasks/establish-customer-payment-fees.md
-            - name: Debitorenzahlungseinblicke (Vorschau)
+            - name: Einblicke in Debitorenzahlungen (Vorschauversion)
               href: accounts-receivable/payment-insights-overview.md
+            - name: Debitorenkontobuchung
+              href: general-ledger/accts-recvble-posting.md
             - name: Debitorenbuchungsprofile
               href: accounts-receivable/customer-posting-profiles.md
+            - name: Belastungscodes erstellen
+              href: accounts-receivable/create-charges-codes.md
             - name: Debitoren unter Verwendung gemeinsamer Nummernkreise kopieren
               href: accounts-receivable/copy-customer.md
             - name: Debitorenworkflow
@@ -444,6 +454,8 @@
                       href: accounts-receivable/sb-alignment-date-examples.md
                     - name: Umsatzerlösverteilung
                       href: accounts-receivable/sb-revenue-split.md
+                    - name: Regelmäßige Aufgaben
+                      href: accounts-receivable/sb-periodic-tasks.md
                 - name: Umsatzerlös- und Ausgabenstundungen
                   items:
                     - name: Umsatzerlös- und Ausgabenstundungen einrichten
@@ -466,6 +478,8 @@
                   href: accounts-receivable/centralized-payments-accounts-receivable.md
                 - name: Debitorenzahlungen anzahlen
                   href: accounts-receivable/tasks/deposit-customer-payments.md
+                - name: Transferzahlungen einrichten und verarbeiten
+                  href: accounts-receivable/set-up-and-process-bridged-payments.md
                 - name: Überblick über SEPA-Lastschriften
                   href: accounts-receivable/sepa-direct-debit-overview.md
                 - name: SEPA-Einzugsermächtigung
@@ -660,11 +674,13 @@
               items:
                 - name: Einrichtungsprozess der erweiterten Bankabstimmung
                   href: cash-bank-management/configure-advanced-bank-reconciliation.md
-                - name: Erweiterten Bankabstimmungs-Importprozess einrichten
+                - name: Vorgang für erweiterten Bankabstimmungsimport einrichten
                   href: cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
+                - name: Vorgang für erweiterten Bankabstimmungsimport mittels elektronischer Berichterstellung einrichten
+                  href: accounts-payable/import-bai2-er.md
                 - name: Abgleichsregeln für Bankabstimmung einrichten
                   href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
-                - name: Bankauszugsabstimmung mithilfe der erweiterten Bankabstimmung
+                - name: Bankauszüge mithilfe der erweiterten Bankabstimmung abstimmen
                   href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
                 - name: Erweiterte Bankabstimmung MT940 Import – Zusammengesetztes Datenentitätsupgrade
                   href: cash-bank-management/advanced-bank-reconciliation-mt940-data-entity-upgrade-steps.md
@@ -1044,6 +1060,14 @@
                       href: general-ledger/recommended-practices-pstg-prfles.md
                     - name: Konten für automatische Buchungen
                       href: general-ledger/accounts-for-auto-transactions.md
+                    - name: Kreditorenkontobuchung
+                      href: general-ledger/accts-payble-posting.md
+                    - name: Debitorenkontobuchung
+                      href: general-ledger/accts-recvble-posting.md
+                    - name: Anlagenleasingbuchung
+                      href: asset-leasing/set-up-lease-posting-accts.md
+                    - name: Anlagenbuchung
+                      href: fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md
                 - name: Zuordnungsregeln
                   items:
                     - name: Zuordnungsregeln für Sachkonten
@@ -1288,10 +1312,12 @@
               href: public-sector/cash-position-inquiry-setup.md
             - name: Kreditorenkonten im öffentlichen Sektor
               items:
-                - name: Kreditorenkonten im öffentlichen Sektor – Übersicht
+                - name: Übersicht über Kreditorenkonten im öffentlichen Sektor
                   href: public-sector/accounts-payable-public-sector.md
                 - name: Bestellungscodes im öffentlichen Sektor
                   href: public-sector/purchase-order-codes-public-sector.md
+                - name: Bestellungen und Vortragsbudgets
+                  href: public-sector/determine-carry-forward-budget.md
                 - name: Handelspartnercode im öffentlichen Sektor erstellen und zuweisen
                   href: public-sector/tasks/create-assign-trading-partner-code-public-sector.md
                 - name: Buchungsdefinitionen im öffentlichen Sektor
@@ -1778,6 +1804,8 @@
                   href: localizations/tasks/be-00011-create-transfer-blwi.md
                 - name: Sachkontobuchungen exportieren
                   href: localizations/emea-bel-export-ledger-transactions.md
+                - name: Zusammenfassende Meldung
+                  href: localizations/emea-bel-eu-sales-list.md
                 - name: INTERVAT-Steuererklärung
                   href: localizations/emea-bel-intervat-tax-declaration.md
                 - name: Abstimmungsberichte
@@ -1792,6 +1820,8 @@
                   href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
                 - name: Intrastat (Belgien)
                   href: localizations/emea-bel-intrastat.md
+                - name: MwSt.-Erklärung
+                  href: localizations/emea-bel-vat-declaration-belgium.md
             - name: Brasilien
               items:
                 - name: Informationen zu Brasilien
@@ -2092,11 +2122,13 @@
                   href: localizations/tasks/create-post-customer-invoice-public-sector-customer.md
                 - name: Eine Freitextrechnung für einen Debitor des öffentlichen Sektors erstellen und buchen
                   href: localizations/tasks/create-post-free-text-invoice-public-sector-customer.md
-                - name: Eine Projektrechnung für einen Debitor des öffentlichen Sektors erstellen und buchen
+                - name: Projektrechnung für einen Debitor des öffentlichen Sektors erstellen und buchen
                   href: localizations/tasks/create-post-project-invoice-public-sector-customer.md
+                - name: Zusammenfassende Meldung
+                  href: localizations/emea-dnk-eu-sales-list.md
                 - name: Konfigurationen der elektronischen OIOUBL-Fakturierung importieren
                   href: localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
-                - name: Eine Freitextrechnung mit einem Zahlungsbeleg buchen
+                - name: Freitextrechnung mit einem Zahlungsbeleg buchen
                   href: localizations/tasks/post-free-text-invoice-payment-slip.md
                 - name: Eine Projektrechnung mit einem Zahlungsbeleg buchen
                   href: localizations/tasks/post-project-invoice-payment-slip.md
@@ -2296,9 +2328,11 @@
                   href: localizations/emea-fin-intrastat.md
                 - name: MwSt.-Erklärung
                   href: localizations/emea-fin-vat-declaration.md
+                - name: Zusammenfassende Meldung
+                  href: localizations/emea-fin-eu-sales-list.md
             - name: Frankreich
               items:
-                - name: Frankreich – Übersicht
+                - name: Informationen zu Frankreich
                   href: localizations/france.md
                 - name: Öffentlicher Sektor
                   items:
@@ -3088,7 +3122,9 @@
                   href: localizations/tasks/lt-00003-fixed-asset-transfer.md
                 - name: MwSt.-Abrechnungseinzelheiten
                   href: localizations/emea-ltu-vat-statement-details.md
-                - name: i.SAF-Berichterstellung für Litauen
+                - name: Intrastat (Litauen)
+                  href: localizations/emea-ltu-intrastat.md
+                - name: i.SAF-Meldung für Litauen
                   href: localizations/emea-ltu-isaf.md
                 - name: Standardprotokolldatei für Steuer (SAF-T) für Litauen
                   href: localizations/emea-ltu-saf-t.md
@@ -3230,9 +3266,11 @@
                   href: localizations/emea-pol-correction-notes.md
                 - name: Duplizierte Verkaufsrechnungsnummerierung
                   href: localizations/emea-pol-sales-invoice-duplicates-numbering.md
+                - name: Zusammenfassende Meldung
+                  href: localizations/emea-pol-eu-sales-list.md
                 - name: Anlagenabschreibung
                   href: localizations/emea-pol-fixed-assets-depreciation.md
-                - name: Anlagenveräußerungs-Funktionenerweiterung
+                - name: Erweiterung der Funktionen zur Anlagenveräußerung
                   href: localizations/emea-pol-fixed-asset-disposal-functionality-extension.md
                 - name: Neubewertung der Fremdwährung
                   href: localizations/emea-foreign-currency-revaluation.md
@@ -3552,6 +3590,8 @@
                   href: localizations/emea-esp-conditional-sales-tax.md
                 - name: Fakturierung von Gutschriften
                   href: localizations/tasks/emea-esp-credit-invoicing.md
+                - name: Zusammenfassende Meldung
+                  href: localizations/emea-esp-sales-list.md
                 - name: Rechnungskonto für Steuerdaten
                   href: localizations/emea-esp-fiscal-data-invoice-account.md
                 - name: Anlagengruppenneubewertung
@@ -3670,11 +3710,13 @@
                       href: localizations/emea-gbr-mtd-vat-integration-vat100.md
                 - name: Statistiken zu Bericht über Zahlungsmethoden
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
+                - name: Zusammenfassende Meldung
+                  href: localizations/emea-uk-eu-sales-list.md
             - name: USA
               items:
-                - name: Übersicht über die USA
+                - name: Informationen zu den USA
                   href: localizations/united-states.md
-                - name: Jahresendsteuererklärung (US 1099) für die Vereinigten Staaten
+                - name: Jahresendsteuererklärung (US 1099) für die USA
                   href: localizations/noam-usa-year-end-1099-reporting.md
                 - name: Formular 1099 für den öffentlichen Sektor
                   href: localizations/noam-usa-form-1099-public-sector.md
@@ -4335,10 +4377,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
                     - name: Mit STRICHCODE Strichcodebilder erzeugen
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json
-                    - name: Suchdatenquellen für die Verwendung anwendungsspezifischer EB-Parameter konfigurieren
+                    - name: Suchdatenquellen zur Verwendung anwendungsspezifischer EB-Parameter konfigurieren
                       href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/finance/toc.json
-                    - name: DATENERFASSUNGS-Datenquellen in EB-Formaten verwenden
+                    - name: Datenquellen zur Datenerfassung in EB-Formaten verwenden
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: Datenquellen von USER INPUT PARAMETER zur Angabe von Parametern für einen zu erstellenden Bericht verwenden
+                      href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Datenquellen debuggen
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
                 - name: Datenmodelle konfigurieren

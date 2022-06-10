@@ -12,6 +12,8 @@
               items:
                 - name: Neuerungen oder Änderungen auf der Startseite von Commerce
                   href: get-started/whats-new-home-page.md
+                - name: "Commerce\_10.0.28 (Juli\_2022)"
+                  href: get-started/whats-new-commerce-10-0-28.md
                 - name: "Commerce\_10.0.27 (Juli\_2022)"
                   href: get-started/whats-new-commerce-10-0-27.md
                 - name: "Commerce\_10.0.26 (Mai\_2022)"
@@ -1298,11 +1300,15 @@
                   href: experimentation-status.md
             - name: Fehlerbehandlung
               items:
-                - name: Benutzerdefinierte Antwortseiten bei Fehlern mit 4xx/5xx-Statuscodes erstellen
+                - name: Benutzerdefinierte Antwortseiten bei Fehlern mit Statuscode 4xx/5xx erstellen
                   href: build-pages-400-500-errors.md
-        - name: Fraud Protection
+            - name: Integration von Diensten
+              items:
+                - name: Customer Voice in E-Commerce-Websites einbinden
+                  href: customer-voice-integration.md
+        - name: Betrugsschutz
           items:
-            - name: Dynamics 365 Fraud Protection-Integration in Dynamics 365 Commerce
+            - name: Integration von Dynamics 365 Fraud Protection in Dynamics 365 Commerce
               href: dev-itpro/DFP.md
         - name: B2B-E-Commerce
           items:
@@ -2114,10 +2120,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/commerce/toc.json
                     - name: Mit STRICHCODE Strichcodebilder erzeugen
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/commerce/toc.json
-                    - name: Suchdatenquellen für die Verwendung anwendungsspezifischer EB-Parameter konfigurieren
+                    - name: Suchdatenquellen zur Verwendung anwendungsspezifischer EB-Parameter konfigurieren
                       href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/commerce/toc.json
-                    - name: DATENERFASSUNGS-Datenquellen in EB-Formaten verwenden
+                    - name: Datenquellen zur Datenerfassung in EB-Formaten verwenden
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/commerce/toc.json
+                    - name: Datenquellen von USER INPUT PARAMETER zur Angabe von Parametern für einen zu erstellenden Bericht verwenden
+                      href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?toc=/dynamics365/commerce/toc.json
                     - name: Datenquellen debuggen
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
                 - name: Datenmodelle konfigurieren
@@ -2724,10 +2732,12 @@
                               href: e-commerce-extensibility/platform-settings.md
                             - name: Übersicht zur Cookie-API
                               href: e-commerce-extensibility/cookie-api-overview.md
-                            - name: Interaktive Komponentenübersicht
+                            - name: Übersicht über interaktive Komponenten
                               href: e-commerce-extensibility/interactive-components.md
                             - name: Status „Angemeldet“ während der lokalen Entwicklung simulieren
                               href: e-commerce-extensibility/mock-sign-in.md
+                            - name: Web-API-Authentifizierungsübertragung mit Azure Active Directory B2C einrichten
+                              href: e-commerce-extensibility/web-api-auth-trans-aad-b2c.md
                             - name: Anhand des Kontextes anzuzeigende Moduleigenschaften konfigurieren
                               href: e-commerce-extensibility/configure-properties-context.md
                             - name: Module mithilfe der CultureInfoFormatter-Klasse globalisieren
@@ -2942,8 +2952,10 @@
                   href: troubleshoot/pickup-store-missing.md
                 - name: Artikel ohne Bestand können ausgecheckt werden
                   href: troubleshoot/items-without-inventory-checked-out.md
-                - name: 'Die Bewertungsverfeinerung wird auf Suchergebnis- und Kategorieseiten angezeigt, wenn die Lösung für Bewertungen und Prüfungen nicht aktiviert ist'
+                - name: 'Wenn die Lösung für Bewertungen und Prüfungen nicht aktiviert ist, wird die Bewertungsverfeinerung auf Suchergebnis- und Kategorieseiten angezeigt.'
                   href: troubleshoot/hide-ratings-refiner.md
+                - name: Bei Verwendung benutzerdefinierter Module zur Bestellzusammenfassung enthält die Zwischensumme der Bestellzusammenfassung keine Steuern auf Gebühren.
+                  href: troubleshoot/summary-taxes-custom-modules-10.0.27.md
             - name: Kundenverwaltung
               items:
                 - name: 'Keine Willkommens-E-Mail senden, wenn neue Kunden erstellt werden'

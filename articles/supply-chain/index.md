@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4ea45b238200d4d9d43d563e160e8574271a8ce7
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 9ae75f33d96261691eee52c963a1f1f00c75b0de
+ms.sourcegitcommit: 220101d2511a3164572226294ef090a43a1e6cdd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487862"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "8789211"
 ---
 # <a name="supply-chain-management-home-page"></a>Startseite zum Supply Chain Management
 
@@ -46,21 +46,21 @@ Wählen Sie einen Funktionsbereich aus, um weitere Informationen darüber zu erh
 - [Produktinformationsverwaltung](pim/product-information.md)
 - [Produktionssteuerung](production-control/production-process-overview.md)
 - [Vertrieb und Marketing](sales-marketing/overview-sales-marketing.md)
-- [Serviceverwaltung](service-management/service-management-home-page.md)
+- [Dienstverwaltung](service-management/service-management-home-page.md)
 - [Transportverwaltung](transportation/transportation-management-overview.md)
 - [Lagerortverwaltung](warehousing/warehouse-configuration.md)
 
-## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
+## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
 
-Weitere Informationen zu Dynamics 365 Finance finden Sie auf der [Startseite von Finance](../finance/index.md).
+Weitere Informationen zu Dynamics 365 Finance finden Sie auf der Startseite von [Finance](../finance/index.md).
 
 ## <a name="videos"></a>Videos
 
 In diesem kurzen Video werden die neuen Funktionen der Lieferkettenverwaltung zusammengefasst, mit denen Microsoft Dynamics 365 for Finance and Operations, Version 8.0 (April 2018), ergänzt wurde.
 
-- [Arbeitsauftrag synchronisieren zwischen Field Service und Finance and Operations](https://youtu.be/hAB4TDVMjxU)
+- [Arbeitsauftrag zwischen Field Service und Finance and Operations synchronisieren](https://youtu.be/hAB4TDVMjxU)
 
-In diesen kurzen Videos werden die neuen Funktionen der Lieferkettenverwaltung zusammengefasst, mit denen Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (Dezember 2017), ergänzt wurde.
+In diesen kurzen Videos werden die neuen Funktionen der Lieferkettenverwaltung zusammengefasst, mit denen Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (Dezember 2017), ergänzt wurde.
 
 - [Optimierungsratgeber](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Lagerortvorlage zum Kopieren der Konfiguration verwenden](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
@@ -98,7 +98,7 @@ Im [Blog des Teams für F&E in der Fertigung von Dynamics AX](/archive/blogs/axm
 ## <a name="white-papers"></a>Whitepapers
 
 - [Lean Manufacturing: Verfügbarkeitszusage und Kanban-Feinterminierung](/dynamics/s-e/)
-- [Stücklistenberechnung anhand eines Nachkalkulationsbogens](https://www.microsoft.com/download/details.aspx?id=101937/)
+- [Stücklistenberechnung anhand eines Nachkalkulationsbogens](https://www.microsoft.com/download/details.aspx?id=101937)
 
 ## <a name="elearning-courses"></a>E-Learning-Schulungen
 

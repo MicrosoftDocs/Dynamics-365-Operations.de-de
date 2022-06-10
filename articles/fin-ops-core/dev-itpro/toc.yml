@@ -12,8 +12,10 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Neuerungen oder Änderungen bei Plattformupdates
               items:
-                - name: Neuerungen oder Änderungen auf der Startseite der Plattformupdates
+                - name: Neuerungen oder Änderungen auf der Startseite von Plattformupdates
                   href: get-started/whats-new-home-page.md
+                - name: Plattformupdates für Version 10.0.28 (August 2022)
+                  href: get-started/whats-new-platform-updates-10-0-28.md
                 - name: Plattformupdates für Version 10.0.27 (Juli 2022)
                   href: get-started/whats-new-platform-updates-10-0-27.md
                 - name: Plattformupdates für Version 10.0.26 (Mai 2022)
@@ -506,7 +508,7 @@
                   href: dev-tools/access-instances.md
                 - name: One-Box-Entwicklungsumgebungen konfigurieren
                   href: dev-tools/configure-developer-vm.md
-                - name: 'Häufig gestellte Fragen zu Entwicklungs- und Build-VMs, die keinen Administrator\*innenzugriff ermöglichen'
+                - name: 'Häufig gestellte Fragen zu Entwicklungs- und Build-VMs, die keinen Administratorzugriff ermöglichen'
                   href: sysadmin/VMs-no-admin-access.md
                 - name: Herunterladbare VHD für erste Verwendung einrichten
                   href: dev-tools/vhd-setup.md
@@ -1018,6 +1020,8 @@
                   href: lifecycle-services/azure-data-explorer.md
             - name: Umgebungsdienste neu starten
               href: lifecycle-services/restart-environment-services.md
+            - name: Umgebungsadministrator aktualisieren
+              href: lifecycle-services/update-environment-admin.md
             - name: Produktionsausfall melden
               href: lifecycle-services/report-production-outage.md
             - name: Benutzeranmeldungen verfolgen
@@ -1266,6 +1270,8 @@
               items:
                 - name: Übersicht über Add-Ins
                   href: power-platform/add-ins-overview.md
+            - name: Gestalten einer mobilen Umgebung
+              href: power-platform/build-mobile-experiences.md
             - name: Richtlinien und Kommunikation
               href: /power-platform/admin/policies-communications?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
         - name: Mobile Plattform

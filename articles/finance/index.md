@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1018cb8c3279a27a55a415c23405571e23ab40e1
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: a442256797cb64d30a18268232a07b463bc0db36
+ms.sourcegitcommit: 9f11ce4d24f546e96ab794a23479a43a89b742f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713697"
+ms.lasthandoff: 05/16/2022
+ms.locfileid: "8762594"
 ---
 # <a name="finance-home-page"></a>Startseite von Finance
 
@@ -76,7 +76,7 @@ Die Supply Chain Management-Funktionalität umfasst Teile des Procure-to-Pay-Pro
    - Rechnungsstellung
    - Bezahlen für die Waren und Dienstleistungen, die Ihre Organisation kauft 
     
-Auf der [Supply Chain Management-Startseite](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) finden Sie Informationen über die Möglichkeiten zur Verwaltung von Einkäufen, des Bestands und der Fertigung.
+Auf der [Supply Chain Management-Startseite](../supply-chain/index.md) finden Sie Informationen über die Möglichkeiten zur Verwaltung von Einkäufen, des Bestands und der Fertigung.
 
 ## <a name="elearning-courses"></a>E-Learning-Schulungen
 
