@@ -2,35 +2,32 @@
 title: Dynamische E-Commerce-Seiten anhand von URL-Parametern erstellen
 description: In diesem Thema wird erläutert, wie Sie eine E-Commerce-Seite in Microsoft Dynamics 365 Commerce einrichten, die basierend auf URL-Parametern dynamischen Inhalt bereitstellen kann.
 author: StuHarg
-ms.date: 01/28/2021
+ms.date: 05/27/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ROBOTS: ''
-audience: Application user
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 348fdb30f4d0104e80bea5235c1e337b9f977311
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3443dad9ead40b59da994c56e22fe2599f4bac82
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694339"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811030"
 ---
 # <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>Dynamische E-Commerce-Seiten anhand von URL-Parametern erstellen
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 In diesem Thema wird erläutert, wie Sie eine E-Commerce-Seite in Microsoft Dynamics 365 Commerce einrichten, die basierend auf URL-Parametern dynamischen Inhalt bereitstellen kann.
 
-Eine E-Commerce-Seite kann so konfiguriert werden, dass sie unterschiedliche Inhalte basierend auf einem Segment im URL-Pfad bereitstellt. Daher wird die Seite als dynamische Seite bezeichnet. Das Segment wird als Parameter zum Abrufen des Seiteninhalts verwendet. So wird beispielsweise eine Seite namens **Blog\_Zuschauer** erstellt und der URL `https://fabrikam.com/blog` zugeordnet. Diese Seite kann dann verwendet werden, um unterschiedliche Inhalte basierend auf dem letzten Segment im URL-Pfad anzuzeigen. Zum Beispiel ist das letzte Segment in der URL `https://fabrikam.com/blog/article-1` **Artikel-1**.
+Eine E-Commerce-Seite kann so konfiguriert werden, dass sie unterschiedliche Inhalte basierend auf einem Segment im URL-Pfad bereitstellt. Daher wird die Seite als dynamische Seite bezeichnet. Das Segment wird als Parameter zum Abrufen des Seiteninhalts verwendet. Beispielsweise wird eine Seite, die im Site Builder erstellt wird und den Namen **blog\_viewer** erhält, der URL `https://fabrikam.com/blog` zugeordnet. Diese Seite kann dann verwendet werden, um unterschiedliche Inhalte basierend auf dem letzten Segment im URL-Pfad anzuzeigen. Zum Beispiel ist das letzte Segment in der URL `https://fabrikam.com/blog/article-1` **Artikel-1**.
 
-Separate benutzerdefinierte Seiten, die die dynamische Seite überschreiben, können auch Segmenten im URL-Pfad zugeordnet werden. So wird beispielsweise eine Seite namens **Blog\_Zusammenfassung** erstellt und der URL `https://fabrikam.com/blog/about-this-blog` zugeordnet. Wird diese URL angefordert, wird die Seite **Blog\_Zusammenfassung**, die dem Parameter **/über-diesen-Blog** zugeordnet ist, anstelle der Seite **Blog\_Zuschauer** zurückgegeben.
+Sie können auch ein parametrisiertes URL-Segment mit einer Site-Builder-Seite überschreiben. Beispielsweise kann eine Seite, die im Site Builder erstellt wird und den Namen **blog\_summary** erhält, der URL `https://fabrikam.com/blog/about-this-blog` zugeordnet werden. Wenn die `https://fabrikam.com/blog`-URL mit dem `/about-this-blog`-Abschnitt am Ende angefordert wird, wird der **blogg\_summary**-Seiteninhalt anstelle des Abschnitts `/about-this-blog` zurückgegeben, das als Parameter interpretiert, der von der `https://fabrikam.com/blog`-Seite verwendet werden soll. 
+
+Bei der Auswahl von Namen für die an die dynamische Seite zu übergebenden Parameter kann der Name der dynamischen Seite, wie er in der URL (`/blog` im obigen Beispiel) angezeigt wird, nicht als Parametername oder Teilzeichenfolge eines Parameternamens verwendet werden. 
 
 > [!NOTE]
 > Die Funktionen zum Hosten, Abrufen und Anzeigen dynamischer Seiteninhalte werden mithilfe eines benutzerdefinierten Moduls implementiert. Weitere Informationen finden Sie unter [Onlinekanalerweiterbarkeit](e-commerce-extensibility/overview.md).
@@ -60,7 +57,7 @@ Führen Sie die folgenden Schritte aus, um die Route zu der dynamischen Seite im
 1. Wählen Sie unter **Parametrisierte URL-Pfade** die Option **Hinzufügen** aus. Geben Sie dann den URL-Pfad ein, den Sie beim Erstellen der URL eingegeben haben (in diesem Beispiel: **/Blog**).
 1. Wählen Sie **Speichern und veröffentlichen** aus.
 
-Sobald die Route konfiguriert wurde, geben alle Anfragen an den parametrisierten URL-Pfad die Seite zurück, die dieser URL zugeordnet ist. Wenn Anfragen ein zusätzliches Segment enthalten, wird die zugehörige Seite zurückgegeben und der Seiteninhalt mithilfe des Segments als Parameter abgerufen. Beispielsweise gibt `https://fabrikam.com/blog/article-1` die Seite **Blog\_Zusammenfassung** zurück, und der Seiteninhalt wird mithilfe des **/Artikel-1**-Parameters abgerufen.
+Sobald die Route konfiguriert wurde, geben alle Anfragen an den parametrisierten URL-Pfad die Seite zurück, die dieser URL zugeordnet ist. Wenn Anfragen ein zusätzliches Segment enthalten, wird die zugehörige Seite zurückgegeben und der Seiteninhalt mithilfe des Segments als Parameter abgerufen. Beispielsweise gibt `https://fabrikam.com/blog/article-1` die Seite `https://fabrikam.com/blog` zurück, und zeigt den Inhalt an, der mithilfe des **/article-1**-Parameters abgerufen wird.
 
 ## <a name="override-a-parameterized-url-with-a-custom-page"></a>Eine parametrisierte URL mit einer benutzerdefinierten Seite überschreiben
 

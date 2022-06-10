@@ -2,7 +2,7 @@
 title: Produktsuche und Debitorensuche in der Verkaufsstelle (POS)
 description: Dieses Thema bietet einen Überblick über die Verbesserungen der Produkt- und Debitorensuchfunktion in Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 10/26/2021
+ms.date: 05/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 022dcaca9bb3c9e7e749ee143702325367e5149b
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: 460c7d3b00421ba43414f7343887edf9b8adad9c
+ms.sourcegitcommit: 9dd2d32fc303023a509d58ec7b5935f89d1e9c6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700088"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "8806426"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produktsuche und Debitorensuche in der Verkaufsstelle (POS)
 
@@ -106,6 +106,8 @@ Um Suchkriterien als Verknüpfungen festzulegen, muss der Administrator die Seit
 > Wenn Sie zu viele Verknüpfungen hinzufügen, wird das Dropdownmenü in der Suchleiste in POS überladen, und die Sucherfahrung des Mitarbeiters kann beeinträchtigt werden. Es wird empfohlen, dass Sie nur so viele Verknüpfungen hinzufügen, wie Sie benötigen.
 
 Das Feld **Reihenfolge anzeigen** bestimmt die Reihenfolge, in der Verknüpfungen in POS angezeigt werden. Die angezeigten Kriterien sind die vorkonfigurierten Eigenschaften, die der Debitorensuchalgorithmus verwendet, um nach Debitoren zu suchen. Allerdings können Partner benutzerdefinierte Eigenschaften als Suchenverknüpfungen hinzufügen. Um benutzerdefinierte Eigenschaften als Suchverknüpfungen hinzuzufügen, muss der Systemadministrator die erweiterbare Enumeration (Enum), die für die Debitorensuchkriterien verwendet wird, erweitern und dann die benutzerdefinierten Eigenschaften des Partners als Verknüpfungen markieren. Partner sind dafür zuständig, den Code zu schreiben, um die Ergebnisse zu finden, wenn ihre benutzerdefinierten Verknüpfungen für Suchen verwendet werden.
+
+Übersetzungen für Abkürzungen sind erforderlich, wenn Sie möchten, dass Abkürzungen auf dem POS wiedergegeben werden. Wenn sich Ihre Channel-Sprache von der Standardsprache des Systems unterscheidet, müssen Sie die Übersetzung für jede Verknüpfung in der erwarteten Sprache definieren. Sie können Übersetzungen definieren, indem Sie **Übersetzen** für jede Abkürzung wählen. 
 
 > [!NOTE]
 > Eine benutzerdefinierte Eigenschaft, die der Enumeration hinzugefügt wird, wirkt sich nicht den standardmäßigen Debitorensuchenalgorithmus aus. Das bedeutet, dass der Debitorensuchalgorithmus nicht in der Debitoreneigenschaft suchen wird. Benutzer können nur eine benutzerdefinierte Eigenschaft für Suchvorgänge verwenden, wenn diese benutzerdefinierte Eigenschaft als Verknüpfung hinzugefügt ist oder wenn der Standardsuchenalgorithmus überschrieben wird.

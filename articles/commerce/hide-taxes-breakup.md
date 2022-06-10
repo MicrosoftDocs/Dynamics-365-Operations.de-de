@@ -2,19 +2,19 @@
 title: Informationen zur Steueraufteilung in Bestellzusammenfassungen ausblenden
 description: In diesem Thema wird beschrieben, wie Informationen zur Steueraufschlüsselung in Bestellzusammenfassungen auf den Seiten „Warenkorb“, „Kasse“, „Bestellbestätigung“ und „Bestelldetails“ in Microsoft Dynamics 365 Commerce ausgeblendet werden.
 author: gvrmohanreddy
-ms.date: 04/21/2022
+ms.date: 05/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-03-28
-ms.openlocfilehash: 9890b5cd92f8c07e6feabb26f4fdd076cb7a02bc
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 9a0bff7afaa10e49ec05f18e2b0fae7a19b5e8af
+ms.sourcegitcommit: 48d094d083c1bd45c3d72f8b666926b48ec7ae35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645218"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8767813"
 ---
 # <a name="hide-tax-breakup-information-in-order-summaries"></a>Informationen zur Steueraufteilung in Bestellzusammenfassungen ausblenden
 
@@ -46,6 +46,9 @@ Um Informationen zur Steueraufteilung in Bestellzusammenfassungen anzuzeigen, ak
 Die folgende Abbildung zeigt das hervorgehobene und ausgewählte Kontrollkästchen **Steueraufschlüsselung in Bestellzusammenfassung anzeigen** im Site Builder.
 
 ![Option „Steueraufschlüsselung in Bestellzusammenfassung anzeigen“ im Site Builder.](media/prices-include-sales-tax-e-Commerce-site-settings.png)
+
+> [!NOTE]
+> Wenn Sie Bestellzusammenfassungsmodule angepasst haben und die Funktion „Steueraufschlüsselungsinformationen in Bestellzusammenfassungen ausblenden“ in Commerce-Version 10.0.27 oder höher nicht übernehmen möchten, finden Sie Informationen dazu unter [Die Zwischensumme der Bestellzusammenfassung enthält keine Steuern auf Gebühren, wenn benutzerdefinierte Bestellzusammenfassungsmodule verwendet werden](troubleshoot/summary-taxes-custom-modules-10.0.27.md#resolution).
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

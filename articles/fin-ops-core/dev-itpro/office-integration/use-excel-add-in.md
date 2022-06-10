@@ -2,7 +2,7 @@
 title: Anzeigen und Aktualisieren von Entitätsdaten mit Excel
 description: In diesem Thema wird erläutert, wie Entitätsdaten in Microsoft Excel geöffnet und anschließend mit dem Microsoft Dynamics-Add-In für Excel angezeigt, aktualisiert und bearbeitet werden.
 author: jasongre
-ms.date: 10/01/2021
+ms.date: 05/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b97c585009b50c6623036d10f54e78a65a89cea
-ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
+ms.openlocfilehash: f5090674fc4f7c49c55a8a12aea8c567545d519f
+ms.sourcegitcommit: 9f11ce4d24f546e96ab794a23479a43a89b742f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8464936"
+ms.lasthandoff: 05/16/2022
+ms.locfileid: "8762638"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Anzeigen und Aktualisieren von Entitätsdaten mit Excel 
 
@@ -110,7 +110,7 @@ Sie können den Designer verwenden, um die Spalten anzupassen, die automatisch z
 5. Wenn Sie ein Feld (Spalte) hinzugefügt haben, klicken Sie auf **Aktualisieren**, um aktualisierte Datensätze zu laden.
 
 ## <a name="change-the-publish-batch-size"></a>Ändern der Größe des Veröffentlichungsstapels
-Wenn Benutzer Änderungen an Datensätzen mithilfe des Excel-Add-Ins veröffentlichen, werden die Aktualisierungen stapelweise übermittelt. Die Standardgröße für Veröffentlichungsstapel beträgt 100 Zeilen. In Version 10.0.17 und höher können Sie mit der Funktion **Konfiguration der Größe des Veröffentlichungsstapels im Excel-Add-In zulassen** die Größe des Veröffentlichungsstapels flexibel steuern.
+Wenn Benutzer Änderungen an Datensätzen mithilfe des Excel-Add-Ins veröffentlichen, werden die Aktualisierungen stapelweise übermittelt. Die Standard- (und maximale) Batch-Größe für das Veröffentlichen beträgt 100 Zeilen. Die Funktion **Konfiguration der Batch-Größe für das Veröffentlichen im Excel-Add-In zulassen** gibt Ihnen jedoch die Flexibilität, die Batch-Größe für das Veröffentlichen zu verringern, insbesondere wenn Sie beim Versuch, Aktualisierungen aus Excel zu veröffentlichen, Zeitüberschreitungen feststellen.
 
 Systemadministratoren können eine systemweite Begrenzung der Größe des Veröffentlichungsstapels für „In Excel öffnen“-Arbeitsmappen angeben, indem Sie im Feld **Begrenzung für Veröffentlichungsstapel** im Abschnitt **App-Parameter** auf der Seite **Office-App-Parameter** einen Wert angeben.
 

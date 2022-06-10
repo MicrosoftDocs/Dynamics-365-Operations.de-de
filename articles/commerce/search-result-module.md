@@ -2,7 +2,7 @@
 title: Suchergebnismodul
 description: Dieses Thema behandelt Suchergebnismodule und erläutert, wie diese Websiteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
-ms.date: 04/21/2022
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 15b3bb50eb0b75fa19ac8e136da83cb362b4cec6
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: dcf3dedbb7c499135bbae45b917153854ecd4a28
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644925"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780917"
 ---
 # <a name="search-results-module"></a>Suchergebnismodul
 
@@ -65,23 +65,26 @@ Das Suchergebnismodul unterstützt das [Schnellansichtsmodul](quick-view-module.
 
 ## <a name="add-a-search-results-module-to-a-category-page"></a>Einer Kategorieseite ein Suchergebnismodul hinzufügen
 
-Führen Sie folgende Schritte aus, um ein Suchergebnismodul einer Kategorieseite hinzuzufügen.
+Gehen Sie folgendermaßen vor, um einer Kategorieseite im Site Builder ein Suchergebnismodul hinzuzufügen.
 
 1. Wechseln Sie zu **Vorlagen** und wählen Sie **Neu** aus, um eine neue Vorlage zu erstellen.
 1. Geben Sie im Dialogfeld **Neue Vorlage** den Namen **Suchergebnisse** ein, und wählen Sie anschließend **OK** aus.
-1. Wählen Sie im Slot **Körper** die Ellipsen-Schaltfläche (...) und anschließend **Modul hinzufügen** aus.
-1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Standardseite** und dann **OK** aus.
-1. Wählen Sie im **Haupt**-Slot auf der **Standardseite** die Ellipsen-Schaltfläche (...) und anschließend **Modul hinzufügen** aus.
-1. Wählen Sie im Dialogfeld **Modul hinzufügen** wählen Sie das Modul **Container** und dann **OK** aus.
-1. Wählen Sie im **Container**-Slot die Ellipsen-Schaltfläche (...) und anschließend **Modul hinzufügen** aus.
-1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Breadcrumb** und dann **OK** aus.
+1. Markieren Sie im Slot **Hauptteil** die Auslassungspunkte (...) und wählen Sie dann **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul auswählen** das Modul **Standardseite** und dann **OK** aus.
+1. Markieren Sie im Slot **Haupt** des Moduls **Standardseite** die Auslassungspunkte (...) und wählen Sie dann **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Module auswählen** das Modul **Container** und dann **OK** aus.
+1. Markieren Sie im Slot **Container** die Auslassungspunkte (...) und wählen Sie dann **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Module auswählen** das Modul **Brotkrümel** und wählen Sie dann **OK**.
 1. Geben Sie im **Breadcrumb**-Eigenschaftenbereich den Wert **1** für **Min. Vorkommen** ein.
-1. Wählen Sie im **Container**-Slot die Ellipsen-Schaltfläche (...) und anschließend **Modul hinzufügen** aus.
-1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Suchergebnisse** und anschließend **OK** aus.
+1. Markieren Sie im Slot **Container** die Auslassungspunkte (...) und wählen Sie dann **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Module auswählen** das Modul **Suchergebnisse** und wählen Sie dann **OK**.
 1. Geben Sie im **Suchergebnisse**-Eigenschaftenbereich den Wert **1** für **Min. Vorkommen** ein, und legen Sie dann alle anderen erforderlichen Eigenschaften für das Suchergebnismodul fest. Durch Festlegen dieser Eigenschaften in der Vorlage stellen Sie sicher, dass alle Anpassungen auf einer bestimmten Kategorieseite diese Einstellungen automatisch enthalten.
 1. Wählen Sie **Bearbeiten beenden** aus, und wählen Sie dann **Veröffentlichen** aus, um die Vorlage zu veröffentlichen.
 1. Wechseln Sie zu **Seiten**, und wählen Sie dann **Neu** aus, um eine neue Seite zu erstellen.
-1. Wählen Sie im Dialogfeld **Vorlage auswählen** die zuvor erstellte **Suchergebnis**-Vorlage aus. Geben Sie als **Seitenname** **Kategorieseite** ein, und wählen Sie dann **OK** aus. Da alle Werte in der Vorlage festgelegt sind, kann die Seite veröffentlicht werden.
+1. Im Dialogfeld **Eine neue Seite erstellen** geben Sie unter **Seitenname** **Kategorieseite** ein und wählen Sie dann **Weiter**.
+1. Wählen Sie unter **Wählen Sie eine Vorlage** die Vorlage **Suchergebnisse**, die Sie erstellt haben, und wählen Sie dann **Weiter**.
+1. Wählen Sie unter **Wählen Sie ein Layout** ein Seitenlayout (z.B. **Flexibles Layout**) und wählen Sie dann **Weiter**.
+1. Unter **Prüfen und beenden** überprüfen Sie die Konfiguration der Seite. Wenn Sie die Seiteninformationen bearbeiten müssen, wählen Sie **Zurück**. Wenn die Seiteninformationen korrekt sind, wählen Sie **Seite erstellen**.
 1. Wählen **Bearbeiten beenden**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen**, um sie zu veröffentlichen.
 
 ## <a name="enable-inventory-awareness-for-the-search-results-module"></a>Bestandserkennung für das Suchergebnismodul aktivieren
@@ -102,7 +105,7 @@ Die bestandsbezogene Produktsuche verwendet Produktattribute, um Informationen z
 
 Führen Sie die folgenden Schritte aus, um dedizierte Produktattribute zur Unterstützung des Suchergebnismoduls mit Bestandserfassung zu erstellen.
 
-1. Gehen Sie zu **Retail und Commerce \> Retail und Commerce IT \> Produkte und Bestand**.
+1. Gehen Sie in der Zentralverwaltung zu **Retail und Commerce \> Retail und Commerce IT \> Produkte und Bestand**.
 1. Wählen und öffnen Sie **Produktattribute mit Lagerbestand auffüllen**.
 1. Geben Sie im Dialogfeld die folgenden Informationen ein:
 
@@ -116,11 +119,11 @@ Führen Sie die folgenden Schritte aus, um dedizierte Produktattribute zur Unter
 
 Gehen Sie folgendermaßen vor, um die Produktattribute für einen Online-Kanal zu konfigurieren. 
 
-1. Wählen Sie **Retail and Commerce \> Kanaleinstellung \> Kanalkategorien und Produktattribute**.
-2. Wählen Sie einen Online-Kanal aus, für den das Suchergebnismodul mit Bestandserfassung aktiviert werden soll.
-3. Wählen und öffnen Sie eine zugehörige Attributgruppe und fügen Sie ihr dann das neu erstellte Produktattribut hinzu.
-4. Wählen Sie in Versionen vor der Commerce-Version 10.0.27 **Attributmetadaten festlegen**, wählen Sie das neu hinzugefügte Produktattribut aus und aktivieren Sie dann die Optionen **Attribut auf Kanal anzeigen**, **Abrufbar**, **Kann verfeinert werden**, und **Kann abgefragt werden**.
-5. Gehen Sie zu **Einzelhandel und Handel \> IT für Einzelhandel und Handel \> Vertriebsplan**, und führen Sie den Einzelvorgang **1150 (Katalog)** aus. Wenn Sie den Einzelvorgang **Produktattribute mit Lagerbestand auffüllen** als Batch-Prozess ausführen, empfehlen wir, den 1150-Einzelvorgang auch als Batch-Prozess einzuplanen, der mit der gleichen Häufigkeit ausgeführt wird.
+1. Gehen Sie in der Zentralverwaltung zu **Einzelhandel und Handel \> Kanaleinstellungen \> Kanalkategorien und Produktattribute**.
+1. Wählen Sie einen Online-Kanal aus, für den das Suchergebnismodul mit Bestandserfassung aktiviert werden soll.
+1. Wählen und öffnen Sie eine zugehörige Attributgruppe und fügen Sie ihr dann das neu erstellte Produktattribut hinzu.
+1. Wählen Sie in Versionen vor der Commerce-Version 10.0.27 **Attributmetadaten festlegen**, wählen Sie das neu hinzugefügte Produktattribut aus und aktivieren Sie dann die Optionen **Attribut auf Kanal anzeigen**, **Abrufbar**, **Kann verfeinert werden**, und **Kann abgefragt werden**.
+1. Gehen Sie zu **Einzelhandel und Handel \> IT für Einzelhandel und Handel \> Vertriebsplan**, und führen Sie den Einzelvorgang **1150 (Katalog)** aus. Wenn Sie den Einzelvorgang **Produktattribute mit Lagerbestand auffüllen** als Batch-Prozess ausführen, empfehlen wir, den 1150-Einzelvorgang auch als Batch-Prozess einzuplanen, der mit der gleichen Häufigkeit ausgeführt wird.
 
 > [!NOTE]
 > Bei Produkten, die im Suchergebnismodul angezeigt werden, wird die Bestandsebene auf Masterproduktebene anstelle der Einzelvariantenebene angezeigt. Es gibt nur zwei mögliche Werte: „verfügbar“ und „nicht auf Lager“. Das eigentliche Etikett für den Wert wird aus der Definition [Profil auf Lagerbestandsebene](inventory-buffers-levels.md) abgerufen. Ein Masterprodukt gilt nur dann als ausverkauft, wenn alle seine Varianten ausverkauft sind.

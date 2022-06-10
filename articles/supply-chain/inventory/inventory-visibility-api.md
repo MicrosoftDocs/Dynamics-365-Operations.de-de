@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: cbd33b16a4b21e8e1931bc61cb55e376e7d73179
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: cb02e8d10a5c673734727682436ba1b3fc996935
+ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8524464"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8786864"
 ---
 # <a name="inventory-visibility-public-apis"></a>Öffentliche Inventartransparenz-APIs
 
@@ -41,17 +41,22 @@ In der folgenden Tabelle sind die derzeit verfügbaren APIs aufgeführt:
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Buchen | [Festlegen/Überschreiben von Lagerbeständen](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Buchen | [Ein Ereignis für eine Reservierung erstellen](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Buchen | [Mehrere Reservierungsereignisse erstellen](#create-multiple-reservation-events) |
-| /api/environment/{environmentId}/on-hand/changeschedule | Buchen | [Eine geplante Änderung des Lagerbestands erstellen](inventory-visibility-available-to-promise.md) |
-| /api/environment/{environmentId}/on-hand/changeschedule/bulk | Buchen | [Erstellen Sie mehrere geplante Lagerbestandsänderungen](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/onhand/changeschedule | Buchen | [Eine geplante Änderung des Lagerbestands erstellen](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/onhand/changeschedule/bulk | Buchen | [Erstellen Sie mehrere geplante Lagerbestandsänderungen](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Buchen | [Abfrage mit Hilfe der POST-Methode](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | Abrufen | [Abfrage mit Hilfe der get-Methode](#query-with-get-method) |
+| /api/environment/{environmentId}/allocation/allocate | Buchen | [Ein Zuweisungsereignis erstellen](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/unallocate | Buchen | [Ein Ereignis zum Aufheben einer Zuweisung erstellen](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/reallocate | Buchen | [Ein Neuzuweisungsereignis erstellen](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/consume | Buchen | [Ein Verbrauchsereignis erstellen](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/query | Buchen | [Zuordnungsergebnis abfragen](inventory-visibility-allocation.md#using-allocation-api) |
 
 > [!NOTE]
 > Der Teil {environmentId} des Pfades ist die Umgebungs-ID in Microsoft Dynamics Lifecycle Services (LCS).
 > 
 > Die Bulk-API kann maximal 512 Datensätze für jede Anfrage zurückgeben.
 
-Microsoft hat eine standardmäßige *Postman* Abfrage-Sammlung bereitgestellt. Sie können diese Sammlung in Ihre *Postman*-Software importieren, indem Sie den folgenden gemeinsamen Link verwenden: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
+Microsoft hat eine standardmäßige *Postman* Abfrage-Sammlung bereitgestellt. Sie können diese Sammlung in Ihre *Postman*-Software importieren, indem Sie den folgenden gemeinsamen Link verwenden: <https://www.getpostman.com/collections/ad8a1322f953f88d9a55>.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Finden Sie den Endpunkt entsprechend Ihrer Lifecycle Services Umgebung
 
@@ -84,7 +89,7 @@ Microsoft hat eine Benutzeroberfläche (UI) in Power Apps eingebaut, so dass Sie
 
 ## <a name="authentication"></a><a name="inventory-visibility-authentication"></a>Authentifizierung
 
-Das Sicherheits-Token der Plattform wird für den Aufruf der öffentlichen API von Inventory Visibility verwendet. Daher müssen Sie ein _Azure Active Directory (Azure AD) Token_ generieren, indem Sie Ihre Azure AD Anwendung verwenden. Sie müssen dann das Azure AD-Token verwenden, um das _Zugriffstoken_ vom Sicherheitsdienst zu erhalten.
+Das Sicherheits-Token der Plattform wird für den Aufruf der öffentlichen API von Inventory Visibility verwendet. Daher müssen Sie ein _Azure Active Directory (Azure AD)-Token_ generieren, indem Sie Ihre Azure AD-Anwendung verwenden. Sie müssen dann das Azure AD-Token verwenden, um das _Zugriffstoken_ vom Sicherheitsdienst zu erhalten.
 
 Microsoft stellt eine standardmäßige *Postman*-Token-Abfragesammlung bereit. Sie können diese Sammlung in Ihre *Postman*-Software importieren, indem Sie den folgenden gemeinsamen Link verwenden: <https://www.getpostman.com/collections/496645018f96b3f0455e>.
 
@@ -539,7 +544,7 @@ Das folgende Beispiel zeigt einen Beispielkörperinhalt.
 }
 ```
 
-Die folgenden Beispiele zeigen, wie Sie alle Produkte an einem bestimmten Standort und Lagerplatz abfragen.
+Das folgende Beispiel zeigt, wie Sie alle Produkte an einem bestimmten Standort und Lagerplatz abfragen.
 
 ```json
 {
@@ -580,6 +585,10 @@ Hier ist eine Beispiel-GET-URL. Diese get-Anfrage ist genau die gleiche wie das 
 
 ## <a name="available-to-promise"></a>Verfügbar für Zusage
 
-Sie können Inventory Visibility so festlegen, dass Sie zukünftige Änderungen des Lagerbestands planen und ATP-Mengen berechnen können. ATP ist die Menge eines Elements, die verfügbar ist und einem Kunden in der nächsten Periode zugesagt werden kann. Die Verwendung der ATP-Berechnung kann Ihre Funktionalitäten bei der Auftragsabwicklung erheblich steigern. Informationen darüber, wie Sie diese Funktion aktivieren und wie Sie mit Inventory Visibility über die API interagieren können, nachdem die Funktion aktiviert wurde, finden Sie unter [Inventory Visibility Lagerbestand ändert Zeitpläne und ist für Versprechen verfügbar](inventory-visibility-available-to-promise.md).
+Sie können Inventory Visibility so festlegen, dass Sie zukünftige Änderungen des Lagerbestands planen und ATP-Mengen berechnen können. ATP ist die Menge eines Elements, die verfügbar ist und einem Kunden in der nächsten Periode zugesagt werden kann. Die Verwendung der ATP-Berechnung kann Ihre Funktionalitäten bei der Auftragsabwicklung erheblich steigern. Informationen darüber, wie Sie diese Funktion aktivieren und wie Sie mit Inventory Visibility über die API interagieren können, nachdem die Funktion aktiviert wurde, finden Sie unter [Inventory Visibility Lagerbestand ändert Zeitpläne und ist für Versprechen verfügbar](inventory-visibility-available-to-promise.md#api-urls).
+
+## <a name="allocation"></a>Zuweisung
+
+Zuweisungsbezogene APIs befinden sich in [Zuweisung der Bestandsichtbarkeit](inventory-visibility-allocation.md#using-allocation-api).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

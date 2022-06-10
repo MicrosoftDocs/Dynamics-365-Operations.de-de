@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 230e402c322509f3ea89d4f1dccb5555828377ff
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5619be4a0724556bf0c51dcaa3adcc3725f10706
+ms.sourcegitcommit: 220101d2511a3164572226294ef090a43a1e6cdd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578391"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "8789267"
 ---
 # <a name="quality-management-test-groups"></a>Qualitätsmanagement Testgruppen
 
@@ -139,6 +139,6 @@ Um einen quantitativen Test zu einer Testgruppe hinzuzufügen, folgen Sie diesen
 - [Qualitätsmanagement-Tests](quality-management-processes.md)
 - [Qualitätsmanagement-Testvariablen](quality-management-processes.md)
 - [Qualitätszuordnungen](quality-management-processes.md)
-- [Chargenattribute](/supply-chain/production-control/batch-attributes.md)
+- [Chargenattribute](../production-control/batch-attributes.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

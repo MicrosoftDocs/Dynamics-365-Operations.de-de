@@ -3,7 +3,7 @@ title: Shopauswahlmodul
 description: Dieses Thema enthält das Siteauswahlmodul und es wird beschrieben, wie Websiteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/04/2022
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7276f25daada8286490ad7e1af2b350e4a2805bb
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 76682f26f62fe4686f5102e3099f038a50005f5e
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710779"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780638"
 ---
 # <a name="store-selector-module"></a>Shopauswahlmodul
 
@@ -138,23 +138,26 @@ Führen Sie die folgenden Schritte aus, um das Filialauswahlmodul so zu konfigur
 1. Im Dialogfeld **Neue Vorlage** geben Sie unter **Vorlagenname** **Containervorlage** ein und wählen Sie **OK**.
 1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
 1. Wechseln Sie zu **Seiten**, und wählen Sie dann **Neu** aus, um eine neue Seite zu erstellen.
-1. In dem Dialogfeld **Wählen Sie eine Vorlage** wählen Sie die Vorlage **Marketingvorlage** aus. Gehen Sie unter **Seitenname** **Geschäftsstandorte** ein, und wählen Sie dann **OK** aus.
+1. Im Dialogfenster **Eine neue Seite erstellen** geben Sie unter **Seitenname** **Store-Standorte** ein und wählen Sie dann **Weiter**.
+1. Wählen Sie unter **Wählen Sie eine Vorlage** die **Marketing-Vorlage**, die Sie erstellt haben, und wählen Sie dann **Weiter**.
+1. Wählen Sie unter **Wählen Sie ein Layout** ein Seitenlayout (z.B. **Flexibles Layout**) und wählen Sie dann **Weiter**.
+1. Unter **Prüfen und beenden** überprüfen Sie die Konfiguration der Seite. Wenn Sie die Seiteninformationen bearbeiten müssen, wählen Sie **Zurück**. Wenn die Seiteninformationen korrekt sind, wählen Sie **Seite erstellen**. 
 1. Auf der neuen Seite wählen Sie **Haupt**-Slot und wählen dann die Ellipsen (**...**) und wählen **Modul hinzufügen**.
-1. Wählen Sie im Dialogfeld **Modul hinzufügen** wählen Sie das Modul **Container** und dann **OK** aus.
+1. Wählen Sie im Dialogfeld **Module auswählen** das Modul **Container** und dann **OK** aus.
 1. Wählen Sie im Slot **Container** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
-1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Container mit zwei Spalten** und dann **OK** aus.
+1. Wählen Sie in der Dialogbox **Module auswählen** das Modul **Container mit 2 Spalten** und wählen Sie dann **OK**.
 1. Legen Sie im Eigenschaftsbereich des Moduls den **Breite**-Wert auf **Container füllen** fest.
 1. Legen Sie den Wert **Portspaltenkonfiguration für sehr kleine Ansicht** auf **100 %** fest.
 1. Legen Sie den Wert **Portspaltenkonfiguration für kleine Ansicht** auf **100 %** fest.
 1. Legen Sie den Wert **Portspaltenkonfiguration für mittlere Ansicht** auf **33 % 67 %** fest.
 1. Legen Sie den Wert **Portspaltenkonfiguration für große Ansicht** auf **33 % 67 %** fest.
-1. Wählen Sie im Slot **Container mit zwei Spalten** die Auslassungspunkte (**...**) und dann **Modul hinzufügen** aus.
-1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Auswahl speichern** und dann **OK** aus.
+1. Im Bereich **Container mit 2 Spalten** markieren Sie die Auslassungspunkte (**...**) und wählen dann **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Module auswählen** das Modul **Auswahl speichern** und dann **OK** aus.
 1. Legen Sie im Eigenschaftsbereich des Moduls den **Modus**-Wert auf **Geschäfte suchen** fest.
 1. Legen Sie den Wert **Suchradius** in Meilen fest.
 1. Legen Sie andere Eigenschaften wie z. B. **Als bevorzugten Shop festlegen**, **Alle Geschäfte anzeigen** und **Automatischen Vorschlag aktivieren** nach Bedarf fest.
-1. Wählen Sie im Slot **Container mit zwei Spalten** die Auslassungspunkte (**...**) und dann **Modul hinzufügen** aus.
-1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Karte** und dann **OK** aus.
+1. Im Bereich **Container mit 2 Spalten** markieren Sie die Auslassungspunkte (**...**) und wählen dann **Modul hinzufügen**.
+1. Wählen Sie in der Dialogbox **Module auswählen** das Modul **Map** und wählen Sie dann **OK**.
 1. Legen Sie im Eigenschaftsbereich des Moduls nach Bedarf weitere Eigenschaften fest.
 1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
  

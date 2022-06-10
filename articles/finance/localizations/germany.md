@@ -12,12 +12,12 @@ ms.search.region: Germany
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 88e4fe5f6d1a9167181cc004f327f53cdbe64ab3
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 642428044cdd79e964f3b091b5be3fc9035e4ab3
+ms.sourcegitcommit: d27d63c3953b758225cdf29f13f9747e827e59c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735418"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "8807844"
 ---
 # <a name="germany-overview"></a>Informationen zu Deutschland
 
@@ -39,9 +39,9 @@ Dieses Thema enthält Informationen und Verknüpfungen zu den Ressourcen, die f�
 -   [Umsatzsteuererklärung für Deutschland](emea-deu-vat-declaration-germany.md)
 
 ## <a name="electronic-transmission-of-vat-declaration-elster"></a>Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)
+Diese Funktion ist veraltet. Weitere Informationen finden Sie unter [Entfernte und außer Betrieb genommene Funktionen](../get-started/removed-deprecated-features-finance.md#elster-declaration-for-germany-design-based-on-reporting-codes). Weitere Informationen zur Mehrwertsteuererklärung finden Sie unter [Mehrwertsteuererklärung (Deutschland)](emea-deu-vat-declaration-germany.md)
 - [Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)](tasks/de-00003-electronic-transmission-elster.md)
-- [Elster Testmerker (PDF-Download)](https://msdnshared.blob.core.windows.net/media/2018/04/Dyn365_ElsterTestmerker.pdf)
-- [Umsatzsteuererklärung für Deutschland](emea-de-vat-declaration.md)
+- [ELSTER-Steuererklärung für Deutschland](emea-de-vat-declaration.md)
 
 ## <a name="electronic-invoices-in-germany"></a>Elektronische Rechnungen in Deutschland
 - [Elektronische Rechnungen für Kunden exportieren](emea-deu-e-invoices.md)

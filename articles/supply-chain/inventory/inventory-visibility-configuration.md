@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a2f7929026f41e921b71bc5a899810695c859902
-ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
+ms.openlocfilehash: 7e42c0b49a4083edd0e64551f4840bd74d412fc1
+ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547787"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8786837"
 ---
 # <a name="configure-inventory-visibility"></a>Bestandstransparenz konfigurieren
 
@@ -60,7 +60,7 @@ Das Bestandsanzeige-Add-In fügt Ihrer Power Apps-Installation mehrere neue Funk
 
 Wenn Sie den richtigen Dienst-Endpunkt für Inventory Visibility nicht kennen, öffnen Sie die Seite **Konfiguration** in Power Apps und wählen Sie dann **Dienst-Endpunkt anzeigen** in der oberen rechten Ecke. Die Seite zeigt den korrekten Dienst-Endpunkt an.
 
-## <a name="data-source-configuration"></a>Konfiguration der Datenquelle
+## <a name="data-source-configuration"></a><a name="data-source-configuration"></a>Datenquellenkonfiguration
 
 Jede Datenquelle steht für ein System, aus dem Ihre Daten stammen. Beispiele für Datenquellennamen sind `fno` (was für „Finanz- und Betriebs-Apps von Dynamics 365“ steht) und `pos` (was für „Point-of-Sale“ steht). Standardmäßig ist das Supply Chain Management als Standard-Datenquelle (`fno`) in Inventory Visibility festgelegt.
 
@@ -141,7 +141,7 @@ Um Zuordnungen von Dimensionen hinzuzufügen, gehen Sie wie folgt vor.
 
 Wenn Ihre Datenquelle z. B. eine Produktfarbendimension enthält, können Sie diese der Basisdimension `ColorId` zuordnen, um eine angepasste Dimension `ProductColor` in der Datenquelle `exterchannel` hinzuzufügen. Sie wird dann der Basisdimension `ColorId` zugeordnet.
 
-### <a name="physical-measures"></a>Physikalische Messungen
+### <a name="physical-measures"></a><a name="data-source-configuration-physical-measures"></a>Physikalische Messungen
 
 Wenn eine Datenquelle eine Bestandsänderung an Inventory Visibility sendet, sendet sie diese Änderung unter Verwendung von *physikalischen Messungen*. Physikalische Messungen verändern die Menge und spiegeln den Status des Bestands wider. Sie können Ihre eigenen physikalischen Messungen, basierend auf Ihren Anforderungen, definieren. Abfragen können auf den physikalischen Kennzahlen basieren.
 
@@ -175,6 +175,9 @@ Wenn die Datenquelle Supply Chain Management ist, müssen Sie die standardmäßi
 ### <a name="calculated-measures"></a>Berechnete Messungen
 
 Sie können Inventory Visibility verwenden, um sowohl physische Messungen im Bestand als auch *angepasste berechnete Kennzahlen* abzufragen. Berechnete Maße bieten eine angepasste Berechnungsformel, die aus einer Kombination von physikalischen Messungen besteht. Mit dieser Funktionalität können Sie eine Reihe von physikalischen Kennzahlen festlegen, die addiert werden, und/oder eine Reihe von physikalischen Kennzahlen, die subtrahiert werden, um das Formular für die angepasste Messung zu bilden.
+
+> [!IMPORTANT]
+> Ein berechnetes Measure ist eine Zusammenstellung von physikalischen Measures. Seine Formel kann nur physikalische Measures ohne Duplikate enthalten, keine berechneten Measures.
 
 In der Konfiguration können Sie eine Reihe von Modifikatoren festlegen, die addiert oder subtrahiert werden, um die gesamte aggregierte Ausgabemenge zu erhalten.
 

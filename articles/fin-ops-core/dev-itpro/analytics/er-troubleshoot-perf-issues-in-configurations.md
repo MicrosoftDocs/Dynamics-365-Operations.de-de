@@ -2,7 +2,7 @@
 title: Beheben von Leistungsproblemen in ER-Konfigurationen
 description: In diesem Thema wird erläutert, wie Sie Leistungsprobleme in Konfigurationen für die elektronische Berichterstellung (ER) finden und beheben.
 author: NickSelin
-ms.date: 06/08/2021
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: maximbel
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: b5f5308f171b6cd4224debec897dbde133e6d8424673aabfab51e6b83b9014e2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e727e06c73ff445bf4219ac5a9eee7bec25740d9
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744385"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811679"
 ---
 # <a name="troubleshooting-performance-issues-in-er-configurations"></a>Beheben von Leistungsproblemen in ER-Konfigurationen
 
@@ -55,7 +55,7 @@ Manchmal werden Leistungsprobleme nicht durch eine ER-Formatkonfiguration verurs
 
 Bereiten Sie ein kleines Beispiel vor oder sammeln Sie mehrere Traces während zufälliger Teile der Berichtserstellung.
 
-Dann in [TraceParser](#trace-parser) führen Sie eine standardmäßige Bottom-to-Up-Analyse durch und beantworten Sie die folgenden Fragen:
+Dann in [Trace Parser](#trace-parser) führen Sie eine standardmäßige Bottom-Up-Analyse durch und beantworten Sie die folgenden Fragen:
 
 - Was sind die Top-Methoden in Bezug auf den Zeitverbrauch?
 - Welchen Teil der Gesamtzeit verwenden diese Methoden?
@@ -82,7 +82,7 @@ Bereiten Sie ein Beispiel mit einer kleinen Datenmenge vor, damit Sie eine [ER-S
 
 - Entspricht die Anzahl der Abfragen und geholten Datensätze der Gesamtdatenmenge? Wenn ein Dokument beispielsweise 10 Zeilen hat, zeigen die Statistiken, dass der Bericht 10 Zeilen oder 1.000 Zeilen extrahiert? Wenn Sie über eine beträchtliche Anzahl von abgerufenen Datensätzen verfügen, ziehen Sie eine der folgenden Korrekturen in Betracht:
 
-    - [Verwenden Sie die **FILTER**-Funktion statt der **WHERE**-Funktion](#filter), um Daten auf der SQL Server-Seite zu verarbeiten.
+    - [Verwenden Sie die **FILTER**-Funktion statt der **WHERE**-Funktion](#filter), um Daten auf der Microsoft SQL Server-Seite zu verarbeiten.
     - Verwenden Sie Caching, um zu vermeiden, dass dieselben Daten abgerufen werden.
     - [Verwenden Sie die Funktionen für erfasste Daten](#collected-data), um zu vermeiden, dass dieselben Daten für die Zusammenfassung abgerufen werden.
 
@@ -191,6 +191,10 @@ Dieser Ansatz unterliegt einigen Einschränkungen. Sie müssen Administratorzugr
 
 Das Caching verkürzt zwar die Zeit, die zum erneuten Abrufen von Daten erforderlich ist, kostet jedoch Speicher. Verwenden Sie Caching in Fällen, in denen die Menge der abgerufenen Daten nicht sehr groß ist. Weitere Informationen und ein Beispiel zur Verwendung von Caching finden Sie unter [Verbessern der Modellzuordnung basierend auf Informationen aus dem Ausführungsspur](trace-execution-er-troubleshoot-perf.md#improve-the-model-mapping-based-on-information-from-the-execution-trace).
 
+#### <a name="reduce-volume-of-data-fetched"></a><a name="reduce-fetched-data"></a>Die Menge der abgerufenen Daten reduzieren
+
+Sie können den Speicherverbrauch für das Zwischenspeichern reduzieren, indem Sie die Anzahl der Felder in den Datensätzen einer Anwendungstabelle begrenzen, die Sie zur Laufzeit abrufen. In diesem Fall rufen Sie nur die Feldwerte einer Anwendungstabelle ab, die Sie in Ihrer ER-Modellzuordnung benötigen. Andere Felder in dieser Tabelle werden nicht abgerufen. Daher wird das Speichervolumen, das zum Zwischenspeichern abgerufener Datensätze erforderlich ist, reduziert. Weitere Informationen finden Sie unter [Verbessern der Leistung von ER-Lösungen, indem die Anzahl der Tabellenfelder reduziert wird, die zur Laufzeit abgerufen werden](er-reduce-fetched-fields-number.md)
+
 #### <a name="use-a-cached-parameterized-calculated-field"></a><a name="cached-parameterized"></a>Verwenden Sie ein zwischengespeichertes, parametrisiertes berechnetes Feld
 
 Manchmal müssen Werte wiederholt nachgeschlagen werden. Beispiele sind Kontonamen und Kontonummern. Um Zeit zu sparen, können Sie ein berechnetes Feld mit Parametern auf der obersten Ebene erstellen und das Feld dann zum Cache hinzufügen.
@@ -218,4 +222,4 @@ ER kann Daten aus den folgenden Quellen verbrauchen:
 - Klassen (Datenquellen **Objekt** und **Klasse**)
 - Tabellen (Datenquellen **Tabelle** und **Tabellendatensätze** Datenquellen)
 
-Das [ER-API](er-apis-app73.md#how-to-access-internal-x-objects-by-using-erobjectsfactory) bietet auch eine Möglichkeit, vorberechnete Daten aus dem aufrufenden Code zu senden. Die Anwendungssuite enthält zahlreiche Beispiele für diesen Ansatz.
+Das [ER-Schnittstelle für die Anwendungsprogrammierung API](er-apis-app73.md#how-to-access-internal-x-objects-by-using-erobjectsfactory) bietet auch eine Möglichkeit, vorberechnete Daten aus dem aufrufenden Code zu senden. Die Anwendungssuite enthält zahlreiche Beispiele für diesen Ansatz.

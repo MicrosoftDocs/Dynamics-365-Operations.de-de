@@ -2,24 +2,19 @@
 title: Überlegungen zur Suchmaschinenoptimierung (SEO) für Ihre Site
 description: In diesem Thema werden Überlegungen zur Suchmaschinenoptimierung (SEO) für Ihre Website von der Entwicklung bis zur Produktion behandelt.
 author: psimolin
-ms.date: 10/01/2019
+ms.date: 05/25/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application user
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: df92aeae967bbf248b90dffc6bc2239a8d2959183acb9e9181bc344b9e3eff8d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2f90581766dba3d3a671df52ec08339a1a0fd7dc
+ms.sourcegitcommit: 9dd2d32fc303023a509d58ec7b5935f89d1e9c6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716856"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "8806404"
 ---
 # <a name="search-engine-optimization-seo-considerations-for-your-site"></a>Überlegungen zur Suchmaschinenoptimierung (SEO) für Ihre Site
 
@@ -30,11 +25,15 @@ In diesem Thema werden Überlegungen zur Suchmaschinenoptimierung (SEO) für Ihr
 
 ## <a name="a-site-that-is-under-development"></a>Eine Seite, die sich in der Entwicklung befindet
 
-Während eine Website entwickelt wird, sollten alle Websiteseiten die folgende Bezeichnung haben: Die Metatags **NOINDEX** und **NOFOLLOW**, damit Suchmaschinen die Seiten nicht indizieren und Entwicklungsversionen Ihrer Website in ihrem Cache speichern. Um diese Konfiguration durchzuführen, müssen Sie das Standard-Metatags-Modul zur Site-Seitenvorlage hinzufügen. Die Standardeigenschaften für Metatags sind dann im Abschnitt SEO-Eigenschaften im Seiteneditor verfügbar. Mit diesen Eigenschaften können Sie die Metatags verwalten.
+Um sicherzustellen, dass Suchmaschinen eine in der Entwicklung befindliche Website nicht indizieren, sollten alle Seiten der Website die Meta-Tags **noindex** und **nofollow** haben. Eine gute Vorgehensweise besteht darin, ein Fragment auf der Grundlage des [MetaTags-Moduls](metatags-module.md) zu erstellen, das den folgenden Meta-Tag-Eintrag enthält, und sicherzustellen, dass das Fragment dem HTML-Abschnitt \<head\> aller auf Ihrer Website verwendeten Vorlagen hinzugefügt wird.
+
+```html
+<meta name="robots" content="noindex,nofollow" /> 
+```
 
 ## <a name="soft-launch-of-a-site"></a>Langsame Einführung einer Website
 
-Bei einer „langsamen Einführung“ wird eine Website einem begrenzten Publikum oder Markt zur Verfügung gestellt, bevor die vollständige Einführung erfolgt. Bei einer langsamen Einführung Ihrer Website sollten Sie die Metatags **NOINDEX** beibehalten. Auf diese Weise können Sie sicherstellen, dass die langsame Einführung auf das begrenzte Publikum beschränkt bleibt, das Sie erreichen möchten.
+Bei einer „langsamen Einführung“ wird eine Website einem begrenzten Publikum oder Markt zur Verfügung gestellt, bevor die vollständige Einführung erfolgt. Wenn Sie einen Soft-Launch Ihrer Website durchführen, sollten Sie die **noindex**-Meta-Tags an Ort und Stelle lassen. Auf diese Weise können Sie sicherstellen, dass die langsame Einführung auf das begrenzte Publikum beschränkt bleibt, das Sie erreichen möchten.
 
 ## <a name="a-site-that-is-in-production"></a>Eine Site, die in Produktion ist
 
@@ -44,7 +43,7 @@ Um die Indizierung von Suchmaschinen zu optimieren, verwendet das Rendering-Fram
 
 ### <a name="page-seo-settings-for-internal-preview-limited-audiences-and-all-audiences"></a>Seiten-SEO-Einstellungen für die interne Vorschau, begrenzte Zielgruppen und alle Zielgruppen
 
-Da Dynamics 365 Commerce authentifizierte WYSIWYG-Vorschauen (What you see is what you get) in Visual Page Builder unterstützt, können Autoren ihren Seiteninhalt vorbereiten, ohne befürchten zu müssen, dass die Informationen für die Besucher der Website sichtbar werden. Wenn eine Seite veröffentlicht werden soll, ihre Verfügbarkeit jedoch begrenzt sein muss, sollte sie das Meta-Tag **NOINDEX** aufweisen, damit sie nicht von Suchmaschinen indiziert wird. Wenn die Seite dann für alle Zielgruppen bereit ist, sollten alle grundlegenden SEO-Metadaten vorhanden sein, um die Effizienz der Suchmaschinenindizierung zu maximieren. Darüber hinaus sollte das Metatag **NOLIMIT** entfernt werden.
+Da Dynamics 365 Commerce authentifizierte WYSIWYG-Vorschauen (What you see is what you get) in Visual Page Builder unterstützt, können Autoren ihren Seiteninhalt vorbereiten, ohne befürchten zu müssen, dass die Informationen für die Besucher der Website sichtbar werden. Wenn eine Seite veröffentlicht werden muss, aber nur begrenzt sichtbar sein soll, sollte sie mit dem Meta-Tag **noindex** versehen werden, damit sie von Suchmaschinen nicht indiziert wird. Wenn die Seite dann für alle Zielgruppen bereit ist, sollten alle grundlegenden SEO-Metadaten vorhanden sein, um die Effizienz der Suchmaschinenindizierung zu maximieren. Außerdem sollte der **nolimit** Meta-Tag entfernt werden.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

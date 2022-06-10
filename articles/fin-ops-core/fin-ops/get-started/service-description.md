@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 26b2821f33ea23dde1fda1d461baa5de1b4f9efc
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 3385edf8961d04cf8bfc4ca06299f1911b76a4f5
+ms.sourcegitcommit: 2b119aec0e6f49bfd36125d9660f49cde5394446
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740651"
+ms.lasthandoff: 05/16/2022
+ms.locfileid: "8758768"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Servicebeschreibung für Finanz- und Betriebs-Apps
 
@@ -132,9 +132,9 @@ In diesem Abschnitt werden einige typische Umgebungs- und Datenverwaltungsereign
 
 LCS bietet [Self-Service-Tools](../../dev-itpro/deployment/infrastructure-stack.md) und [Datenbankverschiebungsvorgänge](../../dev-itpro/database/dbmovement-operations.md), die zur Ausführung von Umgebungs- und Datenverwaltungsaufgaben verwendet werden. Im Folgenden finden Sie einige Beispiele hierfür:
 
-**Ereignisl:** [Anfordern einer Produktionsinstanz](../imp-lifecycle/prepare-go-live.md#requesting-the-production-environment)
+**Ereignisl:** [Anfordern einer Produktionsinstanz](../imp-lifecycle/go-live-faq.md#when-can-i-configure-and-request-my-production-environment)
 
-- Vervollständigen Sie die [Go-Live-Checkliste](../imp-lifecycle/prepare-go-live.md) und senden Sie sie an das [Microsoft FastTrack](/dynamics365/fasttrack/) Team.
+- Füllen Sie die [Überprüfung der Bereitschaft zum Go-Live](../imp-lifecycle/prepare-go-live.md) aus und senden Sie sie an das [Microsoft FastTrack](/dynamics365/fasttrack/) Team.
 - Vervollständigen Sie das [LCS-Abonnement Kalkulation](../../dev-itpro/lifecycle-services/subscription-estimator.md), bevor Sie eine Produktionsinstanz anfordern.
 - Führen Sie alle Implementierungsaufgaben aus, die in der [LCS-Methodik](../../dev-itpro/lifecycle-services/create-methodology.md) definiert sind.
 

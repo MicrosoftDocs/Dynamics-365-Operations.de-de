@@ -1,8 +1,8 @@
 ---
-title: MPOS mit einem Codesignaturzertifikat signieren
+title: Signieren Sie die MPOS .appx-Datei mit einem Code Signing Zertifikat
 description: In diesem Thema wird erläutert, wie MPOS mit einem Codesignaturzertifikat signiert wird.
 author: mugunthanm
-ms.date: 05/11/2022
+ms.date: 05/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: tfehr
@@ -10,16 +10,17 @@ ms.custom: 28021
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-09-2019
-ms.openlocfilehash: e45961cf1ddb385d914b700d03bc95d07de47b68
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 38c094de6f94381a809fdb68d2e76d410e406934
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741547"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811084"
 ---
-# <a name="sign-mpos-appx-with-a-code-signing-certificate"></a>MPOS-APPX mit Codesignaturzertifikat signieren
+# <a name="sign-the-mpos-appx-file-with-a-code-signing-certificate"></a>Signieren Sie die MPOS .appx-Datei mit einem Code Signing Zertifikat
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Um Modern POS (MPOS) zu installieren, müssen Sie die MPOS-App mit einem Codesignaturzertifikat eines vertrauenswürdigen Anbieters signieren und dasselbe Zertifikat auf allen Computern installieren, auf denen MPOS im vertrauenswürdigen Stammordner für den aktuellen Benutzer installiert ist.
 
@@ -42,7 +43,7 @@ Die Verwendung einer Aufgabe „Sichere Datei“ ist der empfohlene Ansatz für 
 ![MPOS-App-Signatur-Flow.](media/POSSigningFlow.png)
 
 > [!NOTE]
-> Derzeit unterstützt das OOB-Paket nur das Signieren der APPX-Datei, die verschiedenen Self-Service-Installationsprogramme wie MPOIS, RSSU und HWS werden von diesem Prozess nicht signiert. Sie müssen es manuell mit SignTool oder anderen Signiertools signieren. Das zum Signieren der APPX-Datei verwendete Zertifikat muss auf dem Computer installiert sein, auf dem Modern POS installiert ist.
+> Derzeit unterstützt das OOB-Packaging nur das Signieren der .appx-Datei, die verschiedenen Self-Service-Installer wie MPOIS, RSSU und HWS werden von diesem Prozess nicht signiert. Sie müssen es manuell mit SignTool oder anderen Signiertools signieren. Das zum Signieren der .appx-Datei verwendete Zertifikat muss auf dem Rechner installiert sein, auf dem Modern POS installiert ist.
 
 ## <a name="steps-to-configure-the-certificate-for-signing-in-azure-pipelines"></a>Schritte zum Konfigurieren des Zertifikats für die Anmeldung in Azure Pipelines
 
@@ -51,21 +52,22 @@ Die Verwendung einer Aufgabe „Sichere Datei“ ist der empfohlene Ansatz für 
 Laden Sie die [DownloadFile-Aufgabe](/visualstudio/msbuild/downloadfile-task) herunter und fügen Sie sie als ersten Schritt im Build-Prozess hinzu. Der Vorteil der Verwendung der Aufgabe „Sichere Datei“ besteht darin, dass die Datei verschlüsselt und während des Builds auf dem Datenträger platziert wird, unabhängig davon, ob die Buildpipeline erfolgreich ist, fehlschlägt oder abgebrochen wird. Die Datei wird nach Abschluss des Build-Vorgangs aus dem Download-Speicherort gelöscht.
 
 1. Laden Sie die Aufgabe „Sichere Datei“ herunter und fügen Sie sie als ersten Schritt in der Azure-Buildpipeline hinzu. Sie können die Aufgabe „Sichere Datei“ aus [DownloadFile](https://marketplace.visualstudio.com/items?itemName=automagically.DownloadFile) herunterladen.
-2. Laden Sie das Zertifikat in die Aufgabe „Sichere Datei“ hoch und legen Sie den Referenznamen unter „Ausgabevariablen“ fest, wie auf dem folgenden Bild gezeigt.
+1. Laden Sie das Zertifikat in die Aufgabe „Sichere Datei“ hoch und legen Sie den Referenznamen unter „Ausgabevariablen“ fest, wie auf dem folgenden Bild gezeigt.
     > [!div class="mx-imgBorder"]
     > ![Aufgabe „Sichere Datei“](media/SecureFile.png)
-3. Erstellen Sie eine neue Variable in Azure Pipelines, indem Sie **Neue Variable** auf der Registerkarte **Variablen** auswählen.
-4. Geben Sie im Wertefeld einen Namen für die Variable an, z. B. **MySigningCert**.
-5. Speichern Sie die Variable.
-6. Öffnen Sie die Datei **Customization.settings** aus **RetailSDK\\BuildTools** und aktualisieren Sie **ModernPOSPackageCertificateKeyFile** mit dem in der Pipeline erstellten Variablennamen (Schritt 3). Beispiel:
+1. Erstellen Sie eine neue Variable in Azure Pipelines, indem Sie **Neue Variable** auf der Registerkarte **Variablen** auswählen.
+1. Geben Sie im Wertefeld einen Namen für die Variable an, z. B. **MySigningCert**.
+1. Speichern Sie die Variable.
+1. Öffnen Sie die Datei **Customization.settings** aus **RetailSDK\\BuildTools** und aktualisieren Sie **ModernPOSPackageCertificateKeyFile** mit dem in der Pipeline erstellten Variablennamen (Schritt 3). Beispiel:
 
     ```Xml
     <ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' ==''">$(MySigningCert)</ModernPOSPackageCertificateKeyFile>
     ```
     Dieser Schritt ist erforderlich, wenn das Zertifikat nicht kennwortgeschützt ist. Wenn das Zertifikat kennwortgeschützt ist, fahren Sie mit den folgenden Schritten fort.
- 
-7. Fügen Sie auf der Registerkarte **Variablen** der Pipeline eine neue Variable für sicheren Text hinzu. Stellen Sie den Namen auf **MySigningCert.secret** ein und legen Sie den Wert des Kennworts für das Zertifikat fest. Wählen Sie das Schlosssymbol aus, um die Variable zu sichern.
-8. Fügen Sie der Pipeline eine **Powershell-Skript**-Aufgabe Task hinzu (nach dem Herunterladen der sicheren Datei und vor dem Build-Schritt). Stellen Sie den **Anzeige**-Namen bereit und legen Sie den Typ als **Inline** fest. Kopieren Sie Folgendes und fügen Sie es in den Skriptabschnitt ein.
+    
+1. Wenn Sie die MPOS .appx-Datei beim Signieren mit einem Zertifikat mit einem Zeitstempel versehen möchten, öffnen Sie die Datei **Retail SDK \\Build Tool \\Customization.settings** und aktualisieren Sie die Variable **ModernPOSPackageCertificateTimestamp** mit dem Zeitstempelanbieter (z.B. `http://timestamp.digicert.com`).
+1. Fügen Sie auf der Registerkarte **Variablen** der Pipeline eine neue Variable für sicheren Text hinzu. Stellen Sie den Namen auf **MySigningCert.secret** ein und legen Sie den Wert des Kennworts für das Zertifikat fest. Wählen Sie das Schlosssymbol aus, um die Variable zu sichern.
+1. Fügen Sie der Pipeline eine **Powershell-Skript**-Aufgabe Task hinzu (nach dem Herunterladen der sicheren Datei und vor dem Build-Schritt). Stellen Sie den **Anzeige**-Namen bereit und legen Sie den Typ als **Inline** fest. Kopieren Sie Folgendes und fügen Sie es in den Skriptabschnitt ein.
 
     ```powershell
     Write-Host "Start adding the PFX file to the certificate store."
@@ -74,7 +76,7 @@ Laden Sie die [DownloadFile-Aufgabe](/visualstudio/msbuild/downloadfile-task) he
     Import-PfxCertificate -FilePath $pfxpath -CertStoreLocation Cert:\CurrentUser\My -Password $secureString
     ```
 
-9. Öffnen Sie die Datei **Customization.settings** aus **RetailSDK\\BuildTools** und aktualisieren Sie **ModernPOSPackageCertificateThumbprint** mit dem Wert des Zertifikatfingerabdrucks.
+1. Öffnen Sie die Datei **Customization.settings** aus **RetailSDK\\BuildTools** und aktualisieren Sie **ModernPOSPackageCertificateThumbprint** mit dem Wert des Zertifikatfingerabdrucks.
 
     ```Xml
        <ModernPOSPackageCertificateThumbprint Condition="'$(ModernPOSPackageCertificateThumbprint)' == ''"></ModernPOSPackageCertificateThumbprint>
@@ -82,7 +84,6 @@ Laden Sie die [DownloadFile-Aufgabe](/visualstudio/msbuild/downloadfile-task) he
  
 Einzelheiten zum Abrufen des Fingerabdrucks für ein Zertifikat finden Sie unter [Zertifikatfingerabdruck abrufen](/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate#to-retrieve-a-certificates-thumbprint). 
 
- 
 ## <a name="download-or-generate-a-certificate-to-sign-the-mpos-app-manually-using-msbuild-in-sdk"></a>Zertifikat herunterladen oder generieren, um die MPOS-App manuell mit msbuild im SDK zu signieren
 
 Wenn ein heruntergeladenes oder generiertes Zertifikat verwendet wird, um die MPOS-App zu signieren, dann führt das Aktualisieren des Knotens **ModernPOSPackageCertificateKeyFile** in der Datei **BuildTools\\Customization.settings** dazu, das auf den Speicherort der PFX-Datei (**$(SdkReferencesPath)\\appxsignkey.pfx**) verwiesen wird. Beispiel:

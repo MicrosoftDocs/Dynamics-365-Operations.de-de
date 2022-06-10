@@ -2,7 +2,7 @@
 title: Breadcrumb-Modul
 description: Dieses Thema behandelt Breadcrumb-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
-ms.date: 10/20/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f387b6353e58ebb454b74568ddc17ae6d25d7e36
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: aa7f6e2f2b15c3e5d89cd645b3f1cc4c83c5b8d9
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109731"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780333"
 ---
 # <a name="breadcrumb-module"></a>Breadcrumb-Modul
 
@@ -64,11 +64,11 @@ Um ein Breadcrumb-Modul einem PDP hinzuzufügen und die erforderlichen Eigenscha
 1. Gehen Sie zu **Website-Einstellungen \> Erweiterungen** und wählen dann für die Einstellung **Breadcrumb-Anzeigetyp auf PDP** die Option **Kategoriehierarchie anzeigen** aus.
 1. Gehen Sie zu **Vorlagen** und wählen Sie die PDP-Vorlage aus.
 1. Im Slot **Container**, der das Kauffeldmodul enthält, wählen Sie die Ellipsen (**...**) und wählen **Modul hinzufügen**.
-1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Breadcrumb** und dann **OK** aus.
+1. Wählen Sie im Dialogfeld **Module auswählen** das Modul **Brotkrümel** und wählen Sie dann **OK**.
 1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
 1. Gehe Sie zu **Seiten** und öffnen Sie einen PDP, der die PDP-Vorlage verwendet. Wenn noch kein PDP vorhanden ist, erstellen Sie einen.
 1. Im Slot **Container**, der das Kauffeldmodul enthält, wählen Sie die Ellipsen (**...**) und wählen **Modul hinzufügen**.
-1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Breadcrumb** und dann **OK** aus.
+1. Wählen Sie im Dialogfeld **Module auswählen** das Modul **Brotkrümel** und wählen Sie dann **OK**.
 1. Im Eigenschaftenbereich des Slots **Breadcrumb** wählen Sie unter **Root** den **Link Text**.
 1. In dem **Link Text** Dialogfeld geben Sie **Startseite** ein und wählen dann unter **Linkziel** **Fügen Sie einen Link hinzu**.
 1. Im Dialogfeld **Fügen Sie einen Link hinzu** wählen Sie den Link für die Breadcrumb-Ursprung und wählen Sie **OK**.

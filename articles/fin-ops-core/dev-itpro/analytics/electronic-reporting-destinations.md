@@ -2,7 +2,7 @@
 title: Zielorte für elektronische Berichterstellung (ER)
 description: Dieses Thema enthält Informationen zur Verwaltung von EB-Zielen (Electronic Reporting), zu den unterstützten Zieltypen und zu Sicherheitsaspekten.
 author: nselin
-ms.date: 09/16/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e8e176b8d4e14eee2050b3c66f7547ff878b5174
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: e3154cb62531bf956365b420b454c98ead7f7335
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647092"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780459"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Zielorte für elektronische Berichterstellung (ER)
 
@@ -45,7 +45,7 @@ Alternativ können Sie eine der folgenden Komponenten installieren. Beachten Sie
 - Microsoft Dynamics AX-Anwendungsversion 7.0.1 (Mai 2016)
 - [Hotfix für die Verwaltung elektronischer Berichtsziele](https://fix.lcs.dynamics.com/issue/results/?q=3160213)
 
-Außerdem gibt es einen [Drucken](er-destination-type-print.md)-Zieltyp. Um ihn zu verwenden, müssen Sie Microsoft Dynamics 365 Finance Version 10.0.9 (April 2020) installieren.
+Außerdem gibt es einen [Drucken](er-destination-type-print.md)-Zieltyp. Um ihn zu verwenden, müssen Sie Microsoft Microsoft Dynamics 365 Finance Version 10.0.9 (April 2020) installieren.
 
 ## <a name="overview"></a>Übersicht
 
@@ -173,11 +173,11 @@ In Versionen von Finance **vor der Version 10.0.18** kann die PDF-Konvertierungs
 
 ### <a name="limitations"></a>Einschränkungen
 
-Die PDF-Konvertierungsoption ist nur für Cloud-Bereitstellungen verfügbar.
+Ab Finance **Version 10.0.9** ist die PDF-Konvertierungsoption nur für Cloud-Bereitstellungen verfügbar. Ab Finance-Version **10.0.27** ist die PDF-Konvertierungsoption für jede lokale Bereitstellung verfügbar, bei der [Internetverbindung](../user-interface/client-disconnected.md) aktiviert ist.
 
 Das erstellte PDF ist auf maximal 300 Seiten beschränkt.
 
-In Finance **Version 10.0.9** wird im PDF-Dokument, das aus einer Excel-Ausgabe erstellt wird, nur die Querformat-Seitenausrichtung unterstützt. In Finance **Version 10.0.10 (Mai 2020) und höher** können Sie im PDF-Dokument, das aus einer Excel-Ausgabe erstellt wird, [die Seitenausrichtung angeben](#SelectPdfPageOrientation), während Sie ein EB-Ziel konfigurieren.
+Ab Finance **Version 10.0.9** wird im PDF-Dokument, das aus einer Excel-Ausgabe erstellt wird, nur die Querformat-Seitenausrichtung unterstützt. Ab Finance **Version 10.0.10** können Sie im PDF-Dokument, das aus einer Excel-Ausgabe erstellt wird, [die Seitenausrichtung angeben](#SelectPdfPageOrientation), während Sie ein ER-Ziel konfigurieren.
 
 Für die Konvertierung einer Ausgabe, die keine eingebetteten Schriftarten enthält, werden nur die allgemeinen Systemschriftarten des Windows-Betriebssystems verwendet.
 

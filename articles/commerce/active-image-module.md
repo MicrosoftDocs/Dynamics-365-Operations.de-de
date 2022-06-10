@@ -2,7 +2,7 @@
 title: Aktives Bildmodul
 description: Dieses Thema enthält aktive Bildmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 36b7d6dea87c7f309c07608794d443a0ae19be211847d2cddcad95f2d933a8db
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 06b9162029de3f5f3fede9583fa8a4a96fefb2f3
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716907"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780284"
 ---
 # <a name="active-image-module"></a>Aktives Bildmodul
 
@@ -58,11 +58,11 @@ Um ein aktives Bildmodul einer neuen Seite hinzuzufügen und die erforderlichen 
 
 1. Gehen Sie auf **Vorlagen** und öffnen Sie die Marketingvorlage für die Homepage Ihrer Site (oder erstellen Sie eine neue Marketingvorlage).
 1. Auf der Standardseite wählen Sie **Haupt**-Slot und dann die Ellipsen (**...**) und **Modul hinzufügen**.
-1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Aktives Bild** und dann **OK** aus.
+1. Wählen Sie im Dialogfeld **Module auswählen** das Modul **Aktives Bild** und dann **OK** aus.
 1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
 1. Gehen Sie zu **Seiten** und öffnen Sie die Homepage der Site (oder erstellen Sie eine neue Homepage mithilfe der Marketingvorlage).
-1. Auf dem Seitenüberblick wählen Sie den **Haupt**-Slot und wählen die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
-1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Aktives Bild** und dann **OK** aus.
+1. Auf dem Seitenüberblick wählen Sie den Slot **Haupt** und wählen die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Module auswählen** das Modul **Aktives Bild** und dann **OK** aus.
 1. Fügen Sie im Eigenschaftenbereich des aktiven Bildmoduls ein Bild hinzu und legen Sie die Canvasseite auf die Größe des Bildes fest.
 1. Legen Sie die X- und Y-Koordinaten fest und fügen Sie die entsprechende Produkt-ID-Nummer hinzu.
 1. Fügen Sie nach Bedarf zusätzliche aktive Bildmodul hinzu und konfigurieren Sie sie.

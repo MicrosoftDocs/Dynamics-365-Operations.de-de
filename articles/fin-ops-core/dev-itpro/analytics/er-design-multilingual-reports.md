@@ -2,7 +2,7 @@
 title: Entwerfen Sie mehrsprachige Berichte in der elektronischen Berichterstellung
 description: In diesem Thema wird erläutert, wie Sie mithilfe von Electronic Reporting (ER) mehrsprachige Berichte erstellen und erstellen können.
 author: NickSelin
-ms.date: 11/30/2021
+ms.date: 04/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eab17635494657740fe46364bde0773dae5b9e4b
-ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
+ms.openlocfilehash: aa8297d4f5c56a7a20561b1a90c5852e65dbff31
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8313690"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811606"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Entwerfen Sie mehrsprachige Berichte in der elektronischen Berichterstellung
 
@@ -218,6 +218,11 @@ Beschriftungen einer EB-Komponente, die bearbeitet werden können, werden zusamm
 
 Auf Beschriftungen einer EB-Basiskomponente kann in einer abgeleiteten Version der EB-Komponente verwiesen werden, die Sie erstellen, um Ihre Änderungen einzuführen.
 
+> [!TIP]
+> Wenn Sie eine ER-Lösung entwerfen, können Sie Ihre eigene ER-[Datenmodell](er-overview-components.md#data-model-component)-Komponente von der bereitgestellten ableiten. In diesem abgeleiteten Datenmodell können Sie Ihre eigenen ER-Beschriftungen einführen und sie in allen ER-Formaten verwenden, die das Datenmodell als Datenquelle verwenden. Sie können dann Ihre eigene ER-[Format](er-overview-components.md#format-component)-Komponente von derjenigen ableiten, die bereitgestellt wird, indem Sie Ihr abgeleitetes ER-Datenmodell anstelle des bereitgestellten auswählen. Ab Version 10.0.28 können Sie die Funktion **Erweiterter Zugriff auf Beschriftungen des aufsteigenden ER-Datenmodells** aktivieren, um auf Beschriftungen eines aufsteigenden ER-Datenmodells in abgeleiteten ER-Formatkomponenten zuzugreifen, auch wenn das ER-Datenmodell, das Sie für die abgeleitete ER-Komponente ausgewählt haben, sich von dem in der Basis-ER-Komponente verwendeten Modell unterscheidet.
+>
+> Wenn derselbe Beschriftungsname in Ihrer abgeleiteten Komponente und ihren aufsteigenden Komponenten verwendet wird, wird Ihre Übersetzung dieser Beschriftung als die relevanteste verwendet.
+
 Die EB-Versionierung steuert die Zuordnung der Beschriftung zu einem beliebigen Attribut in einer EB-Komponente. Änderungen an der Beschriftungszuordnung werden in der Liste der Änderungen (Delta) einer bearbeitbaren EB-Komponente aufgezeichnet, die als abgeleitete Version der bereitgestellten EB-Komponente erstellt wurde. Diese Änderungen werden überprüft, wenn eine abgeleitete Version auf eine neue Basisversion zurückgesetzt wird.
 
 ## <a name="functions"></a>Funktionen
@@ -240,7 +245,7 @@ Wenn Sie den Status einer ER-Konfigurationsversion von **Entwurf** auf **Fertig*
 
 Wir empfehlen Ihnen, die Funktion **Beschleunigung der Speicherung von ER-Labels** im Arbeitsbereich **Funktionsverwaltung** zu aktivieren. Diese Funktion trägt dazu bei, die Auslastung der Netzwerkbandbreite und die Gesamtleistung des Systems zu verbessern, da in den meisten Fällen ER-Etiketten in einer einzigen Sprache verwendet werden, wenn Sie mit einer einzigen ER-Konfiguration arbeiten.
 
-Um das ausgewählte Speicherschema für die Aufbewahrung der Labels aller ER-Konfigurationen in der aktuellen Finance-Instanz anzuwenden, führen Sie die folgenden Schritte aus.
+Um das ausgewählte Speicherschema für die Aufbewahrung der Beschriftungen aller ER-Konfigurationen in der aktuellen Finance-Instanz anzuwenden, führen Sie die folgenden Schritte aus.
 
 1. Gehen Sie zu **Organisationsverwaltung** > **Periodisch** > **Das ausgewählte Schema zum Speichern von Labels für alle ER-Konfigurationen anwenden**.
 2. Wählen Sie **OK** aus.

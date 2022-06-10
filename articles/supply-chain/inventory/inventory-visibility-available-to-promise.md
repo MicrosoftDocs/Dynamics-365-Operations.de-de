@@ -2,7 +2,7 @@
 title: Inventory Visibility hat Lagerbestandsänderungen geplant und kann diese versprechen
 description: In diesem Thema wird beschrieben, wie Sie künftige Lagerbestandsänderungen planen und ATP-Mengen (Available-to-Promise) berechnen können.
 author: yufeihuang
-ms.date: 03/04/2022
+ms.date: 05/11/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-04
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 7ce868871f093fd734a466bb8a06c5782bf83302
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: 7456f87bede7bd0073223fa4762f96f919799e06
+ms.sourcegitcommit: 38d97efafb66de298c3f504b83a5c9b822f5a62a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8525883"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "8763252"
 ---
 # <a name="inventory-visibility-on-hand-change-schedules-and-available-to-promise"></a>Inventory Visibility hat Lagerbestandsänderungen geplant und kann diese versprechen
 
@@ -32,9 +32,12 @@ Bevor Sie ATP verwenden können, müssen Sie eine oder mehrere berechnete Messun
 
 ### <a name="set-up-calculated-measures-for-atp-quantities"></a>Berechnete Messungen für ATP-Mengen festlegen
 
-Die *ATP berechnete Kennzahl* ist eine vordefinierte berechnete Kennzahl, die in der Regel verwendet wird, um den Lagerbestand zu ermitteln, der derzeit verfügbar ist. Die Summe der addierten Modifikatormengen ist die Vorratsmenge und die Summe der subtrahierten Modifikatormengen ist die Bedarfsmenge.
+Die *ATP berechnete Kennzahl* ist eine vordefinierte berechnete Kennzahl, die in der Regel verwendet wird, um den Lagerbestand zu ermitteln, der derzeit verfügbar ist. Die *Liefermenge* ist die Summe der Größen für die physikalischen Maße, die den Modifikatortyp *Zusatz* aufweisen, und die *Nachfragemenge* ist die Summe der Größen für die physikalischen Maße, die den Modifikatortyp *Subtraktion* aufweisen.
 
-Sie können mehrere berechnete Messungen hinzufügen, um ATP-Mengen zu berechnen. Die Gesamtzahl der Modifikatoren für alle von ATP berechneten Messungen sollte jedoch weniger als neun betragen.
+Sie können mehrere berechnete Messungen hinzufügen, um mehrere ATP-Mengen zu berechnen. Die Gesamtzahl der unterschiedlichen physischen Measures für alle von ATP berechneten Measures sollte jedoch weniger als neun betragen.
+
+> [!IMPORTANT]
+> Ein berechnetes Measure ist eine Zusammenstellung von physikalischen Measures. Seine Formel kann nur physikalische Measures ohne Duplikate enthalten, keine berechneten Measures.
 
 Sie legen zum Beispiel die folgende berechnete Messung fest:
 
@@ -43,6 +46,12 @@ Sie legen zum Beispiel die folgende berechnete Messung fest:
 Die Summe (*PhysicalInvent* + *OnHand* + *Unrestricted* + *QualityInspection* + *Inbound*) steht für den Vorrat und die Summe (*ReservPhysical* + *SoftReservePhysical* + *Outbound*) für den Bedarf. Die berechnete Messung kann also folgendermaßen verstanden werden:
 
 **Auf Lagerbestand** = *Vorrat* - *Bedarf*
+
+Sie können eine weitere berechnete Kennzahl hinzufügen, um die ATP-Menge **On-hand-physical** zu berechnen.
+
+**On-hand-physical** = (*PhysicalInvent* + *OnHand* + *Unrestricted* + *QualityInspection* + *Inbound*) – (*Outbound*)
+
+Es gibt acht unterschiedliche physikalische Measures für diese beiden ATP-berechneten Measures: *PhysicalInvent*, *OnHand*, *Unrestricted*, *QualityInspection*, *Inbound*, *ReservPhysical*, *SoftReservePhysical* und *Outbound*.
 
 Weitere Informationen über berechnete Messungen finden Sie unter [Berechnete Messungen](inventory-visibility-configuration.md#calculated-measures).
 
@@ -80,7 +89,7 @@ Sie bestellen z.B. 10 Fahrräder und erwarten, dass sie morgen geliefert werden.
 
 Wenn Sie Inventory Visibility nach Lagerbeständen und ATP-Mengen abfragen, erhalten Sie für jeden Tag in der Planperiode die folgenden Informationen:
 
-- **Datum** - Das Datum, für das das Ergebnis gilt.
+- **Datum** - Das Datum, für das das Ergebnis gilt. Die Zeitzone ist die koordinierte Weltzeit (UTC).
 - **Auf Lagerbestand** - Die tatsächliche Menge im Lagerbestand für das angegebene Datum. Diese Berechnung erfolgt auf der Grundlage der ATP-berechneten Messung, die für Inventory Visibility konfiguriert ist.
 - **Geplantes Angebot** - Die Summe aller geplanten eingehenden Mengen, die zum angegebenen Datum noch nicht physisch zum sofortigen Verbrauch oder Versand verfügbar sind.
 - **Geplanter Bedarf** - Die Summe aller geplanten ausgehenden Mengen, die bis zum angegebenen Datum noch nicht verbraucht oder versandt wurden.
@@ -132,7 +141,7 @@ Die Ergebnisse in diesem Beispiel zeigen einen *hochgerechneten Lagerbestand* an
 
     - Bedarfsmenge von 15 für Februar 4, 2022
     - Vorrat von 1 für Februar 5, 2022
-    - Bedarfsmenge von 3 für Februar 6, 2022
+    - Vorrat von 3 für Februar 6, 2022
 
     Die Ergebnisse werden in der folgenden Tabelle veranschaulicht.
 
@@ -190,8 +199,8 @@ Sie können die folgenden URLs der Anwendungsprogrammierschnittstelle (API) verw
 
 | Pfad | Methode | Description |
 | --- | --- | --- |
-| `/api/environment/{environmentId}/on-hand/changeschedule` | `POST` | Erstellen Sie eine geplante Änderung des Lagerbestands. |
-| `/api/environment/{environmentId}/on-hand/changeschedule/bulk` | `POST` | Erstellen Sie mehrere geplante Änderungen im Lagerbestand. |
+| `/api/environment/{environmentId}/onhand/changeschedule` | `POST` | Erstellen Sie eine geplante Änderung des Lagerbestands. |
+| `/api/environment/{environmentId}/onhand/changeschedule/bulk` | `POST` | Erstellen Sie mehrere geplante Änderungen im Lagerbestand. |
 | `/api/environment/{environmentId}/onhand` | `POST` | Erstellen Sie ein Ereignis für Lagerbestandsänderungen. |
 | `/api/environment/{environmentId}/onhand/bulk` | `POST` | Erzeugen Sie mehrere Ereignisse. |
 | `/api/environment/{environmentId}/onhand/indexquery` | `POST` | Abfrage mit Hilfe der `POST`-Methode. |
@@ -199,31 +208,46 @@ Sie können die folgenden URLs der Anwendungsprogrammierschnittstelle (API) verw
 
 Weitere Informationen finden Sie unter [Inventory Visibility öffentliche APIs](inventory-visibility-api.md).
 
-### <a name="submit-on-hand-change-schedules"></a>Lagerbestand-Änderungspläne senden
+### <a name="create-one-on-hand-change-schedule"></a>Einen Zeitplan für Lagerbestandsänderungen erstellen
 
-Zeitpläne für Lagerbestandsänderungen werden erstellt, indem Sie eine `POST`-Anfrage an die entsprechende Inventory Visibility Service-URL senden (siehe den Abschnitt [Änderungszeitpläne, Änderungsereignisse und ATP-Abfragen über die API senden](#api-urls)). Sie können auch Massenanfragen senden.
+Ein Zeitplan für Lagerbestandsänderungen wird erstellt, indem Sie eine `POST`-Anfrage an die entsprechende Inventory Visibility Service-URL senden (siehe den Abschnitt [Änderungszeitpläne, Änderungsereignisse und ATP-Abfragen über die API senden](#api-urls)). Sie können auch Massenanfragen senden.
 
-Um einen Zeitplan für Lagerbestandsänderungen zu senden, muss der Anfragetext eine Organisations-ID, eine Produkt-ID, ein geplantes Datum und die Mengen nach Datum enthalten. Das geplante Datum muss zwischen dem aktuellen Datum und dem Ende der aktuellen Zeitplanperiode liegen.
+Ein Zeitplan für Lagerbestandsänderungen kann nur erstellt werden, wenn das geplante Datum zwischen dem aktuellen Datum und dem Ende der aktuellen Zeitplanperiode liegt. Das DateTime-Format sollte *Tag.Monat.Jahr* (zum Beispiel, **01.02.2022**) sein. Das Zeitformat muss nur auf den Tag genau sein.
 
-#### <a name="example-request-body-that-contains-a-single-update"></a>Beispiel für einen Abfragetext, der eine einzelne Aktualisierung enthält
+Diese API erstellt einen einzelnen Zeitplan für Lagerbestandsänderungen.
 
-Das folgende Beispiel zeigt einen Abfragetext, der eine einzelne Aktualisierung enthält.
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/changeschedule
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        id: string,
+        organizationId: string,
+        productId: string,
+        dimensionDataSource: string, # optional
+        dimensions: {
+            [key:string]: string,
+        },
+        quantitiesByDate: {
+            [datetime:datetime]: {
+                [dataSourceName:string]: {
+                    [key:string]: number,
+                },
+            },
+        },
+    }
+```
+
+Das folgende Beispiel zeigt einen Beispielkörperinhalt ohne `dimensionDataSource`.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/on-hand/changeschedule
-
-# Method
-Post
-
-# Header
-# Replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
-# Body
 {
     "id": "id-bike-0001",
     "organizationId": "usmf",
@@ -232,38 +256,60 @@ Authorization: "Bearer {access_token}"
         "SiteId": "1",
         "LocationId": "11",
         "ColorId": "Red",
-        "SizeId": "Small"
+        "SizeId&quot;: &quot;Small"
     },
     "quantitiesByDate":
     {
-        "2022/02/01": // today
+        "2022-02-01": // today
         {
             "pos":{
-                "inbound": 10,
-            },
-        },
-    },
+                "inbound": 10
+            }
+        }
+    }
 }
 ```
 
-#### <a name="example-request-body-that-contains-multiple-bulk-updates"></a>Beispiel für einen Abfragetext, der mehrere (Massen-)Aktualisierungen enthält
+### <a name="create-multiple-on-hand-change-schedules"></a>Mehrere Zeitpläne für Lagerbestandänderungen erstellen
 
-Das folgende Beispiel zeigt einen Abfragetext, der mehrere (Massen-)Aktualisierungen enthält.
+Diese API kann mehrere Datensätze gleichzeitig erstellen. Die einzigen Unterschiede zwischen dieser API und der Einzelereignis-API sind die Werte `Path` und `Body`. Bei dieser API liefert `Body` ein Array von Datensätzen. Die maximale Anzahl an Datensätzen ist 512. Daher kann die Bulk-API für Zeitpläne für Lagerbestandsänderungen bis zu 512 geplante Änderungen gleichzeitig unterstützen.
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/changeschedule/bulk
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    [
+        {
+            id: string,
+            organizationId: string,
+            productId: string,
+            dimensionDataSource: string,
+            dimensions: {
+                [key:string]: string,
+            },
+            quantityDataSource: string, # optional
+            quantitiesByDate: {
+                [datetime:datetime]: {
+                    [dataSourceName:string]: {
+                        [key:string]: number,
+                    },
+                },
+            },
+        },
+        ...
+    ]
+```
+
+Das folgende Beispiel zeigt einen Beispielkörperinhalt.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/on-hand/changeschedule/bulk
-
-# Method
-Post
-
-# Header
-# replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
 [
     {
         "id": "id-bike-0001",
@@ -273,67 +319,51 @@ Authorization: "Bearer {access_token}"
             "SiteId": "1",
             "LocationId": "11",
             "ColorId": "Red",
-            "SizeId": "Small"
+            "SizeId&quot;: &quot;Small"
         },
         "quantitiesByDate":
         {
-            "2022/02/01": // today
+            "2022-02-01": // today
             {
                 "pos":{
-                    "inbound": 10,
-                },
-            },
-        },
+                    "inbound": 10
+                }
+            }
+        }
     },
     {
-        "id": "id-bike-0002",
+        "id": "id-car-0002",
         "organizationId": "usmf",
         "productId": "Car",
         "dimensions": {
             "SiteId": "1",
             "LocationId": "11",
             "ColorId": "Red",
-            "SizeId": "Small"
+            "SizeId&quot;: &quot;Small"
         },
         "quantitiesByDate":
         {
-            "2022/02/05":
+            "2022-02-05":
             {
                 "pos":{
-                    "outbound": 10,
-                },
-            },
-        },
+                    "outbound": 10
+                }
+            }
+        }
     }
 ]
 ```
 
-### <a name="submit-on-hand-change-events"></a>Lagerbestand-Änderungsereignisse senden
+### <a name="create-on-hand-change-events"></a>Erstellen von Ereignissen bei Lagerbestandsänderungen
 
 Ereignisse zur Änderung des Lagerbestands werden durch Senden einer `POST`-Anfrage an die entsprechende URL des Inventory Visibility Service ausgelöst (siehe Abschnitt [Änderungszeitpläne, Änderungsereignisse und ATP-Abfragen über die API senden](#api-urls)). Sie können auch Massenanfragen senden.
 
 > [!NOTE]
-> Ereignisse zur Änderung des Lagerbestands sind keine Besonderheit der ATP-Funktionalität, sondern sind Teil der Standard-API von Inventory Visibility. Wir haben dieses Beispiel aufgenommen, weil Ereignisse bei der Arbeit mit ATP von Bedeutung sind. Ereignisse zur Änderung des Lagerbestands ähneln den Reservierungen zur Änderung des Lagerbestands, aber die Nachrichten zu den Ereignissen müssen an eine andere API-URL gesendet werden, und die Nachrichten enthalten eine `quantities` statt einer `quantityByDate`. Weitere Informationen zu den Ereignissen der Lagerbestandsänderung und anderen Funktionen der Inventory Visibility API finden Sie unter [Öffentliche APIs für Inventory Visibility](inventory-visibility-api.md).
-
-Um ein Ereignis zur Änderung des Lagerbestands zu senden, muss der Anfragetext eine Organisations-ID, eine Produkt-ID, ein geplantes Datum und die Mengen nach Datum enthalten. Das geplante Datum muss zwischen dem aktuellen Datum und dem Ende der aktuellen Zeitplanperiode liegen.
+> Ereignisse zur Änderung des Lagerbestands sind keine Besonderheit der ATP-Funktionalität, sondern sind Teil der Standard-API von Inventory Visibility. Wir haben dieses Beispiel aufgenommen, weil Ereignisse bei der Arbeit mit ATP von Bedeutung sind. Ereignisse zur Änderung des Lagerbestands ähneln den Reservierungen zur Änderung des Lagerbestands, aber die Nachrichten zu den Ereignissen müssen an eine andere API-URL gesendet werden, und die Nachrichten enthalten eine `quantities` statt einer `quantityByDate`. Weitere Informationen zu den Ereignissen der Lagerbestandsänderung und anderen Funktionen der Inventory Visibility API finden Sie unter [Öffentliche APIs für Inventory Visibility](inventory-visibility-api.md#create-one-onhand-change-event).
 
 Das folgende Beispiel zeigt einen Anfragekörper, der ein einzelnes Ereignis zur Änderung des Lagerbestands enthält.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand
-
-# Method
-Post
-
-# Header
-# Replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
-# Body
 {
     "id": "id-bike-0001",
     "organizationId": "usmf",
@@ -342,7 +372,7 @@ Authorization: "Bearer {access_token}"
         "SiteId": "1",
         "LocationId": "11",
         "SizeId": "Big",
-        "ColorId": "Red",
+        "ColorId": "Red"
     },
     "quantities": {
         "pos": {
@@ -362,46 +392,71 @@ Legen Sie in Ihrer Anfrage `QueryATP` auf *wahr* fest, wenn Sie geplante Lagerbe
 - Wenn Sie den Antrag mit der Methode `POST` senden, legen Sie diesen Parameter im Antragstext fest.
 
 > [!NOTE]
-> Unabhängig davon, ob der Parameter `returnNegative` im Abfragetext auf *wahr* oder *falsch* festgelegt ist, enthält das Ergebnis negative Werte, wenn Sie geplante Lagerbestandsänderungen und ATP-Ergebnisse abfragen. Diese negativen Werte werden berücksichtigt, denn wenn nur Bedarfsbestellungen eingeplant werden oder wenn die Vorratsmengen geringer sind als die Bedarfsmengen, werden die eingeplanten Lagerbestandsänderungen negativ sein. Wenn negative Werte nicht berücksichtigt würden, wären die Ergebnisse verwirrend. Weitere Informationen über diese Option und wie sie bei anderen Abfragetypen funktioniert, finden Sie unter [Inventory Visibility public APIs](inventory-visibility-api.md).
+> Unabhängig davon, ob der Parameter `returnNegative` im Abfragetext auf *wahr* oder *falsch* festgelegt ist, enthält das Ergebnis negative Werte, wenn Sie geplante Lagerbestandsänderungen und ATP-Ergebnisse abfragen. Diese negativen Werte werden berücksichtigt, denn wenn nur Bedarfsbestellungen eingeplant werden oder wenn die Vorratsmengen geringer sind als die Bedarfsmengen, werden die eingeplanten Lagerbestandsänderungen negativ sein. Wenn negative Werte nicht berücksichtigt würden, wären die Ergebnisse verwirrend. Weitere Informationen über diese Option und wie sie bei anderen Abfragetypen funktioniert, finden Sie unter [Inventory Visibility public APIs](inventory-visibility-api.md#query-with-post-method).
 
-### <a name="post-method-example"></a>Beispiel für die POST-Methode
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/indexquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            siteId: string[],
+            locationId: string[],
+            [dimensionKey:string]: string[],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
 
 Das folgende Beispiel zeigt, wie Sie einen Anfragekörper erstellen, der mit der Methode `POST` an Inventory Visibility gesendet werden kann.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/on-hand/indexquery
-
-# Method
-Post
-
-# Header
-# replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
-# Body
 {
     "filters": {
         "organizationId": ["usmf"],
         "productId": ["Bike"],
         "siteId": ["1"],
-        "LocationId": ["11"],
+        "LocationId": ["11"]
     },
     "groupByValues": ["ColorId", "SizeId"],
     "returnNegative": true,
-    "QueryATP":true,
+    "QueryATP":true
 }
 ```
 
 ### <a name="get-method-example"></a>Beispiel für eine GET-Methode
 
+```txt
+Path:
+    /api/environment/{environmentId}/onhand
+Method:
+    Get
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Query(Url Parameters):
+    groupBy
+    returnNegative
+    [Filters]
+```
+
 Das folgende Beispiel zeigt, wie Sie eine Anfrage-URL als `GET`-Anfrage erstellen.
 
 ```txt
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true
+https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&LocationId=11&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true
 ```
 
 Das Ergebnis dieser `GET`-Anfrage ist genau dasselbe wie das Ergebnis der `POST`-Anfrage im vorherigen Beispiel.

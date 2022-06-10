@@ -2,7 +2,7 @@
 title: Unternehmensverzeichnis für mobilen Arbeitsbereich
 description: Dieses Thema enthält Informationen über den mobilen Arbeitsbereich "Unternehmensverzeichnis", mit dem Benutzer andere Mitarbeiter in ihrer Organisation anzeigen und Kontakt mit ihnen aufnehmen können.
 author: jcart1106
-ms.date: 09/17/2019
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,20 +12,21 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2152d89e7d60a74e8d7561ea888e60cff42dd1ffd0ec697fac371aad9b85383c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b754e46f194f60cc70d02367d4cca2a382821191
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720647"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811538"
 ---
 # <a name="company-directory-mobile-workspace"></a>Unternehmensverzeichnis für mobilen Arbeitsbereich
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
 Dieses Thema enthält Informationen zum **Unternehmensverzeichnis** im mobilen Arbeitsbereich. Dieser Arbeitsbereich ermöglicht Benutzern das Anzeigen von Kontakten und Mitarbeitern in der Organisation.
 
-Dieser mobile Arbeitsbereich kann mit der Finance and Operations Mobile-App verwendet werden.
+Dieser mobile Arbeitsbereich kann mit der Finance and Operations-Mobile-App verwendet werden.
 
 ## <a name="overview"></a>Übersicht
 Der mobile Arbeitsbereich **Unternehmensverzeichnis** ermöglicht Benutzern, folgende Aufgaben auszuführen:
@@ -49,7 +50,7 @@ Bevor Sie diesen mobilen Arbeitsbereich verwenden können, müssen die folgenden
 <tbody>
 <tr class="odd">
 <td>Eines der folgenden Produkte muss in der Organisation bereitgestellt werden:
-<ul><li>Eine Finance and Operations App</li>
+<ul><li>A Finance and Operations-App</li>
 <li>Microsoft Dynamics 365 Human Resources</li>
 </ul>
 </td>
@@ -66,7 +67,7 @@ Bevor Sie diesen mobilen Arbeitsbereich verwenden können, müssen die folgenden
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Herunterladen und Installieren der mobilen App
-Herunterladen und Installieren der Finance and Operations mobilen App:
+Laden Sie die mobile Finance and Operations-App herunter und installieren Sie diese:
 
 -   [Für Android-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Für iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

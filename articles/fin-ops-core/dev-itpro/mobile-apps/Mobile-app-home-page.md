@@ -1,8 +1,8 @@
 ---
 title: Startseite der mobilen App
-description: In diesem Thema wird die Finance and Operations (Dynamics 365) Mobile-App beschrieben. Zudem werden Links zu Ressourcen bereitgestellt, die bei der Implementierung in der Organisation helfen.
+description: Dieses Thema beschreibt die Mobile-App für Finanz und Betrieb (Dynamics 365) und enthält Links zu Ressourcen, die Ihnen bei der Implementierung in Ihrem Unternehmen helfen können.
 author: ChrisGarty
-ms.date: 01/22/2020
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 8a91f603b4dd058341110c59039a6d3c782e06ee768fbf0e7f94e9527a6354ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a6928b1fc7713b6822f53aaa77b8d1281eb6d320
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729707"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811172"
 ---
 # <a name="mobile-app-home-page"></a>Startseite der mobilen App
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-In diesem Thema wird die **Finance and Operations (Dynamics 365)** Mobile-App beschrieben. Zudem werden Links zu Ressourcen bereitgestellt, die bei der Implementierung in der Organisation helfen.
+Dieses Thema beschreibt die Mobile-App für **Finanz- und Betrieb (Dynamics 365)** und enthält Links zu Ressourcen, die Ihnen bei der Implementierung in Ihrem Unternehmen helfen können.
 
 ## <a name="overview"></a>Übersicht
 
@@ -76,7 +77,7 @@ Die folgende Tabelle enthält Links zu Ressourcen, die Ihnen beim Implementieren
 <tr class="odd">
 <td>1</td>
 <td>Systemadministrator</td>
-<td>Implementieren Sie die Finance and Operations App in Ihrer Organisation.</td>
+<td>Implementieren Sie die Finanz- und Betriebs-App in Ihrem Unternehmen.</td>
 <td><ul><li>Wenn Sie noch keine Version von Microsoft Dynamics 365 bereitgestellt haben, siehe <a href="../deployment/deploy-demo-environment.md">Eine Demoumgebung bereitstellen</a>.</li><li>Um eine Liste mobiler Arbeitsbereiche anzuzeigen, die verwendet werden können, siehe <a href="mobile-workspaces-released.md">Vor Kurzem freigegebene mobile Arbeitsbereiche</a>.</li></ul></td>
 </tr>
 <tr class="even">
@@ -131,8 +132,8 @@ Die folgende Tabelle enthält Links zu Ressourcen, die Ihnen beim Implementieren
 <td>Benutzer</td>
 <td>Laden Sie die mobile App herunter, und installieren Sie diese.</td>
 <td>
-<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and Operations App für Office Android</a><BR/>
-<a href="https://go.microsoft.com/fwlink/?linkid=850663">Finance and Operations App für iOS</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and Operations-App für Android</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850663">Finance and Operations-App für iOS</a><BR/>
 (Windows Phone nicht unterstützt)
 </td>
 </tr>

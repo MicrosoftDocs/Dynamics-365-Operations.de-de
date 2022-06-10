@@ -2,7 +2,7 @@
 title: Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
 description: Dieses Thema enthält Informationen zum Entwerfen eines Formats für die elektronische Berichterstellung (EB), um eine Excel-Vorlage auszufüllen und ausgehende Dokumente im Excel-Format zu generieren.
 author: NickSelin
-ms.date: 03/25/2022
+ms.date: 05/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ec25065f2e3cc3b5dd3c9004d5330447f7b2ac61
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 4a34f990c865aa8c82213a60c23d5a44ad75aee4
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645134"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811419"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
 
@@ -288,6 +288,16 @@ Sie können auf der Registerkarte **Importieren** des Aktionsbereichs die Option
 
 ![Option „Excel-Arbeitsblattformat-Element erstellen“ im Dialogfeld „Aus Excel aktualisieren“.](./media/er-excel-format-update-template.png)
 
+Ab Version 10.0.28 können Sie die Option **Excel-Kopfzeilen- und Excel-Fußzeilenformatelemente aktualisieren** verwenden.
+
+- Wenn Sie diese Option auf **Nein** setzen, bleiben die Formatelemente Excel-Kopfzeile und Excel-Fußzeile unverändert, auch wenn die entsprechenden Kopf- oder Fußzeilen in den Arbeitsblättern der importierten Vorlage im Excel-Arbeitsmappenformat aktualisiert wurden.
+- Wenn Sie diese Option auf **Ja** setzen, werden die Formatelemente Excel-Kopfzeile und Excel-Fußzeile verändert, wenn die entsprechenden Kopf- oder Fußzeilen in den Arbeitsblättern der importierten Vorlage im Excel-Arbeitsmappenformat aktualisiert werden.
+
+    - Wenn die Struktur einer Kopf- oder Fußzeile eines Arbeitsblatts nicht geändert oder nur angehängt wurde, wird die Struktur des entsprechenden Formatelements Excel-Kopfzeile oder Excel-Fußzeile aktualisiert. Bindungen von Formatelementen, die unter diesem Formatelement Excel-Kopfzeile oder Excel-Fußzeile verschachtelt sind, bleiben erhalten.
+    - Wenn die Struktur einer Kopf- oder Fußzeile eines Arbeitsblatts geändert wird, wird das entsprechende Formatelement der Excel-Kopfzeile oder Excel-Fußzeile neu erstellt. Bindungen von Formatelementen, die unter diesem Formatelement Excel-Kopfzeile oder Excel-Fußzeile verschachtelt sind, werden entfernt.
+
+![Option „Excel-Kopfzeilen- und Excel-Fußzeilenformatelemente aktualisieren“ im Dialogfeld „Aus Excel aktualisieren“.](./media/er-excel-format-update-template2.png)
+
 Führen Sie die Schritte unter [Elektronische Berichterstellungsformate ändern, indem Microsoft Excel-Vorlagen erneut angewendet werden](modify-electronic-reporting-format-reapply-excel-template.md), um weitere Informationen zu dieser Funktion zu erhalten.
 
 ## <a name="validate-an-er-format"></a>EB-Format überprüfen
@@ -355,7 +365,7 @@ Wenn ein ausgehendes Dokument in einem Microsoft Excel-Arbeitsmappenformat gener
 
 ## <a name="example-2-fixing-the-merged-cells-epplus-issue"></a><a name="example-2"></a>Beispiel 2: Behebung des EPPlus-Problems mit verbundenen Zellen
 
-Sie können ein EB-Format ausführen, um ein ausgehendes Dokument in einem Excel-Arbeitsmappenformat zu generieren. Wenn die **Die Nutzung der EPPlus-Bibliothek im Rahmen der elektronische Berichterstellung aktivieren**-Funktion ist im **Funktionsverwaltung**-Arbeitsplatz aktiviert ist, wird die [EPPlus-Bibliothek](https://www.nuget.org/packages/epplus/4.5.2.1) verwendet, um eine Excel-Ausgabe zu erstellen. Allerdings können Sie wegen eines bekannten [Excel-Verhaltens](https://answers.microsoft.com/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) und einer Einschränkung der EPPlus-Bibliothek auf die folgende Ausnahme stoßen: „Verbundene Zellen können nicht gelöscht/überschrieben werden. Ein Bereich wird teilweise mit einem anderen zusammengeführten Bereich zusammengeführt.“ Um zu erfahren, welche Art von Excel-Vorlagen diese Ausnahme verursachen können und wie Sie das Problem beheben können, führen Sie das folgende Beispiel durch.
+Sie können ein EB-Format ausführen, um ein ausgehendes Dokument in einem Excel-Arbeitsmappenformat zu generieren. Wenn die **Die Nutzung der EPPlus-Bibliothek im Rahmen der elektronische Berichterstellung aktivieren**-Funktion ist im **Funktionsverwaltung**-Arbeitsplatz aktiviert ist, wird die [EPPlus-Bibliothek](https://www.nuget.org/packages/epplus/4.5.2.1) verwendet, um eine Excel-Ausgabe zu erstellen. Allerdings können Sie wegen eines bekannten [Excel-Verhaltens](https://answers.microsoft.com/en-us/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) und einer Einschränkung der EPPlus-Bibliothek auf die folgende Ausnahme stoßen: „Verbundene Zellen können nicht gelöscht/überschrieben werden. Ein Bereich wird teilweise mit einem anderen zusammengeführten Bereich zusammengeführt.“ Um zu erfahren, welche Art von Excel-Vorlagen diese Ausnahme verursachen können und wie Sie das Problem beheben können, führen Sie das folgende Beispiel durch.
 
 1. Erstellen Sie in der Excel-Desktopanwendung eine neue Excel-Arbeitsmappe.
 2. Fügen Sie auf Arbeitsblatt **Sheet1** den **ReportTitle**-Namen für Zelle **A2** hinzu.

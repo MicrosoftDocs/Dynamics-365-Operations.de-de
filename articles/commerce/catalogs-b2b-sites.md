@@ -2,19 +2,19 @@
 title: Commerce-Kataloge für B2B-Websites erstellen
 description: In diesem Thema wird beschrieben, wie Sie Commerce-Kataloge für Business-to-Business-Websites (B2B) in Microsoft Dynamics 365 Commerce erstellen.
 author: ashishmsft
-ms.date: 04/28/2022
+ms.date: 05/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 868f6bbeefeb1698bb136d52c09cebf293c95731
-ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
+ms.openlocfilehash: 7382062706c2de01c499ee05aeb0b45ff6fb37cb
+ms.sourcegitcommit: bca0cb730307948368a9aabe322cf963688ed8b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8656842"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8782836"
 ---
 # <a name="create-commerce-catalogs-for-b2b-sites"></a>Commerce-Kataloge für B2B-Websites erstellen
 
@@ -24,7 +24,7 @@ ms.locfileid: "8656842"
 In diesem Thema wird beschrieben, wie Sie Commerce-Produktkataloge für Business-to-Business-Websites (B2B) in Microsoft Dynamics 365 Commerce erstellen. Antworten auf häufig gestellte Fragen zu Commerce-Katalogen für B2B-Websites finden Sie unter [FAQ zu Commerce-Katalogen für B2B](catalogs-b2b-sites-FAQ.md).
 
 > [!NOTE]
-> Dieses Thema gilt für Dynamics 365 Commerce ab Version 10.0.26.
+> Dieses Thema gilt für Dynamics 365 Commerce ab Version 10.0.27.
 
 Sie können Commerce-Kataloge verwenden, um die Produkte zu identifizieren, die Sie in den B2B-Onlineshops anbieten möchten. Wenn Sie einen Katalog erstellen, kennzeichnen Sie die Onlineshops, in denen die Produkte angeboten werden, fügen Sie die Produkte hinzu, die einbezogen werden sollen, und verbessern Sie die Produktangebote, indem Sie Verkaufdetails hinzufügen. Sie können mehrere Kataloge für jeden B2B-Onlineshop erstellen.
 
@@ -42,7 +42,7 @@ Mit Commerce-Produktkatalogen können Sie die folgenden Informationen definieren
 - **Preisgruppen** – Sie können Preise und Aktionen konfigurieren, die für einen bestimmten Katalog spezifisch sind. Diese Fähigkeit ist ein Hauptgrund für die Definition eines Katalogs für einen B2B-Kanal. Preisgruppen für Kataloge ermöglichen es Organisationen, Produkte für ihre beabsichtigten B2B-Organisationen verfügbar zu machen und ihre bevorzugten Preise und Rabatte anzuwenden. B2B-Kunden, die aus einem konfigurierten Katalog bestellen, können von Sonderpreisen und Werbeaktionen profitieren, nachdem sie sich auf einer Commerce B2B-Website angemeldet haben. Um katalogspezifische Preise zu konfigurieren, wählen Sie **Preisgruppen** auf der Registerkarte **Kataloge** aus, um eine oder mehrere Preisgruppen mit dem Katalog zu verknüpfen. Alle Handelsvereinbarungen, Preisregulierungserfassungen und Vorzugsrabatte, die mit der gleichen Preisgruppe verknüpft sind, werden bei der Bestellung aus diesem Katalog angewendet. (Erweiterte Rabatte umfassen Schwellenwert-, Mengen- und Angebots-Sortimentsrabatte.) Weitere Informationen zu Preisgruppen finden Sie unter [Preisgruppen](price-management.md#price-groups).
 
 > [!NOTE]
-> Diese Funktion ist ab der Dynamics 365 Commerce-Version 10.0.26 verfügbar. Um katalogspezifische Konfigurationen wie die Navigationshierarchie und die Kundenhierarchie zu konfigurieren, öffnen Sie in der Commerce-Zentrale den **Funktionsverwaltung**-Arbeitsbereich (**Systemadministration \> Arbeitsbereiche \> Funktionsverwaltung**). Aktivieren Sie die Funktion **Ermöglicht die Verwendung von mehreren Katalogen für Kanäle im Einzelhandel**, und führen Sie dann den Einzelvorgang **1110 CDX** aus.
+> Diese Funktion ist ab der Dynamics 365 Commerce-Version 10.0.27 verfügbar. Um katalogspezifische Konfigurationen wie die Navigationshierarchie und die Kundenhierarchie zu konfigurieren, öffnen Sie in der Commerce-Zentrale den **Funktionsverwaltung**-Arbeitsbereich (**Systemadministration \> Arbeitsbereiche \> Funktionsverwaltung**). Aktivieren Sie die Funktion **Ermöglicht die Verwendung von mehreren Katalogen für Kanäle im Einzelhandel**, und führen Sie dann den Einzelvorgang **1110 CDX** aus.
 
 ## <a name="catalog-process-flow"></a>Katalogprozessfluss
 

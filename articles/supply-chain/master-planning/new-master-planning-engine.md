@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 20e48fee237615c7b1acdb564e5e524d393f8eba
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 598e29ead50e1ecb249a7338c7f0952a912b4f69
+ms.sourcegitcommit: cbe9493d479f96f271d94599ec1b85131b26169f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469896"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809094"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Migration zur Planungsoptimierung für die Produktprogrammplanung
 
@@ -47,7 +47,7 @@ Wie bereits erwähnt, erhalten Sie ab Version 10.0.16 eine Fehlermeldung, wenn S
 
 ### <a name="new-deployments"></a>Neue Bereitstellungen
 
-Die Planungsoptimierung sollte als Standard-Masterplanungs-Engine für alle neuen Bereitstellungen in der Cloud betrachtet werden. Im Allgemeinen sollte die Planungsoptimierung für alle neuen Bereitstellungen verwendet werden, die keine geplanten Produktionsaufträge während der Produktprogrammplanung erzeugen. Wenn eine neue Bereitstellung von Funktionen abhängt, die von der Planungsoptimierung derzeit nicht unterstützt werden, können Sie eine Ausnahme beantragen, damit Sie weiterhin die integrierte Produktprogrammplanung verwenden können.
+Die Planungsoptimierung muss als Standard-Masterplanungs-Engine für alle neuen Bereitstellungen in der Cloud betrachtet werden. Im Allgemeinen sollte die Planungsoptimierung für alle neuen Bereitstellungen verwendet werden, die keine geplanten Produktionsaufträge während der Produktprogrammplanung erzeugen. Wenn eine neue Bereitstellung von Funktionen abhängt, die von der Planungsoptimierung derzeit nicht unterstützt werden, können Sie eine Ausnahme beantragen, damit Sie weiterhin die integrierte Produktprogrammplanung verwenden können.
 
 ### <a name="existing-deployments"></a>Bestehende Bereitstellungen
 
@@ -63,7 +63,7 @@ Derzeit sind Ausnahmen für die Migration der Planungsoptimierung nur dann relev
 
 Nachdem die erforderlichen Funktionen verfügbar sind, gewährt Microsoft eine Gnadenfrist, bis die Ausnahme ausläuft. Der Admin der Umgebung wird informiert, wenn die erforderlichen Funktionen verfügbar geworden sind und die Schonfrist begonnen hat.
 
-Das folgende Flussdiagramm fasst die Informationen in diesem Thema zusammen, damit Sie schnell herausfinden können, ob Sie eine Ausnahme anfordern sollten. Wenn Sie eine Ausnahme anfordern müssen, füllen Sie bitte den [Fragebogen zur Migration und zu Ausnahmen zur Planungsoptimierung](https://go.microsoft.com/fwlink/?linkid=2144962) aus und senden Sie ihn ab.
+Das folgende Flussdiagramm fasst die Informationen in diesem Thema zusammen, damit Sie schnell herausfinden können, ob Sie eine Ausnahme anfordern sollten. Wenn Sie eine Ausnahme anfordern müssen, füllen Sie bitte den [Fragebogen zur Migration und zu Ausnahmen zur Planungsoptimierung](https://go.microsoft.com/fwlink/?linkid=2144962) aus und senden Sie ihn ab. Die Produktgruppe ist für die Bewertung und Genehmigung jeder Ausnahmeanfrage zuständig. Senden Sie Ihre Anfrage also bitte direkt an die Produktgruppe über den angegebenen Link und erstellen Sie kein Support-Ticket dafür. Wenn Ihre Anfrage abgelehnt wird, erstellen Sie bitte kein Support-Ticket, da der Microsoft Support nicht in der Lage ist, eine Neubewertung vorzunehmen oder Ausnahmen zu gewähren.
 
 ![Ausnahmenflussdiagramm.](media/exception-diagram.png "Ausnahmenflussdiagramm")
 

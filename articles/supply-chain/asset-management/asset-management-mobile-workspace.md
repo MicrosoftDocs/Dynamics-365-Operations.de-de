@@ -2,7 +2,7 @@
 title: Mobilen Arbeitsbereich für Anlagenverwaltung verwenden
 description: Dieses Thema enthält Informationen zum mobilen Arbeitsbereich „Anlageverwaltung“.
 author: johanhoffmann
-ms.date: 01/15/2021
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: johanho
 ms.dyn365.ops.version: 10.0.5
 ms.search.validFrom: 2019-08-31
-ms.openlocfilehash: 62bb178e714611367c825c87044a31275f5540accc9363137c7cecbcec1bec65
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8b874237721d9252e7102c2611414a2cc74026c3
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771538"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811503"
 ---
 # <a name="use-the-asset-management-mobile-workspace"></a>Mobilen Arbeitsbereich für Anlagenverwaltung verwenden
 
 [!include [banner](../../includes/banner.md)]
+[!include [mobile app deprecated](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
 Dieses Thema enthält Informationen zum mobilen Arbeitsbereich **Anlageverwaltung**. Mit dem Arbeitsbereich können Benutzer Wartungsanforderungen und Arbeitsaufträge anzeigen und erstellen. Benutzer können auch die zugeordneten Arbeitsauftragseinzelvorgänge in einer Listenansicht anzeigen. Anlagen und funktionale Standorte können auch angezeigt und gesucht werden.
 
@@ -45,7 +46,7 @@ Bevor Sie den mobilen Arbeitsbereich **Anlagenverwaltung** verwenden können, mu
 
 ## <a name="download-and-install-the-mobile-app"></a>Herunterladen und Installieren der mobilen App
 
-Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und installieren Sie diese:
+Laden Sie die mobile App für Finanz und Betrieb (Dynamics 365) herunter und installieren Sie sie:
 
 - [Für Android-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
 - [Für iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

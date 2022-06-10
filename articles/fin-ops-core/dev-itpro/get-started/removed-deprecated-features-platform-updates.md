@@ -2,7 +2,7 @@
 title: Entfernte oder veraltete Plattformfunktionen
 description: In diesem Thema werden Funktionen beschrieben, die bei Plattform-Updates der Apps Finance + Operations entfernt wurden oder deren Entfernung geplant ist.
 author: sericks007
-ms.date: 04/26/2022
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 0cf0d4b3ff108645c8542ce10a0be58d29cc68ed
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 3de9b9ea0bd20d1346a7cdfd2f919f50374b164c
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644606"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811245"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Entfernte oder veraltete Plattformfunktionen
 
@@ -31,6 +31,33 @@ In diesem Thema werden Funktionen beschrieben, die bei Plattform-Updates der App
 Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen bei Ihrer eigenen Planung zu berücksichtigen. 
 
 Ausführliche Informationen über Objekte in Apps für Finanzen und Betrieb finden Sie in den [Technischen Referenzberichten](/dynamics/s-e/global/axtechrefrep_61). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die in den einzelnen Versionen der Apps für Finanzen und Betrieb geändert oder entfernt wurden.
+
+
+## <a name="feature-deprecation-effective-june-2022"></a>Veraltete Funktion ab Juni 2022
+
+### <a name="finance-and-operations-dynamics-365-mobile-application-and-mobile-platform"></a>Mobile Anwendung für Finanz und Betrieb (Dynamics 365) und mobile Plattform 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Wir nehmen die mobile Anwendung und Plattform für Finanz und Betrieb (Dynamics 365) außer Betrieb, um sie auf eine einzige mobile Plattform zu konsolidieren, die Power Apps ist. |
+| **Ersetzt durch eine andere Funktion?**   | Ja, mobile Erfahrungen über Finanz- und Betriebs-App-Daten können mit der Power Platform-Integration erstellt werden. Weitere Einzelheiten finden Sie unter [Aufbau mobiler Erlebnisse](../power-platform/build-mobile-experiences.md). |
+| **Betroffene Produktbereiche**         | Finance and Operations-Apps |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet. Das Enddatum des Supports ist für Oktober 2024 vorgesehen. |
+
+
+## <a name="platform-updates-for-version-10029-of-finance-and-operations-apps"></a>Plattform-Updates für die Version 10.0.29 der Apps für Finance + Operations
+
+### <a name="panorama-tab-style"></a>Stil der Registerkarte Panorama
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Horizontal scrollende Seiten orientieren sich an veralteten Layout-Mustern, die bekanntermaßen Probleme mit der Benutzerfreundlichkeit und Barrierefreiheit mit sich bringen.  |
+| **Ersetzt durch eine andere Funktion?**   | Nein, aber andere Registerkartenstile sind weiterhin verfügbar. |
+| **Betroffene Produktbereiche**         | Webclient |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet. |
+
 
 ## <a name="feature-deprecation-effective-april-2022"></a>Hinweis auf Funktionsminderung mit Wirkung zum April 2022
 

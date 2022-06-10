@@ -2,7 +2,7 @@
 title: Bildlistenmodul
 description: Dieses Thema behandelt Bildlistenmodule und es wird beschrieben, wie diese Websiteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 7df62fe426799905f9d6d412c4c510b8ce021b7ddd768a98b8180ca7e9b467a7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 67da83410d819d01396d0b7d421076ee3b0f17ec
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742387"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780842"
 ---
 # <a name="image-list-module"></a>Bildlistenmodul
 
@@ -54,11 +54,11 @@ Um ein Bildlistenmodul einer neuen Seite hinzuzufügen und die erforderlichen Ei
 
 1. Gehen Sie auf **Vorlagen** und öffnen Sie die Marketingvorlage für die Homepage Ihrer Site (oder erstellen Sie eine neue Marketingvorlage).
 1. Auf der Standardseite wählen Sie **Haupt**-Slot und dann die Ellipsen (**...**) und **Modul hinzufügen**.
-1. Im Dialogfeld **Modul hinzufügen** wählen Sie das **Bildlisten**-Modul und dann **OK** aus.
+1. Wählen Sie im Dialogfeld **Module auswählen** das Modul **Bildliste** und dann **OK** aus.
 1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
 1. Gehen Sie zu **Seiten** und öffnen Sie die Homepage der Site (oder erstellen Sie eine neue Homepage mithilfe der Marketingvorlage).
-1. Auf dem Seitenüberblick wählen Sie den **Haupt**-Slot und wählen die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
-1. Im Dialogfeld **Modul hinzufügen** wählen Sie **Bildliste** und dann **OK** aus.
+1. Auf dem Seitenüberblick wählen Sie den Slot **Haupt** und wählen die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Module auswählen** das Modul **Bildliste** und dann **OK** aus.
 1. Fügen Sie im Eigenschaftenbereich für das Bildlistenmodul eine Überschrift hinzu (z. B. **Unsere Marken**).
 1. Fügen Sie ein Bildlistenelement hinzu und geben Sie ein Bild, einen Absatztext und eine Umleitungs-URL an.
 1. Fügen Sie nach Bedarf zusätzliche Bildlistenmodule hinzu und konfigurieren Sie sie.

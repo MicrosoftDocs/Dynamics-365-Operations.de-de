@@ -2,7 +2,7 @@
 title: Online- und Offlineverkaufsstellen-(POS)-Vorgänge
 description: Dieses Thema enthält Informationen zu den Verkaufsstelle (POS)-Arbeitsgängen in Dynamics 365 Commerce. Es gibt an, an welcher Position in der Anwendung die Arbeitsgänge aufgerufen werden können, und ob sie im Offline-Modus verfügbar sind.
 author: jblucher
-ms.date: 05/11/2022
+ms.date: 05/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dc281a691b34731fb0b5986222b41b436912c782
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 7e4556ad11cbea0cb8fb3c5447116a1b54576e17
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740681"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811201"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online- und Offlineverkaufsstellen-(POS)-Vorgänge
 
@@ -44,7 +44,7 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 > [!NOTE]
 > Die Arbeitsgänge unten gelten für die neueste Version von Commerce. Einige Vorgänge haben sich möglicherweise geändert oder sind möglicherweise in früheren Versionen nicht verfügbar.
 
-| Kennung   | Vorgang                                         | Description                                                                                                                                                                                                    | Benutzervorgang?    | Transaktionsbildschirm | Willkommensbildschirm | Offline verfügbar? | Gebietsschemaspezifisch |
+| Kennung   | Vorgang                                         | Description                                                                                                                                                                                                    | Vorgänge für den Benutzer    | Transaktionsbildschirm | Willkommensbildschirm | Offline verfügbar? | Gebietsschemaspezifisch |
 | ---- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------ | -------------- | ----------------- | --------------- |
 | 100  | Produktverkauf                                      | Fügt der Buchung ein angegebenes Produkt hinzu.                                                                                                                                                                    | Ja            | Ja                | Ja            | Ja               | Nein              |
 | 101  | Preisüberprüfung                                       | Suchen Sie den Preis für ein bestimmtes Produkt.                                                                                                                                        | Ja            | Ja                | Ja            | Ja               | Nein              |
@@ -273,11 +273,11 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 | 1219 | URL in POS öffnen                                   | Öffne Sie eine vom Administrator konfigurierte URL in POS.                                                                                                                                                                           | Ja            | Ja                | Ja            | Ja               | Nein              |
 | 1220 | Tresor verwalten                                       | Verwalten Sie den Tresor für verschiedene Register.                                                                                                                                                                       | Ja            | Ja                | Ja            | Ja               | Nein              |
 | 1221 | Ungültige, ausgesetzte Transaktionen                       | Ungültige, ausgesetzte Transaktionen.                                                                                                                                                                               | Ja            | Ja                | Ja            | Ja               | Nein              |
-| 1300 | Steuerregistrierung überspringen                          | Steuerregistrierung überspringen.                                                                                                                                                                                       | Ja            | Ja                | Ja            | Ja               | Ja             |
-| 1301 | Steuerliches Ereignis als registriert markieren                      |  Steuerliches Ereignis als registriert markieren.                                                                                                                                                                                  | Ja            | Ja                | Ja            | Ja               | Ja             |
-| 1302 | Steuerregistrierungsprozess abschließen              | Schließen Sie den Steuerregistrierungsprozess ab.                                                                                                                                                                           | Ja            | Ja                | Ja            | Ja               | Ja             |
-| 1303 | Integritätsprüfungsfehler überspringen                           | Überspringen Sie den Integritätsprüfungsfehler.                                                                                                                                                                                        | Ja            | Ja                | Ja            | Ja               | Ja             |
-| 1304 |  Steuerregistrierung verschieben                     | Verschieben Sie die Steuererfassung.                                                                                                                                                                                  | Ja            | Ja                | Ja            | Ja               | Ja             |
+| 1300 | Steuerregistrierung überspringen                          | Steuerregistrierung überspringen.                                                                                                                                                                                       | Nein            | Nein                | Nein            | Ja               | Nein             |
+| 1301 | Steuerliches Ereignis als registriert markieren                      |  Steuerliches Ereignis als registriert markieren.                                                                                                                                                                                  | Nein            | Nein                | Nein            | Ja               | Nein             |
+| 1302 | Steuerregistrierungsprozess abschließen              | Schließen Sie den Steuerregistrierungsprozess ab.                                                                                                                                                                           | Nein            | Nein                | Ja            | Ja               | Ja             |
+| 1303 | Integritätsprüfungsfehler überspringen                           | Überspringen Sie den Integritätsprüfungsfehler.                                                                                                                                                                                        | Ja            | Ja                | Ja            | Ja               | Nein             |
+| 1304 |  Steuerregistrierung verschieben                     | Verschieben Sie die Steuererfassung.                                                                                                                                                                                  | Nein            | Nein                | Nein            | Ja               | Nein             |
 | 1400 | Checklisten und Aufgaben verwalten                       | Verwalten Sie die Mitarbeiter-Checklisten und Aufgaben.                                                                                                                                                                        | Nein             | Nein                 | Ja            | Nein                | Nein              |
 | 2000 | Zeitplanverwaltung                               | Dieser Vorgang wird noch nicht unterstützt.                                                                                                                                                                           | Ja            | Ja                | Ja            | Nein                | Nein              |
 | 2001 | Zeitplananforderungen                                 | Dieser Vorgang wird noch nicht unterstützt.                                                                                                                                                                           | Ja            | Ja                | Ja            | Nein                | Nein              |

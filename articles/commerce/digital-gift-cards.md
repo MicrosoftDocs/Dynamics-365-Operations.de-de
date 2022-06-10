@@ -2,7 +2,7 @@
 title: Digitale E-Commerce-Geschenkkarten
 description: In diesem Thema wird erläutert, wie digitale Geschenkkarten in der E-Commerce-Implementierung von Microsoft Dynamics 365 Commerce funktionieren. Zudem bietet es einen Überblick über wichtige Konfigurationsschritte.
 author: anupamar-ms
-ms.date: 12/15/2020
+ms.date: 05/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e0cbab05cfd9dcde8ec5caf802d13cd10bc9123716b46307616b0e3e66f0f061
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: de8811b3265bc582a055aaad1f3dea32def552f4
+ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727556"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809586"
 ---
 # <a name="e-commerce-digital-gift-cards"></a>Digitale E-Commerce-Geschenkkarten
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 In diesem Thema wird erläutert, wie digitale Geschenkkarten in der E-Commerce-Implementierung von Microsoft Dynamics 365 Commerce funktionieren. Zudem bietet es einen Überblick über wichtige Konfigurationsschritte.
 
@@ -51,15 +50,18 @@ Digitale Geschenkkartenprodukte sollten in der Commerce-Zentralverwaltung konfig
 
     ![Geschenkkartenprodukt-Feld in der Commerce-Zentralverwaltung.](./media/PostGiftcard.png)
 
-- Wenn eine Geschenkkarte mehrere vordefinierte Beträge unterstützen muss (z. B. 25, 50 und 100 US-Dollar), sollte die Dimension **Größe** verwendet werden, um diese vordefinierten Beträge einzurichten. Jeder vordefinierte Betrag ist eine Variante. Weitere Informationen finden Sie unter [Produktdimensionen](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
-- Wenn Kunden in der Lage sein müssen, einen benutzerdefinierten Betrag für eine Geschenkkarte zu bestimmen, richten Sie zunächst eine Variante ein, die einen benutzerdefinierten Betrag zulässt. Öffnen Sie anschließend das Produkt über die Seite **Freigegebene Produkte in Kategorie**, und setzen Sie dann im Inforegister **Commerce** das Feld **Preis eingeben** auf **Neuer Preis muss eingegeben werden**, wie in der folgenden Abbildung dargestellt. Diese Einstellung stellt sicher, dass Kunden einen Preis eingeben können, wenn sie nach dem Produkt auf einer PDP suchen.
+- Wenn eine Geschenkkarte mehrere vordefinierte Beträge unterstützen muss (z. B. 25, 50 und 100 US-Dollar), sollte die Dimension **Größe** verwendet werden, um diese vordefinierten Beträge einzurichten. Jeder vordefinierte Betrag ist eine Produktvariante. Weitere Informationen finden Sie unter [Produktdimensionen](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
+- Wenn Kunden in der Lage sein müssen, zusätzlich zu vordefinierten Beträgen einen benutzerdefinierten Betrag für eine Geschenkkarte zu bestimmen, richten Sie zunächst eine Variante ein, die einen benutzerdefinierten Betrag zulässt. Das **Größe**-Attribut unterstützt benutzerdefinierte Betragsvarianten. Öffnen Sie anschließend das Produkt über die Seite **Freigegebene Produkte in Kategorie**, und setzen Sie dann im Inforegister **Commerce** das Feld **Preis eingeben** auf **Neuer Preis muss eingegeben werden**, wie in der folgenden Beispielabbildung dargestellt. Diese Einstellung stellt sicher, dass Kunden einen Preis eingeben können, wenn sie nach dem Produkt auf einer PDP suchen.
 
     ![„Preis eingeben“-Feld in der Commerce-Zentralverwaltung.](./media/KeyInPrice.png)
+    
+    Die folgende Beispielabbildung zeigt eine Liste von Produktvarianten für digitale Geschenkkarten in Commerce Headquarters, einschließlich zwei benutzerdefinierter Preisvarianten.
+    ![Produktvarianten für digitale Geschenkkarten mit Beispiel für eine benutzerdefinierte Preisvariante](./media/DigitalGiftCards_ProductVariantsWithCustom.png)
 
 - Die Lieferart für eine digitale Geschenkkarte muss auf **Elektronisch** eingestellt sein. Wählen Sie auf der Seite **Lieferarten** (**Einzelhandel und Handel \> Kanaleinstellung \> Lieferarten**) die Lieferart **Elektronisch** im Listenbereich aus, und fügen Sie dann das digitale Geschenkkartenprodukt dem Raster im Inforegister **Produkte** hinzu, wie in der folgenden Abbildung dargestellt. Weitere Informationen finden Sie unter [Lieferarten einrichten](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
     ![Digitale Geschenkkartenprodukte auf der „Lieferart“-Seite in der Commerce-Zentralverwaltung.](./media/ElectronicMode.PNG)
-
+    
 - Vergewissern Sie sich, dass ein Onlinefunktionsprofil erstellt und Ihrem Onlineshop in der Commerce-Zentralverwaltung zugeordnet wurde. Stellen Sie im Funktionsprofil die Option **Aggregierte Produkte** auf **Ja** ein. Diese Einstellung stellt sicher, dass alle Artikel außer Geschenkkarten aggregiert werden. Weitere Informationen finden Sie unter [Ein Onlinefunktionsprofil erstellen](online-functionality-profile.md).
 - Erstellen Sie einen neuen E-Mail-Benachrichtigungstyp auf der Seite **E-Mail-Benachrichtigungsprofile**, und setzen Sie das Feld **E-Mail-Benachrichtigungstyp** auf **Geschenkkarte ausstellen**, um sicherzustellen, dass Kunden eine E-Mail erhalten, nachdem eine Geschenkkarte fakturiert wurde. Weitere Informationen finden Sie unter [Einen E-Mail-Benachrichtigungstyp einrichten](email-notification-profiles.md).
 

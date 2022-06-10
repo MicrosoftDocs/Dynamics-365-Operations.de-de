@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 5c2eb6c8e18770eb149c445f662ab7a90aad81a7
-ms.sourcegitcommit: 367e323bfcfe41976e5d8aa5f5e24a279909d8ac
+ms.openlocfilehash: 73dbc2242639a54d687506e7c325fec4b9a95d12
+ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8660454"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8770153"
 ---
 # <a name="revenue-split-templates-in-subscription-billing"></a>Umsatzerlösverteilungsvorlagen in Abonnementabrechnung
 
@@ -99,3 +99,54 @@ Führen Sie die folgenden Schritte aus, um einen Abrechnungszeitplan zu erstelle
 > - Die untergeordneten Artikel werden automatisch in die Auftrags- oder Abrechnungszeitplanposition eingegeben.
 >
 > Wenn die Option **Umsatzerlösverteilung automatisch erstellen** auf **Nein** eingestellt ist, ist das Verhalten wie zuvor erläutert.
+
+## <a name="additional-revenue-split-information"></a>Zusätzliche Informationen zur Umsatzaufteilung
+
+Wenn Sie einen Artikel hinzufügen, der Teil eines Umsatz-Splits ist, beachten Sie die folgenden Informationen: 
+
+- Der übergeordnete Betrag kann nicht verschoben werden.
+- Die Werte für Startdatum, Enddatum, Menge, Einheit, Standort und Lager der untergeordneten Artikel basieren auf dem übergeordneten Artikel. Diese Werte können nicht für die untergeordneten Artikel geändert werden. Alle Änderungen müssen an dem übergeordneten Artikel vorgenommen werden. 
+- Die Preismethode ist **Flat** und kann nicht geändert werden.
+- Untergeordnete Artikel können hinzugefügt oder entfernt werden.
+- Übergeordnete und untergeordnete Artikel müssen die gleiche Artikelgruppe verwenden. 
+- Untergeordnete Artikel können eine der folgenden Einrichtungen haben:
+
+    - Die Felder **Abrechnungshäufigkeit** und **Abrechnungsintervalle** werden auf denselben Wert wie der übergeordnete Artikel festgelegt. 
+    - Das Feld **Rechnungshäufigkeit** wird auf **Einmalig** festgelegt. In diesem Fall wird das Feld **Abrechnungsintervalle** automatisch auf **1** festgelegt. 
+
+- Die Summe der Nettobeträge der untergeordneten Artikel entspricht dem übergeordneten Betrag. Wenn die Zuordnungsmethode **Nullbeträge** lautet, ist sowohl die Summe der Beträge der untergeordneten Artikel als auch der übergeordnete Betrag 0 (Null). 
+
+    > [!NOTE]
+    > Wenn die Zuweisungsmethode **Null übergeordneter Betrag** lautet, ist die (von Null abweichende) Summe der untergeordneten Artikel nicht gleich dem übergeordneten Betrag, der 0 (Null) ist. Diese Zuordnungsmethode wird für interne Zwecke verwendet, damit die Mitarbeiter die untergeordneten Artikel sehen können. Die Debitoren können jedoch nur den übergeordneten Artikel sehen.
+
+- Wenn der MEA-Typ (Multiple Element Arrangement) des Verkaufsauftrags **Einzel** ist, wird beim Hinzufügen der übergeordneten und untergeordneten Artikel die entsprechende Transaktionszeile für die Aufteilung des Umsatzes erstellt. 
+- Wenn die Zuordnungsmethode für einen Umsatzsplit **Gleiche Beträge** lautet und der übergeordnete Betrag geändert wird, werden die Beträge für alle untergeordneten Zeilen neu berechnet. 
+- Bei einem Umsatzsplit mit der Zuteilungsmethode **Variabler Betrag** verhält sich das System wie folgt:
+
+    - Der Nettobetrag des übergeordneten Artikels erscheint in der Spalte **Übergeordneter Betrag**. Dieser Wert kann bearbeitet werden. Der Einheitspreis, der Nettobetrag und der Rabatt sind jedoch 0 (Null) und können nicht bearbeitet werden.
+    - Der Einheitspreis der untergeordneten Artikel ist 0 (Null). Sie können den Einheitspreis oder den Nettobetrag bearbeiten. Wenn Sie einen Wert bearbeiten, wird der andere Wert automatisch aktualisiert.
+
+- Bei einem Umsatzsplit mit der Verrechnungsmethode **Prozentsatz** verhält sich der Artikel wie folgt:
+
+    - Der Nettobetrag des übergeordneten Artikels erscheint in der Spalte **Übergeordneter Betrag**. Dieser Wert kann bearbeitet werden. Der Einheitspreis, der Nettobetrag und der Rabatt sind jedoch 0 (Null) und können nicht bearbeitet werden. 
+    - Der Nettobetrag der untergeordneten Artikel wird berechnet als *Prozentsatz* &times; *Übergeordneter Betrag*.
+
+- Bei einem Umsatzsplit mit der Verrechnungsmethode **Gleicher Betrag** verhält sich das System wie folgt:
+
+    - Der Nettobetrag des übergeordneten Artikels erscheint in der Spalte **Übergeordneter Betrag**. Dieser Wert kann bearbeitet werden. Der Einheitspreis, der Nettobetrag und der Rabatt sind jedoch 0 (Null) und können nicht bearbeitet werden. 
+    - Der Nettobetrag der untergeordneten Artikel wird berechnet, indem der übergeordnete Betrag gleichmäßig auf alle untergeordneten Artikel aufgeteilt wird. 
+    - Wenn untergeordnete Artikel entfernt oder hinzugefügt werden, werden der Nettobetrag und die Einheitspreise neu berechnet, so dass alle untergeordneten Zeilen die gleichen Beträge aufweisen. 
+    - Wenn der übergeordnete Betrag nicht gleichmäßig aufgeteilt werden kann, können der Nettobetrag und der Preis pro Einheit des letzten untergeordneten Artikels etwas höher oder niedriger sein als der Nettobetrag und der Preis pro Einheit der anderen untergeordneten Artikel. 
+
+- Bei einem Umsatzsplit, bei dem die Allokationsmethode **Nullbetrag** ist, tritt das folgende Verhalten auf:
+
+    - Der Einheitspreis, der Nettobetrag und der Rabatt können bearbeitet werden. Der übergeordnete Betrag ist 0 (Null) und kann nicht bearbeitet werden. 
+    - Die Werte für Menge, Einheit, Standort und Lager der untergeordneten Artikel basieren auf dem übergeordneten Artikel. Sie können diese Werte nicht für die untergeordneten Artikel ändern. Alle Änderungen müssen an dem übergeordneten Artikel vorgenommen werden. 
+    - Der Einheitspreis und der Nettopreis der untergeordneten Artikel ist 0 (Null) und kann nicht bearbeitet werden. 
+
+- Bei einem Umsatzsplit mit der Zuordnungsmethode **Null übergeordneter Betrag** kommt es zu folgendem Verhalten:
+
+    - Stückpreis, übergeordneter Betrag und Nettobetrag des übergeordneten Artikels sind 0 (Null).
+    - In einem Fakturierungsplan erscheinen die untergeordneten Zeilen so, als ob sie manuell hinzugefügt worden wären, und alle Werte werden auf der Grundlage der ausgewählten Fakturierungsplangruppe aktualisiert. Diese Werte können bearbeitet werden. Bei untergeordneten Artikeln können Sie über die Felder **Erfasste Menge**, **Einheitspreis**, **Rabatt** und **Nettobetrag** in **Abrechnungsdetails anzeigen** auf die Optionen **Skalierung und Rabatt** und **Erweiterte Preisgestaltung** zugreifen. 
+    - Auf einem Verkaufsauftrag haben die untergeordneten Zeilen einen Rabatt und einen Rabattprozentsatz von 0 (Null). 
+    - Der Fakturierungsrhythmus der übergeordneten und der untergeordneten Artikel kann geändert werden, und jede Zeile kann einen anderen Rhythmus haben. Der übergeordnete Artikel wird jedoch automatisch aktualisiert, so dass er die kürzeste Frequenz aus seinen untergeordneten Zeilen verwendet. Ein Beispiel: Ein Umsatzsplit hat zwei untergeordnete Artikel, von denen einer den Abrechnungsrhythmus **Monatlich** und der andere den Abrechnungsrhythmus **Jährlich** verwendet. In diesem Fall wird die Abrechnungshäufigkeit des übergeordneten Artikels auf **Monatlich** aktualisiert.

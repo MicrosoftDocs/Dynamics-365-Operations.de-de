@@ -2,19 +2,19 @@
 title: Einrichtung von dualem Schreiben aus Lifecycle Services
 description: In diesem Thema wird erläutert, wie Sie eine Verbindung für duales Schreiben über Microsoft Dynamics Lifecycle Services (LCS) einrichten.
 author: laneswenka
-ms.date: 08/03/2021
+ms.date: 05/16/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 825d6a4b3462077d0f4b3f4275792ea0fe5152df
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 53e82fbf8cff834c9eb0d14a0597561158b85fa1
+ms.sourcegitcommit: 6744cc2971047e3e568100eae338885104c38294
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063671"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8783200"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Einrichtung von dualem Schreiben aus Lifecycle Services
 
@@ -26,12 +26,12 @@ In diesem Thema wird erläutert, wie Sie eine Verbindung für duales Schreiben �
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Sie müssen die Power Platform Integration wie in den folgenden Themen beschrieben ausfüllen:
+Der Debitor muss die Power Platform-Integration wie in den folgenden Themen beschrieben durchführen:
 
-+ [Power Platform Integration – Aktivieren Sie diese Option während der Bereitstellung der Umgebung](../../power-platform/enable-power-platform-integration.md#enable-during-deploy)
-+ [Power Platform-Integration – Aktivieren Sie diese Option nach der Bereitstellung der Umgebung](../../power-platform/enable-power-platform-integration.md#enable-after-deploy)
+- Wenn Sie Microsoft Power Platform noch nicht verwenden und Ihre Finanz- und Betriebs-Umgebungen um Funktionalitäten der Plattform erweitern möchten, lesen Sie [Power Platform Integration - Während der Bereitstellung der Umgebung aktivieren](../../power-platform/enable-power-platform-integration.md#enable-during-deploy).
+- Wenn Sie bereits Dataverse- und Power Platform-Umgebungen haben und diese mit Finanz- und Betriebs-Umgebungen verbinden möchten, lesen Sie [Power Platform-Integration - Aktivieren nach Bereitstellen der Umgebung](../../power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-## <a name="set-up-dual-write-for-new-dataverse-environments"></a>Richten Sie duales Schreiben für neue Dataverse Umgebungen ein
+## <a name="set-up-dual-write-for-new-or-existing-dataverse-environments"></a>Dual-write für neue oder bestehende Dataverse-Umgebungen festlegen
 
 Befolgen Sie diese Schritte, um duales Schreiben von der LCS -Seite **Umgebungsdetails** einzurichten:
 
@@ -55,28 +55,19 @@ Befolgen Sie diese Schritte, um duales Schreiben von der LCS -Seite **Umgebungsd
 
 8. Wenn die Verknüpfung abgeschlossen ist, wird ein Hyperlink angezeigt. Verwenden Sie den Link, um sich beim duales Schreiben Administrationsbereich in der Finance und Operations Umgebung anzumelden. Von dort aus können Sie Entitätszuordnungen einrichten.
 
-## <a name="set-up-dual-write-for-an-existing-dataverse-environment"></a>Richten Sie duales Schreiben für eine bestehende Dataverse Umgebung ein
-
-Um duales Schreiben für eine vorhandene Dataverse Umgebung einzurichten, müssen Sie ein Microsoft [Supportticket](../../lifecycle-services/lcs-support.md) erstellen. Das Ticket muss enthalten:
-
-+ Ihre Finance und Operations Umgebungs-ID.
-+ Ihr Umgebungsname von Lifecycle Services.
-+ Die Dataverse Organisations-ID oder Power Platform Umgebungs-ID vom Power Platform Admin Center. Fordern Sie in Ihrem Ticket an, dass die ID die Instanz ist, die für die Power Platform Integration verwendet wird.
-
-> [!NOTE]
-> Sie können die Verknüpfung von Umgebungen mit LCS nicht aufheben. Um eine Umgebung zu entkoppeln, öffnen Sie den Arbeitsbereich **Datenintegration** in der Finance und Operations Umgebung und wählen Sie dann **Entkoppeln**.
-
 ## <a name="linking-mismatch"></a>Verknüpfungskonflikt
 
-Es ist möglich, dass Ihre LCS-Umgebung mit einer Dataverse-Instanz verknüpft ist, während Ihre Umgebung für duales Schreiben mit einer anderen Dataverse-Instanz verknüpft ist. Dieser Verknüpfungskonflikt kann zu unerwartetem Verhalten und dazu führen, dass Daten an die falsche Umgebung gesendet werden. Es wird empfohlen, die Umgebung zu verwenden, die im Rahmen der Power Platform-Integration erstellt wurde. Langfristig wird dies die einzige Möglichkeit sein, eine Verknüpfung zwischen den Umgebungen herzustellen.
+Es ist möglich, dass Ihre Dual-write Umgebung mit einer Dataverse-Instanz verknüpft ist, während LCS nicht für die Power Platform-Integration festgelegt ist. Diese nicht übereinstimmende Verknüpfung kann zu unerwartetem Verhalten führen. Es wird empfohlen, dass die Details der LCS Umgebung mit denen übereinstimmen, mit denen Sie in Dual-write verbunden sind, damit dieselbe Verbindung von Ereignissen, virtuellen Tabellen und Add-Ins verwendet werden kann.
 
-Wenn Ihre Umgebung einen Verknüpfungskonflikt aufweist, zeigt LCS auf Ihrer Umgebungsdetailseite eine Warnung an wie: „Microsoft hat festgestellt, dass Ihre Umgebung über duales Schreiben mit einem anderen Ziel verknüpft ist als in der Power Platform-Integration angeben. Dies wird nicht empfohlen“:
+Wenn in Ihrer Umgebung eine Verknüpfungsinkongruenz besteht, zeigt LCS auf der Seite mit den Umgebungsdetails eine Warnung an, die dem folgenden Beispiel ähnelt: „Microsoft hat festgestellt, dass Ihre Umgebung über Dual-write mit einem anderen Ziel verknüpft ist als in Power Platform Integration angegeben, was nicht empfehlenswert ist.“
 
 :::image type="content" source="media/powerplat_integration_mismatchLink.png" alt-text="Power Platform-Integrationslink stimmt nicht überein.":::
 
-Wenn dieser Fehler auftritt, gibt es je nach Bedarf zwei Möglichkeiten:
+Wenn Sie diese Warnung erhalten, versuchen Sie eine der folgenden Lösungen:
 
-+ Sie können [Umgebungen für duales Schreiben trennen und erneut verknüpfen (Verknüpfung zurücksetzen oder ändern)](relink-environments.md#scenario-reset-or-change-linking), wie auf der Detailseite Ihrer LCS-Umgebung angegeben. Dies ist die ideale Option, da Sie sie ohne den Microsoft-Support ausführen können.  
-+ Wenn Sie Ihre Verknüpfung bei Dual-Write beibehalten möchten, können Sie den Microsoft Support um Hilfe bitten, um die Power Platform-Integration zu ändern, damit Ihre bestehende Dataverse-Umgebung verwendet wird, wie im vorherigen Abschnitt belegt.  
+- Wenn Ihre LCS Umgebung nie für die Power Platform-Integration festgelegt wurde, können Sie sich mit der Dataverse-Instanz verbinden, die in Dual-write konfiguriert ist, indem Sie die Anweisungen in diesem Artikel befolgen.
+- Wenn Ihre LCS Umgebung bereits für die Power Platform-Integration festgelegt ist, sollten Sie die Verknüpfung von Dual-write aufheben und die Verbindung zu der von LCS festgelegten Instanz erneut herstellen, indem Sie das [Szenario verwenden: Verknüpfung zurücksetzen oder ändern](relink-environments.md#scenario-reset-or-change-linking).
+
+In der Vergangenheit war eine manuelle Support-Ticket-Option verfügbar, aber das war, bevor es die obige Option 1 gab.  Microsoft unterstützt keine manuellen Relinking-Anfragen über Support-Tickets mehr.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
