@@ -1,6 +1,6 @@
 ---
 title: Geschäftstransaktionen für die Aufstellungsberechnung validieren
-description: In diesem Thema wird die Funktionalität zur Überprüfung von Geschäftstransaktionen in Microsoft Dynamics 365 Commerce beschrieben.
+description: In diesem Artikel wird die Funktionalität zur Überprüfung von Geschäftstransaktionen in Microsoft Dynamics 365 Commerce beschrieben.
 author: analpert
 ms.date: 01/31/2022
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: analpert
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f51b1f39aa212fe8587761721194db7791bec5bc
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 4be40189777a37495f185467050b61af47b684d7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087448"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890512"
 ---
 # <a name="validate-store-transactions-for-statement-calculation"></a>Geschäftstransaktionen für die Aufstellungsberechnung validieren
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird die Funktionalität zur Überprüfung von Geschäftstransaktionen in Microsoft Dynamics 365 Commerce beschrieben. Im Prüfungsprozess werden Transaktionen identifiziert und markiert, die Buchungsfehler verursachen, bevor sie vom Auszugsbuchungsprozess erfasst werden.
+In diesem Artikel wird die Funktionalität zur Überprüfung von Geschäftstransaktionen in Microsoft Dynamics 365 Commerce beschrieben. Im Prüfungsprozess werden Transaktionen identifiziert und markiert, die Buchungsfehler verursachen, bevor sie vom Auszugsbuchungsprozess erfasst werden.
 
 Wenn Sie versuchen, eine Anweisung zu buchen, kann der Prüfungsprozess aufgrund inkonsistenter Daten in den Handelstransaktionstabellen fehlschlagen. Im Folgenden finden Sie einige Beispiele für Faktoren, die diese Inkonsistenzen verursachen können:
 

@@ -58,6 +58,8 @@
                   href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Dienstupdates konfigurieren
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/commerce/toc.json
+                - name: Vorab- und Nachwartung
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?toc=/dynamics365/commerce/toc.json
                 - name: Dienstupdates anhalten
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/commerce/toc.json
                 - name: Benachrichtigungen zu Dienstupdates erhalten
@@ -394,6 +396,8 @@
                   items:
                     - name: Store Commerce-App
                       href: dev-itpro/store-commerce.md
+                    - name: Modern POS zu Store Commerce migrieren
+                      href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
                     - name: Implementierungsleitfaden für die Geräteverwaltung
                       href: implementation-considerations-devices.md
                     - name: Zwischen Store Commerce und Cloud POS auswählen
@@ -2222,6 +2226,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
                     - name: Leistungsprobleme bei EB-Konfigurationen beheben
                       href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/commerce/toc.json
+                    - name: Anzahl der zur Laufzeit abgerufenen Tabellenfelder reduzieren
+                      href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?toc=/dynamics365/commerce/toc.json
                 - name: Geschäftsdokumentverwaltung
                   items:
                     - name: Übersicht über die Geschäftsdokumentverwaltung
@@ -2476,6 +2482,8 @@
                       href: dev-itpro/retail-sdk/sdk-github.md
                     - name: "Legacy-Retail\_SDK-Migration"
                       href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
+                    - name: 'Veraltete und entfernte APIs, Klassen und Methoden'
+                      href: dev-itpro/obsolete-apis-classes-methods.md
                     - name: Modernisierung des Commerce-In-Store-Technologie-Stacks (Whitepaper)
                       href: 'https://www.microsoft.com/download/details.aspx?id=103896'
                 - name: Einrichtung der Umgebung
@@ -2560,6 +2568,8 @@
                   items:
                     - name: Cloud Scale Unit-Erweiterungspaket erstellen
                       href: dev-itpro/CSU-packaging.md
+                    - name: Cloud Scale Unit-Erweiterungspakete für die Bereitstellung zusammenführen
+                      href: dev-itpro/merge-csu-extensions.md
                     - name: Cloud Scale Unit-Erweiterungen entfernen
                       href: dev-itpro/retail-sdk/remove-csu-package.md
             - name: Store Commerce
@@ -2908,6 +2918,14 @@
                       href: dev-itpro/create-retail-experience-app.md
         - name: Problembehandlung
           items:
+            - name: Store Commerce
+              items:
+                - name: Probleme bei der Einrichtung und Installation
+                  href: troubleshoot/store-commerce-setup-installation.md
+                - name: Probleme mit der Leistung
+                  href: troubleshoot/store-commerce-performance.md
+                - name: Probleme mit Erweiterungen
+                  href: troubleshoot/store-commerce-extensions.md
             - name: Auftragsverarbeitung
               items:
                 - name: Zahlungstyp muss ein Kreditkartenfehler sein

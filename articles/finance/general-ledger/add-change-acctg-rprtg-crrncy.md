@@ -1,6 +1,6 @@
 ---
 title: Buchhaltungs- oder Berichtswährung ändern
-description: In diesem Thema wird erläutert, wie Sie die Buchhaltungs- oder Berichtswährung ändern oder der Einrichtung eines Sachkontos eine Berichtswährung hinzufügen.
+description: In diesem Artikel wird erläutert, wie Sie die Buchhaltungs- oder Berichtswährung ändern oder der Einrichtung eines Sachkontos eine Berichtswährung hinzufügen.
 author: kweekley
 ms.date: 05/05/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ff5c38193e8469cb806c525b77809844847d6c92
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: b02432c8e0bdf52c2a588f67a581b78e682b1bf8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710889"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904613"
 ---
 # <a name="change-the-accounting-or-reporting-currency"></a>Buchhaltungs- oder Berichtswährung ändern
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie die Buchhaltungs- oder Berichtswährung ändern oder der Einrichtung eines Sachkontos eine Berichtswährung hinzufügen.
+In diesem Artikel wird erläutert, wie Sie die Buchhaltungs- oder Berichtswährung ändern oder der Einrichtung eines Sachkontos eine Berichtswährung hinzufügen.
 
 ## <a name="symptom"></a>Symptom
 
@@ -73,7 +73,7 @@ Befolgen Sie diese Schritte, um die Einrichtungs- und Masterdaten aus der aktuel
 10. Wählen Sie im Bereich **Ausgewählte Entitäten** die Option **Vorlage hinzufügen** aus.
 11. Wählen Sie die zu verwendenden Vorlagen aus. Vorgeschlagene Vorlagen für eine neue juristische Person lauten: **025 – Hauptbuch** und **Finanzen**. Wir empfehlen Ihnen, auch alle anderen verfügbaren Vorlagen zu prüfen, um festzustellen, ob eine davon Ihren Anforderungen entspricht.
 12. Wählen Sie **In juristische Person kopieren** aus, um einen Stapelverarbeitungsvorgang zu starten, bei dem die ausgewählten Entitäten erstellt und in die juristische Zielentität kopiert werden.
-13. Wechseln Sie nach Abschluss des Vorgangs, jedoch bevor eine Buchung gebucht wird, zum Hauptbuch, und aktualisieren Sie die Buchhaltungs- und Berichtswährungen, wie weiter oben in diesem Thema beschrieben.
+13. Wechseln Sie nach Abschluss des Vorgangs, jedoch bevor eine Buchung gebucht wird, zum Hauptbuch, und aktualisieren Sie die Buchhaltungs- und Berichtswährungen, wie weiter oben in diesem Artikel beschrieben.
 
 Wenn Sie eine neue juristische Person erstellt haben, damit Sie die Buchhaltungs- oder Berichtswährung ändern können, stellen Sie sicher, dass die Anfangssalden von den Währungen der früheren juristischen Person in die neuen Währungen umgerechnet werden.
 

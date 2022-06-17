@@ -1,6 +1,6 @@
 ---
 title: Einstellungen für Erfassungen und Positionen stornieren
-description: In diesem Thema wird erläutert, warum ein Stornoeintrag, der in einer allgemeinen Erfassung eingegeben wurde, möglicherweise nicht in der gebuchten Transaktion enthalten ist.
+description: In diesem Artikel wird erläutert, warum ein Stornoeintrag, der in einer allgemeinen Erfassung eingegeben wurde, möglicherweise nicht in der gebuchten Transaktion enthalten ist.
 author: kweekley
 ms.date: 04/29/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-5-05
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ff8c0bda8e750e95261039b373cfb96a76034f6f
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: e36a3ea1736e4d7f60a5a6ce588ad3e66c950c14
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724444"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899841"
 ---
 # <a name="reverse-settings-on-journals-and-lines"></a>Einstellungen für Erfassungen und Positionen stornieren
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, warum ein Stornoeintrag, der in einer allgemeinen Erfassung eingegeben wurde, möglicherweise nicht in der gebuchten Transaktion enthalten ist.  
+In diesem Artikel wird erläutert, warum ein Stornoeintrag, der in einer allgemeinen Erfassung eingegeben wurde, möglicherweise nicht in der gebuchten Transaktion enthalten ist.  
 
 ## <a name="symptom"></a>Symptom
 

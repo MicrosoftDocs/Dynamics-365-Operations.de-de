@@ -1,6 +1,6 @@
 ---
 title: Häufig gestellte Fragen zu Aktivitäten am Jahresende
-description: In diesem Thema werden Fragen aufgelistet, die zum Jahresabschluss auftreten können, sowie die Antworten, die bei Aktivitäten zum Jahresabschluss hilfreich sein können.
+description: In diesem Artikel werden Fragen aufgelistet, die zum Jahresabschluss auftreten können, sowie die Antworten, die bei Aktivitäten zum Jahresabschluss hilfreich sein können.
 author: moaamer
 ms.date: 12/21/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 19d23c2c5a8fabd6799c6240c25f3ede4064c001
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1c5aca6180821dfc9fd1d475d4726c82acdf4d78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725595"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865739"
 ---
 # <a name="year-end-activities-faq"></a>Häufig gestellte Fragen zu Aktivitäten am Jahresende 
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden Fragen aufgelistet, die zum Jahresabschluss auftreten können, sowie die Antworten, die bei Aktivitäten zum Jahresabschluss hilfreich sein können. Es geht überwiegend um Fragen zum Jahresabschluss von Hauptbuch und Kreditorenkonten.
+In diesem Artikel werden Fragen aufgelistet, die zum Jahresabschluss auftreten können, sowie die Antworten, die bei Aktivitäten zum Jahresabschluss hilfreich sein können. Es geht überwiegend um Fragen zum Jahresabschluss von Hauptbuch und Kreditorenkonten.
 
 ## <a name="general-ledger-year-end-enhancements"></a>Jahresendoptimierungen für Hauptbuch 
 In Version 10.0.20 wurde eine Erweiterung zum Jahresende eingeführt, die ab Version 10.0.25 standardmäßig aktiviert ist. Wenn Ihr Unternehmen eine frühere Version als 10.0.25 verwendet, empfehlen wir, diese Funktion zu aktivieren, bevor Sie mit dem Jahresabschlussprozess beginnen. Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit der Einstellung Funktionsverwaltung den Status der Funktion überprüfen und ggf. aktivieren. Dort wird die Funktion folgendermaßen aufgelistet:

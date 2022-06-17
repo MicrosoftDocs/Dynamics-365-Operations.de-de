@@ -1,6 +1,6 @@
 ---
 title: Fehlende Anfangssalden für den Jahresabschluss
-description: In diesem Thema wird erläutert, warum beim Jahresabschluss möglicherweise Anfangssalden fehlen und wie diese Salden ggf. neu erstellt werden.
+description: In diesem Artikel wird erläutert, warum beim Jahresabschluss möglicherweise Anfangssalden fehlen und wie diese Salden ggf. neu erstellt werden.
 author: kweekley
 ms.date: 05/12/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 582363ba6c5f6e63e695d41e73ee2f0b382cf26e
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 9b64118fc3ff368e21ea8935c1e706f2161c620f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727171"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894847"
 ---
 # <a name="year-end-close-missing-opening-balances"></a>Fehlende Anfangssalden für den Jahresabschluss
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, warum beim Jahresabschluss möglicherweise Anfangssalden fehlen und wie diese Salden ggf. neu erstellt werden.
+In diesem Artikel wird erläutert, warum beim Jahresabschluss möglicherweise Anfangssalden fehlen und wie diese Salden ggf. neu erstellt werden.
 
 ### <a name="symptom"></a>Symptom
 
@@ -36,7 +36,7 @@ Im Folgenden finden Sie die zu prüfenden Elemente, wenn Sie ein Jahr im Hauptbu
 
 Wenn das Feld **Vorherigen Abschluss rückgängig machen** auf **Ja** eingestellt ist, wird der vorherige Abschluss für das gleiche Geschäftsjahr rückgängig gemacht. Beim Prozess des Rückgängigmachens werden alle Einträge der Abschluss- und Anfangssalden gelöscht, als wäre der Jahresendabschluss nie erfolgt. Belege werden ebenfalls gelöscht. Der Jahresendabschlussprozess wird nicht automatisch erneut ausgeführt. Vielmehr muss der Vorgang manuell erneut gestartet werden, wobei die Option **Vorherigen Abschluss rückgängig machen** auf **Nein** aktualisiert wird.
 
-Dieses Szenario wird im FAQ-Thema zum Jahresabschluss behandelt. Weitere Informationen finden Sie unter [Häufig gestellte Fragen zu Aktivitäten am Jahresende](faq-year-end-activities.md).
+Dieses Szenario wird im FAQ-Artikel zum Jahresabschluss behandelt. Weitere Informationen finden Sie unter [Häufig gestellte Fragen zu Aktivitäten am Jahresende](faq-year-end-activities.md).
 
 ### <a name="symptom"></a>Symptom
 

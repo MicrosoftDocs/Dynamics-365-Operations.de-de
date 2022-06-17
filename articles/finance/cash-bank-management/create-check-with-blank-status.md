@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b3a0fbb26f135e567bf6af7b2f10b39a28be4c9e
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 834e11e0e359521c674e2b6fd78c93dcb23961a0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717215"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861443"
 ---
 # <a name="create-checks-that-have-blank-status"></a>Erstellen von Blankoschecks
 

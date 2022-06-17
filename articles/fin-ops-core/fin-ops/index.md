@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf2278cbf47c5fd2937e7da55c8777709ab7d356
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: c6f646b3216c73e14b550dc438c500a569bb799c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075396"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865831"
 ---
 # <a name="finance-and-operations-application-documentation"></a>Finance and Operations-Anwendungsdokumentation
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema erfahren Sie, wie Sie Finance and Operations-Anwendungen erfolgreich in Ihrem Unternehmen einsetzen können. Dazu dienen die Ressourcen unten, in denen Sie ausgezeichneten Inhalt für Endbenutzer, Entwickler und IT-Fachkräfte finden. 
+In diesem Artikel erfahren Sie, wie Sie Finanzen- und Betriebs-Anwendungen erfolgreich in Ihrem Unternehmen einsetzen können. Dazu dienen die Ressourcen unten, in denen Sie ausgezeichneten Inhalt für Endbenutzer, Entwickler und IT-Fachkräfte finden. 
 
 Ein Großteil dieses Inhalts gilt auch für die zugehörigen Produkte: Dynamics 365 Commerce und Dynamics 365 Human Resources. 
 

@@ -1,6 +1,6 @@
 ---
 title: Startseite zu Anlagen
-description: Dieser Abschnitt enthält Informationsangebote, die Ihnen die Nutzung von Anlagen in Microsoft Dynamics 365 Finance erleichtern.
+description: Dieser Artikel enthält Informationsangebote, die Ihnen die Nutzung von Anlagen in Microsoft Dynamics 365 Finance erleichtern.
 author: moaamer
 ms.date: 08/31/2017
 ms.topic: index-page
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cee27143ca005f2fa42899365933ec3014aa13f6
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 57e81aaefd61eb9e695d8fe0d1c7cac4091bece7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720445"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880815"
 ---
 # <a name="fixed-assets-home-page"></a>Startseite zu Anlagen
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Abschnitt enthält Informationsangebote, die Ihnen die Nutzung von Anlagen in Microsoft Dynamics 365 Finance erleichtern. Anlagen sind Wertgegenstände, die einer Einzelperson oder Organisation gehören. Darunter fallen Gebäude, Fahrzeuge, Grundstücke und Ausrüstung. 
+Dieser Artikel enthält Informationsangebote, die Ihnen die Nutzung von Anlagen in Microsoft Dynamics 365 Finance erleichtern. Anlagen sind Wertgegenstände, die einer Einzelperson oder Organisation gehören. Darunter fallen Gebäude, Fahrzeuge, Grundstücke und Ausrüstung. 
 
 Zu Anlagen können Anschaffungsinformationen festgelegt und eingegeben werden. Anschließend können die Anlagen verwaltet werden, indem sie abgeschrieben werden und ein Aktivierungsschwellenwert zur Bestimmung der Abschreibung festgesetzt wird. Für die Anlagen können Regulierungen berechnet werden und sie können verschrottet werden. Wenn Sie das Hauptbuch gemeinsam mit Anlagen verwenden, können Sie den aktuellen Wert aller Anlagen anzeigen. Die Art und Weise, wie Anlagen verwaltet werden, muss sowohl internationalen Buchführungsstandards auch den Buchführungsgesetzen des jeweiligen Landes/der jeweiligen Region entsprechen. Anforderungen in Bezug auf Anschaffungs- und Abgangsbuchungen, Abschreibung, Nutzungsdauer sowie Höher- und Niedrigerbewertung von Anlagen sind Beispiele für solche Regeln. Viele dieser Standards und Regeln sind Bestandteil der Anlagenfunktionen.
 

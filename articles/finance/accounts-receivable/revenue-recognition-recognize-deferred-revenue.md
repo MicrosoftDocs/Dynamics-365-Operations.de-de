@@ -1,6 +1,6 @@
 ---
 title: Verzögerte Umsatzerlöse erkennen
-description: Dieses Thema enthält Informationen zum Erkennen von Umsatzerlösen mithilfe der Umsatzerkennungsfunktion.
+description: Dieser Artikel enthält Informationen zum Erkennen von Umsatzerlösen mithilfe der Umsatzerkennungsfunktion.
 author: kweekley
 ms.date: 08/24/2018
 ms.topic: index-page
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 42e9aa20eb6f4a1c14f83c5a18a4699489a932a3
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 638e56c9bbbe0b377e804aa2ff55ffe4eded21f4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725931"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902543"
 ---
 # <a name="recognize-deferred-revenue"></a>Verzögerte Umsatzerlöse erkennen
 
@@ -27,7 +27,7 @@ ms.locfileid: "8725931"
 > [!NOTE]
 > Die Funktion zur Umsatzerkennung kann nicht mithilfe der Funktionsverwaltung aktiviert werden. Derzeit erfolgt die Aktivierung mit Konfigurationsschlüsseln.
 
-In diesem Thema wird die Erkennung von Umsatzerlösen im Umsatzerkennungszeitplan beschrieben. Nachdem eine Rechnung für einen Auftrag gebucht wurde, wird ein Umsatzerkennungszeitplan für jede Auftragsposition erstellt, die einen Umsatzerlöszeitplan hat. Der Umsatzerlöszeitplan in einer Position wird verwendet, um zu bestimmen, ob der Umsatz der Position verzögert werden soll.
+In diesem Artikel wird die Erkennung von Umsatzerlösen im Umsatzerkennungszeitplan beschrieben. Nachdem eine Rechnung für einen Auftrag gebucht wurde, wird ein Umsatzerkennungszeitplan für jede Auftragsposition erstellt, die einen Umsatzerlöszeitplan hat. Der Umsatzerlöszeitplan in einer Position wird verwendet, um zu bestimmen, ob der Umsatz der Position verzögert werden soll.
 
 ## <a name="view-revenue-recognition-schedule-details"></a>Anzeigen der Details des Umsatzerkennungszeitplans
 

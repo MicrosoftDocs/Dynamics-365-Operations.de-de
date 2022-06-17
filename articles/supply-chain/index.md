@@ -1,6 +1,6 @@
 ---
 title: Startseite zum Supply Chain Management
-description: Diese Seite enthält eine Liste der Hilfethemen und anderer Ressourcen für die Supply Chain Management-Funktionen.
+description: Diese Seite enthält eine Liste der Hilfeartikel und anderer Ressourcen für die Supply Chain Management-Funktionen.
 author: kamaybac
 ms.date: 09/15/2021
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9ae75f33d96261691eee52c963a1f1f00c75b0de
-ms.sourcegitcommit: 220101d2511a3164572226294ef090a43a1e6cdd
+ms.openlocfilehash: 189239ad6142af200e41cfe9cfcdbb56be65b0b7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "8789211"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879075"
 ---
 # <a name="supply-chain-management-home-page"></a>Startseite zum Supply Chain Management
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen in Dynamics 365 Supply Chain Management.
+Dieser Artikel enthält eine Liste der Hilfeartikel und anderer Ressourcen in Dynamics 365 Supply Chain Management.
 
 ## <a name="whats-new-and-in-development"></a>Neuerungen und Entwicklungen
 
@@ -93,7 +93,7 @@ In den folgenden Aufzeichnungen von Fachkonferenzen werden die Funktionen der Li
 
 ## <a name="blogs"></a>Blogs
 
-Im [Blog des Teams für F&E in der Fertigung von Dynamics AX](/archive/blogs/axmfg/) und im [Blog des Teams für Supply Chain Management in Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/) finden Sie viele weitere Themen zu Fertigung und Supply Chain Management. Die meisten dieser Beiträge beziehen sich auf die ältere Version, aber es gelten weiterhin die gleichen Konzepte und die Vorgehensweisen sind in der aktuellen Version vergleichbar.
+Im [Blog des Teams für F&E in der Fertigung von Dynamics AX](/archive/blogs/axmfg/) und im [Blog des Teams für Supply Chain Management in Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/) finden Sie viele weitere Artikel zu Fertigung und Supply Chain Management. Die meisten dieser Beiträge beziehen sich auf die ältere Version, aber es gelten weiterhin die gleichen Konzepte und die Vorgehensweisen sind in der aktuellen Version vergleichbar.
 
 ## <a name="white-papers"></a>Whitepapers
 

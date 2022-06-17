@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 649cd6ae78ef4922054f6c767255b5a1fc38b793b0bd1fd49943d4946d8025a9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 06c4c2baba00ffb074fce7bb68fd9dfc91714c4d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772301"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899146"
 ---
 > [!IMPORTANT]
-> Einige Erweiterungen, die in diesem Thema genannt werden, sind für bestimmte Benutzer verfügbar, die am Continuous Auto-update Advantage Program (CAAP) für Plattformupdates teilnehmen. Weitere Informationen zu Standardversionen und plattformspezifischen Versionen finden Sie unter [Standardversionen und plattformspezifische Versionen](../../get-started/public-preview-releases.md).
+> Einige Erweiterungen, die in diesem Artikel genannt werden, sind für bestimmte Benutzer verfügbar, die am Continuous Auto-update Advantage Program (CAAP) für Plattformupdates teilnehmen. Weitere Informationen zu Standardversionen und plattformspezifischen Versionen finden Sie unter [Standardversionen und plattformspezifische Versionen](../../get-started/public-preview-releases.md).

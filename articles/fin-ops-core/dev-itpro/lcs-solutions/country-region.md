@@ -1,6 +1,6 @@
 ---
 title: Globalisierungsressourcen
-description: Dieses Thema enthält eine Liste mit Ressourcen, durch die Sie mehr über länder-/regionsspezifische Funktionalität und Angebote erfahren können.
+description: Dieser Artikel enthält eine Liste mit Ressourcen, durch die Sie mehr über länder-/regionsspezifische Funktionalität und Angebote erfahren können.
 author: kfend
 ms.date: 02/19/2021
 ms.topic: index-page
@@ -14,27 +14,27 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 822f00c21715b928027a7656f299a693686bf5dfc01f1f5a1738d5eb8d4bf124
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4935d54a911701fda4740e3a1116c139730ceb08
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747514"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866536"
 ---
 # <a name="globalization-resources"></a>Globalisierungsressourcen
 
 ## <a name="local-and-regional-deployments"></a>Lokale und regionale Bereitstellungen
 Wenn Ihre behördlichen Vorschriften erfordern, dass Daten anders gespeichert oder bearbeitet werden, als dies für andere Länder/Regionen erforderlich ist, kann es sein, dass es länderspezifische/regionale Anforderungen gibt, die Sie bei der Bereitstellung berücksichtigen müssen. Berücksichtigen Sie die folgenden Ressourcen, die für Sie relevant sein könnten:
 
-[Finance and Operations-Apps, betrieben von 21Vianet in China](../deployment/china-local-deployment.md)
+[Finanzen- und Betriebs-Apps, bearbeitet von 21Vianet in China](../deployment/china-local-deployment.md)
 
 ## <a name="localization-and-regulatory-features"></a>Lokalisierung und rechtliche Funktionen
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations-Apps umfassen Funktionen für die im [Handbuch für Produktlokalisierung und Übersetzungsverfügbarkeit](https://aka.ms/dynamics_365_international_availability_deck) angegebenen Länder/Regionen. Diese Funktionalität wird auf Grundlage der primären Adresse der aktiven juristischen Person aktiviert. 
+Finanz- und Betriebs-Apps umfassen Funktionen für die im [Handbuch für Produktlokalisierung und Übersetzungsverfügbarkeit](https://aka.ms/dynamics_365_international_availability_deck) angegebenen Länder/Regionen. Diese Funktionalität wird auf Grundlage der primären Adresse der aktiven juristischen Person aktiviert. 
 
-Dieses Thema enthält eine Liste mit Ressourcen, die Ihnen Folgendes erleichtern: 
+Dieser Artikel enthält eine Liste mit Ressourcen, die Ihnen Folgendes erleichtern: 
 - Sich weiter über die Entwicklung von land- und regionsspezifischen Lösungen informieren.
 - Land- und regionsspezifische Aktualisierungen erhalten.
 - Auflagenbezogene Warnungen einreichen und prüfen.
@@ -62,8 +62,8 @@ In den folgenden Ressourcen finden Sie weitere Informationen zu geplanten und ne
 #### <a name="dynamics-365-release-plans"></a>Dynamics 365-Veröffentlichungspläne
 Die [Dynamics 365-Veröffentlichungspläne](/business-applications-release-notes/) enthalten Beschreibungen der neuen und erweiterten Funktionen, die für Dynamics 365-Geschäftsanwendungen und -Anwendungsplattformen geplant sind. 
 
-#### <a name="finance-and-operations-apps-whats-new"></a>Neuerungen zu Finance and Operations-Apps
-Die [Seite zu Neuerungen oder Änderungen in Finance and Operations](../../fin-ops/get-started/whats-new-changed.md) listet die Funktionen auf, die in bestimmten Versionen der Finance and Operations-Apps enthalten sind.
+#### <a name="finance-and-operations-apps-whats-new"></a>Finance and Operations-Apps – Neuerungen
+Die [Neuerungen oder Änderungen der Finance and Operations-Startseite](../../fin-ops/get-started/whats-new-changed.md) listen die Funktionen auf, die in bestimmten Versionen der Finance and Operations-Apps enthalten sind.
 
 ### <a name="electronic-reporting"></a>Elektronische Berichterstellung
 Das Tool für die „Elektronische Berichterstellung“ (ER) ermöglicht es Ihnen, Formate für elektronische Dokumente in Übereinstimmung mit den rechtlichen Anforderungen verschiedener Länder/Regionen zu konfigurieren. ER ermöglicht Ihnen, diese Formate während ihres Lebenszyklus zu verwalten. Weitere Informationen finden Sie unter einem der folgenden Themen:

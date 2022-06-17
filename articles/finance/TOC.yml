@@ -60,6 +60,8 @@
                   href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Dienstupdates konfigurieren
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/finance/toc.json
+                - name: Vorab- und Nachwartung
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?toc=/dynamics365/finance/toc.json
                 - name: Dienstupdates anhalten
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/finance/toc.json
                 - name: Benachrichtigungen zu Dienstupdates erhalten
@@ -1684,6 +1686,8 @@
                       href: general-ledger/sales-tax-calculation-methods-origin-field.md
                     - name: Optionen zur Berechnung von Gesamtbetrag und Intervall für Mehrwertsteuercodes
                       href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
+                    - name: Steuerberechnung und Rundung
+                      href: general-ledger/sales-tax-calculation-rounding.md
                     - name: Mehrwertsteuerberechnung für allgemeine Erfassungspositionen
                       href: general-ledger/sales-tax-calculation-on-general-journal.md
                     - name: Mehrwertsteuer auf einer Kreditorenrechnung berechnen und anpassen
@@ -2168,6 +2172,8 @@
                   href: localizations/emea-est-vat-statement-details.md
                 - name: Intrastat (Estland)
                   href: localizations/emea-est-intrastat.md
+                - name: Zusammenfassende Meldung
+                  href: localizations/emea-est-eu-sales-list.md
             - name: Europa
               items:
                 - name: Informationen zu Europa
@@ -2452,6 +2458,8 @@
                   href: localizations/emea-hun-online-invoicing.md
                 - name: Umsatzsteuerberichte für Ungarn
                   href: localizations/emea-hun-sales-tax-reports.md
+                - name: Intrastat (Ungarn)
+                  href: localizations/emea-hun-intrastat.md
                 - name: Verzögerte Mehrwertsteuerberechnungen
                   href: localizations/emea-hun-deferred-vat.md
             - name: Island
@@ -3112,6 +3120,8 @@
                   href: localizations/emea-lva-vat-statement-details.md
                 - name: Intrastat (Lettland)
                   href: localizations/emea-lva-intrastat.md
+                - name: Zusammenfassende Meldung
+                  href: localizations/emea-lva-eu-sales-list.md
             - name: Litauen
               items:
                 - name: Informationen zu Litauen
@@ -3130,6 +3140,8 @@
                   href: localizations/emea-ltu-saf-t.md
                 - name: Umlagerungsdokument für Warenbewegung innerhalb eines Unternehmens einrichten
                   href: localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
+                - name: Zusammenfassende Meldung
+                  href: localizations/emea-ltu-eu-sales-list.md
             - name: Malaysia
               items:
                 - name: Informationen zu Malaysia
@@ -4483,6 +4495,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
                     - name: Leistungsprobleme bei EB-Konfigurationen beheben
                       href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/finance/toc.json
+                    - name: Anzahl der zur Laufzeit abgerufenen Tabellenfelder reduzieren
+                      href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?toc=/dynamics365/finance/toc.json
                 - name: Geschäftsdokumentverwaltung
                   items:
                     - name: Übersicht über die Geschäftsdokumentverwaltung

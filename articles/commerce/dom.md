@@ -1,6 +1,6 @@
 ---
 title: Verteilte Auftragsverwaltung (DOM)
-description: In diesem Thema wird die Funktion der verteilten Auftragsverwaltung (Distributed Order Management, DOM) in Dynamics 365 Commerce beschrieben.
+description: In diesem Artikel wird die Funktion der verteilten Auftragsverwaltung (Distributed Order Management, DOM) in Dynamics 365 Commerce beschrieben.
 author: josaw1
 ms.date: 02/08/2022
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f19fbe2a9f768a91c495a6a4bcb0e475adb867ae
-ms.sourcegitcommit: 8bea5a0c232ac31dcafddfcc0d715c496d8dd445
+ms.openlocfilehash: 26817321753c8e39d61957b4ea2004f20daf1b2f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102008"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878511"
 ---
 # <a name="distributed-order-management-dom"></a>Verteilte Auftragsverwaltung (DOM)
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird die Funktion der verteilten Auftragsverwaltung (Distributed Order Management, DOM) in Microsoft Dynamics 365 Commerce beschrieben.
+In diesem Artikel wird die Funktion der verteilten Auftragsverwaltung (Distributed Order Management, DOM) in Microsoft Dynamics 365 Commerce beschrieben.
 
 DOM ist eine Omnichannel-Lösung zur Optimierung der Auftragserfüllung, die dabei hilft, die Auftragserfüllung in einem Lieferkettennetzwerk zu maximieren. DOM hilft Ihnen sicherzustellen, dass Produkte in den richtigen Mengen, aus den richtigen Quellen und zur richtigen Zeit an Ihre Kunden geliefert werden. DOM kann Ihnen auch dabei helfen, Gewinne zu maximieren, Kosten zu minimieren und Vorgaben der Vereinbarung zum Servicelevel zu erfüllen.
 
