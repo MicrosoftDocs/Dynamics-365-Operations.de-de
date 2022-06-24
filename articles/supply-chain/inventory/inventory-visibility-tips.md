@@ -1,6 +1,6 @@
 ---
-title: Tipps zur Inventory Visibility
-description: Dieses Thema enthält einige Tipps, die Sie bei der Einrichtung und Verwendung des Bestandssichtbarkeit-Add-Ins beachten sollten.
+title: Tipps zu Inventory Visibility
+description: Dieser Artikel enthält einige Tipps, die Sie bei der Einrichtung und Verwendung des Bestandssichtbarkeit-Add-Ins beachten sollten.
 author: yufeihuang
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1f6ade36ac184a3c8bf790fc0d899ea01d90c8d2
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 9f571d353f99c91776424bc2fa3405f73b2bae0a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952414"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885956"
 ---
 # <a name="inventory-visibility-tips"></a>Tipps zur Inventory Visibility
 
@@ -34,5 +34,6 @@ Hier finden Sie einige Tipps, die Sie bei der Einrichtung und Verwendung des Bes
 - Wenn Sie Ihrer Supply Chain Management-Umgebung eine oder mehrere neue Kennzahlen hinzufügen, sollten Sie diese auch in der Bestandsanzeige hinzufügen. Alle Mengenänderungen für neue Maßnahmen müssen jedoch aus Ihrer Supply Chain Management-Umgebung stammen.
 - Die [Partitionskonfiguration](inventory-visibility-configuration.md#partition-configuration) besteht derzeit aus zwei Basis Dimensionen (`SiteId` und `LocationId`), die angeben, wie die Daten verteilt werden. Vorgänge unter der gleichen Partition können eine höhere Leistung zu geringeren Kalkulationen liefern. Die Lösung enthält diese Partitionskonfiguration standardmäßig. Daher *müssen Sie sie nicht selbst definieren*. Passen Sie die Standardkonfiguration der Partition nicht an. Wenn Sie es löschen oder ändern, werden Sie wahrscheinlich einen unerwarteten Fehler verursachen.
 - Basisdimensionen, die in der Partitionskonfiguration definiert sind, sollten nicht in der [Produktindexhierarchie-Konfiguration](inventory-visibility-configuration.md#index-configuration) definiert werden.
+- Ihre [Produktindexhierarchie-Konfiguration](inventory-visibility-configuration.md#index-configuration) muss mindestens eine Indexhierarchie haben (die beispielsweise die Basisdimension `Empty` enthält), andernfalls schlagen Abfragen mit dem Fehler „Es wurde keine Indexhierarchie festgelegt“ fehl.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

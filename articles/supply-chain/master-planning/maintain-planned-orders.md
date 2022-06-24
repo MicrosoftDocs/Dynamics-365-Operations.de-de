@@ -1,5 +1,5 @@
 ---
-title: Bestellvorschläge verwalten
+title: Auftragsvorschläge verwalten
 description: Dieser Artikel bietet Informationen dazu, wie Bestellvorschläge verwaltet werden. Es wird beschrieben, wie Sie den Status von Bestellvorschlägen aktualisieren, umwandeln und Bestellvorschläge filtern können, die den gleichen Status wie ein ausgewählter Bestellvorschlag haben.
 author: t-benebo
 ms.date: 12/10/2019
@@ -16,14 +16,14 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2bf3efec234ea4d22c01e1b48b3548dad7577a2b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 8c127b25644e417983672c8111925ecd3a51d6ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468579"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850698"
 ---
-# <a name="maintain-planned-orders"></a>Bestellvorschläge verwalten
+# <a name="maintain-planned-orders"></a>Auftragsvorschläge verwalten
 
 [!include [banner](../includes/banner.md)]
 

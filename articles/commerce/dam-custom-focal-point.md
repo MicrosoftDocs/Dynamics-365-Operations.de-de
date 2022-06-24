@@ -1,6 +1,6 @@
 ---
-title: Bild-Brennpunkte anpassen
-description: In diesem Thema wird beschrieben, wie die Bildfokuspunkte in Microsoft Dynamics 365 Commerce Site Builder angepasst werden können.
+title: Bildfokuspunkte anpassen
+description: In diesem Artikel wird beschrieben, wie die Bildfokuspunkte in Microsoft Dynamics 365 Commerce Site Builder angepasst werden können.
 author: psimolin
 ms.date: 04/14/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9c8a1b6de774a4d89c0ebcf46847c1b2c5b62374b3e5ac25a0bea2ff30b47510
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9294fcc7302e3651eca1b5edefd556143e49fb93
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727605"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852814"
 ---
 # <a name="customize-image-focal-points"></a>Bildfokuspunkte anpassen
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie die Bildfokuspunkte in Microsoft Dynamics 365 Commerce Site Builder angepasst werden können.
+In diesem Artikel wird beschrieben, wie die Bildfokuspunkte in Microsoft Dynamics 365 Commerce Site Builder angepasst werden können.
 
 Wenn ein Bild in die Medienbibliothek des Commerce-Site-Builders hochgeladen wird, versucht das System, den Brennpunkt des Bildes zu bestimmen. Wenn sich beispielsweise eine Person auf dem Bild befindet, setzt das System den Fokus standardmäßig auf das Gesicht der Person. In den meisten Fällen funktioniert der automatisch gesetzte Fokuspunkt für alle Ansichtsfenster gut, aber manchmal möchten Sie den Fokuspunkt vielleicht anpassen, um sicherzustellen, dass ein bestimmter Teil des Bildes immer sichtbar ist.
 

@@ -1,6 +1,6 @@
 ---
 title: Intrastat – Übersicht
-description: Dieses Thema enthält Informationen zur Intrastat-Berichterstattung für den Warenhandel und in einigen Fällen Dienstleistungen unter Ländern/Regionen der Europäischen Union (EU).
+description: Dieser Artikel enthält Informationen zur Intrastat-Berichterstattung für den Warenhandel und in einigen Fällen Dienstleistungen unter Ländern/Regionen der Europäischen Union (EU).
 author: EvgenyPopovMBS
 ms.date: 01/13/2021
 ms.topic: overview
@@ -16,18 +16,18 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 97c2b4068f3b8d38281e637ec80f04b19d19be61
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9360f97506ac7bdf67bb2f1b296f01b6ed49b39f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986036"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894779"
 ---
 # <a name="intrastat-overview"></a>Intrastat – Übersicht
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Informationen zur Intrastat-Berichterstattung für den Warenhandel und in einigen Fällen Dienstleistungen unter Ländern/Regionen der Europäischen Union (EU). Dieses Thema bietet zudem einen Überblick über Berichterstellungsprozesse und beschreibt die erforderlichen Einstellungen und die Voraussetzungen.
+Dieser Artikel enthält Informationen zur Intrastat-Berichterstattung für den Warenhandel und in einigen Fällen Dienstleistungen unter Ländern/Regionen der Europäischen Union (EU). Dieser Artikel bietet zudem einen Überblick über Berichterstellungsprozesse und beschreibt die erforderlichen Einstellungen und die Voraussetzungen.
 
 Intrastat ist das System für die Sammlung von Informationen und Generierung von statistischen Daten über den Warenhandel zwischen Ländern/Regionen der Europäischen Union (EU). Intrastat-Berichte werden benötigt, wenn ein Produkt die Grenze eines anderen EU-Landes/einer anderen Region überschreitet. In einigen Ländern/Regionen sind Intrastat-Berichte außerdem für Dienstleistungen nötig. Erforderliche und optionale Elemente können im Intrastat-Bericht erfasst werden. Die folgenden Elemente sind erforderlich: Die Umsatzsteuernummer (VAT ID) der Partei, die für die Bereitstellung der Informationen verantwortlich ist, der Referenzzeitraum, der Flow (Eingang oder Ausgang), der Warencode mit acht Ziffern, der Mitgliedsstaat des Partners (Mitgliedsstaat der Lieferung bei Eingang und Mitgliedsstaat des Ziels bei Ausgang), der Warenwert, die Warenmenge (Nettogewicht und zugehörige Einheit) sowie die Art der Transaktion. Länder/Regionen können auch optionale Elemente gemäß verschiedenen Bedingungen erfassen. Einige optionale Elemente sind Ursprungsland/-region, Lieferbedingungen, die Art des Transports, ein ausführlicherer Warencode als CN8, die Region des Ursprungs auf Dispositionen und die Region des Ziels auf Eingängen, das Statistikverfahren, der statistische Wert, einer Beschreibung der Waren und der Anschluss/der Flughafen des Ladens/Entladens.
 
@@ -152,7 +152,7 @@ Verwenden Sie die **Außenhandelsparameter** Seite, um die Parameter in der folg
 
 ### <a name="transaction-codes-and-miscellaneous-charges"></a><a name= "transaction-codes-and-miscellaneous-charges"></a>Transaktionscodes und sonstige Belastungen
 
-Dieses Thema behandelt ein Szenario, in dem ein Unternehmen in Deutschland Waren von einem Unternehmen in Italien kaufen muss. Um diesen Kauf zu tätigen, muss das deutsche Unternehmen neue Transaktionscodes einrichten und Berechnungsregeln für den Rechnungsbetrag und den statistischen Betrag für diese Transaktionscodes konfigurieren. Wenn das Unternehmen eine Rechnung erstellt, muss es außerdem sonstige Belastungen und deren Prozentsätze angeben. Diese Werte werden bei der Berechnung des statistischen Wertes berücksichtigt.
+Dieser Artikel behandelt ein Szenario, in dem ein Unternehmen in Deutschland Waren von einem Unternehmen in Italien kaufen muss. Um diesen Kauf zu tätigen, muss das deutsche Unternehmen neue Transaktionscodes einrichten und Berechnungsregeln für den Rechnungsbetrag und den statistischen Betrag für diese Transaktionscodes konfigurieren. Wenn das Unternehmen eine Rechnung erstellt, muss es außerdem sonstige Belastungen und deren Prozentsätze angeben. Diese Werte werden bei der Berechnung des statistischen Wertes berücksichtigt.
 
 Dieses Szenario verwendet die juristische Person **DEMF**.
 
@@ -171,7 +171,7 @@ Dieses Szenario verwendet die juristische Person **DEMF**.
 1. Wechseln Sie zu **Steuer** > **Einstellungen** > **Außenhandel** > **Art des Geschäfts**.
 2. Wählen Sie im Raster **11** aus. Wählen Sie dann im Aktivitätsbereich **Löschen** aus.
 3. Wählen Sie im Aktivitätsbereich **Neu** aus.
-4. Geben Sie auf dem **Transaktionscodes**-Inforegister im **Transaktions****code**-Feld **11** ein.
+4. Geben Sie auf dem **Transaktionscodes**-Inforegister im **Transaktionscode**-Feld **11** ein.
 5. Geben Sie im Feld **Name** **Direkter Kauf/Verkauf** ein.
 6. Wählen Sie im **Verkäufe und Einkäufe**-Abschnitt im **Rechnungsbetrag**-Feld **Rechnungsbetrag** aus.
 7. Wählen Sie im Feld **Statistikbetrag** **Rechnungsbetrag** aus.
@@ -244,7 +244,7 @@ In diesem Beispiel muss ein Unternehmen in Deutschland zwei Wareneinheiten von e
 1. Wechseln Sie zu **Steuer** > **Einstellungen** > **Außenhandel** > **Art des Geschäfts**.
 2. Wählen Sie im Raster **11** aus. Wählen Sie dann im Aktivitätsbereich **Löschen** aus.
 3. Wählen Sie im Aktivitätsbereich **Neu** aus.
-4. Geben Sie auf dem **Transaktionscodes**-Inforegister im **Transaktions****code**-Feld **11** ein.
+4. Geben Sie auf dem **Transaktionscodes**-Inforegister im **Transaktionscode**-Feld **11** ein.
 5. Geben Sie im Feld **Name** **Direkter Kauf/Verkauf** ein.
 6. Wählen Sie im **Umlagerungsauftrag**-Abschnitt im Feld **Rechnungsbetrag** **Gesamtkosten** aus.
 7. Wählen Sie im Feld **Statistikbetrag** die Option **Gesamtkosten** aus.

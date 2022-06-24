@@ -1,6 +1,6 @@
 ---
 title: BOM-Berechnungen
-description: Die Berechnungen für die Kostenzusammenfassung sowie zur Ermittlung des Stücklistenpreises werden als Herstellkostenkalkulation bezeichnet, da sie vom Formular aus gestartet werden. Dieses Thema enthält Informationen zur Stücklistenberechnung
+description: Die Berechnungen für die Kostenzusammenfassung sowie zur Ermittlung des Stücklistenpreises werden als Herstellkostenkalkulation bezeichnet, da sie vom Formular aus gestartet werden. Dieser Artikel enthält Informationen zu Stücklistenkostenkalkulationen.
 author: JennySong-SH
 ms.date: 05/01/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 0a71a17efbca3945c5a1010cf7d523a85420e8e2
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c19c15f807a809a68043a75ca935fa92217fcd5f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674588"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902801"
 ---
-# <a name="bom-calculations"></a>BOM-Berechnungen
+# <a name="bom-calculations"></a>Stücklistenkostenkalkulationen
 
 [!include [banner](../includes/banner.md)]
 
-Die Berechnungen für die Kostenzusammenfassung sowie zur Ermittlung des Stücklistenpreises werden als Herstellkostenkalkulation bezeichnet, da sie vom Formular aus gestartet werden. Dieses Thema enthält Informationen zur Stücklistenberechnung
+Die Berechnungen für die Kostenzusammenfassung sowie zur Ermittlung des Stücklistenpreises werden als Herstellkostenkalkulation bezeichnet, da sie vom Formular aus gestartet werden. Dieser Artikel enthält Informationen zu Stücklistenkostenkalkulationen.
 
 Die Berechnungen für die Kostenzusammenfassung sowie zur Ermittlung des Stücklistenpreises werden als Herstellkostenkalkulation bezeichnet, da sie von der Seite **Berechnung** gestartet werden. Sie verwenden die Seite **Berechnung**, um folgende Aufgaben auszuführen:
 

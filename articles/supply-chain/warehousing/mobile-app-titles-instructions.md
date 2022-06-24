@@ -1,6 +1,6 @@
 ---
 title: Schritttitel und Anweisungen für die mobile Warehouse Management-App anpassen
-description: Dieses Thema beschreibt, wie Sie angepasste Anweisungen für jeden Schritt jedes Task Flows erstellen und anzeigen, den Sie für die Mobile-App von Warehouse Management festgelegt haben.
+description: Dieser Artikel beschreibt, wie Sie angepasste Anweisungen für jeden Schritt jedes Task Flows erstellen und anzeigen, den Sie für die Mobile-App von Warehouse Management festgelegt haben.
 author: Mirzaab
 ms.date: 08/11/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-11
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ffd433427b2c5011740a7ee54c93713689945df3
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 289a3735133919ae7dbad05c40ba9ccf0e8f57ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902246"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895495"
 ---
 # <a name="customize-step-titles-and-instructions-for-the-warehouse-management-mobile-app"></a>Schritttitel und Anweisungen für die mobile Warehouse Management-App anpassen
 
 > [!IMPORTANT]
-> Die Funktionen, die in diesem Thema beschrieben werden, gelten nur für die neue Warehouse Management Mobile-App. Sie betreffen nicht die alte Lager-App, die jetzt außer Betrieb genommen ist.
+> Die Funktionen, die in diesem Artikel beschrieben werden, gelten nur für die neue Warehouse Management Mobile-App. Sie betreffen nicht die alte Lager-App, die jetzt außer Betrieb genommen ist.
 
-Dieses Thema beschreibt, wie Sie angepasste Anweisungen für jeden Schritt jedes Task Flows erstellen und anzeigen, den Sie für die Warehouse Management Mobile-App festgelegt haben. Wenn die Arbeitskräfte im Lager gut geschriebene Anweisungen erhalten, können sie sofort mit der Verwendung neuer Flows beginnen, ohne dass eine vorherige Schulung erforderlich ist. Diese Funktion bietet die folgenden Vorteile:
+Dieser Artikel beschreibt, wie Sie angepasste Anweisungen für jeden Schritt jedes Task Flows erstellen und anzeigen, den Sie für die Warehouse Management Mobile-App festgelegt haben. Wenn die Arbeitskräfte im Lager gut geschriebene Anweisungen erhalten, können sie sofort mit der Verwendung neuer Flows beginnen, ohne dass eine vorherige Schulung erforderlich ist. Diese Funktion bietet die folgenden Vorteile:
 
 - **Beschleunigen Sie die Einarbeitung der Arbeitskräfte, indem Sie sie einfache Anweisungen für jeden Aufgabenschritt befolgen lassen.** Jeder Schritt eines Flows enthält Anweisungen, die es den Arbeitskräften an der Front ermöglichen, die Aufgabe zu verstehen.
 - **Bieten Sie Anweisungen an, die zu Ihren eigenen Prozessen passen.** Schreiben Sie Ihre eigenen Anweisungen, die zu Ihren Geschäfts- und Lagerprozessen passen. Zum Beispiel können Sie die Terminologie an Ihre räumlichen Gegebenheiten und lokalen Abkürzungen anpassen.

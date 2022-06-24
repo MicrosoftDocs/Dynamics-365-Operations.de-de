@@ -1,6 +1,6 @@
 ---
 title: Skalierungseinheiten in einer verteilten Hybridtopologie
-description: Dieses Thema enthält Informationen über Cloud- und Edge-Scale-Einheiten für Arbeitsauslastungen in der Fertigung und Lagerortverwaltung.
+description: Dieser Artikel enthält Informationen über Cloud- und Edge-Scale-Einheiten für Arbeitsauslastungen in der Fertigung und Lagerortverwaltung.
 author: Mirzaab
 ms.date: 04/22/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 5ec846b294cd9ca62ff15a5306e012813c77e306
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6b53822238220ccfcf538d49285e051c49c57189
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676327"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893670"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Skalierungseinheiten in einer verteilten Hybridtopologie
 
@@ -25,7 +25,7 @@ ms.locfileid: "8676327"
 > [!IMPORTANT]
 > Die Skalierungseinheit für Microsoft Dynamics 365 Supply Chain Management wird Ihnen unter den Bedingungen zur Verfügung gestellt, die für die Nutzung des Dienstes gelten. Weitere Informationen finden Sie in den [rechtlichen Hinweisen zu Microsoft Dynamics](https://go.microsoft.com/fwlink/?LinkID=290927).
 >
-> Wenn Sie Cloud- und Edge-Scale-Einheiten aktivieren, werden Sie aufgefordert, zu bestätigen, dass Sie verstehen, dass einige Daten, die mit der Konfiguration und Verarbeitung von Cloud- und Edge-Scale-Einheiten zusammenhängen, möglicherweise in einem Rechenzentrum gespeichert werden, das sich in den USA befindet. Weitere Informationen zur Datenverarbeitung für Cloud- und Edge-Skalierungseinheiten finden Sie weiter unten in diesem Thema im Abschnitt [Datenverarbeitung während der Verwaltung von Skalierungseinheiten](#data-processing-management).
+> Wenn Sie Cloud- und Edge-Scale-Einheiten aktivieren, werden Sie aufgefordert, zu bestätigen, dass Sie verstehen, dass einige Daten, die mit der Konfiguration und Verarbeitung von Cloud- und Edge-Scale-Einheiten zusammenhängen, möglicherweise in einem Rechenzentrum gespeichert werden, das sich in den USA befindet. Weitere Informationen zur Datenverarbeitung für Cloud- und Edge-Skalierungseinheiten finden Sie weiter unten in diesem Artikel im Abschnitt [Datenverarbeitung während der Verwaltung von Skalierungseinheiten](#data-processing-management).
 
 ## <a name="core-value-proposition-for-a-distributed-hybrid-topology"></a>Kernwertversprechen für eine verteilte Hybridtopologie
 
@@ -48,7 +48,7 @@ Skalierungseinheiten bieten Resilienz, Zuverlässigkeit und Skalierbarkeit für 
 
 Eine *Arbeitsauslastung* ist eine festgelegte Menge an Geschäftsfunktionalität, die an eine Skalierungseinheit delegiert werden kann. Obwohl die Arbeitsauslastung für die Lagerortverwaltung freigegeben wurde, befindet sich die Arbeitsauslastung für die Fertigungssteuerung noch in der Vorschau.
 
-Sie können Ihre Hub-Umgebung und Cloud-Skalierungseinheiten für ausgewählte Arbeitsauslastungen konfigurieren, indem Sie das [Scale Unit Manager-Portal](https://sum.dynamics.com) verwenden. Sie können auch mehrere Arbeitsauslastungen pro Skalierungseinheit zuweisen. Weitere Informationen zu den Voraussetzungen und Einschränkungen für Cloud-Skalierungseinheiten in der aktuellen Version finden Sie weiter unten in diesem Thema im Abschnitt [Voraussetzungen und Einschränkungen für Cloud-Skalierungseinheiten](#cloud-scale-unit-prerequisites).
+Sie können Ihre Hub-Umgebung und Cloud-Skalierungseinheiten für ausgewählte Arbeitsauslastungen konfigurieren, indem Sie das [Scale Unit Manager-Portal](https://sum.dynamics.com) verwenden. Sie können auch mehrere Arbeitsauslastungen pro Skalierungseinheit zuweisen. Weitere Informationen zu den Voraussetzungen und Einschränkungen für Cloud-Skalierungseinheiten in der aktuellen Version finden Sie weiter unten in diesem Artikel im Abschnitt [Voraussetzungen und Einschränkungen für Cloud-Skalierungseinheiten](#cloud-scale-unit-prerequisites).
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Dedizierte Arbeitsauslastungen für die Lagerortverwaltung in einer Scale Unit
 

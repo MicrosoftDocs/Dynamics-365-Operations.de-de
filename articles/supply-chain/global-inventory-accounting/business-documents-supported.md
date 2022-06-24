@@ -1,6 +1,6 @@
 ---
 title: Geschäftsbelege, die von der Globalen Bestandsbuchhaltung unterstützt werden
-description: Dieses Thema listet die Belege auf, die von der Globalen Bestandsbuchhaltung unterstützt werden. Es enthält auch ein detailliertes Beispiel für Einkaufsbestellung Belege.
+description: Dieser Artikel listet die Belege auf, die von der Globalen Bestandsbuchhaltung unterstützt werden. Es enthält auch ein detailliertes Beispiel für Einkaufsbestellung Belege.
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 44081be35c6737aa0d16b6e11a5fc8f94b41e872
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: dc88d095c039b22ac347db949f6b61d5a89dc4b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674448"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875422"
 ---
 # <a name="business-documents-supported-by-global-inventory-accounting"></a>Geschäftsbelege, die von der Globalen Bestandsbuchhaltung unterstützt werden
 
@@ -32,7 +32,7 @@ Es gibt zwei Arten von geschäftlichen Belegen:
 - **Dokumente, die eine Erfassung haben** – Zu diesen Belegen gehören Produktzugang, Einkaufsrechnung, Lieferschein und Verkaufsrechnung.
 - **Dokumente, die kein Journal haben** – Zu diesen Belegen gehören Zähl-, Bewegungs- und Bestandskorrekturbelege.
 
-Später in diesem Thema werden Bestellungen als Beispiel verwendet, um den Prozess zu veranschaulichen.
+Später in diesem Artikel werden Bestellungen als Beispiel verwendet, um den Prozess zu veranschaulichen.
 
 Die folgende Tabelle listet die Belege auf, die die aktuelle Version unterstützt.
 

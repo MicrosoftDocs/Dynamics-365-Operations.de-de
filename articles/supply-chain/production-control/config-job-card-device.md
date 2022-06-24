@@ -1,6 +1,6 @@
 ---
 title: Einzelvorgangsliste für Geräte konfigurieren
-description: In diesem Thema werden die verschiedenen Optionen zum Konfigurieren der Einzelvorgangskartengeräts beschrieben.
+description: In diesem Artikel werden die verschiedenen Optionen zum Konfigurieren der Einzelvorgangskartengeräts beschrieben.
 author: johanhoffmann
 ms.date: 05/29/2020
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 4c7a9585d96a1e08790e0f3c972e704971f27dc0
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 0f42ad593f59f716fb6cb535d73654d3549ba00e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103437"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860724"
 ---
 # <a name="configure-job-card-for-devices"></a>Einzelvorgangsliste für Geräte konfigurieren
 
 [!include [banner](../includes/banner.md)]
 
-Das Einzelvorgangsgerät wird von den Mitarbeitern in der Werkstatt verwendet, um ihre tägliche Arbeit zu registrieren, z. B. wenn Vorgänge gestartet werden, Feedback zu Jobs gemeldet, indirekte Aktivitäten registriert und Abwesenheit gemeldet werden. Diese Registrierungen sind die Grundlage für die Verfolgung von Fortschritt und Kosten bei Produktionsaufträgen und für die Berechnung der Grundlage für die Bezahlung der Arbeitnehmer. In diesem Thema werden die verschiedenen Optionen zum Konfigurieren der Einzelvorgangskartengeräte beschrieben.
+Das Einzelvorgangsgerät wird von den Mitarbeitern in der Werkstatt verwendet, um ihre tägliche Arbeit zu registrieren, z. B. wenn Vorgänge gestartet werden, Feedback zu Jobs gemeldet, indirekte Aktivitäten registriert und Abwesenheit gemeldet werden. Diese Registrierungen sind die Grundlage für die Verfolgung von Fortschritt und Kosten bei Produktionsaufträgen und für die Berechnung der Grundlage für die Bezahlung der Arbeitnehmer. In diesem Artikel werden die verschiedenen Optionen zum Konfigurieren der Einzelvorgangskartengeräte beschrieben.
 
 ## <a name="enable-new-features-in-feature-management"></a>Aktivieren neuer Funktionen in der Funktionsverwaltung
 
-Einige der in diesem Thema beschriebenen Einstellungen müssen auf Ihrem System aktiviert sein, bevor sie Ihnen zur Verfügung stehen. Verwenden Sie die Seite [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um einige oder alle der folgenden Funktionen nach Bedarf zu aktivieren.
+Einige der in diesem Artikel beschriebenen Einstellungen müssen auf Ihrem System aktiviert sein, bevor sie Ihnen zur Verfügung stehen. Verwenden Sie die Seite [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um einige oder alle der folgenden Funktionen nach Bedarf zu aktivieren.
 
 ### <a name="generate-license-plate"></a>Ladungsträger generieren
 

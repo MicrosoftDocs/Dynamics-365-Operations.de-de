@@ -1,6 +1,6 @@
 ---
-title: Übersicht über die Verkaufsvereinbarungen
-description: Dieses Thema enthält Informationen zu Kaufverträgen. Durch einen Kaufvertrag verpflichtet sich der Debitor, Produkte in einer bestimmten Menge oder für einen bestimmten Preis über einen vorgegebenen Zeitraum zu erwerben, wobei ihm im Gegenzug Sonderpreise und Rabatte zustehen.
+title: Übersicht über Verkaufsverträge
+description: Dieser Artikel gibt Informationen zu Kaufverträgen. Durch einen Kaufvertrag verpflichtet sich der Debitor, Produkte in einer bestimmten Menge oder für einen bestimmten Preis über einen vorgegebenen Zeitraum zu erwerben, wobei ihm im Gegenzug Sonderpreise und Rabatte zustehen.
 author: Henrikan
 ms.date: 07/25/2019
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c36ace4fe61d4f3add7750c66594c0f1060f8127
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3e84b8be597870deea3beaf1bdc4a98021b7f135
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694367"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903839"
 ---
-# <a name="sales-agreements-overview"></a>Übersicht über die Verkaufsvereinbarungen
+# <a name="sales-agreements-overview"></a>Übersicht über Verkaufsverträge
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Informationen zu Kaufverträgen. Durch einen Kaufvertrag verpflichtet sich der Debitor, Produkte in einer bestimmten Menge oder für einen bestimmten Preis über einen vorgegebenen Zeitraum zu erwerben, wobei ihm im Gegenzug Sonderpreise und Rabatte zustehen.
+Dieser Artikel gibt Informationen zu Kaufverträgen. Durch einen Kaufvertrag verpflichtet sich der Debitor, Produkte in einer bestimmten Menge oder für einen bestimmten Preis über einen vorgegebenen Zeitraum zu erwerben, wobei ihm im Gegenzug Sonderpreise und Rabatte zustehen.
 
 Ein Kaufvertrag ist ein Vertrag, der den Debitor verpflichtet, Produkte in einer bestimmten Menge oder einer bestimmten Menge über einen vorgegebenen Zeitraum, gegen die Gewährung von Sonderpreisen, Sonderrabatte und anderen speziellen Bedingungen, wie Zahlungs-und Lieferbedingungen, abzunehmen. Die Preise und Rabatte des Kaufvertrags überschreiben alle Preise und Rabatte, die in sämtlichen vorhandenen Handelsvereinbarungen angegeben sind.  
 

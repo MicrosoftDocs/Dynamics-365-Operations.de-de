@@ -1,6 +1,6 @@
 ---
 title: Auftragssuche für Gast-Checkouts aktivieren
-description: In diesem Thema wird beschrieben, wie Sie die Bestellsuche für Gastbezahlvorgänge in Microsoft Dynamics 365 Commerce aktivieren.
+description: In diesem Artikel wird beschrieben, wie Sie die Bestellsuche für Gastbezahlvorgänge in Microsoft Dynamics 365 Commerce aktivieren.
 author: stuharg
 ms.date: 12/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: a2a10b122faae354b0ea002e43a9bd60157f6216
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
+ms.openlocfilehash: fe32bb59b6529dd9686ced92c1016f12a75a32d4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891497"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891986"
 ---
 # <a name="enable-order-lookup-for-guest-checkouts"></a>Auftragssuche für Gast-Checkouts aktivieren
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie die Bestellsuche für Gastbezahlvorgänge in Microsoft Dynamics 365 Commerce aktivieren.
+In diesem Artikel wird beschrieben, wie Sie die Bestellsuche für Gastbezahlvorgänge in Microsoft Dynamics 365 Commerce aktivieren.
 
 Mit der Funktion zum Nachschlagen von Bestellungen für Gastbezahlvorgängen können Kunden, die als Gastbenutzer Einkäufe tätigen, ihre Bestellungen nachschlagen. Die Funktion zum Nachschlagen von Bestellungen ist nützlich, wenn Kunden Aktionen wie das Überprüfen des Erfüllungsstatus von Produkten einer Bestellung, die Überprüfung der Lieferadresse einer Bestellung, die Nachbestellung eines Produkts oder die Bestätigung des Geschäfts, in dem eine Bestellung abgeholt wird, durchführen möchten.
 

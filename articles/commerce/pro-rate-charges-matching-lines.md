@@ -1,6 +1,6 @@
 ---
-title: Kopfzuschläge auf entsprechende Bestellpositionen aufteilen
-description: In diesem Thema werden zusätzliche Funktionen zum Berechnen und Anwenden von Auto-Belastungen für Commerce Channel-Aufträge mithilfe der erweiterten Auto-Belastungen-Funktion beschrieben.
+title: Kopfbelastungen auf übereinstimmende Verkaufspositionen aufteilen
+description: In diesem Artikel werden zusätzliche Funktionen zum Berechnen und Anwenden von Auto-Belastungen für Commerce Channel-Aufträge mithilfe der erweiterten Auto-Belastungen-Funktion beschrieben.
 author: hhaines
 ms.date: 03/30/2020
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 0de29e1817840c172f9235f2ee48251c4878a0573d270a60fde5b42ba6f88d31
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b41aa7b012b161626a98fc4aa2d37134552a57a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774508"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886931"
 ---
-# <a name="prorate-header-charges-to-matching-sales-lines"></a>Kopfzuschläge auf entsprechende Bestellpositionen aufteilen
+# <a name="prorate-header-charges-to-matching-sales-lines"></a>Kopfbelastungen auf übereinstimmende Verkaufspositionen aufteilen
 
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden die Funktionen für Auto-Belastungen auf Gruppierungskopfebene und deren Aufteilung auf Handelsverkaufspositionen beschrieben. Diese Funktionen sind für Transaktionen verfügbar, die an der Verkaufsstelle in der Retail-Version 10.0.1 erstellt werden, und für Verkäufe, die in einem Callcenter in der Retail-Version 10.0. erstellt werden.
+In diesem Artikel werden die Funktionen für Auto-Belastungen auf Gruppierungskopfebene und deren Aufteilung auf Handelsverkaufspositionen beschrieben. Diese Funktionen sind für Transaktionen verfügbar, die an der Verkaufsstelle in der Retail-Version 10.0.1 erstellt werden, und für Verkäufe, die in einem Callcenter in der Retail-Version 10.0. erstellt werden.
 
 Diese Funktion ist nur verfügbar, wenn die Funktion [erweiterte Auto-Belastungen](/dynamics365/unified-operations/retail/omni-auto-charges) aktiviert ist, indem Sie die Option **Handelsparameter** auf der Seite verwenden. Außerdem kann die Berechnungsmethode für erweiterte Auto-Belastungen nur auf Handelsverkaufsaufträge angewendet werden, die über Handelskanäle erstellt wurden (am POS, über ein Callcenter und über die Dynamics-E-Commerce-Plattform).
 

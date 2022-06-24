@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4bae8c038d048d18096eab20150701fd0e47250a
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: b48fcfe46dbc8a512a2ff9523b62c3a99d1bcd28
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734659"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888092"
 ---
 # <a name="hiring-candidate-through-recruiting"></a>Kandidaten über Rekrutierung einstellen
 
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> Die Personalbeschaffungsfunktionen in diesem Thema werden als Personalbeschaffungsprojekte bezeichnet und konzentrieren sich auf Bewerber, Bewerbungen und Personalbeschaffungsprojekte.  
+> Die Personalbeschaffungsfunktionen in diesem Artikel werden als Personalbeschaffungsprojekte bezeichnet und konzentrieren sich auf Bewerber, Bewerbungen und Personalbeschaffungsprojekte.  
 
 Auf diese Weise kann ein Personalbeschaffungsmitarbeiter einen Bewerber einstellen, der eine Bewerbung über ein bestimmtes Personalbeschaffungsprojekt übermittelt hat. Wenn Sie einen Bewerber durch ein Personalbeschaffungsprojekt einstellen, wird ein neuer Arbeitskraftdatensatz erstellt und der Datensatz des Bewerbers hat den Status **Eingestellt**. Das Demodatenunternehmen **USMF** wurde verwendet, um diese Prozedur zu erstellen.
 

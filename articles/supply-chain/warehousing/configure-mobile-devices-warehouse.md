@@ -1,6 +1,6 @@
 ---
 title: Mobile Geräte für Lagerarbeiten einrichten
-description: In diesem Thema wird beschrieben, wie Menüoptionen konfiguriert werden, die Arbeitskräfte zum Ausführen von Arbeit auf einem mobilen Gerät verwenden.
+description: In diesem Artikel wird beschrieben, wie Menüoptionen konfiguriert werden, die Arbeitskräfte zum Ausführen von Arbeit auf einem mobilen Gerät verwenden.
 author: Mirzaab
 ms.date: 03/23/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9e0f27839d9e6330cc8a11874a5cb1786daf8dc
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: efbf9072c3bbcb20f38e144f9a15d8178d96d708
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902178"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905572"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Mobile Geräte für Lagerarbeiten einrichten
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Menüoptionen konfiguriert werden, die Arbeitskräfte zum Ausführen von Arbeit auf einem mobilen Gerät verwenden.
+In diesem Artikel wird beschrieben, wie Menüoptionen konfiguriert werden, die Arbeitskräfte zum Ausführen von Arbeit auf einem mobilen Gerät verwenden.
 
 > [!NOTE]
 > Dieser Artikel gilt für Funktionen im Modul „Lagerortverwaltung“. Er gilt nicht für Funktionen im Modul "Lagerverwaltung". Die Menüoptionen, die in den Menüs eines Mobilgeräts in einem Lagerort angezeigt werden, werden auf der Seite **Menüelemente des mobilen Geräts** konfiguriert. Da die Menüelemente in unterschiedliche Menüs einbezogen werden können, ist es einfach, Menüstrukturen zu konfigurieren, sodass nur bestimmte Typen von Arbeit für bestimmte Benutzer verfügbar gemacht werden. Sie können Menüelemente so konfigurieren, dass Sie folgende Aufgaben ausführen:

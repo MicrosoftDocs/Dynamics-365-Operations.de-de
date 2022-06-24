@@ -1,6 +1,6 @@
 ---
 title: Kreditorenzusammenarbeit mit Debitoren
-description: In diesem Thema wird beschrieben, wie Sie Kreditorenzusammenarbeit verwenden können, um mit Bestellungen zu arbeiten und Lieferungsbestand zu überwachen.
+description: In diesem Artikel wird beschrieben, wie Sie Kreditorenzusammenarbeit verwenden können, um mit Bestellungen zu arbeiten und Lieferungsbestand zu überwachen.
 author: GalynaFedorova
 ms.date: 09/15/2020
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 5690630d4dde947798c925af66c73122c2efad3d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4e5748f2368376ee03f280f1487d1de65250d3a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673773"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859168"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Kreditorenzusammenarbeit mit Debitoren
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Kreditorenzusammenarbeit verwenden können, um mit Debitoren in Microsoft Dynamics 365 Supply Chain Management zu arbeiten. Kreditoren können eine Serie von Geschäftsprozesse aus den folgenden Arbeitsbereichen ausführen:
+In diesem Artikel wird beschrieben, wie Sie Kreditorenzusammenarbeit verwenden können, um mit Debitoren in Microsoft Dynamics 365 Supply Chain Management zu arbeiten. Kreditoren können eine Serie von Geschäftsprozesse aus den folgenden Arbeitsbereichen ausführen:
 
 - **Bestellungsbestätigung** – Überwachen von Bestellungen und auf sie antworten.
 - **Kreditorenangebotsabgabe** – Angebotsanforderungen anzeigen und durch Eingeben von Angeboten auf sie antworten.
 - **Kreditoreninformationen** – Kreditorenmasterdaten anzeigen und aktualisieren.
-- **Rechnungsstellung** – Mit Rechnungen arbeiten. In diesem Thema wird der Arbeitsbereich **Rechnungsstellung** nicht behandelt. Weitere Informationen über diesen Arbeitsbereich finden Sie unter [Arbeitsbereich für Kreditorenzusammenarbeitsrechnungsstellung](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Rechnungsstellung** – Mit Rechnungen arbeiten. In diesem Artikel wird der Arbeitsbereich **Rechnungsstellung** nicht behandelt. Weitere Informationen über diesen Arbeitsbereich finden Sie unter [Arbeitsbereich für Kreditorenzusammenarbeitsrechnungsstellung](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 Kreditoren können außerdem Informationen zu Lieferungsbestand überwachen.
 
@@ -47,9 +47,9 @@ Es gibt drei Listen im Arbeitsbereich **Bestellungsbestätigung**:
 
 Sie können die folgenden Seiten verwenden, um mit Bestellungen zu arbeiten:
 
-- **Bestellungen zur Prüfung** – Diese Seite enthält die gleichen Informationen wie die Liste **Bestellungen zur Prüfung** im Arbeitsbereich. Sehen Sie die Beschreibung weiter oben in diesem Thema.
+- **Bestellungen zur Prüfung** – Diese Seite enthält die gleichen Informationen wie die Liste **Bestellungen zur Prüfung** im Arbeitsbereich. Sehen Sie die Beschreibung weiter oben in diesem Artikel.
 - **Kreditorenbestätigungshistorie für Bestellungen** – Diese Seite enthält alle Bestellungen und alle Versionen von Bestellungen, die dem Kreditor gesendet wurden. Außerdem enthält sie alle Antworten, die vom Kreditor zurückgegeben wurden.
-- **Bestätigte Bestellungen öffnen** – Diese Seite enthält die gleichen Informationen wie die Liste **Bestätigte Bestellung öffnen** im Arbeitsbereich. Sehen Sie die Beschreibung weiter oben in diesem Thema.
+- **Bestätigte Bestellungen öffnen** – Diese Seite enthält die gleichen Informationen wie die Liste **Bestätigte Bestellung öffnen** im Arbeitsbereich. Sehen Sie die Beschreibung weiter oben in diesem Artikel.
 - **Alle bestätigten Bestellungen** – Diese Seite enthält alle Bestellungen, die bestätigt wurden. Die Bestellungen, die auf dieser Seite angezeigt werden, umfassen Bestellungen, bei denen Produkte oder Dienstleistungen eingegangen sind. Sie können diese Liste verwenden, um Bestellungen zu überwachen, für die Sie Rechnungen übermitteln können.
 
 ### <a name="responding-to-pos"></a>Auf Bestellungen reagieren

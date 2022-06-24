@@ -1,6 +1,6 @@
 ---
 title: Kostenaufschlüsselungsrichtlinie und Gemeinkostenberechnung
-description: Dieses Thema enthält Informationen dazu, wie die korrekten Stufe der sekundären Kostenelemente bestimmt und Kostenrollupregeln erstellt werden, die in Organisationsberichterstellung und Kostennachweisbarkeit passen.
+description: Dieser Artikel enthält Informationen dazu, wie die korrekte Stufe der sekundären Kostenelemente bestimmt und Kostenrollupregeln erstellt werden, die in die Organisationsberichterstellung und Kostennachweisbarkeit passen.
 author: AndersGirke
 ms.date: 06/16/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c9c36587294ff157266e354e06d107000f198061
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: f35bf3e900b8dd9c1864be8668f7ff7296924c4d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734428"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874608"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Kostenaufschlüsselungsrichtlinie und Gemeinkostenberechnung 
 
@@ -33,7 +33,7 @@ Mit Kostenrechnung können Sie einen Einblick erhalten, wie sich der Kostenfluss
 -   Die Menge der Kosteneinträgen, die durch Gemeinkostenberechnung generiert wird, kann sehr hoch sein.
 -   Es ist nicht möglich, den Kostenfluss zwischen Kostenobjekten zu verfolgen.
 
-Um diese Auswirkungen zu vermeiden, können Sie mit der Kostenrechnung die Kostenzuweisung konfigurieren, damit sie in den Anforderungen der Berichterstellung auf Führungsebene in Ihrer Organisation entspricht. Dieses Thema erklärt, wie Sie die korrekte Stufe der sekundären Kostenelemente bestimmen und Kostenrollupregeln erstellen können, die in Organisationsberichterstellung und Kostennachweisbarkeit passen.
+Um diese Auswirkungen zu vermeiden, können Sie mit der Kostenrechnung die Kostenzuweisung konfigurieren, damit sie in den Anforderungen der Berichterstellung auf Führungsebene in Ihrer Organisation entspricht. Dieser Artikel erklärt, wie Sie die korrekte Stufe der sekundären Kostenelemente bestimmen und Kostenrollupregeln erstellen können, die in die Organisationsberichterstellung und Kostennachweisbarkeit passen.
 
 > [!NOTE]
 > Sie können Konfigurationen ändern, wenn sich Meldeanforderungen ändern.

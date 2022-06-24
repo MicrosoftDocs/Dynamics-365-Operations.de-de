@@ -1,6 +1,6 @@
 ---
-title: Auswirkung der Erweiterbarkeit von Commerce-Katalogen auf B2B-Anpassungen
-description: In diesem Thema werden die Auswirkungen der Erweiterbarkeit der Funktion „Commerce-Kataloge für B2B“ in Microsoft Dynamics 365 Commerce beschrieben.
+title: Auswirkung der Erweiterbarkeit von Commerce-Katalogen für B2B-Anpassungen
+description: In diesem Artikel werden die Auswirkungen der Erweiterbarkeit der Funktion „Commerce-Kataloge für B2B“ in Microsoft Dynamics 365 Commerce beschrieben.
 author: ashishmsft
 ms.date: 04/28/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: aff333bfe8003233dd5d8181aa8c5dd7eaeffcd0
-ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
+ms.openlocfilehash: f21d3375db69dd412325d00261bfc18e26d0c257
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8656849"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849014"
 ---
-# <a name="extensibility-impact-of-commerce-catalogs-for-b2b-customizations"></a>Auswirkung der Erweiterbarkeit von Commerce-Katalogen auf B2B-Anpassungen
+# <a name="extensibility-impact-of-commerce-catalogs-for-b2b-customizations"></a>Auswirkung der Erweiterbarkeit von Commerce-Katalogen für B2B-Anpassungen
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-In diesem Thema werden die Auswirkungen der Erweiterbarkeit der Funktion **Commerce-Kataloge für B2B** in Microsoft Dynamics 365 Commerce beschrieben.
+In diesem Artikel werden die Auswirkungen der Erweiterbarkeit der Funktion **Commerce-Kataloge für B2B** in Microsoft Dynamics 365 Commerce beschrieben.
 
 Wenn Sie den Katalogkontext auf benutzerdefinierte Szenarien erweitern möchten, müssen Ihre Anpassungen möglicherweise aktualisiert werden. Dieses Update folgt dem Standardprozess, den Kunden befolgen müssen, da ihre Anpassungen möglicherweise nicht automatisch die neuesten Funktionen unterstützen, nachdem Upgrades durchgeführt wurden. Wenn Ihre Anpassungen neue Funktionen oder Fehlerbehebungen in ihren Erfahrungen enthalten, empfehlen wir Ihnen, den Anpassungscode entsprechend zu aktualisieren. Dieses Update ähnelt den Änderungen, die Microsoft möglicherweise für den Kerncode vorgenommen hat.
 

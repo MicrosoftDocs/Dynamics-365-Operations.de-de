@@ -1,6 +1,6 @@
 ---
 title: Fester Zugangspreis
-description: In diesem Thema wird erläutert, wie Sie feste Zugangspreise in Microsoft Dynamics 365 Supply Chain Management konfigurieren und verwenden können.
+description: In diesem Artikel wird erläutert, wie Sie feste Zugangspreise in Microsoft Dynamics 365 Supply Chain Management konfigurieren und verwenden können.
 author: raprofit
 ms.date: 04/25/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-04-25
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 8e26d84ddc309249d8bd6e54987ad3ae8eed68f0
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: 2630952f395d1a18202698b4d73b67ef4b760194
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770299"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907579"
 ---
 # <a name="fixed-receipt-price"></a>Fester Zugangspreis
 
 [!include [banner](../includes/banner.md)]
 
-**Fester Zugangspreis** ist eine Option, die Sie für eine Artikelmodellgruppe auswählen können, wenn Sie ein anderes Bestandsmodell als *Standardkosten* oder *Gleitender gewichteter Durchschnitt* verwenden. In frühen Versionen von Microsoft Dynamics AX wurde diese Option **Standardkosten** genannt. Es wurde in **Fester Zugangspreis** umbenannt, als das neue Standardkosten-Bestandsmodell in Dynamics AX 2012 eingeführt wurde. In diesem Thema wird erläutert, wie Sie feste Zugangspreise in Dynamics 365 Supply Chain Management konfigurieren und verwenden können.
+**Fester Zugangspreis** ist eine Option, die Sie für eine Artikelmodellgruppe auswählen können, wenn Sie ein anderes Bestandsmodell als *Standardkosten* oder *Gleitender gewichteter Durchschnitt* verwenden. In frühen Versionen von Microsoft Dynamics AX wurde diese Option **Standardkosten** genannt. Es wurde in **Fester Zugangspreis** umbenannt, als das neue Standardkosten-Bestandsmodell in Dynamics AX 2012 eingeführt wurde. In diesem Artikel wird erläutert, wie Sie feste Zugangspreise in Dynamics 365 Supply Chain Management konfigurieren und verwenden können.
 
 ## <a name="about-fixed-receipt-prices"></a>Infos zu festen Zugangspreisen
 

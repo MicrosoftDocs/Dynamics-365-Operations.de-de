@@ -1,6 +1,6 @@
 ---
-title: Entwerfen einer neuen ER-Lösung zum Drucken von ZPL-Labels
-description: Dieses Thema erklärt, wie Sie eine neue Lösung für die elektronische Rechnungsstellung (ER) entwerfen, um Zebra Programming Language (ZPL) Etiketten zu drucken.
+title: Neue EB-Lösung zum Drucken von ZPL-Beschriftungen gestalten
+description: Dieser Artikel erklärt, wie Sie eine neue Lösung für die elektronische Berichterstellung (EB) entwerfen, um ZPL-Etiketten (Zebra Programming Language) zu drucken.
 author: NickSelin
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-02-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: c1bedf1184b45741102000fa68c8d662c7383301
-ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
+ms.openlocfilehash: f861fe63c6d7d00d0a9f84d33c0d1b1b23735b61
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "8612354"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845714"
 ---
-# <a name="design-a-new-er-solution-to-print-zpl-labels"></a>Entwerfen einer neuen ER-Lösung zum Drucken von ZPL-Labels
+# <a name="design-a-new-er-solution-to-print-zpl-labels"></a>Neue EB-Lösung zum Drucken von ZPL-Beschriftungen gestalten
 
 [!include [banner](../includes/banner.md)]
 
 
-In diesem Thema wird erläutert, wie ein Benutzer in der Rolle Systemadministrator, Entwickler für elektronische Berichterstellung oder Funktionsberater für elektronische Berichterstellung die Parameter des [Frameworks für elektronische Berichterstellung (ER)](general-electronic-reporting.md) konfigurieren, die erforderlichen ER [Konfigurationen](general-electronic-reporting.md#Configuration) einer neuen ER-Lösung entwerfen kann, um auf die Daten des Lagerortverwaltungssystems zuzugreifen und angepasste Lagerort-Etiketten im Format Zebra Programming Language (ZPL) II zu erzeugen. Diese Schritte können im Unternehmen **USRT** ausgeführt werden.
+In diesem Artikel wird erläutert, wie Benutzer mit der Rolle „Systemadministrator“, „Entwickler für elektronische Berichterstellung“ oder „Funktionsberater für elektronische Berichterstellung“ die Parameter des [Frameworks für elektronische Berichterstellung (EB)](general-electronic-reporting.md) konfigurieren, die erforderlichen EB-[Konfigurationen](general-electronic-reporting.md#Configuration) einer neuen EB-Lösung entwerfen können, um auf die Daten des Lagerortverwaltungssystems zuzugreifen und angepasste Lagerort-Etiketten im Format Zebra Programming Language (ZPL) II zu erzeugen. Diese Schritte können im Unternehmen **USRT** ausgeführt werden.
 
 ## <a name="business-scenario"></a>Geschäftsszenario
 

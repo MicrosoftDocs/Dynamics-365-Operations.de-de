@@ -1,6 +1,6 @@
 ---
 title: Personalisierte Produktempfehlungen aktivieren
-description: In diesem Thema wird beschrieben, wie Kunden in Microsoft Dynamics 365 Commerce personalisierte Produktempfehlungen zur Verfügung gestellt werden.
+description: In diesem Artikel wird beschrieben, wie Kunden in Microsoft Dynamics 365 Commerce personalisierte Produktempfehlungen zur Verfügung gestellt werden.
 author: bebeale
 ms.date: 08/18/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 74bf2c96d744b8101151be9288a956d46ce3b6885f0cb593dc1b78728b018fb4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d2be5e59d51e183863da9c82d4ff733e830b8b69
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770956"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864863"
 ---
 # <a name="enable-personalized-recommendations"></a>Personalisierte Empfehlungen aktivieren
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Kunden in Microsoft Dynamics 365 Commerce personalisierte Produktempfehlungen zur Verfügung gestellt werden.
+In diesem Artikel wird beschrieben, wie Kunden in Microsoft Dynamics 365 Commerce personalisierte Produktempfehlungen zur Verfügung gestellt werden.
 
 In Dynamics 365 Commerce können Einzelhändler können Produktempfehlungen (auch als Personalisierung bezeichnet) zur Verfügung stellen. Auf diese Weise können personalisierte Empfehlungen online und am Point of Sale (POS) in das Kundenerlebnis einbezogen werden. Wenn die Personalisierungsfunktion aktiviert ist, kann das System die Kauf- und Produktinformationen eines Benutzers verknüpfen, um individuelle Produktempfehlungen zu generieren.
 

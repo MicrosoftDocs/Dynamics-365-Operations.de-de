@@ -1,6 +1,6 @@
 ---
 title: Einrichtung von Rückvergütungsverwaltungsbuchungen
-description: Dieses Thema beschreibt, wie Sie die Daten für Buchungsprofile festlegen. Buchungsprofile werden verwendet, um Buchungseinträge für Berechnungspositionen für die Rückvergütungsverwaltung zu ermitteln.
+description: Dieser Artikel beschreibt, wie Sie die Daten für Buchungsprofile festlegen. Buchungsprofile werden verwendet, um Buchungseinträge für Berechnungspositionen für die Rückvergütungsverwaltung zu ermitteln.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 5ed28e99e36fafa4e1275421159420a3f3380c7c
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 7a519b7153b307bf7d8cc9093572ca2711432970
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690245"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873578"
 ---
 # <a name="rebate-management-posting-setup"></a>Einrichtung von Rückvergütungsverwaltungsbuchungen
 
@@ -30,7 +30,7 @@ Diese Funktion funktioniert unternehmensübergreifend (juristische Personen). Si
 
 Um Buchungsprofile für die Rückvergütungsverwaltung für Debitoren und Kreditoren einzurichten, gehen Sie zu **Rückvergütungsverwaltung \> Einrichtung von Rückvergütungsverwaltungsbuchungen \> Buchungsprofile für die Rückvergütungsverwaltung**. Die Seite **Buchungsprofile für die Rückvergütungsverwaltung** einen Listenbereich, in dem alle vorhandenen Profile angezeigt werden. Sie können die Schaltflächen im Aktivitätsbereich verwenden, um der Profile zur Liste hinzuzufügen oder daraus zu entfernen.
 
-In den verbleibenden Abschnitten dieses Themas wird beschrieben, wie Sie die verfügbaren Felder beim Erstellen oder Bearbeiten eines Profils verwenden.
+In den verbleibenden Abschnitten Dieser Artikel wird beschrieben, wie Sie die verfügbaren Felder beim Erstellen oder Bearbeiten eines Profils verwenden.
 
 ## <a name="posting-profile-header"></a>Buchungsprofilkopfzeile
 

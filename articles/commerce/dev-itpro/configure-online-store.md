@@ -1,6 +1,6 @@
 ---
 title: Onlineshops konfigurieren
-description: Dieser Artikel bietet Verknüpfungen zu Themen, die Ihnen helfen, einen Online-Shop zentral zu konfigurieren und zu verwalten.
+description: Dieser Artikel bietet Verknüpfungen zu Artikeln, die Ihnen helfen, einen Online-Shop zentral zu konfigurieren und zu verwalten.
 author: kfend
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 87607e2c42ee67d62a7ce2e87744e9d9143dcf81
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: c8a5b13189eb93d4df81a427a932b81ab8d830be
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734103"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861878"
 ---
 # <a name="configure-online-stores"></a>Onlineshops konfigurieren
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel bietet Verknüpfungen zu Themen, die Ihnen helfen, einen Online-Shop zentral zu konfigurieren und zu verwalten.
+Dieser Artikel bietet Verknüpfungen zu Artikeln, die Ihnen helfen, einen Online-Shop zentral zu konfigurieren und zu verwalten.
 
-Die Themen, die in der folgenden Tabelle aufgeführt sind, helfen Ihnen bei der Konfiguration der Commerce-Komponenten und des Online-Shops im Client.
+Die Artikel, die in der folgenden Tabelle aufgeführt sind, helfen Ihnen bei der Konfiguration der Commerce-Komponenten und des Online-Shops im Client.
 
 ## <a name="configure-an-online-store"></a>Einen Onlineshop konfigurieren
 
-| Aufgabe                                                | Detaildaten                                                                                                                                                                                                                                                                                                                                                   | Thema                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Aufgabe                                                | Einzelheiten                                                                                                                                                                                                                                                                                                                                                   | Artikel                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Konfigurieren Sie Komponenten.                        | Einrichten und Verwalten von Informationen für Commerce-Vorgänge. Zu diesen Informationen gehören Shops, Steuern, Produkte, Geschenkkarten, verkaufsfördernde Maßnahmen und Rabatte.                                                                                                                                                                                                          | [Retail einrichten und verwalten](/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-retail) (TechNet-Inhalt für Microsoft Dynamics AX 2012)                                                                                                                                                                                                                                                                                          |
 | Konfigurieren Sie eine Channel-Navigationshierarchie.    | Erstellen Sie eine Kanalnavigationskategoriehierarchie, um eine Kategoriestruktur für Produkte einzurichten, die Sie über einen Onlineshop anbieten. Sie definieren die Kategoriehierarchie und weisen den Kategorien Produkte, Produktattributgruppen und Attributwerte zu. Weisen Sie dann die Kategoriehierarchie einem Onlineshop zu.                            | [Einrichten einer Einzelhandelshierarchie](/dynamicsax-2012/appuser-itpro/set-up-a-retail-hierarchy)</br> (TechNet-Inhalte für AX 2012)</br> [Richten Sie Attribute und Attributtypen ein](/dynamicsax-2012/appuser-itpro/set-up-attributes-and-attribute-types) (TechNet-Inhalte für AX 2012)</br> [Richten Sie Verkaufsattributgruppen ein](/dynamicsax-2012/appuser-itpro/set-up-retail-attribute-groups) (TechNet-Inhalte für AX 2012) |
@@ -41,7 +41,7 @@ Die Themen, die in der folgenden Tabelle aufgeführt sind, helfen Ihnen bei der 
 
 ## <a name="configure-online-store-products"></a>Onlineshopprodukte konfigurieren
 
-| Aufgabe                                 | Detaildaten                                                                                                                                           | Thema                                                                                                                                                                                                                                                                            |
+| Aufgabe                                 | Einzelheiten                                                                                                                                           | Artikel                                                                                                                                                                                                                                                                            |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Sortimente dem Onlineshop hinzufügen. | Fügen Sie die Sortimente hinzu, die die Produkte enthalten, die im Onlineshop verfügbar sind.                                                                  | [Onlineshop einrichten](/dynamicsax-2012/appuser-itpro/set-up-an-online-store) (TechNet-Inhalt für AX 2012)                                                                                                                                              |
 | Kataloge verwalten.                     | Sie können Produktkataloge verwenden, um die Produkte zu identifizieren, die Sie in den Geschäften anbieten möchten.                                                              | [Wichtigste Aufgaben: Erstellen von Einzelhandelsproduktkatalogen](/dynamicsax-2012/appuser-itpro/key-tasks-create-retail-product-catalogs) (TechNet-Inhalt für AX 2012)                                                                                                                           |
@@ -52,7 +52,7 @@ Die Themen, die in der folgenden Tabelle aufgeführt sind, helfen Ihnen bei der 
 
 ## <a name="set-up-data-exchange-between-commerce-and-the-online-store"></a>Richten Sie Datenaustausch zwischen Commerce und dem Onlineshop ein
 
-| Aufgabe                                 | Detaildaten                                                                                                                               | Thema                                                                                                                                                                                                                                                                                  |
+| Aufgabe                                 | Einzelheiten                                                                                                                               | Artikel                                                                                                                                                                                                                                                                                  |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Einrichten von Kanalintegrationsprofilen. | Profile aktivieren die Komponenten, die miteinander verbunden werden sollen. Einstellungsprofile, bevor Sie Datenaustauscheinstellungen konfigurieren. | [Ein Echtzeitdienstprofil einrichten](/dynamicsax-2012/appuser-itpro/set-up-a-real-time-service-profile) (TechNet-Inhalte für AX 2012)</br> [Ein Kanalprofil einrichten](/dynamicsax-2012/appuser-itpro/set-up-a-channel-profile) (TechNet-Inhalte für AX 2012) |
 

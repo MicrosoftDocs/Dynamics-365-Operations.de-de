@@ -1,6 +1,6 @@
 ---
 title: Einführung der API zur Integration des Bewerber-Tracking-Systems
-description: Dieses Thema beschreibt die Dynamics 365 Human Resources-API zur Integration des Bewerber-Tracking-System (ATS).
+description: Dieser Artikel beschreibt die Dynamics 365 Human Resources-API zur Integration des Applicant Tracking System (ATS).
 author: andreabichsel
 ms.date: 02/03/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e16c781a6e51c57db8ae76dcfe0d28ec709428eb
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 6037d09fdc484753c7e90a896ce383bd71391356
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069931"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894700"
 ---
 # <a name="applicant-tracking-system-integration-api-introduction"></a>Einführung der API zur Integration des Bewerber-Tracking-Systems
 
@@ -27,7 +27,7 @@ ms.locfileid: "8069931"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dieses Thema beschreibt die Dynamics 365 Human Resources-API zur Integration des Bewerber-Tracking-System (ATS). Die Absicht der API ist es, optimierte Integrationen zwischen Dynamics 365 Human Resources und ATSs, die eine Partnerschaft eingehen, zu ermöglichen.
+Dieser Artikel beschreibt die Dynamics 365 Human Resources-API zur Integration des Applicant Tracking System (ATS). Die Absicht der API ist es, optimierte Integrationen zwischen Dynamics 365 Human Resources und ATSs, die eine Partnerschaft eingehen, zu ermöglichen.
 
 ![Flow der ATS-Integration.](media/hr-admin-integration-ats-api-introduction-flow.png)
 

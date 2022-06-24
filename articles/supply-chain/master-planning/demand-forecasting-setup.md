@@ -1,6 +1,6 @@
 ---
-title: Einrichten einer Bedarfsplanung
-description: In diesem Thema werden die Einrichtungsaufgaben, die Sie ausführen müssen, um die Bedarfsplanung vorzubereiten, beschrieben.
+title: Einrichtung der Bedarfsplanung
+description: In diesem Artikel werden die Einrichtungsaufgaben, die Sie ausführen müssen, um die Bedarfsplanung vorzubereiten, beschrieben.
 author: t-benebo
 ms.date: 11/23/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c3b52b970a8040dcba5a1fc59d297dc9ce1a3c53
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 10a211e0e20f22dfbfdb4923841808750b6ed71b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470008"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901001"
 ---
 # <a name="demand-forecasting-setup"></a>Einrichtung der Bedarfsplanung
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema beschreibt, wie Sie Bedarfsplanung festlegen.  
+Dieser Artikel beschreibt, wie Sie Bedarfsplanung festlegen.  
 
 ## <a name="item-allocation-keys"></a>Artikelzuteilungsschlüssel
 
@@ -245,7 +245,7 @@ Gehen Sie zum Erstellen eines neuen Machine Learning-Arbeitsbereichs folgenderma
 1. Schließen Sie den Assistenten ab, indem Sie die Bildschirmanweisungen befolgen. Beachten Sie bei Ihrer Arbeit folgende Punkte:
 
     - Verwenden Sie die Standardeinstellungen, es sei denn, andere Punkte in dieser Liste empfehlen andere Einstellungen.
-    - Achten Sie darauf, die geografische Region auszuwählen, die der Region entspricht, in der Ihre Instanz von Supply Chain Management bereitgestellt wird. Andernfalls könnten einige Ihrer Daten die Regionsgrenzen überschreiten. Weitere Informationen finden Sie im Abschnitt [Datenschutzhinweis](#privacy) weiter unten in diesem Thema.
+    - Achten Sie darauf, die geografische Region auszuwählen, die der Region entspricht, in der Ihre Instanz von Supply Chain Management bereitgestellt wird. Andernfalls könnten einige Ihrer Daten die Regionsgrenzen überschreiten. Weitere Informationen finden Sie im Abschnitt [Datenschutzhinweis](#privacy) weiter unten in diesem Artikel.
     - Verwenden Sie dedizierte Ressourcen wie Ressourcengruppen, Speicherkonten, Containerregistrierungen, Azure-Schlüsseltresore und Netzwerkressourcen.
     - Auf der Seite **Einrichten der Verbindungsparametern von Azure Machine Learning Service** des Assistenten müssen Sie einen Speicherkontonamen angeben. Verwenden Sie ein Konto, das für die Bedarfsplanung bestimmt ist. In diesem Speicherkonto werden die Eingabe- und Ausgabedaten der Bedarfsplanung gespeichert.
 

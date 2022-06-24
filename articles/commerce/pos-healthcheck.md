@@ -1,6 +1,6 @@
 ---
 title: Sysemdiagnose für POS-Peripheriegeräte und -Dienste
-description: Dieses Thema bietet einen Überblick über den Systemdiagnose-Vorgang am Point of Sale (POS).
+description: Dieser Artikel bietet einen Überblick über den Systemdiagnose-Vorgang am Point of Sale (POS).
 author: BrianShook
 ms.date: 03/06/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: cd4e97b8dbfc4faf336d4ea927342fd4fa3cc7cd
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 44fd4b6246d3d7947527416c2b8b447bd64f179f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779871"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863320"
 ---
 # <a name="health-check-for-pos-peripherals-and-services"></a>Sysemdiagnose für POS-Peripheriegeräte und -Dienste
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema gibt einen Überblick über den Systemdiagnose-Vorgang am Point of Sale (POS).
+Dieser Artikel gibt einen Überblick über den Systemdiagnose-Vorgang am Point of Sale (POS).
 
 ## <a name="overview"></a>Übersicht
 
@@ -39,7 +39,7 @@ Microsoft Dynamics 365 Commerce Versionen 10.0.10 und höher enthalten eine Inte
 | Zeitdauer | Beschreibung |
 |---|---|
 | Peripheriegerät | Jedes Gerät, mit dem die POS-Anwendung Transaktionen und andere Vorgänge im Geschäft erleichtert. Beispiele hierfür sind Kassenschubladen, Barcodescanner und Zahlungsterminals. |
-| Service | In diesem Thema ist ein Dienst eine Zusatzanwendung, von der die POS-Anwendung abhängt, um Transaktionen und tägliche Vorgänge auszuführen. Beispiele hierfür sind Apps, die bei Steuer- oder Versandberechnungen helfen. |
+| Service | In diesem Artikel ist ein Dienst eine Zusatzanwendung, von der die POS-Anwendung abhängt, um Transaktionen und tägliche Vorgänge auszuführen. Beispiele hierfür sind Apps, die bei Steuer- oder Versandberechnungen helfen. |
 
 ## <a name="health-check-operation"></a>Systemdiagnoseprüfung
 

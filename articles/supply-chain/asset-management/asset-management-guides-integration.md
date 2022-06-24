@@ -1,6 +1,6 @@
 ---
 title: Integrieren von Dynamics 365 Supply Chain Management (Anlagenverwaltung) in Dynamics 365 Guides
-description: In diesem Thema wird erläutert, wie Sie das Anlagenverwaltungsmodul in Microsoft Dynamics 365 Supply Chain Management in Dynamics 365 Guides integrieren, um die Mixed-Reality-Anleitungen in Ihren täglichen Service- und Wartungsworkflows zu nutzen.
+description: In diesem Artikel wird erläutert, wie Sie das Anlagenverwaltungsmodul in Microsoft Dynamics 365 Supply Chain Management in Dynamics 365 Guides integrieren, um die Mixed-Reality-Anleitungen in Ihren täglichen Service- und Wartungsworkflows zu nutzen.
 author: johanhoffmann
 ms.date: 04/28/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 4132992eb5f4b42d43d9ff72cada616fe0573c2f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d06978bcbd6205111384f5c7cefdf34fdbdbfbf5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568254"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875683"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Integrieren von Dynamics 365 Supply Chain Management (Anlagenverwaltung) in Dynamics 365 Guides
 
@@ -47,7 +47,7 @@ Um eine Anleitung zuzuordnen, verwenden Sie eine Wartungsprüflistenposition in 
 
 Um eine Anleitung einer Wartungsprüflistenvorlage zuzuordnen, folgen Sie diesen Schritten.
 
-1. Erstellen Sie eine Anleitung mit dem Dynamics 365 Guides-PC und HoloLens-Apps. Informationen darüber, wie eine Anleitung erstellt wird, finden Sie in den folgenden Themen:
+1. Erstellen Sie eine Anleitung mit dem Dynamics 365 Guides-PC und HoloLens-Apps. Informationen darüber, wie eine Anleitung erstellt wird, finden Sie in den folgenden Artikeln:
 
     - [Verwenden der PC-App, um eine Anleitung zu erstellen](/dynamics365/mixed-reality/guides/pc-app-overview)
     - [Verwenden der HoloLens-App, um Ihre Hologramme zu platzieren](/dynamics365/mixed-reality/guides/hololens-app-overview)

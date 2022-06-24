@@ -1,6 +1,6 @@
 ---
 title: Vorteilsverwaltung – Übersicht
-description: Dieses Thema bietet einen Überblick über die Funktion "Benefits management" in Dynamics 365 Human Resources.
+description: Dieser Artikel bietet einen Überblick über die Funktion der Vorteilsverwaltung in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 12/06/2021
 ms.topic: overview
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e53a68aed2e4b1e0b0d7797e7326e223c47443f4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f008c273a3088353c33ae8c4b0b3cbc6b274fbcf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687190"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901146"
 ---
 # <a name="benefits-management-overview"></a>Vorteilsverwaltung – Übersicht
 
@@ -44,7 +44,7 @@ Wenn Sie auf die Demodaten zugreifen möchten, müssen Sie Ihre Sandkastenumgebu
 
 ## <a name="enable-benefits-management"></a>Vorteilsverwaltung aktivieren
 
-Dieses Thema beschreibt, wie Sie die Vorschaufunktionen in Human Resources aktivieren. Außerdem wird erklärt, welche bestehenden Funktionen in Human Resources durch die Leistungsverwaltung ersetzt werden und welche Funktionen deaktiviert werden, nachdem Sie die Leistungsverwaltung eingeschaltet haben.
+Dieser Artikel beschreibt, wie Sie die Vorschaufunktionen in Human Resources aktivieren. Außerdem wird erklärt, welche bestehenden Funktionen in Human Resources durch die Leistungsverwaltung ersetzt werden und welche Funktionen deaktiviert werden, nachdem Sie die Leistungsverwaltung eingeschaltet haben.
 
 > [!IMPORTANT]
 > Nachdem Sie die Leistungsverwaltung in einer **Produktions** Umgebung aktiviert haben, können Sie diese nicht mehr deaktivieren. Wir empfehlen, das Leistungsmanagement in einer **Sandkasten** Umgebung zu aktivieren und zu testen, bevor Sie es in einer aktivieren **Produktion** Umgebung aktivieren. Es gibt erhebliche Unterschiede zwischen der alten Leistungs-Funktionalität und der neuen Leistungsverwaltungs-Funktionalität, die zusätzliche Einstellungen erfordern und vor der Inbetriebnahme getestet werden sollten.

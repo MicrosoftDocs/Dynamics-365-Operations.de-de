@@ -1,6 +1,6 @@
 ---
 title: Integrationsbeispiel für Steuererfassungsdienst für die Tschechische Republik
-description: In diesem Thema erhalten Sie einen Überblick über das steuerliche Integrationsbeispiel für die Tschechische Republik in Microsoft Dynamics 365 Commerce.
+description: In diesem Artikel erhalten Sie einen Überblick über das steuerliche Integrationsbeispiel für die Tschechische Republik in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-4-1
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 1c764de42f727bb72adbb8b015745599f428656e
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: d255b03242a4cb7a72cef1e8e6fab901ecf953e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8613908"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910497"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-the-czech-republic"></a>Integrationsbeispiel für Steuererfassungsdienst für die Tschechische Republik
 
 [!include[banner](../includes/banner.md)]
 
-In diesem Thema erhalten Sie einen Überblick über das steuerliche Integrationsbeispiel für die Tschechische Republik in Microsoft Dynamics 365 Commerce.
+In diesem Artikel erhalten Sie einen Überblick über das steuerliche Integrationsbeispiel für die Tschechische Republik in Microsoft Dynamics 365 Commerce.
 
 Um die lokalen steuerlichen Anforderungen für Kassen in der Tschechische Republik zu erfüllen, umfassen die Microsoft Dynamics 365 Commerce-Funktionen für die Tschechische Republik eine Beispielintegration der Verkaufsstelle (POS) in einen externen Steuerregistrierungsservice. Das Beispiel erweitert die [steuerliche Integrationsfunktionen](fiscal-integration-for-retail-channel.md). Es basiert auf der [EFR (Electronisches Fiskalregister)](https://efsta.org/sicherheitsloesungen/)-Lösung von [EFSTA](https://efsta.org/) und ermöglicht die Kommunikation mit dem EFR-Service über das HTTPS-Protokoll. Der EFR-Dienst gewährleistet die elektronische Registrierung von Verkäufen (EET – Elektronická Evidence tržeb), dh die Online-Übertragung der Verkaufsdaten an einen steuerlichen Webservice der Finanzbehörden.
 

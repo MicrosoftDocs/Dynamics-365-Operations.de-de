@@ -1,6 +1,6 @@
 ---
 title: Stücklisten- und Formelpositionen für den Lagerort freigeben
-description: In diesem Thema wird der Prozess für die Freigabe von Rohmaterial für Stücklistenpositionen und Formelpositionen zum Lagerort beschrieben.
+description: In diesem Artikel wird der Prozess für die Freigabe von Rohmaterial für Stücklistenpositionen und Formelpositionen zum Lagerort beschrieben.
 author: johanhoffmann
 ms.date: 10/30/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c9956290ce8f90f04bc144d710ad35b5a0243e3898a8f3e75692b1a9da506149
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 53e3a943dbd6cf982101f42ed8f94b7e0f46597c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731222"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860608"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Stücklisten- und Formelpositionen für den Lagerort freigeben
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird der Prozess für die Freigabe von Rohmaterial für Stücklisten-(BOM)-Positionen und Formelpositionen zum Lagerort beschrieben. Wenn Sie eine Stücklisten- oder eine Formelposition dem Lagerort freigeben, bestimmt das System zuerst, ob das Material am Produktionseingangslagerplatz im Fertigungsbereich bereits vorhanden ist, wo das Material für den Produktionsprozess verbraucht wird.
+In diesem Artikel wird der Prozess für die Freigabe von Rohmaterial für Stücklisten-(BOM)-Positionen und Formelpositionen zum Lagerort beschrieben. Wenn Sie eine Stücklisten- oder eine Formelposition dem Lagerort freigeben, bestimmt das System zuerst, ob das Material am Produktionseingangslagerplatz im Fertigungsbereich bereits vorhanden ist, wo das Material für den Produktionsprozess verbraucht wird.
 
 - Wenn das Material am Produktionseingangslagerplatz verfügbar ist, wird es sofort von diesem Standort entnommen, nachdem das Signal für die Freigabe von Material an den Lagerort gegeben wird.
 - Wenn das Material am Produktionseingangslagerplatz nicht verfügbar ist, gibt die Materialfreigabe an, dass Material von Lagerplätzen im Lagerort zum Produktionseingangslagerplatz verschoben werden muss. Das Material wird über Lagerortarbeit für Rohmaterialentnahme verschoben. Daher müssen Lagerortprozesse für Rohmaterialentnahme konfiguriert werden. Weitere Informationen finden Sie unter [Nachschubübersicht](../warehousing/replenishment.md) und [Lagerarbeiten mit Hilfe von Arbeitsvorlagen und Standortrichtlinien](../warehousing/control-warehouse-location-directives.md) steuern.

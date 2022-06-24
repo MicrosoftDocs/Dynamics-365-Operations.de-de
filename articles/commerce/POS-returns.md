@@ -1,6 +1,6 @@
 ---
 title: Erträge in POS erstellen
-description: In diesem Thema wird beschrieben, wie Sie Retouren für Cash-and-Carry-Transaktionen oder Kundenbestellungen in der Microsoft Dynamics 365 Commerce Point-of-Sale-Anwendung (POS) initiieren.
+description: In diesem Artikel wird beschrieben, wie Sie Retouren für Cash-and-Carry-Transaktionen oder Kundenbestellungen in der Microsoft Dynamics 365 Commerce Point-of-Sale-Anwendung (POS) initiieren.
 author: hhainesms
 ms.date: 04/27/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: c8e06c0d83e3bc2f5efea1e3a8124c700706aa2e
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: a49e9abd0143d480cc1cafb05be5e995fb3cebdd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8648987"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856997"
 ---
 # <a name="create-returns-in-pos"></a>Erträge in POS erstellen
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Retouren für Cash-and-Carry-Transaktionen oder Kundenbestellungen in der Microsoft Dynamics 365 Commerce Point-of-Sale-App (POS) initiieren.
+In diesem Artikel wird beschrieben, wie Sie Retouren für Cash-and-Carry-Transaktionen oder Kundenbestellungen in der Microsoft Dynamics 365 Commerce Point-of-Sale-App (POS) initiieren.
 
 > [!NOTE]
 > In der Commerce-Version 10.0.20 und höher wird eine neue Funktion mit dem Namen **Einheitliche Retourenbearbeitungserfahrung in POS** verfügbar. Diese Funktion bietet einen konsistenteren und einheitlicheren Rückgabeprozess in POS, unabhängig von der Transaktionsart (Barzahlungstransaktion oder Kundenbestellung) oder dem ursprünglichen Kanal, in dem die Bestellung erstellt wurde. Wir empfehlen allen Unternehmen, diese neue Funktion zu aktivieren, um die Gesamtzuverlässigkeit der Retourenabwicklung über POS zu verbessern.

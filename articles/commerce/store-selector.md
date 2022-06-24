@@ -1,6 +1,6 @@
 ---
 title: Shopauswahlmodul
-description: Dieses Thema enthält das Siteauswahlmodul und es wird beschrieben, wie Websiteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+description: Dieser Artikel enthält das Siteauswahlmodul und es wird beschrieben, wie Websiteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 manager: annbe
 ms.date: 05/18/2022
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 76682f26f62fe4686f5102e3099f038a50005f5e
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: a91b50d2177483615cf45276cf342be381814717
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780638"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881682"
 ---
 # <a name="store-selector-module"></a>Shopauswahlmodul
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält das Siteauswahlmodul und es wird beschrieben, wie Websiteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+Dieser Artikel enthält das Siteauswahlmodul und es wird beschrieben, wie Websiteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 
 Kunden können das Filialauswahlmodul verwenden, um ein Produkt in einem ausgewählten Geschäft nach einem Onlinekauf abzuholen. In der Commerce-Version 10.0.13 enthält das Shopauswahlmodul auch zusätzliche Funktionen, mit denen eine Seite **Geschäft suchen** angezeigt werden kann, die Geschäfte in der Nähe zeigt.
 
@@ -132,7 +132,7 @@ Im Modus **Im Shop abholen** kann das Modul nur auf PDPs und Warenkorbseiten ver
 - Informationen zum Hinzufügen eines Shopauswahlmoduls zu einem Kauffeldmodul finden Sie unter [Kauffeldmodul](add-buy-box.md). 
 - Informationen zum Hinzufügen eines Shopauswahlmoduls zu einem Einkaufswagenmodul finden Sie unter [Einkaufswagenmodul](add-cart-module.md)
 
-Führen Sie die folgenden Schritte aus, um das Filialauswahlmodul so zu konfigurieren, dass verfügbare Filialen für eine Geschäftsstandortseite angezeigt werden, wie in der Abbildung weiter oben in diesem Thema dargestellt.
+Führen Sie die folgenden Schritte aus, um das Filialauswahlmodul so zu konfigurieren, dass verfügbare Filialen für eine Geschäftsstandortseite angezeigt werden, wie in der Abbildung weiter oben in diesem Artikel dargestellt.
 
 1. Wechseln Sie zu **Vorlagen** und wählen Sie **Neu** aus, um eine neue Vorlage zu erstellen.
 1. Im Dialogfeld **Neue Vorlage** geben Sie unter **Vorlagenname** **Containervorlage** ein und wählen Sie **OK**.

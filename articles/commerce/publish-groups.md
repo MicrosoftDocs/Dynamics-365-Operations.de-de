@@ -1,6 +1,6 @@
 ---
 title: Mit Veröffentlichungsgruppen arbeiten
-description: In diesem Thema wird die Funktion der Veröffentlichungsgruppen in Microsoft Dynamics 365 Commerce beschrieben.
+description: In diesem Artikel wird die Funktion der Veröffentlichungsgruppen in Microsoft Dynamics 365 Commerce beschrieben.
 author: phinneyridge
 ms.date: 10/09/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: d757f34d3e16850e4f5de122f63b2b3342f612e49f07c7cf6585362999f03c02
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 76d447a5368cd5e342e8b1b934bb04d45e3378fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717671"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885109"
 ---
 # <a name="work-with-publish-groups"></a>Mit Veröffentlichungsgruppen arbeiten
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird die Funktion der Veröffentlichungsgruppen in Microsoft Dynamics 365 Commerce beschrieben.
+In diesem Artikel wird die Funktion der Veröffentlichungsgruppen in Microsoft Dynamics 365 Commerce beschrieben.
 
 E-Commerce-Websites werden das ganze Jahr über ständig mit neuen Inhalten aktualisiert. Aktualisierungen werden häufig stapelweise zu geschäftigen E-Commerce-Ereignissen wie Feiertagen, saisonalen Marketingkampagnen oder Werbemaßnahmen veröffentlicht. Diese Aktualisierungen erfordern häufig, dass Gruppen von Website-Inhalten (z. B. Seiten, Bilder, Fragmente und Vorlagen) gleichzeitig in einer einzigen Aktion bereitgestellt, validiert und veröffentlicht werden.
 

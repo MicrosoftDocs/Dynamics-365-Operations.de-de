@@ -1,6 +1,6 @@
 ---
 title: Richtlinien für die Bereitstellung des Beispiels für die Integration der Steuereinheit für Schweden (veraltet)
-description: Dieses Thema enthält Richtlinien zum Bereitstellen des Beispiels für die Integration der Steuereinheit für Schweden aus dem Retail SDK
+description: Dieser Artikel enthält Richtlinien zum Bereitstellen des Beispiels für die Integration der Steuereinheit für Schweden aus dem Retail SDK
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: b8d60f32d986dec6bb26d78ebdfe8cee3a6b688a
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 05a49de43282c449c7b99072d8ac3ac4a5f2a67f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077037"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870546"
 ---
 # <a name="deployment-guidelines-for-the-control-unit-integration-sample-for-sweden-legacy"></a>Richtlinien für die Bereitstellung des Beispiels für die Integration der Steuereinheit für Schweden (veraltet)
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Richtlinien zum Bereitstellen des Beispiels für die Integration der Steuereinheit für Schweden aus dem Software Development Kit (SDK) für Retail auf einer virtuellen Maschine (VM) für Entwickler in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen zu diesem Beispiel für die steuerliche Integration finden Sie unter [Beispiel für die Integration von Steuereinheiten für Schweden](emea-swe-fi-sample.md). 
+Dieser Artikel enthält Richtlinien zum Bereitstellen des Beispiels für die Integration der Steuereinheit für Schweden aus dem Software Development Kit (SDK) für Retail auf einer virtuellen Maschine (VM) für Entwickler in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen zu diesem Beispiel für die steuerliche Integration finden Sie unter [Beispiel für die Integration von Steuereinheiten für Schweden](emea-swe-fi-sample.md). 
 
-Das Beispiel für die fiskalische Integration für Schweden ist Teil des Retail SDK. Informationen zur Installation und Verwendung des SDK finden Sie in der [Retail Software Development Kit (SDK)-Architektur](../dev-itpro/retail-sdk/retail-sdk-overview.md). Dieses Beispiel besteht aus Erweiterungen für die Commerce Runtime (CRT), die Hardware-Station und den Point of Sale (POS). Um dieses Beispiel auszuführen, müssen Sie CRT, Hardwarestation und POS-Projekte ändern und erstellen. Es wird empfohlen, dass Sie ein unverändertes Retail SDK verwenden, um die Änderungen vorzunehmen, die in diesem Thema beschrieben werden. Es wird außerdem empfohlen, dass Sie ein Quellsteuerungssystem verwenden, wie Azure DevOps bei dem noch keine Dateien geändert wurden.
+Das Beispiel für die fiskalische Integration für Schweden ist Teil des Retail SDK. Informationen zur Installation und Verwendung des SDK finden Sie in der [Retail Software Development Kit (SDK)-Architektur](../dev-itpro/retail-sdk/retail-sdk-overview.md). Dieses Beispiel besteht aus Erweiterungen für die Commerce Runtime (CRT), die Hardware-Station und den Point of Sale (POS). Um dieses Beispiel auszuführen, müssen Sie CRT, Hardwarestation und POS-Projekte ändern und erstellen. Es wird empfohlen, dass Sie ein unverändertes Retail SDK verwenden, um die Änderungen vorzunehmen, die in diesem Artikel beschrieben werden. Es wird außerdem empfohlen, dass Sie ein Quellsteuerungssystem verwenden, wie Azure DevOps bei dem noch keine Dateien geändert wurden.
 
 ## <a name="development-environment"></a>Entwicklungsumgebung
 
@@ -257,7 +257,7 @@ Der Migrationsprozess sollte aus den folgenden Schritten bestehen.
 1. Aktualisieren Sie die Komponenten POS und Hardware-Station, deaktivieren Sie die Erweiterungen, die Teil des früheren Beispiels sind, und aktivieren Sie die Erweiterungen des aktuellen Beispiels.
 
     > [!NOTE]
-    > Je nach Art der Umgebung finden Sie weitere technische Details über den Migrationsprozess entweder im Abschnitt [Migration in einer Entwicklungsumgebung](#migration-in-a-development-environment) oder im Abschnitt [Migration in einer Produktionsumgebung](#migration-in-a-production-environment) dieses Themas.
+    > Je nach Art der Umgebung finden Sie weitere technische Details über den Migrationsprozess entweder im Abschnitt [Migration in einer Entwicklungsumgebung](#migration-in-a-development-environment) oder im Abschnitt [Migration in einer Produktionsumgebung](#migration-in-a-production-environment) dieses Artikels.
 
 ### <a name="migration-in-a-development-environment"></a>Migration in einer Entwicklungsumgebung
 

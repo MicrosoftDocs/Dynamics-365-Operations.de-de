@@ -1,6 +1,6 @@
 ---
-title: Workflows für Rückvergütungsverwaltungsdeals
-description: In diesem Thema wird erläutert, wie Sie einen Workflow für Rückvergütungsverwaltungsdeals einrichten, um Deals zu genehmigen und zu aktivieren.
+title: Workflows bei Rückvergütungsverwaltungsgeschäften
+description: In diesem Artikel wird erläutert, wie Sie einen Workflow für Rückvergütungsverwaltungsdeals einrichten, um Deals zu genehmigen und zu aktivieren.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0fe5bc5af953ee7cbbda3477d75a38261bb2bb10
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2b1611ff7877efc4a2f98b8f84a1ef91971902ab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687411"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869516"
 ---
 # <a name="rebate-management-deal-workflows"></a>Workflows für Rückvergütungsverwaltungsdeals
 
@@ -35,7 +35,7 @@ Benutzer können Geschäfte nicht manuell genehmigen. Es muss immer der Workflow
 
 ## <a name="create-and-manage-rebate-management-deal-workflows"></a>Workflows für Rückvergütungsverwaltungsdeals erstellen und verwalten
 
-Um mit Ihren Workflows für Rückvergütungsverwaltungsdeals zu arbeiten, gehen Sie zu **Rückvergütungsverwaltung \> Einstellungen \> Workflows für Rückvergütungsverwaltung**. Dort können Sie Workflows nach Bedarf anzeigen, erstellen und aktualisieren. Nur jeweils ein Workflow dieses Typs kann aktiv sein. Weitere Informationen zu Workflows, zum Arbeiten mit der Seite **Workflows für Rückvergütungsverwaltungsdeals** und zum Erstellen von Workflows finden Sie unter [Workflowsystem – Übersicht](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md) und den dazugehörigen Themen.
+Um mit Ihren Workflows für Rückvergütungsverwaltungsdeals zu arbeiten, gehen Sie zu **Rückvergütungsverwaltung \> Einstellungen \> Workflows für Rückvergütungsverwaltung**. Dort können Sie Workflows nach Bedarf anzeigen, erstellen und aktualisieren. Nur jeweils ein Workflow dieses Typs kann aktiv sein. Weitere Informationen zu Workflows, zum Arbeiten mit der Seite **Workflows für Rückvergütungsverwaltungsdeals** und zum Erstellen von Workflows finden Sie unter [Workflowsystem – Übersicht](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md) und den dazugehörigen Artikeln.
 
 ## <a name="use-a-workflow-to-activate-a-deal"></a>Einen Workflow zum Aktivieren eines Deals verwenden
 

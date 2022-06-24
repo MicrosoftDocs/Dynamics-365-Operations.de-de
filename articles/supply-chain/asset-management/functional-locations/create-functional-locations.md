@@ -1,6 +1,6 @@
 ---
 title: Funktionale Standorte erstellen
-description: In diesem Thema wird erklärt, wie in der Anlagenverwaltung funktionalen Standorte erstellt werden.
+description: In diesem Artikel wird erklärt, wie in der Anlagenverwaltung funktionalen Standorte erstellt werden.
 author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e5dd5ea59b27c594752ff82428723f3afe555b5f2426a812c70e10b968c920a5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 503150e7cfc580821c5ed8d4c4c9b56998f6ff13
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767531"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869719"
 ---
 # <a name="create-functional-locations"></a>Funktionale Standorte erstellen
 
@@ -28,7 +28,7 @@ ms.locfileid: "6767531"
 
  
 
-In diesem Thema wird erklärt, wie in der Anlagenverwaltung funktionalen Standorte erstellt werden.
+In diesem Artikel wird erklärt, wie in der Anlagenverwaltung funktionalen Standorte erstellt werden.
 
 Wenn Sie eine funktionale Standortstruktur erstellen, können Sie diese nicht vom ursprünglichen Ort nicht verschieben. Das bedeutet, dass Sie die Struktur der funktionalen Standorte sorgfältig prüfen müssen, bevor Sie deren Erstellung in der Anlagenverwaltung starten. Wenn Sie einen funktionalen Standort nicht mehr möchten, können Sie ihn löschen, vorausgesetzt, dass er noch nicht in Verwendung ist
 

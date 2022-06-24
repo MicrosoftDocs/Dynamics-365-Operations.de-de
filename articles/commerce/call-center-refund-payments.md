@@ -1,6 +1,6 @@
 ---
 title: Abwicklung von Rückerstattungszahlungen in Callcentern
-description: In diesem Thema wird erläutert, wie Rückerstattungen von Zahlungen durch Callcenter zu generieren sind, wenn Retouren erstellt oder Aufträge oder Auftragspositionen storniert werden.
+description: In diesem Artikel wird erläutert, wie Rückerstattungen von Zahlungen durch Callcenter zu generieren sind, wenn Retouren erstellt oder Aufträge oder Auftragspositionen storniert werden.
 author: hhainesms
 ms.date: 01/05/2020
 ms.topic: article
@@ -12,16 +12,16 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8d5bcf3a0d36e323ee96c1f37829a95b60f529bc
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 330674a31dc59e99ffedb82d0896c64214562eb3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944712"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880113"
 ---
 # <a name="refund-payment-processing-in-call-centers"></a>Abwicklung von Rückerstattungszahlungen in Callcentern
 
-In diesem Thema wird erläutert, wie Rückerstattungen von Zahlungen durch Callcenter zu generieren sind, wenn Retouren erstellt oder Aufträge oder Auftragspositionen storniert werden.
+In diesem Artikel wird erläutert, wie Rückerstattungen von Zahlungen durch Callcenter zu generieren sind, wenn Retouren erstellt oder Aufträge oder Auftragspositionen storniert werden.
 
 Ein Benutzer, der als Callcenterbenutzer in Microsoft Dynamics 365 Commerce-Zentralverwaltung eine Rücklieferung für einen Debitoren erstellt, muss auf der Seite **Rücklieferung** die anfängliche Rücksendungsautorisierung (Return Materials Authorization, RMA) erstellen. Die RMA definiert die Produkte, die der Debitor zurückgeben oder umtauschen möchte, und erstellt einen verknüpften Rücklieferungsauftrag mit dem Auftragstyp **Zurückgegebener Auftrag**. Anhand dieses verknüpften zurückgegebenen Auftrags werden die Buchung des zurückgegebenen Bestands sowie alle gebuchten Gutschriften oder Zahlungsrückerstattungen nachverfolgt.
 
@@ -92,7 +92,7 @@ Die Einstellung auf **Ja** für die Option **Gutschrift anwenden** ist nur anwen
 
 ## <a name="payment-overrides-for-call-center-returns"></a>Zahlungsüberschreibungen bei Callcenter-Rückerstattungen
 
-Obwohl die Callcenter-Logik die Zahlungsmethode für Rückerstattungen systematisch auf die zuvor in diesem Thema beschriebene Weise ermittelt, möchten Benutzer diese Zahlungen manchmal überschreiben. So möchte ein Benutzer beispielsweise vorhandene Rückerstattungspositionen bearbeiten oder entfernen und neue Zahlungspositionen anlegen. Vom System berechnete Rückerstattungszahlungen können nur von Benutzern geändert werden, die über die richtigen Überschreibungsberechtigungen verfügen. Diese Berechtigungen können auf der Seite **Berechtigung überschreiben** in Einzelhandel und Handel konfiguriert werden. Der Benutzer muss für die Überschreibung einer Erstattungszahlung mit einer Sicherheitsrolle verknüpft sein, in der die Option **Alternative Zahlung zulassen** auf der Seite **Berechtigung überschreiben** auf **Ja** gesetzt ist.
+Obwohl die Callcenter-Logik die Zahlungsmethode für Rückerstattungen systematisch auf die zuvor in diesem Artikel beschriebene Weise ermittelt, möchten Benutzer diese Zahlungen manchmal überschreiben. So möchte ein Benutzer beispielsweise vorhandene Rückerstattungspositionen bearbeiten oder entfernen und neue Zahlungspositionen anlegen. Vom System berechnete Rückerstattungszahlungen können nur von Benutzern geändert werden, die über die richtigen Überschreibungsberechtigungen verfügen. Diese Berechtigungen können auf der Seite **Berechtigung überschreiben** in Einzelhandel und Handel konfiguriert werden. Der Benutzer muss für die Überschreibung einer Erstattungszahlung mit einer Sicherheitsrolle verknüpft sein, in der die Option **Alternative Zahlung zulassen** auf der Seite **Berechtigung überschreiben** auf **Ja** gesetzt ist.
 
 ![„Alternative Zahlung zulassen“-Option auf der Seite „Berechtigungen überschreiben“.](media/overridepermissions.png)
 

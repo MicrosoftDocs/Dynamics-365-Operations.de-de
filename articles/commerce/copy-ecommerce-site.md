@@ -1,26 +1,26 @@
 ---
 title: Kopieren einer E-Commerce-Website
-description: In diesem Thema wird beschrieben, wie Sie eine bestehende E-Commerce-Website innerhalb von oder zwischen E-Commerce-Umgebungen in Microsoft Dynamics 365 Commerce Site Builder kopieren.
+description: In diesem Artikel wird beschrieben, wie Sie eine bestehende E-Commerce-Website innerhalb von oder zwischen E-Commerce-Umgebungen in Microsoft Dynamics 365 Commerce Site Builder kopieren.
 author: psimolin
-ms.date: 03/03/2022
+ms.date: 06/03/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: a23f544cbd1e960cb704d2b9666b7db4c3894b5e
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: cb53a76b2ebe5b511bf5009727f20f20755e5720
+ms.sourcegitcommit: 13c7a1cc4c90417e3e88db59b7d2165b3c40a56c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462325"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "8935743"
 ---
 # <a name="copy-an-e-commerce-site"></a>Kopieren einer E-Commerce-Website
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie eine bestehende E-Commerce-Website innerhalb von oder zwischen E-Commerce-Umgebungen in Microsoft Dynamics 365 Commerce Site Builder kopieren.
+In diesem Artikel wird beschrieben, wie Sie eine bestehende E-Commerce-Website innerhalb von oder zwischen E-Commerce-Umgebungen in Microsoft Dynamics 365 Commerce Site Builder kopieren.
 
 Dynamics 365 Commerce unterstützt das Kopieren oder Klonen von Websites als Selbstbedienungsvorgang in Commerce Site Builder. Websites können innerhalb einer einzigen E-Commerce Umgebung oder zwischen zwei E-Commerce Umgebungen kopiert werden. Der Benutzer, der den Vorgang des Kopierens der Website initiiert, muss sowohl in der E-Commerce Umgebung der Quelle als auch des Ziels ein Mandant-Administrator sein.
 
@@ -40,23 +40,23 @@ Um eine Website innerhalb einer E-Commerce Umgebung zu kopieren, führen Sie die
 1. Melden Sie sich beim Site Builder für die Umgebung an, in der Sie den Kopiervorgang durchführen möchten.
 1. Öffnen Sie die Site-Listenansicht, indem Sie in der oberen rechten Ecke **Site Switcher** und dann **Sites verwalten** wählen.
 1. Suchen Sie den Standort, den Sie kopieren oder klonen möchten, und wählen Sie ihn aus, indem Sie das Kontrollkästchen neben dem Standortnamen aktivieren.
-1. Wählen Sie im Aktionsbereich **Seite kopieren**.
-1. Geben Sie im Dialogfeld **Site kopieren** in das Feld **Neuer Site-Name** einen Namen für die neue Site ein. Der neue Site-Name muss in der E-Commerce Umgebung eindeutig sein. Die Felder **Quellmieter** und **Quellstandort** werden automatisch auf die Informationen für den aktuellen Mandanten und den ausgewählten Standort festgelegt.
+1. Wählen Sie in der Befehlsleiste **Site kopieren** aus.
+1. Geben Sie im Flyoutmenü **Site kopieren** in das Feld **Neuer Site-Name** einen Namen für die neue Site ein. Der neue Site-Name muss in der E-Commerce Umgebung eindeutig sein. Die Felder **Quellmieter** und **Quellstandort** werden automatisch auf die Informationen für den aktuellen Mandanten und den ausgewählten Standort festgelegt.
 1. Wählen Sie **Kopie erstellen**.
 
 Nach der Überprüfung der Informationen zeigt eine Benachrichtigung an, dass ein neuer Auftrag zum Kopieren der Website erstellt wurde. Sie können den Fortschritt des Auftrags im [rechten Fensterbereich der Seite **Mandantenaufträge** überwachen](#monitor-the-site-copy-operation). Wenn der Kopiervorgang erfolgreich abgeschlossen wurde, wird der neue Standort in der Liste der Standorte in der Standortlistenansicht angezeigt.
 
-Die folgende Abbildung zeigt ein Beispiel für das Dialogfeld **Site kopieren** in Site Builder.
+Die folgende Abbildung zeigt ein Beispiel für das Flyoutmenü **Site kopieren** in Site Builder.
 
-![Dialogfeld Site kopieren im Site Builder.](media/site-copy_1.png)
+![Flyoutmenü Site kopieren im Site Builder.](media/site-copy_1.png)
 
 ## <a name="copy-a-site-between-two-e-commerce-environments"></a>Kopieren einer Site zwischen zwei E-Commerce Umgebungen
 
 Um eine Website zwischen zwei E-Commerce Umgebungen zu kopieren, gehen Sie folgendermaßen vor.
 
 1. Melden Sie sich beim Site Builder für die E-Commerce Umgebung des Ziels an.
-1. Wählen Sie im Aktionsbereich **Seite kopieren**.
-1. Geben Sie im Dialogfeld **Site kopieren** in das Feld **Neuer Site-Name** einen Namen für die neue Site ein. Der neue Site-Name muss in der E-Commerce Umgebung eindeutig sein.
+1. Wählen Sie in der Befehlsleiste **Site kopieren** aus.
+1. Geben Sie im Flyoutmenü **Site kopieren** in das Feld **Neuer Site-Name** einen Namen für die neue Site ein. Der neue Site-Name muss in der E-Commerce Umgebung eindeutig sein.
 1. Wählen Sie im Feld **Quell-Mandant** den Namen des Quell-Mandanten.
 1. Wählen Sie im Feld **Quellstandort** den Quellstandort.
 1. Wählen Sie **Kopie erstellen**.
@@ -66,6 +66,32 @@ Um eine Website zwischen zwei E-Commerce Umgebungen zu kopieren, gehen Sie folge
 
 Nach der Überprüfung der Informationen zeigt eine Benachrichtigung an, dass ein neuer Auftrag zum Kopieren der Website erstellt wurde. Sie können den Fortschritt des Auftrags im [rechten Fensterbereich der Seite **Mandantenaufträge** überwachen](#monitor-the-site-copy-operation). Wenn der Kopiervorgang erfolgreich abgeschlossen wurde, wird der neue Standort in der Liste der Standorte in der Standortlistenansicht angezeigt.
 
+## <a name="map-channels-during-the-site-copy-operation-optional"></a>Zuordnen von Kanälen während des Site-Kopiervorgangs (optional)
+
+Quellkanäle und Gebietsschemata können als Teil des Site-Kopiervorgangs Zielkanälen und Gebietsschemata zugeordnet werden. Wenn die Kanalzuordnung als Teil des Site-Kopiervorgangs erfolgt, sind das Initialisieren der Site mit dem FRE-Prozess und das Konfigurieren der Kanäle in den Site-Einstellungen nicht erforderlich. 
+
+Führen Sie die folgenden Schritte aus, um alle Kanäle und Gebietsschemas "wie sie sind" (1-zu-1) im Site Builder zuzuordnen.
+
+1. Öffnen Sie die Site-Listenansicht, indem Sie in der oberen rechten Ecke **Site Switcher** und dann **Sites verwalten** wählen.
+1. Suchen Sie den Standort, den Sie kopieren oder klonen möchten, und wählen Sie ihn aus, indem Sie das Kontrollkästchen neben dem Standortnamen aktivieren.
+1. Wählen Sie in der Befehlsleiste **Site kopieren** aus.
+1. In dem **Website kopieren** Flyout-Menü, geben Sie Werte für **Neuer Seitenname**, **Quellenmieter** und **Quellseite** ein (falls noch nicht vorhanden).
+1. Wählen Sie **Kanalzuordnung hinzufügen** aus.
+1. In dem Flyout-Menü **Konfigurieren Sie Site-Kanäle und Gebietsschemas** wählen Sie **Quellkanal**, und wählen Sie dann den Quellkanal aus.  
+1. Wählen Sie **Zielkanal** und dann denselben Kanal wie den Quellkanal aus. 
+1. Wählen Sie **Gebietsschema hinzufügen** aus.
+1. Wählen Sie **Quellgebietsschema** und dann das Quellgebietsschema aus.
+1. Wählen Sie **Zielgebietsschema** und dann denselben Gebietsschema wie das Quellgebietsschema aus. 
+1. Zum **URL-Pfad** geben Sie einen eindeutigen URL-Pfad ein, der derzeit nicht in der Zielumgebung verwendet wird.
+1. Wiederholen Sie die Schritte 8 bis 11 für jedes Gebietsschema, das dem Kanal zugeordnet werden soll.
+1. Wählen Sie **Anwenden** aus.
+1. Wiederholen Sie die Schritte 6 bis 11 für jeden Quellkanal.
+1. Wählen Sie **Schließen** aus.
+1. Überprüfen Sie die Konfiguration auf Genauigkeit und wählen Sie dann **Website kopieren** aus.
+
+> [!NOTE]
+> Alle Quellkanäle und Gebietsschemas müssen zugeordnet werden und können nur einmal zugeordnet werden.
+
 ## <a name="monitor-the-site-copy-operation"></a>Monitor des Vorgangs der Standortkopie
 
 Um den Fortschritt des Vorgangs zum Kopieren der Website zu überwachen, gehen Sie folgendermaßen vor.
@@ -74,9 +100,9 @@ Um den Fortschritt des Vorgangs zum Kopieren der Website zu überwachen, gehen S
 1. Wählen Sie im linken Fensterbereich **Mandantenaufträge**.
 1. Auf der Seite **Aufträge für Mandanten** suchen Sie den Auftrag für die Standortkopie in der Liste und wählen ihn aus. Auf der rechten Seite erscheint ein Fenster mit dem Status und den Details des ausgewählten Auftrags.
 
-Sie können einen Auftrag abbrechen, der den Status **In Bearbeitung** hat. Markieren Sie den Auftrag in der Liste und wählen Sie dann **Abbrechen** im Aktionsbereich.
+Sie können einen Auftrag abbrechen, der den Status **In Bearbeitung** hat. Markieren Sie den Auftrag in der Liste und wählen Sie dann **Abbrechen** auf der Befehlsleiste.
 
-Sie können einen Auftrag mit dem Status **Fehlgeschlagen** oder **Mit Fehlern abgeschlossen** erneut versuchen. Markieren Sie den Auftrag in der Liste und wählen Sie dann im Aktionsbereich **Wiederaufnahme**.
+Sie können einen Auftrag mit dem Status **Fehlgeschlagen** oder **Mit Fehlern abgeschlossen** erneut versuchen. Markieren Sie den Auftrag in der Liste und wählen Sie dann auf der Befehlsleiste **Wiederaufnahme**.
 
 > [!NOTE]
 > Die Verarbeitung von Video-Assets kann nach Abschluss eines Kopierauftrags vor Ort fortgesetzt werden.

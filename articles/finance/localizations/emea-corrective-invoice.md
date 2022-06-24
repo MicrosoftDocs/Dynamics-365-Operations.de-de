@@ -13,19 +13,19 @@ ms.search.region: Denmark, Germany, France, Ireland, Netherlands, United Kingdom
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0aa893c7c3435ac08e66888e2bab92d2eb24de72ab43a5964d3a575f53ecc7e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7744dfedd742dd473602d413ac99bc26b2bce47b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712149"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865507"
 ---
 # <a name="corrective-invoicing"></a>Rechnungskorrektur
 
 [!include [banner](../includes/banner.md)]
 
  > [!NOTE]
- > Dieses Thema gilt für juristische Personen mit einer primären Adresse in Dänemark, Deutschland, Frankreich, Irland, den Niederlanden oder dem Vereinigten Königreich.
+ > Dieser Artikel gilt für juristische Personen mit einer primären Adresse in Dänemark, Deutschland, Frankreich, Irland, den Niederlanden oder dem Vereinigten Königreich.
 
 Eine Gutschrift oder ein Gutschriftvermerk (Memo) ist ein Dokument, das den Betrag, den ein Käufer zahlen muss, reduziert oder wegfallen lässt.
 

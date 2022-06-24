@@ -1,6 +1,6 @@
 ---
 title: Synchronisieren von Aufträgen direkt zwischen Sales und Supply Chain Management
-description: Das Thema erklärt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Synchronisierung von Auträgen direkt aus Dynamics 365 Sales mit Dynamics 365 Supply Chain Management auszuführen.
+description: Der Artikel erklärt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Synchronisierung von Auträgen direkt aus Dynamics 365 Sales mit Dynamics 365 Supply Chain Management auszuführen.
 author: Henrikan
 ms.date: 05/09/2019
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: eb41a21395a5d115b779e6b1ef71e9eb1176e28e
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 63a9be9bedabe1f15ad8db583151aa7fa480473b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061517"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854151"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>Synchronisieren von Aufträgen direkt zwischen Sales und Supply Chain Management
 
@@ -29,7 +29,7 @@ ms.locfileid: "8061517"
 
 
 
-Das Thema erklärt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Synchronisierung von Auträgen direkt aus Dynamics 365 Sales mit Dynamics 365 Supply Chain Management auszuführen.
+Der Artikel erklärt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Synchronisierung von Auträgen direkt aus Dynamics 365 Sales mit Dynamics 365 Supply Chain Management auszuführen.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Datenfluss in Interessent nach Bargeld
 
@@ -203,7 +203,7 @@ Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung in Dat
 
 [![Vorlagenzuordnung in der Datenintegration, Aufträge (Sales zu Supply Chain Management) – Direkt: OrderLine](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-articles"></a>Zugehörige Artikel
 
 [Prospect-to-Cash](prospect-to-cash.md)
 

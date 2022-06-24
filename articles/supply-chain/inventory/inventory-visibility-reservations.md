@@ -1,6 +1,6 @@
 ---
-title: Bestandstransparenzreservierungen
-description: In diesem Thema wird beschrieben, wie Sie die Funktion "Reservierungen" festlegen, um mit Inventory Visibility Reservierungen zu erstellen, Reservierungen zu verbrauchen und/oder die Reservierung bestimmter Bestandsmengen aufzuheben.
+title: Inventory Visibility-Reservierungen
+description: In diesem Artikel wird beschrieben, wie Sie die Funktion "Reservierungen" festlegen, um mit Inventory Visibility Reservierungen zu erstellen, Reservierungen zu verbrauchen und/oder die Reservierung bestimmter Bestandsmengen aufzuheben.
 author: yufeihuang
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 5e6752539a6381e1f7271883102391374e04f3aa
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3b74907709ab97ddf4cc829dba324df213ca229f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061703"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895727"
 ---
-# <a name="inventory-visibility-reservations"></a>Bestandstransparenzreservierungen
+# <a name="inventory-visibility-reservations"></a>Inventory Visibility-Reservierungen
 
 [!include [banner](../includes/banner.md)]
 
 
-In diesem Thema wird beschrieben, wie Sie die Funktion "Reservierungen" festlegen, um mit Inventory Visibility Reservierungen zu erstellen, Reservierungen zu verbrauchen und/oder die Reservierung bestimmter Bestandsmengen aufzuheben.
+In diesem Artikel wird beschrieben, wie Sie die Funktion "Reservierungen" festlegen, um mit Inventory Visibility Reservierungen zu erstellen, Reservierungen zu verbrauchen und/oder die Reservierung bestimmter Bestandsmengen aufzuheben.
 
 Reservierungen markieren eine Bestandsmenge, die in der Zukunft verbraucht werden soll. Wenn Sie eine Reservierung erstellen, hindert das System andere Aufträge daran, die reservierten Waren zu reservieren oder zu verbrauchen, bis die Reservierung entweder verbraucht oder die Reservierung aufgehoben ist. Reservierungen werden mithilfe von API-Aufrufen an den Dienst Inventory Visibility erstellt, verbraucht und storniert.
 

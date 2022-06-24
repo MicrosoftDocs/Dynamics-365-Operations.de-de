@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: d5aa579394a0e3bd4c27cd44c9ff98951b3bfe1c
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 559ca80976955d6328cb4d6b2020d5662460cef9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103662"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863649"
 ---
 # <a name="putaway-clusters"></a>Clustereinlagerung
 
@@ -27,7 +27,7 @@ Einlagerungs-Cluster bieten eine Möglichkeit, mehrere Ladungsträger gleichzeit
 
 ## <a name="turn-the-cluster-putaway-feature-on-or-off"></a>Die Funktion „Clustereinlagerung“ ein- oder ausschalten
 
-Um die Funktionalität zu verwenden, die in diesem Thema beschrieben wird, muss die Funktion *Clutereinlagerung* für Ihr System eingeschaltet werden. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Clustereinlagerung* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
+Um die Funktionalität zu verwenden, die in diesem Artikel beschrieben wird, muss die Funktion *Clutereinlagerung* für Ihr System eingeschaltet werden. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Clustereinlagerung* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ## <a name="setup-for-the-example-scenario"></a>Einrichten für das Beispielszenario
 

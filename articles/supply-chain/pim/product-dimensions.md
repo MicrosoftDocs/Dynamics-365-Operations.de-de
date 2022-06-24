@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 46079daafc744421abcbdf0a3539428f2a39f13c
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: acfd9be044818ab0f40171c25a8fc9e760173aa8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920522"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867926"
 ---
 # <a name="product-dimensions"></a>Produktdimensionen
 
@@ -47,7 +47,7 @@ Produktdimensionswerte für die Größen‑, Farb‑ und Stilabmessungen können
 
 Produktdimensionswerte für die Variantendimension werden üblicherweise entweder mithilfe des Variantenkonfigurators oder des dimensionsbasierten Konfigurators erstellt. 
 
-Produktversionen werden normalerweise für bestimmte Versionen erstellt, wenn sich das Produkt während seines Lebenszyklus weiterentwickelt. Produktversionen werden später in diesem Thema ausführlich behandelt.
+Produktversionen werden normalerweise für bestimmte Versionen erstellt, wenn sich das Produkt während seines Lebenszyklus weiterentwickelt. Produktversionen werden später in diesem Artikel ausführlich behandelt.
 
 Produktdimensionen können auch auf der Seite **Produktdimensionen** erstellt und verwaltet werden, auf die Sie von folgenden Orten aus zugreifen können:
 

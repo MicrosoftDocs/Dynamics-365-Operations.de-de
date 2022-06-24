@@ -1,6 +1,6 @@
 ---
 title: Server-zu-Server-Authentifizierung für das API zur ATS-Integration
-description: In diesem Thema wird beschrieben, wie Sie die Server-zu-Server-Authentifizierung für Integrationen mit der API zur Integration des Dynamics 365 Human Resources Applicant Tracking System (ATS) einrichten.
+description: In diesem Artikel wird beschrieben, wie Sie die Server-zu-Server-Authentifizierung für Integrationen mit der API zur Integration des Dynamics 365 Human Resources Applicant Tracking System (ATS) einrichten.
 author: jaredha
 ms.date: 06/30/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-06-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 350fb5a00b85f28fa8aef2ca50cf1f277b8f635e
-ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
+ms.openlocfilehash: de3dc29c5366996276c02576eba27f7e831e4ccf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743540"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879365"
 ---
 # <a name="server-to-server-authentication-for-the-ats-integration-api"></a>Server-zu-Server-Authentifizierung für das API zur ATS-Integration
 
@@ -27,7 +27,7 @@ ms.locfileid: "8743540"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In diesem Thema wird beschrieben, wie Sie die Server-zu-Server-Authentifizierung für Anwendungsintegrationen mit der API zur Integration des Dynamics 365 Human Resources Applicant Tracking System (ATS) einrichten. Es gibt einige Sicherheitsebenen, die verwaltet werden müssen, damit der Dienstprinzipal Zugriff auf die virtuelle Microsoft Dataverse- Tabelle und die zugehörigen Daten hat. Dem Benutzer muss Zugriff auf die virtuelle Dataverse-Tabelle in Microsoft Power Platform auf die Daten in Dynamics 365 Human Resources erteilt werden.
+In diesem Artikel wird beschrieben, wie Sie die Server-zu-Server-Authentifizierung für Anwendungsintegrationen mit der API zur Integration des Dynamics 365 Human Resources Applicant Tracking System (ATS) einrichten. Es gibt einige Sicherheitsebenen, die verwaltet werden müssen, damit der Dienstprinzipal Zugriff auf die virtuelle Microsoft Dataverse- Tabelle und die zugehörigen Daten hat. Dem Benutzer muss Zugriff auf die virtuelle Dataverse-Tabelle in Microsoft Power Platform auf die Daten in Dynamics 365 Human Resources erteilt werden.
 
 ## <a name="enable-access-to-dataverse-virtual-tables-in-power-platform"></a>Zugriff auf virtuelle Dataverse-Tabellen in Power Platform aktivieren
 

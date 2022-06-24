@@ -1,6 +1,6 @@
 ---
 title: Fälligkeitsmomentaufnahmen für Debitoren
-description: Dieses Thema enthält Informationen zu Fälligkeitsmomentaufnahmen für Debitoren. Eine Fälligkeitsmomentaufnahme berechnet Saldenrückblicke für eine Gruppe von Debitoren zu einem bestimmten Zeitpunkt.
+description: Dieser Artikel enthält Informationen zu Fälligkeitsmomentaufnahmen für Debitoren. Eine Fälligkeitsmomentaufnahme berechnet Saldenrückblicke für eine Gruppe von Debitoren zu einem bestimmten Zeitpunkt.
 author: JodiChristiansen
 ms.date: 05/05/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 54db3e53cd31936ce80f0cdf1147535216d0d4b4
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: c1a83f2648b52e436d19a11862e58dc33313f341
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722994"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902572"
 ---
 # <a name="customer-aging-snapshots"></a>Fälligkeitsmomentaufnahmen für Debitoren
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Informationen zu Fälligkeitsmomentaufnahmen für Debitoren. Eine Fälligkeitsmomentaufnahme berechnet Saldenrückblicke für eine Gruppe von Debitoren zu einem bestimmten Zeitpunkt. Sie können Fälligkeitsmomentaufnahme entweder für alle Debitoren oder für die Debitoren in einem Debitorenpool erstellen.
+Dieser Artikel enthält Informationen zu Fälligkeitsmomentaufnahmen für Debitoren. Eine Fälligkeitsmomentaufnahme berechnet Saldenrückblicke für eine Gruppe von Debitoren zu einem bestimmten Zeitpunkt. Sie können Fälligkeitsmomentaufnahme entweder für alle Debitoren oder für die Debitoren in einem Debitorenpool erstellen.
 
 Informationen aus Fälligkeitsmomentaufnahmen werden auf der Listenseite **Saldenrückblick** und auf der Seite **Inkassi** angezeigt. Sie müssen zuerst eine Fälligkeitsmomentaufnahme erstellen, bevor Sie die Listenseite **Saldenrückblick** verwenden können. Auf der Listenseite sind nur Informationen für Debitoren aufgeführt, für die eine Fälligkeitsmomentaufnahme erstellt wurde.
 

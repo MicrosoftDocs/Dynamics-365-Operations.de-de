@@ -1,6 +1,6 @@
 ---
 title: Planung mit unendlicher Kapazität
-description: Dieses Thema enthält Informationen zur Planung mit unbegrenzter Kapazität für die Planungsoptimierung. Außerdem werden aktuelle Funktionseinschränkungen beschrieben.
+description: Dieser Artikel enthält Informationen zur Planung mit unbegrenzter Kapazität für die Planungsoptimierung. Außerdem werden aktuelle Funktionseinschränkungen beschrieben.
 author: t-benebo
 ms.date: 09/21/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: b8f08af3b58e5c0f8480ae540478d60bb8d36193
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 3646a7ca1f9a3a87a2f130783dc4961a61335f1d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469924"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873868"
 ---
 # <a name="scheduling-with-infinite-capacity"></a>Planung mit unendlicher Kapazität
 

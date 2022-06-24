@@ -1,6 +1,6 @@
 ---
 title: Produktionsplanung
-description: In diesem Thema wird die Planung für die Produktion beschrieben und erläutert, wie Sie geplante Produktionsaufträge mithilfe der Planungsoptimierung ändern können.
+description: In diesem Artikel wird die Planung für die Produktion beschrieben und erläutert, wie Sie geplante Produktionsaufträge mithilfe der Planungsoptimierung ändern können.
 author: t-benebo
 ms.date: 06/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 8f23cb62512dfd718fe199867a4b21aaa0eca3fd
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 151aa3688c570ea6ec282c297ed18288dd886131
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469057"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873781"
 ---
 # <a name="production-planning"></a>Produktionsplanung
 
@@ -24,11 +24,11 @@ ms.locfileid: "8469057"
 
 Die Planungsoptimierung unterstützt mehrere Produktionsszenarien. Wenn Sie vom bestehenden integrierten Masterplanungsmodul migrieren, ist es wichtig, dass Sie einige geänderte Verhaltensweisen beachten.
 
-Das folgende Video gibt eine kurze Einführung in einige der in diesem Thema besprochenen Konzepte: [Dynamics 365 Supply Chain Management: Erweiterungen der Planungsoptimierung](https://youtu.be/u1pcmZuZBTw).
+Das folgende Video gibt eine kurze Einführung in einige der in diesem Artikel besprochenen Konzepte: [Dynamics 365 Supply Chain Management: Erweiterungen der Planungsoptimierung](https://youtu.be/u1pcmZuZBTw).
 
 ## <a name="turn-on-this-feature-for-your-system"></a>Schalten Sie diese Funktion für Ihr System ein
 
-Wenn Ihr System noch nicht über die in diesem Thema beschriebenen Funktionen verfügt, gehen Sie zu [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und schalten Sie die Funktion *Geplante Produktionsaufträge zur Planungsoptimierung* ein.
+Wenn Ihr System noch nicht über die in diesem Artikel beschriebenen Funktionen verfügt, gehen Sie zu [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und schalten Sie die Funktion *Geplante Produktionsaufträge zur Planungsoptimierung* ein.
 
 ## <a name="planned-production-orders"></a>Geplante Produktionsaufträge
 
@@ -65,7 +65,7 @@ Wenn Sie Informationen zu einem geplanten Auftrag ändern und die Auswirkungen a
 2. Genehmigen Sie den geplanten Auftrag.
 3. Führen Sie die Masterplanung aus.
 
-Wenn Sie die Masterplanung ausführen, sollten Sie keine Filter verwenden, wenn geplante Produktionsaufträge enthalten sind. Weitere Informationen finden Sie im Abschnitt [Filter](#filters) weiter unten in diesem Thema.
+Wenn Sie die Masterplanung ausführen, sollten Sie keine Filter verwenden, wenn geplante Produktionsaufträge enthalten sind. Weitere Informationen finden Sie im Abschnitt [Filter](#filters) weiter unten in diesem Artikel.
 
 > [!NOTE]
 > Wenn das Lieferdatum für den geplanten Auftrag auf einen späteren Zeitpunkt verschoben wird, kann die Nachfrage an einen neuen geplanten Auftrag gebunden sein. Dieses Verhalten tritt auf, wenn der neue Liefertermin eine Verzögerung für die gebundene Nachfrage verursacht, die Verzögerung jedoch gemäß den Einstellungen für die Vorlaufzeit vermieden werden kann.

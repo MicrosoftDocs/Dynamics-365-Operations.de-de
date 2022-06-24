@@ -1,6 +1,6 @@
 ---
 title: Varianten für technische Produkte genieren
-description: In diesem Thema wird beschrieben, wie Sie Varianten für technische Produkte generieren
+description: In diesem Artikel wird beschrieben, wie Sie Varianten für technische Produkte generieren
 author: t-benebo
 ms.date: 06/08/2021
 ms.topic: article
@@ -10,22 +10,22 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 7921983a965af5557f54f608418c8ec922256ba6
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 08feb66dedfa79f5a21a7723a22f3bef883431e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103637"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870752"
 ---
 # <a name="generate-variants-for-engineering-products"></a>Varianten für technische Produkte genieren
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Varianten für technische Produkte generieren.
+In diesem Artikel wird beschrieben, wie Sie Varianten für technische Produkte generieren.
 
 ## <a name="turn-variant-generation-for-engineering-products-on-or-off"></a>Variantengenerierung für technische Produkte ein- oder ausschalten
 
-Für die in diesem Thema beschriebene Funktionalität müssen die Funktionen *Verwaltung für technische Änderung* und *Variantengenerierung für technische Produkte* für Ihr System eingeschaltet sein. Einzelheiten zum Ein- und Ausschalten dieser Funktionen finden Sie unter [Verwaltung für technische Änderung – Übersicht](product-engineering-overview.md).
+Für die in diesem Artikel beschriebene Funktionalität müssen die Funktionen *Verwaltung für technische Änderung* und *Variantengenerierung für technische Produkte* für Ihr System eingeschaltet sein. Einzelheiten zum Ein- und Ausschalten dieser Funktionen finden Sie unter [Verwaltung für technische Änderung – Übersicht](product-engineering-overview.md).
 
 ## <a name="generate-one-or-more-new-variants-of-an-engineering-product"></a>Generieren Sie eine oder mehrere neue Varianten eines technischen Produkts
 

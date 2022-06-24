@@ -1,6 +1,6 @@
 ---
-title: Maßeinheitsumrechnungen für Produktvarianten
-description: In diesem Thema wird erläutert, wie Maßeinheitsumrechnungen für Produktvarianten eingerichtet werden können. Zudem enthält es ein Beispiel für die Einstellung.
+title: Maßeinheitsumrechnungen bei Produktvarianten
+description: In diesem Artikel wird erläutert, wie Maßeinheitsumrechnungen für Produktvarianten eingerichtet werden können. Zudem enthält es ein Beispiel für die Einstellung.
 author: t-benebo
 ms.date: 05/11/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c02252abcaf82cb2aab928949827e25ef7cce8c2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a605e510ac8faa1f92e105c9fcc30222ef78e05e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579567"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869632"
 ---
-# <a name="unit-of-measure-conversion-per-product-variant"></a>Maßeinheitsumrechnungen für Produktvarianten
+# <a name="unit-of-measure-conversion-per-product-variant"></a>Maßeinheitsumrechnungen bei Produktvarianten
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Maßeinheitsumrechnungen für verschiedene Produktvarianten eingerichtet werden können.
+In diesem Artikel wird erläutert, wie Maßeinheitsumrechnungen für verschiedene Produktvarianten eingerichtet werden können.
 
 Sie können Produktvarianten verwenden, um Variationen eines einzelnen Produkts zu erstellen, anstatt mehrere einzelne Produkte zu erstellen, die verwaltet werden müssen. Eine Produktvariante kann beispielsweise ein T-Shirt einer bestimmten Größe und Farbe sein.
 

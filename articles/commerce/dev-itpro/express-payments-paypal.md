@@ -1,6 +1,6 @@
 ---
 title: Expresszahlungen für PayPal konfigurieren
-description: In diesem Thema wird beschrieben, wie Expresszahlungen für PayPal konfiguriert werden, um schnellere Auschecken-Funktionen in Microsoft Dynamics 365 Commerce zu ermöglichen.
+description: In diesem Artikel wird beschrieben, wie Expresszahlungen für PayPal konfiguriert werden, um schnellere Auschecken-Funktionen in Microsoft Dynamics 365 Commerce zu ermöglichen.
 author: BrianShook
 ms.date: 05/11/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 5fff17959e7ed9299df169c68b2ed07f6b7c7d2c
-ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
+ms.openlocfilehash: b69b7384992fb86370ff6881824a7d2c9a77d2c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743574"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905281"
 ---
 # <a name="configure-express-payments-for-paypal"></a>Expresszahlungen für PayPal konfigurieren
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Expresszahlungen für PayPal konfiguriert werden, um schnellere Auschecken-Funktionen in Microsoft Dynamics 365 Commerce zu ermöglichen.
+In diesem Artikel wird beschrieben, wie Expresszahlungen für PayPal konfiguriert werden, um schnellere Auschecken-Funktionen in Microsoft Dynamics 365 Commerce zu ermöglichen.
 
 ## <a name="key-terms"></a>Schlüsselbegriffe
 
@@ -28,7 +28,7 @@ In diesem Thema wird beschrieben, wie Expresszahlungen für PayPal konfiguriert 
 |---|---|
 | PayPal Wallet | Das Kundenerlebnis und die Integration, die vom PayPal-Connector unterstützt werden. Sie wird auch als PayPal-Schaltfläche bezeichnet. |
 | Brieftasche | Eine Zahlungsart, die keine herkömmlichen Zahlungsmerkmale wie den Bereich der Bankidentifikationsnummer (BIN) und das Ablaufdatum enthält, die zur Unterscheidung von Kredit- und Debitkartentypen verwendet werden. |
-| Zahlungsexpress | Ein Commerce-Modul, das ein schnelleres Verhalten beim Auschecken unterstützt, wenn unterstützte Zahlungsmethoden verwendet werden. Dieses Thema behandelt die Verwendung des Zahlungsexpress-Moduls mit PayPal. |
+| Zahlungsexpress | Ein Commerce-Modul, das ein schnelleres Verhalten beim Auschecken unterstützt, wenn unterstützte Zahlungsmethoden verwendet werden. Dieser Artikel behandelt die Verwendung des Zahlungsexpress-Moduls mit PayPal. |
 
 Dynamics 365 Commerce bietet eine sofort einsatzbereite Integration für PayPal Wallet. Wenn der Dynamics 365 Payment Connector für PayPal konfiguriert ist, wird die PayPal-Schaltfläche als auswählbare Zahlungsmethode während der Online-Bestellungsabwicklung angezeigt. Wenn Benutzer PayPal auswählen, werden sie angewiesen, ihre Zahlung direkt über PayPal abzuschließen, und werden dann zum Onlineshop zurückgeleitet, um ihre Bestellung abzuschließen. Mit dem PayPal-Warenkorb-Auscheckvorgang können Kunden ihre Zahlungskontoinformationen verwenden, um das Bezahlformular vorab auszufüllen, damit sie den Bezahlvorgang schneller abschließen können.
 

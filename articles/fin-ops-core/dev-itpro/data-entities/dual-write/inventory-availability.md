@@ -1,6 +1,6 @@
 ---
 title: Inventarverfügbarkeit in dualem Schreiben
-description: Dieses Thema bietet Informationen zum Prüfen der Bestandverfügbarkeit in dualem Schreiben.
+description: Dieser Artikel bietet Informationen zum Prüfen der Bestandverfügbarkeit in dualem Schreiben.
 author: RamaKrishnamoorthy
 ms.date: 05/26/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-05-26
-ms.openlocfilehash: 989ba6cd26d6e48c24db856fa9bb0bd5d2bae80e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: efd175dfbe49549561bdb7d697c8bc47016f1d5d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782528"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908261"
 ---
 # <a name="inventory-availability-in-dual-write"></a>Inventarverfügbarkeit in dualem Schreiben
 
@@ -60,7 +60,7 @@ Wenn Sie die Schaltfläche **Verfügbarer Bestand** auf der Seite **Angebote**, 
 
 Die folgenden Vorlagen stehen zur Verfügung, um die Daten zu vorhandenen Lagerbestand verfügbar zu machen.
 
-Finance and Operations-Apps | Customer Engagement-Apps     | Beschreibung
+Finanz- und Betriebs-Apps | Customer Engagement-Apps     | Beschreibung
 ---|---|---
 [Einträge für verfügbaren CDS-Bestand](mapping-reference.md#145) | msdyn_inventoryonhandentries |
 [Anfragen für verfügbaren CDS-Bestand](mapping-reference.md#147) | msdyn_inventoryonhandrequests |

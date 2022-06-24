@@ -1,6 +1,6 @@
 ---
 title: Fremdarbeit
-description: Dieses Thema können Sie eine, einschließlich Zulieferung exemplarischen Vorgehensweise der bei der Herstellung in Dynamics 365 Supply Chain Managementerstellen.
+description: Dieser Artikel können Sie eine, einschließlich Zulieferung exemplarischen Vorgehensweise der bei der Herstellung in Dynamics 365 Supply Chain Management erstellen.
 author: johanhoffmann
 ms.date: 09/28/2018
 ms.topic: article
@@ -12,22 +12,22 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4c4ef554406c727cc410f8dca5f41264be01060b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ef8f30e934ece4a148c6f5259d74f8f67799999d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579351"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854176"
 ---
 # <a name="subcontracting"></a>Fremdarbeit
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema können Sie eine, einschließlich Zulieferung exemplarischen Vorgehensweise der bei der Herstellung in Microsoft Dynamics 365 Supply Chain Management erstellen. Der erste Teil dieses Themas beschreibt die Einstellungen der Daten. Der zweite Teil führt Sie durch die Schritte der exemplarischen Vorgehensweise.
+Dieser Artikel können Sie eine, einschließlich Zulieferung exemplarischen Vorgehensweise der bei der Herstellung in Microsoft Dynamics 365 Supply Chain Management erstellen. Der erste Teil dieses Artikels beschreibt die Einstellungen der Daten. Der zweite Teil führt Sie durch die Schritte der exemplarischen Vorgehensweise.
 
 ## <a name="target-audience"></a>Zielgruppe
 
-In diesem Thema erfahren Sie, wie Fremdarbeit der Herstellung eingerichtet wird. Sie können vorhandene Daten in der HQUS-juristischen Person nutzen, um die Basiseinstellungen eines Fremdarbeitsaktivitätsflusses einzurichten. Die Demodaten in der HQUS-juristischen Person enthält Einstellungsparameter, die vorab eingerichtet wurden, um die Schritte in der exemplarischen Vorgehensweise zu unterstützen. Obwohl die exemplarische Vorgehensweise zentrale Probleme und Herausforderungen für verschiedene Rollen adressiert, kann dies vom Systemadministrator ausgeführt werden. können.
+In diesem Artikel erfahren Sie, wie Fremdarbeit der Herstellung eingerichtet wird. Sie können vorhandene Daten in der HQUS-juristischen Person nutzen, um die Basiseinstellungen eines Fremdarbeitsaktivitätsflusses einzurichten. Die Demodaten in der HQUS-juristischen Person enthält Einstellungsparameter, die vorab eingerichtet wurden, um die Schritte in der exemplarischen Vorgehensweise zu unterstützen. Obwohl die exemplarische Vorgehensweise zentrale Probleme und Herausforderungen für verschiedene Rollen adressiert, kann dies vom Systemadministrator ausgeführt werden. können.
 
 ## <a name="demo-scenario"></a>Vorführungsszenario
 

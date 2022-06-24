@@ -1,6 +1,6 @@
 ---
 title: Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte
-description: In diesem Thema wird beschrieben, wie Sie die Produktionsausführungsoberfläche aus Sicht einer Arbeitskraft verwenden.
+description: In diesem Artikel wird beschrieben, wie Sie die Produktionsausführungsoberfläche aus Sicht einer Arbeitskraft verwenden.
 author: johanhoffmann
 ms.date: 01/24/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: f163b8feb906470f31a648bf09abf5647c5f1bab
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 9c0d87dfb4c432f9cff0f1172139dbcda6308275
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644989"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860666"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte
 
@@ -34,7 +34,7 @@ Nachdem das Gerät vorbereitet wurde, wird die Anmeldeseite darauf angezeigt. Di
 
 ![Produktionsausführungsoberfläche Anmeldeseite.](media/pfei-sign-in-page.png "Produktionsausführungsoberfläche Anmeldeseite")
 
-In den verbleibenden Abschnitten dieses Themas wird beschrieben, wie Arbeitskräfte mit der Schnittstelle interagieren.
+In den verbleibenden Abschnitten dieses Artikels wird beschrieben, wie Arbeitskräfte mit der Schnittstelle interagieren.
 
 ## <a name="all-jobs-tab"></a>Registerkarte alle Einzelvorgänge
 

@@ -1,6 +1,6 @@
 ---
 title: Richtlinien zur Lieferungskonsolidierung konfigurieren
-description: In diesem Thema wird erläutert, wie Sie Standard- und benutzerdefinierte Versandkonsolidierungsrichtlinien einrichten.
+description: In diesem Artikel wird erläutert, wie Sie Standard- und benutzerdefinierte Versandkonsolidierungsrichtlinien einrichten.
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 0a575648c0e6f5d0e3b9fb03ea6f47252837bf9c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: f793cb71ff52e49534e1f11b06132f2e20610d7c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672569"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845923"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Richtlinien zur Lieferungskonsolidierung konfigurieren
 
@@ -26,12 +26,12 @@ ms.locfileid: "8672569"
 
 Der Lieferungskonsolidierungsprozess, der Richtlinien zur Lieferungskonsolidierung verwendet, ermöglicht eine automatisierte Lieferungskonsolidierung während der automatisierten und manuellen Freigabe an das Lager. Nachdem Sie diese Funktion aktiviert haben, müssen Sie Ihre anfänglichen Richtlinien konfigurieren. Wenn keine Richtlinien konfiguriert sind, generiert jede Verkaufslinie eine separate Lieferung mit einer einzelnen Ladelinie.
 
-Die in diesem Thema vorgestellten Szenarien zeigen, wie Standard- und benutzerdefinierte Versandkonsolidierungsrichtlinien eingerichtet werden.
+Die in diesem Artikel vorgestellten Szenarien zeigen, wie Standard- und benutzerdefinierte Versandkonsolidierungsrichtlinien eingerichtet werden.
 
 ## <a name="turn-on-the-shipment-consolidation-policies-feature"></a>Richtlinienfunktion zur Lieferungskonsolidierung aktivieren
 
 > [!IMPORTANT]
-> Im [ersten Szenario](#scenario-1) dieses Themas wird zunächst ein Lager eingerichtet, sodass die frühere Funktion zur Lieferungskonsolidierung verwendet wird. Anschließend stellen Sie Richtlinien zur Lieferungskonsolidierung zur Verfügung. Auf diese Weise können Sie erfahren, wie das Upgradeszenario funktioniert. Wenn Sie vorhaben, eine Demodatenumgebung zu verwenden, um das erste Szenario zu durchlaufen, aktivieren Sie die Funktion nicht, bevor Sie das Szenario ausführen.
+> Im [ersten Szenario](#scenario-1) dieses Artikels wird zunächst ein Lager eingerichtet, sodass die frühere Funktion zur Lieferungskonsolidierung verwendet wird. Anschließend stellen Sie Richtlinien zur Lieferungskonsolidierung zur Verfügung. Auf diese Weise können Sie erfahren, wie das Upgradeszenario funktioniert. Wenn Sie vorhaben, eine Demodatenumgebung zu verwenden, um das erste Szenario zu durchlaufen, aktivieren Sie die Funktion nicht, bevor Sie das Szenario ausführen.
 
 Bevor Sie die Funktion *Richtlinien zur Lieferungskonsolidierung* verwenden können, müssen Sie sie in Ihrem System aktivieren. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
 
@@ -40,7 +40,7 @@ Bevor Sie die Funktion *Richtlinien zur Lieferungskonsolidierung* verwenden kön
 
 ## <a name="make-demo-data-available"></a>Demodaten zur Verfügung stellen
 
-Jedes Szenario in diesem Thema verweist auf Werte und Datensätze, die in den für Microsoft Dynamics 365 Supply Chain Management bereitgestellten Standarddemodaten enthalten sind. Wenn Sie die hier angegebenen Werte während der Übungen verwenden möchten, müssen Sie in einer Umgebung arbeiten, in der die Demodaten installiert sind, und die juristische Person auf **USMF** festlegen, bevor Sie beginnen.
+Jedes Szenario in diesem Artikel verweist auf Werte und Datensätze, die in den für Microsoft Dynamics 365 Supply Chain Management bereitgestellten Standarddemodaten enthalten sind. Wenn Sie die hier angegebenen Werte während der Übungen verwenden möchten, müssen Sie in einer Umgebung arbeiten, in der die Demodaten installiert sind, und die juristische Person auf **USMF** festlegen, bevor Sie beginnen.
 
 ## <a name="scenario-1-configure-default-shipment-consolidation-policies"></a><a name="scenario-1"></a>Szenario 1: Standardrichtlinien zur Lieferungskonsolidierung konfigurieren
 
@@ -339,7 +339,7 @@ Nachdem Sie alle Ihre Richtlinien erstellt haben, müssen Sie die Reihenfolge fe
 
 ## <a name="example-scenarios-of-how-to-use-shipment-consolidation-policies"></a><a name="example-scenarios"></a> Beispielszenarien für die Verwendung von Richtlinien zur Lieferungskonsolidierung
 
-Die folgenden Szenarien veranschaulichen, wie Sie die Versandkonsolidierungsrichtlinien verwenden können, die Sie beim Lesen dieses Themas erstellt haben. Jedes Szenarion führt Sie durch einen Lieferungskonsolidierungsprozess, der Lieferungskonsolidierungsrichtlinien bei automatisierter oder manueller Freigabe an das Lager verwendet:
+Die folgenden Szenarien veranschaulichen, wie Sie die Versandkonsolidierungsrichtlinien verwenden können, die Sie beim Lesen dieses Artikels erstellt haben. Jedes Szenarion führt Sie durch einen Lieferungskonsolidierungsprozess, der Lieferungskonsolidierungsrichtlinien bei automatisierter oder manueller Freigabe an das Lager verwendet:
 
 - Szenario 1: [Lieferungen mithilfe der automatischen Auftragsfreigabe konsolidieren, wenn sie im Lager freigegeben werden](../warehousing/consolidate-shipments-automatic.md)
 - Szenario 2: [Lieferungen konsolidieren, wenn die Richtlinie zur Lieferungskonsolidierung auf der Seite „Freigabe an Lager“ überschrieben wird](../warehousing/consolidate-shipments-release-to-warehouse-override.md)

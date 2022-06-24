@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f88dd1c23153d325709e28b056f902b555f05376
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c9e2ccbe613a4aab40a4f519bbb82a9175d46e72
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675374"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846212"
 ---
 # <a name="compare-item-prices-storage-report"></a>Bericht Lagerungsbericht mit Artikelpreisvergleich
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema erklärt, wie man einen Bericht **Lagerungsbericht mit Artikelpreisvergleich** ausführt und die Ausgabe digital zur Verfügung stellt, entweder als interaktive Seite in Dynamics 365 Supply Chain Management oder als exportiertes Dokument in einem von mehreren Formaten.
+Dieser Artikel erklärt, wie man einen Bericht **Lagerungsbericht mit Artikelpreisvergleich** ausführt und die Ausgabe digital zur Verfügung stellt, entweder als interaktive Seite in Dynamics 365 Supply Chain Management oder als exportiertes Dokument in einem von mehreren Formaten.
 
 Wenn Sie den Bericht in Ihrem Browser anzeigen, werden die Spalten und Summenbilanzen je nach Ihrem konfigurierten Layout dynamisch angepasst. Sie können die Ergebnisse sortieren, filtern, die Daten aufschlüsseln und vieles mehr.
 

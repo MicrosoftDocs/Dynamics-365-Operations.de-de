@@ -1,6 +1,6 @@
 ---
 title: Anlagenansicht
-description: In diesem Thema wird die Anlagenansicht in Asset Management beschrieben.
+description: In diesem Artikel wird die Anlagenansicht in Anlagenverwaltung beschrieben.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4265928fc5cb899a77eee6e5b9ff0a928efbe99c99ec7fe31eecffcb0f98f752
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a416dbea0bab8f6a506ae5cfbfc4feeae8edfe29
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765537"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882720"
 ---
 # <a name="asset-view"></a>Anlagenansicht
 
@@ -28,7 +28,7 @@ ms.locfileid: "6765537"
 
  
 
-In diesem Thema wird die Anlagenansicht in Asset Management beschrieben. Die Seite **Anlagenansicht** enthält aktive Anlagen und funktionale Standorte in einer Baumstruktur. Auf diese Weise erhalten Sie eine schnelle Übersicht über die Anlagenbeziehungen zu funktionalen Standorten. Zudem können Sie detaillierte Informationen über funktionale Standorte, Anlagen und die zugehörigen Stücklisten (BOMs) anzeigen. Darüber hinaus erhalten Sie einen schnellen Überblick über die aktiven Wartungsanfragen und Arbeitsaufträge, die einer Anlage zugeordnet sind.
+In diesem Artikel wird die Anlagenansicht in Anlagenverwaltung beschrieben. Die Seite **Anlagenansicht** enthält aktive Anlagen und funktionale Standorte in einer Baumstruktur. Auf diese Weise erhalten Sie eine schnelle Übersicht über die Anlagenbeziehungen zu funktionalen Standorten. Zudem können Sie detaillierte Informationen über funktionale Standorte, Anlagen und die zugehörigen Stücklisten (BOMs) anzeigen. Darüber hinaus erhalten Sie einen schnellen Überblick über die aktiven Wartungsanfragen und Arbeitsaufträge, die einer Anlage zugeordnet sind.
 
 1. Wählen Sie **Anlagenverwaltung** \> **Allgemeines** \> **Anlagen** \> **Anlagenansicht**.
 2. Um die Ansicht auf der Seite zu ändern, wählen Sie einen neuen Wert im Feld **Ansicht** aus.

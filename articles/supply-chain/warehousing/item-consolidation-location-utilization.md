@@ -1,6 +1,6 @@
 ---
 title: Artikelkonsolidierung – Auslastung von Lagerplatz
-description: Dieses Thema enthält Informationen zu Funktionen, mit denen Lagerverwalter die volumetrische Auslastung von Standorten im gesamten Lager problemlos anzeigen und filtern können. Manager können direkt auf der Seite „Positionskonsolidierung“ Standorte auswählen und Lagerumlagerungsarbeiten erstellen, um Artikel zu konsolidieren und so den Lagerraum besser zu nutzen.
+description: Dieser Artikel enthält Informationen zu Funktionen, mit denen Lagerverwalter die volumetrische Auslastung von Standorten im gesamten Lager problemlos anzeigen und filtern können. Manager können direkt auf der Seite „Positionskonsolidierung“ Standorte auswählen und Lagerumlagerungsarbeiten erstellen, um Artikel zu konsolidieren und so den Lagerraum besser zu nutzen.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: f858eae57b8b354076f5ed026a4b84ed680866b0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 63fd8b209cb73843aae7324c805c5d0eb83b4ca4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578607"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849183"
 ---
 # <a name="item-consolidation---location-utilization"></a>Artikelkonsolidierung – Auslastung von Lagerplatz
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Informationen zu Funktionen, mit denen Lagerverwalter die volumetrische Auslastung von Standorten im gesamten Lager problemlos anzeigen und filtern können. Manager können direkt auf der Seite **Positionskonsolidierung** Standorte auswählen und Lagerumlagerungsarbeiten erstellen, um Artikel zu konsolidieren und so den Lagerraum besser zu nutzen.
+Dieser Artikel enthält Informationen zu Funktionen, mit denen Lagerverwalter die volumetrische Auslastung von Standorten im gesamten Lager problemlos anzeigen und filtern können. Manager können direkt auf der Seite **Positionskonsolidierung** Standorte auswählen und Lagerumlagerungsarbeiten erstellen, um Artikel zu konsolidieren und so den Lagerraum besser zu nutzen.
 
 ## <a name="turn-on-the-features"></a>Aktivieren der Funktionen
 
-Bevor Sie die in diesem Thema beschriebenen Funktionen verwenden können, müssen Sie sie in Ihrem System aktivieren. Administratoren können im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktionen überprüfen und sie gegebenenfalls aktivieren. Aktivieren Sie beide folgenden Funktionen in der Reihenfolge, in der sie aufgeführt sind. (Beide Funktionen sind für das Modul **Lagerortverwaltung** vorgesehen.)
+Bevor Sie die in diesem Artikel beschriebenen Funktionen verwenden können, müssen Sie sie in Ihrem System aktivieren. Administratoren können im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktionen überprüfen und sie gegebenenfalls aktivieren. Aktivieren Sie beide folgenden Funktionen in der Reihenfolge, in der sie aufgeführt sind. (Beide Funktionen sind für das Modul **Lagerortverwaltung** vorgesehen.)
 
 1. Status des Lagerplatzes an einem Lagerort
 2. Nutzung von Lagerplatz für Positionskonsolidierung
@@ -51,7 +51,7 @@ In diesen Feldern erhalten Lagerverwalter einen besseren Überblick über den St
 
 ## <a name="set-up-item-consolidation-and-location-utilization"></a>Einrichten von Artikelkonsolidierung und Auslastung von Lagerplatz
 
-In diesem Abschnitt wird beschrieben, wie Sie Ihr System auf die Verwendung der Artikelkonsolidierung und Auslastung von Lagerplatz vorbereiten. Die Verfahren verwenden Beispielwerte aus den Standarddemodaten. Wenn Sie das Beispielszenario durcharbeiten möchten, das später in diesem Thema bereitgestellt wird, wählen Sie die juristische Person **USMF** aus (die die Standarddemodaten enthält) und erstellen Sie jeden Datensatz, der in diesem Abschnitt beschrieben wird. Wenn Sie das Beispielszenario nicht durcharbeiten möchten, können die hier angegebenen Werte als Beispiele für die Einrichtungstypen betrachtet werden, die Sie zur Verwendung der Funktionen ausführen müssen.
+In diesem Abschnitt wird beschrieben, wie Sie Ihr System auf die Verwendung der Artikelkonsolidierung und Auslastung von Lagerplatz vorbereiten. Die Verfahren verwenden Beispielwerte aus den Standarddemodaten. Wenn Sie das Beispielszenario durcharbeiten möchten, das später in diesem Artikel bereitgestellt wird, wählen Sie die juristische Person **USMF** aus (die die Standarddemodaten enthält) und erstellen Sie jeden Datensatz, der in diesem Abschnitt beschrieben wird. Wenn Sie das Beispielszenario nicht durcharbeiten möchten, können die hier angegebenen Werte als Beispiele für die Einrichtungstypen betrachtet werden, die Sie zur Verwendung der Funktionen ausführen müssen.
 
 ### <a name="released-product"></a>Freigegebenes Produkt
 

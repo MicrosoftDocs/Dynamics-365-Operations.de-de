@@ -1,6 +1,6 @@
 ---
-title: Serienetiketten neu drucken und stornieren
-description: In diesem Thema wird erläutert, wie vorhandene Serienetiketten storniert und neu gedruckt werden.
+title: Serienetiketten neu drucken und Zyklusbeschriftungen stornieren
+description: In diesem Artikel wird erläutert, wie vorhandene Serienetiketten storniert und neu gedruckt werden.
 author: perlynne
 ms.date: 07/09/2020
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 052c6632d1c6c6b1f357d4066ca8b419698cae62
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f9f057d9985fb8431ec7c9ced23f2cd3c476570d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572336"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871832"
 ---
-# <a name="reprint-and-void-wave-labels"></a>Serienetiketten neu drucken und stornieren
+# <a name="reprint-and-void-wave-labels"></a>Serienetiketten neu drucken und Zyklusbeschriftungen stornieren
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie Etiketten verwalten, die durch die Wellenverarbeitung generiert werden. (Eine ausführliche Beschreibung und Konfigurationsanweisungen finden Sie unter [Konfigurieren des Serienetikettendrucks](../warehousing/configure-wave-label-printing.md).)
+In diesem Artikel wird erläutert, wie Sie Etiketten verwalten, die durch die Wellenverarbeitung generiert werden. (Eine ausführliche Beschreibung und Konfigurationsanweisungen finden Sie unter [Konfigurieren des Serienetikettendrucks](../warehousing/configure-wave-label-printing.md).)
 
 Sie können Serienetiketten jederzeit erneut drucken. Beispielsweise müssen Sie möglicherweise ein einzelnes Etikett drucken, wenn ein vorhandenes Etikett verloren gegangen oder beschädigt ist. Alternativ muss ein Lagerarbeiter oder Vorgesetzter möglicherweise eine ganze Rolle Etiketten erneut drucken, wenn sich die Anzahl und/oder Zusammensetzung einer ganzen Reihe von Serienetiketten geändert hat (z. B. aufgrund von Lagermangel oder anderen Gründen). Selbst wenn sich nur die Anzahl der Kartons geändert hat, muss häufig die gesamte Rolle nachgedruckt werden, um die Gesamtzahl im Abschnitt „Karton X von Y“ jedes Etiketts genau zu halten.
 
@@ -32,10 +32,10 @@ Die Funktion zum Nachdrucken von Serienetiketten unterstützt die folgenden Funk
 - Etiketten stornieren und gleichtzeitig neu drucken. (Die Möglichkeit, Etiketten zu stornieren, ist beispielsweise in Szenarien von Entnahme mit unzureichender Menge eingebettet.)
 - Serienetikettenverlauf löschen.
 
-In diesem Thema wird eine Sammlung von Szenarien vorgestellt, die anhand von Beispielen zeigen, wie mit der Funktion zum Nachdrucken von Serienetiketten gearbeitet wird.
+In diesem Artikel wird eine Sammlung von Szenarien vorgestellt, die anhand von Beispielen zeigen, wie mit der Funktion zum Nachdrucken von Serienetiketten gearbeitet wird.
 
 > [!IMPORTANT]
-> Um die in diesem Thema vorgestellten Szenarien durchzuarbeiten, müssen Sie zuerst die relevanten Druckfunktionen für Serienetiketten aktivieren und konfigurieren, wie in [Konfigurieren des Serienetikettendrucks](../warehousing/configure-wave-label-printing.md) beschrieben. Für einige der Szenarien in diesem Thema müssen Sie zunächst die Szenarien in diesem Thema durcharbeiten, um die erforderlichen Beispieldaten zu generieren.
+> Um die in diesem Artikel vorgestellten Szenarien durchzuarbeiten, müssen Sie zuerst die relevanten Druckfunktionen für Serienetiketten aktivieren und konfigurieren, wie in [Konfigurieren des Serienetikettendrucks](../warehousing/configure-wave-label-printing.md) beschrieben. Für einige der Szenarien in diesem Artikel müssen Sie zunächst die Szenarien in diesem Artikel durcharbeiten, um die erforderlichen Beispieldaten zu generieren.
 
 ## <a name="scenario-1-reprint-labels-from-the-web-client"></a>Szenario 1: Etiketten aus dem Webclient erneut drucken
 

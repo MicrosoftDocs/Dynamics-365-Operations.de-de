@@ -1,6 +1,6 @@
 ---
 title: Verbessern der Leistung des Planungsmoduls
-description: Dieses Thema enthält Informationen zum Planungsmodul und zur Verbesserung der Leistung.
+description: Dieser Artikel enthält Informationen zum Planungsmodul und zur Verbesserung der Leistung.
 author: t-benebo
 ms.date: 09/03/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 972e566153b7423398b2ad4a4e70b264f02c40cd
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: f5ece3672bba352e02808248c91366539423d682
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469005"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854296"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Verbessern der Leistung des Planungsmoduls
 
@@ -29,7 +29,7 @@ ms.locfileid: "8469005"
 
 Das Ressourcenplanungsmodul wird verwendet, um Arbeitspläne für geplante und freigegebene Produktionsaufträge zu planen. Das Modul wurde ursprünglich als Teil von Dynamics AX 2012 veröffentlicht und hat seit seiner Veröffentlichung mehrere Verbesserungen durchlaufen.
 
-Das [Feinterminierungsproblem](https://en.wikipedia.org/wiki/Job_shop_scheduling) ist ein äußerst komplexes kombinatorisches Problem, bei dem die Lösungszeit exponential mit der Anzahl der Entscheidungsvariablen wächst. Oft richten Kunden Produktionsarbeitspläne und zugehörige Daten so ein, dass ein Planungsarbeitsplan entsteht, das selbst auf modernster Hardware nicht in angemessener Zeit gelöst werden kann. Dieses Thema hilft Ihnen dabei, das Planungsmodul zu verstehen und zu verstehen, wie ein bestimmtes Setup die Leistung beeinflussen kann.
+Das [Feinterminierungsproblem](https://en.wikipedia.org/wiki/Job_shop_scheduling) ist ein äußerst komplexes kombinatorisches Problem, bei dem die Lösungszeit exponential mit der Anzahl der Entscheidungsvariablen wächst. Oft richten Kunden Produktionsarbeitspläne und zugehörige Daten so ein, dass ein Planungsarbeitsplan entsteht, das selbst auf modernster Hardware nicht in angemessener Zeit gelöst werden kann. Dieser Artikel hilft Ihnen dabei, das Planungsmodul zu verstehen und zu verstehen, wie ein bestimmtes Setup die Leistung beeinflussen kann.
 
 Wenn es darum geht, die Leistung der Planung zu verbessern, empfehlen allgemeine Richtlinien, die Komplexität des Problems zu reduzieren, das das Modul lösen muss. Einige der Hauptfaktoren, die die Leistung beeinflussen können, sind:
 

@@ -1,6 +1,6 @@
 ---
 title: Arbeitsrichtlinien
-description: In diesem Thema wird erläutert, wie Sie Arbeitsrichtlinien einrichten.
+description: In diesem Artikel wird erläutert, wie Sie Arbeitsrichtlinien einrichten.
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 1d4ee3f1bffaf00c20758f6a3f399451d3122291
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 7637ef908ffa6e79f81e4ecfb8afac4e3e3fed26
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571160"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855847"
 ---
 # <a name="work-policies"></a>Arbeitsrichtlinien
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie das System und die Warehouse Management Mobile App so einrichten, dass sie Arbeitsrichtlinien unterstützen. Mit dieser Funktion können Sie schnell Bestand registrieren, ohne Einlagerungsarbeiten zu erstellen, wenn Sie Kauf- oder Umlagerungsaufträge erhalten oder wenn Sie Fertigungsprozesse abschließen. Dieses Thema enthält allgemeine Informationen. Ausführliche Informationen zum Kennzeichenempfang finden Sie unter [Kennzeichenempfang über die Warehouse Management Mobile App](warehousing-mobile-device-app-license-plate-receiving.md).
+In diesem Artikel wird erläutert, wie Sie das System und die Warehouse Management Mobile App so einrichten, dass sie Arbeitsrichtlinien unterstützen. Mit dieser Funktion können Sie schnell Bestand registrieren, ohne Einlagerungsarbeiten zu erstellen, wenn Sie Kauf- oder Umlagerungsaufträge erhalten oder wenn Sie Fertigungsprozesse abschließen. Dieser Artikel enthält allgemeine Informationen. Ausführliche Informationen zum Kennzeichenempfang finden Sie unter [Kennzeichenempfang über die Warehouse Management Mobile App](warehousing-mobile-device-app-license-plate-receiving.md).
 
 Eine Arbeitsrichtlinie steuert, ob Lagerortarbeit erstellt wird, wenn ein hergestellter Artikel als fertig gemeldet wird oder wenn Waren über die Warehouse Management Mobile App empfangen werden. Sie richten jede Arbeitsrichtlinie ein, indem Sie die Bedingungen definieren, unter denen sie gilt: die Arbeitsauftragstypen und -prozesse, den Lagerort und (optional) die Produkte. Zum Beispiel muss eine Bestellung für Produkt *A0001* am Lagerplatz *RECV* im Lagerort *24* empfangen werden. Später wird das Produkt in einem anderen Prozess am Lagerplatz *RECV* verbraucht. In diesem Fall können Sie eine Arbeitsrichtlinie einrichten, um zu verhindern, dass Einlagerungsarbeiten erstellt werden, wenn ein Mitarbeiter Produkt *A0001* am Lagerplatz *RECV* als erhalten meldet.
 
@@ -35,7 +35,7 @@ Eine Arbeitsrichtlinie steuert, ob Lagerortarbeit erstellt wird, wenn ein herges
 
 ## <a name="activate-the-features-in-your-system"></a>Funktionen im System aktivieren
 
-Aktivieren Sie die folgenden beiden Funktionen in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um alle in diesem Thema beschriebenen Funktionen in Ihrem System verfügbar zu machen.
+Aktivieren Sie die folgenden beiden Funktionen in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um alle in diesem Artikel beschriebenen Funktionen in Ihrem System verfügbar zu machen.
 
 - Kennzeichenempfang und Verbesserungen
 - Arbeitsrichtlinienverbesserungen für eingehende Arbeit

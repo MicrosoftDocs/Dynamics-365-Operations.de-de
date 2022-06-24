@@ -1,6 +1,6 @@
 ---
 title: Geschäftspartnerbenutzer auf B2B-E-Commerce-Websites verwalten
-description: In diesem Thema wird beschrieben, wie Sie Geschäftspartnerbenutzer auf Business-to-Business(B2B)-E-Commerce-Websites von Microsoft Dynamics 365 Commerce hinzufügen, Löschen und bearbeiten können.
+description: In diesem Artikel wird beschrieben, wie Sie Geschäftspartnerbenutzer auf Business-to-Business(B2B)-E-Commerce-Websites von Microsoft Dynamics 365 Commerce hinzufügen, Löschen und bearbeiten können.
 author: josaw1
 ms.date: 04/19/2022
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ef8ae583f18048fc6a36adf38ee7be0fb5b02fcd
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4a3d1c7bf7e7ea545590315d9e185fa525b5d5e3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686323"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860294"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Geschäftspartnerbenutzer auf B2B-E-Commerce-Websites verwalten
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Geschäftspartnerbenutzer auf Business-to-Business(B2B)-E-Commerce-Websites von Microsoft Dynamics 365 Commerce hinzufügen, Löschen und bearbeiten können.
+In diesem Artikel wird beschrieben, wie Sie Geschäftspartnerbenutzer auf Business-to-Business(B2B)-E-Commerce-Websites von Microsoft Dynamics 365 Commerce hinzufügen, Löschen und bearbeiten können.
 
 > [!NOTE]
-> - Das Thema [B2B-Geschäftspartner mithilfe von Kundenhierarchien verstehen](partners-customer-hierarchies.md) ist für dieses Dokument Voraussetzung.
+> - Der Artikel [B2B-Geschäftspartner mithilfe von Kundenhierarchien verstehen](partners-customer-hierarchies.md) ist für dieses Dokument Voraussetzung.
 > - Stellen Sie sicher, dass Sie die Dokumenttypenentität in der Commerce-Zentralverwaltung initialisieren, indem Sie das **Dokumenttypen**-Formular unter **Organisationsverwaltung \> Dokumentverwaltung \> Dokumenttypen** öffnen.
 
 Für B2B-E-Commerce-Websites müssen sich Organisationen registrieren, um Geschäftspartner zu werden. Nachdem eine Organisation Registrierungsdaten an eine B2B-E-Commerce-Website übermittelt hat, durchläuft die Registrierungsanforderung einen Qualifizierungsprozess. Wenn die Organisation erfolgreich qualifiziert ist, wird sie als Geschäftspartner eingebunden.
@@ -121,7 +121,7 @@ Führen Sie diese Schritte aus, um ein Onboarding von Geschäftspartnern und Ben
 
 ## <a name="additional-information"></a>Zusätzliche Informationen
 
-- Alle in diesem Thema genannten Aufträge können so konfiguriert werden, dass sie nach einem Zeitplan im Stapelformat ausgeführt werden. Es wird erwartet, dass Geschäftspartner Stapelaufträge nach Bedarf konfigurieren.
+- Alle in diesem Artikel genannten Aufträge können so konfiguriert werden, dass sie nach einem Zeitplan im Stapelformat ausgeführt werden. Es wird erwartet, dass Geschäftspartner Stapelaufträge nach Bedarf konfigurieren.
 - Derzeit kann nur ein Benutzer/Kundendatensatz als Administratorbenutzer festgelegt werden, und diese Rolle kann nur in der Commerce-Zentralverwaltung geändert werden. Es gibt keine Unterstützung für Self-Service-Funktionen, mit denen Geschäftspartner mehrere Administratoren bestimmen oder Administratoren von B2B-E-Commerce-Websites wechseln können.
 - Obwohl Ausgabenlimits für Benutzer definiert werden können, wurde die Durchsetzung von Ausgabenlimits während des Auftragserfassungsprozesses noch nicht implementiert.
 - Die gesamte Geschäftslogik und Validierung für die Benutzererfahrung auf einer B2B-E-Commerce-Website basiert auf der Konfiguration des Kundendatensatzes, der dem Benutzer in der Commerce-Zentralverwaltung zugeordnet ist.

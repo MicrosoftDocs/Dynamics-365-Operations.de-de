@@ -1,6 +1,6 @@
 ---
 title: In der Planungsoptimierung verwendete Datums- und Zeitparameter
-description: Dieses Thema enthält Informationen zu den Datums- und Uhrzeitparametern, die Planning Optimization während des Betriebs verwendet.
+description: Dieser Artikel enthält Informationen zu den Datums- und Uhrzeitparametern, die Planning Optimization während des Betriebs verwendet.
 author: t-benebo
 ms.date: 09/21/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 0708404f286253449e0400fc65680e903f6d1e9b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 807834bf5cd062ed24e5e3f3512d8389717a2d39
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468831"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885898"
 ---
 # <a name="date-and-time-parameters-used-by-planning-optimization"></a>In der Planungsoptimierung verwendete Datums- und Zeitparameter
 
 [!include [banner](../../includes/banner.md)]
 
-Dieses Thema enthält Informationen zu den Datums- und Uhrzeitparametern, die Planning Optimization während des Betriebs verwendet.
+Dieser Artikel enthält Informationen zu den Datums- und Uhrzeitparametern, die Planning Optimization während des Betriebs verwendet.
 
 Während die integrierte Masterplanungs-Engine in allen Berechnungen Transaktionsdaten verwendet, arbeitet die Planungsoptimierung mit Datums- und Uhrzeitwerten, die in Datumsangaben umgewandelt werden. Dieses unterschiedliche Verhalten kann zu Situationen führen, in denen beispielsweise Prognosetransaktionen, die am Tag der Ausführung der Masterplanung um Mitternacht erstellt werden, nicht berücksichtigt werden, da die Planungsoptimierung davon ausgeht, dass sie vor dem aktuellen Datum erstellt wurden.
 

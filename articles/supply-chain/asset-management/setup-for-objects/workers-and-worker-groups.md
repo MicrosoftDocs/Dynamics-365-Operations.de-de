@@ -1,6 +1,6 @@
 ---
 title: Wartungsarbeiter und Arbeitskräftegruppen
-description: In diesem Thema werden Wartungsarbeiter und Arbeitskräftegruppen in Asset Management erläutert.
+description: In diesem Artikel werden Wartungsarbeiter und Arbeitskräftegruppen in Anlagenverwaltung erläutert.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e976a28349a4bc7a371d23eb4df724e0ffd36a0553aec2deeb2ff07d0a63579
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3a24c880ee76af1490824aef07976b998d9225d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750123"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860898"
 ---
 # <a name="maintenance-workers-and-worker-groups"></a>Wartungsarbeiter und Arbeitskräftegruppen
 
@@ -28,7 +28,7 @@ ms.locfileid: "6750123"
 
  
 
-In diesem Thema werden Wartungsarbeiter und Arbeitskräftegruppen in Asset Management erläutert. In Asset Management können Sie Wartungsarbeiter mit funktionalen Standorten verbinden. (Weitere Informationen zu funktionalen Standorten finden Sie unter [Funktionale Standorte erstellen](../functional-locations/create-functional-locations.md).) Diese Funktionen sind möglicherweise hilfreich, wenn Sie beispielsweise einen Wartungsauftrag für eine Maschine planen, die sich am funktionalen Standort 01 befindet, und Sie Wartungsarbeiter vom gleichen funktionalen Standort zuordnen möchten, um den Auftrag auszuführen.
+In diesem Artikel werden Wartungsarbeiter und Arbeitskräftegruppen in Anlagenverwaltung erläutert. In Asset Management können Sie Wartungsarbeiter mit funktionalen Standorten verbinden. (Weitere Informationen zu funktionalen Standorten finden Sie unter [Funktionale Standorte erstellen](../functional-locations/create-functional-locations.md).) Diese Funktionen sind möglicherweise hilfreich, wenn Sie beispielsweise einen Wartungsauftrag für eine Maschine planen, die sich am funktionalen Standort 01 befindet, und Sie Wartungsarbeiter vom gleichen funktionalen Standort zuordnen möchten, um den Auftrag auszuführen.
 
 Sie können auch Wartungsarbeitergruppen erstellen und diesen Wartungsarbeiter zuordnen. Diese Funktionalität ist hilfreich, wenn Sie eine einfache Arbeitsauftragsplanung durchführen und eine Gruppe von Wartungsarbeitern für einen Arbeitsauftrag einplanen möchten. Sie können Wartungsarbeiter und Wartungsarbeitergruppen verwenden, um bevorzugte Wartungsarbeiter und zuständige Wartungsarbeiter einzurichten. 
 

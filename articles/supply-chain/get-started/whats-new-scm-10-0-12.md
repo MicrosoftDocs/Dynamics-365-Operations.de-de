@@ -1,6 +1,6 @@
 ---
 title: Neuerungen und Änderungen in Dynamics 365 Supply Chain Management 10.0.12 (August 2020)
-description: In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Supply Chain Management 10.0.12 neu oder geändert wurden.
+description: Dieser Artikel beschreibt Funktionen, die entweder neu oder geändert in Dynamics 365 Supply Chain Management 10.0.12 sind.
 author: kamaybac
 ms.date: 05/29/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 89959095eb64c66e92c9d93d0a3f4caabe7d14bf7121683a7d35d3719a3e36ad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 44b56a59c3b6bb123151988c403382d7c57efd29
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728602"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845024"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10012-august-2020"></a>Neuerungen und Änderungen in Dynamics 365 Supply Chain Management 10.0.12 (August 2020)
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die Funktionen aufgeführt, die in Microsoft Dynamics 365 Supply Chain Management 10.0.12 entweder neu oder geändert sind. Diese Version hat die Build-Nummer 10.0.507 und ist wie folgt verfügbar:
+In diesem Artikel werden die Funktionen aufgeführt, die in Microsoft Dynamics 365 Supply Chain Management 10.0.12 entweder neu oder geändert sind. Diese Version hat die Build-Nummer 10.0.507 und ist wie folgt verfügbar:
 
 - **Veröffentlichung der Vorschau:** Mai 2020
 - **Allgemeine Verfügbarkeit (Selbstaktualisierung):** Juli 2020
@@ -47,7 +47,7 @@ Die folgenden Funktionen sind in diesem Release enthalten. Die Funktionen-Titel 
 
 - [Verbesserungen beim Kennzeichenempfang für die Warehouse-App (fortgesetzt)](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - Weitere Informationen finden Sie unter [Kennzeichenempfang über die Warehouse Management Mobile App](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 
-- [Massenbereitstellung für die Warehouse Mobile App](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - Weitere Informationen finden Sie unter [Installieren und Verbinden der Warehouse Management Mobile App](../warehousing/install-configure-warehouse-management-app.md).
+- [Massenbereitstellung für Warehouse mobile app](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - Weitere Informationen finden Sie unter [Installieren und Verbinden der Warehouse Management Mobile App](../warehousing/install-configure-warehouse-management-app.md).
 
 - [Maximale Ausführungszeit für den Einzelvorgang „Bereinigen der Lagerbestandseinträge für die Lagerortverwaltung“](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> - Weitere Informationen finden Sie unter [Einzelvorgang zur Eingangsbereinigung bei der Lagerortverwaltung](../warehousing/onhand-cleanup.md).
 
@@ -55,9 +55,9 @@ Die folgenden Funktionen sind in diesem Release enthalten. Die Funktionen-Titel 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformupdate für Finance and Operations Apps
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformupdates für Apps für Finanzen und Betrieb
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.12 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattform-Updates für Version 10.0.12 von Finance and Operations Apps (August 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.12 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattform-Updates für die Version 10.0.12 der Finanz- und Betriebs-Apps (August 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -71,12 +71,12 @@ Testen Sie [Dynamics 365: 2020 Release Welle 1 Plan](/dynamics365-release-plan/2
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Entfernte und veraltete Supply Chain Management-Funktionen
 
-Das Thema [Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beschreibt Funktionen, die für das Supply Chain Management entfernt oder veraltet waren oder werden sollen.
+Der Artikel [Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beschreibt Funktionen, die für das Supply Chain Management entfernt oder veraltet waren oder werden sollen.
 
 - Eine Funktion *entfernt* ist nicht mehr im Produkt verfügbar.
 - Eine Funktion *veraltet* wird nicht aktiv entwickelt und könnte bei einem zukünftigen Update entfernt werden.
 
-Bevor eine Funktion aus dem Produkt entfernt wird, wird der Verfallshinweis im Thema [Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 Monate vor dem Entfernen angezeigt.
+Bevor eine Funktion aus dem Produkt entfernt wird, wird der Verfallshinweis im Artikel [Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 Monate vor dem Entfernen angezeigt.
 
 Bei Änderungen, die sich nur auf die Kompilierungszeit auswirken, aber binär mit Sandbox- und Produktionsumgebungen kompatibel sind, beträgt die Entfernungszeit weniger als 12 Monate. In der Regel handelt es sich hierbei um Funktionsaktualisierungen, die am Compiler vorgenommen werden müssen.
 

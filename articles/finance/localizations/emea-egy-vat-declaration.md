@@ -1,6 +1,6 @@
 ---
 title: MwSt.-Erklärung für Ägypten
-description: In diesem Thema wird erläutert, wie Sie das MwSt.-Rückgabeformular für Ägypten konfigurieren und generieren.
+description: In diesem Artikel wird erläutert, wie Sie das MwSt.-Rückgabeformular für Ägypten konfigurieren und generieren.
 author: sndray
 ms.date: 06/03/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a67c6e00b94d49b3eb279416407f603923e53b2e
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 1d5788b2328a49f4725a6c689e29a7e784032fae
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403947"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870034"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>MwSt.-Erklärung für Ägypten (EG-00002)
 
@@ -26,7 +26,7 @@ ms.locfileid: "7403947"
 
 [!include[banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie das MwSt.-Rückgabeformular sowie Verkaufs- und Kaufbücher für juristische Personen in Ägypten einrichten und generieren.
+In diesem Artikel wird erläutert, wie Sie das MwSt.-Rückgabeformular sowie Verkaufs- und Kaufbücher für juristische Personen in Ägypten einrichten und generieren.
 
 Das MwSt.-Rückgabeformular für Ägypten ist das offizielle Dokument, in dem der gesamte fällige Ausgangssteuerbetrag, der gesamte erstattungsfähige Vorsteuerbetrag und die damit verbundene Steuerschuld zusammengefasst sind. Das Formular wird für alle Arten von Steuerzahlern verwendet und sollte manuell über das Steuerbehördenportal ausgefüllt werden. Das MwSt.-Rückgabeformular wird üblicherweise als Umsatzsteuererklärung bezeichnet.
 

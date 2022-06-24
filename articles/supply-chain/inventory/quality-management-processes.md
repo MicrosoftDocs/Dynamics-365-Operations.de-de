@@ -1,6 +1,6 @@
 ---
 title: Übersicht Qualitätsmanagement und Qualitätsmangel
-description: Dieses Thema stellt die Funktionen für das Qualitäts- und Qualitätsmangel-Management in Microsoft Dynamics 365 Supply Chain Management vor und erklärt, wie sie zur Verbesserung der Produktqualität in Ihrer Lieferkette beitragen können.
+description: Dieser Artikel stellt die Funktionen für das Qualitäts- und Qualitätsmangel-Management in Microsoft Dynamics 365 Supply Chain Management vor und erklärt, wie sie zur Verbesserung der Produktqualität in Ihrer Lieferkette beitragen können.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bb4bcb7f554c22b4e1ab1b41867bd2d3dcca4d4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 510dee78f6fed02e6511aedad00fcb1b15195470
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985508"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907492"
 ---
 # <a name="quality-and-nonconformance-management-overview"></a>Übersicht Qualitätsmanagement und Qualitätsmangel
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema stellt die Funktionen für das Qualitäts- und Qualitätsmangel-Management in Microsoft Dynamics 365 Supply Chain Management vor und erklärt, wie sie zur Verbesserung der Produktqualität in Ihrer Lieferkette beitragen können.
+Dieser Artikel stellt die Funktionen für das Qualitäts- und Qualitätsmangel-Management in Microsoft Dynamics 365 Supply Chain Management vor und erklärt, wie sie zur Verbesserung der Produktqualität in Ihrer Lieferkette beitragen können.
 
 Die Qualitätssicherung umfasst das Testen von Produkten sowie die Verwaltung von Material, das die Qualitätsanforderungen nicht erfüllt. Qualitätssicherungsprozesse helfen, ein hohes Maß an Produktqualität in der Lieferkette sicherzustellen. Diese Prozesse erleichtern außerdem, Lieferkettenprozesse zu optimieren und die Kundenzufriedenheit zu steigern. Qualitätsmanagement können Ihnen dabei helfen, Abfertigungszeiten, wenn Sie fehlerhafte Produkte zu tun haben, unabhängig von Bezugspunkt dieser Produkte zu verwalten. Sie können Diagnoseergebnisse zu den Korrekturaufgaben verknüpfen. Das System kann Aufgaben planen, Probleme korrigiert und damit von Wiederholungen, dieser Probleme zukünftig zu verhindern. Qualitätsmanagement kann auch Probleme (einschließlich) durch interne Probleme Problemtyp, nachverfolgen und Lösungen Sie können ermitteln, wie entweder kurzzeitig oder langfristig. Die Statistiken zu Key Performance Indicators (KPIs) geben Einblick in Qualitätsmangelprobleme, die zuvor aufgetreten sind, sowie in die Lösungen, die angewendet wurden, um sie zu korrigieren. Sie können Vergangenheitsdaten verwenden, um die Effizienz der Qualitätsmaßnahmen besser zu prüfen, die zuvor ausgeführt wurden und geeignete Maßnahmen in der Zukunft zu bestimmen.
 

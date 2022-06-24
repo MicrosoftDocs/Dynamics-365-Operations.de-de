@@ -1,6 +1,6 @@
 ---
-title: Dokumentstatus und -Lebenszyklus
-description: In diesem Thema werden die verschiedenen Dokumentstatus von Seitenelementen in Microsoft Dynamics 365 Commerce behandelt.
+title: Dokumentstatus und -lebenszyklus
+description: In diesem Artikel werden die verschiedenen Dokumentstatus von Seitenelementen in Microsoft Dynamics 365 Commerce behandelt.
 author: phinneyridge
 ms.date: 10/09/2020
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ad8547fe6b36caf75ce78cb09fb2caf901c63afe43fa4755bb9e5c69427829d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 04836ecf80fc86ab6abb96e4255779c8c03988d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727580"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909457"
 ---
 # <a name="document-states-and-lifecycle"></a>Dokumentstatus und -lebenszyklus
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden die verschiedenen Dokumentstatus von Seitenelementen in Microsoft Dynamics 365 Commerce behandelt.
+In diesem Artikel werden die verschiedenen Dokumentstatus von Seitenelementen in Microsoft Dynamics 365 Commerce behandelt.
 
 ## <a name="document-state-descriptions"></a>Dokumentstatusbeschreibung
 
-Die [Seitenelemente](page-elements-overview.md) der Themen führen verschiedene Dokumente im Content Management System (CMS) auf. Diese Dokumenttypen können mehrere Status im Erstellungstool haben. Die Dokumenttypen helfen, Datenkonflikte zu verhindern und Versionskontrollen zu erzwingen. Sie bestimmen, wer die Dokumente ändern kann, wenn die Dokumente geändert werden können und wenn Änderungen von anderen Personen angezeigt werden können.
+Die [Seitenelemente](page-elements-overview.md) der Artikel führen verschiedene Dokumente im Content Management System (CMS) auf. Diese Dokumenttypen können mehrere Status im Erstellungstool haben. Die Dokumenttypen helfen, Datenkonflikte zu verhindern und Versionskontrollen zu erzwingen. Sie bestimmen, wer die Dokumente ändern kann, wenn die Dokumente geändert werden können und wenn Änderungen von anderen Personen angezeigt werden können.
 
 Die folgende Tabelle enthält die möglichen Dokumentstatus von Seitenelementen in Commerce.
 

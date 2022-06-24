@@ -1,6 +1,6 @@
 ---
 title: Berechnungen für Produktkonfigurationsmodelle, FAQ
-description: In diesem Thema werden die Berechnungen für Produktkonfigurationsmodelle beschrieben und erklärt, wie Berechnungen zusammen mit Einschränkungen verwendet werden.
+description: In diesem Artikel werden die Berechnungen für Produktkonfigurationsmodelle beschrieben und erklärt, wie Berechnungen zusammen mit Einschränkungen verwendet werden.
 author: t-benebo
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9463fac363f6bb25c1bd2afebe5737e47aa8b3cf
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 593f6a8e28c789a378515ddc8e4163c331442e8b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570800"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890943"
 ---
 # <a name="calculations-for-product-configuration-models-faq"></a>Berechnungen für Produktkonfigurationsmodelle, FAQ
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die Berechnungen für Produktkonfigurationsmodelle beschrieben und erklärt, wie Berechnungen zusammen mit Einschränkungen verwendet werden.
+In diesem Artikel werden die Berechnungen für Produktkonfigurationsmodelle beschrieben und erklärt, wie Berechnungen zusammen mit Einschränkungen verwendet werden.
 
 Berechnungen können für Arithmetik oder logische Operationen verwendet werden. Sie ergänzen Ausdruckseinschränkungen in Produktkonfigurationsmodellen. Sie können Berechnungen auf der Seite **Details zum einschränkungsbasierten Produktkonfigurationsmodell** definieren und Ausdrücke für Berechnungen im Ausdrucks-Editor dann aufbauen. Weitere Informationen finden Sie unter Berechnungen erstellen.
 

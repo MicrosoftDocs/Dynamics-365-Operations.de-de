@@ -1,6 +1,6 @@
 ---
-title: Lebenszyklusstatus funktionaler Standorte
-description: In diesem Thema wird beschrieben, wie funktionale Standortzustände und Lebenszyklusmodelle in Asset Management eingerichtet werden.
+title: Lebenszyklusstatus für funktionale Standorte
+description: In diesem Artikel wird beschrieben, wie funktionale Standortzustände und Lebenszyklusmodelle in Anlagenverwaltung eingerichtet werden.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a9893ad497bbe442d74f5212153fa466d2c85eb
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ae56c2b734339343b134be95abe0ce40b70c8a0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360969"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8934661"
 ---
-# <a name="functional-location-lifecycle-states"></a>Lebenszyklusstatus funktionaler Standorte
+# <a name="functional-location-lifecycle-states"></a>Lebenszyklusstatus für funktionale Standorte
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-In diesem Thema wird beschrieben, wie funktionale Standort-Lebenszyklusstatus und Lebenszyklusmodelle in Asset Management eingerichtet werden. Funktionale Standort-Lebenszyklusstatus definieren die Status, die funktionale Standorte durchlaufen können, zum Beispiel „erstellt“, „aktiv“ und „beendet“. Sie können alle funktionalen Standorte unabhängig von deren Lebenszyklusstatus auf der Listenseite **Alle funktionalen Standorte** anzeigen. Sie können den Status eines funktionalen Standorts ändern, indem Sie ihn auf der Listenseite **Alle funktionalen Standorte** auswählen und dann **Status des funktionalen Standorts aktualisieren** auswählen.
+In diesem Artikel wird beschrieben, wie funktionale Standort-Lebenszyklusstatus und Lebenszyklusmodelle in Anlagenverwaltung eingerichtet werden. Funktionale Standort-Lebenszyklusstatus definieren die Status, die funktionale Standorte durchlaufen können, zum Beispiel „erstellt“, „aktiv“ und „beendet“. Sie können alle funktionalen Standorte unabhängig von deren Lebenszyklusstatus auf der Listenseite **Alle funktionalen Standorte** anzeigen. Sie können den Status eines funktionalen Standorts ändern, indem Sie ihn auf der Listenseite **Alle funktionalen Standorte** auswählen und dann **Status des funktionalen Standorts aktualisieren** auswählen.
 
 ## <a name="set-up-functional-location-lifecycle-states"></a>Lebenszyklusstatus für funktionale Standorte einrichten
 
@@ -39,6 +39,7 @@ In diesem Thema wird beschrieben, wie funktionale Standort-Lebenszyklusstatus un
 5. Wählen Sie auf „Ja“ für die Umschaltfläche **Anlagen erstellen** aus, wenn es möglich sein soll, automatisch eine Anlage mit dem gleichen Namen wie dem des funktionalen Standorts zu erstellen und sie in diesem Status am funktionalen Standort zu installieren.  
 >[!NOTE]
 >Diese Umschaltfläche bezieht sich auf das Feld **Anlagentyp** im Inforegister **Allgemein** im Formular **Funktionaler Standort** (**Anlagenverwaltung** > **Einstellungen** > **Funktionale Standorte** > **Funktionale Standorttypen**).
+
 6. Wählen Sie „Ja“ für die Umschaltfläche **Standort umbenennen**, wenn es möglich sein soll, den Namen des funktionalen Standorts in diesem Status zu ändern.
 7. Wählen Sie „Ja“ für die Umschaltfläche **Neue untergeordnete Standorte**, wenn es möglich sein soll, dem funktionalen Standort in diesem Status neue untergeordnete Standorte hinzuzufügen.
 8. Wählen Sie „Ja“ für die Umschaltfläche **Anlagen installieren**, wenn es möglich sein soll, für den funktionalen Standort in diesem Status Anlagen zu installieren.

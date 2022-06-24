@@ -1,6 +1,6 @@
 ---
 title: Massenbereitstellung versiegelter Commerce-Self-Service-Komponenten
-description: In diesem Thema wird erläutert, wie Sie das Framework für Self-Service-Komponenteninstallationsprogramme verwenden, um Bereitstellungen im Hintergrund zu installieren und zu warten.
+description: In diesem Artikel wird erläutert, wie Sie das Framework für Self-Service-Komponenteninstallationsprogramme verwenden, um Bereitstellungen im Hintergrund zu installieren und zu warten.
 author: jashanno
 ms.date: 05/11/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2021-04-30
-ms.openlocfilehash: 5cb27fd0ea366d12c8bd6ee1cdb0c6d584375862
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: a679d78db3ad5bd9cccbd4ab6a7026bd07890f55
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741560"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898578"
 ---
 # <a name="mass-deployment-of-sealed-commerce-self-service-components"></a>Massenbereitstellung versiegelter Commerce-Self-Service-Komponenten
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema gilt für das versiegelte Framework, Komponenteninstallationsprogramme, die jeden Monat veröffentlicht werden, beginnend mit der Version 10.0.18, und die in der Bibliothek freigegebener Anlagen in Microsoft Dynamics Lifecycle Services (LCS) zur Verfügung gestellt werden. Beachten Sie, dass die ersten Versionen dieser neuen Installationsprogramme als **(Vorschauversion)** gekennzeichnet sind. Der einzige Zweck dieser Bezeichnung besteht jedoch darin, die neuen Installationsprogramme zu unterscheiden, während Microsoft bestimmt, ob es zusätzliche funktionale Anforderungen gibt, um sie zu verwenden. Dies bedeutet nicht, dass die Installationsprogramme nicht für die Produktion gültig sind. Basierend auf der Veröffentlichung dieser neuen Installationsprogramme plant Microsoft, die alten (Legacy-) Installationsprogramme im oder um den Oktober 2023 als veraltet zu markieren. 
+Dieser Artikel gilt für das versiegelte Framework, Komponenteninstallationsprogramme, die jeden Monat veröffentlicht werden, beginnend mit der Version 10.0.18, und die in der Bibliothek freigegebener Anlagen in Microsoft Dynamics Lifecycle Services (LCS) zur Verfügung gestellt werden. Beachten Sie, dass die ersten Versionen dieser neuen Installationsprogramme als **(Vorschauversion)** gekennzeichnet sind. Der einzige Zweck dieser Bezeichnung besteht jedoch darin, die neuen Installationsprogramme zu unterscheiden, während Microsoft bestimmt, ob es zusätzliche funktionale Anforderungen gibt, um sie zu verwenden. Dies bedeutet nicht, dass die Installationsprogramme nicht für die Produktion gültig sind. Basierend auf der Veröffentlichung dieser neuen Installationsprogramme plant Microsoft, die alten (Legacy-) Installationsprogramme im oder um den Oktober 2023 als veraltet zu markieren. 
 
-In diesem Thema wird erläutert, wie die neuen Installationsprogramme verwendet werden, um unbeaufsichtigte Installationen durchzuführen und Aktualisierungen über Befehlszeilenargumente zu warten. Mit diesen Argumenten können Sie eine Massenbereitstellung auf verschiedene Arten durchführen.
+In diesem Artikel wird erläutert, wie die neuen Installationsprogramme verwendet werden, um unbeaufsichtigte Installationen durchzuführen und Aktualisierungen über Befehlszeilenargumente zu warten. Mit diesen Argumenten können Sie eine Massenbereitstellung auf verschiedene Arten durchführen.
 
 > [!NOTE]
 > Die neuen versiegelten Self-Service-Installationsprogramme werden nicht in Headquarters zur Verfügung gestellt und können nur über LCS heruntergeladen werden.
@@ -108,7 +108,7 @@ Die Migration von den alten Self-Service-Framework-Komponenteninstallationsprogr
 
 ### <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Es ist wichtig, dass Sie die alte Self-Service-Komponente von Modern POS entfernen. Weitere Informationen finden Sie in den Migrationsschritten weiter oben in diesem Thema.
+Es ist wichtig, dass Sie die alte Self-Service-Komponente von Modern POS entfernen. Weitere Informationen finden Sie in den Migrationsschritten weiter oben in diesem Artikel.
 
 ### <a name="examples-of-silent-deployment"></a>Beispiele für unbeaufsichtigte Bereitstellung
 
@@ -125,7 +125,7 @@ CommerceModernPOS.exe --help install
 ```
 
 > [!NOTE]
-> Für Modern POS ist keine Konfigurationsdatei erforderlich. Das Installationsprogramm verfügt jetzt über Parameter (weiter oben in diesem Thema gezeigt) für die verschiedenen Werte, die während der Geräteaktivierung verwendet werden.
+> Für Modern POS ist keine Konfigurationsdatei erforderlich. Das Installationsprogramm verfügt jetzt über Parameter (weiter oben in diesem Artikel gezeigt) für die verschiedenen Werte, die während der Geräteaktivierung verwendet werden.
 
 Der folgende Befehl gibt alle Parameter an, die während der Geräteaktivierung verwendet werden sollten, nachdem die Modern POS-Anwendung installiert wurde. Dieses Beispiel verwendet das **Houston-3**-Register, ein häufig verwendeter Wert in Dynamics 365 Commerce-Demodaten.
 
@@ -145,7 +145,7 @@ Sie können diese Konzepte kombinieren, um die gewünschten Installationsergebni
 
 ### <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Es ist wichtig, dass Sie die alte Self-Service-Komponente von Hardware Station entfernen. Weitere Informationen finden Sie in den Migrationsschritten weiter oben in diesem Thema. Es gibt kein Händlerkonto-Informationstool mehr. Stattdessen werden die Händlerkontoinformationen installiert, wenn ein POS-Terminal mit der Hardware Station gekoppelt wird. Es wird dringend empfohlen, den folgenden Befehl beim ersten Testen des Installationsprogramms auszuführen:
+Es ist wichtig, dass Sie die alte Self-Service-Komponente von Hardware Station entfernen. Weitere Informationen finden Sie in den Migrationsschritten weiter oben in diesem Artikel. Es gibt kein Händlerkonto-Informationstool mehr. Stattdessen werden die Händlerkontoinformationen installiert, wenn ein POS-Terminal mit der Hardware Station gekoppelt wird. Es wird dringend empfohlen, den folgenden Befehl beim ersten Testen des Installationsprogramms auszuführen:
 
 ```Console
 CommerceHardwareStation.exe --help install
@@ -166,7 +166,7 @@ HardwareStation.exe install --Port 443 --StoreSystemAOSURL "https://MyDynamics36
 ```
 
 > [!NOTE]
-> Für Hardware Station ist keine Konfigurationsdatei erforderlich. Das Installationsprogramm verfügt jetzt über Parameter (weiter oben in diesem Thema gezeigt) für die verschiedenen erforderlichen Werte.
+> Für Hardware Station ist keine Konfigurationsdatei erforderlich. Das Installationsprogramm verfügt jetzt über Parameter (weiter oben in diesem Artikel gezeigt) für die verschiedenen erforderlichen Werte.
 
 Der folgende Befehl gibt alle Parameter an, die erforderlich sind, um die Voraussetzungsprüfungen während einer Standardinstallation zu überspringen. 
 
@@ -189,7 +189,7 @@ CommerceStoreScaleUnitSetup.exe --help install
 
 ### <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Es ist wichtig, dass Sie die alte Self-Service-Komponente von CSU (selbst gehostet) entfernen. Weitere Informationen finden Sie in den Migrationsschritten weiter oben in diesem Thema.
+Es ist wichtig, dass Sie die alte Self-Service-Komponente von CSU (selbst gehostet) entfernen. Weitere Informationen finden Sie in den Migrationsschritten weiter oben in diesem Artikel.
 
 ### <a name="examples-of-silent-deployment"></a>Beispiele für unbeaufsichtigte Bereitstellung
 

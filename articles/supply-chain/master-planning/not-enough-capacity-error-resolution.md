@@ -1,6 +1,6 @@
 ---
 title: Den „Es wurde nicht genug Kapazität gefunden“Planungsmodulfehler und endliche Kapazität beheben
-description: In diesem Thema finden Sie Informationen zu den Gründen und Lösungen für „Produktionsauftrag %1 konnte nicht eingeplant werden“. Planungsmodulfehler über unzureichende Kapazität.
+description: In diesem Artikel finden Sie Informationen zu den Gründen und Lösungen für „Produktionsauftrag %1 konnte nicht eingeplant werden“. Planungsmodulfehler über unzureichende Kapazität.
 author: t-benebo
 ms.date: 7/29/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: a3c08dc72c7133a2ebb148a2f88f83fee282717b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 2db4c2606936222fcd1a97cf2814fbfbc41df113
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469840"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891030"
 ---
 # <a name="fix-the-not-enough-capacity-could-be-found-scheduling-engine-error"></a>„Planungsmodulfehler über unzureichende Kapazität“ beheben
 
@@ -26,7 +26,7 @@ Wenn Sie die Planung ausführen, wird möglicherweise die folgende Fehlermeldung
 
 > Der Produktionsauftrag '%1' konnte nicht geplant werden. Es wurde keine ausreichende Kapazität gefunden.
 
-Es gibt mehrere Gründe, warum das Planungsmodul fehlschlagen und diese Fehlermeldung ausgeben kann. Dieses Thema enthält Richtlinien, die Ihnen helfen, die Ursache des Fehlers zu finden und ihn dann zu beheben.
+Es gibt mehrere Gründe, warum das Planungsmodul fehlschlagen und diese Fehlermeldung ausgeben kann. Dieser Artikel enthält Richtlinien, die Ihnen helfen, die Ursache des Fehlers zu finden und ihn dann zu beheben.
 
 ## <a name="review-the-applicable-resources"></a>Überprüfen der entsprechenden Ressourcen
 

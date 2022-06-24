@@ -1,6 +1,6 @@
 ---
-title: Lagerabwicklung eingehender Ladungen für Bestellungen
-description: In diesem Thema wird der Lagerbehandlungsprozess für eingehende Ladungen für Bestellungen beschrieben.
+title: Lagerinterne Abwicklung eingehender Ladungen für Bestellungen
+description: In diesem Artikel wird der Lagerbehandlungsprozess für eingehende Ladungen für Bestellungen beschrieben.
 author: Mirzaab
 ms.date: 03/21/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 464d49f4e096fdd4fe47f73efc253c97200f4de3
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 100b1972801f117560a5caf338a1ac640737ccdf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778058"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855931"
 ---
-# <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerabwicklung eingehender Ladungen für Bestellungen
+# <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerinterne Abwicklung eingehender Ladungen für Bestellungen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird der Lagerbehandlungsprozess für eingehende Ladungen für Bestellungen beschrieben.
+In diesem Artikel wird der Lagerbehandlungsprozess für eingehende Ladungen für Bestellungen beschrieben.
 
 Für jede eingehende Ladung sollte Ihr System bereits einen zugehörigen Kundenauftrag enthalten, und sie kann auch eine zugehörige Ladungsspezifikation und/oder einen zugehörigen Transportplan enthalten. Weitere Informationen zum Erstellen und Verwalten eingehender Auslastungen finden Sie unter [Geschäftsprozess: Transport für eingehende Ladungen planen](/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
 
@@ -209,7 +209,7 @@ Die folgende Tabelle fasst die Auswirkungen der Einstellung **Mehrere Produktein
 | Ja | Keine Aktualisierungen | _Empfangen_, wenn die gesamte registrierte Ladungsmenge gleich oder größer als die Ladungsmenge ist | |
 | Ja | Keine Aktualisierungen | _Empfangen_ oder _In Verarbeitung_, wenn die gesamte registrierte Ladungsmenge kleiner als die Ladungsmenge ist | |
 
-Nach das Feld **Ladungsstatus** auf _Empfangen_ gesetzt ist, können keine Produktbelegbuchungen mehr für diese Ladung vorgenommen werden. Der Arbeiter kann jedoch die verbleibende Bestellmenge unter den folgenden Bedingungen gegen die empfangene Ladung registrieren. (Weitere Informationen erhalten Sie im Abschnitt [Mehrlieferungen empfangen](#load-over-receiving) am Anfang dieses Themas.)
+Nach das Feld **Ladungsstatus** auf _Empfangen_ gesetzt ist, können keine Produktbelegbuchungen mehr für diese Ladung vorgenommen werden. Der Arbeiter kann jedoch die verbleibende Bestellmenge unter den folgenden Bedingungen gegen die empfangene Ladung registrieren. (Weitere Informationen erhalten Sie im Abschnitt [Mehrlieferungen empfangen](#load-over-receiving) am Anfang dieses Artikels.)
 
 - Die Version von Supply Chain Management ist älter als Version 10.0.11.
 - Die Funktion _Beleg für Mehrmengen laden_ ist aktiviert und das Feld **Zeile für den Beleg von Mehrmengen** im Menüelement des Mobilgeräts für die Aktion zum Laden des Ladeelements ist auf _ermöglichen_ festgelegt.

@@ -1,6 +1,6 @@
 ---
-title: Produktempfehlungs-FAQs
-description: Dieses Thema enthält Informationen über die Prozesse und Tools, die Sie verwenden können, um Probleme zu beheben, die den Produktempfehlungen oder deren Ergebnisse zugeordnet werden.
+title: Häufig gestellte Fragen zu Produktempfehlungen
+description: Dieser Artikel enthält Informationen über die Prozesse und Tools, die Sie verwenden können, um Probleme zu beheben, die den Produktempfehlungen oder deren Ergebnisse zugeordnet werden.
 author: bebeale
 ms.date: 05/26/2020
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 88ad0efd8f678c3082c31b1c3162b8288e14fc9edb69e8756f1641461b808e07
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 77a5532ab1ae3b630bb335aa7cff6dc747184994
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733964"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900446"
 ---
-# <a name="product-recommendations-faq"></a>Produktempfehlungs-FAQs
+# <a name="product-recommendations-faq"></a>Häufig gestellte Fragen zu Produktempfehlungen
 
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält Informationen über die Prozesse und Tools, die Sie verwenden können, um Probleme zu beheben, die den [Produktempfehlungen](product-recommendations.md) oder deren Ergebnisse zugeordnet werden.
+Dieser Artikel enthält Informationen über die Prozesse und Tools, die Sie verwenden können, um Probleme zu beheben, die den [Produktempfehlungen](product-recommendations.md) oder deren Ergebnisse zugeordnet werden.
 
 ## <a name="best-practices"></a>Bewährte Methoden
 Es ist außerordentlich wichtig, das Konzept von Produktmastern und von Varianten zu verwenden. Die vernünftige Gruppierung von Varianten zu einem übergeordneten Produktmaster hilft dem Listenalgorithmus und erstellt bessere Modelle. Darüber hinaus kann der Service nur eine Instanz eines Produkts bedienen statt alle eng zugehörigen Varianten in einer Liste zu nutzen. Wenn alle zugehörigen können Varianten in einer Liste verwendet werden, können fehlerhafte oder doppelte Ergebnisse auftreten.

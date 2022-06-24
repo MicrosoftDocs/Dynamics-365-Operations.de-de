@@ -1,6 +1,6 @@
 ---
 title: Anlagen an funktionalen Standorten installieren
-description: In diesem Thema wird erklärt, wie in Asset Management funktionale Standorte erstellt werden.
+description: In diesem Artikel wird erklärt, wie in Anlagenverwaltung funktionale Standorte erstellt werden.
 author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc278564b02335b44a0b35d6a3a981125e6f456b08893be2b5886f0a55396d52
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a35f2494c616c2e456f92409d012cc434a32bd8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775746"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894500"
 ---
 # <a name="install-assets-on-functional-locations"></a>Anlagen an funktionalen Standorten installieren
 
@@ -28,7 +28,7 @@ ms.locfileid: "6775746"
 
  
 
-Nachdem Sie Strukturen funktionaler Standorte erstellt haben, besteht der nächste Schritt darin, Anlagen an den relevanten funktionalen Standorten zu installieren. In diesem Thema wird erklärt, wie in Asset Management Anlagen für diese funktionale Standorte installiert werden. Informationen zum Anlegen von Anlagen finden Sie unter [Einführung in Anlagen](../objects/introduction-to-objects.md).
+Nachdem Sie Strukturen funktionaler Standorte erstellt haben, besteht der nächste Schritt darin, Anlagen an den relevanten funktionalen Standorten zu installieren. In diesem Artikel wird erklärt, wie in Anlagenverwaltung Anlagen für diese funktionale Standorte installiert werden. Informationen zum Anlegen von Anlagen finden Sie unter [Einführung in Anlagen](../objects/introduction-to-objects.md).
 
 Wenn Sie eine Anlagenstruktur erstellt haben, muss die gesamte Anlagenstruktur an einem funktionalen Standort installiert werden. Daher können an einem funktionalen Standort nur übergeordnete Anlagen (Anlagen der obersten Ebene, die keine übergeordnete Anlage haben) ausgewählt werden. Alle zugehörigen untergeordneten Anlagen werden ebenfalls am funktionalen Standort installiert. Wenn Sie Anlagen an einem funktionalen Standort installieren, werden die Finanzdimensionen des funktionalen Standorts möglicherweise automatisch darauf übertragen, je nach den Einstellungen des funktionalen Standorttyps, der für den funktionalen Standort ausgewählt ist. Weitere Informationen zum Einrichten von funktionalen Standorttypen finden Sie unter [Funktionale Standorttypen](../setup-for-functional-locations/functional-location-types.md).
 

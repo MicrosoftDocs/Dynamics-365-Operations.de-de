@@ -1,7 +1,7 @@
 ---
-title: Leistungsverbesserungen der Produktprogrammplanung
-description: In diesem Thema werden die verschiedenen Optionen beschrieben, die Ihnen helfen können, die Leistung der Produktprogrammplanung zu verbessern und Probleme zu beheben.
-author: ChristianRytt
+title: Produktprogrammplanung optimieren
+description: In diesem Artikel werden die verschiedenen Optionen beschrieben, die Ihnen helfen können, die Leistung der Produktprogrammplanung zu verbessern und Probleme zu beheben.
+author: t-benebo
 ms.date: 12/18/2019
 ms.topic: article
 ms.prod: ''
@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: fcbc732fce4120268acd774cc4d42193ba95787d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b2c4b7e2197d312d22f9851121a9e6d4d4d03ba3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570920"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897602"
 ---
-# <a name="improve-master-planning-performance"></a>Leistungsverbesserungen der Produktprogrammplanung
+# <a name="improve-master-planning-performance"></a>Produktprogrammplanung optimieren
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die verschiedenen Optionen beschrieben, die Ihnen helfen können, die Leistung der Produktprogrammplanung zu verbessern und Probleme zu beheben. Er umfasst Informationen zu Parametern und Einstellungen sowie empfohlene Konfigurationen und Aktivitäten. Er enthält außerdem eine Zusammenfassung aller wichtigen Parameter, die Sie berücksichtigen sollten, wenn Sie langfristige Produktprogrammplanungsaufträge haben.
+In diesem Artikel werden die verschiedenen Optionen beschrieben, die Ihnen helfen können, die Leistung der Produktprogrammplanung zu verbessern und Probleme zu beheben. Er umfasst Informationen zu Parametern und Einstellungen sowie empfohlene Konfigurationen und Aktivitäten. Er enthält außerdem eine Zusammenfassung aller wichtigen Parameter, die Sie berücksichtigen sollten, wenn Sie langfristige Produktprogrammplanungsaufträge haben.
 
-Dieses Thema ist für Systemadministratoren oder IT-Benutzer vorgesehen, die Fehlerbehebungen durchführen können. Es ist außerdem für Produktions- oder Beschaffungsplaner vorgesehen, da es Informationen zu Parametern enthält, die den Unternehmensplanungsanforderungen zugeordnet werden. 
+Dieser Artikel ist für Systemadministratoren oder IT-Benutzer vorgesehen, die Fehlerbehebungen durchführen können. Es ist außerdem für Produktions- oder Beschaffungsplaner vorgesehen, da es Informationen zu Parametern enthält, die den Unternehmensplanungsanforderungen zugeordnet werden. 
 
 ## <a name="parameters-related-to-master-planning-performance"></a>Parameter, die der Produktprogrammplanungsleistung zugeordnet sind
 
@@ -151,9 +151,9 @@ Bevor der Deckungsschritt beginnt, gibt es einen Vorerfassungsschritt, in dem El
 ## <a name="performance-checklist-summary"></a>Zusammenfassung der Leistungscheckliste
 
 - **Anzahl der Threads** – Auf einen Wert über **0** (Null) festlegen.
-- **Anzahl der Aufgaben im Hilfsaufgabenbündel** – Auf einen Wert über **0** (Null) festlegen. (Die Formeln verwenden, die weiter oben in diesem Thema angegeben wurden.)
+- **Anzahl der Aufgaben im Hilfsaufgabenbündel** – Auf einen Wert über **0** (Null) festlegen. (Die Formeln verwenden, die weiter oben in diesem Artikel angegeben wurden.)
 - **Cachverwendung** – Auf **Maximum** festlegen, es sei denn, der Arbeitsspeicher Ihres Systems ist gering.
-- **Zahl der Produktionsaufträge im Anlagebündel** – Auf einen Wert über **0** (Null) festlegen. (Die Formel verwenden, die weiter oben in diesem Thema angegeben wurde.)
+- **Zahl der Produktionsaufträge im Anlagebündel** – Auf einen Wert über **0** (Null) festlegen. (Die Formel verwenden, die weiter oben in diesem Artikel angegeben wurde.)
 - **Planungszeiträume** – Auf Ihre Geschäftstätigkeit anpassen.
 - **Aktivitäten und Verfügbarkeit** – Aktivitäten und Verfügbarkeiten deaktivieren, wenn Sie sie nicht verwenden.
 - **Eine wichtige Routine gleichzeitig** – Keine Produktprogrammplanung zusammen mit einer anderen wichtigen Routine ausführen.

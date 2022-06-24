@@ -1,6 +1,6 @@
 ---
 title: Bestandsprognosen
-description: In diesem Thema werden die Angebots- und Nachfrageprognosefunktionen beschrieben, mit denen Bestandsprognosen in Microsoft Dynamics 365 Supply Chain Management erstellt werden können.
+description: In diesem Artikel werden die Angebots- und Nachfrageprognosefunktionen beschrieben, mit denen Bestandsprognosen in Microsoft Dynamics 365 Supply Chain Management erstellt werden können.
 author: t-benebo
 ms.date: 06/08/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1446928c2f5fe606d1d0732764a2a4460643afcf
-ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
+ms.openlocfilehash: 10e3b6ad079dbcbc3cce429a4d9d838e584b9c54
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8548166"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844524"
 ---
 # <a name="inventory-forecasts"></a>Bestandsprognosen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Bestandsprognosen anzeigen und erstellen. Sie können Angebots- und Nachfrageprognosepositionen für Artikel, Artikelgruppen, Artikelzuordnungsschlüssel, Debitorenkonten, Debitorengruppen, Kreditorenkonten und Kreditorengruppen erstellen und anzeigen.
+In diesem Artikel wird beschrieben, wie Sie Bestandsprognosen anzeigen und erstellen. Sie können Angebots- und Nachfrageprognosepositionen für Artikel, Artikelgruppen, Artikelzuordnungsschlüssel, Debitorenkonten, Debitorengruppen, Kreditorenkonten und Kreditorengruppen erstellen und anzeigen.
 
 Für jede Prognosezeile können Sie das verwendete Prognosemodell auswählen. Anschließend können Sie den Artikel oder die Artikelgruppe sowie die Menge oder den Transaktionsbetrag angeben. Sie können auch einen Zeitplan für die Zuweisung der geplanten Menge einrichten.
 
@@ -60,7 +60,7 @@ Wie die Tabelle in Schritt 1 zeigt, gibt es verschiedene Möglichkeiten, auf die
     Je nach Auswahl wird die Seite **Beschaffungsplanung** oder **Bedarfsplanung** angezeigt. Es zeigt alle vorhandenen Prognosezeilen für den Datensatz an, den Sie vor dem Öffnen der Seite ausgewählt haben.
 
 1. Wählen Sie im Aktionsbereich **Neu**, um dem Raster im oberen Teil der Seite eine Planungsposition hinzuzufügen.
-1. Auf der neuen Position im Feld **Modell** wählen Sie im Feld das zu verwendende Planungsmodell aus. Geben Sie dann nach Bedarf weitere Details ein, z. B. Artikel, Artikelgruppe, Debitoren- oder Kreditorenkonto oder -gruppe, Artikelmenge oder Gesamttransaktionsbetrag. Ausführliche Informationen zu den Feldern, die auf den Seiten **Beschaffungsplanung** und **Bedarfsplanung** verfügbar sind, finden Sie in den späteren Abschnitten dieses Themas.
+1. Auf der neuen Position im Feld **Modell** wählen Sie im Feld das zu verwendende Planungsmodell aus. Geben Sie dann nach Bedarf weitere Details ein, z. B. Artikel, Artikelgruppe, Debitoren- oder Kreditorenkonto oder -gruppe, Artikelmenge oder Gesamttransaktionsbetrag. Ausführliche Informationen zu den Feldern, die auf den Seiten **Beschaffungsplanung** und **Bedarfsplanung** verfügbar sind, finden Sie in den späteren Abschnitten dieses Artikels.
 1. Um die Prognose über den Zeitraum zu verteilen, wählen Sie auf der Registerkarte **Überblick** die Option **Planung zuordnen** auf der Symbolleiste.
 1. Prüfen Sie im Raster **Zuteilung** den Zeithorizont sowie die Zeitintervalle einzurichten, die verwendet werden, um die Planungsmengen zu verteilen.
 
@@ -68,7 +68,7 @@ Wie die Tabelle in Schritt 1 zeigt, gibt es verschiedene Möglichkeiten, auf die
 
 Mit der Beschaffungsplanung können Sie einen Plan für zu kaufende Artikel erstellen. Es teilt Einkaufs- und Beschaffungsmitarbeitern mit, was sie bestellen sollen.
 
-Sie können eine Beschaffungsplanung nach Artikel, Artikelgruppe, Artikelzuordnungsschlüssel, Lieferant und Lieferantengruppe eingeben. Informationen zu allen Möglichkeiten zum Öffnen der Seite **Beschaffungsplanung** für verschiedene Entitäten und Datensätze finden Sie im Abschnitt  [Planungspositionen anzeigen und manuell eingeben](#manual-entry) weiter oben in diesem Thema.
+Sie können eine Beschaffungsplanung nach Artikel, Artikelgruppe, Artikelzuordnungsschlüssel, Lieferant und Lieferantengruppe eingeben. Informationen zu allen Möglichkeiten zum Öffnen der Seite **Beschaffungsplanung** für verschiedene Entitäten und Datensätze finden Sie im Abschnitt [Planungspositionen anzeigen und manuell eingeben](#manual-entry) weiter oben in diesem Artikel.
 
 Der obere Teil der Seite **Beschaffungsplanung** enthält ein Raster mit Beschaffungsplanungspositionen und eine Reihe von Registerkarten, die Sie verwenden können, um weitere Informationen zu einer ausgewählten Planungspositionen anzuzeigen und festzulegen. Der untere Teil der Seite bietet ein Raster **Zuteilung**.
 
@@ -94,9 +94,9 @@ Die folgende Tabelle beschreibt die Befehle, die in der Symbolleiste auf der Reg
 
 | Befehl | Beschreibung |
 |---|---|
-| Planung zuordnen | Wenn Sie eine Verrechnungsmethode verwenden, generieren Sie die einzelnen Einteilungen für den Prognosetransaktion. Die Menge der Position wird dann nach Datum (entsprechend den ausgewählten Zeitintervallen), Menge und Betrag für den gesamten Zeithorizont verteilt. (Siehe den Abschnitt [Planung zuordnen](#allocate-forecast) weiter unten in diesem Thema.) |
-| Sammelaktualisierung | Öffnen Sie die Seite **Planungsbuchungen bearbeiten**. (Siehe den Abschnitt [Planungsbuchungen im Bulk aktualisieren](#bulk-update) weiter unten in diesem Thema.) |
-| Planzahlenergebnis | Öffnen Sie eine Ansicht der Seite **Bestandsplanung**, die nach der ausgewählten Artikel-/Modellkombination gefiltert wird. (Siehe den Abschnitt [Bestandsplanunf](#inventory-forecast) weiter unten in diesem Thema.) |
+| Planung zuordnen | Wenn Sie eine Verrechnungsmethode verwenden, generieren Sie die einzelnen Einteilungen für den Prognosetransaktion. Die Menge der Position wird dann nach Datum (entsprechend den ausgewählten Zeitintervallen), Menge und Betrag für den gesamten Zeithorizont verteilt. (Siehe den Abschnitt [Planung zuordnen](#allocate-forecast) weiter unten in diesem Artikel.) |
+| Sammelaktualisierung | Öffnen Sie die Seite **Planungsbuchungen bearbeiten**. (Siehe den Abschnitt [Planungsbuchungen im Bulk aktualisieren](#bulk-update) weiter unten in diesem Artikel.) |
+| Planzahlenergebnis | Öffnen Sie eine Ansicht der Seite **Bestandsplanung**, die nach der ausgewählten Artikel-/Modellkombination gefiltert wird. (Siehe den Abschnitt [Bestandsplanunf](#inventory-forecast) weiter unten in diesem Artikel.) |
 | Artikelbedarf erstellen | Öffnen Sie ein Dialogfeld, in dem Sie Artikelbedarfe und Kundenauftrags- oder Artikelerfassungszeilen für projektbezogene Planungsbuchungen erstellen können. Obwohl dieser Befehl sowohl für Beschaffungsplanung als auch für Bedarfsplanung verfügbar ist, kann er nicht für die Seite **Beschaffungsplanung** verwendet werden. |
 
 ### <a name="the-overview-tab-on-the-supply-forecast-page"></a>Symbolleistenbefehle auf der Registerkarte „Übersicht“ der Seite „Beschaffungsplanung“
@@ -173,7 +173,7 @@ Wenn Sie einen Artikelzuordnungsschlüssel verwenden oder eine Artikelprognose f
 
 Mit der Bedarfsplanung können Sie Bedarf für einen Debitoren erfassen oder generieren. Es hilft Vertriebs- und Marketingsachbearbeitern, Masterplanungssachbearbeiter über den erwarteten Bedarf im kommenden Planungszeitraum zu informieren.
 
-Sie können eine Bedarfsplanung nach Artikel, Artikelgruppe, Artikelzuordnungsschlüssel, Debitor und Deboitorengruppe eingeben. Informationen zu allen Möglichkeiten zum Öffnen der Seite **Bedarfsplanung** für verschiedene Entitäten und Datensätze finden Sie im Abschnitt  [Planungspositionen anzeigen und manuell eingeben](#manual-entry) weiter oben in diesem Thema.
+Sie können eine Bedarfsplanung nach Artikel, Artikelgruppe, Artikelzuordnungsschlüssel, Debitor und Deboitorengruppe eingeben. Informationen zu allen Möglichkeiten zum Öffnen der Seite **Bedarfsplanung** für verschiedene Entitäten und Datensätze finden Sie im Abschnitt [Planungspositionen anzeigen und manuell eingeben](#manual-entry) weiter oben in diesem Artikel.
 
 Der obere Teil der Seite **Bedarfsplanung** enthält ein Raster mit Bedarfsplanungspositionen und eine Reihe von Registerkarten, die Sie verwenden können, um weitere Informationen zu einer ausgewählten Planungspositionen anzuzeigen und festzulegen. Der untere Teil der Seite bietet ein Raster **Zuteilung**.
 
@@ -201,9 +201,9 @@ Die folgende Tabelle beschreibt die Befehle, die in der Symbolleiste auf der Reg
 
 | Befehl | Beschreibung |
 |---|---|
-| Planung zuordnen | Wenn Sie eine Verrechnungsmethode verwenden, generieren Sie die einzelnen Einteilungen für den Prognosetransaktion. Die Menge der Position wird dann nach Datum (entsprechend den ausgewählten Zeitintervallen), Menge und Betrag für den gesamten Zeithorizont verteilt. (Siehe den Abschnitt [Planung zuordnen](#allocate-forecast) weiter unten in diesem Thema.)|
-| Sammelaktualisierung | Öffnen Sie die Seite **Planungsbuchungen bearbeiten**. (Siehe den Abschnitt [Planungsbuchungen im Bulk aktualisieren](#bulk-update) weiter unten in diesem Thema.) |
-| Planzahlenergebnis | Öffnen Sie eine Ansicht der Seite **Bestandsplanung**, die nach der ausgewählten Artikel-/Modellkombination gefiltert wird. (Siehe den Abschnitt [Bestandsplanunf](#inventory-forecast) weiter unten in diesem Thema.) |
+| Planung zuordnen | Wenn Sie eine Verrechnungsmethode verwenden, generieren Sie die einzelnen Einteilungen für den Prognosetransaktion. Die Menge der Position wird dann nach Datum (entsprechend den ausgewählten Zeitintervallen), Menge und Betrag für den gesamten Zeithorizont verteilt. (Siehe den Abschnitt [Planung zuordnen](#allocate-forecast) weiter unten in diesem Artikel.)|
+| Sammelaktualisierung | Öffnen Sie die Seite **Planungsbuchungen bearbeiten**. (Siehe den Abschnitt [Planungsbuchungen im Bulk aktualisieren](#bulk-update) weiter unten in diesem Artikel.) |
+| Planzahlenergebnis | Öffnen Sie eine Ansicht der Seite **Bestandsplanung**, die nach der ausgewählten Artikel-/Modellkombination gefiltert wird. (Siehe den Abschnitt [Bestandsplanunf](#inventory-forecast) weiter unten in diesem Artikel.) |
 | Artikelbedarf erstellen | Öffnen Sie ein Dialogfeld, in dem Sie Artikelbedarfe und Kundenauftrags- oder Artikelerfassungszeilen für projektbezogene Planungsbuchungen erstellen können. |
 
 ### <a name="the-overview-tab-on-the-demand-forecast-page"></a>Symbolleistenbefehle auf der Registerkarte „Übersicht“ der Seite „Bedarfsplanung“
@@ -296,7 +296,7 @@ Die Registerkarte **Bestandsdimensionen** zeigt alle Bestandsdimensionswerte fü
 
 ### <a name="the-allocation-grid-on-the-demand-forecast-page"></a>Das Zuteilungsraster auf der Seite „Bedarfsplanung“
 
-Wenn Sie einen Artikelzuordnungsschlüssel verwenden oder eine Artikelprognose für eine oder mehrere zukünftige Perioden eingegeben haben, können Sie die Prognose zuordnen, indem Sie **Planung zuordnen** in der Symbolleiste auf der Registerkarte **Übersicht** auswählen. Die Menge wird dann so verteilt, wie es durch die Positionen im Raster **Zuteilung** angezeigt wird. (Siehe den Abschnitt [Planung zuordnen](#allocate-forecast) weiter unten in diesem Thema.)
+Wenn Sie einen Artikelzuordnungsschlüssel verwenden oder eine Artikelprognose für eine oder mehrere zukünftige Perioden eingegeben haben, können Sie die Prognose zuordnen, indem Sie **Planung zuordnen** in der Symbolleiste auf der Registerkarte **Übersicht** auswählen. Die Menge wird dann so verteilt, wie es durch die Positionen im Raster **Zuteilung** angezeigt wird. (Siehe den Abschnitt [Planung zuordnen](#allocate-forecast) weiter unten in diesem Artikel.)
 
 ## <a name="inventory-forecast"></a><a name="inventory-forecast"></a>Planzahlenergebnis
 

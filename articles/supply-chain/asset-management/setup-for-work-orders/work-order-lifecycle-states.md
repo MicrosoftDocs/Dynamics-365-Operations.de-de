@@ -1,6 +1,6 @@
 ---
 title: Lebenszykluszustände von Arbeitsaufträgen
-description: In diesem Thema werden die Lebenszykluszustände von Arbeitsaufträgen im Anlagenmanagement erläutert.
+description: In diesem Artikel werden die Lebenszykluszustände von Arbeitsaufträgen im Anlagenmanagement erläutert.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fa0980438ec629ef7ae6bf711d5ae87efca131e6ab86dfcaa1f17d953725147a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 67f857e4bfb828250e632e3ba46af9930cd908a1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768665"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860869"
 ---
 # <a name="work-order-lifecycle-states"></a>Lebenszykluszustände von Arbeitsaufträgen
 
@@ -69,7 +69,7 @@ Die folgende Tabelle beschreibt die Optionen in den Abschnitten **Arbeitsauftrag
 
     Im Feld **Details** FastTab zeigt das Feld **Lebenszyklusmodelle** die Anzahl der Arbeitsauftrags-Lebenszyklusmodelle, die diesen Lebenszykluszustand verwenden.
 
-8. Wählen Sie auf der Registerkarte **Allgemein** FastTab im Abschnitt **Arbeitsauftrag** die Funktionen aus, die für diesen Lebenszykluszustand verfügbar sein sollen, indem Sie die entsprechenden Optionen auf **Ja** setzen. Beschreibungen der Optionen finden Sie in der Tabelle oben in diesem Thema.
+8. Wählen Sie auf der Registerkarte **Allgemein** FastTab im Abschnitt **Arbeitsauftrag** die Funktionen aus, die für diesen Lebenszykluszustand verfügbar sein sollen, indem Sie die entsprechenden Optionen auf **Ja** setzen. Beschreibungen der Optionen finden Sie in der Tabelle oben in diesem Artikel.
 9. Wählen Sie im Abschnitt **Projekt** im Feld **Stufe** die Projektphase aus, die mit diesem Lebenszykluszustand in Beziehung stehen soll.
 10. Setzen Sie im Abschnitt **Projekt** die Option **Aktivitäten schließen** auf **Ja**, wenn Projektaktivitäten, die sich auf jeden Arbeitsauftrag beziehen, automatisch geschlossen werden sollen, wenn sich der Arbeitsauftrag in diesem Lebenszykluszustand befindet.
 
@@ -77,7 +77,7 @@ Die folgende Tabelle beschreibt die Optionen in den Abschnitten **Arbeitsauftrag
     > Um die Nummer der Projektaktivität zu finden, die sich auf einen Arbeitsauftrag bezieht, wählen Sie **Anlagenmanagement** \> **Allgemein** \> **Aufträge** \> **Alle Arbeitsaufträge**, **Aktive Arbeitsaufträge**, oder **Meine aktiven Arbeitsaufträge**. Öffnen Sie den Arbeitsauftrag und wählen Sie dann den Arbeitsauftrag aus. Die Aktivitätsnummer wird im Feld **Aktivitätsnummer** im Abschnitt **Projekt** auf der Registerkarte **Allgemein** der Registerkarte **Zeilendetails** FastTab angezeigt.
 
 11. Stellen Sie im Abschnitt **Prognose** die Option **Stundenprognose kopieren**, **Artikelprognose kopieren**, und/oder **Aufwandsprognose kopieren** auf **Ja** ein, wenn Projektauftragsprognosen automatisch in Arbeitsauftragserfassungen kopiert werden sollen, wenn sich der Arbeitsauftrag in diesem Lebenszykluszustand befindet.
-12. Setzen Sie im Abschnitt **Terminplanung** eine der Optionen auf **Ja**, wenn der Zeitplanstatus für Arbeitsaufträge aktualisiert werden soll, wenn sich der Arbeitsauftrag in diesem Lebenszykluszustand befindet. Die Beschreibungen der Optionen **Bereit**, **Start**, **Ende** und **Einteilungen** löschen finden Sie in der Tabelle oben in diesem Thema.
+12. Setzen Sie im Abschnitt **Terminplanung** eine der Optionen auf **Ja**, wenn der Zeitplanstatus für Arbeitsaufträge aktualisiert werden soll, wenn sich der Arbeitsauftrag in diesem Lebenszykluszustand befindet. Die Beschreibungen der Optionen **Bereit**, **Start**, **Ende** und **Einteilungen** löschen finden Sie in der Tabelle oben in diesem Artikel.
 
     > [!NOTE]
     > Um Einteilungen anzuzeigen, die sich auf Arbeitsaufträge beziehen, wählen Sie **Anlagenmanagement** \> **Allgemein** \> **Arbeitsaufträge** \> **Alle Arbeitsaufträge**, **Aktive Arbeitsaufträge**, oder **Meine aktiven Arbeitsaufträge**. Öffnen Sie den Arbeitsauftrag, wählen Sie den Arbeitsauftrag auf der Seite **Arbeitsaufträge** FastTab und sehen Sie sich die zugehörigen Informationen auf der Seite **Zeilendetails** FastTab an. Das Feld **Status** auf der Registerkarte **Terminplan** zeigt den Status des Arbeitsauftrags an. Das Feld **Status** kann auf die folgenden Werte gesetzt werden: **Planung**, **Bereit**, **Start**, **Stop**, und **Ende**.

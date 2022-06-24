@@ -1,6 +1,6 @@
 ---
 title: Waren in Zustellung bearbeiten
-description: Dieses Thema beschreibt, wie Sie mit Waren in Zustellung arbeiten. Wenn ein Auftrag oder eine Fahrt so festgelegt ist, dass die Waren in Zustellung verarbeitet werden, können die Waren in Rechnung gestellt werden, bevor sie im Lagerort zum Verbrauch eingegangen sind.
+description: Dieser Artikel beschreibt, wie Sie mit Waren in Zustellung arbeiten. Wenn ein Auftrag oder eine Fahrt so festgelegt ist, dass die Waren in Zustellung verarbeitet werden, können die Waren in Rechnung gestellt werden, bevor sie im Lagerort zum Verbrauch eingegangen sind.
 author: Weijiesa
 ms.date: 01/13/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8df07c7c94cf64b0e4cf1def794270e176241b5f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 47e5ef2ef99fcf23af73cfdb6ec57b92ad62f18c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694654"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854383"
 ---
-# <a name="goods-in-transit-processing"></a>Waren in Zustellung
+# <a name="goods-in-transit-processing"></a>Waren in Zustellung bearbeiten
 
 [!include [banner](../../includes/banner.md)]
 
-Dieses Thema beschreibt, wie Sie mit Waren in Zustellung arbeiten. Diese Art von Auftrag wird nur vom Modul **Gesamttransportkosten** verwendet. Wenn ein Auftrag oder eine Fahrt für die Verwendung der Waren in Zustellung festgelegt ist, müssen Sie nicht warten, bis die Waren im Lagerort eingegangen sind, bevor Sie sie in Rechnung stellen können. Stattdessen werden die Waren fakturiert, wenn sie den Lagerort oder den Hafen des Lieferanten verlassen, und die finanziellen Kosten werden bei Beginn der Fahrt erfasst. Mit dieser Funktionalität können Sie den Bestand korrekt in Besitz nehmen, da Waren oft in das Eigentum Ihres Unternehmens übergehen, wenn sie den Lieferhafen verlassen.
+Dieser Artikel beschreibt, wie Sie mit Waren in Zustellung arbeiten. Diese Art von Auftrag wird nur vom Modul **Gesamttransportkosten** verwendet. Wenn ein Auftrag oder eine Fahrt für die Verwendung der Waren in Zustellung festgelegt ist, müssen Sie nicht warten, bis die Waren im Lagerort eingegangen sind, bevor Sie sie in Rechnung stellen können. Stattdessen werden die Waren fakturiert, wenn sie den Lagerort oder den Hafen des Lieferanten verlassen, und die finanziellen Kosten werden bei Beginn der Fahrt erfasst. Mit dieser Funktionalität können Sie den Bestand korrekt in Besitz nehmen, da Waren oft in das Eigentum Ihres Unternehmens übergehen, wenn sie den Lieferhafen verlassen.
 
 Bei Waren in Zustellung werden die finanziell fortgeschriebenen Artikel in einem Zwischenlager empfangen, das als Lagerort in Zustellung bezeichnet wird. Die Waren verbleiben dann in diesem Lagerort, bis sie im endgültigen Ziellager (d.h. in dem Lagerort, der auf der Zeile des Kaufs definiert ist) empfangen werden können. Sie können nicht manuell entnommen werden.
 

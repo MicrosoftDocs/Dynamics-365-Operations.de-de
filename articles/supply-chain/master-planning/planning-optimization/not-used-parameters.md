@@ -1,6 +1,6 @@
 ---
-title: Von der Planungsoptimierung nicht verwendete Parameter
-description: In diesem Thema werden die Parameter aufgelistet, welche die Planungsoptimierung derzeit während des Betriebs nicht berücksichtigt.
+title: In der Planungsoptimierung nicht verwendete Parameter
+description: In diesem Artikel werden die Parameter aufgelistet, welche die Planungsoptimierung derzeit während des Betriebs nicht berücksichtigt.
 author: t-benebo
 ms.date: 09/02/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 82bdd522b5b6ca1cf149f9fea508d8d6a96a1466
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 3791ac804b78a20d0051881a83cb075e56ec8639
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469113"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907347"
 ---
-# <a name="parameters-not-used-by-planning-optimization"></a>Von der Planungsoptimierung nicht verwendete Parameter
+# <a name="parameters-not-used-by-planning-optimization"></a>In der Planungsoptimierung nicht verwendete Parameter
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema werden die Parameter aufgelistet, welche die Planungsoptimierung derzeit während des Betriebs nicht berücksichtigt. Der Planungsdienst kann einen Parameter überspringen, weil beispielsweise die zugehörige Funktionalität noch nicht unterstützt wird. Es kann auch sein, dass der Parameter aufgrund von Funktionsänderungen veraltet ist.
+In diesem Artikel werden die Parameter aufgelistet, welche die Planungsoptimierung derzeit während des Betriebs nicht berücksichtigt. Der Planungsdienst kann einen Parameter überspringen, weil beispielsweise die zugehörige Funktionalität noch nicht unterstützt wird. Es kann auch sein, dass der Parameter aufgrund von Funktionsänderungen veraltet ist.
 
 In den folgenden Abschnitten sind die Parameter aufgeführt, welche die Planungsoptimierung auf bestimmten Seiten nicht verwendet. Es wird auch erklärt, warum nicht jeder Parameter verwendet wird.
 

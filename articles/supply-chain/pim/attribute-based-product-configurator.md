@@ -1,6 +1,6 @@
 ---
 title: Attributbasierte Verkaufspreise bei einschränkungsbasierter Produktkonfiguration
-description: In diesem Thema wird beschrieben, wie Sie Verkaufspreismodelle mit Verkaufspreisen erstellen, die auf Komponenten und Attributen basieren und nicht auf der physischen Stückliste und der Route.
+description: In diesem Artikel wird beschrieben, wie Sie Verkaufspreismodelle mit Verkaufspreisen erstellen, die auf Komponenten und Attributen basieren und nicht auf der physischen Stückliste und der Route.
 author: t-benebo
 ms.date: 10/2/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-08-17
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e50b2d1e9ccf03a58e0ddf6d4ecfb34c6c504161
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 456c7399f981e41ea452f1a6a8e30e9e12e0be54
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577455"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857460"
 ---
 # <a name="attribute-based-sales-prices-for-constraint-based-product-configuration"></a>Attributbasierte Verkaufspreise bei einschränkungsbasierter Produktkonfiguration
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Verkaufspreismodelle mit Verkaufspreisen erstellen, die auf Komponenten und Attributen basieren und nicht auf der physischen Stückliste und der Route. Sie können für jedes Produktkonfigurationsmodell mehrere Verkaufspreismodelle erstellen.
+In diesem Artikel wird beschrieben, wie Sie Verkaufspreismodelle mit Verkaufspreisen erstellen, die auf Komponenten und Attributen basieren und nicht auf der physischen Stückliste und der Route. Sie können für jedes Produktkonfigurationsmodell mehrere Verkaufspreismodelle erstellen.
 
 ## <a name="set-relevant-product-information-management-parameters"></a>Festlegen relevanter Parameter für die Verwaltung von Produktinformationen
 

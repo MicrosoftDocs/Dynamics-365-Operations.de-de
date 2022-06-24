@@ -1,6 +1,6 @@
 ---
 title: Waren zur doppelten Verwendung
-description: In diesem Thema wird erläutert, wie Produkte nachverfolgt werden, die als Waren mit doppeltem Verwendungszweck identifiziert wurden, Zertifikatsnummern für jedes relevante Produkt und Zielland gespeichert werden und gültige Zertifikatsnummern auf relevanten Rechnungen, Lieferscheinen und/oder Aufträgen gedruckt werden.
+description: In diesem Artikel wird erläutert, wie Produkte nachverfolgt werden, die als Waren mit doppeltem Verwendungszweck identifiziert wurden, Zertifikatsnummern für jedes relevante Produkt und Zielland gespeichert werden und gültige Zertifikatsnummern auf relevanten Rechnungen, Lieferscheinen und/oder Aufträgen gedruckt werden.
 author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 787d0c4ebcf83d6bfec05943f2bb0ddc5961a93a
-ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
+ms.openlocfilehash: 02b154b9ea849c6b905d76edb256c4106b254acd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8736032"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878902"
 ---
 # <a name="dual-use-goods"></a>Waren zur doppelten Verwendung
 
@@ -42,7 +42,7 @@ Bedenken Sie folgendes Szenario:
 
 6. Der Auftrag umfasst das Produkt X-100, das Produkt wird nach Frankreich geliefert und für das Produkt liegt ein französisches Zertifikat vor. Das Zertifikat ist jedoch abgelaufen. Daher erhalten Sie die folgende Warnmeldung: „Zertifkate für die doppelte Verwendung für mindestens einen Artikel mit doppelter Verwendung in diesem Auftrag sind nicht gültig. Möchten Sie mit der Bestätigung fortfahren?“
 
-In diesem Thema wird erläutert, wie Sie alle Einstellungen konfigurieren, die zum Einrichten von Waren mit doppelter Verwendung und zum Unterstützen dieses Szenarios erforderlich sind.
+In diesem Artikel wird erläutert, wie Sie alle Einstellungen konfigurieren, die zum Einrichten von Waren mit doppelter Verwendung und zum Unterstützen dieses Szenarios erforderlich sind.
 
 ## <a name="define-dual-use-requirements-for-each-relevant-country"></a>Definieren Sie Anforderungen für die doppelte Verwendung für jedes relevante Land
 

@@ -1,6 +1,6 @@
 ---
 title: Kunden-Check-in-Benachrichtigungen im Point of Sale (POS) aktivieren
-description: Dieses Thema beschreibt, wie Sie in Point of Sale (POS) Microsoft Dynamics 365 Commerce Check-In-Benachrichtigungen für Debitor aktivieren können.
+description: Dieser Artikel beschreibt, wie Sie in Point of Sale (POS) Microsoft Dynamics 365 Commerce Check-In-Benachrichtigungen für Debitor aktivieren können.
 author: bicyclingfool
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 95b4e3a1750cf072db919492f7445e87654701da
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: ae53657c95128eae793f670bd9dbc31d9fac0fe4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983160"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885144"
 ---
 # <a name="enable-customer-check-in-notifications-in-point-of-sale-pos"></a>Kunden-Check-in-Benachrichtigungen im Point of Sale (POS) aktivieren
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema beschreibt, wie Sie in Point of Sale (POS) Microsoft Dynamics 365 Commerce Check-In-Benachrichtigungen für Debitor aktivieren können.
+Dieser Artikel beschreibt, wie Sie in Point of Sale (POS) Microsoft Dynamics 365 Commerce Check-In-Benachrichtigungen für Debitor aktivieren können.
 
 Unternehmen können in ihren „Bestellung bereit zur Abholung“-E-Mails einen Link oder eine Schaltfläche bereitstellen, mit dem/der der Debitor dem Geschäft mitteilen kann, dass er auf dem Gelände ist und darauf wartet, dass sein Paket zu ihm gebracht wird. Der Debitor erhält dann eine Check-in-Bestätigung, und die Filiale erhält eine Benachrichtigung als Aufgabe in ihrer POS-Anwendung. Diese Aufgabe dient als Aufforderung an einen Vertriebsmitarbeiter, den Auftrag an das Fahrzeug des Debitors zu liefern. Daher muss der Debitor den Laden nicht betreten.
 
@@ -70,7 +70,7 @@ Gehen Sie folgendermaßen vor, um die Kunden-Check-in-Funktion zu testen.
 1. Laden Sie die Seite hoch, aber veröffentlichen Sie sie nicht.
 1. Fügen Sie den folgenden Link zu einer E-Mail-Vorlage hinzu, die von der Benachrichtigungsart „Verpackung abgeschlossen“ für die Abholungslieferart aufgerufen wird. Weitere Informationen finden Sie unter [E-Mail-Vorlagen für Transaktionsereignisse erstellen](email-templates-transactions.md).
 
-    - **Für Vorproduktionsumgebungen (UAT):** Fügen Sie den Codeausschnitt aus dem Abschnitt [Konfigurieren der Transaktions-E-Mail-Vorlage](#configure-the-transactional-email-template) weiter oben in diesem Thema hinzu.
+    - **Für Vorproduktionsumgebungen (UAT):** Fügen Sie den Codeausschnitt aus dem Abschnitt [Konfigurieren der Transaktions-E-Mail-Vorlage](#configure-the-transactional-email-template) weiter oben in diesem Artikel hinzu.
     - **Für Produktionsumgebungen:** Fügen Sie den folgenden kommentierten Code hinzu, damit bestehende Kunden nicht betroffen sind.
 
         `<!-- https://[DOMAIN]/[CHECK_IN_PAGE]?channelReferenceId=%confirmationid%&channelId=%pickupchannelid%&packingSlipId=%packingslipid%&preview=inprogress -->`

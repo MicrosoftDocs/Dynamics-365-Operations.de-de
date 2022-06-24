@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 9a0a9a3f23a3aec0077fd1a64c55fea567b72800
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: fa7a519b87bd5933b8b672f9f9b3e230fd7f2eb4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722491"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896404"
 ---
 # <a name="one-voucher"></a>Ein Beleg
 
@@ -37,7 +37,7 @@ Die vorhandene Funktion für Finanzerfassungen (allgemeine Erfassung, Anlagenerf
     [![Einzelposition.](./media/same-line.png)](./media/same-line.png)
 
     > [!IMPORTANT]
-    > Beachten Sie, dass die Definition von „Ein Beleg” **nicht** Fälle abdeckt, bei denen der Erfassungsname als **Nur eine Beleg-Nummer** eingerichtet ist, aber der Benutzer dann einen Beleg eingibt, der nur Sachkontentypen umfasst. In diesem Dokument bedeutet „Ein Beleg”, dass es einen Beleg gibt, der mehr als einen Lieferanten, Debitor, Bank, Anlage oder Projekt enthält.
+    > Beachten Sie, dass die Definition von „Ein Beleg” **nicht** Fälle abdeckt, bei denen der Erfassungsname als **Nur eine Beleg-Nummer** eingerichtet ist, aber der Benutzer dann einen Beleg eingibt, der nur Sachkontentypen umfasst. In diesem Artikel bedeutet „Ein Beleg”, dass es einen Beleg gibt, der mehr als einen Lieferanten, Debitor, Bank, Anlage oder Projekt enthält.
 
 - Geben Sie einen mehrzeiligen Beleg ein, wo es kein Gegenkonto gibt.
 
@@ -63,16 +63,16 @@ Dann generieren Sie den Bericht **Ausgaben nach Kreditor** im Arbeitsbereich **F
 
 Aufgrund der Probleme, die bei der Verwendung eines Belegs auftreten können, wird diese Funktionalität möglicherweise nicht mehr unterstützt. Da jedoch funktionale Lücken vorhanden sind, die von diesen Funktionen abhängen, wird die Einstellung nicht auf einmal auftreten. Stattdessen können Sie den folgenden Zeitplan nutzen:
 
-- **Freigabe Frühling 2018** – diese Funktionalität wurde standardmäßig durch den Parameter **Mehrere Transaktionen innerhalb eines Belegs zulassen** auf der Registerkarte **Allgemeines** der Seite **Hauptbuchparameter** deaktiviert. Allerdings können Sei sie wieder aktivieren, wenn in Ihrer Organisation ein Szenario besteht, das in eine der funktionalen Lücken fällt, die weiter unten in diesem Thema aufgeführt sind.
+- **Freigabe Frühling 2018** – diese Funktionalität wurde standardmäßig durch den Parameter **Mehrere Transaktionen innerhalb eines Belegs zulassen** auf der Registerkarte **Allgemeines** der Seite **Hauptbuchparameter** deaktiviert. Allerdings können Sei sie wieder aktivieren, wenn in Ihrer Organisation ein Szenario besteht, das in eine der funktionalen Lücken fällt, die weiter unten in diesem Artikel aufgeführt sind.
 
-    - Wenn für Ihr Geschäftsszenario „Ein Beleg“ nicht erforderlich ist, empfehlen wir, die Funktionalität deaktiviert zu lassen. Wenn Sie diese Funktion verwenden, obwohl eine andere Lösung vorhanden ist, wird Microsoft keine „Fehler” in den Bereichen beheben, die später in diesem Thema identifiziert wurden.
+    - Wenn für Ihr Geschäftsszenario „Ein Beleg“ nicht erforderlich ist, empfehlen wir, die Funktionalität deaktiviert zu lassen. Wenn Sie diese Funktion verwenden, obwohl eine andere Lösung vorhanden ist, wird Microsoft keine „Fehler” in den Bereichen beheben, die später in diesem Artikel identifiziert wurden.
     - Wir empfehlen, dass Sie die Verwendung von „Ein Beleg” für Integrationen einstellen, sofern Sie die Funktionalität nicht für die dokumentierten Funktionslücken benötigen.
 
 - **Spätere Versionen** – einige dieser Geschäftsanforderungen können nur mithilfe von „Ein Beleg” erfüllt werden. Microsoft muss sicherstellen, dass alle identifizierten Geschäftsanforderungen im System noch erfüllt werden können, nachdem die Funktionalität eingestellt ist. Daher müssen wahrscheinlich neue Funktionen hinzugefügt werden, um funktionalen Lücken zu schließen. Microsoft kann keine spezifische Lösung bereitstellen, da jede Funktionslücke unterschiedlich ist und basierend auf den Geschäftsanforderungen bewertet werden muss. Einige Funktionslücken werden wahrscheinlich durch Funktionen ersetzt, die dazu beitragen, bestimmte Geschäftsanforderungen zu erfüllen. Andere Lücken können jedoch geschlossen werden, indem weiterhin der Eintrag in eine Erfassung ermöglicht wird, wie bei Verwendung eines Belegs, aber das System erweitert wird, um bei Bedarf detailliertere Informationen zu erhalten.
 
 Nachdem alle Funktionslücken geschlossen wurden, teilt Microsoft mit, dass die Funktion nicht mehr unterstützt wird. Die Einstellung wird jedoch erst ein Jahr nach dieser Mitteilung wirksam. Obwohl Microsoft keine Schätzung darüber abgeben kann, wann die Funktionalität „Ein Beleg“ eingestellt werden wird, wird es wahrscheinlich mindestens zwei Jahre dauern, bis die Einstellung eintritt. Die Microsoft-Richtlinie sieht vor, dass zwischen der Ankündigung veralteter Funktionen und der tatsächlichen Ablehnung mindestens 12 Monate verbleiben, damit Kunden und unabhängige Softwareanbieter (ISVs) Zeit haben, auf die Änderung zu reagieren. So muss eine Organisation möglicherweise ihre Geschäftsprozesse, Entitäten und Integrationen aktualisieren.
 
-Die Einstellung von „Ein Beleg“ ist eine wesentliche Änderung, die in großem Umfang kommuniziert wird. Im Rahmen dieser Kommunikation wird Microsoft dieses Thema aktualisieren und einen Blog-Beitrag im Microsoft Dynamics 365 Finance-Blog veröffentlichen, das Thema „Entfernte oder veraltete Funktionen“ aktualisieren, die Änderung auf entsprechenden Microsoft-Konferenzen mitteilen usw.
+Die Einstellung von „Ein Beleg“ ist eine wesentliche Änderung, die in großem Umfang kommuniziert wird. Im Rahmen dieser Kommunikation wird Microsoft diesen Artikel aktualisieren und einen Blog-Beitrag im Microsoft Dynamics 365 Finance-Blog veröffentlichen, den Artikel „Entfernte oder veraltete Funktionen“ aktualisieren, die Änderung auf entsprechenden Microsoft-Konferenzen mitteilen usw.
 
 ## <a name="why-use-one-voucher"></a>Warum „Ein Beleg” verwenden?
 

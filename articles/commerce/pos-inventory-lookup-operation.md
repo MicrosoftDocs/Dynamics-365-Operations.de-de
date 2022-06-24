@@ -1,6 +1,6 @@
 ---
 title: Bestandssuchvorgänge in POS
-description: In diesem Thema wird beschrieben, wie Sie den Bestandssuchvorgang in Dynamics 365 Commerce Point of Sale (POS) verwenden, um die Verfügbarkeit von Produkten in den Filialen und Lagerorten anzuzeigen.
+description: In diesem Artikel wird beschrieben, wie Sie den Bestandssuchvorgang in Dynamics 365 Commerce Point of Sale (POS) verwenden, um die Verfügbarkeit von Produkten in den Filialen und Lagerorten anzuzeigen.
 author: boycezhu
 ms.date: 08/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: ded7c0aa00d0806dfe4eb4e182abbbf66fd76d5b
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 01f10c348c61ffbcb30be26a57b3edd436aacc8f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343835"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850248"
 ---
 # <a name="inventory-lookup-operation-in-pos"></a>Bestandssuchvorgänge in POS
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie den Bestandssuchvorgang in Dynamics 365 Commerce Point of Sale (POS) verwenden, um die Verfügbarkeit von Produkten in den Filialen und Lagerorten anzuzeigen.
+In diesem Artikel wird beschrieben, wie Sie den Bestandssuchvorgang in Dynamics 365 Commerce Point of Sale (POS) verwenden, um die Verfügbarkeit von Produkten in den Filialen und Lagerorten anzuzeigen.
 
 Mithilfe einer genauen Bestandsanzeige in einer gesamten Organisation können Filialmitarbeiter einen rechtzeitigen, effektiven Kundenservice bieten. Am wichtigsten ist der Augenblick, an dem ein Debitor bereit ist, eine Kaufentscheidung zu treffen. Es ist wichtig, dass Kassierer in einem Einzelhandelsgeschäft Bestandsinformationen in Echtzeit oder Quasi-Echtzeit zur Hand haben, sodass sie eine Produktlieferung und -abholung genau zusagen können.
 

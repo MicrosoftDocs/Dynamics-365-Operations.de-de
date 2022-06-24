@@ -1,6 +1,6 @@
 ---
 title: Grundeinrichtung eines veröffentlichten Produktmasters abschließen
-description: In diesem Thema wird gezeigt, wie Sie die Mindesteinstellungen abschließen, die erforderlich sind, bevor der Produktmaster in den Stücklistenversionen verwendet werden kann.
+description: In diesem Artikel wird gezeigt, wie Sie die Mindesteinstellungen abschließen, die erforderlich sind, bevor der Produktmaster in den Stücklistenversionen verwendet werden kann.
 author: t-benebo
 ms.date: 07/08/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1ec567892c09968fe80c3a075d656185aceb4e5
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a403600bfdc257587441b5b5a907981d5eebaf58
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568494"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844851"
 ---
 # <a name="complete-basic-setup-of-a-released-product-master"></a>Grundeinrichtung eines veröffentlichten Produktmasters abschließen
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird gezeigt, wie Sie die Mindesteinstellungen abschließen, die erforderlich sind, bevor der Produktmaster in den Stücklistenversionen verwendet werden kann.
+In diesem Artikel wird gezeigt, wie Sie die Mindesteinstellungen abschließen, die erforderlich sind, bevor der Produktmaster in den Stücklistenversionen verwendet werden kann.
 
 Dies ist die dritte von acht Prozeduren, die beschreibt, wie Kombinationen für eine dimensionsbasierte Konfiguration erstellt werden. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

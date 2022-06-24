@@ -1,6 +1,6 @@
 ---
 title: Arbeiten mit Vorlagen
-description: In diesem Thema wird beschrieben, wie Sie in Microsoft Dynamics 365 Commerce mit Vorlagen arbeiten.
+description: In diesem Artikel wird beschrieben, wie Sie in Microsoft Dynamics 365 Commerce mit Vorlagen arbeiten.
 author: phinneyridge
 ms.date: 02/03/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ab6ccfac96249b39cb007d9a9fce10475f0c7149
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: c234ddb0cdc212bead4f722f7881fbf21d608675
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090793"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881578"
 ---
 # <a name="work-with-templates"></a>Arbeiten mit Vorlagen
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie in Microsoft Dynamics 365 Commerce mit Vorlagen arbeiten.
+In diesem Artikel wird beschrieben, wie Sie in Microsoft Dynamics 365 Commerce mit Vorlagen arbeiten.
 
 Wie in [Übersicht über Vorlagen und Layouts](templates-layouts-overview.md) erläutert wurde, legen die Vorlagen den Satz an Optionen fest, der für nachgeschaltete Autoren verfügbar ist. Vorlagen sind für das Web-Authoring-Team eines Unternehmens aus mehreren Gründen nützlich. Gut strukturierte Vorlagen können bei allen folgenden Zielen hilfreich sein:
 

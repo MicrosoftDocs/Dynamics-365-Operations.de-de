@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: b265c0d5cb43e151386fe90e3a3dea414ec0aca6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5eb18ce29cbd1434b2a766c2ba5d78ed1be4e72b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579903"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851245"
 ---
 # <a name="wave-template-grouping"></a>Wellenvorlagengruppierung
 
@@ -41,7 +41,7 @@ Bevor Sie die Funktion *Wellenvorlagengruppierung* verwenden können, muss sie i
 Um die Wellenvorlagengruppierung verfügbar zu machen, führen Sie die folgenden Schritte aus, um die [Wellenvorlage](tasks/configure-wave-processing.md) einzurichten.
 
 1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Wellen \> Wellenvorlagen**.
-1. Wählen Sie im linken Bereich die einzurichtende Wellenvorlage aus. Wenn Sie sich darauf vorbereiten, das Szenario später in diesem Thema mithilfe von Demodaten zu bearbeiten, wählen Sie die Vorlage **62 Versandstandard** aus.
+1. Wählen Sie im linken Bereich die einzurichtende Wellenvorlage aus. Wenn Sie sich darauf vorbereiten, das Szenario später in diesem Artikel mithilfe von Demodaten zu bearbeiten, wählen Sie die Vorlage **62 Versandstandard** aus.
 1. Klicken Sie auf **Bearbeiten**, um die Seite in den Bearbeitungsmodus zu versetzen.
 1. Legen Sie im Inforegister **Allgemein** die folgenden Werte fest:
 
@@ -84,7 +84,7 @@ Sie können dieses Szenario auch als Anleitung zur Verwendung dieser Funktion nu
 
 Dieses Szenario zeigt, wie mithilfe der Wellenvorlagengruppierung automatisch mehrere Wellen erstellt werden, basierend auf Gruppierungskriterien, die in einer Wellenvorlage definiert sind. In diesem Szenario wird die Wellenvorlage im System so eingerichtet, dass eine Welle pro Spediteur erstellt wird.
 
-Bevor Sie beginnen, bereiten Sie Ihre Wellenvorlage wie im Abschnitt [Wellenvorlage für Wellenvorlagengruppierung festlegen](#set-up-template) weiter oben in diesem Thema beschrieben vor. Wenn Sie für dieses Szenario mit Demodaten arbeiten, müssen Sie die in diesem Verfahren vorgeschlagenen Demodatenwerte verwenden. Dieses Setup gruppiert Ihre Wellen nach dem Spediteur, der für jeden Auftrag festgelegt wurde.
+Bevor Sie beginnen, bereiten Sie Ihre Wellenvorlage wie im Abschnitt [Wellenvorlage für Wellenvorlagengruppierung festlegen](#set-up-template) weiter oben in diesem Artikel beschrieben vor. Wenn Sie für dieses Szenario mit Demodaten arbeiten, müssen Sie die in diesem Verfahren vorgeschlagenen Demodatenwerte verwenden. Dieses Setup gruppiert Ihre Wellen nach dem Spediteur, der für jeden Auftrag festgelegt wurde.
 
 #### <a name="create-sales-order-1"></a>Auftrag 1 erstellen
 

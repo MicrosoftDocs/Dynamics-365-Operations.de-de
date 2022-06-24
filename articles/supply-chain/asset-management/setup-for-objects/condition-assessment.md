@@ -1,6 +1,6 @@
 ---
-title: Bedingungsbewertung
-description: In diesem Thema wird erläutert, wie Sie eine Bedingungsbewertungsvorlage und -erfassung für eine Anlage in der Anlagenverwaltung erstellen.
+title: Zustandsbewertung
+description: In diesem Artikel wird erläutert, wie Sie eine Bedingungsbewertungsvorlage und -erfassung für eine Anlage in der Anlagenverwaltung erstellen.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cced322dd2f213d8e6025d853edc8472618989b61de7139b28ba1c6bffd3ad2a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aa326a01bb63bd0b59c0df7a3c751a5242a3dd37
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736063"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872093"
 ---
-# <a name="condition-assessment"></a>Bedingungsbewertung
+# <a name="condition-assessment"></a>Zustandsbewertung
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-In diesem Thema wird erläutert, wie Sie eine Bedingungsbewertungsvorlage und -erfassung für eine Anlage in der Anlagenverwaltung erstellen. Eine Bedingungsbewertung wird in regelmäßigen Intervallen durchgeführt. Das vorrangige Ziel einer solchen Bewertung ist, Zustandsdaten für Anlagen zu erstellen und zu verwalten. Gesehen aus einer Perspektive der vorbeugenden Wartung ist es wichtig, zentrale Informationen zu überwachen, wie z. B. den aktuellen Zustand und die verbleibende Nutzungsdauer. Wenn Sie außerdem eine Bedingungsbewertung in regelmäßigen Intervallen ausführen, sind Sie in der Lage, die Bedingungen des Maschinenparks in Ihrer Fabrik zu überwachen und zu vergleichen.
+In diesem Artikel wird erläutert, wie Sie eine Bedingungsbewertungsvorlage und -erfassung für eine Anlage in der Anlagenverwaltung erstellen. Eine Bedingungsbewertung wird in regelmäßigen Intervallen durchgeführt. Das vorrangige Ziel einer solchen Bewertung ist, Zustandsdaten für Anlagen zu erstellen und zu verwalten. Gesehen aus einer Perspektive der vorbeugenden Wartung ist es wichtig, zentrale Informationen zu überwachen, wie z. B. den aktuellen Zustand und die verbleibende Nutzungsdauer. Wenn Sie außerdem eine Bedingungsbewertung in regelmäßigen Intervallen ausführen, sind Sie in der Lage, die Bedingungen des Maschinenparks in Ihrer Fabrik zu überwachen und zu vergleichen.
 
 Die Bedingungsbewertung kann verwendet werden, um mehrere Bedingungen Ihrer Ausrüstung zu messen und zu überwachen. Beispiel: Sie können Erschütterungen auf Maschinen messen. Nachdem Sie Erschütterungsmessungen in der Anlagenverwaltung für verschiedene Arten von Ausrüstung erfasst haben, können Sie nach den aktuellen Bewertungen suchen und die Erschütterungsmessungen anzeigen.
 

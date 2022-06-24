@@ -1,6 +1,6 @@
 ---
 title: Qualitätsprüfung
-description: Dieses Thema enthält Informationen zur Qualitätsprüf+ungsfunktion. Mit dieser Funktion können Lagerarbeiter schnelle Stichproben der Qualität durchführen, während sie Artikel an der Eingangsrampe in Empfang nehmen.
+description: Dieser Artikel enthält Informationen zur Qualitätsprüf+ungsfunktion. Mit dieser Funktion können Lagerarbeiter schnelle Stichproben der Qualität durchführen, während sie Artikel an der Eingangsrampe in Empfang nehmen.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: c5a4b380529ca8cb9c3474b363c7f9ba4220ff2b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: ceb01205edc269690fda306bc90f465dbccc563b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677981"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855056"
 ---
 # <a name="quality-check"></a>Qualitätsprüfung
 
@@ -41,11 +41,11 @@ Dieser Vorgang kann auch so eingerichtet werden, dass alle gescannten Ladungstr�
 
 ## <a name="turn-the-quality-check-feature-on-or-off"></a>Die Funktion „Qualitätsprüfung“ ein- oder ausschalten
 
-Um die Funktionalität zu verwenden, die in diesem Thema beschrieben wird, muss die Funktion *Qualitätsprüfung* für Ihr System eingeschaltet werden. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Qualitätsprüfung* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
+Um die Funktionalität zu verwenden, die in diesem Artikel beschrieben wird, muss die Funktion *Qualitätsprüfung* für Ihr System eingeschaltet werden. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Qualitätsprüfung* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>Funktion für das Beispielszenario einrichten
 
-Dieser Abschnitt enthält Richtlinien und ein Beispiel, das zeigt, wie Sie die Funktion *Qualitätsprüfung* einrichten und Beispieldaten für das Beispielszenario vorbereiten, das später in diesem Thema bereitgestellt wird.
+Dieser Abschnitt enthält Richtlinien und ein Beispiel, das zeigt, wie Sie die Funktion *Qualitätsprüfung* einrichten und Beispieldaten für das Beispielszenario vorbereiten, das später in diesem Artikel bereitgestellt wird.
 
 ### <a name="make-sample-data-available"></a>Beispieldaten zur Verfügung stellen
 
@@ -270,7 +270,7 @@ Konfigurieren Sie ein Menüelement, damit mobile Geräte die Funktion **Qualitä
 
 ## <a name="example-scenario"></a><a name="example-scenario"></a>Beispielszenario
 
-Nachdem Sie alle zuvor beschriebenen Beispieldaten verfügbar gemacht und eingerichtet haben, können Sie dieses Szenario durcharbeiten, um die Funktion *Qualitätsprüfung* zu testen. Bei den in diesem Szenario angezeigten Werten wird davon ausgegangen, dass Sie mit den Standarddemodaten arbeiten, die juristische Person **USMF** ausgewählt und die Beispieldatensätze vorbereitet haben, die weiter oben in diesem Thema beschrieben wurden. Dieses Szenario dient auch als Beispiel, das zeigt, wie die Funktion in einer Produktionseinstellung verwendet werden kann.
+Nachdem Sie alle zuvor beschriebenen Beispieldaten verfügbar gemacht und eingerichtet haben, können Sie dieses Szenario durcharbeiten, um die Funktion *Qualitätsprüfung* zu testen. Bei den in diesem Szenario angezeigten Werten wird davon ausgegangen, dass Sie mit den Standarddemodaten arbeiten, die juristische Person **USMF** ausgewählt und die Beispieldatensätze vorbereitet haben, die weiter oben in diesem Artikel beschrieben wurden. Dieses Szenario dient auch als Beispiel, das zeigt, wie die Funktion in einer Produktionseinstellung verwendet werden kann.
 
 ### <a name="create-a-purchase-order"></a>Eine Bestellung erstellen
 
@@ -357,7 +357,7 @@ In diesem Szenario wird Palette 2 abgelehnt.
 
 Sie haben nun die Qualitätsprüfung abgeschlossen und einen Qualitätsprüfungsauftrag für die abgelehnte Palette erstellt. Um den erstellten Auftrag anzusehen gehen Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsauftrag**.
 
-Jetzt können Tests zu Qualitätsprüfungsaufträge verarbeitet werden. Qualitätstests werden in diesem Thema nicht behandelt.
+Jetzt können Tests zu Qualitätsprüfungsaufträge verarbeitet werden. Qualitätstests werden in diesem Artikel nicht behandelt.
 
 Weitere Informationen zum Qualitätsmanagement finden Sie unter [Qualitätsmanagement – Übersicht](../inventory/enable-quality-management.md)
 

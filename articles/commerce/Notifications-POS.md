@@ -1,6 +1,6 @@
 ---
 title: Auftragsbenachrichtigungen in der Verkaufsstelle (POS) anzeigen
-description: In diesem Thema wird beschrieben, wie Auftragsbenachrichtigungen in der Verkaufsstelle und im Benachrichtigungsframework aktiviert werden, die für andere Arbeitsgänge erweitert werden können.
+description: In diesem Artikel wird beschrieben, wie Auftragsbenachrichtigungen in der Verkaufsstelle und im Benachrichtigungsframework aktiviert werden, die für andere Arbeitsgänge erweitert werden können.
 author: ShalabhjainMSFT
 ms.date: 03/12/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7166afdb43c7e835170c5768a0767f2943222b19c00c7d0aaf067263845651f8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9e646d6bf48461e78dc75c8a154f2fbf1443393
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714137"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853979"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Auftragsbenachrichtigungen in der Verkaufsstelle (POS) anzeigen
 
@@ -65,10 +65,10 @@ Wenn neue Aufträge im Prozess aufgenommen werden, ändert sich das Benachrichti
 
 ## <a name="enable-live-content-on-pos-buttons"></a>Aktivieren Sie Liveinhalt auf POS-Schaltflächen
 
-POS-Schaltflächen können jetzt eine Anzahl anzeigen, damit Arbeitskräfte einfach bestimmen können welche Aufgaben ihre umgehende Aufmerksamkeit erfordern. Um diese Nummer in einer POS-Schaltfläche anzuzeigen, müssen Sie die Einstellungen Benachrichtigung abschließen, die weiter oben in diesem Thema beschrieben werden (das heißt, Sie müssen Benachrichtigungen für einen Arbeitsgang aktivieren und richten ein Benachrichtigungsintervall und die POS-Berechtigungsgruppe für die Arbeitskraft ein.) Darüber hinaus müssen Sie das Schaltflächenrasterdesigner öffnen, die Eigenschaften der Schaltfläche anzeigen und **Aktivieren Sie Liveinhalt** aktivieren. Im Feld **Inhalts-Ausrichtung** können Sie auswählen, ob die Anzahl in der oberen rechten Ecke der Schaltfläche (**Oben rechts**) oder im Verteilzentrum (**Mitte**) angezeigt wird.
+POS-Schaltflächen können jetzt eine Anzahl anzeigen, damit Arbeitskräfte einfach bestimmen können welche Aufgaben ihre umgehende Aufmerksamkeit erfordern. Um diese Nummer in einer POS-Schaltfläche anzuzeigen, müssen Sie die Einstellungen Benachrichtigung abschließen, die weiter oben in diesem Artikel beschrieben werden (das heißt, Sie müssen Benachrichtigungen für einen Arbeitsgang aktivieren und richten ein Benachrichtigungsintervall und die POS-Berechtigungsgruppe für die Arbeitskraft ein.) Darüber hinaus müssen Sie das Schaltflächenrasterdesigner öffnen, die Eigenschaften der Schaltfläche anzeigen und **Aktivieren Sie Liveinhalt** aktivieren. Im Feld **Inhalts-Ausrichtung** können Sie auswählen, ob die Anzahl in der oberen rechten Ecke der Schaltfläche (**Oben rechts**) oder im Verteilzentrum (**Mitte**) angezeigt wird.
 
 > [!NOTE]
-> Der Liveinhalt kann für Arbeitsgänge aktiviert werden, wenn das Feld **Aktivieren Sie Benachrichtigungen** auf der Seite **POS-Vorgängen** aktiviert wurde, wie weiter oben in diesem Thema beschrieben wurde.
+> Der Liveinhalt kann für Arbeitsgänge aktiviert werden, wenn das Feld **Aktivieren Sie Benachrichtigungen** auf der Seite **POS-Vorgängen** aktiviert wurde, wie weiter oben in diesem Artikel beschrieben wurde.
 
 Die folgende Abbildung zeigt die Inhaltseinstellungen, die im Schaltflächenrasterdesigner angezeigt werden.
 

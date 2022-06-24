@@ -1,6 +1,6 @@
 ---
 title: Übersicht über Benachrichtigungen (enthält Video)
-description: Dieses Thema enthält allgemeine Informationen zu Warnungen. Sie können Warnungen verwenden, um über Ereignisse informiert zu bleiben, die Sie während des Arbeitstags nachverfolgen möchten.
+description: Dieser Artikel enthält allgemeine Informationen zu Warnungen. Sie können Warnungen verwenden, um über Ereignisse informiert zu bleiben, die Sie während des Arbeitstags nachverfolgen möchten.
 author: RichdiMSFT
 ms.date: 09/04/2019
 ms.topic: overview
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: c3332bdf7f2edb693c95a4d5a6f95906e14c0a42
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 4b63ac8a09efb9ab449b651d030bd14a24d5cc36
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984967"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850077"
 ---
 # <a name="alerts-overview"></a>Überblick über Warnungen
 

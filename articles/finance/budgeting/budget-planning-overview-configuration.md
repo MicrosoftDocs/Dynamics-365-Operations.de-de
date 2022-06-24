@@ -1,6 +1,6 @@
 ---
-title: Budgetplanung – Übersicht
-description: Dieses Thema beschreibt die Budgetplanung. Es enthält Informationen, die Ihnen bei der Konfiguration der Budgetplanung und der Einrichtung von Budgetplanungsprozessen helfen können.
+title: Übersicht über die Budgetplanung
+description: Dieser Artikel beschreibt die Budgetplanung. Es enthält Informationen, die Ihnen bei der Konfiguration der Budgetplanung und der Einrichtung von Budgetplanungsprozessen helfen können.
 author: panolte
 ms.date: 01/11/2018
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d69d3d1620616bd7a136645d6f28f638e8bcf199
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 1f1ecf830953362636c8b0369586d8b76499ebb3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711742"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853553"
 ---
-# <a name="budget-planning-overview"></a>Budgetplanung – Übersicht
+# <a name="budget-planning-overview"></a>Übersicht über die Budgetplanung
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema beschreibt die Budgetplanung. Es enthält Informationen, die Ihnen bei der Konfiguration der Budgetplanung und der Einrichtung von Budgetplanungsprozessen helfen können.
+Dieser Artikel beschreibt die Budgetplanung. Es enthält Informationen, die Ihnen bei der Konfiguration der Budgetplanung und der Einrichtung von Budgetplanungsprozessen helfen können.
 
 ## <a name="overview-of-budget-planning"></a>Über blick zur Budgetplanung
 
@@ -91,7 +91,7 @@ Ein Budgetplanungsworkflow besteht aus einer geordneten Menge von Phasen, die ei
 
 Sie erstellen einen Budgetplanungs-Workflow im Abschnitt **Workflow-Stufen** der Seite **Budgetplanungskonfiguration**. Dort können Sie die Phasen und den zu verwendenden Budgetierungs-Workflow auswählen und zusätzliche Einstellungen konfigurieren.
 
-Eine bewährte Methode ist das Erstellen eines Budgetplanungsworkflows für jedes Ebene einer Budgetplanungshierarchie. Anschließend ordnen Sie einen Budgetierungs-Workflow zu, der Elemente enthält, die den Stufen im Workflow der Budgetplanung entsprechen. In dem Beispielschema, das weiter oben in diesem Thema erscheint, wird ein Budgetplanungs-Workflow für die Vertriebsabteilungen und ein weiterer für die Zentrale erstellt. Ein Budgetierungs-Workflow bewegt die Budgetpläne durch die verschiedenen Phasen.
+Eine bewährte Methode ist das Erstellen eines Budgetplanungsworkflows für jedes Ebene einer Budgetplanungshierarchie. Anschließend ordnen Sie einen Budgetierungs-Workflow zu, der Elemente enthält, die den Stufen im Workflow der Budgetplanung entsprechen. In dem Beispielschema, das weiter oben in diesem Artikel erscheint, wird ein Budgetplanungs-Workflow für die Vertriebsabteilungen und ein weiterer für die Zentrale erstellt. Ein Budgetierungs-Workflow bewegt die Budgetpläne durch die verschiedenen Phasen.
 
 Sie erstellen einen Budgetierungs-Workflow für die Budgetplanung auf der Seite **Budgetierungs-Workflows**. Der Vorgang ähnelt dem Vorgang zum Erstellen anderer Workflows. Die folgende Abbildung zeigt ein Beispiel für einen Workflow für die Zentrale.
 
@@ -141,7 +141,7 @@ Phasenzuteilungen werden verwendet, um Budgetplanpositionen während des Workflo
 
 Wenn Sie eine Phasenzuteilung einrichten, ordnen Sie den Budgetplanungsworkflow zu und stellen ihn mit dem Zuteilungszeitplan bereit. Der Budgetplanungs-Workflow muss mit einem Budgetierungs-Workflow verbunden sein, der die **Budgetplanungsstufenzuweisung** automatisierte Workflow-Aufgabe verwendet. Wenn der Workflow die angegebene Phase erreicht, tritt die Zuweisung automatisch auf. Diese automatisierte Aufgabe kann verwendet werden, um Budgetplanpositionen in einem neuen Szenario zu erstellen.
 
-In dem Beispielschema, das weiter oben in diesem Thema erscheint, wird eine Zuweisung vorgenommen, um Beträge von einem Budgetplan und Szenarien in der Phase „Baseline“ für die Zentrale auf einen anderen Budgetplan und Szenarien in der Phase „Schätzung“ für die Vertriebsabteilungen zu übertragen. Die folgende Abbildung zeigt den relevanten Abschnitt des Beispielsschemas.
+In dem Beispielschema, das weiter oben in diesem Artikel erscheint, wird eine Zuweisung vorgenommen, um Beträge von einem Budgetplan und Szenarien in der Phase „Baseline“ für die Zentrale auf einen anderen Budgetplan und Szenarien in der Phase „Schätzung“ für die Vertriebsabteilungen zu übertragen. Die folgende Abbildung zeigt den relevanten Abschnitt des Beispielsschemas.
 
 [![Phasenzuteilungen.](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
 

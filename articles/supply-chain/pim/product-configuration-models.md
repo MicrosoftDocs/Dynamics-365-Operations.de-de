@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fddad1fffd61ef0cf78977721bdf2da51aa4c682
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9bee2d68a2ed2aa339ddf8232bba4541f4fe52b8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984645"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871919"
 ---
 # <a name="product-configuration-models-overview"></a>Produktkonfigurationsmodelle – Überblick
 
@@ -75,7 +75,7 @@ Beim Attributtyp <strong>Boolesch</strong>, <strong>Ganzzahl</strong> mit einem 
 <td>Einschränkungen</td>
 <td>Einschränkungen beschreiben die Einschränkungen der Produktmodellkonfiguration. Einschränkungen werden verwendet, um sicherzustellen, dass nur gültige Werte ausgewählt werden, wenn ein Produkt konfiguriert wird. Bei Einschränkungen kann es sich um Ausdruckseinschränkungen oder Tabelleneinschränkungen handeln:
 <ul>
-<li>Ausdruckseinschränkungen können nur für die Komponente verwendet werden, mit der sie verbunden sind. Die Ausdruckseinschränkungen für eine Komponente können jedoch auf Attribute der Unterkomponenten der Komponente verweisen. Der Produktkonfigurations-Solver wird verwendet, um die Einschränkungen aufzulösen, und Sie müssen die Solver-Syntax verwenden, wenn Sie die Einschränkungen schreiben. Weitere Informationen finden Sie im Link zu Ausdruckseinschränkungen und Tabelleneinschränkungen.</li>
+<li>Ausdruckseinschränkungen können nur für die Komponente verwendet werden, mit der sie verbunden sind. Die Ausdruckseinschränkungen für eine Komponente können jedoch auf Attribute der Unterkomponenten der Komponente verweisen. Der Produktkonfigurations-Solver wird verwendet, um die Einschränkungen aufzulösen, und Sie müssen die Solver-Syntax verwenden, wenn Sie die Einschränkungen schreiben. Weitere Informationen finden Sie im Artikellink zu Ausdruckseinschränkungen und Tabelleneinschränkungen.</li>
 <li>Tabelleneinschränkungen müssen definiert werden, damit sie auf eine Komponente in einem Produktkonfigurationsmodell angewendet werden können. Tabelleneinschränkungen können als benutzerdefinierte oder als systemdefinierte Einschränkung vorliegen. Eine benutzerdefinierte Tabelleneinschränkung ist eine Art Matrix, der verwendet werden kann, um den Satz der Kombinationen für die Attributwerte zu beschreiben, die von Attributtypen definiert werden. Wenn beispielsweise Lautsprecher produziert werden, kann die Matrix für eine benutzerdefinierte Tabelleneinschränkung Spalten für das Oberflächenmaterial und das Vordergerippe des Lautsprechers anzeigen.</li>
 </ul>
 <strong>Beispiel</strong> Lautsprecher sind in vier Oberflächendesigns verfügbar: Schwarz, Eiche, Rosenholz und Weiß. Die Lautsprecher können einen von drei vorderen Grills haben: Beispiel für schwarzen, Metall oder Weiß. Das Ende schwarze ist für alle Grills verfügbar, die jedoch anderen Ende werden bestimmten Grills beschränkt. Die folgende Tabelle enthält ein Beispiel der Informationen, die auf der Registerkarte auf <strong>Zulässige Kombinationen</strong> der Seite <strong>Tabelleneinschränkung bearbeiten</strong> angezeigt werden.

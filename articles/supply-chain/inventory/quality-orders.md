@@ -1,6 +1,6 @@
 ---
 title: Qualitätsprüfungsaufträge
-description: Dieses Thema beschreibt, wie Sie manuell oder automatisch Qualitätsprüfungsaufträge erstellen und wie Sie damit arbeiten, um in Microsoft Dynamics 365 Supply Chain Management Inspektionen durchzuführen und Testergebnisse zu erfassen.
+description: Dieser Artikel beschreibt, wie Sie manuell oder automatisch Qualitätsprüfungsaufträge erstellen und wie Sie damit arbeiten, um in Microsoft Dynamics 365 Supply Chain Management Inspektionen durchzuführen und Testergebnisse zu erfassen.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 69a4a61a599f1279ec7ad68ebb20c7b4b0f37005
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eb7ab1de0fb4d93ed18f1862630c1af7af7f3095
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571856"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857778"
 ---
 # <a name="quality-orders"></a>Qualitätsprüfungsaufträge
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema beschreibt, wie Sie manuell oder automatisch Qualitätsprüfungsaufträge erstellen und wie Sie damit arbeiten, um in Microsoft Dynamics 365 Supply Chain Management Inspektionen durchzuführen und Testergebnisse zu erfassen.
+Dieser Artikel beschreibt, wie Sie manuell oder automatisch Qualitätsprüfungsaufträge erstellen und wie Sie damit arbeiten, um in Microsoft Dynamics 365 Supply Chain Management Inspektionen durchzuführen und Testergebnisse zu erfassen.
 
 ## <a name="automatically-created-quality-orders"></a>Automatisch erstellte Qualitätsprüfungsaufträge
 
@@ -39,7 +39,7 @@ Um einen Qualitätsprüfungsauftrag manuell zu erstellen, folgen Sie diesen Schr
 
 1. Wechseln Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsaufträge**.
 1. Wählen Sie **Neu** aus.
-1. Wählen Sie im Dialogfeld **Qualitätsprüfungsaufträge** im Feld **Referenztyp** die Bestandsreferenz, auf die sich Ihr Qualitätsprüfungsauftrag beziehen soll. Eine Beschreibung der Referenztypen, die zur Auswahl stehen, finden Sie im Abschnitt [Referenztypen für Qualitätsprüfungsaufträge](#ref-types) weiter unten in diesem Thema.
+1. Wählen Sie im Dialogfeld **Qualitätsprüfungsaufträge** im Feld **Referenztyp** die Bestandsreferenz, auf die sich Ihr Qualitätsprüfungsauftrag beziehen soll. Eine Beschreibung der Referenztypen, die zur Auswahl stehen, finden Sie im Abschnitt [Referenztypen für Qualitätsprüfungsaufträge](#ref-types) weiter unten in diesem Artikel.
 
     > [!NOTE]
     > Der Bestand, der sich auf die ausgewählte Referenz bezieht, muss vorhanden sein. Wenn für die von Ihnen gewählte Kombination aus Referenztyp, Menge und Bestandsdimensionen kein Bestand verfügbar ist, erhalten Sie eine Fehlermeldung.
@@ -88,7 +88,7 @@ Sie können die Seite „Qualitätsprüfungsauftrag“ verwenden, um manuell ein
 
 ### <a name="from-the-quality-orders-page"></a>Von der Seite Qualitätsprüfungsaufträge
 
-Um Qualitätsprüfungsaufträge manuell zu erstellen und alle vorhandenen Qualitätsprüfungsaufträge anzuzeigen, gehen Sie zu **Bestandsmanagement \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsaufträge**. Die verbleibenden Abschnitte dieses Themas beschreiben, wie Sie mit der Seite **Qualitätsprüfungsaufträge** arbeiten können.
+Um Qualitätsprüfungsaufträge manuell zu erstellen und alle vorhandenen Qualitätsprüfungsaufträge anzuzeigen, gehen Sie zu **Bestandsmanagement \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsaufträge**. Die verbleibenden Abschnitte dieses Artikels beschreiben, wie Sie mit der Seite **Qualitätsprüfungsaufträge** arbeiten können.
 
 ### <a name="from-sales-orders"></a>Von Verkaufsaufträgen
 

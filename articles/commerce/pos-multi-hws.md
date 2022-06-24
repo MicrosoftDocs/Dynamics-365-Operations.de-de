@@ -1,6 +1,6 @@
 ---
-title: Spezielle Zahlungsterminals und Eingabeaufforderungen für einen Drucker und eine Kassenschublade
-description: Dieses Thema enthält Informationen zur Möglichkeit eines dedizierten Zahlungsterminals und fordert den Benutzer auf, eine Kassenschublade und einen Belegdrucker auszuwählen.
+title: Spezielle Zahlungsterminals und Eingabeaufforderungen für Drucker und Kassenschublade
+description: Dieser Artikel enthält Informationen zur Möglichkeit eines dedizierten Zahlungsterminals und fordert den Benutzer auf, eine Kassenschublade und einen Belegdrucker auszuwählen.
 author: BrianShook
 ms.date: 05/20/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: b955e55271471ac43ff4c2b217c6448b30536e06
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 7c010448e43bbfb1f949508ce1b62bd07f3107e1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779769"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874920"
 ---
-# <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Spezielle Zahlungsterminals und Eingabeaufforderungen für einen Drucker und eine Kassenschublade
+# <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Spezielle Zahlungsterminals und Eingabeaufforderungen für Drucker und Kassenschublade
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält Informationen zur Möglichkeit eines dedizierten Zahlungsterminals und fordert den Benutzer auf, eine Kassenschublade und einen Belegdrucker auszuwählen.
+Dieser Artikel enthält Informationen zur Möglichkeit eines dedizierten Zahlungsterminals und fordert den Benutzer auf, eine Kassenschublade und einen Belegdrucker auszuwählen.
 
 ## <a name="overview"></a>Übersicht
 
@@ -46,7 +46,7 @@ Microsoft Dynamics 365 Commerce unterstützt diese Trends, indem ein Szenario ak
 
 ## <a name="supported-pos-clients-and-devices"></a>Unterstützte POS-Clients und -Geräte
 
-Die in diesem Thema beschriebenen Funktionen werden vom Modern POS für Windows und vom Modern POS für Android POS-Clients unterstützt.
+Die in diesem Artikel beschriebenen Funktionen werden vom Modern POS für Windows und vom Modern POS für Android POS-Clients unterstützt.
 
 Diese Funktion unterstützt netzwerkfähige Zahlungsterminals und Belegdrucker. Sie können die Kassenschublade unterstützen, indem Sie die Kassenschublade über den d/k-Anschluss an den netzwerkfähigen Belegdrucker anschließen.
 

@@ -1,6 +1,6 @@
 ---
 title: Bestandslisten
-description: In diesem Thema wird beschrieben, wie Sie auf der Seite „Bestandsliste“ die vorhandenen Bestandsdaten überprüfen können. Es zeigt einige Möglichkeiten, wie die verschiedenen Filter- und Sortieroptionen zusammenarbeiten, und wie diese Optionen manchmal zu unerwarteten Ergebnissen führen können, wenn sie kombiniert werden.
+description: In diesem Artikel wird beschrieben, wie Sie auf der Seite „Bestandsliste“ die vorhandenen Bestandsdaten überprüfen können. Es zeigt einige Möglichkeiten, wie die verschiedenen Filter- und Sortieroptionen zusammenarbeiten, und wie diese Optionen manchmal zu unerwarteten Ergebnissen führen können, wenn sie kombiniert werden.
 author: yufeihuang
 ms.date: 07/07/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-07
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 9464240123ec2248e1b66f32dd3c9a2f974512b6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5747ae985e1791de8ddd93b678c2449a4a1802da
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573920"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879047"
 ---
 # <a name="inventory-on-hand-list"></a>Bestandslisten
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie auf der Seite **Bestandsliste** die vorhandenen Bestandsdaten überprüfen können. Es zeigt einige Möglichkeiten, wie die verschiedenen Filter- und Sortieroptionen zusammenarbeiten, und wie diese Optionen manchmal zu unerwarteten Ergebnissen führen können, wenn sie kombiniert werden.
+In diesem Artikel wird beschrieben, wie Sie auf der Seite **Bestandsliste** die vorhandenen Bestandsdaten überprüfen können. Es zeigt einige Möglichkeiten, wie die verschiedenen Filter- und Sortieroptionen zusammenarbeiten, und wie diese Optionen manchmal zu unerwarteten Ergebnissen führen können, wenn sie kombiniert werden.
 
 ## <a name="query-your-on-hand-inventory"></a>Abfrage Ihres verfügbaren Lagerbestands
 
@@ -35,9 +35,9 @@ Die Seite **Bestandsliste** wird automatisch aktualisiert, wenn Buchungen im Bes
 Verwenden Sie die folgenden Tools, um die gesuchten Produkte zu finden:
 
 - Wählen Sie im Aktionsbereich [**Dimensionen**](#dimensions) aus, um ein Dialogfeld zu öffnen, wo Sie Spalten hinzufügen oder entfernen können, die im Raster **Verfügbar** angezeigt werden.
-- Im [Bereich **Filter**](#filters-pane) geben Sie Werte für bestimmte Felder ein, um nur Datensätze anzeigen zu lassen, die diesen Werten entsprechen. Beachten Sie, dass Filter, die Sie hier festlegen, für Quelltabellen gelten, die möglicherweise später gemäß den von Ihnen ausgewählten Dimensionen aggregiert werden. Informationen darüber, wie sich dieses Verhalten auf Ihre Ergebnisse auswirken kann, finden Sie weiter unten unter [Beispiele](#examples).
+- Im [Bereich **Filter**](#filters-pane) geben Sie Werte für bestimmte Felder ein, um nur Datensätze anzeigen zu lassen, die diesen Werten entsprechen. Beachten Sie, dass Filter, die Sie hier festlegen, für Quelltabellen gelten, die möglicherweise später gemäß den von Ihnen ausgewählten Dimensionen aggregiert werden. Informationen darüber, wie sich dieses Verhalten auf Ihre Ergebnisse auswirken kann, finden Sie weiter unten in diesem Artikel unter [Beispiele](#examples).
 - Im Bereich **Filter** wählen Sie **Anwenden**, um die Liste der passenden Lagerbestände im Raster **Verfügbar** zu generieren.
-- Im Raster **Verfügbar** wählen Sie eine beliebige Spaltenüberschrift aus, die nach den Werten in dieser Spalte sortiert oder gefiltert werden soll. Ein QuickFilter am oberen Rand des Rasters enthält zusätzliche Filteroptionen. Diese Filter gelten für die Ergebnisse, nicht für die Quelltabellen. Informationen darüber, wie sich dieses Verhalten auf Ihre Ergebnisse auswirken kann, finden Sie weiter unten unter [Beispiele](#examples).
+- Im Raster **Verfügbar** wählen Sie eine beliebige Spaltenüberschrift aus, die nach den Werten in dieser Spalte sortiert oder gefiltert werden soll. Ein QuickFilter am oberen Rand des Rasters enthält zusätzliche Filteroptionen. Diese Filter gelten für die Ergebnisse, nicht für die Quelltabellen. Informationen darüber, wie sich dieses Verhalten auf Ihre Ergebnisse auswirken kann, finden Sie weiter unten in diesem Artikel unter [Beispiele](#examples).
 
 Für jeden passenden Artikel enthält das Raster **Verfügbar** die folgenden Spalten mit Bestandsinformationen.
 
@@ -64,7 +64,7 @@ Verwenden Sie den Bereich **Filter**, um die Bestandsliste zu filtern, sodass nu
 > [!IMPORTANT]
 > Die Seite **Bestandsliste** wird aus einer detaillierten Bestandstabelle zusammengestellt, die alle verfügbaren Dimensionen enthält. Die Liste auf dieser Seite ist jedoch eine Zusammenfassung. Daher können Zeilen aus der Quelltabelle kombiniert werden, indem Werte gemäß den angezeigten Dimensionen aggregiert werden.
 >
-> Die Filter, die Sie im Bereich **Filter** festlegen, gelten für die Quelltabelle und nicht für die aggregierte Liste. Dieses Verhalten kann manchmal zu unerwarteten Ergebnissen führen. Informationen darüber, wie sich dieses Verhalten auf Ihre Ergebnisse auswirken kann, finden Sie weiter unten unter [Beispiele](#examples).
+> Die Filter, die Sie im Bereich **Filter** festlegen, gelten für die Quelltabelle und nicht für die aggregierte Liste. Dieses Verhalten kann manchmal zu unerwarteten Ergebnissen führen. Informationen darüber, wie sich dieses Verhalten auf Ihre Ergebnisse auswirken kann, finden Sie weiter unten in diesem Artikel unter [Beispiele](#examples).
 > 
 > Die [Filter, die im Raster bereitgestellt werden,](#grid-filters) *gelten jedoch* für die aggregierte Liste. Diese Filter enthalten sowohl QuickFilter am oberen Rand des Rasters als auch den Filter für jede Spaltenüberschrift.
 
@@ -75,7 +75,7 @@ Sie können die im Bereich **Filter** verfügbaren Filter wie folgt ändern:
 
 ## <a name="select-which-dimensions-to-show"></a><a name="dimensions"></a>Anzuzeigende Dimensionen auswählen
 
-Die Dimensionen verraten mehr über jeden Artikel in der Bestandsliste und bieten Ihnen damit mehr Möglichkeiten, die Liste zu sortieren und zu filtern. Die Dimensionen, die Sie anzeigen lassen, wirken sich auch darauf aus, wie Zeilen auf der Seite **Bestandsliste** aggregiert werden. Diese Aggregation kann sich wiederum darauf auswirken, wie Zeilen aus den Quelltabellen in den angezeigten Ergebnissen kombiniert werden. Informationen darüber, wie sich dieses Verhalten auf Ihre Ergebnisse auswirken kann, finden Sie weiter unten unter [Beispiele](#examples).
+Die Dimensionen verraten mehr über jeden Artikel in der Bestandsliste und bieten Ihnen damit mehr Möglichkeiten, die Liste zu sortieren und zu filtern. Die Dimensionen, die Sie anzeigen lassen, wirken sich auch darauf aus, wie Zeilen auf der Seite **Bestandsliste** aggregiert werden. Diese Aggregation kann sich wiederum darauf auswirken, wie Zeilen aus den Quelltabellen in den angezeigten Ergebnissen kombiniert werden. Informationen darüber, wie sich dieses Verhalten auf Ihre Ergebnisse auswirken kann, finden Sie weiter unten in diesem Artikel unter [Beispiele](#examples).
 
 Passen Sie die angezeigte Auswahl der Bestandsdimensionen wie folgt an.
 
@@ -89,7 +89,7 @@ Passen Sie die angezeigte Auswahl der Bestandsdimensionen wie folgt an.
 
 ## <a name="filter-on-the-output-of-the-inventory-on-hand-list"></a><a name="grid-filters"></a>Die Ausgabe der Bestandsliste filtern
 
-Wählen Sie im Raster **Verfügbar** eine beliebige Spaltenüberschrift aus, die nach den Werten in dieser Spalte sortiert oder gefiltert werden soll. Ein QuickFilter am oberen Rand des Rasters enthält zusätzliche Filteroptionen. Diese Filter gelten für die Ergebnisse, nicht für die Quelltabellen. Informationen darüber, wie sich dieses Verhalten auf Ihre Ergebnisse auswirken kann, finden Sie weiter unten unter [Beispiele](#examples).
+Wählen Sie im Raster **Verfügbar** eine beliebige Spaltenüberschrift aus, die nach den Werten in dieser Spalte sortiert oder gefiltert werden soll. Ein QuickFilter am oberen Rand des Rasters enthält zusätzliche Filteroptionen. Diese Filter gelten für die Ergebnisse, nicht für die Quelltabellen. Informationen darüber, wie sich dieses Verhalten auf Ihre Ergebnisse auswirken kann, finden Sie weiter unten in diesem Artikel unter [Beispiele](#examples).
 
 > [!NOTE]
 > Sie können nicht nach allen Spalten filtern und sortieren. Die meisten Mengenspalten enthalten keine Sortier- und Filtersteuerelemente, da es sich um berechnete Felder handelt. Die Spalte **Verfügbar** ist eine Ausnahme.

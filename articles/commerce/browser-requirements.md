@@ -1,6 +1,6 @@
 ---
 title: Browseranforderungen für Dynamics 365 Commerce-Websites
-description: Dieses Thema behandelt die Browseranforderungen von Microsoft Dynamics 365 Commerce-Websites.
+description: Dieser Artikel behandelt die Browseranforderungen von Microsoft Dynamics 365 Commerce-Websites.
 author: anupamar-ms
 ms.date: 12/15/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f97e5800785c84d7d804c7af8bffd7bfbccc95a5951d560996f4ca586069392e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c80bec4b4e40c904ef781893b6d695eda31cce92
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740454"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869197"
 ---
 # <a name="browser-requirements-for-dynamics-365-commerce-sites"></a>Browseranforderungen für Dynamics 365 Commerce-Websites
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema behandelt die Browseranforderungen von Microsoft Dynamics 365 Commerce-Websites.
+Dieser Artikel behandelt die Browseranforderungen von Microsoft Dynamics 365 Commerce-Websites.
 
 Dynamics 365 Commerce-Websites werden am besten von folgenden Webbrowsern unterstützt. Um die neueste Version für jeden Webbrowser zu suchen, wechseln Sie zur Website des Softwareherstellers.
 

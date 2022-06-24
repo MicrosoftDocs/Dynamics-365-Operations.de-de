@@ -1,6 +1,6 @@
 ---
 title: Neues Transportverwaltungsmodul erstellen
-description: In diesem Thema wird beschrieben, wie Sie eine neue Transportmanagement-Engine in Dynamics 365 Supply Chain Management erstellen.
+description: In diesem Artikel wird beschrieben, wie Sie eine neue Transportmanagement-Engine in Dynamics 365 Supply Chain Management erstellen.
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be52c6afb66e88b36f3b2cdf5af14e17b3d3005f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 627972ef6afb7551bb57821ded24183f8f335e9b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678121"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857256"
 ---
 # <a name="create-a-new-transportation-management-engine"></a>Neues Transportverwaltungsmodul erstellen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie eine neue Transportmanagement-Engine in Dynamics 365 Supply Chain Management erstellen. 
+In diesem Artikel wird beschrieben, wie Sie eine neue Transportmanagement-Engine in Dynamics 365 Supply Chain Management erstellen. 
 
 Transportverwaltungsmodule (TMS) definieren die Logik, die verwendet wird, um Transportsätze in der Transportverwaltung zu generieren und zu verarbeiten. Supply Chain Management bietet verschiedene Engine-Typen, die verschiedene Parameter berechnen, z. B. Tarife, Transitzeiten und die Anzahl der Zonen, die während des Transits durchquert werden. In diesem Artikel wird erläutert, wie Sie die Microsoft Visual Studio Entwicklungsumgebung zusammen mit Supply Chain Management-Entwicklungstools verwenden, um eine neue TMS-Engine zu erstellen und bereitzustellen, und dann, wie die Engine in Operations eingerichtet wird. Weitere Informationen zu den Motoren finden Sie unter [Transportmanagement-Engines](transportation-management-engines.md).
 

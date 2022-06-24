@@ -1,6 +1,6 @@
 ---
 title: Peripheriegeräte
-description: In diesem Thema werden einige Konzepte in Verbindung mit Commerce-Peripheriegeräten beschrieben.
+description: In diesem Artikel werden einige Konzepte in Verbindung mit Commerce-Peripheriegeräten beschrieben.
 author: BrianShook
 ms.date: 03/01/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.custom:
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 76ce17777a2d13b46e5faed96dbde5e0d93782eb
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 641b45390477c8c5e6239709f7c91887a403fbaf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462240"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880080"
 ---
 # <a name="peripherals"></a>Peripheriegeräte
 
 [!include[banner](includes/banner.md)]
 
-In diesem Thema werden die Konzepte erläutert, die sich auf Speicherperipheriegeräte beziehen. Es werden die verschiedenen Arten Peripheriegeräte beschrieben, die mit der Verkaufsstelle (POS) verbunden werden können und die Komponenten, die für das Verwalten der Verbindung mit dem POS zuständig sind.
+In diesem Artikel werden die Konzepte erläutert, die sich auf Speicherperipheriegeräte beziehen. Es werden die verschiedenen Arten Peripheriegeräte beschrieben, die mit der Verkaufsstelle (POS) verbunden werden können und die Komponenten, die für das Verwalten der Verbindung mit dem POS zuständig sind.
 
 ## <a name="concepts"></a>Konzepte
 
@@ -55,7 +55,7 @@ Modern POS für Android ist eine Android-basierte Version des Modern POS-Program
 
 ### <a name="pos-peripherals"></a>POS-Peripheriegeräte
 
-POS-Peripheriegeräte sidn Geräte, die für POS-Funktionen explizit unterstützt werden. Diese Peripheriegeräte werden in der Regel in bestimmten Klassen aufgeteilt. Weitere Informationen über diese Klassen lesen Sie den Abschnitt "Geräteklasse" dieses Themas.
+POS-Peripheriegeräte sidn Geräte, die für POS-Funktionen explizit unterstützt werden. Diese Peripheriegeräte werden in der Regel in bestimmten Klassen aufgeteilt. Weitere Informationen über diese Klassen lesen Sie den Abschnitt "Geräteklasse" dieses Artikels.
 
 ### <a name="hardware-station"></a>Hardwarestation
 

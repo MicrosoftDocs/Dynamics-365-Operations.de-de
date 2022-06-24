@@ -1,6 +1,6 @@
 ---
 title: Stundungszeitpläne in Umsatzerlös- und Ausgabenstundungen
-description: In diesem Thema werden Stundungszeitpläne in Umsatzerlös- und Ausgabenstundungen beschrieben.
+description: In diesem Artikel werden Stundungszeitpläne in Umsatzerlös- und Ausgabenstundungen beschrieben.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 9135ac733496a0c5d79669c35972c273c209f81d
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 093005f9b66d7ce741689b55612f006fa5123910
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685976"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903362"
 ---
 # <a name="deferral-schedules"></a>Stundungszeitpläne
 

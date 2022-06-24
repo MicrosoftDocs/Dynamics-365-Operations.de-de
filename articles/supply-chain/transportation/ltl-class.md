@@ -1,6 +1,6 @@
 ---
 title: Klassen für Teilladungen (LTL)
-description: Dieses Thema erklärt, was Less than Teilladung (LTL) Klassen sind und beschreibt, wie Sie diese in Microsoft Dynamics 365 Supply Chain Management festlegen.
+description: Dieser Artikel erklärt, was Less than Teilladung (LTL) Klassen sind und beschreibt, wie Sie diese in Microsoft Dynamics 365 Supply Chain Management festlegen.
 author: Weijiesa
 ms.date: 04/05/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-04-05
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: a6e05ea7534ee081778a899d5956e6ca7cd104cb
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 9ab05e1bc5d0ae2c8b5d98dda32660d2436676e9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678065"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857198"
 ---
 # <a name="less-than-truckload-ltl-classes"></a>Klassen für Teilladungen (LTL)
 
@@ -33,7 +33,7 @@ Mit dieser Funktion können Sie mit Ihrem System die folgenden Aufgaben durchfü
 - Ermittelt die Verpackungsanforderungen für jede LTL-Klasse durch Überprüfung der internationalen LTL-Standards. Auf diese Weise stellen Sie sicher, dass Ihre Produkte gut geschützt und sicher versandt werden.
 - Erhalten Sie genaue Versandschätzungen, basierend auf der LTL-Frachtklasse für jedes Produkt.
 
-Dieses Thema beschreibt, wie Sie LTL-Klassen in Microsoft Dynamics 365 Supply Chain Management erstellen.
+Dieser Artikel beschreibt, wie Sie LTL-Klassen in Microsoft Dynamics 365 Supply Chain Management erstellen.
 
 ## <a name="create-an-ltl-class"></a>Erstellen einer LTL-Klasse
 

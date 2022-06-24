@@ -1,6 +1,6 @@
 ---
 title: Wareneingangsübersicht
-description: Dieses Thema enthält Informationen zu den Wareneingangsübersichtfunktion. Die Wareneingangsübersichtseite ist Teil dieser Funktionen und bietet eine Übersicht aller Artikel, von denen erwarten wird, dass sie als eingehende Artikel eintreffen.
+description: Dieser Artikel enthält Informationen zu den Wareneingangsübersichtfunktion. Die Wareneingangsübersichtseite ist Teil dieser Funktionen und bietet eine Übersicht aller Artikel, von denen erwarten wird, dass sie als eingehende Artikel eintreffen.
 author: yufeihuang
 ms.date: 11/02/2017
 ms.topic: article
@@ -18,20 +18,20 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 1248156ba9081fe4afbffd480b45cf9326d14a6c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8118db9469c01c43b23c64ee383ac1d383a0ba7a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567438"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874071"
 ---
 # <a name="arrival-overview"></a>Wareneingangsübersicht
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Informationen zu den Wareneingangsübersichtfunktion. Die Wareneingangsübersichtseite ist Teil dieser Funktionen und bietet eine Übersicht aller Artikel, von denen erwarten wird, dass sie als eingehende Artikel eintreffen.
+Dieser Artikel enthält Informationen zu den Wareneingangsübersichtfunktion. Die Wareneingangsübersichtseite ist Teil dieser Funktionen und bietet eine Übersicht aller Artikel, von denen erwarten wird, dass sie als eingehende Artikel eintreffen.
 
-Die Seite **Wareneingangsübersicht** enthält eine Übersicht aller eingehenden erwarteten Artikel. Sie zeigt auch Eingänge an, die basierend auf der Übersicht initialisiert werden können. Dieses Thema bezieht sich auf den empfangenden Prozess.
+Die Seite **Wareneingangsübersicht** enthält eine Übersicht aller eingehenden erwarteten Artikel. Sie zeigt auch Eingänge an, die basierend auf der Übersicht initialisiert werden können. Dieser Artikel bezieht sich auf den empfangenden Prozess.
 
 ## <a name="business-scenario"></a>Geschäftsszenario
 Beachten Sie das folgende Szenario im Eingangsprozess.

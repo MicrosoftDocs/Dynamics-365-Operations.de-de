@@ -1,6 +1,6 @@
 ---
 title: Erstellen von Workflows – Übersicht
-description: Dieses Thema erläutert, wie Sie einen Workflow erstellen.
+description: Dieser Artikel erläutert, wie Sie einen Workflow erstellen.
 author: ChrisGarty
 ms.date: 07/25/2019
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: abdb8ce3186806ac1b756c9161d53547dd8ae40b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 1343061ba06d13e68a98b05c013867af0a4d07a6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067957"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864485"
 ---
 # <a name="create-workflows-overview"></a>Erstellen von Workflows – Übersicht
 
@@ -31,7 +31,7 @@ ms.locfileid: "8067957"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Dieses Thema erläutert, wie Sie einen Workflow erstellen.
+Dieser Artikel erläutert, wie Sie einen Workflow erstellen.
 
 ## <a name="open-the-workflow-editor"></a>Öffnen des Workflow-Editors
 
@@ -56,7 +56,7 @@ Gehen Sie folgendermaßen vor, um die Eigenschaften des Workflows zu konfigurier
 
 1. Klicken Sie auf die Canvas, um sicherzustellen, dass kein Workflowelement ausgewählt ist.
 2. Klicken Sie auf **Eigenschaften** **, um die Seite** Eigenschaften für den Workflow zu öffnen.
-3. Folgen Sie den Schritten des Verfahrens unter [Konfigurieren von Workfloweigenschaften](configure-workflow-properties.md).
+3. Folgen Sie den Schritten des Verfahrens im Artikel [Konfigurieren von Workfloweigenschaften](configure-workflow-properties.md).
 
 ## <a name="configure-the-elements-of-the-workflow"></a>Konfigurieren der Elemente des Workflows
 

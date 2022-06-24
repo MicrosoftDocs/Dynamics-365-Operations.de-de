@@ -1,6 +1,6 @@
 ---
 title: Wiederbeschaffung über Lagerplatzkapazität
-description: Dieses Thema enthält Informationen zur Funktion „Wiederbeschaffung über Lagerplatzkapazität“. Mit dieser Funktion können alle für den Tag erforderlichen Wiederbeschaffungsarbeiten erstellt und die Verfügbarkeit dieser Wiederbeschaffungsarbeiten verwaltet werden, um sicherzustellen, dass am Kommissionierort weder der Lagerbestand ausgeht noch die Kapazität überschritten wird.
+description: Dieser Artikel enthält Informationen zur Funktion „Wiederbeschaffung über Lagerplatzkapazität“. Mit dieser Funktion können alle für den Tag erforderlichen Wiederbeschaffungsarbeiten erstellt und die Verfügbarkeit dieser Wiederbeschaffungsarbeiten verwaltet werden, um sicherzustellen, dass am Kommissionierort weder der Lagerbestand ausgeht noch die Kapazität überschritten wird.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 0c3dedc47558e98f63fb5883e4731bf021b9602b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 72cda7608d55414ee62bc7dcc1e02e28f6212aff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677925"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899236"
 ---
 # <a name="replenishment-over-location-capacity"></a>Wiederbeschaffung über Lagerplatzkapazität
 
@@ -37,7 +37,7 @@ Um diese Funktion verfügbar zu machen, aktivieren Sie die folgenden Funktionen 
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>Funktion für das Beispielszenario einrichten
 
-Dieser Abschnitt enthält Richtlinien und ein Beispiel, das zeigt, wie Sie diese Funktion einrichten und Beispieldaten für das Beispielszenario vorbereiten, das später in diesem Thema bereitgestellt wird.
+Dieser Abschnitt enthält Richtlinien und ein Beispiel, das zeigt, wie Sie diese Funktion einrichten und Beispieldaten für das Beispielszenario vorbereiten, das später in diesem Artikel bereitgestellt wird.
 
 ### <a name="enable-sample-data"></a>Beispieldaten aktivieren
 
@@ -145,7 +145,7 @@ Wiederbeschaffungsvorlagen sind eine Reihe von Regeln, die steuern, wann und wie
 
 ## <a name="example-scenario"></a>Beispielszenario
 
-Nachdem Sie alle zuvor beschriebenen Beispieldaten verfügbar gemacht und eingerichtet haben, können Sie dieses Szenario durcharbeiten, um die Funktion *Wiederbeschaffung über Lagerplatzkapazität* zu testen. Bei den in diesem Szenario angezeigten Werten wird davon ausgegangen, dass Sie mit den Standarddemodaten arbeiten, die juristische Person **USMF** ausgewählt und die Beispieldatensätze vorbereitet haben, die weiter oben in diesem Thema beschrieben wurden. Dieses Szenario dient auch als Beispiel, das zeigt, wie die Funktion in einer Produktionseinstellung verwendet werden kann.
+Nachdem Sie alle zuvor beschriebenen Beispieldaten verfügbar gemacht und eingerichtet haben, können Sie dieses Szenario durcharbeiten, um die Funktion *Wiederbeschaffung über Lagerplatzkapazität* zu testen. Bei den in diesem Szenario angezeigten Werten wird davon ausgegangen, dass Sie mit den Standarddemodaten arbeiten, die juristische Person **USMF** ausgewählt und die Beispieldatensätze vorbereitet haben, die weiter oben in diesem Artikel beschrieben wurden. Dieses Szenario dient auch als Beispiel, das zeigt, wie die Funktion in einer Produktionseinstellung verwendet werden kann.
 
 ### <a name="create-replenishment-work"></a>Wiederbeschaffungsarbeit erstellen
 

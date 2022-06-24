@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4c65d040696a72a42c89934533bad6a69c5923f5
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: ce94dce081957af620e3ab85e466877c0bcc5bd9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984493"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844671"
 ---
 # <a name="home-page-overview"></a>Übersicht zur Startseite
 
@@ -33,7 +33,7 @@ Die folgende Abbildung zeigt ein Beispiel für eine Startseite, die mit der Modu
 
 ![Beispiel einer Startseite.](./media/Homepage2.PNG)
 
-Oben auf der Startseite befindet sich eine Kopfzeile mit allen Produktkategorien und anderen Seiten, die der Einzelhändler für die Kunden verwenden möchte. Unten in der Startseite befindet sich eine Fußzeile mit Direktlinks zu verschiedenen Themen, die Kunden interessieren könnten.
+Oben auf der Startseite befindet sich eine Kopfzeile mit allen Produktkategorien und anderen Seiten, die der Einzelhändler für die Kunden verwenden möchte. Unten in der Startseite befindet sich eine Fußzeile mit Direktlinks zu verschiedenen Artikeln, die Kunden interessieren könnten.
 
 Im Hauptbereich der Startseite können Produkte, Kategorien oder Werbeaktionen mithilfe von verschiedenen Dynamics 365 Commerce-Modulen verwendet werden.
 
@@ -49,8 +49,8 @@ Im Hauptbereich der Startseite können Produkte, Kategorien oder Werbeaktionen m
 
     ![Beispiele für Funktionsmodule.](./media/Feature.PNG)
 
-- **Kachel** – Ein Kachellayout eines Inhaltsblockmoduls wird verwendet, um mehrere Produkte oder Produktkategorien mithilfe einer Kombination aus Bildern und Text in einem mehrspaltigen Layout zu präsentieren. In der Abbildung einer Startseite, die weiter oben in diesem Thema angezeigt wird, wird ein Kachellayout für das dreispaltige Rendering der Elemente **Shop für Frauen**, **Shop für Männer** und **Accessoire-Shop** verwendet.
-- **Video-Player** – Ein Video-Player-Modul kann verwendet werden, um Videoinhalte auf der Startseite zu präsentieren. Die Abbildung einer Startseite, die weiter oben in diesem Thema angezeigt wird, enthält ein Video-Player-Modul.
+- **Kachel** – Ein Kachellayout eines Inhaltsblockmoduls wird verwendet, um mehrere Produkte oder Produktkategorien mithilfe einer Kombination aus Bildern und Text in einem mehrspaltigen Layout zu präsentieren. In der Abbildung einer Startseite, die weiter oben in diesem Artikel angezeigt wird, wird ein Kachellayout für das dreispaltige Rendering der Elemente **Shop für Frauen**, **Shop für Männer** und **Accessoire-Shop** verwendet.
+- **Video-Player** – Ein Video-Player-Modul kann verwendet werden, um Videoinhalte auf der Startseite zu präsentieren. Die Abbildung einer Startseite, die weiter oben in diesem Artikel angezeigt wird, enthält ein Video-Player-Modul.
 - **Textblock** – Ein umfangreicher Inhaltsblock kann verwendet werden, um Textinhalte auf der Startseite in einem ein- oder mehrspaltigen Layout darzustellen.
 - **Produktempfehlungen** – Produktempfehlungsmodule werden verwendet, um Listen wie **Neu**, **Populär** und **Bestseller** auf der Startseite anzuzeigen. Diese Listen stellen Produkte basierend auf Einkaufstrends vor und können algorithmisch generiert oder manuell kuratiert werden. Sie helfen Kunden dabei, Top-Produkte schnell zu entdecken und dann weiter einzukaufen.
 

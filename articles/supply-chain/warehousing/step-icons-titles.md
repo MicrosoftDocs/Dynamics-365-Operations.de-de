@@ -1,6 +1,6 @@
 ---
 title: Weisen Sie der mobilen Warehouse Management-App Schrittsymbole und -titel zu
-description: In diesem Thema wird beschrieben, wie Sie Schrittsymbole und -titel für neue oder angepasste Aufgabenabläufe für die mobile Warehouse Management-App zuweisen.
+description: In diesem Artikel wird beschrieben, wie Sie Schrittsymbole und -titel für neue oder angepasste Aufgabenabläufe für die mobile Warehouse Management-App zuweisen.
 author: Mirzaab
 ms.date: 05/17/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a687c26cacc0dbdaf0091b2d26277864553ca1bf
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 361ace454f7125ec86bd99cffefc7d268f81d37f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103312"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890595"
 ---
 # <a name="assign-step-icons-and-titles-for-the-warehouse-management-mobile-app"></a>Weisen Sie der mobilen Warehouse Management-App Schrittsymbole und -titel zu
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Schrittsymbole und Schritttitel für neue oder angepasste Aufgabenabläufe für die mobile Warehouse Management Mobile App zuweisen.
+In diesem Artikel wird beschrieben, wie Sie Schrittsymbole und Schritttitel für neue oder angepasste Aufgabenabläufe für die mobile Warehouse Management Mobile App zuweisen.
 
 Die folgenden Abbildungen zeigen, wie Schrittsymbole und -titel in der mobilen Warehouse Management-App angezeigt werden.
 
@@ -29,7 +29,7 @@ Die folgenden Abbildungen zeigen, wie Schrittsymbole und -titel in der mobilen W
 
 ## <a name="turn-this-feature-on-or-off"></a>Schalten Sie diese Funktion ein oder aus
 
-Um die in diesem Thema beschriebene Funktionalität zu verwenden, muss die Funktion *Benutzereinstellungen, Symbole und Schritttitel für die neue Lagerort-App* für Ihr System aktiviert sein. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Benutzereinstellungen, Symbole und Schritttitel für die neue Lagerort-App* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
+Um die in diesem Artikel beschriebene Funktionalität zu verwenden, muss die Funktion *Benutzereinstellungen, Symbole und Schritttitel für die neue Lagerort-App* für Ihr System aktiviert sein. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Benutzereinstellungen, Symbole und Schritttitel für die neue Lagerort-App* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ## <a name="standard-step-ids-classes-and-icons"></a>Standard-Schritt-IDs, Klassen und Symbole
 
@@ -39,7 +39,7 @@ Jeder Schritt in einem Aufgabenfluss wird durch eine Schritt-ID identifiziert, u
 
 In der folgenden Tabelle sind alle derzeit verfügbaren Schritt-IDs und die entsprechende Schrittklasse aufgeführt. Der Steuerungsname des primären Eingabefelds wird als Schritt-ID verwendet.
 
-Ein Beispiel, das zeigt, wie diese Schritt-IDs und Klassen verwendet werden, finden Sie in der Implementierung der `WHSMobileAppStepInfoBuilder.stepId()` Methode im Abschnitt unter [Beispiel: Weisen Sie Schrittsymbole und -titel für einen benutzerdefinierten Ablauf zu](#example) später in diesem Thema.
+Ein Beispiel, das zeigt, wie diese Schritt-IDs und Klassen verwendet werden, finden Sie in der Implementierung der `WHSMobileAppStepInfoBuilder.stepId()` Methode im Abschnitt unter [Beispiel: Weisen Sie Schrittsymbole und -titel für einen benutzerdefinierten Ablauf zu](#example) später in diesem Artikel.
 
 | Schrittkennung | Schritt Klasse |
 |-|-|
@@ -373,7 +373,7 @@ final internal class WHSMobileAppStepContainerId extends WHSMobileAppStep
 
 Die Kennung des Schrittsymbols wird im `defaultStepIcon` Klassenmitglied gespeichert und der Schritttitel wird im `defaultStepTitle` Klassenmitglied gespeichert.
 
-Um ein Schrittsymbol zuzuweisen, setzen Sie `defaultStepIcon` zu einer der Symbol-IDs, die im Abschnitt [Verfügbare Schrittsymbole](#step-icons) weiter oben in diesem Thema aufgeführt sind.
+Um ein Schrittsymbol zuzuweisen, setzen Sie `defaultStepIcon` zu einer der Symbol-IDs, die im Abschnitt [Verfügbare Schrittsymbole](#step-icons) weiter oben in diesem Artikel aufgeführt sind.
 
 ### <a name="use-a-standard-or-custom-step-icon-and-title-for-the-weight-input"></a>Verwenden Sie ein Standard- oder benutzerdefiniertes Schrittsymbol und einen Titel für die Gewichtseingabe
 
@@ -405,7 +405,7 @@ public class WHSMobileAppStepInfoBuilderWeighContainer extends WHSMobileAppStepI
 }
 ```
 
-Anschließend erstellen Sie eine Schrittklasse für den `NewWeight` Schritt. Der Code sollte dem Code für das `ContainerId` Beispiel ähneln, das weiter oben in diesem Thema gezeigt wurde.
+Anschließend erstellen Sie eine Schrittklasse für den `NewWeight` Schritt. Der Code sollte dem Code für das `ContainerId` Beispiel ähneln, das weiter oben in diesem Artikel gezeigt wurde.
 
 #### <a name="override-the-stepinfo-method"></a>Überschreiben Sie die stepInfo () -Methode
 

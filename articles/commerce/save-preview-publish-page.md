@@ -1,6 +1,6 @@
 ---
 title: Speichern, Vorschau und Veröffentlichung einer Seite
-description: In diesem Thema wird beschrieben, wie eine Seite in Microsoft Dynamics 365 Commerce gespeichert, als Vorschau angezeigt und veröffentlicht wird.
+description: In diesem Artikel wird beschrieben, wie eine Seite in Microsoft Dynamics 365 Commerce gespeichert, als Vorschau angezeigt und veröffentlicht wird.
 author: psimolin
 ms.date: 04/14/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 593c68e0934fa62d09c64b8d5d681697c3fb053ae6f4641ce2ae3104a03e0fba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 54f9f99ca7f7be5da1659e3fdead6f3d08546bda
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718672"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892258"
 ---
 # <a name="save-preview-and-publish-a-page"></a>Speichern, Vorschau und Veröffentlichung einer Seite
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie eine Seite in Microsoft Dynamics 365 Commerce gespeichert, als Vorschau angezeigt und veröffentlicht wird.
+In diesem Artikel wird beschrieben, wie eine Seite in Microsoft Dynamics 365 Commerce gespeichert, als Vorschau angezeigt und veröffentlicht wird.
 
 ## <a name="save-a-page"></a>Speichern einer Seite
 

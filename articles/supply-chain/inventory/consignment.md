@@ -1,6 +1,6 @@
 ---
-title: Sendung einrichten
-description: In diesem Thema wird erläutert, wie eingehende Lieferungsbestandsprozesse verwendet werden.
+title: Unterlieferung einrichten
+description: In diesem Artikel wird erläutert, wie eingehende Lieferungsbestandsprozesse verwendet werden.
 author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4a1b96d18048a1ae6e380374f32d2bfa2270ae24
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 66215811c8c48412fb137967107abca3774f5f0c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577719"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872035"
 ---
-# <a name="set-up-consignment"></a>Sendung einrichten
+# <a name="set-up-consignment"></a>Unterlieferung einrichten
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie eingehende Lieferungsbestandsprozesse verwendet werden.
+In diesem Artikel wird erläutert, wie eingehende Lieferungsbestandsprozesse verwendet werden.
 
-Beim Lieferungsbestand handelt es sich um Bestand, der im Besitz eines Kreditors ist, der aber an Ihrem Standort gelagert ist. Wenn Sie bereit sind, den Bestand zu verbrauchen oder verwenden, übernehmen Sie den Besitz des Bestands. Dieses Thema enthält Informationen dazu, wie physisch Kreditor-eigener Lagerbestand empfangen wird, ohne Buchungen im Hauptbuch zu erstellen, wie ein Produktionsprozess beginnt, in dem der Kreditor-eigene Bestand physisch reserviert werden kann. und wie der Besitz des Rohmaterials ändert, um den Verbrauch als Teil des Produktionsauftragsverarbeitens zu verarbeiten. Es gibt auch einige Informationen dazu, wie Kreditoren den Verbrauch ihres Bestands mithilfe der Kreditoren-Zusammenarbeitschnittstelle überwachen können.
+Beim Lieferungsbestand handelt es sich um Bestand, der im Besitz eines Kreditors ist, der aber an Ihrem Standort gelagert ist. Wenn Sie bereit sind, den Bestand zu verbrauchen oder verwenden, übernehmen Sie den Besitz des Bestands. Dieser Artikel enthält Informationen dazu, wie physisch Kreditor-eigener Lagerbestand empfangen wird, ohne Buchungen im Hauptbuch zu erstellen, wie ein Produktionsprozess beginnt, in dem der Kreditor-eigene Bestand physisch reserviert werden kann. und wie der Besitz des Rohmaterials ändert, um den Verbrauch als Teil des Produktionsauftragsverarbeitens zu verarbeiten. Es gibt auch einige Informationen dazu, wie Kreditoren den Verbrauch ihres Bestands mithilfe der Kreditoren-Zusammenarbeitschnittstelle überwachen können.
 
 ## <a name="overview-of-the-consignment-process"></a>Überblick über den Lieferungsprozesses
 

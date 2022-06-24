@@ -1,6 +1,6 @@
 ---
 title: Wenden Sie Anzeigeeinstellungen für Produktabmessungen an
-description: In diesem Thema werden die Anzeigeeinstellungen für Produktabmessungen behandelt und deren Anwendung in Microsoft Dynamics 365 Commerce beschrieben.
+description: In diesem Artikel werden die Anzeigeeinstellungen für Produktabmessungen behandelt und deren Anwendung in Microsoft Dynamics 365 Commerce beschrieben.
 author: anupamar-ms
 ms.date: 05/28/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 80a0861c51ea14ddb6bce02d757667adac34e740cd04311e26211d9bdbae4ed8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d7575e205a9732259b00e424f66eeadfe8c659ee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716221"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899174"
 ---
 # <a name="apply-display-settings-for-product-dimensions"></a>Wenden Sie Anzeigeeinstellungen für Produktabmessungen an
 
 [!include [banner](includes/banner.md)]
 
 
-In diesem Thema werden die Anzeigeeinstellungen für Produktabmessungen behandelt und deren Anwendung in Microsoft Dynamics 365 Commerce beschrieben.
+In diesem Artikel werden die Anzeigeeinstellungen für Produktabmessungen behandelt und deren Anwendung in Microsoft Dynamics 365 Commerce beschrieben.
 
 Dynamics 365 Commerce unterstützt die Verwendung von Größe, Stil und Farbabmessungen um Produktvarianten zu unterscheiden. Bemaßungen werden normalerweise als Textwerte angezeigt, z. B. Klein, Mittel und Groß für Größen und Schwarz und Braun für Farben. Wenn ein Produkt jedoch viele Variationen unterstützt, kann es schwierig sein, in Produktvarianten zu suchen, weil mehrere Auswahlen erforderlich sind, um das Bild für jede Produktvariante anzuzeigen. Um das Durchsuchen von Produktvarianten zu vereinfachen, kann die Version 10.0.20 von Commerce Bilder und hexadezimalen (hexadezimale) Codes verwenden, um Abmessungen als Farbfelder anzuzeigen.
 

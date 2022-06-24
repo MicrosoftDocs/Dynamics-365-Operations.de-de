@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren von automatisierten Aufgaben in einem Workflow
-description: Dieses Thema erläutert, wie Sie die Eigenschaften einer automatisierten Aufgabe konfigurieren können.
+description: Dieser Artikel erläutert, wie Sie die Eigenschaften einer automatisierten Aufgabe konfigurieren können.
 author: ChrisGarty
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7346649108824eb4e7209a2476456a469affa1c
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b482338c436ea9226d31f74c823ee1dc141b24cd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066517"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891752"
 ---
 # <a name="configure-automated-tasks-in-a-workflow"></a>Konfigurieren von automatisierten Aufgaben in einem Workflow
 
@@ -28,7 +28,7 @@ ms.locfileid: "8066517"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Dieses Thema erläutert, wie Sie die Eigenschaften einer automatisierten Aufgabe konfigurieren können.
+Dieser Artikel erläutert, wie Sie die Eigenschaften einer automatisierten Aufgabe konfigurieren können.
 
 Klicken Sie zum Konfigurieren einer automatisierten Aufgabe im Workflow-Editor mit der rechten Maustaste auf die Aufgabe, und klicken Sie dann auf **Eigenschaften**, umdie Seite **Eigenschaften** zu öffnen. Verwenden Sie dann die folgenden Verfahren, um die Eigenschaften der automatisierten Aufgabe zu konfigurieren.
 

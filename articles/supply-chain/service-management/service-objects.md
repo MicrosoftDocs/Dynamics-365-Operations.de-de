@@ -1,6 +1,6 @@
 ---
 title: Serviceobjekte – Übersicht
-description: Dieses Thema gibt einen Überblick über das Arbeiten mit Serviceobjekten.
+description: Dieser Artikel gibt einen Überblick über das Arbeiten mit Serviceobjekten.
 author: sorenva
 ms.date: 07/25/2019
 ms.topic: overview
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3cef4cf1222c4c66991069da72e3e6f5a7040153
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8150a94677fe38f4caa6f3e0b5fb5d1be5972eaf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677673"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862410"
 ---
 # <a name="service-objects-overview"></a>Serviceobjekte – Übersicht
 
@@ -39,7 +39,7 @@ Serviceobjekte sind die Anlagen und Produkte eines Debitors, für die Sie eine D
 
 Unternehmen A verwaltet die Finanzdatensätze für eine Reihe von kleinen Unternehmen. Einer der Kunden von Unternehmen A ist das lokale Fußballteam, für das Unternehmen A die wöchentliche Buchführung sowie die Jahresabschlussprüfung der Konten des Vereins durchführt. Die Konten des Vereins werden im Formular Dienstleistungsobjekte eingerichtet und als das Objekt im Servicevertrag angegeben. Es gibt zwei Servicevertragspositionen für das Objekt. Position 1 ist die wöchentliche Buchführung mit einem wöchentlichen Intervall, das der Position zugeordnet ist, und Position 2 ist die Jahresabschlussprüfung mit einem jährlichen Intervall, das ihr zugeordnet ist.
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-articles"></a>Zugehörige Artikel
 
 [Erstellen von Serviceobjekten](create-service-objects.md)
 

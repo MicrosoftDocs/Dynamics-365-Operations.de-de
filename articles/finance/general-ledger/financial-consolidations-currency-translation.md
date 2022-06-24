@@ -1,6 +1,6 @@
 ---
 title: Finanzielle Konsolidierungen und Währungsumrechnung – Übersicht
-description: In diesem Thema wird die Finanzkonsolidierungen und Währungsumrechnung im Hauptbuch behandelt.
+description: In diesem Artikel werden Finanzkonsolidierungen und die Währungsumrechnung im Hauptbuch behandelt.
 author: jinniew
 ms.date: 10/07/2021
 ms.topic: overview
@@ -13,26 +13,26 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: f6f0094ac3307164e1c715a71e16b0766247e275
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 56e445dcf471fd20695824d5e47cd15f39c022ce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713867"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846856"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Finanzielle Konsolidierungen und Währungsumrechnung – Übersicht
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema führt Sie durch den Ansatz von Microsoft Dynamics 365 Finance und von der Finanzberichterstattung für Konsolidierungen. Es beschreibt Szenarien, die mehrere Unternehmen, Berichte Aggregation, Löschen und Minderheitsbeteiligung umfassen. Es wird auch erklärt, wie spezielle Szenarien behandelt werden, wie beispielsweise juristische Personen mit verschiedenen Finanzzeiträumen oder verschiedene Kontenpläne.
+Dieser Artikel führt Sie durch den Ansatz von Microsoft Dynamics 365 Finance und von der Finanzberichterstattung für Konsolidierungen. Es beschreibt Szenarien, die mehrere Unternehmen, Berichte Aggregation, Löschen und Minderheitsbeteiligung umfassen. Es wird auch erklärt, wie spezielle Szenarien behandelt werden, wie beispielsweise juristische Personen mit verschiedenen Finanzzeiträumen oder verschiedene Kontenpläne.
 
-Dieses Thema wurde für Benutzer und funktionale Berater geschrieben, und es wird davon ausgegangen, dass Leser ein allgemeines Verständnis zu Finance-Finanzberichterstellung haben. Grundeinstellungen werden nicht erfasst.
+Dieser Artikel wurde für Benutzer und funktionale Berater geschrieben, und es wird davon ausgegangen, dass die Leser ein allgemeines Verständnis von Finance und der Finanzberichterstellung haben. Grundeinstellungen werden nicht erfasst.
 
 > [!NOTE]
-> Der Begriff *juristische Person* wird in Finance verwendet, und der Begriff *Unternehmen* wird in der Finanzberichterstellung verwendet. Beide Begriffe werden in diesem Thema erläutert. Allerdings für den Zweck dieses Themas sind die Bedeutungen identisch.
+> Der Begriff *juristische Person* wird in Finance verwendet, und der Begriff *Unternehmen* wird in der Finanzberichterstellung verwendet. Beide Begriffe werden in diesem Artikel erläutert. Allerdings sind für den Zweck dieses Artikels die Bedeutungen identisch.
 
 ## <a name="audience"></a>Zielgruppe
-Dieses Thema richtet sich an Finanz- und Buchhaltungsbenutzer und Bewerbungsberater, die Finanzen und Berichterstellung und Finanzberichte verwenden möchten, um mehrere Unternehmen und Währungsdaten zu konsolidieren.
+Dieser Artikel richtet sich an Finanz- und Buchhaltungsbenutzer und Anwendungsberater, die Finance and Reporting und die Finanzberichterstellung verwenden möchten, um mehrere Unternehmen und Währungsdaten zu konsolidieren.
 
 ## <a name="approach"></a>Ansatz
 Finance verwendet eine eigene juristische Person, um eine Konsolidierung zu verarbeiten. Es ermöglicht Einzelinstanzkonsolidierung aber stellt eine Option bereit, um Daten aus anderen Quellen aufzufüllen. Der Konsolidierungsprozess muss jedes Mal ausgeführt werden, wenn Änderungen in den ursprünglichen juristischen Personen vorgenommen werden.

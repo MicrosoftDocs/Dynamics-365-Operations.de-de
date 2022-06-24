@@ -1,6 +1,6 @@
 ---
-title: Anlagenservicelevel
-description: In diesem Thema werden Anlagenservicelevel in Asset Management erläutert.
+title: Anlagenleistungsebenen
+description: In diesem Artikel werden Anlagenservicelevel in Anlagenverwaltung erläutert.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5e4f7daa10931ce406a5d2bdbbc1dced067e3de5065cdb61cce369d617709d67
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1f7429b30253f540925e67ff9239667a0a404f26
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723598"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908684"
 ---
-# <a name="asset-service-levels"></a>Anlagenservicelevel
+# <a name="asset-service-levels"></a>Anlagenleistungsebenen
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-In diesem Thema werden Anlagenservicelevel in Asset Management erläutert. Anlagenservicelevel beziehen sich auf Anlagen und werden auf Wartungsanfragen und Arbeitsaufträge übertragen. Sie werden verwendet, um die Priorität von Arbeitsaufträgen während der Arbeitsauftragsplanung zu berechnen. Anlagenservicelevel können geändert werden, wenn Änderungen erforderlich sind.
+In diesem Artikel werden Anlagenservicelevel in Anlagenverwaltung erläutert. Anlagenservicelevel beziehen sich auf Anlagen und werden auf Wartungsanfragen und Arbeitsaufträge übertragen. Sie werden verwendet, um die Priorität von Arbeitsaufträgen während der Arbeitsauftragsplanung zu berechnen. Anlagenservicelevel können geändert werden, wenn Änderungen erforderlich sind.
 
 Weitere Informationen zu den Einstellungen, die sich auf die Berechnung von Bewertungsnoten für Arbeitsauftragsplanung beziehen, finden Sie unter [Anlagenverwaltungsparameter](../setup-for-objects/enterprise-asset-management-parameters.md). Sie müssen mindestens einen Standarddatensatz für den Anlagenservicelevel einrichten. Dieser Standarddatensatz wird verwendet, wenn keine andere Übereinstimmung während der Arbeitsauftragsplanung gefunden wird.
 

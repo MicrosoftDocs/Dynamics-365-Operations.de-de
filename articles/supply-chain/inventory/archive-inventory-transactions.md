@@ -1,6 +1,6 @@
 ---
 title: Bestandstransaktionen archivieren
-description: In diesem Thema wird beschrieben, wie Sie die Daten von Bestandstransaktionen archivieren können, um die Systemleistung zu verbessern.
+description: In diesem Artikel wird beschrieben, wie Sie die Daten von Bestandstransaktionen archivieren können, um die Systemleistung zu verbessern.
 author: yufeihuang
 ms.date: 05/10/2022
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8b766d306f31fc531f33aa29e1f96048bbd90085
-ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
+ms.openlocfilehash: c63cdee862e2e22649a3eb58ae37597741770e14
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8736060"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874100"
 ---
 # <a name="archive-inventory-transactions"></a>Archivieren von Bestandstransaktionen
 
 [!include [banner](../../includes/banner.md)]
 
-Mit der Zeit wird die Tabelle der Bestandstransaktionen (`InventTrans`) weiter wachsen und mehr Speicherplatz in der Datenbank verbrauchen. Daher werden die Abfragen, die gegen die Tabelle gemacht werden, allmählich langsamer werden. In diesem Thema wird beschrieben, wie Sie die Funktion *Bestandstransaktionen archivieren* verwenden können, um Daten über Bestandstransaktionen zu archivieren und so die Systemleistung zu verbessern.
+Mit der Zeit wird die Tabelle der Bestandstransaktionen (`InventTrans`) weiter wachsen und mehr Speicherplatz in der Datenbank verbrauchen. Daher werden die Abfragen, die gegen die Tabelle gemacht werden, allmählich langsamer werden. In diesem Artikel wird beschrieben, wie Sie die Funktion *Bestandstransaktionen archivieren* verwenden können, um Daten über Bestandstransaktionen zu archivieren und so die Systemleistung zu verbessern.
 
 > [!NOTE]
 > Es können nur finanziell aktualisierte Bestandstransaktionen in einer ausgewählten abgeschlossenen Sachkontoperiode archiviert werden. Um archiviert werden zu können, müssen finanziell aktualisierte ausgehende Bestandstransaktionen einen Ausgabestatus von *Verkauft* und eingehende Bestandstransaktionen einen Eingangsstatus von *Gekauft* haben.
@@ -35,7 +35,7 @@ Wenn eine `itemId`- und `inventDimId`-Kombination nur eine Eingangs- oder Ausgan
 
 ## <a name="turn-on-the-feature-in-your-system"></a>Funktion in Ihrem System aktivieren
 
-Wenn Ihr System noch nicht über die in diesem Thema beschriebenen Funktionen verfügt, gehen Sie zu [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und schalten Sie die Funktion *Archivierung von Transaktionen im Bestand* ein. Beachten Sie, dass diese Funktion nach ihrer Aktivierung nicht mehr deaktiviert werden kann.
+Wenn Ihr System noch nicht über die in diesem Artikel beschriebenen Funktionen verfügt, gehen Sie zu [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und schalten Sie die Funktion *Archivierung von Transaktionen im Bestand* ein. Beachten Sie, dass diese Funktion nach ihrer Aktivierung nicht mehr deaktiviert werden kann.
 
 ## <a name="things-to-consider-before-you-archive-inventory-transactions"></a>Dinge, die Sie beachten sollten, bevor Sie Transaktionen im Bestand archivieren
 

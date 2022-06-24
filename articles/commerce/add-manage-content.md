@@ -1,6 +1,6 @@
 ---
-title: Möglichkeiten zum Hinzufügen von Inhalten
-description: In diesem Thema finden Sie eine Übersicht und ausgewählte Links, über die Sie erfahren, wo und wie Sie Inhalte mit dem Microsoft Dynamics 365 Commerce-Web-Authoring-Toolset für Site Builder verwalten können.
+title: Möglichkeiten zur Inhaltsergänzung
+description: In diesem Artikel finden Sie eine Übersicht und ausgewählte Links, über die Sie erfahren, wo und wie Sie Inhalte mit dem Microsoft Dynamics 365 Commerce-Web-Authoring-Toolset für Site Builder verwalten können.
 author: phinneyridge
 ms.date: 10/09/2020
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f8a2dbb7bc7659e2e23b0ba6e2b5645dbe508ef9c9bda10df3bad8d04a6cfb32
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7f01de31e4eca1266066b4fcf1c92b429bfc71c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727677"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871753"
 ---
-# <a name="ways-to-add-content"></a>Möglichkeiten zum Hinzufügen von Inhalten
+# <a name="ways-to-add-content"></a>Möglichkeiten zur Inhaltsergänzung
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema finden Sie eine Übersicht und Links zur Dokumentation, wo und wie Sie Inhalte mit dem Microsoft Dynamics 365 Commerce-Web-Authoring-Toolset für Site Builder verwalten können.
+In diesem Artikel finden Sie eine Übersicht und Links zur Dokumentation, wo und wie Sie Inhalte mit dem Microsoft Dynamics 365 Commerce-Web-Authoring-Toolset für Site Builder verwalten können.
 
 Es gibt viele Möglichkeiten, Aussehen, Erscheinungsbild und Inhalt Ihrer Site zu ändern. Abhängig von der erforderlichen Anpassungsstufe können viele dieser Änderungen von Nicht-Entwicklern in Site Builder implementiert werden, dem Web Authoring-Toolset, das im Lieferumfang von Dynamics 365 Commerce enthalten ist. Mit dem Site Builder können Sie Vorlagen erstellen, Themen auswählen und Module auswählen und konfigurieren, ohne Code schreiben zu müssen. Hingegen werden Entwicklungsqualifikationen erforderlich, um ein neues Thema oder ein Modul zu erstellen, weil das E-Commerce-Software Development Kit (SDK) und der Microsoft Dynamics Lifecycle Services (LCS)- Bereitstellungsworkflow verwendet werden müssen.
 
-Die folgenden Themen sind gute Ausgangspunkte, um das Hinzufügen und Verwalten von Websiteinhalten zu verstehen. In den meisten aufgeführten Themen geht es um die Bereiche des Standorts, die keinen Entwickler erfordern. Einige befassen sich mit der grundlegenden Bearbeitung von Inhalten, während sich andere auf Site-Administratoraufgaben konzentrieren. Jedes dieser Themen kennzeichnet bestimmte Aufgaben, die möglicherweise SDK-Arbeit erfordern. Bei jedem Thema wird davon ausgegangen, dass Sie bereits eine Website bereitgestellt und Zugriff auf das Toolset „Website-Generator“ für Ihre Website erhalten haben.
+Die folgenden Artikel sind gute Ausgangspunkte, um das Hinzufügen und Verwalten von Websiteinhalten zu verstehen. In den meisten aufgeführten Artikeln geht es um die Bereiche des Standorts, die keinen Entwickler erfordern. Einige befassen sich mit der grundlegenden Bearbeitung von Inhalten, während sich andere auf Site-Administratoraufgaben konzentrieren. Jeder dieser Artikel kennzeichnet bestimmte Aufgaben, die möglicherweise SDK-Arbeit erfordern. Bei jedem Artikel wird davon ausgegangen, dass Sie bereits eine Website bereitgestellt und Zugriff auf das Toolset „Website-Generator“ für Ihre Website erhalten haben.
 
-Wählen Sie eines der folgenden Themen aus, um zu beginnen.
+Wählen Sie einen der folgenden Artikel aus, um zu beginnen.
 
 - Informationen zu den im Site Builder und in dieser Dokumentation verwendeten Begriffen für die Inhaltsverwaltung finden Sie unter [Glossar der Seitenmodelle ](page-elements-overview.md).
 - Informationen zur Funktionsweise von Modulen in Content Management-Workflows finden Sie unter [Arbeiten mit Modulen](work-with-modules.md).

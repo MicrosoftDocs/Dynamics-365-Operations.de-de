@@ -1,6 +1,6 @@
 ---
 title: Berechtigungen zum Bestellen von Produkten im Auftrag einer anderen Person einrichten
-description: In diesem Thema wird erläutert, wie Sie den Mitarbeitern die Erlaubnis erteilen, Bestellanforderungen im Namen anderer Mitarbeiter zu erstellen.
+description: In diesem Artikel wird erläutert, wie Sie den Mitarbeitern die Erlaubnis erteilen, Bestellanforderungen im Namen anderer Mitarbeiter zu erstellen.
 author: GalynaFedorova
 ms.date: 08/20/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1313ca01686e55d802716adf335e77ffeb1ece34
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 3053f28fdf97637b1da5f644f64676bfd10fb6a0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679302"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854209"
 ---
 # <a name="set-up-permissions-for-ordering-products-on-behalf-of-someone-else"></a>Berechtigungen zum Bestellen von Produkten im Auftrag einer anderen Person einrichten
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie den Mitarbeitern die Erlaubnis erteilen, Bestellanforderungen im Namen anderer Mitarbeiter zu erstellen. Das bedeutet, dass eine Bestellanforderung Antragsteller eine Bestellanforderung für eine andere anfordernden Person erstellen kann. Die Prozedur zeigt auch, wie Arbeitsberechtigungen gewährt werden, um Artikel oder Services in unterschiedlichen juristischen Personen oder Organisationseinheiten zu gewähren. Normalerweise werden diese Aufgaben von einem Einkaufsleiter ausgeführt. Sie können diese Prozedur entweder für Daten für das Demodatenunternehmen USMF oder für Ihre eigenen Daten verwenden.
+In diesem Artikel wird erläutert, wie Sie den Mitarbeitern die Erlaubnis erteilen, Bestellanforderungen im Namen anderer Mitarbeiter zu erstellen. Das bedeutet, dass eine Bestellanforderung Antragsteller eine Bestellanforderung für eine andere anfordernden Person erstellen kann. Die Prozedur zeigt auch, wie Arbeitsberechtigungen gewährt werden, um Artikel oder Services in unterschiedlichen juristischen Personen oder Organisationseinheiten zu gewähren. Normalerweise werden diese Aufgaben von einem Einkaufsleiter ausgeführt. Sie können diese Prozedur entweder für Daten für das Demodatenunternehmen USMF oder für Ihre eigenen Daten verwenden.
 
 
 ## <a name="grant-permission-to-enter-purchase-requisitions-on-behalf-of-another-worker"></a>Berechtigung erteilen, um Bestellanforderungen im Auftrag einer anderen Arbeitskraft einzugeben

@@ -1,6 +1,6 @@
 ---
 title: Einstellungen und Arbeiten mit Callcenterbetrugswarnungen
-description: In diesem Thema wird erläutert, wie Regeln eingerichtet werden, um Kundendienstmitarbeiter vor möglicherweise gefälschten Informationen zu warnen, wenn Aufträge verarbeitet werden. Sie können auch spezielle Codes definieren, die verwendet werden, um automatisch oder manuell verdächtige Aufträge zu sperren.
+description: In diesem Artikel wird erläutert, wie Regeln eingerichtet werden, um Kundendienstmitarbeiter vor möglicherweise gefälschten Informationen zu warnen, wenn Aufträge verarbeitet werden. Sie können auch spezielle Codes definieren, die verwendet werden, um automatisch oder manuell verdächtige Aufträge zu sperren.
 author: josaw1
 ms.date: 05/14/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e692d43b8c2648a424ff3b4fdc9d0cf16d0e03702d6a237f71caaf49646c5ec3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 212afd594453d3594fdaef9442a7809e4cafbd07
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763667"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885347"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Einstellungen und Arbeiten mit Callcenterbetrugswarnungen
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie Kriterien und Regeln einrichteten ,um potenziell gefälschte Aufträge für weitere Prüfung gesperrt zu halten. Betrugsprüfungsfunktionen werden verwendet, um die Gültigkeit von Informationen in einen Auftrag zu bestimmen. Wenn die Informationen im Auftrag auf Grundlage der Betrugskriterien und -Regeln einer Organisation fraglich erscheinen, kann der Auftrag für weitere Prüfung durch einen Administrator gesperrt werden. In diesem Fall kann der Auftrag nicht für den Lagerort für das spätere Verarbeiten freigegeben werden, nachdem die Sperre deaktiviert wurde.
+In diesem Artikel wird erläutert, wie Sie Kriterien und Regeln einrichteten ,um potenziell gefälschte Aufträge für weitere Prüfung gesperrt zu halten. Betrugsprüfungsfunktionen werden verwendet, um die Gültigkeit von Informationen in einen Auftrag zu bestimmen. Wenn die Informationen im Auftrag auf Grundlage der Betrugskriterien und -Regeln einer Organisation fraglich erscheinen, kann der Auftrag für weitere Prüfung durch einen Administrator gesperrt werden. In diesem Fall kann der Auftrag nicht für den Lagerort für das spätere Verarbeiten freigegeben werden, nachdem die Sperre deaktiviert wurde.
 
 > [!NOTE]
 > Diese Funktion kann nur mit der Auftragsverarbeitung für den Commerce Callcenter-Kanal verwendet werden.

@@ -1,6 +1,6 @@
 ---
 title: Kalkulation Parameterwerte einrichten
-description: Beim Einrichten des Moduls Gesamttransportkosten können Sie mehrere Sätze allgemeiner Werte festlegen, die zur Verfügung stehen, wenn Sie bestimmte Arten von Kalkulationsparameterwerten in anderen Teilen der App auswählen. In diesem Thema wird erklärt, wie Sie diese Wertesätze festlegen.
+description: Beim Einrichten des Moduls Gesamttransportkosten können Sie mehrere Sätze allgemeiner Werte festlegen, die zur Verfügung stehen, wenn Sie bestimmte Arten von Kalkulationsparameterwerten in anderen Teilen der App auswählen. In diesem Artikel wird erklärt, wie Sie diese Wertesätze festlegen.
 author: Weijiesa
 ms.date: 12/07/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ed20181201a2f3f84c3dc08549f4f107d46a50a2
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ca3633cd8a3fb053bda597b968003685aa2326ef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689746"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852330"
 ---
 # <a name="costing-parameter-values-setup"></a>Kalkulation Parameterwerte einrichten
 
 [!include [banner](../../includes/banner.md)]
 
-Wenn Sie das Modul **Gesamttransportkosten** festlegen, können Sie mehrere Sätze von allgemeinen Werten und zugehörigen Einstellungen pro Wert definieren. Diese Werte stehen dann zur Verfügung, wenn Sie bestimmte Typen von Kalkulationsparameterwerten in anderen Teilen der App auswählen. In diesem Thema wird erklärt, wie Sie diese Wertesätze festlegen.
+Wenn Sie das Modul **Gesamttransportkosten** festlegen, können Sie mehrere Sätze von allgemeinen Werten und zugehörigen Einstellungen pro Wert definieren. Diese Werte stehen dann zur Verfügung, wenn Sie bestimmte Typen von Kalkulationsparameterwerten in anderen Teilen der App auswählen. In diesem Artikel wird erklärt, wie Sie diese Wertesätze festlegen.
 
 ## <a name="set-up-cost-type-codes"></a>Festlegen von Codes für die Kalkulation
 

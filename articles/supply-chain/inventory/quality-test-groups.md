@@ -1,6 +1,6 @@
 ---
 title: Qualitätsmanagement Testgruppen
-description: Dieses Thema beschreibt, wie Sie Testgruppen erstellen, so dass mehrere Tests mit Qualitätsprüfungsaufträgen in Microsoft Dynamics 365 Supply Chain Management verwendet werden können.
+description: Dieser Artikel beschreibt, wie Sie Testgruppen erstellen, so dass mehrere Tests mit Qualitätsprüfungsaufträgen in Microsoft Dynamics 365 Supply Chain Management verwendet werden können.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5619be4a0724556bf0c51dcaa3adcc3725f10706
-ms.sourcegitcommit: 220101d2511a3164572226294ef090a43a1e6cdd
+ms.openlocfilehash: e7722bc92d8c2bf52d6a798a93f07af44037d4e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "8789267"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857692"
 ---
 # <a name="quality-management-test-groups"></a>Qualitätsmanagement Testgruppen
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema beschreibt, wie Sie Testgruppen erstellen, so dass mehrere Tests mit Qualitätsprüfungsaufträgen in Microsoft Dynamics 365 Supply Chain Management verwendet werden können.
+Dieser Artikel beschreibt, wie Sie Testgruppen erstellen, so dass mehrere Tests mit Qualitätsprüfungsaufträgen in Microsoft Dynamics 365 Supply Chain Management verwendet werden können.
 
 Sie verwenden die Seite **Testgruppen**, um Testgruppen und die einzelnen Tests, die ihnen zugeordnet sind, festzulegen, zu bearbeiten und anzuzeigen. Der obere Teil der Seite zeigt die Testgruppen und der untere Teil zeigt die Tests, die einer ausgewählten Testgruppe zugeordnet sind.
 

@@ -1,6 +1,6 @@
 ---
 title: Für Lagerort freigeben
-description: Dieses Thema enthält Details zur Freigabe an den Lagerprozess. Es beschreibt Entitäten, die erstellt werden, wenn Sie einen Auftrag an das Lager freigeben, und Optionen, die Sie verwenden können, um den Prozess einzuleiten.
+description: Dieser Artikel enthält Details zur Freigabe an den Lagerprozess. Es beschreibt Entitäten, die erstellt werden, wenn Sie einen Auftrag an das Lager freigeben, und Optionen, die Sie verwenden können, um den Prozess einzuleiten.
 author: Mirzaab
 ms.date: 8/13/2021
 ms.topic: article
@@ -11,22 +11,22 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 8624db42e9d0f3d08ed3b582224ed7937d52f85d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c3280b2e39d7af5ca99cad703cad6ecc7b307bff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678350"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893177"
 ---
 # <a name="release-to-warehouse"></a>Für Lagerort freigeben
 
 [!include [banner](../../includes/banner.md)]
 
-Dieses Thema enthält Details zur Freigabe an den Lagerprozess. Es beschreibt Entitäten, die erstellt werden, wenn Sie einen Auftrag an das Lager freigeben, und Optionen, die Sie verwenden können, um den Prozess einzuleiten.
+Dieser Artikel enthält Details zur Freigabe an den Lagerprozess. Es beschreibt Entitäten, die erstellt werden, wenn Sie einen Auftrag an das Lager freigeben, und Optionen, die Sie verwenden können, um den Prozess einzuleiten.
 
 ## <a name="release-to-warehouse-overview"></a>Freigabe an Lager – Übersicht
 
-Die Freigabe an das Lager ist der Prozess der Bereitstellung des Bestands für die Versandabwicklung. Wenn Sie einen Auftrag an das Lager freigeben, erstellt das System Ladepositionen und Sendungen. Wenn eine automatische Wellenverarbeitung eingerichtet ist, werden auch Lasten und erforderliche Arbeiten erstellt. Die Konfiguration der beteiligten Entitäten hängt von den Systemeinstellungen ab. In diesem Abschnitt des Themas werden die Entitäten, die während des Freigabeprozesses für das Lager erstellt werden, und die Systemeinstellungen, die sie definieren, beschrieben.
+Die Freigabe an das Lager ist der Prozess der Bereitstellung des Bestands für die Versandabwicklung. Wenn Sie einen Auftrag an das Lager freigeben, erstellt das System Ladepositionen und Sendungen. Wenn eine automatische Wellenverarbeitung eingerichtet ist, werden auch Lasten und erforderliche Arbeiten erstellt. Die Konfiguration der beteiligten Entitäten hängt von den Systemeinstellungen ab. In diesem Abschnitt des Artikels werden die Entitäten, die während des Freigabeprozesses für das Lager erstellt werden, und die Systemeinstellungen, die sie definieren, beschrieben.
 
 Eine *Lieferung* ist eine Gruppe von Auftrags- oder Umlagerungsauftragspositionen für denselben Kunden oder dieselbe Lieferadresse.
 
@@ -67,7 +67,7 @@ Zusammenfassend lässt sich sagen, dass bei der Freigabe einer Bestellung an das
 
 Abhängig von den Einstellungen für Wave-Vorlagen, Arbeitsvorlagen und Standortanweisungen werden einige Schritte in diesem Ablauf möglicherweise manuell. Der Gesamtfluss bleibt jedoch gleich.
 
-Sie haben mehrere Möglichkeiten, wie Sie eine Bestellung an das Lager freigeben. Sie können den Vorgang manuell ausführen oder einen Batchauftrag einrichten. In den verbleibenden Abschnitten dieses Themas werden die verschiedenen Möglichkeiten beschrieben, wie Sie eine Freigabe für den Lagervorgang durchführen können.
+Sie haben mehrere Möglichkeiten, wie Sie eine Bestellung an das Lager freigeben. Sie können den Vorgang manuell ausführen oder einen Batchauftrag einrichten. In den verbleibenden Abschnitten dieses Artikels werden die verschiedenen Möglichkeiten beschrieben, wie Sie eine Freigabe für den Lagervorgang durchführen können.
 
 ## <a name="manual-release-to-the-warehouse-from-the-sales-orders-and-transfer-orders-pages"></a>Manuelle Freigabe an das Lager über die Seiten Kundenaufträge und Umlagerungsaufträge
 

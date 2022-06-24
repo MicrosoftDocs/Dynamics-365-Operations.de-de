@@ -1,6 +1,6 @@
 ---
 title: Nachkalkulation von Beständen FAQ
-description: Dieses Thema beantwortet einige häufig gestellte Fragen zur Nachkalkulation von Beständen in Microsoft Dynamics 365 Supply Chain Management.
+description: Dieser Artikel beantwortet einige häufig gestellte Fragen zur Nachkalkulation von Beständen in Microsoft Dynamics 365 Supply Chain Management.
 author: rachel-profitt
 ms.date: 05/03/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-05-03
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 45f65bd4a5cfb9bd0c4eb03ceb56eca452f6ec95
-ms.sourcegitcommit: cbe9493d479f96f271d94599ec1b85131b26169f
+ms.openlocfilehash: 467839b1d0ca6788a92ae60d46686374d0a58046
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809287"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850843"
 ---
 # <a name="inventory-costing-faq"></a>Nachkalkulation von Beständen FAQ
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema beantwortet einige häufig gestellte Fragen zur Nachkalkulation von Beständen in Microsoft Dynamics 365 Supply Chain Management.
+Dieser Artikel beantwortet einige häufig gestellte Fragen zur Nachkalkulation von Beständen in Microsoft Dynamics 365 Supply Chain Management.
 
 ## <a name="inventory-close-adjustments-and-recalculation"></a>Bestandsabschluss, Anpassungen und Neuberechnung
 
@@ -359,7 +359,7 @@ Wir empfehlen Ihnen, negative Bestände häufig zu überwachen und zu korrigiere
 
 ### <a name="do-i-have-to-create-a-new-item-if-my-inventory-has-gone-negative-and-i-use-moving-average"></a>Muss ich einen neuen Artikel erstellen, wenn mein Bestand negativ geworden ist und ich den gleitenden Durchschnitt verwende?
 
-Nein Wenn Ihr Unternehmen eine Nachkalkulation des physischen Bestands zulässt und Sie als Bestandsmodell den gleitenden Durchschnitt verwenden, verwendet das System die auf der Seite **Parameter der Bestands- und Lagerverwaltung** zugewiesene Nachkalkulation-Sequenz, um zu bestimmen, wie die Kosten Ihren Ausgaben zugewiesen werden. Allgemein empfehlen wir Ihnen, einen physischen negativen Bestand nicht zuzulassen. Weitere Informationen finden Sie unter den anderen Fragen im Abschnitt [Negativer Bestand](#negative-inventory) dieses Themas.
+Nein Wenn Ihr Unternehmen eine Nachkalkulation des physischen Bestands zulässt und Sie als Bestandsmodell den gleitenden Durchschnitt verwenden, verwendet das System die auf der Seite **Parameter der Bestands- und Lagerverwaltung** zugewiesene Nachkalkulation-Sequenz, um zu bestimmen, wie die Kosten Ihren Ausgaben zugewiesen werden. Allgemein empfehlen wir Ihnen, einen physischen negativen Bestand nicht zuzulassen. Weitere Informationen finden Sie unter den anderen Fragen im Abschnitt [Negativer Bestand](#negative-inventory) dieses Artikels.
 
 ## <a name="not-stocked-products"></a>Nicht gelagerte Produkte
 
@@ -433,7 +433,7 @@ Wenn es eine Preisdifferenz zwischen der Buchung einer physischen Aktualisierung
 
 ### <a name="when-i-use-moving-average-what-happens-if-there-is-an-issue-before-the-receipt"></a>Wenn ich den gleitenden Durchschnitt verwende, was passiert, wenn es vor dem Wareneingang eine Ausgabe gibt?
 
-Typischerweise kann es vor dem Bon zu einer Ausgabe kommen, entweder weil Sie physischen negativen Bestand für die Artikelmodellgruppe zulassen oder weil die Ausgabe rückdatiert ist. Weitere Informationen finden Sie im Abschnitt [Negative Bestände](#negative-inventory) in diesem Thema.
+Typischerweise kann es vor dem Bon zu einer Ausgabe kommen, entweder weil Sie physischen negativen Bestand für die Artikelmodellgruppe zulassen oder weil die Ausgabe rückdatiert ist. Weitere Informationen finden Sie im Abschnitt [Negative Bestände](#negative-inventory) in diesem Artikel.
 
 Wenn Sie Transaktionen rückdatieren, empfehlen wir Ihnen, Ihre Geschäftsprozesse und Vorgänge sorgfältig zu prüfen, um festzustellen, ob es eine Möglichkeit gibt, dieses Szenario zu vermeiden. Wenn Sie eine Transaktion für einen Artikel rückdatieren, der einen gleitenden Durchschnitt verwendet, ordnet das System der Transaktion den aktuellen gleitenden Durchschnitt zu. Spätere Ausgaben werden nicht angepasst. Weitere Informationen zum gleitenden Durchschnitt mit rückwirkenden Transaktionen finden Sie unter [Gleitender Durchschnitt](moving-average.md).
 

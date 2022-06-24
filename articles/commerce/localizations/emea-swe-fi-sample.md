@@ -1,6 +1,6 @@
 ---
 title: Beispiel zur Integration der Kontrolleinheit für Schweden
-description: Dieses Thema bietet einen Überblick über das Beispiel der Fiskalintegration für Schweden in Microsoft Dynamics 365 Commerce.
+description: Dieser Artikel bietet einen Überblick über das Beispiel der Fiskalintegration für Schweden in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-10-08
-ms.openlocfilehash: ace1bd5b1a06317b6753a34779ecfa96e519a63e
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 11ce0b146f2e64092b0d03dc7416660d76380cd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077012"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885401"
 ---
 # <a name="control-unit-integration-sample-for-sweden"></a>Beispiel zur Integration der Kontrolleinheit für Schweden
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema bietet einen Überblick über das Beispiel der Fiskalintegration für Schweden in Microsoft Dynamics 365 Commerce.
+Dieser Artikel bietet einen Überblick über das Beispiel der Fiskalintegration für Schweden in Microsoft Dynamics 365 Commerce.
 
 > [!NOTE]
 > Dieses Beispiel für die fiskalische Integration ersetzt das frühere [Beispiel für die POS-Integration mit Steuereinheiten für Schweden](retail-sdk-control-unit-sample.md). Das frühere Beispiel nutzt nicht die Vorteile des [Fiscal Integration Framework](./fiscal-integration-for-retail-channel.md) und wird in späteren Updates veraltet sein. Informationen darüber, wie Sie von dem früheren Beispiel auf das Beispiel migrieren, das der Dynamics 365 Commerce Version **10.0.22 und früher** entspricht, finden Sie unter [Migration vom früheren Integrationsbeispiel](emea-swe-fi-sample-sdk.md#migrating-from-the-earlier-integration-sample).
@@ -83,7 +83,7 @@ Fügen Sie auf der Seite **Benutzerdefinierte Felder** die folgenden Datensätze
 
 Ändern Sie für jedes erforderliche Format den Wert des Felds **Druckverhalten** auf **Immer drucken**.
 
-Fügen Sie im Quittungsformat-Designer die folgenden angepassten Felder in den Abschnitt **Fußzeile** ein. Beachten Sie, dass die Feldnamen den Sprachtexten entsprechen, die Sie im vorherigen Abschnitt dieses Themas definiert haben.
+Fügen Sie im Quittungsformat-Designer die folgenden angepassten Felder in den Abschnitt **Fußzeile** ein. Beachten Sie, dass die Feldnamen den Sprachtexten entsprechen, die Sie im vorherigen Abschnitt dieses Artikels definiert haben.
 
 - **Steuereinheit-Code registrieren** - Dieses Feld gibt den Steuercode aus.
 - **Gerät registrieren** - In diesem Feld wird die Herstellungsnummer der Steuereinheit ausgedruckt.

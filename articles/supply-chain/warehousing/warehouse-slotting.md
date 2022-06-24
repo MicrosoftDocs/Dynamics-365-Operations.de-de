@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e057992b15f0a1fa76a78ef78ea9aeea3c088be9
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: a5ce900d7698c7d8211ce1e8b7d529ab79a28915
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676298"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897254"
 ---
 # <a name="warehouse-slotting"></a>Zuteilung von Zeitfenstern für Lagerort
 
@@ -156,7 +156,7 @@ Führen Sie für jede Verkaufsauftragsvorlage, die Sie erstellen, die folgenden 
 
     - **Maßeinheitsstufe:** _EaBoxPl_
 
-        Dieses Feld definiert die Bedarfsmaßeinheiten, die für die Position gültig sind. (Weitere Informationen erhalten Sie im Abschnitt [Maßeinheitsstufen für Zuteilung von Zeitfenstern einrichten](#unit-tiers) weiter oben in diesem Thema.)
+        Dieses Feld definiert die Bedarfsmaßeinheiten, die für die Position gültig sind. (Weitere Informationen erhalten Sie im Abschnitt [Maßeinheitsstufen für Zuteilung von Zeitfenstern einrichten](#unit-tiers) weiter oben in diesem Artikel.)
 
     - **Kriterien für Zuteilung von Zeitfenstern zuweisen:** _Menge betrachten_
 

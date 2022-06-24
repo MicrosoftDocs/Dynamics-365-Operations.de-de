@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren eines Produkts, das kostenlos gekauft werden soll
-description: In diesem Thema wird beschrieben, wie Sie ein Produkt in Microsoft Dynamics 365 Commerce so konfigurieren, dass es kostenlos gekauft werden kann.
+description: In diesem Artikel wird beschrieben, wie Sie ein Produkt in Microsoft Dynamics 365 Commerce so konfigurieren, dass es kostenlos gekauft werden kann.
 author: anupamar-ms
 ms.date: 10/27/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 760b97a895758073c8ffd1209be4a5f7df0f13a8
-ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
+ms.openlocfilehash: 4bd7e4f7a7873e471f1aee94f15e7932e8d9eecd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7919449"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890354"
 ---
 # <a name="configure-a-product-to-be-purchased-for-free"></a>Konfigurieren eines Produkts, das kostenlos gekauft werden soll
 
 [!include [banner](includes/banner.md)]
 
 
-In diesem Thema wird beschrieben, wie Sie ein Produkt in Microsoft Dynamics 365 Commerce so konfigurieren, dass es kostenlos gekauft werden kann.
+In diesem Artikel wird beschrieben, wie Sie ein Produkt in Microsoft Dynamics 365 Commerce so konfigurieren, dass es kostenlos gekauft werden kann.
 
 ## <a name="configure-the-product"></a>Konfigurieren des Produkts
 

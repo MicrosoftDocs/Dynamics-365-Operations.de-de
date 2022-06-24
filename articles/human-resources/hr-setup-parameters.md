@@ -1,6 +1,6 @@
 ---
 title: Parameter in Human Resources konfigurieren
-description: Dieses Thema erklärt, wie Sie firmenspezifische Parameter in Dynamics 365 Human Resources festlegen.
+description: In diesem Artikel wird beschrieben, wie unternehmensspezifische Parameter in Dynamics 365 Human Resources eingerichtet werden.
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1fc8ba3f69f216d66850485b6ba33cd324a57156
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: dd645dcc79672e7f69afe47b803b90a04c22305d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689409"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856279"
 ---
 # <a name="configure-human-resources-parameters"></a>Parameter in Human Resources konfigurieren
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Die Einstellungen einiger Human Resources-Parameter sind firmenübergreifend, während die Einstellungen anderer Parameter firmenspezifisch sind. In diesem Thema wird erklärt, wie Sie firmenspezifische Human Resources-Parameter festlegen.
+Die Einstellungen einiger Human Resources-Parameter sind firmenübergreifend, während die Einstellungen anderer Parameter firmenspezifisch sind. In diesem Artikel wird erklärt, wie Sie firmenspezifische Human Resources-Parameter festlegen.
 
 Zum Festlegen der Human Resources-Parameter werden zwei Seiten verwendet. Für Parameter, die innerhalb des Unternehmens freigegeben werden, verwenden Sie die Seite **Freigegeben Parameter für Personalverwaltung**. Für Parameter, die unternehmensspezifisch sind (das heißt, die Einstellungen beziehen sich auf ein einzelnes Unternehmen), verwenden Sie die Seite **Personalverwaltungsparameter**.
 

@@ -1,6 +1,6 @@
 ---
 title: Was ist neu oder geändert in Dynamics 365 Human Resources 22. März 2021
-description: Dieses Thema beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 22. März 2021 entweder neu sind oder geändert wurden.
+description: Dieser Artikel beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 22. März 2021 neu sind oder geändert wurden.
 author: marcelbf
 ms.date: 03/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-03-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 13520ca55c98fb1acb6185af393550b12fbc2072
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2cfdd0fc1ca7ba206b0f447ecabd801a5a4e8c57
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693527"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859487"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-22-2021"></a>Was ist neu oder geändert in Dynamics 365 Human Resources 22. März 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Human Resources neu oder geändert wurden oder demnächst verfügbar sind.
+Dieser Artikel beschreibt Funktionen, die in Dynamics 365 Human Resources neu oder geändert sind oder bald eingeführt werden.
 
 Weitere Informationen zu unserem Aktualisierungsprozess und Zeitplan finden Sie unter [Aktualisierungsprozess](hr-admin-setup-update-process.md).
 
@@ -49,9 +49,9 @@ Die folgenden Funktionen sind in dieser Version allgemein verfügbar.
 Die folgenden Fehlerkorrekturen sind in diesem Release enthalten.
 
 > [!NOTE]
-> Unser Ziel ist es, Ihnen diese Informationen so schnell wie möglich zukommen zu lassen. Wir können dieses Thema aktualisieren, um Fehlerbehebungen aufzunehmen, die es nach der Erstveröffentlichung dieses Themas in den Build geschafft haben.
+> Unser Ziel ist es, Ihnen diese Informationen so schnell wie möglich zukommen zu lassen. Wir können diesen Artikel aktualisieren, um Fehlerbehebungen aufzunehmen, die es nach der Erstveröffentlichung dieses Artikels in den Build geschafft haben.
 
-| Problemnummer | Abgang |  Beschreibung |
+| Problemnummer | Problem |  Description |
 | --- | --- | --- |
 | 554239 | Leistungsverbesserungen für Entitäten im Zusammenhang mit der **BusinessProcessTaskAssignment**-Tabelle | Verbesserung der Leistung von Entitäten im Zusammenhang mit der **BusinessProcessTaskAssignment**-Tabelle durch Hinzufügen von vorgeschlagenen Indizes zur Tabelle. |
 | 566061 | Entfernen von Fallback-Code der V2-Entität aus der nächtlichen Synchronisierung | Entfernen Sie den V2-Fallback-Code für die nächtliche Dataverse-Synchronisierung. Der Fallback ist nicht mehr erforderlich und verhindert, dass die gefilterte Synchronisierung wie erwartet funktioniert. Die Änderung verbessert die Konsistenz der Dataverse-Datensynchronisation. |

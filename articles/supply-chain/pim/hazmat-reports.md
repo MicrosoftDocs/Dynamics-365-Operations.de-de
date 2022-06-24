@@ -1,6 +1,6 @@
 ---
 title: Anfragen und Berichte zu Gefahrstoffen
-description: In diesem Thema wird erläutert, wie Sie mit den verschiedenen Berichten arbeiten, die sich auf gefährliche Materialien beziehen. Viele dieser Berichte sind erforderlich, damit Sie während der Lieferung und der Lagerung die verschiedenen Gefahrstoffvorschriften einhalten können.
+description: In diesem Artikel wird erläutert, wie Sie mit den verschiedenen Berichten arbeiten, die sich auf gefährliche Materialien beziehen. Viele dieser Berichte sind erforderlich, damit Sie während der Lieferung und der Lagerung die verschiedenen Gefahrstoffvorschriften einhalten können.
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: ca8c973d3322bd51bf519e83fb5a5c19d35c0bed
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 782b1b4995af09a63c483d2b81ed255a5c11803a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568542"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846039"
 ---
 # <a name="hazardous-materials-inquiries-and-reports"></a>Anfragen und Berichte zu Gefahrstoffen
 
@@ -63,7 +63,7 @@ Um diesen Bericht anzuzeigen, gehen Sie zu **Produktinformationsverwaltung \> An
 
 Weitere Informationen zum Festlegen von Bestandsbegrenzungen für ein zugelassenes Produkt finden Sie unter [Bestandsgrenzen für gefährliche Produkte festlegen](hazmat-items.md#stock-limits).
 
-Die Vorschrift, die für Bestandsbegrenzungen verwendet wird, ist auf der Seite **Lagerverwaltungsparameter** definiert. Gehen Sie zu **Lagerverwaltung \> Setup \> Lagerverwaltungsparameter** und dann auf der Registerkarte **Berichte** unter **Lagerbestandsgrenze für gefährliche Stoffe** Geben Sie einen Vorschriftscode an. Weitere Informationen finden Sie im Abschnitt, [Berichterstellung für Gefahrstoffe einrichten](#set-up) weiter oben in diesem Thema.
+Die Vorschrift, die für Bestandsbegrenzungen verwendet wird, ist auf der Seite **Lagerverwaltungsparameter** definiert. Gehen Sie zu **Lagerverwaltung \> Setup \> Lagerverwaltungsparameter** und dann auf der Registerkarte **Berichte** unter **Lagerbestandsgrenze für gefährliche Stoffe** Geben Sie einen Vorschriftscode an. Weitere Informationen finden Sie im Abschnitt, [Berichterstellung für Gefahrstoffe einrichten](#set-up) weiter oben in diesem Artikel.
 
 ## <a name="verified-gross-mass-report"></a>Überprüfter Bruttomassenbericht
 

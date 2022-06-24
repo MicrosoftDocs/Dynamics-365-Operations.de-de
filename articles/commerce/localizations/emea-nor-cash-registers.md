@@ -1,6 +1,6 @@
 ---
 title: Kassenfunktionalität für Norwegen
-description: Dieses Thema bietet einen Überblick über die in Norwegen verfügbaren Registrierkassenfunktionen Microsoft Dynamics 365 Commerce, und bietet Richtlinien zum Einrichten der Funktionalität.
+description: Dieser Artikel bietet einen Überblick über die in Norwegen verfügbaren Registrierkassenfunktionen Microsoft Dynamics 365 Commerce, und bietet Richtlinien zum Einrichten der Funktionalität.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-10-31
-ms.openlocfilehash: bb87b3a7405ef3d8435748813fa66db74b8f0971
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 778a947f03866518219e9c0fa44660d66f19f53a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944939"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906698"
 ---
 # <a name="cash-register-functionality-for-norway"></a>Kassenfunktionalität für Norwegen
 
 [!include[banner](../includes/banner.md)]
 
-Dieses Thema bietet einen Überblick über die in Norwegen verfügbaren Registrierkassenfunktionen in Dynamics 365 Commerce. Es enthält auch Richtlinien zum Einrichten der Funktionalität. Die Funktionalität besteht aus folgenden Teilen:
+Dieser Artikel bietet einen Überblick über die in Norwegen verfügbaren Registrierkassenfunktionen in Dynamics 365 Commerce. Es enthält auch Richtlinien zum Einrichten der Funktionalität. Die Funktionalität besteht aus folgenden Teilen:
 
 - Gemeinsame Point-of-Sale (POS)-Funktionen, die Kunden in allen Ländern oder Regionen zur Verfügung stehen. Beispiele hierfür sind eine Option, mit der Sie verhindern können, dass eine Kopie eines Kassenbons mehr als einmal gedruckt wird.
 - Norwegen-spezifische Funktionen, wie z. B. digitale Signaturen für Verkaufstransaktionen.

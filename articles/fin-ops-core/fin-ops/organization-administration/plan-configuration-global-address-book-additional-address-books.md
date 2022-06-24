@@ -1,6 +1,6 @@
 ---
-title: Planen für das globale Adressbuch und andere Adressbücher
-description: Dieses Thema beschreibt die Überlegungen und Entscheidungen, die Sie während des Planungsprozesses machen müssen.
+title: Für das globale Adressbuch und andere Adressbücher planen
+description: Dieser Artikel beschreibt die Überlegungen und Entscheidungen, die Sie während des Planungsprozesses machen müssen.
 author: msftbrking
 ms.date: 01/13/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87b3f6a74c217b0cc7cec784ca6a964ab2caae0c7e9438aee2cc82987a508d63
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 288c96d8c877f5e3b3101080294b2f6cdeb39882
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771895"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863158"
 ---
-# <a name="plan-for-the-global-address-book-and-other-address-books"></a>Planen für das globale Adressbuch und andere Adressbücher
+# <a name="plan-for-the-global-address-book-and-other-address-books"></a>Für das globale Adressbuch und andere Adressbücher planen
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema beschreibt die Überlegungen und die Entscheidungen, die Sie während des Planungsprozesses vornehmen müssen, bevor Sie das globale Adressbuch und alle zusätzlichen Adressbücher einrichten und konfigurieren. Einige der Entscheidungen erfordern, dass Sie die Entscheidungen bestätigen, die für andere Bereiche des Produkts getroffen wurden, wie die Organisationshierarchie.
+Dieser Artikel beschreibt die Überlegungen und die Entscheidungen, die Sie während des Planungsprozesses vornehmen müssen, bevor Sie das globale Adressbuch und alle zusätzlichen Adressbücher einrichten und konfigurieren. Einige der Entscheidungen erfordern, dass Sie die Entscheidungen bestätigen, die für andere Bereiche des Produkts getroffen wurden, wie die Organisationshierarchie.
 
 ## <a name="global-address-book"></a>Globales Adressbuch
 

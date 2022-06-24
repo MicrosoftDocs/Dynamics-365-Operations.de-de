@@ -1,6 +1,6 @@
 ---
 title: Einen Intercompany-Auftrag für einen externen Debitor erstellen und abrechnen
-description: In diesem Thema wird erläutert, wie Sie einen Intercompany-Auftrag für einen externen Debitor erstellen und abrechnen.
+description: In diesem Artikel wird erläutert, wie Sie einen Intercompany-Auftrag für einen externen Debitor erstellen und abrechnen.
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: c8a22ded1a6242e4062e1ce9e0ce624d4579fba9
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: cd42551730ab0123813a3b5a0b5a4b1c334e9d30
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669376"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852156"
 ---
 # <a name="create-and-invoice-an-intercompany-sales-order-for-an-external-customer"></a>Einen Intercompany-Auftrag für einen externen Debitor erstellen und abrechnen
 

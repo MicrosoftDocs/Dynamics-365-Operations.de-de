@@ -1,6 +1,6 @@
 ---
 title: Versandcontainer
-description: In diesem Thema wird beschrieben, wie Sie Transportcontainer für das Modul Gesamttransportkosten festlegen.
+description: In diesem Artikel wird beschrieben, wie Sie Transportcontainer für das Modul Gesamttransportkosten festlegen.
 author: Weijiesa
 ms.date: 12/09/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 96710cf2b5a2e39f9492aadb0ba6f3241f0666f4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 345f815a4f85db30db18aba3f8a4d41835c2e3f2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690553"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860841"
 ---
 # <a name="shipping-container-setup"></a>Einrichten von Transportcontainern
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Transportcontainer für das Modul **Gesamttransportkosten** festlegen.
+In diesem Artikel wird beschrieben, wie Sie Transportcontainer für das Modul **Gesamttransportkosten** festlegen.
 
 ## <a name="set-up-shipping-container-types"></a><a id="shipping-container-types"></a>Transportcontainer-Typen festlegen
 
@@ -53,7 +53,7 @@ Um mit Transportcontainern zu arbeiten, gehen Sie zu **Gesamttransportkosten \> 
 | Feld | Beschreibung |
 |---|---|
 | Versandcontainer | Geben Sie einen eindeutigen Identifikationsnamen/Nummer für den Transportcontainer ein. |
-| Versandcontainertyp | Wählen Sie den Typ des Transportcontainers. Weitere Informationen finden Sie im Abschnitt [Versandcontainer-Typen festlegen](#shipping-container-types) weiter oben in diesem Thema. |
+| Versandcontainertyp | Wählen Sie den Typ des Transportcontainers. Weitere Informationen finden Sie im Abschnitt [Versandcontainer-Typen festlegen](#shipping-container-types) weiter oben in diesem Artikel. |
 
 > [!NOTE]
 > - Das Einrichten des Transportcontainers ist optional. Normalerweise werden Sie sie nur verwenden, wenn Ihre Firma eigene Transportcontainer besitzt oder häufig dieselben Transportcontainer wiederverwendet.

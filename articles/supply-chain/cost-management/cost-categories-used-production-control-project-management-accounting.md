@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e35a6b7da4ead8ab6f007ef8800ed8a05b1c513
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 09a808c91ece25a9a40f662e0aca2c504246fc0a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675346"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854499"
 ---
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>Kostenkategorien in der Produktionssteuerung und in der Projektverwaltung und -buchhaltung
 
@@ -31,7 +31,7 @@ Bestimmte Arten von Produktionsarbeiten beziehen sich auch auf Vorkalkulationen 
 
 Bestimmte Arten von Produktionsarbeiten beziehen sich auch auf Vorkalkulationen und Berichte in Bezug auf den Projektzeitaufwand. In diesem Fall ist eine Kostenkategorie für die Produktion und die Projektzwecke erforderlich. Wenn eine Kostenkategorie in der Produktion und in Projekten verwendet werdeb, müssen zusätzliche, projektbezogene Informationen definiert werden. So können sich beispielsweise die Stundenkosten, die Projekten zugeordnet sind, von den Stundenkosten für die Produktion unterscheiden. Verwenden Sie die Seite **Kostenkategorien**, um eine Kostenkategorie zu definieren, die in der Produktionssteuerung und in der Projektverwaltung und -buchhaltung verwendet wird. 
 
-**Hinweis:** Die Kostenrechnung enthält zwar die Seite **Projektkategorien**, diese steht jedoch in keinerlei Zusammenhang mit den in diesem Thema beschriebenen Funktionen. Wenn Sie eine Kostenkategorie in Projekten verwenden, hat die Seite **Kostenkategorien** zusätzliche Registerkarten, die zusätzliche projektbezogene Informationen anzeigen. Zu diesen Informationen gehören die Kategoriegruppe, ein Abrechnungscode und Sachkonten, die der Kostenkategorie zugewiesen werden.
+**Hinweis:** Die Kostenrechnung enthält zwar die Seite **Projektkategorien**, diese steht jedoch in keinerlei Zusammenhang mit den in diesem Artikel beschriebenen Funktionen. Wenn Sie eine Kostenkategorie in Projekten verwenden, hat die Seite **Kostenkategorien** zusätzliche Registerkarten, die zusätzliche projektbezogene Informationen anzeigen. Zu diesen Informationen gehören die Kategoriegruppe, ein Abrechnungscode und Sachkonten, die der Kostenkategorie zugewiesen werden.
 
 -   Die Kostenkategorie muss einer Kategoriegruppe zugewiesen werden, in der der Buchungstyp **Stunden** unterstützt wird.
 -   Die Abrechnungscodes geben Standardinformationen an, auf welche Weise gemeldete Zeiten für ein Projekt in Rechnung gestellt werden.

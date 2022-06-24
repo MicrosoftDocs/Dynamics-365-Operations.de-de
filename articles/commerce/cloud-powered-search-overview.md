@@ -1,6 +1,6 @@
 ---
 title: Übersicht über die cloudbasierte Suche
-description: Dieses Thema enthält eine Übersicht der Cloud-betriebenen Suche in Microsoft Dynamics 365 Commerce.
+description: Dieser Artikel enthält eine Übersicht der Cloud-betriebenen Suche in Microsoft Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 02/28/2022
 ms.topic: overview
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9116dd415d44a56fbe8c7852382c413b0a75872c
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 8a3ab869eb9ddc0e73061bd2363cf9b3962da1e3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371428"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850355"
 ---
 # <a name="cloud-powered-search-overview"></a>Übersicht über die cloudbasierte Suche
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält eine Übersicht der Cloud-betriebenen Suche in Microsoft Dynamics 365 Commerce.
+Dieser Artikel enthält eine Übersicht der Cloud-betriebenen Suche in Microsoft Dynamics 365 Commerce.
 
 Produkt-Auffindbarkeit hilft sicherzustellen, dass Debitoren Produkte über das Durchsuchen von Kategorien schnell und einfach finden. Für Einzelhändler ist die Produkterkennung ein wichtiges Tool für die Interaktion mit Kunden über alle von der Cloud Scale-Unit (CSU) unterstützten Kanäle, wie E-Commerce und Point of Sale (POS).
 

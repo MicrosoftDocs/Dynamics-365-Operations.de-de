@@ -1,6 +1,6 @@
 ---
 title: Quarantäneaufträge
-description: Dieses Thema beschreibt, wie Sie Quarantäneaufträge verwenden, um Bestände zu sperren.
+description: Dieser Artikel beschreibt, wie Sie Quarantäneaufträge verwenden, um Bestände zu sperren.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5cf0ec8f9f4d862724cb8ab72b48771ed68eaf39
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 3ee1ba338d90c6ee9cdc37948061f518040ae1a1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568782"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869661"
 ---
 # <a name="quarantine-orders"></a>Quarantäneaufträge
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema beschreibt, wie Sie Quarantäneaufträge verwenden, um Bestände zu sperren.
+Dieser Artikel beschreibt, wie Sie Quarantäneaufträge verwenden, um Bestände zu sperren.
 
 Mit Quarantäneaufträgen können Sie Bestände sperren. Beispielsweise empfiehlt es sich, Artikel aus Gründen der Qualitätskontrolle unter Quarantäne zu stellen. Bestand, der unter Quarantäne gestellt wurde, wird an einen Quarantänelagerort übertragen.
 

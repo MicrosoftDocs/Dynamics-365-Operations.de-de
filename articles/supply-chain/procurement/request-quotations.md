@@ -1,6 +1,6 @@
 ---
 title: Übersicht über Angebotsanfragen (RFQs)
-description: Dieses Thema bietet eine Übersicht über Angebotsanforderungen. Organisationen stellen eine Angebotsanforderung aus, um von mehreren Kreditoren Angebote für die Artikel oder Dienstleistungen, die sie kaufen müssen, zwecks Vergleich anzufordern.
+description: Dieser Artikel bietet eine Übersicht über Angebotsanforderungen. Organisationen stellen eine Angebotsanforderung aus, um von mehreren Kreditoren Angebote für die Artikel oder Dienstleistungen, die sie kaufen müssen, zwecks Vergleich anzufordern.
 author: GalynaFedorova
 ms.date: 10/05/2020
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3de48c03ac73ee164dea0c329b2595db21c841cc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 89abf82879ab08f2341ce5b14e6af1d5c42140b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671953"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895582"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Übersicht über Angebotsanfragen (RFQs)
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema bietet eine Übersicht über Angebotsanforderungen. Organisationen stellen eine Angebotsanforderung aus, um von mehreren Kreditoren Angebote für die Artikel oder Dienstleistungen, die sie kaufen müssen, zwecks Vergleich anzufordern. Mit einer Angebotsanforderung werden Kreditoren gebeten, Preise und Lieferzeiten für die angegebenen Produktmengen bereitzustellen.
+Dieser Artikel bietet eine Übersicht über Angebotsanforderungen. Organisationen stellen eine Angebotsanforderung aus, um von mehreren Kreditoren Angebote für die Artikel oder Dienstleistungen, die sie kaufen müssen, zwecks Vergleich anzufordern. Mit einer Angebotsanforderung werden Kreditoren gebeten, Preise und Lieferzeiten für die angegebenen Produktmengen bereitzustellen.
 Sie können Kreditoren auch bitten, anzugeben, ob zusätzliche Gebühren, etwa Lieferkosten, anfallen, oder ob der Kreditor Rabatte für große Bestellungen oder bei frühzeitiger Bezahlung der Rechnung anbietet.
 
 Der Angebotsanforderungsprozess besteht aus den folgenden Aufgaben:
@@ -45,7 +45,7 @@ Sie können eine Angebotsanforderung aus geplanten Aufträgen, einer Bestellanfo
 
 Nachdem Sie die Angebotsanforderungsanfrage vorbereitet und Kreditoren hinzugefügt haben, wählen Sie **Senden** (**Senden und Veröffentlichen** für den öffentlichen Sektor) in der Angebotsanforderungsanfrage. Eine Angebotsanforderungserfassung wird für jeden Kreditor generiert, an den Sie eine Angebotsanforderung senden. Sie können die Druckverwaltungseinstellung für die Sendeaktivität so konfigurieren, dass entweder ein Bericht für jeden Kreditor in ein Archiv ausgedruckt wird oder ein Bericht an die E-Mail-Adresse jedes Kreditors gesendet wird. Außerdem können Sie die Angebotsanforderungserfassung für jeden Kreditor verwenden, um einen Bericht zu generieren, den Sie später an den Kreditor senden oder erneut senden können. Sie können die Aktivität „Senden” auch so konfigurieren, dass ein Antwortbogen generiert wird, den der Kreditor ausfüllen kann.
 
-Dieses Thema behandelt den Prozess der Handhabung von Angebotsanforderungen, wenn die Kreditorenzusammenarbeit nicht verwendet wird. Wenn Ihr System für Kreditorenzusammenarbeit eingerichtet ist, können Kreditoren Angebote direkt in Supply Chain Management eingeben. Weitere Informationen über die Kreditorenzusammenarbeit finden Sie unter [Kreditorenzusammenarbeit mit externen Kreditoren](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) und [Kreditorenzusammenarbeit mit Kunden](vendor-collaboration-work-external-vendors.md).
+Dieser Artikel behandelt den Prozess der Handhabung von Angebotsanforderungen, wenn die Kreditorenzusammenarbeit nicht verwendet wird. Wenn Ihr System für Kreditorenzusammenarbeit eingerichtet ist, können Kreditoren Angebote direkt in Supply Chain Management eingeben. Weitere Informationen über die Kreditorenzusammenarbeit finden Sie unter [Kreditorenzusammenarbeit mit externen Kreditoren](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) und [Kreditorenzusammenarbeit mit Kunden](vendor-collaboration-work-external-vendors.md).
 
 Wenn Sie eine Angebotsanforderung ergänzen müssen, nachdem sie übermittelt wurde, können Sie die Angebotsanforderung an Lieferanten erneut senden, wenn Sie fertig sind. Dazu verwenden Sie die beiden Zusatzaktivitäten: Erstellen und Abschließen.
 
@@ -59,7 +59,7 @@ Nachdem Sie ein Angebot oder mehrere Positionen in einem Angebot ausgewählt hab
 
 Eine Angebotsanforderung hat zwei Stati: den niedrigsten und den höchsten Status, Sie sehen den Status auf der Listenseite für **Alle Angebotsanforderungen** anzeigen. Der niedrigste Status steht für die am wenigsten fortgeschrittene Phase in der Angebotsanforderung und der höchste Status für die am weitesten fortgeschrittene Phase einer Position in der Angebotsanforderung. Beispielsweise wird eine Angebotsanforderung mit drei Positionen an zwei Kreditoren gesendet und so gibt es zwei Angebotsanforderungen mit je drei Positionen. Alle Positionen sind **Versendet**. Nun wird ein Angebot von einem der Kreditoren erfasst und die Angebotsanforderungspositionen erhält den Status **Eingegangen**. Das bedeutet, dass von den drei Positionen auf der Angebotsanforderungsanfrage, alle für eine Angebotsanforderung **Versendet** und für eine andere Angebotsanforderungen **Eingegangen** sind. Der niedrigste Status ist dann **Versendet** und der höchste Status ist **Empfangen.**
 
-Diese Statusangaben werden detaillierter später in diesem Thema beschrieben.
+Diese Statusangaben werden detaillierter später in diesem Artikel beschrieben.
 
 ## <a name="setting-up-rfq-functionality"></a>Einrichten von Angebotsanforderungsfunktionen
 

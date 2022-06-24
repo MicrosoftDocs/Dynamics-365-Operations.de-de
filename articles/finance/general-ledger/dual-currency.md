@@ -1,6 +1,6 @@
 ---
 title: Doppelte Währung
-description: Dieses Thema enthält Informationen zu doppelter Währung. Dabei wird die Berichtswährung als eine zweite Buchhaltungswährung für Microsoft Dynamics 365 Finance verwendet.
+description: Dieser Artikel enthält Informationen zu doppelter Währung. Dabei wird die Berichtswährung als eine zweite Buchhaltungswährung für Microsoft Dynamics 365 Finance verwendet.
 author: kweekley
 ms.date: 04/17/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 04738d2fe88fef5c0e96a39febfec86fab3bee7d
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 8db8faefaec4afe208344492ec91375531cb9cd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713584"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906354"
 ---
 # <a name="dual-currency"></a>Doppelte Währung
 
@@ -36,7 +36,7 @@ Darüber hinaus wurden zahlreiche Module verbessert, um die Berichtswährung in 
 - Anlagen 
 - Konsolidierungen
 
-Nachdem einer Aktualisierung, müssen Sie bestimmte Schritte für Bargeld- und Bankverwaltung und Anlagen abschließen. Stellen Sie daher sicher, dass Sie die entsprechenden Abschnitte dieses Themas lesen und verstehen.
+Nachdem einer Aktualisierung, müssen Sie bestimmte Schritte für Bargeld- und Bankverwaltung und Anlagen abschließen. Stellen Sie daher sicher, dass Sie die entsprechenden Abschnitte dieses Artikels lesen und verstehen.
 
 ## <a name="posting-process"></a>Buchungsprozess
 
@@ -93,7 +93,7 @@ Die folgenden weiteren Änderungen im Modul **Hauptbuch** wurden vorgenommen:
 - Ein separater Wechselkurstyp für die Berichtswährung kann auf dem Sachkonto festgelegt werden. Wenn eine Organisation keinen anderen Wechselkurstyp verwenden möchte, können Sie das Feld für den Wechselkurstyp für das Berichtswährung leer lassen. Alternativ können Sie den gleichen Wechselkurstyp auswählen, der für die Buchhaltungswährung verwendet wird. Wenn Sie das Feld leer lassen, verwendet das System den Wechselkurstyp für die Buchhaltungswährung.
 - Eine neue Erfassung, die Regulierungserfassung der Berichtswährung ermöglicht die Buchung von Regulierungen auf Sachkonten nur in der Berichtswährung. Diese Erfassung ermöglicht nur die Buchung auf Sachkonten. Sie unterstützt kein Intercompany und die Währung muss die Berichtswährung der juristischen Person sein, wo die Erfassung gebucht wird. Wenn die Erfassung gebucht wird, sind die Buchungswährungs- und Buchhaltungswährungsbeträge 0 (Null), und der Berichtswährungsbetrag wird mit dem Betrag gebucht, die für die Buchung eingegeben wurde. Da die Methode, mit der die Berichtswährung in den Modulen **Kreditoren**, **Debitoren** und **Anlagevermögen** verwendet wird, geändert wurde, kann diese Erfassung bei einer Aktualisierung für Regulierungen verwendet werden. Beispiele, die zeigen, wie diese Erfassung verwendet werden kann, finden Sie in den Abschnitten zu diesen Modulen.
 - Der Prozess für Periodenzuweisung wurde aktualisiert, sodass er Beträge in den Buchungs-, Buchhaltungs- und Berichtswährungen zuweist. Zuvor wurden Beträge in den Transaktions- und Buchhaltungswährungen zugewiesen, und dann wurde der Buchhaltungswährungsbetrag in die Berichtswährung umgerechnet. Durch dieses Verhalten kann ein Saldo auf dem Sachkonto in der Berichtswährung verbleiben. Wenn jetzt Beträge im Buchhaltungseintrag berechnet und verwendet werden, erfolgt keine Umrechnung.
-- Der Prozess für eine Neubewertung der Fremdwährung hat bereits Beträge in der Berichtswährung neu bewertet. Allerdings wird der Berichtswährungsbetrag jetzt durch den Betrag in der Buchungswährung berechnet, wie im Abschnitt [Buchungsprozess](#posting-process) oben in diesem Thema beschrieben.
+- Der Prozess für eine Neubewertung der Fremdwährung hat bereits Beträge in der Berichtswährung neu bewertet. Allerdings wird der Berichtswährungsbetrag jetzt durch den Betrag in der Buchungswährung berechnet, wie im Abschnitt [Buchungsprozess](#posting-process) oben in diesem Artikel beschrieben.
 - Viele Berichte und Abfragen im Hauptbuch verwendeten bereits die Berichtswährung, einige jedoch nicht. Ein Beispiel ist die Listenseite **Zwischenbilanz**. Diese Listenseite enthält jetzt Spalten für die Buchhaltungswährung und die Berichtswährung. Beachten Sie, dass die Spalten für die Berichtswährung ausgeblendet werden, wenn die Buchhaltungswährung und die Berichtswährung identisch sind oder keine Berichtswährung auf das Sachkonto festgelegt wurde.
 
 ### <a name="financial-reporting"></a>Finanzberichterstellung

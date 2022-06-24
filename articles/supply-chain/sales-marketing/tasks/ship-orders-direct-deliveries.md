@@ -1,6 +1,6 @@
 ---
 title: Aufträge als Direktlieferungen versenden
-description: Dieses Thema zeigt, wie eine Direktauslieferung für einen Auftrag erstellt wird.
+description: Dieser Artikel zeigt, wie eine Direktauslieferung für einen Auftrag erstellt wird.
 author: Henrikan
 ms.date: 07/11/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 94890b0915a49052c298090f124cf2b91c462de8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f5f145bacecc47a782c60335c6ff5b79f978007c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572440"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875158"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Aufträge als Direktlieferungen versenden
 
 [!include [banner](../../includes/banner.md)]
 
-Dieses Thema zeigt, wie eine Direktauslieferung für einen Auftrag erstellt wird. Sie verwenden die Direktlieferung, wenn Sie Waren an den Debitor direkt vom Kreditor versenden möchten, anstatt sie zunächst an den eigenen Lagerort zu versenden. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten ausführen. Um die zweite Unteraufgabe "Erstellen Sie Direktlieferungen von der Workbench" erfolgreich abzuschließen, stellen Sie sicher, dass der Artikel, den Sie im Auftrag ausgewählt haben, einem standardmäßigen Kreditoren zugeordnet ist, der im Einkauf-Inforegister des "Freigegebenen Produktmasters" angegeben ist.
+Dieser Artikel zeigt, wie eine Direktauslieferung für einen Auftrag erstellt wird. Sie verwenden die Direktlieferung, wenn Sie Waren an den Debitor direkt vom Kreditor versenden möchten, anstatt sie zunächst an den eigenen Lagerort zu versenden. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten ausführen. Um die zweite Unteraufgabe "Erstellen Sie Direktlieferungen von der Workbench" erfolgreich abzuschließen, stellen Sie sicher, dass der Artikel, den Sie im Auftrag ausgewählt haben, einem standardmäßigen Kreditoren zugeordnet ist, der im Einkauf-Inforegister des "Freigegebenen Produktmasters" angegeben ist.
 
 ## <a name="set-an-individual-order-for-direct-delivery"></a>Legen Sie einen einzelnen Auftrag für die Direktlieferung fest
 1. Wechseln Sie zu **Navigationsbereich > Module > Debitoren > Aufträge > Alle Aufträge**.

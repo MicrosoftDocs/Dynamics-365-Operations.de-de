@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren von Callcenter-Lieferarten und -Belastungen
-description: In diesem Thema wird beschrieben, wie Sie in Dynamics 365 Commerce Lieferarten und Gebühren für einen Callcenter-Auftrag einrichten.
+title: Callcenter-Lieferarten und -Belastungen konfigurieren
+description: In diesem Artikel wird beschrieben, wie Sie in Dynamics 365 Commerce Lieferarten und Gebühren für einen Callcenter-Auftrag einrichten.
 author: josaw1
 ms.date: 04/26/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bd763082969079de2d68e12483ec25871c332e4067f122c6a845d3acd477af62
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f445e9dabd0210951609170369eae63bcc30ce6b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748570"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888297"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurieren von Callcenter-Lieferarten und -Belastungen
 
@@ -35,7 +35,7 @@ Commerce verfügt über Funktionen, mit denen Benutzer die Lieferarten, die von 
 
 Bevor Sie festlegen, welche Zustellarten für Callcenter-Aufträge verwendet werden können und die zugehörigen Regeln und Gebühren definieren, müssen Sie die Lieferarten definieren. Gehe zu **Vertrieb und Marketing \> Einstellungen \> Vertrieb \> Lieferarten**. Wählen Sie **Neu**, um eine neue Lieferart zu erstellen. Alternativ können Sie in der Liste eine vorhandene Lieferart auswählen und dann **Bearbeiten** wählen, um Änderungen vorzunehmen.
 
-Im Feld **Lieferart** können Sie je nach Geschäftsanforderung eine beliebige Kombination alphanumerischer Zeichen eingeben. Sie können dann das Feld **Beschreibung** verwenden, um zusätzlichen Kontext bereitzustellen. Die Felder **Gruppe der sonstigen Zuschläge** und **Eillieferung** sind optional und werden später in diesem Thema näher erläutert.
+Im Feld **Lieferart** können Sie je nach Geschäftsanforderung eine beliebige Kombination alphanumerischer Zeichen eingeben. Sie können dann das Feld **Beschreibung** verwenden, um zusätzlichen Kontext bereitzustellen. Die Felder **Gruppe der sonstigen Zuschläge** und **Eillieferung** sind optional und werden später in diesem Artikel näher erläutert.
 
 Fügen Sie auf dem Inforegister **Commerce-Kanäle** einen beliebigen Kanal hinzu, der beim Anlegen von Verkaufstransaktionen in diesem Kanal den Liefermodus verwenden darf.
 

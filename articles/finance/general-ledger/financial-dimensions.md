@@ -1,6 +1,6 @@
 ---
 title: Finanzdimensionen
-description: In diesem Thema werden die verschiedenen Arten von wertmäßigen Dimensionen beschrieben und wie sie eingerichtet wurden.
+description: In diesem Artikel werden die verschiedenen Arten von Finanzdimensionen beschrieben und es wird erörtert, wie sie eingerichtet werden.
 author: aprilolson
 ms.date: 03/07/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 1360139a06909c1df922570f6e577d1d310b1c48
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 3ad92e006351adbf2494a1b32325d2d4a83b76a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722324"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849988"
 ---
 # <a name="financial-dimensions"></a>Finanzdimensionen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die verschiedenen Arten von wertmäßigen Dimensionen erklärt und wie sie eingerichtet wurden.
+In diesem Artikel werden die verschiedenen Arten von Finanzdimensionen erklärt und es wird erörtert, wie sie eingerichtet werden.
 
 Mithilfe der Seite **Finanzdimensionen** können Sie Finanzdimensionen erstellen, die als Kontosegmente für Kontenpläne verwendet werden können. Es gibt zwei Typen von Finanzdimensionen: benutzerdefinierte Dimensionen und entitätsunterstützte Dimensionen. Benutzerdefinierte Dimensionen werden von mehreren juristischen Personen gemeinsam genutzt und die Werte werden von Benutzern eingegeben und verwaltet. Bei entitätsunterstützten Dimensionen sind die Werte an anderen Stelle im System, wie in "Debitoren"- oder "Filialen"-Entitäten definiert. Einige entitätsunterstützte Dimensionen werden von mehreren juristischen Personen gemeinsam genutzt, wobei andere entitätsunterstützten Dimensionen unternehmensspezifisch sind.
 

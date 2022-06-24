@@ -1,6 +1,6 @@
 ---
 title: Nahtloser Offline-Schalter für Geschenkkarten- und Gutschriftsvorgänge
-description: Dieses Thema bietet einen Überblick über Verbesserungen, die einen nahtlosen Offline-Switch für bestimmte Zahlungsarten ermöglichen.
+description: Dieser Artikel bietet einen Überblick über Verbesserungen, die einen nahtlosen Offline-Switch für bestimmte Zahlungsarten ermöglichen.
 author: BrianShook
 ms.date: 02/11/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 59f1a0b213bd22906ba8b2c3e7da38a9818f6d4f
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: e0416a61bd5fd3b875b427ad8a6313d0e9936f0d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779491"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869160"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>Nahtloser Offline-Schalter für Geschenkkarten- und Gutschriftsvorgänge
 
 [!include [banner](../includes/banner.md)]
 
-Wenn ein POS-Gerät (Point of Sale) die Verbindung zur Kanaldatenbank verliert, können die meisten laufenden POS-Operationen und Transaktionen fortgesetzt werden, nachdem der Kassierer eine Warnmeldung über den Verlust der Verbindung erhalten hat. In einigen Fällen weisen Transaktionen jedoch Elemente auf, die auf den Echtzeitdienst angewiesen sind, und diese Elemente werden nicht unterstützt, wenn das POS-Gerät offline ist. In diesem Thema werden einige Funktionen beschrieben, die dazu beitragen, die Auswirkungen des Konnektivitätsverlusts in diesen Szenarien zu reduzieren.
+Wenn ein POS-Gerät (Point of Sale) die Verbindung zur Kanaldatenbank verliert, können die meisten laufenden POS-Operationen und Transaktionen fortgesetzt werden, nachdem der Kassierer eine Warnmeldung über den Verlust der Verbindung erhalten hat. In einigen Fällen weisen Transaktionen jedoch Elemente auf, die auf den Echtzeitdienst angewiesen sind, und diese Elemente werden nicht unterstützt, wenn das POS-Gerät offline ist. In diesem Artikel werden einige Funktionen beschrieben, die dazu beitragen, die Auswirkungen des Konnektivitätsverlusts in diesen Szenarien zu reduzieren.
 
 ## <a name="completing-gift-card-transactions-in-offline-mode"></a>Abschließen von Geschenkkartentransaktionen im Offline-Modus
 
@@ -50,7 +50,7 @@ Um die Funktionalität zum Abschluss von Gutschriftstransaktionen nach dem Wechs
 
 Commerce-Prameter werden normalerweise im Cache gespeichert. Daher kann es nach der Aktualisierung der Einstellung dieses Parameters und der Einleitung des Verteilungsplans zur Synchronisierung der Änderung mit dem Kanal bis zu 24 Stunden dauern, bis die Änderung wirksam wird. Um die Änderung sofort wirksam werden zu lassen, setzen Sie den IIS zurück.
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-articles"></a>Zugehörige Artikel
 
 - [Offline-Verkaufsstellen (POS) Funktionalität](../pos-offline-functionality.md)
 - [Online- und Offlineverkaufsstellen-(POS)-Vorgänge](../pos-operations.md)

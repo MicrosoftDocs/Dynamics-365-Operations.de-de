@@ -1,6 +1,6 @@
 ---
 title: Beispiel für Belegdruckerintegration für Polen
-description: Dieses Thema bietet einen Überblick über das Beispiel der Fiskalintegration für Polen in Microsoft Dynamics 365 Commerce.
+description: Dieser Artikel bietet einen Überblick über das Beispiel der Fiskalintegration für Polen in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-2-1
-ms.openlocfilehash: 43d9a54334d97a65a1f9a356daf54154f6c069b3
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: e71d7b342789e4cf2e7644a46bc847087063fc78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076835"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876948"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Beispiel für Belegdruckerintegration für Polen
 
 [!include[banner](../includes/banner.md)]
 
-Dieses Thema bietet einen Überblick über das Beispiel der Fiskalintegration für Polen in Microsoft Dynamics 365 Commerce.
+Dieser Artikel bietet einen Überblick über das Beispiel der Fiskalintegration für Polen in Microsoft Dynamics 365 Commerce.
 
 Die Dynamics 365 Commerce-Funktionalität für Polen beinhaltet ein Beispiel für die Integration des Point of Sale (POS) mit einem Fiskaldrucker. Das Beispiel erweitert die [Fiskal-Integrationsfunktionalität](fiscal-integration-for-retail-channel.md) und unterstützt das POSNET THERMAL HD 2.02 Protokoll für Fiskaldrucker von [Posnet Polska S.A.](https://www.posnet.com.pl) Das Beispiel ermöglicht die Kommunikation mit einem Fiskaldrucker, der über einen COM Hafen angeschlossen ist, indem ein nativer Software Fahrer verwendet wird. Sie wurde mit Hilfe eines Softwareemulators implementiert und getestet, den Posnet für den Fiskaldrucker Posnet Thermal HD FV EJ zur Verfügung gestellt hat. Das Beispiel wird in der Form eines Quellcodes bereitgestellt und ist Teil des Retail Software Development Kit (SDK).
 

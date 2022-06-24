@@ -1,6 +1,6 @@
 ---
 title: Lagerregulierung des Lagerorts
-description: Dieses Thema enthält Informationen über die Erfassung und Verarbeitung von Lagerort-Bestandsanpassungen, wenn Sie Scale-Units verwenden.
+description: Dieser Artikel enthält Informationen über die Erfassung und Verarbeitung von Lagerort-Bestandsanpassungen, wenn Sie Scale-Units verwenden.
 author: perlynne
 ms.date: 04/22/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3999c16cdf4fce342ce56ca3a459944566c6d0cb6a8460d30d2254356e5cba82
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a4d892cd9e7f518c43df7197fc443b9a284e72b6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748810"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893554"
 ---
 # <a name="warehouse-inventory-adjustment"></a>Lagerregulierung des Lagerorts
 

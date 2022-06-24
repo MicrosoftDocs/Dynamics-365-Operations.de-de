@@ -1,6 +1,6 @@
 ---
 title: Anlagen und Arbeitsaufträge
-description: In diesem Thema werden Anlagen und Arbeitsaufträge in Asset Management beschrieben.
+description: In diesem Artikel werden Anlagen und Arbeitsaufträge in Anlagenverwaltung beschrieben.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2872dc84ec11ae7fad9fd5b225b9207f13280db334cc0d010a3d6749a591ee2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: df2d0fcc5162900ad2ad67f2629d14015f694bd4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718106"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869690"
 ---
 # <a name="assets-and-work-orders"></a>Anlagen und Arbeitsaufträge
 
@@ -28,7 +28,7 @@ ms.locfileid: "6718106"
 
  
 
-In diesem Thema werden Anlagen und Arbeitsaufträge in Asset Management beschrieben. Anlagen und Arbeitsaufträge sind die zentralen Teile von Asset Management. Eine *Anlage* ist eine Maschine oder ein Maschinenteil, die bzw. das fortlaufende Wartung und kontinuierlichen Service benötigt. Anlagen können in einer hierarchischen Struktur erstellt werden, und sie können funktionalen Standorten zugeordnet sein. Wartungsaufträge können auf allen Ebenen der Anlagenstruktur geplant werden.
+In diesem Artikel werden Anlagen und Arbeitsaufträge in Anlagenverwaltung beschrieben. Anlagen und Arbeitsaufträge sind die zentralen Teile von Asset Management. Eine *Anlage* ist eine Maschine oder ein Maschinenteil, die bzw. das fortlaufende Wartung und kontinuierlichen Service benötigt. Anlagen können in einer hierarchischen Struktur erstellt werden, und sie können funktionalen Standorten zugeordnet sein. Wartungsaufträge können auf allen Ebenen der Anlagenstruktur geplant werden.
 
 Verschiedene Daten wie z. B. Produktinformationen und Anlagenspezifikationen sowie erforderliche Wartungspläne werden für jede Anlage eingerichtet. Die folgende Abbildung zeigt einen Überblick über Anlagendaten und die Zugehörigkeit von Anlagen zu Einzelvorgangstypen. Roter Text wird für Beispiele verwendet, die Vererbung und Abhängigkeiten zeigen.
 

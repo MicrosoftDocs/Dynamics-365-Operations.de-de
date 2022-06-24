@@ -1,8 +1,8 @@
 ---
 title: Elektronisches Messaging
-description: Dieses Thema enthält eine Übersicht und Einrichtungsinformationen für elektronisches Messaging in Microsoft Dynamics 365 Finance.
+description: Dieser Artikel enthält eine Übersicht und Einrichtungsinformationen für elektronisches Messaging in Microsoft Dynamics 365 Finance.
 author: liza-golub
-ms.date: 06/29/2021
+ms.date: 01/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 191abc37b7c349aaf3c9e871fe2f1885eec9fc896271d6fac27e5caa0b0fe3b0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf9ee77b2588283f0b34f2099d6f8d78e15a5af5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768338"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8934682"
 ---
-# <a name="electronic-messaging"></a>Elektronische Nachrichten
+# <a name="electronic-messaging"></a>Elektronisches Messaging
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema erhalten Sie einen Überblick über die Funktionalität **Elektronische Nachrichten** (EN).
+In diesem Artikel erhalten Sie einen Überblick über die Funktionalität **Elektronische Nachrichten** (EN).
 
 Vor kurzem haben die Behörden und die gesetzgebenden Instanzen aus verschiedenen Ländern und Regionen der Welt Meldeanforderungen für Unternehmen implementiert, die in diesen Ländern oder Regionen registriert sind. Anhand dieser Anforderungen sollen Daten von diesen Unternehmen in elektronischem Format bezogen werden, direkt aus den Systemen, in denen sie kalkuliert, gespeichert und verarbeitet werden.
 
@@ -58,6 +58,16 @@ Die EN-Funktionalität unterstützt die folgenden Szenarien:
 - Speichern und Überprüfen aller Protokollinformationen, die Aktivitäten zugeordnet sind, die für die eine Nachricht oder ein Nachrichtenelement ausgeführt werden.
 - Steuern der Verarbeitung durch verschiedene Nachrichtenstatus und Nachrichtenelementstatus.
 
+## <a name="security-privileges"></a>Sicherheitsrechte
+
+Die folgenden Sicherheitsrechte sind für elektronische Nachrichten verfügbar.
+
+| Sicherheitsrecht           | Zugriffsebene | Zuordnung |
+|------------------------------|--------------|-------------|
+| Elektronische Nachrichten verwalten | Dieses Recht gewährt vollen Zugriff auf die EM-Funktionalität. Wenn Sie über dieser Recht verfügen, können Sie die elektronische Nachrichtenübermittlung einrichten und die gesamte Verarbeitung ausführen. | Dieses Recht ist in der Sicherheitspflicht **Mehrwertsteuerbuchungen verwalten** enthalten. Diese Pflicht wiederum ist in der Sicherheitsrolle **Buchhalter** enthalten. |
+| Elektronische Nachrichten anzeigen     | Dieses Recht gewährt Lesezugriff auf die EM-Funktionalität. Wenn Sie über dieser Recht verfügen, können Sie die Einstellungen für elektronische Nachrichten sowie die Nachrichten selbst anzeigen. Sie können jedoch nichts einrichten oder ausführen. | Dieses Recht ist in der Sicherheitspflicht **Status von Mehrwertsteuerbuchungen abfragen** enthalten. Diese Pflicht wiederum ist in den folgenden Sicherheitsrollen enthalten:<ul><li>Leiter Inkasso</li><li>Sachbearbeiter Debitorenkonten</li><li>Leiter Debitorenkonten</li><li>Steuerberater</li><li>Sachbearbeiter Buchhaltung</li><li>Leiter Buchhaltung</li><li>Supervisor Buchhaltung</li><li>Verkaufsleiter</li><li>Sachbearbeiter Kreditorenkonten</li></ul> |
+| Elektronische Nachrichten verarbeiten  | Dieses Recht gewährt nur Zugriff auf die Seiten **Elektronische Nachrichten** und **Elektronische Nachrichtenelemente**. Wenn Sie über dieses Recht verfügen, können Sie die gesamte Verarbeitung ausführen, die über diese Seiten aufgerufen wird. | Dieses Recht ist in der Sicherheitspflicht **Elektronische Nachrichten betreiben** enthalten. Diese Pflicht wiederum ist in der Sicherheitsrolle **Operator elektronische Nachrichten** enthalten. |
+
 ## <a name="country-specific-regulatory-features-supported-by-the-em-functionality"></a>Länderspezifische rechtliche Funktionen, die von der EN-Funktionalität unterstützt werden
 
 Die folgende Tabelle enthält Informationen zu einigen länderspezifischen rechtlichen Funktionen, die von der EN-Funktionalität unterstützt werden.
@@ -68,7 +78,7 @@ Die folgende Tabelle enthält Informationen zu einigen länderspezifischen recht
 | Ungarn     | [Online-Fakturierungssystem](../localizations/emea-hun-online-invoicing.md) | |
 | Vereinigtes Königreich | [Digitale Steuer (MTD) – Abgabe der Mehrwertsteuerklärung](../localizations/emea-gbr-mtd-vat-integration.md) | [Finance and Operations: digitale Steuer im Vereinigten Königreich – Mehrwertsteuererklärung in Dynamics 365](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-uk-digital-tax-vat-declaration-in-dynamics-365) |
 | Litauen   | [i.SAF-Berichterstattung](../localizations/emea-ltu-isaf.md) | |
-| Polen      | [Mehrwertsteuererklärung mit Registern (JPK_V7M, VDEK)](../localizations/emea-pol-vdek.md) | [Dynamics 365 Finance: SAF-/JPK-Mehrwertsteuer-Prüfregister](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-saf-jpk-vat-audit-registers-june-4-2020) |
+| Polen      | [Mehrwertsteuererklärung mit Registern (JPK_V7M, VDEK)](../localizations/emea-pol-vdek.md) | [Dynamics 365 Finance: SAF/JPK-Umsatzsteuerprüfungsregister](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-saf-jpk-vat-audit-registers-june-4-2020) |
 | Niederlande | [MwSt.-Erklärung für die Niederlande](../localizations/emea-nl-vat-declaration-netherlands.md) | |
 | Tschechische Republik | [MwSt.-Erklärung](../localizations/emea-cze-vat-declaration-tax-declaration-model.md) | |
 | Brasilien      | [SPED-Reinf](../localizations/latam-bra-sped-reinf-overview.md) | |
@@ -76,9 +86,15 @@ Die folgende Tabelle enthält Informationen zu einigen länderspezifischen recht
 | Russische Föderation      | [Buchhaltungsberichte im elektronischen Format](../localizations/rus-accounting-reporting.md) | |
 | Russische Föderation      | [Gewinnsteuererklärung](../localizations/rus-profit-tax-declaration.md) | |
 | Russische Föderation      | [Veranschlagte Steuererklärung](../localizations/rus-assessed-tax-declaration.md) | |
-| Russische Föderation      | [Transportsteuererklärung](../localizations/rus-transport-tax-declaration.md) | |
-| Russische Föderation      | [Grundsteuererklärung](../localizations/rus-land-tax-declaration.md) | |
-
+| Russland      | [Transportsteuererklärung](../localizations/rus-transport-tax-declaration.md) | |
+| Russland      | [Grundsteuererklärung](../localizations/rus-land-tax-declaration.md) | |
+| Norwegen      | [MwSt.-Erklärung mit direkter Übermittlung an Altinn](../localizations/emea-nor-vat-return.md) | [Neue Umsatzsteuererklärung mit direkter Übermittlung an Altinn in Dynamics 365 Finance](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/new-vat-return-with-direct-submission-to-altinn-in-dynamics-365-finance-december-1-2021) |
+| Frankreich      | [Mehrwertsteuererklärung (Frankreich)](../localizations/emea-fra-VAT-declaration-preview-France.md) | |
+| Österreich     | [Mehrwertsteuererklärung (Österreich)](../localizations/emea-aut-vat-declaration-austria.md) | |
+| Deutschland     | [Umsatzsteuererklärung (Deutschland)](../localizations/emea-deu-vat-declaration-germany.md) | |
+| Niederlande | [MwSt.-Erklärung für die Niederlande](../localizations/emea-nl-vat-declaration-netherlands.md) | |
+| Schweden      | [Mehrwertsteuererklärung (Schweden)](../localizations/emea-swe-VAT-declaration-Sweden.md) | |
+| Schweiz | [Mehrwertsteuererklärung (Schweiz)](../localizations/emea-che-vat-declaration-switzerland.md) | |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 

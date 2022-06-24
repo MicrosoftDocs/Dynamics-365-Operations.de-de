@@ -1,6 +1,6 @@
 ---
 title: Fälligkeit für Lagerplatzrichtlinie-Bestandsentnahme
-description: In diesem Thema wird erläutert, wie Sie während der Kommissionierung die Lagerplatzrichtlinienstrategien FIFO (First In, First Out) und LIFO (Last In, First Out) verwenden.
+description: In diesem Artikel wird erläutert, wie Sie während der Kommissionierung die Lagerplatzrichtlinienstrategien FIFO (First In, First Out) und LIFO (Last In, First Out) verwenden.
 author: Mirzaab
 ms.date: 07/15/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 229dd0033e3eae4bdd33acca6736b7a9feec8c9b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 34ce119ca70596f0e40797c4b44a8fba4d5b7e0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676270"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885695"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Fälligkeit für Lagerplatzrichtlinie-Bestandsentnahme
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie während der Kommissionierung die Lagerplatzrichtlinienstrategien FIFO (First In, First Out) und LIFO (Last In, First Out) verwenden. Diese Strategien arbeiten mit den Fälligkeitsdaten zusammen, die für Lagerplätze aufgezeichnet werden, um zu verfolgen, wann der Bestand zum ersten Mal in das Lager gelangt ist. Die Funktion *Fälligkeit für Standortrichtlinie-Bestandsentnahme* verwendet das Datum am Lagerplatz, um die Fälligkeit zu bestimmen. Die Funktion *Status des Lagerplatzes an einem Lagerort* aktualisiert das Datum am Lagerplatz basierend auf dem Datum auf dem Kennzeichen.
+In diesem Artikel wird erläutert, wie Sie während der Kommissionierung die Lagerplatzrichtlinienstrategien FIFO (First In, First Out) und LIFO (Last In, First Out) verwenden. Diese Strategien arbeiten mit den Fälligkeitsdaten zusammen, die für Lagerplätze aufgezeichnet werden, um zu verfolgen, wann der Bestand zum ersten Mal in das Lager gelangt ist. Die Funktion *Fälligkeit für Standortrichtlinie-Bestandsentnahme* verwendet das Datum am Lagerplatz, um die Fälligkeit zu bestimmen. Die Funktion *Status des Lagerplatzes an einem Lagerort* aktualisiert das Datum am Lagerplatz basierend auf dem Datum auf dem Kennzeichen.
 
 Sie können FIFO- und LIFO-Strategien verwenden, um Artikel mit und ohne Chargenverfolgung zu versenden, basierend auf dem Datum, an dem der Bestand in das Lager gelangt ist. Diese Funktion kann besonders nützlich sein für Bestände ohne Chargenverfolgung, bei denen kein Ablaufdatum für die Sortierung verfügbar ist.
 

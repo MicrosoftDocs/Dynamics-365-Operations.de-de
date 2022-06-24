@@ -1,6 +1,6 @@
 ---
 title: Steuereinstellungen aus dem Steuerberechnungsdienst mit Dynamics 365 Finance synchronisieren
-description: In diesem Thema wird erläutert, wie Masterdaten zu den Steuereinstellungen vom Steuerberechnungsdienst mit Microsoft Dynamics 365 Finance synchronisiert werden.
+description: In diesem Artikel wird erläutert, wie Masterdaten zu den Steuereinstellungen vom Steuerberechnungsdienst mit Microsoft Dynamics 365 Finance synchronisiert werden.
 author: wangchen
 ms.date: 01/05/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3a9c11a6f5946d56b9e58a02c37f18adec155661
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: b017a19834998e1c493b0a38c1b50accd8c7e630
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687785"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853156"
 ---
 # <a name="sync-the-tax-setup-from-the-tax-calculation-service-to-dynamics-365-finance"></a>Steuereinstellungen aus dem Steuerberechnungsdienst mit Dynamics 365 Finance synchronisieren
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Masterdaten zu den Steuereinstellungen vom Steuerberechnungsdienst mit Microsoft Dynamics 365 Finance synchronisiert werden.
+In diesem Artikel wird erläutert, wie Masterdaten zu den Steuereinstellungen vom Steuerberechnungsdienst mit Microsoft Dynamics 365 Finance synchronisiert werden.
 
 Nachdem Sie die erforderlichen Einstellungsschritte in [Mit der Steuerberechnung beginnen](global-get-started-with-tax-calculation-service.md) abgeschlossen haben, werden die folgenden Steuereinstellungsdaten automatisch vom Steuerberechnungsdienst mit Finance synchronisiert.
 

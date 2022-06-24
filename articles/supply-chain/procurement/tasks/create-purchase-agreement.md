@@ -1,6 +1,6 @@
 ---
-title: Kaufvertrag erstellen
-description: Dieses Thema führt Sie durch die Erstellung eines Kaufvertrags.
+title: Einkaufsvertrag erstellen
+description: Dieser Artikel führt Sie durch die Erstellung eines Kaufvertrags.
 author: GalynaFedorova
 ms.date: 07/18/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3456e1c6e2ec65329e0f2e984f99ced0994c240b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 108c3a47132b262ebe2e15f00d26191b75469959
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670131"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877565"
 ---
-# <a name="create-a-purchase-agreement"></a>Kaufvertrag erstellen
+# <a name="create-a-purchase-agreement"></a>Einkaufsvertrag erstellen
 
 [!include [banner](../../includes/banner.md)]
 
-Dieses Thema führt Sie durch die Erstellung eines Kaufvertrags. Dadurch wird normalerweise von einem Einkaufsleiter bearbeitet. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten verwenden. Sie müssen Einstellungen Kaufvertragsklassifizierungen haben, bevor Sie beginnen. Sobald Sie eine Vereinbarung erstellt haben, können Sie diese verwenden, wenn Sie eine Bestellung erstellen, und dieses kopiert die Kaufvertragszustände in den Kopf und alle möglichen Positionen in der Reihenfolge angezeigt, die in der Vereinbarung betroffen sind.
+Dieser Artikel führt Sie durch die Erstellung eines Kaufvertrags. Dadurch wird normalerweise von einem Einkaufsleiter bearbeitet. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten verwenden. Sie müssen Einstellungen Kaufvertragsklassifizierungen haben, bevor Sie beginnen. Sobald Sie eine Vereinbarung erstellt haben, können Sie diese verwenden, wenn Sie eine Bestellung erstellen, und dieses kopiert die Kaufvertragszustände in den Kopf und alle möglichen Positionen in der Reihenfolge angezeigt, die in der Vereinbarung betroffen sind.
 
 
 ## <a name="create-a-new-purchase-agreement"></a>Erstellen Sie eine neue Rahmenbestellung

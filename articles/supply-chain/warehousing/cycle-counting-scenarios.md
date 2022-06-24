@@ -1,6 +1,6 @@
 ---
 title: Beispielszenarien zur Zykluszählung
-description: Dieses Thema bietet eine Sammlung von Szenarien, die die Funktionen der Zykluszählung von Microsoft Dynamics 365 Supply Chain Management untersuchen.
+description: Dieser Artikel bietet eine Sammlung von Szenarien, die die Funktionen der Zykluszählung von Microsoft Dynamics 365 Supply Chain Management untersuchen.
 author: GalynaFedorova
 ms.date: 06/08/2021
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 60be945035570634c572baaa37ae0d02e41dd0be
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 90a3f132a96081b56ab60f5b0ba5cc328b820879
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674700"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899323"
 ---
 # <a name="cycle-counting-example-scenarios"></a>Beispielszenarien zur Zykluszählung
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema bietet eine Sammlung von Szenarien, die die Funktionen der Zykluszählung von Microsoft Dynamics 365 Supply Chain Management untersuchen. Es beschreibt zunächst die Anforderungen an Ihre bestehende Supply Chain Management Umgebung. Anschließend wird erklärt, wie Sie die Zykluszählung konfigurieren, und es werden alle Phasen der Zykluszählung beschrieben. Wenn Sie fertig sind, sollten Sie ein gutes Verständnis der Zykluszählung haben, einschließlich der geführten Zykluszählung, der blinden Zykluszählung, der Spot-Zykluszählung, der Zykluszählungsschwellenwerte und der Zykluszählungspläne.
+Dieser Artikel bietet eine Sammlung von Szenarien, die die Funktionen der Zykluszählung von Microsoft Dynamics 365 Supply Chain Management untersuchen. Es beschreibt zunächst die Anforderungen an Ihre bestehende Supply Chain Management Umgebung. Anschließend wird erklärt, wie Sie die Zykluszählung konfigurieren, und es werden alle Phasen der Zykluszählung beschrieben. Wenn Sie fertig sind, sollten Sie ein gutes Verständnis der Zykluszählung haben, einschließlich der geführten Zykluszählung, der blinden Zykluszählung, der Spot-Zykluszählung, der Zykluszählungsschwellenwerte und der Zykluszählungspläne.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
 ### <a name="make-demo-data-available"></a>Demodaten zur Verfügung stellen
 
-Jedes Szenario in diesem Thema verweist auf Werte und Datensätze, die in den Standard-Demodaten enthalten sind, die für Supply Chain Management bereitgestellt werden. Wenn Sie die hier bereitgestellten Werte beim Durcharbeiten der Szenarien verwenden möchten, stellen Sie sicher, dass Sie in einer Umgebung arbeiten, in der die Demo-Daten installiert sind, und legen Sie die juristische Entität (Firma) auf **USMF** fest, bevor Sie beginnen.
+Jedes Szenario in diesem Artikel verweist auf Werte und Datensätze, die in den Standard-Demodaten enthalten sind, die für Supply Chain Management bereitgestellt werden. Wenn Sie die hier bereitgestellten Werte beim Durcharbeiten der Szenarien verwenden möchten, stellen Sie sicher, dass Sie in einer Umgebung arbeiten, in der die Demo-Daten installiert sind, und legen Sie die juristische Entität (Firma) auf **USMF** fest, bevor Sie beginnen.
 
 ### <a name="turn-on-support-for-the-warehouse-management-mobile-app"></a>Schalten Sie die Unterstützung für die Warehouse Management Mobile-App ein
 
@@ -158,7 +158,7 @@ Führen Sie die folgenden Schritte aus, um Zykluszählungsarbeit für den Elemen
 
 Nachdem Sie die Zykluszählungsarbeit erstellt haben, führen Sie die Arbeit durch, indem Sie die Artikel an einem Lagerplatz zählen und dann ein mobiles Gerät verwenden, um die Ergebnisse in die Supply Chain Management einzugeben. Folgen Sie diesen Schritten, um die Zykluszählungsarbeit in der Warehouse Management Mobile-App durchzuführen.
 
-1. Melden Sie sich bei der Warehouse Management Mobile-App als der Arbeitsbenutzer an, den Sie im Abschnitt [Demodaten für die Szenarien vorbereiten](#prepare-demo-data) weiter oben in diesem Thema festgelegt haben. Für das Beispiel in diesem Thema heißt der Benutzer *Julia Funderburk* und ist für den Lagerort *61* festgelegt. (In den USMF-Demodaten sollten Sie sich als dieser Arbeitsbenutzer anmelden können, indem Sie *61* als Benutzer-ID und *1* als Kennwort eingeben.)
+1. Melden Sie sich bei der Warehouse Management Mobile-App als der Arbeitsbenutzer an, den Sie im Abschnitt [Demodaten für die Szenarien vorbereiten](#prepare-demo-data) weiter oben in diesem Artikel festgelegt haben. Für das Beispiel in diesem Artikel heißt der Benutzer *Julia Funderburk* und ist für den Lagerort *61* festgelegt. (In den USMF-Demodaten sollten Sie sich als dieser Arbeitsbenutzer anmelden können, indem Sie *61* als Benutzer-ID und *1* als Kennwort eingeben.)
 1. Wählen Sie im Hauptmenü **Bestand**.
 1. Wählen Sie im Menü **Bestand** die Option **Zykluszählung angeleitet**.
 1. Wählen Sie das Feld **Anzahl**, geben Sie *9* mit Hilfe des Nummernblocks ein und wählen Sie dann **OK** (die Schaltfläche mit dem Häkchen).
@@ -227,7 +227,7 @@ Bevor die blinde Zykluszählung erfolgen kann, müssen Sie Arbeit erstellen. Fü
 
 Nachdem Sie die Zykluszählungsarbeit erstellt haben, folgen Sie diesen Schritten, um die Arbeit in der Warehouse Management Mobile-App auszuführen.
 
-1. Melden Sie sich bei der Warehouse Management Mobile-App als der Arbeitsbenutzer an, den Sie im Abschnitt [Demodaten für die Szenarien vorbereiten](#prepare-demo-data) weiter oben in diesem Thema festgelegt haben. Für das Beispiel in diesem Thema heißt der Benutzer *Julia Funderburk* und ist für den Lagerort *61* festgelegt. (In den USMF-Demodaten sollten Sie sich als dieser Arbeitsbenutzer anmelden können, indem Sie *61* als Benutzer-ID und *1* als Kennwort eingeben.)
+1. Melden Sie sich bei der Warehouse Management Mobile-App als der Arbeitsbenutzer an, den Sie im Abschnitt [Demodaten für die Szenarien vorbereiten](#prepare-demo-data) weiter oben in diesem Artikel festgelegt haben. Für das Beispiel in diesem Artikel heißt der Benutzer *Julia Funderburk* und ist für den Lagerort *61* festgelegt. (In den USMF-Demodaten sollten Sie sich als dieser Arbeitsbenutzer anmelden können, indem Sie *61* als Benutzer-ID und *1* als Kennwort eingeben.)
 1. Wählen Sie im Hauptmenü **Bestand**.
 1. Wählen Sie im Menü **Inventar** die Option **Zykluszählung blind**.
 1. Wählen Sie das Feld **Zonen-ID**, geben Sie *BULK06* ein und wählen Sie dann **OK** (die Schaltfläche mit dem Häkchen).
@@ -259,7 +259,7 @@ Der Datensatz zum Lagerbestand besagt, dass sich ein Lagerbestand des Elements *
 
 Folgen Sie diesen Schritten, um die Zykluszählungsarbeit in der Warehouse Management Mobile-App durchzuführen.
 
-1. Melden Sie sich bei der Warehouse Management Mobile-App als der Arbeitsbenutzer an, den Sie im Abschnitt [Demodaten für die Szenarien vorbereiten](#prepare-demo-data) weiter oben in diesem Thema festgelegt haben. Für das Beispiel in diesem Thema heißt der Benutzer *Julia Funderburk* und ist für den Lagerort *61* festgelegt. (In den USMF-Demodaten sollten Sie sich als dieser Arbeitsbenutzer anmelden können, indem Sie *61* als Benutzer-ID und *1* als Kennwort eingeben.)
+1. Melden Sie sich bei der Warehouse Management Mobile-App als der Arbeitsbenutzer an, den Sie im Abschnitt [Demodaten für die Szenarien vorbereiten](#prepare-demo-data) weiter oben in diesem Artikel festgelegt haben. Für das Beispiel in diesem Artikel heißt der Benutzer *Julia Funderburk* und ist für den Lagerort *61* festgelegt. (In den USMF-Demodaten sollten Sie sich als dieser Arbeitsbenutzer anmelden können, indem Sie *61* als Benutzer-ID und *1* als Kennwort eingeben.)
 1. Wählen Sie im Hauptmenü **Bestand**.
 1. Wählen Sie im Menü **Bestand** die Option **Stichprobenzählung**.
 1. Wählen Sie das Feld **Lagerplatz**, geben Sie *01A02R2S1B* ein und wählen Sie dann **OK** (die Schaltfläche mit dem Häkchen).

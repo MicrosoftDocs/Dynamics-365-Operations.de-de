@@ -1,6 +1,6 @@
 ---
 title: Geben Sie schnell B2B-Website-Aufträge auf
-description: In diesem Thema werden die Funktionen von Microsoft Dynamics 365 Commerce beschrieben, mit denen Benutzer von Business-to-Business-Websites (B2B) schnell Groß- und Folgeaufträge aufgeben können.
+description: In diesem Artikel werden die Funktionen von Microsoft Dynamics 365 Commerce beschrieben, mit denen Benutzer von Business-to-Business-Websites (B2B) schnell Groß- und Folgeaufträge aufgeben können.
 author: shajain
 ms.date: 02/16/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8ac4833b2ca05e90b4019ffdfc4b669c542b0cf6
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0b13fb49c49b0a540b192f4dd0f3a847fb5dd8a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686545"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881360"
 ---
 # <a name="place-b2b-website-orders-quickly"></a>Geben Sie schnell B2B-Website-Aufträge auf
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema werden die Funktionen von Microsoft Dynamics 365 Commerce beschrieben, mit denen Benutzer von Business-to-Business-Websites (B2B) schnell Groß- und Folgeaufträge aufgeben können.
+In diesem Artikel werden die Funktionen von Microsoft Dynamics 365 Commerce beschrieben, mit denen Benutzer von Business-to-Business-Websites (B2B) schnell Groß- und Folgeaufträge aufgeben können.
 
 Auf Dynamics 365 Commerce B2B-E-Commerce-Websites können Benutzer Standardvorgänge ausführen, z. B. neue Produkte durch Suchen und Browsen entdecken, Produktdetails anzeigen lassen, Artikel zum Warenkorb hinzufügen und zur Kasse gehen. Während die Kunden von Business-to-Consumer-Sites (B2C) Artikel in der Regel in kleinen Mengen und nur einmal bestellen, bestellen B2B-Kunden Artikel in der Regel in großen Mengen und bestellen sie mehrmals nach. Da diese Kunden in der Regel genau wissen, welche Artikel sie kaufen möchten, überspringen sie häufig die Produktfindungsphase und gehen direkt zur Bestellung über. Um die Bedürfnisse dieser Kunden zu erfüllen, bieten Commerce B2B-E-Commerce-Websites verschiedene Funktionen, die ihnen helfen, Aufträge schnell aufzugeben.
 
@@ -65,4 +65,4 @@ Die folgende Abbildung zeigt ein Beispiel für die Bestellhistorie eines Benutze
 
 ![Nachbestellung aus der Bestellhistorie.](../media/Reorder.png)
 
-In diesem Thema wurden nur einige der Möglichkeiten beschrieben, wie Commerce B2B-Websites Benutzern dabei helfen, die gewünschten Produkte schnell zu finden, zu bestellen und nachzubestellen. Weitere Funktionen werden gerade entwickelt, um den Prozess der Erfassung von Großaufträgen weiter zu vereinfachen.
+In diesem Artikel wurden nur einige der Möglichkeiten beschrieben, wie Commerce B2B-Websites Benutzern dabei helfen, die gewünschten Produkte schnell zu finden, zu bestellen und nachzubestellen. Weitere Funktionen werden gerade entwickelt, um den Prozess der Erfassung von Großaufträgen weiter zu vereinfachen.

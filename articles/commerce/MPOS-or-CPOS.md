@@ -1,6 +1,6 @@
 ---
-title: Zwischen Store Commerce und Cloud POS wählen
-description: In diesem Thema werden die wichtigsten Unterschiede zwischen Store Commerce und Cloud POS erläutert und verschiedene Faktoren beschrieben, die Einzelhändler, die Dynamics 365 Commerce implementieren, berücksichtigen sollten, um ihnen dabei zu helfen, die beste Wahl für ihre Anforderungen zu treffen.
+title: Zwischen Store Commerce und Cloud POS auswählen
+description: In diesem Artikel werden die wichtigsten Unterschiede zwischen Store Commerce und Cloud POS erläutert und verschiedene Faktoren beschrieben, die Einzelhändler, die Dynamics 365 Commerce implementieren, berücksichtigen sollten, um ihnen dabei zu helfen, die beste Wahl für ihre Anforderungen zu treffen.
 author: jblucher
 ms.date: 04/21/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b62e1737bc9e3b9d9e25a7a88e693a9aece80776
-ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
+ms.openlocfilehash: 26f6e94b13b3058ac42c4c7b83dcf7179bae18e3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8629289"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854005"
 ---
-# <a name="choose-between-store-commerce-and-cloud-pos"></a>Zwischen Store Commerce und Cloud POS wählen
+# <a name="choose-between-store-commerce-and-cloud-pos"></a>Zwischen Store Commerce und Cloud POS auswählen
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden die wichtigsten Unterschiede zwischen Store Commerce und Cloud POS erläutert und verschiedene Faktoren beschrieben, die Einzelhändler, die Dynamics 365 Commerce implementieren, berücksichtigen sollten, um ihnen dabei zu helfen, die beste Wahl für ihre Anforderungen zu treffen. Es gibt Implementierern zudem zusätzliche Hintergrundinformationen, Tipps und Orientierungshilfe für Faktoren, die sie berücksichtigen sollten, wenn sie Dynamics 365 Commerce bereitstellen. Indem diese Anleitung überprüft und befolgt wird als Teil des Bereitstellungsprozesses, können Implementierer Abgänge vermeiden, die möglicherweise die Zufriedenheit oder Leistung der Benutzer beeinträchtigt hat.
+In diesem Artikel werden die wichtigsten Unterschiede zwischen Store Commerce und Cloud POS erläutert und verschiedene Faktoren beschrieben, die Einzelhändler, die Dynamics 365 Commerce implementieren, berücksichtigen sollten, um ihnen dabei zu helfen, die beste Wahl für ihre Anforderungen zu treffen. Es gibt Implementierern zudem zusätzliche Hintergrundinformationen, Tipps und Orientierungshilfe für Faktoren, die sie berücksichtigen sollten, wenn sie Dynamics 365 Commerce bereitstellen. Indem diese Anleitung überprüft und befolgt wird als Teil des Bereitstellungsprozesses, können Implementierer Abgänge vermeiden, die möglicherweise die Zufriedenheit oder Leistung der Benutzer beeinträchtigt hat.
 
 ## <a name="insights"></a>Einblicke
 
@@ -44,7 +44,7 @@ Commerce unterstützt die folgenden: POS-Optionen
 In allen Fällen teilt POS (Store Commerce und CPOS) den gleichen Kernanwendungscode. Dieser Schritt ist wichtig für folgende Gründe:
 
 - Die Benutzeroberfläche (UI) ist, ungeachtet der Plattform oder den Formularfaktor einheitlich.
-- Die meisten funktionalen Funktionen sind identisch, dies unabhängig von der Plattform oder dem Formularfaktor. Jedoch gibt es mehrere wichtige Unterschiede. Die Unterschiede werden in diesem Thema vermerkt.
+- Die meisten funktionalen Funktionen sind identisch, dies unabhängig von der Plattform oder dem Formularfaktor. Jedoch gibt es mehrere wichtige Unterschiede. Die Unterschiede werden in diesem Artikel vermerkt.
 - In jedem Shop können die POS-Abweichungen kombiniert und gleichzeitig ausgeführt werden. Für die Hauptregister kann ein Einzelhändler Store Commerce beispielsweise auf Computern verwenden, die unter Windows ausgeführt werden. Allerdings kann der Einzelhändler die Terminals oder Register mit browserbasierten mobilen Geräten ergänzen.
 - Anpassungen und Erweiterungen können über Formularfaktoren Plattformen leicht verwendet werden. Da der Kernanwendungscode freigegeben wird, können die meisten Anpassungen einmal anstelle mehrmals implementiert werden.
 

@@ -1,6 +1,6 @@
 ---
 title: Gefahrstoffübersicht
-description: Dieses Thema bietet einen Überblick über Funktionen, die sich auf die Handhabung und Dokumentation gefährlicher Materialien während der Produktinformationsverwaltung und der Lagerverwaltung beziehen.
+description: Dieser Artikel bietet einen Überblick über Funktionen, die sich auf die Handhabung und Dokumentation gefährlicher Materialien während der Produktinformationsverwaltung und der Lagerverwaltung beziehen.
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: overview
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: cfea2cd6a2699bdf2a14de72a8bdeb3e8cd32a17
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: c2cae4cb65dd163e9fbf1d24cff5a0a040e3ce3a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986275"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905804"
 ---
 # <a name="hazardous-materials-overview"></a>Gefahrstoffübersicht
 
@@ -50,7 +50,7 @@ Bei der Entwicklung dieser Funktionalität wurde auf die folgenden allgemeinen V
 
 Jedes Regelwerk enthält standardisierte Listen gefährlicher Güter und Referenzcodes. Supply Chain Management bietet daher eine Referenztabelle für die gemeinsam genutzten Codes in diesen Listen. Jede Liste enthält auch eindeutig Codes, die Sie definieren können.
 
-Weitere Informationen zum Einrichten von Vorschriften und Werten für gefährliche Stoffe und zum Zuweisen der Werte zu relevanten Produkten finden Sie in den folgenden Themen:
+Weitere Informationen zum Einrichten von Vorschriften und Werten für gefährliche Stoffe und zum Zuweisen der Werte zu relevanten Produkten finden Sie in den folgenden Artikel:
 
 - [Gefahrengüter einrichten](hazmat-setup.md)
 - [Gefährliche Stoffe in Produkten, Bestellungen, Lieferungen und Ladungen](hazmat-items.md)

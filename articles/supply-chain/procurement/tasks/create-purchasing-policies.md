@@ -1,6 +1,6 @@
 ---
 title: Einkaufsrichtlinien erstellen
-description: In diesem Thema wird erläutert, wie Einkaufsrichtlinien so erstellt werden, dass sie sich an Ihren Geschäftsprozessen für den Einkauf ausrichten.
+description: In diesem Artikel wird erläutert, wie Einkaufsrichtlinien so erstellt werden, dass sie sich an Ihren Geschäftsprozessen für den Einkauf ausrichten.
 author: GalynaFedorova
 ms.date: 07/31/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f51c88506044359787257ba0e0a6668213a170d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 011705723466d746fa5b23c5499d03a548f133f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677869"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878844"
 ---
 # <a name="create-purchasing-policies"></a>Einkaufsrichtlinien erstellen
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Einkaufsrichtlinien so erstellt werden, dass sie sich an Ihren Geschäftsprozessen für den Einkauf ausrichten. Bevor Sie Einkaufsrichtlinien erstellen können, sind die Einkaufsrichtlinienparameter einzurichten. Es ist möglich, eine Einkaufsrichtlinie zu erstellen, zu ändern und außer Kraft zu setzen, aber Sie können keine Einkaufsrichtlinie löschen. Diese Prozedur würde normalerweise von einem Einkaufsleiter ausgeführt werden. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten verwenden.
+In diesem Artikel wird erläutert, wie Einkaufsrichtlinien so erstellt werden, dass sie sich an Ihren Geschäftsprozessen für den Einkauf ausrichten. Bevor Sie Einkaufsrichtlinien erstellen können, sind die Einkaufsrichtlinienparameter einzurichten. Es ist möglich, eine Einkaufsrichtlinie zu erstellen, zu ändern und außer Kraft zu setzen, aber Sie können keine Einkaufsrichtlinie löschen. Diese Prozedur würde normalerweise von einem Einkaufsleiter ausgeführt werden. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten verwenden.
 
 
 ## <a name="set-up-policy-parameters"></a>Einrichten von Richtlinienparametern

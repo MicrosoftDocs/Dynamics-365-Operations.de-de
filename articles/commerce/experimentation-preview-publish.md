@@ -1,30 +1,24 @@
 ---
 title: Vorschau und Veröffentlichung eines Experiments
-description: In diesem Thema wird beschrieben, wie Sie ein Experiment in Dynamics 365 Commerce in der Vorschau anzeigen und veröffentlichen.
+description: In diesem Artikel wird beschrieben, wie Sie ein Experiment in Dynamics 365 Commerce in der Vorschau anzeigen und veröffentlichen.
 author: sushma-rao
-ms.date: 10/21/2020
+ms.date: 06/08/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
-ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 41957befe109102aaa7d3a5783b54f96824dfe76a25ab787f94afc778c08fca5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5da7a4e3c17057278d02ebd45702d1de404f0dc6
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740382"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946132"
 ---
 # <a name="preview-and-publish-an-experiment"></a>Vorschau und Veröffentlichung eines Experiments
 
-In diesem Thema wird beschrieben, wie Sie in Dynamics 365 Commerce eine Vorschau Ihres Experiments anzeigen und veröffentlichen, nachdem Sie [Ihr Experiment verbunden und Ihre Variationen bearbeitet haben](experimentation-connect-edit.md). Das folgende Diagramm zeigt alle Schritte, die am Einrichten und Ausführen eines Experiments auf einer E-Commerce-Website in Dynamics 365 Commerce beteiligt sind. Weitere Schritte werden in separaten Themen behandelt.
+In diesem Artikel wird beschrieben, wie Sie in Dynamics 365 Commerce eine Vorschau Ihres Experiments anzeigen und veröffentlichen, nachdem Sie [Ihr Experiment verbunden und Ihre Variationen bearbeitet haben](experimentation-connect-edit.md). Das folgende Diagramm zeigt alle Schritte, die am Einrichten und Ausführen eines Experiments auf einer E-Commerce-Website in Dynamics 365 Commerce beteiligt sind. Weitere Schritte werden in separaten Artikeln behandelt.
 
 [ ![User Journey zum Experimentieren – Vorschau und Veröffentlichung.](./media/experimentation_preview_publish.svg) ](./media/experimentation_preview_publish.svg#lightbox)
 
@@ -52,11 +46,15 @@ Bei der Verwendung von Veröffentlichungsgruppen mit Experimenten sind einige wi
 - Wenn Sie eine Veröffentlichungsgruppe veröffentlichen oder planen, wird der gesamte Inhalt der Veröffentlichungsgruppe veröffentlicht, unabhängig davon, ob der Veröffentlichungsgruppe ein Experiment zugeordnet ist.
 - Da eine Veröffentlichungsgruppe nach der Veröffentlichung auf einer Live-Site weiterhin besteht, bleiben auch die Experimente in der Veröffentlichungsgruppe bestehen. Daher können Sie andere Experimente nicht mit derselben Seite oder demselben Fragment verknüpfen. Um diese Einschränkung zu vermeiden, löschen Sie alle Veröffentlichungsgruppen mit bestehenden Experimenten. Wenn Sie ein Experiment auf einer Live-Site löschen möchten, das auch in einer Veröffentlichungsgruppe vorhanden ist, löschen Sie es zuerst aus der Veröffentlichungsgruppe.
 
+### <a name="force-variations-for-testing"></a>Variationen zum Testen erzwingen
+
+Sobald der Test live ist, können Sie die Test-ID und die Variations-ID an die URL der Standardseite anhängen, um eine Variation zu Test- oder Automatisierungszwecken zu erzwingen. Wenn beispielsweise die Standardseiten-URL lautet `https://fabrikam.com/modern/homepage`, können Sie eine Variation mit einer URL wie `https://fabrikam.com/modern/homepage?exp=18012910471|18024360464` erzwingen. Sie können die Test-ID und die Variations-ID für Ihre Testvariation aus der Vorschau-URL in **Vorschau** Erfahrung oben erklärt abrufen.
+
 ## <a name="previous-step"></a>Vorheriger Schritt
-[Ein Experiment verbinden und bearbeiten](experimentation-connect-edit.md)
+[Experiment verbinden und bearbeiten](experimentation-connect-edit.md)
 
 ## <a name="next-step"></a>Nächster Schritt
-[Ein Experiment ausführen und überwachen](experimentation-run-monitor.md)
+[Experiment durchführen und überwachen](experimentation-run-monitor.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Erstellen von Abrechnungsplänen
-description: In diesem Thema wird erläutert, wie Sie Abrechnungszeitpläne erstellen, löschen und bearbeiten.
+description: In diesem Artikel wird erläutert, wie Sie Abrechnungszeitpläne erstellen, löschen und bearbeiten.
 author: JodiChristiansen
 ms.date: 02/09/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: ed31dd96b0115610cfb74aed69f1acc1055bfe56
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 1248799f92dc6cbce8528a53cc8a3012d2a67b3c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690444"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903391"
 ---
 # <a name="create-billing-schedules"></a>Erstellen von Abrechnungsplänen
 
@@ -83,7 +83,7 @@ Gehen Sie folgendermaßen vor, um einen Artikel aus einem Abrechnungszeitplan zu
 2. Wählen Sie im Inforegister **Abrechnungszeitplanpositionen** die zu löschende Position aus, und wählen Sie dann **Entfernen** aus.
 3. Wählen Sie **Speichern** aus.
 
-Der Rest dieses Themas beschreibt die Aktionen und Details, die für Positionen im Inforegister **Abrechnungszeitplanpositionen** verfügbar sind.
+Der Rest dieses Artikels beschreibt die Aktionen und Details, die für Positionen im Inforegister **Abrechnungszeitplanpositionen** verfügbar sind.
 
 ## <a name="billing-schedule-line-actions"></a>Aktionen für Abrechnungszeitplanpositionen
 

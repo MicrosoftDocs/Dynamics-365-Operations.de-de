@@ -1,6 +1,6 @@
 ---
 title: Angebotsanforderungsangebote eingeben und vergleichen und Verträge vergeben
-description: In diesem Thema wird erklärt, wie Sie Antworten auf eine Angebotsanforderung (RFQ) eingeben, Angebote bewerten und vergleichen und dann mit einem der Händler einen Vertrag machen.
+description: In diesem Artikel wird erklärt, wie Sie Antworten auf eine Angebotsanforderung (RFQ) eingeben, Angebote bewerten und vergleichen und dann mit einem der Händler einen Vertrag machen.
 author: GalynaFedorova
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 50b403021c347498a9b489a34196e592a2041a11
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d3ef754f2d5d58254a7c6f0e572115f8a2981ad9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677365"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893380"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Angebotsanforderungsangebote eingeben und vergleichen und Verträge vergeben
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird erklärt, wie Sie Antworten auf eine Angebotsanforderung (RFQ) eingeben, Angebote bewerten und vergleichen und dann mit einem der Händler einen Vertrag machen. Sie können diese Prozedur im Demodatunternehmen **USMF** verwenden.
+In diesem Artikel wird erklärt, wie Sie Antworten auf eine Angebotsanforderung (RFQ) eingeben, Angebote bewerten und vergleichen und dann mit einem der Händler einen Vertrag machen. Sie können diese Prozedur im Demodatunternehmen **USMF** verwenden.
 
 Bevor Sie diese Prozedur beginnen, müssen Sie eine Angebotsanforderung (RFQ) mit zwei Positionen haben, die mindestens zwei Händlern gesendet wurde. Um diese Angebotsanforderung zu erstellen, führen Sie die Prozedur [Erstellen einer Angebotsanforderung](create-request-quotation.md) aus. Die Bewertungskriterien müssen ebenfalls eingerichtet sein, bevor Sie diese Prozedur ausführen können.
 

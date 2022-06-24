@@ -1,6 +1,6 @@
 ---
 title: Gefährliche Stoffe in Produkten, Bestellungen, Sendungen und Ladungen
-description: In diesem Thema wird erläutert, wie Sie die gefährliche Stoffe für freigegebene Produkte festlegen, wie Sie Bestandsbeschränkungen für Gefahrengüter festlegen und wie Sie gefährliche Stoffe in einen Auftrag, eine Lieferung oder eine Ladung einbeziehen.
+description: In diesem Artikel wird erläutert, wie Sie die gefährliche Stoffe für freigegebene Produkte festlegen, wie Sie Bestandsbeschränkungen für Gefahrengüter festlegen und wie Sie gefährliche Stoffe in einen Auftrag, eine Lieferung oder eine Ladung einbeziehen.
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 64d31cd86045ff28aa007666a3877271eecf0106
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eaae3ce4916465cd57da65eaa217c40f9c3ea88a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570704"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860695"
 ---
 # <a name="hazardous-materials-in-products-orders-shipments-and-loads"></a>Gefährliche Stoffe in Produkten, Bestellungen, Sendungen und Ladungen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie die gefährliche Stoffe für freigegebene Produkte festlegen, wie Sie Bestandsbeschränkungen für Gefahrengüter festlegen und wie Sie gefährliche Stoffe in einen Auftrag, eine Lieferung oder eine Ladung einbeziehen.
+In diesem Artikel wird erläutert, wie Sie die gefährliche Stoffe für freigegebene Produkte festlegen, wie Sie Bestandsbeschränkungen für Gefahrengüter festlegen und wie Sie gefährliche Stoffe in einen Auftrag, eine Lieferung oder eine Ladung einbeziehen.
 
 ## <a name="set-hazardous-material-specifications-for-products"></a>Angaben zu gefährlichen Stoffen für Produkte festlegen
 
@@ -109,11 +109,11 @@ Hier ist ein Schlüssel für die Formel:
 - *&lt;Einheitsumrechnung&gt;* ist ein Umrechnungsfaktor zum Umrechnen zwischen der Einheit, die für die Ladungspositionsmenge verwendet wird und der Einheit, die für ein Produkt im Feld **Einheit** im Inforegister **Materialverwaltung** angegeben ist.
 - *&lt;Multiplier&gt;* ist der Multiplikator, der für ein Produkt im Feld **Multiplikator** im Inforegister **Materialverwaltung** angegeben ist.
 
-Diese Bewertung wird für jede Ladungsposition gemeldet, die ein Produkt enthält, für das diese Werte angegeben sind. Weitere Informationen finden Sie unter [Lieferungen, die Gefahrstoffe enthalten](#hazmat-shipments) und im Abschnitt [Ladungen, die Gefahrstoffe enthalten](#hazmat-loads) später in diesem Thema.
+Diese Bewertung wird für jede Ladungsposition gemeldet, die ein Produkt enthält, für das diese Werte angegeben sind. Weitere Informationen finden Sie unter [Lieferungen, die Gefahrstoffe enthalten](#hazmat-shipments) und im Abschnitt [Ladungen, die Gefahrstoffe enthalten](#hazmat-loads) später in diesem Artikel.
 
 #### <a name="how-the-hazardous-material-weight-is-calculated"></a>So wird das Gefahrstoffgewicht berechnet
 
-Ladungen und Ladungspositionen, die Produkte enthalten, bei denen die Option **Begrenzte Menge** im Inforegister **Materialverwaltung** auf **Ja** festgelegt ist, zeigen das Gefahrstoff-Gesamtgewicht an, wie beschrieben in den Abschnitten [Lieferungen, die Gefahrstoffe enthalten](#hazmat-shipments) und [Ladungen, die Gefahrstoffe enthalten](#hazmat-loads) später in diesem Thema. Das Gefahrstoffgewicht wird mithilfe der folgenden Formel berechnet:
+Ladungen und Ladungspositionen, die Produkte enthalten, bei denen die Option **Begrenzte Menge** im Inforegister **Materialverwaltung** auf **Ja** festgelegt ist, zeigen das Gefahrstoff-Gesamtgewicht an, wie beschrieben in den Abschnitten [Lieferungen, die Gefahrstoffe enthalten](#hazmat-shipments) und [Ladungen, die Gefahrstoffe enthalten](#hazmat-loads) später in diesem Artikel. Das Gefahrstoffgewicht wird mithilfe der folgenden Formel berechnet:
 
 Gefahrstoffgewicht = *&lt;LineQty&gt;* × *&lt;ProductWeight&gt;* × *&lt;UnitConversion&gt;*
 

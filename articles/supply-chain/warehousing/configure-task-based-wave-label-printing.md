@@ -1,6 +1,6 @@
 ---
 title: Planen des Wellenetikettendrucks während der Welle
-description: Dieses Thema beschreibt, wie Sie die Funktionalität für aufgabenbasierten Wellenetikettendruck festlegen und verwenden.
+description: Dieser Artikel beschreibt, wie Sie die Funktionalität für aufgabenbasierten Wellenetikettendruck festlegen und verwenden.
 author: perlynne
 ms.date: 06/09/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 1323538765308ec3dd366456e31f5e08b08ce5ab
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: ac2bc4cce42bada43334b82301d716414cd6d654
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920148"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889456"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Planen des Wellenetikettendrucks während der Welle
 
@@ -30,7 +30,7 @@ Wenn Sie die Funktion *Aufgabenbasierter Wellenetikettendruck* verwenden, erstel
 
 ## <a name="turn-on-the-task-based-wave-label-printing-feature-in-feature-management"></a>Aktivieren Sie die Funktion „Aufgabenbasierter Wellenetikettendruck“ in der Funktionsverwaltung
 
-Um die Funktionen zu verwenden, die in diesem Thema beschrieben werden, müssen sie für Ihr System eingeschaltet werden. Verwenden Sie den Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um die Funktionen in der folgenden Reihenfolge zu aktivieren:
+Um die Funktionen zu verwenden, die in diesem Artikel beschrieben werden, müssen sie für Ihr System eingeschaltet werden. Verwenden Sie den Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um die Funktionen in der folgenden Reihenfolge zu aktivieren:
 
 1. *Wellenetikettendruck* – Diese Funktion ist erforderlich, um das Wellenprozessverfahren für den Wellenetikettendruck zu aktivieren.
 1. *Organisationsweite Arbeitssperrung* – Diese Funktion ist sowohl für die manuelle als auch für die automatische Konfiguration der geplanten Arbeitserstellung erforderlich. (Ab Supply Chain Management Version 10.0.21 ist diese Funktion obligatorisch, daher ist sie standardmäßig aktiviert und kann nicht wieder deaktiviert werden.)

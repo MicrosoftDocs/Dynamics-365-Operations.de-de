@@ -1,6 +1,6 @@
 ---
 title: Kleinpaketlieferung
-description: Dieses Thema enthält Informationen zur Kleinpaketlieferung. Diese Funktion aktiviert Microsoft Dynamics 365 Supply Chain Management, um Details zu einem gepackten Container an den Spediteur zu senden und dann ein Adressetikett, einen Frachtsatz und eine Sendungsverfolgungsnummer von diesem Spediteur zu erhalten.
+description: Dieser Artikel enthält Informationen zur Kleinpaketlieferung. Diese Funktion aktiviert Microsoft Dynamics 365 Supply Chain Management, um Details zu einem gepackten Container an den Spediteur zu senden und dann ein Adressetikett, einen Frachtsatz und eine Sendungsverfolgungsnummer von diesem Spediteur zu erhalten.
 author: Mirzaab
 ms.date: 01/08/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: e8e2bda39b9de241d17fcf3cb9acce2b8015efd2
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 7bafd4a5118de5ca6025c6bd74fe436aa6abd1c8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687615"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855902"
 ---
 # <a name="small-parcel-shipping"></a>Kleinpaketlieferung
 
@@ -54,7 +54,7 @@ Befolgen Sie diese Schritte, um das Demotarifmodul zu erhalten.
 
 #### <a name="create-and-deploy-functional-rate-engines"></a>Erstellen und Bereitstellen funktionsfähiger Tarifmodule
 
-Informationen zum Erstellen und Bereitstellen funktionsfähiger Tarifmodule, die in einer Produktions- oder Testumgebung verwendet werden können, finden Sie in den folgenden Themen:
+Informationen zum Erstellen und Bereitstellen funktionsfähiger Tarifmodule, die in einer Produktions- oder Testumgebung verwendet werden können, finden Sie in den folgenden Artikeln:
 
 - [Erstellen eines neuen Transportverwaltungsmoduls](../transportation/create-new-transportation-management-engine.md)
 - [Einrichten von Transportverwaltungsmodulen](/dynamicsax-2012/appuser-itpro/set-up-transportation-management-engines)
@@ -77,7 +77,7 @@ Führen Sie die folgenden Schritte aus, nachdem Sie ein Tarifmodul für die Klei
 
 ## <a name="example-scenario"></a>Beispielszenario
 
-Dieses Beispielszenario zeigt, wie Sie die Kleinpaketlieferung einrichten und verwenden, nachdem Sie Ihr System wie zuvor in diesem Thema beschrieben vorbereitet haben. In diesem Szenario wird das zuvor erwähnte Demotarifmodul verwendet.
+Dieses Beispielszenario zeigt, wie Sie die Kleinpaketlieferung einrichten und verwenden, nachdem Sie Ihr System wie zuvor in diesem Artikel beschrieben vorbereitet haben. In diesem Szenario wird das zuvor erwähnte Demotarifmodul verwendet.
 
 ### <a name="make-demo-data-available"></a>Demodaten zur Verfügung stellen
 
@@ -147,7 +147,7 @@ Gehen Sie folgendermaßen vor, um ein Spediteurdienstleistungskonto einzurichten
 
 Gehen Sie zum Einrichten einer Containerverpackungsrichtlinie folgendermaßen vor.
 
-1. Wenn Sie noch keine ZPL-Druckerdefinition eingerichtet haben, richten Sie sie mit der Anwendung Document Routing Agent ein. Weitere Informationen finden Sie unter [Übersicht zum Dokumentendruck](../../fin-ops-core/dev-itpro/analytics/print-documents.md) und verwandten Themen.
+1. Wenn Sie noch keine ZPL-Druckerdefinition eingerichtet haben, richten Sie sie mit der Anwendung Document Routing Agent ein. Weitere Informationen finden Sie unter [Übersicht zum Dokumentendruck](../../fin-ops-core/dev-itpro/analytics/print-documents.md) und verwandten Artikeln.
 1. Wechseln Sie zu **Lagerortverwaltung \> Einrichten \> Container \> Containerverpackungsrichtlinien**.
 1. Wählen Sie im Aktionsbereich **Neu** aus, um eine Containerverpackungsrichtlinie hinzuzufügen.
 1. Legen Sie in der Kopfzeile der neuen Richtlinie die folgenden Werte fest:

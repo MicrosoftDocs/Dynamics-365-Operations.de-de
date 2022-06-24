@@ -1,6 +1,6 @@
 ---
 title: Externe Daten in Cashflow Planungen
-description: In diesem Thema werden die Einrichtungsschritte beschrieben, die Sie durchführen müssen, damit externe Daten eingegeben oder in Cashflow-Planungen importiert werden können.
+description: In diesem Artikel werden die Einrichtungsschritte beschrieben, die Sie durchführen müssen, damit externe Daten eingegeben oder in Cashflow-Planungen importiert werden können.
 author: RyanCCarlson2
 ms.date: 02/16/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f7fac80b7ad0fde273fbd33aa5df146e569be46e
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: f0cb05770dc2fbd4e13af261b5f0a0e117a2f6d7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713725"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846972"
 ---
 # <a name="external-data-in-cash-flow-forecasts"></a>Externe Daten in Cashflow Planungen
 
 [!include [banner](../includes/banner.md)]
 
-Externe Daten können eingegeben oder in Cashflow-Planungen importiert werden. In diesem Thema werden die Einrichtungsschritte beschrieben, die für die Verwendung externer Daten spezifisch sind und die es ermöglichen, die externen Daten in eine Cashflow-Planung aufzunehmen.
+Externe Daten können eingegeben oder in Cashflow-Planungen importiert werden. In diesem Artikel werden die Einrichtungsschritte beschrieben, die für die Verwendung externer Daten spezifisch sind und die es ermöglichen, die externen Daten in eine Cashflow-Planung aufzunehmen.
 
 ## <a name="external-data-setup"></a>Externe Daten einrichten
 

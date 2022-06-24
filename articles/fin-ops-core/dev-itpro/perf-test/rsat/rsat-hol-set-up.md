@@ -1,6 +1,6 @@
 ---
 title: Regression Suite Automation Tool-Tutorial einrichten und installieren
-description: Dieses Thema enthält ein Lernprogramm, das zeigt, wie das Regression Suite Automation Tool (RSAT) eingerichtet wird.
+description: Dieser Artikel enthält ein Lernprogramm, das zeigt, wie das Regression Suite Automation Tool (RSAT) eingerichtet wird.
 author: tonyafehr
 ms.date: 09/20/2019
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 5dcdd14f54b9c0ad39794ff98ede29332c246513
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ec4ae765aaac038e6c7eff11403fb21ebd27fc2c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781990"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858589"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool-Tutorial einrichten und installieren
 
-Dieses Thema ist ein Tutorial, mit dem Sie RSAT sowie die Tools einrichten und verwenden können, die der Verwendung von RSAT zugeordnet werden.
+Dieser Artikel ist ein Tutorial, mit dem Sie RSAT sowie die Tools einrichten und verwenden können, die der Verwendung von RSAT zugeordnet werden.
 
 [!include [banner](../../includes/banner.md)]
 
@@ -111,7 +111,7 @@ In diesem Lernprogramm verwenden Sie den LCS-Geschäftsprozessmodellierer (BPM),
 
 ## <a name="configure-the-lcs-project"></a>Konfigurieren des LCS-Projekts
 
-Sie benötigen ein Lifecycle Services (LCS)-Projekt für Ihre Mastertestbibliothek. Der LCS-Geschäftsprozessmodellierer (BPM) wird als Master-Bibliothek für Ihre Testfälle verwendet. BPM wird verwendet, um Testbibliotheken in LCS-Projekten zu verwalten und zu verteilen. Beispielsweise veröffentlicht ein Microsoft-Partner oder ein unabhängiger Softwareanbieter (ISV), der Testbibliotheken erstellt, Testfälle in Form von BPM-Bibliotheken. In BPM werden Testfälle nach Geschäftsprozess sortiert. BPM definiert die Ausführungsreihenfolge der die Häufigkeit des Testerfolgs nicht. Diese Details werden in Azure DevOps verwaltet, wie später in diesem Thema beschrieben.  
+Sie benötigen ein Lifecycle Services (LCS)-Projekt für Ihre Mastertestbibliothek. Der LCS-Geschäftsprozessmodellierer (BPM) wird als Master-Bibliothek für Ihre Testfälle verwendet. BPM wird verwendet, um Testbibliotheken in LCS-Projekten zu verwalten und zu verteilen. Beispielsweise veröffentlicht ein Microsoft-Partner oder ein unabhängiger Softwareanbieter (ISV), der Testbibliotheken erstellt, Testfälle in Form von BPM-Bibliotheken. In BPM werden Testfälle nach Geschäftsprozess sortiert. BPM definiert die Ausführungsreihenfolge der die Häufigkeit des Testerfolgs nicht. Diese Details werden in Azure DevOps verwaltet, wie später in diesem Artikel beschrieben.  
 
 Für das LCS-Projekt können Sie eine vorhandene Benutzerimplementierung oder ein Partnerprojekt verwenden.
 

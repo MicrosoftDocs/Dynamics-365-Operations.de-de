@@ -1,6 +1,6 @@
 ---
 title: In früheren Versionen entfernte oder veraltete Funktionen
-description: Dieses Thema beschreibt Funktionen, die aus Dynamics 365 for Finance and Operations und früheren Versionen entfernt wurden oder für die Entfernung geplant waren.
+description: Dieser Artikel beschreibt Funktionen, die aus Dynamics 365 for Finance and Operations und früheren Versionen entfernt wurden oder für die Entfernung geplant waren.
 author: sericks007
 ms.date: 02/16/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6dfe1cf9d3d67c6b65f64248d48a2e7420a47c93
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 2d8c79057c157f9f0244ea11ad5c3563dcdb21a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063236"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866184"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>In früheren Versionen entfernte oder veraltete Funktionen
 
@@ -28,9 +28,9 @@ ms.locfileid: "8063236"
 
 
 > [!IMPORTANT]
-> Dieses Thema wird nicht mehr aktualisiert. Um eine aktuelle Liste der Funktionen anzuzeigen, die aus Apps für Finanzen und Betrieb entfernt oder außer Betrieb genommen wurden, suchen Sie nach **„Entfernte oder außer Betrieb genommene Funktionen“**, die sich auf die App beziehen, die Sie verwenden.
+> Dieser Artikel wird nicht mehr aktualisiert. Um eine aktuelle Liste der Funktionen anzuzeigen, die aus Apps für Finanzen und Betrieb entfernt oder außer Betrieb genommen wurden, suchen Sie nach **„Entfernte oder außer Betrieb genommene Funktionen“**, die sich auf die App beziehen, die Sie verwenden.
 
-Dieses Thema beschreibt Funktionen, die aus Dynamics 365 for Finance and Operations und früheren Versionen dieses Produkts entfernt oder veraltet sind.
+Dieser Artikel beschreibt Funktionen, die aus Dynamics 365 for Finance and Operations und früheren Versionen dieses Produkts entfernt wurden oder veraltet sind.
 
 - Eine Funktion *entfernt* ist nicht mehr im Produkt verfügbar.
 - Eine Funktion *veraltet* wird nicht aktiv entwickelt und könnte bei einem zukünftigen Update entfernt werden.

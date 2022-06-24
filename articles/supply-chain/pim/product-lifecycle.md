@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: f71ce701adbe60b69b25e41810dda7adeec1d390
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 5d1ea1517c75393b1c8d7c95c8aa2405042b4532
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983793"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850640"
 ---
 # <a name="product-lifecycle-state-overview"></a>Übersicht über den Zustand des Produktlebenszyklus
 
@@ -74,7 +74,7 @@ Die Produktlebenszyklusstatus werden durch Datenentitäten unterstützt, und der
 
 ## <a name="find-obsolete-products-and-products-variants"></a>Veraltete Produkte und Produktvarianten suchen
 
-Sie können eine Simulationsanalyse ausführen, um veraltete freigegebene Produkte oder Produktvarianten zu finden, und dann ihren Produktlebenszyklusstatus aktualisieren. Wie Sie veraltete Produkte finden, finden Sie unter [Veraltete Produktvarianten finden und einen Produktlebenszyklusstatus zuweisen](tasks/obsolete-product-variants.md). Dieses Thema zeigt, wie Sie veraltete, freigegebene Produkte oder Produktvarianten finden und den veralteten Produkten einen Produktlebenszyklusstatus zuweisen können. Er zeigt auch, wie Simulationsergebnisse angezeigt werden und wie beurteilt wird, wie viele Produkte und Produktvarianten einem neuen Produktlebenszyklusstatus zugeordnet werden, wenn das Update ohne Simulation ausgeführt wird.  
+Sie können eine Simulationsanalyse ausführen, um veraltete freigegebene Produkte oder Produktvarianten zu finden, und dann ihren Produktlebenszyklusstatus aktualisieren. Wie Sie veraltete Produkte finden, finden Sie unter [Veraltete Produktvarianten finden und einen Produktlebenszyklusstatus zuweisen](tasks/obsolete-product-variants.md). Dieser Artikel zeigt, wie Sie veraltete, freigegebene Produkte oder Produktvarianten finden und den veralteten Produkten einen Produktlebenszyklusstatus zuweisen können. Er zeigt auch, wie Simulationsergebnisse angezeigt werden und wie beurteilt wird, wie viele Produkte und Produktvarianten einem neuen Produktlebenszyklusstatus zugeordnet werden, wenn das Update ohne Simulation ausgeführt wird.  
 
 Indem Sie die Analyse in einem Simulationsmodus ausführen, werden die Produkte und Produktvarianten, die als veraltet identifiziert werden, in einem spezifischen Formular angezeigt, in dem sie einfach überprüft werden können. Durch die Analyse wird nach Transaktionen und spezifischen Masterdaten gesucht, um Produkte zu identifizieren, für die es keinen Bedarf innerhalb einer variablen Periode gibt und keine Masterdaten, die in einem Bedarf resultieren können. Neue freigegebene Produkte innerhalb einer variablen Periode können aus der Analyse ausgeschlossen werden. Wenn die Analysesimulation das erwartete Ergebnis zurückgibt, kann der Benutzer die Analyse ausführen und einen neuen Produktlebenszyklusstatus für alle Produkte festlegen, die durch die Analyse als veraltet identifiziert wurden.  
 
@@ -97,7 +97,7 @@ Verwenden Sie die folgenden Kriterien, um die freigegebenen Produkte und Produkt
 - Keine aktiven oder zukünftigen Kaufvertrags- oder Bestellpositionen für das Produkt oder die Produktvariante.
 - Das Produkt oder die Produktvariante wird nicht in einer Stückliste verwendet, die einer nicht abgelaufenen, genehmigten Stücklistenversion für ein Produkt oder eine Variante zugeordnet ist, das/die für die Planung aktiv ist.
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-articles"></a>Zugehörige Artikel
 
 - [Neuen Status für Produktlebenszyklus erstellen](tasks/new-product-lifecycle-state.md)
 - [Status für Standardproduktlebenszyklus erstellen](tasks/default-product-lifecycle-state.md)

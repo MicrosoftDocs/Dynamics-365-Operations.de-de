@@ -1,8 +1,8 @@
 ---
 title: Commerce Scale Unit (Cloud) initialisieren
-description: Dieses Thema erklärt, wie Sie die Commerce Scale Unit (Cloud) in Microsoft Dynamics 365 Commerce initialisieren.
+description: Diese Artikel erklärt, wie Sie die Commerce Scale Unit (Cloud) in Microsoft Dynamics 365 Commerce initialisieren.
 author: AamirAllaq
-ms.date: 02/04/2022
+ms.date: 06/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,18 +11,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
-ms.openlocfilehash: 84e70515accde161e7efa36755edec68d26be952
-ms.sourcegitcommit: fefe93f3f44d8aa0b7e6d54cc4a3e5eca6e64feb
+ms.openlocfilehash: 969dd220a7b73a676b9cf5ac26223ebd9b3f2296
+ms.sourcegitcommit: ddcb62bb5fbf26a1178c2bb1aec45a3d2362339e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8092211"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "8942851"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Commerce Scale Unit (Cloud) initialisieren
 
 [!include[banner](../includes/banner.md)]
 
-Dieses Thema erklärt, wie Sie die Commerce Scale Unit (Cloud) in Microsoft Dynamics 365 Commerce initialisieren.
+Diese Artikel erklärt, wie Sie die Commerce Scale Unit (Cloud) in Microsoft Dynamics 365 Commerce initialisieren.
 
 Wenn Sie eine Tier-2 Sandbox- oder Produktionsumgebung mit der Anwendungsversion 8.1.2.x oder höher verwenden, müssen Sie die Commerce Scale Unit (Cloud) initialisieren, bevor Sie die Funktionalität des Einzelhandelskanals entweder für Point of Sale (POS) Vorgänge oder für E-Commerce Vorgänge, die Retail Server in der Cloud verwenden, nutzen können. Bei der Initialisierung wird eine Commerce Scale Unit (Cloud) bereitgestellt.
 
@@ -32,7 +32,7 @@ Wenn Sie eine Tier-2 Sandbox- oder Produktionsumgebung mit der Anwendungsversion
 ## <a name="prerequisites"></a>Voraussetzungen
 
 1. Stellen Sie eine Tier-2 Sandbox- oder Produktionsumgebung mit der Version 8.1.2.x oder höher bereit.
-2. Sie können bis zu 2 Commerce Scale Uniten pro Umgebung selbst bereitstellen. Wenn Sie mehr als 2 Commerce Scale Units pro Umgebung benötigen, erstellen Sie in Microsoft Dynamics Lifecycle Services (LCS) eine Support-Anfrage und geben Sie **Anfrage für zusätzliche Commerce Scale Units** ein und geben Sie die Umgebungs-ID, die Anzahl der Commerce Scale Units und die gewünschten Rechenzentrumsregionen an. Die Anfrage wird innerhalb von fünf Geschäftstagen abgeschlossen. Wenn Sie nicht mehr als 2 Commerce Scale Uniten pro Umgebung benötigen, brauchen Sie keine Support-Anfrage zu erstellen. 
+2. Sie können bis zu 2 Commerce Scale Uniten pro Umgebung selbst bereitstellen. Wenn Sie mehr als 2 Commerce Scale Units pro Umgebung benötigen, erstellen Sie in Microsoft Dynamics Lifecycle Services (LCS) eine Support-Anfrage und geben Sie **Anfrage für zusätzliche Commerce Scale Unit** ein und geben Sie die Umgebungs-ID, die Anzahl der Commerce Scale Units und die gewünschten Rechenzentrumsregionen an. Die Anfrage wird innerhalb von fünf Geschäftstagen abgeschlossen. Wenn Sie nicht mehr als 2 Commerce Scale Units pro Umgebung benötigen, brauchen Sie keine Support-Anfrage zu erstellen. 
 3. Sie müssen über die Berechtigungen des Projektbesitzers in Lifecycle Services verfügen, bevor Sie Commerce Scale Unit initialisieren können.
 4. Stellen Sie sicher, dass die Konfigurationsschlüssel für Einzelhandelslizenzen in Ihrer Umgebung aktiviert sind. Weitere Informationen finden Sie unter [Lizenzcodes und Konfigurationsschlüssel Bericht](../sysadmin/license-codes-configuration-keys-report.md). Sie müssen die folgenden Schlüssel aktiviert haben, um Commerce Scale Unit zu verwenden.
 
@@ -49,32 +49,34 @@ Wenn Sie eine Tier-2 Sandbox- oder Produktionsumgebung mit der Anwendungsversion
 ## <a name="region-availability"></a>Regionale Verfügbarkeit
 Die Commerce Scale Unit steht in den folgenden Regionen zum Bereitstellen zur Verfügung.
 
-| Globaler Standort | Region              | Verfügbarkeit        |
-|-----------------|---------------------|---------------------|
-| AMERICAS        | USA, Osten             | Allgemein verfügbar |
-| AMERICAS        | USA, Osten 2           | Allgemein verfügbar |
-| AMERICAS        | USA, Norden-Mitte    | Allgemein verfügbar |
-| AMERICAS        | USA, Süden-Mitte    | Allgemein verfügbar |
-| AMERICAS        | USA, Mitte          | Allgemein verfügbar |
-| AMERICAS        | USA, Westen             | Allgemein verfügbar |
-| AMERICAS        | West US 2           | Allgemein verfügbar |
-| AMERICAS        | Kanada Mitte      | Begrenzte Kapazität    |
-| AMERICAS        | Kanada Ost         | Begrenzte Kapazität    |
-| AMERICAS        | West Central US     | Begrenzte Kapazität    |
-| APAC            | Australien, Osten      | Allgemein verfügbar |
-| APAC            | Asien, Südosten      | Allgemein verfügbar |
-| APAC            | Japan, Osten          | Allgemein verfügbar |
-| APAC            | Japan, Westen          | Allgemein verfügbar |
-| APAC            | Australien, Südosten | Begrenzte Kapazität    |
-| APAC            | Asien, Osten           | Begrenzte Kapazität    |
-| APAC            | Indien Süd         | Begrenzte Kapazität    |
-| APAC            | Indien Zentral       | Begrenzte Kapazität    |
-| EMEA            | Europa, Westen         | Allgemein verfügbar |
-| EMEA            | Europa, Norden        | Allgemein verfügbar |
-| EMEA            | UK Süd            | Begrenzte Kapazität    |
-| EMEA            | UK West             | Begrenzte Kapazität    |
+| Globaler Standort | Region              | Verfügbarkeit        | Kommentare                  |
+|-----------------|---------------------|---------------------|---------------------------|
+| AMERICAS        | USA, Osten             | Allgemein verfügbar |                           |
+| AMERICAS        | USA, Osten 2           | Allgemein verfügbar |                           |
+| AMERICAS        | USA, Norden-Mitte    | Begrenzte Kapazität    |                           |
+| AMERICAS        | USA, Süden-Mitte    | Begrenzte Kapazität    |                           |
+| AMERICAS        | USA, Mitte          | Allgemein verfügbar |                           |
+| AMERICAS        | USA, Westen             | Allgemein verfügbar |                           |
+| AMERICAS        | West US 2           | Allgemein verfügbar |                           |
+| AMERICAS        | Kanada Mitte      | Begrenzte Kapazität    |                           |
+| AMERICAS        | Kanada Ost         | Begrenzte Kapazität    |                           |
+| AMERICAS        | West Central US     | Begrenzte Kapazität    |                           |
+| APAC            | Australien, Osten      | Allgemein verfügbar |                           |
+| APAC            | Asien, Südosten      | Kapazität eingeschränkt | Keine Bereitstellungen erlaubt    |
+| APAC            | Japan, Osten          | Allgemein verfügbar |                           |
+| APAC            | Japan, Westen          | Allgemein verfügbar |                           |
+| APAC            | Australien, Südosten | Allgemein verfügbar |                           |
+| APAC            | Asien, Osten           | Begrenzte Kapazität    |                           |
+| APAC            | Indien Süd         | Kapazität eingeschränkt | Keine Bereitstellungen erlaubt    |
+| APAC            | Indien Zentral       | Begrenzte Kapazität    | Genehmigungsprozess erforderlich |
+| EMEA            | Europa, Westen         | Allgemein verfügbar |                           |
+| EMEA            | Europa, Norden        | Allgemein verfügbar |                           |
+| EMEA            | UK Süd            | Begrenzte Kapazität    |                           |
+| EMEA            | UK West             | Begrenzte Kapazität    |                           |
+| Schweiz     | Schweiz, Norden   | Begrenzte Kapazität    | Genehmigungsprozess erforderlich |
+| VAE             | VAE, Norden           | Begrenzte Kapazität    | Genehmigungsprozess erforderlich |
 
-Die Bereitstellungskapazität in Regionen mit begrenzter Kapazität ist extrem eingeschränkt. Anträge auf Bereitstellen werden von Fall zu Fall geprüft. Wenn Sie einen zwingenden geschäftlichen Bedarf für die Bereitstellung in Regionen mit begrenzter Kapazität haben, können Sie eine Supportanfrage stellen, um auf die Warteliste gesetzt zu werden.
+Die Bereitstellungskapazität in Regionen mit begrenzter Kapazität ist extrem eingeschränkt. Anträge auf Bereitstellen werden von Fall zu Fall geprüft. Wenn Sie einen zwingenden geschäftlichen Bedarf für die Bereitstellung in Regionen mit begrenzter Kapazität haben, können Sie eine Supportanfrage stellen, um auf die Warteliste gesetzt zu werden. Bereiche mit eingeschränkter Kapazität erlauben derzeit keine Bereitstellung von Commerce Scale Units. 
 
 ![Karte mit der Verfügbarkeit der Region](media/Commerce-Scale-Unit-Region-Availability.png "Zuordnung der Verfügbarkeit von Regionen").
 

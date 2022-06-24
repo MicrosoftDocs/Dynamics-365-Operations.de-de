@@ -1,6 +1,6 @@
 ---
-title: Arbeitsauslastungen der Lagerortverwaltung für Scale-Units in der Cloud und Edge
-description: Dieses Thema enthält Informationen über die Funktion, die es Scale-Units ermöglicht, ausgewählte Prozesse aus der Arbeitsauslastung Ihrer Lagerortverwaltung auszuführen.
+title: Workloads in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten
+description: Dieser Artikel enthält Informationen über die Funktion, die es Scale-Units ermöglicht, ausgewählte Prozesse aus der Arbeitsauslastung Ihrer Lagerortverwaltung auszuführen.
 author: perlynne
 ms.date: 09/03/2021
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 67f78441b0914d18c2a7853bab54c6b8817be3ac
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: f9839ad9a18eb543734c2ba43a56b568460a64c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384483"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893496"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Workloads in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten
 
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> Nicht alle Geschäftsfunktionen der Lagerortverwaltung werden vollständig für Lagerorte unterstützt, an denen eine Arbeitsauslastung auf einer Skalierungseinheit ausgeführt wird. Achten Sie darauf, nur die Prozesse zu verwenden, die in diesem Thema ausdrücklich als unterstützt beschrieben werden.
+> Nicht alle Geschäftsfunktionen der Lagerortverwaltung werden vollständig für Lagerorte unterstützt, an denen eine Arbeitsauslastung auf einer Skalierungseinheit ausgeführt wird. Achten Sie darauf, nur die Prozesse zu verwenden, die in diesem Artikel ausdrücklich als unterstützt beschrieben werden.
 
 ## <a name="warehouse-execution-on-scale-units"></a>Lagerort-Ausführung auf Scale-Units
 
@@ -184,7 +184,7 @@ Andere Arten der Verarbeitung von Quellbelegen oder Lagerortarbeit werden derzei
 >
 > Es sind ein paar zusätzliche Schritte erforderlich, um die Warehouse Management Mobile-App für den Einsatz mit einer Cloud- oder Edge-Scale-Unit festzulegen. Weitere Informationen finden Sie unter [Konfigurieren Sie die Warehouse Management Mobile-App für Scale-Units in der Cloud und am Rand](cloud-edge-workload-setup-warehouse-app.md).
 >
-> Wenn Sie eine Arbeitsauslastung auf einer Skalierungseinheit ausführen, können Sie keine nicht unterstützten Prozesse für das spezifische Lager auf dem Hub ausführen. Die später in diesem Thema bereitgestellten Tabellen dokumentieren die unterstützten Funktionen.
+> Wenn Sie eine Arbeitsauslastung auf einer Skalierungseinheit ausführen, können Sie keine nicht unterstützten Prozesse für das spezifische Lager auf dem Hub ausführen. Die später in diesem Artikel bereitgestellten Tabellen dokumentieren die unterstützten Funktionen.
 >
 > Ausgewählte Lagerort-Arbeitstypen können sowohl auf dem Hub als auch auf Skalierungseinheiten erstellt werden, können jedoch nur vom besitzenden Hub oder der besitzenden Skalierungseinheit (der Bereitstellung, die die Daten erstellt hat) verwaltet werden.
 >

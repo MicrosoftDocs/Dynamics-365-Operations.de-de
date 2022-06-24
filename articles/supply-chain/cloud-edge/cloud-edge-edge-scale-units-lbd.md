@@ -1,6 +1,6 @@
 ---
 title: Edge-Skalierungseinheiten mithilfe von LBD auf benutzerdefinierter Hardware bereitstellen
-description: In diesem Thema wird erläutert, wie Sie lokale Edge-Skalierungseinheiten mithilfe von benutzerdefinierter Hardware und Bereitstellung bereitstellen, die auf lokalen Geschäftsdaten (LBD) basiert.
+description: In diesem Artikel wird erläutert, wie Sie lokale Edge-Skalierungseinheiten mithilfe von benutzerdefinierter Hardware und Bereitstellung bereitstellen, die auf lokalen Geschäftsdaten (LBD) basiert.
 author: Mirzaab
 ms.date: 01/24/2022
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 540ac1f6d69d869256f49b8501e18966575903fa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 794de8c0d77949789e4046418ac2b55dba1bee02
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674085"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882749"
 ---
 # <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>Edge-Skalierungseinheiten mithilfe von LBD auf benutzerdefinierter Hardware bereitstellen
 
@@ -27,7 +27,7 @@ Edge-Skalierungseinheiten spielen eine wichtige Rolle in der verteilten Hybridto
 
 Edge-Skalierungseinheiten können bereitgestellt werden, indem eine [lokale Umgebung](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) mit lokalen Geschäftsdaten (LBD) erstellt wird und diese dann so konfiguriert wird, dass es als Skalierungseinheit in Ihrer verteilten Hybridtopologie für das Supply Chain Management fungiert. Dies wird erreicht, indem die lokale LBD-Umgebung mit einer Supply Chain Management-Umgebung in der Cloud verknüpft wird, die als Hub konfiguriert wurde.  
 
-In diesem Thema wird beschrieben, wie Sie eine lokale LBD-Umgebung als Edge-Skalierungseinheit einrichten und sie dann einem Hub zuordnen.
+In diesem Artikel wird beschrieben, wie Sie eine lokale LBD-Umgebung als Edge-Skalierungseinheit einrichten und sie dann einem Hub zuordnen.
 
 ## <a name="infrastructure-considerations"></a>Überlegungen zur Infrastruktur
 
@@ -44,21 +44,21 @@ Hier ein Überblick über die Bereitstellungsschritte.
 
 1. **Einrichten und Bereitstellen einer LBD-Umgebung mit einer *leeren* Datenbank.**
 
-    Verwenden Sie LCS, um die LBD-Umgebung mit der neuesten Topologie und einer leeren Datenbank bereitzustellen. Weitere Informationen finden Sie im Abschnitt [Einrichten und Bereitstellen einer LBD-Umgebung mit leerer Datenbank](#set-up-deploy) weiter unten in diesem Thema. Sie müssen mindestens die Supply Chain Management Version 10.0.21 in Hub- und Skalierungseinheitumgebungen verwenden.
+    Verwenden Sie LCS, um die LBD-Umgebung mit der neuesten Topologie und einer leeren Datenbank bereitzustellen. Weitere Informationen finden Sie im Abschnitt [Einrichten und Bereitstellen einer LBD-Umgebung mit leerer Datenbank](#set-up-deploy) weiter unten in diesem Artikel. Sie müssen mindestens die Supply Chain Management Version 10.0.21 in Hub- und Skalierungseinheitumgebungen verwenden.
 
 1. **Zielpakete in LBD-Projektassets in LCS hochladen.**
 
-    Bereiten Sie Anwendungs-, Plattform- und Anpassungspakete vor, die Sie im Hub und in der Skalierungseinheit verwenden. Weitere Informationen finden Sie im Abschnitt [Hochladen von Zielpaketen in LBD-Projektassets in LCS](#upload-packages) weiter unten in diesem Thema.
+    Bereiten Sie Anwendungs-, Plattform- und Anpassungspakete vor, die Sie im Hub und in der Skalierungseinheit verwenden. Weitere Informationen finden Sie im Abschnitt [Hochladen von Zielpaketen in LBD-Projektassets in LCS](#upload-packages) weiter unten in diesem Artikel.
 
 1. **Warten Sie die LBD-Umgebung mit den Zielpaketen.**
 
-    Dieser Schritt stellt sicher, dass auf dem Hub und dem Spoke der gleiche Build und die gleichen Anpassungen bereitgestellt werden. Weitere Informationen finden Sie im Abschnitt [Warten der LBD-Umgebung mit Zielpaketen](#service-target-packages) weiter unten in diesem Thema.
+    Dieser Schritt stellt sicher, dass auf dem Hub und dem Spoke der gleiche Build und die gleichen Anpassungen bereitgestellt werden. Weitere Informationen finden Sie im Abschnitt [Warten der LBD-Umgebung mit Zielpaketen](#service-target-packages) weiter unten in diesem Artikel.
 
 1. **Schließen Sie die Konfiguration der Skalierungseinheit und die Arbeitslastzuweisung ab.**
 
-    Weitere Informationen finden Sie im Abschnitt [Weisen Sie Ihr LBD Edge-Skalierungseinheit einem Hub zu](#assign-edge-to-hub) weiter unten in diesem Thema.
+    Weitere Informationen finden Sie im Abschnitt [Weisen Sie Ihr LBD Edge-Skalierungseinheit einem Hub zu](#assign-edge-to-hub) weiter unten in diesem Artikel.
 
-Die verbleibenden Themen enthalten zusätzliche Details zum Durchführen dieser Schritte.
+Die verbleibenden Artikel enthalten zusätzliche Details zum Durchführen dieser Schritte.
 
 ## <a name="set-up-and-deploy-an-lbd-environment-with-an-empty-database"></a><a name="set-up-deploy"></a>Einrichten und Bereitstellen einer LBD-Umgebung mit einer leeren Datenbank
 
@@ -67,7 +67,7 @@ Dieser Schritt erstellt eine funktionale LBD-Umgebung. Die Umgebung hat jedoch n
 1. Folgen Sie den Anweisungen in [Lokale Umgebungen einrichten und bereitstellen (Plattformupdate 41 und höher)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). Sie müssen mindestens die Supply Chain Management Version 10.0.21 in Hub- und Skalierungseinheitumgebungen verwenden. Darüber hinaus müssen Sie mindestens Version 2.12.0 der Infrastruktur-Skripts verwenden. 
 
     > [!IMPORTANT]
-    > Lesen Sie den Rest dieses Abschnitts, **bevor** Sie die Schritte in diesem Thema durchführen.
+    > Lesen Sie den Rest dieses Abschnitts, **bevor** Sie die Schritte in diesem Artikel durchführen.
 
 1. Bevor Sie Ihre Konfiguration in der Infrastruktur\\ConfigTemplate.xml-Datei beschreiben, führen Sie das folgende Skript aus:
 

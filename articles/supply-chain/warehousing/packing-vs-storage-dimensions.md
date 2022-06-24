@@ -1,6 +1,6 @@
 ---
 title: Festlegen verschiedener Dimensionen für Verpackung und Lagerung
-description: In diesem Thema wird gezeigt, wie Sie angeben, für welchen Prozess (Verpackung, Lagerung oder verschachtelte Verpackung) jede angegebene Dimension verwendet wird.
+description: In diesem Artikel wird gezeigt, wie Sie angeben, für welchen Prozess (Verpackung, Lagerung oder verschachtelte Verpackung) jede angegebene Dimension verwendet wird.
 author: Mirzaab
 ms.date: 01/28/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 090a6f653b50d8f22a2f34354172f129624813f1
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 85e40a0768174dcdc5d0fa2647b24cddccf01bdf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687644"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905485"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>Festlegen verschiedener Dimensionen für Verpackung und Lagerung
 
@@ -33,7 +33,7 @@ Einige Artikel werden so verpackt oder gelagert, dass Sie möglicherweise die ph
 *Lagerdimensionen* werden auch dann unterstützt, wenn die Funktion *Produktdimensionen für Verpackung* nicht aktiviert ist. Sie richten sie über die Seite **Physische Dimensionen** in Supply Chain Management ein. Diese Dimensionen werden von allen Prozessen verwendet, bei denen die Dimensionen Verpackung und verschachtelte Verpackung nicht angegeben sind.
 
 Die Dimensionen *Verpackung* und *Verschachtelte Verpackung* werden über die Seite **Physische Produktdimensionen** eingerichtet, die hinzugefügt wird, wenn Sie die Funktion *Produktdimensionen für Verpackung* aktivieren.
-Dieses Thema enthält ein Szenario, das die Verwendung dieser Funktion veranschaulicht.
+Dieser Artikel enthält ein Szenario, das die Verwendung dieser Funktion veranschaulicht.
 
 ## <a name="turn-on-the-packaging-product-dimensions-feature"></a>Aktivieren der Funktion für Produktdimensionen für die Verpackung
 

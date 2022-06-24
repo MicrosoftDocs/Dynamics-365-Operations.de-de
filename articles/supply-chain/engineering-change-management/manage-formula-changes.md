@@ -1,6 +1,6 @@
 ---
 title: Verwalten vone Änderungen in Formeln und deren Substanzen
-description: In diesem Thema wird beschrieben, wie Sie die Formelverwaltung durchführen und Änderungen an den Stammdaten der Prozessfertigung verwalten.
+description: In diesem Artikel wird beschrieben, wie Sie die Formelverwaltung durchführen und Änderungen an den Stammdaten der Prozessfertigung verwalten.
 author: t-benebo
 ms.date: 05/19/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 31953fd29c471e52bd63dbb02c20f5f224c3cae2
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 8105ebc7f3698a6baaa04b6548dac18a7bf81a47
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103038"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904071"
 ---
 # <a name="manage-changes-in-formulas-and-their-ingredients"></a>Verwalten vone Änderungen in Formeln und deren Substanzen
 
@@ -29,7 +29,7 @@ Wenn Sie die Prozessherstellungsfunktionen von Microsoft Dynamics 365 Supply Cha
 
 ## <a name="turn-this-feature-on-or-off"></a>Schalten Sie diese Funktion ein oder aus
 
-Für die in diesem Thema beschriebene Funktionalität müssen die Funktionen *Verwaltung für technische Änderung* und *Änderungen an Formeln und ihren Substanzen verwalten* für Ihr System eingeschaltet sein. Einzelheiten zum Ein- und Ausschalten dieser Funktionen finden Sie unter [Verwaltung für technische Änderung – Übersicht](product-engineering-overview.md).
+Für die in diesem Artikel beschriebene Funktionalität müssen die Funktionen *Verwaltung für technische Änderung* und *Änderungen an Formeln und ihren Substanzen verwalten* für Ihr System eingeschaltet sein. Einzelheiten zum Ein- und Ausschalten dieser Funktionen finden Sie unter [Verwaltung für technische Änderung – Übersicht](product-engineering-overview.md).
 
 ## <a name="feature-naming-conventions"></a>Namenskonventionen für Funktion
 
@@ -46,7 +46,7 @@ In der folgenden Liste wird zusammengefasst, wie die Funktionen zur Verwaltung t
 - **Bereitschaftskontrolle** – Verwenden Sie Systemprüfungen und Benutzeranleitungen (Fragebögen und Checklisten), um sicherzustellen, dass alle erforderlichen Produktdaten vollständig eingegeben wurden, bevor das Produkt freigegeben wird. Weitere Informationen finden Sie unter [Produktbereitschaft](product-readiness.md).
 - **Erweiterte Produktfreigabefunktionalität** – Geben Sie vollständig definierte Versionen eines Produkts und seiner Formel von einer Organisation (juristische Person) an andere juristische Personen weiter. Sie können sogar entscheiden, ob die Produktinformationen vor der Veröffentlichung überprüft oder bearbeitet werden müssen. Weitere Informationen finden Sie unter [Produktstrukturen freigeben](release-product-structure.md).
 
-Beachten Sie, dass die meisten Themen, auf die in der vorherigen Liste verwiesen wird, Beispiele enthalten, die auf Stücklisten basieren. Formeln funktionieren jedoch auf ähnliche Weise. Im Folgenden finden Sie einige zusätzliche Konzepte, die hilfreich sind, wenn Sie das Änderungsmanagement (oder nur das Formeländerungsmanagement) zum Verwalten von Formeln und Stücklisten verwenden:
+Beachten Sie, dass die meisten Artikel, auf die in der vorherigen Liste verwiesen wird, Beispiele enthalten, die auf Stücklisten basieren. Formeln funktionieren jedoch auf ähnliche Weise. Im Folgenden finden Sie einige zusätzliche Konzepte, die hilfreich sind, wenn Sie das Änderungsmanagement (oder nur das Formeländerungsmanagement) zum Verwalten von Formeln und Stücklisten verwenden:
 
 - Für jede [Produktentwicklungskategorie](engineering-versions-product-category.md) können Sie die Produktionsart (Stückliste, Formel oder Planungsposition) angeben. Sie können auch angeben, ob für Produkte, die diese Kategorie verwenden, eine Unterstützung des Artikelgewichts erforderlich ist.
 - Co-Produkte und Nebenprodukte sind keine technischen Produkte. Daher sind sie nicht versioniert. Wenn Sie sie ändern müssen, erstellen Sie einfach ein neues Produkt. Dieser Ansatz erleichtert die Wartung.

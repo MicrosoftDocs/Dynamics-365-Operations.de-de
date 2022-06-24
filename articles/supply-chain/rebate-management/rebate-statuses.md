@@ -1,6 +1,6 @@
 ---
 title: Rückvergütungsstatus
-description: In diesem Thema wird beschrieben, wie Sie Rückvergütungsstatus festlegen. Mit dem Rückvergütungsstatus können Sie den Status jedes Deals verfolgen. Sie können sie auch für Berichts- und Abfragezwecke verwenden.
+description: In diesem Artikel wird beschrieben, wie Sie Rückvergütungsstatus festlegen. Mit dem Rückvergütungsstatus können Sie den Status jedes Deals verfolgen. Sie können sie auch für Berichts- und Abfragezwecke verwenden.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 47aa3dbd382c9c74e6ac7d731b55430d4be63dec
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 86da2dfe3d398ac12dcff45b579a572e31d6a90d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692588"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901878"
 ---
 # <a name="rebate-statuses"></a>Rückvergütungsstatus
 

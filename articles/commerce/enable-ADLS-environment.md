@@ -1,6 +1,6 @@
 ---
 title: Azure Data Lake Storage in einer Dynamics 365 Commerce-Umgebung aktivieren
-description: Dieses Thema enthält Anweisungen zum Verbinden einer Azure Data Lake Storage Gen2-Lösung mit dem Entitätsspeicher einer Dynamics 365 Commerce-Umgebung. Dies ist ein erforderlicher Schritt, bevor Produktempfehlungen aktiviert werden.
+description: Dieser Artikel enthält Anweisungen zum Verbinden einer Azure Data Lake Storage Gen2-Lösung mit dem Entitätsspeicher einer Dynamics 365 Commerce-Umgebung. Dies ist ein erforderlicher Schritt, bevor Produktempfehlungen aktiviert werden.
 author: bebeale
 ms.date: 08/31/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c96c29a4d9639b02e6a60ad938b7e06f7d500c68
-ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
+ms.openlocfilehash: 6e0c84dd6b173a111b70a8adb6036be946149f7c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466291"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885170"
 ---
 # <a name="enable-azure-data-lake-storage-in-a-dynamics-365-commerce-environment"></a>Azure Data Lake Storage in einer Dynamics 365 Commerce-Umgebung aktivieren
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält Anweisungen zum Verbinden einer Azure Data Lake Storage Gen2-Lösung mit dem Entitätsspeicher einer Dynamics 365 Commerce-Umgebung. Dies ist ein erforderlicher Schritt, bevor Produktempfehlungen aktiviert werden.
+Dieser Artikel enthält Anweisungen zum Verbinden einer Azure Data Lake Storage Gen2-Lösung mit dem Entitätsspeicher einer Dynamics 365 Commerce-Umgebung. Dies ist ein erforderlicher Schritt, bevor Produktempfehlungen aktiviert werden.
 
 In der Dynamics 365 Commerce-Lösung werden die zum Berechnen von Empfehlungen, Produkten und Buchungen erforderlichen Daten im Entitätsspeicher der Umgebung aggregiert. Um diese Daten für andere Dynamics 365-Dienste wie Datenanalyse, Business Intelligence und personalisierte Empfehlungen zugänglich zu machen, muss die Umgebung mit einer kundeneigenen Azure Data Lake Storage Gen2-Lösung verbunden werden.
 

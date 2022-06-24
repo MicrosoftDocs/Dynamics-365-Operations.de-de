@@ -1,6 +1,6 @@
 ---
 title: Lagerplatz-Produktdimensionsmischung
-description: Dieses Thema enthält Informationen zur Lagerplatz-Produktdimensionsmischung. Diese Lagerplatzprofilfunktion hilft bei der Verbesserung der Standortverwaltung, wenn Produktvarianten oder Produkte mit Dimensionen verwendet werden, z. B. in der Modebranche. Hier können Sie entscheiden, ob Konfigurationen, Farben, Stile und Größen für ein bestimmtes Lagerplatzprofil gemischt werden können oder ob nur eine dieser Dimensionen oder eine Kombination davon an demselben Lagerplatz platziert werden kann.
+description: Dieser Artikel enthält Informationen zur Lagerplatz-Produktdimensionsmischung. Diese Lagerplatzprofilfunktion hilft bei der Verbesserung der Standortverwaltung, wenn Produktvarianten oder Produkte mit Dimensionen verwendet werden, z. B. in der Modebranche. Hier können Sie entscheiden, ob Konfigurationen, Farben, Stile und Größen für ein bestimmtes Lagerplatzprofil gemischt werden können oder ob nur eine dieser Dimensionen oder eine Kombination davon an demselben Lagerplatz platziert werden kann.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 031b92f827979c01dbf0208ba21ae827fb13920b
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9daf6061d56ef004753114aaffa8eb580cea1186
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103487"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885724"
 ---
 # <a name="location-product-dimension-mixing"></a>Lagerplatz-Produktdimensionsmischung
 
@@ -28,7 +28,7 @@ Die Lagerplatz-Produktdimensionsmischung ist eine Lagerplatzprofilfunktion, die 
 
 ## <a name="turn-the-location-product-dimension-mixing-feature-on-or-off"></a>Funktion für Lagerplatz-Produktdimensionsmischung aktivieren oder deaktiveren
 
-Um die Funktionalität zu verwenden, die in diesem Thema beschrieben wird, die Funktion *Lagerplatz-Produktdimensionsmischung* für Ihr System aktiviert werden. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Lagerplatz-Produktdimensionsmischung* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
+Um die Funktionalität zu verwenden, die in diesem Artikel beschrieben wird, die Funktion *Lagerplatz-Produktdimensionsmischung* für Ihr System aktiviert werden. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Lagerplatz-Produktdimensionsmischung* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ## <a name="setup"></a>Einrichtung
 
@@ -44,7 +44,7 @@ Jedem Standort im Lagerort muss ein Lagerplatzprofil zugeordnet sein, das die Ei
     > [!NOTE]
     > Sie können diese Option nur dann auf *Ja* festlegen, wenn die Option **Gemischte Artikel zulassen** auf *Nein* festgelegt ist.
 
-1. Legen Sie im Inforegister **Produktdimensionsmischung zulässig** die Option **Größe** auf *Ja* fest. In dem in diesem Thema beschriebenen Szenario kann das Mischen nur für Produkte mit unterschiedlichen Dimensionen der **Größe** durchgeführt werden. Es stehen jedoch auch andere Optionen zur Verfügung.
+1. Legen Sie im Inforegister **Produktdimensionsmischung zulässig** die Option **Größe** auf *Ja* fest. In dem in diesem Artikel beschriebenen Szenario kann das Mischen nur für Produkte mit unterschiedlichen Dimensionen der **Größe** durchgeführt werden. Es stehen jedoch auch andere Optionen zur Verfügung.
 1. Wählen Sie **Speichern** aus.
 
 ### <a name="create-a-new-product-master-and-product-variants"></a>Einen neuen Produktmaster und Produktvarianten erstellen

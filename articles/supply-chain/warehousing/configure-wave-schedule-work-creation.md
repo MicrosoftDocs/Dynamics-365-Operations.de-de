@@ -1,6 +1,6 @@
 ---
-title: Planen Sie der Arbeitserstellung während der Welle
-description: In diesem Thema wird beschrieben, wie Sie die Wellenverarbeitungsmethode „Arbeitserstellung planen“ einrichten und verwenden.
+title: Arbeitserstellung während Zyklus planen
+description: In diesem Artikel wird beschrieben, wie Sie die Wellenverarbeitungsmethode „Arbeitserstellung planen“ einrichten und verwenden.
 author: Mirzaab
 ms.date: 01/14/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c955e7275c0bdc12dc206dde1d7e390f16270148
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 8b4505d66c37134bc8f672b38d195f4f677df9bc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691130"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852069"
 ---
 # <a name="schedule-work-creation-during-wave"></a>Planen Sie der Arbeitserstellung während der Welle
 
@@ -30,7 +30,7 @@ Wenn die Funktionalität aktiviert ist, werden geplante Arbeiten automatisch ers
 
 ## <a name="turn-on-the-scheduled-work-creation-features-in-feature-management"></a>Funktionen zur geplanten Arbeitserstellung in der Funktionsverwaltung aktivieren
 
-Um die in diesem Thema beschriebenen Funktionen nutzen zu können, müssen sie für Ihr System aktiviert sein. Benutzen Sie den Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um die folgenden Funktionen in der folgenden Reihenfolge zu aktivieren:
+Um die in diesem Artikel beschriebenen Funktionen nutzen zu können, müssen sie für Ihr System aktiviert sein. Benutzen Sie den Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um die folgenden Funktionen in der folgenden Reihenfolge zu aktivieren:
 
 1. **Organisationsweite Arbeitssperre** – Erforderlich für die manuelle und automatische Konfiguration der geplanten Arbeitserstellung. (Ab Supply Chain Management Version 10.0.21 ist diese Funktion obligatorisch, daher ist sie standardmäßig aktiviert und kann nicht wieder deaktiviert werden.)
 1. **Arbeitserstellung planen** – Erforderlich für die manuelle und automatische Konfiguration der geplanten Arbeitserstellung.

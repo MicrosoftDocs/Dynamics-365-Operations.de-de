@@ -1,6 +1,6 @@
 ---
 title: B2B-Geschäftspartner mithilfe von Kundenhierarchien verstehen
-description: In diesem Thema wird beschrieben, wie Sie Kundenhierarchien zur Verwaltung von Geschäftspartnern für Business-to-Business(B2B)-E-Commerce-Sites von Microsoft Dynamics 365 Commerce verwenden.
+description: In diesem Artikel wird beschrieben, wie Sie Kundenhierarchien zur Verwaltung von Geschäftspartnern für Business-to-Business(B2B)-E-Commerce-Sites von Microsoft Dynamics 365 Commerce verwenden.
 author: josaw1
 ms.date: 02/16/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 70acdf469be2fcddd9e2bf755e958c1b20ee2fcf
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ddd02045b5df3ce20160a4feaa23339475823d3d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686570"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864980"
 ---
 # <a name="manage-b2b-business-partners-using-customer-hierarchies"></a>B2B-Geschäftspartner mithilfe von Kundenhierarchien verstehen
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Kundenhierarchien zur Verwaltung von Geschäftspartnern für Business-to-Business(B2B)-E-Commerce-Sites von Microsoft Dynamics 365 Commerce verwenden.
+In diesem Artikel wird beschrieben, wie Sie Kundenhierarchien zur Verwaltung von Geschäftspartnern für Business-to-Business(B2B)-E-Commerce-Sites von Microsoft Dynamics 365 Commerce verwenden.
 
 In der Commerce-Zentralverwaltung wird eine *Kundenhierarchie*-Entität verwendet, um die Geschäftspartnerorganisationen darzustellen, die Ihre B2B-E-Commerce-Site verwenden werden. Bevor Sie mit der Verwendung von Kundenhierarchien zur Verwaltung von Geschäftspartnern beginnen können, müssen Sie die B2B-E-Commerce-Funktionen in der Commerce-Zentralverwaltung aktivieren und dann einen Nummernkreis für die Kundenhierarchie festlegen.
 

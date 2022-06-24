@@ -1,6 +1,6 @@
 ---
 title: Seriennummergesteuerte Produkte in POS zurückgeben
-description: In diesem Thema werden die Funktionen zum Validieren von Artikeln mit Seriennummer als Teil des Rückgabeprozesses in der Microsoft Dynamics 365 Commerce Point-of-Sale-Anwendung (POS) beschrieben.
+description: In diesem Artikel werden die Funktionen zum Validieren von Artikeln mit Seriennummer als Teil des Rückgabeprozesses in der Microsoft Dynamics 365 Commerce Point-of-Sale-Anwendung (POS) beschrieben.
 author: hhainesms
 ms.date: 06/01/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 179d66e19c7fa81d587ea920b1c71468ec070177d7e7e68e45c2b58da2f9f5af
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b2af301180dc2284400b887ce36357660bdd86fa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716347"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860320"
 ---
 # <a name="return-serial-numbercontrolled-products-in-pos"></a>Seriennummergesteuerte Produkte in POS zurückgeben
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden die Funktionen zum Validieren von Artikeln mit Seriennummer als Teil des Rückgabeprozesses in der Microsoft Dynamics 365 Commerce Point-of-Sale-Anwendung (POS) beschrieben.
+In diesem Artikel werden die Funktionen zum Validieren von Artikeln mit Seriennummer als Teil des Rückgabeprozesses in der Microsoft Dynamics 365 Commerce Point-of-Sale-Anwendung (POS) beschrieben.
 
 > [!NOTE]
 > In der Commerce-Version 10.0.20 und höher wird eine neue Funktion mit dem Namen **Einheitliche Retourenbearbeitungserfahrung in POS** verfügbar. Um die Seriennummernvalidierung während der Retourenbearbeitung in POS zu verwenden, müssen Sie diese Funktion aktivieren. Informationen zu anderen Funktionen, die diese Funktion bietet, wenn sie aktiviert ist, finden Sie unter [Retouren im POS erstellen)](POS-returns.md).

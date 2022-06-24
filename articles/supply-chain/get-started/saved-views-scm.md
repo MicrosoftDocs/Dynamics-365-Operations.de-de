@@ -1,6 +1,6 @@
 ---
 title: Gespeicherte Standardansichten für Supply Chain Management
-description: In diesem Thema werden die verfügbaren gespeicherten Standardansichten beschrieben und deren Aktivierung erläutert.
+description: In diesem Artikel werden die verfügbaren gespeicherten Standardansichten beschrieben und deren Aktivierung erläutert.
 author: kamaybac
 ms.date: 02/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 0709574ea44fcf841321044da31781862fcf1420
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 92ff2dfc9cd8b742a7b086e540bd2c527833254d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103687"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887557"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Gespeicherte Standardansichten für Supply Chain Management
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management enthält mehrere gespeicherte Ansichten, die Sie nach Bedarf aktivieren und verwenden können. Einige dieser gespeicherten Standardansichten sind optimiert und für eine bestimmte Rolle oder Aufgabe benannt (z. B. „Qualitätskontrolle“ oder „Eingang“). Andere sind so optimiert, dass sie nur die Felder und Einstellungen enthalten, die laut Microsoft-Nutzungsstatistiken am häufigsten von Kunden verwendet werden. Diese gespeicherten Ansichten werden normalerweise als *vereinfachte* Ansichten bezeichnet. In diesem Thema werden die verfügbaren gespeicherten Standardansichten beschrieben und deren Aktivierung und Anpassung erläutert.
+Microsoft Dynamics 365 Supply Chain Management enthält mehrere gespeicherte Ansichten, die Sie nach Bedarf aktivieren und verwenden können. Einige dieser gespeicherten Standardansichten sind optimiert und für eine bestimmte Rolle oder Aufgabe benannt (z. B. „Qualitätskontrolle“ oder „Eingang“). Andere sind so optimiert, dass sie nur die Felder und Einstellungen enthalten, die laut Microsoft-Nutzungsstatistiken am häufigsten von Kunden verwendet werden. Diese gespeicherten Ansichten werden normalerweise als *vereinfachte* Ansichten bezeichnet. In diesem Artikel werden die verfügbaren gespeicherten Standardansichten beschrieben und deren Aktivierung und Anpassung erläutert.
 
 Ausführliche Informationen zum Arbeiten mit gespeicherten Ansichten, einschließlich der gespeicherten Standardansichten, nach dem Aktivieren finden Sie unter [Gespeicherte Ansichten](../../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json).
 
@@ -39,7 +39,7 @@ Weitere Informationen zum Anpassen und Umbenennen gespeicherter Ansichten finden
 
 Um alle gespeicherten Ansichten zu verwenden, ob Sie die gespeicherten Standardansichten letztendlich nutzen oder nicht, müssen Sie die Funktion *Gespeicherte Ansichten* in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktivieren (ab Version 10.0.21 ist diese Funktion standardgemäß aktiviert).
 
-Die verbleibenden Abschnitte dieses Themas enthalten Tabellen, in denen die gespeicherten Standardansichten beschrieben werden, die derzeit für jedes relevante Modul verfügbar sind. Jede Tabelle enthält den Namen jeder gespeicherten Ansicht, die Seite, auf der Sie sie finden, und eine Beschreibung. Jede Tabelle zeigt außerdem den Namen der Funktion an, in der die gespeicherte Ansicht enthalten ist. Um eine gespeicherte Standardansicht in Ihrem System anzuzeigen, müssen Sie die angegebene Funktion in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktivieren. Ab Version 10.0.25 sind alle aufgeführten Ansichten standardmäßig aktiviert.
+Die verbleibenden Abschnitte dieses Artikels enthalten Tabellen, in denen die gespeicherten Standardansichten beschrieben werden, die derzeit für jedes relevante Modul verfügbar sind. Jede Tabelle enthält den Namen jeder gespeicherten Ansicht, die Seite, auf der Sie sie finden, und eine Beschreibung. Jede Tabelle zeigt außerdem den Namen der Funktion an, in der die gespeicherte Ansicht enthalten ist. Um eine gespeicherte Standardansicht in Ihrem System anzuzeigen, müssen Sie die angegebene Funktion in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktivieren. Ab Version 10.0.25 sind alle aufgeführten Ansichten standardmäßig aktiviert.
 
 ## <a name="saved-views-for-the-inventory-management-module"></a>Gespeicherte Ansichten für das Modul „Bestandsverwaltung“
 

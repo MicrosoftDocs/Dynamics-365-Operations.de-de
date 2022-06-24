@@ -1,6 +1,6 @@
 ---
 title: IoT-Intelligenz-Add-In in LCS installieren
-description: In diesem Thema wird erläutert, wie Sie das IoT-Intelligenz-Add-In in Microsoft Dynamics Lifecycle Services (LCS) installieren.
+description: In diesem Artikel wird erläutert, wie Sie das IoT-Intelligenz-Add-In in Microsoft Dynamics Lifecycle Services (LCS) installieren.
 author: johanhoffmann
 ms.date: 07/07/2020
 ms.topic: article
@@ -14,25 +14,25 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 12ffa71dc1c2badaffdc2e419a47d855635016f2
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 52fe4c4a79378aca5f1e64c8b3f4fa85199c9911
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679022"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887485"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>IoT-Intelligenz-Add-In in LCS installieren
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie das IoT-Intelligenz-Add-In in Microsoft Dynamics Lifecycle Services (LCS) installieren. Beachten Sie, dass Add-Ins nicht in einer Demo-/Testversionsumgebung installiert werden können. Bevor Sie das Add-In installieren können, müssen Sie die [Azure-Ressourcen erstellen](iot-azure-setup.md).
+In diesem Artikel wird erläutert, wie Sie das IoT-Intelligenz-Add-In in Microsoft Dynamics Lifecycle Services (LCS) installieren. Beachten Sie, dass Add-Ins nicht in einer Demo-/Testversionsumgebung installiert werden können. Bevor Sie das Add-In installieren können, müssen Sie die [Azure-Ressourcen erstellen](iot-azure-setup.md).
 
 Sie können IoT-Intelligenz einrichten und konfigurieren, ohne Code schreiben zu müssen. Hier sind die grundlegenden Schritte:
 
 1. [Einrichten von Azure-Ressourcen](iot-azure-setup.md) – Erstellen Sie einen IoT-Hub, einen Redis Cache und einen Schlüsseltresor, auf den über Supply Chain Management zugegriffen werden kann.
 2. [Nachrichtenschemaformate für IoT Hub](iot-schema-format.md) – Konfigurieren Sie Ihre Geräte zum Senden von Nachrichten an IoT Hub und definieren Sie das Nachrichtenformat JavaScript Object Notation (JSON).
 3. Aktivieren Sie in der Funktionsverwaltung das IoT-Intelligenz-Funktions-Flag.
-4. Das IoT-Intelligenz-Add-In in Microsoft Dynamics Lifecycle Services (LCS) installieren – Installieren Sie das Add-In in LCS und konfigurieren Sie die Azure-Geheimnisse (wie in diesem Thema beschrieben).
+4. Das IoT-Intelligenz-Add-In in Microsoft Dynamics Lifecycle Services (LCS) installieren – Installieren Sie das Add-In in LCS und konfigurieren Sie die Azure-Geheimnisse (wie in diesem Artikel beschrieben).
 5. [Metriken einrichten](iot-metrics-setup.md) – Richten Sie Metriken im Supply Chain Management ein.
 6. [Szenario-Einrichtung](iot-scenario-setup.md) – Richten Sie die Szenarien im Supply Chain Management ein.
 

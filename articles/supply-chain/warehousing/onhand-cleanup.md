@@ -1,6 +1,6 @@
 ---
-title: Einzelvorgang zur Eingangsbereinigung bei der Lagerortverwaltung
-description: In diesem Thema wird der Bereinigungsjob für vorhandene Einträge beschrieben, mit dem die Systemleistung verbessert werden kann, indem verwandte, aber nicht benötigte Datensätze identifiziert und gelöscht werden.
+title: Einzelvorgang zur Eingangsbereinigung in der Lagerortverwaltung
+description: In diesem Artikel wird der Bereinigungsjob für vorhandene Einträge beschrieben, mit dem die Systemleistung verbessert werden kann, indem verwandte, aber nicht benötigte Datensätze identifiziert und gelöscht werden.
 author: perlynne
 ms.date: 04/23/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: b2bdfb7fa0c9c4d9e1f630a41357dc405f0082bc
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 7f054f4f479affe8ca2e041c77bd6fd11d51378e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103862"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900505"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Einzelvorgang zur Eingangsbereinigung bei der Lagerortverwaltung
 
@@ -26,7 +26,7 @@ ms.locfileid: "8103862"
 
 Die Leistung von Abfragen, die zur Berechnung des Lagerbestands verwendet werden, wird durch die Anzahl der Datensätze in den beteiligten Tabellen beeinflusst. Eine Möglichkeit zur Verbesserung der Leistung besteht darin, die Anzahl der Datensätze zu verringern, die die Datenbank berücksichtigen muss.
 
-In diesem Thema wird der Bereinigungsjob für vorhandene Einträge beschrieben, mit dem nicht benötigte Datensätze in den Tabellen InventSum und WHSInventReserve gelöscht werden. In diesen Tabellen werden Informationen zu Artikeln gespeichert, die für die Lagerverwaltungsverarbeitung aktiviert sind. (Diese Elemente werden als WHS-Elemente bezeichnet.) Das Löschen dieser Datensätze kann die Leistung der vorhandenen Berechnungen erheblich verbessern.
+In diesem Artikel wird der Bereinigungsjob für vorhandene Einträge beschrieben, mit dem nicht benötigte Datensätze in den Tabellen InventSum und WHSInventReserve gelöscht werden. In diesen Tabellen werden Informationen zu Artikeln gespeichert, die für die Lagerverwaltungsverarbeitung aktiviert sind. (Diese Elemente werden als WHS-Elemente bezeichnet.) Das Löschen dieser Datensätze kann die Leistung der vorhandenen Berechnungen erheblich verbessern.
 
 ## <a name="what-the-cleanup-job-does"></a>Was macht der Bereinigungsjob
 

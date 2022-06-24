@@ -1,6 +1,6 @@
 ---
 title: Sicherheitsbestandserfassung verwenden, um die Mindestdeckung für Artikel zu aktualisieren
-description: In diesem Thema wird beschrieben, wie Sie die Sicherheitsbestandserfassung verwenden, um die Sicherheitsbestandsmenge für Artikel zu aktualisieren, indem Vorschläge zur Mindestdeckung basierend auf historischen Transaktionen berechnet werden.
+description: In diesem Artikel wird beschrieben, wie Sie die Sicherheitsbestandserfassung verwenden, um die Sicherheitsbestandsmenge für Artikel zu aktualisieren, indem Vorschläge zur Mindestdeckung basierend auf historischen Transaktionen berechnet werden.
 author: t-benebo
 ms.date: 10/28/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-28
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 391f741ee08eb0624e80f5c297009c527e50c14c
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 385144738b83fcf6873eae5204b4784d6ecd5b80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468537"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851768"
 ---
 # <a name="use-the-safety-stock-journal-to-update-minimum-coverage-for-items"></a>Sicherheitsbestandserfassung verwenden, um die Mindestdeckung für Artikel zu aktualisieren
 
@@ -24,7 +24,7 @@ ms.locfileid: "8468537"
 
 Durch Sicherheitslagerbestand wird eine zusätzliche Menge eines Artikels angegeben, der im Bestand gehalten wird, um das Risiko zu verringern, dass der Artikel nicht mehr vorrätig ist. Sicherheitslagerbestand wird als Ausgleichsbestand verwendet, für den Fall das Aufträge eintreffen, der Lieferant aber nicht in der Lage ist, das angeforderte Lieferdatum des Debitors einzuhalten.
 
-Dieses Thema beschreibt, wie man die Sicherheitsbestanderfassung verwendet, um basierend auf früheren Transaktionen Vorschläge zur Mindestdeckung zu berechnen, und dann die Artikeldeckung mit dem Vorschlag aktualisiert.
+Dieser Artikel beschreibt, wie man die Sicherheitsbestanderfassung verwendet, um basierend auf früheren Transaktionen Vorschläge zur Mindestdeckung zu berechnen, und dann die Artikeldeckung mit dem Vorschlag aktualisiert.
 
 ## <a name="overview-of-minimum-coverage-usage"></a>Übersicht über die Mindestdeckungsnutzung
 
@@ -43,7 +43,7 @@ Der **Minimum**-Wert kann auf drei Arten eingestellt werden:
 
 Sicherheitsbestandserfassungen werden verwendet, um eine vorgeschlagene Mindestmenge basierend auf der historischen Verwendung eines Artikels zu berechnen, entweder für Min./Max.-Zwecke oder für Bestandsplanzwecke. Die historische Nutzung stellt alle Verbrauchstransaktionen während eines bestimmten Zeitraums dar. Diese Verbrauchstransaktionen umfassen Auftragstransaktionen und Bestandsanpassungen. Die Berechnungen identifizieren auch die Auswirkungen der vorgeschlagenen Mindestmenge auf den Bestandswert und die Veränderung des Bestandswerts im Vergleich zu den aktuellen Mindestmengen.
 
-Jede Sicherheitsbestandserfassungsposition repräsentiert einen Artikel und seine Deckungsdimensionen. Diese Erfassungspositionen werden auf der Seite **Positionen zur Erfassung des Sicherheitsbestands** erstellt und gezeigt (**Produktprogrammplanung \> Produktprogrammplanung \> Ausführen \> Sicherheitslagerbestands-Berechnung**). Der Geschäftsprozess zur Verwendung der Sicherheitsbestandserfassung zur Berechnung der vorgeschlagenen Mindestmengen wird weiter unten in diesem Thema beschrieben.
+Jede Sicherheitsbestandserfassungsposition repräsentiert einen Artikel und seine Deckungsdimensionen. Diese Erfassungspositionen werden auf der Seite **Positionen zur Erfassung des Sicherheitsbestands** erstellt und gezeigt (**Produktprogrammplanung \> Produktprogrammplanung \> Ausführen \> Sicherheitslagerbestands-Berechnung**). Der Geschäftsprozess zur Verwendung der Sicherheitsbestandserfassung zur Berechnung der vorgeschlagenen Mindestmengen wird weiter unten in diesem Artikel beschrieben.
 
 Der Planer verwendet eine Sicherheitsbestandserfassung, um vorgeschlagene Mindestmengen für ausgewählte Artikel basierend auf dem historischen Verbrauch während ausgewählter Zeiträume zu berechnen. Die vorgeschlagenen Mindestwerte können bei Bedarf manuell überschrieben werden, und Sie können die möglichen Auswirkungen der vorgeschlagenen Mindestwerte auf den Bestandswert überprüfen. Beim Buchen der Erfassung werden die zugehörigen Mindestmengen in der Artikeldeckung automatisch aktualisiert.
 
@@ -89,7 +89,7 @@ Führen Sie diese Schritte aus, um automatisch Erfassungspositionen zu generiere
 
     - **Von Datum** – Wählen Sie das Startdatum des Zeitraums, für den die Abgänge in die Berechnung einfließen sollen.
     - **Bis Datum** – Wählen Sie das Enddatum des Zeitraums, für den die Abgänge in diese Berechnung einfließen sollen. Zwischen Start- und Enddatum müssen mindestens zwei Monate liegen.
-    - **Standardabweichung berechnen** – Setzen Sie diese Option auf *Ja*, um die Standardabweichung zu berechnen. Sie müssen diese Option auf *Ja* setzen, um die Option **Verwendung der Leistungsebene** zu benutzen, wenn Sie den Vorschlag berechnen (wie weiter unten in diesem Thema beschrieben).
+    - **Standardabweichung berechnen** – Setzen Sie diese Option auf *Ja*, um die Standardabweichung zu berechnen. Sie müssen diese Option auf *Ja* setzen, um die Option **Verwendung der Leistungsebene** zu benutzen, wenn Sie den Vorschlag berechnen (wie weiter unten in diesem Artikel beschrieben).
 
 1. Im Inforegister **Einzubeziehende Datensätze** können Sie Filter und Einschränkungen einrichten, um zu definieren, welche Artikel aufgenommen werden sollen. (Sie können beispielsweise filtern nach dem **Dispositionssteuerungsgruppe**-Wert.) Wählen Sie **Filter**, um ein standardmäßiges Dialogfeld des Abfrageeditors zu öffnen, in dem Sie Auswahlkriterien, Sortierkriterien und Verknüpfungen definieren können. Die Felder funktionieren genauso wie bei anderen Arten von Abfragen in Microsoft Dynamics 365 Supply Chain Management.
 1. Im Inforegister **Im Hintergrund ausführen** wählen Sie aus, ob der Auftrag im Batch-Modus ausgeführt werden soll, und/oder richten einen wiederkehrenden Zeitplan ein. Die Felder funktionieren genauso wie bei anderen Arten von [Hintergrund-Jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) im Supply Chain Management.
@@ -110,7 +110,7 @@ In diesem Schritt werden ein vorgeschlagener Mindestwert für jede Erfassungspos
 Die angezeigten Berechnungen wirken sich nicht auf die tatsächlichen Mindestmengenwerte für jedes Produkt aus, bis Sie **Buchen** im Aktivitätsbereich auswählen. Zu diesem Zeitpunkt werden die **Neue Mindestmenge**-Werte auf jedes Produkt angewendet.
 
 1. Gehen Sie zu **Produktprogrammplanung \> Produktprogrammplanung \> Ausführen \> Sicherheitslagerbestands-Berechnung**.
-1. Öffnen Sie die Erfassung, um einen Vorschlag zu berechnen. Alternativ können Sie eine neue Erfassung erstellen, wie weiter oben in diesem Thema beschrieben.
+1. Öffnen Sie die Erfassung, um einen Vorschlag zu berechnen. Alternativ können Sie eine neue Erfassung erstellen, wie weiter oben in diesem Artikel beschrieben.
 1. Wählen Sie auf dem Inforegister **Erfassungspositionen** in der Werkzeugleiste **Vorschlag ermitteln**. (Sie müssen keine Positionen auswählen.)
 1. Legen Sie im Dialogfeld **Vorschlag für Mindestlagerbestand ermitteln** die folgenden Felder fest:
 

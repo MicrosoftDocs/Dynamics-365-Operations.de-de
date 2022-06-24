@@ -1,6 +1,6 @@
 ---
 title: Einführung in funktionale Standorte
-description: Dieses Thema bietet einen Überblick über funktionale Standorte in Asset Management.
+description: Dieser Artikel bietet einen Überblick über funktionale Standorte in Anlagenverwaltung.
 author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b0cb76a05f0f19d3e57d1f79751e8bc5870b3c331aa4d1c37ec8dfde0a3c6d5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4a1c8c4db9aee68584ab35949745132091a34a58
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767554"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882836"
 ---
 # <a name="introduction-to-functional-locations"></a>Einführung in funktionale Standorte
 
@@ -30,7 +30,7 @@ ms.locfileid: "6767554"
 
  
 
-Dieses Thema bietet einen Überblick über funktionale Standorte in Asset Management. Funktionale Standorte sind Elementen einer technischen Struktur, wie die Funktionseinheiten in einem System. Funktionale Standorte werden hierarchisch erstellt, und Sie installieren Anlagen für sie. Das Einrichten von funktionalen Standorten in Ihrem Unternehmen hängt von den Anforderungen des Unternehmens ab.
+Dieser Artikel bietet einen Überblick über funktionale Standorte in Anlagenverwaltung. Funktionale Standorte sind Elementen einer technischen Struktur, wie die Funktionseinheiten in einem System. Funktionale Standorte werden hierarchisch erstellt, und Sie installieren Anlagen für sie. Das Einrichten von funktionalen Standorten in Ihrem Unternehmen hängt von den Anforderungen des Unternehmens ab.
 
 Nachfolgend sind einige Beispiele für die Verwendung von funktionalen Standorten aufgeführt:
 

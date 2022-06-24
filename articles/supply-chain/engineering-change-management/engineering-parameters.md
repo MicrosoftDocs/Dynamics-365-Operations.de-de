@@ -1,6 +1,6 @@
 ---
 title: Parameter für die Verwaltung für technische Änderungen
-description: In diesem Thema wird erklärt, wie Sie die Funktionen der Verwaltung für technische Änderungen für Microsoft Dynamics 365 Supply Chain Management konfigurieren.
+description: In diesem Artikel wird erklärt, wie Sie die Funktionen der Verwaltung für technische Änderungen für Microsoft Dynamics 365 Supply Chain Management konfigurieren.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 106c3a79236bcb8112ecbd48e29f3f5f3148a867
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6ef4113077c538ca1a54009aacbdeaf2ccbd0232
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581007"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875509"
 ---
 # <a name="engineering-change-management-parameters"></a>Parameter für die Verwaltung für technische Änderungen
 
@@ -27,7 +27,7 @@ Die Seite **Parameter für die Verwaltung technischer Änderungen** enthält Ein
 
 ## <a name="open-the-engineering-change-management-parameters-page"></a>Öffnen Sie die Seite Parameter für technische Änderungsverwaltung
 
-Um die Seite **Parameter für die Verwaltung für technische Änderungen** zu öffnen, gehen Sie zu **Verwaltung für technische Änderungen \> Einrichten \> Parameter für die Verwaltung für technische Änderungen**. Sie können dann die Felder wie in den übrigen Abschnitten dieses Themas beschrieben festlegen.
+Um die Seite **Parameter für die Verwaltung für technische Änderungen** zu öffnen, gehen Sie zu **Verwaltung für technische Änderungen \> Einrichten \> Parameter für die Verwaltung für technische Änderungen**. Sie können dann die Felder wie in den übrigen Abschnitten dieses Artikels beschrieben festlegen.
 
 ## <a name="release-control-tab"></a>Registerkarte Freigabekontrolle
 

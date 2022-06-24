@@ -1,6 +1,6 @@
 ---
 title: Leasingobjekte in Fremdwährungen erfassen
-description: In diesem Thema wird erläutert, wie Mietverträge in anderen Währungen als der Buchhaltungs- oder Berichtswährung erfasst werden.
+description: In diesem Artikel wird erläutert, wie Mietverträge in anderen Währungen als der Buchhaltungs- oder Berichtswährung erfasst werden.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7da4ddb5939d4f950eb7f8c39a9c56edb2ec4db9
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 56c15e648d6aa515192a6f41ba06df6405ca79f2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727509"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878101"
 ---
 # <a name="record-leases-in-foreign-currencies"></a>Leasingobjekte in Fremdwährungen erfassen
 
 [!include [banner](../includes/banner.md)]
 
-Anlagenleasingkonten für Mietverträge, die in anderen Währungen als der Buchhaltungswährung oder der Berichtswährung geführt werden, werden auf der **Sachkontoeinstellung**-Seite erstellt. Alle Mietverträge sollten in ihrer Transaktionswährung eingegeben werden. Mit anderen Worten, sie sollten in der Währung eingegeben werden, die im Mietvertrag angegeben ist. In diesem Thema wird erläutert, wie Mietverträge in anderen Währungen als der Buchhaltungs- oder Berichtswährung erfasst werden.
+Anlagenleasingkonten für Mietverträge, die in anderen Währungen als der Buchhaltungswährung oder der Berichtswährung geführt werden, werden auf der **Sachkontoeinstellung**-Seite erstellt. Alle Mietverträge sollten in ihrer Transaktionswährung eingegeben werden. Mit anderen Worten, sie sollten in der Währung eingegeben werden, die im Mietvertrag angegeben ist. In diesem Artikel wird erläutert, wie Mietverträge in anderen Währungen als der Buchhaltungs- oder Berichtswährung erfasst werden.
 
 Wenn Sie einen Mietvertrag in einer Fremdwährung abschließen, wird der Vermögenswert des Nutzungsrechts am Leasingobjekt sowohl in der Rechnungswährung als auch in der Berichtswährung abgeschrieben. Diese Währungen werden auf der **Sachkontoeinstellung**-Seite konfiguriert. Dieses Verhalten wird auch im Anlagevermögen verwendet. Wenn Sie einen Mietvertrag in einer Fremdwährung erstellen, wählen Sie die Transaktionswährung im **Währung**-Feld.
 

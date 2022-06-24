@@ -1,6 +1,6 @@
 ---
-title: Hinzufügen eines Favicons
-description: In diesem Thema wird erläutert, wie ein favicon der Site hinzufügt wird.
+title: Favicon hinzufügen
+description: In diesem Artikel wird erläutert, wie ein favicon der Site hinzufügt wird.
 author: bicyclingfool
 ms.date: 08/31/2020
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 080ef4da7313bd6b9d91e616f576b3ff774509d9
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 2047a0c30c9e723c717657475a111181299aaa8d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964731"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855794"
 ---
-# <a name="add-a-favicon"></a>Hinzufügen eines Favicons
+# <a name="add-a-favicon"></a>Favicon hinzufügen
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird erläutert, wie ein favicon der Site hinzufügt wird.
+In diesem Artikel wird erläutert, wie ein favicon der Site hinzufügt wird.
 
 Ein favicon ist eine kleine Grafikdatei, die auf einer Webbrowserregisterkarte im Browserverlauf der Adressleiste sowie in Lesezeichen oder in den Favoriten angezeigt wird. Es wird empfohlen, ein favicon dem Standort hinzufügen, da es Ihre Marke darstellt und verstärkt und hilft, den Standort von anderen Websites, die Ihre Kunden suchen, zu unterscheiden.
 
-Zwar können Sie mehrere favicons von verschiedenen Größen und Dateitypen Ihrem Standort hinzufügen, dieses Thema behandelt lediglich das Hinzufügen von einem einzelnen favicon. Allerdings werden der gleiche Prozess und Ort verwendet, um weitere favicons hinzuzufügen.
+Zwar können Sie mehrere favicons von verschiedenen Größen und Dateitypen Ihrem Standort hinzufügen, Dieser Artikel behandelt lediglich das Hinzufügen von einem einzelnen favicon. Allerdings werden der gleiche Prozess und Ort verwendet, um weitere favicons hinzuzufügen.
 
 ## <a name="upload-a-favicon-to-your-sites-asset-collection"></a>Laden Sie ein favicon in die Anlagensammlung Ihrer Site hoch
 

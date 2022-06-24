@@ -1,6 +1,6 @@
 ---
 title: Sicherheitslagerbestandserfüllung für Artikel
-description: In diesem Thema wird die Sicherheitslagerbestandserfüllung behandelt und wie Sicherheitslagerbestandsmengen für Artikel eingerichtet werden.
+description: In diesem Artikel wird die Sicherheitslagerbestandserfüllung behandelt und wie Sicherheitslagerbestandsmengen für Artikel eingerichtet werden.
 author: t-benebo
 ms.date: 8/23/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c539b804198ddc5d5dac52c958a851ee55116711
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 70461ad1de94c984cb41e6b1d46af9e310a928d6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672065"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887398"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>Sicherheitslagerbestandserfüllung für Artikel
 
@@ -88,7 +88,7 @@ Wenn **Mindestbestandsfaktoren** verwendet werden, aktivieren Sie das Kontrollk�
 Das folgende Szenario veranschaulicht, wie dieser Parameter funktioniert und was die Unterschiede zwischen den Werten sind.
 
 > [!NOTE]
-> Für alle Abbildungen in diesem Thema, stellt die X-Achse den Bestand dar, die Y-Achse stellt die Tage dar, die Balken stellen den Lagerbestand dar, die Pfeile stellen Transaktionen dar, wie Auftragspositionen, Bestellpositionen oder Bestellvorschläge.
+> Für alle Abbildungen in diesem Artikel, stellt die X-Achse den Bestand dar, die Y-Achse stellt die Tage dar, die Balken stellen den Lagerbestand dar, die Pfeile stellen Transaktionen dar, wie Auftragspositionen, Bestellpositionen oder Bestellvorschläge.
 
 [![Allgemeines Szenario für die Sicherheitslagerbestandserfüllung.](media/Scenario1.png)](media/Scenario1.png)
 

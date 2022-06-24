@@ -1,6 +1,6 @@
 ---
-title: E-Commerce-Website-Übersicht
-description: Dieses Thema bietet eine Übersicht über die Unterstützung für E-Commerce-Websites in Microsoft Dynamics 365 Commerce.
+title: Übersicht über die E-Commerce-Website
+description: Dieser Artikel bietet eine Übersicht über die Unterstützung für E-Commerce-Websites in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 11/05/2020
 ms.topic: overview
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 90f0f01115b00f231af8d4ae11be1d18d379399b
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: 9b7e4d09eaa4f91478d27cbca5eaea48af86e676
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487767"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899120"
 ---
-# <a name="e-commerce-site-overview"></a>E-Commerce-Site – Übersicht
+# <a name="e-commerce-site-overview"></a>Übersicht über die E-Commerce-Website
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema bietet eine Übersicht über die Unterstützung für E-Commerce-Websites in Microsoft Dynamics 365 Commerce. Es enthält Informationen darüber, wie E-Commerce-Online-Shops in Dynamics 365 Commerce initialisiert und verwaltet werden. Es enthält auch Links zu weiteren Informationen zu Onlineshops und Informationen zum Einrichten und Konfigurieren einer E-Commerce-Website. Obwohl dieses Thema viele der Grundlagen abdeckt, behandelt es nicht alles, was zum Einrichten einer E-Commerce-Produktionswebsite erforderlich ist. Weiterführende Themen finden Sie in der Dynamics 365 Commerce-Dokumentation.
+Dieser Artikel bietet eine Übersicht über die Unterstützung für E-Commerce-Websites in Microsoft Dynamics 365 Commerce. Es enthält Informationen darüber, wie E-Commerce-Online-Shops in Dynamics 365 Commerce initialisiert und verwaltet werden. Es enthält auch Links zu weiteren Informationen zu Onlineshops und Informationen zum Einrichten und Konfigurieren einer E-Commerce-Website. Obwohl Dieser Artikel viele der Grundlagen abdeckt, behandelt es nicht alles, was zum Einrichten einer E-Commerce-Produktionswebsite erforderlich ist. Weiterführende Artikel finden Sie in der Dynamics 365 Commerce-Dokumentation.
 
 ## <a name="online-store-channel"></a>Onlineshopkanal
 
@@ -74,7 +74,7 @@ Dynamics 365 Commerce verwendet Azure Active Directory (Azure AD) business-to-co
 
 ## <a name="overview-of-the-default-site-pages"></a>Übersicht über die standardmäßigen Website-Seiten
 
-Die Websites **Standard** und **fabrikam** enthalten vorkonfigurierte Vorlagen, Fragmente und Seiten, die Ihnen den Einstieg erleichtern. Weitere Informationen finden Sie in folgenden Themen:
+Die Websites **Standard** und **fabrikam** enthalten vorkonfigurierte Vorlagen, Fragmente und Seiten, die Ihnen den Einstieg erleichtern. Weitere Informationen finden Sie in folgenden Artikeln:
 
 - [Übersicht zur Startseite](quick-tour-home-page.md)
 - [Übersicht zur Produktdetailseite](quick-tour-pdp.md)
@@ -83,7 +83,7 @@ Die Websites **Standard** und **fabrikam** enthalten vorkonfigurierte Vorlagen, 
 
 ## <a name="manage-site-settings"></a>Website-Einstellungen verwalten
 
-Informationen zum Verwalten Ihrer Website-Einstellungen finden Sie in den folgenden Themen:
+Informationen zum Verwalten Ihrer Website-Einstellungen finden Sie in den folgenden Artikeln:
 
 - [E-Commerce Benutzer und Rollen verwalten](manage-ecommerce-users-roles.md)
 - [Überlegungen zur Suchmaschinenoptimierung (SEO) für Ihre Site](search-engine-optimization-considerations.md)
@@ -92,9 +92,9 @@ Informationen zum Verwalten Ihrer Website-Einstellungen finden Sie in den folgen
 
 ## <a name="manage-site-content"></a>Website-Inhalte verwalten
 
-Informationen zum Verwalten von Website-Inhalten finden Sie in den folgenden Themen:
+Informationen zum Verwalten von Website-Inhalten finden Sie in den folgenden Artikeln:
 
-- [Seitenmodellglossar](page-elements-overview.md)
+- [Seitenmodell-Glossar](page-elements-overview.md)
 - [Dokumentstatus und -lebenszyklus](document-states-overview.md)
 - [Vorlagen und Layout](templates-layouts-overview.md)
 - [Arbeiten mit Fragmenten](work-with-fragments.md)

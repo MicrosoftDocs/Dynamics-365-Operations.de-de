@@ -1,6 +1,6 @@
 ---
 title: Digitale E-Commerce-Geschenkkarten
-description: In diesem Thema wird erläutert, wie digitale Geschenkkarten in der E-Commerce-Implementierung von Microsoft Dynamics 365 Commerce funktionieren. Zudem bietet es einen Überblick über wichtige Konfigurationsschritte.
+description: In diesem Artikel wird erläutert, wie digitale Geschenkkarten in der E-Commerce-Implementierung von Microsoft Dynamics 365 Commerce funktionieren. Zudem bietet es einen Überblick über wichtige Konfigurationsschritte.
 author: anupamar-ms
 ms.date: 05/27/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: de8811b3265bc582a055aaad1f3dea32def552f4
-ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
+ms.openlocfilehash: 60de6988f14a0dcbbb881e84a9e4d8a45ca1289a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809586"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884903"
 ---
 # <a name="e-commerce-digital-gift-cards"></a>Digitale E-Commerce-Geschenkkarten
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird erläutert, wie digitale Geschenkkarten in der E-Commerce-Implementierung von Microsoft Dynamics 365 Commerce funktionieren. Zudem bietet es einen Überblick über wichtige Konfigurationsschritte.
+In diesem Artikel wird erläutert, wie digitale Geschenkkarten in der E-Commerce-Implementierung von Microsoft Dynamics 365 Commerce funktionieren. Zudem bietet es einen Überblick über wichtige Konfigurationsschritte.
 
 In Dynamics 365 Commerce folgt der Kauf digitaler Geschenkkarten demselben Flow wie der Kauf anderer Produkte im System. Es müssen keine zusätzlichen Module konfiguriert werden. Wenn dem Warenkorb mehrere Geschenkkarten hinzugefügt werden, werden die Geschenkkartenartikel nicht in einer einzigen Verkaufsposition aggregiert. Dieses Verhalten ist erforderlich, da jede Verkaufsposition mithilfe einer separaten Geschenkkartennummer fakturiert wird.
 

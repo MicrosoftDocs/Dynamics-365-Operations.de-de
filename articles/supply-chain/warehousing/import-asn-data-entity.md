@@ -1,6 +1,6 @@
 ---
 title: Eingehende ASNs über die Entität V3-Daten importieren
-description: In diesem Thema wird erklärt, wie Sie den Import eingehender Vorabliefernotizen (ASNs) über die eingehende ASN-Datenentität verwalten.
+description: In diesem Artikel wird erklärt, wie Sie den Import eingehender Vorabliefernotizen (ASNs) über die eingehende ASN-Datenentität verwalten.
 author: GalynaFedorova
 ms.date: 05/11/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-04
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 44ec0230236451a413d483b3e9f3ddc58b49a0b0
-ms.sourcegitcommit: 90ffd763d18f97654b9dbc9e3f71c998e6094c6b
+ms.openlocfilehash: 0ac45e070d0473547c48da1380377de3d4bf60bd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740136"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907115"
 ---
 # <a name="import-inbound-asns-through-the-v3-data-entity"></a>Eingehende ASNs über die Entität V3-Daten importieren
 
@@ -26,7 +26,7 @@ Vorabliefernotizen (ASNs) benachrichtigen Sie über Lieferungen von Kreditor. Si
 
 ASNs können den Arbeitskräften am Lagerort helfen, zu erfahren, was wann eintrifft. Daher können sie sich vorbereiten. Darüber hinaus können Arbeitskräfte im Lagerort ASNs verwenden, um die Details einer Sendung mit der zugehörigen Einkaufsbestellung abzugleichen, die zuvor erstellt wurde.
 
-In diesem Thema wird eine Sammlung von Szenarien vorgestellt, die anhand von Beispielen zeigen, wie man mit ASN-Dateien arbeitet.
+In diesem Artikel wird eine Sammlung von Szenarien vorgestellt, die anhand von Beispielen zeigen, wie man mit ASN-Dateien arbeitet.
 
 > [!IMPORTANT]
 > *Der eingehende ASN*-Import gilt nur für Elemente, die für die erweiterte Lagerortverwaltung (WMS) aktiviert sind. Bevor Sie einen Lieferavis erhalten, muss eine Einkaufsbestellung im System gegen den Kreditor, der diesen Lieferavis sendet, registriert werden.

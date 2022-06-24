@@ -1,6 +1,6 @@
 ---
-title: Vergleich von Cloudfunktionen und lokalen Funktionen
-description: Das Thema zeigt Funktionen, die in Cloud und lokal unterstützt werden.
+title: Vergleich von Cloud- und On-Premises-Funktionen
+description: Der Artikel zeigt Funktionen, die in der Cloud und lokal unterstützt werden.
 author: sericks007
 ms.date: 01/14/2021
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 68082ad0ae264b76a852d8d12412af8c4ad917703441c41e67743d1b499a8d73
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4096089978032f150bf6d711711a948cf1d3232f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736221"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879774"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Vergleich von Cloud- und On-Premises-Funktionen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird ein Vergleich der Funktionen in der Cloud und lokal für die folgenden Anwendungen gezeigt:
+In diesem Artikel wird ein Vergleich der Funktionen in der Cloud und lokal für die folgenden Anwendungen gezeigt:
 
-- [Dynamics 365 Finance](cloud-prem-comparison.md#dynamics-365-finance)
+- [Dynamics 365 Finance](cloud-prem-comparison.md#dynamics-365-finance)
 - [Dynamics 365 Supply Chain Management](cloud-prem-comparison.md#dynamics-365-supply-chain-management)
 - [Dynamics 365 Commerce](cloud-prem-comparison.md#dynamics-365-commerce)
 - [Dynamics 365 Human Resources](cloud-prem-comparison.md#dynamics-365-human-resources)
@@ -36,7 +36,7 @@ Informationen zu [Entwicklungs- und Verwaltungsfunktionen](cloud-prem-comparison
 
 Die folgenden Tabellen führen die Anwendungsbereiche auf. Cloud und lokaler Support wird für die Funktion als Ganzes aufgeführt. Wo bestimmte Funktionen im Bereich gesamthaft unterschieden werden, werden die Funktionen in einer separaten Position in der Funktionsspalte aufgeführt.
 
-## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
+## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
 
 | **Bereich**             | **Funktion**                | **Cloud** | **Lokal** |
 |---------------------|-----------------------------|-----------|-----------------|

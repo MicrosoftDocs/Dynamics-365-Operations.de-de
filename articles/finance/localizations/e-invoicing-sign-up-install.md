@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4ab16652e4a50dd71a5d0b2b49b4dd79e327f7a8
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 57314058883e60599bc51d91a65b0daeae724bb7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371643"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865525"
 ---
 # <a name="sign-up-for-and-install-the-electronic-invoicing-service"></a>Melden Sie sich für den Dienst für die elektronische Rechnungsstellung an und installieren Sie ihn.
 
@@ -38,7 +38,7 @@ Um sich für RCS anzumelden, gehen Sie auf die Seite [Regulatory Configuration S
 
 ### <a name="step-2-install-the-add-in-for-microservices-in-microsoft-dynamics-lifecycle-services"></a>Schritt 2: Installieren Sie das Add-In für Microservices in Microsoft Dynamics Lifecycle Services
 
-Bei dem Dienst für die elektronische Rechnungsstellung handelt es sich um eine Reihe von Microservices, die in Microsoft-Rechenzentren gehostet werden. Standardmäßig haben Kunden der Kategorien Dynamics 365 Finance und Dynamics 365 Supply Chain Management keinen Zugriff auf den Dienst für die elektronische Rechnungsstellung. Sie müssen es als Add-In in den Microsoft Dynamics Lifecycle Services (LCS) installieren. Wenn Sie das Add-In installieren, wird Ihre Finance- oder Supply Chain Management-Umgebung in das Register der Anwendungen aufgenommen, die eine Verbindung zum Dienst für die elektronische Rechnungsstellung zulassen.
+Bei dem Dienst für die elektronische Rechnungsstellung handelt es sich um eine Reihe von Microservices, die in Microsoft-Rechenzentren gehostet werden. Standardmäßig haben Kunden von Dynamics 365 Finance und Dynamics 365 Supply Chain Management keinen Zugriff auf den Dienst für die elektronische Rechnungsstellung. Sie müssen es als Add-In in den Microsoft Dynamics Lifecycle Services (LCS) installieren. Wenn Sie das Add-In installieren, wird Ihre Finance- oder Supply Chain Management-Umgebung in das Register der Anwendungen aufgenommen, die eine Verbindung zum Dienst für die elektronische Rechnungsstellung zulassen.
 
 Um diesen Schritt abzuschließen, siehe [Installieren Sie das Add-In für Microservices in Lifecycle Services](e-invoicing-install-add-in-microservices-lcs.md).
 

@@ -1,6 +1,6 @@
 ---
 title: Sicherheitszuschläge
-description: In diesem Thema wird beschrieben, wie Sicherheitsmargen mit dem Planning Optimization Add-In für Microsoft Dynamics 365 Supply Chain Management verwendet werden können.
+description: In diesem Artikel wird beschrieben, wie Sicherheitsmargen mit dem Planning Optimization Add-In für Microsoft Dynamics 365 Supply Chain Management verwendet werden können.
 author: t-benebo
 ms.date: 09/14/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 4982e277dab826f546b0cbef8a66a379bb0f4d94
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: c792c33edea9a7f4e2973383b1fcce5b4e8ec998
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469616"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854238"
 ---
 # <a name="safety-margins"></a>Sicherheitszuschläge
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sicherheitsmargen mit dem Planning Optimization Add-In für Microsoft Dynamics 365 Supply Chain Management verwendet werden können.
+In diesem Artikel wird beschrieben, wie Sicherheitsmargen mit dem Planning Optimization Add-In für Microsoft Dynamics 365 Supply Chain Management verwendet werden können.
 
 ## <a name="safety-margins-overview"></a>Übersicht über die Sicherheitszuschläge
 

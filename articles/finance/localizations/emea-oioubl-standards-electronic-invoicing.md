@@ -1,6 +1,6 @@
 ---
 title: Unterstützte Standards für die elektronische Rechnungsstellung in Europa
-description: Dieses Thema beschreibt die Abdeckung für eine elektronische Rechnungsstellung für Europa.
+description: Dieser Artikel beschreibt die Abdeckung für eine elektronische Rechnungsstellung für Europa.
 author: mrolecki
 ms.date: 11/19/2020
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.industry: ''
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 3d41b00a6762c9985cf86b54d92b58a3e4ccdf19
-ms.sourcegitcommit: d13ea8b6baf73601a8b57548232aac84ffaba717
+ms.openlocfilehash: 6bbd2acc879447bd7a5883abffdfe0582f6f7554
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7941228"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906256"
 ---
 # <a name="supported-standards-for-electronic-invoicing-in-europe"></a>Unterstützte Standards für die elektronische Rechnungsstellung in Europa
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema beschreibt die Abdeckung für eine elektronische Rechnungsstellung für Europa. 
+Dieser Artikel beschreibt die Abdeckung für eine elektronische Rechnungsstellung für Europa. 
 
 Die Implementierung und Übernahme der EU-weiten elektronischen Rechnungsstellung ist in der [Ratsrichtlinie 2010/45/EU](https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:189:0001:0008:EN:PDF) geregelt, die für alle EU-Mitgliedstaaten gilt. Unternehmen, die von der elektronischen Rechnungsstellung profitieren wollen, müssen Vertriebsrechnungen, Freitextrechnungen, Projektrechnungen, Vertriebsgutschriften und Projektrechnungsgutschriften als .xml-Dateien an die Regierung oder andere Handelspartner schicken, die die Verwendung der elektronischen Rechnungsstellung unterstützen. Diese .xml-Dateien müssen bestimmten Standards entsprechen. Die länderspezifischen Anforderungen und ihre Implementierung kann sich zwischen EU-Mitgliedstaaten unterscheiden, aber in der Regel verwenden Sie [UBL](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=ubl) (Universal Business Language) in unterschiedlichen Versionen mit Anpassungen, ebenso wie [PEPPOL](https://www.peppol.eu)-Spezifikationen und -Zugriffspunkte für die Überprüfung und den Transport. Der Hauptvorteil von UBL ist, dass Geschäftsunterlagen für unterschiedliche Zwecke standardisiert werden können. UBL ist ein flexibler, internationaler Standard, der viele Geschäftsanforderungen unterstützt, deshalb können diese Geschäftsunterlagen über Landesgrenzen hinweg ausgetauscht werden.
 
-## <a name="electronic-invoice-formats-currently-available-in-dynamics-365-finance"></a>Derzeit in Dynamics 365 Finance verfügbare Formate der elektronischen Rechnung
+## <a name="electronic-invoice-formats-currently-available-in-dynamics-365-finance"></a>Formate der elektronischen Rechnung, die derzeit in Dynamics 365 Finance verfügbar sind
 
 Die folgenden länderspezifischen Formate elektronischer Rechnungen stehen zur Verfügung:
 

@@ -1,6 +1,6 @@
 ---
-title: Wellenverarbeitung konfigurieren – Beispiel
-description: Dieses Thema enthält ein Beispiel für die Einrichtung der Kriterien, die bestimmen, welche Arbeit für einen Lagerort generiert wird, wenn eine Welle verarbeitet wird, und ob Wellen manuell oder automatisch verarbeitet werden.
+title: Zyklusverarbeitung konfigurieren – Beispiel
+description: Dieser Artikel enthält ein Beispiel für die Einrichtung der Kriterien, die bestimmen, welche Arbeit für einen Lagerort generiert wird, wenn eine Welle verarbeitet wird, und ob Wellen manuell oder automatisch verarbeitet werden.
 author: Mirzaab
 ms.date: 03/17/2021
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39c3fecf9250ee89c22003d5dff4ea662c3042e3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 3a9fc2b9f31bc9e2f73b53a900bc9b0924410768
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572984"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860347"
 ---
-# <a name="configure-wave-processing-example"></a>Wellenverarbeitung konfigurieren – Beispiel
+# <a name="configure-wave-processing-example"></a>Zyklusverarbeitung konfigurieren – Beispiel
 
 [!include [banner](../../includes/banner.md)]
 
-Dieses Thema enthält ein Beispiel für die Einrichtung der Kriterien, die bestimmen, welche Arbeit für einen Lagerort generiert wird, wenn eine Welle verarbeitet wird, und ob Wellen manuell oder automatisch verarbeitet werden. Sie geben die Kriterien an, indem Sie Wellenvorlagen und Abfragen einrichten, die mit einer Welle mit freigegebenen Positionen in Aufträgen, Produktionsaufträgen oder in Kanban-Aufträgen übereinstimmen.
+Dieser Artikel enthält ein Beispiel für die Einrichtung der Kriterien, die bestimmen, welche Arbeit für einen Lagerort generiert wird, wenn eine Welle verarbeitet wird, und ob Wellen manuell oder automatisch verarbeitet werden. Sie geben die Kriterien an, indem Sie Wellenvorlagen und Abfragen einrichten, die mit einer Welle mit freigegebenen Positionen in Aufträgen, Produktionsaufträgen oder in Kanban-Aufträgen übereinstimmen.
 
 ## <a name="enable-sample-data"></a>Beispieldaten aktivieren
 

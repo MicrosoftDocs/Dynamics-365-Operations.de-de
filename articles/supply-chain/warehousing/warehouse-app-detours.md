@@ -1,6 +1,6 @@
 ---
 title: Umleitungen für Schritte in den Menüpunkten des Mobilgeräts konfigurieren
-description: In diesem Thema wird beschrieben, wie Umleitungen für Menüelemente konfiguriert werden, damit Mitarbeiter die aktuelle Aufgabe parken, eine andere Aufgabe ausführen und dann zur ursprünglichen Aufgabe zurückkehren können, ohne Informationen zu verlieren.
+description: In diesem Artikel wird beschrieben, wie Umleitungen für Menüelemente konfiguriert werden, damit Mitarbeiter die aktuelle Aufgabe parken, eine andere Aufgabe ausführen und dann zur ursprünglichen Aufgabe zurückkehren können, ohne Informationen zu verlieren.
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,21 +11,21 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 874abbdf7c0938a7ad4cc66e23dd01d901a1f0d3
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 69090def1bba2f64ed21cca8b6d4629083aeb0c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920347"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863591"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Umleitungen für Schritte in den Menüpunkten des Mobilgeräts konfigurieren
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Die Funktionen, die in diesem Thema beschrieben werden, gelten nur für die neue Warehouse Management Mobile-App. Sie betreffen nicht die alte Lager-App, die jetzt außer Betrieb genommen ist.
+> Die Funktionen, die in diesem Artikel beschrieben werden, gelten nur für die neue Warehouse Management Mobile-App. Sie betreffen nicht die alte Lager-App, die jetzt außer Betrieb genommen ist.
 
-In diesem Thema wird beschrieben, wie Umleitungen für Menüelemente konfiguriert werden, damit Mitarbeiter die aktuelle Aufgabe „parken“, eine andere Aufgabe ausführen und dann zur ursprünglichen Aufgabe zurückkehren können, ohne Informationen zu verlieren.
+In diesem Artikel wird beschrieben, wie Umleitungen für Menüelemente konfiguriert werden, damit Mitarbeiter die aktuelle Aufgabe "parken", eine andere Aufgabe ausführen und dann zur ursprünglichen Aufgabe zurückkehren können, ohne Informationen zu verlieren.
 
 Ein Umweg ist ein separater Menüpunkt, der von einem Schritt in einer Hauptaufgabe aus geöffnet werden kann. Am Ende des Umwegs wird der Arbeiter an den Ort zurückgebracht, an dem er die Hauptaufgabe verlassen hat. Bei der Konfiguration legen Sie den Menüpunkt fest, der als Umleitung fungieren soll. Außerdem wählen Sie aus, welche Feldwerte aus der Hauptaufgabe automatisch auf die Umleitung weitergeleitet (kopiert) und dort eingetragen werden sollen. Daher müssen Sie verstehen, an welcher Stelle im Aufgabenfluss die Umleitung für die Mitarbeiter verfügbar sein soll. Außerdem müssen Sie sicherstellen, dass die Informationen, die auf die Umleitung kopiert werden müssen, für diesen Schritt des TaskFlows verfügbar sind.
 
@@ -46,7 +46,7 @@ Bevor Sie Umleitungen für Schritte in Menüpunkten mobiler Geräte konfiguriere
     - **Module:** *Lagerortverwaltung*
     - **Funktionsname:** *Umwege über die Warehouse Management-App*
 
-    Diese Funktion wird in diesem Thema beschrieben.
+    Diese Funktion wird in diesem Artikel beschrieben.
 
 1. Aktualisieren Sie die Feldnamen in der mobilen Warehouse Management-App, indem Sie zu **Lagerverwaltung \> Einstellungen \> Mobiles Gerät \> Feldnamen der Warehouse-App** und wählen Sie **Standard-Setup erstellen**. Weitere Informationen finden Sie unter [Felder für die Warehouse Management Mobile App konfigurieren](configure-app-field-names-priorities-warehouse.md).
 1. Wiederholen Sie den vorherigen Schritt für jede juristische Person (Firma), in der Sie die mobile App Warehouse Management verwenden.
@@ -57,7 +57,7 @@ Gehen Sie wie folgt vor, um eine Umleitung von einer menüspezifischen Außerkra
 
 1. Erstellen Sie eine menüspezifische Überschreibung für das entsprechende Menü und den entsprechenden Schritt wie in [Schritttitel und Anweisungen für die mobile Warehouse Management-App anpassen](mobile-app-titles-instructions.md) beschrieben.
 1. Suchen Sie die Kombination der Werte **Schritt-ID** und **Name des Elements**, die Sie bearbeiten wollen, und wählen Sie dann den Wert in der Spalte **Schritt-ID**.
-1. Auf der angezeigten Seite, im Inforegister **Verfügbare Umleitungen (Menüpunkte)** können Sie den Menüpunkt angeben, der als Umleitung fungieren soll. Außerdem können Sie auswählen, welche Feldwerte aus der Hauptaufgabe automatisch in und aus der Umleitung kopiert werden sollten. Beispiele für die Verwendung dieser Einstellungen finden Sie in den Szenarien weiter unten in diesem Thema.
+1. Auf der angezeigten Seite, im Inforegister **Verfügbare Umleitungen (Menüpunkte)** können Sie den Menüpunkt angeben, der als Umleitung fungieren soll. Außerdem können Sie auswählen, welche Feldwerte aus der Hauptaufgabe automatisch in und aus der Umleitung kopiert werden sollten. Beispiele für die Verwendung dieser Einstellungen finden Sie in den Szenarien weiter unten in diesem Artikel.
 
 ## <a name="sample-scenario-1-sales-picking-where-a-location-inquiry-acts-as-a-detour"></a>Beispielszenario 1: Verkaufskommissionierung, bei der eine Standortanfrage als Umweg dient
 

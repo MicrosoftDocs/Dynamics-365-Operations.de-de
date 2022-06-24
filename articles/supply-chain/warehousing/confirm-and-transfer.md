@@ -1,6 +1,6 @@
 ---
 title: Bestätigen und übertragen
-description: In diesem Thema wird die Verwendung der Bestätigungs- und Übertragungsfunktion erläutert, mit der Benutzer Ladungen vom Lagerort aus versenden können, bevor sie alle mit diesen Ladungen verbundenen Arbeiten abgeschlossen haben.
+description: In diesem Artikel wird die Verwendung der Bestätigungs- und Übertragungsfunktion erläutert, mit der Benutzer Ladungen vom Lagerort aus versenden können, bevor sie alle mit diesen Ladungen verbundenen Arbeiten abgeschlossen haben.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 0d34dd1b33467aa1ea3a723e1baaf7f06285c3fa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 9257d8f9e6ed62ac0b19b0cdc8fd858e8b2f97a3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675486"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900563"
 ---
 # <a name="confirm-and-transfer"></a>Bestätigen und übertragen
 
@@ -55,11 +55,11 @@ Sie können nur Ladungen aufteilen, die alle der folgenden Kriterien erfüllen:
 
 ## <a name="turn-the-confirm-and-transfer-feature-on-or-off"></a>Schalten Sie die Bestätigungs- und Übertragungsfunktion ein oder aus
 
-Um die Funktionalität zu verwenden, die in diesem Thema beschrieben wird, die Funktion *Bestätigung und Übertragung* für Ihr System eingeschaltet werden. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Bestätigung und Übertragung* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
+Um die Funktionalität zu verwenden, die in diesem Artikel beschrieben wird, die Funktion *Bestätigung und Übertragung* für Ihr System eingeschaltet werden. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Bestätigung und Übertragung* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ## <a name="set-up-confirm-and-transfer"></a>Einrichten der Bestätigung und Übetragung
 
-Um die Funktion *Bestätigen und übertragen* verwenden zu können, müssen Sie sie in jeder relevanten Ladungsvorlage aktivieren. Darüber hinaus möchten Sie möglicherweise abhängig von den Anforderungen Ihre Arbeitsvorlagen vorbereiten, um die Funktion zu unterstützen. Wenn Sie das weiter unten in diesem Thema enthaltene Beispielszenario durcharbeiten möchten, richten Sie Ihr System wie in diesem Abschnitt beschrieben ein. (Dieses Szenario basiert auf **USMF**-Demodaten.)
+Um die Funktion *Bestätigen und übertragen* verwenden zu können, müssen Sie sie in jeder relevanten Ladungsvorlage aktivieren. Darüber hinaus möchten Sie möglicherweise abhängig von den Anforderungen Ihre Arbeitsvorlagen vorbereiten, um die Funktion zu unterstützen. Wenn Sie das weiter unten in diesem Artikel enthaltene Beispielszenario durcharbeiten möchten, richten Sie Ihr System wie in diesem Abschnitt beschrieben ein. (Dieses Szenario basiert auf **USMF**-Demodaten.)
 
 ### <a name="prepare-your-load-templates"></a>Vorbereiten Ihrer Ladungsvorlagen
 
@@ -69,7 +69,7 @@ Um die Funktion *Bestätigen und übertragen* verwenden zu können, müssen Sie 
 
 ### <a name="prepare-your-work-templates"></a>Vorbereiten Ihrer Arbeitsvorlagen
 
-Diese Einrichtung ist nicht in allen Situationen erforderlich. Das hier gezeigte Beispiel stellt sicher, dass die Arbeit durch die Lieferung unterbrochen werden kann, um das weiter unten in diesem Thema behandelte Beispielszenario zu unterstützen. Es gibt auch andere Möglichkeiten, um dieses Ergebnis zu erreichen.
+Diese Einrichtung ist nicht in allen Situationen erforderlich. Das hier gezeigte Beispiel stellt sicher, dass die Arbeit durch die Lieferung unterbrochen werden kann, um das weiter unten in diesem Artikel behandelte Beispielszenario zu unterstützen. Es gibt auch andere Möglichkeiten, um dieses Ergebnis zu erreichen.
 
 1. Gehen Sie zu **Lagerortverwaltung \> Einstellungen \> Arbeit \> Arbeitsvorlagen**.
 1. Wählen Sie im Raster im oberen Teil der Seite eine vorhandene Arbeitsvorlage aus, in der Sie die Funktion *Bestätigen und übertragen* einrichten möchten. (Wenn Sie mit den **USMF**-Demodaten arbeiten, wählen Sie die Arbeitsvorlage **51 Entnahme zu Plattform** aus.) Alternativ können Sie eine neue Arbeitsvorlage erstellen.

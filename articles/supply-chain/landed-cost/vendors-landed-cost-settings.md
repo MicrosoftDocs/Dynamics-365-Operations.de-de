@@ -1,6 +1,6 @@
 ---
 title: Lieferanteneinstellungen für kalkulierte Gesamttransportkosten hinzugefügt
-description: Dieses Thema beschreibt die neuen Felder, die der bestehenden Seite „Lieferanten“ hinzugefügt werden, wenn Sie das Modul „Gesamttransportkosten“ aktivieren. Sie verwenden diese Felder, um die Lieferanten festzulegen, die Sie zusammen mit den Funktionen für kalkulierte Gesamttransportkosten verwenden werden.
+description: Dieser Artikel beschreibt die neuen Felder, die der bestehenden Seite „Lieferanten“ hinzugefügt werden, wenn Sie das Modul „Gesamttransportkosten“ aktivieren. Sie verwenden diese Felder, um die Lieferanten festzulegen, die Sie zusammen mit den Funktionen für kalkulierte Gesamttransportkosten verwenden werden.
 author: Weijiesa
 ms.date: 12/07/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: b4e02397f7a4cdeaa21b451268b16e4fbe773612
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 84d1dee0815b036a3d411eabff49d8a08249bed3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690525"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882575"
 ---
 # <a name="vendor-settings-added-for-landed-cost"></a>Lieferanteneinstellungen für kalkulierte Gesamttransportkosten hinzugefügt
 

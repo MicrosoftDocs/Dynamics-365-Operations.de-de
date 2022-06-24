@@ -1,6 +1,6 @@
 ---
 title: Lieferart in POS ändern
-description: In diesem Thema wird beschrieben, wie Sie den Änderungsmodus des Zustellvorgangs am POS konfigurieren und verwenden.
+description: In diesem Artikel wird beschrieben, wie Sie den Änderungsmodus des Zustellvorgangs am POS konfigurieren und verwenden.
 author: hhainesms
 ms.date: 03/01/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: ef778763b26954057b83df3e963e34008819fd208a55d55e07075853ffce8b35
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 583f568164d0de70e22998bf5ded5f4616b00bd2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714039"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855820"
 ---
 # <a name="change-mode-of-delivery-in-pos"></a>Lieferart in POS ändern
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie die Funktion Liefermodus ändern in Ihrer POS-Umgebung (Point of Sale) einrichten und verwenden. 
+In diesem Artikel wird beschrieben, wie Sie die Funktion Liefermodus ändern in Ihrer POS-Umgebung (Point of Sale) einrichten und verwenden. 
 
 In Dynamics 365 Commerce Versionen 10.0.10 und höher, ist der Vorgang (647) **Lieferart ändern** verfügbar, um ihn den POS Bildschirmlayouts hinzufügen.
 

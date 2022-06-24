@@ -1,6 +1,6 @@
 ---
 title: Produkt mithilfe der Kategoriehierarchien klassifizieren
-description: In diesem Thema wird beschrieben, wie mithilfe von Kategoriehierarchien ein Produkt klassifiziert wird.
+description: In diesem Artikel wird beschrieben, wie mithilfe von Kategoriehierarchien ein Produkt klassifiziert wird.
 author: t-benebo
 ms.date: 08/02/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 857a9e69e63216f22a4e75d9606ef6ceb77f1dbc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 29b1d7dc66e50822694a20235be096431e228ce6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569624"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862626"
 ---
 # <a name="classify-a-product-using-category-hierarchies"></a>Produkt mithilfe der Kategoriehierarchien klassifizieren
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie mithilfe von Kategoriehierarchien ein Produkt klassifiziert wird. Nutzen Sie Kategoriehierarchien, um Produkte für den Export, die Beschaffung, den Verkauf oder andere Zwecke zu klassifizieren. Diese Aufgabe wird in der Regel von einem Produktmanager ausgeführt. Das Beispiel verwendet die Produktnummer M0009 im Demodatenunternehmen USMF.
+In diesem Artikel wird beschrieben, wie mithilfe von Kategoriehierarchien ein Produkt klassifiziert wird. Nutzen Sie Kategoriehierarchien, um Produkte für den Export, die Beschaffung, den Verkauf oder andere Zwecke zu klassifizieren. Diese Aufgabe wird in der Regel von einem Produktmanager ausgeführt. Das Beispiel verwendet die Produktnummer M0009 im Demodatenunternehmen USMF.
 
 1. Wechseln Sie zu **Produktinformationsverwaltung \> Produkte \> Freigegebene Produkte**.
 1. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.

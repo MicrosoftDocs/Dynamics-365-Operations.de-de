@@ -1,6 +1,6 @@
 ---
 title: Zu hohe Entnahme für Aufträge und Umlagerungsaufträge verwenden
-description: In diesem Thema wird erläutert, wie Sie die zu hohe Entnahme für Aufträge und Umlagerungsaufträge aktivieren.
+description: In diesem Artikel wird erläutert, wie Sie die zu hohe Entnahme für Aufträge und Umlagerungsaufträge aktivieren.
 author: GalynaFedorova
 ms.date: 07/06/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-07-06
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 52a4225efa88a7b9303dd611d5652f59da1612a4
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b8bbc7d532f910edfb442831d6c906f253dee06c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678407"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897283"
 ---
 # <a name="over-picking-for-sales-orders-and-transfer-orders"></a>Zu hohe Entnahme für Aufträge und Umlagerungsaufträge verwenden
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird ein Szenario vorgestellt, in dem gezeigt wird, wie Sie entweder einer bestimmten Arbeitskraft oder allen Arbeitskräften die zu hohe Entnahme ermöglichen. Der Prozess der zu hohen Entnahme ermöglicht eine kontrollierte zu hohe Entnahme während der Entnahmearbeit.
+In diesem Artikel wird ein Szenario vorgestellt, in dem gezeigt wird, wie Sie entweder einer bestimmten Arbeitskraft oder allen Arbeitskräften die zu hohe Entnahme ermöglichen. Der Prozess der zu hohen Entnahme ermöglicht eine kontrollierte zu hohe Entnahme während der Entnahmearbeit.
 
 Die zu hohe Lagerortentnahme ist ein einfaches Konzept. Das System ermöglicht es Arbeitskräften, mehr Artikel zu entnehmen, als für einen Auftrag angegeben sind. Es berücksichtigt jedoch weiterhin die auf Positionsebene für den Umlagerungsauftrag oder Auftrag festgelegte Überlieferungsgrenze. Wenn diese Grenze überschritten wird, benachrichtigt die Warehouse Management-App die Arbeitskräfte, dass sie die Überlieferungsgrenze überschreiten.
 
@@ -41,11 +41,11 @@ Die Funktion zur zu hohen Entnahme kann Arbeitskräften helfen, sich Zeit und M�
 > [!IMPORTANT]
 > Die Funktion zur zu hohen Entnahme gilt nur für die Entnahme und Verarbeitung von Aufträgen und Umlagerungsaufträgen. Die Wiederbeschaffung unterstützt die zu hohe Entnahme nicht. Wenn Wiederbeschaffungsarbeiten ausgeführt werden, erlaubt das System den Benutzern nicht, zu viel zu entnehmen.
 
-Das Szenario in diesem Thema zeigt, wie Sie die Funktion für die zu hohe Entnahme einrichten und verwenden.
+Das Szenario in diesem Artikel zeigt, wie Sie die Funktion für die zu hohe Entnahme einrichten und verwenden.
 
 ## <a name="scenario-prerequisite-make-demo-data-available"></a>Szenariovoraussetzung: Demodaten zur Verfügung stellen
 
-Das Szenario in diesem Thema verweist auf Werte und Datensätze, die in den für Microsoft Dynamics 365 Supply Chain Management bereitgestellten Standarddemodaten enthalten sind. Wenn Sie die hier angegebenen Werte während der Übungen verwenden möchten, müssen Sie in einer Umgebung arbeiten, in der die Demodaten installiert sind, und die juristische Person auf *USMF* festlegen, bevor Sie beginnen.
+Das Szenario in diesem Artikel verweist auf Werte und Datensätze, die in den für Microsoft Dynamics 365 Supply Chain Management bereitgestellten Standarddemodaten enthalten sind. Wenn Sie die hier angegebenen Werte während der Übungen verwenden möchten, müssen Sie in einer Umgebung arbeiten, in der die Demodaten installiert sind, und die juristische Person auf *USMF* festlegen, bevor Sie beginnen.
 
 ## <a name="scenario-setup"></a>Szenarioeinrichtung
 

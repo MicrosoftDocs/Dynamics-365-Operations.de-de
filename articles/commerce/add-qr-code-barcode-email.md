@@ -1,6 +1,6 @@
 ---
 title: Transaktions- und Quittungs-E-Mails einen QR-Code oder Barcode hinzufügen
-description: In diesem Thema wird erläutert, wie Sie QR-Codes und Barcodes, die Auftrags-IDs darstellen, in Transaktions- und Quittungs-E-Mails in Microsoft Dynamics 365 Commerce einfügen.
+description: In diesem Artikel wird erläutert, wie Sie QR-Codes und Barcodes, die Auftrags-IDs darstellen, in Transaktions- und Quittungs-E-Mails in Microsoft Dynamics 365 Commerce einfügen.
 author: bicyclingfool
 ms.date: 03/04/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-02-16
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 5f7b349700a4b3b43f818b30bb479e630048e8b8
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ffa0009c55b5322b209b19692952c2e0704f65c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688964"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872883"
 ---
 # <a name="add-a-qr-code-or-bar-code-to-transactional-and-receipt-emails"></a>Transaktions- und Quittungs-E-Mails einen QR-Code oder Barcode hinzufügen
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie QR-Codes und Barcodes, die Auftrags-IDs darstellen, in Transaktions- und Quittungs-E-Mails in Microsoft Dynamics 365 Commerce einfügen.
+In diesem Artikel wird erläutert, wie Sie QR-Codes und Barcodes, die Auftrags-IDs darstellen, in Transaktions- und Quittungs-E-Mails in Microsoft Dynamics 365 Commerce einfügen.
 
 Sie können QR-Codes und Barcodes problemlos in Transaktions-E-Mails einfügen, um die Suche nach Bestellungen in einer Einzelhandelsumgebung zu beschleunigen. Um QR-Codes und Barcodes in E-Mails einzufügen, verwenden Sie ein **\<img\>**-HTML-Tag, das ein QR-Code- oder Barcode-Bild von einem Generierungs- und Rendering-Dienst anfordert. Microsoft bietet diesen Dienst nicht an. Es gibt jedoch viele kostenlose oder kostengünstige Dienste, die QR-Codes oder Barcodes bereitstellen können, die dynamisch basierend auf einem Wert generiert werden, der in einer Abfragezeichenfolge übergeben wird.
 

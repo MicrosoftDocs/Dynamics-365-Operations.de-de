@@ -1,6 +1,6 @@
 ---
-title: Datenfelder in die Steuerintegration mithilfe von Erweiterungen einfügen
-description: In diesem Thema wird erläutert, wie Sie mithilfe von X++-Erweiterungen Datenfelder in die Steuerintegration einfügen.
+title: Datenfelder mithilfe von Erweiterungen der Steuerintegration hinzufügen
+description: In diesem Artikel wird erläutert, wie Sie mithilfe von X++-Erweiterungen Datenfelder in die Steuerintegration einfügen.
 author: qire
 ms.date: 04/27/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 64c68ef6804297f86b5d9dc1933b0c16a0d42aae
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 184012dcc0b68e017bb28d8d73caa9e8415bdbfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695387"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871048"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Datenfelder in die Steuerintegration mithilfe von Erweiterungen einfügen
 
 [!include [banner](../includes/banner.md)]
 
 
-In diesem Thema wird erläutert, wie Sie mithilfe von X++-Erweiterungen Datenfelder in die Steuerintegration einfügen. Diese Felder können auf das Steuerdatenmodell des Steuerdienstes erweitert und zur Ermittlung von Steuercodes verwendet werden. Weitere Informationen finden Sie unter [Datenfelder in Steuerkonfigurationen hinzufügen](tax-service-add-data-fields-tax-configurations.md).
+In diesem Artikel wird erläutert, wie Sie mithilfe von X++-Erweiterungen Datenfelder in die Steuerintegration einfügen. Diese Felder können auf das Steuerdatenmodell des Steuerdienstes erweitert und zur Ermittlung von Steuercodes verwendet werden. Weitere Informationen finden Sie unter [Datenfelder in Steuerkonfigurationen hinzufügen](tax-service-add-data-fields-tax-configurations.md).
 
 ## <a name="data-model"></a>Datenmodell
 
@@ -359,7 +359,7 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
 In diesem Code ist `_destination` das Wrapper-Objekt, mit dem die Anforderung generiert wird, und `_source` ist das `TaxIntegrationLineObject`-Objekt.
 
 > [!NOTE]
-> Definieren Sie den Feldnamen, der im Anforderungsformular verwendet wird, als **private const str**. Die Zeichenfolge sollte genau mit dem im Thema [Datenfelder in Steuerkonfigurationen hinzufügen](tax-service-add-data-fields-tax-configurations.md) hinzugefügten Knotennamen (nicht das Etikett) übereinstimmen.
+> Definieren Sie den Feldnamen, der im Anforderungsformular verwendet wird, als **private const str**. Die Zeichenfolge sollte genau mit dem im Artikel [Datenfelder in Steuerkonfigurationen hinzufügen](tax-service-add-data-fields-tax-configurations.md) hinzugefügten Knotennamen (nicht das Etikett) übereinstimmen.
 > 
 > Legen Sie das Feld in der Methode **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** mit der **SetField**-Methode fest. Der Datentyp des zweiten Parameters sollte **Zeichenfolge** sein. Wenn der Datentyp nicht **Zeichenfolge** ist, konvertieren Sie ihn zu einer Zeichenfolge.
 > Wenn der Datentyp X++ **enum-Typ** ist, empfehlen wir die Verwendung der **enum2Symbol**-Methode zum Konvertieren des Enumerationswerts in eine Zeichenfolge. Der in der Steuerkonfiguration hinzugefügte Enumerationswert sollte genau mit dem Enumerationsnamen übereinstimmen. Im Folgenden finden Sie eine Liste der Unterschiede zwischen Enumerationswert, Etikett und Name.

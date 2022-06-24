@@ -1,6 +1,6 @@
 ---
 title: Rückvergütungen verarbeiten, überprüfen und buchen
-description: In diesem Thema wird beschrieben, wie Sie Ihre Rückvergütungsverwaltungsdeals verarbeiten, deren Rabatte berechnen, die generierten Transaktionen überprüfen, Transaktionen buchen und die Buchungen überprüfen.
+description: In diesem Artikel wird beschrieben, wie Sie Ihre Rückvergütungsverwaltungsdeals verarbeiten, deren Rabatte berechnen, die generierten Transaktionen überprüfen, Transaktionen buchen und die Buchungen überprüfen.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 524aec8025378391057275f77e31191f88e4a98b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: e63f02e5e93ec2ce8c321a20c2a0c5886edcbe42
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690273"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901936"
 ---
 # <a name="process-review-and-post-rebates"></a>Rückvergütungen verarbeiten, überprüfen und buchen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Ihre Rückvergütungsverwaltungsdeals verarbeiten, deren Rabatte berechnen, die generierten Transaktionen überprüfen, Transaktionen buchen und die Buchungen überprüfen.
+In diesem Artikel wird beschrieben, wie Sie Ihre Rückvergütungsverwaltungsdeals verarbeiten, deren Rabatte berechnen, die generierten Transaktionen überprüfen, Transaktionen buchen und die Buchungen überprüfen.
 
 ## <a name="change-the-status-of-a-deal"></a>Ändern des Status eines Deals
 
@@ -45,7 +45,7 @@ Gehen Sie zu **Rückvergütungsverwaltung \> Periodische Aufgaben \> FIFO-Einkau
 
 Sie können die Aufträge oder Bestellungen mit Quellentransaktionen entweder vor oder nach dem Erstellen eines entsprechenden Rückvergütungsverwaltungsdeals erstellen.
 
-Sie können jede Dealposition so einrichten, dass automatisch eine Rückvergütungsbereitstellung erstellt wird, indem die Lieferung oder Rechnung für einen Auftrag oder eine Bestellung gebucht wird. Legen Sie das Feld **Transaktionstyp** für die Dealposition auf *Lieferung* oder *Rechnung* fest und stellen Sie die Option **Bei Buchung verarbeiten** auf *Ja*. Wenn das Feld **Transaktionstyp** auf *Auftrag* festgelegt ist, ist die Verarbeitung bei der Buchung deaktiviert. Bei Quellentransaktionen, die nach der Aktivierung eines Deals angelegt wurden, können Sie die Bereitstellung weiterhin wie im Abschnitt [Rückvergütungsverwaltungsdeals verarbeiten](#process-deals) weiter unten in diesem Thema beschrieben verarbeiten.
+Sie können jede Dealposition so einrichten, dass automatisch eine Rückvergütungsbereitstellung erstellt wird, indem die Lieferung oder Rechnung für einen Auftrag oder eine Bestellung gebucht wird. Legen Sie das Feld **Transaktionstyp** für die Dealposition auf *Lieferung* oder *Rechnung* fest und stellen Sie die Option **Bei Buchung verarbeiten** auf *Ja*. Wenn das Feld **Transaktionstyp** auf *Auftrag* festgelegt ist, ist die Verarbeitung bei der Buchung deaktiviert. Bei Quellentransaktionen, die nach der Aktivierung eines Deals angelegt wurden, können Sie die Bereitstellung weiterhin wie im Abschnitt [Rückvergütungsverwaltungsdeals verarbeiten](#process-deals) weiter unten in diesem Artikel beschrieben verarbeiten.
 
 ### <a name="enable-price-details"></a>Preisdetails aktivieren
 

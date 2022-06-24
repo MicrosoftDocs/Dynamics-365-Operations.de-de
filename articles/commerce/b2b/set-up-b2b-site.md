@@ -1,6 +1,6 @@
 ---
-title: Eine B2B-E-Commerce-Website einrichten
-description: In diesem Thema wird beschrieben, wie Sie eine B2B-E-Commerce-Website (Business-to-Business) in Microsoft Dynamics 365 Commerce einrichten.
+title: Website für B2B-E-Commerce einrichten
+description: In diesem Artikel wird beschrieben, wie Sie eine B2B-E-Commerce-Website (Business-to-Business) in Microsoft Dynamics 365 Commerce einrichten.
 author: josaw1
 ms.date: 12/03/2021
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 31266f84270f170e172eadea75a90397c5a6e8e6
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0bcd864694ff2ad2aa211c927da4d698c0039715
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691917"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881905"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Website für B2B-E-Commerce einrichten
 
 [!include [banner](../../includes/banner.md)]
 
-Business-to-Business-E-Commerce-Websites (B2B) bieten einige wichtige Funktionen, die den Workflow für einen B2B-Benutzer optimieren. In diesem Thema wird beschrieben, wie Sie eine B2B-E-Commerce-Website in Microsoft Dynamics 365 Commerce einrichten. Es werden die Modul- und Websiteeinstellungen durchlaufen, die konfiguriert werden müssen, um B2B-spezifische Szenarien zu aktivieren.
+Business-to-Business-E-Commerce-Websites (B2B) bieten einige wichtige Funktionen, die den Workflow für einen B2B-Benutzer optimieren. In diesem Artikel wird beschrieben, wie Sie eine B2B-E-Commerce-Website in Microsoft Dynamics 365 Commerce einrichten. Es werden die Modul- und Websiteeinstellungen durchlaufen, die konfiguriert werden müssen, um B2B-spezifische Szenarien zu aktivieren.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-- Zum Einrichten einer B2B-E-Commerce-Website müssen Sie bestimmte Funktionen in der Commerce-Zentralverwaltung aktivieren und konfigurieren, wie in diesem Thema beschrieben.
+- Zum Einrichten einer B2B-E-Commerce-Website müssen Sie bestimmte Funktionen in der Commerce headquarters aktivieren und konfigurieren, wie in diesem Artikel beschrieben.
 - Kernumgebungen wie Produkterfassung, Produktdetailseiten, Warenkorb und Kaufabwicklung basieren auf denselben Modulen, die für B2C-E-Commerce-Websites (Business-to-Consumer) verwendet werden. Site-Autoren sollten mit allen Modulen, die Dynamics 365 Commerce unterstützt, vertraut sein. Weitere Informationen finden Sie unter [Informationen zur Modulbibliothek](../starter-kit-overview.md).
-- In diesem Thema wird davon ausgegangen, dass Site-Autoren die Grundlagen des Commerce-Website-Generators, Vorlagen, Fragmenten und Seiten verstehen, damit sie die B2B-Funktionen für E-Commerce-Sites aktivieren können.
+- In diesem Artikel wird davon ausgegangen, dass Site-Autoren die Grundlagen des Commerce-Website-Generators, Vorlagen, Fragmenten und Seiten verstehen, damit sie die B2B-Funktionen für E-Commerce-Sites aktivieren können.
 
 ## <a name="site-level-settings"></a>Einstellungen auf Site-Ebene
 

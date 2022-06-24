@@ -1,6 +1,6 @@
 ---
 title: Arbeiten mit Lagerplatzrichtlinien
-description: In diesem Thema wird beschrieben, wie Sie mit Lagerplatzrichtlinien arbeiten. Lagerplatzrichtlinien sind benutzerdefinierte Regeln, die dabei helfen, Entnahme- und Einlagerungslagerorte für die Lagerortumlagerung zu identifizieren.
+description: In diesem Artikel wird beschrieben, wie Sie mit Lagerplatzrichtlinien arbeiten. Lagerplatzrichtlinien sind benutzerdefinierte Regeln, die dabei helfen, Entnahme- und Einlagerungslagerorte für die Lagerortumlagerung zu identifizieren.
 author: Mirzaab
 ms.date: 11/13/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 84ff0a466c037db05aecaff14aa2e17990ce8799
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 7705ea132521353cd6af7245df90aafaf23af885
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103137"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903694"
 ---
 # <a name="work-with-location-directives"></a>Arbeiten mit Lagerplatzrichtlinien
 
@@ -27,7 +27,7 @@ ms.locfileid: "8103137"
 Lagerplatzrichtlinien sind Regeln, die dabei helfen, Entnahme- und Einlagerungslagerorte für die Lagerumlagerung zu identifizieren. In einer Auftragsbuchung bestimmt eine Lagerplatzrichtlinie z. B., wo die Artikel entnommen und wo die entnommenen Artikel eingelagert werden. Lagerplatzrichtlinien bestehen aus einer Kopfzeile und zugehörigen Zeilen. Sie werden für bestimmte *Arbeitsauftragsarten* erstellt.
 
 > [!NOTE]
-> Dieses Thema gilt für Funktionen im Modul **Lagerortverwaltung**. Es gilt nicht für Funktionen im Modul [Bestandsverwaltung](../inventory/inventory-home-page.md).
+> Dieser Artikel gilt für Funktionen im Modul **Lagerortverwaltung**. Es gilt nicht für Funktionen im Modul [Bestandsverwaltung](../inventory/inventory-home-page.md).
 
 Sie können mit Lagerplatzrichtlinien folgende Aufgaben durchführen:
 
@@ -109,7 +109,7 @@ In der folgenden Tabelle sind die Felder aufgeführt, die für bestimmte Arbeits
 
 Um die Seite **Lagerplatzrichtlinien** zu öffnen, gehen Sie auf **Lagerortverwaltung \> Einrichten \> Lagerplatzrichtlinien**.
 
-Von dort aus können Sie Ihre Lagerplatzrichtlinien anzeigen, erstellen und bearbeiten, indem Sie die Befehle im Aktivitätsbereich verwenden. In den verbleibenden Abschnitten dieses Themas finden Sie Informationen zur Verwendung aller Felder, die auf der Seite verfügbar sind.
+Von dort aus können Sie Ihre Lagerplatzrichtlinien anzeigen, erstellen und bearbeiten, indem Sie die Befehle im Aktivitätsbereich verwenden. In den verbleibenden Abschnitten dieses Artikels finden Sie Informationen zur Verwendung aller Felder, die auf der Seite verfügbar sind.
 
 ## <a name="action-pane"></a>Aktivitätsbereich
 
@@ -162,7 +162,7 @@ Die Felder auf dem Inforegister **Lagerplatzrichtlinien** sind spezifisch für d
 - **Anwendbarer Dispositionscode** - Geben Sie an, ob der Dispositionscode der Lagerplatzrichtlinie mit dem Dispositionscode übereinstimmen muss, der beim Empfang des Elements angewendet wird, oder ob die Lagerplatzrichtlinie auf Basis eines beliebigen Dispositionscodes ausgewählt werden kann. Wenn Sie *Exakte Übereinstimmung* wählen und das Feld **Dispositionscode** leer ist, werden nur leere Dispositionscodes für diese Lagerplatzrichtlinie berücksichtigt.
 
     > [!NOTE]
-    > Dieses Feld ist nur für ausgewählte Arbeitsauftragstypen verfügbar, bei denen eine Wiederbeschaffung erlaubt ist. Eine vollständige Liste finden Sie im Abschnitt [Felder, die für Arbeitsauftragstypen spezifisch sind](#fields-specific-types) weiter oben in diesem Thema.
+    > Dieses Feld ist nur für ausgewählte Arbeitsauftragstypen verfügbar, bei denen eine Wiederbeschaffung erlaubt ist. Eine vollständige Liste finden Sie im Abschnitt [Felder, die für Arbeitsauftragstypen spezifisch sind](#fields-specific-types) weiter oben in diesem Artikel.
 
 - **Finden nach** - Geben Sie an, ob es sich bei der Einlagerungsmenge um die gesamte Menge auf dem Ladungsträger handeln soll, oder ob sie Element für Element erfolgen soll. Verwenden Sie dieses Feld, um sicherzustellen, dass der gesamte Inhalt eines Ladungsträgers an einem Lagerplatz eingelagert wird und dass das System nicht vorschlägt, den Inhalt auf mehrere Lagerplätze für die Prozesse **ASN** (Ladungsträger-Empfang), **Gemischte Ladungsträger** und **Cluster**-Empfang aufzuteilen. (Der **Cluster**-Empfangsprozess erfordert, dass die Funktion [Clustereinlagerung](putaway-clusters.md) eingeschaltet ist.) Das Verhalten der Abfrage der Lagerplatzrichtlinie, der Zeilen und der Aktionen der Lagerplatzrichtlinie variiert je nach dem von Ihnen gewählten Wert. Das **Zeilen** Inforegister wird nur verwendet, wenn das **Finden nach** auf *Element* festgelegt ist.
 
@@ -254,7 +254,7 @@ Wenn Sie Lagerplatzrichtlinien erstellt haben, können Sie jeden Richtliniencode
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 - Video: [Tiefe Einblicke in die Konfiguration der Lagerortverwaltung](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
-- Hilfethema: [Steuern Sie die Lagerarbeit mit Hilfe von Arbeitsvorlagen und Lagerplatzrichtlinien](control-warehouse-location-directives.md)
+- Hilfeartikel: [Steuern Sie die Lagerarbeit mit Hilfe von Arbeitsvorlagen und Lagerplatzrichtlinien](control-warehouse-location-directives.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

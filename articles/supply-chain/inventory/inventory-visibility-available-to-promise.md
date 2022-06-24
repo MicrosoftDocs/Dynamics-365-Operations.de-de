@@ -1,6 +1,6 @@
 ---
 title: Inventory Visibility hat Lagerbestandsänderungen geplant und kann diese versprechen
-description: In diesem Thema wird beschrieben, wie Sie künftige Lagerbestandsänderungen planen und ATP-Mengen (Available-to-Promise) berechnen können.
+description: In diesem Artikel wird beschrieben, wie Sie künftige Lagerbestandsänderungen planen und ATP-Mengen (Available-to-Promise) berechnen können.
 author: yufeihuang
 ms.date: 05/11/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-04
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 7456f87bede7bd0073223fa4762f96f919799e06
-ms.sourcegitcommit: 38d97efafb66de298c3f504b83a5c9b822f5a62a
+ms.openlocfilehash: 4a0edeedfe42b43ef36c8ca091b01eef815f3632
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "8763252"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856192"
 ---
 # <a name="inventory-visibility-on-hand-change-schedules-and-available-to-promise"></a>Inventory Visibility hat Lagerbestandsänderungen geplant und kann diese versprechen
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema beschreibt, wie Sie die Funktion *Zeitplan für Lagerbestandsänderungen* festlegen, um künftige Lagerbestandsänderungen zu planen und ATP-Mengen (Available-to-Promise) zu berechnen. ATP ist die Menge eines Elements, die verfügbar ist und einem Kunden in der nächsten Periode zugesagt werden kann. Die Verwendung dieser Berechnung kann Ihre Funktionalitäten bei der Auftragsabwicklung erheblich verbessern.
+Dieser Artikel beschreibt, wie Sie die Funktion *Zeitplan für Lagerbestandsänderungen* festlegen, um künftige Lagerbestandsänderungen zu planen und ATP-Mengen (Available-to-Promise) zu berechnen. ATP ist die Menge eines Elements, die verfügbar ist und einem Kunden in der nächsten Periode zugesagt werden kann. Die Verwendung dieser Berechnung kann Ihre Funktionalitäten bei der Auftragsabwicklung erheblich verbessern.
 
 Bei vielen Herstellern, Einzelhändlern oder Verkäufern reicht es nicht aus, zu wissen, was gerade im Lagerbestand ist. Sie müssen vollen Einblick in die zukünftige Verfügbarkeit haben. Diese zukünftige Verfügbarkeit sollte den zukünftigen Vorrat, den zukünftigen Bedarf und die ATP berücksichtigen.
 

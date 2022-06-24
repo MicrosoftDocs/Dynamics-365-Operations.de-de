@@ -1,6 +1,6 @@
 ---
-title: Probleme im Zusammenhang mit Upgrades von Finance and Operations-Apps behandeln
-description: Dieses Thema enthält Informationen zur Problembehandlung, die Ihnen helfen können, Probleme zu beheben, die mit Upgrades von Apps für Finanzen und Betrieb zusammenhängen.
+title: Probleme im Zusammenhang mit Upgrades von Finanz- und Betriebs-Apps behandeln
+description: Dieser Artikel enthält Informationen zur Problembehandlung, die Ihnen helfen können, Probleme zu beheben, die mit Upgrades von Finanz- und Betriebs-Apps zusammenhängen.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
@@ -9,14 +9,14 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c7c036ef44b0470c9b3f8087e7b5b1e16dde1b34
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 954268b03be2be90f67dc9b7756f33215856864a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062824"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882141"
 ---
-# <a name="troubleshoot-issues-from-upgrades-of-finance-and-operations-apps"></a>Probleme im Zusammenhang mit Upgrades von Finance and Operations-Apps behandeln
+# <a name="troubleshoot-issues-from-upgrades-of-finance-and-operations-apps"></a>Probleme im Zusammenhang mit Upgrades von Finanz- und Betriebs-Apps behandeln
 
 [!include [banner](../../includes/banner.md)]
 
@@ -24,10 +24,10 @@ ms.locfileid: "8062824"
 
 
 
-Dieses Thema enthält Informationen zur Problembehandlung für die duales Schreiben-Integration zwischen Apps für Finanzen und Betrieb und Dataverse. Hier finden Sie Informationen, die Ihnen helfen können, Probleme im Zusammenhang mit Upgrades von Apps für Finanzen und Betrieb zu beheben.
+Dieser Artikel enthält Informationen zur Problembehandlung für die Integration von dualem Schreiben zwischen Finanz- und Betriebs-Apps und Dataverse. Hier finden Sie Informationen, die Ihnen helfen können, Probleme im Zusammenhang mit Upgrades von Apps für Finanzen und Betrieb zu beheben.
 
 > [!IMPORTANT]
-> Einige der in diesem Thema behandelten Probleme erfordern möglicherweise entweder die Systemadministratorrolle oder Microsoft Azure Active Directory (Azure AD) Anmeldeinformationen des Mandantenadministrators. Im Abschnitt zu jedem Problem wird erläutert, ob eine bestimmte Rolle oder Anmeldeinformationen erforderlich sind.
+> Einige der in diesem Artikel behandelten Probleme erfordern möglicherweise entweder die Systemadministratorrolle oder Microsoft Azure Active Directory (Azure AD)-Anmeldeinformationen des Mandantenadministrators. Im Abschnitt zu jedem Problem wird erläutert, ob eine bestimmte Rolle oder Anmeldeinformationen erforderlich sind.
 
 ## <a name="database-synchronization-errors"></a>Datenbanksynchronisierungsfehler
 

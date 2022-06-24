@@ -1,6 +1,6 @@
 ---
 title: Qualität der Waren inspizieren
-description: Dieses Thema beschreibt, wie Sie Qualitätsprüfungsaufträge verarbeiten.
+description: Dieser Artikel beschreibt, wie Sie Qualitätsprüfungsaufträge verarbeiten.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: business-process
@@ -14,20 +14,20 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc2fbbedb608b38c6855fbd48ff0c3e26ee3e0bc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eeb14a3b0a61f34819bdd8d524e65ac214a81c35
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575847"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857575"
 ---
 # <a name="inspect-the-quality-of-goods"></a>Qualität der Waren inspizieren
 
 [!include [banner](../../includes/banner.md)]
 
-Dieses Thema beschreibt, wie Sie Qualitätsprüfungsaufträge verarbeiten. Qualitätsprüfungen werden normalerweise von einem Qualitätssachbearbeiter durchgeführt.
+Dieser Artikel beschreibt, wie Sie Qualitätsprüfungsaufträge verarbeiten. Qualitätsprüfungen werden normalerweise von einem Qualitätssachbearbeiter durchgeführt.
 
-Wenn die Standard-Demodaten installiert sind, können Sie sie verwenden, um die Verfahren in diesem Thema abzuschließen. Um die Demo-Daten zu verwenden, wählen Sie vorher die *USMF* juristische Entität aus. Anschließend müssen Sie die Bestellung *000016* bestätigen und einen Wareneingang buchen. Ein Qualitätsprüfungsauftrag wird automatisch generiert.
+Wenn die Standard-Demodaten installiert sind, können Sie sie verwenden, um die Verfahren in diesem Artikel abzuschließen. Um die Demo-Daten zu verwenden, wählen Sie vorher die *USMF* juristische Entität aus. Anschließend müssen Sie die Bestellung *000016* bestätigen und einen Wareneingang buchen. Ein Qualitätsprüfungsauftrag wird automatisch generiert.
 
 ## <a name="step-1-select-a-quality-order"></a>Schritt 1: Wählen Sie einen Qualitätsprüfungsauftrag
 

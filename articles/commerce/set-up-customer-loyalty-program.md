@@ -1,6 +1,6 @@
 ---
-title: Übersicht über die Loyalität
-description: In diesem Thema werden die Loyalitätsfunktionen innerhalb von Dynamics 365 Commerce und die damit verbundenen entsprechenden Einrichtungsschritte behandelt, damit Einzelhändler einfach mit ihrem Treueprogramm anfangen können.
+title: Übersicht über Kundentreue
+description: In diesem Artikel werden die Loyalitätsfunktionen innerhalb von Dynamics 365 Commerce und die damit verbundenen entsprechenden Einrichtungsschritte behandelt, damit Einzelhändler einfach mit ihrem Treueprogramm anfangen können.
 author: scott-tucker
 ms.date: 07/21/2020
 ms.topic: overview
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 57512bbd735e26ba31e00518ca8179f2d9b14bc4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 667c30e52bae34f8ddfdc7b74f271d08612ac594
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985161"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883902"
 ---
 # <a name="loyalty-overview"></a>Überblick über die Loyalität
 
 [!include [banner](includes/banner.md)]
 
-Ein Treueprogramm kann dazu beitragen, die Kundenloyalität durch die Belohnung der Kunden für das Kaufen von Produkte der Marke des Einzelhandelsgeschäfts zu erhöhen. In Dynamics 365 Commerce können Sie einfache oder komplexe Treueprogramme einrichten, die für alle juristischen Personen in einem beliebigen Commerce-Kanal gelten. In diesem Thema werden die Treuefunktionen innerhalb von Commerce und die damit verbundenen entsprechenden Einrichtungsschritte behandelt, damit Einzelhändler einfach mit ihrem Treueprogramm anfangen können.
+Ein Treueprogramm kann dazu beitragen, die Kundenloyalität durch die Belohnung der Kunden für das Kaufen von Produkte der Marke des Einzelhandelsgeschäfts zu erhöhen. In Dynamics 365 Commerce können Sie einfache oder komplexe Treueprogramme einrichten, die für alle juristischen Personen in einem beliebigen Commerce-Kanal gelten. In diesem Artikel werden die Treuefunktionen innerhalb von Commerce und die damit verbundenen entsprechenden Einrichtungsschritte behandelt, damit Einzelhändler einfach mit ihrem Treueprogramm anfangen können.
 
 Sie können Ihr Treueprogramm so einrichten, dass es die folgenden Optionen enthält.
 

@@ -1,6 +1,6 @@
 ---
 title: Wartungsattributtypen
-description: In diesem Thema wird erläutert, wie Sie in Attributtypen in Asset Management erstellen.
+description: In diesem Artikel wird erläutert, wie Sie in Attributtypen in Anlagenverwaltung erstellen.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ec5552d96473403931bbd513ae68ef0fe3069209f52e813963914417ad41b88a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5a0aca3ccf24505c064ad59f0adafb771056ba95
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739130"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887659"
 ---
 # <a name="maintenance-attribute-types"></a>Wartungsattributtypen
 
@@ -28,7 +28,7 @@ ms.locfileid: "6739130"
 
  
 
-In diesem Thema wird erläutert, wie Sie in Attributtypen in Asset Management erstellen. Attribute werden verwendet, um die Eigenschaften verschiedener Elemente zu beschreiben. Sie können Attribute für die folgenden Elemente einrichten:
+In diesem Artikel wird erläutert, wie Sie in Attributtypen in Anlagenverwaltung erstellen. Attribute werden verwendet, um die Eigenschaften verschiedener Elemente zu beschreiben. Sie können Attribute für die folgenden Elemente einrichten:
 
 - [Funktionale Standorttypen](../setup-for-functional-locations/functional-location-types.md)
 - [Funktionale Standorte erstellen](../functional-locations/create-functional-locations.md)

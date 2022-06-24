@@ -1,6 +1,6 @@
 ---
 title: Exemplarische Vorgehensweise für die Funktionen der Verwaltung für technische Änderung
-description: Dieses Thema bietet eine exemplarische Vorgehensweise, die zeigt, wie Sie mit der Verwaltung für technische Änderung arbeiten.
+description: Dieser Artikel bietet eine exemplarische Vorgehensweise, die zeigt, wie Sie mit der Verwaltung für technische Änderung arbeiten.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4c1c67559a8f2e9d0abb512f4231aea495d1957c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ec5535013af9ccb253744e061de738155ac9ad22
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573992"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889634"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Exemplarische Vorgehensweise für die Funktionen der Verwaltung für technische Änderung
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema bietet eine exemplarische Vorgehensweise, die zeigt, wie Sie mit der Verwaltung für technische Änderung arbeiten. Es wird jedes der wichtigsten Szenarien durchgespielt:
+Dieser Artikel bietet eine exemplarische Vorgehensweise, die zeigt, wie Sie mit der Verwaltung für technische Änderung arbeiten. Es wird jedes der wichtigsten Szenarien durchgespielt:
 
 - Grundlegende Konfiguration der Funktionen
 - Wie ein Ingenieurbüro ein neues technisches Produkt erstellt
@@ -35,13 +35,13 @@ Dieses Thema bietet eine exemplarische Vorgehensweise, die zeigt, wie Sie mit de
 - So planen Sie angeforderte Änderungen und implementieren sie, indem Sie einen Änderungsauftrag erstellen
 - Wie man ein geändertes Produkt freigibt
 
-Alle Übungen in diesem Thema verwenden die Standard-Beispieldaten, die für Microsoft Dynamics 365 Supply Chain Management bereitgestellt werden. Außerdem baut jede Übung auf der vorherigen Übung auf. Daher empfehlen wir Ihnen, die Übungen der Reihe nach von Anfang bis Ende durchzuarbeiten, insbesondere wenn Sie die Funktion der Verwaltung für technische Änderung noch nie verwendet haben. Auf diese Weise erhalten Sie ein vollständiges Verständnis für die Funktion.
+Alle Übungen in diesem Artikel verwenden die Standard-Beispieldaten, die für Microsoft Dynamics 365 Supply Chain Management bereitgestellt werden. Außerdem baut jede Übung auf der vorherigen Übung auf. Daher empfehlen wir Ihnen, die Übungen der Reihe nach von Anfang bis Ende durchzuarbeiten, insbesondere wenn Sie die Funktion der Verwaltung für technische Änderung noch nie verwendet haben. Auf diese Weise erhalten Sie ein vollständiges Verständnis für die Funktion.
 
 ## <a name="set-up-for-the-sample-scenario"></a>Festlegen für das Beispielszenario
 
-Um das Beispielszenario in diesem Thema nachvollziehen zu können, müssen Sie die Funktion zunächst vorbereiten, indem Sie Demodaten zur Verfügung stellen und ein paar benutzerdefinierte Datensätze hinzufügen.
+Um das Beispielszenario in diesem Artikel nachvollziehen zu können, müssen Sie die Funktion zunächst vorbereiten, indem Sie Demodaten zur Verfügung stellen und ein paar benutzerdefinierte Datensätze hinzufügen.
 
-Bevor Sie versuchen, eine der Übungen im Rest dieses Themas durchzuführen, befolgen Sie die Anweisungen in allen folgenden Unterabschnitten. In diesen Unterabschnitten werden auch einige wichtige Einstellungsseiten vorgestellt, die Sie verwenden werden, wenn Sie die Verwaltung für technische Änderung für Ihre eigene Organisation festlegen.
+Bevor Sie versuchen, eine der Übungen im Rest dieses Artikels durchzuführen, befolgen Sie die Anweisungen in allen folgenden Unterabschnitten. In diesen Unterabschnitten werden auch einige wichtige Einstellungsseiten vorgestellt, die Sie verwenden werden, wenn Sie die Verwaltung für technische Änderung für Ihre eigene Organisation festlegen.
 
 ### <a name="make-standard-demo-data-available"></a>Standard-Demodaten zur Verfügung stellen
 

@@ -1,6 +1,6 @@
 ---
 title: Einstieg in die Globale Bestandsbuchhaltung
-description: In diesem Thema wird beschrieben, wie Sie mit der Globalen Bestandsbuchhaltung loslegen.
+description: In diesem Artikel wird beschrieben, wie Sie mit der Globalen Bestandsbuchhaltung loslegen.
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 17d4816fc5fcad0b0665640a8347b1f4ea032dd7
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 493e0be8ab56abc2a3253876107b7f4fefabf4ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679442"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891088"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Einstieg in die Globale Bestandsbuchhaltung
 
@@ -38,12 +38,18 @@ Die Globale Bestandsbuchhaltung ist ein Add-In. Um seine Funktionen verfügbar z
 
 Die Globale Bestandsbuchhaltung unterstützt derzeit nicht alle Funktionen der Kostenverwaltung, die in Supply Chain Management integriert sind. Daher ist es wichtig, dass Sie prüfen, ob der derzeit verfügbare Funktionsumfang Ihren Anforderungen entspricht.
 
-## <a name="how-to-get-the-global-inventory-accounting-public-preview"></a><a name="sign-up"></a>Wie Sie die öffentliche Vorschau der Globalen Bestandsbuchhaltung erhalten
+## <a name="how-to-get-the-global-inventory-accounting-add-in"></a><a name="sign-up"></a>Wie Sie das Add-In der Globalen Bestandsbuchhaltung erhalten
 
 > [!IMPORTANT]
 > Um die Globale Bestandsbuchhaltung zu verwenden, müssen Sie über eine LCS-fähige Hochverfügbarkeitsumgebung verfügen (keine OneBox-Umgebung). Außerdem müssen Sie Supply Chain Management Version 10.0.19 oder höher ausführen.
 
-Um sich für die öffentliche Vorschau der Globalen Bestandsbuchhaltung anzumelden, senden Sie Ihre LCS Umgebungs-ID per E-Mail an das [Globale Bestandsbuchhaltung Team](mailto:GlobalInvAccount@microsoft.com). Nachdem Sie für das Programm genehmigt wurden, sendet Ihnen das Team eine Nachverfolgungs-E-Mail, die einen Beta-Schlüssel für die Globale Bestandsbuchhaltung und Ihre Service-Endpunkte enthält. Nachdem Sie den Beta-Schlüssel erhalten haben, können Sie [das Add-In installieren](#install).
+### <a name="supply-chain-management-version-10019-to-10026"></a>Supply Chain Management Version 10.0.19 bis 10.0.26
+
+Um Global Inventory Accounting for Supply Chain Management Version 10.0.19 bis 10.0.26 zu installieren, beginnen Sie mit [Add-In installieren](#install). Senden Sie dann Ihre LCS-Umgebungs-ID und Ihren Firmennamen per E-Mail an das [Globale Bestandsbuchhaltungsteam](mailto:GlobalInvAccount@microsoft.com). Ihnen sendet das Team eine Nachverfolgungs-E-Mail, die Ihre Globale Bestandsbuchhaltung Service-Endpunkte enthält.
+
+### <a name="supply-chain-management-version-10027-and-later"></a>Supply Chain Management Version 10.0.27 und höher
+
+Um Global Inventory Accounting for Supply Chain Management Version 10.0.27 und höher führen Sie einfach [Add-In installieren](#install) aus. Für diese Versionen von Supply Chain Management werden die Endpunkte des Global Inventory Accounting Service automatisch eingerichtet, sodass Sie sie nicht manuell suchen müssen. Wenn beim Einrichten des Add-Ins Probleme auftreten, wenden Sie sich bitte an die [Globales Bestandsbuchhaltungsteam](mailto:GlobalInvAccount@microsoft.com).
 
 ## <a name="licensing"></a>Lizenzierung
 
@@ -98,12 +104,7 @@ Wenn die Standardsprache Ihrer Dataverse-Installation nicht Englisch ist, gehen 
 
 Gehen Sie folgendermaßen vor, um das Add-In zu installieren, damit Sie die Globale Bestandsbuchhaltung verwenden können.
 
-1. [Melden Sie sich](#sign-up) für die öffentliche Vorschau der Globalen Bestandsbuchhaltung an.
 1. Melden Sie sich bei [LCS](https://lcs.dynamics.com/Logon/Index) an.
-1. Navigieren Sie zu **Verwaltung von Vorschaufunktionen**.
-1. Wählen Sie das Pluszeichen (**+**).
-1. Geben Sie in das Feld **Code** Ihren Add-In-Betaschlüssel für die Globale Bestandsbuchhaltung ein. (Sie sollten Ihren Beta-Schlüssel per E-Mail erhalten haben, als Sie sich angemeldet haben.)
-1. Wählen Sie **Entsperren** aus.
 1. Öffnen Sie die LCS-Umgebung, in der Sie den Dienst hinzufügen möchten.
 1. Gehen Sie zu **Vollständige Details**.
 1. Gehen Sie zu **Power Platform Integration**, und wählen Sie **Einrichten**.
@@ -124,6 +125,8 @@ Führen Sie die folgenden Schritte aus, um die Integration zwischen Globaler Bes
 1. Suchen Sie auf der Registerkarte **Alle** nach der Funktion mit dem Namen *(Vorschau) Globale Bestandsbuchhaltung*.
 1. Wählen Sie **Jetzt aktivieren**.
 1. Gehen Sie zu **Globale Bestandsbuchhaltung \> Einrichten \> Globale Bestandsbuchhaltungsparameter \> Integrationsparameter**.
-1. Geben Sie in die Felder **Datendienst-Endpunkt** und **Endpunkt Globale Bestandsbuchhaltung** die URLs aus der E-Mail ein, die das Team der Globalen Bestandsbuchhaltung bei der Anmeldung für die Vorschau gesendet hat.
+1. Führen Sie je nach Art der Version von Supply Chain Management einen der folgenden Schritte aus:
+    - **Supply Chain Management-Version 10.0.19 auf 10.0.26**: In dem **Endpunkt des Datendienstes** und **Endpunkt der globalen Bestandsbuchhaltung** geben Sie in die Felder die URLs ein, die Ihnen per E-Mail vom Team Global Inventory Accounting zugesandt wurden (siehe auch [So erhalten Sie das Global Inventory Accounting-Add-In](#sign-up)).
+    - **Supply Chain Management Version 10.0.27 und neuer**: Sie müssen die Endpunkte nicht eingeben, daher können Sie diesen Schritt überspringen.
 
 Die Globale Bestandsbuchhaltung ist nun einsatzbereit.

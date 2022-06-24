@@ -1,6 +1,6 @@
 ---
-title: Das Debitorenportal anpassen und verwenden
-description: In diesem Thema wird erläutert, wie Sie das Kundenportal anpassen, nachdem es Ihrem System hinzugefügt wurde.
+title: Debitorenportal anpassen und verwenden
+description: In diesem Artikel wird erläutert, wie Sie das Kundenportal anpassen, nachdem es Ihrem System hinzugefügt wurde.
 author: Henrikan
 ms.date: 04/22/2020
 ms.topic: article
@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 02ad0470b7886b2e9b259682a7f8c8150d656cfb
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 85ec4beda2efe62ff5076a5ed694efbc47c6d87f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063492"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878873"
 ---
-# <a name="customize-and-use-the-customer-portal"></a>Das Debitorenportal anpassen und verwenden
+# <a name="customize-and-use-the-customer-portal"></a>Debitorenportal anpassen und verwenden
 
 [!include [banner](../includes/banner.md)]
 
 
-In diesem Thema werden die verschiedenen Seiten beschrieben, die im Kundenportal sofort verfügbar sind. Es wird erklärt, was die Seiten tun und wie Sie sie anpassen können.
+In diesem Artikel werden die verschiedenen Seiten beschrieben, die im Kundenportal sofort verfügbar sind. Es wird erklärt, was die Seiten tun und wie Sie sie anpassen können.
 
 Das Kundenportal bietet einige vordefinierte Websiten und Aktionen. Die folgende Sitemap bietet einen Überblick über diese Webseiten und Aktionen sowie die Rollen, die die Aktionen ausführen können.
 
@@ -32,16 +32,16 @@ Das Kundenportal bietet einige vordefinierte Websiten und Aktionen. Die folgende
 
 ## <a name="typical-customizations"></a>Typische Anpassungen
 
-Die folgenden Themen helfen Ihnen beim Erlernen der Grundlagen von Power Apps Portal und wie Sie Portale anpassen können:
+Die folgenden Artikel helfen Ihnen beim Erlernen der Grundlagen von Power Apps Portal und wie Sie Portale anpassen können:
 
-- [Arbeiten Sie mit Vorlagen](/powerapps/maker/portals/work-with-templates) – Dieses Thema bietet einen allgemeinen Überblick darüber, wie Power Apps Portale funktionieren und wie Sie einfache Anpassungen von Portalen vornehmen können.
-- [Portalinhalte verwalten](/dynamics365/portals/manage-portal-content) – In diesem Thema wird erläutert, wie Sie den Inhalt verwalten und anpassen können, den Sie in Ihrem Portal anzeigen.
-- [Bearbeiten von CSS](/powerapps/maker/portals/edit-css) – Mit diesem Thema können Sie komplexere Anpassungen an der Benutzeroberfläche Ihres Portals vornehmen.
-- [Erstellen Sie ein Thema für Ihr Portal](/dynamics365/portals/create-theme) – Mit diesem Thema können Sie ein UI-Thema für Ihr Portal erstellen.
-- [Erstellen und Anzeigen von Portalinhalten auf einfache Weise](/dynamics365/portals/create-expose-portal-content) – In diesem Thema können Sie die zugrunde liegenden Daten und Tabellen verwalten, die Sie für Ihr Portal verwenden.
-- [Konfigurieren Sie einen Kontakt für die Verwendung in einem Portal](/powerapps/maker/portals/configure/configure-contacts) – In diesem Thema wird erläutert, wie Benutzerrollen erstellt und angepasst werden und wie Sicherheit und Authentifizierung in Power Apps Portalen funktionieren.
-- [Konfigurieren Sie Notizen fürTabellenformulare und Webformulare auf Portalen](/powerapps/maker/portals/configure-notes) – In diesem Thema wird erläutert, wie Sie Ihrem Portal Dokumente und zusätzlichen Speicher hinzufügen.
-- [Fehlerbehandlung für Portal-Website](/powerapps/maker/portals/admin/view-portal-error-log) – In diesem Thema wird erläutert, wie Sie Portalfehlerprotokolle anzeigen und in I Microsoft Azure Blob-Speicherkonto speichern.
+- [Arbeiten Sie mit Vorlagen](/powerapps/maker/portals/work-with-templates) – Dieser Artikel bietet einen allgemeinen Überblick darüber, wie Power Apps Portale funktionieren und wie Sie einfache Anpassungen von Portalen vornehmen können.
+- [Portalinhalte verwalten](/dynamics365/portals/manage-portal-content) – In diesem Artikel wird erläutert, wie Sie den Inhalt verwalten und anpassen können, den Sie in Ihrem Portal anzeigen.
+- [Bearbeiten von CSS](/powerapps/maker/portals/edit-css) – Mit diesem Artikel können Sie komplexere Anpassungen an der Benutzeroberfläche Ihres Portals vornehmen.
+- [Erstellen Sie ein Thema für Ihr Portal](/dynamics365/portals/create-theme) – Mit diesem Artikel können Sie ein UI-Thema für Ihr Portal erstellen.
+- [Erstellen und Anzeigen von Portalinhalten auf einfache Weise](/dynamics365/portals/create-expose-portal-content) – In diesem Artikel können Sie die zugrunde liegenden Daten und Tabellen verwalten, die Sie für Ihr Portal verwenden.
+- [Konfigurieren Sie einen Kontakt für die Verwendung in einem Portal](/powerapps/maker/portals/configure/configure-contacts) – In diesem Artikel wird erläutert, wie Benutzerrollen erstellt und angepasst werden und wie Sicherheit und Authentifizierung in Power Apps Portalen funktionieren.
+- [Konfigurieren Sie Notizen für Tabellenformulare und Webformulare auf Portalen](/powerapps/maker/portals/configure-notes) – In diesem Artikel wird erläutert, wie Sie Ihrem Portal Dokumente und zusätzlichen Speicher hinzufügen.
+- [Fehlerbehandlung für Portal-Website](/powerapps/maker/portals/admin/view-portal-error-log) – In diesem Artikel wird erläutert, wie Sie Portalfehlerprotokolle anzeigen und in I Microsoft Azure Blob-Speicherkonto speichern.
 
 ## <a name="customize-the-order-creation-process"></a>Passen Sie den Prozess der Auftragserstellung an
 

@@ -1,8 +1,8 @@
 ---
-title: Bestandszuordnung für Bestandsichtbarkeit
-description: In diesem Thema wird erläutert, wie Sie die Bestandzuweisungsfunktion einrichten und verwenden, mit der Sie dedizierten Bestand reservieren können, um sicherzustellen, dass Sie Ihre profitabelsten Kanäle oder Kunden bedienen können.
+title: Inventory Visibility-Bestandszuteilung
+description: In diesem Artikel wird erläutert, wie Sie die Bestandzuweisungsfunktion einrichten und verwenden, mit der Sie dedizierten Bestand reservieren können, um sicherzustellen, dass Sie Ihre profitabelsten Kanäle oder Kunden bedienen können.
 author: yufeihuang
-ms.date: 05/20/2022
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-13
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 4293ead4ccfc9ba04e8b9da437134b4e97569026
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: ccc3a8c4b3d0649397b1d1f9139f7feebf39b02f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786948"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852504"
 ---
 # <a name="inventory-visibility-inventory-allocation"></a>Bestandszuordnung für Bestandsichtbarkeit
 
@@ -98,7 +98,7 @@ Hier sind die ersten berechneten Maßnahmen:
 
 ### <a name="add-other-physical-measures-to-the-available-to-allocate-calculated-measure"></a>Fügen Sie andere physische Measures zu dem berechneten Measure „für Zuordnung verfügbar“ hinzu
 
-Um die Zuteilung zu verwenden, müssen Sie die berechnete Kennzahl „für Zuteilung verfügbar“ (`@iv` .`@available_to_allocate`) einrichten. Sie haben zum Beispiel `fno`-Datenquelle und das `onordered`-Measure, die `pos`-Datenquelle und das `inbound`-Measure, und Sie möchten die Zuteilung für „Verfügbar“ für die Summe von `fno.onordered` und `pos.inbound` durchführen. In diesem Fall, sollte `@iv.@available_to_allocate` bestimmte `pos.inbound` und `fno.onordered` Elemente in der Formel enthalten. Hier ist ein Beispiel:
+Um die Zuteilung zu verwenden, müssen Sie die berechnete Kennzahl „für Zuteilung verfügbar“ (`@iv.@available_to_allocate`) einrichten. Sie haben zum Beispiel `fno`-Datenquelle und das `onordered`-Measure, die `pos`-Datenquelle und das `inbound`-Measure, und Sie möchten die Zuteilung für „Verfügbar“ für die Summe von `fno.onordered` und `pos.inbound` durchführen. In diesem Fall, sollte `@iv.@available_to_allocate` bestimmte `pos.inbound` und `fno.onordered` Elemente in der Formel enthalten. Hier ist ein Beispiel:
 
 `@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound` – `@iv.@allocated`
 
@@ -110,11 +110,12 @@ Sie legen die Gruppennamen auf der Seite **Power App-Konfiguration für Bestands
 
 Wenn Sie beispielsweise vier Gruppennamen verwenden und diese auf \[`channel`,`customerGroup`,`region`,`orderType`\] festlegen, sind diese Namen für zuteilungsbezogene Anforderungen gültig, wenn Sie die Konfigurationsaktualisierungs-API aufrufen.
 
-### <a name="allcoation-using-tips"></a>Zuteilung mit Tipps
+### <a name="allocation-using-tips"></a>Zuteilung mit Tipps
 
-- Für jedes Produkt sollte die Zuteilungsfunktion dieselbe Dimensionsebene gemäß der von Ihnen in der [Konfiguration der Produktindexhierarchie](inventory-visibility-configuration.md#index-configuration) festgelegten Produktindexhierarchie verwenden. Die Indexhierarchie ist beispielsweise Standort, Lagerplatz, Farbe, Größe. Wenn Sie eine bestimmte Menge für ein Produkt auf der Ebene „Standort“, „Lagerplatz“ und „Farbe“ zuteilen. Das nächste Mal, wenn Sie die Zuteilung verwenden, sollte sie auch auf der Ebene „Standort, Lagerplatz, Farbe“ erfolgen. Wenn Sie die Ebene „Standort, Lagerplatz, Farbe, Größe“ oder „Standort, Lagerplatzt“ verwenden, sind die Daten nicht konsistent.
+- Für jedes Produkt sollte die Zuteilungsfunktion dieselbe *Dimensionsebene* gemäß der von Ihnen in der [Konfiguration der Produktindexhierarchie](inventory-visibility-configuration.md#index-configuration) festgelegten Produktindexhierarchie verwenden. Angenommen, Ihre Indexhierarchie ist \[`Site`, `Location`, `Color`, `Size`\]. Wenn Sie eine bestimmte Menge für ein Produkt auf Dimensionsebene \[`Site`, `Location`, `Color`\] zuweisen, sollten Sie dieses Produkt, das nächste Mal wenn Sie es zuweisen möchten, auch auf derselben Ebene zuweisen \[`Site`, `Location`, `Color`\]. Wenn Sie die Ebene \[`Site`, `Location`, `Color`, `Size`\] oder \[`Site`, `Location`\] verwenden, werden die Daten inkonsistent sein.
 - Das Ändern des Namens der Zuteilungsgruppe wirkt sich nicht auf die im Dienst gespeicherten Daten aus.
 - Die Zuteilung sollte erfolgen, nachdem das Produkt die positive verfügbare Menge hat.
+- Um Produkte von einer Gruppe *Zuordnungsebene* zu einer Untergruppe zuzuweisen, verwenden Sie die `Reallocate` API. Sie haben beispielsweise eine Zuordnungsgruppenhierarchie \[`channel`, `customerGroup`, `region`, `orderType`\] und Sie möchten ein Produkt aus der Zuordnungsgruppe zuordnen \[Online, VIP\] zur Unterverteilungsgruppe \[Online, VIP, EU\] verwenden Sie die `Reallocate` API, um die Menge zu verschieben. Wenn Sie die `Allocate` API verwenden, wird die Menge aus dem virtuellen gemeinsamen Pool zuordnen.
 
 ### <a name="using-the-allocation-api"></a><a name="using-allocation-api"></a>Verwenden der Zuteilungs-API
 
@@ -343,7 +344,7 @@ Beachten Sie, dass in dieser Anfrage `iv.softreserved` den Wert `Addition`, nich
 
 #### <a name="query"></a>Abfrage
 
-Verwenden Sie die `Query`-API zum Abrufen von zuteilungsbezogenen Informationen für einige Produkte. Sie können Dimensionsfilter und Zuteilungsgruppenfilter verwenden, um die Ergebnisse einzugrenzen. Die Dimensionen müssen genau mit denen übereinstimmen, die Sie abrufen möchten, z. B.\[ Standort=1, Lagerplatz=11\] wird nicht verwandte Ergebnisse im Vergleich zu \[Standort=1, Lagerplatz=11, Farbe=rot \] haben.
+Verwenden Sie die `Query`-API zum Abrufen von zuteilungsbezogenen Informationen für einige Produkte. Sie können Dimensionsfilter und Zuteilungsgruppenfilter verwenden, um die Ergebnisse einzugrenzen. Die Dimensionen müssen genau mit denen übereinstimmen, die Sie abrufen möchten, z. B. \[Standort=1, Lagerplatz=11\] wird nicht verwandte Ergebnisse im Vergleich zu \[Standort=1, Lagerplatz=11, Farbe=rot\].
 
 ```json
 {

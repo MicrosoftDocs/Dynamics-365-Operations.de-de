@@ -1,6 +1,6 @@
 ---
-title: Produktprogrammplanung mit Kaufverträgen
-description: In diesem Thema wird beschrieben, wie die Planungsoptimierung den Lieferanten und/oder die Vorlaufzeit für einen geplanten Auftrag basierend auf dem besten Preis oder der besten Vorlaufzeit in Kaufverträgen ermitteln kann.
+title: Produktprogrammplanung mit Handelsvereinbarungen für den Einkauf
+description: In diesem Artikel wird beschrieben, wie die Planungsoptimierung den Lieferanten und/oder die Vorlaufzeit für einen geplanten Auftrag basierend auf dem besten Preis oder der besten Vorlaufzeit in Kaufverträgen ermitteln kann.
 author: t-benebo
 ms.date: 06/29/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: cb790836042506ed6676ee7edbd8bba58191519b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 29f0f44289e44b21cb304bd1f423d63f9f58f2db
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468412"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873752"
 ---
-# <a name="master-planning-with-purchase-trade-agreements"></a>Produktprogrammplanung mit Kaufverträgen
+# <a name="master-planning-with-purchase-trade-agreements"></a>Produktprogrammplanung mit Handelsvereinbarungen für den Einkauf
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie die Planungsoptimierung den Lieferanten und/oder die Vorlaufzeit für einen Planauftrag basierend auf dem besten Preis oder der besten Vorlaufzeit in Kaufverträgen für ein bestimmtes Produkt ermitteln kann.
+In diesem Artikel wird beschrieben, wie die Planungsoptimierung den Lieferanten und/oder die Vorlaufzeit für einen Planauftrag basierend auf dem besten Preis oder der besten Vorlaufzeit in Kaufverträgen für ein bestimmtes Produkt ermitteln kann.
 
 ## <a name="turn-on-the-purchase-trade-agreements-for-planning-optimization-feature"></a>Aktivieren Sie die Funktion Kaufverträge für die Funktion Planungsoptimierung
 

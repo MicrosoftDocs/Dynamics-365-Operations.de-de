@@ -1,6 +1,6 @@
 ---
 title: Leistung der Steuerberechnung beeinflusst Transaktionen
-description: Dieses Thema enthält Informationen zur Fehlerbehebung, die sich auf die Leistung der Steuerberechnung und ihre Auswirkungen auf Transaktionen beziehen.
+description: Dieser Artikel enthält Informationen zur Fehlerbehebung, die sich auf die Leistung der Steuerberechnung und ihre Auswirkungen auf Transaktionen beziehen.
 author: shtao
 ms.date: 04/07/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 1902017a7a00d4cc068f17e23aa21cd1d2b547a7
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3ee0e3a0f8d9c06760776719fbe49e684cb882cf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695217"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894905"
 ---
 # <a name="tax-calculation-performance-affects-transactions"></a>Leistung der Steuerberechnung beeinflusst Transaktionen
 

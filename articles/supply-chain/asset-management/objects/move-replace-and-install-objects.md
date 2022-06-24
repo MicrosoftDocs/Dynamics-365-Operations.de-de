@@ -1,6 +1,6 @@
 ---
 title: Anlagen verschieben, ersetzen und installieren
-description: In diesem Thema wird erläutert, wie Sie Anlagen in Asset Management verschieben, ersetzen und installieren.
+description: In diesem Artikel wird erläutert, wie Sie Anlagen in Anlagenverwaltung verschieben, ersetzen und installieren.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aad94f17d6efadf7c520c021354963e7135d6d4da1426774925ce877f705e01a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e1454f41bb0b43e22c5278463f63aa4178696eef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769634"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872123"
 ---
 # <a name="move-replace-and-install-assets"></a>Anlagen verschieben, ersetzen und installieren
 
@@ -28,7 +28,7 @@ ms.locfileid: "6769634"
 
  
 
-In diesem Thema wird erläutert, wie Sie Anlagen in Asset Management verschieben, ersetzen und installieren. Sie können einzelne Anlagen erstellen, die nicht in Beziehung zu anderen Anlagen stehen, oder Sie können eine Anlagenstruktur erstellen, die eine übergeordnete Anlage (Anlage der obersten Ebene) und zugehörige untergeordnete Anlagen (Sub-Anlagen) enthält. In Asset Management gibt es drei Möglichkeiten zum Verschieben und Ändern des Standorts einer Anlage:
+In diesem Artikel wird erläutert, wie Sie Anlagen in Anlagenverwaltung verschieben, ersetzen und installieren. Sie können einzelne Anlagen erstellen, die nicht in Beziehung zu anderen Anlagen stehen, oder Sie können eine Anlagenstruktur erstellen, die eine übergeordnete Anlage (Anlage der obersten Ebene) und zugehörige untergeordnete Anlagen (Sub-Anlagen) enthält. In Asset Management gibt es drei Möglichkeiten zum Verschieben und Ändern des Standorts einer Anlage:
 
 - **Verschieben** – Verschiebt eine Anlage entweder in eine andere Anlagenstruktur oder an einen anderen Standort in derselben Anlagenstruktur.
 - **Ersetzen** – Entfernt vorübergehend eine Anlage aus einer Anlagenstruktur, sodass sie repariert oder überholt werden kann, und fügen die überholte Anlage dann wieder in die Anlagenstruktur ein. Alternativ können Sie eine verwendete Anlage dauerhaft durch eine neue Anlage ersetzen.
@@ -42,7 +42,7 @@ In diesem Thema wird erläutert, wie Sie Anlagen in Asset Management verschieben
 Verwenden Sie die Funktion **Anlage verschieben**, um eine Anlage entweder in eine andere Anlagenstruktur oder an einen anderen Standort in derselben Anlagenstruktur zu verschieben. Sie können eine Anlage auch aus einer Anlagenstruktur verschieben, sodass sie zu einer eigenständigen Anlage wird, die keine Beziehung zu einer Struktur hat.
 
 > [!NOTE]
-> Verwenden Sie diese Funktion nicht, wenn Anlagen repariert oder vorübergehend ersetzt werden. Verwenden Sie stattdessen die Funktionen **Anlage ersetzen**, die weiter unten in diesem Thema beschrieben wird.
+> Verwenden Sie diese Funktion nicht, wenn Anlagen repariert oder vorübergehend ersetzt werden. Verwenden Sie stattdessen die Funktionen **Anlage ersetzen**, die weiter unten in diesem Artikel beschrieben wird.
 
 1. Wählen Sie **Anlagenverwaltung** \> **Allgemeines** \> **Anlagen** \> **Alle Anlagen** oder **Aktive Anlagen**.
 2. Wählen Sie in der Liste die zu verschiebende Anlage aus. Wenn die Anlage untergeordnete Anlagen enthält, verschieben Sie auch diese Anlagen.

@@ -1,6 +1,6 @@
 ---
-title: Ein neues Lagerortlayout erstellen
-description: In diesem Thema wird beschrieben, wie Informationen zu Lagerplätzen in einem Lager eingerichtet werden.
+title: Neues Lagerortlayout erstellen
+description: In diesem Artikel wird beschrieben, wie Informationen zu Lagerplätzen in einem Lager eingerichtet werden.
 author: yufeihuang
 ms.date: 07/29/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf5c5203aa0a4c8522b8f9d04fc6a8cd306a64a3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 143648e5317e6dce1b1a76a96d6069abe5d0e351
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580887"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859313"
 ---
-# <a name="create-a-new-warehouse-layout"></a>Ein neues Lagerortlayout erstellen
+# <a name="create-a-new-warehouse-layout"></a>Neues Lagerortlayout erstellen
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Informationen zu Lagerplätzen in einem Lager eingerichtet werden. Dies gilt nur für Lagerorte, die mithilfe von die mithilfe der "Standardlagerung" im Modul "Lagerverwaltung" erstellt wurden, nicht für Lagerorte, die im Modul "Lagerortverwaltung" erstellt werden. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten verwenden.
+In diesem Artikel wird beschrieben, wie Informationen zu Lagerplätzen in einem Lager eingerichtet werden. Dies gilt nur für Lagerorte, die mithilfe von die mithilfe der "Standardlagerung" im Modul "Lagerverwaltung" erstellt wurden, nicht für Lagerorte, die im Modul "Lagerortverwaltung" erstellt werden. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten verwenden.
 
 
 ## <a name="set-the-default-location-capacity"></a>Die Standardlagerplatzkapazität festlegen

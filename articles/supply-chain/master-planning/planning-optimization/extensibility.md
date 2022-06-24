@@ -1,6 +1,6 @@
 ---
 title: Erweiterbarkeit der Planungsoptimierung
-description: In diesem Thema werden die Erweiterbarkeitsszenarien beschrieben, die in der Planungsoptimierung unterstützt werden.
+description: In diesem Artikel werden die Erweiterbarkeitsszenarien beschrieben, die in der Planungsoptimierung unterstützt werden.
 author: t-benebo
 ms.date: 08/05/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-07-07
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: d7e39c9ecd1dc1a101e219764e8f4457bb06ff7a
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 7d649110959e6bcfdaeb32dd53c55dbc446ed1be
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468887"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857543"
 ---
 # <a name="planning-optimization-extensibility"></a>Erweiterbarkeit der Planungsoptimierung
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema werden die Erweiterbarkeitsszenarien beschrieben, die sich auf die Masterplanung beziehen und in Planning Optimization unterstützt werden. Diese Funktionen sind ab Microsoft Dynamics 365 Supply Chain Management Version 10.0.13 verfügbar.
+In diesem Artikel werden die Erweiterbarkeitsszenarien beschrieben, die sich auf die Masterplanung beziehen und in Planning Optimization unterstützt werden. Diese Funktionen sind ab Microsoft Dynamics 365 Supply Chain Management Version 10.0.13 verfügbar.
 
 ## <a name="custom-processing-when-master-planning-is-completed"></a>Individuelle Bearbeitung nach Abschluss der Masterplanung
 

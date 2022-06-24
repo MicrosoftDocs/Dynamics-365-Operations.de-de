@@ -1,6 +1,6 @@
 ---
 title: Verwaltung für technische Änderungen FAQ
-description: In diesem Thema finden Sie Antworten auf häufig gestellte Fragen zur Funktion Verwaltung für technische Änderungen.
+description: In diesem Artikel finden Sie Antworten auf häufig gestellte Fragen zur Funktion Verwaltung für technische Änderungen.
 author: t-benebo
 ms.date: 03/25/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-03-25
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: dee16f9d6f8ea583f221a7f6eb466675c8c622d0
-ms.sourcegitcommit: 9638d3a2bd592dc28f5952bda4af7dcf06edfaa4
+ms.openlocfilehash: 16d29fa6485bae866a5209a855dfb928e8bc4783
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "8007606"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870781"
 ---
 # <a name="engineering-change-management-faq"></a>Verwaltung für technische Änderungen FAQ
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema finden Sie Antworten auf häufig gestellte Fragen zur Funktion Verwaltung für technische Änderungen.
+In diesem Artikel finden Sie Antworten auf häufig gestellte Fragen zur Funktion Verwaltung für technische Änderungen.
 
 ## <a name="should-i-track-the-version-in-transactions"></a>Soll ich die Version in Transaktionen verfolgen?
 

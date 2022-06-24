@@ -1,8 +1,8 @@
 ---
-title: Bestandstransparenz konfigurieren
-description: In diesem Thema wird beschrieben, wie Sie Inventory Visibility konfigurieren.
+title: Inventory Visibility konfigurieren
+description: In diesem Artikel wird beschrieben, wie Sie Inventory Visibility konfigurieren.
 author: yufeihuang
-ms.date: 12/09/2021
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,23 +11,23 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 7e42c0b49a4083edd0e64551f4840bd74d412fc1
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: 2bdb2ca0067ea430b249ac619a38c8bcec75f2f7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786837"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895814"
 ---
-# <a name="configure-inventory-visibility"></a>Bestandstransparenz konfigurieren
+# <a name="configure-inventory-visibility"></a>Inventory Visibility konfigurieren
 
 [!include [banner](../includes/banner.md)]
 
 
-In diesem Thema wird beschrieben, wie Sie die Bestandsanzeige mit der Bestandsanzeige-App in Power Apps konfigurieren.
+In diesem Artikel wird beschrieben, wie Sie die Bestandsanzeige mit der Bestandsanzeige-App in Power Apps konfigurieren.
 
 ## <a name="introduction"></a><a name="introduction"></a>Einführung
 
-Bevor Sie mit Inventory Visibility arbeiten können, müssen Sie die folgende Konfiguration wie in diesem Thema beschrieben durchführen:
+Bevor Sie mit Inventory Visibility arbeiten können, müssen Sie die folgende Konfiguration wie in diesem Artikel beschrieben durchführen:
 
 - [Datenquellenkonfiguration](#data-source-configuration)
 - [Partitionskonfiguration](#partition-configuration)
@@ -41,7 +41,7 @@ Bevor Sie beginnen, installieren Sie das Bestandsanzeige-Add-In und richten es w
 
 ## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>Die Konfigurationsseite der Bestandsanzeige-App
 
-In Power Apps hilft Ihnen die Seite **Konfiguration** der [Bestandsanzeige-App](inventory-visibility-power-platform.md) beim Festlegen der Konfiguration des Lagerbestands und der Softreservierung. Nach der Installation des Add-Ins enthält die Standardkonfiguration den Wert von Microsoft Dynamics 365 Supply Chain Management (die Datenquelle `fno`). Sie können die Standardeinstellungen überprüfen. Zusätzlich können Sie die Konfiguration basierend auf Ihren geschäftlichen Anforderungen und den Bestandsbuchungsanforderungen Ihres externen Systems ändern, um die Art und Weise zu standardisieren, in der Bestandsänderungen in den verschiedenen Systemen gebucht, organisiert und abgefragt werden können. In den verbleibenden Abschnitten dieses Themas wird erläutert, wie die einzelnen Teile der Seite **Konfiguration** zu verwenden sind.
+In Power Apps hilft Ihnen die Seite **Konfiguration** der [Bestandsanzeige-App](inventory-visibility-power-platform.md) beim Festlegen der Konfiguration des Lagerbestands und der Softreservierung. Nach der Installation des Add-Ins enthält die Standardkonfiguration den Wert von Microsoft Dynamics 365 Supply Chain Management (die Datenquelle `fno`). Sie können die Standardeinstellungen überprüfen. Zusätzlich können Sie die Konfiguration basierend auf Ihren geschäftlichen Anforderungen und den Bestandsbuchungsanforderungen Ihres externen Systems ändern, um die Art und Weise zu standardisieren, in der Bestandsänderungen in den verschiedenen Systemen gebucht, organisiert und abgefragt werden können. In den verbleibenden Abschnitten dieses Artikels wird erläutert, wie die einzelnen Teile der Seite **Konfiguration** zu verwenden sind.
 
 Nachdem die Konfiguration abgeschlossen ist, wählen Sie in der App unbedingt **Konfiguration aktualisieren** aus.
 
@@ -54,6 +54,7 @@ Das Bestandsanzeige-Add-In fügt Ihrer Power Apps-Installation mehrere neue Funk
 | *OnHandReservation* | Mit dieser Funktion können Sie mithilfe von Inventory Visibility Reservierungen erstellen, Reservierungen verbrauchen und/oder bestimmte Bestandsmengen aufheben. Weitere Informationen finden Sie unter [Reservierungen in Inventory Visibility](inventory-visibility-reservations.md). |
 | *OnHandMostSpecificBackgroundService* | Diese Funktion bietet eine Bestandsübersicht für Produkte zusammen mit allen Dimensionen. Die Bestandsübersicht wird regelmäßig von der Bestandsanzeige synchronisiert. Weitere Informationen finden Sie unter [Bestandsübersicht](inventory-visibility-power-platform.md#inventory-summary). |
 | *OnhandChangeSchedule* | Die optionale Funktion aktiviert die Funktionen Lagerbestandsänderung und Available to Promise (ATP). Weitere Informationen finden Sie unter [Inventory Visibility: verfügbarer Änderungszeitplan und verfügbar für Zusage](inventory-visibility-available-to-promise.md). |
+| *Zuweisung* | Diese optionale Funktion ermöglicht Inventory Visibility, Inventarschutz (Ringfencing) und Überverkaufskontrolle zu bieten. Weitere Informationen finden Sie unter [Bestandszuordnung für Bestandsichtbarkeit](inventory-visibility-allocation.md) |
 | *Lagerortartikel in Bestandsanzeige aktivieren* | Diese optionale Funktion ermöglicht es Inventory Visibility, Artikel zu unterstützen, die für erweiterte Lagerprozesse (WHS-Artikel) aktiviert sind. Weitere Informationen finden Sie unter [Inventory Visibility-Unterstützung für WHS-Artikel](inventory-visibility-whs-support.md). |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Finden Sie den Dienst-Endpunkt
@@ -320,6 +321,13 @@ Um Ihren Produkthierarchie-Index festzulegen, gehen Sie wie folgt vor.
     - **Set-Nummer** - Dimensionen, die zur gleichen Gruppe (Index) gehören, werden zusammen gruppiert, und ihnen wird die gleiche Set-Nummer zugewiesen.
     - **Hierarchie** - Die Hierarchie wird verwendet, um die unterstützten Dimensionskombinationen zu definieren, die in einer Dimensionsgruppe (Index) abgefragt werden können. Wenn Sie z. B. eine Dimensionsgruppe festlegen, die eine Hierarchie-Sequenz von *Stil*, *Farbe* und *Größe* hat, unterstützt das System das Ergebnis von drei Abfragegruppen. Die erste Gruppe ist nur Stil. Die zweite Gruppe ist eine Kombination aus Stil und Farbe. Und die dritte Gruppe ist eine Kombination aus Stil, Farbe und Größe. Die anderen Kombinationen werden nicht unterstützt.
 
+> [!TIP]
+> Hier sind ein paar Tipps, die Sie beim Einrichten Ihrer Indexhierarchie beachten sollten:
+>
+> - Basisdimensionen, die in der Partitionskonfiguration definiert sind, sollten nicht in Indexkonfigurationen definiert werden. Wenn in der Indexkonfiguration erneut eine Basisdimension definiert wird, können Sie nicht nach diesem Index abfragen.
+> - Wenn Sie nur Bestand abfragen müssen, der durch alle Dimensionskombinationen aggregiert wird, können Sie einen einzelnen Index einrichten, der die Basisdimension `Empty` enthält.
+> - Sie müssen mindestens eine Indexhierarchie haben (die beispielsweise die Basisdimension enthält `Empty`), andernfalls schlagen Abfragen mit dem Fehler „Es wurde keine Indexhierarchie festgelegt“ fehl.
+
 ### <a name="example"></a>Beispiel
 
 In diesem Abschnitt finden Sie ein Beispiel, das zeigt, wie die Hierarchie funktioniert.
@@ -372,11 +380,6 @@ Mit dem Index können Sie den Lagerbestand auf die folgenden Arten abfragen:
     - T-Shirt, Rot, Small, Regular, 6
     - T-Shirt, Rot, Large, Regular, 7
 
-> [!NOTE]
-> Basisdimensionen, die in der Partitionskonfiguration definiert sind, sollten nicht in Indexkonfigurationen definiert werden.
-> 
-> Wenn Sie nur Bestand abfragen müssen, der durch alle Dimensionskombinationen aggregiert wird, können Sie einen einzelnen Index einrichten, der die Basisdimension `Empty` enthält.
-
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>Reservierungskonfiguration (optional)
 
 Die Reservierungskonfiguration ist erforderlich, wenn Sie die Funktion der Soft-Reservierung verwenden möchten. Die Konfiguration besteht aus zwei grundlegenden Teilen:
@@ -390,7 +393,7 @@ Wenn Sie eine Reservierung vornehmen, möchten Sie vielleicht wissen, ob der Lag
 
 Indem Sie die Zuordnung von der physikalischen Messung zur berechneten Messung festlegen, ermöglichen Sie dem Dienst Inventory Visibility, die Verfügbarkeit von Reservierungen automatisch zu überprüfen, basierend auf der physikalischen Messung.
 
-Bevor Sie diese Zuordnung festlegen, müssen die physikalischen Messungen, die berechneten Messungen und ihre Datenquellen auf den Registerkarten **Datenquelle** und **Berechnete Messung** der Seite **Konfiguration** in Power Apps definiert werden (wie zuvor in diesem Thema beschrieben).
+Bevor Sie diese Zuordnung festlegen, müssen die physikalischen Messungen, die berechneten Messungen und ihre Datenquellen auf den Registerkarten **Datenquelle** und **Berechnete Messung** der Seite **Konfiguration** in Power Apps definiert werden (wie zuvor in diesem Artikel beschrieben).
 
 Um die Zuordnung der Soft-Reservierung zu definieren, gehen Sie wie folgt vor.
 
@@ -646,12 +649,12 @@ Die berechnete Messung `InventoryDemand` ist für die Datenquelle `iv` konfiguri
 | Addition | `iom` | `OnOrder` |
 | Addition | `iv` | `SoftReservPhysical` |
 | Addition | `iv` | `SoftReservOrdered` |
-| Addition | `fno` | `ReservPhysical` |
-| Addition | `fno` | `ReservOrdered` |
-| Addition | `iv` | `ReservPhysical` |
-| Addition | `iv` | `ReservOrdered` |
+| Hinzufügung | `fno` | `ReservPhysical` |
+| Hinzufügung | `fno` | `ReservOrdered` |
+| Hinzufügung | `iv` | `ReservPhysical` |
+| Hinzufügung | `iv` | `ReservOrdered` |
 
-#### <a name="configuration-of-the-fno-data-source"></a>Konfiguration der Datenquelle "fno
+#### <a name="configuration-of-the-fno-data-source"></a>Konfiguration der Datenquelle fno
 
 Dieser Abschnitt beschreibt, wie die Datenquelle `fno` konfiguriert wird.
 
@@ -659,7 +662,7 @@ Dieser Abschnitt beschreibt, wie die Datenquelle `fno` konfiguriert wird.
 
 Für die Datenquelle `fno` sind die Dimensionen-Zuordnungen konfiguriert, die in der folgenden Tabelle aufgeführt sind.
 
-| Externe Dimension | Basis-Dimension |
+| Externe Dimension | Basis-Dimensionen |
 |---|---|
 | `InventBatchId` | `BatchId` |
 | `InventColorId` | `ColorId` |
@@ -716,8 +719,8 @@ Die berechnete Kennzahl `AvailQuantity` wird für die Datenquelle `pos` wie in d
 
 | Berechnungstyp | Datenquelle | Physikalische Messung |
 |---|---|---|
-| Addition | `fno` | `AvailPhysical` |
-| Addition | `pos` | `PosInbound` |
+| Hinzufügung | `fno` | `AvailPhysical` |
+| Hinzufügung | `pos` | `PosInbound` |
 | Subtraktion | `pos` | `PosOutbound` |
 
 #### <a name="configuration-of-the-iom-data-source"></a>Konfiguration der iom-Datenquelle

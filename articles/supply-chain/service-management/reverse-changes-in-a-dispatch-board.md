@@ -1,6 +1,6 @@
 ---
 title: Rückgängigmachen von Änderungen in einer Einsatzplanung
-description: In diesem Thema wird beschrieben, wie nicht gespeicherten Änderungen, die Sie in einer Einsatzplanung vornehmen, zurückgesetzt werden.
+description: In diesem Artikel wird beschrieben, wie nicht gespeicherten Änderungen, die Sie in einer Einsatzplanung vornehmen, zurückgesetzt werden.
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d2d801552518ab912ab240398b376017962151d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 08e0e2c2ce01aeb0f9901dc563198562695482f5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676662"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852040"
 ---
 # <a name="reverse-changes-in-a-dispatch-board"></a>Rückgängigmachen von Änderungen in einer Einsatzplanung 
 
 [!include [banner](../includes/banner.md)]
 
 
-In diesem Thema wird beschrieben, wie nicht gespeicherten Änderungen, die Sie in einer Einsatzplanung vornehmen, zurückgesetzt werden. Sie weisen beispielsweise eine Arbeitskraft einer Serviceaktivität zu, speichern die Informationen und entscheiden dann später, der Serviceaktivität eine andere Arbeitskraft zuzuweisen. Sie ändern die Arbeitskraft in der Einsatzplanung und erfahren dann, bevor Sie die Änderung speichern, dass die Arbeitskraft, die gerade zugewiesen wurde, nicht verfügbar ist. Sie können die nicht gespeicherten Änderung zurücksetzen, damit die ursprüngliche Arbeitskraft dem Serviceauftrag wieder zugeordnet wird.
+In diesem Artikel wird beschrieben, wie nicht gespeicherten Änderungen, die Sie in einer Einsatzplanung vornehmen, zurückgesetzt werden. Sie weisen beispielsweise eine Arbeitskraft einer Serviceaktivität zu, speichern die Informationen und entscheiden dann später, der Serviceaktivität eine andere Arbeitskraft zuzuweisen. Sie ändern die Arbeitskraft in der Einsatzplanung und erfahren dann, bevor Sie die Änderung speichern, dass die Arbeitskraft, die gerade zugewiesen wurde, nicht verfügbar ist. Sie können die nicht gespeicherten Änderung zurücksetzen, damit die ursprüngliche Arbeitskraft dem Serviceauftrag wieder zugeordnet wird.
 
 Gehen Sie folgendermaßen vor, um nicht gespeicherten Änderungen in einer Einsatzplanung zurückzusetzen:
 

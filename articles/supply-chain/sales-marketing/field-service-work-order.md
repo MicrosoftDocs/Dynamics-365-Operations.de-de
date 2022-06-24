@@ -1,6 +1,6 @@
 ---
 title: Arbeitsaufträge in Field Service mit Aufträgen in Supply Chain Management synchronisieren
-description: Dieses Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Arbeitsaufträge in Field Service mit Aufträgen in Supply Chain Management zu synchronisieren.
+description: Dieser Artikel erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Arbeitsaufträge in Field Service mit Aufträgen in Supply Chain Management zu synchronisieren.
 author: Henrikan
 ms.date: 04/09/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b7b311701aff12d58392fc036d0f1174678b7dc3
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: e64c9a954e8f5c4410f8ba370b40b7c6e76e8ae0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061308"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860521"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Arbeitsaufträge in Field Service mit Aufträgen in Supply Chain Management synchronisieren
 
@@ -29,7 +29,7 @@ ms.locfileid: "8061308"
 
 
 
-Dieses Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Arbeitsaufträge in Dynamics 365 Field Service mit Aufträgen in Dynamics 365 Supply Chain Management zu synchronisieren.
+Dieser Artikel erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Arbeitsaufträge in Dynamics 365 Field Service mit Aufträgen in Dynamics 365 Supply Chain Management zu synchronisieren.
 
 [![Synchronisierung von Geschäftsprozessen zwischen Supply Chain Management und Field Service.](./media/field-service-integration.png)](./media/field-service-integration.png)
 
@@ -165,7 +165,7 @@ Um Aufträge nachzuverfolgen, die ihren Ursprung in Arbeitsaufträgen haben, kö
 
 Standardmäßig wird von der Zuordnung der Auftragsgrundlage für den Auftragsgrundlagentyp **Arbeitsauftragsintegration** für alle Aufträge ausgewählt, die aus Arbeitsaufträgen erstellt werden. Dieses Verhalten kann nützlich sein, wenn Sie dem Auftrag in Supply Chain Management arbeiten. Sie müssen sicherstellen, dass Aufträge, die ihren Ursprung in Arbeitsaufträgen haben, nicht als Arbeitsaufträge nach Field Service zurück synchronisiert werden.
 
-Einzelheiten dazu, wie die korrekten Auftragsgrundlageneinstellungen in Supply Chain Management erstellt werden, finden Sie im Abschnitt „Voraussetzungen und Zuordnungseinrichtung” in diesem Thema.
+Einzelheiten dazu, wie die korrekten Auftragsgrundlageneinstellungen in Supply Chain Management erstellt werden, finden Sie im Abschnitt „Voraussetzungen und Zuordnungseinrichtung” in diesem Artikel.
 
 ### <a name="status"></a>Status
 

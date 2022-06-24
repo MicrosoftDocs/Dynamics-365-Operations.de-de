@@ -1,6 +1,6 @@
 ---
 title: Visuelle Zeitplanung für Lean Manufacturing
-description: Dieses Thema enthält Informationen zur Behandlung der Kanban-Zeitplanübersicht, die der Produktionsplaner verwenden kann, um den Produktionsplan für Kanban-Einzelvorgänge zu steuern und zu optimieren.
+description: Dieser Artikel enthält Informationen zur Behandlung der Kanban-Zeitplanübersicht, die der Produktionsplaner verwenden kann, um den Produktionsplan für Kanban-Einzelvorgänge zu steuern und zu optimieren.
 author: johanhoffmann
 ms.date: 06/16/2017
 ms.topic: article
@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af5803793a4874ee73f943d0f059047458c37dc48b7d3276dadc8d8803599fb9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a743be96867c1f325e6fe01f23355c27cb4d0cc0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764811"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875187"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Visuelle Zeitplanung für Lean Manufacturing
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Informationen zur Behandlung der Kanban-Zeitplanübersicht, die der Produktionsplaner verwenden kann, um den Produktionsplan für Kanban-Einzelvorgänge zu steuern und zu optimieren.
+Dieser Artikel enthält Informationen zur Behandlung der Kanban-Zeitplanübersicht, die der Produktionsplaner verwenden kann, um den Produktionsplan für Kanban-Einzelvorgänge zu steuern und zu optimieren.
 
-Dieses Thema enthält Informationen zur Behandlung der Kanban-Zeitplanübersicht, die der Produktionsplaner verwenden kann, um den Produktionsplan für Kanban-Einzelvorgänge zu steuern und zu optimieren.
+Dieser Artikel enthält Informationen zur Behandlung der Kanban-Zeitplanübersicht, die der Produktionsplaner verwenden kann, um den Produktionsplan für Kanban-Einzelvorgänge zu steuern und zu optimieren.
 
 Die Kanban-Zeitplanübersicht ermöglicht dem Produktionsplaner den Produktionsplan für Kanban-Einzelvorgänge zu steuern und zu optimieren. Er macht den Ausstoßes der Kanban-Einzelvorgänge transparent und gibt dem Produktionsplaner ein Tool, das die Produktionsplanung auf die Produktionsfertigungszelle optimiert und anhält.
 

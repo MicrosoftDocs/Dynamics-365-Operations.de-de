@@ -1,6 +1,6 @@
 ---
 title: Ausgleichen einer teilweisen Kreditorenzahlung, die mehrere Rabattzeiträume hat
-description: Dieses Thema führt Sie durch ein Szenario, in dem mehrere Teilzahlungen an einen Kreditoren vorgenommen werden, der mehrere Skonti anbietet.
+description: Dieser Artikel führt Sie durch ein Szenario, in dem mehrere Teilzahlungen an einen Kreditoren vorgenommen werden, der mehrere Skonti anbietet.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d805ce2de866d0073b4bb797eb7ddae0736e8948
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: f0599c25d1cd5e07ca5a955ecc96fed2e31383ec
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716278"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861646"
 ---
 # <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Ausgleichen einer teilweisen Kreditorenzahlung, die mehrere Rabattzeiträume hat
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema führt Sie durch ein Szenario, in dem mehrere Teilzahlungen an einen Kreditoren vorgenommen werden, der mehrere Skonti anbietet. 
+Dieser Artikel führt Sie durch ein Szenario, in dem mehrere Teilzahlungen an einen Kreditoren vorgenommen werden, der mehrere Skonti anbietet. 
 
 Kreditor 3054 bietet Fabrikam ein Skonto von 2 Prozent, wenn eine Rechnung in fünf Tagen bezahlt wird, und ein Skonto von 1 Prozent, wenn die Rechnung in 14 Tagen beglichen wird.
 

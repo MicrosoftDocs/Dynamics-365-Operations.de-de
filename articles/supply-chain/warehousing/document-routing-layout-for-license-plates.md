@@ -1,6 +1,6 @@
 ---
-title: Dokumenten-Routing-Layout für Kennzeichenetiketten
-description: In diesem Thema wird beschrieben, wie Formatierungsmethoden zum Drucken von Werten auf Etiketten verwendet werden.
+title: Dokumentweiterleitungs-Layout für Kennzeichenbeschriftungen
+description: In diesem Artikel wird beschrieben, wie Formatierungsmethoden zum Drucken von Werten auf Etiketten verwendet werden.
 author: perlynne
 ms.date: 04/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 9055e4c6e35099b7769faa6fc83f71523f2e64fd
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 10e63353cda93d666d7f23f59508b73e5492c3cc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103889"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847874"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Dokumenten-Routing-Layout für Kennzeichenetiketten
 
@@ -53,7 +53,7 @@ Mithilfe verschiedener weit verbreiteter Tools zur Etikettengenerierung können 
 
 ## <a name="turn-on-this-feature-for-your-system"></a>Schalten Sie diese Funktion für Ihr System ein
 
-Wenn Ihr System nicht bereits die in diesem Thema beschriebenen Funktionen enthält, gehen Sie zu [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und schalten Sie die Funktion *Erweiterte Layouts für Ladungsträger* ein. (Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden.)
+Wenn Ihr System nicht bereits die in diesem Artikel beschriebenen Funktionen enthält, gehen Sie zu [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und schalten Sie die Funktion *Erweiterte Layouts für Ladungsträger* ein. (Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden.)
 
 ## <a name="custom-number-formats"></a>Benutzerdefinierte Zahlenformate
 
@@ -129,7 +129,7 @@ Sie können von einer Anzeigemethode aus im folgenden Format drucken.
 $DisplayMethod()$
 ```
 
-Sie können dieses Format mit anderen Typen kombinieren, die weiter oben in diesem Thema beschrieben wurden. Sie haben beispielsweise eine Anzeigemethode mit dem Namen `DisplayListOfItemsNumbers()`, und Sie möchten die erste Artikelnummer dieser Methode drucken. In diesem Fall können Sie folgenden Code verwenden.
+Sie können dieses Format mit anderen Typen kombinieren, die weiter oben in diesem Artikel beschrieben wurden. Sie haben beispielsweise eine Anzeigemethode mit dem Namen `DisplayListOfItemsNumbers()`, und Sie möchten die erste Artikelnummer dieser Methode drucken. In diesem Fall können Sie folgenden Code verwenden.
 
 ```dos
 $DisplayListOfItemsNumbers()[1]$

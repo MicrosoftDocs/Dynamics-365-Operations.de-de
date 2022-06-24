@@ -1,6 +1,6 @@
 ---
 title: Methoden der Wiederbeschaffung und Mengenänderung
-description: Dieses Thema enthält Informationen zu Wiederbeschaffungsmethoden in der Planungsoptimierung. Außerdem wird erklärt, wie die Mehrfachbestellmenge für ein Produkt das Ergebnis beeinflusst.
+description: Dieser Artikel enthält Informationen zu Wiederbeschaffungsmethoden in der Planungsoptimierung. Außerdem wird erklärt, wie die Mehrfachbestellmenge für ein Produkt das Ergebnis beeinflusst.
 author: t-benebo
 ms.date: 6/1/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc7eb00f62b334ba032af6fef87c243a7ba0835a
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: d3e8ef3d38f1b9bacd89304aaf3f0350050232bd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468524"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873694"
 ---
 # <a name="replenishment-methods-and-quantity-modification"></a>Methoden der Wiederbeschaffung und Mengenänderung
 
 [!include [banner](../../includes/banner.md)]
 
-Dieses Thema enthält Informationen zu Wiederbeschaffungsmethoden in der Planungsoptimierung. Außerdem wird erklärt, wie die Mehrfachbestellmenge für ein Produkt das Ergebnis beeinflusst.
+Dieser Artikel enthält Informationen zu Wiederbeschaffungsmethoden in der Planungsoptimierung. Außerdem wird erklärt, wie die Mehrfachbestellmenge für ein Produkt das Ergebnis beeinflusst.
 
 Wiederbeschaffungsmethoden werden auch als Deckungsmethoden und Losgrößenmethoden bezeichnet.
 

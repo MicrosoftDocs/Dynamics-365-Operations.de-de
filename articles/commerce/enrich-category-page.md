@@ -1,6 +1,6 @@
 ---
-title: Füllen einer Kategorie-Landingpage
-description: In diesem Thema wird die Anreicherung der Kategorieseiten in Dynamics 365 Commerce abgedeckt.
+title: Kategoriezielseite erweitern
+description: In diesem Artikel wird die Anreicherung der Kategorieseiten in Dynamics 365 Commerce abgedeckt.
 author: v-chgri
 ms.date: 04/14/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5bb28c3b5fbb1133d32219b9c47dd1477ae2ac982ee035321dafd77c53dc910b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bfee3b09768fa19ab95c880d7f7cbf330a8c58d7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771006"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856963"
 ---
 # <a name="enrich-a-category-landing-page"></a>Kategoriezielseite erweitern
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird die Anreicherung der Kategorieseiten in Dynamics 365 Commerce abgedeckt.
+In diesem Artikel wird die Anreicherung der Kategorieseiten in Dynamics 365 Commerce abgedeckt.
 
 Handel enthält eine Standardkategorieangebotsseite, die verwendet wird, wenn Kategoriedaten angezeigt werden. Eine obligatorische Standardkategorieseite enthält Elemente, wie Verfeinerungen, kategorisierte Produktplatzierung und sortiert Optionen, enthält eine auserlesene Zusammenfassung und Paginierungskontrollen. 
 

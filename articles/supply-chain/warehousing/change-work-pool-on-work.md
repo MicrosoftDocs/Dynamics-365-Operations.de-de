@@ -1,6 +1,6 @@
 ---
 title: Arbeitspool für Arbeit ändern
-description: In diesem Thema wird erläutert, wie Sie die Schaltfläche „Arbeitspool ändern“ für Arbeitsaufgaben verwenden können, um den Arbeitspool vorhandener Arbeit zu ändern.
+description: In diesem Artikel wird erläutert, wie Sie die Schaltfläche „Arbeitspool ändern“ für Arbeitsaufgaben verwenden können, um den Arbeitspool vorhandener Arbeit zu ändern.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: dc210de420705062ba52c674f3ddb8eb7944715a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 817b45e8f5af957801a0af04e50acf20ba16c26d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669851"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900621"
 ---
 # <a name="change-work-pool-on-work"></a>Arbeitspool für Arbeit ändern
 
@@ -34,14 +34,14 @@ Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann ni
 
 ## <a name="set-up-the-change-work-pool-on-work-feature"></a>Die Funktion „Arbeitspool bei Arbeit ändern“ einrichten
 
-Um diese Funktion nutzen zu können, müssen einige Arbeitspools eingerichtet sein. Sie können Ihre Arbeitsvorlagen auch so einrichten, dass sie automatisch einen Pool zuweisen. Wenn Sie das weiter unten in diesem Thema enthaltene Beispielszenario durcharbeiten möchten, richten Sie Ihr System wie in diesem Abschnitt beschrieben ein.
+Um diese Funktion nutzen zu können, müssen einige Arbeitspools eingerichtet sein. Sie können Ihre Arbeitsvorlagen auch so einrichten, dass sie automatisch einen Pool zuweisen. Wenn Sie das weiter unten in diesem Artikel enthaltene Beispielszenario durcharbeiten möchten, richten Sie Ihr System wie in diesem Abschnitt beschrieben ein.
 
 ### <a name="set-up-work-pools"></a>Arbeitspools einrichten
 
 Mit Arbeitspools können Sie Arbeitsaufgaben nach Typ organisieren. Um mit der Funktion *Arbeitspool bei Arbeit ändern* zu arbeiten, müssen mindestens zwei Arbeitspools verfügbar sein. Gehen Sie folgendermaßen vor, um Arbeitspools anzuzeigen und hinzuzufügen.
 
 1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Arbeit \> Arbeitspools**.
-1. Wenn Sie mit Demodaten aus dem Unternehmen **USMF** arbeiten und das Beispielszenario später in diesem Thema durcharbeiten werden, fügen Sie zwei Arbeitspools mit den folgenden Einstellungen hinzu:
+1. Wenn Sie mit Demodaten aus dem Unternehmen **USMF** arbeiten und das Beispielszenario später in diesem Artikel durcharbeiten werden, fügen Sie zwei Arbeitspools mit den folgenden Einstellungen hinzu:
 
     - Arbeitspool 1:
 
@@ -57,7 +57,7 @@ Mit Arbeitspools können Sie Arbeitsaufgaben nach Typ organisieren. Um mit der F
 
 ### <a name="set-up-work-templates"></a>Arbeitsvorlagen einrichten
 
-Für jede Ihrer Arbeitsvorlagen können Sie nach Bedarf einen Standardarbeitspool festlegen. Für jede relevante Vorlage weisen Sie in der Spalte **Arbeitspool-ID** einen Arbeitspool hinzu. In diesem Fall erben alle Arbeitsaufgaben, die mithilfe einer bestimmten Vorlage generiert werden, automatisch den zugewiesenen Arbeitspool. Wenn Sie mit Demodaten aus dem Unternehmen **USMF** arbeiten und das Beispielszenario später in diesem Thema durcharbeiten werden, folgen Sie diesen Schritten.
+Für jede Ihrer Arbeitsvorlagen können Sie nach Bedarf einen Standardarbeitspool festlegen. Für jede relevante Vorlage weisen Sie in der Spalte **Arbeitspool-ID** einen Arbeitspool hinzu. In diesem Fall erben alle Arbeitsaufgaben, die mithilfe einer bestimmten Vorlage generiert werden, automatisch den zugewiesenen Arbeitspool. Wenn Sie mit Demodaten aus dem Unternehmen **USMF** arbeiten und das Beispielszenario später in diesem Artikel durcharbeiten werden, folgen Sie diesen Schritten.
 
 1. Gehen Sie zu **Lagerortverwaltung \> Einstellungen \> Arbeit \> Arbeitsvorlagen**.
 1. Klicken Sie im Aktionsbereich auf **Bearbeiten**, um die Seite in den Bearbeitungsmodus zu versetzen.
@@ -70,7 +70,7 @@ Für jede Ihrer Arbeitsvorlagen können Sie nach Bedarf einen Standardarbeitspoo
 
 ## <a name="example-scenario"></a>Beispielszenario
 
-Dieses Szenario zeigt, wie Sie den Stream der Verarbeitung für eine vorhandene Arbeitsaufgabe ändern, indem Sie dessen Arbeitspool ändern. Es verwendet Demodaten aus dem Unternehmen **USMF** und die Einstellungen, die zuvor in diesem Thema vorgeschlagen wurden.
+Dieses Szenario zeigt, wie Sie den Stream der Verarbeitung für eine vorhandene Arbeitsaufgabe ändern, indem Sie dessen Arbeitspool ändern. Es verwendet Demodaten aus dem Unternehmen **USMF** und die Einstellungen, die zuvor in diesem Artikel vorgeschlagen wurden.
 
 ### <a name="create-a-sales-order-and-release-it-to-the-warehouse"></a>Einen Auftrag erstellen und ihn für den Lagerort freigeben
 

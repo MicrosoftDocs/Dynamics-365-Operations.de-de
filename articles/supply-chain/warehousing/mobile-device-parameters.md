@@ -1,6 +1,6 @@
 ---
 title: Globale Parameter für mobile Geräte
-description: Dieses Thema erklärt, wie Sie die Einstellungen für mobile Geräte auf der Seite „Lagerverwaltungsparameter“ einrichten.
+description: Dieser Artikel erklärt, wie Sie die Einstellungen für mobile Geräte auf der Seite „Lagerverwaltungsparameter“ einrichten.
 author: Mirzaab
 ms.date: 08/13/2021
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0ae04c86ff1eafb649fcef7c34ace66bdc3e5cb8
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e6e03414edd9243fcc4156195928455b30a7cee9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679164"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847758"
 ---
 # <a name="global-mobile-device-parameters"></a>Globale Parameter für mobile Geräte
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema erklärt, wie Sie globale Lagerverwaltungsparameter einrichten, die sich darauf auswirken, wie das System mit mobilen Geräten interagiert.
+Dieser Artikel erklärt, wie Sie globale Lagerverwaltungsparameter einrichten, die sich darauf auswirken, wie das System mit mobilen Geräten interagiert.
 
 Weitere Informationen zum Einrichten von Lagerortarbeitskräften erhalten Sie in [Lagerortarbeitskräfte verwalten](manage-warehouse-workers.md). Weitere Informationen zur Kennzeichenbehandlung auf mobilen Geräten finden Sie unter [Kennzeichenempfang über die Warehouse Management Mobile App](warehousing-mobile-device-app-license-plate-receiving.md). Weitere Informationen zu den Zykluszählungsprozessen finden Sie unter [Zykluszählung](cycle-counting.md) und [Beispielszenarien für Zykluszählungen](cycle-counting-scenarios.md).
 
 ## <a name="open-the-warehouse-management-parameters-page"></a>Die Seite „Lagerortverwaltungsparameter“ öffnen
 
-Um die Seite **Lagerortverwaltungsparameter** zu öffnen, navigieren Sie zu **Lagerortverwaltung \> Setup \> Lagerortverwaltungsparameter**. Anschließend können Sie die Felder festlegen, die sich auf die Arbeit mit mobilen Geräten beziehen, wie im nächsten Abschnitt dieses Themas beschrieben.
+Um die Seite **Lagerortverwaltungsparameter** zu öffnen, navigieren Sie zu **Lagerortverwaltung \> Setup \> Lagerortverwaltungsparameter**. Anschließend können Sie die Felder festlegen, die sich auf die Arbeit mit mobilen Geräten beziehen, wie im nächsten Abschnitt dieses Artikels beschrieben.
 
 ## <a name="mobile-device-fasttab-on-the-general-tab"></a>Inforegister „Mobile Geräte“ auf der Registerkarte „Allgemein“
 

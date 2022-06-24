@@ -1,6 +1,6 @@
 ---
-title: Übersicht Omni-Channel-Zahlungen
-description: Dieses Thema bietet einen Überblick über die Omni-Kanalzahlungen in Dynamics 365 Commerce.
+title: Übersicht über Omnichannel-Zahlungen
+description: Dieser Artikel bietet einen Überblick über die Omni-Kanalzahlungen in Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 09/17/2020
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 593a647caeaf7d06aa1f2067954466db7dac6a1d
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: d850e532a764d22bc926f5649f4ad2907b49d1a0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984165"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881708"
 ---
-# <a name="omni-channel-payments-overview"></a>Übersicht Omni-Channel-Zahlungen
+# <a name="omni-channel-payments-overview"></a>Übersicht über Omnichannel-Zahlungen
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema bietet einen Überblick über die Omni-Kanalzahlungen in Dynamics 365 Commerce. Er umfasst eine umfangreiche Liste von unterstützten Szenarien, Informationen über Funktionalität und Problembehandlung und Beschreibungen einige typischer Probleme.
+Dieser Artikel bietet einen Überblick über die Omni-Kanalzahlungen in Dynamics 365 Commerce. Er umfasst eine umfangreiche Liste von unterstützten Szenarien, Informationen über Funktionalität und Problembehandlung und Beschreibungen einige typischer Probleme.
 
 ## <a name="key-terms"></a>Schlüsselbegriffe
 
@@ -45,15 +45,15 @@ Dieses Thema bietet einen Überblick über die Omni-Kanalzahlungen in Dynamics 3
 
 Im Allgemeinen beschreibt der Begriff *Omni-Kanal-Zahlungen* die Möglichkeit, einen Auftrag in einem Kanal zu erstellen und diesen in einem anderen Kanal zu erfüllen. Der Schlüssel zur Omni-Kanal-Zahlungunterstützung behält Zahlungsdetails zusammen mit den Restbetrag der Auftragsdetails und verwendet dann jene Zahlungsdetails, wenn der Auftrag zurückgerufen oder in einem anderen Kanal verarbeitet wird. Ein klassisches Beispiel ist das Szenarion „Einkauf online, Abholen im Geschäft“. In diesem Szenario werden die Zahlungsdetails hinzugefügt, wenn der Auftrag online erstellt wird. Sie werden dann am POS erneut aufgerufen, um die Zahlungskarte des Debitors bei der Abholung zu belasten. 
 
-Alle Szenarien, die in diesem Thema beschrieben werden, können implementiert werden, wenn das Standardzahlungs-Software-Development Kit (SDK) verwendet wird, das mit Commerce bereitgestellt wird. Die [Dynamics 365 Zahlungsverbindung für Adyen](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) stellt eine vordefinierte Implementierung jedes Szenarios zur Verfügung, das hier beschrieben wird. 
+Alle Szenarien, die in diesem Artikel beschrieben werden, können implementiert werden, wenn das Standardzahlungs-Software-Development Kit (SDK) verwendet wird, das mit Commerce bereitgestellt wird. Die [Dynamics 365 Zahlungsverbindung für Adyen](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) stellt eine vordefinierte Implementierung jedes Szenarios zur Verfügung, das hier beschrieben wird. 
 
 ### <a name="prerequisites"></a>Voraussetzungen
 
-Alle Szenarien, die in diesem Thema beschrieben werden, benötigen einen Zahlungskonnektor, der Omni-Kanalzahlungen unterstützt. Der vordefinierte Adyen-Konnektor kann auch verwendet werden, weil er die Szenarien unterstützt, die über das Zahlungen SDK bereitgestellt werden. Weitere Informationen dazu, wie Zahlungskonnektoren implementiert werden und Informationen zu Retail SDK im Allgemeinen finden Sie unter [Retail für It Pros und Entwickler-Startseite.](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
+Alle Szenarien, die in diesem Artikel beschrieben werden, benötigen einen Zahlungskonnektor, der Omni-Kanalzahlungen unterstützt. Der vordefinierte Adyen-Konnektor kann auch verwendet werden, weil er die Szenarien unterstützt, die über das Zahlungen SDK bereitgestellt werden. Weitere Informationen dazu, wie Zahlungskonnektoren implementiert werden und Informationen zu Retail SDK im Allgemeinen finden Sie unter [Retail für It Pros und Entwickler-Startseite.](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
 
 #### <a name="supported-versions"></a>Unterstützten Versionen
 
-Die Omnikanal-Zahlungsfunktionen, die in diesem Thema beschrieben sind, wurden im Rahmen der Microsoft Dynamics 365 for Retail Version 8.1.3 freigegeben. 
+Die Omnikanal-Zahlungsfunktionen, die in diesem Artikel beschrieben sind, wurden im Rahmen der Microsoft Dynamics 365 for Retail Version 8.1.3 freigegeben. 
 
 #### <a name="card-present-and-card-not-present-connectors"></a>„Karte vorhanden“ und „Karte nicht vorhanden“ Verbindungen
 
@@ -66,7 +66,7 @@ Das zweite Set von APIs nennt man **iNamedRequestHandler**. Er unterstützt die 
 Die folgenden Komponenten und Einrichtungsschritte sind erforderlich:
 
 - **eCommerce Integration:** Eine Integration mit Commerce ist erforderlich, um Szenarien zu unterstützen, in denen ein Auftrag aus einem Online-Geschäft stammt. Weitere Informationen zu Retail-E-Commerce SDK finden Sie unter [E-Commerce-Plattform-Software Development Kit (SDK)](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). In einer Vorführungsumgebung unterstützt das Bezugsschaufenster das Omnikanal-Zahlungsszenarien. 
-- **Online-Zahlungskonfiguration:** Die Einstellung des Online-Kanals muss einen Zahlungskonnektor enthalten, der aktualisiert wurde, um Omnikanalzahlungen zu unterstützen. Alternativ kann der vordefinierten Zahlungskonnektor verwendet werden. Informationen darüber, wie der für Adyen-Zahlungskonnektor für Onlineshops konfiguriert wird, finden Sie unter. [Adyen-Zahlungskonnektor](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce) Zusätzlich zum Einrichtungsschritt für eCommerce, der in diesem Thema beschrieben sind, muss der Parameter **Speichern von Zahlungsinformationen in eCommerce zulassen** auf **Wahr** in den Einstellungen für den Adyen-Konnektor festgelegt werden. 
+- **Online-Zahlungskonfiguration:** Die Einstellung des Online-Kanals muss einen Zahlungskonnektor enthalten, der aktualisiert wurde, um Omnikanalzahlungen zu unterstützen. Alternativ kann der vordefinierten Zahlungskonnektor verwendet werden. Informationen darüber, wie der für Adyen-Zahlungskonnektor für Onlineshops konfiguriert wird, finden Sie unter. [Adyen-Zahlungskonnektor](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce) Zusätzlich zum Einrichtungsschritt für eCommerce, der in diesem Artikel beschrieben sind, muss der Parameter **Speichern von Zahlungsinformationen in eCommerce zulassen** auf **Wahr** in den Einstellungen für den Adyen-Konnektor festgelegt werden. 
 - **Omnikanal-Zahlungskonfiguration:** Im Back Office gehen Sie zu **Einzelhandel und Handel \> Headquarters Einstellung \> Parameter \> Freigegebene Commerce-Parameter**. Legen Sie anschließend auf der Registerkarte **Omnikanal-Zahlungen** die Option **Omnikanal-Zahlungen verwenden** auf **Ja** fest. Ab der Commerce-Version 10.0.12 befindet sich diese Einstellung im Arbeitsbereich **Funktionsverwaltung**. Wählen Sie die Funktion **Omnikanal-Zahlungen** und klicken Sie auf **Jetzt aktivieren**. 
 - **Zahlungsdienstleistungen:** Das Callcenter verwendet den Standardzahlungskonnektor auf der Seite **Zahlungsdienste** um Zahlungen zu verarbeiten. Um Szenarien wie „Einkauf im Callcenter, Abholung im Shop“ zu unterstützen, muss dieser Standardzahlungskonnektor der Adyen-Zahlungskonnektor oder ein Zahlungskonnektor sein, der die Implementierungsbedingungen für Omnikanal-Zahlungen erfüllt.
 - **Überweisungs-Dienstleistungen:** Zahlungen über einen Zahlungsterminal müssen im Inforegsiter **Elektronische Überweisung** des Hardwareprofils eingerichtet werden. Der Adyen-Konnektor unterstützt Omnikanal-Zahlungs-Szenariostandards. Andere Zahlungskonnektoren, die die Schnittstelle **iNamedRequestHandler** unterstützen, können auch verwendet werden, wenn sie Omnikanal-Zahlungen unterstützen.
@@ -231,7 +231,7 @@ Wenn die Karte, die verwendet wurde, um einen Auftrag zu erstellen, nicht mehr g
 
 Wenn ein Auftrag, der mehrere Zahlungsmittel und mehrere Positionen beinhaltet, verarbeitet wird, wird der Kassierer aufgefordert zuerst die **Verfügbare Zahlungsmethode zu verwenden**. Sind mehrere Karten vorhanden, wenn der Kassierer **Verfügbare Zahlungsmethode verwenden** auswählt, werden bestehende Karten (Zahlungsmittel) erfasst, bis der Saldo für die Waren, die abgeholt werden, ausgeglichen ist. Der Kassierer hat nicht die Option, die Karte auszuwählen, die für die Waren verwendet werden soll, die abgeholt werden. 
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-articles"></a>Zugehörige Artikel
 
 - [FAQs zu Zahlungen](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Zahlungskonnektor von Dynamics 365 für Adyen](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)

@@ -1,6 +1,6 @@
 ---
 title: Lagerbuchungsdetails
-description: Dieses Thema bietet einen Überblick über die Buchungsdetails-Seite, auf der Details einer ausgewählten Lagerbuchung angezeigt werden.
+description: Dieser Artikel bietet einen Überblick über die Buchungsdetails-Seite, auf der Details einer ausgewählten Lagerbuchung angezeigt werden.
 author: rachel-profitt
 ms.date: 04/25/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-04-25
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: fd1416f21ce15dc832dd41ea4110c93bf5bb41a2
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 55e29d5804f57cd86fb5ddac5d6c5576b7ea5f61
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735913"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859386"
 ---
 # <a name="inventory-transaction-details"></a>Lagerbuchungsdetails
 
@@ -36,8 +36,8 @@ Die Seite **Buchungsdetails** ist in mehrere Inforegister aufgeteilt. Die folgen
 
 | Inforegister | Description |
 |---|---|
-| Allgemeines | Dieses Inforegister zeigt grundlegende Informationen über die ausgewählte Lagerbuchung. Zusätzlich zu den Feldern, die auf der Seite **Lagerbuchungen** angezeigt werden, enthält sie die zusätzlichen Felder, die weiter unten in diesem Thema beschrieben werden. |
-| Aktualisierungen | Dieses Inforegister zeigt Informationen an, die sich auf die physischen, finanziellen und Abrechnungsaspekte der ausgewählten Lagerbuchung beziehen. Je nach aktuellem Status der Buchung können einige Felder leer sein. Diese Felder werden jedoch automatisch festgelegt, wenn Transaktionen gebucht werden. Zusätzlich zu den Feldern, die auf der Seite **Lagerbuchungen** angezeigt werden, enthält dieses Inforegister die zusätzlichen Felder, die weiter unten in diesem Thema beschrieben werden. |
+| Allgemeines | Dieses Inforegister zeigt grundlegende Informationen über die ausgewählte Lagerbuchung. Zusätzlich zu den Feldern, die auf der Seite **Lagerbuchungen** angezeigt werden, enthält sie die zusätzlichen Felder, die weiter unten in diesem Artikel beschrieben werden. |
+| Aktualisierungen | Dieses Inforegister zeigt Informationen an, die sich auf die physischen, finanziellen und Abrechnungsaspekte der ausgewählten Lagerbuchung beziehen. Je nach aktuellem Status der Buchung können einige Felder leer sein. Diese Felder werden jedoch automatisch festgelegt, wenn Transaktionen gebucht werden. Zusätzlich zu den Feldern, die auf der Seite **Lagerbuchungen** angezeigt werden, enthält dieses Inforegister die zusätzlichen Felder, die weiter unten in diesem Artikel beschrieben werden. |
 | Sachkontobuchungen | Dieses Inforegister zeigt den Buchungstyp und das Sachkonto, die für die physische Aktualisierung, Finanzaktualisierung, für physische Umsatzerlöse, physische Belastungen, Finanzerträge und Finanzbelastungen verwendet werden, die sich auf die ausgewählte Lagerbuchung beziehen. |
 | Referenzen | Dieses Inforegister zeigt zusätzliche Informationen über die Quellbuchung, die die ausgewählte Lagerbuchung erstellt hat. Diese Informationen können beispielsweise Details aus der Bestellung oder dem Auftrag enthalten. |
 | Zugehörige Informationen | Dieses Inforegister zeigt zusätzliche Informationen über die ausgewählte Lagerbuchung. Diese Felder werden möglicherweise nicht festgelegt, wenn Sie einige Funktionen nicht verwenden, z. B. Beschaffungskategorien oder Projekte. |

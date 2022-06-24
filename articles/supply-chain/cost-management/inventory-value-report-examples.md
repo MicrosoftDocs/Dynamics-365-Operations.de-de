@@ -1,6 +1,6 @@
 ---
 title: Beispiele und Logik für Lagerwertberichte
-description: Dieses Thema enthält einige Beispiele für Ergebnisse, die in den einzelnen Typen von Lagerwertberichten dargestellt werden. Lagerwertberichte enthalten Details zu den physischen und finanziellen Mengen und Beträgen Ihrer Bestände.
+description: Dieser Artikel enthält einige Beispiele für Ergebnisse, die in den einzelnen Typen von Lagerwertberichten dargestellt werden. Lagerwertberichte enthalten Details zu den physischen und finanziellen Mengen und Beträgen Ihrer Bestände.
 author: JennySong-SH
 ms.date: 10/19/2021
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0d594fc18a104c434a334a5b6d1d249330a6be9a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e6c6387be5204fde6ebc7a4983567801900974af
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675318"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877652"
 ---
 # <a name="inventory-value-report-examples-and-logic"></a>Beispiele und Logik für Lagerwertberichte
 
 [!include [banner](../includes/banner.md)]
 
-Lagerwertberichte enthalten Details zu den physischen und finanziellen Mengen und Beträgen Ihrer Bestände. Dieses Thema enthält einige Beispiele für Ergebnisse, die in den einzelnen Typen von Lagerwertberichten dargestellt werden.
+Lagerwertberichte enthalten Details zu den physischen und finanziellen Mengen und Beträgen Ihrer Bestände. Dieser Artikel enthält einige Beispiele für Ergebnisse, die in den einzelnen Typen von Lagerwertberichten dargestellt werden.
 
 Weitere Informationen zum Generieren und Verwenden der einzelnen Typen von Lagerwertberichten finden Sie unter [Lagerwertberichte](inventory-value-report-storage.md).
 
 ## <a name="sample-data-that-is-used-in-these-examples"></a>Beispieldaten, die in diesen Beispielen verwendet werden
 
-Die Beispiele in diesem Thema basieren auf den in diesem Abschnitt beschriebenen Beispieltransaktionsdaten für das Inventar.
+Die Beispiele in diesem Artikel basieren auf den in diesem Abschnitt beschriebenen Beispieltransaktionsdaten für das Inventar.
 
 ### <a name="storage-dimension-setup"></a>Lagerdimensionsgruppe einrichten
 
@@ -70,9 +70,9 @@ Das Beispielsystem enthält eine Lagerwertberichtskonfiguration mit den folgende
 
 ## <a name="inventory-value-report-example-1"></a>Lagerwertberichtbeispiel 1
 
-Die folgende Tabelle und Abbildungen zeigen die Ergebnisse, wenn Sie die zuvor in diesem Thema beschriebene Beispieldaten- und -berichtskonfiguration verwenden.
+Die folgende Tabelle und Abbildungen zeigen die Ergebnisse, wenn Sie die zuvor in diesem Artikel beschriebene Beispieldaten- und -berichtskonfiguration verwenden.
 
-| Ressourcentyp | Ressource | Standort | Referenz | Lager: Wertmäßige Menge | Lager: Wertmäßiger Betrag | Lager: Gebuchte physische Menge | Lager: Gebuchter physischer Betrag | Lager: Menge | Lager: Betrag | Durchschnittliche Einheitskosten |
+| Ressourcentyp | Ressource | Website | Referenz | Lager: Wertmäßige Menge | Lager: Wertmäßiger Betrag | Lager: Gebuchte physische Menge | Lager: Gebuchter physischer Betrag | Lager: Menge | Lager: Betrag | Durchschnittliche Einheitskosten |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Material | B0001 | 1 | Endsaldo | 9.00 | 908.33 | 5.00 | 375.00 | 14,00 | 1,283.33 | 91.67 |
 | Material | B0001 | 2 | Endsaldo | 10.00 | 2,000.00 | 0,00 | 0,00 | 10.00 | 2,000.00 | 200.00 |
@@ -91,7 +91,7 @@ Die folgende Abbildung zeigt den **Lagerwert-Berichtspeicher**-Bericht für Beis
 
 ## <a name="inventory-value-report-example-2"></a>Lagerwertberichtbeispiel 2
 
-Die folgende Tabelle und die folgenden Abbildungen zeigen die Ergebnisse, wenn Sie die weiter oben in diesem Thema beschriebenen Beispieldaten verwenden, aber den Wert im Feld **Ebene** in der Berichtskonfiguration auf *Buchungen* ändern das Feld **Startdatum** auf den *15. März* ändern, wenn Sie den Bericht ausführen.
+Die folgende Tabelle und die folgenden Abbildungen zeigen die Ergebnisse, wenn Sie die weiter oben in diesem Artikel beschriebenen Beispieldaten verwenden, aber den Wert im Feld **Ebene** in der Berichtskonfiguration auf *Buchungen* ändern das Feld **Startdatum** auf den *15. März* ändern, wenn Sie den Bericht ausführen.
 
 | Ressourcentyp | Ressource | Standort | Datum | Anzahl | Referenz | Lager: Wertmäßige Menge | Lager: Wertmäßiger Betrag | Lager: Gebuchte physische Menge | Lager: Gebuchter physischer Betrag | Lager: Menge | Lager: Betrag |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -127,7 +127,7 @@ Die folgenden Unterabschnitte zeigen die Lagerwertberichte, die nach dem Lagerab
 
 ### <a name="example-3-when-the-totals-level-is-used"></a>Beispiel 3 bei Verwendung der Summenebene
 
-Die folgende Tabelle zeigt die Ergebnisse, wenn Sie die zuvor in diesem Thema beschriebene Beispieldaten- und -berichtskonfiguration verwenden. (In dieser Berichtskonfiguration ist das Feld **Ebene** auf *Summen* gesetzt.)
+Die folgende Tabelle zeigt die Ergebnisse, wenn Sie die zuvor in diesem Artikel beschriebene Beispieldaten- und -berichtskonfiguration verwenden. (In dieser Berichtskonfiguration ist das Feld **Ebene** auf *Summen* gesetzt.)
 
 | Ressourcentyp | Ressource | Standort | Referenz | Lager: Wertmäßige Menge | Lager: Wertmäßiger Betrag | Lager: Gebuchte physische Menge | Lager: Gebuchter physischer Betrag | Lager: Menge | Lager: Betrag | Durchschnittliche Einheitskosten |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -136,7 +136,7 @@ Die folgende Tabelle zeigt die Ergebnisse, wenn Sie die zuvor in diesem Thema be
 
 ### <a name="example-3-when-the-transactions-level-is-used"></a>Beispiel 3 bei Verwendung der Buchungsebene
 
-Die folgende Tabelle zeigt die Ergebnisse, wenn Sie die weiter oben in diesem Thema beschriebenen Beispieldaten verwenden, aber den Wert des Felds **Ebene** in der Berichtskonfiguration auf *Buchungen* ändern.
+Die folgende Tabelle zeigt die Ergebnisse, wenn Sie die weiter oben in diesem Artikel beschriebenen Beispieldaten verwenden, aber den Wert des Felds **Ebene** in der Berichtskonfiguration auf *Buchungen* ändern.
 
 | Ressourcentyp | Ressource | Standort | Datum | Anzahl | Referenz | Lager: Wertmäßige Menge | Lager: Wertmäßiger Betrag | Lager: Gebuchte physische Menge | Lager: Gebuchter physischer Betrag | Lager: Menge | Lager: Betrag |
 |---|---|---|---|---|---|---|---|---|---|---|---|

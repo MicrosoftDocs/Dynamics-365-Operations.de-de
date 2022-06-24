@@ -1,6 +1,6 @@
 ---
 title: Neuerungen oder Änderungen in Dynamics 365 Human Resources 20. September 2021
-description: Dieses Thema beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 20. September 2021 neu sind oder geändert wurden.
+description: Dieser Artikel beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 20. September 2021 neu sind oder geändert wurden.
 author: marcelbf
 ms.date: 09/20/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-09-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a3fd8705c7735cb3c0945f71651fafa767a7addf
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 47a46b7210b718aea7ec737971cb826eb5d0652d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691581"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858097"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-20-2021"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources 20. September 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dieses Thema beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources neu sind, geändert wurden oder demnächst erscheinen.
+Dieser Artikel beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources neu oder geändert sind oder bald eingeführt werden.
 
 Weitere Informationen zu unserem Aktualisierungsprozess und Zeitplan finden Sie unter [Aktualisierungsprozess](hr-admin-setup-update-process.md).
 
@@ -49,9 +49,9 @@ Die folgenden Funktionen sind in dieser Version allgemein verfügbar.
 Die folgenden Fehlerkorrekturen sind in diesem Release enthalten.
 
 > [!NOTE]
-> Unser Ziel ist es, Ihnen diese Informationen so schnell wie möglich zukommen zu lassen. Möglicherweise aktualisieren wir dieses Thema, um Fehlerkorrekturen einzubeziehen, die es in den Build geschafft haben, nachdem dieses Thema ursprünglich veröffentlicht wurde.
+> Unser Ziel ist es, Ihnen diese Informationen so schnell wie möglich zukommen zu lassen. Wir können diesen Artikel aktualisieren, um Fehlerbehebungen aufzunehmen, die es nach der Erstveröffentlichung dieses Artikels in den Build geschafft haben.
 
-| Problemnummer | Problem | Beschreibung |
+| Problemnummer | Problem | Description |
 |---|---|---|
 | 619774 | Das Bearbeiten der Adressbeschreibung wird nicht mit Dataverse in Echtzeit synchronisiert. | Beim Bearbeiten der Beschreibung für eine dresse der Arbeitskraft wird die aktualisierte Beschreibung nicht in Echtzeit mit Dataverse synchronisiert. Das Abonnement in der Tabelle **Logistikstandort** wurde aktualisiert, um ein Update zu senden. |
 | 614603| Auf der Seite **Arbeitskraft** tritt ein Fehler auf, wenn der Parameter **Personalaktivitäten der Arbeitskraft** ist nicht ausgewählt. | Wenn Sie einen neuen Mitarbeiter einstellen oder zur Seite **Arbeitskraft** navigieren, wird der Fehler „Das Feld **Persönlicher Aktivitätstyp** muss ausgefüllt werden“ auch dann angezeigt, wenn die Option **Personalaktivitäten** deaktiviert ist. |

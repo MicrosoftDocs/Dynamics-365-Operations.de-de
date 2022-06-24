@@ -1,6 +1,6 @@
 ---
 title: Einführung in Anlagen
-description: Dieses Thema bietet einen Überblick über Anlagen in Asset Management.
+description: Dieser Artikel bietet einen Überblick über Anlagen in Anlagenverwaltung.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43a5646bc4a1301922781d8b083dfa709befe3dca0fad1074b5433c6e02f5c66
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ee61c43f93d68747a7095dc9317674a435553c8a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767507"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874187"
 ---
 # <a name="introduction-to-assets"></a>Einführung in Anlagen
 
@@ -30,9 +30,9 @@ ms.locfileid: "6767507"
 
  
 
-Dieses Thema bietet einen Überblick über Anlagen in Asset Management. Eine *Anlage* ist jeder Ausrüstungstyp, wie z. B. eine Maschine oder ein Maschinenteil, der Wartung, Service oder Reparatur benötigt.
+Dieser Artikel bietet einen Überblick über Anlagen in Anlagenverwaltung. Eine *Anlage* ist jeder Ausrüstungstyp, wie z. B. eine Maschine oder ein Maschinenteil, der Wartung, Service oder Reparatur benötigt.
 
-Eine Anlage wird automatisch mit den dazugehörigen Informationen aktualisiert. Beispielsweise kann es sich bei den zugehörigen Informationen um neue oder aktualisierten Arbeitsaufträge handeln. Sie können eine Anlage mit der Menüoption **Alle Anlagen** oder **Ausstehende Anlagen** erstellen. In diesem Thema wird erläutert, wie Anlagen mit der Menüoption **Alle Anlagen** erstellt werden. Weitere Informationen zum Erstellen von Anlagen mit der Menüoption **Ausstehende Anlagen** finden Sie unter [Anlagen basierend auf Bestellungen erstellen](../objects/create-objects-based-on-purchase-orders.md).
+Eine Anlage wird automatisch mit den dazugehörigen Informationen aktualisiert. Beispielsweise kann es sich bei den zugehörigen Informationen um neue oder aktualisierten Arbeitsaufträge handeln. Sie können eine Anlage mit der Menüoption **Alle Anlagen** oder **Ausstehende Anlagen** erstellen. In diesem Artikel wird erläutert, wie Anlagen mit der Menüoption **Alle Anlagen** erstellt werden. Weitere Informationen zum Erstellen von Anlagen mit der Menüoption **Ausstehende Anlagen** finden Sie unter [Anlagen basierend auf Bestellungen erstellen](../objects/create-objects-based-on-purchase-orders.md).
 
 ## <a name="all-assets"></a>Alle Anlagen
 

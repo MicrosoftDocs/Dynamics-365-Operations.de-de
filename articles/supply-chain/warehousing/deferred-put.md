@@ -1,6 +1,6 @@
 ---
 title: Verzögerte Verarbeitung der Lagerarbeit
-description: In diesem Thema werden die Funktionen beschrieben, die die verzögerte Verarbeitung von Einlagerungsvorgängen in Dynamics 365 Supply Chain Management verfügbar machen.
+description: In diesem Artikel werden die Funktionen beschrieben, die die verzögerte Verarbeitung von Einlagerungsvorgängen in Dynamics 365 Supply Chain Management verfügbar machen.
 author: Mirzaab
 ms.date: 11/18/2019
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f99e960ffe7ca383563cc49c2e0825592ef5de57
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f4eeea0805c2cecedbd6b42926191ab02022df9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577863"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899294"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Verzögerte Verarbeitung der Lagerarbeit
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die Funktionen beschrieben, die die verzögerte Verarbeitung von Lagerarbeiten in Dynamics 365 Supply Chain Management verfügbar machen.
+In diesem Artikel werden die Funktionen beschrieben, die die verzögerte Verarbeitung von Lagerarbeiten in Dynamics 365 Supply Chain Management verfügbar machen.
 
 Mit der verzögerten Verarbeitungsfunktion können Lagerarbeiter weiterhin andere Aufgaben erledigen, während im Hintergrund der Einlagerungsvorgang verarbeitet wird. Die verzögerte Verarbeitung ist hilfreich, wenn zahlreiche Arbeitspositionen verarbeitet werden müssen und die Arbeitskraft diese Arbeit asynchron verarbeiten lassen kann. Sie ist außerdem nützlich, wenn es beim Server zu spontanen oder ungeplanten Zunahmen bei der Verarbeitungszeit kommen kann und sich diese erhöhte Verarbeitungszeit auf die Produktivität des Benutzers auswirken kann.
 

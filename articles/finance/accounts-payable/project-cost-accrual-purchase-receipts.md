@@ -1,6 +1,6 @@
 ---
-title: Projektkostenabgrenzung beim Empfang von Bestellungen
-description: In diesem Thema wird beschrieben, wie Projektkosten von Bestellbelegen in Microsoft Dynamics 365 Finance nachverfolgt werden können.
+title: Projektkostenabgrenzung für Einkaufslieferungen
+description: In diesem Artikel wird beschrieben, wie Projektkosten von Bestellbelegen in Microsoft Dynamics 365 Finance nachverfolgt werden können.
 author: sunfzam
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7e435002bca8fd4deb58c16c50db55237a3e9053
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: a138fd41269fad2e9ac489664ca81c3ee12f830d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735109"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856856"
 ---
 # <a name="project-cost-accrual-on-purchase-receipts"></a>Projektkostenabgrenzung für Einkaufslieferungen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Projektkosten von Bestellbelegen in Microsoft Dynamics 365 Finance nachverfolgt werden können. 
+In diesem Artikel wird beschrieben, wie Projektkosten von Bestellbelegen in Microsoft Dynamics 365 Finance nachverfolgt werden können. 
 
 Rechnungen für ein Projekt werden häufig später als die Waren und Dienstleistungen geliefert, was erheblichen Auswirkungen auf Projektleistungskennzahlen (KPIs) haben kann. Es wichtig, in der Lage zu sein, diese Buchungen in Projektberichten und Finanzberichten zu verfolgen.
 

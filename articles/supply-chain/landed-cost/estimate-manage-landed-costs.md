@@ -1,6 +1,6 @@
 ---
 title: Gesamttransportkosten kalkulieren und verwalten
-description: Das System verwendet Ihre Autokalkulation, um eine Schätzung für Ihre gelandeten Kosten zu ermitteln. Dieses Thema erklärt, wie Sie verschiedene Szenarien definieren können, um eine genauere Schätzung zu erhalten.
+description: Das System verwendet Ihre Autokalkulation, um eine Schätzung für Ihre gelandeten Kosten zu ermitteln. Dieser Artikel erklärt, wie Sie verschiedene Szenarien definieren können, um eine genauere Schätzung zu erhalten.
 author: Weijiesa
 ms.date: 01/26/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-26
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 630fb9dc8e7954fcbc4f54941d81de1caa657676
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2e7cdd7c7439a24ec75a59bcee1e8f42f37bb2cd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8696206"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854440"
 ---
 # <a name="estimate-and-manage-landed-costs"></a>Gesamttransportkosten kalkulieren und verwalten
 
@@ -50,7 +50,7 @@ Die folgende Tabelle beschreibt die Felder, die für jede Vorlage verfügbar sin
 
 Verwenden Sie das Dialogfeld **Kalkulation**, um eine neue Kalkulation zu erstellen, die auf einer ausgewählten Kostenvorlage, einem ausgewählten Satz von Artikeln und anderen Details einer Route basiert. Diese Einstellungen werden dann verwendet, um die geschätzten Gesamttransportkosten der Waren zu ermitteln. Diese Kostenschätzungen werden hauptsächlich für die Arbeit mit Standard-Kalkulationen verwendet. Indem Sie die geschätzten Wareneinstandskosten zu den Standardkosten der Waren im Bestand addieren, sollten Sie kleinere Abweichungstransaktionen erleben, wenn die Waren zu einer Fahrt hinzugefügt werden, da die Standardkosten die Schätzungen dieser Wareneinstandskosten widerspiegeln werden.
 
-Um das Dialogfenster **Kalkulation** zu öffnen, gehen Sie auf **Gesamttransportkosten \> Periodische Aufgaben \> Kalkulation**. Legen Sie dann die Felder fest, die in den folgenden Unterkapiteln beschrieben werden. Wählen Sie schließlich **OK**, um den Kostenvoranschlag zu erstellen. Die Seite **Kostenvoranschlag** (**Gesamttransportkosten \> Abfragen \> Kalkulationen**) erscheint dann und zeigt Ihre neue Kalkulation an, wie später in diesem Thema beschrieben.
+Um das Dialogfenster **Kalkulation** zu öffnen, gehen Sie auf **Gesamttransportkosten \> Periodische Aufgaben \> Kalkulation**. Legen Sie dann die Felder fest, die in den folgenden Unterkapiteln beschrieben werden. Wählen Sie schließlich **OK**, um den Kostenvoranschlag zu erstellen. Die Seite **Kostenvoranschlag** (**Gesamttransportkosten \> Abfragen \> Kalkulationen**) erscheint dann und zeigt Ihre neue Kalkulation an, wie später in diesem Artikel beschrieben.
 
 ### <a name="settings-on-the-parameters-tab"></a>Einstellungen auf der Registerkarte Parameter
 
@@ -91,7 +91,7 @@ Um die Volumen- und/oder Gewichtsangaben für einen Artikel anzuzeigen oder anzu
 
 ## <a name="manage-estimated-costs"></a>Kalkulationen verwalten
 
-Um die von Ihnen erstellten Kalkulationen anzusehen und zu bearbeiten, gehen Sie zu **Gesamttransportkosten \> Abfragen \> Kostenvoranschläge**. Auf der Seite **Kostenvoranschläge** zeigt der Listenbereich auf der linken Seite alle aktuellen Kalkulationen an. Sie können die Schaltflächen im Aktivitätsbereich verwenden, um mit einem ausgewählten Kostenvoranschlag zu arbeiten. Beachten Sie, dass Sie auf der Seite **Kalkulationen** keine neue Kalkulation erstellen können. Verwenden Sie stattdessen das Dialogfeld **Kostenvoranschlag** (**Gesamttransportkosten \> Periodische Aufgaben \> Kalkulation**), wie weiter oben in diesem Thema beschrieben.
+Um die von Ihnen erstellten Kalkulationen anzusehen und zu bearbeiten, gehen Sie zu **Gesamttransportkosten \> Abfragen \> Kostenvoranschläge**. Auf der Seite **Kostenvoranschläge** zeigt der Listenbereich auf der linken Seite alle aktuellen Kalkulationen an. Sie können die Schaltflächen im Aktivitätsbereich verwenden, um mit einem ausgewählten Kostenvoranschlag zu arbeiten. Beachten Sie, dass Sie auf der Seite **Kalkulationen** keine neue Kalkulation erstellen können. Verwenden Sie stattdessen das Dialogfeld **Kostenvoranschlag** (**Gesamttransportkosten \> Periodische Aufgaben \> Kalkulation**), wie weiter oben in diesem Artikel beschrieben.
 
 Die Seite **Kostenvoranschlag** zeigt, wie die einzelnen Kalkulationen zustande gekommen sind. Sie zeigt auch die geschätzten Gesamttransportkosten für jeden Artikel an. Sie können eine Kalkulation modifizieren, indem Sie den Selbstkostenpreis und/oder die Währung ändern, die mit den verschiedenen Waren verbunden ist. Sie können auch die zugehörigen Kalkulationen sowohl auf Fahrt- als auch auf Containerebene ändern. Wenn Sie diese Seite zum Ändern der Kosten verwenden, werden Sie aufgefordert, die geschätzten Kosten für die Artikel in der Kalkulation neu zu berechnen. Wenn Sie fertig sind, können Sie die Schätzungen verwenden, um die Selbstkosten der Artikel in der Kalkulation zu aktualisieren.
 

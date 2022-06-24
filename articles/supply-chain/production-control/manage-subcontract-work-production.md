@@ -1,6 +1,6 @@
 ---
 title: Verwalten Sie Lohnarbeit in der Produktion
-description: In diesem Thema wird erläutert, wie Fremdarbeitsdienste in Dynamics 365 Supply Chain Management verwaltet werden. Das bedeutet, wird dies, wie Produktions-Einzelvorgänge, die einer Ressource zugewiesen, von einem Kreditor verwaltet werden.
+description: In diesem Artikel wird erläutert, wie Fremdarbeitsdienste in Dynamics 365 Supply Chain Management verwaltet werden. Das bedeutet, wird dies, wie Produktions-Einzelvorgänge, die einer Ressource zugewiesen, von einem Kreditor verwaltet werden.
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e80efc751ccf9243163d23ed48fd17923326f89
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a0021d409f9f4a9b36effbd80a99766812572d5b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579378"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863794"
 ---
 # <a name="manage-subcontracting-work-in-production"></a>Verwalten Sie Lohnarbeit in der Produktion
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Fremdarbeitsdienste in Dynamics 365 Supply Chain Management verwaltet werden. Das bedeutet, wird dies, wie Produktions-Einzelvorgänge, die einer Ressource zugewiesen, von einem Kreditor verwaltet werden.
+In diesem Artikel wird erläutert, wie Fremdarbeitsdienste in Dynamics 365 Supply Chain Management verwaltet werden. Das bedeutet, wird dies, wie Produktions-Einzelvorgänge, die einer Ressource zugewiesen, von einem Kreditor verwaltet werden.
 
 In [Produktionsprozesse](production-process-overview.md) kann Arbeit nach Ressourcen ausgeführt werden, die von den Kreditoren zugeordnet oder verwaltet werden. Normalerweise werden Kreditorenbetriebsmittel der Ebene der periodischen Übernachfrage verwendet, die die verfügbare Kapazität der eigenen Ressourcen eines Unternehmens hinausreicht. Der Kreditor kann z auch in der Lage, Angaben [Ressourcenfunktionen](resource-capabilities.md) oder Ressourcen mit einem geringeren Preis anzubieten.  
 
@@ -63,7 +63,7 @@ Wenn diese Konfiguration verwendet wird, wird einer Bestellung für das zugehör
 Ein Produktionsauftrag kann zahlreiche Arbeitsgänge haben, und jeder Arbeitsgang kann zu einem anderen Lieferanten zugewiesen werden. Daher kann ausgelöst hat ein aufeinander folgender Produktionsauftrag mehrere Bestellungen.
 
 ## <a name="subcontracting-of-production-flow-activities"></a>Zulieferung der Produktionsflussaktivitäten
-Die [Lean Manufacturing](lean-manufacturing-overview.md)-Lösungsmodelle wird die Fremdarbeit als Dienst modelliert, der mit einer Aktivität eines [Produktionsflusses](tasks/create-production-flow-version.md) (Aufgabeleitfaden) verknüpft ist. Daher wird dieser Typ Zulieferung der auch als [aktivitätsbasierte Fremdarbeit](activity-based-subcontracting.md). Ein spezieller Kostengruppentyp mit der Bezeichnung **Direktes Outsourcing** wurde eingeführt und die Fremdarbeitsdienstleistungen sind nicht mehr Teil einer Stückliste (BOM). Wenn Sie Produktion verwenden, werden alle nach Kanbans Aktivitäten definiert, die in einem oder mehreren zu Produktionsflussaktivitäten zugeordnet werden können. Bis hierher klingt diese Erklärung wie die zu Produktionsaufträgen. Allerdings für Produktionsaufträge mit einem Produkt, müssen immer beenden können Sie Kanbans erstellen, um ein Halbfertigprodukt zu liefern. Sie müssen ein neues Produkt und einer Stücklistenebene nicht vorstellen.  
+Die [Lean Manufacturing](lean-manufacturing-overview.md)-Lösungsmodelle wird die Fremdarbeit als Dienst modelliert, der mit einer Aktivität eines [Produktionsflusses](tasks/create-production-flow-version.md) (Aufgabeleitfaden-Artikel) verknüpft ist. Daher wird dieser Typ Zulieferung der auch als [aktivitätsbasierte Fremdarbeit](activity-based-subcontracting.md). Ein spezieller Kostengruppentyp mit der Bezeichnung **Direktes Outsourcing** wurde eingeführt und die Fremdarbeitsdienstleistungen sind nicht mehr Teil einer Stückliste (BOM). Wenn Sie Produktion verwenden, werden alle nach Kanbans Aktivitäten definiert, die in einem oder mehreren zu Produktionsflussaktivitäten zugeordnet werden können. Bis hierher klingt diese Erklärung wie die zu Produktionsaufträgen. Allerdings für Produktionsaufträge mit einem Produkt, müssen immer beenden können Sie Kanbans erstellen, um ein Halbfertigprodukt zu liefern. Sie müssen ein neues Produkt und einer Stücklistenebene nicht vorstellen.  
 
 Da Kanban-Regeln sehr dynamisch werden können, können diesem verschiedene Varianten der Lieferung für dasselbe Produkt in einem Produktionsfluss modellieren. Wenn Sie schlanke Zulieferung verwenden, werden der Materialfluss und der Finanzstrom ausschließlich getrennt. Der gesamte Materialfluss wird durch Kanbanaktivitäten dargestellt. Die Bestellungen für die Service-Produkte und Zugangsbuchung für diese Leistungen können, auf dem Status von Kanban-Einzelvorgängen im Produktionsfluss automatisiert werden. Kanban-Einzelvorgänge können gestartet und abgeschlossen werden, auch vor die Bestellungen erstellt werden. Die Fremdarbeitsdokumente (Bestellung und Empfang von Bestellungen des Service) können von der Periode und des Diensts zusammengefasst werden. Daher kann die Anzahl von Einkaufsbelegen und Positionen, die auch in ausdrücklich wiederholenden Arbeitsgängen klein aufbewahrt werden, in denen Kreditoren von Dienstleistungszeiten Dienstleistungen in einem Einzelstückfluss erbringen.
 

@@ -1,6 +1,6 @@
 ---
 title: Produktionsausführungsoberfläche entwerfen
-description: In diesem Thema wird erläutert, wie Formularsteuerelemente so konfiguriert werden, dass die standardmäßigen Ausführungsstile der Produktionsumgebung auf sie angewendet werden.
+description: In diesem Artikel wird erläutert, wie Formularsteuerelemente so konfiguriert werden, dass die standardmäßigen Ausführungsstile der Produktionsumgebung auf sie angewendet werden.
 author: johanhoffmann
 ms.date: 11/08/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-02-22
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: ef39dc6414f0afdadd4a4b5a41e1fb1fe60e4974
-ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
+ms.openlocfilehash: ad6ecd591353fe8ddc1a5b9049d65491fb58e98a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7790889"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859139"
 ---
 # <a name="style-the-production-floor-execution-interface"></a>Produktionsausführungsoberfläche entwerfen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Formularsteuerelemente so konfiguriert werden, dass die standardmäßigen Ausführungsstile der Produktionsumgebung auf sie angewendet werden.
+In diesem Artikel wird erläutert, wie Formularsteuerelemente so konfiguriert werden, dass die standardmäßigen Ausführungsstile der Produktionsumgebung auf sie angewendet werden.
 
 ## <a name="forms-and-dialogs"></a>Formulare und Dialoge
 
@@ -31,7 +31,7 @@ Stile können nur dann auf ein Formular oder Dialogfeld angewendet werden, wenn 
 - Wenn das Formular dem bestehenden Berichtsfortschrittsformular ähneln soll, muss der Name Ihres Formulars oder Dialogs mit `JmgProductionFloorExecutionCustomInputDialog` beginnen.
 - Das Formular oder Dialogfeld kann ein Detailformularteil enthalten. Um Stile darauf anzuwenden, muss der Name des Detailformularteils mit `JmgProductionFloorExecutionCustomDetailsDialog` beginnen.
 - Soll das Formular oder der Dialog eine einfache Ansicht haben, dann muss der Name der einfachen Ansicht mit `JmgProductionFloorExecutionCustomDialog` beginnen. Beispiele für Formulare mit einfacher Ansicht sind das Startformular und das Formular für indirekte Aktivitäten.
-- Alle Steuerelemente im Dialogfeld müssen wie in diesem Thema beschrieben konfiguriert werden.
+- Alle Steuerelemente im Dialogfeld müssen wie in diesem Artikel beschrieben konfiguriert werden.
 
 > [!IMPORTANT]
 > Die in den ersten beiden Aufzählungspunkten dieser Liste genannten Funktionen erfordern Supply Chain Management Version 10.0.19 oder höher.

@@ -1,6 +1,6 @@
 ---
 title: Arbeiten mit serialisierten Artikeln in der POS
-description: In diesem Thema wird erläutert, wie Sie serialisierte Artikel in der Verkaufsstellen-(POS)-Anwendung verwalten.
+description: In diesem Artikel wird erläutert, wie Sie serialisierte Artikel in der Verkaufsstellen-(POS)-Anwendung verwalten.
 author: boycezhu
 ms.date: 01/08/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 5725943fd249e1b5d66b08b829c2eb58b6aad3ee24db9ca83bbde9be906bbf82
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a715a9d025f36656506daeb9e611bfacdafa102
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737577"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880028"
 ---
 # <a name="work-with-serialized-items-in-the-pos"></a>Arbeiten mit serialisierten Artikeln in der POS
 
 [!include [banner](includes/banner.md)]
 
-Viele Einzelhändler verkaufen Produkte, die eine serielle Kontrolle erfordern. Diese Produkte werden als *serialisierte Artikel* bezeichnet. Einige Einzelhändler möchten möglicherweise Seriennummern im Shop- oder Lagerortbestand für Nachverfolgungszwecke beibehalten. Andere Einzelhändler möchten möglicherweise während des Verkaufsprozesses Seriennummern für Service- und Garantiezwecke erfassen. In diesem Thema wird erläutert, wie Sie serialisierte Artikel in der Microsoft Dynamics 365 Commerce-Verkaufsstellen-(POS)-Anwendung verwalten können.
+Viele Einzelhändler verkaufen Produkte, die eine serielle Kontrolle erfordern. Diese Produkte werden als *serialisierte Artikel* bezeichnet. Einige Einzelhändler möchten möglicherweise Seriennummern im Shop- oder Lagerortbestand für Nachverfolgungszwecke beibehalten. Andere Einzelhändler möchten möglicherweise während des Verkaufsprozesses Seriennummern für Service- und Garantiezwecke erfassen. In diesem Artikel wird erläutert, wie Sie serialisierte Artikel in der Microsoft Dynamics 365 Commerce-Verkaufsstellen-(POS)-Anwendung verwalten können.
 
 ## <a name="serial-number-configurations"></a>Seriennummernkonfigurationen
 
@@ -124,7 +124,7 @@ Bei serialisierten Artikeln, die zur zukünftigen Abholung oder zum Versand verk
 
 ### <a name="apply-serial-numbers-during-customer-order-fulfillment-or-pickup"></a>Seriennummern während der Auftragserfüllung oder Abholung anwenden
 
-Bei der Erfüllung von Kundenauftragspositionen für serialisierte Produkte mit dem Vorgang **Auftragserfüllung** am POS erzwingt der POS die Erfassung der Seriennummer vor der endgültigen Erfüllung. Wenn bei der Erstbestellungserfassung keine Seriennummer angegeben wurde, muss diese daher während des Kommissionierungs-, Verpackungs- oder Versandprozesses am POS erfasst werden. Bei jedem Schritt wird eine Validierung durchgeführt, und der Benutzer wird nur dann nach Seriennummern gefragt, wenn diese fehlen oder nicht mehr gültig sind. Wenn ein Benutzer beispielsweise die Schritte zum Kommissionieren oder Verpacken überspringt und sofort eine Sendung initiiert und keine Seriennummer für die Leitung registriert wurde, muss die Seriennummer vor Abschluss des letzten Rechnungsschritts am POS eingegeben werden. Wenn Sie die Erfassung der Seriennummer während der Auftragserfüllung am POS erzwingen, gelten weiterhin alle zuvor in diesem Thema genannten Regeln. Nur als **Aktiv** serialisierte konfiguriert Elemente durchlaufen eine Bestandsüberprüfung der Seriennummer. Als **Im Verkaufsprozess aktiv** konfigurierte Elemente werden nicht validiert. Wenn **Physischer negativer Bestand** für **Aktiv**-Produkte zulässig ist, wird jede Seriennummer akzeptiert, unabhängig von der Verfügbarkeit des Bestands. Für **Aktive** und **Um Verkaufsprozess aktive** Artikel kann ein Benutzer, wenn **Leere Abgabe zulässig** konfiguriert ist, bei die Seriennummern Bedarf während der Schritte zum Kommissionieren, Verpacken und Versenden leer lassen.
+Bei der Erfüllung von Kundenauftragspositionen für serialisierte Produkte mit dem Vorgang **Auftragserfüllung** am POS erzwingt der POS die Erfassung der Seriennummer vor der endgültigen Erfüllung. Wenn bei der Erstbestellungserfassung keine Seriennummer angegeben wurde, muss diese daher während des Kommissionierungs-, Verpackungs- oder Versandprozesses am POS erfasst werden. Bei jedem Schritt wird eine Validierung durchgeführt, und der Benutzer wird nur dann nach Seriennummern gefragt, wenn diese fehlen oder nicht mehr gültig sind. Wenn ein Benutzer beispielsweise die Schritte zum Kommissionieren oder Verpacken überspringt und sofort eine Sendung initiiert und keine Seriennummer für die Leitung registriert wurde, muss die Seriennummer vor Abschluss des letzten Rechnungsschritts am POS eingegeben werden. Wenn Sie die Erfassung der Seriennummer während der Auftragserfüllung am POS erzwingen, gelten weiterhin alle zuvor in diesem Artikel genannten Regeln. Nur als **Aktiv** serialisierte konfiguriert Elemente durchlaufen eine Bestandsüberprüfung der Seriennummer. Als **Im Verkaufsprozess aktiv** konfigurierte Elemente werden nicht validiert. Wenn **Physischer negativer Bestand** für **Aktiv**-Produkte zulässig ist, wird jede Seriennummer akzeptiert, unabhängig von der Verfügbarkeit des Bestands. Für **Aktive** und **Um Verkaufsprozess aktive** Artikel kann ein Benutzer, wenn **Leere Abgabe zulässig** konfiguriert ist, bei die Seriennummern Bedarf während der Schritte zum Kommissionieren, Verpacken und Versenden leer lassen.
 
 Validierungen für Seriennummern werden auch durchgeführt, wenn ein Benutzer die Abholvorgänge für Kundenbestellungen am POS ausführt. Die POS-Anwendung ermöglicht nicht, dass eine Abholung eines serialisierten Produkts abgeschlossen wird, es sei denn, sie besteht die oben genannten Validierungen. Die Validierungen basieren immer auf der Rückverfolgungsangaben des Produkts und den Verkaufslagerkonfigurationen. 
 

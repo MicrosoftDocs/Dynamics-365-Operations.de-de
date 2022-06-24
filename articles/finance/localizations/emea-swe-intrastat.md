@@ -1,6 +1,6 @@
 ---
-title: Schwedisches Intrastat
-description: Dieses Thema enthält Informationen zur Intrastat-Meldung in Schweden.
+title: Intrastat (Schweden)
+description: Dieser Artikel enthält Informationen zur Intrastat-Meldung in Schweden.
 author: anasyash
 ms.date: 8/24/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 1031b93950e44fe3b1b6254bf1503b4c09d6fd10
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: a81f0c19923d1a4747c2ecb8ab03dd86b45497ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727397"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886259"
 ---
 # <a name="swedish-intrastat"></a>Schwedisches Intrastat
 

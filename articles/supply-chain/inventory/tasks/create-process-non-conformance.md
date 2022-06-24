@@ -1,6 +1,6 @@
 ---
 title: Erstellen und Verarbeiten von Qualitätsmängeln
-description: Dieses Thema beschreibt, wie Sie das Management von Qualitätsmängeln auf der Basis eines bestehenden Qualitätsprüfungsauftrags durchführen können.
+description: Dieser Artikel beschreibt, wie Sie das Management von Qualitätsmängeln auf der Basis eines bestehenden Qualitätsprüfungsauftrags durchführen können.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 032f5b712c2be5312524129cd25e655e778f5f44
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: dd8a10e88ab4d1be24a11739dddd7619b3fa6bbc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580863"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901965"
 ---
 # <a name="create-and-process-nonconformances"></a>Erstellen und Verarbeiten von Qualitätsmängeln
 
 [!include [banner](../../includes/banner.md)]
 
-Dieses Thema beschreibt, wie Sie das Management von Qualitätsmängeln auf der Basis eines bestehenden Qualitätsprüfungsauftrags durchführen können. Typischerweise wird das Qualitätsmangel-Management von einem Qualitätssachbearbeiter durchgeführt. Als Voraussetzung müssen Sie einen Qualitätsprüfungsauftrag zur Verfügung haben. (Informationen zum Erstellen eines Qualitätsprüfungsauftrags finden Sie unter [Prüfen der Qualität von Waren](inspect-quality-goods.md).)
+Dieser Artikel beschreibt, wie Sie das Management von Qualitätsmängeln auf der Basis eines bestehenden Qualitätsprüfungsauftrags durchführen können. Typischerweise wird das Qualitätsmangel-Management von einem Qualitätssachbearbeiter durchgeführt. Als Voraussetzung müssen Sie einen Qualitätsprüfungsauftrag zur Verfügung haben. (Informationen zum Erstellen eines Qualitätsprüfungsauftrags finden Sie unter [Prüfen der Qualität von Waren](inspect-quality-goods.md).)
 
 Bevor ein Benutzer die Genehmigung eines Qualitätsmangels verarbeiten kann, muss ihm ein worker im Feld **Person** auf der Seite **Benutzer** zugewiesen werden. Zusätzlich muss in den Benutzeroptionen die Option **Dokumentenbearbeitung aktivieren** auf *Ja* festgelegt werden, bevor der Benutzer die Dokumentennotizen verwenden kann.
 

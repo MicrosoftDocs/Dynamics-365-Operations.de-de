@@ -1,6 +1,6 @@
 ---
 title: Commerce-Kataloge für B2B-Websites erstellen
-description: In diesem Thema wird beschrieben, wie Sie Commerce-Kataloge für Business-to-Business-Websites (B2B) in Microsoft Dynamics 365 Commerce erstellen.
+description: In diesem Artikel wird beschrieben, wie Sie Commerce-Kataloge für Business-to-Business-Websites (B2B) in Microsoft Dynamics 365 Commerce erstellen.
 author: ashishmsft
 ms.date: 05/18/2022
 ms.topic: article
@@ -9,22 +9,22 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 7382062706c2de01c499ee05aeb0b45ff6fb37cb
-ms.sourcegitcommit: bca0cb730307948368a9aabe322cf963688ed8b1
+ms.openlocfilehash: 7d87b6c64a6038c4518eeec178f9e139ef6f5ae2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8782836"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848988"
 ---
 # <a name="create-commerce-catalogs-for-b2b-sites"></a>Commerce-Kataloge für B2B-Websites erstellen
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Commerce-Produktkataloge für Business-to-Business-Websites (B2B) in Microsoft Dynamics 365 Commerce erstellen. Antworten auf häufig gestellte Fragen zu Commerce-Katalogen für B2B-Websites finden Sie unter [FAQ zu Commerce-Katalogen für B2B](catalogs-b2b-sites-FAQ.md).
+In diesem Artikel wird beschrieben, wie Sie Commerce-Produktkataloge für Business-to-Business-Websites (B2B) in Microsoft Dynamics 365 Commerce erstellen. Antworten auf häufig gestellte Fragen zu Commerce-Katalogen für B2B-Websites finden Sie unter [FAQ zu Commerce-Katalogen für B2B](catalogs-b2b-sites-FAQ.md).
 
 > [!NOTE]
-> Dieses Thema gilt für Dynamics 365 Commerce ab Version 10.0.27.
+> Dieser Artikel gilt für Dynamics 365 Commerce ab Version 10.0.27.
 
 Sie können Commerce-Kataloge verwenden, um die Produkte zu identifizieren, die Sie in den B2B-Onlineshops anbieten möchten. Wenn Sie einen Katalog erstellen, kennzeichnen Sie die Onlineshops, in denen die Produkte angeboten werden, fügen Sie die Produkte hinzu, die einbezogen werden sollen, und verbessern Sie die Produktangebote, indem Sie Verkaufdetails hinzufügen. Sie können mehrere Kataloge für jeden B2B-Onlineshop erstellen.
 

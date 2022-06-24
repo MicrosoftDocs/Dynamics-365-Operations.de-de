@@ -1,6 +1,6 @@
 ---
-title: Startseite der Globalen Bestandsbuchhaltung
-description: Dieses Thema ist die Homepage für das Add-in Globale Bestandsbuchhaltung für Microsoft Dynamics 365 Supply Chain Management.
+title: Startseite der globalen Bestandsbuchhaltung
+description: Dieser Artikel ist die Homepage für das Add-in Globale Bestandsbuchhaltung für Microsoft Dynamics 365 Supply Chain Management.
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: bd134452de97a9acf74649795850abf620dee799
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 27470f302b91fa3fa22f47438fa0f936beb7e7d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675204"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846183"
 ---
 # <a name="global-inventory-accounting-home-page"></a>Startseite der Globalen Bestandsbuchhaltung
 

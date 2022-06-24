@@ -1,6 +1,6 @@
 ---
 title: Aufzinsungsintervallfunktionalität
-description: Dieses Thema enthält Informationen, mit denen Sie zwischen monatlichen, vierteljährlichen, halbjährlichen und jährlichen Zinsintervallen wählen können.
+description: Dieser Artikel enthält Informationen, mit denen Sie zwischen monatlichen, vierteljährlichen, halbjährlichen und jährlichen Zinsintervallen wählen können.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d1b8af3d5f8f6a6812fe309f57f682d0c5023d00
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 2de5f1e9d52de41388298031a03fbc487a1b1cde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710441"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886413"
 ---
 # <a name="compounding-interval-functionality"></a>Aufzinsungsintervallfunktionalität
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Dieses Thema enthält Informationen, mit denen Sie zwischen monatlichen, vierteljährlichen, halbjährlichen und jährlichen Zinsintervallen wählen können. Die Aufzinsungsintervallfunktion wird verwendet, um die Anzahl der Aufzinsungsperioden pro Jahr im Zahlungsplan eines Mietvertrags zu bestimmen. Jedes der vier Beispiele in diesem Thema zeigt, wie der Zahlungsplan eines Mietvertrags für ein anderes Intervall aussehen wird.
+Dieser Artikel enthält Informationen, mit denen Sie zwischen monatlichen, vierteljährlichen, halbjährlichen und jährlichen Zinsintervallen wählen können. Die Aufzinsungsintervallfunktion wird verwendet, um die Anzahl der Aufzinsungsperioden pro Jahr im Zahlungsplan eines Mietvertrags zu bestimmen. Jedes der vier Beispiele in diesem Artikel zeigt, wie der Zahlungsplan eines Mietvertrags für ein anderes Intervall aussehen wird.
 
 Sie können kein Aufzinsungsintervall auswählen, das weniger häufig ist als die Zahlungshäufigkeit des Mietvertrags. Beispielsweise kann ein vierteljährliches Zinsintervall nicht mit einer monatlichen Zahlungshäufigkeit verwendet werden, und ein jährliches Zinsintervall kann nicht mit einer halbjährlichen Zahlungshäufigkeit verwendet werden. Wenn Sie versuchen, ein Aufzinsungsintervall auszuwählen, dass weniger häufig ist als die Zahlungshäufigkeit des Mietvertrags, erhalten Sie einen Fehler.
 
 > [!NOTE]
-> In allen vier Beispielen in diesem Thema entspricht das Aufzinsungsintervall der Zahlungshäufigkeit.
+> In allen vier Beispielen in diesem Artikel entspricht das Aufzinsungsintervall der Zahlungshäufigkeit.
 
 ## <a name="examples"></a>Beispiele
 

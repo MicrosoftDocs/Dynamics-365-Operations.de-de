@@ -1,6 +1,6 @@
 ---
 title: Ursachencodes für Bestandszählungen anzeigen
-description: In diesem Thema wird beschrieben, wie Ursachencodes für Inventuraufgaben eingerichtet werden.
+description: In diesem Artikel wird beschrieben, wie Ursachencodes für Inventuraufgaben eingerichtet werden.
 author: perlynne
 ms.date: 08/02/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4c178ddf342b13a0ef8fee8b8b958554a9a31069
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 7d182f1d979543eeec700924d2bd180ee06be8ce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500589"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857111"
 ---
 # <a name="reason-codes-for-inventory-counting"></a>Ursachencodes für Bestandszählungen anzeigen
 
@@ -42,7 +42,7 @@ Bevor Sie das System so einrichten, wird empfohlen, dass Sie eine Strategie für
 
 ## <a name="turn-on-reason-code-features-in-your-system"></a>Ursachencodefunktionen in Ihrem System aktivieren
 
-Wenn in Ihrem System nicht alle in diesem Thema beschriebenen Funktionen angezeigt werden, müssen Sie wahrscheinlich die Funktion *Regulierungen des verfügbaren Lagerbestands mit konfigurierbaren Ursachencodes buchen, die mit Ausgleichskonten verbunden sind* aktivieren. Administratoren können mit den Einstellungen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie gegebenenfalls aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+Wenn in Ihrem System nicht alle in diesem Artikel beschriebenen Funktionen angezeigt werden, müssen Sie wahrscheinlich die Funktion *Regulierungen des verfügbaren Lagerbestands mit konfigurierbaren Ursachencodes buchen, die mit Ausgleichskonten verbunden sind* aktivieren. Administratoren können mit den Einstellungen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie gegebenenfalls aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
 
 - **Module:** *Lagerortverwaltung*
 - **Funktionsname:** *Regulierungen des verfügbaren Lagerbestands mit konfigurierbaren Ursachencodes buchen, die mit Ausgleichskonten verbunden sind*
@@ -111,7 +111,7 @@ Gehen Sie zum Einrichten Ihrer Urschencodes für Zählungen folgendermaßen vor.
 
 ### <a name="set-up-counting-reason-code-groups"></a><a name="reason-groups"></a>Ursachencodegruppen für Zählungen einrichten
 
-*Ursachencodegruppen für Zählungen* können als Teil der Menüelemente *Regulierung eingehend* und *Regulierung ausgehend* mobilen Warehouse Management-App, um die Liste der Ursachencodes für Zählungen einzuschränken. (Weitere Informationen zu Ursachencodegruppen für Zählungen finden Sie im Abschnitt [Die Menüelemente des mobilen Geräts für ein- und ausgehende Regulierung einrichten](#setup-adjustment-in-out) weiter unten in diesem Thema.)
+*Ursachencodegruppen für Zählungen* können als Teil der Menüelemente *Regulierung eingehend* und *Regulierung ausgehend* mobilen Warehouse Management-App, um die Liste der Ursachencodes für Zählungen einzuschränken. (Weitere Informationen zu Ursachencodegruppen für Zählungen finden Sie im Abschnitt [Die Menüelemente des mobilen Geräts für ein- und ausgehende Regulierung einrichten](#setup-adjustment-in-out) weiter unten in diesem Artikel.)
 
 1. Gehen Sie zu **Bestandsverwaltung** \> **Setup** \> **Bestand** \> **Ursachencodegruppen für Zählungen**.
 1. Wählen Sie im Aktionsbereich **Neu** aus, um eine Gruppe hinzuzufügen.
@@ -174,7 +174,7 @@ Um ein Menüelement für mobile Geräte für eine ein- oder ausgehende Regulieru
         - *Ausblenden*: Den Ursachencode nicht anzeigen.
 
     - **Ursachencode für Zählungen bearbeiten**: Setzen Sie die Option auf *Ja*, damit die Arbeitskraft den Ursachencode bearbeiten kann, wenn er im mobilen Gerät während des Zählens dargestellt wird. Setzen Sie sie auf *Nein*, um zu verhindern, dass die Arbeitskraft den Code bearbeitet.
-    - **Ursachencodegruppe für Zählungen**: Wählen Sie eine Ursachencodegruppe aus, wenn Sie die Liste der Optionen einschränken möchten, die den Arbeitskräften angezeigt wird. Informationen zum Einrichten von Ursachencodegruppen finden Sie im Abschnitt [Ursachencodegruppen für Zählungen einrichten](#reason-groups) weiter oben in diesem Thema. 
+    - **Ursachencodegruppe für Zählungen**: Wählen Sie eine Ursachencodegruppe aus, wenn Sie die Liste der Optionen einschränken möchten, die den Arbeitskräften angezeigt wird. Informationen zum Einrichten von Ursachencodegruppen finden Sie im Abschnitt [Ursachencodegruppen für Zählungen einrichten](#reason-groups) weiter oben in diesem Artikel. 
 
 > [!NOTE]
 > Wenn Sie eine Ursachencodegruppen für Zählungen den Menüelementen *Regulierung eingehend* und *Regulierung ausgehend* zuweisen, bei denen die Option **Prozessleitfaden verwenden** auf *Ja* steht, können Sie im Rahmen der Verarbeitung in der mobilen Warehouse Management-App eine eingeschränkte Liste der Ursachencodes für Zählungen abrufen.

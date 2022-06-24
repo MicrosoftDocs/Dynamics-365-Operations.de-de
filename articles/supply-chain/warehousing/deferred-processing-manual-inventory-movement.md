@@ -1,6 +1,6 @@
 ---
 title: Aufgeschobene Verarbeitung von manuellen Bestandsbewegungen
-description: Dieses Thema beschreibt, wie Sie die verzögerte Verarbeitung von manuellen Bestandsbewegungen in Microsoft Dynamics 365 Supply Chain Management verwenden können.
+description: Dieser Artikel beschreibt, wie Sie die verzögerte Verarbeitung von manuellen Bestandsbewegungen in Microsoft Dynamics 365 Supply Chain Management verwenden können.
 author: Mirzaab
 ms.date: 04/27/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c2e7296d77332b665e5d618d39804216f4347ca2
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 5e5d0a93a4c628d4867161d082b0f0e177ddb95c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670467"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863736"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Aufgeschobene Verarbeitung von manuellen Bestandsbewegungen
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema beschreibt, wie Sie die verzögerte Verarbeitung von manuellen Bestandsbewegungen in Microsoft Dynamics 365 Supply Chain Management verwenden können.
+Dieser Artikel beschreibt, wie Sie die verzögerte Verarbeitung von manuellen Bestandsbewegungen in Microsoft Dynamics 365 Supply Chain Management verwenden können.
 
 Durch die verzögerte Verarbeitung können die Arbeitskräfte am Lagerort weiterhin andere Arbeiten erledigen, während ein PUT-Vorgang im Hintergrund verarbeitet wird. Die aufgeschobene Verarbeitung ist nützlich, wenn es auf dem Server zu gelegentlichen oder ungeplanten Erhöhungen der Verarbeitungszeit kommen kann und die erhöhte Verarbeitungszeit die Produktivität der Arbeitskräfte beeinträchtigen könnte. Der Arbeitstyp *Bestandsbewegung* wurde jetzt auf den Satz von Arbeitstypen, die diese Funktion unterstützt, festgelegt.
 

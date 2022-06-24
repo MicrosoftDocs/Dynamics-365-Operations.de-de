@@ -1,6 +1,6 @@
 ---
-title: Produktprogrammplanungslauf - Standort- und Lagerdisposition, Lagerort obligatorisch
-description: In diesem Thema wird beschrieben wie ein Artikel, der Standort und Lagerort als Deckungsdimension hat, geplant wird. Die Lagerortdimension ist eine zwingende Dimension.
+title: Hauptplanung für Standortdeckung, Lagerort obligatorisch
+description: In diesem Artikel wird beschrieben wie ein Artikel, der Standort und Lagerort als Deckungsdimension hat, geplant wird. Die Lagerortdimension ist eine zwingende Dimension.
 author: t-benebo
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5bce0e43e43b4d8eee1c63912ce25e18ff23597a
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: b6e9cb9362fcafab5738e0a1887366e5fd1efbab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469169"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863968"
 ---
-# <a name="master-planning-for-site-coverage-mandatory-warehouse"></a>Produktprogrammplanungslauf - Standort- und Lagerdisposition, Lagerort obligatorisch
+# <a name="master-planning-for-site-coverage-mandatory-warehouse"></a>Hauptplanung für Standortdeckung, Lagerort obligatorisch
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben wie ein Artikel, der Standort und Lagerort als Deckungsdimension hat, geplant wird. Die Lagerortdimension ist eine zwingende Dimension.
+In diesem Artikel wird beschrieben wie ein Artikel, der Standort und Lagerort als Deckungsdimension hat, geplant wird. Die Lagerortdimension ist eine zwingende Dimension.
 
 Für dieses Produktprogrammplanungsszenario müssen die folgenden Bedingungen erfüllt sein:
 

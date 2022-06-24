@@ -1,6 +1,6 @@
 ---
 title: Mobilen Arbeitsbereich für die Anlagenverwaltung einrichten
-description: In diesem Thema wird beschrieben, wie Sie Microsoft Dynamics 365 Supply Chain Management und die mobile Finance and Operations(Dynamics 365)-App einrichten, um einen mobilen Arbeitsbereich für die Anlagenverwaltung auszuführen, mit dem Arbeitskräfte Anlagenverwaltungsaufgaben durchführen können.
+description: In diesem Artikel wird beschrieben, wie Sie Microsoft Dynamics 365 Supply Chain Management und die mobile Finance and Operations(Dynamics 365)-App einrichten, um einen mobilen Arbeitsbereich für die Anlagenverwaltung auszuführen, mit dem Arbeitskräfte Anlagenverwaltungsaufgaben durchführen können.
 author: johanhoffmann
 ms.date: 01/15/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a056be417d266fd400ce1572312f327dc070cb6a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ee92ed2c0e2a59adaebe20ed3d426ac03c056dac
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693499"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870841"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>Mobilen Arbeitsbereich für die Anlagenverwaltung einrichten
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Microsoft Dynamics 365 Supply Chain Management und die mobile Finance and Operations(Dynamics 365)-App einrichten, um einen mobilen Arbeitsbereich **Anlagenverwaltung** auszuführen, mit dem Arbeitskräfte Anlagenverwaltungsaufgaben durchführen können.
+In diesem Artikel wird beschrieben, wie Sie Microsoft Dynamics 365 Supply Chain Management und die mobile Finanz‑ und Betriebs (Dynamics 365)-App einrichten, um einen mobilen Arbeitsbereich **Anlagenverwaltung** auszuführen, mit dem Arbeitskräfte Anlagenverwaltungsaufgaben durchführen können.
 
 ## <a name="set-up-maintenance-worker-users-in-supply-chain-management"></a>Einrichten von Benutzern als Wartungsarbeiter in Supply Chain Management
 

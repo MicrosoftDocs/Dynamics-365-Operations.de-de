@@ -1,6 +1,6 @@
 ---
 title: Degressive Abschreibung nach einer Teilung reduzieren
-description: In diesem Thema wird die Methode beschrieben, die im Anlagevermögen verwendet wird, um die Abschreibung nach der Aufteilung einer Anlage mithilfe der Methode zum Reduzieren des Saldos zu berechnen.
+description: In diesem Artikel wird die Methode beschrieben, die im Anlagevermögen verwendet wird, um die Abschreibung nach der Aufteilung einer Anlage mithilfe der Methode zum Reduzieren des Saldos zu berechnen.
 author: moaamer
 ms.date: 11/17/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-17
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 35637ac1484121232c3571d1a26132a86d69e366
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 539967a9a73da91f6b49c1bb89f404267ae0a804
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726752"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883299"
 ---
 # <a name="reduce-balance-depreciation-after-a-split"></a>Degressive Abschreibung nach einer Teilung reduzieren
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird die Methode beschrieben, die im Anlagevermögen verwendet wird, um die Abschreibung nach der Aufteilung einer Anlage in eine andere Anlage mithilfe der Methode zum Reduzieren des Saldos zu berechnen. Das im Anlagenbuch konfigurierte Abschreibungsjahr ist das Geschäftsjahr. Weitere Informationen finden Sie unter [Reduzierung der degressiven Abschreibung](reduce-balance-depreciation.md) und [Aufteilen einer Anlage](tasks/split-fixed-asset.md).
+In diesem Artikel wird die Methode beschrieben, die im Anlagevermögen verwendet wird, um die Abschreibung nach der Aufteilung einer Anlage in eine andere Anlage mithilfe der Methode zum Reduzieren des Saldos zu berechnen. Das im Anlagenbuch konfigurierte Abschreibungsjahr ist das Geschäftsjahr. Weitere Informationen finden Sie unter [Reduzierung der degressiven Abschreibung](reduce-balance-depreciation.md) und [Aufteilen einer Anlage](tasks/split-fixed-asset.md).
 
 Wenn Sie eine Anlage während eines Finanzzeitraums aufteilen, der später als der Zeitraum ist, in dem die Anlage erworben wurde, wird der Nettobuchwert (NBV) der Anlage für das Vorjahr durch die reduzierte degressive Abschreibung berücksichtigt. Es werden auch die Anschaffungs- und Abschreibungsregulierungstransaktionen berücksichtigt, die aus der Transaktion generiert wurden, mit der die Anlage aufgeteilt wurde. Bei diesem Verhalten wird davon ausgegangen, dass die Anlage in einem Geschäftsjahr angeschafft und in einem späteren Geschäftsjahr aufgeteilt wurde. Der Betrag, der nach der Aufteilung für die ursprüngliche Anlage abgeschrieben werden muss, spiegelt den NBV der Anlage vor der Aufteilung der Anlage und die für die Aufteilung gebuchte Anschaffungs- und Abschreibungsregulierungstransaktion wider.
 

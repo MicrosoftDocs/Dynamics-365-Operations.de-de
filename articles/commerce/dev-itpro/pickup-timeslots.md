@@ -1,6 +1,6 @@
 ---
 title: Zeitfenster für die Kundenabholung erstellen und aktualisieren
-description: In diesem Thema wird beschrieben, wie Sie Zeitfenster für die Kundenabholung in der Commerce-Zentralverwaltung konfigurieren und aktualisieren.
+description: In diesem Artikel wird beschrieben, wie Sie Zeitfenster für die Kundenabholung in der Commerce headquarters konfigurieren und aktualisieren.
 author: anupamar-ms
 ms.date: 01/05/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.15 update
-ms.openlocfilehash: a9ee1356bfcaeee881c28cf0361b34b2c65acbc7a3b57347fa2581a8a935da42
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a135f592225e4b388b5c9fdaa5fe23e60baf0185
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713420"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882232"
 ---
 # <a name="create-and-update-time-slots-for-customer-pickup"></a>Zeitfenster für die Kundenabholung erstellen und aktualisieren
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Zeitfenster für die Kundenabholung in der Commerce-Zentralverwaltung konfigurieren und aktualisieren.
+In diesem Artikel wird beschrieben, wie Sie Zeitfenster für die Kundenabholung in der Commerce headquarters konfigurieren und aktualisieren.
 
 Mit der Zeitfensterfunktion können Einzelhändler ein Zeitfenster für Artikel definieren, für die der Liefertyp Kundenabholung aktiviert ist. Mit Zeitfenstern können Einzelhändler die Tage und Zeiten definieren, an denen Aufträge in einem Geschäft abgeholt werden können. Einzelhändler können auch die Anzahl der Aufträgen definieren, die während eines bestimmten Zeitraums abgeholt werden können. Auf diese Weise können Einzelhändler die Anzahl der Aufträge begrenzen, die an einem bestimmten Tag und zu einer bestimmten Uhrzeit abgeholt werden können. Das Ergebnis ist, dass die Qualität der Erfahrung ihrer Kunden höher ist.
 

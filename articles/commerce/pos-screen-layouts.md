@@ -1,6 +1,6 @@
 ---
 title: Visuelle Konfigurationen der POS-Benutzeroberfläche
-description: Dieses Thema enthält Informationen zu Bildschirmlayouts für Dynamics 365 Commerce-Verkaufsstellen (POS)-Umgebungen.
+description: Dieser Artikel enthält Informationen zu Bildschirmlayouts für Dynamics 365 Commerce-Verkaufsstellen (POS)-Umgebungen.
 author: boycezhu
 ms.date: 09/22/2020
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 17379dc97c7a8b22912482a7aeebd0d8ac08dc496fa7b1661952bca10a21c75b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 22a35d69780a48415076dd70c21c33b1024c217d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765879"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871632"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Visuelle Konfigurationen der POS-Benutzeroberfläche
 
 [!include [banner](includes/banner.md)]
 
 
-Die Benutzeroberfläche (UI) der Microsoft Dynamics 365 Commerce Verkaufsstelle (POS) kann mithilfe einer Kombination von visuellen Profilen und Bildschirmlayouts konfiguriert werden, die Shops, Kassen und/oder den Benutzern zugewiesen sind. Dieses Thema enthält Links zu weiteren Informationen über diese Konfigurationsoptionen.
+Die Benutzeroberfläche (UI) der Microsoft Dynamics 365 Commerce Verkaufsstelle (POS) kann mithilfe einer Kombination von visuellen Profilen und Bildschirmlayouts konfiguriert werden, die Shops, Kassen und/oder den Benutzern zugewiesen sind. Dieser Artikel enthält allgemeine Informationen zu diesen Konfigurationsoptionen.
 
 Die folgende Abbildung zeigt die Beziehungen zwischen den unterschiedlichen Entitäten, die die konfigurierbare POS-Benutzeroberfläche bilden.
 

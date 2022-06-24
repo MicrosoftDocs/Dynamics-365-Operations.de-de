@@ -1,8 +1,8 @@
 ---
-title: Anzeigen der Planhistorie und der Planungsprotokolle
-description: In diesem Thema wird erläutert, wie Sie die Historie von Planungsjobs anzeigen, die durch die Funktionalität der Planungsoptimierung ausgelöst werden.
+title: Planhistorie und Planungsprotokolle einsehen
+description: In diesem Artikel wird erläutert, wie Sie die Historie von Planungsjobs anzeigen, die durch die Funktionalität der Planungsoptimierung ausgelöst werden.
 author: t-benebo
-ms.date: 10/30/2019
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,22 +16,22 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 9b4cba4dd94eb198e770d152d4f759a706065dee
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: b2c9257fc67a06b57418b2f5b035b2b540131405
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469756"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863939"
 ---
-# <a name="view-plan-history-and-planning-logs"></a>Anzeigen der Planhistorie und der Planungsprotokolle
+# <a name="view-plan-history-and-planning-logs"></a>Planhistorie und Planungsprotokolle einsehen
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie die Historie von Planungsjobs anzeigen, die durch die Funktionalität der Planungsoptimierung in Microsoft Dynamics 365 Supply Chain Management ausgelöst werden.
+In diesem Artikel wird erläutert, wie Sie die Historie von Planungsjobs anzeigen, die durch die Funktionalität der Planungsoptimierung in Microsoft Dynamics 365 Supply Chain Management ausgelöst werden.
 
 Um die Historie für einen Plan anzuzeigen, öffnen Sie den Plan, indem Sie zu **Masterplanung** \> **Einrichtung** \> **Pläne** \> **Masterpläne** gehen und **Historie** auswählen. Die Historie listet alle Aufträge für den ausgewählten Plan auf. Die Liste enthält erledigte und aktive Aufträge.
 
-Die Historie der Jobs für die Masterplanungsläufe der Planungsoptimierung enthält nur bis zu 60 Datensätze pro Masterplan. Wenn Sie eine neue Hauptplanungsberechnung ausführen, wird der früheste Historiensatz dieses Plans gelöscht.
+Das System speichert maximal 60 Verlaufsdatensätze pro Masterplan und löscht Datensätze, die älter als 30 Tage sind. Jedes Mal, wenn Sie eine neue Hauptplanungsberechnung ausführen, fügt das System einen neuen Verlaufsdatensatz hinzu und bereinigt dann die ältesten Datensätze nach Bedarf.
 
 Sie können nicht nur die Startzeit und den Status der Jobs einsehen, sondern auch das Protokoll für einen bestimmten Job anzeigen. Das Protokoll enthält zusätzliche Informationen und Warnungen. Nicht alle Aufträge haben ein Protokoll. Um das Protokoll für einen Auftrag anzuzeigen, wählen Sie **Protokoll**. Log-Einträge werden nur 30 Tage nach Auftragsende gespeichert und danach automatisch gelöscht.
 

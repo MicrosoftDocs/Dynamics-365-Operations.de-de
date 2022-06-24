@@ -1,6 +1,6 @@
 ---
 title: Arbeitsauftrags-Projekteinstellungen
-description: In diesem Thema wird die Einrichtung von Arbeitsaufträgen im Anlagenmanagement erläutert.
+description: In diesem Artikel wird die Einrichtung von Arbeitsaufträgen im Anlagenmanagement erläutert.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bb897ca0a7e9c45ee55244189bb1b487fbddf0714ad3ea0cac26eb7bac36a07f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 31d8f42eb5753ea2656d502d2670a6cf7683c0f2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754082"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874129"
 ---
 # <a name="work-order-project-setup"></a>Arbeitsauftrags-Projekteinstellungen
 
@@ -80,7 +80,7 @@ Das Setup ermöglicht eine vollständige Integration mit dem Modul **Projektmana
 ![Seite „Arbeitsauftrags-Projekteinstellungen“, Arbeitsauftrag hinzufügen.](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
-> Jedes Mal, wenn eine Arbeitsauftragszeile erstellt wird, sucht das Asset Management nach einer Projektgruppe, die mit dem Arbeitsauftragsprojekt verknüpft sein soll. Die Suche basiert auf dem Setup, das in diesem Thema beschrieben wird. Jede Projektgruppe hat einen zugehörigen Projekttyp. Projektgruppen mit der Projektart **Zeit und Material** oder **Festpreis** sind nur für Anlagen gültig, die sich auf ein Kundenkonto beziehen.
+> Jedes Mal, wenn eine Arbeitsauftragszeile erstellt wird, sucht das Asset Management nach einer Projektgruppe, die mit dem Arbeitsauftragsprojekt verknüpft sein soll. Die Suche basiert auf dem Setup, das in diesem Artikel beschrieben wird. Jede Projektgruppe hat einen zugehörigen Projekttyp. Projektgruppen mit der Projektart **Zeit und Material** oder **Festpreis** sind nur für Anlagen gültig, die sich auf ein Kundenkonto beziehen.
 >
 > Wenn das System bei übergeordneten Projekten und Projektgruppen das verfügbare Arbeitsauftragsprojekt oder die Projektgruppe auswählt, basiert die Auswahl auf den Datensätzen, die Sie mit der vorherigen Vorgehensweise angelegt haben. Das Anlagenmanagement durchläuft Datensätze, die sich auf das Arbeitsauftragsprojekt beziehen, um nach einer möglichen Übereinstimmung zu suchen. Die spezifischste Kombination wird immer zuerst geprüft. Mit anderen Worten, für das übergeordnete Projekt des Arbeitsauftrags prüft das Anlagenmanagement zunächst, ob eine mögliche Übereinstimmung für das Feld **Anlage** vorliegt. Wenn keine Übereinstimmung gefunden wird, wird nach einer Übereinstimmung für das Feld **Anlagentyp** gesucht. Wenn keine Übereinstimmung gefunden wird, wird nach einer Übereinstimmung für das Feld **Technischer Standort** gesucht usw. Wie Sie im Layout der Seite **Arbeitsauftrag Projekteinrichtung** sehen können, bedeutet dieses Verhalten, dass das Anlagenmanagement jeden Datensatz von rechts nach links auf eine Übereinstimmung überprüft, um die spezifischste Kombination zu finden. Wenn keine Übereinstimmung gefunden wird, wird der Standarddatensatz verwendet, bei dem nur eine Projekt-ID ausgewählt wird. Der Prozess zum Auffinden der zugehörigen Projektgruppe ist ähnlich. Das Anlagenmanagement sucht zunächst nach einer möglichen Übereinstimmung für das Feld **Asset**, dann für das Feld **Asset type** und dann für das Feld **Arbeitsauftragstyp**. Wenn keine Übereinstimmung gefunden wird, wird der Standarddatensatz verwendet, bei dem nur eine Projektgruppe ausgewählt wird.
 

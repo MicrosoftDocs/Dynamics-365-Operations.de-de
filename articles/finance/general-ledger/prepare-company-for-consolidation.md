@@ -1,6 +1,6 @@
 ---
 title: Eine juristische Person für den Konsolidierungsprozess vorbereiten
-description: Bei einer Konsolidierung werden Buchungen gesammelt, die von mehreren Sätzen von Konten juristischer Personen auf einen einzelnen Satz von Konten juristischer Personen vorgenommen werden. In diesem Thema wird erläutert, wie Sie eine juristische Person auf eine Konsolidierung vorbereiten.
+description: Bei einer Konsolidierung werden Buchungen gesammelt, die von mehreren Sätzen von Konten juristischer Personen auf einen einzelnen Satz von Konten juristischer Personen vorgenommen werden. In diesem Artikel wird erläutert, wie Sie eine juristische Person auf eine Konsolidierung vorbereiten.
 author: jinniew
 ms.date: 10/30/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 0ef6736046748b92357c41d27eeedfc88c610d33
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 2a3d4645c79ec30df2bbb7a32a82a59fdb7016e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722037"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894025"
 ---
 # <a name="prepare-a-legal-entity-for-the-consolidation-process"></a>Eine juristische Person für den Konsolidierungsprozess vorbereiten
 
 [!include [banner](../includes/banner.md)]
 
-Bei einer Konsolidierung werden Buchungen gesammelt, die von mehreren Sätzen von Konten juristischer Personen auf einen einzelnen Satz von Konten juristischer Personen vorgenommen werden. In diesem Thema wird erläutert, wie Sie eine juristische Person auf eine Konsolidierung vorbereiten.
+Bei einer Konsolidierung werden Buchungen gesammelt, die von mehreren Sätzen von Konten juristischer Personen auf einen einzelnen Satz von Konten juristischer Personen vorgenommen werden. In diesem Artikel wird erläutert, wie Sie eine juristische Person auf eine Konsolidierung vorbereiten.
 
 > [!NOTE]
 > Wir empfehlen die Verwendung vom Management Reporter für Microsoft Dynamics 365 Finance, um die Finanzergebnisse mehrerer juristischer Personen in einem konsolidierten Format zu kombinieren. Mithilfe vom Management Reporter können Sie konsolidierte Finanzberichte für alle juristischen Personen erstellen, mithilfe von Excel Konsolidierungsdaten aus anderen Quellen importieren und Beträge in eine beliebige Anzahl von Berichtswährungen umrechnen, ohne den Konsolidierungsprozess in Dynamics 365 Finance ausführen zu müssen.

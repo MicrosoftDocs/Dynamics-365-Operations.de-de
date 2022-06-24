@@ -1,6 +1,6 @@
 ---
-title: Rückvergütungsverwaltungsdeals
-description: In diesem Thema wird beschrieben, wie Rückvergütungsverwaltungsdeal angelegt werden. Deals werden verwendet, um verschiedene Methoden und Grundlagen für die Berechnung von Rückvergütungen und Lizenzgebühren zu steuern. Dazu gehören Regeln für Ein- und Ausschlüsse.
+title: Rückvergütungsverwaltungsgeschäfte
+description: In diesem Artikel wird beschrieben, wie Rückvergütungsverwaltungsdeal angelegt werden. Deals werden verwendet, um verschiedene Methoden und Grundlagen für die Berechnung von Rückvergütungen und Lizenzgebühren zu steuern. Dazu gehören Regeln für Ein- und Ausschlüsse.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 76cdbf21cfbc0db7b363d0fbf60a1ecd0046efc1
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 28cfff69ab4e528c146ccbf6a34548a819c99522
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689662"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851593"
 ---
 # <a name="rebate-management-deals"></a>Rückvergütungsverwaltungsdeals
 
 [!include [banner](../includes/banner.md)]
 
-Rückvergütungsverwaltungsdeals werden verwendet, um verschiedene Methoden und Grundlagen für die Berechnung von Rückvergütungen und Lizenzgebühren zu steuern. Dazu gehören Regeln für Ein- und Ausschlüsse. Es gibt drei Arten von Rückvergütungsverwaltungsdeals: Debitorenrückvergütungen, Debitorenlizenzgebühren und Kreditorenrückvergütungen. Alle drei Arten verwenden ähnliche Einstellungen. Dieses Thema befasst sich mit den bestehenden Unterschieden.
+Rückvergütungsverwaltungsdeals werden verwendet, um verschiedene Methoden und Grundlagen für die Berechnung von Rückvergütungen und Lizenzgebühren zu steuern. Dazu gehören Regeln für Ein- und Ausschlüsse. Es gibt drei Arten von Rückvergütungsverwaltungsdeals: Debitorenrückvergütungen, Debitorenlizenzgebühren und Kreditorenrückvergütungen. Alle drei Arten verwenden ähnliche Einstellungen. Dieser Artikel befasst sich mit den bestehenden Unterschieden.
 
 ## <a name="create-a-deal"></a>Einen Deal erstellen
 
@@ -118,7 +118,7 @@ Die Registerkarte **Allgemein** im Inforegister **Details zur Rückvergütungsve
 
 | Feld | Beschreibung |
 |---|---|
-| Berechnungsmethode | Wählen Sie die Methode aus, die verwendet werden soll, wenn die ausgewählte Deal-Position mit anderen Deal-Positionen kombiniert wird (*Abgestuft*, *Kumulativ*, *Rollierend* oder *Gesamt*). Der Wert dieses Felds kann das Ergebnis Ihrer Rückvergütungsberechnungen erheblich beeinflussen. Eine vollständige Beschreibung der einzelnen Methoden und Beispiele einschließlich der Auswirkungen auf die Rückvergütungsberechnung finden Sie weiter unten in diesem Thema im Abschnitt [Berechnungsmethoden für Deal-Positionen](#calc-methods). |
+| Berechnungsmethode | Wählen Sie die Methode aus, die verwendet werden soll, wenn die ausgewählte Deal-Position mit anderen Deal-Positionen kombiniert wird (*Abgestuft*, *Kumulativ*, *Rollierend* oder *Gesamt*). Der Wert dieses Felds kann das Ergebnis Ihrer Rückvergütungsberechnungen erheblich beeinflussen. Eine vollständige Beschreibung der einzelnen Methoden und Beispiele einschließlich der Auswirkungen auf die Rückvergütungsberechnung finden Sie weiter unten in diesem Artikel im Abschnitt [Berechnungsmethoden für Deal-Positionen](#calc-methods). |
 | Basis | Wählen Sie aus, ob die Rückvergütung basierend auf der Menge (d. h. der Gesamtzahl der gekauften oder verkauften Einheiten) oder dem Wert (d. h. dem Gesamtpreis der gekauften oder verkauften Waren) angewendet wird. |
 | Transaktionstyp | <p>Wählen Sie den Punkt im Prozess aus, an dem die Berechnung erfolgen soll:</p><ul><li>*Bestellung*: Verwenden Sie die bestellte Menge oder den bestellten Wert als Grundlage für die Berechnung.</li><li>*Geliefert*: Verwenden Sie die gelieferte Menge oder den gelieferten Wert als Grundlage für die Berechnung.</li><li>*Rechnung*: Verwenden Sie die in Rechnung gestellte Menge oder den in Rechnung gestellten Wert als Grundlage für die Berechnung.</li></ul> |
 | Einheit | Wenn Sie *Menge* im Feld **Basis** ausgewählt haben, wählen Sie die Einheit aus, in der die Menge angegeben werden muss. |

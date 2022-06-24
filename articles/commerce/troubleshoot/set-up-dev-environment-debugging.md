@@ -1,6 +1,6 @@
 ---
 title: Eine E-Commerce-Entwicklungsumgebung für das Debuggen auf einer virtuellen Ebene 1 einer Retail Server-Maschine einrichten
-description: Dieses Thema erläutert, wie eine E-Commerce-Entwicklungsumgebung für das Debuggen auf einer virtuellen Ebene 1 einer Retail Server-Maschine (VM) eingerichtet wird.
+description: Dieser Artikel erläutert, wie eine E-Commerce-Entwicklungsumgebung für das Debuggen auf einer virtuellen Ebene 1 einer Retail Server-Maschine (VM) eingerichtet wird.
 author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0f5586112d168f8fa84f97d110403b0bec82e5cca4e963a92f1c283a17c972ca
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7cc6c936c67bc82da1a237341ac07fb69d4ac233
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715307"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855701"
 ---
 # <a name="set-up-an-e-commerce-development-environment-to-debug-against-a-tier-1-retail-server-virtual-machine"></a>Eine E-Commerce-Entwicklungsumgebung für das Debuggen auf einer virtuellen Ebene 1 einer Retail Server-Maschine einrichten
 
 [!include [banner](../../includes/banner.md)]
 
-Dieses Thema erläutert, wie eine E-Commerce-Entwicklungsumgebung für das Debuggen auf einer virtuellen Ebene 1 einer Retail Server-Maschine (VM) eingerichtet wird.
+Dieser Artikel erläutert, wie eine E-Commerce-Entwicklungsumgebung für das Debuggen auf einer virtuellen Ebene 1 einer Retail Server-Maschine (VM) eingerichtet wird.
 
 ## <a name="description"></a>Beschreibung
 

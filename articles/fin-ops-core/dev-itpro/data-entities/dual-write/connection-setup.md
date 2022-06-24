@@ -1,6 +1,6 @@
 ---
 title: Anleitung zum Einrichten des dualen Schreibens
-description: In diesem Thema werden die Szenarien beschrieben, die für die Dual-Write-Einrichtung unterstützt werden.
+description: In diesem Artikel werden die Szenarien beschrieben, die für die Dual-Write-Einrichtung unterstützt werden.
 author: RamaKrishnamoorthy
 ms.date: 10/12/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 6de449b14bcdd82336e3e255bf62ad069d3daaf5
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: a0d1b4e1f093874a8fd37cf7aadb331cd1e7adc4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061603"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873148"
 ---
 # <a name="guidance-for-dual-write-setup"></a>Anleitung zum Einrichten des dualen Schreibens
 
@@ -26,7 +26,7 @@ ms.locfileid: "8061603"
 
 Sie können eine duales Schreiben-Verbindung zwischen einer Finance und Operations Umgebung und einer Dataverse-Umgebung festlegen.
 
-+ Eine **Finance und Operations Umgebung** stellt die zugrunde liegende Plattform für **Apps für Finanzen und Betrieb** bereit (z.B. Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce und Dynamics 365 Human Resources).
++ Eine **Finance und Operations-Umgebung** stellt die zugrunde liegende Plattform für **Apps für Finanzen und Betrieb** bereit (z.B. Microsoft Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce und Dynamics 365 Human Resources).
 + Eine **Dataverse-Umgebung** bietet die zugrunde liegende Plattform für **Kundenbindungs-Apps** (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Column Service, Dynamics 365 Marketing und Dynamics 365 Project Service Automation).
 
 > [!IMPORTANT]
@@ -78,11 +78,11 @@ Um die vorhandenen Dataverse-Daten mit der Finance und Operations App zu synchro
 3. [Bootstrap](bootstrap-company-data.md) die Dataverse-Daten unter Verwendung eines aus drei Buchstaben bestehenden Buchungscodees der International Organization for Standardization (ISO).
 4. Führen Sie die Funktion **Erstsynchronisierung** für die Tabellen aus, für die Sie Daten synchronisieren möchten.
 
-Links zu einem Beispiel und einem alternativen Ansatz finden Sie im Abschnitt [Beispiel](#example) später in diesem Thema.
+Links zu einem Beispiel und einem alternativen Ansatz finden Sie im Abschnitt [Beispiel](#example) später in diesem Artikel.
 
 ## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-a-new-customer-engagement-app-instance"></a><a id="new-data-new"></a>Eine neue Finance und Operations App-Instanz, die über Daten verfügt, und eine neue Customer-Engagement-App-Instanz
 
-Um eine duales Schreiben-Verbindung zwischen einer neuen Instanz einer Finance und Operations-App, die Daten enthält, und einer neuen Instanz einer Customer-Engagement-App festzulegen, folgen Sie den Schritten im Abschnitt [Eine neue Instanz einer Finance und Operations-App und eine neue Instanz einer Customer-Engagement-App](#new-new) weiter oben in diesem Thema. Wenn der Verbindungsaufbau abgeschlossen ist und Sie die Demodaten mit der Customer Engagement Anwendung synchronisieren möchten, folgen Sie diesen Schritten.
+Um eine Verbindung für duales Schreiben zwischen einer neuen Instanz einer Finance und Operations-App, die Daten enthält, und einer neuen Instanz einer Customer-Engagement-App festzulegen, folgen Sie den Schritten im Abschnitt [Eine neue Instanz einer Finance und Operations-App und eine neue Instanz einer Customer-Engagement-App](#new-new) weiter oben in diesem Artikel. Wenn der Verbindungsaufbau abgeschlossen ist und Sie die Demodaten mit der Customer Engagement Anwendung synchronisieren möchten, folgen Sie diesen Schritten.
 
 1. Öffnen Sie die App Finance und Operations von der LCS Seite aus, melden Sie sich an und gehen Sie dann zu **Datenverwaltung \> duales Schreiben**.
 2. Führen Sie die Funktion **Erstsynchronisierung** für die Tabellen aus, für die Sie Daten synchronisieren möchten.
@@ -91,7 +91,7 @@ Links zu einem Beispiel und einem alternativen Ansatz finden Sie im Abschnitt [B
 
 ## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-an-existing-customer-engagement-app-instance"></a><a id="new-data-existing"></a>Eine neue Finance und Operations App-Instanz, die über Daten verfügt, und eine bestehende Customer-Engagement-App-Instanz
 
-Um eine duales Schreiben-Verbindung zwischen einer neuen Instanz einer Finance und Operations-App, die Daten enthält, und einer bestehenden Instanz einer Customer-Engagement-App festzulegen, folgen Sie den Schritten im Abschnitt [Eine neue Finance und Operations-App-Instanz und eine bestehende Customer-Engagement-App-Instanz](#new-existing) weiter oben in diesem Thema. Wenn der Verbindungsaufbau abgeschlossen ist und Sie die Demodaten mit der Customer Engagement Anwendung synchronisieren möchten, folgen Sie diesen Schritten.
+Um eine Verbindung für duales Schreiben zwischen einer neuen Instanz einer Finance und Operations-App, die Daten enthält, und einer bestehenden Instanz einer Customer-Engagement-App festzulegen, folgen Sie den Schritten im Abschnitt [Eine neue Finance und Operations-App-Instanz und eine bestehende Customer-Engagement-App-Instanz](#new-existing) weiter oben in diesem Artikel. Wenn der Verbindungsaufbau abgeschlossen ist und Sie die Demodaten mit der Customer Engagement Anwendung synchronisieren möchten, folgen Sie diesen Schritten.
 
 1. Öffnen Sie die App Finance und Operations von der LCS Seite aus, melden Sie sich an und gehen Sie dann zu **Datenverwaltung \> duales Schreiben**.
 2. Führen Sie die Funktion **Erstsynchronisierung** für die Tabellen aus, für die Sie Daten synchronisieren möchten.

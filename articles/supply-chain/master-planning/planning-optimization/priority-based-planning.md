@@ -1,6 +1,6 @@
 ---
 title: Prioritätsbasierte Planung
-description: In diesem Thema wird die prioritätsbasierte Planungsfunktion von Microsoft Dynamics 365 Supply Chain Management beschrieben.
+description: In diesem Artikel wird die prioritätsbasierte Planungsfunktion von Microsoft Dynamics 365 Supply Chain Management beschrieben.
 author: t-benebo
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: bdca7ef99716cebee5c4eb41d1e51793b9468dd4
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 4997ba123f105f683daaa6b29fe8c5ee72cb47cb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468299"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873810"
 ---
 # <a name="priority-based-planning"></a>Prioritätsbasierte Planung
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird die prioritätsbasierte Planungsfunktion von Microsoft Dynamics 365 Supply Chain Management beschrieben. Die Funktion fügt Unterstützung für die bedarfsgesteuerte Planung hinzu, die ein Schritt der bedarfsgesteuerten Materialbedarfsplanung (Demand Driven Material Requirements Planning, DDMRP) ist. Die prioritätsbasierte Planung ermöglicht es der Planungsoptimierung, Bestellvorschläge zu generieren, die von Planungsprioritäten anstelle von Bedarfsterminen gesteuert werden.
+In diesem Artikel wird die prioritätsbasierte Planungsfunktion von Microsoft Dynamics 365 Supply Chain Management beschrieben. Die Funktion fügt Unterstützung für die bedarfsgesteuerte Planung hinzu, die ein Schritt der bedarfsgesteuerten Materialbedarfsplanung (Demand Driven Material Requirements Planning, DDMRP) ist. Die prioritätsbasierte Planung ermöglicht es der Planungsoptimierung, Bestellvorschläge zu generieren, die von Planungsprioritäten anstelle von Bedarfsterminen gesteuert werden.
 
 Mit der prioritätsbasierten Planung können Sie Wiederbeschaffungsaufträge priorisieren, um sicherzustellen, dass dringender Bedarf gegenüber weniger wichtigem Bedarf priorisiert wird. Zum Beispiel wird ein Wiederbeschaffungsauftrag für Fehlbestände gegenüber einem Wiederbeschaffungsauftrag für Standardnachschub priorisiert. Das System kann größere Aufträge automatisch in separate kleinere Aufträge aufteilen, wobei Auftragspositionen nach Priorität gruppiert sind. Es kann dann alle Aufträge mit hoher Priorität zuerst bearbeiten.
 

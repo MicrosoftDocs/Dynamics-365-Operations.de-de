@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren Sie Inventarpuffer und Inventarebenen
-description: In diesem Thema wird erläutert, wie Sie Inventarpuffer und Inventarebenen konfigurieren, die die Nachrichten zur Inventarverfügbarkeit auf Microsoft Dynamics 365 Commerce Websites bestimmen.
+title: Bestandpuffer und Bestandsebenen konfigurieren
+description: In diesem Artikel wird erläutert, wie Sie Inventarpuffer und Inventarebenen konfigurieren, die die Nachrichten zur Inventarverfügbarkeit auf Microsoft Dynamics 365 Commerce Websites bestimmen.
 author: boycezhu
 ms.date: 06/01/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 842389811169f785235de7ac7d9a49ab903f99ddf7d43f139aba0873a2577d72
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: acfe71f7fb55f1bc701297bb3949e91d6450d9e9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727532"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853792"
 ---
 # <a name="configure-inventory-buffers-and-inventory-levels"></a>Bestandpuffer und Bestandsebenen konfigurieren
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie Inventarpuffer und Inventarebenen konfigurieren, die die Nachrichten zur Inventarverfügbarkeit auf Microsoft Dynamics 365 Commerce-Websites bestimmen.
+In diesem Artikel wird erläutert, wie Sie Inventarpuffer und Inventarebenen konfigurieren, die die Nachrichten zur Inventarverfügbarkeit auf Microsoft Dynamics 365 Commerce-Websites bestimmen.
 
 Dynamics 365 Commerce Zentralen befinden sich Inventardaten und verschiedene Kanäle wie POS-Anwendungen (Point of Sale), E-Commerce-Storefronts und andere benutzerdefinierte integrierte Anwendungen, mit denen Inventar asynchron abgerufen und verschoben werden kann. Daher sind die verfügbaren Inventarwerte, die über die vorhandene Inventarseite in der Commerce-Zentrale, über die POS-Benutzeroberfläche (UI) und über E-Commerce-APIs für die Verfügbarkeit von Inventar abgerufen werden, in Echtzeit nicht immer zu 100 Prozent genau.
 

@@ -1,6 +1,6 @@
 ---
 title: Arbeitsaufträge terminieren
-description: In diesem Abschnitt wird erläutert, wie Sie Arbeitsaufträge im Anlagenmanagement planen.
+description: In diesem Artikel wird erläutert, wie Sie Arbeitsaufträge im Anlagenmanagement planen.
 author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: becd06c46afd92bf07d9a69147b7768e780aefa57f9045c11698c04154d6ddb8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a3fc3e6ef2332a883ef4a612a669142da1794454
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718058"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845053"
 ---
 # <a name="schedule-work-orders"></a>Arbeitsaufträge terminieren
 
@@ -28,7 +28,7 @@ ms.locfileid: "6718058"
 
  
 
-In diesem Abschnitt wird erläutert, wie Sie Arbeitsaufträge im Anlagenmanagement planen. 
+In diesem Artikel wird erläutert, wie Sie Arbeitsaufträge im Anlagenmanagement planen. 
 
 Die erforderliche Stundenanzahl für einen Arbeitsauftrag ergibt sich aus der Summe der prognostizierten Stunden auf abzüglich der gebuchten Stunden. Wenn mehr Zeit benötigt wird, muss die Prognose entsprechend angepasst werden. In **Anlagenmanagement** > **Allgemein** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** können Sie Prognosen zu einem Arbeitsauftrag einsehen oder bearbeiten, indem Sie den Arbeitsauftrag auswählen und **Prognose** auf der Registerkarte **Arbeitsauftrag** anklicken. Wenn Arbeitsaufträge erstellt und geschätzt wurden, ist der nächste Schritt in der Ausführung der Arbeitsaufträge, die erforderlichen Wartungsarbeiter und Werkzeuge zuzuweisen.
 

@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8501bbb0fc47fb52e100d9086054db4831dae178
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 1272cdb16396d24b5495f023e7b9fe3dee341507
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720250"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871332"
 ---
 # <a name="fixed-asset-disposal-posting-accounts"></a>Buchungskonten für Anlagenveräußerung
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel beschreibt, wie Buchungskonten im Hauptbuch eingerichtet werden, wenn Sie einen Abgang vbon Anlagen duchführen.
+Dieser Artikel beschreibt, wie Buchungskonten im Hauptbuch eingerichtet werden, wenn Sie einen Abgang von Anlagen duchführen.
 
 Um Hauptbuch-Buchungskonten einzurichten, die bei der Veräußerung eines Vermögenswerts verwendet werden sollen, wählen Sie **Abgang – Verkauf** und **Abgang – Ausschuss** in dem **Sachkonten**-Inforregister auf der **Buchungsprofile für Anlagen**-Seite.
 

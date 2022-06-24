@@ -1,6 +1,6 @@
 ---
 title: Eingabehilfefunktionen
-description: In diesem Thema werden die Funktionen erläutert, die für Benutzer gestaltet ist, die unter verschiedenen Behinderungen leiden.
+description: In diesem Artikel werden die Funktionen erläutert, die für Benutzer gedacht ist, die unter verschiedenen Behinderungen leiden.
 author: TLeforMicrosoft
 ms.date: 12/02/2019
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 022c51f7050d11caf5ce67c5df8f9f9040a54b98
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: af17b7933aed2a40d81fbc4e7b79e4e716aaf59b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071057"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881050"
 ---
 # <a name="accessibility-features"></a>Eingabehilfefunktionen
 
@@ -26,7 +26,7 @@ ms.locfileid: "8071057"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-In diesem Thema werden die Funktionen erläutert, die Benutzer mit verschiedenen Behinderungen dabei unterstützen sollen, diese App zu verwenden. Beispielsweise gibt es Funktionen für Personen, die sehunterstützende Technologien wie Microsoft Windows-Sprachausgabe verwenden.
+In diesem Artikel werden die Funktionen erläutert, die Benutzer mit verschiedenen Behinderungen dabei unterstützen sollen, diese App zu verwenden. Beispielsweise gibt es Funktionen für Personen, die sehunterstützende Technologien wie Microsoft Windows-Sprachausgabe verwenden.
 
 ## <a name="windows-narrator-and-keyboard-only-access"></a>Windows-Sprachausgabe und nur Tastatur-Zugriff
 
@@ -49,7 +49,7 @@ Weitere Informationen finden Sie unter [Navigationssuche](navigation-search.md)
 
 ## <a name="action-search-for-keyboard-only-users-or-for-heads-down-data-entry"></a>Aktivitätssuche für Benutzer, die nur die Tastatur nutzen oder für Dropdown-Dateneingaben
 
-Jede Aktivität, die auf einer Seite angegeben wird, kann über eine Tastatur über die Tabulatorsequenz zugegriffen werden. Informationen zur Tabulatorsequenz werden weiter unten in diesem Thema bereitgestellt. Um die Aktivitäten direkt ausführen, können Sie die Aktivitätssuchenfunktionen verwenden.
+Jede Aktivität, die auf einer Seite angegeben wird, kann über eine Tastatur über die Tabulatorsequenz zugegriffen werden. Informationen zur Tabulatorsequenz werden weiter unten in diesem Artikel bereitgestellt. Um die Aktivitäten direkt ausführen, können Sie die Aktivitätssuchenfunktionen verwenden.
 
 ### <a name="example"></a>Beispiel
 

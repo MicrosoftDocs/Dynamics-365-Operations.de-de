@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3381c752e4f1f723162ad314c29ab477caf635a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6934c1147de79c24eb66127d2e08ae8b627bc744
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675934"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849357"
 ---
 # <a name="purchase-requisition-workflow"></a>Bestellanforderungsworkflow
 
@@ -89,7 +89,7 @@ In diesem Beispiel umfasst der Workflowprozess für die Bestellanforderungsposit
 ## <a name="configuring-a-workflow-for-purchase-requisitions"></a>Konfigurieren eines Workflows für Bestellanforderungen
 Bevor eine Bestellanforderung zur Prüfung weitergeleitet werden kann, müssen die Workflowprozesse für Bestellanforderungen konfiguriert werden. Mit dem Workflowprozess wird die Interaktion zwischen dem Benutzer, von dem die Artikel angefordert wurden (die anfordernde Person), und dem Prüfer und der genehmigenden Person innerhalb des Workflows definiert. Die Weiterleitung der Bestellanforderung hängt von den Bedingungen ab, die in der Workflowkonfiguration angegeben werden. Beispielsweise bestimmen diese Bedingungen, ob die Bestellanforderung weitergeleitet werden soll, den Benutzer oder die Rolle, zu dem oder der sie weitergeleitet werden soll und die Aktivitäten, die Benutzer treffen können.  
 
-Die Beispiele in diesem Thema zeigen, wie eine Bestellanforderung durch den Workflow als einzelnes Dokument und in Form einzelner Bestellanforderungspositionen weitergeleitet werden kann. Sie können den Workflow für Bestellanforderungen auch gemäß der zu internen Kontrollzwecken vorgesehenen Bestellanforderungsprüfung konfigurieren, die für die Organisation definiert ist.  
+Die Beispiele in diesem Artikel zeigen, wie eine Bestellanforderung durch den Workflow als einzelnes Dokument und in Form einzelner Bestellanforderungspositionen weitergeleitet werden kann. Sie können den Workflow für Bestellanforderungen auch gemäß der zu internen Kontrollzwecken vorgesehenen Bestellanforderungsprüfung konfigurieren, die für die Organisation definiert ist.  
 
 Die Teilnehmer oder der Prüfer, denen eine Aufgabe in einem Workflow zugewiesen ist, können Mitglieder einer bestimmten Benutzergruppe, Benutzer einer bestimmten Sicherheitsrolle, Benutzer, die dem Antragsteller in einer Verwaltungshierarchie zugeordnet sind, Benutzer mit Namen oder Benutzer mit bestimmten Aufwendungenszuständigkeiten sein.
 

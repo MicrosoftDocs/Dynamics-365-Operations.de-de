@@ -1,6 +1,6 @@
 ---
-title: Öffentliche Inventartransparenz-APIs
-description: Dieses Thema beschreibt die öffentlichen APIs, die von Inventory Visibility bereitgestellt werden.
+title: Öffentliche Inventory Visibility-APIs
+description: Dieser Artikel beschreibt die öffentlichen APIs, die von Inventory Visibility bereitgestellt werden.
 author: yufeihuang
 ms.date: 12/09/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: cb02e8d10a5c673734727682436ba1b3fc996935
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: 25f6539616d4567249e1d1eb4297090176526fde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786864"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902023"
 ---
-# <a name="inventory-visibility-public-apis"></a>Öffentliche Inventartransparenz-APIs
+# <a name="inventory-visibility-public-apis"></a>Öffentliche Inventory Visibility-APIs
 
 [!include [banner](../includes/banner.md)]
 
 
-Dieses Thema beschreibt die öffentlichen APIs, die von Inventory Visibility bereitgestellt werden.
+Dieser Artikel beschreibt die öffentlichen APIs, die von Inventory Visibility bereitgestellt werden.
 
 Die öffentliche REST-API des Bestandssichtbarkeit-Add-Ins stellt mehrere spezifische Endpunkte für die Integration bereit. Es werden vier Hauptinteraktionstypen unterstützt:
 
@@ -160,7 +160,7 @@ Gehen Sie folgendermaßen vor, um ein Sicherheitsdienst-Token zu erhalten.
    ```
 
 > [!IMPORTANT]
-> Wenn Sie die *Postman*-Anforderungssammlung zum Aufrufen öffentlicher APIs für die Inventarsichtbarkeit anfordern, müssen Sie für jede Anforderung ein Bearertoken hinzufügen. Um Ihren Bearertoken zu finden, wählen Sie die Registerkarte **Autorisierung** unter der Anforderungs-URL und den **Bearertoken**-Typ aus, und kopieren Sie das Zugriffstoken, das im letzten Schritt abgerufen wurde. In späteren Abschnitten dieses Themas werden `$access_token` verwendet, um das Token darzustellen, das im letzten Schritt abgerufen wurde.
+> Wenn Sie die *Postman*-Anforderungssammlung zum Aufrufen öffentlicher APIs für die Inventarsichtbarkeit anfordern, müssen Sie für jede Anforderung ein Bearertoken hinzufügen. Um Ihren Bearertoken zu finden, wählen Sie die Registerkarte **Autorisierung** unter der Anforderungs-URL und den **Bearertoken**-Typ aus, und kopieren Sie das Zugriffstoken, das im letzten Schritt abgerufen wurde. In späteren Abschnitten dieses Artikels werden `$access_token` verwendet, um das Token darzustellen, das im letzten Schritt abgerufen wurde.
 
 ## <a name="create-on-hand-change-events"></a><a name="create-onhand-change-event"></a>Erstellen von Ereignissen bei Lagerbestandsänderungen
 
@@ -359,7 +359,7 @@ Body:
     ]
 ```
 
-Das folgende Beispiel zeigt einen Beispielkörperinhalt. Das Verhalten dieser API unterscheidet sich vom Verhalten der APIs, die im Abschnitt [Erstellen von Ereignissen zur Änderung des Lagerbestands](#create-onhand-change-event) weiter oben in diesem Thema beschrieben sind. In diesem Beispiel wird die Menge des Produkts *T-Shirt* auf 1 festgelegt.
+Das folgende Beispiel zeigt einen Beispielkörperinhalt. Das Verhalten dieser API unterscheidet sich vom Verhalten der APIs, die im Abschnitt [Erstellen von Ereignissen zur Änderung des Lagerbestands](#create-onhand-change-event) weiter oben in diesem Artikel beschrieben sind. In diesem Beispiel wird die Menge des Produkts *T-Shirt* auf 1 festgelegt.
 
 ```json
 [

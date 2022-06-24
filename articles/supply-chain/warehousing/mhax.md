@@ -1,6 +1,6 @@
 ---
 title: Schnittstelle für Materialhandhabung (MHAX)
-description: In diesem Thema wird beschrieben, wie Sie die Schnittstelle für Materialhandhabungsgeräte (MHAX) festlegen, damit Sie eine Verbindung zu externen physischen Systemen für die Materialhandhabung (MH) herstellen können.
+description: In diesem Artikel wird beschrieben, wie Sie die Schnittstelle für Materialhandhabungsgeräte (MHAX) festlegen, damit Sie eine Verbindung zu externen physischen Systemen für die Materialhandhabung (MH) herstellen können.
 author: Mirzaab
 ms.date: 03/04/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4c04b8a9574bb6f34b56b4a7462882f1885f1178
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c4b0d991d320d5a679d0ed60880c56a6cb849e2d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695590"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907086"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Schnittstelle für Materialhandhabung (MHAX)
 
@@ -88,7 +88,7 @@ Um ein Abonnement zu erstellen, gehen Sie zu **Schnittstelle für Materialhandha
 
 Mit jedem Abonnement kann eine Abfrage verknüpft werden. Diese Abfrage filtert Arbeitszeilen und Kopfzeilen, um die Arbeit, die das Abonnement zur Erzeugung von Ereignissen verwendet, weiter einzuschränken. Um eine Abfrage zu einem Abonnement hinzuzufügen, aktivieren Sie das Kontrollkästchen **Abfrage ausführen** für das betreffende Abonnement auf der Seite **Abonnements** und wählen dann **Abfrage bearbeiten** im Aktivitätsbereich. Der Standard-Abfrage-Editor von Supply Chain Management wird angezeigt.
 
-Zusätzlich enthält das Abonnement eine *Abonnement-Zuordnung*, die Felder aus dem Arbeitskopf oder der Arbeitszeile je nach Bedarf einigen oder allen der 10 freien Datenfelder des ausgehenden Ereignisses zuordnet. Um Informationen an den MHAX-Dienst zurückzugeben, werden Sie typischerweise die Datensatz-ID der Arbeitszeile oder die *Arbeitszeilen-Paar-ID* angeben. (Die Arbeitszeilenpaar-ID ist eine neue Eigenschaft, die es dem System ermöglicht, einen einzigen Rückgabebefehl zu verwenden, um Zeilen zu entnehmen und einzulagern.) Die übrigen Felder hängen vom Anwendungsfall ab. Einige Beispiele finden Sie weiter unten in diesem Thema.
+Zusätzlich enthält das Abonnement eine *Abonnement-Zuordnung*, die Felder aus dem Arbeitskopf oder der Arbeitszeile je nach Bedarf einigen oder allen der 10 freien Datenfelder des ausgehenden Ereignisses zuordnet. Um Informationen an den MHAX-Dienst zurückzugeben, werden Sie typischerweise die Datensatz-ID der Arbeitszeile oder die *Arbeitszeilen-Paar-ID* angeben. (Die Arbeitszeilenpaar-ID ist eine neue Eigenschaft, die es dem System ermöglicht, einen einzigen Rückgabebefehl zu verwenden, um Zeilen zu entnehmen und einzulagern.) Die übrigen Felder hängen vom Anwendungsfall ab. Einige Beispiele finden Sie weiter unten in diesem Artikel.
 
 Um eine Zuordnung festzulegen, wählen Sie auf der Seite **Abonnements** das betreffende Abonnement aus und wählen dann im Aktivitätsbereich **Abonnementzuordnung**. Im erscheinenden Dialogfenster **Abonnement-Map** können Sie für jedes verfügbare Datenfeld eine Tabelle und ein Feld nach Bedarf zuordnen.
 
@@ -161,7 +161,7 @@ Wenn die ID des Arbeitszeilenpaares angegeben wird, werden alle Entnahme-, Einla
 
 Bei Entnahmezeilen von Ladungsträgern von Lagerplätzen muss **data03** das Nummernschild angeben, von dem entnommen werden soll, unabhängig davon, ob die Zeilen durch die Arbeitszeilen-Datensatz-ID oder die Arbeitszeilen-Paar-ID gekennzeichnet sind. Das Feld **data04** muss das Zielkennzeichen des Arbeitskopfes für die Entnahme angeben.
 
-Eingelagerte Zeilen nehmen keine weiteren Informationen an. Sie werden nur auf der Basis des Lagerplatzes der aktuellen Zeile und des Ziel-Ladungsträgers des Werks ausgeführt. Wenn das Einlagern an einem anderen Lagerplatz erfolgen muss, ändern Sie den Lagerplatz der Arbeitslinie wie im Abschnitt [Ereignisse außer Kraft setzen](#override-events) weiter unten in diesem Thema beschrieben.
+Eingelagerte Zeilen nehmen keine weiteren Informationen an. Sie werden nur auf der Basis des Lagerplatzes der aktuellen Zeile und des Ziel-Ladungsträgers des Werks ausgeführt. Wenn das Einlagern an einem anderen Lagerplatz erfolgen muss, ändern Sie den Lagerplatz der Arbeitslinie wie im Abschnitt [Ereignisse außer Kraft setzen](#override-events) weiter unten in diesem Artikel beschrieben.
 
 Benutzerdefinierte Arbeitslinien erfordern oder unterstützen keine zusätzlichen Informationen im eingehenden Ereignis.
 
@@ -220,7 +220,7 @@ Mit der Zeit wird sich Ihre eingehende Warteschlange mit Artikeln füllen, die b
 
 ## <a name="get-a-quick-overview-by-using-the-queue-manager"></a>Verschaffen Sie sich einen schnellen Überblick mit Hilfe des Warteschlangenmanagers
 
-Um einen schnellen Überblick über alle Aktivitäten zu erhalten, die sich auf Ihre eingehenden und ausgehenden Warteschlangen beziehen, gehen Sie zu **Schnittstelle für Materialhandhabung \> Arbeitsbereiche \> Warteschlangen-Manager**. Die Seite **Warteschlangen-Manager** bietet eine Reihe von Registern und Kacheln, mit denen Sie Ihre Warteschlangen überwachen und erkunden können. Sie bietet auch nützliche Links zu den meisten anderen Seiten, die in diesem Thema erwähnt werden.
+Um einen schnellen Überblick über alle Aktivitäten zu erhalten, die sich auf Ihre eingehenden und ausgehenden Warteschlangen beziehen, gehen Sie zu **Schnittstelle für Materialhandhabung \> Arbeitsbereiche \> Warteschlangen-Manager**. Die Seite **Warteschlangen-Manager** bietet eine Reihe von Registern und Kacheln, mit denen Sie Ihre Warteschlangen überwachen und erkunden können. Sie bietet auch nützliche Links zu den meisten anderen Seiten, die in diesem Artikel erwähnt werden.
 
 ## <a name="connect-to-the-mhax-service"></a>Verbinden mit dem MHAX-Dienst
 

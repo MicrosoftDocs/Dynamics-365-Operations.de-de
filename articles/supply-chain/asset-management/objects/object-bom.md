@@ -1,6 +1,6 @@
 ---
 title: Anlagenstücklisten
-description: In diesem Thema werden die Anlagenstücklisten (BOMs) in Asset Management beschrieben.
+description: In diesem Artikel werden die Anlagenstücklisten (BOMs) in Anlagenverwaltung beschrieben.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0430891607ac4558c91b86318aee318d0076007daf59a32eda65cb411d274b3a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 71b861ec31e704e001aab29245b9e24ce8beb0de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751984"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882778"
 ---
 # <a name="asset-boms"></a>Anlagenstücklisten
 
@@ -28,7 +28,7 @@ ms.locfileid: "6751984"
 
  
 
-In diesem Thema werden die Anlagenstücklisten (BOMs) in Asset Management beschrieben. Die Seite **Anlagenstückliste** zeigt eine Liste sämtlicher Artikel an (Ersatzteilen und andere Artikel), die während der gesamten Lebensdauer einer Anlage verwendet werden. Wenn Sie eine neue Anlage erstellen, sollen Sie die Einrichtung einer Anlagenstückliste als Teil des Einrichtungsverfahrens in Betracht ziehen. Auf diese Weise können Sie Artikelhistorie für die Anlage ab dem Erstellungsdatum verfolgen.
+In diesem Artikel werden die Anlagenstücklisten (BOMs) in Anlagenverwaltung beschrieben. Die Seite **Anlagenstückliste** zeigt eine Liste sämtlicher Artikel an (Ersatzteilen und andere Artikel), die während der gesamten Lebensdauer einer Anlage verwendet werden. Wenn Sie eine neue Anlage erstellen, sollen Sie die Einrichtung einer Anlagenstückliste als Teil des Einrichtungsverfahrens in Betracht ziehen. Auf diese Weise können Sie Artikelhistorie für die Anlage ab dem Erstellungsdatum verfolgen.
 
 Nachdem Sie einen Wartungsauftrag abgeschlossen haben und der Artikelverbrauch für einen Arbeitsauftrag erfasst wurde, können Sie den Verbrauch von Ersatzteilen und anderen Artikeln verfolgen, die für die Anlage verwendet werden. Durch diese Funktion können Sie einen vollständigen Artikelverbrauchsdatensatz für alle Anlagen verwalten. Sie können den Datensatz beispielsweise verwenden, um zu überprüfen, ob ein bestimmtes Ersatzteil häufig ersetzt wird, oder um die Ersatzteile oder andere Artikel zu verfolgen, die gegenwärtig in einer Anlage verwendet werden.
 

@@ -1,6 +1,6 @@
 ---
 title: Phantomartikel
-description: In diesem Thema wird beschrieben, wie der Positionstyp „Phantom“ für die Positionen einer Stückliste (BOM) und die Formel in Dynamics 365 Supply Chain Management verwendet werden kann.
+description: In diesem Artikel wird beschrieben, wie der Positionstyp „Phantom“ für die Positionen einer Stückliste (BOM) und die Formel in Dynamics 365 Supply Chain Management verwendet werden kann.
 author: johanhoffmann
 ms.date: 05/05/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-05-05
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 5c9768381d35709611e4bec3d2b7793a4d896b34
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 64139873216decd8ecb2fcaf1f284e726c53c332
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713245"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893322"
 ---
 # <a name="phantom-items"></a>Phantomartikel
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird ausführlich beschrieben, wie der Positionstyp "Phantom" für die Positionen einer Stückliste (BOM) und die Formel verwendet werden kann.
+In diesem Artikel wird ausführlich beschrieben, wie der Positionstyp "Phantom" für die Positionen einer Stückliste (BOM) und die Formel verwendet werden kann.
 
 In Abbildung 1 ist (a) die Stückliste für Produkt H und Teile F und G und (b) ist der Arbeitsplan für Produkte H und Teil F.
 

@@ -1,6 +1,6 @@
 ---
 title: Fahrten verwalten
-description: Dieses Thema beschreibt, wie Sie mit Fahrten arbeiten. Eine Fahrt stellt normalerweise ein Schiff dar. Abhängig von Ihren Praktiken und Verfahren kann sie jedoch auch einen Lieferanten, eine Einkaufsbestellung oder einen anderen Artikel darstellen, der für Ihr Unternehmen sinnvoll ist.
+description: Dieser Artikel beschreibt, wie Sie mit Fahrten arbeiten. Eine Fahrt stellt normalerweise ein Schiff dar. Abhängig von Ihren Praktiken und Verfahren kann sie jedoch auch einen Lieferanten, eine Einkaufsbestellung oder einen anderen Artikel darstellen, der für Ihr Unternehmen sinnvoll ist.
 author: Weijiesa
 ms.date: 12/14/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7d85ef86351f5d6ac662bb72c88d464fba82f561
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 43f28a7e30dbbe15bb02d26483289f25515fcfca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8696165"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905862"
 ---
 # <a name="manage-voyages"></a>Fahrten verwalten
 
@@ -96,7 +96,7 @@ Um die Ansicht **Linien** zu öffnen, öffnen Sie eine Fahrt und wählen dann di
 
 ### <a name="information-on-the-voyage-header-fasttab"></a>Informationen zum Inforegister der Fahrt-Kopfzeile
 
-Das **Fahrtkopf** Inforegister in der **Zeilen**-Ansicht einer Fahrt enthält grundlegende Informationen, die die Fahrt beschreiben. Viele der Felder, die auf dieser Inforegisterkarte erscheinen, erscheinen auch in der Ansicht **Kopfzeile**, wie später in diesem Thema beschrieben.
+Das **Fahrtkopf** Inforegister in der **Zeilen**-Ansicht einer Fahrt enthält grundlegende Informationen, die die Fahrt beschreiben. Viele der Felder, die auf dieser Inforegisterkarte erscheinen, erscheinen auch in der Ansicht **Kopfzeile**, wie später in diesem Artikel beschrieben.
 
 ### <a name="information-on-the-voyage-lines-fasttab"></a>Informationen auf der Inforegisterkarte Fahrtzeilen
 

@@ -1,6 +1,6 @@
 ---
 title: Bewertungen und Rezensionen importieren und exportieren
-description: In diesem Thema wird beschrieben, wie Sie Produktbewertungen und Rezensionen in Microsoft Dynamics 365 Commerce importieren und exportieren.
+description: In diesem Artikel wird beschrieben, wie Sie Produktbewertungen und Rezensionen in Microsoft Dynamics 365 Commerce importieren und exportieren.
 author: gvrmohanreddy
 ms.date: 01/12/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 3ae85f21f7a78d56621aed60527207badcee9c75
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 97407f62d462c0ae370e9ea0d2799d3f30ecacfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968532"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863400"
 ---
 # <a name="import-and-export-ratings-and-reviews"></a>Bewertungen und Rezensionen importieren und exportieren
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Produktbewertungen und Rezensionen in Microsoft Dynamics 365 Commerce importieren und exportieren.
+In diesem Artikel wird beschrieben, wie Sie Produktbewertungen und Rezensionen in Microsoft Dynamics 365 Commerce importieren und exportieren.
 
 Dynamics 365 Commerce bietet [Bewertungen und Rezensionen](ratings-reviews-overview.md) als eine Mehrkanallösung. Beim Wechsel auf die Bewertungs- und Rezensionslösung von Dynamics 365 Commerce sollten Sie möglicherweise Ihre vorhandenen Bewertungs- und Rezensionsdaten auf die E-Commerce-Plattform verschieben. Je nach Ihren geschäftlichen Anforderungen sollten Sie möglicherweise auch Bewertungs- und Rezensionsdaten aus Commerce exportieren. Mit einem Power Automate Connector können Sie Bewertungen und Rezensionen in Commerce importieren und aus Commerce exportieren.
 

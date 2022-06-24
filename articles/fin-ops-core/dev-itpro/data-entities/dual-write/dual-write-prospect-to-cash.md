@@ -1,6 +1,6 @@
 ---
 title: Prospect-to-cash in Dual-Write
-description: Dieses Thema bietet Informationen über die Prospect-to-Cash iDual-Write.
+description: Dieser Artikel bietet Informationen über die Prospect-to-Cash beim dualen Schreiben (Dual-Write).
 author: RamaKrishnamoorthy
 ms.date: 01/07/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 7c53bcd1084d89b59d0f6b2674a85d7c3481a9bf
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f0d5339190f7e2aff7b084fa73e559af28e10ee8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781790"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860108"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Prospect-to-cash in Dual-write
 
@@ -29,7 +29,7 @@ In den App-Schnittstellen können Sie in Echtzeit auf die Verarbeitungsstatus un
 Informationen zur Kunden- und Kontaktintegration finden Sie unter [Integrierte Masterdaten von Debitoren](customer-mapping.md). Informationen zur Produktintegration finden Sie unter [Einheitliche Produktumgebung](product-mapping.md).
 
 > [!NOTE]
-> In Dynamics 365 Sales beziehen sich sowohl Interessent als auch Kunde auf einen Datensatz in der Tabelle **Konto**, in der die Spalte **RelationshipType** entweder **Interessent** oder **Kunde** ist. Wenn Ihre Geschäftslogik einen **Konto**-Qualifizierungsprozess enthält, bei dem der Datensatz **Konto** erstellt und zuerst als Interessent und dann als Kunde qualifiziert wird, wird dieser Datensatz nur mit der Finance and Operations-App synchronisiert, wenn es ein Kunde ist (`RelationshipType=Customer`). Wenn Sie möchten, dass die Zeile **Konto** als Interessent synchronisiert wird, benötigen Sie eine benutzerdefinierte Zuordnung, um die Interessentendaten zu integrieren.
+> In Dynamics 365 Sales beziehen sich sowohl Interessent als auch Kunde auf einen Datensatz in der Tabelle **Konto**, in der die Spalte **RelationshipType** entweder **Interessent** oder **Kunde** ist. Wenn Ihre Geschäftslogik einen **Konto**-Qualifizierungsprozess enthält, bei dem der Datensatz **Konto** erstellt und zuerst als Interessent und dann als Kunde qualifiziert wird, wird dieser Datensatz nur mit der Finanz- und Betriebs-App synchronisiert, wenn es ein Kunde ist (`RelationshipType=Customer`). Wenn Sie möchten, dass die Zeile **Konto** als Interessent synchronisiert wird, benötigen Sie eine benutzerdefinierte Zuordnung, um die Interessentendaten zu integrieren.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Voraussetzungen und Zuordnungseinrichtung
 
@@ -111,7 +111,7 @@ Verkaufsrechnungen werden im Supply Chain Management erstellt und mit Sales sync
 
 Prospect-to-Cash umfasst eine Sammlung von Kerntabellenzuordnungen, die während der Dateninteraktion zusammenwirken, wie in der folgenden Tabelle dargestellt.
 
-| Finance and Operations Apps | Customer Engagement-Apps | Beschreibung |
+| Finanz- und Betriebs-Apps | Customer Engagement-Apps | Description |
 |-----------------------------|-----------------------------------|-------------|
 [Alle Produkte](mapping-reference.md#138) | msdyn_globalproducts | |
 [Debitoren V3](mapping-reference.md#101) | Konten | |
@@ -122,7 +122,7 @@ Prospect-to-Cash umfasst eine Sammlung von Kerntabellenzuordnungen, die während
 [CDS-Verkaufsangebotskopf](mapping-reference.md#215) | Angebote | |
 [CDS-Verkaufsangebotspositionen](mapping-reference.md#214) | quotedetails | |
 [Freigegebene Produkte V2](mapping-reference.md#189) | msdyn_sharedproductdetails | |
-[Verkaufsrechnungskopfzeilen V2](mapping-reference.md#118) | Rechnungen | Die Tabelle „Verkaufsrechnungskopfzeilen V2“ in der Finance and Operations-App enthält Rechnungen für Aufträge und Freitextrechnungen. Ein Filter wird in Dataverse für duales Schreiben angewendet, der alle Freitext-Rechnungsdokumente herausfiltert. |
+[Verkaufsrechnungskopfzeilen V2](mapping-reference.md#118) | Rechnungen | Die Tabelle „Verkaufsrechnungskopfzeilen V2“ in der Finanz- und Betriebs-App enthält Rechnungen für Aufträge und Freitextrechnungen. Ein Filter wird in Dataverse für duales Schreiben angewendet, der alle Freitext-Rechnungsdokumente herausfiltert. |
 [Verkaufsrechnungspositionen V2](mapping-reference.md#117) | Rechnungsdetails | |
 [Auftragsgrundlagencodes](mapping-reference.md#186) | msdyn_salesorderorigins | |
 

@@ -1,6 +1,6 @@
 ---
 title: Kreditorenzusammenarbeit einrichten und verwalten
-description: In diesem Thema wird erläutert, wie Kreditorenzusammenarbeit in Dynamics 365 Supply Chain Management eingerichtet werden. Außerdem wird erläutert, wie Sie neue Benutzer für die Zusammenarbeit mit Anbietern bereitstellen und die Sicherheitsrollen für diese Benutzer verwalten.
+description: In diesem Artikel wird erläutert, wie Kreditorenzusammenarbeit in Dynamics 365 Supply Chain Management eingerichtet werden. Außerdem wird erläutert, wie Sie neue Benutzer für die Zusammenarbeit mit Anbietern bereitstellen und die Sicherheitsrollen für diese Benutzer verwalten.
 author: GalynaFedorova
 ms.date: 12/03/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4b59513d86426d3c1bfd759b9aabc331e58d5423
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8fe4731f8ff23f4abe25fce57a2325e1fca979c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677561"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890827"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>Kreditorenzusammenarbeit einrichten und verwalten
 
@@ -28,7 +28,7 @@ ms.locfileid: "8677561"
 
 Die Kreditorenzusammenarbeitsschnittstelle zeigt eine begrenzte Menge an Informationen zu Bestellungen, Rechnungen und Lieferbestand für externe Kreditorenbenutzer an. Von dieser Schnittstelle aus kann ein Lieferant auch auf Angebotsanfragen (RFQs) antworten und grundlegende Unternehmensinformationen anzeigen und bearbeiten.
 
-In diesem Thema wird erläutert, wie Kreditorenzusammenarbeit in Dynamics 365 Supply Chain Management eingerichtet werden. Außerdem wird erläutert, wie Sie einen Workflow einrichten, der neue Benutzer für die Zusammenarbeit mit Anbietern bereitstellt und die Sicherheitsrollen für diese Benutzer verwaltet.
+In diesem Artikel wird erläutert, wie Kreditorenzusammenarbeit in Dynamics 365 Supply Chain Management eingerichtet werden. Außerdem wird erläutert, wie Sie einen Workflow einrichten, der neue Benutzer für die Zusammenarbeit mit Anbietern bereitstellt und die Sicherheitsrollen für diese Benutzer verwaltet.
 
 > [!NOTE]
 > Die Informationen zum Einrichten von Sicherheitsrollen für die Zusammenarbeit mit Anbietern gelten nur für die aktuelle Version von Finance and Operations. In Microsoft Dynamics AX 7.0 (Februar 2016) und Microsoft Dynamics AX-Anwendungsversion 7.0.1 (Mai 2016) arbeiten Sie mit Kreditoren zusammen, indem Sie das Modul **Kreditorenportal** verwenden. Informationen zu Benutzerberechtigungen für das Vendor-Portal in Microsoft Dynamics AX finden Sie unter [Benutzersicherheit des Kreditorenportals](configure-security-vendor-portal-users.md).
@@ -77,7 +77,7 @@ Die **Rolle des Lieferanten (extern)** kann für externe Lieferanten verwendet w
 
 ## <a name="set-up-security-roles-that-are-used-when-prospective-vendors-are-onboarded"></a>Richten Sie Sicherheitsrollen ein, die beim Onboarding potenzieller Anbieter verwendet werden
 
-Um Kreditoren einzubinden, die über eine Registrierungsanforderung für potenzielle Kreditoren initiiert werden, müssen Sie eine externe Sicherheitsrolle einrichten. Diese Rolle wird neuen Benutzern während des Bereitstellungsprozesses zugewiesen, der durch den Workflow des Typs **Workflow für Benutzeranfragen (Plattform)** gesteuert wird. Weitere Informationen finden Sie im Abschnitt [Einrichten von Workflows zur Verarbeitung von Benutzeranfragen zur Zusammenarbeit mit Anbietern](#set-up-workflows-to-process-vendor-collaboration-user-requests) weiter unten in diesem Thema.
+Um Kreditoren einzubinden, die über eine Registrierungsanforderung für potenzielle Kreditoren initiiert werden, müssen Sie eine externe Sicherheitsrolle einrichten. Diese Rolle wird neuen Benutzern während des Bereitstellungsprozesses zugewiesen, der durch den Workflow des Typs **Workflow für Benutzeranfragen (Plattform)** gesteuert wird. Weitere Informationen finden Sie im Abschnitt [Einrichten von Workflows zur Verarbeitung von Benutzeranfragen zur Zusammenarbeit mit Anbietern](#set-up-workflows-to-process-vendor-collaboration-user-requests) weiter unten in diesem Artikel.
 
 Informationen zum Onboarding potenzieller Anbieter finden Sie unter [Onboarding für Anbieter durchführen](vendor-onboarding.md).
 

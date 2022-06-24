@@ -1,6 +1,6 @@
 ---
 title: Erstellen von Serviceobjektbeziehungen
-description: In diesem Thema wird beschrieben, wie Serviceobjektbeziehungen für eine Servicevereinbarung und einen Serviceauftrag erstellt werden.
+description: In diesem Artikel wird beschrieben, wie Serviceobjektbeziehungen für eine Servicevereinbarung und einen Serviceauftrag erstellt werden.
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4178132b03cd146aacbcbb8bf8e1e774a161726c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e89039356f167ef2f06824ffee8645f74f8a2b53
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677225"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890653"
 ---
 # <a name="create-service-object-relations"></a>Erstellen von Serviceobjektbeziehungen 
 
 [!include [banner](../includes/banner.md)]
 
 
-In diesem Thema wird beschrieben, wie Serviceobjektbeziehungen für eine Servicevereinbarung und einen Serviceauftrag erstellt werden. Durch Erstellen einer Serviceobjektbeziehung wird das Serviceobjekt einer Servicevereinbarung oder einem Serviceauftrag zugeordnet. Wenn ein Debitor einen Service für einen Artikel anfordert, der ein Serviceobjekt ist, können Sie das Serviceobjekt aus der Liste der Serviceobjektbeziehungen auswählen.
+In diesem Artikel wird beschrieben, wie Serviceobjektbeziehungen für eine Servicevereinbarung und einen Serviceauftrag erstellt werden. Durch Erstellen einer Serviceobjektbeziehung wird das Serviceobjekt einer Servicevereinbarung oder einem Serviceauftrag zugeordnet. Wenn ein Debitor einen Service für einen Artikel anfordert, der ein Serviceobjekt ist, können Sie das Serviceobjekt aus der Liste der Serviceobjektbeziehungen auswählen.
 
 ## <a name="create-a-service-object-relation-for-a-service-agreement"></a>Erstellen einer Serviceobjektbeziehung für einen Servicevertrag
 

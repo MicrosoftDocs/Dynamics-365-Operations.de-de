@@ -1,6 +1,6 @@
 ---
-title: Lagerplatzdirektive für Bestellungseinlagerung einrichten
-description: In diesem Thema wird erläutert, wie Sie eine einfache Standortanweisung einrichten.
+title: Lagerplatzrichtlinie für Einlagerung von Bestellungen festlegen
+description: In diesem Artikel wird erläutert, wie Sie eine einfache Standortanweisung einrichten.
 author: Weijiesa
 ms.date: 08/08/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: weijiesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2275b2fd70e246955054930b13f29a6c0b287363
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6d973d1cdb530a031ca8a5caf621f9bebced4842
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674137"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873491"
 ---
-# <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Lagerplatzdirektive für Bestellungseinlagerung einrichten
+# <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Lagerplatzrichtlinie für Einlagerung von Bestellungen festlegen
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie eine einfache Standortanweisung einrichten. Das Beispiel, das angezeigt wird, erstellt, um zu bestimmen, wo sich verwendet werden Lagerplatzdirektive, Artikel führt, die für eine Bestellung eingegangen sind. Sie können diese Prozedur mit dem Daten des Demodatenunternehmen USMF oder mit eigenen Daten verwenden. Vorbedingungen: Sie müssen einen Dispositionscode erstellen. In diesem Schritt verwenden Sie einen aufgerufenen Dispositionscode neu bezeichnen. Wenn Sie Lagerplatzdirektive in eigene Daten erstellen, müssen Sie einrichten erweiterte Lagerortverwaltung für den aktuellen Lagerort und Artikel verwenden. Diese Prozedur ist für die Lagerverwaltung vorgesehen.
+In diesem Artikel wird erläutert, wie Sie eine einfache Standortanweisung einrichten. Das Beispiel, das angezeigt wird, erstellt, um zu bestimmen, wo sich verwendet werden Lagerplatzdirektive, Artikel führt, die für eine Bestellung eingegangen sind. Sie können diese Prozedur mit dem Daten des Demodatenunternehmen USMF oder mit eigenen Daten verwenden. Vorbedingungen: Sie müssen einen Dispositionscode erstellen. In diesem Schritt verwenden Sie einen aufgerufenen Dispositionscode neu bezeichnen. Wenn Sie Lagerplatzdirektive in eigene Daten erstellen, müssen Sie einrichten erweiterte Lagerortverwaltung für den aktuellen Lagerort und Artikel verwenden. Diese Prozedur ist für die Lagerverwaltung vorgesehen.
 
 1. Gehen Sie im Navigationsbereich zu **Module > Lagerverwaltung > Einrichtung > Standortanweisungen**.
 2. Wählen Sie im Feld **Arbeitsauftragsart** **Bestellungen**.

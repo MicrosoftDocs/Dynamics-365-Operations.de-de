@@ -1,6 +1,6 @@
 ---
-title: Arbeitsauslastungen bei der Fertigungsausführung für Cloud- und Edge-Scale-Einheiten
-description: Dieses Thema beschreibt, wie Arbeitsauslastungen für die Fertigungsausführung mit Cloud- und Edge Scale-Units funktionieren.
+title: Workloads in der Fertigungsausführung für Cloud- und Edge-Skalierungseinheiten
+description: Dieser Artikel beschreibt, wie Arbeitsauslastungen für die Fertigungsausführung mit Cloud- und Edge Scale-Units funktionieren.
 author: johanhoffmann
 ms.date: 10/06/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: johanho
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b30e16489b0b0169f08e52c70cf4489c9bf4ce1b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c73c2440d8807e965e5d2d89105c2a8a6971c849
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674053"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865323"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Workloads in der Fertigungsausführung für Cloud- und Edge-Skalierungseinheiten
 
@@ -41,7 +41,7 @@ Bei der Ausführung der Fertigung bieten Skalierungseinheiten die folgenden Funk
 - Der Fertigungsleiter kann den Betriebsplan anpassen.
 - Die Arbeiter können auf die Zeiterfassung zugreifen, um die korrekte Berechnung der Löhne sicherzustellen.
 
-Dieses Thema beschreibt, wie Arbeitsauslastungen für die Fertigungsausführung mit Cloud- und Edge Scale-Units funktionieren.
+Dieser Artikel beschreibt, wie Arbeitsauslastungen für die Fertigungsausführung mit Cloud- und Edge Scale-Units funktionieren.
 
 ## <a name="the-manufacturing-lifecycle"></a>Der Fertigungslebenszyklus
 
