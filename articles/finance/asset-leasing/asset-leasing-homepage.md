@@ -1,6 +1,6 @@
 ---
 title: Anlagenleasing-Startseite
-description: Dieses Thema bietet eine Übersicht über die Dokumentation zum Anlagenleasing sowie Verknüpfungen zu bestimmten Themen.
+description: Dieser Artikel bietet eine Übersicht über die Dokumentation zum Anlagenleasing sowie Verknüpfungen zu bestimmten Themen.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -17,27 +17,27 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c82c54b08a7d4c603d1246c598abacc51eb88839
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 014c34791f280ca1d3d9154cd0870a73cc43d26b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710384"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889148"
 ---
 # <a name="asset-leasing-home-page"></a>Anlagenleasing-Startseite
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema listet die Hilfethemen auf, die für das Anlagenleasing verfügbar sind, und enthält Links zu bestimmten Themen. 
+Dieser Artikel listet die Hilfethemen auf, die für das Anlagenleasing verfügbar sind, und enthält Links zu bestimmten Themen. 
 
 Anlagenleasing ist eine erweiterte Funktion zur Verwaltung, Verfolgung und Automatisierung von Finanzbuchungen für Leasingobjekte in Microsoft Dynamics 365 Finance. Anlagenleasing entspricht den internationalen Rechnungslegungsstandards (IFRS 16) und den US-GAAP-Standards (ASC 842). Anlagenleasing erfasst und verarbeitet Informationen zu den Leasingverträgen und unterstützt das Generieren von Journaleinträgen über den gesamten Lebenszyklus des Leasingtvertrags hinweg, von der erstmaligen Erfassung über monatliche Journaleinträge bis hin zur dauerhaften Wertminderung und zur Beendigung des Leasingvertrags.
 
 Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit der Einstellung **Funktionsverwaltung** den Status der Funktion überprüfen und ggf. aktivieren. Suchen und wählen Sie im Arbeitsbereich **Funktionsverwaltung** die Funktion namens **Anlagenleasing** aus. Klicken Sie anschließend auf **Jetzt aktivieren**.
 
 ## <a name="asset-leasing-topics"></a>Anlagenleasing-Themen
-Das folgende Thema hilft bei der Konfiguration und Verwendung von Anlagenleasing. 
+Der folgende Artikel hilft bei der Konfiguration und Verwendung von Anlagenleasing. 
 
- - [Erstel Schritte beim Anlagenleasing](asset-leasing-quick-start.md) – In diesem Thema werden die allgemeinen Funktionen des Anlagenleasing beschrieben sowie die in der Software und in der Dokumentation verwendeten Begriffe aufgelistet und definiert.
+ - [Erste Schritte beim Anlagenleasing](asset-leasing-quick-start.md) – In diesem Artikel werden die allgemeinen Funktionen des Anlagenleasing beschrieben sowie die in der Software und in der Dokumentation verwendeten Begriffe aufgelistet und definiert.
  
  ### <a name="set-up-asset-leasing"></a>Einrichten des Anlagenleasings
  Diese Themengruppe kann Ihnen dabei helfen, das Anlagenleasing so zu konfigurieren, dass es für die Geschäftssituation Ihres Unternehmens optimal ist.  
@@ -77,7 +77,7 @@ Diese Themengruppe beschreibt den Prozess zum Hinzufügen von Mietverträgen, zu
  - [Einen Mietvertrag über das Framework für Leasingimport verwalten](manage-leases-thru-imprt-framewrk.md)
  
 ### <a name="asset-leasing-reporting"></a>Anlagenleasing-Berichte
-In diesem Thema werden die im Analgenleasing verfügbaren Berichte beschrieben. 
+In diesem Artikel werden die im Anlagenleasing verfügbaren Berichte beschrieben. 
 
  - [Anlagenleasing-Berichte](asset-leasing-rprts.md)
  

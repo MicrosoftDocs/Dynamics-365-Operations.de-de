@@ -1,6 +1,6 @@
 ---
 title: Ausgleichen einer teilweisen Kreditorenzahlung und Ausgleichen der vollständigen Zahlung vollständig vor dem Skontodatum
-description: Dieses Thema führt Sie durch ein Szenario, in dem Teilzahlungen für eine Kreditorenrechnung vorgenommen werden, und ein Skonto abgezogen wird.
+description: Dieser Artikel führt Sie durch ein Szenario, in dem Teilzahlungen für eine Kreditorenrechnung vorgenommen werden, und ein Skonto abgezogen wird.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04b00c8407ea2fd7d1e4b58db47c392989a20577
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 90aeff9872e72950f42b6227300933d562c0a3d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716242"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889989"
 ---
 # <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Ausgleichen einer teilweisen Kreditorenzahlung und Ausgleichen der vollständigen Zahlung vollständig vor dem Skontodatum
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema führt Sie durch ein Szenario, in dem Teilzahlungen für eine Kreditorenrechnung vorgenommen werden, und ein Skonto abgezogen wird.
+Dieser Artikel führt Sie durch ein Szenario, in dem Teilzahlungen für eine Kreditorenrechnung vorgenommen werden, und ein Skonto abgezogen wird.
 
 Fabrikam kauf Waren von Kreditor 3064. Der Kreditor gibt Fabrikam ein Skonto von 1 Prozent, wenn eine Rechnung in 14 Tagen beglichen wird. Rechnungen müssen in 30 Tagen bezahlt werden. Der Kreditor ermöglicht Fabrikam auch, Skonti auf Teilzahlungen zu erhalten. Die Ausgleichsparameter sind auf der Seite **Kreditorenkontenparameter** verfügbar. Am 25. Juni gibt April eine Rechnung für 1.000,00 für den Kreditor 3064 ein.
 

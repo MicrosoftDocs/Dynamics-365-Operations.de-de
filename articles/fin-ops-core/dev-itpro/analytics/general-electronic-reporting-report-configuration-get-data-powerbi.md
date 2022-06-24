@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren elektronischer Berichterstattung (EB), um Daten in Power BI einzubeziehen
-description: In diesem Thema wird erläutert, wie Sie die Konfiguration der elektronischen Berichterstellung (EB) verwenden können, um die Übertragung von Daten aus Ihrer Instanz zu den Power BI-Diensten zu veranlassen.
+description: In diesem Artikel wird erläutert, wie Sie die Konfiguration der elektronischen Berichterstellung (EB) verwenden können, um die Übertragung von Daten aus Ihrer Instanz zu den Power BI-Diensten zu veranlassen.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -14,31 +14,31 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: aa9a47c9ee7c76322fd2d9bfcf5fc61a50bf421321891b3c78a782be6a9f8e6a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e6903513dec4da20dbc4463fbae6a406fc06e1a6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740941"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896733"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Konfigurieren elektronischer Berichterstattung (EB), um Daten in Power BI einzubeziehen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie die Konfiguration der elektronischen Berichterstellung (EB) verwenden können, um die Übertragung von Daten aus Ihrer Instanz zu den Power BI-Diensten zu veranlassen. Als Beispiel verwendet dieses Thema Intrastat-Buchungen als Geschäftsdaten, die übertragen werden müssen. Die Power BI-Zuordnungsvisualisierung verwendet diese Intrastat-Buchungsdaten, um eine Ansicht zur Analyse von Import-/Exportaktivitäten von Unternehmen im Power BI-Bericht darzustellen.
+In diesem Artikel wird erläutert, wie Sie die Konfiguration der elektronischen Berichterstellung (EB) verwenden können, um die Übertragung von Daten aus Ihrer Instanz zu den Power BI-Diensten zu veranlassen. Als Beispiel verwendet dieser Artikel Intrastat-Buchungen als Geschäftsdaten, die übertragen werden müssen. Die Power BI-Zuordnungsvisualisierung verwendet diese Intrastat-Buchungsdaten, um eine Ansicht zur Analyse von Import-/Exportaktivitäten von Unternehmen im Power BI-Bericht darzustellen.
 
 ## <a name="overview"></a>Übersicht
 
-Microsoft Power BI ist eine Sammlung von Softwaredienstleistungen, Apps und Konnektoren, die zusammenarbeiten, um externe Quellen von Daten in zusammenhängende, visuell anschauliche und interaktive Überblicke zu verwandeln. Mit der elektronischen Berichterstellung (EB) können Benutzer leicht Datenquellen konfigurieren und die Übertragung von Daten der Anwendung zu Power BI veranlassen. Die Daten werden als Dateien im OpenXML-Arbeitsblattformat (Microsoft Excel-Arbeitsmappendatei) übertragen. Die übertragenen Dateien werden auf einem Microsoft SharePoint Server gespeichert, der für diesen Zweck konfiguriert wurde. Die gespeicherten Dateien werden in Power BI verwendet, um Berichte zu erstellen, die Visualisierungen enthalten (Tabellen, Diagramme, Karten usw.). Power BI-Berichte werden für Power BI-Benutzer freigegeben, und auf sie wird in Power BI-Dashboards und auf den Anwendungsseiten zugegriffen. In diesem Thema werden die folgenden Aufgaben erläutert:
+Microsoft Power BI ist eine Sammlung von Softwaredienstleistungen, Apps und Konnektoren, die zusammenarbeiten, um externe Quellen von Daten in zusammenhängende, visuell anschauliche und interaktive Überblicke zu verwandeln. Mit der elektronischen Berichterstellung (EB) können Benutzer leicht Datenquellen konfigurieren und die Übertragung von Daten der Anwendung zu Power BI veranlassen. Die Daten werden als Dateien im OpenXML-Arbeitsblattformat (Microsoft Excel-Arbeitsmappendatei) übertragen. Die übertragenen Dateien werden auf einem Microsoft SharePoint Server gespeichert, der für diesen Zweck konfiguriert wurde. Die gespeicherten Dateien werden in Power BI verwendet, um Berichte zu erstellen, die Visualisierungen enthalten (Tabellen, Diagramme, Karten usw.). Power BI-Berichte werden für Power BI-Benutzer freigegeben, und auf sie wird in Power BI-Dashboards und auf den Anwendungsseiten zugegriffen. In diesem Artikel werden die folgenden Aufgaben erläutert:
 
-- Konfigurieren von Microsoft Dynamics 365 Finance
+- Konfigurieren Sie Microsoft Dynamics 365 Finance.
 - Bereiten Sie die Formatkonfiguration Ihrer elektronischen Berichterstellung vor, um Daten aus der Finance-Anwendung abzurufen.
 - Konfigurieren Sie die EB-Umgebung, um Daten nach Power BI zu übertragen.
 - Verwenden Sie übertragene Daten, um einen Power BI-Bericht zu erstellen.
 - Machen Sie den Power BI-Bericht in Finance zugänglich.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Um das Beispiel in diesem Thema abzuschließen, müssen Sie den folgenden Zugriff haben:
+Um das Beispiel in diesem Artikel abzuschließen, müssen Sie den folgenden Zugriff haben:
 
 - Zugriff für eine der folgenden Rollen:
 

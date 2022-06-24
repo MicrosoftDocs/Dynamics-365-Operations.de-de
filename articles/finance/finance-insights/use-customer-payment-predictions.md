@@ -1,6 +1,6 @@
 ---
 title: Vorhersagen für Kundenzahlungen verwenden
-description: In diesem Thema werden die Voraussetzungen und die allgemeinen Schritte erläutert, die für die Verwendung einer Testversion von Finance Insights erforderlich sind.
+description: In diesem Artikel werden die Voraussetzungen und die allgemeinen Schritte erläutert, die für die Verwendung einer Testversion von Finance Insights erforderlich sind.
 author: ShivamPandey-msft
 ms.date: 11/03/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: ecc864485dfc106df22b48e92a85f2c73d58e0e8
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 330642624b55a6772ef149b70873021401a6bd83
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740623"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901401"
 ---
 # <a name="use-customer-payment-predictions"></a>Vorhersagen für Kundenzahlungen verwenden
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie die Zahlungsvorhersagen des Kunden verwenden. Stellen Sie vor der Verwendung dieser Funktion sicher, dass Sie die Einrichtungsschritte für diese Funktion ausgeführt haben. Weitere Informationen finden Sie unter [Zahlungsvorhersagen von Debitoren aktivieren](enable-cust-paymnt-prediction.md).
+In diesem Artikel wird erläutert, wie Sie die Zahlungsvorhersagen des Kunden verwenden. Stellen Sie vor der Verwendung dieser Funktion sicher, dass Sie die Einrichtungsschritte für diese Funktion ausgeführt haben. Weitere Informationen finden Sie unter [Zahlungsvorhersagen von Debitoren aktivieren](enable-cust-paymnt-prediction.md).
 
 Sie können Debitorenzahlungsvorhersagen im **Debitorenkredit und Inkassi verwalten**-Arbeitsbereich und auf zwei neuen Listenseiten anzeigen: **Zahlungsvorhersagen für Transaktion** und **Zahlungsvorhersagen für Debitor**.
 

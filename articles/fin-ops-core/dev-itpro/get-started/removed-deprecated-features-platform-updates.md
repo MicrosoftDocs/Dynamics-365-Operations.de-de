@@ -1,6 +1,6 @@
 ---
 title: Entfernte oder veraltete Plattformfunktionen
-description: In diesem Thema werden Funktionen beschrieben, die bei Plattform-Updates der Apps Finance + Operations entfernt wurden oder deren Entfernung geplant ist.
+description: In diesem Artikel werden Funktionen beschrieben, die bei Plattform-Updates der Finanz- und Betriebs-Apps entfernt wurden oder deren Entfernung geplant ist.
 author: sericks007
 ms.date: 05/24/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 3de9b9ea0bd20d1346a7cdfd2f919f50374b164c
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 51165db8d15f0a57fd9bc1649dc6e3ca72875236
+ms.sourcegitcommit: 1fa1ac1fa25e977e98bc02ed5d9d39bd3a7a28d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811245"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945803"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Entfernte oder veraltete Plattformfunktionen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden Funktionen beschrieben, die bei Plattform-Updates der Apps Finance + Operations entfernt wurden oder deren Entfernung geplant ist.
+In diesem Artikel werden Funktionen beschrieben, die bei Plattform-Updates der Finanz- und Betriebs-Apps entfernt wurden oder deren Entfernung geplant ist.
 
 - Eine Funktion *entfernt* ist nicht mehr im Produkt verfügbar.
 - Eine Funktion *veraltet* wird nicht aktiv entwickelt und könnte bei einem zukünftigen Update entfernt werden.
@@ -40,8 +40,8 @@ Ausführliche Informationen über Objekte in Apps für Finanzen und Betrieb find
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Wir nehmen die mobile Anwendung und Plattform für Finanz und Betrieb (Dynamics 365) außer Betrieb, um sie auf eine einzige mobile Plattform zu konsolidieren, die Power Apps ist. |
-| **Ersetzt durch eine andere Funktion?**   | Ja, mobile Erfahrungen über Finanz- und Betriebs-App-Daten können mit der Power Platform-Integration erstellt werden. Weitere Einzelheiten finden Sie unter [Aufbau mobiler Erlebnisse](../power-platform/build-mobile-experiences.md). |
-| **Betroffene Produktbereiche**         | Finance and Operations-Apps |
+| **Ersetzt durch eine andere Funktion?**   | Ja, mobile Erfahrungen über Finanz- und Betriebs-App-Daten können mit der Power Platform-Integration erstellt werden. Weitere Einzelheiten finden Sie in dem [Blogbeitrag](https://cloudblogs.microsoft.com/dynamics365/it/2022/06/03/finance-and-operations-dynamics-365-mobile-app-to-be-deprecated/) und unter [Aufbau mobiler Erlebnisse](../power-platform/build-mobile-experiences.md). |
+| **Betroffene Produktbereiche**         | Finanz- und Betriebs-Apps |
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet. Das Enddatum des Supports ist für Oktober 2024 vorgesehen. |
 
@@ -67,7 +67,7 @@ Ausführliche Informationen über Objekte in Apps für Finanzen und Betrieb find
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Wir entfernen die Unterstützung für die XML-URL-Auflösung, da dies als potenzielle Sicherheitslücke identifiziert wurde. Das bedeutet, dass XML-Dateien zugeordnete externe Ressourcen nicht mehr aufgelöst werden.  |
 | **Ersetzt durch eine andere Funktion?**   | Nein |
-| **Betroffene Produktbereiche**         | Finance and Operations-Apps |
+| **Betroffene Produktbereiche**         | Finanz- und Betriebs-Apps |
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet. |
 
@@ -79,7 +79,7 @@ Ausführliche Informationen über Objekte in Apps für Finanzen und Betrieb find
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die Unterstützung für XSLT-Skripterstellung in der Datenverwaltung ist veraltet, um die Sicherheit und den Datenschutz in den Finanz- und Betriebs-Apps zu verbessern.  |
 | **Ersetzt durch eine andere Funktion?**   | Nein Kunden und ISVs sollten erwägen, ihre Lösungen anstelle von XSLT-Skripterstellung basierend auf der X++-Sprache neu zu implementieren. |
-| **Betroffene Produktbereiche**         | Finance and Operations-Apps |
+| **Betroffene Produktbereiche**         | Finanz- und Betriebs-Apps |
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet <br><br>**Ausnahme:** Kunden, die derzeit XLST-Skripterstellung verwenden. Sie können sie weiterhin verwenden, bis sie auf Version 10.0.30 oder höher aktualisieren. Für frühere Versionen läuft die Ausnahme mit Wirkung zum 31. Januar 2023 aus. Kunden mit dieser Ausnahme haben eine Benachrichtigung im Message Center erhalten, das im Microsoft 365 Admin Center verfügbar ist. |
 
@@ -196,7 +196,7 @@ Ausführliche Informationen über Objekte in Apps für Finanzen und Betrieb find
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Um den Aufwand für den Betrieb, die Überwachung und die Pflege der Indexverwaltung durch Kunden zu verringern, wurde diese Funktion entfernt. |
 | **Ersetzt durch eine andere Funktion?**   | In Zukunft wird die Indexpflege von Microsoft-Diensten durchgeführt. Dies geschieht kontinuierlich, ohne die Arbeitslast der Benutzer zu beeinträchtigen. |
-| **Betroffene Produktbereiche**         | Finance and Operations-Apps|
+| **Betroffene Produktbereiche**         | Finanz- und Betriebs-Apps|
 | **Bereitstellungsoption**              | Cloud-Bereitstellung: Wirkt sich auf von Microsoft verwaltete Produktionsumgebungen und Sandbox-Umgebungen der Stufen 2 bis 5 aus. |
 | **Status**                         | Diese Funktion wird entfernt. |
 

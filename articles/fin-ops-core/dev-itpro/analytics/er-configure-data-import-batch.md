@@ -1,6 +1,6 @@
 ---
 title: Importieren von Daten aus manuell ausgewählten Dateien im Batch-Modus
-description: In diesem Thema wird erklärt, wie Sie Daten aus manuell ausgewählten Dateien im Batch-Modus importieren.
+description: In diesem Artikel wird erklärt, wie Sie Daten aus manuell ausgewählten Dateien im Batch-Modus importieren.
 author: NickSelin
 ms.date: 01/07/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-01-01
 ms.dyn365.ops.version: Release 10.0.25
-ms.openlocfilehash: 8615b5a0623fd696c64f4ec03e481a2bcb16c0ac
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 2dec838439876fd8e57ea4a7078d97267e5ea1a2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075611"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890182"
 ---
 # <a name="import-data-from-manually-selected-files-in-batch-mode"></a>Importieren von Daten aus manuell ausgewählten Dateien im Batch-Modus
 
@@ -31,11 +31,11 @@ Um das [Electronic Reporting (ER)](general-electronic-reporting.md) Framework zu
 
 Die neue Funktionalität von ER, die den Datenimport im Batch-Modus unterstützt, ermöglicht es, diesen Prozess als unbeaufsichtigt zu konfigurieren. Sie können ER-Konfigurationen verwenden, um den Datenimport durchzuführen, indem Sie einen neuen Batchauftrag über die ER-Benutzeroberfläche (UI) einplanen.
 
-In diesem Thema wird erklärt, wie Sie den Datenimport aus einer manuell ausgewählten Datei im Batch-Modus abschließen. Die Beispiele verwenden Kreditorenbuchungen als Geschäftsdaten. Die Schritte dieser Beispiele können in der Firma **USMF** ausgeführt werden. Eine Codierung ist nicht erforderlich.
+In diesem Artikel wird erklärt, wie Sie den Datenimport aus einer manuell ausgewählten Datei im Batch-Modus abschließen. Die Beispiele verwenden Kreditorenbuchungen als Geschäftsdaten. Die Schritte dieser Beispiele können in der Firma **USMF** ausgeführt werden. Eine Codierung ist nicht erforderlich.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Um die Beispiele in diesem Thema abzuschließen, müssen Sie den folgenden Zugriff haben:
+Um die Beispiele in diesem Artikel abzuschließen, müssen Sie den folgenden Zugriff haben:
 
 - Eine der folgenden Rollen:
 
@@ -61,7 +61,7 @@ Um die erforderlichen ER-Konfigurationen zu erstellen und andere Voraussetzungen
     | **1099-Zahlungsmodell** ER-Datenmodell-Konfiguration | [1099model.xml](https://download.microsoft.com/download/b/d/9/bd9e8373-d558-4ab8-aa9b-31981adc97ea/1099model.xml) |
     | **Für den Import von Transaktionen von Kreditoren (Excel)** ER-Formatkonfiguration | [1099format-import-from-excel.xml](https://download.microsoft.com/download/b/3/8/b38faf0a-fbaf-4e9e-84c2-dedae7464880/1099format-import-from-excel.xml) |
 
-2. Verwenden Sie die Option [Laden aus XML-Datei](er-defer-sequence-element.md#import-the-sample-er-configurations) ER, um die heruntergeladenen ER-Konfigurationen in der folgenden Reihenfolge in Ihre Instanz von Dynamics 365 Finance zu importieren:
+2. Verwenden Sie die ER-Option [Laden aus XML-Datei](er-defer-sequence-element.md#import-the-sample-er-configurations), um die heruntergeladenen EB-Konfigurationen in der folgenden Reihenfolge in Ihre Instanz von Dynamics 365 Finance zu importieren:
 
     1. ER-Datenmodell-Konfiguration
     2. ER-Formatkonfiguration

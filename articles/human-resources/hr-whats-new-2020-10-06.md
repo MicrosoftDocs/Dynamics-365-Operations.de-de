@@ -1,6 +1,6 @@
 ---
 title: Neuerungen oder Änderungen in Dynamics 365 Human Resources (6. Oktober 2020)
-description: Dieses Thema beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 6. Oktober 2020 neu sind oder geändert wurden.
+description: Dieser Artikel beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 6. Oktober 2020 neu sind oder geändert wurden.
 author: jcart1106
 ms.date: 10/06/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ac64218e48d2713b91af1541f94083aef3f815a2
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 4eb3e893c3243d3b2c169cb5a47001d4e0771a20
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062978"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887717"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-6-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources (6. Oktober 2020)
 
@@ -27,7 +27,7 @@ ms.locfileid: "8062978"
 
 
 
-In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Human Resources neu oder geändert wurden oder demnächst verfügbar sind. Weitere Informationen zu unserem Aktualisierungsprozess und Zeitplan finden Sie unter [Aktualisierungsprozess](hr-admin-setup-update-process.md).
+Dieser Artikel beschreibt Funktionen, die in Dynamics 365 Human Resources neu oder geändert sind oder bald eingeführt werden. Weitere Informationen zu unserem Aktualisierungsprozess und Zeitplan finden Sie unter [Aktualisierungsprozess](hr-admin-setup-update-process.md).
 
 Weitere Informationen zu neuen Funktionen und den voraussichtlichen allgemeinen Verfügbarkeitsterminen finden Sie unter [Überblick Dynamics 365 Human Resources 2020 Veröffentlichungszyklus 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
@@ -48,9 +48,9 @@ Die folgende Funktion ist in dieser Version allgemein verfügbar.
 Die folgenden Fehlerkorrekturen sind in diesem Release enthalten.
 
 >[!NOTE]
-> Unser Ziel ist es, Ihnen diese Informationen so rasch wie möglich zukommen zu lassen. Es gibt möglicherweise Aktualisierungen zu diesem Thema, um Fehlerbehebungen aufzunehmen, die es nach der Erstveröffentlichung dieses Themas in den Build geschafft haben.
+> Unser Ziel ist es, Ihnen diese Informationen so rasch wie möglich zukommen zu lassen. Es gibt möglicherweise Aktualisierungen zu diesem Artikel, um Fehlerbehebungen aufzunehmen, die es nach der Erstveröffentlichung dieses Artikels in den Build geschafft haben.
 
-| Problemnummer | Abgang | Beschreibung |
+| Problemnummer | Problem | Description |
 | --- | --- | --- |
 | 448806 | **Standardidentifikationstyp** Exporte als **RecID** in HCM-Parametern | Diese Änderung an der Entität Human Resources-Parameter fügt eine zusätzliche Spalte hinzu, in der der **Standardidentifikationstyp** angezeigt wird. |
 | 492923 | Aufgabenaufzeichnungen werden in Lifecycle Services (LCS) nicht gespeichert | Aufgabenaufzeichnungen können nun im LCS gespeichert werden. |

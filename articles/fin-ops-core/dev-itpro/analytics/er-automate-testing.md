@@ -1,6 +1,6 @@
 ---
 title: Automatisiertes Testen mit elektronischen Berichten
-description: In diesem Thema wird erläutert, wie Sie die Basisfunktion des Frameworks für elektronische Berichterstellung (ER) verwenden können, um Funktionstests zu automatisieren.
+description: In diesem Artikel wird erläutert, wie Sie die Basisfunktion des Frameworks für elektronische Berichterstellung (EB) verwenden können, um Funktionstests zu automatisieren.
 author: NickSelin
 ms.date: 07/02/2019
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: da69cc903197dbfae536c8494f126074c51aa77f9522d57f2673c97b1e682d9d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: df2baa988bb634db11d819dd84ef73eaa560bab9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749799"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892768"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Automatisiertes Testen mit elektronischen Berichten
 
 [!include[banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie das Framework für elektronische Berichterstellung (ER) verwenden können, um das Testen einiger Funktionen zu automatisieren. Das Beispiel in diesem Thema zeigt, wie die die Tests der Kreditorenzahlungsverarbeitung automatisiert werden kann.
+In diesem Artikel wird erläutert, wie Sie das Framework für elektronische Berichterstellung (EB) verwenden können, um das Testen einiger Funktionen zu automatisieren. Das Beispiel in diesem Artikel zeigt, wie die Tests der Kreditorenzahlungsverarbeitung automatisiert werden können.
 
 Die Anwendung verwendet das ER-Framework, um Zahlungsdateien und entsprechende Dokumente während des Lieferantenzahlungsvorgangs zu generieren. Das ER-Framework besteht aus einem Datenmodell, Modellzuordnungen und Formatkomponenten, die die Zahlungsverarbeitung für verschiedene Zahlungsarten und die Erstellung von Dokumenten in verschiedenen Formaten unterstützen. Diese Komponenten können von Microsoft Dynamics Lifecycle Services (LCS) heruntergeladen und in die Instanz importiert werden.
 
@@ -54,15 +54,15 @@ Funktionale Powernutzer können Benutzerakzeptanz- und Integrationstests durchf�
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Bevor Sie die Aufgaben in diesem Thema abschließen können, müssen die folgenden Voraussetzungen abgeschlossen werden:
+Bevor Sie die Aufgaben in diesem Artikel abschließen können, müssen die folgenden Voraussetzungen erfüllt sein:
 
 - Stellen Sie eine Topologie bereit, die Testautomatisierung unterstützt. Sie müssen Zugriff auf die Instanz dieser Topologie für die **Systemadministrator**-Rolle haben. Diese Topologie muss die Demodaten enthalten, die in diesem Beispiel verwendet werden. Weitere Informationen finden Sie unter [Bereitstellen und Verwenden von Umgebungen, die fortlaufende und Build- und Testautomatisierung unterstützen](../perf-test/continuous-build-test-automation.md).
-- Um Benutzerakzeptanz- und Integrationstests automatisch zu erstellen, müssen Sie RSAT in der Topologie installieren, die Sie verwenden und in der entsprechenden Art konfigurieren. Informationen darüber, wie Sie RSAT installieren und so konfigurieren, dass es mit den Finance and Operations-Apps und Azure DevOps funktioniert, finden Sie unter [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Beachten Sie die Voraussetzungen für die Verwendung des Tools. Die folgende Abbildung zeigt ein Beispiel der RSAT-Einstellungen. Das blaue Rechteck schließt die Parameter ein, die den Zugriff auf Azure DevOps angeben. Das grüne Rechteck schließt die Parameter ein, die den Zugriff auf die Instanz angeben.
+- Um Benutzerakzeptanz- und Integrationstests automatisch zu erstellen, müssen Sie RSAT in der Topologie installieren, die Sie verwenden und in der entsprechenden Art konfigurieren. Informationen darüber, wie Sie RSAT installieren und konfigurieren, damit es mit Finanz- und Betriebs-Apps und Azure DevOps funktioniert, finden Sie unter [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Beachten Sie die Voraussetzungen für die Verwendung des Tools. Die folgende Abbildung zeigt ein Beispiel der RSAT-Einstellungen. Das blaue Rechteck schließt die Parameter ein, die den Zugriff auf Azure DevOps angeben. Das grüne Rechteck schließt die Parameter ein, die den Zugriff auf die Instanz angeben.
 
     ![RSAT-Einstellungen.](media/GER-Configure.png "Screenshot des Dialogfelds „RSAT-Einstellungen“")
 
 - Um Testfälle in den Suiten zu organisieren, mit deren Hilfe die korrekte Ausführungssequenz sichergestellt wird, damit Sie Protokolle der Testausführungen für weitere Berichterstellung und Untersuchung erfassen können, müssen Sie über die bereitgestellte Topologie auf Azure DevOps zugreifen können.
-- Um das Beispiel in diesem Thema durchzuführen, sollten Sie [Er-Verwendung für RSAT-Tests](https://go.microsoft.com/fwlink/?linkid=874684) herunterladen. Diese ZIP-Datei enthält die folgenden Aufgaben-Guides:
+- Um das Beispiel in diesem Artikel durchzuführen, sollten Sie [ER-Verwendung für RSAT-Tests](https://go.microsoft.com/fwlink/?linkid=874684) herunterladen. Diese ZIP-Datei enthält die folgenden Aufgaben-Guides:
 
     | Inhalt                                           | Dateiname und Speicherort |
     |---------------------------------------------------|------------------------|

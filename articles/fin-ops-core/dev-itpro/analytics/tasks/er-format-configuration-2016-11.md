@@ -1,6 +1,6 @@
 ---
 title: ER Erstellen eine Formatkonfiguration (November 2016)
-description: In diesem Thema wird beschrieben, wie Sie eine Formatkonfiguration für die elektronische Berichterstellung (EB) verwalten.
+description: In diesem Artikel wird beschrieben, wie Sie eine Formatkonfiguration für die elektronische Berichterstellung (EB) verwalten.
 author: NickSelin
 ms.date: 08/02/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5d59f0f7c914cc6d59ae441e6f6b8ff249a3e9c03c6ee4b4a75421d875f826a0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2617f33293c38b7f1aaa61fda7d8de06711c6727
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728212"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902653"
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a>ER Erstellen eine Formatkonfiguration (November 2016)
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle „Entwickler für elektronische Berichterstellung“ zugewiesen ist, eine Format-Konfiguration für elektronische Berichterstellung (ER) erstellen kann. Diese Formatkonfiguration definiert das Format von elektronischen Dokumenten, die für die Verarbeitung von Zahlungen verwendet werden. In diesem Beispiel erstellen Sie eine Formatkonfiguration für das Beispielunternehmen Litware, Inc. Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte in der Prozedur „Modell für ausgewählte Datenquellen zuweisen abschließen“.
+In diesem Artikel wird erläutert, wie Benutzer, die der Systemadministratorrolle oder der Rolle „Entwickler für elektronische Berichterstellung“ zugewiesen sind, eine Format-Konfiguration für elektronische Berichterstellung (EB) erstellen. Diese Formatkonfiguration definiert das Format von elektronischen Dokumenten, die für die Verarbeitung von Zahlungen verwendet werden. In diesem Beispiel erstellen Sie eine Formatkonfiguration für das Beispielunternehmen Litware, Inc. Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte in der Prozedur „Modell für ausgewählte Datenquellen zuweisen abschließen“.
 
 
 ## <a name="create-a-new-format-configuration"></a>Dient zum Erstellen einer neuen Format-Konfiguration.

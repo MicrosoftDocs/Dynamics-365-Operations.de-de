@@ -1,6 +1,6 @@
 ---
 title: Konventionen beim Anlagenleasing
-description: Dieses Thema beschreibt die Konventionen für Leasingobjekte.
+description: Dieser Artikel beschreibt die Konventionen für Leasingobjekte.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5e0aabce46e47079b754b8ac674b205cf00b5e26
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: f2f0e21b20a969c0847ce3a6eb167287c1d7ee3e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711029"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898268"
 ---
 # <a name="asset-leasing-conventions"></a>Konventionen beim Anlagenleasing
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Dieses Thema beschreibt die Konventionen für Leasingobjekte. Leasingkonventionen werden verwendet, um das Anfangsdatum eines Leasingbuchs zu bestimmen. Wenn die Leasingkonvention auf **Keine** festgelegt ist, entspricht das Anfangsdatum dem Startdatum des Mietvertrags (also dem Wert des **Mietbeginn**-Feldes). Wenn die Leasingkonvention auf **Voller Monat** festgelegt ist, ist das Anfangsdatum der erste Tag des Monats, in den das Startdatum des Mietvertrags fällt.
+Dieser Artikel beschreibt die Konventionen für Leasingobjekte. Leasingkonventionen werden verwendet, um das Anfangsdatum eines Leasingbuchs zu bestimmen. Wenn die Leasingkonvention auf **Keine** festgelegt ist, entspricht das Anfangsdatum dem Startdatum des Mietvertrags (also dem Wert des **Mietbeginn**-Feldes). Wenn die Leasingkonvention auf **Voller Monat** festgelegt ist, ist das Anfangsdatum der erste Tag des Monats, in den das Startdatum des Mietvertrags fällt.
 
 Das Anfangsdatum bestimmt das Startdatum des Zeitraums für die Zeitpläne zur Amortisierung von Leasingverbindlichkeiten und zur Abschreibung von Leasingobjekten. Zinsaufwände und Abschreibungskosten werden am Periodenenddatum der entsprechenden Zeitpläne gebucht. Die anfängliche Erfassung und der Regulierungsjournaleintrag erfolgen am Anfangsdatum.
 

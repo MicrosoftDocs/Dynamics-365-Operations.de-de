@@ -1,6 +1,6 @@
 ---
 title: Französisch Intrastat
-description: Dieses Thema enthält Informationen zur Intrastat-Berichterstattung in Frankreich.
+description: Dieser Artikel enthält Informationen zur Intrastat-Berichterstattung in Frankreich.
 author: anasyash
 ms.date: 07/9/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 4d38576e1c6b40242d5c6313fb06f08e170b4466
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: e86d7c8f28b1b3df0066a588d380965c21dc98a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487899"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887852"
 ---
 # <a name="french-intrastat"></a>Französisch Intrastat
 
@@ -97,7 +97,7 @@ Die Tabelle gibt auch die Berichtsebene des Felds an. Das Feld kann **4** (verei
     3. Auf dem Inforegister **Warencodehierarchie** im Feld **Kategoriehierarchie** wählen Sie **Intrastat**.
     4. Auf dem Inforegister **Allgemein** im Feld **Transaktions-Code** wählen Sie im Feld den Code aus, der für die Warenübertragung verwendet wird.
     5. Im Feld **Gutschrift** wählen Sie im Feld den Code aus, der für die Warenrücksendung verwendet wird.
-    6. Im Feld **Verpflichtungsstufe für den Export** geben Sie im Feld den Detaillierungsgrad für den Exportbericht ein. Die ausgewählte Ebene wirkt sich auf die Zeilen aus, die im Bericht angezeigt werden. Weitere Informationen finden Sie in der Tabelle am Anfang dieses Themas.
+    6. Im Feld **Verpflichtungsstufe für den Export** geben Sie im Feld den Detaillierungsgrad für den Exportbericht ein. Die ausgewählte Ebene wirkt sich auf die Zeilen aus, die im Bericht angezeigt werden. Weitere Informationen finden Sie in der Tabelle am Anfang dieses Artikels.
 
 3. Navigieren Sie zu **Organisationsverwaltung** > **Organisationen** > **Juristische Personen**, wählen Sie Ihr Unternehmen aus und führen Sie dann diese Schritte aus:
 
@@ -160,7 +160,7 @@ Im Jahr 2021 gilt der NGP nur für drei Arten von Produkten:
 
 Navigieren Sie zu **Steuer** > **Erklärungen** > **Außenhandel** > **Intrastat**, um Ihre Transaktionen zu verwalten, die für den Außenhandel mit EU-Ländern gelten. Weitere Informationen finden Sie unter [Intrastat Übersicht](emea-intrastat.md).
 
-Die  Spalte **NGP** ist spezifisch für Frankreich. Sie zeigt den NGP-Code für das Produkt. Wenn der NGP nicht auf ein Produkt anwendbar ist, wir **0** (Null) angezeigt. Sie können den NGP-Code anpassen. Wählen Sie die Transaktion aus und dann auf der **Allgemein** Registerkarte, im **Codes** Abschnitt unter **NGP** wählen Sie im Feld den erforderlichen NGP-Code aus.
+Die Spalte **NGP** ist spezifisch für Frankreich. Sie zeigt den NGP-Code für das Produkt. Wenn der NGP nicht auf ein Produkt anwendbar ist, wir **0** (Null) angezeigt. Sie können den NGP-Code anpassen. Wählen Sie die Transaktion aus und dann auf der **Allgemein** Registerkarte, im **Codes** Abschnitt unter **NGP** wählen Sie im Feld den erforderlichen NGP-Code aus.
 
 ### <a name="intrastat-transfer"></a>Intrastat-Übertragung
 

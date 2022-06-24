@@ -1,8 +1,8 @@
 ---
-title: Unterstützen parametrisierter Aufrufe von ER-Datenquellen des Typs „Berechnetes Feld“
-description: Dieses Thema enthält Informationen zum Verwenden des Typs „Berechnetes Feld“ für ER-Datenquellen.
+title: Unterstützen parametrisierter Aufrufe von EB-Datenquellen des Typs „Berechnetes Feld“
+description: Dieser Artikel enthält Informationen zum Verwenden des Typs „Berechnetes Feld“ für EB-Datenquellen.
 author: NickSelin
-ms.date: 08/06/2020
+ms.date: 01/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fb09e1ccd4b2be08e43784330adf4092ca25f5a6
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 4a4933c429982d1371c7c9a9412789ae08e08f43
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349159"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8934703"
 ---
-# <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Unterstützen parametrisierter Aufrufe von ER-Datenquellen des Typs „Berechnetes Feld“
+# <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Unterstützen parametrisierter Aufrufe von EB-Datenquellen des Typs „Berechnetes Feld“
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie eine Datenquelle für die elektronische Berichterstellung (Electronic Reporting, ER) mithilfe des Typs **Berechnetes Feld** entwerfen können. Diese Datenquelle enthält ggf. einen ER-Ausdruck, der bei Ausführung durch die Werte der Parameterargumente gesteuert werden kann, die in einer Bindung konfiguriert sind, die diese Datenquelle aufruft. Wenn Sie parametrisierte Aufrufe einer solchen Datenquelle konfigurieren, können Sie eine einzelne Datenquelle in vielen Bindungen wiederverwenden, wodurch die Gesamtanzahl der Datenquellen verringert wird, die in ER-Modellzuordnungen oder in ER-Formaten konfiguriert werden müssen. Außerdem wird die konfigurierte ER-Komponente vereinfacht, wodurch sich die Instandhaltungskosten sowie die Kosten für die Verwendung durch andere Verbraucher verringern.
+In diesem Artikel wird erläutert, wie Sie eine Datenquelle für die elektronische Berichterstellung (EB) mithilfe des Typs **Berechnetes Feld** entwerfen können. Diese Datenquelle enthält ggf. einen ER-Ausdruck, der bei Ausführung durch die Werte der Parameterargumente gesteuert werden kann, die in einer Bindung konfiguriert sind, die diese Datenquelle aufruft. Wenn Sie parametrisierte Aufrufe einer solchen Datenquelle konfigurieren, können Sie eine einzelne Datenquelle in vielen Bindungen wiederverwenden, wodurch die Gesamtanzahl der Datenquellen verringert wird, die in ER-Modellzuordnungen oder in ER-Formaten konfiguriert werden müssen. Außerdem wird die konfigurierte ER-Komponente vereinfacht, wodurch sich die Instandhaltungskosten sowie die Kosten für die Verwendung durch andere Verbraucher verringern.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Um die Beispiele in diesem Thema abzuschließen, müssen Sie den folgenden Zugriff haben:
+Um die Beispiele in diesem Artikel abzuschließen, müssen Sie den folgenden Zugriff haben:
 
 - Zugreifen auf eine dieser Rollen:
 
@@ -46,10 +46,10 @@ Sie müssen auch die folgenden Dateien herunterladen und lokal speichern.
 
 | **Inhalt**                           | **Dateiname**                                        |
 |---------------------------------------|------------------------------------------------------|
-| Beispiel-EB-Datenmodell-Konfiguration    | [Model to learn parameterized calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)     |
-| Beispiel-EB-Metadatenkonfiguration      | [Metadata to learn parameterized calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
-| Beispiel-EB-Modellzuordnungskonfiguration | [Mapping to learn parameterized calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Beispiel-EB-Formatkonfiguration        | [Format to learn parameterized calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
+| Beispiel-EB-Datenmodell-Konfiguration    | [Model to learn parameterized calls.version.1.xml](https://download.microsoft.com/download/e/5/c/e5c0d3f9-1818-47c7-ae75-46efcbb1314f/Modeltolearnparameterizedcallsversion.1.xml)     |
+| Beispiel-EB-Metadatenkonfiguration      | [Metadata to learn parameterized calls.version.1.xml](https://download.microsoft.com/download/8/3/a/83a910a5-bf65-4509-bec4-6737a81ecc45/Metadatatolearnparameterizedcalls.version.1.xml)  |
+| Beispiel-EB-Modellzuordnungskonfiguration | [Mapping to learn parameterized calls.version.1.1.xml](https://download.microsoft.com/download/b/f/d/bfd8cbd8-0370-44d1-a1b1-66d021c580ca/Mappingtolearnparameterizedcalls.version.1.1.xml) |
+| Beispiel-EB-Formatkonfiguration        | [Format to learn parameterized calls.version.1.1.xml](https://download.microsoft.com/download/8/1/d/81deb6d8-a768-4fcf-bbbe-8f84d2dac3eb/Formattolearnparameterizedcalls.version.1.1.xml)  |
 
 ## <a name="sign-in-to-your-rcs-instance"></a>Anmelden bei Ihrer RCS-Instanz
 In diesem Beispiel erstellen Sie eine Konfiguration für die Musterfirma Litware, Inc. Zunächst müssen Sie im RCS die Schritte in der Prozedur [Konfigurationsanbieter anlegen durchführen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md):
@@ -84,7 +84,7 @@ In diesem Beispiel erstellen Sie eine Konfiguration für die Musterfirma Litware
             - Summe der Steuerwerte
             - Mindestwert des angewendeten Steuersatzes
 
-    Die Modellzuordnung in dieser Konfiguration implementiert das Basisdatenmodell für alle EB-Formate, für die dieses Modell erstellt und in Finance and Operations ausgeführt werden. Demzufolge wird der Inhalt der **Steuer**- und **GR**-Datenquellen für ER-Formate wie abstrakte Datenquellen bereitgestellt.
+    Die Modellzuordnung in dieser Konfiguration implementiert das Basisdatenmodell für alle ER-Formate, für die dieses Modell erstellt und in Finance and Operations ausgeführt werden. Demzufolge wird der Inhalt der **Steuer**- und **GR**-Datenquellen für ER-Formate wie abstrakte Datenquellen bereitgestellt.
 
     ![Seite „Modellzuordnungsdesigner“ mit Steuer- und GR-Datenquellen.](media/er-calculated-field-type-01.png)
 
@@ -306,7 +306,7 @@ Wenn ein parametrisiertes berechnetes Feld einen Datensatz zurückgibt, müssen 
 Sie können die anfänglichen und verbesserten ER-Formate ausführen, um sicherzustellen, dass parametrisierte berechnete Felder, die konfiguriert sind, ordnungsgemäß funktionieren.
 
 ### <a name="import-er-configurations"></a>ER Konfigurationen importieren
-Sie können überprüfte Konfigurationen aus RCS importieren, indem Sie das ER-Repository des Typs **RCS** verwenden. Wenn Sie die Schritte im Thema [Importieren von elektronischen Berichtskonfigurationen (ER-Konfigurationen) aus Regulatory Configuration Services (RCS)](rcs-download-configurations.md) bereits durchgeführt haben, verwenden Sie das konfigurierte ER-Repository, um die zuvor in diesem Thema beschriebenen Konfigurationen in Ihre Umgebung zu importieren. Andernfalls führen Sie die folgenden Schritte aus:
+Sie können überprüfte Konfigurationen aus RCS importieren, indem Sie das ER-Repository des Typs **RCS** verwenden. Wenn Sie die Schritte im Artikel [Importieren von elektronischen Berichtskonfigurationen (EB-Konfigurationen) aus Regulatory Configuration Services (RCS)](rcs-download-configurations.md) bereits durchgeführt haben, verwenden Sie das konfigurierte EB-Repository, um die zuvor in diesem Artikel beschriebenen Konfigurationen in Ihre Umgebung zu importieren. Andernfalls führen Sie die folgenden Schritte aus:
 
 1. Wählen Sie das Unternehmen **DEMF** und im Standard-Dashboard die Option **Elektronische Berichterstellung** aus.
 2. Wählen Sie **Berichterstellungskonfigurationen** aus.

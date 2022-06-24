@@ -1,6 +1,6 @@
 ---
 title: Microsoft Office-Benutzeroberfläche in der Verwaltung von Belegen in Unternehmen (enthält Video)
-description: Dieses Thema erklärt, wie die neue Benutzeroberfläche in der Geschäftsdokumentverwaltung-Funktion des Frameworks für elektronische Berichterstellung (EB) verwendet wird.
+description: Dieser Artikel erklärt, wie die neue Nutzungsoberfläche in der Funktion der Geschäftsdokumentverwaltung des Frameworks für elektronische Berichterstellung (EB) verwendet wird.
 author: v-anamir
 ms.date: 01/05/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e33830e2147d92ad5ee53ad11da55a50613b8ef9
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: bcc464a17e27393c5904c59b8439de6ca000d57a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074740"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892224"
 ---
 # <a name="microsoft-office-style-user-interface-in-business-document-management"></a>Benutzeroberfläche im Stil von Microsoft Office für Dokumente in der Geschäftsdokumentverwaltung
 
@@ -32,7 +32,7 @@ Die neue Benutzeroberfläche ist übersichtlicher und benutzerfreundlicher. Der 
 
 Mit der Schaltfläche **Neuer Beleg** im Arbeitsbereich **Geschäftsdokumentenverwaltung** können Sie eine Vorlage im Format [Elektronisches Reporting (ER)](general-electronic-reporting.md) [Konfiguration](general-electronic-reporting.md#Configuration) erstellen und bearbeiten, die von einem anderen Anbieter bereitgestellt wird und sich in der aktuellen Finance-Instanz befindet, oder eine neue Vorlage aus einer Excel-Arbeitsmappe hochladen. Außerdem können Sie ab Version 10.0.25 mit der Schaltfläche **Neuer Beleg** eine Vorlage in einer ER-Formatkonfiguration erstellen und bearbeiten, die im [Globalen Repository](general-electronic-reporting.md#Repository) gespeichert ist.
 
-In den Beispielen in diesem Thema ist der aktive Anbieter Contoso, und Sie erstellen damit eine Vorlage, die auf einer von Microsoft bereitgestellten Vorlage basiert. Alternativ können Sie eine Vorlage erstellen, indem Sie Ihre eigene Vorlage im Excel-Format hochladen.
+In den Beispielen in diesem Artikel ist der aktive Anbieter Contoso, und Sie erstellen damit eine Vorlage, die auf einer von Microsoft bereitgestellten Vorlage basiert. Alternativ können Sie eine Vorlage erstellen, indem Sie Ihre eigene Vorlage im Excel-Format hochladen.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAVQg]
 

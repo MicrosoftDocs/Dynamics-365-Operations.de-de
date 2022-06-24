@@ -1,6 +1,6 @@
 ---
 title: Auftragsrechnungen erstellen
-description: Dieses Thema beschreibt, wie Sie einen Verkaufsauftrag fakturieren, einschließlich Zusammenführen von Rechnungen und Batch-Verarbeitung.
+description: Dieser Artikel beschreibt, wie Sie einen Verkaufsauftrag fakturieren, einschließlich der Zusammenführung von Rechnungen und Batch-Verarbeitung.
 author: ShivamPandey-msft
 ms.date: 06/25/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7976d310e9c80dfe683359f1157b85e46c758c48
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: ceda837cae563dab68969cb9f05de113079d4495
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713443"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910257"
 ---
 # <a name="create-sales-order-invoices"></a>Auftragsrechnungen erstellen
 
 [!include [banner](../../includes/banner.md)]
 
-Dieses Thema beschreibt, wie Sie einen Verkaufsauftrag fakturieren, einschließlich Zusammenführen von Rechnungen und Batch-Verarbeitung. Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
+Dieser Artikel beschreibt, wie Sie einen Verkaufsauftrag fakturieren, einschließlich der Zusammenführung von Rechnungen und Batch-Verarbeitung. Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 
 
 ## <a name="create-an-invoice-from-a-sales-order"></a>Eine Rechnung von einem Auftrag erstellen

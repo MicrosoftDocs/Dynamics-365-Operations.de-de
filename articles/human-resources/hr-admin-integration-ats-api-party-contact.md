@@ -1,6 +1,6 @@
 ---
 title: Parteikontakt
-description: In diesem Thema wird die Parteikontakt-Entität für Dynamics 365 Human Resources beschrieben.
+description: In diesem Artikel wird die Parteikontakt-Entität für Dynamics 365 Human Resources beschrieben.
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fca72cb73ef46a4eeee27d43e22254373a425a36
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: f10bb89757419bcb29bfa5a4f44d30a38f41dfb0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067175"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909874"
 ---
 # <a name="party-contact"></a>Parteikontakt
 
@@ -27,7 +27,7 @@ ms.locfileid: "8067175"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In diesem Thema wird die Parteikontakt-Entität für Dynamics 365 Human Resources beschrieben.
+In diesem Artikel wird die Parteikontakt-Entität für Dynamics 365 Human Resources beschrieben.
 
 Physischer Name: mshr_dirpartycontactentities
 

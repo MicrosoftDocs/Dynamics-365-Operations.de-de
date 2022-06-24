@@ -1,6 +1,6 @@
 ---
 title: Generieren Sie Rechnungszeilen, wenn Sie Kreditorenrechnungen importieren
-description: In diesem Thema wird die Funktionalität zum automatischen Generieren von Rechnungszeilen auf Kreditorenrechnungen beschrieben, wenn Rechnungen importiert werden.
+description: In diesem Artikel wird die Funktionalität zum automatischen Generieren von Rechnungszeilen auf Kreditorenrechnungen beschrieben, wenn Rechnungen importiert werden.
 author: sunfzam
 ms.date: 09/10/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e452bda02c814b78c4bb48140b07f0113ab4a571
-ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.openlocfilehash: e745ab1fb39edf69fabd147e46e1da8cc98ba6e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2022
-ms.locfileid: "8358313"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903506"
 ---
 # <a name="generate-invoice-lines-when-you-import-vendor-invoices"></a>Generieren Sie Rechnungszeilen, wenn Sie Kreditorenrechnungen importieren
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-In diesem Thema wird die Funktionalität zum automatischen Generieren von Rechnungszeilen auf Kreditorenrechnungen beschrieben, wenn Rechnungen importiert werden.
+In diesem Artikel wird die Funktionalität zum automatischen Generieren von Rechnungszeilen auf Kreditorenrechnungen beschrieben, wenn Rechnungen importiert werden.
 
 Manchmal enthalten Kreditorenrechnungen begrenzte Informationen, wie z. B. Empfängerinformationen und Zwischensummen. Sie enthalten jedoch keine Informationen zu Einzelposten. Wenn Sie Rechnungen importieren, werden die Rechnungszeilen automatisch generiert, basierend auf den Informationen der entsprechenden Bestellung.
 
@@ -42,7 +42,7 @@ Gehen Sie folgendermaßen vor, um die automatische Erstellung von Rechnungszeile
 
 ## <a name="data-entity-changes"></a>Datenentitätsänderungen
 
-Um die in diesem Thema beschriebene Funktionalität zu unterstützen, wurde die Datenentität **Kopf der Kreditorenrechnung** erweitert. Drei Felder wurden hinzugefügt:
+Um die in diesem Artikel beschriebene Funktionalität zu unterstützen, wurde die Datenentität **Kopf der Kreditorenrechnung** erweitert. Drei Felder wurden hinzugefügt:
 
 - **HeaderOnlyImport** - Dieses Feld muss auf **Ja** festgelegt werden, um Zeilen für Rechnungsköpfe zu generieren.
 - **PurchIdRange** – Die Liste der Bestellnummern. Die Rechnungsnummern können ein Bereich sein, z. B. **INV0001..INV0009** (wobei Anfang und Ende des Bereichs durch zwei Punkte getrennt sind) oder diskrete Werte, wie **INV0001, INV0003, INV0006**. Alle Bestellungen müssen im Rechnungskopf zu demselben Kreditorenkonto gehören. Andernfalls erhalten Sie folgende Fehlermeldung: „Fehler beim Generieren von Rechnungsposten. Bestellungen haben unterschiedliche Lieferantenkonten.“

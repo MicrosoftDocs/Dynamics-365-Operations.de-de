@@ -1,6 +1,6 @@
 ---
 title: Liste der EB-Funktionen in der Datenerfassungskategorie
-description: Dieses Thema enthält Informationen zu den Datenerfassungsfunktionen, die in der elektronischen Berichterstellung (EB) unterstützt werden.
+description: Dieser Artikel enthält Informationen zu den Datenerfassungsfunktionen, die in der elektronischen Berichterstellung (EB) unterstützt werden.
 author: NickSelin
 ms.date: 12/04/2019
 ms.prod: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2046931732f2d1c1ca040c1c84d4b182c2214f2f44a5a90fceda49298445b743
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a8d4f5068bedcf1f15ae5257e29004a4773ef84c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760073"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908560"
 ---
 # <a name="list-of-er-functions-in-the-data-collection-category"></a>Liste der EB-Funktionen in der Datenerfassungskategorie
 
 [!include [banner](../includes/banner.md)]
 
-Datenerfassungsfunktionen für die elektronische Berichterstellung (EB) werden verwendet, um basierend auf den Daten der Ausgabe, die bereits im Format **Text** oder **Xml** generiert wurden, in einem EB-Format zu zählen und zu summieren, das gerade ausgeführt wird. Dieser Ansatz wird verwendet, um die Leistung eines ausgeführten EB-Formats zu verbessern, um Werte für laufende Summen in generierte Dokumente sowie für andere Zwecke einzugeben. Dieses Thema enthält eine Zusammenfassung dieser Funktionen.
+Datenerfassungsfunktionen für die elektronische Berichterstellung (EB) werden verwendet, um basierend auf den Daten der Ausgabe, die bereits im Format **Text** oder **Xml** generiert wurden, in einem EB-Format zu zählen und zu summieren, das gerade ausgeführt wird. Dieser Ansatz wird verwendet, um die Leistung eines ausgeführten EB-Formats zu verbessern, um Werte für laufende Summen in generierte Dokumente sowie für andere Zwecke einzugeben. Dieser Artikel enthält eine Zusammenfassung dieser Funktionen.
 
 ## <a name="list-of-supported-functions"></a>Liste der unterstützten Funktionen
 

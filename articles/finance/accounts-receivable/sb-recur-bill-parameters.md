@@ -1,6 +1,6 @@
 ---
 title: Wiederkehrende Abrechnungsparameter für Vertrag
-description: In diesem Thema wird erläutert, wie Sie die Standardwerte für Abrechnungszeitpläne einrichten, die in der wiederkehrenden Vertragsabrechnung erstellt werden. Außerdem wird erläutert, wie Abrechnungszeitplangruppen erstellt werden.
+description: In diesem Artikel wird erläutert, wie Sie die Standardwerte für Abrechnungszeitpläne einrichten, die in der wiederkehrenden Vertragsabrechnung erstellt werden. Außerdem wird erläutert, wie Abrechnungszeitplangruppen erstellt werden.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 19fe77ade0523aa7fd6382266457fd739df46d75
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: cb60253f3cbb8c991ef2e106abdb1c685bf22171
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685830"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903333"
 ---
 # <a name="recurring-contract-billing-parameters"></a>Wiederkehrende Abrechnungsparameter für Vertrag
 
@@ -27,7 +27,7 @@ Verwenden Sie die Seite **Wiederkehrende Abrechnungsparameter für Vertrag** zum
 
 ## <a name="general-tab"></a>Registerkarte „Allgemeines“
 
-1. Wählen Sie auf der Seite **Wiederkehrende Abrechnungsparameter für Vertrag** auf der Registerkarte **Allgemein** im Feld **Abrechnungszeitplangruppe** eine Abrechnungszeitplangruppe aus. Informationen zum Einrichten von Abrechnungszeitplangruppen finden Sie im Abschnitt [Abrechnungszeitplangruppen](#set-up-billing-schedule-groups) weiter unten in diesem Thema.
+1. Wählen Sie auf der Seite **Wiederkehrende Abrechnungsparameter für Vertrag** auf der Registerkarte **Allgemein** im Feld **Abrechnungszeitplangruppe** eine Abrechnungszeitplangruppe aus. Informationen zum Einrichten von Abrechnungszeitplangruppen finden Sie im Abschnitt [Abrechnungszeitplangruppen](#set-up-billing-schedule-groups) weiter unten in diesem Artikel.
 2. Wählen Sie im Feld **Kündigungsart** aus, wie die Schlussrechnung berechnet wird, wenn ein Abrechnungszeitplan beendet wird:
 
     - **Zeitplan anpassen** – Beendet den Abrechnungszeitplan am Kündigungsdatum, ändert den Status des Zeitplans zu **Letzte Abrechnung**, und passt den zugehörigen Stundungszeitplan an, indem der nicht mehr zu erfassende Betrag storniert wird. Wenn das Startdatum der Abrechnung nach dem Kündigungsdatum liegt, werden die verbleibenden Abrechnungszeiträume entfernt.

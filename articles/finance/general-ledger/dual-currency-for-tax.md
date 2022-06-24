@@ -1,6 +1,6 @@
 ---
 title: Doppelte Währungsunterstützung für Steuern
-description: In diesem Thema wird erklärt, wie die Doppelwährungs-Buchhaltungsfunktion im Steuerbereich erweitert werden kann und welche Auswirkungen dies auf die Steuerberechnung und -buchung hat.
+description: In diesem Artikel wird erklärt, wie die doppelte Währungsabrechnung im Steuerbereich erweitert werden kann und welche Auswirkungen dies auf die Steuerberechnung und -buchung hat.
 author: EricWang
 ms.date: 12/11/2020
 ms.topic: article
@@ -15,17 +15,17 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fcd5a3afb442d9c85aba12b7782cf09f88f0e51a
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 13d70d964a83c2efba090244d549bdb38ad25af2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713043"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909039"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Unterstützung der Umsatzsteuer in zwei Währungen
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erklärt, wie die doppelte Währungsabrechnung für die Umsatzsteuer erweitert werden kann und welche Auswirkungen dies auf die Umsatzsteuerberechnung, -buchung und -abrechnung hat.
+In diesem Artikel wird erklärt, wie die doppelte Währungsabrechnung für die Umsatzsteuer erweitert werden kann und welche Auswirkungen dies auf die Umsatzsteuerberechnung, -buchung und -abrechnung hat.
 
 Die Doppelwährungsfunktion für Dynamics 365 Finance wurde in Version 8.1 (Oktober 2018) eingeführt. Sie ändert die Art und Weise, wie Buchungen in der Berichtswährung berechnet werden.
 
@@ -89,7 +89,7 @@ Diese Funktion gilt nur für neue Transaktionen. Für Steuertransaktionen, die b
 
 Um das vorhergehende Szenario zu verhindern, empfehlen wir, diesen Parameterwert in einer neuen (sauberen) Steuerabrechnungsperiode zu ändern, die keine nicht abgerechneten Steuertransaktionen enthält. Um diesen Wert in der Mitte einer Steuerabrechnungsperiode zu ändern, führen Sie bitte das Programm „Umsatzsteuer abrechnen und buchen“ für die aktuelle Steuerabrechnungsperiode aus, bevor Sie diesen Parameterwert ändern.
 
-Diese Funktion fügt Buchhaltungseinträge hinzu, die Gewinne und Verluste aus Geldwechseln verdeutlichen. Die Buchungen werden in der realisierten Gewinn- und Verlustrechnung der Währungsanpassung vorgenommen, wenn die Neubewertung während der Umsatzsteuerabrechnung erfolgt. Weitere Informationen finden Sie im Abschnitt [Automatische Bilanzierung der Steuerabrechnung in Berichtswährung](#tax-settlement-auto-balance-in-reporting-currency) später in diesem Thema.
+Diese Funktion fügt Buchhaltungseinträge hinzu, die Gewinne und Verluste aus Geldwechseln verdeutlichen. Die Buchungen werden in der realisierten Gewinn- und Verlustrechnung der Währungsanpassung vorgenommen, wenn die Neubewertung während der Umsatzsteuerabrechnung erfolgt. Weitere Informationen finden Sie im Abschnitt [Automatische Bilanzierung der Steuerabrechnung in Berichtswährung](#tax-settlement-auto-balance-in-reporting-currency) später in diesem Artikel.
 
 > [!NOTE]
 > Während der Abrechnung werden Informationen für Finanzdimensionen aus Umsatzsteuerkonten, die Bilanzkonten sind, entnommen und in Gewinn- und Verlustrechnungen zur Währungsanpassung, die Gewinn- und Verlustrechnungen sind, erfasst. Da sich die Wertbeschränkungen der Finanzdimensionen zwischen Bilanzkonten und Gewinn- und Verlustrechnungskonten unterscheiden, kann während des Abrechnungs- und Nachsteuerprozesses ein Fehler auftreten. Um zu vermeiden, dass Kontostrukturen geändert werden müssen, können Sie die Funktion Finanzielle Dimensionen mit den realisierten Währungsanpassungs-Gewinn-/Verlustkonten für die Umsatzsteuerabrechnung füllen aktivieren. Diese Funktion erzwingt die Ableitung von Finanzdimensionen zu Währungsanpassungs-Gewinn-/Verlustrechnungen. 

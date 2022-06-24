@@ -1,6 +1,6 @@
 ---
 title: Integration mit Dayforce konfigurieren
-description: Dieses Thema beschreibt die erforderlichen Konfigurationsschritte, die für die Integration zwischen Microsoft Dynamics 365 Human Resources und Ceridian Dayforce erforderlich sind.
+description: Dieser Artikel beschreibt die erforderlichen Konfigurationsschritte, die für die Integration zwischen Microsoft Dynamics 365 Human Resources und Ceridian Dayforce erforderlich sind.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a4e95a78364fcee2c03614e110f9b5983abfde37
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 5a5d296dd4c1b09065fc47673dd540d8c122c482
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691331"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896133"
 ---
 # <a name="configure-integration-with-dayforce"></a>Integration mit Dayforce konfigurieren
 
@@ -28,7 +28,7 @@ ms.locfileid: "8691331"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Die Integration zwischen Microsoft Dynamics 365 Human Resources und Ceridian Dayforce beruht auf mehreren Konfigurationsschritten, die in diesem Thema beschrieben sind. Sie müssen die Integration sowohl in Human Resources als auch in Dayforce konfigurieren, bevor Sie einen Zahlungslauf verarbeiten können.
+Die Integration zwischen Microsoft Dynamics 365 Human Resources und Ceridian Dayforce erfordert mehrere Konfigurationsschritte, die in diesem Artikel beschrieben sind. Sie müssen die Integration sowohl in Human Resources als auch in Dayforce konfigurieren, bevor Sie einen Zahlungslauf verarbeiten können.
 
 Wenn Sie einen Dienst wie Dayforce verwenden, um Zahlungsläufe abzuschließen, müssen Sie die Integration in Human Resources ermöglichen. Die Integration erfordert bestimmte Daten aus Human Resources. Daher müssen Sie überprüfen, dass die Daten, die Dayforce zugeordnet sind, in Human Resources in einer Weise konfiguriert werden, die die Integration unterstützt. Bei der Integration werden die folgenden allgemeinen Kategorien von Daten verwendet:
 
@@ -37,7 +37,7 @@ Wenn Sie einen Dienst wie Dayforce verwenden, um Zahlungsläufe abzuschließen, 
 - Lohndaten, wie Lohnzyklen, Lohnperioden und Einkommenscodes
 - Arbeitskraftdaten
 
-Dieses Thema beschreibt die Schritte, die Sie ausführen müssen, um die Integration zu aktivieren, und erläutert die Datentypen und die Konfigurationsdetails, die für die Integration erforderlich sind.
+Dieser Artikel beschreibt die Schritte, die Sie ausführen müssen, um die Integration zu aktivieren. Außerdem werden die Datentypen und die Konfigurationsdetails erläutert, die für die Integration erforderlich sind.
 
 ## <a name="enable-the-integration"></a>Die Integration aktivieren
 

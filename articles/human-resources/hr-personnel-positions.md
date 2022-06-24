@@ -1,6 +1,6 @@
 ---
 title: Positionen
-description: In diesem Thema werden die konzeptionellen Elemente beschrieben, die eine Position enthalten kann. Es enthält auch Beispiele, die zeigen, wie Sie diese Elemente in Ihrer Organisation verwenden können.
+description: In diesem Artikel werden die konzeptionellen Elemente beschrieben, die eine Position enthalten kann. Es enthält auch Beispiele, die zeigen, wie Sie diese Elemente in Ihrer Organisation verwenden können.
 author: twheeloc
 ms.date: 06/24/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.custom: 269054
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bb7582165f49c40d294acd3cf804fe89782936c4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 9c97a96e27188d12b9c5e626613e18d54d6632c0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689437"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888729"
 ---
 # <a name="positions"></a>Positionen
 
@@ -28,7 +28,7 @@ ms.locfileid: "8689437"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In diesem Thema werden die konzeptionellen Elemente beschrieben, die eine Position enthalten kann. Es enthält auch Beispiele, die zeigen, wie Sie diese Elemente in Ihrer Organisation verwenden können.
+In diesem Artikel werden die konzeptionellen Elemente beschrieben, die eine Position enthalten kann. Es enthält auch Beispiele, die zeigen, wie Sie diese Elemente in Ihrer Organisation verwenden können.
 
 Bevor Sie eine Position anlegen können, muss eine Stelle eingerichtet werden. Einige Positionsdetails, z. B. die Vergütungsregion, die Arbeitskraftzuweisung, die Positionsdauer und die Berichtsbeziehung, hängen vom Gültigkeitsdatum ab.
 

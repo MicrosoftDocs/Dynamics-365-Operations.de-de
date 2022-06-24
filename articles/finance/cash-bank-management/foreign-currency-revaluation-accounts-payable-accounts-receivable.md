@@ -1,6 +1,6 @@
 ---
 title: Währungsneubewertung für Kreditoren- und Debitorenkonten
-description: Dieses Thema gibt Informationen zum Prozess der Neubewertung der Fremdwährung, der ausgeführt wird, um den Wert offener Buchungen in „Kreditoren“ und „Debitoren“ zu aktualisieren.
+description: Dieser Artikel gibt Informationen zum Prozess der Neubewertung der Fremdwährung, der ausgeführt wird, um den Wert offener Buchungen in "Kreditoren" und "Debitoren" zu aktualisieren.
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf32a31df1d56740d803b97d65829b1b1d31eb17
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 33750e7bb2f1fc4158a5f2faba5eeae5a356db7c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713923"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906383"
 ---
 # <a name="currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Währungsneubewertung für Kreditoren- und Debitorenkonten
 
 [!include [banner](../includes/banner.md)]
 
-Schwankungen in den Wechselkursen sorgen langfristig für Veränderungen im theoretischen Wert (Buchwert) offener Buchungen in Fremdwährungen. Dieses Thema gibt Informationen zum Prozess der Neubewertung der Fremdwährung, der ausgeführt wird, um den Wert offener Buchungen in „Kreditoren“ und „Debitoren“ zu aktualisieren. 
+Schwankungen in den Wechselkursen sorgen langfristig für Veränderungen im theoretischen Wert (Buchwert) offener Buchungen in Fremdwährungen. Dieser Artikel gibt Informationen zum Prozess der Neubewertung der Fremdwährung, der ausgeführt wird, um den Wert offener Buchungen in "Kreditoren" und "Debitoren" zu aktualisieren. 
 
 Der theoretische Wert oder Buchwert offener Transaktionen in Fremdwährungen verändert sich über längere Zeiträume wegen Schwankungen der Wechselkurse. Um den Wert offener Transaktionen in "Kreditoren" und "Debitoren" zu aktualisieren, führen Sie den Prozess zur Neubewertung der Fremdwährung aus. Neubewertung der Fremdwährung kann sowohl für "Kreditoren" als auch "Debitoren" ausgeführt werden. Der Prozess verwendet einen neuen Wechselkurs zur Neubewertung der offenen Beträge oder der nicht ausgeglichenen Beträge an einem bestimmten Datum. Die Unterschiede zwischen der ursprünglichen gebuchten Beträge und die vorkalkulierten Beträge einen neu führen unrealisierten Gewinn oder ein Verlust für alle offenen Posten. Die Kreditoren und Debitoruntergeordneten sachkonten werden dann aktualisiert, um den unrealisierten Gewinn oder der Verlust widerzuspiegeln, und ein wird Buchhaltungseintrags im Hauptbuch gebucht.
 

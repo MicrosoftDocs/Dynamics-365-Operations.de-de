@@ -1,6 +1,6 @@
 ---
-title: Live-Synchronisierungsprobleme behandeln
-description: Dieses Thema enthält Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit der Live-Synchronisierung zusammenhängen.
+title: Probleme mit der Live-Synchronisierung behandeln
+description: Dieser Artikel enthält Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit der Live-Synchronisierung zusammenhängen.
 author: RamaKrishnamoorthy
 ms.date: 08/19/2021
 ms.topic: article
@@ -9,23 +9,23 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: df184decdfa900ccb5c2070575e55052b9dfc547
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 9d27331b940a95168810c2f1ec4ae240a9df93a8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062362"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896704"
 ---
-# <a name="troubleshoot-live-synchronization-issues"></a>Live-Synchronisierungsprobleme behandeln
+# <a name="troubleshoot-live-synchronization-issues"></a>Probleme mit der Live-Synchronisierung behandeln
 
 [!include [banner](../../includes/banner.md)]
 
 
 
-Dieses Thema enthält Informationen zur Problembehandlung für die duales Schreiben-Integration zwischen Apps für Finanzen und Betrieb und Microsoft Dataverse. Dieses Thema enthält speziell Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit der Live-Synchronisierung zusammenhängen.
+Dieser Artikel enthält Informationen zur Problembehandlung für die Integration von dualem Schreiben zwischen Finanz- und Betriebs-Apps und Microsoft Dataverse. Dieses Thema enthält speziell Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit der Live-Synchronisierung zusammenhängen.
 
 > [!IMPORTANT]
-> Einige der in diesem Thema behandelten Probleme erfordern möglicherweise entweder die Systemadministratorrolle oder Anmeldeinformationen des Mandantenadministrator für Azure Active Directory (Azure AD). Jeder Abschnitt erläutert, ob eine bestimmte Rolle oder bestimmte Anmeldeinformationen erforderlich sind.
+> Einige der in diesem Artikel behandelten Probleme erfordern möglicherweise entweder die Systemadministratorrolle oder Mandantenadministrator-Anmeldeinformationen für Azure Active Directory (Azure AD). Jeder Abschnitt erläutert, ob eine bestimmte Rolle oder bestimmte Anmeldeinformationen erforderlich sind.
 
 ## <a name="live-synchronization-shows-an-error-when-you-create-a-row"></a>Live-Synchronisierung zeigt beim Erstellen einer Zeile einen Fehler an
 

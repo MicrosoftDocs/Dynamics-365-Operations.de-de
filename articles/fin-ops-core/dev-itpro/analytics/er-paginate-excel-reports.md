@@ -1,6 +1,6 @@
 ---
 title: Ein ER-Format zum Paginieren von in Excel generierten Dokumenten entwerfen
-description: In diesem Thema wird erläutert, wie Sie ein elektronisches Berichtsformat entwerfen, das ein in Microsoft Excel generiertes Dokument paginiert.
+description: In diesem Artikel wird erläutert, wie Sie ein elektronisches Berichtsformat entwerfen, das ein in Microsoft Excel generiertes Dokument paginiert.
 author: NickSelin
 ms.date: 09/14/2021
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: Version 10.0.22
-ms.openlocfilehash: ce29225c4bce24adc2abefc3d3d6f20774852af4
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: e8edc8bba62f74b4f81d423cf75b5fb87c01e43f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488338"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909277"
 ---
 # <a name="design-an-er-format-to-paginate-generated-documents-in-excel"></a>Ein ER-Format zum Paginieren von in Excel generierten Dokumenten entwerfen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie ein Benutzer in der Rolle Systemadministrator oder funktionaler Berater für elektronische Berichterstellung ein Format für die [Elektronische Berichterstellung](general-electronic-reporting.md) zum Generieren ausgehender Dokumente in Microsoft Excel und zum Verwalten der Paginierung von Dokumenten konfigurieren kann.
+In diesem Artikel wird erläutert, wie Benutzer mit der Rolle „Systemadministrator“ oder „Funktionaler Berater für elektronische Berichterstellung“ ein Format für die [Elektronische Berichterstellung](general-electronic-reporting.md) zum Generieren ausgehender Dokumente in Microsoft Excel und zum Verwalten der Paginierung von Dokumenten konfigurieren können.
 
 In diesem Beispiel ändern Sie das von Microsoft bereitgestellte ER-Format, das zum Drucken des Kontrollberichts verwendet wird, wenn die Intrastat-Meldung [generiert](../../../finance/localizations/tasks/eur-00002-eu-intrastat-declaration.md) wird. Mit diesem Bericht können Sie gemeldete Intrastat-Transaktionen beobachten. Mit Ihren Änderungen können Sie die Paginierung der generierten Kontrollberichte verwalten.
 
-Die Prozeduren in diesem Thema können im **DEMF**-Unternehmen erledigt werden. Eine Codierung ist nicht erforderlich. Bevor Sie beginnen, laden Sie die folgenden Dateien herunter und speichern Sie sie.
+Die Verfahren in diesem Artikel können im **DEMF**-Unternehmen abgeschlossen werden. Eine Codierung ist nicht erforderlich. Bevor Sie beginnen, laden Sie die folgenden Dateien herunter und speichern Sie sie.
 
 | Beschreibung       | Dateiname |
 |-------------------|-----------| 
@@ -165,7 +165,7 @@ Verwenden Sie dann das benutzerdefinierte ER-Format, um den Kontrollbericht der 
 
 ### <a name="repeat-the-replacement-of-the-current-excel-template-in-the-custom-er-format"></a>Das Ersetzen der aktuellen Excel-Vorlage im benutzerdefinierten ER-Format wiederholen
 
-1. Befolgen Sie die Schritte im Abschnitt [Die aktuelle Excel-Vorlage im benutzerdefinierten ER-Format ersetzen](#replace-template) in diesem Thema. Wählen Sie jedoch in Schritt 7 die Datei **ERIntrastatReportDemo2.xlsx** aus.
+1. Befolgen Sie die Schritte im Abschnitt [Die aktuelle Excel-Vorlage im benutzerdefinierten EB-Format ersetzen](#replace-template) in diesem Artikel. Wählen Sie jedoch in Schritt 7 die Datei **ERIntrastatReportDemo2.xlsx** aus.
 2. Erweitern Sie auf der Seite **Formatdesigner** die Option **Intrastat**.
 3. Benennen Sie die [Bereich](er-fillable-excel.md#range-component)-Formatkomponenten, die dem bearbeitbaren ER-Format hinzugefügt wurden, um die Struktur mit der Struktur der angewendeten Excel-Vorlage zu synchronisieren:
 
@@ -406,7 +406,7 @@ Um die Sichtbarkeit zu ändern, aktualisieren Sie die Eigenschaft **Aktiviert** 
 
 ## <a name="generate-an-intrastat-declaration-control-report-updated"></a>Einen Kontrollbericht für eine Intrastat-Meldung generieren (aktualisiert)
 
-1. Stellen Sie sicher, dass Sie über 24 Transaktionen auf der Seite **Intrastat** verfügen. Wiederholen Sie die Schritte im Abschnitt [Einen Kontrollbericht für eine Intrastat-Meldung generieren](#generate-intrastat-control-report) in diesem Thema, um den Kontrollbericht zu generieren und zu prüfen.
+1. Stellen Sie sicher, dass Sie über 24 Transaktionen auf der Seite **Intrastat** verfügen. Wiederholen Sie die Schritte im Abschnitt [Einen Kontrollbericht für eine Intrastat-Meldung generieren](#generate-intrastat-control-report) in diesem Artikel, um den Kontrollbericht zu generieren und zu prüfen.
 
     Alle Transaktionen werden auf der ersten Seite dargestellt. Die Seitensummen und Zähler entsprechen den Berichtssummen und Zählern. Der Bereich der Seitenkopfzeile ist auf der ersten Seite ausgeblendet, da die Kopfzeile des Berichts bereits Spaltentitel enthält. Die Kopf- und Fußzeile der Seite werden auf der zweiten Seite ausgeblendet, da diese Seite keine Transaktionen enthält.
 

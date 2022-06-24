@@ -1,6 +1,6 @@
 ---
-title: Informationen per Suchen finden
-description: In diesem Thema erfahren Sie mehr über Suchfunktionen und erhalten wertvolle Tipps für deren optimale Nutzung im System.
+title: Informationen durch Suchen finden
+description: In diesem Artikel erfahren Sie mehr über Suchfunktionen und erhalten wertvolle Tipps für deren optimale Nutzung im System.
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7135487e5d87564163c643d1315c51231fa66de
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ee309330c165dfb0b67f647afc3514d4c827dad1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069297"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901522"
 ---
 # <a name="find-information-by-using-lookups"></a>Informationen per Suchen finden
 
@@ -28,7 +28,7 @@ ms.locfileid: "8069297"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Viele Felder verfügen über Suchen, mit denen Sie schnell den richtigen oder gewünschten Wert finden. Den Suchen wurden viele Erweiterungen hinzugefügt, die diese einfacher und produktiver in der Anwendung machen. In diesem Thema erfahren Sie mehr über die neuen Suchfunktionen und erhalten wertvolle Tipps für deren optimale Nutzung.
+Viele Felder verfügen über Suchen, mit denen Sie schnell den richtigen oder gewünschten Wert finden. Den Suchen wurden viele Erweiterungen hinzugefügt, die diese einfacher und produktiver in der Anwendung machen. In diesem Artikel erfahren Sie mehr über die neuen Suchfunktionen und erhalten wertvolle Tipps für deren optimale Nutzung.
 
 ## <a name="responsive-lookups"></a>Responsive Suchen
 

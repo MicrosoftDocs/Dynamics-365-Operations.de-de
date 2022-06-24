@@ -1,6 +1,6 @@
 ---
 title: Geschäftsdokumentverwaltung – Übersicht
-description: Dieses Thema enthält Informationen dazu, wie die Geschäftsdokumentverwaltungsfunktion des ER-Frameworks verwendet wird.
+description: Dieser Artikel enthält Informationen dazu, wie die Geschäftsdokumentverwaltungsfunktion des ER-Frameworks verwendet wird.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: overview
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: faea9d4d9b3fc8f3f1474b6bb2a8dc31cdc22511
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9147a2e81329d5bf9103b6bfe067d166c1471835
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986250"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903616"
 ---
 # <a name="business-document-management-overview"></a>Geschäftsdokumentverwaltung – Übersicht
 
@@ -50,7 +50,7 @@ Eine vollständige Liste aller Berichte, die für die Veröffentlichung im Oktob
 
 Weitere Berichte werden in zukünftigen Versionen verfügbar sein. Spezielle Benachrichtigungen über zusätzliche Berichte werden gesondert übermittelt. Informationen zum Überprüfen der Liste der derzeit verfügbaren Berichte finden Sie im Abschnitt [Liste der EB-Konfigurationen, die in Finance veröffentlicht wurden, um konfigurierbare Geschäftsdokumente zu unterstützen](#list-of-configurations-cbd) unten.
 
-Weitere Informationen über diese Funktion erhalten Sie, wenn Sie das Beispiel in diesem Thema abschließen.
+Weitere Informationen über diese Funktion erhalten Sie, wenn Sie das Beispiel in diesem Artikel abschließen.
 
 ## <a name="configure-er-parameters"></a>Parameter der elektronischen Berichterstellung konfigurieren
 
@@ -60,7 +60,7 @@ Da die Geschäftsdokumentverwaltung auf dem ER-Framework erstellt wird, müssen 
 
 ## <a name="import-er-solutions"></a>Importieren von ER-Lösungen
 
-Im Beispiel dieses Verfahrens werden exemplarische ER-Konfigurationen verwendet. Sie müssen in Ihre aktuelle Instanz von Dynamics 365 Finance die ER-Konfigurationen importieren, die die Geschäftsdokumentvorlagen enthalten, die mit der Business-Dokumentenverwaltung bearbeitet werden können. Laden Sie die folgenden Dateien herunter und speichern Sie sie dann lokal, um diesen Vorgang abzuschließen.
+Im Beispiel dieses Verfahrens werden exemplarische ER-Konfigurationen verwendet. Sie müssen in Ihre aktuelle Instanz von Dynamics 365 Finance die EB-Konfigurationen importieren, die die Geschäftsdokumentvorlagen enthalten, die mit der Geschäftsdokumentverwaltung bearbeitet werden können. Laden Sie die folgenden Dateien herunter und speichern Sie sie dann lokal, um diesen Vorgang abzuschließen.
 
 **ER-Beispiel-Debitorenrechnungsstellungslösung**
 
@@ -231,7 +231,7 @@ Geschäftliche Benutzer können auf Geschäftsdokumentvorlagen zur Bearbeitung i
 - Benutzer, die der Rolle **Systemadministrator** zugewiesen sind.
 - Benutzer, die einer Rolle zugewiesen sind, die konfiguriert ist, um die Berechtigungen **Geschäftsdokumentvorlagen verwalten** (AOT-Name **ERBDManageTemplates**) auszuführen.
 
-Gehen Sie folgendermaßen vor, um im Geschäftsdokument-Verwaltungsarbeitsbereich Freitext-Rechnungsvorlagen zu bearbeiten. Bevor Sie diese Prozedur ausführen, müssen Sie alle vorhergehenden Verfahren in diesem Thema abgeschlossen haben.
+Gehen Sie folgendermaßen vor, um im Geschäftsdokument-Verwaltungsarbeitsbereich Freitext-Rechnungsvorlagen zu bearbeiten. Bevor Sie diese Prozedur ausführen, müssen Sie alle vorhergehenden Verfahren in diesem Artikel abgeschlossen haben.
 
 1. Melden Sie sich als Benutzer mit Zugriff auf den Geschäftsdokument-Verwaltungsarbeitsbereich an.
 2. Öffnen Sie den Geschäftsdokument-Verwaltungsarbeitsbereich.

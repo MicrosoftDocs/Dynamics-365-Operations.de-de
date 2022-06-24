@@ -1,6 +1,6 @@
 ---
 title: Migrieren von Prospect-to-Cash-Daten vom Datenintegrator nach Dual-Write
-description: In diesem Thema wird beschrieben, wie man Prospect-to-Cash-Daten vom Datenintegrator nach Dual-Write migriert.
+description: In diesem Artikel wird beschrieben, wie man Prospect-to-Cash-Daten vom Datenintegrator nach Dual-Write migriert.
 author: RamaKrishnamoorthy
 ms.date: 02/01/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-26
-ms.openlocfilehash: 82bfb768b0ecac04184f4b806527346d39584d64
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 8e5c11e535bd61e9955a4abf1491e88991ee40f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087267"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894265"
 ---
 # <a name="migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>Migrieren von Prospect-to-Cash-Daten vom Datenintegrator nach Dual-Write
 
 [!include [banner](../../includes/banner.md)]
 
-Die für Data Integrator verfügbare Prospect to cash-Lösung ist nicht mit duales Schreiben kompatibel. Der Grund dafür ist der Index msdynce_AccountNumber in der Kontotabelle, der Teil der Prospect to cash-Lösung ist. Wenn dieser Index vorhanden ist, können Sie nicht dieselbe Debitor-Kontonummer in zwei verschiedenen juristischen Entitäten erstellen. Sie können entweder mit duales Schreiben neu beginnen, indem Sie die Prospect to cash-Daten von Data Integrator zu duales Schreiben migrieren, oder Sie können die letzte „dorman“ Version der Prospect to cash-Lösung installieren. Dieses Thema deckt beide Ansätze ab.
+Die für Data Integrator verfügbare Prospect to cash-Lösung ist nicht mit duales Schreiben kompatibel. Der Grund dafür ist der Index msdynce_AccountNumber in der Kontotabelle, der Teil der Prospect to cash-Lösung ist. Wenn dieser Index vorhanden ist, können Sie nicht dieselbe Debitor-Kontonummer in zwei verschiedenen juristischen Entitäten erstellen. Sie können entweder mit duales Schreiben neu beginnen, indem Sie die Prospect to cash-Daten von Data Integrator zu duales Schreiben migrieren, oder Sie können die letzte „dorman“ Version der Prospect to cash-Lösung installieren. Dieser Artikel deckt beide Ansätze ab.
 
 ## <a name="install-the-last-dorman-version-of-the-data-integrator-prospect-to-cash-solution"></a>Installieren Sie die letzte „dorman“ Version des Data Integrator Prospect to cash solution
 
@@ -50,7 +50,7 @@ Um Ihre Prospect-to-Cash-Daten vom Datenintegrator nach Dual-Write zu migrieren,
 5. Erstellen Sie eine duales Schreiben-Verbindung zwischen der Finance und Operations App und der Customer-Engagement-App für eine oder mehrere juristische Entitäten.
 6. Aktivieren Sie Tabellenzuordnungen für duales Schreiben und führen Sie die erste Synchronisierung für die erforderlichen Referenzdaten aus. (Weitere Informationen finden Sie unter [Überlegungen zur Erstsynchronisierung](initial-sync-guidance.md).) Beispiele für erforderliche Daten sind Kundengruppen, Zahlungsbedingungen und Zahlungspläne. Aktivieren Sie die Zuordnungen für duales Schreiben nicht für Tabellen, für die eine Initialisierung erforderlich ist, z. B. Konto-, Angebots-, Angebotspositions-, Auftrags- und Auftragspositionstabellen.
 7. Wechseln Sie in der Customer Engagement-App zu **Erweiterte Einstellungen \> Systemeinstellungen \> Datenverwaltung \> Erkennungsregeln für Duplikate** und deaktivieren Sie alle Regeln.
-8. Initialisieren Sie die in Schritt 2 aufgeführten Tabellen. Anweisungen finden Sie in den verbleibenden Abschnitten dieses Themas.
+8. Initialisieren Sie die in Schritt 2 aufgeführten Tabellen. Anweisungen finden Sie in den verbleibenden Abschnitten dieses Artikels.
 9. Öffnen Sie die App Finance und Operations und aktivieren Sie die Zuordnungen der Tabellen, wie z.B. die Zuordnungen der Tabellen Konto, Kurs, Kurszeile, Auftrag und Auftragszeile. Führen Sie anschließend die Erstsynchronisierung durch. (Weitere Informationen finden Sie unter [Berücksichtigung bei der ersten Synchronisierung](initial-sync-guidance.md)). Bei diesem Vorgang werden zusätzliche Informationen aus der App Finance und Operations synchronisiert, z.B. der Verarbeitungsstatus, Lieferadressen und Rechnungsadressen, Standorte und Lager.
 
 ## <a name="account-table"></a>Kontotabelle
@@ -98,7 +98,7 @@ Da die Daten aus der Tabelle **Produkte** in eine Richtung fließen sollen, näm
 
 ## <a name="quote-and-quote-product-tables"></a>Anbegots- und Angebotsproduktetabellen
 
-Befolgen Sie für die Tabelle **Angebot** die Anweisungen im Abschnitt [Auftragstabelle](#order-table) weiter oben in diesem Thema. Befolgen Sie für die Tabelle **Angebotsprodukt** die Anweisungen im Abschnitt [Auftragsproduktetabelle](#order-products-table).
+Befolgen Sie für die Tabelle **Angebot** die Anweisungen im Abschnitt [Auftragstabelle](#order-table) weiter oben in diesem Artikel. Befolgen Sie für die Tabelle **Angebotsprodukt** die Anweisungen im Abschnitt [Auftragsproduktetabelle](#order-products-table).
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

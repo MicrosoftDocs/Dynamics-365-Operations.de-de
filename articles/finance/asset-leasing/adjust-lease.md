@@ -1,6 +1,6 @@
 ---
 title: Mietverträge anpassen
-description: In diesem Thema wird erläutert, wie Sie einen Mietvertrag anpassen. Eine Regulierung kann erforderlich sein, wenn die Mietbedingungen geändert, der Mietvertrag verlängert oder andere Umstände geändert werden.
+description: In diesem Artikel wird erläutert, wie Sie einen Mietvertrag anpassen. Eine Regulierung kann erforderlich sein, wenn die Mietbedingungen geändert, der Mietvertrag verlängert oder andere Umstände geändert werden.
 author: moaamer
 ms.date: 03/18/2022
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 89ec876c9bd967107635eb2955209a4dcb95cde5
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 48d1a261a43d6e3a68dfc0aae6f06c0d7d6b82db
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712173"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898326"
 ---
 # <a name="adjust-leases"></a>Mietverträge anpassen
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-In diesem Thema wird erläutert, wie Sie einen Mietvertrag anpassen. Eine Regulierung kann erforderlich sein, wenn die Mietbedingungen geändert, der Mietvertrag verlängert oder andere Umstände geändert werden. Das Anlagenleasing entspricht den Richtlinien, die das Thema 842 zur Kodifizierung von Rechnungslegungsstandards (ASC 842) und der International Financial Reporting Standard 16 (IFRS 16) zu Änderungen von Mietverträgen enthalten. ASC 842-20-15-1 definiert eine Mietvertragsänderung als jede Änderung der Vertragsbedingungen, die eine Änderung des Umfangs oder der Gegenleistung eines Mietvertrags bewirkt. Gemäß Paragraph 39 von IFRS 16 muss ein Mieter die Leasingverbindlichkeit neu bewerten, damit sie Änderungen der Mietzahlungen widerspiegelt.
+In diesem Artikel wird erläutert, wie Sie einen Mietvertrag anpassen. Eine Regulierung kann erforderlich sein, wenn die Mietbedingungen geändert, der Mietvertrag verlängert oder andere Umstände geändert werden. Das Anlagenleasing entspricht den Richtlinien, die das Thema 842 zur Kodifizierung von Rechnungslegungsstandards (ASC 842) und der International Financial Reporting Standard 16 (IFRS 16) zu Änderungen von Mietverträgen enthalten. ASC 842-20-15-1 definiert eine Mietvertragsänderung als jede Änderung der Vertragsbedingungen, die eine Änderung des Umfangs oder der Gegenleistung eines Mietvertrags bewirkt. Gemäß Paragraph 39 von IFRS 16 muss ein Mieter die Leasingverbindlichkeit neu bewerten, damit sie Änderungen der Mietzahlungen widerspiegelt.
 
 Für Unternehmen, die ASC 842 oder IFRS 16 einhalten, wird ein Mietvertrag neu bewertet, um eine Änderung des Barwerts der zukünftigen Mindestmietzahlungen (PVFMLP) widerzuspiegeln. Wenn sich der PVFMLP erhöht, ist der erstellte Journaleintrag eine Belastung des Kontos für das Nutzungsrecht am Leasingobjekt und eine Gutschrift auf das Konto der Ausrüstungs-Leasingverbindlichkeit für die Differenz zwischen dem neuen PVFMLP und dem vorherigen PVFMLP. Wenn der PVFMLP abnimmt, ist der Journaleintrag eine Belastung des Kontos der Ausrüstungs-Leasingverbindlichkeit und eine Gutschrift auf das Konto für das Nutzungsrecht am Leasingobjekt um die Differenz.
 

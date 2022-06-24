@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren Sie die Hilfe für Apps für Finanzen und Betrieb
-description: Dieses Thema enthält Informationen zu den Komponenten des Hilfesystems für einige Microsoft Dynamics 365-Apps.
+description: Dieser Artikel enthält Informationen zu den Komponenten des Hilfesystems für einige Microsoft Dynamics 365-Apps.
 author: margoc
 ms.date: 08/11/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bac06e258a96bb50bb6de7957e3e5ed07e966127
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b002b374e5da619460c496b8f0d7a70b7194afd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071007"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900128"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurieren Sie die Hilfe für Apps für Finanzen und Betrieb
 
@@ -29,7 +29,7 @@ ms.locfileid: "8071007"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-In diesem Thema finden Sie einen Überblick über die Komponenten des Hilfesystems für Apps für Finanzen und Betrieb, wie Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce und Dynamics 365 Human Resources. In diesem Thema wird auch erläutert, wie diese Apps verbunden werden, und es wird eine Zusammenfassung des Prozesses zum Erstellen einer benutzerdefinierten Hilfe bereitgestellt.
+In diesem Artikel finden Sie einen Überblick über die Komponenten des Hilfesystems für Finanz- und Betriebs-Apps, wie Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce und Dynamics 365 Human Resources. In diesem Artikel wird auch erläutert, wie diese Apps verbunden werden, und es wird eine Zusammenfassung des Prozesses zum Erstellen einer benutzerdefinierten Hilfe bereitgestellt.
 
 ## <a name="help-architecture"></a>Hilfearchitektur
 

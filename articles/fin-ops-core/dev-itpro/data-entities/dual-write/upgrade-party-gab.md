@@ -1,6 +1,6 @@
 ---
 title: Auf das Partei- und globale Adressbuchmodell aktualisieren
-description: In diesem Thema wird beschrieben, wie Sie Daten aus dualem Schreiben auf das Partei- und das globale Adressbuchmodell aktualisieren.
+description: In diesem Artikel wird beschrieben, wie Sie Daten aus dualem Schreiben auf das Partei- und das globale Adressbuchmodell aktualisieren.
 author: RamaKrishnamoorthy
 ms.date: 03/10/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 22b31b46b247ca5f2d6b8b93f58c090b03a2b38c
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 10c5d9eb3f98887be976c2331f4d34530628702c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688373"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895275"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Auf das Partei- und globale Adressbuchmodell aktualisieren
 
@@ -40,7 +40,7 @@ Am Ende des Prozesses werden die folgenden Dateien mit durch Kommas getrennten W
 | ImportFONewPostalAddress.csv | Diese Datei hilft beim Erstellen neuer **Postadresse**-Datensätze in der App für Finanzen und Betrieb. |
 | ImportFONewElectronicAddress.csv | Diese Datei hilft beim Erstellen neuer **Elektronische Adresse**-Datensätze in der App für Finanzen und Betrieb. |
 
-Dieses Thema erläutert die Verwendung der Data Factory-Vorlagen und Upgrades Ihrer Daten. Wenn Sie keine Anpassungen vorgenommen haben, können Sie die Vorlagen unverändert verwenden. Wenn Sie jedoch Anpassungen für Daten von **Konto**, **Kontakt** und **Kreditor** vorgenommen haben, müssen Sie die Vorlagen anhand der Anweisungen in diesem Thema ändern.
+Dieser Artikel erläutert die Verwendung der Data Factory-Vorlagen und Upgrades Ihrer Daten. Wenn Sie keine Anpassungen vorgenommen haben, können Sie die Vorlagen unverändert verwenden. Wenn Sie jedoch Anpassungen für Daten von **Konto**, **Kontakt** und **Kreditor** vorgenommen haben, müssen Sie die Vorlagen anhand der Anweisungen in diesem Artikel ändern.
 
 > [!IMPORTANT]
 > Es gibt spezielle Anweisungen, bei der Verwendung der Vorlagen für die Postanschrift der Partei und die elektronische Adresse der Partei. Sie müssen zuerst die Partei-Vorlage ausführen, dann die Partei-Postadressenvorlage und dann die elektronische Partei-Adressvorlage. Jede Vorlage ist für den Import in eine separate Data Factory ausgelegt.

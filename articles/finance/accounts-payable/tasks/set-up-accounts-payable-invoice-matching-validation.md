@@ -1,6 +1,6 @@
 ---
-title: Einrichten der Kreditorenkonten-Rechnungsabgleichprüfung
-description: Dieses Thema enthält Informationen darüber, wie der Kreditorenkonten-Rrechnungsabgleich eingerichtet wird.
+title: Überprüfung des Rechnungsabgleichs von Kreditorenkonten einrichten
+description: Dieser Artikel enthält Informationen darüber, wie der Kreditorenkonten-Rechnungsabgleich eingerichtet wird.
 author: abruer
 ms.date: 02/14/2022
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 602666df4cf015791398939a3067a2cae85a12eb
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 86cc5cf688e3b66cf976fc7f507bd8f8df757612
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182554"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904958"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Einrichten der Kreditorenkonten-Rechnungsabgleichprüfung
 
@@ -44,7 +44,7 @@ Vier unterschiedliche Arten von entsprechenden Prüfungen sind verfügbar.
 5. Aktivieren bzw. deaktivieren Sie das Kontrollkästchen **Rechnungssummen abgleichen**, um die tatsächlichen Rechnungssummen mit den erwarteten Summen abzugleichen.
     * Wählen Sie aus, ob ein Symbol angezeigt werden soll, wenn eine Abweichung beim Rechnungsabgleich die Toleranz übersteigt. Das Symbol kann angezeigt werden, wenn eine positive Abweichung die Toleranz übersteigt oder wenn entweder eine positive oder negative Abweichung die Toleranz übersteigt.  
     * Beispiel: Der Toleranzprozentsatz ist 5 %, und der Gesamtrechnungsbetrag in der Bestellung beträgt 100,00. Folglich wird ein Preisabgleichsymbol angezeigt, wenn der Gesamtbetrag der Rechnung 105,00 übersteigt. Wenn Sie **Wenn größer oder kleiner als Toleranz** auswählen, wird das Symbol auch angezeigt, wenn der Rechnungsbetrag niedriger ist als 95,00.  
-6. Wählen Sie im Feld **Rechnungssummentoleranz in Prozent** die zulässige Abweichung in Prozent, der akzeptiert werden kann. Dieser Wert ist der Standardwert für das Unternehmen. Dieser Wert kann für bestimmte Kreditoren mithilfe der Seite **Rechnungssummentoleranzen** überschrieben werden. Informationen dazu, wie der Toleranzprozentsatz für Rechnungssummen für einen bestimmten Kreditor überschrieben wird, finden Sie unter Rechnungssummenabgleich-Toleranz für Kreditoren weiter unten in diesem Thema.
+6. Wählen Sie im Feld **Rechnungssummentoleranz in Prozent** die zulässige Abweichung in Prozent, der akzeptiert werden kann. Dieser Wert ist der Standardwert für das Unternehmen. Dieser Wert kann für bestimmte Kreditoren mithilfe der Seite **Rechnungssummentoleranzen** überschrieben werden. Informationen dazu, wie der Toleranzprozentsatz für Rechnungssummen für einen bestimmten Kreditor überschrieben wird, finden Sie unter Rechnungssummenabgleich-Toleranz für Kreditoren weiter unten in diesem Artikel.
 7. **Preis- und Mengenabgleich** festlegen.
 8. Wählen Sie im Feld **Positionsabgleichsrichtlinie** einen Wert aus, der als Standardrichtlinie für die juristische Person dienen soll, mit der Sie arbeiten. **Nicht erforderlich** bedeutet, dass keine Überprüfung von einzelnen Rechnungspositionspreisen gegenüber Bestellungspreisen oder Rechnungsmengen gegenüber Lieferscheinmengen erforderlich ist. **Zweiseitiger Abgleich** bedeutet, dass die Überprüfung von Rechnungspositionen erforderlich ist, aber nur die Bestellung und Rechnungsdokumente des Lieferanten sind an der Überprüfung beteiligt. Der Produktzugang wird bei den Abgleichüberprüfungen nicht berücksichtigt. **Dreiseitiger Abgleich** bedeutet, dass der Nettostückpreis der Rechnung mit dem Nettostückpreis der Bestellung verglichen wird und die entsprechende Produktzugangsmenge mit der Rechnungsmenge verglichen wird.
 9. Wählen Sie im Feld **Überschreiben der Abgleichsrichtlinie zulassen** einen Wert, um zuzulassen, dass eine andere Abgleichsebene für einen Artikel, einen Händler sowie eine Kombination von Händler und Artikel oder Bestellposition angewendet wird. Die Positionsabgleichsrichtlinie für juristische Personen kann für einen speziellen Händler, Artikel oder eine spezielle Kombination von Händler und Artikel auf der Seite **Abgleichsrichtlinie** überschrieben werden.

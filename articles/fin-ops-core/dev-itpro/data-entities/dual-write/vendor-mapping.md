@@ -1,6 +1,6 @@
 ---
 title: Integrierte Masterdaten von Kreditoren
-description: In diesem Thema wird die Integration von Kreditorendaten zwischen Finance and Operations-Apps und Dataverse beschrieben.
+description: In diesem Artikel wird die Integration von Kreditorendaten zwischen Finanz- und Betriebs-Apps und Dataverse beschrieben.
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 7794f33aed7364b76a7d5ffd08a068342887e468
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 394bb19000076eace6377e07bb3a939c8345da8a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063161"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905314"
 ---
 # <a name="integrated-vendor-master"></a>Integrierte Masterdaten von Kreditoren
 
@@ -43,7 +43,7 @@ Wenn Sie Daten weiterhin in der Tabelle **Konto/Kontakt** speichern möchten, k�
 
 Kreditorendaten enthalten alle Informationen über den Kreditor, z. B. die Kreditorengruppe, Adressen, Kontaktinformationen, das Zahlungsprofil und das Rechnungsprofil. Eine Sammlung von Tabellenzuordnungen arbeitet während der Interaktion der Kreditorendaten zusammen, wie in der folgenden Tabelle dargestellt.
 
-Finance and Operations-Apps | Customer Engagement-Apps     | Beschreibung
+Finanz- und Betriebs-Apps | Customer Engagement-Apps     | Beschreibung
 ----------------------------|-----------------------------|------------
 [CDS-Kontakte V2](mapping-reference.md#115) | Kontakte | Diese Vorlage synchronisiert alle primären, sekundären und tertiären Kontaktinformationen für Debitoren und Kreditoren.
 [Namensaffixe](mapping-reference.md#155) | msdyn_nameaffixes | Diese Vorlage synchronisiert die Referenzdaten für Namensaffixe sowohl für Debitoren als auch für Kreditoren.
@@ -52,7 +52,7 @@ Finance and Operations-Apps | Customer Engagement-Apps     | Beschreibung
 [Zahlungsplanpositionen](mapping-reference.md#159) | msdyn_paymentschedulelines | Diese Vorlage synchronisiert die Referenzdaten für Zahlungsplanpositionen sowohl für Debitoren als auch für Kreditoren.
 [Zahlungszeitplan](mapping-reference.md#160) | msdyn_paymentschedules | Diese Vorlage synchronisiert die Referenzdaten für Zahlungspläne sowohl für Debitoren als auch für Kreditoren.
 [Zahlungsbedingungen](mapping-reference.md#161) | msdyn_paymentterms | Diese Vorlage synchronisiert die Referenzdaten für Zahlungsbedingungen sowohl für Debitoren als auch für Kreditoren.
-[Kreditoren V2](mapping-reference.md#202) | msdyn_vendors | Unternehmen, die eine benutzerdefinierte Lösung für Kreditoren verwenden, können das vordefinierte Kreditorenkonzept nutzen, das in Dataverse durch die Integration von Finance and Operations-Apps eingeführt wird.
+[Kreditoren V2](mapping-reference.md#202) | msdyn_vendors | Unternehmen, die eine benutzerdefinierte Lösung für Kreditoren verwenden, können das vordefinierte Kreditorenkonzept nutzen, das in Dataverse durch die Integration von Finanz- und Betriebs-Apps eingeführt wird.
 [Kreditorengruppen](mapping-reference.md#200) | msdyn_vendorgroups | Diese Vorlage synchronisiert Lieferantengruppeninformationen.
 [Kreditorzahlungsmethode](mapping-reference.md#201) | msdyn_vendorpaymentmethods | Diese Vorlage synchronisiert Informationen zu den Zahlungsmethoden für Lieferanten.
 

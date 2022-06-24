@@ -1,42 +1,42 @@
 ---
 title: Mobile Rechnungsgenehmigungen
-description: Dieses Thema soll einen praktischen Ansatz zum Entwerfen von mobilen Szenarien bereitstellen, indem es mobile Kreditorenrechnungsgenehmigungen als Anwendungsfall zeigt.
+description: Dieser Artikel soll einen praktischen Ansatz zum Entwerfen von mobilen Szenarien bereitstellen, indem er mobile Kreditorenrechnungsgenehmigungen als Anwendungsfall zeigt.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 83d95ef6d9fcff060ac992b11ab5773af075fea5409e43430b4826dc097570c7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f635891e3d92fbd5978e10fe01eb67c0a28542c5
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737354"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946273"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobile Rechnungsgenehmigungen
 
 [!include [banner](../includes/banner.md)]
 
-Mithilfe der mobilen Funktionen können Geschäftsbenutzer mobile Erfahrungen entwerfen. Bei erweiterten Szenarien ermöglicht die Plattform auch Entwickler die Funktionen zu erweitern. Die effektivste Möglichkeit, einige der neuen mobilen Konzepten kennenzulernen, ist, den Prozess des Entwurfs einiger Szenarios durchzulaufen. Dieses Thema soll einen praktischen Ansatz zum Entwerfen von mobilen Szenarien bereitstellen, indem es mobile Kreditorenrechnungsgenehmigungen als Anwendungsfall zeigt. Dieses Thema soll helfen, andere der Szenarien zu entwerfen und kann auch auf anderen Szenarios angewendet werden, die nicht den Kreditorenrechnungen zugeordnet werden.
+Mithilfe der mobilen Funktionen können Geschäftsbenutzer mobile Erfahrungen entwerfen. Bei erweiterten Szenarien ermöglicht die Plattform auch Entwickler die Funktionen zu erweitern. Die effektivste Möglichkeit, einige der neuen mobilen Konzepten kennenzulernen, ist, den Prozess des Entwurfs einiger Szenarios durchzulaufen. Dieser Artikel soll einen praktischen Ansatz zum Entwerfen von mobilen Szenarien bereitstellen, indem er mobile Kreditorenrechnungsgenehmigungen als Anwendungsfall zeigt. Dieser Artikel soll helfen, andere der Szenarien zu entwerfen und kann auch auf anderen Szenarios angewendet werden, die nicht den Kreditorenrechnungen zugeordnet werden.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-| Voraussetzung                                                                                            | Beschreibung                                                                                                                                                          |
-|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Voraussetzung                                                                                            | Description                       |
+|---------------------------------------------------------------------------------------------------------|--------------------------------------------|
 | Vorbereitung                                                                                |[Mobile Plattform](../../fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
-| Dynamics 365 Finance                                                                              | Eine Umgebung mit Version 1611 und Plattform-Update 3 (November 2016)                   |
+| Dynamics 365 Finance                                                                              | Eine Umgebung mit Version 1611 und Plattform-Update 3 (November 2016)                   |
 | Hotfix KB 3204341 installieren.                                                                              | Die Aufgabenaufzeichnung kann fälschlicherweise zwei Scließen-Befehle für Dropdowndialogfelder erfassen, die in Plattform-Update 3 (November 2016) einbezogen sind |
 | Hotfix KB 3207800 installieren.                                                                              | Dieser Hotfix ermöglicht das Anzeigen von Anhängen im mobilen Client, der in Plattform-Update 3 (November 2016) enthalten ist.           |
 | Hotfix KB 3208224 installieren.                                                                              | Anwendungscode für die mobile Kreditorenrechnungs-Genehmigungsanwendung ist in der Version 7.0.1 (Mai 2016) enthalten.                          |
-| Ein Android- oder iOS- oder Windows-Gerät, auf dem die mobile App installiert wurde. | Suchen Sie die App im entsprechenden App-Store.                                                                                                                     |
+| Ein Android- oder iOS- oder Windows-Gerät, auf dem die mobile App installiert wurde. | Suchen Sie die App im entsprechenden App-Store.                            |
 
 ## <a name="introduction"></a>Einführung
 Mobile Genehmigungen für Kreditorenrechnungen erfordern die drei Hotfixes, die im Abschnitt "Vorbereitung" angegeben werden. Diese Hotfixes bieten keinen Arbeitsbereich für die Rechnungsgenehmigungen. Um zu lernen, was ein Arbeitsbereich im Rahmen des mobilen Clients ist, lesen Sie das Handbuch aus dem Abschnitt "Vorbereitung". Der Rechnungsgenehmigungsarbeitsbereich muss konzipiert werden. 
@@ -51,11 +51,11 @@ Jede Organisation definiert und nutzt eigene Geschäftsprozesse für Kreditorenr
     -   Haben Rechnungen auch Buchhaltungsverteilungen im Rechnungskopf? Falls ja sollen diese Buchhaltungsverteilungen im Gerät verfügbar sein?
 
     > [!NOTE]
-    > In diesem Thema wird nicht erläutert, wie Sie Buchhaltungsverteilungen bearbeitet, da diese Funktion nicht aktuell für mobile Szenarios unterstützt werden.
+    > In diesem Artikel wird nicht erläutert, wie Sie Buchhaltungsverteilungen bearbeitet, da diese Funktion nicht aktuell für mobile Szenarios unterstützt werden.
 
 -   Möchten Benutzer Anhänge für die Rechnung auf dem Gerät angezeigt?
 
-Das Design der mobilen Erfahrung für Rechnungsgenehmigungen variiert, abhängig von den Antworten auf diese Fragen. Die Zielsetzung ist, die Benutzerfreundlichkeit für den Geschäftsprozess auf Mobilgeräten in einer Organisation zu optimieren. Im Rest des Themas betrachten wir zwei Szenariovarianten die auf Grundlage unterschiedlicher Antworten auf Fragen vorhergehenden sind. 
+Das Design der mobilen Erfahrung für Rechnungsgenehmigungen variiert, abhängig von den Antworten auf diese Fragen. Die Zielsetzung ist, die Benutzerfreundlichkeit für den Geschäftsprozess auf Mobilgeräten in einer Organisation zu optimieren. Im Rest des Artikels betrachten wir zwei Szenariovarianten, die auf Grundlage unterschiedlicher Antworten auf Fragen vorhergehenden sind. 
 
 Allgemeine, wenn mit dem mobilen Designer gearbeitet wird, vergewissern Sie sich, diese Änderungen veröffentlicht werden, um zu verhindern Aktualisierungen zu verlieren.
 

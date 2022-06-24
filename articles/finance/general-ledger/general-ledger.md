@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd832c32655aa52fec16852ec5550a34d06f00f4
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 14aaf40ce64c8f8ba6277fa0883318e08505a464
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8719915"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904556"
 ---
 # <a name="general-ledger-home-page"></a>Hauptbuch-Homepage
 
@@ -56,12 +56,12 @@ Zudem müssen sie in regelmäßigen Abständen aktualisiert werden, wenn Steuerb
 
 Lesen Sie die [Microsoft Dynamics 365-Veröffentlichungspläne](/dynamics365/release-plans/), um zu erfahren, welche neuen Funktionen geplant wurden. 
 
-#### <a name="financial-reporting"></a>Finanzberichterstellung
-Weitere Informationen zu Financial Reporting finden Sie im Thema [Financial Reporting – Übersicht](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md).
+#### <a name="financial-reporting"></a>Financial Reporting
+Weitere Informationen zu Financial Reporting finden Sie im Artikel [Financial Reporting – Übersicht](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md).
 
 #### <a name="blogs"></a>Blogs
 
-Meinungen, Neuigkeiten und weitere Informationen zu finden Sie im [Microsoft Dynamics 365-Blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) und dem [Microsoft Dynamics 365 Finance and Operations – Financials-Blog](https://community.dynamics.com/365/financeandoperations/b/financials).
+Meinungen, Neuigkeiten und weitere Informationen zu finden Sie im [Microsoft Dynamics 365-Blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) und dem [Microsoft Dynamics 365 Finance and Operations – Finanzblog](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 Der [Microsoft Dynamics Operations-Partner-Community-Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) fasst alle Informationen zu Neuigkeiten und Trends bei Dynamics 365 für Microsoft Dynamics-Partner in einer einzigen Ressource zusammen.
 

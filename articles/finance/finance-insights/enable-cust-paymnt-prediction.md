@@ -1,6 +1,6 @@
 ---
 title: Vorhersagen für Kundenzahlungen aktivieren
-description: In diesem Thema wird erläutert, wie Sie die Funktion „Debitorenzahlungsvorhersagen“ in Finance Insights aktivieren und konfigurieren.
+description: In diesem Artikel wird erläutert, wie Sie die Funktion „Debitorenzahlungsvorhersagen“ in Finance Insights aktivieren und konfigurieren.
 author: ShivamPandey-msft
 ms.date: 02/11/2022
 ms.topic: article
@@ -15,21 +15,21 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a52d38e8fb842c7fbc8adf60a6daaef6cdc9d5ec
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: f04ee9db5efe3595dea30d641c5097d6b90c0d77
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713359"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898206"
 ---
 # <a name="enable-customer-payment-predictions"></a>Vorhersagen für Kundenzahlungen aktivieren
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie die Funktion „Debitorenzahlungsvorhersagen“ in Finance Insights aktivieren und konfigurieren. Sie aktivieren die Funktion im Arbeitsbereich **Funktionsverwaltung** und geben die Konfigurationseinstellungen auf der Seite **Konfiguration von Finance Insights** ein. Dieses Thema enthält auch Informationen, mit denen Sie die Funktion effektiv nutzen können.
+In diesem Artikel wird erläutert, wie Sie die Funktion „Debitorenzahlungsvorhersagen“ in Finance Insights aktivieren und konfigurieren. Sie aktivieren die Funktion im Arbeitsbereich **Funktionsverwaltung** und geben die Konfigurationseinstellungen auf der Seite **Konfiguration von Finance Insights** ein. Dieser Artikel enthält auch Informationen, mit denen Sie die Funktion effektiv nutzen können.
 
 > [!NOTE]
-> Bevor Sie die folgenden Schritte ausführen, müssen Sie die erforderlichen Schritte im Thema [Konfigurieren für Finance Insights](configure-for-fin-insites.md) ausführen.
+> Bevor Sie die folgenden Schritte ausführen, müssen Sie die erforderlichen Schritte im Artikel [Konfigurieren für Finance Insights](configure-for-fin-insites.md) ausführen.
 
 1. Aktivieren Sie die Debitorenzahlungsvorhersage-Funktion:
 

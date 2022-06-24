@@ -1,6 +1,6 @@
 ---
 title: Neuerungen oder Änderungen in Dynamics 365 Human Resources 28. Januar 2021
-description: Dieses Thema beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 28. Januar 2021 neu sind oder geändert wurden.
+description: Dieser Artikel beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 28. Januar 2021 neu sind oder geändert wurden.
 author: marcelbf
 ms.date: 01/28/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d59e242421b1b86c32f9009ae6ae17e0f161a2e2
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 46bbda21c3eb2b32030b93afc2a40785c22b124e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689297"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909758"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-january-28-2021"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources 28. Januar 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Human Resources neu oder geändert wurden oder demnächst verfügbar sind.
+Dieser Artikel beschreibt Funktionen, die in Dynamics 365 Human Resources neu oder geändert sind oder bald eingeführt werden.
 
 Weitere Informationen zu unserem Aktualisierungsprozess und Zeitplan finden Sie unter [Aktualisierungsprozess](hr-admin-setup-update-process.md).
 
@@ -48,10 +48,10 @@ Die folgenden Funktionen sind in dieser Version allgemein verfügbar.
 Die folgenden Fehlerkorrekturen sind in diesem Release enthalten.
 
 > [!NOTE]
-> Unser Ziel ist es, Ihnen diese Informationen so schnell wie möglich zukommen zu lassen. Wir können dieses Thema aktualisieren, um Fehlerbehebungen aufzunehmen, die es nach der Erstveröffentlichung dieses Themas in den Build geschafft haben.
+> Unser Ziel ist es, Ihnen diese Informationen so schnell wie möglich zukommen zu lassen. Wir können diesen Artikel aktualisieren, um Fehlerbehebungen aufzunehmen, die es nach der Erstveröffentlichung dieses Artikels in den Build geschafft haben.
 
 
-| Problemnummer | Abgang |  Beschreibung |
+| Problemnummer | Problem |  Description |
 | --- | --- | --- |
 | 539456 | Der Kalender zeigt den Urlaubstyp im Schwebetext an, wenn der Parameter **Abwesenheit nur ohne Details anzeigen** aktiviert ist. | Wenn die Option **Abwesenheit nur ohne Details anzeigen** aktiviert ist, wird das Datum der Anforderung jetzt beim Schweben angezeigt. |
 | 528907 | Die Gewährung von Zugriff auf eine juristische Person für die Mitarbeiterrolle führt dazu, dass Manager die Urlaubsbilanzaktivität für Mitarbeiter nicht im **Mein Team**-Bereich des Mitarbeiter-Self-Service anzeigen können. |Wenn Sie diese Option jetzt einstellen, können Manager weiterhin die Urlaubsguthabenaktivität anzeigen. |

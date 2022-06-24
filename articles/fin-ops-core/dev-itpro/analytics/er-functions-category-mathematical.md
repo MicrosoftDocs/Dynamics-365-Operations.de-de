@@ -1,6 +1,6 @@
 ---
 title: Liste der EB-Funktionen in der mathematischen Kategorie
-description: Dieses Thema enthält Informationen zu den mathematischen Funktionen, die in der elektronischen Berichterstellung (EB) unterstützt werden.
+description: Dieser Artikel enthält Informationen zu den mathematischen Funktionen, die in der elektronischen Berichterstellung (EB) unterstützt werden.
 author: NickSelin
 ms.date: 12/17/2019
 ms.prod: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2788ba22a7fffe24f349f9b78f9221e423ae90976309ca6017fbe6fade500f67
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f3e657d2684ce97bb3bd5885ec02436e47723ae6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747344"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894381"
 ---
 # <a name="list-of-er-functions-in-the-mathematical-category"></a>Liste der EB-Funktionen in der mathematischen Kategorie
 
 [!include [banner](../includes/banner.md)]
 
-Mit den mathematischen Funktionen der elektronischen Berichterstattung (EB) können viele gängige mathematische Berechnungen durchgeführt werden. Dieses Thema enthält eine Zusammenfassung dieser Funktionen.
+Mit den mathematischen Funktionen der elektronischen Berichterstattung (EB) können viele gängige mathematische Berechnungen durchgeführt werden. Dieser Artikel enthält eine Zusammenfassung dieser Funktionen.
 
 ## <a name="list-of-supported-functions"></a>Liste der unterstützten Funktionen
 

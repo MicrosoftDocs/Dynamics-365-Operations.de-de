@@ -1,6 +1,6 @@
 ---
 title: Was ist neu oder geändert in Dynamics 365 Human Resources 22. Juni 2021
-description: Dieses Thema beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 22. Juni 2021 neu sind oder geändert wurden.
+description: Dieser Artikel beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 22. Juni 2021 neu sind oder geändert wurden.
 author: marcelbf
 ms.date: 06/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b1d2ccf1083f34aefbe87354f03dbebd6cb5be7e
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: aacb605374d99a3c0bad3438c89e33a04a4d7faf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694423"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897776"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-22-2021"></a>Was ist neu oder geändert in Dynamics 365 Human Resources 22. Juni 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Human Resources neu oder geändert wurden oder demnächst verfügbar sind.
+Dieser Artikel beschreibt Funktionen, die in Dynamics 365 Human Resources neu oder geändert sind oder bald eingeführt werden.
 
 Weitere Informationen zu unserem Aktualisierungsprozess und Zeitplan finden Sie unter [Aktualisierungsprozess](hr-admin-setup-update-process.md).
 
@@ -51,9 +51,9 @@ Die folgenden Funktionen sind in dieser Version allgemein verfügbar.
 Die folgenden Fehlerkorrekturen sind in diesem Release enthalten.
 
 > [!NOTE]
-> Unser Ziel ist es, Ihnen diese Informationen so schnell wie möglich zukommen zu lassen. Wir können dieses Thema aktualisieren, um Fehlerbehebungen aufzunehmen, die es nach der Erstveröffentlichung dieses Themas in den Build geschafft haben.
+> Unser Ziel ist es, Ihnen diese Informationen so schnell wie möglich zukommen zu lassen. Wir können diesen Artikel aktualisieren, um Fehlerbehebungen aufzunehmen, die es nach der Erstveröffentlichung dieses Artikels in den Build geschafft haben.
 
-| Problemnummer | Problem |  Beschreibung |
+| Problemnummer | Problem |  Description |
 | --- | --- | --- |
 | 583052 | Benutzer, die Feedback erhalten, können das erhaltene Feedback bearbeiten | Wenn ein Mitarbeiter, der Feedback zu einer Leistungserfassung erhält, **Externen Link hinzufügen** auswählt, wird das Formular bearbeitbar, was es dem Mitarbeiter erlaubt, das erhaltene Leistungsfeedback zu bearbeiten. |
 | 522281 | Die Auswahl der Anzahl der Mitarbeiter auf den Kacheln der Vergütungsstruktur im Vergütungsmanagement führt zu falschen Ergebnissen| Beim Anzeigen von Detailinformationen zu den Vergütungsplänen aus dem Arbeitsbereich „Vergütung“ wird jetzt die korrekte Anzahl der Mitarbeiter angezeigt. |

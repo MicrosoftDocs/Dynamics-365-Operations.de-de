@@ -1,6 +1,6 @@
 ---
-title: Importieren von Währungswechselkursen
-description: Dieses Thema enthält Informationen zu den Anforderungen für den Import von Fremdwährungsreferenzkursen, die von Wechselkursanbietern veröffentlicht werden.
+title: Währungswechselkurse importieren
+description: Dieser Artikel enthält Informationen zu den Anforderungen für den Import von Fremdwährungsreferenzkursen, die von Wechselkursanbietern veröffentlicht werden.
 author: EvgenyPopovMBS
 ms.date: 03/17/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f96622132be3c8a404f3f4e9c34f3ac5085a4fdc007ecb627d06a95d7c80932b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 27f9b06646d9ce948a6b4528c38c5df9784b24b2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727323"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894934"
 ---
 # <a name="import-currency-exchange-rates"></a>Importieren von Währungswechselkursen
 
 [!include [banner](../includes/banner.md)]
 
-Wenn eine juristische Person Rechnungen in Fremdwährungen erhalten hat, ist es erforderlich, die Fremdwährung in der lokalen Währung umzurechnen. Das bedeutet, dass aktueller Wechselkurse für unterschiedliche Währungen erforderlich sind. Dieses Thema enthält einen Überblick der erforderlichen Einstellungen und der Verarbeitung für den erforderlichen Import von Devisenkursreferenzsätzen der Daten, die über das Internet bei den Wechselkursanbietern, wie der Europäischen Zentralbank und der der russischer Föderation veröffentlicht werden.
+Wenn eine juristische Person Rechnungen in Fremdwährungen erhalten hat, ist es erforderlich, die Fremdwährung in der lokalen Währung umzurechnen. Das bedeutet, dass aktueller Wechselkurse für unterschiedliche Währungen erforderlich sind. Dieser Artikel enthält einen Überblick der erforderlichen Einstellungen und der Verarbeitung für den erforderlichen Import von Devisenkursreferenzsätzen der Daten, die über das Internet bei den Wechselkursanbietern, wie der Europäischen Zentralbank und der russischen Föderation veröffentlicht werden.
 
 Die folgenden Abschnitte beschreiben den allgemeinen Informationsfluss, der für die Einrichtung und Verwaltung von Wechselkursen verwendet wird.
 

@@ -1,6 +1,6 @@
 ---
 title: Umsatzerlös- und Ausgabenstundungen in der Abonnementabrechnung
-description: In diesem Thema wird erklärt, wie Sie Umsatzerlös- und Ausgabenstundungen in der Abonnementabrechnung einrichten.
+description: In diesem Artikel wird erklärt, wie Sie Umsatzerlös- und Ausgabenstundungen in der Abonnementabrechnung einrichten.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 9a12cf52d904db0396aa9914b8e324060289710f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 209afd08c0c7e3cbd63ed95613b1d1dec94856f5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690947"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908095"
 ---
 # <a name="revenue-and-expense-deferrals-in-subscription-billing"></a>Umsatzerlös- und Ausgabenstundungen in der Abonnementabrechnung
 
-In diesem Thema wird erklärt, wie Sie Umsatzerlös- und Ausgabenstundungen in der Abonnementabrechnung einrichten und verwenden. Stundungszeitpläne basieren immer auf einem zugrunde liegenden Ursprungsbeleg oder Abrechnungszeitplan und sind auch davon abhängig. Da sie basierend auf Standardwerten erstellt werden, können sie nicht separat eingegeben oder erstellt werden.
+In diesem Artikel wird erklärt, wie Sie Umsatzerlös- und Ausgabenstundungen in der Abonnementabrechnung einrichten und verwenden. Stundungszeitpläne basieren immer auf einem zugrunde liegenden Ursprungsbeleg oder Abrechnungszeitplan und sind auch davon abhängig. Da sie basierend auf Standardwerten erstellt werden, können sie nicht separat eingegeben oder erstellt werden.
 
 Der Vorgang zum Einrichten und Verwenden von Umsatzerlös- und Ausgabenstundungen findet auf mehreren Seiten statt:
 
@@ -65,7 +65,7 @@ Hier einige der Vorteile der Verwendung einer Vorlage:
 
 * Die Dauer der Stundung wird automatisch berechnet.
 * Sie lassen Stundungszeitpläne zu, die über Zeiträume verfügen, in denen die Erkennung übersprungen wird.
-* Sie können Stundungen automatisieren, indem Sie die Vorlage einem Produkt, einer Produktgruppe, einer Produktkategorie, Kund\*innen oder einer Kund\*innengruppe zuweisen. Die Vorlagenzuweisung erfolgt über die Seite **Standardstundungseinstellungen**.
+* Sie können Stundungen automatisieren, indem Sie die Vorlage einem Produkt, einer Produktgruppe, einer Produktkategorie, Kunden oder einer Kundengruppe zuweisen. Die Vorlagenzuweisung erfolgt über die Seite **Standardstundungseinstellungen**.
 
 Für Vorlagen stehen mehrere Periodenhäufigkeiten zur Verfügung: tägliche, monatliche oder steuerliche Finanzzeiträume.
 
@@ -91,7 +91,7 @@ Verwenden Sie die Seite **Standardstundungseinstellungen** zum Einrichten von St
 
 **Nach Artikel stunden**
 
-Bei Buchungen mit einem Artikel (z. B. Aufträgen) können Sie Konten und Vorlagen bestimmten Artikeln und Kund\*innen zuweisen. Diese Einstellungen werden als Standardwerte verwendet, wenn eine Buchung gestundet wird. Um die Buchung standardmäßig stundbar zu machen, müssen Sie die Artikel auf der Seite **Stundbare Artikel** einrichten.
+Bei Buchungen mit einem Artikel (z. B. Aufträgen) können Sie Konten und Vorlagen bestimmten Artikeln und Kunden zuweisen. Diese Einstellungen werden als Standardwerte verwendet, wenn eine Buchung gestundet wird. Um die Buchung standardmäßig stundbar zu machen, müssen Sie die Artikel auf der Seite **Stundbare Artikel** einrichten.
 
 **Nach Konto stunden**
 
@@ -99,7 +99,7 @@ Bei Buchungen ohne Artikel (z. B. allgemeinen Erfassungen) können Sie die Stund
 
 **Alle Buchungsarten (z. B. auf den Registerkarten „Auftrag“, „Einkauf“ und „Allgemeine Erfassung“)**
 
-Die Konten auf der Seite sind die Hauptkonten, die keine Finanzdimensionen haben. Die Finanzdimensionen des Erkennungskontos stammen von Kund\*innen bzw. dem Artikel basierend auf Ihrer Organisation.
+Die Konten auf der Seite sind die Hauptkonten, die keine Finanzdimensionen haben. Die Finanzdimensionen des Erkennungskontos stammen von Kunden bzw. dem Artikel basierend auf Ihrer Organisation.
 
 Jede Vorlagenzeile muss entweder über eine lineare Vorlage oder eine ereignisbasierte Vorlage verfügen. Sie kann nicht beides haben.
 

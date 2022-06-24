@@ -1,6 +1,6 @@
 ---
 title: Einzelner Beleg mit mehreren Debitoren- oder Kreditorendatensätzen
-description: Dieses Thema bietet einen Überblick darüber, was geschieht, wenn Sie einen einzelnen Beleg mit mehreren Debitoren- und Kreditorendatensätzen buchen. Diese Funktionalität wird in künftigen Versionen von Microsoft Dynamics 365 Finance nicht mehr zur Verfügung stehen. Folglich empfehlen wir es nicht, diese Buchungsmethode zu verwenden, wegen der Buchhaltungsauswirkungen auf die Ausgleichsverarbeitung.
+description: Diese Artikel bietet einen Überblick darüber, was geschieht, wenn Sie einen einzelnen Beleg mit mehreren Debitoren- und Kreditorendatensätzen buchen. Diese Funktionalität wird in künftigen Versionen von Microsoft Dynamics 365 Finance nicht mehr zur Verfügung stehen. Folglich empfehlen wir es nicht, diese Buchungsmethode zu verwenden, wegen der Buchhaltungsauswirkungen auf die Ausgleichsverarbeitung.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8677eba2c38c6273555e1189c0153272a8ff9e005655f3846c0d7605b872ff94
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb94d582020484d8f37eb139c037fb108894c9ee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737040"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889090"
 ---
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Einzelner Beleg mit mehreren Debitoren- oder Kreditorendatensätzen
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema bietet einen Überblick darüber, was geschieht, wenn Sie einen einzelnen Beleg mit mehreren Debitoren- und Kreditorendatensätzen buchen. Diese Funktionalität wird in künftigen Versionen nicht mehr zur Verfügung stehen. Folglich empfehlen wir es nicht, diese Buchungsmethode zu verwenden, wegen der Buchhaltungsauswirkungen auf die Ausgleichsverarbeitung. 
+Diese Artikel bietet einen Überblick darüber, was geschieht, wenn Sie einen einzelnen Beleg mit mehreren Debitoren- und Kreditorendatensätzen buchen. Diese Funktionalität wird in künftigen Versionen nicht mehr zur Verfügung stehen. Folglich empfehlen wir es nicht, diese Buchungsmethode zu verwenden, wegen der Buchhaltungsauswirkungen auf die Ausgleichsverarbeitung. 
 
 Einige allgemeine Beispiele, in denen ein Beleg für mehrere Debitoren oder Kreditoren verwendet wird, sind unter anderem Saldo-Übertragungen zwischen Debitoren und die Ermittlung des Nettowerts von Salden zwischen Debitoren und Kreditoren in derselben Organisation. 
 
@@ -35,7 +35,7 @@ Ein Beleg, der mehrere Debitoren oder Kreditoren enthält, kann mithilfe einer d
 -   Verwenden eines mehrzeiligen Belegs, bei dem es kein Gegensachkonto gibt, mit mehr als einem Debitor oder Kreditor.
 -   Eingeben eines Belegs, wobei das Konto und Gegenkonto Kreditor/Kreditor, Debitor/Debitor, Kreditor/Debitor oder Debitor/Kreditor sind.
 
-In diesem Thema wird gezeigt, wie Ausgleiche verarbeitet werden, wenn ein Beleg mit mehreren Debitoren oder Kreditoren gebucht wird. Darüber hinaus bietet dieses Thema Problemumgehungen, mit denen Sie verstehen, wie Sie es vermeiden können, einen Beleg mit mehreren Debitoren und Kreditoren zu verwenden. Insbesondere gibt es Beispiele, die zwei allgemeine Ausgleichsszenarien veranschaulichen, auf die sich die Verwendung eines Belegs mit mehreren Debitoren oder Kreditoren auswirkt:
+In diesem Artikel wird gezeigt, wie Ausgleiche verarbeitet werden, wenn ein Beleg mit mehreren Debitoren oder Kreditoren gebucht wird. Darüber hinaus bietet dieser Artikel Problemumgehungen, mit denen Sie verstehen, wie Sie es vermeiden können, einen Beleg mit mehreren Debitoren und Kreditoren zu verwenden. Insbesondere gibt es Beispiele, die zwei allgemeine Ausgleichsszenarien veranschaulichen, auf die sich die Verwendung eines Belegs mit mehreren Debitoren oder Kreditoren auswirkt:
 
 -   Skontobuchhaltung
 -   Neubewertungsbuchhaltung

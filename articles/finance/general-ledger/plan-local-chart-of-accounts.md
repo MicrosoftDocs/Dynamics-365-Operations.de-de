@@ -1,6 +1,6 @@
 ---
 title: Ihren lokalen Kontenplan planen
-description: Dieses Thema enthält Informationen, die Ihnen bei der Planung des Kontenplans helfen, wenn Sie Anforderungen an gesetzliche/örtliche Anforderungen für Ihre Organisation haben.
+description: Dieser Artikel enthält Informationen, die Ihnen bei der Planung des Kontenplans helfen, wenn Sie Anforderungen an gesetzliche/örtliche Anforderungen für Ihre Organisation haben.
 author: VeselinaE
 ms.date: 10/07/2021
 ms.topic: article
@@ -10,7 +10,7 @@ ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts, Ledge
 ROBOTS: ''
 audience: Application User
 ms.devlang: ''
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.tgt_pltfrm: ''
 ms.custom: 14051
 ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: veneva
 ms.search.validFrom: 10/07/2021
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e224a2e24b4ba293c953c6c883307038128e2f04
-ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
+ms.openlocfilehash: 78379fd51cf24985fce83e2b6aa9a475af7df363
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "7798295"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946244"
 ---
 # <a name="plan-your-local-chart-of-accounts"></a>Ihren lokalen Kontenplan planen
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Informationen, die Ihnen bei der Planung des Kontenplans helfen, wenn Ihre Organisation juristische Personen umfasst, die die Anforderungen für bestimmte Standorte erfüllen müssen, an denen sie geschäftlich tätig sind. In diesem Thema werden die folgenden Begriffe verwendet, um Kontenpläne zu beschreiben:
+Dieser Artikel enthält Informationen, die Ihnen bei der Planung des Kontenplans helfen, wenn Ihre Organisation juristische Personen umfasst, die die Anforderungen für bestimmte Standorte erfüllen müssen, an denen sie geschäftlich tätig sind. In diesem Artikelwerden die folgenden Begriffe verwendet, um Kontenpläne zu beschreiben:
 
 - **Global** – Der Kontenplan, den die Organisation weltweit verwendet. In den meisten Fällen werden Sie auf diesen Kontenplan konsolidieren.
 - **Lokal** – Ein Kontenplan, den juristische Personen in einem bestimmten Land oder einer bestimmten Region verwenden.

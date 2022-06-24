@@ -1,6 +1,6 @@
 ---
 title: Verweise auf Originalrechnungen in Gutschriften (Kreditorenrechnungen)
-description: In diesem Thema wird beschrieben, wie Sie beim Erstellen einer Gutschrift einen Verweis auf eine Originalrechnung erstellen.
+description: In diesem Artikel wird beschrieben, wie Sie beim Erstellen einer Gutschrift einen Verweis auf eine Originalrechnung erstellen.
 author: v-oloski
 ms.date: 09/28/2021
 ms.topic: article
@@ -13,24 +13,24 @@ ms.search.region: Global
 ms.author: v-oloski
 ms.search.validFrom: 2021-09-23
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 698a23a98f027014c89073203e6d9dfa5539a2f6
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: e05dddf056d86513d86ea925349f60ca25f191ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689184"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901488"
 ---
 # <a name="reference-original-invoices-in-credit-notes-vendor-invoices"></a>Verweise auf Originalrechnungen in Gutschriften (Kreditorenrechnungen)
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie beim Erstellen einer Gutschrift einen Verweis auf eine Originalrechnung erstellen.
+In diesem Artikel wird beschrieben, wie Sie beim Erstellen einer Gutschrift einen Verweis auf eine Originalrechnung erstellen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
 Aktivieren Sie im Arbeitsbereich **Funktionsverwaltung** die Funktion **Kreditabrechnung für Kreditorenrechnungen aktivieren**. Weitere Informationen finden Sie unter [Funktionsverwaltung – Übersicht](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-Die in diesem Thema beschriebene Funktionalität gilt für die folgenden Geschäftskokumente.
+Die in diesem Artikel beschriebene Funktionalität gilt für die folgenden Geschäftskokumente.
 
 **Kreditorenkonten:**
 

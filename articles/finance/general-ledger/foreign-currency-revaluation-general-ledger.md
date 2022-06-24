@@ -1,6 +1,6 @@
 ---
 title: Neubewertung der Fremdwährung für das Sachkonto
-description: 'Dieses Thema enthält einen Überblick der folgenden Hauptbuchneubewertung für den Prozess der Neubewertung der Fremdwährungen im Hauptbuch bereit: Einrichten, Vorgang ausführen, Berechnung für den Prozess und sofern erforderlich Stornierung der Neubewertungsbuchungen.'
+description: 'Dieser Artikel enthält einen Überblick über die folgenden Elemente der Neubewertung von Fremdwährungen im Hauptbuch: Einrichtung, Ausführung des Prozesses, Berechnung für den Prozess und, sofern erforderlich, Stornierung der Neubewertungsbuchungen.'
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4a138a26a23c804f5fd358d335b04aee3897dce
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 1e90780ca2a33725130b261fcaf4cb08d30f3270
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720337"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904527"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Neubewertung der Fremdwährung für das Sachkonto
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält einen Überblick der folgenden Hauptbuchneubewertung für den Prozess der Neubewertung der Fremdwährungen im Hauptbuch bereit: Einrichten, Vorgang ausführen, Berechnung für den Prozess und sofern erforderlich Stornierung der Neubewertungsbuchungen. 
+Dieser Artikel enthält einen Überblick über die folgenden Elemente der Neubewertung von Fremdwährungen im Hauptbuch: Einrichtung, Ausführung des Prozesses, Berechnung für den Prozess und, sofern erforderlich, Stornierung der Neubewertungsbuchungen. 
 
 Als Teil eines Periodenende benötigen die Buchhaltungskonventionen Hauptbuchkontosalden in Fremdwährungen, um mithilfe der verschiedenen Wechselkurstypen (aktuell, historisch, durchschnittlich) neu bewertet werden zu können. Beispielsweise benötigt eine Buchhaltungskonvention Anlagen und Verbindlichkeiten, um zum aktuellen Wechselkurs,  Anlagen zum historischen Wechselkurs und GuV-Konten zum monatlichen Durchschnitt neu zu bewerten. Die Hauptbuchneubewertung der Fremdwährung kann verwendet werden, um die Bilanz und die GuV-Konten neu zu bewerten. 
 

@@ -1,6 +1,6 @@
 ---
 title: Leasinggenehmigungs-Workflows verwenden
-description: In diesem Thema wird erläutert, wie Sie mithilfe von Workflows Analgenleasings genehmigen und den Status und den Verlauf der Workflows verfolgen.
+description: In diesem Artikel wird erläutert, wie Sie mithilfe von Workflows Analgenleasings genehmigen und den Status und den Verlauf der Workflows verfolgen.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0b35dfa599895cb39cdd6a0a95fdcdcc54c45044
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 4205b83919f0b3c30a4b5d8e3290af230f538f39
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724924"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906441"
 ---
 # <a name="use-lease-approval-workflows"></a>Leasinggenehmigungs-Workflows verwenden
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie mithilfe von Workflows Analgenleasings genehmigen und den Status und den Verlauf der Workflows verfolgen. Workflows tragen zur Konsistenz der Verwaltung von Leasinggenehmigungen bei, indem sie einen Standardsatz von Genehmigungsschritten bereitstellen und bestimmte Benutzer zuweisen, die jeden Schritt des Prozesses genehmigen. Eine genehmigende Person kann einen Mietvertrag genehmigen, ablehnen, eine Änderung anfordern oder ihn einem anderen Benutzer zur Genehmigung zuweisen. Workflows können auch mehr Transparenz in den Genehmigungsprozess bringen, indem Sie deren Status und Verlauf verfolgen können. Darüber hinaus können Sie eine zentrale Arbeitsliste anzeigen, in der die Aufgaben und Genehmigungen aufgeführt sind, die bestimmten genehmigenden Personen zugewiesen sind.
+In diesem Artikel wird erläutert, wie Sie mithilfe von Workflows Analgenleasings genehmigen und den Status und den Verlauf der Workflows verfolgen. Workflows tragen zur Konsistenz der Verwaltung von Leasinggenehmigungen bei, indem sie einen Standardsatz von Genehmigungsschritten bereitstellen und bestimmte Benutzer zuweisen, die jeden Schritt des Prozesses genehmigen. Eine genehmigende Person kann einen Mietvertrag genehmigen, ablehnen, eine Änderung anfordern oder ihn einem anderen Benutzer zur Genehmigung zuweisen. Workflows können auch mehr Transparenz in den Genehmigungsprozess bringen, indem Sie deren Status und Verlauf verfolgen können. Darüber hinaus können Sie eine zentrale Arbeitsliste anzeigen, in der die Aufgaben und Genehmigungen aufgeführt sind, die bestimmten genehmigenden Personen zugewiesen sind.
 
 Stellen Sie vor Verwendung dieses Verfahrens sicher, dass mindestens ein Workflow für die Genehmigung von Mietverträgen erstellt wurde. Wenn kein Workflow vorhanden ist, erstellen Sie einen. Informationen zum Einrichten eines Workflows finden Sie unter [Einrichten von Workflows für die Leasinggenehmigung](set-up-lease-wrkflw.md).
 

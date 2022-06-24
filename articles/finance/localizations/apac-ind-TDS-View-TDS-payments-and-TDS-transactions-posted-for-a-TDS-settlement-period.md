@@ -1,6 +1,6 @@
 ---
-title: Gebuchte TDS-Zahlungen und -buchungen für eine TDS-Ausgleichsperiode anzeigen
-description: In diesem Thema wird erklärt, wie Sie die Zahlungen für die Quellenbesteuerung (TDS-Zahlungen) und entsprechenden Buchungen anzeigen, die für eine Ausgleichsperiode gebucht wurden.
+title: Gebuchte TDS-Zahlungen und -Buchungen zu einem TDS-Abrechnungszeitraum anzeigen
+description: In diesem Artikel wird erklärt, wie Sie die Zahlungen für die Quellenbesteuerung (TDS-Zahlungen) und entsprechenden Buchungen anzeigen, die für eine Ausgleichsperiode gebucht wurden.
 author: kailiang
 ms.date: 03/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 6f8c97d1f42af6c073e45c88237d59699a32fc7a
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: c441b6f26636ef1f18e3910a201d02feb4350f33
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726892"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898058"
 ---
-# <a name="view-posted-tds-payments-and-transactions-for-a-tds-settlement-period"></a>Gebuchte TDS-Zahlungen und -buchungen für eine TDS-Ausgleichsperiode anzeigen
+# <a name="view-posted-tds-payments-and-transactions-for-a-tds-settlement-period"></a>Gebuchte TDS-Zahlungen und -Buchungen zu einem TDS-Abrechnungszeitraum anzeigen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erklärt, wie Sie die Zahlungen für die Quellenbesteuerung (TDS-Zahlungen) und entsprechenden Buchungen anzeigen, die für eine Ausgleichsperiode gebucht wurden.
+In diesem Artikel wird erklärt, wie Sie die Zahlungen für die Quellenbesteuerung (TDS-Zahlungen) und entsprechenden Buchungen anzeigen, die für eine Ausgleichsperiode gebucht wurden.
 
 1. Gehen Sie zu **Steuer \> Indirekte Steuern \> Quellensteuer \> Quellensteuerausgleichsperioden**.
 

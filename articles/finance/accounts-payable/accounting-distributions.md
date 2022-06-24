@@ -1,6 +1,6 @@
 ---
 title: Buchhaltungsverteilungen
-description: Dieses Thema bietet Informationen zu Buchhaltungsverteilungen und beschreibt die verfügbaren Verarbeitungsoptionen.
+description: Dieser Artikel bietet Informationen zu Buchhaltungsverteilungen und beschreibt die verfügbaren Verarbeitungsoptionen.
 author: sunfzam
 ms.date: 09/17/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c8178836318600fd6e702d097062d30b91e6c1a
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 6aa3dce4bfda7f3c9243387cd398f08e7b990b2f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735576"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894199"
 ---
 # <a name="accounting-distributions"></a>Buchhaltungsverteilungen
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema legt Informationen zu Buchhaltungsverteilungen fest und beschreibt die Optionen, die zur Verarbeitung verfügbar sind. Buchhaltungsverteilungen werden verwendet, um Geldbeträgen für ein Quelldokument auf bestimmte Sachkonten zuzuweisen. 
+Dieser Artikel legt Informationen zu Buchhaltungsverteilungen fest und beschreibt die Optionen, die für die Verarbeitung verfügbar sind. Buchhaltungsverteilungen werden verwendet, um Geldbeträgen für ein Quelldokument auf bestimmte Sachkonten zuzuweisen. 
 
 Buchhaltungsverteilungen stellen eine programmweite Funktion dar, die in jedem Quelldokument Anwendung findet und erweitert wird. Ein Quelldokument kann beispielsweise eine Bestellung, eine Kreditorenrechnung, eine Spesenabrechnung oder eine Freitextrechnung sein. Standardmäßig wird eine Standardbuchhaltungsverteilung für jede Position und jeden Geldbetrag im Quelldokument generiert und bedingt für eine Modifizierung aktiviert. 
 

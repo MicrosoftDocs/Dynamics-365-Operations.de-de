@@ -1,6 +1,6 @@
 ---
 title: Laden Sie ER-Konfigurationen aus dem globalen Repository des Konfigurationsdienstes herunter
-description: In diesem Thema wird erläutert, wie Sie ER-Konfigurationen (Electronic Reporting) aus dem globalen Repository des Konfigurationsdienstes herunterladen.
+description: In diesem Artikel wird erläutert, wie Sie EB-Konfigurationen (Elektronische Berichterstellung) aus dem globalen Repository des Konfigurationsdienstes herunterladen.
 author: NickSelin
 ms.date: 06/02/2020
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 32eb5206fadefbd024f2dd2af888d166c81b950f
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 4386e8fdbb2856d14d5b47ee5ab416c8d58b8d63
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605330"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891903"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>Laden Sie ER-Konfigurationen aus dem globalen Repository des Konfigurationsdienstes herunter
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie [ER-Konfigurationen (Electronic Reporting)](general-electronic-reporting.md#Configuration) aus dem globalen Repository des Konfigurationsdienstes herunterladen. Weitere Informationen finden Sie unter [Microsoft Dynamics 365 for Finance and Operations – Regulatory services](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+In diesem Artikel wird erläutert, wie Sie [EB-Konfigurationen (Elektronische Berichterstellung)](general-electronic-reporting.md#Configuration) aus dem globalen Repository des Konfigurationsdienstes herunterladen. Weitere Informationen finden Sie unter [Microsoft Dynamics 365 for Finance and Operations – Regulatory services](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="open-configurations-repository"></a>Konfigurations-Repository öffnen
 
-1. Melden Sie sich bei der Dynamics 365 Finance Anwendung mithilfe der folgenden Rollen an:
+1. Melden Sie sich in der Anwendung Dynamics 365 Finance an, indem Sie eine der folgenden Rollen verwenden:
 
     - Entwickler für elektronische Berichterstellung
     - Funktionaler Berater für elektronische Berichterstellung

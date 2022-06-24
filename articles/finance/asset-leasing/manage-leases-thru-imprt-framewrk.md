@@ -1,6 +1,6 @@
 ---
 title: Leasingobjekte über das Framework für Mietvertragsimport verwalten
-description: In diesem Thema wird erläutert, wie Sie mithilfe des Mietvertragsimport-Frameworks mehrere Mietverträge gleichzeitig anpassen.
+description: In diesem Artikel wird erläutert, wie Sie mithilfe des Mietvertragsimport-Frameworks mehrere Mietverträge gleichzeitig anpassen.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e3443225b5c7cb6d8f758248e538c2a427a89265
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 8cf81ccf61e62ac49e6cb90d13ca5fe50147cc76
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723166"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894963"
 ---
 # <a name="manage-leases-through-the-lease-import-framework"></a>Leasingobjekte über das Framework für Mietvertragsimport verwalten
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie mithilfe des Mietvertragsimport-Frameworks mehrere Mietverträge in einem Schritt anpassen. Durch die Verwendung dieser Funktion können Sie Zeit sparen und genauere Anpassungen sicherstellen, indem Sie das Risiko menschlicher Fehler verringern. Darüber hinaus kann diese Funktion Microsoft Dynamics 365 Finance mit externen Dateneinheiten zum effizienten Hochladen von Daten verbinden.
+In diesem Artikel wird erläutert, wie Sie mithilfe des Mietvertragsimport-Frameworks mehrere Mietverträge in einem Schritt anpassen. Durch die Verwendung dieser Funktion können Sie Zeit sparen und genauere Anpassungen sicherstellen, indem Sie das Risiko menschlicher Fehler verringern. Darüber hinaus kann diese Funktion Microsoft Dynamics 365 Finance mit externen Dateneinheiten zum effizienten Hochladen von Daten verbinden.
 
 Die folgenden Dateneinheiten können verwendet werden, um Anlagenleasing in externe Systeme zu integrieren:
 

@@ -1,6 +1,6 @@
 ---
 title: Arbeiten Sie mit Einrichtungen für Funktionen
-description: In diesem Thema wird erklärt, wie Sie die Funktionen für die Elektronische Rechnungsstellung festlegen.
+description: In diesem Artikel wird erklärt, wie Sie die Funktionen für die Elektronische Rechnungsstellung festlegen.
 author: dkalyuzh
 ms.date: 12/15/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 41ffc9c7009291a55392e50c5e490d3288d122bc
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 23466a53bb8ba597503aaa12d41395fc82b9f14e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371624"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904324"
 ---
 # <a name="work-with-feature-setups"></a>Arbeiten Sie mit Einrichtungen für Funktionen
 
@@ -46,7 +46,7 @@ Sie können so viele Elemente für die Einrichtung von Funktionen erstellen, wie
 6. Wenn Sie im letzten Schritt die Option **Benutzerdefinierte Einrichtung** gewählt haben, geben Sie einen Namen und eine Beschreibung für das Element zur Einrichtung der Funktion ein und wählen dann in der Feldgruppe **Einrichtungstyp** eine der folgenden Optionen aus:
 
     - **Pipeline verarbeiten** - Wählen Sie diese Option, um ausgehende elektronische Belege zu erzeugen und zu verarbeiten. Für diesen Einrichtungstyp erstellt das System eine leere Pipeline-Liste für die Verarbeitung, einen leeren Abschnitt für Anwendbarkeitsregeln und einen Standardsatz von Variablen. Sie werden nicht mit den Kanälen für eingehende elektronische Belege arbeiten können.
-    - **Datenkanal** - Wählen Sie diese Option, um den Prozess des Empfangs eingehender elektronischer Belege von einem der definierten Kanäle festzulegen und sie direkt an Microsoft Dynamics 365 Finance oder Dynamics 365 Supply Chain Management ohne zusätzliche Aktionen zu übergeben. Für diesen Einrichtungstyp erstellt das System eine vordefinierte Liste von Parametern für die Datenkanäle, einen leeren Abschnitt für Anwendbarkeitsregeln und einen Satz von Standardvariablen. Sie werden keine Aktionen in der Pipeline für die Verarbeitung hinzufügen können.
+    - **Datenkanal** – Wählen Sie diese Option, um den Prozess des Empfangs eingehender elektronischer Belege von einem der definierten Kanäle festzulegen und sie direkt an Microsoft Microsoft Dynamics 365 Finance oder Dynamics 365 Supply Chain Management ohne zusätzliche Aktionen zu übergeben. Für diesen Einrichtungstyp erstellt das System eine vordefinierte Liste von Parametern für die Datenkanäle, einen leeren Abschnitt für Anwendbarkeitsregeln und einen Satz von Standardvariablen. Sie werden keine Aktionen in der Pipeline für die Verarbeitung hinzufügen können.
     - **Datenkanal und Verarbeitungspipeline** - Dieser Einrichtungstyp ähnelt dem Einrichtungstyp **Datenkanal**. Bevor ein eingehender elektronischer Beleg an Finance oder Supply Chain Management weitergeleitet wird, können Sie jedoch zusätzliche Aktionen in der Pipeline für die Verarbeitung festlegen.
 
 7. Wenn Sie im letzten Schritt die Option **Datenkanal** oder **Datenkanal und Verarbeitungspipeline** gewählt haben, müssen Sie im Feld **Datenkanal auswählen** den Kanal auswählen, in den integriert werden soll.

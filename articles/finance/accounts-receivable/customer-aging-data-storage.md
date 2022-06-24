@@ -1,6 +1,6 @@
 ---
 title: Fälligkeitsdatenspeicher für Debitoren
-description: In diesem Thema wird der Prozess der Verwendung von externem Speicher für Kundenalterungsdaten beschrieben. Sie können den Prozess zur Speicherung von Kundenalterungsdaten ausführen, um die Ausgabe für den Export in ein externes System bereitzustellen.
+description: In diesem Artikel wird der Prozess der Verwendung von externem Speicher für Kundenalterungsdaten beschrieben. Sie können den Prozess zur Speicherung von Kundenalterungsdaten ausführen, um die Ausgabe für den Export in ein externes System bereitzustellen.
 author: JodiChristiansen
 ms.date: 10/27/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1af4b4cbf503369565ee64ad8889ee9e59a92b3f
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d7a66485cc9a538f5c3999009b6dbe295d7a5b9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735520"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894141"
 ---
 # <a name="customer-aging-data-storage"></a>Fälligkeitsdatenspeicher für Debitoren
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird der Prozess der Verwendung von externem Speicher für Kundenalterungsdaten beschrieben. Sie können in Microsoft Dynamics 365 Finance den Prozess **Fälligkeitsdatenspeicher für Debitoren** ausführen, um die Ausgabe für den Export in ein externes System bereitzustellen. Wenn Sie den Prozess ausführen, stehen den externen Systemen dieselben Fälligkeitsberichtsoptionen zur Verfügung, die im System verfügbar sind. Die Details sind immer in den exportierten Daten enthalten.
+In diesem Artikel wird der Prozess der Verwendung von externem Speicher für Kundenalterungsdaten beschrieben. Sie können in Microsoft Dynamics 365 Finance den Prozess **Fälligkeitsdatenspeicher für Debitoren** ausführen, um die Ausgabe für den Export in ein externes System bereitzustellen. Wenn Sie den Prozess ausführen, stehen den externen Systemen dieselben Fälligkeitsberichtsoptionen zur Verfügung, die im System verfügbar sind. Die Details sind immer in den exportierten Daten enthalten.
 
 Es kann hilfreich sein, Kundenalterungsdaten einem externen System zur Speicherung zur Verfügung zu stellen, wenn die Ausgabe viele Kunden und/oder viele Transaktionen enthält. Wenn die vorhandene **Alterung des Kunden** Zeitüberschreitungen meldet, da zu viele Daten zum Drucken vorhanden sind, bietet diese Funktion eine alternative Möglichkeit, dieselben Daten abzurufen.
 

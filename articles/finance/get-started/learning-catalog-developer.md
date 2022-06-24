@@ -1,5 +1,5 @@
 ---
-title: Lernkatalog für Dynamics 365 Finance Entwickler
+title: Lernkatalog für Dynamics 365 Finance-Entwickler
 description: Hier finden Sie alle Trainingsoptionen für Dynamics 365 Finance-Entwickler.
 author: margoc
 ms.topic: article
@@ -12,14 +12,14 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 866db1307484fd35949e87d02ca17ef0555bb654
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 729fc6a1172d651a24cc0a3bff765b09263e3cd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062260"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903098"
 ---
-# <a name="learning-catalog-for-dynamics-365-finance-developers"></a>Lernkatalog für Dynamics 365 Finance Entwickler
+# <a name="learning-catalog-for-dynamics-365-finance-developers"></a>Lernkatalog für Dynamics 365 Finance-Entwickler
 
 
 
@@ -31,8 +31,8 @@ Der folgende Katalog wurde aus Kernwissen zu bestimmten Domänen und vom Einfach
 
 | Inhalt | Description | Formatieren | Length |
 |---------|-------------|--------|--------|
-| [Starten Sie mit Apps für Finanzen und Betrieb](/learn/paths/get-started-finance-operations/) | Erfahren Sie, wie Finance und Operations-Apps Unternehmen dabei unterstützen, ihre globalen Finanzsysteme, operativen Geschäftsprozesse und rationalisierten Vorgänge zu verwalten, um schnelle und fundierte Entscheidungen zu treffen. Als ersten Schritt in Ihrer Karriere bei der Arbeit mit Apps für Finanzen und Betrieb müssen Sie sich mit den Funktionen und dem Funktionsumfang vertraut machen, unabhängig von Ihrer gewünschten Rolle. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 2.2 Stunden |
-| [Erste Schritte mit Dynamics 365 Finance](/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance ermöglicht geschäftlichen Benutzern die Anpassung an sich schnell ändernde geschäftliche Umgebungen. Es gibt Unternehmen alles, was sie brauchen, um Finanzen zu steuern und Mittel mit exakten Informationen für die Finanzplanung zu verwalten und mit Analysetools auf dem aktuellen Stand zu bleiben. Da Finanzen der Kern jedes Unternehmens sind, ist es wichtig, mit den Funktionen von Dynamics 365 Finance vertraut zu sein. | Kostenloses Online-Lernmodul in der eigenen Geschwindigkeit | 1 Stunde |
+| [Starten Sie mit Apps für Finanzen und Betrieb](/learn/paths/get-started-finance-operations/) | Erfahren Sie, wie Finanz- und Betriebs-Apps Unternehmen dabei unterstützen, ihre globalen Finanzsysteme, operativen Geschäftsprozesse und rationalisierten Vorgänge zu verwalten, um schnelle und fundierte Entscheidungen zu treffen. Als ersten Schritt in Ihrer Karriere bei der Arbeit mit Finanz- und Betriebs-Apps müssen Sie sich mit den Funktionen und dem Funktionsumfang vertraut machen, unabhängig von Ihrer gewünschten Rolle. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 2.2 Stunden |
+| [Beginnen Sie, mit Dynamics 365 Finance zu arbeiten](/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance ermöglicht geschäftlichen Benutzern die Anpassung an sich schnell ändernde geschäftliche Umgebungen. Es gibt Unternehmen alles, was sie brauchen, um Finanzen zu steuern und Mittel mit exakten Informationen für die Finanzplanung zu verwalten und mit Analysetools auf dem aktuellen Stand zu bleiben. Da Finanzen der Kern jedes Unternehmens sind, ist es wichtig, mit den Funktionen von Dynamics 365 Finance vertraut zu sein. | Kostenloses Online-Lernmodul in der eigenen Geschwindigkeit | 1 Stunde |
 
 ## <a name="core-development-concepts"></a>Grundlegende Entwicklungskonzepte<a name="core-development-concepts"></a>
 
@@ -47,7 +47,7 @@ Der folgende Katalog wurde aus Kernwissen zu bestimmten Domänen und vom Einfach
 | [Finance and Operations: Erweitern Dynamics 365 for Finance and Operations mit PowerApps (DYN558PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extending-dynamics-365-with-powerapps-2-6-2019) | Verständnis der Unkompliziertheit von Microsoft PowerApps und wie sie sich in Dynamics 365 for Finance and Operations integrieren lassen, um Unternehmen digital zu transformieren und die Benutzerproduktivität zu steigern. | Kostenlose Aufnahme einer Webkonferenz | 43 Minuten |
 | [Finance und Operations: Erweiterbarkeit (DYN518PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extensibility-10-26-18) | Wir werden einen Überblick und ein Update zu den Erweiterungsplänen von Microsoft geben. Wir besprechen die unterschiedlichen Methoden zur Erweiterung einer Lösung ausführlich, sehen uns die Funktionen zur Metadatenerweiterung sowie die Möglichkeit zum Verbessern und Erweitern von Code an, einschließlich der leistungsstarken Weisungskettenfunktion. | Kostenlose Aufnahme einer Webkonferenz | 50 Minuten |
 | [Visual Studio Team Services (VSTS)-Einrichtung (VIR782PAL)](https://community.dynamics.com/365/b/techtalks/posts/visual-studio-team-services-vsts-setup-january-17-2017) | Dieses Technologie-Gespräch geht die erforderlichen Schritte durch, um eine VSTS-Instanz und ein Projekt zu konfigurieren, das mit einem LCS-Implementierungsprojekt für eine Entwickler-/Testumgebungskonfiguration verbunden wird. | Kostenlose Aufnahme einer Webkonferenz | 41 Minuten |
-| [Dataverse-Datenintegrator (DYN451PAL2)](https://community.dynamics.com/365/b/techtalks/posts/cds-data-integrator-april-19-2018) | Bitte nehmen Sie an diesem Technologiegespräch über die Fähigkeiten des Dataverse-Datenintegrator teil. Wir werden die Integrationsmöglichkeiten zwischen Dynamics 365 Customer Engagement und Dynamics 365 Finance und Vorgängen sowie die Integration mit anderen Lösungen von Drittanbietern diskutieren. | Kostenlose Aufnahme einer Webkonferenz | 61 Minuten |
+| [Dataverse-Datenintegrator (DYN451PAL2)](https://community.dynamics.com/365/b/techtalks/posts/cds-data-integrator-april-19-2018) | Bitte nehmen Sie an diesem Technologiegespräch über die Fähigkeiten des Dataverse-Datenintegrator teil. Wir werden die Integrationsmöglichkeiten zwischen Dynamics 365 Customer Engagement und Dynamics 365 Finance + Operations sowie die Integration mit anderen Lösungen von Drittanbietern diskutieren. | Kostenlose Aufnahme einer Webkonferenz | 61 Minuten |
 | [Integration zwischen Dynamics 365 for Sales und Dynamics 365 for Finance & Operations via Dataverse (DYN340PAL)](https://community.dynamics.com/365/b/techtalks/posts/integration-between-dynamics-365-for-sales-and-dynamics-365-for-finance-amp-operations-via-cds-september-25-2017) | In diesem Technologiegespräch stellen wir das als „Interessent zu Barged“ bekannte Integrationsszenario für Vertriebs- und Marketingaktivitäten in Dynamics 365 for Sales sowie Erfüllung in Dynamics 365 for Finance and Operations vor. Es werfen auch einen Blick auf den Datenenintegrator und wie die Integration geändert wird. | Kostenlose Aufnahme einer Webkonferenz | 54 Minuten |
 | [Datenverwaltung (DYN757PAL2)](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-scm-data-management-february-14-2020) | Nehmen Sie an diesem Technologiegespräch zur Datenverwaltung teil. Informieren Sie zu den verfügbaren Optionen sowie den Szenarien, für die sie empfohlen werden. Es werden das Datenverwaltungs-Framework, Vorlagen, das Kopieren von Datenbanken, unternehmensübergreifende Datenfreigabe und Leistungsüberlegungen behandelt. | Kostenlose Aufnahme einer Webkonferenz | 58 Minuten |
 | [Tools für die Azure-Integration für Dynamics 365 for Finance and Operations (DYN386PAL)](https://community.dynamics.com/365/b/techtalks/posts/azure-integration-tools-for-dynamics-365-for-finance-and-operations-november-2-2017) | Dieses Technologie-Gespräch behandelt die Typen von Tools für die Integration in Dynamics 365 for Finance and Operations und wann welches Integrationstool zu verwenden ist. Die Sitzung geht auch einige der Integrationsszenarien durch, die mithilfe der Azure Integrationsdienste instrumentiert werden. | Kostenlose Aufnahme einer Webkonferenz | 63 Minuten |

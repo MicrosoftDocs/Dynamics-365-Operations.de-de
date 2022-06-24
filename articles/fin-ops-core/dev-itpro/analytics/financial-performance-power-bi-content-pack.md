@@ -1,6 +1,6 @@
 ---
 title: Financial Performance PowerBI.com-Lösung
-description: Dieses Thema beschreibt die Financial Performance PowerBI.com-Lösung.
+description: Dieser Artikel beschreibt die Financial Performance PowerBI.com-Lösung.
 author: kweekley
 ms.date: 05/09/2018
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ca8338473b2efd91b6570e140ee1def3fa93df14dcf57273f601efb7f548d08
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fcbe41d113ee41734020546388851afb7fc27bbf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767802"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910414"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Financial Performance PowerBI.com-Lösung
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Diese PowerBI.com-Lösung ist veraltet, wie in [Entfernte oder veraltete Funktionen für Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource) dokumentiert.
+> Diese PowerBI.com-Lösung wurde veraltet, wie in [ Entfernte oder veraltete Funktionen für Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource) dokumentiert.
 
-Dieses Thema beschreibt die **Financial Performance** PowerBI.com-Lösung. Es beschreibt das Dashboard und die enthaltenen Berichte und liefert Informationen über das Datenmodell und die Entitäten, mit denen die Lösung erstellt wurde.
+Dieser Artikel beschreibt die **Financial Performance** PowerBI.com-Lösung. Es beschreibt das Dashboard und die enthaltenen Berichte und liefert Informationen über das Datenmodell und die Entitäten, mit denen die Lösung erstellt wurde.
 
 ## <a name="main-account-setup"></a>Hauptkonto einrichten
 Da Organisationen möchten, dass Verbindlichkeiten und Umsatzerlöse als positive Beträge auf Berichten angezeigt werden, sind die Einstellungen der Hauptkonten wichtig. Damit diese Hauptkonten als positive Beträge angezeigt werden, muss das Hauptkonto den Typ auf **Verbindlichkeiten** **Umsatzerlös** festlegen. Wenn diese Kontotypen verwendet werden, wird die Berichterstellung über Power BI die Vorzeichen umkehren und die Werte als „positiv“ anzeigen.

@@ -1,6 +1,6 @@
 ---
 title: Partei und globales Adressbuch
-description: In diesem Thema wird die Partei- und globale Adressbuchfunktionalität von Duales Schreiben beschrieben.
+description: In diesem Artikel wird die Partei- und globale Adressbuchfunktionalität von Duales Schreiben beschrieben.
 author: RamaKrishnamoorthy
 ms.date: 04/25/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 1e2dcfa69308f6691e787a1ff1893f9080dcaef1
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 91b56d091f549838092bdefe1a6a763fde79a32c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717445"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892192"
 ---
 # <a name="party-and-global-address-book"></a>Partei und globales Adressbuch
 
@@ -152,7 +152,7 @@ Während des Lead-Qualifizierungsprozesses können Sie sowohl eine geschäftlich
 
 3. Installieren Sie [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab).
 
-4. Öffnen Sie die Finance and Operations-App. Navigieren Sie zum Modul Datenverwaltung und wählen Sie die Registerkarte Duales Schreiben. Die Duales Schreiben-Verwaltungsseite wird geöffnet.
+4. Öffnen Sie die Finanz- und Betriebs-App. Navigieren Sie zum Modul Datenverwaltung und wählen Sie die Registerkarte Duales Schreiben. Die Duales Schreiben-Verwaltungsseite wird geöffnet.
 
 5. Wenden Sie beide in den Schritten 2 und 3 installierten Lösungen an, indem Sie die Funktion [Lösung anwenden](link-your-environment.md) verwenden.
 

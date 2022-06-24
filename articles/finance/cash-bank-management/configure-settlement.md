@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren eines Ausgleichs
-description: Wie und wann Transaktionen ausgeglichen werden, können komplexe Themen sein; daher ist es wichtig, dass Sie den Vorgang verstehen und die Parameter für Ihre geschäftlichen Anforderungen korrekt definieren. Dieses Thema beschreibt die Parameter, die für den Ausgleich sowohl der Kreditorenkonten als auch der Debitoren verwendet werden.
+description: Wie und wann Transaktionen ausgeglichen werden, können komplexe Themen sein; daher ist es wichtig, dass Sie den Vorgang verstehen und die Parameter für Ihre geschäftlichen Anforderungen korrekt definieren. Dieser Artikel beschreibt die Parameter, die für den Ausgleich für Kreditoren und Debitoren verwendet werden.
 author: kweekley
 ms.date: 05/16/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 978c99ddd3e56e6699ab128a154a5594685d5956
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 14ed2999a9ad8ffc64815ca3f8b1556aad27ae48
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712492"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910199"
 ---
 # <a name="configure-settlement"></a>Konfigurieren eines Ausgleichs
 
 [!include [banner](../includes/banner.md)]
 
-Wie und wann Transaktionen ausgeglichen werden, können komplexe Themen sein; daher ist es wichtig, dass Sie den Vorgang verstehen und die Parameter für Ihre geschäftlichen Anforderungen korrekt definieren. Dieses Thema beschreibt die Parameter, die für den Ausgleich sowohl der Kreditorenkonten als auch der Debitoren verwendet werden. 
+Wie und wann Transaktionen ausgeglichen werden, können komplexe Themen sein; daher ist es wichtig, dass Sie den Vorgang verstehen und die Parameter für Ihre geschäftlichen Anforderungen korrekt definieren. Dieser Artikel beschreibt die Parameter, die für den Ausgleich für Kreditoren und Debitoren verwendet werden. 
 
 Die folgenden Parameter haben Auswirkungen darauf, wie Ausgleiche in Microsoft Dynamics 365 Finance verarbeitet werden. Ausgleich ist der Prozess für das Begleichen einer Rechnung durch eine Zahlung oder eine Gutschrift. Diese Parameter werden befinden sich im **Ausgleich**-Bereich der **Debitorenparameter** **Kreditorenkontenparameter**-Seiten.
 

@@ -1,6 +1,6 @@
 ---
 title: Erweiterten Bankabstimmungsimport mithilfe der elektronischen Berichterstellung einrichten
-description: In diesem Thema wird erläutert, wie Sie die elektronische Berichterstellung verwenden, um den erweiterten Bankabstimmungsimportprozess einzurichten.
+description: In diesem Artikel wird erläutert, wie Sie die elektronische Berichterstellung verwenden, um den erweiterten Bankabstimmungsimportprozess einzurichten.
 author: panolte
 ms.date: 03/30/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 30530a9870ba2ff0546237d2698d1675afa78104
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: 2ac8811a5c10490d90f782472d3c198474c7edc0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770193"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889119"
 ---
 # <a name="set-up-advanced-bank-reconciliation-import-by-using-electronic-reporting"></a>Erweiterten Bankabstimmungsimport mithilfe der elektronischen Berichterstellung einrichten
 
 [!include [banner](../includes/banner.md)]
 
-Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in Microsoft Dynamics 365 Finance automatisch mit Bankbuchungen abstimmen. In diesem Thema wird die Einrichtung der Importfunktion für Ihre Bankauszüge erläutert. Die Einrichtung des Bankabstimmungsimports variiert je nach Format des elektronischen Bankauszugs. Microsoft Dynamics 365 Finance unterstützt drei Bankauszugsformate: ISO20022 MT940 und BAI2. 
+Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in Microsoft Dynamics 365 Finance automatisch mit Bankbuchungen abstimmen. Dieser Artikel erläutert die Einrichtung der Importfunktion für Ihre Bankauszüge. Die Einrichtung des Bankabstimmungsimports variiert je nach Format des elektronischen Bankauszugs. Microsoft Dynamics 365 Finance unterstützt drei Bankauszugsformate: ISO20022 MT940 und BAI2. 
 
 ## <a name="set-up-the-electronic-reporting-configuration"></a>Konfiguration der elektronischen Berichterstellung einrichten
 

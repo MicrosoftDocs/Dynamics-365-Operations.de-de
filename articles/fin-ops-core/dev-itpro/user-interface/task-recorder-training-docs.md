@@ -1,6 +1,6 @@
 ---
 title: Dokumentation oder Schulung mit der Aufgabenaufzeichnung erstellen
-description: In diesem Thema werden die Aufgabenaufzeichnung und Aufgabenleitfäden erläutert. Zudem erfahren Sie, wie Aufzeichnungen angelegt werden und wie Microsoft-Aufgabenleitfäden angepasst und in die Hilfe aufgenommen werden.
+description: In diesem Artikel werden die Aufgabenaufzeichnung und Aufgabenleitfäden erläutert. Zudem erfahren Sie, wie Aufzeichnungen angelegt werden und wie Microsoft-Aufgabenleitfäden angepasst und in die Hilfe aufgenommen werden.
 author: josaw1
 ms.date: 03/24/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 448c2b302136e595852c423d53e49adfcc40d12d
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b556003edf2fe186f6b095e538f142fcf5a0bba5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070525"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891813"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Dokumentation oder Schulung mit der Aufgabenaufzeichnung erstellen
 
@@ -29,7 +29,7 @@ ms.locfileid: "8070525"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-In diesem Thema werden die Aufgabenaufzeichnung und Aufgabenleitfäden erläutert. Zudem erfahren Sie, wie Aufgabenaufzeichnungen angelegt werden und wie Microsoft-Aufgabenleitfäden angepasst und in die Hilfe aufgenommen werden.
+In diesem Artikel werden die Aufgabenaufzeichnung und Aufgabenleitfäden erläutert. Zudem erfahren Sie, wie Aufgabenaufzeichnungen angelegt werden und wie Microsoft-Aufgabenleitfäden angepasst und in die Hilfe aufgenommen werden.
 
 > [!IMPORTANT]
 > Sie können Ihre eigenen Aufgabenleitfäden für Dynamics 365 Human Resources erfassen, jedoch sind Sie noch nicht in der Lage, sie in einer Geschäftsprozessmodellierer-(BPM)-Bibliothek zu speichern oder sie vom Hilfebereich zu öffnen. Sie können sie lokal oder an einem Netzwerkspeicherort speichern und sie dann mithilfe der Aufgabenaufzeichnung öffnen und erneut wiedergeben. 

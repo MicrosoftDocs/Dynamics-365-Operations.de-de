@@ -1,6 +1,6 @@
 ---
 title: TDS-Sachkonten einrichten
-description: In diesem Thema wird erklärt, wie Sie Sachkonten für die Quellenbesteuerungsfunktion (TDS) einrichten.
+description: In diesem Artikel wird erklärt, wie Sie Sachkonten für die Quellenbesteuerungsfunktion (TDS) einrichten.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 329c950f31cd12faa335a2ab1c220d24f66919f4
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 227ed304c23f96cdbf4dbb4a07d028cd1e2758a6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726043"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904469"
 ---
 # <a name="set-up-tds-ledger-accounts"></a>TDS-Sachkonten einrichten
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erklärt, wie Sie Sachkonten für die Quellenbesteuerungsfunktion (TDS) einrichten. Sie verwenden die Seite **Kontenplan** zum Einrichten von Sachkonten für TDS.
+In diesem Artikel wird erklärt, wie Sie Sachkonten für die Quellenbesteuerungsfunktion (TDS) einrichten. Sie verwenden die Seite **Kontenplan** zum Einrichten von Sachkonten für TDS.
 
 1. Wechseln Sie zu **Hauptbuch \> Kontenplan \> Konten \> Hauptkonten**.
 2. Erstellen Sie auf der Registerkarte **Übersicht** **ALT + N** aus, um ein TDS-Sachkonto zu erstellen und die erforderlichen Details einzugeben.

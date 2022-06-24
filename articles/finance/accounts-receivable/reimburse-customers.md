@@ -1,6 +1,6 @@
 ---
 title: Ausführen einer Debitorenrückerstattung
-description: In diesem Thema wird erläutert, wie Rückerstattungstransaktionen für eine Debitorengruppe erstellt werden.
+description: In diesem Thema wird erläutert, wie Rückerstattungstransaktlionen für eine Debitorengruppe erstellt werden.
 author: JodiChristiansen
 ms.date: 09/09/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47d464dd23d70e1a340211eb83828550d807a543
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 892b089edb16ba560f588c086d37faafdf16958d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735638"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891781"
 ---
 # <a name="reimburse-customers"></a>Ausführen einer Debitorenrückerstattung
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Rückerstattungstransaktionen für eine Debitorengruppe erstellt werden. Wenn ein Debitor über ein Guthaben verfügt, können Sie dem Debitor den Betrag des Saldos rückerstatten. 
+In diesem Thema wird erläutert, wie Rückerstattungstransaktlionen für eine Debitorengruppe erstellt werden. Wenn ein Debitor über ein Guthaben verfügt, können Sie dem Debitor den Betrag des Saldos rückerstatten. 
 
 In der folgenden Tabelle werden die Voraussetzungen angezeigt, die vorhanden sein müssen, bevor Sie beginnen können.
 

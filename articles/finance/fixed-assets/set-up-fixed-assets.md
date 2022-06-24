@@ -1,6 +1,6 @@
 ---
 title: Anlagen einrichten
-description: Dieses Thema bietet einen Überblick über das Einrichten des Anlagenmoduls.
+description: Dieser Artikel bietet einen Überblick über das Einrichten des Anlagen-Moduls.
 author: moaamer
 ms.date: 06/08/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 164f19d4b346a51d4f5d43064cb33bf0c01378dd
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 3baa842dadddd0f763f803528d322b9561b3141e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726237"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910141"
 ---
 # <a name="set-up-fixed-assets"></a>Anlagen einrichten
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema bietet einen Überblick über das Einrichten des **Anlagen**-Moduls. 
+Dieser Artikel bietet einen Überblick über das Einrichten des **Anlagen**-Moduls. 
 
 Parameter steuern das allgemeine Verhalten in Anlagen. Mit Anlagengruppen können Sie Ihre Anlagen gruppieren und Standardattribute für jede Anlage definieren, die einer Gruppe zugewiesen wird. Bücher werden Anlagengruppen zugewiesen. Bücher verfolgen den Finanzwert einer Anlage im Laufe der Zeit ändern, indem die Abschreibungskonfiguration verwenden, die im Abschreibungsprofil definiert wird.
 

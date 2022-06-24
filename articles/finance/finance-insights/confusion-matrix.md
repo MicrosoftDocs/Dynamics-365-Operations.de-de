@@ -1,6 +1,6 @@
 ---
 title: Ergebnisse von Machine Learning-Modellen
-description: In diesem Thema werden Verwirrungsmatrizen, Klassifizierungsprobleme und Genauigkeit in Machine Learning(ML)-Modellen erläutert. Der Zweck besteht darin, Ihr Verständnis der Genauigkeit von ML-Vorhersageergebnissen zu verbessern.
+description: In diesem Artikel werden Verwirrungsmatrizen, Klassifizierungsprobleme und Genauigkeit in Machine Learning(ML)-Modellen erläutert. Der Zweck besteht darin, Ihr Verständnis der Genauigkeit von ML-Vorhersageergebnissen zu verbessern.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c57a023995e0bb58d4fba0a4fd2f147d07e51348
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 23df5979231fbd6908b6f1e7c3aca5dd3e0e733d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725959"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910170"
 ---
 # <a name="results-of-machine-learning-models"></a>Ergebnisse von Machine Learning-Modellen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden Verwirrungsmatrizen, Klassifizierungsprobleme und Genauigkeit in Machine Learning(ML)-Modellen erläutert. Der Zweck besteht darin, Ihr Verständnis der Genauigkeit von ML-Vorhersageergebnissen zu verbessern. Die Zielgruppe umfasst Ingenieure, Analysten und Manager, die ihre Kenntnisse und Fähigkeiten in der Datenwissenschaft erweitern möchten.
+In diesem Artikel werden Verwirrungsmatrizen, Klassifizierungsprobleme und Genauigkeit in Machine Learning(ML)-Modellen erläutert. Der Zweck besteht darin, Ihr Verständnis der Genauigkeit von ML-Vorhersageergebnissen zu verbessern. Die Zielgruppe umfasst Ingenieure, Analysten und Manager, die ihre Kenntnisse und Fähigkeiten in der Datenwissenschaft erweitern möchten.
 
 ## <a name="confusion-matrix"></a>Verwirrungs-Matrix
 Nachdem ein überwachtes ML-Problem anhand einer Reihe historischer Daten trainiert wurde, wird es anhand von Daten getestet, die beim Trainingsprozess vorenthalten werden. Auf diese Weise können Sie die Vorhersagen des trainierten Modells mit den tatsächlichen Werten vergleichen. Die Verwirrungsmatrix bietet eine Möglichkeit zu bewerten, wie erfolgreich ein Klassifizierungsproblem ist und wo es Fehler macht (d.h. wo es „verwirrt“ ist).
@@ -73,16 +73,16 @@ Die Genauigkeit ist ein wichtiges Instrument für die Kommunikation mit Domain-E
 
 Für das Zahlungsvorhersageszenario können Sie ein Ziel für das ML-Modell festlegen, das Faktoren für unterschiedliche Zahlungsverhalten enthält. Das Ziel ist, dass das Modell eine naive Vermutung verbessert, indem die Anzahl der falschen Antworten um mindestens 50 Prozent reduziert wird. Mit anderen Worten, Sie möchten eine Zielgenauigkeit, die den Unterschied zwischen der Genauigkeit einer naiven Vermutung und 100 Prozent aufteilt.
 
-Die folgende Tabelle fasst dieses Prinzip für die Verwirrungsmatrizen in diesem Thema zusammen.
+Die folgende Tabelle fasst dieses Prinzip für die Verwirrungsmatrizen in diesem Artikel zusammen.
 
-| Modell   | Naive Vermutung | Vorgabe | Modellgenauigkeit | Ist das Ziel erreicht?                                          |
+| Modell   | Naive Vermutung | Ziel | Modellgenauigkeit | Ist das Ziel erreicht?                                          |
 |---------|-------------|--------|----------------|-----------------------------------------------------------|
 | Modell 1 | 0.50        | 0.75   | 0.73           | Fast. Dieses Modell verbessert die Vermutung erheblich. |
 | Modell 2 | 0.80        | 0.90   | 0.83           | Nr. Verbesserung ist erforderlich.                              |
 
 ## <a name="classification-f1-accuracy"></a>Klassifizierung F1-Genauigkeit
 
-Die letzte Überlegung in diesem Thema ist ein fortgeschritteneres Maß für die Klassifizierung der ML-Leistung, die als F1-Genauigkeit bekannt ist.
+Die letzte Überlegung in diesem Artikel ist ein fortgeschritteneres Maß für die Klassifizierung der ML-Leistung, die als F1-Genauigkeit bekannt ist.
 
 Bevor die F1-Genauigkeit definiert werden kann, müssen zwei zusätzliche Metriken eingeführt werden: Präzision und Erinnerung. Die Präzision gibt an, wie viele der insgesamt als positiv angegebenen Vorhersagen korrekt zugewiesen wurden. Diese Metrik wird auch als positiver Vorhersagewert bezeichnet. Erinnerung ist die Gesamtzahl der tatsächlich positiven Fälle, die korrekt vorhergesagt wurden. Diese Metrik wird auch als Empfindlichkeit bezeichnet.
 
@@ -97,7 +97,7 @@ Das F1-Maß kombiniert Präzision und Erinnerung. Das Ergebnis ist das harmonisc
 
 - F1 = 2 × (Präzision × Erinnerung) ÷ (Präzision + Erinnerung)
 
-Schauen wir uns ein konkretes Beispiel an. Zu Beginn dieses Themas gab es ein Beispiel für ein Modell, das vorhersagte, ob es sich bei einem Tier um einen Hund oder eine Katze handelte. Die Abbildung wird hier wiederholt.
+Schauen wir uns ein konkretes Beispiel an. Zu Beginn dieses Artikels gab es ein Beispiel für ein Modell, das vorhersagte, ob es sich bei einem Tier um einen Hund oder eine Katze handelte. Die Abbildung wird hier wiederholt.
 
 [![Beispiel für die Vorhersage von Arten (wiederholt).](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 

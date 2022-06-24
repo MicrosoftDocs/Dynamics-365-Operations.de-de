@@ -1,6 +1,6 @@
 ---
 title: ER-Konfigurationen zum Ausfüllen von PDF-Vorlagen entwerfen
-description: Dieses Thema enthält Informationen dazu, wie ein elektronisches Berichtsformat (ER) gestaltet wird, um eine PDF-Vorlage auszufüllen.
+description: Dieser Artikel enthält Informationen dazu, wie ein elektronisches Berichtsformat (EB) gestaltet wird, um eine PDF-Vorlage auszufüllen.
 author: NickSelin
 ms.date: 03/18/2022
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 706256300cf0b64bc5b5e1e7adb77c1da500d16f
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: ef9b650e9b676d79af8839c08cfbb1000a5aee5f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645106"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908589"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>ER-Konfigurationen zum Ausfüllen von PDF-Vorlagen entwerfen
 
 [!include[banner](../includes/banner.md)]
 
-Die Schritte in diesem Thema sind Beispiele, die angegeben, wie ein Benutzer entweder in der Rolle **Systemadministrator** oder in der Rolle **Elektronischer Berichterstellungsentwickler** ein elektronisches Meldeformat (ER) konfigurieren kann, das Bericht als PDF-Dokumente erstellt, indem ablagefähige PDF-Dokumente als Berichtsvorlagen verwendet werden. Diese Schritte können in einem beliebigen Unternehmen von Dynamics 365 Finance oder in den Regulatory Configuration Services (RCS) ausgeführt werden.
+Die Schritte in diesem Artikel sind Beispiele, die angeben, wie Benutzer entweder in der Rolle **Systemadministrator** oder in der Rolle **Elektronischer Berichterstellungsentwickler** ein elektronisches Meldeformat (ER) konfigurieren, das Berichte als PDF-Dokumente erstellt, indem ausfüllbare PDF-Dokumente als Berichtsvorlagen verwendet werden. Diese Schritte können in einem beliebigen Unternehmen von Dynamics 365 Finance oder in den Regulatory Configuration Services (RCS) ausgeführt werden.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Bevor Sie beginnen, müssen Sie eine der folgenden Arten des Zugriffs haben, abhängig vom Service der verwendet wird, wenn Sie die Prozeduren in diesem Thema ausführen:
+Bevor Sie beginnen, müssen Sie eine der folgenden Arten des Zugriffs haben, abhängig von dem Dienst, der verwendet wird, wenn Sie die Prozeduren in diesem Artikel ausführen:
 
 - Zugriff auf Finance für eine der folgenden Rollen:
 

@@ -1,6 +1,6 @@
 ---
-title: Workflow-FAQs
-description: Diese Thema enthält Antworten auf häufig gestellte Fragen zum Workflowsystem.
+title: Häufig gestellte Fragen zu Workflows
+description: Dieser Artikel enthält Antworten auf häufig gestellte Fragen zum Workflowsystem.
 author: ChrisGarty
 ms.date: 03/01/2022
 ms.topic: article
@@ -12,21 +12,21 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e9e2000684081035f35ea55e1c773a4f6976d74
-ms.sourcegitcommit: 967b93bb42413b5b38b817f924015468312a93a0
+ms.openlocfilehash: a72fd141bb1178a3a83385c512d1a655064d5b00
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8370879"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896578"
 ---
-# <a name="workflow-faq"></a>Workflow-FAQs
+# <a name="workflow-faq"></a>Häufig gestellte Fragen zu Workflows
 
 [!include [banner](../includes/banner.md)]
 
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Diese Thema enthält Antworten auf häufig gestellte Fragen zum Workflowsystem.
+Dieser Artikel enthält Antworten auf häufig gestellte Fragen zum Workflowsystem.
 
 ## <a name="why-are-multiple-notifications-received-when-a-work-item-is-rejected"></a>Warum erhalte ich mehrere Benachrichtigungen, wenn eine Arbeitsaufgabe abgelehnt wird?
 Wenn eine Arbeitsaufgabe abgelehnt wird, erscheint die Arbeitsaufgabe als wegen Ablehnung beendet. Dem Ersteller wird eine andere Arbeitsaufgabe erstellt und zugewiesen. Das bedeutet, dass eine Benachrichtigung zur abgelehnten Arbeitsaufgabe an den Ersteller und eine separate Benachrichtigung an den Benutzer gesendet wird, dem die neue „Änderung angefordert“-Arbeitsaufgabe zugewiesen ist. 

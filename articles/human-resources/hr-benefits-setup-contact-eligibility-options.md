@@ -1,6 +1,6 @@
 ---
 title: Berechtigungsoptionen für persönliche Kontakte konfigurieren
-description: Dieses Thema erklärt, wie Sie die Berechtigungsoptionen für persönliche Kontakte in Microsoft Dynamics 365 Human Resources konfigurieren.
+description: Dieser Artikel erklärt, wie Sie die Berechtigungsoptionen für persönliche Kontakte in Microsoft Dynamics 365 Human Resources konfigurieren.
 author: twheeloc
 ms.date: 08/24/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e145acf6a6ba3333acfcc6e66dadd1f7d5deac65
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 82bb7c037b4e0ab9950ce4c314c03a0f2d713bbd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692309"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895930"
 ---
 # <a name="configure-personal-contact-eligibility-options"></a>Berechtigungsoptionen für persönliche Kontakte konfigurieren
 
@@ -28,7 +28,7 @@ ms.locfileid: "8692309"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In diesem Thema erfahren Sie, wie Sie Typen für persönliche Kontakte für die Verwendung von Vorteilen in Microsoft Dynamics 365 Human Resources konfigurieren. Persönliche Ansprechpartner sind die Personen, die von Ihren Plänen abgedeckt werden (abhängige Objekte) oder die von Ihren Plänen profitieren (Begünstigte). Angehörige sind in der Regel Ehepartner oder Kinder. Begünstigte können Ehepartner, Kinder, Trusts oder Eltern sein.
+In diesem Artikel erfahren Sie, wie Sie Typen für persönliche Kontakte für die Verwendung von Vorteilen in Microsoft Dynamics 365 Human Resources konfigurieren. Persönliche Ansprechpartner sind die Personen, die von Ihren Plänen abgedeckt werden (abhängige Objekte) oder die von Ihren Plänen profitieren (Begünstigte). Angehörige sind in der Regel Ehepartner oder Kinder. Begünstigte können Ehepartner, Kinder, Trusts oder Eltern sein.
 
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Einstellung** die Option **Berechtigungsoptionen für persönliche Kontakte**.
 

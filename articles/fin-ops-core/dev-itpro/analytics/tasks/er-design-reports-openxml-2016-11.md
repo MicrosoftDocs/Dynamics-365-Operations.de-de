@@ -1,6 +1,6 @@
 ---
 title: ER Entwerfen einer Konfiguration für das Generieren von Berichten im OPENXML-Format (November 2016)
-description: In diesem Thema wird beschrieben, wie Sie eine neue EB-Konfiguration (elektronische Berichterstellung) erstellen, die eine Vorlage zum Generieren elektronischer Dokumente im OPENXML-Format enthält.
+description: In diesem Artikel wird beschrieben, wie Sie eine neue EB-Konfiguration (elektronische Berichterstellung) erstellen, die eine Vorlage zum Generieren elektronischer Dokumente im OPENXML-Format enthält.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c3dfe6ce9c918b5fccbd7097096fa359facdf41bbf6fd0fab6c61153171484cd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7b2325a5389e0bfe1efff17e5cd117ad8dbcd65d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753027"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908412"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>ER Entwerfen einer Konfiguration für das Generieren von Berichten im OPENXML-Format (November 2016)
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle „Entwickler für elektronische Berichterstellung“ angehört, eine neue Konfiguration für elektronische Berichterstellung (ER) erstellen kann, die eine Vorlage zur Generierung elektronischer Dokumente im OPENXML-Format enthält. Diese Konfiguration wird zur Verarbeitung von Kreditorenzahlungen verwendet.
+In diesem Artikel wird erläutert, wie Benutzer, die der Systemadministratorrolle oder der Rolle „Entwickler für elektronische Berichterstellung“ angehören, eine neue Konfiguration für elektronische Berichterstellung (EB) erstellen können, die eine Vorlage zur Generierung elektronischer Dokumente im OPENXML-Format enthält. Diese Konfiguration wird zur Verarbeitung von Kreditorenzahlungen verwendet.
 
 In diesem Beispiel erstellen Sie eine Konfiguration für das Beispielunternehmen, Litware, Inc. Diese Schritte können im GBSI-Unternehmen ausgeführt werden.
 

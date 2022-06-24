@@ -1,6 +1,6 @@
 ---
 title: An eine Indexrate gebundene Mietzahlungen neu bewerten
-description: In diesem Thema wird die Regulierung beschrieben, die an der Mietverbindlichkeit für eine Anlage mit Nutzungsrecht am Leasingobjekt vorgenommen wird, wenn sich die variablen Mietzahlungen aufgrund einer Änderung des Indexsatzes ändern.
+description: In diesem Artikel wird die Regulierung beschrieben, die an der Mietverbindlichkeit für eine Anlage mit Nutzungsrecht am Leasingobjekt vorgenommen wird, wenn sich die variablen Mietzahlungen aufgrund einer Änderung des Indexsatzes ändern.
 author: moaamer
 ms.date: 01/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5abd1f5d265c6e8b53903e6df5c52a06b3468880
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 8dc2325e9f0651bea0d70d9f66e5d88b741009f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968051"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903246"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>An eine Indexrate gebundene Mietzahlungen neu bewerten
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird die Regulierung beschrieben, die an der Mietverbindlichkeit für eine Anlage mit Nutzungsrecht am Leasingobjekt vorgenommen wird, wenn sich die variablen Mietzahlungen aufgrund einer Änderung des Indexsatzes ändern. Die Leasingverbindlichkeit und das Nutzungsrecht am Leasingobjekt werden angepasst, um die neuen Zahlungsbeträge zu berücksichtigen. Unter dem Kodifizierungsthema 842 (ASC 842) für Rechnungslegungsstandards, dem Standard für Generally Accepted Accounting Principles in den USA (US GAAP), ändern sich nur die variablen Zahlungen, wenn die Zahlungen aufgrund einer Änderung des Indexsatzes steigen oder fallen, sofern keine zusätzlichen Änderungen der Zahlungsströme vorhanden sind. Diese zusätzlichen Änderungen können eine Änderung der Mietdauer beinhalten, die sich auf die Zinssätze bezieht. Weitere Informationen finden Sie in ASC 842-10-55-225 und in Paragraph 42 (b) des International Financial Reporting Standard 16 (IFRS 16).
+In diesem Artikel wird die Regulierung beschrieben, die an der Leasingverbindlichkeit für eine Anlage mit Nutzungsrecht am Leasingobjekt vorgenommen wird, wenn sich die variablen Mietzahlungen aufgrund einer Änderung des Indexsatzes ändern. Die Leasingverbindlichkeit und das Nutzungsrecht am Leasingobjekt werden angepasst, um die neuen Zahlungsbeträge zu berücksichtigen. Unter dem Kodifizierungsthema 842 (ASC 842) für Rechnungslegungsstandards, dem Standard für Generally Accepted Accounting Principles in den USA (US GAAP), ändern sich nur die variablen Zahlungen, wenn die Zahlungen aufgrund einer Änderung des Indexsatzes steigen oder fallen, sofern keine zusätzlichen Änderungen der Zahlungsströme vorhanden sind. Diese zusätzlichen Änderungen können eine Änderung der Mietdauer beinhalten, die sich auf die Zinssätze bezieht. Weitere Informationen finden Sie in ASC 842-10-55-225 und in Paragraph 42 (b) des International Financial Reporting Standard 16 (IFRS 16).
 
 ## <a name="adjust-lease-payments"></a>Mietzahlungen anpassen
 

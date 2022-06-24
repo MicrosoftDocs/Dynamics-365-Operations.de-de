@@ -1,6 +1,6 @@
 ---
 title: Benutzerdefinierte Speicherorte für generierte Dokumente angeben
-description: In diesem Thema wird erläutert, wie Sie die Liste der Speicherorte für Dokumente erweitern, die von Formaten der electronischen Berichterstellung (EB) generiert werden.
+description: In diesem Artikel wird erläutert, wie Sie die Liste der Speicherorte für Dokumente erweitern, die von Formaten der elektronischen Berichterstellung (EB) generiert werden.
 author: NickSelin
 ms.date: 10/29/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 337e760f28161721d886c7bbec09b5ff8dbfad45
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 103a7e51fc6042e19b1db3b3d6b00436df15fd89
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594908"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898855"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Benutzerdefinierte Speicherorte für generierte Dokumente angeben
 
 [!include[banner](../includes/banner.md)]
 
-Mit der Anwendungsprogrammierschnittstelle (API) des Framework der elektronischen Berichterstellung (ER) können Sie die Liste der Speicherorte für Dokumente, die von ER-Formaten generiert werden, erweitern. In diesem Thema wird erläutert, wie Sie einen benutzerdefinierten Speicherort für generierte Dokumente hinzufügen, indem Sie die Aufgabe zum Erstellen von EB-Zielen an das Standardempfängerwerk delegieren und anschließend eine benutzerdefinierte Klasse mit eigener Ziellogik implementieren.
+Mit der Anwendungsprogrammierschnittstelle (API) des Framework der elektronischen Berichterstellung (ER) können Sie die Liste der Speicherorte für Dokumente, die von ER-Formaten generiert werden, erweitern. In diesem Artikel wird erläutert, wie Sie einen benutzerdefinierten Speicherort für generierte Dokumente hinzufügen, indem Sie die Aufgabe zum Erstellen von EB-Zielen an das Standardempfängerwerk delegieren und anschließend eine benutzerdefinierte Klasse mit eigener Ziellogik implementieren.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -35,7 +35,7 @@ Stellen Sie eine Topologie bereit, die einen fortlaufenden Build unterstützt. W
 
 Sie müssen zudem Zugriff auf die Entwicklungsumgebung für diese Topologie haben.
 
-Alle Aufgaben in diesem Thema können im **USMF**-Unternehmen erledigt werden.
+Alle Aufgaben in diesem Artikel können im **USMF**-Unternehmen erledigt werden.
 
 ## <a name="import-the-fixed-asset-roll-forward-er-format"></a>EB-Format „Rollforward für Anlagen“ importieren
 

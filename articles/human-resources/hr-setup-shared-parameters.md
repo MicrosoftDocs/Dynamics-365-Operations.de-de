@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren von geteilten Parametern
-description: Dieses Thema beschreibt, wie Sie Personalverwaltungsparameter einrichten, die für alle juristischen Personen verwendet werden.
+description: Dieser Artikel beschreibt, wie Sie Personalverwaltungsparameter einrichten, die für alle juristischen Personen verwendet werden.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e59745e01905be50e6908fb9587b8afc17604382
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c0d8dbca302d90cc402feb4715a6fcc2b935d8b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692113"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906181"
 ---
 # <a name="configure-shared-parameters"></a>Konfigurieren von geteilten Parametern
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Sie müssen gemeinsame Parameter für Datensätze einrichten, die über Unternehmen freigegeben werden, wie **Positions** datensätzen einrichten. Dieses Thema beschreibt, wie Sie Personalverwaltungsparameter einrichten, die für alle juristischen Personen verwendet werden.
+Sie müssen gemeinsame Parameter für Datensätze einrichten, die über Unternehmen freigegeben werden, wie **Positions** datensätzen einrichten. Dieser Artikel beschreibt, wie Sie Personalverwaltungsparameter einrichten, die für alle juristischen Personen verwendet werden.
 
 Gewisse Datentypen wie **Positions** daten werden in den Unternehmen freigegeben. Für diese Datensätze müssen Sie gemeinsame Parameter einrichten. Die Seite **Freigegebene Parameter für Personalverwaltung** wird beispielsweise verwendet, um Personalverwaltungsparameter innerhalb der juristischen Personen einzurichten. 
 

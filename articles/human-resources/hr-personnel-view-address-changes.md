@@ -1,6 +1,6 @@
 ---
 title: Adressänderungen anzeigen und verwalten
-description: In diesem Thema wird erläutert, wie Sie Adressänderungen in Dynamics 365 Human Resources anzeigen und verwalten können.
+description: In diesem Artikel wird erläutert, wie Sie Adressänderungen in Dynamics 365 Human Resources anzeigen und verwalten können.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 819f22c58da485980c38d35dcc6dda6aebacf423
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 744ab532fcc663f25ce376817779924bbef15432
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695843"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899584"
 ---
 # <a name="view-and-manage-address-changes"></a>Adressänderungen anzeigen und verwalten
 
@@ -27,7 +27,7 @@ ms.locfileid: "8695843"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In diesem Thema wird erläutert, wie Sie Adressänderungen auf der Seite **Persönliche Daten bearbeiten** (den Sie vom Arbeitsbereich **Mitarbeiter-Self-Service** aus öffnen) oder der Detailseite **Arbeitskraft** in Dynamics 365 Human Resources anzeigen und verwalten können.
+In diesem Artikel wird erläutert, wie Sie Adressänderungen auf der Seite **Persönliche Daten bearbeiten** (den Sie vom Arbeitsbereich **Mitarbeiter-Self-Service** aus öffnen) oder der Detailseite **Arbeitskraft** in Dynamics 365 Human Resources anzeigen und verwalten können.
 
 Viele Unternehmen möchten, dass Mitarbeiter ihre persönlichen Daten über einen Self-Service verwalten. Sie können Benutzern erlauben, ihre Adresse im Arbeitsbereich **Mitarbeiter-Self-Service** zu aktualisieren. Sie können diese Änderungen dann im Arbeitsbereich **Personalverwaltung** überwachen. Sie müssen die Anzahl der Tage angeben, an denen Sie Änderungen auf der Seite **Personalverwaltungsparameter** anzeigen möchten, um diese Funktion nutzen zu können.
 

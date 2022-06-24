@@ -1,6 +1,6 @@
 ---
 title: TDS für Intercompany-Buchungen berechnen
-description: In diesem Thema wird der Prozess beschrieben, mit dem die Quellenbesteuerung (TDS) bei Intercompany-Buchungen in Phasen berechnet wird.
+description: In diesem Artikel wird der Prozess beschrieben, mit dem die Quellenbesteuerung (TDS) bei Intercompany-Buchungen in Phasen berechnet wird.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 381b00c64e3e3a09a245c82cbe1f1599986a49aa
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: c27bea997804f2c5eff6be2b20064b272ccd062f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726976"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888972"
 ---
 # <a name="tds-calculation-on-intercompany-transactions"></a>TDS für Intercompany-Buchungen berechnen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird der Prozess beschrieben, mit dem die Quellenbesteuerung (TDS) bei Intercompany-Buchungen in Phasen berechnet wird.
+In diesem Artikel wird der Prozess beschrieben, mit dem die Quellenbesteuerung (TDS) bei Intercompany-Buchungen in Phasen berechnet wird.
 
 Wenn eine Intercompany-Bestellung oder ein Intercompany-Auftrag erstellt wird, wird die für den Debitor oder Kreditor festgelegte Standard-TDS-Gruppe zur Berechnung des TDS-Betrags verwendet. Der TDS-Betrag wird nach Buchung der Rechnung auf das Rückerstattungs- oder Kreditorenkonto gebucht.
 

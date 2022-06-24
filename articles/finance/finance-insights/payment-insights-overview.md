@@ -1,6 +1,6 @@
 ---
 title: Vorhersagen für Kundenzahlungen
-description: In diesem Thema werden die Funktionen für Zahlungsvorhersagen beschrieben, die Ihnen helfen können, die typischen Zahlungsmethoden eines Debitors besser zu verstehen. Diese Funktion kann auch helfen, die Umstände zu identifizieren, die das Einleiten eines Mahnprozesses verursachen können.
+description: In diesem Artikel werden die Funktionen für Zahlungsvorhersagen beschrieben, die Ihnen helfen können, die typischen Zahlungsmethoden eines Debitors besser zu verstehen. Diese Funktion kann auch helfen, die Umstände zu identifizieren, die das Einleiten eines Mahnprozesses verursachen können.
 author: ShivamPandey-msft
 ms.date: 11/03/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: f3d6f328ff3fd4da6ad3e7d4f3f751d3be692736
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 5d16b42b4538a18ca3dd9d3bac25ed1af1441ace
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713189"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903159"
 ---
 # <a name="customer-payment-predictions"></a>Vorhersagen für Kundenzahlungen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die Funktionen für Zahlungsvorhersagen beschrieben, die Ihnen helfen können, die typischen Zahlungsmethoden eines Debitors besser zu verstehen. Diese Funktion kann auch helfen, die Umstände zu identifizieren, die das Einleiten eines Mahnprozesses verursachen können.
+In diesem Artikel werden die Funktionen für Zahlungsvorhersagen beschrieben, die Ihnen helfen können, die typischen Zahlungsmethoden eines Debitors besser zu verstehen. Diese Funktion kann auch helfen, die Umstände zu identifizieren, die das Einleiten eines Mahnprozesses verursachen können.
 
 ## <a name="overview"></a>Übersicht
 

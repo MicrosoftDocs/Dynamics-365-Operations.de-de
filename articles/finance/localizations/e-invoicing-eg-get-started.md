@@ -1,6 +1,6 @@
 ---
 title: Elektronische Rechnungsstellung für Ägypten
-description: Dieses Thema enthält Informationen, die Ihnen den Einstieg in die Elektronische Rechnungsstellung für Ägypten in Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management erleichtern.
+description: Dieser Artikel enthält Informationen, die Ihnen den Einstieg in die Elektronische Rechnungsstellung für Ägypten in Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management erleichtern.
 author: gionoder
 ms.date: 02/09/2022
 ms.topic: article
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: e21c4ce4d676c3194665672a078dc1e3d0492799
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: c2a46ef938c5dee62c0d0acd1648584df344c81a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661721"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904411"
 ---
 # <a name="electronic-invoicing-for-egypt"></a>Elektronische Rechnungsstellung für Ägypten
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung für Ägypten erleichtern. Es führt Sie durch die Konfigurationsschritte, die im Regulatory Configuration Service (RCS) länderabhängig sind. Diese Schritte ergänzen die Schritte, die unter [Elektronische Rechnungsstellung festlegen](e-invoicing-set-up-overview.md) beschrieben sind.
+Dieser Artikel enthält Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung für Ägypten erleichtern. Es führt Sie durch die Konfigurationsschritte, die im Regulatory Configuration Service (RCS) länderabhängig sind. Diese Schritte ergänzen die Schritte, die unter [Elektronische Rechnungsstellung festlegen](e-invoicing-set-up-overview.md) beschrieben sind.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Bevor Sie mit den Verfahren in diesem Thema beginnen, müssen Sie die folgenden Voraussetzungen erfüllen:
+Bevor Sie mit den Verfahren in diesem Artikel beginnen, müssen Sie die folgenden Voraussetzungen erfüllen:
 
 - Machen Sie sich mit der Elektronischen Rechnungsstellung vertraut, wie sie in [Übersicht über die Elektronische Rechnungsstellung](e-invoicing-service-overview.md) beschrieben ist.
 - Melden Sie sich bei RCS an, und legen Sie die Elektronische Rechnungsstellung fest. Weitere Informationen finden Sie in folgenden Themen:

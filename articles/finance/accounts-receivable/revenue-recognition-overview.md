@@ -1,6 +1,6 @@
 ---
 title: Übersicht über die Umsatzerkennung (enthält Video)
-description: Dieses Thema enthält Informationen zur Umsatzerkennungsfunktion. Diese Funktion stellt ein flexibles Framework bereit, mit dem Sie unternehmensspezifische Regeln zur Erfassung des Umsatzerlöspreises und des Umsatzerlöszeitplans bei Aufträgen mit mehreren Elementen festlegen können.
+description: Dieser Artikel enthält Informationen zur Umsatzerkennungsfunktion. Diese Funktion stellt ein flexibles Framework bereit, mit dem Sie unternehmensspezifische Regeln zur Erfassung des Umsatzerlöspreises und des Umsatzerlöszeitplans bei Aufträgen mit mehreren Elementen festlegen können.
 author: kweekley
 ms.date: 03/15/2022
 ms.topic: overview
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 35ee857339a59391b048f920e8d6b13812909d76
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: acb3575d9b6371bb4a6924be1e6e2ee86b976e7c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725762"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888034"
 ---
 # <a name="revenue-recognition-overview"></a>Übersicht zur Umsatzerkennung
 

@@ -1,6 +1,6 @@
 ---
 title: Häufig gestellt Fragen zur elektronischen Rechnungsstellung
-description: Dieses Thema enthält Informationen zu häufig gestellten Fragen zur elektronischen Rechnungsstellung.
+description: Dieser Artikel enthält Informationen zu häufig gestellten Fragen zur elektronischen Rechnungsstellung.
 author: gionoder
 ms.date: 04/21/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 2d4e7c79c83b9d60469c2b87a7b9120e0d4c13a695badfb2254a85cee629c933
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fbb43438a9da567460eb744afb64dae5274f04a9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770511"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904353"
 ---
 # <a name="electronic-invoicing-faq"></a>Häufig gestellte Fragen zur elektronischen Rechnungsstellung
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema finden Sie Antworten auf häufig gestellte Fragen zum Dienst für die elektronische Rechnungsstellung. Die elektronische Rechnungsstellung erweitert die Funktionen der elektronischen Rechnungsstellung, die in Dynamics 365 Finance, Dynamics 365 Supply Chain Management und Dynamics 365 Project Operations vorhanden sind. 
+In diesem Artikel finden Sie Antworten auf häufig gestellte Fragen zum Dienst für die elektronische Rechnungsstellung. Die elektronische Rechnungsstellung erweitert die Funktionen der elektronischen Rechnungsstellung, die in Dynamics 365 Finance, Dynamics 365 Supply Chain Management und Dynamics 365 Project Operations vorhanden sind. 
 
 ## <a name="what-is-important-about-electronic-invoicing-and-why-should-it-matter-to-my-organization"></a>Was ist an der elektronischen Rechnungsstellung wichtig und warum sollte es für mein Unternehmen von Bedeutung sein?
 

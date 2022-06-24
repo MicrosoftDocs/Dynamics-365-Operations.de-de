@@ -1,6 +1,6 @@
 ---
 title: Erwerben von Anlagen durch Beschaffung
-description: Dieser Artikel beschreibt, wie eine Integration zwischen den Modulen "Anlagevermögen" und "Kreditoren" eingerichtet wird. Dadurch können Anlagen automatisch auf Grundlage von Bestellungen oder Kreditorenrechnungen erstellt oder Anschaffungs- und Anschaffungsänderungsbuchungen für Anlagen automatisch vorgenommen werden.
+description: Dieser Artikel beschreibt, wie eine Integration zwischen den Modulen „Anlagevermögen“ und „Kreditoren“ eingerichtet wird. Dadurch können Anlagen automatisch auf Grundlage von Bestellungen oder Kreditorenrechnungen erstellt oder Anschaffungs- und Anschaffungsänderungsbuchungen für Anlagen automatisch vorgenommen werden.
 author: moaamer
 ms.date: 03/05/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b654dbf97f8d91e0a3233803ee182b1383ad317d
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ac25114fe8036a474d637e9ad9ede5e46b50d92e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712089"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891579"
 ---
 # <a name="acquire-assets-through-procurement"></a>Erwerben von Anlagen durch Beschaffung
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel beschreibt, wie eine Integration zwischen den Modulen "Anlagevermögen" und "Kreditoren" eingerichtet wird. Dadurch können Anlagen automatisch auf Grundlage von Bestellungen oder Kreditorenrechnungen erstellt oder Anschaffungs- und Anschaffungsänderungsbuchungen für Anlagen automatisch vorgenommen werden. Eine Einkaufsposition erstellt eine Anlage, unabhängig von der Menge auf der Einkaufsposition. Wenn Sie mehrere Anlagen erstellen müssen, müssen Sie mehrere Einkaufspositionen erstellen.
+Dieser Artikel beschreibt, wie eine Integration zwischen den Modulen „Anlagevermögen“ und „Kreditoren“ eingerichtet wird. Dadurch können Anlagen automatisch auf Grundlage von Bestellungen oder Kreditorenrechnungen erstellt oder Anschaffungs- und Anschaffungsänderungsbuchungen für Anlagen automatisch vorgenommen werden. Eine Einkaufsposition erstellt eine Anlage, unabhängig von der Menge auf der Einkaufsposition. Wenn Sie mehrere Anlagen erstellen müssen, müssen Sie mehrere Einkaufspositionen erstellen.
 
  Für die Integration von Anlagen und Kreditoren stehen die folgenden Methoden zur Verfügung. Dabei muss für alle Anlagen die gleiche Methode verwendet werden:
 -   Sie erstellen manuell eine Anlage, bevor Sie die Anlagennummer der Position in der Bestellung oder Kreditorenrechnung hinzufügen. Beim Buchen der Kreditorenrechnung erfolgt für die Anlage automatisch eine Anschaffungsbuchung. Dies ist die Standardmethode.
@@ -38,7 +38,7 @@ Verwenden Sie eine der ersten beiden Methoden, wenn Sie Anlagen manuell erstelle
 
 Unabhängig davon, ob Sie Anlagen manuell erstellen oder einen flexibleren Ansatz verwenden, muss auch festgelegt werden, ob eine Anschaffungsbuchung nur im Modul "Anlagevermögen" oder beim Buchen einer Kreditorenrechnung ausgeführt werden kann. In manchen Organisationen wird als bevorzugte Vorgehensweise die manuelle Erstellung von Anschaffungen und Anschaffungsbuchungen im Modul "Anlagevermögen" mithilfe manueller Journaleinträge oder Vorschläge verwendet. 
 
-In diesem Thema werden die Details der einzelnen Methoden erläutert.
+In diesem Artikel werden die Details der einzelnen Methoden erläutert.
 
 ## <a name="methods-for-manually-creating-fixed-assets"></a>Methoden zum manuellen Erstellen von Anlagen
 Beim Buchen einer Kreditorenrechnung, deren Positionen eine Anlagennummer enthalten, wenn die Option "Anlagenanschaffung aus Einkauf zulassen" auf der Seite "Anlagenparameter" ausgewählt ist, wird die Anschaffung automatisch gebucht und der Status der Anlage ändert sich in "Offen". 

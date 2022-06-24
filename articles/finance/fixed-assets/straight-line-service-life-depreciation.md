@@ -1,6 +1,6 @@
 ---
-title: Abschreibungsmethode „Lineare Nutzungsdauer“
-description: Dieses Thema gibt eine Übersicht über die Abschreibungsmethode „Lineare Nutzungsdauer“.
+title: Abschreibungsmethode "Lineare Nutzungsdauer"
+description: Dieser Artikel gibt eine Übersicht über die Abschreibungsmethode "Lineare verbleibende Nutzungsdauer".
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d39bfea3f222d83d3b3d47e4ba931521b8e1aed0
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 8766d38958ccb17142132fb78d04368f1b73af71
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726668"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896462"
 ---
-# <a name="straight-line-service-life-depreciation"></a>Abschreibungsmethode „Lineare Nutzungsdauer“
+# <a name="straight-line-service-life-depreciation"></a>Abschreibungsmethode "Lineare Nutzungsdauer"
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema gibt eine Übersicht über die Abschreibungsmethode „Lineare Nutzungsdauer“.
+Dieser Artikel gibt eine Übersicht über die Abschreibungsmethode "Lineare verbleibende Nutzungsdauer".
 
 Wenn Sie ein Abschreibungsprofil für Anlagen erstellen und auf der Seite Abschreibungsprofile im Feld Methode den Eintrag "Lineare Nutzungsdauer" auswählen, werden die Anlagen, denen dieses Abschreibungsprofil zugeordnet ist, auf Basis der gesamten Nutzungsdauer der jeweiligen Anlage abgeschrieben. Hierbei wird im Allgemeinen in jeder Abschreibungsperiode der gleiche Abschreibungsbetrag angewendet. 
 
@@ -41,7 +41,7 @@ Sie können entweder Kalender oder Steuerlich im Feld Abschreibungsjahr auf der 
 
 Bei Auswahl der Option "Kalender" wird von einem Jahr mit Beginn 1. Januar und Ende 31. Dezember ausgegangen. Dies gilt auch, wenn der Steuerkalender anders definiert wurde. 
 
-Mit der Option "Kalender" wird die Abschreibungsbasis – in der Regel der Nettobuchwert abzüglich des Schrottwerts – am 1. Januar jedes Jahres aktualisiert. In den Beispielen weiter unten in diesem Thema ist der Zähler im ersten Ausdruck in Berechnungen in der Spalte "Berechnung" die Abschreibungsbasis. 
+Mit der Option "Kalender" wird die Abschreibungsbasis – in der Regel der Nettobuchwert abzüglich des Schrottwerts – am 1. Januar jedes Jahres aktualisiert. In den Beispielen weiter unten in diesem Artikel ist der Zähler im ersten Ausdruck in Berechnungen in der Spalte „Berechnung“ die Abschreibungsbasis. 
 
 Bei Auswahl der Option Kalender stehen im Feld Periodenhäufigkeit die folgenden Optionen zur Verfügung. Dieses Feld dient zum Definieren der Abgrenzung der Buchungsdaten und Beträge für Abschreibungen im Laufe des Kalenderjahrs:
 - Bei Auswahl von Jährlich wird ein Betrag am 31. Dezember gebucht.

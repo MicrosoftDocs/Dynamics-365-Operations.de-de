@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: efe0ac953e5c1cb04044256e799ecfc07cf3eebe
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: de38bcbfc89479d6b643ca5ee256c38c88fa7f69
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690749"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897892"
 ---
 # <a name="questionnaires"></a>Fragebögen
 
@@ -40,11 +40,11 @@ Sie können einen Fragebogen den spezifischen Anforderungen anpassen, indem Sie 
 
 Die folgende Tabelle enthält Links zu Informationen über die Kernaufgaben von Fragebögen. Klicken Sie für weitere Informationen auf die Links.
 
-| Thema| Description|
+| Artikel | Description|
 |------|------------|
-| [Entwerfen eines Fragebogens](hr-learning-design-questionnaires.md) | Dieses Thema enthält die Verfahrensweise zum Entwerfen von Fragebogenparametern. Der Designprozess umfasst die Einrichtung von Voraussetzungen, Fragen und Antworten und die Kombination dieser Element in einen Fragebogen. |
-| [Fragebögen verteilen und planen](hr-learning-distribute-questionnaires.md) | Dieses Thema bietet Informationen zur Verteilung eines Fragebogens an die Befragungsteilnehmern und zum Abschließen von Fragebögen. |
-| [Betrachten und bewerten Sie die Ergebnisse des Fragebogens](hr-learning-evaluate-questionnaire-results.md) | Dieses Thema enthält Informationen darüber, wie die Ergebnisse ausgefüllter Fragebögen angezeigt und ausgewertet werden. |
+| [Entwerfen eines Fragebogens](hr-learning-design-questionnaires.md) | Dieser Artikel enthält die Verfahrensweise zum Entwerfen von Fragebogenparametern. Der Designprozess umfasst die Einrichtung von Voraussetzungen, Fragen und Antworten und die Kombination dieser Element in einen Fragebogen. |
+| [Verteilen und Planen von Fragebögen](hr-learning-distribute-questionnaires.md) | Dieser Artikel bietet Informationen zur Verteilung eines Fragebogens an die Befragungsteilnehmern und zum Abschließen von Fragebögen. |
+| [Betrachten und bewerten Sie die Ergebnisse des Fragebogens](hr-learning-evaluate-questionnaire-results.md) | Dieser Artikel enthält Informationen darüber, wie die Ergebnisse ausgefüllter Fragebögen angezeigt und ausgewertet werden. |
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

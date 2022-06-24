@@ -1,6 +1,6 @@
 ---
 title: Einbetten von Canvas-Apps aus Power Apps
-description: In diesem Thema wird erläutert, wie Canvas-Apps aus Microsoft Power Apps in den Client eingebettet werden, um die Funktionalität des Produkts zu erhöhen.
+description: In diesem Artikel wird erläutert, wie Canvas-Apps aus Microsoft Power Apps in den Client eingebettet werden, um die Funktionalität des Produkts zu erhöhen.
 author: jasongre
 ms.date: 09/13/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: c2f7b660d364be6e62d484e67908201027190a8a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: fb81aa058e749df346ee87bbe83427b20b234b72
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065100"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898397"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Einbetten von Canvas-Apps aus Power Apps
 
@@ -33,7 +33,7 @@ Um mehr über das Einbetten von Canvas Apps zu erfahren, sehen Sie sich das kurz
 
 ## <a name="adding-an-embedded-canvas-app-from-power-apps-to-a-page"></a>Hinzufügen einer eingebetteten Canvas-App zu einer Seite über Power Apps
 
-Bevor Sie eine Canvas-App aus Power Apps in den Client einbetten, müssen Sie eine App mit den gewünschten Grafiken und/oder Funktionen suchen oder erstellen. Dieses Thema enthält keine detaillierte Beschreibung des Prozesses zum Erstellen von Apps. Wenn Sie noch nie mit Power Apps gearbeitet haben, lesen Sie die [Power Apps-Dokumentation](/powerapps/).
+Bevor Sie eine Canvas-App aus Power Apps in den Client einbetten, müssen Sie eine App mit den gewünschten Grafiken und/oder Funktionen suchen oder erstellen. Dieser Artikel enthält keine detaillierte Beschreibung des Prozesses zum Erstellen von Apps. Wenn Sie noch nie mit Power Apps gearbeitet haben, lesen Sie die [Power Apps-Dokumentation](/powerapps/).
 
 Es gibt drei Möglichkeiten, eine Canvas App in eine Finance und Operations App einzubinden. Sie können den Ansatz verwenden, der am besten zu Ihrem Szenario passt. 
 
@@ -60,7 +60,7 @@ Das folgende Verfahren zeigt, wie Sie eine Canvas App auf einer bestehenden Seit
 
     - Wenn der Zugriff auf die App über die Menüschaltfläche **Power Apps** erfolgt, können Sie die Menüschaltfläche **Power Apps** im Standard-Aktionsbereich wählen und dann **Eine App hinzufügen**.
 
-3. Konfigurieren Sie die eingebettete App. Weitere Informationen finden Sie im Abschnitt [Konfigurieren einer Canvas App](#configuring-a-canvas-app) weiter unten in diesem Thema.
+3. Konfigurieren Sie die eingebettete App. Weitere Informationen finden Sie im Abschnitt [Konfigurieren einer Canvas App](#configuring-a-canvas-app) weiter unten in diesem Artikel.
 4. Nachdem Sie bestätigt haben, dass die Konfiguration korrekt ist, wählen Sie **Einfügen**.
 
     - Wenn die Funktion **Gespeicherte Ansichten** ausgeschaltet ist, werden Sie aufgefordert, den Browser zu aktualisieren, um die eingebettete App zu sehen.
@@ -76,7 +76,7 @@ Sie können eine Canvas App vom Dashboard aus einbetten, wenn die App nicht mit 
 1. Öffnen Sie das Dashboard.
 2. Wählen und halten Sie die Seite (oder klicken Sie mit der rechten Maustaste), wählen Sie **Personalisieren** und wählen Sie dann **Seite hinzufügen**.
 3. Wählen Sie im Bereich **Seite hinzufügen** **Power Apps**.
-4. Konfigurieren Sie die eingebettete App. Weitere Informationen finden Sie im Abschnitt [Konfigurieren einer Canvas App](#configuring-a-canvas-app) weiter unten in diesem Thema.
+4. Konfigurieren Sie die eingebettete App. Weitere Informationen finden Sie im Abschnitt [Konfigurieren einer Canvas App](#configuring-a-canvas-app) weiter unten in diesem Artikel.
 5. Wählen Sie **Speichern**, um die App dem Dashboard als neue Kachel hinzuzufügen.
 6. Wählen Sie die neue Kachel auf dem Dashboard und bestätigen Sie, dass die Canvas App wie erwartet angezeigt wird.
 
@@ -86,7 +86,7 @@ Wenn Sie eine Canvas App einbetten, müssen Sie die folgenden Parameter festlege
 
 - **Name** - Geben Sie den Text ein, der für die Schaltfläche oder die Registerkarte angezeigt werden soll, die die eingebettete App enthalten wird. Oft werden Sie den Namen der App in diesem Feld wiederholen wollen.
 - **App ID** - Geben Sie den global eindeutigen Bezeichner (GUID) für die Canvas App an, die Sie einbetten möchten. Um diesen Wert abzurufen, suchen Sie die App auf [make.powerapps.com](https://make.powerapps.com) und entnehmen Sie den Wert dem Feld **App-ID** unter **Details**.
-- **Eingabekontext für die App** - Sie können optional das Feld auswählen, das die Daten enthält, die Sie als Eingabe an die App übergeben wollen. Informationen darüber, wie die App auf die Daten zugreifen kann, die von Apps für Finanzen und Betrieb gesendet werden, finden Sie im Abschnitt [Erstellung einer App, die von Apps für Finanzen und Betrieb gesendete Daten nutzt](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) weiter unten in diesem Thema.
+- **Eingabekontext für die App** - Sie können optional das Feld auswählen, das die Daten enthält, die Sie als Eingabe an die App übergeben wollen. Informationen darüber, wie die App auf die Daten zugreifen kann, die von Finanz- und Betriebs-Apps gesendet werden, finden Sie im Abschnitt [Erstellung einer App, die von Finanz- und Betriebs-Apps gesendete Daten nutzt](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) weiter unten in diesem Artikel.
 
     Ab Version 10.0.19 wird auch die aktuelle juristische Entität als Kontext an die Canvas App übergeben, und zwar über den URL-Parameter **cmp**. Dieses Verhalten wirkt sich erst auf die Ziel-Canvas-App aus, wenn diese App diese Informationen verwendet.
 
@@ -145,7 +145,7 @@ Gehen Sie folgendermaßen vor, um die Konfiguration von einer eingebetteten App 
 
 Nachdem eine App in eine Seite eingebettet wurde, gibt es ein paar Möglichkeiten, sie bei Bedarf wieder zu entfernen:
 
-- Wechseln Sie zum Bereich **Eine App bearbeiten** mithilfe der Anweisungen vom Bereich [Bearbeiten einer eingebetteten App](#editing-an-embedded-app) oben in diesem Thema. Vergewissern Sie sich, dass der Bereich Informationen für die eingebettete App anzeigt, den Sie entfernen möchten, und klicken Sie dann auf die Schaltfläche **Löschen**.
+- Wechseln Sie zum Bereich **Eine App bearbeiten** mithilfe der Anweisungen im Abschnitt [Bearbeiten einer eingebetteten App](#editing-an-embedded-app) oben in diesem Artikel. Vergewissern Sie sich, dass der Bereich Informationen für die eingebettete App anzeigt, den Sie entfernen möchten, und klicken Sie dann auf die Schaltfläche **Löschen**.
 - Wenn die eingebettete App vom Dashboard aus hinzugefügt wurde, öffnen Sie das Dashboard, wählen und halten Sie (oder klicken Sie mit der rechten Maustaste) die Kachel, die mit der Canvas App verbunden ist, wählen Sie **Personalisieren** und dann **Seite entfernen**. 
 - Da eine eingebettete App als Personalisierungsdaten gespeichert wird, werden durch die Entfernung der Personalisierung der Seite auch alle eingebetteten Apps auf dieser Seite entfernt. Beachten Sie, dass die Löschung der Personalisierung dauerhaft ist und nicht rückgängig gemacht werden kann. Um Ihre Personalisierungen auf einer Seite zu entfernen, wählen Sie **Optionen** aus, und klicken Sie dann auf **Dieses Seite personalisieren** und schließlich auf die Schaltfläche **Löschen**. Nachdem Sie Ihrem Browser aktualisiert haben, werden auch alle vorherigen Personalisierungen für diese Seite entfernt. Unter [Personalisieren der Benutzeroberfläche](personalize-user-experience.md) finden Sie weitere Informationen darüber, wie Sie Seiten mithilfe der Personalisierung optimieren können.
 
@@ -153,7 +153,7 @@ Nachdem eine App in eine Seite eingebettet wurde, gibt es ein paar Möglichkeite
 
 ### <a name="developer-modeling-a-canvas-app-on-a-form"></a>[Entwickler] Modellieren einer Canvas App auf einem Formular
 
-Während sich dieses Thema auf das Einbetten von Canvas Apps durch Personalisierung konzentriert, haben Entwickler auch die Möglichkeit, eine Canvas App zu einem Formular hinzuzufügen, indem sie die Visual Studio Entwicklungserfahrung verwenden. Fügen Sie dazu einfach ein PowerAppsHostControl in das Formular ein. Die für das Steuerelement verfügbaren Metadaten-Eigenschaften bieten die gleichen Funktionalitäten wie die Personalisierung.
+Während sich dieser Artikel auf das Einbetten von Canvas-Apps durch Personalisierung konzentriert, haben Entwickler auch die Möglichkeit, eine Canvas-App zu einem Formular hinzuzufügen, indem sie die Visual Studio-Entwicklungsumgebung verwenden. Fügen Sie dazu einfach ein PowerAppsHostControl in das Formular ein. Die für das Steuerelement verfügbaren Metadaten-Eigenschaften bieten die gleichen Funktionalitäten wie die Personalisierung.
 
 ### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Entwickler] Festlegen, wo eine App eingebettet werden kann
 

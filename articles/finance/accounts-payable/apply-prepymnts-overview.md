@@ -1,6 +1,6 @@
 ---
 title: Vorauszahlung für Kreditorenrechnungen automatisch anwenden
-description: In diesem Thema wird die Möglichkeit beschrieben, Vorauszahlungen automatisch auf Kreditorenrechnungen anzuwenden.
+description: In diesem Artikel wird die Möglichkeit beschrieben, Vorauszahlungen automatisch auf Kreditorenrechnungen anzuwenden.
 author: sunfzam
 ms.date: 10/19/2021
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8583962c41a7ac5e27463f325ddc2ccd367331cc
-ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.openlocfilehash: 547573d187460a900df7f4927ac062bd9d456729
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2022
-ms.locfileid: "8358218"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900070"
 ---
 # <a name="automatically-apply-to-vendor-invoices"></a>Automatisch auf Kreditorenrechnungen anwenden
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird die Möglichkeit beschrieben, Vorauszahlungen automatisch auf Kreditorenrechnungen anzuwenden. Zu einer Bestellung kann im Rahmen eines Kaufvertrages eine Vorauszahlung erstellt werden. Nachdem eine Kreditorenrechnung eingegangen ist, kann die Vorauszahlung verwendet werden, um die Verbindlichkeiten aus der Kreditorenrechnung zu begleichen. Die neue Funktion ermöglicht es dem System, automatisch Bestellnummern auf einer Kreditorenrechnung zu verwenden, um beim Importieren der Kreditorenrechnung entsprechende Vorauszahlungen zu suchen.
+In diesem Artikel wird die Möglichkeit beschrieben, Vorauszahlungen automatisch auf Kreditorenrechnungen anzuwenden. Zu einer Bestellung kann im Rahmen eines Kaufvertrages eine Vorauszahlung erstellt werden. Nachdem eine Kreditorenrechnung eingegangen ist, kann die Vorauszahlung verwendet werden, um die Verbindlichkeiten aus der Kreditorenrechnung zu begleichen. Die neue Funktion ermöglicht es dem System, automatisch Bestellnummern auf einer Kreditorenrechnung zu verwenden, um beim Importieren der Kreditorenrechnung entsprechende Vorauszahlungen zu suchen.
 
 Wenn Vorauszahlungen gefunden werden und angewendet werden können, werden Positionen zu den vorhandenen Rechnungspositionen hinzugefügt, um die Vorauszahlungen zu übernehmen. Die Vorauszahlungszeilen werden beim Rechnungsabgleich nie berücksichtigt.
 

@@ -1,6 +1,6 @@
 ---
-title: Einrichten von Parametern eines EB-Formats pro juristischer Person
-description: In diesem Thema wird erläutert, wie Sie die Parameter eines Elektronische Berichterstellungs(EB)-Formats pro juristischer Entität konfigurieren können.
+title: Parameter eines ER-Formats pro juristischer Person einrichten
+description: In diesem Artikel wird erläutert, wie Sie die Parameter eines Elektronische Berichterstellungs(EB)-Formats pro juristischer Entität konfigurieren können.
 author: NickSelin
 ms.date: 03/25/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: f72ce72e9cbd268efc6ab09dbec7009794d69613
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: dbcf968dde432da182b5bd2d6a7bcb9f83dad6fa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644498"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890211"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Einrichten von Parametern eines EB-Formats pro juristischer Person
 
@@ -30,7 +30,7 @@ ms.locfileid: "8644498"
 
 Um diese Schritte auszuführen, müssen Sie zuerst die Schritte in [Konfigurieren von EB-Formaten zur Verwendung von Parametern, die pro juristischer Person angegeben werden](er-app-specific-parameters-configure-format.md) ausführen.
 
-Um die Beispiele in diesem Thema abzuschließen, müssen Sie für eine der folgenden Rollen Zugriff auf Microsoft Dynamics 365 Finance haben:
+Um die Beispiele in diesem Artikel abzuschließen, müssen Sie für eine der folgenden Rollen Zugriff auf Microsoft Dynamics 365 Finance haben:
 
 - Entwickler für elektronische Berichterstellung
 - Funktionaler Berater für elektronische Berichterstellung
@@ -221,7 +221,7 @@ Die anwendungsspezifischen Parameter eines EB-Formats hängen von der juristisch
 
 Sie können diesen Export/Import-Ansatz auch verwenden, um EB-Format-zugehörige anwendungsspezifische Parameter, die ursprünglich in einer Instanz von Finance konfiguriert wurden, in eine andere Instanz von Finance zu übertragen.
 
-Wenn Sie anwendungsspezifische Parameter für eine Version eines ER-Formats konfigurieren und dann eine spätere Version desselben Formats in die aktuelle Finance-Instanz importieren, werden die vorhandenen anwendungsspezifischen Parameter nicht auf die importierte Version angewendet, es sei denn, Sie verwenden die **Anwendungsspezifische Parameter aus früheren Versionen von ER-Formaten verwenden**-Funktion. Weitere Informationen finden Sie im Abschnitt [Vorhandene Parameter wiederverwenden](#reuse-existing-parameters) weiter unten in diesem Thema.
+Wenn Sie anwendungsspezifische Parameter für eine Version eines ER-Formats konfigurieren und dann eine spätere Version desselben Formats in die aktuelle Finance-Instanz importieren, werden die vorhandenen anwendungsspezifischen Parameter nicht auf die importierte Version angewendet, es sei denn, Sie verwenden die **Anwendungsspezifische Parameter aus früheren Versionen von ER-Formaten verwenden**-Funktion. Weitere Informationen finden Sie im Abschnitt [Vorhandene Parameter wiederverwenden](#reuse-existing-parameters) weiter unten in diesem Artikel.
 
 Wenn Sie eine Datei für den Import auswählen, wird die Struktur der anwendungsspezifischen Parameter in dieser Datei mit der Struktur der entsprechenden Datenquellen des Typs **Suche** im ER-Format verglichen, die für den Import ausgewählt wird. Standardmäßig ist der Import nur abgeschlossen, wenn die Struktur jedes anwendungsspezifischen Parameters mit der Struktur der entsprechenden Datenquelle im ER-Format übereinstimmt, die für den Import ausgewählt ist. Wenn die Strukturen nicht übereinstimmen, informiert Sie eine Warnmeldung, dass der Import nicht abgeschlossen werden kann. Wenn Sie den Import erzwingen, werden die vorhandenen anwendungsspezifischen Parameter für das ausgewählte ER-Format bereinigt, und Sie müssen Sie noch einmal neu einrichten.
 

@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a00e20569f05730296ef611938a94b73ebb7f6f5
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d59b5a2c99813fee2e12e30e8694edf6da7391d9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735317"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909248"
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>Bewerber- und Anwendungsdaten manuell eingeben
 
 > [!NOTE]
-> Die Personalbeschaffungsfunktionen in diesem Thema werden als Personalbeschaffungsprojekte bezeichnet und konzentrieren sich auf Bewerber, Bewerbungen und Personalbeschaffungsprojekte.  
+> Die Personalbeschaffungsfunktionen in diesem Artikel werden als Personalbeschaffungsprojekte bezeichnet und konzentrieren sich auf Bewerber, Bewerbungen und Personalbeschaffungsprojekte.  
 
 
 Im folgenden Verfahren, wird dargestellt, wie Sie Informationen über Bewerber und deren Bewerbung manuell verwalten. Sie können die persönlichen Daten, Befragungsdatumsangaben und -zeiten, Referenzen, Kompetenzen und Anpassungsersuchen für Bewerber eingeben und verwalten. Sie können außerdem den Status der Bewerbungen der Bewerber aktualisieren und auch Briefe oder E-Mail-Nachrichten für die Kommunikation mit Bewerbern erstellen. Wenn Sie einen Bewerberdatensatz erstellen, wird ein Personendatensatz für diesen Bewerber im globalen Adressbuch erstellt. Das Demodatenunternehmen **USMF** wurde verwendet, um diese Prozedur zu erstellen.

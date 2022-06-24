@@ -1,6 +1,6 @@
 ---
 title: Zugriffsrechte für Kostenobjekt-Controller
-description: Dieses Thema bietet Informationen über Zugriffsrechte für Kostenobjekt-Controller.
+description: Dieser Artikel bietet Informationen über Zugriffsrechte für Kostenobjekt-Controller.
 author: AndersGirke
 ms.date: 06/24/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 13d562a4f42644b822c9548d1ea87d44a396b2c2
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: c40be758c5e5d1d1fb025630ed8321ae46251892
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733877"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903188"
 ---
 # <a name="access-rights-for-cost-object-controllers"></a>Zugriffsrechte für Kostenobjekt-Controller
 
@@ -35,10 +35,10 @@ Es gibt vier eindeutige Rollen in der Kostenrechnung.
 |-------------------------|--------------|
 | Kostenrechnungs-Manager | Aktivität     |
 | Kostenbuchhalter         | Operations   |
-| Sachbearbeiter Kostenbuchhaltung   | Operations   |
+| Sachbearbeiter Kostenbuchhaltung   | Abläufe   |
 | Kostenobjekt-Controller  | Teammitglieder |
 
-In diesem Thema wird erläutert, wie einem Manager die Rolle **Kostenobjekt-Controller** zugewiesen wird.
+In diesem Artikel wird erläutert, wie Managern die Rolle **Kostenobjekt-Controller** zugewiesen wird.
 
 Wenn einem Manager die Rolle **Kostenobjekt-Controller** zugewiesen wird, kann der Manager die folgenden Aufgaben ausführen:
 
@@ -95,7 +95,7 @@ Die Einstellungen für die Zugriffslistenhierarchie werden verwendet, um die Dat
 
 > [!IMPORTANT]
 > - Bevor sich die Zugriffslistenhierarchie auf Daten in Power BI auswirken kann, müssen die Zugriffslistenhierarchie und Sicherheit auf Zeilenebene in Power BI zugeordnet werden. Weitere Informationen finden Sie unter [Sicherheit für das Kostenrechnungs-Inhaltspack einrichten](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
-> - In diesem Thema werden die Voraussetzungen behandelt, die erfüllt sein müssen, bevor Sie den Arbeitsbereich **Kostensteuerung** verwenden können.
+> - In diesem Artikel werden die Voraussetzungen behandelt, die erfüllt sein müssen, bevor Sie den Arbeitsbereich **Kostensteuerung** verwenden können.
 
 Zusätzliche Ressourcen
 

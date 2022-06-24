@@ -1,6 +1,6 @@
 ---
 title: Quellensteuererklärung für Ägypten
-description: In diesem Thema wird erläutert, wie Sie die Quellensteuererklärungen für Ägypten konfigurieren und generieren.
+description: In diesem Artikel wird erläutert, wie Sie die Quellensteuererklärungen für Ägypten konfigurieren und generieren.
 author: sndray
 ms.date: 03/08/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8d78af13e0b3879afd0b6dae7b1a9ece651c3fd2
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 505eb8a907ec8cc74b897695ddd90eee3abb0ed6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403890"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907686"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>Quellensteuererklärung für Ägypten (EG-00005)
 
@@ -26,7 +26,7 @@ ms.locfileid: "7403890"
 [!include[banner](../includes/preview-banner.md)]
 
 ## <a name="overview"></a>Übersicht
-In diesem Thema wird erläutert, wie Sie die Quellensteuererklärung und die Quellensteuererklärungsformulare 41 und 11 für juristische Personen in Ägypten einrichten und erstellen. 
+In diesem Artikel wird erläutert, wie Sie die Quellensteuererklärung und die Quellensteuererklärungsformulare 41 und 11 für juristische Personen in Ägypten einrichten und erstellen. 
 
 Alle ägyptischen Unternehmen müssen das Formular 41 erstellen, in dem alle Steuern zusammengefasst sind, die von lokalen Lieferanten und Dienstleistern einbehalten werden. Zusätzlich zu Formular 41 muss Formular 11 erstellt werden, in dem alle von ausländischen Anbietern einbehaltene Steuern aufgeführt sind. 
 
@@ -58,7 +58,7 @@ Weitere Informationen zum Importieren von Konfigurationen für elektronische Ber
 
 Die Implementierung der Quellensteuererklärungsformulare für Ägypten basiert auf Konfigurationen für die elektronische Berichterstattung (ER). Weitere Informationen zu den Funktionen und Konzepten der konfigurierbaren Berichterstellung finden Sie unter [Elektronische Berichterstattung](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
-Befolgen Sie für Produktions- und UAT-Umgebungen (User Acceptance Testing) die Anweisungen im Thema: [Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+Befolgen Sie für Produktions- und UAT-Umgebungen (User Acceptance Testing) die Anweisungen im Artikel: [Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 Um die Quellensteuererklärungen in einer ägyptischen juristischen Person zu generieren, müssen Sie die folgenden Konfigurationen hochladen:
 

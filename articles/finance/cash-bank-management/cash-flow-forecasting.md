@@ -1,6 +1,6 @@
 ---
-title: Cashflowplanung
-description: Dieses Thema bietet einen Überblick über den Cashflow-Planungsprozess. Es wird auch erklärt, wie Cashflow-Planung in andere Module im System integriert wird.
+title: Cashflowprognosen
+description: Dieser Artikel bietet einen Überblick über den Cashflow-Planungsprozess. Es wird auch erklärt, wie Cashflow-Planung in andere Module im System integriert wird.
 author: panolte
 ms.date: 02/16/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4979a57c966f25dba62a944a4e44086e5f6aed28
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: c811afb0129b25a257bdc3519c511d70ecb44714
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712536"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904671"
 ---
 # <a name="cash-flow-forecasting"></a>Cashflowplanung
 
@@ -110,7 +110,7 @@ Weitere Informationen finden Sie unter [Externe Daten in Cashflowplanungen](../.
 
 In Version 10.0.17 ermöglicht eine neue Funktion die Integration in die Projektverwaltung und -verrechnung sowie in die Cashflow-Planung. In dem **Funktionsverwaltung**-Arbeitsbereich schalten Sie die **Cashflow-Projektplanung**-Funktion zur Einbeziehung der prognostizierten Kosten und Einnahmen in die Cashflow-Planung ein. Auf der Registerkarte **Projektverwaltung und -verrechnung** der Seite **Cashflow-Planungssetup** wählen Sie die Projekttypen und Transaktionstypen aus, die in die Cashflow-Planung aufgenommen werden sollen. Wählen Sie dann das Projektplanungsmodell aus. Ein Submodell vom Reduktionstyp funktioniert am besten. Die Liquiditätskonten, die in der Debitorenkonfiguration eingegeben wurden, werden als Standardliquiditätskonten verwendet. Daher müssen Sie beim Einrichten der Cashflow-Planung keine Standard-Liquiditätskonten eingeben. Es kann auch ein Budgetmodell verwendet werden, es kann jedoch nur ein Typ auf der Seite **Cashflow-Planungssetup** für Projektverwaltung und -verrechnung ausgewählt werden. Ein Planungsmodell bietet die größte Flexibilität, wenn Projektverwaltung und -verrechnung oder Project Operations verwendet werden.
 
-Nachdem die Funktion zur Cashflow-Projektplanung aktiviert wurde, kann die Cashflow-Planung für jedes Projekt auf der Seite **Alle Projekte** angezeigt werden. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Plan** in der Gruppe **Planung** die Option **Cashflow-Planung** aus. In den **Bargeldübersicht**-Arbeitsbereichen (siehe den Abschnitt [Berichterstattung](#reporting) weiter unten in diesem Thema) zeigt der Projektplanungs-Transaktionstyp die Zuflüsse (Projektplanungseinnahmen) und die Abflüsse (Projektplanungskosten) an. Die Beträge können nur einbezogen werden, wenn das **Projektphase**-Feld in den **Bargeldübersicht**-Arbeitsbereichen auf **In Bearbeitung** eingestellt ist.
+Nachdem die Funktion zur Cashflow-Projektplanung aktiviert wurde, kann die Cashflow-Planung für jedes Projekt auf der Seite **Alle Projekte** angezeigt werden. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Plan** in der Gruppe **Planung** die Option **Cashflow-Planung** aus. In den **Bargeldübersicht**-Arbeitsbereichen (siehe den Abschnitt [Berichterstattung](#reporting) weiter unten in diesem Artikel) zeigt der Projektplanungs-Transaktionstyp die Zuflüsse (Projektplanungseinnahmen) und die Abflüsse (Projektplanungskosten) an. Die Beträge können nur einbezogen werden, wenn das **Projektphase**-Feld in den **Bargeldübersicht**-Arbeitsbereichen auf **In Bearbeitung** eingestellt ist.
 
 Projekttransaktionen werden weiterhin auf verschiedene Weise in die Cashflow-Planungen einbezogen, unabhängig davon, ob die **Cashflow-Projektplanung**-Funktion aktiviert ist. Gebuchte Projektrechnungen werden in der Planung als Teil der offenen Debitorenbuchungen einbezogen. Durch das Projekt initiierte Aufträge und Bestellungen sind bei der Kapazitätsplanung für offene Aufträge enthalten, nachdem diese in das System eingegeben wurden. Projektplanung kann auch in ein Sachkontobudgetmodell übertragen werden. Dieses Sachkontobudgetmodell ist dann in der Cashflow-Planung als Teil der Budgetregistereinträge enthalten. Wenn Sie die Funktion **Cashflow-Projektplanung** eingeschaltet haben, übertragen Sie keine Projektplanungen in ein Sachkontobudgetmodell, da diese Aktion dazu führt, dass die Projektplanungen zweimal gezählt werden.
 
