@@ -1,6 +1,6 @@
 ---
 title: Anwendungsorchestrierungslösungen für duales Schreiben deinstallieren
-description: In diesem Thema wird beschrieben, wie Sie Anwendungsorchestrierungslösungen für duales Schreiben deinstallieren.
+description: In diesem Artikel wird beschrieben, wie Sie Anwendungsorchestrierungslösungen für duales Schreiben deinstallieren.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2022-01-21
-ms.openlocfilehash: 781b2cb19a563d5712fa65718c93bfdc242f0c4a
-ms.sourcegitcommit: abfaef124c8747827d6f297821f01f1f6fbca6b7
+ms.openlocfilehash: 676802ddabac69db4947cf806e9103f67cece3de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "8455322"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870373"
 ---
 # <a name="uninstall-dual-write-application-orchestration-solutions"></a>Anwendungsorchestrierungslösungen für duales Schreiben deinstallieren
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Anwendungsorchestrierungslösungen für duales Schreiben deinstallieren.
+In diesem Artikel wird beschrieben, wie Sie Anwendungsorchestrierungslösungen für duales Schreiben deinstallieren.
 
 Einige Kunden installieren unbeabsichtigt das Anwendungsorchestrierungspaket für duales Schreiben, das mehrere Lösungen in ihrer Microsoft Dataverse-Umgebung installiert. Die Installation der fremden Lösungen im Paket kann unerwartete und unerwünschte Probleme verursachen.
 

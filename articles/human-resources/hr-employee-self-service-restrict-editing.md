@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 98cb7c2f1f57dacf303e2e9bc7779ce3ede6733e
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c82114f6600345ee5e2eb9c1c0629ae6c8f0b9a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695871"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877684"
 ---
 # <a name="restrict-editing-of-personal-information"></a>Bearbeiten von persönlichen Informationen einschränken
 
@@ -29,7 +29,7 @@ ms.locfileid: "8695871"
 [!include [applies to](../includes/applies-to-hr.md)]
 [!include [preview feature](./includes/preview-feature.md)]
 
-Dieses Thema beschreibt, wie Sie Mitarbeiter an der Bearbeitung von Kontaktdaten in Dynamics 365 Human Resources hindern können. Möglicherweise möchten Sie verhindern, dass Mitarbeiter bestimmte Kontaktdetails bearbeiten, z. B. ihren Lagerplatz oder ihre E-Mail-Adresse.
+Dieser Artikel beschreibt, wie Sie Mitarbeiter an der Bearbeitung von Kontaktdaten in Dynamics 365 Human Resources hindern können. Möglicherweise möchten Sie verhindern, dass Mitarbeiter bestimmte Kontaktdetails bearbeiten, z. B. ihren Lagerplatz oder ihre E-Mail-Adresse.
 
 > [!NOTE]
 > Um diese Funktion zu nutzen, müssen Sie zuerst **(Vorschau) Mitarbeiter vom Hinzufügen oder Bearbeiten von Adress- und Kontaktinformationen für ausgewählte Zwecke einschränken** in der Funktionsverwaltung aktivieren. Weitere Informationen zur Aktivierung der Vorschaufunktionen finden Sie unter [Funktonen verwalten](hr-admin-manage-features.md).<br><br>![Vorschaufunktion aktivieren.](./media/hr-employee-self-service-restrict-enable.png)

@@ -1,6 +1,6 @@
 ---
 title: EB-Ausdrücke entwerfen, um Anwendungsklassenmethoden aufzurufen
-description: Dieses Thema enthält Informationen darüber, wie die vorhandene Anwendungslogik in Konfigurationen der elektronischen Berichterstellung (EB) erneut verwendet wird, indem erforderliche Methoden von Anwendungsklassen aufgerufen werden.
+description: Dieser Artikel enthält Informationen darüber, wie die vorhandene Anwendungslogik in Konfigurationen der elektronischen Berichterstellung (EB) erneut verwendet wird, indem erforderliche Methoden von Anwendungsklassen aufgerufen werden.
 author: NickSelin
 ms.date: 11/02/2021
 ms.topic: business-process
@@ -12,30 +12,30 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 81fae8d3603677afd7dd4b09b9073805f73582b4
-ms.sourcegitcommit: e6b4844a71fbb9faa826852196197c65c5a0396f
+ms.openlocfilehash: 0fb0a9725d882fdc330d7adbb49bd3dcadf7805f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7751705"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883624"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>EB-Ausdrücke entwerfen, um Anwendungsklassenmethoden aufzurufen
 
 [!include [banner](../../includes/banner.md)]
 
-Dieses Thema beschreibt, wie die vorhandene Anwendungslogik in Konfigurationen der [Elektronischen Berichterstellung (EB)](../general-electronic-reporting.md) erneut verwendet wird, indem erforderliche Methoden von Anwendungsklassen in EB-Ausdrücken aufgerufen werden. Werte von Argumenten zum Aufrufen von Klassen können zur Runtime dynamisch definiert werden. Werte können beispielsweise auf Informationen im Analysedokument basieren, um deren Korrektheit sicherzustellen.
+Dieser Artikel beschreibt, wie die vorhandene Anwendungslogik in Konfigurationen der [Elektronischen Berichterstellung (EB)](../general-electronic-reporting.md) erneut verwendet wird, indem erforderliche Methoden von Anwendungsklassen in EB-Ausdrücken aufgerufen werden. Werte von Argumenten zum Aufrufen von Klassen können zur Runtime dynamisch definiert werden. Werte können beispielsweise auf Informationen im Analysedokument basieren, um deren Korrektheit sicherzustellen.
 
-In dem Beispiel in diesem Thema entwerfen Sie einen Prozess, der eingehender Bankauszüge für eine Anwendungsdatenaktualisierung analysiert. Sie erhalten die eingehenden Bankauszüge als Textdateien (.txt), die die Codes der internationalen Bankkontonummer (IBAN) enthalten. Als Teil des Importprozesses für Bankauszüge müssen Sie die Korrektheit des IBAN-Codes mithilfe der Logik überprüfen, die bereits verfügbar ist.
+In dem Beispiel in diesem Artikel entwerfen Sie einen Prozess, der eingehender Bankauszüge für eine Anwendungsdatenaktualisierung analysiert. Sie erhalten die eingehenden Bankauszüge als Textdateien (.txt), die die Codes der internationalen Bankkontonummer (IBAN) enthalten. Als Teil des Importprozesses für Bankauszüge müssen Sie die Korrektheit des IBAN-Codes mithilfe der Logik überprüfen, die bereits verfügbar ist.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Die Prozeduren in diesem Thema sind für die Benutzer bestimmt, die die Rolle des **Systemadministrators** oder des **Entwicklers für elektronische Berichterstellung** haben.
+Die Prozeduren in diesem Artikel sind für die Benutzer bestimmt, die die Rolle des **Systemadministrators** oder des **Entwicklers für elektronische Berichterstellung** innehaben.
 
 Die Prozeduren können abgeschlossen werden, indem Sie einen beliebigen Dataset verwenden.
 
 Um sie abzuschließen, müssen Sie auch folgende Datei herunterladen: [SampleIncomingMessage.txt](https://download.microsoft.com/download/8/0/a/80adbc89-f23c-46d9-9241-e0f19125c04b/SampleIncomingMessage.txt).
 
-In diesem Thema erstellen Sie die erforderlichen EB-Konfigurationen für das Beispielunternehmen Litware, Inc. Bevor Sie daher die Prozeduren in diesem Thema abschließen können, müssen sie die folgenden Schritte abschließen.
+In diesem Artikel erstellen Sie die erforderlichen EB-Konfigurationen für das Beispielunternehmen Litware, Inc. Bevor Sie daher die Prozeduren in diesem Artikel abschließen können, müssen Sie die folgenden Schritte abschließen.
 
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
 2. Überprüfen Sie auf der Seite **Lokalisierungskonfigurationen**, dass der Konfigurationsanbieter für das Beispielunternehmen **Litware, Inc.** verfügbar und als „aktiv“ gekennzeichnet ist. Sollten Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in [Erstellen von Konfigurationsanbietern und Markieren als aktiv](er-configuration-provider-mark-it-active-2016-11.md) bearbeiten.

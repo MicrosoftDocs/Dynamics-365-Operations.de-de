@@ -1,6 +1,6 @@
 ---
-title: Erste Schritte mit der Steuerberechnung
-description: In diesem Thema wird erläutert, wie Steuerberechnungen eingerichtet werden.
+title: Erste Schritte bei der Steuerberechnung
+description: In diesem Artikel wird erläutert, wie Steuerberechnungen eingerichtet werden.
 author: wangchen
 ms.date: 03/25/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0ab9c0cf974114c4fa9b673e5601e138acef534d
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c2293102057ac055f0958c1c6b1de2a19cb331d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685910"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855282"
 ---
-# <a name="get-started-with-tax-calculation"></a>Erste Schritte mit der Steuerberechnung
+# <a name="get-started-with-tax-calculation"></a>Erste Schritte bei der Steuerberechnung
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Informationen zu den ersten Schritten mit der Steuerberechnung. Zunächst werden Sie in diesem Thema durch die allgemeinen Konfigurationsschritte in Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS) und Dynamics 365 Finance sowie Dynamics 365 Supply Chain Management geführt. 
+Dieser Artikel enthält Informationen zu den ersten Schritten mit der Steuerberechnung. Zunächst werden Sie in diesem Artikel durch die allgemeinen Konfigurationsschritte in Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS) und Dynamics 365 Finance sowie Dynamics 365 Supply Chain Management geführt. 
 
 Die Einrichtung besteht aus drei Hauptschritten.
 
@@ -77,11 +77,11 @@ Nachdem Sie diese Schritte ausgeführt haben, werden die folgenden Setups automa
 - Mehrwertsteuergruppen
 - Artikel-Mehrwertsteuergruppen
 
-Die verbleibenden Themen enthalten zusätzliche Details zu den Konfigurationsschritten.
+Die verbleibenden Artikel enthalten zusätzliche Details zu den Konfigurationsschritten.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Bevor Sie die verbleibenden Vorgehensweisen in diesem Thema abschließen können, müssen die folgenden Voraussetzungen erfüllt sein:<!--TO HERE-->
+Bevor Sie die verbleibenden Vorgehensweisen in diesem Artikel abschließen können, müssen die folgenden Voraussetzungen erfüllt sein:<!--TO HERE-->
 
 - Sie müssen Zugriff auf Ihr LCS-Konto haben, und Sie müssen ein LCS-Projekt bereitstellen, das über eine Umgebung der Stufe 2 oder höher verfügt, die Dynamics 365 Version 10.0.21 oder höher ausführt.
 - Sie müssen eine RCS-Umgebung für Ihre Organisation erstellen und Sie müssen Zugriff auf Ihr Konto haben. Weitere Informationen über das Erstellen einer RCS-Umgebung finden Sie unter [Regulatory Configuration Service Übersicht](rcs-overview.md).
@@ -95,7 +95,7 @@ Bevor Sie die verbleibenden Vorgehensweisen in diesem Thema abschließen können
 
     - Globalisierungsfunktionen
 
-- Die folgenden Rollen sollten den Benutzer\*innen in Ihrer RCS-Umgebung entsprechend zugewiesen werden:
+- Die folgenden Rollen sollten den Benutzern in Ihrer RCS-Umgebung entsprechend zugewiesen werden:
 
     - Entwickler für elektronische Berichterstellung
     - Entwickler der Globalisierungsfunktion
@@ -212,7 +212,7 @@ Die Schritte in diesem Abschnitt beziehen sich nicht auf eine bestimmte juristis
     | Vertrieb            | BEL       | FRA     | BEL_EU       |
     
     > [!NOTE]
-    > Wenn die Standard-Mehrwertsteuergruppe in Ihren steuerpflichtigen Belegzeilen korrekt ist, lassen Sie diese Matrix leer. Weitere Informationen finden Sie im Abschnitt [Design zur Laufzeit](#runtime) in diesem Thema.
+    > Wenn die Standard-Mehrwertsteuergruppe in Ihren steuerpflichtigen Belegzeilen korrekt ist, lassen Sie diese Matrix leer. Weitere Informationen finden Sie im Abschnitt [Design zur Laufzeit](#runtime) in diesem Artikel.
 
 22. Wählen Sie auf der Registerkarte **Anwendbarkeit des Steuerkennzeichens** die Spalten aus, die zur Bestimmung des richtigen Steuerkennzeichens erforderlich sind, und wählen Sie dann **Hinzufügen**. Geben Sie Werte für jede Spalte ein oder wählen Sie sie aus. Das Feld **Element Steuerkennzeichen** wird die Ausgabe dieser Matrix sein. Wenn diese Registerkarte nicht konfiguriert ist, wird die Mehrwertsteuergruppe des Elements in der Zeile der Transaktion verwendet.
 
@@ -224,7 +224,7 @@ Die Schritte in diesem Abschnitt beziehen sich nicht auf eine bestimmte juristis
     | D0003     | Reduziert        |
 
     > [!NOTE]
-    > Wenn die standardmäßige Artikel-Mehrwertsteuergruppe in Ihren steuerpflichtigen Belegzeilen korrekt ist, lassen Sie diese Matrix leer. Weitere Informationen finden Sie im Abschnitt [Design zur Laufzeit](#runtime) in diesem Thema.
+    > Wenn die standardmäßige Artikel-Mehrwertsteuergruppe in Ihren steuerpflichtigen Belegzeilen korrekt ist, lassen Sie diese Matrix leer. Weitere Informationen finden Sie im Abschnitt [Design zur Laufzeit](#runtime) in diesem Artikel.
 
     Weitere Informationen darüber, wie Steuerkennzeichen in der Steuerberechnung ermittelt werden, finden Sie unter [Ermittlungslogik für Mehrwertsteuergruppen und Artikelsteuerkennzeichen](global-sales-tax-group-determination.md).
 
@@ -243,7 +243,7 @@ Die Einrichtung in diesem Abschnitt erfolgt nach juristischer Person. Sie müsse
 2. Legen Sie auf der Registerkarte **Allgemein** die folgenden Felder fest:
 
     - **Steuerberechnungsdienst aktivieren** - Aktivieren Sie dieses Kontrollkästchen, um die Steuerberechnung für die juristische Entität zu aktivieren. Wenn es für die aktuelle juristische Person nicht aktiviert ist, verwendet die juristische Person weiterhin das vorhandene Steuermodul, um die Steuer zu ermitteln und zu berechnen.
-    - **Funktionseinrichtung** – Wählen Sie eine veröffentlichte Steuerfunktionseinrichtung und Version für die juristische Person aus. Weitere Informationen zum Einrichten und Vervollständigen einer veröffentlichten Steuerfunktion finden Sie im vorherigen Abschnitt dieses Themas.
+    - **Funktionseinrichtung** – Wählen Sie eine veröffentlichte Steuerfunktionseinrichtung und Version für die juristische Person aus. Weitere Informationen zum Einrichten und Vervollständigen einer veröffentlichten Steuerfunktion finden Sie im vorherigen Abschnitt dieses Artikels.
     - **Geschäftsprozess** – Wählen Sie die zu aktivierenden Geschäftsprozesse aus.
 
 3. Definieren Sie auf der Registerkarte **Berechnung** die erwartete Rundungsregel für die juristische Person. Weitere Informationen über die Rundungslogik finden Sie unter [Steuerberechnungs-Rundungsregeln](https://go.microsoft.com/fwlink/?linkid=2166988).

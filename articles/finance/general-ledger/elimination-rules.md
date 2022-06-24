@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e062e7541871d77803cbed475d715621b19537f1
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 3eb3ea117959dbc51eb5666aad60299210ff3ac5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722632"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864309"
 ---
 # <a name="elimination-rules"></a>Löschungsregeln
 
@@ -34,7 +34,7 @@ Löschungsbuchungen sind erforderlich, wenn eine übergeordnete juristische Pers
 -   Finanzberichterstellung kann verwendet werden, um die Beseitigungskonten und Dimensionen auf einer bestimmten Zeile oder einer Spalte anzuzeigen.
 -   Eine separate juristische Person kann verwendet werden, um manuell Buchungseinträge zu buchen, um Löschungen zu verfolgen.
 
-Dieses Thema befasst sich mit Löschungsregeln, die in einem Konsolidierungs- oder Unternehmen mit Löschungseinträgen verarbeitet werden. Sie können Löschungsregeln einrichten, um Löschungsbuchungen in einer juristischen Person zu erstellen, die als Ziel für Löschungen angegeben ist. Diese als Ziel angegebene juristische Person wird als juristische Person für Löschungen bezeichnet. Löschungserfassungen können entweder im Zuge des Konsolidierungsprozesses oder unter Verwendung eines Löschungserfassungsvorschlags generiert werden. Vor dem Einrichten von Löschungsregeln sollten Sie sich mit den folgenden Begriffen vertraut machen:
+Dieser Artikel befasst sich mit Löschungsregeln, die in einem Konsolidierungsunternehmen oder in einem Unternehmen mit Löschungseinträgen verarbeitet werden. Sie können Löschungsregeln einrichten, um Löschungsbuchungen in einer juristischen Person zu erstellen, die als Ziel für Löschungen angegeben ist. Diese als Ziel angegebene juristische Person wird als juristische Person für Löschungen bezeichnet. Löschungserfassungen können entweder im Zuge des Konsolidierungsprozesses oder unter Verwendung eines Löschungserfassungsvorschlags generiert werden. Vor dem Einrichten von Löschungsregeln sollten Sie sich mit den folgenden Begriffen vertraut machen:
 
 -   **Juristische Person der Quelle** – Die juristische Person, in der die gelöschten Beträge gebucht wurden.
 -   **Juristische Person des Ziels** – Die juristische Person, in der die Löschungsregeln gebucht werden.

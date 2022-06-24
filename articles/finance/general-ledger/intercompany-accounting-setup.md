@@ -1,6 +1,6 @@
 ---
-title: Einrichten der Intercompany-Verrechnung
-description: In diesem Thema wird erläutert, wie die Intercompany-Verrechnung eingerichtet wird, sodass Sie Intercompany-Erfassungen für Sachkonto-Zuweisungen Finanzerfassung, z. B. Tageserfassungen, Kreditorenrechnungserfassungen und Zahlungserfassungen, verwenden können.
+title: Intercompany-Buchhaltung einrichten
+description: In diesem Artikel wird erläutert, wie die Intercompany-Verrechnung eingerichtet wird, sodass Sie Intercompany-Erfassungen für Sachkonto-Zuweisungen Finanzerfassung, z. B. Tageserfassungen, Kreditorenrechnungserfassungen und Zahlungserfassungen, verwenden können.
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c9914d9fff3407d8d469fe2ed27a9bfd6b26a50
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 309c121c1ef4b3814d676cad6f3c2b6826b59843
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720364"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871216"
 ---
-# <a name="intercompany-accounting-setup"></a>Einrichten der Intercompany-Verrechnung
+# <a name="intercompany-accounting-setup"></a>Intercompany-Buchhaltung einrichten
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie die Intercompany-Verrechnung eingerichtet wird, sodass Sie Intercompany-Erfassungen für Sachkonto-Zuweisungen Finanzerfassung, z. B. Tageserfassungen, Kreditorenrechnungserfassungen und Zahlungserfassungen, verwenden können.
+In diesem Artikel wird erläutert, wie die Intercompany-Verrechnung eingerichtet wird, sodass Sie Intercompany-Erfassungen für Sachkonto-Zuweisungen Finanzerfassung, z. B. Tageserfassungen, Kreditorenrechnungserfassungen und Zahlungserfassungen, verwenden können.
 
 Intercompany-Erfassungen können in unterschiedlichen Szenarien erstellt werden, z. B. für Tageserfassungen, Sachkontozuteilungen und zentralisierte Zahlungen. Um diese Szenarien zu ermöglichen, müssen Sie die Verrechnung einrichten.
 

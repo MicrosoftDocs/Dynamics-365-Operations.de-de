@@ -1,6 +1,6 @@
 ---
 title: Integriertes Sachkonto
-description: In diesem Thema wird die Integration von Sachkontodaten zwischen Finance and Operations und anderen Dynamics 365-Anwendungen mithilfe von Dataverse beschrieben.
+description: In diesem Artikel wird die Integration von Sachkontodaten zwischen Finance + Operations und anderen Dynamics 365-Anwendungen mithilfe von Dataverse beschrieben.
 author: tonyafehr
 ms.date: 09/06/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: tfehr
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 0deb4198acb59b90bf06e4050889d028df2223e3
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: e83d66f3f8c8927b9baaf99838a4e242e7e011dc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063646"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847188"
 ---
 # <a name="integrated-ledger"></a>Integriertes Sachkonto
 
@@ -22,13 +22,13 @@ ms.locfileid: "8063646"
 
 
 
-In einer Geschäftsanwendung definieren Sachkontodaten den Kern der Geschäftsabläufe eines Unternehmens. Sachkontodaten beschreiben beispielsweise das Geschäftsjahr, in dem das Unternehmen tätig ist, die Währungen, in denen es handelt, und die Konten, die es verwendet. In diesem Thema wird die Integration dieser Finanzkennzahlen beschrieben.
+In einer Geschäftsanwendung definieren Sachkontodaten den Kern der Geschäftsabläufe eines Unternehmens. Sachkontodaten beschreiben beispielsweise das Geschäftsjahr, in dem das Unternehmen tätig ist, die Währungen, in denen es handelt, und die Konten, die es verwendet. In diesem Artikel wird die Integration dieser Finanzkennzahlen beschrieben.
 
 ## <a name="templates"></a>Vorlagen
 
 Sachkontodaten enthalten eine Sammlung von wichtigen Tabellenzuordnungen, die während der Dateninteraktion zusammenarbeiten, wie in der folgenden Tabelle dargestellt.
 
-Finance and Operations-Apps | Customer Engagement-Apps     | Beschreibung
+Finanz- und Betriebs-Apps | Customer Engagement-Apps     | Beschreibung
 ---------------------------------|----------------------------------|------------
 [CDS-Wechselkurse](mapping-reference.md#123) | msdyn_currencyexchangerates |
 [Kontenplan](mapping-reference.md#121) | msdyn_chartofaccountses |

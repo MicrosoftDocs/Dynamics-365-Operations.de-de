@@ -1,6 +1,6 @@
 ---
-title: Degressive Abschreibung reduzieren
-description: Dieses Thema gibt eine Übersicht die Reduktionssaldomethode der Abschreibung.
+title: Degressive Abschreibung
+description: Dieser Artikel gibt eine Übersicht die Reduktionssaldomethode der Abschreibung.
 author: moaamer
 ms.date: 04/25/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a81a8f926c30ac26d10c8763f43f39504249616f
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 52bf9d4e9cbc9cabda5d5ab17c1a00ecea0d0348
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725316"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883270"
 ---
-# <a name="reduce-balance-depreciation"></a>Degressive Abschreibung reduzieren
+# <a name="reduce-balance-depreciation"></a>Degressive Abschreibung
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema gibt eine Übersicht die Reduktionssaldomethode der Abschreibung.
+Dieser Artikel gibt eine Übersicht die Reduktionssaldomethode der Abschreibung.
 
 Wenn Sie ein Anlagenabschreibungsprofil einrichten und „Degressiv“ im Feld **Methode** auf der Seite **Abschreibungsprofile** auswählen, werden die Anlagen, denen dieses Abschreibungsprofil zugeordnet ist, in jedem Abschreibungszeitraum um den gleichen Prozentsatz abgeschrieben.
 
@@ -41,7 +41,7 @@ Sie können entweder **Kalender** oder **Steuerlich** im Feld **Abschreibungsjah
 
 ### <a name="calendar"></a>Kalender
 
-Mit der Option **Kalender** wird die Abschreibungsbasis – in der Regel der Nettobuchwert abzüglich des Schrottwerts – am 1. Januar jedes Jahres aktualisiert. Im Beispiel für degressive Abschreibung später in diesem Thema handelt es sich bei der Abschreibungsbasis um den Zähler im ersten Ausdruck in der Spalte "Berechnung". 
+Mit der Option **Kalender** wird die Abschreibungsbasis – in der Regel der Nettobuchwert abzüglich des Schrottwerts – am 1. Januar jedes Jahres aktualisiert. Im Beispiel für degressive Abschreibung später in diesem Artikel handelt es sich bei der Abschreibungsbasis um den Zähler im ersten Ausdruck in der Spalte „Berechnung“. 
 
 Bei Auswahl der Option **Kalender** stehen im Feld **Periodenhäufigkeit** die folgenden Optionen zur Verfügung. Dieses Feld dient zum Definieren der Abgrenzung der Buchungsdaten und Beträge für Abschreibungen im Laufe des Kalenderjahrs:
 

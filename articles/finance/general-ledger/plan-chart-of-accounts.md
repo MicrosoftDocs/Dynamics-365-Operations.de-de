@@ -1,6 +1,6 @@
 ---
 title: Kontenplan planen
-description: Dieses Themen bietet Informationen, die Ihnen helfen, Kontenpläne für Ihre Organisation zu planen.
+description: Dieser Artikel enthält Informationen, die Ihnen helfen, Kontenpläne für Ihre Organisation zu planen.
 author: aprilolson
 ms.date: 04/02/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0734276a736cfdb91ec3a129c83dae1c0a6d3955
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 6e797117199ff57cb4d3beae187ae7649579d33b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722463"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853347"
 ---
-# <a name="plan-your-chart-of-accounts"></a>Ihren Kontenplan planen
+# <a name="plan-your-chart-of-accounts"></a>Kontenplan planen
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Themen bietet Informationen, die Ihnen helfen, Kontenpläne für Ihre Organisation zu planen.
+Dieser Artikel enthält Informationen, die Ihnen helfen, Kontenpläne für Ihre Organisation zu planen.
 
 Um Finanzdaten in einer Organisation zu verfolgen und zu verwalten, können Sie einen Kontenplan einrichten. Ein Kontenplan ist eine Reihe von Konten, die ein finanziellen Rahmen definieren. Um Buchungen in diesen Konten noch weiter nachzuverfolgen, können Sie Segmente hinzufügen. Diese Segmente sind als Finanzdimensionen bekannt. Beispielsweise kann ein Ausgabenkonto Finanzdimensionen mit der Bezeichnung "Abteilung", "Kostenstelle" und "Kostenträger" enthalten. Benutzerdefinierte Regeln bestimmen, wie Finanzdimensionen an die Hauptkonten und andere Finanzdimensionen angefügt werden und auch wie Buchungen eingegeben werden. Diese benutzerdefinierten Regeln sind als Kontostrukturen und erweiterte Regeln bekannt.
 

@@ -1,6 +1,6 @@
 ---
 title: Datenmodell zur Steuerberechnung
-description: Dieses Thema enthält Informationen zum Steuerdatenmodell und wie die Feldwerte jedes Datenmodells durch den Kontext von Steuerberechnungstransaktionen bestimmt werden.
+description: Dieser Artikel enthält Informationen zum Steuerdatenmodell und dazu, wie die Feldwerte jedes Datenmodells durch den Kontext von Steuerberechnungstransaktionen bestimmt werden.
 author: kailiang
 ms.date: 10/15/2021
 ms.topic: overview
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 759803767111c27cba76b68430e09a0d9dd6110f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: a711eb73c171cd099947b44e2376cad2455059f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694255"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859694"
 ---
 # <a name="tax-calculation-data-model"></a>Datenmodell zur Steuerberechnung
 
-Dieses Thema enthält Informationen zum Steuerdatenmodell und wie die Feldwerte jedes Steuerdatenmodells durch den Kontext von Steuerberechnungstransaktionen bestimmt werden.
+Dieser Artikel enthält Informationen zum Steuerdatenmodell und dazu, wie die Feldwerte jedes Steuerdatenmodells durch den Kontext von Steuerberechnungstransaktionen bestimmt werden.
 
 Das *Steuerdatenmodell* besteht aus Feldern, die für die Steuerberechnung erforderlich sind. Microsoft bietet das *Steuerberechnungsdatenmodell*, das die Kopffelder und Zeilenfelder von Transaktionsbelegen in Apps für Finanzen und Betrieb enthält. Die im Steuerberechnungsdatenmodell definierten Felder sind die verfügbaren Spalten der Anwendbarkeitsregeltabellen in der Konfiguration der Steuerberechnungsfunktionskonfiguration.
 
@@ -99,7 +99,7 @@ Zweiunddreißig Datenmodelle können als Felder im Kopf einer Transaktion eingef
 | Versand an Provinz/Staat          | <ul><li>**Auftrag**<ol><li>Header&gt; Lieferadresse &gt; Staat</li></ol></li><li>**Bestellung:**<ol><li>Header&gt; Lieferadresse &gt; Staat</li></ol></li><li>**Umlagerungsauftrag – Versand:**<ol><li>Header &gt; an Lagerort &gt; Hauptadresse &gt; Staat</li><li>Header &gt; An Standort &gt; Hauptadresse &gt; Staat</li></ol></li><li>**Umlagerungsauftrag – Empfang:**<ol><li>Header &gt; an Lagerort &gt; Hauptadresse &gt; Staat</li><li>Header &gt; An Standort &gt; Hauptadresse &gt; Staat</li></ol></li><li>**Angebotsanforderung:**<ol><li>Header&gt; Lieferadresse &gt; Staat</li></ol></li><li>**Verkaufsangebot:**<ol><li>Header&gt; Lieferadresse &gt; Staat</li></ol></li><li>**Freitextrechnung:**<ol><li>Header &gt; Kundenkonto &gt; Standard-Lieferadresse &gt; Staat</li><li>Header &gt; Kundenkonto &gt; Primäre-Rechnungsadresse &gt; Staat</li></ol></li><li>**Erfassung (Debitor):**<ol><li>Debitorenkonto &gt; Standard-Lieferadresse &gt; Staat</li><li>Debitorenkonto &gt; Primäre Adresse &gt; Staat</li></ol></li><li>**Erfassung (Kreditor):**<ol><li>Juristische Person &gt; Standard-Lieferadresse &gt; Staat</li><li>Juristische Person &gt; Hauptadresse &gt; Staat</li></ol></li></ul> |
 | Versand an Postleitzahl                 | <ul><li>**Auftrag**<ol><li>Header &gt; Lieferadresse &gt; PLZ/Postleitzahl</li></ol></li><li>**Bestellung:**<ol><li>Header &gt; Lieferadresse &gt; PLZ/Postleitzahl</li></ol></li><li>**Umlagerungsauftrag – Versand:**<ol><li>Header &gt; An Lagerort &gt; Hauptadresse &gt; PLZ/Postleitzahl</li><li>Header &gt; An Site &gt; Hauptadresse &gt; PLZ/Postleitzahl</li></ol></li><li>**Umlagerungsauftrag – Empfang:**<ol><li>Header &gt; An Lagerort &gt; Hauptadresse &gt; PLZ/Postleitzahl</li><li>Header &gt; An Site &gt; Hauptadresse &gt; PLZ/Postleitzahl</li></ol></li><li>**Angebotsanforderung:**<ol><li>Header &gt; Lieferadresse &gt; PLZ/Postleitzahl</li></ol></li><li>**Verkaufsangebot:**<ol><li>Header &gt; Lieferadresse &gt; PLZ/Postleitzahl</li></ol></li><li>**Freitextrechnung:**<ol><li>Header &gt; Kundenkonto &gt; Standard-Lieferadresse &gt; PLZ/Postleitzahl</li><li>Header &gt; Kundenkonto &gt; Primäre-Rechnungsadresse &gt; PLZ/Postleitzahl</li></ol></li><li>**Erfassung (Debitor):**<ol><li>Debitorenkonto &gt; Standard-Lieferadresse &gt; PLZ/Postleitzahl</li><li>Debitorenkonto &gt; Primäre Adresse &gt; PLZ/Postleitzahl</li></ol></li><li>**Erfassung (Kreditor):**<ol><li>Juristische Person &gt; Standard-Lieferadresse &gt; PLZ/Postleitzahl</li><li>Juristische Person &gt; Primäre Rechnungsadresse &gt; PLZ/Postleitzahl</li></ol></li></ul> |
 | Site                             | <ul><li>**Auftrag:** Site</li><li>**Bestellung:** Site</li><li>**Umlagerungsaufträge - Versand:** Site vom Lagerort</li><li>**Umlagerungsaufträge - Empfang** Site an den Lagerort</li><li>**Angebotsanforderung:** Site</li><li>**Verkaufsangebot:** Site</li></ul> |
-| Steuerart                    | <ul><li>**Auftrag:** Ausgabe</li><li>**Bestellung:** Eingabe</li><li>**Auftrag übertragen - Versand:** Ausgabe</li><li>**Umlagerungsauftrag – Empfang:** Eingabe</li><li>**Bestellanforderungen:** Eingabe</li><li>**Angebotsanforderung:** Eingabe</li><li>**Verkaufsangebot:** Ausgabe</li><li>**Freitextrechnung:** Output</li></ul> |
+| Steuerart                    | <ul><li>**Auftrag:** Ausgabe</li><li>**Bestellung:** Eingabe</li><li>**Auftrag übertragen - Versand:** Ausgabe</li><li>**Umlagerungsauftrag – Empfang:** Eingabe</li><li>**Bestellanforderungen:** Eingabe</li><li>**Angebotsanforderung:** Eingabe</li><li>**Verkaufsangebot:** Ausgabe</li><li>**Freitextrechnung:** Output</li><li>**Erfassung:** Ausgabe</li></ul> |
 | Kreditorenkonto                   | <ul><li>**Bestellung:** Kreditorenkonto</li><li>**Erfassung (Kreditor):** Kreditorenkonto</li></ul> |
 | Kreditorenrechnungskonto           | <ul><li>**Bestellung:** Rechnungskonto</li><li>**Erfassung (Kreditor):**<ol><li>Kreditorenmasterdaten &gt; Rechnungskonto</li><li>Kreditorenkonto</li></ol></li></ul> |
 | Lager                        | <ul><li>**Auftrag:** Lagerort</li><li>**Bestellung:** Lagerort</li><li>**Umlagerungsauftrag - Versand:** Vom Lagerort</li><li>**Umlagerungsauftrag - Empfang:** An Lagerort</li><li>**Angebotsanforderung:** Lagerort</li><li>**Verkaufsangebot:** Lagerort</li></ul> |

@@ -1,6 +1,6 @@
 ---
 title: Kontakttyp
-description: In diesem Thema wird der Optionssatz für den Kontakttyp für Dynamics 365 Human Resources beschrieben.
+description: In diesem Artikel wird der Optionssatz für den Kontakttyp für Dynamics 365 Human Resources beschrieben.
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 30b478569c69c6da13fbc80626d38f641899c938
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2b1194cc8b2e59aee938eccee688ec4d50e87302
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065525"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872297"
 ---
 # <a name="contact-type"></a>Kontakttyp
 
@@ -27,7 +27,7 @@ ms.locfileid: "8065525"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In diesem Thema wird der Optionssatz für den Kontakttyp für Dynamics 365 Human Resources beschrieben.
+In diesem Artikel wird der Optionssatz für den Kontakttyp für Dynamics 365 Human Resources beschrieben.
 
 Physischer Namen: mshr_logisticselectronicaddressmethodtype
 

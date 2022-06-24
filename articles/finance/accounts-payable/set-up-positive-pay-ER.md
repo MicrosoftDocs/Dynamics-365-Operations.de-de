@@ -1,6 +1,6 @@
 ---
 title: Dateien für positive Zahlungen mithilfe der elektronischen Berichterstellung einrichten und generieren
-description: In diesem Thema wird beschrieben, wie positive Zahlungen mit der elektronischen Berichterstellung eingerichtet werden.
+description: In diesem Artikel wird beschrieben, wie positive Zahlungen mit der elektronischen Berichterstellung eingerichtet werden.
 author: panolte
 ms.date: 03/20/2022
 ms.topic: article
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: bc2f17d62b429b599d5ac5f2a521819275d36b64
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: 491048c7274ba6bb52e0a4b7a6ea5cd0f5ff4741
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770246"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878217"
 ---
 # <a name="set-up-positive-pay-files-by-using-electronic-reporting"></a>Dateien für positive Zahlungen mithilfe der elektronischen Berichterstellung einrichten
 
-In diesem Thema wird erklärt, wie Sie mit Hilfe des elektronischen Berichtswesens positive Zahlungen festlegen und positive Zahlungsdateien erstellen können.
+In diesem Artikel wird erklärt, wie Sie mit Hilfe des elektronischen Berichtswesens positive Zahlungen festlegen und positive Zahlungsdateien erstellen können.
 
 > [!NOTE] 
 > Bevor Sie die Funktion **Bankpositive Lohndatei generieren** verwenden, müssen Sie zunächst die Liste der Entitäten aktualisieren.

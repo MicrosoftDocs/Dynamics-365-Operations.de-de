@@ -1,6 +1,6 @@
 ---
 title: Kundenzertifikate und Geheimnisse
-description: In diesem Thema wird erklärt, wie Sie in der Elektronischen Rechnungsstellung Kundenzertifikate und Geheimnisse festlegen.
+description: In diesem Artikel wird erklärt, wie Sie in der Elektronischen Rechnungsstellung Kundenzertifikate und Geheimnisse festlegen.
 author: dkalyuzh
 ms.date: 02/07/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1325cad95e9a6dc470691f5f168439fccaaa78e1
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: a4d33135bf352a4c4a245e597e0c3c7467317864
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371691"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880659"
 ---
 # <a name="customer-certificates-and-secrets"></a>Kundenzertifikate und Geheimnisse
 

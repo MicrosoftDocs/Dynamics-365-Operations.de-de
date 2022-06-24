@@ -1,6 +1,6 @@
 ---
 title: Importieren der Daten einer Tochtergesellschaft aus Dateien
-description: In diesem Thema wird erläutert, wie Sie Daten von externen Systemen so vorbereiten, dass sie in Microsoft Dynamics 365 Finance importiert werden können.
+description: In diesem Artikel wird erläutert, wie Sie Daten von externen Systemen so vorbereiten, dass sie in Microsoft Dynamics 365 Finance importiert werden können.
 author: jinniew
 ms.date: 10/09/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 045ecd6dfb95ccf38773293d44834531668ac1ff
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 6886e2ee79ee9e4ccc067dc4f661c1eea646cfa6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733818"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846769"
 ---
 # <a name="import-subsidiary-data-from-files"></a>Importieren der Daten einer Tochtergesellschaft aus Dateien
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie Daten von externen Systemen so vorbereiten, dass sie in Microsoft Dynamics 365 Finance importiert werden können. Sie verwenden die **Mit Import konsolidieren**-Seite (**Konsolidierungen \> Mit Import konsolidieren**), um die Übertragung von Daten zu Tochtergesellschaften aus externen Systemen vorzubereiten.
+In diesem Artikel wird erläutert, wie Sie Daten von externen Systemen so vorbereiten, dass sie in Microsoft Dynamics 365 Finance importiert werden können. Sie verwenden die **Mit Import konsolidieren**-Seite (**Konsolidierungen \> Mit Import konsolidieren**), um die Übertragung von Daten zu Tochtergesellschaften aus externen Systemen vorzubereiten.
 
 1. Erstellen Sie eine juristische Person der Tochtergesellschaft für die Konsolidierung. Informationen zum Erstellen juristischer Personen finden Sie unter [Eine juristische Person erstellen](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md). Weitere Informationen finden Sie unter [Eine juristische Person für den Konsolidierungsprozess vorbereiten](prepare-company-for-consolidation.md) und [Eine juristische Person vom Typ Tochtergesellschaft zur Konsolidierung einrichten](set-up-subsidiary-company-for-consolidation.md).
 

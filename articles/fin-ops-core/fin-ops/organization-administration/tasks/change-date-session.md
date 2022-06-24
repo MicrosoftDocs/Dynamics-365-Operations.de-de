@@ -1,6 +1,6 @@
 ---
-title: Ändern des Datums für eine Sitzung
-description: In diesem Thema wird erläutert, wie das Datum für eine Sitzung geändert wird.
+title: Datum einer Sitzung ändern
+description: In diesem Artikel wird erläutert, wie das Datum für eine Sitzung geändert wird.
 author: pvillads
 ms.date: 07/31/2019
 ms.topic: business-process
@@ -13,21 +13,21 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fb8f896645df7c7c9a8afa3d9dc9106a7162959d
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 22d014cdcf384253250590cf2c229da16b327495
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065629"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880960"
 ---
-# <a name="change-the-date-for-a-session"></a>Ändern des Datums für eine Sitzung
+# <a name="change-the-date-for-a-session"></a>Datum einer Sitzung ändern
 
 [!include [banner](../../includes/banner.md)]
 
 
 [!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
-In diesem Thema wird erläutert, wie das Datum für eine Sitzung geändert wird. Standardmäßig wird das aktuelle Datum verwendet, wenn Journaleinträge oder Quelldokumente eingegeben und gebucht werden. Es besteht jedoch die Möglichkeit, das Datum zu ändern, das für die aktuelle verwenet wird. Verwenden Sie diese Funktion bei Bedarf für das Rückdatieren von Journaleinträgen oder Quelldokumenten.
+In diesem Artikel wird erläutert, wie das Datum für eine Sitzung geändert wird. Standardmäßig wird das aktuelle Datum verwendet, wenn Journaleinträge oder Quelldokumente eingegeben und gebucht werden. Es besteht jedoch die Möglichkeit, das Datum zu ändern, das für die aktuelle verwenet wird. Verwenden Sie diese Funktion bei Bedarf für das Rückdatieren von Journaleinträgen oder Quelldokumenten.
 
 1. Wechseln Sie im Navigationsbereich zu **Module > Allgemein > Allgemein > Sitzungsdatum und -uhrzeit**.
 2. Geben Sie ein Datum in das Feld **Datum** ein.

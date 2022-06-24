@@ -1,6 +1,6 @@
 ---
 title: Italienische Intrastat
-description: Dieses Thema enthält Informationen zur Intrastat-Berichterstattung in Italien.
+description: Dieser Artikel enthält Informationen zur Intrastat-Berichterstattung in Italien.
 author: anasyash
 ms.date: 09/09/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 3b676ba754cded03fdc6d566ffbfbb35c204b03a
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: a4531baf29759607c877c815b849067f718851b5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488258"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874362"
 ---
 # <a name="italian-intrastat"></a>Italienische Intrastat
 
@@ -631,7 +631,7 @@ Befolgen Sie diese Schritte, um italienisch-spezifische Optionen einzurichten, d
 
     Weitere Informationen finden Sie unter [Elektronische Berichtskonfigurationen aus Lifecycle Services herunterladen](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-2. Wechseln Sie in Dynamics 365 Finance zu **Steuer** > **Einstellungen** > **Außenhandelsparameter**.
+2. Gehen Sie in Dynamics 365 Finance zu **Steuern** > **Einrichtung** > **Außenhandelsparameter**.
 3. Auf der **Intrastat** Registerkarte im Inforegsiter **Allgemein** legen Sie die folgenden Felder fest:
 
     - **Herkunfts-/Bestimmungsland**: Wählen Sie den Landkreis Ihres Unternehmens aus. Dieses Bundesland wird für Sendungen verwendet.
@@ -650,7 +650,7 @@ Befolgen Sie diese Schritte, um italienisch-spezifische Optionen einzurichten, d
 6. Auf dem Inforegsiter **Statistischer Wert** stellen Sie die **Statistische Daten drucken und exportieren** Option auf **Ja**, sofern erforderlich. Diese Einstellung aktiviert die Übertragung des Statistikteils. Der Statistikteil besteht aus Daten zu Gewichten, Zusatzeinheiten, Statistikwerten, Lieferbedingungen, Lieferabrufen, Verkehrsträgern und Herkunftsregionen.
 
     > [!NOTE]
-    > Bei einer vierteljährlichen Meldung enthält der Intrastat-Bericht weder den statistischen Abschnitt noch Informationen zu Lieferbedingungen und Transportarten. Weitere Informationen finden Sie in der Tabelle [Übersicht](#overview) weiter oben in diesem Thema.
+    > Bei einer vierteljährlichen Meldung enthält der Intrastat-Bericht weder den statistischen Abschnitt noch Informationen zu Lieferbedingungen und Transportarten. Weitere Informationen finden Sie in der Tabelle [Übersicht](#overview) weiter oben in diesem Artikel.
 
 7. Auf der Registerkarte **Länder-/Regionseigenschaften** führen Sie alle Länder oder Regionen auf, mit denen Ihre Organisation Geschäfte macht. Legen Sie für jedes Land oder Region die folgenden Felder fest:
 

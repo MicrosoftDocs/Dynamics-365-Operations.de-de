@@ -1,6 +1,6 @@
 ---
 title: Beispielabfrage für Kandidaten zur Einstellung
-description: Dieses Thema enthält eine Beispielabfrage für die Entität Kandidat zur Einstellung, in Dynamics 365 Human Resources.
+description: Dieser Artikel enthält eine Beispielabfrage für die Entität Kandidat zur Einstellung in Dynamics 365 Human Resources.
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: edb8687b9dae0afc1bc15a3a5c197e14e7e8cf1e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2dd744665d4f0b6c64f4ee45a01c237081018514
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069220"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848341"
 ---
 # <a name="example-query-for-candidate-to-hire"></a>Beispielabfrage für Kandidaten zur Einstellung
 
@@ -27,9 +27,9 @@ ms.locfileid: "8069220"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dieses Thema enthält eine Beispielabfrage für die Entität Kandidat zur Einstellung, in Dynamics 365 Human Resources.
+Dieser Artikel enthält eine Beispielabfrage für die Entität Kandidat zur Einstellung in Dynamics 365 Human Resources.
 
-Dieses Thema enthält ein Beispiel, das zeigt, wie Sie *tiefes Einfügen* verwenden können, um alle Details eines neuen Kandidatendatensatzes in einer einzigen API-Operation zu erstellen. Weitere Informationen zu tiefen Einfügen finden Sie unter [Erstellen verwandter Entitätsdatensätze in einem Vorgang](/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).
+Dieser Artikel enthält ein Beispiel, das zeigt, wie Sie *tiefes Einfügen* verwenden können, um alle Details eines neuen Kandidatendatensatzes in einer einzigen API-Operation zu erstellen. Weitere Informationen zu tiefen Einfügen finden Sie unter [Erstellen verwandter Entitätsdatensätze in einem Vorgang](/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).
 
 Die **mshr_hcmcandidatetohireentity**-Entität ist aufgrund seiner Beziehung zur **mshr_dirpersonentity**-Entität einzigartig. Viele der Eigenschaften von **mshr_hcmcandidatetohireentity** (zum Beispiel **mshr_firstname**, **mshr_lastname** und **mshr_birthdate**) sind vom **mshr_dirpersonentity**-Datensatz abgeleitet. Wenn Sie einen neuen Kandidatendatensatz ohne tiefes Einfügen an **mshr_hcmcandidatetohireentity** senden, können Sie Werte für diese Eigenschaften direkt im **mshr_hcmcandidatetohireentity**-Datensatz definieren. Der zugehörige **mshr_dirpersonentity**-Datensatz wird implizit mit den definierten Werten für die Eigenschaften erstellt. Sie können dann alle anderen zugehörigen Entitätsdatensätze (z. B. Qualifikationen oder Ausbildung) als separate API-Aufrufe erstellen.
 

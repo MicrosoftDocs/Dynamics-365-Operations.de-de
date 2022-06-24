@@ -1,6 +1,6 @@
 ---
 title: ER Erforderliche Konfigurationen zum Import von Daten aus einer externen Datei estellen
-description: In diesem Thema wird beschrieben, wie Sie Konfigurationen zur elektronischen Berichterstellung (EB) entwerfen, um Daten in die Microsoft Dynamics 365 Finance-App aus einer externen Datei zu importieren.
+description: In diesem Artikel wird beschrieben, wie Sie Konfigurationen zur elektronischen Berichterstellung (EB) entwerfen, um Daten in die Microsoft Dynamics 365 Finance-App aus einer externen Datei zu importieren.
 author: NickSelin
 ms.date: 03/24/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7eaa35baae8e030d8a8b7ce903554c4876c874b48cfd72d6ac278cf4c0e8a6e8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aa1dc55e8cdee7d61e5ababe92e8a9234788664f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720855"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865892"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Erforderliche Konfigurationen zum Import von Daten aus einer externen Datei estellen
 
@@ -241,7 +241,7 @@ Führen Sie diese Formatzuordnung für Testzwecke aus. Verwenden Sie die Datei 1
 19. Schließen Sie die Seite.
 20. Klicken Sie auf Bearbeiten.
 
-    Wenn Sie den Hotfix „KB 4012871 Unterstützung von GER-Modellzuordnungen in getrennten Konfigurationen mit der Fähigkeit, verschiedene Arten von Voraussetzungen zur Bereitstellung in verschiedenen Versionen von Dynamics 365 Finance festzulegen“ ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)) installiert haben, führen Sie den nächsten Schritt „Kennung „Standard für Modellzuordnung“ einschalten“ für die eingegebene Formatkonfiguration aus. Überspringen Sie anderenfalls den nächsten Schritt.  
+    Wenn Sie den Hotfix „KB 4012871 Unterstützung von GER-Modellzuordnungen in getrennten Konfigurationen mit der Fähigkeit, verschiedene Arten von Voraussetzungen zur Bereitstellung in verschiedenen Versionen von Dynamics 365 Finance“ ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)) installiert haben, führen Sie den nächsten Schritt „Kennung 'Standard für Modellzuordnung' einschalten“ für die eingegebene Formatkonfiguration aus. Überspringen Sie anderenfalls den nächsten Schritt.  
 
 21. Wählen Sie die Option „Ja” im Feld „Standard für Modellzuordnung” aus.
 22. Wählen Sie in der Struktur „US 1099-Steuerzahlungsmodell” aus.

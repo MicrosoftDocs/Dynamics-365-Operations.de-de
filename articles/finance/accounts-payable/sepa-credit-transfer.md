@@ -1,6 +1,6 @@
 ---
 title: Überblick zur SEPA-Kreditübertragung
-description: In diesem Thema werden allgemeine Informationen zu ISO 20022-Banküberweisungen bereitgestellt, die SEPA(Single Euro Payments Area)-Banküberweisungen und alle sonstigen elektronische Zahlungen für Kreditoren umfassen.
+description: Dieser Artikel stellt allgemeine Informationen zu ISO 20022-Banküberweisungen bereit, die SEPA (Single Euro Payments Area) Banküberweisungen und alle sonstigen elektronische Zahlungen für Kreditoren umfassen.
 author: sunfzam
 ms.date: 06/20/2017
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f43c45aa4f22f5044e7c10329dafa76226970b3d
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: f3f0c428d9167e9f1a7fb17a292d474448b2d4df
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734515"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871448"
 ---
 # <a name="sepa-credit-transfer-overview"></a>Überblick zur SEPA-Kreditübertragung
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden allgemeine Informationen zu ISO 20022-Banküberweisungen bereitgestellt, die SEPA(Single Euro Payments Area)-Banküberweisungen und alle sonstigen elektronische Zahlungen für Kreditoren umfassen. Eine SEPA-Überweisung ist eine Zahlung (in Euro) von einem Unternehmen oder von Einzelperson zu einem anderen Unternehmen oder einer Einzelperson. Der Artikel beschreibt zudem, wie eine SEPA-Überweisung-Zahlungsdatei eingerichtet und übermittelt wird.
+Dieser Artikel stellt allgemeine Informationen zu ISO 20022-Banküberweisungen bereit, die SEPA (Single Euro Payments Area) Banküberweisungen und alle sonstigen elektronische Zahlungen für Kreditoren umfassen. Eine SEPA-Überweisung ist eine Zahlung (in Euro) von einem Unternehmen oder von Einzelperson zu einem anderen Unternehmen oder einer Einzelperson. Der Artikel beschreibt zudem, wie eine SEPA-Überweisung-Zahlungsdatei eingerichtet und übermittelt wird.
 
 ## <a name="what-is-a-credit-transfer-message"></a>Was ist eine SEPA-Mitteilung?
 Die Banküberweisungsnachricht ist eine Anforderung, die eine initiierende Partei (Ihr Unternehmen) zum Verschieben von einem separaten Konto zu einem Kreditgeber sendet. Es gibt viele länder-/regionsspezifische und bankspezifisch Implementierungen von Banküberweisungsnachrichten. Viele hiervon werden innerhalb eines Landes/Regionen verwendet, und werden Standards. Ein Standard ist globaler ISO 20022 und seine Startnachrichten, z.B. Banküberweisung. Die folgende Abbildung zeigt die Beziehungen und Disposition für die ausgewählte Banküberweisungsnachrichten angezeigt. 
@@ -53,7 +53,7 @@ Eine SEPA-Überweisung ist eine Zahlung von einem Unternehmen oder von Einzelper
 Das SEPA-Überweisungsformat wird über die generische elektronische Berichterstellung und die Methoden von Zahlungsfunktionen in Microsoft Dynamics 365 Finance implementiert. Einige Banküberweisungsformate, die in anderen Regionen noch verwendet werden, verwenden Sie das vorhandene Zahlungsframework. Unter vielen anderen Formaten gibt es zwölf ISO 20022-Banküberweisungsdateiformate, die verfügbar sind. Diese Exportformate entsprechen dem XML-Standard SEPA ISO 20022. Sie werden verwendet, um Nicht-Euro-Zahlungsüberweisungen für Land/Region zu generieren, in denen sie Eurozahlungen und verwendet werden, z.B. in der Version 8,2 der SEPA-Kredit-Übertragungssystem-Regelung der EPC. Bevor Sie die Überweisungen implementieren können, müssen Sie von Ihrer Bank die Software erhalten, die erforderlich ist, um elektronisch Bankdateien hochzuladen. Sie verwenden diese Software, um XML-Dateien zu übertragen, die Zahlungen an die Bank enthalten.
 
 ## <a name="what-credit-transfer-formats-are-currently-supported"></a>Welche Kreditübertragungsformate werden derzeit unterstützt?
-Sie sollten für die Bibliothek der freigegebenen Anlage auf Microsoft Dynamics Lifecycle Services (LCS) nutzen und die neuesten Liste der verfügbaren Dateien mit dem Anlagentyp **GER-Konfiguration** sehen. Im nächsten Abschnitt "Was muss ich einrichten?" wird ein Link zum Thema bereitgestellt, der erläutert, wie ein LCS-Repository herstellt, um verfügbare Konfigurationen und Importieren ausgewählter Konfigurationen zu prüfen.
+Sie sollten für die Bibliothek der freigegebenen Anlage auf Microsoft Dynamics Lifecycle Services (LCS) nutzen und die neuesten Liste der verfügbaren Dateien mit dem Anlagentyp **GER-Konfiguration** sehen. Im nächsten Abschnitt „Was muss ich einrichten?“ wird ein Link zum Artikel bereitgestellt, der erläutert, wie ein LCS-Repository herstellt, um verfügbare Konfigurationen und Importieren ausgewählter Konfigurationen zu prüfen.
 
 ## <a name="what-do-i-have-to-set-up"></a>Was muss ich einrichten?
 -   Bevor Sie Überweisungsdateien erstellen können, muss mindestens eine aktive Banküberweisungskonfiguration in die generischen elektronischen Berichterstellungskonfigurationen importiert werden. Weitere Informationen finden Sie unter [Elektronische Berichtskonfigurationen aus Lifecycle Services herunterladen](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).

@@ -1,6 +1,6 @@
 ---
 title: Neuerungen oder Änderungen in Dynamics 365 Human Resources 22. Oktober 2020
-description: Dieses Thema beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 22. Oktober 2020 neu sind oder geändert wurden.
+description: Dieser Artikel beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 22. Oktober 2020 neu sind oder geändert wurden.
 author: jcart1106
 ms.date: 10/22/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b36354b14faf59aacb4a619dfb6f243335e6a297
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: d58c8d5eab86779a764cee5a3ee8ca17ade471de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063517"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862800"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-22-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources 22. Oktober 2020
 
@@ -27,7 +27,7 @@ ms.locfileid: "8063517"
 
 
 
-In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Human Resources neu oder geändert wurden oder demnächst verfügbar sind. Weitere Informationen zu unserem Aktualisierungsprozess und Zeitplan finden Sie unter [Aktualisierungsprozess](hr-admin-setup-update-process.md).
+Dieser Artikel beschreibt Funktionen, die in Dynamics 365 Human Resources neu oder geändert sind oder bald eingeführt werden. Weitere Informationen zu unserem Aktualisierungsprozess und Zeitplan finden Sie unter [Aktualisierungsprozess](hr-admin-setup-update-process.md).
 
 Weitere Informationen zu neuen Funktionen und den voraussichtlichen allgemeinen Verfügbarkeitsterminen finden Sie unter [Überblick Dynamics 365 Human Resources 2020 Veröffentlichungszyklus 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
@@ -50,9 +50,9 @@ Die folgenden Funktionen sind in dieser Version allgemein verfügbar.
 Die folgenden Fehlerkorrekturen sind in diesem Release enthalten.
 
 > [!NOTE]
-> Unser Ziel ist es, Ihnen diese Informationen so schnell wie möglich zukommen zu lassen. Wir können dieses Thema aktualisieren, um Fehlerbehebungen aufzunehmen, die es nach der Erstveröffentlichung dieses Themas in den Build geschafft haben.
+> Unser Ziel ist es, Ihnen diese Informationen so schnell wie möglich zukommen zu lassen. Wir können diesen Artikel aktualisieren, um Fehlerbehebungen aufzunehmen, die es nach der Erstveröffentlichung dieses Artikels in den Build geschafft haben.
 
-| Problemnummer| Abgang  | Beschreibung|
+| Problemnummer| Problem  | Description|
 | --- | --- | --- |
 | 437922 | Das Importieren von FMLA-Stunden mit der DMF-Entität führt zu einem schreibgeschützten Fehler. | Die Verwendung der Entität FMLA-Stunden zum Importieren von Stunden, die einem FMLA-Fall zugeordnet sind, ist fehlgeschlagen. Wir haben eine Logik hinzugefügt, um sicherzustellen, dass die importierten Stunden die für den Fall verbleibenden Stunden nicht überschreiten. |
 | 512019 | Falscher **Letzter Vortrag** Betrag. | Auf der Seite **Auszeit** ändern Sie **Stand Datum** bis zum ersten Tag der nächsten Geschäftsperiode und es wird ein falscher **Letzter Vortrag** Betrag für **Jährliche Urlaubs**-Art angezeigt. Es wird nun die richtige Menge angezeigt. |

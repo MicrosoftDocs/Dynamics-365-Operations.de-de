@@ -1,6 +1,6 @@
 ---
 title: Bestellungsbuchung
-description: Dieses Thema beschreibt die Registerkarte Bestellung auf der Seite Bestandsbuchungsprofile.
+description: Dieser Artikel beschreibt die Registerkarte Bestellung auf der Seite Bestandsbuchungsprofile.
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
@@ -10,12 +10,12 @@ ms.search.form: InventPosting, InventTrans
 audience: Application User
 ms.search.region: Global
 ms.author: raprofit
-ms.openlocfilehash: 4b36ab9da22da7d4f3e62bd2d2aba2a2ec80e60f
-ms.sourcegitcommit: 5b55f2913e736d12e40c227bf3ce3a9abec815bd
+ms.openlocfilehash: 0793c58b07d2c0a133e1a5bc0607483f22206b95
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8803001"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849930"
 ---
 # <a name="purchase-order-posting"></a>Bestellungsbuchung
 
@@ -125,7 +125,7 @@ Bestellanforderungen und Bestellbestätigungen können auch so konfiguriert werd
 
 ## <a name="procurement-category-posting"></a>Buchung von Beschaffungskategorien
 
-Alternativ zur Einrichtung der Bestandsbuchung für alle Artikel, eine Gruppe von Artikeln oder einen einzelnen Artikel können Sie Kategorien festlegen und die Ledgerbuchung nach Beschaffungskategorien steuern. Weitere Informationen zum Festlegen von Kategorien und deren Zuweisung zu Produkten finden Sie unter [Beispiel für die Konfiguration von Buchungsprofilen](#sample-posting-profile-configuration) weiter oben in diesem Thema.
+Alternativ zur Einrichtung der Bestandsbuchung für alle Artikel, eine Gruppe von Artikeln oder einen einzelnen Artikel können Sie Kategorien festlegen und die Ledgerbuchung nach Beschaffungskategorien steuern. Weitere Informationen zum Festlegen von Kategorien und deren Zuweisung zu Produkten finden Sie unter [Beispiel für die Konfiguration von Buchungsprofilen](#sample-posting-profile-configuration) weiter oben in diesem Artikel.
 
 Wenn Sie Kategorien mit Bestellungen oder Einkaufsrechnungen verwenden, muss die Kategorienhierarchie dem Typ **Beschaffungskategorienhierarchie** auf der Seite **Kategorienhierarchie-Rollenzuordnungen** zugewiesen werden.
 

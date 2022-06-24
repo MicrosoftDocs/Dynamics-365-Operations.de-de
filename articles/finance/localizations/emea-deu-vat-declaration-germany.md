@@ -1,6 +1,6 @@
 ---
 title: Umsatzsteuererklärung (Deutschland)
-description: In diesem Thema wird erläutert, wie Sie eine Umsatzsteuervoranmeldung für juristische Personen in Deutschland im offiziellen XML-Format einrichten und erstellen.
+description: In diesem Artikel wird erläutert, wie Sie eine Umsatzsteuererklärung für juristische Personen in Deutschland im offiziellen XML-Format einrichten und erstellen.
 author: anasyash
 ms.date: 03/10/2022
 ms.topic: article
@@ -9,22 +9,22 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: a761a145a876584728098a92b3f3e93ac718a164
-ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
+ms.openlocfilehash: ff52963c03ec2eb662eb0c20ef2a960e3b999167
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "8402802"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879531"
 ---
 # <a name="vat-declaration-germany"></a>Umsatzsteuererklärung (Deutschland)
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie eine Umsatzsteuervoranmeldung für juristische Personen in Deutschland im offiziellen XML-Format einrichten und erstellen. In diesem Thema wird auch erläutert, wie Sie eine Vorschau der Umsatzsteuererklärung in Microsoft Excel anzeigen.
+In diesem Artikel wird erläutert, wie Sie eine Umsatzsteuererklärung für juristische Personen in Deutschland im offiziellen XML-Format einrichten und erstellen. In diesem Artikel wird auch erläutert, wie Sie eine Vorschau der Umsatzsteuererklärung in Microsoft Excel anzeigen.
 
 Um den Bericht automatisch zu erstellen, erstellen Sie genügend Mehrwertsteuercodes, um für jedes Feld in der Mehrwertsteuervoranmeldung eine separate Mehrwertsteuerabrechnung zu führen. Verknüpfen Sie außerdem in den anwendungsspezifischen Parametern des Formats für die elektronische Berichterstellung (ER) für die Umsatzsteuervoranmeldung Mehrwertsteuercodes mit dem Ergebnis der Suche nach den Feldern in der Umsatzsteuererklärung.
 
-Für Deutschland müssen Sie **Nachschlagen von Berichtfeldern** konfigurieren. Weitere Informationen zum Einrichten anwendungsspezifischer Parameter finden Sie im Abschnitt [Anwendungsspezifische Parameter für Umsatzsteuererklärungsfelder einrichten](#set-up-application-specific-parameters-for-vat-declaration-fields) weiter unten in diesem Thema.
+Für Deutschland müssen Sie **Nachschlagen von Berichtfeldern** konfigurieren. Weitere Informationen zum Einrichten anwendungsspezifischer Parameter finden Sie im Abschnitt [Anwendungsspezifische Parameter für Umsatzsteuererklärungsfelder einrichten](#set-up-application-specific-parameters-for-vat-declaration-fields) weiter unten in diesem Artikel.
 
 In der folgenden Tabelle zeigt die Spalte „Suchergebnis“ das Suchergebnis, das für eine bestimmte Mehrwertsteuererklärungszeile im Mehrwertsteuererklärungsformat vorkonfiguriert ist. Verwenden Sie diese Informationen, um die Mehrwertsteuercodes dem Suchergebnis und dann der Zeile der Mehrwertsteuererklärung korrekt zuzuordnen.
 
@@ -176,8 +176,8 @@ Führen Sie diese Schritte aus, um zu definieren, welche Mehrwertsteuercodes wel
 
     | Feld                  | Description                                                                                                                                                                                                                                                                                                          |
     |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Suchergebnis          | Wählen Sie den Wert des Berichtsfelds aus. Weitere Informationen zu den Werten und deren Zuordnung zu den Umsatzsteuererklärungszeilen finden Sie im [Übersicht über die Umsatzsteuererklärung](#vat-declaration-overview)-Abschnitt weiter oben in diesem Thema.                                                                                               |
-    | MwSt.-Code               | Wählen Sie den Mehrwertsteuercode aus, der mit dem Berichtsfeld verknüpft werden soll. Gebuchte Steuertransaktionen, die den ausgewählten Mehrwertsteuercode verwenden, werden im entsprechenden Deklarationsfeld erfasst. Wir empfehlen Ihnen, die Umsatzsteuerkennzeichen so zu trennen, dass ein Umsatzsteuerkennzeichen Beträge in nur einem Deklarationsfeld generiert. |
+    | Suchergebnis          | Wählen Sie den Wert des Berichtsfelds aus. Weitere Informationen zu den Werten und deren Zuordnung zu den Umsatzsteuererklärungszeilen finden Sie im [Übersicht über die Umsatzsteuererklärung](#vat-declaration-overview)-Abschnitt weiter oben in diesem Artikel.                                                                                               |
+    | Steuercode               | Wählen Sie den Mehrwertsteuercode aus, der mit dem Berichtsfeld verknüpft werden soll. Gebuchte Steuertransaktionen, die den ausgewählten Mehrwertsteuercode verwenden, werden im entsprechenden Deklarationsfeld erfasst. Wir empfehlen Ihnen, die Umsatzsteuerkennzeichen so zu trennen, dass ein Umsatzsteuerkennzeichen Beträge in nur einem Deklarationsfeld generiert. |
     | Transaktionsklassifizierer | Wenn Sie genügend Mehrwertsteuercodes erstellt haben, um ein Deklarationsfeld zu bestimmen, wählen Sie **\*Nicht leer\*** aus. Wenn Sie nicht genügend Mehrwertsteuercodes erstellt haben, damit ein Mehrwertsteuercode Beträge in nur einem Deklarationsfeld generiert, können Sie einen Transaktionsklassifizierer einrichten. Folgende Transaktionsklassifizierer sind verfügbar:</br>-   **Kaufen**</br>-   **PurchaseExempt** (Steuerbefreiter Einkauf)</br>-   **PurchaseReverseCharge** (Vorsteuer aus Verlagerung der Steuerschuld)</br>-   **Vertrieb**</br>-   **SalesExempt** (Steuerbefreiter Verkauf)</br>-   **SalesReverseCharge** (Vorsteuer aus Verlagerung der Steuerschuld Einkauf oder Verkauf)</br>-   **Steuer verwenden**. </br>Für jeden Transaktionsklassifizierer steht auch ein Klassifikator für die Gutschrift zur Verfügung. Einer dieser Klassifikatoren ist beispielsweise **PurchaseCreditNote** (Gutschrift kaufen).</br>Stellen Sie sicher, dass Sie für jeden Mehrwertsteuercode zwei Zeilen erstellen: eine mit dem Transaktionsklassifikatorwert und eine mit dem Transaktionsklassifikator für den Gutschriftswert. |
 
     > [!NOTE]
@@ -212,7 +212,7 @@ Wenn Sie die Mehrwertsteuererklärung in einer juristischen Person konfigurieren
 Das Datenpaket enthält elektronische Nachrichteneinstellungen, die verwendet werden, um die Umsatzsteuererklärung im XML-Format zu generieren und anschließend in Excel anzuzeigen. Sie können diese Einstellungen erweitern oder eigene erstellen. Weitere Informationen zum Arbeiten mit elektronischen Nachrichten und zum Erstellen eigener Einstellungen finden Sie unter [Elektronische Nachrichtenübermittlung](../general-ledger/electronic-messaging.md).
 
 1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2) wählen Sie in der Bibliothek für freigegebene Anlagen **Datenpaket** als Anlagentyp und laden dann das **DE Umsatzsteuererklärung EM-Paket** herunter. Der heruntergeladene Dateiname ist **DE Umsatzsteuererklärung EM-Paket.zip**.
-2. In Dynamics 365 Finance wählen Sie in der **Datenverwaltung** **Importieren** aus.
+2. In Dynamics 365 Finance wählen Sie im **Datenverwaltung**-Arbeitsbereich **Importieren** aus.
 3. Geben Sie auf dem Inforegister **Importieren** im Feld **Gruppenname** einen Namen für den Auftrag ein.
 4. Wählen Sie im Inforegister **Ausgewählte Entitäten** **Datei hinzufügen** aus.
 5. Im **Datei hinzufügen**-Dialogfeld überprüfen Sie, ob das **Quelldatenformat**-Feld auf **Paket** gesetzt ist, wählen **Hochladen und hinzufügen** aus, und wählen dann die zuvor heruntergeladene ZIP-Datei aus.
@@ -265,7 +265,7 @@ Das Datenpaket enthält elektronische Nachrichteneinstellungen, die verwendet we
 
 ## <a name="generate-a-vat-declaration-from-electronic-messages"></a>Erstellen Sie eine Mehrwertsteuererklärung aus elektronischen Nachrichten
 
-Wenn Sie elektronische Nachrichten zum Generieren des Berichts verwenden, können Sie Steuerdaten von mehreren juristischen Personen erfassen. Weitere Informationen finden Sie im [Mehrwertsteuererklärung für mehrere juristische Personen ausführen](#run-a-vat-declaration-for-multiple-legal-entities)-Abschnitt weiter unten in diesem Thema.
+Wenn Sie elektronische Nachrichten zum Generieren des Berichts verwenden, können Sie Steuerdaten von mehreren juristischen Personen erfassen. Weitere Informationen finden Sie im Abschnitt [Mehrwertsteuererklärung für mehrere juristische Personen ausführen](#run-a-vat-declaration-for-multiple-legal-entities) weiter unten in diesem Artikel.
 
 Das folgende Verfahren gilt für das Beispiel für die Verarbeitung elektronischer Nachrichten, das Sie aus der LCS Shared Asset Library importiert haben.
 
@@ -277,7 +277,7 @@ Das folgende Verfahren gilt für das Beispiel für die Verarbeitung elektronisch
     > [!NOTE]
     > Die Schritte 5 bis 7 sind optional.
 
-5. Optional: Auf dem Inforegister **Mitteilungen** wählen Sie **Daten sammeln** aus, und wählen Sie dann **OK**. Die zuvor generierten Umsatzsteuerzahlungen werden der Nachricht hinzugefügt. Weitere Informationen finden Sie im Abschnitt [Mehrwertsteuer abrechnen und buchen](#settle-and-post-sales-tax) am Anfang dieses Themas. Wenn Sie diesen Schritt überspringen, können Sie trotzdem eine Umsatzsteuererklärung erstellen, indem Sie das **Version der Steuererklärung**-Feld im **Erklärung**-Dialogfeld verwenden.
+5. Optional: Auf dem Inforegister **Mitteilungen** wählen Sie **Daten sammeln** aus, und wählen Sie dann **OK**. Die zuvor generierten Umsatzsteuerzahlungen werden der Nachricht hinzugefügt. Weitere Informationen finden Sie im Abschnitt [Mehrwertsteuer abrechnen und buchen](#settle-and-post-sales-tax) am Anfang dieses Artikels. Wenn Sie diesen Schritt überspringen, können Sie trotzdem eine Umsatzsteuererklärung erstellen, indem Sie das **Version der Steuererklärung**-Feld im **Erklärung**-Dialogfeld verwenden.
 6. Optional: Auf dem Inforegister **Nachrichtenelemente** überprüfen Sie die Mehrwertsteuerzahlungen, die zur Verarbeitung übertragen werden. Standardmäßig werden alle Mehrwertsteuerzahlungen des ausgewählten Zeitraums berücksichtigt, die in keiner anderen Nachricht derselben Verarbeitung enthalten waren.
 7. Optional: Wählen Sie **Originaldokument**, um die Umsatzsteuerzahlungen zu überprüfen, oder wählen Sie **Löschen**, um Umsatzsteuerzahlungen von der Verarbeitung auszuschließen. Wenn Sie diesen Schritt überspringen, können Sie trotzdem eine Umsatzsteuererklärung erstellen, indem Sie das **Version der Steuererklärung**-Feld im **Erklärung**-Dialogfeld verwenden.
 8. Wählen Sie im Inforegister **Nachrichten** **Status aktualisieren** aus. Im **Status aktualisieren**-Dialogfeld wählen Sie **Bereit zum Generieren**, und wählen Sie dann **OK**. Stellen Sie sicher, dass der Nachrichtenstatus geändert wurde in **Bereit zum Generieren**.

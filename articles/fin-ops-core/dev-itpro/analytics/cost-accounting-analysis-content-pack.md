@@ -1,6 +1,6 @@
 ---
-title: Power BI-Inhalt zur Kostenrechnungsanalyse
-description: In diesem Thema wird beschrieben, was im Power BI-Inhalt zur Kostenrechnungsanalyse enthalten ist.
+title: Inhalt zur Kostenrechnungsanalyse – Power BI-Inhalt
+description: In diesem Artikel wird beschrieben, was im Power BI-Inhalt zur Kostenrechnungsanalyse enthalten ist.
 author: AndersGirke
 ms.date: 10/02/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d3b8832e5a5612fd0311811f43454689d5b274c36404b4fb92b710411d45e573
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d5e595c910e237481b8124cb2a0333697344b9ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747368"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876891"
 ---
 # <a name="cost-accounting-analysis-power-bi-content"></a>Inhalt zur Kostenrechnungsanalyse – Power BI-Inhalt
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, was im Microsoft Power BI-Inhalt zur **Kostenrechnungsanalyse** enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen, und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet wurden, um den Inhalt zu erstellen.
+In diesem Artikel wird beschrieben, was im Microsoft Power BI-Inhalt zur **Kostenrechnungsanalyse** enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen, und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet wurden, um den Inhalt zu erstellen.
 
 ## <a name="overview"></a>Übersicht
 

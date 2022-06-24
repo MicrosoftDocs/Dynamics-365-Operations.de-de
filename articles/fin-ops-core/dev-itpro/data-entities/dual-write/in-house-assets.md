@@ -1,6 +1,6 @@
 ---
 title: Interne Anlagen für Wartungsarbeiten
-description: Dieses Thema beschreibt, wie Sie Microsoft Dynamics 365 Field Service verwenden können, um sowohl Debitor-Anlagen als auch interne Anlagen zu warten.
+description: Dieser Artikel beschreibt, wie Sie Microsoft Dynamics 365 Field Service verwenden können, um sowohl Debitor-Anlagen als auch interne Anlagen zu warten.
 author: RamaKrishnamoorthy
 ms.date: 01/27/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 8048a99951eea3fbae34e56c1b444c75ad3d199d
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c946af11737a77c4dadd824893e6cc1e4c77b587
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781415"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858621"
 ---
 # <a name="in-house-assets-for-servicing"></a>Interne Anlagen für Wartungsarbeiten
 
@@ -28,7 +28,7 @@ Weitere Informationen finden Sie unter [Integrieren Dynamics 365 Field Service u
 
 Hausinterne Anlagen enthalten eine Sammlung von wichtigen Tabellenzuordnungen, die während der Dateninteraktion zusammenarbeiten, wie in der folgenden Tabelle dargestellt.
 
-| Finance and Operations-Apps | Customer Engagement-Apps | Beschreibung |
+| Finanz- und Betriebs-Apps | Customer Engagement-Apps | Beschreibung |
 |-----------------------------|-----------------------------------|-------------|
 [Wählen Sie Anlagenverwaltung Anlagen Lebenszyklusmodelle](mapping-reference.md#119) | msdyn_assetlifecyclemodels | |
 [Wählen Sie Anlagenverwaltung Anlagen Lebenszyklusstatus](mapping-reference.md#120) | msdyn_assetlifecyclestates | |

@@ -1,6 +1,6 @@
 ---
 title: Einkaufsaufgaben
-description: Dieses Thema enthält Informationen zu Kaufverträgen in Österreich.
+description: Dieser Artikel enthält Informationen zu Kaufverträgen in Österreich.
 author: ShylaThompson
 ms.date: 07/21/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Austria
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 249be0ecf36c9517b0d5739717b99dc5b70a204eded2849ea93018287d3babff
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 52fb47542a18101e71d694d3bddf43522cb9d95d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761216"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871137"
 ---
 # <a name="purchase-duties"></a>Einkaufsaufgaben
 

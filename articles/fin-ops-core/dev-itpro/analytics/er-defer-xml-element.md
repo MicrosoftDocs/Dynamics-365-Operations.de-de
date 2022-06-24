@@ -1,6 +1,6 @@
 ---
-title: Verzögern der Ausführung von XML-Elementen in ER-Formaten
-description: In diesem Thema wird erläutert, wie die Ausführung eines XML-Elements in einem ER-Format verzögert wird.
+title: Ausführung von XML-Elementen in ER-Formaten verzögern
+description: In diesem Artikel wird erläutert, wie die Ausführung eines XML-Elements in einem EB-Format verzögert wird.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: b804e840b98321ee9e509ea483b360ec42d12880
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 074b14cbb018a8e34b99124b8aaec3a5bdb30be2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323714"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861844"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>Verzögern der Ausführung von XML-Elementen in ER-Formaten
 
@@ -32,7 +32,7 @@ Sie können den Arbeitsgangdesigner des Frameworks für die [Elektronische Beric
 
 Durch Aktivieren der Option <a name="DeferredXmlElementExecution"></a>**Verzögerte Ausführung** für ein XML-Element im konfigurierten Format können Sie die Ausführung des Elements verzögern (hinausschieben). In diesem Fall wird das Element erst ausgeführt, wenn alle anderen Elemente des übergeordneten Elements ausgeführt wurden.
 
-Weitere Informationen über diese Funktion erhalten Sie, wenn Sie das Beispiel in diesem Thema abschließen.
+Weitere Informationen über diese Funktion erhalten Sie, wenn Sie das Beispiel in diesem Artikel abschließen.
 
 ## <a name="limitations"></a>Einschränkungen
 
@@ -55,7 +55,7 @@ Um das Beispiel in diesem Thema abzuschließen, müssen Sie für eine der folgen
 - Funktionaler Berater für elektronische Berichterstellung
 - Systemadministrator
 
-Wenn Sie das Beispiel im Thema [Verzögern der Ausführung von Sequenz-Elementen in ER-Formaten](er-defer-sequence-element.md#Example) noch nicht abgeschlossen haben, laden Sie die folgenden [Konfigurationen](general-electronic-reporting.md#Configuration) der ER-Beispiellösung herunter.
+Wenn Sie das Beispiel im Artikel [Ausführung von Sequenz-Elementen in EB-Formaten verzögern](er-defer-sequence-element.md#Example) noch nicht abgeschlossen haben, laden Sie die folgenden [Konfigurationen](general-electronic-reporting.md#Configuration) der ER-Beispiellösung herunter.
 
 | Inhaltsbeschreibung            | Dateiname |
 |--------------------------------|-----------|
@@ -95,7 +95,7 @@ Bevor Sie beginnen, müssen Sie auch die folgende Konfiguration der ER-Beispiell
 ### <a name="activate-a-configuration-provider"></a>Aktivieren eines Konfigurationsanbieters
 
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
-2. Überprüfen Sie auf der Seite **Lokalisierungskonfigurationen** im Abschnitt **Konfigurationsanbieter**, ob der [Konfigurationsanbieter](general-electronic-reporting.md#Provider) für das Beispielunternehmen Litware, Inc. (`http://www.litware.com`) aufgeführt und als „Aktiv“ markiert ist. Wenn dieser Konfigurationsanbieter nicht aufgeführt oder nicht als „Aktiv“ markiert ist, befolgen Sie die Schritte im Thema [Konfigurationsanbieter erstellen und als aktiv markieren](./tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. Überprüfen Sie auf der Seite **Lokalisierungskonfigurationen** im Abschnitt **Konfigurationsanbieter**, ob der [Konfigurationsanbieter](general-electronic-reporting.md#Provider) für das Beispielunternehmen Litware, Inc. (`http://www.litware.com`) aufgeführt und als „Aktiv“ markiert ist. Wenn dieser Konfigurationsanbieter nicht aufgeführt oder nicht als „Aktiv“ markiert ist, befolgen Sie die Schritte im Artikel [Konfigurationsanbieter erstellen und als aktiv markieren](./tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
     ![Beispielfirma Litware, Inc. auf der Seite „Lokalisierungskonfigurationen“.](./media/ER-DeferredXml-ElectronicReportingWorkspace.png)
 

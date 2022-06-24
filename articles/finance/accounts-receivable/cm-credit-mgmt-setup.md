@@ -1,6 +1,6 @@
 ---
 title: Einrichtung der Parameter für das Kreditmanagement
-description: In diesem Thema werden die Optionen beschrieben, mit denen Sie das Kreditmanagement konfigurieren können, um die Anforderungen Ihres Unternehmens zu erfüllen.
+description: In diesem Artikel werden die Optionen beschrieben, mit denen Sie das Kreditmanagement konfigurieren können, um die Anforderungen Ihres Unternehmens zu erfüllen.
 author: JodiChristiansen
 ms.date: 12/10/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d8bc4f0a981b75c1b65d51aa1d8fada9c2187e22
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: 2ac5e0ba8c9279fc5f04a80d4444b11850e72d3c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323409"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876353"
 ---
 # <a name="credit-management-parameters-setup"></a>Einrichtung der Parameter für das Kreditmanagement
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die Optionen beschrieben, mit denen Sie das Kreditmanagement konfigurieren können, um die Anforderungen Ihres Unternehmens zu erfüllen. Um mit der Verwendung der Kreditverwaltungsfunktionen zu beginnen, richten Sie die Parameter auf der Seite **Kreditmanagement- und Inkassoparameter** ein (**Kreditmanagement und Inkasso \> Einstellungen \> Kreditmanagementparameter**).
+In diesem Artikel werden die Optionen beschrieben, mit denen Sie das Kreditmanagement konfigurieren können, um die Anforderungen Ihres Unternehmens zu erfüllen. Um mit der Verwendung der Kreditverwaltungsfunktionen zu beginnen, richten Sie die Parameter auf der Seite **Kreditmanagement- und Inkassoparameter** ein (**Kreditmanagement und Inkasso \> Einstellungen \> Kreditmanagementparameter**).
 
 ## <a name="credit-parameters"></a>Kreditparameter
 

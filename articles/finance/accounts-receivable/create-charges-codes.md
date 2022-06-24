@@ -1,6 +1,6 @@
 ---
-title: Erstellen von Belastungscodes
-description: In diesem Thema wird erläutert, wie Belastungscodes sowohl für die Kreditorenbuchhaltung als auch für die Debitorenbuchhaltung konfiguriert werden.
+title: Belastungscodes erstellen
+description: In diesem Artikel wird erläutert, wie Belastungscodes sowohl für die Kreditorenbuchhaltung als auch für die Debitorenbuchhaltung konfiguriert werden.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e8526fa0f3c6e3d1b545703f6e6ef72f558b57bd
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d65952cb989672e4eac2dd6101ee9c7c9424daed
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735026"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866082"
 ---
-# <a name="create-charges-codes"></a>Erstellen von Belastungscodes
+# <a name="create-charges-codes"></a>Belastungscodes erstellen
 
-In diesem Thema wird erläutert, wie Belastungscodes sowohl für die Kreditorenbuchhaltung als auch für die Debitorenbuchhaltung konfiguriert werden. Wenn Ihre Organisation verlangt, dass Verkaufsbeträge oder Einkaufsbeträge zusätzlich zu Einzelposten in einem Verkaufsauftrag oder einer Bestellung nachverfolgt werden, können Sie für diesen Zweck Belastungscodes verwenden. So können Sie Fracht und Versicherung in einer Bestellung bezahlen, und diese Beträge werden separat in der Bestellung aufgeschlüsselt. In diesem Fall können Sie angeben, ob die Beträge in Ausgabenkonten gebucht oder ob den Kosten der Artikel hinzugefügt werden sollen.
+In diesem Artikel wird erläutert, wie Belastungscodes sowohl für die Kreditorenbuchhaltung als auch für die Debitorenbuchhaltung konfiguriert werden. Wenn Ihre Organisation verlangt, dass Verkaufsbeträge oder Einkaufsbeträge zusätzlich zu Einzelposten in einem Verkaufsauftrag oder einer Bestellung nachverfolgt werden, können Sie für diesen Zweck Belastungscodes verwenden. So können Sie Fracht und Versicherung in einer Bestellung bezahlen, und diese Beträge werden separat in der Bestellung aufgeschlüsselt. In diesem Fall können Sie angeben, ob die Beträge in Ausgabenkonten gebucht oder ob den Kosten der Artikel hinzugefügt werden sollen.
 
 ## <a name="set-up-charges-codes-for-accounts-receivable"></a>Einstellen von Belastungscodes für Debitoren
 

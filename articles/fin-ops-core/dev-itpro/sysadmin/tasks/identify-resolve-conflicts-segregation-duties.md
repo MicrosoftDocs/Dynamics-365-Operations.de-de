@@ -1,6 +1,6 @@
 ---
-title: Identifizieren und Beheben von Konflikten bei der Aufgabentrennung
-description: In diesem Thema wird erläutert, wie Sie Konflikte bei der Aufgabentrennung ermitteln und lösen.
+title: Konflikte bei der Aufgabentrennung erkennen und beheben
+description: In diesem Artikel wird erläutert, wie Sie Konflikte bei der Aufgabentrennung ermitteln und lösen.
 author: peakerbl
 ms.date: 01/04/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0638699c0e569bbe67024a87d6c55729642557cb085ee899aa98aa0022b12840
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd36db5df2b6871d410bb1feaae825909ec9b3ff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748311"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883476"
 ---
-# <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a>Identifizieren und Beheben von Konflikten bei der Aufgabentrennung
+# <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a>Konflikte bei der Aufgabentrennung erkennen und beheben
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie Konflikte bei der Aufgabentrennung ermitteln und lösen. Sie können Regeln einrichten, um Aufgaben abzugrenzen, die von unterschiedlichen Benutzern ausgeführt werden müssen. Dieses Konzept wird Aufgabentrennung benannt. Wenn die Definierung einer Sicherheitsrolle oder die Rollenzuweisungen eines Benutzers die Regeln verletzt, wird der Konflikt protokolliert. Alle Konflikte müssen vom Administrator aufgelöst werden. Führen Sie die folgende Prozedur aus, um Konflikte zu erkennen und beheben.
+In diesem Artikel wird erläutert, wie Sie Konflikte bei der Aufgabentrennung ermitteln und lösen. Sie können Regeln einrichten, um Aufgaben abzugrenzen, die von unterschiedlichen Benutzern ausgeführt werden müssen. Dieses Konzept wird Aufgabentrennung benannt. Wenn die Definierung einer Sicherheitsrolle oder die Rollenzuweisungen eines Benutzers die Regeln verletzt, wird der Konflikt protokolliert. Alle Konflikte müssen vom Administrator aufgelöst werden. Führen Sie die folgende Prozedur aus, um Konflikte zu erkennen und beheben.
 
 Überprüfen Sie nach dem Hinzufügen einer Regel, ob alle vorhandenen Rollen kompatibel sind. 
 

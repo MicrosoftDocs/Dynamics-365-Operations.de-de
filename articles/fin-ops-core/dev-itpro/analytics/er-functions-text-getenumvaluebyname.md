@@ -1,6 +1,6 @@
 ---
 title: GETENUMVALUEBYNAME EB-Funktion
-description: In diesem Thema werden Informationen zur Verwendung der GETENUMVALUEBYNAME-Funktion bei der elektronischen Berichterstellung (EB) bereitgestellt.
+description: In diesem Artikel werden Informationen zur Verwendung der GETENUMVALUEBYNAME-Funktion bei der elektronischen Berichterstellung (EB) bereitgestellt.
 author: NickSelin
 ms.date: 09/23/2020
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03759852e5ceb13b79b0df4592bdcef76eb0a82865725c00df40b9cc5f786240
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c1ebadd72dda296de67ac041957cffb9ab407b7c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774436"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858711"
 ---
 # <a name="getenumvaluebyname-er-function"></a>GETENUMVALUEBYNAME EB-Funktion
 
@@ -41,7 +41,7 @@ Der gültige Pfad einer Datenquelle eines der folgenden Aufzählungstypen:
 
 - Modellenumeration für die elektronische Berichterstellung (EB)
 - EB-Formatenumeration
-- Microsoft Dynamics 365 Finance-Enumeration
+- Microsoft Dynamics 365 Finance-Aufzählung
 
 `enumeration value text`: *String*
 

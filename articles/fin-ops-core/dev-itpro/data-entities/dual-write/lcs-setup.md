@@ -1,6 +1,6 @@
 ---
-title: Einrichtung von dualem Schreiben aus Lifecycle Services
-description: In diesem Thema wird erläutert, wie Sie eine Verbindung für duales Schreiben über Microsoft Dynamics Lifecycle Services (LCS) einrichten.
+title: Einrichtung von dualem Schreiben in Lifecycle Services
+description: In diesem Artikel wird erläutert, wie Sie eine Verbindung für duales Schreiben über Microsoft Dynamics Lifecycle Services (LCS) einrichten.
 author: laneswenka
 ms.date: 05/16/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 53e82fbf8cff834c9eb0d14a0597561158b85fa1
-ms.sourcegitcommit: 6744cc2971047e3e568100eae338885104c38294
+ms.openlocfilehash: 5cccba580d23c3a0e9aed62f76a305926a58585f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8783200"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879803"
 ---
-# <a name="dual-write-setup-from-lifecycle-services"></a>Einrichtung von dualem Schreiben aus Lifecycle Services
+# <a name="dual-write-setup-from-lifecycle-services"></a>Einrichtung von dualem Schreiben in Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
 
 
-In diesem Thema wird erläutert, wie Sie eine Verbindung für duales Schreiben über Microsoft Dynamics Lifecycle Services (LCS) aktivieren.
+In diesem Artikel wird erläutert, wie Sie eine Verbindung für duales Schreiben über Microsoft Dynamics Lifecycle Services (LCS) aktivieren.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 

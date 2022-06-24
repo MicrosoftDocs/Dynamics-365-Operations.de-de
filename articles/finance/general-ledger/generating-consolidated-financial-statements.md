@@ -1,6 +1,6 @@
 ---
 title: Konsolidierte Finanzaufstellungen erstellen
-description: In diesem Thema werden die unterschiedlichen Szenarios beschreiben, in denen Sie möglicherweise konsolidierte Finanzaufstellungen generieren.
+description: In diesem Artikel werden die unterschiedlichen Szenarien beschreiben, in denen Sie möglicherweise konsolidierte Finanzaufstellungen generieren.
 author: aprilolson
 ms.date: 07/09/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 092123d6f5f74d2ff160f2ebffdc2c049ccc3f65
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: c6a132b742414a3dab635634c7bb5ba0dbea527d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716522"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846798"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Konsolidierte Finanzaufstellungen erstellen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die unterschiedlichen Szenarios beschreiben, in denen Sie möglicherweise konsolidierte Finanzaufstellungen generieren.
+In diesem Artikel werden die unterschiedlichen Szenarien beschreiben, in denen Sie möglicherweise konsolidierte Finanzaufstellungen generieren.
 
 ## <a name="single-level-and-multilevel-consolidations-across-legal-entities"></a>Einstufige und mehrstufige Konsolidierungen zu verschiedenen juristischen Personen
 Die einfachste Methode zum Konsolidieren durch Finanzberichterstellung ist die Verwendung von Berichtsbaumstrukturen, um Daten zu Unternehmen zusammenzuführen, die denselben Kontenplan und Finanzzeitraum haben. Hier sind die allgemeinen Schritte für die Zusammenführung durch eine Berichtsbaumstruktur.
@@ -153,7 +153,7 @@ Die folgende Abbildung zeigt die Optionen in der Berichtsdefinition, mit denen S
 ![Optionen Bericht Definitionsperiode Nummer.](./media/options-report-definition-period-number.png "Optionen Bericht Definition Zeitraum Nummer")
 
 ## <a name="business-unit-consolidations"></a>Geschäftsbereichskonsolidierungen
-Dieses Thema konzentrierte sich auf die Verwendung von Berichtsbaumstruktur-Definitionen und Organisationshierarchien in Finanzberichten für Konsolidierungszwecke. Sie können auch die Berichtsbaumstruktur verwenden, um Konsolidierungsberichte für Unternehmenseinheiten, wie Berichte über weltweiten Vertrieb oder Arbeitsgänge zu erstellen. Diese Berichte sind eine allgemeine Anforderung. Um diese zu erstellen, wählen Sie ein Unternehmen und eine Dimension für jede Einheit aus, die Sie konsolidieren möchten. In der folgenden Abbildung wird beispielsweise die Zusammenfassung der Unternehmenseinheit abgewickelt, indem jedes Unternehmen in der Spalte **Unternehmen** (Spalte A) wiederholt und einer Gruppe mit Abteilungsdimensionswerten pro Unternehmen in der Spalte **Dimensionen** (Spalte D) identifiziert wird.
+Dieser Artikel konzentrierte sich auf die Verwendung von Berichtsbaumstruktur-Definitionen und Organisationshierarchien in Finanzberichten für Konsolidierungszwecke. Sie können auch die Berichtsbaumstruktur verwenden, um Konsolidierungsberichte für Unternehmenseinheiten, wie Berichte über weltweiten Vertrieb oder Arbeitsgänge zu erstellen. Diese Berichte sind eine allgemeine Anforderung. Um diese zu erstellen, wählen Sie ein Unternehmen und eine Dimension für jede Einheit aus, die Sie konsolidieren möchten. In der folgenden Abbildung wird beispielsweise die Zusammenfassung der Unternehmenseinheit abgewickelt, indem jedes Unternehmen in der Spalte **Unternehmen** (Spalte A) wiederholt und einer Gruppe mit Abteilungsdimensionswerten pro Unternehmen in der Spalte **Dimensionen** (Spalte D) identifiziert wird.
 
 ![Geschäftseinheiten-Konsolidierungsberichte.](./media/business-unit-consolidation-reports.png "Berichte zur Konsolidierung von Geschäftseinheiten")
 
@@ -218,7 +218,7 @@ Um die ordnungsgemäß umgerechneten Beträge zu erhalten, wenn Währungen verwe
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-Weitere Informationen zur Konsolidierung und Währungsumrechnung finden Sie im übergeordneten Thema dieses Themas, [Finanzkonsolidierungen und Übersicht zur Währungsumrechnung](./financial-consolidations-currency-translation.md).
+Weitere Informationen zur Konsolidierung und Währungsumrechnung finden Sie im übergeordneten Artikel [Finanzkonsolidierungen und Übersicht zur Währungsumrechnung](./financial-consolidations-currency-translation.md).
 
 Weitere Informationen zur Online-Erfassung von Konsolidierungsdetails finden Sie unter [Online-Finanzkonsolidierungen](./consolidate-online.md).
 

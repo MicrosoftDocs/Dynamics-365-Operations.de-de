@@ -1,6 +1,6 @@
 ---
 title: Einrichtung der Elektronischen Rechnungsstellung
-description: Dieses Thema bietet einen Überblick über den Prozess zur Einrichtung und Konfiguration der Elektronischen Rechnungsstellung.
+description: Dieser Artikel bietet einen Überblick über den Prozess zur Einrichtung und Konfiguration der Elektronischen Rechnungsstellung.
 author: dkalyuzh
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 42e617e26e7658fae9ee54cb8a4dee45314fddaa
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 8e2aa89119530a0ba00a8561d94006285d67a71b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661691"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883118"
 ---
 # <a name="electronic-invoicing-setup"></a>Einrichtung der Elektronischen Rechnungsstellung
 
 [!include [banner](../includes/banner.md)]
 
-Das Thema bietet einen Überblick über die Einrichtung und Konfiguration der Elektronischen Rechnungsstellung. Sie müssen die Schritte der Einrichtung in der hier angegebenen Reihenfolge durchführen. Wenn ein Schritt obligatorisch ist, Sie ihn aber überspringen, funktioniert die Funktionalität nicht korrekt und es kommt zu mehreren Fehlern bei nachfolgenden Schritten oder bei der Verwendung der Funktionalität. 
+Der Artikel bietet einen Überblick über die Einrichtung und Konfiguration der Elektronischen Rechnungsstellung. Sie müssen die Schritte der Einrichtung in der hier angegebenen Reihenfolge durchführen. Wenn ein Schritt obligatorisch ist, Sie ihn aber überspringen, funktioniert die Funktionalität nicht korrekt und es kommt zu mehreren Fehlern bei nachfolgenden Schritten oder bei der Verwendung der Funktionalität. 
 
 Bevor Sie beginnen, stellen Sie sicher, dass alle Hauptkomponenten korrekt eingerichtet sind, dass Sie sich für den Regulatory Configuration Service (RCS) angemeldet haben und über eine Instanz von RCS verfügen, und dass das Add-In für die Elektronische Rechnungsstellung für Ihre Microsoft Dynamics 365 Finance- oder Dynamics 365 Supply Chain Management-Umgebung installiert ist. Weitere Informationen finden Sie unter [Elektronische Rechnungsstellung einrichten und installieren](e-invoicing-install-add-in-microservices-lcs.md).
 

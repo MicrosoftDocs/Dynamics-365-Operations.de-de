@@ -1,6 +1,6 @@
 ---
 title: DE-00003 Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)
-description: In diesem Thema wird erläutert, wie Sie eine MwSt.-Erklärung übermitteln.
+description: In diesem Artikel wird erläutert, wie Sie eine MwSt.-Erklärung übermitteln.
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Germany
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3b6aa0f4ca9d062d227fe964960a80cf601ff4dc
-ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
+ms.openlocfilehash: 847c898c31f2136dffe420a8a9c1ee5d0fd6634a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7601477"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846445"
 ---
 # <a name="de-00003-electronic-transmission-of-vat-declaration-elster"></a>DE-00003 Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)
 

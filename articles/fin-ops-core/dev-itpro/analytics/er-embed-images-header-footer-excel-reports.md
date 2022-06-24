@@ -1,6 +1,6 @@
 ---
 title: Ein EB-Format entwerfen, um einen Bericht im Excel-Format mit eingebetteten Bildern in den Kopf- oder Fußzeilen einer Seite zu erstellen
-description: In diesem Thema wird erklärt, wie Sie mit Electronic Reporting (ER) geschäftliche Belege erzeugen können, die Bilder und Formen in Seitenkopf- oder Fußzeilen eingebettet haben.
+description: In diesem Artikel wird erklärt, wie Sie mit der elektronischen Berichterstellung (EB) geschäftliche Belege erzeugen können, die Bilder und Formen in Seitenkopf- oder Fußzeilen eingebettet haben.
 author: NickSelin
 ms.date: 08/11/2021
 ms.topic: article
@@ -15,25 +15,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3f3f77a9e6104a31995c9ee398504982fe43ac9e
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 1cfde60459e440c851edb97276321216b1654e40
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323774"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854842"
 ---
 # <a name="design-an-er-format-to-generate-a-report-in-excel-format-with-embedded-images-in-page-headers-or-footers"></a>Ein EB-Format entwerfen, um einen Bericht im Excel-Format mit eingebetteten Bildern in den Kopf- oder Fußzeilen einer Seite zu erstellen
 
 [!include[banner](../includes/banner.md)]
 
-Dieses Thema erläutert, wie ein Benutzer mit der Rolle des Systemadministrators oder des Functional Consultant für die elektronische Berichterstellung die folgenden Aufgaben ausführen kann:
+Dieser Artikel erläutert, wie Benutzer mit der Rolle des Systemadministrators oder des Functional Consultant für die elektronische Berichterstellung die folgenden Aufgaben ausführen kann:
 
 - Die Parameter für das Framework für die [elektronische Berichterstellung (EB)](general-electronic-reporting.md) konfigurieren.
 - EB-[Konfigurationen](general-electronic-reporting.md#Configuration) importieren, die von Microsoft [bereitgestellt](general-electronic-reporting.md#Provider) und zum Generieren von [Freitextrechnungen](../../../finance/accounts-receivable/create-free-text-invoice-new.md)auf Basis einer [Vorlage](er-fillable-excel.md#excel-file-component) im Microsoft Excel-Format verwendet werden.
 - Eine [benutzerdefinierte (abgeleitete)](general-electronic-reporting.md#building-a-format-selecting-another-format-as-a-base-customization) Version einer standardmäßigen EB-Formatkonfiguration erstellen, die von Microsoft bereitgestellt wird.
 - Die Konfiguration des benutzerdefinierten EB-Formats ändern, sodass ein Freitextrechnungsbericht mit einem Firmenlogo in der Fußzeile generiert wird.
 
-Die Prozeduren in diesem Thema können im **USMF**-Unternehmen erledigt werden. Eine Codierung ist nicht erforderlich. Bevor Sie beginnen, laden Sie die folgende Datei herunter und speichern Sie sie.
+Die Verfahren in diesem Artikel können im **USMF**-Unternehmen abgeschlossen werden. Eine Codierung ist nicht erforderlich. Bevor Sie beginnen, laden Sie die folgende Datei herunter und speichern Sie sie.
 
 | Beschreibung        | Dateiname |
 |--------------------|-----------|
@@ -132,7 +132,7 @@ Weitere Informationen zu EB-Konfigurationsanbietern finden Sie unter [Erstellen 
 
 ### <a name="import-the-standard-er-configurations"></a><a id="ImportERFormat"></a>Importieren der standardmäßigen EB-Konfigurationen
 
-Um Ihrer aktuellen Instanz von Dynamics 365 Finance die standardmäßigen EB-Konfigurationen hinzuzufügen, müssen Sie sie aus dem EB-[Repository](general-electronic-reporting.md#Repository) importieren, das für diese Instanz konfiguriert wurde.
+Um Ihrer aktuellen Dynamics 365 Finance-Instanz die standardmäßigen EB-Konfigurationen hinzuzufügen, müssen Sie sie aus dem EB-[Repository](general-electronic-reporting.md#Repository) importieren, das für diese Instanz konfiguriert wurde.
 
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
 2. Wählen Sie auf der Seite **Lokalisierungskonfigurationen** im Bereich **Konfigurationsanbieter** die Kachel **Microsoft** aus. Wählen Sie dann **Repositorys** aus, um die Liste der Repositorys für den **Microsoft**-Anbieter anzuzeigen.

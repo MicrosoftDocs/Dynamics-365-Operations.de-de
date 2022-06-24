@@ -1,6 +1,6 @@
 ---
 title: Neuerungen und Änderungen in Dynamics 365 Human Resources 12. Juli 2021
-description: Dieses Thema beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 12. Juli 2021 neu sind oder geändert wurden.
+description: Dieser Artikel beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 12. Juli 2021 neu sind oder geändert wurden.
 author: marcelbf
 ms.date: 07/12/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-12
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c01d00e7ede44c20e64fc4a8cd8646201caa3992
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 259004773c4e5a7d8865d563da9bcfea3a116632
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686798"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870957"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-12-2021"></a>Neuerungen und Änderungen in Dynamics 365 Human Resources 12. Juli 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Human Resources neu oder geändert wurden oder demnächst verfügbar sind.
+Dieser Artikel beschreibt Funktionen, die in Dynamics 365 Human Resources neu oder geändert sind oder bald eingeführt werden.
 
 Weitere Informationen zu unserem Aktualisierungsprozess und Zeitplan finden Sie unter [Aktualisierungsprozess](hr-admin-setup-update-process.md).
 
@@ -49,9 +49,9 @@ Die folgenden Funktionen sind in dieser Version allgemein verfügbar.
 Die folgenden Fehlerkorrekturen sind in diesem Release enthalten.
 
 > [!NOTE]
-> Unser Ziel ist es, Ihnen diese Informationen so schnell wie möglich zukommen zu lassen. Wir können dieses Thema aktualisieren, um Fehlerbehebungen aufzunehmen, die es nach der Erstveröffentlichung dieses Themas in den Build geschafft haben.
+> Unser Ziel ist es, Ihnen diese Informationen so schnell wie möglich zukommen zu lassen. Wir können diesen Artikel aktualisieren, um Fehlerbehebungen aufzunehmen, die es nach der Erstveröffentlichung dieses Artikels in den Build geschafft haben.
 
-| Problemnummer | Problem |  Beschreibung |
+| Problemnummer | Problem |  Description |
 | --- | --- | --- |
 | 595871 | Der Infobereich in der Personalabteilung hat eine falsche Dataverse Terminologie | Mit der Umbenennung von Common Data Service zu Dataverse wurde die Terminologie im Microsoft Dynamics 365 Human Resources Informationsbereich aktualisiert (**Hilfe & Support > Über**). |
 | 598676 | Ein optimiertes Mitarbeitereingabeformular überschreibt die Aufgabe und kann bei Verwendung mit der gespeicherten Ansicht zu einem Fehler führen| Auf der **Arbeitskraft** Seite, wenn die Funktion optimierte Mitarbeitereingabe aktiviert ist, kann die Anwendung fehlschlagen, wenn **Immer zum Bearbeiten geöffnet** in der gespeicherten Ansicht eingestellt ist. |

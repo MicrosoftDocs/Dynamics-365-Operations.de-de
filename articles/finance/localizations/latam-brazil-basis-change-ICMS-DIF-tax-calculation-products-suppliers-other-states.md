@@ -1,6 +1,6 @@
 ---
 title: Basisänderung in ICMS-DIF-Steuerberechnungen bei Produkten von Lieferanten aus anderen Staaten
-description: In diesem Thema wird die Konfiguration für die Berechnungen des ICMS-DIF-Steuertyps beschrieben, wenn ein Steuerdokument im brasilianischen Bundesstaat Rio Grande do Sul (RS) oder São Paulo (SP) eingeht.
+description: In diesem Artikel wird die Konfiguration für die Berechnungen des ICMS-DIF-Steuertyps beschrieben, wenn ein Steuerdokument im brasilianischen Bundesstaat Rio Grande do Sul (RS) oder São Paulo (SP) eingeht.
 author: Kai-Cloud
 ms.date: 1/20/2022
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2022-1-17
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 63e3cbaaf77456b55f08ea91831ba9d49cb57185
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 1fde18c79f375db4db6bc52cdb5c40a61625ae63
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689155"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868261"
 ---
 # <a name="basis-change-in-icms-dif-tax-calculations-for-products-from-suppliers-in-other-states"></a>Basisänderung in ICMS-DIF-Steuerberechnungen bei Produkten von Lieferanten aus anderen Staaten
 
-In diesem Thema wird die Konfiguration für die Berechnungen des **ICMS-DIF**-Steuertyps beschrieben, wenn ein Steuerdokument im brasilianischen Bundesstaat Rio Grande do Sul (RS) oder São Paulo (SP) eingeht.
+In diesem Artikel wird die Konfiguration für die Berechnungen des **ICMS-DIF**-Steuertyps beschrieben, wenn ein Steuerdokument im brasilianischen Bundesstaat Rio Grande do Sul (RS) oder São Paulo (SP) eingeht.
 
 Gemäß der Definition im Landesgesetz muss die erhobene Imposto sobre Circulação de Mercadorias e Serviços (ICMS) dieser Regel folgen:
 

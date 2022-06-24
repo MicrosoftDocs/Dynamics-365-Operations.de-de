@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 666ecc5b4e0df9ed518e8e9dabc1babd442508bc
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: 34851d17e08c56d2972b5fed558ae1fc19fd5ede
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487612"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880989"
 ---
 # <a name="configure-address-books"></a>Konfigurieren von Adressbüchern
 
 [!include [banner](../../includes/banner.md)]
 
-Mit diesem Verfahren und die Entscheidungen, die Sie in der Planung die Konfiguration für das globale Adressbuch und zusätzlichen des Adressbuch themas treffen, um zusätzliche Adressbüchern für Ihre Organisation einrichten.
+Verwenden Sie dieses Verfahren und die Entscheidungen, die Sie im Artikel „Konfiguration des globalen Adressbuchs und zusätzlicher Adressbücher planen“ getroffen haben, um zusätzliche Adressbücher für Ihre Organisation einzurichten.
 
 Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USMF.
 

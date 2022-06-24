@@ -1,6 +1,6 @@
 ---
 title: Erweiterte Filter- und Abfragesyntax
-description: In diesem Thema werden die Filter- und Abfrageoptionen für das Dialogfeld „Erweiterter Filter/Sortierung“ und den Übereinstimmungsoperator im Filterbereich oder in den Filtern in den Spaltenüberschriften des Gitters beschrieben.
+description: In diesem Artikel werden die Filter- und Abfrageoptionen für das Dialogfeld „Erweiterter Filter/Sortierung“ und den Übereinstimmungsoperator im Filterbereich oder in den Filtern in den Spaltenüberschriften des Gitters beschrieben.
 author: jasongre
 ms.date: 03/09/2020
 ms.topic: article
@@ -15,21 +15,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0fefac5a7a2b299ba606a854824ee456c572487
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 520c8b32099024e9a9619a6ecdcd3ba7b97c7ecf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070008"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856917"
 ---
-# <a name="advanced-filtering-and-query-syntax"></a>Erweiterte Filter- und Abfragesyntax
+# <a name="advanced-filtering-and-query-syntax"></a>Erweiterter Filter- und Abfragesyntax
 
 [!include [banner](../includes/banner.md)]
 
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-In diesem Thema werden die Filter- und Abfrageoptionen beschrieben, die verfügbar sind, wenn Sie das Dialogfeld Erweitertes Filter/Sortierung oder den Operator **Übereinstimmungen** im Filterbereich oder den Spaltenüberschriftsfiltern des Gitters verwenden.
+**Erweiterte Filter- und Abfragesyntax** - In diesem Artikel werden die Filter- und Abfrageoptionen beschrieben, die verfügbar sind, wenn Sie den Operator "entspricht" im Dialogfeld "Erweitertes Filtern/Sortieren" verwenden.
 
 ## <a name="advanced-query-syntax"></a>Erweiterte Suchsyntax
 

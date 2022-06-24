@@ -1,6 +1,6 @@
 ---
 title: Komprimieren großer Dokumente, die in der elektronischen Berichterstellung generiert werden
-description: In diesem Thema wird erläutert, wie Sie große Dokumente komprimieren, die von einem Format für die elektronische Berichterstellung (EB) generiert werden.
+description: In diesem Artikel wird erläutert, wie Sie große Dokumente komprimieren, die von einem Format für die elektronische Berichterstellung (EB) generiert werden.
 author: NickSelin
 ms.date: 09/11/2020
 ms.topic: article
@@ -15,25 +15,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 7ef8f730f2e207a8fd28c2bf5167d14f57d6c607314bfc48d4358a59d3ef5c43
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9a4995879717e715f8ebadb6a80e00949df7545c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718598"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864806"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Komprimieren großer Dokumente, die in der elektronischen Berichterstellung generiert werden 
 
 [!include [banner](../includes/banner.md)]
 
-Sie können das [Framework für die elektronische Berichterstellung (EB)](general-electronic-reporting.md) verwenden, um eine Lösung zu konfigurieren, die Transaktionsdaten abruft, um ein ausgehendes Dokument zu generieren. Dieses generierte Dokument ist möglicherweise sehr groß. Wenn dieser Dokumenttyp generiert wird, wird der Speicher des [Anwendungsobjektservers (AOS)](../dev-tools/access-instances.md#location-of-packages-source-code-and-other-aos-configurations) zur Speicherung verwendet. Irgendwann muss das Dokument dann aus Ihrer Microsoft Dynamics 365 Finance-Anwendung heruntergeladen werden. Derzeit ist die maximale Größe eines einzelnen Dokuments, das in EB generiert werden kann, auf 2 Gigabyte (GB) begrenzt. Des Weiteren [begrenzt](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) Finance die Größe einer heruntergeladenene Datei derzeit auf 1 GB. Daher müssen Sie eine EB-Lösung konfigurieren, die die Wahrscheinlichkeit verringert, dass diese Einschränkungen überschritten werden und Sie eine Ausnahme **Stream war zu lang** oder **Überlauf oder Unterlauf in der Rechenoperation** erhalten.
+Sie können das [Framework für die elektronische Berichterstellung (EB)](general-electronic-reporting.md) verwenden, um eine Lösung zu konfigurieren, die Transaktionsdaten abruft, um ein ausgehendes Dokument zu generieren. Dieses generierte Dokument ist möglicherweise sehr groß. Wenn dieser Dokumenttyp generiert wird, wird der Speicher des [Anwendungsobjektservers (AOS)](../dev-tools/access-instances.md#location-of-packages-source-code-and-other-aos-configurations) zur Speicherung verwendet. Irgendwann muss das Dokument dann von Ihrer Microsoft Dynamics 365 Finance-Anwendung heruntergeladen werden. Derzeit ist die maximale Größe eines einzelnen Dokuments, das in EB generiert werden kann, auf 2 Gigabyte (GB) begrenzt. Des Weiteren [begrenzt](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) Finance die Größe einer heruntergeladenene Datei derzeit auf 1 GB. Daher müssen Sie eine EB-Lösung konfigurieren, die die Wahrscheinlichkeit verringert, dass diese Einschränkungen überschritten werden und Sie eine Ausnahme **Stream war zu lang** oder **Überlauf oder Unterlauf in der Rechenoperation** erhalten.
 
 Wenn Sie eine Lösung konfigurieren, können Sie Ihr EB-Format im Vorgangs-Designer anpassen, indem Sie ein Stammelement vom Typ **Ordner** hinzufügen, um den Inhalt zu komprimieren, der von einem der verschachtelten Elemente generiert wird. Die Komprimierung arbeitet „just in time“, sodass die maximale Speichernutzung und die Größe der herunterzuladenden Datei verringert werden können.
 
 > [!NOTE]
 > Die Komprimierung nimmt einen zusätzlichen Prozentsatz der CPU-Auslastung in Anspruch.
 
-Weitere Informationen zu diesem Ansatz erhalten Sie, wenn Sie das Beispiel in diesem Thema abschließen.
+Weitere Informationen zu diesem Ansatz erhalten Sie, wenn Sie das Beispiel in diesem Artikel abschließen.
 
 ## <a name="example-compress-an-outbound-document"></a>Beispiel: Komprimieren eines ausgehenden Dokuments
 
@@ -41,7 +41,7 @@ Dieses Beispiel zeigt, wie ein Benutzer, dem die Rolle **Systemadministrator** o
 
 ### <a name="prerequisites"></a>Voraussetzungen
 
-Bevor Sie die Prozeduren in diesem Thema abschließen können, müssen die folgenden Schritte abgeschlossen werden.
+Bevor Sie die Prozeduren in diesem Artikel abschließen können, müssen die folgenden Schritte abgeschlossen werden.
 
 1. [Aktivieren eines Konfigurationsanbieters](er-defer-xml-element.md#activate-a-configuration-provider).
 2. [Importieren Sie die EB-Beispielkonfigurationen](er-defer-xml-element.md#import-the-sample-er-configurations).

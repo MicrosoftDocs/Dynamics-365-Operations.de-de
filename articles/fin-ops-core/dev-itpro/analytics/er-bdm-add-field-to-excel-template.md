@@ -1,6 +1,6 @@
 ---
-title: Hinzufügen neuer Felder zu einer Geschäftsdokumentvorlage in Microsoft Excel
-description: In diesem Thema erfahren Sie, wie Sie mit der Funktion Geschäftsdokumentenverwaltung neue Felder zu einer Geschäftsdokumentvorlage in Microsoft Excel hinzufügen können.
+title: Einer Geschäftsdokumentvorlage in Microsoft Excel neue Felder hinzufügen
+description: In diesem Artikel erfahren Sie, wie Sie mit der Funktion der Geschäftsdokumentverwaltung neue Felder zu einer Geschäftsdokumentvorlage in Microsoft Excel hinzufügen können.
 author: NickSelin
 ms.date: 11/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 57eebdc38fb3f74690b92c03fa60e10c7610db1fe413320a6d167f05b0658bf1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8395a87e88ebbd1942c87da0cecebe6d25bdf625
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767241"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869401"
 ---
 # <a name="add-new-fields-to-a-business-document-template-in-microsoft-excel"></a>Hinzufügen neuer Felder zu einer Geschäftsdokumentvorlage in Microsoft Excel
 
@@ -28,14 +28,14 @@ ms.locfileid: "6767241"
 
 Sie können einer Vorlage, die zur Generierung von Geschäftsdokumenten im Format Microsoft Excel verwendet wird, neue Felder hinzufügen. Diese Felder können als Platzhalter hinzugefügt werden, mit denen generierte Dokumente mit den erforderlichen Informationen aus der Anwendung gefüllt werden. Für jedes Feld, das Sie hinzufügen, können Sie auch eine Bindung zu den Datenquellen angeben, um festzulegen, welche Anwendungsdaten in das Feld eingegeben werden, wenn die Vorlage zur Generierung von Geschäftsdokumenten verwendet wird.
 
-Weitere Informationen über diese Funktion erhalten Sie, wenn Sie das Beispiel in diesem Thema abschließen. Dieses Beispiel zeigt, wie Sie eine Vorlage aktualisieren, um die Felder in den generierten Freitext-Rechnungsformularen auszufüllen.
+Weitere Informationen über diese Funktion erhalten Sie, wenn Sie das Beispiel in diesem Artikel abschließen. Dieses Beispiel zeigt, wie Sie eine Vorlage aktualisieren, um die Felder in den generierten Freitext-Rechnungsformularen auszufüllen.
 
 ## <a name="configure-business-document-management-to-edit-templates"></a>Konfigurieren Sie die Geschäftsdokumentenverwaltung, um Vorlagen zu bearbeiten.
 
 Da die Geschäftsdokumentenverwaltung (BDM) auf dem [Überblick über die elektronische Berichterstattung (ER)](general-electronic-reporting.md) aufbaut, müssen Sie die erforderlichen ER- und BDM-Parameter konfigurieren, bevor Sie mit BDM arbeiten können.
 
 1.  Melden Sie sich auf der Instanz von Microsoft Dynamics 365 Finance als Systemadministrator an.
-2.  Führen Sie die folgenden Schritte des Beispiels im Thema [Übersicht Geschäftsdokumentenverwaltung](er-business-document-management.md) aus:
+2.  Führen Sie die folgenden Schritte des Beispiels im Artikel [Übersicht Geschäftsdokumentverwaltung](er-business-document-management.md) aus:
 
     1.  ER-Parameter konfigurieren.
     2.  Schalten Sie BDM ein.
@@ -64,7 +64,7 @@ Weitere Informationen zum Importieren von ER-Konfigurationen finden Sie unter [V
 5.  Geben Sie im Feld **Titel** als Titel der neuen Vorlage **Freitextrechnung (Excel) Contoso** ein.
 6.  Wählen Sie **OK** aus, um den Beginn des Bearbeitungsprozesses zu bestätigen.
 
-Die Seite mit dem Editor für BDM-Vorlagen wird angezeigt. Mit Microsoft 365 können Sie die ausgewählte Vorlage online in der eingebetteten Steuerung bearbeiten.
+Die Seite mit dem Editor für BDM-Vorlagen wird angezeigt. Mit Microsoft 365 können Sie die ausgewählte Vorlage online im eingebetteten Control bearbeiten.
 
 ![BDM-Vorlagen-Editor-Seite.](./media/BDM-AddFldExcel-EditableTemplate.png)
 
@@ -150,7 +150,7 @@ Im Arbeitsbereich **Geschäftsdokumentenmanagement** zeigt die Registerkarte **V
 4.  Wählen Sie unter **Freitextrechnung** die Ebene **Originalbeleg**, um den Umfang der zu bearbeitenden Rechnungen festzulegen.
 5.  Wählen Sie im rechten Bereich im Feld **Berichtsformat** die Vorlage **Freitextrechnung (Excel) Contoso** für die angegebene Dokumentebene.
 
-    ![Freitextrechnung (Excel) Contoso-Vorlage ausgewählt.](./media/BDM-AddFldExcel-PrintMngtSetting.png)
+    ![Freitextrechnung (Excel) Contoso-Vorlage ausgewählt](./media/BDM-AddFldExcel-PrintMngtSetting.png)
 
 6.  Drücken Sie **Esc**, um die aktuelle Seite zu schließen.
 7.  Wählen Sie **Drucken \> Ausgewählt**.

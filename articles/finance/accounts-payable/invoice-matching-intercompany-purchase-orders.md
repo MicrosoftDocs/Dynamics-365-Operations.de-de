@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e884e96e1275f9162b642bbe48c2d891c6434002
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: d4be32a7158561bdf00a996831dca7395ce6f331
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109967"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879739"
 ---
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Rechnungsabgleich und Intercompany-Bestellungen
 
@@ -28,7 +28,7 @@ ms.locfileid: "8109967"
 
 Die einkaufende juristische Person, die in eine Buchung des Intercompany-Handels einbezogen ist, kann auch so eingerichtet werden, dass der Kreditorenrechnungsabgleich verwendet wird. Wenn das Feld **Rechnung mit Abweichungen buchen** auf der Seite **Kreditorenkontenparameter** auf **Genehmigung anfordern** festgelegt wird, wird der Rechnungsabgleich ausgeführt. In diesem Fall müssen sowohl die Buchungsanforderungen für den Intercompany-Handel und der Kreditorenrechnungsabgleich erfüllt sein, bevor Intercompany-Kreditorenrechnungen gebucht werden können.
 
-Die Beispiele in diesem Thema verwenden die folgenden Einstellungen für den Intercompany-Handel:
+Die Beispiele in diesem Artikel verwenden die folgenden Einstellungen für den Intercompany-Handel:
 -   Fabrikam Purchase ist die einkaufende juristische Person.
 -   Fabrikam Sales ist die verkaufende juristische Person.
 -   In Fabrikam Verkauf ist der Debitor "4020" vorhanden.

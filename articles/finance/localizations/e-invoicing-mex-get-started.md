@@ -1,6 +1,6 @@
 ---
 title: Erste Schritte mit der elektronischen Rechnungsstellung für Mexiko
-description: Dieses Thema enthält Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung für Mexiko erleichtern.
+description: Dieser Artikel enthält Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung für Mexiko erleichtern.
 author: gionoder
 ms.date: 12/01/2020
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6fc8a9eaf6c6e4c82719e7c1ebccd4272548e73f
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 540b6e6f9b4b669957cc3310e473ad59b9210594
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565998"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855328"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Erste Schritte mit der elektronischen Rechnungsstellung für Mexiko
 
@@ -31,11 +31,11 @@ ms.locfileid: "8565998"
 > [!IMPORTANT]
 > Die elektronische Rechnungsstellung für Mexiko unterstützt derzeit eventuell nicht alle Funktionen, die im Dokument „Comprobante Fiscal Digital por Internet (CFDI)“ und in der zugehörigen Integration in Microsoft Dynamics 365 Finance oder Dynamics 365 Supply Chain Management verfügbar sind.
 
-Dieses Thema enthält Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung für Mexiko erleichtern. Es führt Sie durch die Konfigurationsschritte, die in Regulatory Configuration Services (RCS) sowie in Finance länderabhängig sind. Außerdem werden Sie durch die Schritte geführt, die Sie in Finance ausführen müssen, um CFDI-Rechnungen über den Service zu übermitteln, und es wird erläutert, wie Sie die Verarbeitungsergebnisse und den Status von CFDI-Rechnungen überprüfen.
+Dieser Artikel enthält Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung für Mexiko erleichtern. Es führt Sie durch die Konfigurationsschritte, die in Regulatory Configuration Services (RCS) sowie in Finance länderabhängig sind. Außerdem werden Sie durch die Schritte geführt, die Sie in Finance ausführen müssen, um CFDI-Rechnungen über den Service zu übermitteln, und es wird erläutert, wie Sie die Verarbeitungsergebnisse und den Status von CFDI-Rechnungen überprüfen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Bevor Sie die Schritte in diesem Thema ausführen, müssen Sie die Schritte in [Erste Schritte mit Serviceverwaltung der elektronischen Rechnungsstellung](e-invoicing-get-started-service-administration.md) und [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md) ausführen.
+Bevor Sie die Schritte in diesem Artikel ausführen, müssen Sie die Schritte in [Erste Schritte mit der Dienstverwaltung für die elektronische Rechnungsstellung](e-invoicing-get-started-service-administration.md) und [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md) ausführen.
 
 ## <a name="set-up-the-cadena-xslt"></a>Cadena XSLT einrichten
 

@@ -1,6 +1,6 @@
 ---
 title: Freitextrechnung erstellen
-description: In diesem Thema wird erläutert, wie Freitextrechnungen erstellt werden.
+description: In diesem Artikel wird erläutert, wie Freitextrechnungen erstellt werden.
 author: abruer
 ms.date: 02/15/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 6e9578d9b2d61f241ab5e92fc9740b88b80969f6
-ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
+ms.openlocfilehash: 87dc6334baa83ace23b77d94da4d1e464cb0b574
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "8392884"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878159"
 ---
 # <a name="create-a-free-text-invoice"></a>Freitextrechnung erstellen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Freitextrechnungen erstellt werden. Für diese Prozedur wird das Demo-Unternehmen **USMF** verwendet.
+In diesem Artikel wird erläutert, wie Freitextrechnungen erstellt werden. Für diese Prozedur wird das Demo-Unternehmen **USMF** verwendet.
 
 ## <a name="create-a-free-text-invoice"></a>Freitextrechnung erstellen
 
@@ -37,7 +37,7 @@ In diesem Thema wird erläutert, wie Freitextrechnungen erstellt werden. Für di
     * Wenn Sie einheitliche Euro-Zahlungsverkehrsraum-Vollmachten (SEPA) verwenden, wird das Direkteinzugsmandat automatisch mit einer Vollmacht aufgefüllt, wenn Sie das Debitorenkonto auswählen.
 
 4. Geben Sie im Feld **Beschreibung** einen Wert ein, oder wählen Sie einen Wert aus.
-5. Geben Sie im Feld **Hauptkonto** eine Kontonummer ohne Dimensionen an. Sie öffnen Finanzdimensionen weiter unten in diesem Handbuch.
+5. Geben Sie im Feld **Hauptkonto** eine Kontonummer ohne Dimensionen an. Sie geben Dimensionen weiter unten in diesem Artikel ein.
 
     Sie können auch ein oder mehrere Zeichen für das Hauptkonto eingeben und die Suche verwenden, um Ihr Konto zu suchen.
 

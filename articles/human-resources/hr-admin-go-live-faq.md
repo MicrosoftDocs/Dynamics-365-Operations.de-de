@@ -1,6 +1,6 @@
 ---
-title: FAQ live schalten
-description: In diesem Thema werden häufig gestellte Fragen zur Liveschaltung mit einem Dynamics 365 Human Resources Implementierungsprojekt behandelt.
+title: Häufig gestellte Fragen zur Liveschaltung
+description: In diesem Artikel werden häufig gestellte Fragen zur Liveschaltung mit einem Dynamics 365 Human Resources-Implementierungsprojekt behandelt.
 author: rachel-profitt
 ms.date: 10/13/2020
 ms.topic: article
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e5b0f58c7ebf03466805d20806316f6f1c32e4a4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: dfb2434b0d0573f2edab228fcca77ee653d751a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695359"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853102"
 ---
-# <a name="go-live-faq"></a>FAQ live schalten 
+# <a name="go-live-faq"></a>Häufig gestellte Fragen zur Liveschaltung 
 
 
 [!INCLUDE [PEAP](../includes/peap-2.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "8695359"
 
 
 
-In diesem Thema werden häufig gestellte Fragen zur Liveschaltung mit einem Dynamics 365 Human Resources Implementierungsprojekt behandelt. 
+In diesem Artikel werden häufig gestellte Fragen zur Liveschaltung mit einem Dynamics 365 Human Resources-Implementierungsprojekt behandelt. 
 
 ## <a name="when-can-i-configure-and-request-my-production-environment"></a>Wann kann ich meine Produktionsumgebung konfigurieren und anfordern? 
 

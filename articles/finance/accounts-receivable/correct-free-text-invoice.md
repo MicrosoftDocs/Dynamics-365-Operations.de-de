@@ -1,6 +1,6 @@
 ---
 title: Berichtigung einer Freitextrechnung
-description: In diesem Thema wird beschrieben, wie eine Freitextrechnung, die gebucht wurde, korrigiert und als korrigierte Rechnung erneut ausgestellt wird.
+description: In diesem Artikel wird beschrieben, wie eine Freitextrechnung, die gebucht wurde, korrigiert und als korrekte Rechnung erfasst wird.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fb535b14f4c270f914a427d09027c37b3be7b72
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 9fccd6dbb33efd1556c56a6d92ad191ecfd317fe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716212"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878188"
 ---
 # <a name="correct-a-free-text-invoice"></a>Berichtigung einer Freitextrechnung
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie eine Freitextrechnung, die gebucht wurde, korrigiert und als korrigierte Rechnung erneut ausgestellt wird.
+In diesem Artikel wird beschrieben, wie eine Freitextrechnung, die gebucht wurde, korrigiert und als korrekte Rechnung erfasst wird.
 
 Um eine Freitextrechnung zu korrigieren, die bereit gebucht wurde, öffnen Sie die gebuchte Freitextrechnung. Auf der Seite **Rechnung**  wählen Sie **Abbrechen**, und dann **Rechnung korrigieren**. Wählen Sie einen Ursachencode aus, und geben Sie Kommentare ein, und wählen Sie Datum für die korrigierte Rechnung ein. Sie können die berichtigte Rechnung bearbeiten und buchen. 
 
@@ -44,7 +44,7 @@ Sie können Storno- und Korrekturrechnungen auf zwei Arten identifizieren:
 -   Der Kopf der Freitextrechnung zeigt den Status **Rechnung stornieren**\[Rechnungsnummer\]oder **korrekte Rechnungsnummer '\[Rechnungsnummer\]'**.
 
 > [!NOTE]
-> Diese Funktion ist nur verfügbar, wenn der Konfigurarionsschlüsse **Freitext-Rechnungskorrektur** ausgewählt ist. Weitere Informationen dazu, wie Sie Konfigurationsschlüssel aktivieren, finden Sie im Abschnitt zum Aktivieren (oder Deaktivieren) von Konfigurationsschlüsseln im Thema [Wartungsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md). 
+> Diese Funktion ist nur verfügbar, wenn der Konfigurarionsschlüsse **Freitext-Rechnungskorrektur** ausgewählt ist. Weitere Informationen dazu, wie Sie Konfigurationsschlüssel aktivieren, finden Sie im Abschnitt zum Aktivieren (oder Deaktivieren) von Konfigurationsschlüsseln im Artikel [Wartungsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md). 
 
 
 

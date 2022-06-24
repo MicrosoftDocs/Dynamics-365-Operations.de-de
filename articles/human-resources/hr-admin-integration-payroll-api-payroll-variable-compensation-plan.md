@@ -1,6 +1,6 @@
 ---
 title: Variabler Vergütungsplan für Lohnabrechnung
-description: Dieses Thema enthält Details und eine Beispielabfrage für die Entität „Variabler Vergütungsplan für Lohnabrechnung“ in Dynamics 365 Human Resources.
+description: Dieser Artikel enthält Details und eine Beispielabfrage für die Entität „Variabler Vergütungsplan für Lohnabrechnung“ in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 06/15/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-06-15
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c5cc9e02ff2dd49e2eb0c8131fcff2eca4b9c3b1
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: 5c6190084c3f1ce15d6a4ab8f13843a5da801dd3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533646"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868129"
 ---
 # <a name="payroll-variable-compensation-plan"></a>Variabler Vergütungsplan für Lohnabrechnung
 
@@ -27,7 +27,7 @@ ms.locfileid: "8533646"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In diesem Thema wird die Entität „Variabler Vergütungsplan für Lohnabrechnung“ für Dynamics 365 Human Resources beschrieben.
+In diesem Artikel wird die Entität „Variabler Vergütungsplan für Lohnabrechnung“ für Dynamics 365 Human Resources beschrieben.
 
 ### <a name="description"></a>Beschreibung
 

@@ -1,6 +1,6 @@
 ---
 title: Integration von Notizen
-description: In diesem Thema wird die Integration von Notizdaten in dualem Schreiben erläutert
+description: In diesem Artikel wird die Integration von Notizdaten in dualem Schreiben erläutert
 author: RamaKrishnamoorthy
 ms.date: 02/22/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c73da804d724ea75ae6ccd479d1b7f3cf02d48c4
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8e1444aa311bb2dc74705a3791e58c3187ecd8ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062774"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876714"
 ---
 # <a name="note-integration"></a>Integration von Notizen
 
@@ -22,7 +22,7 @@ ms.locfileid: "8062774"
 
 
 
-Im Verlauf von Geschäftsprozessen sammeln Benutzer von Microsoft Dynamics 365 häufig Informationen über ihre Kunden. Diese Informationen werden als Aktivitäten und Notizen aufgezeichnet. In diesem Thema wird die Integration von Notizdaten in dualem Schreiben erläutert
+Im Verlauf von Geschäftsprozessen sammeln Benutzer von Microsoft Dynamics 365 häufig Informationen über ihre Kunden. Diese Informationen werden als Aktivitäten und Notizen aufgezeichnet. In diesem Artikel wird die Integration von Notizdaten in dualem Schreiben erläutert
 
 Informationen über Kunden können folgendermaßen klassifiziert werden:
 

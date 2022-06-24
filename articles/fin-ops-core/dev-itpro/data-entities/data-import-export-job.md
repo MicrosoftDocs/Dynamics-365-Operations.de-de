@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74430aadc661a49e330960135ce7b0912079f79b
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 1407c6def22b9759723e49fb2fa6d4d68f180891
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644458"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860163"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Einzelvorgänge für Datenimport und ‑export – Übersicht
 
@@ -29,7 +29,7 @@ ms.locfileid: "8644458"
 Um Datenimport- und Datenexporteinzelvorgänge zu erstellen und zu verwalten, verwenden Sie den Arbeitsbereich **Datenverwaltung**. Standardmäßig der Datenimport und der Exportvorgang eine für jede Stagingtabelle Entität in der Zieldatenbank erstellt. Mit Stagingtabellen können Sie Daten prüfen, bereinigen oder konvertieren, bevor Sie diese verschieben.
 
 > [!NOTE]
-> Für dieses Thema wird vorausgesetzt, dass Sie sich mit dem Thema [Datenentitäten](data-entities.md) vertraut gemacht haben.
+> Für diesen Artikel wird vorausgesetzt, dass Sie sich mit dem Thema [Datenentitäten](data-entities.md) vertraut gemacht haben.
 
 ## <a name="data-importexport-process"></a>Prozess für Datenimport und -export
 Nachfolgend sind die Schritte dargestellt, um Daten zu importieren oder zu exportieren.
@@ -48,7 +48,7 @@ Nachfolgend sind die Schritte dargestellt, um Daten zu importieren oder zu expor
 5. Überprüfen Sie, ob der Einzelvorgang z erwartet ausgeführt wurde, da die Einzelvorgangshistorie hat.
 6. Bereinigen der Tabellen.
 
-Die verbleibenden Themen enthalten zusätzliche Details für jeden Schritt des Prozesses.
+Die verbleibenden Abschnitte dieses Artikels enthalten zusätzliche Details für jeden Schritt des Prozesses.
 
 > [!NOTE]
 > Um das Exportformular Datenimport/export zu aktualisieren um den aktuellen Status anzuzeigen, verwenden Sie das Formularaktualisierungssymbol. Die Aktualisierung des Browsers wird nicht empfohlen, da alle Import-/Exporteinzelvorgänge unterbrochen werden, die nicht in Stapelverarbeitung ausgeführt werden.

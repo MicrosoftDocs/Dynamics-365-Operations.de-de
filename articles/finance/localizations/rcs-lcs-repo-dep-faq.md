@@ -1,6 +1,6 @@
 ---
 title: Regulatory Configuration Service (RCS) – Lifecycle Services (LCS)-Speichereinstellung
-description: Dieses Thema enthält Informationen zur Einstellung des Microsoft Dynamics Lifecycle Services (LCS)-Speichers, der als Teil des Rollouts des globalen Regulatory Configuration Service (RCS)-Repositorys geplant ist.
+description: Dieser Artikel enthält Informationen zur Einstellung des Microsoft Dynamics Lifecycle Services (LCS)-Speichers, der als Teil des Rollouts des globalen Regulatory Configuration Service (RCS)-Repositorys geplant ist.
 author: JaneA07
 ms.date: 10/27/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 8862f42f3ceaed7e1413c49cf9b91f0449fab67b
-ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
+ms.openlocfilehash: 4a35941d1521d26f95bacf29213fee42daeb42ab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547981"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849730"
 ---
 # <a name="regulatory-configuration-service-rcs--lifecycle-services-lcs-storage-deprecation"></a>Regulatory Configuration Service (RCS) – Lifecycle Services (LCS)-Speichereinstellung
 
@@ -85,7 +85,7 @@ RCS verwendet das Konzept einer *verbundenen Anwendung*. Eine verbundene Anwendu
 
 ### <a name="are-there-any-examples-that-show-the-setup-and-management"></a>Gibt es Beispiele, die die Einrichtung und Verwaltung zeigen?
 
-Es gibt keine Beispiele, aber Sie können die Schritte weiter oben in diesem Thema ausführen, um Ihre Konfigurationen in das RCS Global Repository zu migrieren.
+Es gibt keine Beispiele, aber Sie können die Schritte weiter oben in diesem Artikel ausführen, um Ihre Konfigurationen in das RCS Global Repository zu migrieren.
 
 ### <a name="is-rcs-a-prerequisite-to-configure-electronic-reporting"></a>Ist RCS eine Voraussetzung für die Konfiguration der elektronischen Berichterstellung?
 

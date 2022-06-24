@@ -1,6 +1,6 @@
 ---
 title: Schwellenwert und Ausnahmeschwellenwert
-description: Dieses Thema beschreibt die Schwellenwerte und Ausnahmeschwellenwerte für die Quellenbesteuerung (TDS).
+description: Dieser Artikel beschreibt die Schwellenwerte und Ausnahmeschwellenwerte für die Quellenbesteuerung (TDS).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 7fa7d871fdf25f29b003a68cacd9fc0d487dce5b
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: aceebad08b5454b64059e7ef374b9634bad35c37
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726015"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877935"
 ---
 # <a name="threshold-limit-and-exception-threshold-limit"></a>Schwellenwert und Ausnahmeschwellenwert
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema beschreibt die Schwellenwerte und Ausnahmeschwellenwerte für die Quellenbesteuerung (TDS). Die TDS für Rechnungen und Zahlungen wird immer unter Berücksichtigung des Schwellenwerts und des Ausnahmeschwellenwerts berechnet, die für die TDS-Steuerkomponenten auf der Seite **Quellensteuerkomponenten** festgelegt sind. Die TDS-Steuerkomponenten sind den TDS-Steuercodes zugeordnet, die in den TDS-Steuergruppen enthalten sind. Die TDS-Steuergruppen sind Kreditoren und Debitoren zugeordnet, um TDS auf Rechnungs- oder Zahlungsebene zu berechnen.
+Dieser Artikel beschreibt die Schwellenwerte und Ausnahmeschwellenwerte für die Quellenbesteuerung (TDS). Die TDS für Rechnungen und Zahlungen wird immer unter Berücksichtigung des Schwellenwerts und des Ausnahmeschwellenwerts berechnet, die für die TDS-Steuerkomponenten auf der Seite **Quellensteuerkomponenten** festgelegt sind. Die TDS-Steuerkomponenten sind den TDS-Steuercodes zugeordnet, die in den TDS-Steuergruppen enthalten sind. Die TDS-Steuergruppen sind Kreditoren und Debitoren zugeordnet, um TDS auf Rechnungs- oder Zahlungsebene zu berechnen.
 
 Die TDS wird berechnet, wenn der Betrag für eine Buchung oder die kumulierten Buchungen, die mit einer bestimmten TDS-Gruppe für einen Kreditor gebucht wurden, den auf der Seite **Quellensteuerkomponenten** festgelegten Schwellenwert überschreitet. Die TDS wird erst berechnet, wenn der kumulierte Buchungsbetrag den angegebenen Schwellenwert überschreitet.
 

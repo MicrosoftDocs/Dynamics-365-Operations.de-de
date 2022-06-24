@@ -1,6 +1,6 @@
 ---
-title: Kreditorenrechnungsdaten
-description: In diesem Thema werden die Daten beschrieben, die auf Kreditorenrechnungen erscheinen. Außerdem wird erläutert, wie Sie das System so einrichten, dass es das Buchungsdatum automatisch anpasst.
+title: Kreditorenrechnungstermine
+description: In diesem Artikel werden die Daten beschrieben, die auf Kreditorenrechnungen erscheinen. Außerdem wird erläutert, wie Sie das System so einrichten, dass es das Buchungsdatum automatisch anpasst.
 author: sunfzam
 ms.date: 2/09/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 064a125d448ebb3511db2d9b1f4228380805dc44
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: 943a84407d022c2c05bc534a35a2b5d44a94653e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105462"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876411"
 ---
-# <a name="vendor-invoice-dates"></a>Kreditorenrechnungsdaten
+# <a name="vendor-invoice-dates"></a>Kreditorenrechnungstermine
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die Daten beschrieben, die auf Kreditorenrechnungen erscheinen. Außerdem wird erläutert, wie Sie das System so einrichten, dass es das Buchungsdatum automatisch anpasst.
+In diesem Artikel werden die Daten beschrieben, die auf Kreditorenrechnungen erscheinen. Außerdem wird erläutert, wie Sie das System so einrichten, dass es das Buchungsdatum automatisch anpasst.
 
 Auf der Seite **Ausstehende Lieferantenrechnung detailliert** zeigt der Rechnungskopf vier Daten an: das Eingangsdatum der Rechnung, das Rechnungsdatum, das Buchungsdatum und das Fälligkeitsdatum. Beim Erstellen einer Kreditorenrechnung werden standardmäßig die folgenden Daten eingegeben:
 
@@ -37,7 +37,7 @@ Auf der Seite **Ausstehende Lieferantenrechnung detailliert** zeigt der Rechnung
 
 Manchmal kann sich eine Kreditorenrechnung noch lange nach Ablauf des Zeitraums im Status „Ausstehend“ befinden. Bei der Buchungsreife wird weiterhin das alte Buchungsdatum der vergangenen Buchungsperiode verwendet. Dieser Zeitraum ist nun jedoch abgelaufen. Daher muss ein Kreditorenbuchhalter alle Buchungsdaten für alle zuvor erstellten ausstehenden Rechnungen manuell in die neue Buchungsperiode ändern.
 
-Mit der in diesem Thema beschriebenen Funktion können Sie das System so einrichten, dass es das Buchungsdatum automatisch an die Geschäftsanforderungen anpasst.
+Mit der in diesem Artikel beschriebenen Funktion können Sie das System so einrichten, dass es das Buchungsdatum automatisch an die Geschäftsanforderungen anpasst.
 
 ## <a name="parameter-for-automatically-adjusting-the-vendor-invoice-posting-date"></a>Parameter zur automatischen Anpassung des Buchungsdatums der Kreditorenrechnung
 

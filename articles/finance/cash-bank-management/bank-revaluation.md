@@ -1,6 +1,6 @@
 ---
-title: Bank – Neubewertung der Fremdwährung
-description: In diesem Thema erhalten Sie einen Überblick über den Prozess der Neubewertung der Fremdwährung – Bank. Es umfasst Informationen zum Setup, dem Ausführen des Prozesses, der Berechnung für den Prozess und von Rückbuchungen von Neubewertungsbuchungen.
+title: Neubewertung der Fremdwährung der Bank
+description: In diesem Artikel erhalten Sie einen Überblick über den Prozess der Neubewertung der Fremdwährung – Bank. Es umfasst Informationen zum Setup, dem Ausführen des Prozesses, der Berechnung für den Prozess und von Rückbuchungen von Neubewertungsbuchungen.
 author: kweekley
 ms.date: 05/16/2019
 ms.topic: article
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a8ce792fdc0c6b441deaead32db04ee0246becc9
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: d68232af3e87cef2f86213211e6c87f7d654df33
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711202"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863100"
 ---
-# <a name="bank-foreign-currency-revaluation"></a>Bank – Neubewertung der Fremdwährung
+# <a name="bank-foreign-currency-revaluation"></a>Neubewertung der Fremdwährung der Bank
 
 [!include [banner](../includes/banner.md)]
 
 
-In diesem Thema erhalten Sie einen Überblick über den Prozess der Neubewertung der Fremdwährung – Bank. Es wird erläutert, wie Sie den Prozess einrichten und ausführen und es bietet Informationen über die Berechnung für den Prozess. Es wird auch erklärt, wie Neubewertungsbuchungen rückgebucht werden, wenn eine Rückbuchung erforderlich ist.
+In diesem Artikel erhalten Sie einen Überblick über den Prozess der Neubewertung der Fremdwährung – Bank. Es wird erläutert, wie Sie den Prozess einrichten und ausführen und es bietet Informationen über die Berechnung für den Prozess. Es wird auch erklärt, wie Neubewertungsbuchungen rückgebucht werden, wenn eine Rückbuchung erforderlich ist.
 
 Als Teil eines Periodenendes ist für Buchhaltungskonventionen erforderlich, dass Bankkontosalden in Fremdwährungen mithilfe verschiedener Wechselkurstypen (aktuell, historisch, durchschnittlich usw.) neu bewertet werden. Die Funktion „Neubewertung der Fremdwährung – Bank” kann verwendet werden, um eine oder mehrere Bankkonten neu zu bewerten. Die Funktion ist auch eine globale Funktion. Daher können Sie von einer einzelnen Seite aus Banken bei allen juristischen Personen neu bewerten, auf die Sie Zugriff haben.
 

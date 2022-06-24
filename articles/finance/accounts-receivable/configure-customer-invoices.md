@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 069ada071fe6a7d3e22ad6aa45e3c2f06a9f4b31
-ms.sourcegitcommit: 5a4b8ce4a7ae82c0ef22d2223c11c6b55f048cdd
+ms.openlocfilehash: 93d25a260cfc94e898ef50c618b2cbc640c963bc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "8756962"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876324"
 ---
 # <a name="create-a-customer-invoice"></a>Erstellen einer Debitorenrechnung
 
@@ -33,11 +33,8 @@ Eine **Freitextrechnung** ist nicht mit einem Auftrag verknüpft. Sie enthalten 
 Weitere Informationen finden Sie hier:
 
 [Freitextrechnungen erstellen](../accounts-receivable/create-free-text-invoice-new.md)
-
 [Vorlage für Freitextrechnungen erstellen](../accounts-receivable/create-free-text-invoice-template-new.md)
-
 [Einem Debitor eine Freitextrechnungsvorlage zuweisen](tasks/assign-free-text-invoice-template-customer.md)
-
 [Freitextserienrechnungen generieren und buchen](tasks/post-recurring-free-text-invoices.md)
 
 
@@ -91,8 +88,8 @@ Sie können die Aufteilung von Kundenrechnungen für Aufträge nach Standort ode
  - Aktivieren Sie die Option **Aufteilung basierend auf Rechnungsstandort**, um beim Buchen eine Rechnung pro Standort zu erstellen. 
  - Aktivieren Sie die Option **Aufteilung basierend auf Lieferinformationen der Rechnung**, um beim Buchen eine Rechnung pro Auftragsposition-Lieferadresse zu erstellen. 
 
-## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price"></a>Auf das Umsatzkonto für Auftragspositionen ohne Preise buchen
-Sie haben die Möglichkeit, das **Umsatzerlös**-Konto im **Hauptbuch** für Auftragspositionen ohne Preis zu aktualisieren. Um diese Informationen einzurichten oder anzuzeigen, gehen Sie zum Parameter **Auf das Umsatzkonto für Auftragsrechnungen mit Nullpreisen buchen** auf der **Hauptbuch und Umsatzsteuer**-Registerkarte der **Debitorenparameter**-Seite. (**Debitoren > Einrichtung > Debitorenparameter**). Wählen Sie **Ja**, um das **Umsatzerlös**-Konto für Auftragsrechnungspositionen, die keinen Preis haben, zu aktualisieren. Auf der **Bestandsbuchung**-Parameterseite wird ein Umsatzerlöskonto definiert, auf der Registerkarte **Auftrag**-Kontodefinition. Wenn diese Option nicht ausgewählt ist, werden Positionen, die keine Preisinformationen enthalten, nicht an das **Umsatzerlös**-Konto gebucht.
+## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price-and-no-cost"></a>Auf das Umsatzkonto für Auftragspositionen ohne Preise und ohne Kosten buchen
+Sie haben die Möglichkeit, das **Umsatzerlös**-Konto im **Hauptbuch** für Auftragspositionen ohne Preis und Kosten zu aktualisieren. Um diese Informationen einzurichten oder anzuzeigen, gehen Sie zum Parameter **Auf das Umsatzkonto für Auftragsrechnungen mit Nullpreisen und Nullkosten buchen** auf der **Hauptbuch und Umsatzsteuer**-Registerkarte der **Debitorenparameter**-Seite. (**Debitoren > Einrichtung > Debitorenparameter**). Wählen Sie **Ja**, um das **Umsatzerlös**-Konto für Auftragsrechnungspositionen, die keinen Preis und keine Kosten haben, zu aktualisieren. Wenn diese Option ausgewählt ist, enthält der Beleg 0,00 Einträge für die Buchungstypen **Debitorensaldo** und **Umsatzerlös**. Auf der Parameterseite **Bestandsbuchung** wird ein Umsatzerlöskonto definiert (auf der Kontodefinition-Registerkarte **Auftrag**). Wenn diese Option nicht ausgewählt ist, werden Positionen, die keine Preis- oder Kosteninformationen enthalten, nicht an das **Umsatzerlös**-Konto gebucht. Stattdessen enthält der Beleg einen Eintrag von 0,00 für den Buchungstyp **Debitorensaldo**.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Zusätzliche Einstellungen, die das Buchungsverhalten ändern
 Die folgenden Felder ändern das Verhalten des Buchungsprozesses.

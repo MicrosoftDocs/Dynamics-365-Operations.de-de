@@ -1,6 +1,6 @@
 ---
 title: Kandidaten für eine Stelle anwerben
-description: Dieses Thema beschreibt, wie Sie Kandidaten in Dynamics 365 Human Resources anwerben.
+description: Dieser Artikel beschreibt, wie Sie Kandidaten in Dynamics 365 Human Resources anwerben.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ef2f2c82708fd48055faa7546e7e0c4da51e7b6c
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 743c78d3526db2707630229d4cf21531f9641dd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733984"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879249"
 ---
 # <a name="recruit-job-candidates"></a>Kandidaten für eine Stelle anwerben
 
@@ -47,11 +47,12 @@ Wenn Sie Personalbeschaffungsanträge in der HR-Personalbeschaffung stellen möc
 
 Sobald die Funktionen aktiviert sind, wählen Sie die Funktionalität mit den folgenden Schritten aus: 
 1. Gehen Sie zu **Human Resources** > **Einrichtung** > **Personalverwaltungsparameter**.
-2. Legen Sie auf der Registerkarte  **Personalbeschaffung**  das Feld **Personalbeschaffung deaktiviert** auf **Nein** fest.
-3. Im **Erfahrung in der Personalbeschaffung**-Dropdown wählen Sie **HR-Personalbeschaffung** aus.   
+2. Legen Sie auf der Registerkarte  **Personalbeschaffung**  das Feld **Personalbeschaffung aktiviert** auf **Ja** fest.
+3. Im **Erfahrung in der Personalbeschaffung**-Dropdown wählen Sie **HR-Personalbeschaffung** aus.  
+4. Klicken Sie auf **Speichern**. 
 
 > [!Note] 
-> Wenn einmal **HR-Personalbeschaffung** ausgewählt ist, wird **Personalbeschaffungsprojekte** (Legacy) schreibgeschützt. 
+> Wenn einmal **HR-Personalbeschaffung** ausgewählt ist, ist die **Personalbeschaffungsprojekte** (Legacy) nicht verfügbar. 
 
 
 ## <a name="add-a-recruiting-request-location"></a>Einen Standort für den Personalbeschaffungsantrag hinzufügen

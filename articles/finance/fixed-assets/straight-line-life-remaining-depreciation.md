@@ -1,6 +1,6 @@
 ---
-title: Abschreibungsmethode „Verbleibende lineare Nutzungsdauer“
-description: Dieses Thema gibt eine Übersicht über die Abschreibungsmethode „Verbleibende lineare Nutzungsdauer“.
+title: Abschreibungsmethode "Verbleibende lineare Nutzungsdauer"
+description: Dieser Artikel gibt eine Übersicht über die Abschreibungsmethode "Verbleibende lineare Nutzungsdauer".
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92941bc679835d38ba47464452315498a70ce2ee
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 185e1c101ffb6dfbd47348952d6dfc47ab137ffa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726696"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853437"
 ---
-# <a name="straight-line-life-remaining-depreciation"></a>Abschreibungsmethode „Verbleibende lineare Nutzungsdauer“
+# <a name="straight-line-life-remaining-depreciation"></a>Abschreibungsmethode "Verbleibende lineare Nutzungsdauer"
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema gibt eine Übersicht über die Abschreibungsmethode „Verbleibende lineare Nutzungsdauer“.
+Dieser Artikel gibt eine Übersicht über die Abschreibungsmethode "Verbleibende lineare Nutzungsdauer".
 
 Wenn Sie ein Anlageabschreibungsprofil erstellen und im Feld **Methode** auf der Seite **Abschreibungsprofile** die Option **Verbleibende lineare Nutzungsdauer** auswählen, basiert die Abschreibung der Anlagen, die dem Abschreibungsprofil zugewiesen werden, auf der verbleibenden Nutzungsdauer der Anlage. Der Abschreibungsbetrag ist im Allgemeinen der gleiche in jedem Abschreibungszeitraum. Zum Einrichten der Abschreibung "Verbleibende lineare Nutzungsdauer" müssen Sie auch Optionen im Feld **Abschreibungsjahr** und im Feld **Periodenhäufigkeit** auf der Seite **Abschreibungsprofile** auswählen. Die Optionen, die im Feld **Periodenhäufigkeit** zur Verfügung stehen, variieren abhängig vom Wert, der im Feld **Abschreibungsjahr** ausgewählt ist.
 
@@ -35,7 +35,7 @@ Sie können entweder **Kalender** oder **Steuerlich** im Feld **Abschreibungsjah
 
 ### <a name="calendar"></a>Kalender
 
-Wenn Sie **Kalender** im Feld **_Abschreibungsjahr_*_auswählen, wird von einem Jahr vom 1. Januar bis 31. Dezember ausgegangen, auch wenn Sie den Finanzkalender anders definiert haben. Die Option_* Kalender** aktualisiert die Abschreibungsbasis am 1. Januar eines jeden Jahres. Normalerweise ist die Abschreibungsbasis der Nettobuchwert abzüglich des Restwerts. Im Beispiel weiter unten in diesem Thema ist der Zähler im ersten Ausdruck in Berechnungen in der Spalte "Berechnung" die Abschreibungsbasis. Wenn als Abschreibungsjahr **Kalender** ausgewählt wird, stehen im Feld **Periodenhäufigkeit** die folgenden Optionen zur Verfügung:
+Wenn Sie **Kalender** im Feld **_Abschreibungsjahr_*_auswählen, wird von einem Jahr vom 1. Januar bis 31. Dezember ausgegangen, auch wenn Sie den Finanzkalender anders definiert haben. Die Option_* Kalender** aktualisiert die Abschreibungsbasis am 1. Januar eines jeden Jahres. Normalerweise ist die Abschreibungsbasis der Nettobuchwert abzüglich des Restwerts. Im Beispiel weiter unten in diesem Artikel ist der Zähler im ersten Ausdruck in Berechnungen in der Spalte „Berechnung“ die Abschreibungsbasis. Wenn als Abschreibungsjahr **Kalender** ausgewählt wird, stehen im Feld **Periodenhäufigkeit** die folgenden Optionen zur Verfügung:
 
 - Bei Auswahl von **Jährlich** wird ein Betrag am 31. Dezember gebucht.
 - Bei Auswahl von **Monatlich** wird ein monatlicher Betrag am Ende eines jeden Kalendermonats gebucht.

@@ -1,6 +1,6 @@
 ---
 title: Massen-Finanzperiodenabschluss
-description: Dieses Thema zeigt, wie Sie einen Zeitraum zurückstellen oder dauerhaft schließen können, oder wie Sie mehr als eine juristische Person auf einmal.
+description: Dieser Artikel zeigt, wie Sie einen Zeitraum zurückstellen oder dauerhaft schließen können, oder mehr als eine juristische Person auf einmal.
 author: aprilolson
 ms.date: 08/16/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0acaad0d6e89fe7c81537e554b36ffb210e5abad
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 18e2418777e4f8a5f10b946d7cdc217e5e264318
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722065"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872440"
 ---
 # <a name="mass-financial-period-close"></a>Massen-Finanzperiodenabschluss
 
 [!include [banner](../../includes/banner.md)]
 
-Dieses Thema zeigt, wie Sie einen Zeitraum zurückstellen oder dauerhaft schließen können, oder wie Sie mehr als eine juristische Person auf einmal. Darüber hinaus zeigt die Aufgabe, wie die Benutzergruppenbuchun auf bestimmte Module beschränkt wird.
+Dieser Artikel zeigt, wie Sie einen Zeitraum zurückstellen oder dauerhaft schließen können, oder mehr als eine juristische Person auf einmal. Darüber hinaus zeigt die Aufgabe, wie die Benutzergruppenbuchun auf bestimmte Module beschränkt wird.
 
 1. Gehen Sie im Navigationsbereich zu **Hauptbuch > Periodenabschluss > Sachkonto-Kalender**. Beachten Sie, dass die Liste der angezeigten juristischen Personen vom auf der Seite ausgewählten Steuerkalender abhängig ist. Nur juristischen Personen, die den ausgewählten Steuerkalender verwenden, werden angezeigt.
 2. Wählen Sie **Bearbeiten** aus.

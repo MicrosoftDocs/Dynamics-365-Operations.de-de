@@ -1,6 +1,6 @@
 ---
 title: Verwenden von USER INPUT PARAMETER-Datenquellen, um Parameter für einen Bericht anzugeben
-description: In diesem Thema wird erläutert, wie Sie USER INPUT PARAMETER-Datenquellen verwenden, um Parameter für von Ihnen generierte Berichte anzugeben.
+description: In diesem Artikel wird erläutert, wie Sie USER INPUT PARAMETER-Datenquellen verwenden, um Parameter für von Ihnen generierte Berichte anzugeben.
 author: NickSelin
 ms.date: 04/20/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.27
-ms.openlocfilehash: 4e431c9dd59080af17fa073547073037ba233288
-ms.sourcegitcommit: 6c1bf233748c4bc70fc5a1a9711758cdfd9e07dc
+ms.openlocfilehash: 62b7a8173416a1d36a2985823d186a7a0e6a7e60
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8782314"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872971"
 ---
 # <a name="use-user-input-parameter-data-sources-to-specify-parameters-for-a-report"></a>Verwenden von USER INPUT PARAMETER-Datenquellen, um Parameter für einen Bericht anzugeben
 
 [!include[banner](../includes/banner.md)]
 
-Wenn Sie [Elektronische Berichterstattung](general-electronic-reporting.md) (ER)-[Modellzuordnung](er-overview-components.md#model-mapping-component) und ER-[Format](er-overview-components.md#format-component)-Komponenten entwerfen, können Sie Datenquellen von einem *USER INPUT PARAMETER*-Typ verwenden, um die erforderlichen Werte abzurufen, die zur Laufzeit in Dateneingabefeldern im Dialogfeld angegeben werden können, bevor die Ausführung eines ER-Formats beginnt. Dieses Thema beschreibt die *USER INPUT PARAMETER*-Datenquellen, die derzeit unterstützt werden.
+Wenn Sie [Elektronische Berichterstattung](general-electronic-reporting.md) (ER)-[Modellzuordnung](er-overview-components.md#model-mapping-component) und ER-[Format](er-overview-components.md#format-component)-Komponenten entwerfen, können Sie Datenquellen von einem *USER INPUT PARAMETER*-Typ verwenden, um die erforderlichen Werte abzurufen, die zur Laufzeit in Dateneingabefeldern im Dialogfeld angegeben werden können, bevor die Ausführung eines ER-Formats beginnt. Dieser Artikel beschreibt die *USER INPUT PARAMETER*-Datenquellen, die derzeit unterstützt werden.
 
 ## <a name="mandatory-properties"></a><a name="mandatory-properties"></a>Obligatorische Eigenschaften
 

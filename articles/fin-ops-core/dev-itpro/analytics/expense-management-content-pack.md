@@ -1,6 +1,6 @@
 ---
 title: Power BI-Inhalt der Ausgabenverwaltung
-description: In diesem Thema wird beschrieben, was im Power BI-Inhaltspaket zur Ausgabenverwaltung enthalten ist.
+description: In diesem Artikel wird beschrieben, was im Power BI-Inhaltspaket zur Ausgabenverwaltung enthalten ist.
 author: panolte
 ms.date: 03/18/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 178a65c44abd0c9c068d4da1f2684a60062da595247560de4cb81d97ab7b6521
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 78ae444c1c9803ed3708d71da7a359667df0252f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769897"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878312"
 ---
 # <a name="expense-management-power-bi-content"></a>Power BI-Inhalt der Ausgabenverwaltung
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, was im Power BI-Inhalt zur Ausgabenverwaltung enthalten ist. 
+In diesem Artikel wird beschrieben, was im Power BI-Inhalt zur Ausgabenverwaltung enthalten ist. 
 
 ## <a name="overview"></a>Übersicht
 Zwei  Power BI  Inhaltspakete sind für die Verwendung mit der Ausgabenverwaltung in Version 8.1 und höher verfügbar. 

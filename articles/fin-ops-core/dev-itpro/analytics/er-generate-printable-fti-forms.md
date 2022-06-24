@@ -1,6 +1,6 @@
 ---
-title: Druckbare Freitextrechnungsformulare generieren
-description: In diesem Thema wird erläutert, wie das Framework für die elektronische Berichterstellung (EB) dazu verwendet werden kann, um druckbare Freitextrechnungs-(FTR)-Formulare als Microsoft Office-Dokumente zu generieren.
+title: Generieren von druckbaren FTI-Formularen
+description: In diesem Artikel wird erläutert, wie das Framework für die elektronische Berichterstellung (EB) dazu verwendet werden kann, um druckbare Freitextrechnungs-(FTR)-Formulare als Microsoft Office-Dokumente zu generieren.
 author: NickSelin
 ms.date: 07/24/2018
 ms.topic: article
@@ -14,25 +14,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: be5e3ef0f6ecb3d8f911b5be5f8bc9102d201fd299425e847a2df233d9b4edf4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d4efbb46bbba2b139bbcf9b07c480a7e8669fd7d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758215"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868828"
 ---
 # <a name="generate-printable-fti-forms"></a>Generieren von druckbaren FTI-Formularen
 
 [!include[banner](../includes/banner.md)]
 
-Das Framework für die elektronische Berichterstellung (EB) ermöglicht Ihnen das Generieren druckbarer Freitextrechnungs-(FTR)-Formulare als Microsoft Office-Dokumente. Dieses Thema enthält Informationen darüber, wie Sie Ihre eigenen Konfigurationen sowie Details verfügbarer Konfigurationsvorlagen erstellen können.
+Das Framework für die elektronische Berichterstellung (EB) ermöglicht Ihnen das Generieren druckbarer Freitextrechnungs-(FTR)-Formulare als Microsoft Office-Dokumente. Dieser Artikel enthält Informationen darüber, wie Sie Ihre eigenen Konfigurationen sowie Details verfügbarer Konfigurationsvorlagen erstellen können.
 
 ## <a name="overview"></a>Übersicht
 
 Neben der vorhandenen Funktion zum Generieren druckbarer FTR-Formulare mithilfe von Microsoft SQL Server Reporting Services (SSRS) können Sie jetzt das EB-Framework verwenden. Sie können druckbare FTR-Formulare in Microsoft Office Excel und Word verwalten. Sie können auch das Layout, den Datenfluss und die Formatierungen ändern, um bestimmte Anforderungen zu erfüllen, ohne Codeänderungen vorzunehmen.
 
 > [!NOTE]
-> Wenn Sie mit einer Übersicht über die vorhandenen EB-Konfigurationen für dieses Beispiel der druckbaren FTR-Formularlösung beginnen möchten, können Sie direkt zum Abschnitt **EB-Beispielkonfigurationen herunterladen, um FTR-Formulare zu generieren** weiter unten in diesem Thema gehen.
+> Wenn Sie mit einer Übersicht über die vorhandenen EB-Konfigurationen für dieses Beispiel der druckbaren FTR-Formularlösung beginnen möchten, können Sie direkt zum Abschnitt **EB-Beispielkonfigurationen herunterladen, um FTR-Formulare zu generieren** weiter unten in diesem Artikel gehen.
 
 ## <a name="create-customized-configurations-for-fti-printable-forms"></a>Angepasste Konfigurationen für druckbare FTR-Formulare erstellen
 Als Teil der benutzerdefinierten Lösung für druckbare FTR-Formulare müssen Sie eine Reihe von EB-Konfigurationen erstellen.

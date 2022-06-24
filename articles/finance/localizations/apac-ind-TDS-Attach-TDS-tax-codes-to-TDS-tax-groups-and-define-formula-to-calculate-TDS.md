@@ -1,6 +1,6 @@
 ---
 title: TDS-Steuercodes zu TDS-Steuergruppen hinzufügen und die Formel zur TDS-Berechnung festlegen
-description: In diesem Thema wird erklärt, wie Sie Steuergruppen für die Quellenbesteuerung (TDS) einrichten und TDS-Steuercodes mit TDS-Steuergruppen verknüpfen. Um die TDS für eine TDS-Steuergruppe zu berechnen, müssen Sie die Formel für die damit verbundenen TDS-Steuercodes festlegen.
+description: In diesem Artikel wird erklärt, wie Sie Steuergruppen für die Quellenbesteuerung (TDS) einrichten und TDS-Steuercodes mit TDS-Steuergruppen verknüpfen. Um die TDS für eine TDS-Steuergruppe zu berechnen, müssen Sie die Formel für die damit verbundenen TDS-Steuercodes festlegen.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: f1326f95c297887213ecfb572a2437867d964925
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 3607e44bdcf7a32b156e6b4639ef907aa923cadc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711235"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853313"
 ---
 # <a name="attach-tds-tax-codes-to-tds-tax-groups-and-define-the-formula-for-calculating-tds"></a>TDS-Steuercodes zu TDS-Steuergruppen hinzufügen und die Formel zur TDS-Berechnung festlegen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erklärt, wie Sie Steuergruppen für die Quellenbesteuerung (TDS) einrichten und TDS-Steuercodes mit TDS-Steuergruppen verknüpfen. Um die TDS für eine TDS-Steuergruppe zu berechnen, müssen Sie die Formel für die damit verbundenen TDS-Steuercodes festlegen.
+In diesem Artikel wird erklärt, wie Sie Steuergruppen für die Quellenbesteuerung (TDS) einrichten und TDS-Steuercodes mit TDS-Steuergruppen verknüpfen. Um die TDS für eine TDS-Steuergruppe zu berechnen, müssen Sie die Formel für die damit verbundenen TDS-Steuercodes festlegen.
 
 Gehen Sie wie folgt vor, um eine TDS-Steuergruppe einzurichten, TDS-Steuercodes anzuhängen und die Formel für die TDS-Berechnung festzulegen.
 

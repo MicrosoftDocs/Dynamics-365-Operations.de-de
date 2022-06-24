@@ -1,6 +1,6 @@
 ---
 title: Quellensteuerbericht für Indonesien
-description: In diesem Thema wird erläutert, wie Sie die Quellensteuererklärungen für Indonesien konfigurieren und generieren.
+description: In diesem Artikel wird erläutert, wie Sie die Quellensteuererklärungen für Indonesien konfigurieren und generieren.
 author: sndray
 ms.date: 12/15/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2021-12-02
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 6cf2f9240ea747054578c52343af34b15c250f38
-ms.sourcegitcommit: f51e74ee9162fe2b63c6ce236e514840795acfe1
+ms.openlocfilehash: 8acd9442ff4f0b7c19e3b4fcf211acce002e43d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7943659"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883180"
 ---
 # <a name="withholding-tax-report-for-indonesia-id-00005"></a>Quellensteuerbericht für Indonesien (ID-00005)
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie die PPH-Quellensteuerdatei einrichten und generieren, die juristische Personen in Indonesien verwenden, um Quellentransaktionen in der e-Bupot-Anwendung zu melden.
+In diesem Artikel wird erläutert, wie Sie die PPH-Quellensteuerdatei einrichten und generieren, die juristische Personen in Indonesien verwenden, um Quellentransaktionen in der e-Bupot-Anwendung zu melden.
 
 Die indonesische Steuerbehörde (DGT) bestimmt, dass steuerpflichtige Unternehmer (PKP), die bei KPP Pratama als Steuereinbehalter/Eintreiber der Einkommensteuer (PPh) registriert sind, Artikel 23 und/oder Artikel 26 elektronisch melden müssen, indem sie die Einkommensteuererklärung Artikel 23 und 26 unter Verwendung von die e-Bupot-Anwendung. 
 

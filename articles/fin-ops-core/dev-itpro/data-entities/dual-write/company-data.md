@@ -1,6 +1,6 @@
 ---
 title: Unternehmenskonzept in Dataverse
-description: In diesem Thema wird die Integration von Unternehmensdaten zwischen Finance and Operations und Dataverse beschrieben.
+description: In diesem Artikel wird die Integration von Unternehmensdaten zwischen Finanz- und Betriebs-Apps und Dataverse beschrieben.
 author: RamaKrishnamoorthy
 ms.date: 08/04/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 3657e41363ca6c1ce8eabfeaf3ba6da9b93f5e2a
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 11355031714b7e046f70bd5840297d66aa7d32e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061025"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873177"
 ---
 # <a name="company-concept-in-dataverse"></a>Unternehmenskonzept in Dataverse
 
@@ -49,7 +49,7 @@ Aufgrund dieser Konfiguration ist jede Zeile, due mit dem USMF-Unternehmen verkn
 
 Wie in der vorherigen Abbildung dargestellt, ist diese 1:1-Zuordnung zwischen Geschäftseinheit, Unternehmen und Team nur ein Anfangspunkt. In diesem Beispiel wird eine neue Geschäftseinheit „Europa“ manuell in Dataverse als übergeordnetes Element für DEMF und ESMF erstellt. Diese neue Stammgeschäftseinheit ist nicht mit dem dualen Schreiben verknüpft. Sie kann allerdings verwendet werden, um Mitgliedern des Teams „EUR-Vertrieb“ Zugriff auf Kontodaten sowohl in DEMF als auch in ESMF zu gewähren, indem die Datensichtbarkeit in der zugehörigen Sicherheitsrolle auf **Übergeordnete/untergeordnete Geschäftseinheit** festgelegt wird.
 
-Ein abschließendes Thema ist, wie durch das duale Schreiben bestimmt wird, welchem Eigentümerteam Zeilen zugewiesen werden sollen. Dieses Verhalten wird von der Spalte **Standardeigentümerteam** in der Zeile cdm\_Company gesteuert. Wenn eine cdm\_Company-Zeile für duales Schreiben aktiviert ist, erstellt ein Plug-In automatisch die zugewiesene Unternehmenseinheit sowie das Eigentümerteam (wenn nicht bereits vorhanden) und legt die Spalte **Standardeigentümerteam** fest. Der Administrator kann die Spalte in einen anderen Wert ändern. Allerdings kann der Administrator die Spalte nicht deaktivieren, sofern die Tabelle für duales Schreiben aktiviert ist.
+Ein abschließender Artikel geht um das Thema, wie durch das duale Schreiben bestimmt wird, welchem Eigentümerteam Zeilen zugewiesen werden sollen. Dieses Verhalten wird von der Spalte **Standardeigentümerteam** in der Zeile cdm\_Company gesteuert. Wenn eine cdm\_Company-Zeile für duales Schreiben aktiviert ist, erstellt ein Plug-In automatisch die zugewiesene Unternehmenseinheit sowie das Eigentümerteam (wenn nicht bereits vorhanden) und legt die Spalte **Standardeigentümerteam** fest. Der Administrator kann die Spalte in einen anderen Wert ändern. Allerdings kann der Administrator die Spalte nicht deaktivieren, sofern die Tabelle für duales Schreiben aktiviert ist.
 
 > [!div class="mx-imgBorder"]
 ![Spalte „Standardeigentümerteam“.](media/dual-write-default-owning-team.jpg)

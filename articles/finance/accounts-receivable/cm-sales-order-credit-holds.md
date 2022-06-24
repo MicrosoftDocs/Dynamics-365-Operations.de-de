@@ -1,6 +1,6 @@
 ---
 title: Kreditsperren für Aufträge verwalten
-description: In diesem Thema wird das Einrichten von Regeln beschrieben, mit denen ein Debitorenauftrag auf Kredit gehalten wird.
+description: In diesem Artikel wird das Einrichten von Regeln beschrieben, mit denen ein Debitorenauftrag auf Kredit gehalten wird.
 author: JodiChristiansen
 ms.date: 07/20/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2d8966f993e7ca82b10a2ef5a023256a05682980
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 44560425056ee1726f21a4279f36c2e718956814
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734332"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856827"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Kreditsperren für Aufträge verwalten
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-In diesem Thema wird das Einrichten von Regeln beschrieben, mit denen ein Debitorenauftrag auf Kredit gehalten wird. Die Sperrregeln für das Kreditmanagement können für einen einzelnen Debitor oder eine Gruppe von Debitoren gelten. Sperrregeln definieren Reaktionen auf die folgenden Umstände:
+In diesem Artikel wird das Einrichten von Regeln beschrieben, mit denen ein Debitorenauftrag auf Kredit gehalten wird. Die Sperrregeln für das Kreditmanagement können für einen einzelnen Debitor oder eine Gruppe von Debitoren gelten. Sperrregeln definieren Reaktionen auf die folgenden Umstände:
 
 1. Anzahl der überfälligen Tage
 2. Kontostatus

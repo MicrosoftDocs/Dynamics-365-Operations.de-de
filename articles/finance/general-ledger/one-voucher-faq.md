@@ -1,6 +1,6 @@
 ---
 title: Häufig gestellte Fragen zu „Ein Beleg“
-description: Diese Thema enthält Antworten auf häufig gestellte Fragen zur Funktionalität „Ein Beleg“. Ein Beleg für Finanzerfassungen (allgemeine Erfassung, Anlagenerfassung, Kreditorenzahlungserfassung usw.) ermöglicht es Ihnen, mehrere untergeordnete Sachkontotransaktionen im Kontext eines einzelnen Belegs einzugeben.
+description: Dieser Artikel enthält Antworten auf häufig gestellte Fragen zur Funktionalität „Ein Beleg“. Ein Beleg für Finanzerfassungen (allgemeine Erfassung, Anlagenerfassung, Kreditorenzahlungserfassung usw.) ermöglicht es Ihnen, mehrere untergeordnete Sachkontotransaktionen im Kontext eines einzelnen Belegs einzugeben.
 author: kweekley
 ms.date: 11/05/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: beab87ad569a6009fb4a42fd19681b64dcb0bb1e
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: e7eedfd4b2914000e8fd85d977b071f44545a058
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723105"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859794"
 ---
 # <a name="one-voucher-faq"></a>Häufig gestellte Fragen zu „Ein Beleg“
 
 [!include [banner](../includes/banner.md)]
 
-Diese Thema enthält Antworten auf häufig gestellte Fragen zur Funktionalität „Ein Beleg“. Mit „Ein Beleg“ für Finanzerfassungen können Sie mehrere Nebenbuchtransaktionen im Kontext eines einzigen Belegs eingeben. Die Erfassungen, die Sie in diesen Beleg aufnehmen können, können unter anderem allgemeine Erfassungen, Sachanlagenerfassungen und Lieferantenzahlungserfassungen sein.
+Dieser Artikel enthält Antworten auf häufig gestellte Fragen zur Funktionalität „Ein Beleg“. Mit „Ein Beleg“ für Finanzerfassungen können Sie mehrere Nebenbuchtransaktionen im Kontext eines einzigen Belegs eingeben. Die Erfassungen, die Sie in diesen Beleg aufnehmen können, können unter anderem allgemeine Erfassungen, Sachanlagenerfassungen und Lieferantenzahlungserfassungen sein.
 
 ## <a name="when-will-the-one-voucher-functionality-be-deprecated"></a>Wann wird die Funktionalität „Ein Beleg“ nicht mehr unterstützt?
 

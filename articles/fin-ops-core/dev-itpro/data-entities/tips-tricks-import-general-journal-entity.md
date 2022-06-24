@@ -1,6 +1,6 @@
 ---
 title: Importieren von Belegen mithilfe der Entität der allgemeinen Erfassung
-description: Dieser Thema enthält Tipps zum Importieren von Daten in die allgemeine Erfassung über die Entität der allgemeinen Erfassung.
+description: Dieser Artikel enthält Tipps zum Importieren von Daten für die Entität der allgemeinen Erfassung in die Entität der allgemeinen Erfassung.
 author: rcarlson
 ms.date: 04/20/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42bc804393d050e5ff722c46c9ce50ece54c5a0b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 056bb860e3133bb8389410e29d20f32447799399
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065069"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867610"
 ---
 # <a name="importing-vouchers-by-using-the-general-journal-entity"></a>Importieren von Belegen mithilfe der Entität der allgemeinen Erfassung
 
@@ -28,7 +28,7 @@ ms.locfileid: "8065069"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Dieser Thema enthält Tipps zum Importieren von Daten in die allgemeine Erfassung über die Entität der allgemeinen Erfassung.
+Dieser Artikel enthält Tipps zum Importieren von Daten für die Entität der allgemeinen Erfassung in die Entität der allgemeinen Erfassung.
 
 Sie können die Entität der allgemeinen Erfassung zum Import von Belegen nutzen, die den Konto- oder Gegenkontotyp **Sachkonto**, **Kunde**, **Lieferant** oder **Bank** haben. Der Beleg kann als eine Position eingegeben werden, und zwar mithilfe des Felds **Konto** oder des Felds **Gegenkonto** oder als mehrzeiliger Beleg, wobei nur das Feld **Konto** verwendet wird (das **Gegenkonto** bleibt bei den einzelnen Positionen leer). Die Entität der allgemeinen Erfassung unterstützt nicht jede Kontenart. Stattdessen gibt es für Szenarien, in denen verschiedene Kombinationen von Kontenarten erforderlich sind, andere Entitäten. Um beispielsweise eine Projektbuchung zu importieren, verwenden Sie die Entität der Projektausgabenerfassung. Jede Entität unterstützt bestimmte Szenarien. Das bedeutet, dass in Entitäten für diese Szenarien möglicherweise zusätzliche Felder verfügbar sind. In Entitäten für verschiedene Szenarien sind jedoch möglicherweise keine zusätzlichen Felder verfügbar.
 

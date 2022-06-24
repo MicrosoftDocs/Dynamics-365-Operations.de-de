@@ -1,6 +1,6 @@
 ---
 title: Mitarbeitervergütungsprogramm bereitstellen
-description: Dieses Thema erklärt, wie Sie Leistungselemente erstellen, die beim Erstellen einer neuen Leistung verwendet werden.
+description: Dieser Artikel erklärt, wie Sie Leistungselemente erstellen, die beim Erstellen einer neuen Leistung verwendet werden.
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: business-process
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: c2ca6712346295454fd0d516816c596d4b010abb
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: cc063c42ba0b627eb4711b44533c745925d718af
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688287"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877829"
 ---
 # <a name="deliver-employee-benefits-program"></a>Mitarbeitervergütungsprogramm bereitstellen
 
@@ -26,7 +26,7 @@ ms.locfileid: "8688287"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dieses Thema erklärt, wie Sie Leistungselemente erstellen, die beim Erstellen einer neuen Leistung verwendet werden. Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USMF. Diese Aufgabe ist für einen "Leiter Vergütungen/Bezüge" vorgesehen.
+Dieser Artikel erklärt, wie Sie Leistungselemente erstellen, die beim Erstellen einer neuen Leistung verwendet werden. Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USMF. Diese Aufgabe ist für einen "Leiter Vergütungen/Bezüge" vorgesehen.
 
 
 ## <a name="create-benefit-elements"></a>Vorteilselemente erstellen

@@ -1,6 +1,6 @@
 ---
 title: Gruppieren Sie Datensätze und aggregieren Sie Berechnungen mit Hilfe von GROUPBY Datenquellen
-description: In diesem Thema wird erklärt, wie Sie Datenquellen vom Typ GROUPBY im elektronischen Berichtswesen (ER) verwenden können.
+description: In diesem Artikel wird erklärt, wie Sie Datenquellen vom Typ GROUPBY in der elektronischen Berichtserstellung (EB) verwenden können.
 author: NickSelin
 ms.date: 03/18/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b79dfe62122a031ae9ed7f51ea7ff578cd47358
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 7b20b5db0794157560f27f15594a84083966642f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462296"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861786"
 ---
 # <a name="group-records-and-aggregate-calculations-by-using-groupby-data-sources"></a>Gruppieren Sie Datensätze und aggregieren Sie Berechnungen mit Hilfe von GROUPBY Datenquellen
 
@@ -69,7 +69,7 @@ Um mehr über diese Funktion zu erfahren, führen Sie das folgende Beispiel aus.
 
 Dieses Beispiel zeigt, wie ein Benutzer in der Rolle Systemadministrator oder Funktionsberater für elektronisches Reporting eine ER-Model-Zuordnung konfigurieren kann, die eine **GROUPBY**-Datenquelle enthält, die zur Berechnung von Aggregatfunktionen und Gruppendatensätzen verwendet wird. Diese Modellzuordnung wird verwendet, um den Steuerbericht zu drucken, wenn die Intrastat-Meldung erstellt wird. Mit diesem Bericht können Sie die gemeldeten Intrastat-Transaktionen überprüfen.
 
-Die Vorgänge in diesem Beispiel können in der Firma **DEMF** in Microsoft Dynamics 365 Finance abgeschlossen werden. 
+Die Vorgänge in diesem Beispiel können im Unternehmen **DEMF** in Microsoft Dynamics 365 Finance abgeschlossen werden. 
 
 ### <a name="prepare-sample-data"></a>Vorbereiten von Beispieldaten
 

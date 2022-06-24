@@ -1,6 +1,6 @@
 ---
 title: Human Resources bereitstellen
-description: Dieses Thema erklärt den Prozess der Bereitstellung einer neuen Produktionsumgebung für Microsoft Dynamics 365 Human Resources.
+description: Dieser Artikel erklärt den Prozess der Bereitstellung einer neuen Produktionsumgebung für Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 01/07/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 79747d0c5c4265315d1757352dfecef09c469dd8
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 341b14d493c85a1e94666fa7e07b80704645e5f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710862"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858242"
 ---
 # <a name="provision-human-resources"></a>Human Resources bereitstellen
 
@@ -27,13 +27,13 @@ ms.locfileid: "8710862"
 
 
 
-Dieses Thema erklärt den Prozess der Bereitstellung einer neuen Produktionsumgebung für Microsoft Dynamics 365 Human Resources. 
+Dieser Artikel erklärt den Prozess der Bereitstellung einer neuen Produktionsumgebung für Microsoft Dynamics 365 Human Resources. 
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
 Bevor Sie mit der Bereitstellung einer neuen Produktionsumgebung beginnen, müssen die folgenden Voraussetzungen gegeben sein:
 
-- Sie haben Human Resources über einen Cloud Solution Provider (CSP) oder einen Enterprise Architecture (EA)-Vertrag gekauft. Wenn Sie eine bestehende Microsoft Dynamics 365-Lizenz haben, die bereits den Serviceplan für Human Resources enthält, und Sie die Schritte in diesem Thema nicht ausführen können, wenden Sie sich an den Support.
+- Sie haben Human Resources über einen Cloud Solution Provider (CSP) oder einen Enterprise Architecture (EA)-Vertrag gekauft. Wenn Sie eine vorhandene Microsoft Dynamics 365 Lizenz haben, die den Human Resources-Service-Plan bereits beinhaltet, und Sie die Schritte in diesem Artikel nicht ausführen können, kontaktieren Sie den Support.
 
 - Der globale Administrator hat sich bei [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) angemeldet und ein neues Human Resources Projekt erstellt. 
 

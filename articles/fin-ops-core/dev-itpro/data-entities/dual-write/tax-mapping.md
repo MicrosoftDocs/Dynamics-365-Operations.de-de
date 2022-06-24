@@ -1,6 +1,6 @@
 ---
 title: Integrierte Steuer
-description: In diesem Thema wird die Integration von Steuerdaten zwischen Finance and Operations und Dataverse beschrieben.
+description: In diesem Artikel wird die Integration von Steuerdaten zwischen Finance + Operations und Dataverse beschrieben.
 author: tonyafehr
 ms.date: 09/06/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: tfehr
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 532e6603b74ad0293d65684d2d6858ef31fbc496
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8864a9567d57739aa72fa1859f5cfce6df33e8f7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063186"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864542"
 ---
 # <a name="integrated-tax"></a>Integrierte Steuer
 
@@ -28,7 +28,7 @@ Steuereinstellungsdaten definieren die Einstellung sowohl für indirekte Steuern
 
 Steuerdaten enthalten eine Sammlung von Tabellenzuordnungen, die während der Dateninteraktion zusammenarbeiten, wie in der folgenden Tabelle dargestellt.
 
-| Finance and Operations-Apps | Customer Engagement-Apps | Description |
+| Finanz- und Betriebs-Apps | Customer Engagement-Apps | Description |
 |-----------------------------|-----------------------------------|-------------|
 [Artikel-Mehrwertsteuergruppe](mapping-reference.md#196) | msdyn_taxitemgroups | |
 [Mehrwertsteuer-Behörden](mapping-reference.md#193) | msdyn_taxauthorities | |

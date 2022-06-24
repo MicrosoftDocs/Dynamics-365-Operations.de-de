@@ -1,6 +1,6 @@
 ---
 title: Importieren einer Konfiguration von Lifecycle Services
-description: In diesem Thema wird beschrieben, wie Sie eine neue Version einer EB-Konfiguration (elektronische Berichterstellung) aus Microsoft Dynamics Lifecycle Services (LCS) importieren.
+description: In diesem Artikel wird beschrieben, wie Sie eine neue Version einer EB-Konfiguration (elektronische Berichterstellung) aus Microsoft Dynamics Lifecycle Services (LCS) importieren.
 author: NickSelin
 ms.date: 06/17/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 05a8ad127df177c54e67ff1f2ddcd8b3a3f51ea12b6e11d087105bd74b6bdb3f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2aae59334828a5636f35051d50cf2ea392074b71
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712591"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886671"
 ---
 # <a name="import-a-configuration-from-lifecycle-services"></a>Importieren einer Konfiguration von Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie ein Benutzer mit der Systemadministratorrolle oder der Rolle „Entwickler für elektronische Berichterstellung“ eine neue Konfiguration für [Elektronische Berichterstellung (EB)](../general-electronic-reporting.md#Configuration) aus der [Anlagenbibliothek auf Projektebene](../../lifecycle-services/asset-library.md) in Microsoft Dynamics Lifecycle Services (LCS) importieren kann.
+In diesem Artikel wird erläutert, wie Benutzer mit der Systemadministratorrolle oder der Rolle „Entwickler für elektronische Berichterstellung“ eine neue Konfiguration für [Elektronische Berichterstellung (EB)](../general-electronic-reporting.md#Configuration) aus der [Anlagenbibliothek auf Projektebene](../../lifecycle-services/asset-library.md) in Microsoft Dynamics Lifecycle Services (LCS) importieren können.
 
 > [!IMPORTANT]
 > Die Verwendung von LCS als Speicherort für ER-Konfigurationen wird [veraltet](../../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release). Weitere Informationen finden Sie unter [Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) storage deprecation](../../../../finance/localizations/rcs-lcs-repo-dep-faq.md).
@@ -41,7 +41,7 @@ In diesem Beispiel wählen Sie die gewünschte Version der EB-Konfiguration und 
 
 <a name="accessconditions"></a>
 > [!NOTE]
-> Stellen Sie sicher, dass der aktuelle Dynamics 365 Finance-Benutzer Mitglied des LCS-Projekts ist, das die Anlagenbibliothek enthält, auf die der Benutzer [Zugriff](../../lifecycle-services/asset-library.md#asset-library-support) erhalten möchte, um EB-Konfigurationen zu importieren.
+> Stellen Sie sicher, dass der aktuelle Dynamics 365 Finance-Benutzende Mitglied des LCS-Projekts ist, das die Anlagenbibliothek enthält, auf die der Benutzer [Zugriff](../../lifecycle-services/asset-library.md#asset-library-support) erhalten möchte, um EB-Konfigurationen zu importieren.
 >
 > Sie können nicht über ein EB-Repository auf ein LCS-Projekt zugreifen, das eine andere Domäne als die in Finance verwendete Domäne darstellt. Wenn Sie dies versuchen, wird eine leere Liste der LCS-Projekte angezeigt, und Sie können keine EB-Konfigurationen aus der Analgenbibliothek auf Projektebene in LCS importieren. Um von einem EB-Repository, das zum Importieren von EB-Konfigurationen verwendet wird, auf Analgenbibliotheken auf Projektebene zuzugreifen, melden Sie sich bei Finance an, indem Sie die Anmeldeinformationen eines Benutzers verwenden, der zu dem Mandanten (der Domäne) gehört, für den die aktuelle Finance-Instanz bereitgestellt wurde.
 
@@ -49,7 +49,7 @@ In diesem Beispiel wählen Sie die gewünschte Version der EB-Konfiguration und 
 
 1. Wählen Sie auf der Seite **Konfigurationen** im Konfigurationsbaum **Beispielmodellkonfiguration**.
 
-    Sie haben die erste Version einer Beispieldaten-Modellkonfiguration erstellt und sie in LCS veröffentlicht, als Sie die Schritte in [Hochladen einer EB-Konfiguration nach Lifecycle Services](er-upload-configuration-into-lifecycle-services.md) abgeschlossen haben. In dieser Prozedur löschen Sie diese Version der EB-Konfiguration. Sie werden diese Version später in diesem Thema aus LCS importieren.
+    Sie haben die erste Version einer Beispieldaten-Modellkonfiguration erstellt und sie in LCS veröffentlicht, als Sie die Schritte in [Hochladen einer EB-Konfiguration nach Lifecycle Services](er-upload-configuration-into-lifecycle-services.md) abgeschlossen haben. In dieser Prozedur löschen Sie diese Version der EB-Konfiguration. Sie werden diese Version später in diesem Artikel aus LCS importieren.
 
 2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 

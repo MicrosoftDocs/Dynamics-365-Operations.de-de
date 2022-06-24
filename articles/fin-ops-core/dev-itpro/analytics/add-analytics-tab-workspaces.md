@@ -1,6 +1,6 @@
 ---
 title: Analysen zu Arbeitsbereichen mit Power BI Embedded hinzufügen
-description: Dieses Thema zeigt, wie Sie in die Registerkarte "Analysen" eines Arbeitsbereichs einen Power BI-Bericht einbetten.
+description: Dieser Artikel zeigt, wie Sie in die Registerkarte „Analysen“ eines Arbeitsbereichs einen Power BI-Bericht einbetten.
 author: RichdiMSFT
 ms.date: 06/21/2017
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: ed562dca621acea24efa3f157f695257cb919cdda577cf9ae6dd0b0c942e1b70
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fba78f091a9e1ba209489b0e324027c4885a198d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760151"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884548"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Analysen zu Arbeitsbereichen mit Power BI Embedded hinzufügen
 
@@ -27,7 +27,7 @@ ms.locfileid: "6760151"
 > Diese Funktion wird in Finance and Operations (Version 7.2 und höher) unterstützt.
 
 ## <a name="introduction"></a>Einführung
-Dieses Thema zeigt, wie Sie in die Registerkarte **Analysen** eines Arbeitsbereichs einen Microsoft Power BI-Bericht einbetten. Für das hier gezeigte Beispiel erweitern wir den Arbeitsbereich **Reservierungsverwaltung** in der Anwendung Flottenmanagement, um der Registerkarte **Analysen** einen analytischen Arbeitsbereich hinzuzufügen.
+Dieser Artikel zeigt, wie Sie in die Registerkarte **Analysen** eines Arbeitsbereichs einen Microsoft Power BI-Bericht einbetten. Für das hier gezeigte Beispiel erweitern wir den Arbeitsbereich **Reservierungsverwaltung** in der Anwendung Flottenmanagement, um der Registerkarte **Analysen** einen analytischen Arbeitsbereich hinzuzufügen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 + Zugriff auf eine Entwicklerumgebung mit Plattform-Update 8 oder höher.

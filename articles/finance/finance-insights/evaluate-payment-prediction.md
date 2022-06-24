@@ -1,6 +1,6 @@
 ---
 title: Das anfängliche Vorhersagemodell für Kundenzahlung bewerten
-description: In diesem Thema werden die Schritte beschrieben, die Sie ausführen können, um das Kundenvorhersagemodell zu verstehen und seine Wirksamkeit zu bewerten.
+description: In diesem Artikel werden die Schritte beschrieben, die Sie ausführen können, um das Kundenzahlungsvorhersagemodell zu verstehen und seine Wirksamkeit zu bewerten.
 author: ShivamPandey-msft
 ms.date: 05/02/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: c0951c8dcf6205ebbb15baf86b1272af4e95547f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: fcdf276505cf58267a38e9d6174a155ad307653b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677953"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847001"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model"></a>Das anfängliche Vorhersagemodell für Kundenzahlung bewerten
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie ein Vorhersagemodell bewerten, nachdem Sie Finance Insights aktiviert und anschließend Ihr erstes Modell generiert und trainiert haben. Dieses Thema befasst sich mit Modellen zur Vorhersage von Kundenzahlungen. Darin werden die Schritte beschrieben, die Sie ausführen können, um das Kundenvorhersagemodell zu verstehen und seine Wirksamkeit zu bewerten.
+In diesem Artikel wird erläutert, wie Sie ein Vorhersagemodell bewerten, nachdem Sie Finance Insights aktiviert und anschließend Ihr erstes Modell generiert und trainiert haben. Dieser Artikel befasst sich mit Modellen zur Vorhersage von Kundenzahlungen. Darin werden die Schritte beschrieben, die Sie ausführen können, um das Kundenvorhersagemodell zu verstehen und seine Wirksamkeit zu bewerten.
 
 ## <a name="getting-details-about-the-model"></a>Details zum Modell abrufen
 

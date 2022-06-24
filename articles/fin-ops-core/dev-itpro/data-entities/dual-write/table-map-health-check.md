@@ -1,20 +1,20 @@
 ---
 title: Fehlercodes für die Systemdiagnose der Tabellenzuordnung
-description: In diesem Thema werden Fehlercodes für die Systemdiagnose der Tabellenzuordnung beschrieben.
-author: nhelgren
-ms.date: 10/04/2021
+description: In diesem Artikel werden Fehlercodes für die Systemdiagnose der Tabellenzuordnung beschrieben.
+author: RamaKrishnamoorthy
+ms.date: 05/31/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
-ms.author: nhelgren
+ms.author: ramasri
 ms.search.validFrom: 2021-10-04
-ms.openlocfilehash: 916f3cfca3bae7a073ce4e956a12080ee01c8d31
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3ae78077fc716311c38620b14665af3983a44c2d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061277"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884082"
 ---
 # <a name="errors-codes-for-the-table-map-health-check"></a>Fehlercodes für die Systemdiagnose der Tabellenzuordnung
 
@@ -22,7 +22,7 @@ ms.locfileid: "8061277"
 
 
 
-In diesem Thema werden Fehlercodes für die Systemdiagnose der Tabellenzuordnung beschrieben.
+In diesem Artikel werden Fehlercodes für die Systemdiagnose der Tabellenzuordnung beschrieben.
 
 ## <a name="error-100"></a>Fehler 100
 
@@ -36,9 +36,9 @@ Die Fehlermeldung lautet: „Für die Entität \{Finance und Operations UniqueEn
 
 ## <a name="error-500"></a>Fehler 500
 
-Die Fehlermeldung lautet: „Keine Projektkonfigurationen für Projekt \{Projektname\} gefunden. Dies kann entweder daran liegen, dass das Projekt nicht aktiviert ist oder dass alle Zuordnungen von Feldern unidirektional vom Customer Engagement zu Finance und Operations sind.“
+Die Fehlermeldung lautet: „Keine Projektkonfigurationen für Projekt \{Projektname\} gefunden. Dies kann entweder daran liegen, dass das Projekt nicht aktiviert ist oder dass alle Zuordnungen von Feldern unidirektional vom Customer Engagement zu Finance + Operations sind.“
 
-Überprüfen Sie die Zuordnungen für die Tabellenzuordnung. Wenn sie unidirektional von Customer Engagement-Apps zu Finance und Operations-Apps sind, wird kein Datenverkehr für die Live-Synchronisierung von Finance und Operations-Apps auf Dataverse erzeugt.
+Überprüfen Sie die Zuordnungen für die Tabellenzuordnung. Wenn sie unidirektional von Customer Engagement-Apps zu Finance und Operations-Apps sind, wird kein Datenverkehr für die Live-Synchronisierung von Finanz- und Betriebs-Apps auf Dataverse erzeugt.
 
 ## <a name="error-900"></a>Fehler 900
 
@@ -79,5 +79,20 @@ select * from <EntityName> where <filter criteria for the records> on SQL.
 Die Fehlermeldung lautet: „Tabelle: \{datasourceTable.Key.subscribedTableName\} für Entität \{datasourceTable.Key.entityName\} wird für Entität \{origTableToEntityMaps.EntityName\} verfolgt. Dieselben Tabellen, die für mehrere Entitäten verfolgt werden, können sich auf die Systemleistung für Live-Synchronisierungstransaktionen auswirken.“
 
 Wenn dieselbe Tabelle von mehreren Entitäten verfolgt wird, löst jede Änderung an der Tabelle eine Dual-Write-Auswertung für die verknüpften Entitäten aus. Obwohl die Filterklauseln nur die gültigen Datensätze senden, kann die Auswertung bei Abfragen mit langer Ausführungszeit oder nicht optimierten Abfrageplänen zu Leistungsproblemen führen. Dieses Problem ist aus geschäftlicher Sicht möglicherweise nicht vermeidbar. Wenn jedoch viele sich überschneidende Tabellen über mehrere Entitäten hinweg vorhanden sind, sollten Sie erwägen, die Entität zu vereinfachen oder Optimierungen für Entitätsabfragen zu überprüfen.
+
+## <a name="error-1800"></a>Fehler 1800
+Die Fehlermeldung lautet: „Datenquelle: {} für die Entität CustCustomerV3Entity enthält einen Bereichswert. Upserts von eingehenden Datensätzen aus Dataverse nach Finance + Operations können durch Bereichswerte auf der Entität beeinflusst werden. Bitte testen Sie Upserts von Datensätzen aus Dataverse nach Finance + Operations mit Datensätzen, die nicht den Filterkriterien entsprechen, um Ihre Einstellungen zu validieren.“
+
+Wenn für die Entität in Finanz- und Betriebs-Apps ein Bereich angegeben ist, wird die eingehende Synchronisierung von Dataverse nach Finanz- und Betriebs-Apps auf das Aktualisierungsverhalten von Datensätzen getestet, die diesen Bereichskriterien nicht entsprechen. Jeder Datensatz, der nicht mit dem Bereich übereinstimmt, wird von der Entität als Einfügevorgang behandelt. Wenn in der zugrunde liegenden Tabelle ein Datensatz vorhanden ist, schlägt die Einfügung fehl. Wir empfehlen, dass Sie diesen Anwendungsfall für alle Szenarien testen, bevor Sie ihn in der Produktion bereitstellen.
+
+## <a name="error-1900"></a>Fehler 1900
+Die Fehlermeldung lautet: „Entität: hat {} Datenquellen, die nicht für ausgehenden dualen Schreibvorgang verfolgt werden. Dies kann die Abfrageleistung der Live-Synchronisierung beeinträchtigen. Bitte remodellieren Sie die Entität in Finance + Operations, um ungenutzte Datenquellen und Tabellen zu entfernen, oder implementieren Sie getEntityRecordIdsImpactedByTableChange, um die Laufzeitabfragen zu optimieren.“
+
+Wenn es viele Datenquellen gibt, die nicht für die Nachverfolgung in der tatsächlichen Live-Synchronisierung von Finanz- und Betriebs-Apps verwendet werden, besteht die Möglichkeit, dass die Leistung der Entität die Live-Synchronisierung beeinträchtigen kann. Um die nachverfolgten Tabellen zu optimieren, verwenden Sie die Methode getEntityRecordIdsImpactedByTableChange.
+
+## <a name="error-5000"></a>Fehler 5000
+Die Fehlermeldung lautet: „Synchrone Plugins sind für Datenverwaltungsereignisse für Entitätskonten registriert. Diese können sich auf die Leistung der anfänglichen Synchronisierung und des Live-Synchronisierungsimports in Dataverse auswirken. Um die beste Leistung zu erzielen, stellen Sie die Plugins auf asynchrone Verarbeitung um. Liste der registrierten Plugins {}.“
+
+Synchrone Plugins auf einer Dataverse-Entität können die Leistung der Live-Synchronisierung und der anfänglichen Synchronisierung beeinträchtigen, da sie die Transaktionslast erhöht. Der empfohlene Ansatz besteht darin, die Plugins entweder zu deaktivieren oder diese Plugins asynchron einzustellen, wenn Sie mit langsamen Ladezeiten bei der anfänglichen Synchronisierung oder Live-Synchronisierung für eine bestimmte Entität konfrontiert sind.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

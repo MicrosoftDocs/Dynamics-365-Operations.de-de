@@ -1,6 +1,6 @@
 ---
 title: Anlagenabschreibungskonventionen
-description: Dieses Thema beschreibt die Abschreibungskonventionen für Anlagen.
+description: Dieser Artikel beschreibt die Abschreibungskonventionen für Anlagen.
 author: moaamer
 ms.date: 09/04/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e151d20fbfb9aa8fca9afc5be4f112b3de13cc7
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 6d791461a344611437e77514e47dd5dd9b7ddb10
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8719804"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858390"
 ---
 # <a name="fixed-asset-depreciation-conventions"></a>Anlagenabschreibungskonventionen
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema beschreibt die Abschreibungskonventionen für Anlagen. Abschreibungskonventionen werden verwendet, um zu bestimmen, wann und wie eine Abschreibung berechnet wird, sowohl für das Jahr, in dem die Anlage erworben wird als auch für das Jahr, in dem die Anlage abgeht.
+Dieser Artikel beschreibt die Abschreibungskonventionen für Anlagen. Abschreibungskonventionen werden verwendet, um zu bestimmen, wann und wie eine Abschreibung berechnet wird, sowohl für das Jahr, in dem die Anlage erworben wird als auch für das Jahr, in dem die Anlage abgeht.
 
 Abschreibungskonventionen können den Einstellungen für ein Anlagengruppenbuch zugewiesen werden. Um die Abschreibungskonvention im Aufsetzbereich von Anlagen anzuzeigen oder zuzuweisen, wählen Sie die Gruppen **Anlage** aus. Wählen Sie die Schaltfläche **Bücher**. In diesem Fall werden die Abschreibungskonventionen, die zugewiesen werden, als Standardwerte verwendet, wenn Anlagenbücher erstellt werden. Abschreibungskonventionen können auch für ein einzelnes Anlagenbuch festgelegt werden. Um dies zu bewerkstelligen, wählen Sie **Bücher** im Aufsetzbereich von Anlagen aus und wählen Sie dann die Schaltfläche **Anlagengruppen** aus.
 

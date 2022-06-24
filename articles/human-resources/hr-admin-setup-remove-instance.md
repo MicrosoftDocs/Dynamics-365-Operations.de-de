@@ -1,6 +1,6 @@
 ---
 title: Eine Instanz entfernen
-description: Dieses Thema führt Sie durch den Prozess des Entfernens eine Testversions- oder Produktionsumgebung für Microsoft Dynamics 365 Human Resources.
+description: Diese Artikel führt Sie durch den Prozess des Entfernens eine Testversions- oder Produktionsumgebung für Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/11/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 522989298544fa5a2c0812bc57e9ae4ae21fe250
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4256938be70f301d3d7b7663f10addb19725b048
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692365"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859632"
 ---
 # <a name="remove-an-instance"></a>Eine Instanz entfernen
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In diesem Thema wird erklärt, wie Sie eine Test- oder Produktionsumgebung für Microsoft Dynamics 365 Human Resources entfernen können.
+In diesem Artikel wird erklärt, wie Sie eine Testversions- oder Produktionsumgebung für Microsoft Dynamics 365 Human Resources entfernen können.
 
 ## <a name="remove-a-test-drive-environment"></a>Testversionsumgebung entfernen
 
@@ -40,7 +40,7 @@ Die vorhandene Testversionsumgebung wird entfernt. Wenn sie entfernt wird, könn
 
 ## <a name="remove-a-production-environment"></a>Produktionsumgebung entfernen
 
-Dieses Thema setzt voraus, dass Sie Human Resources über einen Cloud Solution Provider (CSP) oder einen Enterprise Architecture (EA)-Vertrag gekauft haben. 
+Für diesen Artikel wird vorausgesetzt, dass Sie Human Resources über einen Cloud-Lösungsanbieter (CSP) oder eine Unternehmensarchitekturvereinbarung erworben haben. 
 
 Da eine einzelne Human Resources-Umgebung innerhalb einer einzelnen Power Apps-Umgebung „enthalten“ ist, sind zwei Optionen zu bedenken. Die erste Option entfernt die gesamte Power Apps-Umgebung, die zweite Option entfernt nur Human Resources. Die erste Option wird bevorzugt, wenn Sie eine Power Apps-Umgebung speziell für den Zweck der Bereitstellung von Human Resources erstellt haben und wenn Sie gerade erst mit der Implementierung begonnen haben oder wenn Sie keine eingerichteten Integrationen haben. Die zweite Option ist sinnvoll, wenn Sie eine etablierte Power Apps-Umgebung mit umfangreichen Daten haben, die in Power Apps und Power Automate genutzt wird.
 

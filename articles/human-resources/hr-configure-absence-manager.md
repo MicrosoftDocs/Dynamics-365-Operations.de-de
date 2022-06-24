@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren Sie die Rolle des Abwesenheitsmanagers
-description: In diesem Thema wird erläutert, wie Sie die Rolle Abwesenheitsmanager für die Verwaltung von Mitarbeiterurlaub einrichten.
+description: In diesem Artikel wird erläutert, wie Sie die Rolle Abwesenheitsmanager für die Verwaltung von Mitarbeiterurlaub einrichten.
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: article
@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9e7865a0bb33944c803c628f94371a4c75cc38bd
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 40f9607fb6fc16b96373141d8d2610538e3fdec7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693030"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886101"
 ---
 # <a name="configure-the-absence-manager-role"></a>Konfigurieren Sie die Rolle des Abwesenheitsmanagers
 
 >[!Important]
->Die in diesem Thema beschriebene Funktionalität ist derzeit für Kunden der eigenständigen Version von Dynamics 365 Human Resources verfügbar. Einige oder die gesamten Funktionen werden in einem zukünftigen Release der Finance-Infrastruktur nach Finance-Version 10.0.26 verfügbar sein.
+>Die in diesem Artikel beschriebene Funktionalität ist derzeit für Kunden der eigenständigen Version von Dynamics 365 Human Resources verfügbar. Einige oder die gesamten Funktionen werden in einem zukünftigen Release der Finance-Infrastruktur nach Finance-Version 10.0.26 verfügbar sein.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

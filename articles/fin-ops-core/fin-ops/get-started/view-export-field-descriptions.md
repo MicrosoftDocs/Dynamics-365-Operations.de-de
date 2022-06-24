@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea52c39ef1c7d7b62f20da9fe4d94103119ccc23
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 75019f3f9bcd081f32d06971b11429bcdd794240
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069272"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847098"
 ---
 # <a name="view-and-export-field-descriptions"></a>Feldbeschreibungen anzeigen und exportieren
 
@@ -91,11 +91,11 @@ In den folgenden Abschnitten finden Sie Informationen, zur Behebung von Problem,
 
 ### <a name="i-cant-find-a-field-description"></a>Ich kann eine Feldbeschreibung nicht finden
 
-Wir sind daran, Beschreibungen für die komplexeren Felder hinzuzufügen. Wenn Sie Hilfe zu einem bestimmten Feld benötigen, informieren Sie uns, indem Sie diesem Thema einen Kommentar hinzufügen.
+Wir sind daran, Beschreibungen für die komplexeren Felder hinzuzufügen. Wenn Sie Hilfe zu einem bestimmten Feld benötigen, informieren Sie uns, indem Sie diesem Artikel einen Kommentar hinzufügen.
 
 ### <a name="the-field-description-isnt-helpful"></a>Die Feldbeschreibung ist nicht hilfreich
 
-Informieren Sie uns, indem Sie diesem Thema einen Kommentar hinzufügen. Wenn möglich, beschreiben Sie die zusätzlichen Informationen, die Sie benötigen.
+Informieren Sie uns, indem Sie diesem Artikel einen Kommentar hinzufügen. Wenn möglich, beschreiben Sie die zusätzlichen Informationen, die Sie benötigen.
 
 ### <a name="i-cant-find-a-field-on-the-field-descriptions-page"></a>Ich kann ein Feld auf der Seite "Feldbeschreibung" nicht finden
 

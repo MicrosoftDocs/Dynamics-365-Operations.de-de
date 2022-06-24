@@ -1,6 +1,6 @@
 ---
 title: Konfigurierte EB-Komponente überprüfen, um Laufzeitprobleme zu vermeiden
-description: In diesem Thema wird erläutert, wie Sie die konfigurierten EB-Komponenten (Elektronische Berichterstellung) überprüfen, um mögliche Laufzeitprobleme zu vermeiden.
+description: In diesem Artikel wird erläutert, wie Sie die konfigurierten EB-Komponenten (Elektronische Berichterstellung) überprüfen, um mögliche Laufzeitprobleme zu vermeiden.
 author: NickSelin
 ms.date: 01/03/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c63ffc6316d21d36bb2aad57194b8aa1c477607e
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: c30f1a0d6ca4a50645bada39abbbf2f58777abb8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074790"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864835"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Konfigurierte EB-Komponente überprüfen, um Laufzeitprobleme zu vermeiden
 
@@ -80,7 +80,7 @@ Die EB verwendet die folgenden Kategorien, um Konsistenzprüfungen zu gruppieren
 
 ## <a name="list-of-inspections"></a>Liste der Inspektionen
 
-Die folgende Tabelle enthält eine Übersicht der Inspektionen, die die EB bietet. Weitere Informationen zu diesen Inspektionen erhalten Sie über die Links in der ersten Spalte, um zu den entsprechenden Abschnitten dieses Themas zu gelangen. In diesen Abschnitten werden die Komponententypen erläutert, für die die EB Inspektionen bereitstellt, sowie die Neukonfiguration von EB-Komponenten, um Probleme zu vermeiden.
+Die folgende Tabelle enthält eine Übersicht der Inspektionen, die die EB bietet. Weitere Informationen zu diesen Inspektionen erhalten Sie über die Links in der ersten Spalte, um zu den entsprechenden Abschnitten dieses Artikels zu gelangen. In diesen Abschnitten werden die Komponententypen erläutert, für die die EB Inspektionen bereitstellt, sowie die Neukonfiguration von EB-Komponenten, um Probleme zu vermeiden.
 
 <table>
 <thead>

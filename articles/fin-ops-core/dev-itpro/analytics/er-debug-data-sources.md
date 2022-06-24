@@ -1,6 +1,6 @@
 ---
 title: Debuggen Sie Datenquellen eines ausgeführten EB-Formats, um den Datenfluss und die Transformation zu analysieren
-description: In diesem Thema wird erläutert, wie Sie die Datenquellen eines ausgeführten EB-Formats debuggen können, um den konfigurierten Datenfluss und die konfigurierte Transformation besser zu verstehen.
+description: In diesem Artikel wird erläutert, wie Sie die Datenquellen eines ausgeführten EB-Formats debuggen können, um den konfigurierten Datenfluss und die konfigurierte Transformation besser zu verstehen.
 author: NickSelin
 ms.date: 04/22/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 02aee8c6ec3b2720c2fcbb17f15791d88d688a34
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 6fca177093caf42ad27b58eaa97e3f6997289eeb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323760"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884227"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Debuggen Sie Datenquellen eines ausgeführten EB-Formats, um den Datenfluss und die Transformation zu analysieren
 
@@ -34,7 +34,7 @@ Manchmal sehen die Daten der generierten Ausgabe anders aus als die gleichen Dat
 
 Um die Datenquellendebug-Funktion zu aktivieren, legen Sie in den EB-Benutzerparametern die Option **Datendebuggen bei Formatausführung aktivieren** auf **Ja** fest. Sie können dann mit dem Debuggen von Datenquellen beginnen, während Sie ein EB-Format ausführen, um ausgehende Dokumente zu generieren. Sie können auch die Option **Debuggen starten** verwenden, um das Datenquellendebuggen für ein EB-Format zu initiieren, das im [EB-Vorgangs-Designer](./tasks/er-format-configuration-2016-11.md#design-the-format-of-an-electronic-document) konfiguriert ist.
 
-Dieses Thema enthält Richtlinien zum Initiieren des Datenquellendebuggens für ausgeführte EB-Formate. Es wird erläutert, wie die Informationen Ihnen helfen können, den Datenfluss und die Datentransformationen zu verstehen. In den Beispielen in diesem Thema wird der Geschäftsprozess für die Verarbeitung von Lieferantenzahlungen verwendet.
+Dieser Artikel enthält Richtlinien zum Initiieren des Datenquellendebuggens für ausgeführte EB-Formate. Es wird erläutert, wie die Informationen Ihnen helfen können, den Datenfluss und die Datentransformationen zu verstehen. In den Beispielen in diesem Artikel wird der Geschäftsprozess für die Verarbeitung von Lieferantenzahlungen verwendet.
 
 ## <a name="limitations"></a>Einschränkungen
 
@@ -49,7 +49,7 @@ Auf die folgenden Einstellungen von EB-Formaten kann derzeit für das Debuggen v
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-- Um die Beispiele in diesem Thema abzuschließen, müssen Sie den Zugriff auf eine der folgenden [Rollen](../sysadmin/tasks/assign-users-security-roles.md) haben:
+- Um die Beispiele in diesem Artikel abzuschließen, müssen Sie den Zugriff auf eine der folgenden [Rollen](../sysadmin/tasks/assign-users-security-roles.md) haben:
 
     - Entwickler für elektronische Berichterstellung
     - Funktionaler Berater für elektronische Berichterstellung
@@ -57,12 +57,12 @@ Auf die folgenden Einstellungen von EB-Formaten kann derzeit für das Debuggen v
 
 - Das Unternehmen muss auf **DEMF** festgelegt sein.
 
-- Folgen Sie den Schritten in [Anhang 1](#appendix1) dieses Themas, um die Komponenten der Microsoft EB-Lösung herunterzuladen, die zum Verarbeiten von Lieferantenzahlungen erforderlich sind.
-- Folgen Sie den Schritten in [Anhang 2](#appendix2) dieses Themas, um die Kreditorenkonten für die Verarbeitung von Kreditorenzahlungen mithilfe der von Ihnen heruntergeladenen EB-Lösung vorzubereiten.
+- Folgen Sie den Schritten in [Anhang 1](#appendix1) dieses Artikels, um die Komponenten der Microsoft EB-Lösung herunterzuladen, die zum Verarbeiten von Lieferantenzahlungen erforderlich sind.
+- Folgen Sie den Schritten in [Anhang 2](#appendix2) dieses Artikels, um die Kreditorenkonten für die Verarbeitung von Kreditorenzahlungen mithilfe der von Ihnen heruntergeladenen EB-Lösung vorzubereiten.
 
 ## <a name="process-a-vendor-payment-to-get-a-payment-file"></a>Verarbeiten einer Lieferantenzahlung, um eine Zahlungsdatei abzurufen
 
-1. Folgen Sie den Schritten in [Anhang 3](#appendix3) dieses Themas, um Kreditorenzahlungen zu verarbeiten.
+1. Folgen Sie den Schritten in [Anhang 3](#appendix3) dieses Artikels, um Kreditorenzahlungen zu verarbeiten.
 
     ![Verarbeitung der Kreditorenzahlung läuft.](./media/er-data-debugger-process-payment.png)
 
@@ -89,7 +89,7 @@ Auf die folgenden Einstellungen von EB-Formaten kann derzeit für das Debuggen v
 
 ## <a name="process-a-vendor-payment-for-debugging"></a>Verarbeiten einer Kreditorenzahlung zum Debuggen
 
-1. Folgen Sie den Schritten in [Anhang 3](#appendix3) dieses Themas, um Kreditorenzahlungen zu verarbeiten.
+1. Folgen Sie den Schritten in [Anhang 3](#appendix3) dieses Artikels, um Kreditorenzahlungen zu verarbeiten.
 2. Wählen Sie im Meldungsfeld **Ja** aus, um zu bestätigen, dass Sie die Kreditorenzahlungsabwicklung unterbrechen und stattdessen das Debuggen von Datenquellen auf der Seite **Debuggen von Datenquellen** starten möchten.
 
     ![Bestätigungsmeldungsfeld.](./media/er-data-debugger-start-debugging.png)

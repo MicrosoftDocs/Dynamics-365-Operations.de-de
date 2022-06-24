@@ -1,6 +1,6 @@
 ---
 title: Überblick über automatisierte Kreditorenabrechnungsprozesse
-description: In diesem Thema werden die Funktionen zur Automatisierung der Verarbeitung Ihrer Kreditorenrechnungen und die Vorteile der Verwendung eines automatisierten Prozesses beschrieben.
+description: In diesem Artikel werden die Funktionen zur Automatisierung der Verarbeitung Ihrer Kreditorenrechnungen und die Vorteile der Verwendung eines automatisierten Prozesses beschrieben.
 author: abruer
 ms.date: 02/12/2021
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f21b76bb0d30370e4ea4fdd718999d537e9ce925
-ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.openlocfilehash: d2c629ed2d064a3350ec8ffe53940098d12ab0b5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2022
-ms.locfileid: "8358429"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883444"
 ---
 # <a name="automated-vendor-invoicing-processes-overview"></a>Überblick über automatisierte Kreditorenabrechnungsprozesse
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die Funktionen zur Automatisierung der Verarbeitung Ihrer Kreditorenrechnungen und die Vorteile der Verwendung eines automatisierten Prozesses beschrieben. Die Funktionen hierfür werden in der Funktionsverwaltung aktiviert. Diese Funktionen gelten nur für Kreditorenrechnungen, nicht für Rechnungen, die mit der **Rechnungserfassung** oder der Seite **Rechnungsbucherfassung** verarbeitet werden.
+In diesem Artikel werden die Funktionen zur Automatisierung der Verarbeitung Ihrer Kreditorenrechnungen und die Vorteile der Verwendung eines automatisierten Prozesses beschrieben. Die Funktionen hierfür werden in der Funktionsverwaltung aktiviert. Diese Funktionen gelten nur für Kreditorenrechnungen, nicht für Rechnungen, die mit der **Rechnungserfassung** oder der Seite **Rechnungsbucherfassung** verarbeitet werden.
 
 Organisationen arbeiten häufig mit Dritten zusammen, um Papierrechnungen mithilfe einer optischen Zeichenerkennung (OCR) von einem Dienstanbieter zu verarbeiten. Vom Dienstanbieter erhalten sie dann maschinenlesbare Rechnungsmetadaten. Um die Automatisierung zu unterstützen, können Sie mit den Automatisierungsfunktionen für die Kreditorenkonten diese Artefakte aus den Kreditorenkonten verwenden.
 

@@ -1,6 +1,6 @@
 ---
-title: Komponenten einer Stelle einrichten
-description: In diesem Thema werden die Begriffselemente, die ein Einzelvorgang enthalten kann beschriben und es enthält Beispiele dafür, wie die Elemente in der Organisation verwendet werden können.
+title: Einrichten von Komponenten eines Einzelvorgangs
+description: In diesem Artikel werden die Begriffselemente, die ein Einzelvorgang enthalten kann beschriben und es enthält Beispiele dafür, wie die Elemente in der Organisation verwendet werden können.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,21 +14,21 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: de828bc1ab764a8a1bd084a508f38ff19a3947d5
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: afe100879a4f83e4ef16048bc4b1acace19b679b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693583"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877713"
 ---
-# <a name="set-up-the-components-of-a-job"></a>Komponenten einer Stelle einrichten
+# <a name="set-up-the-components-of-a-job"></a>Einrichten von Komponenten eines Einzelvorgangs
 
 
 [!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In diesem Thema werden die Begriffselemente, die ein Einzelvorgang enthalten kann beschriben und es enthält Beispiele dafür, wie die Elemente in der Organisation verwendet werden können. 
+In diesem Artikel werden die Begriffselemente, die ein Einzelvorgang enthalten kann beschriben und es enthält Beispiele dafür, wie die Elemente in der Organisation verwendet werden können. 
 
 Bevor Sie einen Vorgang erstellen, müssen Sie gewisse Referenzinformationen einrichten. Sie können einen Einzelvorgang erstellen, der lediglich einen Namen hat. Allerdings vom Einschließen von zusätzliche Informationen, wie einer Berufsbezeichnung, stellen Sie die Standardwerte für Positionen verfügbar, die der Stelle zugewiesen sind. Darüber hinaus können einige der Informationen, die Sie eingeben, verwendet werden, um Vergütungspläne für bestimmte Stellen zu filtern. Wenn Sie Berechtigungen einstellen möchten, die Sie zum Filtern von Vergütungsplänen für eine bestimmte Stelle verwenden können, richten Sie vor der Einrichtung von Stellen zunächst Stellenfunktionen und Stellenarten ein. Mithilfe dieser Standardwerte, sparen Sie Zeit, wenn Sie dem Einzelvorgang Positionen hinzufügen. 
 

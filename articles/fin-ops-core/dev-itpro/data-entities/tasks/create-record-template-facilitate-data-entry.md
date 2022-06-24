@@ -1,6 +1,6 @@
 ---
 title: Eine Datensatzvorlage erstellen, um die Dateneingabe zu erleichtern
-description: Dieses Thema zeigt, wie eine Datensatzvorlage erstellt wird, sodass Feldwerte, die oft verwendet werden, nicht explizit für jeden neuen Datensatz eingegeben werden müssen.
+description: Dieser Artikel zeigt, wie eine Datensatzvorlage erstellt wird, sodass Feldwerte, die oft verwendet werden, nicht explizit für jeden neuen Datensatz eingegeben werden müssen.
 author: margoc
 ms.date: 07/29/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 72ffb6458ca3b10415d75fc835677ed2fa03e4197978ab648f2b244248f45058
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 43bbc790d0e3145ffc9d7cb9dda7b8b3f7048e23
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767724"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880195"
 ---
 # <a name="create-a-record-template-to-facilitate-data-entry"></a>Eine Datensatzvorlage erstellen, um die Dateneingabe zu erleichtern
 
 [!include [banner](../../includes/banner.md)]
 
-Dieses Thema zeigt, wie eine Datensatzvorlage erstellt wird, sodass Feldwerte, die oft verwendet werden, nicht explizit für jeden neuen Datensatz eingegeben werden müssen. In dieser Prozedur erstellen Sie einen neuen Datensatz für neue Laptops, die den Anlagen hinzugefügt werden sollen. Für diese Prozedur wird das Beispielunternehmen USMF verwendet.
+Dieser Artikel zeigt, wie eine Datensatzvorlage erstellt wird, sodass Feldwerte, die oft verwendet werden, nicht explizit für jeden neuen Datensatz eingegeben werden müssen. In dieser Prozedur erstellen Sie einen neuen Datensatz für neue Laptops, die den Anlagen hinzugefügt werden sollen. Für diese Prozedur wird das Beispielunternehmen USMF verwendet.
 
 1. Wechseln Sie im Navigationsbereich zu **Module > Anlagen > Anlagen > Anlagen**.
 2. Wählen Sie **Neu** aus.

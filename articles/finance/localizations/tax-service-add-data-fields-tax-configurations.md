@@ -1,6 +1,6 @@
 ---
-title: Datenfelder in Steuerkonfigurationen hinzufügen
-description: In diesem Thema wird erläutert, wie Sie Steuerkonfigurationen durch Hinzufügen von Datenfeldern anpassen.
+title: Datenfelder in Steuerkonfigurationen ergänzen
+description: In diesem Artikel wird erläutert, wie Sie Steuerkonfigurationen durch Hinzufügen von Datenfeldern anpassen.
 author: Kai-Cloud
 ms.date: 10/21/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: deb19c8ddf20b416864ed8c3f816f92e43309f71
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 894c42f444d27b807288b84c7b9c620ad0121fa9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694090"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872325"
 ---
-# <a name="add-data-fields-in-tax-configurations"></a>Datenfelder in Steuerkonfigurationen hinzufügen
+# <a name="add-data-fields-in-tax-configurations"></a>Datenfelder in Steuerkonfigurationen ergänzen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie Steuerkonfigurationen anpassen, indem Sie [Datenfelder, die in der Steuerintegration hinzugefügt werden](tax-service-add-data-fields-tax-integration-by-extension.md) verwenden.
+In diesem Artikel wird erläutert, wie Sie Steuerkonfigurationen anpassen, indem Sie [Datenfelder, die in der Steuerintegration hinzugefügt werden](tax-service-add-data-fields-tax-integration-by-extension.md) verwenden.
 
 ## <a name="customize-the-tax-data-model"></a>Steuerdatenmodell anpassen
 

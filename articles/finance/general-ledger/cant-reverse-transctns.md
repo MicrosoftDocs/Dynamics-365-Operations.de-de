@@ -1,6 +1,6 @@
 ---
 title: Warum kann ich diese Buchung nicht stornieren?
-description: In diesem Thema werden verschiedene Gründe beschrieben, warum Buchungen nicht storniert werden können. Es führt auch Lösungen für dieses Problem auf.
+description: In diesem Artikel werden verschiedene Gründe beschrieben, warum Buchungen nicht storniert werden können. Es führt auch Lösungen für dieses Problem auf.
 author: kweekley
 ms.date: 07/21/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-07-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e18caf1dbdf8191713c17b1793f5da44cf2f182b
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 9a8b26584b1a9b82440583db693cd14daa580e22
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724528"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876181"
 ---
 # <a name="why-cant-i-reverse-this-transaction"></a>Warum kann ich diese Buchung nicht stornieren?
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden verschiedene Gründe beschrieben, warum Buchungen nicht storniert werden können. Es führt auch Lösungen für dieses Problem auf.
+In diesem Artikel werden verschiedene Gründe beschrieben, warum Buchungen nicht storniert werden können. Es führt auch Lösungen für dieses Problem auf.
 
 ## <a name="symptom"></a>Symptom
 
@@ -35,14 +35,14 @@ Es kann vorkommen, dass Unternehmen eine von ihnen gebuchte Buchung stornieren m
 
 ## <a name="resolution"></a>Lösung
 
-Buchungen müssen bestimmte Kriterien erfüllen, bevor sie storniert werden können. Die restlichen Abschnitte dieses Themas enthalten die Überprüfung für jedes Modul. Obwohl sich dieses Thema auf Buchungen in Microsoft Dynamics 365 Finance konzentriert, können einige der Konzepte und Überprüfungen auf andere Apps angewendet werden, wie z. B. Dynamics 365 Supply Chain Management.
+Buchungen müssen bestimmte Kriterien erfüllen, bevor sie storniert werden können. Die restlichen Abschnitte dieses Artikels enthalten die Überprüfung für jedes Modul. Obwohl sich dieser Artikel auf Buchungen in Microsoft Dynamics 365 Finance konzentriert, können einige der Konzepte und Überprüfungen auf andere Apps angewendet werden, wie z. B. Dynamics 365 Supply Chain Management.
 
 Darüber hinaus kann sich die Umgebung, in der eine Buchung storniert wird, darauf auswirken, ob sie storniert werden kann. Beispielsweise kann eine als Scheck gebuchte Kreditorenzahlung nur vom Abschnitt **Schecks** auf der Buchungsseite für die Bankkonten aus storniert werden. Von der Seite **Belegbuchungen** im Hauptbuch aus kann sie nicht storniert werden.
 
 Wenn die Funktion **Massenstornierung für mehrere Dokumente** (auch bekannt als Massenstornierungsfunktion) im Workspace **Funktionsverwaltung** aktiviert ist, beeinflusst sie, wie viele Buchungen storniert werden können und wo sie storniert werden können. Diese Funktion bietet zwei Vorteile, wenn sie aktiviert ist:
 
 - Bei einigen Arten von Buchungen können mehrere Buchungen gleichzeitig ausgewählt und aus der Erfassung, aus der sie gebucht wurde oder von der Seite **Belegbuchungen** aus storniert werden. Die einzelnen Buchungen müssen jedoch vor dem Aktivieren der Funktion stornierbar gewesen sein. Bevor diese Funktion eingeführt wurde, mussten Buchungen einzeln storniert werden.
-- *Manche* Buchungen in untergeordneten Sachkonten können aus der Erfassung (allgemeine Erfassung) oder der Seite **Belegbuchungen** aus storniert werden. Sie müssen nicht von der Seite des untergeordneten Sachkontos aus storniert werden. Beispielsweise konnte ein Kreditorenrechnungserfassung bisher nur von der Seite **Kreditorenbuchung** aus storniert werden. Es kann jetzt jedoch auch von der Hauptbuchseite, aus der Erfassung oder der Seite **Belegbuchungen** aus storniert werden. In jedem Abschnitt dieses Themas werden die Arten von Buchungen erläutert, für die dieser Vorteil nicht gilt.
+- *Manche* Buchungen in untergeordneten Sachkonten können aus der Erfassung (allgemeine Erfassung) oder der Seite **Belegbuchungen** aus storniert werden. Sie müssen nicht von der Seite des untergeordneten Sachkontos aus storniert werden. Beispielsweise konnte ein Kreditorenrechnungserfassung bisher nur von der Seite **Kreditorenbuchung** aus storniert werden. Es kann jetzt jedoch auch von der Hauptbuchseite, aus der Erfassung oder der Seite **Belegbuchungen** aus storniert werden. In jedem Abschnitt dieses Artikels werden die Arten von Buchungen erläutert, für die dieser Vorteil nicht gilt.
 
 Die Massenstornierungsfunktion ermöglicht **nicht** die Stornierung mehrerer Arten von Buchungen. Wenn ein Buchungstyp zuvor nicht storniert werden konnte, kann er auch nach dem Aktivieren der Funktion nicht storniert werden. Beispielsweise können Kreditorenrechnungen für Bestellungen nicht storniert werden, unabhängig davon, ob die Massenstornierungsfunktion aktiviert ist.
 
@@ -189,7 +189,7 @@ Die folgenden Buchungstypen können nicht storniert werden:
 
 Verschiedene Buchungsarten aktualisieren das untergeordnete Kreditorenkontensachkonto. Beispiele sind Debitorenrechnungen aus Aufträgen, Debitorenrechnungen, die über die allgemeine Erfassung erfasst werden, Freitextrechnungen, Debitorenzahlungen und Abschreibungen.
 
-Wenn die Massenstornierungsfunktion deaktiviert ist, können Buchungen einzeln von der Seite **Debitorenbuchungen** oder von der Seite **Bankkonten** für Einzahlungen storniert werden. Informationen zum Stornieren einer Zahlung finden Sie im Abschnitt [Bargeld- und Bankverwaltung](cant-reverse-transctns.md#cash-and-bank-management) weiter unten in diesem Thema.
+Wenn die Massenstornierungsfunktion deaktiviert ist, können Buchungen einzeln von der Seite **Debitorenbuchungen** oder von der Seite **Bankkonten** für Einzahlungen storniert werden. Informationen zum Stornieren einer Zahlung finden Sie im Abschnitt [Bargeld- und Bankverwaltung](cant-reverse-transctns.md#cash-and-bank-management) weiter unten in diesem Artikel.
 
 Wenn die Massenstornierungsfunktion aktiviert ist, können jetzt ein oder mehrere Debitorenkontobuchungen auch von der Seite **Belegbuchungen** und aus der Erfassung, aus der sie gebucht wurde, storniert werden. Einzahlungen können jedoch weiterhin nur vom Bankkonto aus storniert werden, und Freitextrechnungen können nur von der ursprünglichen Seite storniert werden (wenn die Korrekturfunktion aktiviert ist). Darüber hinaus können Debitorenbuchungen immer noch nicht von der Seite **Buchungen für \<main account\>** für das Hauptbuch storniert werden. Sie können jedoch von der Seite **Belegbuchungen** aus storniert werden.
 

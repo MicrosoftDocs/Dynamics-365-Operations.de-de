@@ -1,6 +1,6 @@
 ---
 title: Elektronische Nachrichten einrichten
-description: In diesem Thema erfahren Sie, wie Sie die Funktionalität für elektronische Nachrichten (EN) einrichten.
+description: In diesem Artikel erfahren Sie, wie Sie die Funktionalität für elektronische Nachrichten (EN) einrichten.
 author: liza-golub
 ms.date: 11/18/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 652d8684473d1c1505a80eb1d860c57a214b9488
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 6ac6e4fbc37165a3126de3b1f937a43c980410b4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734218"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874550"
 ---
 # <a name="set-up-electronic-messages"></a>Elektronische Nachrichten einrichten
 
@@ -66,7 +66,7 @@ In der folgenden Tabelle werden die Felder auf der Seite **Nachrichtenstatus** b
 |---------------------|-------------|
 | Nachrichtenstatus      | Geben Sie einen eindeutigen Namen für den Nachrichtenstatus ein. Nachrichtenstatus werden verwendet, um den Status einer elektronischen Nachricht in jedem Moment zu kennzeichnen. Der Name, den Sie eingeben, wird auf der Seite **Elektronische Nachrichten** und in einem Protokoll angezeigt, das elektronischen Nachrichten zugeordnet ist. |
 | Beschreibung         | Geben Sie eine Beschreibung des Nachrichtenstatus ein. |
-| Antworttyp       | Wählen Sie den Antworttyp für den Nachrichtenstatus aus. Einige Aktivitäten in einer Verarbeitung können mehr als einen Antworttyp erzeugen. Eine Aktion des Typs **Webdienst** kann beispielsweise Antworten des Typs **Erfolgreich ausgeführt** oder des Typs **Technischer Fehler** erzeugen, je nach dem Ergebnis der Ausführung. Definieren Sie in diesem Fall Nachrichtenstatus für beide Antworttypen. Weitere Informationen zu Aktivitätstypen und deren Antworttypen, die sich auf sie beziehen, finden Sie weiter unten in diesem Thema unter [Aktivitätstypen bei der Nachrichtenverarbeitung](#action-types). |
+| Antworttyp       | Wählen Sie den Antworttyp für den Nachrichtenstatus aus. Einige Aktivitäten in einer Verarbeitung können mehr als einen Antworttyp erzeugen. Eine Aktion des Typs **Webdienst** kann beispielsweise Antworten des Typs **Erfolgreich ausgeführt** oder des Typs **Technischer Fehler** erzeugen, je nach dem Ergebnis der Ausführung. Definieren Sie in diesem Fall Nachrichtenstatus für beide Antworttypen. Weitere Informationen zu Aktivitätstypen und deren Antworttypen, die sich auf sie beziehen, finden Sie weiter unten in diesem Artikel unter [Aktivitätstypen bei der Nachrichtenverarbeitung](#action-types). |
 | Nachrichtenelementstatus | Manchmal muss sich der Status einer elektronischen Nachricht auf den Status zugehöriger Nachrichtenelemente auswirken. Wählen Sie einen Nachrichtenelementstatus in diesem Feld aus, um ihn dem Nachrichtenstatus zuzuordnen. |
 | Löschen zulassen        | Aktivieren Sie dieses Kontrollkästchen, wenn Benutzer elektronische Nachrichten löschen können sollen, die diesen Status auf der Seite **Elektronische Nachrichten** haben. |
 
@@ -240,7 +240,7 @@ In den folgenden Tabellen werden die Felder auf der Seite **Nachrichtenverarbeit
 
 | Feld                                     | Beschreibung |
 |-------------------------------------------|-------------|
-| Vorgangstyp                               | Wählen Sie den Typ der Aktivität aus. Informationen zu den verfügbaren Optionen finden Sie weiter unten in diesem Thema im Abschnitt [Nachrichtenverarbeitungsaktivitäts-Typen](#action-types). |
+| Vorgangstyp                               | Wählen Sie den Typ der Aktivität aus. Informationen zu den verfügbaren Optionen finden Sie weiter unten in diesem Artikel im Abschnitt [Nachrichtenverarbeitungsaktivitäts-Typen](#action-types). |
 | Formularzuordnung                            | Wählen Sie das EB-Format aus, das für die Aktivität aufgerufen werden soll. Dieses Feld ist nur für Aktivitäten der Typen **Elektronischer Berichterstellungsexport**, **Elektronischer Berichterstellungsimport** und **Elektronische Berichterstellungsexportnachricht** verfügbar. |
 | Formatzuordnung für URL-Pfad               | Wählen Sie das EB-Format aus, das für die Aktivität aufgerufen werden soll. Dieses Format wird verwendet, um den Pfad der URL-Adresse zu erstellen, der der Basisinternetadresse hinzugefügt wird, die für den ausgewählten Webserver angegeben wird. Dieses Feld ist nur für Aktivitäten vom Typ **Webdienst** verfügbar. |
 | Nachrichtenelementtyp                         | Wählen Sie den Typ von Datensätzen aus, für den die Aktivität ausgewertet werden soll. Dieses Feld ist für Aktivitäten der Typen **Nachrichtenelement-Ausführungsebene**, **Elektronischer Berichterstellungsexport**, **Elektronischer Berichterstellungsimport** und **Webdienst** und andere Typen verfügbar. Wenn Sie dieses Feld leer lassen, werden alle Nachrichtenelementtypen, die für die Nachrichtenverarbeitung definiert sind, ausgewertet. |

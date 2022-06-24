@@ -1,6 +1,6 @@
 ---
 title: Vermeiden Sie abgeschnittenen Text in der Positionshierarchie und beim Exportieren in Visio
-description: Dieses Thema erklärt, wie Sie das Problem der abgeschnittenen Namen von Personen und Positionen in der Positionshierarchie in Microsoft Dynamics 365 Human Resources beheben können.
+description: Dieser Artikel erklärt, wie Sie das Problem der abgeschnittenen Namen von Personen und Positionen in der Positionshierarchie in Microsoft Dynamics 365 Human Resources beheben können.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 20331b3a06301d10177fd0d5734f6e33994ef123
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3663f5689fc0109caad01a285185f9f4ffa6fcca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693947"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865381"
 ---
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Vermeiden Sie abgeschnittenen Text in der Positionshierarchie und beim Exportieren in Visio
 

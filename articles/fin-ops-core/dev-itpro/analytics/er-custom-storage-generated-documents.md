@@ -1,6 +1,6 @@
 ---
-title: Angeben eines benutzerdefinierten Speicherorts für generierte Dokumente
-description: In diesem Thema wird erläutert, wie Sie die Liste der Speicherorte für Dokumente erweitern, die von Formaten der electronischen Berichterstellung (ER) generiert werden.
+title: Benutzerdefinierten Speicherort für generierte Dokumente angeben
+description: In diesem Artikel wird erläutert, wie Sie die Liste der Speicherorte für Dokumente erweitern, die von Formaten der electronischen Berichterstellung (EB) generiert werden.
 author: NickSelin
 ms.date: 02/22/2019
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 61a1e46497d650e2c063a5fe7537d17cf7aa1828a5a4504bb781e84aeb88f04a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 70d9ccfac18b4cdf1ea19b3def87fc10ba9ddcb4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718500"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864745"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Angeben eines benutzerdefinierten Speicherorts für generierte Dokumente
 
 [!include[banner](../includes/banner.md)]
 
-Mit der Anwendungsprogrammierschnittstelle (API) des Framework der elektronischen Berichterstellung (ER) können Sie die Liste der Speicherorte für Dokumente, die von ER-Formaten generiert werden, erweitern. Dieses Thema enthält einen Überblick über die Hauptaufgaben, die Sie erledigen müssen, um einen benutzerdefinierten Speicherort hinzuzufügen.
+Mit der Anwendungsprogrammierschnittstelle (API) des Framework der elektronischen Berichterstellung (ER) können Sie die Liste der Speicherorte für Dokumente, die von ER-Formaten generiert werden, erweitern. Dieser Artikel enthält einen Überblick über die Hauptaufgaben, die Sie erledigen müssen, um einen benutzerdefinierten Speicherort hinzuzufügen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -118,7 +118,7 @@ Das Ereignis **AttachingFile()** wird ausgelöst, wenn die folgenden ER-Ziele ve
 ## <a name="configure-an-er-destination"></a>Das Ziel einer elektronischen Berichterstellung konfigurieren
 
 1. Konfigurieren Sie das archivierte Ziel für eines der zuvor genannten Elemente (Datei, Ordner, Merger-Programm oder Anhang) des ER-Formats, das von Ihnen erstelltoder importiert wurde. Eine Anleitung finden Sie unter [ER-Konfigurationsziele](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
-2. Verwenden Sie den Dokumenttyp, den Sie zuvor für das konfigurierte Ziel hinzugefügt haben. (Im Beispiel in diesem Thema lautet der Dokumenttyp **FileX**.)
+2. Verwenden Sie den Dokumenttyp, den Sie zuvor für das konfigurierte Ziel hinzugefügt haben. (Im Beispiel in diesem Artikel lautet der Dokumenttyp **FileX**.)
 
 ![Dialogfeld „Zieleinstellungen“.](media/er-extend-file-storages-destination.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Abhängigkeit von ER-Konfigurationen von anderen Komponenten festlegen
-description: In diesem Thema wird beschrieben, wie Sie eine EB-Konfiguration (elektronische Berichterstellung) entwerfen und ihre Abhängigkeit von anderen Softwarekomponenten angeben.
+description: In diesem Artikel wird beschrieben, wie Sie eine EB-Konfiguration (elektronische Berichterstellung) entwerfen und ihre Abhängigkeit von anderen Softwarekomponenten angeben.
 author: NickSelin
 ms.date: 07/23/2021
 ms.topic: business-process
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2901092938dae5ae14480716eeeb2b0386848332e91ad388ce5d34437f8492ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 525e9be1655bdf0c0328ec53509ab1966abd7bde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717593"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883567"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Abhängigkeit von ER-Konfigurationen von anderen Komponenten festlegen
 
@@ -46,7 +46,7 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
 7. Microsoft Dynamics 365 for Operations (1611) auswählen.
 8. Geben Sie im Feld Version Typ '(7.1.1541.3036,8)' ein.
     * (7.1.1541.3036,8)  
-    * Abhängigkeiten, die Sie eingeben, werden ausgewertet, wenn die Konfiguration von einem beliebigen ER-Repository heruntergeladen wird. Diese wird aus der RCS-Repository Variantenversion heruntergeladen, wenn Version 1 der Beispieldatmodell- Konfiguration entweder bereits an der richtigen Stelle ist oder im Voraus heruntergeladen wurde. Wenn sie vorab heruntergeladen wird, muss sie in Finance and Operations Version 7.1.1541.3036 oder höher abgeschlossen werden, darf aber Hauptversion 8 nicht überschreiten.   
+    * Abhängigkeiten, die Sie eingeben, werden ausgewertet, wenn die Konfiguration von einem beliebigen ER-Repository heruntergeladen wird. Diese wird aus der RCS-Repository Variantenversion heruntergeladen, wenn Version 1 der Beispieldatmodell- Konfiguration entweder bereits an der richtigen Stelle ist oder im Voraus heruntergeladen wurde. Wenn sie im Voraus heruntergeladen wird, muss sie in Finance and Operations-Version 7.1.1541.3036 oder höher aufweisen, darf aber die Hauptversion 8 nicht überschreiten.   
 9. Klicken Sie auf "Speichern".
 10. Schließen Sie die Seite.
 11. Klicken Sie auf "Status ändern".
@@ -136,7 +136,7 @@ Wir werden erstellte Konfigurationen löschen und laden sie erneut vom LCS-Repos
 25. Wechseln Sie zu Organisationsverwaltung > Elektronische Berichterstellung > Konfigurationen.
 26. Wählen Sie in der Struktur 'Muster Datenmodell' erweitern.
     * Beachten Sie, dass die vorbildliche Beispielzuordnung Zuordnungskonfiguration zusammen mit der gewählten Datenmodellkonfiguration heruntergeladen wurde. Die zwei Dateien werden zusammen heruntergeladen, da die „Beispielzuordnung“ als Implementierung des ausgewählten Datenmodells definiert wurde und weil sie für die Anwendung anwendbar ist. Die Variante Beispielzuordnung (Alternative) ist nicht heruntergeladen worden, da die Bedingung für die erforderliche Anwendungsversion nicht erfüllt ist.   
-    * Wenn Sie sich bei Finance and Operations anmelden, registrieren Sie den gleichen Anbieter, greifen auf das gleiche LCS-Projekt zu und laden die gleiche Datenmodellkonfiguration, die Beispielzuordnung (Alternative) herunter, während die Beispielzuordnung-Konfiguration übersprungen wird.  
+    * Wenn Sie sich bei Finance and Operations anmelden, registrieren Sie denselben Anbieter, greifen Sie auf das gleiche LCS-Projekt zu, und laden Sie die gleiche Datenmodellkonfiguration, die „Beispielzuordnung (Alternative )“ herunter, während die Konfiguration „Beispielzuordnung“ übersprungen wird.  
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

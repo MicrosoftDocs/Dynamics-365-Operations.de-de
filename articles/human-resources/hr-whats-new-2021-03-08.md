@@ -1,6 +1,6 @@
 ---
 title: Was ist neu oder geändert in Dynamics 365 Human Resources 8. März 2021
-description: Dieses Thema beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 8. März 2021 entweder neu sind oder geändert wurden.
+description: Dieser Artikel beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 8. März 2021 neu sind oder geändert wurden.
 author: marcelbf
 ms.date: 03/08/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7b1e616f9bc72ab1f30f69671c673241096f3276
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 9280e85f9701573717c4115b4d752ed11be4862e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687867"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868053"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-08-2021"></a>Was ist neu oder geändert in Dynamics 365 Human Resources März 08, 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Human Resources neu oder geändert wurden oder demnächst verfügbar sind.
+Dieser Artikel beschreibt Funktionen, die in Dynamics 365 Human Resources neu oder geändert sind oder bald eingeführt werden.
 
 Weitere Informationen zu unserem Aktualisierungsprozess und Zeitplan finden Sie unter [Aktualisierungsprozess](hr-admin-setup-update-process.md).
 
@@ -48,9 +48,9 @@ Die folgenden Funktionen sind in dieser Version allgemein verfügbar.
 Die folgenden Fehlerkorrekturen sind in diesem Release enthalten.
 
 > [!NOTE]
-> Unser Ziel ist es, Ihnen diese Informationen so schnell wie möglich zukommen zu lassen. Wir können dieses Thema aktualisieren, um Fehlerbehebungen aufzunehmen, die es nach der Erstveröffentlichung dieses Themas in den Build geschafft haben.
+> Unser Ziel ist es, Ihnen diese Informationen so schnell wie möglich zukommen zu lassen. Wir können diesen Artikel aktualisieren, um Fehlerbehebungen aufzunehmen, die es nach der Erstveröffentlichung dieses Artikels in den Build geschafft haben.
 
-| Problemnummer | Abgang |  Beschreibung |
+| Problemnummer | Problem |  Description |
 | --- | --- | --- |
 | 486611 | Abwesenheit wird im Urlaubskalender angezeigt, wenn **Abwesenheit in allen Kalendern deaktivieren** aktiviert ist | Wenn **Urlaub auf allen Kalendern deaktivieren** aktiviert ist, werden die Urlaubsinformationen nicht mehr angezeigt, wenn die Funktion „Erweiterungen für Urlaubs- und Abwesenheitskalender“ aktiviert ist.|
 | 508972 | Entität „Urlaubs- und Abwesenheits-Bank-Transaktion“ fehlt Validierung der Registrierung | Bei Verwendung der Entität Urlaubs- und Abwesenheitsbank-Transaktion können Mitarbeiter, die nicht in einem Plan eingeschrieben sind, nicht mehr importiert werden. |

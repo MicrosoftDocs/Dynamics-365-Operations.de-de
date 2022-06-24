@@ -1,6 +1,6 @@
 ---
 title: Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
-description: Dieses Thema enthält Informationen zum Entwerfen eines Formats für die elektronische Berichterstellung (EB), um eine Excel-Vorlage auszufüllen und ausgehende Dokumente im Excel-Format zu generieren.
+description: Dieser Artikel enthält Informationen zum Entwerfen eines Formats für die elektronische Berichterstellung (EB), um eine Excel-Vorlage auszufüllen und ausgehende Dokumente im Excel-Format zu generieren.
 author: NickSelin
 ms.date: 05/09/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4a34f990c865aa8c82213a60c23d5a44ad75aee4
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 4660aaf438ee091eed30387d984746ac2c3b4bd7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811419"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854813"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
 
@@ -28,7 +28,7 @@ ms.locfileid: "8811419"
 
 Sie können eine Formatkonfiguration für die [elektronische Berichtersterstellung (EB)](general-electronic-reporting.md) mit einer EB-Formatkomponente entwerfen, die Sie konfigurieren können, um ein ausgehendes Dokument in einem Microsoft Excel-Arbeitsmappenformat zu generieren. Zu diesem Zweck müssen bestimmte Komponenten des EB-Formats verwendet werden.
 
-Führen Sie die folgenden Schritte im Thema [Konfiguration zum Generieren von Berichten im OPENXML-Format entwerfen](tasks/er-design-reports-openxml-2016-11.md) aus, um weitere Informationen zu dieser Funktion zu erhalten.
+Führen Sie die folgenden Schritte im Artikel [Konfiguration zum Generieren von Berichten im OPENXML-Format entwerfen](tasks/er-design-reports-openxml-2016-11.md) aus, um weitere Informationen zu dieser Funktion zu erhalten.
 
 ## <a name="add-a-new-er-format"></a>Neues ER-Format hinzufügen
 
@@ -263,7 +263,7 @@ Einer einzelnen **Blatt**-Komponente können Sie mehrere **Fußzeile**-Komponent
 
 Fügen Sie unter der hinzugefügten **Fußzeile**-Komponente die erforderlichen verschachtelten Komponenten der Typen **Text\\String**, **Text\\DateTime** oder eines anderen Typs hinzu. Konfigurieren Sie die Bindungen für diese Komponenten, um anzugeben, wie Ihre Seitenfußzeile ausgefüllt werden soll.
 
-Sie können auch spezielle [Formatierungscodes](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) verwenden, um den Inhalt einer generierten Fußzeile korrekt zu formatieren. Befolgen Sie die Schritte in [Beispiel 1](#example-1) im weiteren Verlauf des Themas, um zu erfahren, wie Sie diesen Ansatz verwenden.
+Sie können auch spezielle [Formatierungscodes](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) verwenden, um den Inhalt einer generierten Fußzeile korrekt zu formatieren. Befolgen Sie die Schritte in [Beispiel 1](#example-1) im weiteren Verlauf des Artikels, um zu erfahren, wie Sie diesen Ansatz verwenden.
 
 > [!NOTE]
 > Berücksichtigen Sie beim Konfigurieren von EB-Formaten unbedingt die [Spezifikationen und Beschränkungen in Excel](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) sowie die maximale Zeichenanzahl für eine einzelne Kopf- oder Fußzeile.

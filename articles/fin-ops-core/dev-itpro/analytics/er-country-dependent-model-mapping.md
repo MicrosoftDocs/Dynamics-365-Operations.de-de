@@ -1,6 +1,6 @@
 ---
-title: Länderkontextabhängige ER-Modellzuordnungen konfigurieren
-description: In diesem Thema wird erläutert, wie Sie ER-Modellzuordnungen so einrichten können, dass sie vom Länder-/Regionalkontext der juristischen Person abhängen, die ihre Verwendung kontrolliert.
+title: Länderkontextabhängige EB-Modellzuordnungen konfigurieren
+description: In diesem Artikel wird erläutert, wie Sie EB-Modellzuordnungen so einrichten können, dass sie vom Länder-/Regionalkontext der juristischen Person abhängen, die ihre Verwendung kontrolliert.
 author: NickSelin
 ms.date: 11/11/2019
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 5b26c605bd64b8d8e5a90f4389261e8e56825111
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 771b14662638838ac1f39d85b19ac58a47352c79
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605370"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883874"
 ---
-# <a name="configure-country-context-dependent-er-model-mappings"></a>Länderkontextabhängige ER-Modellzuordnungen konfigurieren
+# <a name="configure-country-context-dependent-er-model-mappings"></a>Länderkontextabhängige EB-Modellzuordnungen konfigurieren
 
 [!include[banner](../includes/banner.md)]
 
-Sie können Electronic Reporting (ER) Modellzuordnungen so konfigurieren, dass sie ein generisches ER-Datenmodell implementieren, aber spezifisch für Dynamics 365 Finance sind. In diesem Thema wird erläutert, wie Sie mehrere ER-Modellzuordnungen für ein ER-Datenmodell entwerfen, um zu steuern, wie sie von entsprechenden ER-Formaten verwendet werden, die von Unternehmen mit unterschiedlichen Länder-/Regionalkontexten betrieben werden.
+Sie können EB-Modellzuordnungen (Elektronische Berichtstellung) so konfigurieren, dass sie ein generisches EB-Datenmodell implementieren, aber spezifisch für Dynamics 365 Finance sind. In diesem Artikel wird erläutert, wie Sie mehrere EB-Modellzuordnungen für ein EB-Datenmodell entwerfen, um zu steuern, wie sie von entsprechenden EB-Formaten verwendet werden, die von Unternehmen mit unterschiedlichen Länder-/Regionalkontexten betrieben werden.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Um die Beispiele in diesem Thema abzuschließen, müssen Sie den folgenden Zugriff haben:
+Um die Beispiele in diesem Artikel abzuschließen, müssen Sie den folgenden Zugriff haben:
 
 - Zugriff auf Finance für eine der folgenden Rollen:
     - Entwickler für elektronische Berichterstellung
@@ -42,11 +42,11 @@ Um die Beispiele in diesem Thema abzuschließen, müssen Sie den folgenden Zugri
     - Funktionaler Berater für elektronische Berichterstellung
     - Systemadministrator
 
-Einige Schritte in diesem Thema erfordern die Ausführung eines ER-Formats. In einigen Fällen wird die Ausführung eines ER-Formats durch den Länder-/Regionalkontext des Unternehmens beeinflusst, bei dem Sie derzeit angemeldet sind. Sie können ein ER-Format in der aktuellen RCS-Instanz ausführen, wenn die Firma, die den erforderlichen Länder-/Regionskontext hat, im RCS verfügbar ist. Andernfalls müssen Sie eine fertige Version der ER-Modellzuordnung und ER-Formatkonfigurationen, die das ER-Datenmodell verwenden, in Ihre Finance-Instanz hochladen und dann das ER-Format in dieser Finance-Instanz ausführen. Informationen zum Importieren von Konfigurationen, die sich im RCS befinden, in eine Finance-Instanz finden Sie unter [Importieren von Konfigurationen aus RCS](rcs-download-configurations.md).
+Einige Schritte in diesem Artikel erfordern die Ausführung eines EB-Formats. In einigen Fällen wird die Ausführung eines ER-Formats durch den Länder-/Regionalkontext des Unternehmens beeinflusst, bei dem Sie derzeit angemeldet sind. Sie können ein ER-Format in der aktuellen RCS-Instanz ausführen, wenn die Firma, die den erforderlichen Länder-/Regionskontext hat, im RCS verfügbar ist. Andernfalls müssen Sie eine fertige Version der ER-Modellzuordnung und ER-Formatkonfigurationen, die das ER-Datenmodell verwenden, in Ihre Finance-Instanz hochladen und dann das ER-Format in dieser Finance-Instanz ausführen. Informationen zum Importieren von Konfigurationen, die sich im RCS befinden, in eine Finance-Instanz finden Sie unter [Importieren von Konfigurationen aus RCS](rcs-download-configurations.md).
 
 ## <a name="single-model-mapping-case"></a>Einzelmodell-Zuordnung Fall
 
-Führen Sie die Schritte in [Anhang 1](#appendix1) zu diesem Thema aus, um die erforderlichen ER-Komponenten zu entwerfen. Sie haben nun die **Zuordnung (Allgemein)** Modellzuordnungskonfiguration, die das Modellzuordnung für die Definition **Eingangspunkt 1** enthält.
+Führen Sie die Schritte in [Anhang 1](#appendix1) zu diesem Artikel aus, um die erforderlichen EB-Komponenten zu entwerfen. Sie haben nun die **Zuordnung (Allgemein)** Modellzuordnungskonfiguration, die das Modellzuordnung für die Definition **Eingangspunkt 1** enthält.
 
 ![ER-Konfigurationsseite, Format zum Erlernen der Zuordnungskonfiguration.](./media/RCS-Context-specific-mapping-Tree.PNG)
 
@@ -59,7 +59,7 @@ Beachten Sie, dass der Webbrowser anbietet, die Textdatei herunterzuladen, die d
 
 ## <a name="multiple-shared-model-mappings-case"></a>Fall von mehreren gemeinsamen Modellzuordnungen
 
-Führen Sie die Schritte in [Anhang 2](#appendix2) zu diesem Thema aus, um die erforderlichen ER-Komponenten zu entwerfen. Sie haben nun **Zuordnung (Allgemein)** und **Zuordnung (Allgemein) benutzerdefinierte** Modellzuordnungskonfigurationen, von denen jede die Modellzuordnung für die Definition von **Einstiegspunkt 1** enthält.
+Führen Sie die Schritte in [Anhang 2](#appendix2) zu diesem Artikel aus, um die erforderlichen EB-Komponenten zu entwerfen. Sie haben nun **Zuordnung (Allgemein)** und **Zuordnung (Allgemein) benutzerdefinierte** Modellzuordnungskonfigurationen, von denen jede die Modellzuordnung für die Definition von **Einstiegspunkt 1** enthält.
 
 ![ER-Konfigurationsseite, Zuordnung allgemeiner benutzerdefinierter Konfiguration.](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
 
@@ -97,7 +97,7 @@ Beachten Sie, dass die Ausführung des ausgewählten ER-Formats erfolgreich ist.
 
 ## <a name="multiple-mixed-model-mappings-case"></a>Mehrere gemischte Modellzuordnungen Fallbeispiele
 
-Führen Sie die Schritte in [Anhang 3](#appendix3) zu diesem Thema aus, um die erforderlichen ER-Komponenten zu entwerfen. Sie haben nun **Zuordnung (Allgemein)**, **Zuordnung (Allgemein) benutzerdefiniert** und **Zuordnung (FR) Modellzuordnung** Konfigurationen, die die Modellzuordnung für die Definition von **Einstiegspunkt 1** enthalten.
+Führen Sie die Schritte in [Anhang 3](#appendix3) zu diesem Artikel aus, um die erforderlichen EB-Komponenten zu entwerfen. Sie haben nun **Zuordnung (Allgemein)**, **Zuordnung (Allgemein) benutzerdefiniert** und **Zuordnung (FR) Modellzuordnung** Konfigurationen, die die Modellzuordnung für die Definition von **Einstiegspunkt 1** enthalten.
 
 Beachten Sie, dass die Version 1 der Modellzuordnungskonfiguration **Zuordnung (FR)** so konfiguriert ist, dass sie nur für ER-Formate des **Modells gilt, um Zuordnung Modell zu lernen**, die in Finance-Firmen ausgeführt werden, die einen französischen Länder/Regionen-Kontext haben.
 
@@ -138,10 +138,10 @@ Beachten Sie, dass die Ausführung des ausgewählten ER-Formats erfolgreich ist.
 
 Wie Sie gesehen haben, funktioniert die Auswahl einer Modellzuordnung für die Ausführung eines ER-Formats wie folgt:
 
-- Die Modellzuordnungsdefinition, die ein ER-Format verwendet, wird angegeben (**Eingabepunkt 1** in den Beispielen in diesem Thema).
-- Alle Zuordnungskonfigurationen, die eine Zuordnung enthalten, die die angegebene Definition hat und die alle konfigurierten Kontextbeschränkungen für Länder und Regionen erfüllen, können potenziell zur Ausführung des ER-Formats verwendet werden (**Zuordnung (Allgemein)**, **Zuordnung (Allgemein) benutzerdefiniert**, und **Zuordnung (FR)** in den Beispielen in diesem Thema).
-- Jedes standardmäßige Modellzuordnung mit Kontextbeschränkungen für Länder und Regionen hat die höchste Priorität für die Auswahl (**Zuordnung (FR)** in den Beispielen in diesem Thema).
-- Alle Standardmodellzuordnungen, die keine Kontextbeschränkungen für Länder und Regionen haben, haben die nächsthöhere Priorität für die Auswahl (**Zuordnung (Allgemein) benutzerdefiniert**).
+- Die Modellzuordnungsdefinition, die ein EB-Format verwendet, wird angegeben (**Eingabepunkt 1** in den Beispielen in diesem Artikel).
+- Alle Zuordnungskonfigurationen, die eine Zuordnung enthalten, die die angegebene Definition hat und die alle konfigurierten Kontextbeschränkungen für Länder und Regionen erfüllen, können potenziell zur Ausführung des EB-Formats verwendet werden (**Zuordnung (Allgemein)**, **Zuordnung (Allgemein) benutzerdefiniert**, und **Zuordnung (FR)** in den Beispielen in diesem Artikel).
+- Jedes standardmäßige Modellzuordnung mit Kontextbeschränkungen für Länder und Regionen hat die höchste Priorität für die Auswahl (**Zuordnung (FR)** in den Beispielen in diesem Artikel).
+- Alle Standardmodellzuordnungen, die keine Kontextbeschränkungen für Länder und Regionen haben, haben die nächsthöhere Priorität für die Auswahl (**Zuordnung (Allgemein) benutzerdefiniert** in den Beispielen in diesem Artikel).
 - Alle Modellzuordnungen, die Kontextbeschränkungen für Länder und Regionen haben, haben eine höhere Priorität für die Auswahl als Modellzuordnungen, die keine Kontextbeschränkungen für Länder und Regionen haben.
 
 Die folgende Tabelle gibt Auskunft über die Ergebnisse der Modellzuordnungsauswahl für alle möglichen Fälle von Modellzuordnungseinstellungen:

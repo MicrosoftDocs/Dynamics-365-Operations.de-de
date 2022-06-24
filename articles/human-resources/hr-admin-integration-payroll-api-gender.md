@@ -1,6 +1,6 @@
 ---
 title: Gehaltsabrechnungs-API Geschlecht
-description: In diesem Thema wird der Optionssatz „Geschlecht“ in der Dynamics 365 Human Resources-Gehaltsabrechnungs-API.
+description: In diesem Artikel wird der Optionssatz „Geschlecht“ in der Dynamics 365 Human Resources-Gehaltsabrechnungs-API beschrieben.
 author: marcelbf
 ms.date: 06/23/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4c84c0e43f149224ff5a57220c71b507c42b44e0
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 024646b6b8e9a06478f24aed844219443310d589
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068508"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880508"
 ---
 # <a name="payroll---gender-option-set"></a>Gehaltsabrechnung – Optionssatz „Geschlecht“
 
@@ -27,7 +27,7 @@ ms.locfileid: "8068508"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In diesem Thema wird der Optionssatz für das Geschlecht für Dynamics 365 Human Resources beschrieben.
+In diesem Artikel wird der Optionssatz für das Geschlecht für Dynamics 365 Human Resources beschrieben.
 
 ## <a name="option-set-gender-option"></a>Optionssatz: Optionssatz „Geschlecht“
 

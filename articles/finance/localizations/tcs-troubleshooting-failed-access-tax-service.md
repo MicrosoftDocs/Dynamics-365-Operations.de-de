@@ -1,6 +1,6 @@
 ---
 title: Zugriff auf Steuerservice fehlgeschlagen
-description: In diesem Thema wird erklärt, wie Sie einen fehlgeschlagenen Zugriff auf den Steuerberechnungsdienst beheben können.
+description: In diesem Artikel wird erklärt, wie Sie einen fehlgeschlagenen Zugriff auf den Steuerberechnungsdienst beheben können.
 author: hangwan
 ms.date: 03/04/2022
 ms.topic: business-process
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: hangwan
 ms.search.validFrom: 02/16/2022
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: f4682b83405071b4ad7647958122ab2b4e082133
-ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
+ms.openlocfilehash: 65d819b97be3d1238bc0ecfc201b4e24edac8616
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "8612315"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861221"
 ---
 # <a name="failed-to-access-tax-service"></a>Zugriff auf Steuerservice fehlgeschlagen
 
 [!include [banner](../includes/banner.md)]
 
 
-In diesem Thema wird erklärt, wie Sie den Fehler „Zugriff auf Steuerdienst fehlgeschlagen“ des Steuerberechnungsdienstes beheben können.
+In diesem Artikel wird erklärt, wie Sie den Fehler „Zugriff auf Steuerdienst fehlgeschlagen“ des Steuerberechnungsdienstes beheben können.
 
 ## <a name="symptoms"></a>Symptome
 

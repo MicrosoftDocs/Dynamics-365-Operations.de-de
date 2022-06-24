@@ -1,6 +1,6 @@
 ---
-title: Konfiguration für duales Schreiben in Finance and Operations-Apps und Dataverse überprüfen
-description: In diesem Thema wird erklärt, wie Sie feststellen können, ob duales Schreiben in Apps für Finanzen und Betrieb und in Dataverse konfiguriert ist.
+title: Konfiguration für duales Schreiben in Finanz- und Betriebs-Apps und Dataverse überprüfen
+description: In diesem Artikel wird erklärt, wie Sie feststellen können, ob duales Schreiben in Finanz- und Betriebs-Apps und in Dataverse konfiguriert ist.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
@@ -9,14 +9,14 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 3fa16a450032464e445ae166f0699fe0dc388071
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 7131e6c2c4ca4d9c6bb84ad74bf425faf28bd92c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062799"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884458"
 ---
-# <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Konfiguration für duales Schreiben in Finance and Operations-Apps und Dataverse überprüfen
+# <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Konfiguration für duales Schreiben in Finanz- und Betriebs-Apps und Dataverse überprüfen
 
 [!include [banner](../../includes/banner.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "8062799"
 
 
 
-Dieses Thema enthält Informationen zur Problembehandlung für die duales Schreiben-Integration zwischen Apps für Finanzen und Betrieb und Dataverse. Insbesondere wird erklärt, wie Sie feststellen können, ob duales Schreiben in den Apps Finance und Operations und in Dataverse konfiguriert ist.
+Dieser Artikel enthält Informationen zur Problembehandlung für die Integration von dualem Schreiben zwischen Finanz- und Betriebs-Apps und Dataverse. Insbesondere wird erklärt, wie Sie feststellen können, ob duales Schreiben in den Apps Finance und Operations und in Dataverse konfiguriert ist.
 
 ## <a name="verify-that-dual-write-is-configured-in-a-finance-and-operations-app"></a>Überprüfen Sie, ob duales Schreiben in einer Finance und Operations App konfiguriert ist
 

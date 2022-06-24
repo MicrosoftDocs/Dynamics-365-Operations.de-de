@@ -1,6 +1,6 @@
 ---
 title: Datenimport aus SharePoint konfigurieren
-description: In diesem Thema wird erläutert, wie Sie Daten aus Microsoft SharePoint importieren.
+description: In diesem Artikel wird erläutert, wie Sie Daten aus Microsoft SharePoint importieren.
 author: NickSelin
 ms.date: 01/05/2022
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 9ac328e660c7a8a3b4a4f34a650062a0fa974771
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 0163ece2f61735073567b32a45d3dc6df8be1864
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074765"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864777"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Datenimport aus SharePoint konfigurieren
 
 [!include[banner](../includes/banner.md)]
 
-Um Daten aus einer eingehenden Datei mit Hilfe des Framework für elektronische Berichterstellung zu importieren, müssen Sie ein ER-Format konfigurieren, das den Import unterstützt und dann eine Modellzuordnung des Typs **Bis Ziel** ausführen, der dieses Format als Datenquelle verwendet. Um Daten zu importieren, müssen Sie zu der Datei navigieren, die Sie importieren möchten. Die eingehende Datei kann vom Benutzer manuell ausgewählt werden. Mit der neuen EB-Funktion zum Importieren von Daten aus Microsoft SharePoint kann dieser Prozess als unbeaufsichtigter Prozess konfiguriert werden. Sie können EB-Konfigurationen verwenden, um Daten aus Dateien zu importieren, die in Microsoft SharePoint-Ordnern gespeichert sind. In diesem Thema wird erläutert, wie der Import aus SharePoint durchgeführt wird. Die Beispiele verwenden Kreditorenbuchungen als Geschäftsdaten.
+Um Daten aus einer eingehenden Datei mit Hilfe des Framework für elektronische Berichterstellung zu importieren, müssen Sie ein ER-Format konfigurieren, das den Import unterstützt und dann eine Modellzuordnung des Typs **Bis Ziel** ausführen, der dieses Format als Datenquelle verwendet. Um Daten zu importieren, müssen Sie zu der Datei navigieren, die Sie importieren möchten. Die eingehende Datei kann vom Benutzer manuell ausgewählt werden. Mit der neuen EB-Funktion zum Importieren von Daten aus Microsoft SharePoint kann dieser Prozess als unbeaufsichtigter Prozess konfiguriert werden. Sie können EB-Konfigurationen verwenden, um Daten aus Dateien zu importieren, die in Microsoft SharePoint-Ordnern gespeichert sind. In diesem Artikel wird erläutert, wie der Import aus SharePoint durchgeführt wird. Die Beispiele verwenden Kreditorenbuchungen als Geschäftsdaten.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Um die Beispiele in diesem Thema abzuschließen, müssen Sie den folgenden Zugriff haben:
+Um die Beispiele in diesem Artikel abzuschließen, müssen Sie den folgenden Zugriff haben:
 
 - Zugriff auf eine der folgenden Rollen:
 
@@ -192,7 +192,7 @@ Sie können auch die Seite **Dateistatus für die Quellen** öffnen, indem Sie *
 
 ## <a name=""></a><a name="limitations">Einschränkungen</a>
 
-In Versionen von Dynamics 365 Finance vor Version 10.0.25 bietet die Benutzeroberfläche (UI) des ER Frameworks nicht die Funktionalität, einen neuen Batch-Auftrag zu initiieren, der eine Modellzuordnung für den Datenimport im unbeaufsichtigten Modus ausführt. Stattdessen müssen Sie eine neue Logik entwickeln, damit die konfigurierte ER-Model-Zuordnung von der Benutzeroberfläche der Anwendung aufgerufen werden kann, um Daten aus eingehenden Dateien zu importieren. Um diese Logik zu entwickeln, ist etwas technische Arbeit erforderlich. 
+In Versionen von Dynamics 365 Finance vor Version 10.0.25 bietet die Nutzungsoberfläche (UI) des ER Frameworks nicht die Funktionalität, einen neuen Batch-Auftrag zu initiieren, der eine Modellzuordnung für den Datenimport im unbeaufsichtigten Modus ausführt. Stattdessen müssen Sie eine neue Logik entwickeln, damit die konfigurierte ER-Model-Zuordnung von der Benutzeroberfläche der Anwendung aufgerufen werden kann, um Daten aus eingehenden Dateien zu importieren. Um diese Logik zu entwickeln, ist etwas technische Arbeit erforderlich. 
 
 Weitere Informationen über die entsprechende ER API finden Sie im Abschnitt [Code zum Ausführen einer Formatzuordnung für den Datenimport](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) in [ER Framework API-Änderungen für Application Update 7.3](er-apis-app73.md). Überprüfen Sie den Code in der Klasse `BankImport_RU` des Modells `Application Suite`, um zu sehen, wie Ihre benutzerdefinierte Logik implementiert werden kann. Die Klasse `BankImport_RU` erweitert die Klasse `RunBaseBatch`. Sehen Sie sich insbesondere die `runER()`-Methode an, bei der das `ERIModelMappingDestinationRun`-Objekt als Läufer einer ER-Model-Zuordnung erstellt wird.
 

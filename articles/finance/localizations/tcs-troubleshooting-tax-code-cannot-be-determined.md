@@ -1,6 +1,6 @@
 ---
-title: Steuercode kann nicht bestimmt werden
-description: In diesem Thema wird erklärt, wie Sie den Fehler „Steuercode kann nicht bestimmt werden“ im Steuerberechnungsdienst beheben können.
+title: Steuercode kann nicht ermittelt werden
+description: In diesem Artikel wird erklärt, wie Sie den Fehler „Steuercode kann nicht bestimmt werden“ im Steuerberechnungsdienst beheben können.
 author: hangwan
 ms.date: 03/25/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: hangwan
 ms.search.validFrom: 03/23/2022
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 3c0914f0013ad2de61cd5a59e3092fef149742e4
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 6a74724de38cf362900277ab9addc8e6894f7689
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645403"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877858"
 ---
-# <a name="tax-code-cannot-be-determined"></a>Steuercode kann nicht bestimmt werden
+# <a name="tax-code-cannot-be-determined"></a>Steuercode kann nicht ermittelt werden
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die Schritte zur Problembehandlung erklärt, die Sie nehmen können, wenn Sie den Fehler „Steuercode kann nicht bestimmt werden“ im Steuerberechnungsdienst erhalten.
+In diesem Artikel werden die Schritte zur Problembehandlung erklärt, die Sie nehmen können, wenn Sie den Fehler „Steuercode kann nicht bestimmt werden“ im Steuerberechnungsdienst erhalten.
 
 ## <a name="symptom"></a>Symptom
 
@@ -121,7 +121,7 @@ Führen Sie die folgenden Schritte aus, um das Problem zu beheben.
 
 ## <a name="mitigation"></a>Mitigation
 
-1. Führen Sie jeden Schritt im Abschnitt [Problembehandlung](#troubleshoot) dieses Themas durch und korrigieren Sie die Einrichtung nach Bedarf. Wenn die Steuergruppe und die Artikelsteuergruppe nicht korrekt ermittelt wurden, lesen Sie [Es wurden keine übereinstimmenden Ergebnisse gefunden](tcs-troubleshooting-no-matching-result.md).
+1. Führen Sie jeden Schritt im Abschnitt [Problembehandlung](#troubleshoot) dieses Artikels durch und korrigieren Sie die Einrichtung nach Bedarf. Wenn die Steuergruppe und die Artikelsteuergruppe nicht korrekt ermittelt wurden, lesen Sie [Es wurden keine übereinstimmenden Ergebnisse gefunden](tcs-troubleshooting-no-matching-result.md).
 2. Wenn es keine Schnittmenge für die Steuergruppe und die Artikelsteuergruppe gibt, erstellen Sie eine neue Funktionsversion in RCS und korrigieren Sie die Einrichtung.
 
     - Gehen Sie zu **Steuerfunktionen** \> **Steuercodes und ‑gruppen** > **Artikelsteuergruppe**.

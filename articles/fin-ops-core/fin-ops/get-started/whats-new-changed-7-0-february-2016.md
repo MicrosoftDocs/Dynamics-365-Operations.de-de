@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d81d20045c7b06de01a023d1a34ee653dd696ff1
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: e92e6aeab949567e65a13ebdd92f0e5b306ccd30
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711319"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861704"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Neuheiten und Änderungen in Dynamics AX 7.0 (Februar 2016)
 
@@ -320,7 +320,7 @@ Diese Funktion funktioniert unabhängig von den Nachkalkulationsmethoden, die de
 <td>Zugriff auf geführte Verfahrensweisen (Aufgabenleitfäden) und grundlegende Themen über <strong>Hilfe</strong>.</td>
 <td>Das Hilfesystem von AX 2012 verweist auf HTML-Themen, die auf einem lokalen Webserver gespeichert werden. Kunden und Partner können ihre eigene Hilfe erstellen.</td>
 <td>Das Hilfesystem in der aktuellen Version von Dynamics AX zeigt Aufgabenleitfäden an, die in Microsoft Dynamics Lifecycle Services (LCS) BPM gespeichert sind. Das Hilfesystem enthält auch Themen aus der Microsoft-Docs-Seite. Weitere Informationen finden Sie unter <a href="help-overview.md" data-raw-source="[Help system](help-overview.md)">Hilfesystem</a> und <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides (February 2016)](new-task-guides-available-february-2016.md)">Neue Aufgabenleitfäden (Februar 2016)</a>.</td>
-<td>Ein Aufgabenleitfaden ist eine kontrollierte, geführte, interaktive Erfahrung, die Sie durch die Schritte einer Aufgabe oder eines Geschäftsprozesses führt. Sie können die von Microsoft bereitgestellten Aufgabenleitfäden herunterladen und anpassen. Das Thema ermöglicht schnellere und flexiblere Möglichkeiten zur Erstellung, Bereitstellung und Aktualisierung der Produktdokumentation. So können wir besser sicherstellen, dass Zugriff auf den neuesten technischen Informationen enthalten.</td>
+<td>Ein Aufgabenleitfaden ist eine kontrollierte, geführte, interaktive Erfahrung, die Sie durch die Schritte einer Aufgabe oder eines Geschäftsprozesses führt. Sie können die von Microsoft bereitgestellten Aufgabenleitfäden herunterladen und anpassen. Der Artikel ermöglicht schnellere und flexiblere Möglichkeiten zur Erstellung, Bereitstellung und Aktualisierung der Produktdokumentation. So können wir besser sicherstellen, dass Zugriff auf den neuesten technischen Informationen enthalten.</td>
 </tr>
 </tbody>
 </table>

@@ -1,6 +1,6 @@
 ---
 title: Passen Sie die Konfigurationen für elektronische Berichte an, um ein elektronisches Dokument zu erstellen
-description: In diesem Thema wird erläutert, wie Sie ein von Microsoft bereitgestelltes EB-Format (Elektronische Berichterstellung) anpassen, so dass ein benutzerdefiniertes elektronisches Dokument generiert wird.
+description: In diesem Artikel wird erläutert, wie Sie ein von Microsoft bereitgestelltes EB-Format (Elektronische Berichterstellung) anpassen, sodass ein benutzerdefiniertes elektronisches Dokument generiert wird.
 author: NickSelin
 ms.date: 10/21/2020
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a7353d7d8149ff1316fbc0adc55b7e1050f443a8
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 30ef9a0fa9b61b1e2016f85407ec0ec8fb70a6c6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661657"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854697"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Passen Sie die Konfigurationen für elektronische Berichte an, um ein elektronisches Dokument zu erstellen
 
@@ -32,9 +32,9 @@ Mit [Framework für die elektronische Berichterstellung (ER)](general-electronic
 
 ## <a name="overview"></a>Übersicht
 
-Für das Beispiel in diesem Thema müssen Sie einen Bundessteueridentifikationscode als neues benutzerdefiniertes Attribut für jeden Kunden angeben, den Sie elektronisch in Rechnung stellen. Daher müssen Sie die Struktur der aktuell verwendeten Rechnung anpassen, indem Sie in jeder generierten E-Rechnung einen neuen Artikel hinzufügen, der mit dem Steuerkennzeichen gefüllt werden muss.
+Für das Beispiel in diesem Artikel müssen Sie einen Bundessteueridentifikationscode als neues benutzerdefiniertes Attribut für jeden Kunden angeben, den Sie elektronisch fakturieren. Daher müssen Sie die Struktur der aktuell verwendeten Rechnung anpassen, indem Sie in jeder generierten E-Rechnung einen neuen Artikel hinzufügen, der mit dem Steuerkennzeichen gefüllt werden muss.
 
-Die Prozeduren in diesem Thema erläutern, wie ein Benutzer mit der Rolle Systemadministrator, Entwickler für die elektronische Berichterstattung oder funktionaler Berater für die elektronische Berichterstellung die folgenden Aufgaben ausführen kann:
+Die Prozeduren in diesem Artikel erläutern, wie Benutzer mit der Rolle „Systemadministrator“, „Entwickler für elektronische Berichterstellung“ oder „Funktionaler Berater für elektronische Berichterstellung“ die folgenden Aufgaben ausführen können:
 
 - [Konfigurieren Sie den minimalen Satz von EB-Parametern, der erforderlich ist, um das EB-Framework zu verwenden](#ConfigureER).
 - [Importieren Sie die ersten Versionen der Standard-EB-Konfigurationen, die zum Generieren von E-Rechnungen bereitgestellt werden](#ImportERConfigurations1).

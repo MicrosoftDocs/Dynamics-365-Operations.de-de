@@ -1,6 +1,6 @@
 ---
 title: Vorteilsberechtigungsrichtlinien
-description: Dieses Thema informiert über Richtlinien für die Leistungsberechtigung, die festlegen, wer für bestimmte Leistungen berechtigt ist.
+description: Dieser Artikel informiert über Richtlinien für die Leistungsberechtigung, die festlegen, wer für bestimmte Leistungen berechtigt ist.
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: e36235e089fef70bc0d33815cd855628836f58db
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f0b373679690715ddbc518e4df79b81dbb000059
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689549"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877773"
 ---
 # <a name="benefit-eligibility-policies"></a>Vorteilsberechtigungsrichtlinien
 
@@ -28,7 +28,7 @@ ms.locfileid: "8689549"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dieses Thema informiert über Richtlinien für die Leistungsberechtigung, die festlegen, wer für bestimmte Leistungen berechtigt ist.
+Dieser Artikel informiert über Richtlinien für die Leistungsberechtigung, die festlegen, wer für bestimmte Leistungen berechtigt ist.
 
 Wenn Sie Vorteile erstellen, müssen Sie entscheiden, welche Vorteile für welche Mitarbeiter zur Verfügung stehen. Die folgende Tabelle zeigt Beispiele für Vorteile, die Sie vielleicht bestimmten Mitarbeitern zugänglich machen möchten.
 

@@ -1,6 +1,6 @@
 ---
 title: Rechnungsdaten mit dem Rechnungspool in das Kreditorensystem eingeben
-description: In diesem Thema wird beschrieben, wie das Rechnungsbuch verwendet wird, um Rechnungen zu erstellen.
+description: In diesem Artikel wird beschrieben, wie das Rechnungsbuch verwendet wird, um Rechnungen zu erstellen.
 author: abruer
 ms.date: 07/31/2019
 ms.topic: business-process
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf781089469f87dc0a98279003c94fd1e8bf9dbe
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: fc3f1107a9564120aae77a75e6232879bf3c51af
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717333"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858424"
 ---
 # <a name="key-invoice-data-into-the-ap-system-using-invoice-pool"></a>Rechnungsdaten mit dem Rechnungspool in das Kreditorensystem eingeben
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie das Rechnungsbuch verwendet wird, um Rechnungen zu erstellen. Nehmen Sie anschließend den Rechnungspool, um die Rechnung mit einer Bestellung abzugleichen und die Ausgaben auf der Kreditorenrechnungsseite abzuschließen.
+In diesem Artikel wird beschrieben, wie das Rechnungsbuch verwendet wird, um Rechnungen zu erstellen. Nehmen Sie anschließend den Rechnungspool, um die Rechnung mit einer Bestellung abzugleichen und die Ausgaben auf der Kreditorenrechnungsseite abzuschließen.
 
 
 ## <a name="create-a-purchase-order"></a>Eine Bestellung erstellen

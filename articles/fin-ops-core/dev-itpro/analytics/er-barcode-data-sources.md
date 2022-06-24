@@ -1,6 +1,6 @@
 ---
 title: Verwenden Sie Barcode-Datenquellen, um Barcode-Bilder zu generieren
-description: In diesem Thema wird erläutert, wie Sie Barcode-Datenquellen zum Generieren von Barcode-Bildern verwenden.
+description: In diesem Artikel wird erläutert, wie Sie Barcode-Datenquellen zum Generieren von Barcode-Bildern verwenden.
 author: NickSelin
 ms.date: 10/21/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: a5a396080d8b5dd4c2ed9a0eb15c1286e8799ebf
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: c8e755b664656a1a10672a990dc581969f6a7b80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323951"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880311"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Verwenden Sie Barcode-Datenquellen, um Barcode-Bilder zu generieren
 
@@ -77,7 +77,7 @@ Wenn Sie eine **Barcode** Datenquelle konfigurieren, können Sie bestimmte Rende
 >
 > Wenn Sie eine **Barcode** Datenquelle an ein Zellenelement in einem Format binden, und das Zellenelement repräsentiert entweder ein Word-Inhaltssteuerelement oder ein Excel-Bild, wird die Datenquelle in dieser Bindung als eine Funktion dargestellt, die einen einzelnen Parameter des **Zeichenfolgentyps** hat. Mit diesem Parameter müssen Sie den Text angeben, der in ein Barcode-Bild umgewandelt und beim Scannen eines generierten Barcodes gelesen werden soll.
 
-Weitere Informationen zu dieser Funktion erhalten Sie, wenn Sie das Beispiel in diesem Thema abschließen.
+Weitere Informationen zu dieser Funktion erhalten Sie, wenn Sie das Beispiel in diesem Artikel abschließen.
 
 ## <a name="example-generate-a-payment-check-that-contains-a-bar-code-that-encodes-the-payable-amount"></a>Beispiel: Generieren Sie einen Zahlungsscheck, der einen Barcode enthält, der den zu zahlenden Betrag codiert
 
@@ -103,7 +103,7 @@ Dieses Beispiel zeigt, wie ein Benutzer in der Rolle **Systemadministrator** ode
 
 In diesem Beispiel verwenden Sie die bereitgestellte EB-Lösung, die zum Generieren von Zahlungsschecks konfiguriert wurde. Diese Lösung generiert Zahlungsschecks, bei denen der zu zahlende Betrag sowohl als Zahl als auch als Text geschrieben wird. Sie werden diese EB-Lösung so ändern, dass der Scheck auch einen generierten Barcode enthält, in dem der zu zahlende Betrag verschlüsselt ist und mit einem Barcode-Scanner gelesen werden kann.
 
-Diese Schritte können im **USMF**-Unternehmen in Microsoft Dynamics 365 Finance abgeschlossen werden.
+Diese Schritte können im Unternehmen **USMF** in Microsoft Dynamics 365 Finance ausgeführt werden.
 
 ### <a name="complete-the-prerequisites"></a><a name="ExamplePrerequisites"></a>Vervollständigen Sie die Voraussetzungen
 
@@ -112,7 +112,7 @@ Um das Beispiel in diesem Thema abzuschließen, müssen Sie für eine der folgen
 - Funktionaler Berater für elektronische Berichterstellung
 - Systemadministrator
 
-Wenn Sie das Beispiel im Thema [Einbetten von Bildern und Formen in Dokumenten, die Sie mithilfe von EB generiert haben](electronic-reporting-embed-images-shapes.md) nocht nicht abgeschlossen haben, laden Sie die folgende Konfiguration in der Beispiel-EB-Lösung herunter.
+Wenn Sie das Beispiel im Artikel [Einbetten von Bildern und Formen in generierten Dokumenten mithilfe von ER](electronic-reporting-embed-images-shapes.md) noch nicht abgeschlossen haben, laden Sie die folgende Konfiguration in der Beispiel-EB-Lösung herunter.
 
 | Inhaltsbeschreibung         | Dateiname                   |
 |-----------------------------|-----------------------------|
@@ -128,7 +128,7 @@ Laden Sie außerdem die folgende Excel-Datei herunter, die die geänderte Vorlag
 ### <a name="activate-a-configuration-provider"></a><a name="ExampleProvider"></a>Aktivieren eines Konfigurationsanbieters
 
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
-2. Überprüfen Sie auf der Seite **Lokalisierungskonfigurationen** im Abschnitt **Konfigurationsanbieter**, ob der [Konfigurationsanbieter](general-electronic-reporting.md#Provider) für das Beispielunternehmen **Litware, Inc.** aufgeführt und als Aktiv markiert ist. Wenn dieser Konfigurationsanbieter nicht aufgeführt oder nicht als Aktiv markiert ist, befolgen Sie die Schritte im Thema [Konfigurationsanbieter erstellen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. Überprüfen Sie auf der Seite **Lokalisierungskonfigurationen** im Abschnitt **Konfigurationsanbieter**, ob der [Konfigurationsanbieter](general-electronic-reporting.md#Provider) für das Beispielunternehmen **Litware, Inc.** aufgeführt und als Aktiv markiert ist. Wenn dieser Konfigurationsanbieter nicht aufgeführt oder nicht als aktiv markiert ist, befolgen Sie die Schritte im Artikel [Konfigurationsanbieter erstellen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ![Einstellungen der Beispielfirma auf aktiv setzen auf der Seite „Lokalisierungskonfigurationen“.](./media/er-barcode-data-source-active-provider.png)
 
@@ -284,7 +284,7 @@ Die Entwurfsversion des ausgewählten Formats wird als verfügbar markiert, wenn
 
 ### <a name="convert-the-generated-check-to-a-pdf"></a><a name="ExampleConvertToPDF"></a>Konvertieren Sie den generierten Scheck in ein PDF
 
-Wie im Thema [Generieren Sie druckbare FTI-Formulare](er-generate-printable-fti-forms.md#finland) beschrieben können Sie eine spezielle Schriftart verwenden, um Barcodes in einem generierten Dokument zu erstellen. In diesem Fall hängen zusätzliche Transformationen des generierten Dokuments möglicherweise von der Verfügbarkeit dieser Schriftart in der Transformationsumgebung ab. Wenn Sie beispielsweise versuchen, ein Dokument in das PDF-Format zu konvertieren oder eine Vorschau in einer Umgebung anzuzeigen, in der die Schriftart fehlt, werden Barcodes nicht korrekt gerendert.
+Wie im Artikel [Generieren von druckbaren FTI-Formularen](er-generate-printable-fti-forms.md#finland) beschrieben können Sie eine spezielle Schriftart verwenden, um Barcodes in einem generierten Dokument zu erstellen. In diesem Fall hängen zusätzliche Transformationen des generierten Dokuments möglicherweise von der Verfügbarkeit dieser Schriftart in der Transformationsumgebung ab. Wenn Sie beispielsweise versuchen, ein Dokument in das PDF-Format zu konvertieren oder eine Vorschau in einer Umgebung anzuzeigen, in der die Schriftart fehlt, werden Barcodes nicht korrekt gerendert.
 
 Wenn Sie jedoch die Datenquelle **Barcode** verwenden, um Barcodes zu erstellen, hängt das Rendern dieser Barcodes von keiner Schriftart ab. Daher können Sie Dokumente, die Barcodes enthalten, problemlos in das PDF-Format konvertieren. Die folgende Abbildung zeigt die Vorschau eines generierten Zahlungsschecks [umgewandelt](electronic-reporting-destinations.md#OutputConversionToPDF) zu einem PDF, basierend auf der Einstellung der konfigurierten EB [Ziel](electronic-reporting-destinations.md).
 

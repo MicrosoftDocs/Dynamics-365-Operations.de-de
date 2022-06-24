@@ -1,6 +1,6 @@
 ---
 title: Hinzufügen von Filtern zu einer Audit-Datei-Konfiguration
-description: In diesem Thema wird erklärt, wie Sie einen Datenfilter in der deutschen Audit-Datei hinzufügen können.
+description: In diesem Artikel wird erklärt, wie Sie einen Datenfilter in der deutschen Protokolldatei hinzufügen können.
 author: liza-golub
 ms.date: 02/09/2021
 ms.topic: article
@@ -10,18 +10,18 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.region: Austria, Germany
 ms.author: elgolu
-ms.openlocfilehash: 368afdb0002d9a2f699ac1b32f914959d90b704bc0ecee64ac35a8cdca899f74
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: adc20191c83eec50b81e036cabee354e965b4b3b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768255"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874380"
 ---
 # <a name="add-filters-to-an-audit-file-configuration"></a>Hinzufügen von Filtern zu einer Audit-Datei-Konfiguration
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema erklärt, wie Sie einen Filter für Daten in der deutschen Audit-Datei hinzufügen können. Sie können zum Beispiel einen Filter für das Feld **Buchungsebene** in der Tabelle **Allgemeiner Erfassungseintrag** hinzufügen.
+Dieser Artikel erklärt, wie Sie einen Filter für Daten in der deutschen Protokolldatei hinzufügen können. Sie können zum Beispiel einen Filter für das Feld **Buchungsebene** in der Tabelle **Allgemeiner Erfassungseintrag** hinzufügen.
 
 Wie in [Übersicht über die deutsche Prüfdatei (GDPdU/GoBD)](emea-deu-gdpdu-audit-data-export.md#sachkontobuchungen) erläutert, wird das Feld **SPEZIALBUCHUNG** (Buchungsschicht) des **Datensatzes Sachkontobuchungen** aus dem Datenquellenpfad **$GeneralJournalEntry/PostingLayer** für elektronische Meldungen gesammelt. Um die Möglichkeit hinzuzufügen, Daten im Bericht nach dem Feld **SPEZIALBUCHUNG** (Buchungsschicht) zu filtern, führen Sie die folgenden Schritte aus:
 

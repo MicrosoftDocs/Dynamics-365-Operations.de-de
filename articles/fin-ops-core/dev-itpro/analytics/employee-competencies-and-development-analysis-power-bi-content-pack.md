@@ -1,6 +1,6 @@
 ---
 title: Power BI-Inhalt zu Mitarbeiterkompetenzen und -entwicklung
-description: In diesem Thema wird der Power BI-Inhalt zur Mitarbeiterkompetenzen und -entwicklung beschrieben.
+description: In diesem Artikel wird der Power BI-Inhalt zur Mitarbeiterkompetenzen und -entwicklung beschrieben.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 572f6bcfa202995d90080e1a31476122f7ec23d71214d5ff0dd44ed919859c57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8fee4d98a3e20fa268d6c3539db09e09a7861a2b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726308"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851015"
 ---
 # <a name="employee-competencies-and-development-power-bi-content"></a>Power BI-Inhalt zu Mitarbeiterkompetenzen und -entwicklung
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird der Power BI-Inhalt zur Mitarbeiterkompetenzen und -entwicklung beschrieben. 
+In diesem Artikel wird der Power BI-Inhalt zur Mitarbeiterkompetenzen und -entwicklung beschrieben. 
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>Berichte, die im Paket enthalten sind
 Nachdem Sie das Inhaltspaket mit Ihren Daten verbunden haben, zeigen die Berichte die Daten Ihrer Organisation an. Wenn Sie bisher noch nie Microsoft Power BI verwendet haben, finden Sie weitere Informationen unter [Erste Schritte in Power BI](https://powerbi.microsoft.com/guided-learning/?WT.mc_id=PBIService_GetData). Die Berichte, die im Paket enthalten sind, haben Diagrammen und Tabellen, die zusätzliche Informationen enthalten. Die Berichte werden in der folgenden Tabelle näher erläutert.

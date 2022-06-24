@@ -1,6 +1,6 @@
 ---
 title: Verweise auf Originalrechnungen in Gutschriften
-description: In diesem Thema wird erläutert, wie Sie die ursprünglichen Rechnungsnummern in zugehörigen Gutschriften einrichten und ausdrucken.
+description: In diesem Artikel wird erläutert, wie Sie die ursprünglichen Rechnungsnummern in zugehörigen Gutschriften einrichten und ausdrucken.
 author: ilkond
 ms.date: 10/26/2021
 ms.topic: article
@@ -13,26 +13,26 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c1362bf41416202631dc4b966338e8166b26a67f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ebfeb43aaf137ef336b460f340fbda50f5918d08
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688345"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861530"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>Verweise auf Originalrechnungen in Gutschriften
 
 [!include [banner](../includes/banner.md)]
 
 
-In einigen Ländern und Regionen ist es gesetzlich vorgeschrieben, dass gedruckte Gutschriften Verweise auf die Originalrechnungen enthalten. In diesem Thema wird erläutert, wie Sie die ursprünglichen Rechnungsnummern in zugehörigen Gutschriften einrichten und ausdrucken.
+In einigen Ländern und Regionen ist es gesetzlich vorgeschrieben, dass gedruckte Gutschriften Verweise auf die Originalrechnungen enthalten. In diesem Artikel wird erläutert, wie Sie die ursprünglichen Rechnungsnummern in zugehörigen Gutschriften einrichten und ausdrucken.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
 - Aktivieren Sie im **Funktionsverwaltung**-Arbeitsbereich die Funktion **Layout für die Fakturierung von Gutschriften auf Verkaufs- und Projektrechnungsberichte**. Weitere Informationen finden Sie unter [Funktionsverwaltung – Übersicht](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - Die druckbaren Formate der erforderlichen Dokumente müssen in der Druckverwaltung konfiguriert werden.
 
-Die in diesem Thema beschriebene Funktionalität gilt für die folgenden Dokumente:
+Die in diesem Artikel beschriebene Funktionalität gilt für die folgenden Dokumente:
 
 **Debitorenkonten**
 

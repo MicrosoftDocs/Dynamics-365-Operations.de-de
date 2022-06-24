@@ -1,6 +1,6 @@
 ---
 title: Registrierungskennungen
-description: Unter den Themen in diesem Abschnitt finden Sie Informationen zum Einrichten und Verwalten von Anmelde-IDs.
+description: Unter den Themen in diesem Artikel finden Sie Informationen zum Einrichten und Verwalten von Anmelde-IDs.
 author: ShylaThompson
 ms.date: 11/08/2017
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 544e994a18811995afc64c052a3f97e622529162b8a14b17206c370026b78ac4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 379cf78ece388f738fad8121d5b0adb4434d7905
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782815"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883074"
 ---
 # <a name="registration-ids"></a>Registrierungskennungen
 
 [!include [banner](../includes/banner.md)]
 
-Unter den Themen in diesem Abschnitt finden Sie Informationen zum Einrichten und Verwalten von Anmelde-IDs.
+Unter den Themen in diesem Artikel finden Sie Informationen zum Einrichten und Verwalten von Anmelde-IDs.
 
-Viele Länder und Regionen haben unterschiedliche Bestimmungen und Anforderungen für das Erfassen Registrierungsnummern oder IDs. Dieses Thema enthält einen Überblick der erforderlichen Einstellungen und dem Verarbeiten der unterstützten Erfassungstypen für Parteien in verschiedenen europäischer Länder/Regionen. Alle Länder/Regionen habe Ihre Anforderungen zur Unterstützung von verschiedenen landesspezifischen Funktionen, die Registrierungsnummern zugeordnet werden, die von verschiedenen Stellen bereitgestellt werden. Beispiele für Registrierungsnummern enthalten Sozialversicherungsnummer (SSN), Steuerkennungsnummer (TIN) und die Kennung der MwSt-Kennung (EU MwSt. ID). Diese Funktion bietet ein einheitliches Framework für alle Länder in allen Regionen, die Anforderungen von einigen landesspezifischen europäischen Ländern berücksichtigen. Die folgenden Abschnitte beschreiben den allgemeinen Informationsfluss, der für die Einrichtung und Verwaltung der Registrations-IDs verwendet wird.
+Viele Länder und Regionen haben unterschiedliche Bestimmungen und Anforderungen für das Erfassen Registrierungsnummern oder IDs. Dieser Artikel enthält einen Überblick der erforderlichen Einstellungen und über die Verarbeitung der unterstützten Erfassungstypen für Parteien in verschiedenen europäischen Ländern/Regionen. Alle Länder/Regionen habe Ihre Anforderungen zur Unterstützung von verschiedenen landesspezifischen Funktionen, die Registrierungsnummern zugeordnet werden, die von verschiedenen Stellen bereitgestellt werden. Beispiele für Registrierungsnummern enthalten Sozialversicherungsnummer (SSN), Steuerkennungsnummer (TIN) und die Kennung der MwSt-Kennung (EU MwSt. ID). Diese Funktion bietet ein einheitliches Framework für alle Länder in allen Regionen, die Anforderungen von einigen landesspezifischen europäischen Ländern berücksichtigen. Die folgenden Abschnitte beschreiben den allgemeinen Informationsfluss, der für die Einrichtung und Verwaltung der Registrations-IDs verwendet wird.
 
 ## <a name="registration-type-creation"></a>Registrationstyperfassung
 Bevor Sie Registrierungsnummern-IDs einrichten können, müssen Sie die Registrierungstypen für die unterschiedlichen Arten von Registrierungsnummern, denen die einzelnen Parteien unterworfen sind. Gehen Sie zu **Organisationsverwaltung** &gt; **Globales Adressbuch** &gt; **Erfassungstypen** &gt;, um die **Erfassungstypen** für Kreditoren, Debitoren, Arbeitskräfte und juristischen Personen in verschiedenen Ländern/Region zu erstellen und zu verwalten.
@@ -51,7 +51,7 @@ Erfassungskategorie ist die Land/Regionskennung, die für Länder/Regionen für 
 |-----------------------|----------------|
 | Registrierungstyp     | Das Land/Region des Erfassungstyps|
 | Beschränkt auf         | Der Typ der Einschränkung, die auf den Steuererfassungstyp gilt: Keine, Organisation, Person.|
-| Registrierungskategorie | Die eindeutige Erfassungskennung genehmigt für die Verwendung im Land. Die vollständige Liste der unterstützten Kategorien wird später in diesem Thema angezeigt. |
+| Registrierungskategorie | Die eindeutige Erfassungskennung genehmigt für die Verwendung im Land. Die vollständige Liste der unterstützten Kategorien wird später in diesem Artikel gezeigt. |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Geben die Erfassung-ID für globale Adressbuchdatensätze ein
 
@@ -76,7 +76,7 @@ Das globale Adressbuch (GAB) enthält konsolidierte Adressinformationen für Deb
 Suche für Parteidatensätze auf einer Erfassungskennung ist in die Steuerformulare verfügbar, die für die Partei, zur juristischen Person, den Kreditor, z Debitor und der Arbeitskraft zugeordnet werden. Klicken Sie auf **Erfassung ID-Suche**, um die Seite **Erfassung ID-Suchkriterien** zu öffnen. Definieren Sie die Suchkriterien und klicken Sie auf **Suchen**. Im System werden die ausgewählten Datensätze aus dem globalen Adressbuch zugeordnet und die Typen des Parteidatensatzes angezeigt.
 
 ## <a name="supported-registration-categories"></a>Unterstützte Registrierungskategorien
-In der folgenden Tabelle werden die unterstützten Registrierungstypen aufgeführt. Wenn Sie mit den Microsoft Dynamics AX 2012-Feldern für Registrierungskennungen vertraut sind: Diese Tabelle ordnet diese Felder auch den Registrierungskategorien von Dynamics 365 Finance zu.
+In der folgenden Tabelle werden die unterstützten Registrierungstypen aufgeführt. Wenn Sie mit den Microsoft Dynamics AX 2012-Feldern für Registrierungskennungen vertraut sind: Diese Tabelle ordnet diese Felder auch den Registrierungskategorien von Dynamics 365 Finance zu.
 
 | Finance-Registrierungskategorie         |Land/Region  | Dynamics AX 2012 – Begriff/Feld|
 |---------------------------------------------------------------|---------------------|---------------------------------|

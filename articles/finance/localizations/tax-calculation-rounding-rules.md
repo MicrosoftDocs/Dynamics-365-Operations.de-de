@@ -1,6 +1,6 @@
 ---
 title: Rundungsregeln für die Steuerberechnung
-description: Dieses Thema liefert Informationen über die Rundungsregeln in den Steuerberechnungsparametern des Steuerberechnungsdienstes.
+description: Dieser Artikel liefert Informationen über die Rundungsregeln in den Steuerberechnungsparametern des Steuerberechnungsdienstes.
 author: kailiang
 ms.date: 07/29/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 167db4d836aa754509bb28677916a30901cebbbb
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0f6182ab18a5a408a6e526feec7014ccdfce8af0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694173"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858300"
 ---
 # <a name="tax-calculation-rounding-rules"></a>Rundungsregeln für die Steuerberechnung
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema liefert Informationen darüber, wie die Rundungsregeln in den Steuerberechnungsparametern des Steuerberechnungsdienstes funktionieren.
+Dieser Artikel liefert Informationen darüber, wie die Rundungsregeln in den Steuerberechnungsparametern des Steuerberechnungsdienstes funktionieren.
 
 > [!NOTE] 
 > Wenn der Steuerberechnungsdienst aktiviert ist, sind die Rundungsregeln auf den Seiten **Umsatzsteuer-Code** und **Umsatzsteuer-Gruppe** nicht wirksam.

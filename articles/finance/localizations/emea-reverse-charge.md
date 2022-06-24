@@ -1,6 +1,6 @@
 ---
 title: Mechanismus zur Verlagerung der Steuerschuld für USt./GST-Regelung
-description: In diesem Thema wird erläutert, wie die Verlagerung der Steuerschuld (MwSt.) für europäische Länder, Saudi-Arabien und Singapur eingerichtet wird.
+description: In diesem Artikel wird erläutert, wie die Verlagerung der Steuerschuld (MwSt.) für europäische Länder, Saudi-Arabien und Singapur eingerichtet wird.
 author: epodkolz
 ms.date: 10/05/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 326a74d0f962cf0455033b04950ded7ca26bfc77
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 4176f8e853b7d7c2acc1044cab33371202f10c4a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594718"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861261"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>Mechanismus zur Verlagerung der Steuerschuld für USt./GST-Regelung
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird ein allgemeiner Ansatz zum Einrichten der Funktionalität zur Verlagerung der Steuerschuld für Länder/Regionen beschrieben, welche die USt.- oder GST-Regelungen anwenden.
+In diesem Artikel wird ein allgemeiner Ansatz zum Einrichten der Funktionalität zur Verlagerung der Steuerschuld für Länder/Regionen beschrieben, welche die USt.- oder GST-Regelungen anwenden.
                                                                                  
 Die länder-/regionsspezifische Verfügbarkeit der Funktionalität wird durch die folgenden Funktionen im Arbeitsbereich **Funktionsverwaltung** verwaltet.
 
@@ -33,7 +33,7 @@ Die länder-/regionsspezifische Verfügbarkeit der Funktionalität wird durch di
 | Verlagerung der Steuerschuld für weitere Länder            | Bahrain  </br>Kuwait  </br>Oman  </br>Katar                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Mechanismus zur Verlagerung der Steuerschuld für USt./GST-Regelung aktivieren | Alle anderen Länder/Regionen, außer:  </br>Brasilien  </br>Indien  </br>Russische Föderation                                                                                                                                                                                                                                                                                                                                                                                         |
  
- Weitere Informationen finden Sie im Abschnitt [Mechanismus für Verlagerung der Steuerschuld für USt./GST-Regelung aktivieren](#enable-reverse-charge) weiter unten in diesem Thema.
+ Weitere Informationen finden Sie im Abschnitt [Mechanismus für Verlagerung der Steuerschuld für USt./GST-Regelung aktivieren](#enable-reverse-charge) weiter unten in diesem Artikel.
 
 Die Verlagerung der Steuerschuld ist ein Steuerschema, das die Zuständigkeit für die Buchhaltung und das Melden der Mehrwertsteuer vom Verkäufer auf den Einkäufer von Waren und/oder Dienstleistungen verschiebt. Daher melden Empfänger von Waren und/oder Dienstleistungen sowohl die Ausgangssteuer (in der Rolle eines Verkäufers) als auch die Vorsteuer (in der Rolle des Einkäufers) in ihrer MwSt.-Abrechnung.
 

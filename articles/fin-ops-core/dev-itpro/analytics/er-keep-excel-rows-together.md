@@ -1,6 +1,6 @@
 ---
 title: Entwerfen Sie ein ER-Format, um Zeilen auf derselben Excel-Seite zusammenzuhalten.
-description: In diesem Thema wird erklärt, wie Sie ein elektronisches Berichtsformat (ER) entwerfen, bei dem die Zeilen auf derselben Microsoft Excel-Seite zusammenbleiben.
+description: In diesem Artikel wird erklärt, wie Sie ein elektronisches Berichtsformat (EB) entwerfen, bei dem die Zeilen auf derselben Microsoft Excel-Seite zusammenbleiben.
 author: NickSelin
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-03-01
 ms.dyn365.ops.version: Version 10.0.26
-ms.openlocfilehash: 06782a4933fb5c3e86ad436b853f207fd3d5cddb
-ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
+ms.openlocfilehash: 98e6dd4f926908f65239f3e4f3608f9c9408f9d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "8612350"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854668"
 ---
 # <a name="design-an-er-format-to-keep-rows-together-on-the-same-excel-page"></a>Entwerfen Sie ein ER-Format, um Zeilen auf derselben Excel-Seite zusammenzuhalten.
 
 [!include [banner](../includes/banner.md)]
 
 
-Dieses Thema erklärt, wie ein Benutzer in der Rolle Systemadministrator oder Electronic Reporting Functional Consultant ein [Elektronisches Reporting (ER)](general-electronic-reporting.md) [Format](er-overview-components.md#format-component) konfigurieren kann, das ausgehende Belege in Microsoft Excel generiert und die Paginierung der Belege so verwaltet, dass erstellte Zeilen auf derselben Seite bleiben.
+Dieser Artikel erklärt, wie Benutzer mit der Rolle „Systemadministrator“ oder „Electronic Reporting Functional Consultant“ ein [Elektronische Berichterstellung (EB)](general-electronic-reporting.md)-[Format](er-overview-components.md#format-component) konfigurieren können, das ausgehende Belege in Microsoft Excel generiert und die Paginierung der Belege so verwaltet, dass erstellte Zeilen auf derselben Seite bleiben.
 
 In diesem Beispiel ändern Sie das von Microsoft bereitgestellte ER-Format, das zum Drucken von Rechnungen mit freiem Text in Excel verwendet wird. Mit Ihren Änderungen können Sie die Paginierung eines generierten Freitext-Rechnungsberichts so verwalten, dass alle Zeilen einer einzelnen Rechnungszeile nach Möglichkeit auf derselben Seite stehen.
 
-Die Prozeduren in diesem Thema können im **USMF**-Unternehmen erledigt werden. Eine Codierung ist nicht erforderlich.
+Die Verfahren in diesem Artikel können im **USMF**-Unternehmen abgeschlossen werden. Eine Codierung ist nicht erforderlich.
 
 In diesem Beispiel erstellen Sie die erforderlichen ER [Konfigurationen](general-electronic-reporting.md#Configuration) für die Beispielfirma **Litware, Inc.**. Stellen Sie sicher, dass der Konfigurationsanbieter für die Beispielfirma **Litware, Inc.** (`http://www.litware.com`) für das ER Framework aufgeführt und als **Aktiv** markiert ist. Wenn dieser Konfigurationsanbieter nicht aufgeführt ist oder nicht als **Aktiv** markiert ist, folgen Sie den Schritten unter [Erstellen Sie einen Konfigurationsanbieter und markieren Sie ihn als aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
@@ -73,7 +73,7 @@ Führen Sie die Schritte unter [Konfigurieren Sie ein Formatziel für die Bildsc
 
     ![Überprüfung der Paginierung der generierten Freitext-Rechnung in der Excel-Desktop-Anwendung.](./media/er-keep-excel-rows-together-invoice1.gif)
 
-Die übrigen Verfahren in diesem Thema zeigen, wie Sie das Standard-ER-Format anpassen können, um das Aussehen und die Lesbarkeit des Rechnungsberichts zu verbessern, indem Sie den gesamten Inhalt für eine einzelne Rechnungszeile auf derselben Seite halten.
+Die übrigen Verfahren in diesem Artikel zeigen, wie Sie das Standard-EB-Format anpassen können, um das Aussehen und die Lesbarkeit des Rechnungsberichts zu verbessern, indem Sie den gesamten Inhalt für eine einzelne Rechnungszeile auf derselben Seite behalten.
 
 ## <a name="create-a-custom-format"></a>Erstellen eines benutzerdefinierten Formats
 

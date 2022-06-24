@@ -1,6 +1,6 @@
 ---
-title: Empfohlene Verfahren für Buchungsprofile
-description: In diesem Thema werden empfohlene Verfahren zum Konfigurieren von Buchungsprofilen beschrieben.
+title: Empfohlene Verfahren in Bezug auf Buchungsprofile
+description: In diesem Artikel werden empfohlene Verfahren zum Konfigurieren von Buchungsprofilen beschrieben.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 211dc42b80089eb1f59a435f09d6e9d9f956736b
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: fb0e321f447b78b88c065e52bb7fad1c445e47b6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734274"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849901"
 ---
 # <a name="recommended-practices-for-posting-profiles"></a>Empfohlene Verfahren für Buchungsprofile
 
-Es gibt mehrere empfohlene Vorgehensweisen, die Sie befolgen sollten, wenn Sie Buchungsprofile im gesamten System konfigurieren. In diesem Thema werden verschiedene Szenarien und die entsprechenden empfohlenen Vorgehensweisen beschrieben.
+Es gibt mehrere empfohlene Vorgehensweisen, die Sie befolgen sollten, wenn Sie Buchungsprofile im gesamten System konfigurieren. In diesem Artikel werden verschiedene Szenarien und die entsprechenden empfohlenen Vorgehensweisen beschrieben.
 
 ## <a name="setting-the-do-not-allow-manual-entry-flag"></a>Festlegen des Kennzeichens „Keine manuellen Eingaben zulassen“
 

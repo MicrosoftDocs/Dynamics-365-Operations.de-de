@@ -1,6 +1,6 @@
 ---
 title: Abdeckungsoptionen erstellen
-description: Dieses Thema beschreibt die Deckungsoptionen in Microsoft Dynamics 365 Human Resources für die Wahl eines Teilnehmers in einem Leistungsplan oder Programm.
+description: Dieser Artikel beschreibt die Deckungsoptionen in Microsoft Dynamics 365 Human Resources für die Wahl eines Teilnehmers in einem Leistungsplan oder Programm.
 author: twheeloc
 ms.date: 08/24/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b6d35967e731f3618d932694b49c1952af9f93cf
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 8569cabf72871396b9935a14a5637e5e645705fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693919"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848223"
 ---
 # <a name="create-coverage-options"></a>Abdeckungsoptionen erstellen
 

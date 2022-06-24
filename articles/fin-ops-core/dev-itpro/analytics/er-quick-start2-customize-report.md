@@ -1,6 +1,6 @@
 ---
-title: Anpassen eines EB-Formats, um ein benutzerdefiniertes elektronisches Dokument zu generieren
-description: In diesem Thema wird erläutert, wie Sie ein von Microsoft bereitgestelltes EB-Format (Elektronische Berichterstellung) so anpassen, dass ein benutzerdefiniertes elektronisches Dokument generiert wird.
+title: ER-Format zur Erstellung eines benutzerdefinierten elektronischen Dokuments anpassen
+description: In diesem Artikel wird erläutert, wie Sie ein von Microsoft bereitgestelltes EB-Format (Elektronische Berichterstellung) so anpassen, dass ein benutzerdefiniertes elektronisches Dokument generiert wird.
 author: NickSelin
 ms.date: 06/22/2020
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 14976aab474b6571c2a25907f04fd4d7ae053e74
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 492964d3cea0e474a50d6d83231f33d9508b9d9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323816"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886790"
 ---
-# <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>Anpassen eines EB-Formats, um ein benutzerdefiniertes elektronisches Dokument zu generieren
+# <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>ER-Format zur Erstellung eines benutzerdefinierten elektronischen Dokuments anpassen
 
 [!include[banner](../includes/banner.md)]
 
-Die Prozeduren in diesem Thema erläutern, wie ein Benutzer mit der Rolle des Systemadministrators oder des funktionalen Beraters für die elektronische Berichterstellung die folgenden Aufgaben ausführen kann:
+Die Prozeduren in diesem Artikel erläutern, wie Benutzer mit der Rolle „Systemadministrator“ oder „Funktionaler Berater für elektronische Berichterstellung“ die folgenden Aufgaben ausführen:
 
 - Konfigurieren der Parameter für das [Framework für elektronische Berichterstellung (EB)](general-electronic-reporting.md).
 - Importieren von EB-Konfigurationen, die von Microsoft bereitgestellt und zum Generieren einer Zahlungsdatei verwendet werden, während eine [Kreditorenzahlung](../../../finance/cash-bank-management/tasks/vendor-payment-overview.md) verarbeitet wird.
@@ -135,7 +135,7 @@ Weitere Informationen zu EB-Konfigurationsanbietern finden Sie unter [Erstellen 
 
 ### <a name="import-the-standard-er-configurations"></a><a id="ImportERFormat1"></a>Importieren der standardmäßigen EB-Konfigurationen
 
-Um Ihrer aktuellen Instanz von Microsoft Dynamics 365 Finance die standardmäßigen EB-Konfigurationen hinzuzufügen, müssen Sie sie aus dem EB-[Repository](general-electronic-reporting.md#Repository) importieren, das für diese Instanz konfiguriert wurde.
+Um Ihrer aktuellen Microsoft Dynamics 365 Finance-Instanz die standardmäßigen EB-Konfigurationen hinzuzufügen, müssen Sie sie aus dem EB-[Repository](general-electronic-reporting.md#Repository) importieren, das für diese Instanz konfiguriert wurde.
 
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
 2. Wählen Sie auf der Seite **Lokalisierungskonfigurationen** im Bereich **Konfigurationsanbieter** die Kachel **Microsoft** aus. Wählen Sie dann **Repositorys** aus, um die Liste der Repositorys für den Microsoft-Anbieter anzuzeigen.

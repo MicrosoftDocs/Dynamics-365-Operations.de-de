@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 508723752ec7ae5f48e52c728b6ef526ec49e4e2
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: f1e6932740c33ae418ac633623680eda6af7a592
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723022"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858523"
 ---
 # <a name="collections-management-key-concepts"></a>Schlüsselkonzepte der Inkassoverwaltung
 
@@ -34,9 +34,9 @@ Bevor Sie mit dem Einrichten oder Verwenden von Inkassovorgängen beginnen, soll
 - Abschreibungsbuchungen können in einem Schritt erstellt werden.
 - Zahlungen mit unzureichender Deckung (NSF) können in nur einem Schritt verarbeitet werden.
 
-In diesem Thema werden die einzelnen Konzepte beschrieben.
+In diesem Artikel werden die einzelnen Konzepte beschrieben.
 
-## <a name="customer-aging-snapshots"></a>Fälligkeitsmomentaufnahmen für Debitoren 
+## <a name="customer-aging-snapshots"></a>Fälligkeitsmomentaufnahmen für Debitoren
 
 Eine Fälligkeitsmomentaufnahme enthält die berechneten Saldenrückblicke für einen Debitor zu einem bestimmten Zeitpunkt. Diese Informationen werden auf der Listenseite **Saldenrückblick** und auf der Seite **Inkassi** angezeigt. Eine Fälligkeitsmomentaufnahme muss erstellt werden, bevor Sie Informationen auf den Seiten der Inkassoliste anzeigen können (**Saldenrückblick**, **Inkassoaktivitäten** und **Inkassofälle**).
 
@@ -86,7 +86,7 @@ Der Aktivitätsbereich enthält Schaltflächen, mit denen Sie verwandte Informat
 
 Sie können ganze Zinsrechnungen oder mit Zinsrechnungen zusammenhängende Gebühren und Buchungszinsen erlassen, wieder erheben oder stornieren. Wählen Sie in der Registerkarte **Einzug** im Aktivitätsbereich auf der Listenseite **Alle Debitoren** die Option **Zinsrechnung**, **Buchungszinsen** oder **Gebühr**.
 
-Diese Regulierungen wirken sich nur auf Zinsrechnungen und die darin enthaltenen Zinsen und Gebühren aus. Informationen zum Abschreiben aller Gebühren, die ein Debitor schuldet, finden Sie im Abschnitt [Abschreibungsbuchungen anlegen](#creating-write-off-transactions) dieses Themas.
+Diese Regulierungen wirken sich nur auf Zinsrechnungen und die darin enthaltenen Zinsen und Gebühren aus. Informationen zum Abschreiben aller Gebühren, die ein Debitor schuldet, finden Sie im Abschnitt [Abschreibungsbuchungen anlegen](#creating-write-off-transactions) dieses Artikels.
 
 Weitere Informationen finden unter Erstellen Sie einen Zinscode mit einem Bereich und Verarbeiten Sie Zinsen.
 

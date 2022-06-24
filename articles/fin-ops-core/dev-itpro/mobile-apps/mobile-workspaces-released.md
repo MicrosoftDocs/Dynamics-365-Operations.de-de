@@ -1,6 +1,6 @@
 ---
 title: Verfügbare mobile Arbeitsbereiche
-description: In diesem Thema werden die mobilen Arbeitsbereiche aufgeführt, die für Systemadministratoren verfügbar sind.
+description: In diesem Artikel werden die mobilen Arbeitsbereiche aufgeführt, die für Systemadministratoren verfügbar sind.
 author: sericks007
 ms.date: 05/24/2022
 ms.topic: article
@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4398bd8cf944ef11a0463d937aeaa3b5cc109142
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 79abd22bab9ec88358fa039060a67006fc53cb5d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811003"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868639"
 ---
 # <a name="available-mobile-workspaces"></a>Verfügbare mobile Arbeitsbereiche
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-Dieses Thema listet die mobilen Arbeitsbereiche auf, die für die Verwendung mit der Mobile-App für Finanz und Betrieb (Dynamics 365) zur Verfügung stehen. Die folgende Tabelle zeigt den Plan für die Veraltung jedes dieser mobilen Arbeitsbereiche in Bezug darauf, ob ein Ersatzerlebnis geplant ist oder nicht.  
+Dieser Artikel listet die mobilen Arbeitsbereiche auf, die für die Verwendung mit der Mobile-App von Finance und Operations (Dynamics 365) zur Verfügung stehen. Die folgende Tabelle zeigt den Plan für die Veraltung jedes dieser mobilen Arbeitsbereiche in Bezug darauf, ob ein Ersatzerlebnis geplant ist oder nicht.  
 
 
 | Mobiler Arbeitsbereich     | Description   | Plan außer Betrieb nehmen   |

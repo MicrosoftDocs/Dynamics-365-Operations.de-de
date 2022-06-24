@@ -1,6 +1,6 @@
 ---
-title: Sicherungsspeicher von ER-Vorlagen
-description: In diesem Thema wird erläutert, wie der Sicherungsspeicher der elektronischen Berichterstellung (Electronic Reporting, ER) zum Wiederherstellen von Vorlagen verwendet wird.
+title: Sicherungsspeicher von EB-Vorlagen
+description: In diesem Artikel wird erläutert, wie der Sicherungsspeicher der elektronischen Berichterstellung (Electronic Reporting, ER) zum Wiederherstellen von Vorlagen verwendet wird.
 author: NickSelin
 ms.date: 04/29/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b5de8b9dc06cf10bda1932d5f4ee4484cdae591564fdcd5dd28c5036b82abc66
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2ca847f6f11d5d849ea570cc3886e6470021e451
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767876"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880392"
 ---
 # <a name="backup-storage-of-er-templates"></a>Sicherungsspeicher von ER-Vorlagen
 
@@ -28,9 +28,9 @@ ms.locfileid: "6767876"
 
 Mit der [Elektronischen Berichterstellungs(EB)-Übersicht](general-electronic-reporting.md) können geschäftliche Benutzer Formate für ausgehende Dokumente in Übereinstimmung mit den rechtlichen Anforderungen verschiedener Länder und Regionen konfigurieren. Konfigurierte ER-Formate können vordefinierte Vorlagen verwenden, um ausgehende Dokumente in verschiedenen Formaten zu generieren, z. B. Microsoft Excel-Arbeitsmappen, Microsoft Word-Dokumente oder PDF-Dokumente. Die Vorlagen sind mit den Daten gefüllt, die der konfigurierte Datenfluss für generierte Dokumente erfordert.
 
-Jedes konfigurierte Format kann als Teil einer ER-Lösung veröffentlicht werden. Jede EB-Lösung kann von einer Finance and Operations-Instanz exportiert und in eine andere Instanz importiert werden.
+Jedes konfigurierte Format kann als Teil einer ER-Lösung veröffentlicht werden. Jede ER-Lösung kann von einer Finance and Operations-Instanz exportiert und in eine andere Instanz importiert werden.
 
-Das EB-Framework verwendet die [Konfigurieren der Dokumentverwaltung](../../fin-ops/organization-administration/configure-document-management.md), um erforderliche Vorlagen für die aktuelle Finance and Operations-Instanz beizubehalten. Je nach Einstellungen des ER-Frameworks kann Microsoft Azure BLOB-Speicher oder ein Microsoft SharePoint-Ordner als physischer Primärspeicherort für Vorlagen ausgewählt werden. (Weitere Informationen, finden Sie unter [Konfigurieren des Elektronischen Berichterstellungs(EB)-Frameworks](electronic-reporting-er-configure-parameters.md).) Die DocuValue-Tabelle enthält einen einzelnen Datensatz für jede Vorlage. In jedem Datensatz speichert das Feld **AccessInformation** den Pfad einer Vorlagendatei, die sich im konfigurierten Speicherort befindet.
+Das EB-Framework verwendet [Konfigurieren der Dokumentverwaltung](../../fin-ops/organization-administration/configure-document-management.md), um erforderliche Vorlagen für die aktuelle Finance and Operations-Instanz beizubehalten. Je nach Einstellungen des ER-Frameworks kann Microsoft Azure BLOB-Speicher oder ein Microsoft SharePoint-Ordner als physischer Primärspeicherort für Vorlagen ausgewählt werden. (Weitere Informationen, finden Sie unter [Konfigurieren des Elektronischen Berichterstellungs(EB)-Frameworks](electronic-reporting-er-configure-parameters.md).) Die DocuValue-Tabelle enthält einen einzelnen Datensatz für jede Vorlage. In jedem Datensatz speichert das Feld **AccessInformation** den Pfad einer Vorlagendatei, die sich im konfigurierten Speicherort befindet.
 
 Wenn Sie Ihre Finance and Operations-Instanzen verwalten, können Sie die aktuelle Instanz zu einem anderem Speicherort migrieren. Sie können Ihre Produktionsinstanz beispielsweise zu einer neuen Sandboxumgebung migrieren. Wenn Sie das ER-Framework konfigurieren, um Vorlagen im BLOB-Speicher zu speichern, verweist die DocuValue-Tabelle in der neuen Sandboxumgebung auf die BLOB-Speicherinstanz in der Produktionsumgebung. Auf diese Instanz kann jedoch nicht über die Sandboxumgebung zugegriffen werden, da der Migrationsvorgang die Migration von Artefakten im BLOB-Speicher nicht unterstützt. Daher tritt eine Ausnahme auf, wenn Sie versuchen, ein ER-Format auszuführen, das eine Vorlage zum Generieren von Geschäftsdokumenten verwendet, und Sie erhalten eine Benachrichtigung, dass die Vorlage fehlt. Sie erhalten eine Anleitung dazu, wie Sie die in der ER-Formatkonfiguration enthaltene Vorlage mit dem ER-Bereinigungstool löschen und erneut importiert. Dieser Vorgang kann zeitaufwändig sein, da Sie möglicherweise über mehrere ER-Formatkonfigurationen verfügen.
 
@@ -58,7 +58,7 @@ Wenn für die Erstellung ausgehender Dokumente die Vorlage eines ER-Formats erfo
 
 Um den Parameter **Prozedur zur Wiederherstellung der fehlerhaften Vorlagen automatisch im Stapelverarbeitungsmodus ausführen** einzurichten, führen Sie die folgenden Schritte aus:
 
-1. Öffnen Sie in Finance and Operations, die **Organisationsverwaltung \> Elektronische Berichterstellung \> Konfigurationenseite**.
+1. Öffnen Sie in Finance and Operations die Seite **Organisationsverwaltung \> Elektronische Berichterstellung \> Konfigurationen**.
 2. Auf der Seite **Konfigurationen** im Aktivitätsbereich, auf der Registerkarte **Konfigurationen** in der Gruppe **Erweiterte Einstellungen** wählen Sie **Benutzerparameter** aus.
 3. Legen Sie im Dialogfeld **Benutzerparameter** den erforderlichen Wert für den Parameter **Prozedur zur Wiederherstellung der fehlerhaften Vorlagen automatisch im Stapelverarbeitungsmodus ausführen** fest.
 
@@ -83,7 +83,7 @@ Die automatische Erstellung von Sicherungskopien, die sich in ER-Formatkonfigura
 
 Wenn Sie die Option **Erstellung von Sicherungskopien von Vorlagen beenden** auf **Ja** festlegen und die zuvor aus Vorlagen erstellten Sicherungskopien nicht beibehalten möchten, wählen Sie **Sicherungsspeicher bereinigen** auf der Seite **Parameter für elektronische Berichterstellung** aus.
 
-Wenn Sie Ihre Umgebung auf Finance and Operations 10.0.5 (Oktober 2019)aktualisiert haben und zu einer neuen Umgebung migrieren möchten, die EB-Formatkonfigurationen enthält, die ausgeführt werden können, wählen Sie **Sicherungsspeicher füllen** auf der Seite **Elektronische Berichterstellungsparameter** aus, bevor die Migration ausgeführt wird. Mit dieser Schaltfläche wird die Erstellung von Sicherungskopien aller verfügbaren Vorlagen gestartet, sodass sie im ER-Sicherungsspeicherort für Vorlagen gespeichert werden können.
+Wenn Sie Ihre Umgebung auf Finance and Operations 10.0.5 (Oktober 2019 )aktualisiert haben und zu einer neuen Umgebung migrieren möchten, die ER-Formatkonfigurationen enthält, die ausgeführt werden können, wählen Sie **Sicherungsspeicher füllen** auf der Seite **Elektronische Berichterstellungsparameter** aus, bevor die Migration ausgeführt wird. Mit dieser Schaltfläche wird die Erstellung von Sicherungskopien aller verfügbaren Vorlagen gestartet, sodass sie im ER-Sicherungsspeicherort für Vorlagen gespeichert werden können.
 
 ![Parameterseite der elektronischen Berichterstellung.](./media/GER-BackupTemplates-5.png)
 
@@ -93,7 +93,7 @@ Gehen Sie zu **Organisationsverwaltung** \> **Elektronische Berichterstellung** 
 
 ## <a name="supported-deployments"></a>Unterstützte Bereitstellungen
 
-In Finance and Operations Version 10.0.5 ist die Sicherungsspeicherung der EB-Vorlagenfunktion nur in den Cloudbereitstellungen verfügbar.
+In Finance and Operations 10.0.5 ist die Sicherungsspeicherung der ER-Vorlagenfunktion nur in den Cloudbereitstellungen verfügbar.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

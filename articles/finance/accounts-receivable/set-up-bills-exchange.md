@@ -1,6 +1,6 @@
 ---
 title: Einrichten von Wechseln
-description: In diesem Thema werden die Schritte zum Einrichten von Wechseln.
+description: In diesem Artikel werden die Schritte zum Einrichten von Wechseln.
 author: ShivamPandey-msft
 ms.date: 09/17/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6a9d04500ffe5b93c7a95c5cac9b4270e208dde9
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 91821b10afe7cdbabd0a58b61219ce29d686c5c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726808"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874724"
 ---
 # <a name="set-up-bills-of-exchange"></a>Einrichten von Wechseln
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die Schritte zum Einrichten von Wechseln.
+In diesem Artikel werden die Schritte zum Einrichten von Wechseln.
 
 Bei einem Wechsel handelt es sich um den schriftlichen oder elektronischen Auftrag eines Kunden, mit dem ein Dritter (üblicherweise eine Bank) angewiesen wird, einen angegebenen Betrag an das Unternehmen zu zahlen. Bei Verwendung eines Wechsels als Zahlungsmittel für eine Auftrags- oder Freitextrechnung erfolgt eine Habenbuchung auf dem Debitorenkonto. Diese Habenbuchung ist durch den Wechsel so lange gesichert, bis der Debitor den Wechsel an die Bank bezahlt. Üblicherweise wird die Rechnung zum Fälligkeitsdatum mit dem Wechsel ausgeglichen. Nachdem die Benachrichtigung über die Einlösung des Wechsels von der Bank eingegangen ist, kann der Wechsel abgeschlossen werden. Der Wechsel kann über die Bank zu jedem der folgenden Zeitpunkte gezogen werden:
 

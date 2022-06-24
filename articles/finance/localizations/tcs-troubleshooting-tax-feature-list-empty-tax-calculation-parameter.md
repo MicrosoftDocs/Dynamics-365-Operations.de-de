@@ -1,6 +1,6 @@
 ---
 title: Leere Liste der steuerlichen Funktionen in den Steuerberechnungsparametern
-description: In diesem Thema wird erklärt, wie Sie ein Problem beheben, bei dem die Liste der Funktionen auf der Seite Steuerberechnungsparameter leer ist.
+description: In diesem Artikel wird erklärt, wie Sie ein Problem beheben, bei dem die Liste der Funktionen auf der Seite Steuerberechnungsparameter leer ist.
 author: wangchen
 ms.date: 03/04/2022
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: ef8158c2ada18e7d132eebbedef559b3f80ab19f
-ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
+ms.openlocfilehash: 0d9286ec313a270da86181ff80ddfd690a757c9b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "8612288"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869951"
 ---
 # <a name="empty-tax-feature-list-in-tax-calculation-parameters"></a>Leere Liste der steuerlichen Funktionen in den Steuerberechnungsparametern
 
@@ -46,7 +46,7 @@ Um die Mandant-ID für Ihre Finance Umgebung zu finden, befolgen Sie die gleiche
 
 ## <a name="resolution"></a>Lösung
 
-Wenn sich die beiden Mandanten-IDs unterscheiden, tritt das in diesem Thema beschriebene Problem auf. Wenn sie übereinstimmen, liegt ein anderes Problem vor. In diesem Fall empfehlen wir Ihnen, sich an den Microsoft Support zu wenden.
+Wenn sich die beiden Mandanten-IDs unterscheiden, tritt das in diesem Artikel beschriebene Problem auf. Wenn sie übereinstimmen, liegt ein anderes Problem vor. In diesem Fall empfehlen wir Ihnen, sich an den Microsoft Support zu wenden.
 
 ### <a name="solution-1"></a>Lösung 1
 

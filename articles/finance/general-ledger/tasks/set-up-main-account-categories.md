@@ -1,6 +1,6 @@
 ---
 title: Hauptkontokategorien einrichten
-description: In diesem Thema wird erläutert, wie Sie unter Dynamics 365 Finance die Hauptkontokategorien einrichten.
+description: In diesem Artikel wird erläutert, wie Sie unter Dynamics 365 Finance die Hauptkontokategorien einrichten.
 author: aprilolson
 ms.date: 08/08/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cb41f1b7200363f8846c406d5c20338f6ea242bd
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: c48011c9988bdca694851476540db574efef7909
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8721981"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879562"
 ---
 # <a name="set-up-main-account-categories"></a>Hauptkontokategorien einrichten
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie unter die Hauptkontokategorien einrichten. Hauptkontokategorien werden für die Standardberichte in der Finanzberichterstellung und in Power BI verwendet. Hauptkontokategorien, die standardmäßig erstellt werden, können umbenannt jedoch nicht gelöscht werden. Zusätzliche Kontokategorien können den erstellt und für Berichts- und Analysezwecke verwendet werden. Dieses Thema verwendet die USMF-Demofirma.
+In diesem Artikel wird erläutert, wie Sie unter die Hauptkontokategorien einrichten. Hauptkontokategorien werden für die Standardberichte in der Finanzberichterstellung und in Power BI verwendet. Hauptkontokategorien, die standardmäßig erstellt werden, können umbenannt jedoch nicht gelöscht werden. Zusätzliche Kontokategorien können den erstellt und für Berichts- und Analysezwecke verwendet werden. Dieser Artikel verwendet das Demounternehmen USMF.
 
 ## <a name="create-a-main-account-category"></a>Erstellen einer Hauptkontokategorie
 1. Gehen Sie im Navigationsbereich zu **Module > Hauptbuch > Kontenplan > Kontenplan > Konten > Hauptkontenkategorien**.

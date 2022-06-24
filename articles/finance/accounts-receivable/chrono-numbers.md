@@ -1,6 +1,6 @@
 ---
 title: Chronologisches Nummerieren von Dokumenten und Belegen
-description: In diesem Thema wird erläutert, wie Sie chronologische Nummern für geeignete Dokumente und zugehörige Belege einrichten und verwenden.
+description: In diesem Artikel wird erläutert, wie Sie chronologische Nummern für geeignete Dokumente und zugehörige Belege einrichten und verwenden.
 author: ikond
 ms.date: 02/01/2021
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-15
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 0ce1afdbd31a78611e6b51dd93f7159d684c97cb
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 6baf307406982e8f72acc0d02f047dbc7c63a5ed
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692672"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876382"
 ---
 # <a name="numbering-documents-and-vouchers-chronologically"></a>Chronologisches Nummerieren von Dokumenten und Belegen
 
 [!include [banner](../includes/banner.md)]
 
 
-In einigen Ländern ist es gesetzlich vorgeschrieben, Dokumente und zugehörige Belege in chronologischer Reihenfolge zu nummerieren. Die Chronologie muss durch Perioden unterstützt werden. Alle Nummern, die zu früheren Perioden gehören, müssen kleiner sein als die Zahlen, die zu späteren Perioden gehören. Um diese Anforderung zu erfüllen, wurde eine chronologische Nummerierungsfunktion implementiert. In diesem Thema wird erläutert, wie Sie chronologische Nummern für geeignete Dokumente und zugehörige Belege konfigurieren und verwenden.
+In einigen Ländern ist es gesetzlich vorgeschrieben, Dokumente und zugehörige Belege in chronologischer Reihenfolge zu nummerieren. Die Chronologie muss durch Perioden unterstützt werden. Alle Nummern, die zu früheren Perioden gehören, müssen kleiner sein als die Zahlen, die zu späteren Perioden gehören. Um diese Anforderung zu erfüllen, wurde eine chronologische Nummerierungsfunktion implementiert. In diesem Artikel wird erläutert, wie Sie chronologische Nummern für geeignete Dokumente und zugehörige Belege konfigurieren und verwenden.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 

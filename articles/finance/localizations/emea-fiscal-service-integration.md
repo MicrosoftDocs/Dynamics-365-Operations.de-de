@@ -1,6 +1,6 @@
 ---
 title: Integration von steuerlichem Dienst (ESR)
-description: Dieses Thema enthält Informationen zur Integration eines steuerlichen Diensts für Österreich und die Tschechische Republik.
+description: Dieser Artikel enthält Informationen zur Integration eines steuerlichen Diensts für Österreich und die Tschechische Republik.
 author: Anasyash
 ms.date: 01/17/2018
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Austria, Czech Republic
 ms.author: Anasyash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 52c49d0bf7293f2c4da08f20e0a7ffc840a5d40973aa7941aae54792687a687d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e91445121fd36b67b93cbbaaf713ce56f0014e61
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781690"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871131"
 ---
 # <a name="fiscal-service-esr-integration"></a>Integration von steuerlichem Dienst (ESR)
 
@@ -26,7 +26,7 @@ ms.locfileid: "6781690"
 
 In Österreich sollten alle Barzahlungen durch ein externes Gerät oder einen externen Dienst signiert werden, und sie sollten sicher gespeichert werden. In der Tschechischen Republik sollten alle Barzahlungen an das Behördenportal für eine steuerliche Signatur übermittelt werden. In beiden Ländern sollte ein Barbeleg ausgestellt werden, auf dem die Signatur, bzw. Unterschrift gedruckt wird.
 
-Um diese landesspezifischen Anforderungen zu unterstützen, ermöglicht Dynamics 365 Finance Ihnen, eine Integration mit dem steuerlichen Dienst eines Drittanbieters herzustellen, der bestimmte Anforderungen für die Barzahlungskontrolle in verschiedenen Ländern oder Regionen erfüllt.
+Um diese landesspezifischen Anforderungen zu unterstützen, ermöglicht Dynamics 365 Finance es Ihnen, eine Integration mit dem steuerlichen Dienst eines Drittanbieters herzustellen, der bestimmte Anforderungen für die Barzahlungskontrolle in verschiedenen Ländern oder Regionen erfüllt.
 
 > [!NOTE]
 > Es wird vorausgesetzt, dass der steuerliche Dienst des Drittanbieters alle anderen landesspezifischen gesetzlichen Anforderungen bezüglich registrierter Transaktionen erfüllt. Sie sind für die ordnungsgemäße Einrichtung und Verwaltung des steuerlichen Diensts verantwortlich.

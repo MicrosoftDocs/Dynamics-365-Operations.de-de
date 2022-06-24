@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c1ef722eabc3c3bc740f9ff5d959cfa005862a9b
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 28caacaafa5ef20a3d8e1ce93851c48bd4af89a0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735722"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848193"
 ---
 # <a name="performance-management"></a>Leistungsverwaltung
 
@@ -79,9 +79,9 @@ Ihre Leistungserfassung beschreibt<!--note from editor: Suggested.--> Aktivität
 
 Wenn Sie dem Ziel ein Dokument zuordnen möchten, z. B. eine Abschlussbescheinigung, können Sie es im Bereich **Anhänge** auf der Seite **Leistungsziele** anhängen. Über eine Dokumentenanzeige können Sie den Inhalt eines angehängten Dokuments schnell anschauen. 
 
-Sie können eine Vorlage anhand eines Ziels erstellen und diese Vorlagen dann verwenden, um neue Ziele erstellen. Wenn Sie eine Vorlage basierend auf einem Ziel erstellen, werden die Beschreibung, die Themen und die Zielmessungen gespeichert. Allerdings werden alle vorhandenen Messungen, Abschlussdaten und Themenkommentare entfernt.
+Sie können eine Vorlage anhand eines Ziels erstellen und diese Vorlagen dann verwenden, um neue Ziele erstellen. Wenn Sie eine Vorlage basierend auf einem Ziel erstellen, werden die Beschreibung, die Themen und die Zielmessungen gespeichert. Alle tatsächlichen Messungen, Fertigstellungstermine und Artikelkommentare werden jedoch entfernt.
 
-## <a name="performance-reviews"></a>Leistungsbeurteilungen
+## <a name="performance-reviews"></a>Leistungsüberprüfungen
 
 Leistungsbeurteilungen werden auch als Diskussionen bezeichnet. Sie sind jetzt flexibel genug, um fortlaufende Feedbacks, Entwicklungspläne und formellere Beurteilungen zu unterstützen. Sie können schnell kleine Besprechungen für zwei Personen erstellen<!--note from editor: I think "one-on-one meeting" is implied by "two people."--> oder eine komplexere Bewertung erstellen, die dem Bewertungsprozess Ihres Unternehmens entspricht. 
 

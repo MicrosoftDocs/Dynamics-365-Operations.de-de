@@ -1,6 +1,6 @@
 ---
 title: Stundungsbuchungen in der Abonnementabrechnung
-description: In diesem Thema werden die verschiedenen Transaktionen beschrieben, die in Stundungsbuchungen als Teil von Umsatzerlös- und Ausgabenstundungen in der Abonnementabrechnung verwendet werden können.
+description: In diesem Artikel werden die verschiedenen Transaktionen beschrieben, die in Stundungsbuchungen als Teil von Umsatzerlös- und Ausgabenstundungen in der Abonnementabrechnung verwendet werden können.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 5913308d4ee9fdcb8cf2b862171078f27f651662
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c3862f1a250bf8e56303975b5c6a3560cd84c1e7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686016"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872585"
 ---
 # <a name="deferral-default-transactions"></a>Stundungsstandardbuchungen
 
-In diesem Thema werden die Buchungen beschrieben, die Umsatzerlös- und Ausgabenstundungen erlauben. Stundungszeitpläne basieren immer auf einem Ursprungsbeleg oder Abrechnungszeitplan und sind auch davon abhängig. Stundungszeitpläne werden basierend auf Standardwerten erstellt und können nicht separat eingegeben oder erstellt werden.
+In diesem Artikel werden die Buchungen beschrieben, die Umsatzerlös- und Ausgabenstundungen erlauben. Stundungszeitpläne basieren immer auf einem Ursprungsbeleg oder Abrechnungszeitplan und sind auch davon abhängig. Stundungszeitpläne werden basierend auf Standardwerten erstellt und können nicht separat eingegeben oder erstellt werden.
 
 ## <a name="sales-order-transaction-deferral"></a>Stundung einer Auftragstransaktion
 

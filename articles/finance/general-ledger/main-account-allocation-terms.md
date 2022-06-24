@@ -1,6 +1,6 @@
 ---
 title: Zuweisungsbedingungen
-description: Dieses Thema enthält Informationen zur Verwendung von Zuweisungsbedingungen für ein Hauptkonto.
+description: Dieser Artikel enthält Informationen zur Verwendung von Zuweisungsbedingungen für ein Hauptkonto.
 author: rachel-profitt
 ms.date: 06/15/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-06-15
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab3f797505e2c3d7521d3af5c231f5985e6efaa5
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d62c0cc79c9d61e0ebb1c2c62a345ad47412d0d2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734894"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859826"
 ---
 # <a name="allocation-terms"></a>Zuweisungsbedingungen
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Informationen zur Verwendung von Zuweisungsbedingungen für ein Hauptkonto. Zuweisungsbedingungen werden verwendet, um Beträge auf mehrere Sachkontokombinationen zu verteilen. Sie unterstützen, um sicherzustellen, dass Ausgaben oder Umsatzerlöse zum richtigen Objekt Buchhaltungsmodul in der Buchhaltung berechnet wird.
+Dieser Artikel enthält Informationen zur Verwendung von Zuweisungsbedingungen für ein Hauptkonto. Zuweisungsbedingungen werden verwendet, um Beträge auf mehrere Sachkontokombinationen zu verteilen. Sie unterstützen, um sicherzustellen, dass Ausgaben oder Umsatzerlöse zum richtigen Objekt Buchhaltungsmodul in der Buchhaltung berechnet wird.
 
 Jede Zuweisungsbedingung, die Sie auf einem Hauptkonto erstellen, legt den Prozentsatz eines Gutscheins, der von einem Hauptkonto aus einer einzigen Quelle zugewiesen werden soll, und eine Kombination aus Finanzdimensionen fest. Darüber hinaus definieren Sie das Zielhauptkonto und die Finanzdimensionen, denen der Betrag zugewiesen wird. 
 

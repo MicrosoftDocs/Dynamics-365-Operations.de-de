@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2deb20646a532509c9e3a3e7a39f646bced2a3fb
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 039b4aa3f044cda29944bcd4f5c42fc35818c58b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693114"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868158"
 ---
 # <a name="configure-rates"></a>Sätze konfigurieren
 
@@ -47,7 +47,7 @@ Bestimmen Sie mithilfe der Sätze, wie viel Arbeitnehmer und Mitarbeiter basiere
    | **In Kraft** | Das Datum, an dem dieser Satz wirksam wird. Das aktuelle Systemdatum ist der Standardwert. Dieses Datum sollte auf oder vor Ihrem Leistungszeitraum liegen. Es empfiehlt sich, dieses Datum auf das Datum des Leistungsplans zu setzen. |
    | **Ablaufdatum** | Das Enddatum des Satzes. Der Standardwert lautet 12/31/2154 (stellvertretend für nie). |
    | **Ebenen verwenden** |  Verwenden Sie dieses Feld, wenn Sie über eine Logik verfügen, die verwendet werden muss, um einen Tarif zu bestimmen. Wenn ein Satz beispielsweise aufgrund des Alters steigen muss, wählen Sie hier einen Wert aus. Für den Vergütungssatz kann entweder eine **einfache** oder eine **zweifache Stufe** verwendet werden. Ein Beispiel für eine zweifache Stufe ist eine Stufe, die auf Geschlecht und Alter basiert. Nachdem Sie einen Wert ausgewählt haben, wählen Sie **Aktionen**, und wählen Sie dann **Stufensatz**. Wenn Sie eine Pauschale haben, die sich nicht ändert, lassen Sie dieses Feld leer. |
-   | **Zahlungshäufigkeit** | Geben Sie an, wie oft der Leistungsprämiensatz an den Leistungserbringer gezahlt werden soll. Die Preise, die Sie auf der Seite eingeben, die weiter unten in diesem Thema beschrieben wird, basieren auf der hier angegebenen Zahlungshäufigkeit. Wenn Sie beispielsweise in dieses Feld **Monatlich** eingeben und Sie geben einen Mitarbeitersatz von **$100** eib, wird davon ausgegangen, dass die Leistung den Mitarbeiter $100 pro Monat kostet. Ein Mitarbeiter kann jedoch zweimal pro Monat bezahlt werden, basierend auf der Häufigkeit der Leistungszahlung, die im Mitarbeiterdatensatz festgelegt ist. Wenn sich der Mitarbeiter in diesem Fall beim **Mitarbeiter-Selbstservice** anmeldet, beträgt der Betrag, den er zahlt, $50, da der Tarif, den der **Mitarbeiter-Selbstservice** anzeigt, auf der Zahlungshäufigkeit des Mitarbeiters basiert. |
+   | **Zahlungshäufigkeit** | Geben Sie an, wie oft der Leistungsprämiensatz an den Leistungserbringer gezahlt werden soll. Die Preise, die Sie auf der Seite eingeben, die weiter unten in diesem Artikel beschrieben wird, basieren auf der hier angegebenen Zahlungshäufigkeit. Wenn Sie beispielsweise in dieses Feld **Monatlich** eingeben und Sie geben einen Mitarbeitersatz von **$100** eib, wird davon ausgegangen, dass die Leistung den Mitarbeiter $100 pro Monat kostet. Ein Mitarbeiter kann jedoch zweimal pro Monat bezahlt werden, basierend auf der Häufigkeit der Leistungszahlung, die im Mitarbeiterdatensatz festgelegt ist. Wenn sich der Mitarbeiter in diesem Fall beim **Mitarbeiter-Selbstservice** anmeldet, beträgt der Betrag, den er zahlt, $50, da der Tarif, den der **Mitarbeiter-Selbstservice** anzeigt, auf der Zahlungshäufigkeit des Mitarbeiters basiert. |
    | **Rundung des Zahlungshäufigkeitssatzes** | Die Methoden zur Rundung des Satzes sind: Standard, Abgeschnitten, Normal, Abwärts und Aufrunden. </br></br><ul><li>**Standard** – Rundet immer auf. Zum Beispiel wird 10,611 auf 10,62 gerundet. -10,231 rundet auf -10,23. </li><li>**Abgeschnitten** – Rundet immer ab. Beispiel: 10,619 rundet auf 10,61. -10,231 rundet auf -10,24. </li><li>**Normal** – Dezimalwerte, die auf oder größer als 5 enden, werden von Null abgerundet. Dezimalwerte, die auf oder kleiner als 4 enden, werden gegen Null gerundet. Beispiel: 10,615 wird auf 10,62 gerundet. -10,235 rundet auf -10,24. 10,614 rundet auf 10,61. -10,234 rundet auf -10,23. </li><li>**Abwärts** – Rundet gegen Null. Beispiel: 10,619 rundet auf 10,61. -10,231 rundet auf -10,23. </li><li>**Aufrunden** – Rundet weg von Null. Zum Beispiel wird 10,619 auf 10,62 gerundet. -10,231 rundet auf -10,24. |
    | **Mitarbeiterbetrag für Nichtraucher** | Der Betrag, den der Vorteilsanbieter für einen nicht rauchenden Mitarbeiter berechnet. Dies ist der Betrag, den der Arbeitgeber an den Vorteilsanbieter zahlt und der auf der Zahlungshäufigkeit für die Vergütungssatzeinstellung basieren sollte. |
    | **Arbeitgeberbetrag für Nichtraucher** | Der Betrag, den der Vorteilsanbieter für einen nicht rauchenden Mitarbeiter berechnet. Dies ist der Betrag, den der Arbeitgeber an den Vorteilsanbieter zahlt und der auf der Zahlungshäufigkeit für die Vergütungssatzeinstellung basieren sollte. |

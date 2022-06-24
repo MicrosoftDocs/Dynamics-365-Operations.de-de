@@ -1,6 +1,6 @@
 ---
 title: Methodik der Abschreibungskonvention für ein halbes Jahr
-description: In diesem Thema wird die Methode beschrieben, mit der bei Anlagevermögen die Abschreibung nach der Halbjahreskonvention berechnet wird, die die sechsmonatige Abschreibung während des ersten und letzten Betriebsjahres eines Vermögenswerts berechnet.
+description: In diesem Artikel wird die Methode beschrieben, mit der bei Anlagevermögen die Abschreibung nach der Halbjahreskonvention berechnet wird, die die sechsmonatige Abschreibung während des ersten und letzten Betriebsjahres eines Vermögenswerts berechnet.
 author: moaamer
 ms.date: 08/17/2019
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2019-08-17
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: fb15a293bb8cec1b4faba7bcbd29eb4df7916786
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: fac20f7a31eca7922ed079f9554437f28448620d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720391"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879594"
 ---
 # <a name="half-year-depreciation-convention-methodology"></a>Methodik der Abschreibungskonvention für ein halbes Jahr
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-In diesem Thema wird die Methode beschrieben, mit der im Anlagevermögen die Abschreibung nach der Halbjahreskonvention berechnet wird. Mit der Halbjahreskonvention wird die sechsmonatige Abschreibung während des ersten und letzten Dienstjahres eines Vermögenswerts berechnet. Weitere Informationen zu Abschreibungskonventionen finden Sie untere [Abschreibungsmethoden und - konventionen](Fixed-asset-depreciation-conventions.md). 
+In diesem Artikel wird die Methode beschrieben, mit der im Anlagevermögen die Abschreibung nach der Halbjahreskonvention berechnet wird. Mit der Halbjahreskonvention wird die sechsmonatige Abschreibung während des ersten und letzten Dienstjahres eines Vermögenswerts berechnet. Weitere Informationen zu Abschreibungskonventionen finden Sie untere [Abschreibungsmethoden und - konventionen](Fixed-asset-depreciation-conventions.md). 
 
 Wenn Sie die sechsmonatige Abschreibungskonvention verwenden, nutzt das System das Erwerbsjahr oder das Jahr, in dem der Vermögenswert in Betrieb genommen wurde, berechnet dann fünf Jahre Abschreibung aus diesem Jahr und addiert dann sechs Monate. Betrachten Sie zur Veranschaulichung dieses Prozesses einen Vermögenswert, der zum Preis von 50.000 erworben und im April 2020 in Betrieb genommen wurde. Nehmen Sie außerdem an, dass der Vermögenswert eine Lebensdauer von fünf Jahren hat.
 

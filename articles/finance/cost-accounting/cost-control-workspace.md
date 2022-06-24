@@ -1,6 +1,6 @@
 ---
 title: Kostensteuerungs-Arbeitsbereich
-description: Dieses Thema enthält Informationen zum Kostensteuerung-Arbeitsbereich. Dieser Arbeitsbereich ist ein zentraler Punkt, in dem Vorgesetze, die für die Steuerung eines Kostenobjekts oder für das Festlegen eines Satzes von Kostenobjekten in einer Dimension oder über Dimensionen hinweg zuständig sind, auf Berichte zugreifen können.
+description: Dieser Artikel enthält Informationen zum Kostensteuerung-Arbeitsbereich. Dieser Arbeitsbereich ist ein zentraler Punkt, in dem Vorgesetze, die für die Steuerung eines Kostenobjekts oder für das Festlegen eines Satzes von Kostenobjekten in einer Dimension oder über Dimensionen hinweg zuständig sind, auf Berichte zugreifen können.
 author: AndersGirke
 ms.date: 06/16/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 36e94ff2cd499a827c631d6836a6c976af53dfa1
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: f53d5d4daea076cc63308a83292f8f8c1ee1d022
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734603"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853495"
 ---
 # <a name="cost-control-workspace"></a>Kostensteuerungs-Arbeitsbereich 
 

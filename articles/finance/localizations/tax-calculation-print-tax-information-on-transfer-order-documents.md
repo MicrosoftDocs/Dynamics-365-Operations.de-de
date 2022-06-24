@@ -1,6 +1,6 @@
 ---
 title: Steuerinformationen auf Überweisungsauftragsdokumenten drucken
-description: In diesem Thema wird erläutert, wie die vom Steuerberechnungsservice ermittelten Steuerinformationen auf Transportauftragsbelegen gedruckt werden können.
+description: In diesem Artikel wird erläutert, wie die vom Steuerberechnungsservice ermittelten Steuerinformationen auf Transportauftragsbelegen gedruckt werden können.
 author: Kai-Cloud
 ms.date: 10/15/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-10-12
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e74336270ab46fc19adb4c797745c9582028391a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ca7a610162c539a0ecd74cf9e663f08ea80a7e44
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687470"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855201"
 ---
 # <a name="print-tax-information-on-transfer-order-documents"></a>Steuerinformationen auf Überweisungsauftragsdokumenten drucken
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Steuerinformationen auf Transportauftragsdokumenten gedruckt werden. Sie können den Proforma-Rechnungsbeleg eines Transportauftrags für Umlagerungen drucken, die nach den Mehrwertsteuervorschriften der Europäischen Union (EU) als innergemeinschaftliche Lieferungen und innergemeinschaftliche Erwerbe gelten. 
+In diesem Artikel wird erläutert, wie Steuerinformationen auf Transportauftragsdokumenten gedruckt werden. Sie können den Proforma-Rechnungsbeleg eines Transportauftrags für Umlagerungen drucken, die nach den Mehrwertsteuervorschriften der Europäischen Union (EU) als innergemeinschaftliche Lieferungen und innergemeinschaftliche Erwerbe gelten. 
 
 Die Transportauftragsbelege werden um folgende steuerrelevante Daten ergänzt:
 

@@ -1,6 +1,6 @@
 ---
 title: Nicht abgerechneter Umsatzerlös
-description: In diesem Thema wird erklärt, wie Sie Artikel und Konten einrichten, um die Funktion für nicht abgerechnete Umsatzerlöse in der Abonnementabrechnung zu verwenden.
+description: In diesem Artikel wird erklärt, wie Sie Artikel und Konten einrichten, um die Funktion für nicht abgerechnete Umsatzerlöse in der Abonnementabrechnung zu verwenden.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: a70786291822a85ec41c98ab8ce706f2ad79b08d
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: b3fe58fc06df3f61433c8457b337ae895283e12b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691244"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879681"
 ---
 # <a name="unbilled-revenue"></a>Nicht abgerechneter Umsatzerlös
 
-In diesem Thema wird die Funktion für nicht abgerechnete Umsatzerlöse beschrieben, mit der Sie die Beträge für ganze Abrechnungszeitpläne in die Bilanz aufnehmen können. Diese Beträge werden in ein Konto für nicht abgerechnete Umsatzerlöse und ein Gegenkonto für nicht abgerechnete Umsatzerlöse aufgenommen, und der Vertrag wird in Raten abgerechnet.
+In diesem Artikel wird die Funktion für nicht abgerechnete Umsatzerlöse beschrieben, mit der Sie die Beträge für ganze Abrechnungszeitpläne in die Bilanz aufnehmen können. Diese Beträge werden in ein Konto für nicht abgerechnete Umsatzerlöse und ein Gegenkonto für nicht abgerechnete Umsatzerlöse aufgenommen, und der Vertrag wird in Raten abgerechnet.
 
 ## <a name="set-up-unbilled-revenue"></a>Nicht abgerechnete Umsatzerlöse einrichten
 

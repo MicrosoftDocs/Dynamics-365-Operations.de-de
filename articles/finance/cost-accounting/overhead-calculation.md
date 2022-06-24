@@ -1,6 +1,6 @@
 ---
 title: Gemeinkostenberechnung
-description: In diesem Thema werden die typischen Prozesse für die Berechnung und Zuweisung von Gemeinkosten beschrieben.
+description: In diesem Artikel werden die typischen Prozesse für die Berechnung und Zuweisung von Gemeinkosten beschrieben.
 author: AndersGirke
 ms.date: 10/04/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 9d704268f481fdf377033740f727e5d581a8c510
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 9322fb5237afdbf73147bb549eb3f70929c46ce2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733933"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881990"
 ---
 # <a name="overhead-calculation"></a>Gemeinkostenberechnung
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die typischen Prozesse für die Berechnung und Zuweisung von Gemeinkosten beschrieben.
+In diesem Artikel werden die typischen Prozesse für die Berechnung und Zuweisung von Gemeinkosten beschrieben.
 
 ## <a name="term-definition"></a>Begriffsdefinition
 
@@ -1333,10 +1333,10 @@ Kostenelement | Kostenobjekt<br>CC099 | Kostenobjekt<br>CC001 | Kostenobjekt<br>
 100'1 Elektrizität | 0,00 | 0,00 | 0,00 | 0,00 |  | 30.00 | 10.00 | 7,770.57 | 2,189.43 | 10,000.00 |
 Nicht klassifiziert | 0,00 |  |  |  |  |  |  |  |  |  |
 Fixkosten | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |  |  | 776.36 | 223.64 | 1,000.00 |
-Variable Kosten | 000 | 0,00 | 0,00 | 0,00 | 0,00 | 30,00 | 10,00 | 6,994.21 | 1,965.79 | 9,000.00 |
+Variable Kosten | 000 | 0,00 | 0,00 | 0,00 | 0,00 | 30.00 | 10.00 | 6,994.21 | 1,965.79 | 9,000.00 |
 
 > [!NOTE]
-> Dieses Thema veranschaulicht, wie ein Selbstkostenelement, hier 10001 Elektrizität die Kostenträger durchläuft. Daher werden diese Gemeinkosten der niedrigsten Ebene in der Organisation zugeordnet. Das bedeutet, die Kostenträger auf unterster Ebene müssen die Kosten tragen. Wenn Sie einen visuellen Fluss der Kosten zwischen dem Kostenträger und dem Kostenobjekt anfordern, können Sie die Richtlinie Kostenzusammenfassung verwenden, um den Kostenfluss zu visualisieren. Weitere Informationen finden Sie unter [Kostenrollup-Richtlinie und Zuschlagsberechnung](cost-rollup.md).
+> Dieser Artikel veranschaulicht, wie ein Selbstkostenelement, hier 10001 Elektrizität die Kostenträger durchläuft. Daher werden diese Gemeinkosten der niedrigsten Ebene in der Organisation zugeordnet. Das bedeutet, die Kostenträger auf unterster Ebene müssen die Kosten tragen. Wenn Sie einen visuellen Fluss der Kosten zwischen dem Kostenträger und dem Kostenobjekt anfordern, können Sie die Richtlinie Kostenzusammenfassung verwenden, um den Kostenfluss zu visualisieren. Weitere Informationen finden Sie unter [Kostenrollup-Richtlinie und Zuschlagsberechnung](cost-rollup.md).
 
 
 

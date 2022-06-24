@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: e4aa910d92c2905d54d96f656e1d3d1c36388636
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 228c891e8c29cf4309856b90139d0b88805a9812
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693863"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886159"
 ---
 # <a name="process-compensation"></a>Vergütung verarbeiten
 
@@ -27,7 +27,7 @@ ms.locfileid: "8693863"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Die Vergütungsverarbeitung ermöglicht Ihnen die Berechnung neuer Grundvergütungsbeträge für Mitarbeiter basierend auf Eigenkapitalanpassungen, Verdiensterhöhungsziele und Leistungsfähigkeit. Dieses Thema beschreibt den grundlegenden Ablauf der Vergütungsverarbeitung für feste Vergütungspläne, ohne die Leistung eines Mitarbeiters zu faktorieren.
+Die Vergütungsverarbeitung ermöglicht Ihnen die Berechnung neuer Grundvergütungsbeträge für Mitarbeiter basierend auf Eigenkapitalanpassungen, Verdiensterhöhungsziele und Leistungsfähigkeit. Dieser Artikel beschreibt den grundlegenden Ablauf der Vergütungsverarbeitung für feste Vergütungspläne, ohne die Leistung eines Mitarbeiters zu faktorieren.
 
 ## <a name="plan-the-new-compensation-amounts-and-budgets"></a>Planen neuer Vergütungsbeträge und Budgets
 Um Ihren Mitarbeitern eine Verdiensterhöhung zu geben, müssen Sie ein festes Erhöhungsbudget für jede Ihrer Abteilungen einrichten: **Vergütungsverwaltung** > **Links** > **Verdiensterhöhungsziele**. (Alternativ können Sie diese Seite über die Abteilung: **Organisation** > **Abteilungen** öffnen.) Sie können angeben, ob Mitarbeiter in einer bestimmten Gewerkschaft oder an einem bestimmten Standort eine andere prozentuale Erhöhung erhalten sollen. Die Felder **Budget** und **Währung** dienen zu Informationszwecken und können verwendet werden, um einen Währungsbetrag für das Budget zu notieren.
@@ -41,7 +41,7 @@ Das **Stichtag**-Datum für das Prozessereignis wird nur für die Verarbeitung b
 
 Nachdem die Parameter des Prozessereignisses gespeichert wurden, können Sie auf die Schaltfläche **Einrichtung** klicken, um die Pläne auszuwählen, die bei der Ausführung des Prozesses berücksichtigt werden sollen, und anzugeben, welche festen Vergütungsaktivitäten für jeden Plan unternommen werden sollen.
 
-Klicken Sie auf der Registerkarte **Pläne** auf die Schaltfläche **Hinzufügen**, um dem Prozessereignis einen Vergütungsplan hinzuzufügen. Die Spalten **Anderer Einfluss**, **Einflussfaktor** und **Einflussbeschreibung** werden nur für variable Vergütungspläne verwendet und werden in diesem Thema nicht beschrieben.
+Klicken Sie auf der Registerkarte **Pläne** auf die Schaltfläche **Hinzufügen**, um dem Prozessereignis einen Vergütungsplan hinzuzufügen. Die Spalten **Anderer Einfluss**, **Einflussfaktor** und **Einflussbeschreibung** werden nur für variable Vergütungspläne verwendet und werden in diesem Artikel nicht beschrieben.
 
 Speichern Sie den Datensatz und klicken Sie dann auf der Registerkarte **Aktivitäten** auf die Schaltfläche **Hinzufügen**, um dem ausgewählten Plan feste Vergütungsaktivitäten hinzuzufügen. Verwenden Sie die Option **Empfehlung aktivieren**, um einen anderen Betrag einzugeben, als die berechnete Richtlinienerhöhung für die Aktivität. Um eine Aktion zu berechnen, die auf dem Ergebnis der vorherigen Aktion basiert und so mehrere Ausgleichsaktionen zu verknüpfen, markieren Sie die Option **Vorheriges Ergebnis verwenden**. Feste Vergütungsaktionen sind Arten von Vergütungslogiken, denen Sie beschreibende Namen geben können. Für **Branche** und **Band** Pläne können Sie nur feste Vergütungsaktionen hinzufügen, die zu den folgenden Typen gehören:
 

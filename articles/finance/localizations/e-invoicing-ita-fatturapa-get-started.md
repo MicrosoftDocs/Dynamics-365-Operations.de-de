@@ -1,6 +1,6 @@
 ---
 title: Direkte Integration des italienischen FatturaPA mit SDI einrichten
-description: Dieses Thema bietet Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung für Italien und die Einrichtung der direkten Integration des italienischen FatturaPA mit dem Exchange-System (SDI) erleichtern.
+description: Dieser Artikel bietet Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung für Italien und die Einrichtung der direkten Integration des italienischen FatturaPA mit dem Exchange-System (SDI) erleichtern.
 author: abaryshnikov
 ms.date: 01/15/2022
 ms.topic: article
@@ -10,37 +10,37 @@ ms.search.region: Global
 ms.author: abaryshnikov
 ms.search.validFrom: 2021-10-18
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 73cb08c880d7b3459201acfc7aeaa8d0dee1674f
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 510cf05e7bbc925478f9a1a4ea2ea27fe397c570
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984802"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853191"
 ---
 # <a name="set-up-direct-integration-of-italian-fatturapa-with-sdi"></a>Direkte Integration des italienischen FatturaPA mit SDI einrichten
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Die elektronische Rechnungsstellung für Italien unterstützt derzeit möglicherweise nicht alle Funktionen, die für elektronische Rechnungen in Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management verfügbar sind.
+> Die elektronische Rechnungsstellung für Italien unterstützt derzeit möglicherweise nicht alle Funktionen, die für elektronische Rechnungen in Microsoft Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management verfügbar sind.
 
-Dieses Thema enthält Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung für Italien in Finance und Supply Chain Management erleichtern. Es führt Sie durch die Konfigurationsschritte, die in Regulatory Configuration Services (RCS) sowie in Finance länder-/regionenabhängig sind. Diese Schritte ergänzen die Schritte, die in [Los geht's  mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md) beschrieben sind.
+Dieser Artikel enthält Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung für Italien in Finance und Supply Chain Management erleichtern. Es führt Sie durch die Konfigurationsschritte, die in Regulatory Configuration Services (RCS) sowie in Finance länder-/regionenabhängig sind. Diese Schritte ergänzen die Schritte, die in [Los geht's  mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md) beschrieben sind.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Bevor Sie die Schritte in diesem Thema abschließen können, müssen die folgenden Voraussetzungen erfülltl sein.
+Bevor Sie die Schritte in diesem Artikel abschließen können, müssen die folgenden Voraussetzungen erfüllt sein.
 
 - Ergänzen Sie die Schritte unter [Erste Schritte mit der Dienstverwaltung für die elektronische Rechnungsstellung](e-invoicing-get-started.md).
-- Importieren Sie die **Italienisch FatturaPA (IT)** elektronische Rechnungsfunktion in RCS aus dem globalen Repository. Weitere Informationen finden Sie unter [Importieren Sie eine Funktion für die elektronische Rechnungsstellung vom Microsoft-Konfigurationsanbieter](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) Abschnitt des zuvor erwähnten Themas Erste Schritte mit der elektronischen Rechnungsstellung.
-- Fügen Sie Links von den erforderlichen Zertifikaten zur Serviceumgebung hinzu. Zu den erforderlichen Zertifikaten gehören das Zertifikat für die digitale Signatur, das Zertifikat der Zertifizierungsstelle (CA) und das Client-Zertifikat. Weitere Informationen unter [Erstellen Sie ein digitales Zertifikatgeheimnis](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret), wie im Abschnitt Erste Schritte für die elektronische Rechnungsstellung beschrieben ist.
+- Importieren Sie die **Italienisch FatturaPA (IT)** elektronische Rechnungsfunktion in RCS aus dem globalen Repository. Weitere Informationen finden Sie im Abschnitt [Eine elektronische Rechnungsstellungsfunktion über den Microsoft-Konfigurationsanbieter importieren](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) des zuvor erwähnten Artikels „Erste Schritte mit der elektronischen Rechnungsstellung“.
+- Fügen Sie Links von den erforderlichen Zertifikaten zur Serviceumgebung hinzu. Zu den erforderlichen Zertifikaten gehören das Zertifikat für die digitale Signatur, das Zertifikat der Zertifizierungsstelle (CA) und das Client-Zertifikat. Weitere Informationen finden Sie unter [Ein digitales Zertifikatgeheimnis erstellen](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) im Artikel „Erste Schritte mit der Dienstverwaltung für die elektronische Rechnungsstellung“.
 
 ## <a name="country-specific-configuration-for-the-italian-fatturapa-it-electronic-invoicing-feature"></a>Länderspezifische Konfiguration für die elektronische Rechnungsstellungsfunktion der italienischen FatturaPA (IT)
 
 Führen Sie die folgende Prozedur aus, bevor Sie die Anwendungseinrichtung in Ihrer verbundenen Finance oder Supply Chain Management Anwendung bereitstellen.
 
-Dieser Abschnitt ergänzt den Abschnitt [Länderspezifische Konfiguration der Anwendungseinrichtung](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) im Thema Erste Schritte mit der elektronischen Rechnungsstellung.
+Dieser Abschnitt ergänzt den Abschnitt [Länderspezifische Konfiguration der Anwendungseinrichtung](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) im Artikel „Erste Schritte mit der elektronischen Rechnungsstellung“.
 
-### <a name="create-a-new-feature"></a>Neue Feature erstellen
+### <a name="create-a-new-feature"></a>Neue Funktion erstellen
 
 1. Melden Sie sich bei RCS an.
 2. Im **Elektronische Berichterstattung** Arbeitsbereich, im Abschnitt **Konfigurationsanbieter** markieren Sie den Konfigurationsanbieter Ihres Unternehmens als aktiv.
@@ -87,8 +87,8 @@ Dieser Abschnitt ergänzt den Abschnitt [Länderspezifische Konfiguration der An
 
 ### <a name="deploy-the-feature"></a>Die Feature bereitstellen
 
-1. Die Featre für die Service-Umgebung beenden, veröffentlichen und bereitstellen. Weitere Informationen finden Sie im Abschnitt [Bereitstellen der Funktion Elektronische Rechnungsstellung für die Service-Umgebung](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) des zuvor erwähnten Themas Erste Schritte mit der elektronischen Rechnungsstellung.
-2. Stellen Sie die Funktion für die verbundene Anwendung bereit. Weitere Informationen finden Sie im Abschnitt [Bereitstellen der Feature Elektronische Rechnungsstellung für die verbundene Anwendung](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) des zuvor erwähnten Themas Erste Schritte mit der elektronischen Rechnungsstellung.
+1. Die Featre für die Service-Umgebung beenden, veröffentlichen und bereitstellen. Weitere Informationen finden Sie im Abschnitt [Bereitstellen der Funktion für die elektronische Rechnungsstellung in der Service-Umgebung](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) des zuvor erwähnten Artikels „Erste Schritte mit der elektronischen Rechnungsstellung“.
+2. Stellen Sie die Funktion für die verbundene Anwendung bereit. Weitere Informationen finden Sie im Abschnitt [Bereitstellen der Funktion für die elektronische Rechnungsstellung in der verbundenen Anwendung](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) des zuvor erwähnten Artikels „Erste Schritte mit der elektronischen Rechnungsstellung“.
 
 ### <a name="set-up-finance"></a>Finanzen einrichten
 

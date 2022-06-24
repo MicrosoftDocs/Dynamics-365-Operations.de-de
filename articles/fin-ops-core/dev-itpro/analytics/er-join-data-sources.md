@@ -1,6 +1,6 @@
 ---
 title: Verwenden Sie JOIN-Datenquellen in ER-Modellzuordnungen, um Daten aus mehreren Anwendungstabellen abzurufen
-description: In diesem Thema wird erläutert, wie Sie JOIN-Typ-Datenquellen in der Elektronischen Berichterstellung (Electronic Reporting/ER) verwenden können.
+description: In diesem Artikel wird erläutert, wie Sie JOIN-Typ-Datenquellen in der Elektronischen Berichterstellung (EB) verwenden können.
 author: NickSelin
 ms.date: 04/26/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: c9a06c048e98676e30a6652cad6634c2e13531d4ebc6d35f325f4c7153cd82ae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0994c19ad79a3e73dc787ef8d82716db637f9ab0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723212"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845517"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Verwenden Sie JOIN-Datenquellen in ER-Modellzuordnungen, um Daten aus mehreren Anwendungstabellen abzurufen
 
@@ -40,15 +40,15 @@ In der konfigurierten **Join**-Datenquelle, wenn alle Datenquellen vom Typ **Tab
 > [!NOTE]
 > Die Verwendung der Funktion **VALUEIN** in ER-Ausdrücken, die Bedingungen zum Verknüpfen von Datensätzen in Datenquellen vom Join-Typ angeben, wird noch nicht unterstützt. Besuchen Sie die Seite [Formeldesigner in der elektronischen Berichterstellung](general-electronic-reporting-formula-designer.md) für weitere Details zu dieser Funktion.
 
-Weitere Informationen über diese Funktion erhalten Sie, wenn Sie das Beispiel in diesem Thema abschließen.
+Weitere Informationen über diese Funktion erhalten Sie, wenn Sie das Beispiel in diesem Artikel abschließen.
 
 ## <a name="example-use-join-data-sources-in-er-model-mappings"></a>Beispiel: Verwendung von JOIN-Datenquellen in ER-Modellzuordnungen
 
-In den folgenden Schritten wird erklärt, wie der Systemadministrator oder der ER-Entwickler eine ER-Modellzuordnung konfigurieren kann, um Daten aus mehreren Anwendungstabellen gleichzeitig abzurufen, indem Datenquellen des Typs **Join** verwendet werden, um die Datenzugriffsleistung zu verbessern. Diese Schritte können für beliebige Unternehmen von Dynamics 365 Finance oder in den Regulatory Configuration Services (RCS) ausgeführt werden.
+In den folgenden Schritten wird erklärt, wie der Systemadministrator oder der ER-Entwickler eine ER-Modellzuordnung konfigurieren kann, um Daten aus mehreren Anwendungstabellen gleichzeitig abzurufen, indem Datenquellen des Typs **Join** verwendet werden, um die Datenzugriffsleistung zu verbessern. Diese Schritte können in einem beliebigen Unternehmen von Dynamics 365 Finance oder in den Regulatory Configuration Services (RCS) ausgeführt werden.
 
 ### <a name="prerequisites"></a>Voraussetzungen
 
-Um die Beispiele in diesem Thema durchzuführen, müssen Sie Zugriff auf eines der Folgenden haben, abhängig von dem Dienst, der verwendet wird, um diese Schritte durchzuführen:
+Um die Beispiele in diesem Artikel durchzuführen, müssen Sie Zugriff auf eines der folgenden Elemente haben, abhängig von dem Dienst, der verwendet wird, um diese Schritte durchzuführen:
 
 **Zugriff auf Finance für eine der folgenden Rollen:**
 
@@ -257,7 +257,7 @@ Im Vorfeld müssen Sie außerdem die folgenden Beispiel-ER-Konfigurationsdateien
 
 ## <a name="limitations"></a>Einschränkungen
 
-Wie Sie dem Beispiel in diesem Thema entnehmen können, kann die Datenquelle **VERKNÜPFEN** aus mehreren Datenquellen erstellt werden, die die einzelnen Datasets der Datensätze beschreiben, die schließlich verknüpft werden müssen. Sie können diese Datenquellen mithilfe der integrierten EB-[FILTER](er-functions-list-filter.md)-Funktion konfigurieren. Wenn Sie die Datenquelle so konfigurieren, dass sie über die Datenquelle **VERKNÜPFEN** hinaus aufgerufen wird, können Sie die Unternehmensbereiche als Teil der Bedingung für die Datenauswahl verwenden. Die anfängliche Umsetzung der **VERKNÜPFEN**-Datenquelle unterstützt keine Datenquellen dieses Typs. Zum Beispiel, wenn Sie eine [FILTER](er-functions-list-filter.md)-basierte Datenquelle im Rahmen der Ausführung einer **VERKNÜPFEN**-Datenquelle aufrufen, wenn die aufgerufene Datenquelle Unternehmensbereiche enthält als Teil der Bedingung für die Datenauswahl, tritt eine Ausnahme auf.
+Wie Sie dem Beispiel in diesem Artikel entnehmen können, kann die Datenquelle **VERKNÜPFEN** aus mehreren Datenquellen erstellt werden, die die einzelnen Datasets der Datensätze beschreiben, die schließlich verknüpft werden müssen. Sie können diese Datenquellen mithilfe der integrierten EB-[FILTER](er-functions-list-filter.md)-Funktion konfigurieren. Wenn Sie die Datenquelle so konfigurieren, dass sie über die Datenquelle **VERKNÜPFEN** hinaus aufgerufen wird, können Sie die Unternehmensbereiche als Teil der Bedingung für die Datenauswahl verwenden. Die anfängliche Umsetzung der **VERKNÜPFEN**-Datenquelle unterstützt keine Datenquellen dieses Typs. Zum Beispiel, wenn Sie eine [FILTER](er-functions-list-filter.md)-basierte Datenquelle im Rahmen der Ausführung einer **VERKNÜPFEN**-Datenquelle aufrufen, wenn die aufgerufene Datenquelle Unternehmensbereiche enthält als Teil der Bedingung für die Datenauswahl, tritt eine Ausnahme auf.
 
 In Microsoft Dynamics 365 Finance Version 10.0.12 (August 2020) können Sie Unternehmensbereiche als Teil der Bedingung für die Datenauswahl in [FILTER](er-functions-list-filter.md)-basierten Datenquellen verwenden, die im Rahmen der Ausführung einer **VERKNÜPFEN**-Datenquelle aufgerufen werden. Wegen der Einschränkungen der Anwendung [Abfrage](../dev-ref/xpp-library-objects.md#query-object-model)-Generator werden die Unternehmensbereiche nur für die erste Datenquelle einer **VERKNÜPFEN**-Datenquelle unterstützt.
 

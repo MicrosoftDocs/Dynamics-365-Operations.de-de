@@ -1,6 +1,6 @@
 ---
 title: Anlagenleasing-Berichte
-description: In diesem Thema werden die im Analgenleasing verfügbaren Berichte aufgelistet und kurz beschrieben.
+description: In diesem Artikel werden die im Anlagenleasing verfügbaren Berichte aufgelistet und kurz beschrieben.
 author: moaamer
 ms.date: 04/05/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cb1c994fee6efff82dd1cba1e71c6af49b384208
-ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
+ms.openlocfilehash: a6e6eb851b9b2dce7259a5355326dd594a940b8c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8550038"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856711"
 ---
 # <a name="asset-leasing-reports"></a>Anlagenleasing-Berichte
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die im Analgenleasing verfügbaren Berichte aufgelistet und kurz beschrieben. Die meisten Berichte werden angezeigt, indem diese oder ähnliche Schritte ausgeführt werden, wie angegeben). 
+In diesem Artikel werden die im Anlagenleasing verfügbaren Berichte aufgelistet und kurz beschrieben. Die meisten Berichte werden angezeigt, indem diese oder ähnliche Schritte ausgeführt werden, wie angegeben). 
 
 - Um die meisten Analgenleasing-Berichte anzuzeigen, gehen Sie zu **Anlagenleasing > Anfragen und Berichte > Leasingberichte** und wählen Sie dann einen Bericht zum Anzeigen aus. Für die Berichte, für die ein anderer Auswahlpfad erforderlich ist, sind die Schritte zum Öffnen des Berichts in der Beschreibung dieses Berichts enthalten. 
 - Wenn Sie einen zu druckenden Bericht auswählen, wird eine Parameterseite geöffnet, auf der Sie die im Bericht enthaltenen Informationen filtern können. Geben Sie Filterkriterien ein und wählen Sie dann **OK**, um den Bericht zu generieren. Der generierte Bericht zeigt Informationen an, die zu den von Ihnen angegebenen Filter passen.

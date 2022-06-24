@@ -1,6 +1,6 @@
 ---
 title: Masterdatensuche für die Steuerberechnungskonfiguration aktivieren
-description: In diesem Thema wird erläutert, wie Sie Masterdaten-Suchfunktion für die Steuerberechnung einrichten und aktivieren.
+description: In diesem Artikel wird erläutert, wie Sie Masterdaten-Suchfunktion für die Steuerberechnung einrichten und aktivieren.
 author: kai-cloud
 ms.date: 11/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7640144b1687fc64e55f659d49cdb0817c17294a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: d9c234781e55fbf7f29eec14666c939d5d60e2fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686710"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879408"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Masterdatensuche für die Steuerberechnungskonfiguration aktivieren 
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie Masterdaten-Suchfunktion für die Steuerberechnung einrichten und aktivieren. Es steht eine Dropdown-Liste zur Auswahl von Werten in der Steuerberechnungskonfiguration für Felder wie **Juristische Person**, **Kreditorenkonto**, **Artikelcode** und **Lieferbedingungen** zur Verfügung. Diese Werte stammen von der verbundenen Microsoft Dynamics 365 Finance-Umgebung mit der Microsoft Dataverse-Datenquelle.
+In diesem Artikel wird erläutert, wie Sie Masterdaten-Suchfunktion für die Steuerberechnung einrichten und aktivieren. Es steht eine Dropdown-Liste zur Auswahl von Werten in der Steuerberechnungskonfiguration für Felder wie **Juristische Person**, **Kreditorenkonto**, **Artikelcode** und **Lieferbedingungen** zur Verfügung. Diese Werte stammen von der verbundenen Microsoft Dynamics 365 Finance-Umgebung mit der Microsoft Dataverse-Datenquelle.
 
 > [!NOTE] 
 > Die Masterdaten-Suchfunktion für die Steuerberechnung ist eine optionale Funktion. Sie können die folgenden Schritte überspringen, wenn Sie die Funktion **Unterstützung für Dataverse-Datenquellen des Steuerdienstes** im Regulatory Configuration Service (RCS) deaktivieren. In diesem Fall ist die Dropdown-Liste jedoch in der Steuerberechnungskonfiguration nicht verfügbar.

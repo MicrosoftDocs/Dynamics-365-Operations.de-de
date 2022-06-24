@@ -1,6 +1,6 @@
 ---
 title: Power BI-Inhalt zu Arbeitskraftkennzahlen
-description: In diesem Thema wird der Power BI-Inhalt Arbeitskraftkennzahlen beschrieben.
+description: In diesem Artikel wird der Power BI-Inhalt zu Arbeitskraftkennzahlen beschrieben.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9393b4dcc6cb5f65d38c6904bf38def9d50af281671e0e09314148824f3e6891
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e45e4fb58bd535b66b7ad0dad8c4efa37e4336b7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757272"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884487"
 ---
 # <a name="workforce-metrics-power-bi-content"></a>Power BI-Inhalt zu Arbeitskraftkennzahlen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird der Microsoft Power BI-Inhalt zu **Arbeitskraftkennzahlen** beschrieben. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen, und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet wurden, um den Inhalt zu erstellen.
+In diesem Artikel wird der Microsoft Power BI-Inhalt zu **Arbeitskraftkennzahlen** beschrieben. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen, und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet wurden, um den Inhalt zu erstellen.
 
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen auf den Power BI-Inhalt
 Der **Arbeitskraftkennzahlen**-Inhalt für Power BI wird im Arbeitsbereich **Personalverwaltung** angezeigt, wenn Sie eines der folgenden Produkte verwenden:
@@ -58,7 +58,7 @@ Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und a
 Stellen Sie sicher, dass Sie den **Arbeitskraftkennzahlen** Power BI-Inhalt herunterladen, der der von Ihnen verwendeten Microsoft Dynamics 365-Version entspricht.
 
 > [!NOTE]
-> Die .pbix-Dateien, die in Lifecycle Services verfügbar sind, gelten nur für Finance and Operations Apps.
+> Die PBIX-Dateien, die in Lifecycle Services verfügbar sind, gelten nur für Finanz- und Betriebs-Apps.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
 Die folgende Tabelle zeigt die Entitäten, auf denen das Paket basiert.

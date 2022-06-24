@@ -1,6 +1,6 @@
 ---
 title: Einrichten von Steuercodes
-description: In diesem Abschnitt wird erläutert, wie Sie Steuercodes im Steuerberechnungsdienst einrichten.
+description: In diesem Artikel wird erläutert, wie Sie Steuercodes im Steuerberechnungsdienst einrichten.
 author: wangchen
 ms.date: 11/30/2021
 ms.topic: business-process
@@ -13,21 +13,21 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 8bdb194e7d8b704d1e58d3c25bf2e1f6bff1ba00
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 1bc250716763ce9d8e25c8850c8a3676bf65fb0c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883861"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862927"
 ---
 # <a name="set-up-tax-codes"></a>Einrichten von Steuercodes
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Abschnitt wird erläutert, wie Sie Steuercodes im Steuerberechnungsdienst einrichten. Er enthält die Einrichtung für ein einfaches Szenario, damit der Steuercode funktioniert, und Informationen zu einigen erweiterten Steuercodefunktionen für komplexe Szenarien.
+In diesem Artikel wird erläutert, wie Sie Steuercodes im Steuerberechnungsdienst einrichten. Er enthält die Einrichtung für ein einfaches Szenario, damit der Steuercode funktioniert, und Informationen zu einigen erweiterten Steuercodefunktionen für komplexe Szenarien.
 
 > [!IMPORTANT]
-> Die Einrichtung von Steuercodes im Steuerberechnungsdienst ist unabhängig von juristischen Personen. Sie können diese Einrichtung im Regulatory Configuration Service (RCS) nur einmal abschließen. Steuercodes werden automatisch mit Microsoft Dynamics 365 Finance synchronisiert, wenn Sie den Steuerberechnungsdienst für eine ausgewählte juristische Person in Finance aktivieren.
+> Die Einrichtung von Steuercodes im Steuerberechnungsdienst ist unabhängig von juristischen Personen. Sie können diese Einrichtung im Regulatory Configuration Service (RCS) nur einmal abschließen. Steuercodes werden automatisch mit Microsoft Microsoft Dynamics 365 Finance synchronisiert, wenn Sie den Steuerberechnungsdienst für eine ausgewählte juristische Person in Finance aktivieren.
 
 ## <a name="simple-setup"></a>Einfache Einrichtung
 

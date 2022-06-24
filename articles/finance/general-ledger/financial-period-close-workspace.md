@@ -1,6 +1,6 @@
 ---
 title: Finanzperiodenabschluss-Arbeitsbereich
-description: Dieser Artikel enthält eine Übersicht über den Finanzperiodenabschlussarbeitsbereiche und der zugeordneten Konfiguration.
+description: Dieser Artikel enthält eine Übersicht über den Arbeitsbereich „Finanzperiodenabschluss“ und der zugehörigen Konfiguration.
 author: kweekley
 ms.date: 11/29/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 81ec9b988cee7023c343df1fa8c86858eb0cfe58
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 531909bb8de892b012ffff347e58f23f997705ef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713837"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865711"
 ---
 # <a name="financial-period-close-workspace"></a>Finanzperiodenabschluss-Arbeitsbereich
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält eine Übersicht über den **Finanzperiodenabschluss**-Arbeitsbereich und die zugeordnete Konfiguration.
+Dieser Artikel enthält eine Übersicht über den Arbeitsbereich **Finanzperiodenabschluss** und der zugehörigen Konfiguration.
 
 Finanzperiodenabschluss-Arbeitsbereich
 

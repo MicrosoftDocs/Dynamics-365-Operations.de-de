@@ -1,6 +1,6 @@
 ---
 title: Abdeckung Vergütungsplantyp
-description: In diesem Thema wird der Optionssatz zur Abdeckung des Vergütungsplantyps für Dynamics 365 Human Resources beschrieben.
+description: In diesem Artikel wird der Optionssatz zur Abdeckung des Vergütungsplantyps für Dynamics 365 Human Resources beschrieben.
 author: marcelbf
 ms.date: 07/25/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 31ed22a56c0f15c7df3d372faf871cf3c3d9fdeb
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 57e7de7e9893430abc92b2814623baba718301b9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068533"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859574"
 ---
 # <a name="benefit-plan-type-cover"></a>Abdeckung Vergütungsplantyp
 
@@ -27,7 +27,7 @@ ms.locfileid: "8068533"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In diesem Thema wird der Optionssatz zur Abdeckung des Vergütungsplantyps für Dynamics 365 Human Resources beschrieben.
+In diesem Artikel wird der Optionssatz zur Abdeckung des Vergütungsplantyps für Dynamics 365 Human Resources beschrieben.
 
 ## <a name="option-set-process-type"></a>Optionssatz: Prozesstyp
 

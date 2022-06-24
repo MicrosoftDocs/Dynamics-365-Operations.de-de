@@ -1,6 +1,6 @@
 ---
-title: Power BI-Inhalt zur Abonnementabrechnung
-description: In diesem Thema wird beschrieben, was im Microsoft Power BI-Inhalt zur Abonnementabrechnung enthalten ist.
+title: Inhalt der Power BI-Abonnementabrechnung
+description: In diesem Artikel wird beschrieben, was im Microsoft Power BI-Inhalt zur Abonnementabrechnung enthalten ist.
 author: JodiChristiansen
 ms.date: 04/13/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-04-13
-ms.openlocfilehash: fad96bdaf60e7772e9ea1ff937435b0274303505
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 6cee01eb5b8bb8296b6e7f638b565c999ccc023e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645419"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849959"
 ---
-# <a name="subscription-billing-power-bi-content"></a>Power BI-Inhalt zur Abonnementabrechnung
+# <a name="subscription-billing-power-bi-content"></a>Inhalt der Power BI-Abonnementabrechnung
 
 [!include[banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, was im Microsoft Power BI-Inhalt zur Abonnementabrechnung enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen, und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet wurden, um den Inhalt zu erstellen. 
+In diesem Artikel wird beschrieben, was im Microsoft Power BI-Inhalt zur Abonnementabrechnung enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen, und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet wurden, um den Inhalt zu erstellen. 
 
 ## <a name="overview"></a>Übersicht
 

@@ -1,6 +1,6 @@
 ---
 title: Entwerfen von EB-Konfigurationen, um Zeichen von Bytereihenfolge-Marken in generierten Dateien zu unterdrücken
-description: In diesem Thema wird erläutert, wie Sie ein EB-Format (elektronische Berichterstellung) konfigurieren, um Berichte zu generieren, die Zeichen von Bytereihenfolge-Marken unterdrücken.
+description: In diesem Artikel wird erläutert, wie Sie ein EB-Format (elektronische Berichterstellung) konfigurieren, um Berichte zu generieren, die Zeichen von Bytereihenfolge-Marken unterdrücken.
 author: NickSelin
 ms.date: 01/04/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b9265578deaff4100eb5987eb6090eaa12876044
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: d54ed105e4ff44ac2c48e2d1a4b8e12fbf6f9591
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323739"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847429"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>Entwerfen von EB-Konfigurationen, um Zeichen von Bytereihenfolge-Marken in generierten Dateien zu unterdrücken
 
@@ -38,7 +38,7 @@ Wenn Sie **UTF-8**, **UTF-16** oder **UTF-32** als Codierung angeben, wird die O
 
 ![Festlegen der Option „Stücklistenzeichen unterdrücken“ auf der Seite „Formatdesigner“.](./media/er-suppress-bom-characters-image2.gif)
 
-Führen Sie die entsprechenden Schritte aus, um die Funktionalität zur Laufzeit zu überprüfen. Führen Sie beispielsweise die Schritte im Thema [Ausführung von XML-Elementen in ER-Formaten verzögern](er-defer-xml-element.md) aus. Nachdem Sie die Schritte im Abschnitt [Ändern des Formats, sodass die Berechnung auf der generierten Ausgabe basiert](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) dieses Themas abgeschlossen haben, befolgen Sie diese zusätzlichen Schritte.
+Führen Sie die entsprechenden Schritte aus, um die Funktionalität zur Laufzeit zu überprüfen. Führen Sie beispielsweise die Schritte im Artikel [Ausführung von XML-Elementen in EB-Formaten verzögern](er-defer-xml-element.md) aus. Nachdem Sie die Schritte im Abschnitt [Ändern des Formats, sodass die Berechnung auf der generierten Ausgabe basiert](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) dieses Artikels abgeschlossen haben, befolgen Sie diese zusätzlichen Schritte.
 
 1. Geben Sie die UTF-Codierung an:
 
@@ -48,12 +48,12 @@ Führen Sie die entsprechenden Schritte aus, um die Funktionalität zur Laufzeit
 2. Generieren Sie eine XML-Datei mit einem Zeichen von Bytereihenfolge-Marken:
 
     1. Stellen Sie die Option **Zeichen von Bytereihenfolge-Marken unterdrücken** auf **Nein**, Zeichen von Bytereihenfolge-Marken in generierte XML-Dateien aufzunehmen.
-    2. Führen Sie die Schritte im Abschnitt [Verzögern der Ausführung des XML-Elements „Zusammenfassung“, sodass die berechnete Gesamtsumme verwendet wird](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) des Themas [Ausführung von XML-Elementen in ER-Formaten verzögern](er-defer-xml-element.md), und speichern Sie die generierte Datei als **SampleXmlReport.xml**.
+    2. Führen Sie die Schritte im Abschnitt [Verzögern der Ausführung des XML-Elements „Zusammenfassung“, sodass die berechnete Gesamtsumme verwendet wird](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) des Artikels [Ausführung von XML-Elementen in EB-Formaten verzögern](er-defer-xml-element.md) aus, und speichern Sie die generierte Datei als **SampleXmlReport.xml**.
 
 3. Generieren Sie eine XML-Datei, die kein Zeichen von Bytereihenfolge-Marken enthält:
 
     1. Stellen Sie die Option **Zeichen von Bytereihenfolge-Marken unterdrücken** auf **Ja**, um Zeichen von Bytereihenfolge-Marken in generierten XML-Dateien zu unterdrücken.
-    2. Führen Sie die Schritte im Abschnitt [Verzögern der Ausführung des XML-Elements „Zusammenfassung“, sodass die berechnete Gesamtsumme verwendet wird](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) des Themas [Ausführung von XML-Elementen in ER-Formaten verzögern](er-defer-xml-element.md) aus, und speichern Sie die generierte Datei als **SampleXmlReport (1).xml**.
+    2. Führen Sie die Schritte im Abschnitt [Verzögern der Ausführung des XML-Elements „Zusammenfassung“, sodass die berechnete Gesamtsumme verwendet wird](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) des Artikels [Ausführung von XML-Elementen in EB-Formaten verzögern](er-defer-xml-element.md) aus, und speichern Sie die generierte Datei als **SampleXmlReport (1).xml**.
 
 4. Vergleichen Sie in einem Dienstprogramm zum Dateivergleich die generierten Dateien.
 
