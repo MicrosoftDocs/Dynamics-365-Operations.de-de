@@ -1,6 +1,6 @@
 ---
 title: Integration in Fertigungssteuerungssysteme von Drittanbietern
-description: In diesem Thema wird erläutert, wie Sie Microsoft Dynamics 365 Supply Chain Management in ein Fertigungssteuerungssystem (Manufacturing Execution System, MES) eines Drittanbieters integrieren können.
+description: In diesem Artikel wird erläutert, wie Sie Microsoft Dynamics 365 Supply Chain Management in ein Fertigungssteuerungssystem (Manufacturing Execution System, MES) eines Drittanbieters integrieren können.
 author: johanhoffmann
 ms.date: 10/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: c7633ba32f9265aa0fd8f702552f48dbf675375d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 208ed2d6c8b411d12888966d9c175730e828eb44
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678686"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860637"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integration in Fertigungssteuerungssysteme von Drittanbietern
 
@@ -238,7 +238,7 @@ Für die Nachricht *Produktionsauftrag beenden* ist der `_messageType`-Wert `Pro
 
 ## <a name="other-production-information"></a>Andere Produktionsinformationen
 
-Die Nachrichten unterstützen Aktionen oder Ereignisse, die in der Werkstatt stattfinden. Sie werden über das in diesem Thema beschriebene MES-Integrations-Framework verarbeitet. Der Entwurf geht davon aus, dass andere Referenzinformationen, die mit dem MES ausgetauscht werden sollen (wie z.B. produktbezogene Informationen oder die Stückliste oder Route (mit ihren spezifischen Einrichtungs- und Konfigurationszeiten), die in einem bestimmten Produktionsauftrag verwendet werden), mit Hilfe von [Daten Entitäten](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) über Filetransfer oder OData vom System abgerufen werden.
+Die Nachrichten unterstützen Aktionen oder Ereignisse, die in der Werkstatt stattfinden. Sie werden über das in diesem Artikel beschriebene MES-Integrations-Framework verarbeitet. Der Entwurf geht davon aus, dass andere Referenzinformationen, die mit dem MES ausgetauscht werden sollen (wie z.B. produktbezogene Informationen oder die Stückliste oder Route (mit ihren spezifischen Einrichtungs- und Konfigurationszeiten), die in einem bestimmten Produktionsauftrag verwendet werden), mit Hilfe von [Daten Entitäten](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) über Filetransfer oder OData vom System abgerufen werden.
 
 ## <a name="receive-feedback-about-the-state-of-a-message"></a>Feedback zum Status einer Nachricht erhalten
 
@@ -251,7 +251,7 @@ Nachdem das MES eine Nachricht an Supply Chain Management gesendet hat, kann es 
 
 In diesen Fällen können Sie die Standardwarnungsfunktion in Supply Chain Management nutzen. Informationen zur Funktionsweise von Standardwarnungen finden Sie in den folgenden Ressourcen:
 
-- Hilfethema: [Überblick über Warnungen](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
+- Hilfeartikel: [Überblick über Warnungen](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
 - Video: [Warnregeloptionen in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=cpzimwOjicM&ab_channel=MicrosoftDynamics365)
 
 Sie können beispielsweise die folgenden Benachrichtigungen einrichten, um Feedback zum Status einer Nachricht zu geben:

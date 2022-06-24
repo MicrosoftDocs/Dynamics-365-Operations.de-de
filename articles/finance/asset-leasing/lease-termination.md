@@ -1,6 +1,6 @@
 ---
 title: Beendigungsvorschlag des Leasingvertrags
-description: In diesem Thema wird erläutert, wie Sie einen Mietvertrag zur Kündigung vorschlagen.
+description: In diesem Artikel wird erläutert, wie Sie einen Mietvertrag zur Kündigung vorschlagen.
 author: moaamer
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 2f6990177251418bece8c99a0f9befa333d6549f
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: a5939f165943ff76ba453fb49d8c0c376c8ce4b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720501"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879652"
 ---
 # <a name="propose-a-lease-for-termination"></a>Einen Mietvertrag zur Kündigung vorschlagen
 
 [!include [banner](../includes/banner.md)]
 
-Wenn ein Mietvertag vorzeitig gekündigt wird, kann das Anlagenleasing einen Journaleintrag Eintrag erfassen, um die Leasingverbindlichkeit, das Nutzungsrecht (ROU) und die kumulierten Abschreibungen abzuschreiben und einen Gewinn oder Verlust zu verbuchen. Der Prozess der vorzeitigen Kündigung eines Mietvertrags und die zugehörigen Leasingbücher. Einzelne Leasingbücher werden nicht beendet. In diesem Thema wird die Funktionalität beschrieben, mit der Sie einen Mietvertrag zur Kündigung vorschlagen und den Journaleintrag für die Kündigung des Mietvertrags verarbeiten können.
+Wenn ein Mietvertag vorzeitig gekündigt wird, kann das Anlagenleasing einen Journaleintrag Eintrag erfassen, um die Leasingverbindlichkeit, das Nutzungsrecht (ROU) und die kumulierten Abschreibungen abzuschreiben und einen Gewinn oder Verlust zu verbuchen. Der Prozess der vorzeitigen Kündigung eines Mietvertrags und die zugehörigen Leasingbücher. Einzelne Leasingbücher werden nicht beendet. In diesem Artikel wird die Funktionalität beschrieben, mit der Sie einen Mietvertrag zur Kündigung vorschlagen und den Journaleintrag für die Kündigung des Mietvertrags verarbeiten können.
 
 Wenn ein Mietvertrag nicht als Leasingverhältnis mit zurückgestelltem Mietaufwand eingestuft wird und nicht mit einem Anlagevermögen verbunden ist, erstellt das Assetleasing den folgenden Kündigungsjournaleintrag.
 
@@ -121,7 +121,7 @@ Die folgenden Tabellen zeigen die Werte, die auf den Registerkarten **Allgemeine
 
 ### <a name="steps-for-terminating-the-lease"></a>Schritte zur Kündigung des Mietvertrags
 
-1. Nachdem Sie den Mietvertrag wie oben in diesem Thema beschrieben erstellt haben, gehen Sie zum Leasingbuch und bestätigen Sie den Zahlungsplan. Buchen Sie dann den Journaleintrag der erstmaligen Erfassung . Das anfängliche Nutzungsrecht am Leasingobjekt ist 71.235,81 USD und die Leasingverbindlichkeit sollte 70.235,81 USD sein. In diesem Beispiel wurde der Mietvertrag gemäß ASC 842 als Ausrüstungs-Leasingvertrag unter Thema 842 zur zur Kodifizierung von Rechnungslegungsstandards (ASC 842) klassifiziert.
+1. Nachdem Sie den Mietvertrag wie oben in diesem Artikel beschrieben erstellt haben, gehen Sie zum Leasingbuch und bestätigen Sie den Zahlungsplan. Buchen Sie dann den Journaleintrag der erstmaligen Erfassung . Das anfängliche Nutzungsrecht am Leasingobjekt ist 71.235,81 USD und die Leasingverbindlichkeit sollte 70.235,81 USD sein. In diesem Beispiel wurde der Mietvertrag gemäß ASC 842 als Ausrüstungs-Leasingvertrag unter Thema 842 zur zur Kodifizierung von Rechnungslegungsstandards (ASC 842) klassifiziert.
 2. Führen Sie den Batch für Erfassungen dreimal aus, um den Ablauf von drei Jahren für die Mietzahlungen, Zinsaufwendungen und Abschreibungskosten zu simulieren.
 3. Nachdem Sie alle drei Batch-Aufträge ausgeführt haben, kehren Sie zum Leasingbuch zurück und öffnen Sie die Tabellen für Verbindlichkeiten und Anlagentransaktionen, um den aktuellen Buchwert des Nutzungsrechts am Leasingobjekt und der Leasingverbindlichkeit anzuzeigen. Nach drei Jahren sollte der Anlagenwert ungefähr -53.893,00 USD betragen, und der Wert des Vermögenswerts sollte ungefähr 54.593,00 USD betragen.
 

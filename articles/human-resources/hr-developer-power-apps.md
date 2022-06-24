@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4036378ca70089a9978a9bf5fb48c058a2064cdc
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 5fe8ecd368bc63eed43c86053084ca67ef9beac6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689493"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859516"
 ---
 # <a name="extend-with-power-apps-and-power-automate"></a>Mit Power Apps und Power Automate erweitern
 
@@ -33,7 +33,7 @@ ms.locfileid: "8689493"
 Dieser Artikel beschreibt einige Beispiele für Erweiterungsszenarien für Microsoft Dynamics 365 Human Resources, die Microsoft Power Apps und Microsoft Power Automate verwenden. Sie können das Lösungspaket importieren, das jedem Beispiel in der Power Apps-Umgebung zugeordnet ist. Sie können entweder die Pakete als Anleitung oder als Startpunkte zu den Werkzeugszenarien verwenden, die der Organisation zugeordnet sind.
 
 > [!IMPORTANT]
-> Wenn Sie die Vorlagen und Apps verwenden möchten, die in diesem Thema als „wie vorliegend“ beschrieben sind, müssen Sie diese unbedingt testen, um sicherzustellen, dass sie alle Szenarien beinhalten, die für Ihre Implementierung bestimmt sind.
+> Wenn Sie die Vorlagen und Apps verwenden möchten, die in diesem Artikel als „wie vorliegend“ beschrieben sind, müssen Sie diese unbedingt testen, um sicherzustellen, dass sie alle Szenarien beinhalten, die für Ihre Implementierung bestimmt sind.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 

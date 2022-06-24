@@ -1,6 +1,6 @@
 ---
 title: Kalender erstellen und Arbeitszeiten festlegen
-description: Kalender beschreiben die Kapazität und die Arbeitszeiten von betrieblichen Ressourcen. In diesem Thema wird erläutert, wie ein Arbeitskalender auf der Grundlage eines Schichtmodells definiert wird.
+description: Kalender beschreiben die Kapazität und die Arbeitszeiten von betrieblichen Ressourcen. In diesem Artikel wird erläutert, wie ein Arbeitskalender auf der Grundlage eines Schichtmodells definiert wird.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: business-process
@@ -12,22 +12,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b49b5393448bc501abd1b96123b64c034d7cc67
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 811f49307a8ae44bbee9906cb40a3ca31101f52b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692890"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846328"
 ---
 # <a name="create-calendars-and-generate-working-times"></a>Kalender erstellen und Arbeitszeiten festlegen
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 > [!IMPORTANT]
-> Die in diesem Thema beschriebene Funktionalität ist derzeit für Debitor-Kunden aus dem Bereich Human Resources auf der Finance-Infrastruktur verfügbar.  
+> Die in diesem Artikel beschriebene Funktionalität ist derzeit für Debitor-Kunden aus dem Bereich Human Resources auf der Finance-Infrastruktur verfügbar.  
 
 
-Kalender beschreiben die Kapazität und die Arbeitszeiten von betrieblichen Ressourcen. In diesem Thema wird erläutert, wie ein Arbeitskalender auf der Grundlage eines Schichtmodells definiert wird. Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden.
+Kalender beschreiben die Kapazität und die Arbeitszeiten von betrieblichen Ressourcen. In diesem Artikel wird erläutert, wie ein Arbeitskalender auf der Grundlage eines Schichtmodells definiert wird. Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden.
 
 1. Wählen Sie auf der Startseite **Ressourcenlebenszyklus-Verwaltung** aus.
 2. Wählen Sie **Kalender** aus.

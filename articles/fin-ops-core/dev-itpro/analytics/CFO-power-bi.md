@@ -1,6 +1,6 @@
 ---
 title: Power BI-Inhalt – Überblick (Leiter der Finanzabteilung)
-description: In diesem Thema wird der Microsoft Power BI-Inhalt zum CFO-Überblick (Leiter der Finanzabteilung) beschrieben.
+description: In diesem Artikel wird der Microsoft Power BI-Inhalt zum CFO-Überblick (Leiter der Finanzabteilung) beschrieben.
 author: kweekley
 ms.date: 08/24/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 3eab89d55ec90f3b5937773502430bf317e491ae
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 1ea8f12102cc2fac1948027f7c15d45bf5d1b15d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416203"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881550"
 ---
 # <a name="cfo-overview-power-bi-content"></a>Power BI-Inhalt – Überblick (Leiter der Finanzabteilung)
 
 [!include [banner](../includes/banner.md)] 
 
-In diesem Thema wird der Microsoft Power BI-Inhalt zum **CFO-Überblick** (Leiter der Finanzabteilung) beschrieben. Dieser Power BI-Inhalt gilt für die Benutzer von Microsoft Dynamics 365 for Finance and Operations, Version 7.2. Wenn Sie Version 7.3 oder später verwenden, gehen Sie zu [Finanzeinblicke](financial-insights.md).
+In diesem Artikel wird der Microsoft Power BI-Inhalt zum **CFO-Überblick** (Leiter der Finanzabteilung) beschrieben. Dieser Power BI-Inhalt gilt für die Benutzer von Microsoft Dynamics 365 for Finance and Operations, Version 7.2. Wenn Sie Version 7.3 oder später verwenden, gehen Sie zu [Finanzeinblicke](financial-insights.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen auf den Power BI-Inhalt
 

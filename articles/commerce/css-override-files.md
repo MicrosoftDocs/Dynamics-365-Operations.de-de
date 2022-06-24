@@ -1,6 +1,6 @@
 ---
-title: Arbeiten mit CSS-Überschreibungsdateien
-description: In diesem Thema wird beschrieben, warum, wann und wie Cascading Style Sheets-Überschreibungsdateien (CSS) Dateien in Microsoft Dynamics 365 Commerce verwendet werden.
+title: Mit CSS-Überschreibungsdateien arbeiten
+description: In diesem Artikel wird beschrieben, warum, wann und wie Cascading Style Sheets-Überschreibungsdateien (CSS) Dateien in Microsoft Dynamics 365 Commerce verwendet werden.
 author: phinneyridge
 ms.date: 05/28/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6788481936a54bff32096dba1d0424fc52c669e4
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: eaeeee4c9de7293ba94cc836c4d7b62787eca81d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964603"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892859"
 ---
-# <a name="work-with-css-override-files"></a>Arbeiten mit CSS-Überschreibungsdateien
+# <a name="work-with-css-override-files"></a>Mit CSS-Überschreibungsdateien arbeiten
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, warum, wann und wie Cascading Style Sheets-Überschreibungsdateien (CSS) Dateien in Microsoft Dynamics 365 Commerce verwendet werden.
+In diesem Artikel wird beschrieben, warum, wann und wie Cascading Style Sheets-Überschreibungsdateien (CSS) Dateien in Microsoft Dynamics 365 Commerce verwendet werden.
 
 Permanente Site-Stile sollten normalerweise über das Thema einer Site verwaltet werden. Designs bilden die grundlegenden CSS- und Stileinstellungen für die Module auf einer beliebigen Seite Ihrer Site. Designs werden mit dem Dynamics 365 Commerce Online Software Development Kit (SDK) erstellt, und sie werden mit Microsoft Dynamics Lifecycle Services (LCS) auf Ihren Websites bereitgestellt. Design-Debugging-Funktionen und Modulschnittstellenkonfigurationen im SDK helfen Site-Entwicklern, anpassbare und zusammenhängende Site-Design-Pakete zu erstellen. Wenn diese Entwurfspakete auf einer Website bereitgestellt werden, können sich die Website-Autoren auf das Erstellen, Bearbeiten und Veröffentlichen von Inhalten konzentrieren, anstatt die Website zu entwickeln.
 

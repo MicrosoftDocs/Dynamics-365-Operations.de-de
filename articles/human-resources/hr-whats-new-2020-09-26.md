@@ -1,6 +1,6 @@
 ---
 title: Neuerungen oder Änderungen in Dynamics 365 Human Resources 26. September 2020
-description: Dieses Thema beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 26. September 2020 neu sind oder geändert wurden.
+description: Dieser Artikel beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 26. September 2020 neu sind oder geändert wurden.
 author: jcart1106
 ms.date: 09/26/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8b0260c4d1bafe271a08336ceed7dc3742f1d590
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 1b7a89ae8a2132c8548d9451aa235d1bccb88809
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061383"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874245"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-26-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources 26. September 2020
 
@@ -27,7 +27,7 @@ ms.locfileid: "8061383"
 
 
 
-In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Human Resources neu oder geändert wurden oder demnächst verfügbar sind. Weitere Informationen zu unserem Aktualisierungsprozess und Zeitplan finden Sie unter [Aktualisierungsprozess](hr-admin-setup-update-process.md).
+Dieser Artikel beschreibt Funktionen, die in Dynamics 365 Human Resources neu oder geändert sind oder bald eingeführt werden. Weitere Informationen zu unserem Aktualisierungsprozess und Zeitplan finden Sie unter [Aktualisierungsprozess](hr-admin-setup-update-process.md).
 
 Weitere Informationen zu neuen Funktionen und den voraussichtlichen allgemeinen Verfügbarkeitsterminen finden Sie unter [Überblick Dynamics 365 Human Resources 2020 Veröffentlichungszyklus 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
@@ -46,9 +46,9 @@ Die folgende Funktion ist in dieser Version allgemein verfügbar:
 Die folgenden Fehlerkorrekturen sind in diesem Release enthalten.
 
 > [!NOTE]
-> Unser Ziel ist es, Ihnen diese Informationen so rasch wie möglich zukommen zu lassen. Es gibt möglicherweise Aktualisierungen zu diesem Thema, um Fehlerbehebungen aufzunehmen, die es nach der Erstveröffentlichung dieses Themas in den Build geschafft haben.
+> Unser Ziel ist es, Ihnen diese Informationen so rasch wie möglich zukommen zu lassen. Es gibt möglicherweise Aktualisierungen zu diesem Artikel, um Fehlerbehebungen aufzunehmen, die es nach der Erstveröffentlichung dieses Artikels in den Build geschafft haben.
 
-| Problemnummer | Abgang | Beschreibung |
+| Problemnummer | Problem | Description |
 | --- | --- | --- |
 | 469495 | Aktualisieren Sie den Raster und das Dialogfeld für die Finanzdimension | Der Raster für Finanzdimensionen und Dialogfeld ist im gesamten Human Resources aktualisiert. |
 | 474887 | Das Element Arbeitsanforderung öffnet einen falschen Link in einer manuellen Entscheidung | Wenn eine Workflow-Konfiguration eine manuelle Entscheidung enthält, navigieren Sie zur Urlaubsanfrage von **Mir zugewiesene Arbeitselemente** öffnet den falschen Link und zeigt entweder ein leeres Formular oder einen Urlaubsantrag an, der vom aktuellen Benutzer erstellt wurde, anstatt des Formulars, das ihm für die manuelle Entscheidung zugewiesen wurde. |

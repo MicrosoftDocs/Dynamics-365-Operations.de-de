@@ -1,6 +1,6 @@
 ---
 title: Retouren
-description: Die Themen dieses Abschnitts enthalten Informationen zu Rücklieferungen. Er umfasst Informationen zu einer Rücksendung und ihren Auswirkungen auf Nachkalkulations- und Lagerbestandmengen.
+description: Dieser Artikel enthält Informationen zu Rücklieferungen. Er umfasst Informationen zu einer Rücksendung und ihren Auswirkungen auf Nachkalkulations- und Lagerbestandmengen.
 author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 672f24a720f48c420916c197722eb2d9599744fa
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 9e8045ec39b9caf9bf0dc2b2d331419efb54e6d6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695562"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860405"
 ---
 # <a name="sales-returns"></a>Retouren
 
 [!include [banner](../includes/banner.md)]
 
-Die Themen dieses Abschnitts enthalten Informationen zu Rücklieferungen. Er umfasst Informationen zu einer Rücksendung und ihren Auswirkungen auf Nachkalkulations- und Lagerbestandmengen.
+Dieser Artikel enthält Informationen zu Rücklieferungen. Er umfasst Informationen zu einer Rücksendung und ihren Auswirkungen auf Nachkalkulations- und Lagerbestandmengen.
 
 Debitoren können Rückgabeartikel unterschiedlichen Gründen vornehmen. So kann ein Artikel fehlerhaft sein, oder er entsprach möglicherweise nicht den Erwartungen des Debitors. Die Rücklieferungen starten wenn Debitoren eine Artikelrückgabe anfordern. Nach Eingang der Kundenanfrage wird ein Rücklieferungsauftrag erstellt.
 
@@ -84,9 +84,9 @@ Nachdem Sie den Rückgabekopf erstellt haben, können Sie Rücksendepositionen e
 -   Erstellen Sie einer Rückgabeposition, indem Sie die **Auftrag suchen** Funktion nutzen. Es wird empfohlen, diese Funktion zu verwenden, wenn Sie einer Rücklieferung erstellen. Die **Auftrag suchen** Funktion erstellt eine Referenz aus der Rückgabeposition für die fakturierte Auftragsposition und ruft Positionsdetails wie Artikelnummer, Menge, Preis, Rabatt und Kostenwerte aus der Auftragsposition ab. Die Referenz stellt sicher, dass, wenn das Produkt an das Unternehmen zurückgegeben ist, sein Wert dieselben Einheitenkosten hat, mit dem es verkauft wurde. Die Referenz geprüft außerdem, dass Rücklieferungen nicht für eine Menge erstellt werden, für die die Menge überschreitet, die in der Rechnung verkauft wurde.
 
 >[!NOTE] 
->Rückgabepositionen, die eine Referenz zu einem Auftrag haben, werden als Korrekturen oder Rückbuchungen des Verkaufs behandelt. Weitere Informationen finden Sie im Abschnitt "Sachkonto buchen" weiter unten in diesem Thema.
+>Rückgabepositionen, die eine Referenz zu einem Auftrag haben, werden als Korrekturen oder Rückbuchungen des Verkaufs behandelt. Weitere Informationen finden Sie im Abschnitt "Sachkonto buchen" weiter unten in diesem Artikel.
 
-### <a name="charges"></a>Belastungen
+### <a name="charges"></a>Gebühren
 
 Gebühren und Zuschläge können der Rücklieferung über eine oder mehrerer der folgenden Methoden hinzugefügt werden:
 
@@ -179,7 +179,7 @@ Bevor Sie zurückgelieferte Artikel im Lager physisch empfangen können, indem S
 
 [![Eingangsprozess.](./media/salesreturn03.png)](./media/salesreturn03.png)  
 
-Der Prozess umfasst mehrere andere Abweichungen, die nicht in diesem Thema abgedeckt werden. Beispiele für solche Abweichungen:
+Der Prozess umfasst mehrere andere Abweichungen, die nicht in diesem Artikel abgedeckt werden. Beispiele für solche Abweichungen:
 
 -   Verwenden Sie nicht die **Wareneingangsübersicht** Liste, um eine Wareneingangserfassung zu erstellen. Stattdessen Erstellen Sie manuell die Wareneingangserfassung entsprechend. Rücklieferungen haben einen **Auftrag** als die Referenz.
 -   Wenn Sie die Lagerortverwaltung verwenden, generieren Sie Palettentransporte. Die Rückgabeposition hat den Status **Angekommen** während des Palettentransports.

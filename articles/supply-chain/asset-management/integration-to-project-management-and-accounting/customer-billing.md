@@ -1,6 +1,6 @@
 ---
 title: Rechnung für die Wartung von kundeneigenen Anlagen
-description: In diesem Thema wird erläutert, wie Sie Wartungsarbeiten erstellen, verarbeiten und abrechnen, die an Anlagen durchgeführt werden, die Ihren Kunden gehören.
+description: In diesem Artikel wird erläutert, wie Sie Wartungsarbeiten erstellen, verarbeiten und abrechnen, die an Anlagen durchgeführt werden, die Ihren Kunden gehören.
 author: johanhoffmann
 ms.date: 01/28/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a48e681da1801ef3c0d1c9c03cebaa5eecd37d76349a7b1c3cfe53e892fae489
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d6ad25ec49a329c16b0290278fb614293a507eae
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774944"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887688"
 ---
 # <a name="bill-for-maintenance-on-customer-owned-assets"></a>Rechnung für die Wartung von kundeneigenen Anlagen
 

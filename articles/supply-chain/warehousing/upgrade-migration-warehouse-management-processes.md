@@ -1,6 +1,6 @@
 ---
 title: Aktualisieren Sie die Lagerortverwaltung von Microsoft Dynamics AX 2012 auf Supply Chain Management
-description: Dieses Thema bietet eine Übersicht über Optionen für die Produkt- und Lagerverwaltungsmigration.
+description: Dieser Artikel bietet eine Übersicht über Optionen für die Produkt- und Lagerverwaltungsmigration.
 author: perlynne
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ac8c0d8781e5146186fbf71ce619f90ca3556ccefefe7e974efded7e0eb86dd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d85f4e5c44db511970b3e22490341228fa0d1abd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775434"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857082"
 ---
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Aktualisieren Sie die Lagerortverwaltung von Microsoft Dynamics AX 2012 auf Supply Chain Management 
 
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält einen Überblick der Aktualisierung von Microsoft Dynamics AX 2012 R3 mit WMSII-Modul auf Supply Chain Management.
+Dieser Artikel enthält einen Überblick der Aktualisierung von Microsoft Dynamics AX 2012 R3 mit WMSII-Modul auf Supply Chain Management.
 
 Supply Chain Management unterstützt nicht mehr bestehende **WMSII**-Module von Microsoft Dynamics AX 2012. Stattdessen können Sie das Modul **Lagerortverwaltung** verwenden. Im WMSII-Modul konnten die Bestandsdimensionen Standort und Paletten-ID für die Finanzbestandsaufnahme ausgewählt werden, jedoch kann die Bestandsdimension Paletten-ID nicht für die Finanzbestandsaufnahme in Supply Chain Management verwendet werden.
 

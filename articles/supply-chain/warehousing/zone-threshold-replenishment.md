@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: f3e94cc79f0daac9107f9876ac8414d2c4cff366
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e3ec1f59e0b1d202d5591bfc1525c9034f4d8f45
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568998"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893119"
 ---
 # <a name="zone-threshold-replenishment"></a>Schwellenwert für Zonenwiederbeschaffung
 
@@ -45,7 +45,7 @@ Bevor Sie die Funktion *Schwellenwert für Zonenwiederbeschaffung* verwenden kö
 
 ## <a name="set-up-zone-based-replenishment"></a><a name="setup"></a>Zonenbasierte Wiederbeschaffung einrichten
 
-Um die zonenbasierte Wiederbeschaffung einzurichten, müssen Sie mehrere Teile des Systems konfigurieren. In diesem Abschnitt werden die verschiedenen Einstellungen vorgestellt und Demodatenwerte bereitgestellt, die Sie eingeben können, wenn Sie das Szenario am Ende dieses Themas durcharbeiten möchten.
+Um die zonenbasierte Wiederbeschaffung einzurichten, müssen Sie mehrere Teile des Systems konfigurieren. In diesem Abschnitt werden die verschiedenen Einstellungen vorgestellt und Demodatenwerte bereitgestellt, die Sie eingeben können, wenn Sie das Szenario am Ende dieses Artikels durcharbeiten möchten.
 
 ### <a name="set-up-directive-codes"></a>Richtliniencodes einrichten
 
@@ -57,7 +57,7 @@ Um Ihre Richtliniencodes anzuzeigen oder zu bearbeiten, gehen Sie zu **Lagerortv
 
 #### <a name="prepare-demo-data-directive-codes"></a>Demodaten-Richtliniencodes vorbereiten
 
-Dieses Beispiel zeigt, wie ein Richtliniencode vorbereitet wird. Wenn Sie das Szenario am Ende dieses Themas durcharbeiten möchten, verwenden Sie die hier angegebenen Demodatenwerte. Verwenden Sie andernfalls Ihre eigenen Werte.
+Dieses Beispiel zeigt, wie ein Richtliniencode vorbereitet wird. Wenn Sie das Szenario am Ende dieses Artikels durcharbeiten möchten, verwenden Sie die hier angegebenen Demodatenwerte. Verwenden Sie andernfalls Ihre eigenen Werte.
 
 1. Wählen Sie **USMF** juristische Person aus, um mit den Demodaten zu arbeiten.
 1. Wechseln Sie zu **Lagerortverwaltung \> Setup \> Richtliniencodes**.
@@ -79,7 +79,7 @@ Eine Wiederbeschaffungsvorlage ist eine Reihe von Regeln, die steuern, wann und 
 
 #### <a name="prepare-a-demo-data-replenishment-template"></a>Demodaten-Wiederbeschaffungsvorlage vorbereiten
 
-Dieses Beispiel zeigt, wie eine Wiederbeschaffungsvorlage vorbereitet wird. Wenn Sie das Szenario am Ende dieses Themas durcharbeiten möchten, verwenden Sie die hier angegebenen Demodatenwerte. Verwenden Sie andernfalls Ihre eigenen Werte.
+Dieses Beispiel zeigt, wie eine Wiederbeschaffungsvorlage vorbereitet wird. Wenn Sie das Szenario am Ende dieses Artikels durcharbeiten möchten, verwenden Sie die hier angegebenen Demodatenwerte. Verwenden Sie andernfalls Ihre eigenen Werte.
 
 1. Wählen Sie **USMF** juristische Person aus, um mit den Demodaten zu arbeiten.
 1. Wechseln Sie zu **Lagerortverwaltung \> Setup \> Wiederbeschaffung \> Wiederbeschaffungsvorlagen**.
@@ -144,7 +144,7 @@ Beispiele, die zeigen, wie Sie die Einstellungen zum Erstellen der erforderliche
 
 #### <a name="prepare-demo-data-location-directives"></a>Demodaten-Lagerplatzrichtlinien vorbereiten
 
-Um Demodaten so vorzubereiten, dass sie im Szenario am Ende dieses Themas verwendet werden können, müssen Sie zwei Lagerplatzrichtlinien erstellen: eine für die Entnahme und eine für die Einlagerung.
+Um Demodaten so vorzubereiten, dass sie im Szenario am Ende dieses Artikels verwendet werden können, müssen Sie zwei Lagerplatzrichtlinien erstellen: eine für die Entnahme und eine für die Einlagerung.
 
 ##### <a name="create-a-replenishment-pick-directive"></a>Wiederbeschaffungsentnahmerichtlinie erstellen
 
@@ -258,7 +258,7 @@ Dieser Abschnitt enthält ein Beispielszenario, das zeigt, wie Sie mit der Funkt
 
 ### <a name="prepare-the-sample-data-that-is-required-for-the-sample-scenario"></a>Beispieldaten vorbereiten, die für das Beispielszenario erforderlich sind
 
-Bevor Sie mit der Bearbeitung des Szenarios beginnen, müssen Sie Beispieldaten aktivieren und die Funktion wie in diesem Abschnitt und in den vorherigen Abschnitten dieses Themas beschrieben einrichten.
+Bevor Sie mit der Bearbeitung des Szenarios beginnen, müssen Sie Beispieldaten aktivieren und die Funktion wie in diesem Abschnitt und in den vorherigen Abschnitten dieses Artikels beschrieben einrichten.
 
 #### <a name="use-the-usmf-legal-entity"></a>USMF juristische Person verwenden
 
@@ -266,7 +266,7 @@ Um das Szenario mithilfe der Beispieldatensätze und -werte, die hier angegeben 
 
 #### <a name="prepare-additional-sample-data"></a>Zusätzliche Beispieldaten vorbereiten
 
-Nachdem Sie die **USMF** juristische Person ausgewählt haben, fügen Sie die zusätzlichen Beispieldaten hinzu, die erforderlich sind, wie im Abschnitt [Zonenbasierte Wiederbeschaffung einrichten](#setup) weiter oben in diesem Thema beschrieben.
+Nachdem Sie die **USMF** juristische Person ausgewählt haben, fügen Sie die zusätzlichen Beispieldaten hinzu, die erforderlich sind, wie im Abschnitt [Zonenbasierte Wiederbeschaffung einrichten](#setup) weiter oben in diesem Artikel beschrieben.
 
 #### <a name="check-your-on-hand-inventory"></a>Verfügbaren Lagerbestand prüfen
 

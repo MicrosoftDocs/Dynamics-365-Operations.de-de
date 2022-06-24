@@ -1,6 +1,6 @@
 ---
 title: Verwalten von Produktkategorien und ‑produkten
-description: In diesem Thema wird beschrieben, wie Verkaufmanager Produktkategorien verwenden können, um Beziehungen zwischen der Produkthierarchie (Commerce) und freigegebenen Produktdetails zu verwalten.
+description: In diesem Artikel wird beschrieben, wie Verkaufmanager Produktkategorien verwenden können, um Beziehungen zwischen der Produkthierarchie (Commerce) und freigegebenen Produktdetails zu verwalten.
 author: ashishmsft
 ms.date: 10/23/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 101e03c053203fc92648b7024998202d782f46fb07a5b6d5647b8e2a6514ea17
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0871475e0910e0a46544c56083b505ff647fd6a9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743983"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878569"
 ---
 # <a name="manage-product-categories-and-products"></a>Verwalten von Produktkategorien und ‑produkten
 
 [!include [banner](./includes/banner.md)]
 
-Dieses Thema beschreibt eine erweiterte Art, Produktkategorien und Produkte in Dynamics 365 Commerce zu verwalten. Mit diesen Erweiterungen können Verkaufsmanager eine Struktur von Produkteigenschaften anzeigen, die von der Produkthierarchie und freigegebenen Produktdetails geteilt werden.
+Dieser Artikel beschreibt eine erweiterte Art, Produktkategorien und Produkte in Dynamics 365 Commerce zu verwalten. Mit diesen Erweiterungen können Verkaufsmanager eine Struktur von Produkteigenschaften anzeigen, die von der Produkthierarchie und freigegebenen Produktdetails geteilt werden.
 
 Um mehr darüber zu erfahren, wie Produktkategorien im Arbeitsbereich **Kategorie und Produktverwaltung** verwaltet werden, wählen Sie die Kachel **Produkthierarchie (Commerce)** aus.
 

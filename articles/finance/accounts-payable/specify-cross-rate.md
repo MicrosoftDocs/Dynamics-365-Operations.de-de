@@ -1,6 +1,6 @@
 ---
 title: Kreuzkurs angeben
-description: Dieses Thema enthält allgemeine Informationen zu Kreuzkursen in Microsoft Dynamics 365 Finance.
+description: Dieser Artikel enthält allgemeine Informationen zu Kreuzkursen in Microsoft Dynamics 365 Finance.
 author: abruer
 ms.date: 05/16/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ed1db707cf6aed7c9def76ebbbdef7032b8776b6
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: efb01948af2bcba9ca740e8bd0e12584cf021fce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735289"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889960"
 ---
 # <a name="specify-the-cross-rate"></a>Kreuzkurs angeben
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird der Zweck eines Kreuzkurses erklärt, und wie der Kreuzkurs angegeben wird, wenn Sie eine Zahlung mit einer Rechnung ausgleichen. Verwenden Sie einen Kreuzkurs, wenn die folgenden Kriterien zutreffen: 
+In diesem Artikel wird der Zweck eines Kreuzkurses erklärt, und wie der Kreuzkurs angegeben wird, wenn Sie eine Zahlung mit einer Rechnung ausgleichen. Verwenden Sie einen Kreuzkurs, wenn die folgenden Kriterien zutreffen: 
 -   Sie gleichen eine Zahlung mit einer Rechnung aus. 
 -   Die Zahlungsposition und die Rechnungsposition verwenden verschiedene Währungen. 
 -   Keine dieser Währungen ist die Buchhaltungswährung. 

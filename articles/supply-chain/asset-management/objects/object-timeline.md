@@ -1,6 +1,6 @@
 ---
-title: Anlagenereignisverlauf
-description: In diesem Thema wird erläutert, wie Sie in Asset Management den Anlagenereignisverlauf öffnen.
+title: Anlagen-Ereignishistorie
+description: In diesem Artikel wird erläutert, wie Sie in Anlagenverwaltung den Anlagenereignisverlauf öffnen.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 670fa5800efad99d913e96dee8c6883f150b86d2227143dbdf392c7b380e89a6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 63045cf2fc493144897b8a857f615105f6d7b50f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750171"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865294"
 ---
-# <a name="asset-event-history"></a>Anlagenereignisverlauf
+# <a name="asset-event-history"></a>Anlagen-Ereignishistorie
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-In diesem Thema wird erläutert, wie Sie in Asset Management den Anlagenereignisverlauf öffnen. Die Seite **Anlagenereignisverlauf** zeigt die Erfassungshistorie an, die während der Lebensdauer einer Anlage aufgezeichnet wurde. Sie können über **Alle Anlagen**, **Aktive Anlagen** und **Meine aktiven Anlagen** auf diese Seite zugreifen. Wählen Sie eine Anlage aus, und wählen Sie dann **Ereignishistorie** aus.
+In diesem Artikel wird erläutert, wie Sie in Anlagenverwaltung den Anlagenereignisverlauf öffnen. Die Seite **Anlagenereignisverlauf** zeigt die Erfassungshistorie an, die während der Lebensdauer einer Anlage aufgezeichnet wurde. Sie können über **Alle Anlagen**, **Aktive Anlagen** und **Meine aktiven Anlagen** auf diese Seite zugreifen. Wählen Sie eine Anlage aus, und wählen Sie dann **Ereignishistorie** aus.
 
 Auf dem Inforegister **Details** der Seite **Anlagenereignisverlauf** können Sie eine Suchen in alle verfügbaren Informationen durchführen. So können Sie den Anlagenereignisverlauf beispielsweise verwenden, um die folgenden Informationen zu suchen:
 

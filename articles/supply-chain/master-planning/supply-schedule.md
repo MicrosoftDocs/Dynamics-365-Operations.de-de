@@ -1,6 +1,6 @@
 ---
 title: Beschaffungsplan
-description: Dieses Thema enthält Informationen über die Seite „Beschaffungsplan“ und deren Funktionen.
+description: Dieser Artikel enthält Informationen über die Seite „Beschaffungsplan“ und deren Funktionen.
 author: t-benebo
 ms.date: 9/3/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 89b8ce96a5c34902187751cfa523ed99a94500b3
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 0e3937dd4cffc464f38b5770674364579bdb06d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468675"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851738"
 ---
 # <a name="supply-schedule"></a>Beschaffungsplan
 
@@ -28,7 +28,7 @@ Auf der Seite **Beschaffungsplan** wird eine umfassende Übersicht über Angebot
 
 Sie können die Seite **Beschaffungsplan** auf eine der folgenden Arten öffnen:
 
-- Gehen Sie zu **Produktprogrammplanung \> Gesamtplanung \> Beschaffungsplan**. Geben Sie im Dialogfeld **Filter ändern** den Plan oder das Produkt ein, das Sie suchen, indem Sie Filterwerte in die angegebenen Felder eingeben. (Im restlichen Teil dieses Themas wird die von Ihnen eingegebene Sammlung von Filterwerten als „der Filter“ oder „der aktuelle Filter“ bezeichnet.) Wählen Sie **OK** aus, wenn Sie fertig sind.
+- Gehen Sie zu **Produktprogrammplanung \> Gesamtplanung \> Beschaffungsplan**. Geben Sie im Dialogfeld **Filter ändern** den Plan oder das Produkt ein, das Sie suchen, indem Sie Filterwerte in die angegebenen Felder eingeben. (Im restlichen Teil dieses Artikels wird die von Ihnen eingegebene Sammlung von Filterwerten als „der Filter“ oder „der aktuelle Filter“ bezeichnet.) Wählen Sie **OK** aus, wenn Sie fertig sind.
 - Wechseln Sie zu **Produktinformationsverwaltung \> Produkte \> Freigegebene Produkte**. Wählen Sie ein Produkt aus oder öffnen Sie es. Klicken Sie dann im Aktivitätsbereich auf der Registerkarte **Planen** in der Gruppe **Anzeigen** auf **Bedarfsplan**.
 - Gehen Sie zu **Produktprogrammplanung \> Einrichten \> Bedarfsplanung \> Artikelzuteilungsschlüssel**. Wählen Sie einen Artikelzuteilungsschlüssel aus, der als Produktfamilie verwendet wird. Wählen Sie dann im Aktionsbereich **Bedarfsplanung** aus.
 - Gehen Sie zu **Produktprogrammplanung \> Gesamtplanung \> Geplante Aufträge**. Wählen oder öffnen Sie einen Planauftrag. Klicken Sie dann im Aktivitätsbereich auf der Registerkarte **Anzeigen** in der Gruppe **Anzeigen** auf **Bedarfsplan**.

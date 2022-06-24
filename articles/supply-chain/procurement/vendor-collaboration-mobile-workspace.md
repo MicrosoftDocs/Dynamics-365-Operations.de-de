@@ -1,6 +1,6 @@
 ---
 title: Mobiler Arbeitsbereich für Kreditorenzusammenarbeit
-description: Dieses Thema enthält Informationen zur Lieferantenzusammenarbeit im mobilen Arbeitsbereich. Dieser Arbeitsbereich hilft Kreditoren, auf dem neuesten Stand der Bestellungen zu sein, die ihnen zur Genehmigung gesendet wurden. Sie können auch Informationen zu neuen und aktualisierten Bestellungen und Kontakten anzeigen.
+description: Dieser Artikel enthält Informationen zur Lieferantenzusammenarbeit im mobilen Arbeitsbereich. Dieser Arbeitsbereich hilft Kreditoren, auf dem neuesten Stand der Bestellungen zu sein, die ihnen zur Genehmigung gesendet wurden. Sie können auch Informationen zu neuen und aktualisierten Bestellungen und Kontakten anzeigen.
 author: GalynaFedorova
 ms.date: 05/24/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: global
 ms.author: gfedorova
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 97352ca89cef77b9320f17af5a1dbe6a00df2dd6
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 591d4269a1188ed8f098a342729ba49b9772f42d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811713"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851651"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobiler Arbeitsbereich für Kreditorenzusammenarbeit
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
-Dieses Thema enthält Informationen zur **Lieferantenzusammenarbeit** im mobilen Arbeitsbereich. Dieser Arbeitsbereich hilft Kreditoren, auf dem neuesten Stand der Bestellungen zu sein, die ihnen zur Genehmigung gesendet wurden. Sie können auch Informationen zu neuen und aktualisierten Bestellungen und Kontakten anzeigen.
+Dieser Artikel enthält Informationen zur **Vendor collaboration** im mobilen Arbeitsbereich. Dieser Arbeitsbereich hilft Kreditoren, auf dem neuesten Stand der Bestellungen zu sein, die ihnen zur Genehmigung gesendet wurden. Sie können auch Informationen zu neuen und aktualisierten Bestellungen und Kontakten anzeigen.
 
 Dieser mobile Arbeitsbereich soll mit der mobilen App für Finanz und Betrieb (Dynamics 365)-App verwendet werden.
 
@@ -97,7 +97,7 @@ Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 od
 </tr>
 <tr class="even">
 <td>Der Kreditorenbenutzer muss Zugriff auf die Weboberfläche für die Kreditor-Kooperation im Webclient haben und muss als Keditor-Kooperations-Benutzer eingerichtet werden.</td><td>Einkäufer und Systemadministrator</td>
-<td>Führen Sie die Schritte, die in den folgenden Themen beschrieben werden, aus, um die Weboberfläche für die Kreditor-Kooperation einzurichten und mit dieser zu arbeiten.
+<td>Führen Sie die Schritte, die in den folgenden Artikel beschrieben werden, aus, um die Weboberfläche für die Kreditor-Kooperation einzurichten und mit dieser zu arbeiten.
 <ul>
 <li><a href="vendor-collaboration-work-external-vendors.md">Nutzen der Kreditor-Kooperation für die Zusammenarbeit mit externen Kreditoren</a></li>
 <li><a href="manage-vendor-collaboration-users.md">Benutzer für Kreditor-Kooperationen verwalten</a></li>

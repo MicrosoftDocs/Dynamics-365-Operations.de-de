@@ -1,6 +1,6 @@
 ---
 title: Produktprogrammplanung mit Bedarfsprognosen
-description: In diesem Thema wird erklärt, wie Sie Bedarfsplanungen bei der Produktprogrammplanung mit der Planungsoptimierung einbeziehen können.
+description: In diesem Artikel wird erklärt, wie Sie Bedarfsplanungen bei der Produktprogrammplanung mit der Planungsoptimierung einbeziehen können.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ec5150186e190e67913409b9cac107ff2bd55001
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 63221b5270416cad9cdfb586c697d7700f3b561b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468440"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878989"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Produktprogrammplanung mit Bedarfsprognosen
 
@@ -42,7 +42,7 @@ Um einen Masterplan so zu konfigurieren, dass er eine Bedarfsplanung enthält, g
 
     - **Prognosemodell** - Wählen Sie das zu verwendende Prognosemodell. Dieses Modell wird berücksichtigt, wenn ein Versorgungsvorschlag für den aktuellen Masterplan erstellt wird.
     - **Bedarfsprognose einbeziehen** - Legen Sie diese Option auf *Ja* fest, um die Bedarfsplanung in den aktuellen Masterplan einzubeziehen. Wenn Sie sie auf *Nein* festlegen, werden die Transaktionen der Bedarfsplanung nicht in den Masterplan aufgenommen.
-    - **Methode zur Reduzierung des Prognosebedarfs** - Wählen Sie die Methode, die zur Reduzierung des Prognosebedarfs verwendet werden soll. Weitere Informationen finden Sie im Abschnitt [Schlüssel zur Prognosereduzierung](#reduction-keys) weiter unten in diesem Thema.
+    - **Methode zur Reduzierung des Prognosebedarfs** - Wählen Sie die Methode, die zur Reduzierung des Prognosebedarfs verwendet werden soll. Weitere Informationen finden Sie im Abschnitt [Schlüssel zur Prognosereduzierung](#reduction-keys) weiter unten in diesem Artikel.
 
 1. Auf dem Inforegister **Zeitrahmen in Tagen** können Sie die folgenden Felder festlegen, um den Zeitraum festzulegen, in dem die Bedarfsplanung berücksichtigt wird:
 
@@ -61,7 +61,7 @@ Um eine Deckungsgruppe so zu konfigurieren, dass sie eine Bedarfsplanung enthäl
 1. Legen Sie auf dem Inforegister **Sonstiges** die folgenden Felder fest:
 
     - **Zeitraum für die Absatzplanung** - Geben Sie die Anzahl der Tage (ab dem heutigen Datum) ein, für die die Bedarfsplanung gelten soll. Dieser Wert kann mit der Option **Vorhersageplan** auf dem Masterplan überschrieben werden, wie im vorherigen Abschnitt beschrieben.
-    - **Reduktionsschlüssel** - Wählen Sie den Reduktionsschlüssel, der angewendet werden soll. Weitere Informationen finden Sie in den Abschnitten [Erstellen und Festlegen eines Prognosereduktionsschlüssels](#create-reduction-key) und [Verwenden eines Reduktionsschlüssels](#use-reduction-key) weiter unten in diesem Thema.
+    - **Reduktionsschlüssel** - Wählen Sie den Reduktionsschlüssel, der angewendet werden soll. Weitere Informationen finden Sie in den Abschnitten [Erstellen und Festlegen eines Prognosereduktionsschlüssels](#create-reduction-key) und [Verwenden eines Reduktionsschlüssels](#use-reduction-key) weiter unten in diesem Artikel.
     - **Prognose reduzieren um** - Für Produktprogrammplanungen, bei denen das Feld **Methode zur Reduzierung des Prognosebedarfs** auf *Transaktionen - Reduzierungsschlüssel* oder *Transaktionen - dynamischer Zeitraum* festgelegt ist, geben Sie an, welche Transaktionen die Prognose reduzieren sollen. Wählen Sie einen der folgenden Werte aus:
 
         - **Alle Transaktionen** - Alle Transaktionen sollen die Prognose reduzieren.

@@ -1,6 +1,6 @@
 ---
 title: Migration zur Planungsoptimierung für die Produktprogrammplanung
-description: Dieses Thema enthält Informationen über die neue Engine für die Produktprogrammplanung, die Planungsoptimierung, und über die Migration von der bestehenden Engine.
+description: Dieser Artikel enthält Informationen über die neue Engine für die Produktprogrammplanung, die Planungsoptimierung, und über die Migration von der bestehenden Engine.
 author: t-benebo
 ms.date: 05/11/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 598e29ead50e1ecb249a7338c7f0952a912b4f69
-ms.sourcegitcommit: cbe9493d479f96f271d94599ec1b85131b26169f
+ms.openlocfilehash: a94b424ad1a454feecede8a7b037171b2984504f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809094"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846097"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Migration zur Planungsoptimierung für die Produktprogrammplanung
 
 [!include [banner](../includes/banner.md)]
 
-Die eingebaute Produktprogrammplanung soll außer Betrieb genommen werden. Sie wird durch das Add-In „Planungsoptimierung“ für Microsoft Dynamics 365 Supply Chain Management ersetzt. Dieses Thema enthält Informationen über die Auswirkungen auf neue und bestehende Bereitstellungen. Es enthält Informationen über erforderliche Maßnahmen.
+Die eingebaute Produktprogrammplanung soll außer Betrieb genommen werden. Sie wird durch das Add-In „Planungsoptimierung“ für Microsoft Dynamics 365 Supply Chain Management ersetzt. Dieser Artikel enthält Informationen über die Auswirkungen auf neue und bestehende Bereitstellungen. Es enthält Informationen über erforderliche Maßnahmen.
 
 Die Planungsoptimierung ermöglicht die Berechnung der Produktprogrammplanung außerhalb des Supply Chain Managements und seiner Azure SQL-Datenbank. Zu den Vorteilen, die mit der Planungsoptimierung verbunden sind, gehören eine verbesserte Leistung und minimierte Auswirkungen auf die SQL-Datenbank bei Produktprogrammplanungsläufen. Da schnelle Planungsläufe auch während der Office-Zeiten durchgeführt werden können, können Planer sofort auf Bedarfs- oder Parameteränderungen reagieren.
 
@@ -63,7 +63,7 @@ Derzeit sind Ausnahmen für die Migration der Planungsoptimierung nur dann relev
 
 Nachdem die erforderlichen Funktionen verfügbar sind, gewährt Microsoft eine Gnadenfrist, bis die Ausnahme ausläuft. Der Admin der Umgebung wird informiert, wenn die erforderlichen Funktionen verfügbar geworden sind und die Schonfrist begonnen hat.
 
-Das folgende Flussdiagramm fasst die Informationen in diesem Thema zusammen, damit Sie schnell herausfinden können, ob Sie eine Ausnahme anfordern sollten. Wenn Sie eine Ausnahme anfordern müssen, füllen Sie bitte den [Fragebogen zur Migration und zu Ausnahmen zur Planungsoptimierung](https://go.microsoft.com/fwlink/?linkid=2144962) aus und senden Sie ihn ab. Die Produktgruppe ist für die Bewertung und Genehmigung jeder Ausnahmeanfrage zuständig. Senden Sie Ihre Anfrage also bitte direkt an die Produktgruppe über den angegebenen Link und erstellen Sie kein Support-Ticket dafür. Wenn Ihre Anfrage abgelehnt wird, erstellen Sie bitte kein Support-Ticket, da der Microsoft Support nicht in der Lage ist, eine Neubewertung vorzunehmen oder Ausnahmen zu gewähren.
+Das folgende Flussdiagramm fasst die Informationen in diesem Artikel zusammen, damit Sie schnell herausfinden können, ob Sie eine Ausnahme anfordern sollten. Wenn Sie eine Ausnahme anfordern müssen, füllen Sie bitte den [Fragebogen zur Migration und zu Ausnahmen zur Planungsoptimierung](https://go.microsoft.com/fwlink/?linkid=2144962) aus und senden Sie ihn ab. Die Produktgruppe ist für die Bewertung und Genehmigung jeder Ausnahmeanfrage zuständig. Senden Sie Ihre Anfrage also bitte direkt an die Produktgruppe über den angegebenen Link und erstellen Sie kein Support-Ticket dafür. Wenn Ihre Anfrage abgelehnt wird, erstellen Sie bitte kein Support-Ticket, da der Microsoft Support nicht in der Lage ist, eine Neubewertung vorzunehmen oder Ausnahmen zu gewähren.
 
 ![Ausnahmenflussdiagramm.](media/exception-diagram.png "Ausnahmenflussdiagramm")
 

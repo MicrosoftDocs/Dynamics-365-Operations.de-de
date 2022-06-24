@@ -1,6 +1,6 @@
 ---
 title: Mehrere abgeleitete Zuordnungen für einen einzelnen Modellstamm verwalten
-description: In diesem Thema wird erläutert, wie Sie mehrere abgeleitete Zuordnungen verwalten, die für einen einzelnen Modellstamm konfiguriert wurden.
+description: In diesem Artikel wird erläutert, wie Sie mehrere abgeleitete Zuordnungen verwalten, die für einen einzelnen Modellstamm konfiguriert wurden.
 author: NickSelin
 ms.date: 01/04/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d71b05b3f2eda93a93f728926e675c040371781e
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 960f5962ec1ea216e35feb0c282856bed95d079a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324111"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892478"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Mehrere abgeleitete Zuordnungen für einen einzelnen Modellstamm verwalten
 
@@ -32,9 +32,9 @@ Zuordnungskomponenten für EB-Modelle können sich in [Konfigurationen](general-
 
 Viele Konfigurationsanbieter bieten möglicherweise EB-Modellzuordnungskonfigurationen für dasselbe EB-Datenmodell an. Diese Modellzuordnungskonfigurationen können Zuordnungskomponenten für verschiedene Stammdefinitionen enthalten. Sie können eine Modellzuordnung für eine Stammdefinition verwenden, die von einem [Anbieter](general-electronic-reporting.md#Provider) angeboten wird, und eine Modellzuordnung für eine andere Stammdefinition verwenden, die von einem anderen Anbieter angeboten wird.
 
-In den Prozeduren in diesem Thema wird erläutert, wie mehrere EB-Modellzuordnungskonfigurationen eines EB-Datenmodells verwaltet werden, wenn sie verschiedene Modellzuordnungskomponenten enthalten, die für dieselbe Stammdefinition konfiguriert sind. 
+In den Prozeduren in diesem Artikel wird erläutert, wie mehrere EB-Modellzuordnungskonfigurationen eines EB-Datenmodells verwaltet werden, wenn sie verschiedene Modellzuordnungskomponenten enthalten, die für dieselbe Stammdefinition konfiguriert sind. 
 
-Um die Prozeduren in diesem Thema abzuschließen, muss Ihnen die Rolle des Systemadministrators oder des elektronischen Berichtsentwicklers zugewiesen sein.
+Um die Prozeduren in diesem Artikel abzuschließen, muss Ihnen die Rolle des Systemadministrators oder des elektronischen Berichtsentwicklers zugewiesen sein.
 
 Alle der folgenden Prozeduren können im USMF-Unternehmen ausgeführt werden. Eine Codierung ist nicht erforderlich.
 

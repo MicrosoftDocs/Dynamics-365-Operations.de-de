@@ -1,6 +1,6 @@
 ---
 title: Rechnungsverwaltung für B2B-E-Commerce-Websites
-description: In diesem Thema werden die Funktionen der Rechnungsverwaltung von Microsoft Dynamics 365 Commerce Business-to-Business-(B2B-)E-Commerce-Websites beschrieben.
+description: In diesem Artikel werden die Funktionen der Rechnungsverwaltung von Microsoft Dynamics 365 Commerce Business-to-Business-(B2B-)E-Commerce-Websites beschrieben.
 author: shajain
 ms.date: 02/16/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 60cb0c8aaede4a0eaeed80cf5ebe41068da57836
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: fa6b81187481a6b7f47ea02291e5a581052d6c7b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686299"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854925"
 ---
 # <a name="invoice-management-for-b2b-e-commerce-websites"></a>Rechnungsverwaltung für B2B-E-Commerce-Websites
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema werden die Funktionen der Rechnungsverwaltung von Microsoft Dynamics 365 Commerce Business-to-Business-(B2B-)E-Commerce-Websites beschrieben.
+In diesem Artikel werden die Funktionen der Rechnungsverwaltung von Microsoft Dynamics 365 Commerce Business-to-Business-(B2B-)E-Commerce-Websites beschrieben.
 
 Es ist eine gängige Praxis für Unternehmen, die B2B-Transaktionen abwickeln, Aufträge auf Debitorenkredit anzunehmen und dann eine Rechnung an die Kunden zu senden, nachdem der Auftrag ausgeführt wurde. Zahlungsbedingungen werden für Kunden festgelegt und es kann einige Rabatte geben, um Kunden zu motivieren, pünktlich oder vorzeitig zu zahlen. Um die Wahrscheinlichkeit zu erhöhen, dass Zahlungen pünktlich eingehen, können Kunden auf B2B-E-Commerce-Websites alle ihre Rechnungen einsehen. Der Kunde kann die Rechnungen einfach filtern, um sich bezahlte, unbezahlte und teilweise bezahlte Rechnungen zusammen mit den Fälligkeitsdaten anzeigen zu lassen.
 

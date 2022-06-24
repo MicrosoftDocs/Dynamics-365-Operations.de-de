@@ -1,6 +1,6 @@
 ---
 title: Anlagenverwaltung in Anlagen integrieren
-description: In diesem Thema wird erläutert, wie Sie die Module Anlagenverwaltung und Anlagevermögen integrieren, damit Sie Sachanlagen mit Wartungsanlagen verknüpfen können.
+description: In diesem Artikel wird erläutert, wie Sie die Module Anlagenverwaltung und Anlagevermögen integrieren, damit Sie Sachanlagen mit Wartungsanlagen verknüpfen können.
 author: johanhoffmann
 ms.date: 04/17/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 40e4fdce50b335668a53d2efe53b7cf6c66f364f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d5dfaaf9e4cd989ad6b993e8d152f4713c0d3aa4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567582"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874216"
 ---
 # <a name="integrate-asset-management-with-fixed-assets"></a>Anlagenverwaltung in Anlagen integrieren
 
@@ -26,7 +26,7 @@ ms.locfileid: "7567582"
 Indem Sie die Module **Anlagenverwaltung** und **Anlagevermögen** integrieren, können Sie Sachanlagen mit Wartungsanlagen verknüpfen. Benutzer von Anlagevermögen können dann ein Wartungsobjekt aus einem neuen oder vorhandenen Anlagevermögen erstellen, und Benutzer der Vermögensverwaltung können ein Wartungsobjekt einem vorhandenen Anlagevermögen zuordnen. Diese Funktion erleichtert es Benutzern von Anlagevermögen auch, die Kosten anzuzeigen, die aus Arbeitsaufträgen für zugehörige Wartungsanlagen gebucht wurden.
 
 > [!NOTE]
-> In diesem Thema bezeichnen *Wartungsanlagen* Vermögenswerte aus dem Modul **Anlagenverwaltung** und *Anlagevermögen* bezieht sich auf Vermögenswerte aus dem Modul **Anlagevermögen**.
+> In diesem Artikel bezeichnen *Wartungsanlagen* Vermögenswerte aus dem Modul **Anlagenverwaltung** und *Anlagevermögen* bezieht sich auf Vermögenswerte aus dem Modul **Anlagevermögen**.
 
 ## <a name="set-a-default-location-for-new-maintenance-assets-that-are-created-from-fixed-assets-optional"></a>Legen Sie einen Standardspeicherort für neue Wartungsressourcen fest, die aus dem Anlagevermögen erstellt werden (optional).
 

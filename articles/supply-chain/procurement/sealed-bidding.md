@@ -1,6 +1,6 @@
 ---
 title: Versiegeltes Angebot für Angebotsanforderungen
-description: In diesem Thema wird beschrieben, wie Sie versiegelte Angebote einrichten, um die Angebotsantworten von Kreditoren geheim zu halten, bis die Versiegelung vom Einkaufspersonal aufgehoben wird.
+description: In diesem Artikel wird beschrieben, wie Sie versiegelte Angebote einrichten, um die Angebotsantworten von Kreditoren geheim zu halten, bis die Versiegelung vom Einkaufspersonal aufgehoben wird.
 author: GalynaFedorova
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: dfc19646d6724627c8a25bcfc8a6b2a70a73c261
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 40f1735d7efa5131b1462963758b6b48eec78fea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675148"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890885"
 ---
 # <a name="sealed-bidding-for-rfqs"></a>Versiegeltes Angebot für Angebotsanforderungen
 
@@ -148,7 +148,7 @@ Der Prozess zum Erstellen eines Angebotsanforderungfalls für versiegelte Angebo
 Angebotsanforderungsfälle für versiegelte Angebote müssen den **Angebotstyp** *Versiegelt* haben. Es gibt drei Möglichkeiten, diesen Wert einem Angebotsanforderungsfall zuzuweisen:
 
 - Legen Sie den Wert direkt im Angebotsanforderungsfall fest, nachdem Sie ihn erstellt haben.
-- Legen Sie versiegelte Angebote als Standardangebotstyp für alle Angebotsanforderungsfälle in Beschaffungsparametern fest. (Siehe Abschnitt [Standardangebotstyp festlegen](#set-default-bid-type) weiter oben in diesem Thema.)
+- Legen Sie versiegelte Angebote als Standardangebotstyp für alle Angebotsanforderungsfälle in Beschaffungsparametern fest. (Siehe Abschnitt [Standardangebotstyp festlegen](#set-default-bid-type) weiter oben in diesem Artikel.)
 - Wenn Sie einen neuen Angebotsanforderungsfall erstellen, wählen Sie einen Anforderungstyp aus, für den versiegelte Angebote eingerichtet sind. (Siehe Abschnitt [Standardangebotstyp festlegen](#set-default-bid-type).)
 
 Für versiegelte Angebote legt der Wert **Ablaufdatum und -uhrzeit** des Angebotsanforderungsfalls fest, wann die Versiegelung der abgegebenen Angebote aufgehoben werden kann. Der Wert **Ablaufdatum und -uhrzeit** in jeder Position entspricht dem Wert in der Kopfzeile.

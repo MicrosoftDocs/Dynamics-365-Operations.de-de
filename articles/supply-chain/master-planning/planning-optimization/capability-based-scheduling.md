@@ -1,6 +1,6 @@
 ---
 title: Planung mit Ressourcenauswahl basierend auf Fähigkeiten
-description: In diesem Thema wird die Ressourcenauswahl während der Planung mit unbegrenzter Kapazität beschrieben, wenn Sie Fähigkeiten als Ressourcenanforderungen für einen Vorgang angeben.
+description: In diesem Artikel wird die Ressourcenauswahl während der Planung mit unbegrenzter Kapazität beschrieben, wenn Sie Fähigkeiten als Ressourcenanforderungen für einen Vorgang angeben.
 author: t-benebo
 ms.date: 9/3/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: d1ecdfdbdd605fca953e799ec3f6a82d244bc9f7
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 26b2b65a2d565052b188f4d70f0cc0a773cd7b43
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469784"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847961"
 ---
 # <a name="scheduling-with-resource-selection-based-on-capability"></a>Planung mit Ressourcenauswahl basierend auf Fähigkeiten
 
 [!include [banner](../../includes/banner.md)]
 
-Indem Sie die Ressourcenanforderungen für einen Vorgang eines Produktionsarbeitsplans angeben, definieren Sie, was für die Ausführung dieses Vorgangs erforderlich ist. Ein Vorgang kann beispielsweise eine bestimmte Ressource oder eine Ressourcengruppe oder eine Kombination von Fähigkeiten erfordern. In diesem Thema wird die Ressourcenauswahl während der Planung mit unbegrenzter Kapazität beschrieben, wenn Sie Fähigkeiten als Ressourcenanforderungen für einen Vorgang angeben.
+Indem Sie die Ressourcenanforderungen für einen Vorgang eines Produktionsarbeitsplans angeben, definieren Sie, was für die Ausführung dieses Vorgangs erforderlich ist. Ein Vorgang kann beispielsweise eine bestimmte Ressource oder eine Ressourcengruppe oder eine Kombination von Fähigkeiten erfordern. In diesem Artikel wird die Ressourcenauswahl während der Planung mit unbegrenzter Kapazität beschrieben, wenn Sie Fähigkeiten als Ressourcenanforderungen für einen Vorgang angeben.
 
 ## <a name="turn-on-the-capability-based-scheduling-feature"></a>Die fähigkeitsbasierte Planungsfunktion aktivieren
 

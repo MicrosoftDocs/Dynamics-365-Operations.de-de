@@ -1,6 +1,6 @@
 ---
 title: 'Mischplanung: Kombinieren Sie eigenständige, Prozess- und Lean-Beschaffung'
-description: Dieses Thema enthält Informationen zum gemischten Planungsmodus.
+description: Dieser Artikel enthält Informationen zum gemischten Planungsmodus.
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a199d5ac7633aba894ffbc17db015100ae93d895
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 186dcdca9d6db5ca16d84f084c66700ddfe8bb5d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566766"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857430"
 ---
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Mischplanung: Kombinieren Sie eigenständige, Prozess- und Lean-Beschaffung
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Informationen zum gemischten Planungsmodus. In im gemischten Planungsmodus können Sie Ihre Lieferkette basierend auf dem Materialfluss modellieren. Dynamics 365 Supply Chain Management stellt sicher, dass der Materialfluss Ihren Modellen folgt, unabhängig von der Zubehörrichtlinie, die ausgewählt wird (Kanbans, Produktionsaufträge, Bestellungen, Chargenaufträge oder Umlagerungsaufträge). 
+Dieser Artikel enthält Informationen zum gemischten Planungsmodus. In im gemischten Planungsmodus können Sie Ihre Lieferkette basierend auf dem Materialfluss modellieren. Dynamics 365 Supply Chain Management stellt sicher, dass der Materialfluss Ihren Modellen folgt, unabhängig von der Zubehörrichtlinie, die ausgewählt wird (Kanbans, Produktionsaufträge, Bestellungen, Chargenaufträge oder Umlagerungsaufträge). 
 
 Sie können die allgemeine Strategie für das Beschaffen eines Produkts unabhängig von der Produktstruktur auswählen.  
 

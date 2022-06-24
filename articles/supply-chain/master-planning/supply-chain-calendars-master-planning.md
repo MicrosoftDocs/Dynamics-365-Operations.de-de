@@ -1,7 +1,7 @@
 ---
 title: Kalender und Produktprogrammplanung
-description: Dieses Thema gibt einen Überblick über die Kalender der Lieferkette und deren Auswirkungen auf die Masterplanung.
-author: ChristianRytt
+description: Dieser Artikel gibt einen Überblick über die Kalender der Lieferkette und deren Auswirkungen auf die Masterplanung.
+author: t-benebo
 ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
@@ -14,18 +14,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f424a2a050f917be2f0823c35ee2a47b4dd5cd0a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 182c22a77e73573b4e27a81f80debf67242b95c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568614"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890972"
 ---
 # <a name="calendars-and-master-planning"></a>Kalender und Produktprogrammplanung
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema gibt einen Überblick über die Kalender der Lieferkette und deren Auswirkungen auf die Masterplanung.  Die verschiedenen Kalender, die im Produktprogrammpan-Modul verwendet werden, werden erläutert, einschließlich ihrer Auswirkungen auf die Versand- und Zugangsdatumsangaben in den Planaufträgen. Abschließend werden Empfehlungen zur Zuordnung, Verwendung und Aktualisierung der Kalender gegeben.
+Dieser Artikel gibt einen Überblick über die Kalender der Lieferkette und deren Auswirkungen auf die Masterplanung.  Die verschiedenen Kalender, die im Produktprogrammpan-Modul verwendet werden, werden erläutert, einschließlich ihrer Auswirkungen auf die Versand- und Zugangsdatumsangaben in den Planaufträgen. Abschließend werden Empfehlungen zur Zuordnung, Verwendung und Aktualisierung der Kalender gegeben.
 
 ## <a name="definition-of-a-calendar"></a>Definition eines Kalenders
 

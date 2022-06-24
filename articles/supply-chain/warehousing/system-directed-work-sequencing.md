@@ -1,6 +1,6 @@
 ---
 title: Systemgeleitete Arbeitsabfolgen
-description: Dieses Thema enthält Informationen zu systemgeleiteten Arbeitsabfolgen. Mit dieser Funktion können Sie die Arbeitsaufträge sortieren und filtern, die das System den Benutzern zur Ausführung vorlegt. Dies ist hilfreich in Szenarien, in denen zusätzliche Kriterien erforderlich sind, um den Lagerkommissioniervorgang voranzutreiben.
+description: Dieser Artikel enthält Informationen zu systemgeleiteten Arbeitsabfolgen. Mit dieser Funktion können Sie die Arbeitsaufträge sortieren und filtern, die das System den Benutzern zur Ausführung vorlegt. Dies ist hilfreich in Szenarien, in denen zusätzliche Kriterien erforderlich sind, um den Lagerkommissioniervorgang voranzutreiben.
 author: Mirzaab
 ms.date: 07/03/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: b433787f330de3634c59f7b1b2babfe07e3bdf09
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8dfa7d8e3bdbfd74c6f95d8b79ac1b0698f73bd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577815"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849125"
 ---
 # <a name="system-directed-work-sequencing"></a>Systemgeleitete Arbeitsabfolgen
 
@@ -44,7 +44,7 @@ Bevor Sie die Funktion für systemgeleitete Arbeitsabfolgen verwenden können, m
 
 ### <a name="make-demo-data-available"></a>Demodaten zur Verfügung stellen
 
-Um das Szenario mithilfe der in diesem Thema dargestellten Werte zu bearbeiten, müssen Sie auf einem System arbeiten, auf dem die Standarddemodaten installiert sind. Außerdem müssen Sie die **USMF** juristische Person auswählen. Das Szenario verwendet Lagerort *51* aus den Demodaten.
+Um das Szenario mithilfe der in diesem Artikel dargestellten Werte zu bearbeiten, müssen Sie auf einem System arbeiten, auf dem die Standarddemodaten installiert sind. Außerdem müssen Sie die **USMF** juristische Person auswählen. Das Szenario verwendet Lagerort *51* aus den Demodaten.
 
 > [!IMPORTANT]
 > Bevor Sie die Aufträge für den Lagerort freigeben, stellen Sie sicher, dass die Kommissionierstellen über genügend Lagerbestand für alle Artikel in den Aufträgen verfügen.

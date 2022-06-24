@@ -1,8 +1,8 @@
 ---
 title: Installieren Sie das Inventory Visibility Add-In
-description: In diesem Thema wird beschrieben, wie Sie das Bestandssichtbarkeit-Add-In für Microsoft Dynamics 365 Supply Chain Management installieren.
+description: In diesem Artikel wird beschrieben, wie Sie das Bestandssichtbarkeit-Add-In für Microsoft Dynamics 365 Supply Chain Management installieren.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,23 +11,23 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a49f35211f30cdb76104cc5be78f5b114320a228
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: ce81ed2ed79bfe5c7fff9724e14af150817af11f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062649"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895698"
 ---
-# <a name="install-and-set-up-inventory-visibility"></a>Bestandsanzeige installieren und einrichten
+# <a name="install-and-set-up-inventory-visibility"></a>Inventory Visibility installieren und einrichten
 
 [!include [banner](../includes/banner.md)]
 
+In diesem Artikel wird beschrieben, wie Sie das Bestandssichtbarkeit-Add-In für Microsoft Dynamics 365 Supply Chain Management installieren.
 
-In diesem Thema wird beschrieben, wie Sie das Bestandssichtbarkeit-Add-In für Microsoft Dynamics 365 Supply Chain Management installieren.
+Sie müssen Microsoft Dynamics Lifecycle Services (LCS) verwenden, um das Bestandssichtbarkeit-Add-In zu installieren. LCS ist ein Portal für die Zusammenarbeit, das eine Umgebung und eine Reihe von regelmäßig aktualisierten Diensten bereitstellt, die Sie bei der Verwaltung des Anwendungslebenszyklus Ihrer Apps für Finanzen und Vorgänge unterstützen. Weitere Informationen finden Sie unter [Ressourcen für Lifecycle Services](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
-Sie müssen Microsoft Dynamics Lifecycle Services (LCS) verwenden, um das Bestandssichtbarkeit-Add-In zu installieren. LCS ist ein Portal für die Zusammenarbeit, das eine Umgebung und eine Reihe von regelmäßig aktualisierten Diensten bereitstellt, die Sie bei der Verwaltung des Anwendungslebenszyklus Ihrer Apps für Finanzen und Vorgänge unterstützen.
-
-Weitere Informationen finden Sie unter [Ressourcen für Lifecycle Services](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
+> [!TIP]
+> Wir empfehlen Ihnen, der Benutzergruppe des Bestandsanzeige-Add-Ins beizutreten, wo Sie nützliche Anleitungen finden, unsere neuesten Updates erhalten und Fragen zur Verwendung von Bestandsanzeige stellen können. Um beizutreten, senden Sie bitte eine E-Mail an das Produktteam der Bestandsanzeige unter [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) und geben Sie Ihre Supply Chain Management-Umgebungs-ID an.
 
 ## <a name="inventory-visibility-prerequisites"></a>Voraussetzungen für Inventory Visibility
 
@@ -44,6 +44,9 @@ Wenn Sie Fragen zu diesen Voraussetzungen haben, wenden Sie sich an das Inventor
 ## <a name="install-the-inventory-visibility-add-in"></a><a name="install-add-in"></a>Installieren Sie das Inventory Visibility Add-In
 
 Bevor Sie das Add-In installieren, registrieren Sie eine Anwendung und fügen Sie ein Client-Geheimnis zu Azure Active Directory (Azure AD) unter Ihrem Azure-Abonnement hinzu. Anweisungen finden Sie unter [Registrieren einer Anwendung](/azure/active-directory/develop/quickstart-register-app) und [Hinzufügen eines Client-Geheimnisses](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). Notieren Sie sich unbedingt die Werte **Anwendungs-(Client-)ID**, **Client-Geheimnis** und **Mandanten-ID**, da Sie diese später noch benötigen werden.
+
+> [!IMPORTANT]
+> Wenn Sie mehr als eine LCS-Umgebung haben, erstellen Sie für jede andere eine andere Azure AD-Anwendung. Wenn Sie dieselbe Anwendungs-ID und Mandanten-ID verwenden, um das Bestandsanzeige-Add-In für verschiedene Umgebungen zu installieren, tritt in älteren Umgebungen ein Tokenproblem auf. Als Resultat ist nur die letzte Installation gültig.
 
 Nachdem Sie eine Anwendung registriert und ein Client-Geheimnis zu Azure AD hinzugefügt haben, folgen Sie diesen Schritten, um das Bestandssichtbarkeit-Add-In zu installieren.
 
@@ -72,11 +75,18 @@ Nachdem Sie eine Anwendung registriert und ein Client-Geheimnis zu Azure AD hinz
 1. Wählen Sie **Installieren**. Der Status des Add-Ins wird als **Installation** angezeigt. Wenn die Installation abgeschlossen ist, aktualisieren Sie die Seite. Der Status sollte sich auf **Installiert** ändern.
 1. Wählen Sie in Dataverse den Abschnitt **Apps** Abschnitt im linken Navigationsbereich aus, und stellen Sie die erfolgreiche Installation von **Bestandsanzeige**-Power Apps sicher. Wenn der Abschnitt **Apps** nicht vorhanden ist, wenden Sie sich an das Produktteam für Bestandsanzeige unter [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
 
-> [!TIP]
-> Wir empfehlen Ihnen, der Benutzergruppe des Bestandsanzeige-Add-Ins beizutreten, wo Sie nützliche Anleitungen finden, unsere neuesten Updates erhalten und Fragen zur Verwendung von Bestandsanzeige stellen können. Um beizutreten, senden Sie bitte eine E-Mail an das Produktteam der Bestandsanzeige unter [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) und geben Sie Ihre Supply Chain Management-Umgebungs-ID an.
-
-> [!IMPORTANT]
-> Wenn Sie mehr als eine LCS-Umgebung haben, erstellen Sie für jede Umgebung eine andere Azure AD-Anwendung. Wenn Sie dieselbe Anwendungs-ID und Mandanten-ID verwenden, um das Bestandsanzeige-Add-In für verschiedene Umgebungen zu installieren, tritt in älteren Umgebungen ein Tokenproblem auf. Nur die zuletzt installierte Version ist gültig.
+> [!NOTE]
+> Wenn die Installation von der LCS-Seite mehr als eine Stunde dauert, fehlt Ihrem Benutzerkonto wahrscheinlich die Berechtigung zum Installieren von Lösungen in der Dataverse-Umgebung. Führen Sie die folgenden Schritte aus, um das Problem zu beheben:
+>
+> 1. Brechen Sie den Installationsprozess für das Bestandsanzeige-Add-In auf der LCS-Seite ab.
+> 1. Melden Sie sich an [Microsoft 365 Admin Center](https://admin.microsoft.com) und stellen Sie sicher, dass das Benutzerkonto, das Sie zum Installieren des Add-Ins verwenden möchten, über die Erweiterung „Dynamics 365 Unified Operations Plan"-Lizenz zugewiesen ist. Weisen Sie die Lizenz bei Bedarf zu.
+> 1. Melden Sie sich an [Power Platform Admin Center](https://admin.powerplatform.microsoft.com) über das entsprechende Benutzerkonto. Installieren Sie dann das Inventory Visibility Add-In folgendermaßen:
+>     1. Wählen Sie die Umgebung, in der Sie das Add-In installieren möchten.
+>     1. Wählen Sie **Dynamics 365 Apps**
+>     1. Wählen Sie **App installieren**.
+>     1. Wählen Sie **Bestandsanzeige**.
+>
+> 1. Gehen Sie nach Abschluss der Installation zurück zur LCS-Seite und versuchen Sie erneut, das **Bestandsanzeige**-Add-In neu zu installieren.
 
 ## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>Deinstallieren des Inventory Visibility-Add-Ins
 

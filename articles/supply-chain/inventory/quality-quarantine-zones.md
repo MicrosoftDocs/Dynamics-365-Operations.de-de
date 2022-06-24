@@ -1,6 +1,6 @@
 ---
 title: Quarantänezonen für Qualitätsmängel
-description: Dieses Thema beschreibt, wie Sie Quarantänezonen für Qualitätsmängel erstellen und verwenden.
+description: Dieser Artikel beschreibt, wie Sie Quarantänezonen für Qualitätsmängel erstellen und verwenden.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 207950a2ff4057853488f75d0e302a049d228b76
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2e556d2aa078a76ff4f81b6763535c38ce1cca0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578463"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857705"
 ---
 # <a name="quarantine-zones-for-nonconformances"></a>Quarantänezonen für Qualitätsmängel
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema beschreibt, wie Sie Quarantänezonen für Qualitätsmängel erstellen und verwenden.
+Dieser Artikel beschreibt, wie Sie Quarantänezonen für Qualitätsmängel erstellen und verwenden.
 
 Sie verwenden die Seite **Quarantänezonen**, um Zonen zu definieren, die Qualitätsmängeln zugeordnet werden können. Wenn Sie einen Qualitätsmangel erstellen, können Sie die Felder **Quarantänezone** und **Quarantänetyp** auf der Registerkarte **Allgemein** der Seite **Nichtkonformitäten** festlegen. Das Feld **Quarantänezone** gibt normalerweise den Bereich oder Lagerplatz an, in dem sich das Element befindet. Das Feld **Quarantänetyp** definiert das Element entweder als *Eingeschränkte Verwendung* oder *Unverwendbar*.
 

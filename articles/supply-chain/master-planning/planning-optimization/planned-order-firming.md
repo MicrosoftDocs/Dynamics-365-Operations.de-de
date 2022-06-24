@@ -1,6 +1,6 @@
 ---
 title: Fest geplante Aufträge
-description: Dieses Thema erklärt, wie Sie geplanter Aufträge umwandeln können. Wenn geplante Aufträge umgewandelt werden, werden sie zu tatsächlichen Kaufbestellungen, Transportaufträgen oder Produktionsaufträgen.
+description: Dieser Artikel erklärt, wie Sie geplanter Aufträge umwandeln können. Wenn geplante Aufträge umgewandelt werden, werden sie zu tatsächlichen Kaufbestellungen, Transportaufträgen oder Produktionsaufträgen.
 author: t-benebo
 ms.date: 04/22/2021
 ms.search.form: ReqTransPo, ReqTransFirmLog
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 30f3ee656b97e0337b6e3e78f0acb2300d7d85dc
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 24b5c6cb7e97924ebace8f7131a87e9bffea22e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468467"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857517"
 ---
 # <a name="firm-planned-orders"></a>Fest geplante Aufträge
 
@@ -29,11 +29,11 @@ Es gibt drei Methoden zur Umwandlung geplanter Aufträge:
 - **Automatische Umwandlung** – Definieren Sie einen standardmäßigen Zeitrahmen für die Umwandlung für Erfassungsgruppen, einzelne Elemente und Kombinationen von Elementen und Produktprogrammplanungen. Dann werden bei der Produktprogrammplanung die geplanten Aufträge automatisch fixiert, wenn das Auftragsdatum innerhalb des angegebenen Zeitfensters für die Fixierung liegt.
 - **Query-basierte Umwandlung** – Definieren Sie eine Abfrage, um geplanter Aufträge basierend auf ihren Eigenschaften auszuwählen. Sie können einen Batchauftrag festlegen, um die Abfrage auszuführen und übereinstimmende Aufträge nach einem regelmäßigen Zeitplan festzulegen.
 
-Dieses Thema beschreibt jede Methode im Detail.
+Dieser Artikel beschreibt jede Methode im Detail.
 
-## <a name="enable-the-features-that-are-described-in-this-topic"></a><a name="enable-features"></a>Aktivieren Sie die Funktionen, die in diesem Thema beschrieben werden
+## <a name="enable-the-features-that-are-described-in-this-article"></a><a name="enable-features"></a>Aktivieren Sie die Funktionen, die in diesem Artikel beschrieben werden
 
-Die meisten Funktionen für geplante Aufträge sind in allen Standardinstallationen von Microsoft Dynamics 365 Supply Chain Management verfügbar, die die Planungsoptimierung verwenden. Einige der Funktionen, die in diesem Thema beschrieben werden, müssen jedoch in der Funktionsverwaltung eingeschaltet werden, bevor Sie sie verwenden können.
+Die meisten Funktionen für geplante Aufträge sind in allen Standardinstallationen von Microsoft Dynamics 365 Supply Chain Management verfügbar, die die Planungsoptimierung verwenden. Einige der Funktionen, die in diesem Artikel beschrieben werden, müssen jedoch in der Funktionsverwaltung eingeschaltet werden, bevor Sie sie verwenden können.
 
 ### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Parallelisierte Umwandlung geplanter Aufträge an- oder ausschalten
 
@@ -97,7 +97,7 @@ Mit der automatischen Fixierung können Sie geplanter Aufträge als Teil der Pro
 > Abgeleitete Aufträge (d.h. Einkaufsbestellungen von Unterlieferanten), die umgewandelt werden, haben den Status *In-Prüfung*, wenn die Änderungsverfolgung eingeschaltet ist.
 
 > [!IMPORTANT]
-> Bevor die in diesem Abschnitt beschriebene Funktion mit der Planungsoptimierung verwendet werden kann, muss die [Funktion *Automatische Umwandlung für Planungsoptimierung*](#enable-features) in Ihrem System aktiviert sein, wie am Anfang dieses Themas beschrieben. Die automatische Umwandlung kann immer mit der integrierten Produktprogrammplanung verwendet werden.
+> Bevor die in diesem Abschnitt beschriebene Funktion mit der Planungsoptimierung verwendet werden kann, muss die [Funktion *Automatische Umwandlung für Planungsoptimierung*](#enable-features) in Ihrem System aktiviert sein, wie am Anfang dieses Artikels beschrieben. Die automatische Umwandlung kann immer mit der integrierten Produktprogrammplanung verwendet werden.
 
 ### <a name="auto-firming-with-planning-optimization-vs-the-built-in-planning-engine"></a>Automatische Umwandlung mit Planungsoptimierung vs. die integrierte Planungs-Engine
 
@@ -130,7 +130,7 @@ Mit der abfragebasierten Umwandlung können Sie die Umwandlung auf der Basis von
 Sie können die automatische Umwandlung mit der abfragebasierten Umwandlung kombinieren. Zum Beispiel hat ein abfragebasierter Umwandlungsauftrag einen Forward Time Fence, der länger ist als der Time Fence für eine passende Konfiguration der automatischen Umwandlung. Daher wird der abfragebasierte Umwandlungsauftrag seine geplanten Aufträge verarbeiten, bevor die automatische Umwandlung ausgelöst wird. Sie können dieses Verhalten nutzen, um Aufträge für bestimmte Kreditor anders zu planen als Aufträge für ähnliche Produkte von anderen Kreditor.
 
 > [!IMPORTANT]
-> Bevor die in diesem Abschnitt beschriebene Funktion verwendet werden kann, muss die [Funktion *Geplante Aufträge umwandeln mit Filterung*](#enable-features) in Ihrem System eingeschaltet sein, wie zu Beginn dieses Themas beschrieben.
+> Bevor die in diesem Abschnitt beschriebene Funktion verwendet werden kann, muss die [Funktion *Geplante Aufträge umwandeln mit Filterung*](#enable-features) in Ihrem System eingeschaltet sein, wie zu Beginn dieses Artikels beschrieben.
 
 Um einen geplanten Auftrag mit Hilfe der abfragebasierten Umwandlung zu fixieren, gehen Sie wie folgt vor.
 

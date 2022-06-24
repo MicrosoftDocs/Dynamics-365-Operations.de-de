@@ -1,6 +1,6 @@
 ---
 title: Übersicht über die Fiskalintegration für Commerce-Kanäle
-description: Dieses Thema bietet einen Überblick der Steuerintegrationsfunktionen, die in Dynamics 365 Commerce verfügbar sind.
+description: Dieser Artikel bietet einen Überblick der Steuerintegrationsfunktionen, die in Dynamics 365 Commerce verfügbar sind.
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 00c68155088ff2aabbe2fe0c4f431b665aebcd0a
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: ea1de0791a0eaffa2a8b1ac57143bdfd753f855b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462522"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884843"
 ---
 # <a name="fiscal-integration-overview-for-commerce-channels"></a>Übersicht über die Fiskalintegration für Commerce-Kanäle
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema bietet einen Überblick der Steuerintegrationsfunktionen, die in Dynamics 365 Commerce verfügbar sind. 
+Dieser Artikel bietet einen Überblick der Steuerintegrationsfunktionen, die in Dynamics 365 Commerce verfügbar sind. 
 
 Die Steuerintegration enthält die Integration in unterschiedliche steuerbezogene Geräte und Dienste, die Benutzern die Steuerregistrierung von Verkäufen entsprechend lokaler Steuergesetze zur Verhinderung von Steuerhinterziehung im Einzelhandel ermöglicht. Nachfolgend einige typische Szenarien, die erfasst werden können, indem die Steuerintegration verwendet wird:
 

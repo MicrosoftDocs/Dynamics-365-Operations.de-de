@@ -1,6 +1,6 @@
 ---
 title: Verwalten von Abzügen mit der Abzugsworkbench
-description: In diesem Thema wird beschrieben, wie die Abzugsworkbench verwendet wird, sodass Sie Debitorenzahlungen verarbeiten können, die Abzüge enthalten.
+description: In diesem Artikel wird beschrieben, wie die Abzugsworkbench verwendet wird, sodass Sie Debitorenzahlungen verarbeiten können, die Abzüge enthalten.
 author: sherry-zheng
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,23 +11,23 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: bf98529176fbed368708ea925f542a70f2936037
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 607ad528b56d1f0c9a78e113f67c920cdae6e620
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500401"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873607"
 ---
 # <a name="manage-deductions-using-the-deduction-workbench"></a>Verwalten von Abzügen mit der Abzugsworkbench
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie die Abzugsworkbench verwendet wird, sodass Sie Debitorenzahlungen verarbeiten können, die Abzüge enthalten.
+In diesem Artikel wird beschrieben, wie die Abzugsworkbench verwendet wird, sodass Sie Debitorenzahlungen verarbeiten können, die Abzüge enthalten.
 
 Ein Debitor, dem eine Rückvergütung geschuldet wird, kann sich entscheiden, nicht auf eine Rückvergütungsauszahlung zu warten. Stattdessen kann der Debitor eine Zahlung senden, die einen Abzug für den Betrag der Rückvergütung umfasst. Um diesen Typ von Buchung zu verarbeiten, können Sie die Abzugsworkbench verwenden, um Abzüge mit offenen Habenbuchungen abzugleichen, Abzüge aufzuteilen, Abzüge zu verweigern und Abzüge abzuschreiben.
 
 > [!NOTE]
-> Die Abzugsworkbench war lange Zeit Teil der Vertriebs- und Marketingfunktionalität in Microsoft Dynamics 365 Supply Chain Management. Sie wurde jedoch jetzt so erweitert, dass sie auch mit dem neueren Modul **Rückvergütungsverwaltung** funktioniert. In diesem Thema wird beschrieben, wie Sie sowohl ältere Funktionen als auch die Rückvergütungsverwaltungsfunktionen der Abzugsworkbench verwenden. Wenn Sie jedoch [das Modul **Rückvergütungsverwaltung** noch nicht für Ihr System](rebate-management-enable.md) aktiviert haben, stehen Ihnen einige der hier beschriebenen Funktionen nicht zur Verfügung.
+> Die Abzugsworkbench war lange Zeit Teil der Vertriebs- und Marketingfunktionalität in Microsoft Dynamics 365 Supply Chain Management. Sie wurde jedoch jetzt so erweitert, dass sie auch mit dem neueren Modul **Rückvergütungsverwaltung** funktioniert. In diesem Artikel wird beschrieben, wie Sie sowohl ältere Funktionen als auch die Rückvergütungsverwaltungsfunktionen der Abzugsworkbench verwenden. Wenn Sie jedoch [das Modul **Rückvergütungsverwaltung** noch nicht für Ihr System](rebate-management-enable.md) aktiviert haben, stehen Ihnen einige der hier beschriebenen Funktionen nicht zur Verfügung.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -159,11 +159,11 @@ Um einen neuen Abzug in der Abzugsworkbench zu erstellen, folgen Sie diesen Schr
         - *Mengenbasiert*: Ein negativer Auftrag oder eine Rücklieferung wird erstellt.
 
     - **Anspruchsdatum**: Wählen Sie das Datum des Anspruchs. Der aktuelle Wert ist das aktuelle Datum.
-    - **Anspruchsursache**: Wählen Sie den Ursachencode aus, der für den aktuellen Abzug gilt. Die von Ihnen ausgewählte Anspruchsgrundlage wirkt sich darauf aus, welche Optionen gelten. Weitere Informationen zum Erstellen und Konfigurieren der hier zur Auswahl stehenden Anspruchsursachen finden Sie im Abschnitt [Abzugsgründe erstellen](#deduction-reasons) weiter oben in diesem Thema.
+    - **Anspruchsursache**: Wählen Sie den Ursachencode aus, der für den aktuellen Abzug gilt. Die von Ihnen ausgewählte Anspruchsgrundlage wirkt sich darauf aus, welche Optionen gelten. Weitere Informationen zum Erstellen und Konfigurieren der hier zur Auswahl stehenden Anspruchsursachen finden Sie im Abschnitt [Abzugsgründe erstellen](#deduction-reasons) weiter oben in diesem Artikel.
     - **Hinweise**: Fügen Sie alle zutreffenden Hinweise hinzu. Wenn der Anspruch genehmigt wurde, kann die genehmigende Person die Hinweise des Anspruchs bearbeiten oder ergänzen.
     - **Anspruchsjournal erstellen**: Setzen Sie in dieser Option fest, ob das Anspruchsjournal erstellt werden soll, wenn der Anspruch oder Abzug erstellt wird:
 
-        - *Ja*: Das System erstellt und veröffentlicht ein allgemeines Journal mithilfe des Anspruchsjournals, das auf der Seite **Debitorenparameter** eingerichtet ist. (Weitere Informationen finden Sie im Abschnitt [Debitoren und Abzüge konfigurieren](#accounts-receivable-deductions) weiter oben in diesem Thema.) Wenn dem Anspruch eine Rechnung zugeordnet ist, wird das Anspruchsjournal verwendet, um den Saldo der entsprechenden Rechnung zu reduzieren. Wird der Anspruch später abgelehnt, werden das Anspruchsjournal und die Ausgleiche (sofern eine Rechnung zugeordnet wurde) storniert.
+        - *Ja*: Das System erstellt und veröffentlicht ein allgemeines Journal mithilfe des Anspruchsjournals, das auf der Seite **Debitorenparameter** eingerichtet ist. (Weitere Informationen finden Sie im Abschnitt [Debitoren und Abzüge konfigurieren](#accounts-receivable-deductions) weiter oben in diesem Artikel.) Wenn dem Anspruch eine Rechnung zugeordnet ist, wird das Anspruchsjournal verwendet, um den Saldo der entsprechenden Rechnung zu reduzieren. Wird der Anspruch später abgelehnt, werden das Anspruchsjournal und die Ausgleiche (sofern eine Rechnung zugeordnet wurde) storniert.
         - *Nein*: Zu diesem Zeitpunkt wird kein Anspruchsjournal erstellt. Es wird erstellt, wenn der Anspruch genehmigt wurde. Eine Rechnung kann weiterhin dem neuen Anspruch zugeordnet werden, auch wenn kein Anspruchsjournal erstellt wird. Der Ausgleich kann jedoch nicht ohne das Anspruchsjournal erfolgen.
 
 1. Wählen Sie **OK** aus.
@@ -197,11 +197,11 @@ Der Prozess des Erstellens eines Abzugs aus einem Debitorenausgleich ähnelt dem
         - *Mengenbasiert*: Ein negativer Auftrag oder eine Rücklieferung wird erstellt.
 
     - **Anspruchsdatum**: Wählen Sie das Datum des Anspruchs. Der aktuelle Wert ist das aktuelle Datum.
-    - **Anspruchsursache**: Wählen Sie den Ursachencode aus, der für den aktuellen Abzug gilt. Die von Ihnen ausgewählte Anspruchsgrundlage wirkt sich darauf aus, welche Optionen gelten. Weitere Informationen zum Erstellen und Konfigurieren der hier zur Auswahl stehenden Anspruchsursachen finden Sie im Abschnitt [Abzugsgründe erstellen](#deduction-reasons) weiter oben in diesem Thema.
+    - **Anspruchsursache**: Wählen Sie den Ursachencode aus, der für den aktuellen Abzug gilt. Die von Ihnen ausgewählte Anspruchsgrundlage wirkt sich darauf aus, welche Optionen gelten. Weitere Informationen zum Erstellen und Konfigurieren der hier zur Auswahl stehenden Anspruchsursachen finden Sie im Abschnitt [Abzugsgründe erstellen](#deduction-reasons) weiter oben in diesem Artikel.
     - **Hinweise**: Fügen Sie alle zutreffenden Hinweise hinzu. Wenn der Anspruch genehmigt wurde, kann die genehmigende Person die Hinweise des Anspruchs bearbeiten oder ergänzen.
     - **Anspruchsjournal erstellen**: Setzen Sie in dieser Option fest, ob das Anspruchsjournal erstellt werden soll, wenn der Anspruch oder Abzug erstellt wird:
 
-        - *Ja*: Das System erstellt und veröffentlicht ein allgemeines Journal mithilfe des Anspruchsjournals, das auf der Seite **Debitorenparameter** eingerichtet ist. (Weitere Informationen finden Sie im Abschnitt [Debitoren und Abzüge konfigurieren](#accounts-receivable-deductions) weiter oben in diesem Thema.) Wenn dem Anspruch eine Rechnung zugeordnet ist, wird das Anspruchsjournal verwendet, um den Saldo der entsprechenden Rechnung zu reduzieren. Wird der Anspruch später abgelehnt, werden das Anspruchsjournal und die Ausgleiche (sofern eine Rechnung zugeordnet wurde) storniert.
+        - *Ja*: Das System erstellt und veröffentlicht ein allgemeines Journal mithilfe des Anspruchsjournals, das auf der Seite **Debitorenparameter** eingerichtet ist. (Weitere Informationen finden Sie im Abschnitt [Debitoren und Abzüge konfigurieren](#accounts-receivable-deductions) weiter oben in diesem Artikel.) Wenn dem Anspruch eine Rechnung zugeordnet ist, wird das Anspruchsjournal verwendet, um den Saldo der entsprechenden Rechnung zu reduzieren. Wird der Anspruch später abgelehnt, werden das Anspruchsjournal und die Ausgleiche (sofern eine Rechnung zugeordnet wurde) storniert.
         - *Nein*: Zu diesem Zeitpunkt wird kein Anspruchsjournal erstellt. Es wird erstellt, wenn der Anspruch genehmigt wurde. Eine Rechnung kann weiterhin dem neuen Anspruch zugeordnet werden, auch wenn kein Anspruchsjournal erstellt wird. Der Ausgleich kann jedoch nicht ohne das Anspruchsjournal erfolgen.
 
 1. Wählen Sie **OK** aus.
@@ -235,11 +235,11 @@ Der Prozess des Erstellens eines Abzugs aus einer Debitorenseite ähnelt dem Pro
         - *Mengenbasiert*: Ein negativer Auftrag oder eine Rücklieferung wird erstellt.
 
     - **Anspruchsdatum**: Wählen Sie das Datum des Anspruchs. Der aktuelle Wert ist das aktuelle Datum.
-    - **Anspruchsursache**: Wählen Sie den Ursachencode aus, der für den aktuellen Abzug gilt. Die von Ihnen ausgewählte Anspruchsgrundlage wirkt sich darauf aus, welche Optionen gelten. Weitere Informationen zum Erstellen und Konfigurieren der hier zur Auswahl stehenden Anspruchsursachen finden Sie im Abschnitt [Abzugsgründe erstellen](#deduction-reasons) weiter oben in diesem Thema.
+    - **Anspruchsursache**: Wählen Sie den Ursachencode aus, der für den aktuellen Abzug gilt. Die von Ihnen ausgewählte Anspruchsgrundlage wirkt sich darauf aus, welche Optionen gelten. Weitere Informationen zum Erstellen und Konfigurieren der hier zur Auswahl stehenden Anspruchsursachen finden Sie im Abschnitt [Abzugsgründe erstellen](#deduction-reasons) weiter oben in diesem Artikel.
     - **Hinweise**: Fügen Sie alle zutreffenden Hinweise hinzu. Wenn der Anspruch genehmigt wurde, kann die genehmigende Person die Hinweise des Anspruchs bearbeiten oder ergänzen.
     - **Anspruchsjournal erstellen**: Setzen Sie in dieser Option fest, ob das Anspruchsjournal erstellt werden soll, wenn der Anspruch oder Abzug erstellt wird:
 
-        - *Ja*: Das System erstellt und veröffentlicht ein allgemeines Journal mithilfe des Anspruchsjournals, das auf der Seite **Debitorenparameter** eingerichtet ist. (Weitere Informationen finden Sie im Abschnitt [Debitoren und Abzüge konfigurieren](#accounts-receivable-deductions) weiter oben in diesem Thema.) Wenn dem Anspruch eine Rechnung zugeordnet ist, wird das Anspruchsjournal verwendet, um den Saldo der entsprechenden Rechnung zu reduzieren. Wird der Anspruch später abgelehnt, werden das Anspruchsjournal und die Ausgleiche (sofern eine Rechnung zugeordnet wurde) storniert.
+        - *Ja*: Das System erstellt und veröffentlicht ein allgemeines Journal mithilfe des Anspruchsjournals, das auf der Seite **Debitorenparameter** eingerichtet ist. (Weitere Informationen finden Sie im Abschnitt [Debitoren und Abzüge konfigurieren](#accounts-receivable-deductions) weiter oben in diesem Artikel.) Wenn dem Anspruch eine Rechnung zugeordnet ist, wird das Anspruchsjournal verwendet, um den Saldo der entsprechenden Rechnung zu reduzieren. Wird der Anspruch später abgelehnt, werden das Anspruchsjournal und die Ausgleiche (sofern eine Rechnung zugeordnet wurde) storniert.
         - *Nein*: Zu diesem Zeitpunkt wird kein Anspruchsjournal erstellt. Es wird erstellt, wenn der Anspruch genehmigt wurde. Eine Rechnung kann weiterhin dem neuen Anspruch zugeordnet werden, auch wenn kein Anspruchsjournal erstellt wird. Der Ausgleich kann jedoch nicht ohne das Anspruchsjournal erfolgen.
 
 1. Wählen Sie **OK** aus.
@@ -280,7 +280,7 @@ Gehen Sie folgendermaßen vor, um einen Abzug mit einer Gutschrift abzugleichen.
 1. Wählen Sie im Aktivitätsbereich auf **Verwalten \> Abgleichen**. Das System ordnet den Abzug der Gutschrift zu. Wenn ein Saldo für den Abzug verbleibt, wird dieser im Feld **Verbleibender Betrag** auf der Registerkarte **Abzüge** angezeigt.
 
     > [!NOTE]
-    > Für Abzüge, die mit dem Befehl **Neuer Abzug** in der Abzugsworkbench, dem Debitorenausgleich oder der Debitorenseite erstellt wurden, steht der Befehl **Verwalten \> Abgleichen** nur zur Verfügung, wenn das Feld **Anspruchsstatus** auf *Akzeptiert* gesetzt ist. Mit diesem Befehl kann die preis- oder mengenbasierte Transaktion manuell der zugehörigen Gutschrift im Abschnitt **Offene Transaktionen** zugeordnet werden. Diese Gutschrift entsteht entweder bei der Genehmigung des Abzugs (durch Verwendung des Befehl **Verwalten \> Abzug genehmigen**) oder wenn er einer bestehenden Gutschrift zugeordnet wird, wie im Abschnitt [Außerhalb des Abzugsgenehmigungsprozesses erstellte Gutschriften](#credits-outside-approval) weiter unten beschrieben. Die periodische Aufgabe *Genehmigte Abzüge ausgleichen* (**Vertrieb und Marketing \> Periodische Aufgaben \> Genehmigte Abzüge ausgleichen**) kann auch verwendet werden, um Abzüge und Gutschriften automatisch auszugleichen, bei denen die **Abzugskennung**-Werte und Beträge übereinstimmen.
+    > Für Abzüge, die mit dem Befehl **Neuer Abzug** in der Abzugsworkbench, dem Debitorenausgleich oder der Debitorenseite erstellt wurden, steht der Befehl **Verwalten \> Abgleichen** nur zur Verfügung, wenn das Feld **Anspruchsstatus** auf *Akzeptiert* gesetzt ist. Mit diesem Befehl kann die preis- oder mengenbasierte Transaktion manuell der zugehörigen Gutschrift im Abschnitt **Offene Transaktionen** zugeordnet werden. Diese Gutschrift entsteht entweder bei der Genehmigung des Abzugs (durch Verwendung des Befehl **Verwalten \> Abzug genehmigen**) oder wenn er einer bestehenden Gutschrift zugeordnet wird, wie im Artikel [Außerhalb des Abzugsgenehmigungsprozesses erstellte Gutschriften](#credits-outside-approval) weiter unten beschrieben. Die periodische Aufgabe *Genehmigte Abzüge ausgleichen* (**Vertrieb und Marketing \> Periodische Aufgaben \> Genehmigte Abzüge ausgleichen**) kann auch verwendet werden, um Abzüge und Gutschriften automatisch auszugleichen, bei denen die **Abzugskennung**-Werte und Beträge übereinstimmen.
 
 ### <a name="split-a-deduction"></a>Einen Abzug teilen
 

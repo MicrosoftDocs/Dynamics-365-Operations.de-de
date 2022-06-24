@@ -1,6 +1,6 @@
 ---
 title: Modul zur Länder-/Regionsauswahl
-description: Dieses Thema behandelt das Modul zur Länder-/Regionsauswahl und beschreibt, wie es in Microsoft Dynamics 365 Commerce konfiguriert wird.
+description: Dieser Artikel behandelt das Modul zur Länder-/Regionsauswahl und beschreibt, wie es in Microsoft Dynamics 365 Commerce konfiguriert wird.
 author: stuharg
 ms.date: 04/06/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2021-08-12
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: 9c20e614053b7a79cf962990dbd13ca0f45d5a00
-ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
+ms.openlocfilehash: d20b3be008a37b1c86e6fefe0ccc90c581e18340
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8551669"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861991"
 ---
 # <a name="countryregion-picker-module"></a>Modul zur Länder-/Regionsauswahl
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema behandelt das Modul zur Länder-/Regionsauswahl und beschreibt, wie es in Microsoft Dynamics 365 Commerce konfiguriert wird.
+Dieser Artikel behandelt das Modul zur Länder-/Regionsauswahl und beschreibt, wie es in Microsoft Dynamics 365 Commerce konfiguriert wird.
 
 Das Modul zur Länder-/Regionsauswahl verwendet die Funktion [Geo-Erkennung und -Umleitung](geo-detection-redirection.md) in Dynamics 365 Commerce, um Kund\*innen Website-Empfehlungen anzuzeigen, die eine URL einer E-Commerce-Website anfordern, die nicht mit ihrem Land oder ihrer Region verknüpft ist.
 

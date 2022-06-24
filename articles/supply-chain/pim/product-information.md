@@ -1,6 +1,6 @@
 ---
 title: Produktinformationsübersicht
-description: Dieses Thema enthält Informationen zur Produktinformationsverwaltung. Die Produktinformationsverwaltung funktioniert mit einer freigegebenen Produktdefinition, Kategorisierung und Kennungen für alle juristischen Personen und auch bestimmte Konfigurationen eines Produkts, um Geschäftsprozessen gerecht zu werden.
+description: Dieser Artikel enthält Informationen zur Verwaltung von Produktinformationen. Die Produktinformationsverwaltung funktioniert mit einer freigegebenen Produktdefinition, Kategorisierung und Kennungen für alle juristischen Personen und auch bestimmte Konfigurationen eines Produkts, um Geschäftsprozessen gerecht zu werden.
 author: t-benebo
 ms.date: 06/01/2017
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c8aabeed66f864d1d1060a6452a3b554611c295
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: fa06e718d2acc44cfced7db842814c48fb210d1e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063315"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867868"
 ---
 # <a name="product-information-overview"></a>Produktinformationsübersicht
 
@@ -28,7 +28,7 @@ ms.locfileid: "8063315"
 
 
 
-Dieses Thema enthält Informationen zur Produktinformationsverwaltung. Die Produktinformationsverwaltung funktioniert mit einer freigegebenen Produktdefinition, Kategorisierung und Kennungen für alle juristischen Personen und auch bestimmte Konfigurationen eines Produkts, um Geschäftsprozessen gerecht zu werden. 
+Dieser Artikel enthält Informationen zur Verwaltung von Produktinformationen. Die Produktinformationsverwaltung funktioniert mit einer freigegebenen Produktdefinition, Kategorisierung und Kennungen für alle juristischen Personen und auch bestimmte Konfigurationen eines Produkts, um Geschäftsprozessen gerecht zu werden. 
 
 Produktinformationen sind die Grundlage von Lieferketten- und Handelsanwendungen in allen Branchen. Sie beziehen sich auf Prozesse und Technologien, die sich auf die zentrale Verwaltung von Informationen zu Produkten fokussieren (beispielsweise Lieferketten). Es ist wichtig, dass freigegebene Produktdefinitionen, Dokumentationen, Attribute, Kennungen verwendet werden. In den verschiedenen Modulen einer Geschäftslösung sind produktspezifische Informationen und Konfigurationen erforderlich, um die Geschäftsprozesse zu verwalten, die mit bestimmten Produkten, Produktkategorien oder Produktfamilien verknüpft sind.
 

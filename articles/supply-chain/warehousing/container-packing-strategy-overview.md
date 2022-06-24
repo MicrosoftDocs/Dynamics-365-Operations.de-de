@@ -1,6 +1,6 @@
 ---
 title: Container-Packstrategien
-description: Dieses Thema beschreibt die Unterschiede zwischen den Container-Packstrategien und gibt Beispiele.
+description: Dieser Artikel beschreibt die Unterschiede zwischen den Container-Packstrategien und gibt Beispiele.
 author: GalynaFedorova
 ms.date: 06/11/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ab34cee7fd495ec26f6b20da2aa43895f49f677c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 46b4a007dafbd99e5f9b7231c07a148f8101d2a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676382"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862365"
 ---
 # <a name="container-packing-strategies"></a>Container-Packstrategien
 
 [!include [banner](../includes/banner.md)]
 
-Eine *Behälter-Packstrategie* ist eine Strategie, die Sie verwenden können, um Element-Zuordnungen über Container hinweg zu definieren. In diesem Thema werden die Unterschiede zwischen den Strategien *Packen in alle offenen Container* und *Nur in den aktuellen Container packen* erläutert.
+Eine *Behälter-Packstrategie* ist eine Strategie, die Sie verwenden können, um Element-Zuordnungen über Container hinweg zu definieren. In diesem Artikel werden die Unterschiede zwischen den Strategien *Packen in alle offenen Container* und *Nur in den aktuellen Container packen* erläutert.
 
 - **In alle offenen Container packen** – Das System muss alle offenen Container prüfen, die während des Containerisierungszyklus bereits erstellt wurden, um sicherzustellen, dass das Element in einen von ihnen passt. Während des Packens prüft das System jedes Element, um festzustellen, ob es in einen der zuvor erstellten Container passen wird. Wenn das Element nicht in einen vorhandenen Container passt, erstellt das System einen neuen Container und fährt fort, bis es den gesamten Auftrag gepackt hat.
 

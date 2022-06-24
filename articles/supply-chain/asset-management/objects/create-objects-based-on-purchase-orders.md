@@ -1,6 +1,6 @@
 ---
 title: BestellungErstellen von Anlagen basierend auf den Bestellungen
-description: In diesem Thema wird erläutert, wie Sie eine Liste von Anlageposten erstellen können, die als Grundlage für die Erstellung von Anlagen für Wartungsaufträge im Asset-Management verwendet werden können.
+description: In diesem Artikel wird erläutert, wie Sie eine Liste von Anlageposten erstellen können, die als Grundlage für die Erstellung von Anlagen für Wartungsaufträge im Asset-Management verwendet werden können.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5068712a7ea1e0d940d4a05a411fb3e1b6f6d9bb9be924d5375b16676561ea1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8bee66e2d35af6daa8d86539e52b558bde3c79a1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754106"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893699"
 ---
 # <a name="create-assets-based-on-purchase-orders"></a>BestellungErstellen von Anlagen basierend auf den Bestellungen
 
@@ -28,7 +28,7 @@ ms.locfileid: "6754106"
 
  
 
-In diesem Thema wird erläutert, wie Sie eine Liste von Anlageposten erstellen können, die als Grundlage für die Erstellung von Anlagen für Wartungsaufträge im Asset-Management verwendet werden können. Basierend auf Anlageartikeln können Sie eine Liste der Bestellungen anzeigen, die für diesen Artikel erstellt wurden. Der Zweck dieser Funktion ist es, einfach eine Anlage im Asset-Management basierend auf einer Bestellung zu erstellen.
+In diesem Artikel wird erläutert, wie Sie eine Liste von Anlageposten erstellen können, die als Grundlage für die Erstellung von Anlagen für Wartungsaufträge im Asset-Management verwendet werden können. Basierend auf Anlageartikeln können Sie eine Liste der Bestellungen anzeigen, die für diesen Artikel erstellt wurden. Der Zweck dieser Funktion ist es, einfach eine Anlage im Asset-Management basierend auf einer Bestellung zu erstellen.
 
 Zuerst richten Sie Artikel ein, die für das Erstellen von Anlagen für eine Bestellung in **Anlageartikel** verwendet werden kann. Nachdem Sie einer Bestellposition erstellt haben, erstellen Sie die Anlage unter **Pendente Anlagen**. Es ist möglihc zu entscheid, in welcher Phase der Bestellung die Anlage erstellt werden sollte.
 

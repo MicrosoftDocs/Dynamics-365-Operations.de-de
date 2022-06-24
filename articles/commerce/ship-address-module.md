@@ -1,6 +1,6 @@
 ---
-title: Versandadressmodul
-description: Dieses Thema behandelt das Versandadressenmodul und erläutert, wie es in Microsoft Dynamics 365 Commerce konfiguriert wird.
+title: Versandadressenmodul
+description: Dieser Artikel behandelt das Versandadressenmodul und erläutert, wie es in Microsoft Dynamics 365 Commerce konfiguriert wird.
 author: anupamar-ms
 ms.date: 02/11/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 30baef62e03cdaa766133efc4b182c61da3dc7b67e077d80716a035f0b5e40e2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e30e639b7ba1c0caaf72fa66d13f80d04c2e861c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765193"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882195"
 ---
 # <a name="shipping-address-module"></a>Versandadressenmodul
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema behandelt das Versandadressmodul und erläutert, wie es in Microsoft Dynamics 365 Commerce konfiguriert wird.
+Dieser Artikel behandelt das Versandadressmodul und erläutert, wie es in Microsoft Dynamics 365 Commerce konfiguriert wird.
 
 Das Versandadressmodul ermöglicht Debitoren die Versandadresse für einen Auftrag während des Checkout-Flows hinzuzufügen oder auszuwählen. Wenn der Debitor angemeldet ist, werden alle zuvor gespeicherten Adressen für diesen Debitor angezeigt, und der Debitor kann zwischen diesen auswählen. Der Debitor kann auch eine neue Adresse hinzufügen. Die Versandadressmodul wird für alle Artikel in einem Auftrag verwendet, die Versand erfordern.
 

@@ -1,6 +1,6 @@
 ---
 title: Mietverträge hinzufügen oder kopieren (Vorschau)
-description: In diesem Thema wird beschrieben, wie Sie einen neuen Mietvertrag erstellen, indem Sie Informationen dazu im Anlagenleasing eingeben oder Informationen aus einem vorhandenen Mietvertrag kopieren.
+description: In diesem Artikel wird beschrieben, wie Sie einen neuen Mietvertrag erstellen, indem Sie Informationen dazu im Anlagenleasing eingeben oder Informationen aus einem vorhandenen Mietvertrag kopieren.
 author: moaamer
 ms.date: 01/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: b09a87c7d4f5ba076647218c3586d17a13e6c558
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 798ab3ece45ee6f21694a364cfb7a4ff14a9c8aa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967925"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880931"
 ---
 # <a name="add-or-copy-leases-preview"></a>Mietverträge hinzufügen oder kopieren (Vorschau)
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie im Anlagenleasing einen Mietvertrag von Grund auf neu erstellen und wie Sie einen Mietvertrag durch Kopieren eines vorhandenen Mietvertrags erstellen. Der Prozess zum Erstellen eines Mietvertrags von Grund auf umfasst das Eingeben von Informationen für den neuen Mietvertrag und das anschließende Erstellen eines Mietplans. Nachdem mindestens ein Mietvertrag eingerichtet wurde, ist es möglicherweise einfacher, die Informationen aus einem vorhandenen Mietvertrag zu kopieren und diese Informationen dann zu bearbeiten, wenn Sie einen neuen Mietvertrag erstellen möchten.
+In diesem Artikel wird erläutert, wie Sie im Anlagenleasing einen Mietvertrag von Grund auf neu erstellen und wie Sie einen Mietvertrag durch Kopieren eines vorhandenen Mietvertrags erstellen. Der Prozess zum Erstellen eines Mietvertrags von Grund auf umfasst das Eingeben von Informationen für den neuen Mietvertrag und das anschließende Erstellen eines Mietplans. Nachdem mindestens ein Mietvertrag eingerichtet wurde, ist es möglicherweise einfacher, die Informationen aus einem vorhandenen Mietvertrag zu kopieren und diese Informationen dann zu bearbeiten, wenn Sie einen neuen Mietvertrag erstellen möchten.
 
 ## <a name="create-a-lease"></a>Einen Mietvertrag erstellen
 

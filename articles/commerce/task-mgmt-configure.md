@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren Sie die Aufgabenverwaltung
-description: In diesem Thema wird beschrieben, wie Aufgabenverwaltungsfunktionen in Microsoft Dynamics 365 Commerce konfiguriert werden.
+title: Aufgabenverwaltung konfigurieren
+description: In diesem Artikel wird beschrieben, wie Aufgabenverwaltungsfunktionen in Microsoft Dynamics 365 Commerce konfiguriert werden.
 author: gvrmohanreddy
 ms.date: 02/10/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 0ae0f3bd58db587d9024beceedd790cc3d3e4ee990a2f4c727dfda96b2f0785c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf8584f4a0d71ef6fa867a7f07b568d94656e650
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730802"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868856"
 ---
 # <a name="configure-task-management"></a>Aufgabenverwaltung konfigurieren
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Aufgabenverwaltungsfunktionen in Microsoft Dynamics 365 Commerce konfiguriert werden.
+In diesem Artikel wird beschrieben, wie Aufgabenverwaltungsfunktionen in Microsoft Dynamics 365 Commerce konfiguriert werden.
 
 Bevor Dynamics 365 Commerce Manager und Mitarbeiter die Aufgabenverwaltungsfunktionen im Handel nutzen können, muss die Aufgabenverwaltung konfiguriert werden. Zu den Konfigurationsschritten gehören die Erteilung von Berechtigungen an Manager und Mitarbeiter, die Verteilung von Berechtigungen an POS-Kunden, die Einrichtung von POS-Benachrichtigungen und die Konfiguration der Kachel **Aufgaben** auf der Startseite einer POS-Anwendung.
 

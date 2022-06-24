@@ -1,6 +1,6 @@
 ---
 title: Transaktions-E-Mails nach Lieferart anpassen
-description: In diesem Thema wird beschrieben, wie Sie benutzerdefinierte E-Mail-Vorlagen für bestimmte Benachrichtigungstypen und Lieferarten in Microsoft Dynamics 365 Commerce einrichten.
+description: In diesem Artikel wird beschrieben, wie Sie benutzerdefinierte E-Mail-Vorlagen für bestimmte Benachrichtigungstypen und Lieferarten in Microsoft Dynamics 365 Commerce einrichten.
 author: stuharg
 ms.date: 11/16/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: d15e7c5c7050ad373cb45da72de59416e85a5f2034f7a11b007d497b2e2b98bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f16bc23e3527f57bd61d73e92506946067c6eeb9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749906"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850303"
 ---
 # <a name="customize-transactional-emails-by-mode-of-delivery"></a>Transaktions-E-Mails nach Lieferart anpassen
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie benutzerdefinierte E-Mail-Vorlagen für bestimmte Benachrichtigungstypen und Lieferarten in Microsoft Dynamics 365 Commerce einrichten.
+In diesem Artikel wird beschrieben, wie Sie benutzerdefinierte E-Mail-Vorlagen für bestimmte Benachrichtigungstypen und Lieferarten in Microsoft Dynamics 365 Commerce einrichten.
 
 Transaktions-E-Mails können jetzt für eine Kombination eines Benachrichtigungstyps angepasst werden (z. B. **Auftrag erstellt**, **Bestellung verpackt** oder **Bestellung in Rechnung gestellt**) sowie für eine Lieferart (z. B. über Nacht, Abholung im Laden oder Abholung am Straßenrand). Mit benutzerdefinierten Transaktions-E-Mails können Einzelhändler ihre Kundenbestellung mit Erfüllungserlebnissen anbieten, die auf die Lieferart der Bestellung zugeschnitten sind. Beispielsweise kann das Ereignis „Bestellung gepackt“ so angepasst werden, dass es Anweisungen zur Abholung am Straßenrand für Kunden enthält, die sich für die Abholung am Straßenrand entscheiden. Alternativ kann es Informationen zu Spediteur und Lieferinformationen für Kunden bereitstellen, die ihren Auftrag liefern lassen möchten.
 

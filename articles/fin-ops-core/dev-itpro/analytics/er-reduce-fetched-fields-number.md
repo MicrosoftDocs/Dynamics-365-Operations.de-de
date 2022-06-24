@@ -1,6 +1,6 @@
 ---
 title: Verbessern der Leistung von ER-Lösungen, indem die Anzahl der Tabellenfelder reduziert wird, die zur Laufzeit abgerufen werden
-description: Dieses Thema erklärt, wie Sie dabei helfen können, die Leistung von ER-Lösungen zu verbessern, indem Sie die Anzahl der Tabellenfelder reduzieren, die zur Laufzeit abgerufen werden.
+description: Dieser Artikel erklärt, wie Sie dabei helfen können, die Leistung von EB-Lösungen zu verbessern, indem Sie die Anzahl der Tabellenfelder reduzieren, die zur Laufzeit abgerufen werden.
 author: NickSelin
 ms.date: 05/12/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: dd192a7718ac4fd8bcb636ede6c005ca29ee5f08
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: eb76c415da87d421b8135a93b84f4e905f01e70d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811956"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847450"
 ---
 # <a name="improve-performance-of-er-solutions-by-reducing-the-number-of-table-fields-that-are-fetched-at-runtime"></a>Verbessern der Leistung von ER-Lösungen, indem die Anzahl der Tabellenfelder reduziert wird, die zur Laufzeit abgerufen werden
 
@@ -28,7 +28,7 @@ ms.locfileid: "8811956"
 
 Sie können [Elektronische Berichterstellung](general-electronic-reporting.md) (ER)-[Formate](er-overview-components.md#format-components-for-outgoing-electronic-documents) entwerfen, die ausgehende Dokumente in verschiedenen Formaten generieren. Wenn ein Dokument erzeugt wird, ruft ein ER-Format Datenquellen auf, die in einem entsprechender ER-[Modellzuordnung](er-overview-components.md#model-mapping-component) konfiguriert wurden. Um den Zugriff auf Anwendungstabellen, Abfragen oder Entitäten für das Abrufen von Datensätzen zu konfigurieren, können Sie ER-Datenquellen vom Typ *Tabellendatensätze* verwenden. Standardmäßig ruft eine Datenquelle des *Tabellendatensätze*-Typs die Werte aller Felder in den angeforderten Datensätzen ab. Sie können diese Art von Datenquelle jedoch so konfigurieren, dass sie nur die Feldwerte abruft, die für das laufende ER-Format erforderlich sind. Diese Konfiguration trägt dazu bei, den Speicherverbrauch des Anwendungsservers zu reduzieren, der den Datenabruf und das weitere Zwischenspeichern von Datensätzen durchführt.
 
-Um mehr darüber zu erfahren, wie Sie die Liste der abgerufenen Felder von Datenquellen des *Tabellenaufzeichnungen*-Typs einschränken, schließen Sie das Beispiel in diesem Thema ab.
+Um mehr darüber zu erfahren, wie Sie die Liste der abgerufenen Felder von Datenquellen des Typs *Tabellenaufzeichnungen* einschränken, schließen Sie das Beispiel in diesem Artikel ab.
 
 ## <a name="example-reduce-the-number-of-table-fields-that-are-fetched-at-runtime"></a>Beispiel: Reduzieren der Anzahl der Tabellenfelder, die zur Laufzeit abgerufen werden
 
@@ -49,7 +49,7 @@ Befolgen Sie die Schritte in [ER-Framework konfigurieren](er-quick-start2-custom
 
 ### <a name="import-the-sample-er-configurations"></a>ER-Beispielkonfigurationsdateien importieren
 
-Wenn Sie das Beispiel im [Entwerfen einer neue ER-Lösung, um einen benutzerdefinierten Bericht zu drucken](er-quick-start1-new-solution.md)-Thema noch nicht abgeschlossen haben, laden Sie die XML-Dateien für die folgenden Konfigurationen der bereitgestellten ER-Lösung herunter und speichern Sie sie lokal.
+Wenn Sie das Beispiel im Artikel [Eine neue EB-Lösung für den Ausdruck eines angepassten Berichts entwerfen](er-quick-start1-new-solution.md) noch nicht abgeschlossen haben, laden Sie die XML-Dateien für die folgenden Konfigurationen der bereitgestellten EB-Lösung herunter, und speichern Sie sie lokal.
 
 | Inhaltsbeschreibung            | Dateiname |
 |--------------------------------|-----------|

@@ -1,6 +1,6 @@
 ---
 title: Upgradeübersicht für Abschreibungsbuch
-description: In diesem Thema wird die aktuelle Buchfunktion in Anlagen beschrieben. Diese neue Buchfunktionalität basiert auf der Wertmodellfunktionalität, die in früheren Versionen verfügbar war, aber sie umfasst auch die gesamte Funktionalität, die zuvor nur in Abschreibungsbüchern bereitgestellt wurde.
+description: In diesem Artikel wird die aktuelle Buchfunktion in Anlagen beschrieben. Diese neue Buchfunktionalität basiert auf der Wertmodellfunktionalität, die in früheren Versionen verfügbar war, aber sie umfasst auch die gesamte Funktionalität, die zuvor nur in Abschreibungsbüchern bereitgestellt wurde.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: overview
@@ -16,18 +16,18 @@ ms.search.region: global
 ms.author: moaamer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b43c499928988e98cae63b85f528b8a71e042cc7
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 784ec32ae886ef7ea9342b085f893eeeec761961
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713641"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855490"
 ---
 # <a name="depreciation-book-upgrade-overview"></a>Upgradeübersicht für Abschreibungsbuch
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird die aktuelle Buchfunktion in Anlagen beschrieben. Diese neue Buchfunktionalität basiert auf der Wertmodellfunktionalität, die in früheren Versionen verfügbar war, aber sie umfasst auch die gesamte Funktionalität, die zuvor nur in Abschreibungsbüchern bereitgestellt wurde. Die Wertmodellfunktionalität und die Abschreibungsbuchfunktionalität wurden zu einem einzigen Konzept zusammengeführt, das als Buch bekannt ist. Mit der Buchfunktion können Sie einen einzigen Satz von Seiten, Abfragen und Berichten für alle Anlageprozesse Ihres Unternehmens verwenden. Dieses Thema enthält einige Dinge, die Sie vor dem Upgrade berücksichtigen sollten. 
+In diesem Artikel wird die aktuelle Buchfunktion in Anlagen beschrieben. Diese neue Buchfunktionalität basiert auf der Wertmodellfunktionalität, die in früheren Versionen verfügbar war, aber sie umfasst auch die gesamte Funktionalität, die zuvor nur in Abschreibungsbüchern bereitgestellt wurde. Die Wertmodellfunktionalität und die Abschreibungsbuchfunktionalität wurden zu einem einzigen Konzept zusammengeführt, das als Buch bekannt ist. Mit der Buchfunktion können Sie einen einzigen Satz von Seiten, Abfragen und Berichten für alle Anlageprozesse Ihres Unternehmens verwenden. Dieser Artikel enthält einige Aspekte, die Sie vor dem Upgrade berücksichtigen sollten. 
 
 Durch den Upgradeprozess werden Ihre vorhandenen Einstellungen und alle Ihre vorhandenen Transaktionen zur neuen Buchstruktur verschoben. Wertmodelle bleiben, wie sie zurzeit sind, als Buch, das zum Hauptbuch bucht. Abschreibungsbücher werden zu einem Buch verschoben, bei dem die Option Ins Hauptbuch buchen auf Nein festgelegt ist. Abschreibungsbuch-Erfassungsnamen werden zu einem Hauptbuch-Erfassungsnamen verschoben, bei dem die Buchungsebene auf Keine festgelegt ist. Abschreibungsbuchtransaktionen werden auf eine Anlagenbuchung verschoben.
 

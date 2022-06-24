@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0c5d7e8f9561ba81e0be93220df9afcd493179f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e9ba69f637087298bf6a93dbb049d78dff739aaf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672485"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891146"
 ---
 # <a name="cost-management-home-page"></a>Startseite für die Kostenrechnung
 
@@ -53,7 +53,7 @@ Besuchen Sie [Microsoft Dynamics 365 – Produktplan](https://roadmap.dynamics
 
 #### <a name="white-paper"></a>Whitepaper
 
-[Stückkostenkalkulation nach Herstellkostenkalkulation](https://www.microsoft.com/download/details.aspx?id=101937) beschreibt, wie ein Nachkalkulationsbogen eingerichtet wird, das Material und Fertigung umfasst und wie sich die Einrichtung auf die Ergebnisse der Herstellkostenkalkulation auswirkt. Um die Themen besser zu erläutern, enthält sie konkrete Szenarien und die Auswirkung der Geschäftsdaten die die verschiedenen Einstellungen und Konfigurationen beeinflussen.
+[Stückkostenkalkulation nach Herstellkostenkalkulation](https://www.microsoft.com/download/details.aspx?id=101937) beschreibt, wie ein Nachkalkulationsbogen eingerichtet wird, das Material und Fertigung umfasst und wie sich die Einrichtung auf die Ergebnisse der Herstellkostenkalkulation auswirkt. Um die Artikel besser zu erläutern, enthält sie konkrete Szenarien und die Auswirkung der Geschäftsdaten die die verschiedenen Einstellungen und Konfigurationen beeinflussen.
 
 #### <a name="blogs"></a>Blogs
 

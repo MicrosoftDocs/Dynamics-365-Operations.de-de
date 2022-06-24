@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren Sie Produktdimensionswerte so, dass sie als Farbfelder angezeigt werden
-description: In diesem Thema wird beschrieben, wie Sie Produktdimensionswerte als Farbfelder in der Microsoft Dynamics 365 Commerce Zentralverwaltung konfigurieren.
+description: In diesem Artikel wird beschrieben, wie Sie Produktdimensionswerte als Farbfelder in der Microsoft Dynamics 365 Commerce Zentralverwaltung konfigurieren.
 author: anupamar-ms
 ms.date: 08/02/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-ms.openlocfilehash: b1cef992b3d4e3889dd1d5dcc21a0d1ba3f55acc166f5003fc79f64fc54a8754
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a21e02a8e5aacfa5251b9b7bcbc451fa886d37f3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764613"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892651"
 ---
 # <a name="configure-product-dimension-values-to-appear-as-swatches"></a>Konfigurieren Sie Produktdimensionswerte so, dass sie als Farbfelder angezeigt werden
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Produktdimensionswerte als Farbfelder in der Microsoft Dynamics 365 Commerce Zentralverwaltung konfigurieren. Weitere Informationen über Produktdimensionen finden Sie unter [Produktdimensionen](../../supply-chain/pim/product-dimensions.md).
+In diesem Artikel wird beschrieben, wie Sie Produktdimensionswerte als Farbfelder in der Microsoft Dynamics 365 Commerce Zentralverwaltung konfigurieren. Weitere Informationen über Produktdimensionen finden Sie unter [Produktdimensionen](../../supply-chain/pim/product-dimensions.md).
 
 Dynamics 365 Commerce unterstützt die Verwendung von Größe, Stil und Farbabmessungen zur Darstellung von Produktvarianten. Produktabmessungen haben Anzeigenamen, die auf Produktdetailseiten (PDPs) angezeigt werden, damit Produktvarianten ausgewählt werden können. Beispiele für diese Anzeigenamen sind Klein, Mittel und Groß für Größen und Schwarz und Braun für Farben. Wenn ein Produkt jedoch viele Variationen unterstützt, sind mehrere Auswahlen erforderlich, um das Bild für jede Produktvariante anzuzeigen. Daher kann es für Kunden langsam und mühsam sein, Produktvarianten zu durchsuchen und auszuwählen.
 

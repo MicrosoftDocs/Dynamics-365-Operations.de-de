@@ -1,6 +1,6 @@
 ---
 title: Konsolidieren Sie Sendungen, wenn die Versandkonsolidierungsrichtlinie überschrieben wird
-description: In diesem Thema wird ein Szenario vorgestellt, in dem eine oder mehrere Verkaufspositionen von der Seite „Freigabe an Lager“ manuell an das Lager freigegeben werden müssen und die systemdefinierte Lieferungskonsolidierungsrichtlinie vor der Freigabe überschrieben werden muss.
+description: In diesem Artikel wird ein Szenario vorgestellt, in dem eine oder mehrere Verkaufspositionen von der Seite „Freigabe an Lager“ manuell an das Lager freigegeben werden müssen und die systemdefinierte Lieferungskonsolidierungsrichtlinie vor der Freigabe überschrieben werden muss.
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
@@ -13,24 +13,24 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 8b1c8ac41fe0941c9bbfce20ce593eafe5699ef1
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 680941adeba1fc1cd54a02fb366d3d5903938d77
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675458"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878699"
 ---
 # <a name="consolidate-shipments-when-the-shipment-consolidation-policy-is-overridden"></a>Konsolidieren Sie Sendungen, wenn die Versandkonsolidierungsrichtlinie überschrieben wird
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird ein Szenario vorgestellt, in dem eine oder mehrere Verkaufspositionen von der Seite **Freigabe an Lager** manuell an das Lager freigegeben werden müssen und die systemdefinierte Lieferungskonsolidierungsrichtlinie vor der Freigabe überschrieben werden muss. Eine Überschreibung der Lieferungskonsolidierungsrichtlinie kann erforderlich sein, wenn beispielsweise ein Auftrag, der normalerweise nicht mit offenen Lieferungen konsolidiert wird, mit offenen Lieferungen konsolidiert werden muss.
+In diesem Artikel wird ein Szenario vorgestellt, in dem eine oder mehrere Verkaufspositionen von der Seite **Freigabe an Lager** manuell an das Lager freigegeben werden müssen und die systemdefinierte Lieferungskonsolidierungsrichtlinie vor der Freigabe überschrieben werden muss. Eine Überschreibung der Lieferungskonsolidierungsrichtlinie kann erforderlich sein, wenn beispielsweise ein Auftrag, der normalerweise nicht mit offenen Lieferungen konsolidiert wird, mit offenen Lieferungen konsolidiert werden muss.
 
 Während des Szenarios erstellen Sie eine Reihe von Aufträgen und überschreiben dann die Standardrichtlinie für die Lieferungskonsolidierung, bevor Sie die Aufträge an das Lager freigeben.
 
 ## <a name="make-demo-data-available"></a>Demodaten zur Verfügung stellen
 
-Das Szenario in diesem Thema verweist auf Werte und Datensätze, die in den für Microsoft Dynamics 365 Supply Chain Management bereitgestellten Standarddemodaten enthalten sind. Wenn Sie die hier angegebenen Werte während der Übungen verwenden möchten, müssen Sie in einer Umgebung arbeiten, in der die Demodaten installiert sind, und die juristische Person auf **USMF** festlegen, bevor Sie beginnen.
+Das Szenario in diesem Artikel verweist auf Werte und Datensätze, die in den für Microsoft Dynamics 365 Supply Chain Management bereitgestellten Standarddemodaten enthalten sind. Wenn Sie die hier angegebenen Werte während der Übungen verwenden möchten, müssen Sie in einer Umgebung arbeiten, in der die Demodaten installiert sind, und die juristische Person auf **USMF** festlegen, bevor Sie beginnen.
 
 ## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a>Richten Sie Richtlinien zur Lieferungskonsolidierung und Produktfilter ein
 

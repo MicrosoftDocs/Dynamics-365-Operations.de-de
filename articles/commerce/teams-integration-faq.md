@@ -1,6 +1,6 @@
 ---
 title: Integration von Dynamics 365 Commerce und Microsoft Teams – FAQ
-description: Dieses Thema enthält Antworten auf häufig gestellte Fragen zur Integration von Microsoft Dynamics 365 Commerce und Microsoft Teams.
+description: Dieser Artikel enthält Antworten auf häufig gestellte Fragen zur Integration von Microsoft Dynamics 365 Commerce und Microsoft Teams.
 author: gvrmohanreddy
 ms.date: 03/31/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 16ad6cec0fb852d863039740e9f2c3406467e899
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 02f10e446349803ce5629fed0be4176f2df2be0c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692508"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869126"
 ---
 # <a name="dynamics-365-commerce-and-microsoft-teams-integration-faq"></a>Integration von Dynamics 365 Commerce und Microsoft Teams – FAQ
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält Antworten auf häufig gestellte Fragen zur Integration von Microsoft Dynamics 365 Commerce und Microsoft Teams.
+Dieser Artikel enthält Antworten auf häufig gestellte Fragen zur Integration von Microsoft Dynamics 365 Commerce und Microsoft Teams.
 
 ### <a name="who-in-the-store-becomes-an-owner-of-a-team-while-provisioning-teams-from-commerce"></a>Wer im Shop wird Besitzer eines Teams, wenn Teams aus Commerce bereitgestellt werden? 
 

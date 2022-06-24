@@ -1,6 +1,6 @@
 ---
 title: Eine Quellensteuerzahlung erstellen
-description: Die Einzelvorgangsprozedur zur Quellensteuerzahlung gleicht Quellensteuersalden von Kreditorenkonten auf Quellensteuerkonten aus, und sie werden für einen angegebenen Zeitraum gegen das Quellensteuersteuerverrechnungskonto gebucht. In diesem Thema werden die Schritte zum Einrichten einer Quellensteuerzahlung aufgeführt.
+description: Die Einzelvorgangsprozedur zur Quellensteuerzahlung gleicht Quellensteuersalden von Kreditorenkonten auf Quellensteuerkonten aus, und sie werden für einen angegebenen Zeitraum gegen das Quellensteuersteuerverrechnungskonto gebucht. In diesem Artikel werden die Schritte zum Einrichten einer Quellensteuerzahlung aufgeführt.
 author: kailiang
 ms.date: 01/12/2021
 ms.topic: article
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: 2b374d7aeab4d066b0894dde8f542c2f807d1ef9
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 3d3619137ccb909eed31af3793c6cf2773cc9886
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713331"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855403"
 ---
 # <a name="create-a-withholding-tax-payment"></a>Eine Quellensteuerzahlung erstellen
 
-Die Einzelvorgangsprozedur zur Quellensteuerzahlung gleicht Quellensteuersalden von Kreditorenkonten auf Quellensteuerkonten aus, und sie werden für einen angegebenen Zeitraum gegen das Quellensteuersteuerverrechnungskonto gebucht. In diesem Thema werden die Schritte zum Einrichten einer Quellensteuerzahlung aufgeführt.
+Die Einzelvorgangsprozedur zur Quellensteuerzahlung gleicht Quellensteuersalden von Kreditorenkonten auf Quellensteuerkonten aus, und sie werden für einen angegebenen Zeitraum gegen das Quellensteuersteuerverrechnungskonto gebucht. In diesem Artikel werden die Schritte zum Einrichten einer Quellensteuerzahlung aufgeführt.
 
 > [!NOTE] 
 > Die Quellensteuerverrechnung (von Debitorenkonten) wird bei der Berechnung einer Quellensteuerzahlung nicht berücksichtigt.

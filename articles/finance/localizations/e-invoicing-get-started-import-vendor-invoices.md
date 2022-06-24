@@ -1,6 +1,6 @@
 ---
 title: Kreditorenrechnungen mit der elektronischen Rechnungsstellung importieren
-description: Dieses Thema enthält Informationen zum Importieren von Kreditorenrechnungen mithilfe der elektronischen Rechnungsstellung.
+description: Dieser Artikel enthält Informationen zum Importieren von Kreditorenrechnungen mithilfe der elektronischen Rechnungsstellung.
 author: gionoder
 ms.date: 09/03/2021
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c28adbfe532e77a52cab7625b9539d1e8e528bea
-ms.sourcegitcommit: 19f0e69a131e9e4ff680eac13efa51b04ad55a38
+ms.openlocfilehash: 2d239bbafad9292ba6cef5534e778a2824a9cc5a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2022
-ms.locfileid: "7983822"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865583"
 ---
 # <a name="use-the-electronic-invoicing-service-to-import-vendor-invoices"></a>Kreditorenrechnungen mit der elektronischen Rechnungsstellung importieren
 
@@ -30,7 +30,7 @@ ms.locfileid: "7983822"
 
 [!include [banner](../includes/preview-banner.md)]
 
-Dieses Thema enthält Informationen, die Ihnen die ersten Schritte beim Importieren von Kreditorenrechnungen mit der elektronische Rechnungsstellung erleichtern. Es führt Sie durch die Konfigurationsschritte in Regulatory Configuration Services (RCS), Dynamics 365 Finance und Dynamics 365 Supply Chain Management, die Sie befolgen müssen, um elektronische Kreditorenrechnungen von den Kreditoren zu erhalten.
+Dieser Artikel enthält Informationen, die Ihnen die ersten Schritte beim Importieren von Kreditorenrechnungen mit der elektronische Rechnungsstellung erleichtern. Er führt Sie durch die Konfigurationsschritte in Regulatory Configuration Services (RCS), Dynamics 365 Finance und Dynamics 365 Supply Chain Management, die Sie befolgen müssen, um elektronische Kreditorenrechnungen von den Kreditoren zu erhalten.
 
 ## <a name="set-up-vendor-invoice-import-in-rcs"></a>Das Importieren von Kreditorenrechnungen in RCS einrichten
 Gehen Sie folgendermaßen vor, um das Importieren von Kreditorenrechnungen in RCS einzurichten:

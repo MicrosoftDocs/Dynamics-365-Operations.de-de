@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e6af5fbd050642ac462ecb159c05d78f534f0ce
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: ae6b2b505acb211f9fb5506234953eba9f3ec2a3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722548"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865771"
 ---
 # <a name="posting-definition-examples"></a>Buchungsdefinitionsbeispiele
 
@@ -28,7 +28,7 @@ ms.locfileid: "8722548"
 
 Dieser Artikel enthält Beispiele, die zeigen, wie Bestellbelastungen für Budgetzuteilungen und Buchungsdefinitionen verwendet werden.
 
-Bevor Sie dieses Thema lesen, sollten Sie sich mit Buchungsdefinitionen und Transaktionsbuchungsdefinitionen vertraut gemacht haben. Informationen zu den Buchungsebenen finden Sie unter [Buchungsdefinitionen](posting-definitions.md). Die folgenden Beispiele können im Formular **Buchungsdefinitionen** eingerichtet werden. Jedes Beispiel umfasst folgende Abschnitte:
+Bevor Sie diesen Artikel lesen, sollten Sie sich mit Buchungsdefinitionen und Transaktionsbuchungsdefinitionen vertraut gemacht haben. Informationen zu den Buchungsebenen finden Sie unter [Buchungsdefinitionen](posting-definitions.md). Die folgenden Beispiele können im Formular **Buchungsdefinitionen** eingerichtet werden. Jedes Beispiel umfasst folgende Abschnitte:
 
 -   Buchungsdefinition – Übereinstimmungskriterien
 -   Buchungsdefinition – Generierte Einträge

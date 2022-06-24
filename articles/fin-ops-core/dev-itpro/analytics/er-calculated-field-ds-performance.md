@@ -1,6 +1,6 @@
 ---
 title: Verbessern Sie die Leistung von EB-Lösungen, indem Sie parametrisierte CALCULATED FIELD-Datenquellen hinzufügen
-description: Dieses Thema erklärt, wie Sie die Leistung von Electronic Reporting (ER)-Lösungen verbessern können, indem Sie parametrisierte CALCULATED FIELD-Datenquellen hinzufügen.
+description: Dieser Artikel erklärt, wie Sie die Leistung von Electronic Reporting (ER)-Lösungen verbessern können, indem Sie parametrisierte CALCULATED FIELD-Datenquellen hinzufügen.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -14,32 +14,32 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5fada2fc0b35e22da18f5d6a0505df077d5ada4e0221031d63c316d8c705bc79
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c2c0499ac3d41c9bb6026cc05f971087799c28f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753669"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850113"
 ---
 # <a name="improve-the-performance-of-er-solutions-by-adding-parameterized-calculated-field-data-sources"></a>Verbessern Sie die Leistung von EB-Lösungen, indem Sie parametrisierte CALCULATED FIELD-Datenquellen hinzufügen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erklärt, wie Sie [Leistungsnachverfolgungen](trace-execution-er-troubleshoot-perf.md) von [Elektronische Berichterstattung (ER)](general-electronic-reporting.md)-Formaten übernehmen können, die ausgeführt werden, und die dann die Informationen aus diesen Nachverfolgungen verwenden, um die Leistung durch das Konfigurieren eines Parameters zu verbessern, indem die **Berechnetes Feld**-Datenquelle parameterisiert wird.
+In diesem Artikel wird erklärt, wie Sie [Leistungsnachverfolgungen](trace-execution-er-troubleshoot-perf.md) von [Elektronische Berichterstellung (EB)](general-electronic-reporting.md)-Formaten übernehmen können, die ausgeführt werden, und die dann die Informationen aus diesen Nachverfolgungen verwenden, um die Leistung durch das Konfigurieren eines Parameters zu verbessern, indem die **Berechnetes Feld**-Datenquelle parameterisiert wird.
 
 Im Rahmen des Prozesses, EB-Konfigurationen zu entwerfen, um Geschäftsdokumente zu generieren, definieren Sie die Methode, mit der Daten aus der Anwendung abgerufen werden und in der generierten Ausgabe eingegeben werden. Durch das Entwerfen einer parametrisierten EB-Datenquelle des Typs **Berechnetes Feld** können Sie die Anzahl der Datenbankaufrufe reduzieren und den Zeit- und Kostenaufwand für das Sammeln der Details der Ausführung des EB-Formats erheblich reduzieren.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-- Um die Beispiele in diesem Thema abzuschließen, müssen Sie den Zugriff auf eine der folgenden [Rollen](../sysadmin/tasks/assign-users-security-roles.md) haben:
+- Um die Beispiele in diesem Artikel abzuschließen, müssen Sie den Zugriff auf eine der folgenden [Rollen](../sysadmin/tasks/assign-users-security-roles.md) haben:
 
     - Entwickler für elektronische Berichterstellung
     - Funktionaler Berater für elektronische Berichterstellung
     - Systemadministrator
 
 - Das Unternehmen muss auf **DEMF** festgelegt sein.
-- Folgen Sie den Schritten in [Anhang 1](#appendix1) dieses Themas, um die Komponenten der Microsoft EB-Beispiellösung herunterzuladen, die zum Abschließen der Beispiele in diesem Thema erforderlich ist.
-- Befolgen Sie die Schritte in [Anlage 2](#appendix2) dieses Themas, um den minimalen Satz von EB-Parametern zu konfigurieren, der zur Verwendung des EB-Frameworks erforderlich ist, um die Leistung der Microsoft EB-Beispiellösung zu verbessern.
+- Folgen Sie den Schritten in [Anhang 1](#appendix1) dieses Artikels, um die Komponenten der Microsoft-EB-Beispiellösung herunterzuladen, die zum Abschließen der Beispiele in diesem Artikel erforderlich ist.
+- Befolgen Sie die Schritte in [Anlage 2](#appendix2) dieses Artikels, um den minimalen Satz von EB-Parametern zu konfigurieren, der zur Verwendung des EB-Frameworks erforderlich ist, um die Leistung der Microsoft EB-Beispiellösung zu verbessern.
 
 ## <a name="import-the-sample-er-solution"></a>EB-Beispiellösung importieren
 
@@ -48,7 +48,7 @@ Stellen Sie sich vor, Sie müssen eine neue EB-Lösung entwerfen, um einen neuen
 Der erste Schritt besteht darin, die Beispiel-EB-Lösung zu importieren, um einen Bericht über Lieferantentransaktionen zu erstellen.
 
 1. Melden Sie sich bei der Instanz von Microsoft Dynamics 365 Finance an, die für Ihr Unternehmen bereitgestellt wurde.
-2. In diesem Thema erstellen und modifizieren Sie Konfigurationen für das Beispielunternehmen **Litware, Inc.**. Stellen Sie sicher, dass dieser Konfigurationsanbieter Ihrer Finance-Instanz hinzugefügt wurde und als aktiv markiert wurde. Weitere Informationen finden Sie unter [Konfigurationsanbieter erstellen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. In diesem Artikel erstellen und ändern Sie Konfigurationen für das Beispielunternehmen **Litware, Inc.**. Stellen Sie sicher, dass dieser Konfigurationsanbieter Ihrer Finance-Instanz hinzugefügt wurde und als aktiv markiert wurde. Weitere Informationen finden Sie unter [Konfigurationsanbieter erstellen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Im Arbeitsbereich **Elektronische Berichterstellung** wählen Sie die Kachel **Berichterstellungskonfigurationen** aus.
 4. Auf der Seite **Konfigurationen** importieren Sie die EB-Konfigurationen, die Sie als Voraussetzung nach Finance heruntergeladen haben, in der folgenden Reihenfolge: Datenmodell, Modellzuordnung, Format. Führen Sie für jede Konfiguration die folgenden Schritte aus:
 
@@ -220,7 +220,7 @@ Befolgen Sie diese Schritte, um das Caching und eine Datenquelle des Typs **Bere
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>Ausführen der geänderten EB-Lösung, um Ausführung nachzuverfolgen
 
-Wiederholen Sie die Schritte im Abschnitt [Das EB-Format ausführen](#run-format) weiter oben in diesem Thema, um eine neue Leistungsnachverfolgung zu generieren.
+Wiederholen Sie die Schritte im Abschnitt [Das EB-Format ausführen](#run-format) weiter oben in diesem Artikel, um eine neue Leistungsnachverfolgung zu generieren.
 
 ## <a name="use-the-performance-trace-to-analyze-adjustments-to-the-model-mapping"></a>Verwenden Sie die Leistungsüberwachung, um Regulierungen der Modellzuordnung zu analysieren 
 

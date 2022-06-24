@@ -1,6 +1,6 @@
 ---
 title: Wartungsanfrageberichte
-description: In diesem Thema wird erläutert, wie Wartungsanfrageberichte in Asset Management erstellt werden.
+description: In diesem Artikel wird erläutert, wie Wartungsanfrageberichte in Anlagenverwaltung erstellt werden.
 author: johanhoffmann
 ms.date: 10/31/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: cd0d50bacd43fe66628fec94aead3a2406e8d4e62c1e2e6c3d31afa9073baa6a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5ea2b6af1717ca447c06311a24bfa7c9b1f0d084
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773608"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862771"
 ---
 # <a name="maintenance-request-reports"></a>Wartungsanfrageberichte
 

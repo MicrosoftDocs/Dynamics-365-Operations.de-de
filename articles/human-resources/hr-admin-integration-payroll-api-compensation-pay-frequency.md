@@ -1,6 +1,6 @@
 ---
 title: Häufigkeit der Vergütungszahlung
-description: Dieses Thema enthält Details und eine Beispielabfrage für die Entität „Häufigkeit der Vergütungszahlung“ in Dynamics 365 Human Resources.
+description: Dieser Artikel enthält Details und eine Beispielabfrage für die Entität „Häufigkeit der Vergütungszahlung“ in Dynamics 365 Human Resources.
 author: marcelbf
 ms.date: 09/01/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 171b7fb7b361bd1fe2e7e637cd555c88a81a8bcf
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 9afe27776797b2355a32226bbd7fa514b5c5d962
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066142"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894613"
 ---
 # <a name="compensation-pay-frequency"></a>Häufigkeit der Vergütungszahlung
 
@@ -27,7 +27,7 @@ ms.locfileid: "8066142"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In diesem Thema wird die Entität „Häufigkeit der Vergütungszahlung“ in Dynamics 365 Human Resources beschrieben.
+In diesem Artikel wird die Entität „Häufigkeit der Vergütungszahlung“ in Dynamics 365 Human Resources beschrieben.
 
 Physischer Name: mshr_hcmpayrateconversionentity
 

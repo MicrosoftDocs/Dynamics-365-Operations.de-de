@@ -1,6 +1,6 @@
 ---
 title: Dashboard für die Nutzungsverwaltung
-description: In diesem Thema wird erläutert, wie Sie das Dashboard für die Nutzungsverwaltung verwenden, um die Nutzung des Dienstes für die elektronische Rechnungsstellung zu überwachen und konform zu bleiben.
+description: In diesem Artikel wird erläutert, wie Sie das Dashboard für die Nutzungsverwaltung verwenden, um die Nutzung des Dienstes für die elektronische Rechnungsstellung zu überwachen und konform zu bleiben.
 author: gionoder
 ms.date: 06/02/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 35b50c8cb5c6ef72f466a4fb10c7af0e53afc3db5d1ef9e2b23d6049e24a70c3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3fad2acea373e96092208ce06edb31f1a862912d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776473"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875970"
 ---
 # <a name="usage-management-dashboard"></a>Dashboard für die Nutzungsverwaltung
 
@@ -48,7 +48,7 @@ Das Dashboard enthält die folgenden Indikatoren:
 
 - Organisation: 
 
-    Die Zählung wird nach der Mandanten-ID Ihrer Organisation zusammengefasst, unabhängig von der Anzahl der Instanzen von Microsoft Dynamics 365 Finance oder Dynamics 365 Supply Chain Management, oder die Anzahl der juristischen Personen, für die der Dienst für die elektronische Rechnungsstellung aktiviert ist.
+    Die Zählung wird nach der Mandanten-ID Ihrer Organisation zusammengefasst, unabhängig von der Anzahl der Instanzen von Microsoft Dynamics 365 Finance oder Dynamics 365 Supply Chain Management, oder der Anzahl der juristischen Personen, für die der Dienst für die elektronische Rechnungsstellung aktiviert ist.
 
 
 ## <a name="indicator-usage-per-month-export"></a>Indikator: Verbrauch pro Monat (Export)

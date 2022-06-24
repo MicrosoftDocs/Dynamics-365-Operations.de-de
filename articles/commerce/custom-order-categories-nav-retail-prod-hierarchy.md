@@ -1,6 +1,6 @@
 ---
-title: Ändern Sie die Sortierreihenfolge für Verkaufsentitäten
-description: In diesem Thema werden die Konzepte erläutert, die zum Steuern der Anzeigereihenfolge für verschiedene verkaufsbezogene Entitäten in Dynamics 365 Commerce zugeordnet werden.
+title: Sortierreihenfolge bei Verkaufsentitäten ändern
+description: In diesem Artikel werden die Konzepte erläutert, die zum Steuern der Anzeigereihenfolge für verschiedene verkaufsbezogene Entitäten in Dynamics 365 Commerce zugeordnet werden.
 author: josaw1
 ms.date: 08/05/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 444f1ebd99cf8443181a51d93a48b6b4d1addf4d
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 4e7a7bd42b0ef72ae6bc3f52a8857602b6282907
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779541"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847653"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Ändern Sie die Sortierreihenfolge für Verkaufsentitäten
 
@@ -29,7 +29,7 @@ ms.locfileid: "7779541"
 
 Einzelhändler erachten die Produkterfassung als ein primäres Tool für Debitoreninteraktionen über alle Kanäle hinweg. Verschiedene Funktionen können Debitoren helfen, Produkte einfacher zu ermitteln. So können sie Kategorien, Suchen und Filter durchsuchen.
 
-In diesem Thema werden die Konzepte erläutert, die zum Steuern der Anzeigereihenfolge für verschiedene verkaufsbezogene Entitäten zugeordnet werden. Es wird auch erklärt, wie Sie die Sortierreihenfolge ändern.
+In diesem Artikel werden die Konzepte erläutert, die zum Steuern der Anzeigereihenfolge für verschiedene verkaufsbezogene Entitäten zugeordnet werden. Es wird auch erklärt, wie Sie die Sortierreihenfolge ändern.
 
 ## <a name="overview"></a>Übersicht
 

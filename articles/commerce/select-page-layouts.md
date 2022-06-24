@@ -1,6 +1,6 @@
 ---
 title: Auswählen von Seitenlayouts
-description: In diesem Thema wird erläutert, wie Sie Seitenlayouts in Microsoft Dynamics 365 Commerce erstellen und auswählen.
+description: In diesem Artikel wird erläutert, wie Sie Seitenlayouts in Microsoft Dynamics 365 Commerce erstellen und auswählen.
 author: psimolin
 ms.date: 04/14/2020
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e7424755ed794f4e4b8ff640a7e7b9dd96b2145fddcf91511266fa166626112d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: df6ec6dec267c456f2f0fac9a963c07015412e46
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737998"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888174"
 ---
 # <a name="select-page-layouts"></a>Auswählen von Seitenlayouts
 
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie Seitenlayouts in Microsoft Dynamics 365 Commerce erstellen und auswählen.
+In diesem Artikel wird erläutert, wie Sie Seitenlayouts in Microsoft Dynamics 365 Commerce erstellen und auswählen.
 
 ## <a name="create-layouts-for-an-existing-page"></a>Erstellen von Layouts für eine vorhandene Seite
 

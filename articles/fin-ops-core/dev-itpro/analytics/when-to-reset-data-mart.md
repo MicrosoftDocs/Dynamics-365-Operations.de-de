@@ -1,6 +1,6 @@
 ---
 title: Zurücksetzen von Data Marts FAQ
-description: In diesem Thema finden Sie Antworten auf einige häufig gestellte Fragen zum Zurücksetzen des Data Marts.
+description: In diesem Artikel finden Sie Antworten auf einige häufig gestellte Fragen zum Zurücksetzen des Data Marts.
 author: jinniew
 ms.date: 03/21/2022
 ms.topic: article
@@ -13,16 +13,16 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 61c7047096f42e71cde5e9ba1ddc59785383795a
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: d2b20ec7af9f0c6b7899617c2b8fdbf0992d7397
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8714128"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892391"
 ---
 # <a name="data-mart-resets-faq"></a>Zurücksetzen von Data Marts FAQ
 
-In diesem Thema finden Sie Antworten auf einige häufig gestellte Fragen zum Zurücksetzen des Data Marts. Ein Zurücksetzen des Data Mart kann ein zeitaufwändiger Prozess sein und ist je nach den Umständen möglicherweise nicht die Lösung, die benötigt wird. Daher enthält dieses Thema Informationen über Umstände, unter denen ein Data Mart-Reset hilfreich sein kann, und auch über Umstände, unter denen es unwahrscheinlich ist, dass es hilft.
+In diesem Artikel finden Sie Antworten auf einige häufig gestellte Fragen zum Zurücksetzen des Data Marts. Ein Zurücksetzen des Data Mart kann ein zeitaufwändiger Prozess sein und ist je nach den Umständen möglicherweise nicht die Lösung, die benötigt wird. Daher enthält dieser Artikel Informationen über Umstände, unter denen ein Data Mart-Reset hilfreich sein kann, und auch über Umstände, unter denen es unwahrscheinlich ist, dass es hilft.
 
 ## <a name="what-is-a-data-mart-reset"></a>Was ist das Zurücksetzen eines Data Marts?
 

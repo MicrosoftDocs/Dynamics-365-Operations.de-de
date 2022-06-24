@@ -1,6 +1,6 @@
 ---
-title: Planzahlenverrechnungsschlüssel vorhersagen
-description: Dieses Thema enthält Beispiele, die zeigen, wie Sie einen Planzahlenverrechnungsschlüssel einrichten. Er umfasst Informationen zu den verschiedenen Einstellungen der Planzahlenverrechnungsschlüssel und deren Ergebnissen. Mithilfe von Planzahlenverrechnungsschlüsseln wird definiert, wie der Planungsbedarf verringert werden soll.
+title: Planzahlenverrechnungsschlüssel für Prognose
+description: Dieser Artikel enthält Beispiele, die zeigen, wie Sie einen Planzahlenverrechnungsschlüssel einrichten. Er umfasst Informationen zu den verschiedenen Einstellungen der Planzahlenverrechnungsschlüssel und deren Ergebnissen. Mithilfe von Planzahlenverrechnungsschlüsseln wird definiert, wie der Planungsbedarf verringert werden soll.
 author: t-benebo
 ms.date: 04/15/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 054eb28044e532ed2850cde21cb2f9fb5181ae02
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 5cf84598b731e9750e3cf79d312bf0bbf4f8bd81
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468977"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854267"
 ---
-# <a name="forecast-reduction-keys"></a>Planzahlenverrechnungsschlüssel vorhersagen
+# <a name="forecast-reduction-keys"></a>Planzahlenverrechnungsschlüssel für Prognose
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Informationen zu den unterschiedlichen Methoden, die verwendet werden, um die Planungsanforderungen zu reduzieren. Es enthält Beispiele der Ergebnisse der einzelnen Methoden. Es wird auch erklärt, wie Planzahlenverrechnungsschlüsselerstellt, eingerichtet und verwendet werden. Einige Methoden nutzen einen Planzahlenverrechnungsschlüssel, um die Planungsanforderungen zu reduzieren.
+In diesem Artikel finden Sie Informationen zu den verschiedenen Methoden, die zur Reduzierung des Prognosebedarfs verwendet werden. Es enthält Beispiele der Ergebnisse der einzelnen Methoden. Es wird auch erklärt, wie Planzahlenverrechnungsschlüsselerstellt, eingerichtet und verwendet werden. Einige Methoden nutzen einen Planzahlenverrechnungsschlüssel, um die Planungsanforderungen zu reduzieren.
 
 ## <a name="methods-that-are-used-to-reduce-forecast-requirements"></a>Methoden, die zur Reduzierung der Planungsanforderungen verwendet werden
 

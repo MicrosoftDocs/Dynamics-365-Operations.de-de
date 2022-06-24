@@ -1,6 +1,6 @@
 ---
 title: Budgetplanung aktualisieren
-description: In diesem Thema wird erläutert, was umkonfiguriert werden muss und es werden auch neue Funktionen beschrieben, die berücksichtigt werden sollten, wenn die Aktualisierung abgeschlossen ist.
+description: In diesem Artikel wird erläutert, was umkonfiguriert werden muss, und es werden auch neue Funktionen beschrieben, die berücksichtigt werden sollten, wenn die Aktualisierung abgeschlossen ist.
 author: panolte
 ms.date: 04/10/2017
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: panolte
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: c52de15faddd797d31d0875882863b8fe37a7d173b38be058e51a06b2e7fe078
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d098aa77b4eb87118692c18ecd1b09a5de2c53d6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769190"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890405"
 ---
 # <a name="upgrade-budget-planning"></a>Budgetplanung aktualisieren
 
 [!include [banner](../includes/banner.md)]
 
-Zwischen Microsoft Dynamics AX 2012 und Dynamics 365 Finance gibt es erhebliche Unterschiede in der Budgetplanung. Einige Funktionen wurden nicht aktualisiert und erfordern daher eine Rekonfiguration. In diesem Thema wird erläutert, was umkonfiguriert werden muss und es werden auch neue Funktionen beschrieben, die berücksichtigt werden sollten, wenn die Aktualisierung abgeschlossen ist.  
+Zwischen Microsoft Dynamics AX 2012 und Dynamics 365 Finance gibt es erhebliche Unterschiede in der Budgetplanung. Einige Funktionen wurden nicht aktualisiert und erfordern daher eine Rekonfiguration. In diesem Artikel wird erläutert, was umkonfiguriert werden muss, und es werden auch neue Funktionen beschrieben, die berücksichtigt werden sollten, wenn die Aktualisierung abgeschlossen ist.  
 
-Die Budgetplanung in Fiance enthält viele Erweiterungen, die in Dynamics AX 2012 nicht verfügbar waren. In diesem Thema werden die Änderungen erklärt, die Kunden bei einer Aktualisierung durchführen müssen. Es unterstreicht auch die neuen Funktionen, die im Aktualisierungsprozess berücksichtigt werden sollen. Aufgrund der umfangreichen Änderungen können keine vorhandenen Budgetpläne geöffnet werden, bis die Änderungen vorgenommen werden, die in diesem Thema aufgeführt sind. Berichte funktionieren weiterhin und erfordern keine zusätzliche Änderungen.
+Die Budgetplanung in Fiance enthält viele Erweiterungen, die in Dynamics AX 2012 nicht verfügbar waren. In diesem Artikel werden die Änderungen erklärt, die Kunden bei einer Aktualisierung durchführen müssen. Es unterstreicht auch die neuen Funktionen, die im Aktualisierungsprozess berücksichtigt werden sollen. Aufgrund der umfangreichen Änderungen können keine vorhandenen Budgetpläne geöffnet werden, bis die Änderungen vorgenommen werden, die in diesem Artikel aufgeführt sind. Berichte funktionieren weiterhin und erfordern keine zusätzliche Änderungen.
 
 ## <a name="overview-of-changes"></a>Überblick über die Änderungen
 Viele signifikante Veränderungen sind bei der Budgetierung für Finance and Operations vorgenommen worden. Diese Änderungen sind vorgesehen, um die Budgetplanung zu vereinfachen und zu konfigurieren, um die jährliche Wartung und der Setup zu reduzieren. Die folgenden Bereiche in AX 2012 existieren in Finance nicht mehr:
@@ -47,7 +47,7 @@ Spalten sind ein neues Konzept, das Teile der Excel-Vorlagen und auch Matrixfeld
 
 ### <a name="layouts"></a>Layouts
 
-Layouts sind ein neues Konzept, die Excel-Vorlagen ersetzen. Layouts enthalten die Spalten, die definieren, welche Budget- oder Actual-Daten und Perioden angezeigt werden sollten. Layouts werden auch zwischen Client und dem Excel-Add-In freigegeben. Somit ist die Benutzerfreundlichkeit, wenn Sie Daten im Finance and Operations-Client eingeben oder anzeigen besser als die Benutzerfreundlichkeit in AX 2012. Um Daten im Finance-Client einzugeben, sind Sie nicht mehr zum Anzeigen und Eingeben eines einzelnen Szenarios in einer Buchungsansicht beschränkt. Stattdessen können Sie in einer Vergleichsansicht Beträge für mehrere Perioden sowie Konten gleichzeitig anzeigen und eingeben. Layouts können auch so definiert werden, dass Sie Währungen, Kommentare sowie andere optionale Daten eingeben und anzeigen können. In Layouts können Sie auch definieren, welche Sachkontodimensionen und Dimensionsbeschreibungen angezeigt werden sollen. Layouts enthalten auch Szenarioeinschränkungen, um festzulegen, welche Spalten in einer Vorlage geändert werden können und welche Spalten in Excel verfügbar sein sollen. Nachdem Sie ein Layout festlegen, wird ein Original für Sie generiert. Diese Vorlage erstellt wiederum die entsprechende Excel-Vorlage. Sie können die Excel-Vorlagee dann bearbeiten, um mehr Formeln und Formatierungen einzubeziehen und laden sie dann erneut nach oben. Layouts werden dann zu jeder Phasenregel auf der Seite **Budgetplanungsprozess** zugewiesen. Daher ersetzen die Layouts Vorlagen, die auf ähnliche Weise zugeordnet und in ähnlicher Weise angewendet wurden.
+Layouts sind ein neues Konzept, die Excel-Vorlagen ersetzen. Layouts enthalten die Spalten, die definieren, welche Budget- oder Actual-Daten und Perioden angezeigt werden sollten. Layouts werden auch zwischen Client und dem Excel-Add-In freigegeben. Somit ist die Benutzerfreundlichkeit, wenn Sie Daten im Finance and Operations Clients eingeben oder anzeigen besser als die Benutzerfreundlichkeit in AX 2012. Um Daten im Finance-Client einzugeben, sind Sie nicht mehr zum Anzeigen und Eingeben eines einzelnen Szenarios in einer Buchungsansicht beschränkt. Stattdessen können Sie in einer Vergleichsansicht Beträge für mehrere Perioden sowie Konten gleichzeitig anzeigen und eingeben. Layouts können auch so definiert werden, dass Sie Währungen, Kommentare sowie andere optionale Daten eingeben und anzeigen können. In Layouts können Sie auch definieren, welche Sachkontodimensionen und Dimensionsbeschreibungen angezeigt werden sollen. Layouts enthalten auch Szenarioeinschränkungen, um festzulegen, welche Spalten in einer Vorlage geändert werden können und welche Spalten in Excel verfügbar sein sollen. Nachdem Sie ein Layout festlegen, wird ein Original für Sie generiert. Diese Vorlage erstellt wiederum die entsprechende Excel-Vorlage. Sie können die Excel-Vorlagee dann bearbeiten, um mehr Formeln und Formatierungen einzubeziehen und laden sie dann erneut nach oben. Layouts werden dann zu jeder Phasenregel auf der Seite **Budgetplanungsprozess** zugewiesen. Daher ersetzen die Layouts Vorlagen, die auf ähnliche Weise zugeordnet und in ähnlicher Weise angewendet wurden.
 
 ### <a name="budget-planning-processes"></a>Budgetplanungsprozesse
 
@@ -58,7 +58,7 @@ Budgetplanungsprozesse sind meistens gleich wie jene in AX 2012. Die signifikant
 Im AX 2012 wurden Begründungsdokumente in einem Anhangordner gespeichert. Keine vorherigen Begründungsdokumente werden aktualisiert. Begründungsdokumente werden nun in der Datenbank gespeichert. Wenn diese Informationen in der aktualisierten Version gespeichert werden, können Sie Begründungsdokumente endgültig für jeden Plan als Anhang hochladen, indem Sie die **Begründung** im Aktivitätsbereich verwenden. In AX 2012 wurden Excel-Arbeitsblätter für jeden Budgetplan auf der Vorlage erstellt. In Finane öffnen alle Pläne eine Kopie des Layouts. Allerdings werden keine Änderungen zur Excel-Datei gespeichert. Alle Formeln oder unterstützenden Informationen, die auf einer ProPlan-Grundlage verwendet wurden, müssen über Kommentare, ein Begründungsdokument oder einen anderen Prozess ergänzend hinzugefügt werden.
 
 ## <a name="configuring-an-upgraded-environment-from-ax-2012"></a>Konfigurieren einer aktualisierten Umgebung von AX 2012
-Um einfach zu bestimmen, wie die Aktualisierung für das System konfiguriert werden soll, nutzen die folgenden Beispiele einen aktualisierten Budgetprozess aus den AX 2012-Demodaten. Standardkonfigurationsdaten für Spalten wurden erstellt, die für gerundete Aktualisierungsprozesse nützen können. Sie können diese Standarddaten aktualisieren oder löschen, wenn sie Ihre Konfigurationsbedingungen nicht erfüllen. **Hinweis:** Es gibt neue Pflichtfelder, die nicht im System eingerichtet werden. Wenn Sie auf einer Seite festsitzen wie der Seite **Budgetplanungskonfiguration** und nicht weiter navigieren können, können Sie Ihren Browser schließen und ihn in einer anderen Seite erneut öffnen, um Details in der richtigen Reihenfolge einzugeben. Es gibt Pflichtfelder, die noch nicht festgelegt werden. Daher können möglicherweise Probleme auftreten, bis alles konfiguriert und alle Pflichtfelder festgelegt wurden. In diesem Thema wird erläutert, wie Sie diese Felder einrichten, sofern erforderlich. Hier sind einige dieser erforderlichen Felder:
+Um einfach zu bestimmen, wie die Aktualisierung für das System konfiguriert werden soll, nutzen die folgenden Beispiele einen aktualisierten Budgetprozess aus den AX 2012-Demodaten. Standardkonfigurationsdaten für Spalten wurden erstellt, die für gerundete Aktualisierungsprozesse nützen können. Sie können diese Standarddaten aktualisieren oder löschen, wenn sie Ihre Konfigurationsbedingungen nicht erfüllen. **Hinweis:** Es gibt neue Pflichtfelder, die nicht im System eingerichtet werden. Wenn Sie auf einer Seite festsitzen wie der Seite **Budgetplanungskonfiguration** und nicht weiter navigieren können, können Sie Ihren Browser schließen und ihn in einer anderen Seite erneut öffnen, um Details in der richtigen Reihenfolge einzugeben. Es gibt Pflichtfelder, die noch nicht festgelegt werden. Daher können möglicherweise Probleme auftreten, bis alles konfiguriert und alle Pflichtfelder festgelegt wurden. In diesem Artikel wird erläutert, wie Sie diese Felder einrichten, sofern erforderlich. Hier sind einige dieser erforderlichen Felder:
 
 -   Seite **Budgetplanungsprozess** : Feld **Standardkontostruktur**
 -   Seite **Budgetplanungsprozess** : Feld **Layout** auf dem Inforegister **Budgetplanungsphasenregeln und -Layouts**
@@ -69,7 +69,7 @@ Um einfach zu bestimmen, wie die Aktualisierung für das System konfiguriert wer
    -   Budgetplanszenarien: Wirklichkeiten, Basiszeitraum, Budget-Anforderung, Budget genehmigt
    -   Budgetplanpositionen für alle Szenarien im Jahre 2017 und 2017 und 2016 Actuals
 
-   Die folgenden Spalten werden in Finance and Operations erstellt:
+   Die folgenden Spalten sind in Finance and Operations erstellt:
 
    | Spaltenname    | Budgetplanszenario | Zeitperiode der Spalte | Jahresausgleich |
    |----------------|----------------------|--------------------|-------------|

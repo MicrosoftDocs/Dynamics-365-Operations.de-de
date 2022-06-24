@@ -1,6 +1,6 @@
 ---
 title: Änderungsmanagement für vorhandene Produkte aktivieren
-description: Dieses Thema erklärt, wie Sie die Änderungsverwaltung für bestehende Produkte aktivieren können. Es beschreibt auch Fälle, in denen Ihre Möglichkeiten zur Aktivierung der Änderungsverwaltung eingeschränkt sind.
+description: Dieser Artikel erklärt, wie Sie die Änderungsverwaltung für bestehende Produkte aktivieren können. Es beschreibt auch Fälle, in denen Ihre Möglichkeiten zur Aktivierung der Änderungsverwaltung eingeschränkt sind.
 author: t-benebo
 ms.date: 02/05/2021
 ms.topic: article
@@ -12,24 +12,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e356ef8339f8f71965bf9313e14fed3d0810152d
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9f99529abebdf5490f158c6f0a7be4519449e9f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103612"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893467"
 ---
 # <a name="enable-change-management-on-existing-products"></a>Änderungsmanagement für vorhandene Produkte aktivieren
 
 [!include [banner](../../includes/banner.md)]
 
-Dieses Thema erklärt, wie Sie die Änderungsverwaltung für bestehende Produkte aktivieren können. Es beschreibt auch Fälle, in denen Ihre Möglichkeiten zur Aktivierung der Änderungsverwaltung eingeschränkt sind.
+Dieser Artikel erklärt, wie Sie die Änderungsverwaltung für bestehende Produkte aktivieren können. Es beschreibt auch Fälle, in denen Ihre Möglichkeiten zur Aktivierung der Änderungsverwaltung eingeschränkt sind.
 
 Wenn Sie die Änderungsverwaltung für ein bestehendes Produkt aktivieren, können Sie Versionen dieses Produkts erstellen und Änderungen, die daran vorgenommen werden, während seiner gesamten Lebensdauer verfolgen. Daher können Sie diese Änderungen mit Hilfe von Änderungsaufträgen nachverfolgen. Um die Änderungsverwaltung zu aktivieren, müssen Sie die entsprechenden Produkte in *technische Artikel* (auch als technische Produkte bezeichnet) umwandeln. Technische Produkte sind Produkte, die versioniert sind und über die Änderungsverwaltung verwaltet werden. Ein Assistent führt Sie durch den Konvertierungsprozess.
 
 ## <a name="turn-this-feature-on-or-off"></a>Schalten Sie diese Funktion ein oder aus
 
-Für die in diesem Thema beschriebene Funktionalität müssen die Funktionen *Verwaltung für technische Änderung* und *Änderungsmanagement für vorhandene Produkte aktivieren* für Ihr System eingeschaltet sein. Einzelheiten zum Ein- und Ausschalten dieser Funktionen finden Sie unter [Verwaltung für technische Änderung – Übersicht](product-engineering-overview.md).
+Für die in diesem Artikel beschriebene Funktionalität müssen die Funktionen *Verwaltung für technische Änderung* und *Änderungsmanagement für vorhandene Produkte aktivieren* für Ihr System eingeschaltet sein. Einzelheiten zum Ein- und Ausschalten dieser Funktionen finden Sie unter [Verwaltung für technische Änderung – Übersicht](product-engineering-overview.md).
 
 ## <a name="restrictions-and-limitations"></a>Beschränkungen und Einschränkungen
 
@@ -38,7 +38,7 @@ Nicht alle Produkttypen können in alle anderen Typen umgewandelt werden. Es gel
 - Wenn Sie ein Produkt in ein technisches Produkt umwandeln, bleibt es ein *Produkt*. Es wird nicht zu einem *Produktstamm*.
 - Wenn Sie einen Produktstamm konvertieren, der eine bestimmte festgelegte Anzahl von Dimensionen hat, werden diese Dimensionen nach der Änderung beibehalten. Wenn Sie z. B. einen Produktstamm konvertieren, der die Dimension „Größe“ hat, wird die Dimension „Größe“ beibehalten.
 
-Wenn Sie also ein eindeutiges Produkt haben, können Sie es nur in ein technisches Produkt umwandeln, das die Produktdimension in Transaktionen nicht verfolgt (d.h. die Versionsverwaltung wird nicht verwendet). In den übrigen Abschnitten dieses Themas finden Sie weitere Informationen zu diesen Themen.
+Wenn Sie also ein eindeutiges Produkt haben, können Sie es nur in ein technisches Produkt umwandeln, das die Produktdimension in Transaktionen nicht verfolgt (d.h. die Versionsverwaltung wird nicht verwendet). In den übrigen Abschnitten dieses Artikels finden Sie weitere Informationen zu diesen Themen.
 
 ## <a name="prepare-for-conversion-by-creating-all-required-engineering-product-categories"></a>Bereiten Sie die Konvertierung vor, indem Sie alle erforderlichen Kategorien für technische Produkte erstellen
 
@@ -81,7 +81,7 @@ Führen Sie die folgenden Schritte aus, um den Assistenten **In technisches Prod
 
     - **Produktnummer** - Die Produktnummer.
     - **Produktname** - Der Name des Produkts.
-    - **Technische Kategorie** - Wählen Sie die Kategorie des technischen Produkts, zu der das Produkt nach der Umwandlung gehören soll. Für jedes Produkt muss bereits eine passende Kategorie vorhanden sein, wie im vorigen Abschnitt dieses Themas erklärt wurde. Sie müssen jedem Produkt eine Kategorie zuweisen.
+    - **Technische Kategorie** - Wählen Sie die Kategorie des technischen Produkts, zu der das Produkt nach der Umwandlung gehören soll. Für jedes Produkt muss bereits eine passende Kategorie vorhanden sein, wie im vorigen Abschnitt dieses Artikels erklärt wurde. Sie müssen jedem Produkt eine Kategorie zuweisen.
     - **Version** - Geben Sie die Produktversion ein, die dem Produkt nach der Konvertierung zugewiesen werden soll. Sie können zum Beispiel eine Nummer wählen, die in die Sequenz passt, die Ihre Kategorie bereits verwendet. Jede Engineering-Version speichert die Engineering-relevanten Daten, die spezifisch für diese Version sind. Weitere Informationen finden Sie unter [Engineering-Versionen und Engineering-Produktkategorien](engineering-versions-product-category.md).
     - **Produktlebenszyklusstatus** - Wählen Sie den Llebenszyklusstatus, in dem sich das Produkt nach der Konvertierung befinden soll. Mit dem Llebenszyklusstatus des Produkts können Sie steuern, welche Transaktionen für eine bestimmte technische Version erlaubt sind. Weitere Informationen finden Sie unter [Produktlebenszyklusstatus und Transaktionen](product-lifecycle-state-transactions.md).
     - **Hat Stückliste** - Ein aktiviertes Kontrollkästchen zeigt an, dass das Produkt eine Stückliste hat. Die Einstellung dieses Kontrollkästchens kann Ihnen helfen zu entscheiden, wie Sie das Kontrollkästchen **Aktuelle Stückliste wird Teil des technischen Produkts** festlegen.

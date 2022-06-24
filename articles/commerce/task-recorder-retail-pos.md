@@ -1,6 +1,6 @@
 ---
 title: Aufgabenaufzeichnung und Hilfe für Retail Modern POS (MPOS) und Cloud POS
-description: In diesem Thema wird beschrieben, wie Aufgabenaufzeichnung in Retail Modern POS und Cloud POS verwendet werden.
+description: In diesem Artikel wird beschrieben, wie Aufgabenaufzeichnung in Retail Modern POS und Cloud POS verwendet werden.
 author: mugunthanm
 ms.date: 06/19/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: aedf18ef8b3d7266f3e5c7acd676241f9ec8b900f061f5363cd8d581062e83ed
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f9f3e17a6c67dc1cc1d4ba423ce258f2ed1d1ec0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730754"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847599"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Aufgabenaufzeichnung und Hilfe für Retail Modern POS (MPOS) und Cloud POS
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Aufgabenaufzeichnung in Retail Modern POS und Cloud POS verwendet werden.
+In diesem Artikel wird beschrieben, wie Aufgabenaufzeichnung in Retail Modern POS und Cloud POS verwendet werden.
 
 ## <a name="overview"></a>Übersicht
 
@@ -139,7 +139,7 @@ Damit Ihre eigenen benutzerdefinierten Aufgabenaufzeichnungen im Hilfebereich vo
 
 [![Schaltfläche „Hilfe“.](./media/help.jpg)](./media/help.jpg)
 
-Wenn Sie auf einen Aufgabenleitfaden in den Suchergebnissen klicken, können Sie entweder die Schritte als Hilfethema anzeigen oder die Schritte in ein Word-Dokument exportieren.
+Wenn Sie auf einen Aufgabenleitfaden in den Suchergebnissen klicken, können Sie entweder die Schritte als Hilfeartikel anzeigen oder die Schritte in ein Word-Dokument exportieren.
 
 > [!NOTE]
 > Hilfe in modernem Retail Modern POS und Cloud POS zeigt Aufgabenleitfäden nicht entsprechend der Form oder dem Arbeitsgang an, bei dem Sie sich befinden. Sie müssen den Prozeßnamen im Suchfeld eingeben und dann **Suchen** klicken.

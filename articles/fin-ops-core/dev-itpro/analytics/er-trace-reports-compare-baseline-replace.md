@@ -1,6 +1,6 @@
 ---
-title: Verbesserungen bei der Nachverfolgung erstellter ER-Berichtsergebnisse und Vergleich mit Ausgangswerten
-description: In diesem Thema werden Verbesserungen der EB-Basisfunktion in Microsoft Dynamics 365 for Finance and Operations Version 10.0.3 (Juni 2019) beschrieben.
+title: Nachverfolgung der erstellten EB-Berichtsergebnisse verbessern, um sie mit Ausgangswerten zu vergleichen
+description: In diesem Artikel werden Verbesserungen der EB-Basisfunktion in Microsoft Dynamics 365 for Finance and Operations Version 10.0.3 (Juni 2019) beschrieben.
 author: NickSelin
 ms.date: 06/19/2019
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: b6e8299dd57730486c731cd38578bd5ff6b8a1754f145432e300c1217c6dd640
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3b9ac7dcac4d020759d04fec75e17c43ed627e25
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760749"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847400"
 ---
-# <a name="improve-tracing-the-results-of-generated-er-reports-to-compare-with-baseline-values"></a>Verbesserungen bei der Nachverfolgung erstellter ER-Berichtsergebnisse und Vergleich mit Ausgangswerten
+# <a name="improve-tracing-the-results-of-generated-er-reports-to-compare-with-baseline-values"></a>Nachverfolgung der erstellten EB-Berichtsergebnisse verbessern, um sie mit Ausgangswerten zu vergleichen
 
 [!include[banner](../includes/banner.md)]
 
-In diesem Thema wird der erste Satz an Verbesserungen beschrieben, die an der Grundlagenfunktion des Frameworks der elektronischen Berichterstattung (ER) erfolgt sind. Diese Verbesserungen sind in Microsoft Dynamics 365 for Finance and Operations Version 10.0.3 (Juni 2019) und später verfügbar.
+In diesem Artikel werden die ersten Verbesserungen beschrieben, die an der Grundfunktion des Frameworks der elektronischen Berichtererstellung (EB) erfolgt sind. Diese Verbesserungen sind in Microsoft Dynamics 365 for Finance and Operations Version 10.0.3 (Juni 2019) und später verfügbar.
 
 ## <a name="automate-the-setting-of-baseline-rules"></a>Automatisieren Sie die Struktur der Grundlagenregeln
 
-Im Thema [Von Trace generierte Berichtergebnisse und deren Vergleich mit Grundwerten](er-trace-reports-compare-baseline.md) wird erläutert, wie das ER-Framework konfiguriert werden muss, um Informationen zu ER-Formatausführungen gesammelt und die Ergebnisse dieser Durchläufe bewertet werden. Das Beispiel in diesem Thema zeigt die Schritte an, die abgeschlossen werden müssen.
+Im Artikel [Erstellte Berichtsergebnisse nachverfolgen und mit Ausgangswerten vergleichen](er-trace-reports-compare-baseline.md) wird erläutert, wie das EB-Framework konfiguriert werden muss, um Informationen zu EB-Formatausführungen zu sammeln und die Ergebnisse dieser Durchläufe zu bewerten. Das Beispiel in diesem Artikel zeigt die Schritte, die abgeschlossen werden müssen.
 
 Beispiele für solche Schritte:
 
@@ -45,7 +45,7 @@ Beispiele für solche Schritte:
 
 ## <a name="example-automate-the-setting-of-baseline-rules"></a>Beispiel: Automatisieren Sie die Struktur der Grundlagenregeln
 
-Um die Schritte dieses Beispiels abzuschließen, müssen Sie zunächst die Schritte im Beispiel im Thema [Nachverfolgung erstellter Berichtsergebnisse und Vergleich mit Ausgangswerten](er-trace-reports-compare-baseline.md) bis durch den Abschnitt „Fügen Sie eine neue Grundlage für ein entworfenes ER-Format hinzu“ abschließen.
+Um die Schritte dieses Beispiels abzuschließen, müssen Sie zunächst die Schritte des Beispiels im Artikel [Erstellte Berichtsergebnisse nachverfolgen und mit Ausgangswerten vergleichen](er-trace-reports-compare-baseline.md) bis zum Abschnitt „Fügen Sie eine neue Grundlage für ein entworfenes EB-Format hinzu“ abschließen.
 
 ### <a name="review-added-baseline"></a>Prüfung des hinzugefügten Grundwerts
 
@@ -80,7 +80,7 @@ Der Grundwert wurde für das ausgewählte Format **Format zum erlernen der ER-Gr
 
 ### <a name="run-the-format"></a>Das Format ausführen
 
-Sie können nun die verbleibenden Schritte im Beispiel im Thema [Nachverfolgung erstellter Berichtsergebnisse und Vergleich mit Ausgangswerten](er-trace-reports-compare-baseline.md) abschließen. Sie können mit „Führen Sie das entworfene ER-Format aus und prüfen Sie das Protokoll, um die Ergebnisse zu analysieren“ beginnen.
+Sie können nun die verbleibenden Schritte im Beispiel im Artikel [Erstellte Berichtsergebnisse nachverfolgen und mit Ausgangswerten vergleichen](er-trace-reports-compare-baseline.md) abschließen. Sie können mit „Führen Sie das entworfene EB-Format aus und prüfen Sie das Protokoll, um die Ergebnisse zu analysieren“ beginnen.
 
 > [!NOTE]
 > Wenn Sie den automatisch auf dem Inforegister **Ausgangswerte** hinzugefügte Ausgangswert löschen, wird die referenzierte Zuordnung nicht automatisch gelöscht.
@@ -91,7 +91,7 @@ Wenn ein ER-Format konzipiert wurde, um Informationen zu enthalten, die geänder
 
 ## <a name="example-configure-the-baseline-so-that-it-ignores-constantly-changing-parts-of-the-er-output"></a>Beispiel: Konfigurieren Sie den Ausgangswert, sodass er sich konstant ändernde Teile der ER-Ausgabe ignoriert.
 
-Um die Schritte dieses Beispiels abzuschließen, müssen Sie zunächst die Schritte im Beispiel im Thema [Nachverfolgung erstellter Berichtsergebnisse und Vergleich mit Ausgangswerten](er-trace-reports-compare-baseline.md) abschließen.
+Um die Schritte dieses Beispiels abzuschließen, müssen Sie zunächst die Schritte des Beispiels im Artikel [Erstellte Berichtsergebnisse nachverfolgen und mit Ausgangswerten vergleichen](er-trace-reports-compare-baseline.md) abschließen.
 
 ### <a name="modify-a-configured-er-format"></a>Ändern eines konfigurierten ER-Formats
 
@@ -142,7 +142,7 @@ Die ausgewählte ER-Formatkomponente wurde der Liste der Komponenten auf dem Inf
 
 ### <a name="make-a-new-baseline-rule"></a>Erstellen eines neuen Grundwertregel
 
-Führen Sie die Schritte im Abschnitt „Beispiel: Automatisieren Sie die Struktur der Grundlagenregeln“ oben in diesem Thema aus. Eine Benachrichtigung warnt Sie, dass die ausgehende Datei mit Ausgangswerteinstellungen erstellt wurde, und dass eine erzwungene Ersetzung der Formatbindungen aufgetreten ist.
+Führen Sie die Schritte im Abschnitt „Beispiel: Automatisieren Sie die Struktur der Grundlagenregeln“ oben in diesem Artikel aus. Eine Benachrichtigung warnt Sie, dass die ausgehende Datei mit Ausgangswerteinstellungen erstellt wurde, und dass eine erzwungene Ersetzung der Formatbindungen aufgetreten ist.
 
 ![Benachrichtigung auf der Seite Konfigurationen.](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Screenshot der Benachrichtigung auf der Seite Konfigurationen")
 

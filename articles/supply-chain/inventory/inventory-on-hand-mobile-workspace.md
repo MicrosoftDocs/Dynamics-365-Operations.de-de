@@ -1,6 +1,6 @@
 ---
 title: Verfügbarer Lagerbestand, mobiler Arbeitsbereich
-description: Dieses Thema enthält Informationen zum mobilen Arbeitsbereich für Lagerbestand. Dieser Arbeitsbereich bietet mobile Einblicke in reservierten und zur verfügbaren Bestand, jederzeit und überall.
+description: Dieser Artikel enthält Informationen zum mobilen Arbeitsbereich für Lagerbestand. Dieser Arbeitsbereich bietet mobile Einblicke in reservierten und zur verfügbaren Bestand, jederzeit und überall.
 author: yufeihuang
 ms.date: 05/24/2022
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.industry: Manufacturing
 ms.author: yufeihuang
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: b380da99b02fe9b7cd834eabac3498ee3b8e54a4
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: d493164b754b86a9df9ce4dcf9df8b20eeb55c5c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811465"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859429"
 ---
 # <a name="inventory-on-hand-mobile-workspace"></a>Verfügbarer Lagerbestand, mobiler Arbeitsbereich
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
-Dieses Thema enthält Informationen zum mobilen Arbeitsbereich **Lagerbestand**. Dieser Arbeitsbereich bietet Einblicke in reservierten und verfügbaren Bestand, jederzeit und überall.
+Dieser Artikel enthält Informationen zum mobilen Arbeitsbereich für **Lagerbestand**. Dieser Arbeitsbereich bietet Einblicke in reservierten und verfügbaren Bestand, jederzeit und überall.
 
 Dieser mobile Arbeitsbereich soll mit der mobilen App für Finanz und Betrieb (Dynamics 365)-App verwendet werden.
 

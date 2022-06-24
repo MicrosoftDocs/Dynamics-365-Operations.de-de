@@ -1,6 +1,6 @@
 ---
-title: Qualitätsmanagement für Lagerortprozesse
-description: Dieses Thema enthält Informationen zur Funktion „Qualitätsmanagement für Lagerortprozesse“. Diese Funktion erweitert die Funktionen des Qualitätsmanagements und ermöglicht Benutzern, mithilfe der erweiterten Lagerverwaltung Steuerelemente für die Probenahme von Artikeln in den Wareneingangsprozess zu integrieren.
+title: Qualitätsmanagement bei Lagerortprozessen
+description: Diesee Artikel enthält Informationen zur Funktion „Qualitätsmanagement für Lagerortprozesse“. Diese Funktion erweitert die Funktionen des Qualitätsmanagements und ermöglicht Benutzern, mithilfe der erweiterten Lagerverwaltung Steuerelemente für die Probenahme von Artikeln in den Wareneingangsprozess zu integrieren.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: a8a7ac8266c14791137f9eda51b5abb5a59e5961
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 7f806b58c5e956e4f26158e8ea5c90a559296655
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679050"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857836"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Qualitätsmanagement für Lagerortprozesse
 
@@ -69,7 +69,7 @@ Bevor Lagerarbeiten automatisch generiert werden können, um den Bestand zur Qua
 1. Richten Sie für jeden Arbeitsauftragstyp Lagerplatzrichtlinien ein, die den Bestand an die richtigen Orte für die Qualitätskontrolle verschieben. Nach Abschluss der Qualitätskontrolle stellt die Lagerplatzrichtlinie für den Arbeitsauftragstyp _Qualitätsprüfungsauftrag_ sicher, dass ein neuer Zielort ausgewählt wird, damit der Bestand vom Ort für die Qualitätskontrolle verschoben werden kann.
 1. Richten Sie die entsprechenden Menüoptionen für mobile Geräte ein, um die Verschiebung des empfangenen Bestands zum Ort für die Qualitätskontrolle und die Verschiebung des Bestands, der die Qualitätskontrolle besteht oder nicht besteht, vom Ort für die Qualitätskontrolle an einen neuen Ort zu unterstützen.
 
-Ein Schritt-fürSchritt-Beispiel für die Durchführung dieser Einrichtung finden Sie im [Beispielszenario](#example-scenario) am Ende dieses Themas.
+Ein Schritt-für Schritt-Beispiel für die Durchführung dieser Einrichtung finden Sie im [Beispielszenario](#example-scenario) am Ende dieses Artikels.
 
 ## <a name="enable-a-warehouse-for-quality-management"></a>Vorbereiten eines Lagerortes für das Qualitätsmanagement
 
@@ -188,7 +188,7 @@ Der Wert **Referenztyp** für die folgenden Beispiele lautet _Kauf_ und der Wert
 | Last | Vollständiger Ladungsträger | Ja _(gesperrt/nicht bearbeitbar)_ | <p>Lagerort: Ja</p><p>Kennzeichen: Ja _(gesperrt/nicht bearbeitbar)_</p> | Ja | 3 | <p>**Zwei Artikel:**</p><ul><li>**Auftragspositionsmenge für Artikel A: 120 EA (4 Paletten)**</li><li>**Auftragspositionsmenge für Artikel B: 90 EA (3 Paletten)**</li></ul><p>**Eine Ladung, zwei Ladungspositionen für jede Auftragsposition**</p><ol><li>Registrieren des Empfangs in der Warehouse Management Mobile App für Artikel A, 30 EA, LP1<p>Qualitätsartikelmuster-Arbeit für 30 EA</p><p>Qualitätsprüfungsauftrag 1 für 30 EA</p></li><li>Registrieren des Empfangs in der Warehouse Management Mobile App für Artikel A, 30 EA, LP2<p>Bestellungsarbeit für 30 EA (Einlagerung)</p></li><li>Registrieren des Empfangs in der Warehouse Management Mobile App für Artikel A, 30 EA, LP3<p>Bestellungsarbeit für 30 EA (Einlagerung)</p></li><li>Registrieren des Empfangs in der Warehouse Management Mobile App für Artikel A, 30 EA, LP4<p>Qualitätsartikelmuster-Arbeit für 30 EA</p><p>Qualitätsprüfungsauftrag 1 für 30 EA</p></li><li>Registrieren des Empfangs in der Warehouse Management Mobile App für Artikel B, 30 EA, LP5<p>Qualitätsartikelmuster-Arbeit für 30 EA</p><p>Qualitätsprüfungsauftrag 1 für 30 EA</p></li><li>Registrieren des Empfangs in der Warehouse Management Mobile App für Artikel B, 30 EA, LP6<p>Bestellungsarbeit für 30 EA (Einlagerung)</p></li><li>Registrieren des Empfangs in der Warehouse Management Mobile App für Artikel A, 30 EA, LP7<p>Bestellungsarbeit für 30 EA (Einlagerung)</p></li></ol> |
 | Last | Prozent = 10 | Ja _(gesperrt/nicht bearbeitbar)_ | <p>Lagerort: Nein</p><p>Kennzeichen: Nein</p> | Nein | Nicht zutreffend | <p>**Auftragspositionsmenge: 100 EA**</p><p>**Es werden keine Ladungen erstellt. Der Auftragsumfang wird angewendet.**</p><ol><li>Registrieren des Empfangs in der Warehouse Management Mobile App für 50 EA, LP1<p>Qualitätsartikelmuster-Arbeit für 5 EA</p><p>Qualitätsprüfungsauftrag 1 für 5 EA</p><p>Bestellungsarbeit für 45 EA (Einlagerung)</p></li><li>Registrieren des Empfangs in der Warehouse Management Mobile App für 50 EA, LP2<p>Qualitätsartikelmuster-Arbeit für 5 EA</p><p>Qualitätsprüfungsauftrag 1 für 5 EA</p><p>Bestellungsarbeit für 45 EA (Einlagerung)</p></li></ol> |
 
-Wenn eine Arbeitskraft eine der in der vorherigen Tabelle aufgeführten Qualitätszuordnungen prüft, generiert das System automatisch Arbeit für Qualitätsprüfungsaufträge, um Bestand vom Ort für die Qualitätskontrolle an den Ort zu verschieben, der in der Lagerplatzrichtlinie für den Arbeitsauftragstyp _Qualitätsprüfungsauftrag_ definiert ist. Abhängig vom Testergebnis für den Qualitätsprüfungsauftrag können Sie zu diesem Zweck einen beliebigen Ort einrichten, z. B. einen Rückgabe- oder Lagerort. Ein Beispiel für diese Einrichtung finden Sie im [Beispielszenario](#example-scenario) am Ende dieses Themas.
+Wenn eine Arbeitskraft eine der in der vorherigen Tabelle aufgeführten Qualitätszuordnungen prüft, generiert das System automatisch Arbeit für Qualitätsprüfungsaufträge, um Bestand vom Ort für die Qualitätskontrolle an den Ort zu verschieben, der in der Lagerplatzrichtlinie für den Arbeitsauftragstyp _Qualitätsprüfungsauftrag_ definiert ist. Abhängig vom Testergebnis für den Qualitätsprüfungsauftrag können Sie zu diesem Zweck einen beliebigen Ort einrichten, z. B. einen Rückgabe- oder Lagerort. Ein Beispiel für diese Einrichtung finden Sie im [Beispielszenario](#example-scenario) am Ende dieses Artikels.
 
 Sie können einen bereits validierten Qualitätsprüfungsauftrag erneut öffnen, falls die Arbeit für den Qualitätsprüfungsauftrag, die mit dem Verschieben des Bestands vom Ort für die Qualitätskontrolle zusammenhängt, nicht über einen Wert **Arbeitsstatus** von *Geschlossen* oder *In Bearbeitung* verfügt.
 

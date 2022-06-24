@@ -1,6 +1,6 @@
 ---
-title: Erstellen von Regeln für Optimierungsratgeber
-description: In diesem Thema wird erläutert, wie dem Optimierungsratgeber neue Regeln hinzufügt werden.
+title: Regeln für Optimierungsratgeber erstellen
+description: In diesem Artikel wird erläutert, wie dem Optimierungsratgeber neue Regeln hinzufügt werden.
 author: roxanadiaconu
 ms.date: 02/04/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: sericks
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: a65a71da066d70cafc641aafe21538830a9ebe56b607316570ea2435398cda1c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1b1d9b14cb67b1dd0a961f6f8618de37147a2c52
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734663"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850904"
 ---
-# <a name="create-rules-for-optimization-advisor"></a>Erstellen von Regeln für Optimierungsratgeber
+# <a name="create-rules-for-optimization-advisor"></a>Regeln für Optimierungsratgeber erstellen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erklärt, wie neue Regeln für den **Optimierungsratgeber** erstellt werden. Sie können beispielsweise eine neue Regel erstellen, die angibt, welche Angebotsanforderungsanfragen einen leeren Titel haben. Durch das Verwenden von Titeln bei Anfragen können sie leicht identifiziert und gesucht werden. Während es ziemlich einfach ist, zeigt dieses Beispiel, was mit Optimierungsregeln erreicht werden kann. 
+In diesem Artikel wird erklärt, wie neue Regeln für den **Optimierungsratgeber** erstellt werden. Sie können beispielsweise eine neue Regel erstellen, die angibt, welche Angebotsanforderungsanfragen einen leeren Titel haben. Durch das Verwenden von Titeln bei Anfragen können sie leicht identifiziert und gesucht werden. Während es ziemlich einfach ist, zeigt dieses Beispiel, was mit Optimierungsregeln erreicht werden kann. 
 
 Eine *Regel* ist eine Prüfung von Anwendungsdaten. Wenn die Bedingung, nach der die Regel bewertet, erfüllt ist, werden Verkaufschancen zum Optimieren von Prozessen oder zum Verbessern von Daten erstellt. Auf die Verkaufschancen hin kann gehandelt werden oder optional kann die Auswirkung der Aktivitäten auch gemessen werden. 
 

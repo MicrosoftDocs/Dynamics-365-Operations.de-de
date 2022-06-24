@@ -1,6 +1,6 @@
 ---
 title: Framework zur Prozessanleitung
-description: Dieses Thema enthält Informationen zum Prozessleitfaden-Framework für Entwickler, die unsere mobilen Lagerprozesse in X++ erweitern.
+description: Dieser Artikel enthält Informationen zum Prozessleitfaden-Framework für Entwickler, die unsere mobilen Lagerprozesse in X++ erweitern.
 author: Mirzaab
 ms.date: 11/01/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 6882c979ad9b37eb4f95a04259b6ac0f0a0edcdc
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: e88f32e0347a808d03615cf85e50b1592d691670
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902045"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860434"
 ---
 # <a name="process-guide-framework"></a>Framework zur Prozessanleitung
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Informationen zum Prozessleitfaden-Framework für Entwickler, die die mobilen Lagerprozesse in X++ erweitern. Durch die Aufteilung der Prozesse in kleine Schritte sind die mobilen Prozesse am Lagerort erweiterbar. Die Geschäftslogik und das Erstellen der Benutzeroberfläche jedes Schritts wurden in einzelne Klassen extrahiert, was eine Erweiterbarkeit ermöglicht.
+Dieser Artikel enthält Informationen zum Prozessleitfaden-Framework für Entwickler, die die mobilen Lagerprozesse in X++ erweitern. Durch die Aufteilung der Prozesse in kleine Schritte sind die mobilen Prozesse am Lagerort erweiterbar. Die Geschäftslogik und das Erstellen der Benutzeroberfläche jedes Schritts wurden in einzelne Klassen extrahiert, was eine Erweiterbarkeit ermöglicht.
 
 ## <a name="overview-of-the-existing-design"></a>Überblick über das bestehende Design
 
@@ -321,7 +321,7 @@ public class ProdProcessGuideConfirmProductionOrderPageBuilder extends ProcessGu
 ```
 
 > [!NOTE]
-> Sie finden denselben Quellcode für die X++-Methoden in diesem Thema mithilfe des Anwendungs-Explorers. Filtern Sie nach dem Klassennamen, klicken Sie dann mit der rechten Maustaste auf den Klassennamen und wählen Sie **Code anzeigen**.
+> Sie finden denselben Quellcode für die X++-Methoden in diesem Artikel mithilfe des Anwendungs-Explorers. Filtern Sie nach dem Klassennamen, klicken Sie dann mit der rechten Maustaste auf den Klassennamen und wählen Sie **Code anzeigen**.
 
 ### <a name="step-3-start-the-production-order"></a>Schritt 3: Den Produktionsauftrag starten
 
@@ -421,7 +421,7 @@ Dabei fordert er den Schritt auf, eine Aktionsklasse für den übergebenen Namen
 
 ### <a name="summary"></a>Übersicht
 
-Um alles zusammenzufassen, was in diesem Thema erklärt wurde, finden Sie hier eine umfassende Zusammenfassung des für den Prozess erforderlichen Codes:
+Um alles zusammenzufassen, was in diesem Artikel erklärt wurde, finden Sie hier eine umfassende Zusammenfassung des für den Prozess erforderlichen Codes:
 
 1.  **ProdProcessGuideProductionStartController**
 
@@ -570,7 +570,7 @@ Um alles zusammenzufassen, was in diesem Thema erklärt wurde, finden Sie hier e
         ```
 
         > [!NOTE]
-        > Die **generateItemInfoForProdId()**-Methode, die zum Generieren der Artikelinformationsetiketten verwendet wird, ist von diesem Thema ausgeschlossen. Diese Methode fragt einige Tabellen ab, um Artikel-ID, Beschreibung und Abmessungen abzurufen. Wenn Sie ein besseres Verständnis von **generateItemInfoForProdId()** erhalten möchten, schauen Sie sich den Quellcode an.
+        > Die **generateItemInfoForProdId()**-Methode, die zum Generieren der Artikelinformationsetiketten verwendet wird, ist von diesem Artikel ausgeschlossen. Diese Methode fragt einige Tabellen ab, um Artikel-ID, Beschreibung und Abmessungen abzurufen. Wenn Sie ein besseres Verständnis von **generateItemInfoForProdId()** erhalten möchten, schauen Sie sich den Quellcode an.
 
 4.  **ProdProcessGuideStartProductionOrderStep**
 
@@ -605,7 +605,7 @@ Um alles zusammenzufassen, was in diesem Thema erklärt wurde, finden Sie hier e
 
 ### <a name="extending-a-business-process"></a>Erweitern eines Geschäftsablaufs
 
-Bisher wurde in diesem Thema hervorgehoben, wie ein neuer Prozess mithilfe der **ProcessGuide**-Frameworks verwendet wird. In diesem letzten Abschnitt finden Sie einige Beispiele, wie dieser Geschäftsprozess erweitert werden kann.
+Bisher wurde in diesem Artikel hervorgehoben, wie ein neuer Prozess mithilfe der **ProcessGuide**-Frameworks verwendet wird. In diesem letzten Abschnitt finden Sie einige Beispiele, wie dieser Geschäftsprozess erweitert werden kann.
 
 ### <a name="add-a-step-in-a-flow-using-processguidenavigationagentdefault"></a>Einen Schritt in einem Flow hinzufügen (mit ProcessGuideNavigationAgentDefault)
 

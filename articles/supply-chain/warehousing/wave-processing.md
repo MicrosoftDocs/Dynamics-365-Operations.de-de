@@ -1,6 +1,6 @@
 ---
-title: Wellen erstellen und verarbeiten
-description: In diesem Thema wird beschrieben, wie eine Welle erstellt, verarbeitet und freigegeben wird, um Entnahmearbeit für eine Ladung, eine Lieferung, einen Produktionsauftrag oder einen Kanbanauftrag zu erstellen.
+title: Zykluserstellung und -verarbeitung
+description: In diesem Artikel wird beschrieben, wie eine Welle erstellt, verarbeitet und freigegeben wird, um Entnahmearbeit für eine Ladung, eine Lieferung, einen Produktionsauftrag oder einen Kanbanauftrag zu erstellen.
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 349285f089ecab00c4c1c0a0315c4223314e3e79
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3347db6395b7da396c42f84881060f476346d2e9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687503"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851274"
 ---
-# <a name="wave-creation-and-processing"></a>Wellen erstellen und verarbeiten
+# <a name="wave-creation-and-processing"></a>Zykluserstellung und -verarbeitung
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie eine Welle erstellt, verarbeitet und freigegeben wird, um Entnahmearbeit für eine Ladung, eine Lieferung, einen Produktionsauftrag oder einen Kanbanauftrag zu erstellen. Sie können für die folgenden Auftragsarten Wellen erstellen:
+In diesem Artikel wird beschrieben, wie eine Welle erstellt, verarbeitet und freigegeben wird, um Entnahmearbeit für eine Ladung, eine Lieferung, einen Produktionsauftrag oder einen Kanbanauftrag zu erstellen. Sie können für die folgenden Auftragsarten Wellen erstellen:
 
 - **Aufträge** – Verwenden Sie Versandwellen, um Positionen aus Aufträgen einzubeziehen. Wenn ein Auftrag an den Lagerort freigegeben wird, können die Auftragspositionen in die Welle einbezogen werden.
 - **Produktionsaufträge** – Verwenden Sie Produktionswellen, um Positionen aus der Stückliste (BOM) für ein Produkt einzubeziehen.

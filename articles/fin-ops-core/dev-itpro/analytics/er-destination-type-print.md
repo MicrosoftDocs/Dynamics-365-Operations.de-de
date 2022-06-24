@@ -1,6 +1,6 @@
 ---
 title: Drucker-ER-Zieltyps
-description: In diesem Thema wird erläutert, wie für jede FOLDER- oder FILE-Komponente eines EB-Formats (elektronische Berichterstellung) ein Druckerziel konfiguriert werden kann.
+description: In diesem Artikel wird erläutert, wie für jede FOLDER- oder FILE-Komponente eines EB-Formats (elektronische Berichterstellung) ein Druckerziel konfiguriert werden kann.
 author: NickSelin
 ms.date: 02/14/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 2513fc4f86519c71602089cd46e9757813b1a708
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 826455d0901a45ef26755fd323ee2a2737b5eec0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388287"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845569"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Druckziel
 
@@ -34,7 +34,7 @@ Bevor Sie beginnen, müssen Sie den Dokumentweiterleitungsagenten installieren u
 
 ## <a name="make-the-printer-destination-available"></a>Druckerziel verfügbar machen
 
-Damit das **Drucker**-Ziel in der aktuellen Instanz von Microsoft Dynamics 365 Finance verfügbar ist, gehen Sie zum Arbeitsbereich **Funktionsverwaltung**, und aktivieren Sie die folgenden Funktionen in dieser Reihenfolge:
+Damit das **Drucker**-Ziel in der aktuellen Instanz von Microsoft Microsoft Dynamics 365 Finance verfügbar ist, gehen Sie zum Arbeitsbereich **Funktionsverwaltung**, und aktivieren Sie die folgenden Funktionen in dieser Reihenfolge:
 
 1. Ausgehende Dokumente der elektronischen Berichterstattung aus Microsoft Office-Formaten in PDF konvertieren
 2. Dokumentweiterleitungsagent als Ziel der elektronischen Berichterstellung für ausgehende Dokumente

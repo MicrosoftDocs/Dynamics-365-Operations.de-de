@@ -1,6 +1,6 @@
 ---
-title: Überblick über die Verwaltung digitaler Bestände
-description: Dieses Thema bietet einen Überblick über die Verwaltung digitaler Inhalte im Microsoft Dynamics 365 Commerce Site Builder.
+title: Übersicht über die Verwaltung digitaler Anlagen
+description: Dieser Artikel bietet einen Überblick über die Verwaltung digitaler Inhalte im Microsoft Dynamics 365 Commerce Site Builder.
 author: psimolin
 ms.date: 03/03/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 73c41d97727c461a959d05e76c27efa49e9b5775
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 8e958715591c404d979d2537531476004dbcdee5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983185"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892104"
 ---
-# <a name="digital-asset-management-overview"></a>Überblick über die Verwaltung digitaler Anlagen
+# <a name="digital-asset-management-overview"></a>Übersicht über die Verwaltung digitaler Anlagen
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema bietet einen Überblick über die Verwaltung digitaler Inhalte im Microsoft Dynamics 365 Commerce Site Builder.
+Dieser Artikel bietet einen Überblick über die Verwaltung digitaler Inhalte im Microsoft Dynamics 365 Commerce Site Builder.
 
 Die Medienbibliothek des Dynamics 365 Commerce Site Builders bietet umfangreiche Funktionen zur Verwaltung digitaler Inhalte, einschließlich der Unterstützung für Folgendes:
 - Bildinhaltsteile

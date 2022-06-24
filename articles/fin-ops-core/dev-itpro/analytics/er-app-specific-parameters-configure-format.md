@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren von EB-Formaten zur Verwendung von Parametern, die pro juristischer Person angegeben werden
-description: In diesem Thema wird erläutert, wie Sie Elektronische Berichterstellungs(EB)-Formate konfigurieren können, um Parameter zu verwenden, die pro juristischer Person angegeben werden.
+title: ER-Formate zur Verwendung von Parametern konfigurieren, die pro juristischer Person angegeben werden
+description: In diesem Artikel wird erläutert, wie Sie Elektronische Berichterstellungs(EB)-Formate konfigurieren können, um Parameter zu verwenden, die pro juristischer Person angegeben werden.
 author: NickSelin
 ms.date: 04/02/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 2bf4d1ecad3e25299df7c87ffa2236736ddcac300a5ded779616b25920745d7e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb44422c4cdcc87989cdfb28dcd7d5cfea9002eb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765831"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858827"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>Konfigurieren von EB-Formaten zur Verwendung von Parametern, die pro juristischer Person angegeben werden
 
@@ -37,13 +37,13 @@ Mit der anwendungsspezifischen EB-Parameterfunktion können Poweruser die Datene
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Um die Beispiele in diesem Thema abzuschließen, müssen Sie für eine der folgenden Rollen Zugriff auf die Instanz des Regulatory Configuration Service (RCS) haben, der für denselben Mandanten wie Finance bereitgestellt wurde:
+Um die Beispiele in diesem Artikel abzuschließen, müssen Sie für eine der folgenden Rollen Zugriff auf die Instanz der Regulatory Configuration Services (RCS) haben, der für denselben Mandanten wie Finance bereitgestellt wurde:
 
 - Entwickler für elektronische Berichterstellung
 - Funktionaler Berater für elektronische Berichterstellung
 - Systemadministrator
 
-Es wird empfohlen, dass Sie die Schritte im Thema [Unterstützen parametrisierter Aufrufe von EB-Datenquellen des Typs BERECHNETES FELD](er-calculated-field-type.md) ausführen. Wenn Sie diese Schritte bereits abgeschlossen haben, können Sie die Schritte im Abschnitt **Importieren von EB-Konfigurationen in RCS** überspringen, der darauf folgt.
+Es wird empfohlen, dass Sie die Schritte im Artikel [Unterstützen parametrisierter Aufrufe von EB-Datenquellen des Typs BERECHNETES FELD](er-calculated-field-type.md) ausführen. Wenn Sie diese Schritte bereits abgeschlossen haben, können Sie die Schritte im Abschnitt **Importieren von EB-Konfigurationen in RCS** überspringen, der darauf folgt.
 
 ## <a name="import-er-configurations-into-rcs"></a>Importieren von EB-Konfigurationen in RCS
 
@@ -58,7 +58,7 @@ Laden Sie die folgenden ER-Konfigurationen herunter und speichern Sie sie lokal.
 
 Melden Sie sich als Nächstes bei Ihrer RCS-Instanz an.
 
-In diesem Beispiel erstellen Sie eine Konfiguration für das Beispielunternehmen Litware, Inc. Bevor Sie diese Prozedur abschließen können, müssen Sie zunächst die Schritte im RCS-Thema [Konfigurationsanbieter erstellen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md) abschließen.
+In diesem Beispiel erstellen Sie eine Konfiguration für das Beispielunternehmen Litware, Inc. Bevor Sie diese Prozedur abschließen können, müssen Sie zunächst die Schritte im RCS-Artikel [Konfigurationsanbieter erstellen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md) abschließen.
 
 1.  Wählen Sie im Standard-Dashboard **Elektronische Berichterstellung** aus.
 2.  Wählen Sie **Berichterstellungskonfigurationen** aus.
@@ -300,7 +300,7 @@ Wiederholen Sie die Schritte in diesem Abschnitt für übergeordnete Elemente de
 -   Zuordnung zum Ermitteln parametrisierter Aufrufe.xml
 -   Modell zum Lernern parametrisierter Aufrufe.xml
 
-Um mehr darüber zu erfahren, wie Sie das konfigurierte EB-Format **Format zum Ermitteln der Vorgehensweise bei der Suche von Daten zu juristischen Personen** für die Einrichtung von Gruppen von Steuercodes verwenden, die von juristischen Personen abhängen, um Steuertransaktionen anhand von unterschiedlichen Besteuerungsstufen zu filtern, führen Sie die Schritte im Thema [Einrichten von Parametern eines EB-Formats pro juristischer Person](er-app-specific-parameters-set-up.md) aus.
+Um mehr darüber zu erfahren, wie Sie das konfigurierte EB-Format **Format zum Ermitteln der Vorgehensweise bei der Suche von Daten zu juristischen Personen** für die Einrichtung von Gruppen von Steuercodes verwenden, die von juristischen Personen abhängen, um Steuertransaktionen anhand von unterschiedlichen Besteuerungsstufen zu filtern, führen Sie die Schritte im Artikel [Parameter eines EB-Formats pro juristischer Person einrichten](er-app-specific-parameters-set-up.md) aus.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

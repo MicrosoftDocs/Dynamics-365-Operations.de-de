@@ -1,6 +1,6 @@
 ---
-title: Eine Menüoption für das mobile Gerät einrichten, um die eingegangenen Artikel zu erfassen
-description: In diesem Thema geht es um die Einrichtung eines Menüpunktes für mobile Geräte.
+title: Auf einem mobilen Gerät eine Menüoption zur Erfassung eingegangener Artikel einrichten
+description: In diesem Artikel geht es um die Einrichtung eines Menüpunktes für mobile Geräte.
 author: Mirzaab
 ms.date: 08/16/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 410a70294e5a417950ed5332ec5fdd7da321a31d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b59a78ef98215bec7610fe17ed56e6fc287004c0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565158"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882314"
 ---
-# <a name="set-up-a-mobile-device-menu-item-to-register-received-items"></a>Eine Menüoption für das mobile Gerät einrichten, um die eingegangenen Artikel zu erfassen
+# <a name="set-up-a-mobile-device-menu-item-to-register-received-items"></a>Auf einem mobilen Gerät eine Menüoption zur Erfassung eingegangener Artikel einrichten
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema geht es um die Einrichtung eines Menüpunktes für mobile Geräte. Diese Menüoption wird für die Erfassung des Artikelzugangs verwendet, der über Bestellungen bestellt wurde. 
+In diesem Artikel geht es um die Einrichtung eines Menüpunktes für mobile Geräte. Diese Menüoption wird für die Erfassung des Artikelzugangs verwendet, der über Bestellungen bestellt wurde. 
 
 Sie können diese Anleitung im Demodatenunternehmen USMF ausführen. Diese Prozedur ist für die Lagerverwaltung vorgesehen.
 

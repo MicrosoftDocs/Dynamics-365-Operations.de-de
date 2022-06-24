@@ -1,6 +1,6 @@
 ---
 title: Nicht verknüpfte Rückerstattungen mit dem Dynamics 365 Commerce Payment Connector für Adyen verarbeiten
-description: In diesem Thema wird beschrieben, wie nicht verknüpfte Rückerstattungen funktionieren, wenn Microsoft Dynamics 365 Payment Connector für Adyen verwendet wird.
+description: In diesem Artikel wird beschrieben, wie nicht verknüpfte Rückerstattungen funktionieren, wenn Microsoft Dynamics 365 Payment Connector für Adyen verwendet wird.
 author: BrianShook
 ms.date: 10/07/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: BrShoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: c137dcf7d35031a293c88d8c4f5dc1e5f3d9e2f9
-ms.sourcegitcommit: a21a664cd35b95c8600c5af0aac588a64e892902
+ms.openlocfilehash: 634b30de7adbfb0c316fe14456581ea8eb89d070
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7623920"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885196"
 ---
 # <a name="process-unlinked-refunds-with-the-dynamics-365-commerce-payment-connector-for-adyen"></a>Nicht verknüpfte Rückerstattungen mit dem Dynamics 365 Commerce Payment Connector für Adyen verarbeiten
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie nicht verknüpfte Rückerstattungen funktionieren, wenn [Microsoft Dynamics 365 Payment Connector für Adyen](adyen-connector.md) verwendet wird. Es bespricht auch die Möglichkeit, eine Rückerstattung für eine neue Zahlungsmethode am Point of Sale (POS) oder Callcenter zu verarbeiten.
+In diesem Artikel wird beschrieben, wie nicht verknüpfte Rückerstattungen funktionieren, wenn [Microsoft Dynamics 365 Payment Connector für Adyen](adyen-connector.md) verwendet wird. Es bespricht auch die Möglichkeit, eine Rückerstattung für eine neue Zahlungsmethode am Point of Sale (POS) oder Callcenter zu verarbeiten.
 
 Der Dynamics 365 Payment Connector für Adyen unterstützt die Möglichkeit, Rückerstattungen mit einer anderen Zahlungsmethode als der zu verarbeiten, die für die ursprüngliche Transaktion verwendet wurde. Obwohl wir empfehlen, dass Sie [verknüpfte Rückerstattungen](linked-refunds.md) verwenden, um eine Rückerstattung für die ursprünglich angegebene Zahlungsmethode zu verarbeiten, sind in einigen Szenarien Rückerstattungen auf eine andere Methode erforderlich. Beispielsweise kann die Karte, die für die ursprüngliche Zahlung verwendet wurde, jetzt abgelaufen oder verloren gegangen oder vom Benutzer storniert worden sein.
 

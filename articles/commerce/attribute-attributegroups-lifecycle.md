@@ -1,6 +1,6 @@
 ---
 title: Attribute und Attributgruppen verwalten
-description: In diesem Thema wird beschrieben, wie Sie Attribute verwendet, um ein Produkt und dessen Eigenschaften über benutzerdefinierte Felder zu beschreiben.
+description: In diesem Artikel wird beschrieben, wie Sie Attribute verwendet, um ein Produkt und dessen Eigenschaften über benutzerdefinierte Felder zu beschreiben.
 author: ashishmsft
 ms.date: 04/28/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: b3960f0877bdf68dd2f511ad283961b2a92db6a60078e84be55f071a00eae927
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cd74cb7795366bdca80e47d79a9591af69a16daf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727653"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876663"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Attribute und Attributgruppen verwalten
 
@@ -85,7 +85,7 @@ Attribute basieren auf *Attributtypen*. Der Attributtyp identifiziert die Art vo
 
 *Attributmetadaten* lässt Sie Optionen auswählen, um anzugeben, wie deren Attribute für jedes Produkt sich verhalten sollen. So können beispielsweise auswählen, ob Attribute erforderlich sind, ob sie zum Suchen verwendet werden können und ob sie als Filter verwendet werden können.
 
-Für Produkte können die Attributmetadateneinstellungen auf der Einzelvorgangsebene überschrieben werden. Diese Funktion wurde weiter unten in diesem Thema erläutert.
+Für Produkte können die Attributmetadateneinstellungen auf der Einzelvorgangsebene überschrieben werden. Diese Funktion wurde weiter unten in diesem Artikel erläutert.
 
 Sie sehen möglicherweise, dass die Seite **Attribute** Optionen enthält, die Attributmetadaten zugeordnet werden. Unter **Attributmetadaten für POS** betrifft eine Option mit der Bezeichnung **Kann verfeinert werden** das Verhalten der Attributwerte der Verkaufsstelle (POS) oder die Art, wie das System diese Attributwerte behandelt. Nur Attribute, für die möglicherweise die Option **Kann verfeinert werden** auf **Ja** festgelegt wurde, zeigt die Verfeinerung oder die Filter von Produkten im POS:
 

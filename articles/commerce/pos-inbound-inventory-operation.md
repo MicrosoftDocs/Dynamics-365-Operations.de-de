@@ -1,6 +1,6 @@
 ---
-title: Eingangsbestandsvorgang in POS
-description: Dieses Thema beschreibt die Möglichkeiten des POS-Eingangsbestandsvorgangs (POS).
+title: Eingehender Bestandsvorgang in POS
+description: Dieser Artikel beschreibt die Möglichkeiten des POS-Eingangsbestandsvorgangs (POS).
 author: hhaines
 ms.date: 09/17/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 8848c10e9f8f931ee66414075d28b8910a02e5a000525a63bc38ab6851f11276
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fbabcaafee74b4d0a1ca8ef79de94376a7764aa3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741781"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858881"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Eingehender Bestandsvorgang in POS
 
@@ -215,7 +215,7 @@ Nachdem der Dokumententwurf erfolgreich bei Commerce Headquarters eingereicht wu
 
 Nachdem sich der Beleg im Status **Anforderung** befindet, ist er auf der Registerkarte **Aktiv** sichtbar. Er kann jedoch noch nicht von der Eingangsfiliale oder dem Lager empfangen werden. Nachdem das Ausgangslager einen Teil oder den gesamten Transportauftrag versendet hat, kann die eingehende Filiale oder das Lager Belege in POS buchen. Wenn die Ausgangsseite die Transportauftragsbelege verarbeitet, wird ihr Status von **Anforderung** auf **Versandt** oder **Teilweise versandt** fortgeschrieben. Nachdem sich die Belege im Status **Versandt** oder **Teilweise versandt** befinden, kann die eingehende Filiale oder das Lager über den Eingangsvorgangs-Empfangsprozess Eingänge gegen sie buchen.
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-articles"></a>Zugehörige Artikel
 
 [Bestandsaufnahme am Ausgang in POS](pos-outbound-inventory-operation.md)
 

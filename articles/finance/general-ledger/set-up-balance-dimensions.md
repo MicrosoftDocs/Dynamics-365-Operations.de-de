@@ -1,6 +1,6 @@
 ---
 title: Wie richte ich ausgleichende Finanzdimensionen ein?
-description: Dieses Thema beschreibt die Optionen zum Einrichten und Verwenden der Funktion Ausgleichsfinanzdimension.
+description: Dieser Artikel beschreibt die Optionen zum Einrichten und Verwenden der Funktion Ausgleichsfinanzdimension.
 author: kweekley
 ms.date: 08/25/2021
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-08-17
 ms.dyn365.ops.version: 10.0.210
-ms.openlocfilehash: cb3033a615200a358c1b28b0991bae4b84470ae0
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: dd859629b0eb9f14fa4907699613382f3897d21d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720110"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878011"
 ---
 # <a name="how-do-i-set-up-balancing-financial-dimensions"></a>Wie richte ich ausgleichende Finanzdimensionen ein?
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema beschreibt die Optionen zum Einrichten und Verwenden der Funktion Ausgleichsfinanzdimension.
+Dieser Artikel beschreibt die Optionen zum Einrichten und Verwenden der Funktion Ausgleichsfinanzdimension.
 
 ## <a name="symptom"></a>Symptom
 
-Es gibt zwei Möglichkeiten, um ausgleichende Finanzdimensionen einzurichten. Die erste Möglichkeit besteht darin, das Feld **Ausgleich der finanziellen Dimension** im **Ledger** auf der Einrichtungsseite (**Hauptbuch \> Ledger-Einrichtung \> Ledger**) zu verwenden. Die zweite Option besteht darin, das Feld **Erforderliche Dimension für den Ausgleich** auf der Seite **Finanzdimension** (**Hauptbuch > Kontenplan \> Dimension \> Finanzdimension**) zu verwenden. In diesem Thema wird der Unterschied zwischen diesen beiden Optionen erläutert.
+Es gibt zwei Möglichkeiten, um ausgleichende Finanzdimensionen einzurichten. Die erste Möglichkeit besteht darin, das Feld **Ausgleich der finanziellen Dimension** im **Ledger** auf der Einrichtungsseite (**Hauptbuch \> Ledger-Einrichtung \> Ledger**) zu verwenden. Die zweite Option besteht darin, das Feld **Erforderliche Dimension für den Ausgleich** auf der Seite **Finanzdimension** (**Hauptbuch > Kontenplan \> Dimension \> Finanzdimension**) zu verwenden. In diesem Artikel wird der Unterschied zwischen diesen beiden Optionen erläutert.
 
 ## <a name="resolution"></a>Lösung
 

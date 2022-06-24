@@ -1,6 +1,6 @@
 ---
 title: Überwachen der Ausführung von ER-Formaten zur Behebung von Leistungsproblemen
-description: Dieses Thema bietet Informationen darüber, wie die Leistungsnachverfolgungsfunktion in der Elektronischen Berichterstellung (EB) verwendet werden kann, um Leistungsprobleme zu behandeln.
+description: Dieser Artikel bietet Informationen darüber, wie die Leistungsnachverfolgungsfunktion in der Elektronischen Berichterstellung (EB) verwendet werden kann, um Leistungsprobleme zu behandeln.
 author: NickSelin
 ms.date: 06/22/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 10eddf2f60db914e6451840d4d7aedb9dce7108874ea3ff45f375b85a55a694f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 886781764b44ca76b327ad49f25f11f6c370a706
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724392"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851950"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Ausführung von EB-Formaten nachverfolgen, um Leistungsprobleme zu behandeln
 
@@ -98,7 +98,7 @@ Nehmen Sie an, Sie haben mit dem Entwurf einer neuen EB-Lösung begonnen, um ein
 
 Gehen Sie davon aus, dass Sie das Entwerfen der ersten Version der EB-Lösung beendet haben. Jetzt möchten Sie sie in Ihrer Instanz testen und die Ausführungsleistung analysieren.
 
-### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Importieren einer EB-Konfiguration aus RCS in Finance and Operations
+### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Importieren einer EB-Konfiguration aus RCS nach Finance + Operations
 
 1. Anmelden bei Ihrer Anwendungsinstanz.
 2. Für dieses Tutorial importieren Sie Konfigurationen aus Ihrer RCS-Instanz (wo Sie Ihre EB-Komponenten entwerfen) in Ihre Instanz (wo Sie sie testen und schließlich benutzen). Daher müssen Sie sicherstellen, dass alle erforderlichen Artefakte vorbereitet wurden. Anweisungen finden Sie unter der Prozedur [Importieren von elektronischen Berichtstellungskonfigurationen (EB) aus Regulatory Configuration Services (RCS)](rcs-download-configurations.md).
@@ -134,7 +134,7 @@ Die entsprechenden Versionen der Datenmodell- und Modellzuordnungskonfiguratione
             - Ausführen jeder Datenquelle in der Zuordnung des Formats, die aufgerufen wird, um Daten zu erhalten
             - Verarbeitung jedes Formatelements, um Daten in der Ausgabe einzugeben, die generiert wird
 
-            Der Wert **Aggregiertes Trace-Format** ist in Microsoft Dynamics 365 Finance Version 10.0.20 und später verfügbar.
+            Der Wert **Aggregiertes Trace-Format** ist in Microsoft Microsoft Dynamics 365 Finance Version 10.0.20 und später verfügbar.
 
             Im ER-Formatdesigner und ER-Model-Zuordnungsdesigner können Sie die Gesamtausführungszeit für eine einzelne Komponente anzeigen. Zusätzlich enthält die Ablaufverfolgung Details über die Ausführung, wie z. B. die Anzahl der Ausführungen sowie die minimale und maximale Zeit einer einzelnen Ausführung.
 
@@ -305,27 +305,27 @@ Es kann außerdem hilfreich sein, die Anzahl von Aufrufen zu reduzieren, die an 
 
 ### <a name="import-the-modified-er-model-mapping-configuration-from-rcs-into-the-application"></a>Importieren der geänderten EB-Modellzuordnungskonfiguration von RCS in die Anwendung
 
-Wiederholen Sie die Schritte im Abschnitt [Importieren einer EB-Konfiguration von RCS nach Finance and Operations](#import-configuration) weiter oben in diesem Thema, um Version 1.2 der Konfiguration **Leistungsnachverfolgungszuordnung** zu importieren.
+Wiederholen Sie die Schritte im Abschnitt [Importieren einer EB-Konfiguration von RCS nach Finance + Operations](#import-configuration) weiter oben in diesem Artikel, um Version 1.2 der Konfiguration **Leistungsnachverfolgungszuordnung** zu importieren.
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>Ausführen der geänderten EB-Lösung, um Ausführung nachzuverfolgen
 
 ### <a name="run-the-er-format"></a>Das EB-Format ausführen
 
-Wiederholen Sie die Schritte im Abschnitt [Das EB-Format ausführen](#run-format) weiter oben in diesem Thema, um eine neue Leistungsnachverfolgung zu generieren.
+Wiederholen Sie die Schritte im Abschnitt [Das EB-Format ausführen](#run-format) weiter oben in diesem Artikel, um eine neue Leistungsnachverfolgung zu generieren.
 
 ## <a name="work-with-the-execution-trace"></a>Arbeiten Sie mit der Ausführungsnachverfolgung
 
 ### <a name="export-the-generated-trace-from-the-application"></a>Exportieren Sie die generierte Ablaufverfolgung der Anwendung
 
-Wiederholen Sie die Schritte im Abschnitt [Die generierte Nachverfolgung aus der Anwendung exportieren](#export-trace) weiter oben in diesem Thema, um eine neue Leistungsnachverfolgung lokal zu speichern.
+Wiederholen Sie die Schritte im Abschnitt [Die generierte Nachverfolgung aus der Anwendung exportieren](#export-trace) weiter oben in diesem Artikel, um eine neue Leistungsnachverfolgung lokal zu speichern.
 
 ### <a name="import-the-generated-trace-into-rcs"></a>Generierte Nachverfolgung nach RCS importieren
 
-Wiederholen Sie die Schritte im Abschnitt [Importieren der generierten Nachverfolgung nach RCS](#import-trace) weiter oben in diesem Thema, um die neue Leistungsnachverfolgung nach RCS zu importieren.
+Wiederholen Sie die Schritte im Abschnitt [Importieren der generierten Nachverfolgung nach RCS](#import-trace) weiter oben in diesem Artikel, um die neue Leistungsnachverfolgung nach RCS zu importieren.
 
 ### <a name="use-the-performance-trace-for-analysis-in-rcs--model-mapping"></a>Verwenden Sie die Leistungsnachverfolgung zur Analyse in RCS – Modellzuordnung
 
-Wiederholen Sie die Schritte im Abschnitt [Verwenden der Leistungsnachverfolgung zur Analyse in RCS – Modellzuordnung](#use-trace) weiter oben in diesem Thema, um die aktuellste Leistungsnachverfolgung analysieren.
+Wiederholen Sie die Schritte im Abschnitt [Verwenden der Leistungsnachverfolgung zur Analyse in RCS – Modellzuordnung](#use-trace) weiter oben in diesem Artikel, um die aktuellste Leistungsnachverfolgung analysieren.
 
 Beachten Sie, dass die Regulierungen, die Sie an der Modellzuordnung vorgenommen haben, doppelte Abfragen an eine Datenbank beseitigt haben. Die Anzahl der Aufrufe an Datenbanktabellen und Datenquellen für diese Modellzuordnung ist auch reduziert worden. Daher wurde die Leistung der gesamten EB-Lösung verbessert.
 
@@ -355,7 +355,7 @@ Wenn Sie eine dieser Versionen verwenden, können Sie die Details von generierte
 
 ### <a name="run-the-er-format"></a>Das EB-Format ausführen
 
-Wiederholen Sie die Schritte im Abschnitt [Das EB-Format ausführen](#run-format) weiter oben in diesem Thema, um eine neue Leistungsnachverfolgung zu generieren.
+Wiederholen Sie die Schritte im Abschnitt [Das EB-Format ausführen](#run-format) weiter oben in diesem Artikel, um eine neue Leistungsnachverfolgung zu generieren.
 
 Beachten Sie, dass der Webbrowser eine ZIP-Datei zum Herunterladen anbietet. Diese Datei beinhaltet die Leistungsnachverfolgung im PerfView-Format. Sie können dann das PerfView-Leistungsanalysetool verwenden, um die Details der EB-Formatausführung zu analysieren.
 
@@ -379,7 +379,7 @@ Aufgrund der Verbesserungen, die vorgenommen wurden, zeigt die Leistungsablaufve
 
 ### <a name="run-the-er-format"></a>Das EB-Format ausführen
 
-Wiederholen Sie die Schritte im Abschnitt [Das EB-Format ausführen](#run-format) weiter oben in diesem Thema, um eine neue Leistungsnachverfolgung zu generieren.
+Wiederholen Sie die Schritte im Abschnitt [Das EB-Format ausführen](#run-format) weiter oben in diesem Artikel, um eine neue Leistungsnachverfolgung zu generieren.
 
 Beachten Sie, dass der Webbrowser eine ZIP-Datei zum Herunterladen anbietet. Diese Datei beinhaltet die Leistungsnachverfolgung im PerfView-Format. Sie können dann das PerfView-Leistungsanalysetool verwenden, um die Details der EB-Formatausführung zu analysieren. Diese Ablaufverfolgung umfasst jetzt die Details von SQL-Datenbankzugriff bei der Ausführung des ER-Formats.
 

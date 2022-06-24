@@ -1,6 +1,6 @@
 ---
 title: Gefahrengüter einrichten
-description: In diesem Thema wird erläutert, wie Sie die Daten einrichten, die zur Klassifizierung von Artikeln als gefährliche Materialien erforderlich sind. Wenn Sie einen Kundenauftrag erstellen, der einen Artikel enthält, der als Gefahrgut eingestuft ist, generiert das System beim Versand eine Gefahrstoffdokumentation für diesen Kundenauftrag.
+description: In diesem Artikel wird erläutert, wie Sie die Daten einrichten, die zur Klassifizierung von Artikeln als gefährliche Materialien erforderlich sind. Wenn Sie einen Kundenauftrag erstellen, der einen Artikel enthält, der als Gefahrgut eingestuft ist, generiert das System beim Versand eine Gefahrstoffdokumentation für diesen Kundenauftrag.
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 6923bd24fc8f9aad6e758603e3b20f7d5f2b8fde
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 95d7a4d5e61b2f0ff2a9d52b7ccfa8deec1b309d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778008"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888498"
 ---
 # <a name="set-up-hazardous-materials"></a>Gefahrengüter einrichten
 

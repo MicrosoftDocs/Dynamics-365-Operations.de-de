@@ -1,6 +1,6 @@
 ---
 title: Geplante Aufträge vereinfacht
-description: In diesem Thema wird beschrieben, wie Sie geplanter Aufträge mithilfe der Seite Geplante Aufträge vereinfacht anzeigen, verwalten und fixieren können.
+description: In diesem Artikel wird beschrieben, wie Sie geplanter Aufträge mithilfe der Seite Geplante Aufträge vereinfacht anzeigen, verwalten und fixieren können.
 author: t-benebo
 ms.date: 01/24/2022
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-01-24
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: b039aa5481b835d3523b86c4ea88afff6a96ba8b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 5f207fa1edb11d05910e22732cf54e100e4e3489
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470120"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887369"
 ---
 # <a name="planned-orders-simplified"></a>Geplante Aufträge vereinfacht
 
 [!include [banner](../../includes/banner.md)]
 
-Dieses Thema beschreibt, wie Sie über die Seite **Geplante Aufträge vereinfacht** geplante Aufträge anzeigen, verwalten und fixieren können.
+In diesem Artikel wird beschrieben, wie Sie geplanter Aufträge mithilfe der Seite **Geplante Aufträge vereinfacht** anzeigen, verwalten und fixieren können.
 
 Die Seite **Geplante Aufträge vereinfacht** ist eine vereinfachte Version der Seite **Geplante Aufträge**. Es bietet weniger Optionen, ist aber schneller zu handhaben, wenn Sie Ihre geplanter Aufträge lediglich überprüfen, genehmigen und festschreiben müssen.
 
 ## <a name="turn-on-this-feature-for-your-system"></a>Schalten Sie diese Funktion für Ihr System ein
 
-Wenn Ihr System noch nicht über die in diesem Thema beschriebenen Funktionen verfügt, gehen Sie zu [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und aktivieren Sie die Funktion *Geplante Aufträge vereinfacht*.
+Wenn Ihr System noch nicht über die in diesem Artikel beschriebenen Funktionen verfügt, gehen Sie zu [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und aktivieren Sie die Funktion *Geplante Aufträge vereinfacht*.
 
 ## <a name="view-manage-and-firm-planned-orders"></a>Geplante Aufträge anzeigen, verwalten und umwandeln
 

@@ -1,6 +1,6 @@
 ---
 title: Websiteauswahlmodul
-description: Dieses Thema befasst sich mit dem Websiteauswahlmodul und es wird beschrieben, wie Webseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+description: Dieser Artikel befasst sich mit dem Websiteauswahlmodul und es wird beschrieben, wie Webseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 ms.date: 05/04/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: a1954f6b2fea35d5138218e6a2a23ab1fd04c8fc
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ef7753658f878fdf76c6a6beb82ce54e9c12e212
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710302"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884602"
 ---
 # <a name="site-picker-module"></a>Websiteauswahlmodul
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema befasst sich mit dem Websiteauswahlmodul und es wird beschrieben, wie Webseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+Dieser Artikel befasst sich mit dem Websiteauswahlmodul und es wird beschrieben, wie Webseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 
 Wenn ein Unternehmen unterschiedliche Websites in verschiedenen Märkten, Regionen und Gebiete hat, benötigen Websitebenutzer eine einfache Möglichkeit, zwischen Websites zu wechseln und ihre bevorzugte Einkaufsseite auszuwählen. Um diesem Szenario gerecht zu werden, können Benutzer mit dem Websiteauswahlmodul mehrere Sites durchsuchen. Eine Websiteauswahl wird auch empfohlen, wenn die [Geo-Erkennung und -Umleitung](geo-detection-redirection.md) für Ihre E-Commerce-Website implementiert wurden, sodass Kund\*innen die von ihnen angegebene Website-Präferenz überschreiben können, indem sie das Modul [Länder-/Regionsauswahl](country-region-picker-module.md) verwenden. 
 

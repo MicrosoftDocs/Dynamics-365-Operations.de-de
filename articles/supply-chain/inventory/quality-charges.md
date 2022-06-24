@@ -1,6 +1,6 @@
 ---
 title: Belastungen für Qualitätsmangel-Vorgänge
-description: Dieses Thema beschreibt, wie Sie Qualitätsbelastungen erstellen, die mit Vorgängen für eine Nichtkonformität verwendet werden können.
+description: Dieser Artikel beschreibt, wie Sie Qualitätsbelastungen erstellen, die mit Vorgängen für eine Nichtkonformität verwendet werden können.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac3306f3f9215ab03f408b8026f335dcf496515a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 29520afca07adee49846d1be987685a1ece8283c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580959"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850727"
 ---
 # <a name="charges-for-nonconformance-operations"></a>Belastungen für Qualitätsmangel-Vorgänge
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema beschreibt, wie Sie Qualitätsbelastungen erstellen, die mit Vorgängen für eine Nichtkonformität verwendet werden können.
+Dieser Artikel beschreibt, wie Sie Qualitätsbelastungen erstellen, die mit Vorgängen für eine Nichtkonformität verwendet werden können.
 
 Sie verwenden die Seite **Qualitätsbelastungen**, um die Arten von Belastungen zu definieren, die zu Vorgängen für einen Qualitätsmangel hinzugefügt werden können. Mit Belastungen können Sie Details zu Gebühren oder Kosten verfolgen, die Sie einem Debitor für Qualitätsmängel schulden oder die ein Kreditor Ihnen für erhaltene Qualitätsmängel schuldet. Sie könnten auch Belastungen verwenden, um Kosten zu verfolgen, die für externe Kreditor oder Dienstleistungen zur Durchführung eines Vorgangs erforderlich sind.
 

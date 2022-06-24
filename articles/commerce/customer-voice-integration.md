@@ -1,6 +1,6 @@
 ---
-title: Customer Voice in E-Commerce-Site-Seiten integrieren
-description: In diesem Thema wird beschrieben, wie Sie Microsoft Dynamics 365 Customer Voice in Dynamics 365 Commerce-E-Commerce-Website-Seiten integrieren.
+title: Customer Voice in E-Commerce-Websites einbinden
+description: In diesem Artikel wird beschrieben, wie Sie Microsoft Dynamics 365 Customer Voice in Dynamics 365 Commerce-E-Commerce-Website-Seiten integrieren.
 author: samjarawan
 ms.date: 05/17/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
-ms.openlocfilehash: 272ec1a59ed45b2d2336dcfea16051d27011360f
-ms.sourcegitcommit: 48d094d083c1bd45c3d72f8b666926b48ec7ae35
+ms.openlocfilehash: c8c67ecf4950c92fc91c8d119e06e5e8afff0ddf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8767952"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850329"
 ---
-# <a name="integrate-customer-voice-into-e-commerce-site-pages"></a>Customer Voice in E-Commerce-Site-Seiten integrieren
+# <a name="integrate-customer-voice-into-e-commerce-site-pages"></a>Customer Voice in E-Commerce-Websites einbinden
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Microsoft Dynamics 365 Customer Voice in Dynamics 365 Commerce-E-Commerce-Website-Seiten integrieren.
+In diesem Artikel wird beschrieben, wie Sie Microsoft Dynamics 365 Customer Voice in Dynamics 365 Commerce-E-Commerce-Website-Seiten integrieren.
 
 Sie können [Customer Voice](https://dynamics.microsoft.com/customer-voice/overview/) in Ihre E-Commerce-Website integrieren, um Kunden-Feedback in Echtzeit zu sammeln, zu analysieren und zu verfolgen. Um mit der Integration zu beginnen, müssen Sie ein Konto erstellen und eine Customer Voice-Projektvorlage für die Art von Feedback auswählen, das Sie sammeln möchten.
 
@@ -37,7 +37,7 @@ Führen Sie die folgenden Schritte aus, um eine Customer Voice-Projektvorlage au
 1. Wählen Sie die Projektvorlage für den Feedbacktyp aus, den Sie sammeln möchten, und wählen Sie dann **Weiter**.
 1. Wählen Sie auf der **Senden**-Registerkarte unter **Einbettungsformat auswählen** ein Einbettungsformat aus. Das **Eingebetteter Code**-Feld zeigt den Code, der in Commerce Site Builder eingebettet werden muss.
 
-Die Beispiele in diesem Thema verwenden die **Periodische Kundenbefragung**-Projektvorlage und das eingebettete Format **Schaltfläche**.
+Die Beispiele in diesem Artikel verwenden die **Periodische Kundenbefragung**-Projektvorlage und das eingebettete Format **Schaltfläche**.
 
 Die folgende Beispielabbildung zeigt die **Periodische Kundenbefragung**-Projektvorlagenseite, wo die Option für das eingebettete Format **Schaltfläche** ausgewählt ist, und der Einbettungscode für diese Option im Feld **Eingebetteter Code** angezeigt wird. Drei separate Aktionen sind erforderlich, um den bereitgestellten Code wie in den folgenden Abschnitten beschrieben in Ihre Website-Seiten einzubetten.
 

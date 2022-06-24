@@ -1,6 +1,6 @@
 ---
-title: Rechnungsautomatisierung für gescannte Dokumente
-description: In diesem Thema werden die Funktionen, die für die weitere Automatisierung von Kreditorenrechnungen verfügbar sind, selbst Rechnungen mit Anlagen, erklärt.
+title: Rechnungsautomatisierung bei gescannten Dokumenten
+description: In diesem Artikel werden die Funktionen, die für die weitere Automatisierung von Kreditorenrechnungen verfügbar sind, selbst Rechnungen mit Anlagen, erklärt.
 author: abruer
 ms.date: 03/24/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 02fcb6ce49156c32f23bfb37478a1076f62aa868
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: e7d8e55fc1293e2b33b15f3862498363a6b23f1f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716393"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883415"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Rechnungsautomatisierung bei gescannten Dokumenten
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die Datenentitäten erklärt, die für die End-to-End-Automatisierung von Kreditorenrechnungen verfügbar sind, auch Rechnungen mit Anlagen.
+In diesem Artikel werden die Datenentitäten erklärt, die für die End-to-End-Automatisierung von Kreditorenrechnungen verfügbar sind, auch Rechnungen mit Anlagen.
 
 Organisationen, die ihre Kreditorenkontenprozesse (AP) optimieren möchten, identifizieren häufig den Fakturierungsprozess als einen ersten Prozessbereich, der effizienter sein sollte. In vielen Fällen lagern diese Organisationen die Verarbeitung von Papierrechnungen an einem Dienstanbieter für die optische Zeichenerkennung aus. Sie erhalten maschinenlesbare Rechnungsmetadaten zusammen mit einem Bild jeder gescannten Rechnung. Um bei der Automatisierung zu unterstützen, wird eine Lösung erstellt, um den Verbrauch dieser Artefakte im Fakturierungssystem zu aktivieren. Dieser Automatisierungsstandard ist jetzt aktiviert, um eine Rechnungsautomatisierungslösung zu erhalten.
 
@@ -46,7 +46,7 @@ Der Lösungsbedarf besteht aus den folgenden Komponenten:
 + Ausnahme, die für Rechnungen verarbeitet wird
 + Ein Anhangviewer parallel zu den Rechnungen
 
-Die im weiteren Verlauf dieses Themas enthaltenen detaillierten Beschreibungen dieser Lösungskomponenten.
+Die im weiteren Verlauf dieses Artikels enthaltenen detaillierten Beschreibungen dieser Lösungskomponenten.
 
 ## <a name="data-entities"></a>Datenentitäten
 
@@ -58,7 +58,7 @@ Ein Datenpaket ist die Arbeitseinheit, die gesandt werden muss, damit anschließ
 
 Kreditorenrechnungsdokumentanhang ist eine Entität der neuen Daten, die im Rahmen dieser Funktion eingegeben wird. Die Kreditorenrechnungskopfentität wurde geändert, sodass diese Anlagen unterstützt werden. Die Kreditorenrechnungspositionsentität ist für diese Funktion nicht geändert.
 
-Ausführliche Informationen zu Datenpaketen finden Sie unter [Datenverwaltungsübersicht](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Informationen zum Erstellen von Datenpaketen mithilfe des Datenverwaltungsarbeitsbereichs finden Sie unter [Datenpakete in der Dynamics 365 Finance and Operations-Apps-Lösung verarbeiten und verbrauchen](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
+Ausführliche Informationen zu Datenpaketen finden Sie unter [Datenverwaltungsübersicht](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Informationen zum Erstellen von Datenpaketen mithilfe des Datenverwaltungsarbeitsbereichs finden Sie unter [Datenpakete in der Dynamics 365 Finanz- und Betriebs-Apps-Lösung verarbeiten und verbrauchen](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
 
 Um schnell Testdaten zu generieren, die Rechnungen und Anhänge enthalten, führen Sie die folgenden Schritte aus.
 

@@ -1,6 +1,6 @@
 ---
-title: Beispiel der Steuerregistrierungsserviceintegration für Österreich
-description: In diesem Thema erhalten Sie einen Überblick über das steuerliche Integrationsbeispiel für Österreich in Microsoft Dynamics 365 Commerce.
+title: Beispiel für Integration des Steuererfassungsdienstes in Österreich
+description: In diesem Artikel erhalten Sie einen Überblick über das steuerliche Integrationsbeispiel für Österreich in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 826c1cb0fba7025b16dadbfa6157683392945103
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: 099c3630d035ea673342d8345cd8f65dbd6db6a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8614150"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873357"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>Beispiel für Integration des Steuererfassungsdienstes in Österreich
 
 [!include[banner](../includes/banner.md)]
 
-In diesem Thema erhalten Sie einen Überblick über das steuerliche Integrationsbeispiel für Österreich in Microsoft Dynamics 365 Commerce.
+In diesem Artikel erhalten Sie einen Überblick über das steuerliche Integrationsbeispiel für Österreich in Microsoft Dynamics 365 Commerce.
 
 Um die lokalen steuerlichen Anforderungen für Kassen in Österreich zu erfüllen, umfassen die Dynamics 365 Retail-Funktionen für Österreich eine Beispielintegration der Verkaufsstelle (POS) in einen externen Steuerregistrierungsservice. Das Beispiel erweitert die [steuerliche Integrationsfunktionen](fiscal-integration-for-retail-channel.md). Es basiert auf der [EFR (Electronisches Fiskalregister)](https://www.efsta.eu/at/fiskalloesungen/oesterreich)-Lösung von [EFSTA](https://www.efsta.eu/at/) und ermöglicht die Kommunikation mit dem EFR-Service über das HTTPS-Protokoll. Der EFR-Dienst sollte entweder in der Retail Hardware station oder auf einem separaten Computer gehostet werden, zu dem von der Hardare station aus eine Verbindung hergestellt werden kann. Das Beispiel wird in der Form eines Quellcodes bereitgestellt und ist Teil des Retail Software Development Kit (SDK).
 

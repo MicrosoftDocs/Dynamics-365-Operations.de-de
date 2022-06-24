@@ -1,6 +1,6 @@
 ---
 title: Informationen zu Deutschland
-description: Dieses Thema bietet eine Übersicht der Dynamics 365 Finance-Funktionen, die für Deutschland spezifisch sind.
+description: Dieser Artikel bietet eine Übersicht der Dynamics 365 Finance-Funktionen, die für Deutschland spezifisch sind.
 author: anasyash
 ms.date: 05/09/2022
 ms.topic: overview
@@ -12,18 +12,18 @@ ms.search.region: Germany
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 642428044cdd79e964f3b091b5be3fc9035e4ab3
-ms.sourcegitcommit: d27d63c3953b758225cdf29f13f9747e827e59c7
+ms.openlocfilehash: 8346ed2bc46c264242fb25e5cfb3b6e8fcc6072d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "8807844"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894760"
 ---
 # <a name="germany-overview"></a>Informationen zu Deutschland
 
 [!include[banner](../includes/banner.md)]
 
-Dieses Thema enthält Informationen und Verknüpfungen zu den Ressourcen, die für juristische Personen mit einer primären Adresse in Deutschland berücksichtigt werden sollen.
+Dieser Artikel enthält Informationen und Verknüpfungen zu den Ressourcen, die für juristische Personen mit einer primären Adresse in Deutschland berücksichtigt werden sollen.
 
 ## <a name="audit-file"></a>Protokolldatei
 - [Deutsche Protokolldatei (GDPdU/GoBD) – Übersicht](emea-deu-gdpdu-audit-data-export.md)

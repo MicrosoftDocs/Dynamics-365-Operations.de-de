@@ -1,6 +1,6 @@
 ---
-title: Callcenter-Auftragssperren konfigurieren und mit ihnen arbeiten
-description: In diesem Thema wird beschrieben, wie Sie mit Sperren auf Aufträgen arbeitet, indem Dynamics 365 Commerce verwendet wird.
+title: Callcenter-Auftragssperren konfigurieren und verwenden
+description: In diesem Artikel wird beschrieben, wie Sie mit Sperren auf Aufträgen arbeitet, indem Dynamics 365 Commerce verwendet wird.
 author: josaw1
 ms.date: 05/14/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f474b5936f2ae154ad54185becd91865642e8efe3cf10e7dcdbb650c6c833b21
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1f8c5daecc6aa05cc6a0f5dc4a2bc44a0fbba07d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762595"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860136"
 ---
-# <a name="configure-and-work-with-call-center-order-holds"></a>Konfigurieren und Arbeiten mit Callcenter-Auftragssperren
+# <a name="configure-and-work-with-call-center-order-holds"></a>Callcenter-Auftragssperren konfigurieren und verwenden
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden die Auftragssperrfunktionen beschrieben, die Dynamics 365 Commerce für Callcenteraufträge hat.
+In diesem Artikel werden die Auftragssperrfunktionen beschrieben, die Dynamics 365 Commerce für Callcenteraufträge hat.
 
 ## <a name="configuring-call-center-order-holds"></a>Callcenter-Auftragssperren konfigurieren
 

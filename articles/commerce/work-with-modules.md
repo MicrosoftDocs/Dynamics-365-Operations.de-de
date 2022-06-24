@@ -1,6 +1,6 @@
 ---
 title: Arbeiten mit Modulen
-description: In diesem Thema wird beschrieben, wie und wann Module in Microsoft Dynamics 365 Commerce verwendet werden.
+description: In diesem Artikel wird beschrieben, wie und wann Module in Microsoft Dynamics 365 Commerce verwendet werden.
 author: phinneyridge
 ms.date: 09/15/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ce16aa98a37cd5dec60bcdbf86f59f74810da9755a6d3514bdd3e38a21afb748
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c393f1e619647795a5ae8da3a78500c1678da9f6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728263"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860191"
 ---
 # <a name="work-with-modules"></a>Arbeiten mit Modulen
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie und wann Module in Microsoft Dynamics 365 Commerce verwendet werden.
+In diesem Artikel wird beschrieben, wie und wann Module in Microsoft Dynamics 365 Commerce verwendet werden.
 
 Module sind logische Bausteine, aus denen sich Ihre Seitenstruktur zusammensetzt. Sie dienen verschiedenen Zwecken und Bereichen. Einige Module sind übergeordnete Container, und ihr einziger Zweck besteht darin, andere Module (untergeordnete Module) zu speichern und zu organisieren. Andere Module, z. B. ein einfaches Bildplatzierungsmodul, haben einen ganz bestimmten Zweck. Weitere Module, z. B. ein Karussellmodul, lassen sich irgendwo zwischen diesen beiden Kategorien einordnen.
 
@@ -151,7 +151,7 @@ Um ein Containermodul auf einer Seite zu konfigurieren, befolgen Sie diese Schri
 
 1. Wählen Sie ein Containermodul auf Ihrer Seite aus (z. B. ein Karussell oder ein flüssiges Containermodul).
 1. Erweitern Sie im Eigenschaftenbereich rechts die verschachtelten Steuerelemente, indem Sie die Überschriften auswählen, und legen Sie die erforderlichen Steuerelementwerte fest.
-1. Wählen Sie links im Gliederungsbereich die Schaltfläche mit den Auslassungspunkten neben dem Namen des Containers oder von Slots im Container und dann **Modul hinzufügen** aus. Fügen Sie dann dem ausgewählten Container untergeordnete Module hinzu. Weitere Informationen erhalten Sie im Abschnitt [Mit Modulen arbeiten](#add-a-module) am Anfang dieses Themas.
+1. Wählen Sie links im Gliederungsbereich die Schaltfläche mit den Auslassungspunkten neben dem Namen des Containers oder von Slots im Container und dann **Modul hinzufügen** aus. Fügen Sie dann dem ausgewählten Container untergeordnete Module hinzu. Weitere Informationen erhalten Sie im Abschnitt [Mit Modulen arbeiten](#add-a-module) am Anfang dieses Artikels.
 1. Wenn mehrere untergeordnete Module als gleichgeordnete Elemente in einem übergeordneten Container vorhanden sind, können Sie deren Anzeigereihenfolge im übergeordneten Container ändern. Wählen Sie die Auslassungsschaltfläche für ein Modul aus und verwenden Sie dann die Aufwärts- und Abwärtspfeiltasten.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen

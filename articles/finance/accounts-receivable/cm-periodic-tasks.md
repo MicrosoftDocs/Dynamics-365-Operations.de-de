@@ -1,6 +1,6 @@
 ---
 title: Periodische Kreditverwaltungsaufgaben
-description: In diesem Thema werden die regelmäßigen Aufgaben beschrieben, die Teil der Verwaltung der Kreditlimits für Debitoren sind.
+description: In diesem Artikel werden die regelmäßigen Aufgaben beschrieben, die Teil der Verwaltung der Kreditlimits für Debitoren sind.
 author: JodiChristiansen
 ms.date: 09/04/2019
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 53b7cd00b3287f18ba65391842ac259ab2434b86
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 9ad72463acba301f7fc931f9fe316a9a9758922e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735435"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888005"
 ---
 # <a name="periodic-credit-management-tasks"></a>Periodische Kreditverwaltungsaufgaben
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die regelmäßigen Aufgaben beschrieben, die Teil der Verwaltung der Kreditlimits für Debitoren sind.
+In diesem Artikel werden die regelmäßigen Aufgaben beschrieben, die Teil der Verwaltung der Kreditlimits für Debitoren sind.
 
 ## <a name="update-risk-scores"></a>Risikobewertungen aktualisieren
 

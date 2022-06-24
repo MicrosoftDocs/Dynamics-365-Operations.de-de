@@ -1,6 +1,6 @@
 ---
 title: Eine Variantengruppe erstellen
-description: In diesem Thema wird beschrieben, wie Sie eine Größen-, Stil- oder Farbvariantengruppe für ein Produkt in Microsoft Dynamics 365 Commerce erstellen.
+description: In diesem Artikel wird beschrieben, wie Sie eine Größen-, Stil- oder Farbvariantengruppe für ein Produkt in Microsoft Dynamics 365 Commerce erstellen.
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
@@ -15,25 +15,25 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 49e6860fa22bbfba8b86a8243fa29b831e22b489d967a45310648e5debd7512b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a46dc9fd5cdb848818964e771d373924b217147a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749930"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874960"
 ---
 # <a name="create-a-variant-group"></a>Eine Variantengruppe erstellen
 
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie eine Größen-, Stil- oder Farbvariantengruppe für ein Produkt in Microsoft Dynamics 365 Commerce erstellen.
+In diesem Artikel wird beschrieben, wie Sie eine Größen-, Stil- oder Farbvariantengruppe für ein Produkt in Microsoft Dynamics 365 Commerce erstellen.
 
 ## <a name="overview"></a>Übersicht
 
 Dynamics 365 Commerce unterstützt mehrere Varianten für Produkte. Es ist ideal, Variantengruppen für verschiedene Produktkategorien einzurichten. Beispielsweise kann eine Größengruppe für T-Shirts mit besonders kleinen, mittleren, großen und besonders großen Größen erstellt werden, oder es kann eine Farbgruppe erstellt werden, die alle verfügbaren Farben eines Produkts enthält. Variantengruppen sollten hinzugefügt werden, bevor Produkte hinzugefügt werden.
 
-In diesem Thema wird eine Größengruppe erstellt und konfiguriert. Ähnliche Verfahren können zum Hinzufügen und Konfigurieren von Stilgruppen und Farbgruppen verwendet werden.
+In diesem Artikel wird eine Größengruppe erstellt und konfiguriert. Ähnliche Verfahren können zum Hinzufügen und Konfigurieren von Stilgruppen und Farbgruppen verwendet werden.
 
 ## <a name="create-a-size-group"></a>Eine Größengruppe erstellen
 

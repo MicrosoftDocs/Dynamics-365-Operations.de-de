@@ -1,6 +1,6 @@
 ---
-title: Voraussetzungen für die Standardkostenübersicht
-description: In diesem Thema werden die grundlegenden Schritte zur Verwendung von Standardkosten beschrieben.
+title: Übersicht über die Voraussetzungen für Standardkosten
+description: In diesem Artikel werden die grundlegenden Schritte zur Verwendung von Standardkosten beschrieben.
 author: JennySong-SH
 ms.date: 07/25/2019
 ms.topic: overview
@@ -15,18 +15,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7cf37ae8d2cfa2a3f372e37eb66c22711e76dd59
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: bf02653b1d1a2cf5ed45f0fc6bd9affe098e7396
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672317"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895785"
 ---
-# <a name="prerequisites-for-standard-costs-overview"></a>Voraussetzungen für die Standardkostenübersicht
+# <a name="prerequisites-for-standard-costs-overview"></a>Übersicht über die Voraussetzungen für Standardkosten
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die grundlegenden Schritte zur Verwendung von Standardkosten beschrieben. Die weiteren Schritte hängen von den Arbeitsgängen des Unternehmens ab. Diese Schritte unterscheiden sich beispielsweise bei einer Umgebung ohne Produktion, bei einer Produktionsumgebung, in der keine Routings verwendet werden, und bei einer Produktionsumgebung mit Routings. 
+In diesem Artikel werden die grundlegenden Schritte zur Verwendung von Standardkosten beschrieben. Die weiteren Schritte hängen von den Arbeitsgängen des Unternehmens ab. Diese Schritte unterscheiden sich beispielsweise bei einer Umgebung ohne Produktion, bei einer Produktionsumgebung, in der keine Routings verwendet werden, und bei einer Produktionsumgebung mit Routings. 
 
 Gehen Sie zum Einrichten von Standardkosten folgendermaßen vor.
 
@@ -65,7 +65,7 @@ Erstellen Sie mithilfe der Seite **Nachkalkulationsversionssetup** mindestens ei
 Kunden, die ihre vorhandenen Artikel auf ein Lagermodell vom Typ „Standardkosten” umstellen möchten, benötigen dafür die Seite **Standardkostenumrechnungen**.
 
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-articles"></a>Zugehörige Artikel
 
 [Standardkostenumrechnung – Überblick](standard-cost-conversion-overview.md)
 

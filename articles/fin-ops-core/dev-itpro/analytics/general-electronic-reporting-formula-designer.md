@@ -1,6 +1,6 @@
 ---
 title: Formeldesigner in der elektronischen Berichterstellung (EB)
-description: In diesem Thema werden allgemeine Informationen zur Verwendung des Formel-Designers bei der elektronischen Berichterstellung (EB) bereitgestellt.
+description: In diesem Artikel werden allgemeine Informationen zur Verwendung des Formel-Designers bei der elektronischen Berichterstellung (EB) bereitgestellt.
 author: NickSelin
 ms.date: 04/08/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 606532411aa8297654d8d20a9061472597e773da
-ms.sourcegitcommit: 6c1bf233748c4bc70fc5a1a9711758cdfd9e07dc
+ms.openlocfilehash: 6b03613cb40c5ca718f45e69740d29059fcfb70b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8782203"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894294"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner in der elektronischen Berichterstellung (EB)
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Artikel wird beschrieben, wie den Formel-Designer in der elektronischen Berichterstattung (ER) verwendet wird. Wenn Sie ein Format für ein bestimmtes elektronisches Dokument in EB entwerfen, können Sie Formeln zum Transformieren von Daten verwenden, sodass sie den Anforderungen für die Dokumenterfüllung und Formatierung zu entsprechen. Diese Formeln ähneln Formeln in Microsoft Excel. Unterschiedliche Arten von Funktionen werden in den Formeln unterstützt: Text, Datum und Uhrzeit, Mathematisches, Logisches, Informationen und Datentypumrechnung sowie andere domänenspezifische Funktionen des Unternehmens.
+In diesem Artikel wird beschrieben, wie der Formel-Designer in der elektronischem Berichterstellung (EB) verwendet wird. Wenn Sie ein Format für ein bestimmtes elektronisches Dokument in EB entwerfen, können Sie Formeln zum Transformieren von Daten verwenden, sodass sie den Anforderungen für die Dokumenterfüllung und Formatierung zu entsprechen. Diese Formeln ähneln Formeln in Microsoft Excel. Unterschiedliche Arten von Funktionen werden in den Formeln unterstützt: Text, Datum und Uhrzeit, Mathematisches, Logisches, Informationen und Datentypumrechnung sowie andere domänenspezifische Funktionen des Unternehmens.
 
 ## <a name="formula-designer-overview"></a>Formeldesignerübersicht
 

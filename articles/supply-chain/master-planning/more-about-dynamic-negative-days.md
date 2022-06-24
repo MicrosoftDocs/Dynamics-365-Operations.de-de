@@ -1,6 +1,6 @@
 ---
 title: Negative und dynamisch negative Tage
-description: Dieses Thema enthält Informationen zu negativen Tagen und dynamischen negativen Tagen und wie Sie diese verwenden können, um Ihr Unternehmen zu unterstützen.
+description: Dieser Artikel enthält Informationen zu negativen Tagen und dynamischen negativen Tagen und wie Sie diese verwenden können, um Ihr Unternehmen zu unterstützen.
 author: t-benebo
 ms.date: 05/25/2021
 ms.topic: article
@@ -10,27 +10,27 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d88517c99a274911e8abd8de4bcd318139822a5
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: d83aab9b7d3d30d519e8b313a57f2802de3cfb72
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469868"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846126"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Negative und dynamisch negative Tage
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Informationen zu negativen Tagen und dynamischen negativen Tagen und wie Sie diese verwenden können, um Ihr Unternehmen zu unterstützen. Der *negative Tagplanungszeitraum* zeigt die Anzahl von Tagen an, die Sie bereit sind zu warten, bevor Sie eine neue Wiederbeschaffung tätigen, wenn Sie einen negativen Bestand haben.
+Dieser Artikel enthält Informationen zu negativen Tagen und dynamischen negativen Tagen und wie Sie diese verwenden können, um Ihr Unternehmen zu unterstützen. Der *negative Tagplanungszeitraum* zeigt die Anzahl von Tagen an, die Sie bereit sind zu warten, bevor Sie eine neue Wiederbeschaffung tätigen, wenn Sie einen negativen Bestand haben.
 
-Dieses Thema beinhaltet die folgenden Informationen:
+Dieser Artikel beinhaltet die folgenden Informationen:
 
 - Wie Bestellvorschläge erstellt werden
 - Die Wechselbeziehung zwischen dem negativen Tagplanungszeitraum und den Lieferzeiten des Artikels
 - Wie der dynamische negative Tagplanungszeitraum berechnet wird und wie der Faktor bei der Durchlaufzeit des Artikels in die Berechnung einbezogen wird
 - Wie die [Vorschläge zum Verbessern der Bearbeitungszeit für Materialbedarfsanforderungen (MRP) (Materialbedarfsplanung)](https://blogs.msdn.com/b/axmfg/archive/2015/01/02/checklist-for-improving-mrp-performance-part-2-how-to-setup-planning-parameters.aspx), die sich auf die negativen Tage beziehen, interpretiert werden
 
-Dieses Thema verwendet drei hypothetische Szenarien, um Sie dabei zu unterstützten, diese Informationen zu veranschaulichen. Die Differenz zwischen Szenarios ist der Punkt, an dem Sie ggf. Bedarf erhalten:, vor, während oder nach dem Lieferzeitraum.
+Dieser Artikel verwendet drei hypothetische Szenarien, um Sie dabei zu unterstützten, diese Informationen zu veranschaulichen. Die Differenz zwischen Szenarios ist der Punkt, an dem Sie ggf. Bedarf erhalten:, vor, während oder nach dem Lieferzeitraum.
 
 ## <a name="scenario-1-you-get-demand-before-the-items-lead-time-period"></a>Szenario 1: Sie erhalten bei Bedarf vor dem Lieferzeitzeitraum des Artikels
 
@@ -93,7 +93,7 @@ Die folgende Abbildung zeigt eine grafische Ansicht, was in diesem Fall passiert
 
 ### <a name="case-e-use-both-negative-days-that-are-more-than-the-items-lead-time-and-the-dynamic-negative-days-time-fence"></a>Fall E: Sowohl negative Tage nutzen, die größer sind, als die Lieferzeit des Artikels wie auch dynamische negativen Tage im Planungszeitraum nutzen.
 
-Wenn Sie die negativen Tage auf einen Wert festlegen, der größer ist als die Lieferzeit des Artikels und wenn Sie auch den Planungszeitraum der dynamischen negativen Tage nutzen, lautet der Zeitraum für die dynamischen Tage 6 + 6 + 0 = 12 Tage. Dieser Ansatz produziert möglicherweise einen äußerst langen Planungszeitraum, in dem MRP Ergebnisse suchen muss. Informationen darüber, wie beispielsweise Fall E einer Situation zugeordnet ist, in dem Sie die negativen Tage auf einen langen Zeitraum festlegen, finden Sie im Abschnitt [Schlussfolgerung](#conclusion) in diesem Thema.
+Wenn Sie die negativen Tage auf einen Wert festlegen, der größer ist als die Lieferzeit des Artikels und wenn Sie auch den Planungszeitraum der dynamischen negativen Tage nutzen, lautet der Zeitraum für die dynamischen Tage 6 + 6 + 0 = 12 Tage. Dieser Ansatz produziert möglicherweise einen äußerst langen Planungszeitraum, in dem MRP Ergebnisse suchen muss. Informationen darüber, wie beispielsweise Fall E einer Situation zugeordnet ist, in dem Sie die negativen Tage auf einen langen Zeitraum festlegen, finden Sie im Abschnitt [Schlussfolgerung](#conclusion) in diesem Artikel.
 
 ## <a name="scenario-2-you-get-demand-during-the-items-lead-time-period"></a>Szenario 2: Sie erhalten Bedarf während dem Lieferzeitzeitraum des Artikels
 
@@ -142,7 +142,7 @@ Wenn Sie die negativen Tage auf **0** (Null) festlegen und nur den Planungszeitr
 
 ### <a name="case-e-use-both-negative-days-that-are-more-than-the-items-lead-time-and-the-dynamic-negative-days-time-fence"></a>Fall E: Sowohl negative Tage nutzen, die größer sind, als die Lieferzeit des Artikels wie auch dynamische negativen Tage im Planungszeitraum nutzen.
 
-Wenn Sie die negativen Tage auf einen Wert festlegen, der größer ist als die Lieferzeit des Artikels und wenn Sie auch den Planungszeitraum der dynamischen negativen Tage nutzen, lautet der Zeitraum für die dynamischen Tage 6 + 6 - 4 = 8 Tage. Dieser Ansatz produziert möglicherweise einen äußerst langen Planungszeitraum, in dem MRP Ergebnisse suchen muss. Informationen darüber, wie beispielsweise Fall E einer Situation zugeordnet ist, in dem Sie die negativen Tage auf einen langen Zeitraum festlegen, finden Sie im Abschnitt [Schlussfolgerung](#conclusion) in diesem Thema.
+Wenn Sie die negativen Tage auf einen Wert festlegen, der größer ist als die Lieferzeit des Artikels und wenn Sie auch den Planungszeitraum der dynamischen negativen Tage nutzen, lautet der Zeitraum für die dynamischen Tage 6 + 6 - 4 = 8 Tage. Dieser Ansatz produziert möglicherweise einen äußerst langen Planungszeitraum, in dem MRP Ergebnisse suchen muss. Informationen darüber, wie beispielsweise Fall E einer Situation zugeordnet ist, in dem Sie die negativen Tage auf einen langen Zeitraum festlegen, finden Sie im Abschnitt [Schlussfolgerung](#conclusion) in diesem Artikel.
 
 ## <a name="scenario-3-you-get-demand-after-the-items-lead-time-period"></a>Szenario 3: Sie erhalten Bedarf nach dem Lieferzeitzeitraum des Artikels
 
@@ -204,7 +204,7 @@ Dieser Fall ist der gleiche wie Fall E für Szenarios 1 und 2. Er verfügt übli
 
 ## <a name="conclusion"></a>Abschluss
 
-Wie die drei Szenarien in diesem Thema zeigen, wird empfohlen, die negativen Tage auf einen Wert festzulegen, der höher ist als die Lieferzeit der Artikel in der Dispositionssteuerungsgruppe. Es ist auch empfehlenswert, nur dynamische negative Tage zu verwenden, und die negativen Tage auf die Anzahl von Tagen festzulegen, die Sie bereit sind zu warten, bevor Sie eine Wiederbeschaffung tätigen, wenn Sie einen negativen Bestand haben (das heißt, die Anzahl von Tagen, die Sie bereit sind, die Nachfrage noch weiter zu verzögern). Darüber hinaus müssen Artikel in derselben Dispositionssteuerungsgruppe ähnliche Lieferzeiten haben.
+Wie die drei Szenarien in diesem Artikel zeigen, wird empfohlen, die negativen Tage auf einen Wert festzulegen, der höher ist als die Lieferzeit der Artikel in der Dispositionssteuerungsgruppe. Es ist auch empfehlenswert, nur dynamische negative Tage zu verwenden, und die negativen Tage auf die Anzahl von Tagen festzulegen, die Sie bereit sind zu warten, bevor Sie eine Wiederbeschaffung tätigen, wenn Sie einen negativen Bestand haben (das heißt, die Anzahl von Tagen, die Sie bereit sind, die Nachfrage noch weiter zu verzögern). Darüber hinaus müssen Artikel in derselben Dispositionssteuerungsgruppe ähnliche Lieferzeiten haben.
 
 Wenn Sie die negativen Tage auf **0** (Null) festlegen und keine dynamischen negativen Tagen verwendet, erstellt MRP immer einen neuen geplanten Auftrag, um den Bedarf zu decken. In diesem Fall ist es wichtig, dass Sie mit den Aktivitätsmeldungen arbeiten, um sicherzustellen, dass Sie das Lager nicht aufstocken.
 

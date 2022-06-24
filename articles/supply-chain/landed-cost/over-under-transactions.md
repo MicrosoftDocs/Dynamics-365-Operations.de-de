@@ -1,6 +1,6 @@
 ---
 title: Über-/Unterbuchungen
-description: Dieses Thema enthält Informationen, die Ihnen dabei helfen, die Details der Richtlinien für Über-/Unter-Transaktionen festzulegen, damit das System bestimmen kann, wie die Über- und Unterbearbeitung von Waren zum Zeitpunkt des Eingangs gehandhabt werden soll.
+description: Dieser Artikel enthält Informationen, die Ihnen dabei helfen, die Details der Richtlinien für Über-/Unter-Transaktionen festzulegen, damit das System bestimmen kann, wie die Über- und Unterbearbeitung von Waren zum Zeitpunkt des Eingangs gehandhabt werden soll.
 author: Weijiesa
 ms.date: 01/13/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 63ba27d3fe10441f5e0ad54e684aa6799b521c7a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 79ce18a462f9c2f93dceec82da7ee0209ab61f78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687839"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844996"
 ---
 # <a name="overunder-transactions"></a>Über-/Unterbuchungen
 

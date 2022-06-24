@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1659fd3b4c173ffe09f245631309d329bba5b1bd
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: a1e2c79a621cf4bd1212c006e1c8967d85bd716b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105488"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870810"
 ---
 # <a name="asset-management-parameters"></a>Anlagenverwaltungsparameter
 
 [!include [banner](../../includes/banner.md)]
 
-In der Anlageverwaltung müssen allgemeine Parameter in Bezug auf Arbeitsaufträge, Anlagen und Arbeitsauftragsplanung eingerichtet werden. In diesem Thema wird erläutert, wie diese eingerichtet werden. Wählen Sie **Anlagenverwaltung** > **Einrichtung** > **Anlagenverwaltungsparameter**, um die Seite zu öffnen.
+In der Anlageverwaltung müssen allgemeine Parameter in Bezug auf Arbeitsaufträge, Anlagen und Arbeitsauftragsplanung eingerichtet werden. In diesem Artikel wird erläutert, wie diese eingerichtet werden. Wählen Sie **Anlagenverwaltung** > **Einrichtung** > **Anlagenverwaltungsparameter**, um die Seite zu öffnen.
 
 > [!NOTE]
 > Wenn Sie ein System einrichten möchten, das Demodaten zum Testen von Anlagenverwaltung-Funktionen enthält, finden Sie unter [Demoumgebung bereitstellen](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) Anweisungen.

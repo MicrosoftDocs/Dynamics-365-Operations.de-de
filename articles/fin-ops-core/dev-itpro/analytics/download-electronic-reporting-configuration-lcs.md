@@ -1,6 +1,6 @@
 ---
 title: Laden Sie die elektronische Berichtskonfigurationen der Lifecycle Services herunter
-description: Dieses Thema zeigt, wie Sie Konfigurationen zur elektronischen Berichterstellung (EB) von Microsoft Dynamics Lifecycle Services (LCS) herunterladen.
+description: Dieser Artikel zeigt, wie Sie Konfigurationen zur elektronischen Berichterstellung (EB) von Microsoft Dynamics Lifecycle Services (LCS) herunterladen.
 author: NickSelin
 ms.date: 08/27/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ea603d01d05e98ac69d5a0d12802b5f23ee34793bf4c9b4f885f0e4303f77d2b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8ba720f997981e85ea08d532f23341a838533ac4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762271"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885293"
 ---
-# <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen
+# <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Laden Sie die elektronische Berichtskonfigurationen der Lifecycle Services herunter
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie die neueste Version der [Konfigurationen für elektronische Berichte (EB)](general-electronic-reporting.md#Configuration) aus der [Bibliothek für freigegebene Anlagen](../lifecycle-services/asset-library.md) in den Microsoft Dynamics Lifecycle Services (LCS) herunterladen.
+In diesem Artikel wird erläutert, wie Sie die neueste Version der [Konfigurationen für elektronische Berichte (EB)](general-electronic-reporting.md#Configuration) aus der [Bibliothek für freigegebene Anlagen](../lifecycle-services/asset-library.md) in den Microsoft Dynamics Lifecycle Services (LCS) herunterladen.
 
 > [!IMPORTANT]
 > Die Verwendung von LCS als Speicher-Repository für ER-Konfigurationen wird [außer Betrieb genommen](../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release). Weitere Informationen finden Sie unter [Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) storage deprecation](../../../finance/localizations/rcs-lcs-repo-dep-faq.md).
@@ -70,11 +70,11 @@ In diesem Thema wird erläutert, wie Sie die neueste Version der [Konfiguratione
     [![Konfigurationsrepository-Seite.](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
 
 > [!NOTE]
-> Abhängig von den ER-Einstellungen werden Konfigurationen überprüft, nachdem diese importiert wurden. Sie werden über alle Inkonsistenz-Probleme benachrichtigt, die ermittelt werden. Sie müssen diese Probleme beheben, bevor Sie die importierten Konfigurationsversionen verwenden können. Weitere Informationen finden Sie in der Liste der zugehörigen Themen.
+> Abhängig von den ER-Einstellungen werden Konfigurationen überprüft, nachdem diese importiert wurden. Sie werden über alle Inkonsistenz-Probleme benachrichtigt, die ermittelt werden. Sie müssen diese Probleme beheben, bevor Sie die importierten Konfigurationsversionen verwenden können. Weitere Informationen finden Sie in der Liste der zugehörigen Artikel.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Überblick über die elektronische Berichterstellung (ER)](general-electronic-reporting.md)
+[Übersicht über die elektronische Berichterstellung (EB)](general-electronic-reporting.md)
 
 [Laden Sie ER-Konfigurationen aus dem globalen Repository des Konfigurationsdienstes herunter](er-download-configurations-global-repo.md)
 

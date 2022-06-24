@@ -1,6 +1,6 @@
 ---
 title: Höher gestufte Felder für Schritte in der mobilen Warehouse Management-App konfigurieren
-description: In diesem Thema wird beschrieben, wie Sie bestimmte Informationen für jeden Schritt in Aufgabenabläufen für die mobile Warehouse Management Mobile App höher stufen und hervorheben.
+description: In diesem Artikel wird beschrieben, wie Sie bestimmte Informationen für jeden Schritt in Aufgabenabläufen für die mobile Warehouse Management Mobile App höher stufen und hervorheben.
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,21 +11,21 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 0ce3fb829d349a35c6c2f29838a2c725f7b61c55
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 5f5f24f47d0a2376be714f9208cd383cf3aacc07
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920322"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857053"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>Höher gestufte Felder für Schritte in der mobilen Warehouse Management-App konfigurieren
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Die Funktionen, die in diesem Thema beschrieben werden, gelten nur für die neue Warehouse Management Mobile-App. Sie betreffen nicht die alte Lager-App, die jetzt außer Betrieb genommen ist.
+> Die Funktionen, die in diesem Artikel beschrieben werden, gelten nur für die neue Warehouse Management Mobile-App. Sie betreffen nicht die alte Lager-App, die jetzt außer Betrieb genommen ist.
 
-In diesem Thema wird beschrieben, wie Sie bestimmte Informationen für jeden Schritt in Aufgabenabläufen für die mobile Warehouse Management Mobile App höher stufen und hervorheben. Diese Fähigkeit kann dazu beitragen, die Aufmerksamkeit der Mitarbeiter auf die wichtigsten Bereiche zu lenken, während sie einen Arbeitsfluss durchlaufen. Für jeden Schritt in jedem Prozess können Administratoren auswählen, welche Felder hochgestuft und welche Felder hervorgehoben werden sollen.
+In diesem Artikel wird beschrieben, wie Sie bestimmte Informationen für jeden Schritt in Aufgabenabläufen für die mobile Warehouse Management Mobile App höher stufen und hervorheben. Diese Fähigkeit kann dazu beitragen, die Aufmerksamkeit der Mitarbeiter auf die wichtigsten Bereiche zu lenken, während sie einen Arbeitsfluss durchlaufen. Für jeden Schritt in jedem Prozess können Administratoren auswählen, welche Felder hochgestuft und welche Felder hervorgehoben werden sollen.
 
 ## <a name="enable-promoted-fields-in-your-system"></a>Aktivieren Sie heraufgestufte Felder in Ihrem System
 
@@ -44,7 +44,7 @@ Bevor Sie heraufgestufte Felder einrichten können, müssen Sie das folgende Ver
     - **Module:** *Lagerortverwaltung*
     - **Funktionsname:** *Beworbene Felder für die Lager-App*
 
-    Diese Funktion wird in diesem Thema beschrieben.
+    Diese Funktion wird in diesem Artikel beschrieben.
 
 1. Aktualisieren Sie die Feldnamen in der mobilen Warehouse Management-App, indem Sie zu **Lagerverwaltung \> Einstellungen \> Mobiles Gerät \> Feldnamen der Warehouse-App** und wählen Sie **Standard-Setup erstellen**. Weitere Informationen finden Sie unter [Felder für die Warehouse Management Mobile App konfigurieren](configure-app-field-names-priorities-warehouse.md).
 1. Wiederholen Sie den vorherigen Schritt für jede juristische Person (Firma), in der Sie die mobile App Warehouse Management verwenden.
@@ -56,7 +56,7 @@ Verwenden Sie die folgende Prozedur, um heraufgestufte Felder einzurichten.
 1. Erstellen Sie eine menüspezifische Überschreibung für das entsprechende Menü und den entsprechenden Schritt wie in [Schritttitel und Anweisungen für die mobile Warehouse Management-App anpassen](mobile-app-titles-instructions.md) beschrieben.
 1. Suchen Sie die Kombination der Werte **Schritt-ID** und **Name des Elements**, die Sie bearbeiten wollen, und wählen Sie dann den Wert in der Spalte **Schritt-ID**.
 1. Wählen Sie auf der angezeigten Seite im Inforegister **Beworbene Felder auswählen** die Option **Felder auswählen** auf der Symbolleiste.
-1. Wählen Sie im Dialogfeld **Heraufgestufte Felder** die Felder aus, die Sie heraufstufen möchten. Sie können auch bis zu zwei der ausgewählten Felder markieren. Hervorgehobene Felder werden in der mobilen Warehouse Management-App fett angezeigt. Bedenken Sie bei der Auswahl von Feldern, dass einige Bildschirme möglicherweise groß genug sind, um nur die oberen ein oder zwei hochgestuften Felder anzuzeigen. Ein Beispiel für die Verwendung dieser Einstellungen finden Sie in dem Szenario weiter unten in diesem Thema.
+1. Wählen Sie im Dialogfeld **Heraufgestufte Felder** die Felder aus, die Sie heraufstufen möchten. Sie können auch bis zu zwei der ausgewählten Felder markieren. Hervorgehobene Felder werden in der mobilen Warehouse Management-App fett angezeigt. Bedenken Sie bei der Auswahl von Feldern, dass einige Bildschirme möglicherweise groß genug sind, um nur die oberen ein oder zwei hochgestuften Felder anzuzeigen. Ein Beispiel für die Verwendung dieser Einstellungen finden Sie in dem Szenario weiter unten in diesem Artikel.
 
     > [!NOTE]
     > Die Liste **Verfügbare Felder** ist auf die Felder beschränkt, die für den Menüpunkt erscheinen können. Andere Faktoren (z. B. die Artikelzusammensetzung) bestimmen jedoch, ob ein Feld tatsächlich in der mobilen Warehouse Management-App angezeigt wird. Wenn Sie heraufgestufte Felder konfiguriert haben, werden nur die ausgewählten Felder auf der Hauptseite der mobilen Warehouse Management-App angezeigt. Mitarbeiter können jedoch weiterhin die verbleibenden Felder anzeigen, indem sie auf die Detailseite tippen.

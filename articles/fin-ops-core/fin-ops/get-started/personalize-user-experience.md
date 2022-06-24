@@ -1,8 +1,8 @@
 ---
 title: Die Benutzerumgebung personalisieren
-description: In diesem Thema wird erläutert, wie Sie die App personalisieren können.
+description: In diesem Artikel wird erläutert, wie Sie die App personalisieren können.
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 06/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b922d68fcf3e83be57140cf8c54c4bacd2b75f56
-ms.sourcegitcommit: edc887e0526c415466e9691e642028ecd97cdbe7
+ms.openlocfilehash: c326e51dc127d8b82ccef28146ec223ca5169c5e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "8602988"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845441"
 ---
 # <a name="personalize-the-user-experience"></a>Die Benutzerumgebung personalisieren
 
@@ -28,7 +28,7 @@ ms.locfileid: "8602988"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-In diesem Thema wird erläutert, wie Sie die App personalisieren können. Es werden die folgenden Themen behandelt: 
+In diesem Artikel wird erläutert, wie Sie die App personalisieren können. Es werden die folgenden Themen behandelt: 
 
 - **Systemweite Optionen**: Diese Personalisierungsoptionen werden auf einer Einrichtungsseite erstellt und stehen allen Benutzern zur Verfügung. Hierzu gehören das Farbenthema und Zeitzone. 
 - **Eingeschränkter Personalisierungszugriff**: Auf dieser Zugriffsebene werden Benutzeraktionen, die mit der typischen Seitennutzung verbunden sind, automatisch von der App gespeichert und beim nächsten Besuch der Seite wiederhergestellt. So speichert die App beispielsweise die Breite von Rasterspalten, wenn Sie sie anpassen, sowie den erweiterten/reduzierten Status von Inforegistern. 
@@ -58,7 +58,7 @@ Hier ist eine Liste der Aktionen, die unter die typische Seitennutzung fallen un
 
 - **Rasterspaltenbreiten** - Sie können die Breite einer Spalte in einer Liste anpassen, indem Sie die Größenänderungsleiste links oder rechts des Spaltenkopfs auswählen und sie nach links oder rechts auf die gewünschte Breite schieben. Die App speichert die Breite, die Sie festlegen,m in einer Spalte. Beim nächsten Öffnen dieser Seite wird die Breite dieser Spalte an diese Größe angepasst.
 - **Rasterfußzeile und Rasterspaltensummen**: *(Nur verfügbar, wenn das neue Rastersteuerelement aktiviert ist.)* Sie können entscheiden, ob eine Summe am unteren Rand einer beliebigen numerischen Spalte in einem Raster angezeigt werden und ob die Rasterfußzeile sichtbar sein soll. Die App speichert diese Einstellungen und wendet sie beim nächsten Öffnen dieser Seite an. Weitere Informationen finden Sie unter [Rasterfunktionen](grid-capabilities.md). 
-- **Inforegister** – Einige Seiten haben erweiterbare Abschnitte, die als *Inforegister* bezeichnet werden. Die App speichert Informationen über die Inforegister, die Sie erweitert oder reduziert haben. Beim nächsten Mal, wenn Sie zu der Seite zurückkehren, werden die gleichen Inforegister erweitert oder reduziert, basierend auf Ihrer letzten Interaktion mit der Seite. In einigen Fällen verbessert das Reduzieren eines Inforegisters die Leistung, da die App diese Informationen für Inforegister erst abruft, wenn die Inforegister erweitert werden. Wie später in diesem Thema erläutert, können Sie die Reihenfolge der Inforegister einer Seite auch ändern.
+- **Inforegister** – Einige Seiten haben erweiterbare Abschnitte, die als *Inforegister* bezeichnet werden. Die App speichert Informationen über die Inforegister, die Sie erweitert oder reduziert haben. Beim nächsten Mal, wenn Sie zu der Seite zurückkehren, werden die gleichen Inforegister erweitert oder reduziert, basierend auf Ihrer letzten Interaktion mit der Seite. In einigen Fällen verbessert das Reduzieren eines Inforegisters die Leistung, da die App diese Informationen für Inforegister erst abruft, wenn die Inforegister erweitert werden. Wie später in diesem Artikel erläutert, können Sie die Reihenfolge der Inforegister einer Seite auch ändern.
 - **Infoboxen**: Einige Seiten haben einen Bereich **Zugehörige Informationen**, der schreibgeschützte Informationen enthält, die dem aktuell zugeordneten Betreff der Seite zugeordnet sind. Jeder Abschnitt im Bereich **Zugehörige Informationen** wird als *Infobox* bezeichnet. Sie können den Bereich **Zugehörige Informationen** erweitern oder reduzieren, und Sie können auch einzelne Infoboxen erweitern oder reduzieren. Die App speichert diese Einstellungen. Wenn Sie die Seite das nächste Mal öffnen, werden der Bereich **Zugehörige Informationen** und die einzelnen Infoboxen, basierend auf Ihrer letzten Interaktion mit der Seite erweitert oder reduziert. In einigen Fällen verbessert das Reduzieren des Bereichs **zugehörige Informationen** oder einer Infobox die Leistung, da die App diese Informationen erst abruft, wenn die Infoboxen erweitert werden.
 - **Aktivitätsbereiche** – *Aktivitätsbereich* Wird meistens oben an den meisten Seiten angezeigt. Der Aktivitätsbereich enthält Schaltflächen für viele der Aktivitäten, die auf der aktuellen Seite ausgeführt werden können. Diese Schaltflächen werden häufig auf Registerkarten zusammengefasst. Sie können den gesamten Aktivitätsbereich als geöffnet *fixieren* oder Sie können ihn standardmäßig reduzieren lassen. Beim nächsten Mal, wenn Sie zu der Seite zurückkehren, wird der Aktivitätsbereich entweder geöffnet oder reduziert, basierend auf Ihrer letzten Interaktion mit der Seite. Wenn Sie den Aktivitätsbereich als geöffnet fixiert haben, wird die letzte verwendete Registerkarte angezeigt.
 - **QuickFilters** – *QuickFilter* erscheint oberhalb vieler Raster. Mit QuickFiltern können Sie Raster basierend auf einer einzelnen Spalte filtern, die Sie auswählen. Die App speichert die Spalte, die Sie gefiltert haben. Wenn Sie das nächste Mal die Seite öffnen, nutzt das Raster zum Filtern automatisch dieselbe Spalte. Sie können jedoch trotzdem eine andere Spalte auswählen, um das Raster zu filtern.
@@ -173,7 +173,7 @@ Ab Version 10.0.26 lässt die Funktion **Benutzern erlauben, Kachelgrößen ausz
 
 ### <a name="personalizing-your-dashboard"></a>Ihr Dashboard personalisieren
 
-Das Dashboard ist oftmals die erste Seite, die beim Öffnen der App angezeigt wird. Es kann wie jede andere Seite im System mit denselben Mechanismen personalisiert werden, die weiter oben in diesem Thema beschrieben wurden. 
+Das Dashboard ist oftmals die erste Seite, die beim Öffnen der App angezeigt wird. Es kann wie jede andere Seite im System mit denselben Mechanismen personalisiert werden, die weiter oben in diesem Artikel beschrieben wurden. 
 
 > [!WARNING]
 > Wenn Sie Inhalte im Dashboard ausblenden, ist es derzeit wichtig, dass Sie direkt auf eine Kachel zielen und nicht auf den Bereich um sie herum. Wenn Sie die Gruppe um eine Kachel herum ausblenden, kann es zu unerwarteten Ergebnissen kommen, wenn später weitere Kacheln hinzugefügt werden oder das System auf eine andere Sprache umgeschaltet wird.
@@ -236,7 +236,7 @@ Eine andere Möglichkeit, Personalisierungen gemeinsam zu nutzen, ist über Expo
 
 #### <a name="export"></a>Exportieren
 
-Allgemein können Sie eine Ihrer eigenen Ansichten oder Personalisierungen exportieren, indem Sie die entsprechende Seite öffnen, die Werkzeugleiste **Personalisierung** öffnen und dann **Exportieren** wählen. Weitere Informationen über die Symbolleiste finden Sie im Abschnitt [Personalisierungs-Symbolleiste](#personalization-toolbar) weiter oben in diesem Thema. Alternativ können Sie, wenn [Gespeicherte Ansichten](saved-views.md) aktiviert sind, zu **Einstellungen \> Benutzeroptionen \> Personalisierung** gehen, um eine Liste aller Ihrer Personalisierungen im System anzuzeigen. Von dort aus können Sie die Ansichten oder Personalisierungen auswählen, die exportiert werden sollen, und dann **Exportieren** wählen.
+Allgemein können Sie eine Ihrer eigenen Ansichten oder Personalisierungen exportieren, indem Sie die entsprechende Seite öffnen, die Werkzeugleiste **Personalisierung** öffnen und dann **Exportieren** wählen. Weitere Informationen über die Symbolleiste finden Sie im Abschnitt [Personalisierungs-Symbolleiste](#personalization-toolbar) weiter oben in diesem Artikel. Alternativ können Sie, wenn [Gespeicherte Ansichten](saved-views.md) aktiviert sind, zu **Einstellungen \> Benutzeroptionen \> Personalisierung** gehen, um eine Liste aller Ihrer Personalisierungen im System anzuzeigen. Von dort aus können Sie die Ansichten oder Personalisierungen auswählen, die exportiert werden sollen, und dann **Exportieren** wählen.
 
 Zusätzlich können Admins die Personalisierungen anderer Benutzer exportieren, indem sie diese Schritte ausführen.
 
@@ -277,7 +277,7 @@ Wenn gespeicherte Ansichten nicht aktiviert sind, führen Sie diese Schritte aus
 
 Die Seite **Personalisierung** ist der zentrale Knotenpunkt für die Verwaltung von Personalisierungen auf organisatorischer Ebene. Der Inhalt und die Funktionen dieser Seite hängen davon ab, ob die Funktion **Gespeicherte Ansichten** aktiviert ist.
 
-Für Kunden, die die Funktion **Gespeicherte Ansichten** aktiviert haben, gibt es weitere Informationen im Abschnitt „Ansichten global verwalten“ im Thema [Gespeicherte Ansichten](saved-views.md).
+Für Kunden, die die Funktion **Gespeicherte Ansichten** aktiviert haben, gibt es weitere Informationen im Abschnitt „Ansichten global verwalten“ im Artikel [Gespeicherte Ansichten](saved-views.md).
 
 Für Kunden, die die Funktion [Gespeicherte Ansichten](saved-views.md) noch nicht aktiviert haben, hat diese Seite vier Registerkarten:
 
@@ -285,6 +285,9 @@ Für Kunden, die die Funktion [Gespeicherte Ansichten](saved-views.md) noch nich
 - **Löschen** – Sie können eine Seiten- oder Arbeitsbereichspersonalisierung für einen oder mehrere Benutzer löschen. Wählen Sie eine Seite oder einen Arbeitsbereich aus, um die Liste der Benutzer zu sehen, die diese Seite personalisiert haben. Anschließend wählen Sie die Benutzer, die für diese deaktivierte Seite oder Arbeitsbereich aus und wählen Sie **Löschen** aus. Alle Personalisierungen, die die ausgewählten Benutzer auf die ausgewählte Seite oder den ausgewählten Arbeitsbereich angewendet haben, werden gelöscht. Diese Aktion kann nicht rückgängig gemacht werden. Wenn eine Personalisierung für die Seite oder den Arbeitsbereich gespeichert wurde, dann kann die Personalisierung neu importiert werden.
 - **Benutzer** – Wählen Sie einen Benutzer aus, um die Liste der Seiten anzuzeigen, die der Benutzer personalisiert hat. Sie können dann die Möglichkeit aktivieren oder deaktivieren, um zu bestimmen, ob der Benutzer Personalisierungen für bestimmte Seiten oder das gesamte System verwenden kann oder nicht. Sie können Personalisierungen auch löschen, importieren oder exportieren für diesen Benutzer. Darüber hinaus können Sie Funktionslegenden für den Benutzer zurücksetzen. In diesem Fall, wenn der Benutzer zuvor Popup-Fenster, die neue Funktionen einführen, abgelehnt hat, werden sie beim nächsten Mal, wenn der Benutzer auf diese Funktionen trifft, wieder angezeigt.
 - **System** – Sie können temporär Personalisierungen im System für alle Benutzer deaktivieren. In diesem Fall werden alle Personalisierungen für alle Benutzer gelöscht und alle Seiten auf ihren Standardstatus zurückgesetzt. Wenn Sie die Personalisierungen später wieder reaktivieren, werden diese wieder angewendet. Sie können temporär alle Personalisierungen im System für alle Benutzer deaktivieren oder abschalten. Es gibt keine Möglichkeit, Personalisierungen wiederherzustellen, die gelöscht wurden. Deshalb müssen Sie vor diesem Schritt sicherstellen, dass Sie alle Personalisierungen exportiert haben, die Sie später importieren möchten.
+
+### <a name="service-updates-and-personalization"></a>Dienstupdates und Personalisierung
+Personalisierungsdaten müssen nicht gelöscht oder zurückgesetzt werden, wenn Sie zu einer neuen Version des Produkts wechseln. Personalisierungen und gespeicherte Ansichtsdaten funktionieren weiterhin über Updates hinweg. Ausnahmen hiervon wären Änderungen am Formular selbst, die eine Personalisierung ungültig machen (z. B. ein entferntes Steuerelement), oder Änderungen an der Basisabfrage des Formulars, die die Teilstruktur der Datenquelle so ändern, dass sie nicht mehr mit der Teilstruktur der Datenquelle übereinstimmt, die der Ansichtsabfrage zugeordnet ist.
 
 ## <a name="personalizing-inventory-dimensions"></a>Personalisierung von Lagerungsdimensionen
 

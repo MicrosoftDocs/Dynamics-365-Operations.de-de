@@ -1,6 +1,6 @@
 ---
-title: Anlagenattributübersicht
-description: Dieses Thema bietet einen Überblick über Anlagenattribute in Asset Management.
+title: Anlagenattribut – Übersicht
+description: Dieser Artikel bietet einen Überblick über Anlagenattribute in Anlagenverwaltung.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: overview
@@ -17,20 +17,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 98386b6ffe2a5f9c79c0ee1f18073ac13fc3a039
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: d1585f200e4baba519085685a41979c70a64fb1a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986459"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862742"
 ---
-# <a name="asset-attribute-overview"></a>Anlagenattributübersicht
+# <a name="asset-attribute-overview"></a>Anlagenattribut – Übersicht
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-Dieses Thema bietet einen Überblick über Anlagenattribute in Asset Management. Anlagenattribute sind Eigenschaften, die einem Anlagentyp oder einer Anlage zugeordnet sind. Wenn Sie [Attributtypen](../setup-for-functional-locations/specification-types.md) eingerichtet haben und sie für Anlagen verwenden, erhalten Sie eine Übersicht über die Attributwerte, die für die Anlagen eingerichtet sind. Diese Übersicht wird auf zwei Seiten in Asset Management angezeigt: **Anlagenattributübersicht** und **Anlagenattribut**.
+Dieser Artikel bietet einen Überblick über Anlagenattribute in Anlagenverwaltung. Anlagenattribute sind Eigenschaften, die einem Anlagentyp oder einer Anlage zugeordnet sind. Wenn Sie [Attributtypen](../setup-for-functional-locations/specification-types.md) eingerichtet haben und sie für Anlagen verwenden, erhalten Sie eine Übersicht über die Attributwerte, die für die Anlagen eingerichtet sind. Diese Übersicht wird auf zwei Seiten in Asset Management angezeigt: **Anlagenattributübersicht** und **Anlagenattribut**.
 
 Die Seite **Anlagenattributübersicht** zeigt jede Anlage in einer einzelnen Zeile an. Die Zeile zeigt alle Attributtypen, die dieser Anlage zugeordnet sind. Gehen Sie folgendermaßen vor, um die Seite **Anlagenattributübersicht** zu öffnen und zu verwenden.
 

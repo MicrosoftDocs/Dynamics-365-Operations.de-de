@@ -1,6 +1,6 @@
 ---
 title: Beschaffungs-Startseite
-description: Dieses Thema enthält eine Liste der Hilfethemen und weiterer Ressourcen, die für die Beschaffung verfügbar sind.
+description: Dieser Artikel enthält eine Liste der Hilfeartikeln und weiterer Ressourcen, die für die Beschaffung verfügbar sind.
 author: GalynaFedorova
 ms.date: 09/27/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fdf56084147edcdf8951d4a267611c10dc7eb6dd
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 68409b15a3f4874d05a43931136ce91097c4f904
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673017"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885869"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Beschaffungs-Startseite
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält eine Liste der Hilfethemen und weiterer Ressourcen, die für die Beschaffung verfügbar sind.
+Dieser Artikel enthält eine Liste der Hilfeartikeln und weiterer Ressourcen, die für die Beschaffung verfügbar sind.
 
 Die Beschaffung umfasst alle Schritte von der Identifikation einer Anforderung für Produkte und Dienste bis zur Beschaffung des Produkts, dem Eingang, der Fakturierung und der Verarbeitung der Zahlung mit Kreditoren. Beschaffungsprozesse können für bestimmte Geschäftsanforderungen konfiguriert werden, indem Einkaufsrichtlinien und Workflows definiert werden. Allgemeine Angaben finden Sie unter[Überblick Beschaffung](procurement-sourcing-overview.md). Weitere Ressourcen sind unten aufgeführt.
 

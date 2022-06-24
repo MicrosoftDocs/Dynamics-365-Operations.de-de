@@ -1,6 +1,6 @@
 ---
 title: Juristische Personen erstellen
-description: In diesem Thema wird beschrieben, wie Sie juristische Personen in Microsoft Dynamics 365 Commerce erstellen, die erstellt und konfiguriert werden müssen, bevor Kanäle erstellt werden.
+description: In diesem Artikel wird beschrieben, wie Sie juristische Personen in Microsoft Dynamics 365 Commerce erstellen, die erstellt und konfiguriert werden müssen, bevor Kanäle erstellt werden.
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: c9812a828cb159400c6388f02f10e00694aa64ad
-ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
+ms.openlocfilehash: 160dd82298705eab9edecb9d30d051382b6b4471
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809531"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847705"
 ---
 # <a name="create-legal-entities"></a>Juristische Personen erstellen
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie juristische Personen in Microsoft Dynamics 365 Commerce erstellen, die erstellt und konfiguriert werden müssen, bevor Kanäle erstellt werden.
+In diesem Artikel wird beschrieben, wie Sie juristische Personen in Microsoft Dynamics 365 Commerce erstellen, die erstellt und konfiguriert werden müssen, bevor Kanäle erstellt werden.
 
 Eine juristische Person ist eine Organisation mit einer registrierten oder eingetragenen Rechtsform. Juristische Personen können Verträge abschließen und sind verpflichtet, Finanzaufstellungen zum Erstellen eines Berichts über ihre Vermögens-, Finanz- und Ertragslage vorzubereiten.
 

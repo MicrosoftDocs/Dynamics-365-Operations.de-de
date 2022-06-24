@@ -1,6 +1,6 @@
 ---
 title: Steuergruppen einrichten
-description: In diesem Abschnitt wird erläutert, wie Sie Steuergruppen im Steuerberechnungsdienst einrichten.
+description: In diesem Artikel wird erläutert, wie Sie Steuergruppen im Steuerberechnungsdienst einrichten.
 author: wangchen
 ms.date: 11/30/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 50abafb958edfb8476434ff5842cd84cb186962f
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 89c5670ee7e78f2dc51f128c3ae8d284bb6b925b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883862"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862898"
 ---
 # <a name="set-up-tax-groups"></a>Steuergruppen einrichten
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Abschnitt wird erläutert, wie Sie Steuergruppen im Steuerberechnungsdienst einrichten. Außerdem wird erläutert, wie Sie die Regelmatrix für die Anwendbarkeit der Steuergruppe einrichten und Zeilen in der Matrix konfigurieren.
+In diesem Artikel wird erläutert, wie Sie Steuergruppen im Steuerberechnungsdienst einrichten. Außerdem wird erläutert, wie Sie die Regelmatrix für die Anwendbarkeit der Steuergruppe einrichten und Zeilen in der Matrix konfigurieren.
 
 Das Konzept der Steuergruppen im Steuerberechnungsdienst ähnelt dem Konzept der Mehrwertsteuergruppen in Microsoft Dynamics 365 Finance. Sie sind Gruppen von Steuercodes. Der Steuerberechnungsdienst verwendet die Schnittmenge einer Steuergruppe und einer Artikelsteuergruppe, um die Steuercodes zu bestimmen.
 

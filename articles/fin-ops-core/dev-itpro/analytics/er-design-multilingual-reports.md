@@ -1,8 +1,8 @@
 ---
 title: Entwerfen Sie mehrsprachige Berichte in der elektronischen Berichterstellung
-description: In diesem Thema wird erläutert, wie Sie mithilfe von Electronic Reporting (ER) mehrsprachige Berichte erstellen und erstellen können.
+description: In diesem Artikel wird erläutert, wie Sie mithilfe von Electronic Reporting (ER) mehrsprachige Berichte entwerfen und erstellen können.
 author: NickSelin
-ms.date: 04/28/2022
+ms.date: 05/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa8297d4f5c56a7a20561b1a90c5852e65dbff31
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: c042d609d68544aa4be5d707109a15b2ab8d422c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811606"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845743"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Entwerfen Sie mehrsprachige Berichte in der elektronischen Berichterstellung
 
@@ -142,6 +142,9 @@ Wenn Sie ein EB-Format auf diese Weise konfigurieren, wird der Bericht unter Ver
 
 Wenn eine Beschriftung, auf die verwiesen wird, keine Übersetzung für die Sprache des Formatausführungskontexts enthält, der eine Modellzuordnung aufruft, wird stattdessen ein Beschriftungstext in der Sprache EN-US verwendet.
 
+> [!TIP]
+> Sie können die **ORDNER**-Komponente sowie verschiedene Arten von **DATEI**-Komponenten im bearbeitbaren EB-Format verwenden, um anzugeben, wie eine ausgehende Datei generiert wird. Um eine generierte Datei zu benennen, konfigurieren Sie den ER-[Ausdruck](er-formula-language.md) für den Parameter **Dateiname** der Komponente. Sie können Bezeichnungen im konfigurierten Ausdruck verwenden. Da der Parameter **Dateiname** standardmäßig sprachunabhängig ist, wird der Text aller Beschriftungen, auf die Sie sich in diesem Ausdruck beziehen, zur Laufzeit in der Standardsprache EN-US angezeigt. Ab Version 10.0.28 können Sie jedoch die Funktion **Parameter „Sprachpräferenz“ auf den Ausdruck „Dateiname“ anwenden** aktivieren. Der Ausdruck **Dateiname** berücksichtigt dann den Parameter **Sprachpräferenzen**, wenn er berechnet wird.
+
 ## <a name="language"></a>Sprache
 
 EB unterstützt verschiedene Möglichkeiten, eine Sprache für einen generierten Bericht anzugeben. In dem Feld **Spracheinstellungen** in der Registerkarte **Format** können Sie die folgenden Werte auswählen:
@@ -198,7 +201,7 @@ Die Konfiguration einer EB-Komponente erfolgt in der Entwurfsversion der EB-Konf
 
 ![Die Seite EB-Konfigurationen mit Zugriff auf die Konfigurationsversion im Entwurfsstatus.](./media/er-multilingual-labels-configurations.png)
 
-Wie weiter oben in diesem Thema beschrieben, können Sie einer bearbeitbaren EB-Komponente die erforderlichen EB-Beschriftungen hinzufügen. Auf diese Weise können Sie den Text der EB-Beschriftung in der Sprache EN-US angeben. Anschließend können Sie die Beschriftungen der EB-Komponente mithilfe der integrierten EB-Funktion exportieren. Wählen Sie die Entwurfsversion einer EB-Konfiguration aus, die die bearbeitbare EB-Komponente enthält, und wählen Sie dann **Austausch \> Beschrichtung exportieren**.
+Wie weiter oben in diesem Artikel beschrieben, können Sie einer bearbeitbaren EB-Komponente die erforderlichen EB-Beschriftungen hinzufügen. Auf diese Weise können Sie den Text der EB-Beschriftung in der Sprache EN-US angeben. Anschließend können Sie die Beschriftungen der EB-Komponente mithilfe der integrierten EB-Funktion exportieren. Wählen Sie die Entwurfsversion einer EB-Konfiguration aus, die die bearbeitbare EB-Komponente enthält, und wählen Sie dann **Austausch \> Beschrichtung exportieren**.
 
 ![Auf der Seite EB-Konfigurationen können Sie EB-Beschriftungen aus der ausgewählten Konfigurationsversion exportieren.](./media/er-multilingual-labels-export.png)
 
@@ -229,7 +232,7 @@ Die EB-Versionierung steuert die Zuordnung der Beschriftung zu einem beliebigen 
 
 Dies eingebaute [LISTOFFIELDS](er-functions-list-listoffields.md) EB-Funktion kann auf EB-Beschriftungen zugreifen, die für einige Elemente von EB-Komponenten konfiguriert wurden.
 
-Wie weiter oben in diesem Thema beschrieben, können die Attribute **Beschriftung** und **Beschreibung** von jedem [Modell](#LinkModelEnum) oder [Format](#LinkFormatEnum) des EB-Enumerationswerts mit einer EB-Beschriftung verlinkt werden, auf die die entsprechende EB-Komponente Zugriff hat. Sie können einen EB-Ausdruck konfigurieren, in dem Sie die Funktion **LISTOFFIELDS** mithilfe der EB-Enumeration als Argument aufrufen. Dieser Ausdruck gibt eine Liste zurück, die einen Datensatz für jeden Wert einer EB-Enumeration enthält, die als Argument dieser Funktion definiert wurde. Jeder Datensatz enthält den Wert einer EB-Beschriftung, der mit einem EB-Enumerationswert verknüpft ist:
+Wie weiter oben in diesem Artikel beschrieben, können die Attribute **Beschriftung** und **Beschreibung** von jedem [Modell](#LinkModelEnum) oder [Format](#LinkFormatEnum) des EB-Enumerationswerts mit einer EB-Beschriftung verlinkt werden, auf die die entsprechende EB-Komponente Zugriff hat. Sie können einen EB-Ausdruck konfigurieren, in dem Sie die Funktion **LISTOFFIELDS** mithilfe der EB-Enumeration als Argument aufrufen. Dieser Ausdruck gibt eine Liste zurück, die einen Datensatz für jeden Wert einer EB-Enumeration enthält, die als Argument dieser Funktion definiert wurde. Jeder Datensatz enthält den Wert einer EB-Beschriftung, der mit einem EB-Enumerationswert verknüpft ist:
 
 - Der Wert einer EB-Beschriftung ist mit den Attributten der **Beschriftung** verknüpft, die im Feld **Beschriftung** des zurückgegebenen Datensatzes gespeichert sind.
 - Der Wert einer EB-Beschriftung ist mit den Attributten der **Beschreibung** verknüpft, die im Feld **Beschreibung** des zurückgegebenen Datensatzes gespeichert sind.

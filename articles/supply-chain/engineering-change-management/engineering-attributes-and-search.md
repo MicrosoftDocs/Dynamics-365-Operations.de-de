@@ -1,6 +1,6 @@
 ---
 title: Technische Attribute und Suche nach technischen Attributen
-description: In diesem Thema wird erklärt, wie Sie Engineering-Attribute verwenden können, um alle Nicht-Standard-Merkmale zu spezifizieren, um sicherzustellen, dass alle Produktstammdaten im System registriert werden können. Es wird auch erklärt, wie Sie die technische Attributsuche verwenden können, um Produkte anhand dieser registrierten Merkmale leicht zu finden.
+description: In diesem Artikel wird erklärt, wie Sie Engineering-Attribute verwenden können, um alle Nicht-Standard-Merkmale zu spezifizieren, um sicherzustellen, dass alle Produktstammdaten im System registriert werden können. Es wird auch erklärt, wie Sie die technische Attributsuche verwenden können, um Produkte anhand dieser registrierten Merkmale leicht zu finden.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 59710f0366418e240a4109e7cf8fcf84073110bf
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 4b25ab0bfda08b7aa091de8c6833007c586b9c87
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103212"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852562"
 ---
 # <a name="engineering-attributes-and-engineering-attribute-search"></a>Technische Attribute und Suche nach technischen Attributen
 

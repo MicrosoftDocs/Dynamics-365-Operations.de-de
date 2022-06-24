@@ -1,6 +1,6 @@
 ---
 title: Neuerungen und Änderungen in Dynamics 365 Supply Chain Management
-description: Dieses Thema verweist auf Themen, die die neuen und geänderten Funktionen in jeder Version von beschreiben Dynamics 365 Supply Chain Management.
+description: Dieser Artikel verweist auf Artikel, die die neuen und geänderten Funktionen in jeder Version von Dynamics 365 Supply Chain Management beschreiben.
 author: kamaybac
 ms.date: 05/27/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 6c1cfcd7ccc39f2742fd237278f97b4d3d0ad4fd
-ms.sourcegitcommit: 611202adaa080250636efabb3b3b32b850d92d04
+ms.openlocfilehash: b767f8ff8e9c9ef7ea1b4dee777f9e0c96f93aef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8812971"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893438"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Neuerungen und Änderungen in Dynamics 365 Supply Chain Management
 
@@ -27,7 +27,7 @@ ms.locfileid: "8812971"
 
 ## <a name="releases-of-dynamics-365-supply-chain-management"></a>Versionen von Dynamics 365 Supply Chain Management
 
-In den folgenden Themen können Sie sehen, was in jeder Version einer Dynamics 365 Supply Chain Management App neu ist oder geändert wurde.
+In den folgenden Artikeln können Sie sehen, was in jeder Version einer Dynamics 365 Supply Chain Management App neu ist oder geändert wurde.
 
 | Version | Erstellungsnummer | Autimatische Updateverfügbarkeit | Mehr erfahren |
 |---|---|---|---|
@@ -57,9 +57,9 @@ In den folgenden Themen können Sie sehen, was in jeder Version einer Dynamics 3
 
 ## <a name="releases-before-november-2019"></a>Veröffentlichungen vor November 2019
 
-In den folgenden Themen können Sie sehen, was in jeder Version vor November 2019 geändert wurde.
+In den folgenden Artikeln können Sie sehen, was in jeder Version vor November 2019 geändert wurde.
 
-| Freigabe | Version | Erstellungsnummer | Verfügbarkeit | Weitere Informationen |
+| Freigabe | Version | Erstellungsnummer | Verfügbarkeit | Mehr erfahren |
 |---|---|---|---|---|
 | Microsoft Dynamics 365 for Finance and Operations                     | 10.0.5      | 10.0.197         | 2019. Oktober     | [Was ist neu oder geändert in Dynamics 365 for Finance and Operations Version 10.0.5 (Oktober 2019)?](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md)                 |
 | Microsoft Dynamics 365 for Finance and Operations                     | 10.0.4      | 10.0.136         | Juli 2019        | [Neuerungen oder Änderungen in Dynamics 365 for Finance and Operations Version 10.0.4 (Juli 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md)                    |

@@ -1,6 +1,6 @@
 ---
 title: Mehrwertsteuercodes einrichten
-description: In diesem Thema wird erläutert, wie Mehrwertsteuercodes in Dynamics 365 Finance eingerichtet werden.
+description: In diesem Artikel wird erläutert, wie Mehrwertsteuercodes in Dynamics 365 Finance eingerichtet werden.
 author: twheeloc
 ms.date: 09/27/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 69e2cf9a16fe0e694154cccf9b49944b49c79b90
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: b12133583f40cc17cb85f6dbd86697592af25caf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565852"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858467"
 ---
 # <a name="set-up-sales-tax-codes"></a>Mehrwertsteuercodes einrichten
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Mehrwertsteuercodes eingerichtet werden. Mehrwertsteuercodes werden für jede indirekte Steuer oder Abgabe berechnet, die die juristische Person berechnen, erfassen und den Steuerbehörden entrichten muss.
+In diesem Artikel wird erläutert, wie Mehrwertsteuercodes eingerichtet werden. Mehrwertsteuercodes werden für jede indirekte Steuer oder Abgabe berechnet, die die juristische Person berechnen, erfassen und den Steuerbehörden entrichten muss.
 
 Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
 

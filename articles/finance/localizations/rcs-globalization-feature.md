@@ -1,6 +1,6 @@
 ---
 title: Regulatory Configuration Services (RCS) – Globalisierungsfunktionen
-description: In diesem Thema wird erläutert, wie Sie Microsoft Regulatory Configuration Services (RCS) und die das globale nutzen, um die Globalisierungsfunktionen zu erstellen und zu nutzen.
+description: In diesem Artikel wird erläutert, wie Sie Microsoft Regulatory Configuration Services (RCS) und das globale Repository nutzen, um die Globalisierungsfunktionen zu erstellen und zu nutzen.
 author: JaneA07
 ms.date: 06/04/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: e8df8a56d493e58f28699a87dd9dab1f87540a4ee327450384f89e6d426ba1a7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf08f25f7d092e0f93284a4019096378543adb9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760630"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888893"
 ---
 # <a name="regulatory-configuration-services-rcs---globalization-features"></a>Regulatory Configuration Services (RCS) – Globalisierungsfunktionen
 
@@ -40,7 +40,7 @@ Bevor Sie die Prozeduren ausführen, müssen Sie die Schritte ausführen, die si
 - Zugriff auf eine RCS-Instanz.
 - Konfigurationsanbieter erstellen und aktivieren. Weitere Informationen finden Sie unter [Konfigurationsanbieter erstellen und als aktiv markieren](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-In Ihren Finance and Operations Apps Instanzen befolgen Sie diese Schritte.
+Führen Sie in der Finanz- und Betriebs-Apps-Instanz die folgenden Schritte aus.
 
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
 2. Wenn keine RCS-Umgebung für Ihr Unternehmen bereitgestellt wurde, klicken Sie auf **Regulatory services – Konfiguration** und folgen Sie den Anweisungen zur Bereitstellung einer RCS-Umgebung.
@@ -64,7 +64,7 @@ Um eine Globalisierungsfunktion zu verwenden, müssen Sie sie zuerst aus dem glo
 
 ## <a name="access-globalization-features"></a>Zugreifen auf Globalisierungsfunktionen
 
-1. Stellen Sie sicher, dass die **Globalisierungsfunktionen** Funktion in der Funktionsverwaltung aktiviert ist wie weiter oben in diesem Thema beschrieben.
+1. Stellen Sie sicher, dass die Funktion **Globalisierungsfunktionen** in der Funktionsverwaltung aktiviert ist wie weiter oben in diesem Artikel beschrieben.
 2. Öffnen Sie den neuen Arbeitsbereich **Globalisierungsfunktionen** und dann unter **Eigenschaften** wählen Sie die Kachel **elektronische Rechnungsstellung** aus.
 
     ![Arbeitsbereich für globale Funktionen.](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
@@ -161,7 +161,7 @@ Die folgenden Aktionen sind für Konfigurationen verfügbar:
 - **Anzeigen** – Zeigen Sie die zugrunde liegenden Funktionskonfigurationen an, für die keine Aktualisierung erforderlich ist.
 - **Bearbeiten** – Erstellen Sie eine Entwurfsversion einer ausgewählten Konfiguration, damit Sie das Format oder die Formatzuordnung im Format-Designer bearbeiten können.
 - **Löschen** – Löschen Sie eine ausgewählte Konfiguration aus der Funktion.
-- **Zurücksetzen** – Funktion zurücksetzen. Weitere Informationen finden Sie unter [Zurücksetzen abgeleiteter Glogalisierungsfunktionen](#rebase) weiter unten in diesem Thema.
+- **Zurücksetzen** – Funktion zurücksetzen. Weitere Informationen finden Sie unter [Zurücksetzen abgeleiteter Glogalisierungsfunktionen](#rebase) weiter unten in diesem Artikel.
 
 ### <a name="setups"></a>Einrichtungen
 
@@ -182,10 +182,10 @@ Folgende Aktionen sind für die Funktionseinrichtung verfügbar:
 
 Die folgenden Aktionen sind für Umgebungen verfügbar:
 
-- **Aktivieren** – Wählen Sie für eine ausgewählte Funktions-Version eine veröffentlichte Umgebung und ein **Gültig ab** Datum aus, an dem sie verfügbar sein sollte. Weitere Informationen finden Sie unter [Umgebungen für Aktivieren](#configureenvironment) weiter unten in diesem Thema.
+- **Aktivieren** – Wählen Sie für eine ausgewählte Funktions-Version eine veröffentlichte Umgebung und ein **Gültig ab** Datum aus, an dem sie verfügbar sein sollte. Weitere Informationen finden Sie unter [Umgebungen für Aktivieren](#configureenvironment) weiter unten in diesem Artikel.
 - **Stornieren** – Entfernen Sie eine Umgebung für eine Funktionseinrichtung.
 
-### <a name="organizations"></a>Organisation
+### <a name="organizations"></a>Organisationen
 
 Befolgen Sie diese Schritte, um eine Globalisierungsfunktion für eine externe Organisation freizugeben.
 

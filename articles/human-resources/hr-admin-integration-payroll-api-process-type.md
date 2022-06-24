@@ -1,6 +1,6 @@
 ---
 title: Prozesstyp
-description: In diesem Thema wird der Optionssatz für den Prozesstyp für Dynamics 365 Human Resources beschrieben.
+description: In diesem Artikel wird der Optionssatz für den Prozesstyp für Dynamics 365 Human Resources beschrieben.
 author: twheeloc
 ms.date: 06/25/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-06-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9f30b50e6ec24b44f7832905a43c9fd979986065
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: 51be840b3af41e1ae32e9eae87ef62f4f4f15a09
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533681"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865352"
 ---
 # <a name="process-type"></a>Prozesstyp
 
@@ -27,7 +27,7 @@ ms.locfileid: "8533681"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In diesem Thema wird der Optionssatz für Nein Ja für Dynamics 365 Human Resources beschrieben.
+In diesem Artikel wird der Optionssatz für Nein Ja für Dynamics 365 Human Resources beschrieben.
 
 ## <a name="option-set-process-type"></a>Optionssatz: Prozesstyp
 

@@ -1,6 +1,6 @@
 ---
 title: Getrenntes Dual-write Application Orchestration Paket
-description: Das Paket Dual-write Application Orchestration ist nicht mehr ein einzelnes Paket, sondern wurde in kleinere Pakete aufgeteilt. Dieses Thema erklärt die Lösungen und Zuordnungen, die jedes Paket enthält, sowie seine Abhängigkeit von anderen Paketen.
+description: Das Paket Dual-write Application Orchestration ist nicht mehr ein einzelnes Paket, sondern wurde in kleinere Pakete aufgeteilt. Dieser Artikel erklärt die Lösungen und Zuordnungen, die jedes Paket enthält, sowie seine Abhängigkeit von anderen Paketen.
 author: RamaKrishnamoorthy
 ms.date: 04/25/2022
 ms.topic: article
@@ -10,12 +10,12 @@ ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: f6950ec3e6ded49a71f119c21be67f538c8e1c69
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 504939f1f98c18005c092cabc1d040b420402c93
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716551"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874811"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Getrenntes Dual-write Application Orchestration Paket
 
@@ -42,7 +42,7 @@ Da es sich um ein einziges Paket handelte, erstellte dieses Paket eine „Alles-
 
 ![Getrenntes Paket.](media/separated-package-1.png)
 
-Dieses Thema erklärt die Lösungen und Zuordnungen, die jedes Paket enthält, sowie seine Abhängigkeit von anderen Paketen.
+Dieser Artikel erklärt die Lösungen und Zuordnungen, die jedes Paket enthält, sowie seine Abhängigkeit von anderen Paketen.
 
 ## <a name="dual-write-application-core"></a>Dual-write Application Core
 
@@ -58,7 +58,7 @@ Mit dem Dual-write Application Core-Paket können Benutzer Dual-write ohne eine 
 
 Die folgenden Zuordnungen sind in diesem Paket enthalten.
 
-| Finance and Operations-Apps     | Customer Engagement-Apps                    |
+| Finanz- und Betriebs-Apps     | Customer Engagement-Apps                    |
 |---------------------------------|---------------------------------------------|
 | Organisationseinheit                  | msdyn_internalorganizations                 |
 | Organisationshierarchie          | msdyn_internalorganizationhierarchies       |
@@ -89,7 +89,7 @@ Das Dual-write Human Resources Paket enthält die Lösungen und Zuordnungen, die
 
 Die folgenden Zuordnungen sind in diesem Paket enthalten.
 
-| Finance and Operations-Apps | Customer Engagement-Apps         |
+| Finanz- und Betriebs-Apps | Customer Engagement-Apps         |
 |-----------------------------|----------------------------------|
 | Nationalitäten              | cdm_ethnicorigins                |
 | Vergütung (Stellenfunktion)   | cdm_jobfunctions                 |
@@ -119,7 +119,7 @@ Das Dual-write Supply Chain Paket enthält die Lösungen und Zuordnungen, die f�
 
 Die folgenden Zuordnungen sind in diesem Paket enthalten.
 
-| Finance and Operations-Apps                 | Customer Engagement-Apps                      |
+| Finanz- und Betriebs-Apps                 | Customer Engagement-Apps                      |
 |---------------------------------------------|-----------------------------------------------|
 | Einheiten                                       | uoms                                          |
 | Auftragskopfzeilen CDS                     | salesorders                                   |
@@ -197,7 +197,7 @@ Das Finance-Paket für duales Schreiben enthält die Lösungen und Zuordnungen, 
 
 Die folgenden Zuordnungen sind in diesem Paket enthalten.
 
-| Finance and Operations-Apps             | Customer Engagement-Apps        |
+| Finanz- und Betriebs-Apps             | Customer Engagement-Apps        |
 |-----------------------------------------|---------------------------------|
 | Quellensteuergruppen                  | msdyn_withholdingtaxgroups      |
 | CDS Kontakte V2 (Kunde)              | Kontakte                        |
@@ -274,7 +274,7 @@ Das Paket Dual-write Anlagenverwaltung enthält die Lösungen und Zuordnungen, d
 
 Die folgenden Zuordnungen sind in diesem Paket enthalten.
 
-| Finance and Operations-Apps                           | Customer Engagement-Apps                |
+| Finanz- und Betriebs-Apps                           | Customer Engagement-Apps                |
 |-------------------------------------------------------|-----------------------------------------|
 | Anlagenverwaltungsgarantie                             | msdyn_warranties                        |
 | Anlagenverwaltungsmodelle                               | msdyn_models                            |
@@ -314,7 +314,7 @@ Das Partei- und globale Adressbuchpaket mit dualem Schreiben enthält die folgen
 
 Die folgenden Zuordnungen sind in diesem Paket enthalten.
 
-| Finance and Operations-Apps | Customer Engagement-Apps | 
+| Finanz- und Betriebs-Apps | Customer Engagement-Apps | 
 |-----------------------------|--------------------------|
 | CDS-Parteien | msdyn_parties | 
 | CDS Postadressorte | msdyn_postaladdresscollections | 

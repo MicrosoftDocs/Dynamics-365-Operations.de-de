@@ -1,6 +1,6 @@
 ---
 title: Bereitstellungsrichtlinien für das Steuererfassungsdienst-Integrationsbeispiel für die Tschechische Republik (Legacy)
-description: Dieses Thema enthält Richtlinien für die Bereitstellung des Beispiels für die steuerliche Integration für die Tschechische Republik aus dem Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK).
+description: Dieser Artikel enthält Richtlinien für die Bereitstellung des Beispiels für die steuerliche Integration für die Tschechische Republik aus dem Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK).
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: aaa894ccfd77a5522a3696e20987b9e67f3abee0
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: 35584493cd2a4fecd5fc86d529ec43bb4ef97671
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8613960"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881763"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-the-czech-republic-legacy"></a>Bereitstellungsrichtlinien für das Steuererfassungsdienst-Integrationsbeispiel für die Tschechische Republik (Legacy)
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Richtlinien für die Bereitstellung des Integrationsbeispiels für den Steuerregistrierungsdienst für die Tschechische Republik aus dem Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK) auf einer virtuellen Entwicklermaschine (VM) in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen zu den Beispielen für diese steuerliche Integration finden Sie unter [Beispiele für die steuerliche Integration für die Tschechische Republik](emea-cze-fi-sample.md). 
+Dieser Artikel enthält Richtlinien für die Bereitstellung des Integrationsbeispiels für den Steuerregistrierungsdienst für die Tschechische Republik aus dem Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK) auf einer virtuellen Entwicklermaschine (VM) in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen zu den Beispielen für diese steuerliche Integration finden Sie unter [Beispiele für die steuerliche Integration für die Tschechische Republik](emea-cze-fi-sample.md). 
 
-Das Steuererfassungsdienst-Integrationsbeispiel für die Tschechische Republik ist Teil des Retail SDK. Informationen zur Installation und Verwendung des SDK finden Sie in der [Retail Software Development Kit (SDK)-Architektur](../dev-itpro/retail-sdk/retail-sdk-overview.md). Dieses Beispiel besteht aus Erweiterungen für die Commerce Runtime (CRT) und Hardwarestation. Um dieses Beispiel auszuführen, müssen Sie die CRT und Hardwarestation-Projekte ändern und erstellen. Es wird empfohlen, dass Sie ein unverändertes Retail SDK verwenden, um die Änderungen vorzunehmen, die in diesem Thema beschrieben werden. Es wird außerdem empfohlen, dass Sie ein Quellsteuerungssystem verwenden, wie Azure DevOps bei dem noch keine Dateien geändert wurden.
+Das Steuererfassungsdienst-Integrationsbeispiel für die Tschechische Republik ist Teil des Retail SDK. Informationen zur Installation und Verwendung des SDK finden Sie in der [Retail Software Development Kit (SDK)-Architektur](../dev-itpro/retail-sdk/retail-sdk-overview.md). Dieses Beispiel besteht aus Erweiterungen für die Commerce Runtime (CRT) und Hardwarestation. Um dieses Beispiel auszuführen, müssen Sie die CRT und Hardwarestation-Projekte ändern und erstellen. Es wird empfohlen, dass Sie ein unverändertes Retail SDK verwenden, um die Änderungen vorzunehmen, die in diesem Artikel beschrieben werden. Es wird außerdem empfohlen, dass Sie ein Quellsteuerungssystem verwenden, wie Azure DevOps bei dem noch keine Dateien geändert wurden.
 
 ## <a name="development-environment"></a>Entwicklungsumgebung
 

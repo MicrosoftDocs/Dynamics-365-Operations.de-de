@@ -1,6 +1,6 @@
 ---
 title: Die genaue Preis- und Rabattberechnung für eine verbesserte Leistung verzögern
-description: In diesem Thema wird die verzögerte Preisberechnungsfunktion beschrieben, die in Microsoft Dynamics 365 Commerce Point of Sale (POS) und Callcenter verfügbar ist.
+description: In diesem Artikel wird die verzögerte Preisberechnungsfunktion beschrieben, die in Microsoft Dynamics 365 Commerce Point of Sale (POS) und Callcenter verfügbar ist.
 author: boycezhu
 ms.date: 09/09/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: boycez
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 8c4264c3a4c71e6aab0e1ef8d7d8cfffad065a46
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 6926c288a91dbe66b6ffc2e6c06f866d3ebd7652
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488362"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845896"
 ---
 # <a name="delay-exact-price-and-discount-calculation-for-improved-performance"></a>Die genaue Preis- und Rabattberechnung für eine verbesserte Leistung verzögern
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird die verzögerte Preisberechnungsfunktion beschrieben, die in Microsoft Dynamics 365 Commerce Point of Sale (POS) und Callcenter verfügbar ist.
+In diesem Artikel wird die verzögerte Preisberechnungsfunktion beschrieben, die in Microsoft Dynamics 365 Commerce Point of Sale (POS) und Callcenter verfügbar ist.
 
 Dynamics 365 Commerce unterstützt die Erstellung von Mehrzeilenrabatten, die angewendet werden, wenn mehrere Verkaufszeilen eines Kundenauftrags oder Verkaufsangebots kombiniert werden. Diese Rabatte umfassen Mix-and-Match-, Schwellenwert- und Mengenrabatte.
 

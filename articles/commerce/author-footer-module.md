@@ -1,6 +1,6 @@
 ---
 title: Fußzeilenmodul
-description: In diesem Thema werden Fußzeilenmodule behandelt nd wie sie in Dynamics 365 Commerce erstellt werden.
+description: In diesem Artikel werden Fußzeilenmodule behandelt nd wie sie in Dynamics 365 Commerce erstellt werden.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 542796ffce08694954d03878cd7782b01c2c6b27
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 4e7796d9700eabc923f2bb45187832d5993ae56e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780258"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876611"
 ---
 # <a name="footer-module"></a>Fußzeilenmodul  
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden Fußzeilenmodule behandelt und deren Erstellung in Microsoft Dynamics 365 Commerce beschrieben.
+In diesem Artikel werden Fußzeilenmodule behandelt und deren Erstellung in Microsoft Dynamics 365 Commerce beschrieben.
 
 Das Fußzeilenmodul ist ein spezielle Container, der verwendet wird, um die Module zu hosten, die in der Fußzeile erscheinen. Zum Beispiel kann es Verknüpfungen an verschiedene Seiten auf der Site umfassen wie **Kontaktieren Sie uns** und **Speichern Sie Richtlinien**.
 

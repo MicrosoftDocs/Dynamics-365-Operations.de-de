@@ -1,6 +1,6 @@
 ---
 title: Vorbereiten der Verwaltung von Standardkosten für produzierte Artikel
-description: In diesem Thema werden die Schritte zur Vorbereitung der Kostenverwaltung für produzierte Artikel beschrieben.
+description: In diesem Artikel werden die Schritte zur Vorbereitung der Kostenverwaltung für produzierte Artikel beschrieben.
 author: JennySong-SH
 ms.date: 01/17/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8d42f61bcd44e89f0563c8f7450a1cdd6fd0e3ce
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 423da8022faf8066c5aa524c49c5071d0871de04
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679134"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886014"
 ---
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>Vorbereiten der Verwaltung von Standardkosten für produzierte Artikel
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die Schritte zur Vorbereitung der Kostenverwaltung für produzierte Artikel beschrieben. Die Schritte für produzierte Artikel unterscheiden sich etwas von den Schritten für eingekaufte Artikel.
+In diesem Artikel werden die Schritte zur Vorbereitung der Kostenverwaltung für produzierte Artikel beschrieben. Die Schritte für produzierte Artikel unterscheiden sich etwas von den Schritten für eingekaufte Artikel.
 
 Richtlinien, die produzierten Artikeln zugewiesen sind, können sich auf die Kostenberechnungen für die übergeordneten produzierten Artikel auswirken. Gehen Sie zur Vorbereitung der Kostenverwaltung für produzierte Artikel folgendermaßen vor.
 
@@ -63,7 +63,7 @@ Richtlinien, die produzierten Artikeln zugewiesen sind, können sich auf die Kos
 
 Wenn Sie Routinginformationen für die Nachkalkulation verwenden möchten, sind weitere Vorbereitungen erforderlich. So muss beispielsweise sichergestellt werden, dass die dem Arbeitsgang des Arbeitsplans zugewiesenen Kostenkategorien korrekt und vollständig sind.
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-articles"></a>Zugehörige Artikel
 
 [Amortisierung konstanter Kosten für einen produzierten Artikel](amortize-constant-costs-manufactured-item.md)
 

@@ -1,6 +1,6 @@
 ---
 title: Einkaufswagenmodul
-description: Dieses Thema behandelt Einkaufswagenmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+description: Dieser Artikel behandelt Einkaufswagenmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 962710f7b65c8d26b301b5034a89fc25476b6e0f
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: c4023857f13830449eaa19f8513799ece97729d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780538"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866055"
 ---
 # <a name="cart-module"></a>Einkaufswagenmodul
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema behandelt Einkaufswagenmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+Dieser Artikel behandelt Einkaufswagenmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 
 Über das Warenkorbmodul werden die Artikel angezeigt, die dem Warenkorb hinzugefügt wurden, bevor der Kunde zur Kasse geht. Das Modul zeigt eine Bestellzusammenfassung an und der Kunde kann Werbecodes anwenden oder entfernen.
 

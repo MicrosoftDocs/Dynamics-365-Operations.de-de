@@ -1,6 +1,6 @@
 ---
 title: Erste Schritte mit der elektronischen Rechnungsstellung für Brasilien
-description: Dieses Thema enthält Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung für Brasilien in Finance und Supply Chain Management erleichtern.
+description: Dieser Artikel enthält Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung für Brasilien in Finance und Supply Chain Management erleichtern.
 author: gionoder
 ms.date: 03/29/2021
 ms.topic: article
@@ -9,30 +9,32 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 82bbf806d207af0b15406e4bec516420db7f2c06
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 74debbca4ee365e05f1c15d45179f0cd1d23c3e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984852"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846583"
 ---
 # <a name="get-started-with-electronic-invoicing-for-brazil"></a>Erste Schritte mit der elektronischen Rechnungsstellung für Brasilien 
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung für Brasilien erleichtern. Das Thema führt Sie durch die Konfigurationsschritte, die in Regulatory Configuration Services (RCS) länderabhängig sind, und ergänzen die im Thema [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md) beschriebenen Schritte.
+Dieser Artikel enthält Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung für Brasilien erleichtern. Der Artikel führt Sie durch die Konfigurationsschritte, die in Regulatory Configuration Services (RCS) länderabhängig sind, und ergänzen die im Artikel [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md) beschriebenen Schritte.
 
 ## <a name="country-specific-configuration-for-brazilian-nf-e-br-electronic-invoicing-feature"></a>Länderspezifische Konfiguration für die elektronische Rechnungsstellungsfunktion des brasilianischen NF-e (BR)
 
 Einige der Parameter aus der **Funktion zur elektronischen Rechnungsstellung des brasilianischen NF-e (BR)** werden mit Standardwerten veröffentlicht. Überprüfen Sie die Werte und aktualisieren Sie sie gegebenenfalls, damit sie Ihre Geschäftsvorgänge besser reflektieren, bevor Sie die Funktion für die elektronische Rechnungsstellung in der Serviceumgebung bereitstellen.
 
-Dieser Abschnitt ergänzt den Abschnitt **Länderspezifische Konfiguration der Funktion für die elektronische Rechnungsstellung** im Thema [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md).
+Dieser Abschnitt ergänzt den Abschnitt **Länderspezifische Konfiguration der Funktion für die elektronische Rechnungsstellung** im Artikel [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md).
 
 1. Wählen Sie in RCS im Abschnitt **Funktionen** des Arbeitsbereichs **Globalisierungsfunktion** die Kachel **Elektronische Rechnungsstellung** aus.
 2. Auf der Seite **Funktionen für die elektronische Rechnungsstellung** überprüfen Sie, ob die von Ihnen erstellte elektronische Rechnungsfunktion **Brasilianisches NF-e (BR)** ausgewählt ist.
@@ -51,7 +53,7 @@ Dieser Abschnitt ergänzt den Abschnitt **Länderspezifische Konfiguration der F
 
 Führen Sie diese Schritte aus, bevor Sie die Anwendungseinrichtung für Ihre mit Finance oder Supply Chain Management verbundene Anwendung bereitstellen.
 
-Dieser Abschnitt ergänzt den Abschnitt **Länderspezifische Konfiguration der Anwendungseinrichtung** im Thema [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md).
+Dieser Abschnitt ergänzt den Abschnitt **Länderspezifische Konfiguration der Anwendungseinrichtung** im Artikel [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md).
 
 1. Wählen Sie in RCS im Abschnitt **Funktionen** des Arbeitsbereichs **Globalisierungsfunktion** die Kachel **Elektronische Rechnungsstellung** aus.
 2. Auf der Seite **Funktionen für die elektronische Rechnungsstellung** überprüfen Sie, ob die elektronische Fakturierungsfunktion **Brasilianisches NF-e (BR)** ausgewählt ist.
@@ -71,7 +73,7 @@ Dieser Abschnitt ergänzt den Abschnitt **Länderspezifische Konfiguration der A
 
 Einige der Parameter aus der **Funktion zur elektronischen Rechnungsstellung für das brasilianische NFS-e ABRASF Curitiba (BR)** werden mit Standardwerten veröffentlicht. Überprüfen Sie die Werte und aktualisieren Sie sie gegebenenfalls, um sie besser an Ihre Geschäftsvorgänge anzupassen, bevor Sie die Funktion für die elektronische Rechnungsstellung in der Serviceumgebung bereitstellen.
 
-Dieser Abschnitt ergänzt den Abschnitt **Länderspezifische Konfiguration der Funktion für die elektronische Rechnungsstellung** im Thema [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md).
+Dieser Abschnitt ergänzt den Abschnitt **Länderspezifische Konfiguration der Funktion für die elektronische Rechnungsstellung** im Artikel [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md).
 
 1. Wählen Sie in RCS im Abschnitt **Funktionen** des Arbeitsbereichs **Globalisierungsfunktion** die Kachel **Elektronische Rechnungsstellung** aus.
 2. Auf der Seite **Funktionen für die elektronische Rechnungsstellung** überprüfen Sie, ob die von Ihnen erstellte elektronische Rechnungsfunktion **Brasilianisches NFS-e ABRASF Curitiba (BR)** ausgewählt ist.
@@ -96,7 +98,7 @@ Dieser Abschnitt ergänzt den Abschnitt **Länderspezifische Konfiguration der F
 
 Führen Sie diese Schritte aus, bevor Sie die Anwendungseinrichtung für Ihre mit Finance oder Supply Chain Management verbundene Anwendung bereitstellen.
 
-Dieser Abschnitt ergänzt den Abschnitt **Länderspezifische Konfiguration der Anwendungseinrichtung** im Thema [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md).
+Dieser Abschnitt ergänzt den Abschnitt **Länderspezifische Konfiguration der Anwendungseinrichtung** im Artikel [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md).
 
 1. Wählen Sie in RCS im Abschnitt **Funktionen** des Arbeitsbereichs **Globalisierungsfunktion** die Kachel **Elektronische Rechnungsstellung** aus.
 2. Auf der Seite **Funktionen für die elektronische Rechnungsstellung** überprüfen Sie, ob die elektronische Rechnungsfunktion **Brasilianisches NFS-e ABRASF Curitiba (BR)** ausgewählt ist.

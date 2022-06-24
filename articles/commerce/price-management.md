@@ -1,6 +1,6 @@
 ---
 title: Einzelhandelspreisverwaltung
-description: In diesem Thema werden die Konzepte für das Erstellen und Verwalten von Verkaufspreisen in Dynamics 365 Commerce behandelt.
+description: In diesem Artikel werden die Konzepte für das Erstellen und Verwalten von Verkaufspreisen in Dynamics 365 Commerce behandelt.
 author: ShalabhjainMSFT
 ms.date: 07/28/2021
 ms.topic: article
@@ -14,29 +14,29 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f78a4f328d6962db373990ea60dc03cec35718dc719aa0b284b319db5bc059ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16c948e6e14309f4e340bf622fac42b14e6ee591
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759284"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887009"
 ---
-# <a name="retail-sales-price-management"></a>Verwaltung von Einzelhandelsverkaufspreisen
+# <a name="retail-sales-price-management"></a>Einzelhandelspreisverwaltung
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält Informationen über den Prozess der Berichterstellung und Verwaltung von Verkaufspreisen in Dynamics 365 Commerce. Es bezieht sich auf die Konzepte, die an diesem Prozess beteiligt sind, und auf die Auswirkungen der verschiedenen Konfigurationsoptionen für Verkaufspreise.
+Dieser Artikel enthält Informationen über den Prozess der Berichterstellung und Verwaltung von Verkaufspreisen in Dynamics 365 Commerce. Es bezieht sich auf die Konzepte, die an diesem Prozess beteiligt sind, und auf die Auswirkungen der verschiedenen Konfigurationsoptionen für Verkaufspreise.
 
 ## <a name="terminology"></a>Terminologie
 
-Die folgenden Begriffe werden in diesem Thema erläutert.
+Die folgenden Begriffe werden in diesem Artikel erläutert.
 
 | Zeitdauer | Definition, Verwendung und Hinweise |
 |---|---|
-| Preis | Der einzelne Einheitenbetrag, der ein Produkt in einem Verkaufsstellen (POS)- Client oder einem Auftrag verkauft. In diesem Thema bezieht sich *Preis* immer den Verkaufspreis, nicht des Lagerpreises oder den Einstandspreis an. |
+| Preis | Der einzelne Einheitenbetrag, der ein Produkt in einem Verkaufsstellen (POS)- Client oder einem Auftrag verkauft. In diesem Artikel bezieht sich *Preis* immer den Verkaufspreis, nicht des Lagerpreises oder den Einstandspreis an. |
 | Basispreis | Der Preis, der im Feld **Preis** auf einen gemeinsam verwendete Produktdimensionsgruppe festgelegt wird. |
 | Preisgestaltung für Handelsvereinbarung | Der Preis, der auf ein Produkt oder eine Variante festgelegt wird, indem eine Handelsvereinbarung des Typs **Preis (Verkauf)** verwendet wird. |
-| Bester Preis | Wenn mehr als ein Preis oder Rabatt auf ein Produkt angewendet wird, der kleinste oder Preisbetrag und/oder der größte Rabattbetrag, der den niedrigsten Nettobetrag produziert, den der Debitor bezahlen muss, wird angewendet. In diesem Thema gilt das Konzept des besten Preises immer als der beste "Preis". Dieser beste Preis unterscheidet sich vom und sollte nicht mit dem **Besten Preis** Optionswert für einen Rabattmodus verwechselt werden. |
+| Bester Preis | Wenn mehr als ein Preis oder Rabatt auf ein Produkt angewendet wird, der kleinste oder Preisbetrag und/oder der größte Rabattbetrag, der den niedrigsten Nettobetrag produziert, den der Debitor bezahlen muss, wird angewendet. In diesem Artikel gilt das Konzept des besten Preises immer als der beste "Preis". Dieser beste Preis unterscheidet sich vom und sollte nicht mit dem **Besten Preis** Optionswert für einen Rabattmodus verwechselt werden. |
 
 ## <a name="price-groups"></a>Preisgruppen
 
@@ -97,7 +97,7 @@ Um Preiskalkulationspriorität für Preise zu verwenden, müssen Sie eine Preisk
 
 Die Preiskalkulationsprioritätsfunktion wurde eingegeben, um das Szenario zu unterstützen, in dem ein Einzelhändler höhere Preise in einem bestimmten Geschäft übernehmen möchte, das aus den Shops festgelegt wird. So verfügt beispielsweise ein Einzelhändler definiert regionale Preise für die Ostküste der USA aber möchte höhere Preise für mehrere Produkte in New York Cityshops, da es mehr kostet, um mehrere Produkte im Ort zu verkaufen und/oder weil der lokale Markt einen höheren Preis verträgt.
 
-Wie im Abschnitt „Bester Preis“ dieses Themas beschrieben wurde, wählt das Preisfindungsmodul normalerweise den niedrigeren von zwei Preisen aus. Daher wird der Einzelhändler normalerweise daran gehindert, den höheren der beiden Preisen in einem Shop zu verwenden, der die Ostküste und New York als Preisgruppen hat. Zur Behebung dieses Problems muss der Einzelhändler Preise für jedes Produkt zweimal definieren und Preisgruppen nicht beiden zuweisen. Alternativ musste der Einzelhändler zusätzliche Preisgruppen erstellen, um die Produkte zu suchen, die höhere Preise von Produkten verfügen, die die üblichen, niedrigeren Preisen haben.
+Wie im Abschnitt „Bester Preis“ dieses Artikels beschrieben wurde, wählt das Preisfindungsmodul normalerweise den niedrigeren von zwei Preisen aus. Daher wird der Einzelhändler normalerweise daran gehindert, den höheren der beiden Preisen in einem Shop zu verwenden, der die Ostküste und New York als Preisgruppen hat. Zur Behebung dieses Problems muss der Einzelhändler Preise für jedes Produkt zweimal definieren und Preisgruppen nicht beiden zuweisen. Alternativ musste der Einzelhändler zusätzliche Preisgruppen erstellen, um die Produkte zu suchen, die höhere Preise von Produkten verfügen, die die üblichen, niedrigeren Preisen haben.
 
 Allerdings ermöglicht die Preiskalkulationsfunktion es zu, dass der Einzelhändler eine Preiskalkulationspriorität für Shop-Preise erstellt, die höher als die Preiskalkulationspriorität regionaler Preise ist. Alternativ kann der Einzelhändler eine Preiskalkulationspriorität für Shop-Preise regionaler Preise erstellen und die Standardpreiskalkulationspriorität lassen, die 0 (null )ist. Beide Einstellungen stellen sicher, dass Shop-Preise immer vor regionalen Preise verwendet werden.
 
@@ -151,7 +151,7 @@ Mit der Handelsvereinbarungserfassung verwenden, können Sie Handelsvereinbarung
 
 Eine Handelsvereinbarung zu Verkaufspreisen **Tabelle** gilt für einen einzelnen Debitor, der direkt in der Handelsvereinbarung festgelegt ist. Dieses Szenario ist kein typisches Business-to-Consumer (B2C)-Szenario. Wenn es der Fall ist, verwendet das Einzelhandelspreismodul Handelsvereinbarungen **Tabelle**, wenn der Preis bestimmt wird.
 
-Eine **Gruppe** Verkaufspreis-Handelsvereinbarung ist der Typ, der am häufigsten verwendet wird. Außerhalb des Commerce sind Handelsvereinbarungen **Gruppen** für eine einfache Debitorengruppe. Allerdings ist im Commerce das Konzept einer Debitorengruppe erweitert worden, damit es eine allgemeine Einzelhandelspreisgruppe ist. Eine Preisgruppe kann einem Einzelhandelskanal, einer Zugehörigkeit, einem Treueprogramm oder einem Katalog zugeordnet werden. Detaillierte Informationen zu Preisgruppen finden Sie im Abschnitt "Preisgruppen" oben in diesem Thema.
+Eine **Gruppe** Verkaufspreis-Handelsvereinbarung ist der Typ, der am häufigsten verwendet wird. Außerhalb des Commerce sind Handelsvereinbarungen **Gruppen** für eine einfache Debitorengruppe. Allerdings ist im Commerce das Konzept einer Debitorengruppe erweitert worden, damit es eine allgemeine Einzelhandelspreisgruppe ist. Eine Preisgruppe kann einem Einzelhandelskanal, einer Zugehörigkeit, einem Treueprogramm oder einem Katalog zugeordnet werden. Detaillierte Informationen zu Preisgruppen finden Sie im Abschnitt "Preisgruppen" oben in diesem Artikel.
 
 > [!NOTE]
 > Ein Handelsvereinbarungs-Preis wird immer vor dem Basispreis verwendet.

@@ -1,6 +1,6 @@
 ---
 title: Bereitstellungsrichtlinien für das Steuerdrucker-Integrationsbeispiel für Italien (Legacy)
-description: Dieses Thema enthält Richtlinien für die Bereitstellung des Beispiels für die steuerliche Druckerintegration für Italien aus dem Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK).
+description: Dieser Artikel enthält Richtlinien für die Bereitstellung des Beispiels für die steuerliche Druckerintegration für Italien aus dem Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK).
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 617e97272fb4bd7cea0958958ae99648bb847b56
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: bb07ca91c9e5bf1a79f672f9ba29b7bcc21688c6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8614068"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848897"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-italy-legacy"></a>Bereitstellungsrichtlinien für das Steuerdrucker-Integrationsbeispiel für Italien (Legacy)
 
 [!include[banner](../includes/banner.md)]
 
-Dieses Thema enthält Richtlinien für die Bereitstellung des Steuerdrucker-Integrationsbeispiels für Italien aus dem Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK) auf einer virtuellen Entwicklermaschine (VM) in Microsoft Dynamics Lifecycle Service (LCS). Weitere Informationen zu den Beispielen für diese steuerliche Integration finden Sie unter [Beispiele für die steuerliche Druckerintegration für Italien](emea-ita-fpi-sample.md). 
+Dieser Artikel enthält Richtlinien für die Bereitstellung des Steuerdrucker-Integrationsbeispiels für Italien aus dem Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK) auf einer virtuellen Entwicklermaschine (VM) in Microsoft Dynamics Lifecycle Service (LCS). Weitere Informationen zu den Beispielen für diese steuerliche Integration finden Sie unter [Beispiele für die steuerliche Druckerintegration für Italien](emea-ita-fpi-sample.md). 
 
-Das Steuererfassungsdienst-Integrationsbeispiel für Italien ist Teil des Retail SDK. Informationen zur Installation und Verwendung des SDK finden Sie in der [Retail Software Development Kit (SDK)-Architektur](../dev-itpro/retail-sdk/retail-sdk-overview.md). Dieses Beispiel besteht aus Erweiterungen für die Commerce Runtime (CRT) und Hardwarestation. Um dieses Beispiel auszuführen, müssen Sie die CRT und Hardwarestation-Projekte ändern und erstellen. Es wird empfohlen, dass Sie ein unverändertes Retail SDK verwenden, um die Änderungen vorzunehmen, die in diesem Thema beschrieben werden. Es wird außerdem empfohlen, dass Sie ein Quellsteuerungssystem verwenden, wie Azure DevOps bei dem noch keine Dateien geändert wurden.
+Das Steuererfassungsdienst-Integrationsbeispiel für Italien ist Teil des Retail SDK. Informationen zur Installation und Verwendung des SDK finden Sie in der [Retail Software Development Kit (SDK)-Architektur](../dev-itpro/retail-sdk/retail-sdk-overview.md). Dieses Beispiel besteht aus Erweiterungen für die Commerce Runtime (CRT) und Hardwarestation. Um dieses Beispiel auszuführen, müssen Sie die CRT und Hardwarestation-Projekte ändern und erstellen. Es wird empfohlen, dass Sie ein unverändertes Retail SDK verwenden, um die Änderungen vorzunehmen, die in diesem Artikel beschrieben werden. Es wird außerdem empfohlen, dass Sie ein Quellsteuerungssystem verwenden, wie Azure DevOps bei dem noch keine Dateien geändert wurden.
 
 ## <a name="development-environment"></a>Entwicklungsumgebung
 
@@ -86,7 +86,7 @@ Die Hardwaresations-Erweiterungskomponenten sind in der Retail SDK enthalten. Um
 
 Um bereitstellbare Pakete zu erstellen, die Commerce-Komponenten enthalten, und diese Pakete in einer Produktionsumgebung anzuwenden, müssen Sie folgenden Schritten folgen.
 
-1. Führen Sie die Schritte aus, die im Abschnitt [Entwicklungsumgebung](#development-environment) weiter oben in diesem Thema beschrieben sind.
+1. Führen Sie die Schritte aus, die im Abschnitt [Entwicklungsumgebung](#development-environment) weiter oben in diesem Artikel beschrieben sind.
 2. Nehmen Sie die folgenden Änderungen in den Paketkonfigurationsdateien unter dem Ordner **RetailSdk\\Assets** vor:
 
     1. In den Konfigurationsdateien **commerceruntime.ext.config** und **CommerceRuntime.MPOSOffline.Ext.config** fügen Sie die folgenden Positionen zum Abschnitt **Anordnung** hinzu.

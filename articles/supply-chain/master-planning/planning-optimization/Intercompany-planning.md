@@ -1,6 +1,6 @@
 ---
 title: Intercompany-Planung
-description: Dieses Thema beschreibt die Intercompany-Planung und erklärt, wie Sie die Intercompany-Planung mit der Planungsoptimierung in Microsoft Dynamics 365 Supply Chain Management konfigurieren.
+description: Dieser Artikel beschreibt die Intercompany-Planung und erklärt, wie Sie die Intercompany-Planung mit der Planungsoptimierung in Microsoft Dynamics 365 Supply Chain Management konfigurieren.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: de9f9679bfaf9491c6b69c11448306627c8a42f9
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: c13ecca9523707ef3df5fdb97dc4cbd79478258d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468495"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850669"
 ---
 # <a name="intercompany-planning"></a>Intercompany-Planung
 
@@ -29,9 +29,9 @@ ms.locfileid: "8468495"
 
 Für einige Organisationen hängen logistische Operationen von anderen juristischen Entitäten (Firmen) in der Organisation ab. Diese Vorgänge werden über Intercompany-Verkäufe und -Einkäufe abgewickelt, da jede juristische Entität einen eigenen Kontenplan hat.
 
-Dieses Thema beschreibt die Intercompany-Planung und erklärt, wie Sie die Intercompany-Planung mit der Planungsoptimierung in Microsoft Dynamics 365 Supply Chain Management konfigurieren.
+Dieser Artikel beschreibt die Intercompany-Planung und erklärt, wie Sie die Intercompany-Planung mit der Planungsoptimierung in Microsoft Dynamics 365 Supply Chain Management konfigurieren.
 
-In diesem Thema werden die folgenden wichtigen Intercompany-Begriffe verwendet:
+In diesem Artikel werden die folgenden wichtigen Intercompany-Begriffe verwendet:
 
 - **Aufwärts** - Eine relative Referenz in einer Firma oder Lieferkette. Er zeigt die Bewegung in Richtung des Rohstofflieferanten an.
 - **Abwärts** - Ein relativer Verweis in einer Firma oder Lieferkette. Er zeigt die Bewegung in Richtung des Kunden an.

@@ -1,6 +1,6 @@
 ---
-title: Erstellen von Warnregeln
-description: Dieses Thema enthält Informationen zu Warnungen und erläutert, wie Sie eine Warnungsregel erstellen.
+title: Warnregeln erstellen
+description: Dieser Artikel enthält Informationen zu Warnungen und erläutert, wie Sie eine Warnungsregel erstellen.
 author: RichdiMSFT
 ms.date: 10/08/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 597785e65f127794ca84fe3053a664f717b056bd7374e0396732d4bcf59a743c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f523680f3d71ffd75c6cd2df284d2fd3610cef96
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736197"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853616"
 ---
 # <a name="create-alert-rules"></a>Warnregeln erstellen
 
@@ -75,7 +75,7 @@ Auf der Registerkarte **Warnung durch** im Dialogfeld **Warnungsregel erstellen*
 
 ## <a name="alerts-as-business-events"></a>Warnungen als Geschäftsereignisse
 
-Warnungen können über das Event-Framework extern gesendet werden. Setzen Sie beim Anlegen eines Warnung **Organisationsweit** auf **Nein** und **Extern senden** auf **Ja**. Nachdem der Alert das Ereignis ausgelöst hat, können Sie einen in Power Automate eingebauten Ablauf über **Wenn ein Ereignis eintritt** auf dem Konnektor Finance and Operations auslösen oder das Ereignis über **Ereigniskatalog** explizit an einen Veranstaltungs-Endpunkt senden.
+Warnungen können über das Event-Framework extern gesendet werden. Setzen Sie beim Anlegen eines Warnung **Organisationsweit** auf **Nein** und **Extern senden** auf **Ja**. Nachdem der Alert das Ereignis ausgelöst hat, können Sie einen in Power Automate eingebauten Ablauf über **Wenn ein Ereignis eintritt** auf dem Finance and Operations-Konnektor auslösen oder das Ereignis über den **Geschäftsereigniskatalog** explizit an einen Ereignis-Endpunkt senden.
 
 ## <a name="create-an-alert-rule"></a>Erstellen Sie eine Warnregel.
 

@@ -1,6 +1,6 @@
 ---
-title: Funktionale Standorttypen
-description: In diesem Thema wird beschrieben, wie in Asset Management funktionalen Standorte erstellt werden.
+title: Typen funktionaler Standorte
+description: In diesem Artikel wird beschrieben, wie in Anlagenverwaltung funktionalen Standorte erstellt werden.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 301dc838ed204ebe488dd167df75fc84131f235f64285c6ae99c62ee1188362c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 01c8276d77f7655659cab13f3c520d7c171e3cfd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739154"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879220"
 ---
-# <a name="functional-location-types"></a>Funktionale Standorttypen
+# <a name="functional-location-types"></a>Typen funktionaler Standorte
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-In diesem Thema wird beschrieben, wie in Asset Management funktionalen Standorte erstellt werden. Funktionale Standorttypen werden verwendet, um die Anforderungen an funktionale Standorte zu verwalten. Dies schließt ein, wie Anlagen an einem funktionalen Standort installiert werden. Sie können Anlagentypen, Wartungspläne, Attribute für funktionale Standorte und Anlagenattributanforderungen einrichten, die für einen funktionalen Standort verwendet werden, der den speziellen funktionalen Standorttyp verwendet. Wenn Sie einen funktionalen Standort erstellen, ist der funktionale Standorttyp erforderlich.
+In diesem Artikel wird beschrieben, wie in Anlagenverwaltung funktionalen Standorte erstellt werden. Funktionale Standorttypen werden verwendet, um die Anforderungen an funktionale Standorte zu verwalten. Dies schließt ein, wie Anlagen an einem funktionalen Standort installiert werden. Sie können Anlagentypen, Wartungspläne, Attribute für funktionale Standorte und Anlagenattributanforderungen einrichten, die für einen funktionalen Standort verwendet werden, der den speziellen funktionalen Standorttyp verwendet. Wenn Sie einen funktionalen Standort erstellen, ist der funktionale Standorttyp erforderlich.
 
 >[!NOTE] 
 >Um mit funktionalen Standorten zu arbeiten, müssen Sie einen standardmäßigen funktionalen Standort erstellen, der allein zum Zweck der Erstellung neuer Anlagen verwendet wird. Für diesen standardmäßigen funktionalen Standort müssen Sie einen standardmäßigen funktionalen Standorttypen erstellen, der einfach ist und ermöglicht, mehrere Anlagen am standardmäßigen funktionalen Standort zu installieren. Weitere Informationen zum Einrichten von funktionalen Standorten finden Sie unter [Erstellen von funktionalen Standorten](../functional-locations/create-functional-locations.md).

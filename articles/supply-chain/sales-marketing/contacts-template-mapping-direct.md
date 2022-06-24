@@ -1,6 +1,6 @@
 ---
 title: Kontakte direkt von Sales mit Kontakten oder Debitoren in Supply Chain Management synchronisieren
-description: Dieses Thema beschreibt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Entitäten „Kontakt (Kontakte)“ und „Kontakt (Debitoren)“ aus Dynamics 365 Sales mit Dynamics 365 Supply Chain Management zu synchronisieren.
+description: Dieses Thema beschreibt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Entitäten „Kontakt (Kontakte)“ und „Kontakt (Debitoren)“ direkt aus Dynamics 365 Sales mit Dynamics 365 Supply Chain Management zu synchronisieren.
 author: Henrikan
 ms.date: 10/25/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 57a9c2a860e99855e841f0f4276ba2f92767c2b1
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 4ddb91c34816791d8eca80e4798eb46c1b496439
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062514"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857343"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>Kontakte direkt von Sales mit Kontakten oder Debitoren in Supply Chain Management synchronisieren
 
@@ -32,7 +32,7 @@ ms.locfileid: "8062514"
 > [!NOTE]
 > Damit Sie die Prospect to Cash-Lösung verwenden können, müssen Sie mit [Integration von Daten in Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator) vertraut sein.
 
-Dieses Thema beschreibt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Tabellen „Kontakt (Kontakte)“ und „Kontakt (Debitoren)“ direkt aus Dynamics 365 Sales mit Dynamics 365 Supply Chain Management zu synchronisieren.
+Dieser Artikel beschreibt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Tabellen „Kontakt (Kontakte)“ und „Kontakt (Debitoren)“ direkt aus Dynamics 365 Sales mit Dynamics 365 Supply Chain Management zu synchronisieren.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Datenfluss in Interessent nach Bargeld
 
@@ -126,7 +126,7 @@ Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung in Dat
 ![Zuordnung der Vorlage „Kontakt zu Kunde“ im Datenintegrator.](./media/contacts-direct-template-mapping-data-integrator-2.png)
 
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-articles"></a>Zugehörige Artikel
 
 [Prospect-to-Cash](prospect-to-cash.md)
 

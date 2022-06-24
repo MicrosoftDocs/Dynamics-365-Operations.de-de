@@ -1,6 +1,6 @@
 ---
 title: Jahresabschluss
-description: In diesem Thema werden die erforderlichen Einstellungen und die Schritte für den Jahresabschlussprozess im Hauptbuch beschrieben.
+description: In diesem Artikel werden die erforderlichen Einstellungen und die Schritte für den Jahresabschlussprozess im Hauptbuch beschrieben.
 author: kweekley
 ms.date: 12/06/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 247c3286124da946937c8afd248a275e5a745044
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 032c572ec7b29bb6b2823ddde0c4fa76e5f8fcf1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725232"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883212"
 ---
 # <a name="year-end-close"></a>Jahresabschluss
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die erforderlichen Einstellungen und die Schritte für den Jahresabschlussprozess im Hauptbuch beschrieben.
+In diesem Artikel werden die erforderlichen Einstellungen und die Schritte für den Jahresabschlussprozess im Hauptbuch beschrieben.
 
 Am Ende eines Geschäftsjahrs müssen Sie den Jahresabschlussprozess ausführen, um Anfangssalden in das neue Jahr zu übertragen. Die meisten Organisationen führen den Jahresabschlussprozess mehrmals aus. Die erste Ausführung verschiebt die Salden in das neue Geschäftsjahr. Dieser Prozess kann dann so oft wie nötig erneut ausgeführt werden, um die Salden aus den Regulierungseinträgen in das neue Geschäftsjahr zu verschieben.
 

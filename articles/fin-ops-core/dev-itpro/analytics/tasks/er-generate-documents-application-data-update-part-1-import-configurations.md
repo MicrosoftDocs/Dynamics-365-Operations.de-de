@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08ab90d6f53dbb9eabeea3c2cf020792e8957c7b71ed27fc491008fcad114c72
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a75b268f2d8341c1a6dd0d3f1bd9dcb31d9084ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727484"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884140"
 ---
 # <a name="import-configurations-to-generate-documents-that-have-application-data"></a>Importieren von Konfigurationen, um Dokumente zu generieren, die Anwendungsdaten haben
 
@@ -25,7 +25,7 @@ ms.locfileid: "6727484"
 
 Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter Konfigurationsanbieter erstellen und als aktiv markieren abschließen.
 
-Die Schritte in dieser Prozedur erläutern, wie elektronische Berichtskonfigurationen (ER) erstellt werden, um elektronische Dokumente zu generieren. In diesem Verfahren importieren Sie eine geänderte Excel-Vorlage in eine ER-Formatkonfigurationen, die für das Beispielunternehmen, Litware, Inc. erstellt wurde, und erstellen dann die elektronischen Dokumente. Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrators oder des elektronischen Berichtsentwicklers haben, die ihnen zugewiesen sind. Die Schritte können abgeschlossen werden, indem Sie den DEMF-Datensatz verwenden. Bevor Sie beginnen, laden Sie die Dateien herunter und speichern Sie jene, die im Hilfethema „Generieren Sie elektronische Dokumente und Aktualisierungsbewerbungsdaten mit ER-Tool“ (generate-electronic-documents-update-application-data/) aufgeführt sind. Die Dateien sind Intrastat (model).xml, Intrastat (mapping).xml, und Intrastat (format).xml.
+Die Schritte in dieser Prozedur erläutern, wie elektronische Berichtskonfigurationen (ER) erstellt werden, um elektronische Dokumente zu generieren. In diesem Verfahren importieren Sie eine geänderte Excel-Vorlage in eine ER-Formatkonfigurationen, die für das Beispielunternehmen, Litware, Inc. erstellt wurde, und erstellen dann die elektronischen Dokumente. Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrators oder des elektronischen Berichtsentwicklers haben, die ihnen zugewiesen sind. Die Schritte können abgeschlossen werden, indem Sie den DEMF-Datensatz verwenden. Bevor Sie beginnen, laden Sie die Dateien herunter und speichern Sie jene, die im Hilfe-Artikel „Generieren Sie elektronische Dokumente und Aktualisierungsbewerbungsdaten mit ER-Tool“ (generate-electronic-documents-update-application-data/) aufgeführt sind. Die Dateien sind Intrastat (model).xml, Intrastat (mapping).xml, und Intrastat (format).xml.
 
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
     * Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zuerst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren“ abschließen.  

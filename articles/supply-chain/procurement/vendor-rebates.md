@@ -1,6 +1,6 @@
 ---
-title: Kreditorenrückvergütungen
-description: Dieses Thema bietet einen Überblick die gebräuchlichsten Aufgaben, die Sie möglicherweise ausführen möchten, wenn Sie mit Kreditorenrückvergütungen arbeiten. Mithilfe von Kreditorenrückvergütungen können Unternehmen ihre Lieferantenrückvergütungsprogramme anhand automatisierter Aufgaben besser verwalten, die erforderlich sind, um Rückvergütungen, die verdient wurden, zu verwalten, nachzuverfolgen und zu fordern.
+title: Rückvergütungen für Kreditoren
+description: Dieser Artikel bietet einen Überblick die gebräuchlichsten Aufgaben, die Sie möglicherweise ausführen möchten, wenn Sie mit Kreditorenrückvergütungen arbeiten. Mithilfe von Kreditorenrückvergütungen können Unternehmen ihre Lieferantenrückvergütungsprogramme anhand automatisierter Aufgaben besser verwalten, die erforderlich sind, um Rückvergütungen, die verdient wurden, zu verwalten, nachzuverfolgen und zu fordern.
 author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: ed41fe18048050ecb80a93e929d66ebc3a2e2441
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 789a58af40595cbb72d55d598510c43315aead2b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672961"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890798"
 ---
 # <a name="vendor-rebates"></a>Kreditorenrückvergütungen
 
@@ -26,7 +26,7 @@ ms.locfileid: "8672961"
 
 Mithilfe von Kreditorenrückvergütungen können Unternehmen ihre Lieferantenrückvergütungsprogramme anhand automatisierter Aufgaben besser verwalten, die erforderlich sind, um Rückvergütungen, die verdient wurden, zu verwalten, nachzuverfolgen und zu fordern.
 
-Dieses Thema bietet einen Überblick die gebräuchlichsten Aufgaben, die Sie möglicherweise ausführen möchten, wenn Sie mit Kreditorenrückvergütungen arbeiten. Der Überblick umfasst die folgenden Aufgaben:
+Dieser Artikel bietet einen Überblick die gebräuchlichsten Aufgaben, die Sie möglicherweise ausführen möchten, wenn Sie mit Kreditorenrückvergütungen arbeiten. Der Überblick umfasst die folgenden Aufgaben:
 
 - Überprüfen von Details einer Rückvergütungsvereinbarung.
 - Identifizierung von Aufträgen, bei denen eine Berechtigung zu Rückvergütungen besteht und Generieren von Rückvergütungsforderungen.
@@ -34,7 +34,7 @@ Dieses Thema bietet einen Überblick die gebräuchlichsten Aufgaben, die Sie mö
 
 ## <a name="audience-and-purpose"></a>Zielgruppe und Zweck
 
-Die Informationen in diesem Thema sind für geschäftliche Entscheidungsträger in Unternehmen bestimmt, in Positionen wie Einkaufsleiter, Leiter der Finanzabteilung und Buchhaltungsleiter, die für Folgendes verantwortlich sind:
+Die Informationen in diesem Artikel sind für geschäftliche Entscheidungsträger in Unternehmen bestimmt, in Positionen wie Einkaufsleiter, Leiter der Finanzabteilung und Buchhaltungsleiter, die für Folgendes verantwortlich sind:
 
 - Kreditorenpreis, Rabatt und Rückvergütungsvereinbarungen verwalten.
 - Personal verwalten, das Rückvergütungsforderungen bearbeitet und Zahlungen eintreibt.

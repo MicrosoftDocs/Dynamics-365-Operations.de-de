@@ -1,6 +1,6 @@
 ---
-title: Die Empfehlungen „Produkte mit ähnlichem Aussehen kaufen“ aktivieren
-description: In diesem Thema wird beschrieben, wie Sie Produktempfehlungen „Produkte mit ähnlichem Aussehen kaufen“ in Microsoft Dynamics 365 Commerce aktivieren.
+title: Empfehlungen zu „Ähnliche Outfits kaufen“ aktivieren
+description: In diesem Artikel wird beschrieben, wie Sie Produktempfehlungen „Produkte mit ähnlichem Aussehen kaufen“ in Microsoft Dynamics 365 Commerce aktivieren.
 author: bebeale
 ms.date: 08/06/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: e70365be8484d71ef9e0e9823b0a4406b0fd2761439780cafc30e1284bda1f20
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3024e832de5e6a60b49c5b0c8bfbe36b2c416379
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721999"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884576"
 ---
 # <a name="enable-shop-similar-looks-recommendations"></a>Empfehlungen zu „Ähnliche Outfits kaufen“ aktivieren
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Produktempfehlungen „Produkte mit ähnlichem Aussehen kaufen“ in Microsoft Dynamics 365 Commerce aktivieren.
+In diesem Artikel wird beschrieben, wie Sie Produktempfehlungen „Produkte mit ähnlichem Aussehen kaufen“ in Microsoft Dynamics 365 Commerce aktivieren.
 
 Die Empfehlungen „Produkte mit ähnlichem Aussehen kaufen“ in Dynamics 365 Commerce nutzt die Kraft der künstlichen Intelligenz und des maschinellen Lernens (AI-ML), um Kunden Empfehlungen für visuell ähnliche Produkte zu geben. Durch die Bereitstellung von Empfehlungen für „Produkte mit ähnlichem Aussehen kaufen“ für alle Einzelhandelskanäle in Commerce können Einzelhändler die Kundenzufriedenheit steigern, indem sie Kunden dabei helfen, leicht zu finden, wonach sie suchen.
 

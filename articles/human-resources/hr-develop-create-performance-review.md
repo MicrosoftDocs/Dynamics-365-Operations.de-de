@@ -1,6 +1,6 @@
 ---
 title: Leistungsbeurteilungen erstellen
-description: Dieses Thema erklärt, wie eine Leistungsüberprüfung erstellt wird, und es beschreibt den Zweck der Abschnitte der Prüfung.
+description: Dieser Artikel erklärt, wie eine Leistungsüberprüfung erstellt wird, und er beschreibt den Zweck der Abschnitte der Prüfung.
 author: twheeloc
 ms.date: 08/26/2021
 ms.topic: business-process
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67a001926c0d5021d952f9b678ec128c68511a8f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ae2de087f4e345ba826ddbe8a65f917476bd6894
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8696039"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872180"
 ---
 # <a name="create-performance-reviews"></a>Leistungsbeurteilungen erstellen
 
@@ -27,7 +27,7 @@ ms.locfileid: "8696039"
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
-Dieses Thema erklärt, wie eine Leistungsüberprüfung erstellt wird, und es beschreibt den Zweck der Abschnitte der Prüfung. Diese Prozedur wurde mit dem Demodatenunternehmen USMF erstellt.
+Dieser Artikel erklärt, wie eine Leistungsüberprüfung erstellt wird, und er beschreibt den Zweck der Abschnitte der Prüfung. Diese Prozedur wurde mit dem Demodatenunternehmen USMF erstellt.
 
 1. Wählen Sie auf der Startseite den Arbeitsbereich **Mitarbeiter-Self-Service** aus.
 2. Wählen Sie **Neue Überprüfung** aus, um eine neue Überprüfung zu erstellen.

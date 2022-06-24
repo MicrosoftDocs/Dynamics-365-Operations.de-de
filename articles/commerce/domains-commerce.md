@@ -1,6 +1,6 @@
 ---
 title: Domänen in Dynamics 365 Commerce
-description: In diesem Thema wird beschrieben, wie Domänen in Microsoft Dynamics 365 Commerce behandelt werden.
+description: In diesem Artikel wird beschrieben, wie Domänen in Microsoft Dynamics 365 Commerce behandelt werden.
 author: BrShoo
 ms.date: 05/10/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: aab5e983b42aea7d8eb4f198f033634d4663f278
-ms.sourcegitcommit: 7181a022739d6107a75d84546c3379c23f722034
+ms.openlocfilehash: c48c8bd57d90a8c7d47bfa4263cd9ab38002629b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8737345"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848953"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domänen in Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Domänen in Microsoft Dynamics 365 Commerce behandelt werden.
+In diesem Artikel wird beschrieben, wie Domänen in Microsoft Dynamics 365 Commerce behandelt werden.
 
-Domänen sind Webadressen, mit denen in einem Webbrowser zu Dynamics 365 Commerce-Websites navigiert wird . Sie steuern die Verwaltung Ihrer Domäne mit einem ausgewählten Domänennamenserver (DNS)-Anbieter. Domänen werden durch den Dynamics 365 Commerce-Site Builder referenziert, um zu koordinieren, wie auf eine Website zugegriffen wird, wenn sie veröffentlicht wird. In diesem Thema wird erläutert, wie Domänen während des gesamten Lebenszyklus der Entwicklung und des Starts der Commerce-Website behandelt und referenziert werden.
+Domänen sind Webadressen, mit denen in einem Webbrowser zu Dynamics 365 Commerce-Websites navigiert wird . Sie steuern die Verwaltung Ihrer Domäne mit einem ausgewählten Domänennamenserver (DNS)-Anbieter. Domänen werden durch den Dynamics 365 Commerce-Site Builder referenziert, um zu koordinieren, wie auf eine Website zugegriffen wird, wenn sie veröffentlicht wird. In diesem Artikel wird erläutert, wie Domänen während des gesamten Lebenszyklus der Entwicklung und des Starts der Commerce-Website behandelt und referenziert werden.
 
 > [!NOTE]
 > Ab dem 6. Mai 2022 werden alle in Dynamics 365 Commerce erstellten Umgebungen mit der `.dynamics365commerce.ms`-Domäne bereitgestellt und ersetzen das frühere Muster von `.commerce.dynamics.com`. Vorhandene Umgebungen, die mit der `.commerce.dynamics.com`-Domäne bereitgestellt werden, werden weiterhin funktionieren.

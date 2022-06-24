@@ -1,6 +1,6 @@
 ---
 title: Wertminderung bei Nutzungsrechten an Leasingobjekten
-description: In diesem Thema wird die Funktionalität beschrieben, mit der eine Wertminderung erfasst und der Zeitplan für die Abschreibung von Anlagen eines Ausrüstungs-Leasingverhältnisses des Themas 842 zur Kodifizierung von Rechnungslegungsstandards (ASC 842) angepasst wird.
+description: In diesem Artikel wird die Funktionalität beschrieben, mit der eine Wertminderung erfasst und der Zeitplan für die Abschreibung von Anlagen eines Ausrüstungs-Leasingverhältnisses des Themas 842 zur Kodifizierung von Rechnungslegungsstandards (ASC 842) angepasst wird.
 author: moaamer
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 497739e56c6ce0f4fe0bd4aec889f0782d08fc4a
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: f953b3a351859c6becba10a129bbb17b49be6290
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720166"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894112"
 ---
 # <a name="impair-right-of-use-assets"></a>Wertminderung bei Nutzungsrechten an Leasingobjekten
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Wenn der Buchwert eines Nutzungsrechts am Leasingobjekt nicht erzielbar ist, müssen Sie möglicherweise prüfen, ob die Anlage wertgemindert ist. Wenn Sie feststellen, dass der Vermögenswert wertgemindert ist, kann Analgenleasing die Wertminderung erfassen und den Abschreibungsplan entsprechend anpassen. In diesem Thema wird die Funktionalität beschrieben, mit der eine Wertminderung erfasst und der Zeitplan für die Abschreibung eines Ausrüstungs-Leasingverhältnisses des Themas 842 zur Kodifizierung von Rechnungslegungsstandards (ASC 842) angepasst wird. Die gleiche Methode gilt auch für Mietverträge nach dem International Financial Reporting Standard 16 (IFRS 16).
+Wenn der Buchwert eines Nutzungsrechts am Leasingobjekt nicht erzielbar ist, müssen Sie möglicherweise prüfen, ob die Anlage wertgemindert ist. Wenn Sie feststellen, dass der Vermögenswert wertgemindert ist, kann Analgenleasing die Wertminderung erfassen und den Abschreibungsplan entsprechend anpassen. In diesem Artikel wird die Funktionalität beschrieben, mit der eine Wertminderung erfasst und der Zeitplan für die Abschreibung eines Ausrüstungs-Leasingverhältnisses des Themas 842 zur Kodifizierung von Rechnungslegungsstandards (ASC 842) angepasst wird. Die gleiche Methode gilt auch für Mietverträge nach dem International Financial Reporting Standard 16 (IFRS 16).
 
 Der verbleibende Restbetrag des Nutzungsrecht am Leasingobjekt wird linear für die Anzahl der verbleibenden Perioden abgeschrieben, unabhängig davon, ob der Mietvertrag nach IFRS 16 als Finanzierungsleasing oder nach ASC 842 als Operating-Leasing klassifiziert wurde.
 
@@ -83,7 +83,7 @@ Die folgenden Tabellen zeigen die Werte, die auf den Registerkarten **Allgemeine
 
 ### <a name="steps"></a>Schritte
 
-1. Nachdem Sie den Mietvertrag wie oben in diesem Thema beschrieben erstellt haben, gehen Sie zum Leasingbuch und bestätigen Sie den Zahlungsplan. Buchen Sie dann den Journaleintrag der erstmaligen Erfassung . Das anfängliche Nutzungsrecht am Leasingobjekt und Leasingverbindlichkeit sollte 70.235,81 USD sein. In diesem Beispiel wurde der Mietvertrag gemäß ASC 842 als Ausrüstungs-Leasingvertrag klassifiziert.
+1. Nachdem Sie den Mietvertrag wie oben in diesem Artikel beschrieben erstellt haben, gehen Sie zum Leasingbuch und bestätigen Sie den Zahlungsplan. Buchen Sie dann den Journaleintrag der erstmaligen Erfassung . Das anfängliche Nutzungsrecht am Leasingobjekt und Leasingverbindlichkeit sollte 70.235,81 USD sein. In diesem Beispiel wurde der Mietvertrag gemäß ASC 842 als Ausrüstungs-Leasingvertrag klassifiziert.
 2. Führen Sie den Batch für Erfassungen dreimal aus, um den Ablauf von drei Jahren für die Mietzahlungen, Zinsaufwendungen und Abschreibungskosten zu simulieren.
 3. Nachdem Sie alle drei Batch-Aufträge ausgeführt haben, kehren Sie zum Leasingbuch zurück und öffnen Sie die Tabellen für Verbindlichkeiten und Anlagentransaktionen, um den aktuellen Buchwert des Nutzungsrechts am Leasingobjekt und der Leasingverbindlichkeit anzuzeigen. Nach drei Jahren sollte der Anlagenwert ungefähr -53.893,00 USD betragen, und der Wert des Vermögenswerts sollte ungefähr 53.893,00 USD betragen. 
 

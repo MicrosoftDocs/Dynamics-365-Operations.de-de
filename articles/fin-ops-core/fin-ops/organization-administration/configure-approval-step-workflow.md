@@ -1,6 +1,6 @@
 ---
 title: Genehmigungsschritte in einem Workflow konfigurieren
-description: Dieses Thema erläutert, wie Sie die Eigenschaften eines Genehmigungsschritts konfigurieren können.
+description: Dieser Artikel erläutert, wie Sie die Eigenschaften eines Genehmigungsschritts konfigurieren können.
 author: ChrisGarty
 ms.date: 08/23/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 84ff82dcb9f4ce930b4f1122790f7989c56fac35
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 5d7491c690cce7014f1aca0fb30ff6c3f21f45f9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070776"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848692"
 ---
 # <a name="configure-approval-steps-in-a-workflow"></a>Genehmigungsschritte in einem Workflow konfigurieren
 
@@ -28,7 +28,7 @@ ms.locfileid: "8070776"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Dieses Thema erläutert, wie Sie die Eigenschaften eines Genehmigungsschritts konfigurieren können.
+Dieser Artikel erläutert, wie Sie die Eigenschaften eines Genehmigungsschritts konfigurieren können.
 
 Klicken Sie zum Konfigurieren eines Genehmigungsschritts im Workflow-Editor mit der rechten Maustaste auf den Genehmigungsschritt, und klicken Sie dann auf **Eigenschaften**, um die Seite **Eigenschaften** zu öffnen. Verwenden Sie dann die folgenden Verfahren, um die Eigenschaften des Genehmigungsschritts zu konfigurieren.
 

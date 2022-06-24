@@ -1,6 +1,6 @@
 ---
 title: Eine Anforderung erstellen, die eine Angebotsanforderung verwendet
-description: Dieses Thema erklärt, wie man Preis- und Kreditoreninformationen einer Bestellanforderung von einem Angebotsanforderungsprozess aus hinzufügt.
+description: Dieser Artikel erklärt, wie man Preis- und Kreditoreninformationen einer Bestellanforderung von einem Angebotsanforderungsprozess aus hinzufügt.
 author: GalynaFedorova
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78092205c1a1d149b4dc202e085871d1fe46c4ad
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 5ecde250e3517464611b68fe3c960bfbfdf06319
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675120"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846010"
 ---
 # <a name="create-a-requisition-that-uses-an-rfq"></a>Eine Anforderung erstellen, die eine Angebotsanforderung verwendet
 
 [!include [banner](../../includes/banner.md)]
 
-Dieses Thema erklärt, wie man Preis- und Kreditoreninformationen einer Bestellanforderung von einem Angebotsanforderungsprozess aus hinzufügt. Das Beispiel, das in diesem Leitfaden gezeigt wird, kann in dem USMF-Demodatenunternehmen verwendet werden, und Sie müssen als Administrator angemeldet sein, um alle Schritte abzuschließen. Die Aufgaben in diesem Leitfaden würden gewöhnlich von Prokuristen durchgeführt werden.
+Dieser Artikel erklärt, wie man Preis- und Kreditoreninformationen einer Bestellanforderung von einem Angebotsanforderungsprozess aus hinzufügt. Das Beispiel, das in diesem Leitfaden gezeigt wird, kann in dem USMF-Demodatenunternehmen verwendet werden, und Sie müssen als Administrator angemeldet sein, um alle Schritte abzuschließen. Die Aufgaben in diesem Leitfaden würden gewöhnlich von Prokuristen durchgeführt werden.
 
 
 ## <a name="create-a-requisition"></a>Eine Anforderungen erstellen

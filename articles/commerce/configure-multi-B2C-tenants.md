@@ -1,6 +1,6 @@
 ---
 title: Mehrere B2C-Mandanten in einer Commerce-Umgebung konfigurieren
-description: In diesem Thema wird beschrieben, wann und wie mehrere Microsoft Azure Active Directory (Azure AD) Business-to-Consumer (B2C)-Mandanten pro Kanal für die Benutzerauthentifizierung in einer dedizierten Dynamics 365 Commerce-Umgebung eingerichtet werden können.
+description: In diesem Artikel wird beschrieben, wann und wie mehrere Microsoft Azure Active Directory (Azure AD) Business-to-Consumer (B2C)-Mandanten pro Kanal für die Benutzerauthentifizierung in einer dedizierten Dynamics 365 Commerce-Umgebung eingerichtet werden können.
 author: BrianShook
 ms.date: 03/17/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a372561b8a6cdca8e1a3dc362009379884f1a3414330f3f056d4c3af7703a132
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 13504a612c388b4720ec3328aaf2db83da2aad8c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736403"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890568"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Mehrere B2C-Mandanten in einer Commerce-Umgebung konfigurieren
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wann und wie mehrere Microsoft Azure Active Directory (Azure AD) Business-to-Consumer (B2C)-Mandanten pro Kanal für die Benutzerauthentifizierung in einer dedizierten Dynamics 365 Commerce-Umgebung eingerichtet werden können.
+In diesem Artikel wird beschrieben, wann und wie mehrere Microsoft Azure Active Directory (Azure AD) Business-to-Consumer (B2C)-Mandanten pro Kanal für die Benutzerauthentifizierung in einer dedizierten Dynamics 365 Commerce-Umgebung eingerichtet werden können.
 
 Dynamics 365 Commerce verwendet den Azure AD B2C-Cloud-Identitätsdienst zur Unterstützung von Benutzeranmeldeinformationen und Authentifizierungsströmen. Die Benutzer können die Authentifizierungsflüsse nutzen, um sich anzumelden, sich anzumelden und ihr Kennwort zurückzusetzen. Azure AD B2C speichert die sensiblen Authentifizierungsinformationen eines Benutzers, wie z. B. den Benutzernamen und das Passwort. Der Benutzerdatensatz ist für jeden B2C-MiMandanten ter einzigartig und verwendet entweder die Anmeldedaten des Benutzernamens (E-Mail-Adresse) oder die Anmeldedaten des Anbieters der sozialen Identität.
 

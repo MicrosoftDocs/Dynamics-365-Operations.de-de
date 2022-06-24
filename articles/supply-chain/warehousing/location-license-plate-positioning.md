@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: f87723ebd6684efba8464a7d64c7e1ea99f194eb
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: e52b313e0a00c04edf9003aa6292146936f837d4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102788"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889427"
 ---
 # <a name="location-license-plate-positioning"></a>Standortkennzeichenpositionierung
 
@@ -28,11 +28,11 @@ Durch die Standortkennzeichenpositionierung können Sie sehen, wo sich ein Kennz
 
 Die Funktion fügt jedem Kennzeichen, das an einem Lagerort abgelegt wird, eine Sequenznummer hinzu. Diese Sequenznummer wird verwendet, um die Kennzeichen am Lagerort zu bestellen. Daher unterstützt die Funktion auf intelligente Weise Szenarien, in denen Kunden ein Schwerkraft-Regalsystem verwenden und zu Kommissionierzwecken wissen müssen, welches Kennzeichen nach vorne zeigt.
 
-In diesem Thema wird ein Szenario vorgestellt, in dem gezeigt wird, wie die Funktion eingerichtet und verwendet wird.
+In diesem Artikel wird ein Szenario vorgestellt, in dem gezeigt wird, wie die Funktion eingerichtet und verwendet wird.
 
 ## <a name="turn-the-location-license-plate-positioning-feature-on-or-off"></a>Funktion für Standortkennzeichenpositionierung aktivieren oder deaktiveren
 
-Um die Funktionalität zu verwenden, die in diesem Thema beschrieben wird, die Funktion *Standortkennzeichenpositionierung* für Ihr System aktiviert werden. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Standortkennzeichenpositionierung* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Um die Funktionalität zu verwenden, die in diesem Artikel beschrieben wird, die Funktion *Standortkennzeichenpositionierung* für Ihr System aktiviert werden. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Standortkennzeichenpositionierung* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="example-scenario"></a>Beispielszenario
 
@@ -42,7 +42,7 @@ Um dieses Szenario mit den hier vorgeschlagenen Werten zu bearbeiten, müssen Si
 
 ### <a name="set-up-the-feature-for-this-scenario"></a>Funktion für dieses Szenario einrichten
 
-Führen Sie die folgenden Schritte aus, um die Funktion *Standortkennzeichenpositionierung* für das in diesem Thema vorgestellte Szenario einzurichten.
+Führen Sie die folgenden Schritte aus, um die Funktion *Standortkennzeichenpositionierung* für das in diesem Artikel vorgestellte Szenario einzurichten.
 
 #### <a name="location-profiles"></a>Lagerplatzprofile
 

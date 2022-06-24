@@ -1,6 +1,6 @@
 ---
 title: Erstellen Sie Empfehlungen mit Demo-Daten
-description: Dieses Thema bietet Richtlinien zur Nutzung von Mehrkanal-Produktempfehlungen in einer Einfeldumgebung der Stufe 1 mithilfe der vorinstallierten, anpassbaren Demodaten.
+description: Dieser Artikel bietet Richtlinien zur Nutzung von Mehrkanal-Produktempfehlungen in einer Einfeldumgebung der Stufe 1 mithilfe der vorinstallierten, anpassbaren Demodaten.
 author: bebeale
 ms.date: 05/26/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1a9592ee5cae88c6277115ed495b15ec09945e56cad0634fd246b6ee7e5dd048
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a0e6666cc163f97567cf5c6f820d436ef6ef4cca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741037"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874894"
 ---
 # <a name="create-recommendations-with-demo-data"></a>Erstellen Sie Empfehlungen mit Demo-Daten
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema bietet Richtlinien zur Nutzung von Mehrkanal-Produktempfehlungen in einer Einfeldumgebung der Stufe 1 mithilfe der vorinstallierten, anpassbaren Demodaten.
+Dieser Artikel bietet Richtlinien zur Nutzung von Mehrkanal-Produktempfehlungen in einer Einfeldumgebung der Stufe 1 mithilfe der vorinstallierten, anpassbaren Demodaten.
 
 Mehrkanal-Produktempfehlungen bieten eine Reihe von redaktionell kuratierten oder programmatisch erstellten Produktlisten. Diese Liste kann in einigen Szenarien je nach Geschäftsanforderung verwendet werden. Weitere Informationen zu Produktempfehlungslisten finden Sie im [Produktempfehlungsüberblick](product-recommendations.md).
 

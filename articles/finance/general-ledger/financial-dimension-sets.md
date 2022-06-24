@@ -1,6 +1,6 @@
 ---
 title: Finanzdimensionssätze
-description: In diesem Thema werden Finanzdimensionssätze beschrieben und einige Tipps zur Optimierung ihrer Verwendung bereitgestellt.
+description: In diesem Artikel werden Finanzdimensionssätze beschrieben und einige Tipps zur Optimierung ihrer Verwendung bereitgestellt.
 author: yukonpeegs
 ms.date: 03/07/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: epegors
 ms.search.validFrom: 2021-03-23
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: c583a2a89b45b59ea76ffd8e38b6206c9ca9ed41
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 3d4c15504b2ad128493e1bafa36aed271c2ab6dc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722575"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864280"
 ---
 # <a name="financial-dimension-sets"></a>Finanzdimensionssätze
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden Finanzdimensionssätze beschrieben und einige Tipps zur Optimierung ihrer Verwendung bereitgestellt.
+In diesem Artikel werden Finanzdimensionssätze beschrieben und einige Tipps zur Optimierung ihrer Verwendung bereitgestellt.
 
 Ein Dimensionssatz ist eine sortierte Liste von Finanzdimensionen, mit denen Hauptbuchdaten auf benutzerdefinierte Weise zusammengefasst werden können. Eine primäre Verwendung von Dimensionssätzen besteht darin, eine Zwischenbilanz zu definieren.
 

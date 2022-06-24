@@ -1,6 +1,6 @@
 ---
 title: Bestehende Seite einer Website ändern
-description: In diesem Thema wird beschrieben, wie Sie eine vorhandene Websiteseite in Microsoft Dynamics 365 Commerce ändern.
+description: In diesem Artikel wird beschrieben, wie Sie eine vorhandene Websiteseite in Microsoft Dynamics 365 Commerce ändern.
 author: psimolin
 ms.date: 04/14/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0039489c266840e5341f2e322fa7783216ac9bb3ebcecff840f591beec9f79c4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ceffb07afc8287e975f48696a059d3cd4ad20ffa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751542"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848862"
 ---
 # <a name="modify-an-existing-site-page"></a>Bestehende Seite einer Website ändern
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie eine vorhandene Websiteseite in Microsoft Dynamics 365 Commerce ändern.
+In diesem Artikel wird beschrieben, wie Sie eine vorhandene Websiteseite in Microsoft Dynamics 365 Commerce ändern.
 
 Wenn Sie eine Seite ändern müssen, müssen Sie sie zunächst im Seiteneditor öffnen. Gehen Sie zu der Site, die Ihre Seite enthält, und suchen Sie dann in der Liste der Seiten die gewünschte Seite. Wenn Sie die Seite nicht finden können, können Sie die umfangreiche Suchfunktion des Erstellungstools verwenden. Geben Sie entweder den genauen Seitennamen oder die ersten Buchstaben und dann ein Sternchen ein (\*). Eine gefilterte Liste der Seiten wird angezeigt. Sie können diese Liste verwenden, um die gewünschte Seite zu finden. Nachdem Sie die richtige Seite gefunden haben, wählen Sie den Seitennamen aus, um die Seite im Seiteneditor zu öffnen.
 

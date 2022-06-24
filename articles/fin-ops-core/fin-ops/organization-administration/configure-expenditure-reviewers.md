@@ -1,6 +1,6 @@
 ---
 title: Aufwendungsprüfer konfigurieren
-description: In diesem Thema wird beschrieben, wie Sie Aufwendungsprüfer verwenden, um den Benutzer dynamisch auszuwählen, dem eine Workflowaufgabe, Genehmigung oder manuelle Entscheidung zugewiesen ist.
+description: In diesem Artikel wird beschrieben, wie Sie Aufwendungsprüfer verwenden, um den Benutzer dynamisch auszuwählen, dem eine Workflowaufgabe, Genehmigung oder manuelle Entscheidung zugewiesen ist.
 author: rachel-profitt
 ms.date: 06/25/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2021-06-24
-ms.openlocfilehash: ad980889247e0239ad743078cb013c1c5839f676
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 110edf4c2733f899368069c7d215ae5b0882f5cc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070145"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863222"
 ---
 # <a name="configure-expenditure-reviewers"></a>Aufwendungsprüfer konfigurieren
 [!include[banner](../includes/banner.md)]
@@ -75,7 +75,7 @@ Beim Anlegen der Bestellung muss das Feld **Projekt** angegeben werden. Wenn Sie
 
 ## <a name="set-up-expenditure-reviewers"></a>Aufwendungsprüfer einrichten
 
-Dieses Beispiel zeigt, wie Sie einen Aufwendungsprüfer für Bestellanforderungen konfigurieren. Um andere Arten von Aufwendungsprüfern zu konfigurieren, ersetzen Sie den Navigationspfad in Schritt 1 durch den entsprechenden Pfad aus der Tabelle im Abschnitt [Arten von Aufwendungsprüfern](configure-expenditure-reviewers.md#types-of-expenditure-reviewers) weiter oben in diesem Thema.
+Dieses Beispiel zeigt, wie Sie einen Aufwendungsprüfer für Bestellanforderungen konfigurieren. Um andere Arten von Aufwendungsprüfern zu konfigurieren, ersetzen Sie den Navigationspfad in Schritt 1 durch den entsprechenden Pfad aus der Tabelle im Abschnitt [Arten von Aufwendungsprüfern](configure-expenditure-reviewers.md#types-of-expenditure-reviewers) weiter oben in diesem Artikel.
 
 1. Gehen Sie zu **Beschaffung \> Einrichten \> Richtlinien \> Aufwendungsprüfer für Bestellanforderungen**.
 2. Wählen Sie auf der Seite **Aufwendungsprüfer für Bestellanforderungen** **Neu** aus.

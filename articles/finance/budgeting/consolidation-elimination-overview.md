@@ -1,6 +1,6 @@
 ---
 title: Konsolidierungs- und Löschungsüberblick
-description: Dieses Thema enthält allgemeine Informationen zum Konsolidierungs- und Beseitigungsprozess. Er enthält Antworten auf mehrere häufig gestellten Fragen.
+description: Dieser Artikel enthält allgemeine Informationen zum Konsolidierungs- und Beseitigungsprozess. Er enthält Antworten auf mehrere häufig gestellten Fragen.
 author: panolte
 ms.date: 01/11/2018
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 670b238580ecf800686324fe664be747c551090d
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: cd7647df49883f0e3b6cbb2d21b19ca2acb2f065
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710697"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871390"
 ---
 # <a name="consolidation-and-elimination-overview"></a>Konsolidierungs- und Löschungsüberblick
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält allgemeine Informationen zum Konsolidierungs- und Beseitigungsprozess. Er enthält Antworten auf mehrere häufig gestellten Fragen.
+Dieser Artikel enthält allgemeine Informationen zum Konsolidierungs- und Beseitigungsprozess. Er enthält Antworten auf mehrere häufig gestellten Fragen.
 
 Wenn Sie Daten konsolidieren, werden die finanziellen Ergebnisse mehrerer Unternehmen vom Typ Tochtergesellschaft in Ergebnisse für nur ein konsolidiertes Unternehmen zusammengefasst. Tochtergesellschaften können ggf. auf verschiedenen Versionen oder Systemen laufen, sie sind ggf. kein vollständiges Eigentum und verwenden unterschiedliche Währungen. Es gibt mehrere Optionen für das Konsolidieren von Daten:
 

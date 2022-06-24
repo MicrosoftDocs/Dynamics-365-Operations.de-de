@@ -1,6 +1,6 @@
 ---
-title: Erfüllen von Serviceverträgen (Überblick)
-description: Dieses Theam bieten einen Überblick über die Aufgaben zum Erfüllen von Serviceverträgen.
+title: Erfüllen von Servicevereinbarungen – Übersicht
+description: Dieser Artikel bieten einen Überblick über die Aufgaben zum Erfüllen von Serviceverträgen.
 author: sorenva
 ms.date: 05/03/2018
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c0331477a815c7404faa9bde43275415c3994fd
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 920ac245c94d87ac692b173012e88dc8c1352f8f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677197"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852098"
 ---
-# <a name="fulfill-service-agreements-overview"></a>Erfüllen von Serviceverträgen (Überblick)
+# <a name="fulfill-service-agreements-overview"></a>Erfüllen von Servicevereinbarungen – Übersicht
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Theam bieten einen Überblick über die Aufgaben zum Erfüllen von Serviceverträgen. Darüber hinaus werden die Formulare aufgeführt und die Aufgaben behandelt, die den einzelnen Geschäftsprozesskomponenten zugeordnet sind.
+Dieser Artikel bieten einen Überblick über die Aufgaben zum Erfüllen von Serviceverträgen. Darüber hinaus werden in diesem Artikel die Formulare aufgeführt und die Aufgaben behandelt, die den einzelnen Geschäftsprozesskomponenten zugeordnet sind.
 
 ## <a name="forms-for-the-fulfill-service-contracts-business-process-components"></a>Formulare für die Geschäftsprozesskomponenten zum Erfüllen von Serviceverträgen
 

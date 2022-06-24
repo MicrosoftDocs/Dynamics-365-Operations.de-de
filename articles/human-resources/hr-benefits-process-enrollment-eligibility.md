@@ -1,6 +1,6 @@
 ---
-title: Vergütungsberechtigung verarbeiten
-description: Dieses Thema erklärt, wie Sie den Anmeldeberechtigungsprozess ausführen.
+title: Registrierungsberechtigung verarbeiten
+description: In diesem Artikel wird erläutert, wie der Prozess der Registrierungsberechtigung ausgeführt wird.
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 78a7de6dbb8d8ed13392eb7eb9aa02b15db2e009
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c01d7a6f456514fc9da1889ccaff5af1ae7c0f52
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693170"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877742"
 ---
-# <a name="process-enrollment-eligibility"></a>Vergütungsberechtigung verarbeiten
+# <a name="process-enrollment-eligibility"></a>Registrierungsberechtigung verarbeiten
 
 
 [!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dieses Thema erklärt, wie Sie den Anmeldeberechtigungsprozess ausführen.
+In diesem Artikel wird erläutert, wie der Prozess der Registrierungsberechtigung ausgeführt wird.
 
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Bearbeitung** die Option **Verarbeitung von Registrierungsberechtigung**.
 
@@ -51,11 +51,11 @@ Dieses Thema erklärt, wie Sie den Anmeldeberechtigungsprozess ausführen.
 
    4. Wählen Sie **OK**. Der Prozess wird mit den von Ihnen festgelegten Parametern ausgeführt.
 
-4. Wählen Sie **OK** aus.
+4. Wählen Sie **OK**.
 
 ## <a name="view-process-results"></a>Anzeigen von Prozessergebnissen
 
-Dieses Thema erklärt, wie Sie die Ergebnisse des Berechtigungsprozesses anzeigen können.
+In diesem Artikel wird erläutert, wie die Berechtigung der Prozessergebnisse angezeigt wird.
 
 1.  Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Prozess** die Option **Prozessergebnisse**.
 

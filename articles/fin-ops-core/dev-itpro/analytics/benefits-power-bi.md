@@ -1,6 +1,6 @@
 ---
 title: Power BI-Inhalt zu Vergütungen
-description: In diesem Thema wird der Power BI-Inhalt zu Vergütungen beschrieben.
+description: In diesem Artikel wird der Power BI-Inhalt zu Vergütungen beschrieben.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0e7cadc16c5ed6c6eab8c90090cac017221f63f466115b04a6a3b843db44b1c7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c78755946c7f07e1be7a57015e6c0c15317e6b76
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733170"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848808"
 ---
 # <a name="benefits-power-bi-content"></a>Power BI-Inhalt zu Vergütungen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird der Microsoft Power BI-Inhalt zu **Vergütungen** beschrieben. Es wird beschrieben, wie auf die Berichte, die enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet wurden.
+In diesem Artikel wird der Microsoft Power BI-Inhalt zu **Vergütungen** beschrieben. Es wird beschrieben, wie auf die Berichte, die enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet wurden.
 
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen auf den Power BI-Inhalt
 Der Power BI-Inhalt zu **Vergütungen** wird im Arbeitsbereich **Vorteilsverwaltung** angezeigt, wenn Sie eines der folgenden Produkte verwenden:

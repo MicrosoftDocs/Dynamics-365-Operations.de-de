@@ -1,6 +1,6 @@
 ---
-title: Lagerortfreigaberegel
-description: Dieses Thema enthält Informationen zur Lagerortfreigaberegel-Funktion, die Flexibilität bei der Freigabe an den Lagerort bietet. Es wird eine Konfigurationsoption hinzugefügt, die steuert, ob das System die Freigabe teilweise reservierter Auftragspositionen zulässt.
+title: Regel für Freigabe an Lager
+description: Dieser Artikel enthält Informationen zur Lagerortfreigaberegel-Funktion, die Flexibilität bei der Freigabe an den Lagerort bietet. Es wird eine Konfigurationsoption hinzugefügt, die steuert, ob das System die Freigabe teilweise reservierter Auftragspositionen zulässt.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 5fef1d942f2e9d3467fb8a00c6d89cc5c018a5aa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c011938438be32e8a3169d90561ab329da32e32a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674616"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895466"
 ---
 # <a name="release-to-warehouse-rule"></a>Lagerortfreigaberegel
 
@@ -78,7 +78,7 @@ Sie können diese Szenarien auch als Anleitung für die Funktion verwenden, wenn
 Dieses Szenario zeigt, wie die Funktion für Lagerorte funktioniert, die auf **Vollständige Reservierung erforderlich** festgelegt sind.
 
 1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Lagerort \> Lagerorte**.
-1. Legen Sie für Lagerort _62_ das Feld **Anforderung für Lagerbestandsreservierung** auf **Vollständige Reservierung erforderlich** fest, wie im Abschnitt [Lagerortfreigaberegel für jeden Lagerort festlegen](#set-option-warehouse) weiter oben in diesem Thema beschrieben.
+1. Legen Sie für Lagerort _62_ das Feld **Anforderung für Lagerbestandsreservierung** auf **Vollständige Reservierung erforderlich** fest, wie im Abschnitt [Lagerortfreigaberegel für jeden Lagerort festlegen](#set-option-warehouse) weiter oben in diesem Artikel beschrieben.
 1. Wechseln Sie zu **Vertrieb und Marketing \> Aufträge \> Alle Aufträge**.
 1. Wählen Sie **Neu** aus, um einen Auftrag zu erstellen.
 1. Legen Sie im Dialogfeld **Auftrag erstellen** die folgenden Werte fest:
@@ -112,7 +112,7 @@ Dieses Szenario zeigt, wie die Funktion für Lagerorte funktioniert, die auf **V
 Dieses Szenario zeigt, wie die Funktion für Lagerorte funktioniert, die auf **Teilweise Freigabe zulassen** festgelegt sind.
 
 1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Lagerort \> Lagerorte**.
-1. Legen Sie für Lagerort _62_ das Feld **Anforderung für Lagerbestandsreservierung** auf **Teilweise Reservierung zulassen** fest, wie im Abschnitt [Lagerortfreigaberegel für jeden Lagerort festlegen](#set-option-warehouse) weiter oben in diesem Thema beschrieben.
+1. Legen Sie für Lagerort _62_ das Feld **Anforderung für Lagerbestandsreservierung** auf **Teilweise Reservierung zulassen** fest, wie im Abschnitt [Lagerortfreigaberegel für jeden Lagerort festlegen](#set-option-warehouse) weiter oben in diesem Artikel beschrieben.
 1. Wie im [vorherigen Szenario](#scenario1), gehen Sie zu **Vertrieb und Marketing \> Aufträge \> Alle Aufträge**, und erstellen Sie einen Auftrag für das Kundenkonto _US-004_ vom Lagerort _62_. Fügen Sie die folgenden zwei Bestellpositionen hinzu:
 
     - **Position 1:** Legen Sie das Feld **Artikelnummer** auf _A0001_, das Feld **Menge** auf _2_ und das Feld **Einheit** auf _Stck_ fest.

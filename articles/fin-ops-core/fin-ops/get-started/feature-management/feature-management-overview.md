@@ -1,6 +1,6 @@
 ---
 title: Funktionsverwaltung – Übersicht
-description: In diesem Thema werden die Funktionsverwaltung und deren Verwendung beschrieben.
+description: In diesem Artikel werden die Funktionsverwaltung und deren Verwendung beschrieben.
 author: Peakerbl
 ms.date: 01/10/2022
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: c98bdbd64ee5488da20de3f5b23ae18ebce8c23f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 0691bc34ac8b57d20cfbeb58b6a2e2a03a57d067
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068008"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850051"
 ---
 # <a name="feature-management-overview"></a>Funktionsverwaltung – Übersicht
 
@@ -41,7 +41,7 @@ Die Funktionsliste für Positionsdetails enthält die folgenden Informationen:
 - **Status**: Ein Symbol gibt an, ob eine Funktion aktiviert wurde (Häkchen), nicht aktiviert ist (leer), zur Aktivierung geplant ist (Uhr), obligatorisch ist (Schloss), Aufmerksamkeit erfordert, bevor Sie sie aktivieren (Warnsymbol), oder nicht aktiviert werden kann (X). Die Einstellung, die angezeigt wird, wird für alle juristischen Personen verwendet. Beachten Sie, dass auch bei Aktivierung einer Funktion diese nach wie vor über die Sicherheit gesteuert wird. Daher ist die Funktion nur für Benutzer verfügbar, die auf der Grundlage ihrer Sicherheitsrolle Zugriff darauf haben. Sie ist ebenfalls nur in juristischen Personen verfügbar, auf die der Benutzer Zugriff hat.
 - **Aktivieren des Datums** – Das Datum, an dem die Funktion aktiviert wurde für das die Aktivierung geplant ist.
 - **Funktion hinzugefügt** – Das Datum, an dem die Funktion für Ihre Umgebung hinzugefügt wurde. Dieses Datum wird automatisch eingegeben, wenn Sie Ihre Umgebung beim monatlichen Versionszyklus aktualisieren.
-- **Funktionsstatus**: Der aktuelle Lebenszyklusstatus der Funktion: **Vorschauversion**, **Freigegeben** (als leer angezeigt), **Standardmäßig aktiviert** und **Obligatorisch**. Die Status werden später in diesem Thema ausführlicher behandelt. 
+- **Funktionsstatus**: Der aktuelle Lebenszyklusstatus der Funktion: **Vorschauversion**, **Freigegeben** (als leer angezeigt), **Standardmäßig aktiviert** und **Obligatorisch**. Die Status werden später in diesem Artikel ausführlicher behandelt. 
 - **Modul** – Das Modul, das von der neuen Funktion betroffen ist.
 
 > [!NOTE]
@@ -72,7 +72,7 @@ Die Spalte **Funktionsstatus** ist für diese Funktionen leer. Funktionen, die u
 
 ### <a name="on-by-default-features-optional"></a>Standardmäßig aktivierte Funktionen (optional)
 
-Funktionen, die auf **Standardmäßig aktiviert** aktualisiert werden, sind standardmäßig aktiviert, können aber deaktiviert werden. Nachdem Funktionen, die deaktiviert werden können, mindestens sechs Monate lang den Status **Freigegeben** hatten, wird erwartet, dass sie in der nächsten Hauptversion in diesen Status wechseln. Funktionen, die zu **Standardmäßig aktiviert** wechseln, werden voraussichtlich im Thema [Neuerungen](../whats-new-changed.md) für das Release kommuniziert. Die Aktualisierung wird vom besitzenden Produktteam initiiert.
+Funktionen, die auf **Standardmäßig aktiviert** aktualisiert werden, sind standardmäßig aktiviert, können aber deaktiviert werden. Nachdem Funktionen, die deaktiviert werden können, mindestens sechs Monate lang den Status **Freigegeben** hatten, wird erwartet, dass sie in der nächsten Hauptversion in diesen Status wechseln. Funktionen, die zu **Standardmäßig aktiviert** wechseln, werden voraussichtlich im Artikel [Neuerungen](../whats-new-changed.md) für das Release kommuniziert. Die Aktualisierung wird vom besitzenden Produktteam initiiert.
 
 > [!NOTE]
 > Da diese Funktionen automatisch aktiviert werden, ist es wichtig, dass Sie feststellen, ob Ihre Organisation bereit ist, diese Funktionen zu übernehmen, oder ob mehr Zeit benötigt wird. Wenn mehr Zeit benötigt wird, müssen diese Funktionen möglicherweise vorübergehend deaktiviert werden. Beachten Sie, dass die Umstellung einer Funktion auf **Standardmäßig aktiviert** normalerweise in der Hauptversion durchgeführt, bevor die Funktion **Obligatorisch** werden soll. An diesem Punkt haben Sie nicht die Möglichkeit, die Funktion zu deaktivieren. 

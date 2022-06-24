@@ -1,6 +1,6 @@
 ---
 title: Automatischer Ausgleich und Priorisierung
-description: In diesem Artikel wird beschrieben, wie Buchungen ausgeglichen werden, wenn Sie "Automatischer Ausgleich" auf der Seite "Debitorenparameter" auswählen. Es wird ausserdem erläutert, wie der automatische Ausgleich in Kombination mit der Zahlungspriorität verwendet werden kann.
+description: In diesem Artikel wird beschrieben, wie Buchungen ausgeglichen werden, wenn Sie „Automatischer Ausgleich“ auf der Seite „Debitorenparameter“ auswählen. Es wird ausserdem erläutert, wie der automatische Ausgleich in Kombination mit der Zahlungspriorität verwendet werden kann.
 author: ShivamPandey-msft
 ms.date: 01/30/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47ccdb49b4d5c43b4f9cb9a967bd30376474e4c1
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: bd5b894c82beb1b5d69ad6bf485161ab9c91a806
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712257"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855519"
 ---
 # <a name="automatic-settlement-and-prioritization"></a>Automatischer Ausgleich und Priorisierung
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Artikel wird beschrieben, wie Buchungen ausgeglichen werden, wenn Sie "Automatischer Ausgleich" auf der Seite "Debitorenparameter" auswählen. Es wird ausserdem erläutert, wie der automatische Ausgleich in Kombination mit der Zahlungspriorität verwendet werden kann.
+In diesem Artikel wird beschrieben, wie Buchungen ausgeglichen werden, wenn Sie „Automatischer Ausgleich“ auf der Seite „Debitorenparameter“ auswählen. Es wird ausserdem erläutert, wie der automatische Ausgleich in Kombination mit der Zahlungspriorität verwendet werden kann.
 
 Sie haben zwei Optionen, wenn Sie Zahlungen mit Rechnungen und anderen Buchungen ausgleichen. Sie können die auszugleichenden Transaktionen manuell auswählen, oder das System kann die Transaktionen automatisch auswählen, indem die automatische Ausgleichsfunktion verwendet wird. Sie können auch anpassen, wie automatische Ausgleiche verarbeitet werden, indem Sie die Option **Ausgleich priorisieren** verwenden. All diese Optionen sind Teil der Ausgleichsparameter, die auf der Seite **Debitorenparameter** definiert werden. Die Art, in der Buchungen automatisch ausgeglichen werden, kann sich je nach der Methode unterscheiden, die Sie für den automatischen Ausgleich verwenden. Folgende Methoden stehen zur Verfügung:
 

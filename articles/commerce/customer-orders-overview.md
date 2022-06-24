@@ -1,6 +1,6 @@
 ---
 title: Debitorenaufträge an der Verkaufsstelle (POS)
-description: Dieses Thema enthält Informationen zu Kundenaufträgen an der Verkaufsstelle (POS). Debitorenaufträge sind auch Sonderauftrag. Das Thema enthält eine Diskussion zu zugehörigen Parametern und Buchungsflüssen.
+description: Dieser Artikel enthält Informationen zu Kundenaufträgen an der Verkaufsstelle (POS). Debitorenaufträge sind auch Sonderauftrag. Der Artikel enthält eine Diskussion zu zugehörigen Parametern und Buchungsflüssen.
 author: josaw1
 ms.date: 08/02/2021
 ms.topic: overview
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 9ebdad47d761f775cf26666dc3e2736818fb4832
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 6051e0a18823b354dd9940aac70a086a0f317002
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982817"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850381"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Debitorenaufträge an der Verkaufsstelle (POS)
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält Informationen zur Erstellung und Verwaltung von Kundenaufträgen in der Verkaufsstellen-App (POS-App). Kundenaufträge können verwendet werden, um dort Verkäufe zu erfassen, wo Käufer Produkte zu einem späteren Zeitpunkt oder von einem anderen Standort abholen oder Artikel gesendet bekommen möchten. 
+Dieser Artikel enthält Informationen zur Erstellung und Verwaltung von Kundenaufträgen in der Verkaufsstellen-App (POS-App). Kundenaufträge können verwendet werden, um dort Verkäufe zu erfassen, wo Käufer Produkte zu einem späteren Zeitpunkt oder von einem anderen Standort abholen oder Artikel gesendet bekommen möchten. 
 
 In einer Omni-Channel-Commerce-Welt stellen viele Einzelhändler von Debitorenaufträgen als Option oder Sonderaufträge, um die verschiedenen Produkt- und Erfüllungsbedingungen zu erfüllen. Nachfolgend sind einige typische Szenarios:
 

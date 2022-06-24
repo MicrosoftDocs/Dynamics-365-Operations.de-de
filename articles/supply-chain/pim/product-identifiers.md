@@ -1,6 +1,6 @@
 ---
 title: Produktbezeichner
-description: Dieses Thema enthält Informationen zu den unterschiedlichen Arten von Produktbezeichnern und erläutert, wie Sie Produktbezeichner in Ihren Produktdaten hinzufügen können.
+description: Dieser Artikel enthält Informationen zu den unterschiedlichen Arten von Produktbezeichnern und erläutert, wie Sie Produktbezeichner in Ihren Produktdaten hinzufügen können.
 author: t-benebo
 ms.date: 03/27/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 638b5c3b0c83f67f3d99331b6456efd1b8f5225a
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3fc2d5c01209f15a9cb680e3bb569087f08c08d3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063340"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851709"
 ---
 # <a name="product-identifiers"></a>Produktbezeichner
 
@@ -29,7 +29,7 @@ ms.locfileid: "8063340"
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Informationen zu den unterschiedlichen Arten von Produktbezeichnern und erläutert, wie Sie Produktbezeichner in Ihren Produktdaten hinzufügen können.
+Dieser Artikel enthält Informationen zu den unterschiedlichen Arten von Produktbezeichnern und erläutert, wie Sie Produktbezeichner in Ihren Produktdaten hinzufügen können.
 
 Wenn Sie mit Produkten in der Produktion (BDE) oder in einem Lagerort in Microsoft Dynamics ERP oder Microsoft Dynamics CRM arbeiten, müssen Sie eine gute Strategie für die Identifizierung dieser Produkte und Produktvarianten haben.
 
@@ -125,7 +125,7 @@ Leider gibt es keine Standardfunktionalität, mit der Sie nach Produkten per ext
 | Produkte V2  | Produktnummer, Produktsuchename, Produktname, Produktbeschreibung | Produktnummer, Produktsuchename, Produktname, Produktbeschreibung | Je nach den Einstellungen der Entität und des Nummernkreises für die Produktnummer, kann die Produktnummer zum Zeitpunkt des Importvorgangs automatisch erstellt werden. |
 | Produktvarianten | Produktnummer, Produktsuchename, Produktname, Produktbeschreibung | Produktnummer, Produktsuchename, Produktname, Produktbeschreibung | Abhängig von der Produktnomenklaturvorlage kann die Produktnummer zum Zeitpunkt des Importvorgangs automatisch erstellt werden. Sie können jedoch eine beliebige eindeutige Produktnummer importieren und diese Produktnummer muss der Struktur der Produktnomenklaturvorlagen nicht folgen. |
 | Produktübersetzungen | Produktname, Produktbeschreibung | Produktname, Produktbeschreibung | Diese Entität überschreibt jede beliebige Sprache. Wenn der Name oder die Beschreibung der primären Sprache einer juristischen Entität überschrieben wird, wird der Name und die Beschreibung des Produkts selbst geändert. |
-| Erstellung eines freigegebenen Produkts V2 | Artikelnummer, Artikelsuchename Produktnummer| Artikelnummer, Artikelsuchename Produktnummer, Produktsuchename, Produktname | Die Entität kann eine Herausforderung sein, wenn Nummernkreise während der Erstellung neuer freigegebener Produkte verwendet werden. **Artikelnummer** Nummernsequenzen und **Produktnummer** Nummernsequenzen haben einen Einfluss. Allerdings ist der Nummernkreis **Artikelnummer** pro juristische Person, für die **Produktnummer** Nummernkreis global. Es wird daher nicht empfohlen, dass Sie den Nummernkreis **Artikelnummer** verwenden, wenn Sie neue freigegebene Produkte bereitstellen. Offensichtlich, wenn die Entität verwendet wird, um ein vorhandenes Produkt freizugeben, muss die Produktnummer in der Entität zugeordnet werden. Weitere Informationen finden Sie im Abschnitt "Produkte- und Artikelnummernsequenzen" in diesem Thema. |
+| Erstellung eines freigegebenen Produkts V2 | Artikelnummer, Artikelsuchename Produktnummer| Artikelnummer, Artikelsuchename Produktnummer, Produktsuchename, Produktname | Die Entität kann eine Herausforderung sein, wenn Nummernkreise während der Erstellung neuer freigegebener Produkte verwendet werden. **Artikelnummer** Nummernsequenzen und **Produktnummer** Nummernsequenzen haben einen Einfluss. Allerdings ist der Nummernkreis **Artikelnummer** pro juristische Person, für die **Produktnummer** Nummernkreis global. Es wird daher nicht empfohlen, dass Sie den Nummernkreis **Artikelnummer** verwenden, wenn Sie neue freigegebene Produkte bereitstellen. Offensichtlich, wenn die Entität verwendet wird, um ein vorhandenes Produkt freizugeben, muss die Produktnummer in der Entität zugeordnet werden. Weitere Informationen finden Sie im Abschnitt "Produkte- und Artikelnummernsequenzen" in diesem Artikel. |
 | Freigegebene Produktvarianten | Artikelnummer, Produktdimensionen, Produktnummer | Produktnummer, Produktsuchename, Produktname, Produktbeschreibung, Produktdimensionen | Wie **Produktvarianten**-Entität kann diese Entität verwendet werden, um neue Produkte zu erstellen, die entweder der Produktnomenklaturvorlage folgen oder eigene Produktnummern für die Variante verwenden. |
 | Externe Artikelbeschreibungen für Debitoren | Debitoren-Artikelnummer, Debitorenartikelname, Debitorenbeschreibung, Debitorenkonto | Debitoren-Artikelnummer, Debitorenartikelname, Debitorenbeschreibung, Debitorenkonto | Eine Gruppe von Debitoren (beispielsweise Gesamtlayout, eine Käufervereinigung) kann in eine Gruppe zusammengefasst werden, indem die **Debitorengruppen der externen Artikelbeschreibung** verwendet. |
 | Externe Artikelbeschreibungen für Kreditoren | Kreditorenartikelnummer, Kreditorenartikelname, Kreditorenbeschreibung, Kreditorenkonto | Kreditorenartikelnummer, Kreditorenartikelname, Kreditorenbeschreibung, Kreditorenkonto | Eine Gruppe von Debitoren (beispielsweise Gesamtlayout, eine Käufervereinigung) kann in eine Gruppe zusammengefasst werden, indem die **Debitorengruppen der externen Artikelbeschreibung** verwendet. |
@@ -184,7 +184,7 @@ Gehen Sie folgendermaßen vor, um die Umgebung zu konfigurieren:
 
 Sie können jetzt die Datenentitäten **Common Data Service-Bezeichnerentität der Produktentität**, **Produktentitätsbezeichner-Code** und **Produktentitätsbezeichner-Umfang** verwenden, um die Bezeichner für jedes beliebige Zielsystem zu exportieren.
 
-## <a name="related-topic"></a>Verwandtes Thema
+## <a name="related-article"></a>Zugehöriger Artikel
 
 [Nach Produkten und Produktvarianten bei der Auftragserfassung suchen](search-products-product-variants.md)
 

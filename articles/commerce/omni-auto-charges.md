@@ -1,6 +1,6 @@
 ---
 title: Erweiterte automatische Omni-Channel-Belastungen
-description: In diesem Thema wird die Fähigkeit für das Verwalten anderer Auftragszuschläge für Commerce-Kanalaufträge mithilfe der erweiterten Auto-Belastungen-Funktionen beschrieben.
+description: In diesem Artikel wird die Fähigkeit für das Verwalten anderer Auftragszuschläge für Commerce-Kanalaufträge mithilfe der erweiterten Auto-Belastungen-Funktionen beschrieben.
 author: hhaines
 ms.date: 03/24/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 69432e13424b08b75e8ce7c88eaf6be66db59e65
-ms.sourcegitcommit: 94ebdaae6dc996b205ac78ed546e38f91f4f46ed
+ms.openlocfilehash: 412f5befa255d12914444b57918f14ab51243bfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "8489617"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851130"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Erweiterte automatische Omni-Channel-Belastungen
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält Informationen zur Konfiguration und Bereitstellung der erweiterten automatischen Funktionen, die in Dynamics 365 for Retail Version 10.0 verfügbar sind.
+Dieser Artikel enthält Informationen zur Konfiguration und Bereitstellung der erweiterten automatischen Funktionen, die in Dynamics 365 for Retail Version 10.0 verfügbar sind.
 
 zeigenWenn die erweiterten automatische Belastungen-Funktionen aktiviert sind, können Bestellungen, die in jedem unterstützten Commerce Channel (Verkaufsstelle (POS), Callcenter und online) erstellt wurden, die Vorteile der in der ERP-Anwendung definierten [automatische Belastungen](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) -Konfiguration nutzen, die in der ERP-Anwendung sowohl für Kopf- als auch Positionsebene bezogene Gebühren definiert werden.
 

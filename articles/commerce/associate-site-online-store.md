@@ -1,6 +1,6 @@
 ---
 title: Einem Onlinechannel eine Dynamics 365 Commerce-Site zuordnen
-description: In diesem Thema wird erläutert, wie Sie Ihre Microsoft Dynamics 365 Commerce-Site an mindestens einen Onlineshop binden.
+description: In diesem Artikel wird erläutert, wie Sie Ihre Microsoft Dynamics 365 Commerce-Site an mindestens einen Onlineshop binden.
 author: bicyclingfool
 ms.date: 07/02/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 60ead45e6e2b7fea8f04371310ff4315205e11f6e0968e5f8bbc6a29c5f26e18
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 006c8b60791e0176c808762025f3bfdeaff9c48d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737652"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878672"
 ---
 # <a name="associate-a-dynamics-365-commerce-site-with-an-online-channel"></a>Einem Onlinechannel eine Dynamics 365 Commerce-Site zuordnen
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie Ihre Microsoft Dynamics 365 Commerce-Site an mindestens einen Onlineshop binden. 
+In diesem Artikel wird erläutert, wie Sie Ihre Microsoft Dynamics 365 Commerce-Site an mindestens einen Onlineshop binden. 
 
 Nachdem Sie Ihre Dynamics 365 Commerce-E-Commerce-Umgebung mithilfe des Microsoft Dynamics Lifecycle Services (LCS)-Portals bereitgestellt haben, sind Sie bereit, Ihre erste E-Commerce-Website einzurichten. Als Teil der ersten Websiteerstellung ordnen Sie die Site einem Onlineshop zu, der zuvor erstellt wurde. Dieser Schritt bindet die Site an einen Online Kanal und die Site kann die Navigationshierarchie, Produkte, Kategorien, Preise, Versandoptionen und alles andere anzeigen, das Sie im Onlineshop definiert haben.
 

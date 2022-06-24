@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37698133a959792338abcc2abd75b6fa654177f6
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: b684cf16b172432fc3bdb485be98a5c3476c8ed0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710669"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846954"
 ---
 # <a name="cash-discounts"></a>Skonti
 
@@ -30,7 +30,7 @@ Skonti werden für Kreditoren und Debitoren eingerichtet und freigegeben.  Das v
 
 ## <a name="cash-discounts"></a>Skonti
 
-Skonti für Debitoren oder Kreditoren können auf der Skontoseite erstellt werden. Mithilfe des Felds "Nächster Skontocode" können Sie zudem eine Reihe von aufeinander folgenden Skonti definieren, die aufeinander folgen. Weitere Informationen finden Sie weiter unten in diesem Thema unter "Beispiel: Reihe von aufeinander folgenden Skonti". Wenn die Rechnung, die Habenbuchung (entweder Zahlung oder Gutschrift) oder beide nicht in einer Buchungswährung der juristischen Person eingegeben werden, wird das Skonto basierend auf dem Wechselkurs für Skonti für das Datum der Zahlung oder der Gutschrift berechnet. Wenn die Rechnung und das Habendokument in verschiedenen juristischen Personen erfasst werden und die Buchhaltungswährungen der juristischen Personen unterschiedlich sind, wird der Wechselkurs der juristischen Person der Rechnung verwendet, der am Datum des Habendokuments gültig ist. Weitere Informationen finden Sie weiter unten in diesem Thema unter "Beispiel: Wechselkurse für Skonti".
+Skonti für Debitoren oder Kreditoren können auf der Skontoseite erstellt werden. Mithilfe des Felds "Nächster Skontocode" können Sie zudem eine Reihe von aufeinander folgenden Skonti definieren, die aufeinander folgen. Weitere Informationen finden Sie weiter unten in diesem Artikel unter „Beispiel: Reihe von aufeinander folgenden Skonti“. Wenn die Rechnung, die Habenbuchung (entweder Zahlung oder Gutschrift) oder beide nicht in einer Buchungswährung der juristischen Person eingegeben werden, wird das Skonto basierend auf dem Wechselkurs für Skonti für das Datum der Zahlung oder der Gutschrift berechnet. Wenn die Rechnung und das Habendokument in verschiedenen juristischen Personen erfasst werden und die Buchhaltungswährungen der juristischen Personen unterschiedlich sind, wird der Wechselkurs der juristischen Person der Rechnung verwendet, der am Datum des Habendokuments gültig ist. Weitere Informationen finden Sie weiter unten in diesem Artikel unter „Beispiel: Wechselkurse für Skonti“.
 
 ## <a name="defaulting-order-of-cash-discount-main-account"></a>Standardreihenfolge des Skonto-Hauptkontos
 

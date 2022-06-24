@@ -1,6 +1,6 @@
 ---
 title: Konfiguration für Finance Insights – Versionen vor 10.0.20 und später
-description: In diesem Thema wird die Konfiguration erläutert, mit denen Ihr System die in Finance Insights verfügbaren Funktionen in Version 10.0.20 und höher nutzen kann.
+description: In diesem Artikel wird die Konfiguration erläutert, mit denen Ihr System die in Finance Insights verfügbaren Funktionen in Version 10.0.20 und höher nutzen kann.
 author: ShivamPandey-msft
 ms.date: 06/16/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 61cc002395ac3bc946fa03a04833a7b6d4820194
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: e6b9c34ee68a25ac9613a65cf63443751a39c576
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711603"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868517"
 ---
 # <a name="configuration-for-finance-insights---version-10020-and-later"></a>Konfiguration für Finance Insights – Versionen vor 10.0.20 und später
 
@@ -29,10 +29,10 @@ ms.locfileid: "8711603"
 
 
 
-Finance Insights kombiniert Funktionen von Microsoft Dynamics 365 Finance mit Dataverse, Azure und AI Builder, um leistungsstarke Prognosetools für Ihr Unternehmen zu bieten. In diesem Thema wird die Konfiguration von Dynamics 365 Finance Version 10.0.20 erläutert, mit denen Ihr System die in Finance Insights verfügbaren Funktionen nutzen kann.
+Finance Insights kombiniert Funktionen von Microsoft Dynamics 365 Finance mit Dataverse, Azure und AI Builder, um leistungsstarke Prognosetools für Ihr Unternehmen zu bieten. In diesem Artikel wird die Konfiguration von Dynamics 365 Finance Version 10.0.20 erläutert, mit denen Ihr System die in Finance Insights verfügbaren Funktionen nutzen kann.
 
 > [!NOTE]
-> Die in diesem Thema beschriebenen Konfigurationsschritte gelten nur für Finance Version 10.0.20 und höher. Informationen zum Einrichten von Finance Insights in Version 10.0.19 und früher finden Sie unter [Konfiguration für Finance Insights – Versionen 10.0.19](configure-for-fin-insites.md).
+> Die in diesem Artikel beschriebenen Konfigurationsschritte gelten nur für Finance Version 10.0.20 und höher. Informationen zum Einrichten von Finance Insights in Version 10.0.19 und früher finden Sie unter [Konfiguration für Finance Insights – Versionen 10.0.19](configure-for-fin-insites.md).
 
 ## <a name="deploy-finance"></a>Finance bereitstellen
 

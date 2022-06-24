@@ -1,6 +1,6 @@
 ---
 title: Übersicht Zeiterfassung
-description: Arbeitskräfte mit Zeiterfassung können verschiedene Arten von Zeiterfassungen eingeben. Sie können sich z. B. ein- und ausstempeln sowie indirekte Aktivitäten und Abwesenheiten erfassen. Dieses Thema beschreibt Erfassungen, ihre Berechnung, Genehmigung, und die Verwendung von Workflows sowie das Hinzufügen von Struktur und die automatisierte Genehmigung für Arbeitszeitnachweisen.
+description: Arbeitskräfte mit Zeiterfassung können verschiedene Arten von Zeiterfassungen eingeben. Sie können sich z. B. ein- und ausstempeln sowie indirekte Aktivitäten und Abwesenheiten erfassen. Dieser Artikel beschreibt Erfassungen, ihre Berechnung, Genehmigung, und die Verwendung von Workflows sowie das Hinzufügen von Struktur und die automatisierte Genehmigung für Arbeitszeitnachweisen.
 author: johanhoffmann
 ms.date: 07/25/2019
 ms.topic: overview
@@ -18,18 +18,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af257427661cb9a0d976800b657d3eb4afe7feca
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f648663d81cd37a1df7794ee9d5ad6598fb16594
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986118"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875216"
 ---
 # <a name="time-and-attendance-registration-overview"></a>Übersicht Zeiterfassung
 
 [!include [banner](../includes/banner.md)]
 
-Arbeitskräfte mit Zeiterfassung können verschiedene Arten von Zeiterfassungen eingeben. Sie können sich z. B. ein- und ausstempeln sowie indirekte Aktivitäten und Abwesenheiten erfassen. Dieses Thema beschreibt Erfassungen, ihre Berechnung, Genehmigung, und die Verwendung von Workflows sowie das Hinzufügen von Struktur und die automatisierte Genehmigung für Arbeitszeitnachweisen.
+Arbeitskräfte mit Zeiterfassung können verschiedene Arten von Zeiterfassungen eingeben. Sie können sich z. B. ein- und ausstempeln sowie indirekte Aktivitäten und Abwesenheiten erfassen. Dieser Artikel beschreibt Erfassungen, ihre Berechnung, Genehmigung, und die Verwendung von Workflows sowie das Hinzufügen von Struktur und die automatisierte Genehmigung für Arbeitszeitnachweisen.
 
 ## <a name="registrations"></a>Registrierungen
 

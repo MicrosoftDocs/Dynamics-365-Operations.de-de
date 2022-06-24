@@ -1,6 +1,6 @@
 ---
 title: Aktivieren der verzögerten Steuerberechnung in Erfassungen
-description: In diesem Thema wird erläutert, wie Sie die Funktion Verzögerte Steuerberechnung aktivieren, um die Leistung der Steuerberechnung zu verbessern, wenn die Anzahl der Erfassungspositionen groß ist.
+description: In diesem Artikel wird erläutert, wie Sie die Funktion „Verzögerte Steuerberechnung“ aktivieren, um die Leistung der Steuerberechnung zu verbessern, wenn die Anzahl der Erfassungspositionen groß ist.
 author: EricWang
 ms.date: 09/18/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: fddb6d3a9850b8f2f88f813f9591006637c7e535
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 02a038318d4c0fb44b6fcc4bb159ea87c2e9368a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713133"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887918"
 ---
 # <a name="enable-delayed-tax-calculation-on-journals"></a>Aktivieren der verzögerten Steuerberechnung in Erfassungen
 [!include [banner](../includes/banner.md)]
 
 
-In diesem Thema wird erläutert, wie Sie die Mehrwertsteuerberechnung in Erfassungen verzögern können. Diese Funktion kann die Leistung von Steuerberechnungen verbessern, wenn viele Erfassungspositionen vorhanden sind.
+In diesem Artikel wird erläutert, wie Sie die Mehrwertsteuerberechnung in Erfassungen verzögern können. Diese Funktion kann die Leistung von Steuerberechnungen verbessern, wenn viele Erfassungspositionen vorhanden sind.
 
 Standardmäßig werden Mehrwertsteuerbeträge in Erfassungspositionen berechnet, sobald steuerbezogene Felder aktualisiert werden. Diese Felder enthalten die Felder für Mehrwertsteuergruppen und Artikel-Mehrwertsteuergruppen. Jede Aktualisierung einer Erfassungsposition führt dazu, dass Steuerbeträge für alle Erfassungspositionen neu berechnet werden. Obwohl dieses Verhalten Benutzern hilft, Steuerbetragsberechnungen in Echtzeit anzuzeigen, kann es sich auch auf die Leistung auswirken, wenn die Anzahl der Erfassungspositionen sehr groß ist.
 

@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 296cee4c5da82d8bfcab298a5a2a13d982f8f808
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 05f2f11408dac93faa8f71cb0396893c03cdb6a0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672093"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851883"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-functional-consultants"></a>Lernkatalog für funktionale Dynamics 365 Supply Chain Management-Berater
 
@@ -68,7 +68,7 @@ Für funktionale Berater zeigt unsere Arbeitsaufgabenanalysestudie, dass jeder d
 | [Kurs MB-300T01-A: Gängige Kernfunktionen von Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-300T01) | In diesem Kurs werden allgemeine Funktionen von Microsoft Dynamics 365 for Finance and Operations erläutert. | Von einem Kursleiter durchgeführtes persönliches oder Onlinetraining; Kosten variieren nach Regionen und Partner | 1 Tag |
 | [Kurs MB-300T02-A: Kernkonfiguration in Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-300T02) | In diesem Kurs werden die Kernkonfigurationsaufgaben für Microsoft Dynamics 365 for Finance and Operations erläutert. | Von einem Kursleiter durchgeführtes persönliches oder Onlinetraining; Kosten variieren nach Regionen und Partner | 1 Tag |
 | [Kurs MB-300T03-A: Datenmigration und Vorbereiten für Marktbereitstellung mit Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-300T03) | In diesem Kurs werden die Datenmigration und Marktbereitstellungsvorbereitung für Microsoft Dynamics 365 for Finance and Operations erläutert. | Von einem Kursleiter durchgeführtes persönliches oder Onlinetraining; Kosten variieren nach Regionen und Partner | 1 Tag |
-| [Implementierung der Lifesycle-Startseite](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | Diese Themen beschreiben verfügbare Programme, Werkzeuge und Prozesse in Zusammenhang mit der Implementierung von Lifecycle in Ihr Microsoft Dynamics 365 for Finance and Operations-Projekt. | Dokumentation | |
+| [Implementierung der Lifesycle-Startseite](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | Diese Artikel beschreiben verfügbare Programme, Werkzeuge und Prozesse in Zusammenhang mit der Implementierung von Lifecycle in Ihr Microsoft Dynamics 365 for Finance and Operations-Projekt. | Dokumentation | |
 
 ## <a name="migration-and-upgrade"></a>Migration und Upgrade<a name="migration"></a>
 
@@ -105,7 +105,7 @@ Für funktionale Berater zeigt unsere Arbeitsaufgabenanalysestudie, dass jeder d
 | [Lagerung einer mobilen App (VIR816PAL)](https://community.dynamics.com/365/b/techtalks/posts/warehousing-mobile-app-march-22-2017) | Dieses Technologie-Gespräch erläutert das erweiterte Lagerortverwaltungssystem in Dynamics 365 for Operations und was die Zukunft für die mobile erweiterte Lagerortschnittstelle bereithält. Wir überprüfen die neue mobile Anwendung, die freigegeben wurde und wie diese im Vergleich mit dem Vorgänger „WMDP“ abschneidet. Wir erfahren, was erforderlich ist, um die mobile Anwendung zu installieren, zu konfigurieren und zu betreiben und wie sie verwendet werden kann, um Ihre Implementierungen zu fördern. | Kostenlose Aufnahme einer Webkonferenz | 54 Minuten |
 | [Kreditor-Kooperation (DYN327PAL)](https://community.dynamics.com/365/b/techtalks/posts/vendor-collaboration-july-25-2017) | Dieses Technologie-Gespräch geht die Kreditoren-Zusammenarbeitsfunktion durch, einschließlich dem Verbrauch der Funktion „Antwort durch den Kreditor“, die in der Juli (Frühlings)-Version enthalten ist. | Kostenlose Aufnahme einer Webkonferenz | 58 Minuten |
 | [Artikel- und Lagermigrationsprozess zur Nutzung der erweiterten Lagerverwaltung (DYN316PAL)](https://community.dynamics.com/365/b/techtalks/posts/item-and-warehouse-migration-process-to-use-advanced-warehouse-management-june-27-2017) | In diesem Technologie-Gespräch bringen wir Ihnen bei, wie Sie eine vorhandene Lagerorteinstellung und Artikel mit offenen Transaktionen zur erweiterten Lagerortverwaltung migrieren, indem Sie die neuen Funktionen verwenden, um die Lagerdimensionsgruppe für Artikel zu ändern und Lagerorte zu aktivieren, um die erweiterten Lagerortverwaltungsprozesse zu verwenden. | Kostenlose Aufnahme einer Webkonferenz | 54 Minuten |
-| [Startseite für Lieferkettenverwaltung](/dynamics365/unified-operations/supply-chain/) | Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen für die Lieferkettenverwaltungsfunktionen in Microsoft Dynamics 365 for Finance and Operations. | Dokumentation | |
+| [Startseite für Lieferkettenverwaltung](/dynamics365/unified-operations/supply-chain/) | Dieser Artikel enthält eine Liste der Hilfeartikel und anderer Ressourcen für die Lieferkettenverwaltungsfunktionen in Microsoft Dynamics 365 for Finance and Operations. | Dokumentation | |
 | [Nachschub für die Rohstoffkommissionierung (DYN333PAL2)](https://community.dynamics.com/365/b/techtalks/posts/demand-replenishment-for-raw-material-picking-september-28-2017) | Dieses Technologie-Gespräch behandelt Rohmaterialentnahme und Bedarfswiederbeschaffung für Rohmaterialentnahme. | Kostenlose Aufnahme einer Webkonferenz | 38 Minuten |
 | [Kurs MB-330T01-A: Konfigurieren und Verwenden von Supply Chain Management in Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-330T01) | Dieser Kurs erläutert, wie Supply Chain Management in Dynamics 365 for Finance and Operations konfiguriert und verwendet wird. | Von einem Kursleiter durchgeführtes persönliches oder Onlinetraining; Kosten variieren nach Regionen und Partner | 2 Tage |
 | [Kurs MB-330T02-A: Verwenden von Qualitätsmanagement, Intercompany-Handel und Produktprogrammplanung in Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-330T02) | Dieser Kurs behandelt, wie Sie Qualitätsmanagement, Intercompany-Handel und Produktprogrammplanung in Dynamics 365 for Finance and Operations verwenden. | Von einem Kursleiter durchgeführtes persönliches oder Onlinetraining; Kosten variieren nach Regionen und Partner | 1 Tag |

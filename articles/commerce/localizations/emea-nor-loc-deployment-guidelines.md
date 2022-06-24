@@ -1,6 +1,6 @@
 ---
 title: Bereitstellungsrichtlinien für Registrierkassen für Norwegen (veraltet)
-description: Dieses Thema ist eine Anleitung zum Bereitstellen, die zeigt, wie Sie die Lokalisierung Microsoft Dynamics 365 Commerce für Norwegen aktivieren.
+description: Dieser Artikel ist eine Anleitung zum Bereitstellen, die zeigt, wie Sie die Lokalisierung Microsoft Dynamics 365 Commerce für Norwegen aktivieren.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,27 +9,27 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2018-2-28
-ms.openlocfilehash: 019bac01abdc0b2e16718c08953b44fbccef83a3
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 7a6450215f152779428d3b0fd83bf09761e2ad98
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944787"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894461"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway-legacy"></a>Bereitstellungsrichtlinien für Registrierkassen für Norwegen (veraltet)
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema ist eine Anleitung zum Bereitstellen, die zeigt, wie Sie die Lokalisierung Microsoft Dynamics 365 Commerce für Norwegen aktivieren. Die Lokalisierung besteht aus mehreren Erweiterungen der Commerce-Komponenten. Mit den Erweiterungen können Sie beispielsweise angepasste Felder auf Quittungen drucken, zusätzliche Audit-Ereignisse, Verkaufstransaktionen und Zahlungstransaktionen am Point of Sale (POS) registrieren, Verkaufstransaktionen digital signieren und X- und Z-Berichte in lokalen Formaten drucken. Weitere Informationen über die Lokalisierung für Norwegen finden Sie unter [Kassenfunktionalität für Norwegen](./emea-nor-cash-registers.md).
+Dieser Artikel ist eine Anleitung zum Bereitstellen, die zeigt, wie Sie die Lokalisierung Microsoft Dynamics 365 Commerce für Norwegen aktivieren. Die Lokalisierung besteht aus mehreren Erweiterungen der Commerce-Komponenten. Mit den Erweiterungen können Sie beispielsweise angepasste Felder auf Quittungen drucken, zusätzliche Audit-Ereignisse, Verkaufstransaktionen und Zahlungstransaktionen am Point of Sale (POS) registrieren, Verkaufstransaktionen digital signieren und X- und Z-Berichte in lokalen Formaten drucken. Weitere Informationen über die Lokalisierung für Norwegen finden Sie unter [Kassenfunktionalität für Norwegen](./emea-nor-cash-registers.md).
 
 Dieses Beispiel ist Teil des Software Development Kit (SDK) für Retail. Informationen über das SDK finden Sie in der [Architektur des Software Development Kit (SDK) für Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
-Dieses Beispiel besteht aus Erweiterungen für die Commerce Runtime (CRT), den Retail Server und den POS. Um dieses Beispiel ausführen zu können, müssen Sie die Projekte CRT, Retail Server und POS modifizieren und erstellen. Es wird empfohlen, dass Sie ein unverändertes Retail SDK verwenden, um die Änderungen vorzunehmen, die in diesem Thema beschrieben werden. Wir empfehlen Ihnen außerdem, eine Steuereinheit wie Microsoft Visual Studio Online (VSO) zu verwenden, in dem noch keine Dateien geändert wurden.
+Dieses Beispiel besteht aus Erweiterungen für die Commerce Runtime (CRT), den Retail Server und den POS. Um dieses Beispiel ausführen zu können, müssen Sie die Projekte CRT, Retail Server und POS modifizieren und erstellen. Es wird empfohlen, dass Sie ein unverändertes Retail SDK verwenden, um die Änderungen vorzunehmen, die in diesem Artikel beschrieben werden. Wir empfehlen Ihnen außerdem, eine Steuereinheit wie Microsoft Visual Studio Online (VSO) zu verwenden, in dem noch keine Dateien geändert wurden.
 
 > [!NOTE]
-> In Commerce 10.0.8 und höher wird der Retail Server als Scale-Unit von Commerce bezeichnet. Da sich dieses Thema auf mehrere Vorgängerversionen der App bezieht, wird im gesamten Thema *Retail Server* verwendet.
+> In Commerce 10.0.8 und höher wird der Retail Server als Scale-Unit von Commerce bezeichnet. Da sich Dieser Artikel auf mehrere Vorgängerversionen der App bezieht, wird im gesamten Artikel *Retail Server* verwendet.
 >
-> Einige Schritte in den Verfahren in diesem Thema unterscheiden sich je nach der Version von Commerce, die Sie verwenden. Weitere Informationen finden Sie unter [Neuheiten und Änderungen in Dynamics 365 Retail](../get-started/whats-new.md).
+> Einige Schritte in den Verfahren in diesem Artikel unterscheiden sich je nach der Version von Commerce, die Sie verwenden. Weitere Informationen finden Sie unter [Neuheiten und Änderungen in Dynamics 365 Retail](../get-started/whats-new.md).
 
 ### <a name="using-certificate-profiles-in-commerce-channels"></a>Verwendung von Zertifikatsprofilen in Commerce-Kanälen
 
@@ -320,7 +320,7 @@ Die CRT-Erweiterungskomponenten sind in den CRT-Beispielen enthalten. Um die fol
     > [!WARNING]
     > Bearbeiten Sie **nicht** die Dateien CommerceRuntime.config und CommerceRuntime.MPOSOffline.config. Diese Dateien sind nicht für irgendwelche Anpassungen gedacht.
 
-#### <a name="sequentialsignatureregistercontracts-component"></a>SequentialSignatureRegister.Contracts-Komponente
+#### <a name="sequentialsignatureregistercontracts-component"></a>Komponente SequentialSignatureRegister.Contracts
 
 1. Suchen Sie das Projekt **Runtime.Extensions.SequentialSignatureRegister.Contracts**.
 2. Im Ordner **Extensions.SequentialSignatureRegister.Contracts\\bin\\Debug** finden Sie die Assembly-Datei **Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll**.
@@ -354,7 +354,7 @@ Die CRT-Erweiterungskomponenten sind in den CRT-Beispielen enthalten. Um die fol
     > [!WARNING]
     > Bearbeiten Sie **nicht** die Dateien CommerceRuntime.config und CommerceRuntime.MPOSOffline.config. Diese Dateien sind nicht für irgendwelche Anpassungen gedacht.
 
-#### <a name="sequentialsignatureregister-component"></a>SequentialSignatureRegister-Komponente
+#### <a name="sequentialsignatureregister-component"></a>Komponente SequentialSignatureRegister
 
 1. Suchen Sie das Projekt **Runtime.Extensions.SequentialSignatureRegister**.
 2. Ändern Sie die Datei **App.config**, indem Sie den Thumbprint, den Store und den Store-Namen für das Zertifikat angeben, das zum Signieren von Verkaufstransaktionen verwendet werden soll.
@@ -406,7 +406,7 @@ Die CRT-Erweiterungskomponenten sind in den CRT-Beispielen enthalten. Um die fol
     > [!WARNING]
     > Bearbeiten Sie **nicht** die Dateien CommerceRuntime.config und CommerceRuntime.MPOSOffline.config. Diese Dateien sind nicht für irgendwelche Anpassungen gedacht.
 
-#### <a name="sequentialsignatureregistercontracts-component"></a>SequentialSignatureRegister.Contracts Komponente
+#### <a name="sequentialsignatureregistercontracts-component"></a>Komponente SequentialSignatureRegister.Contracts
 
 1. Suchen Sie das Projekt **Runtime.Extensions.SequentialSignatureRegister.Contracts**.
 2. Im Ordner **Extensions.SequentialSignatureRegister.Contracts\\bin\\Debug** finden Sie die Assembly-Datei **Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll**.
@@ -456,7 +456,7 @@ Die CRT-Erweiterungskomponenten sind in den CRT-Beispielen enthalten. Um die fol
     > [!WARNING]
     > Bearbeiten Sie **nicht** die Dateien CommerceRuntime.config und CommerceRuntime.MPOSOffline.config. Diese Dateien sind nicht für irgendwelche Anpassungen gedacht.
 
-#### <a name="sequentialsignatureregister-component"></a>SequentialSignatureRegister-Komponente
+#### <a name="sequentialsignatureregister-component"></a>Komponente SequentialSignatureRegister
 
 1. Suchen Sie das Projekt **Runtime.Extensions.SequentialSignatureRegister**.
 2. Ändern Sie die Datei **App.config**, indem Sie den Thumbprint, den Store und den Store-Namen für das Zertifikat angeben, das zum Signieren von Verkaufstransaktionen verwendet werden soll.
@@ -508,7 +508,7 @@ Die CRT-Erweiterungskomponenten sind in den CRT-Beispielen enthalten. Um die fol
     > [!WARNING]
     > Bearbeiten Sie **nicht** die Dateien CommerceRuntime.config und CommerceRuntime.MPOSOffline.config. Diese Dateien sind nicht für irgendwelche Anpassungen gedacht.
 
-#### <a name="sequentialsignatureregistercontracts-component"></a>SequentialSignatureRegister.Contracts-Komponente
+#### <a name="sequentialsignatureregistercontracts-component"></a>Komponente SequentialSignatureRegister.Contracts
 
 1. Suchen Sie das Projekt **Runtime.Extensions.SequentialSignatureRegister.Contracts**.
 2. Im Ordner **Extensions.SequentialSignatureRegister.Contracts\\bin\\Debug** finden Sie die Assembly-Datei **Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll**.
@@ -1252,7 +1252,7 @@ Weitere Informationen finden Sie unter [Kassenfunktionalität für Norwegen](./e
 
 Folgen Sie diesen Schritten, um bereitstellbare Pakete zu erstellen, die Commerce-Komponenten enthalten, und um diese Pakete in einer Produktionsumgebung anzuwenden.
 
-1. Führen Sie die Schritte im Abschnitt [Erweiterungskomponenten für Cloud POS](#cloud-pos-extension-components) oder [Erweiterungskomponenten für Modern POS](#modern-pos-extension-components) weiter oben in diesem Thema aus.
+1. Führen Sie die Schritte im Abschnitt [Erweiterungskomponenten für Cloud POS](#cloud-pos-extension-components) oder [Erweiterungskomponenten für Modern POS](#modern-pos-extension-components) weiter oben in diesem Artikel aus.
 2. Nehmen Sie die folgenden Änderungen in den Paketkonfigurationsdateien unter dem Ordner **RetailSdk\\Assets** vor:
 
     1. Fügen Sie in den Konfigurationsdateien **commerceruntime.ext.config** und **CommerceRuntime.MPOSOffline.Ext.config** die folgenden Zeilen in den Abschnitt **composition** ein:

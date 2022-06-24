@@ -1,6 +1,6 @@
 ---
 title: Leasingbuchungskonten einrichten
-description: In diesem Thema werden die Buchungskonten aufgelistet, die für Anlagenleasing-Transaktionen erforderlich sind, und es wird erläutert, wie Buchungskonten auf der Seite „Leasingbuchungsparameter“ definiert werden.
+description: In diesem Artikel werden die Buchungskonten aufgelistet, die für Anlagenleasing-Transaktionen erforderlich sind, und es wird erläutert, wie Buchungskonten auf der Seite „Leasingbuchungsparameter“ definiert werden.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 147d8cd93f9664039b2004b878dcaff96c8b6ce6
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 6e3a0d8dd3bb3e58ca10b2efce0cc88a2f48d2de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726377"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859913"
 ---
 # <a name="set-up-lease-posting-accounts"></a>Leasingbuchungskonten einrichten
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die Buchungskonten aufgelistet, die für Anlagenleasing-Transaktionen erforderlich sind, und es wird erläutert, wie Buchungskonten auf der Seite **Leasingbuchungsparameter** definiert werden.
+In diesem Artikel werden die Buchungskonten aufgelistet, die für Anlagenleasing-Transaktionen erforderlich sind, und es wird erläutert, wie Buchungskonten auf der Seite **Leasingbuchungsparameter** definiert werden.
 
 Um den Themen 842 zur Kodifizierung von Rechnungslegungsstandards (ASC 842) und dem International Financial Reporting Standard 16 (IFRS 16) zu entsprechen, müssen Sie möglicherweise Konten in Ihrem Kontenplan erstellen. Konten, die Sie zur Einhaltung der ASC- und IFRS-Standards erstellen, sind jedoch keine Anlagenkonten. Gemäß ASC 842 wird eine Analge für das Nutzungsrecht am Leasingobjekt sowohl für Finanzierungsleasing als auch für Ausrüstungs-Leasingverträge erfasst. Diese Mietverträge sind vom Anlagevermögen getrennt. (Sie können ein Nutzungsrecht am Leasingobjekt weiterhin mithilfe des Anlagevermögens verwalten.)
 

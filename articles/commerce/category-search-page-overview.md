@@ -1,6 +1,6 @@
 ---
 title: Übersicht über die Standard-Kategorie-Landingpage und die Suchergebnisseite
-description: Dieses Thema gibt eine Übersicht über die Standard-Kategorie-Startseite und Suchergebnisseite in Dynamics 365 Commerce.
+description: Dieser Artikel gibt eine Übersicht über die Standard-Kategorie-Startseite und Suchergebnisseite in Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 06/30/2020
 ms.topic: overview
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6f61ee8ec212185e195e2cf1a9d6d25c31e4f672
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 5e61db026649df8fe331d107bfbda8246fb9d5f9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982433"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881851"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>Übersicht über die Standard-Kategorie-Landingpage und die Suchergebnisseite
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema gibt eine Übersicht über die Standard-Kategorie-Startseite und Suchergebnisseite in Microsoft Dynamics 365 Commerce E-Commerce.
+Dieser Artikel gibt eine Übersicht über die Standard-Kategorie-Startseite und Suchergebnisseite in Microsoft Dynamics 365 Commerce E-Commerce.
 
 ## <a name="default-category-landing-page"></a>Standard-Kategorie Startseite
 
@@ -32,7 +32,7 @@ Die Standardkategoriestartseite ist die Seite, zu der die Websitebenutzer in der
 
 ![Standardkategorie-Startseite.](./media/SimpleCategoryLandingDressCategory.png)
 
-Oben auf der Seite befindet sich eine Kopfzeile mit allen Produktkategorien und anderen Seiten, die Verkaufsmanager kategorisiert haben. Konfiguration wird als Teil der Konfiguration der Kanalnavigationshierarchie ausgeführt. Unten auf der Startseite befindet sich eine Fußzeile mit Direktlinks zu verschiedenen Themen, die Kunden interessieren könnten.
+Oben auf der Seite befindet sich eine Kopfzeile mit allen Produktkategorien und anderen Seiten, die Verkaufsmanager kategorisiert haben. Konfiguration wird als Teil der Konfiguration der Kanalnavigationshierarchie ausgeführt. Unten auf der Startseite befindet sich eine Fußzeile mit Direktlinks zu verschiedenen Artikeln, die Kunden interessieren könnten.
 
 Die folgenden Komponenten sind für eine Kategorie zentral:
 

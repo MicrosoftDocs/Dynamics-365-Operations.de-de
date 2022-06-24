@@ -1,6 +1,6 @@
 ---
-title: Bestandsausgangsoperation in POS
-description: Dieses Thema beschreibt die Möglichkeiten des Bestandsausgangs am Point of Sale (POS).
+title: Ausgehender Bestandsvorgang in POS
+description: Dieser Artikel beschreibt die Möglichkeiten des Bestandsausgangs am Point of Sale (POS).
 author: hhaines
 ms.date: 07/30/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3641e1974ffc277a690ca8b8d15399ac883b0132
-ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
+ms.openlocfilehash: dd2c124660643628ca4c19dc3a49366b67f29ad3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581136"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850222"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Ausgehender Bestandsvorgang in POS
 
@@ -187,7 +187,7 @@ Nachdem sich der Beleg im Status **Anforderung** befindet, ist er für die Erfü
 
 Vollständig versandte Transportaufträge werden auf die Registerkarte **Vollständig** der Belegliste **Ausgangsvorgang** verschoben. Dort bleiben sie für Benutzer im ausgehenden Lager oder im Lager im Nur-Lese-Modus sieben Tage lang sichtbar.
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-articles"></a>Zugehörige Artikel
 
 [Eingangsbestandsvorgang in POS](pos-inbound-inventory-operation.md)
 
