@@ -1,6 +1,6 @@
 ---
 title: Richtlinien für die Bereitstellung von Registrierkassen für Norwegen
-description: Dieses Thema enthält eine Anleitung zur Aktivierung der Kassenfunktionalität für die Lokalisierung Microsoft Dynamics 365 Commerce für Norwegen.
+description: Dieser Artikel enthält eine Anleitung zur Aktivierung der Kassenfunktionalität für die Lokalisierung Microsoft Dynamics 365 Commerce für Norwegen.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: f0744b18ed59c692ae336c92e488d339ae158368
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 1f2226432237662e28b9e26017020ab81bb6026b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077139"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899066"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway"></a>Richtlinien für die Bereitstellung von Registrierkassen für Norwegen
 
 [!include[banner](../includes/banner.md)]
 
-Dieses Thema enthält eine Anleitung zur Aktivierung der Kassenfunktionalität für die Lokalisierung Microsoft Dynamics 365 Commerce für Norwegen. Die Lokalisierung besteht aus mehreren Erweiterungen von Komponenten. Mit diesen Erweiterungen können Sie Aktionen wie das Drucken angepasster Felder auf Quittungen, das Registrieren zusätzlicher Audit-Ereignisse, Verkaufstransaktionen und Zahlungstransaktionen am Point of Sale (POS), das digitale Signieren von Verkaufstransaktionen und das Drucken von Berichten in lokalen Formaten durchführen. Weitere Informationen über die Lokalisierung für Norwegen finden Sie unter [Kassenfunktionalität für Norwegen](./emea-nor-cash-registers.md). Weitere Informationen darüber, wie Sie Commerce für Norwegen konfigurieren, finden Sie unter [Commerce für Norwegen einrichten](./emea-nor-cash-registers.md#setting-up-commerce-for-norway).
+Dieser Artikel enthält eine Anleitung zur Aktivierung der Kassenfunktionalität für die Lokalisierung Microsoft Dynamics 365 Commerce für Norwegen. Die Lokalisierung besteht aus mehreren Erweiterungen von Komponenten. Mit diesen Erweiterungen können Sie Aktionen wie das Drucken angepasster Felder auf Quittungen, das Registrieren zusätzlicher Audit-Ereignisse, Verkaufstransaktionen und Zahlungstransaktionen am Point of Sale (POS), das digitale Signieren von Verkaufstransaktionen und das Drucken von Berichten in lokalen Formaten durchführen. Weitere Informationen über die Lokalisierung für Norwegen finden Sie unter [Kassenfunktionalität für Norwegen](./emea-nor-cash-registers.md). Weitere Informationen darüber, wie Sie Commerce für Norwegen konfigurieren, finden Sie unter [Commerce für Norwegen einrichten](./emea-nor-cash-registers.md#setting-up-commerce-for-norway).
 
 > [!WARNING]
 > Aufgrund der Einschränkungen des [neuen unabhängigen Paketierungs- und Erweiterungsmodells](../dev-itpro/build-pipeline.md) kann es derzeit nicht für diese Lokalisierungsfunktionalität verwendet werden. Sie müssen die Version des digitalen Signierbeispiels für Norwegen in der vorherigen Version des Software Development Kit (SDK) für Retail auf einer virtuellen Maschine (VM) für Entwickler in Microsoft Dynamics Lifecycle Services (LCS) verwenden. Weitere Informationen finden Sie unter [Einsatzrichtlinien für Registrierkassen für Norwegen (veraltet)](./emea-nor-loc-deployment-guidelines.md).

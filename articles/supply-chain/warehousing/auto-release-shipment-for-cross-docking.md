@@ -1,6 +1,6 @@
 ---
 title: Auto-Freigabelieferung für Crossdocking
-description: In diesem Thema wird eine Crossdockingstrategie beschrieben, mit der Sie automatisch einen Bedarfsauftrag für den Lagerort freigeben können, wenn der Produktionsauftrag, der die Bedarfsmenge liefert, als fertig gemeldet wird, sodass die Menge direkt vom Produktions-Warenabgang zum ausgehenden Lagerplatz bewegt wird.
+description: In diesem Artikel wird eine Crossdockingstrategie beschrieben, mit der Sie automatisch einen Bedarfsauftrag für den Lagerort freigeben können, wenn der Produktionsauftrag, der die Bedarfsmenge liefert, als fertig gemeldet wird, sodass die Menge direkt vom Produktions-Warenabgang zum ausgehenden Lagerplatz bewegt wird.
 author: Mirzaab
 ms.date: 10/15/2019
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 1315bda1fd284eb326d4f08bf36bfea59074fde3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 34283422bafaeabef9ac454957b60db84eb5a9c7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577935"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903781"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Auto-Freigabelieferung für Crossdocking
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird eine Crossdockingstrategie beschrieben, mit der Sie automatisch einen Bedarfsauftrag für den Lagerort freigeben können, wenn der Produktionsauftrag, der die Bedarfsmenge liefert, als fertig gemeldet wird. Auf diese Weise wird die Menge, die für die Erfüllung des Bedarfsauftrags erforderlich ist, direkt vom Produktions-Warenabgang zum ausgehenden Lagerplatz bewegt.
+In diesem Artikel wird eine Crossdockingstrategie beschrieben, mit der Sie automatisch einen Bedarfsauftrag für den Lagerort freigeben können, wenn der Produktionsauftrag, der die Bedarfsmenge liefert, als fertig gemeldet wird. Auf diese Weise wird die Menge, die für die Erfüllung des Bedarfsauftrags erforderlich ist, direkt vom Produktions-Warenabgang zum ausgehenden Lagerplatz bewegt.
 
 Crossdocking ist ein Lagerortverarbeitungsfluss, wobei die Menge, die erforderlich ist, um einen ausgehenden Auftrag zu erfüllen, an die Ausgangsrampe oder den Stagingbereich des Auftrags vom Lagerplatz weitergeleitet wird, wo der eingehende Auftrag empfangen wurde. (Der eingehende Auftrag kann eine Bestellung, ein Umlagerungsauftrag oder ein Produktionsauftrag sein.) Während die erweiterte Crossdockingfunktion alle Angebot- und Nachfrageaufträge unterstützt und erfordert, dass der ausgehende Bedarf freigegeben wird, bevor die Crossdockingchance identifiziert wird, weist die Auto-Freigabelieferungsfunktion diese Eigenschaften auf:
 

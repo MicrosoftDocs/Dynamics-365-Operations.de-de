@@ -1,6 +1,6 @@
 ---
 title: Parameter für die Automatisierung des Inkassoprozesses konfigurieren
-description: In diesem Thema werden die Parameter beschrieben, die sich auf automatisierte Inkassoprozesse auswirken. Es bietet Anleitungen zu deren Einstellung, damit der automatisierte Prozess Ihre Absichten und Erwartungen widerspiegelt.
+description: In diesem Artikel werden die Parameter beschrieben, die sich auf automatisierte Inkassoprozesse auswirken. Er bietet Anleitungen zu deren Einstellung, damit der automatisierte Prozess Ihre Absichten und Erwartungen widerspiegelt.
 author: JodiChristiansen
 ms.date: 08/05/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: e7a7e048a371fc90456368206b91c29c4b1264d5
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: c5d0f801c47ef2d98d8ba410dc593bd7640839c1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734395"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900041"
 ---
 # <a name="configure-parameters-for-collection-process-automation"></a>Parameter für die Automatisierung des Inkassoprozesses konfigurieren
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die Parameter beschrieben, die sich auf automatisierte Inkassoprozesse auswirken. Es bietet Anleitungen zu deren Einstellung, damit der automatisierte Prozess Ihre Absichten und Erwartungen widerspiegelt. Informationen zum Automatisieren von Inkassoprozessen finden Sie unter [Automatisierung des Inkassoprozesses](collections-process-automate.md).
+In diesem Artikel werden die Parameter beschrieben, die sich auf automatisierte Inkassoprozesse auswirken. Er bietet Anleitungen zu deren Einstellung, damit der automatisierte Prozess Ihre Absichten und Erwartungen widerspiegelt. Informationen zum Automatisieren von Inkassoprozessen finden Sie unter [Automatisierung des Inkassoprozesses](collections-process-automate.md).
 
 ## <a name="general"></a>Allgemeines
 Geben Sie eine Zahl in **Prozentsatz der Kunden pro Batchaufgabe** ein, um die Anzahl der Batchaufgaben pro Automatisierungsprozess zu bestimmen. Legen Sie **Inkassobriefe automatisch buchen** auf **Ja** fest, damit der Aktionstyp „Inkassobrief“ den Brief während der Automatisierung bucht. Legen Sie **Aktivitäten für Automatisierungen erstellen** auf **Ja** fest, um Aktivitäten für Aktionstypen ohne Aktivität zu erstellen und zu schließen, sodass alle automatisierten Schritte angezeigt werden, die für ein Konto ausgeführt wurden. Definieren Sie die Anzahl der Tage, in denen der Inkassoverlauf in **Tage, um den Verlauf der Automatisierung des Inkassoprozesses aufzubewahren** gespeichert wird. Wenn eine Rechnung den letzten Schritt des Inkassoprozesses erreicht, wird sie nicht verwendet, um zukünftige Aktionstypen für die Prozessautomatisierung zu erstellen, wenn **Rechnung nach der Aktivierung des letzten Prozessschrittes ausschließen** auf **Ja** festgelegt ist. Die nächstälteste Rechnung bestimmt den nächsten Prozessautomatisierungsschritt, um sicherzustellen, dass die Automatisierungsaktionen für den Inkassoprozess fortgesetzt werden. 

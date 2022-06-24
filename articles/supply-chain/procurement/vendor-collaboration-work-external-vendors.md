@@ -1,6 +1,6 @@
 ---
-title: Kreditorenzusammenarbeit mit externen Kreditoren
-description: In diesem Thema wird erklärt, wie Einkaufsvertreter mit externen Keditoren kooperieren können, um Informationen über Bestellungen und Lieferbestand auszutauschen.
+title: Zusammenarbeit mit externen Kreditoren
+description: In diesem Artikel wird erklärt, wie Einkaufsvertreter mit externen Keditoren kooperieren können, um Informationen über Bestellungen und Lieferbestand auszutauschen.
 author: GalynaFedorova
 ms.date: 11/02/2017
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 05a2ecc82306c013912b3ee824d63d7d39c4258f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4ae943592c18dd0383aafbce59617cc983dc979b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676886"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907289"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Kreditorenzusammenarbeit mit externen Kreditoren
 
 [!include [banner](../includes/banner.md)]
 
-Das **Kreditorenzusammenarbeit** Modul richtet sich an Kreditoren, die keine elektronische Datenaustausch-Integration (EDI) mit Microsoft Dynamics 365 Supply Chain Management haben. Es erlaubt es Kreditoren, mit Bestellungen, Rechnungen, Lieferbestandsinformationen und Angebotsanforderungen zu arbeiten, und es ermöglicht ihnen auch den Zugriff auf Teile ihrer Kreditorenmasterdaten. In diesem Thema wird erklärt, wie Sie mit externen Kreditoren zusammenarbeiten können, die die Kreditorenzusammenarbeitsschnittstelle verwenden, um mit Bestellungen, Angebotsanforderungen und Lieferbestand zu arbeiten. Außerdem wird erklärt, wie ein bestimmter Kreditor aktiviert wird, um Kreditorenzusammenarbeit zu verwenden, und wie die Anzeige der Informationen definiert wird, die alle Kreditoren sehen, wenn Sie auf eine Bestellung antworten.
+Das **Kreditorenzusammenarbeit** Modul richtet sich an Kreditoren, die keine elektronische Datenaustausch-Integration (EDI) mit Microsoft Dynamics 365 Supply Chain Management haben. Es erlaubt es Kreditoren, mit Bestellungen, Rechnungen, Lieferbestandsinformationen und Angebotsanforderungen zu arbeiten, und es ermöglicht ihnen auch den Zugriff auf Teile ihrer Kreditorenmasterdaten. In diesem Artikel wird erklärt, wie Sie mit externen Kreditoren zusammenarbeiten können, die die Kreditorenzusammenarbeitsschnittstelle verwenden, um mit Bestellungen, Angebotsanforderungen und Lieferbestand zu arbeiten. Außerdem wird erklärt, wie ein bestimmter Kreditor aktiviert wird, um Kreditorenzusammenarbeit zu verwenden, und wie die Anzeige der Informationen definiert wird, die alle Kreditoren sehen, wenn Sie auf eine Bestellung antworten.
 
 Weitere Informationen dazu, was externe Kreditoren in der Kreditorenzusammenarbeitschnittstelle tun können, finden Sie unter [Kreditorenzusammenarbeit mit Debitoren](vendor-collaboration-work-customers-dynamics-365-operations.md)
 
 > [!NOTE]
-> Die Informationen zur Kreditorenzusammenarbeit in diesem Thema gelten nur für die aktuelle Version von Supply Chain Management. In Microsoft Dynamics AX 7.0 (Februar 2016) und Microsoft Dynamics AX-Anwendungsversion 7.0.1 (Mai 2016) arbeiten Sie mit Kreditoren zusammen, indem Sie das Modul **Kreditorenportal** verwenden. Informationen zum Modul **Kreditorenportal** finden Sie unter [Zusammenarbeiten mit Kreditoren mithilfe des Kreditorenportals](collaborate-vendors-vendor-portal.md).
+> Die Informationen zur Kreditorenzusammenarbeit in diesem Artikel gelten nur für die aktuelle Version von Supply Chain Management. In Microsoft Dynamics AX 7.0 (Februar 2016) und Microsoft Dynamics AX-Anwendungsversion 7.0.1 (Mai 2016) arbeiten Sie mit Kreditoren zusammen, indem Sie das Modul **Kreditorenportal** verwenden. Informationen zum Modul **Kreditorenportal** finden Sie unter [Zusammenarbeiten mit Kreditoren mithilfe des Kreditorenportals](collaborate-vendors-vendor-portal.md).
 
 Weitere Informationen dazu, wie Kreditoren die Kreditorenzusammenarbeit in Rechnungsstellungsprozessen verwenden können, finden Sie unter [Kreditorenzusammenarbeit-Rechnungsstellungsarbeitsbereich](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md) Informationen darüber, wie neue Nutzer der Kreditorezusammenarbeit bereitgestellt werden, finden Sie unter [Kreditorenzusammenarbeitbenutzer verwalten](manage-vendor-collaboration-users.md).
 
@@ -112,7 +112,7 @@ Die Bestellung, die an den Kreditor gesendet wurde und die den Status <strong>In
 <li>Einen Artikel ersetzen.</li>
 </ul>
 Der Kreditor kann&#39;keine Preisinformationen und Gebühren ändern. Allerdings kann der Kreditor diese Änderungen vorschlagen, indem er Hinweise verwendet.</td>
-<td>Die Antwort des Kreditors wir als <strong>Mit Änderungen akzeptiert</strong>, erfasst und der Status der Bestellung bleibt <strong>In externer Prüfung</strong> Die Statusangaben zeigen die Arten von Änderungen, die der Kreditor vorgeschlagen hat. Weitere Informationen zum automatischen Verbrauch der Änderungen lesen Sie im Abschnitt &quot;Die Bestellung aktualisieren, wenn ein Kreditor Änderungen vorschlägt&quot;, später in diesem Thema. </td>
+<td>Die Antwort des Kreditors wir als <strong>Mit Änderungen akzeptiert</strong>, erfasst und der Status der Bestellung bleibt <strong>In externer Prüfung</strong> Die Statusangaben zeigen die Arten von Änderungen, die der Kreditor vorgeschlagen hat. Weitere Informationen zum automatischen Verbrauch der Änderungen lesen Sie im Abschnitt &quot;Die Bestellung aktualisieren, wenn ein Kreditor Änderungen vorschlägt&quot;, später in diesem Artikel. </td>
 </tr>
 </tbody>
 </table>

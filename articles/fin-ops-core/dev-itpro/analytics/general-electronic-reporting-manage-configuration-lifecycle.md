@@ -1,6 +1,6 @@
 ---
-title: Den Konfigurationslebenszyklus der elektronischen Berichterstellung (EB) verwalten
-description: In diesem Thema wird beschrieben, wie Sie den Lebenszyklus von Konfigurationen für die elektronische Berichterstellung (EB) für Dynamics 365 Finance verwalten.
+title: Den Lebenszyklus der elektronischen Berichterstellungskonfiguration (ER) verwalten
+description: In diesem Artikel wird beschrieben, wie Sie den Lebenszyklus von Konfigurationen für die elektronische Berichterstellung (EB) für Dynamics 365 Finance verwalten.
 author: NickSelin
 ms.date: 07/23/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8b61082cf17707c952b6e07613769a671c349bb8fa92c21e3fe8524ef62dcb2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0220fa03283119471b3d1f78a23a04ed4036264e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767778"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906796"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Den Lebenszyklus der elektronischen Berichterstellungskonfiguration (ER) verwalten
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie den Lebenszyklus von Konfigurationen für die elektronische Berichterstellung (EB) für Dynamics 365 Finance verwalten.
+In diesem Artikel wird beschrieben, wie Sie den Lebenszyklus von Konfigurationen für die elektronische Berichterstellung (EB) für Dynamics 365 Finance verwalten.
 
 ## <a name="overview"></a>Übersicht
 
@@ -73,7 +73,7 @@ Folgende Rollen und Aktivitäten gehören zu EB-Konfigurationslebenszyklen.
 | Sachbearbeiter Kreditorenkontozahlungen            | Verwenden von EB-Artefakten in einem bestimmten Geschäftsprozess.                | Beispielsweise eine **Sachbearbeiter Kreditorenkontozahlungen**-Rolle, die die für die Generierung von Nachrichten für elektronischen Zahlung zulässt, die auf dem EB-Format basieren, das für eine bestimmte Zahlungsmethode konfiguriert ist |
 
 ## <a name="er-configuration-development-lifecycle"></a>EB-Konfigurationsentwicklungslebenszyklus
-Bei den folgenden EB-bezogenen Gründen empfehlen wir, Ihre EB-Konfigurationen in der Entwicklungsumgebung als getrennte Instanz von Finance and Operations zu entwickeln:
+Bei den folgenden ER-bezogenen Gründen empfehlen wir, Ihre ER-Konfigurationen in der Entwicklungsumgebung als getrennte Instanz von Finance and Operations zu entwickeln:
 
 - Benutzer, die entweder die Rolle des **Elektronischen Berichterstellungsentwicklers** oder **des funktionalen Beraters der elektronischen Berichterstellung** ausüben, können Konfigurationen bearbeiten und anschließend für Testzwecke ausführen. Dieses Szenario ruft möglicherweise Geschäftsabläufe und Tabellen auf, die für die Daten und die Leistung der Instanz schädlich sein können.
 - Das Aufrufen von Geschäftsabläufen und Tabellen als EB-Datenquelle von EB-Konfigurationen sind bei Einstiegspunkten und angemeldeten Unternehmensinhalten nicht beschränkt. Deshalb können Benutzer mit der Rolle **Entwickler für elektronische Berichterstellung** oder **Funktionaler Berater für elektronische Berichterstellung** auf geschäftskritische Daten zugreifen.

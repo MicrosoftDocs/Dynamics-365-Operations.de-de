@@ -1,6 +1,6 @@
 ---
-title: Installieren und Verbinden der mobilen Lagerortverwaltungs-App
-description: In diesem Thema wird erläutert, wie Sie die mobile Lagerortverwaltungs-App auf jedem Ihrer mobilen Geräte installieren und für die Verbindung mit Ihrer Microsoft Dynamics 365 Supply Chain Management-Umgebung konfigurieren.
+title: Mobile Warehouse Management-App installieren und verbinden
+description: In diesem Artikel wird erläutert, wie Sie die mobile Lagerortverwaltungs-App auf jedem Ihrer mobilen Geräte installieren und für die Verbindung mit Ihrer Microsoft Dynamics 365 Supply Chain Management-Umgebung konfigurieren.
 author: Mirzaab
 ms.date: 02/03/2021
 ms.topic: article
@@ -16,21 +16,21 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 812dd30e0e444bc310fc81edd16958e0c0747885
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9bd208ba78d28046782d03221b0f23471f56b574
+ms.sourcegitcommit: 3f544f8671821be915b289a614e4e440bd38994f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103412"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "8941765"
 ---
-# <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installieren und Verbinden der mobilen Lagerortverwaltungs-App
+# <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Mobile Warehouse Management-App installieren und verbinden
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Dieses Thema beschreibt, wie Sie die neue mobile App Lagerortverwaltung konfigurieren. Weitere Informationen zum Konfigurieren der alten (inzwischen veralteten) Lagerort-App finden Sie unter [Lagerort-App installieren und Verbindung herstellen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
+> Dieser Artikel beschreibt, wie Sie die neue mobile App Lagerortverwaltung konfigurieren. Weitere Informationen zum Konfigurieren der alten (inzwischen veralteten) Lagerort-App finden Sie unter [Lagerort-App installieren und Verbindung herstellen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
-In diesem Thema wird erklärt, wie Sie die Warehouse Management mobile App herunterladen und auf jedem Ihrer mobilen Geräte installieren und wie Sie die App für die Verbindung mit Ihrer Supply Chain Management Umgebung konfigurieren. Sie können jedes Gerät manuell konfigurieren oder Verbindungseinstellungen über eine Datei oder durch Scannen eines QR-Codes importieren.
+In diesem Artikel wird erklärt, wie Sie die Warehouse Management mobile App herunterladen und auf jedem Ihrer mobilen Geräte installieren und wie Sie die App für die Verbindung mit Ihrer Supply Chain Management Umgebung konfigurieren. Sie können jedes Gerät manuell konfigurieren oder Verbindungseinstellungen über eine Datei oder durch Scannen eines QR-Codes importieren.
 
 ## <a name="system-requirements"></a>Systemanforderungen
 
@@ -39,7 +39,7 @@ Die Lagerortverwaltungs-App ist für Windows- und Google Android-Betriebssysteme
 - Windows 10 (Universal Windows Platform \[UWP\]) Oktober 2018 Update 1809 (Build 10.0.17763) oder höher
 - Android 4.4 oder höher
 
-## <a name="turn-warehouse-management-mobile-app-features-or-or-off-in-supply-chain-management"></a>Schalten Sie die Funktionen der Warehouse Management Mobile App in Supply Chain Management ein oder aus
+## <a name="turn-warehouse-management-mobile-app-features-on-or-off-in-supply-chain-management"></a>Schalten Sie die Funktionen der Warehouse Management Mobile App in Supply Chain Management ein oder aus
 
 Um die Warehouse Management Mobile App zu verwenden, muss die Funktion *Benutzereinstellungen, Symbole und Schritttitel für die neue Lagerort-App* in Ihrem System aktiviert sein. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Benutzereinstellungen, Symbole und Schritttitel für die neue Lagerort-App* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
@@ -87,11 +87,11 @@ Sie müssen eine Webdienstanwendung für den Supply Chain Management-Mandanten i
 
     ![Anwendungsassistenten registrieren.](media/app-connect-azure-register-wizard.png "Anwendungsassistenten registrieren")
 
-1. Die neue App-Registrierung wird geöffnet. Notieren Sie sich den Wert der **Anwendungs(Client)-ID**, da Sie ihn zu einem späteren Zeitpunkt benötigen. Dies ID wird später in diesem Thema als *Client-ID* bezeichnet.
+1. Die neue App-Registrierung wird geöffnet. Notieren Sie sich den Wert der **Anwendungs(Client)-ID**, da Sie ihn zu einem späteren Zeitpunkt benötigen. Dies ID wird später in diesem Artikel als *Client-ID* bezeichnet.
 
     ![Anwendungs-ID (Client).](media/app-connect-azure-app-id.png "Anwendungs-ID (Client)")
 
-1. Wählen Sie in der Liste **Verwalten** **Zertifikat und geheime Schlüssel** aus. Wählen Sie dann eine der folgenden Schaltflächen aus, je nachdem, wie Sie die App für die Authentifizierung konfigurieren möchten. (Weitere Informationen finden Sie im Abschnitt [Mit einem Zertifikat oder geheimen Clientschlüssel authentifizieren](#authenticate) weiter unten in diesem Thema.)
+1. Wählen Sie in der Liste **Verwalten** **Zertifikat und geheime Schlüssel** aus. Wählen Sie dann eine der folgenden Schaltflächen aus, je nachdem, wie Sie die App für die Authentifizierung konfigurieren möchten. (Weitere Informationen finden Sie im Abschnitt [Mit einem Zertifikat oder geheimen Clientschlüssel authentifizieren](#authenticate) weiter unten in diesem Artikel.)
 
     - **Zertifikat hochladen** – Laden Sie ein Zertifikat hoch, um es als geheimen Schlüssel zu verwenden. Wir empfehlen diese Methode, da sie sicherer ist und außerdem vollständig automatisiert werden kann. Wenn Sie die mobile Lagerortverwaltungs-App auf Windows-Geräten ausführen, notieren Sie sich den **Fingerabdruck**-Wert, der nach dem Hochladen des Zertifikats angezeigt wird. Sie benötigen diesen Wert, wenn Sie das Zertifikat auf Windows-Geräten konfigurieren.
     - **Neuer geheimer Clientschlüssel** – Erstellen Sie einen Schlüssel, indem Sie eine Schlüsselbeschreibung und eine Dauer im Abschnitt **Passwörter** eingeben, und wählen Sie dann **Hinzufügen** aus. Erstellen Sie eine Kopie des Schlüssels, und bewahren Sie ihn sicher auf.
@@ -101,7 +101,7 @@ Sie müssen eine Webdienstanwendung für den Supply Chain Management-Mandanten i
 Weitere Informationen zum Einrichten von Webdienstanwendungen in Azure AD finden Sie in den folgenden Ressourcen:
 
 - Anweisungen zum Einrichten von Webdienstanwendungen mit Windows PowerShell in Azure AD finden Sie unter [Vorgehensweise: Azure PowerShell zum Erstellen eines Dienstprinzipals mit einem Zertifikat verwenden](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
-- Ausführliche Informationen zum manuellen Erstellen einer Webdienstanwendung in Azure AD finden Sie in den folgenden Themen:
+- Ausführliche Informationen zum manuellen Erstellen einer Webdienstanwendung in Azure AD finden Sie in den folgenden Artikeln:
 
     - [Schnellstart: Eine Anwendung bei der Microsoft Identity Platform registrieren](/azure/active-directory/develop/quickstart-register-app)
     - [Vorgehensweise: Das Portal verwenden, um eine Azure AD-Anwendung- und einen -Dienstprinzipal zu erstellen, die auf Ressourcen zugreifen können](/azure/active-directory/develop/howto-create-service-principal-portal)
@@ -129,13 +129,13 @@ Führen Sie die folgenden Schritte aus, um Supply Chain Management die Verwendun
     ![Azure Active Directory-Anwendungen.](media/app-connect-aad-apps.png "Azure Active Directory-Anwendungen")
 
 > [!TIP]
-> Eine Möglichkeit, diese Einstellungen zu verwenden, besteht darin, für jedes Ihrer physischen Geräte eine Client-ID in Azure zu erstellen und dann jede Client-ID zur **Azure Active Directory-Anwendungen**-Seite hinzuzufügen. Wenn ein Gerät dann verloren gehen, können Sie seinen Zugriff auf Supply Chain Management einfach eentfernen, indem Sie dessen Client-ID von dieser Seite entfernen. (Dieser Ansatz funktioniert, weil die auf jedem Gerät gespeicherten Verbindungsanmeldeinformationen auch eine Client-ID angeben, wie weiter unten in diesem Thema beschrieben.)
+> Eine Möglichkeit, diese Einstellungen zu verwenden, besteht darin, für jedes Ihrer physischen Geräte eine Client-ID in Azure zu erstellen und dann jede Client-ID zur **Azure Active Directory-Anwendungen**-Seite hinzuzufügen. Wenn ein Gerät dann verloren gehen, können Sie seinen Zugriff auf Supply Chain Management einfach eentfernen, indem Sie dessen Client-ID von dieser Seite entfernen. (Dieser Ansatz funktioniert, weil die auf jedem Gerät gespeicherten Verbindungsanmeldeinformationen auch eine Client-ID angeben, wie weiter unten in diesem Artikel beschrieben.)
 >
 > Darüber hinaus werden die Standardeinstellungen für Sprache, Zahlenformat und Zeitzone für jede Client-ID durch die Einstellungen festgelegt, die für den **Benutzer-ID**-Wert, der hier zugeordnet ist, festgelegt wird. Daher können Sie diese Einstellungen verwenden, um basierend auf der Client-ID Standardeinstellungen für jedes Gerät oder jede Gerätesammlung festzulegen. Diese Standardeinstellungen werden jedoch überschrieben, wenn sie auch für das *Benutzerkonto der Lager-App*, die ein Mitarbeiter verwendet, um sich auf dem Gerät anzumelden, definiert sind. (Weitere Informationen finden Sie unter [Benutzerkonten für mobile Geräte](mobile-device-work-users.md).)
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Sich mit einem Zertifikat oder einem geheimen Clientschlüssel authentifizieren
 
-Die Authentifizierung mit Azure AD bietet eine sichere Möglichkeit, ein mobiles Gerät mit Supply Chain Management zu verbinden. Sie können sich mit einem Zertifikat oder einem geheimen Clientschlüssel authentifizieren. Wenn Sie Verbindungseinstellungen importieren, empfiehlt es sich, anstelle eines geheimen Clientschlüssels ein Zertifikat zu verwenden. Da der geheime Clientschlüssel immer sicher gespeichert werden muss, können Sie ihn nicht aus einer Verbindungseinstellungsdatei oder einem QR-Code importieren, wie später in diesem Thema beschrieben.
+Die Authentifizierung mit Azure AD bietet eine sichere Möglichkeit, ein mobiles Gerät mit Supply Chain Management zu verbinden. Sie können sich mit einem Zertifikat oder einem geheimen Clientschlüssel authentifizieren. Wenn Sie Verbindungseinstellungen importieren, empfiehlt es sich, anstelle eines geheimen Clientschlüssels ein Zertifikat zu verwenden. Da der geheime Clientschlüssel immer sicher gespeichert werden muss, können Sie ihn nicht aus einer Verbindungseinstellungsdatei oder einem QR-Code importieren, wie später in diesem Artikel beschrieben.
 
 Zertifikate können als geheime Schlüssel verwendet werden, um die Identität der Anwendung zu belegen, wenn ein Token angefordert wird. Der öffentliche Teil des Zertifikats wird in die App-Registrierung im Azure-Portal hochgeladen, während das vollständige Zertifikat auf jedem Gerät bereitgestellt werden muss, auf dem die mobile Lagerortverwaltungs-App installiert ist. Ihre Organisation ist für die Verwaltung des Zertifikats in Bezug auf Rotation usw. verantwortlich. Sie können selbstsignierte Zertifikate verwenden, Sie sollten jedoch stets nicht exportierbare Zertifikate verwenden.
 
@@ -266,7 +266,7 @@ Wenn Sie keine Datei oder keinen QR-Code haben, können Sie die App manuell auf 
 
 1. Geben Sie die folgenden Informationen ein:
 
-    - **Geheimen Clientschlüssel verwenden** – Legen Sie die Option auf _Ja_ fest, um einen geheimen Clientschlüssel für die Authentifizierung mit Supply Chain Management zu verwenden. Legen Sie sie auf _Nein_ fest, um ein Zertifikat für die Authentifizierung zu verwenden. (Weitere Informationen finden Sie im Abschnitt [Erstellen einer Webdienstanwendung in Azure Active Directory](#create-service) weiter oben in diesem Thema.)
+    - **Geheimen Clientschlüssel verwenden** – Legen Sie die Option auf _Ja_ fest, um einen geheimen Clientschlüssel für die Authentifizierung mit Supply Chain Management zu verwenden. Legen Sie sie auf _Nein_ fest, um ein Zertifikat für die Authentifizierung zu verwenden. (Weitere Informationen finden Sie im Abschnitt [Erstellen einer Webdienstanwendung in Azure Active Directory](#create-service) weiter oben in diesem Artikel.)
     - **Verbindungsname** – Geben Sie einen Namen für die neue Verbindung ein. Dieser Name wird beim nächsten Öffnen der Verbindungseinstellungen im Feld **Verbindung auswählen** angezeigt. Der eingegebene Name muss eindeutig sein. (Das bedeutet, dass er sich von allen anderen auf Ihrem Gerät gespeicherten Verbindungsnamen unterscheiden muss, wenn dort andere Verbindungsnamen gespeichert sind.)
     - **Active Directory-Client-ID** – Geben Sie die Client-ID ein, die Sie sich beim Einrichten von Azure AD im Abschnitt [Webdienstanwendung in Azure Active Directory erstellen](#create-service) notiert haben.
     - **Geheimer Active Directory-Clientschlüssel** – Dieses Feld ist nur verfügbar, wenn die Option **Geheimen Clientschlüssel verwenden** auf _Ja_ gesetzt ist. Geben Sie den geheimen Clientschlüssel ein, den Sie sich beim Einrichten von Azure AD im Abschnitt [Webdienstanwendung in Azure Active Directory erstellen](#create-service) notiert haben.

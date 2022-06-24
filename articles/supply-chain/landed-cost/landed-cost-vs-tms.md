@@ -1,6 +1,6 @@
 ---
 title: Gesamttransportkosten vs. Transportverwaltung
-description: Microsoft Dynamics 365 Supply Chain Management bietet zwei verschiedene Module für die Arbeit mit dem Transportwesen, Transportverwaltung (TMS) und Gesamttransportkosten. Dieses Thema fasst die Funktionalität zusammen, die die beiden Module allgemein haben und hebt die Unterschiede zwischen ihnen hervor.
+description: Microsoft Dynamics 365 Supply Chain Management bietet zwei verschiedene Module für die Arbeit mit dem Transportwesen, Transportverwaltung (TMS) und Gesamttransportkosten. Dieser Artikel fasst die Funktionalität zusammen, die die beiden Module allgemein haben und hebt die Unterschiede zwischen ihnen hervor.
 author: Weijiesa
 ms.date: 12/04/2020
 ms.topic: article
@@ -12,20 +12,20 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8c59d7d1887986d308cb591ece077cff9f4648a5
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 40489ff8d8683d19a5f726546cc4c43cc3e7a05d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690371"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905920"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>Gesamttransportkosten vs. Transportverwaltung
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management stellt zwei verschiedene Module für die Arbeit mit dem Transportwesen zur Verfügung: **Transportverwaltung** (TMS) und **Gesamttransportkosten**. Dieses Thema fasst die Funktionalität zusammen, die die beiden Module allgemein haben und hebt die Unterschiede zwischen ihnen hervor. Sie können diese Informationen nutzen, um zu entscheiden, welches Modul am besten zu Ihren Geschäftspraktiken passt. Vielleicht stellen Sie fest, dass einige Geschäftspraktiken besser mit TMS funktionieren, während andere am besten mit Gesamttransportkosten funktionieren. Je nach Ihren Geschäftsanforderungen können Sie sich dann für die ausschließliche Verwendung eines Moduls entscheiden, oder Sie können die beiden Module kombinieren.
+Microsoft Dynamics 365 Supply Chain Management stellt zwei verschiedene Module für die Arbeit mit dem Transportwesen zur Verfügung: **Transportverwaltung** (TMS) und **Gesamttransportkosten**. Dieser Artikel fasst die Funktionalität zusammen, die die beiden Module allgemein haben und hebt die Unterschiede zwischen ihnen hervor. Sie können diese Informationen nutzen, um zu entscheiden, welches Modul am besten zu Ihren Geschäftspraktiken passt. Vielleicht stellen Sie fest, dass einige Geschäftspraktiken besser mit TMS funktionieren, während andere am besten mit Gesamttransportkosten funktionieren. Je nach Ihren Geschäftsanforderungen können Sie sich dann für die ausschließliche Verwendung eines Moduls entscheiden, oder Sie können die beiden Module kombinieren.
 
-Dieses Thema ist keine umfassende Übersicht über alle Funktionen der beiden Module. Stattdessen werden die verfügbaren Funktionen hervorgehoben, die sich auf den Transport von Waren von einem Lieferanten zum Lagerort Ihres Unternehmens beziehen, wo sie verbraucht werden können.
+Dieser Artikel ist keine umfassende Übersicht über alle Funktionen der beiden Module. Stattdessen werden die verfügbaren Funktionen hervorgehoben, die sich auf den Transport von Waren von einem Lieferanten zum Lagerort Ihres Unternehmens beziehen, wo sie verbraucht werden können.
 
 ## <a name="terminology-reference-data-and-reporting-differences"></a>Unterschiede in der Terminologie, den Referenzdaten und der Berichterstellung
 

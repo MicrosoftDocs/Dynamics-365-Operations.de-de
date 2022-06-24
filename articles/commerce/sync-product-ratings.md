@@ -1,6 +1,6 @@
 ---
 title: Synchronisieren von Produktbewertungen in Dynamics 365 Commerce
-description: In diesem Thema wird das Synchronisieren von Produktbewertungen in Microsoft Dynamics 365 Commerce beschrieben.
+description: In diesem Artikel wird das Synchronisieren von Produktbewertungen in Microsoft Dynamics 365 Commerce beschrieben.
 author: gvrmohanreddy
 ms.date: 02/06/2020
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3ceac78e6dbc6f83ed4968f76672367e79bdd968
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: ac94a8b4505aba509f0a71ed36d32adac864aedf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967949"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909334"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synchronisieren von Produktbewertungen in Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird das Synchronisieren von Produktbewertungen in Microsoft Dynamics 365 Commerce beschrieben.
+In diesem Artikel wird das Synchronisieren von Produktbewertungen in Microsoft Dynamics 365 Commerce beschrieben.
 
 Um Produktbewertungen in Mehrkanal-Lösungen, z. B. am Point of Sale (POS) und in Callcentern, zu verwenden, müssen die Produktbewertungen aus dem Dienst Bewertungen und Überprüfungen in die Commerce-Kanaldatenbank importiert werden. Wenn Produktbewertungen in Mehrkanal-Lösungen zur Verfügung gestellt werden, können sie Kunden indirekt bei ihren Interaktionen mit Vertriebspartnern unterstützen.
 
-In diesem Thema werden folgende Aufgaben beschrieben:
+In diesem Artikel werden folgende Aufgaben beschrieben:
 
 1. Konfigurieren Sie **Produktbewertungsjob synchronisieren** als Batchauftrag zum Synchronisieren von Produktbewertungen aus dem **Bewertungs- und Überprüfungsservice**.
 1. Sicherstellen, dass der Batchauftrag für die Produktbewertungssynchronisierung erfolgreich war

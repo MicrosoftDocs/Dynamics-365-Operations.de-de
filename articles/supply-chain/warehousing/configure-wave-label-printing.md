@@ -1,6 +1,6 @@
 ---
 title: Zyklusbeschriftungsdruck
-description: In diesem Thema wird das Drucken von Wellenetiketten beschrieben und die Einrichtung erläutert.
+description: In diesem Artikel wird das Drucken von Wellenetiketten beschrieben und die Einrichtung erläutert.
 author: perlynne
 ms.date: 05/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 59c4c100275917f3f9bf489c7d64b276275f1872
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 18620602c5f3cf6a69a36ef7248f35e5509337b8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778082"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901820"
 ---
 # <a name="wave-label-printing"></a>Zyklusbeschriftungsdruck
 
@@ -49,7 +49,7 @@ Der Wellenetikettendruck bietet die folgenden Verbesserungen:
 Diese Verbesserungen machen es effizienter, Kartons zu etikettieren, bevor sie auf Paletten geladen werden. Sie kommen insbesondere Unternehmen zugute, die an große Einzelhändler liefern, die automatisch Auftragseingänge bestätigen, indem sie jeden Karton separat scannen.
 
 > [!NOTE]
-> Sie können die in diesem Thema beschriebenen Konfigurationsszenarien je nach Ihren Geschäftsanforderungen entweder separat oder in Kombination implementieren. Sie können mehrere Wellenetikettenvorlagen entwerfen, die nacheinander arbeiten (wie in Szenario 3 dargestellt). Sie können beispielsweise Szenario 1 zum Drucken von Kartonetiketten und Szenario 2 zum Drucken von Palettenetiketten verwenden (wenn die vorrätigen Paletten in Größe und Anordnung variieren).
+> Sie können die in diesem Artikel beschriebenen Konfigurationsszenarien je nach Ihren Geschäftsanforderungen entweder separat oder in Kombination implementieren. Sie können mehrere Wellenetikettenvorlagen entwerfen, die nacheinander arbeiten (wie in Szenario 3 dargestellt). Sie können beispielsweise Szenario 1 zum Drucken von Kartonetiketten und Szenario 2 zum Drucken von Palettenetiketten verwenden (wenn die vorrätigen Paletten in Größe und Anordnung variieren).
 
 ## <a name="turn-on-the-wave-label-printing-feature"></a>Funktion für Wellenetikettendruck aktivieren
 

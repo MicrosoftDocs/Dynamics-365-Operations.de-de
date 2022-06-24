@@ -1,6 +1,6 @@
 ---
 title: Produktionsausführungsschnittstelle konfigurieren
-description: In diesem Thema wird beschrieben, wie Sie eine oder mehrere Konfigurationen für die Produktionsoberflächen-Ausführungsschnittstelle erstellen. Wenn Sie die Produktionsausführungsoberfläche öffnen, wird automatisch eine ausgewählte Konfiguration und ein Auftragsfilter geladen, die für den Browser und das Gerät spezifisch sind. In der Konfiguration legen Sie die Richtlinien fest, die für eine bestimmte Verwendung gelten müssen.
+description: In diesem Artikel wird beschrieben, wie Sie eine oder mehrere Konfigurationen für die Produktionsoberflächen-Ausführungsschnittstelle erstellen. Wenn Sie die Produktionsausführungsoberfläche öffnen, wird automatisch eine ausgewählte Konfiguration und ein Auftragsfilter geladen, die für den Browser und das Gerät spezifisch sind. In der Konfiguration legen Sie die Richtlinien fest, die für eine bestimmte Verwendung gelten müssen.
 author: johanhoffmann
 ms.date: 10/05/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 083f5a30323cdc813116af7462563c3b8dd5e4f5
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 9eefde163473e11b01bfa0adf9b3694c830f1488
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644343"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899410"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Produktionsausführungsschnittstelle konfigurieren
 
@@ -31,15 +31,15 @@ Wenn Sie die Produktionsausführungsoberfläche öffnen, wird automatisch eine a
 - Auf einem Gerät in der Firmenhalle stempeln Mitarbeiter ein, wenn sie ins Büro kommen, und sie stempeln aus, wenn sie nach Hause gehen.
 - Auf einem Gerät in der Werkstatt registrieren sich Maschinenbediener, wenn sie Aufträge starten und abschließen. Sie erfassen auch Pausen und indirekte Aktivitäten.
 
-In diesem Thema werden die verschiedenen Optionen zum Konfigurieren einer Produktionsausführungsschnittstelle für jedes Gerät beschrieben, das an Ihrem Standort verwendet wird.
+In diesem Artikel werden die verschiedenen Optionen zum Konfigurieren einer Produktionsausführungsschnittstelle für jedes Gerät beschrieben, das an Ihrem Standort verwendet wird.
 
 ## <a name="turn-on-the-production-floor-execution-interface-and-its-related-optional-features"></a>Aktivieren Sie die Produktionsausführungsoberfläche und die zugehörigen optionalen Funktionen
 
-Die Produktionsausführungsoberfläche selbst sowie mehrere der optionalen Einstellungen, die in diesem Thema beschrieben werden, müssen in Ihrem System aktiviert werden, bevor Sie sie verwenden können. Verwenden Sie die Seite [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um eine oder alle der in den folgenden Unterabschnitten beschriebenen Funktionen je nach Bedarf zu aktivieren.
+Die Produktionsausführungsoberfläche selbst sowie mehrere der optionalen Einstellungen, die in diesem Artikel beschrieben werden, müssen in Ihrem System aktiviert werden, bevor Sie sie verwenden können. Verwenden Sie die Seite [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um eine oder alle der in den folgenden Unterabschnitten beschriebenen Funktionen je nach Bedarf zu aktivieren.
 
 ### <a name="the-production-floor-execution-interface"></a>Die Produktionsausführungsoberfläche
 
-Dies ist die primäre in diesem Thema beschriebene Funktion und eine Voraussetzung für alle anderen in diesem Abschnitt erwähnten Funktionen. Ab Supply Chain Management 10.0.25 ist es obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Produktionsausführung* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Dies ist die primäre in diesem Artikel beschriebene Funktion und eine Voraussetzung für alle anderen in diesem Abschnitt erwähnten Funktionen. Ab Supply Chain Management 10.0.25 ist es obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Produktionsausführung* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="generate-license-plates"></a>Generieren von Ladungsträgern
 
@@ -146,7 +146,7 @@ Diese Funktion fügt der Seite **Produktionsausführung konfigurieren** Einstell
 - Aktivieren Sie Anpassungen des Materialverbrauchs über das Dialogfeld **Fortschritt melden**. (Diese Funktionalität erfordert auch die Funktion *Materialverbrauch in der Produktionsausführungsoberfläche (nicht WMS) registrieren*.)
 - Aktivieren Sie Suchen nach Projektkennung.
 
-Informationen zum Verwenden der Einstellungen finden Sie weiter unten in diesem Thema.
+Informationen zum Verwenden der Einstellungen finden Sie weiter unten in diesem Artikel.
 
 Um diese Funktion zu nutzen, schalten Sie die folgende Funktion in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ein:
 

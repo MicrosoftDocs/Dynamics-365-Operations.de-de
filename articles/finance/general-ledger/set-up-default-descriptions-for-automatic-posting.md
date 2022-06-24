@@ -1,6 +1,6 @@
 ---
 title: Standardbeschreibungen für automatische Buchungen einrichten
-description: In diesem Thema wird beschrieben, wie Sie Standardtext einrichten, der verwendet wird, um Buchhaltungseinträge auszufüllen, die automatisch im Hauptbuch gebucht werden. Sie können Standardbeschreibungstext einrichten, indem Sie Freihandtext verwenden oder indem Sie feste Variablen auswählen.
+description: In diesem Artikel wird beschrieben, wie Sie Standardtext einrichten, der verwendet wird, um Buchhaltungseinträge auszufüllen, die automatisch im Hauptbuch gebucht werden. Sie können Standardbeschreibungstext einrichten, indem Sie Freihandtext verwenden oder indem Sie feste Variablen auswählen.
 author: aprilolson
 ms.date: 07/23/2019
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: global
 ms.author: aolson
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 772c754e9980e693daf7542de273cbe278ca7038
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 71982a7d5b1bb08d3e238646ea0b15f17260bdcc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722435"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904498"
 ---
 # <a name="set-up-default-descriptions-for-automatic-posting"></a>Standardbeschreibungen für automatische Buchungen einrichten
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Standardtext einrichten, der verwendet wird, um Buchhaltungseinträge auszufüllen, die automatisch im Hauptbuch gebucht werden. Sie können Standardbeschreibungstext einrichten, indem Sie Freihandtext verwenden oder indem Sie feste Variablen auswählen.
+In diesem Artikel wird beschrieben, wie Sie Standardtext einrichten, der verwendet wird, um Buchhaltungseinträge auszufüllen, die automatisch im Hauptbuch gebucht werden. Sie können Standardbeschreibungstext einrichten, indem Sie Freihandtext verwenden oder indem Sie feste Variablen auswählen.
 
 > [!NOTE]
-> Bei bestimmten Transaktionstypen in einigen Regionen oder Ländern können Sie auch Text aus den Feldern, die den Transaktionsarten zugeordnet sind, einschließen. Eine Liste der Buchungsarten und der Länder und Regionen finden Sie im Abschnitt [Optional: Hinzufügen von weiterem Text zu Standardbeschreibungen](#optional-add-other-text-to-default-descriptions) weiter unten in diesem Thema.
+> Bei bestimmten Transaktionstypen in einigen Regionen oder Ländern können Sie auch Text aus den Feldern, die den Transaktionsarten zugeordnet sind, einschließen. Eine Liste der Buchungsarten und der Länder und Regionen finden Sie im Abschnitt [Optional: Hinzufügen von weiterem Text zu Standardbeschreibungen](#optional-add-other-text-to-default-descriptions) weiter unten in diesem Artikel.
 
 ## <a name="set-up-default-descriptions"></a>Einrichten von Standardbeschreibungen
 
@@ -78,7 +78,7 @@ Diese Option ist für die folgenden Länder und Regionen verfügbar:
 
 ### <a name="add-text-to-default-descriptions"></a>Hinzufügen von Text zu Standardbeschreibungen
 
-Nachdem Sie die Schritte in [Einrichten von Standardbeschreibungen](#set-up-default-descriptions) weiter oben in diesem Thema, abgeschlossen haben, gehen Sie folgendermaßen vor, um weiteren Text den Standardbeschreibungen hinzuzufügen.
+Nachdem Sie die Schritte in [Einrichten von Standardbeschreibungen](#set-up-default-descriptions) weiter oben in diesem Artikel, abgeschlossen haben, gehen Sie folgendermaßen vor, um weiteren Text den Standardbeschreibungen hinzuzufügen.
 
 1. Auf dem Inforegister **Parameter** wählen Sie **Hinzufügen** aus.
 2. Wählen Sie im Feld **Bezugstabelle** die Datenbanktabelle aus, aus der der Beschreibung Parameterdaten hinzugefügt werden sollen.

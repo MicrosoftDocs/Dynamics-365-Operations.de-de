@@ -1,6 +1,6 @@
 ---
-title: Wellenzuteilung
-description: In diesem Thema wird beschrieben, wie Sie den Wellenzuweisungsschritt einrichten und unter anderem die parallele Verarbeitung dafür aktivieren.
+title: Zykluszuteilung
+description: In diesem Artikel wird beschrieben, wie Sie den Wellenzuweisungsschritt einrichten und unter anderem die parallele Verarbeitung dafür aktivieren.
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 08781b26a4e066a026d4efa14670f073b04ec185
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c6b89364afd57b9c4b4413d0319b86e725433594
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695534"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906950"
 ---
 # <a name="wave-allocation"></a>Wellenzuteilung
 
@@ -25,7 +25,7 @@ ms.locfileid: "8695534"
 
 Die Wellenverarbeitung kann zeitaufwändig sein, und der größte Teil der Verarbeitungszeit wird bei der Zuteilung und der Arbeitserstellung verbracht.
 
-Diese Schritte können jetzt parallel ausgeführt werden, wodurch die Leistung der Wellenverarbeitung verbessert und ein größerer Wellendurchsatz im selben Lagerort ermöglicht wird. In diesem Thema wird erklärt, wie Sie die Wellenzuteilungsmethode für eine parallele Ausführung einrichten. Weitere Informationen zum Einrichten der parallelen Ausführung der Arbeitserstellung finden Sie unter [Planen der Arbeitserstellung während der Welle](configure-wave-schedule-work-creation.md).
+Diese Schritte können jetzt parallel ausgeführt werden, wodurch die Leistung der Wellenverarbeitung verbessert und ein größerer Wellendurchsatz im selben Lagerort ermöglicht wird. In diesem Artikel wird erklärt, wie Sie die Wellenzuteilungsmethode für eine parallele Ausführung einrichten. Weitere Informationen zum Einrichten der parallelen Ausführung der Arbeitserstellung finden Sie unter [Planen der Arbeitserstellung während der Welle](configure-wave-schedule-work-creation.md).
 
 Bisher war es immer nur möglich, jeweils eine Welle in einem Lagerort zuzuteilen. Diese Einschränkung wurde entfernt und durch eine neue Einschränkung ersetzt, die nur den Artikel und die Dimensionen sperrt, die sich in der Reservierungshierarchie über dem Lagerplatz befindet. Dimensionen über dem Lagerplatz enthalten immer Produktdimensionen. Zum Beispiel, wenn ein Artikel mit *Farbe* konfiguriert ist, können Varianten für *Rot*, *Blau* und *Gelb* jeweils parallel verarbeitet werden.
 

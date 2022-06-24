@@ -1,6 +1,6 @@
 ---
 title: Anlagenmessungen
-description: In diesem Thema wird erläutert, wie Sie in Anlagemesstypen in der Anlagenverwaltung erstellen.
+description: In diesem Artikel wird erläutert, wie Sie in Anlagemesstypen in der Anlagenverwaltung erstellen.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fc515615afaa172e1832508d79e202b166f134a9171a0a35ea4f372f9d19b7e2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1bcef89265697c1898b7d61a0b0ae6331ce1c851
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723574"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909671"
 ---
 # <a name="counters"></a>Zähler
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie Zählertypen in Anlagenmanagement erstellen. Zählertypen werden verwendet, um Zählererfassungen für Anlagen vorzunehmen, z. B. hinsichtlich der Anzahl der Produktionsstunden oder der an der Anlage produzierten Menge. Anlagentypen sind mit Zählertypen verknüpft. Dies bedeutet, dass ein Zähler für eine Anlage nur verwendet werden kann, wenn der Zähler für den Anlagentyp eingerichtet ist, der in der Anlage verwendet wird.
+In diesem Artikel wird erläutert, wie Sie Zählertypen in Anlagenmanagement erstellen. Zählertypen werden verwendet, um Zählererfassungen für Anlagen vorzunehmen, z. B. hinsichtlich der Anzahl der Produktionsstunden oder der an der Anlage produzierten Menge. Anlagentypen sind mit Zählertypen verknüpft. Dies bedeutet, dass ein Zähler für eine Anlage nur verwendet werden kann, wenn der Zähler für den Anlagentyp eingerichtet ist, der in der Anlage verwendet wird.
 
 Bevor Sie Zählererfassungen für Anlagen vornehmen können, müssen Sie zunächst im Feld **Zähler** die Zählertypen erstellen, die Sie verwenden möchten. Danach können Sie Zählererfassungen für Anlagen unter **Zähler** erstellen. 
 

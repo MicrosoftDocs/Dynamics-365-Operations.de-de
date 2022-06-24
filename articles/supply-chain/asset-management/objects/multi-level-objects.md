@@ -1,6 +1,6 @@
 ---
 title: Anlagen auf mehreren Ebenen
-description: In diesem Thema wird erläutert, wie Anlagen auf mehreren Ebenen erstellt und gelöscht werden.
+description: In diesem Artikel wird erläutert, wie Anlagen auf mehreren Ebenen erstellt und gelöscht werden.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f43c7c97f8b05a1bf76b2f2c869e6868689f388d06337064f04af839f2403357
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 34ab83c9f9673c39006b3985ebaac9e17a45da82
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769610"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908771"
 ---
 # <a name="multi-level-assets"></a>Anlagen auf mehreren Ebenen
 
@@ -28,7 +28,7 @@ ms.locfileid: "6769610"
 
  
 
-In diesem Thema wird erläutert, wie Anlagen auf mehreren Ebenen erstellt und gelöscht werden. Sie können Anlagen und zugehörige untergeordnete Anlagen in einer hierarchischen Baumstruktur erstellen. Auf diese Weise können Sie Beziehungen und Abhängigkeiten zwischen den Anlagen anzeigen. Wartungsaufträge können auf allen Ebenen der Anlagenstruktur in Beziehung gesetzt werden. Statistiken können für eine einzelne Ebene oder als Summe aller Ebenen mit untergeordneten Anlagen erstellt werden.
+In diesem Artikel wird erläutert, wie Anlagen auf mehreren Ebenen erstellt und gelöscht werden. Sie können Anlagen und zugehörige untergeordnete Anlagen in einer hierarchischen Baumstruktur erstellen. Auf diese Weise können Sie Beziehungen und Abhängigkeiten zwischen den Anlagen anzeigen. Wartungsaufträge können auf allen Ebenen der Anlagenstruktur in Beziehung gesetzt werden. Statistiken können für eine einzelne Ebene oder als Summe aller Ebenen mit untergeordneten Anlagen erstellt werden.
 
 Auf der Listenseite **Alle Anlagen** (**Anlagenverwaltung** \> **Allgemeines** \> **Anlagen** \> **Alle Anlagen**) listet die Spalte **Anlagen** die Anlagen in hierarchischer Reihenfolge auf. Die Spalte **Übergeordnet** zeigt die zugehörige übergeordnete Anlage an. Darüber hinaus zeigt, wenn Anlagen und untergeordnete Anlagen erstellt wurden, der **Anlagenstruktur** im Bereich **Zugehörige Informationen** die Anlagen in einer Baumstruktur.
 

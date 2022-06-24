@@ -1,6 +1,6 @@
 ---
 title: GS1-Barcodes
-description: Dieses Thema beschreibt, wie Sie GS1-Barcodes und QR-Codes festlegen, damit Etiketten in einem Lager gescannt werden können.
+description: Dieser Artikel beschreibt, wie Sie GS1-Barcodes und QR-Codes festlegen, damit Etiketten in einem Lager gescannt werden können.
 author: Mirzaab
 ms.date: 03/21/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: ea928bc8a020035adb36ae2e7873c656e8c3985d
-ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
+ms.openlocfilehash: 67c54f344ff7091f4a25198fdafa745c6c84d5d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8625277"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907144"
 ---
 # <a name="gs1-bar-codes"></a>GS1-Barcodes
 
@@ -30,11 +30,11 @@ Die GS1-Unterstützung im Supply Chain Management vereinfacht den Scan-Prozess i
 
 Logistik-Manager müssen die erforderliche Liste von Anwendungskennungen festlegen und jede von ihnen mit den entsprechenden Menüpunkten des mobilen Geräts verknüpfen. Die Anwendungskennungen können dann lagerübergreifend als globale Einstellung für Umzugs- und Verpackungszwecke verwendet werden. Daher werden alle Versandetiketten ein einheitliches Formular haben.
 
-Wenn nicht anders angegeben, wird in diesem Thema der Begriff *Barcode* verwendet, der sich sowohl auf lineare 1D-Barcodes als auch auf 2D-Barcodes bezieht.
+Wenn nicht anders angegeben, wird in diesem Artikel der Begriff *Barcode* verwendet, der sich sowohl auf lineare 1D-Barcodes als auch auf 2D-Barcodes bezieht.
 
 ## <a name="the-gs1-bar-code-format"></a>Das GS1-Barcodeformat
 
-Die allgemeinen GS1-Spezifikationen legen fest, welche Symbologien für GS1-Barcodes verwendet werden können und wie die Daten im Barcode kodiert werden. Dieser Abschnitt bietet eine kurze Einführung in das Thema. Ausführliche Informationen finden Sie unter [Allgemeine GS1-Spezifikationen](https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf), die von GS1 veröffentlicht werden. Das GS1-Spezifikationsdokument wird regelmäßig aktualisiert, und die darin enthaltenen Informationen sind auf dem neuesten Stand der Version 22.0 der allgemeinen GS1-Spezifikationen.
+Die allgemeinen GS1-Spezifikationen legen fest, welche Symbologien für GS1-Barcodes verwendet werden können und wie die Daten im Barcode kodiert werden. Dieser Abschnitt bietet eine kurze Einführung in den Artikel. Ausführliche Informationen finden Sie unter [Allgemeine GS1-Spezifikationen](https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf), die von GS1 veröffentlicht werden. Das GS1-Spezifikationsdokument wird regelmäßig aktualisiert, und die darin enthaltenen Informationen sind auf dem neuesten Stand der Version 22.0 der allgemeinen GS1-Spezifikationen.
 
 GS1-Barcodes verwenden die folgenden Symbologien:
 

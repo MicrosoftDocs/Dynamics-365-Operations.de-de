@@ -1,6 +1,6 @@
 ---
 title: Kreditorenrechnungsrichtlinien einrichten
-description: In diesem Thema wird erläutert, wie Richtlinien für Kreditorenrechnungen eingerichtet werden.
+description: In diesem Artikel wird erläutert, wie Richtlinien für Kreditorenrechnungen eingerichtet werden.
 author: ShivamPandey-msft
 ms.date: 02/11/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1f9707c7b283f42729126efa57e890e0df65ca8b
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 049b38b6feba5f4369d79b89b4c81a8195dd7758
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109755"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904729"
 ---
 # <a name="set-up-vendor-invoice-policies"></a>Kreditorenrechnungsrichtlinien einrichten
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Richtlinien für Kreditorenrechnungen eingerichtet werden. Kreditorenrechnungsrichtlinien werden ausgeführt, wenn Sie mit der Seite **Kreditorenrechnung** eine Kreditorenrechnung buchen und wenn Sie die Seite **Richtlinienverstöße** der Kreditorenrechnung öffnen. Sie können auch den Workflow für Kreditorenrechnungen konfigurieren, sodass Kreditorenrechnungsrichtlinien immer ausgeführt werden, wenn eine Rechnung an den Workflow übermittelt wird. 
+In diesem Artikel wird erläutert, wie Richtlinien für Kreditorenrechnungen eingerichtet werden. Kreditorenrechnungsrichtlinien werden ausgeführt, wenn Sie mit der Seite **Kreditorenrechnung** eine Kreditorenrechnung buchen und wenn Sie die Seite **Richtlinienverstöße** der Kreditorenrechnung öffnen. Sie können auch den Workflow für Kreditorenrechnungen konfigurieren, sodass Kreditorenrechnungsrichtlinien immer ausgeführt werden, wenn eine Rechnung an den Workflow übermittelt wird. 
 
 - Kreditorenrechnungsrichtlinien werden nicht auf Rechnungen angewendet, die im Rechnungsbuch oder in einer Rechnungserfassung erstellt wurden.  
 - Für die Rechnungsabgleichüberprüfung werden keine Kreditorenrechnungsrichtlinien verwendet. Stattdessen wird die Prüfung auf der Seite **Kreditorenkontenparameter** eingerichtet.  

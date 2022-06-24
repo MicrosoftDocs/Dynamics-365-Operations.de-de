@@ -1,6 +1,6 @@
 ---
 title: Bildschirmlayouts für Demodaten in Modern POS (MPOS) und Cloud POS
-description: Dieses Thema enthält Informationen zu den Bildschirmlayouts, die in den Demodaten einbezogen sind, die für die Verkaufsstelle (POS)-Erfahrungen in Dynamics 365 Commerce festgelegt werden.
+description: Dieser Artikel enthält Informationen zu den Bildschirmlayouts, die in den Demodaten einbezogen sind, die für die Verkaufsstelle (POS)-Erfahrungen in Dynamics 365 Commerce festgelegt werden.
 author: josaw1
 ms.date: 10/05/2017
 ms.topic: article
@@ -16,22 +16,22 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: c141325580d698cccc7d186496a0902913961d47764b93fa73c64c3eddf6e791
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb7a288b61e8b467dd8ad6a8f7dc42b7fca0d943
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761661"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897224"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>Bildschirmlayouts für Demodaten in Modern POS (MPOS) und Cloud POS
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält Informationen zu den Bildschirmlayouts, die in den Demodaten einbezogen sind, die für die Verkaufsstelle (POS)-Erfahrungen in Dynamics 365 Commerce festgelegt werden.
+Dieser Artikel enthält Informationen zu den Bildschirmlayouts, die in den Demodaten einbezogen sind, die für die Verkaufsstelle (POS)-Erfahrungen in Dynamics 365 Commerce festgelegt werden.
 
 ## <a name="overview"></a>Übersicht
 
-Die Beispielbildschirmlayouts, die mit Commerce-Demodaten einbezogen werden, enthalten Inhalt, der für verschiedene Retail-Segmente, Shoparbeitskraftrollen und Geräte optimiert ist. Ein einzelnes Layout kann mehrere Layoutgrößen und Schaltflächenrastern oder Kombinationen von enthalten, um sicherzustellen, dass Shoparbeitskräfte zwischen Stationen und Geräten wechseln. In diesem Thema werden die Unterschiede zwischen diesen Layouts, den Arbeitsgängen, die sie bieten, und den Gesamterfahrungen hervorgehoben, die sie beinhalten.
+Die Beispielbildschirmlayouts, die mit Commerce-Demodaten einbezogen werden, enthalten Inhalt, der für verschiedene Retail-Segmente, Shoparbeitskraftrollen und Geräte optimiert ist. Ein einzelnes Layout kann mehrere Layoutgrößen und Schaltflächenrastern oder Kombinationen von enthalten, um sicherzustellen, dass Shoparbeitskräfte zwischen Stationen und Geräten wechseln. In diesem Artikel werden die Unterschiede zwischen diesen Layouts, den Arbeitsgängen, die sie bieten, und den Gesamterfahrungen hervorgehoben, die sie beinhalten.
 
 ![Geräteübergreifende Demo-Datenlayouts.](../commerce/media/demo-screen-layouts-fig-1-1.png)
 
@@ -47,13 +47,13 @@ Bildschirmlayout-IDs können maximal 10 Zeichen haben. Die Kennung ist eine Zeic
 2. Layoutversion
 3. Person
 
-### <a name="company"></a>Firma
+### <a name="company"></a>Unternehmen
 
-| Buchstabe | Firma         |
+| Buchstabe | Unternehmen         |
 |--------|-----------------|
-| K      | Adventure Works |
-| Fr      | Fabrikam        |
-| C      | Contoso         |
+| H      | Adventure Works |
+| F      | Fabrikam        |
+| k      | Contoso         |
 
 ### <a name="layout-version"></a>Layoutversion
 
@@ -141,7 +141,7 @@ Die folgenden Abbildungen zeigen Beispiele der Willkommensseite und Buchungsseit
 
 ### <a name="contoso"></a>Contoso
 
-![Demodatenlayouts für Contoso.](../commerce/media/demo-screen-layouts-fig-4-3.png)
+![Demodatlayouts für Contoso](../commerce/media/demo-screen-layouts-fig-4-3.png)
 
 ## <a name="user-sign-in-matrix"></a>Benutzeranmeldung in Matrix
 

@@ -1,6 +1,6 @@
 ---
-title: Verankern
-description: In diesem Thema wird erläutert, wie Sie die Verankerung aktivieren und verwenden.
+title: Verankerung
+description: In diesem Artikel wird erläutert, wie Sie die Verankerung aktivieren und verwenden.
 author: GalynaFedorova
 ms.date: 07/29/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-07-29
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 26a7bf60912ff1e8a23305e9331d520fe8d65727
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8a0fa849f07f0cc0a41a663fc97b5aba927700b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676494"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903810"
 ---
-# <a name="anchoring"></a>Verankern
+# <a name="anchoring"></a>Verankerung
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Details zum Verankerungsprozess. Es beschreibt die erforderliche Konfiguration und die Logik, die ausgeführt wird, wenn ein Lagerarbeiter entweder den Staging- oder den Ladungsplatz ändert.
+Dieser Artikel enthält Details zum Verankerungsprozess. Es beschreibt die erforderliche Konfiguration und die Logik, die ausgeführt wird, wenn ein Lagerarbeiter entweder den Staging- oder den Ladungsplatz ändert.
 
 Mit der Verankerungsfunktion können Sie den Staging- oder Ladungsplatz überschreiben. Alle offenen Einlagerungen werden dann an den neuen Bereitstellungs- oder Ladeort geleitet, den Sie angeben.
 
@@ -36,11 +36,11 @@ Sie konfigurieren die Verankerung für Menüelemente auf Mobilgeräten, indem Si
 > [!IMPORTANT]
 > Der Lagerort für nachfolgende offene Einlagerungen wird nur in den Arbeitszeilen geändert, die über dieselbe Arbeitsvorlagenzeile generiert werden. Mit anderen Worten, das System verankert die Einlagerungszeilen, die aus derselben Arbeitsvorlagenzeile stammen.
 
-Dieses Thema enthält ein Szenario, das zeigt, wie die Verankerung funktioniert. Während des Szenarios erstellen Sie einen Satz von Kundenaufträgen und geben diese an das Lager frei. Sie überschreiben dann den vorgeschlagenen Staging-Lagerort und überprüfen, ob alle verbleibenden Einlagerungsarbeiten an den neuen Standort geleitet werden.
+Dieser Artikel enthält ein Szenario, das zeigt, wie die Verankerung funktioniert. Während des Szenarios erstellen Sie einen Satz von Kundenaufträgen und geben diese an das Lager frei. Sie überschreiben dann den vorgeschlagenen Staging-Lagerort und überprüfen, ob alle verbleibenden Einlagerungsarbeiten an den neuen Standort geleitet werden.
 
 ## <a name="scenario-prerequisite-make-demo-data-available"></a>Szenariovoraussetzung: Demodaten zur Verfügung stellen
 
-Das Szenario in diesem Thema verweist auf Werte und Datensätze, die in den für Microsoft Dynamics 365 Supply Chain Management bereitgestellten Standarddemodaten enthalten sind. Wenn Sie die hier angegebenen Werte während der Übungen verwenden möchten, müssen Sie in einer Umgebung arbeiten, in der die Demodaten installiert sind, und die juristische Person auf *USMF* festlegen, bevor Sie beginnen.
+Das Szenario in diesem Artikel verweist auf Werte und Datensätze, die in den für Microsoft Dynamics 365 Supply Chain Management bereitgestellten Standarddemodaten enthalten sind. Wenn Sie die hier angegebenen Werte während der Übungen verwenden möchten, müssen Sie in einer Umgebung arbeiten, in der die Demodaten installiert sind, und die juristische Person auf *USMF* festlegen, bevor Sie beginnen.
 
 ## <a name="scenario-setup"></a>Szenarioeinrichtung
 

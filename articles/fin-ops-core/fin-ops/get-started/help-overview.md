@@ -1,6 +1,6 @@
 ---
 title: Hilfesystem (enthält Video)
-description: Dieser Artikel enthält eine Übersicht über das Hilfesystem für Apps für Finanzen und Betrieb.
+description: Dieser Artikel enthält eine Übersicht über das Hilfesystem für Finanz- und Betriebs-Apps.
 author: edupont04
 ms.date: 07/20/2021
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd34addc2ffa5e437691cb1e3e8b33246053ccc7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 924af44a6f0b1430859f0f6354ef55ff67a1b677
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070500"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898368"
 ---
 # <a name="help-system"></a>Hilfesystem
 
@@ -34,7 +34,7 @@ ms.locfileid: "8070500"
 Benutzer der folgenden Apps können auf kontextsensitive Hilfe und andere Inhalte zugreifen, die auf demselben Hilfesystem basieren:
 
 - Dynamics 365 Commerce
-- Dynamics 365 Finance
+- Dynamics 365 Finance
 - Dynamics 365 Human Resources
 - Dynamics 365 Supply Chain Management
 
@@ -70,7 +70,7 @@ Alternativ können Sie einen RSS-Feed per App abonnieren:
 
 ### <a name="leave-us-feedback"></a>Feedback senden
 
-Wenn Sie zu Fragen oder Feedback zu einem Thema haben, lassen Sie uns stattdessen einen Kommentar am unteren Seitenrand.
+Wenn Sie zu Fragen oder Feedback zu einem Artikel haben, lassen Sie uns stattdessen einen Kommentar am unteren Seitenrand.
 
 1. Wählen Sie **Feedback** aus, um zu den Kommentaren unten auf der Seite zu gelangen. Wählen Sie dann **Produktfeedback** oder **Anmelden, um Dokumentationsfeedback zu senden** aus.
 
@@ -83,7 +83,7 @@ Wenn Sie zu Fragen oder Feedback zu einem Thema haben, lassen Sie uns stattdesse
 
 ## <a name="contribute-to-the-documentation"></a>Tragen Sie zur Dokumentation bei
 
-Sie können zur Dokumentation beitragen und Änderungen daran vornehmen. Wählen Sie zu Beginn die Schaltfläche **Bearbeiten** (Stiftsymbol) in einem Thema aus. Das folgende Video zeigt, wie Sie zu unserer Dokumentation beitragen können.
+Sie können zur Dokumentation beitragen und Änderungen daran vornehmen. Wählen Sie zu Beginn die Schaltfläche **Bearbeiten** (Stiftsymbol) in einem Artikel aus. Das folgende Video zeigt, wie Sie zu unserer Dokumentation beitragen können.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
 
@@ -98,7 +98,7 @@ Weitere Informationen finden Sie in der [Leitfaden für Mitwirkende an der Micro
 
 Ein Aufgabenleitfaden ist eine kontrollierte, geführte, interaktive Erfahrung, die Sie durch die Schritte einer Aufgabe oder eines Geschäftsprozesses führt. Sie können einen Aufgabenleitfaden aus dem **Hilfe**-Bereich öffnen (wiedergeben). Wenn Sie zuerst einen Aufgabenleitfaden auswählen, werden im Bereich **Hilfe** schrittweise Anleitungen für die Aufgabe angezeigt. Lokalisierte Aufgabenleitfäden sind verfügbar.
 
-Microsoft hat Aufgabenleitfadenbibliotheken für Produktversionen bis zur Veröffentlichung der Dynamics 365 for Finance and Operations-Version von Dezember 2017 freigegeben. Im Abschnitt [Zugreifen auf Aufgabenleitfäden über den Hilfebereich](#accessing-task-guides-from-the-help-pane) dieses Themas wird beschrieben, wie Sie die richtigen Aufgabenleitfäden für Ihr Produkt finden.
+Microsoft hat Aufgabenleitfadenbibliotheken für Produktversionen bis zur Veröffentlichung der Dynamics 365 for Finance and Operations-Version von Dezember 2017 freigegeben. Im Abschnitt [Auf Aufgabenleitfäden über den Hilfebereich zugreifen](#accessing-task-guides-from-the-help-pane) dieses Artikels wird beschrieben, wie Sie die richtigen Aufgabenleitfäden für Ihr Produkt finden.
 
 ![Leseansicht des Aufgabenleitfadens.](./media/task-guide-ops.png)
 
@@ -121,7 +121,7 @@ Wählen Sie die Schaltfläche **Hilfe** (**?**) und dann **Hilfe** aus, um auf d
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Auf Hilfethemen über den Hilfebereich zugreifen
 
-Über den Bereich **Hilfe** können Sie auf Themen zugreifen, die für den Client gelten. Wenn Sie zuerst den Bereich **Hilfe** öffnen, zeigt die Registerkarte **Hilfe** die Themen an, die für die Seite gelten, auf der Sie sich aktuell befinden. Wenn keine Themen gefunden werden, können Sie Schlüsselwörter eingeben, um die Suche genauer zu definieren. Wenn Sie ein Thema im Bereich **Hilfe** auswählen, wird es auf einer neuen Registerkarte in Ihrem Browser geöffnet.
+Über den Bereich **Hilfe** können Sie auf Themen zugreifen, die für den Client gelten. Wenn Sie zuerst den Bereich **Hilfe** öffnen, zeigt die Registerkarte **Hilfe** die Themen an, die für die Seite gelten, auf der Sie sich aktuell befinden. Wenn keine Themen gefunden werden, können Sie Schlüsselwörter eingeben, um die Suche genauer zu definieren. Wenn Sie ein Artikel im Bereich **Hilfe** auswählen, wird er auf einer neuen Registerkarte in Ihrem Browser geöffnet.
 
 > [!IMPORTANT]
 > Dieser Abschnitt gilt nicht für Dynamics 365 Human Resources. Das Hilfesystem für Human Resources wird automatisch mit den Aufgabenleitfäden für das Produkt verbunden. Sie können außerdem keine benutzerdefinierten Aufgabenleitfäden für Human Resources erstellen.

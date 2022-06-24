@@ -1,6 +1,6 @@
 ---
 title: Anlagenlebenszyklusstatus
-description: In diesem Thema werden Anlagenlebenszyklusstatus und Lebenszyklusmodelle in Asset Management erläutert.
+description: In diesem Artikel werden Anlagenlebenszyklusstatus und Lebenszyklusmodelle in Anlagenverwaltung erläutert.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55139c6458e569b15518f0f11f1c12c3a26cae2f26c6a2046a7ebdc1277cb144
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 43b1ff9438437e6c1ff33bab9a7ba0361029cb6d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722462"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901059"
 ---
 # <a name="asset-lifecycle-states"></a>Anlagenlebenszyklusstatus
 
@@ -28,7 +28,7 @@ ms.locfileid: "6722462"
 
  
 
-In diesem Thema werden Anlagenlebenszyklusstatus und Lebenszyklusmodelle in Asset Management erläutert. Anlagenlebenszyklusstatus werden verwendet, um festzulegen, ob eine Anlage aktiv oder inaktiv ist. So können Sie zum Beispiel Anlagenlebenszyklusstatus wie **Erstellt**, **Aktiv** und **Ausgeschieden** einrichten.
+In diesem Artikel werden Anlagenlebenszyklusstatus und Lebenszyklusmodelle in Anlagenverwaltung erläutert. Anlagenlebenszyklusstatus werden verwendet, um festzulegen, ob eine Anlage aktiv oder inaktiv ist. So können Sie zum Beispiel Anlagenlebenszyklusstatus wie **Erstellt**, **Aktiv** und **Ausgeschieden** einrichten.
 
 > [!NOTE]
 > - Anforderungslebenszyklusstatus sind mit Anlagenlebenszyklusstatus verknüpft. Wenn Sie eine Anforderung in einen neuen Anforderungslebenszyklusstatus ändern, wird die Anlage, die der Anforderung zugeordnet ist, in einen neuen Anlagenlebenszyklusstatus geändert. Wenn beispielsweise der Lebenszyklusstatus einer Anforderung in **Zugang** geändert wird, wird der Lebenszyklusstaus der zugeordneten Anlage in den Lebenszyklusstatus geändert, der im Feld **Eingehender Lebenszyklusstatus** im Inforegister **Anlagenlebenszyklusstatus** der Seite **Anlagenlebenszyklusstatus-Modelle** ausgewählt ist. 

@@ -1,6 +1,6 @@
 ---
 title: Mail-Vorlagen für Transaktionsereignisse erstellen
-description: In diesem Thema wird beschrieben, wie Sie E-Mail-Vorlagen für Transaktionsereignisse in Microsoft Dynamics 365 Commerce erstellen, hochladen und konfigurieren.
+description: In diesem Artikel wird beschrieben, wie Sie E-Mail-Vorlagen für Transaktionsereignisse in Microsoft Dynamics 365 Commerce erstellen, hochladen und konfigurieren.
 author: bicyclingfool
 ms.date: 12/10/2021
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 08e247bac577dc0bb8a4635d61f0082793380da9
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 9a4d67d901608e210b4060a655ce39f0ea707a52
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722518"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910549"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Mail-Vorlagen für Transaktionsereignisse erstellen
 
 [!include [banner](includes/banner.md)]
 
 
-In diesem Thema wird beschrieben, wie Sie E-Mail-Vorlagen für Transaktionsereignisse in Microsoft Dynamics 365 Commerce erstellen, hochladen und konfigurieren.
+In diesem Artikel wird beschrieben, wie Sie E-Mail-Vorlagen für Transaktionsereignisse in Microsoft Dynamics 365 Commerce erstellen, hochladen und konfigurieren.
 
-Dynamics 365 Commerce bietet eine sofort einsatzbereite Lösung zum Versenden von E-Mails, die Kunden über Transaktionsereignisse informiert. Beispielsweise können E-Mails versendet werden, wenn eine Bestellung aufgegeben wurde, zur Abholung bereitsteht oder versandt wurde. In diesem Thema werden die Schritte zum Erstellen, Hochladen und Konfigurieren der E-Mail-Vorlagen beschrieben, die zum Senden von Transaktions-E-Mails verwendet werden.
+Dynamics 365 Commerce bietet eine sofort einsatzbereite Lösung zum Versenden von E-Mails, die Kunden über Transaktionsereignisse informiert. Beispielsweise können E-Mails versendet werden, wenn eine Bestellung aufgegeben wurde, zur Abholung bereitsteht oder versandt wurde. In diesem Artikel werden die Schritte zum Erstellen, Hochladen und Konfigurieren der E-Mail-Vorlagen beschrieben, die zum Senden von Transaktions-E-Mails verwendet werden.
 
 ## <a name="notification-types"></a>Benachrichtungstypen
 

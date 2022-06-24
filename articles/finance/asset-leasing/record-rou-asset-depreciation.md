@@ -1,6 +1,6 @@
 ---
 title: Abschreibung des Nutzungsrechts am Leasingobjekt erfassen (Vorschau)
-description: In diesem Thema wird erläutert, wie Sie den Journaleintrag für die Amortisierung erstellen, die für Mietverträge erforderlich ist, die in der Bilanz eines Unternehmens erfasst werden.
+description: In diesem Artikel wird erläutert, wie Sie den Journaleintrag für die Amortisierung erstellen, die für Mietverträge erforderlich ist, die in der Bilanz eines Unternehmens erfasst werden.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ebac6c8d008babec93061071414579eec3a73223
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 93e521cf409af4c01d625f27bdd7a7564e471bd9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727705"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903275"
 ---
 # <a name="record-right-of-use-asset-depreciation-preview"></a>Abschreibung des Nutzungsrechts am Leasingobjekt erfassen (Vorschau)
 
@@ -28,13 +28,13 @@ ms.locfileid: "8727705"
 [!include [preview banner](../includes/preview-banner.md)]
 
 
-Bei Mietverträgen, die in der Bilanz eines Unternehmens erfasst werden, wird das Nutzungsrecht am Leasingobjekt monatlich abgeschrieben. In diesem Thema wird erläutert, wie Sie den Journaleintrag für die Amortisierung erstellen. Die Amortisierung belastet das Ausgabensachkonto und schreibt das kumulierte Abschreibungssachkonto gut, basierend auf der Einrichtung Ihres Buchungsprofils und der Mietvertragsart. Diese Einträge können für jeden Mietvertrag oder für mehrere Mietverträge mithilfe der Batch-Erfassungsfunktion erstellt werden.
+Bei Mietverträgen, die in der Bilanz eines Unternehmens erfasst werden, wird das Nutzungsrecht am Leasingobjekt monatlich abgeschrieben. In diesem Artikel wird erläutert, wie Sie den Journaleintrag für die Amortisierung erstellen. Die Amortisierung belastet das Ausgabensachkonto und schreibt das kumulierte Abschreibungssachkonto gut, basierend auf der Einrichtung Ihres Buchungsprofils und der Mietvertragsart. Diese Einträge können für jeden Mietvertrag oder für mehrere Mietverträge mithilfe der Batch-Erfassungsfunktion erstellt werden.
 
 ## <a name="asset-depreciation-schedule"></a>Anlagenabschreibungszeitplan
 
 1. Auf der **Mietvertragsübersicht**-Seite wählen Sie einen Mietvertrag. Dann wählen Sie **Bücher \> Abschreibungsplan für Anlagen**, um die **Abschreibungsplan für Anlagen**-Seite zu öffnen.
 
-    Der Journaleintrag für den Abschreibungsaufwand für das Nutzungsrecht am Leasingobjekt basiert auf dem Betrag in der **Abschreibungen**-Spalte. Ein Beispiel für die Richtlinien zur Einhaltung von Rechnungslegungsstandards finden Sie im Abschnitt [Berechnung des Amortisierungsaufwands für das Nutzungsrecht am Leasingobjekt für Finanzierungsleasing](#calculation-of-rou-asset-amortization-expense-for-finance-leases) später in diesem Thema.
+    Der Journaleintrag für den Abschreibungsaufwand für das Nutzungsrecht am Leasingobjekt basiert auf dem Betrag in der **Abschreibungen**-Spalte. Ein Beispiel für die Richtlinien zur Einhaltung von Rechnungslegungsstandards finden Sie im Abschnitt [Berechnung des Amortisierungsaufwands für das Nutzungsrecht am Leasingobjekt für Finanzierungsleasing](#calculation-of-rou-asset-amortization-expense-for-finance-leases) später in diesem Artikel.
     
 2. Wählen Sie den Abschreibungszeitraum aus und wählen Sie dann **Erfassung erstellen**. Sie erhalten eine Nachricht, die besagt, dass die Erfassung erstellt wurde, in dem die Abschreibung erfasst wird.
 3. Wählen Sie **Erfassungen \> Anlagenleasingerfassungen**, um die **Anlagenleasingerfassung**-Seite zu öffnen, auf der Sie den erstellten Abschreibungskostenjournaleintrag anzeigen können.

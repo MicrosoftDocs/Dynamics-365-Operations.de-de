@@ -1,6 +1,6 @@
 ---
 title: Verlassene Warenkörbe erkennen und Benachrichtigungen an die Kunden senden
-description: In diesem Thema wird beschrieben, wie Sie die Microsoft Dynamics 365 Commerce Konnektor-Beispiel-App für verlassene Warenkörbe anpassen, um verlassene Warenkörbe zu erkennen und Erinnerungs-E-Mail-Benachrichtigungen an Kunden zu senden.
+description: In diesem Artikel wird beschrieben, wie Sie die Microsoft Dynamics 365 Commerce Konnektor-Beispiel-App für verlassene Warenkörbe anpassen, um verlassene Warenkörbe zu erkennen und Erinnerungs-E-Mail-Benachrichtigungen an Kunden zu senden.
 author: bicyclingfool
 ms.date: 02/25/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 1db4e988653aa55db2b18fb201edeafc4d16a1bc
-ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
+ms.openlocfilehash: 707640ca211e997533d0f5a0b4e6d52cb5be9db4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2022
-ms.locfileid: "8489029"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899209"
 ---
 # <a name="detect-abandoned-carts-and-send-notifications-to-customers"></a>Verlassene Warenkörbe erkennen und Benachrichtigungen an die Kunden senden
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie die Microsoft Dynamics 365 Commerce Konnektor-Beispiel-App für verlassene Warenkörbe anpassen, um verlassene Warenkörbe zu erkennen und Erinnerungs-E-Mail-Benachrichtigungen an Kunden zu senden.
+In diesem Artikel wird beschrieben, wie Sie die Microsoft Dynamics 365 Commerce Konnektor-Beispiel-App für verlassene Warenkörbe anpassen, um verlassene Warenkörbe zu erkennen und Erinnerungs-E-Mail-Benachrichtigungen an Kunden zu senden.
 
 Die Möglichkeit, Umsätze zurückzugewinnen und Kunden durch Benachrichtigungen über abgebrochene Warenkörbe zu binden, ist eine wichtige Funktionalität, die Dynamics 365 Commerce unterstützt. Durch die Anpassung der Beispiel-App für den Commerce Konnektor für aufgegebene Warenkörbe können Einzelhändler auf Warenkörbe auf dem Retail Server zugreifen, die während eines vom Einzelhändler definierten Zeitfensters nicht geändert wurden. Diese Warenkörbe können dann abgerufen, mit Produkt- und Kundendaten angereichert und an einen Drittanbieter für E-Mail-Marketing weitergeleitet werden, der E-Mail-Benachrichtigungen generieren und an die Kunden senden kann.
 

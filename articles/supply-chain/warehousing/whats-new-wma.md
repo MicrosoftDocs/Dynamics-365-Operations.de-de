@@ -1,6 +1,6 @@
 ---
-title: Was ist neu oder geändert in der Warehouse Management Mobile-App
-description: Dieses Thema listet die neuen und geänderten Funktionen für jede freigegebene Version der Warehouse Management Mobile-App für Microsoft Dynamics 365 Supply Chain Management auf.
+title: Neuerungen oder Änderungen in der mobilen Warehouse Management-App
+description: Dieser Artikel listet die neuen und geänderten Funktionen für jede freigegebene Version der Warehouse Management Mobile-App für Microsoft Dynamics 365 Supply Chain Management auf.
 author: Mirzaab
 ms.date: 04/25/2022
 ms.topic: article
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: c79b18d24c8b9cb90a570496882fdfe91dc6ba51
-ms.sourcegitcommit: a4dc7d170f1504631127c3e92af0c6b03468d375
+ms.openlocfilehash: 34ac023bc5ee44987f6a36a1636cd343576e5d90
+ms.sourcegitcommit: b666289f5113d0a3fa2220fe337d5aacf07cbd92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/02/2022
-ms.locfileid: "8661824"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945722"
 ---
-# <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Was ist neu oder geändert in der Warehouse Management Mobile-App
+# <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Neuerungen oder Änderungen in der mobilen Warehouse Management-App
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema listet neue Funktionen, Korrekturen, Verbesserungen und bekannte Probleme für jede freigegebene Version der Warehouse Management Mobile-App für Microsoft Dynamics 365 Supply Chain Management auf.
+Dieser Artikel listet neue Funktionen, Korrekturen, Verbesserungen und bekannte Probleme für jede freigegebene Version der Warehouse Management Mobile-App für Microsoft Dynamics 365 Supply Chain Management auf.
+
+## <a name="version-20240"></a>Version 2.0.24.0
+
+Diese Version führt die folgenden neuen Funktionen, Korrekturen und Verbesserungen ein:
+
+- Verbesserte Scannerseiten zum Aktivieren der Scanoption der Seiten **Details**.
+- Verbesserte Gesten, wie z. B. Touch-/Tap-Screen.
+- Verbesserte Leistungsprobleme für Android.
+- Die Platzierung mehrerer Kopfzeilen wurde korrigiert, damit mehr Karten auf der Seite **Anfrage** angezeigt werden können.
+- Verbessertes Scrollen, sodass weniger Abstand zum Scrollen der Paginierung aktiviert wird.
+- Langes Drücken hinzugefügt, um zusätzlichen Text auf der Seite **Anfrage** anzuzeigen.
+- Feste fehlende Geräte-ID-Information für Android.
+- Erhöhte Stabilität.
+- Das Login-Layout wurde optimiert.
+- Wischgeste nach rechts hinzugefügt, um Dialog-Popup-Seiten auf dem Nummernblock zu schließen, **Details** Seite und Eingabeseiten.
 
 ## <a name="version-20220"></a>Version 2.0.22.0
 

@@ -1,6 +1,6 @@
 ---
 title: Shops und Teams zuordnen, wenn in Microsoft Teams bereits Teams vorhanden sind
-description: In diesem Thema wird beschrieben, wie Sie Shops und dazugehörige Teams in der Dynamics 365 Commerce-Zentralverwaltung zuordnen, wenn Ihre Organisation bereits vor der Commerce-Integration Teams in Microsoft Teams erstellt hat.
+description: In diesem Artikel wird beschrieben, wie Sie Shops und dazugehörige Teams in der Dynamics 365 Commerce-Zentralverwaltung zuordnen, wenn Ihre Organisation bereits vor der Commerce-Integration Teams in Microsoft Teams erstellt hat.
 author: gvrmohanreddy
 ms.date: 03/31/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: aafeaa1da3c3dab5d76a6bfcee06db34a6afba91
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4cb18affd0df59dc986602a684a3fe3d418644fd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691104"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902736"
 ---
 # <a name="map-stores-and-teams-if-there-are-pre-existing-teams-in-microsoft-teams"></a>Shops und Teams zuordnen, wenn in Microsoft Teams bereits Teams vorhanden sind
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Shops und dazugehörige Teams in der Dynamics 365 Commerce-Zentralverwaltung zuordnen, wenn Ihre Organisation bereits vor der Commerce-Integration Teams in Microsoft Teams erstellt hat.
+In diesem Artikel wird beschrieben, wie Sie Shops und dazugehörige Teams in der Dynamics 365 Commerce-Zentralverwaltung zuordnen, wenn Ihre Organisation bereits vor der Commerce-Integration Teams in Microsoft Teams erstellt hat.
 
 Ihre Organisation hat vielleicht schon vor der Integration von Dynamics 365 Commerce und Microsoft Teams Teams für einige oder alle Ihre Shops erstellt. Wenn dies der Fall ist, müssen Sie für die Aufgabensynchronisierung zwischen Commerce POS und Microsoft Teams die Zuordnung der Shops und des dazugehörigen Teams in der Commerce-Zentralverwaltung bereitstellen.
 

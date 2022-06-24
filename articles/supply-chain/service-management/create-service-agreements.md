@@ -1,6 +1,6 @@
 ---
 title: Erstellen von Servicevereinbarungen
-description: In diesem Thema wird beschrieben, wie mithilfe der Funktionen in den Modulen Servicemanagement und Projektmanagement und Buchhaltung Serviceverträge erstellt werden.
+description: In diesem Artikel wird beschrieben, wie mithilfe der Funktionen in den Modulen Servicemanagement und Projektmanagement und Buchhaltung Serviceverträge erstellt werden.
 author: sorenva
 ms.date: 02/19/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a8a139d1a11cca036ace2540cba59bf2cace0db
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d18d279cd437e98cad6495def953978cb78e723e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677253"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901762"
 ---
 # <a name="create-service-agreements"></a>Erstellen von Servicevereinbarungen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie mithilfe der Funktionen in den Modulen Servicemanagement und Projektmanagement und Buchhaltung Serviceverträge erstellt werden.
+In diesem Artikel wird beschrieben, wie mithilfe der Funktionen in den Modulen Servicemanagement und Projektmanagement und Buchhaltung Serviceverträge erstellt werden.
 
 ## <a name="create-a-service-agreement-from-service-management"></a>Erstellen eines Servicevertrags aus der Serviceverwaltung
 
@@ -51,10 +51,10 @@ In diesem Thema wird beschrieben, wie mithilfe der Funktionen in den Modulen Ser
 2. Wählen Sie **Alle Projekte**.
 3. Wählen Sie in der Liste ein Projekt aus.
 4. Wählen Sie im **Aktivitätsbereich** die Option **Verwalten**. Wählen Sie in der Gruppe **Neue** Aktion **Service** und wählen Sie **Servicesvereinbarung**.
-5. Führen Sie die Schritte im Abschnitt **Erstellen eines Servicevertrags** aus der Serviceverwaltung" (siehe vorheriger Kommentar in diesem Thema) aus.
+5. Führen Sie die Schritte im Abschnitt **Erstellen eines Servicevertrags** aus der Serviceverwaltung" (siehe vorheriger Kommentar in diesem Artikel) aus.
 
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-articles"></a>Zugehörige Artikel
 
 [Ausarbeiten und Festsetzen von Serviceverträge – Übersicht](service-agreements.md)
 

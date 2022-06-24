@@ -1,6 +1,6 @@
 ---
-title: Kennzeicheneingang über die mobile Warehouse Management Mobile App
-description: In diesem Thema wird erläutert, wie Sie die Warehouse Management Mobile App so einrichten, dass die Verwendung eines Kennzeichenempfangsprozesses zum Empfangen von Inventar unterstützt wird.
+title: Kennzeicheneingang über die mobile Warehouse Management-App
+description: In diesem Artikel wird erläutert, wie Sie die Warehouse Management Mobile App so einrichten, dass die Verwendung eines Kennzeichenempfangsprozesses zum Empfangen von Inventar unterstützt wird.
 author: perlynne
 ms.date: 04/29/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 6663188334c70035906f924c7850a0dc5002f306
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: fe083f16bd47b3f7bdfd366ae4b0fe4a02f49185
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103062"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906999"
 ---
-# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Kennzeicheneingang über die mobile Warehouse Management Mobile App
+# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Kennzeicheneingang über die mobile Warehouse Management-App
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie die Warehouse Management Mobile App einrichten, so dass sie die Verwendung eines Kennzeichenempfangsprozesses zum Empfangen von Bestand unterstützt.
+In diesem Artikel wird erläutert, wie Sie die Warehouse Management Mobile App einrichten, so dass sie die Verwendung eines Kennzeichenempfangsprozesses zum Empfangen von Bestand unterstützt.
 
 Mit dieser Funktion können Sie schnell den Eingang des eingehenden Bestands aufzeichnen, der sich auf eine Vorabmitteilung (ASN) bezieht. Das System erstellt automatisch einen Lieferavis, wenn Lagerverwaltungsprozesse zum Versenden eines Transportauftrags verwendet werden. Für den Bestellvorgang kann ein ASNs manuell erfasst oder mithilfe eines eingehenden ASN-Datenentitätsprozesses automatisch importiert werden.
 

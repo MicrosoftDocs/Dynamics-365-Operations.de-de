@@ -1,6 +1,6 @@
 ---
-title: Häufig gestellte Fragen zu Bewertungen und Prüfungen
-description: Dieses Thema enthält Antworten auf häufig gestellte Fragen zu der Microsoft Dynamics 365 Commerce-Bewertungs- und Prüfungslösung
+title: Häufig gestellte Fragen zu Bewertungen und Rezensionen
+description: Dieser Artikel enthält Antworten auf häufig gestellte Fragen zu der Microsoft Dynamics 365 Commerce-Bewertungs- und Prüfungslösung
 author: gvrmohanreddy
 ms.date: 09/02/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f8d79697aaf17e2860d2c47e7d1bf6b4352f0089
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3aef1135aa03d221e403fe1b5f7dce08bc9885d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691054"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909527"
 ---
-# <a name="ratings-and-reviews-faq"></a>Häufig gestellte Fragen zu Bewertungen und Prüfungen
+# <a name="ratings-and-reviews-faq"></a>Häufig gestellte Fragen zu Bewertungen und Rezensionen
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält Antworten auf häufig gestellte Fragen zu der Microsoft Dynamics 365 Commerce-Bewertungs- und Prüfungslösung
+Dieser Artikel enthält Antworten auf häufig gestellte Fragen zu der Microsoft Dynamics 365 Commerce-Bewertungs- und Prüfungslösung
 
 ### <a name="how-do-i-hide-the-ratings-refiner-that-appears-on-search-results-and-category-pages-if-my-e-commerce-site-doesnt-use-the-ratings-and-reviews-solution"></a>Wie blende ich die Bewertungsverfeinerung aus, die auf Suchergebnis- und Kategorieseiten angezeigt wird, wenn meine E-Commerce-Seite nicht die Lösung für Bewertungen und Prüfungen verwendet?
 

@@ -1,6 +1,6 @@
 ---
-title: Automatisierung des Inkasso-Prozesses
-description: In diesem Thema wird das Einrichten von Inkassoprozessstrategien beschrieben, mit denen Debitorenrechnungen automatisch identifiziert werden, für die eine E-Mail-Erinnerung, eine Inkassoaktivität oder ein Mahnschreiben an den Debitoren gesendet werden müssen.
+title: Automatisierung des Inkassoverfahrens
+description: In diesem Artikel wird das Einrichten von Inkassoprozessstrategien beschrieben, mit denen Debitorenrechnungen automatisch identifiziert werden, für die eine E-Mail-Erinnerung, eine Inkassoaktivität oder ein Mahnschreiben an den Debitoren gesendet werden müssen.
 author: JodiChristiansen
 ms.date: 03/12/2021
 ms.topic: article
@@ -8,23 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 59db852024faf457db7ac145b67619b31555aaf2
-ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
+ms.openlocfilehash: 9ec749db197b4d04ee2e99ac7a16f4f2120c6707
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7486868"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946177"
 ---
-# <a name="collections-process-automation"></a>Automatisierung des Inkassoprozesses
+# <a name="collections-process-automation"></a>Automatisierung des Inkassoverfahrens
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird das Einrichten von Inkassoprozessstrategien beschrieben, mit denen Debitorenrechnungen automatisch identifiziert werden, für die eine E-Mail-Erinnerung, eine Inkassoaktivität (z. B. ein Telefonanruf) oder ein Mahnschreiben an den Debitoren gesendet werden müssen. 
+In diesem Artikel wird das Einrichten von Inkassoprozessstrategien beschrieben, mit denen Debitorenrechnungen automatisch identifiziert werden, für die eine E-Mail-Erinnerung, eine Inkassoaktivität (z. B. ein Telefonanruf) oder ein Mahnschreiben an den Debitoren gesendet werden müssen. 
 
 Unternehmen verbringen häufig viel Zeit damit, alte Kontostandberichte, Debitorenkonten und offene Rechnungen zu recherchieren, um festzustellen, welche Debitoren wegen einer offenen Rechnung oder eines offenen Kontostands kontaktiert werden sollten. Diese Recherche nimmt Zeit in Anspruch, die ein Inkassobüro für die Kommunikation mit Debitoren benötigt, um überfällige Salden einzuziehen oder Rechnungsstreitigkeiten beizulegen. Mit der Automatisierung von Inkassoprozessen können Sie einen strategiebasierten Ansatz für Ihren Inkassoprozess festlegen. Auf diese Weise können Sie Inkassoaktivitäten konsistent anwenden, indem Sie benutzerdefinierte E-Mail-Erinnerungen oder einen programmierten Prozess zum Senden von Mahnschreiben bereitstellen. 
 

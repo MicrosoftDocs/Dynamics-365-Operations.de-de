@@ -1,6 +1,6 @@
 ---
 title: Kanäle E-Commerce-Websites zuordnen
-description: In diesem Thema werden einige der häufigeren Kanalzuordnungsszenarien in Microsoft Dynamics 365 Commerce beschrieben, die für die meisten anderen Geschäftsanforderungen extrapoliert werden können.
+description: In diesem Artikel werden einige der häufigeren Kanalzuordnungsszenarien in Microsoft Dynamics 365 Commerce beschrieben, die für die meisten anderen Geschäftsanforderungen extrapoliert werden können.
 author: samjarawan
 ms.date: 05/11/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8ce272d63b4a37f99661333a02434708205ea19a
-ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
+ms.openlocfilehash: 94c43df26e8d6e55a5b6d459b65066d5873e1063
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743587"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902762"
 ---
 # <a name="map-channels-to-e-commerce-sites"></a>Kanäle E-Commerce-Websites zuordnen
 
-In diesem Thema werden einige der häufigeren Kanalzuordnungsszenarien in Microsoft Dynamics 365 Commerce beschrieben, die für die meisten anderen Geschäftsanforderungen extrapoliert werden können.
+In diesem Artikel werden einige der häufigeren Kanalzuordnungsszenarien in Microsoft Dynamics 365 Commerce beschrieben, die für die meisten anderen Geschäftsanforderungen extrapoliert werden können.
 
 Dynamics 365 Commerce unterstützt viele Geschäftsszenarien für das Mapping von [Online-Kanälen](#channels), die einen konfigurierten Satz von Produkten, Preisen und Rabatten für [E-Commerce-Website](#e-commerce-sites)-Erlebnisse für Kunden haben.
 
-Dieses Thema deckt die folgenden Szenarien ab:
+Dieser Artikel deckt die folgenden Szenarien ab:
 
 - **Ein einsprachiger Kanal, der eine einzige E-Commerce-Website-Erfahrung bietet.** Dieses Szenario könnte beispielsweise eine Website einer einzelnen Marke umfassen, die für den US-amerikanischen Markt konfiguriert ist.
 - **Ein mehrsprachiger Kanal, der eine einzige lokalisierte Website-Erfahrung bietet.** Dieses Szenario könnte beispielsweise eine Website einer einzelnen Marke umfassen, die mit französischer und englischer Sprachunterstützung für Kanada konfiguriert ist. In diesem Szenario haben Benutzer, die unterschiedliche Sprachen auswählen, dieselbe Website-Erfahrung, die jedoch in die ausgewählte Sprache jedes Benutzers lokalisiert ist.
@@ -63,7 +63,7 @@ Das folgende Beispiel zeigt eine Kanalkonfiguration in Commerce headquarters. In
 
 ![Juristische Person, Währung und Sprachwerte für den Adventure Works-Onlineshop, die in Commerce headquarters hervorgehoben sind.](media/channel-mapping-3.png)
 
-Der einzelne Onlinekanal kann im Website-Generator einer einzelnen E-Commerce-Website zugeordnet werden. Informationen zum Erstellen einer neuen Website und zum Zuordnen zu einem Kanal finden Sie im Abschnitt [Einen Kanal einer Website im Website-Generator zuordnen](#map-a-channel-to-a-site-in-site-builder) dieses Themas.
+Der einzelne Onlinekanal kann im Website-Generator einer einzelnen E-Commerce-Website zugeordnet werden. Informationen zum Erstellen einer neuen Website und zum Zuordnen zu einem Kanal finden Sie im Abschnitt [Einen Kanal einer Website im Website-Generator zuordnen](#map-a-channel-to-a-site-in-site-builder) dieses Artikels.
 
 ### <a name="multi-language-channel-that-has-a-single-localized-site-experience"></a>Ein mehrsprachiger Kanal, der eine einzige lokalisierte Website-Erfahrung bietet
 
@@ -73,7 +73,7 @@ Die Einschränkung dieses Szenarios besteht darin, dass ein einzelner Kanal nur 
 
 Jede Sprache in einem Kanal kann mit einem eigenen Domänennamen konfiguriert werden. Zum Beispiel kann die Domäne `www.adventure-works.ca` für die englische Version in Kanada konfiguriert werden, und die Domäne `www.adventure-works-fr.ca` kann für die französische Version in Kanada konfiguriert werden. Alternativ können verschiedene Sprachen in einem Kanal in einer einzigen Domäne konfiguriert werden, und dann kann für jede Sprache ein anderer Pfad verwendet werden. Zum Beispiel kann die Domäne `www.adventure-works.ca` für die englische Version in Kanada konfiguriert werden, und dann kann der Pfad `www.adventure-works.ca/fr` für die französische Version in Kanada konfiguriert werden. [Geo-Erkennung](geo-detection-redirection.md) kann auch aktiviert werden, um einen Benutzer basierend auf dem Standort des Benutzers automatisch auf die richtige Website umzuleiten.
 
-Informationen dazu, wie Sie es Kunden ermöglichen, manuell zwischen Sprachen zu wechseln, finden Sie im Abschnitt [Websiteauswahlmodul hinzufügen und konfigurieren](#add-and-configure-the-site-picker-module) dieses Themas. Informationen zum Anpassen lokalisierter Seiten und Fragmente finden Sie im Abschnitt [Website-Inhalte mit mehreren Kanälen und Sprachen verwalten](#manage-site-content-that-has-multiple-channels-and-languages).
+Informationen dazu, wie Sie es Kunden ermöglichen, manuell zwischen Sprachen zu wechseln, finden Sie im Abschnitt [Websiteauswahlmodul hinzufügen und konfigurieren](#add-and-configure-the-site-picker-module) dieses Artikels. Informationen zum Anpassen lokalisierter Seiten und Fragmente finden Sie im Abschnitt [Website-Inhalte mit mehreren Kanälen und Sprachen verwalten](#manage-site-content-that-has-multiple-channels-and-languages).
 
 ### <a name="multi-language-channel-that-has-a-different-site-experience-per-language"></a>Ein mehrsprachiger Kanal, der eine andere Website-Erfahrung pro Sprache bietet
 
@@ -87,7 +87,7 @@ Eine Marken-Website erfordert möglicherweise mehrere Online-Kanäle pro Region,
 
 In diesem Szenario kann jeder Markt mit eigenen Domänennamen konfiguriert werden. Zum Beispiel kann die Domäne `www.adventure-works.com` für den US-amerikanischen Markt konfiguriert werden, und die Domäne `www.adventure-works.de` kann für den deutschen Markt konfiguriert werden. Alternativ kann jeder Markt so konfiguriert werden, dass er einen anderen Pfad verwendet. Zum Beispiel kann die Domäne `www.adventure-works.com` für den US-amerikanischen Markt konfiguriert werden, und dann kann der Pfad `www.adventure-works.com/de` für den deutschen Markt konfiguriert werden. [Geo-Erkennung](geo-detection-redirection.md) kann auch aktiviert werden, um Benutzer basierend auf ihrer Region automatisch auf die richtige Website umzuleiten.
 
-Möglicherweise möchten Sie auch, dass Ihre Website eine Dropdown-Liste bereitstellt, mit der Benutzer manuell zu einem bestimmten Markt wechseln können. Weitere Informationen finden Sie im Abschnitt [Websiteauswahlmodul hinzufügen und konfigurieren](#add-and-configure-the-site-picker-module) dieses Themas.
+Möglicherweise möchten Sie auch, dass Ihre Website eine Dropdown-Liste bereitstellt, mit der Benutzer manuell zu einem bestimmten Markt wechseln können. Weitere Informationen finden Sie im Abschnitt [Websiteauswahlmodul hinzufügen und konfigurieren](#add-and-configure-the-site-picker-module) dieses Artikels.
 
 Informationen zum Konfigurieren mehrerer Kanäle auf einer einzelnen Website finden Sie im Abschnitt [Mehrere Kanäle auf einer E-Commerce-Website konfigurieren](#configure-multiple-channels-on-an-e-commerce-site).
 
@@ -180,7 +180,7 @@ Anstatt jede Seite und jedes Fragment manuell zu erstellen, können Sie jede Sei
 
 Eine Website mit mehreren Kanälen und/oder Sprachen speichert eine eindeutige Variante jeder Seite und jedes Fragments für jede Kombination aus einem Kanal und einer Sprache. Dieses Verhalten ermöglicht es den Seitenvarianten, lokalisierte Daten zu enthalten, gibt Ihnen aber auch die Flexibilität, das Erscheinungsbild einer Seite für eine bestimmte Variante zu ändern.
 
-Informationen zum Arbeiten mit Seitenvarianten finden Sie im Abschnitt [Seitenvarianten für jede Sprache implementieren](#implement-page-variants-for-each-language) dieses Themas.
+Informationen zum Arbeiten mit Seitenvarianten finden Sie im Abschnitt [Seitenvarianten für jede Sprache implementieren](#implement-page-variants-for-each-language) dieses Artikels.
 
 ## <a name="configure-multiple-channels-on-an-e-commerce-site"></a>Mehrere Kanäle auf einer E-Commerce-Website konfigurieren
 

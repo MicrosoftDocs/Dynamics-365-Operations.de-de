@@ -1,6 +1,6 @@
 ---
 title: Vorteilsplan erstellen
-description: Dieses Thema zeigt, wie Sie Leistungspläne in Dynamics 365 Human Resources festlegen.
+description: In diesem Artikel erfahren Sie, wie Sie Vorteilspläne in Dynamics 365 Human Resources einrichten.
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 90d4399cce227cfec09a12e02f2e56618a656473
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 7815657c4bf3f79d1a04333027cc51b496fe1820
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694563"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909816"
 ---
 # <a name="create-a-benefit-plan"></a>Vergütungsplan erstellen
 
@@ -28,7 +28,7 @@ ms.locfileid: "8694563"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dieses Thema zeigt, wie Sie Leistungspläne in Dynamics 365 Human Resources festlegen.
+In diesem Artikel erfahren Sie, wie Sie Vorteilspläne in Dynamics 365 Human Resources einrichten.
 
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Pläne** die Option **Vorteilspläne**.
 

@@ -1,6 +1,6 @@
 ---
 title: Produktionsauftragsstatus zurücksetzen
-description: In diesem Thema wird beschrieben, wie sie den Produktionsauftragsstatus zurücksetzen.
+description: In diesem Artikel wird beschrieben, wie sie den Produktionsauftragsstatus zurücksetzen.
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0dd17bc48bfb6c78e1baca4faf78d6bc5b3ce426c5f0530174eccd95536a5859
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1d50cbcb4031d5c9f2c814883afd1fb38777d2ba
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760417"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903955"
 ---
 # <a name="reverse-the-production-order-status"></a>Produktionsauftragsstatus zurücksetzen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie sie den Produktionsauftragsstatus zurücksetzen. 
+In diesem Artikel wird beschrieben, wie sie den Produktionsauftragsstatus zurücksetzen. 
 
 Wenn Sie den Status eines Produktionsauftrags zurücksetzen, werden der Auftrag und alle mit den Arbeitsplänen zusammenhängenden Arbeitsgänge auf einen vorherigen Schritt im Produktionslebenszyklus zurückgesetzt. Beispielsweise hat ein Produktionsauftrag den Status **Eingeplant**, und Sie ändern den Status wieder in **Erstellt**. In diesem Fall muss das System den Status zuerst auf  **Vorkalkuliert** ändern. Dies ist der Status, der **Eingeplant** unmittelbar vorangeht. Dadurch kann der Status in den gewünschten Status **Erstellt** geändert werden. **Hinweis:** Sie können auch einen Auftrag, der bereits den Status **Fertigmeldung** erreicht hat, auf einen einen früheren Status zurücksetzen. Sie müssen die Vorkalkulation und die Grob- oder Feinterminierung oder beides jedoch erneut ausführen, um die Informationen zum Auftrag zu aktualisieren. Dieser Schritt ist erforderlich, da Reservierungen des verbleibenden Verbrauchs von Artikeln und betrieblichen Ressourcen ebenfalls zurückgesetzt werden müssen. Im weiteren Verlauf des Artikels wird erklärt, was passiert, wenn Sie den Status eines Produktionsauftrags auf folgende Weise zurücksetzen:
 

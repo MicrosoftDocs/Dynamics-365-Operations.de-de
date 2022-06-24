@@ -1,6 +1,6 @@
 ---
-title: Definieren von Kreditorenzahlungsbedingungen
-description: In diesem Thema wird erläutert, wie Zahlungsbedingungen für Kreditorenrechnungen eingerichtet werden.
+title: Kreditorenzahlungsbedingungen definieren
+description: In diesem Artikel wird erläutert, wie Zahlungsbedingungen für Kreditorenrechnungen eingerichtet werden.
 author: abruer
 ms.date: 02/11/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2199c12e92d631d3eb058637c48b53335d779f2d
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: a676856ed43bf1b78684eac0682e0fdef9c84083
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109806"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906470"
 ---
-# <a name="define-vendor-payment-terms"></a>Definieren von Kreditorenzahlungsbedingungen
+# <a name="define-vendor-payment-terms"></a>Kreditorenzahlungsbedingungen definieren
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Zahlungsbedingungen für Kreditorenrechnungen eingerichtet werden. Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
+In diesem Artikel wird erläutert, wie Zahlungsbedingungen für Kreditorenrechnungen eingerichtet werden. Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
 
 1. Wechseln Sie zu **Navigationsbereich > Module > Kreditoren > Zahlungseinstellungen > Zahlungsbedingungen**.
 2. Wählen Sie **Neu** aus. Die Seite **Zahlungsbedingungen** wird verwendet, um zu definieren, wie das Fälligkeitsdatum berechnet wird. Sie wird nicht verwendet, um zu definieren, wie das Skontodatum berechnet wird.  

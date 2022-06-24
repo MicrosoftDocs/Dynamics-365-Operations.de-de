@@ -1,6 +1,6 @@
 ---
 title: Typen kritischer Werte für Anlagen
-description: In diesem Thema wird erläutert, was Typen kritischer Werte für Anlagen in Asset Management sind.
+description: In diesem Artikel wird erläutert, was Typen kritischer Werte für Anlagen in Anlagenverwaltung sind.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9edf55c22375a66fda04ae7ff76d7a0a191140e5ffb3a377b9ac1a7ba604a8d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cfde9a9bc681c0d758491fc5c361b5b046e20d9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776919"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899497"
 ---
 # <a name="asset-criticality-types"></a>Typen kritischer Werte für Anlagen
 
@@ -28,7 +28,7 @@ ms.locfileid: "6776919"
 
  
 
-In diesem Thema wird erläutert, was Typen kritischer Werte für Anlagen in Asset Management sind. Kritische Anlagenzustände beziehen sich auf Anlagen und werden an Arbeitsaufträge übertragen. Sie können in einem Arbeitsauftrag nicht geändert werden. Kritische Anlagenzustände werden verwendet, um den kritischen Zustand von Arbeitsaufträgen während der Planung zu berechnen. Sie werden also dazu verwendet, um das Ausmaß zu berechnen, in dem ein Wartungseinzelvorgang für eine Anlage sich auf die Produktionsplan und die Produktivität in Ihrem Unternehmen auswirkt. Weitere Informationen zu den Einstellungen, die sich auf die Berechnung von Bewertungsnoten für Arbeitsauftragsplanung beziehen, finden Sie unter [Anlagenverwaltungsparameter](../setup-for-objects/enterprise-asset-management-parameters.md).
+In diesem Artikel wird erläutert, was Typen kritischer Werte für Anlagen in Anlagenverwaltung sind. Kritische Anlagenzustände beziehen sich auf Anlagen und werden an Arbeitsaufträge übertragen. Sie können in einem Arbeitsauftrag nicht geändert werden. Kritische Anlagenzustände werden verwendet, um den kritischen Zustand von Arbeitsaufträgen während der Planung zu berechnen. Sie werden also dazu verwendet, um das Ausmaß zu berechnen, in dem ein Wartungseinzelvorgang für eine Anlage sich auf die Produktionsplan und die Produktivität in Ihrem Unternehmen auswirkt. Weitere Informationen zu den Einstellungen, die sich auf die Berechnung von Bewertungsnoten für Arbeitsauftragsplanung beziehen, finden Sie unter [Anlagenverwaltungsparameter](../setup-for-objects/enterprise-asset-management-parameters.md).
 
 Um kritische Anlagenzustände einzurichten, erstellen Sie zunächst die Typen der kritischen Anlagenzustände, die für die Anlageneinrichtung verwendet werden sollen. Anschließend richten Sie die kritischen Anlagenzustände ein.
 

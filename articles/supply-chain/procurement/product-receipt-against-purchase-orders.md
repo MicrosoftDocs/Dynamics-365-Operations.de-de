@@ -1,6 +1,6 @@
 ---
-title: Produkteingang für Bestellungen
-description: Dieses Thema beschreibt die verschiedenen Optionen für die Registrierung von zugehenden Produkten.
+title: Produktzugang für Bestellungen
+description: Dieser Artikel beschreibt die verschiedenen Optionen für die Registrierung von zugehenden Produkten.
 author: GalynaFedorova
 ms.date: 11/15/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ea22357b4d966f50ef2021ba7534ae633859455
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 53925426b5df6000617b0d8cee757a551fb89c95
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674392"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904042"
 ---
-# <a name="product-receipt-against-purchase-orders"></a>Produkteingang für Bestellungen
+# <a name="product-receipt-against-purchase-orders"></a>Produktzugang für Bestellungen
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema beschreibt die verschiedenen Optionen für die Registrierung von zugehenden Produkten.
+Dieser Artikel beschreibt die verschiedenen Optionen für die Registrierung von zugehenden Produkten.
 
 Der Produktzugang ist der Vorgang des Festhaltens des Zugangs von bestellten Produkten. So können die Bestellpositionen für die Fakturierung verarbeitet werden. In einigen Fällen durchlaufen Produkte eine Vorregistrierung, bei der weitere Informationen vom Lieferanten vor dem Zugang der Produkte festgehalten werden. Wenn Produkte zugehen werden sie zuerst als **Registriert** markiert. Produkte können dann zusätzliche Prozesse durchlaufen – beispielsweise die Qualitätssicherung – bevor Sie letztendlich als **Eingegangen** markiert werden.
 

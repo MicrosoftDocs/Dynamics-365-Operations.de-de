@@ -1,6 +1,6 @@
 ---
 title: Ausgangssortierung
-description: Dieser Artikel enthält Informationen zur Ausgangssortierung. Diese Funktion erleichtert die Handhabung kleiner Container und hilft Lagerarbeitern, die Palettenkapazität im LKW besser zu planen und zu organisieren.
+description: Dieser Artikel enthält Informationen über ausgehende Sortierung. Diese Funktion erleichtert die Handhabung kleiner Container und hilft Lagerarbeitern, die Palettenkapazität im LKW besser zu planen und zu organisieren.
 author: Mirzaab
 ms.date: 07/15/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 004224090d8244028b6df7f32e1853ad60371cea
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 95afa46140de863ecdf61b0ef54e6d9e9ece91d7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575194"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897312"
 ---
 # <a name="outbound-sorting"></a>Ausgangssortierung
 

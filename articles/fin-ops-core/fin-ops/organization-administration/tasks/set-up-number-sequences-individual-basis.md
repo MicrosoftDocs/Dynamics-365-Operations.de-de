@@ -1,6 +1,6 @@
 ---
 title: Nummernkreise einzeln einrichten
-description: In diesem Thema wird erläutert, wie Sie Nummernkreise einzeln einrichten.
+description: In diesem Artikel wird erläutert, wie Sie Nummernkreise einzeln einrichten.
 author: SunilGarg
 ms.date: 08/16/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b95a639c593c0f126a9aa1dd50434838d09ef746
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 7be72d348957c5c6494958276b2baa9c67d63c58
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777912"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904987"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Nummernkreise einzeln einrichten
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie Nummernkreise einzeln einrichten. Nummernkreise dienen zum Generieren von lesbaren, eindeutigen Kennungen für Masterdaten- und Buchungsdatensätze, die diese benötigen. Ein Masterdaten- oder Buchungsdatensatz, der eine Kennung erfordert, wird als Referenz bezeichnet. Bevor neue Datensätze für eine Referenz erstellt werden können, muss ein Nummernkreis eingerichtet und der Referenz zugeordnet werden. Mit dem Assistenten **Nummernkreise einrichten** können alle erforderlichen Nummernkreise gleichzeitig eingerichtet werden. Mit der Seite **Nummernkreise** können Sie einzelne Nummernkreise einrichten.
+In diesem Artikel wird erläutert, wie Sie Nummernkreise einzeln einrichten. Nummernkreise dienen zum Generieren von lesbaren, eindeutigen Kennungen für Masterdaten- und Buchungsdatensätze, die diese benötigen. Ein Masterdaten- oder Buchungsdatensatz, der eine Kennung erfordert, wird als Referenz bezeichnet. Bevor neue Datensätze für eine Referenz erstellt werden können, muss ein Nummernkreis eingerichtet und der Referenz zugeordnet werden. Mit dem Assistenten **Nummernkreise einrichten** können alle erforderlichen Nummernkreise gleichzeitig eingerichtet werden. Mit der Seite **Nummernkreise** können Sie einzelne Nummernkreise einrichten.
 
 1. Wechseln Sie zu **Navigationsbereich > Module > Organisationsverwaltung > Nummernkreise > Nummernkreise**.
 2. Wählen Sie **Nummernkreis** aus.

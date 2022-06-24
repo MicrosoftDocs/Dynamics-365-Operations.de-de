@@ -1,6 +1,6 @@
 ---
 title: Überblick über Bewertungen und Prüfungen
-description: Dieses Thema behandelt Bewertungen und Prüfungen in Microsoft Dynamics 365 Commerce.
+description: Dieser Artikel behandelt Bewertungen und Prüfungen in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 10/01/2019
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eb68652e0d3ecd8d75f2bc0fe9c243749d7de284
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9fff5100dd1bebdd19fb7306980e98ca84027acd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982251"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898909"
 ---
 # <a name="ratings-and-reviews-overview"></a>Überblick über Bewertungen und Prüfungen
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema behandelt Bewertungen und Prüfungen in Microsoft Dynamics 365 Commerce.
+Dieser Artikel behandelt Bewertungen und Prüfungen in Microsoft Dynamics 365 Commerce.
 
 Bewertungen und Prüfungen sind entscheidend für E-Commerce-Kunden, die wissen möchten, wie andere Kunden ein Produkt wahrnehmen. Sie können Verbrauchern auch dabei helfen, Kaufentscheidungen zu treffen. In Dynamics 365 Commerce können Einzelhändler mit der Bewertungs- und Prüfungslösung Bewertungen und Prüfungen von Kunden erfassen. Einzelhändler können dann auf ihrer E-Commerce-Website Durchschnittsbewertungen anzeigen und Informationen überprüfen.
 
