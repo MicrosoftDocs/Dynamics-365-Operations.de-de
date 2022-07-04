@@ -18,11 +18,9 @@
                   href: get-started/whats-new-changed-10-0-27.md
                 - name: "Finance\_10.0.26 (Mai)"
                   href: get-started/whats-new-changed-10-0-26.md
-                - name: "Finance\_10.0.25 (April)"
-                  href: get-started/whats-new-changed-10-0-25.md
             - name: Entfernte oder veraltete Funktionen
               items:
-                - name: "Entfernte oder veraltete Funktionen\_– Startseite"
+                - name: Entfernte oder veraltete Funktionen auf der Startseite
                   href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
                 - name: "Entfernte oder veraltete Funktionen in Dynamics\_365 Finance"
                   href: get-started/removed-deprecated-features-finance.md
@@ -462,6 +460,8 @@
                   items:
                     - name: Umsatzerlös- und Ausgabenstundungen einrichten
                       href: accounts-receivable/sb-deferrals.md
+                    - name: Buchungsmethode für Stundung
+                      href: accounts-receivable/Deferral-posting-methods.md
                     - name: Stundungszeitpläne erstellen
                       href: accounts-receivable/sb-deferrals-schedules.md
                     - name: Stundungsstandardtransaktionen
@@ -1214,6 +1214,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
             - name: Finanzberichtskomponenten
               href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
+            - name: Finanzberichte anzeigen und entwerfen
+              href: ../fin-ops-core/dev-itpro/analytics/design-financial-reports.md
             - name: Währungsfunktionen in der Finanzberichterstellung
               href: general-ledger/financial-reporting-currency-capability.md
             - name: Berechnung einbehaltener Gewinne in Financial Reporting
@@ -1978,11 +1980,13 @@
                   href: localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
                 - name: Bankkontonummern für Brasilien einrichten
                   href: localizations/latam-bra-bank-account-number-setup-brazil-localization.md
+                - name: Umlagerungsaufträge
+                  href: localizations/latam-bra-about-transfer-orders.md
                 - name: Steuern
                   items:
                     - name: Übersicht über Steuern in Brasilien
                       href: localizations/latam-bra-calculate-taxes.md
-                    - name: Steuern auf Auftragsangebote berechnen
+                    - name: Steuern auf Bestellanforderungen berechnen
                       href: localizations/tasks/br-00031-tax-calculation-purchase-quotation.md
                     - name: Steuerbewertung erstellen – ICMS
                       href: localizations/tasks/br-10001-4-create-tax-assessment-icms.md
@@ -2116,9 +2120,11 @@
                   href: localizations/emea-cze-intra-community-VAT.md
                 - name: Jahresendabschluss
                   href: localizations/emea-cze-hun-year-end.md
+                - name: Zusammenfassende Meldung
+                  href: localizations/emea-cze-eu-sales-list.md
             - name: Dänemark
               items:
-                - name: Informationen zu Dänemark
+                - name: Übersicht über Dänemark
                   href: localizations/denmark.md
                 - name: Zahlungsbelegformat einem Kundenkonto zuweisen
                   href: localizations/tasks/assign-payment-slip-format-customer-account.md
@@ -2130,8 +2136,8 @@
                   href: localizations/tasks/create-post-project-invoice-public-sector-customer.md
                 - name: Zusammenfassende Meldung
                   href: localizations/emea-dnk-eu-sales-list.md
-                - name: Konfigurationen der elektronischen OIOUBL-Fakturierung importieren
-                  href: localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
+                - name: Elektronische Rechnungen für Kunden in Dänemark
+                  href: localizations/emea-dnk-e-invoices.md
                 - name: Freitextrechnung mit einem Zahlungsbeleg buchen
                   href: localizations/tasks/post-free-text-invoice-payment-slip.md
                 - name: Eine Projektrechnung mit einem Zahlungsbeleg buchen
@@ -2220,6 +2226,8 @@
                       href: localizations/emea-ISO20022-file-formats.md
                     - name: ISO20022-Direktbelastungskonfiguration importieren
                       href: localizations/tasks/import-iso20022-direct-debit-configuration.md
+                    - name: Voraussetzungen für das Kreditübertragungsformat ISO 20022
+                      href: localizations/emea-fra-ISO20022-international.md
                     - name: ISO20022-Banküberweisungskonfiguration importieren
                       href: localizations/tasks/import-iso20022-credit-transfer-configuration.md
                     - name: Unternehmens-Bankkonten für ISO20022-Überweisungen einrichten
@@ -2462,6 +2470,8 @@
                   href: localizations/emea-hun-intrastat.md
                 - name: Verzögerte Mehrwertsteuerberechnungen
                   href: localizations/emea-hun-deferred-vat.md
+                - name: Zusammenfassende Meldung
+                  href: localizations/emea-hun-eu-sales-list.md
             - name: Island
               items:
                 - name: Übersicht über Island
@@ -2766,6 +2776,8 @@
                                   href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
                                 - name: TDS-Registrierungsnummern für juristische Personen einrichten
                                   href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+                                - name: Quellensteuer-Komponentengruppen für TDS-Steuertyp einrichten
+                                  href: localizations/apac-ind-TDS-Withholding-tax-component-groups-setup-for-TDS-tax-type.md
                                 - name: Quellensteuerbehörden für TDS-Steuertyp einrichten
                                   href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
                                 - name: Steuerkomponenten für TDS-Steuertyp einrichten
@@ -2968,6 +2980,8 @@
                   href: localizations/tasks/configure-depreciation-profile-posting.md
                 - name: Hauptkonten für Stilllegungsverpflichtungen für Anlagen und Marktrabattsätze konfigurieren
                   href: localizations/tasks/configure-main-accounts-asset-retirement.md
+                - name: Verbrauchssteuermeldung
+                  href: localizations/apac-jpn-consumption-tax-report.md
                 - name: Konsolidierte Rechnungen
                   href: localizations/apac-jpn-consolidate-invoices.md
                 - name: Eine Anlage mit Sonderabschreibung erstellen
@@ -3416,7 +3430,9 @@
                           href: localizations/rus-register-acquisition.md
                         - name: Anlagen erwerben und in Betrieb nehmen
                           href: localizations/rus-fixed-asset-acquisition.md
-                        - name: Abschreibung berechnen
+                        - name: Fahrzeuge und Immobilien als Anlagen
+                          href: localizations/rus-vehicles-realty.md
+                        - name: Ermittelte Abschreibung
                           href: localizations/rus-depreciation-calculation.md
                         - name: Teilweise Anlagendemontage (Liquidation)
                           href: localizations/rus-fixed-assets-disassembly.md
@@ -3444,6 +3460,8 @@
                       items:
                         - name: Nicht schätzbare Anlagen (NVFAs) (Russland)
                           href: localizations/rus-not-valuable-assets.md
+                        - name: 'Hauptformulare für nicht schätzbaren Anlagen, Arbeitskleidung und Spezialausrüstung (Russland)'
+                          href: localizations/rus-nvfa.md
                         - name: Buchhaltung für Arbeitskleidung/Spezialausrüstung (Russland)
                           href: localizations/rus-working-clothes-instruments-accounting.md
                     - name: Integration von Anlagen in das Anlagenverwaltungsmodul
@@ -3520,6 +3538,8 @@
                       href: localizations/rus-land-tax-declaration.md
                     - name: Gewinnsteuererklärung
                       href: localizations/rus-profit-tax-declaration.md
+                    - name: Bericht über Vorgänge mit rückverfolgbaren Waren
+                      href: localizations/rus-traceable-goods-operation-report.md
                 - name: Organisationsverwaltung
                   items:
                     - name: Steuerregistrierungsinformationen zur Adresse

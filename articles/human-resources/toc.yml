@@ -494,8 +494,10 @@
                   href: ../human-resources/hr-recruit-overview.md
                 - name: Projekte zur Personalbeschaffung
                   items:
-                    - name: Personalbeschaffungsprozess verwalten
+                    - name: Prozess der Personalbeschaffungsprojekte verwalten
                       href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
+                    - name: Personalbeschaffungsprojekte einrichten
+                      href: hr-personnel-develop-open-job-requisition.md
                     - name: Bewerber- und Bewerbungsdaten manuell eingeben
                       href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
                     - name: Stellenanforderungen ausarbeiten und freigeben
@@ -626,6 +628,10 @@
                   items:
                     - name: Vergütungspläne einrichten
                       href: hr-benefits-plans-setup.md
+                    - name: Vergütungspläne für Arbeitskräfte erstellen
+                      href: hr-benefits-plans-worker.md
+                    - name: Zukünftige Lebensereignisse einrichten
+                      href: hr-benefits-plans-future-life-events.md
                     - name: Programme für flexible Kredite einrichten
                       href: hr-benefits-plans-flex-credit-programs.md
                 - name: Vergütungspläne verarbeiten
@@ -836,11 +842,15 @@
               href: hr-developer-api-authentication.md
             - name: Entitäten
               items:
+                - name: Stellendetails
+                  href: hr-admin-integration-api-job-detail.md
+                - name: Beschäftigungstyp-Option
+                  href: hr-admin-integration-payroll-api-hcmemploymenttype.md
                 - name: MyLeaveRequests
                   items:
                     - name: Überblick über MyLeaveRequests
                       href: hr-developer-api-myleaverequests-overview.md
-                    - name: Urlaubsanforderung an Workflow übermitteln
+                    - name: Urlaubsantrag an Workflow übermitteln
                       href: hr-developer-api-myleaverequests-submit.md
         - name: API zur ATS-Integration
           items:

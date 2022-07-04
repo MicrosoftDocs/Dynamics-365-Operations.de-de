@@ -18,11 +18,9 @@
                   href: get-started/whats-new-commerce-10-0-27.md
                 - name: "Commerce\_10.0.26 (Mai\_2022)"
                   href: get-started/whats-new-commerce-10-0-26.md
-                - name: "Commerce\_10.0.25 (April\_2022)"
-                  href: get-started/whats-new-commerce-10-0-25.md
             - name: Entfernte oder veraltete Funktionen
               items:
-                - name: Entfernte oder veraltete Funktionen – Startseite
+                - name: Entfernte oder veraltete Funktionen auf der Startseite
                   href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/commerce/toc.json
                 - name: Entfernte oder veraltete Funktionen in Finance and Operations
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
@@ -70,20 +68,16 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/commerce/toc.json
                 - name: Benutzerakzeptanztests erstellen und automatisieren
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/commerce/toc.json
-            - name: Eine Dynamics 365 Commerce-Evaluierungsumgebung einrichten
+            - name: Eine Dynamics 365 Commerce-Sandbox-Umgebung einrichten
               items:
-                - name: Dynamics 365 Commerce-Evaluierungsumgebung – Überblick
-                  href: cpe-overview.md
-                - name: Eine Dynamics 365 Commerce-Evaluierungsumgebung bereitstellen
+                - name: Eine Dynamics 365 Commerce-Sandbox-Umgebung bereitstellen
                   href: provisioning-guide.md
-                - name: Eine Dynamics 365 Commerce-Evaluierungsumgebung konfigurieren
+                - name: Eine Dynamics 365 Commerce-Sandbox-Umgebung konfigurieren
                   href: cpe-post-provisioning.md
-                - name: BOPIS in einer Dynamics 365 Commerce-Evaluierungsumgebung konfigurieren
+                - name: BOPIS in einer Dynamics 365 Commerce-Sandbox-Umgebung konfigurieren
                   href: cpe-bopis.md
-                - name: Optionale Funktionen für eine Dynamics 365 Commerce-Evaluierungsumgebung konfigurieren
+                - name: Optionale Funktionen für eine Dynamics 365 Commerce-Sandbox-Umgebung konfigurieren
                   href: cpe-optional-features.md
-                - name: Dynamics 365 Commerce-Evaluierungsumgebung – Häufig gestellte Fragen
-                  href: cpe-faq.md
             - name: Überlegungen zur Bereitstellung
               items:
                 - name: Bereitstellungsoptionen
@@ -440,6 +434,8 @@
                           href: pos-healthcheck.md
                         - name: Unterstützung für Netzwerkperipheriegeräte
                           href: dev-itpro/network-peripherals.md
+                        - name: Peripheriekompatibilität
+                          href: Compatible-peripherals.md
                     - name: Bildschirmlayouts
                       items:
                         - name: Demodaten-Bildschirmlayouts in MPOS/CPOS
@@ -1402,6 +1398,8 @@
               items:
                 - name: Beispiel für Integration des Steuererfassungsdienstes in Österreich
                   href: localizations/emea-aut-fi-sample.md
+                - name: Bereitstellungsrichtlinien für Kassen für Österreich
+                  href: localizations/emea-aut-deployment.md
                 - name: Bereitstellungsrichtlinien für das Steuerintegrationsbeispiel für Österreich (veraltet)
                   href: localizations/emea-aut-fi-sample-sdk.md
             - name: Brasilien
@@ -2894,8 +2892,10 @@
                   items:
                     - name: Entwicklung von in der Cloud gehosteten Umgebungen ohne Administratorzugriff
                       href: dev-itpro/cloud-dev-box.md
-                    - name: "Retail\_SDK-Buildpipeline"
+                    - name: "Retail\_SDK-Build-Pipeline"
                       href: dev-itpro/retail-sdk/sdk-build-pipeline.md
+                    - name: Einen Visual Studio 2017 Build Agent für MPOS-Builds einrichten
+                      href: dev-itpro/retail-sdk/mpos-build-agent.md
                     - name: POS-Beispiele ausführen
                       href: dev-itpro/pos-run-samples.md
                 - name: Referenz
