@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7905dcd4c29872ec2601359baefa78545140397c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 210db3259a6c64a508119b30598a34dbda2d2dd2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857894"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014997"
 ---
 # <a name="add-fault-to-work-order"></a>Fügen Sie Fehler zum Arbeitsauftrag hinzu
 
@@ -30,7 +30,7 @@ ms.locfileid: "8857894"
 
 Sie können einem Arbeitsauftrag Fehler hinzufügen, die im Fehlerdesigner eingerichtet wurden. Mit den Anlagetypen, die für die Anlage verwendet werden, die im Arbeitsauftrag ausgewählt ist, müssen ein oder mehrere Fehlerdatensätze verbunden sein. Weitere Informationen zum Einrichten finden Sie unter [Fehlermanagement](../setup-for-work-orders/fault-management.md).
 
-1. Wählen Sie **Anlagenverwaltung** > **Allgemein** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** aus.
+1. Wählen Sie **Anlagenverwaltung** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** aus.
 
 2. Wählen Sie den Arbeitsauftrag aus, für den Sie eine Fehlererfassung durchführen möchten, und wählen Sie dann im Aktivitätsbereich auf der **Arbeitsauftrag**-Registerkarte in der **Anlage**-Gruppe **Anlagenfehler** aus.
 
@@ -64,7 +64,7 @@ Auf der Listenseite **Anlagenfehler** können Sie eine Übersicht aller Fehler e
 
 Auf der Listenseite **Alle Anlagen** können Sie einen Anlagenfehlerbericht drucken, der alle Fehlererfassungen sowie eine grafische Übersicht über Fehlerstatistiken anzeigt.
 
-1. Wählen Sie **Anlagenverwaltung** > **Allgemeines** > **Anlagen** > **Alle Anlagen**.
+1. Wählen Sie **Anlagenverwaltung** > **Anlagen** > **Alle Anlagen**.
 
 2. Wählen Sie die Anlage aus, für die Sie den Fehlerbericht drucken möchten.
 

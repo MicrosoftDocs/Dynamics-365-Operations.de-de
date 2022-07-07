@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb29c5e7170011b95151d9aaf2a96a570563096d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5d2cc1f5b8eccb51b6bea8655fdee243c1a2df55
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902081"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015026"
 ---
 # <a name="manually-created-work-orders"></a>Manuell erstellte Arbeitsaufträge
 
@@ -34,7 +34,7 @@ Sie können Arbeitsaufträge auf zwei Arten manuell anlegen:
 
 ## <a name="create-work-order"></a>Arbeitsauftrag erstellen
 
-1. Wählen Sie **Anlagenmanagement** > **Allgemein** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** aus.
+1. Wählen Sie **Anlagenverwaltung** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** aus.
 
 2. Wählen Sie **Neu** aus.
 
@@ -82,7 +82,7 @@ Beachten Sie die folgenden Punkte:
 
 Sie können einen Arbeitsauftrag erstellen, der zu einem vorhandenen Arbeitsauftrag gehört. Diese Funktion ist z. B. hilfreich, wenn Sie mit primären und sekundären Arbeitsaufträgen arbeiten möchten. Ein neuer Arbeitsauftrag basiert auf einem Arbeitsauftrag aus einem bestehenden Arbeitsauftrag.
 
-1. Wählen Sie **Anlagenverwaltung** > **Allgemein** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** aus.
+1. Wählen Sie **Anlagenverwaltung** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** aus.
 
 2. Wählen Sie den zu erstellenden Arbeitsauftrag aus, für den ein zugehöriger Arbeitsauftrag erstellt werden soll.
 
@@ -120,7 +120,7 @@ Die folgende Abbildung zeigt ein Beispiel für das Dialogfeld **Zugehörigen Arb
 
 Es ist möglich, schnell einen neuen Arbeitsauftrag aus einem bestehenden Arbeitsauftrag zu erstellen. Diese Art der Arbeit mit Arbeitsaufträgen unterscheidet sich von der Erstellung von Arbeitsaufträgen auf der Grundlage von [Wartungsplänen](../preventive-and-reactive-maintenance/maintenance-plans.md). Dies ist z.B. sinnvoll, wenn Sie ein Arbeitsauftrag viele Arbeitsaufträge enthält, und verschiedene Einzelvorgänge auf verschiedenen Anlagen in regelmäßigen Abständen erledigt werden sollen.
 
-1. Wählen Sie **Anlagenverwaltung** > **Allgemein** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** aus.
+1. Wählen Sie **Anlagenverwaltung** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** aus.
 
 2. Wählen Sie den Arbeitsauftrag aus, aus dem Sie Inhalte kopieren möchten.
 
@@ -142,7 +142,7 @@ In der folgenden Abbildung wird ein Beispiel des Dialogfelds **Arbeitsauftrag ko
 
 ## <a name="create-a-work-order-based-on-a-maintenance-request"></a>Arbeitsauftrag basierend auf einer Wartungsanforderung anlegen
 
-1. Wählen Sie **Anlagenverwaltung** > **Allgemein** > **Wartungsanfragen** > **Alle Wartungsanfragen** oder **Aktive Wartungsanfragen** aus.
+1. Wählen Sie **Anlagenverwaltung** > **Wartungsanfragen** > **Alle Wartungsanfragen** oder **Aktive Wartungsanfragen** aus.
 
 2. Wählen Sie die Wartungsanfrage aus, für die Sie einen Arbeitsauftrag anlegen möchten, und klicken Sie auf **Bearbeiten**.
 

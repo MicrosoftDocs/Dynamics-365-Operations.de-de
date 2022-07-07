@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dcee5fd729de6e96d57462879f7851756f287dc9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5eb911ec4ba9655c4ecaea3bf9a4f8736fa036c2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902830"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016709"
 ---
 # <a name="introduction-to-work-orders"></a>Einführung in Arbeitsaufträge
 
@@ -47,15 +47,15 @@ Arbeitsaufträge können folgendermaßen erstellt werden:
 
 ## <a name="all-work-orders"></a>Alle Arbeitsaufträge
 
-Wählen Sie **Anlagenverwaltung** > **Allgemein** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** aus, um die Listenseite **Alle Arbeitsaufträge** zu öffnen. Auf dieser Seite werden alle Arbeitsaufträge und einige der Informationen angezeigt, die sich auf die einzelnen Arbeitsaufträge beziehen.
+Wählen Sie **Anlagenverwaltung** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** aus, um die Listenseite **Alle Arbeitsaufträge** zu öffnen. Auf dieser Seite werden alle Arbeitsaufträge und einige der Informationen angezeigt, die sich auf die einzelnen Arbeitsaufträge beziehen.
 
 In der folgenden Abbildung wird ein Beispiel der Listenseite **Alle Arbeitsaufträge** angezeigt.
 
 ![Abbildung 1.](media/01-work-orders.png)
 
-Wählen Sie **Anlagenverwaltung** > **Allgemein** > **Arbeitsaufträge** > **Aktive Arbeitsaufträge** aus, um eine Liste von nur aktiven Arbeitsaufträgen anzuzeigen. 
+Wählen Sie **Anlagenverwaltung** > **Arbeitsaufträge** > **Aktive Arbeitsaufträge** aus, um eine Liste von nur aktiven Arbeitsaufträgen anzuzeigen. 
 
-Um eine Liste von Arbeitsauftragseinzelvorgängen anzuzeigen, die Anlagen enthalten, die auf funktionalen Standorten installiert sind, mit denen Sie als Arbeitskraft verbunden sind, wählen Sie **Anlagenverwaltung** > **Allgemein** > **Arbeitsaufträge** > **Meine Funktionaler Standort-Wartungsaufträge für Arbeitsaufträge** aus. (Die Beziehung zwischen Arbeitskräften und funktionalen Standorten wird auf der Seite **Arbeitskräfte** eingerichtet. Weitere Informationen finden Sie unter [Wartungsarbeiter und Arbeitskräftegruppen](../setup-for-objects/workers-and-worker-groups.md).)
+Um eine Liste von Arbeitsauftragseinzelvorgängen anzuzeigen, die Anlagen enthalten, die auf funktionalen Standorten installiert sind, mit denen Sie als Arbeitskraft verbunden sind, wählen Sie **Anlagenverwaltung** > **Arbeitsaufträge** > **Meine Funktionaler Standort-Wartungsaufträge für Arbeitsaufträge** aus. (Die Beziehung zwischen Arbeitskräften und funktionalen Standorten wird auf der Seite **Arbeitskräfte** eingerichtet. Weitere Informationen finden Sie unter [Wartungsarbeiter und Arbeitskräftegruppen](../setup-for-objects/workers-and-worker-groups.md).)
 
 Nachfolgend einige Möglichkeiten, wie Sie die Seite **Alle Arbeitsaufträge** verwenden können:
 

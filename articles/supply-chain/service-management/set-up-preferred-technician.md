@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e59271771a5f332ad8470b0b8f8f54b52a25543d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4c9495bbc8e5f7cb603c027a125887feba1f0e2d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671673"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017202"
 ---
 # <a name="set-up-a-preferred-technician"></a>Einrichten eines bevorzugten Technikers 
 
@@ -31,13 +31,13 @@ Sie können eine beliebige Arbeitskraft als bevorzugten Techniker für eine Serv
 
 ## <a name="assign-employee-to-a-dispatch-team"></a>Zuweisen eines Mitarbeiters zu einem Einsatzteam
 
-1.  Klicken Sie auf **Personalverwaltung** \> **Allgemein** \> **Arbeitskräfte** \> **Arbeitskräfte**. Doppelklicken Sie auf eine Arbeitskraft, um die Seite "Details zur Arbeitskraft" zu öffnen. Klicken im **Aktivitätsbereich** auf **Einstellungen** \>**Einsatzteam**, um das Formular **Arbeitskräfte disponieren** zu öffnen.
+1.  Klicken Sie auf **Personalverwaltung** \> **Arbeitskräfte** \> **Arbeitskräfte**. Doppelklicken Sie auf eine Arbeitskraft, um die Seite "Details zur Arbeitskraft" zu öffnen. Klicken im **Aktivitätsbereich** auf **Einstellungen** \>**Einsatzteam**, um das Formular **Arbeitskräfte disponieren** zu öffnen.
 
 2.  Wählen Sie im Feld **Einsatzteam** das Team aus, dem die Arbeitskraft zugewiesen werden soll.
 
 ## <a name="assign-a-preferred-technician-to-a-service-agreement"></a>Zuweisen eines bevorzugten Technikers zu einer Servicevereinbarung
 
-1.  Klicken Sie auf den Bereichsseitenknoten: **Serviceverwaltung** \> **Gemeinsam** \> **Servicevereinbarungen** \> **Servicevereinbarungen**. Doppelklicken Sie auf eine Servicevereinbarung, um das Detailformular zu öffnen.
+1.  Klicken Sie auf **Serviceverwaltung** \> **Servicevereinbarungen** \> **Servicevereinbarungen**. Doppelklicken Sie auf eine Servicevereinbarung, um das Detailformular zu öffnen.
 
 2.  Aktivieren Sie auf der Registerkarte **Allgemein** das Kontrollkästchen **Bevorzugter Techniker**, und wählen Sie anschließend ein Mitglied des entsprechenden Einsatzteams als bevorzugten Techniker für die Servicevereinbarung aus.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6f12b0dd1facc753bfcde820eea26a4052caf67
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 376cda6bbe1800611e6f24c347b9035469a30a14
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882401"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015171"
 ---
 # <a name="service-order-item-requirements"></a>Serviceauftrags-Artikelbedarf
 
@@ -36,7 +36,7 @@ Nach dem Erstellen eines Artikelbedarfs für einen Serviceauftrag kann dieser un
 
 ## <a name="view-an-item-requirement-from-a-service-order"></a>Anzeigen eines Artikelbedarfs in einem Serviceauftrag
 
-1. Gehen Sie zu **Serviceverwaltung** \> **Allgemein** \> **Serviceaufträge** \> **Serviceaufträge**.
+1. Gehen Sie zu **Serviceverwaltung** \> **Serviceaufträge** \> **Serviceaufträge**.
 1. Wählen Sie **Versand** und dann **Artikelbedarf** aus, um das Formular **Artikelbedarf** zu öffnen.
 1. Wählen Sie die Registerkarte **Projekt** aus, und aktivieren Sie das Kontrollkästchen **Serviceauftrag**, um die Serviceaufträge für den Artikelbedarf anzuzeigen.
 
@@ -44,13 +44,13 @@ Nach dem Erstellen eines Artikelbedarfs für einen Serviceauftrag kann dieser un
 
 Wurde für einen Serviceauftrag ein Artikelbedarf erstellt, kann der Serviceauftrag nicht gelöscht werden. Löschen Sie zunächst den Artikelbedarf, um den Serviceauftrag löschen zu können.
 
-1. Gehen Sie zu **Serviceverwaltung** \> **Allgemein** \> **Serviceaufträge** \> **Serviceaufträge**.
+1. Gehen Sie zu **Serviceverwaltung** \> **Serviceaufträge** \> **Serviceaufträge**.
 1. Wählen Sie **Versand** und dann **Artikelbedarf** aus, um das Formular **Artikelbedarf** zu öffnen. Dieses Formular enthält eine Liste mit dem für den Serviceauftrag erstellten Artikelbedarf.
 1. Wählen Sie die zu löschende Artikelanforderung und dann **Löschen** aus.
 
 - oder -
 
-1. Gehen Sie zu **Projektverwaltung und Abrechnung** \> **Allgemein** \> **Projekte** \> **Alle Projekte**.
+1. Wechseln Sie zu **Projektverwaltung und -verrechnung** \> **Projekte** \> **Alle Projekte**.
 1. Öffnen Sie das Projekt mit dem Serviceauftrag, in dem die Artikelanforderung erstellt wurde.
 1. Wählen Sie im Formular **Projekte** im rechten Bereich die Option **Artikelbedarf** aus. Das Formular **Artikelbedarf** wird mit einer Liste des dem ausgewählten Projekt zugeordneten Artikelbedarfs geöffnet.
 1. Wählen Sie die zu löschende Artikelanforderung und dann **Löschen** aus.

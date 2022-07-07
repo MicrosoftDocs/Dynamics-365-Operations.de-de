@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b4d0bf82dc0dfe12991b4a48fd68a029a2ff2f3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2d4385fdd3e94d48a65baf195efa1d687fbf95c3
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887601"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016767"
 ---
 # <a name="maintenance-job-types-categories-variants-trades-and-checklists"></a>Wartungsauftragstypen, Kategorien, Varianten, Handel und Checklisten
 
@@ -243,7 +243,7 @@ Können Sie einen Batchauftrag einrichten, um die Standardreferenzen der Wartung
 
 Nachdem Sie die erforderlichen Standardkombinationen für Wartungsauftragstypen erstellt haben, können Sie auf der Seite **Alle Anlagen** einen Überblick über den aktuellen Standard für Wartungsauftragstypen erhalten, der sich auf eine bestimmte Anlage bezieht. Der Überblick zeigt alle Standardkombinationen der Wartungsauftragstypen an, die für den Anlagentyp verwendet werden können, der für die Anlage ausgewählt wurde. Diese Kombinationen enthalten Kombinationen, die Variationen der Wartungsauftragstypvarianten und Wartungsauftragsbranchen enthalten.
 
-1. Wählen Sie **Anlagenverwaltung** \> **Allgemeines** \> **Anlagen** \> **Alle Anlagen** oder **Aktive Anlagen**.
+1. Wählen Sie **Anlagenverwaltung** \> **Anlagen** \> **Alle Anlagen** oder **Aktive Anlagen**.
 2. Wählen Sie in der Liste die Anlage aus, um eine Übersicht über die Kombinationen der Wartungsanlagetypen zu erhalten.
 3. Wählen Sie im Aktivitätsbereich, auf der Registerkarte **Allgemein** in der Gruppe **Zugehörige Informationen** die Option **Wartungsauftragstypen**.
 

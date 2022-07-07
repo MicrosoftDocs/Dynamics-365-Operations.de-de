@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14442853152764fce7e5a8a275532ed553da16dc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4c1d236918eddf3203a544a6b047f8ccac777971
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677085"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017239"
 ---
 # <a name="return-cost-price-and-return-lot-id"></a>Rücklieferungseinstandspreis und Rücklieferungsloskennung        
 
@@ -38,7 +38,7 @@ Um andere Kosten als die aktuellen Kosten für Rückgaben von einem Debitor zu v
 
 Wenn Sie Artikel einer Rücklieferung hinzufügen, werden die Artikel standardmäßig zum aktuellen Einstandspreis in den Bestand zurückgegeben. Um einen anderen Rücklieferungseinstandspreis anzugeben, führen Sie die folgenden Schritte aus.
 
-1.  Klicken auf **Vertrieb und Marketing** \> **Gemeinsam** \> **Rücklieferungen** \> **Alle Rücklieferungen**.
+1.  Klicken auf **Vertrieb und Marketing** \> **Retouren** \> **Alle Rücklieferungen**.
 
 2.  Klicken Sie im **Aktivitätsbereich** in der Gruppe **Neu** auf **Rücklieferung**.
 
@@ -54,7 +54,7 @@ Wenn Sie Artikel einer Rücklieferung hinzufügen, werden die Artikel standardm�
 
 Dies ist die bevorzugte Methode zum Erstellen von Rückgabepositionen. Um die Produktkosten zum Zeitpunkt des Verkaufs an den Debitor zu verwenden, erstellen Sie eine Rücklieferung und geben die zurückzugebende Verkaufsposition an.
 
-1.  Klicken auf **Vertrieb und Marketing** \> **Gemeinsam** \> **Rücklieferungen** \> **Alle Rücklieferungen**.
+1.  Klicken auf **Vertrieb und Marketing** \> **Retouren** \> **Alle Rücklieferungen**.
 
 2.  Klicken Sie im **Aktivitätsbereich** in der Gruppe **Neu** auf **Rücklieferung**.
 

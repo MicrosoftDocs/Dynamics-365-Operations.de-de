@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee61c43f93d68747a7095dc9317674a435553c8a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d8498d6099112cea2c57a6387e7596adb5bcd84e
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874187"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016013"
 ---
 # <a name="introduction-to-assets"></a>Einführung in Anlagen
 
@@ -36,7 +36,7 @@ Eine Anlage wird automatisch mit den dazugehörigen Informationen aktualisiert. 
 
 ## <a name="all-assets"></a>Alle Anlagen
 
-Wählen Sie **Anlagenverwaltung** \> **Allgemeines** \> **Anlagen** \> **Alle Anlagen**. Die Listenseite **Alle Anlagen** zeigt alle Anlagen und einige der Informationen an, die sich darauf beziehen. Um nur aktive Anlagen anzuzeigen, wählen Sie **Aktive Anlagen** aus. Um nur Anlagen anzuzeigen, die an funktionalen Standorten installiert sind, denen Sie als Wartungsmitarbeiter zugeordnet sind, wählen Sie **Meine aktiven Anlagen** aus. (Diese Beziehung wird auf der Seite **Arbeitskräfte** festgelegt. Weitere Informationen finden Sie unter [Wartungsarbeiter und Arbeitskräftegruppen](../setup-for-objects/workers-and-worker-groups.md).)
+Wählen Sie **Anlagenverwaltung** \> **Anlagen** \> **Alle Anlagen**. Die Listenseite **Alle Anlagen** zeigt alle Anlagen und einige der Informationen an, die sich darauf beziehen. Um nur aktive Anlagen anzuzeigen, wählen Sie **Aktive Anlagen** aus. Um nur Anlagen anzuzeigen, die an funktionalen Standorten installiert sind, denen Sie als Wartungsmitarbeiter zugeordnet sind, wählen Sie **Meine aktiven Anlagen** aus. (Diese Beziehung wird auf der Seite **Arbeitskräfte** festgelegt. Weitere Informationen finden Sie unter [Wartungsarbeiter und Arbeitskräftegruppen](../setup-for-objects/workers-and-worker-groups.md).)
 
 Wählen Sie in der Rasteransicht **Alle Anlagen** eine Verknüpfung in der Spalte **Anlage** aus, um die Details für den ausgewählten Datensatz anzuzeigen. Um den Datensatz zu bearbeiten, wählen Sie die Schaltfläche **Bearbeiten**. Die Detailansicht zeigt detaillierte Informationen an, die sich auf die Anlage beziehen. Der Bereich **Zugehörige Informationen** auf der rechten Seite enthält zusätzliche auf Anlagen bezogene Informationen. Erweitern Sie den Bereich, um die zugehörigen Informationen für die ausgewählte Anlage anzuzeigen.
 

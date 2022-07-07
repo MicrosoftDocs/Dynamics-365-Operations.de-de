@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gfedorova
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 19fa26eeb8ea3c0944be199c57eaf4a2d7e76034
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 923715893b9f1c4b87d7bbb67e200f8cb8f92e6b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851622"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015551"
 ---
 # <a name="import-vendor-catalogs"></a>Lieferantenkataloge importieren
 
@@ -46,7 +46,7 @@ Führen Sie zum Importieren der Lieferantenkatalogdaten die folgenden Aufgaben a
 
 4. Konfigurieren Sie den Workflow für den Katalogimport. Erstellen Sie eine CMR-Dateivorlage und geben Sie diese mit dem Kreditor frei.
 
-5. Wählen Sie **Beschaffung** \> **Gemeinsam** \> **Kataloge** \> **Lieferantenkataloge**, um einen Lieferantenkatalog zu erstellen. In diesem Katalog werden die Anforderungsdateien für die Katalogverwaltung (CMR-Dateien) gruppiert, die Sie von Ihrem Lieferanten erhalten. 
+5. Wählen Sie **Beschaffung** \> **Kataloge** \> **Lieferantenkataloge**, um einen Lieferantenkatalog zu erstellen. In diesem Katalog werden die Anforderungsdateien für die Katalogverwaltung (CMR-Dateien) gruppiert, die Sie von Ihrem Lieferanten erhalten.
 
 6. Laden Sie die CMR-Datei hoch.
 

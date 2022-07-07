@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71b861ec31e704e001aab29245b9e24ce8beb0de
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 665c705e3ffb617fc159a1223cb3f776878d5cd2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882778"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016245"
 ---
 # <a name="asset-boms"></a>Anlagenstücklisten
 
@@ -57,7 +57,7 @@ Die Einrichtung der Ersatzteilhistorie basiert auf Artikelgruppen, die im Modul 
 
 Nachdem Sie den Artikelverbrauch für einen Arbeitsauftrag gebucht haben, können Sie den Erfassten Artikelverbrauch auf der Seite **Anlagenstückliste** anzeigen.
 
-1. Wählen Sie **Anlagenverwaltung** \> **Allgemeines** \> **Anlagen** \> **Aktive Anlagen**. Wählen Sie die Anlage in der Liste aus, und wählen Sie dann **Anlagenstückliste** aus.
+1. Wählen Sie **Anlagenverwaltung** \> **Anlagen** \> **Aktive Anlagen**. Wählen Sie die Anlage in der Liste aus, und wählen Sie dann **Anlagenstückliste** aus.
 
     > [!NOTE]
     > Um den gesamten Artikelverbrauch für alle Anlagen anzuzeigen, wählen Sie **Anlagenverwaltung** \> **Abfragen** \> **Anlagen** \> **Anlagenstückliste** aus.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 75e30c8b2d74cc2f1ca538b64e5fc801f9ca130a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 42e8ba4e19333cb25464203a2583175ef082ad98
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897689"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016477"
 ---
 # <a name="maintenance-downtime-activities"></a>Wartungsausfallaktivitäten
 
@@ -38,14 +38,14 @@ Wenn Anlagen bei einer Ausfallregistrierung ausgewählt wurden, werden alle offe
 
 ## <a name="maintenance-downtime-activities"></a>Wartungsausfallaktivitäten
 
-Klicken Sie auf **Anlagenmanagement** > **Allgemein** > **Wartungsausfallzeiten** > **Alle Wartungsausfallzeiten**, um eine Liste aller Wartungsausfallzeiten zu öffnen und einige der mit den Aktivitäten verbundenen Informationen anzuzeigen. Klicken Sie auf einen Link in der Spalte **Ausfallzeiten pflegen**, um die Detailansicht zu öffnen. Die folgende Abbildung zeigt ein Beispiel der Liste **Wartungsausfallaktivitäten**.
+Klicken Sie auf **Anlagenmanagement** > **Wartungsausfallzeiten** > **Alle Wartungsausfallzeiten**, um eine Liste aller Wartungsausfallzeiten zu öffnen und einige der mit den Aktivitäten verbundenen Informationen anzuzeigen. Klicken Sie auf einen Link in der Spalte **Ausfallzeiten pflegen**, um die Detailansicht zu öffnen. Die folgende Abbildung zeigt ein Beispiel der Liste **Wartungsausfallaktivitäten**.
 
 ![Abbildung 1.](media/19-preventive-maintenance.png)
 
 
 ## <a name="create-a-maintenance-downtime-activity"></a>Erstellen einer Wartungsausfallaktivität
 
-1. Klicken Sie auf **Anlagenmanagement** > **Allgemein** > **Wartungsausfallzeiten** > **Alle Wartungsausfallzeiten** oder **Aktive Wartungsausfallzeiten**.
+1. Klicken Sie auf **Anlagenmanagement** > **Wartungsausfallzeiten** > **Alle Wartungsausfallzeiten** oder **Aktive Wartungsausfallzeiten**.
 
 2. Klicken Sie auf **Neu**.
 

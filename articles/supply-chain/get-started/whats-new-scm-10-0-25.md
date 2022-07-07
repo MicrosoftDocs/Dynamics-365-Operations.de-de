@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 1fa2ec6e21026552a4f14a67188db0720d3feae5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: af344d3771583a99851c070e3735258ac964b5d7
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850785"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954495"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Neuigkeiten oder Änderungen in Dynamics 365 Supply Chain Management 10.0.25 (April, 2022)
 
@@ -155,7 +155,7 @@ In der Tabelle sind auch Funktionen aufgeführt, die zuvor in der öffentlichen 
 | Lagerortverwaltung | [Verzögerte Verarbeitung des manuellen Lagerbestandsumlagerungsvorgangs](../warehousing/deferred-processing-manual-inventory-movement.md) | Obligatorisch |
 | Lagerortverwaltung | Nicht zulassen, dass Ladungen erstellt werden, die nicht den Anforderungen der Vorlage für die Ladungserstellung von Wave entsprechen | Obligatorisch |
 | Lagerortverwaltung | [Erweiterte Layouts für Kennzeichenbeschriftung](../warehousing/document-routing-layout-for-license-plates.md) | Obligatorisch |
-| Lagerortverwaltung | [Alle Aktivitäten für Mehrfach-SKU-Lagerplatzrichtlinien auswerten](../troubleshooting/warehousing/evaluate-multiple-location-directive-actions.md) | Obligatorisch |
+| Lagerortverwaltung | [Alle Aktivitäten für Mehrfach-SKU-Lagerplatzrichtlinien auswerten](/troubleshoot/dynamics-365/supply-chain/warehousing/evaluate-multiple-location-directive-actions) | Obligatorisch |
 | Lagerortverwaltung | Feld „Gesamtwert“ auf den Seiten „Alle Ladungen“ und „Ladungsdetails“ ausblenden | Obligatorisch |
 | Lagerortverwaltung | Erstellungskonfiguration der Ladungsträgerbeschriftung | Obligatorisch |
 | Lagerortverwaltung | Manuelle Korrektur der Ladungsposition für Administratoren oder ähnliche vertrauenswürdige Benutzer | Obligatorisch |

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7f15c0f15302c271fac7199b21b7bcd3dcfe88a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b4a98b90491093f55ce6974b9b11ff326c0c2f5c
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903868"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015317"
 ---
 # <a name="credit-limits-for-customers"></a>Kreditlimits für Debitoren
 
@@ -117,7 +117,7 @@ Verwenden Sie das Formular **Debitoren-Parameter,** um anzugeben, ob eine Warnun
 
 Verwenden Sie das Formular **Kunden**, um den Betrag für das Kreditlimit für einen bestimmten Debitor einzugeben. Sie müssen Mitglied einer Sicherheitsrolle ein, der die Aufgabe Masterdaten von Debitoren verwalten (CustCustomersMaintain) zugewiesen ist, um Änderungen in diesem Formular vorzunehmen.
 
-1.  Klicken Sie auf **Debitoren** \> **Allgemein** \> **Kunden** \> **Alle Kunden**. Doppelklicken Sie auf ein Debitorenkonto.
+1.  Klicken Sie auf **Debitoren** \> **Debitoren** \> **Alle Debitoren.** Doppelklicken Sie auf ein Debitorenkonto.
 
 2.  In der **Debitoren** Formular im Aktivitätsbereich, klicken Sie **Bearbeiten**.
 
@@ -132,7 +132,7 @@ Verwenden Sie das Formular **Kunden**, um den Betrag für das Kreditlimit für e
 
 Manchmal können Sie das Kreditlimit eines Debitors manuell prüfen. Beispielsweise können Sie manuell das Kreditlimit eines Debitors prüfen, bevor Sie mit der Eingabe eines Auftrags beginnen. Sie können das Formular **Verkaufsauftrag** verwenden, um Kreditlimits manuell zu überprüfen. Sie müssen Mitglied einer Sicherheitsrolle ein, der die Aufgabe Aufträge verwalten (SalesOrderMaintain) zugewiesen ist, um Änderungen in diesem Formular vorzunehmen.
 
-1.  Klicken auf Bereichsseitenknoten: **Vertrieb und Marketing** \> **Gemeinsam** \> **Aufträge** \> **Alle Aufträge**. Doppelklicken Sie auf einen Auftrag.
+1.  Klicken Sie auf **Vertrieb und Marketing** \> **Aufträge** \> **Alle Aufträge**. Doppelklicken Sie auf einen Auftrag.
 
 2.  Klicken Sie im Aktivitätsbereich auf der Registerkarte **Verkaufsauftrag** in der Gruppe **Verwalten** auf **Kreditlimite überprüfen**.
 

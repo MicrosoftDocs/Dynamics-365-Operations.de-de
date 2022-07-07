@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d74b6c82c573810da9cbfe14745f997f40d408fc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8d9c756d8aaf2e7b2f6593e78fbb645dafee4552
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873665"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016158"
 ---
 # <a name="production-parameters-in-manufacturing-execution"></a>Produktionsparameter in der Fertigungssteuerung
 
@@ -63,7 +63,7 @@ Auf der Seite **Produktionsparameter** wird der automatische Stücklistenverbrau
 
 Für jede Phase können Sie im Feld **Automatischer BOM-Verbrauch** eine von drei Methoden zum Entnehmen von Artikeln für einen Produktionsauftrag auswählen:
 
-- **Stücklisten-Bezugsprinzip** – Diese Option wird in Kombination mit einer Option verwendet, die in der Stückliste im **Produktionsmodul** definiert wird. Klicken auf **Produktionssteuerung** &gt; **Gemeinsam** &gt; **Produktionsauftrag** &gt; **Alle Produktionsaufträge**. Wählen Sie auf der Seite **Alle Produktionsaufträge** einen Produktionsauftrag aus der Liste aus  und klicken Sie auf **BOM**. Auf der Seite **Stückliste** auf der Registerkarte **Einstellungen**, im Feld **Prinzip für automatischen Artikelverbrauch**, wählen Sie eine der folgenden Optionen aus:
+- **Stücklisten-Bezugsprinzip** – Diese Option wird in Kombination mit einer Option verwendet, die in der Stückliste im **Produktionsmodul** definiert wird. Klicken auf **Produktionssteuerung** &gt; **Produktionsauftrag** &gt; **Alle Produktionsaufträge**. Wählen Sie auf der Seite **Alle Produktionsaufträge** einen Produktionsauftrag aus der Liste aus  und klicken Sie auf **BOM**. Auf der Seite **Stückliste** auf der Registerkarte **Einstellungen**, im Feld **Prinzip für automatischen Artikelverbrauch**, wählen Sie eine der folgenden Optionen aus:
 
   - **Starten**
   - **Fertig stellen**

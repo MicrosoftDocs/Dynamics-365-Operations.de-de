@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e0c382efda81067ad4c0cd977e5cfbf37b4e3fc6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fd7482cfe943347840e9fb070151d66fbe5ef9ca
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908713"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016535"
 ---
 # <a name="inbound-and-outbound-assets"></a>Ein- und ausgehende Anlagen
 
@@ -37,7 +37,7 @@ Die Einrichtung von Asset Management bestimmt, ob Sie mit ein- und ausgehenden A
 
 ## <a name="register-assets-as-inbound"></a>Erfassen von Anlagen als eingehend
 
-1. Wählen Sie **Anlagenverwaltung** \> **Allgemeines** \> **Wartungsanfragen** \> **Aktive Wartungsanfragen**.
+1. Wählen Sie **Anlagenverwaltung** \> **Wartungsanfragen** \> **Aktive Wartungsanfragen**.
 2. Wählen Sie die Wartungsanfrage aus.
 3. Wählen Sie **Wartungsanforderungsstatus aktualisieren** aus.
 4. Wählen Sie **Eingehend** aus (oder einen anderen Lebenszyklusstatus, den Sie für eingehende Anlagen erstellt haben), und wählen Sie anschließend **OK**.
@@ -46,7 +46,7 @@ Die Einrichtung von Asset Management bestimmt, ob Sie mit ein- und ausgehenden A
 
 ## <a name="register-inbound-assets-as-received"></a>Erfassen von eingehenden Anlagen als empfangen
 
-1. Wählen Sie **Anlagenverwaltung** \> **Allgemeines** \> **Ein-/ausgehend** \> **Eingehende Anlagen** aus.
+1. Wählen Sie **Anlagenverwaltung** \> **Ein-/ausgehend** \> **Eingehende Anlagen** aus.
 2. Wählen Sie die Anlage oder die Wartungsanfrage aus.
 3. Wählen Sie **Anlagen entgegennehmen** aus.
 4. Geben Sie im Feld **Eingegangen** das Datum und die Uhrzeit ein. Wählen Sie dann **OK** aus. Der Datensatz wird von der Listenseite **Eingehende Anlagen** entfernt.
@@ -57,14 +57,14 @@ Die Einrichtung von Asset Management bestimmt, ob Sie mit ein- und ausgehenden A
 
 Wenn Sie den Wartungs- oder Reparaturauftrag erledigt haben, können Sie die Anlage als zurückgegeben erfassen.
 
-1. Wählen Sie **Anlagenverwaltung** \> **Allgemeines** \> **Wartungsanfragen** \> **Aktive Wartungsanfragen**.
+1. Wählen Sie **Anlagenverwaltung** \> **Wartungsanfragen** \> **Aktive Wartungsanfragen**.
 2. Wählen Sie die Wartungsanfrage aus.
 3. Wählen Sie **Wartungsanforderungsstatus aktualisieren** aus.
 4. Wählen Sie **Ausgehend** aus (oder einen anderen Lebenszyklusstatus, den Sie für ausgehende Anlagen erstellt haben), und wählen Sie anschließend **OK**.
 
 ## <a name="register-outbound-assets-as-delivered"></a>Erfassen von ausgehenden Anlagen als geliefert
 
-1. Wählen Sie **Anlagenverwaltung** \> **Allgemeines** \> **Ein-/ausgehend** \> **Ausgehende Anlagen** aus.
+1. Wählen Sie **Anlagenverwaltung** \> **Ein-/ausgehend** \> **Ausgehende Anlagen** aus.
 2. Wählen Sie die Anlage oder die Wartungsanfrage aus.
 3. Wählen Sie **Anlagen liefern** aus.
 4. Geben Sie im Feld **Geliefert** das Datum und die Uhrzeit ein. Wählen Sie dann **OK** aus. Der Datensatz wird von der Listenseite **Ausgehende Anlagen** entfernt.

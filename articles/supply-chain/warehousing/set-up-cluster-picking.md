@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3094649da2ce9a700a4d1cde236609013f4b9744
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0ec3de073def2ff63af3c04b5696cbcec4f09948
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862307"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014719"
 ---
 # <a name="set-up-cluster-picking"></a>Clusterkommissionierung einrichten
 
@@ -74,9 +74,14 @@ Wann die Clusterentnahme angewendet wird, ist die Artikelbestätigung wichtig, u
 
 ### <a name="set-up-item-verification-with-cluster-picking"></a>Einrichten der Artikelprüfung mit Clusterentnahme
 
-1. Öffnen Sie über ein Menüelement des mobilen Geräts das Einstellungsformular für Arbeitsbestätigung: **Lagerortverwaltung** \> **Lagerortverwaltung** \> **Einstellungen** \> **Mobiles Gerät** \> **Menüelemente des mobilen Geräts**.
+1. Wechseln Sie zu **Lagerortverwaltung** > **Einstellungen** > **Mobiles Gerät** > **Menüoptionen für mobiles Gerät**.
+1. Wählen Sie im Listenbereich das Menüelement aus, das Sie einrichten möchten.
+1. Wählen Sie im Aktionsbereich **Einrichtung der Arbeitsbestätigung** aus.
+1. Führen Sie einen der folgenden Aktionen aus:
+    - Wenn es bereits eine Zeile für den **Arbeitstyp** gibt, den Sie einrichten möchten, wählen Sie ihn aus, und wählen Sie dann im Aktionsbereich **Bearbeiten** aus.
+    - Wenn keine entsprechende Zeile vorhanden ist, wählen Sie im Aktionsbereich **Neu** aus, und legen Sie dann den **Arbeitstyp** auf den passenden Typ fest.
+1. Aktivieren Sie das **Produkt bestätigen**-Kontrollkästchen für Ihre neue oder ausgewählte Zeile. Dadurch können Arbeitskräfte jeden Inventurartikel mithilfe des mobilen Geräts bestätigen.
 
-1. Öffnen Sie über das Menüelement des mobilen Geräts die Option **Einrichtung Arbeitsbestätigung**. Die **Produktbestätigung** ermöglicht Ihnen, beim Scannen jeden Inventurartikel über das mobile Gerät zu bestätigen.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

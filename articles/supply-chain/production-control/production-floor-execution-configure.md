@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9eefde163473e11b01bfa0adf9b3694c830f1488
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14a49d1d6c956b37ff9b2bec387615dc75d060e1
+ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899410"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "9022563"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Produktionsausführungsschnittstelle konfigurieren
 
@@ -113,9 +113,6 @@ Um diese Funktion zu nutzen, schalten Sie die folgende Funktion in [Funktionsver
 
 ### <a name="enable-the-my-day-dialog"></a>Dialogfeld „Mein Tag“ aktivieren
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 Das **Mein Tag**-Dialogfeld bietet den Mitarbeitern einen Überblick über ihre täglichen Erfassungen und aktuellen Salden für bezahlte Zeit, bezahlte Überstunden, Abwesenheit und bezahlte Abwesenheit.
 
 Um diese Funktion zu nutzen, schalten Sie die folgende Funktion in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ein:
@@ -124,9 +121,6 @@ Um diese Funktion zu nutzen, schalten Sie die folgende Funktion in [Funktionsver
 
 ### <a name="enable-teams"></a>Teams aktivieren
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 Wenn mehrere Arbeitskräfte demselben Produktions-Einzelvorgang zugewiesen werden, können sie ein Team bilden. Das Team kann einen Mitarbeiter als Pilot ernennen. Die verbleibenden Arbeitskräfte werden dann automatisch zu Assistenten dieses Piloten. Für das resultierende Team muss nur der Pilot den Einzelvorgangstatus registrieren. Zeiterfassungen gelten für alle Teammitglieder.
 
 Um diese Funktion zu nutzen, schalten Sie die folgende Funktion in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ein:
@@ -134,9 +128,6 @@ Um diese Funktion zu nutzen, schalten Sie die folgende Funktion in [Funktionsver
 - *Produktionsteams in der Produktionsausführungsoberfläche*
 
 ### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>Zusätzliche Konfiguration in der Produktionsausführungsoberfläche aktivieren
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
 
 Diese Funktion fügt der Seite **Produktionsausführung konfigurieren** Einstellungen für die folgende Funktionalität hinzu:
 

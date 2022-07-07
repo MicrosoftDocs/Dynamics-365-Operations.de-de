@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1e2c79a621cf4bd1212c006e1c8967d85bd716b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 750776412ce9d87389a635ef108a34cffe12b68b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870810"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015811"
 ---
 # <a name="asset-management-parameters"></a>Anlagenverwaltungsparameter
 
@@ -37,7 +37,7 @@ Die Registerkarte **Anlagen** enthält die folgenden Einstellungen:
 
 - **Funktionaler Lagerplatz Standard** ist der funktionale Lagerplatz Standard, der automatisch auf Anlagen ausgewählt wird, wenn Sie neue Anlagen erstellen.  
 - Wählen Sie im Feld **Standardkalender** einen Kalender aus, der für die Berechnung der Anlagen-KPIs verwendet werden soll, wenn keine Ressource auf einer Anlage ausgewählt ist.  
-- Wählen Sie im Feld **Ansicht** die Standardansicht, die angezeigt wird, wenn Sie **Anlagenansicht** öffnen (**Anlagenverwaltung** > **Gemeinsam** > **Anlagen** > **Anlagenansicht**).
+- Wählen Sie im Feld **Ansicht** die Standardansicht, die angezeigt wird, wenn Sie **Anlagenansicht** öffnen (**Anlagenverwaltung** > **Anlagen** > **Anlagenansicht**).
 - **Standardanforderungstyp** ist der Standardwartungsanfragetyp, der automatisch aktiviert wird, wenn Sie einen neuen Einrichtungsantrag erstellen.  
 - Planungen auf Einzelvorgangstypen werden auf das Projekt gespeichert, das im Feld **Planungsprojekt** ausgewählt wird. Für jeden Einzelvorgangstyp wird eine neue Aktivität automatisch im Feld Planungsprojekt erstellt. Planungen bezüglich des Stellentyps werden dann im Planungsprojekt gespeichert.  
 - Im Feld **Modell** wählen Sie das Planzahlenmodell aus, das auf Einzelvorgangstyp- und Arbeitsauftragsplanungen verwendet wird.

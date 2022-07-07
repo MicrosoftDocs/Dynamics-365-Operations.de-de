@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a6e9454baa33e37fe62db2b7bd39ff00891ff855
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5be880a6d178743f4a2d3339609604d993f7e5d5
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905023"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016419"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Neuerungen oder Änderungen in Dynamics 365 for Operations Version 1611 (1611. November 2016)
 
@@ -818,7 +818,7 @@ Derzeit ist Retail Modern POS nur als Windows 8.1-Anwendung für Desktopcomputer
 | Passen Sie Lagerbestand im Kreditorenbesitz mit einer Inventurerfassung an. | Es ist wichtig, dass Sie den im System verfügbaren Lagerbestand konsistent mit dem tatsächlichen physischen Bestand synchron halten. Der Lagerbestand im Kreditorenbesitz kann mithilfe von Zählverfahren wie Mengenanpassungs- und in Inventurerfassungsprozessen angepasst werden. |
 | Finden Sie sich über Lieferungssupport in Dynamics 365 for Operations | Weitere Informationen zur Unterstützung von Lieferungsprozessen erhalten Sie unter [Lieferung](../../../supply-chain/inventory/consignment.md), [Lieferung einrichten](/d365F-O/fin-ops-core/fin-ops/get-started/consignment), [Erstellen eines neuen Unterlieferungs-Wiederbeschaffungsauftrags (Aufgabenleitfaden)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) und [Ändern des Besitzes des Lieferungsbestandes auf Grundlage des Produktionsbedarfs (Aufgabenleitfaden)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
 
-### <a name="vendor-collaboration-previously-known-as-the-vendor-portal"></a>Kreditorenzusammenarbeit (bisher als Kreditorenportal bezeichnet)
+### <a name="vendor-collaboration"></a>Kreditor-Kooperation
 
 | Wie Sie vorgehen können | Warum dies wichtig ist |
 |-----------------|-----------------------|

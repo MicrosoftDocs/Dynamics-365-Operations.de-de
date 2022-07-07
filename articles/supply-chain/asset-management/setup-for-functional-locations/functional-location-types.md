@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01c8276d77f7655659cab13f3c520d7c171e3cfd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0c44e503900bd157d7f0159cdf2b2d0c1fb3393f
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879220"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015782"
 ---
 # <a name="functional-location-types"></a>Typen funktionaler Standorte
 
@@ -57,7 +57,7 @@ Jetzt wurde der standardmäßige funktionale Standorttyp erstellt, der nur für 
 7. Das Feld **Anlagentyp** wird verwendet, wenn Sie automatisch *eine* Anlage für den funktionalen Standort mit der gleichen ID und dem gleichen Namen erstellen möchten, wie Sie für den funktionalen Standort verwenden, den Sie erstellen. Dies ist zum Beispiel dann relevant, wenn Sie einen statischen funktionalen Standort erstellen, wie z. B. ein Gebäude oder eine Rohrleitung. Wählen Sie in diesem Fall den Anlagentyp aus, den Sie für die automatisch erstellte Anlage verwenden möchten. Denken Sie daran, dass Sie die Umschaltfläche **Mehrere Anlagen** auf „Nein“ festlegen müssen, wenn Sie eine Auswahl in diesem Feld vornehmen.
 8. Wählen Sie im Inforegister **Anlagentypen** die Anlagentypen aus, die dem funktionalen Standorttyp zugeordnet werden sollen. Wählen Sie **Position hinzufügen**, und wählen Sie die Anlagentypen aus. Wenn Sie hier Anlagentypen hinzufügen, können nur Anlagen mit diesem Anlagentypen an einem funktionalen Standort mit diesem funktionalen Standorttypen installiert werden. Wenn im Inforegister **Anlagentypen** keine Anlagentypen ausgewählt werden, können alle Anlagentypen installiert werden.
 9. Wählen Sie im Inforegister **Wartungspläne** die Wartungspläne aus, die automatisch für neue funktionale Standorte mit diesem funktionalen Standorttypen eingerichtet werden sollen. Wählen Sie **Position hinzufügen**, und wählen Sie die Wartungspläne aus. Wenn Sie hier Wartungspläne hinzufügen, können nur diese Pläne an einem funktionalen Standort mit diesem funktionalen Standorttypen verwendet werden.
-10. Richten Sie im Inforegister **Anlagenattributanforderungen** die Anlagenattribute ein, die automatisch für neue funktionale Standorte mit diesem funktionalen Standorttypen eingerichtet werden sollen. Wählen Sie **Position hinzufügen**, und wählen Sie das Attribut aus. Diese Attributanforderungen gelten als Richtlinien. Sie werden nicht im Hinblick auf Attribute geprüft, die für eine Anlage festgelegt wurden (**Anlagenverwaltung** > **Allgemeines** > **Anlagen** > **Alle Anlagen** > Anlage auf der Listenseite auswählen > Registerkarte **Allgemein** > Schaltfläche **Attribute**). Die Attributanforderungen werden angezeigt, wenn Sie Anlagen an funktionalen Standorten einrichten.
+10. Richten Sie im Inforegister **Anlagenattributanforderungen** die Anlagenattribute ein, die automatisch für neue funktionale Standorte mit diesem funktionalen Standorttypen eingerichtet werden sollen. Wählen Sie **Position hinzufügen**, und wählen Sie das Attribut aus. Diese Attributanforderungen gelten als Richtlinien. Sie werden nicht im Hinblick auf Attribute geprüft, die für eine Anlage festgelegt wurden (**Anlagenverwaltung** > **Anlagen** > **Alle Anlagen** > Anlage auf der Listenseite auswählen > Registerkarte **Allgemein** > Schaltfläche **Attribute**). Die Attributanforderungen werden angezeigt, wenn Sie Anlagen an funktionalen Standorten einrichten.
 11. Wählen Sie im Inforegister **Zulässige Typen** die funktionalen Standorttypen aus, die für untergeordnete funktionale Standorttypen gültig sein sollen, die sich auf einen übergeordneten funktionalen Standorttypen beziehen, der den ausgewählten funktionalen Standorttypen verwendet.
 12. Wählen Sie im Inforegister **Attribute** die Attribute für funktionale Standorte aus, die automatisch für funktionale Standorte mit diesem funktionalen Standorttypen eingerichtet werden sollen. Wählen Sie **Position hinzufügen**, und wählen Sie das Attribut aus.
 

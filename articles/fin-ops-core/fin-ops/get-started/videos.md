@@ -2,7 +2,7 @@
 title: Videos
 description: Diese Seite listet von Microsoft erstellte „How-to“- und Tech-Talk-Videos zu Finance and Operations-Apps auf, die auf YouTube und anderen Websites verfügbar sind.
 author: sericks007
-ms.date: 09/15/2021
+ms.date: 06/13/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 3fe44a9a7fcef2f22dff3be00ddfadd5b8c59574
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 76fe61c13490afbd7b5dcd39f3c631cbab43bb9e
+ms.sourcegitcommit: 0686b56b4699ffefd2c208d0fe496d5860296520
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487990"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8958137"
 ---
 # <a name="videos"></a>Videos 
 
@@ -30,11 +30,11 @@ Auf dem [Microsoft Dynamics 365 YouTube-Kanal](https://www.youtube.com/channel/U
 > [!Note]
 > Einige der angezeigten Videos wurden unter einem vorherigen Produktnamen veröffentlicht, sind jedoch immer noch relevant.
 
-## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videos zur Entwicklung und Verwaltung für Finance and Operations-Apps
+## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videos zur Entwicklung und Administration für Finance and Operations
 
 ### <a name="data-integration"></a>Datenintegration
 
-- [Arbeitsauftrag synchronisieren zwischen Dynamics 365 for Field Service und Finance and Operations-Apps](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
+- [Synchronisieren eines Arbeitsauftrags zwischen Dynamics 365 for Field Service und Finance and Operations-Apps](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### <a name="data-management"></a>Datenverwaltung
 
@@ -42,7 +42,6 @@ Auf dem [Microsoft Dynamics 365 YouTube-Kanal](https://www.youtube.com/channel/U
 
 ### <a name="development"></a>Allgemeine Tastaturbelegung
 
-- [Lösen von Konflikten in Visual Studio](https://youtu.be/4rxO0zUN2zU)
 - [Optimierungsratgeber](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Aufbau eines Entwicklungszweiges und Erstellung](https://www.youtube.com/watch?v=qXLd-NMx9OY)
 - [Einrichten einer Entwicklungsmaschine](https://www.youtube.com/watch?v=cqp9MetfiyM)
@@ -52,7 +51,7 @@ Auf dem [Microsoft Dynamics 365 YouTube-Kanal](https://www.youtube.com/channel/U
 
 - [Bearbeiten eines eingebetteten Berichts in einem analytischen Arbeitsbereich](https://youtu.be/_8WlwmSggcQ)
 - [Einbetten von PowerBI.com-Berichten in Finance and Operations-Apps](https://youtu.be/gGWuNJDoi-M)
-- [Eigene Datenbanken in Finance and Operations-Apps nutzen](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [Bringen Sie Ihre eigene Datenbank (BYOD) zu Finance and Operations-Apps](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Erläutert das Kostenmanagement Power BI Inhalt in Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 ### <a name="lifecycle-services-lcs"></a>Lifecycle Services (LCS)

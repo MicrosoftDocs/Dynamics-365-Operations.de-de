@@ -1,8 +1,8 @@
 ---
-title: Eine Dynamics 365 Commerce-Evaluierungsumgebung konfigurieren
-description: In diesem Artikel wird erläutert, wie eine Microsoft Dynamics 365 Commerce-Auswertungsumgebung nach ihrer Bereitstellung konfiguriert wird.
+title: Eine Dynamics 365 Commerce-Sandbox-Umgebung konfigurieren
+description: In diesem Artikel wird erläutert, wie eine Microsoft Dynamics 365 Commerce-Sandbox-Umgebung nach ihrer Bereitstellung konfiguriert wird.
 author: psimolin
-ms.date: 05/12/2022
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,34 +14,34 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 19d88139e35554bce68bc6203141957b96e439a7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 259a580981003f135e234f66e9e93ceb18605412
+ms.sourcegitcommit: 252cb41c3029b623354698463f7b44a29fd9f184
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892329"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9013108"
 ---
-# <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Eine Dynamics 365 Commerce-Evaluierungsumgebung konfigurieren
+# <a name="configure-a-dynamics-365-commerce-sandbox-environment"></a>Eine Dynamics 365 Commerce-Sandbox-Umgebung konfigurieren
 
 [!include [banner](includes/banner.md)]
 
-In diesem Artikel wird erläutert, wie eine Microsoft Dynamics 365 Commerce-Auswertungsumgebung nach ihrer Bereitstellung konfiguriert wird.
+In diesem Artikel wird erläutert, wie eine Microsoft Dynamics 365 Commerce-Sandbox-Umgebung nach ihrer Bereitstellung konfiguriert wird.
 
-Führen Sie die in diesem Artikel beschriebenen Prozeduren erst aus, nachdem Ihre Commerce-Auswertungsumgebung bereitgestellt wurde. Informationen zum Bereitstellen Ihrer Commerce-Auswertungsumgebung finden Sie unter [Bereitstellen einer Commerce-Auswertungsumgebung](provisioning-guide.md).
+Führen Sie die in diesem Artikel beschriebenen Prozeduren erst aus, nachdem Ihre Commerce-Sandbox-Umgebung bereitgestellt wurde. Informationen zum Bereitstellen Ihrer Commerce-Sandbox-Umgebung nach deren Bereitstellung finden Sie unter [Stellen Sie eine Commerce-Sandbox-Umgebung bereit](provisioning-guide.md).
 
-Nachdem Ihre Commerce-Auswertungsumgebung vollständig bereitgestellt wurde, müssen zusätzliche Konfigurationsschritte nach der Bereitstellung ausgeführt werden, bevor Sie mit der Evaluierung der Umgebung beginnen können. Um diese Schritte abzuschließen, müssen Sie Microsoft Dynamics Lifecycle Services (LCS) und Dynamics 365 Commerce verwenden.
+Nachdem Ihre Commerce-Sandbox-Umgebung vollständig bereitgestellt wurde, müssen zusätzliche Konfigurationsschritte nach der Bereitstellung ausgeführt werden, bevor Sie mit der Verwendung der Umgebung beginnen können. Um diese Schritte abzuschließen, müssen Sie Microsoft Dynamics Lifecycle Services (LCS) und Dynamics 365 Commerce verwenden.
 
 ## <a name="before-you-start"></a>Bevor Sie beginnen
 
 1. Melden Sie sich beim [LCS-Portal](https://lcs.dynamics.com) an.
 1. Gehen Sie zu Ihrem Projekt.
-1. Wählen Sie aus dem oberen Menü **In der Cloud gehostete Umgebungen** aus.
 1. Wählen Sie Ihre Umgebung in der Liste aus.
 1. Wählen Sie in den Umgebungsinformationen rechts die Option **Bei Umgebung anmelden** aus. Sie werden zur Zentralverwaltung von Commerce übermittelt.
-1. Stellen Sie sicher, dass die juristische Person **USRT** oben rechts ausgewählt ist.
-1. Wechseln Sie zu **Handelsparameter \> Konfigurationsparameter** und vergewissern Sie sich, dass ein Eintrag für **ProductSearch.UseAzureSearch** vorhanden ist und der Wert auf **true** festgelegt ist. Wenn dieser Eintrag fehlt, können Sie ihn hinzufügen, den Wert auf **true** festlegen und dann **Kanaldatenbank \> Vollständige Datensynchronisierung** für die Commerce Scale Unit auswählen, die Ihrer eCommerce-Website zugeordnet ist.
+1. Stellen Sie sicher, dass die juristische Person **USRT** oben rechts ausgewählt ist. Diese juristische Person wurde in den Demodaten vorkonfiguriert.
+1. Wechseln Sie zu **Handelsparameter \> Konfigurationsparameter** und vergewissern Sie sich, dass ein Eintrag für **ProductSearch.UseAzureSearch** vorhanden ist und der Wert auf **true** festgelegt ist. Wenn dieser Eintrag fehlt, fügen Sie ihn hinzu, und setzen Sie den Wert auf **Wahr**.
 1. Gehen Sie zu **Einzelhandel und Handel \> Zentralverwaltungseinrichtung \> Handelsplanung \> Commerce-Steuerprogramm initialisieren**. Legen Sie im Flyoutmenü **Commerce-Steuerprogramm initialisieren** die Option **Vorhandene Konfiguration löschen** auf **Ja** fest, und wählen Sie dann **OK** aus.
-1. Um Kanäle zur Commerce Scale Unit hinzuzufügen, gehen Sie zu **Einzelhandel und Handel \> Zentralverwaltungseinrichtung \> Handelsplanung \> Kanaldatenbank**, und wählen Sie dann im linken Bereich die Commerce Scale Unit aus. Fügen Sie auf dem Inforegister **Retail Channel** die Kanäle **AW-Onlineshop**, **AW Business-Onlineshop** und **Erweiterter Onlineshop von Fabrikam** hinzu. Optional können Sie auch Einzelhandelsgeschäfte hinzufügen, wenn Sie POS verwenden (z. B. **Seattle**, **San Francisco** und **San Jose**).
+1. Damit die Store- und E-Commerce-Kanäle ordnungsgemäß funktionieren, müssen sie der Commerce Scale Unit hinzugefügt werden. Gehen Sie zu **Einzelhandel und Handel \> Zentralverwaltungseinrichtung \> Handelsplanung \> Kanaldatenbank**, und führen Sie dann im linken Bereich die Commerce Scale Unit aus. Fügen Sie auf dem Inforegister **Retail Channel** die Kanäle **AW-Onlineshop**, **AW Business-Onlineshop** und **Erweiterter Onlineshop von Fabrikam** hinzu, wenn Sie planen, die se E-Commerce-Kanäle zu verwenden. Optional können Sie auch Einzelhandelsgeschäfte hinzufügen, wenn Sie Verkaufsstellen (POS) verwenden (z. B. **Seattle**, **San Francisco** und/oder **San Jose**).
+1. Um sicherzustellen, dass alle Änderungen mit der Kanaldatenbank synchronisiert werden, wählen Sie **Kanaldatenbank \> Vollständige Datensynchronisierung** für die Commerce Scale Unit.
 
 Stellen Sie bei Aktivitäten nach der Bereitstellung in der Commerce-Zentralverwaltung sicher, dass die juristische Person **USRT** immer ausgewählt ist.
 
@@ -52,7 +52,7 @@ Stellen Sie bei Aktivitäten nach der Bereitstellung in der Commerce-Zentralverw
 Gehen Sie in der Commerce-Zentralverwaltung folgendermaßen vor, um einen Mitarbeiter Ihrer Identität zuzuordnen.
 
 1. Verwenden Sie das Menü auf der linken Seite, um zu **Module \> Einzelhandel und Handel \> Mitarbeiter \> Arbeitskräfte** zu gehen.
-1. Suchen Sie in der Liste den folgenden Datensatz, und wählen Sie ihn aus: **000713 - Andrew Collette**.
+1. Suchen Sie in der Liste den folgenden Datensatz, und wählen Sie ihn aus: **000713 - Andrew Collette**. Dieser Beispielbenutzer ist mit dem Geschäft in San Francisco verknüpft, das im nächsten Abschnitt verwendet wird.
 1. Wählen Sie im Aktionsbereich **Commerce** aus.
 1. Wählen Sie **Vorhandene Identität zuordnen** aus.
 1. Geben Sie im Feld **E-Mail** rechts neben **Suchen mithilfe von E-Mails** Ihre E-Mail-Adresse ein.
@@ -76,24 +76,24 @@ Führen Sie diese Schritte in LCS aus, um Cloud POS zu aktivieren.
 1. Wählen Sie **Aktivieren** aus. Sie werden abgemeldet und zur POS-Anmeldeseite weitergeleitet.
 1. Sie können sich nun bei der Cloud POS-Erfahrung mit der Operator-ID **000713** und dem Kennwort **123** anmelden.
 
-## <a name="set-up-your-site-in-commerce"></a>Ihre Site in Commerce einrichten
+## <a name="set-up-your-e-commerce-sites"></a>Ihre Sites in E-Commerce einrichten
 
-Gehen Sie folgendermaßen vor, um Ihre Auswertungswebsite in Commerce einzurichten.
+Es gibt drei verfügbare E-Commerce-Demoseiten: Fabrikam, Adventure Works und Adventure Works Business. Befolgen Sie die nachstehenden Schritte, um jede Demo-Site zu konfigurieren.
 
 1. Melden Sie sich beim Website-Generator mit der URL an, die Sie bei der Initialisierung von E-Commerce während der Bereitstellung notiert haben (siehe [E-Commerce initialisieren](provisioning-guide.md#initialize-e-commerce)).
-1. Wählen Sie die Site **Fabrikam** aus, um das Einstellungsdialogfeld der Site zu öffnen.
-1. Wählen Sie die Domäne aus, die Sie bei der Initialisierung von E-Commerce eingegeben haben.
-1. Wählen Sie als Standardkanal **Erweiterter Fabrikam Online-Store** aus. (Stellen Sie sicher, dass Sie **erweiterter** Online-Store auswählen.)
+1. Wählen Sie die Site (**Fabrikam**, **Adventure Works** oder **Adventure Works Business**) aus, um das Dialogfeld „Site-Setup“ zu öffnen.
+1. Wählen Sie die Domäne aus, die Sie bei der Initialisierung von Commerce eingegeben haben.
+1. Wählen Sie in der Zentrale den vorkonfigurierten Onlineshop-Kanal (**Erweiterter Online-Shop von Fabrikam**, **AW-Online-Shop** oder **AW Business Online-Shop**) aus, der dem Standardkanal entspricht.
 1. Wählen Sie als Standardsprache **de-de** aus.
-1. Lassen Sie das Feld **Pfad** unverändert.
+1. Konfigurieren Sie die Pfadfelder. Dies kann für eine einzelne Sites leer gelassen werden, muss aber konfiguriert werden, wenn derselbe Domänenname für mehrere Sites verwendet wird. Wenn der Domänenname beispielsweise `https://www.constoso.com` lautet, können Sie einen leeren Pfad für Fabrikam (`https://contoso.com`) verwenden, und verwenden dann „aw“ für Adventure Works (`https://contoso.com/aw`) und „awbusiness“ für die Adventure Works Business-Site (`https://contoso.com/awbusiness`).
 1. Wählen Sie **OK** aus. Die Liste der Seiten auf der Site wird angezeigt.
-1. Wiederholen Sie die Schritte 2-7 für die **AdventureWorks**-Site (die dem **AW-Onlineshop**-Kanal zugeordnet ist) und die **AdventureWorks Business**-Site (die dem **AW Business-Onlineshop**-Kanal zugeordnet ist). Wenn das **Pfad**-Feld für die Fabrikam-Site leer ist, müssen Sie Pfade für die beiden AdventureWorks-Sites (z. B. „aw“ und „awbusiness“) hinzufügen.
+1. Wiederholen Sie optional die Schritte 2–7, um die anderen Demo-Sites nach Bedarf zu konfigurieren.
 
 ## <a name="enable-jobs"></a>Aufträge aktivieren
 
 Um Jobs in Commerce zu ermöglichen, folgen Sie diesen Schritten.
 
-1. Melden Sie sich bei der Umgebung (HQ) an.
+1. Melden Sie sich in der Umgebung der Zentralverwaltung an.
 1. Verwenden Sie das Menü auf der linken Seite, um zu **Retail and Commerce \> Anfragen und Berichte \> Batch-Jobs** zu gehen.
 
     Die verbleibenden Schritte dieses Verfahrens müssen für jeden der folgenden Jobs ausgeführt werden:
@@ -146,12 +146,11 @@ Um Testtransaktionen auf der Site durchzuführen, können Sie diese Testkreditka
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nachdem die Bereitstellungs- und Konfigurationsschritte abgeschlossen sind, können Sie mit der Verwendung Ihrer Auswertungsumgebung beginnen. Verwenden Sie die URL des Commerce-Website-Generators, um zur Erstellungsumgebung zu gelangen. Verwenden Sie die URL der Commerce-Website, um zur Umgebung der Einzelhandelskundenwebsite zu wechseln.
+Nachdem die Bereitstellungs- und Konfigurationsschritte abgeschlossen sind, können Sie mit der Verwendung Ihrer Sandbox-Umgebung beginnen. Verwenden Sie die URL des Commerce-Website-Generators, um zur Erstellungsumgebung zu gelangen. Verwenden Sie die URL der Commerce-Website, um zur Umgebung der Einzelhandelskundenwebsite zu wechseln.
 
-Informationen zum Konfigurieren optionaler Funktionen für Ihre Commerce-Auswertungsumgebung erhalten Sie unter [Optionale Funktionen für eine Commerce-Auswertungsumgebung konfigurieren](cpe-optional-features.md).
+Informationen zum Konfigurieren optionaler Funktionen für Ihre Commerce-Sandbox-Umgebung erhalten Sie unter [Optionale Funktionen für eine Commerce-Sandbox-Umgebung konfigurieren](cpe-optional-features.md).
 
-> [!NOTE]
-> Commerce-Evaluierungsumgebungen werden mit einem vorinstallierten Azure Active Directory (Azure AD) business-to-consumer (B2C) Mandant zu Demonstrationszwecken geliefert. Die Konfiguration eines eigenen Azure AD B2C-Mandanten ist für Evaluierungsumgebungen nicht erforderlich. Wenn Sie jedoch die Evaluierungsumgebung so konfigurieren, dass Sie Ihren eigenen Azure AD B2C-Mandanten verwenden, stellen Sie bitte sicher, dass Sie ``https://login.commerce.dynamics.com/_msdyn365/authresp`` als Antwort-URL in der Azure AD B2C-Anwendung über das Azure-Portal hinzufügen.
+Damit sich E-Commerce-Benutzer bei der E-Commerce-Site anmelden können, ist eine zusätzliche Konfiguration erforderlich, um die Site-Authentifizierung über Azure Active Directory Business-to-Consumer (B2C) zu aktivieren. Anweidungen finden Sie unter [Einrichten eines B2C-Mandanten in Commerce](set-up-b2c-tenant.md).
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
@@ -177,15 +176,11 @@ Demodaten, die in Commerce-Version 10.0.26 und früher ausgeliefert wurden, hatt
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Dynamics 365 Commerce-Evaluierungsumgebung – Übersicht](cpe-overview.md)
+[Eine Dynamics 365 Commerce-Sandbox-Umgebung bereitstellen](provisioning-guide.md)
 
-[Bereitstellen einer Dynamics 365 Commerce-Auswertungsumgebung](provisioning-guide.md)
+[Optionale Funktionen für eine Dynamics 365 Commerce-Sandbox-Umgebung konfigurieren](cpe-optional-features.md)
 
-[Optionale Funktionen für eine Dynamics 365 Commerce-Auswertungsumgebung konfigurieren](cpe-optional-features.md)
-
-[BOPIS in einer Dynamics 365 Commerce-Auswertungsumgebung konfigurieren](cpe-bopis.md)
-
-[Dynamics 365 Commerce-Auswertungsumgebung – FAQ](cpe-faq.md)
+[BOPIS in einer Dynamics 365 Commerce-Sandbox-Umgebung konfigurieren](cpe-bopis.md)
 
 [Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

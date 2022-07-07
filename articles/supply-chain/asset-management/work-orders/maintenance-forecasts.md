@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c2dbd968a22f2bded29cff3517dacbafc79ff8f1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: be6ef12f34e85b90c24c43c6e55ad169c271810a
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902110"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016622"
 ---
 # <a name="maintenance-forecasts"></a>Wartungsprognose
 
@@ -32,7 +32,7 @@ Wenn Sie einen Arbeitsauftrag erstellen, erstellen Sie Arbeitsauftragseinzelvorg
 
 Sie könnten Planungspositionen zu einem Arbeitsauftrag hinzufügen oder aus diesem löschen. Die Einrichtung des Arbeitsauftrags-Lebenszykluszustands, der zugehörige Projekttyp und die mit dem Projekttyp verbundenen Stufenregeln bestimmen, ob Sie Planungspositionen hinzufügen oder bearbeiten können. Weitere Informationen über Lebenszyklusstatus von Arbeitsaufträgen und zugehörigen Projektphasen finden Sie unter [Planungen, Arbeitsaufträge und Projekte](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
-1. Wählen Sie **Anlagenverwaltung** > **Allgemein** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** aus.
+1. Wählen Sie **Anlagenverwaltung** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** aus.
 
 2. Wählen Sie den Arbeitsauftrag in der Liste aus, und wählen Sie dann im Aktivitätsbereich > auf der Registerkarte **Arbeitsauftrag** > in der Gruppe **Projekt** **Planung** aus. Auf der Seite **Arbeitsauftragswartungsprognose** werden Planungspositionen des Wartungsauftragstyps, der im Arbeitsauftragseinzelvorgang ausgewählt wurde, angezeigt.
 

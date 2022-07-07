@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 90b41b57dfa6db8b5874bbc2d4bcac7b4c634f20
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5ab715be3bfdc380f5736fadd901af3ed78d7035
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860927"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016303"
 ---
 # <a name="create-an-asset"></a>Eine Anlage erstellen
 
@@ -30,7 +30,7 @@ ms.locfileid: "8860927"
 
 In diesem Artikel wird beschrieben, wie eine Anlage in der Anlageverwaltung erstellt wird.
 
-1. Klicken Sie auf **Anlagenverwaltung** > **Gemeinsam** > **Anlagen** > **Alle Anlagen** oder **Aktive Anlagen**.
+1. Klicken Sie auf **Anlagenverwaltung** > **Anlagen** > **Alle Anlagen** oder **Aktive Anlagen**.
 2. Klicken Sie auf die Schaltfläche **Neu**.
 3. Im Dialogfeld **Anlagen erstellen** geben Sie die DAten zu **Anlagen** (Die Anlagen-Kennung) und den Anlagennamen ein. Wählen Sie das Datum und die Zeit für die Anlage im Feld **Effektiv**. Ab diesem Datum sind Sie in der Lage, die Anlage auf einem funktionalen Stnadort zu installieren und Die Anlage in der Anlagenstruktur zu verschieben oder zu ersetzen.
 4. Im Feld **Anlagentyp** wählen Sie den Anlagentyp für die Anlage aus (Pflichtfeld). Bei Bedarf wählen Sie **Anlagenhersteller** und **Anlagenmodell** für die Anlage aus. Wenn nur ein Produkt eingerichtet wurde, wird dieses Produkt automatisch im Feld **Anlagenhersteller** ausgewählt. Die Auswahl, die in den Feldern **Anlagenhersteller** und **Anlagenmodell** verfügbar ist, hängt von der Einstellung in [Anlagenhersteller und -Modelle](../setup-for-objects/product-and-model.md) ab.

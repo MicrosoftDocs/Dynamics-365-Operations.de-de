@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1454f41bb0b43e22c5278463f63aa4178696eef
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0a6b5a2904d21782ae422d06eaaf03c5d5e51ab9
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872123"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015578"
 ---
 # <a name="move-replace-and-install-assets"></a>Anlagen verschieben, ersetzen und installieren
 
@@ -44,7 +44,7 @@ Verwenden Sie die Funktion **Anlage verschieben**, um eine Anlage entweder in ei
 > [!NOTE]
 > Verwenden Sie diese Funktion nicht, wenn Anlagen repariert oder vorübergehend ersetzt werden. Verwenden Sie stattdessen die Funktionen **Anlage ersetzen**, die weiter unten in diesem Artikel beschrieben wird.
 
-1. Wählen Sie **Anlagenverwaltung** \> **Allgemeines** \> **Anlagen** \> **Alle Anlagen** oder **Aktive Anlagen**.
+1. Wählen Sie **Anlagenverwaltung** \> **Anlagen** \> **Alle Anlagen** oder **Aktive Anlagen**.
 2. Wählen Sie in der Liste die zu verschiebende Anlage aus. Wenn die Anlage untergeordnete Anlagen enthält, verschieben Sie auch diese Anlagen.
 3. Wählen Sie **Anlage verschieben** aus.
 4. Um die Anlagen so zu verschieben, dass sie Teil einer Anlagenstruktur wird, wählen Sie die neue übergeordnete Anlage im Feld **Übergeordnete Anlage** aus. Wenn Sie eine untergeordnete Anlage verschieben und sie zu einer eigenständige Anlage machen möchten, die keine Beziehungen zu einer Struktur hat, lassen Sie das Feld **Übergeordnete Anlage** leer.
@@ -58,7 +58,7 @@ Verwenden Sie die Funktion **Anlage ersetzen** im Zusammenhang mit Reparaturen, 
 > [!NOTE]
 > Wenn eine Werkstatt einer Produktionsabteilung zugeordnet ist, können Sie funktionale Standorte wie **Reparatur**, **Ausschuss** und **Lager** erstellen, um die Reparatur und die Ersetzung von Anlagen zu behandeln.
 
-1. Wählen Sie **Anlagenverwaltung** \> **Allgemeines** \> **Anlagen** \> **Alle Anlagen** oder **Aktive Anlagen**.
+1. Wählen Sie **Anlagenverwaltung** \> **Anlagen** \> **Alle Anlagen** oder **Aktive Anlagen**.
 2. Wählen Sie in der Liste die zu ersetzende untergeordnete Anlage aus. Wenn die Anlage untergeordnete Anlagen enthält, ersetzen Sie auch diese Anlagen.
 3. Wählen Sie **Anlage ersetzen** aus.
 
@@ -79,7 +79,7 @@ Verwenden Sie die Funktion **Anlage installieren**, um eine Anlagenstruktur an e
 > [!NOTE]
 > Wählen Sie immer eine übergeordnete Anlage aus. Die übergeordnete Anlage und die zugehörigen untergeordneten Anlagen werden an den ausgewählten funktionalen Standort verschoben.
 
-1. Wählen Sie **Anlagenverwaltung** \> **Allgemeines** \> **Anlagen** \> **Alle Anlagen** oder **Aktive Anlagen**.
+1. Wählen Sie **Anlagenverwaltung** \> **Anlagen** \> **Alle Anlagen** oder **Aktive Anlagen**.
 2. Wählen Sie in der Liste die übergeordnete Anlage aus, die an einem anderen funktionalen Standort installiert werden soll.
 3. Wählen Sie **Anlage installieren** aus.
 

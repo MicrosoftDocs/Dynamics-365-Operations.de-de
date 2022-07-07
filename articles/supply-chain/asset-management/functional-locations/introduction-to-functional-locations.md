@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a1c8c4db9aee68584ab35949745132091a34a58
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a94b366dc725db3af01c156ae517a241213f7d52
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882836"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016042"
 ---
 # <a name="introduction-to-functional-locations"></a>Einführung in funktionale Standorte
 
@@ -59,7 +59,7 @@ Nachdem Sie eine funktionale Standorthierarchie erstellt haben, besteht der näc
 
 ## <a name="all-functional-locations"></a>Alle funktionalen Standorte
 
-Wählen Sie **Anlagenverwaltung** \> **Allgemeines** \> **Funktionale Standorte** \> **Alle funktionalen Standorte**, um die Listenseite **Aktive funktionale Standorte** zu öffnen. Auf dieser Seite werden alle funktionalen Standorte und einige der Informationen angezeigt, die sich auf die einzelnen Standorte beziehen. Um nur aktive funktionale Standorte anzuzeigen, wählen Sie **Aktive funktionale Standorte** aus. Um nur die funktionalen Standorte anzuzeigen, denen Sie als Bearbeiter zugeordnet sind, wählen Sie **Meine aktiven funktionalen Standorte** aus. (Diese Beziehung wird auf der Seite **Arbeitskräfte** festgelegt. Weitere Informationen finden Sie unter [Wartungsarbeiter und Arbeitskräftegruppen](../setup-for-objects/workers-and-worker-groups.md).)
+Wählen Sie **Anlagenverwaltung** \> **Funktionale Standorte** \> **Alle funktionalen Standorte**, um die Listenseite **Aktive funktionale Standorte** zu öffnen. Auf dieser Seite werden alle funktionalen Standorte und einige der Informationen angezeigt, die sich auf die einzelnen Standorte beziehen. Um nur aktive funktionale Standorte anzuzeigen, wählen Sie **Aktive funktionale Standorte** aus. Um nur die funktionalen Standorte anzuzeigen, denen Sie als Bearbeiter zugeordnet sind, wählen Sie **Meine aktiven funktionalen Standorte** aus. (Diese Beziehung wird auf der Seite **Arbeitskräfte** festgelegt. Weitere Informationen finden Sie unter [Wartungsarbeiter und Arbeitskräftegruppen](../setup-for-objects/workers-and-worker-groups.md).)
 
 Wählen Sie auf der Listenseite **Alle funktionalen Standorte** eine Verknüpfung in der Spalte **Funktionaler Standort** aus, um die Details für den ausgewählten Datensatz anzuzeigen. Um den funktionalen Standort zu bearbeiten, wählen Sie die Schaltfläche **Bearbeiten**. Die Detailansicht zeigt detaillierte Informationen an, die sich auf den Standort beziehen. Sie enthält auch den Bereich **Zugehörige Informationen** auf der rechten Seite. Dieser Bereich zeigt die Hierarchie des funktionalen Standorts an. Sie können den Bereich **Zugehörige Informationen** erweitern bzw. reduzieren.
 

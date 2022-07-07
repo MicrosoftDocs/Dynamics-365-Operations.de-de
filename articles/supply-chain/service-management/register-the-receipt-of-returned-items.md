@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4ff01a8c4ed5fb8372ff7b498d0febdcd2f1e89
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: f4942e455350844ac5614e70fef21b37461540a6
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672765"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017288"
 ---
 # <a name="register-the-receipt-of-returned-items"></a>Erfassen des Empfangs zurückgelieferter Artikel 
 
@@ -87,7 +87,7 @@ Mithilfe des Formulars **Wareneingangsübersicht** können Sie eine Rücklieferu
 
 Alternativ zur **Verwendung des Formulars** können Sie das Formular **Erfassung** verwenden, um den Eingang zurückgelieferter Artikel zu erfassen.
 
-1.  Klicken auf **Vertrieb und Marketing** \> **Gemeinsam** \> **Rücklieferungen** \> **Alle Rücklieferungen**. Erstellen Sie eine neue Rücklieferung, oder öffnen Sie die Rücklieferung in der Liste. Wählen Sie auf der Inforegister **Positionen** die Rücklieferungsposition aus. Klicken Sie auf **Position aktualisieren** und dann auf **Registrierung**.
+1.  Klicken auf **Vertrieb und Marketing** \> **Retouren** \> **Alle Rücklieferungen**. Erstellen Sie eine neue Rücklieferung, oder öffnen Sie die Rücklieferung in der Liste. Wählen Sie auf der Inforegister **Positionen** die Rücklieferungsposition aus. Klicken Sie auf **Position aktualisieren** und dann auf **Registrierung**.
 
 2.  Weisen Sie im Feld **Dispositionscode** einen Dispositionscode zu, und klicken Sie anschließend auf **O** K.
     

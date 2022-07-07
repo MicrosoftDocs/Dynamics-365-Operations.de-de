@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 503150e7cfc580821c5ed8d4c4c9b56998f6ff13
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f7c36fe230db38bfdbfd70fec7bdfd0a313d5a15
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869719"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015840"
 ---
 # <a name="create-functional-locations"></a>Funktionale Standorte erstellen
 
@@ -41,7 +41,7 @@ Um mit funktionalen Standorten zu arbeiten beginnen Sie, indem Sie zwei „Kateg
 
 Wenn Sie funktionale Standorte verwenden, beginnen Sie mit dem Erstellen eines Standardstandortes, der verwendet wird, wenn Sie neue Anlagen erstellen. Dieser funktionale Standort ist jener, den Sie auswählen unter **Anlagenverwaltung** > **Einstellungen** > **Anlagenverwaltungparameter** > **Anlagen** Link > Feld **Funktionaler Standardstandort**. Der funktionale Standardstandort kann verwendet werden, wenn Sie neue Anlagen erstellen und Sie noch keine funktionale Standortstruktur für diese Anlagen eingerichtet haben.
 
-1. Wählen Sie **Anlagenverwaltung** > **Allgemein** > **Funktionale Standorte** > **Alle funktionalen Standorte** aus.  
+1. Wählen Sie **Anlagenverwaltung** > **Funktionale Standorte** > **Alle funktionalen Standorte** aus.  
 2. Wählen Sie **Alle funktionalen Standorte** wählen Sie **Neu** aus.
 3. Geben Sie eine Kennung im Feld **Funktionaler Standort** ein, beispielsweise „0000“ oder „Standard“, um anzugeben, dass dies ein spezieller funktionaler Standort ist.
 4. Hier können Sie Namen für den funktionalen Standort im Feld **Name** eingeben.
@@ -53,7 +53,7 @@ Wenn Sie funktionale Standorte verwenden, beginnen Sie mit dem Erstellen eines S
 
 Im Folgenden wird erläutert, wie Sie die funktionalen Standorte erstellen, die für Wartungsverwaltung in Ihrem Unternehmen erforderlich sind.
 
-1. Wählen Sie **Anlagenverwaltung** > **Allgemein** > **Funktionale Standorte** > **Alle funktionalen Standorte** aus. Sie können einen funktionalen Standort in der Rasteransicht oder der Detailansicht erstellen.
+1. Wählen Sie **Anlagenverwaltung** > **Funktionale Standorte** > **Alle funktionalen Standorte** aus. Sie können einen funktionalen Standort in der Rasteransicht oder der Detailansicht erstellen.
 2. Wählen Sie die Schaltfläche **Neu**.
 3. Geben Sie eine Kennung im Feld **Funktionaler Standort** ein.
 4. Hier können Sie einen Namen für den funktionalen Standort im Feld **Name** eingeben.

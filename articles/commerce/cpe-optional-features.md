@@ -1,8 +1,8 @@
 ---
-title: Optionale Funktionen für eine Dynamics 365 Commerce-Evaluierungsumgebung konfigurieren
-description: In diesem Artikel wird erläutert, wie optionale Funktionen für eine Microsoft Dynamics 365 Commerce-Auswertungsumgebung konfiguriert werden.
+title: Optionale Funktionen für eine Dynamics 365 Commerce-Sandboxumgebung konfigurieren
+description: In diesem Artikel wird erläutert, wie optionale Funktionen für eine Microsoft Dynamics 365 Commerce-Sandboxumgebung konfiguriert werden.
 author: psimolin
-ms.date: 07/16/2020
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,24 +14,24 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 39d4784e21c4fb42ca218d507616d49eff309ee1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 201628eb0c3e81d5fee0df9e53d93f5b1839adfb
+ms.sourcegitcommit: 252cb41c3029b623354698463f7b44a29fd9f184
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861913"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9013237"
 ---
-# <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Optionale Funktionen für eine Dynamics 365 Commerce-Evaluierungsumgebung konfigurieren
+# <a name="configure-optional-features-for-a-dynamics-365-commerce-sandbox-environment"></a>Optionale Funktionen für eine Dynamics 365 Commerce-Sandboxumgebung konfigurieren
 
 [!include [banner](includes/banner.md)]
 
-In diesem Artikel wird erläutert, wie optionale Funktionen für eine Microsoft Dynamics 365 Commerce-Auswertungsumgebung konfiguriert werden.
+In diesem Artikel wird erläutert, wie optionale Funktionen für eine Microsoft Dynamics 365 Commerce-Sandboxumgebung konfiguriert werden.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Wenn Sie die Transaktions-E-Mail-Funktionen bewerten möchten, müssen die folgenden Voraussetzungen erfüllt sein:
+Wenn Sie eine Demo der Transaktions-E-Mail-Funktionen ausführen möchten, müssen die folgenden Voraussetzungen erfüllt sein:
 
-- Ihnen steht ein E-Mail-Server (Simple Mail Transfer Protocol \[SMTP\]-Server) zur Verfügung, der über das Microsoft Azure-Abonnement verwendet werden kann, auf dem Sie die Auswertungsumgebung bereitgestellt haben.
+- Ihnen steht ein E-Mail-Server (Simple Mail Transfer Protocol \[SMTP\]-Server) zur Verfügung, der über das Microsoft Azure-Abonnement verwendet werden kann, auf dem Sie die Sandboxumgebung bereitstellen.
 - Sie verfügen über den vollqualifizierten Domänennamen (FQDN)/die vollqualifizierte IP-Adresse, die SMTP-Portnummer und die Authentifizierungsdetails des Servers.
 
 ## <a name="configure-the-image-back-end"></a>Konfigurieren Sie das Image-Backend
@@ -39,10 +39,10 @@ Wenn Sie die Transaktions-E-Mail-Funktionen bewerten möchten, müssen die folge
 ### <a name="find-your-media-base-url"></a>Auffinden Ihrer medienbasierten URL
 
 > [!NOTE]
-> Bevor Sie diesen Vorgang abschließen können, müssen Sie die Schritte in [Richten Sie Ihre Site in Commerce ein](cpe-post-provisioning.md#set-up-your-site-in-commerce) abschließen.
+> Bevor Sie diesen Vorgang abschließen können, müssen Sie die Schritte in [Richten Sie Ihre Site in Commerce ein](cpe-post-provisioning.md#set-up-your-e-commerce-sites) abschließen.
 
 1. Melden Sie sich beim Commerce-Website-Generator mit der URL an, die Sie bei der Initialisierung von E-Commerce während der Bereitstellung notiert haben (siehe [E-Commerce initialisieren](provisioning-guide.md#initialize-e-commerce)).
-1. Öffnen Sie die Site **Fabrikam**.
+1. Öffne die Website **Fabrikam**, **Adventure Works** oder **Adventure Works Business**, mit der Sie arbeiten möchten.
 1. Wählen Sie im linken Menü **Medienbibliothek** aus.
 1. Wählen Sie ein einzelnes Image-Medienobjekt aus.
 1. Suchen Sie im Eigenschafteninspektor rechts die Eigenschaft **Öffentliche URL**. Der Wert ist eine URL. Hier ist ein Beispiel:
@@ -98,9 +98,9 @@ Für jedes Transaktionsereignis, für das Sie E-Mails senden möchten, müssen S
 
 ## <a name="customize-email-templates"></a>E-Mail-Vorlagen anpassen
 
-Möglicherweise möchten Sie die E-Mail-Vorlagen so anpassen, dass sie unterschiedliche Bilder verwenden. Oder Sie möchten die Links in den Vorlagen aktualisieren, damit sie in Ihre Auswertungsumgebung gelangen. In dieser Prozedur wird erläutert, wie Sie die Standardvorlagen herunterladen, anpassen und die Vorlagen im System aktualisieren.
+Möglicherweise möchten Sie die E-Mail-Vorlagen so anpassen, dass sie unterschiedliche Bilder verwenden. Oder Sie möchten die Links in den Vorlagen aktualisieren, damit sie in Ihre Sandboxumgebung gelangen. In dieser Prozedur wird erläutert, wie Sie die Standardvorlagen herunterladen, anpassen und die Vorlagen im System aktualisieren.
 
-1. Laden Sie über einen Webbrowser die [Microsoft Dynamics 365 Commerce-Auswertungsstandard-E-Mail-Vorlagen-ZIP-Datei](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) auf Ihren lokalen Computer herunter. Diese Datei enthält die folgenden HTML-Dokumente:
+1. Laden Sie über einen Webbrowser die [Microsoft Dynamics 365 Commerce-Demostandard-E-Mail-Vorlagen-ZIP-Datei](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) auf Ihren lokalen Computer herunter. Diese Datei enthält die folgenden HTML-Dokumente:
 
     - Auftragsbestätigungsvorlage
     - Geschenkkartenvorlage ausstellen
@@ -167,15 +167,11 @@ Die folgenden Token werden durch Werte für jedes Produkt im Auftrag ersetzt.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Dynamics 365 Commerce-Evaluierungsumgebung – Übersicht](cpe-overview.md)
+[Eine Dynamics 365 Commerce-Sandbox-Umgebung bereitstellen](provisioning-guide.md)
 
-[Bereitstellen einer Dynamics 365 Commerce-Auswertungsumgebung](provisioning-guide.md)
+[Eine Dynamics 365 Commerce-Sandbox-Umgebung konfigurieren](cpe-post-provisioning.md)
 
-[Konfigurieren einer Dynamics 365 Commerce-Auswertungsumgebung](cpe-post-provisioning.md)
-
-[BOPIS in einer Dynamics 365 Commerce-Auswertungsumgebung konfigurieren](cpe-bopis.md)
-
-[Dynamics 365 Commerce-Auswertungsumgebung – FAQ](cpe-faq.md)
+[BOPIS in einer Dynamics 365 Commerce-Sandbox-Umgebung konfigurieren](cpe-bopis.md)
 
 [Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8bee66e2d35af6daa8d86539e52b558bde3c79a1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ccd14493aac6484dc54ccf51ae159a071c8697a5
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893699"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015608"
 ---
 # <a name="create-assets-based-on-purchase-orders"></a>BestellungErstellen von Anlagen basierend auf den Bestellungen
 
@@ -45,7 +45,7 @@ Zuerst richten Sie Artikel ein, die für das Erstellen von Anlagen für eine Bes
 
 ## <a name="create-assets-from-pending-assets"></a>Anlagen erstellen aus den ausstehenden Anlagen
 
-1. Klicken Sie auf **Anlage-Management** > **Gemeinsam** > **Anlagen** > **Ausstehende Anlagen**.
+1. Klicken Sie auf **Anlagenmanagement** > **Anlagen** > **Ausstehende Anlagen**.
 2. Sie finden eine aktualisierte Liste der Bestellungen auf der Grundlage der Artikel, die unter **Anlageartikel** ausgewählt werden.
 3. Sie können den Status von Bestellungen filtern, um auszuwählen, in welchem Lebenszyklusstatus die Anlage erstellt werden soll. Beispielsweise sollten Sie nur Anlagen erstellen, wenn ein Produktzugang für eine Bestellung gebucht wurde.
 4. Wählen Sie den Link **Referenznummer** auf einer Bestellposition aus, um die detaillierte Informationen zum Artikel anzuzeigen.

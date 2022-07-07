@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7c0255da0b8ebc248fd074c88082777afc9d36d6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ec214ef4ebb6ecb72c1684c515df25d3c2403c14
+ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882981"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9027135"
 ---
 # <a name="administration-overview"></a>Überblick über die Verwaltung
 
@@ -108,8 +108,8 @@ Sehen Sie in den Videos nach, die jetzt im [YouTube-Kanal zu Microsoft Dynamics 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Welche Neuerungen oder Änderungen bietet Human Resources?](hr-admin-whats-new.md)
+- [Neuerungen und Änderungen in Human Resources](hr-admin-whats-new.md)
 - [Entwicklerhandbuch](hr-developer-overview.md)
-- [Benutzerhandbuch](hr-hrpro-overview.md)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bf78d53e8e2d7bee24a0a7789ca1a96cdd8f1415
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 588da2a217a56d2bc25f85c9a10c6589f90b16a1
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886043"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015084"
 ---
 # <a name="register-consumption"></a>Verbrauch registrieren
 
@@ -35,7 +35,7 @@ In einigen Fällen können Sie einem Arbeitsauftrag Prognosezeile hinzufügen od
 >[!NOTE]
 >Es ist möglich, eine automatische Buchung von Erfassungen über den Lebenszyklus eines Arbeitsauftrags einzurichten. Weitere Informationen finden Sie unter [Lebenszykluszustand von Arbeitsaufträgen](../setup-for-work-orders/work-order-lifecycle-states.md).
 
-1. Klicken Sie auf **Anlagenverwaltung** > **Allgemein** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge**.
+1. Klicken Sie auf **Anlagenmanagement** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge**.
 
 2. Wählen Sie den Arbeitsauftrag aus und klicken Sie auf **Erfassungen**.
 
@@ -61,7 +61,7 @@ Der folgende Screenshot zeigt ein Beispiel für Stunden- und Artikelregistrierun
 
 Wenn ein Arbeitsauftrag mehrere Arbeitsaufträge enthält, können Sie die Arbeitszeiten mit der Funktionalität **Stundenteilung** erfassen, d.h. eine Stundenregistrierungszeile kann gleichmäßig auf jeden Arbeitsauftrag verteilt werden.
 
-1. Klicken Sie auf **Anlagenverwaltung** > **Allgemein** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge**.
+1. Klicken Sie auf **Anlagenmanagement** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge**.
 
 2. Wählen Sie den Arbeitsauftrag aus und klicken Sie auf **Erfassungen**.
 

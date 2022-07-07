@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4ae943592c18dd0383aafbce59617cc983dc979b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 25561802996514f6f60fc9400c22dc61a30ef1c8
+ms.sourcegitcommit: bad64015da0c96a6b5d81e389708281406021d4f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907289"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9023787"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Kreditorenzusammenarbeit mit externen Kreditoren
 
@@ -29,9 +29,6 @@ ms.locfileid: "8907289"
 Das **Kreditorenzusammenarbeit** Modul richtet sich an Kreditoren, die keine elektronische Datenaustausch-Integration (EDI) mit Microsoft Dynamics 365 Supply Chain Management haben. Es erlaubt es Kreditoren, mit Bestellungen, Rechnungen, Lieferbestandsinformationen und Angebotsanforderungen zu arbeiten, und es ermöglicht ihnen auch den Zugriff auf Teile ihrer Kreditorenmasterdaten. In diesem Artikel wird erklärt, wie Sie mit externen Kreditoren zusammenarbeiten können, die die Kreditorenzusammenarbeitsschnittstelle verwenden, um mit Bestellungen, Angebotsanforderungen und Lieferbestand zu arbeiten. Außerdem wird erklärt, wie ein bestimmter Kreditor aktiviert wird, um Kreditorenzusammenarbeit zu verwenden, und wie die Anzeige der Informationen definiert wird, die alle Kreditoren sehen, wenn Sie auf eine Bestellung antworten.
 
 Weitere Informationen dazu, was externe Kreditoren in der Kreditorenzusammenarbeitschnittstelle tun können, finden Sie unter [Kreditorenzusammenarbeit mit Debitoren](vendor-collaboration-work-customers-dynamics-365-operations.md)
-
-> [!NOTE]
-> Die Informationen zur Kreditorenzusammenarbeit in diesem Artikel gelten nur für die aktuelle Version von Supply Chain Management. In Microsoft Dynamics AX 7.0 (Februar 2016) und Microsoft Dynamics AX-Anwendungsversion 7.0.1 (Mai 2016) arbeiten Sie mit Kreditoren zusammen, indem Sie das Modul **Kreditorenportal** verwenden. Informationen zum Modul **Kreditorenportal** finden Sie unter [Zusammenarbeiten mit Kreditoren mithilfe des Kreditorenportals](collaborate-vendors-vendor-portal.md).
 
 Weitere Informationen dazu, wie Kreditoren die Kreditorenzusammenarbeit in Rechnungsstellungsprozessen verwenden können, finden Sie unter [Kreditorenzusammenarbeit-Rechnungsstellungsarbeitsbereich](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md) Informationen darüber, wie neue Nutzer der Kreditorezusammenarbeit bereitgestellt werden, finden Sie unter [Kreditorenzusammenarbeitbenutzer verwalten](manage-vendor-collaboration-users.md).
 
@@ -57,8 +54,25 @@ Ein Administrator konfiguriert die allgemeinen Einstellungen für Kreditorenzusa
 
 Bevor Benutzerkonten für einen externen Lieferanten erstellt werden können, müssen Sie das Kreditorenkonto konfigurieren, sodass der Kreditor die Kreditorenzusammenarbeit nutzen kann. Legen Sie auf der Seite **Kreditoren** auf der Registerkarte **Allgemein** das Feld **Zusammenarbeitsaktivierung** fest. Die folgenden Optionen sind verfügbar:
 
-- **Aktiv (Bestellung wird automatisch bestätigt)** – Bestellungen werden automatisch bestätigt, wenn der Kreditor diese akzeptiert ohne Änderungen.
+- **Aktiv (Bestellung wird automatisch bestätigt)** – Bestellungen werden automatisch bestätigt, wenn der Kreditor diese akzeptiert ohne Änderungen. Wenn Sie diese Option verwenden, planen Sie unbedingt den *Akzeptierte Bestellungen aus den Kreditor-Kooperationen bestätigen*-Batch-Job, der für die Verarbeitung der Rückmeldungen zuständig ist. Anweisungen finden Sie im nächsten Abschnitt.
 - **Aktiv (Bestellung wird nicht automatisch bestätigt)** – Ihre Organisation muss Bestellungen manuell bestätigen, nachdem der Kreditor diese akzeptiert hat.
+
+### <a name="scheduling-the-auto-confirmation-batch-job"></a>Planen des Batch-Jobs für die automatische Bestätigung
+
+Wenn Sie die Option **Aktiv (PO wird automatisch bestätigt)** für einen oder mehrere Ihrer Lieferanten (wie im vorherigen Abschnitt beschrieben) verwenden, müssen Sie den *Akzeptierte Bestellungen aus den Kreditor-Kooperationen bestätigen* Batch-Job beenden, der für die Verarbeitung und Bestätigung Ihrer Bestellungen zuständig ist. Andernfalls werden niemals automatische Bestätigungen ausgeführt. Verwenden Sie die folgende Prozedur, um diesen Batch-Job zu planen.
+
+1. Wechseln Sie zu **Beschaffung \> Bestellung \> Bestellbestätigung \> Akzeptierte Bestellungen aus den Kreditor-Kooperationen bestätigen**.
+1. Wählen Sie im **Akzeptierte Bestellungen aus den Kreditor-Kooperationen bestätigen**-Dialogfeld, im **Im Hintergrund ausführen**-Inforegister **Serie** aus.
+1. Definieren Sie im **Wiederholung definieren**-Dialogfeld den Zeitplan aus, nach dem der Job ausgeführt werden soll. Berücksichtigen Sie bei der Auswahl Ihres Zeitplans die folgenden Punkte:
+
+    - Wenn Ihr System eine große Datenmenge verarbeitet und viele Batch-Jobs ausführt, kann die Leistung ein Problem darstellen. In diesem Fall sollten Sie diesen Job wahrscheinlich nicht öfter als alle 10 Minuten ausführen (abhängig von Ihren anderen Anforderungen). Wenn Leistung kein Problem für Sie ist, können Sie ihn bei Bedarf alle 1 bis 2 Minuten ausführen.
+    - Wenn Ihre Lieferanten dazu neigen, Waren schnell zu liefern (innerhalb des vereinbarten Tages), sollte die Serie häufig sein (alle 10 bis 30 Minuten oder so). Auf diese Weise können Lagerarbeiter die Waren gegen die bestätigte Bestellung entgegennehmen, nachdem die Bestätigung erfolgt ist.
+    - Wenn Ihre Lieferanten in der Regel eine lange Vorlaufzeit haben (mehr als 24 Stunden), können Sie diese Aufgabe so einstellen, dass sie nur einmal am Tag oder so ausgeführt wird.
+
+1. Wählen Sie **OK** aus, um Ihren Zeitplan anzuwenden und zum **Akzeptierte Bestellungen aus den Kreditor-Kooperationen bestätigen** Dialogfeld zurückzukehren.
+1. Legen Sie nach Bedarf zusätzliche Hintergrundoptionen fest. Das Dialogfeld bietet die üblichen Optionen zum Einrichten von Batch-Jobs im Supply Chain Management.
+
+Weitere Informationen zu Batch-Jobs finden Sie unter [Stapelverarbeitung – Übersicht](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
 ### <a name="specifying-whether-the-vendor-should-see-price-information"></a>Angeben, ob der Kreditor Preisinformationen sehen soll
 

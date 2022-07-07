@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8fe4731f8ff23f4abe25fce57a2325e1fca979c4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 19fafb21e879d7436678bdb3c29d1a3d7e2330d7
+ms.sourcegitcommit: bad64015da0c96a6b5d81e389708281406021d4f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890827"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9023759"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>Kreditorenzusammenarbeit einrichten und verwalten
 
@@ -29,9 +29,6 @@ ms.locfileid: "8890827"
 Die Kreditorenzusammenarbeitsschnittstelle zeigt eine begrenzte Menge an Informationen zu Bestellungen, Rechnungen und Lieferbestand für externe Kreditorenbenutzer an. Von dieser Schnittstelle aus kann ein Lieferant auch auf Angebotsanfragen (RFQs) antworten und grundlegende Unternehmensinformationen anzeigen und bearbeiten.
 
 In diesem Artikel wird erläutert, wie Kreditorenzusammenarbeit in Dynamics 365 Supply Chain Management eingerichtet werden. Außerdem wird erläutert, wie Sie einen Workflow einrichten, der neue Benutzer für die Zusammenarbeit mit Anbietern bereitstellt und die Sicherheitsrollen für diese Benutzer verwaltet.
-
-> [!NOTE]
-> Die Informationen zum Einrichten von Sicherheitsrollen für die Zusammenarbeit mit Anbietern gelten nur für die aktuelle Version von Finance and Operations. In Microsoft Dynamics AX 7.0 (Februar 2016) und Microsoft Dynamics AX-Anwendungsversion 7.0.1 (Mai 2016) arbeiten Sie mit Kreditoren zusammen, indem Sie das Modul **Kreditorenportal** verwenden. Informationen zu Benutzerberechtigungen für das Vendor-Portal in Microsoft Dynamics AX finden Sie unter [Benutzersicherheit des Kreditorenportals](configure-security-vendor-portal-users.md).
 
 ## <a name="set-up-vendor-collaboration-security-roles"></a>Sicherheitsrollen für Kreditorenzusammenarbeit einrichten
 
@@ -138,13 +135,7 @@ Erstellen Sie einen Workflow des Typs **Workflow-Plattform für Benutzeranfragen
 
 ## <a name="enable-vendor-collaboration-for-a-specific-vendor"></a>Aktivieren Sie die Kreditorenzusammenarbeit für einen bestimmten Kreditor
 
-Bevor Sie ein Benutzerkonto für jemanden, der die Kreditorzusammenarbeit verwenden wird, erstellen, müssen Sie den Kreditor einrichten, um die Kreditorzusammenarbeit zu verwenden. Legen Sie auf der Seite **Kreditoren** auf der Registerkarte **Allgemein** das Feld **Zusammenarbeitsaktivierung** fest. Die folgenden Optionen stehen zur Verfügung:
-
-- **Aktiv (Bestellung wird automatisch bestätigt)** – Bestellungen werden automatisch bestätigt, wenn der Kreditor diese akzeptiert ohne Änderungen anzufragen.
-- **Aktiv (Bestellung wird nicht automatisch bestätigt)** – Ihre Organisation muss Bestellungen manuell bestätigen, nachdem der Kreditor diese akzeptiert hat.
-
-> [!NOTE]
-> Auch Einkaufsprofis in Ihrem Unternehmen können diese Aufgabe übernehmen.
+Bevor Sie ein Benutzerkonto für jemanden, der die Kreditorzusammenarbeit verwenden wird, erstellen, müssen Sie den Kreditor einrichten, um die Kreditorzusammenarbeit zu verwenden. Weitere Einzelheiten über die Vorgehensweise finden Sie unter [Kreditorenzusammenarbeit mit externen Kreditoren](vendor-collaboration-work-external-vendors.md)
 
 ## <a name="troubleshoot-the-provisioning-of-new-vendor-collaboration-users"></a>Fehlerbehebung bei der Bereitstellung neuer Benutzer für die Zusammenarbeit mit Anbietern
 

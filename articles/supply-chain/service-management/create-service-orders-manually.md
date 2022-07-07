@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f969e3de9586c0c47214201b34a16f8afad5ca90
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 1764d97d4492e7b982a5d2c9f7e7f1c15380be1d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678261"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014850"
 ---
 # <a name="create-service-orders-manually"></a>Manuelles Erstellen von Serviceaufträgen    
 
@@ -34,7 +34,7 @@ Serviceaufträge können mithilfe einer Servicevereinbarung oder mithilfe des Fo
 
 ## <a name="create-a-service-order-manually-from-a-service-agreement"></a>Manuelles Erstellen eines Serviceauftrags auf der Grundlage einer Servicevereinbarung
 
-1.  Wählen Sie **Serviceverwaltung** \> **Allgemein** \> **Servicevereinbarungen** \> **Servicevereinbarungen**.
+1.  Wählen Sie **Serviceverwaltung** \> **Servicevereinbarungen** \> **Servicevereinbarungen**.
 
 2.  Wählen Sie eine Servicevereinbarung aus, oder erstellen Sie eine neue Servicevereinbarung.
 
@@ -42,7 +42,7 @@ Serviceaufträge können mithilfe einer Servicevereinbarung oder mithilfe des Fo
 
 ## <a name="create-a-service-order-manually-in-the-service-orders-form"></a>Manuelles Erstellen eines Serviceauftrags im Formular "Serviceaufträge"
 
-1.  Wählen Sie **Serviceverwaltung** \> **Allgemein** \> **Serviceaufträge** \> **Serviceaufträge**.
+1.  Wählen Sie **Serviceverwaltung** \> **Serviceaufträge** \> **Serviceaufträge**.
 
 2.  Wählen Sie **Neu**, um einen neuen Serviceauftrag zu erstellen.
 
@@ -53,7 +53,7 @@ Serviceaufträge können mithilfe einer Servicevereinbarung oder mithilfe des Fo
 
 ## <a name="create-a-service-order-from-a-project"></a>Erstellen eines Serviceauftrags auf der Grundlage eines Projekts
 
-1.  Gehen Sie zu **Projektverwaltung und Abrechnung** \> **Allgemein** \> **Projekte** \> **Alle Projekte**.
+1.  Wechseln Sie zu **Projektverwaltung und -verrechnung** \> **Projekte** \> **Alle Projekte**.
 
 2.  Wählen Sie im Formular **Projekte** im **Aktivitätsbereich** die Registerkarte **Verwalten** \> wählen Sie **Service** \> **Serviceaufträge**.
 
@@ -66,7 +66,7 @@ Serviceaufträge können mithilfe einer Servicevereinbarung oder mithilfe des Fo
 
 Serviceaufträge können im Formular **Aufträge** erstellen, indem Sie den Assistenten **Neuen auftragsbasierten Serviceauftrag erstellen**.
 
-1.  Gehen Sie auf **Vertrieb und Marketing** \> **Allgemein** \> **Verkaufsaufträge** \> **Alle Verkaufsaufträge**.
+1.  Wechseln Sie zu **Vertrieb und Marketing** \> **Aufträge** \> **Alle Aufträge**.
 
 2.  Öffnen Sie den entsprechenden Auftrag.
 

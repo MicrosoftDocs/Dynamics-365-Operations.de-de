@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c1b04c7cca70ec8b25d40cde86be370bce224388
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8ea84259eb8f12becdcf008ed9222a44b2626a0d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856250"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016216"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Die automatische Aktualisierung von Anlagenzählern
 
@@ -53,7 +53,7 @@ Wie bereits angegeben können automatische Zähler aus Produktionserfassungen ak
 
 5. Wählen Sie **OK** aus. 
 
-Wenn die automatische Aktualisierung von Anlagenzählern erfolgt ist, können Sie die Zählererfassungen anzeigen, die auf die Anlage auf der Seite **Anlagenzähler** bezogen sind. Wählen Sie **Anlagenverwaltung** > **Allgemein** > **Anlagen** > **Alle Anlagen** aus, wählen Sie die Anlage aus, und wählen Sie dann im Aktivitätsbereich auf der **Anlage**-Registerkarte in der Gruppe **Vorbeugend** **Zähler** aus.
+Wenn die automatische Aktualisierung von Anlagenzählern erfolgt ist, können Sie die Zählererfassungen anzeigen, die auf die Anlage auf der Seite **Anlagenzähler** bezogen sind. Wählen Sie **Anlagenverwaltung** > **Anlagen** > **Alle Anlagen** aus, wählen Sie die Anlage aus, und wählen Sie dann im Aktivitätsbereich auf der **Anlage**-Registerkarte in der Gruppe **Vorbeugend** **Zähler** aus.
 
 Auf der Seite **Aggregierter Wert für Anlage** können Sie einen Überblick der letzten Erfassung abrufen, die für alle Zählertypen für alle Anlagen erstellt wurde. Wählen Sie **Anlagenverwaltung** > **Abfragen** > **Anlagen** > **Aggregierter Wert für Anlage** aus. Diese Seite ähnelt der Seite **Anlagenzähler**, Sie können jedoch keine Erfassungen hinzufügen oder bearbeiten. Es ist nur für den Überblick.
 

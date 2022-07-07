@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 723eae906260d152a8729f91c75cd9860eca84c5
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4f2b4213574a2d84089ab20ab1a584e1ab894ad9
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669487"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016361"
 ---
 # <a name="manage-template-boms-on-object-relations"></a>Verwalten von Vorlagenstücklisten für Objektbeziehungen 
 
@@ -29,7 +29,7 @@ ms.locfileid: "8669487"
 
 ## <a name="attach-a-template-bom-to-a-service-object"></a>Zuordnen einer Vorlagenstückliste zu einem Serviceobjekt
 
-1.  Klicken Sie auf den Bereichsseitenknoten: **Serviceverwaltung** \> **Gemeinsam** \> **Servicevereinbarungen** \> **Servicevereinbarungen**.
+1.  Klicken Sie auf **Serviceverwaltung** \> **Servicevereinbarungen** \> **Servicevereinbarungen**.
 
 2.  Doppelklicken Sie auf die Servicevereinbarung, in der einer Objektbeziehung eine Vorlagenstückliste zugeordnet werden soll.
 
@@ -43,7 +43,7 @@ ms.locfileid: "8669487"
 
 ## <a name="delete-a-service-bom-from-a-service-object"></a>Löschen einer Servicestückliste aus einem Serviceobjekt
 
-1.  Klicken Sie auf den Bereichsseitenknoten: **Serviceverwaltung** \> **Gemeinsam** \> **Servicevereinbarungen** \> **Servicevereinbarungen**.
+1.  Klicken Sie auf **Serviceverwaltung** \> **Servicevereinbarungen** \> **Servicevereinbarungen**.
 
 2.  Doppelklicken Sie auf die Servicevereinbarung, in der eine Servicestückliste aus einer Objektbeziehung gelöscht werden soll.
 
@@ -55,7 +55,7 @@ ms.locfileid: "8669487"
 
 ## <a name="move-the-service-bom-history-from-one-service-agreement-to-another"></a>Verschieben der Servicestückliste zwischen Servicevereinbarungen
 
-1.  Klicken Sie auf den Bereichsseitenknoten: **Serviceverwaltung** \> **Gemeinsam** \> **Servicevereinbarungen** \> **Servicevereinbarungen**.
+1.  Klicken Sie auf **Serviceverwaltung** \> **Servicevereinbarungen** \> **Servicevereinbarungen**.
 
 2.  Doppelklicken Sie auf die Servicevereinbarung, aus der eine Servicestückliste verschoben werden soll.
 

@@ -16,12 +16,12 @@ ms.search.industry: Product information
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2798e25d1f6c293aa71a6c143ded5293f241060
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 079e6de00d1a946d998648378d5ca24c1fd26218
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850553"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015405"
 ---
 # <a name="product-related-translations-faq"></a>Produktbezogene Übersetzungen – FAQ
 
@@ -43,20 +43,20 @@ Sie können Übersetzungen von produktbezogenen Informationen in jedem externen 
 
 ## <a name="how-do-i-create-translations-for-product-related-information"></a>Wie erstelle ich Übersetzungen für produktbezogene Informationen?
 Gehen Sie folgendermaßen vor, um Übersetzungen für ein Produkt zu erstellen:
-1.  Klicken Sie auf **Produktinformationsverwaltung** &gt; **Allgemein** &gt; **Freigegebene Produkte**.
+1.  Klicken Sie auf **Produktinformationsverwaltung** &gt; **Produkte** &gt; **Freigegebene Produkte**.
 2.  Wählen Sie ein Produkte, und klicken Sie im Aktivitätsbereich in der Gruppe **Sprache** auf **Übersetzung**.
 3.  Wählen Sie auf der Seite **Textübersetzung** im Feld **Sprache** die Sprache aus. Um weitere Sprachen hinzuzufügen, erweitern Sie das Feld **Sprache** und klicken anschließend auf **OK**.
 4.  Geben Sie in der Gruppe **Übersetzter Text** im Feld **Beschreibung** und **Produktname** die Übersetzungen ein.
 
 Gehen Sie folgendermaßen vor, um Übersetzungen für Produktattribute zu erstellen:
-1.  Klicken Sie auf **Produktinformationsverwaltung** &gt; **Allgemein** &gt; **Freigegebene Produkte**.
+1.  Klicken Sie auf **Produktinformationsverwaltung** &gt; **Produkte** &gt; **Freigegebene Produkte**.
 2.  Unter **Einstellungen** klicken Sie auf **Attribute** und klicken dann auf **Attribute**.
 3.  Auf der Seite **Attribute** klicken Sie auf **Übersetzen**.
 4.  Wählen Sie auf der Seite **Textübersetzung** im Feld **Sprache** die Sprache aus. Um weitere Sprachen hinzuzufügen, erweitern Sie das Feld **Sprache** und klicken anschließend auf **OK**.
 5.  Geben Sie in der Gruppe **Übersetzter Text** im Feld **Beschreibung**, **Produktname** und **Hilfetext** die Übersetzungen ein.
 
 Gehen Sie folgendermaßen vor, um Übersetzungen für Produktdimensionswerte zu erstellen:
-1.  Klicken Sie auf **Produktinformationsverwaltung** &gt; **Allgemein** &gt; **Freigegebene Produkte**.
+1.  Klicken Sie auf **Produktinformationsverwaltung** &gt; **Produkte** &gt; **Freigegebene Produkte**.
 2.  Wählen Sie eine Produkt und klicken dann auf **Produktdimension**.
 3.  Wählen Sie einen der Links für die Produktdimensionen aus: **Konfigurationen**, **Größen**, **Farben** oder **Stil**.
 4.  Wählen Sie einen Dimensionswert aus, und klicken Sie anschließend auf **Übersetzen**.

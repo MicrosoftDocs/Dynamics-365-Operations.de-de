@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 493e0be8ab56abc2a3253876107b7f4fefabf4ad
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: cbe6bff6fab96900b8bd4e112a8858363fff86d1
+ms.sourcegitcommit: 9870b773a2ea8f5675651199fdbc63ca7a1b4453
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891088"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9013554"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Einstieg in die Globale Bestandsbuchhaltung
 
@@ -69,37 +69,6 @@ Bevor Sie die Add-In-Funktionalität aktivieren können, müssen Sie die Microso
 
 Weitere Informationen finden Sie unter [Nach Bereitstellen der Umgebung aktivieren](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-### <a name="set-up-dataverse"></a>Dataverse einrichten
-
-Bevor Sie Dataverse festlegen, fügen Sie die Serviceprinzipien der Globalen Bestandsbuchhaltung zu Ihrem Mandant hinzu, indem Sie die folgenden Schritte ausführen.
-
-1. Installieren Sie Azure AD Modul für Windows PowerShell v2 wie in [Installieren von Azure Active Directory PowerShell für Graph](/powershell/azure/active-directory/install-adv2) beschrieben.
-1. Führen Sie den folgenden PowerShell-Befehl aus.
-
-    ```powershell
-    Connect-AzureAD # (open a sign in window and sign in as a tenant user)
-
-    New-AzureADServicePrincipal -AppId "7a1dd80f-c961-4a67-a2f5-d6a5d2f52cf9" -DisplayName "d365-scm-costaccountingservice"
-
-    New-AzureADServicePrincipal -AppId "5f58fc56-0202-49a8-ac9e-0946b049718b" -DisplayName "d365-scm-operationdataservice"
-    ```
-
-Erstellen Sie anschließend Anwendungsbenutzer für die Globale Bestandsbuchhaltung in Dataverse, indem Sie die folgenden Schritte ausführen.
-
-1. Öffnen Sie die URL Ihrer Dataverse-Umgebung.
-1. Gehen Sie zu **Erweiterte Einstellung \> System \> Sicherheit \> Benutzer**, und erstellen Sie einen Anwendungsbenutzer. Verwenden Sie das Feld **Ansicht**, um die Seitenansicht auf *Anwendungsbenutzer* zu ändern.
-1. Wählen Sie **Neu** aus.
-1. Legen Sie das Feld **Anwendungs-ID** auf *7a1dd80f-c961-4a67-a2f5-d6a5d2f52cf9* fest.
-1. Wählen Sie **Rolle zuweisen**, und wählen Sie dann *Systemadministrator*. Wenn es eine Rolle gibt, die *Common Data Service Benutzer* heißt, wählen Sie diese ebenfalls aus.
-1. Wiederholen Sie die vorangegangenen Schritte, aber legen Sie das Feld **Anwendungs-ID** auf *5f58fc56-0202-49a8-ac9e-0946b049718b* fest.
-
-Weitere Informationen finden Sie unter [Erstellen eines Anwendungsbenutzers](/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
-
-Wenn die Standardsprache Ihrer Dataverse-Installation nicht Englisch ist, gehen Sie wie folgt vor.
-
-1. Gehen Sie zu **Erweiterte Einstellung \> Verwaltung \> Sprachen**.
-1. Wählen Sie *Englisch* (*LanguageCode=1033*), und wählen Sie dann **Anwenden**.
-
 ## <a name="install-the-add-in"></a><a name="install"></a>Installieren des Add-Ins
 
 Gehen Sie folgendermaßen vor, um das Add-In zu installieren, damit Sie die Globale Bestandsbuchhaltung verwenden können.
@@ -109,11 +78,21 @@ Gehen Sie folgendermaßen vor, um das Add-In zu installieren, damit Sie die Glob
 1. Gehen Sie zu **Vollständige Details**.
 1. Gehen Sie zu **Power Platform Integration**, und wählen Sie **Einrichten**.
 1. Aktivieren Sie im Dialogfeld **Einrichten der Power Platform Umgebung** das Kontrollkästchen und wählen Sie dann **Einrichten**. In der Regel dauert das Einrichten zwischen 60 und 90 Minuten.
-1. Nach dem Einrichten der Microsoft Power Platform-Umgebung wählen Sie auf dem Inforegister **Umgebungs-Add-Ins** die Option **Ein neues Add-In installieren**.
+1. Nachdem die Einrichtung der Microsoft Power Platform-Umgebung abgeschlossen ist, melden Sie sich beim [Power Platform-Admin Center](https://admin.powerplatform.microsoft.com) an, und installieren Sie das Global Inventory Accounting-Add-In, indem Sie die folgenden Schritte ausführen:
+   1. Wählen Sie die Umgebung, in der Sie das Add-In installieren möchten.
+   1. Wählen Sie **Dynamics 365-Apps**
+   1. Wählen Sie **App installieren**.
+   1. Wählen Sie **Dynamics 365 Global Inventory Accounting**.
+   1. Wählen Sie zum Installieren **Weiter** aus.
+1. Zurück zur LCS-Umgebung. Wählen Sie auf dem Inforegister **Umgebungs-Add-Ins** die Option **Neues Add-In installieren** aus.
 1. Wählen Sie **Globale Bestandsbuchhaltung**.
 1. Befolgen Sie die Installationsanleitung und erklären Sie sich mit den Allgemeinen Geschäftsbedingungen einverstanden.
 1. Wählen Sie **Installieren**.
 1. Auf der Registerkarte **Umgebungs-Add-Ins** Inforegister sollten Sie sehen, dass Globale Bestandsbuchhaltung installiert wird. Nach einigen Minuten sollte sich der Status von *Installieren* in *Installiert* ändern. (Möglicherweise müssen Sie die Seite aktualisieren, um diese Änderung zu sehen.) An diesem Punkt ist die Globale Bestandsbuchhaltung einsatzbereit.
+
+Wenn die Standardsprache Ihrer Dataverse-Installation nicht Englisch ist, gehen Sie wie folgt vor:
+1. Gehen Sie zu **Erweiterte Einstellung \> Verwaltung \> Sprachen**.
+1. Wählen Sie *Englisch* (*LanguageCode=1033*), und wählen Sie dann **Anwenden**.
 
 ## <a name="set-up-the-integration"></a>Einrichten der Integration
 

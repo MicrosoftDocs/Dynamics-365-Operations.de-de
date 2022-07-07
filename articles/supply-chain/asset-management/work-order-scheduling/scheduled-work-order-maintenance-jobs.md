@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 99613369084ca1e708761179dfb2688014b011f7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 72813325c19c639c3c8e7ea9c7436730d23eb61b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849618"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017028"
 ---
 # <a name="scheduled-work-order-maintenance-jobs"></a>Geplante Wartungsarbeitsaufträge
 
@@ -32,7 +32,7 @@ Die Seite **Wartungsaufträge für planmäßige Arbeitsaufträge** dient dazu, s
 
 ## <a name="view-scheduled-work-order-maintenance-jobs"></a>Geplante Wartungsarbeiten für Arbeitsaufträge anzeigen
 
-1. Klicken Sie auf **Anlagenmanagement** > **Allgemein** > **Arbeitsaufträge** > **Planmäßige Wartungsarbeiten**. Sie sehen eine Liste aller Arbeitsaufträge, die sich im Lebenszykluszustand „Geplant“ oder „In Bearbeitung“ befinden.
+1. Klicken Sie auf **Anlagenmanagement** > **Arbeitsaufträge** > **Planmäßige Wartungsarbeiten**. Sie sehen eine Liste aller Arbeitsaufträge, die sich im Lebenszykluszustand „Geplant“ oder „In Bearbeitung“ befinden.
 
 2. Sie können die Liste z.B. nach Wartungspersonal sortieren. Sie können den Filter auch verwenden, um die Liste einzuschränken, um Arbeitsaufträge anzuzeigen, die einer bestimmten Ressource oder einem bestimmten Instandhalter zugeordnet sind.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dfb75d69f20c68a40242bb1c0c25ca77f85e0c14
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 519431d84652e45dcd45aefbbaaa2a0e2afe6349
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852870"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016506"
 ---
 # <a name="maintenance-rounds"></a>Wartungsdurchgänge
 
@@ -87,7 +87,7 @@ Die folgende Abbildung zeigt das Beispiel einer Wartungsdurchführung mit drei A
 
 Wenn Sie einen Wartungsdurchgang eingerichtet haben, führen Sie einen Zeitplanauftrag aus, um alle mit dem Wartungsdurchgang verbundenen Aufträge einzuplanen.
 
-1. Klicken Sie auf die Schlatfläche **Anlagenverwaltung** > **Periodisch** > **Vorbeugende Wartung** > **Wartungsdurchgänge planen**, oder **Anlagenverwaltung** > **Allgemein** > **Wartungszeitplan** > **Gesamter Wartungszeitplan** oder **Wartungszeitplanpositionen öffnen** oder **Wartungszeitplanpools öffnen** > Wartungszeitplanposition in der Liste auswählen > **Wartungsdurchgänge**.
+1. Klicken Sie auf die Schaltfläche **Anlagenverwaltung** > **Periodisch** > **Vorbeugende Wartung** > **Wartungsdurchgänge planen** oder **Anlagenverwaltung** > **Wartungszeitplan** > **Gesamter Wartungszeitplan** oder **Wartungszeitplanpositionen öffnen** oder **Wartungszeitplanpools öffnen** > Wartungszeitplanposition in der Liste auswählen > **Wartungsdurchgänge**.
 
 2. Wählen Sie im Feld **Periode** den Periodentyp, der für den Terminierungsauftrag verwendet werden soll.
 
@@ -102,7 +102,7 @@ Wenn Sie einen Wartungsdurchgang eingerichtet haben, führen Sie einen Zeitplana
 
 6. Klicken Sie auf **OK**.
 
-7. Sie können nun die Wartungsdurchgangsaufträge in **Anlagenverwaltung** > **Allgemein** > **Wartungszeitplan** > **Alle Wartungszeitpläne** oder **Wartungszeitplanpositionen öffnen** sehen. Wenn die terminierten Durchgänge an einen Arbeitsauftragspool angeschlossen sind, sehen Sie auch Wartungszeitplanpositionen in **Wartungszeitplanpools öffnen**. Wartungszeitplanpositionen, die aus einem Durchgang angelegt wurden, haben den Referenztyp „Wartungsdurchgänge“.
+7. Sie können nun die Wartungsdurchgangsaufträge in **Anlagenverwaltung** > **Wartungszeitplan** > **Alle Wartungszeitpläne** oder **Wartungszeitplanpositionen öffnen** sehen. Wenn die terminierten Durchgänge an einen Arbeitsauftragspool angeschlossen sind, sehen Sie auch Wartungszeitplanpositionen in **Wartungszeitplanpools öffnen**. Wartungszeitplanpositionen, die aus einem Durchgang angelegt wurden, haben den Referenztyp „Wartungsdurchgänge“.
 
 Die zwei folgenden Abbildungen zeigen einen Zeitplaneinzelvorgang im Dialog **Wartungszeitplan anzeigen** und die Wartungsplanpositionen, die in **Alle Wartungszeitpläne** erstellt werden, die auf diesem Zeitplaneinzelvorgang basieren.
 

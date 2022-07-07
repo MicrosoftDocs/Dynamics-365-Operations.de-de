@@ -2,7 +2,7 @@
 title: Zusammenfassende Meldung
 description: Dieser Artikel enthält Informationen über Verkaufslisten-Berichte der Europäischen Union (EU).
 author: EvgenyPopovMBS
-ms.date: 02/17/2022
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af49817667999dd02a96a7a9bd5bb966be652d35
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: 8dfd3fafdfc011973b169516cd4e2d239751e96d
+ms.sourcegitcommit: f5b156f2e5ca99ad05b3d6e4a5d118631fd3064e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323475"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9012499"
 ---
 # <a name="eu-sales-list-reporting"></a>Zusammenfassende Meldung
 
@@ -150,7 +150,7 @@ Buchungen der folgenden Typen gelten als Innergemeinschaftshandelsbuchungen:
 -   Projektrechnungen
 -   Kreditorenrechnungen
 
-Eine Buchung gilt als eine Innergemeinschaftshandelsbuchung, wenn die Lieferadresse der Buchung in einem Mitgliedsstaat der EU ist. Für solche Länder/Regionen sollte ein Datensatz in der Registerkarte **Länder-/Regionsparameter** der Seite **Außenhandelsparameter** vorhanden sein, und der **Länder-/Regionsart**-Wert sollte auf **EU** festgelegt sein. Innergemeinschaftshandelsbuchungen werden im Feld **Listencode** markiert. Mit diesem Feld können Sie auch allgemeine Innergemeinschaftshandelsbuchungen von Dreieckshandelbuchungen trennen. Sie können Informationen über innergemeinschaftliche Handelsbuchungen auf der Seite **EU-Verkaufsliste** erfassen (klicken Sie auf **Steuer** &gt; **Erklärung** &gt; **Außenhandel** &gt; **EU Verkaufslistet**) mithilfe der Funktion **Übertragung**. Mit dieser Funktion können Sie Buchungen mit Beträgen von verschiedenen Berichtstypen (d. h. Artikel oder Dienstleistungen) einschließen, gemäß der Artikel-Mehrwertsteuergruppen, die in Buchungspositionen angegeben werden. Sie können auch andere Filter anwenden, um die Buchungen zu definieren, die einbezogen werden sollen. Die **Übertragen**-Funktion erstellt einen Datensatz auf der **Zusammenfassende Meldung**-Seite für jede Innergemeinschaftshandelsbuchung, die einbezogen wird, und gibt eine Gegenparteikontonummer, ein Land/eine Region, eine Umsatzsteuernummer, eine Rechnungsnummer und ein Datum und die Gesamtbeträge von Positionen pro Berichtstyp an. Sie kopiert auch den **Listencode**-Wert aus der Buchung. Sie können den Listencode für eine Buchung auf der Seite **Zusammenfassende Meldung** manuell ändern. Die **Übertragen**-Funktion erstellt Datensätze, wobei der Wert **Berichtsstatus** auf **Enthalten** festgelegt wird. Sie können die Informationen prüfen, die auf der Seite **Zusammenfassende Meldung** erfasst werden, indem Sie die Funktion **Prüfen** verwenden.
+Eine Buchung gilt als eine Innergemeinschaftshandelsbuchung, wenn die Lieferadresse der Buchung in einem Mitgliedsstaat der EU ist. Für solche Länder/Regionen sollte ein Datensatz in der Registerkarte **Länder-/Regionsparameter** der Seite **Außenhandelsparameter** vorhanden sein, und der **Länder-/Regionsart**-Wert sollte auf **EU** festgelegt sein. Innergemeinschaftshandelsbuchungen werden im Feld **Listencode** markiert. Mit diesem Feld können Sie auch allgemeine Innergemeinschaftshandelsbuchungen von Dreieckshandelbuchungen trennen. Sie können Informationen über innergemeinschaftliche Handelsbuchungen auf der Seite **EU-Verkaufsliste** erfassen (klicken Sie auf **Steuer** &gt; **Erklärung** &gt; **Außenhandel** &gt; **EU Verkaufslistet**) mithilfe der Funktion **Übertragung**. Mit dieser Funktion können Sie Buchungen mit Beträgen von verschiedenen Berichtstypen (d. h. Artikel oder Dienstleistungen) einschließen, gemäß der Artikel-Mehrwertsteuergruppen, die in Buchungspositionen angegeben werden. Sie können auch andere Filter anwenden, um die Buchungen zu definieren, die einbezogen werden sollen. Die **Übertragen**-Funktion erstellt einen Datensatz auf der **Zusammenfassende Meldung**-Seite für jede Innergemeinschaftshandelsbuchung, die einbezogen wird, und gibt eine Gegenparteikontonummer, ein Land/eine Region, eine Umsatzsteuernummer, eine Rechnungsnummer und ein Datum und die Gesamtbeträge von Positionen pro Berichtstyp an. Sie kopiert auch den **Listencode**-Wert aus der Buchung. Sie können den Listencode für eine Buchung auf der Seite **Zusammenfassende Meldung** manuell ändern. Die **Übertragen**-Funktion erstellt Datensätze, wobei der Wert **Berichtsstatus** auf **Enthalten** festgelegt wird. Sie können die Informationen prüfen, die auf der Seite **Zusammenfassende Meldung** erfasst werden, indem Sie die Funktion **Prüfen** verwenden. Sie können detaillierte Informationen über die Rechnung (für die Verkaufsrichtung) erhalten, indem Sie die **Summen**-Funktion verwenden.
 
 ### <a name="generating-the-eu-sales-list-report"></a>Erstellen der zusammenfassenden Meldung
 
@@ -160,8 +160,26 @@ Sie können eine **Zusammenfassende Meldung** generieren, indem Sie die Funktion
 
 Wenn Sie den Berichterstellungsprozess für eine bestimmte Periode abgeschlossen haben (beispielsweise, wenn Steuerbehörden die **Zusammenfassende Meldung** angenommen haben), können Sie die ESL-Datensätze markieren, die im Bericht für die Periode enthalten sind, indem Sie den Wert **Berichtsstatus** auf **Geschlossen** festlegen. Um diesen Status festzulegen, verwenden Sie die **Als geschlossen markieren**-Funktion auf der Seite **Zusammenfassende Meldung**. Wenn Sie den Abschluss der Periode zurücksetzen, können Sie ESL-Datensätze markieren, indem Sie den Wert **Berichtsstatus** auf **Enthalten** festlegen. Diese Datensätze können erneut in einer **Zusammenfassenden Meldung** eingeschlossen werden. Um diesen Status festzulegen, verwenden Sie die **Als** **einbezogen markieren**-Funktion auf der Seite **Zusammenfassende Meldung**.
 
+## <a name="list-of-country-specific-topics"></a>Liste länderspezifischer Themen
 
-
+| Land          | Verknüpfung      |
+|------------------|-----------|
+| Österreich          | [Zusammenfassende Meldung für Österreich](emea-aut-eu-sales-list.md)| 
+| Belgien          |[Zusammenfassende Meldung für Belgien](emea-bel-eu-sales-list.md)|
+| Tschechische Republik          |[Zusammenfassende Meldung für die Tschechische Republik](emea-cze-eu-sales-list.md)|
+| Dänemark          |[Zusammenfassende Meldung für Dänemark](emea-dnk-eu-sales-list.md)|
+| Estland          |[Zusammenfassende Meldung für Estland](emea-est-eu-sales-list.md)|
+| Finnland          |[Zusammenfassende Meldung für Finnland](emea-fin-eu-sales-list.md)|
+| Frankreich          |[Zusammenfassende Meldung für Frankreich](emea-fra-eu-sales-list.md)|
+| Deutschland          |[Zusammenfassende Meldung für Deutschland](emea-deu-eu-sales-list.md)|
+| Ungarn          |[Zusammenfassende Meldung für Ungarn](emea-hun-eu-sales-list.md)|
+| Lettland          |[Zusammenfassende Meldung für Lettland](emea-lva-eu-sales-list.md)|
+| Litauen          |[Zusammenfassende Meldung für Litauen](emea-ltu-eu-sales-list.md)|
+| Niederlande          |[Zusammenfassende Meldung für Niederlande](emea-nl-eu-sales-list.md)|
+| Polen          |[Zusammenfassende Meldung für Polen](emea-pol-eu-sales-list.md)|
+| Spanien          |[Zusammenfassende Meldung für Spanien (Bericht 349)](emea-esp-sales-list.md)|
+| Schweden          |[Zusammenfassende Meldung für Schweden](emea-swe-eu-sales-list.md)|
+| Vereinigtes Königreich (Nordirland)          |[Zusammenfassende Meldung für Vereinigtes Königreich (Nordirland)](emea-uk-eu-sales-list.md)|
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

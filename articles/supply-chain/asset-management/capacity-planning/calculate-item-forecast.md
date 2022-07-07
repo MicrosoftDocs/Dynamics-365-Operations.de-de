@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2d0552c38ddc31ad6322e9e2e0f2c2c722c045f4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 25e9b00533fb183b27c1bbe616cf6f414b44b5e7
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870899"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016100"
 ---
 # <a name="calculate-item-forecast"></a>Artikelprognose berechnen
 
@@ -36,7 +36,7 @@ Ebenso wie Sie Kapazitätsauslastungsberechnungen durchführen können, die im v
 
 Dies ist hilfreich, wenn Sie einen Überblick über den erwarteten Artikelverbrauch (Ersatzteile sowie andere Artikel, die für die Ausführung von Arbeitsaufträgen erforderlich sind) während einer bestimmten Periode erhalten möchten. Die Berechnung der Artikelplanung kann für alle oder ausgewählte Anlagen ausgeführt werden. Sie können eine Berechnung auch für eine Wartungsausfallzeitaktivität (**Alle Wartungsausfallzeitaktivitäten** oder **Aktive Wartungsausfallzeitaktivitäten**) oder für einen Arbeitsauftragspool (**Alle Arbeitsauftragspools** oder **Aktive Arbeitsauftragspools**) vornehmen.
 
-1. Klicken Sie auf **Anlagenverwaltung** > **Abfragen** > **Artikelplanung** oder **Anlagenverwaltung** > **Allgemein** > **Arbeitsauftragspools** > **Alle Arbeitsauftragspools** / **Aktive Arbeitsauftragspools** > Arbeitsauftragspool in der Liste auswählen > Schaltfläche **Artikelplanung** oder **Anlagenverwaltung** > **Allgemein** > **Wartungsausfallzeitaktivitäten** > **Alle Wartungsausfallzeitaktivitäten** / **Aktive Wartungsausfallzeitaktivitäten** > Wartungsausfallzeitaktivität in der Liste auswählen > Schaltfläche **Artikelplanung**.
+1. Klicken Sie auf **Anlagenverwaltung** > **Abfragen** > **Artikelplanung** oder **Anlagenverwaltung** > **Arbeitsauftragspools** > **Alle Arbeitsauftragspools** / **Aktive Arbeitsauftragspools** > Arbeitsauftragspool in der Liste auswählen > Schaltfläche **Artikelplanung** oder **Anlagenverwaltung** > **Wartungsausfallzeitaktivitäten** > **Alle Wartungsausfallzeitaktivitäten** / **Aktive Wartungsausfallzeitaktivitäten** > Wartungsausfallzeitaktivität in der Liste auswählen > Schaltfläche **Artikelplanung**.
 
 2. Wählen Sie im Dialogfeld **Artikelprognose berechnen** eine Periode für die Berechnung in den Feldern **Startdatum/-uhrzeit** und **Enddatum/-uhrzeit** aus.
 

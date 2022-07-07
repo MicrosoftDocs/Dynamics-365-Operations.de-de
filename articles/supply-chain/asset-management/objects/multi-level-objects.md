@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34ab83c9f9673c39006b3985ebaac9e17a45da82
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5b13db8b8b12aaef2e067f9a55eb8754333eb16b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908771"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017144"
 ---
 # <a name="multi-level-assets"></a>Anlagen auf mehreren Ebenen
 
@@ -30,7 +30,7 @@ ms.locfileid: "8908771"
 
 In diesem Artikel wird erläutert, wie Anlagen auf mehreren Ebenen erstellt und gelöscht werden. Sie können Anlagen und zugehörige untergeordnete Anlagen in einer hierarchischen Baumstruktur erstellen. Auf diese Weise können Sie Beziehungen und Abhängigkeiten zwischen den Anlagen anzeigen. Wartungsaufträge können auf allen Ebenen der Anlagenstruktur in Beziehung gesetzt werden. Statistiken können für eine einzelne Ebene oder als Summe aller Ebenen mit untergeordneten Anlagen erstellt werden.
 
-Auf der Listenseite **Alle Anlagen** (**Anlagenverwaltung** \> **Allgemeines** \> **Anlagen** \> **Alle Anlagen**) listet die Spalte **Anlagen** die Anlagen in hierarchischer Reihenfolge auf. Die Spalte **Übergeordnet** zeigt die zugehörige übergeordnete Anlage an. Darüber hinaus zeigt, wenn Anlagen und untergeordnete Anlagen erstellt wurden, der **Anlagenstruktur** im Bereich **Zugehörige Informationen** die Anlagen in einer Baumstruktur.
+Auf der Listenseite **Alle Anlagen** (**Anlagenverwaltung** \> **Anlagen** \> **Alle Anlagen**) listet die Spalte **Anlagen** die Anlagen in hierarchischer Reihenfolge auf. Die Spalte **Übergeordnet** zeigt die zugehörige übergeordnete Anlage an. Darüber hinaus zeigt, wenn Anlagen und untergeordnete Anlagen erstellt wurden, der **Anlagenstruktur** im Bereich **Zugehörige Informationen** die Anlagen in einer Baumstruktur.
 
 Informationen zum Erstellen von Anlagen finden Sie unter [Anlage erstellen](../objects/create-an-object.md). Um eine untergeordnete Anlage zu erstellen, wählen Sie die übergeordnete Anlage im Feld **Übergeordnet** im Inforegister **Allgemein** aus.
 
@@ -38,7 +38,7 @@ Informationen zum Erstellen von Anlagen finden Sie unter [Anlage erstellen](../o
 
 Wenn Ihr Unternehmen mehrere ähnliche Anlagenstrukturen hat, können Sie die Funktion zum Kopieren in Asset Management verwenden, um sie schnell zu erstellen.
 
-1. Wählen Sie **Anlagenverwaltung** \> **Allgemeines** \> **Anlagen** \> **Alle Anlagen**.
+1. Wählen Sie **Anlagenverwaltung** \> **Anlagen** \> **Alle Anlagen**.
 2. Wählen Sie auf der Listenseite **Alle Anlagen** die zu kopierende Anlage aus. Wenn Sie beispielsweise die gesamte Anlagenstruktur einschließlich der untergeordneten Anlagen kopieren möchten, wählen Sie eine übergeordnete Anlage aus.
 3. Wählen Sie **Anlage kopieren** aus. Im Abschnitt **Kopieren von** wird das Feld **Anlage** auf die Anlage festgelegt, die Sie auf der Listenseite ausgewählt haben.
 4. Geben Sie im Abschnitt **Kopieren nach** im Feld **Anlage** den Namen der neuen Anlage ein.

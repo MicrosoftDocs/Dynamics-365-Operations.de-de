@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 015499463f1eab4aaa3f3658b3204229382e73cb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6e41a28ec922924b0ef86858a881280fd44bfe63
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893641"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014951"
 ---
 # <a name="procurement"></a>Beschaffung
 
@@ -28,7 +28,7 @@ ms.locfileid: "8893641"
 
 Im Anlagenmanagement können Sie sich einen Überblick über Bestellanforderungen und Bestellungen zu Arbeitsaufträgen verschaffen. Es ist auch möglich, eine Bestellung oder eine Bestellanforderung aus einem Arbeitsauftrag heraus anzulegen.
 
-Auf der Listenseite **Arbeitsauftragsbestellanforderung** (**Anlagenmanagement** > **Allgemein** > **Beschaffung** > **Arbeitsauftragsbestellanforderung**) wird eine Liste von Bestellanforderungen zu Arbeitsaufträgen angezeigt. Wenn Sie einen Arbeitsauftragseinzelvorgang auf dieser Seite auswählen, können Sie die Schaltflächen in der Gruppe **Anzeigen** auf der Registerkarte **Arbeitsauftragsbestellanforderung** verwenden, um verschiedene Aktionen auszuführen:
+Auf der Listenseite **Arbeitsauftragsbestellanforderung** (**Anlagenmanagement** > **Beschaffung** > **Arbeitsauftragsbestellanforderung**) wird eine Liste von Bestellanforderungen zu Arbeitsaufträgen angezeigt. Wenn Sie einen Arbeitsauftragseinzelvorgang auf dieser Seite auswählen, können Sie die Schaltflächen in der Gruppe **Anzeigen** auf der Registerkarte **Arbeitsauftragsbestellanforderung** verwenden, um verschiedene Aktionen auszuführen:
 
 - Um die verwandte Bestellanforderung zu öffnen, wählen Sie **Bestellanforderung** aus. 
 - Um den zugehörigen Arbeitsauftrag zu öffnen, wählen Sie **Arbeitsauftrag** aus.
@@ -39,7 +39,7 @@ In der folgenden Abbildung wird ein Beispiel der Listenseite **Arbeitsauftragsbe
 ![Abbildung 1.](media/08-work-orders.png)
 
 
-Auf der Listenseite **Arbeitsauftragsbestellanforderung** (**Anlagenmanagement** > **Allgemein** > **Beschaffung** > **Arbeitsauftragsbestellung**) wird eine Liste von Bestellungen zu Arbeitsaufträgen angezeigt. Wenn Sie einen Arbeitsauftragseinzelvorgang auf dieser Seite auswählen, können Sie die Schaltflächen in der Gruppe **Anzeigen** auf der Registerkarte **Arbeitsauftragsbestellung** des Aktivitätsbereichs verwenden, um verschiedene Aktionen auszuführen:
+Auf der Listenseite **Arbeitsauftragsbestellanforderung** (**Anlagenmanagement** > **Beschaffung** > **Arbeitsauftragsbestellung**) wird eine Liste von Bestellungen zu Arbeitsaufträgen angezeigt. Wenn Sie einen Arbeitsauftragseinzelvorgang auf dieser Seite auswählen, können Sie die Schaltflächen in der Gruppe **Anzeigen** auf der Registerkarte **Arbeitsauftragsbestellung** des Aktivitätsbereichs verwenden, um verschiedene Aktionen auszuführen:
 
 - Um die zugehörige Bestellung zu öffnen, wählen Sie **Bestellung** aus. 
 - Um den zugehörigen Arbeitsauftrag zu öffnen, wählen Sie **Arbeitsauftrag** aus.
@@ -69,7 +69,7 @@ Auf einer Bestellanforderung wird das Datum im Feld **Angefordertes Datum** auf 
 
 Auf der Listenseite **Alle Arbeitsaufträge** können Sie einen Arbeitsauftragseinzelvorgang auswählen und dann eine zugehörige Bestellung oder eine zugehörige Bestellanforderung anlegen. Auf diese Weise können Sie sicherstellen, dass die Projektbeziehungen zwischen der Bestellung oder Bestellanforderung und dem Arbeitsauftrag bestehen.
 
-1. Wählen Sie **Anlagenverwaltung** > **Allgemein** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** aus.
+1. Wählen Sie **Anlagenverwaltung** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** aus.
 
 2. Wählen Sie den Arbeitsauftrag aus, für den eine Bestellung erstellt werden soll, und wählen Sie dann **Bearbeiten** aus.
 

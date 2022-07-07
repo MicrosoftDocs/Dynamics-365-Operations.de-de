@@ -10,18 +10,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 34ac023bc5ee44987f6a36a1636cd343576e5d90
-ms.sourcegitcommit: b666289f5113d0a3fa2220fe337d5aacf07cbd92
+ms.openlocfilehash: ac750ede78bb4547f90b57426cc9cb10d2a282b3
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "8945722"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954662"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Neuerungen oder Änderungen in der mobilen Warehouse Management-App
 
 [!include [banner](../includes/banner.md)]
 
 Dieser Artikel listet neue Funktionen, Korrekturen, Verbesserungen und bekannte Probleme für jede freigegebene Version der Warehouse Management Mobile-App für Microsoft Dynamics 365 Supply Chain Management auf.
+
+## <a name="version-20250"></a>Version 2.0.25.0
+
+Diese Version führt die folgenden neuen Funktionen, Korrekturen und Verbesserungen ein:
+
+- Gesteigerte Leistung.
+- Erhöhte Stabilität.
+- Die **Anfrage**-Seite wurde verbessert, um längere Texte in Zwischenüberschriften zu unterstützen.
+- Die Möglichkeit wurde eingeführt, einen Flow mit einem einzigen Antippen oder Klicken sofort abzubrechen (wenn **Abbrechen** die einzige unter **Mehr Aktionen** verfügbare Aktion ist).
+- Es wurde ein Problem behoben, bei dem der Fokus manchmal zwischen den Eingabekontrollen auf der **Verbindung bearbeiten**-Seite und benutzerdefinierte Seiten verloren ging.
+- Es wurde ein Problem behoben, bei dem Schaltflächen manchmal nicht mehr reagierten und als ausgewählt angezeigt blieben, wenn sie in einer Bildlaufansicht enthalten waren.
+- Es wurde ein Problem behoben, bei dem manchmal das falsche Layout auf der Hauptseite verwendet werden wurde.
 
 ## <a name="version-20240"></a>Version 2.0.24.0
 

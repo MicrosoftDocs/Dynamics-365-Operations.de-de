@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 9c0d87dfb4c432f9cff0f1172139dbcda6308275
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2ee316a3e6a6baef7aa8b5d46b04a2d1bb07a641
+ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860666"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "9022503"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte
 
@@ -263,9 +263,6 @@ Eine Arbeitskraft erfasst eine Pause, indem er **Pause** auswählt und dann die 
 
 ## <a name="view-the-my-day-dialog"></a>Dialogfeld „Mein Tag“ anzeigen
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 Das Dialogfeld **Mein Tag** gibt Arbeitskräften einen Überblick über ihre Registrierungen und Salden. Der Dialog ist in die folgenden drei Abschnitte unterteilt:
 
 - Der Hauptbereich listet die Registrierungen auf, die die aktuelle Arbeitskraft an einem ausgewählten Datum vorgenommen hat. Er zeigt beim Öffnen die Registrierungen für den aktuellen Tag an. Außerdem bietet er eine Datumsauswahl, mit der die Arbeitskraft andere Tage anzeigen kann.
@@ -275,9 +272,6 @@ Das Dialogfeld **Mein Tag** gibt Arbeitskräften einen Überblick über ihre Reg
 Administratoren können diese Funktion zur Benutzeroberfläche hinzufügen, indem sie die Schaltfläche **Mein Tag** auf einer Symbolleiste für jede relevante Registerkarte platzieren, wie beschrieben in [Produktionsausführungsoberfläche entwerfen](production-floor-execution-tabs.md).
 
 ## <a name="working-in-teams"></a>In Teams arbeiten
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
 
 Wenn mehrere Arbeitskräfte demselben Produktions-Einzelvorgang zugewiesen werden, können sie ein Team bilden. Das Team kann einen Mitarbeiter als Pilot ernennen. Die verbleibenden Arbeitskräfte werden dann automatisch zu Assistenten dieses Piloten. Für das resultierende Team muss nur der Pilot den Einzelvorgangstatus registrieren. Zeiterfassungen gelten für alle Teammitglieder.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3347db6395b7da396c42f84881060f476346d2e9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 60bf4ab6944bd982e022ead6431adae417ddfb43
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851274"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014618"
 ---
 # <a name="wave-creation-and-processing"></a>Zykluserstellung und -verarbeitung
 
@@ -60,9 +60,9 @@ Führen Sie folgende Schritte aus, um manuell eine Welle zu erstellen:
 1. Stellen Sie sicher, dass die relevanten [Wellenvorlagen](wave-templates.md) nicht so eingestellt sind, dass eine Welle automatisch für den Lagerort und die Auftragstypen erstellt wird, für die Sie manuell Wellen erstellen wollen.
 1. Abhängig vom Typ der Welle, die Sie erstellen möchten, gehen Sie wie folgt vor:
 
-    - Gehen Sie zu **Lagerortverwaltung** \> **Allgemein** \> **Wellen** \> **Versandwellen** \> **Alle Wellen**. Wählen Sie im Aktivitätsbereich **Wellen** aus.
-    - Gehen Sie zu **Lagerortverwaltung** \> **Allgemein** \> **Wellen** \> **Produktionswellen** \> **Alle Produktionswellen**. Wählen Sie im Aktivitätsbereich **Produktionswellen** aus.
-    - Gehen Sie zu **Lagerortverwaltung** \> **Allgemein** \> **Wellen** \> **Kanbanwellen** \> **Alle Kanbanwellen**. Wählen Sie im Aktivitätsbereich **Welle erstellen** aus.
+    - Wechseln Sie zu **Lagerortverwaltung** \> **Ausgehende Wellen** \> **Lieferungswellen** \> **Alle Wellen**. Wählen Sie im Aktivitätsbereich **Wellen** aus.
+    - Gehen Sie zu **Lagerortverwaltung** \> **Ausgehende Wellen** \> **Produktionswellen** \> **Alle Produktionswellen**. Wählen Sie im Aktivitätsbereich **Produktionswellen** aus.
+    - Gehen Sie zu **Lagerortverwaltung** \> **Ausgehende Wellen** \> **Kanbanwellen** \> **Alle Kanbanwellen**. Wählen Sie im Aktivitätsbereich **Welle erstellen** aus.
 
 1. Geben Sie im Feld **Beschreibung** eine kurze Wellenbeschreibung ein. Sie sollte angeben, was Sie in der Welle verarbeiten.
 
@@ -87,9 +87,9 @@ Wenn eine Welle erstellt, aber noch nicht freigegeben wurde, können Sie manuell
 
 1. Abhängig vom Typ der Welle, zu der Positionen hinzugefügt werden sollen, nutzen Sie eine der folgenden Methoden:
 
-    - Gehen Sie zu **Lagerortverwaltung** \> **Allgemein** \> **Wellen** \> **Versandwellen** \> **Alle Wellen**. Wählen Sie im Aktivitätsbereich **Wellen** aus.
-    - Gehen Sie zu **Lagerortverwaltung** \> **Allgemein** \> **Wellen** \> **Produktionswellen** \> **Alle Produktionswellen**. Wählen Sie im Aktivitätsbereich **Produktionswellen** aus.
-    - Gehen Sie zu **Lagerortverwaltung** \> **Allgemein** \> **Wellen** \> **Kanbanwellen** \> **Alle Kanbanwellen**. Wählen Sie im Aktivitätsbereich **Welle erstellen** aus.
+    - Wechseln Sie zu **Lagerortverwaltung** \> **Ausgehende Wellen** \> **Lieferungswellen** \> **Alle Wellen**. Wählen Sie im Aktivitätsbereich **Wellen** aus.
+    - Gehen Sie zu **Lagerortverwaltung** \> **Ausgehende Wellen** \> **Produktionswellen** \> **Alle Produktionswellen**. Wählen Sie im Aktivitätsbereich **Produktionswellen** aus.
+    - Gehen Sie zu **Lagerortverwaltung** \> **Ausgehende Wellen** \> **Kanbanwellen** \> **Alle Kanbanwellen**. Wählen Sie im Aktivitätsbereich **Welle erstellen** aus.
 
 1. Wählen Sie die Welle aus. Wählen Sie im Aktivitätsbereich eine der folgenden Optionen aus:
 
@@ -121,9 +121,9 @@ Gehen Sie folgendermaßen vor, um eine Welle mit dem gesamten erforderlichen Inh
 
 1. Abhängig vom Typ der Welle, der verarbeitet werden soll, wählen Sie eine der folgenden Optionen:
 
-    - Wechseln Sie zu **Lagerortverwaltung** \> **Allgemein** \> **Wellen** \> **Versandwellen** \> **Alle Wellen**. Wählen Sie im Aktivitätsbereich **Wellen** aus.
-    - Wechseln Sie zu **Lagerortverwaltung** \> **Allgemein** \> **Wellen** \> **Produktionswellen** \> **Alle Produktionswellen**. Wählen Sie im Aktivitätsbereich **Produktionswellen** aus.
-    - Wählen Sie **Lagerortverwaltung** \> **Allgemein** \> **Wellen** \> **Kanbanwellen** \> **Alle Kanbanwellen**. Wählen Sie im Aktivitätsbereich **Welle erstellen** aus.
+    - Wählen Sie **Lagerortverwaltung** \> **Ausgehende Wellen** \> **Lieferungswellen** \> **Alle Wellen** aus. Wählen Sie im Aktivitätsbereich **Wellen** aus.
+    - Wechseln Sie zu **Lagerortverwaltung** \> **Ausgehende Wellen** \> **Produktionswellen** \> **Alle Produktionswellen**. Wählen Sie im Aktivitätsbereich **Produktionswellen** aus.
+    - Wählen Sie **Lagerortverwaltung** \> **Ausgehende Wellen** \> **Kanbanwellen** \> **Alle Kanbanwellen**. Wählen Sie im Aktivitätsbereich **Welle erstellen** aus.
 
 1. Wählen Sie die Welle aus, die verarbeitet werden soll. Klicken Sie im Aktivitätsbereich auf **Verarbeiten**.
 
@@ -141,9 +141,9 @@ Führen Sie folgende Schritte aus, um eine Welle manuell freizugeben:
 
 1. Abhängig vom Typ der Welle, der freigegeben werden soll, wählen Sie eine der folgenden Optionen:
 
-      - Wechseln Sie zu **Lagerortverwaltung** \> **Allgemein** \> **Wellen** \> **Versandwellen** \> **Alle Wellen**. Wählen Sie im Aktivitätsbereich **Wellen** aus.
-      - Wechseln Sie zu **Lagerortverwaltung** \> **Allgemein** \> **Wellen** \> **Produktionswellen** \> **Alle Produktionswellen**. Wählen Sie im Aktivitätsbereich **Produktionswellen** aus.
-      - Wählen Sie **Lagerortverwaltung** \> **Allgemein** \> **Wellen** \> **Kanbanwellen** \> **Alle Kanbanwellen**. Wählen Sie im Aktivitätsbereich **Welle erstellen** aus.
+      - Wählen Sie **Lagerortverwaltung** \> **Ausgehende Wellen** \> **Lieferungswellen** \> **Alle Wellen** aus. Wählen Sie im Aktivitätsbereich **Wellen** aus.
+      - Wechseln Sie zu **Lagerortverwaltung** \> **Ausgehende Wellen** \> **Produktionswellen** \> **Alle Produktionswellen**. Wählen Sie im Aktivitätsbereich **Produktionswellen** aus.
+      - Wählen Sie **Lagerortverwaltung** \> **Ausgehende Wellen** \> **Kanbanwellen** \> **Alle Kanbanwellen**. Wählen Sie im Aktivitätsbereich **Welle erstellen** aus.
 
 1. Wählen Sie die Welle aus, die freigegeben werden soll. Wählen Sie im Aktivitätsbereich **Welle freigeben** aus.
 
@@ -179,9 +179,9 @@ Bei Bedarf können Sie eine Welle abbrechen, die verarbeitet wurde. Um eine Well
 
 1. Abhängig vom Typ der Welle, der abgebrochen werden soll, wählen Sie eine der folgenden Optionen:
 
-      - Gehen Sie zu **Lagerortverwaltung** \> **Allgemein** \> **Wellen** \> **Versandwellen** \> **Alle Wellen**.
-      - Gehen Sie zu **Lagerortverwaltung** \> **Allgemein** \> **Wellen** \> **Produktionswellen** \> **Alle Produktionswellen**.
-      - Gehen Sie zu **Lagerortverwaltung** \> **Allgemein** \> **Wellen** \> **Kanbanwellen** \> **Alle Kanbanwellen**.
+      - Wechseln Sie zu **Lagerortverwaltung** \> **Ausgehende Wellen** \> **Lieferungswellen** \> **Alle Wellen**.
+      - Gehen Sie zu **Lagerortverwaltung** \> **Ausgehende Wellen** \> **Produktionswellen** \> **Alle Produktionswellen**.
+      - Gehen Sie zu **Lagerortverwaltung** \> **Ausgehende Wellen** \> **Kanbanwellen** \> **Alle Kanbanwellen**.
 
 1. Wählen Sie die Welle aus, die abgebrochen werden soll. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Arbeit** die Option **Abbrechen** aus.
 
