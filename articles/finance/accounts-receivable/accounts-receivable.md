@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 412b900b5eb9a3a01feb5f4dd67529a5128e52b7
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ef08d7880a0695527cbfb4ba4e11aae05aec7fc8
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711853"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065364"
 ---
 # <a name="accounts-receivable-home-page"></a>Startseite für Debitoren
 
@@ -41,7 +41,7 @@ Sie können Debitorenrechnungen auf Basis von Aufträgen oder Lieferscheinen ers
 
 Mithilfe von „Debitoren“ lassen sich alle Debitorenrechnungen und eingehenden Zahlungen von Debitoren nachverfolgen. Sie haben die Möglichkeit zum Einrichten der folgenden Elemente: Debitorengruppen, Debitoren, Buchungsprofile, Zinsrechnungen, Mahnschreiben, Provisionen sowie Parameter zu Debitoren, Gebühren, Lieferungen und Zielorte, Wechsel sowie andere Arten von Debitoreninformationen. 
 
-- [Buchhaltungsverteilungen und Erfassungseinträge in untergeordnetem Sachkonto bei Freitextrechnungen](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+- [Buchhaltungsverteilungen und Journaleinträge in untergeordnetem Sachkonto bei Freitextrechnungen](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
 - [Debitorenbuchungsprofile](customer-posting-profiles.md)
 - [Einrichten, Genehmigen und Erfassen von Kreditkarten](credit-card-authorizations.md)
 - [Erstellen einer Debitorenrechnung](configure-customer-invoices.md)
@@ -83,7 +83,7 @@ Lesen Sie den [Microsoft Dynamics 365-Produktplan](/dynamics365/release-plans/)
 
 #### <a name="blogs"></a>Blogs
 
-Meinungen, Neuigkeiten und weitere Informationen zu „Debitorenkonten” und anderen Lösungen finden Sie im [Microsoft Dynamics 365-Blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) und dem [Microsoft Dynamics 365 Finance and Operations – Financials-Blog](https://community.dynamics.com/365/financeandoperations/b/financials).
+Meinungen, Neuigkeiten und weitere Informationen zu „Debitorenkonten” und anderen Lösungen finden Sie im [Microsoft Dynamics 365-Blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) und dem [Microsoft Dynamics 365 Finanzen und Betrieb – Financials-Blog](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 Im [Microsoft Dynamics Operations-Partner-Community-Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) erfahren Microsoft Dynamics-Partner an zentraler Stelle alles über Neuerungen und Trends bei Dynamics 365.
 
@@ -103,3 +103,4 @@ Sehen Sie in den Videos nach, die jetzt im [YouTube-Kanal zu Microsoft Dynamics 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
