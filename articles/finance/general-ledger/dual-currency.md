@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8db8faefaec4afe208344492ec91375531cb9cd0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 19337b2651830d79543361d525bf24c4f794e825
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906354"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065745"
 ---
 # <a name="dual-currency"></a>Doppelte Währung
 
 [!include [banner](../includes/banner.md)]
 
-Funktion, die in Microsoft Dynamics 365 for Finance and Operations Version 8.1 (Oktober 2018) eingeführt wurden, ermöglichen es, die Berichtswährung als zweite Buchhaltungswährung zu verwenden. Diese Funktion wird auch als *Doppelte Währung* bezeichnet. Die Änderungen für doppelte Währung können nicht durch einen Konfigurationsschlüssel oder einen Parameter deaktiviert werden. Da die Berichtswährung als zweite Buchhaltungswährung verwendet wird, änderte sich die Art, in der die Berichtswährung in der Buchungslogik berechnet wird.
+Die in Microsoft Dynamics 365 Finance Version 8.1 (Oktober 2018) eingeführte Funktionalität ermöglicht es, die Berichtswährung umzuwidmen und als zweite Buchhaltungswährung zu verwenden. Diese Funktion wird auch als *Doppelte Währung* bezeichnet. Die Änderungen für doppelte Währung können nicht durch einen Konfigurationsschlüssel oder einen Parameter deaktiviert werden. Da die Berichtswährung als zweite Buchhaltungswährung verwendet wird, änderte sich die Art, in der die Berichtswährung in der Buchungslogik berechnet wird.
 
 Darüber hinaus wurden zahlreiche Module verbessert, um die Berichtswährung in verschiedenen Prozessen zu überwachen, zu melden und zu verwenden. Die Module, die betroffen sind, umfassen Folgendes:
 
@@ -209,3 +209,4 @@ In der Hauptbuchkonsolidierung wurde eine neue Option hinzugefügt, um entweder 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

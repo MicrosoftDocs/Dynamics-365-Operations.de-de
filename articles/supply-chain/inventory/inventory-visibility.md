@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 782545ea38a209eb4430607f5bca96e4e930efdc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 274f9b368a6074725d1938de5f2172d2810a5985
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897631"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066639"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Übersicht über das Bestandsanzeige-Add-In
 
@@ -61,9 +61,9 @@ Die Einsicht in Ihren für die nahe Zukunft prognostizierten Bestand (einschlie�
 
 Die ATP Funktion lässt sich leicht in Ihren täglichen Auftragsabwicklungsprozess adaptieren. Am wichtigsten ist, dass die ATP Funktion wie andere Inventory Visibility Angebote *global und in Echtzeit* ist. Daher können Sie mehrere ATP-Berechnungsformeln festlegen, um vollständige Abfragen zur Bestandsverfügbarkeit zu erhalten, die alle Ihre Geschäftskanäle und Datenquellen abdecken. Weitere Informationen finden Sie unter [Inventory Visibility Lagerbestand Änderungspläne und verfügbar zu versprechen](inventory-visibility-available-to-promise.md).
 
-### <a name="compatibility-with-advanced-warehouse-management-items"></a>Kompatibilität mit Elementen der erweiterten Lagerverwaltung
+### <a name="compatibility-with-warehouse-management-processes-wms-items"></a>Kompatibilität mit Lagerverwaltungsprozessen (WMS) Artikel
 
-Microsoft strebt eine Out-of-Box-Integration mit der erweiterten Lagerverwaltung (WHS) an, damit auch WHS-Kunden in den Genuss der Vorteile des Dienstes Inventory Visibility kommen. In der Version 2022 Wave 1 (öffentliche Vorschau im März) unterstützt der Bestandsservice WHS-Abfragen zum Lagerbestand und ATP. Die Funktion der weichen Reservierung und Zuweisung wird für WHS-Kunden in der nächsten Welle unterstützt. Weitere Informationen finden Sie unter [Inventory Visibility-Unterstützung für WHS-Artikel](inventory-visibility-whs-support.md).
+Microsoft strebt eine standardmäßige Integration mit den Prozessen der Lagerverwaltung (WMS) an, sodass auch WMS-Kunden von den Vorteilen des Dienstes Inventory Visibility profitieren können. In der Version 2022 Wave 1 (öffentliche Vorschau im März) unterstützt der Bestandsservice WMS-Abfragen zum Lagerbestand und ATP. Die Funktion der weichen Reservierung und Zuweisung wird für WMS-Kunden in der nächsten Welle unterstützt. Weitere Informationen finden Sie unter [Inventory Visibility-Unterstützung für WMS-Artikel](inventory-visibility-whs-support.md).
 
 ## <a name="licensing"></a>Lizenzierung
 

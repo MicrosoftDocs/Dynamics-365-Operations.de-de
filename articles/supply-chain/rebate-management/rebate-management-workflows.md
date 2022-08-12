@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 2b1611ff7877efc4a2f98b8f84a1ef91971902ab
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4f0590c4c906e746b54ac30fd6531b8c1cd67915
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869516"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067331"
 ---
 # <a name="rebate-management-deal-workflows"></a>Workflows für Rückvergütungsverwaltungsdeals
 
 [!include [banner](../includes/banner.md)]
 
-Um Rückvergütungsdeals zu genehmigen, verwendet die Rückvergütungsverwaltung dieselbe Workflow-Plattform wie andere Finanz- und Betriebs-Apps. Jedem Workflow sind zwei Auftragsprozesse zugeordnet:
+Um Rabattgeschäfte zu genehmigen, verwendet das Rabattmanagement die gleiche Workflow-Plattform wie andere Finanz- und Betriebs-Apps. Jedem Workflow sind zwei Auftragsprozesse zugeordnet:
 
 - Ein Element des Workflows genehmigt den Deal.
 - Ein Element des Workflows aktiviert den Deal, sodass der Benutzer oder der Workflowprozess die Transaktionen genehmigen kann.
@@ -55,3 +55,4 @@ Sie können die folgenden Einstellungen für ein Geschäft ändern, nachdem es a
 - Bis-Datum
 
 Darüber hinaus können Bonuszeilen entfernt werden.
+

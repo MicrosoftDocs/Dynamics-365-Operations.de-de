@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6c9bfcdef91ad07b8346498b8944e1d741d623a1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3a27548fff9728c74814fb92438da1d0c17b5e2b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862655"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067391"
 ---
 # <a name="engineering-change-management-overview"></a>Überblick über die Verwaltung für technische Änderungen
 
@@ -40,7 +40,7 @@ Die Verwaltung für technische Änderungen unterstützt Sie bei der Planung und 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HE6B]
 
-Das vorhergehende Video ([Funktionalitäten der Änderungsverwaltung in Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) ist in der [Wiedergabeliste von Finanzen und Betrieb](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) enthalten, die auf YouTube verfügbar ist.
+Das vorhergehende Video ([Funktionalitäten der Änderungsverwaltung in Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) ist in der [Wiedergabeliste Finanzen und Vorgänge](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) enthalten, die auf YouTube verfügbar ist.
 
 ## <a name="turn-on-the-engineering-change-management-features-for-your-system"></a>Schalten Sie die Verwaltungfunktionen für technische Änderungen für Ihr System ein
 
@@ -88,3 +88,4 @@ Nachdem Sie die grundlegenden Funktionen für die Änderungsverwaltung aktiviert
 | Variantengenerierung für technische Produkte | <p>Mit dieser Funktion können Sie Varianten für Konstruktionsprodukte basierend auf verfügbaren Dimensionswerten generieren.</p><p>Weitere Informationen finden Sie unter [Generieren Sie Varianten für Engineering-Produkte](engineering-variants.md).</p> |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

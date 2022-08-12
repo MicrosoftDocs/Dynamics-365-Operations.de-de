@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2bdb2ca0067ea430b249ac619a38c8bcec75f2f7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: cd5d2cf112a9d2ccdf6226ee79f0ff488d51066b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895814"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066669"
 ---
 # <a name="configure-inventory-visibility"></a>Inventory Visibility konfigurieren
 
@@ -55,7 +55,7 @@ Das Bestandsanzeige-Add-In fügt Ihrer Power Apps-Installation mehrere neue Funk
 | *OnHandMostSpecificBackgroundService* | Diese Funktion bietet eine Bestandsübersicht für Produkte zusammen mit allen Dimensionen. Die Bestandsübersicht wird regelmäßig von der Bestandsanzeige synchronisiert. Weitere Informationen finden Sie unter [Bestandsübersicht](inventory-visibility-power-platform.md#inventory-summary). |
 | *OnhandChangeSchedule* | Die optionale Funktion aktiviert die Funktionen Lagerbestandsänderung und Available to Promise (ATP). Weitere Informationen finden Sie unter [Inventory Visibility: verfügbarer Änderungszeitplan und verfügbar für Zusage](inventory-visibility-available-to-promise.md). |
 | *Zuweisung* | Diese optionale Funktion ermöglicht Inventory Visibility, Inventarschutz (Ringfencing) und Überverkaufskontrolle zu bieten. Weitere Informationen finden Sie unter [Bestandszuordnung für Bestandsichtbarkeit](inventory-visibility-allocation.md) |
-| *Lagerortartikel in Bestandsanzeige aktivieren* | Diese optionale Funktion ermöglicht es Inventory Visibility, Artikel zu unterstützen, die für erweiterte Lagerprozesse (WHS-Artikel) aktiviert sind. Weitere Informationen finden Sie unter [Inventory Visibility-Unterstützung für WHS-Artikel](inventory-visibility-whs-support.md). |
+| *Lagerortartikel in Bestandsanzeige aktivieren* | Diese optionale Funktion ermöglicht Inventory Visibility, um Artikel zu unterstützen, die für Prozesse der Lagerverwaltung (WMS) aktiviert sind. Weitere Informationen finden Sie unter [Inventory Visibility-Unterstützung für WMS-Artikel](inventory-visibility-whs-support.md). |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Finden Sie den Dienst-Endpunkt
 
@@ -63,7 +63,7 @@ Wenn Sie den richtigen Dienst-Endpunkt für Inventory Visibility nicht kennen, �
 
 ## <a name="data-source-configuration"></a><a name="data-source-configuration"></a>Datenquellenkonfiguration
 
-Jede Datenquelle steht für ein System, aus dem Ihre Daten stammen. Beispiele für Datenquellennamen sind `fno` (was für „Finanz- und Betriebs-Apps von Dynamics 365“ steht) und `pos` (was für „Point-of-Sale“ steht). Standardmäßig ist das Supply Chain Management als Standard-Datenquelle (`fno`) in Inventory Visibility festgelegt.
+Jede Datenquelle steht für ein System, aus dem Ihre Daten stammen. Beispielhafte Datenquellennamen sind `fno` (was für „Dynamics 365 Finanz- und Betriebs-Apps“ steht) und `pos` (was für „Point of Sale“ steht). Standardmäßig ist das Supply Chain Management als Standard-Datenquelle (`fno`) in Inventory Visibility festgelegt.
 
 > [!NOTE]
 > Die Datenquelle `fno` ist für das Supply Chain Management reserviert. Wenn Ihr Inventory Visibility-Add-In in eine Supply Chain Management Umgebung integriert ist, empfehlen wir Ihnen, keine Konfigurationen zu löschen, die sich auf `fno` in der Datenquelle beziehen.
@@ -809,3 +809,4 @@ Die folgende Tabelle zeigt die Standard-Reservierungshierarchie.
 | `ExtendedDimension8` | 33 |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

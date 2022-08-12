@@ -1,6 +1,6 @@
 ---
-title: Artikel für einen für die erweiterte Lagerhaltung aktivierten Artikel mithilfe einer Wareneingangserfassung registrieren
-description: Dieser Artikel stellt ein Szenario vor, wie Artikel mithilfe der Wareneingangserfassung erfasst werden, wenn Sie die erweiterte Lagerortverwaltung verwenden.
+title: Registrieren Sie Artikel, die für Lagerverwaltungsprozesse mit Hilfe einer Wareneingangserfassung aktiviert wurden.
+description: Dieser Artikel stellt ein Szenario vor, das zeigt, wie Sie Artikel mit Hilfe der Wareneingangserfassung registrieren, wenn Sie Lagerverwaltungsprozesse (WMS) verwenden.
 author: Mirzaab
 ms.date: 03/24/2021
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac4a681484f0cd843ccd73633040f0fa0be0475e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5241c982675d6b9a9bc9596b8ac9ed2798903287
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863620"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066966"
 ---
-# <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Artikel für einen für die erweiterte Lagerhaltung aktivierten Artikel mithilfe einer Wareneingangserfassung registrieren
+# <a name="register-items-enabled-for-warehouse-management-processes-using-an-item-arrival-journal"></a>Registrieren Sie Artikel, die für Lagerverwaltungsprozesse mit Hilfe einer Wareneingangserfassung aktiviert wurden.
 
 [!include [banner](../../includes/banner.md)]
 
-Dieser Artikel stellt ein Szenario vor, wie Artikel mithilfe der Wareneingangserfassung erfasst werden, wenn Sie die erweiterte Lagerortverwaltung verwenden. Dies wird in der Regel von einem Sachbearbeiter für Zugänge ausgeführt.
+Dieser Artikel stellt ein Szenario vor, das zeigt, wie Sie Artikel mit Hilfe der Wareneingangserfassung registrieren, wenn Sie Lagerverwaltungsprozesse (WMS) verwenden. Dies wird in der Regel von einem Sachbearbeiter für Zugänge ausgeführt.
 
 ## <a name="enable-sample-data"></a>Beispieldaten aktivieren
 
@@ -36,7 +36,7 @@ Sie können dieses Szenario stattdessen durcharbeiten, indem Sie Werte aus Ihren
 - Sie müssen eine bestätigte Bestellung mit einer offenen Bestellposition haben.
 - Der Artikel für die Position muss gelagert sein. Es dürfen keine Produktvarianten verwendet werden und es dürfen keine Rückverfolgungsangaben vorhanden sein.
 - Der Artikel muss einer Lagerdimensionsgruppe zugeordnet werden, die für den Lagerortverwaltungsprozess aktiviert ist.
-- Der Lagerort, der verwendet wird, muss für Lagerortverwaltungsprozesse aktiviert sein und der Lagerplatz, der für den Eingang verwendet wird, muss über Ladungsträger gesteuert werden.
+- Das verwendete Lager muss für WMS aktiviert sein und der Standort, den Sie für den Wareneingang verwenden, muss über ein Steuerelement gesteuert werden.
 
 ## <a name="create-an-item-arrival-journal-header-that-uses-warehouse-management"></a>Erstellen Sie eine Wareneingangserfassungs-Kopfzeile, die die Lagerortverwaltung verwendet
 

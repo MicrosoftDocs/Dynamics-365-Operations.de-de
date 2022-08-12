@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 7f054f4f479affe8ca2e041c77bd6fd11d51378e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a82a3b26f2bf7cb546383da047d18c2997569ca5
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900505"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065148"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Einzelvorgang zur Eingangsbereinigung bei der Lagerortverwaltung
 
@@ -26,11 +26,11 @@ ms.locfileid: "8900505"
 
 Die Leistung von Abfragen, die zur Berechnung des Lagerbestands verwendet werden, wird durch die Anzahl der Datensätze in den beteiligten Tabellen beeinflusst. Eine Möglichkeit zur Verbesserung der Leistung besteht darin, die Anzahl der Datensätze zu verringern, die die Datenbank berücksichtigen muss.
 
-In diesem Artikel wird der Bereinigungsjob für vorhandene Einträge beschrieben, mit dem nicht benötigte Datensätze in den Tabellen InventSum und WHSInventReserve gelöscht werden. In diesen Tabellen werden Informationen zu Artikeln gespeichert, die für die Lagerverwaltungsverarbeitung aktiviert sind. (Diese Elemente werden als WHS-Elemente bezeichnet.) Das Löschen dieser Datensätze kann die Leistung der vorhandenen Berechnungen erheblich verbessern.
+Dieser Artikel beschreibt den Bereinigungsauftrag für Lagerbestände, der nicht benötigte Datensätze in den Tabellen `InventSum` und `WHSInventReserve` löscht. In diesen Tabellen werden Informationen zu Artikeln gespeichert, die für die Lagerverwaltungsverarbeitung aktiviert sind. (Diese Elemente werden als WMS-Elemente bezeichnet.) Das Löschen dieser Datensätze kann die Leistung der vorhandenen Berechnungen erheblich verbessern.
 
 ## <a name="what-the-cleanup-job-does"></a>Was macht der Bereinigungsjob
 
-Der Bereinigungsjob für vorhandene Einträge löscht alle Datensätze in den Tabellen WHSInventReserve und InventSum, in denen sich alle Feldwerte befinden *0* (Null). Diese Datensätze können gelöscht werden, da sie nicht zu den verfügbaren Informationen beitragen. Der Job löscht nur Datensätze, die unter der Ebene **Standort** liegen.
+Der Bereinigungsauftrag für Lagerbestände löscht alle Datensätze in den Tabellen `WHSInventReserve` und `InventSum`, bei denen alle Feldwerte *0* (Null) sind. Diese Datensätze können gelöscht werden, da sie nicht zu den verfügbaren Informationen beitragen. Der Job löscht nur Datensätze, die unter der Ebene **Standort** liegen.
 
 Wenn eine negative Inventur zulässig ist, kann der Bereinigungsjob möglicherweise nicht alle relevanten Einträge löschen. Der Grund für diese Einschränkung ist, dass der Job ein spezielles Szenario zulassen muss, in dem eine Kennzeichnung mehrere Seriennummern hat und eine dieser Seriennummern negativ geworden ist. Beispielsweise verfügt das System Null verfügbar auf Kennzeichenebene, wenn ein Kennzeichen +1 Stück der Seriennummer 1 und –1 Stück der Seriennummer 2 enthält. In diesem speziellen Szenario führt der Job eine Löschung mit der Breite zuerst durch, wobei versucht wird, zuerst von den niedrigeren Ebenen zu löschen.
 

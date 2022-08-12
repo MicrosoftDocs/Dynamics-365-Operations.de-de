@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f150c87b6d4e6575bc61a8f36bdf344ebba9c571
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4f57e995dfcc04de8384d15f238c45290b3c3cbd
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879278"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067615"
 ---
 # <a name="integration-with-finance-faq"></a>FAQ zur Integration mit Finance
 
@@ -88,7 +88,7 @@ Für die Ausnahmebehandlung ist keine spezielle Einrichtung erforderlich. Der Da
 
 ## <a name="can-i-set-up-bi-directional-integration"></a>Kann ich eine bidirektionale Integration einrichten?
 
-Nein, die Integration erfolgt derzeit in eine Richtung (Human Resources zu Finance und Operations). Es steht jedoch eine Standardvorlage zur Verfügung, um Daten aus Human Resources an Finance zu senden.
+Nein, die Integration erfolgt derzeit nur in eine Richtung (Human Resources zu Finanzen und Betrieb). Es steht jedoch eine Standardvorlage zur Verfügung, um Daten aus Human Resources an Finance zu senden.
 
 ## <a name="can-i-allow-record-deletion-as-part-of-my-integration"></a>Kann ich im Rahmen meiner Integration das Löschen von Datensätzen zulassen?
 
@@ -118,7 +118,7 @@ Gründe für diesen Fehler können sein:
 
 - Der Datentransfer führte zu einer doppelten Datensatzextraktion an der Quelle (Dataverse).
 
-- Die Datenübernahme hat Nullwerte für Felder, die in Finance and Operations benötigt werden. Überprüfen Sie die Daten, die sich im Dataverse befinden und den Anforderungen von Finance and Operations entsprechen.
+- Die Datenübertragung hat Nullwerte für Felder, die in Finanzen und Betrieb erforderlich sind. Überprüfen Sie die Daten, die sich im Dataverse befinden und den Anforderungen von Finance and Operations entsprechen.
 
 ## <a name="if-there-are-execution-errors-and-the-employee-id-didnt-sync-how-do-i-find-the-history-job-which-has-the-failed-employee-record"></a>Wenn es Ausführungsfehler gibt und die Mitarbeiter-ID nicht synchronisiert wurde, wie finde ich den Verlaufsauftrag, der den fehlgeschlagenen Mitarbeiterdatensatz enthält?
 
@@ -150,7 +150,7 @@ Wenn die Entität unterstützt wird und die Daten im Dataverse verfügbar sind, 
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-what-should-i-do"></a>Die Adressen meiner Mitarbeiter sind nach dem Import in Finance falsch. Was soll ich tun?
 
-Die Nummernfolge für die **Standort-ID** verwendet das gleiche Muster sowohl in Human Resources als auch in Finance. Die Nummernfolge muss auf beiden Seiten eindeutig sein, damit es bei der Integration von Daten aus Dataverse in Finance and Operations zu keinen Adresskollisionen kommt.
+Die Nummernfolge für die **Standort-ID** verwendet das gleiche Muster sowohl in Human Resources als auch in Finance. Der Nummernkreis muss auf beiden Seiten eindeutig sein, damit es bei der Integration von Daten aus Dataverse in Finanzen und Betrieb nicht zu Adresskollisionen kommt.
 
 Vergewissern Sie sich bei der Implementierung von Human Resources, dass die Zahlenreihenfolge in Human Resources und Finance nicht identisch ist. Stellen Sie sicher, dass nicht alle Zahlenreihen identisch sind, wenn Daten in beiden Systemen gepflegt werden können.
 
@@ -184,3 +184,4 @@ Aktualisieren Sie die Dateneinheiten in Finance, indem Sie zu **Datenmanagement 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

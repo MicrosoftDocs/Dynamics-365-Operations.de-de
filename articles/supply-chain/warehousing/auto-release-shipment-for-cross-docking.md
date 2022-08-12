@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 34283422bafaeabef9ac454957b60db84eb5a9c7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c7199f5a5a401e627bb5fac9dece3950900e5f97
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903781"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067910"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Auto-Freigabelieferung für Crossdocking
 
@@ -40,8 +40,8 @@ Diese Crossdockingfunktion hat zwei Vorteile:
 
 | Voraussetzung | Beschreibung |
 |---|---|
-| Element | Der Artikel muss für Lagerortverwaltungsprozesse aktiviert werden.<p>**Hinweis:** Artikel mit Artikelgewicht können nicht in den Crossdockingprozessen einbezogen werden.</p> |
-| Lagerort | Der Lagerort muss für Lagerortverwaltungsprozesse aktiviert werden. |
+| Element | Der Artikel muss für Lagerverwaltungsprozesse (WMS) aktiviert werden.<p>**Hinweis:** Artikel mit Artikelgewicht können nicht in den Crossdockingprozessen einbezogen werden.</p> |
+| Lagerort | Das Lager muss für Lagerverwaltungsprozesse (WMS) aktiviert sein. |
 | Crossdockingvorlagen | Es muss mindestens eine Crossdockingvorlage, die die **Bei Angebotszugang**-Bedarfsfreigaberichtlinie verwendet, für einen bestimmten Lagerort eingerichtet werden. |
 | Arbeitsklasse | Eine Crossdockingarbeitsklassen-ID muss für den Arbeitsauftragstyp **Crossdocking** erstellt werden. |
 | Arbeitsvorlagen | Arbeitsvorlagen des **Crossdocking**-Arbeitsauftragstyps sind erforderlich, um Crossdocking-Entnahme- und Einlagerungsarbeit zu erstellen. |

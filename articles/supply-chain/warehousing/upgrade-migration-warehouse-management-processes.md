@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d85f4e5c44db511970b3e22490341228fa0d1abd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7a88c5a615ec860890578873eaee736fabbeaf08
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857082"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065809"
 ---
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Aktualisieren Sie die Lagerortverwaltung von Microsoft Dynamics AX 2012 auf Supply Chain Management 
 
@@ -37,11 +37,11 @@ Bei einem Upgrade werden alle Produkte, die einer Lagerdimensionsgruppe zugeordn
 Nach dem Upgrade können Sie eine Reihe von Optionen in der Gruppe **Lagerdimension ändern für Positionen** Formular verwenden, um Produkte, die während des Upgrades gesperrt wurden, zu entsperren und dann Transaktionen für diese Produkte zu bearbeiten.
 
 ### <a name="enabling-items-in-supply-chain-management"></a>Aktivieren von Artikeln in Supply Chain Management 
-Diese Änderung ist erforderlich, da die Artikelverfolgung in Supply Chain Management Teil der Lagerverwaltungsprozesse ist. Für diesen Prozess müssen alle Lagerorte und die Lagerplätze einem Lagerplatzprofil zugeordnet werden. Wenn Sie Lagerverwaltungsprozesse verwenden möchten, müssen Sie Folgendes konfigurieren:
--   Alle bestehenden Lagerorte müssen für Lagerortverwaltungsprozesse aktiviert werden 
--   Vorhandene freigegebene Produkte müssen einer Lagerdimensionsgruppe zugeordnet werden, die Lagerortverwaltungsprozesse verwendet. 
+Diese Änderung ist erforderlich, da im Supply Chain Management die Artikelverfolgung Teil der Lagerverwaltungsprozesse (WMS) ist. Für diesen Prozess müssen alle Lagerorte und die Lagerplätze einem Lagerplatzprofil zugeordnet werden. Wenn Sie WMS verwenden möchten, muss Folgendes konfiguriert werden:
+-   Bestehende Lager müssen für die Verwendung von WMS aktiviert sein 
+-   Vorhandene freigegebene Produkte müssen mit einer Lagerdimensionsgruppe verbunden sein, die WMS verwendet 
 
-Wenn die Quelllagerdimensionsgruppen die Palettennummerlagerungsdimension verwenden, müssen die vorhandenen Standorte des verfügbaren Lagerbestands, die die Palettennummerlagerungsdimension verwenden, einem Lagerplatzprofil zugeordnet sein, in dem der Parameter **Nutzungslizenzplattennachverfolgung** ausgewählt wird. Wenn vorhandene Lagerorte nicht aktiviert werden, um Lagerortverwaltungsprozesse zu verwenden, können Sie Lagerdimensionsgruppen für verfügbaren Lagerbestand der vorhandenen Gruppen ändern, die nur die Standort-, Lagerort und Lagerplatz-Lagerungsdimensionen behandeln. 
+Wenn die Quelllagerdimensionsgruppen die Palettennummerlagerungsdimension verwenden, müssen die vorhandenen Standorte des verfügbaren Lagerbestands, die die Palettennummerlagerungsdimension verwenden, einem Lagerplatzprofil zugeordnet sein, in dem der Parameter **Nutzungslizenzplattennachverfolgung** ausgewählt wird. Wenn die vorhandenen Lagerbestände nicht für die Verwendung von WMS aktiviert werden sollen, können Sie die Lagerdimensionsgruppen des vorhandenen Lagerbestands in Gruppen ändern, die nur die Bestandsdimensionen Standort, Lager und Standort behandeln. 
 
 > [!NOTE] 
 >  Beachten Sie, dass Sie die Lagerdimensionsgruppe ändern können, auch wenn offenen Lagerbuchungen vorhanden sind.
@@ -56,12 +56,12 @@ Um als Teil eines Lagerverwaltungsprozesses verwendet werden zu können, muss ei
 Um für Produkte die Sperrung aufzuheben die bei einer Aktualisierung möglicherweise gesperrt wurden, müssen Sie eine neue Lagerdimensionsgruppe für die Produkte auswählen. Beachten Sie, dass Sie die Lagerdimensionsgruppe ändern können, auch wenn offenen Lagerbuchungen vorhanden sind. Um Artikel zu verwenden, die bei einer Aktualisierung möglicherweise gesperrt wurden, haben Sie zwei Möglichkeiten:
 
 -   Ändern Sie die Lagerdimensionsgruppe für den Artikel in eine Lagerdimensionsgruppe, die nur die Lagerort-, Standort-, und Standortbestanddimensionen verwendet. Infolge dieser Änderung wird die Palettennummerlagerungsdimension nicht mehr verwendet.
--   Ändern Sie die Lagerdimensionsgruppe für den Artikel in eine Lagerdimensionsgruppe, die nur die Lagerort-, Standort-, und Standortbestanddimensionen verwendet. Infolge dieser Änderung wird jetzt die Palettennummerlagerungsdimension verwendet.
+-   Ändern Sie die Lagerungsdimensionsgruppe für den Artikel in eine Lagerungsdimensionsgruppe, die WMS verwendet. Infolge dieser Änderung wird jetzt die Palettennummerlagerungsdimension verwendet.
 
-## <a name="configure-warehouse-management-processes"></a>Lagerortverwaltungsprozesse konfigurieren
+## <a name="configure-wms"></a>WMS konfigurieren
 Bevor Sie freigegebene Produkte im Modul **Lagerortverwaltung** verwenden können, müssen die Produkte eine Lagerdimensionsgruppe verwenden, wobei **Verwendungslagerortverwaltungsprozesse** der Parameter ausgewählt wird.
 
-### <a name="enable-warehouses-to-use-warehouse-management-processes"></a>Alle bestehenden Lagerorte müssen für Lagerortverwaltungsprozesse aktiviert werden.
+### <a name="enable-warehouses-to-use-wms"></a>Ermöglichen Sie es den Lagern, WMS zu nutzen
 
 1.  Erstellen Sie mindestens ein neues Lagerplatzprofil.
 2.  Klicken Sie auf **Lagerortverwaltung** &gt; **Einstellungen** &gt; **Aktivieren Sie Lagerortverwaltungsprozesse** &gt; **Aktivieren Sie Lagerorteinstellungen**.
@@ -70,7 +70,7 @@ Bevor Sie freigegebene Produkte im Modul **Lagerortverwaltung** verwenden könne
 5.  Überprüfen Sie die vorgeschlagenen Änderungen. Als Teil des Validierungsprozesses treten verschiedene Prüfungen der Datenintegrität auf. Als Teil eines längeren Aktualisierungsprozesses können möglicherweise Probleme auftreten, die auf der Quellimplementierung angepasst werden müssen. In diesem Fall ist eine zusätzliche Datenaktualisierung erforderlich.
 6.  Änderung verarbeiten.
 
-### <a name="change-the-storage-dimension-group-for-items-so-that-it-uses-warehouse-management-processes"></a>Der Artikel ist einer Lagerdimensionsgruppe zugeordnet, die Lagerortverwaltungsprozesse verwendet
+### <a name="change-the-storage-dimension-group-for-items-so-that-it-uses-wms"></a>Ändern Sie die Gruppe der Dimensionen für die Lagerung von Artikeln, sodass sie WMS verwendet.
 
 1.  Erstellen Sie einen neuen Wert **Lagerstatus**, und weisen Sie diesen als der Wert **Kennung Standardbestandsstatus** in den Formularen **Lagerverwaltungsparameter** Einstellungen zu.
 2.  Erstellen Sie eine neue Lagerdimensionsgruppe, in der der Parameter ausgewählt wurde. **Verwenden Sie Lagerortverwaltungsprozesse**.

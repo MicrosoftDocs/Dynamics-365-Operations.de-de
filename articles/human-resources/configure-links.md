@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-29-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0c9efae1061e96c0c42d5ca6a100bb36889ce56b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9640f460ed7b0b1a0cfdffb7c318bf833f8627fc
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859665"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065292"
 ---
 # <a name="create-links-from-human-resources-to-another-finance-environment"></a>Verknüpfungen von Human Resources zu einer anderen Finance-Umgebung erstellen
 
@@ -53,7 +53,7 @@ Jeder Link, der erstellt wird, besitzt die folgenden definierten Informationen:
 
    So finden Sie das gewünschte Menüelement:
    1. Gehen Sie zur Finance-Umgebung und öffnen Sie die Seite, die das Ziel der Navigation ist. 
-   2. Kopieren Sie die Menüoption aus der URL. Wenn Sie möchten, dass Sie mit dem Link zur Mitarbeiterliste in Finance and Operations gelangen, geben Sie den Wert ein, der nach " &mi " in der URL angezeigt wird. 
+   2. Kopieren Sie die Menüoption aus der URL. Wenn Sie z.B. möchten, dass der Link zur Mitarbeiterliste in Finanzen und Betrieb führt, geben Sie den Wert ein, der nach dem „&mi“ in der URL erscheint. 
    3. Die Menüoption, um zur Mitarbeiterlistenseite in diesem Beispiel zu navigieren ist: HcmWorkerListPage_Employees.
 
  - **Verknüpfung zur Datenquelle**: Wählen Sie die Quelle der Daten aus, auf die die Verknüpfung verweist. Die häufigsten Gründe sind wie **Arbeitskraft** und **Position** sind verfügbar
@@ -63,4 +63,5 @@ Jeder Link, der erstellt wird, besitzt die folgenden definierten Informationen:
 Systemadministratoren finden die neu erstellten Links auf den festgelegten Seiten, selbst wenn die Option **Diesen Link aktivieren** auf **Nein** festgelegt ist. Dies kann zum Testen von Links verwendet werden, bevor diese für andere Mitarbeiter verwendet werden. Alle anderen Rollen sehen nur die konfigurierten Links, nachdem die Option **Diese Verknüpfung aktivieren** auf **Ja** festgelegt ist. Mitarbeiter, die Zugriff auf die Seiten haben, bei denen die Links überzogen werden, besitzen Zugriff auf Links.
 
 Benutzer müssen außerdem über Sicherheitsrechte innerhalb der definierten sekundären Umgebung verfügen, um auf die Seiten in dieser Umgebung zugreifen zu können. Wenn dies nicht der Fall, wird ein Sicherheitsdialogfeld angezeigt, sofern der Link verwendet wird.
+
 

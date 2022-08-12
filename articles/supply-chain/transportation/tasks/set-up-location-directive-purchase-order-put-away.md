@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: weijiesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d973d1cdb530a031ca8a5caf621f9bebced4842
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 25484efd7be026bfc3a209fb52822b87d6b76cc2
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873491"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065493"
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Lagerplatzrichtlinie für Einlagerung von Bestellungen festlegen
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Artikel wird erläutert, wie Sie eine einfache Standortanweisung einrichten. Das Beispiel, das angezeigt wird, erstellt, um zu bestimmen, wo sich verwendet werden Lagerplatzdirektive, Artikel führt, die für eine Bestellung eingegangen sind. Sie können diese Prozedur mit dem Daten des Demodatenunternehmen USMF oder mit eigenen Daten verwenden. Vorbedingungen: Sie müssen einen Dispositionscode erstellen. In diesem Schritt verwenden Sie einen aufgerufenen Dispositionscode neu bezeichnen. Wenn Sie Lagerplatzdirektive in eigene Daten erstellen, müssen Sie einrichten erweiterte Lagerortverwaltung für den aktuellen Lagerort und Artikel verwenden. Diese Prozedur ist für die Lagerverwaltung vorgesehen.
+In diesem Artikel wird erläutert, wie Sie eine einfache Standortanweisung einrichten. Das Beispiel, das angezeigt wird, erstellt, um zu bestimmen, wo sich verwendet werden Lagerplatzdirektive, Artikel führt, die für eine Bestellung eingegangen sind. Sie können diese Prozedur mit dem Daten des Demodatenunternehmen USMF oder mit eigenen Daten verwenden. Vorbedingungen: Sie müssen einen Dispositionscode erstellen. In diesem Schritt verwenden Sie einen aufgerufenen Dispositionscode neu bezeichnen. Wenn Sie eine Lagerplatzrichtlinie in Ihren eigenen Daten erstellen, müssen Sie Lagerverwaltungsprozesse (WMS) für Ihr Lager und Ihre Artikel festgelegt haben. Diese Prozedur ist für die Lagerverwaltung vorgesehen.
 
 1. Gehen Sie im Navigationsbereich zu **Module > Lagerverwaltung > Einrichtung > Standortanweisungen**.
 2. Wählen Sie im Feld **Arbeitsauftragsart** **Bestellungen**.

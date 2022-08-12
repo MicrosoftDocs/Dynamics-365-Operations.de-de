@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.dyn365.ops.version: 10.0.5
 ms.search.validFrom: 2019-08-31
-ms.openlocfilehash: d7e68cbe1132547fea5c72458a93b1a449a67c86
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8f215d5f6758f222a9dc6b382b172009836547ec
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902139"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067000"
 ---
 # <a name="use-the-asset-management-mobile-workspace"></a>Mobilen Arbeitsbereich für Anlagenverwaltung verwenden
 
@@ -46,7 +46,7 @@ Bevor Sie den mobilen Arbeitsbereich **Anlagenverwaltung** verwenden können, mu
 
 ## <a name="download-and-install-the-mobile-app"></a>Herunterladen und Installieren der mobilen App
 
-Laden Sie die mobile App für Finanz und Betrieb (Dynamics 365) herunter und installieren Sie sie:
+Laden Sie die Mobile-App für Finanzen und Vorgänge (Dynamics 365) herunter und installieren Sie sie:
 
 - [Für Android-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
 - [Für iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -241,3 +241,4 @@ Laden Sie die mobile App für Finanz und Betrieb (Dynamics 365) herunter und ins
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

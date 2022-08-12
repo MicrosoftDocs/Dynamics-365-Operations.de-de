@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-04
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 0ac45e070d0473547c48da1380377de3d4bf60bd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 66ed258ebddaadb5a306f41dea3e439e9b5a7be3
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907115"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065862"
 ---
 # <a name="import-inbound-asns-through-the-v3-data-entity"></a>Eingehende ASNs über die Entität V3-Daten importieren
 
@@ -29,7 +29,7 @@ ASNs können den Arbeitskräften am Lagerort helfen, zu erfahren, was wann eintr
 In diesem Artikel wird eine Sammlung von Szenarien vorgestellt, die anhand von Beispielen zeigen, wie man mit ASN-Dateien arbeitet.
 
 > [!IMPORTANT]
-> *Der eingehende ASN*-Import gilt nur für Elemente, die für die erweiterte Lagerortverwaltung (WMS) aktiviert sind. Bevor Sie einen Lieferavis erhalten, muss eine Einkaufsbestellung im System gegen den Kreditor, der diesen Lieferavis sendet, registriert werden.
+> *Eingehende ASN* importieren Sie nur für Artikel, die für Lagerverwaltungsprozesse (WMS) aktiviert sind. Bevor Sie einen Lieferavis erhalten, muss eine Einkaufsbestellung im System gegen den Kreditor, der diesen Lieferavis sendet, registriert werden.
 
 ## <a name="inbound-asn-v3-entity"></a>Eingehende ASN V3 Entität
 

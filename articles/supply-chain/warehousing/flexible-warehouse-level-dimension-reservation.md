@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: fb42d4ccd2d8797a34f6351caf7dedbc1e957fd5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d515fb46dcc2d135412d140b98f0578cae89c409
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885811"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065897"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexible Reservierungsrichtlinie für Dimensionen auf Lagerortebene
 
 [!include [banner](../includes/banner.md)]
 
-Wenn eine Bestandsreservierungshierarchie vom Typ *Charge unterhalb\[Lagerplatz\]* mit Produkten verknüpft ist, können Unternehmen, die Produkte mit Chargenverfolgung verkaufen und ihre Logistik als Operationen ausführen, die für das Microsoft Dynamics 365 Warehouse Management System (WMS) aktiviert sind, bestimmte Chargen dieser Produkte nicht für Debitorenaufträge reservieren.
+Wenn eine Bestandsreservierungshierarchie des Typs *Batch-below\[location\]* mit Produkten verknüpft ist, können Unternehmen, die Produkte mit Batch-Verfolgung verkaufen und ihre Logistik als Vorgänge ausführen, die für die Prozesse der Lagerverwaltung (WMS) aktiviert sind, keine spezifischen Batches dieser Produkte für Verkaufsaufträge von Debitor reservieren.
 
 Ähnlich können bestimmte Ladungsträger nicht für Produkte in Aufträgen reserviert werden, wenn diese Produkte mit der Standardreservierungshierarchie verknüpft sind.
 

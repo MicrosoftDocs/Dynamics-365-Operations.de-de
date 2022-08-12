@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dd645dcc79672e7f69afe47b803b90a04c22305d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 13a25d3f1f72d8053ed3951b036522cfa3a15959
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856279"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065643"
 ---
 # <a name="configure-human-resources-parameters"></a>Parameter in Human Resources konfigurieren
 
@@ -27,7 +27,7 @@ ms.locfileid: "8856279"
 
 Die Einstellungen einiger Human Resources-Parameter sind firmenübergreifend, während die Einstellungen anderer Parameter firmenspezifisch sind. In diesem Artikel wird erklärt, wie Sie firmenspezifische Human Resources-Parameter festlegen.
 
-Zum Festlegen der Human Resources-Parameter werden zwei Seiten verwendet. Für Parameter, die innerhalb des Unternehmens freigegeben werden, verwenden Sie die Seite **Freigegeben Parameter für Personalverwaltung**. Für Parameter, die unternehmensspezifisch sind (das heißt, die Einstellungen beziehen sich auf ein einzelnes Unternehmen), verwenden Sie die Seite **Personalverwaltungsparameter**.
+Zum Festlegen der Human Resources-Parameter werden zwei Seiten verwendet. Für Parameter, die innerhalb des Unternehmens freigegeben werden, verwenden Sie die Seite **Freigegeben Parameter für Personalverwaltung**. Für Parameter, die firmenspezifisch sind, verwenden Sie die Seite **Parameter für personelle Ressourcen**.
 
 ![Gehen Sie zu Personalverwaltungsparameter.](./media/hr-employee-self-service-human-resources-parameters.png)
 
@@ -74,9 +74,10 @@ In Dynamics 365 Finance legen die Einstellungen auf der Registerkarte **Vergütu
 
 In Human Resources können Sie auf der Registerkarte **Vergütung** wählen, ob Sie den Zugriff auf Vergütungspläne beschränken und eine Standardwährung festlegen wollen.
 
-Weitere Informationen über Vergütungen finden Sie unter [Übersicht über Vergütungspläne](hr-compensation-overview.md).
+> [!NOTE]
+> In der zusammengeführten Infrastruktur wurde der Standardparameter **Währung** auf der Registerkarte **Vergütung** der Seite **Parameter für Human Resources** entfernt. In Zukunft wird die Währung über den Parameter **Sachkonto-Währung** gehandhabt, um sicherzustellen, dass es keine Konflikte mit bestehenden Funktionen für Finanzen und Betrieb gibt und um Doppelarbeit zu vermeiden. Weitere Informationen über die Verwendung der Sachkonto-Währungsfunktionalität finden Sie unter [Sachkonten konfigurieren](/general-ledger/configure-ledger#configuring-currencies-for-the-ledger.md). 
 
-![Registerkarte „Vergütung“.](./media/hr-setup-parameters-compensation.png)
+Weitere Informationen über Vergütungen finden Sie unter [Übersicht über Vergütungspläne](hr-compensation-overview.md).
 
 ## <a name="number-sequences"></a>Nummernkreise
 

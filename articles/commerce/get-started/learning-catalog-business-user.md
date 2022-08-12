@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: afbd23768c86775e8007f72cb8af4126e4452336
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8d5d1a1a2a5f4bc3d2bdea8ae87865fb3dbfc8c7
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897071"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066936"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-commerce"></a>Lernkatalog für Benutzer von Dynamics 365 Commerce
 
@@ -25,7 +25,7 @@ Haben Sie gerade eine neue Anwendung erhalten?
 
 Der folgende Katalog wurde aus Kernwissen zu bestimmten Domänen und vom Einfachsten zum Fortgeschrittensten organisiert. Wenn Inhalt in mehreren Formaten vorhanden ist, benachrichtigen wir Sie, damit Sie das Trainingsformat auswählen können, das Ihren Anforderungen am besten entspricht.
 
-Trainings zu Funktionen, die mit anderen Finanz- und Betriebs-Apps geteilt werden, finden Sie im [Dynamics 365 Finance-Lernkatalog](../../finance/get-started/learning-catalog-business-user.md).
+Schulungen zu Funktionen, die mit anderen Finanz- und Betriebs-Apps gemeinsam genutzt werden, finden Sie im [Dynamics 365 Finance Learning Catalog](../../finance/get-started/learning-catalog-business-user.md).
 
 ## <a name="get-started"></a>Erste Schritte<a name="get-started"></a>
 
@@ -53,3 +53,4 @@ Trainings zu Funktionen, die mit anderen Finanz- und Betriebs-Apps geteilt werde
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

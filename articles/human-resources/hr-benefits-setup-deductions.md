@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b4817cd6370166b6dfdf17b3d733b13374db8f49
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2fb5f5b0b50f407f58193aafd79f28dd1fd432ee
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694906"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066791"
 ---
 # <a name="configure-deductions"></a>Abzüge konfigurieren
 
@@ -45,7 +45,7 @@ Verwenden Sie Abzüge in Microsoft Dynamics 365 Human Resources, um zu bestimmen
    | **Überschrift** | Der Überschriftencode aus dem Lohnsystem, den dieser Abzug für den Mitarbeiteranteil des Abzugs verwendet, wenn die Vorteile für den Lohn verarbeitet werden. Diese wird verwendet, wenn Sie einen Drittanbieter für die Lohnabrechnung verwenden. |
    | **Referenz für Lohnabzüge des Mitarbeiters** | Der Abzugscode aus dem Lohnsystem, den dieser Abzug für den Mitarbeiteranteil des Abzugs verwendet, wenn Vergütungen für die Lohnabrechnung verarbeitet werden. |
    | **Betragsüberschrift** | Der Überschriftencode aus dem Lohnsystem, den dieser Abzugsbetrag für den Mitarbeiteranteil des Abzugs verwendet, wenn die Vorteile für den Lohn verarbeitet werden. Diese wird normalerweise verwendet, wenn Sie einen Drittanbieter für die Lohnabrechnung verwenden. |
-   | **Löschen möglich** | Gibt an, ob ein exportierter Wert von Dynamics 365 for Finance and Operations dazu führen kann, dass der Wert im Lohnsystem gelöscht wird. |
+   | **Löschen möglich** | Gibt an, ob ein exportierter Wert aus Dynamics 365 Finance dazu führen kann, dass der Wert im Gehaltsabrechnungssystem gelöscht wird. |
    | **Gekoppelte Spalten** | Gibt an, ob Überschrift und Abzugsbetrag in gekoppelten benachbarten Spalten an das Lohnsystem exportiert werden sollen. |
    | **Gültigkeitsdatum ändern** | Datum, zu dem die Änderung des Vorteilsabzugs gültig wird. An diesem Datum wird der Leistungsabzug geändert und alle mit diesem Abzug verbundenen Leistungspläne werden aktualisiert, sofern Sie die Verarbeitung **Aktualisierung der Abzugsänderung** ausführen. |
    | **Abzugsänderung abgeschlossen** | Das Kontrollkästchen **Abzugsänderung abgeschlossen** wird automatisch aktiviert, sobald die Änderungen des Vorteilsabzugs durch die Verarbeitung von aktualisierten Abzugsänderungen abgeschlossen wurden. |
@@ -56,3 +56,4 @@ Verwenden Sie Abzüge in Microsoft Dynamics 365 Human Resources, um zu bestimmen
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

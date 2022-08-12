@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4843e5bc0cc97f47e212c0cb4a6ddc4a2032f306
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: cdfd8db68647623e2b5f1b9eca93b57776e1bfe9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858126"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067030"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Urlaubsanträge in Teams verwalten
 
@@ -185,7 +185,7 @@ Wählen Sie in Human Resources **Einstellungen** und wählen Sie dann **Benutzer
 
 ![Human Resources-Benutzeroptionen.](./media/hr-teams-leave-app-user-options.png)
 
-Wenn Sie immer noch Übersetzungsprobleme haben, lassen Sie es uns wissen. Informationen finden Sie unter [Erhalten Sie Support für Finanz- und Betriebs-Apps oder Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
+Wenn Sie immer noch Übersetzungsprobleme haben, lassen Sie es uns wissen. Informationen finden Sie unter [Support für Finanz- und Betriebs-Apps oder Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Fehler beim Genehmigen von Urlaubsanträgen in der Human Resources-App in Teams
 
@@ -245,3 +245,4 @@ Um den Zugriff auf die Human Resources-App in Microsoft Teams für Ihre Organisa
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

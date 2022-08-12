@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 50392e8aa0deb568a57e1df59ced70625a4f8a78
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 939066fbf4ab7b316283d406c321f1a7936c187f
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856047"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066545"
 ---
 # <a name="batch-balancing"></a>Chargenausgleich
 
@@ -165,22 +165,22 @@ Im Chargenausgleichprozess wird der Betrag der Substanz zur Verwendung innerhalb
 
 ### <a name="confirm-and-release-the-formula"></a>Bestätigen und Formel eingeben
 
-Nachdem die Inhaltsstoffmengen berechnet wurden, können Sie die Formel bestätigen und freigeben. Der Freigabeprozess variiert, abhängig davon, ob die Produkte der Lagerortverwaltungsprozesse aktiviert werden:
+Nachdem die Inhaltsstoffmengen berechnet wurden, können Sie die Formel bestätigen und freigeben. Der Freigabeprozess unterscheidet sich, je nachdem, ob die Produkte für Lagerverwaltungsprozesse (WMS) aktiviert sind:
 
-- Wenn ein Produkt für die Lagerortverwaltungsprozesse aktiviert ist, wird die Formelposition der Lagerorte anhand der Prinzipien für die Lagerortverwaltungsprozesse freigegeben. Die Formelposition wird anhand der produzierten Produktmengen freigegeben, die den ausgeglichenen Mengen entsprechen und für die Primärressource sowie für bestimmte Chargen freigegeben wird, die für die Wirksubstanzen ausgewählt werden.
+- Wenn ein Produkt für WMS aktiviert ist, wird die Formelzeile gemäß den Grundsätzen für WMS für das Lager freigegeben. Die Formelposition wird anhand der produzierten Produktmengen freigegeben, die den ausgeglichenen Mengen entsprechen und für die Primärressource sowie für bestimmte Chargen freigegeben wird, die für die Wirksubstanzen ausgewählt werden.
 
     > [!NOTE]
     > Formelpositionen können zum Lagerort nur als Teil des Chargenausgleichprozesses freigegeben werden. Obwohl es andere Optionen bei der gemeinsamen Nutzung von Material für Produktion in Lagerort gibt, können diese Optionen nicht für Formelpositionen verwendet werden.
 
-- Wenn das Produkt nicht für die Lagerortverwaltungsprozesse aktiviert ist, wird eine Produktionskommissionierliste für das Produkt erstellt, wenn Sie bestätigen und die Formel freigeben.
+- Wenn ein Produkt nicht für WMS aktiviert ist, wird eine Produktions-Kommissionierliste für das Produkt erstellt, wenn Sie die Formel bestätigen und freigeben.
 
-In einer einzelnen Formel können Sie Produkte kombinieren, die für die Lagerortverwaltungsprozesse aktiviert sind und Produkte, die nicht für die Lagerortverwaltung verarbeitet, aktiviert werden. Wenn die beiden Arten von Produkten in einer Formel enthalten sind, werden die Produkte, die für die Lagerortverwaltungsprozesse aktiviert sind, für den Lagerort freigegeben. Wenn das Produkt nicht für die Lagerortverwaltungsprozesse aktiviert ist, wird eine Produktionskommissionierliste für das Produkt erstellt, wenn Sie die Formel bestätigen und freigeben.
+In einer einzelnen Formel können Sie Produkte kombinieren, die für die Lagerortverwaltungsprozesse aktiviert sind und Produkte, die nicht für die Lagerortverwaltung verarbeitet, aktiviert werden. Wenn die beiden Produkttypen in einer Formel enthalten sind, werden die Produkte, die für das WMS aktiviert sind, für das Lager freigegeben. Für die Produkte, die nicht für WMS aktiviert sind, wird eine Kommissionierliste erstellt, wenn die Formel bestätigt und freigegeben wird.
 
 ### <a name="batch-orders-that-arent-applicable-for-batch-balancing"></a>Chargenaufträge, die nicht für Chargenausgleich gelten
 
 Es gibt zwei Ausnahmen zur Regel, dass Chargenausgleiche in den Chargenaufträgen angewendet werden, wenn die Formel mindestens eine Formelposition mit dem **Typ der Substanz** *Aktiv* hat.
 
-1. Falls eine Formel eine Wirksubstanz für ein Produkt enthält, das für die Lagerortverwaltungsprozesse aktiviert ist, jedoch die Chargennummer unterhalb der Position in der Reservierungshierarchie ist, ist der Chargenauftrag für Chargenausgleich nicht verfügbar.
+1. Wenn eine Formel einen Wirkstoff für ein Produkt enthält, das für das WMS aktiviert ist, aber die Batch-Nummer in der Reservierungshierarchie unter dem Ort steht, ist der Batch-Auftrag nicht für den Batch-Abgleich geeignet.
 1. Wenn sich die Formelmaßeinheit von der Lagermaßeinheit der Wirksubstanz unterscheidet, gilt der Chargenauftrag nicht für den Chargenausgleich.
 
 Ein Chargenauftrag, der nicht für Chargenausgleich anwendbar ist, durchläuft den normalen Prozesszyklus für Chargenaufträge.

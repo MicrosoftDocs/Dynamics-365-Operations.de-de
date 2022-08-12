@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 186dcdca9d6db5ca16d84f084c66700ddfe8bb5d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 335bdc9690b3111f4a04adc7e82d62de36ff4caf
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857430"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065987"
 ---
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Mischplanung: Kombinieren Sie eigenständige, Prozess- und Lean-Beschaffung
 
@@ -33,7 +33,7 @@ Sie können die allgemeine Strategie für das Beschaffen eines Produkts unabhän
 
 So können Sie Kanbansteuerelemente in der Assembly haben, in der Materialien für den Montagebereich nach Produktionsaufträgen, Kanbans, Übertragungen, Stapelverarbeitungsaufträgen beschafft werden, oder eine beliebige Kombination, die für die Merkmale der Lieferkette geeignet ist, Sie jedoch die volle Übersicht über die Bereitstellung haben. Diese Funktion führt zu optimierten Lieferkettenprozessen und erweiterter Sichtbarkeit in der Lieferkette.  
 
-Die Granularität der Lieferrichtlinien die im Produktprogrammplanungslauf verwendet werden, hängt von den Lagerdimensionen ab, die als Deckungsdimensionen aktiviert werden. Um den Produktprogrammplanungslauf zu aktivieren, um die Auffüllung und Bereitstellung von unterschiedlichen Arten der Lagerplätze zu steuern (beispielsweise durch das Trennen der Produktion für verschiedene Produktionseinheiten, oder durch Trennen unterschiedlicher Arten von Material- und Endproduktlagerorten), sollten Sie Standort und Lagerort als Deckungsdimensionen aktivieren. Alternativ kann der Lagerort als Deckungsdimension ausgelassen werden. In diesem Fall, wenn Sie erweiterte Lagerortverwaltung verwenden, werden alle Bewegungen innerhalb eines Lagerorts nach Lagerortarbeit gesteuert, während alle Bewegungen innerhalb von Lagerorten nach Entnahme-Kanbans gesteuert werden können.
+Die Granularität der Lieferrichtlinien die im Produktprogrammplanungslauf verwendet werden, hängt von den Lagerdimensionen ab, die als Deckungsdimensionen aktiviert werden. Um den Produktprogrammplanungslauf zu aktivieren, um die Auffüllung und Bereitstellung von unterschiedlichen Arten der Lagerplätze zu steuern (beispielsweise durch das Trennen der Produktion für verschiedene Produktionseinheiten, oder durch Trennen unterschiedlicher Arten von Material- und Endproduktlagerorten), sollten Sie Standort und Lagerort als Deckungsdimensionen aktivieren. Alternativ kann der Lagerort als Deckungsdimension ausgelassen werden. In diesem Fall, wenn Sie Lagerverwaltungsprozesse (LVS) verwenden, werden alle Lagerplatzumlagerungen innerhalb eines Lagers durch Lagerortarbeit gesteuert, während alle lagerübergreifenden Bewegungen durch Entnahmekanbans gesteuert werden können.
 
 ## <a name="supply-policies"></a>Lieferrichtlinien
 Die Mischplanung steuert, wie ein Produkt geliefert wird und, basierend auf der Beschaffung, wie abgeleitete Anforderungen (Verbrauch von Artikeln aus einer \[Stückliste\]) ausgestellt werden. Basierend auf dem Auftragstyp beschafft das System Materialien automatisch nach den Anforderungen.  

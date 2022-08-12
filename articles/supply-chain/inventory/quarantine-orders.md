@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3ee1ba338d90c6ee9cdc37948061f518040ae1a1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7e18735117d1f671e0efc0947248bbe266fa0ca6
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869661"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065584"
 ---
 # <a name="quarantine-orders"></a>Quarantäneaufträge
 
@@ -31,7 +31,7 @@ Dieser Artikel beschreibt, wie Sie Quarantäneaufträge verwenden, um Bestände 
 Mit Quarantäneaufträgen können Sie Bestände sperren. Beispielsweise empfiehlt es sich, Artikel aus Gründen der Qualitätskontrolle unter Quarantäne zu stellen. Bestand, der unter Quarantäne gestellt wurde, wird an einen Quarantänelagerort übertragen.
 
 > [!NOTE]
-> Wenn Sie erweiterte Lagerortverwaltungsprozesse (in der Lagerortverwaltung) verwenden, wird die Quarantäneauftragsverarbeitung nur für Rücklieferungen von Verkaufsaufträgen verwendet.
+> Wenn Sie Lagerverwaltungsprozesse (im Modul Lagerverwaltung) verwenden, wird die Quarantäneauftragsverarbeitung nur für Rücklieferungen von Verkaufsaufträgen verwendet.
 
 ## <a name="quarantine-on-hand-inventory-items"></a>Verfügbare Lagerartikel unter Quarantäne stellen
 

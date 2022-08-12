@@ -1,6 +1,6 @@
 ---
 title: Lagerplätze an einem für WMS aktivierten Lagerort konfigurieren
-description: Dieses Handbuch zeigt Ihnen an, wie die Lagerplatzeinstellung für einen neuen WMS-aktivierten Lagerort konfiguriert (ein Lagerort, den Verwendung Lagerortverwaltungsprozesse Erweiterter).
+description: Diese Anleitung zeigt Ihnen, wie Sie die Einrichtung des Standorts für ein neues WMS-fähiges Lager (ein Lager, das Lagerverwaltungsprozesse (WMS) verwendet) konfigurieren.
 author: perlynne
 ms.date: 06/26/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5273a388b30a41b75bd76c92fa4b9ff05c8f8d6
-ms.sourcegitcommit: db80edbe0c32e3a5f22aae6154781f3ff8a2ab2a
+ms.openlocfilehash: 45195698b48d6a22697f99044a8ae49beaf7156e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "7599347"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067272"
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Lagerplätze an einem für WMS aktivierten Lagerort konfigurieren
 
 [!include [banner](../../includes/banner.md)]
 
-Dieses Handbuch zeigt Ihnen an, wie die Lagerplatzeinstellung für einen neuen WMS-aktivierten Lagerort konfiguriert (ein Lagerort, den Verwendung Lagerortverwaltungsprozesse Erweiterter). Der Prozess wird normalerweise von einer Lagerortverwaltung erfolgt. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten ausführen. Eine Vorbedingung ist, dass Sie mindestens einen Standort konfiguriert.
+Diese Anleitung zeigt Ihnen, wie Sie die Einrichtung des Standorts für ein neues WMS-fähiges Lager (ein Lager, das Lagerverwaltungsprozesse (WMS) verwendet) konfigurieren. Der Prozess wird normalerweise von einer Lagerortverwaltung erfolgt. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten ausführen. Eine Vorbedingung ist, dass Sie mindestens einen Standort konfiguriert.
 
 
 ## <a name="create-a-new-warehouse"></a>Erstellt einen neuen Lagerort.
@@ -35,7 +35,7 @@ Dieses Handbuch zeigt Ihnen an, wie die Lagerplatzeinstellung für einen neuen W
 4. Geben Sie im Feld **Name** einen Wert ein.
 5. Wählen Sie im **Site**-Feld einen vorhandenen Site-Wert aus oder geben Sie ihn ein.
 6. Erweitern Sie den Abschnitt **Lagerort**.
-7. Setzen Sie die Option **Benutzerfehlerprotokoll für Lagerortverwaltungsprozesse verwenden** auf „Ja“. Bei dieser Einstellung können Sie weitere Lagerortprozesse mithilfe von Lagerortarbeit und mobilen Geräten auszuführen.
+7. Setzen Sie die Option **Benutzerfehlerprotokoll für Lagerortverwaltungsprozesse verwenden** auf „Ja“. Diese Einstellung lässt zu, dass Sie Prozesse der Lagerverwaltung (WMS) mit Hilfe von Lagerortarbeit und mobilen Geräten ausführen.
 8. Schließen Sie die Seite.
 
 ## <a name="define-a-location-format"></a>Lagerplatzformatdetail erstellen
@@ -68,7 +68,7 @@ Dieses Handbuch zeigt Ihnen an, wie die Lagerplatzeinstellung für einen neuen W
 5. Schließen Sie die Seite.
 
 ## <a name="define-location-profile"></a>Lagerortprofile definieren
-1. Gehen Sie auf **Navigationsbereich > Module > Lagerortverwaltung > Einstellungen > Lagerort > Lagerplatzprofile**. Die Definition von Lagerplatzprofilen ist äußerst wichtig. Die gruppierte Lagerplatzkapazität kann hier gesteuert werden sowie die Richtlinien, die zugeordnet werden, bis zu dem Lager untergebracht abruft und wie Zinsen gespeichert wird. Lagerplatzprofile können als Filteroptionen verwendet werden, die verschiedenen Lagerortverwaltungsprozesse zu steuern. Als Minimum müssen Sie ein Benutzerlagerplatzprofil erstellen, um die Lagerortverwaltungsprozesse zu aktivieren.
+1. Gehen Sie auf **Navigationsbereich > Module > Lagerortverwaltung > Einstellungen > Lagerort > Lagerplatzprofile**. Die Definition von Lagerplatzprofilen ist äußerst wichtig. Die gruppierte Lagerplatzkapazität kann hier gesteuert werden sowie die Richtlinien, die zugeordnet werden, bis zu dem Lager untergebracht abruft und wie Zinsen gespeichert wird. Lagerplatzprofile können als Filteroptionen verwendet werden, die verschiedenen Lagerortverwaltungsprozesse zu steuern. Sie müssen mindestens ein Benutzerstandortprofil erstellen, um WMS zu aktivieren.
 2. Klicken Sie auf **Neu**.
 3. Geben Sie im Feld **Lagerort-Profil-ID** einen Wert ein.
 4. Geben Sie im Feld **Name** einen Wert ein.

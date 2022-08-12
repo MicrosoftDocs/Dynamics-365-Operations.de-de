@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9f1f660b7993804901f5fc9d3b608c141882bff5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1f1daf630d3a9354012db9b5b487d8a5ed11e0ed
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901088"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066699"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-january-21-2021"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources 21. Januar 2021
 
@@ -42,7 +42,7 @@ Die folgenden Funktionen sind in dieser Version allgemein verfügbar.
 
 | Funktion | Freigabeplan | Dokumentation |
 | --- | --- | --- |
-| Platform Update 10.0.16(40) | -- | [Plattform-Updates für die Version 10.0.16 der Finanz- und Betriebs-Apps (Februar 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md) |
+| Platform Update 10.0.16(40) | -- | [Plattform-Updates für Version 10.0.16 der Finanz- und Betriebs-Apps (Februar 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md) |
 | Erweiterte Workflow-Anforderungen und Genehmigungen | [Organisations- und Personalmanagement-Workflow wird verbessert](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Konfigurationsoption zum Positionieren der Liste der mir zugewiesenen Arbeitselemente](./hr-whats-new-2020-09-03.md#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
 | Aktualisierungen der Einhaltung des ACA (Affordable Care Act) für Formular 1095-C, Formular 1095-B und elektronische Berichterstattung in veralteten Vorteilen | -- | -- | 
 | Die Vorteilsverwaltung unterstützt jetzt die ACA-Einhaltungs-Berichterstattung für in den USA ansässige juristische Personen | -- | [ACA-Berichte in der Vorteilsverwaltung generieren](hr-benefits-management-aca-reports.md) |

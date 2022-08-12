@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1648808667c8bb9487e7a47b87d8e73cf442d82
-ms.sourcegitcommit: d98ecbd9457197ec8f8e281f9c2f24dcce7b8269
+ms.openlocfilehash: 5c764cc186b5c8742ccfd90b5928f6625f3360c8
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "8960175"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065596"
 ---
 # <a name="demand-forecasting-overview"></a>Bedarfsplanung – Überblick
 
@@ -56,7 +56,7 @@ Drei wichtige Themen wurden in die Bedarfsplanung implementiert:
 - **Modularität** - Die Bedarfsplanung ist modular und einfach zu konfigurieren. Sie können die Funktionalität aktivieren und deaktivieren, indem Sie den Konfigurationsschlüssel unter **Art** &gt; **Bestandsprognose** &gt; **Bedarfsplanung** ändern.
 - **Wiederverwenden von Microsoft Stack** – Machine Learning ist jetzt Teil der Microsoft Cortana Analytics Suite und mit ihr können Sie schnell und einfach Predictive Analytics-Experimente erstellen, wie Experimente zur Bedarfsvorkalkulation mithilfe von Algorithmen R oder Python-Programmiersprachen und einer einfachen Drag & Drop-Schnittstelle.
   - Sie können die Bedarfsplanungsexperimente herunterladen, sie ändern und an Ihre geschäftlichen Anforderungen anpassen, sie als Webdienst auf Azure veröffentlichen und sie verwenden, um Bedarfsplanungen zu generieren. Die Experimente sind zum Download verfügbar, wenn Sie ein Supply Chain Management-Abonnement für einen Produktionsplaner als Benutzer auf Unternehmensebene besitzen.
-  - Sie können eines der aktuell verfügbaren Bedarfsvorhersagenexperimente aus dem [Cortana Analytics-Katalog](https://gallery.cortanaanalytics.com/) herunterladen. Während die Bedarfsplanungsexperimente automatisch mit Supply Chain Management integriert werden, müssen Kunden und Partner die Integration von Experimenten abwickeln, die sie aus dem [Cortana Analytics-Katalog](https://gallery.cortanaanalytics.com/) herunterladen. Daher sind Experimente aus dem [Cortana Analytics-Katalog](https://gallery.cortanaanalytics.com/) nicht so einfach zu verwenden wie die Finance and Operations-Bedarfsplanungsexperimente. Sie müssen den Code der Experimente ändern, sodass sie die Finance and Operations-API verwenden können.
+  - Sie können eines der aktuell verfügbaren Bedarfsvorhersagenexperimente aus dem [Cortana Analytics-Katalog](https://gallery.cortanaanalytics.com/) herunterladen. Während die Bedarfsplanungsexperimente automatisch mit Supply Chain Management integriert werden, müssen Kunden und Partner die Integration von Experimenten abwickeln, die sie aus dem [Cortana Analytics-Katalog](https://gallery.cortanaanalytics.com/) herunterladen. Daher sind die Experimente aus der [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) nicht so einfach zu handhaben wie die Experimente zur Planung des Bedarfs im Bereich Finanzen und Betrieb. Sie müssen den Code der Experimente so ändern, dass sie die Programmierschnittstelle (API) für Finanzen und Betrieb verwenden.
   - Sie können eigene Experimente in Microsoft Azure Machine Learning Studio (klassisch) erstellen, als Dienste auf Azure veröffentlichen und sie verwenden, um Bedarfsplanungen zu generieren.
   - Wenn Sie keine hohe Leistung benötigen oder wenn Sie keine großen Datenmengen verarbeiten müssen, können Sie die kostenlose Machine Learning-Schicht verwenden. Es wird empfohlen, dass Sie immer über diese Schicht beginnen, besonders während der Implementierungs- und Testphasen. Wenn Sie höhere Leistung und zusätzlichen Speicherplatz benötigen, können Sie die Standardschicht von Machine Learning verwenden. Diese Schicht erfordert ein Azure-Abonnement und beinhaltet zusätzliche Kosten. Einzelheiten zur den Machine Learning-Preisen finden Sie unter [Machine Learning Studio-Preise](https://aka.ms/machine-learning-price-info).
 - **Planungsverringerung an jedem Entkopplungspunkt** – Bedarfsplanung baut auf dieser Funktionalität auf, mit der Sie abhängigen und unabhängigen Bedarf an jedem Entkopplungspunkt planen können.
@@ -101,3 +101,4 @@ Beachten Sie, dass die Bedarfsplanungsmaßeinheit keine spezifische Bedeutung ha
 - [Webinar: Reihe „Bedarfsplanung mit Azure Machine Learning“](https://aka.ms/DemandForecastingwithAzureMachineLearningSeries)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

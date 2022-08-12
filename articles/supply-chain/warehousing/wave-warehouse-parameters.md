@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 2a64cba837faf84f3e8470a9831d1641213a5cc4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e02cd80a3b7692f496fc70e50b812fae358103bc
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909611"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067850"
 ---
 # <a name="warehouse-parameters-for-wave-processing"></a>Lagerparameter für Zyklusverarbeitung
 
@@ -52,7 +52,7 @@ Um Lagerortparameter für Wellenverarbeitung einzurichten, führen Sie folgende 
 > [!NOTE]
 > Auf der Wellenvorlage, die verwendet wird, um die Welle zu verarbeiten, können Sie die Einstellungen angeben, die das Wellenverarbeiten automatisieren. Wenn Sie einen Zeitplan für den Batchauftrag einrichten, sollten Sie den Zeitpunkt mit den Einstellungen für Automatisieren in der Wellenvorlage koordinieren. Weitere Informationen finden Sie unter [Wellenvorlage erstellen](wave-templates.md).
 >
-> Wenn Sie *Transportverwaltung* und *Erweiterte Lagerortverwaltung* verwenden, können Sie angeben, ob Ladungen konsolidiert werden, wenn Sie eine Welle verarbeiten. Beispielsweise ist dieses hilfreich, wenn mehrere kleinere Ladung gleichzeitig versendet werden können. Um Ladungen zu konsolidieren, wenn Sie eine Welle verarbeiten, klicken Sie auf die Registerkarte **Ladungen** und wählen Sie das Kontrollkästchen **Ladungen während der Wellenverarbeitung konsolidieren** aus.</P>
+> Wenn Sie *Transportverwaltung* und *Warehouse Management Prozesse (WMS)* verwenden, können Sie angeben, ob Ladungen konsolidiert werden sollen, wenn Sie eine Welle verarbeiten. Beispielsweise ist dieses hilfreich, wenn mehrere kleinere Ladung gleichzeitig versendet werden können. Um Ladungen zu konsolidieren, wenn Sie eine Welle verarbeiten, klicken Sie auf die Registerkarte **Ladungen** und wählen Sie das Kontrollkästchen **Ladungen während der Wellenverarbeitung konsolidieren** aus.</P>
 
 ## <a name="set-up-full-or-partial-reservation-for-production-waves"></a>Einrichten einer vollständigen oder teilweisen Reservierung für Produktionswellen
 

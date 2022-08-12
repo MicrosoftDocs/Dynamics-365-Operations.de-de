@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: f3d6cd373699d374c019f0db7befaffc169f4f6c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7d6524cb9109263ad62d221ec98e546b962b89ee
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850437"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067527"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>Produktfilter für Lagertransaktionen konfigurieren
 
@@ -95,7 +95,7 @@ Um Filtercodes für Artikelgruppen einzurichten, führen Sie folgende Schritte a
     Wenn beispielsweise die Kontrollkästchen **Filtercode 1 verwenden** und **Filtercode 2 verwenden** aktiviert werden, dann müssen Filtercode 1 und 2 des Artikels mit den Einstellungen der Filtergruppe für die Artikelgruppe übereinstimmen, bevor die Filtergruppe ausgewählt werden kann. Wenn Sie einen neuen Artikel erstellen, ist die ausgewählte Filtergruppe die Standardfiltergruppe in den Feldern **Gruppe 1** und **Gruppe 2** des Inforegisters **Lagerort** auf der Seite **Details für freigegebene Produkte**.
 
 > [!IMPORTANT]
-> Produktfiltercodes sind nur für Artikel aktiviert, die eine erweiterte Lagerortverwaltung verwenden.
+> Produktfiltercodes sind nur für Artikel aktiviert, die Lagerverwaltungsprozesse (WMS) verwenden.
 
 ## <a name="specify-filter-codes-for-released-products"></a>Angeben von Filtercodes für freigegebene Produkte
 
@@ -158,7 +158,7 @@ Gehen Sie zum Einrichten von Kreditorenfiltercodes folgendermaßen vor.
 1. Wählen Sie in den Feldern **Code 1** bis **Code 10** die Filtercodes aus, die als Kriterien verwendet werden sollen, um die Artikel einzuschränken, die für Kreditoren in der ausgewählten Artikelgruppe verfügbar sind. Sie müssen für jeden Filtercode, der für die Artikelgruppe eingerichtet ist, eine Auswahl treffen.
 
 > [!NOTE]
-> Die Einrichtung von Kreditorenproduktfiltern gilt für freigegebene Produkte, bei denen Lagerverwaltungsprozesse für die zugehörige Speicherdimensionsgruppe aktiviert sind. Die Filtercodes werden verwendet, um zu bestimmen, ob das System es Benutzern ermöglicht, einen bestimmten Artikel von einem bestimmten Kreditoren zu kaufen, wenn sie Bestellpositionen erstellen. Microsoft Dynamics 365 Supply Chain Management bietet Methoden für die Handhabung der Kreditorengenehmigung. Wenn ein oder mehrere freigegebene Produkte vorhanden sind, bei denen das Feld **Überprüfung genehmigter Kreditoren** auf *Nur Warnung* oder *Nicht erlaubt* gesetzt ist, können beide Kreditorengenehmigungsmethoden für diese Artikel aktiviert werden. Diese Situation kann Probleme verursachen, wenn Benutzer Bestellpositionen erstellen.
+> Die Einrichtung von Kreditor-Produktfiltern gilt für freigegebene Produkte, bei denen Lagerverwaltungsprozesse (WMS) für die zugehörige Dimensionen-Gruppe aktiviert sind. Die Filtercodes werden verwendet, um zu bestimmen, ob das System es Benutzern ermöglicht, einen bestimmten Artikel von einem bestimmten Kreditoren zu kaufen, wenn sie Bestellpositionen erstellen. Microsoft Dynamics 365 Supply Chain Management bietet Methoden für die Handhabung der Kreditorengenehmigung. Wenn ein oder mehrere freigegebene Produkte vorhanden sind, bei denen das Feld **Überprüfung genehmigter Kreditoren** auf *Nur Warnung* oder *Nicht erlaubt* gesetzt ist, können beide Kreditorengenehmigungsmethoden für diese Artikel aktiviert werden. Diese Situation kann Probleme verursachen, wenn Benutzer Bestellpositionen erstellen.
 
 ## <a name="see-also"></a>Siehe auch
 

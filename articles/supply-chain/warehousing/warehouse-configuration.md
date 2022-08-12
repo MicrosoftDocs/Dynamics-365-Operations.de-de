@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28e026b01bbc2b2534556ce6018eec66fc5517d6
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 7643a333c269a7e1976563ff0f10b89c1fb91674
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983001"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065185"
 ---
 # <a name="warehouse-configuration-overview"></a>Übersicht über die Lagerkonfiguration
 
@@ -31,10 +31,10 @@ ms.locfileid: "7983001"
 In diesem Artikel wird beschrieben, wie ein Lagerort konfiguriert wird. Es enthält Informationen zum Aktivieren eines Lagerortlayouts und Lagerortverfahren.
 
 > [!NOTE]
-> Dieser Artikel gilt für Funktionen im Modul **Lagerverwaltung** (Advanced Warehousing). Es gilt nicht für Lagerort-Funktionen im Modul **Bestandsverwaltung**.
+> Dieser Artikel gilt für Funktionen im Modul **Lagerortverwaltung**. Es gilt nicht für Lagerort-Funktionen im Modul **Bestandsverwaltung**.
 
 ## <a name="warehouse-layout"></a>Lagerortlayout
-Das Lagerortverwaltungssystem in Supply Chain Management ermöglicht flexible Methoden, Ihr Lagerortlayout zu definieren, um notwendige Anpassungen und somit eine optimale Lagerorteffizienz zu ermöglichen.
+Lagerverwaltungsprozesse (WMS) im Supply Chain Management bieten Ihnen flexible Möglichkeiten, das Layout Ihres Lagers an wechselnde Anforderungen anzupassen, sodass Sie eine optimale Lagereffizienz erreichen können.
 
 -   Sie können Lagerbereiche mit hoher und niedriger Priorität für eine optimale Platzierung von Waren einrichten.
 -   Sie können Ihre Lagerorte in die Zonen aufteilen, um verschiedene Lageranforderungen, wie Temperaturanforderungen oder unterschiedliche Umschlagsgeschwindigkeiten, für Artikel zu berücksichtigen.
@@ -42,7 +42,7 @@ Das Lagerortverwaltungssystem in Supply Chain Management ermöglicht flexible Me
 -   Sie können Lagerplätze gruppieren, indem Sie die Einstellungen für physische Kapazitätsengspässe verwenden.
 -   Sie können basierend auf Regeln, die über Abfragen definiert werden, steuern, wie Artikel gelagert und entnommen werden.
 
-Um die Lagerortverwaltung in Supply Chain Management zu verwenden, müssen Sie einen Lagerort erstellen und diesen für die erweiterten oder spezialisierten Lagerortverwaltungsaktivitäten aktivieren. Wählen Sie auf der Seite **Lagerorte** die Option **Lagerortverwaltungsprozesse verwenden** aus.
+Um WMS im Supply Chain Management zu verwenden, müssen Sie ein Lager erstellen und es für WMS aktivieren. Wählen Sie auf der Seite **Lagerorte** die Option **Lagerortverwaltungsprozesse verwenden** aus.
 
 ### <a name="zone-groups-zones-location-types-and-locations"></a>Zonengruppen, Zonen, Lagerplatztypen und Lagerplätze
 

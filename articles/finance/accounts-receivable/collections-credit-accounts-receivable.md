@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03d1304c39628323c6d6e15181263a73ba965930
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 00e536241710fc8a75158472688757320abf4247
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710356"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067207"
 ---
 # <a name="collections-in-accounts-receivable"></a>Inkasso bei Debitoren
 
@@ -65,7 +65,7 @@ Die folgenden Listenseiten können zum Organisieren von Inkassoinformationen ver
 
 > [!NOTE]
 > Es muss eine Fälligkeitsmomentaufnahme erstellt werden, bevor Sie die Informationen auf diesen Listenseiten anzeigen können. Es werden nur Informationen für Debitoren angezeigt, für die eine Fälligkeitsmomentaufnahme erstellt wurde. Die auf der Listenseite angezeigten Datensätze können zusätzlich wie folgt gefiltert werden:
-> <li>Standardmäßig hat ein Finance and Operations-Benutzer Zugriff auf alle Debitoren, die über eine Fälligkeitsmomentaufnahme verfügen.</li>
+> <li>Standardmäßig hat ein Benutzer von Finanzen und Betrieb Zugriff auf alle Debitor, die eine Momentaufnahme haben.</li>
 > <li>Falls Debitorenpools vorhanden sind, muss ein Benutzer als Inkassobeauftragter eingerichtet werden, um die Pools zum Filtern von Informationen auf den Inkassolistenseiten zu verwenden. Die Informationen sind auf die Debitoren beschränkt, die im ausgewählten Debitorenpool enthalten sind.</li>
 > <li>Wenn ein Benutzer als Inkassobeauftragter eingerichtet ist, sind nur die für diesen Inkassobeauftragten ausgewählten Pools auf der Listenseite verfügbar. Wenn die Umschaltfläche "Inkassobeauftragtem das Anzeigen aller Debitorenpools erlauben" auf der Seite "Inkassobeauftragter" für den Inkassobeauftragten ausgewählt ist, sind für den Beauftragten alle Pools verfügbar.</li>
 
@@ -110,3 +110,4 @@ Sie können NSF-Zahlungen verarbeiten, indem Sie auf der Seite "Inkassi" auf "NS
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

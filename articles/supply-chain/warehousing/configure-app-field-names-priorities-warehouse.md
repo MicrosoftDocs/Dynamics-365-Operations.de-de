@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1ce274c997119c7fdba193fa9559832e63febddc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 00a20faaa05a9d0891ee202951b1ca50d0176c83
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893235"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065957"
 ---
 # <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>Felder für die mobile Warehouse Management-App konfigurieren
 
@@ -135,7 +135,7 @@ Basierend auf der Lagerort-App-Feldpriorität, die in der Tabelle oben eingerich
 -   Reihe 2: Artikelbeschreibung
 -   Zeile 3: Größe
 
-Die verbleibenden Metadaten beispielsweise Lagerplatz, werden nicht auf der Aufgabenseite angezeigt, sondern werden auf einer Detailseite angezeigt. Weitere Informationen und Beispiele der Benutzeroberfläche finden Sie im Blogbeitrag [Ankündigung Finance and Operations - Lagerverwaltung](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
+Die verbleibenden Metadaten beispielsweise Lagerplatz, werden nicht auf der Aufgabenseite angezeigt, sondern werden auf einer Detailseite angezeigt. Weitere Informationen und Beispiele der Benutzeroberfläche finden Sie im Blogbeitrag [Ankündigung Dynamics 365 Supply Chain Management - Lagerverwaltung](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

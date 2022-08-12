@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adaed1d5a4f1ac62df35bcc1497610ce0f44043c
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: da7aef93cf994c40410598ab9c4ff2b21f4750e7
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902220"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065927"
 ---
 # <a name="cycle-counting"></a>Permanente Inventur
 
@@ -52,11 +52,11 @@ In der folgenden Tabelle werden die Voraussetzungen angezeigt, die vorhanden sei
 <tbody>
 <tr class="odd">
 <td>Artikel</td>
-<td>Der Artikel muss für Lagerortverwaltungsprozesse aktiviert werden.</td>
+<td>Der Artikel muss für Lagerverwaltungsprozesse (WMS) aktiviert werden.</td>
 </tr>
 <tr class="even">
-<td>Lagerort</td>
-<td>Der Lagerort muss für Lagerortverwaltungsprozesse aktiviert werden. Um den Lagerort für Lagerortverwaltungsprozesse auf der Seite <strong>Lagerorte</strong> zu aktivieren, wählen Sie den Lagerort aus und wählen dann die Option <strong>Lagerortverwaltungsprozesse verwenden</strong>. Wenn Sie darüber hinaus Arbeitskräften ermöglichen möchten, während einer Zykluszählung Paletten zu bewegen, wählen Sie auf dem Inforegister <strong>Lagerortverwaltung</strong> die Option <strong>Palettenumlagerungen während der Zykluszählung zulassen</strong>.</td>
+<td>Lager</td>
+<td>Das Lager muss für Lagerverwaltungsprozesse (WMS) aktiviert sein. Um das Lager für WMS zu aktivieren, wählen Sie auf der Seite <strong>Lager</strong> das Lager aus und wählen dann die Option <strong>Lagerverwaltungsprozesse verwenden</strong>. Wenn Sie darüber hinaus Arbeitskräften ermöglichen möchten, während einer Zykluszählung Paletten zu bewegen, wählen Sie auf dem Inforegister <strong>Lagerortverwaltung</strong> die Option <strong>Palettenumlagerungen während der Zykluszählung zulassen</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Arbeitspools</td>

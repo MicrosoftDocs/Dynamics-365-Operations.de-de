@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: e9067e33038ee09b8f8cdcc8dd597ab5be9cfe7f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4cc05d9fcea129cfb2ed8ed8df4bd4034a1fed4c
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868668"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066389"
 ---
 # <a name="invoice-approvals-mobile-workspace"></a>Rechnungsgenehmigungen im mobilen Arbeitsbereich
 
@@ -26,7 +26,7 @@ ms.locfileid: "8868668"
 
 Dieser Artikel enthält Informationen zur **Rechnungsgenehmigung** im mobilen Arbeitsbereich. Der Arbeitsbereich enthält eine Liste von Rechnungen, die Ihnen über den Kreditorenrechnungskopfworkflowprozess zugewiesen wurden. 
 
-Dieser mobile Arbeitsbereich soll mit der Finance and Operations-Mobile-App verwendet werden.
+Dieser mobile Arbeitsbereich ist für die Verwendung mit der Finanzen und Betrieb Mobile-App vorgesehen.
 
 ## <a name="overview"></a>Übersicht
 
@@ -61,7 +61,7 @@ Bevor Sie diesen mobilen Arbeitsbereich verwenden können, müssen die folgenden
 
 ## <a name="download-and-install-the-mobile-app"></a>Herunterladen und Installieren der mobilen App
 
-Laden Sie die mobile Finanz- und Betriebs-App herunter und installieren Sie diese:
+Laden Sie die Finanzen und Betrieb Mobile-App herunter und installieren Sie sie:
 
 -   [Für Android-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Für iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -88,3 +88,4 @@ Laden Sie die mobile Finanz- und Betriebs-App herunter und installieren Sie dies
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

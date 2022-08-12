@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2963589562e2d646670183e9db35df33255e8894
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e5816a7cddf509260511368b74655a9fd5bfc485
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903752"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067880"
 ---
 # <a name="shipment-auto-updates"></a>Automatische Aktualisierung von Lieferungen
 
@@ -30,7 +30,7 @@ Die Funktion zur automatischen Aktualisierung von Lieferungen aktualisiert autom
 
 Wenn die Funktion zur automatischen Lieferungsktualisierung nicht verwendet wird, werden nur Mengensenkungen automatisch fließen, bis Lagerortarbeit erstellt wurde. Benutzer müssen Positionen manuell aktualisieren oder löschen und sie müssen Positionen erneut freigeben, wenn Auftragsmengen erhöht oder neue Auftragspositionen hinzugefügt werden. Indem die Funktion zur automatischen Lieferungsaktualisierung verwendet wird, können Unternehmen dem Lagerort nahtlos Aktualisierungen bereitstellen, ohne sich zu sorgen, dass zugehörige Lieferungen und Ladungen aktualisierte Auftragspositionen nicht widerspiegeln.
 
-Die Funktion zur automatischen Lieferungsaktualisierung gilt sowohl für Auftragspositionen und Umlagerungspositionen und sie wurde für einen bestimmten Lagerort aktiviert. Daher können Unternehmen je nach Bedarf verschiedene Richtlinien zur automatischen Lieferungsaktualisierung in unterschiedlichen Lagerorten anwenden. Standardmäßig wird die Richtlinie zur automatischen Lieferungsaktualisierung für Mengensenkungen für alle Lagerorte verwendet, die Lagerortverwaltungsprozesse verwenden. Wenn diese Standardrichtlinieneinstellung verwendet wird, fließen nur Mengensenkungen automatisch durch eine Lieferung und Ladung, bis Lagerortarbeit erstellt wurde. Dieses Verhalten ähnelt dem Verhalten, das verwendet wurde, bevor die Funktion zur automatischen Lieferungsaktualisierung eingeführt wurde.
+Die Funktion zur automatischen Lieferungsaktualisierung gilt sowohl für Auftragspositionen und Umlagerungspositionen und sie wurde für einen bestimmten Lagerort aktiviert. Daher können Unternehmen je nach Bedarf verschiedene Richtlinien zur automatischen Lieferungsaktualisierung in unterschiedlichen Lagerorten anwenden. Standardmäßig wird die Richtlinie zur automatischen Aktualisierung von Sendungen bei Mengenreduzierungen für alle Lager angewendet, die Lagerverwaltungsprozesse (WMS) verwenden. Wenn diese Standardrichtlinieneinstellung verwendet wird, fließen nur Mengensenkungen automatisch durch eine Lieferung und Ladung, bis Lagerortarbeit erstellt wurde. Dieses Verhalten ähnelt dem Verhalten, das verwendet wurde, bevor die Funktion zur automatischen Lieferungsaktualisierung eingeführt wurde.
 
 ## <a name="main-elements-of-the-functionality"></a>Wichtigste Elemente der Funktion
 

@@ -1,6 +1,6 @@
 ---
 title: Startseite der mobilen App
-description: Dieser Artikel beschreibt die mobile App von Finance + Operations (Dynamics 365) und enthält Links zu Ressourcen, die Ihnen bei der Implementierung in Ihrem Unternehmen helfen können.
+description: Dieser Artikel beschreibt die Mobile-App Finanzen und Betrieb (Dynamics 365) und enthält Links zu Ressourcen, die Ihnen bei der Implementierung in Ihrem Unternehmen helfen können.
 author: ChrisGarty
 ms.date: 05/24/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: d73a8d3cf8a7899f16db87148456671dea773636
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 973fdcd81a83b6b70e8fa941c4f0c9d24b5cb559
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868758"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066452"
 ---
 # <a name="mobile-app-home-page"></a>Startseite der mobilen App
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-Dieser Artikel beschreibt die mobile App von **Finance + Operations (Dynamics 365)** und enthält Links zu Ressourcen, die Ihnen bei der Implementierung in Ihrem Unternehmen helfen können.
+Dieser Artikel beschreibt die Mobile-App **Finanzen und Betrieb (Dynamics 365)** und enthält Links zu Ressourcen, die Ihnen bei der Implementierung in Ihrem Unternehmen helfen können.
 
 ## <a name="overview"></a>Übersicht
 
@@ -152,3 +152,4 @@ Die folgende Tabelle enthält Links zu Ressourcen, die Ihnen beim Implementieren
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

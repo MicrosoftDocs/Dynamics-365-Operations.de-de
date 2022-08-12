@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 953a3bfec70235524067a47b8764f6dbb40d3c7b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 357ce65792ceef37abda523e7693069f1bc1ab43
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849299"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065553"
 ---
 # <a name="flushing-principles"></a>Bezugsprinzipien
 
@@ -50,9 +50,9 @@ Die Bezugsprinzipien sind in einer Hierarchie mit Standardwerten konfiguriert. D
 ## <a name="description-of-the-flushing-principles"></a>Beschreibung der Bezugsprinzipien
 
 ### <a name="manual"></a>Manuell
-Das manuelle Bezugsprinzip zeigt an, dass die Registrierung des Materialverbrauchs eine manuelle Tätigkeit ist. Dieses Prinzip ist beispielsweise relevant, wenn Sie die Zeit nachverfolgen wollen, und wenn die Menge der verbrauchten Chargennummern oder Seriennummern für Nachverfolgungszwecke berücksichtigt werden muss. Ein manueller Verbrauch wird in einem Produktionspicklistenjournal aufgezeichnet. Für Artikel, die für erweiterte Lagerprozesse in Frage kommen, kann ein manueller Ablauf angewendet werden.
+Das manuelle Bezugsprinzip zeigt an, dass die Registrierung des Materialverbrauchs eine manuelle Tätigkeit ist. Dieses Prinzip ist beispielsweise relevant, wenn Sie die Zeit nachverfolgen wollen, und wenn die Menge der verbrauchten Chargennummern oder Seriennummern für Nachverfolgungszwecke berücksichtigt werden muss. Ein manueller Verbrauch wird in einem Produktionspicklistenjournal aufgezeichnet. Für Artikel, die für Lagerverwaltungsprozesse (WMS) aktiviert sind, kann ein Handheld Flow angewendet werden.
 
-### <a name="start"></a>Starten
+### <a name="start"></a>Start
 Das Bezugsprinzip Start zeigt an, dass Material automatisch verbraucht wird, wenn der Produktionsauftrag gestartet wird. Die Menge des verbrauchten Materials ist proportional zu der gestarteten Menge. Wenn das Bezugsprinzip Start zusammen mit dem Herstellungsausführungssystem verwendet wird, kann es auch für einen Bezug von Materialien verwendet werden, wenn eine Operation oder ein Verarbeitungsauftrag gestartet werden. Dieses Prinzip ist beispielsweise relevant, wenn eine geringe Verbrauchsvarianz vorliegt, wenn die Materialien einen geringen Wert haben, wenn keine Nachverfolgung erforderlich ist, oder wenn die Operationen eine kurze Laufzeit aufweisen. 
 
 ### <a name="finish"></a>Fertig stellen
