@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 304cf3f6c913586e08e0a3771ebfe40bc5d2b102
-ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
+ms.openlocfilehash: 21d7d045c812c54d6776394ad9a0b025b55df8e1
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8464908"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109111"
 ---
 # <a name="financial-analysis"></a>Finanzanalyse
 
@@ -40,7 +40,7 @@ Der **Arbeitsbereich für die Finanzanalyse** konzentriert sich darauf, dass Sie
 
 - [Hinzufügen oder Bearbeiten von Power BI-Visualisierungen auf Ihrem Dashboard](/powerapps/user/add-powerbi-dashboards)
 
-## <a name="dynamics-365-finance-setup"></a>Einrichten von Dynamics 365 Finance
+## <a name="dynamics-365-finance-setup"></a>Einrichtung von Dynamics 365 Finance
 **Hauptbuch**
 
 Der Hauptkontotyp und die Hauptkontokategorien werden verwendet, um entsprechende Standardhauptkonten in der Finanzaufstellung **Bilanz** und den verschiedenen Finanzaufstellungen **Gewinn- & Verlustrechnung** in **Finanzanalyse** einzugeben.
@@ -78,7 +78,7 @@ Aktuell können die Daten in eingebetteten Power BI-Berichten nicht auf juristis
 | Abgabe                                    | Rollen | Beschreibung |
 |-----------------------------------------|-------|------------|
 | Finanzanalyse des derzeitigen Unternehmens anzeigen | <ul><li>Sachbearbeiter Buchhaltung</li><li>Leiter Buchhaltung</li><li>Supervisor Buchhaltung</li><li>Wirtschaftsprüfer</li><li>Budget-Manager</li><li>Leitender Geschäftsführer</li><li>Leiter Finanzabteilung</li><li>Financial Controller</li></ul> | Diese Berechtigungen bieten Zugriff auf Finanzanalyse. Standardmäßig wird das aktive Unternehmen als Filter verwendet. Sie können nicht andere juristische Personen hinzufügen. |
-| Finanzanalyse aller Unternehmen anzeigen   | In Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3, sind diese Berechtigungen keiner Rolle zugewiesen. In der nächsten Version werden diese Berechtigungen der Rolle „Leiter Finanzabteilung” zugewiesen werden. | Diese Berechtigungen bieten Zugriff auf das Menüelement für den Arbeitsbereich CFO-Überblick. Standardmäßig wird das aktive Unternehmen als Filter verwendet. Sie können jedoch alle juristischen Personen hinzufügen, unabhängig davon, ob der Benutzer Zugriff auf die anderen juristischen Personen hat. |
+| Finanzanalyse aller Unternehmen anzeigen   | In Microsoft Dynamics 365 Finance, Enterprise Edition 7.3, ist diese Aufgabe keiner Rolle zugewiesen. In der nächsten Version werden diese Berechtigungen der Rolle „Leiter Finanzabteilung” zugewiesen werden. | Diese Berechtigungen bieten Zugriff auf das Menüelement für den Arbeitsbereich CFO-Überblick. Standardmäßig wird das aktive Unternehmen als Filter verwendet. Sie können jedoch alle juristischen Personen hinzufügen, unabhängig davon, ob der Benutzer Zugriff auf die anderen juristischen Personen hat. |
 
 
 ## <a name="financial-reporting-vs-financial-analysis"></a>Finanzberichterstellung vs. Finanzanalyse
@@ -96,7 +96,7 @@ Das folgende Vergleichsdiagramm hilft, die zwei Optionen zu unterscheiden:
 | **Berichterstellungshierarchie unterstützen/Organisationshierarchie**   | Ja                                                               | Nein |
 | **Bericht zu Daten von untergeordneten Sachkonten**                             | Ja, beschränkt auf nur einen Kreditor, Debitor                              | Ja, Kreditor, Debitor, Kreditoren-/Debitorengruppen, Kreditoren-/Debitorenadressen, usw. |
 | **Berichtswährung**                                   | Ja, Buchhaltungswährung und in Berichtswährung übersetzen       | Nein, nur Buchhaltungswährung |
-| **Sicherheit**                                             | Ja, erfüllt Financ-Berichterstellungsstruktur-Sicherheit | „Begrenzte Anzeige”-Berichte für alle Unternehmen (ungeachtet der Finance and Operations-Sicherheit) oder nur aktives Unternehmen |
+| **Sicherheit**                                             | Ja, erfüllt Financ-Berichterstellungsstruktur-Sicherheit | Eingeschränkte Ansicht Berichte für alle Unternehmen (unabhängig von der Finanzen und Betrieb Sicherheit) oder nur für aktive Firmen |
 | **Unterschiedlichen Kontenplan und Geschäftsjahre unterstützen** | Ja                                                               | Nein |
 | **Bericht zu externen Daten**                              | Nein                                                                | Nein |
 | **Konsolidierungen unterstützen**                               | Ja                                                               | Begrenzter Möglichkeitenbericht zu mehreren Unternehmen, aber nur Verwendung der Buchhaltungswährung |
@@ -244,3 +244,4 @@ Die Informationen in den folgenden Ressourcen sind nicht erforderlich, um die ei
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

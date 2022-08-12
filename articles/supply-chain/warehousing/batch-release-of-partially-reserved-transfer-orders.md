@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 591c93eef61992507188323909f37e3f33550a7d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e0b21c0000f6bf1cbbb318c898a519e51ca7e9b8
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888382"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068633"
 ---
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Chargenfreigabe von teilweise reservierten Umlagerungsaufträgen
 
@@ -28,7 +28,7 @@ ms.locfileid: "8888382"
 Die Funktionen für Chargenfreigabe von teilweise reservierten Umlagerungsaufträgen können Sie Umlagerungsaufträge teilweise einem Lagerort freigeben, indem eines Stapelverarbeitungsauftrags können.
 Da Sie die Möglichkeit haben, eine Teilmenge freizugeben, müssen Sie nicht für die gesamte Auftragsmenge warten, die am Lagerort verfügbar ist, bevor ein Auftrag freigegeben wird.
 
-Die Version von Aufträgen an einen Lagerort ist ein erweiterter Lagerortverwaltungsprozess. Dieser Prozess beinhaltet Aktivitäten wie Entnahme, Verpackung und Versand, die ein Lagerarbeiter ausführen kann, indem er ein mobiles Gerät verwendet.
+Die Freigabe von Bestellungen an ein Lager ist ein Prozess der Lagerverwaltung (WMS). Dieser Prozess beinhaltet Aktivitäten wie Entnahme, Verpackung und Versand, die ein Lagerarbeiter ausführen kann, indem er ein mobiles Gerät verwendet.
 
 ## <a name="where-it-applies"></a>Wofür es angewendet wird
 

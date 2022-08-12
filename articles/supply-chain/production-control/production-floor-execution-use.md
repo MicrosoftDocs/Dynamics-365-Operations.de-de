@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 2ee316a3e6a6baef7aa8b5d46b04a2d1bb07a641
-ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
+ms.openlocfilehash: 0d857ef31e0fed2a0d7550197209fac9251d8812
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "9022503"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069785"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte
 
@@ -217,7 +217,7 @@ Arbeitskräfte können den Materialverbrauch für Artikel mit Artikelgewicht anp
 
 In der Dialogbox **Material anpassen** kann eine Arbeitskraft Materialreservierungen vornehmen und anpassen, indem sie **Material reservieren** wählt. Das angezeigte Dialogfenster **Reservematerial** zeigt den physisch verfügbaren Bestand für den Artikel für jede Lager- und Tracking-Dimension an.
 
-Wenn das Material für die erweiterten Lagerprozesse aktiviert ist, zeigt die Liste nur den physisch verfügbaren Bestand für den Produktionseingabeort des Materials an. Der Ort der Produktionseingabe wird auf der Ressource definiert, auf der der Produktionsauftrag geplant ist. Wenn die Artikelnummer über eine Batch- oder Seriennummer gesteuert wird, wird die vollständige Liste der physisch verfügbaren Batch- und Seriennummern angezeigt. Um eine zu reservierende Menge anzugeben, kann die Arbeitskraft **Material reservieren** wählen. Um eine bestehende Reservierung zu entfernen, kann die Arbeitskraft **Reservierung entfernen** wählen.
+Wenn das Material für Lagerverwaltungsprozesse (WMS) aktiviert ist, zeigt die Liste nur den physisch verfügbaren Bestand für den Produktionseingangsort des Materials an. Der Ort der Produktionseingabe wird auf der Ressource definiert, auf der der Produktionsauftrag geplant ist. Wenn die Artikelnummer über eine Batch- oder Seriennummer gesteuert wird, wird die vollständige Liste der physisch verfügbaren Batch- und Seriennummern angezeigt. Um eine zu reservierende Menge anzugeben, kann die Arbeitskraft **Material reservieren** wählen. Um eine bestehende Reservierung zu entfernen, kann die Arbeitskraft **Reservierung entfernen** wählen.
 
 Weitere Informationen darüber, wie Sie den Ort der Produktionseingabe festlegen, finden Sie in dem folgenden Blog-Beitrag: [Einrichten des Produktions-Eingabeortes](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
 

@@ -2,19 +2,19 @@
 title: Commerce-Kataloge für B2B-Websites erstellen
 description: In diesem Artikel wird beschrieben, wie Sie Commerce-Kataloge für Business-to-Business-Websites (B2B) in Microsoft Dynamics 365 Commerce erstellen.
 author: ashishmsft
-ms.date: 05/18/2022
+ms.date: 07/11/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 2cc9014d273b4ab6f23a38140d0cfcd3ffa4d630
-ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
+ms.openlocfilehash: 7d4ed3e2a76924c2c3c0ba55e21ba648e8da7b76
+ms.sourcegitcommit: d1491362421bf2fcf72a81dc2dc2d13d3b98122b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9027031"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9136825"
 ---
 # <a name="create-commerce-catalogs-for-b2b-sites"></a>Commerce-Kataloge für B2B-Websites erstellen
 
@@ -25,10 +25,13 @@ In diesem Artikel wird beschrieben, wie Sie Commerce-Produktkataloge für Busine
 > [!NOTE]
 > Dieser Artikel gilt für Dynamics 365 Commerce ab Version 10.0.27.
 
-Sie können Commerce-Kataloge verwenden, um die Produkte zu identifizieren, die Sie in den B2B-Onlineshops anbieten möchten. Wenn Sie einen Katalog erstellen, kennzeichnen Sie die Onlineshops, in denen die Produkte angeboten werden, fügen Sie die Produkte hinzu, die einbezogen werden sollen, und verbessern Sie die Produktangebote, indem Sie Verkaufdetails hinzufügen. Sie können mehrere Kataloge für jeden B2B-Onlineshop erstellen.
+Sie können Commerce-Kataloge verwenden, um die Produkte zu identifizieren, die Sie in den B2B-Onlineshops anbieten möchten. Wenn Sie einen Katalog erstellen, kennzeichnen Sie die Onlineshops, in denen die Produkte angeboten werden, fügen Sie die Produkte hinzu, die einbezogen werden sollen, und verbessern Sie die Produktangebote, indem Sie Verkaufdetails hinzufügen. Sie können für jeden B2B-Online-Store mehrere Kataloge erstellen, wie in der folgenden Abbildung gezeigt.
+
+![Commerce Produktkataloge in der Vorschau.](./media/Commerce_Catalogs.png)
 
 Mit Commerce-Produktkatalogen können Sie die folgenden Informationen definieren:
 
+- **Katalogtyp** – Konfigurieren Sie den Wert als **B2B**. Sie können B2B-katalogspezifische Eigenschaften wie eine Navigationshierarchie, eine Kundenhierarchie und Attribut-Metadaten für den Katalog definieren. 
 - **Katalogspezifische Navigationshierarchie** – Organisationen können eine eindeutige Kategoriestruktur für ihren spezifischen Katalog erstellen.
 - **Katalogspezifische Attributmetadaten** – Attribute enthalten Details zu einem Produkt. Indem Sie einer Kategorie der Navigationshierarchie Attribute zuweisen, können Sie Werte für diese Attribute auf der Ebene der Produkte definieren, die dieser Kategorie zugewiesen sind. Organisationen können dann diese Aufgaben durchführen:
 
@@ -41,11 +44,14 @@ Mit Commerce-Produktkatalogen können Sie die folgenden Informationen definieren
 - **Preisgruppen** – Sie können Preise und Aktionen konfigurieren, die für einen bestimmten Katalog spezifisch sind. Diese Fähigkeit ist ein Hauptgrund für die Definition eines Katalogs für einen B2B-Kanal. Preisgruppen für Kataloge ermöglichen es Organisationen, Produkte für ihre beabsichtigten B2B-Organisationen verfügbar zu machen und ihre bevorzugten Preise und Rabatte anzuwenden. B2B-Kunden, die aus einem konfigurierten Katalog bestellen, können von Sonderpreisen und Werbeaktionen profitieren, nachdem sie sich auf einer Commerce B2B-Website angemeldet haben. Um katalogspezifische Preise zu konfigurieren, wählen Sie **Preisgruppen** auf der Registerkarte **Kataloge** aus, um eine oder mehrere Preisgruppen mit dem Katalog zu verknüpfen. Alle Handelsvereinbarungen, Preisregulierungserfassungen und Vorzugsrabatte, die mit der gleichen Preisgruppe verknüpft sind, werden bei der Bestellung aus diesem Katalog angewendet. (Erweiterte Rabatte umfassen Schwellenwert-, Mengen- und Angebots-Sortimentsrabatte.) Weitere Informationen zu Preisgruppen finden Sie unter [Preisgruppen](price-management.md#price-groups).
 
 > [!NOTE]
-> Diese Funktion ist ab der Dynamics 365 Commerce-Version 10.0.27 verfügbar. Um katalogspezifische Konfigurationen wie die Navigationshierarchie und die Kundenhierarchie zu konfigurieren, öffnen Sie in der Commerce-Zentrale den **Funktionsverwaltung**-Arbeitsbereich (**Systemadministration \> Arbeitsbereiche \> Funktionsverwaltung**). Aktivieren Sie die Funktion **Ermöglicht die Verwendung von mehreren Katalogen für Kanäle im Einzelhandel**, und führen Sie dann den Einzelvorgang **1110 CDX** aus.
+> Diese Funktion ist ab der Dynamics 365 Commerce Version 10.0.27 verfügbar. Um katalogspezifische Konfigurationen wie Navigationshierarchie und Debitor-Hierarchie in der Commerce headquarters zu konfigurieren, gehen Sie in den Arbeitsbereich **Funktionsverwaltung** (**Systemadministration \> Arbeitsbereiche \> Funktionsverwaltung**), aktivieren Sie die Funktion **Verwendung mehrerer Kataloge auf Einzelhandelskanälen aktivieren** und führen Sie dann den Auftrag **1110 CDX** aus. Wenn Sie diese Funktion aktivieren, werden alle vorhandenen Kataloge, die für POS-Stores oder ein Call Center verwendet werden, auf der Seite **Kataloge** als **Katalogtyp = B2C** gekennzeichnet. Nur bestehende und neue Kataloge, die als **Katalogtyp = B2C** gekennzeichnet sind, sind für POS Stores und ein Call Center geeignet. 
 
-## <a name="catalog-process-flow"></a>Katalogprozessfluss
+## <a name="b2b-catalog-process-flow"></a>B2B-Katalog Prozess Flow
 
 Der Prozess der Erstellung und Verarbeitung eines Katalogs besteht aus vier allgemeinen Schritten. Jeder Schritt wird im nächsten Abschnitt ausführlich erklärt.
+
+> [!NOTE]
+> Bevor Sie fortfahren, stellen Sie sicher, dass der Katalog als **Katalogtyp = B2B** markiert ist.
 
 1. **[Variante](#configure-the-catalog)**
 
@@ -73,7 +79,7 @@ Verwenden Sie die Informationen in diesem Abschnitt, um Ihren Katalog einzuricht
 
 Gehen Sie in der Commerce-Zentrale zu **Einzelhandel und Handel \> Kataloge und Sortimente \> Alle Kataloge**, um Ihren Katalog zu konfigurieren.
 
-Wenn Sie einen neuen Katalog anlegen, müssen Sie ihn zunächst einem oder mehreren Kanälen zuordnen. Nur Artikel, die mit Ihrem ausgewählten Kanal [Sortimente](/dynamics365/unified-operations/retail/assortments) verknüpft sind, können bei der Erstellung des Katalogs verwendet werden. Um den Katalog einem oder mehreren Kanälen zuzuordnen, wählen Sie **Hinzufügen** auf dem Inforegister **Commerce-Kanäle** der Seite **Katalog einrichten** aus.
+Wenn Sie einen neuen Katalog anlegen, müssen Sie ihn zunächst einem oder mehreren Kanälen zuordnen. Nur Artikel, die mit Ihrem ausgewählten Kanal [Sortimente](/dynamics365/unified-operations/retail/assortments) verknüpft sind, können bei der Erstellung des Katalogs verwendet werden. Um den Katalog einem oder mehreren Kanälen zuzuordnen, wählen Sie **Hinzufügen** auf dem Inforegister **Commerce-Kanäle** der Seite **Katalog einrichten** aus. Stellen Sie sicher, dass der Katalog als **Katalogtyp = B2B** gekennzeichnet ist.
 
 #### <a name="associate-the-navigation-hierarchy"></a>Die Navigationshierarchie zuordnen
 
@@ -90,6 +96,17 @@ Um Produkte zum Hinzufügen zum Katalog zu konfigurieren, gehen Sie in der Comme
 Wählen Sie alternativ einen Knoten in der Navigationshierarchie aus. Sie können dann Produkte direkt zu einer Kategorie im Katalog hinzufügen.
 
 #### <a name="associate-price-groups"></a>Preisgruppen zuordnen
+
+Um Produkte zum Hinzufügen zum Katalog zu konfigurieren, gehen Sie in der Commerce-Zentrale zu **Einzelhandel und Handel \> Kataloge und Sortimente \> Alle Kataloge**. Wählen Sie auf der Registerkarte **Kataloge** dann **Produkte hinzufügen** aus. 
+
+Produkte, die einem Katalog über den Wurzelknoten der Navigationshierarchie durch Auswahl von **Produkte hinzufügen** im Aktionsbereich hinzugefügt wurden, erben ihre Kategorien, wenn die Quellnavigationshierarchie ebenfalls mit dem Katalog verknüpft ist. Änderungen an Kategorien, die in der Quellnavigationshierarchie vorgenommen werden, werden sofort in den Katalogen übernommen. Sie müssen die Kataloge neu veröffentlichen, um die Channels zu aktualisieren.
+
+Alternativ können Sie auch einen Knoten in der Navigationshierarchie auswählen und Produkte direkt zu einer ausgewählten Kategorie im Katalog hinzufügen. 
+
+Wenn Sie Produkte hinzufügen, wird die Option **Automatisch alle Varianten einbeziehen, wenn nur Produktstamm ausgewählt ist** verfügbar sein. Um die Einbeziehung aller Varianten zu verhindern, wählen Sie mindestens eine Variante für den Produktstamm aus. 
+
+> [!NOTE]
+> Wenn Sie sich dafür entscheiden, automatisch alle Varianten in eine große Produktstammauswahl aufzunehmen, kann es zu längeren Verarbeitungszeiten kommen. Bei großen Auswahlen empfehlen wir Ihnen, im Aktionsbereich der Seite Kataloge die Option **Alle Varianten einbeziehen** zu wählen, um den Vorgang im Batch-Modus auszuführen. Wenn Sie nur den Produktstamm in den Katalog aufgenommen und keine Varianten hinzugefügt haben, ist die Variantenauswahl möglicherweise nicht verfügbar, wenn Sie zu einer Produktdetailseite navigieren. 
 
 Um katalogspezifische Preise zu konfigurieren, müssen Sie eine oder mehrere Preisgruppen mit dem Katalog verknüpfen. Um einem Katalog Preisgruppen zuzuordnen, gehen Sie in der Commerce-Zentrale zu **Einzelhandel und Handel \> Kataloge und Sortimente \> Alle Kataloge**. Wählen Sie auf der Registerkarte **Kataloge** unter **Preisgestaltung** dann **Preisgruppen** aus. Alle Handelsvereinbarungen, Preisregulierungserfassungen und Vorzugsrabatte (Schwellenwert-, Mengen- und Angebots-Sortimentsrabatte), die mit der gleichen Preisgruppe verknüpft sind, werden bei der Bestellung aus dem Katalog angewendet.
 
@@ -122,6 +139,9 @@ Führen Sie folgende Schritte aus, um einen Katalog zu überprüfen.
 1. Auf der Registerkarte **Kataloge** auf der Seite **Alle Kataloge** unter **Überprüfen** wählen Sie **Katalog überprüfen** aus, um eine Überprüfung auszuführen. Dieser Schritt ist notwendig. Er überprüft, dass die erforderliche Einstellung korrekt ist.
 1. Wählen Sie **Ergebnisse anzeigen** aus, um die Details der Prüfung anzusehen. Wenn Fehler gefunden werden, müssen Sie die Daten korrigieren und die Prüfung dann erneut durchführen, bis sie bestanden wurde.
 
+> [!NOTE]
+> Wenn **Katalogtyp = B2B**, schlägt die Validierung fehl, wenn Sie dem Katalog POS Stores oder ein Call Center hinzugefügt haben. B2B-Kataloge dürfen nur mit B2B-Online-Kanälen verknüpft sein. Die Validierung schlägt auch fehl, wenn keine Debitor-Hierarchie mit einem B2B-Katalog verknüpft ist. 
+
 ### <a name="approve-the-catalog"></a>Katalog genehmigen
 
 Nachdem ein Katalog überprüft wurde, muss er genehmigt werden.
@@ -143,3 +163,5 @@ Nachdem ein Katalog den Status **Genehmigt** erhalten hat, können Sie ihn verö
 [Auswirkung der Erweiterbarkeit von Commerce-Katalogen auf B2B-Anpassungen](catalogs-b2b-sites-dev.md)
 
 [FAQ zu Commerce-Katalogen für B2B](catalogs-b2b-sites-FAQ.md)
+
+[Katalog-Picker-Modul](catalog-picker.md)

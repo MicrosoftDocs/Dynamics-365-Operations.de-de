@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 34721421d4bf0f052d1bce2cc822dcb2a408170f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 03d05bf5dee5c6bcf322f5be9dd69c23234d52fd
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906007"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9166670"
 ---
 # <a name="landed-cost-entities-overview"></a>Gesamttransportkosten Entitäten Übersicht
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until GA with 10.0.28 -->
 
 Das Modul **Gesamttransportkosten** unterstützt Unternehmen bei der Rationalisierung eingehender Versandvorgänge, indem es ein vollständiges finanzielles und logistisches Steuerelement für importierte Fracht vom Hersteller bis zum Lager bietet. Entitäten der Transaktionsdaten für Gesamttransportkosten ermöglichen es externen Datenquellen (z.B. Speditionen), Fahrten und Kosten zu erstellen und Datensätze für die Nachkalkulation von Containern zu aktualisieren.
 

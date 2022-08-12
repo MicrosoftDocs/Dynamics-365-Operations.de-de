@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1407c6def22b9759723e49fb2fa6d4d68f180891
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 18a15928eef4d7158f778729506d691dd587e013
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860163"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109461"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Einzelvorgänge für Datenimport und ‑export – Übersicht
 
@@ -209,7 +209,7 @@ Wenn Sie den Bereinigungsprozess planen, müssen die folgenden Parameter angegeb
 ## <a name="job-history-clean-up-and-archival"></a>Bereinigung und Archivierung des Einzelvorgangsverlaufs 
 Die Funktionen zum Bereinigen und Archivieren des Einzelvorgangsverlaufs ersetzen die vorherigen Versionen der Bereinigungsfunktion. In diesem Abschnitt werden diese neuen Funktionen erläutert.
 
-Eine der wichtigsten Änderungen an der Bereinigungsfunktion ist die Verwendung des System-Batchauftrags zum Bereinigen des Verlaufs. Die Verwendung des System-Batchauftrags ermöglicht Apps für Finanzen und Betrieb die automatische Planung und Ausführung des Batchauftrags zur Bereinigung, sobald das System bereit ist. Es ist nicht mehr erforderlich, den Batchauftrag manuell zu planen. In diesem Standardausführungsmodus wird der Batchauftrag ab Mitternacht jede Stunde ausgeführt und der Ausführungsverlauf für die letzten 7 Tage beibehalten. Der gelöschte Verlauf wird für den zukünftigen Abruf archiviert. Ab Version 10.0.20 ist diese Funktion immer aktiviert.
+Eine der wichtigsten Änderungen an der Bereinigungsfunktion ist die Verwendung des System-Batchauftrags zum Bereinigen des Verlaufs. Die Verwendung des System Batch-Auftrags lässt zu, dass die Finanz- und Betriebs-App den Batch-Auftrag für die Bereinigung automatisch planen und ausführen lassen, sobald das System bereit ist. Es ist nicht mehr erforderlich, den Batchauftrag manuell zu planen. In diesem Standardausführungsmodus wird der Batchauftrag ab Mitternacht jede Stunde ausgeführt und der Ausführungsverlauf für die letzten 7 Tage beibehalten. Der gelöschte Verlauf wird für den zukünftigen Abruf archiviert. Ab Version 10.0.20 ist diese Funktion immer aktiviert.
 
 Die zweite Änderung am Bereinigungsprozess ist die Archivierung des gelöschten Ausführungsverlaufs. Der Bereinigungsauftrag archiviert die gelöschten Datensätze im Blob Storage, den DIXF für regelmäßige Integrationen verwendet. Die archivierte Datei liegt im DIXF-Paketformat vor und ist 7 Tage lang im Blob verfügbar. Während dieser Zeit kann sie heruntergeladen werden. Die Standardlebensdauer von 7 Tagen für die archivierte Datei kann in den Parametern auf maximal 90 Tage geändert werden.
 
@@ -235,3 +235,4 @@ Um den archivierten Ausführungsverlauf herunterzuladen, wechseln Sie zum Datenv
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

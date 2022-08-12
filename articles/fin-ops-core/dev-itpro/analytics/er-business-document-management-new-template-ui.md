@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bcc464a17e27393c5904c59b8439de6ca000d57a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 208cfc91f11d4893785538ce4874e85a5725e993
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892224"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109259"
 ---
 # <a name="microsoft-office-style-user-interface-in-business-document-management"></a>Benutzeroberfläche im Stil von Microsoft Office für Dokumente in der Geschäftsdokumentverwaltung
 
@@ -36,7 +36,7 @@ In den Beispielen in diesem Artikel ist der aktive Anbieter Contoso, und Sie ers
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAVQg]
 
-Das Video [Erstellen eines neuen Belegs mit Unternehmensbelegmanagement](https://youtu.be/gAIYl-mM_pw) (oben gezeigt) ist in der Playlist [Finance und Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) enthalten, die auf YouTube verfügbar ist.
+Das Video [Erstellen eines neuen Belegs mit Business Document Management](https://youtu.be/gAIYl-mM_pw) (oben gezeigt) ist in der Playlist [Finanzen und Vorgänge](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) enthalten, die auf YouTube verfügbar ist.
 
 ## <a name="make-the-new-document-ui-in-business-document-management-available"></a>Neue Benutzeroberfläche für die Geschäftsdokumentverwaltung zur Verfügung stellen
 
@@ -145,3 +145,4 @@ Dieses Beispiel zeigt, wie Sie über die Schaltfläche **Neuer Beleg** im Arbeit
 7. Wählen Sie **OK** aus, um den Beginn des Bearbeitungsprozesses zu bestätigen.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

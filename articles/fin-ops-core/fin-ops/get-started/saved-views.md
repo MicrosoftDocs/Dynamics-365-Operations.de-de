@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 1218497bbb112c9a9ebeaa4cabdcb9314c604a7f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14369b02f1d7553be5c732f3bdf768825267998b
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845412"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9125149"
 ---
 # <a name="saved-views"></a>Gespeicherte Ansichten
 
@@ -215,7 +215,7 @@ Eine Liste bekannter Probleme mit gespeicherten Ansichten finden Sie unter [Form
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Wie aktiviere ich gespeicherte Ansichten im meine Umgebung?
 
 > [!NOTE]
-> Für die Funktion **Gespeicherte Ansichten** muss das Personalisierungssystem in Finance und Operations aktiviert sein. Wenn die Personalisierung für die gesamte Umgebung deaktiviert ist, werden Ansichten deaktiviert, selbst wenn Sie die folgenden Schritte ausführen. 
+> Die Funktion **Gespeicherte Ansichten** setzt voraus, dass das Personalisierungssystem in den Finanz- und Betriebs-Apps aktiviert ist. Wenn die Personalisierung für die gesamte Umgebung deaktiviert ist, werden Ansichten deaktiviert, selbst wenn Sie die folgenden Schritte ausführen. 
 
 Sie können die Funktion **Gespeicherte Ansichten** über die Funktionsverwaltung in jeder Umgebung ein- und ausschalten. Nach dem Einschalten werden gespeicherte Ansichten in allen nachfolgenden Benutzersitzungen aktiviert.
 
@@ -255,3 +255,4 @@ Wenn Sie eine Ansicht für eine bestimmte juristische Entität veröffentlichen,
 - **Version 10.0.21 oder später:** Wenn die Funktion **Verbesserte Unterstützung von juristischen Entitäten für gespeicherte Ansichten** eingeschaltet ist, zeigt der Ansichtsselektor die Ansicht immer nur für die angegebenen juristischen Entitäten an. Dieses Verhalten tritt auf, weil die Funktion ermöglicht, dass Ansichten (einschließlich persönlicher Ansichten) mit bestimmten juristischen Entitäten verknüpft werden können.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

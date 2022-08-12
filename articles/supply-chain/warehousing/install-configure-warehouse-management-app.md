@@ -16,19 +16,16 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9bd208ba78d28046782d03221b0f23471f56b574
-ms.sourcegitcommit: 3f544f8671821be915b289a614e4e440bd38994f
+ms.openlocfilehash: ec2a9f5ca6d6735e675defda6782738da7814c01
+ms.sourcegitcommit: f2501d93ffc1c7bf4e0daa78e63bc37528ef2358
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "8941765"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "9171454"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Mobile Warehouse Management-App installieren und verbinden
 
 [!include [banner](../includes/banner.md)]
-
-> [!NOTE]
-> Dieser Artikel beschreibt, wie Sie die neue mobile App Lagerortverwaltung konfigurieren. Weitere Informationen zum Konfigurieren der alten (inzwischen veralteten) Lagerort-App finden Sie unter [Lagerort-App installieren und Verbindung herstellen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
 In diesem Artikel wird erklärt, wie Sie die Warehouse Management mobile App herunterladen und auf jedem Ihrer mobilen Geräte installieren und wie Sie die App für die Verbindung mit Ihrer Supply Chain Management Umgebung konfigurieren. Sie können jedes Gerät manuell konfigurieren oder Verbindungseinstellungen über eine Datei oder durch Scannen eines QR-Codes importieren.
 

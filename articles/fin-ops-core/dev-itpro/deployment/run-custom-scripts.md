@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-12-16
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: ff01e2ff8ec105603bb91e0b555301f36e8985b4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: aad48fbd3ee2f28f39f6061b5e922f5c4f47c8f6
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867328"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103519"
 ---
 # <a name="run-custom-x-scripts-with-zero-downtime"></a>Führen Sie angepasste X++ Skripte ohne Ausfallzeiten aus
 
@@ -120,7 +120,7 @@ Die folgende Liste beschreibt einige bewährte Verfahren für das erfolgreiche S
 
 Gehen Sie wie folgt vor, um ein Skript hochzuladen und auszuführen.
 
-1. Gehen Sie in Ihrer Finance und Operations App zu **Systemverwaltung \> Periodische Aufgaben \> Datenbank \> Angepasste Skripte**.
+1. In Ihrer Finanz- und Betriebs-App gehen Sie zu **Systemverwaltung \> Periodische Aufgaben \> Datenbank \> Angepasste Skripte**.
 1. Wählen Sie **Hochladen** aus.
 1. Wählen Sie das bereitzustellende Paket, das Sie wie oben beschrieben erstellt haben. Sie werden aufgefordert, den Zweck des Skripts anzugeben.
 1. Das Skript muss jetzt von einem anderen Benutzer als demjenigen, der es hochgeladen hat, genehmigt werden. Der Genehmigende muss diese Schritte befolgen:
@@ -149,6 +149,7 @@ Ihre Auswahl im letzten Schritt legt den endgültigen Status für das Skript fes
 
 ## <a name="upload-and-run-a-deployable-package-through-lcs"></a>Laden Sie ein bereitstellbares Paket hoch und führen Sie es über LCS aus.
 
-Anstatt Ihr bereitstellbares Paket über die Benutzeroberfläche Ihrer Finance und Operations App bereitzustellen, wie im vorherigen Abschnitt beschrieben, können Sie es in LCS hochladen und den regulären Vorgang zum Bereitstellen verwenden. Weitere Informationen finden Sie unter [Bereitgestellte Pakete über die Befehlszeile installieren](../deployment/install-deployable-package.md).
+Anstatt Ihr bereitstellbares Paket über die Benutzeroberfläche für Ihre Finanz- und Betriebs-App bereitzustellen, wie im vorherigen Abschnitt beschrieben, können Sie es in LCS hochladen und das reguläre Verfahren zum Bereitstellen verwenden. Weitere Informationen finden Sie unter [Bereitgestellte Pakete über die Befehlszeile installieren](../deployment/install-deployable-package.md).
 
 Dieser Ansatz hat zwar weniger Einschränkungen, bietet aber auch weniger Fehlerschutz. Da dies einen Neustart aller Server erfordert, kommt es zu einer gewissen Ausfallzeit.
+

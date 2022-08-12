@@ -1,6 +1,6 @@
 ---
 title: Unternehmenskonzept in Dataverse
-description: In diesem Artikel wird die Integration von Unternehmensdaten zwischen Finanz- und Betriebs-Apps und Dataverse beschrieben.
+description: Dieser Artikel beschreibt die Integration von Firmendaten zwischen Finanzen und Betrieb und Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 08/04/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 11355031714b7e046f70bd5840297d66aa7d32e0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ad0075e2b92ebeb9fba879bcae503100dc7adb47
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873177"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9205935"
 ---
 # <a name="company-concept-in-dataverse"></a>Unternehmenskonzept in Dataverse
 
@@ -23,15 +23,17 @@ ms.locfileid: "8873177"
 
 
 
-In Finance and Operations ist das Konzept *Unternehmen* sowohl ein juristisches als auch ein unternehmerisches Konstrukt. Es ist außerdem ein Sicherheits- und Sichtbarkeitsgrenze für Daten. Benutzer arbeiten immer im Kontext eines einzelnen Unternehmens, und die meisten Daten werden von dem Unternehmen gekennzeichnet.
+In Finanzen und Betrieb ist das Konzept einer *Firma* sowohl ein rechtliches als auch ein geschäftliches Konstrukt. Es ist außerdem ein Sicherheits- und Sichtbarkeitsgrenze für Daten. Benutzer arbeiten immer im Kontext eines einzelnen Unternehmens, und die meisten Daten werden von dem Unternehmen gekennzeichnet.
 
 Dataverse hat kein entsprechendes Konzept. Das nächste Konzept ist *Unternehmenseinheit*, das in erster Linie eine Sicherheits- und Sichtbarkeitsgrenze für Benutzerdaten ist. Dieses Konzept besitzt nicht die gleichen rechten oder geschäftlichen Auswirkungen wie das Unternehmenskonzept.
 
 Da Unternehmenseinheit und Unternehmen keine entsprechenden Konzepte sind, ist es nicht möglich, eine 1:1-Zuordnung zum Zwecke der Dataverse-Integration zu erzwingen. Da Benutzer aber standardmäßig in der Lage sein müssen, dieselben Zeilen in der Anwendung und in Dataverse anzuzeigen, hat Microsoft eine neue Tabelle in Dataverse mit dem Namen „cdm\_Company“ eingeführt. Diese Tabelle entspricht der Unternehmenstabelle in der Anwendung. Um sicherzustellen, dass die Sichtbarkeit von Zeilen in der Anwendung und in Dataverse standardmäßig äquivalent ist, empfehlen wir die folgende Einstellung für Daten in Dataverse:
 
-+ Für jede Finance und Operations Unternehmenszeile, die für duales Schreiben aktiviert ist, wird eine zugehörige cdm\_Company erstellt.
-+ Wenn eine cdm\_Company-Zeile erstellt und für duales Schreiben aktiviert wird, wird eine Standardunternehmenseinheit mit demselben Namen erstellt. Es wird zwar automatisch ein Standardteam für diese Geschäftseinheit erstellt, die Geschäftseinheit wird aber nicht verwendet.
-+ Ein separates Eigentümerteam wird erstellt, das denselben Namen hat. Es wird ebenfalls der Geschäftseinheit zugeordnet.
++ Für jede Finanzen und Betrieb Unternehmenszeile, die für Dual-write aktiviert ist, wird eine zugehörige cdm\_Company-Zeile erstellt.
+
++ Wenn eine cdm\_Company-Zeile erstellt und für duales Schreiben aktiviert wird, wird eine Standardunternehmenseinheit mit demselben Namen erstellt. Obwohl für diese Unternehmenseinheit automatisch ein Standardteam der Besitzer erstellt wird, wird die Unternehmenseinheit nicht verwendet.
++ Es wird ein separates Besitzer-Team erstellt, das den gleichen Namen mit einem Dual-Write-Suffix trägt. Es wird ebenfalls der Geschäftseinheit zugeordnet.
+
 + Standardmäßig wird der Eigentümer einer beliebigen Zeile, die erstellt und in Dataverse dual geschrieben wird, auf das Team „DW-Eigentümer“ festgelegt, das mit der zugehörigen Unternehmenseinheit verknüpft ist.
 
 Die folgende Abbildung zeigt ein Beispiel für diese Dateneinreichtung in Dataverse.
@@ -43,7 +45,7 @@ Aufgrund dieser Konfiguration ist jede Zeile, due mit dem USMF-Unternehmen verkn
 + Die Rolle „Vertriebsmanager“ ist Mitgliedern des Teams „USMF-Vertrieb“ zugewiesen.
 + Benutzer mit der Rolle „Vertriebsmanager“ können auf beliebige Kontozeilen zugreifen, die Mitglieder derselben Unternehmenseinheit wie sie sind.
 + Das Team „USMF-Vertrieb“ wird mit der zuvor erwähnten USMF-Geschäftseinheit verknüpft.
-+ Daher können die Mitglieder des Teams „USMF Sales“ jedes Konto sehen, das dem Benutzer „USMF DW“ gehört und das aus der Tabelle USMF Company in Finance und Operations stammen würde.
++ Daher können die Mitglieder des Teams „USMF Sales“ jedes Konto sehen, das dem Benutzer „USMF DW“ gehört, der aus der Tabelle USMF Company in Finanzen und Betrieb stammen würde.
 
 ![Wie Teams verwendet werden können.](media/dual-write-company-2.png)
 

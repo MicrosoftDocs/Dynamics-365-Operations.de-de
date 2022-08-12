@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 809906c3926b200e7beac84e780314aec1f8c2ca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 85b3a45c054144e414aebb28b3d8080ab295f52f
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855586"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112273"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migration vom Währungsdatentyp für duales Schreiben
 
@@ -29,7 +29,7 @@ Das Ändern der Anzahl der Dezimalstellen erfolgt in zwei Schritten:
 1. Fordern Sie die Migration von Microsoft an.
 2. Ändern Sie die Anzahl der Dezimalstellen in Dataverse.
 
-Die Finance und Operations App und Dataverse müssen die gleiche Anzahl von Dezimalstellen bei Währungswerten unterstützen. Andernfalls kann es zu Datenverlust kommen, wenn diese Informationen zwischen Apps synchronisiert werden. Der Migrationsprozess konfiguriert die Art und Weise neu, in der Währungs- und Wechselkurswerte gespeichert werden, ändert jedoch keine Daten. Nach Abschluss der Migration kann die Anzahl der Dezimalstellen für Währungscodes und Preise erhöht werden, und die Daten, die Benutzer eingeben und anzeigen, können dezimaler sein.
+Die Finanz- und Betriebs-App und Dataverse müssen die gleiche Anzahl von Dezimalstellen in den Währungswerten unterstützen. Andernfalls kann es zu Datenverlust kommen, wenn diese Informationen zwischen Apps synchronisiert werden. Der Migrationsprozess konfiguriert die Art und Weise neu, in der Währungs- und Wechselkurswerte gespeichert werden, ändert jedoch keine Daten. Nach Abschluss der Migration kann die Anzahl der Dezimalstellen für Währungscodes und Preise erhöht werden, und die Daten, die Benutzer eingeben und anzeigen, können dezimaler sein.
 
 Die Migration ist optional. Wenn Sie möglicherweise mehr Dezimalstellen unterstützen, empfehlen wir Ihnen, die Migration in Betracht zu ziehen. Organisationen, die keine Werte mit mehr als vier Dezimalstellen benötigen, müssen nicht migrieren.
 
@@ -37,7 +37,7 @@ Die Migration ist optional. Wenn Sie möglicherweise mehr Dezimalstellen unterst
 
 Speicherung für vorhandene Währungsspalten in Dataverse kann nicht mehr als vier Dezimalstellen unterstützen. Daher werden während des Migrationsprozesses Währungswerte in neue interne Spalten in der Datenbank kopiert. Dieser Vorgang wird kontinuierlich ausgeführt, bis alle Daten migriert wurden. Intern ersetzen am Ende der Migration die neuen Speichertypen die alten Speichertypen, die Datenwerte bleiben jedoch unverändert. Die Währungsspalten können dann bis zu 10 Dezimalstellen unterstützen. Während des Migrationsprozesses kann Dataverse ohne Unterbrechung weiter verwendet werden.
 
-Gleichzeitig werden die Wechselkurse so geändert, dass sie bis zu 12 Dezimalstellen anstelle der aktuellen Grenze von 10 unterstützen. Diese Änderung ist erforderlich, damit die Anzahl der Dezimalstellen sowohl in der Finance und Operations App als auch bei Dataverse gleich ist.
+Gleichzeitig werden die Wechselkurse so geändert, dass sie bis zu 12 Dezimalstellen anstelle der aktuellen Grenze von 10 unterstützen. Diese Änderung ist erforderlich, damit die Anzahl der Dezimalstellen sowohl in der Finanz- und Betriebs-App als auch bei Dataverse gleich ist.
 
 Die Migration ändert keine Daten. Nach der Konvertierung der Währungs- und Wechselkursspalten können Administratoren das System so konfigurieren, dass bis zu 10 Dezimalstellen für Währungsspalten verwendet werden, indem die Anzahl der Dezimalstellen für jede Transaktionswährung und die Preisgestaltung angegeben werden.
 
@@ -100,3 +100,4 @@ Informationen zum erwarteten Verhalten für die Dezimalgenauigkeit der Standardw
 |          | Maximale Dezimalgenauigkeit, die in der Benutzeroberfläche der Datenbank- und DB-Abfrageergebnisse sichtbar ist | 10 Ziffern. Allerdings sind nur 4 signifikant, wobei alle Nullen jenseits der 4 Dezimalstellen liegen. Dies ermöglicht bei Bedarf eine einfachere und schnellere Migration der Organisation. | 10 Ziffern      | 10 Ziffern     |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

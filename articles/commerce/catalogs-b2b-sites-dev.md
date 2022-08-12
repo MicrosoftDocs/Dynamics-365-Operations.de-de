@@ -2,19 +2,19 @@
 title: Auswirkung der Erweiterbarkeit von Commerce-Katalogen für B2B-Anpassungen
 description: In diesem Artikel werden die Auswirkungen der Erweiterbarkeit der Funktion „Commerce-Kataloge für B2B“ in Microsoft Dynamics 365 Commerce beschrieben.
 author: ashishmsft
-ms.date: 04/28/2022
+ms.date: 07/11/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: a9abdb5ea702917a745c3156f774aade757c159e
-ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
+ms.openlocfilehash: 06d304226270c9c63c6907190dc1038a38f70e44
+ms.sourcegitcommit: d1491362421bf2fcf72a81dc2dc2d13d3b98122b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9027253"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9136799"
 ---
 # <a name="extensibility-impact-of-commerce-catalogs-for-b2b-customizations"></a>Auswirkung der Erweiterbarkeit von Commerce-Katalogen für B2B-Anpassungen
 
@@ -67,3 +67,5 @@ Die folgenden Anpassungsfälle erfordern Entwicklungsaktualisierungen:
 [Commerce-Kataloge für B2B-Websites erstellen](catalogs-b2b-sites.md)
 
 [FAQ zu Commerce-Katalogen für B2B](catalogs-b2b-sites-FAQ.md)
+
+[Katalog-Picker-Modul](catalog-picker.md)

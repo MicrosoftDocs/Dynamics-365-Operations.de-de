@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0220fa03283119471b3d1f78a23a04ed4036264e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d6a64908a167c09089a95f1d3faa825dcc63f064
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906796"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109081"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Den Lebenszyklus der elektronischen Berichterstellungskonfiguration (ER) verwalten
 
@@ -73,7 +73,7 @@ Folgende Rollen und Aktivitäten gehören zu EB-Konfigurationslebenszyklen.
 | Sachbearbeiter Kreditorenkontozahlungen            | Verwenden von EB-Artefakten in einem bestimmten Geschäftsprozess.                | Beispielsweise eine **Sachbearbeiter Kreditorenkontozahlungen**-Rolle, die die für die Generierung von Nachrichten für elektronischen Zahlung zulässt, die auf dem EB-Format basieren, das für eine bestimmte Zahlungsmethode konfiguriert ist |
 
 ## <a name="er-configuration-development-lifecycle"></a>EB-Konfigurationsentwicklungslebenszyklus
-Bei den folgenden ER-bezogenen Gründen empfehlen wir, Ihre ER-Konfigurationen in der Entwicklungsumgebung als getrennte Instanz von Finance and Operations zu entwickeln:
+Aus den folgenden Gründen, die mit ER zusammenhängen, empfehlen wir Ihnen, ER-Konfigurationen in der Entwicklungsumgebung zu entwerfen, und zwar als separate Instanz von Finanzen und Betrieb:
 
 - Benutzer, die entweder die Rolle des **Elektronischen Berichterstellungsentwicklers** oder **des funktionalen Beraters der elektronischen Berichterstellung** ausüben, können Konfigurationen bearbeiten und anschließend für Testzwecke ausführen. Dieses Szenario ruft möglicherweise Geschäftsabläufe und Tabellen auf, die für die Daten und die Leistung der Instanz schädlich sein können.
 - Das Aufrufen von Geschäftsabläufen und Tabellen als EB-Datenquelle von EB-Konfigurationen sind bei Einstiegspunkten und angemeldeten Unternehmensinhalten nicht beschränkt. Deshalb können Benutzer mit der Rolle **Entwickler für elektronische Berichterstellung** oder **Funktionaler Berater für elektronische Berichterstellung** auf geschäftskritische Daten zugreifen.
@@ -113,3 +113,4 @@ In einigen Fällen kann es erforderlich sein, dass das System die konfigurierten
 [Abhängigkeit von ER-Konfigurationen von anderen Komponenten festlegen](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

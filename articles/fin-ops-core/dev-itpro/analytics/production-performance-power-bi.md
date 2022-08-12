@@ -6,19 +6,19 @@ ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ProductionPerformancePowerBI
 audience: Application User, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cf0d2bdc37efb66f7aee40f237413a2ef5d9f9f0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: ProductionPerformancePowerBI
+ms.openlocfilehash: e1b8afcc3d1b64c6828e4081b41a74d3b76731bc
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881460"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9205732"
 ---
 # <a name="production-performance-power-bi-content"></a>Power BI-Inhalt – Produktionsleistung
 
@@ -49,7 +49,7 @@ Die folgende Tabelle enthält eine Übersicht der Visualisierungen im Inhaltspak
 
 | Berichtsseiten                                | Diagramme | Kacheln |
 |--------------------------------------------|--------|-------|
-| Produktionsleistung                     | <ul><li>Anzahl der Produktionsauftragspositionen nach Datum</li><li>Anzahl der Produktionen nach Produkt und Artikelgruppe</li><li>Anzahl der geplanten Produktionsaufträge nach Datum</li><li>10 tiefsten Produkte nach Pünktlichkeit und Vollständigkeit</li></ul> | <ul><li>Gesamtbestellung</li><li>Rechtzeitig und vollständig in Prozent</li><li>Unvollständig in %</li><li>Vorzeitig in %</li><li>verspätet in %</li></ul> |
+| Produktionsleistung                     | <ul><li>Anzahl der Produktionsauftragspositionen nach Datum</li><li>Anzahl der Produktionen nach Produkt und Artikelgruppe</li><li>Anzahl der geplanten Produktionsaufträge nach Datum</li><li>10 tiefsten Produkte nach Pünktlichkeit &amp; Vollständigkeit</li></ul> | <ul><li>Gesamtbestellung</li><li>Rechtzeitig &amp; vollständig in Prozent</li><li>Unvollständig in %</li><li>Vorzeitig in %</li><li>verspätet in %</li></ul> |
 | Defekte nach Produkt                         | <ul><li>Fehlerhafter Satz (PPM) nach Datum</li><li>Fehlerhafte Rate nach Produkt (PPM) und Artikelgruppe</li><li>Jährlich produzierte Menge nach Datum</li><li>Top 10 Produkte nach gültigem Preis</li></ul> | <ul><li>Fehlerhafter Satz (PPM)</li><li>Fehlerhafte Menge</li><li>Gesamtmenge</li></ul> |
 | Defekter Trend nach Produkt                   | Defekter Satz (PPM) nach produzierter Menge | Fehlerrate (ppm) |
 | Defekte nach Ressource                        | <ul><li>Fehlerhafter Satz (PPM) nach Datum</li><li>Fehlerhafter Satz (PPM) nach Ressource und Standort</li><li>Fehlerhafter Satz (PPM) nach Betrieb</li><li>Top 10 Ressourcen nach Defektsatz</li></ul> | Fehlerhafte Menge |

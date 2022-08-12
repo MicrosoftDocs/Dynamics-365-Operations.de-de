@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8d9c756d8aaf2e7b2f6593e78fbb645dafee4552
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 6d440a0d0d95fe93ed633fa588e1c3a193757d9d
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9016158"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070378"
 ---
 # <a name="production-parameters-in-manufacturing-execution"></a>Produktionsparameter in der Fertigungssteuerung
 
@@ -71,7 +71,7 @@ Für jede Phase können Sie im Feld **Automatischer BOM-Verbrauch** eine von dre
   - Leer (keine Option ist aktiviert.)
   - **Am Lagerplatz verfügbar**
 
-    In der Fertigungssteuerung wenn **Prinzip für automatischen Artikelverbrauch** im Feld **Soll=Istrückmeldung Material** auf der Registerkarte **Starten** ausgewählt wird, werden alle Materialien, die in der Stückliste auf **Starten** festgelegt werden, vom Bestand abgezogen, wenn der Arbeitsgang gestartet wird. Die Option **Verfügbar am Lagerplatz** wird für Produkte verwendet, die für erweiterte Lagerortprozesse aktiviert werden. Wenn Sie dieses Prinzip für automatischen Artikelverbrauch aktivieren, wird Material geleert, wenn Lagerortarbeit für Rohmaterialentnahme abgeschlossen wird. Material wird auch geleert, wenn eine Stücklistenposition, die dieses Leerungsprinzip nutzt, für automatischen Artikelverbrauch für den Lagerort freigeben wurde und das Material am Produktionseingangslagerplatz verfügbar ist.
+    In der Fertigungssteuerung wenn **Prinzip für automatischen Artikelverbrauch** im Feld **Soll=Istrückmeldung Material** auf der Registerkarte **Starten** ausgewählt wird, werden alle Materialien, die in der Stückliste auf **Starten** festgelegt werden, vom Bestand abgezogen, wenn der Arbeitsgang gestartet wird. Die Option **Verfügbar am Standort** wird für Produkte verwendet, die für Lagerverwaltungsprozesse (WMS) aktiviert sind. Wenn Sie dieses Prinzip für automatischen Artikelverbrauch aktivieren, wird Material geleert, wenn Lagerortarbeit für Rohmaterialentnahme abgeschlossen wird. Material wird auch geleert, wenn eine Stücklistenposition, die dieses Leerungsprinzip nutzt, für automatischen Artikelverbrauch für den Lagerort freigeben wurde und das Material am Produktionseingangslagerplatz verfügbar ist.
 
     > [!NOTE]
     > Wenn das Feld **Prinzip für automatischen Artikelverbrauch** auf der Registerkarte **Starten** in der Fertigungssteuerung festgelegt ist, müssen Sie dasselbe Prinzip entweder auf der Registerkarte **Arbeitsgänge** oder der Registerkarte **Fertigmeldung** auswählen. Durch diese Anforderung wird sichergestellt, dass Materialien aus dem Lagerbestand für die Stücklisten abgezogen werden, die **Fertig stellen** als Prinzip für automatischen Artikelverbrauch für den Produktionsauftrag verwenden. Wenn das gleiche Prinzip für automatischen Artikelverbrauch weder auf der Registerkarte **Arbeitsgänge** noch auf der Registerkarte **Fertigmeldung** aktiviert ist, werden Materialien doppelt aus dem Lagerbestand abgezogen werden.

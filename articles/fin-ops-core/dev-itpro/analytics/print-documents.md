@@ -7,21 +7,21 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro, Application User
-ms.reviewer: kfend
-ms.custom:
-- "69161"
-- intro-internal
-ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b9105ef39e411ac33043f1941d4e1dd32b758e5
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.custom:
+- "69161"
+- intro-internal
+ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
+ms.openlocfilehash: d8d40f7cb94e17370f04b0c97365600f68eb5090
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984907"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206724"
 ---
 # <a name="document-printing-overview"></a>Dokumentendruck – Übersicht
 
@@ -54,7 +54,7 @@ Da die Auflösun je nach spezifischem Szenario ändert, stellt einen integrierte
 - **Szenario 2** verwendet Clientanwendungen und Microsoft 365-Dienstleistungen.
 - **Szenario 3** erfordert Unterstützung von benutzerdefinierten Anwendungen und von Diensten, die in Microsoft Azure gehostet werden.
 
-Neben der Plattform, die im Azure Abonnement bereitgestellt wird, stellen Finance and Operations Anwendungen Kunden eine integrierte Azure Anwendung des Erstanbieters bereit, damit sie einfacher Domäne-gehostete Geräte verwenden können, um Dokumente zu drucken.
+Zusätzlich zu der Plattform, die für das Azure Abonnement bereitgestellt wird, bieten die Finanzen und Betrieb Anwendungen den Debitor eine integrierte Azure-Anwendung der ersten Partei, mit der sie die in der Domäne gehosteten Geräte zum Drucken von Belegen einfacher nutzen können.
 
 ## <a name="service-overview"></a>Dienstleistungsüberblick
 Während Dokumente, die über gehostete Anwendungen produziert werden, darauf warten, auf einem mit dem Netzwerk verbundenen Gerät gedruckt zu werden, werden diese im Azure BLOB-Speicher gespeichert. [Installieren des Document Routing Agent, um das Drucken im Netzwerk zu ermöglichen](install-document-routing-agent.md) verwendet die Azure-Authentifizierung, um einen sicheren Kanal zu den Azure-Diensten herzustellen.

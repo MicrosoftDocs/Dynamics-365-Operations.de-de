@@ -2,7 +2,7 @@
 title: Prozessautomatisierung
 description: Dieser Artikel enthält Details dazu, wie die Prozessautomatisierung die einfache Planung von Prozessen ermöglicht, die vom Batch-Server ausgeführt werden.
 author: RyanCCarlson2
-ms.date: 04/20/2021
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: f13392fd6610735f8c539d42b62cf71cece71fba
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c0015b65f1ff00cfce19139cb8aaa248512d070b
+ms.sourcegitcommit: 3d2c0a39c4f987e9ac71df2f2fa6df0f64f10b2b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898608"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9114934"
 ---
 # <a name="process-automation"></a>Prozessautomatisierung
 
@@ -30,7 +30,7 @@ Prozessautomatisierung ermöglicht die einfache Planung von Prozessen, die vom B
 
 Die zentrale Administrationsseite für alle Prozessautomatisierungen finden Sie im Systemadministrationsmodul im Menü **Einrichtung**. Diese Seite listet alle automatisierten Prozesse (Serien) auf, die im System eingerichtet sind. Außerdem können Sie direkt von dieser Seite aus neue Prozessautomatisierungen hinzufügen. Nachdem eine Serie eingerichtet wurde, können Sie jede Serie aus dieser Liste verwalten. Sie können die gesamte Serie bearbeiten, löschen, alle Vorkommen in einer Listenansicht anzeigen oder die Serie deaktivieren, wenn Sie die geplante Arbeit für eine Weile anhalten möchten. 
 
-Alle Prozesse, die in der Funktionsverwaltung deaktiviert sind, werden nicht angezeigt, wenn die Funktion deaktiviert ist. Darüber hinaus plant das Planungsmodul zur Prozessautomatisierung keine Vorkommen oder Hintergrundprozesse für eine deaktivierte Funktion. Durch erneutes Aktivieren der Funktion werden geplante Ereignisse oder Hintergrundprozesse aus der Vergangenheit sofort ausgeführt. Die Scheduling-Engine der Prozessautomatisierung stützt sich auf den Batchauftrag des Systems, **Prozessautomatisierungsabfrage-Systemjob**, um ausgeführt zu werden. Der Job sollte zu keiner Zeit verändert oder manipuliert werden. 
+Alle Prozesse, die in der Funktionsverwaltung deaktiviert sind, werden nicht angezeigt, wenn die Funktion deaktiviert ist. Darüber hinaus plant das Planungsmodul zur Prozessautomatisierung keine Vorkommen oder Hintergrundprozesse für eine deaktivierte Funktion. Durch erneutes Aktivieren der Funktion werden geplante Ereignisse oder Hintergrundprozesse aus der Vergangenheit sofort ausgeführt. Die Scheduling-Engine der Prozessautomatisierung stützt sich auf den Batchauftrag des Systems, **Prozessautomatisierungsabfrage-Systemjob**, um ausgeführt zu werden. Der Job sollte zu keiner Zeit verändert oder manipuliert werden. Wenn dieser Batchauftrag nicht ausgeführt wird oder sich in einem fehlerhaften Status befindet, wählen Sie **Prozessautomatisierung initialisieren**, um den Batchauftrag zurückzusetzen, damit alle neuen Automatisierungen, die in einer neueren Version der Anwendung freigegeben wurden, initialisiert werden. 
 
 ## <a name="calendar-view"></a>Kalenderansicht
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: efbf9072c3bbcb20f38e144f9a15d8178d96d708
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ef392fd744a68c54bc0438152b3487233ac5c7f3
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905572"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070348"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Mobile Geräte für Lagerarbeiten einrichten
 
@@ -123,13 +123,13 @@ Sie können eine Menüoption einrichten, die Arbeit für eine andere Arbeitskraf
 <td>Artikelempfang des Umlagerungsauftrags</td>
 <td>Erfassen Sie den Eingang einer Menge eines Artikels, und erstellen Sie Einlagerungsarbeit für eine andere Arbeitskraft.
 
-<strong>Hinweis:</strong> Verwenden Sie diese Option nur, wenn die Artikel aus einem Lagerort versendet wurden, der nicht für Lagerortverwaltungsprozesse aktiviert ist.</td>
+<strong>Hinweis:</strong> Verwenden Sie diese Option nur, wenn die Artikel aus einem Lager versandt wurden, das nicht für Lagerverwaltungsprozesse (WMS) aktiviert ist.</td>
 </tr>
 <tr>
 <td>Artikelempfang und -einlagerung für Umlagerungsauftrag</td>
 <td>Erfassen Sie den Eingang einer Menge eines Artikels, und lagern Sie die Artikel ein. Die gleiche Arbeitskraft führt beide Aktivitäten aus.
 
-<strong>Hinweis:</strong> Verwenden Sie diese Option nur, wenn die Artikel aus einem Lagerort versendet wurden, der nicht für Lagerortverwaltungsprozesse aktiviert ist.</td>
+<strong>Hinweis:</strong> Verwenden Sie diese Option nur, wenn die Artikel aus einem Lager versandt wurden, das nicht für Lagerverwaltungsprozesse (WMS) aktiviert ist.</td>
 </tr>
 <tr>
 <td>Umlagerungsauftrags-Positionsempfang</td>

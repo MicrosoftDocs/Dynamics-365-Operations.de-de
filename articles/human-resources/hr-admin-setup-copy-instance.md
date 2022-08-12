@@ -14,17 +14,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d0da71c87364eacf60b9a82a200996292b863b6a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 935c2e6cb45df193e6cbf70634f3561154c6fe38
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692421"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178532"
 ---
 # <a name="copy-an-instance"></a>Instanz kopieren
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Gilt für:** Human Resources in der eigenständigen Infrastruktur_ 
 
+> [!NOTE]
+> Ab Juni 2022 können Human Resources Umgebungen nur noch auf der Finanz- und Betriebs-App-Infrastruktur bereitgestellt werden. Weitere Informationen finden Sie unter [Personal Resources in der Finanzen und Betrieb Infrastruktur bereitstellen](hr-admin-setup-provision-fo.md).
+
+> [!IMPORTANT]
+> Die Finanzen und Betrieb-Infrastruktur unterstützt keine Funktion zum Kopieren von Instanzen. Sie können neue Umgebungen bereitstellen und Datenbankumlagerungen verwenden, um Kopien zu erstellen. Weitere Informationen zum Bereitstellen von Self-Service finden Sie unter [Überblick über die Self-Service-Bereitstellung](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md). Weitere Informationen über Lagerplatzumlagerungen in der Finanzen und Betrieb-Infrastruktur finden Sie auf der [Homepage für Datenbankumlagerungen](../fin-ops-core/dev-itpro/database/dbmovement-operations.md).
 
 Sie können mit Microsoft Dynamics Lifecycle Services (LCS) eine Microsoft Dynamics 365 Human Resources-Datenbank in eine Sandkastenumgebung kopieren. Wenn Sie eine andere Sandbox-Umgebung haben, können Sie die Datenbank auch aus dieser Umgebung in eine bestimmte Sandbox-Umgebung kopieren.
 
@@ -50,7 +55,7 @@ Die folgenden Ereignisse treten auf, wenn Sie eine Human Resources-Datenbank kop
 
 - Dokumente im Microsoft Azure Blob-Speicher werden nicht von einer Umgebung in eine andere kopiert. Als Ergebnis werden angehängte Dokumente und Vorlagen nicht kopiert und verbleiben in der Quellumgebung.
 
-- Alle Benutzer außer denen mit der Sicherheitsrolle „Systemadministrator“ und andere interne Dienstbenutzerkonten sind nicht verfügbar. Der Administrator kann Daten löschen oder verschleiern, bevor andere Benutzer wieder Zugriff auf das System erhalten.
+- Alle Benutzer außer denen mit der Sicherheitsrolle „Systemadministrator“ und andere interne Dienstbenutzerkonten sind nicht verfügbar. Der Admin-Benutzer kann Daten löschen, bevor andere Benutzer wieder in das System zugelassen werden.
 
 - Ein Benutzer mit der Sicherheitsrolle „Systemadministrator“ muss die erforderlichen Konfigurationsänderungen vornehmen, z. B. das erneute Verbinden von Integrationsendpunkten mit bestimmten Diensten oder URLs.
 
@@ -67,7 +72,7 @@ Um diese Aufgabe abzuschließen, kopieren Sie zuerst eine Instanz und melden sic
 
 3. Wählen Sie die zu kopierende Instanz aus und wählen Sie dann **Kopieren**.
 
-4. Wählen Sie im Aufgabenbereich **Instanz kopieren** die zu überschreibende Instanz und anschließend **Kopieren** aus. Warten Sie, bis der Wert des Felds **Kopierstatus** zu **Abgeschlossen** aktualisiert wird.
+4. Wählen Sie im Aufgabenbereich **Instanz kopieren** die zu überschreibende Instanz und anschließend **Kopieren** aus. Warten Sie, bis das Feld **Kopierstatus** auf **Erledigt** aktualisiert wird.
 
    ![[Zu überschreibende Instanz auswählen.](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
@@ -76,6 +81,8 @@ Um diese Aufgabe abzuschließen, kopieren Sie zuerst eine Instanz und melden sic
    ![[Power Platform auswählen.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Wählen Sie die zu kopierende Power Apps-Umgebung aus und wählen Sie dann **Kopieren**.
+
+Weitere Informationen zum Kopieren von Power Apps-Umgebungen finden Sie unter [Kopieren einer Umgebung](/power-platform/admin/copy-environment#copy-an-environment-1).
 
 7. Wenn der Kopiervorgang abgeschlossen ist, melden Sie sich bei der Zielinstanz an und aktivieren Sie die Dataverse-Integration. Weitere Informationen und Anleitungen finden Sie unter [Dataverse-Integration konfigurieren](./hr-admin-integration-common-data-service.md).
 
@@ -115,7 +122,7 @@ Außerdem ändern sich die folgenden Status beim Kopieren einer Instanz:
 
 ## <a name="environment-admin"></a>Umgebungsadministrator
 
-Alle Benutzer in der Ziel-Sandkastenumgebung, einschließlich Administratoren, werden durch die Benutzer der Quellumgebung ersetzt. Stellen Sie vor dem Kopieren einer Instanz sicher, dass Sie ein Administrator in der Quellumgebung sind. Andernfalls können Sie sich nach Abschluss des Kopiervorgangs nicht bei der Ziel-Sandkastenumgebung anmelden.
+Alle Benutzer in der Ziel-Sandkastenumgebung, einschließlich Administratoren, werden durch die Benutzer der Quellumgebung ersetzt. Stellen Sie vor dem Kopieren einer Instanz sicher, dass Sie ein Administrator in der Quellumgebung sind. Ist dies nicht der Fall, können Sie sich nach Abschluss des Kopiervorgangs nicht in der Sandbox-Umgebung des Ziels anmelden.
 
 Alle Nicht-Administrator-Benutzer in der Ziel-Sandkastenumgebung sind deaktiviert, um unerwünschte Anmeldungen in der Sandkastenumgebung zu verhindern. Administratoren können Benutzer bei Bedarf erneut aktivieren.
 

@@ -1,7 +1,7 @@
 ---
 title: Bankgarantien
 description: Dieser Artikel enthält Informationen zu Garantiebriefen. Ein Garantiebrief ist eine Einverständniserklärung seitens einer Bank, einen bestimmten Geldbetrag an eine andere Person zu zahlen, falls seitens eines Debitors der Bank eine regelmäßige Zahlungsverpflichtung gegenüber dieser Person besteht.
-author: panolte
+author: angelad116
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kfend
 ms.custom: 18291
 ms.assetid: 5c0b5e37-d51d-4a01-bb37-1882173abb9f
 ms.search.region: Global
-ms.author: panolte
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef41b7b3b3c170620e6ff698cf02b9484e6a8762
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: a36ab23e15d99bcaec84beb56d0ae8e33ebe6b8d
+ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723133"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151280"
 ---
 # <a name="letters-of-guarantee"></a>Bankgarantien
 

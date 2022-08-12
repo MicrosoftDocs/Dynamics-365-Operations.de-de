@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef906c0d60639da763f2a9c1e1adf508b0849b8978dff17cd0e7b3936fc4779e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5bb0b306cca715cad64d62fff843987a8e98eb99
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771871"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108763"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Planen Ihrer Organisationshierarchie
 
@@ -42,7 +42,7 @@ Wenn Sie Hierarchien planen, ist es auch wichtig, die Beziehung zwischen der Org
 
 Sie müssen mindestens eine juristische Person haben, um Ihr Unternehmens darzustellen. Eine juristische Person kann Verträge abschließen und ist verpflichtet, Finanzaufstellungen zum Erstellen eines Berichts über ihre Vermögens-, Finanz- und Ertragslage vorzubereiten.
 
-Es können juristischen Personen für Transaktionen oder für Konsolidierung verwendet werden. Das bedeutet, dass eine juristische Person in Finance and Operations nicht unbedingt eine wirkliche Entität in Ihrem Unternehmen darstellt. So kann ein Unternehmen, das an Transaktionen teilnimmt, juristische Person vom Typ Tochtergesellschaft besitzen. In diesem Szenario ist eine juristische Person für Buchungen obligatorisch, und eine virtuelle juristische Person ist erforderlich, um die Ergebnisse und Salden der Tochterfirmen zu konsolidieren.
+Es können juristischen Personen für Transaktionen oder für Konsolidierung verwendet werden. Das bedeutet, dass eine juristische Entität in Finanzen und Betrieb nicht unbedingt eine reale Entität in Ihrem Unternehmen darstellt. So kann ein Unternehmen, das an Transaktionen teilnimmt, juristische Person vom Typ Tochtergesellschaft besitzen. In diesem Szenario ist eine juristische Person für Buchungen obligatorisch, und eine virtuelle juristische Person ist erforderlich, um die Ergebnisse und Salden der Tochterfirmen zu konsolidieren.
 
 Interne Organisationen in Ihrem Unternehmen, wie Zweigniederlassungen, können als weitere juristische Personen oder Organisationseinheiten der juristischen Hauptperson dargestellt werden. Eine Organisationseinheit muss keine gesetzlich definierte Organisation sein. Organisationseinheiten werden verwendet, um wirtschaftliche Ressourcen und betriebliche Prozesse im Unternehmen zu steuern. Beispielsweise sind Abteilungen und Kostenstellen Organisationseinheiten.
 
@@ -171,7 +171,7 @@ Bei Ländern/Regionen, die unterstützt werden, können die meisten Offenlegungs
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>Wenn die Organisation als Organisationseinheit modelliert wird
 
-Offenlegungsberichte müssen erstellt werden, indem eine andere Anwendung verwendet wird. Sie müssen sicherstellen, dass Daten in Finance and Operations-Apps erfasst werden, um die Anforderungen jeder Organisationseinheit zu unterstützen, soweit sie sich von den Anforderung am Hauptsitz unterscheiden.
+Offenlegungsberichte müssen erstellt werden, indem eine andere Anwendung verwendet wird. Sie müssen sicherstellen, dass die Daten in den Finanz- und Betriebs-Apps erfasst werden, um die Anforderungen der einzelnen operativen Einheiten zu unterstützen, sofern diese von den Anforderungen von headquarters abweichen.
 
 ### <a name="currency"></a>Währung
 
@@ -242,3 +242,4 @@ Berücksichtigen Sie die folgenden optimalen Verfahren bei der Implementierung e
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

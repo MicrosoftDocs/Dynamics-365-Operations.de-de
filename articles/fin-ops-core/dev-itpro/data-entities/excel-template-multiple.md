@@ -1,6 +1,6 @@
 ---
 title: Datenvorlagen mit mehreren Arbeitsblättern
-description: In diesem Artikel wird beschrieben, wie Daten mithilfe der Excel-Datenentitätsvorlagen in Finanz- und Betriebs-Apps importiert werden.
+description: Dieser Artikel beschreibt, wie Sie Daten mithilfe von Excel-Vorlagen für Entitäten in Finanzen und Betrieb importieren können.
 author: peakerbl
 ms.date: 01/01/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: eaad6f433329dd42c7ab6db839f2f9e61de91a13
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f0845b111afb18205677b885c91fe1585b24ab14
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881100"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108805"
 ---
 # <a name="data-templates-with-multiple-worksheets"></a>Datenvorlagen mit mehreren Arbeitsblättern
 
@@ -53,3 +53,4 @@ Sie können eine Excel-Datei hochladen, während Sie die Option **Projekt ausfü
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

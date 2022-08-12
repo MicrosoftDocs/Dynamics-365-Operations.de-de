@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 2c7b1faac6af3356e4621d932031e798413b6563
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c883a425610d9b04812ba77c666b0b220184d5af
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889899"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069283"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-finance"></a>Lernkatalog für Benutzer von Dynamics 365 Finance
 
@@ -31,7 +31,7 @@ Der folgende Katalog wurde aus Kernwissen zu bestimmten Domänen und vom Einfach
 |---------|-------------|--------|--------|
 | [Kennenlernen des Handelswerts von Microsoft Dynamics 365 und Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Sind Sie an Informationen zu Geschäftsanwendungen interessiert? Vielleicht wissen Sie nicht, wo Sie anfangen sollen, Microsoft Dynamics 365- und Power Platform-Anwendungen zu verwenden? Erfahren Sie, wie die Leistungsfähigkeit von Geschäftsanwendungen Ihr Unternehmen verändern kann. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 8 Stunden |
 | [Dynamics 365 und Power Platform-Grundlagen](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Sind Sie an Informationen zu Geschäftsanwendungen interessiert? Beginnen Sie mit diesem Lernpfad, um zu sehen, wie Dynamics 365-Apps verwendet werden. Informieren Sie sich über Cloudkonzepte, Power Platform und die ersten Schritte mit Dynamics 365-Apps. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 5.5 Stunden   |
-| [Starten Sie mit Apps für Finanzen und Betrieb](/learn/paths/get-started-finance-operations/) | Erfahren Sie, wie Finanz- und Betriebs-Apps Unternehmen dabei unterstützen, ihre globalen Finanzsysteme, operativen Geschäftsprozesse und rationalisierten Vorgänge zu verwalten, um schnelle und fundierte Entscheidungen zu treffen.   Als ersten Schritt in Ihrer Karriere bei der Arbeit mit Finanz- und Betriebs-Apps müssen Sie sich mit den Funktionen und dem Funktionsumfang vertraut machen, unabhängig von Ihrer gewünschten Rolle. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 2 Stunden |
+| [Starten Sie mit Finanz- und Betriebs-Apps](/learn/paths/get-started-finance-operations/) | Erfahren Sie, wie Finanz- und Betriebs-Apps Unternehmen dabei unterstützen, ihre globalen Finanzsysteme, operativen Geschäftsprozesse und rationalisierten Vorgänge zu verwalten, damit Mitarbeiter schnelle und fundierte Entscheidungen treffen können.   Der erste Schritt in Ihrer Karriere bei der Arbeit mit Finanz- und Betriebs-Apps besteht darin, sich mit den Funktionen und dem Funktionsumfang vertraut zu machen, unabhängig von Ihrer gewünschten Rolle. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 2 Stunden |
 | [Erste Schritte mit Dynamics 365 Intelligent Order Management](/learn/modules/get-started-intelligent-order-management/) | Mit Dynamics 365 Intelligent Order Management können Kunden die Orchestrierung von Aufträgen bis hin zur Auftragserfüllung verwalten. Diese Funktionen ermöglichen es Unternehmen, Auftragsflows über verschiedene Plattformen und Apps hinweg zu orchestrieren. | Kostenloses Online-Lernmodul in der eigenen Geschwindigkeit | 30 Minuten |
 | [Kurs MB-900T01-A: Dynamics 365-Grundlagen](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | Dieser Kurs macht den Kursteilnehmer mit Funktionen Dynamics 365 und Handelswert vertraut. Der Kurs deckt Dynamics 365-Anwendungen, die Power Platform, Cloudkonzepte, das Sicherheitsmodell und Lizenzierungsüberlegungen ab. | Von einem Kursleiter durchgeführtes persönliches oder Onlinetraining; Kosten variieren nach Regionen und Partner | 1 Tag |
 
@@ -39,8 +39,8 @@ Der folgende Katalog wurde aus Kernwissen zu bestimmten Domänen und vom Einfach
 
 | Inhalt | Description | Format | Length |
 |---------|-------------|--------|--------|
-| [Ihre Organisation in Finanz- und Betriebs-Apps konfigurieren](/learn/paths/configure-your-organization-finance-ops/) | Als funktionaler Berater, der mit Finanz- und Betriebs-Apps arbeitet, müssen Sie verstehen, wie Sie eine Organisation für den Debitor einrichten. Dieser Lernpfad zeigt Ihnen unter anderen Aufgaben, wie Sie juristischen Personen einrichten, Sicherheitseinstellungen implementieren, die Benutzeroberfläche für Benutzer personalisieren, mobile Apps entwerfen und erstellen und allgemeine Integrationen implementieren. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 12 Stunden  |
-| [Konfigurieren von und Arbeiten mit Analysen und Berichterstellung in Finanz- und Betriebs-Apps](/learn/paths/configure-analytics-reporting-finance-operations/) | Geschäftsführungskräfte können wichtige Entscheidungen in ihrem Unternehmen treffen, wenn sie genaue Einblicke in die zugrunde liegenden Finanz- und Betriebsdaten haben. Ein Geschäftsbenutzer kann das elektronische Berichterstellungstool auch ohne eine einzige Codezeile konfigurieren und verwenden, um neue gesetzliche Anforderungen zu übernehmen und Geschäftsdokumente im erforderlichen Format zu generieren, um Informationen elektronisch mit Regierungsbehörden, Banken und anderen Parteien auszutauschen. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 4 Stunden   |
+| [Konfigurieren Sie Ihre Organisation in Finanz- und Betriebs-Apps](/learn/paths/configure-your-organization-finance-ops/) | Als funktionaler Berater, der mit Finanz- und Betriebs-Apps arbeitet, müssen Sie verstehen, wie Sie eine Organisation für Ihren Debitor festlegen. Dieser Lernpfad zeigt Ihnen unter anderen Aufgaben, wie Sie juristischen Personen einrichten, Sicherheitseinstellungen implementieren, die Benutzeroberfläche für Benutzer personalisieren, mobile Apps entwerfen und erstellen und allgemeine Integrationen implementieren. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 12 Stunden  |
+| [Konfigurieren und arbeiten Sie mit Analysen und Berichten in Finanz- und Betriebs-Apps](/learn/paths/configure-analytics-reporting-finance-operations/) | Geschäftsführungskräfte können wichtige Entscheidungen in ihrem Unternehmen treffen, wenn sie genaue Einblicke in die zugrunde liegenden Finanz- und Betriebsdaten haben. Ein Geschäftsbenutzer kann das elektronische Berichterstellungstool auch ohne eine einzige Codezeile konfigurieren und verwenden, um neue gesetzliche Anforderungen zu übernehmen und Geschäftsdokumente im erforderlichen Format zu generieren, um Informationen elektronisch mit Regierungsbehörden, Banken und anderen Parteien auszutauschen. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 4 Stunden   |
 
 ## <a name="financial-management"></a>Finanzverwaltung<a name="financial-management"></a>
 

@@ -1,6 +1,6 @@
 ---
 title: Allgemeine Problembehandlung
-description: Dieser Artikel enthält allgemeine Informationen zur Problembehandlung für die Integration von dualem Schreiben zwischen Finanz- und Betriebs-Apps und Dataverse.
+description: Dieser Artikel enthält allgemeine Informationen zur Problembehandlung bei der Dual-write-Integration zwischen Finanz- und Betriebs-Apps und Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 04/18/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 620f6f999859eff0ccd8aeb1cff12ddd56fa9926
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2f263e331d23ce0ddf60a4abc2467513aa342445
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853654"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112363"
 ---
 # <a name="general-troubleshooting"></a>Allgemeine Problembehandlung
 
@@ -22,7 +22,7 @@ ms.locfileid: "8853654"
 
 
 
-Dieser Artikel enthält allgemeine Informationen zur Problembehandlung für die Integration von dualem Schreiben zwischen Finanz- und Betriebs-Apps und Dataverse.
+Dieser Artikel enthält allgemeine Informationen zur Problembehandlung bei der Dual-write-Integration zwischen Finanz- und Betriebs-Apps und Dataverse.
 
 > [!IMPORTANT]
 > Einige der in diesem Artikel behandelten Probleme erfordern möglicherweise entweder die Systemadministratorrolle oder Microsoft Azure Active Directory (Azure AD)-Anmeldeinformationen des Mandantenadministrators. Im Abschnitt zu jedem Problem wird erläutert, ob eine bestimmte Rolle oder Anmeldeinformationen erforderlich sind.
@@ -55,28 +55,28 @@ Um die Nachverfolgung anzuzeigen, führen Sie diese Schritte aus.
 
 Sie können den Inhalt der Ablaufverfolgungsprotokolle kopieren und in eine andere Anwendung wie Notepad oder andere Tools einfügen, um Protokolle oder Textdateien anzuzeigen und den gesamten Inhalt einfacher darstellen zu können. 
 
-## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Debug-Modus aktivieren, um Probleme mit der Live-Synchronisation in Apps für Finanzen und Betrieb zu beheben
+## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktivieren Sie den Debug-Modus, um Probleme mit der Live-Synchronisation in Finanz- und Betriebs-Apps zu beheben.
 
 **Erforderliche Rolle zum Anzeigen der Fehler:** System Administrator
 
-Duales Schreiben-Fehler, die ihren Ursprung in Dataverse haben, können in der Finance und Operations App auftreten. Um die ausführliche Protokollierung für die Fehler zu aktivieren, gehen Sie wie folgt vor:
+Dual-write-Fehler, die ihren Ursprung in Dataverse haben, können in der Finanz- und Betriebs-App erscheinen. Um die ausführliche Protokollierung für die Fehler zu aktivieren, gehen Sie wie folgt vor:
 
-1. Für alle Projektkonfigurationen in der Finance und Operations App gibt es ein Flag **IsDebugMode** in der Tabelle **DualWriteProjectConfiguration**.
-2. Öffnen Sie die **DualWriteProjectConfiguration** mit dem Excel-Addin. Um das Add-In zu verwenden, aktivieren Sie den Entwurfsmodus im Excel-Add-In Finance und Operations und fügen die **DualWriteProjectConfiguration** zum Blatt hinzu. Weitere Informationen finden Sie unter [Entitätsdaten mit Excel anzeigen und aktualisieren](../../office-integration/use-excel-add-in.md).
+1. Für alle Projektkonfigurationen in der Finanz- und Betriebs-App gibt es ein Flag **IsDebugMode** in der Tabelle **DualWriteProjectConfiguration**.
+2. Öffnen Sie die **DualWriteProjectConfiguration** mit dem Excel-Addin. Um das Add-in zu verwenden, aktivieren Sie den Entwurfsmodus im Excel-Add-in für Finanzen und Betrieb und fügen Sie die **DualWriteProjectConfiguration** zu dem Blatt hinzu. Weitere Informationen finden Sie unter [Entitätsdaten mit Excel anzeigen und aktualisieren](../../office-integration/use-excel-add-in.md).
 3. Legen Sie **IsDebugMode** auf dem Projekt auf **Ja** fest.
 4. Führen Sie das Szenario aus, das Fehler generiert.
 5. Die ausführlichen Protokolle werden in der Tabelle **DualWriteErrorLog** gespeichert.
 6. Um die Daten im Tabellenbrowser nachzuschlagen, verwenden Sie den folgenden Link: `https://999aos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`, ersetzen Sie `999` nach Bedarf.
 7. Aktualisieren Sie erneut nach [KB 4595434](https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=98e5dc124ac125c57ad633d885ac612aea3ddb8f4abf9d71ab3aa354f2e06cbe), das für Plattform-Updates 37 und später verfügbar ist. Wenn Sie diesen Fix installiert haben, werden im Debug-Modus mehr Protokolle erfasst.  
 
-## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Überprüfen Sie Synchronisierungsfehler auf der virtuellen Maschine für die Finance und Operations App
+## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Überprüfen Sie Synchronisierungsfehler auf der virtuellen Maschine für die Finanz- und Betriebs-App
 
 **Erforderliche Rolle zum Anzeigen der Fehler:** Systemadministrator
 
 1. Melden Sie sich bei Microsoft Dynamics Lifecycle Services (LCS) an.
 2. Öffnet das LCS-Projekt, das Sie ausgewählt haben, um das Testing für das duale Schreiben durchzuführen.
 3. Wählen Sie die Kachel **Cloud gehostete Umgebungen** aus.
-4. Verwenden Sie Remote Desktop, um sich bei der virtuellen Maschine (VM) für die Finance und Operations App anzumelden. Verwenden Sie das lokale Konte, das in LCS angezeigt wird.
+4. Verwenden Sie Remote Desktop, um sich bei der virtuellen Maschine (VM) für die Finanz- und Betriebs-App anzumelden. Verwenden Sie das lokale Konte, das in LCS angezeigt wird.
 5. Öffnen Sie nun die Ereignisanzeige.
 6. Wählen Sie **Anwendungs- und Dienstprotokolle \> Microsoft \> Dynamics \> AX-DualWriteSync \> Operativ**.
 7. Überprüfen Sie die Liste der letzten Fehler.
@@ -109,11 +109,11 @@ Cookies von Drittanbietern müssen in den Browsereinstellungen zugelassen werden
 1.  Navigieren Sie zu „Einstellungen -> Websiteberechtigungen -> Cookies und Websitedaten“.
 2.  Deaktivieren Sie „Cookies von Drittanbietern blockieren“.  
 
-## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Lösen Sie die Verknüpfung und verknüpfen Sie eine andere Dataverse-Umgebung aus einer Finance und Operations App
+## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Entkoppeln und verknüpfen Sie eine andere Dataverse-Umgebung von einer Finanz- und Betriebs-App
 
-**Benötigte Rolle zum Aufheben der Verknüpfung der Umgebung:** Systemadministrator für eine der Apps Finance und Operations und Dataverse.
+**Erforderliche Rolle zum Aufheben der Verknüpfung der Umgebung:** Systemadministrator für eine der Apps Finanzen und Betrieb und Dataverse.
 
-1. Melden Sie sich bei der Finance und Operations App an.
+1. Melden Sie sich bei der Finanz- und Betriebs-App an.
 2. Gehe zu **Arbeitsbereiche \> Datenmanagement** und wählen Sie die Kachel **Duales Schreiben**.
 3. Wählen Sie alle ausgeführten Zuordnungen aus, und wählen Sie **Beenden**.
 4. Wählen Sie **Verknüpfung für Umgebung aufheben** aus.
@@ -132,23 +132,23 @@ Um die Formularoption **Information** wieder zu aktivieren, führen Sie die folg
 3. Wählen Sie das Formular **Information** und klicken Sie auf **Sicherheitsrollen aktivieren**.
 4. Ändern Sie die Sicherheitseinstellung in **Anzeige für alle**.
 
-## <a name="how-to-ensure-data-integration-is-using-the-most-current-finance-and-operations-schema"></a>So stellen Sie sicher, dass die Datenintegration das aktuelle Finanz- und Betriebs-Apps-Schema verwendet
+## <a name="how-to-ensure-data-integration-is-using-the-most-current-finance-and-operations-schema"></a>Wie kann sichergestellt werden, dass die Datenintegration das aktuellste Finanzen und Betrieb Schema verwendet?
 
-Bei Ihrer Datenintegration können Datenprobleme auftreten, wenn nicht das aktuelle Schema verwendet wird. Die folgenden Schritte helfen Ihnen, die Entitätsliste in Finanz- und Betriebs-Apps und die Entitäten im Datenintegrator zu aktualisieren.
+Bei Ihrer Datenintegration können Datenprobleme auftreten, wenn nicht das aktuelle Schema verwendet wird. Die folgenden Schritte helfen Ihnen, die Liste der Entitäten in Finanz- und Betriebs-Apps und die Entitäten im Data Integrator zu aktualisieren.
 
-### <a name="refresh-entity-list-in-finance-and-operations-environment"></a>Entitätenliste in Finanz- und Betriebs-Apps-Umgebungen aktualisieren
-1.  Melden Sie sich bei Ihrer Finanz- und Betriebs-Apps-Umgebung an.
+### <a name="refresh-entity-list-in-finance-and-operations-environment"></a>Liste der Entitäten in der Finanz- und Betriebs-Umgebung aktualisieren
+1.  Melden Sie sich bei Ihrer Finanz- und Betriebs-Umgebung an.
 2.  Wählen Sie **Datenverwaltung** aus.
 3.  Wählen Sie in der Datenverwaltung **Frameworkparameter** aus.
 4.  Wählen Sie auf der Seite **Parameter für das Datenimport/-export-Framework** die Registerkarte **Entitätseinstellungen** und dann **Entitätsliste aktualisieren** aus. Je nach Anzahl der beteiligten Entitäten kann die Aktualisierung länger als 30 Minuten dauern.
-5.  Navigieren Sie zu **Datenverwaltung**, und wählen Sie **Datenentitäten** aus, um zu überprüfen, ob die erwarteten Entitäten aufgelistet sind. Wenn die erwarteten Entitäten nicht aufgeführt sind, überprüfen Sie, ob die Entitäten in Ihrer Finanz- und Betriebs-Apps-Umgebung angezeigt werden, und stellen Sie die fehlenden Entitäten nach Bedarf wieder her.
+5.  Navigieren Sie zu **Datenverwaltung**, und wählen Sie **Datenentitäten** aus, um zu überprüfen, ob die erwarteten Entitäten aufgelistet sind. Wenn die erwarteten Entitäten nicht aufgelistet sind, überprüfen Sie, ob die Entitäten in Ihrer Finanz- und Betriebs-Umgebung vorhanden sind und stellen Sie die fehlenden Entitäten bei Bedarf wieder her.
 
 #### <a name="if-the-refresh-fails-to-resolve-the-issue-delete-and-re-add-the-entities"></a>Entitäten löschen und erneut hinzufügen, wenn das Problem durch die Aktualisierung nicht behoben werden kann
 
 > [!NOTE]
 > Möglicherweise müssen Sie vor dem Löschen alle Verarbeitungsgruppen stoppen, die die Entitäten aktiv verwenden.
 
-1.  Wählen Sie **Datenverwaltung** in Ihrer Finanz- und Betriebs-Apps-Umgebung und dann **Datenentitäten** aus.
+1.  Wählen Sie **Datenverwaltung** in Ihrer Finanz- und Betriebs-Umgebung und wählen Sie **Daten Entitäten**.
 2.  Suchen Sie nach Entitäten mit Problemen, und notieren Sie sich die Zielentität, die Staging-Tabelle, den Entitätsnamen und andere Einstellungen. Löschen Sie die Entität oder Entitäten aus der Liste.
 3.  Wählen Sie **Neu** aus, und fügen Sie die Entität oder Entitäten mit den Daten aus Schritt 2 erneut hinzu. 
 
@@ -174,3 +174,4 @@ Das Support-Team muss möglicherweise Netzwerkspuren überprüfen, um einige Pro
 4. Wählen Sie **Speichern**, um die Ergebnisse als HAR zu exportieren.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

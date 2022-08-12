@@ -10,18 +10,16 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 4d3779d7d335a903d7eabfadfed79e47652c6835
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4f860e0c64573ccfe60e4854697c1e06feeed0c2
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897660"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135388"
 ---
 # <a name="global-inventory-accounting-ledger"></a>Globale Bestandsbuchhaltung Sachkonto
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
 
 Die Globale Bestandsbuchhaltung hat ihre eigenen Sachkonten festgelegt. Jedes Mal, wenn eine bestandsbezogene Transaktion für eine relevante juristische Entität verarbeitet wird, kann das System diese Transaktion in einer beliebigen Anzahl von Sachkonten der Globalen Bestandsbuchhaltung verbuchen.
 

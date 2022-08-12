@@ -1,6 +1,6 @@
 ---
 title: Übersicht über den Optimierungsratgeber
-description: In diesem Artikel wird beschrieben, wie Sie Optimierungsratgeber verwenden können, um eine optimale Konfiguration von Finance + Operations zu gewährleisten.
+description: Dieser Artikel beschreibt, wie Sie den Optimierungsberater verwenden können, um eine optimale Konfiguration von Finanzen und Betrieb zu gewährleisten.
 author: roxanadiaconu
 ms.date: 07/23/2019
 ms.topic: overview
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: sericks
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 1dd66e27098b4125b03c4fe6b52825afe2ff34cf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fb71453c37572c4956d98d4309d3526a7fbc1124
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865860"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109039"
 ---
 # <a name="optimization-advisor-overview"></a>Übersicht über den Optimierungsratgeber
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Artikel wird beschrieben, wie Sie Optimierungsratgeber verwenden können, um eine optimale Konfiguration von Finance + Operations zu gewährleisten.
+Dieser Artikel beschreibt, wie Sie den Optimierungsberater verwenden können, um eine optimale Konfiguration von Finanzen und Betrieb zu gewährleisten.
 
 ## <a name="overview"></a>Übersicht
 
@@ -44,7 +44,7 @@ Standardsicherheits-Richtlinien gelten für Optimierungsverkaufschancen. Beispie
 
 Wenn Sie für manche Optimierungsverkaufschancen Maßnahmen ergreifen, berechnet das System die Auswirkungen der Verkaufschance in Bezug auf die Verringerung in der Laufzeit von Geschäftsprozessen. Leider ist diese Funktion nicht für alle Optimierungsverkaufschancen verfügbar.
 
-Für weitere Informationen zum Optimierungsratgeber sehen Sie sich das kurze [Optimierungsratgeber in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ)-Video an.
+Um mehr über den Optimierungsberater zu erfahren, sehen Sie sich das kurze [Optimierungsberater in Dynamics 365 Finance](https://www.youtube.com/watch?v=MRsAzgFCUSQ) Video an.
 
 ## <a name="optimization-rules"></a>Optimierungsregeln
 
@@ -90,7 +90,7 @@ Um die Bewertung bestimmter Regeln zu deaktivieren, wählen Sie die Verkaufschan
 
 [Regeln für Optimierungsratgeber erstellen](./create-rules-optimization-advisor.md)
 
-[Optimierungsratgeber in Dynamics 365 for Finance and Operations (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
+[Optimierungsberater in Dynamics 365 Finance (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

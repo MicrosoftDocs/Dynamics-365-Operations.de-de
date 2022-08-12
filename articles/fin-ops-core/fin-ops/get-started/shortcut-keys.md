@@ -1,8 +1,8 @@
 ---
 title: Tastenkombinationen
-description: Dieser Artikel bietet einen Überblick über die Tastenkombinationen, die Sie bei der Arbeit mit Apps für Finanzen und Betrieb verwenden können.
+description: Dieser Artikel bietet einen Überblick über die Tastenkombinationen, die Sie bei der Arbeit mit Finanz- und Betriebs-Apps verwenden können.
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 07/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f0f833e3a6d45329fd8a69af658f392df32e4db
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 67e1904807dfe5122de3d3ead97c2e2c11ed213d
+ms.sourcegitcommit: bd2d6a86a7fd4b4f6f86656998f7a8844f949e42
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866116"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9140438"
 ---
 # <a name="keyboard-shortcuts"></a>Tastenkombinationen
 
@@ -27,7 +27,7 @@ ms.locfileid: "8866116"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Tastenkombinationen können Ihnen helfen, Daten in Apps für Finanzen und Betrieb schnell und effizient einzugeben. 
+Tastenkombinationen können Ihnen helfen, Daten in Finanz- und Betriebs-Apps schnell und effizient einzugeben. 
 
 > [!NOTE]
 > Die hier beschriebenen Tastenkürzel beziehen sich auf das US-Tastaturlayout. Möglicherweise entsprechen die Tasten anderer Tastaturlayouts nicht exakt den Tasten auf der US-Tastatur.
@@ -197,6 +197,7 @@ Benutzer können zur Zeit verfügbaren Tastenkombinationen direkt über die Benu
 | Schließen der Navigationsliste auf dem Formular "Details" (mit Fokus in der Navigationsliste) | ESC                        |
 | Zum Hauptseiteninhalt wechseln (mit Fokus auf einem anderen Bereich)                    | ALT+M,M                    |
 | Zum Bereich „Infobox” wechseln (was möglicherweise einschließt, ihn zu öffnen)                       | ALT+M,B oder STRG+F2         |
+| Zur nächsten Funktionslegende wechseln                                              | Alt+M,C                    |
 
 > [!NOTE]
 > Die in Version 10.0.26 eingeführte Funktion **Streamline-Tabbing-Verhalten in ganzseitigen Formularen** lässt es zu, dass Benutzer mit der Tabulatortaste durch alle Bereiche einer Seite navigieren können, ohne dass die Maus oder ein spezielles Tastaturkürzel für den Wechsel zwischen den Bereichen erforderlich ist. Sie können weiterhin die vorhandenen Tastenkombinationen (z.B. Alt+M) verwenden, um schnell zwischen den Regionen auf einer Seite zu wechseln.
@@ -259,13 +260,14 @@ Benutzer können zur Zeit verfügbaren Tastenkombinationen direkt über die Benu
 | Zeigen Sie mehr/weniger Informationen in der animierten Popup-Eingabeaufforderung an (während Sie einen Aufgabenleitfaden abspielen) | Alt+R,M                    |
 
 ## <a name="focus-management"></a>Fokusverwaltung 
-Die Fokusverwaltung beschreibt, wie der Benutzerfokus in einer Anwendung gehandhabt wird. Apps für Finanzen und Betrieb verfügen, insbesondere bei Dateneingabeszenarien, über spezialisierte Fokusverhalten, die die Benutzerproduktivität optimieren sollen. Das Fokusverhalten umfasst Folgendes:  
+Die Fokusverwaltung beschreibt, wie der Benutzerfokus in einer Anwendung gehandhabt wird. Finanz- und Betriebs-Apps verfügen, insbesondere bei Dateneingabeszenarien, über spezialisierte Fokusverhalten, die die Benutzerproduktivität optimieren sollen. Das Fokusverhalten umfasst Folgendes:  
 
 -  Wenn eine Seite geladen wird, hat das erste bearbeitbare Eingabesteuerelement auf der Seite den Fokus und kann Benutzereingaben sofort annehmen. Wenn auf der Seite kein bearbeitbares Eingabesteuerelement vorhanden ist, ist die Fallbackoption für den anfänglichen Fokus das erste Eingabesteuerelement auf der Seite, gefolgt vom ersten fokussierbaren Steuerelement auf der Seite.   
--  Wenn eine Schaltfläche ausgewählt wird, wird die Aktion normalerweise verarbeitet und der Fokus kann auf die Seite zurückkehren. In diesem Fall kehrt der Fokus in der Regel zum ausgewählten Schaltflächensteuerelement zurück. Dies gilt für Apps für Finanzen und Betrieb, **außer** wenn sich die Schaltfläche im Aktivitätsbereich oder auf einer Symbolleiste befindet. In diesen Fällen kehrt der Fokus nach Abschluss der Aktion zum letzten Steuerelement *außerhalb* des Aktivitätsbereichs (oder der Symbolleiste) zurück, der den Fokus hatte, bevor die Schaltfläche ausgewählt wurde.
+-  Wenn eine Schaltfläche ausgewählt wird, wird die Aktion normalerweise verarbeitet und der Fokus kann auf die Seite zurückkehren. In diesem Fall kehrt der Fokus in der Regel zum ausgewählten Schaltflächensteuerelement zurück. Dies gilt für Finanz- und Betriebs-Apps, **außer** wenn sich die Schaltfläche im Aktivitätsbereich oder auf einer Symbolleiste befindet. In diesen Fällen kehrt der Fokus nach Abschluss der Aktion zum letzten Steuerelement *außerhalb* des Aktivitätsbereichs (oder der Symbolleiste) zurück, der den Fokus hatte, bevor die Schaltfläche ausgewählt wurde.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Tastenkombinationen für eine Analyse für fehlende Konten](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

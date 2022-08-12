@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: aa0092f65461b6ebeea6649f48c0cf1c07cc936d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2fd29d747c7141b051e6c7c68db94abfd849f947
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866253"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123495"
 ---
 # <a name="make-the-chart-of-accounts-delimiter-unique"></a>Erstellen eines eindeutigen Trennzeichens für den Kontenplan
 
 [!include [banner](../includes/banner.md)]
 
-In Microsoft Dynamics AX 2012 können Sie die gleichen Trennzeichen für den Kontenplan und Dimensionswerte verwenden. In der aktuellen Version von Finance and Operations können Sie nicht dasselbe Trennzeichen für den Kontenplan und die Dimensionsnamen oder -werte haben. Wenn ein Trennzeichen doppelt vorkommt, können Sie es nach dem Upgrade ändern. 
+In Microsoft Dynamics AX 2012 können Sie die gleichen Trennzeichen für den Kontenplan und Dimensionswerte verwenden. In den aktuellen Versionen von Finanzen und Betrieb können Sie für den Kontenplan und die Namen bzw. Werte der Dimensionen nicht dasselbe Begrenzungszeichen verwenden. Wenn ein Trennzeichen doppelt vorkommt, können Sie es nach dem Upgrade ändern. 
 
 ## <a name="update-delimiter"></a>Trennzeichen aktualisieren
 Bei einem Konflikt mit dem Kontenplan kann das Kontenplan-Trennzeichen und das Projekt-/Unterprojekt-ID-Format geändert werden. Keine anderen Dimensionstrennzeichen können geändert werden. 
@@ -39,3 +39,4 @@ Bei einem Konflikt mit dem Kontenplan kann das Kontenplan-Trennzeichen und das P
 Wenn Trennzeichen in Ihrer aktualisierten Umgebung Konflikte verursachen, kommt es möglicherweise zu einer Instabilität, wenn Werte in einem segmentierten Eingabesteuerelement oder einem Dimensionseingabe-Steuerelement eingegeben werden. Das bedeutet, dass Sie immer Suchen oder ein Flyoutmenü verwenden müssen, wenn Sie Konten- und Dimensionskombinationen eingeben.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

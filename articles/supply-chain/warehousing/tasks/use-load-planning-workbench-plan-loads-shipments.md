@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ad9c91051c1a1140661c93d7c5e86a78de5ec3f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0e53b7667dd4589a7c6c14b8aaf8ba51017eee0d
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8877333"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068329"
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a>Ladungen und Lieferungen mithilfe der Ladungsplanungs-Workbench planen
 
@@ -38,8 +38,8 @@ In diesem Artikel wird gezeigt, wie die Ladungsplanungsworkbench verwendet wird,
 7. Wählen Sie den Artikel **A0001** aus. **A0001** ist für die Transportverwaltung aktiviert.  
 8. Wählen Sie im Feld **Standort** die Dropdown-Schaltfläche, um die Suche zu öffnen, und wählen Sie dann einen Artikel aus.
 9. Geben Sie im Feld **Menge** eine Zahl ein.
-10. Geben Sie im Feld **Lagerort** „24“ für dieses Beispiel ein. Dieser Lagerort wird für Transportverwaltung und von erweiterten Lagerortverwaltung aktiviert.  
-11. Wählen Sie **Speichern**.
+10. Geben Sie im Feld **Lagerort** „24“ für dieses Beispiel ein. Dieses Lager ist für die Transportverwaltung und die Prozesse der Lagerverwaltung (WMS) aktiviert.  
+11. Wählen Sie **Speichern** aus.
 12. Schließen Sie die Seite.
 
 ## <a name="create-a-new-load"></a>Erstellen Sie eine neue Auslastung

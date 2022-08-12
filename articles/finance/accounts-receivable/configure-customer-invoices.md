@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 93d25a260cfc94e898ef50c618b2cbc640c963bc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 04c26eec8be61d60908bef67c75958287e7e1a01
+ms.sourcegitcommit: 85141b21ac90f3db1b378c21f9c7f3d8f74e182f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876324"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "9129511"
 ---
 # <a name="create-a-customer-invoice"></a>Erstellen einer Debitorenrechnung
 
@@ -76,7 +76,7 @@ Durch Buchen der Rechnung wird die Menge des **Rechnungsrestbetrags** für jeden
 
 Die Lagerbuchungen werden mit der Rechnungsnummer aktualisiert, und der Status im Feld **Positionsstatus** des Auftrags wird zu **In Rechnung gestellt** geändert. 
 
-Auf der Listenseite **Alle Aufträge** können Sie den Status des Auftrags anzeigen.
+Sehen Sie sich den Status der Verkaufsaufträge auf der **Alle Verkaufsaufträge** Listenseite an.
 
 ## <a name="consolidate-sales-orders-or-packing-slips-for-posting"></a>Konsolidieren von Aufträgen oder Lieferscheinen für das Buchen
 Verwenden Sie diesen Prozess, wenn eine oder mehrere Aufträge fakturierungsbereit sind, und Sie möchten sie in einer einzelnen Rechnung konsolidieren. 
@@ -90,6 +90,14 @@ Sie können die Aufteilung von Kundenrechnungen für Aufträge nach Standort ode
 
 ## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price-and-no-cost"></a>Auf das Umsatzkonto für Auftragspositionen ohne Preise und ohne Kosten buchen
 Sie haben die Möglichkeit, das **Umsatzerlös**-Konto im **Hauptbuch** für Auftragspositionen ohne Preis und Kosten zu aktualisieren. Um diese Informationen einzurichten oder anzuzeigen, gehen Sie zum Parameter **Auf das Umsatzkonto für Auftragsrechnungen mit Nullpreisen und Nullkosten buchen** auf der **Hauptbuch und Umsatzsteuer**-Registerkarte der **Debitorenparameter**-Seite. (**Debitoren > Einrichtung > Debitorenparameter**). Wählen Sie **Ja**, um das **Umsatzerlös**-Konto für Auftragsrechnungspositionen, die keinen Preis und keine Kosten haben, zu aktualisieren. Wenn diese Option ausgewählt ist, enthält der Beleg 0,00 Einträge für die Buchungstypen **Debitorensaldo** und **Umsatzerlös**. Auf der Parameterseite **Bestandsbuchung** wird ein Umsatzerlöskonto definiert (auf der Kontodefinition-Registerkarte **Auftrag**). Wenn diese Option nicht ausgewählt ist, werden Positionen, die keine Preis- oder Kosteninformationen enthalten, nicht an das **Umsatzerlös**-Konto gebucht. Stattdessen enthält der Beleg einen Eintrag von 0,00 für den Buchungstyp **Debitorensaldo**.
+
+## <a name="line-creation-sequence-number-information"></a>Informationen zur Sequenznummer der Zeilenerstellung
+Wenn Sie Debitor-Rechnungszeilen buchen, haben Sie die Möglichkeit, Sequenznummern für die Erstellung der Zeilen zu erstellen. Die Sequenznummern für die Erstellung von Zeilen werden während des Buchungsvorgangs zugewiesen. Indem Sie eine nicht fortlaufende Nummerierung zulassen, können Sie die Leistung bei der Buchung von Debitor-Rechnungen verbessern. Die Sequenznummern für die Zeilenerstellung können von Drittanbieter-Integrationen verwendet werden, die eine sequenzielle Reihenfolge erwarten. Wenden Sie sich an Ihre IT-Abteilung, wenn es um Erweiterungen geht, die mit Sequenznummern für die Zeilenerstellung integriert werden können.
+
+Um diese Informationen einzurichten oder anzuzeigen, legen Sie auf der Seite **Parameter für Debitoren** auf der Registerkarte **Aktualisierungen** die Option **Sequenzielle Zeilennummern beim Buchen von Debitor-Rechnungszeilen zuweisen** fest:
+
+- Legen Sie die Option auf **Nein** fest, um eine nicht-sequenzielle Nummerierung für die Sequenznummern der Zeilenerstellung zu verwenden.
+- Legen Sie die Option auf **Ja** fest, um eine fortlaufende Nummerierung zu verwenden. Sie müssen die Option auf **Ja** für juristische Entitäten festlegen, die eine Hauptadresse in Italien haben. Sie müssen sie auch auf **Ja** festlegen, wenn der **CustInvoiceTransRandLineCreationSeqNumFlight** Flug deaktiviert ist.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Zusätzliche Einstellungen, die das Buchungsverhalten ändern
 Die folgenden Felder ändern das Verhalten des Buchungsprozesses.

@@ -1,6 +1,6 @@
 ---
 title: Integrierte Masterdaten von Debitoren
-description: In diesem Artikel wird die Integration von Debitorendaten zwischen Finanz- und Betriebs-Apps und Dataverse beschrieben.
+description: Dieser Artikel beschreibt die Integration von Debitorendaten zwischen Finanzen und Betrieb und Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 042042bb19b32d3c96b4e0c8521a8b1d65e7ab22
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1b16eab5c107a3176f0890372d397947698e71de
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890455"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111723"
 ---
 # <a name="integrated-customer-master"></a>Integrierte Masterdaten von Debitoren
 
@@ -30,9 +30,9 @@ Kundendaten können in mehr als einer Dynamics 365 Anwendung verwaltet werden. B
 
 ![Debitorendatenfluss.](media/dual-write-customer-data-flow.png)
 
-Debitoren können in zwei Typen unterteilt werden: kommerzielle Debitoren/Unternehmensdebitoren und Verbraucher/Endbenutzer. Diese beiden Arten von Debitoren werden in Finance and Operations and Dataverse unterschiedlich gespeichert und verarbeitet.
+Debitoren können in zwei Typen unterteilt werden: kommerzielle Debitoren/Unternehmensdebitoren und Verbraucher/Endbenutzer. Diese beiden Arten von Debitor werden in Finanzen und Betrieb und Dataverse unterschiedlich gespeichert und behandelt.
 
-In Finance und Operations werden sowohl gewerbliche/organisatorische Kunden als auch Verbraucher/Endbenutzer in einer einzigen Tabelle mit dem Namen **CustTable** (CustCustomerV3Entity) verwaltet und anhand des Attributs **Type** klassifiziert. (Wenn **Typ** auf **Organisation** festgelegt ist, ist der Debitor ein kommerzieller Debitor/Unternehmensdebitor, und wenn **Typ** auf **Person** festgelegt ist, so ist der Debitor ein Verbraucher/Endbenutzer.) Die primären Kontaktpersoninformationen werden über die SMMContactPersonEntity-Tabelle verarbeitet.
+In Finanzen und Betrieb werden sowohl gewerbliche/organisatorische Debitor als auch Verbraucher/Endbenutzer in einer einzigen Tabelle mit dem Namen **CustTable** (CustCustomerV3Entity) verwaltet und anhand des Attributs **Type** klassifiziert. (Wenn **Typ** auf **Organisation** festgelegt ist, ist der Debitor ein kommerzieller Debitor/Unternehmensdebitor, und wenn **Typ** auf **Person** festgelegt ist, so ist der Debitor ein Verbraucher/Endbenutzer.) Die primären Kontaktpersoninformationen werden über die SMMContactPersonEntity-Tabelle verarbeitet.
 
 In Dataverse werden kommerzielle Debitoren/Unternehmensdebitoren in der Kontotabelle verwaltet und als Debitoren identifiziert, wenn das **RelationshipType**-Attribut auf **Debitor** festgelegt ist. Sowohl Verbraucher/Endbenutzer als auch die Kontaktperson werden von der Kontakttabelle dargestellt. Um eine klare Trennung zwischen einem Verbraucher/Endbenutzer und einer Kontaktperson zu haben, weist die **Kontakt**-Tabelle eine boolesche Markierung mit dem Namen **Verkäuflich** auf. Wenn **Verkäuflich** auf **Wahr** festgelegt ist, ist der Kontakt ein Verbraucher/Endbenutzer, und Angebote und Bestellungen können für diesen Kontakt erstellt werden. Wenn **Verkäuflich** auf **Falsch** festgelegt ist, ist der Kontakt nur eine primäre Kontaktperson eines Debitors.
 
@@ -57,3 +57,4 @@ Finanz- und Betriebs-Apps | Customer Engagement-Apps         | Beschreibung
 [Zahlungsbedingungen](mapping-reference.md#161) | msdyn_paymentterms | Diese Vorlage synchronisiert die Referenzdaten für Zahlungsbedingungen sowohl für Debitoren als auch für Kreditoren.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

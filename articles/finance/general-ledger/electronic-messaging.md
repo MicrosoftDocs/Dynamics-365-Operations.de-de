@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: cf9ee77b2588283f0b34f2099d6f8d78e15a5af5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4e765c6d56e0ab6d209c27a70fd4b7e52273c103
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8934682"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069879"
 ---
 # <a name="electronic-messaging"></a>Elektronisches Messaging
 
@@ -76,7 +76,7 @@ Die folgende Tabelle enthält Informationen zu einigen länderspezifischen recht
 |-------------|--------------|------------------------|
 | Spanien       | [Sofortige Bereitstellung von Informationen zur MwSt. (Suministro Inmediato de Información del IVA, SII)](../localizations/emea-esp-sii.md) | |
 | Ungarn     | [Online-Fakturierungssystem](../localizations/emea-hun-online-invoicing.md) | |
-| Vereinigtes Königreich | [Digitale Steuer (MTD) – Abgabe der Mehrwertsteuerklärung](../localizations/emea-gbr-mtd-vat-integration.md) | [Finance and Operations: digitale Steuer im Vereinigten Königreich – Mehrwertsteuererklärung in Dynamics 365](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-uk-digital-tax-vat-declaration-in-dynamics-365) |
+| Vereinigtes Königreich | [Digitale Steuer (MTD) – Abgabe der Mehrwertsteuerklärung](../localizations/emea-gbr-mtd-vat-integration.md) | [Finanzen und Betrieb: UK Digital Tax – MwSt.-Erklärung in Dynamics 365](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-uk-digital-tax-vat-declaration-in-dynamics-365) |
 | Litauen   | [i.SAF-Berichterstattung](../localizations/emea-ltu-isaf.md) | |
 | Polen      | [Mehrwertsteuererklärung mit Registern (JPK_V7M, VDEK)](../localizations/emea-pol-vdek.md) | [Dynamics 365 Finance: SAF/JPK-Umsatzsteuerprüfungsregister](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-saf-jpk-vat-audit-registers-june-4-2020) |
 | Niederlande | [MwSt.-Erklärung für die Niederlande](../localizations/emea-nl-vat-declaration-netherlands.md) | |
@@ -97,4 +97,5 @@ Die folgende Tabelle enthält Informationen zu einigen länderspezifischen recht
 | Schweiz | [Mehrwertsteuererklärung (Schweiz)](../localizations/emea-che-vat-declaration-switzerland.md) | |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 520c8b32099024e9a9619a6ecdcd3ba7b97c7ecf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 89175763357f4309c4eb7874d0068586c5d9e726
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856917"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123947"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Erweiterter Filter- und Abfragesyntax
 
@@ -122,9 +122,9 @@ ms.locfileid: "8856917"
 <td>Zwei aufeinanderfolgende doppelte Anführungszeichen (<strong>""</strong>) finden Zeilen ohne Wert für die aktuelle Spalte.</td>
 </tr>
 <tr>
-<td>(<span class="code">Abfrage von Finance und Operations</span>) (Finance und Operations-Abfrage in Klammern)</td>
+<td>(<span class="code">Abfrage von Finanzen und Betrieb</span>) (Finanzen und Betrieb-Abfrage zwischen Klammern)</td>
 <td>Übereinstimmung mit einer definierten Abfrage</td>
-<td>Geben Sie eine Abfrage als SQL-Anweisung zwischen Klammern ein und verwenden Sie dabei die Abfragesprache Finance und Operations.</td>
+<td>Geben Sie eine Abfrage als SQL-Anweisung zwischen Klammern ein und verwenden Sie dabei die Abfragesprache für Finanzen und Betrieb.</td>
   <td><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
        als Syntaxbeispiel für eine Filterbedingung auf ein Feld aus der Stammdatensammlung sowie ein Feld aus einer anderen Datenquelle (für die Seite Alle Kunden)</td>
 </tr>

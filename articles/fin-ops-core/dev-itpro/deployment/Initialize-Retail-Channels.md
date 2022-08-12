@@ -1,22 +1,22 @@
 ---
 title: Commerce Scale Unit (Cloud) initialisieren
 description: Diese Artikel erklärt, wie Sie die Commerce Scale Unit (Cloud) in Microsoft Dynamics 365 Commerce initialisieren.
-author: AamirAllaq
-ms.date: 06/03/2022
+author: jashanno
+ms.date: 07/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: aamiral
+ms.author: jashanno
 ms.search.validFrom: 2018-4-30
-ms.openlocfilehash: 969dd220a7b73a676b9cf5ac26223ebd9b3f2296
-ms.sourcegitcommit: ddcb62bb5fbf26a1178c2bb1aec45a3d2362339e
+ms.openlocfilehash: 93fbf2893fecc7b731f946797907bce4f8448309
+ms.sourcegitcommit: 8032d6275e6d9994ef9759ee16e743b483f7689e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "8942851"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "9183362"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Commerce Scale Unit (Cloud) initialisieren
 
@@ -51,30 +51,30 @@ Die Commerce Scale Unit steht in den folgenden Regionen zum Bereitstellen zur Ve
 
 | Globaler Standort | Region              | Verfügbarkeit        | Kommentare                  |
 |-----------------|---------------------|---------------------|---------------------------|
-| AMERICAS        | USA, Osten             | Allgemein verfügbar |                           |
-| AMERICAS        | USA, Osten 2           | Allgemein verfügbar |                           |
-| AMERICAS        | USA, Norden-Mitte    | Begrenzte Kapazität    |                           |
-| AMERICAS        | USA, Süden-Mitte    | Begrenzte Kapazität    |                           |
-| AMERICAS        | USA, Mitte          | Allgemein verfügbar |                           |
-| AMERICAS        | USA, Westen             | Allgemein verfügbar |                           |
-| AMERICAS        | West US 2           | Allgemein verfügbar |                           |
-| AMERICAS        | Kanada Mitte      | Begrenzte Kapazität    |                           |
-| AMERICAS        | Kanada Ost         | Begrenzte Kapazität    |                           |
-| AMERICAS        | West Central US     | Begrenzte Kapazität    |                           |
-| APAC            | Australien, Osten      | Allgemein verfügbar |                           |
-| APAC            | Asien, Südosten      | Kapazität eingeschränkt | Keine Bereitstellungen erlaubt    |
-| APAC            | Japan, Osten          | Allgemein verfügbar |                           |
-| APAC            | Japan, Westen          | Allgemein verfügbar |                           |
-| APAC            | Australien, Südosten | Allgemein verfügbar |                           |
-| APAC            | Asien, Osten           | Begrenzte Kapazität    |                           |
-| APAC            | Indien Süd         | Kapazität eingeschränkt | Keine Bereitstellungen erlaubt    |
-| APAC            | Indien Zentral       | Begrenzte Kapazität    | Genehmigungsprozess erforderlich |
-| EMEA            | Europa, Westen         | Allgemein verfügbar |                           |
-| EMEA            | Europa, Norden        | Allgemein verfügbar |                           |
-| EMEA            | UK Süd            | Begrenzte Kapazität    |                           |
-| EMEA            | UK West             | Begrenzte Kapazität    |                           |
-| Schweiz     | Schweiz, Norden   | Begrenzte Kapazität    | Genehmigungsprozess erforderlich |
-| VAE             | VAE, Norden           | Begrenzte Kapazität    | Genehmigungsprozess erforderlich |
+| AMERICAS        | USA, Osten             | Allgemein verfügbar |  Keine Kommentare.                         |
+| AMERICAS        | USA, Osten 2           | Allgemein verfügbar |  Keine Kommentare.                          |
+| AMERICAS        | USA, Norden-Mitte    | Begrenzte Kapazität    |  Keine Kommentare.                            |
+| AMERICAS        | USA, Süden-Mitte    | Begrenzte Kapazität    |  Keine Kommentare.                            |
+| AMERICAS        | USA, Mitte          | Allgemein verfügbar |  Keine Kommentare.                            |
+| AMERICAS        | USA, Westen             | Allgemein verfügbar |  Keine Kommentare.                            |
+| AMERICAS        | USA, Westen 2           | Allgemein verfügbar |  Keine Kommentare.                            |
+| AMERICAS        | Kanada, Mitte      | Begrenzte Kapazität    |  Keine Kommentare.                            |
+| AMERICAS        | Kanada, Osten         | Begrenzte Kapazität    |   Keine Kommentare.                           |
+| AMERICAS        | USA, Westen-Mitte     | Begrenzte Kapazität    |   Keine Kommentare.                           |
+| APAC            | Australien, Osten      | Allgemein verfügbar |   Keine Kommentare.                           |
+| APAC            | Asien, Südosten      | Kapazität eingeschränkt | Keine Bereitstellungen zugelassen.    |
+| APAC            | Japan, Osten          | Allgemein verfügbar |  Keine Kommentare.                            |
+| APAC            | Japan, Westen          | Allgemein verfügbar |   Keine Kommentare.                           |
+| APAC            | Australien, Südosten | Allgemein verfügbar |   Keine Kommentare.                           |
+| APAC            | Asien, Osten           | Begrenzte Kapazität    |   Keine Kommentare.                           |
+| APAC            | Indien Süd         | Kapazität eingeschränkt | Keine Bereitstellungen zugelassen.    |
+| APAC            | Indien Zentral       | Begrenzte Kapazität    | Erfordert einen Genehmigungsprozess. |
+| EMEA            | Europa, Westen         | Begrenzte Kapazität    | Zur Zeit nicht in LCS verfügbar. |
+| EMEA            | Europa, Norden        | Begrenzte Kapazität    | Zur Zeit nicht in LCS verfügbar. |
+| EMEA            | Vereinigtes Königreich (United Kingdom), Süden            | Allgemein verfügbar |    Keine Kommentare.                          |
+| EMEA            | Vereinigtes Königreich (United Kingdom), Westen             | Allgemein verfügbar |    Keine Kommentare.                          |
+| Schweiz     | Schweiz, Norden   | Begrenzte Kapazität    | Erfordert einen Genehmigungsprozess. |
+| VAE             | VAE, Norden           | Begrenzte Kapazität    | Erfordert einen Genehmigungsprozess. |
 
 Die Bereitstellungskapazität in Regionen mit begrenzter Kapazität ist extrem eingeschränkt. Anträge auf Bereitstellen werden von Fall zu Fall geprüft. Wenn Sie einen zwingenden geschäftlichen Bedarf für die Bereitstellung in Regionen mit begrenzter Kapazität haben, können Sie eine Supportanfrage stellen, um auf die Warteliste gesetzt zu werden. Bereiche mit eingeschränkter Kapazität erlauben derzeit keine Bereitstellung von Commerce Scale Units. 
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: f15ac24e5c32a42863cac8a9c9754c95aa4ff734
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 11a4b1667e3d97b651b8019c9dbe577ab30aed67
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868697"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068198"
 ---
 # <a name="my-team-mobile-workspace"></a>Mobiler Arbeitsbereich für mein Team
 
@@ -26,7 +26,7 @@ ms.locfileid: "8868697"
 
 Dieser Artikel enthält Informationen zum mobilen Arbeitsbereich **Mein Team**. Mit dem Arbeitsbereich können Manager ihre eigenen Mitarbeiter und erweitertes Personal anzeigen. Sie können auch Lob an Personen innerhalb der Mitarbeitergruppe senden.
 
-Dieser mobile Arbeitsbereich soll mit der Finance and Operations-Mobile-App verwendet werden.
+Dieser mobile Arbeitsbereich ist für die Verwendung mit der Finanzen und Betrieb Mobile-App vorgesehen.
 
 ## <a name="overview"></a>Übersicht 
 Der mobile Arbeitsbereich **Mein Team** ermöglicht Managern, folgende Aufgaben auszuführen:
@@ -50,12 +50,12 @@ Bevor Sie diesen mobilen Arbeitsbereich verwenden können, müssen die folgenden
 <tbody>
 <tr class="odd">
 <td>Eines der folgenden Produkte muss in der Organisation bereitgestellt werden:
-<ul><li>A Finanz- und Betriebs-App</li>
+<ul><li>Eine Finanz- und Betriebs-App</li>
 <li>Microsoft Dynamics 365 Human Resources</li>
 </ul>
 </td>
 <td>Systemadministrator</td>
-<td>Wenn keine Finanz- und Betriebs-App in der Organisation bereitgestellt wurde, finden Sie Informationen unter <a href="../deployment/deploy-demo-environment.md">Eine Demoumgebung bereitstellen</a>. Wenn Personal nicht bereits in der Organisation bereitgestellt wurde, kann der Systemadministrator von der <a href="https://dynamics.microsoft.com/human-resources/overview/">Personal-Webseite</a> auf eine Testversion zugreifen.
+<td>Wenn Sie noch keine&#39; Finanz- und Betriebs-App in Ihrem Unternehmen bereitgestellt haben, lesen Sie bitte <a href="../deployment/deploy-demo-environment.md">Demo-Umgebung bereitstellen</a>. Wenn Personal nicht bereits in der Organisation bereitgestellt wurde, kann der Systemadministrator von der <a href="https://dynamics.microsoft.com/human-resources/overview/">Personal-Webseite</a> auf eine Testversion zugreifen.
 </td>
 </tr>
 <tr class="even">
@@ -68,7 +68,7 @@ Bevor Sie diesen mobilen Arbeitsbereich verwenden können, müssen die folgenden
 
 ## <a name="download-and-install-the-mobile-app"></a>Herunterladen und Installieren der mobilen App
 
-Laden Sie die mobile Finanz- und Betriebs-App herunter und installieren Sie diese:
+Laden Sie die Finanzen und Betrieb Mobile-App herunter und installieren Sie sie:
 
 -   [Für Android-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Für iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -99,3 +99,4 @@ Laden Sie die mobile Finanz- und Betriebs-App herunter und installieren Sie dies
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

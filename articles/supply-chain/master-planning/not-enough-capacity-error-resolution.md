@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 2db4c2606936222fcd1a97cf2814fbfbc41df113
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d4f54c06a07b3cdd0b8fe2cc52614189ff31ba7f
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891030"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135598"
 ---
 # <a name="fix-the-not-enough-capacity-could-be-found-scheduling-engine-error"></a>„Planungsmodulfehler über unzureichende Kapazität“ beheben
 
@@ -87,7 +87,7 @@ Gehen Sie folgendermaßen vor, um die Einrichtung der Planungsparameter zu über
 
 ## <a name="review-capacity"></a>Kapazität überprüfen
 
-Der Fehler kann auftreten, wenn Sie eine finite Terminierung durchführen, aber keine freie Kapazität vorhanden ist.
+Der Fehler kann auftreten, wenn Sie eine endliche Terminierung durchführen, aber keine freie Kapazität vorhanden ist.
 
 Gehen Sie wie folgt vor, um eine Terminierung mit unbegrenzter Kapazität durchzuführen.
 
@@ -99,17 +99,53 @@ Gehen Sie wie folgt vor, um eine Terminierung mit unbegrenzter Kapazität durchz
 Gehen Sie folgendermaßen vor, um die verfügbare Kapazität der Ressource zu überprüfen.
 
 1. Wechseln Sie zu **Organisationsverwaltung \> Ressourcen \> Ressourcen**, und wählen Sie eine Ressource aus, die für den Auftrag gilt, der nicht geplant werden kann.
-1. Wählen Sie im Aktivitätsbereich, auf der **Ressource**-Registerkarte, in der **Ansicht**-Gruppe **Kapazitätsbelastung** oder **Kapazitätsbelastung, grafisch** aus, und stellen Sie sicher, dass freie Kapazitäten vorhanden sind.
+1. Wählen Sie im Aktionsbereich auf der Registerkarte **Ressourcen** in der Gruppe **Ansicht** die Option **Kapazität laden** oder **Kapazität laden, grafisch** und vergewissern Sie sich, dass die Kapazität verfügbar ist.
 
 Gehen Sie folgendermaßen vor, um die verfügbare Kapazität der Ressourcengruppe zu überprüfen.
 
 1. Wechseln Sie zu **Organisationsverwaltung \> Ressourcen \> Ressourcengruppen**, und wählen Sie eine Ressourcengruppe aus, die für den Auftrag gilt, der nicht geplant werden kann.
-1. Wählen Sie im Aktivitätsbereich, auf der **Ressourcengruppe**-Registerkarte, in der **Ansicht**-Gruppe **Kapazitätsbelastung** oder **Kapazitätsbelastung, grafisch** aus, und stellen Sie sicher, dass freie Kapazitäten vorhanden sind.
+1. Wählen Sie im Aktionsbereich auf der Registerkarte **Ressourcengruppe** in der Gruppe **Ansicht** die Option **Kapazitätsladung** oder **Kapazitätsladung, grafisch** und vergewissern Sie sich, dass die Kapazität verfügbar ist.
 
 ## <a name="master-planning-books-a-resource-when-the-resource-calendar-is-closed"></a>Die Hauptplanung bucht eine Ressource, wenn der Ressourcenkalender geschlossen ist
 
 Bei Verwendung der Betriebsterminierung plant die Produktprogrammplanung die Kapazität gemäß dem Kalender der primären Ressourcengruppe. Es bucht den sekundären Arbeitsgang gleichzeitig mit dem primären Arbeitsgang und berücksichtigt weder die Kalender noch die Kapazität des sekundären Arbeitsgangs. Dies kann dazu führen, dass der Produktionsauftrag in einem geschlossenen Kalender oder zu einem Zeitpunkt geplant wird, an dem der sekundäre Arbeitsgang nicht verfügbar ist (Kalender geschlossen, keine Kapazität).
 
 Bei Verwendung der Auftragsterminierung berücksichtigt die Produktprogrammplanung die Kapazität und den Kalender sowohl des primären als auch des sekundären Arbeitsgangs, wenn der Auftrag terminiert wird. Damit der Auftrag terminiert werden kann, müssen Kalender für die Ressourcen beider Vorgänge geöffnet sein und verfügbare Kapazitäten haben.
+
+## <a name="maximum-job-lead-time-is-too-short"></a>Maximale Vorlaufzeit für Aufträge ist zu kurz
+
+Die Planungsmaschine kann einen Auftrag nicht einplanen, wenn die auf Ihrer Seite festgelegte **Maximale Vorlaufzeit** kleiner ist als die Vorlaufzeit, die für einen Artikel in den Standardauftragseinstellungen oder den Deckungseinstellungen festgelegt ist.
+
+Um die Einstellung **Maximale Vorlaufzeit** für Ihren Standort anzuzeigen oder zu bearbeiten, gehen Sie auf **Produktionssteuerung \> Einrichtung \> Parameter der Produktionssteuerung** und öffnen Sie die Registerkarte **Allgemein**.
+
+Um die Standardauftragseinstellungen für einen Artikel anzuzeigen oder zu bearbeiten, gehen Sie wie folgt vor:
+
+1. Wechseln Sie zu **Produktinformationsverwaltung \> Produkte \> Freigegebene Produkte**.
+1. Suchen Sie das betreffende Produkt und wählen Sie es in der Liste aus.
+1. Öffnen Sie im Aktionsbereich die Registerkarte **Lagerbestand verwalten** und wählen Sie **Standardauftragseinstellungen**.
+1. Erweitern Sie das Inforegister **Bestand** und sehen Sie sich die Einstellung **Vorlaufzeit des Bestands** an oder bearbeiten Sie sie nach Bedarf.
+
+Um die Reichweiteneinstellungen für einen Artikel anzuzeigen oder zu bearbeiten, gehen Sie wie folgt vor:
+
+1. Wechseln Sie zu **Produktinformationsverwaltung \> Produkte \> Freigegebene Produkte**.
+1. Suchen Sie das betreffende Produkt und wählen Sie es in der Liste aus.
+1. Öffnen Sie im Aktionsbereich die Registerkarte **Plan** und wählen Sie **Artikelabdeckung**.
+1. Öffnen Sie die Registerkarte **Vorlaufzeit** und sehen Sie sich den Wert **Produktionszeit** an oder bearbeiten Sie ihn nach Bedarf.
+
+## <a name="excessive-quantity-of-required-resources"></a>Überschüssige Menge an benötigten Ressourcen
+
+Während der Terminierung versucht die Engine, die für einen Vorgang auf der Route festgelegte erforderliche Ressourcenmenge mit den anwendbaren Ressourcen gemäß dem Ressourcenbedarf des Vorgangs abzugleichen. Wenn Sie die Ressourcenmenge zu hoch festlegen, kann dies dazu führen, dass eine Route nicht durchführbar ist, was einen Planungsfehler zur Folge hat.
+
+Verwenden Sie das folgende Verfahren, um sowohl die angegebene Menge als auch die anwendbaren Ressourcen für ein ausgewähltes Produkt, eine Route und einen Routenvorgang zu überprüfen:
+
+1. Wechseln Sie zu **Produktinformationsverwaltung \> Produkte \> Freigegebene Produkte**.
+1. Suchen Sie das entsprechende Produkt im Raster und wählen Sie es aus.
+1. Öffnen Sie im Aktionsbereich die Registerkarte **Engineer** und wählen Sie **Route**.
+1. Suchen Sie die entsprechende Route im Raster und wählen Sie sie aus.
+1. Öffnen Sie die Registerkarte **Übersicht** unten auf der Seite.
+1. Wählen Sie einen Vorgang aus der Liste der ausgewählten Routenvorgänge.
+1. Wählen Sie **Anwendbare Ressourcen**, um einen Dialog zu öffnen, in dem Sie die anwendbaren Ressourcen für den ausgewählten Vorgang der Route anzeigen können.
+1. Öffnen Sie die Registerkarte **Ressourcen-Ladung**. Das Feld **Menge** zeigt die Ressourcenmenge an, die für den ausgewählten Vorgang der Route benötigt wird. Sehen Sie ihn an und/oder bearbeiten Sie ihn nach Bedarf.
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

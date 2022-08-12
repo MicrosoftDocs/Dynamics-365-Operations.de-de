@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 94e465616338b0c905ccf6b8244324c18c7a59e8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f8864ac22153908492b5e7c30a03617e6dc9d05a
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849444"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9166874"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.24 (Februar 2022)
 
@@ -46,7 +46,7 @@ Wenn Sie eine dieser Funktionen ein‑ oder ausschalten möchten, müssen Sie di
 | Modul | Funktion Name in FunktionVerwaltung | Mehr erfahren |
 |---|---|---|
 | Produktionssteuerung | Bedarfsbasierte Materialverfügbarkeitsprüfung für Produktionsaufträge | Diese Funktion ermöglicht ein schnelleres Öffnen der Seite **Freigeben von Produktionsaufträgen**, die über den Arbeitsbereich **Produktionsbodenverwaltung** verfügbar ist. Ohne diese Funktion prüft das System beim Öffnen der Seite automatisch, ob für alle aufgelisteten Fertigungsaufträge Materialien verfügbar sind, was bei einer großen Auftragsmenge viel Zeit in Anspruch nehmen kann. Wenn diese Funktion aktiviert ist, stellt das System stattdessen eine Symbolleistenschaltfläche bereit, mit der Sie die Materialprüfung nur für ausgewählte Aufträge und bei Bedarf starten können. |
-| Produktionssteuerung | (Vorschau) Materialverbrauch in der Produktionsausführungsoberfläche (nicht WMS) registrieren | Diese Funktion ermöglicht es Arbeitern, die Produktionsausführungsoberfläche zu verwenden, um Materialverbrauch, Chargennummern und Seriennummern zu registrieren. Diese Funktion unterstützt nur Artikel, die nicht für die Verwendung von erweiterten Lagerort-Prozessen (WMS) aktiviert sind. Die Unterstützung für WMS-fähige Elemente ist für eine zukünftige Version geplant.<p>Einige Hersteller, insbesondere in der Prozessindustrie, müssen den Materialverbrauch pro Charge oder Produktionsauftrag explizit erfassen. Mitarbeiter können beispielsweise eine Waage verwenden, um die Menge des bei der Arbeit verbrauchten Materials zu wiegen. Um eine vollständige Rückverfolgbarkeit des Materials zu gewährleisten, müssen diese Organisationen auch registrieren, welche Chargennummern bei der Herstellung jedes Produkts verbraucht wurden. |
+| Produktionssteuerung | Materialverbrauch in der Produktionsausführungsoberfläche (nicht WMS) registrieren | Diese Funktion ermöglicht es Arbeitern, die Produktionsausführungsoberfläche zu verwenden, um Materialverbrauch, Chargennummern und Seriennummern zu registrieren. Diese Funktion unterstützt nur Artikel, die nicht für die Verwendung von Lagerverwaltungsprozessen (WMS) aktiviert sind. Die Unterstützung für WMS-fähige Elemente ist für eine zukünftige Version geplant.<p>Einige Hersteller, insbesondere in der Prozessindustrie, müssen den Materialverbrauch pro Charge oder Produktionsauftrag explizit erfassen. Mitarbeiter können beispielsweise eine Waage verwenden, um die Menge des bei der Arbeit verbrauchten Materials zu wiegen. Um eine vollständige Rückverfolgbarkeit des Materials zu gewährleisten, müssen diese Organisationen auch registrieren, welche Chargennummern bei der Herstellung jedes Produkts verbraucht wurden. |
 | Produktionssteuerung | Fertigmeldung bei Arbeitsauslastung der Lagerortverwaltung für die Cloud- und Edge-Skalierungseinheit | Mit dieser Funktion können Mitarbeiter die mobile Warehouse Management-App verwenden, um einen Produktions‑ oder Batchauftrag als abgeschlossen zu melden, wenn die App für eine Arbeitsauslastung der Lagerortverwaltung auf einer Cloud‑ oder Edge-Skalierungseinheit ausgeführt wird. Weitere Informationen finden Sie unter [Fertig melden und auf einer Skalierungseinheit einlagern](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF). |
 | Lagerortverwaltung | Neue Workbenchseiten zur Ladungsplanung | Aktiviert die zwei neuen Ladungsplanungs-Workbenchseiten: **Workbench für eingehende Ladungsplanung** und **Workbench für ausgehende Ladungsplanung**. |
 
@@ -68,9 +68,9 @@ Wir haben die folgenden Hilfeartikel kürzlich hinzugefügt oder erheblich aktua
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformupdates für Apps für Finanzen und Betrieb
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattform-Updates für Finanz- und Betriebs-Apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.24 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattform-Updates für Version 10.0.24 von Apps für Finanzen und Betrieb (Februar 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.24 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattform-Updates für die Version 10.0.24 der Finanz- und Betriebs-Apps (Februar 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -94,3 +94,4 @@ Bevor eine Funktion aus dem Produkt entfernt wird, wird der Verfallshinweis im A
 Bei Änderungen, die sich nur auf die Kompilierungszeit auswirken, aber binär mit Sandbox- und Produktionsumgebungen kompatibel sind, beträgt die Entfernungszeit weniger als 12 Monate. In der Regel handelt es sich hierbei um Funktionsaktualisierungen, die am Compiler vorgenommen werden müssen.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

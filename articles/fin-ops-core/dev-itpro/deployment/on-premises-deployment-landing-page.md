@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b73e0cc31fd0e5a22ee330f623b9125de9237e29
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 87bab110d99bd756038b9f556aa15ed9fd02fb97
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867411"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103971"
 ---
 # <a name="on-premises-deployment-home-page"></a>Startseite bei lokaler Bereitstellung
 
@@ -52,8 +52,8 @@ Sie können Dynamics 365 Finance + Operations (on-premises) bereitstellen. Wenn 
 - [Dokumentverwaltung konfigurieren](../../fin-ops/organization-administration/configure-document-management.md)
 - [Elektronische Berichtskonfigurationen (ER) importieren](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Generieren, Veröffentlichen und Drucken von Dokumenten in lokalen Bereitstellungen](../analytics/printing-capabilities-on-premises.md)
-- [Proxies für lokale Umgebungen konfigurieren](onprem-reverseproxy.md)
-- [Technischen Support für Finance and Operations Apps einrichten](../lifecycle-services/support-experience.md)
+- [Konfigurieren von Proxys für lokale Umgebungen](onprem-reverseproxy.md)
+- [Technischen Support für Finanz- und Betriebs-Apps festlegen](../lifecycle-services/support-experience.md)
 - [Clientinternetverbindung](../user-interface/client-disconnected.md)
 - [Anwenden von Updates in lokalen Bereitstellungen](apply-updates-on-premises.md)
 - [Lokale Umgebungen neu bereitstellen](redeploy-on-prem.md)
@@ -73,9 +73,10 @@ Sie können Dynamics 365 Finance + Operations (on-premises) bereitstellen. Wenn 
 - [Skripts zur Lösung von Problemen in lokalen Umgebungen](onprem-tsg-implementations.md)
 - [Zertifikatrotation](certificate-rotation-on-prem.md)
 - [Lokale Diagnosen](on-premises-diagnostics.md)
-- [Entfernte oder veraltete Funktionen für Finance and Operations](../migration-upgrade/deprecated-features.md)
+- [Entfernte oder außer Betrieb genommene Funktionen für Finanzen und Betrieb](../migration-upgrade/deprecated-features.md)
 - [Software-Lebenszyklusrichtlinie und lokale Freigaben](../migration-upgrade/on-prem-version-update-policy.md)
  
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

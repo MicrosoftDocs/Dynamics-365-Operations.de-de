@@ -13,23 +13,23 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: af3a646e24976d50f83d8564e3006fc2c50d8e2a
-ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
+ms.openlocfilehash: be2c0f921fde13598685553ea01bfcf3f8255362
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8313566"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108670"
 ---
 # <a name="use-a-relative-path-in-data-bindings-of-er-models-and-formats"></a>Verwenden Sie einen relativen Pfad in den Datenbindungen von ER-Modellen und -Formaten
 
 [!include[banner](../includes/banner.md)]
 
-Mit dem Tool für die elektronische Berichterstellung (ER) können Benutzer elektronische Formatstrukturen definieren und anschließend wird beschrieben, wie diese Strukturen ausgefüllt werden sollen, indem Sie Daten und Algorithmen verwenden, die in der Anwendung vorhanden sind. Weitere Informationen finden Sie unter [Elektronische Berichterstellungskonfigurationen (ER) erstellen](electronic-reporting-configuration.md). Um den Datenfluss zum Abrufen der Daten von Finance and Operations zu definieren und diese zur Erstellung eines elektronischen Dokuments zu verwenden, müssen Sie folgende Schritte ausführen:
+Mit dem Tool für die elektronische Berichterstellung (ER) können Benutzer elektronische Formatstrukturen definieren und anschließend wird beschrieben, wie diese Strukturen ausgefüllt werden sollen, indem Sie Daten und Algorithmen verwenden, die in der Anwendung vorhanden sind. Weitere Informationen finden Sie unter [Elektronische Berichterstellungskonfigurationen (ER) erstellen](electronic-reporting-configuration.md). Um den Data Flow für den Abruf von Finanzen und Betrieb-Daten und deren Verwendung zur Erstellung eines elektronischen Belegs festzulegen, müssen Sie Folgendes tun:
 
 - Binden Sie Sie konfigurierte Datenquellen an die Elemente des entworfenen domänenspezifischen Datenmodells. Die Modellstruktur und die ausgewählten Datenquellen könnten Teil einer komplexen hierarchische Struktur sein. Deshalb können endgültige Beziehungen ziemlich groß sein und viele Elemente verschiedener Typen enthalten (zum Beispiel Zuordnungen, Tabellen und Methoden,). Die Beziehungen können weniger lesbar und ziemlich komplex sein zum Verstehen und Prüfen, besonders für Nicht-Eigentümer. 
 - Binden Sie Datenmodellelemente mit Formatkomponenten, um zu definieren, welche Daten vom Datenmodell der generierten Ausgabe des Formats ausgefüllt werden.
 
-Um die Benutzerfreundlichkeit der EB-Zuordnungs-Designer zu verbessern, ist die Funktion [relativer Pfad](er-formula-language.md#relative-path) freigegeben worden. Standardmäßig wird die Darstellungsoption des relativen Pfades für jede neue Instanz der Anwendung aktiviert, wenn die ER-Designerfahrung aktiviert ist (Microsoft Dynamics 365 Finance, Microsoft Regulatory Configuration Service). Wir haben die relativen Pfadparameter implementiert, damit die Benutzer den vollständigen Pfad weiterhin verwenden können, wenn sie mit dieser Darstellung der ER-Bindungen arbeiten.
+Um die Benutzerfreundlichkeit der EB-Zuordnungs-Designer zu verbessern, ist die Funktion [relativer Pfad](er-formula-language.md#relative-path) freigegeben worden. Standardmäßig ist die Option zur Darstellung relativer Pfade für jede neue Instanz der Anwendung aktiviert, in der die ER-Designerfahrung aktiviert ist (Microsoft Dynamics 365 Finance, Microsoft Regulatory Configuration Service). Wir haben die relativen Pfadparameter implementiert, damit die Benutzer den vollständigen Pfad weiterhin verwenden können, wenn sie mit dieser Darstellung der ER-Bindungen arbeiten.
 
 [![Benutzer-Parameter.](./media/relative-path-01.png)](./media/relative-path-01.png)
 
@@ -58,3 +58,4 @@ Diese Funktion bricht die Abwärtskompatibilität des ER-Frameworks nicht. Alle 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-26
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6c7211135733f45a9841ae5a80607b01999d7c69
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14041dfc753b508a0d68b90ee99d79510d07e622
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870928"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070079"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-26-2021"></a>Neuerungen und Änderungen in Dynamics 365 Human Resources 26. Juli 2021
 
@@ -41,7 +41,7 @@ Die folgenden Funktionen sind in dieser Version allgemein verfügbar.
 
 | Funktion | Freigabeplan | Dokumentation |
 | --- | --- | --- |
-| Plattformupdate 10.0.20 | -- | [Plattform-Updates für die Version 10.0.20 der Finanz- und Betriebs-Apps (August 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20) |
+| Plattformupdate 10.0.20 | -- | [Plattform-Updates für Version 10.0.20 der Finanz- und Betriebs-Apps (August 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20) |
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -83,3 +83,4 @@ Eine vollständige Liste der geplanten Funktionen und ihrer geplanten Versionen 
 [Funktionen verwalten](hr-admin-manage-features.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

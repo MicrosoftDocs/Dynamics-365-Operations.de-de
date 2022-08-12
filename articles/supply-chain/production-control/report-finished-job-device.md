@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 3d1a45ad00e59581f27f2e822ccb47430219c501
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 38372f08db0258de8b5e653b4757c9fda96c8d70
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857372"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070468"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Vom Einzelvorgangskartengerät als erledigt melden
 
@@ -50,7 +50,7 @@ Weitere Informationen zum Arbeiten mit der Seite **Standardwerte für Fertigungs
 
 ## <a name="report-batch-controlled-items-as-finished"></a>Chargengesteuerte Artikel als fertig melden
 
-Das Einzelvorgangskartengerät unterstützt drei Szenarien für die Berichterstellung für Chargenelemente. Diese Szenarien gelten sowohl für Artikel, die für erweiterte Lagerprozesse aktiviert sind, als auch für Artikel, die für erweiterte Lagerprozesse nicht aktiviert sind.
+Das Einzelvorgangskartengerät unterstützt drei Szenarien für die Berichterstellung für Chargenelemente. Diese Szenarien gelten sowohl für Artikel, die für Lagerverwaltungsprozesse (WMS) aktiviert sind, als auch für Artikel, die nicht für WMS aktiviert sind.
 
 - **Manuell zugewiesene Chargennummern** – Mitarbeiter geben eine benutzerdefinierte Chargennummer ein. Diese Chargennummer stammt möglicherweise von einer externen Quelle, die dem System nicht bekannt ist.
 - **Vordefinierte Chargennummern** – Arbeitskräfte wählen eine Chargennummer in einer Liste von Chargennummern aus, die das System automatisch generiert, bevor der Produktionsauftrag an das Einzelvorgangskartengerät freigegeben wird.
@@ -129,7 +129,7 @@ Wenn Sie dieses Szenario verwenden, wird das Feld **Chargennummer**, das die Sei
 
 ## <a name="report-serial-controlled-items-as-finished"></a>Seriengesteuerte Artikel als fertig melden
 
-Das Einzelvorgangskartengerät unterstützt drei Szenarien für die Berichterstellung für seriengesteuerte Artikel. Diese Szenarien gelten sowohl für Artikel, die für erweiterte Lagerprozesse aktiviert sind, als auch für Artikel, die für erweiterte Lagerprozesse nicht aktiviert sind.
+Das Einzelvorgangskartengerät unterstützt drei Szenarien für die Berichterstellung für seriengesteuerte Artikel. Diese Szenarien gelten sowohl für Artikel, die für Lagerverwaltungsprozesse (WMS) aktiviert sind, als auch für Artikel, die nicht für WMS aktiviert sind.
 
 - **Manuell zugewiesene Seriennummern** – Mitarbeiter geben eine benutzerdefinierte Seriennummer ein. Diese Seriennummer stammt möglicherweise von einer externen Quelle, die dem System nicht bekannt ist.
 - **Vordefinierte Seriennummern** – Arbeitskräfte wählen eine Seriennummer in einer Liste von Seriennummern aus, die das System automatisch generiert, bevor der Produktionsauftrag an das Einzelvorgangskartengerät freigegeben wird.
@@ -212,7 +212,7 @@ Wenn Sie dieses Szenario verwenden, zeigt das Feld **Seriennummer**, das auf der
 
 ## <a name="report-as-finished-to-a-license-plate"></a>Als abgeschlossen an eine Kennzeichnung melden
 
-Fortgeschrittene Lagerprozesse können die Kennzeichenabmessung verwenden, um den Lagerbestand an Lagerstandorten zu verfolgen, die für diesen Zweck eingerichtet wurden. In diesem Fall ist dies Kennzeichnung erforderlich, wenn ein Mitarbeiter Mengen als fertig meldet.
+Lagerverwaltungsprozesse (WMS) können die Dimension des Ladungsträgers nutzen, um den Bestand an Lagerstandorten zu verfolgen, die zu diesem Zweck festgelegt wurden. In diesem Fall ist dies Kennzeichnung erforderlich, wenn ein Mitarbeiter Mengen als fertig meldet.
 
 ### <a name="enable-license-plate-reporting-and-label-printing"></a>Kennzeichenbeschriftungs und Druck aktivieren
 

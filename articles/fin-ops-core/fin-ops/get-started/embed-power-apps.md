@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: fb81aa058e749df346ee87bbe83427b20b234b72
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d7dc45e56c5fa616c288ebb4b919f039b7358794
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898397"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123653"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Einbetten von Canvas-Apps aus Power Apps
 
@@ -27,7 +27,7 @@ ms.locfileid: "8898397"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Microsoft Power Apps ist ein Dienst, mit dem Entwickler und nicht technische Benutzer benutzerdefinierte Geschäftsanwendungen für Mobilgeräte, Tablets und das Web erstellen können, ohne Code schreiben zu müssen. Apps für Finanzen und Betrieb unterstützen die Integration mit Power Apps. Canvas Apps, die Sie, Ihr Unternehmen oder das breitere Ökosystem entwickeln, können in Apps für Finanzen und Betrieb eingebettet werden, um die Funktionalität des Produkts zu erweitern. Sie könnten zum Beispiel eine Canvas App von Power Apps erstellen, um eine Finance und Operations App mit Informationen zu ergänzen, die aus einem anderen System abgerufen werden.
+Microsoft Power Apps ist ein Dienst, mit dem Entwickler und nicht technische Benutzer benutzerdefinierte Geschäftsanwendungen für Mobilgeräte, Tablets und das Web erstellen können, ohne Code schreiben zu müssen. Finanz- und Betriebs-Apps unterstützen die Integration mit Power Apps. Canvas Apps, die Sie, Ihr Unternehmen oder das breitere Ökosystem entwickeln, können in Finanz- und Betriebs-Apps eingebettet werden, um die Funktionalität des Produkts zu erweitern. So können Sie beispielsweise eine Canvas App von Power Apps erstellen, um eine Finanz- und Betriebs-App mit Informationen zu ergänzen, die aus einem anderen System abgerufen werden.
 
 Um mehr über das Einbetten von Canvas Apps zu erfahren, sehen Sie sich das kurze Video [Wie man Canvas Apps einbettet](https://www.youtube.com/watch?v=x3qyA1bH-NY) an.
 
@@ -35,7 +35,7 @@ Um mehr über das Einbetten von Canvas Apps zu erfahren, sehen Sie sich das kurz
 
 Bevor Sie eine Canvas-App aus Power Apps in den Client einbetten, müssen Sie eine App mit den gewünschten Grafiken und/oder Funktionen suchen oder erstellen. Dieser Artikel enthält keine detaillierte Beschreibung des Prozesses zum Erstellen von Apps. Wenn Sie noch nie mit Power Apps gearbeitet haben, lesen Sie die [Power Apps-Dokumentation](/powerapps/).
 
-Es gibt drei Möglichkeiten, eine Canvas App in eine Finance und Operations App einzubinden. Sie können den Ansatz verwenden, der am besten zu Ihrem Szenario passt. 
+Es gibt drei Möglichkeiten, eine Canvas App in eine Finanz- und Betriebs-App einzubinden. Sie können den Ansatz verwenden, der am besten zu Ihrem Szenario passt. 
 
 - Betten Sie die Canvas App in die **Power Apps**-Schaltfläche im Standard-Aktionsbereich einer Seite ein. Apps, die Sie auf diese Weise hinzufügen, erscheinen als Elemente auf der Schaltfläche **Power Apps** des Menüs, und die Apps werden in Seitenfenstern geöffnet. 
 - Betten Sie die Canvas App direkt auf einer bestehenden Seite als neue Registerkarte ein (Pivot-Registerkarte, Inforegister, Blade oder Arbeitsbereich).
@@ -68,7 +68,7 @@ Das folgende Verfahren zeigt, wie Sie eine Canvas App auf einer bestehenden Seit
 
 ### <a name="embedding-a-canvas-app-as-a-full-page-experience-from-the-dashboard"></a>Einbetten einer Canvas App als Ganzseitenansicht vom Dashboard aus
 
-Sie können eine Canvas App vom Dashboard aus einbetten, wenn die App nicht mit einer bestehenden Seite verknüpft ist, oder wenn Sie die App einfach als ganzseitigen Vorgang innerhalb der Finance und Operations App anzeigen möchten.
+Sie könnten eine Canvas App vom Dashboard aus einbetten, wenn die App nicht mit einer bestehenden Seite verknüpft ist oder wenn Sie die App einfach nur als ganzseitiges Erlebnis innerhalb der Finanz- und Betriebs-App anzeigen möchten.
 
 > [!NOTE]
 > Um diese Funktionalitäten verfügbar zu machen, müssen Sie die Funktion **Ganzseitige Apps** in der Funktionsverwaltung einschalten. 
@@ -107,15 +107,15 @@ Nachdem Sie eine Canvas-App auf einer Seite eingebettet und bestätigt haben, da
     - Wenn die Funktion **Gespeicherte Ansichten** ausgeschaltet ist, kann der System-Admin über die Seite **Personalisierung** eine Personalisierung, die die Canvas App enthält, an die entsprechenden Benutzer festlegen. Alternativ können Sie die Personalisierungen Ihrer Seite exportieren und sie dann an einen oder mehrere Benutzer senden. Jeder dieser Benutzer kann dann die Personalisierung importieren. Die Personalisierungs-Symbolleiste hat Schaltflächen, mit denen Sie Personalisierungen exportieren und importieren können.
 
 > [!NOTE]
-> Wenn die Canvas App für externe Benutzer freigegeben wurde, können diese Benutzer die eingebettete App innerhalb der Apps für Finanzen und Betrieb nicht verwenden. Sie können jedoch direkt in Power Apps auf die App zugreifen. Zu den externen Benutzern gehören Gäste und Benutzer, die nicht zu dem Azure-Verzeichnis Microsoft 365 gehören, in dem die Finance und Operations App bereitgestellt wird.
+> Wenn die Canvas App mit externen Benutzern geteilt wurde, können diese Benutzer die eingebettete App innerhalb der Finanz- und Betriebs-Apps nicht verwenden. Sie können jedoch direkt in Power Apps auf die App zugreifen. Zu den externen Benutzern gehören Gäste und Benutzer, die nicht zu dem Azure-Verzeichnis Microsoft 365 gehören, in dem die Finanz- und Betriebs-App bereitgestellt wird.
 
 Unter [Personalisieren der Benutzeroberfläche](personalize-user-experience.md) finden Sie weitere Details zu den Personalisierungsfähigkeiten im Produkt und wie Sie diese verwenden können.
 
-## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>Erstellen einer Canvas App, die Daten verwendet, die von Apps für Finanzen und Betrieb gesendet werden
+## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>Erstellen einer Canvas App, die Daten verwendet, die von Finanz- und Betriebs-Apps gesendet werden
 
-Wenn Sie eine Canvas App erstellen, die in eine Finance und Operations App eingebettet werden soll, besteht ein wichtiger Teil des Prozesses darin, die Eingabedaten aus dieser Finance und Operations App zu verwenden. Von der Power Apps-Entwicklungserfahrung aus können Sie über die Variable **Param("EntityId")** auf die Eingabedaten zugreifen, die von einer Finance und Operations App übergeben werden. Zusätzlich wird ab Version 10.0.19 auch die aktuelle juristische Entität über die Variable **Param(„cmp“)** an die Canvas App übergeben. 
+Wenn Sie eine Canvas App erstellen, die in eine Finanz- und Betriebs-App eingebettet werden soll, besteht ein wichtiger Teil des Prozesses darin, die Eingabedaten aus dieser Finanz- und Betriebs-App zu verwenden. Ab dem Entwicklungsschritt Power Apps kann auf die Eingabedaten, die von einer Finanz- und Betriebs-App übergeben werden, über die Variable **Param("EntityId")** zugegriffen werden. Zusätzlich wird ab Version 10.0.19 auch die aktuelle juristische Entität über die Variable **Param(„cmp“)** an die Canvas App übergeben. 
 
-In der OnStart-Funktion der App könnten Sie zum Beispiel die Eingabedaten aus den Apps Finance und Operations auf eine Variable wie diese festlegen:
+In der OnStart-Funktion der App könnten Sie zum Beispiel die Eingabedaten aus Finanz- und Betriebs-Apps auf eine Variable wie diese festlegen:
 
 ``` Power Apps
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
@@ -125,7 +125,7 @@ If(!IsBlank(Param("cmp")), Set(FinOpsLegalEntity, Param("cmp")), Set(FinOpsLegal
 
 ## <a name="viewing-a-canvas-app"></a>Anzeigen einer Canvas-App
 
-Um eine eingebettete Canvas App auf einer Seite in Apps für Finanzen und Betrieb anzuzeigen, gehen Sie einfach auf eine Seite, die eine eingebettete App enthält. Denken Sie daran, dass Sie über die Schaltfläche **Power Apps** im Standardaktivitätsbereich auf Apps zugreifen können. Alternativ können Sie als neue Registerkarte, als Inforegister, als Blatt oder als neuer Bereich in einem Arbeitsbereich direkt auf der Seite angezeigt werden. Wenn Benutzer zum ersten Mal versuchen, eine App auf einer Seite zu laden, werden sie aufgefordert, sich anzumelden. Dieser Schritt stellt sicher, dass die Benutzer über die entsprechenden Berechtigungen zur Verwendung der App verfügen.
+Um eine eingebettete Canvas App auf einer Seite in Finanz- und Betriebs-Apps zu sehen, gehen Sie einfach auf eine Seite mit einer eingebetteten App. Denken Sie daran, dass Sie über die Schaltfläche **Power Apps** im Standardaktivitätsbereich auf Apps zugreifen können. Alternativ können Sie als neue Registerkarte, als Inforegister, als Blatt oder als neuer Bereich in einem Arbeitsbereich direkt auf der Seite angezeigt werden. Wenn Benutzer zum ersten Mal versuchen, eine App auf einer Seite zu laden, werden sie aufgefordert, sich anzumelden. Dieser Schritt stellt sicher, dass die Benutzer über die entsprechenden Berechtigungen zur Verwendung der App verfügen.
 
 ## <a name="editing-an-embedded-app"></a>Bearbeiten einer eingebetteten App
 
@@ -184,3 +184,4 @@ public final class ClassTest_Extension
 ```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

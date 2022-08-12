@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c407b45f3df91d569c2bf043ff9f83b640837bb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e0c0e283189998473469164398fa6f43c8e8825e
+ms.sourcegitcommit: 3a882de1f1c27654a8e92ebc1999c75678cc9a53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899439"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9201865"
 ---
 # <a name="reserve-inventory-quantities"></a>Bestandsmengen reservieren
 
@@ -75,7 +75,7 @@ Für einen Auftrag, der automatisch reserviert und am 4. April 2016 geliefert we
 
 Es gibt zwei Möglichkeiten, die Reservierungen **im Bestand und in Lagerortverwaltungs parametern** zugeordnet werden:
 -   Mit der Option **Bestellte Artikel reservieren** in der Registerkarte **Allgemein** können Sie Artikelzugänge reservieren, die gegenüber Artikelabgängen in den Bereichen Debitoren, Projektverwaltung und Buchhaltung sowie Produktionssteuerung bestellt wurden. Wenn Sie diese Option deaktivieren, können Sie nur Artikel reservieren, die physisch eingegangen sind. Wenn ein bestimmter Artikel so eingerichtet wurde, dass er einen negativen Bestand akzeptiert, ist dieses Feld nicht relevant.
--   Die Option **Artikel automatisch reservieren** bestimmt auf der Registerkarte **Transport** die Standardeinstellung, wenn Artikel für Umlagerungsaufträge automatisch reserviert werden. Die Standardeinstellung kann auf einzelnen Umlagerungsaufträge überschrieben werden.
+-   Die Option **Artikel automatisch reservieren** auf der Registerkarte **Umlagerung** legt die Standardeinstellung fest, wenn Artikel für Umlagerungsaufträge automatisch reserviert werden. Die Standardeinstellung kann auf einzelnen Umlagerungsaufträge überschrieben werden.
 
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>Bestandreservierungsrichtlinien auf der Produktionsparameterseite
 

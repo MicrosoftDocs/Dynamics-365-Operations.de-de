@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 5259e1d7d6c95074337164d8427d7f035e00dbd9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 07791afb2de670a5b9b910e441395c2949460394
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890057"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124709"
 ---
 # <a name="grid-capabilities"></a>Rasterfunktionen
 
@@ -35,10 +35,10 @@ Die neue Rastersteuerung bietet eine Reihe nützlicher und leistungsfähiger Fun
 - Dehnbare Spalten
 
 ## <a name="calculating-totals"></a>Summen berechnen
-In Apps für Finanzen und Betrieb haben Benutzer die Möglichkeit, Summen am unteren Rand numerischer Spalten in Rastern anzuzeigen. Diese Summen werden in einem Fußzeilenbereich am unteren Rand des Rasters angezeigt. 
+In den Finanz- und Betriebs-Apps können Benutzer die Summen am unteren Rand der numerischen Spalten in Rastern sehen. Diese Summen werden in einem Fußzeilenbereich am unteren Rand des Rasters angezeigt. 
 
 ### <a name="showing-the-grid-footer"></a>Anzeigen der Rasterfußzeile
-In den Apps für Finanzen und Betrieb gibt es am unteren Rand jedes Tabellenrasters einen Fußbereich. In der Fußzeile können wertvolle Informationen angezeigt werden, die sich auf die im Gitter angezeigten Daten beziehen. Hier sind einige Beispiele für diese Informationen:
+Es gibt einen Fußzeilenbereich am unteren Rand jedes tabellarischen Rasters in Finanz- und Betriebs-Apps. In der Fußzeile können wertvolle Informationen angezeigt werden, die sich auf die im Gitter angezeigten Daten beziehen. Hier sind einige Beispiele für diese Informationen:
 
 - Die Anzahl der ausgewählten Zeilen in der Tabelle (wenn Sie mehr als einen Datensatz auswählen)
 - Gesamtsummen am unteren Ende konfigurierter, numerischer Spalten
@@ -86,7 +86,7 @@ Um dieses neue Verhalten zu unterstützen, wurde rechts von der Zeilenauswahlspa
 Wenn Benutzer Daten vor dem Serverstandort eingeben, können sie einige Beeinträchtigungen der Dateneingabe erwarten, z. B. fehlende Suchvorgänge, Validierung auf Steuerungsebene und Eingabe von Standardwerten. Benutzer, die eine Dropdown-Liste benötigen, um einen Wert zu finden, sollten warten, bis der Server die aktuelle Zeile erreicht hat. Die Validierung auf Kontrollebene und die Eingabe von Standardwerten erfolgt auch, wenn der Server diese Zeile verarbeitet.
 
 ### <a name="pasting-from-excel"></a>Einfügen aus Excel
-Benutzer konnten immer Daten aus Rastern in Apps für Finanzen und Betrieb  mit dem **Nach Excel exportieren**-Mechanismus nach Microsoft Excel exportieren. Die Möglichkeit, Daten vor dem System einzugeben, ermöglicht es dem neuen Raster jedoch, das Kopieren von Tabellen aus Excel und das direkte Einfügen in Tabellen in Raster in Apps für Finanzen und Betrieb zu unterstützen. Die Rasterzelle, von der aus der Einfügevorgang initiiert wird, bestimmt, wo die kopierte Tabelle eingefügt wird. Der Inhalt des Rasters wird durch den Inhalt der kopierten Tabelle überschrieben, außer in zwei Fällen:
+Benutzer konnten schon immer Daten aus Rastern in Finanz- und Betriebs-Apps nach Microsoft Excel exportieren, indem sie den **Export nach Excel**-Mechanismus verwendeten. Dank der Möglichkeit, Daten vor dem System einzugeben, unterstützt das neue Raster jedoch das Kopieren von Tabellen aus Excel und das direkte Einfügen in Raster in Finanz- und Betriebs-Apps. Die Rasterzelle, von der aus der Einfügevorgang initiiert wird, bestimmt, wo die kopierte Tabelle eingefügt wird. Der Inhalt des Rasters wird durch den Inhalt der kopierten Tabelle überschrieben, außer in zwei Fällen:
 
 - Wenn die Anzahl der Spalten in der kopierten Tabelle die Anzahl der im Raster verbleibenden Spalten überschreitet, wird der Benutzer benachrichtigt, dass die zusätzlichen Spalten ignoriert wurden. 
 - Wenn die Anzahl der Zeilen in der kopierten Tabelle die Anzahl der Zeilen im Raster überschreitet, beginnend mit der Einfügeposition, werden die vorhandenen Zellen durch den eingefügten Inhalt überschrieben, und alle zusätzlichen Zeilen aus der kopierten Tabelle werden unten im raster als neue Zeilen eingefügt. 
@@ -97,7 +97,7 @@ Als Produktivitätssteigerung können Benutzer mathematische Formeln in numerisc
 Damit das System einen Wert als Ausdruck erkennt, müssen Sie vor dem Wert ein Gleichheitszeichen (**=**) angeben. Mehr Informationen zu den unterstützten Operatoren und zur Syntax finden Sie unter [Unterstützte mathematische Symbole](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Gruppieren von Tabellendaten
-Geschäftsanwender müssen häufig Ad-hoc-Datenanalysen durchführen. Während dies durch das Exportieren von Daten nach Microsoft Excel und der Nutzung von Pivot-Tabellen geschehen kann, ermöglicht die Funktion **Gruppierung in Rastern**, die von der neuen Rastersteuerungsfunktion abhängt, Benutzern, ihre Tabellendaten auf effektive Weise in Apps für Finanzen und Betrieb zu organisieren. Da diese Funktion die **Summen**-Funktion erweitert, ermöglicht die Funktion **Gruppieren** wichtige Einblicke in die Daten zu gewinnen, indem Zwischensummen auf Gruppenebene bereitgestellt werden.
+Geschäftsanwender müssen häufig Ad-hoc-Datenanalysen durchführen. Während dies durch den Export von Daten nach Microsoft Excel und die Verwendung von Pivot-Tabellen möglich ist, lässt die Funktion **Gruppieren in Rastern**, die von der neuen Funktion Rastersteuerelement abhängt, Benutzer zu, ihre tabellarischen Daten innerhalb von Finanz- und Betriebs-Apps auf interessante Weise zu organisieren. Da diese Funktion die **Summen**-Funktion erweitert, ermöglicht die Funktion **Gruppieren** wichtige Einblicke in die Daten zu gewinnen, indem Zwischensummen auf Gruppenebene bereitgestellt werden.
 
 Um diese Funktion zu verwenden, klicken Sie mit der rechten Maustaste auf die Spalte, nach der Sie gruppieren möchten, und wählen die Option für **Nach dieser Spalte gruppieren** aus. Diese Aktion sortiert die Daten nach der ausgewählten Spalte, fügt eine neue Spalte **Gruppieren nach** am Anfang des Rasters hinzu und fügt „Kopfzeilen“ am Anfang jeder Gruppe ein. Diese Kopfzeilen enthalten die folgenden Informationen zu jeder Gruppe:
 
@@ -168,7 +168,7 @@ Wenn Sie eine einzelne Seite von der Verwendung des neuen Rasters abgemeldet hab
 ## <a name="developer-opting-individual-grids-out-of-the-typing-ahead-of-the-system-capability"></a>[Entwickler] Einzelne Raster aus der Funktionalität Typing ahead of the system herausnehmen
 Es gibt einige Szenarien, die sich nicht gut für die *Typisierung vor dem System* Funktionalität des Rasters eignen. (Einige Codes, die bei der Validierung einer Zeile ausgelöst werden, führen beispielsweise dazu, dass eine Datenquellenrecherche ausgelöst wird, und die Recherche kann dann unbestätigte Änderungen an bestehenden Zeilen beschädigen.) Wenn Ihr Unternehmen ein solches Szenario entdeckt, steht eine API zur Verfügung, mit der ein Entwickler ein einzelnes Raster von der asynchronen Zeilenvalidierung ausnehmen und zum veralteten Verhalten zurückkehren kann.
 
-Wenn die asynchrone Zeilenvalidierung in einem Raster deaktiviert ist, können Benutzer keine neue Zeile erstellen oder zu einer anderen bestehenden Zeile im Raster wechseln, während in der aktuellen Zeile Validierungsprobleme bestehen. Ein Nebeneffekt dieser Aktion ist, dass Tabellen nicht aus Excel in Finance und Operations Raster eingefügt werden können.
+Wenn die asynchrone Zeilenvalidierung in einem Raster deaktiviert ist, können Benutzer keine neue Zeile erstellen oder zu einer anderen bestehenden Zeile im Raster wechseln, während in der aktuellen Zeile Validierungsprobleme bestehen. Ein Nebeneffekt dieser Aktion ist, dass Tabellen nicht aus Excel in Finanzen und Betrieb Raster eingefügt werden können.
 
 Um ein einzelnes Raster von der asynchronen Zeilenvalidierung auszunehmen, fügen Sie in der Methode `run()` des Formulars den folgenden Aufruf nach `super()` ein.
 
@@ -200,3 +200,4 @@ In diesem Abschnitt wird eine Liste bekannter Probleme für die neue Rastersteue
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

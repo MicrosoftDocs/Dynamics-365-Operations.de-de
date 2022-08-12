@@ -1,6 +1,6 @@
 ---
-title: Erhalten Sie Support für Finanz- und Betriebs-Apps oder Lifecycle Services (LCS)
-description: In diesem Artikel wird beschrieben, wie Sie Hilfe bei Finanz- und Betriebs-Apps oder Microsoft Dynamics Lifecycle Services (LCS) erhalten.
+title: GET Unterstützung für Finanz- und Betriebs-Apps oder Lifecycle Services (LCS)
+description: Dieser Artikel erklärt, wie Sie Hilfe bei Finanz- und Betriebs-Apps oder Microsoft Dynamics Lifecycle Services (LCS) erhalten.
 author: EricMoos
 ms.date: 08/02/2021
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 278a62c0393be503352db39dddeca1095e7e4a5a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f36709ddc2a64c31fe3c2d63fbe073fd9bc159bb
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866430"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103402"
 ---
-# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Erhalten Sie Support für Finanz- und Betriebs-Apps oder Lifecycle Services (LCS)
+# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>GET Unterstützung für Finanz- und Betriebs-Apps oder Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 
 
 [!INCLUDE [PEAP](../../../includes/peap-2.md)]
 
-In diesem Artikel wird beschrieben, wie Sie Hilfe bei Finanz- und Betriebs-Apps oder Microsoft Dynamics Lifecycle Services (LCS) erhalten. 
+Dieser Artikel erklärt, wie Sie Hilfe bei Finanz- und Betriebs-Apps oder Microsoft Dynamics Lifecycle Services (LCS) erhalten. 
 
 <table>
 <thead>
@@ -51,7 +51,7 @@ In diesem Artikel wird beschrieben, wie Sie Hilfe bei Finanz- und Betriebs-Apps 
 <td>In <a href="https://lcs.dynamics.com/">LCS</a> können Sie das <strong>Problemsuche</strong>-Tool nutzen, um Microsoft Wissensartikel, Hotfixes und Problemumgehungen für gemeldete Probleme zu finden. Sie können sehen, welche gemeldeten Probleme für einen bestimmten Funktionsbereich korrigiert werden und welche Probleme bereits korrigiert wurden. Weitere Informationen finden Sie unter <a href="issue-search-lcs.md">Problemsuche (Lifecycle Services, LCS)</a>.</td>
 </tr>
 <tr>
-<td>Holen Sie sich Unterstützung innerhalb Ihrer Finance und Operations App.</td>
+<td>Erhalten Sie Support innerhalb Ihrer Finanz- und Betriebs-App.</td>
 <td>Wählen Sie die Schaltfläche <strong>Hilfe</strong> (<strong>?</strong>) rechts oben in der App aus, und wählen Sie dann <strong>Support</strong> aus. Probleme werden auf der Registerkarte <strong>Aktive Probleme</strong> in LCS gemeldet. Dort können Administratoren festlegen, ob sie internen Support leisten oder die Probleme an Microsoft senden sollen.</td>
 </tr>
 <tr>
@@ -72,3 +72,4 @@ In diesem Artikel wird beschrieben, wie Sie Hilfe bei Finanz- und Betriebs-Apps 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f9f3e17a6c67dc1cc1d4ba423ce258f2ed1d1ec0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0b8723da9b80d007cd0a3196affdfa854eff095f
+ms.sourcegitcommit: 45bb77244a31fa174adf85d1b54e9700109ca0c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847599"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9198379"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Aufgabenaufzeichnung und Hilfe für Retail Modern POS (MPOS) und Cloud POS
 
@@ -107,7 +107,7 @@ Um die Aufzeichnungssitzung fortzusetzen, nachdem Sie sie angehalten hatten, kli
 Aufgabenaufzeichnung kann Bildschirmabbilder der Benutzeroberfläche von Retail Modern POS erfassen, während Sie einen Geschäftsprozess aufzeichnen. Um die Erfassungsfunktion für Bildschirmfotos zu aktivieren, legen Sie die Option **Bildschirmfotos erstellen** auf **Ja** fest, und nehmen Sie dann die Erfassung vor. Sobald die Erfassung abgeschlossen wurde, klicken Sie auf **Beenden** und laden Sie das Word-Dokument herunter. Das Dokument enthält die Schritte mit den relevanten Bildschirmfotos.
 
 > [!NOTE]
-> Die Funktionen zur Erfassung von Bildschirmabbildern werden in Cloud POS nicht unterstützt.
+> Die Capture Screenshot-Funktionalität wird in Store Commerce, Commerce Modern POS und Cloud POS nicht unterstützt.
 
 ### <a name="start-task-and-end-task"></a>Aufgabe starten und Aufgabe beenden
 

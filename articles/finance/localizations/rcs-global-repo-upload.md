@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 8cfbcfea3c6056d87eb600c9a2f9e0d1727c30ff
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f73f7189ad82d85169a4e0df573dd26dab8bb009
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894742"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070599"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>ER-Konfigurationen in gesetzlichen Konfigurationsdiensten (Regulatory Configuration Services, RCS) erstellen und sie in das globale Repository hochladen
 
@@ -37,7 +37,7 @@ Bevor Sie diese Prozeduren abschließen können, müssen Sie zunächst die folge
 
 Sie müssen sicherstellen, dass eine RCS-Umgebung für Ihre Organisation bereitgestellt wird. Wenn Sie keine RCS-Instanz für Ihre Organisation bereitgestellt haben, können Sie dies mit den folgenden Schritten tun:
 
-1. In der App für Finanzen und Betrieb gehen Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
+1. Gehen Sie in einer Finanz- und Betriebs-App zu **Verwaltung der Organisation** \> **Arbeitsbereiche** \> **Elektronisches Reporting**.
 2. In **Weiterführende Links/Externe Links** wählen Sie **Regulierungsdienste – Konfiguration** und befolgen dann die Anweisungen, um zur Bereitstellung eine **Anmeldung** durchzuführen.
 
 Wenn für Ihre Organisation bereits eine RCS-Umgebung bereitgestellt wurde, verwenden Sie die Seiten-URL, um darauf zuzugreifen und wählen die **Anmeldeoption** aus.
@@ -105,3 +105,4 @@ Die Konfigurationsversion wird gelöscht und eine Bestätigungsmeldung angezeigt
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

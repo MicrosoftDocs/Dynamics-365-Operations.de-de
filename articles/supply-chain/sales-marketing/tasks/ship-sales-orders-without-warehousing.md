@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0144be929045b385c58dd29f6241330fc1092f0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3478e8c712c7bcbfb8ace9e7b43f0d8d3cf4ac8a
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862481"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069151"
 ---
 # <a name="ship-sales-orders-without-warehousing"></a>Aufträge ohne Lagerort liefern
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Artikel wird erläutert, wie Sie einen Kundenauftrag aktualisieren, wenn Produkte an den Kunden geliefert werden. Der Leitfaden betrifft den Erfüllungsfluss, der nicht für die Lagerortverwaltung eingerichtet ist (weder grundlegende oder erweiterte Lagerung) und daher keine Produktentnahme vor Lieferung erfassen muss. Sie können diese Prozedur in Ihrem eigenen Demodatenunternehmen oder in USMF ausführen. In beiden Fällen erstellen Sie einen Auftrag für ein inventarisiertes Produkt mit einer Menge größer als 1, bevor Sie mit der Aufgabe beginnen. Um ein Buchungsfehler zu vermeiden, müssen Sie überprüfen ob die verfügbare Menge des Produkts im Standort und Lagerort, den Sie im Auftrag ausgewählt haben, in der Auftragsmenge enthalten sind.
+In diesem Artikel wird erläutert, wie Sie einen Kundenauftrag aktualisieren, wenn Produkte an den Kunden geliefert werden. Die Anleitung gilt für den Fulfillment Flow, der nicht für die Lagerverwaltung festgelegt ist (weder Basis- noch Lagerverwaltungsprozesse (WMS)), und erfordert daher nicht, dass die Kommissionierung der Produkte vor dem Versand registriert wird. Sie können diese Prozedur in Ihrem eigenen Demodatenunternehmen oder in USMF ausführen. In beiden Fällen erstellen Sie einen Auftrag für ein inventarisiertes Produkt mit einer Menge größer als 1, bevor Sie mit der Aufgabe beginnen. Um ein Buchungsfehler zu vermeiden, müssen Sie überprüfen ob die verfügbare Menge des Produkts im Standort und Lagerort, den Sie im Auftrag ausgewählt haben, in der Auftragsmenge enthalten sind.
 
 ## <a name="post-packing-slip-for-an-order"></a>Lieferschein für eine Bestellung buchen
 1. Gehen Sie im Navigationsbereich zu **Module > Vertrieb und Marketing > Kundenaufträge > Alle Kundenaufträge**.

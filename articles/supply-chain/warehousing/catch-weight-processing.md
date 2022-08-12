@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: d0f0e44cfafec722f6eed3d18ba8be4739be30c1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 881c3c4aa655a5ad30adffce108ba2fc3e6691c5
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900679"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070408"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
 
@@ -82,7 +82,7 @@ Wenn das tatsächliche Gewicht an der Verpackungsstation während des Containerv
 > [!NOTE]
 > Da die Option **Verpackung** bewirkt, dass das Inventar mit dem durchschnittlich ausgewählten Gewicht aktualisiert wird, kann dies eine Diskrepanz auslösen, die eine Anpassung des Gewinns/Verlusts des Artikelgewichts und/oder eine Differenz zwischen dem vorhandenen Inventargewicht und dem Gewicht des Artikelgewichtstags verursachen kann.
 
-Bei internen Lagerortverwaltungsprozessen wie Inventur und Regulierungskorrekturen können Sie definieren, ob das Gewicht erfasst werden soll. Wird es nicht erfasst, wird das nominelle Gewicht verwendet. Mit anderen Optionen können Sie das Gewicht pro Artikelgewichtseinheit und pro Zählmenge erfassen.
+Für interne Prozesse, wie Zählungen und Korrekturen, können Sie festlegen, ob das Gewicht erfasst werden soll. Wird es nicht erfasst, wird das nominelle Gewicht verwendet. Mit anderen Optionen können Sie das Gewicht pro Artikelgewichtseinheit und pro Zählmenge erfassen.
 
 Sie können auch definieren, wie das Gewicht erfasst wird. In einem der beiden Hauptflüsse, werden Artikelgewichtsmarkierungen nachverfolgt und verwendet, um das Gewicht zu erfassen. In dem anderen Fluss werden Artikelgewichtsmarkierungen nicht nachverfolgt.
 
@@ -183,7 +183,7 @@ Nicht alle Workflows unterstützen die Artikelgewichtsproduktverarbeitung mit La
 ### <a name="other-restrictions-and-behaviors-for-catch-weight-product-processing-with-warehouse-management"></a>Andere Einschränkungen und Verhaltensweisen für die Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
 
 - Während der Entnahmeprozesse, in denen der Benutzer nicht aufgefordert wird, Rückverfolgungsangaben zu identifizieren, erfolgt die Gewichts-Zuweisung basierend auf dem Durchschnittsgewicht. Dieses Verhalten tritt auf, wenn z. B. eine Kombination von Rückverfolgungsangaben am gleichen Lagerplatz verwendet wird, und, nachdem ein Benutzer die Entnahme verarbeitet hat, nur ein Rückverfolgungsangabewert am Lagerplatz verbleibt.
-- Wenn der Bestand für ein Artikelgewichtsprodukt reserviert wird, das für Lagerortverwaltungsprozesse konfiguriert ist, erfolgt die Reservierung auf Grundlage des Mindestgewichts, das definiert wird, auch wenn diese Menge die letzte verfügbare Handhabungsmenge ist. Dieses Verhalten unterscheidet sich vom Verhalten für Artikel, die nicht für Lagerortverwaltungsprozesse konfiguriert sind. Es gibt eine Ausnahme von dieser Einschränkung. Bei der Produktionskommissionierung wird das tatsächliche Gewicht verwendet, wenn die letzte Handhabungsmenge eines seriennummerngesteuerten Artikelgewichtsprodukts kommissioniert wird.
+- Wenn ein Bestand für ein Artikelgewicht reserviert wird, das für Lagerverwaltungsprozesse (WMS) konfiguriert ist, erfolgt die Reservierung auf der Grundlage des definierten Mindestgewichts, auch wenn es sich bei dieser Menge um den Lagerbestand der letzten Bearbeitung handelt. Dieses Verhalten unterscheidet sich von dem Verhalten für Artikel, die nicht für WMS konfiguriert sind. Es gibt eine Ausnahme von dieser Einschränkung. Bei der Produktionskommissionierung wird das tatsächliche Gewicht verwendet, wenn die letzte Handhabungsmenge eines seriennummerngesteuerten Artikelgewichtsprodukts kommissioniert wird.
 - Prozesse, die das Gewicht als Teil der Kapazitätsberechnungen verwenden (Wellenschwellenwerte, maximale Arbeitspausen, Container-Höchstwerte, Lagerplatzladekapazitäten usw.), verwenden nicht das tatsächliche Gewicht des Bestands. Stattdessen basieren die Prozesse auf dem physischen Handhabungsgewicht, das für das Produkt definiert wird.
 - Die Commerce-Funktion wird in der Regel nicht für Artikelgewichtsprodukte unterstützt.
 - Bei Produkten mit Artikelgewicht kann der Lagerstatus von **Lagerstatusänderung** nicht aktualisiert werden.

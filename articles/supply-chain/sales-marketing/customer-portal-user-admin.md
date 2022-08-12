@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 2d095b0f6ff707852b4c9e22fd9c31cf87ccbe9d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ec4f20daac39e1728ab46db159059e51a0cae0a6
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905775"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103769"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Erstellen und Verwalten von Kundenportalbenutzern
 
@@ -33,7 +33,7 @@ Wenn sich Benutzer selbst registrieren, werden automatisch Kontaktdatens채tze f�
 ## <a name="video"></a>-Video
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ADkI]
 
-Das Video [Kunden einladen, sich zu registrieren und Ihr Kundenportal zu nutzen](https://youtu.be/drGUYHX9QIQ) (siehe oben) ist in der Wiedergabeliste [Finance und Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) enthalten, die auf YouTube verf체gbar ist.
+Das Video [Laden Sie Kunden ein, sich zu registrieren und Ihr Kundenportal zu nutzen](https://youtu.be/drGUYHX9QIQ) (oben gezeigt) ist in der Wiedergabeliste [Finanzen und Vorg채nge](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) enthalten, die auf YouTube verf체gbar ist.
 
 ## <a name="prerequisite-setup"></a>Voraussetzungen f체r die Einrichtung
 

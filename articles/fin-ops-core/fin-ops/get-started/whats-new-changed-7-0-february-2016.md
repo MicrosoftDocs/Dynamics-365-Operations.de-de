@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e92e6aeab949567e65a13ebdd92f0e5b306ccd30
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f9e6472fa9024f19b5c35e91b3c7c36eb311bc31
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861704"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9125081"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Neuheiten und Änderungen in Dynamics AX 7.0 (Februar 2016)
 
@@ -1028,9 +1028,10 @@ Es wurden keine neuen Funktionen hinzugefügt.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Neuerungen oder Änderungen in Finance and Operations – Startseite](whats-new-changed.md)
+[Was ist neu oder wurde geändert in Finanzen und Betrieb Homepage](whats-new-changed.md)
 
 [Neuer Aufgabenleitfaden verfügbar (Februar 2016)](new-task-guides-available-february-2016.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

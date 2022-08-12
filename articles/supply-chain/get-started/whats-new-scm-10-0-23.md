@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: acffe97cf1844f16a70c716a7f2078b1e9a072d1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ded645ebaea1230b68525c247ee91e3893211774
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849473"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124527"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Was ist neu oder geändert in Dynamics 365 Supply Chain Management 10.0.23 (Januar 2022)
 
@@ -81,9 +81,9 @@ Wir haben die folgenden Hilfeartikel kürzlich hinzugefügt oder erheblich aktua
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformupdates für Apps für Finanzen und Betrieb
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattform-Updates für Finanz- und Betriebs-Apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.23 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattformupdates für Version 10.0.23 von Apps für Finanzen und Betrieb (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.23 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattform-Updates für die Version 10.0.23 der Finanz- und Betriebs-Apps (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md).
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -107,3 +107,4 @@ Bevor eine Funktion aus dem Produkt entfernt wird, wird der Verfallshinweis im A
 Bei Änderungen, die sich nur auf die Kompilierungszeit auswirken, aber binär mit Sandbox- und Produktionsumgebungen kompatibel sind, beträgt die Entfernungszeit weniger als 12 Monate. In der Regel handelt es sich hierbei um Funktionsaktualisierungen, die am Compiler vorgenommen werden müssen.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

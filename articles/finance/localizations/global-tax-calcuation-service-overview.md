@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 24d4a722ee143dc0869f758475aaf377e7a9e084
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: 817d7db5952f96fa741671166d88fffddaac84e9
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954520"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9166838"
 ---
 # <a name="tax-calculation-overview"></a>Übersicht über die Steuerberechnung
 
@@ -29,7 +29,7 @@ Die Steuerberechnung ist ein hyperskalierbarer mandantenfähiger Dienst, mit dem
 Die Steuerberechnung ist in Dynamics 365 Finance und Dynamics 365 Supply Chain Management integriert. Schließlich wird er auch in Dynamics 365 Project Operations, Dynamics 365 Commerce und andere Anwendungen von Erstanbietern und Drittanbietern integriert.
 
 > [!IMPORTANT]
-> Wenn Sie die Steuerberechnung aktivieren, werden einige Vorgänge an zugehörigen Daten möglicherweise in einem anderen Rechenzentrum durchgeführt als dem, das Ihre Servicedaten verwaltet. Lesen Sie die [Bedingungen und Konditionen](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md), bevor Sie die Steuerberechnung aktivieren. Datenschutz ist uns sehr wichtig. Weiteres erfahren Sie in unserer [Datenschutzerklärung](https://go.microsoft.com/fwlink/?LinkId=521839).
+> Wenn Sie die Steuerberechnung aktivieren, werden einige Vorgänge an zugehörigen Daten möglicherweise in einem anderen Rechenzentrum durchgeführt als dem, das Ihre Servicedaten verwaltet. Lesen Sie die [Bedingungen und Konditionen](https://go.microsoft.com/fwlink/?linkid=2156043), bevor Sie die Steuerberechnung aktivieren. Datenschutz ist uns sehr wichtig. Weiteres erfahren Sie in unserer [Datenschutzerklärung](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 Tax Calculation ist eine Microservice-basierte Steuer-Engine, die exponentielle Skalierbarkeit bietet und Sie bei den folgenden Aufgaben unterstützen kann:
 

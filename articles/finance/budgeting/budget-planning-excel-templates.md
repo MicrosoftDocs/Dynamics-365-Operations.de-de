@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6bc190a48d0212e24c5bd72255ed6b6b3caf942c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8996ad5d03327b9273be7860a3905dc25efa7e90
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872498"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070663"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Budgetplanungsvorlagen für Excel
 
@@ -79,7 +79,7 @@ Die ausgewählte Feldgruppe zeigt die Spalten an, die in der Vorlage verfügbar 
 [![Spalte hinzufügen und einfügen.](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> Um die Formel zu definieren, erstellen Sie die Formel im Arbeitsblatt und kopieren sie dann in das Fenster **Design**. Eine an Finance and Operations gebundene Tabelle ist in der Regel eine "AXTable1". Um beispielsweise die Anforderung Q1 zusammenfassen: Fordern Sie die Spalten Q4 in der Tabelle an, die Formel  = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].
+> Um die Formel zu definieren, erstellen Sie die Formel im Arbeitsblatt und kopieren sie dann in das Fenster **Design**. Eine an Finanzen und Betrieb gebundene Tabelle wird normalerweise „AXTable1“ genannt. Um beispielsweise die Anforderung Q1 zusammenfassen: Fordern Sie die Spalten Q4 in der Tabelle an, die Formel  = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].
 
 Wiederholen Sie diese Schritte, um die Spalte **Regulierung** hinzuzufügen. Mithilfe der Formel = AxTable1\[Total request\]\*$I$1 für diese Spalte. Dadurch wird der Wert in Zelle I1 multipliziert und die Werte in der Spalte **Anforderung gesamt**, um die Regulierungsbeträge zu berechnen.
 
@@ -129,3 +129,4 @@ Sie können zusätzliche Pivottabellen und Diagramme für Gruppierungen und Visu
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

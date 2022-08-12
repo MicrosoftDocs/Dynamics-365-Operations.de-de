@@ -10,12 +10,12 @@ ms.search.form: InventPosting, InventTrans
 audience: Application User
 ms.search.region: Global
 ms.author: raprofit
-ms.openlocfilehash: 0793c58b07d2c0a133e1a5bc0607483f22206b95
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 38a9e2740232b18255109ba867fcdddd5b890774
+ms.sourcegitcommit: 9310c943ac76896663e5604209034da9f8d6139c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849930"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151031"
 ---
 # <a name="purchase-order-posting"></a>Bestellungsbuchung
 
@@ -93,10 +93,10 @@ Die folgende Tabelle zeigt Beispiele für die Standardbuchungsarten mit beispiel
 
 | Buchungstyp | Hauptkontobeispiel | Hauptkonto-Namenbeispiel | Kontotyp | Soll/Haben? | Clearingkonto | P/F | Folgen | Description |
 |--------------|---------------------|-------------------------|----------------|----------------|--------------------|----|----------|-----------|
-| Kosten der eingekauften, eingegangenen Materialien | 140100</br>140101 | Materialbestand</br>Materialien versendet, nicht fakturiert | Anlage | Belastung | Ja | P | Kosten der eingekauften, fakturierten Materialien | Wird verwendet, wenn ein Produktzugang für eine Bestellung gebucht wird. Die Gegenbuchung auf dem Konto sind die Ausgaben für den Kauf, die nicht in Rechnung gestellt werden. Der Betrag auf diesem Konto wird storniert, wenn eine Einkaufsrechnung gebucht wird. |
+| Kosten der eingekauften, eingegangenen Materialien | 140100</br>140101 | Materialbestand</br>Materialien versendet, nicht fakturiert | Anlage | Belastung | Ja | P | Kosten der eingekauften, fakturierten Materialien | Wird verwendet, wenn ein Produktzugang zu einer Bestellung gebucht wird. Die Gegenbuchung zum Konto lautet Einkaufsausgaben, nicht fakturiert. Der Betrag auf diesem Konto wird storniert, wenn eine Einkaufsrechnung gebucht wird. |
 | Einkaufskosten, nicht fakturiert | 600180 | Materialeingänge | Ausgaben | Belastung | Ja | P | |Wird verwendet, wenn ein Produktzugang für eine Bestellung gebucht wird. Für den Bon werden zwei Belege erstellt, um Kaufpreisabweichungen bei der Verwendung von Standardkalkulationen zu verfolgen. Die Gegenbuchung zu dem Konto auf dem ersten Beleg ist die Abgrenzung Einkauf. Die Gegenbuchung auf dem zweiten Beleg ist die Summe der Konten Einkaufskosten für erhaltene Materialien und Kaufpreisabweichung. Die auf diesem Konto gebuchten Beträge werden storniert, wenn eine Einkaufsrechnung gebucht wird. |
 | Kosten der eingekauften, fakturierten Materialien | 140100 | Materialbestand | Anlage | Belastung | Nein | Fr  |Kosten der eingekauften, eingegangenen Materialien | Wird verwendet, wenn eine Einkaufsrechnung gebucht wird. Die Gegenbuchung zu diesem Konto sind die Ausgaben für den Kauf von Produkten. Dieses Konto stellt den Bestand in Ihrer Bilanz dar. Das verwendete Konto ist in der Regel dasselbe, das auch für die Kosten der gelieferten Einheiten und die Kosten der für den Verkaufsauftrag in Rechnung gestellten Einheiten verwendet wird. |
-| Einkaufswendungen für Produkt | 600180 | Materialeingang | Ausgaben | Gutschrift | Nein | Fr  | |Wird verwendet, wenn eine Einkaufsrechnung gebucht wird. Die Gegenbuchung zu diesem Konto sind die Kosten für eingekaufte Materialien, Einkauf. Dieses Konto stellt den Bestand in Ihrer Bilanz dar. |
+| Einkaufswendungen für Produkt | 600180 | Materialeingang | Ausgaben | Gutschrift | Ja | Fr  | |Wird verwendet, wenn eine Einkaufsrechnung gebucht wird. Es werden zwei Belege für die Rechnung erstellt, um Kaufpreisabweichungen bei Verwendung von Standardkosten zu verfolgen. Die Gegenbuchung zu diesem Konto ist das Konto Einkaufsausgaben, nicht fakturiert, das bei der Buchung des Eingangs verwendet und bei der Buchung der Rechnungen storniert wird. Stellt die Kosten für den bei der Nachkalkulation gekauften Bestand dar, der nicht auf dem Bestandskonto in der Bilanz ausgewiesen ist. Hierbei handelt es sich um eine Gewinn- und Verlustbuchung für Kaufpreisabweichungen, die am häufigsten bei Einkäufen von Standardkostenartikeln vorkommen.|
 | Festgelegter Eingangspreis Gewinn (Kauf, Festgelegter Eingangspreis Gewinn*) | 510310 | Einkaufspreisabweichung | Ausgaben | Gutschrift | Nein | Fr | Fester Zugangspreis - Verlust | Wird verwendet, wenn eine Einkaufsrechnung gebucht wird und es eine Differenz zwischen dem Rechnungspreis und den Standardkosten für den Artikel gibt. Dieses Konto wird verwendet, wenn die Differenz höher ist. Die Gegenbuchung zu diesem Konto ist die Gegenbuchung des festen Eingangspreises. |
 | Fester Zugangspreis Verlust (Einkauf, fester Zugangspreis Verlust*) | 510310 | Einkaufspreisabweichung | Ausgaben | Belastung | Nein | Fr | Fester Zugangspreis - Gewinn | Wird verwendet, wenn eine Einkaufsrechnung gebucht wird und es eine Differenz zwischen dem Rechnungspreis und den Standardkosten für den Artikel gibt. Dieses Konto wird verwendet, wenn die Differenz niedriger ist. Die Gegenbuchung zu diesem Konto ist die Gegenbuchung des festen Eingangspreises. |
 | Fester Zugangspreisausgleich (Einkauf, fester Zugangspreisausgleich*) | 140900 | Bestandsveränderung | Anlage | Beides | Nein | Fr  | |Wird verwendet, wenn eine Einkaufsrechnung gebucht wird und es eine Differenz zwischen dem Rechnungspreis und den Standardkosten für den Artikel gibt. Dieses Konto ist die Gegenbuchung zu den Gewinn- und Verlustkonten für feste Eingangspreise. |
@@ -109,7 +109,7 @@ Die folgende Tabelle zeigt Beispiele für die Standardbuchungsarten mit beispiel
 | Vorauszahlung | 132190 | Vorausbezahlte Ausgaben | Anlage | Belastung | N | Beides | | Wird bei der Verarbeitung einer Vorauszahlungsrechnung zu einer Einkaufsrechnung verwendet. |
 
 
-\*Die in Klammern angegebenen Werte stellen den Wert dar, der im Feld **Buchungsart** auf der Seite **Buchtransaktionen** verwendet wird. Sie können die **Buchungsart** auf der Seite **Buchtransaktionen** auf der Registerkarte **Allgemein** einsehen.
+\*Die in Klammern angegebenen Werte stellen den Wert dar, der im Feld **Buchungstyp** auf der Seite **Gutschein-Transaktionen** verwendet wird. Sie können die **Buchungsart** auf der Seite **Buchtransaktionen** auf der Registerkarte **Allgemein** einsehen.
 
 ## <a name="fixed-asset-posting-with-purchase-orders"></a>Anlagenbuchung mit Kaufaufträgen
 

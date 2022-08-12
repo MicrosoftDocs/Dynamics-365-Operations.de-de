@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 9e7d220639f5f3af26e892461928c646746963bb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2d6d3fdcc0b0387a92f138b0ba7cf537f473b91a
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874666"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069562"
 ---
 # <a name="cost-controlling-mobile-workspace"></a>Mobiler Arbeitsbereich für die Kostensteuerung
 
@@ -29,7 +29,7 @@ ms.locfileid: "8874666"
 
 Dieser Artikel enthält Informationen zum mobilen Arbeitsbereich für die **Kostensteuerung**. Dieser Arbeitsbereich Kostenstellenmanager zeigt Informationen über die Kostenstellenleistung, jederzeit und überall.
 
-Dieser mobile Arbeitsbereich soll mit der mobilen App für Finanz und Betrieb (Dynamics 365)-App verwendet werden.
+Dieser mobile Arbeitsbereich ist für die Verwendung mit der Finanzen und Betrieb (Dynamics 365) Mobile-App vorgesehen.
 
 ## <a name="overview"></a>Übersicht
 Der Arbeitsbereich **Kostensteuerung** enthält eine einzige Ansicht der Leistung der aktuellen Kostenstellen aus dem Vergleich von Ist-Kosten im Vergleich zu den geplanten Kosten. Sie können den Status einzelner Kostenelemente mit Detailinformationen anzeigen.
@@ -114,7 +114,7 @@ Wenn Version 1611 mit Plattformupdate 3 oder höher für Ihre Organisation ber
 
 
 ## <a name="download-and-install-the-mobile-app"></a>Herunterladen und Installieren der mobilen App
-Laden Sie die mobile App für Finanz und Betrieb (Dynamics 365) herunter und installieren Sie sie:
+Laden Sie die Mobile-App für Finanzen und Vorgänge (Dynamics 365) herunter und installieren Sie sie:
 
 -   [Für Android-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Für iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -146,3 +146,4 @@ Laden Sie die mobile App für Finanz und Betrieb (Dynamics 365) herunter und ins
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

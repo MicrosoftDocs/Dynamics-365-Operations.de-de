@@ -13,20 +13,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3c07befc7150ff0a121fd3aaa0b5233df9f431e5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ef5ed6c3c99d62010643940f3e2f158963ff0dc2
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868607"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123717"
 ---
 # <a name="embed-third-party-apps"></a>Apps von Drittanbietern einbetten
 
 [!include [banner](../includes/banner.md)]
 
-Viele Debitor verwenden eine Reihe von Anwendungen, um ihr Geschäft auszuführen. Einige dieser Anwendungen sind Web-Apps von Drittanbietern, die in Verbindung mit Finanz- und Betriebs-Apps arbeiten. Um eine nahtlosere Nutzungserfahrung zu bieten, können Sie die Funktion (Vorschau) **Ganzseitige Apps** verwenden, um diese Apps von Drittanbietern direkt in Ihre Finanz- und Betriebs-Apps einzubetten (vorausgesetzt, die Apps von Drittanbietern lassen die Einbettung zu). Auf diese Weise können Benutzer auf die von ihnen benötigten Websites und Apps zugreifen, ohne die Registerkarten oder Fenster wechseln zu müssen.
+Viele Debitor verwenden eine Reihe von Anwendungen, um ihr Geschäft auszuführen. Bei einigen dieser Anwendungen handelt es sich um Web Apps von Drittanbietern, die mit den Finanz- und Betriebs-Apps zusammenarbeiten. Um eine nahtlosere Benutzererfahrung zu bieten, können Sie die Funktion **Full Page Apps** verwenden, um diese Apps von Drittanbietern direkt in Ihre Finanz- und Betriebs-Apps einzubetten (vorausgesetzt, die Apps von Drittanbietern lassen die Einbindung zu). Auf diese Weise können Benutzer auf die von ihnen benötigten Websites und Apps zugreifen, ohne die Registerkarten oder Fenster wechseln zu müssen.
 
-Bevor Sie Apps von Drittanbietern in das Produkt einbetten können, müssen Sie die Funktion **Vollständige Seite Apps** in der Funktionsverwaltung einschalten. Sie können dann eine der folgenden Methoden verwenden, um eine App oder Website eines Drittanbieters einzubinden. Diese Methoden sind analog zu den Methoden, die zum Einbetten von Canvas-Apps aus Microsoft Power Apps in Finanz- und Betriebs-Apps verwendet werden.
+Bevor Sie Apps von Drittanbietern in das Produkt einbetten können, müssen Sie die Funktion **Vollständige Seite Apps** in der Funktionsverwaltung einschalten. Sie können dann eine der folgenden Methoden verwenden, um eine App oder Website eines Drittanbieters einzubinden. Diese Methoden sind analog zu den Methoden, mit denen Canvas Apps von Microsoft Power Apps in Finanz- und Betriebs-Apps eingebettet werden.
 
 - Einbetten der App oder Website auf einer bestehenden Seite als neue Registerkarte (Pivot-Tab, Inforegister, Blade oder Arbeitsbereich).
 - Erstellen Sie eine neue ganzseitige Erfahrung für die App oder Website vom Dashboard aus.
@@ -60,7 +60,7 @@ Verwenden Sie dieses Verfahren, wenn Sie eine bestehende Seite im System mit ein
 
 ## <a name="embed-a-website-as-a-full-page-experience-from-the-dashboard"></a>Einbetten einer Website als Ganzseitenerlebnis vom Dashboard aus
 
-Verwenden Sie dieses Verfahren, wenn die App, die Sie einbetten möchten, nicht mit einer bestehenden Seite zusammenhängt, oder wenn Sie nur eine ganzseitige Darstellung der App innerhalb der Finanz- und Betriebs-App wünschen.
+Verwenden Sie dieses Verfahren, wenn die App, die Sie einbetten möchten, nicht mit einer bestehenden Seite verknüpft ist, oder wenn Sie nur eine ganzseitige Darstellung der App innerhalb der Finanz- und Betriebs-App wünschen.
 
 1. Öffnen Sie das Dashboard.
 2. Wählen und halten Sie (oder klicken Sie mit der rechten Maustaste) auf dem Dashboard, wählen Sie **Personalisieren**, und wählen Sie dann **Seite hinzufügen**.
@@ -89,7 +89,7 @@ Nachdem Sie eine App mit Hilfe einer der in den vorherigen Abschnitten beschrieb
 
 ## <a name="viewing-embedded-apps"></a>Anzeigen von eingebetteten Apps
 
-Um eine eingebettete App auf einer Seite in Finanz- und Betriebs-Apps zu sehen, öffnen Sie die Seite, die die eingebettete App enthält. Denken Sie daran, dass auf einigen Seiten auf eingebettete Apps über die Schaltfläche **Power Apps** im Standard-Aktivitätsbereich zugegriffen werden kann. Alternativ können sie direkt auf der Seite als neues Inforegister, Inforegister oder Blade oder als neuer Abschnitt in einem Arbeitsbereich erscheinen.
+Um eine eingebettete App auf einer Seite in Finanz- und Betriebs-Apps zu sehen, öffnen Sie die Seite, auf der die App eingebettet ist. Denken Sie daran, dass auf einigen Seiten auf eingebettete Apps über die Schaltfläche **Power Apps** im Standard-Aktivitätsbereich zugegriffen werden kann. Alternativ können sie direkt auf der Seite als neues Inforegister, Inforegister oder Blade oder als neuer Abschnitt in einem Arbeitsbereich erscheinen.
 
 ## <a name="editing-or-removing-embedded-apps"></a>Bearbeiten oder Entfernen von eingebetteten Apps
 
@@ -129,3 +129,4 @@ Wenn eine Website nicht korrekt gerendert wird, nachdem sie in eine App für Fin
 Obwohl sich dieser Artikel auf das Einbetten von Apps oder Websites von Drittanbietern durch Personalisierung konzentriert, können Entwickler diese auch in ein Formular einbetten, indem sie die Visual Studio-Entwicklungsumgebung nutzen. Fügen Sie einfach ein **WebsiteHostControl** Steuerelement in das Formular ein. Die für das Steuerelement verfügbaren Metadaten-Eigenschaften bieten die gleichen Funktionalitäten wie das Personalisierungserlebnis.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

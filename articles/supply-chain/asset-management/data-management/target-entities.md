@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 172f49c13c183eb4df986dc3e30ff3955bc1a605
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 838e3affd4e782bea463638e28da3943329671d4
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860985"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111855"
 ---
 # <a name="target-entities"></a>Zielentitäten
 
@@ -30,7 +30,7 @@ ms.locfileid: "8860985"
 
 In Arbeitsbereich **Datenverwaltung** können Sie sich einen Überblick über Zielentitäten, zugehörige Entitätstypen und Staging-Tabellen zum Modul **Anlagenmanagement** verschaffen. 
 
-1. Klicken Sie auf die Schaltfläche **Finance and Operations** in der oberen linken Ecke des Bildschirms und klicken Sie auf **Data management**.
+1. Klicken Sie auf die Schaltfläche **Finanzen und Vorgänge** in der oberen linken Ecke des Bildschirms und dann auf **Datenverwaltung**.
 
 2. Klicken Sie im Abschnitt **Import / Export** auf **Datenelemente**. 
 

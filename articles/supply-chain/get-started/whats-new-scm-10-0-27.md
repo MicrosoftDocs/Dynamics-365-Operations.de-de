@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: a50fcbe313901beab610400d8c59dd375f1af93e
-ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
+ms.openlocfilehash: ff92e6904b8042232159a0aea095d7a91c17d4b7
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "9022620"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124099"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10027-july-2022"></a>Neuerungen und Änderungen in Dynamics 365 Supply Chain Management 10.0.27 (Juli 2022)
 
@@ -66,9 +66,9 @@ Wir haben die folgenden Hilfeartikel kürzlich hinzugefügt oder erheblich aktua
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformupdates für Apps für Finanzen und Betrieb
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattform-Updates für Finanz- und Betriebs-Apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.27 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattform-Updates für Version 10.0.27 der Finanz- und Betriebs-Apps (Juni 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.27 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattform-Updates für die Version 10.0.27 der Finanz- und Betriebs-Apps (Juni 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md).
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -92,3 +92,4 @@ Bevor eine Funktion aus dem Produkt entfernt wird, wird der Verfallshinweis im A
 Bei Änderungen, die sich nur auf die Kompilierungszeit auswirken, aber binär mit Sandbox- und Produktionsumgebungen kompatibel sind, beträgt die Entfernungszeit weniger als 12 Monate. In der Regel handelt es sich hierbei um Funktionsaktualisierungen, die am Compiler vorgenommen werden müssen.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

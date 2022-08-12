@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 14a49d1d6c956b37ff9b2bec387615dc75d060e1
-ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
+ms.openlocfilehash: f740b68128b90fc7c9ce2f74edc4f3c06f03debd
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "9022563"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9167760"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Produktionsausführungsschnittstelle konfigurieren
 
@@ -92,9 +92,9 @@ Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig ak
 
 Diese Funktion ermöglicht es Arbeitern, die Produktionsausführungsoberfläche zu verwenden, um Materialverbrauch, Chargennummern und Seriennummern zu registrieren. Einige Hersteller, insbesondere in der Prozessindustrie, müssen explizit die Materialmenge registrieren, die für jede Batch oder jeden Produktionsauftrag verbraucht wird. Arbeitskräfte könnten zum Beispiel eine Waage verwenden, um die Menge des Materials zu wiegen, das sie bei ihrer Arbeit verbrauchen. Um eine vollständige Rückverfolgbarkeit der Materialien zu gewährleisten, müssen diese Organisationen auch die Batch-Nummern registrieren, die zur Herstellung der einzelnen Produkte verbraucht wurden.
 
-Es gibt zwei Versionen dieser Funktion. Eine unterstützt Elemente, die *nicht* für die Verwendung von erweiterten Lagerprozessen (WMS) aktiviert sind. Die anderen unterstützen Elemente, die *für die Verwendung von WMS aktiviert sind*. Um diese Funktionalität zu nutzen, aktivieren Sie eine oder beide der folgenden Funktionen in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in dieser Reihenfolge), je nachdem, ob Sie Artikel haben, die für WMS aktiviert sind:
+Es gibt zwei Versionen dieser Funktion. Man unterstützt Artikel, die *nicht* für die Verwendung von Lagerverwaltungsprozessen (WMS) aktiviert sind. Die anderen unterstützen Elemente, die *für die Verwendung von WMS aktiviert sind*. Um diese Funktionalität zu nutzen, aktivieren Sie eine oder beide der folgenden Funktionen in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in dieser Reihenfolge), je nachdem, ob Sie Artikel haben, die für WMS aktiviert sind:
 
-- *(Vorschau) Materialverbrauch in der Produktionsausführungsoberfläche (nicht WMS) registrieren*
+- *Materialverbrauch in der Produktionsausführungsoberfläche (nicht WMS) registrieren*
 - *(Vorschauversion) Materialverbrauch in der Produktionsausführungsoberfläche registrieren (WMS-fähig)*
 
 > [!IMPORTANT]

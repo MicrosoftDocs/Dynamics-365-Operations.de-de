@@ -1,6 +1,6 @@
 ---
 title: Einen Frachtbrief erstellen
-description: In diesem Artikel wird beschrieben, wie Sie einen Frachtbrief erstellen, wenn der Lagerortverwaltungsprozess verwendet wird.
+description: Dieser Artikel beschreibt, wie Sie einen Frachtbrief erstellen, wenn Sie Lagerverwaltungsprozesse (WMS) verwenden.
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34e84fee13dcff574f1700ba2b8f577f4c401cbc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 68a703475191255ff6ceaee25ef8e2bdf33ba0c2
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885782"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069695"
 ---
 # <a name="create-a-bill-of-lading"></a>Einen Frachtbrief erstellen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Artikel wird beschrieben, wie Sie einen Frachtbrief erstellen, wenn der Lagerortverwaltungsprozess verwendet wird.  
+Dieser Artikel beschreibt, wie Sie einen Frachtbrief erstellen, wenn Sie Lagerverwaltungsprozesse (WMS) verwenden.  
 
 Ein Frachtbrief ist ein Vertrag zwischen dem Unternehmen, das den Artikel versendet und dem Spediteur. Das Dokument liegt den Versandartikeln bei und dient als Lieferbeleg, wenn die Artikel am Zielort ausgeliefert werden. Wenn Sie die Lagerortverwaltung verwenden, gibt es zwei Möglichkeiten, einen Frachtbrief zu generieren:
 

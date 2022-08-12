@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: cbe6bff6fab96900b8bd4e112a8858363fff86d1
-ms.sourcegitcommit: 9870b773a2ea8f5675651199fdbc63ca7a1b4453
+ms.openlocfilehash: 463a66002ec7a6536c9ff829f9ea2c3734138eae
+ms.sourcegitcommit: 6221a25f81aa83ab335de7cb6b6c3014dbec0116
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9013554"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "9177147"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Einstieg in die Globale Bestandsbuchhaltung
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
 
 Mit der Globalen Bestandsbuchhaltung können Sie mehrere Bestandsbuchhaltungen in den von Ihnen festgelegten Sachkonten der Globalen Bestandsbuchhaltung durchführen. Sie müssen jedes Sachkonto der Globalen Bestandsbuchhaltung mit einer *Konvention* verknüpfen. Eine Konvention ist eine Sammlung der folgenden Arten von Rechnungslegungsgrundsätzen:
 
@@ -69,28 +67,34 @@ Bevor Sie die Add-In-Funktionalität aktivieren können, müssen Sie die Microso
 
 Weitere Informationen finden Sie unter [Nach Bereitstellen der Umgebung aktivieren](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-## <a name="install-the-add-in"></a><a name="install"></a>Installieren des Add-Ins
+## <a name="install-or-update-the-add-in-and-solution"></a><a name="install"></a>Installieren oder aktualisieren Sie das Add-In und die Lösung
 
-Gehen Sie folgendermaßen vor, um das Add-In zu installieren, damit Sie die Globale Bestandsbuchhaltung verwenden können.
+Gehen Sie wie folgt vor, um das Add-In Globale Bestandsbuchhaltung und die Lösung zu installieren oder zu aktualisieren. Welchen Teil des Verfahrens Sie befolgen sollten, hängt davon ab, ob Sie die Lösung zum ersten Mal installieren oder nur eine bestehende Installation aktualisieren müssen.
+
+- Wenn Sie das Add-In noch nie installiert haben, befolgen Sie die vollständige Prozedur, um sowohl das Add-In als auch die Lösung zu installieren.
+- Wenn Sie bereits Globale Bestandsbuchhaltung verwenden, aber die Lösung im [Power Platform Admin Center](https://admin.powerplatform.microsoft.com) aktualisieren müssen, führen Sie nur Schritt 6 aus und überspringen alle anderen Schritte.
+
+So installieren oder aktualisieren Sie das Add-In und die Lösung:
 
 1. Melden Sie sich bei [LCS](https://lcs.dynamics.com/Logon/Index) an.
 1. Öffnen Sie die LCS-Umgebung, in der Sie den Dienst hinzufügen möchten.
 1. Gehen Sie zu **Vollständige Details**.
-1. Gehen Sie zu **Power Platform Integration**, und wählen Sie **Einrichten**.
+1. Gehen Sie zu **Power Platform Integration** und wählen Sie **Einrichtung**.
 1. Aktivieren Sie im Dialogfeld **Einrichten der Power Platform Umgebung** das Kontrollkästchen und wählen Sie dann **Einrichten**. In der Regel dauert das Einrichten zwischen 60 und 90 Minuten.
-1. Nachdem die Einrichtung der Microsoft Power Platform-Umgebung abgeschlossen ist, melden Sie sich beim [Power Platform-Admin Center](https://admin.powerplatform.microsoft.com) an, und installieren Sie das Global Inventory Accounting-Add-In, indem Sie die folgenden Schritte ausführen:
-   1. Wählen Sie die Umgebung, in der Sie das Add-In installieren möchten.
+1. Nachdem die Einrichtung der Umgebung Microsoft Power Platform abgeschlossen ist, melden Sie sich im [Power Platform Admin Center](https://admin.powerplatform.microsoft.com) an und installieren oder aktualisieren Sie die Lösung Globale Bestandsbuchhaltung, indem Sie die folgenden Schritte ausführen:
+   1. Wählen Sie die Umgebung, in der Sie die Lösung installieren oder aktualisieren möchten.
    1. Wählen Sie **Dynamics 365-Apps**
    1. Wählen Sie **App installieren**.
    1. Wählen Sie **Dynamics 365 Global Inventory Accounting**.
    1. Wählen Sie zum Installieren **Weiter** aus.
-1. Zurück zur LCS-Umgebung. Wählen Sie auf dem Inforegister **Umgebungs-Add-Ins** die Option **Neues Add-In installieren** aus.
+1. Nachdem die Lösung vollständig installiert ist, gehen Sie zurück zur LCS Umgebung. Wählen Sie auf dem Inforegister **Umgebungs-Add-Ins** die Option **Neues Add-In installieren** aus.
 1. Wählen Sie **Globale Bestandsbuchhaltung**.
 1. Befolgen Sie die Installationsanleitung und erklären Sie sich mit den Allgemeinen Geschäftsbedingungen einverstanden.
 1. Wählen Sie **Installieren**.
 1. Auf der Registerkarte **Umgebungs-Add-Ins** Inforegister sollten Sie sehen, dass Globale Bestandsbuchhaltung installiert wird. Nach einigen Minuten sollte sich der Status von *Installieren* in *Installiert* ändern. (Möglicherweise müssen Sie die Seite aktualisieren, um diese Änderung zu sehen.) An diesem Punkt ist die Globale Bestandsbuchhaltung einsatzbereit.
 
 Wenn die Standardsprache Ihrer Dataverse-Installation nicht Englisch ist, gehen Sie wie folgt vor:
+
 1. Gehen Sie zu **Erweiterte Einstellung \> Verwaltung \> Sprachen**.
 1. Wählen Sie *Englisch* (*LanguageCode=1033*), und wählen Sie dann **Anwenden**.
 

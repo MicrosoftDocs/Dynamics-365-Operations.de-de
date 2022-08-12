@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 281ee90b7cae2d24d37d0684ad9975118560bb3e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b611abb2d68d93178d0c26ba40b22f1b8d26b191
+ms.sourcegitcommit: 6d9fcb52d723ac5022a3002e0ced8e7b56e9bc2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869980"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9203108"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Unterstützung der Steuerfunktion bei Umlagerungsaufträgen
 
@@ -111,7 +111,10 @@ Befolgen Sie diese Schritte, um die Steuer einzurichten, die in einem Umlagerung
 6. Definieren Sie die Anwendbarkeit der Artikelsteuergruppe.
 
     1. Wählen Sie **Spalten verwalten** und dann Spalten aus, die zum Erstellen der Anwendbarkeitstabelle verwendet werden sollen.
-    2. Fügen Sie Anwendbarkeitsregeln hinzu. Lassen Sie das Feld **Artikelsteuergruppe** nicht leer.
+    2. Fügen Sie Anwendbarkeitsregeln hinzu.
+        
+       > [!NOTE]
+       > Wenn die Mehrwertsteuergruppe, die in den Zeilen Ihrer steuerpflichtigen Belege voreingestellt ist, bereits korrekt ist, lassen Sie diese Matrix leer. 
         
         Fügen Sie eine neue Regel für die Lieferung un den Empfang von Umlagerungsaufträgen hinzu.
         1. Wählen Sie auf der Seite **Anwendbarkeitsregeln** die Option **Hinzufügen**.

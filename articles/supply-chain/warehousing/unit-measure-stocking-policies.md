@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0de12620bca54c7e43713138d7a152c2bd6edff3453f81cf779f9b875cf77eb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ca1c18a293d66ab78f41cac857461249826ce4c9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714835"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069121"
 ---
 # <a name="unit-of-measure-and-stocking-policies"></a>Maßeinheit und Lagerrichtlinien
 
@@ -28,7 +28,7 @@ ms.locfileid: "6714835"
 
 Dieser Artikel beschreibt, wie Standardmaßeinheiten, Einheitssequenzen und Einheitenumrechnungen in den Lagerortprozessen verwendet werden.
 
-Einheitensequenzgruppen definieren die Reihenfolge der Einheiten, die in den Lagerortarbeitsgängen verwendet werden können. Sie werden auf der Seite **Einheitensequenzgruppen** erstellt. Die Sequenz zeigt die Beziehung der verschiedenen Einheiten. Zum Beispiel speichern Sie Paletten, die Schachteln enthalten, die einzelne Artikel enthalten. In diesem Fall müssen Sie die drei verschiedenen Einheiten und die logische Reihenfolge der Ebenen bereitstellen. Mit Einheitssequenzgruppen können Sie die Richtlinien für die Gruppierung von Kennzeichen und die Standardmaßeinheiten definieren, die für die verschiedenen Lagerortverfahren verwendet werden sollen. Dieser Artikel gilt für die erweiterte Lagerungslösung, die in der Lagerortverwaltung verfügbar ist, sowie für die grundlegendere Lösung, die in der Bestandsverwaltung verfügbar ist.
+Einheitensequenzgruppen definieren die Reihenfolge der Einheiten, die in den Lagerortarbeitsgängen verwendet werden können. Sie werden auf der Seite **Einheitensequenzgruppen** erstellt. Die Sequenz zeigt die Beziehung der verschiedenen Einheiten. Zum Beispiel speichern Sie Paletten, die Schachteln enthalten, die einzelne Artikel enthalten. In diesem Fall müssen Sie die drei verschiedenen Einheiten und die logische Reihenfolge der Ebenen bereitstellen. Mit Einheitssequenzgruppen können Sie die Richtlinien für die Gruppierung von Kennzeichen und die Standardmaßeinheiten definieren, die für die verschiedenen Lagerortverfahren verwendet werden sollen. Dieser Artikel bezieht sich sowohl auf die Prozesse der Lagerverwaltung (WMS), die im Modul Warehouse Management zur Verfügung stehen, als auch auf die einfachere Lösung für die Lagerhaltung, die im Modul Bestandsverwaltung verfügbar ist.
 
 ## <a name="unit-sequence-groups-for-released-products"></a>Einheitensequenzgruppen für freigegebene Produkte
 Wenn Sie freigegebene Produkte in den Lagerortarbeitsprozessen verwenden möchten, muss eine Einheitensequenzgruppe zugewiesen werden. Wenn Sie ein Produkt überprüfen, das einer Lagerdimensionsgruppe zugeordnet ist, und die Option **Lagerortverwaltungsprozesse verwenden** für die Lagerdimensionsgruppe auf **Ja** festgelegt ist, erhalten Sie eine Fehlermeldung, wenn keine Einheitensequenzgruppenkennung für das Produkt definiert ist. Wenn die Einheitensequenzgruppe, die Sie verwenden, mehrere Positionen (und damit mehreren Einheiten) enthält, müssen Sie eine Einheitenumrechnung zwischen den Einheiten einrichten. Schließen Sie diese Einstellung auf der Seite **Einheitenumrechnungen** ab. Die kleinste Einheit in einer Sequenzgruppe, die Sie einem freigegebenen Produkt zuordnen, muss mit der Lagereinheit übereinstimmen, die für das entsprechende Produkt definiert ist. Die Lagereinheit ist die Einheit, die für Basisberechnungen des verfügbaren Lagerbestands verwendet wird. Sie können auch Maßeinheitsumrechnungen für Produktvarianten von Produktmastern einrichten, indem Sie die Option **Umrechnung von Maßeinheiten aktivieren** verwenden.

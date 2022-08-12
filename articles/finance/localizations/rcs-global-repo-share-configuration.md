@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 976a86aee75581d1afa764bea049b6c0eaecf9f3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f789fd86904c1e625be8fc5be3bfe456fe0659b4
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888922"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068747"
 ---
 # <a name="share-electronic-reporting-er-configurations-in-regulatory-configuration-services-rcs-global-repository-with-external-organizations"></a>ER-Konfigurationen (Electronic Reporting) in Microsoft Regulatory Configuration Services (RCS) /im globalen Repository mit externen Organisationen teilen
 
@@ -36,7 +36,7 @@ In den folgenden Verfahren wird erläutert, wie ein RCS-Benutzer eine Version ei
 
 Sie müssen auch sicherstellen, dass eine RCS-Umgebung für Ihr Unternehmen bereitgestellt wird.
 
-1. In der App für Finanzen und Betrieb gehen Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
+1. Gehen Sie in einer Finanz- und Betriebs-App zu **Verwaltung der Organisation** \> **Arbeitsbereiche** \> **Elektronisches Reporting**.
 2. Wenn keine RCS-Umgebung für Ihr Unternehmen bereitgestellt wurde, klicken Sie auf **Regulatory services – externe Konfiguration** und folgen Sie den Anweisungen zur Bereitstellung einer RCS-Umgebung.
 
 Wenn für Ihr Unternehmen bereits eine RCS-Umgebung bereitgestellt wurde, verwenden Sie die Seiten-URL, um darauf zuzugreifen, indem Sie die Anmeldeoption auswählen.
@@ -67,7 +67,7 @@ Nachdem eine Konfiguration unter Ihrem Konfigurationsanbieter erstellt wurde, k�
 
     ![Dialogfeld „Konfigurationsversion für externes Organisation freigeben“.](media/1_RCS_Repo_for_Share_with_form.JPG)
 
-Die Konfiguration wird für die externe Organisation freigegeben und steht dieser Organisation im globalen Repository zur Verfügung. Von dort kann es in die RCS-Instanz der Organisation oder in deren Instanzen von Finanz- und Betriebs-Apps importiert werden.
+Die Konfiguration wird für die externe Organisation freigegeben und steht dieser Organisation im globalen Repository zur Verfügung. Von dort aus kann es in die RCS-Instanz des Unternehmens oder in seine Instanzen der Finanz- und Betriebs-Apps importiert werden.
 
 6. Um die Freigabe einer Konfiguration aufzuheben, die zuvor für eine externe Organisation freigegeben wurde, wählen Sie die Konfiguration aus und klicken Sie auf **Freigabe aufheben** und dann **OK**
 

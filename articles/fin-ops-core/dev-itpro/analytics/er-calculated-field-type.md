@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4a4933c429982d1371c7c9a9412789ae08e08f43
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5a4eb70144957ecdbeba4246fb8c7cd6a20cb08c
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8934703"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108328"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Unterstützen parametrisierter Aufrufe von EB-Datenquellen des Typs „Berechnetes Feld“
 
@@ -36,7 +36,7 @@ Um die Beispiele in diesem Artikel abzuschließen, müssen Sie den folgenden Zug
     - Funktionaler Berater für elektronische Berichterstellung
     - Systemadministrator
 
-- Zugriff auf die Regulatory Configuration Services (RCS), die für denselben Mandanten wie Finance and Operations bereitgestellt wurden, für eine der folgenden Rollen:
+- Zugriff auf Regulatory Configuration Services (RCS), die für denselben Mandanten wie Finanzen und Betrieb für eine der folgenden Rollen bereitgestellt wurden:
 
     - Entwickler für elektronische Berichterstellung
     - Funktionaler Berater für elektronische Berichterstellung
@@ -84,7 +84,7 @@ In diesem Beispiel erstellen Sie eine Konfiguration für die Musterfirma Litware
             - Summe der Steuerwerte
             - Mindestwert des angewendeten Steuersatzes
 
-    Die Modellzuordnung in dieser Konfiguration implementiert das Basisdatenmodell für alle ER-Formate, für die dieses Modell erstellt und in Finance and Operations ausgeführt werden. Demzufolge wird der Inhalt der **Steuer**- und **GR**-Datenquellen für ER-Formate wie abstrakte Datenquellen bereitgestellt.
+    Die Datenzuordnung in dieser Konfiguration implementiert das Basisdatenmodell für jedes der ER-Formate, die für dieses Modell erstellt und in Finanzen und Betrieb ausgeführt werden. Demzufolge wird der Inhalt der **Steuer**- und **GR**-Datenquellen für ER-Formate wie abstrakte Datenquellen bereitgestellt.
 
     ![Seite „Modellzuordnungsdesigner“ mit Steuer- und GR-Datenquellen.](media/er-calculated-field-type-01.png)
 
@@ -343,3 +343,4 @@ Sie können überprüfte Konfigurationen aus RCS importieren, indem Sie das ER-R
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7ef3be13e82ff3722fc81247b5cd581b0b571b0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 91078352b6376ee99e7d9ce4546ed200cb80a25a
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876123"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135842"
 ---
 # <a name="posting-profiles-overview"></a>Übersicht über Buchungsprofile
 
-In Apps für Finanzen und Betrieb wird der Begriff *Buchungsprofile* verwendet, um die Konfigurationen zu beschreiben, die steuern, wie Nebenbuchkonten in Hauptkonten konvertiert werden, damit sie in Transaktionen verwendet werden können, die in das Hauptbuch gebucht werden. Sie steuern beispielsweise, wie der Debitor beim Buchen einer Rechnung in ein Hauptkonto der Debitorenbuchhaltung umgewandelt wird.
+In Finanz- und Betriebs-Apps wird der Begriff *Buchungsprofile* verwendet, um die Konfigurationen zu beschreiben, die steuern, wie untergeordnete Sachkonten in Hauptkonten umgewandelt werden, damit sie in Transaktionen verwendet werden können, die auf das Hauptbuch gebucht werden. Sie steuern beispielsweise, wie der Debitor beim Buchen einer Rechnung in ein Hauptkonto der Debitorenbuchhaltung umgewandelt wird.
 
 Einige Module und Funktionen haben eine Seite, deren Name das Wort „Buchungsprofil“ enthält (z. B. **Buchungsprofil des Kunden** oder **Buchungsprofil des Anbieters**). Darüber hinaus verfügen einige Module über mehrere Optionen zum Konfigurieren der Hauptbuchbuchung für Transaktionen, die aus dem Nebenbuch generiert werden. Im Modul **Produktionskontrolle**, zum Beispiel, können Sie die Buchung nach Produktionsgruppe, Ressource oder Ressourcengruppe einrichten.
 
@@ -34,7 +34,7 @@ Bevor Sie die Buchungsprofile, Buchungsdefinitionen oder die **Konten für autom
 
 ## <a name="posting-types"></a>Buchungstypen
 
-In Apps für Finanzen und Betrieb wird ein Buchungstyp verwendet, um eine allgemeine Kategorie für ein Soll oder ein Haben zu definieren. Diese Kategorie ist unabhängig vom Hauptkonto im Hauptbuch. Es gibt Buchungstypen für jedes Soll oder Haben im Hauptbuch.
+In Finanz- und Betriebs-Apps wird eine Buchungsart verwendet, um eine allgemeine Kategorie für eine Belastung oder eine Gutschrift zu definieren. Diese Kategorie ist unabhängig vom Hauptkonto im Hauptbuch. Es gibt Buchungstypen für jedes Soll oder Haben im Hauptbuch.
 
 Ein einzelner Beleg kann eine oder mehrere Buchungstypen haben. Eine Transaktion, die über ein allgemeines Journal gebucht wird, bei dem das Konto und das Gegenkonto auf **Hauptbuch** eingestellt sind, hat beispielsweise den Buchungstyp **Ledger-Journal** sowohl für Soll und Haben. Im Gegensatz dazu hat eine Kreditorenrechnung mehrere Buchungstypen. Diese Buchungstypen enthalten eine Zeile für den Kreditorensaldo und zusätzliche Zeilen für die Gegenbuchung, wie **Ledger-Journal**.
 
@@ -111,13 +111,14 @@ Viele Module in Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dyna
 - Ausgabenverwaltungsbuchung (demnächst verfügbar)
 - [Anlagevermögenbuchungsprofil](../fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md)
 - Intercompany-Buchhaltungsbuchung (demnächst verfügbar)
-- Bestandsbuchungsprofil (demnächst verfügbar)
+- [Lagerbuchung](inventory-posting.md)
 - [Buchen von Gesamttransportkosten](../../supply-chain/landed-cost/costing-parameters-setup.md)
 - [Übersicht über Buchungsdefinitionen](posting-definitions.md)
-- Produktionskontrollbuchung (demnächst verfügbar)
+- [Produktionsbuchungen](production-posting.md)
 - Projektverwaltung und Buchhaltungsbuchung (demnächst verfügbar)
 - Dienstverwaltungsbuchung (demnächst verfügbar)
 - Steuerbuchung (demnächst verfügbar)
 - Zeit- und Anwesenheitsbuchung (demnächst verfügbar)
 - Transportverwaltungsbuchung (demnächst verfügbar)
 - Buchungsprofile für die Rabattverwaltung (demnächst verfügbar)
+

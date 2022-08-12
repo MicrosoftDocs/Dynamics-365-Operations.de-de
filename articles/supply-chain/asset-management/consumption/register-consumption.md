@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 588da2a217a56d2bc25f85c9a10c6589f90b16a1
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 729ef6aae228ad1e528945031567b92c44cdf256
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9015084"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111753"
 ---
 # <a name="register-consumption"></a>Verbrauch registrieren
 
@@ -90,7 +90,7 @@ Wenn Sie Verbrauchserfassungen durchführen, werden die Registrierungen in einer
 - *Elementregistrierungen:* Zunächst werden finanzielle Dimensionen aus dem Erfassungskopf hinzugefügt, falls vorhanden. Dann werden die finanziellen Dimensionen aus dem zugehörigen Arbeitsauftragsprojekt hinzugefügt. Als nächstes werden die finanziellen Dimensionen des Standorts hinzugefügt. Schließlich werden die finanziellen Dimensionen aus der Position hinzugefügt.
 
 >[!NOTE]
->Für alle drei Registrierungsarten wird die Kombination der finanziellen Dimension validiert und ungültige Kombinationen werden ausgeblendet. Dies sind die Standardeinstellungen mit anderen Finance and Operations-Apps.
+>Für alle drei Registrierungsarten wird die Kombination der finanziellen Dimension validiert und ungültige Kombinationen werden ausgeblendet. Dies ist die Standardeinrichtung bei anderen Finanz- und Betriebs-Apps.
 
 
 

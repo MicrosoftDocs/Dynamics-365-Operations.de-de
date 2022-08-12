@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 22788dff1ee29b6920426d8ff00d412c3d5564e0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f2f51a095a23b651dca645b14e652519f20037e2
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853073"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070557"
 ---
 # <a name="create-variable-compensation-plans"></a>Erstellen von Plänen für variable Vergütung
 
@@ -42,7 +42,11 @@ Die Berechnung von Beträgen für variable Vergütung für Ihre Mitarbeiter kann
 Unternehmen können optionale **Übertragungsregeln** einrichten. **Übertragungsregeln** beschreiben, wie die variable Prämie im Zeitverlauf zugewiesen werden soll. Beispielsweise kann eine Übertragungsregel festhalten, dass der Mitarbeiter 25 % der gesamt Prämie jedes Jahr für die folgenden vier Jahre erhält. Übertragungsregeln sind nur zur Information.
 
 ## <a name="variable-compensation-plans"></a>Pläne für variable Vergütung
-Der **Plan für variable Vergütung** enthält die Regeln, Berechnungsmethoden und Standardwerte für die Berechnung der variablen Vergütung für registrierte Mitarbeiter. Wenn Sie einen variablen Vergütungsplan erstellen, muss der Typ für variable Vergütung eingerichtet werden. Der Typ der variablen Vergütung bestimmt, ob das System einen Währungsbetrag oder mehrere Einheiten für die Berechnung der Prämie berechnet. Sie müssen auch die Berechnungsmethode festlegen:
+Der **Plan für variable Vergütung** enthält die Regeln, Berechnungsmethoden und Standardwerte für die Berechnung der variablen Vergütung für registrierte Mitarbeiter. Wenn Sie einen variablen Vergütungsplan erstellen, muss der Typ für variable Vergütung eingerichtet werden. Der Typ der variablen Vergütung bestimmt, ob das System einen Währungsbetrag oder mehrere Einheiten für die Berechnung der Prämie berechnet. 
+
+Der Parameter **Zugriff auf ausgewählte Rollen beschränken** schränkt den Zugriff auf den Vergütungsplan auf ausgewählte Sicherheitsrollen ein, die diesem Plan in Human Resources zugewiesen wurden. Wenn Sie zum Beispiel Vergütungspläne erstellen, die für Führungskräfte bestimmt sind und nicht für alle HR-spezifischen Rollen sichtbar sein sollen, können Sie mit diesem Parameter den Zugriff auf diese Vergütungspläne einschränken. 
+
+Sie müssen auch die Berechnungsmethode festlegen:
 
 -   **Zeitpunkt** – Die Berechnung für variable Prämien handelt auf Grundlage der festen Vergütung, die ein Mitarbeiter auf einem bestimmten Datum worden wäre. Dieses Datum wird im Feld Prozessereignis angegeben, wenn neue Kompensationsbeträge verarbeitet werden.
 -   **Zusammengesetzt** – Für jeden eindeutigen Lohnsatz der festen Vergütung, der für den Mitarbeiter zwischen dem Anfangsdatum des Zyklus und dem Enddatum des Zyklus im Prozessereignis galt, wird ein Prämienbetrag berechnet. Die Zinssätze werden dann zusammen hinzugefügt, um die abschließende Prämie zu bestimmen. Zum Beispiel wen ein Mitarbeiter in eine andere Position mit einem anderen Lohnsatz wechselt, ändert der Zyklus In diesem Fall wird der variable Bonus für den Zeitraum angepasst, während dem der jeweilige Lohnsatz für den Mitarbeiter galt.

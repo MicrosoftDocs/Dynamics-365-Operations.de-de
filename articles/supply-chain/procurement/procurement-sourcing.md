@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ec5a9dac1d3b1288d060fe92ec94e6a105f84be8
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: b0d3869b93f6ecf4f70df6b394ce18a77318b83c
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9015287"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111783"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Beschaffungs-Startseite
 
@@ -54,7 +54,7 @@ Die Beschaffung umfasst alle Schritte von der Identifikation einer Anforderung f
 -   [Kreditorenzusammenarbeit mit Debitoren](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [Benutzer für Kreditor-Kooperationen verwalten](manage-vendor-collaboration-users.md)
 -   [Kreditorenzusammenarbeit einrichten und verwalten](set-up-maintain-vendor-collaboration.md)
--   [Demo-Skript für die Lieferungsbestandsprozesse für Microsoft Dynamics 365 for Finance and Operations](https://www.microsoft.com/download/details.aspx?id=101945)(White Paper)
+-   [Demoskript für eingehende Konsignationsbestände](https://www.microsoft.com/download/details.aspx?id=101945)(White Paper)
 -   [Lagerbestand mithilfe der Kreditorenkooperation überwachen](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 -   [Mobiler Arbeitsbereich für Kreditorenzusammenarbeit](vendor-collaboration-mobile-workspace.md)
 

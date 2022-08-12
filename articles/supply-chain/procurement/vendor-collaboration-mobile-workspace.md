@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: gfedorova
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 591d4269a1188ed8f098a342729ba49b9772f42d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 75c044d1133e1c4765cd97f4ab7e2a08ba998c35
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851651"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112149"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobiler Arbeitsbereich für Kreditorenzusammenarbeit
 
@@ -28,7 +28,7 @@ ms.locfileid: "8851651"
 
 Dieser Artikel enthält Informationen zur **Vendor collaboration** im mobilen Arbeitsbereich. Dieser Arbeitsbereich hilft Kreditoren, auf dem neuesten Stand der Bestellungen zu sein, die ihnen zur Genehmigung gesendet wurden. Sie können auch Informationen zu neuen und aktualisierten Bestellungen und Kontakten anzeigen.
 
-Dieser mobile Arbeitsbereich soll mit der mobilen App für Finanz und Betrieb (Dynamics 365)-App verwendet werden.
+Dieser mobile Arbeitsbereich ist für die Verwendung mit der Finanzen und Betrieb (Dynamics 365) Mobile-App vorgesehen.
 
 ## <a name="overview"></a>Übersicht 
 Der Arbeitsbereich für die **Kreditor-Kooperation** hält Kreditoren über neue Bestellungen auf dem Laufenden, sodass diese neue Bestellungen im Webclient sehen und auf diese reagieren können. 
@@ -110,7 +110,7 @@ Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 od
 
 ## <a name="download-and-install-the-mobile-app"></a>Herunterladen und Installieren der mobilen App
 
-Laden Sie die mobile App für Finanz und Betrieb (Dynamics 365) herunter und installieren Sie sie:
+Laden Sie die Mobile-App für Finanzen und Vorgänge (Dynamics 365) herunter und installieren Sie sie:
 
 -   [Für Android-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Für iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -171,3 +171,4 @@ Wenn die Bestellung vom Debitor bestätigt wird (d. h. der Status des Auftrags, 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7d8e55fc1293e2b33b15f3862498363a6b23f1f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0449a13989bad45cf0456a2678e5724036d2af3d
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883415"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070693"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Rechnungsautomatisierung bei gescannten Dokumenten
 
@@ -58,7 +58,7 @@ Ein Datenpaket ist die Arbeitseinheit, die gesandt werden muss, damit anschließ
 
 Kreditorenrechnungsdokumentanhang ist eine Entität der neuen Daten, die im Rahmen dieser Funktion eingegeben wird. Die Kreditorenrechnungskopfentität wurde geändert, sodass diese Anlagen unterstützt werden. Die Kreditorenrechnungspositionsentität ist für diese Funktion nicht geändert.
 
-Ausführliche Informationen zu Datenpaketen finden Sie unter [Datenverwaltungsübersicht](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Informationen zum Erstellen von Datenpaketen mithilfe des Datenverwaltungsarbeitsbereichs finden Sie unter [Datenpakete in der Dynamics 365 Finanz- und Betriebs-Apps-Lösung verarbeiten und verbrauchen](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
+Ausführliche Informationen zu Datenpaketen finden Sie unter [Datenverwaltungsübersicht](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Informationen zum Erstellen von Datenpaketen mithilfe des Arbeitsbereichs für die Datenverwaltung finden Sie unter [Datenpakete in der Dynamics 365 Finanz- und Betriebs-Apps-Lösung verarbeiten und konsumieren](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
 
 Um schnell Testdaten zu generieren, die Rechnungen und Anhänge enthalten, führen Sie die folgenden Schritte aus.
 
@@ -86,7 +86,7 @@ Rechnungen, die über Datenenpakete importiert werden, können der juristischen 
 
 ## <a name="exception-processing"></a>Ausnahme verarbeiten
 
-In Szenarios, in dem Kreditorenrechnungen über Integration in Finance and Operations kommen, muss es einen einfachen Weg für das Kreditorteammitglied geben, Ausnahmen oder fehlgeschlagene Rechnungen zu verarbeiten, und hängige Rechnungen zu verarbeiten und hängige Rechnungen der fehlgeschlagenen Rechnunge zu erstellen. Diese Ausnahme, die für Kreditorenrechnungen verarbeitet wird, ist nun Teil von Finance and Operations.
+In Szenarien, in denen Kreditor-Rechnungen über die Integration in Finanzen und Betrieb eingehen, muss es für ein Mitglied des Kreditorenteams eine einfache Möglichkeit geben, Ausnahmen oder fehlgeschlagene Rechnungen zu verarbeiten und aus den fehlgeschlagenen Rechnungen ausstehende Rechnungen zu erstellen. Diese Ausnahmeverarbeitung für Kreditor-Rechnungen ist jetzt Teil von Finanzen und Betrieb.
 
 ### <a name="vendor-invoices-that-failed-to-import-list-page"></a>Lieferantenrechnungen, bei denen die Listenseite nicht importiert werden konnte
 
@@ -225,3 +225,4 @@ Standardmäßig hat die Benutzerrolle, die Bearbeitungsrechte für eine Seite ha
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

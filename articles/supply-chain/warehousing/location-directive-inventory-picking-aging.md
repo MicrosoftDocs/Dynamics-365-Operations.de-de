@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 34ce119ca70596f0e40797c4b44a8fba4d5b7e0e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8b75907d01a029da1ed6a8224f8a7c0ca0230550
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885695"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068669"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Fälligkeit für Lagerplatzrichtlinie-Bestandsentnahme
 
@@ -82,7 +82,7 @@ Die Demodaten erfordern Einstellungs- und Bestandsapassungen, um die Szenarien z
 
 1. Wählen Sie **OK**, um Ihre Einstellungen zu übernehmen und das Abfragedialogfeld zu schließen.
 1. Wählen Sie **Speichern** aus, um Ihre Änderungen an der Lagerplatzrichtlinie zu speichern.
-1. Führen Sie auf einem mobilen Gerät oder in der App *Dynamics 365 for Finance and Operations – Lagerung* die folgenden Schritte aus, um vorhandenen Bestand aus dem Lagerort zu entfernen und die Szenarien zu unterstützen:
+1. Führen Sie auf einem mobilen Gerät oder in der App *Dynamics 365 Supply Chain Management – Lagerung* die folgenden Schritte aus, um vorhandenen Bestand aus dem Lagerort zu entfernen und die Szenarien zu unterstützen:
 
     1. Melden Sie sich mit der passenden Benutzer-ID und einem Kennwort für den Lagerort *63* an.
     1. Auf dem Hauptmenü wählen Sie **Qualität**.

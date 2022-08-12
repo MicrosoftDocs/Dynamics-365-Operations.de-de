@@ -1,7 +1,7 @@
 ---
 title: Abgleichsregeln für Bankabstimmung einrichten
 description: Dieser Artikel erklärt, wie Sie Abstimmungsregeln und Abstimmungsregelsätze für den Bankabstimmungsprozess einrichten. Abstimmungsübereinstimmungsregeln sind eine Gruppe von Kriterien, die verwendet werden, um Bankauszugspositionen und Bankdokumentpositionen während des Abstimmungsvorgangs zu filtern.
-author: panolte
+author: angelad116
 ms.date: 08/24/2020
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kfend
 ms.custom: 12971
 ms.assetid: b5073f83-31dc-404f-af42-3fd84a02a7c6
 ms.search.region: Global
-ms.author: panolte
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: baea7ea7ec98c905e9ae896a8cf1e4ac54fb4a9d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ed8572eca14beb8a0e3c382f0f328cc6d118491c
+ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899928"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151310"
 ---
 # <a name="set-up-bank-reconciliation-matching-rules"></a>Abgleichsregeln für Bankabstimmung einrichten
 
@@ -44,7 +44,8 @@ Standardmäßig stimmen Abgleichsregeln mit dem ersten Bankdokument überein, da
 |--------|---------------|----------------------------------------------------------|
 | **Mit Bankdokument abgleichen**       | Erstellen Sie Kriterien, um anzugeben, wie die Bankdokumente und die Bankauszugspositionen abgeglichen werden, wenn die Abgleichsregel von der Seite **Bankabstimmungsarbeitsblatt** ausgeführt wird. Die Buchungspositionen werden entsprechend weiteren Kriterien ausgewählt, die auf den Inforegistern eingerichtet werden.                                | **Schritt 1: Definieren Sie die Abgleichsregel** – Wählen Sie die Kriterien aus, um anzugeben, welche Bankauszüge mit Finance-Banktransaktionen abgeglichen werden sollen. **Schritt 2 (optional): Wählen Sie die Auszugspositionen aus, denen gegenüber Abgleichsregeln ausgeführt werden:**  Filtern Sie die Auszugsposition auf die die Regel angewendet wird.                                                                                                                                                                                                                                                                                                               |
 | **Mehrere Auszugspositionen löschen** | Erstellen Sie Kriterien, um anzugeben, wie Rückbuchungsauszugspositionen von der Seite **Bankabstimmungsarbeitsblatt** entfernt werden sollen, wenn die Abgleichsregel ausgeführt wird. Diese Option wird verwendet, wenn wegen eines Bankfehlers zwei Bankauszugspositionen im importierten Bankauszug aufgeführt werden und die Positionen abgestimmt werden müssen. | **Schritt 1**:**Rückbuchungsauszugspositionen suchen** - Fügen Sie Auswahlkriterien hinzu, um Rückbuchungsauszugspositionen auszuwählen. Um beispielsweise nur Schecks auswählen, wählen Sie den **Banktransaktionscode** im "Feld"-Feld aus, wählen das Pluszeichen (+) (+) im Feld **Operator** aus und geben **Schecks** im Wertfeld ein. **Schritt 2: Ursprüngliche Auszugspositionen suchen** - Sie können Auswahlkriterien hinzufügen, um zu Bankdokumentpositionen mit Bankauszugspositionen abzugleichen. **Schritt 3: Finance-Bankbuchungen suchen** – Sie können Auswahlkriterien hinzufügen, um zu Finance-Banktrransaktionen mit Bankauszugspositionen abzugleichen. |
-| **Neue Buchungen markieren**          | Erstellen Sie Kriterien, um anzugeben, wie neue Transaktionen auf der Seite **Bankabstimmungsarbeitsblatt** markiert werden sollen, wenn die Abgleichsregel ausgeführt wird.                                                                                                                                                                 | **Schritt 1: Auszugspositionen suchen**- Fügen Sie Auswahlfelder hinzu, um anzugeben, welche Bankauszugspositionen auf der Seite **Bankabstimmungsarbeitsblatt** ausgewählt werden sollen. **Schritt 2: Finance and Operations** – Sie können Auswahlkriterien hinzufügen, um Bankdokumentpositionen zu suchen. Wenn kein Bankdokument gefunden wird, wird eine Auszugsposition als neue Buchung markiert.                                                                                                                                                                                                                                             |
+| **Neue Buchungen markieren**          | Erstellen Sie Kriterien, um anzugeben, wie neue Transaktionen auf der Seite **Bankabstimmungsarbeitsblatt** markiert werden sollen, wenn die Abgleichsregel ausgeführt wird.                                                                                                                                                                 | **Schritt 1: Auszugspositionen suchen**- Fügen Sie Auswahlfelder hinzu, um anzugeben, welche Bankauszugspositionen auf der Seite **Bankabstimmungsarbeitsblatt** ausgewählt werden sollen. **Schritt 2: Finanzen und Vorgänge finden** – Sie können Auswahlkriterien hinzufügen, um Zeilen mit Bankbelegen zu suchen. Wenn kein Bankdokument gefunden wird, wird eine Auszugsposition als neue Buchung markiert.                                                                                                                                                                                                                                             |
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

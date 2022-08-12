@@ -1,7 +1,7 @@
 ---
 title: Problembehandlung bei Einrichtung der Cashflow-Planung
 description: Dieser Artikel enthält Antworten auf Fragen, die Sie möglicherweise haben, wenn Sie die Cashflow-Planung konfigurieren. Behandelt werden häufig gestellte Fragen (FAQ) zur Einrichtung des Cashflows sowie zu Aktualisierungen des Cashflows und des Power BI-Cashflows.
-author: panolte
+author: angelad116
 ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: LedgerCovParameters
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: panolte
+ms.author: angelading
 ms.search.validFrom: 2020-12-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 0e3438bc07fde28d5d9d2d5b3d83bbe70692c0bd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 807a1da1906bdefec38954cea02ed29b0157d69e
+ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878069"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151400"
 ---
 # <a name="troubleshoot-cash-flow-forecasting-setup"></a>Problembehandlung bei Einrichtung der Cashflow-Planung
 

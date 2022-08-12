@@ -1,6 +1,6 @@
 ---
 title: Hilfesystem (enthält Video)
-description: Dieser Artikel enthält eine Übersicht über das Hilfesystem für Finanz- und Betriebs-Apps.
+description: Dieser Artikel bietet einen Überblick über das Hilfesystem für Finanz- und Betriebs-Apps.
 author: edupont04
 ms.date: 07/20/2021
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 924af44a6f0b1430859f0f6354ef55ff67a1b677
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 57c17cab920c531b3eb125260064d01dd8662576
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898368"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124193"
 ---
 # <a name="help-system"></a>Hilfesystem
 
@@ -53,7 +53,7 @@ Sie können Inhalte auf docs.microsoft.com mit jeder Suchmaschine finden. Für o
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>Benachrichtigungen zu Änderungen über einen RSS-Feed erhalten
 
-Verwenden Sie den folgenden Link, um einen RSS-Feed aller Updates zu abonnieren, die den Inhalt von Apps für Finanzen und Betrieb betreffen:
+Um einen RSS-Feed für alle Aktualisierungen der Inhalte auf docs.microsoft.com in den Apps für Finance und Operations zu abonnieren, verwenden Sie den folgenden Link:
 
 [RSS-Feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
@@ -98,7 +98,7 @@ Weitere Informationen finden Sie in der [Leitfaden für Mitwirkende an der Micro
 
 Ein Aufgabenleitfaden ist eine kontrollierte, geführte, interaktive Erfahrung, die Sie durch die Schritte einer Aufgabe oder eines Geschäftsprozesses führt. Sie können einen Aufgabenleitfaden aus dem **Hilfe**-Bereich öffnen (wiedergeben). Wenn Sie zuerst einen Aufgabenleitfaden auswählen, werden im Bereich **Hilfe** schrittweise Anleitungen für die Aufgabe angezeigt. Lokalisierte Aufgabenleitfäden sind verfügbar.
 
-Microsoft hat Aufgabenleitfadenbibliotheken für Produktversionen bis zur Veröffentlichung der Dynamics 365 for Finance and Operations-Version von Dezember 2017 freigegeben. Im Abschnitt [Auf Aufgabenleitfäden über den Hilfebereich zugreifen](#accessing-task-guides-from-the-help-pane) dieses Artikels wird beschrieben, wie Sie die richtigen Aufgabenleitfäden für Ihr Produkt finden.
+Microsoft hat Anleitungsbibliotheken für die Produktversionen bis Dezember 2017 von Dynamics 365 Finance and Operations veröffentlicht. Im Abschnitt [Auf Aufgabenleitfäden über den Hilfebereich zugreifen](#accessing-task-guides-from-the-help-pane) dieses Artikels wird beschrieben, wie Sie die richtigen Aufgabenleitfäden für Ihr Produkt finden.
 
 ![Leseansicht des Aufgabenleitfadens.](./media/task-guide-ops.png)
 
@@ -182,3 +182,4 @@ In der folgenden Tabelle werden unsere Websites aufgeführt. Für Sites, die ein
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

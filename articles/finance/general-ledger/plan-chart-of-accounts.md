@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e797117199ff57cb4d3beae187ae7649579d33b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 10906d7b30628dfe69907cfa69ae1022fde33243
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853347"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070633"
 ---
 # <a name="plan-your-chart-of-accounts"></a>Kontenplan planen
 
@@ -43,7 +43,7 @@ Hier einige der Faktoren, die Sie bei der Strukturierung des Kontenplans für Ih
 Sie erstellen den Kontenplan auf der Seite **Kontenplan**. Sie können Hauptkonten über die Seite **Kontenplan** oder die Seite **Hauptkonten** erstellen. Ihre Hauptkonten dürfen keine Sonderzeichen verwenden, die als Trennzeichen für Kontenplan verwendet werden. Andernfalls erfahren Sie möglicherweise Instabilität, oder Sie müssen möglicherweise immer Suchen oder das Dialogfeld verwenden, wenn Sie Kombinationen von Konten und Dimensionen eingeben. Weitere Informationen finden Sie unter [Erstellen eines Hauptkontos](tasks/create-main-account.md).
 
 > [!NOTE]
-> In Dynamics 365 for Finance and Operations, Version 8.0 (April 2018 ), können Sie das Kontenplantrennzeichen aus der Seite **Hauptbuchparameter** ändern.
+> In Dynamics 365 Finance Version 8.0 (April 2018) können Sie das Begrenzungszeichen des Kontenplans auf der Seite **Hauptbuchparameter** ändern.
 
 Es wird empfohlen, die Hauptkonten mit Hauptkontokategorien verknüpfen, sodass Sie die standardmäßige Finanzberichte nutzen können, ohne Änderungen vornehmen zu müssen. Daher können Sie Berichte schneller und einfacher entwerfen und verwalten.
 
@@ -60,3 +60,4 @@ Weitere Informationen finden Sie in folgenden Themen:
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

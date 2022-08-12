@@ -1,6 +1,6 @@
 ---
 title: Eine Instanz entfernen
-description: Diese Artikel führt Sie durch den Prozess des Entfernens eine Testversions- oder Produktionsumgebung für Microsoft Dynamics 365 Human Resources.
+description: Dieser Artikel beschreibt den Prozess der Entfernung einer Test- oder Produktionsumgebung für Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/11/2021
 ms.topic: article
@@ -14,16 +14,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4256938be70f301d3d7b7663f10addb19725b048
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0ce676c93e133cc04ad9c49417ed2ca0d6791e93
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859632"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178471"
 ---
 # <a name="remove-an-instance"></a>Eine Instanz entfernen
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Gilt für:** Human Resources in der eigenständigen Infrastruktur_ 
+
+> [!NOTE]
+> Ab Juli 2022 können neue Human Resources Umgebungen nicht mehr in der eigenständigen Human Resources Infrastruktur bereitgestellt werden und neue Microsoft Dynamics Lifecycle Services (LCS) Projekte können dort nicht mehr erstellt werden. Debitor kann Human Resources Umgebungen in der Finanzen und Betrieb Infrastruktur bereitstellen. Weitere Informationen finden Sie unter [Personal Resources in der Finanzen und Betrieb Infrastruktur bereitstellen](/hr-admin-setup-provision-fo.md).
+
+> [!IMPORTANT]
+> Die Finanz- und Betriebs-App-Infrastruktur unterstützt die Löschung einer Umgebung. Weitere Informationen darüber, wie Sie eine Umgebung löschen, finden Sie unter [Löschen einer Umgebung](../fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure.md#delete-an-environment).
 
 In diesem Artikel wird erklärt, wie Sie eine Testversions- oder Produktionsumgebung für Microsoft Dynamics 365 Human Resources entfernen können.
 
@@ -42,10 +48,13 @@ Die vorhandene Testversionsumgebung wird entfernt. Wenn sie entfernt wird, könn
 
 Für diesen Artikel wird vorausgesetzt, dass Sie Human Resources über einen Cloud-Lösungsanbieter (CSP) oder eine Unternehmensarchitekturvereinbarung erworben haben. 
 
-Da eine einzelne Human Resources-Umgebung innerhalb einer einzelnen Power Apps-Umgebung „enthalten“ ist, sind zwei Optionen zu bedenken. Die erste Option entfernt die gesamte Power Apps-Umgebung, die zweite Option entfernt nur Human Resources. Die erste Option wird bevorzugt, wenn Sie eine Power Apps-Umgebung speziell für den Zweck der Bereitstellung von Human Resources erstellt haben und wenn Sie gerade erst mit der Implementierung begonnen haben oder wenn Sie keine eingerichteten Integrationen haben. Die zweite Option ist sinnvoll, wenn Sie eine etablierte Power Apps-Umgebung mit umfangreichen Daten haben, die in Power Apps und Power Automate genutzt wird.
+Da eine einzelne Human Resources Umgebung in einer einzigen Power Apps-Umgebung enthalten ist, gibt es zwei Optionen, die Sie beim Entfernen einer Umgebung berücksichtigen müssen: 
+- **Entfernen Sie die gesamte Power Apps Umgebung.** Diese Option wird bevorzugt, wenn die Power Apps-Umgebung zum Zweck der Bereitstellung von Human Resources erstellt wurde, die Implementierung gerade erst begonnen hat oder Sie über keine etablierten Integrationen verfügen.  
+- **Nur Human Resources entfernen.** Diese Option ist geeignet, wenn es eine etablierte Power Apps-Umgebung gibt, die mit Daten gefüllt ist, die in Microsoft Power Apps und Power Automate verwendet werden.
+
 
 > [!Important]
-> Bevor Sie die Power Apps-Umgebung entfernen, stellen Sie sicher, dass sie nicht für Ihr Datenintegrationen außerhalb der Bereich von Human Resources verwendet wird. Standardmäßig kann die Power Apps-Umgebung nicht entfernt werden. 
+> Bevor Sie die Power Apps-Umgebung entfernen, stellen Sie sicher, dass sie nicht für Datenintegrationen außerhalb des Bereichs Human Resources verwendet wird. Standardmäßig kann die Power Apps-Umgebung nicht entfernt werden. 
 
 So entfernen Sie die gesamte Power Apps-Umgebung, einschließlich Human Resources und zugehörige Anwendungen und Flows:
 
@@ -73,7 +82,7 @@ Um eine Human Resources-Umgebung aus einer vorhandenen Power Apps-Umgebung zu en
 
 ## <a name="recover-a-soft-deleted-environment"></a>Eine nicht vollständig gelöschte Umgebung wiederherstellen
 
-Wenn Sie die Power Apps Umgebung, mit der Ihre Human-Ressources-Umgebung verbunden ist, löschen, lautet der Status der Human-Ressources-Umgebung in Lifecycle Services **weich gelöscht**. In diesem Fall können Benutzer keine Verbindung zu Human Ressources herstellen.
+Wenn Sie die Power Apps-Umgebung löschen, mit der Ihre Human Resources Umgebung verbunden ist, lautet der Status der Human Resources Umgebung in LCS **Soft gelöscht**. In diesem Fall können Benutzer keine Verbindung zu Human Ressources herstellen.
 
 So stellen Sie die Umgebung wieder her:
 
@@ -82,7 +91,7 @@ So stellen Sie die Umgebung wieder her:
 2. Wenden Sie sich an den Support, um die Human-Resources-Umgebung wiederherzustellen. Weitere Informationen erhalten Sie über den [Support](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
 
 > [!Warning]
-> Power Apps Umgebungen werden nach dem Löschen nur sieben Tage lang gespeichert. Sie müssen die Umgebung innerhalb dieser sieben Tage wiederherstellen.
+> Power Apps Umgebungen werden nach dem Löschen nur sieben Tage lang gespeichert. Sie müssen die Umgebung innerhalb der Sieben-Tage-Frist wiederherstellen.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

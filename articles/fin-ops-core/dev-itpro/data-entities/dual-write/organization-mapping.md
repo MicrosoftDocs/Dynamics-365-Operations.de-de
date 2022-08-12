@@ -1,6 +1,6 @@
 ---
 title: Organisationshierarchie in Dataverse
-description: In diesem Artikel wird die Integration von Organisationsdaten zwischen Finanz- und Betriebs-Apps und Dataverse beschrieben.
+description: Dieser Artikel beschreibt die Integration von Organisationsdaten zwischen Finanz- und Betriebs-Apps und Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: a4edaf5b9c50e9d8781ff703328ac786d71ee782
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2f900637855bee3e21916652a373c683e6bf1392
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884731"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112017"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Organisationshierarchie in Dataverse
 
@@ -28,11 +28,11 @@ Obwohl es in Dataverse nicht das Konzept einer Organisationshierarchie gibt, gib
 
 ## <a name="data-flow"></a>Datenfluss
 
-Ein Geschäftsökosystem, das aus Finanz- und Betriebs-Apps and Dataverse besteht, wird weiterhin eine Organisationshierarchie haben. Diese Organisationshierarchie basiert auf Finanz- und Betriebs-Apps, wird aber in Dataverse zu Informations- und Erweiterbarkeitszwecken verfügbar gemacht. Die folgende Abbildung zeigt die Organisationshierarchieinformationen, die in Dataverse als unidirektionaler Datenfluss von Finanz- und Betriebs-Apps nach Dataverse verfügbar gemacht werden.
+Ein Business-Ökosystem, das aus Finanz- und Betriebs-Apps und Dataverse besteht, wird weiterhin eine Organisationshierarchie haben. Diese Organisationshierarchie ist auf Finanz- und Betriebs-Apps aufgebaut, wird aber zu Informations- und Erweiterungszwecken in Dataverse dargestellt. Die folgende Abbildung zeigt die Informationen zur Organisationshierarchie, die in Dataverse als einseitiger Datenfluss von Finanz- und Betriebs-Apps zu Dataverse dargestellt werden.
 
 ![Architekturabbildung.](media/dual-write-data-flow.png)
 
-Für die einseitige Synchronisierung von Daten aus Apps für Finanzen und Betrieb mit Dataverse stehen Zuordnungen von Organisationshierarchien zur Verfügung.
+Für die einseitige Synchronisierung von Daten aus Finanz- und Betriebs-Apps mit Dataverse stehen Zuordnungen von Organisationshierarchien zur Verfügung.
 
 ## <a name="templates"></a>Vorlagen
 
@@ -52,3 +52,4 @@ Finanz- und Betriebs-Apps | Customer Engagement-Apps     | Description
 Interne Organisationsinformationen in Dataverse stammen aus zwei Tabellen, **Organisationseinheit** und **Juristische Personen**.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

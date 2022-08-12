@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f032f95377fdc6f8ec7fbbfa7aadab8fc448be5d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fb0fbfcceece2883c32a266bcbe659211b0b56ce
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577767"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069725"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Einen Min-Max-Auffüllungsprozess einrichten
 
 [!include [banner](../../includes/banner.md)]
 
-Diese Prozedur zeigt Ihnen an, wie ein neuer Auffüllungsprozess eingerichtet wird, der die Min./Max.-Auffüllungsstrategie verwendet. Wenn Lagerbestand unter der Untergrenze liegt, wird Arbeit erstellt, um den Lagerplatz aufzufüllen. Die Prozedur zeigt auch, wie feste Entnahmeorte verwendet werden, um die Lagerauffüllung zuzulassen, selbst wenn der Lagerbestand unter die Untergrenze sinkt und wie der Auffüllungsprozess aktiviert wird, um mithilfe eines Batchauftrags regelmäßig ausgeführt zu werden. Diese Aufgaben werden normalerweise von einem Lagerortleiter ausgeführt. Sie können diese Prozedur im USMF-Demodatunternehmen ausführen, unter Verwendung der Beispielswerte unten, oder Sie können sie mit Ihren eigenen Daten ausführen. Wenn Sie Ihre eigenen Daten verwenden, stellen Sie sicher, dass Sie einen Lagerort haben, der für Lagerortverwaltungsprozesse aktiviert ist.
+Diese Prozedur zeigt Ihnen an, wie ein neuer Auffüllungsprozess eingerichtet wird, der die Min./Max.-Auffüllungsstrategie verwendet. Wenn Lagerbestand unter der Untergrenze liegt, wird Arbeit erstellt, um den Lagerplatz aufzufüllen. Die Prozedur zeigt auch, wie feste Entnahmeorte verwendet werden, um die Lagerauffüllung zuzulassen, selbst wenn der Lagerbestand unter die Untergrenze sinkt und wie der Auffüllungsprozess aktiviert wird, um mithilfe eines Batchauftrags regelmäßig ausgeführt zu werden. Diese Aufgaben werden normalerweise von einem Lagerortleiter ausgeführt. Sie können diese Prozedur im USMF-Demodatunternehmen ausführen, unter Verwendung der Beispielswerte unten, oder Sie können sie mit Ihren eigenen Daten ausführen. Wenn Sie Ihre eigenen Daten verwenden, stellen Sie sicher, dass Sie ein Lager haben, das für Lagerverwaltungsprozesse (WMS) aktiviert ist.
 
 
 ## <a name="create-a-fixed-picking-location"></a>Erstellen Sie einen festen Entnahmeort

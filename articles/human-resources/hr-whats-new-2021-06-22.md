@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: aacb605374d99a3c0bad3438c89e33a04a4d7faf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 61c457abf87ce2da554ddb1472512416159c4dca
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897776"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068423"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-22-2021"></a>Was ist neu oder geändert in Dynamics 365 Human Resources 22. Juni 2021
 
@@ -82,7 +82,7 @@ Die folgenden neuen Funktionen stehen in der Vorschau zur Verfügung. Weitere In
 
 | Funktion | Informationen |
 | --- | --- |
-| Plattformupdate 10.0.19 (43) | Das Plattform-Update 10.0.19 wird voraussichtlich mit dem Service-Release am 28. Juni 2021 ausgerollt. Weitere Informationen finden Sie unter [Plattform-Updates für Version 10.0.19 der Finanz- und Betriebs-Apps (Juni 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19). |
+| Plattformupdate 10.0.19 (43) | Das Plattform-Update 10.0.19 wird voraussichtlich mit dem Service-Release am 28. Juni 2021 ausgerollt. Weitere Informationen finden Sie unter [Plattform-Updates für die Version 10.0.19 der Finanz- und Betriebs-Apps (Juni 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19). |
 |  Umschalten der Anzeige von Betriebsjahren | Diese Funktion bietet die Möglichkeit, unterschiedliche Daten zur Berechnung der Dienstjahre zu verwenden, die im Formular **Bereinigte Mitarbeiterentität** und im Formular **Personen** angezeigt werden.  Dies wird in den Human Resources-Parametern verfügbar sein. |
 |  Aktivieren Sie einen Abwesenheitsmanager, um den Urlaub zu verwalten | [Aktivieren Sie einen Abwesenheitsmanager, um den Urlaub zu verwalten](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-absence-manager-manage-leave) |
 |  Anhänge für bestimmte Urlaubsarten vorschreiben | Mit dieser Funktion können Admins das Hinzufügen von Anhängen beim Senden von Urlaubsanträgen für bestimmte Urlaubsarten vorschreiben. |
@@ -99,3 +99,4 @@ Eine vollständige Liste der geplanten Funktionen und ihrer geplanten Versionen 
 [Funktionen verwalten](hr-admin-manage-features.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

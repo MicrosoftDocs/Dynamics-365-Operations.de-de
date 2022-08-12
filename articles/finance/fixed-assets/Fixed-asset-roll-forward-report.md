@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 9adbf8f5baa829fb28977d618a4f8beee31ef080
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a4d423b149957e624269231aede510190f0c14c7
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870132"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068779"
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Rollforwardbericht für Anlagen
 
@@ -30,7 +30,7 @@ Der Bericht **Rollforward für Anlagen** bietet – in einem einfach zu lesende
 
 Der Bericht **Rollforward für Anlagen** verwendet das Framework für die elektronische Berichterstellung (EB). Bevor Sie den Bericht ausführen können, müssen die Rollforwardkonfigurationen für Anlagenmodell und Anlagen aus Microsoft Dynamics Lifecycle Services (LCS) importiert werden. Weitere Informationen finden Sie unter [Elektronische Berichtskonfigurationen aus Lifecycle Services herunterladen](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
-Dieser Bericht ist in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3, oder als Hotfix für Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (Juli 2017), verfügbar. Drei Hotfixes müssen auf Umgebungen angewendet werden, die die Version von Juli 2017 haben:
+Dieser Bericht ist in Microsoft Dynamics 365 Finance, Enterprise Edition 7.3, oder als Hotfix für Microsoft Dynamics 365 Finance, Enterprise Edition (Juli 2017) verfügbar. Drei Hotfixes müssen auf Umgebungen angewendet werden, die die Version von Juli 2017 haben:
 
 - **KB 4041754:** Konfiguration der elektronischen Berichterstellung (EB) kann nicht von LCS heruntergeladen werden, da sie für die aktuelle Version nicht anwendbar ist, nachdem das Plattformupdatepaket angewendet wurde.
 - **KB 4056107:** Elektronische Berichterstellung (GER) kumulatives Update 5
@@ -67,3 +67,4 @@ In der folgenden Tabelle werden die Felder beschrieben, die im Bericht zur Verf�
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

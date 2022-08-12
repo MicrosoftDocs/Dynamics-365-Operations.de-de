@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 5cccba580d23c3a0e9aed62f76a305926a58585f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a002bae22044ea10be30340a87a191305f6c6b92
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879803"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111969"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Einrichtung von dualem Schreiben in Lifecycle Services
 
@@ -28,8 +28,8 @@ In diesem Artikel wird erläutert, wie Sie eine Verbindung für duales Schreiben
 
 Der Debitor muss die Power Platform-Integration wie in den folgenden Themen beschrieben durchführen:
 
-- Wenn Sie Microsoft Power Platform noch nicht verwenden und Ihre Finanz- und Betriebs-Umgebungen um Funktionalitäten der Plattform erweitern möchten, lesen Sie [Power Platform Integration - Während der Bereitstellung der Umgebung aktivieren](../../power-platform/enable-power-platform-integration.md#enable-during-deploy).
-- Wenn Sie bereits Dataverse- und Power Platform-Umgebungen haben und diese mit Finanz- und Betriebs-Umgebungen verbinden möchten, lesen Sie [Power Platform-Integration - Aktivieren nach Bereitstellen der Umgebung](../../power-platform/enable-power-platform-integration.md#enable-after-deploy).
+- Wenn Sie Microsoft Power Platform noch nicht verwenden und Ihre Finanz- und Betriebs-Umgebungen um Funktionalitäten der Plattform erweitern möchten, lesen Sie [Power Platform Integration – Während der Bereitstellung der Umgebung aktivieren](../../power-platform/enable-power-platform-integration.md#enable-during-deploy).
+- Wenn Sie bereits über die Umgebungen Dataverse und Power Platform verfügen und diese mit den Umgebungen von Finanzen und Betrieb verbinden möchten, lesen Sie [Power Platform Integration – Aktivieren nach dem Bereitstellen der Umgebung](../../power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
 ## <a name="set-up-dual-write-for-new-or-existing-dataverse-environments"></a>Dual-write für neue oder bestehende Dataverse-Umgebungen festlegen
 
@@ -53,7 +53,7 @@ Befolgen Sie diese Schritte, um duales Schreiben von der LCS -Seite **Umgebungsd
 
     :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Link zur Power Platform-Umgebung.":::
 
-8. Wenn die Verknüpfung abgeschlossen ist, wird ein Hyperlink angezeigt. Verwenden Sie den Link, um sich beim duales Schreiben Administrationsbereich in der Finance und Operations Umgebung anzumelden. Von dort aus können Sie Entitätszuordnungen einrichten.
+8. Wenn die Verknüpfung abgeschlossen ist, wird ein Hyperlink angezeigt. Verwenden Sie den Link, um sich beim Dual-write-Administrationsbereich in der Finanz- und Betriebs-Umgebung anzumelden. Von dort aus können Sie Entitätszuordnungen einrichten.
 
 ## <a name="linking-mismatch"></a>Verknüpfungskonflikt
 
@@ -71,3 +71,4 @@ Wenn Sie diese Warnung erhalten, versuchen Sie eine der folgenden Lösungen:
 In der Vergangenheit war eine manuelle Support-Ticket-Option verfügbar, aber das war, bevor es die obige Option 1 gab.  Microsoft unterstützt keine manuellen Relinking-Anfragen über Support-Tickets mehr.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

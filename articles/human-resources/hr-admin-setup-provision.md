@@ -14,18 +14,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9d13372d8cc1f1f0f1407ea69bee4f98ae5065c2
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 6fc44b52e2f7662fc6be609562cec903a8755d1b
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9015345"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178502"
 ---
 # <a name="provision-human-resources"></a>Human Resources bereitstellen
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Gilt für:** Human Resources in der eigenständigen Infrastruktur_ 
 
-
+> [!NOTE]
+> Ab Juni 2022 können Human Resources Umgebungen nur noch auf der Finanz- und Betriebs-App-Infrastruktur bereitgestellt werden. Weitere Informationen finden Sie unter [Personal Resources in der Finanzen und Betrieb Infrastruktur bereitstellen](hr-admin-setup-provision-fo.md).
 
 Dieser Artikel erklärt den Prozess der Bereitstellung einer neuen Produktionsumgebung für Microsoft Dynamics 365 Human Resources. 
 
@@ -40,14 +41,14 @@ Bevor Sie mit der Bereitstellung einer neuen Produktionsumgebung beginnen, müss
 ## <a name="provision-a-human-resources-trial-environment"></a>Bereitstellen einer Human Resources-Testumgebung
 
 >[!NOTE]
-> Ab April 2022 sind die Human Resources-Testumgebungen nicht mehr in der eigenständigen Anwendung verfügbar. Potenzielle Kunden, die daran interessiert sind, die Human Resources-Funktionen in Finanz- und Betriebs-Apps zu evaluieren, können dies mit der kostenlosen 30-Tage-Testversion zusammen mit den Demodaten tun. Dynamics 365 Finance wird die Human Resources-Funktionen beinhalten, die durch die Zusammenführung der eigenständigen Anwendung in die Infrastruktur von Finance eingebracht werden. Weitere Informationen finden Sie unter [Zusammenführung von HR-Angeboten bündelt Funktionen für Kunden](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers). Weitere Informationen zu den Testversionen von Dynamics 365 Finance finden Sie in der [Schritt-für-Schritt-Anleitung](../fin-ops-core/fin-ops/get-started/before-you-buy.md). 
+> Ab April 2022 sind die Human Resources-Testumgebungen nicht mehr in der eigenständigen Anwendung verfügbar. Potenzielle Debitor, die die Funktionalitäten von Human Resources in Finanz- und Betriebs-Apps testen möchten, können dies mit dem kostenlosen 30-tägigen Test und den Demodaten tun. Dynamics 365 Finance wird die Human Resources-Funktionen beinhalten, die durch die Zusammenführung der eigenständigen Anwendung in die Infrastruktur von Finance eingebracht werden. Weitere Informationen finden Sie unter [Zusammenführung von HR-Angeboten führt Funktionalitäten für Debitor zusammen](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers). Weitere Informationen über Dynamics 365 Finance Tests finden Sie in der [Schritt-für-Schritt-Anleitung](../fin-ops-core/fin-ops/get-started/before-you-buy.md). 
 
 
 Bevor Sie Ihre erste Sandbox- oder Produktionsumgebung bereitstellen, möchten Sie möglicherweise eine [Human Resources Testumgebung](https://go.microsoft.com/fwlink/p/?LinkId=2115962) bereitstellen, um die Human Resources-Funktionalität zu validieren. Probeumgebung enthält fiktive Daten, die verwendet werden können, um das Programm in einem sicheren Verfahren zu untersuchen. Obwohl eine Probeumgebung dem Benutzer gehört, der sie angefordert hat, können andere Benutzer durch die Systemverwaltungserfahrung für Human Resources eingeladen werden. 
 
-Testumgebungen bieten die Möglichkeit, Personalwesenfunktionen für Personen zu bewerten, die noch keinen Zugriff auf eine Personalwesenumgebung haben. Wenn Sie eine Testumgebung bereitstellen und der authentifizierte Benutzer bereits Zugriff auf eine oder mehrere vorhandene Umgebungen des Personalwesens hat, wird der Benutzer an die vorhandene Umgebung oder Liste der Umgebungen umgeleitet.
+Testumgebungen helfen bei der Evaluierung der Human Resources-Funktionalität für Personen, die noch keinen Zugriff auf eine Human Resources-Umgebung haben. Wenn Sie eine Testumgebung bereitstellen und der authentifizierte Benutzer bereits Zugriff auf eine oder mehrere vorhandene Umgebungen des Personalwesens hat, wird der Benutzer an die vorhandene Umgebung oder Liste der Umgebungen umgeleitet.
 
-Test-Umgebungen sind nicht für die Verwendung als Produktionsumgebung vorgesehen. Sie sind auf einen Testzeitraum von 30 Tagen beschränkt. Nach Ablauf des Testzeitraums werden die Umgebung und alle darin befindlichen Daten gelöscht und können nicht wiederhergestellt werden. Die Umgebung kann nicht in eine Sandbox- oder Produktionsumgebung umgewandelt werden. Sie können sich nun für eine neue Probeumgebung anmelden, nachdem die vorhandene Umgebung abläuft.
+Test-Umgebungen sind nicht für die Verwendung als Produktionsumgebung vorgesehen. Sie sind auf einen Testzeitraum von 30 Tagen beschränkt. Wenn der Testzeitraum abläuft, werden die Umgebung und alle darin befindlichen Daten gelöscht und können nicht wiederhergestellt werden. Die Umgebung kann nicht in eine Sandbox- oder Produktionsumgebung umgewandelt werden. Sie können sich nun für eine neue Probeumgebung anmelden, nachdem die vorhandene Umgebung abläuft.
 
 Wenn Sie eine Human-Resources-Testumgebung erstellen, wird zusätzlich eine Power Apps-Testumgebung auf dem Mandanten erstellt und mit der Human-Resources-Umgebung verknüpft. Die Power Apps-Umgebung mit dem Namen „TestDrive“ hat den gleichen Testzeitraum wie die Human-Resources-Umgebung.
 
@@ -56,14 +57,14 @@ Wenn Sie eine Human-Resources-Testumgebung erstellen, wird zusätzlich eine Powe
 
 ## <a name="plan-human-resources-environments"></a>Human Resources-Umgebungen planen
 
-Bevor Sie Ihre erste Human Resources-Umgebung erstellen, sollten Sie die Umgebungsanforderungen für Ihr Projekt sorgfältig planen. Ein Basisabonnement für Human Resources umfasst zwei Umgebungen: eine Produktionsumgebung und eine Sandboxumgebung. Abhängig von der Komplexität Ihres Projekts müssen Sie möglicherweise zusätzliche Sandboxumgebungen erwerben, um Projektaktivitäten zu unterstützen. 
+Bevor Sie Ihre erste Human Resources-Umgebung erstellen, sollten Sie die Umgebungsanforderungen für Ihr Projekt sorgfältig planen. Ein Basisabonnement für Human Resources umfasst zwei Umgebungen: eine Produktionsumgebung und eine Sandboxumgebung. Abhängig von der Komplexität Ihres Projekts müssen möglicherweise zusätzliche Sandbox-Umgebungen gekauft werden, um die Projektaktivitäten zu unterstützen. 
 
 Überlegungen für weitere Umgebungen:
 
-- **Datenmigration**: Möglicherweise müssen Sie eine zusätzliche Umgebung für Datenmigrationsaktivitäten in Betracht ziehen, damit Ihre Sandboxumgebung während des gesamten Projekts zu Testzwecken verwendet werden kann. Durch eine zusätzliche Umgebung können Datenmigrationsaktivitäten fortgesetzt werden, während Test- und Konfigurationsaktivitäten gleichzeitig in einer anderen Umgebung ausgeführt werden.
-- **Integration**: Möglicherweise müssen Sie eine zusätzliche Umgebung in Betracht ziehen, um Integrationen zu konfigurieren und zu testen. Dies kann native Integrationen wie die Ceridian Dayforce LinkedIn Talent Hub-Integrationen oder angepasste Integrationen wie die für die Lohn- und Gehaltsabrechnung, Bewerber-Nachverfolgungssysteme oder Vorteilssysteme und -anbieter umfassen.
-- **Training** : Möglicherweise benötigen Sie eine separate Umgebung, die mit einer Reihe von Trainingsdaten konfiguriert ist, um Ihre Mitarbeiter in der Verwendung des neuen Systems zu trainieren. 
-- **Mehrphasenprojekt**: Möglicherweise benötigen Sie eine zusätzliche Umgebung, um Konfiguration, Datenmigration, Tests oder andere Aktivitäten in einer Projektphase zu unterstützen, die nach der ersten Inbetriebnahme des Projekts geplant ist.
+- **Datenmigration**: Aktivitäten zur Datenmigration, die es zulassen, dass Ihre Sandbox-Umgebung während des gesamten Projekts zu Testzwecken genutzt werden kann. Durch eine zusätzliche Umgebung können Datenmigrationsaktivitäten fortgesetzt werden, während Test- und Konfigurationsaktivitäten gleichzeitig in einer anderen Umgebung ausgeführt werden.
+- **Integration**: Konfigurieren und testen Sie Integrationen, zu denen native Integrationen, wie Ceridian Dayforce, oder angepasste Integrationen gehören können.
+- **Schulung**: Möglicherweise benötigen Sie eine separate Umgebung, die mit einem Satz von Schulungsdaten festgelegt ist, damit Sie Ihre Mitarbeiter in der Nutzung des neuen Systems schulen können. 
+- **Mehrphasiges Projekt**: Unterstützen Sie die Konfiguration, die Datenmigration, das Testen oder andere Aktivitäten in einer Projektphase, die nach dem ersten Go-Live des Projekts geplant ist.
 
  > [!IMPORTANT]
  > Wenn Sie Ihre Umgebung betrachten, empfehlen wir Folgendes:
@@ -100,7 +101,7 @@ Nachdem Sie ein LCS-Projekt erstellt haben, können Sie Human Resources in einer
 2. Geben Sie an, ob diese Umgebung eine Sandkasten- oder Produktionsinstanz von Human Resources ist. Frühe Vorschaufunktionen sind möglicherweise in Sandkasteninstanzen verfügbar, um frühes Feedback und Testen zu ermöglichen.
    
     > [!NOTE]
-    > Der Instanztyp „Human Ressource“ kann nach dem Festlegen nicht mehr geändert werden. Überprüfen Sie, ob der richtige Instanztyp ausgewählt ist, bevor Sie fortfahren.</br></br>
+    > Der Instanztyp Human Resources kann nicht mehr geändert werden, wenn er einmal festgelegt ist. Überprüfen Sie, ob der richtige Instanztyp ausgewählt ist, bevor Sie fortfahren.</br></br>
     > Der Human Resources-Instanztyp ist von dem Instanztyp der Microsoft Power Apps-Umgebung getrennt, die Sie im Power Apps-Admin Center festlegen.
     
 3. Wählen Sie die Option **Demo-Daten einbeziehen**, wenn Ihre Umgebung dasselbe Demo-Dataset enthalten soll, das in der Human Resources Test-Umgebung verwendet wird. Demodaten sind vorteilhaft für langfristige Demo- oder Schulungsumgebungen und sollten niemals für Produktionsumgebungen verwendet werden. Sie müssen diese Option nach der ersten Bereitstellung auswählen. Sie können eine vorhandene Bereitstellung später nicht aktualisieren.
@@ -111,7 +112,7 @@ Nachdem Sie ein LCS-Projekt erstellt haben, können Sie Human Resources in einer
 
 6. Wählen Sie **Ja**, um den Bedingungen zuzustimmen und Bereitstellung zu starten.
 
-   Die neuen Umgebung wird in der Liste der Umgebung im Navigationsbereich auf der linken Seite dargestellt. Sie können jedoch nicht beginnen, die Umgebung zu verwenden, wenn der Bereitstellungsstatus auf **Bereitgestellt** aktualisiert ist. Dieser Prozess dauert in der Regel nur einige Minuten. Wenn der Bereitstellungsprozess nicht erfolgreich war, müssen Sie den Support kontaktieren.
+   Die neuen Umgebung wird in der Liste der Umgebung im Navigationsbereich auf der linken Seite dargestellt. Sie können die Umgebung jedoch erst nutzen, wenn der Bereitstellungsstatus **Bereitgestellt** lautet. Dieser Prozess dauert in der Regel nur einige Minuten. Wenn der Bereitstellungsprozess nicht erfolgreich ist, wenden Sie sich an den Support.
 
 7. Wählen Sie **Anmeldung bei Human Resources**, um die neuen Umgebung zu verwenden.
 
@@ -140,7 +141,7 @@ Verwenden Sie die folgende Anleitung, wenn Sie bestimmen, in welche Power Apps-U
    
     - **Unterstützte Geografien** – Die Umgebung muss sich in einer unterstützten Geografie befinden. Weitere Informationen finden Sie unter [Unterstützte Geografien](hr-admin-setup-provision.md#supported-geographies).
 
-6. Funktionen für duales Schreiben zur Integration von Daten der Personalverwaltung in der Power Apps-Umgebung können nur verwendet werden, wenn die Option **Dynamics 365-Apps** für die Umgebung ausgewählt ist. Weitere Informationen zum dualen Schreiben finden Sie auf der [Startseite für duales Schreiben](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md).
+6. Funktionen für duales Schreiben zur Integration von Daten der Personalverwaltung in der Power Apps-Umgebung können nur verwendet werden, wenn die Option **Dynamics 365-Apps** für die Umgebung ausgewählt ist. Weitere Informationen finden Sie unter [Dual-write-Startseite](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md).
 
     > [!NOTE]
     > Die Option **Dynamics 365-Apps aktivieren** muss beim Erstellen der Power Apps-Umgebung ausgewählt werden. Wenn die Option zum Zeitpunkt der Bereitstellung nicht ausgewählt ist, können Sie das duale Schreiben nicht verwenden, um Daten zwischen Dynamics 365 Human Resources und der Power Apps-Umgebung zu integrieren, oder keine Dynamics 365-Apps wie Dynamics 365 Sales und Field Service in der Umgebung installieren. Diese Option kann nicht rückgängig gemacht werden. 
@@ -175,3 +176,4 @@ Standardmäßig besitzt nur der globale Administrator, von dem Enterprise Portal
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

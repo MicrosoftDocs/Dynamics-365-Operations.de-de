@@ -1,6 +1,6 @@
 ---
 title: Qualitätsmanagement bei Lagerortprozessen
-description: Diesee Artikel enthält Informationen zur Funktion „Qualitätsmanagement für Lagerortprozesse“. Diese Funktion erweitert die Funktionen des Qualitätsmanagements und ermöglicht Benutzern, mithilfe der erweiterten Lagerverwaltung Steuerelemente für die Probenahme von Artikeln in den Wareneingangsprozess zu integrieren.
+description: Diesee Artikel enthält Informationen zur Funktion „Qualitätsmanagement für Lagerortprozesse“. Diese Funktion erweitert die Funktionen des Qualitätsmanagements und ermöglicht Benutzern, mithilfe der Lagerverwaltung Steuerelemente für die Probenahme von Artikeln in den Wareneingangsprozess zu integrieren.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 7f806b58c5e956e4f26158e8ea5c90a559296655
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 13c9bf522ededb5896c5f8462bfe123e9a9edb2c
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857836"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069241"
 ---
-# <a name="quality-management-for-warehouse-processes"></a>Qualitätsmanagement für Lagerortprozesse
+# <a name="quality-management-for-warehouse-processes"></a>Qualitätsmanagement bei Lagerortprozessen
 
 [!include [banner](../includes/banner.md)]
 
-Die Funktion _Qualitätsmanagement für Lagerortprozesse_ erweitert die Funktionen des Qualitätsmanagements und ermöglicht Ihnen, mithilfe der erweiterten Lagerverwaltung Steuerelemente für die Probenahme von Artikeln in den Wareneingangsprozess zu integrieren. Lagerortarbeit kann automatisch generiert werden, um Bestand an den Ort für die Qualitätskontrolle zu verschieben, und zwar basierend auf einem Prozentsatz oder einer festen Menge oder basierend auf jedem *n*-ten Kennzeichen. Nach Abschluss eines Qualitätsprüfungsauftrags kann abhängig von den Ergebnissen der Qualitätsprüfung automatisch Arbeit generiert werden, um Bestand an den nächsten Ort im Prozess zu verschieben.
+Die Funktion _Qualitätsmanagement für Lagerortprozesse_ erweitert die Funktionen des Qualitätsmanagements und ermöglicht Ihnen, mithilfe der Lagerverwaltung Steuerelemente für die Probenahme von Artikeln in den Wareneingangsprozess zu integrieren. Lagerortarbeit kann automatisch generiert werden, um Bestand an den Ort für die Qualitätskontrolle zu verschieben, und zwar basierend auf einem Prozentsatz oder einer festen Menge oder basierend auf jedem *n*-ten Kennzeichen. Nach Abschluss eines Qualitätsprüfungsauftrags kann abhängig von den Ergebnissen der Qualitätsprüfung automatisch Arbeit generiert werden, um Bestand an den nächsten Ort im Prozess zu verschieben.
 
 Die Funktion _Qualitätsmanagement für Lagerortprozesse_ erweitert die Möglichkeiten des grundlegenden Qualitätsmanagements. Sie bietet die Möglichkeit, Qualitätsprüfungsaufträge für den Bestand zu erstellen, der an den Ort für die Qualitätskontrolle gesendet wird, obwohl Qualitätsprüfungsaufträge nicht immer erforderlich sind. Daher ermöglicht sie einen einfachen Qualitätskontrollenprozess, der auf Lagerortarbeit basiert.
 
@@ -77,7 +77,7 @@ Bevor die Funktion _Qualitätsmanagement für Lagerortprozesse_ für einen besti
 
 1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Lagerort \> Lagerorte**.
 1. Wählen Sie den Lagerort aus, der für das Qualitätsmanagement vorbereitet werden soll.
-1. Legen Sie im Inforegister **Lagerort** die Option **Qualitätsprüfungsaufträge für Lagerortprozesse aktivieren** auf _Ja_ fest. (Beachten Sie, dass diese Option nur für Lagerorte, die Lagerortverwaltungsprozesse verwenden, auf _Ja_ eingestellt werden kann.)
+1. Legen Sie im Inforegister **Lagerort** die Option **Qualitätsprüfungsaufträge für Lagerortprozesse aktivieren** auf _Ja_ fest. (Beachten Sie, dass diese Option nur für Lagerorte, die Lagerortverwaltungsprozesse (WMS) verwenden, auf _Ja_ eingestellt werden kann.)
 
 Wenn die Option **Qualitätsprüfungsaufträge für Lagerortprozesse aktivieren** auf _Ja_ festgelegt ist, steuern die Einstellungen für die Qualitätszuordnung, ob die Funktion _Qualitätsmanagement für Lagerortprozesse_ für den ausgewählten Lagerort auch wirklich angewendet wird. Sie können die Einstellung der Option jederzeit zu _Nein_ ändern. In diesem Fall gilt die Funktion unabhängig von den Einstellungen für die Qualitätszuordnung für den Lagerort nicht mehr.
 
@@ -97,7 +97,7 @@ Jeder [Qualitätszuordnungsdatensatz](enable-quality-management.md) definiert di
     - **Alle** – Deaktivieren Sie die Funktion _Qualitätsmanagement für Lagerortprozesse_. Wählen Sie diesen Wert für alle Referenztypen außer *Kauf* und *Produktion* aus.
 
 > [!NOTE]
-> Die Funktion _Qualitätsmanagement für Lagerortprozesse_ wird nur wirksam, wenn der Artikel in der Quelldokumentzeile erweiterte Lagerortverwaltungsprozesse verwendet und wenn die Option **Qualitätsprüfungsaufträge für Lagerortprozesse aktivieren** für den Lagerort in der Quelldokumentzeile auf _Ja_ festgelegt ist.
+> Die Funktion _Qualitätsmanagement für Lagerortprozesse_ wird nur wirksam, wenn der Artikel in der Quelldokumentzeile erweiterte Lagerortverwaltungsprozesse (WMS) verwendet und wenn die Option **Qualitätsprüfungsaufträge für Lagerortprozesse aktivieren** für den Lagerort in der Quelldokumentzeile auf _Ja_ festgelegt ist.
 
 Da jeder Artikel registriert (oder als fertig gemeldet) wird, bestimmt das System, welche Qualitätszuordnungen für ihn gelten.
 

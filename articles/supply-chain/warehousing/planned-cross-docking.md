@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 28ebf1b4fb966fd6801e75e7b3a6c8741114938d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4f379b3cdb6830f989199afde7d751842047df79
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863678"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070288"
 ---
 # <a name="planned-cross-docking"></a>Geplantes Crossdocking
 
@@ -118,7 +118,7 @@ Das geplante Crossdocking wird als Ladebuchungsmethode implementiert. Nachdem Si
     - **Bezugsquelle:** *Bestellung*
 
 > [!NOTE]
-> Sie können eine Abfrage einrichten, um zu steuern, wann eine bestimmte Crossdocking-Vorlage verwendet wird. Die Abfrage nach Crossdocking-Vorlagen hat nur die (Artikel-)Tabelle *InventTable* und die innere verknüpfte (WHS-Artikel-)Tabelle *WHSInventTable*. Wenn Sie der Abfrage weitere Tabellen hinzufügen möchten, können Sie sie nur mit *Bestehende Verknüpfungen* oder *Nicht bestehende Verknüpfungen* verknüpfen. Wenn Sie nach den verknüpften Tabellen filtern, wird für jeden übereinstimmenden Datensatz in der verknüpften Tabelle ein Datensatz aus der Haupttabelle abgerufen. Wenn der Verknüpfungstyp *Verknüpfung besteht* ist, endet die Suche, nachdem die erste Übereinstimmung gefunden wurde. Wenn Sie beispielsweise die Auftragspositionstabelle mit der Artikeltabelle verknüpfen, validiert das System Artikel und gibt sie zurück, für die mindestens eine Kundenauftragsposition die definierte Bedingung aufweist. Im Wesentlichen werden die Daten aus der übergeordneten (Artikel-)Tabelle (Artikel) abgerufen, nicht aus der untergeordneten (Auftragspositions-)Tabelle. Daher ist das Filtern nach Quelldokumenten wie Auftragspositionen oder Debitoren nicht sofort möglich.
+> Sie können eine Abfrage einrichten, um zu steuern, wann eine bestimmte Crossdocking-Vorlage verwendet wird. Die Abfrage nach Crossdocking-Vorlagen hat nur die (Artikel-)Tabelle *InventTable* und die innere verknüpfte (WMS-Artikel-)Tabelle *WHSInventTable*. Wenn Sie der Abfrage weitere Tabellen hinzufügen möchten, können Sie sie nur mit *Bestehende Verknüpfungen* oder *Nicht bestehende Verknüpfungen* verknüpfen. Wenn Sie nach den verknüpften Tabellen filtern, wird für jeden übereinstimmenden Datensatz in der verknüpften Tabelle ein Datensatz aus der Haupttabelle abgerufen. Wenn der Verknüpfungstyp *Verknüpfung besteht* ist, endet die Suche, nachdem die erste Übereinstimmung gefunden wurde. Wenn Sie beispielsweise die Auftragspositionstabelle mit der Artikeltabelle verknüpfen, validiert das System Artikel und gibt sie zurück, für die mindestens eine Kundenauftragsposition die definierte Bedingung aufweist. Im Wesentlichen werden die Daten aus der übergeordneten (Artikel-)Tabelle (Artikel) abgerufen, nicht aus der untergeordneten (Auftragspositions-)Tabelle. Daher ist das Filtern nach Quelldokumenten wie Auftragspositionen oder Debitoren nicht sofort möglich.
 
 ### <a name="create-a-work-class"></a>Eine Arbeitsklasse erstellen
 

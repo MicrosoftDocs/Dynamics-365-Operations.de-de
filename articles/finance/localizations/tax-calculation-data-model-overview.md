@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a711eb73c171cd099947b44e2376cad2455059f0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 79296a452e146bb17b197e9ca40db016664df6f9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859694"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068847"
 ---
 # <a name="tax-calculation-data-model"></a>Datenmodell zur Steuerberechnung
 
 Dieser Artikel enthält Informationen zum Steuerdatenmodell und dazu, wie die Feldwerte jedes Steuerdatenmodells durch den Kontext von Steuerberechnungstransaktionen bestimmt werden.
 
-Das *Steuerdatenmodell* besteht aus Feldern, die für die Steuerberechnung erforderlich sind. Microsoft bietet das *Steuerberechnungsdatenmodell*, das die Kopffelder und Zeilenfelder von Transaktionsbelegen in Apps für Finanzen und Betrieb enthält. Die im Steuerberechnungsdatenmodell definierten Felder sind die verfügbaren Spalten der Anwendbarkeitsregeltabellen in der Konfiguration der Steuerberechnungsfunktionskonfiguration.
+Das *Steuerdatenmodell* besteht aus Feldern, die für die Steuerberechnung erforderlich sind. Microsoft bietet das *Steuerberechnungsdatenmodell*, das die Kopffelder und Zeilenfelder von Transaktionsbelegen in Finanz- und Betriebs-Apps enthält. Die im Steuerberechnungsdatenmodell definierten Felder sind die verfügbaren Spalten der Anwendbarkeitsregeltabellen in der Konfiguration der Steuerberechnungsfunktionskonfiguration.
 
 > [!NOTE] 
 > Einige Knoten, die im Datenmodell definiert sind, wie **Datensatz-ID** und **Tabellen-ID**, sind für technische Zwecke. Sie sind in der Konfiguration der Steuerberechnungsfunktion nicht verfügbar.
@@ -54,7 +54,7 @@ Sie können auch das Steuerberechnungsdatenmodell und die verfügbaren Spalten i
 
     [![Spalten verwalten.](./media/tax-calculation-model-mapping-3.png)](./media/tax-calculation-model-mapping-3.png)
 
-Das Steuerberechnungsdatenmodell ist integriert mit Apps für Finanzen und Betrieb. Bei jeder Transaktion, die sich auf die Steuerberechnung bezieht, werden die Werte der Felder, die in den Anwendbarkeitsregeltabellen definiert sind, gesammelt und zur Berechnung an den Steuerberechnungsservice gesendet. In Version 40.46 stehen 57 vordefinierte Datenmodelle für folgende Vorgangsarten zur Verfügung: Bestellungen, Kundenaufträge, Transportaufträge, Bestellanforderungen, Angebotsanfragen und Verkaufsangebote.
+Das Steuerberechnungsdatenmodell ist integriert mit Finanz- und Betriebs-Apps. Bei jeder Transaktion, die sich auf die Steuerberechnung bezieht, werden die Werte der Felder, die in den Anwendbarkeitsregeltabellen definiert sind, gesammelt und zur Berechnung an den Steuerberechnungsservice gesendet. In Version 40.46 stehen 57 vordefinierte Datenmodelle für folgende Vorgangsarten zur Verfügung: Bestellungen, Kundenaufträge, Transportaufträge, Bestellanforderungen, Angebotsanfragen und Verkaufsangebote.
 
 ## <a name="version-updates-and-restrictions"></a>Versionsaktualisierungen und Einschränkungen
 
@@ -134,3 +134,4 @@ Einundzwanzig Datenmodelle sind als Felder in den Zeilen einer Transaktion entha
 | Einheit                          | <ul><li>**Auftrag:** Einheit</li><li>**Bestellung:** Einheit</li><li>**Umlagerungsauftrag – Versand:** Einheit</li><li>**Umlagerungsauftrag – Empfang:** Einheit</li><li>**Bestellanforderungen:** Einheit</li><li>**Angebotsanforderung:** Einheit</li><li>**Verkaufsangebot:** Einheit</li></ul> |
 | Variantennummer                | <ul><li>**Auftrag:** Variantennummer</li><li>**Bestellung:** Variantennummer</li><li>**Verkaufsangebot:** Variantennummer</li></ul> |
 | Lagerhaus                     | <ul><li>**Auftrag**<ol><li>Zeile &gt; Lagerort</li><li>Produkt &gt; Lagerort</li></ol></li><li>**Bestellung:**<ol><li>Zeile &gt; Lagerort</li><li>Produkt &gt; Lagerort</li></ol></li><li>**Umlagerungsauftrag - Versand:** Vom Lagerort</li><li>**Umlagerungsauftrag - Empfang:** An Lagerort</li><li>**Bestellanforderung:** Zeile &gt; Lagerort</li><li>**Angebotsanforderung:** Zeile &gt; Lagerort</li><li>**Verkaufsangebot:**<ol><li>Zeile &gt; Lagerort</li><li>Produkt &gt; Lagerort</li></ol></li></ul> |
+

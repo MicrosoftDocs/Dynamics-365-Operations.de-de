@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65f7a642d3b2c2ddfca1e2d92570b49ef2f8c2b4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1f3853e0c1da0a5abb3f92171370cc4aeabbd829
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869256"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109579"
 ---
 # <a name="electronic-reporting-er-overview"></a>Überblick über die elektronische Berichterstellung (ER)
 
@@ -66,7 +66,7 @@ EB unterstützt zurzeit TEXT, XML, JSON, PDF, Microsoft Word, Microsoft Excel un
 
 Das ER-Modul hat folgende Funktionen:
 
-- Es stellt ein einzelnes freigegebenes Tool für elektronische Berichterstellung in verschiedenen Domänen dar und ersetzt mehr als 20 verschiedene Module, die einige Arten der elektronischen Berichterstellung für Finance and Operations ausführen.
+- Es stellt ein einziges gemeinsames Tool für die elektronische Berichterstattung in verschiedenen Domänen dar und ersetzt mehr als 20 verschiedene Engines, die irgendeine Art von elektronischer Berichterstattung für Finance und Operations durchführen.
 - Es erstellt ein Berichtsformat, das von der aktuellen Implementierung isoliert ist. Mit anderen Worten, das Format gilt für verschiedene Versionen.
 - Es unterstützt die Erstellung eines benutzerdefinierten Formats, das auf einem ursprünglichen Format basiert. Es umfasst zudem Funktionen zum automatischen Aktualisieren von benutzerdefinierten Formaten, wenn am Originalformat Änderungen durch die Einführung von Lokalisierungs-/Anpassungsanforderungen entstehen.
 - Es wird das primäre Standardtool zur Unterstützung von Lokalisierungsanforderungen in der elektronischen Berichterstellung, sowohl für Microsoft als auch für MS-Partner.
@@ -126,7 +126,7 @@ Eine ER-Konfiguration wird für Anwendungs-Unternehmen gemeinsam genutzt.
 
 #### <a name="provider"></a><a name="Provider"></a>Anbieter
 
-Der ER-Anbieter ist der Bezeichner einer Partei, die verwendet wird, um den Autor (Besitzer) jeder einzelnen ER-Konfiguration anzugeben. ER ermöglicht die Verwaltung einer Liste von Konfigurationsanbietern. Formatkonfigurationen, die als Teil der Finance and Operations-Lösung für elektronische Dokumente freigegeben sind, werden als Eigentum des **Microsoft**-Konfigurationsanbieters gekennzeichnet.
+Der ER-Anbieter ist der Bezeichner einer Partei, die verwendet wird, um den Autor (Besitzer) jeder einzelnen ER-Konfiguration anzugeben. ER ermöglicht die Verwaltung einer Liste von Konfigurationsanbietern. Formatkonfigurationen, die für elektronische Belege als Teil der Finanzen und Betrieb Lösung freigegeben werden, sind als Eigentum des **Microsoft** Konfigurationsanbieters gekennzeichnet.
 
 Informationen zum Registrieren eines neuen ER-Anbieters enthält der Aufgabenleitfaden **ER – Konfigurationsanbieter erstellen und als aktiv markieren** (Teil des Geschäftsprozesses **7.5.4.3 Erwerben/Entwickeln von IT-Service-/-Lösungskomponenten (10677)**).
 
@@ -143,7 +143,7 @@ Ein ER-Repository speichert ER-Konfigurationen. Folgende Typen von ER-Repository
 
 Ein **LCS-freigegebene Bibliothek** Repository bietet Zugriff auf die Liste der Konfigurationen innerhalb der freigegebenen Anlagebibilothek in den Lifecycle Services (LCS). Dieser Typ von ER-Repository kann nur für den Microsoft-Anbieter erfasst werden. Von der Bibliothek LCS-freigegebener Anlage können Sie die neuesten Versionen von ER-Konfigurationen in die aktuelle Instanz importieren.
 
-Ein **LCS-Projekt**-Repository bietet Zugriff auf die Konfigurationsliste eines bestimmten LCS-Projekts (LCS-Projektanlagenbibliothek), das ausgewhlt wurde, wenn das Repository ausgewählt wurde. ER ermöglicht Ihnen, freigegebene Konfigurationen von der aktuellen Instanz in ein spezifisches **LCS-Projekt**-Repository hochzuladen. Sie können auch Konfigurationen aus einem **LCS-Projekt**-Repository in die aktuelle Instance Ihrer Apps für Finanzen und Betrieb importieren.
+Ein **LCS-Projekt**-Repository bietet Zugriff auf die Konfigurationsliste eines bestimmten LCS-Projekts (LCS-Projektanlagenbibliothek), das ausgewhlt wurde, wenn das Repository ausgewählt wurde. ER ermöglicht Ihnen, freigegebene Konfigurationen von der aktuellen Instanz in ein spezifisches **LCS-Projekt**-Repository hochzuladen. Sie können auch Konfigurationen aus einem **LCS Projekt** Repository in die aktuelle Instanz Ihrer Finanz- und Betriebs-Apps importieren.
 
 Ein **Dateisystem**-Repository bietet Zugriff auf die Liste von Konfigurationen, die sich als XML-Dateien im speziellen Ordner des lokalen Dateisystems des Computer befinden, auf dem der AOS-Dienst gehostet wird. Obligatorischer Ordner wird in der Repositoryregistrierungsphase ausgewählt. Sie können Konfigurationen aus einem **Dateisystem**-Repository in die aktuelle Instanz importieren. 
 
@@ -270,3 +270,4 @@ Die Liste der EB-Konfigurationen für Finance wird ständig aktualisiert. Öffne
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

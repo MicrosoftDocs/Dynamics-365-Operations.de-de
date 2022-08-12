@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ff074e62489fe74f0c2de6dae0e02d1da7e7f6ae
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7f34acd78966cc9f26242653e9d0d16fdf22e0b2
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901907"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103829"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Kundenportal für Dynamics 365 Supply Chain Management Überblick
 
@@ -42,7 +42,7 @@ Die Kundenportalvorlage hat Anpassungsfunktionen, über die die Portale von Powe
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ylwW]
 
-Das [Übersicht über die Debitorenportalvorlage in Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8)-Video (siehe oben) ist enthalten in der [Wiedergabeliste von Finanzen und Betrieb](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) verfügbar auf YouTube.
+Das Video [Übersicht über die Vorlage für das Debitor-Portal in Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8) (siehe oben) ist in der Playlist [Finanzen und Vorgänge](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) auf YouTube enthalten.
 
 ## <a name="who-should-use-it"></a>Wer sollte es benutzen?
 
@@ -62,7 +62,7 @@ Das Kundenportal wird als Power Apps Portal Vorlage bereitgestellt. Es hängt vo
 
 [Power Apps Portal](/powerapps/maker/portals/overview) ist eine Funktion, mit der eine nach außen gerichtete Website erstellen können, bei der sich Personen außerhalb des Unternehmens anmelden können. Für die Erstellung von Portalen ist nur wenig bis gar keine Codierung erforderlich. Das Kundenportal ist eine von vielen [Dynamics 365-Portalvorlagen](/powerapps/maker/portals/portal-templates#environment-with-model-driven-apps-in-dynamics-365), die von Microsoft erhältlich sind.
 
-[Duales Schreiben](/powerapps/maker/portals/overview) ist ein vordefiniertes Infrastrukturprodukt, das eine Interaktion zwischen Kundenbindungs-Apps und Apps für Finanzen und Betrieb in Quasi-Echtzeit ermöglicht. Duales Schreiben bietet eine eng gekoppelte, bidirektionale Integration zwischen Apps für Finanzen und Betrieb und Microsoft Dataverse. Deshalb bietet dieser automatisierte Datenfluss eine integrierte Benutzererfahrung über die Anwendungen hinweg. Das Kundenportal hängt von Tabellen ab, die mit dualem Schreiben synchronisiert sind. Bevor Daten aus dem Supply Chain Management im Kundenportal angezeigt werden können, muss duales Schreiben für alle entsprechenden Tabellen aktiviert sein.
+[Dual-write](/powerapps/maker/portals/overview) ist ein Out-of-Box-Infrastrukturprodukt, das die Interaktion zwischen Customer-Engagement-Apps und Finanz- und Betriebs-Apps nahezu in Echtzeit ermöglicht. Dual-write bietet eine bidirektionale Integration zwischen Finanz- und Betriebs-Apps und Microsoft Dataverse. Deshalb bietet dieser automatisierte Datenfluss eine integrierte Benutzererfahrung über die Anwendungen hinweg. Das Kundenportal hängt von Tabellen ab, die mit dualem Schreiben synchronisiert sind. Bevor Daten aus dem Supply Chain Management im Kundenportal angezeigt werden können, muss duales Schreiben für alle entsprechenden Tabellen aktiviert sein.
 
 ![Kundenportalabhängigkeiten.](media/customer-portal-elements.png "Kundenportalabhängigkeiten")
 

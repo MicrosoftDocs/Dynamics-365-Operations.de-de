@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 3916e70e4c9e3bc4ceae3a82e58bc4b0697ddb9f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7fd1cf208b9bae86bf25b19f4652890c15a617c9
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888671"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124986"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10013-october-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.13. (Oktober 2020)
 
@@ -53,9 +53,9 @@ Die folgenden Funktionen sind in diesem Release enthalten. Die Funktionen-Titel 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformupdates für Apps für Finanzen und Betrieb
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattform-Updates für Finanz- und Betriebs-Apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.13 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattform-Updates für Version 10.0.13 der Apps für Finanzen und Betrieb (Oktober 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.13 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattform-Updates für die Version 10.0.13 der Finanz- und Betriebs-Apps (Oktober 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md).
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 

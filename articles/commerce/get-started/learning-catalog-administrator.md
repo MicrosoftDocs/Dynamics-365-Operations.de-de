@@ -12,18 +12,18 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 54a3dfe64d46b082db12ef05b88075831c9f525e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 473977a7a75bb7bbe493225c6455a918ba5f748e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898544"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070787"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-administrators"></a>Lernkatalog für Administratoren für Dynamics 365 Commerce
 
 Müssen Systeme und Daten rund um die Uhr bewegt, bereitgestellt und gesichert werden?
 
-Der folgende Katalog wurde aus Kernwissen zu bestimmten Domänen und vom Einfachsten zum Fortgeschrittensten organisiert. Wenn Inhalt in mehreren Formaten vorhanden ist, benachrichtigen wir Sie, damit Sie das Trainingsformat auswählen können, das Ihren Anforderungen am besten entspricht. Dieser Katalog enthält nur spezifische Funktionen für Dynamics 365 Commerce. Trainings zu Funktionen, die mit anderen Finanz- und Betriebs-Apps geteilt werden, finden Sie im [Dynamics 365 Finance-Lernkatalog](../../finance/get-started/learning-catalog-administrator.md).
+Der folgende Katalog wurde aus Kernwissen zu bestimmten Domänen und vom Einfachsten zum Fortgeschrittensten organisiert. Wenn Inhalt in mehreren Formaten vorhanden ist, benachrichtigen wir Sie, damit Sie das Trainingsformat auswählen können, das Ihren Anforderungen am besten entspricht. Dieser Katalog enthält nur spezifische Funktionen für Dynamics 365 Commerce. Schulungen zu Funktionen, die mit anderen Finanz- und Betriebs-Apps gemeinsam genutzt werden, finden Sie im [Dynamics 365 Finance Learning Catalog](../../finance/get-started/learning-catalog-administrator.md).
 
 ## <a name="get-started"></a>Erste Schritte<a name="get-started"></a>
 
@@ -49,3 +49,4 @@ Der folgende Katalog wurde aus Kernwissen zu bestimmten Domänen und vom Einfach
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

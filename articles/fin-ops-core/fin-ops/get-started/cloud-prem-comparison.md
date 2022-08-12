@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 4096089978032f150bf6d711711a948cf1d3232f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5ef6a1574f55ad8a4222658887249db4a5490042
+ms.sourcegitcommit: 9cfccb5c260ce56a3457f9ea12e80f54ea55a3b4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879774"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "9183838"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Vergleich von Cloud- und On-Premises-Funktionen
 
@@ -118,7 +118,7 @@ Die folgenden Tabellen führen die Anwendungsbereiche auf. Cloud und lokaler Sup
 | Lokalisierungen                        |                                                                                           | Ja       | Ja             |
 | Fertigung                        |                                                                                           | Ja       | Ja             |
 | Produktprogrammplanung und Bedarfsplanung      |                                                                                           | Ja       | Ja             |
-| Planungsoptimierung                |                                                                                           | Ja       | Nein              |
+|                                      | Planungsoptimierung                                                                     | Ja       | Nein              |
 | Mobile App Arbeitsbereiche und Plattform |                                                                                           | Ja       | Ja             |
 | Office-Integration                   |                                                                                           | Ja       | Ja             |
 | Organisationsverwaltung          |                                                                                           | Ja       | Ja             |

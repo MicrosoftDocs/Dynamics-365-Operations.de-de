@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e46c5721853ebfe3b9d5955ca5f4e7a4ead570c1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fffe9c042c71dc220179bb6d1ba7fd59d5e53cc0
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846299"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069532"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-19-2021"></a>Neuigkeiten oder Änderungen in Dynamics 365 Human Resources 19. April 2021
 
@@ -41,7 +41,7 @@ Die folgenden Funktionen sind in dieser Version allgemein verfügbar.
 
 | Funktion | Freigabeplan | Dokumentation |
 | --- | --- | --- |
-| Plattformupdate 10.0.17 (41) | -- | [Plattform-Updates für die Version 10.0.17 der Finanz- und Betriebs-Apps (April 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
+| Plattformupdate 10.0.17 (41) | -- | [Plattform-Updates für Version 10.0.17 der Finanz- und Betriebs-Apps (April 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
 | Unterstützung von angepassten Feldern in Formularen des Benefits Management | [Angepasste Feldunterstützung in der Leistungsverwaltung](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-benefits-management)| [Vorteilsverwaltung – Übersicht](hr-benefits-management-overview.md)|
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
@@ -77,7 +77,7 @@ Die folgenden neuen Funktionen stehen in der Vorschau zur Verfügung. Weitere In
 | Funktion | Informationen |
 | --- | --- |
 | Von einem Manager für seine Mitarbeiter eingegebene Qualifikationen können von einem Workflow automatisch genehmigt werden | Bald verfügbar. |
-| Plattformupdate 10.0.18 (42) | Das Plattform-Update 10.0.18 wird voraussichtlich mit dem Service-Release am 17. Mai 2021 ausgerollt. Weitere Informationen finden Sie unter [Plattform-Updates für Version 10.0.18 der Apps für Finanzen und Betrieb (Mai 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
+| Plattformupdate 10.0.18 (42) | Das Plattform-Update 10.0.18 wird voraussichtlich mit dem Service-Release am 17. Mai 2021 ausgerollt. Weitere Informationen finden Sie unter [Plattform-Updates für die Version 10.0.18 der Finanz- und Betriebs-Apps (Mai 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
 | Unterstützung von angepassten Feldern in den Berechtigungsregeln von Benefits Management  | [Angepasste Feldunterstützung für die Verarbeitung von Berechtigungen](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |
 
 Eine vollständige Liste der geplanten Funktionen und ihrer geplanten Versionen finden Sie unter [Überblick über Dynamics 365 Human Resources 2021 Veröffentlichungszyklus 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
@@ -90,3 +90,4 @@ Eine vollständige Liste der geplanten Funktionen und ihrer geplanten Versionen 
 [Funktionen verwalten](hr-admin-manage-features.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

@@ -2,7 +2,7 @@
 title: Entfernte oder veraltete Funktionen in Dynamics 365 Commerce
 description: In diesem Artikel werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen von Dynamics 365 Commerce.
 author: josaw
-ms.date: 04/27/2022
+ms.date: 07/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 2725ff2b8bfbaadbca1bc070e32cee7c5d2754be
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a59d62ad846eed659fa4e70390ebafc40127df0f
+ms.sourcegitcommit: ef56b5d0ed26e373add5dec63168e08ade40573e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910523"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9138585"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Commerce
 
@@ -32,6 +32,19 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 > [!NOTE]
 > Ausführliche Informationen über Objekte in Apps für Finanzen und Betrieb finden Sie in den [Technischen Referenzberichten](/dynamics/s-e/). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die in den einzelnen Versionen der Apps für Finanzen und Betrieb geändert oder entfernt wurden.
+
+## <a name="feature-deprecation-effective-july-2022"></a>Außer Betrieb genommene Funktionen ab Juli 2022
+
+### <a name="commerce-analytics-preview"></a>Commerce-Analysen (Vorschau)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Das Dynamics 365 Commerce-Team hat die Nutzung und Akzeptanz der Funktion Commernce analytics (Vorschau) analysiert und beschlossen, die Funktion nicht mehr allgemein zur Verfügung zu stellen.   |
+| **Ersetzt durch eine andere Funktion?**   | Zur Zeit wird Commerce analytics (Vorschau) nicht durch eine andere Funktion oder Lösung ersetzt. Der Export von Rohtransaktionen und Stammdaten aus Finanz- und Betriebs-Apps zu Azure Data Lake ist weiterhin verfügbar, wie in [Export zu Data Lake in Finanz- und Betriebs-Apps](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md) erläutert. Partner und Debitor können diesen Datenstrom nutzen, um die gewünschten Analyseberichte für ihre Geschäftsanforderungen zu erstellen.
+| **Betroffene Produktbereiche**         | Commerce-Analysen (Vorschau) |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Wir werden die Deaktivierung dieser Funktion bis zum 30. August 2022 in Betracht ziehen.  Von diesem Zeitpunkt an werden die aktuellen Power BI-Berichte von Commerce analytics (Vorschau) nicht mehr aktualisiert.     |
+
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10025-release"></a>Entfernte oder veraltete Funktionen in Commerce Version 10.0.25
 
@@ -195,3 +208,4 @@ Um mehr über Funktionen zu erfahren, die in früheren Versionen entfernt oder v
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

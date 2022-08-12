@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba80c4c3eac703ba96a4f2741fcc19bceeb24ed0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 519932854dfd3e872433b0fb304e683c57cea1cb
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898490"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108496"
 ---
 # <a name="datetodatetime-er-function"></a>DATETODATETIME EB-Funktion
 
@@ -47,7 +47,7 @@ Der resultierende Wert für Datum/Uhrzeit.
 
 ## <a name="example-1"></a>Beispiel 1
 
-`DATETODATETIME (CompInfo. 'getCurrentDate()')` gibt das Datum der aktuellen Microsoft Dynamics 365 Finance-Sitzung, Dezember 24, 2015, mit **12/24/2015 12:00:00 AM** zurück. In diesem Beispiel ist **CompInfo** eine Datenquelle der elektronischen Berichterstellung (EB) des Typs **Finance and Operations/Tabelle** und bezieht sich auf die Tabelle „CompanyInfo“.
+`DATETODATETIME (CompInfo. 'getCurrentDate()')` gibt das Datum der aktuellen Microsoft Dynamics 365 Finance-Sitzung, Dezember 24, 2015, mit **12/24/2015 12:00:00 AM** zurück. In diesem Beispiel ist **CompInfo** eine Datenquelle für das elektronische Berichtswesen (ER) vom Typ **Finanzen und Betrieb/Table** und bezieht sich auf die Tabelle CompanyInfo.
 
 ## <a name="example-2"></a>Beispiel 2
 

@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 5ebb14dad723fad5b17b4dfca153bf153e77bbd4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2e2759ff15dd8d146c642fc0da90d1a38fe855d1
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882083"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111199"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Probleme bei der anfänglichen Einrichtung behandeln
 
@@ -22,20 +22,20 @@ ms.locfileid: "8882083"
 
 
 
-Dieser Artikel enthält Informationen zur Problembehandlung für die Integration von dualem Schreiben zwischen Finanz- und Betriebs-Apps und Dataverse. Dieses Thema enthält insbesondere Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit der initialen Einrichtung der Integration vom dualen Schreiben zusammenhängen.
+Dieser Artikel enthält Informationen zur Problembehandlung für die Dual-write Integration zwischen Finanz- und Betriebs-Apps und Dataverse. Dieses Thema enthält insbesondere Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit der initialen Einrichtung der Integration vom dualen Schreiben zusammenhängen.
 
 > [!IMPORTANT]
 > Einige der in diesem Artikel behandelten Probleme erfordern möglicherweise entweder die Systemadministratorrolle oder Microsoft Azure Active Directory (Azure AD)-Anmeldeinformationen des Mandantenadministrators. Im Abschnitt zu jedem Problem wird erläutert, ob eine bestimmte Rolle oder Anmeldeinformationen erforderlich sind.
 
-## <a name="you-cant-link-a-finance-and-operations-app-to-dataverse"></a>Sie können eine Finance und Operations App nicht mit Dataverse verknüpfen.
+## <a name="you-cant-link-a-finance-and-operations-app-to-dataverse"></a>Sie können eine Finanz- und Betriebs-App nicht mit Dataverse verknüpfen.
 
-**Benötigte Rolle, um duales Schreiben festzulegen:** Systemadministrator in den Apps Finance und Operations und Dataverse.
+**Benötigte Rolle, um Dual-write festzulegen:** Systemadministrator in den Finanz- und Betriebs-Apps und Dataverse.
 
 Fehler auf der Seite **Einrichtungs-Link für Dataverse** werden normalerweise durch unvollständige Setup- oder Berechtigungsprobleme verursacht. Stellen Sie sicher, dass die gesamte Integritätsprüfung die Seite **Einrichtungs-Link zu Dataverse** wie in der folgenden Abbildung gezeigt. Sie können Duales Schreiben nur verknüpfen, wenn die gesamte Integritätsprüfung bestanden wurde.
 
 ![Erfolgreiche Integritätsprüfung.](media/health_check.png)
 
-Sie müssen über Anmeldeinformationen für Azure AD Mandant verfügen, um die Umgebungen Finance und Operations und Dataverse zu verknüpfen. Nachdem Sie die Umgebungen verknüpft haben, können sich Benutzer mit ihren Kontoanmeldeinformationen anmelden und eine vorhandene Tabellenzuordnung aktualisieren.
+Sie müssen über Azure AD Mandant-Admin-Anmeldeinformationen verfügen, um die Finanzen und Betrieb und Dataverse Umgebungen zu verknüpfen. Nachdem Sie die Umgebungen verknüpft haben, können sich Benutzer mit ihren Kontoanmeldeinformationen anmelden und eine vorhandene Tabellenzuordnung aktualisieren.
 
 ## <a name="find-the-limit-on-the-number-of-legal-tables-or-companies-that-can-be-linked-for-dual-write"></a>Finden Sie das Limit für die Anzahl der juristischen Tabellen oder Unternehmen, die für duales Schreiben verknüpft werden können
 
@@ -55,7 +55,7 @@ Dual-Write unterstützt nicht mehrere juristische Entitäten/Firmen mit demselbe
 
 Um den Debitor zu entsperren, entfernen Sie doppelte Datensätze aus der Tabelle **cdm_company** in der Dataverse. Wenn die Tabelle **cdm_company** außerdem Datensätze mit leerem Namen enthält, entfernen oder korrigieren Sie diese Datensätze.
 
-## <a name="error-when-opening-the-dual-write-page-in-finance-and-operations-apps"></a>Fehler beim Öffnen der duales Schreiben Seite in Apps für Finanzen und Betrieb
+## <a name="error-when-opening-the-dual-write-page-in-finance-and-operations-apps"></a>Fehler beim Öffnen der Dual-write Seite in Finanz- und Betriebs-Apps
 
 Möglicherweise erhalten Sie die folgende Fehlermeldung, wenn Sie versuchen, eine Dataverse-Umgebung für Dual-write zu verknüpfen:
 
@@ -70,22 +70,23 @@ Dieser Fehler tritt auf, wenn der Schritt der App-Zustimmung nicht vollständig 
     `https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent`
 
 + Wählen Sie **Akzeptieren**, um zuzustimmen. Sie erteilen damit die Zustimmung zur Installation der App (mit `id=33976c19-1db5-4c02-810e-c243db79efde`) in Ihrem Mandant.
-+ Diese App ist für Dataverse erforderlich, um mit Apps für Finanzen und Betrieb zu kommunizieren.
++ Diese App wird benötigt, damit Dataverse mit den Finanz- und Betriebs-Apps kommunizieren kann.
 
     ![Problembehandlung bei der ersten Einrichtung der Synchronisierung.](media/Initial-sync-setup-troubleshooting-1.png)
 
 > [!NOTE]
 > Wenn dies nicht funktioniert, starten Sie die URL im privaten Modus von Microsoft Edge oder im Inkognito-Modus von Chrome .
 
-## <a name="finance-and-operations-environment-is-not-discoverable"></a>Die Umgebung von Finance und Operations ist nicht auffindbar.
+## <a name="finance-and-operations-environment-is-not-discoverable"></a>Finanz- und Betriebs-Umgebung ist nicht auffindbar
 
 Möglicherweise erhalten Sie die folgende Fehlermeldung:
 
-*Umgebung der Apps für Finance und Operations \*\*\*.cloudax.dynamics.com ist nicht auffindbar.*
+*Finanz- und Betriebs-Apps Umgebung \*\*\*.cloudax.dynamics.com ist nicht auffindbar.*
 
 Es gibt zwei Dinge, die ein Problem mit nicht auffindbarer Umgebung verursachen können:
 
-+ Der für die Anmeldung verwendete Benutzer befindet sich nicht im selben Mandanten wie die Finance und Operations-Instanz.
-+ Es gibt einige veraltete Finance und Operations-Instanzen, die von Microsoft gehostet wurden und bei denen es ein Problem mit der Erkennung gab. Um das Problem zu beheben, aktualisieren Sie die Finance und Operations-Instanz. Die Umgebung wird mit jeder Aktualisierung auffindbar.
++ Der Benutzer, der für die Anmeldung verwendet wird, befindet sich nicht im selben Mandanten wie die Finanzen und Betrieb-Instanz.
++ Es gibt einige veraltete Finanzen und Betrieb-Instanzen, die von Microsoft gehostet wurden und bei denen es ein Problem mit der Erkennung gab. Um dies zu beheben, aktualisieren Sie die Finanzen und Betrieb-Instanz. Die Umgebung wird mit jeder Aktualisierung auffindbar.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

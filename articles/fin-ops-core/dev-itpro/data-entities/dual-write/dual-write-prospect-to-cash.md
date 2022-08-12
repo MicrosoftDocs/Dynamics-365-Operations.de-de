@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: f0d5339190f7e2aff7b084fa73e559af28e10ee8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f44574abddb71e1a994ae60960e8c9c79242aff0
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860108"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112111"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Prospect-to-cash in Dual-write
 
@@ -29,7 +29,7 @@ In den App-Schnittstellen können Sie in Echtzeit auf die Verarbeitungsstatus un
 Informationen zur Kunden- und Kontaktintegration finden Sie unter [Integrierte Masterdaten von Debitoren](customer-mapping.md). Informationen zur Produktintegration finden Sie unter [Einheitliche Produktumgebung](product-mapping.md).
 
 > [!NOTE]
-> In Dynamics 365 Sales beziehen sich sowohl Interessent als auch Kunde auf einen Datensatz in der Tabelle **Konto**, in der die Spalte **RelationshipType** entweder **Interessent** oder **Kunde** ist. Wenn Ihre Geschäftslogik einen **Konto**-Qualifizierungsprozess enthält, bei dem der Datensatz **Konto** erstellt und zuerst als Interessent und dann als Kunde qualifiziert wird, wird dieser Datensatz nur mit der Finanz- und Betriebs-App synchronisiert, wenn es ein Kunde ist (`RelationshipType=Customer`). Wenn Sie möchten, dass die Zeile **Konto** als Interessent synchronisiert wird, benötigen Sie eine benutzerdefinierte Zuordnung, um die Interessentendaten zu integrieren.
+> In Dynamics 365 Sales beziehen sich sowohl Interessent als auch Kunde auf einen Datensatz in der Tabelle **Konto**, in der die Spalte **RelationshipType** entweder **Interessent** oder **Kunde** ist. Wenn Ihre Geschäftslogik einen **Konto**-Qualifizierungsprozess beinhaltet, bei dem der **Konto**-Datensatz zunächst als Interessent und dann als Debitor erstellt und qualifiziert wird, wird dieser Datensatz nur dann mit der Finanz- und Betriebs-App synchronisiert, wenn er ein Debitor ist (`RelationshipType=Customer`). Wenn Sie möchten, dass die Zeile **Konto** als Interessent synchronisiert wird, benötigen Sie eine benutzerdefinierte Zuordnung, um die Interessentendaten zu integrieren.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Voraussetzungen und Zuordnungseinrichtung
 
@@ -122,7 +122,7 @@ Prospect-to-Cash umfasst eine Sammlung von Kerntabellenzuordnungen, die während
 [CDS-Verkaufsangebotskopf](mapping-reference.md#215) | Angebote | |
 [CDS-Verkaufsangebotspositionen](mapping-reference.md#214) | quotedetails | |
 [Freigegebene Produkte V2](mapping-reference.md#189) | msdyn_sharedproductdetails | |
-[Verkaufsrechnungskopfzeilen V2](mapping-reference.md#118) | Rechnungen | Die Tabelle „Verkaufsrechnungskopfzeilen V2“ in der Finanz- und Betriebs-App enthält Rechnungen für Aufträge und Freitextrechnungen. Ein Filter wird in Dataverse für duales Schreiben angewendet, der alle Freitext-Rechnungsdokumente herausfiltert. |
+[Verkaufsrechnungskopfzeilen V2](mapping-reference.md#118) | Rechnungen | Die Tabelle Verkaufsrechnungsköpfe V2 in der Finanz- und Betriebs-App enthält Rechnungen für Verkaufsaufträge und Freitextrechnungen. Ein Filter wird in Dataverse für duales Schreiben angewendet, der alle Freitext-Rechnungsdokumente herausfiltert. |
 [Verkaufsrechnungspositionen V2](mapping-reference.md#117) | Rechnungsdetails | |
 [Auftragsgrundlagencodes](mapping-reference.md#186) | msdyn_salesorderorigins | |
 
@@ -135,3 +135,4 @@ Informationen zu Preislisten finden Sie unter [Einheitliche Produktumgebung](pro
 - Für die Stammdaten müssen Finanzdimensionen festgelegt werden, z. B. Debitor und Kreditor. Wenn ein Kunde zu einem Angebot oder Auftrag hinzugefügt wird, fließen die mit dem Kundendatensatz verknüpften Finanzdimensionen automatisch in den Auftrag ein. Derzeit enthält duales Schreiben keine Daten zu Finanzdimensionen für Stammdaten.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

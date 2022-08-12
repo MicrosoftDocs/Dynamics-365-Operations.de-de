@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-05-03
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 467839b1d0ca6788a92ae60d46686374d0a58046
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5a1d86e7e9cca159d0a820680714a08dc73c0688
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850843"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068392"
 ---
 # <a name="inventory-costing-faq"></a>Nachkalkulation von Beständen FAQ
 
@@ -112,11 +112,11 @@ Nein, Sie können die Option **Wertmäßiger Bestand** nicht für die Dimension 
 
 ### <a name="should-i-enable-the-use-warehouse-management-processes-option-for-the-storage-dimension-group"></a>Soll ich die Option Lagerverwaltungsprozesse verwenden für die Dimensionengruppe Lager aktivieren?
 
-Wenn Sie glauben, dass Sie die erweiterten Funktionen der Lagerverwaltung in Zukunft nutzen möchten, sollten Sie die Option **Prozesse der Lagerverwaltung nutzen** aktivieren. Nachdem Sie eine Gruppe von Dimensionen gespeichert haben, können Sie die Einstellung der Option **Prozesse der Lagerverwaltung verwenden** für diese nicht mehr ändern. Wenn Sie sich später für Lagerverwaltungsprozesse entscheiden, müssen Sie ein neues Lager erstellen, in dem diese Option aktiviert ist. Es gibt keinen automatisierten Prozess, mit dem Sie den gesamten Bestand von einem Lager in ein anderes Lager verschieben oder die zugehörigen Konfigurationen in ein neues Lager kopieren können.
+Wenn Sie glauben, dass Sie die Funktionen für Lagerverwaltungsprozesse (WMS) in Zukunft nutzen möchten, sollten Sie die Option **Lagerverwaltungsprozesse nutzen** aktivieren. Nachdem Sie eine Gruppe von Dimensionen gespeichert haben, können Sie die Einstellung der Option **Prozesse der Lagerverwaltung verwenden** für diese nicht mehr ändern. Wenn Sie sich später für Lagerverwaltungsprozesse entscheiden, müssen Sie ein neues Lager erstellen, in dem diese Option aktiviert ist. Es gibt keinen automatisierten Prozess, mit dem Sie den gesamten Bestand von einem Lager in ein anderes Lager verschieben oder die zugehörigen Konfigurationen in ein neues Lager kopieren können.
 
-### <a name="can-i-enable-the-use-warehouse-management-processes-for-the-storage-dimension-group-even-if-im-not-planning-to-use-advanced-warehousing"></a>Kann ich die Option Lagerverwaltungsprozesse für die Dimensionengruppe Lagerung verwenden auch dann aktivieren, wenn ich keine erweiterte Lagerverwaltung verwenden möchte?
+### <a name="can-i-enable-the-use-warehouse-management-processes-for-the-storage-dimension-group-even-if-im-not-planning-to-use-warehouse-management-processes-wms"></a>Kann ich die Option Lagerverwaltungsprozesse für die Dimensionsgruppe Lagerung verwenden auch dann aktivieren, wenn ich nicht plane, Lagerverwaltungsprozesse (WMS) zu verwenden?
 
-Ja, auch wenn Sie nicht vorhaben, die erweiterten Funktionen der Lagerverwaltung zu verwenden, können Sie die Option **Prozesse der Lagerverwaltung verwenden** für die Gruppe der Dimensionen des Lagers aktivieren. Um Transaktionen zu erstellen und zu verarbeiten, müssen Sie die Mindestkonfiguration vornehmen, z. B. Reservierungshierarchien und Sequenzgruppen für Einheiten. Die Einstellungen für die erweiterte Lagerhaltung werden jedoch allgemein ignoriert, wenn Sie Kommissionierlisten, Lieferscheine und Produktzugänge (z.B. auf den Seiten für Verkaufsaufträge und Bestellungen) manuell bearbeiten.
+Ja, auch wenn Sie nicht vorhaben, die Funktionen der Lagerverwaltungsprozesse (WMS) zu nutzen, können Sie die Option **Lagerverwaltungsprozesse nutzen** für die Dimensionengruppe Lager aktivieren. Um Transaktionen zu erstellen und zu verarbeiten, müssen Sie die Mindestkonfiguration vornehmen, z. B. Reservierungshierarchien und Sequenzgruppen für Einheiten. Bei der manuellen Verarbeitung von Kommissionierlisten, Lieferscheinen und Produktzugängen (z.B. auf den Seiten für Verkaufsaufträge und Bestellungen) werden die Einstellungen für WMS jedoch im Allgemeinen ignoriert.
 
 ### <a name="when-should-i-enable-the-physical-inventory-option-for-a-storage-or-tracking-dimension-group"></a>Wann sollte ich die Option Physischer Bestand für eine Lager- oder Tracking-Dimensionengruppe aktivieren?
 
@@ -451,7 +451,7 @@ Ja, Sie können FEFO-Reservierungen für eine Artikelmodellgruppe verwenden, wen
 
 ### <a name="can-i-upload-pending-prices"></a>Kann ich ausstehende Preise hochladen?
 
-Ja, Sie können das Excel Add-In oder das Data Management Framework verwenden, um einen ausstehenden Preis hochzuladen. Wir empfehlen Ihnen, die folgenden Entitäten zu verwenden:
+Ja, Sie können das Excel Add-In oder das Datenmanagement Framework verwenden, um einen ausstehenden Preis hochzuladen. Wir empfehlen Ihnen, die folgenden Entitäten zu verwenden:
 
 - Ausstehende Artikelpreise (V2)
 - Einheitskosten für ausstehende Kostenkategorien des Arbeitsplans
@@ -475,7 +475,7 @@ Nachkalkulationen können einen Typ von *Standardkosten* oder *Plan-Kosten* habe
 
 ### <a name="can-the-total-cost-from-one-entity-be-transferred-to-another-entity-as-the-selling-cost"></a>Können die Gesamtkosten von einer Entität auf eine andere Entität als Verkaufskosten übertragen werden?
 
-Es gibt keine automatisierte Möglichkeit, Nachkalkulationen von einer Firma in eine andere zu kopieren. Außerdem gibt es keine automatische Möglichkeit, Kosten von einem Kauf- in einen Verkaufspreis zu kopieren. Wenn Ihr Unternehmen eine dieser Aufgaben erledigen muss, überlegen Sie, ob Sie das Data Management Framework verwenden können, um die Daten aus Ihrer Nachkalkulation zu exportieren und in eine andere Firma hochzuladen, entweder als Verkaufspreis in der Kalkulationsversion oder als Handelsvereinbarung. Eine manuelle Bearbeitung der Dateien kann erforderlich sein.
+Es gibt keine automatisierte Möglichkeit, Nachkalkulationen von einer Firma in eine andere zu kopieren. Außerdem gibt es keine automatische Möglichkeit, Kosten von einem Kauf- in einen Verkaufspreis zu kopieren. Wenn Ihr Unternehmen eine dieser Aufgaben erledigen muss, überlegen Sie, ob Sie das Datenmanagement Framework verwenden können, um die Daten aus Ihrer Nachkalkulation zu exportieren und in eine andere Firma hochzuladen, entweder als Verkaufspreis in der Kalkulationsversion oder als Handelsvereinbarung. Eine manuelle Bearbeitung der Dateien kann erforderlich sein.
 
 ### <a name="what-is-the-best-way-to-copy-planned-costs-to-a-standard-costing-version"></a>Wie kopiere ich Plankosten am besten in eine Version der Nachkalkulation?
 

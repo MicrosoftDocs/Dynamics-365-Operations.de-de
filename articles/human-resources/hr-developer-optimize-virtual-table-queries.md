@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-04-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f75176781620cd6f845c002876eba6e34d5793e7
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 1f379cd7783cc984666582d2c680a1db013627ce
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692225"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070171"
 ---
 # <a name="optimize-dataverse-virtual-table-queries"></a>Virtuelle Dataverse-Tabellenabfragen optimieren
 
@@ -49,12 +49,12 @@ Eine Ursache für eine langsame Leistung mit virtuellen Dataverse-Tabellen für 
 Diese Auswirkungen treten zum Beispiel möglicherweise bei Abfragen an die Arbeitskraft- Entität (**mshr_hcmworkerentity**) oder Basisarbeitskraft-Entität (**mshr_hcmworkerbaseentity**) auf. Möglicherweise tritt das Leistungsproblem auf verschiedene Arten auf:
 
 - **Langsame Abfrageausführung**: Die Abfrage für die virtuelle Tabelle gibt möglicherweise die erwarteten Ergebnisse zurück, es dauert jedoch länger als erwartet, bis die Ausführung der Abfrage abgeschlossen ist.
-- **Abfragezeitüberschreitung**: Die Abfrage kann eine Zeitüberschreitung verursachen und den folgenden Fehler zurückgeben: „Es wurde ein Token erhalten, um Finance und Operations aufzurufen, aber Finance und Operations hat einen Fehler vom Typ InternalServerError zurückgegeben.“
+- **Abfragezeitüberschreitung**: Die Abfrage kann eine Zeitüberschreitung verursachen und den folgenden Fehler zurückgeben: „Es wurde ein Token erhalten, um Finanzen und Betrieb aufzurufen, aber Finanzen und Betrieb hat einen Fehler vom Typ InternalServerError zurückgegeben.“
 - **Unerwarteter Fehler**: Die Abfrage gibt möglicherweise einen Fehler vom Typ 400 mit der folgenden Meldung zurück: „Ein unerwarteter Fehler ist aufgetreten.“
 
   ![Fehler vom Typ 400 bei der HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType400.png)
 
-- **Drosselung**: Die Abfrage kann die Serverressourcen überbeanspruchen, sodass es zu einer Drosselung kommt. In diesem Fall gibt die Abfrage den folgenden Fehler zurück: „Es wurde ein Token erhalten, um Finance und Operations aufzurufen, aber Finance und Operations hat einen Fehler vom Typ 429 zurückgegeben.“ Weitere Informationen zur Drosselung in Humen Resources finden Sie unter [Drosselung – Häufig gestellte Fragen](./hr-admin-integration-throttling-faq.md).
+- **Drosselung**: Die Abfrage kann die Serverressourcen überbeanspruchen, sodass es zu einer Drosselung kommt. In diesem Fall gibt die Abfrage den folgenden Fehler zurück: „Es wurde ein Token erhalten, um Finanzen und Betrieb aufzurufen, aber Finanzen und Betrieb hat einen Fehler vom Typ 429 zurückgegeben.“ Weitere Informationen zur Drosselung in Humen Resources finden Sie unter [Drosselung – Häufig gestellte Fragen](./hr-admin-integration-throttling-faq.md).
 
   ![Fehler vom Typ 429 bei der HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType429.png)
 
@@ -161,3 +161,4 @@ Weitere Informationen zur Seitenverwaltung finden Sie unter [Anzahl der Entität
 - [Drosselung – Häufig gestellte Fragen](./hr-admin-integration-throttling-faq.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

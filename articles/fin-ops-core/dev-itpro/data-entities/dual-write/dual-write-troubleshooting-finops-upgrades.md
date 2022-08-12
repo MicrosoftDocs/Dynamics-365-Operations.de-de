@@ -1,6 +1,6 @@
 ---
-title: Probleme im Zusammenhang mit Upgrades von Finanz- und Betriebs-Apps behandeln
-description: Dieser Artikel enthält Informationen zur Problembehandlung, die Ihnen helfen können, Probleme zu beheben, die mit Upgrades von Finanz- und Betriebs-Apps zusammenhängen.
+title: Problembehandlung von Problemen bei Upgrades von Finanz- und Betriebs-Apps
+description: Dieser Artikel enthält Informationen zur Problembehandlung, die Ihnen helfen können, Probleme im Zusammenhang mit Upgrades von Finanz- und Betriebs-Apps zu beheben.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
@@ -9,14 +9,14 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 954268b03be2be90f67dc9b7756f33215856864a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b75034cbc8ca7a24472cfec1ad93d3dfef4a8fdc
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882141"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111139"
 ---
-# <a name="troubleshoot-issues-from-upgrades-of-finance-and-operations-apps"></a>Probleme im Zusammenhang mit Upgrades von Finanz- und Betriebs-Apps behandeln
+# <a name="troubleshoot-issues-from-upgrades-of-finance-and-operations-apps"></a>Problembehandlung von Problemen bei Upgrades von Finanz- und Betriebs-Apps
 
 [!include [banner](../../includes/banner.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "8882141"
 
 
 
-Dieser Artikel enthält Informationen zur Problembehandlung für die Integration von dualem Schreiben zwischen Finanz- und Betriebs-Apps und Dataverse. Hier finden Sie Informationen, die Ihnen helfen können, Probleme im Zusammenhang mit Upgrades von Apps für Finanzen und Betrieb zu beheben.
+Dieser Artikel enthält Informationen zur Problembehandlung für die Dual-write Integration zwischen Finanz- und Betriebs-Apps und Dataverse. Insbesondere erhalten Sie Informationen, die Ihnen helfen können, Probleme zu beheben, die mit Upgrades von Finanz- und Betriebs-Apps zusammenhängen.
 
 > [!IMPORTANT]
 > Einige der in diesem Artikel behandelten Probleme erfordern möglicherweise entweder die Systemadministratorrolle oder Microsoft Azure Active Directory (Azure AD)-Anmeldeinformationen des Mandantenadministrators. Im Abschnitt zu jedem Problem wird erläutert, ob eine bestimmte Rolle oder Anmeldeinformationen erforderlich sind.
@@ -33,7 +33,7 @@ Dieser Artikel enthält Informationen zur Problembehandlung für die Integration
 
 **Erforderliche Rolle zum Beheben der Fehler:** System Administrator
 
-Sie erhalten möglicherweise eine Fehlermeldung, die dem folgenden Beispiel ähnelt, wenn Sie versuchen, die Tabelle **DualWriteProjectConfiguration** zu verwenden, um eine Finance und Operations App auf Platform update 30 zu aktualisieren.
+Sie könnten eine Fehlermeldung erhalten, die dem folgenden Beispiel ähnelt, wenn Sie versuchen, die Tabelle **DualWriteProjectConfiguration** zu verwenden, um eine Finanz- und Betriebs-App auf Platform update 30 zu aktualisieren.
 
 ```console
 Infolog diagnostic message: 'Cannot select a row in Dual write project sync (DualWriteProjectConfiguration). The SQL database has issued an error.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Object Server Database Synchronizer: ' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ISDELETE'.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'SELECT T1.PROJECTNAME,T1.EXTERNALENTITYNAME,T1.INTERNALENTITYNAME,T1.EXTERNALENVIRONMENTURL,T1.STATUS,T1.ENABLEBATCHLOOKUP,T1.PARTITIONMAP,T1.QUERYFILTEREXPRESSION,T1.INTEGRATIONKEY,T1.ISDELETE,T1.ISDEBUGMODE,T1.RECVERSION,T1.PARTITION,T1.RECID FROM DUALWRITEPROJECTCONFIGURATION T1 WHERE (PARTITION=5637144576)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'session 1043 (Admin)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.' on category 'Error'.
@@ -43,7 +43,7 @@ Microsoft.Dynamics.AX.Framework.Database.TableSyncException: Custom action threw
 
 Führen Sie folgende Schritte aus, um das Problem zu beheben.
 
-1. Melden Sie sich bei der virtuellen Maschine (VM) für die Finance und Operations App an.
+1. Melden Sie sich bei der virtuellen Maschine (VM) für die Finanz- und Betriebs-App an.
 2. Öffnen von Visual Studio als Administrator und öffnen Sie den Application Object Tree (AOT).
 3. Suchen nach **DualWriteProjectConfiguration**.
 4. Klicken Sie im AOT mit der rechten Maustaste auf **DualWriteProjectConfiguration** und wählen Sie **Zu neuem Projekt hinzufügen**. Wählen Sie **OK**, um das neue Projekt zu erstellen, das Standardoptionen verwendet.
@@ -65,10 +65,10 @@ Auf der Seite **Duales Schreiben** wird möglicherweise eine Fehlermeldung angez
 
 Führen Sie die folgenden Schritte aus, um das Problem zu beheben und sicherzustellen, dass sich die Spalten in der Tabelle befinden.
 
-1. Melden Sie sich bei der VM für die Finance und Operations App an.
+1. Melden Sie sich bei der VM für die Finanz- und Betriebs-App an.
 2. Wechseln Sie zu **Arbeitsbereiche \> Datenverwaltung**, wählen Sie die Kachel **Framework-Parameter** aus, und wählen Sie dann auf der Registerkarte **Tabelleneinstellungen** die Option **Tabellenliste aktualisieren** aus, um die Tabellen zu aktualisieren.
-3. Wechseln Sie zu **Arbeitsbereiche \> Datenverwaltung**, wählen Sie die Registerkarte **Datentabellen** aus und stellen Sie sicher, dass die Tabelle aufgelistet ist. Wenn die Tabelle nicht aufgeführt ist, melden Sie sich bei der VM für die App Finance und Operations an und stellen Sie sicher, dass die Tabelle verfügbar ist.
-4. Öffnen Sie die Seite **Tabellenzuordnung** auf der Seite **duales Schreiben** in der App Finance und Operations.
+3. Wechseln Sie zu **Arbeitsbereiche \> Datenverwaltung**, wählen Sie die Registerkarte **Datentabellen** aus und stellen Sie sicher, dass die Tabelle aufgelistet ist. Wenn die Tabelle nicht aufgeführt ist, melden Sie sich bei der VM für die Finanz- und Betriebs-App an und stellen Sie sicher, dass die Tabelle verfügbar ist.
+4. Öffnen Sie die Seite **Tabelle Zuordnung** von der Seite **Dual-write** in der Finanz- und Betriebs-App.
 5. Wählen Sie **Tabellenliste aktualisieren** aus, um die Spalten in den Tabellenzuordnungen automatisch auszufüllen.
 
 Wenn das Problem immer noch nicht behoben ist, führen Sie die folgenden Schritte aus.
@@ -76,10 +76,10 @@ Wenn das Problem immer noch nicht behoben ist, führen Sie die folgenden Schritt
 > [!IMPORTANT]
 > Diese Schritte führen Sie durch den Vorgang des Löschens und anschließenden Hinzufügens einer Tabelle. Befolgen Sie die Schritte genau, um Probleme zu vermeiden.
 
-1. Gehen Sie in der App Finance und Operations auf **Arbeitsbereiche \> Datenverwaltung** und wählen Sie die Kachel **Datentabellen**.
+1. Gehen Sie in der Finanz- und Betriebs-App auf **Arbeitsbereiche \> Datenmanagement** und wählen Sie die Kachel **Datentabellen**.
 2. Suchen Sie die Tabelle, der das Attribut fehlt. Klicken Sie in der Symbolleiste auf **Zielzuordnung ändern**.
 3. Klicken Sie im Bereich **Abbildung auf Ziel** auf **Zuordnung generieren**.
-4. Öffnen Sie die Seite **Tabellenzuordnung** auf der Seite **duales Schreiben** in der App Finance und Operations.
+4. Öffnen Sie die Seite **Tabelle Zuordnung** von der Seite **Dual-write** in der Finanz- und Betriebs-App.
 5. Wenn das Attribut nicht automatisch in die Zuordnung eingefügt wird, fügen Sie es manuell hinzu, indem Sie auf **Attribut hinzufügen** und dann auf **Speichern** klicken. 
 6. Wählen Sie die Zuordnung aus, und klicken Sie auf **Ausführen**.
 

@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2021-11-09
-ms.openlocfilehash: 90e64fec512307af209ace128d5897475de7aee5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 41789d574cc7348dbf8a18db97da9c428da09602
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867272"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103937"
 ---
 # <a name="dynamics-365-finance-supply-chain-management-and-commerce-in-us-government-community-cloud-gcc"></a>Dynamics 365 Finance, Supply Chain Management und Commerce in der Community-Cloud der US-Regierung (GCC)
 
@@ -38,9 +38,9 @@ Befolgen Sie nach Abschluss des anfänglichen Onboardings die Anweisungen in [Pr
 
 ## <a name="environment-deployment"></a>Bereitstellen der Umgebung
 
-Nachdem Sie das Projekt-Onboarding abgeschlossen haben, können Sie sich die zusätzlichen Funktionalitäten von LCS ansehen, die in [Lifecycle Services (LCS) für Apps für Finanzen und Betrieb Kunden](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md) beschrieben sind. Fahren Sie dann mit der Umgebungsbereitstellung fort.
+Nachdem Sie das Projekt-Onboarding abgeschlossen haben, können Sie sich die zusätzlichen Funktionalitäten von LCS ansehen, die in [Lifecycle Services (LCS) für Finanz- und Betriebs-Apps Kunden](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md) beschrieben sind. Fahren Sie dann mit der Umgebungsbereitstellung fort.
 
-- Um von Microsoft verwaltete Umgebungen über LCS bereitzustellen, folgen Sie den Anweisungen in [Lifecycle Services (LCS) für Apps für Finanzen und Betrieb Debitor](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
+- Um von Microsoft verwaltete Umgebungen über LCS bereitzustellen, folgen Sie den Anweisungen in [Lifecycle Services (LCS) für Finanz- und Betriebs-Apps Debitor](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
 - Informationen zu cloud-gehosteten Umgebungen finden Sie unter [Entwicklungsumgebungen bereitstellen und darauf zugreifen](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md). Sie müssen auch den Resource Manager-Onboarding-Prozess für Ihre Connectors abschließen, wie in [Onboardingprozess von Azure Resource Manager für Lifecycle Services-Projekte der US-Regierung abschließen](arm-onbarding-us-goverment.md) beschrieben.
 
 > [!NOTE]
@@ -84,3 +84,4 @@ Ja. Wenn Ihr Partner jedoch eine Nicht-GCC-Identität verwendet, wird das Suppor
 - [Cloudbereitstellung – Übersicht](../../../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

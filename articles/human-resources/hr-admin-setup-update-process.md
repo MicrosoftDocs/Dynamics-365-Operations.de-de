@@ -14,18 +14,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1b9ab27b443e5ec675ea03e13aa7be4ea84bfb45
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 25889f9d4a7ffb4f155b7b7c12ec3b21a44a4710
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722240"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178442"
 ---
 # <a name="update-process"></a>Aktualisierungsprozess
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Gilt für:** Human Resources in der eigenständigen Infrastruktur_ 
 
+> [!NOTE]
+> Ab Juli 2022 können neue Human Resources Umgebungen nicht mehr in der eigenständigen Human Resources Infrastruktur bereitgestellt werden und neue Microsoft Dynamics Lifecycle Services (LCS) Projekte können dort nicht mehr erstellt werden. Debitor kann Human Resources Umgebungen in der Finanzen und Betrieb Infrastruktur bereitstellen. Weitere Informationen finden Sie unter [Personal Resources in der Finanzen und Betrieb Infrastruktur bereitstellen](/hr-admin-setup-provision-fo.md).
 
+> [!IMPORTANT]
+> Der Update- und Hotfix-Prozess in der Infrastruktur der Finanz- und Betriebs-Apps unterscheidet sich von dem eigenständigen Update- und Hotfix-Prozess für Human Resources. Weitere Informationen über den Aktualisierungsprozess finden Sie unter [Prozess für die Umstellung auf das neueste Update von Finanzen und Betrieb](../fin-ops-core/dev-itpro/migration-upgrade/upgrade-latest-update.md). Weitere Informationen zu Hotfixes finden Sie unter [Herunterladen von Updates von Lifecycle Services (LCS)](/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs.md). 
 
 Microsoft Dynamics 365 Human Resources ist eine echte Software-as-a-Service (SaaS), die kontinuierliche, berührungslose Dienstupdates bietet. Diese Updates enthalten sowohl Anwendungs‑ als auch Plattformänderungen, die häufig wichtige Verbesserungen des Dienstes bewirken, einschließlich rechtlicher Aktualisierungen.
 
@@ -37,16 +41,14 @@ Aktualisierungen werden in regelmäßigen Abständen in allen Umgebungen veröff
 
 Human Resources-Aktualisierungen werden automatisch auf alle Umgebungen angewendet. Human Resources bietet zwei Versionstypen:
 
-- **Dienstupdates**: Updates finden alle zwei Wochen staat und enthalten Fehlerkorrekturen und neuen Funktionen. Zu den Dienstupdates gehören auch relevante veröffentlichte Plattformupdates. Weitere Informationen zu Plattformveröffentlichungen finden Sie unter [Neuerungen oder Änderungen bei Plattformupdates](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Zweiwöchentliche Updates werden in allen Regionen global eingeführt. Weitere Informationen zu zweiwöchentlichen Updates finden Sie unter [Neuerungen oder Änderungen in Dynamics 365 Human Resources](hr-admin-whats-new.md).
+- **Dienstupdates**: Updates finden alle zwei Wochen staat und enthalten Fehlerkorrekturen und neuen Funktionen. Service-Updates beinhalten auch anwendbare Plattform-Updates, wenn diese veröffentlicht werden. Weitere Informationen zu Plattformveröffentlichungen finden Sie unter [Neuerungen oder Änderungen bei Plattformupdates](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Die Updates werden schrittweise über alle Regionen hinweg eingeführt. Weitere Informationen zu Aktualisierungen finden Sie unter [Was ist neu oder geändert in Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
-    Alle unterstützten Rechenzentren werden alle zwei Wochen aktualisiert, sofern nicht anders angegeben. In den USA, Australien, Europa, Vereinigtes Königreich, Asien und Kanada finden zweiwöchentliche Updates statt. 
-
-- **Dataverse-Lösungsupdates**: Diese Updates werden nach Bedarf etwa alle sechs Wochen durchgeführt. Dazu gehören neue Entitäten und Änderungen an vorhandenen Entitäten in Dataverse. Diese Updates werden in denselben Regionen wie die zweiwöchentlichen Updates veröffentlicht. Die Replikation in allen Rechenzentren dauert ungefähr sechs Wochen. Lösungsupdates stimmen möglicherweise mit zweiwöchentlichen Dienstupdates überein.
+- **Dataverse-Lösungsupdates**: Diese Updates werden nach Bedarf etwa alle sechs Wochen durchgeführt. Dazu gehören neue Entitäten und Änderungen an vorhandenen Entitäten in Dataverse. Diese Updates werden in denselben Regionen veröffentlicht wie die zweiwöchentlichen Updates und es dauert etwa sechs Wochen, bis sie in allen Rechenzentren repliziert sind. Lösungsupdates stimmen möglicherweise mit zweiwöchentlichen Dienstupdates überein.
 
 > [!NOTE]
 > Lösungsupdates sind in allen Rechenzentren verfügbar, sobald sie veröffentlicht wurden. Wenn Sie nicht darauf warten möchten, dass die Updates automatisch repliziert werden, können Sie diese Updates in jeder Umgebung in jedem Rechenzentrum manuell anwenden.
 
-Bei Bedarf bietet Human Resources auch die folgenden Fehlerkorrekturtypen:
+Bei Bedarf stellt Human Resources die folgenden Arten von Korrekturen zur Verfügung:
 
 - **Überarbeitung (Hotfix)**: Fehlerkorrekturen, die mit oder außerhalb eines zweiwöchentliches Dienstupdates auftreten können
 
@@ -83,11 +85,11 @@ Hier können Sie herausfinden, was für Human Resources in Arbeit ist und was wi
 
 Sie können Vorschaufunktionen in einer Sandkastenumgebung überprüfen, bevor Sie sie in Ihrer Produktionsumgebung aktivieren. Weitere Informationen zur Aktivierung von Funktionen finden Sie unter [Funktionsverwaltungsüberblick](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-Alle neuen Funktionen bleiben mindestens 30 Tage und in der Regel 30-60 Tage in der Vorschau. Die wichtigsten Funktionen sind in der Regel im Oktober und April eines jeden Jahres nach dem Vorschauzeitraum verfügbar. Sobald Sie neue Funktionen im Arbeitsbereich Feature-Management sehen, können Sie diese einschalten. Einige Funktionen sind möglicherweise standardmäßig aktiviert.
+Alle neuen Funktionen bleiben mindestens 30 Tage und in der Regel 30-60 Tage in der Vorschau. Die wichtigsten Funktionen sind in der Regel im Oktober und April eines jeden Jahres nach dem Vorschauzeitraum verfügbar. Sobald Sie neue Funktionen im Arbeitsbereich **Feature-Management** sehen, können Sie diese einschalten. Einige Funktionen sind möglicherweise standardmäßig aktiviert.
 
 Manchmal ist ein integrales Feature standardmäßig eingeschaltet und kann nicht deaktiviert werden (z.B. das Feature-Management Arbeitsbereich).
 
-Sobald eine Funktion allgemein verfügbar ist, kann sie in Produktionsumgebungen ein- und ausgeschaltet werden. Der Arbeitsbereich Feature-Management zeigt an, wann eine Vorschaufunktion obligatorisch wird. Dieses Datum ist in der Regel der 1. Oktober oder 1. April, um mit den halbjährlichen Release-Plänen übereinzustimmen. Sie können obligatorische Funktionen nicht deaktivieren. Bis es obligatorisch wird, können Sie eine Funktion in allen Umgebungen ein- und ausschalten.
+Sobald eine Funktion allgemein verfügbar ist, kann sie in Produktionsumgebungen ein- und ausgeschaltet werden. Der Arbeitsbereich **Feature-Management** zeigt an, wann eine Vorschaufunktion obligatorisch wird. Dieses Datum ist in der Regel der 1. Oktober oder 1. April, um mit den halbjährlichen Release-Plänen übereinzustimmen. Sie können obligatorische Funktionen nicht deaktivieren. Bis es obligatorisch wird, können Sie eine Funktion in allen Umgebungen ein- und ausschalten.
 
 Es wird dringend empfohlen, eine Vorschau der Funktionen in einer Sandkasten‑ oder Testumgebung anzuzeigen. Erstellen Sie am besten eine Kopie Ihrer aktuellen Produktionsumgebung oder Datenbank in einer Sandkastenumgebung, damit Sie die neuen Funktionen mit Ihren Daten optimal nutzen können.
 

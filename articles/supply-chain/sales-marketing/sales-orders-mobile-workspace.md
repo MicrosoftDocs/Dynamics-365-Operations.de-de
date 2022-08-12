@@ -15,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: henrikan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: fc04a90c0c071508c9ebee57862a029de0e58f9a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 38971f2a5f3f3d2692de0e52365e2215170101cc
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844763"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103179"
 ---
 # <a name="sales-orders-mobile-workspace"></a>Aufträge, mobiler Arbeitsbereich
 
@@ -29,7 +29,7 @@ ms.locfileid: "8844763"
 
 Dieser Artikel enthält Informationen zum mobilen Arbeitsbereich **Verkaufsaufträge**. Mit diesem Arbeitsbereich sind Sie jederzeit auf dem neuesten Stand hinsichtlich Ihrer Aufträge, jederzeit und überall. 
 
-Dieser mobile Arbeitsbereich soll mit der mobilen App für Finanz und Betrieb (Dynamics 365)-App verwendet werden.
+Dieser mobile Arbeitsbereich ist für die Verwendung mit der Finanzen und Betrieb (Dynamics 365) Mobile-App vorgesehen.
 
 ## <a name="overview"></a>Übersicht
 Im Arbeitsbereich mobile **Verkaufsufträge** können Sie detaillierte Informationen zu den einzelnen Aufträgen anzeigen. Diese Informationen enthalten den Auftragsstatus, Kontaktinformationen für den Debitor und die Kontaktinformationen der Auftragsannahme. Der mobile Arbeitsbereich **Aufträge** enthält eine einzige Ansicht für die Aufträge. Sie können alle Aufträge nach Debitor anzeigen, oder zeigen Sie alle Aufträge oder Informationen über einen bestimmten Auftrag an. 
@@ -118,7 +118,7 @@ Wenn Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher 
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Herunterladen und Installieren der mobilen App
-Laden Sie die mobile App für Finanz und Betrieb (Dynamics 365) herunter und installieren Sie sie:
+Laden Sie die Mobile-App für Finanzen und Vorgänge (Dynamics 365) herunter und installieren Sie sie:
 
 -   [Für Android-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Für iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -143,3 +143,4 @@ Laden Sie die mobile App für Finanz und Betrieb (Dynamics 365) herunter und ins
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

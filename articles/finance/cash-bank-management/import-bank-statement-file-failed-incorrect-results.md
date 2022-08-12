@@ -1,7 +1,7 @@
 ---
 title: Bankauszugsdatei-Importproblembehandlung
 description: In diesem Artikel wird erläutert, wie Sie durch geringfügige Unterschiede in der Bankauszugdatei verursachte Probleme beheben.
-author: panolte
+author: angelad116
 ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
@@ -12,19 +12,22 @@ ms.reviewer: kfend
 ms.custom: 141273
 ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3
 ms.search.region: global
-ms.author: panolte
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 422b2df6c4de3a948b0e62bfb70f99b12e04a8f9
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 44658ea48b9f7dae76c34c5f3d8828c9e8c4ac32
+ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711172"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151759"
 ---
 # <a name="bank-statement-file-import-troubleshooting"></a>Bankauszugsdatei-Importproblembehandlung
 
 [!include [banner](../includes/banner.md)]
+
+>[!NOTE]
+>Diese Funktionalität wird im September 2022 außer Betrieb genommen, neue Benutzer sollten die elektronische Berichterstattung verwenden.
 
 Es ist wichtig, dass die Bankauszugdatei der Bank dem Layout entspricht, das von Microsoft Dynamics 365 Finance unterstützt wird. Aufgrund der strengen Standards für Bankauszüge, funktionieren die meisten Integrationen korrekt. Allerdings kann manchmal die Auszugsdatei nicht importiert werden oder enthält falsche Ergebnisse. In der Regel werden diese Probleme durch geringfügige Unterschiede in der Bankauszugdatei verursacht. In diesem Artikel wird beschrieben, wie Sie diese Unterschiede korrigieren und Probleme lösen können.
 
@@ -39,7 +42,7 @@ Nachdem Sie versuchen, eine Bankauszugsdatei zu importieren, wechseln Sie zur Ei
 Vergleichen Sie die Bankdateilayoutdefinition mit der Finance-Importdefinition, und achten Sie auf eventuelle Unterschiede in den Feldern und den Elementen. Vergleichen Sie die Bankauszugdatei mit der jeweiligen Finance-Datei. In den Dateien ISO20022 sollten sämtliche Abweichungen einfach sein anzuzeigen.
 
 ## <a name="time-zone-differences-on-imported-bank-statements"></a>Zeitzonendifferenzen in importierten Bankauszügen
-Die Datum-Zeit-Werte in der Importdatei können sich von den Datum-Zeit-Werten unterscheiden, die in Finance and Operations angezeigt werden. Um diese Abweichung zu verhindern, können Sie auf der Seite **Datenquellen konfigurieren** eine Zeitzoneneinstellung einstellen. Weitere Informationen zur Eingabe einer Zeitzoneneinstellung finden Sie unter [Einrichten des erweiterten Bankabstimmungsimportprozesses](set-up-advanced-bank-reconciliation-import-process.md).
+Die Datums- und Zeitwerte in der Importdatei können von den Datums- und Zeitwerten abweichen, die in Finanzen und Betrieb angezeigt werden. Um diese Abweichung zu verhindern, können Sie auf der Seite **Datenquellen konfigurieren** eine Zeitzoneneinstellung einstellen. Weitere Informationen zur Eingabe einer Zeitzoneneinstellung finden Sie unter [Einrichten des erweiterten Bankabstimmungsimportprozesses](set-up-advanced-bank-reconciliation-import-process.md).
 
 ## <a name="transformations"></a>Umwandlungen
 In der Regel muss die Änderung bei einer von drei Umwandlungen vorgenommen werden. Jede Umwandlung ist für einen bestimmten Standard geschrieben.
@@ -109,3 +112,4 @@ Die folgende Tabelle zeigt Beispiele der technischen Layoutdefinitionen für erw
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

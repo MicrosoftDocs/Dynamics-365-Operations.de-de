@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: af344d3771583a99851c070e3735258ac964b5d7
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: c54534ae32aa037f36a16600a058bca6d433002c
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954495"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9167730"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Neuigkeiten oder Änderungen in Dynamics 365 Supply Chain Management 10.0.25 (April, 2022)
 
@@ -36,8 +36,7 @@ Die folgende Tabelle listet die Funktionen auf, die in dieser Version enthalten 
 | Bestand&nbsp;und&nbsp;Logistik | [Erweiterungen zu Gefahrengütern](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/hazardous-materials-enhancements) | Demnächst | Funktionsverwaltung:<br>*Erweiterungen zu Gefahrengütern* |
 | Bestand&nbsp;und&nbsp;Logistik | [Verpackungsarbeit für Verpackungsstationen](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/packing-work-packing-stations) | Demnächst | Funktionsverwaltung:<br>*Verpackungsarbeit für Verpackungsstationen* |
 | Bestand&nbsp;und&nbsp;Logistik | [Barcodes im Lagerort mit GS1-Formatstandards scannen](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-Barcodes und QR-Codes](../warehousing/gs1-barcodes.md) | Funktionsverwaltung:<br>*GS1-Barcodes scannen* |
-| Fertigung | [Materialverbrauch und Reservierungen in der Produktionsausführungsoberfläche](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte](../production-control/production-floor-execution-use.md) | Funktionsverwaltung:<br>*(Vorschau) Materialverbrauch in der Produktionsausführungsoberfläche (nicht WMS) registrieren*<br><br>Und/oder:<br><br>Funktionsverwaltung:<br>*(Vorschauversion) Materialverbrauch in der Produktionsausführungsoberfläche registrieren (WMS-fähig)* |
-| Fertigung | [Materialverbrauch auf Scale-Einheiten registrieren](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/register-material-consumption-scale-units) | [Workloads in der Fertigungsausführung für Cloud- und Edge-Skalierungseinheiten](../cloud-edge/cloud-edge-workload-manufacturing.md) | Funktionsverwaltung:<br>*Materialverbrauch mit der mobilen App an einer Skalierungseinheit registrieren* |
+| Fertigung | [Materialverbrauch und Reservierungen in der Produktionsausführungsoberfläche](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte](../production-control/production-floor-execution-use.md) | Funktionsverwaltung:<br>*Materialverbrauch in der Produktionsausführungsoberfläche (nicht WMS) registrieren*<br><br>Und/oder:<br><br>Funktionsverwaltung:<br>*(Vorschauversion) Materialverbrauch in der Produktionsausführungsoberfläche registrieren (WMS-fähig)* |
 | Planung | [Von Planungsoptimierung zentralisierte Kalenderpflege](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-centralized-calendar-maintenance) | [Kalender und Produktprogrammplanung](../master-planning/supply-chain-calendars-master-planning.md) | Standardmäßig aktiviert |
 | Planung | [Vorschläge für die Planungsoptimierung zur Optimierung des bestehenden Vorrats](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-suggestions-optimize-existing-supply) | [Aktivitätsmeldungen](../master-planning/action-messages.md) | Standardmäßig aktiviert |
 | Planung | Geplante Aufträge vereinfacht | [Geplante Aufträge vereinfacht](../master-planning/planning-optimization/planned-orders-simplified.md ) | Funktionsverwaltung:<br>*Geplante Aufträge vereinfacht* |
@@ -183,9 +182,9 @@ In der Tabelle sind auch Funktionen aufgeführt, die zuvor in der öffentlichen 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformupdates für Apps für Finanzen und Betrieb
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattform-Updates für Finanz- und Betriebs-Apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.25 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattform-Updates für die Version 10.0.25 der Apps für Finanzen und Betrieb (April 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-25.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.25 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattform-Updates für die Version 10.0.25 der Finanz- und Betriebs-Apps (April 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-25.md).
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -209,3 +208,4 @@ Bevor eine Funktion aus dem Produkt entfernt wird, wird der Verfallshinweis im A
 Bei Änderungen, die sich nur auf die Kompilierungszeit auswirken, aber binär mit Sandbox- und Produktionsumgebungen kompatibel sind, beträgt die Entfernungszeit weniger als 12 Monate. In der Regel handelt es sich hierbei um Funktionsaktualisierungen, die am Compiler vorgenommen werden müssen.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

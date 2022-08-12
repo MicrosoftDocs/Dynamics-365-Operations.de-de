@@ -10,12 +10,12 @@ ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: 504939f1f98c18005c092cabc1d040b420402c93
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 28c321ee2815b2886c07bfb0996870e536458145
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874811"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111659"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Getrenntes Dual-write Application Orchestration Paket
 
@@ -26,14 +26,14 @@ ms.locfileid: "8874811"
 Zuvor war das Dual-write Application Orchestration-Paket ein einzelnes Paket, das die folgenden Lösungen enthielt:
 
 - Dynamics 365 Notes
-- Dynamics 365 Finance and Operations – allgemeiner Anker
-- Dynamics 365 Finance and Operations – Entitätszuordnungen für duales Schreiben
+- Dynamics 365 Finance and Operations Allgemeiner Anker
+- Dynamics 365 Finance and Operations Dual-write Entity Maps
 - Dynamics 365 Asset-Management App
 - Dynamics 365 Asset-Management
 - HCM Common
 - Dynamics 365 Supply Chain Extended
 - Dynamics 365 Finance Extended
-- Dynamics 365 Finance and Operations – allgemein
+- Dynamics 365 Finance and Operations Allgemein
 - Dynamics 365 Company
 - Währungswechselsätze
 - Field Service Common
@@ -51,7 +51,7 @@ Mit dem Dual-write Application Core-Paket können Benutzer Dual-write ohne eine 
 | Eindeutiger Name                           | Anzeigename                               |
 |---------------------------------------|--------------------------------------------|
 | Dynamics365Company                    | Dynamics 365 Company                       |
-| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance and Operations – allgemein |
+| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance and Operations – Allgemein |
 | CurrencyExchangeRates                 | Währungswechselsätze                    |
 | msdyn_DualWriteAppCoreMaps            | Dual-write Applications Core Zuordnung von Entitäten   |
 | msdyn_DualWriteAppCoreAnchor          | Dual-write Application Core Anker        |
@@ -247,7 +247,7 @@ Das Dual-write Notes-Paket enthält die Lösungen und Zuordnungen, die für die 
 
 Die folgenden Zuordnungen sind in diesem Paket enthalten.
 
-| Finance and Operations                     | Customer Engagement |
+| Finanzen und Betrieb                     | Customer Engagement |
 |--------------------------------------------|---------------------|
 | Auftragskopfdokument-Anhänge    | Anmerkungen         |
 | Debitorenanhänge                       | Anmerkungen         |
@@ -344,3 +344,4 @@ Die Partei- und globale Adressbuchlösungen mit dualem Schreiben hängen von den
 - Dual-write Application Core Paket
 - Dual-write Finance-Paket
 - Dual-write Supply Chain Paket
+

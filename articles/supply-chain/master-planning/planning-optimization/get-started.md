@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b9595aece264f55c706ebc84010b927fae56b512
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e853c8a482b8fd0b92c9861fe022c056915ab405
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900969"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112179"
 ---
 # <a name="get-started-with-planning-optimization"></a>Erste Schritte mit der Planungsoptimierung
 
@@ -40,7 +40,7 @@ Bevor Sie die Planungsoptimierung einschalten, empfehlen wir Ihnen dringend, die
 
 ## <a name="availability"></a>Verfügbarkeit
 
-Die Planungsoptimierung ist derzeit in den folgenden geografischen Azure-Regionen verfügbar: Vereinigte Staaten, Kanada, Brasilien, Europa, Vereinigtes Königreich, Australien, Asien-Pazifik, Japan und Indien. Wenn Sie versuchen, das Add-In aus einer anderen geografischen Region zu installieren, zeigt LCS die Meldung an, dass diese geografische Region nicht unterstützt wird. Weitere Informationen zu Azure-Geografien und den zugehörigen Regionen finden Sie unter [Azure-Geografien](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
+Die Planungsoptimierung ist derzeit in den folgenden Azure-Gebieten verfügbar: Vereinigte Staaten, Kanada, Brasilien, Europa, Frankreich, Vereinigtes Königreich, Australien, Asien-Pazifik, Japan und Indien. Wenn Sie versuchen, das Add-In aus einer anderen geografischen Region zu installieren, zeigt LCS die Meldung an, dass diese geografische Region nicht unterstützt wird. Weitere Informationen zu Azure-Geografien und den zugehörigen Regionen finden Sie unter [Azure-Geografien](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
 
 Beachten Sie, dass Planungsoptimierung keine lokalen Bereitstellungen von Dynamics 365 Supply Chain Management unterstützt.
 
@@ -58,7 +58,7 @@ Bevor Sie die das Planungsoptimierungs-Add-In installieren, müssen die folgende
 
 - Sie müssen Supply Chain Management in einer LCS-fähigen Hochverfügbarkeitsumgebung, Ebene 2 oder höher (keine OneBox-Umgebung) mit Dynamics 365 Supply Chain Management Version 10.0.7 oder höher ausführen. Wenn Sie versuchen, das Add-In in einer OneBox-Umgebung zu installieren, wird die Installation nicht abgeschlossen und Sie müssen die Installation abbrechen.
 
-- Ihr System muss für die Power Platform-Integration eingerichtet sein. Weitere Informationen finden Sie unter [Microsoft Power Platform Integration mit Finance und Operations Apps](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
+- Ihr System muss für die Power Platform-Integration eingerichtet sein. Weitere Informationen finden Sie unter [Microsoft Power Platform Integration mit Finanz- und Betriebs-Apps](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
 
 ### <a name="enable-the-planning-optimization-license"></a>Planungsoptimierungslizenz aktivieren
 
@@ -135,3 +135,4 @@ Wenn die Planungsoptimierung eingeschaltet ist, wird die Produktprogrammplanung 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

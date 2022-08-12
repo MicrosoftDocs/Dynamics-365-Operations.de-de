@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 525e9be1655bdf0c0328ec53509ab1966abd7bde
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: aceb883e9182090a336c4c91aa0022a79495ce40
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883567"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111693"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Abhängigkeit von ER-Konfigurationen von anderen Komponenten festlegen
 
@@ -25,7 +25,7 @@ ms.locfileid: "8883567"
 
 Um diese Schritte auszuführen, müssen Sie zunächst die Schritte im Aufgabenleitfaden ausführen (Verwalten von Modellzuordnungskonfigurationen für elektronische Berichterstellung), und Sie müssen Zugriff auf Microsoft Dynamics Lifecycle Services (LCS) haben.
 
-Dieses Verfahren zeigt, wie eine Konfiguration für die elektronische Berichterstellung (ER) entworfen wird, und definiert die Abhängigkeit von anderen Softwarekomponenten, damit Sie sicherstellen können, dass die Konfiguration für eine bestimmten Version von Finance and Operations ordnungsgemäß heruntergeladen wurde. In diesem Beispiel erstellen Sie die erforderlichen ER-Konfigurationen für das Beispielunternehmen Litware, Inc. 
+Dieses Verfahren zeigt Ihnen, wie Sie eine Konfiguration für das elektronische Berichtswesen (ER) entwerfen und ihre Abhängigkeit von anderen Softwarekomponenten angeben, damit Sie dazu beitragen können, dass die Konfiguration korrekt auf eine bestimmte Version von Finanzen und Betrieb heruntergeladen wird. In diesem Beispiel erstellen Sie die erforderlichen ER-Konfigurationen für das Beispielunternehmen Litware, Inc. 
 
 Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrators oder des elektronischen Berichtsentwicklers haben, die ihnen zugewiesen sind. Diese Schritte können an einem beliebigen Unternehmen ausgeführt werden, da die ER-Konfiguration von allen Unternehmen genutzt werden. 
 
@@ -46,7 +46,7 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
 7. Microsoft Dynamics 365 for Operations (1611) auswählen.
 8. Geben Sie im Feld Version Typ '(7.1.1541.3036,8)' ein.
     * (7.1.1541.3036,8)  
-    * Abhängigkeiten, die Sie eingeben, werden ausgewertet, wenn die Konfiguration von einem beliebigen ER-Repository heruntergeladen wird. Diese wird aus der RCS-Repository Variantenversion heruntergeladen, wenn Version 1 der Beispieldatmodell- Konfiguration entweder bereits an der richtigen Stelle ist oder im Voraus heruntergeladen wurde. Wenn sie im Voraus heruntergeladen wird, muss sie in Finance and Operations-Version 7.1.1541.3036 oder höher aufweisen, darf aber die Hauptversion 8 nicht überschreiten.   
+    * Abhängigkeiten, die Sie eingeben, werden ausgewertet, wenn die Konfiguration von einem beliebigen ER-Repository heruntergeladen wird. Diese wird aus der RCS-Repository Variantenversion heruntergeladen, wenn Version 1 der Beispieldatmodell- Konfiguration entweder bereits an der richtigen Stelle ist oder im Voraus heruntergeladen wurde. Wenn er im Voraus heruntergeladen wird, muss er in Finanzen und Betrieb, Version 7.1.1541.3036 oder höher, abgeschlossen sein, darf aber die Hauptversion 8 nicht überschreiten.   
 9. Klicken Sie auf "Speichern".
 10. Schließen Sie die Seite.
 11. Klicken Sie auf "Status ändern".
@@ -59,7 +59,7 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
 18. Wählen Sie Microsoft Dynamics AX 7.0 RTW aus.
 19. Geben Sie im Feld Version Typ '(7.0.1265.3015,7.1)' ein.
     * (7.0.1265.3015,7.1)  
-    * Abhängigkeiten, die Sie eingeben, werden ausgewertet, wenn die Konfiguration von einem beliebigen ER-Repository heruntergeladen wird. Diese wird aus der RCS-Repository Variantenversion heruntergeladen, wenn Version 1 der Beispieldatmodell- Konfiguration entweder bereits an der richtigen Stelle ist oder im Voraus heruntergeladen wurde. Wenn sie im Voraus heruntergeladen wird, muss sie in Microsoft Dynamics 365 for Finance and Operations Enterprise Edition abgeschlossen werden, wobei die Version 7.0.1265.3015 oder höher sein muss, aber die Nebenversion 1 nicht überschreiten darf.   
+    * Abhängigkeiten, die Sie eingeben, werden ausgewertet, wenn die Konfiguration von einem beliebigen ER-Repository heruntergeladen wird. Diese wird aus der RCS-Repository Variantenversion heruntergeladen, wenn Version 1 der Beispieldatmodell- Konfiguration entweder bereits an der richtigen Stelle ist oder im Voraus heruntergeladen wurde. Wenn es im Voraus heruntergeladen wird, muss es in Microsoft Dynamics 365 Finance, Enterprise Edition fertiggestellt werden, dessen Version 7.0.1265.3015 oder höher sein muss, aber nicht über die Nebenversion 1 hinausgehen darf.   
 20. Klicken Sie auf "Speichern".
 21. Schließen Sie die Seite.
 22. Klicken Sie auf "Status ändern".
@@ -136,10 +136,11 @@ Wir werden erstellte Konfigurationen löschen und laden sie erneut vom LCS-Repos
 25. Wechseln Sie zu Organisationsverwaltung > Elektronische Berichterstellung > Konfigurationen.
 26. Wählen Sie in der Struktur 'Muster Datenmodell' erweitern.
     * Beachten Sie, dass die vorbildliche Beispielzuordnung Zuordnungskonfiguration zusammen mit der gewählten Datenmodellkonfiguration heruntergeladen wurde. Die zwei Dateien werden zusammen heruntergeladen, da die „Beispielzuordnung“ als Implementierung des ausgewählten Datenmodells definiert wurde und weil sie für die Anwendung anwendbar ist. Die Variante Beispielzuordnung (Alternative) ist nicht heruntergeladen worden, da die Bedingung für die erforderliche Anwendungsversion nicht erfüllt ist.   
-    * Wenn Sie sich bei Finance and Operations anmelden, registrieren Sie denselben Anbieter, greifen Sie auf das gleiche LCS-Projekt zu, und laden Sie die gleiche Datenmodellkonfiguration, die „Beispielzuordnung (Alternative )“ herunter, während die Konfiguration „Beispielzuordnung“ übersprungen wird.  
+    * Wenn Sie sich bei Finanzen und Betrieb anmelden, denselben Anbieter registrieren, auf dasselbe LCS-Projekt zugreifen und dieselbe Datenmodellkonfiguration herunterladen, wird die Konfiguration 'Musterzuordnung (alternativ)' heruntergeladen, während die Konfiguration 'Musterzuordnung' übersprungen wird.  
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Den Lebenszyklus der elektronischen Berichterstellungskonfiguration (ER) verwalten](../general-electronic-reporting-manage-configuration-lifecycle.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

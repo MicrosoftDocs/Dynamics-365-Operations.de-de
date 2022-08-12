@@ -1,6 +1,6 @@
 ---
-title: Probleme mit dem dualen Schreiben in Finanz- und Betriebs-Apps behandeln
-description: In diesem Artikel finden Sie Informationen zur Problembehandlung, die Ihnen helfen können, Probleme mit dem Modul für duales Schreiben in Finanz- und Betriebs-Apps zu beheben.
+title: Problembehandlung von Dual-write-Problemen in Finanz- und Betriebs-Apps
+description: Dieser Artikel enthält Informationen zur Problembehandlung, die Ihnen helfen können, Probleme mit dem Dual-write-Modul in Finanz- und Betriebs-Apps zu beheben.
 author: RamaKrishnamoorthy
 ms.date: 04/18/2022
 ms.topic: article
@@ -9,25 +9,25 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 36f7969eb0bdbc64ade14a5bb97b4b708486d226
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2743b99538b332af7cc6ad8d951eede562c14235
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864571"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111169"
 ---
-# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Probleme mit dem dualen Schreiben in Finanz- und Betriebs-Apps behandeln
+# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Problembehandlung von Dual-write-Problemen in Finanz- und Betriebs-Apps
 
 [!include [banner](../../includes/banner.md)]
 
 
 
-Dieser Artikel enthält Informationen zur Problembehandlung für die Integration von dualem Schreiben zwischen Finanz- und Betriebs-Apps und Dataverse. Insbesondere finden Sie hier Informationen, die Ihnen helfen können, Probleme mit dem **duales Schreiben** Modul in Apps für Finanzen und Betrieb zu beheben.
+Dieser Artikel enthält Informationen zur Problembehandlung für die Dual-write Integration zwischen Finanz- und Betriebs-Apps und Dataverse. Insbesondere liefert es Informationen, die Ihnen helfen können, Probleme mit dem **Dual-write** Modul in Finanz- und Betriebs-Apps zu beheben.
 
 > [!IMPORTANT]
 > Einige der in diesem Artikel behandelten Probleme erfordern möglicherweise entweder die Systemadministratorrolle oder Microsoft Azure Active Directory (Azure AD)-Anmeldeinformationen des Mandantenadministrators. Im Abschnitt zu jedem Problem wird erläutert, ob eine bestimmte Rolle oder Anmeldeinformationen erforderlich sind.
 
-## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Sie können das duales Schreiben-Modul nicht in einer Finance und Operations App laden
+## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Sie können das Dual-write Modul nicht in eine Finanz- und Betriebs-App laden
 
 Wenn Sie die Seite **Duales Schreiben** nicht öffnen können durch Auswahl der Kachel **Duales Schreiben** im Arbeitsbereich **Datenmverwaltung**, ist der Datenintegrationsdienst wahrscheinlich ausgefallen. Erstellen Sie ein Support-Ticket, um einen Neustart des Datenintegrationsdienstes anzufordern.
 
@@ -49,7 +49,7 @@ Um das Problem zu beheben, melden Sie sich über ein InPrivate-Fenster bei Micro
 
 ## <a name="error-when-you-link-the-environment-for-dual-write-or-add-a-new-table-mapping"></a>Fehler beim Verknüpfen der Umgebung für duales Schreiben oder Hinzufügen einer neuen Tabellenzuordnung
 
-**Erforderliche Rolle, um das Problem zu beheben:** Systemadministrator in den Apps Finance und Operations und Dataverse.
+**Erforderliche Rolle, um das Problem zu beheben:** Systemadministrator in den Finanz- und Betriebs-Apps und Dataverse.
 
 Beim Verknüpfen oder Erstellen von Zuordnungen kann der folgende Fehler auftreten:
 
@@ -59,7 +59,7 @@ Session ID: \<your session id\>
 Root activity ID: \<your root activity\> id
 ```
 
-Dieser Fehler kann auftreten, wenn Sie nicht über ausreichende Berechtigungen verfügen, um Duales Schreiben zu verknüpfen oder Zuordnungen zu erstellen. Dieser Fehler kann auch auftreten, wenn die Dataverse-Umgebung zurückgesetzt wurde, ohne die Verknüpfung zum dualen Schreiben aufzuheben. Jeder Benutzer mit der Systemadministratorrolle in den beiden Apps Finance und Operations und Dataverse kann die Umgebungen miteinander verknüpfen. Nur der Benutzer, der die duale Schreibverbindung eingerichtet hat, kann neue Tabellenzuordnungen hinzufügen. Nach dem Setup kann jeder Benutzer mit Systemadministratorrolle den Status überwachen und die Zuordnungen bearbeiten.
+Dieser Fehler kann auftreten, wenn Sie nicht über ausreichende Berechtigungen verfügen, um Duales Schreiben zu verknüpfen oder Zuordnungen zu erstellen. Dieser Fehler kann auch auftreten, wenn die Dataverse-Umgebung zurückgesetzt wurde, ohne die Verknüpfung zum dualen Schreiben aufzuheben. Jeder Benutzer mit der Systemadministratorrolle in den Apps Finanzen und Betrieb und Dataverse kann die Umgebungen miteinander verbinden. Nur der Benutzer, der die duale Schreibverbindung eingerichtet hat, kann neue Tabellenzuordnungen hinzufügen. Nach dem Setup kann jeder Benutzer mit Systemadministratorrolle den Status überwachen und die Zuordnungen bearbeiten.
 
 ## <a name="error-when-you-stop-the-table-mapping"></a>Fehler beim Beenden der Tabellenzuordnung
 
@@ -71,13 +71,13 @@ Dieser Fehler tritt auf, wenn die verknüpfte Dataverse Umgebung nicht verfügba
 
 Erstellen Sie ein Ticket für das Datenintegrationsteam, um das Problem zu beheben. Fügen Sie die Netzwerkablaufverfolgung hinzu, damit das Datenintegrationsteam die Zuordnung als **wird nicht ausgeführt** im hinteren Ende markieren kann.
 
-## <a name="enable-parallel-processing-in-finance-and-operations-apps-to-improve-performance"></a>Parallele Verarbeitung in Finanz- und Betriebs-Apps aktivieren, um die Leistung zu verbessern
+## <a name="enable-parallel-processing-in-finance-and-operations-apps-to-improve-performance"></a>Ermöglichen Sie die parallele Verarbeitung in Finanz- und Betriebs-Apps, um die Leistung zu verbessern.
 
-Die Aktivierung der parallelen Verarbeitung kann die Zeit verkürzen, die zum Importieren von Daten aus Dynamics 365 Customer Engagement-Apps und Microsoft Dataverse in Finanz- und Betriebs-Apps erforderlich ist. 
+Durch die Aktivierung der parallelen Verarbeitung kann der Zeitaufwand für den Import von Daten aus Dynamics 365 Customer Engagement-Apps und Microsoft Dataverse in Finanz- und Betriebs-Apps verringert werden. 
 
-So aktivieren Sie die parallele Verarbeitung in Finanz- und Betriebs-Apps:
+Um die parallele Verarbeitung in Finanz- und Betriebs-Apps zu aktivieren, führen Sie die folgenden Schritte aus.
 
-1. Melden Sie sich bei Ihrer Finanz- und Betriebsumgebung an.
+1. Melden Sie sich in Ihrer Finanz- und Betriebs-Umgebung an.
 2. Wechseln Sie zu **Datenverwaltung > Frameworkparameter**.
 3. Wählen Sie **Entitätseinstellungen** und dann **Entitätsausführungsparameter konfigurieren** aus.
 4. Fügen Sie die Parameter für die parallele Verarbeitung hinzu:
@@ -97,7 +97,7 @@ Möglicherweise erhalten Sie einen Fehler wie den folgenden, wenn Sie versuchen,
 Wenn Sie versuchen, den Status einer Zuordnung auf **Laufend** festzulegen, erhalten Sie möglicherweise diesen Fehler. Die Behebung hängt von der Ursache des Fehlers ab:
 
 + Wenn die Zuordnung abhängige Zuordnungen enthält, müssen Sie die abhängigen Zuordnungen dieser Tabellenzuordnung aktivieren.
-+ In der Zuordnung fehlen möglicherweise Quell- oder Zielspalten. Wenn eine Spalte in der App Finance und Operations fehlt, befolgen Sie die Schritte im Abschnitt [Fehlende Tabellenspalten auf Zuordnungen](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Wenn eine Spalte in Dataverse fehlt, klicken Sie in der Zuordnung auf die Schaltfläche **Tabellen aktualisieren**, damit die Spalten automatisch wieder in die Zuordnung eingefügt werden.
++ In der Zuordnung fehlen möglicherweise Quell- oder Zielspalten. Wenn eine Spalte in der Finanz- und Betriebs-App fehlt, befolgen Sie die Schritte im Abschnitt [Fehlende Tabellenspalten auf Maps](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Wenn eine Spalte in Dataverse fehlt, klicken Sie in der Zuordnung auf die Schaltfläche **Tabellen aktualisieren**, damit die Spalten automatisch wieder in die Zuordnung eingefügt werden.
 
 ### <a name="version-mismatch-error-and-upgrading-dual-write-solutions"></a>Fehler bei der Versionsübereinstimmung und Upgrade von Dual-Write-Lösungen
 
@@ -112,3 +112,4 @@ Möglicherweise erhalten Sie folgende Fehlermeldungen, wenn Sie versuchen, die Z
 Um die Probleme zu beheben, aktualisieren Sie die Dual-Write-Lösungen in Dataverse. Stellen Sie sicher, dass Sie auf die neueste Lösung aktualisieren, die mit der erforderlichen Lösungsversion übereinstimmt.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

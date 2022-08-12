@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 886781764b44ca76b327ad49f25f11f6c370a706
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4ea6901f8d9632b021c35b9ee899385e688fc77e
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851950"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108855"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Ausführung von EB-Formaten nachverfolgen, um Leistungsprobleme zu behandeln
 
@@ -98,7 +98,7 @@ Nehmen Sie an, Sie haben mit dem Entwurf einer neuen EB-Lösung begonnen, um ein
 
 Gehen Sie davon aus, dass Sie das Entwerfen der ersten Version der EB-Lösung beendet haben. Jetzt möchten Sie sie in Ihrer Instanz testen und die Ausführungsleistung analysieren.
 
-### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Importieren einer EB-Konfiguration aus RCS nach Finance + Operations
+### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Importieren Sie eine ER-Konfiguration aus RCS in Finanzen und Betrieb
 
 1. Anmelden bei Ihrer Anwendungsinstanz.
 2. Für dieses Tutorial importieren Sie Konfigurationen aus Ihrer RCS-Instanz (wo Sie Ihre EB-Komponenten entwerfen) in Ihre Instanz (wo Sie sie testen und schließlich benutzen). Daher müssen Sie sicherstellen, dass alle erforderlichen Artefakte vorbereitet wurden. Anweisungen finden Sie unter der Prozedur [Importieren von elektronischen Berichtstellungskonfigurationen (EB) aus Regulatory Configuration Services (RCS)](rcs-download-configurations.md).
@@ -305,7 +305,7 @@ Es kann außerdem hilfreich sein, die Anzahl von Aufrufen zu reduzieren, die an 
 
 ### <a name="import-the-modified-er-model-mapping-configuration-from-rcs-into-the-application"></a>Importieren der geänderten EB-Modellzuordnungskonfiguration von RCS in die Anwendung
 
-Wiederholen Sie die Schritte im Abschnitt [Importieren einer EB-Konfiguration von RCS nach Finance + Operations](#import-configuration) weiter oben in diesem Artikel, um Version 1.2 der Konfiguration **Leistungsnachverfolgungszuordnung** zu importieren.
+Wiederholen Sie die Schritte im Abschnitt [Importieren einer ER-Konfiguration aus RCS in Finanzen und Betrieb](#import-configuration) weiter oben in diesem Artikel, um die Version 1.2 der **Performance Trace-Zuordnung** zu importieren.
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>Ausführen der geänderten EB-Lösung, um Ausführung nachzuverfolgen
 
@@ -363,7 +363,7 @@ Beachten Sie, dass der Webbrowser eine ZIP-Datei zum Herunterladen anbietet. Die
 
 ## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Nutzen Sie externe Tools, um eine Ausführungsablaufverfolgung zu prüfen, die Datenbankabfragen enthält
 
-Aufgrund der Verbesserungen, die vorgenommen wurden, zeigt die Leistungsablaufverfolgung, die in PerfView-Format nun generiert wird, weitere Informationen zur ER-Formatausführung an. In Microsoft Dynamics 365 for Finance and Operations Version 10.0.4 (Juli 2019), kann diese Ablaufverfolgung Details der durchgeführten SQL-Abfragen der Anwendungsdatenbank enthalten.
+Aufgrund der Verbesserungen, die vorgenommen wurden, zeigt die Leistungsablaufverfolgung, die in PerfView-Format nun generiert wird, weitere Informationen zur ER-Formatausführung an. In Microsoft Dynamics 365 Finance Version 10.0.4 (Juli 2019) kann dieser Trace auch Details zu ausgeführten SQL-Abfragen an die Anwendungsdatenbank enthalten.
 
 ### <a name="configure-user-parameters"></a>Benutzerparameter konfigurieren
 
@@ -392,3 +392,4 @@ Beachten Sie, dass der Webbrowser eine ZIP-Datei zum Herunterladen anbietet. Die
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

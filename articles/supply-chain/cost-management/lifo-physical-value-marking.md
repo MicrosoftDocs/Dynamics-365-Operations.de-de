@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45316c40cce988c0758e70af627b0123ec1f7873
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c1acc103291c5d648ac7e179a598348cd9cc2a93
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670439"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135568"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO mit physischem Wert und Markierung
 
@@ -128,7 +128,7 @@ Die folgende Abbildung zeigt diese Buchungen an:
 - 6a. Inventarabgang für eine Menge von 1 zu einem Einstandspreis von USD 23,00 (laufender Durchschnitt der finanziell gebuchten Transaktionen)
 - 7\. Lagerabschluss wird vorgenommen. Basierend auf dem Markierungsprinzip, das die LIFO-Methode verwendet, werden die markierten Transaktionen miteinander verrechnet. In diesem Beispiel wird 3b gegen 2b abgerechnet und eine Korrektur von 6,00 USD auf 3b gebucht, um den Wert auf 22,00 USD zu bringen. In diesem Beispiel werden keine weiteren Abrechnungen vorgenommen, da der Abschluss nur Abrechnungen für finanziell aktualisierte Transaktionen erstellt.
 
-Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig und physisch aktualisierten Buchungen in Höhe von EUR 27,50 berücksichtigt.
+Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig und physisch aktualisierten Buchungen in Höhe von EUR 17,50 berücksichtigt.
 
 Die folgende Abbildung gibt Aufschluss über die Auswirkungen des LIFO-Lagermodells auf diese Reihe von Buchungen, die bei markierten Ab- und Zugängen anfallen.
 

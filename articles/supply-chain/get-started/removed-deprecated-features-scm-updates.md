@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 949fa0df58bc3338c8bc84ecbd4f2ad17117dd12
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7c7dd90fea79ae83d238ed51b9ec1fc42e9e36b2
+ms.sourcegitcommit: f2501d93ffc1c7bf4e0daa78e63bc37528ef2358
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865265"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "9171514"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management
 
@@ -48,11 +48,11 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10018-release"></a>Entfernte oder veraltete Funktionen in Supply Chain Management 10.0.18
 
-### <a name="dynamics-365-for-finance-and-operations---warehousing-the-warehouse-app"></a>Dynamics 365 for Finance and Operations – Lagerhaltung (die Lagerort-App)
+### <a name="supply-chain-management--warehousing-the-warehouse-app"></a><a name="wma"></a>Supply Chain Management- Lagerverwaltung (die Lager App)
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Gültig ab April 2021, *Dynamics 365 for Finance and Operations – Warehousing* (die Lagerhaltungs-App) ist veraltet und wird nach April 2022 nicht mehr unterstützt. Es wird jetzt durch die *Warehouse Management Mobile App* ersetzt, die mit Version 10.0.17 von Supply Chain Management veröffentlicht wurde. Die neue App ist ein vollständiger Ersatz, verwendet jedoch dasselbe zugrunde liegende Framework, was die Migration vereinfacht. Bei Bedarf können die beiden Apps nebeneinander verwendet werden, damit Benutzer sich schrittweise anpassen können, während sie lernen, die neue App zu verwenden.<br><br>Weitere Informationen über die neue Warehouse Management Mobile App finden Sie unter [Mobile Warehouse Management-Anwendung](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) und unter [Warehouse Management Mobile App installieren und Verbindung herstellen](../warehousing/install-configure-warehouse-management-app.md). |
+| **Grund für veralteten Zustand/Entfernung** | Ab April 2021 ist *Supply Chain Management – Warehousing* (die Warehouse App) veraltet und wird ab April 2022 nicht mehr unterstützt. Es wird jetzt durch die *Warehouse Management Mobile App* ersetzt, die mit Version 10.0.17 von Supply Chain Management veröffentlicht wurde. Die neue App ist ein vollständiger Ersatz, verwendet jedoch dasselbe zugrunde liegende Framework, was die Migration vereinfacht. Bei Bedarf können die beiden Apps nebeneinander verwendet werden, damit Benutzer sich schrittweise anpassen können, während sie lernen, die neue App zu verwenden.<br><br>Weitere Informationen über die neue Warehouse Management Mobile App finden Sie unter [Mobile Warehouse Management-Anwendung](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) und unter [Warehouse Management Mobile App installieren und Verbindung herstellen](../warehousing/install-configure-warehouse-management-app.md). |
 | **Ersetzt durch eine andere Funktion?**   | Ja, wird durch die neue Warehouse Management Mobile App ersetzt. |
 | **Betroffene Produktbereiche**         | Supply Chain Management – Lagerort-App |
 | **Bereitstellungsoption**              | Cloud und lokal |
@@ -98,3 +98,4 @@ Um mehr über Funktionen zu erfahren, die in früheren Versionen entfernt oder v
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

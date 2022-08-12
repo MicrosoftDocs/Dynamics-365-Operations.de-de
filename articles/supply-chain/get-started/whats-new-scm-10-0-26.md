@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: d47f3f377a7de87b9c24a18e4542e5a48235d270
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: 8be79f259505c084a8680c453ec15a4cef1a890f
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954522"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124497"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.26 (Mai 2022)
 
@@ -33,7 +33,7 @@ Die folgende Tabelle listet die Funktionen auf, die in dieser Version enthalten 
 
 | Funktionsbereich | Funktion | Mehr erfahren | Aktiviert von |
 |---|---|---|---|
-| Bestand und Logistik | [Inventory Visibility Abfrage des Lagerbestands zur Unterstützung von Elementen der erweiterten Lagerortverwaltung](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [Inventory Visibility-Unterstützung für WHS-Artikel](../inventory/inventory-visibility-whs-support.md) | Funktionsverwaltung:<br>*Lagerortartikel in Bestandsanzeige aktivieren* |
+| Bestand und Logistik | [Inventory Visibility Abfrage des Lagerbestands zur Unterstützung von Elementen der erweiterten Lagerortverwaltung](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [Inventory Visibility-Unterstützung für WMS-Artikel](../inventory/inventory-visibility-whs-support.md) | Funktionsverwaltung:<br>*Lagerortartikel in Bestandsanzeige aktivieren* |
 | Bestand und Logistik | [Für das Bestandssichtbarkeits-Add-In verfügbar](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [Inventory Visibility - Lagerbestände ändern und zusagen](../inventory/inventory-visibility-available-to-promise.md) | Aktiviert durch Servicekonfiguration |
 | Fertigung | [Elemente mit Artikelgewicht für die Produktionsausführungsoberfläche](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte](../production-control/production-floor-execution-use.md) | Funktionsverwaltung:<br>*(Vorschau) Bericht über Artikel mit Artikelgewicht über die Produktionsausführungsoberfläche* |
 | Fertigung | Registerkarte Meine Einzelvorgänge auf der Produktionsausführungsoberfläche <!-- KFM: Add link to release plan when available --> | [Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte](../production-control/production-floor-execution-use.md) | Funktionsverwaltung:<br>*Registerkarte Meine Einzelvorgänge auf der Produktionsausführungsoberfläche* |
@@ -47,9 +47,9 @@ Wenn Sie eine dieser Funktionen ein‑ oder ausschalten möchten, müssen Sie di
 | Modul | Funktion Name in FunktionVerwaltung | Mehr erfahren |
 |---|---|---|
 | Beschaffung | Registrierte Mengen von gelagerten Produkten und Restmengen von nicht gelagerten Produkten für Eingänge und Kreditorenrechnungen buchen | Diese Funktion ändert die Art und Weise, wie Mengen von nicht vorrätigen Produkten (wie z.B. Dienstleistungen) bei der Verarbeitung von Einkaufsrechnungen und eingehenden Lieferungen gegen Bestellungen gebucht werden. Die Funktion ändert das Verhalten der Mengenoption *Registrierte Menge und Services* für das Buchen von Quittungen und Lieferantenrechnungen, indem sie es an das Verhalten der Option *Registrierte Menge und nicht gelagerte Produkte* anpasst, die bereits beim Buchen von Mengen für Verkaufslieferscheine zur Verfügung steht.<br><br>Wenn Sie einen Produktzugang oder eine Lieferantenrechnung mit der Mengenoption *Registrierte Menge und Services* buchen, bucht das System die registrierte Menge der gelagerten Produkte und die Restmenge der nicht gelagerten Produkte (einschließlich Services und Nicht-Services). Ohne diese Funktion bucht das System immer noch die registrierte Menge an vorrätigen Produkten (einschließlich Services, die als vorrätige Artikel konfiguriert sind), bucht aber immer die volle bestellte Menge an nicht vorrätigen Serviceprodukten (und ignoriert nicht vorrätige Produkte, die nicht vom Typ *Service* sind). |
-| Beschaffung | Rückverfolgungsangaben für Intercompany-Auftrags- und -Bestellzeilen synchronisieren | Mit dieser Funktion können Sie steuern, ob die Dimensionen der Seriennummer und der Batch-Nummern bei Intercompany-Verkaufsaufträgen und Kaufaufträgen synchronisiert werden sollen. Es fügt neue Einstellungen auf den Registerkarten **Richtlinien für Bestellungen** und **Richtlinien für Verkaufsaufträge** der Einrichtungsseite **Intercompany** für Kunden und Lieferanten hinzu. Außerdem werden die Namen einiger verwandter, nahe gelegener Einstellungen aktualisiert, um mehr Klarheit zu schaffen.<br><br>Wenn Sie eine erweiterte Lagerortverwaltung verwenden, beachten Sie bitte, dass diese Funktion Batch- und Seriennummern nur dann synchronisiert, wenn diese Dimensionen in der Reservierungshierarchie des Zielortes über dem Ort liegen. |
+| Beschaffung | Rückverfolgungsangaben für Intercompany-Auftrags- und -Bestellzeilen synchronisieren | Mit dieser Funktion können Sie steuern, ob die Dimensionen der Seriennummer und der Batch-Nummern bei Intercompany-Verkaufsaufträgen und Kaufaufträgen synchronisiert werden sollen. Es fügt neue Einstellungen auf den Registerkarten **Richtlinien für Bestellungen** und **Richtlinien für Verkaufsaufträge** der Einrichtungsseite **Intercompany** für Kunden und Lieferanten hinzu. Außerdem werden die Namen einiger verwandter, nahe gelegener Einstellungen aktualisiert, um mehr Klarheit zu schaffen.<br><br>Wenn Sie Lagerverwaltungsprozesse (WMS) verwenden, beachten Sie, dass diese Funktion Batch- und Seriennummern nur dann synchronisiert, wenn diese Dimensionen in der Reservierungshierarchie des Zielortes über dem Ort stehen. |
 | Produktinformationsverwaltung | Produktattributwerte bereinigen | Diese Funktion fügt eine periodische Aufgabe namens **Produktattributwerte bereinigen** hinzu, die Datensätze von Produktattributwerten bereinigt, die nicht mehr mit einem Produkt über eine Produktkategorie verbunden sind. |
-| Lager- und Lagerortverwaltung | (Russland) Verhinderung von Diskrepanzen bei der Ausstellung von GTDs für Bestellungen, die WMS-aktivierte Artikel enthalten | Diese Funktion ist nur für die russische Lokalisierung vorgesehen. Es verhindert Diskrepanzen, die bei der Ausgabe russischer Zollanmeldungsnummern (GTDs) für Importbestellungen auftreten, die Artikel enthalten, die für die erweiterte Lagerhaltung (WMS) aktiviert sind. Der GTD-Ausgabeprozess ändert einige Werte der Bestandsdimensionen in den zugehörigen Bestandstransaktionen für Rechnungen, die in das angepasste Zoll-Journal aufgenommen wurden, was zu Diskrepanzen zwischen den Datensätzen für den Arbeitsauftrag und den Transaktionen für den Kauf führt. Wenn diese Funktion aktiviert ist, erzeugt der GTD-Ausgabeprozess Anpassungsarbeit, die solche Diskrepanzen beseitigt. |
+| Lager- und Lagerortverwaltung | (Russland) Verhinderung von Diskrepanzen bei der Ausstellung von GTDs für Bestellungen, die WMS-aktivierte Artikel enthalten | Diese Funktion ist nur für die russische Lokalisierung vorgesehen. Er verhindert Diskrepanzen, die bei der Ausgabe russischer Zollanmeldungsnummern (GTDs) für Importbestellungen auftreten, die Artikel enthalten, die für Lagerverwaltungsprozesse (WMS) aktiviert sind. Der GTD-Ausgabeprozess ändert einige Werte der Bestandsdimensionen in den zugehörigen Bestandstransaktionen für Rechnungen, die in das angepasste Zoll-Journal aufgenommen wurden, was zu Diskrepanzen zwischen den Datensätzen für den Arbeitsauftrag und den Transaktionen für den Kauf führt. Wenn diese Funktion aktiviert ist, erzeugt der GTD-Ausgabeprozess Anpassungsarbeit, die solche Diskrepanzen beseitigt. |
 | Lagerortverwaltung | Erweiterter Parser für GS1-Barcodes | Diese Funktion fügt einen verbesserten Parser für GS1 Symboldaten hinzu. Der neue Parser implementiert den Algorithmus der GS1 Allgemeinen Spezifikation zum Parsen von GS1 Symbolen und bietet eine stärkere Datenvalidierung. Weitere Informationen finden Sie unter [GS1-Barcodes scannen](../warehousing/gs1-barcodes.md). |
 | Lagerortverwaltung | Neue Workbenchseiten zur Ladungsplanung | Fügt zwei neue Seiten für die Ladungsplanung hinzu: **Eingehende Ladung Planungswerkbank** und **Ausgehende Ladung Planungswerkbank**. |
 | Lagerortverwaltung | Warehouse Management-Anwendung – leere GTD | Diese Funktion ist nur für die russische Lokalisierung vorgesehen. Es lässt zu, dass Arbeitskräfte, die die Warehouse Management-Mobile-App verwenden, bei Bedarf russische Zollanmeldungsnummern (GTDs) leer lassen. Wenn die Dimension für die GTD-Verfolgung so festgelegt ist, dass Leerwerte zugelassen werden, akzeptiert das System Leerwerte für GTD für Vorgänge im Bestand, sofern ein Lagerbestand vorhanden ist. |
@@ -64,9 +64,9 @@ Wir haben die folgenden Hilfeartikel kürzlich hinzugefügt oder erheblich aktua
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformupdates für Apps für Finanzen und Betrieb
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattform-Updates für Finanz- und Betriebs-Apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.26 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattform-Updates für Version 10.0.26 der Apps für Finance + Operations (Mai 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.26 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattform-Updates für die Version 10.0.26 der Finanz- und Betriebs-Apps (Mai 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -90,3 +90,4 @@ Bevor eine Funktion aus dem Produkt entfernt wird, wird der Verfallshinweis im A
 Bei Änderungen, die sich nur auf die Kompilierungszeit auswirken, aber binär mit Sandbox- und Produktionsumgebungen kompatibel sind, beträgt die Entfernungszeit weniger als 12 Monate. In der Regel handelt es sich hierbei um Funktionsaktualisierungen, die am Compiler vorgenommen werden müssen.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
