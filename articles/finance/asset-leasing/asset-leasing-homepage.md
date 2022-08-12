@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 014c34791f280ca1d3d9154cd0870a73cc43d26b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fa27e20bc0c0ff5c639dfb2d079adef8926f535f
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889148"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069346"
 ---
 # <a name="asset-leasing-home-page"></a>Anlagenleasing-Startseite
 
@@ -90,7 +90,7 @@ Lesen Sie die [Microsoft Dynamics 365-Veröffentlichungspläne](/dynamics365/re
 
 ### <a name="blogs"></a>Blogs
 
-Meinungen, Neuigkeiten und weitere Informationen zu finden Sie im [Microsoft Dynamics 365-Blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) und dem [Microsoft Dynamics 365 Finance and Operations – Financials-Blog](https://community.dynamics.com/365/financeandoperations/b/financials).
+Meinungen, Neuigkeiten und andere Informationen finden Sie im [Microsoft Dynamics 365 Blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) und im [Microsoft Dynamics 365 Finance and Operations – Financials Blog](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 Der [Microsoft Dynamics Operations-Partner-Community-Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) fasst alle Informationen zu Neuigkeiten und Trends bei Dynamics 365 für Microsoft Dynamics-Partner in einer einzigen Ressource zusammen.
 
@@ -100,3 +100,4 @@ Sehen Sie in den Videos nach, die jetzt im [YouTube-Kanal zu Microsoft Dynamics 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

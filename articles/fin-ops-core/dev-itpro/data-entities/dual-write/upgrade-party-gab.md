@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 10c5d9eb3f98887be976c2331f4d34530628702c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 02ab3675db0d78efa1e4e43188d79bb1e763a713
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895275"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111817"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Auf das Partei- und globale Adressbuchmodell aktualisieren
 
@@ -24,7 +24,7 @@ ms.locfileid: "8895275"
 
 Die [Microsoft Azure Data Factory-Vorlagen](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema) helfen Ihnen beim Aktualisieren folgender vorhandener Daten in dualem Schreiben in das Partei- und das globale Adressbuchmodell: Daten in **Konto-**, **Kontakt**- und **Kreditor**-Tabellen sowie postalische und elektronische Adressen.
 
-Die folgenden drei Data Factory-Vorlagen werden bereitgestellt. Sie helfen bei der Abstimmung der Daten von Apps für Finanzen und Betrieb und Customer Engagement-Apps.
+Die folgenden drei Data Factory-Vorlagen werden bereitgestellt. Sie helfen dabei, die Daten sowohl aus den Finanz- und Betriebs-Apps als auch aus den Customer-Engagement-Apps abzustimmen.
 
 - **[Partei-Vorlage](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/arm_template.json) (Aktualisieren Sie die Daten auf das Party-GAB schema/arm_template.json mit dualem Schreiben)** – Diese Vorlage hilft beim Upgrade von **Partei**- und **Kontakt**-Daten, die mit **Konto**, **Kontakt** und **Kreditoren**-Daten verbunden sind.
 - **[Vorlage für die Postadresse der Partei](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/Upgrade%20to%20Party%20Postal%20Address%20-%20GAB/arm_template.json) (Upgrade von Daten auf Party-GAB-Schema/Upgrade auf Partei-Postadresse - GAB/arm_template.json mit dualem Schreiben)** – Diese Vorlage hilft bei der Aktualisierung der Postadressen, die mit **Konto**, **Kontakt** und **Kreditoren**-Daten verknüpft sind.
@@ -34,11 +34,11 @@ Am Ende des Prozesses werden die folgenden Dateien mit durch Kommas getrennten W
 
 | Dateiname | Kostenträger |
 |---|---|
-| FONewParty.csv | Diese Datei hilft bei der Erstellung neuer **Partei**-Datensätze in der App für Finanzen und Betrieb. |
-| ImportFONewPostalAddressLocation.csv | Diese Datei hilft beim Erstellen neuer **Postadressorte**-Datensätze in der App für Finanzen und Betrieb. |
-| ImportFONewPartyPostalAddress.csv | Diese Datei hilft beim Erstellen neuer **Parteipostadresse**-Datensätze in der App für Finanzen und Betrieb. |
-| ImportFONewPostalAddress.csv | Diese Datei hilft beim Erstellen neuer **Postadresse**-Datensätze in der App für Finanzen und Betrieb. |
-| ImportFONewElectronicAddress.csv | Diese Datei hilft beim Erstellen neuer **Elektronische Adresse**-Datensätze in der App für Finanzen und Betrieb. |
+| FONewParty.csv | Diese Datei hilft beim Erstellen neuer **Partei** Datensätze in der Finanz- und Betriebs-App. |
+| ImportFONewPostalAddressLocation.csv | Mit dieser Datei können Sie neue **Postanschrift** Datensätze in der App für Finanzen und Vorgänge erstellen. |
+| ImportFONewPartyPostalAddress.csv | Diese Datei hilft beim Erstellen neuer **Partei Postadresse** Datensätze in der Finanz- und Betriebs-App. |
+| ImportFONewPostalAddress.csv | Mit dieser Datei können Sie neue **Postanschrift** Datensätze in der Finanz- und Betriebs-App erstellen. |
+| ImportFONewElectronicAddress.csv | Diese Datei hilft beim Erstellen neuer **Elektronische Adresse** Datensätze in der Finanz- und Betriebs-App. |
 
 Dieser Artikel erläutert die Verwendung der Data Factory-Vorlagen und Upgrades Ihrer Daten. Wenn Sie keine Anpassungen vorgenommen haben, können Sie die Vorlagen unverändert verwenden. Wenn Sie jedoch Anpassungen für Daten von **Konto**, **Kontakt** und **Kreditor** vorgenommen haben, müssen Sie die Vorlagen anhand der Anweisungen in diesem Artikel ändern.
 
@@ -61,7 +61,7 @@ Ein Upgrade erfordert folgende Vorbereitungen:
 + **Integrationsschlüssel**: Die Tabellen **Konto (Kunde)**, **Kontakt** und **Kreditor** in Apps zur Kundenbindung verwenden die sofort einsatzbereiten Integrationsschlüssel. Wenn Sie die Integrationsschlüssel angepasst haben, müssen Sie die Vorlage anpassen.
 + **Parteinummer**: **Alle Konto (Kunde)**-, **Kontakt**- und **Kreditor**-Datensätze, die aktualisiert werden, haben eine Partei-Nummer. Datensätze ohne Parteinummer werden ignoriert. Wenn Sie diese Datensätze aktualisieren möchten, fügen Sie eine Partei-Nummer hinzu, bevor Sie den Aktualisierungsprozess starten.
 + **Systemausfall**: Während des Aktualisierungsprozesses müssen Sie sowohl die Finance and Operations- als auch die Kundenbindungsumgebung offline nehmen.
-+ **Momentaufnahme**: Machen Sie sowohl von der App für Finanzen und Betrieb als auch der Customer Engagement-App eine Momentaufnahme. Sie können die Momentaufnahmen verwenden, um bei Bedarf den vorherigen Status wiederherzustellen.
++ **Momentaufnahme:** Machen Sie eine Momentaufnahme sowohl von den Finanz- und Betriebs-Apps als auch von den Customer-Engagement-Apps. Sie können die Momentaufnahmen verwenden, um bei Bedarf den vorherigen Status wiederherzustellen.
 
 ## <a name="deployment"></a>Bereitstellung
 
@@ -120,7 +120,7 @@ In diesem Abschnitt wird die Einrichtung beschrieben, die erforderlich ist, bevo
 
 ### <a name="setup-to-run-the-party-postal-address-template"></a>Einrichtung zum Ausführen der Partei-Postadressenvorlage
 
-1. Melden Sie sich bei den Apps zur Kundenbindung an und gehen Sie zu **Einstellungen** \> **Personalisierungseinstellungen**. Dann auf der **Allgemein**-Registerkarte konfigurieren Sie die Zeitzoneneinstellung für das Systemadministratorkonto. Die Zeitzone muss in koordinierter Weltzeit (UTC) angegeben sein, um die Datumsangaben „Gültig ab“ und „Gültig bis“ der Postadressen von Apps für Finanzen und Betrieb zu aktualisieren.
+1. Melden Sie sich bei den Apps zur Kundenbindung an und gehen Sie zu **Einstellungen** \> **Personalisierungseinstellungen**. Dann auf der **Allgemein**-Registerkarte konfigurieren Sie die Zeitzoneneinstellung für das Systemadministratorkonto. Die Zeitzone muss in Coordinated Universal Time (UTC) sein, um die „Gültig von“- und „Gültig bis“-Daten von Postadressen aus Finanz- und Betriebs-Apps zu aktualisieren.
 
     ![Zeitzoneneinstellung für das Systemadministratorkonto.](media/ADF-1.png)
 
@@ -128,7 +128,7 @@ In diesem Abschnitt wird die Einrichtung beschrieben, die erforderlich ist, bevo
 
     | Anzahl | Name | Typ | Wert |
     |---|---|---|---|
-    | 1 | PostalAddressIdPrefix | Zeichenfolge | Dieser Parameter hängt eine Seriennummer als Präfix an neu erstellte Postadressen an. Stellen Sie sicher, dass Sie eine Zeichenfolge angeben, die nicht mit Postadressen in Apps für Finanzen und Betrieb und Kundenbindungs-Apps kollidiert. Verwenden Sie für dieses Beispiel **ADF-PAD-**. |
+    | 1 | PostalAddressIdPrefix | Zeichenfolge | Dieser Parameter hängt eine Seriennummer als Präfix an neu erstellte Postadressen an. Stellen Sie sicher, dass Sie eine Zeichenkette angeben, die nicht mit Postadressen in Finanz- und Betriebs-Apps und Customer-Engagement-Apps kollidiert. Verwenden Sie für dieses Beispiel **ADF-PAD-**. |
 
     ![PostalAddressIdPrefix (Globaler Parameter), der auf der Registerkarte „Verwalten“ erstellt wurde.](media/ADF-2.png)
 
@@ -142,8 +142,8 @@ In diesem Abschnitt wird die Einrichtung beschrieben, die erforderlich ist, bevo
 
     | Anzahl | Name | Typ | Wert |
     |---|---|---|---|
-    | 1 | IsFOSource | bool | Dieser Parameter legt fest, welche primären Systemadressen bei Konflikten ersetzt werden. Wenn der Wert **wahr** ist, ersetzen die primären Adressen in Apps für Finanzen und Betrieb die primären Adressen in Apps zur Kundenbindung. Wenn der Wert **falsch** ist, ersetzen die primären Adressen in Customer Engagement-Apps die primären Adressen in Apps für Finanzen und Betrieb zur Kundenbindung. |
-    | 2 | ElectronicAddressIdPrefix | Zeichenfolge | Dieser Parameter hängt eine Seriennummer als Präfix an neu erstellte elektronische Adressen an. Stellen Sie sicher, dass Sie eine Zeichenfolge angeben, die nicht mit elektronischen Adressen in Apps für Finanzen und Betrieb und Kundenbindungs-Apps kollidiert. Verwenden Sie für dieses Beispiel **ADF-EAD-**. |
+    | 1 | IsFOSource | bool | Dieser Parameter legt fest, welche primären Systemadressen bei Konflikten ersetzt werden. Wenn der Wert **wahr** ist, ersetzen die primären Adressen in den Finanz- und Betriebs-Apps die primären Adressen in den Customer-Engagement-Apps. Wenn der Wert **falsch** ist, ersetzen die primären Adressen in Customer Engagement-Apps die primären Adressen in Finanz- und Betriebs-Apps. |
+    | 2 | ElectronicAddressIdPrefix | Zeichenfolge | Dieser Parameter hängt eine Seriennummer als Präfix an neu erstellte elektronische Adressen an. Achten Sie darauf, eine Zeichenfolge anzugeben, die nicht mit elektronischen Adressen in Finanz- und Betriebs-Apps und Customer-Engagement-Apps kollidiert. Verwenden Sie für dieses Beispiel **ADF-EAD-**. |
 
     ![IsFOSource und ElectronicAddressIdPrefix (Globale Parameter), die auf der Registerkarte „Verwalten“ erstellt wurden.](media/ADF-4.png)
 
@@ -167,7 +167,7 @@ In diesem Abschnitt wird die Einrichtung beschrieben, die erforderlich ist, bevo
 
 2. Stellen Sie sicher, dass die Karten aus der Tabelle **msdy_dualwriteruntimeconfig** in Dataverse entfernt werden.
 3. Installieren Sie [Partei- und globale Adressbuchlösungen mit dualem Schreiben](https://aka.ms/dual-write-gab) aus AppSource.
-4. Führen Sie in der App für Finanzen und Betrieb **Erstsynchronisierung** für die folgenden Tabellen durch, die wenn sie Daten enthalten:
+4. Führen Sie in der Finanz- und Betriebs-App **Initial Sync** für die folgenden Tabellen aus, wenn sie Daten enthalten:
 
     + Anreden
     + Arten von Persönlichkeitsmerkmalen
@@ -267,10 +267,10 @@ In diesem Abschnitt wird die Einrichtung beschrieben, die erforderlich ist, bevo
     > [!NOTE]
     > Wenn Sie Anpassungen für **Konto**, **Kontakt** und **Kreditor** vorgenommen haben, müssen Sie die Vorlage ändern.
 
-8. Importieren Sie den neuen **Partei**-Datensatz in der App für Finanzen und Betrieb.
+8. Importieren Sie die neuen **Partei** Datensätze in die Finanz- und Betriebs-App.
 
     1. Laden Sie die Datei **FONewParty.csv** aus dem Azure Blob Storage herunter. Der Pfad lautet **partybootstrapping/output/FONewParty.csv**.
-    2. Konvertieren Sie die Datei **FONewParty.csv** in eine Excel-Datei und importieren Sie die Excel-Datei in die App für Finanzen und Betrieb. Wenn der CSV-Import bei Ihnen funktioniert, können Sie alternativ die CSV-Datei direkt importieren. Dieser Schritt kann je nach Datenvolumen einige Stunden dauern. Weitere Informationen finden Sie unter [Übersicht über Datenimport- und -exportaufträge](../data-import-export-job.md).
+    2. Konvertieren Sie die Datei **FONewParty.csv** in eine Excel-Datei und importieren Sie die Excel-Datei in die Finanz- und Betriebs-App. Wenn der CSV-Import bei Ihnen funktioniert, können Sie alternativ die CSV-Datei direkt importieren. Dieser Schritt kann je nach Datenvolumen einige Stunden dauern. Weitere Informationen finden Sie unter [Übersicht über Datenimport- und -exportaufträge](../data-import-export-job.md).
 
     ![Importieren der Dataverse-Parteidatensätze.](media/data-factory-import-party.png)
 
@@ -281,7 +281,7 @@ In diesem Abschnitt wird die Einrichtung beschrieben, die erforderlich ist, bevo
 
     ![Ausführen der Vorlagen für die Postanschrift der Partei und die elektronischen Adressvorlagen der Partei.](media/ADF-7.png)
 
-10. Um die App für Finanzen und Betrieb mit diesen Daten zu aktualisieren, müssen Sie die CSV-Dateien in eine Excel-Arbeitsmappe konvertieren und [in die App für Finanzen und Betrieb importieren](../data-import-export-job.md). Wenn der CSV-Import bei Ihnen funktioniert, können Sie alternativ die CSV-Dateien direkt importieren. Dieser Schritt kann je nach Volumen einige Stunden dauern.
+10. Um die Finanz- und Betriebs-App mit diesen Daten zu aktualisieren, müssen Sie die .csv-Dateien in eine Excel-Arbeitsmappe konvertieren und [in die Finanz- und Betriebs-App importieren](../data-import-export-job.md). Wenn der CSV-Import bei Ihnen funktioniert, können Sie alternativ die CSV-Dateien direkt importieren. Dieser Schritt kann je nach Volumen einige Stunden dauern.
 
     ![Erfolgreicher Import.](media/ADF-8.png)
 
@@ -364,9 +364,9 @@ Dieser Abschnitt führt Sie durch die Schritte in jeder Data Factory-Vorlage.
 ### <a name="steps-in-the-party-template"></a>Schritte in der Partei-Vorlage
 
 1. In den Schritten 1 bis 6 werden die Unternehmen identifiziert, die für duales Schreiben aktiviert sind, und eine Filterklausel für sie erstellt.
-2. Schritte 7-1 bis 7-9 rufen Daten von der App für Finanzen und Betrieb und der Kundenbindungs-App ab und stellen diese Daten für ein Upgrade bereit.
-3. Schritte 8 bis 9 vergleichen die Parteinummer für die Datensätze **Konto**, **Kontakt** und **Kreditor** zwischen der App für Finanzen und Betrieb und die Kundenbindungs-App. Alle Datensätze ohne Parteinummer werden übergangen.
-4. Schritt 10 generiert zwei CSV-Dateien für die Parteiendatensätze, die in der Kundenbindungs-App und der App für Finanzen und Betrieb erstellt werden müssen.
+2. Schritte 7-1 bis 7-9 rufen Daten sowohl aus der Finanz- und Betriebs-App als auch aus der Customer-Engagement-App ab und stellen diese Daten für ein Upgrade bereit.
+3. Schritte 8 bis 9 vergleichen die Parteinummer für **Konto**, **Kontakt** und **Lieferant** Datensätze zwischen der Finanz- und Betriebs-App und der Customer-Engagement-App. Alle Datensätze ohne Parteinummer werden übergangen.
+4. Schritt 10 erzeugt zwei .csv-Dateien für die Datensätze der Parteien, die in der Customer-Engagement-App und der Finanz- und Betriebs-App erstellt werden müssen.
 
     - **FOCDSParty.csv** – Diese Datei enthält alle Teilnehmerdatensätze beider Systeme, unabhängig davon, ob das Unternehmen für duales Schreiben aktiviert ist.
     - **FONewParty.csv** – Diese Datei enthält eine Teilmenge der Parteiaufzeichnungen, die Dataverse bekannt sind (zum Beispiel Konten vom **Interessent**-Typ).
@@ -382,12 +382,12 @@ Dieser Abschnitt führt Sie durch die Schritte in jeder Data Factory-Vorlage.
 
 ### <a name="steps-in-the-party-postal-address-template"></a>Schritte in der Partei-Postadressenvorlage
 
-1. Schritte 1-1 bis 1-10 rufen Daten von der App für Finanzen und Betrieb und der Kundenbindungs-App ab und stellen diese Daten für ein Upgrade bereit.
-2. Schritt 2 denormalisiert die Postadressdaten in der App für Finanzen und Betrieb, indem die Postadresse und die Postadresse der Partei zusammengefügt wird.
+1. Die Schritte 1-1 bis 1-10 rufen Daten aus der Finanz- und Betriebs-App und der Customer-Engagement-App ab und bereiten diese Daten für ein Upgrade vor.
+2. Schritt 2 de-normalisiert die postalischen Adressdaten in der Finanz- und Betriebs-App, indem er die Postadresse und die Postadresse der Partei zusammenführt.
 3. Schritt 3 dedupliziert und führt Konto-, Kontakt- und Kreditorenadressdaten aus der Kundenbindungs-App zusammen.
-4. Schritt 4 erstellt CSV-Dateien für die App für Finanzen und Betrieb, um neue Adressdaten zu erstellen, die auf Konto-, Kontakt- und Kreditorenadressen basieren.
-5. Schritt 5-1 erstellt CSV-Dateien für die Kundenbindungs-App, um alle Adressdaten basierend auf der App für Finanzen und Betrieb und der Kundenbindungs-App zu erstellen.
-6. Schritt 5-2 konvertiert die CSV-Dateien ins Importformat von Finanzen und Betrieb für den manuellen Import.
+4. Schritt 4 erstellt .csv-Dateien für die Finanz- und Betriebs-App, um neue Adressdaten zu erstellen, die auf Konto-, Kontakt- und Kreditoradressen basieren.
+5. Schritt 5-1 erstellt .csv-Dateien für die Customer Engagement-App, um alle Adressdaten zu erstellen, die sowohl auf der Finanz- und Betriebs-App als auch auf der Customer-Engagement-App basieren.
+6. Schritt 5-2 konvertiert die .csv-Dateien in das Finanzen und Betrieb Importformat für den manuellen Import.
 
     - ImportFONewPostalAddressLocation.csv
     - ImportFONewPartyPostalAddress.csv
@@ -401,13 +401,13 @@ Dieser Abschnitt führt Sie durch die Schritte in jeder Data Factory-Vorlage.
 
 ### <a name="steps-in-the-party-electronic-address-template"></a>Schritte in der elektronischen Partei-Adressenvorlage
 
-1. Schritte 1-1 bis 1-5 rufen Daten von der App für Finanzen und Betrieb und der Kundenbindungs-App ab und stellen diese Daten für ein Upgrade bereit.
+1. Schritte 1-1 bis 1-5: Rufen Sie Daten sowohl aus der Finanz- und Betriebs-App als auch aus der Customer-Engagement-App ab und stellen Sie diese Daten für ein Upgrade bereit.
 2. Schritt 2 konsolidiert elektronische Adressen in der Kundenbindungs-App von Konto-, Kontakt- und Kreditoren-Entitäten.
-3. Schritt 3 führt die primären elektronischen Adressdaten aus der Kundenbindungs-App und der App für Finanzen und Betrieb zusammen.
+3. Schritt 3 führt die primären elektronischen Adressdaten aus der Customer-Engagement-App und der Finanz- und Betriebs-App zusammen.
 4. Schritt 4 erstellt CSV-Dateien.
 
-    - Erstellen Sie neue elektronische Adressdaten für die App für Finanzen und Betrieb basierend auf Konto-, Kontakt- und Kreditorenadressen.
-    - Erstellen Sie neue elektronische Adressdaten für die Kundenbindungs-App, basierend auf elektronischen Adress-, Konto-, Kontakt- und Kreditorenadressen in der App für Finanzen und Betrieb.
+    - Erstellen Sie neue elektronische Adressdaten für die Finanz- und Betriebs-App, basierend auf Konto-, Kontakt- und Kreditoradressen.
+    - Erstellen Sie neue elektronische Adressdaten für die Customer-Engagement-App, basierend auf elektronischen Adress-, Konto-, Kontakt- und Kreditoradressen in der Finanz- und Betriebs-App.
 
 5. Schritt 5-1 importiert elektronische Adressen in die Kundenbindungs-App.
 6. Schritt 5-2 erstellt CSV-Dateien, um die primären Adressen für Konten und Kontakte in der Kundenbindungs-App zu aktualisieren.
@@ -425,3 +425,4 @@ Dieser Abschnitt führt Sie durch die Schritte in jeder Data Factory-Vorlage.
 ## <a name="learn-more-about-the-template"></a>Mehr über die Vorlage
 
 Weitere Informationen zur Vorlage finden Sie unter [Kommentare zur Readme-Datei für Azure Data Factory-Vorlagen](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md).
+

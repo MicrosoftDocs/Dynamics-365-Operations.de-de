@@ -2,7 +2,7 @@
 title: Direkte Integration des italienischen FatturaPA mit SDI einrichten
 description: Dieser Artikel bietet Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung für Italien und die Einrichtung der direkten Integration des italienischen FatturaPA mit dem Exchange-System (SDI) erleichtern.
 author: abaryshnikov
-ms.date: 01/15/2022
+ms.date: 07/27/2022
 ms.topic: article
 audience: Application User, Developer
 ms.reviewer: kfend
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: abaryshnikov
 ms.search.validFrom: 2021-10-18
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 510cf05e7bbc925478f9a1a4ea2ea27fe397c570
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 363b7b5e3d5abbb990fea8f8ad4d0c1bebf80102
+ms.sourcegitcommit: 6d9fcb52d723ac5022a3002e0ced8e7b56e9bc2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853191"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9203168"
 ---
 # <a name="set-up-direct-integration-of-italian-fatturapa-with-sdi"></a>Direkte Integration des italienischen FatturaPA mit SDI einrichten
 
@@ -69,10 +69,13 @@ Dieser Abschnitt ergänzt den Abschnitt [Länderspezifische Konfiguration der An
     - Für die **Dokument unterschreiben** Aktion, im Feld **Zertifikatname** geben Sie das Zertifikat für die digitale Signatur an.
     - Für die **Übermitteln** Aktion, legen Sie die **URL-Adresse** und **Zertifikate** Felder fest. Der Wert des Felds **Zertifikate** ist eine Kette von Zertifikaten, von denen das erste das Root-CA-Zertifikat (caentrate.cer) und das zweite das Client-Zertifikat ist.
 
-4. Wählen Sie **Bestätigen**, um sicherzustellen, dass alle erforderlichen Felder festgelegt wurden.
-5. Speichern Sie Ihre Änderungen und schließen Sie die Seite.
-6. Wählen Sie auf der Registerkarte **Einrichten** **Projektrechnungen** und dann **Bearbeiten** aus.
-7. Wiederholen Sie die Schritte 3 bis 5 für Projektrechnungen.
+4. Gehen Sie im Abschnitt **Anwendbarkeitsregeln** die Klauseln durch und überprüfen oder legen Sie die erforderlichen Felder fest:
+    - Überprüfen Sie die Klausel **LegalEntityID** und aktualisieren Sie sie mit dem richtigen Wert Ihrer juristischen Entität.
+
+5. Wählen Sie **Bestätigen**, um sicherzustellen, dass alle erforderlichen Felder festgelegt wurden.
+6. Speichern Sie Ihre Änderungen und schließen Sie die Seite.
+7. Wählen Sie auf der Registerkarte **Einrichten** **Projektrechnungen** und dann **Bearbeiten** aus.
+8. Wiederholen Sie die Schritte 3 bis 6 für Projektrechnungen.
 
 ### <a name="configure-the-processing-pipeline-for-import"></a>Konfigurieren Sie eine Verarbeitungspipeline für den Import
 

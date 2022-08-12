@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-09-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 776498b32f8323b1a06f39b518cdc1ae534f9bcc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 03f832a6a3a099c472b781f7e2258ac575127101
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872151"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069999"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-6-2021"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources 6. September 2021
 
@@ -87,3 +87,4 @@ Eine vollständige Liste der geplanten Funktionen und ihrer geplanten Versionen 
 [Funktionen verwalten](hr-admin-manage-features.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

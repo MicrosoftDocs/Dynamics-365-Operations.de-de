@@ -1,6 +1,6 @@
 ---
-title: Was ist neu oder hat sich auf der Startseite der Apps für Finanzen und Betrieb geändert?
-description: Diese Seite weist auf Themen hin, die Ihnen dabei helfen, alles über die neuen Funktionen in den aktuellsten Versionen der Finance and Operations-Anwendungen zu erlernen.
+title: Was ist neu oder wurde geändert in der Finanz- und Betriebs-Apps Startseite
+description: Diese Seite verweist Sie auf Themen, die Ihnen helfen können, die neuen Funktionen in den neuesten Finanzen und Betrieb-Anwendungen kennenzulernen.
 author: josaw1
 ms.date: 02/14/2020
 ms.topic: article
@@ -17,21 +17,21 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 2430e75897a8ddc78a6b1b9288b23458aa44108a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0dc3b9b39fb5cb3aaae1247f0229d802410ea5f8
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908226"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9125115"
 ---
-# <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a>Was ist neu oder hat sich auf der Startseite der Apps für Finanzen und Betrieb geändert?
+# <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a>Was ist neu oder wurde geändert in der Finanz- und Betriebs-Apps Startseite
 
 [!include [banner](../includes/banner.md)]
 
 
 ## <a name="application-releases"></a>Anwendungsfreigabe
 
-Um zu sehen, was in jeder Version einer Finance und Operations App neu ist oder geändert wurde, lesen Sie die folgenden Themen:
+Um zu sehen, was in jeder Version einer Finanz- und Betriebs-App neu ist oder geändert wurde, lesen Sie die folgenden Themen:
 
 - **Finance:** [Neuheiten oder Änderungen in Dynamics 365 Finance](../../../finance/get-started/whats-new-home-page.md)
 - **Human Resources (zusammengeführte Infrastruktur):** [Was ist neu oder wurde in Microsoft Dynamics 365 Human Resources](../../../human-resources/get-started/hr-whats-new-changed-10-0-26.md) geändert  
@@ -47,7 +47,7 @@ Um zu sehen, was im eigenständigen Dynamics 365 Human Resources neu ist oder si
 
 ## <a name="platform-updates"></a>Plattformupdates
 
-Informationen zu den Neuerungen und Änderungen in den Plattform-Updates für Apps für Finanzen und Betrieb finden Sie unter dem folgenden Artikel:
+Um zu erfahren, was in den Plattform-Updates für Finanz- und Betriebs-Apps neu ist oder geändert wurde, lesen Sie den folgenden Artikel:
 
 - [Neuigkeiten oder Änderungen in Plattformupdates](../../dev-itpro/get-started/whats-new-home-page.md)
 
@@ -60,3 +60,4 @@ Um zu sehen, was bei den Lifecycle Services neu oder geändert wurde, lesen Sie 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
