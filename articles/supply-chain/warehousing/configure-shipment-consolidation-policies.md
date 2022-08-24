@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: f793cb71ff52e49534e1f11b06132f2e20610d7c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bec96131326b3162b3d1a138b896e85982ad3aa5
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845923"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219531"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Richtlinien zur Lieferungskonsolidierung konfigurieren
 
@@ -61,7 +61,6 @@ Befolgen Sie diese Schritte, um Standardrichtlinien für die Lieferungskonsolidi
 1. Legen Sie auf dem Inforegister **Lagerort** die Option **Lieferung bei Freigabe an Lagerort konsolidieren** auf *Ja* fest.
 1. Wiederholen Sie die Schritte 2 bis 4 für alle anderen Lager, in denen eine Konsolidierung erforderlich ist.
 1. Schließen Sie die Seite.
-1. Verwenden Sie die [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um *Richtlinien zur Lieferungskonsolidierung* zu aktivieren. Im Arbeitsbereich **Funktionsverwaltung** heißt die Funktion *Lieferung konsolidieren*.
 1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Für Lagerort freigeben \> Richtlinien zur Lieferungskonsolidierung**. Möglicherweise müssen Sie Ihren Browser aktualisieren, um den neuen Menüpunkt **Richtlinien zur Lieferungskonsolidierung** nach dem Einschalten der Funktion zu sehen.
 1. Wählen Sie im Aktionsbereich **Standardeinstellungen erstellen** aus, um die folgenden Richtlinien zu erstellen:
 
@@ -81,7 +80,6 @@ Befolgen Sie diese Schritte, um Standardrichtlinien für die Lieferungskonsolidi
 
 Befolgen Sie diese Schritte, um Standardrichtlinien für die Lieferungskonsolidierung in einer brandneuen Umgebung einzurichten.
 
-1. Verwenden Sie die [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um *Richtlinien zur Lieferungskonsolidierung* zu aktivieren, wenn es noch nicht aktiviert wurde. Im Arbeitsbereich **Funktionsverwaltung** heißt die Funktion *Lieferung konsolidieren*.
 1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Für Lagerort freigeben \> Richtlinien zur Lieferungskonsolidierung**.
 1. Wählen Sie im Aktionsbereich **Standardeinstellungen erstellen** aus, um die folgenden Richtlinien zu erstellen:
 

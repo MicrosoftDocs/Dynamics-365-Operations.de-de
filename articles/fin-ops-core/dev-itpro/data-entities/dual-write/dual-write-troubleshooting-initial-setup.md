@@ -5,22 +5,20 @@ author: RamaKrishnamoorthy
 ms.date: 08/10/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2e2759ff15dd8d146c642fc0da90d1a38fe855d1
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: d33fc6f4895b53f16cc6957a3a2fc6b1abe90a2f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111199"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9289513"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Probleme bei der anfänglichen Einrichtung behandeln
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Dieser Artikel enthält Informationen zur Problembehandlung für die Dual-write Integration zwischen Finanz- und Betriebs-Apps und Dataverse. Dieses Thema enthält insbesondere Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit der initialen Einrichtung der Integration vom dualen Schreiben zusammenhängen.
 
@@ -51,7 +49,7 @@ Während der Verknüpfung der Dual-Write-Umgebung schlägt die Aktion mit einer 
 
 *Speichern des Verbindungssatzes fehlgeschlagen! Es wurde bereits ein Element mit demselben Schlüssel hinzugefügt.*
 
-Dual-Write unterstützt nicht mehrere juristische Entitäten/Firmen mit demselben Namen. Wenn Sie z.B. zwei Firmen mit dem Namen "DAT" in der Dataverse haben, dann wird diese Fehlermeldung ausgegeben.
+Dual-Write unterstützt nicht mehrere juristische Entitäten/Firmen mit demselben Namen. Wenn Sie z. B. zwei Firmen mit dem Namen „DAT“ in der Dataverse haben, dann wird diese Fehlermeldung ausgegeben.
 
 Um den Debitor zu entsperren, entfernen Sie doppelte Datensätze aus der Tabelle **cdm_company** in der Dataverse. Wenn die Tabelle **cdm_company** außerdem Datensätze mit leerem Namen enthält, entfernen oder korrigieren Sie diese Datensätze.
 
@@ -87,6 +85,19 @@ Es gibt zwei Dinge, die ein Problem mit nicht auffindbarer Umgebung verursachen 
 
 + Der Benutzer, der für die Anmeldung verwendet wird, befindet sich nicht im selben Mandanten wie die Finanzen und Betrieb-Instanz.
 + Es gibt einige veraltete Finanzen und Betrieb-Instanzen, die von Microsoft gehostet wurden und bei denen es ein Problem mit der Erkennung gab. Um dies zu beheben, aktualisieren Sie die Finanzen und Betrieb-Instanz. Die Umgebung wird mit jeder Aktualisierung auffindbar.
+
+## <a name="403-forbidden-error-while-connections-are-being-created"></a>403 (Nicht zulässig) Fehler beim Erstellen von Verbindungen
+
+Als Teil des Verknüpfungsprozesses zum dualen Schreiben werden zwei Power Apps Verbindungen (auch bekannt als *Apihub* Verbindungen) werden im Namen des Benutzers in der verlinkten Dataverse Umgebung erstellt. Wenn der Kunde keine Lizenz für die Power Apps-Umgebung hat, schlägt die Erstellung der ApiHub-Verbindungen fehl und ein 403-Fehler (nicht zulässig) wird angezeigt. Hier ist ein Beispiel für die Fehlernachricht:
+
+> MSG=\[Umgebung für duales Schreiben konnte nicht eingerichtet werden. Fehlerdetails: Antwort-Statuscode zeigt keinen Erfolg an: 403 (nicht zulässig). - Der Antwortstatuscode zeigt keinen Erfolg an: 403 (nicht zulässig).\] STAPELÜBERWACHUNG=\[   bei Microsoft.Dynamics.Integrator.ProjectManagementService.DualWrite.DualWriteConnectionSetProcessor.\<CreateDualWriteConnectionSetAsync\>d\_\_29.MoveNext() in X:\\bt\\1158727\\repo\\src\\ProjectManagementService\\DualWrite\\DualWriteConnectionSetProcessor.cs:line 297 --- Ende der Stapelüberwachung vom vorherigen Speicherort, an dem die Ausnahme ausgelöst wurde --- bei System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() bei System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) bei Microsoft.Dynamics.Integrator.ProjectManagementService.Controllers.DualWriteEnvironmentManagementController.\<SetupDualWriteEnvironmentAsync\>d\_\_34.MoveNext() in X:\\bt\\1158727\\repo\\src\\ProjectManagementService\\Controllers\\DualWriteEnvironmentManagementController.cs:line 265\]
+
+Dieser Fehler tritt auf, weil keine Power Apps-Lizenz vorliegt. Weisen Sie dem Benutzer eine entsprechende Lizenz zu (z. B. Power Apps Test 2 Plan), damit der Benutzer die Berechtigung zum Erstellen der Verbindungen hat. Um die Lizenz zu überprüfen, kann der Kunde zur Website [Mein Konto](https://portal.office.com/account/?ref=MeControl#subscriptions) gehen, um die Lizenzen anzuzeigen, die dem Benutzer derzeit zugewiesen sind.
+
+Weitere Informationen zu Power Apps-Lizenzen finden Sie in den folgenden Artikeln:
+
+- [Benutzern Lizenzen zuweisen](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide)
+- [Power Apps für Ihre Organisation kaufen](/power-platform/admin/signup-for-powerapps-admin)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
 

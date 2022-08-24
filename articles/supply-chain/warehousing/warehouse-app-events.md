@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 41b9538d3064bad24c4c5c60d401605e47e9c655
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2dc24fed1ec71432d9e2a3e1cb5b366267c2938b
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905453"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218741"
 ---
 # <a name="warehouse-app-event-processing"></a>Verarbeitung von Lager-App-Ereignissen
 
@@ -28,7 +28,7 @@ Batchaufträge, die in Supply Chain Management ausgeführt werden, können Daten
 
 ## <a name="turn-the-process-warehouse-app-events-feature-on-or-off"></a>Die Funktion „Lagerort-App-Ereignisse verarbeiten“ ein- oder ausschalten
 
-Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert. Administratoren können diese Funktionalität an- oder ausschalten, indem Sie nach der Funktion zur *Lagerort-App-Ereignisse verarbeiten* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
+Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert. Ab Supply Chain Management Version 10.0.29 ist diese Funktion obligatorisch. Daher ist es standardmäßig aktiviert und kann nicht wieder deaktiviert werden. Wenn Sie eine ältere Version als 10.0.29 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Lagerort-App-Ereignisse verarbeiten* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-a-batch-job-to-process-warehouse-app-events"></a>Richten Sie einen Stapelauftrag ein, um Lager-App-Ereignisse zu verarbeiten
 

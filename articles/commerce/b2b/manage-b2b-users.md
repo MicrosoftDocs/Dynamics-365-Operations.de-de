@@ -6,20 +6,20 @@ ms.date: 04/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: v-chgri
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 4a3d1c7bf7e7ea545590315d9e185fa525b5d5e3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.industry: retail
+ms.search.form: ''
+ms.openlocfilehash: a59220c16e195ff36980517baec6fb8246a18115
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860294"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281171"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Geschäftspartnerbenutzer auf B2B-E-Commerce-Websites verwalten
 
@@ -61,7 +61,7 @@ Nachdem die Kundenhierarchiedatensätze mit der Kanaldatenbank synchronisiert wu
 
 Wenn Sie eine Onboarding-Anfrage eines B2B-Interessenten genehmigen oder ablehnen, kann automatisch eine E-Mail-Benachrichtigung an den Interessenten gesendet werden.
 
-Führen Sie die folgenden Schritte aus, um E-Mail-Benachrichtigungen in der Commerce-Zentrale für Ereignisse der Benachrichtigungsart **B2B-Interessent genehmigt** oder **B2B-Interessent abgelehnt** einzurichten.
+Führen Sie die folgenden Schritte aus, um E-Mail-Benachrichtigungen in der Commerce headquarters für Ereignisse der Benachrichtigungsart **B2B-Interessent genehmigt** oder **B2B-Interessent abgelehnt** einzurichten.
 
 1. Erstellen Sie E-Mail-Vorlagen für E-Mails, die an Interessenten gesendet werden, wenn entweder der Benachrichtigungstyp **B2B-Interessent genehmigt** oder **B2B-Interessent abgelehnt** ausgelöst wird. Informationen zu den Platzhaltern, die diese Benachrichtigungstypen unterstützen, finden Sie unter [Benachrichtigungstypen](../email-templates-transactions.md#notification-types). Informationen zum Erstellen von E-Mail-Vorlagen finden Sie unter [Erstellen einer E-Mail-Vorlage](../email-templates-transactions.md#create-an-email-template).
 1. Fügen Sie die Benachrichtigungstypen **B2B-Interessenten genehmigt** und **B2B-Interessenten abgelehnt** Ihrem E-Mail-Benachrichtigungsprofil hinzu und ordnen Sie sie dann den von Ihnen erstellten E-Mail-Vorlagen zu. Weitere Informationen zu E-Mail-Benachrichtigungsprofilen finden Sie unter [Richten Sie ein E-Mail-Benachrichtigungsprofil ein](../email-notification-profiles.md).

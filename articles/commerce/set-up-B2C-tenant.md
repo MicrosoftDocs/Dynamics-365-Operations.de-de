@@ -6,20 +6,20 @@ ms.date: 05/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
-ms.reviewer: v-chgri
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4b1ee8999717d70dfe36baef95921962a1b7be65
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.industry: retail
+ms.search.form: ''
+ms.openlocfilehash: 0b41d61c388e3723e3c30fa4dc0ae0055ffb1842
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853740"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271849"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Einen B2C Mandanten in Commerce einrichten
 
@@ -42,7 +42,7 @@ Dynamics 365 Commerce Verwendet Azure AD B2C zur Unterstützung von Benutzeranme
 
 Bevor Sie beginnen, stellen Sie sicher, dass Ihre Dynamics 365 Commerce Umgebung und der E-Commerce-Kanal entsprechend konfiguriert werden, indem die folgenden Voraussetzungen erfüllt sind.
 
-- Legen Sie die POS-Operationen **AllowAnonymousAccess** Wert auf 1 in der Commerce-Zentrale fest:
+- Legen Sie die POS-Operationen **AllowAnonymousAccess** Wert auf 1 in der Commerce headquarters fest:
     1. Gehen Sie zu **POS Vorgänge**.
     1. Im Vorgangsraster klicken Sie mit der rechten Maustaste auf das Raster und wählen **Personalisieren**.
     1. Wählen Sie **Feld hinzufügen zu**.
@@ -264,7 +264,7 @@ Das folgende Bild zeigt ein Beispiel für einen Standard-Anmeldebildschirm mit e
  
 ![Beispiel für einen Standard-Anmeldebildschirm mit angezeigter Anmeldeschaltfläche des sozialen Netzwerks als Identitätsanbieter.](./media/B2CImage_17.png)
 
-## <a name="update-commerce-headquarters-with-the-new-azure-ad-b2c-information"></a>Aktualisieren Sie die Commerce-Zentrale mit den neuen Azure AD B2C-Informationen
+## <a name="update-commerce-headquarters-with-the-new-azure-ad-b2c-information"></a>Aktualisieren Sie die Commerce headquarters mit den neuen Azure AD B2C-Informationen
 
 Sobald die Azure AD B2C-Bereitstellungsschritte oben abgeschlossen ist, muss die Azure AD B2C-Anwendung muss in Ihrer Dynamics 365 Commerce Umgebung registriert werden.
 
@@ -331,7 +331,7 @@ Sie müssen Details der eingeben Azure AD B2C-Mandant in Commerce Site Builder e
 Führen Sie die folgenden Schritte aus, um Commerce Ihre Azure AD B2C-Mandantenanwendungsinformationen hinzuzufügen.
 
 1. Melden Sie sich als Administrator bei Commerce Site Builder für Ihre Umgebung an.
-1. Wählen Sie im linken Navigationsbereich **Mandant-Einstellungen**  aus, um den Bereich zu erweitern.
+1. Wählen Sie im linken Navigationsbereich **Mandant-Einstellungen** aus, um den Bereich zu erweitern.
 1. Wählen Sie unter **Mandanteneinstellungen** die Option **Einrichtung der Site-Authentifizierung** aus. 
 1. Wählen Sie im Hauptfenster neben **Site-Authentifizierungsprofile** die Option **Verwalten** aus. (Wenn Ihr Mandant in der Liste der Site-Authentifizierungsprofile angezeigt wird, wurde er bereits von einem Administrator hinzugefügt. Stellen Sie sicher, dass die Elemente in Schritt 6 unten mit Ihrer gewünschten B2C-Einrichtung übereinstimmen. Ein neues Profil kann auch mit ähnlichen Azure AD B2C-Mandanten oder -Anwendungen erstellt werden, um geringfügige Unterschiede zu berücksichtigen, z. B. unterschiedliche Benutzerrichtlinien-IDs).
 1. Wählen Sie **Site-Authentifizierungsprofil** aus.

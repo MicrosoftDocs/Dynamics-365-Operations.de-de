@@ -2,19 +2,19 @@
 title: Partei und globales Adressbuch
 description: In diesem Artikel wird die Partei- und globale Adressbuchfunktionalität von Duales Schreiben beschrieben.
 author: RamaKrishnamoorthy
-ms.date: 04/25/2022
+ms.date: 08/02/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 91b56d091f549838092bdefe1a6a763fde79a32c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7f06b6e69b76bf12092fdceca5b45a6750b52233
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892192"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228989"
 ---
 # <a name="party-and-global-address-book"></a>Partei und globales Adressbuch
 
@@ -119,11 +119,11 @@ Das Raster enthält die folgenden Spalten:
 
 Sie können die Schaltfläche **Neue Adresse** oberhalb des Rasters verwenden, um so viele Postadressen wie gewünscht zu erstellen.
 
-Die Felder **Adresse 1** und **Adresse 2** auf der Registerkarte **Zusammenfassung** der Seite **Konto** entsprechen den Adressen **Lieferung** bzw. **Rechnung**.
+Wenn ein Benutzer in Apps zur Kundeninteraktion die Adressen auf der Registerkarte **Zusammenfassung** der Seite **Konten** eingibt, entsprechen die Felder **Adresse 1** und **Adresse 2** den Adressen **Lieferung** und **Rechnung**. Wenn ein Benutzer jedoch eine Postanschrift in Finanz- und Betriebs-Apps erstellt, werden die ersten beiden Adressen des Kundendatensatzes in den Feldern **Adresse 1** und **Adresse 2** angezeigt, und der Benutzer hat die Möglichkeit, den Adresszweck zu **Lieferung** und **Rechnung** zu ändern.
 
 ![Registerkarte Zusammenfassung für Postadressen.](media/party-gab-image5.png)
 
-Die Felder **Adresse 1**, **Adresse 2** und **Adresse 3** auf der Registerkarte **Zusammenfassung** der Seite **Kontakt** entsprechen den Adressen **Geschäft**, **Lieferung** bzw. **Rechnung**.
+Ähnlich entsprechen die Felder **Adresse 1**, **Adresse 2** und **Adresse 3** auf der Registerkarte **Zusammenfassung** der Seite **Kontakt** den Adressen **Geschäft**, **Lieferung** bzw. **Rechnung**.
 
 ## <a name="electronic-addresses"></a>Elektronische Adressen
 

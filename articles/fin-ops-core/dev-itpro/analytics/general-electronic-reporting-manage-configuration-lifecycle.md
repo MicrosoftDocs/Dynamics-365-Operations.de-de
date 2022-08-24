@@ -1,32 +1,32 @@
 ---
 title: Den Lebenszyklus der elektronischen Berichterstellungskonfiguration (ER) verwalten
 description: In diesem Artikel wird beschrieben, wie Sie den Lebenszyklus von Konfigurationen für die elektronische Berichterstellung (EB) für Dynamics 365 Finance verwalten.
-author: NickSelin
+author: kfend
 ms.date: 07/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 58801
-ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d6a64908a167c09089a95f1d3faa825dcc63f064
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.custom: 58801
+ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
+ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
+ms.openlocfilehash: fe23d4cb2b293af466df2236b153974f95f636f8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109081"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271582"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Den Lebenszyklus der elektronischen Berichterstellungskonfiguration (ER) verwalten
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Artikel wird beschrieben, wie Sie den Lebenszyklus von Konfigurationen für die elektronische Berichterstellung (EB) für Dynamics 365 Finance verwalten.
+In diesem Artikel wird beschrieben, wie Sie den Lebenszyklus von [Konfigurationen](general-electronic-reporting.md#Configuration) für die [elektronische Berichterstellung](general-electronic-reporting.md) (EB) für Dynamics 365 Finance verwalten.
 
 ## <a name="overview"></a>Übersicht
 
@@ -105,6 +105,41 @@ In einigen Fällen kann es erforderlich sein, dass das System die konfigurierten
 
     > [!NOTE]
     > Dieser Parameter ist benutzerspezifisch und unternehmensspezifisch.
+
+## <a name="dependencies-on-other-components"></a>Abhängigkeiten von anderen Komponenten
+
+EB-Konfigurationen können so konfiguriert werden, dass sie von anderen Konfigurationen [abhängig](er-download-configurations-global-repo.md#import-filtered-configurations) sind. Zum Beispiel können Sie die Konfiguration eines EB-[Datenmodells](er-overview-components.md#data-model-component) aus dem globalen Repository in Ihre [Microsoft Regulatory Configuration Services (RCS)](../../../finance/localizations/rcs-overview.md) oder Dynamics 365 Finance-Instanz [importieren](er-download-configurations-global-repo.md) und erstellen Sie dann eine neue EB [Format](er-overview-components.md#format-component)-Konfiguration, die aus der importierten EB-Datenmodellkonfiguration [abgeleitet](er-quick-start2-customize-report.md#DeriveProvidedFormat) ist. Die abgeleitete EB-Formatkonfiguration hängt von der Konfiguration des Basis-EB-Datenmodells ab.
+
+![Abgeleitete EB-Formatkonfiguration auf der Seite „Konfigurationen“.](./media/ger-configuration-lifecycle-img1.png)
+
+Wenn Sie mit der Gestaltung des Formats fertig sind, können Sie den Status Ihrer anfänglichen [Version](general-electronic-reporting.md#component-versioning) der EB-Formatkonfiguration von **Entwurf** auf **Abgeschlossen** ändern. Sie können dann die fertige Version der EB-Formatkonfiguration durch [Veröffentlichung](../../../finance/localizations/rcs-global-repo-upload.md) in das globale Repository freigeben. Als Nächstes können Sie von jeder RCS- oder Finance-Cloud-Instanz aus auf das globale Repository zugreifen. Sie können dann jede EB-Konfigurationsversion, die für die Anwendung anwendbar ist, aus dem globalen Repository in diese Anwendung importieren.
+
+![Veröffentlichen der EB-Formatkonfiguration auf der Seite „Konfigurations-Repository“.](./media/ger-configuration-lifecycle-img2.png)
+
+Basierend auf der Konfigurationsabhängigkeit wird, wenn Sie die EB-Formatkonfiguration im globalen Repository auswählen, um sie in eine neu bereitgestellte RCS- oder Finance-Instanz zu importieren, die grundlegende EB-Datenmodellkonfiguration automatisch im globalen Repository gefunden und zusammen mit der ausgewählten EB-Formatkonfiguration als Basiskonfiguration importiert.
+
+Sie können auch Ihre Konfigurationsversion im EB-Format aus Ihrer aktuellen RCS- oder Finance-Instanz exportieren und lokal als XML-Datei speichern.
+
+![Exportieren der Version der EB-Formatkonfiguration als XML auf der Seite „Konfiguration“.](./media/ger-configuration-lifecycle-img3.png)
+
+Wenn Sie in Versionen von Finance **vor der Version 10.0.29** versuchen, die Version der EB-Formatkonfiguration aus dieser XML-Datei oder aus einem anderen Repository als dem globalen Repository in eine neu bereitgestellte RCS- oder Finance-Instanz zu importieren, die noch keine EB-Konfigurationen enthält, wird die folgende Ausnahme ausgelöst, um Sie darüber zu informieren, dass eine Basiskonfiguration nicht erhalten werden kann:
+
+> Nicht aufgelöste Referenzen übrig<br>
+Referenz des Objekts „\<imported configuration name\>“ auf das Objekt „Basis“ (\<globally unique identifier of the missed base configuration\>,\<version of the missed base configuration\>) kann nicht hergestellt werden
+
+![Importieren der Version der EB-Formatkonfiguration auf der Seite „Konfigurations-Repository“.](./media/ger-configuration-lifecycle-img4.gif)
+
+Wenn Sie in der Version **10.0.29 und höher** versuchen, denselben Konfigurationsimport durchzuführen, wenn eine Basiskonfiguration nicht in der aktuellen Anwendungsinstanz oder im aktuell verwendeten Quellrepository (falls zutreffend) gefunden werden kann, versucht das EB-Framework automatisch, den Namen der fehlenden Basiskonfiguration im Cache des globalen Repository zu finden. Anschließend werden der Name und der Globally Unique Identifier (GUID) der fehlenden Basiskonfiguration im Text der ausgelösten Ausnahme angezeigt.
+
+> Nicht aufgelöste Referenzen übrig<br>
+Referenz des Objekts „\<imported configuration name\>“ auf das Objekt „Basis“ (\<name of the missed base configuration\> \<globally unique identifier of the missed base configuration\>,\<version of the missed base configuration\>) kann nicht hergestellt werden
+
+![Ausnahme auf der Seite „Konfigurations-Repository“, wenn die Basiskonfiguration nicht gefunden werden kann.](./media/ger-configuration-lifecycle-img5.png)
+
+Sie können den bereitgestellten Namen verwenden, um die Basiskonfiguration zu finden und sie dann manuell zu importieren.
+
+> [!NOTE]
+> Diese neue Option funktioniert nur, wenn sich mindestens ein Benutzer bereits beim globalen Repository mithilfe der Seite [Konfigurations-Repositorys](er-download-configurations-global-repo.md#open-configurations-repository) oder eines der [Such](er-extended-format-lookup.md)felder des globalen Repository in der aktuellen Finance-Instanz angemeldet hat und wenn der Inhalt des globalen Repositorys zwischengespeichert wurde.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eeb14a3b0a61f34819bdd8d524e65ac214a81c35
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b881f9c6f872061864d4254ce880d981ca71c479
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857575"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219033"
 ---
 # <a name="inspect-the-quality-of-goods"></a>Qualität der Waren inspizieren
 
@@ -27,7 +27,7 @@ ms.locfileid: "8857575"
 
 Dieser Artikel beschreibt, wie Sie Qualitätsprüfungsaufträge verarbeiten. Qualitätsprüfungen werden normalerweise von einem Qualitätssachbearbeiter durchgeführt.
 
-Wenn die Standard-Demodaten installiert sind, können Sie sie verwenden, um die Verfahren in diesem Artikel abzuschließen. Um die Demo-Daten zu verwenden, wählen Sie vorher die *USMF* juristische Entität aus. Anschließend müssen Sie die Bestellung *000016* bestätigen und einen Wareneingang buchen. Ein Qualitätsprüfungsauftrag wird automatisch generiert.
+Wenn die Standard-[Demodaten](../../../fin-ops-core/fin-ops/get-started/demo-data.md) installiert sind, können Sie sie verwenden, um die Verfahren in diesem Artikel abzuschließen. Um die Demo-Daten zu verwenden, wählen Sie vorher die *USMF* juristische Entität aus. Anschließend müssen Sie die Bestellung *000016* bestätigen und einen Wareneingang buchen. Ein Qualitätsprüfungsauftrag wird automatisch generiert.
 
 ## <a name="step-1-select-a-quality-order"></a>Schritt 1: Wählen Sie einen Qualitätsprüfungsauftrag
 

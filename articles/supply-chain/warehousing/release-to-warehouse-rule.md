@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c011938438be32e8a3169d90561ab329da32e32a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e3d709a185796152b03f8ed83088cb5c3d137bae
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895466"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219747"
 ---
 # <a name="release-to-warehouse-rule"></a>Lagerortfreigaberegel
 
@@ -44,7 +44,7 @@ Nachdem die Funktion in Ihrem System aktiviert wurde, müssen Sie sie initialisi
 
 Führen Sie die folgenden Schritte aus, um die Funktion zu initialisieren und die Lagerortfreigaberegel für alle Lagerorte festzulegen.
 
-1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Lagerortverwaltungsparameter**.
+1. Wechseln Sie zu **Lagerortverwaltung \> Einrichtung \> Lagerortverwaltungsparameter**.
 1. Wählen Sie auf der Seite **Lagerortverwaltungsparameter** auf der Registerkarte **Allgemein** im Abschnitt **Unternehmensdaten** den Link für die Regel **Lagerortfreigabe initialisieren** aus. (Wenn dieser Link nicht angezeigt wird, ist die Funktion entweder nicht aktiviert oder wurde bereits initialisiert.)
 1. Wenn Sie aufgefordert werden, die Aktivität zu bestätigen, wählen Sie **Ja** aus, um die Funktion zu initialisieren.
 
@@ -69,7 +69,7 @@ Dieser Abschnitt enthält zwei Szenarien, in denen Sie lernen können, was die F
 
 ### <a name="make-sample-data-available"></a>Beispieldaten zur Verfügung stellen
 
-Um diese Szenarien mithilfe der Beispieldatensätze und -werte, die hier angegeben sind, zu verarbeiten, müssen Sie ein System verwenden, auf dem die standardmäßigen [Demodaten](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) installiert sind. Außerdem müssen Sie die **USMF** juristische Person auswählen, bevor Sie beginnen.
+Um diese Szenarien mithilfe der Beispieldatensätze und -werte, die hier angegeben sind, zu verarbeiten, müssen Sie ein System verwenden, auf dem die standardmäßigen [Demodaten](../../fin-ops-core/fin-ops/get-started/demo-data.md) installiert sind. Außerdem müssen Sie die **USMF** juristische Person auswählen, bevor Sie beginnen.
 
 Sie können diese Szenarien auch als Anleitung für die Funktion verwenden, wenn Sie an einem Produktionssystem arbeiten. In diesem Fall müssen Sie jedoch Ihre eigenen Werte ersetzen, und es fehlen möglicherweise einige Typen von erforderlichen Datensätzen, die in den Standarddemodaten enthalten sind.
 

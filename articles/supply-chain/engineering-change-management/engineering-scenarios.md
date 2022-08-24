@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: ec5535013af9ccb253744e061de738155ac9ad22
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e66cda6e529a70d40e599718332152bac95b061e
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889634"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220026"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Exemplarische Vorgehensweise für die Funktionen der Verwaltung für technische Änderung
 
@@ -45,7 +45,7 @@ Bevor Sie versuchen, eine der Übungen im Rest dieses Artikels durchzuführen, b
 
 ### <a name="make-standard-demo-data-available"></a>Standard-Demodaten zur Verfügung stellen
 
-Arbeiten Sie an einem System, auf dem die [Standard-Demodaten installiert sind](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md). Die Standard-Demodaten fügen Daten für mehrere juristische Entitäten (Firmen und Organisationen) der Demo hinzu. Während Sie die Übungen durcharbeiten, werden Sie den Firmen-Picker auf der rechten Seite der Navigationsleiste verwenden, um zwischen einer Firma (*DEMF*), die als *Ingenieurorganisation* festgelegt ist, und einer anderen Firma (*USMF*), die als *Betriebsorganisation* festgelegt ist, zu wechseln.
+Arbeiten Sie an einem System, auf dem die Standard-[Demodaten](../../fin-ops-core/fin-ops/get-started/demo-data.md) installiert sind. Die Standard-Demodaten fügen Daten für mehrere juristische Entitäten (Firmen und Organisationen) der Demo hinzu. Während Sie die Übungen durcharbeiten, werden Sie den Firmen-Picker auf der rechten Seite der Navigationsleiste verwenden, um zwischen einer Firma (*DEMF*), die als *Ingenieurorganisation* festgelegt ist, und einer anderen Firma (*USMF*), die als *Betriebsorganisation* festgelegt ist, zu wechseln.
 
 ### <a name="set-up-an-engineering-organization"></a>Festlegen einer Engineering-Organisation
 

@@ -1,26 +1,26 @@
 ---
 title: Konfigurierte EB-Komponente überprüfen, um Laufzeitprobleme zu vermeiden
 description: In diesem Artikel wird erläutert, wie Sie die konfigurierten EB-Komponenten (Elektronische Berichterstellung) überprüfen, um mögliche Laufzeitprobleme zu vermeiden.
-author: NickSelin
+author: kfend
 ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c30f1a0d6ca4a50645bada39abbbf2f58777abb8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314
+ms.assetid: ''
+ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
+ms.openlocfilehash: 53835bbceaa89793d890d8bc18921497c686e969
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864835"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277849"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Konfigurierte EB-Komponente überprüfen, um Laufzeitprobleme zu vermeiden
 
@@ -30,8 +30,8 @@ Alle konfigurierten [Formate](er-overview-components.md#format-components-for-ou
 
 Standardmäßig wird die Prüfung in den folgenden Fällen automatisch für eine EB-Konfiguration angewendet, die die zuvor genannten EB-Komponenten enthält:
 
-- Sie [importieren](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) eine neue [Version](general-electronic-reporting.md#component-versioning) einer EB-Konfiguration in Ihre Instanz von Microsoft Dynamics 365 Finance.
-- Sie ändern den [Status](general-electronic-reporting.md#component-versioning) der bearbeitbaren EB-Konfiguration von **Entwurf** zu **Abgeschlossen**.
+- Sie [importieren](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) eine neue Version einer EB-Konfiguration in Ihre Instanz von Microsoft Dynamics 365 Finance.
+- Sie ändern den Status der bearbeitbaren EB-Konfiguration von **Entwurf** zu **Abgeschlossen**.
 - Sie können eine bearbeitbare EB-Konfiguration [zurücksetzen](general-electronic-reporting.md#upgrading-a-format-selecting-a-new-version-of-base-format-rebase), indem Sie eine neue Basisversion anwenden.
 
 Sie können diese Prüfung explizit ausführen. Wählen Sie eine der folgenden drei Optionen aus und befolgen Sie die angegebenen Schritte:
@@ -770,7 +770,7 @@ Es ist keine Option verfügbar, um dieses Problem automatisch zu beheben.
 
 ## <a name="not-linked-template"></a><a id="i12"></a>Nicht verknüpfte Vorlage
 
-Wenn Sie [manuell](er-fillable-excel.md#manual-entry) eine EB-Formatkomponente so konfigurieren, dass sie eine Vorlage zum Generieren eines ausgehenden Dokuments verwendet, müssen Sie das Element **Excel\\Datei** manuell hinzufügen, die erforderliche Vorlage als Anhang der bearbeitbaren Komponente hinzufügen und diesen Anhang im hinzugefügten Element **Excel\\Datei** auswählen. Auf diese Weise geben Sie an, dass das hinzugefügte Element zur Laufzeit die ausgewählte Vorlage ausfüllt. Wenn Sie eine Formatkomponentenversion im [Status](general-electronic-reporting.md#component-versioning) **Entwurf** konfigurieren, können Sie der bearbeitbaren Komponente mehrere Vorlagen hinzufügen und dann jede Vorlage im Element **Excel\\Datei** auswählen, um das EB-Format auszuführen. Auf diese Weise können Sie sehen, wie verschiedene Vorlagen zur Laufzeit gefüllt werden. Wenn Sie Vorlagen haben, die in keinem Elemen **Excel\\Datei** ausgewählt sind, warnt Sie der EB-Formatdesigner, dass diese Vorlagen aus der bearbeitbaren EB-Formatkomponentenversion gelöscht werden, wenn ihr Status von **Entwurf** zu **Abgeschlossen** geändert wird.
+Wenn Sie [manuell](er-fillable-excel.md#manual-entry) eine EB-Formatkomponente so konfigurieren, dass sie eine Vorlage zum Generieren eines ausgehenden Dokuments verwendet, müssen Sie das Element **Excel\\Datei** manuell hinzufügen, die erforderliche Vorlage als Anhang der bearbeitbaren Komponente hinzufügen und diesen Anhang im hinzugefügten Element **Excel\\Datei** auswählen. Auf diese Weise geben Sie an, dass das hinzugefügte Element zur Laufzeit die ausgewählte Vorlage ausfüllt. Wenn Sie eine Formatkomponentenversion im Status **Entwurf** konfigurieren, können Sie der bearbeitbaren Komponente mehrere Vorlagen hinzufügen und dann jede Vorlage im Element **Excel\\Datei** auswählen, um das EB-Format auszuführen. Auf diese Weise können Sie sehen, wie verschiedene Vorlagen zur Laufzeit gefüllt werden. Wenn Sie Vorlagen haben, die in keinem Elemen **Excel\\Datei** ausgewählt sind, warnt Sie der EB-Formatdesigner, dass diese Vorlagen aus der bearbeitbaren EB-Formatkomponentenversion gelöscht werden, wenn ihr Status von **Entwurf** zu **Abgeschlossen** geändert wird.
 
 Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
 

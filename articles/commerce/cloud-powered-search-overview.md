@@ -7,18 +7,18 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: v-chgri
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8a3ab869eb9ddc0e73061bd2363cf9b3962da1e3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.assetid: ''
+ms.openlocfilehash: ed80ff42ea5c6e6a904ea2855953d006f66aad37
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850355"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273665"
 ---
 # <a name="cloud-powered-search-overview"></a>Übersicht über die cloudbasierte Suche
 
@@ -64,11 +64,14 @@ Die folgende Abbildung zeigt ein Beispiel an, wo interaktives automatisches Vors
 
 ## <a name="sort"></a>Sortieren
 
-Mit der verbesserten Sortierung in Commerce können Kunden die Suchergebnisse sortieren, durchsuchen und nach Kriterien wie Preis, Produktname und Produktnummer verfeinern. Debitoren können Ergebnisse auch sortieren, basierend darauf, ob ein Produkt neu ist, meistverkauft, oder vor kurzem hinzugefügt wurde.
+Die Sortierungsfunktionalität ermöglicht Kunden, Kategorieergebnisse zu sortieren, zu suchen und zu durchsuchen und diese durch Kriterien wie Preis, Produktname und Produktnummer zu verfeinern. Wenn Sie [Produktempfehlungen](product-recommendations.md) in Ihrer Umgebung aktivieren, können Kunden die Ergebnisse auch anhand erweiterter Sortierkriterien sortieren, z. B. „neu“, „Bestseller“ und „beliebt“.
+
 
 > [!NOTE]
 > Diese Cloud-betriebenen Suchfunktionen sind ab Version 10.0.8 verfügbar. Stellen Sie sicher, dass ein Eintrag für „ProductSearch.UseAzureSearch“ auf 'true' festgelegt ist in **Commerce Parameter > Konfigurationsparameter**. 
 ![Konfigurationsparameter für die cloud-betriebene Suche.](./media/CloudPoweredSearchConfigurationParameters.png)
+>Erweiterte Sortieroptionen wie „neu“, „Bestseller“ und „beliebt“ sind mit der Commerce-SSK-Version 9.35+ und der Dynamics 365 Commerce Version 10.0.20 verfügbar.  
+
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

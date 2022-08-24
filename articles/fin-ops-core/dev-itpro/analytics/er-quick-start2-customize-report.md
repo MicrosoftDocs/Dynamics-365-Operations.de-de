@@ -1,28 +1,26 @@
 ---
 title: ER-Format zur Erstellung eines benutzerdefinierten elektronischen Dokuments anpassen
 description: In diesem Artikel wird erläutert, wie Sie ein von Microsoft bereitgestelltes EB-Format (Elektronische Berichterstellung) so anpassen, dass ein benutzerdefiniertes elektronisches Dokument generiert wird.
-author: NickSelin
+author: kfend
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 492964d3cea0e474a50d6d83231f33d9508b9d9d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314,  ""intro-internal
+ms.assetid: ''
+ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
+ms.openlocfilehash: 8b0bcdbd011c4c04e2693a3dcb8033c3cbe2adc7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886790"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283557"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>ER-Format zur Erstellung eines benutzerdefinierten elektronischen Dokuments anpassen
 
@@ -271,7 +269,7 @@ In diesem Fall müssen Sie als Vertreter von Litware, Inc. eine neue EB-Formatko
 
 6. Wählen Sie **Konfiguration erstellen**.
 
-Version 1.1.1 der EB-Formatkonfiguration **BACS (UK, benutzerdefiniert)** wird erstellt. Diese Version hat den [Status](general-electronic-reporting.md#component-versioning) **Entwurf** und kann bearbeitet werden. Der aktuelle Inhalt Ihres benutzerdefinierten EB-Formats entspricht dem Inhalt des von Microsoft bereitgestellten Formats.
+Version 1.1.1 der EB-Formatkonfiguration **BACS (UK, benutzerdefiniert)** wird erstellt. Diese Version hat den Status **Entwurf** und kann bearbeitet werden. Der aktuelle Inhalt Ihres benutzerdefinierten EB-Formats entspricht dem Inhalt des von Microsoft bereitgestellten Formats.
 
 ![Konfigurationsseite mit Version 1.1.1 der EB-Formatkonfiguration BACS (UK, benutzerdefiniert).](./media/er-quick-start2-derived-format-configuration1.png)
 
@@ -324,7 +322,7 @@ Sie müssen Ihr benutzerdefiniertes Format so konfigurieren, dass es den bankspe
 
 ### <a name="mark-a-custom-format-as-runnable"></a><a id="MarkFormatRunnable"></a>Markieren eines benutzerdefinierten Formats als ausführbar
 
-Nachdem die erste Version Ihres benutzerdefinierten Formats mit dem Status **Entwurf** erstellt wurde, können Sie es zu Testzwecken ausführen. Um den Bericht auszuführen, müssen Sie eine Kreditorenzahlung mithilfe der Zahlungsmethode verarbeiten, die sich auf Ihr benutzerdefiniertes EB-Format bezieht. Beim Aufrufen eines EB-Formats aus der Anwendung werden standardmäßig nur Versionen mit dem Status **Abgeschlossen** oder **Freigegeben** [berücksichtigt](general-electronic-reporting.md#component-versioning). Dieses Verhalten verhindert, dass EB-Formate mit unfertigen Designs verwendet werden. Für Ihre Testläufe können Sie die Anwendung jedoch zwingen, die Version Ihres EB-Formats mit dem Status **Entwurf** zu verwenden. Auf diese Weise können Sie die aktuelle Formatversion anpassen, falls Änderungen erforderlich sind. Weitere Informationen finden Sie unter [Anwendbarkeit](electronic-reporting-destinations.md#applicability).
+Nachdem die erste Version Ihres benutzerdefinierten Formats mit dem Status **Entwurf** erstellt wurde, können Sie es zu Testzwecken ausführen. Um den Bericht auszuführen, müssen Sie eine Kreditorenzahlung mithilfe der Zahlungsmethode verarbeiten, die sich auf Ihr benutzerdefiniertes EB-Format bezieht. Beim Aufrufen eines EB-Formats aus der Anwendung werden standardmäßig nur Versionen mit dem Status **Abgeschlossen** oder **Freigegeben** berücksichtigt. Dieses Verhalten verhindert, dass EB-Formate mit unfertigen Designs verwendet werden. Für Ihre Testläufe können Sie die Anwendung jedoch zwingen, die Version Ihres EB-Formats mit dem Status **Entwurf** zu verwenden. Auf diese Weise können Sie die aktuelle Formatversion anpassen, falls Änderungen erforderlich sind. Weitere Informationen finden Sie unter [Anwendbarkeit](electronic-reporting-destinations.md#applicability).
 
 Um die Entwurfsversion eines EB-Formats zu verwenden, müssen Sie das EB-Format explizit markieren.
 

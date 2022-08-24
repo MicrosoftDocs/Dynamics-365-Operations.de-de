@@ -1,25 +1,25 @@
 ---
 title: ER-Konfigurationen zum Ausfüllen von PDF-Vorlagen entwerfen
 description: Dieser Artikel enthält Informationen dazu, wie ein elektronisches Berichtsformat (EB) gestaltet wird, um eine PDF-Vorlage auszufüllen.
-author: NickSelin
+author: kfend
 ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
-ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: ef9b650e9b676d79af8839c08cfbb1000a5aee5f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
+ms.openlocfilehash: 4056c2b9442e26a0e1c99e6155a3cd605d222974
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908589"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283312"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>ER-Konfigurationen zum Ausfüllen von PDF-Vorlagen entwerfen
 

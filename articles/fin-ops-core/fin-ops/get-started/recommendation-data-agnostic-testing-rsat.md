@@ -1,24 +1,24 @@
 ---
 title: Agnostische Datentests mit dem Regression Suite Automation Tool
 description: In diesem Artikel werden die Empfehlungen für agnostische Datentests mit Regression Suite Automation Tool beschrieben.
-author: kfend
+author: FrankDahl
 ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 21761
 ms.search.region: Global
-ms.author: kfend
+ms.author: fdahl
 ms.search.validFrom: 2019-09-11
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 9463a69b6c1b273c6d37b6f4cf6eac19441da682
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 21761
+ms.openlocfilehash: f4322cb76d1d83c02ec9d4dcb997a1cd4730d090
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860009"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269590"
 ---
 # <a name="data-agnostic-testing-using-the-regression-suite-automation-tool"></a>Agnostische Datentests mit dem Regression Suite Automation Tool
 

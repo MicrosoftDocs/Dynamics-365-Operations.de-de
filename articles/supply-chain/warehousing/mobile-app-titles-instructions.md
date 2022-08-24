@@ -4,19 +4,19 @@ description: Dieser Artikel beschreibt, wie Sie angepasste Anweisungen für jede
 author: Mirzaab
 ms.date: 08/11/2021
 ms.topic: article
-ms.search.form: ''
+ms.search.form: WHSMobileAppFlowStepListPage
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-11
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 289a3735133919ae7dbad05c40ba9ccf0e8f57ca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 40b2115126aae28a41feaec4d3aabd73595107cd
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895495"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220148"
 ---
 # <a name="customize-step-titles-and-instructions-for-the-warehouse-management-mobile-app"></a>Schritttitel und Anweisungen für die mobile Warehouse Management-App anpassen
 
@@ -30,10 +30,7 @@ Dieser Artikel beschreibt, wie Sie angepasste Anweisungen für jeden Schritt jed
 
 ## <a name="turn-on-the-warehouse-app-step-instructions-feature"></a>Aktivieren Sie die Funktion "Schrittanweisungen" der App Lager
 
-Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Admins können die Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktion zu prüfen und sie einzuschalten. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
-
-- **Module:** *Lagerortverwaltung*
-- **Name der Funktion:** *Schrittanweisungen für die App "Lager"*
+Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Ab Supply Chain Management Version 10.0.29 ist diese Funktion standardmäßig aktiviert. Administratoren können diese Funktionalität an- oder ausschalten, indem Sie nach der Funktion zur *Schrittanweisungen für die Lagerort-App* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ## <a name="step-titles-and-step-instructions-in-the-app"></a>Schritttitel und Schrittanweisungen in der App
 

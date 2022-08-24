@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f740b68128b90fc7c9ce2f74edc4f3c06f03debd
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.openlocfilehash: 2a77924e6133158d538a3eb8365def92c9354b0e
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9167760"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220361"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Produktionsausführungsschnittstelle konfigurieren
 
@@ -87,29 +87,23 @@ Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig ak
 
 ### <a name="enable-registering-of-material-consumption"></a>Ermöglicht die Registrierung des Materialverbrauchs
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
-
 Diese Funktion ermöglicht es Arbeitern, die Produktionsausführungsoberfläche zu verwenden, um Materialverbrauch, Chargennummern und Seriennummern zu registrieren. Einige Hersteller, insbesondere in der Prozessindustrie, müssen explizit die Materialmenge registrieren, die für jede Batch oder jeden Produktionsauftrag verbraucht wird. Arbeitskräfte könnten zum Beispiel eine Waage verwenden, um die Menge des Materials zu wiegen, das sie bei ihrer Arbeit verbrauchen. Um eine vollständige Rückverfolgbarkeit der Materialien zu gewährleisten, müssen diese Organisationen auch die Batch-Nummern registrieren, die zur Herstellung der einzelnen Produkte verbraucht wurden.
 
 Es gibt zwei Versionen dieser Funktion. Man unterstützt Artikel, die *nicht* für die Verwendung von Lagerverwaltungsprozessen (WMS) aktiviert sind. Die anderen unterstützen Elemente, die *für die Verwendung von WMS aktiviert sind*. Um diese Funktionalität zu nutzen, aktivieren Sie eine oder beide der folgenden Funktionen in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in dieser Reihenfolge), je nachdem, ob Sie Artikel haben, die für WMS aktiviert sind:
 
 - *Materialverbrauch in der Produktionsausführungsoberfläche (nicht WMS) registrieren*
-- *(Vorschauversion) Materialverbrauch in der Produktionsausführungsoberfläche registrieren (WMS-fähig)*
+- *Materialverbrauch in der Produktionsausführungsoberfläche registrieren (WMS-fähig)*
 
 > [!IMPORTANT]
 > Sie können die Nicht-WMS-Funktion allein verwenden. Wenn Sie jedoch WMS verwenden, müssen Sie beide Funktionen aktivieren.
 
 ### <a name="enable-reporting-on-catch-weight-items"></a>Ermöglicht die Berichterstattung über Artikelgewichte
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
-
 Arbeitskräfte können die Produktionsausführungsoberfläche verwenden, um den Fortschritt bei Batch-Aufträgen für Artikel mit Artikelgewicht zu melden. Batch-Aufträge werden aus Formeln erstellt, die so definiert werden können, dass Artikelgewichte als Formelpositionen, Kuppelprodukte und Nebenprodukte enthalten sind. Eine Formel kann auch so definiert werden, dass sie Formelzeilen für Zutaten enthält, die für das Artikelgewicht definiert sind. Artikel mit Artikelgewicht verwenden zwei Maßeinheiten, um den Bestand zu verfolgen: die Menge des Artikelgewichts und die Menge des Bestands. In der Lebensmittelbranche kann z.B. verpacktes Fleisch als Element mit Artikelgewicht definiert werden, wobei die Menge des Artikelgewichts zur Erfassung der Anzahl der Kartons und die Bestandsmenge zur Erfassung des Gewichts der Kartons verwendet wird.
 
 Um diese Funktion zu nutzen, schalten Sie die folgende Funktion in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ein:
 
-- *(Vorschau) Bericht über Artikel mit Artikelgewicht über die Produktionsausführungsoberfläche*
+- *Bericht über Artikel mit Artikelgewicht über die Produktionsausführungsoberfläche*
 
 ### <a name="enable-the-my-day-dialog"></a>Dialogfeld „Mein Tag“ aktivieren
 

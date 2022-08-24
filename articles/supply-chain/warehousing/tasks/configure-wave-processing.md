@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a9fc2b9f31bc9e2f73b53a900bc9b0924410768
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9a8c088f8726573e4b1fcad1944676547391a9bf
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860347"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219627"
 ---
 # <a name="configure-wave-processing-example"></a>Zyklusverarbeitung konfigurieren – Beispiel
 
@@ -29,7 +29,7 @@ Dieser Artikel enthält ein Beispiel für die Einrichtung der Kriterien, die bes
 
 ## <a name="enable-sample-data"></a>Beispieldaten aktivieren
 
-Um dieses Szenario mithilfe der hier angegebenen Beispieldatensätze und -werte zu verarbeiten, müssen Sie ein System verwenden, auf dem die standardmäßigen Demodaten installiert sind. Sie müssen auch die **USMF** juristische Person auswählen, bevor Sie beginnen.
+Um dieses Szenario mithilfe der hier angegebenen Beispieldatensätze und -werte zu verarbeiten, müssen Sie ein System verwenden, auf dem die standardmäßigen [Demodaten](../../../fin-ops-core/fin-ops/get-started/demo-data.md) installiert sind. Sie müssen auch die **USMF** juristische Person auswählen, bevor Sie beginnen.
 
 ## <a name="example-scenario-configure-wave-processing"></a>Beispielszenario: Wellenverarbeitung konfigurieren
 

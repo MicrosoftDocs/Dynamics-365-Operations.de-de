@@ -1,27 +1,27 @@
 ---
 title: Empfehlungen zu „Artikel mit ähnlicher Beschreibung kaufen“ aktivieren
 description: In diesem Artikel wird beschrieben, wie Sie Produktempfehlungen für „Produkte mit ähnlicher Beschreibung kaufen“ in Microsoft Dynamics 365 Commerce aktivieren.
-author: bsokolov
+author: bebeale
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: b935731b24f96753c814e3b496ffeeb7a92d9cc1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: Retail, eCommerce
+ms.search.form: ''
+ms.openlocfilehash: c15122d15660144f46528bd8c575029bf9d966c6
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852007"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274977"
 ---
 # <a name="enable-shop-similar-description-recommendations"></a>Empfehlungen zu „Artikel mit ähnlicher Beschreibung kaufen“ aktivieren
 
@@ -50,7 +50,7 @@ Produktempfehlungen werden nur für Commerce-Benutzer unterstützt, die ihren Sp
 
 Bevor den Kunden Empfehlungen für „Produkte mit ähnlicher Beschreibung kaufen“ angezeigt werden können, müssen Sie die folgenden Voraussetzungen befolgen:
 
-- [Produktempfehlungen aktivieren](enable-product-recommendations.md) in der Commerce-Zentrale.
+- [Produktempfehlungen aktivieren](enable-product-recommendations.md) in der Commerce headquarters.
 - Stellen Sie sicher, dass der Medienserver HTTPS-Aufrufe unterstützt.
 
 ### <a name="turn-on-the-shop-similar-description-recommendations-feature"></a>Empfehlungsfunktion für „Produkte mit ähnlicher Beschreibung kaufen“ aktivieren

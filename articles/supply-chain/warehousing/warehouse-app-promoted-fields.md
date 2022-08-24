@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 5f5f24f47d0a2376be714f9208cd383cf3aacc07
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8ecca2d00b8753a405faa8d4c67c3cbb1eef6907
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857053"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218973"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>Höher gestufte Felder für Schritte in der mobilen Warehouse Management-App konfigurieren
 
@@ -32,13 +32,7 @@ In diesem Artikel wird beschrieben, wie Sie bestimmte Informationen für jeden S
 Bevor Sie heraufgestufte Felder einrichten können, müssen Sie das folgende Verfahren ausführen, um die erforderlichen Funktionen zu aktivieren und die erforderlichen Feldnamen in der Mobile-App Warehouse Management zu generieren.
 
 1. Wechseln Sie zu **Systemverwaltung \> Arbeitsbereiche \> Funktionsverwaltung**.
-1. Aktivieren Sie im [**Funktionsverwaltung**-Arbeitsbereich](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) die Funktion, die wie folgt aufgeführt ist:
-
-    - **Module:** *Lagerortverwaltung*
-    - **Name der Funktion:** *Schrittanweisungen für die App "Lager"*
-
-    Für weitere Informationen über die Funktion *Schrittanleitung für die Warehouse-App* siehe [Passen Sie Schritttitel und Anweisungen für die mobile Warehouse Management-App an](mobile-app-titles-instructions.md). Diese Funktion ist Voraussetzung für die Funktion *Heraufgestufte Felder für die Lagerverwaltungs-App*.
-
+1. Stellen Sie sicher, dass die *Schrittanweisungen für die Warehouse-App* Funktion für Ihr System aktiviert ist. Ab Supply Chain Management Version 10.0.29 ist diese Funktion standardmäßig aktiviert. Für weitere Informationen über die Funktion *Schrittanleitung für die Warehouse-App* siehe [Passen Sie Schritttitel und Anweisungen für die mobile Warehouse Management-App an](mobile-app-titles-instructions.md). Diese Funktion ist Voraussetzung für die Funktion *Heraufgestufte Felder für die Lagerverwaltungs-App*.
 1. Aktivieren Sie die Funktion, die folgendermaßen aufgelistet ist:
 
     - **Module:** *Lagerortverwaltung*
@@ -67,7 +61,7 @@ Verwenden Sie die folgende Prozedur, um heraufgestufte Felder einzurichten.
 
 ### <a name="enable-sample-data"></a>Beispieldaten aktivieren
 
-Um die festgelegten Beispieldatensätze und -werte zur Bearbeitung dieses Szenarios zu verwenden, müssen Sie ein System verwenden, auf dem die standardmäßigen Demodaten installiert sind. Sie müssen auch die **USMF** juristische Person auswählen, bevor Sie beginnen.
+Um die festgelegten Beispieldatensätze und -werte zur Bearbeitung dieses Szenarios zu verwenden, müssen Sie ein System verwenden, auf dem die standardmäßigen [Demodaten](../../fin-ops-core/fin-ops/get-started/demo-data.md) installiert sind. Sie müssen auch die **USMF** juristische Person auswählen, bevor Sie beginnen.
 
 ### <a name="configure-sales-picking-with-promoted-steps-on-the-license-plate-step"></a>Konfigurieren Sie die Verkaufskommissionierung mit beworbenen Schritten auf dem Nummernschildschritt
 

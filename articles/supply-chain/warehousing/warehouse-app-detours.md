@@ -4,19 +4,19 @@ description: In diesem Artikel wird beschrieben, wie Umleitungen für Menüeleme
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
-ms.search.form: ''
+ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 69090def1bba2f64ed21cca8b6d4629083aeb0c4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8106dd600e8eadbaafcaa4cbc27ec179899318f7
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863591"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219003"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Umleitungen für Schritte in den Menüpunkten des Mobilgeräts konfigurieren
 
@@ -34,20 +34,8 @@ Ein Umweg ist ein separater Menüpunkt, der von einem Schritt in einer Hauptaufg
 Bevor Sie Umleitungen für Schritte in Menüpunkten mobiler Geräte konfigurieren können, müssen Sie das folgende Verfahren ausführen, um die erforderlichen Funktionen zu aktivieren und die erforderlichen Feldnamen in der Mobile-App Warehouse Management zu generieren.
 
 1. Wechseln Sie zu **Systemverwaltung \> Arbeitsbereiche \> Funktionsverwaltung**.
-1. Aktivieren Sie im [**Funktionsverwaltung**-Arbeitsbereich](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) die Funktion, die wie folgt aufgeführt ist:
-
-    - **Module:** *Lagerortverwaltung*
-    - **Name der Funktion:** *Schrittanweisungen für die App "Lager"*
-
-    Für weitere Informationen über die Funktion *Schrittanleitung für die Warehouse-App* siehe [Passen Sie Schritttitel und Anweisungen für die mobile Warehouse Management-App an](mobile-app-titles-instructions.md). Diese Funktion ist Voraussetzung für die Funktion *Umwege über die Warehouse Management-App*.
-
-1. Aktivieren Sie die Funktion, die folgendermaßen aufgelistet ist:
-
-    - **Module:** *Lagerortverwaltung*
-    - **Funktionsname:** *Umwege über die Warehouse Management-App*
-
-    Diese Funktion wird in diesem Artikel beschrieben.
-
+1. Stellen Sie sicher, dass die *Schrittanweisungen für die Warehouse-App* Funktion für Ihr System aktiviert ist. Ab Supply Chain Management Version 10.0.29 ist diese Funktion standardmäßig aktiviert. Für weitere Informationen über die Funktion *Schrittanleitung für die Warehouse-App* siehe [Passen Sie Schritttitel und Anweisungen für die mobile Warehouse Management-App an](mobile-app-titles-instructions.md). Diese Funktion ist Voraussetzung für die Funktion *Umwege über die Warehouse Management-App*.
+1. Aktivieren Sie die Funktion *Umwege über die Warehouse Management-App*. Diese Funktion wird in diesem Artikel beschrieben.
 1. Aktualisieren Sie die Feldnamen in der mobilen Warehouse Management-App, indem Sie zu **Lagerverwaltung \> Einstellungen \> Mobiles Gerät \> Feldnamen der Warehouse-App** und wählen Sie **Standard-Setup erstellen**. Weitere Informationen finden Sie unter [Felder für die Warehouse Management Mobile App konfigurieren](configure-app-field-names-priorities-warehouse.md).
 1. Wiederholen Sie den vorherigen Schritt für jede juristische Person (Firma), in der Sie die mobile App Warehouse Management verwenden.
 
@@ -65,7 +53,7 @@ Dieses Szenario zeigt, wie Sie eine Standortanfrage als Umweg in einem mitarbeit
 
 ### <a name="enable-sample-data"></a>Beispieldaten aktivieren
 
-Um die festgelegten Beispieldatensätze und -werte zur Bearbeitung dieses Szenarios zu verwenden, müssen Sie ein System verwenden, auf dem die standardmäßigen Demodaten installiert sind. Sie müssen auch die **USMF** juristische Person auswählen, bevor Sie beginnen.
+Um die festgelegten Beispieldatensätze und -werte zur Bearbeitung dieses Szenarios zu verwenden, müssen Sie ein System verwenden, auf dem die standardmäßigen [Demodaten](../../fin-ops-core/fin-ops/get-started/demo-data.md) installiert sind. Sie müssen auch die **USMF** juristische Person auswählen, bevor Sie beginnen.
 
 ### <a name="create-a-menu-specific-override-and-configure-the-detour-for-scenario-1"></a>Erstellen Sie einen menüspezifischen Override und konfigurieren Sie die Umleitung für Szenario 1
 
@@ -118,7 +106,7 @@ Die Standortanfrage können Sie je nach Bedarf durch eine Kennzeichenanfrage ode
 
 ### <a name="enable-sample-data"></a>Beispieldaten aktivieren
 
-Um die festgelegten Beispieldatensätze und -werte zur Bearbeitung dieses Szenarios zu verwenden, müssen Sie ein System verwenden, auf dem die standardmäßigen Demodaten installiert sind. Sie müssen auch die **USMF** juristische Person auswählen, bevor Sie beginnen.
+Um die festgelegten Beispieldatensätze und -werte zur Bearbeitung dieses Szenarios zu verwenden, müssen Sie ein System verwenden, auf dem die standardmäßigen [Demodaten](../../fin-ops-core/fin-ops/get-started/demo-data.md) installiert sind. Sie müssen auch die **USMF** juristische Person auswählen, bevor Sie beginnen.
 
 ### <a name="create-a-menu-specific-override-and-configure-the-detour-for-scenario-2"></a>Erstellen Sie einen menüspezifischen Override und konfigurieren Sie die Umleitung für Szenario 2
 

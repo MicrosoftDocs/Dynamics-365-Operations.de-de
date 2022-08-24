@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 8b75907d01a029da1ed6a8224f8a7c0ca0230550
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: fc4348f8207f4f6c8a0b694bc3e57beb29449a15
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068669"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219471"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Fälligkeit für Lagerplatzrichtlinie-Bestandsentnahme
 
@@ -34,8 +34,8 @@ Wenn der Bestand zum ersten Mal im Lager eingeht oder erstellt wird, aktualisier
 
 Um diese Funktion verfügbar zu machen, aktivieren Sie die folgenden Funktionen in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) in dieser Reihenfolge:
 
-1. Status des Lagerplatzes an einem Lagerort
-1. Fälligkeit für Lagerplatzrichtlinie-Bestandsentnahme
+1. *Status des Lagerplatzes an einem Lagerort* (Ab Version 10.0.29 ist diese Funktion standardmäßig aktiviert. Weitere Informationen finden Sie unter [Status des Lagerplatzes an einem Lagerort](warehouse-location-status.md)).
+1. *Fälligkeit für Lagerplatzrichtlinie-Bestandsentnahme*
 
 ## <a name="feature-requirements"></a>Funktionsanforderungen
 
@@ -50,7 +50,7 @@ Dieser Abschnitt enthält Beispiele zum Einrichten und Verwenden von FIFO- und L
 
 ### <a name="make-sample-data-available"></a>Beispieldaten zur Verfügung stellen
 
-Um diese Szenarien mithilfe der Beispieldatensätze und -werte, die hier angegeben sind, zu verarbeiten, müssen Sie ein System verwenden, auf dem die standardmäßigen [Demodaten](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) installiert sind. Außerdem müssen Sie die **USMF** juristische Person auswählen, bevor Sie beginnen.
+Um diese Szenarien mithilfe der Beispieldatensätze und -werte, die hier angegeben sind, zu verarbeiten, müssen Sie ein System verwenden, auf dem die standardmäßigen [Demodaten](../../fin-ops-core/fin-ops/get-started/demo-data.md) installiert sind. Außerdem müssen Sie die **USMF** juristische Person auswählen, bevor Sie beginnen.
 
 Sie können diese Szenarien auch als Anleitung für die Verwendung der Funktion für ein Produktionssystem verwenden. In diesem Fall müssen Sie jedoch für jede hier beschriebene Einstellung Ihre eigenen Werte einsetzen.
 

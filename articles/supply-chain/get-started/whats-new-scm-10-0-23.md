@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: ded645ebaea1230b68525c247ee91e3893211774
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 1b45cc2ba26f60ab444edca6c513c581e8332a2a
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124527"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219123"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Was ist neu oder geändert in Dynamics 365 Supply Chain Management 10.0.23 (Januar 2022)
 
@@ -31,7 +31,7 @@ In diesem Artikel werden die Funktionen aufgeführt, die in Microsoft Dynamics 3
 
 Die folgende Tabelle listet die Funktionen auf, die in dieser Version enthalten sind. Die Spalte *Funktion* bietet Links zum [Release-Plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features), wo Sie die offiziellen Release-Termine für jede Funktion sehen können. Die Spalte *Weitere Informationen* enthält weitere Informationen und/oder Links zur zugehörigen Dokumentation. Informationen zum Aktivieren einer Funktion finden Sie in der Spalte *Aktiviert von*. Weitere Informationen zur Funkions-Verwaltung finden Sie unter [Funktions-Verwaltung Übersicht](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Möglicherweise aktualisieren wir diesen Artikel, um Funktionen einzubeziehen, die es in den Build geschafft haben, nachdem dieser Artikel ursprünglich veröffentlicht wurde.
 
-| Funktionsbereich | Funktion | Mehr erfahren | Aktiviert von   |
+| Funktionsbereich | Funktion | Mehr erfahren | Aktiviert von |
 |---|---|---|---|
 | Globales Adressbuch | Definieren Sie in der Adresseinrichtung einen Standardstaat/eine Standardprovinz für jedes Land/jede Region | Sie können nun in der Adresseinrichtung für das globale Adressbuch für jedes Land/jede Region ein Standard-Bundesland/eine Standardprovinz definieren. Wenn ein Standardstaat/eine Standardprovinz festgelegt ist, wird dies der Standardwert, der in die Felder des Bundesstaats/der Provinz eingegeben wird, wenn Sie einen neuen Landkreis- oder Stadtdatensatz für dieses Land/diese Region erstellen. Siehe auch [Adresseinrichtung](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/supply-chain/toc.json) | Standardmäßig aktiviert. |
 | Bestand&nbsp;und&nbsp;Logistik | [Aufgaben in Mobile Warehouse Management-App pausieren](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/park-tasks-warehouse-management-mobile-app) | [Umleitungen für Schritte in den Menüpunkten des Mobilgeräts konfigurieren](../warehousing/warehouse-app-detours.md) | Funktionsverwaltung (*Umwege über die Warehouse Management-App*) |
@@ -55,7 +55,7 @@ Wenn Sie eine dieser Funktionen ein- oder ausschalten möchten, müssen Sie dies
 | Lager- und Lagerortverwaltung | (Russland) Übersetzungen in lokale Sprache in landes- oder regionsspezifischen Primärformularen in der Lagerverwaltung verwenden | Für russische Lokalisierungen von Supply Chain Management bietet diese Funktion die Verwendung von russischen Übersetzungen für Produkt-/Artikelnamen und Maßeinheiten in den folgenden russischspezifischen Lagerausdrucken: Inventurliste (INV-3), Inventurliste (INV-5) und Inventurliste (INV-6). |
 | Produktprogrammplanung | Azure Machine Learning Service für die Planung des Bedarfs | Diese Funktion ermöglicht es dem Azure Machine Learning Service, Bedarfsplanungen basierend auf historischen Daten zu generieren. Weitere Informationen finden Sie unter [Einrichtung der Bedarfsplanung](../master-planning/demand-forecasting-setup.md). |
 | Beschaffung | Aktualisierungsverlauf für Bestellung bereinigen | Mit dieser Funktion können Sie temporäre historische Aufzeichnungen im Zusammenhang mit Bestellaktualisierungen bereinigen. Es fügt eine neue Schaltfläche namens **Update-Verlauf der Käufe bereinigen** zum Aktionsbereich auf der Seite **Alle Bestellungen** hinzu. Diese Funktion ist standardmäßig aktiviert. |
-| Produktionssteuerung | (Vorschau) Automatische Kommissionierung von für den Lagerort aktivierten Materialien für automatisch gebuchte Kommissionierlisten | Mit dieser Funktion können Sie Lagerungsdimensionen für automatisch gebuchte, abgeleitete und zurückgelieferte Kommissionierlistenerfassungen automatisch kommissionieren und abschließen. |
+| Produktionssteuerung | Automatische Kommissionierung von für den Lagerort aktivierten Materialien für automatisch gebuchte Kommissionierlisten | Mit dieser Funktion können Sie Lagerungsdimensionen für automatisch gebuchte, abgeleitete und zurückgelieferte Kommissionierlistenerfassungen automatisch kommissionieren und abschließen. |
 | Produktionssteuerung | Validieren Sie das Verfallsdatum von Rohstoffen gegen das geplante Verbrauchsdatum | Diese Funktion ändert, wie das Verfallsdatum von Chargen validiert wird, wenn eine Charge von Rohmaterial zur Verwendung während der Produktion reserviert wird. Wenn diese Funktion aktiviert ist, wird das Ablaufdatum der Charge gegen das geplante Verbrauchsdatum (das Rohmaterialdatum) validiert, das in der Produktionsstücklistenposition oder Chargenauftragsformelposition festgelegt ist. Wenn diese Funktion deaktiviert ist, wird das Ablaufdatum der Charge mit dem geplanten Lieferdatum des Produktions- oder Chargenauftrags (wie zuvor) verglichen. |
 | Vertrieb und Marketing | Aktualisierungsverlauf für Verkauf basierend auf Alter bereinigen | Mit dieser Funktion können Sie das maximale Alter von Datensätzen festlegen, die aufbewahrt werden sollen, wenn die periodische Aufgabe **Bereinigung der Verkaufsaktualisierungshistorie** ausgeführt wird. Ältere Datensätze werden gelöscht. Dies ist nützlich, wenn Sie die regelmäßige Ausführung der Aufgabe festlegen, da das Alter immer relativ zum Ausführungsdatum der Aufgabe berechnet wird. Ohne diese Funktion können Sie nur ein bestimmtes Datum für die ältesten Aufzeichnungen festlegen, die aufbewahrt werden sollen. Weitere Informationen finden Sie unter [Datenbereinigung der Verkaufshistorie planen](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Vertrieb und Marketing | Berichtsleistung von „Top 100“-Kunden verbessern | Diese Funktion verbessert die Leistung der **Top 100**-Kunden berichten, indem der Bericht immer für alle Kunden ausgeführt wird (was der beabsichtigte Verwendungszweck ist), anstatt benutzerdefinierte Abfragen zuzulassen. Wenn diese Funktion aktiviert ist, werden alle **Einzuschließende Aufzeichnungen**-Einstellungen sind im Berichtsdialog **Top 100** deaktiviert. |

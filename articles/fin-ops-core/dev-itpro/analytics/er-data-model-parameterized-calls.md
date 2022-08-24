@@ -1,26 +1,26 @@
 ---
 title: Unterstützung parametrisierter Aufrufe von ER-Datenmodellen
 description: In diesem Artikel wird erläutert, wie parametrisierte Aufrufe von Datenmodellen für die elektronische Berichterstellung (EB) implementiert werden.
-author: NickSelin
+author: kfend
 ms.date: 03/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula, ERDataModelDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 65ac81e9aa25b286640fd526e71b55de3b0695ca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.form: ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula, ERDataModelDesigner
+ms.openlocfilehash: 5be189c19d963991ec012de189bbf7b721b88fef
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884256"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9275987"
 ---
 # <a name="support-parameterized-calls-of-er-data-models"></a>Unterstützung parametrisierter Aufrufe von ER-Datenmodellen
 
@@ -278,7 +278,7 @@ Sie können die Änderungen implementieren, wenn ein laufendes Format im Speiche
 
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Elektronische Berichterstellung** \> **Konfigurationen**.
 2. Wählen Sie auf der Seite **Konfigurationen** in der Konfigurationsstruktur im linken Bereich **Beispiel-Überwachungsmodell** aus.
-3. Wählen Sie im Inforegister **Versionen** die Version **2** mit dem Status **[Entwurf](general-electronic-reporting.md#component-versioning)** aus.
+3. Wählen Sie im Inforegister **Versionen** die Version **2** mit dem Status **Entwurf** aus.
 4. Wählen Sie die Option **Konfigurationskomponenten** Inforegister.
 5. Wählen Sie **Designer**, um das Datenmodell für die Bearbeitung zu öffnen.
 6. Auf der **Datenmodell**-Seite vergewissern Sie sich, dass das `Root`-Feld ausgewählt ist und wählen dann **Neu** aus.

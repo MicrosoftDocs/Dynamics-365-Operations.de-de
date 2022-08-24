@@ -1,24 +1,26 @@
 ---
 title: EB-Konfigurationen zur Anfertigung von Berichten im Word-Format entwerfen
 description: In diesem Artikel wird erläutert, wie Benutzer ein neues EB-Format (elektronische Berichterstellung) konfigurieren können, um Berichte als Microsoft Word-Dokumente zu generieren.
-author: NickSelin
+author: kfend
 ms.date: 12/17/2020
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: caf87659ca4ceb7b25aa43e09893d2a0ef014884
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form:
+- ERWorkspace, ERSolutionTable, EROperationDesigner
+- LedgerJournalTable, LedgerJournalTransVendPaym
+ms.openlocfilehash: b56b328aa2a2b53dc177a02a4d453e5dbcb8340c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893011"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273337"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Eine neue EB-Konfiguration zum Generieren von Berichten im Word-Format erstellen
 
@@ -35,7 +37,7 @@ Um ein Word-Dokument als Vorlage für Berichte im Word-Format zu verwenden, kön
 
 ![Eine Formatkonfiguration auf der Konfigurationsseite erstellen.](./media/er-design-configuration-word-image2.gif)
 
-Die EB-Formatkomponente der Lösung muss das Formatelement **Excel\\Datei** enthalten, und dieses Formatelement muss mit dem Word-Dokument verknüpft sein, das zur Laufzeit als Vorlage für generierte Berichte verwendet wird. Um die EB-Formatkomponente zu konfigurieren, müssen Sie die [Entwurfs](general-electronic-reporting.md#component-versioning)version der erstellten EB-Konfiguration im EB-Format-Designer öffnen. Dann fügen Sie das Element **Excel\\Datei** hinzu, hängen Ihre Word-Vorlage an das bearbeitbare EB-Format an, und verknüpfen diese Vorlage mit dem Element **Excel\\Datei**, das Sie hinzugefügt haben.
+Die EB-Formatkomponente der Lösung muss das Formatelement **Excel\\Datei** enthalten, und dieses Formatelement muss mit dem Word-Dokument verknüpft sein, das zur Laufzeit als Vorlage für generierte Berichte verwendet wird. Um die EB-Formatkomponente zu konfigurieren, müssen Sie die Entwurfsversion der erstellten EB-Konfiguration im EB-Format-Designer öffnen. Dann fügen Sie das Element **Excel\\Datei** hinzu, hängen Ihre Word-Vorlage an das bearbeitbare EB-Format an, und verknüpfen diese Vorlage mit dem Element **Excel\\Datei**, das Sie hinzugefügt haben.
 
 > [!NOTE]
 > Wenn Sie eine Vorlage manuell anhängen, müssen Sie einen [Dokumenttyp](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) verwenden, der zuvor in den EB-Parametern zum Speichern von Vorlagen von EB-Formaten [konfiguriert](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) wurde.

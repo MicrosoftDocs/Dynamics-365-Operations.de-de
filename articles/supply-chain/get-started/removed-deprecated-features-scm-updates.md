@@ -2,7 +2,7 @@
 title: Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management
 description: In diesem Artikel werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen in Dynamics 365 Supply Chain Management.
 author: kamaybac
-ms.date: 04/27/2021
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7c7dd90fea79ae83d238ed51b9ec1fc42e9e36b2
-ms.sourcegitcommit: f2501d93ffc1c7bf4e0daa78e63bc37528ef2358
+ms.openlocfilehash: f70d05f5663d8249b2435ad353421c278692a9ac
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "9171514"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218801"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management
 
@@ -33,6 +33,17 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 > [!NOTE]
 > Ausführliche Informationen über Objekte in Apps für Finanzen und Betrieb finden Sie in den [Technischen Referenzberichten](/dynamics/s-e/). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die in den einzelnen Versionen der Apps für Finanzen und Betrieb geändert oder entfernt wurden.
 
+## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10029-release"></a>Entfernte oder veraltete Funktionen in Supply Chain Management 10.0.29
+
+### <a name="stock-transfer-orders-that-have-tax-on-the-transfer-price"></a>Umlagerungsaufträge mit Steuer auf den Verrechnungspreis
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Grund für veralteten Zustand/Entfernung** | Die Funktion [Umlagerungsaufträge mit Steuer auf den Verrechnungspreis](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md) wird durch [Umlagerungsaufträge für Indien](../../finance/localizations/apac-ind-stock-transfer.md) ersetzt. |
+| **Ersetzt durch eine andere Funktion?**   | Ja, die Funktion [Umlagerungsaufträge mit Steuer auf den Verrechnungspreis](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md) wird durch [Umlagerungsaufträge für Indien](../../finance/localizations/apac-ind-stock-transfer.md) ersetzt. |
+| **Betroffene Produktbereiche** | Supply Chain Management - Bestand |
+| **Bereitstellungsoption** | Cloud und lokal |
+| **Status** | <p>Ist veraltet.  Die Funktion: *Umlagerungsaufträge, die Steuern auf den Transferpreis enthalten* wird nicht mehr mit Fehlerkorrekturen und Sicherheitskorrekturen unterstützt.</p><p>Ab April 2023 werden Kunden gebeten, die verbesserte Funktionalität *Umlagerungsaufträge für Indien* zu nutzen. Nach Oktober 2023 wird die Funktion *Umlagerungsaufträge, die Steuern auf den Transferpreis enthalten* nicht mehr verfügbar sein, und die Kunden werden gebeten, auf die verbesserte Funktionalität *Umlagerungsaufträge für Indien* umzusteigen.</p><p>Weitere Informationen finden Sie unter [Umlagerungsaufträge für Indien ](../../finance/localizations/apac-ind-stock-transfer.md).</p> |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10019-release"></a>Entfernte oder veraltete Funktionen in Supply Chain Management 10.0.19
 

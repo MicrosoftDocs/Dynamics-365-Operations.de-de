@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f5ece3672bba352e02808248c91366539423d682
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ddc22bdd223eff513ff571501c599712ac78a7da
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854296"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219906"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Verbessern der Leistung des Planungsmoduls
 
@@ -294,7 +294,9 @@ Eine Alternative zur Verwendung paralleler Arbeitsgänge besteht darin, die Paar
 
 ### <a name="route-with-quantity-of-resources-higher-than-1"></a>Arbeitsgang mit einer Ressourcenmenge von mehr als 1
 
-Wenn Sie die für einen Arbeitsgang erforderliche Ressourcenmenge auf mehr als eins festlegen, entspricht dies effektiv der Verwendung von primären/sekundären Arbeitsgängen, da mehrere parallele Einzelvorgänge an das Modul gesendet werden. In diesem Fall besteht jedoch keine Möglichkeit, bestimmte Ressourcenzuweisungen zu verwenden, da für eine höhere Menge als eins mehr als eine Ressource für den Einzelvorgang anwendbar sein muss.
+Wenn Sie die für einen Arbeitsgang erforderliche Ressourcenmenge höher als eins ist, entspricht das Ergebnis effektiv der Verwendung von primären/sekundären Arbeitsgängen, da mehrere parallele Einzelvorgänge an das Modul gesendet werden. In diesem Fall besteht jedoch keine Möglichkeit, bestimmte Ressourcenzuweisungen zu verwenden, da für eine höhere Menge als eins mehr als eine Ressource für den Einzelvorgang anwendbar sein muss.
+
+Ein sekundärer Arbeitsgang mit einer Ressourcenbelastungsmenge größer als eins bedeutet, dass die angegebene Menge an sekundären Ressourcen für jede Ressource des primären Arbeitsgangs benötigt wird. Wenn beispielsweise die Ressourcenmenge eines primären Arbeitsgangs auf zwei und die Ressourcenmenge seines sekundären Arbeitsgangs auf drei gesetzt ist, werden für den sekundären Arbeitsgang insgesamt sechs Ressourcen benötigt.
 
 ### <a name="excessive-use-of-finite-capacity"></a>Übermäßige Nutzung begrenzter Kapazität
 

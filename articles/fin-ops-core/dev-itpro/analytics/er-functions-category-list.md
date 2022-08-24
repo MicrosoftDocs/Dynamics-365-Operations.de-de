@@ -1,25 +1,25 @@
 ---
 title: Liste der EB-Funktionen in der Listenkategorie
 description: Dieser Artikel enthält Informationen zu den Listenfunktionen, die in der elektronischen Berichterstellung (EB) unterstützt werden.
-author: NickSelin
+author: kfend
 ms.date: 04/01/2020
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom: 58771
-ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b39da482578636d94faaa3117bd40a579f3ae636
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 58771
+ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
+ms.openlocfilehash: 6c28445f731393857cdb0c75c1244e557b5ff4a4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869054"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277691"
 ---
 # <a name="list-of-er-functions-in-the-list-category"></a>Liste der EB-Funktionen in der Listenkategorie
 
@@ -47,6 +47,7 @@ Mithilfe der Listenfunktionen für die elektronische Berichterstellung (EB) kön
 | [ListOfFields](er-functions-list-listoffields.md)         | Diese Funktion gibt den Wert *Datensatzliste* zurück, der basierend auf der Struktur des angegebenen Arguments des Typs *Aufzählung* oder *Container (Datensatz)* erstellt wird. |
 | [ListOfFirstItem](er-functions-list-listoffirstitem.md)   | Diese Funktion gibt den Wert *Datensatz* zurück, der nur aus dem ersten Datensatz der angegebenen Liste besteht.|
 | [OrderBy](er-functions-list-orderby.md)                   | Diese Funktion gibt die angegebene Liste mit dem Wert *Datensatzliste* zurück, nachdem sie nach den angegebenen Argumenten sortiert wurde. Diese Argumente können als Ausdrücke definiert werden. |
+| [Wiederholen](er-functions-list-repeat.md)                     | Diese Funktion erstellt einen Datensatz, der das Feld enthält, dessen Wert der angegebenen Eingabe entspricht. Es gibt dann eine neue *Datensatzliste* eines Datensatzes zurück, der eine bestimmte Anzahl von Male wiederholt wird. |
 | [Stornieren](er-functions-list-reverse.md)                   | Diese Funktion gibt die angegebene Liste mit dem Wert *Datensatzliste* in umgekehrter Sortierreihenfolge zurück. |
 | [Teilen](er-functions-list-split.md)                       | Diese Funktion teilt die angegebene Eingabezeichenfolge in Teilzeichenfolgen auf und gibt das Ergebnis als neuen Wert *Datensatzliste* zurück. |
 | [SplitList](er-functions-list-splitlist.md)               | Diese Funktion teilt die angegebene Liste in Unterlisten (oder Batches), die jeweils die angegebene Anzahl von Datensätzen enthalten. Sie gibt dann das Ergebnis als neuen Wert *Datensatzliste* zurück, der aus den Batches besteht. |

@@ -7,20 +7,20 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: asharchw
+ms.author: boycez
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: 01f10c348c61ffbcb30be26a57b3edd436aacc8f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: Retail
+ms.openlocfilehash: fc8c7dad0a7cb66ba7d6c6f527be84cfe74dee52
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850248"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9288324"
 ---
 # <a name="inventory-lookup-operation-in-pos"></a>Bestandssuchvorgänge in POS
 
@@ -70,7 +70,7 @@ Die folgenden Aktionen sind in der Leiste der POS-App verfügbar:
 - **Zur Transaktion hinzufügen** - Diese Aktion fügt das Produkt zum Warenkorb hinzu und leitet den Benutzer zur Transaktionsmaske weiter.
 
 > [!NOTE]
-> Die standortbasierte Sortierung, die in der Commerce-Version 10.0.17 eingeführt wurde, zeigt den aktuellen Lagerort ganz oben an. Für andere Lagerorte wird die Entfernung zwischen dem Lagerort und dem aktuellen Geschäft durch die Koordinaten (Breitengrad und Längengrad) bestimmt, die in der Commerce-Zentrale definiert sind. Für einen Lagerort wird die Standortinformation in der primären Adresse der operativen Einheit definiert, die mit dem Lagerort verbunden ist. Bei einem Lagerort, bei dem es sich nicht um eine Filiale handelt, werden die Standortinformationen in der Lagerortadresse festgelegt. Vor Version 10.0.17 zeigt die Listenansicht immer den aktuellen Lagerort oben an und sortiert andere Lagerorte alphabetisch.
+> Die standortbasierte Sortierung, die in der Commerce-Version 10.0.17 eingeführt wurde, zeigt den aktuellen Lagerort ganz oben an. Für andere Lagerorte wird die Entfernung zwischen dem Lagerort und dem aktuellen Geschäft durch die Koordinaten (Breitengrad und Längengrad) bestimmt, die in der Commerce headquarters definiert sind. Für einen Lagerort wird die Standortinformation in der primären Adresse der operativen Einheit definiert, die mit dem Lagerort verbunden ist. Bei einem Lagerort, bei dem es sich nicht um eine Filiale handelt, werden die Standortinformationen in der Lagerortadresse festgelegt. Vor Version 10.0.17 zeigt die Listenansicht immer den aktuellen Lagerort oben an und sortiert andere Lagerorte alphabetisch.
 >
 > Die Aktionen **Verfügbarkeit in Filiale anzeigen**, **Filialstandort anzeigen**, **Abholung im Shop** und **Produkt versenden** sind für Standorte, bei denen es sich nicht um eine Filiale handelt, nicht verfügbar.
 

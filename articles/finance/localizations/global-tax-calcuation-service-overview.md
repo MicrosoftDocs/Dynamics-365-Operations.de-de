@@ -1,24 +1,24 @@
 ---
 title: Übersicht über die Steuerberechnung
 description: In diesem Artikel werden der Gesamtumfang und die Funktionen der Steuerberechnung erläutert.
-author: wangchen
+author: EricWangChen
 ms.date: 03/02/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 817d7db5952f96fa741671166d88fffddaac84e9
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.search.form: TaxIntegrationTaxServiceParameters
+ms.openlocfilehash: c6dabb9d2aae6f1fc759c40f870c66304d7f7c8d
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9166838"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270664"
 ---
 # <a name="tax-calculation-overview"></a>Übersicht über die Steuerberechnung
 
@@ -54,10 +54,15 @@ Die Steuerberechnung wird in den folgenden Azure-Regionen bereitgestellt. Weiter
 
 - Asien-Pazifik
 - Australien
+- Brasilien
 - Kanada
 - Europa
+- Frankreich
+- Indien
 - Japan
+- Südafrika
 - Schweiz
+- Vereinigte Arabische Emirate
 - Vereinigtes Königreich
 - USA
 
@@ -149,11 +154,15 @@ Die folgenden Transaktionen werden in Version 10.0.28 unterstützt:
 - Kreditorzahlungserfassung
 - Debitorzahlungserfassung
 
+Die folgenden Transaktionen werden in Version 10.0.29 unterstützt: 
+
+- Periodische Erfassung
+
 ## <a name="supported-countriesregions"></a>Unterstützte Länder/Regionen
 
-Die Steuerberechnung kann für juristische Entitäten aktiviert werden. 
+Die Steuerberechnung kann mit den unterstützten Lokalisierungsfunktionen in den folgenden Ländern/Regionen für die Hauptadresse einer juristischen Person ausgeführt werden: 
 
-Die folgenden Länder/Regionen für die Hauptadresse einer juristischen Entität werden in Version 10.0.21 unterstützt:
+In Version 10.0.21 unterstützt:
 
 - Österreich
 - Belgien
@@ -176,7 +185,7 @@ Die folgenden Länder/Regionen für die Hauptadresse einer juristischen Entität
 - Vereinigtes Königreich
 - USA
 
-Die folgenden Länder/Regionen für die Hauptadresse einer juristischen Entität werden in Version 10.0.22 unterstützt:
+In Version 10.0.22 unterstützt:
 
 - Australien
 - Bahrain
@@ -191,22 +200,24 @@ Die folgenden Länder/Regionen für die Hauptadresse einer juristischen Entität
 - Südafrika
 - Vereinigte Arabische Emirate
 
-Die folgenden Länder/Regionen für die Hauptadresse einer juristischen Entität werden in Version 10.0.23 unterstützt:
+In Version 10.0.23 unterstützt:
 
 - Thailand
 - Japan
 - Malaysia
 - Singapur
 
-Die folgenden Länder/Regionen für die Hauptadresse einer juristischen Entität werden in Version 10.0.24 unterstützt:
+In Version 10.0.24 unterstützt:
 
 - Mexiko
 
-Die folgenden Länder/Regionen für die Hauptadresse einer juristischen Entität werden in Version 10.0.26 unterstützt:
+In Version 10.0.26 unterstützt:
 
 - China
 - Tschechische Republik
 - Spanien
+
+Für alle Länder/Regionen, die nicht von Microsoft lokalisiert wurden, kann die Steuerberechnung auch aktiviert und mit anderen globalen Funktionen ausgeführt werden.
 
 ## <a name="related-resources"></a>Zugehörige Ressourcen
 

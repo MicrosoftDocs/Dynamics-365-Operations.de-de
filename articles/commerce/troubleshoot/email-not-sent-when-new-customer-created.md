@@ -2,21 +2,21 @@
 title: Willkommens-E-Mail wird nicht gesendet, wenn neue Kunden erstellt werden
 description: Dieser Artikel enthält Hinweise zur Problembehandlung, die Ihnen helfen können, wenn beim Erstellen eines neuen Kunden in Microsoft Dynamics 365 Commerce keine Begrüßungs-E-Mail gesendet wird.
 author: gvrmohanreddy
-ms.date: 02/24/2022
+ms.date: 08/01/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-02-10
-ms.openlocfilehash: 8e95b33d4b8a9af13c613ab89dd33de6b4934694
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5aa7d864555f96194500989e2d7ad200d8892121
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853682"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219403"
 ---
-# <a name="welcome-email-is-not-sent-when-new-customers-are-created"></a>Willkommens-E-Mail wird nicht gesendet, wenn neue Kunden erstellt werden
+# <a name="welcome-email-isnt-sent-when-new-customers-are-created"></a>Willkommens-E-Mail wird nicht gesendet, wenn neue Kunden erstellt werden
 
 [!include [banner](../../includes/banner.md)]
 
@@ -28,13 +28,15 @@ Wenn ein neuer Kunde in der Commerce-Zentrale erstellt wird, wird keine Willkomm
 
 ## <a name="resolution"></a>Lösung
 
-### <a name="set-the-correct-email-id-value-for-the-customer-created-email-notification-type"></a>Legen Sie den korrekten Wert der E-Mail-ID für den vom Kunden erstellten E-Mail-Benachrichtigungstyp fest
+### <a name="associate-an-email-notification-profile-under-commerce-parameters"></a>Ein E-Mail-Benachrichtigungsprofil unter Handelsparameter zuordnen
 
-Um den korrekten **E-Mail-ID**-Wert für den E-Mail-Benachrichtigungstyp **Kunde erstellt** in der Zentrale festzulegen, folgen Sie diesen Schritten.
+1. Gehen Sie zu in Headquarters zu **Einzelhandel und Handel \> Headquarter-Einstellungen \> Parameter \> Handelsparameter \> Allgemein**.
+2. Wählen Sie in der Dropdownliste **E-Mail-Benachrichtigungsprofil** das E-Mail-Benachrichtigungsprofil aus, das eine Zuordnung zwischen dem vom Kunden erstellten Benachrichtigungstyp und einer vom Kunden erstellen E-Mail-Vorlage enthält.  
 
-1. Gehen Sie zu **Einzelhandel und Commerce \> Einrichtung des Hauptsitzes \> Commerce E-Mail-Benachrichtigungsprofil**.
-1. Wählen Sie im linken Navigationsbereich das E-Mail-Benachrichtigungsprofil.
-1. Legen Sie unter **Einstellungen für Einzelhandelsereignisbenachrichtigungen** für den E-Mail-Benachrichtigungstyp **Kunde erstellt** das Feld **E-Mail-ID** auf **NewCust** fest.
+> [!NOTE] 
+> Wenn Sie von Kunden erstellte Benachrichtigungen aktivieren, erhalten Kunden, die in allen Kanälen innerhalb der juristischen Person erstellt wurden, eine vom Kunden erstellte E-Mail. Derzeit können von Kunden erstellte Benachrichtigungen nicht auf einen einzelnen Kanal beschränkt werden.
+
+Weitere Informationen finden Sie unter [E-Mail-Vorlagen für Transaktionsereignisse erstellen](../email-templates-transactions.md). 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

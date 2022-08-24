@@ -6,22 +6,22 @@ ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: global
-ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 3024e832de5e6a60b49c5b0c8bfbe36b2c416379
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: Retail, eCommerce
+ms.search.form: ''
+ms.openlocfilehash: 26eb436d889ac81cde730daca9b44d1deeda6c74
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884576"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9282049"
 ---
 # <a name="enable-shop-similar-looks-recommendations"></a>Empfehlungen zu „Ähnliche Outfits kaufen“ aktivieren
 
@@ -40,7 +40,7 @@ Empfehlungen für „Produkte mit ähnlichem Aussehen kaufen“ sind sowohl in P
 - Ein Kunde sieht sich einen schwarz gestreiften Pullover an und erhält eine Empfehlung für einen ähnlichen Pullover in Rot. Der Kunde wählt das empfohlene Produkt anstelle des ursprünglich angezeigten Produkts aus und erhält dann Empfehlungen für ähnliche Produkte in Rot. 
 - Ein Kunde verwendet Empfehlungen für „Produkte mit ähnlichem Aussehen kaufen“, um passende Ohrringe für einen Ring zu finden, den der Kunde kaufen möchte.
 
-## <a name="enable-shop-similar-looks-recommendations-in-commerce-headquarters"></a>In der Commerce-Zentrale die Empfehlung „Produkte mit ähnlichem Aussehen kaufen“ aktivieren
+## <a name="enable-shop-similar-looks-recommendations-in-commerce-headquarters"></a>In der Commerce headquarters die Empfehlung „Produkte mit ähnlichem Aussehen kaufen“ aktivieren
 
 Produktempfehlungen werden nur für Commerce-Kunden unterstützt, die ihren Speicher zu Azure Data Lake Gen2 migriert haben.
 
@@ -48,10 +48,10 @@ Produktempfehlungen werden nur für Commerce-Kunden unterstützt, die ihren Spei
 
 Bevor Einzelhändler ihren Kunden Empfehlungen für „Produkte mit ähnlichem Aussehen kaufen“ zeigen können, sind zwei Schritte erforderlich:
 
-- [Produktempfehlungen aktivieren](enable-product-recommendations.md) in der Commerce-Zentrale.
+- [Produktempfehlungen aktivieren](enable-product-recommendations.md) in der Commerce headquarters.
 - Stellen Sie sicher, dass der Medienserver HTTPS-Aufrufe unterstützt.
 
-Damit das Empfehlungsmodul auf die Produktbilder zugreifen kann, müssen Einzelhändler die Produkt-URLs generieren. Folgen Sie diesen Schritten, um Produkt-URLs in der Commerce-Zentrale zu verarbeiten.
+Damit das Empfehlungsmodul auf die Produktbilder zugreifen kann, müssen Einzelhändler die Produkt-URLs generieren. Folgen Sie diesen Schritten, um Produkt-URLs in der Commerce headquarters zu verarbeiten.
 
 1. Wechseln Sie zu **Produktbilder**.
 1. Wählen Sie im Aktivitätsbereich **Medienvorlage definieren** aus.
@@ -60,13 +60,13 @@ Damit das Empfehlungsmodul auf die Produktbilder zugreifen kann, müssen Einzelh
 > [!NOTE]
 > Wenn Sie die Empfehlungsfunktion „Produkte mit ähnlichem Aussehen kaufen“ aktivieren, beginnt der Prozess zum Generieren von Produktempfehlungslisten. Es kann bis zu einem Tag dauern, bis diese Listen online und an den POS-Terminals verfügbar und sichtbar sind.
 
-Führen Sie die folgenden Schritte aus, um die Empfehlungsfunktion „Produkte mit ähnlichem Aussehen kaufen“ in der Commerce-Zentrale zu aktivieren.
+Führen Sie die folgenden Schritte aus, um die Empfehlungsfunktion „Produkte mit ähnlichem Aussehen kaufen“ in der Commerce headquarters zu aktivieren.
 
 1. Navigieren Sie zu **Funktionsverwaltung**.
 1. Suchen Sie in der Liste der verfügbaren Funktionen **Produkte mit ähnlichem Aussehen kaufen** und wählen Sie es aus.
 1. Wählen Sie im rechten Bereich aus **Aktivieren** aus, um den Dienst einzuschalten.
 
-Die folgende Abbildung zeigt die Funktion **Produkte mit ähnlichem Aussehen kaufen** auf der Seite **Funktionsverwaltung** in der Commerce-Zentrale.
+Die folgende Abbildung zeigt die Funktion **Produkte mit ähnlichem Aussehen kaufen** auf der Seite **Funktionsverwaltung** in der Commerce headquarters.
 
 ![Die Funktion „Produkte mit ähnlichem Aussehen kaufen“ auf der Seite Funktionsverwaltung in der Commerce-Zentralverwaltung.](./media/enableshopsimilarlooks.png)
 
@@ -77,7 +77,7 @@ Nach Abschluss der vorhergehenden Aufgaben werden POS-Terminals automatisch um k
 
 ## <a name="add-a-shop-similar-looks-button-to-product-details-pages-by-using-commerce-site-builder"></a>Mithilfe des Commerce Site Builder eine Schaltfläche mit ähnlichem Aussehen zu den Produktdetailseiten hinzufügen
 
-Nachdem Sie die Empfehlungsfunktion „Produkte mit ähnlichem Aussehen kaufen“ in der Commerce-Zentrale aktiviert haben, können Einzelhändler mit einer Option im Commerce Site Builder eine Schaltfläche **Produkte mit ähnlichem Aussehen kaufen** auf einer beliebigen Produktdetailseite (PDP) zum Kauffeld hinzufügen. Ein Kunde, der diese Schaltfläche auswählt, wird zu einer speziellen Seite „Produkte mit ähnlichem Aussehen kaufen“ weitergeleitet, auf der visuell ähnliche Produkte angezeigt werden. Dort kann der Kunde Auswahlen verwenden, um die Produkte weiter zu filtern.
+Nachdem Sie die Empfehlungsfunktion „Produkte mit ähnlichem Aussehen kaufen“ in der Commerce headquarters aktiviert haben, können Einzelhändler mit einer Option im Commerce Site Builder eine Schaltfläche **Produkte mit ähnlichem Aussehen kaufen** auf einer beliebigen Produktdetailseite (PDP) zum Kauffeld hinzufügen. Ein Kunde, der diese Schaltfläche auswählt, wird zu einer speziellen Seite „Produkte mit ähnlichem Aussehen kaufen“ weitergeleitet, auf der visuell ähnliche Produkte angezeigt werden. Dort kann der Kunde Auswahlen verwenden, um die Produkte weiter zu filtern.
 
 Gehen Sie folgendermaßen vor, um eine Schaltfläche **Produkte mit ähnlichem Aussehen kaufen** zu einem PDP mithilfe des Commerce Site Builder hinzuzufügen.
 

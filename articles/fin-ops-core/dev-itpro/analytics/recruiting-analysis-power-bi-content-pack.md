@@ -7,21 +7,20 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom:
-- "263934"
+ms.custom: 263934
 ms.assetid: 38e6827b-0819-473c-bc47-821a1ec482b8
 ms.search.form: HcmRecruitmentWorkspace
-ms.openlocfilehash: 3bce9b165623ed415a0902d3f369a5deef56e8b6
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: 412a1225544bb73649c9f0e703ec7b9a0d2613e0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9205791"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276595"
 ---
 # <a name="recruiting-power-bi-content"></a>Rekrutierungs-Power BI-Inhalt
 
@@ -40,7 +39,7 @@ Der Arbeitsbereich **Personalbeschaffungsverwaltung** enthält eine Registerkart
 | Überblick über die Personalbeschaffung | Zusammenfassung der anderen Berichte |
 | Bewerber-Analyse   | Gesamtzahl der Bewerber; Bewerber nach Stelle, Bewerber nach Quelle, weibliche oder männliche Bewerber und Bewerber nach Standort. |
 | Bewerberstatus     | Bewerber nach Typ und Status und Bewerberstatus |
-| Rekrutierungsanalyse  | Nettoanstellungsrate, durchschnittliche Anstellungen pro Tag, Prozentsatz nicht erfolgreiche Rekrutierungen,  Rekrutierungskosten, Anzahl Personalbeschaffungsprojekte, Rekrutierungen angewendet und Bewerber versus offene Stellen nach Personalbeschaffungsprojekt. |
+| Rekrutierungsanalyse  | Nettoanstellungsrate, durchschnittliche Anstellungen pro Tag, Prozentsatz nicht erfolgreiche Rekrutierungen, Rekrutierungskosten, Anzahl Personalbeschaffungsprojekte, Rekrutierungen angewendet und Bewerber versus offene Stellen nach Personalbeschaffungsprojekt. |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
 Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und an das Dashboard geheftet werden. Weitere Informationen dazu, wie Sie in Power BI filtern und anheften, finden Sie unter [Erstellen und Konfigurieren eines Dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).

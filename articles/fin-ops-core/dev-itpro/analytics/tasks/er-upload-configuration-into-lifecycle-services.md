@@ -1,24 +1,24 @@
 ---
 title: Upload einer Konfiguration nach Lifecycle Services
 description: Dieser Artikel zeigt, wie Sie eine neue Konfiguration zur elektronischen Berichterstellung (EB) erstellen und in Microsoft Dynamics Lifecycle Services (LCS) hochladen.
-author: NickSelin
+author: kfend
 ms.date: 06/17/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, ERDataModelDesigner, ERDataModelContentsItemCreationDialog, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b2b84fc3167b3edaf6b99fa8bb0efd373c7f57c3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, ERDataModelDesigner, ERDataModelContentsItemCreationDialog, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport
+ms.openlocfilehash: 28ad20956b4b621abdb74332187d8601c10ac164
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885513"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9290063"
 ---
 # <a name="upload-a-configuration-into-lifecycle-services"></a>Upload einer Konfiguration nach Lifecycle Services
 

@@ -1,25 +1,25 @@
 ---
 title: Halbjährliche Abschreibung auf sonstige Anschaffungen für Österreich
 description: Dieser Artikel enthält Informationen zur Abschreibung sonstiger Anschaffungen, wenn die Halbjahreskonvention für die Abschreibung von Anlagevermögen verwendet wird.
-author: ShylaThompson
+author: AdamTrukawka
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetBook, AssetDepreciationProfile, AssetParameters
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 272663
 ms.search.region: Austria
-ms.author: sndray
-ms.dyn365.ops.version: Version 1611
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 3ef421d8cecb050471faab670c5c6862edc2af83
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.dyn365.ops.version: Version 1611
+ms.custom: 272663
+ms.search.form: AssetBook, AssetDepreciationProfile, AssetParameters
+ms.openlocfilehash: 570d2a88b814c7c09df26efaeb058fd9e830e4b1
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902361"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9286655"
 ---
 # <a name="half-year-depreciation-on-additional-acquisitions-for-austria"></a>Halbjährliche Abschreibung auf sonstige Anschaffungen für Österreich
 

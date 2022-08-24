@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 183d0f13a17ffac723fac6c4801bd187dd54e976
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2cb3ca03e0d9d7e5423a405f1eb0372e1c19588d
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888853"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227984"
 ---
 # <a name="configure-future-life-events"></a>Zukünftige Lebensereignisse konfigurieren
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Sie können in Dynamics 365 Human Resources zukünftige Lebensereignisse planen.
 
@@ -43,7 +44,8 @@ Sie können in Dynamics 365 Human Resources zukünftige Lebensereignisse planen.
    | Status | Gibt an, ob das Lebensereignis verarbeitet wurde. |
    | Position | Die Positionsnummer des zukünftigen Lebensereignisses. |
 
-4. Wählen Sie **Speichern**. 
+4. Wählen Sie **Speichern** aus. 
 
+Sie können zukünftige Lebensereignisse löschen. Wenn ein verarbeitetes zukünftiges Lebensereignis gelöscht wird, wird auch der zukünftige Datensatz gelöscht. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

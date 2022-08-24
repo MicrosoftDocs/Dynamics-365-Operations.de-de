@@ -1,26 +1,26 @@
 ---
 title: Eine Dynamics 365 Commerce-Sandbox-Umgebung bereitstellen
 description: In diesem Artikel wird erläutert, wie Sie eine Microsoft Dynamics 365 Commerce Sandbox-Umgebung für Demo- oder Sandbox-Nutzung mit integrierten Demodaten bereitstellen.
-author: psimolin
+author: josaw1
 ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: ''
-ms.author: psimolin
+ms.author: josaw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3ada30fc9d86d236b71d018ef77f2ae8573f2285
-ms.sourcegitcommit: 252cb41c3029b623354698463f7b44a29fd9f184
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: ''
+ms.openlocfilehash: 1fc50f98055f1df72d255a5be6e863570564b183
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9013133"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283640"
 ---
 # <a name="provision-a-dynamics-365-commerce-sandbox-environment"></a>Eine Dynamics 365 Commerce-Sandbox-Umgebung bereitstellen
 

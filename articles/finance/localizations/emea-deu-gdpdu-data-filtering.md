@@ -1,21 +1,21 @@
 ---
 title: Hinzufügen von Filtern zu einer Audit-Datei-Konfiguration
 description: In diesem Artikel wird erklärt, wie Sie einen Datenfilter in der deutschen Protokolldatei hinzufügen können.
-author: liza-golub
+author: AdamTrukawka
 ms.date: 02/09/2021
 ms.topic: article
 ms.technology: ''
-ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Austria, Germany
-ms.author: elgolu
-ms.openlocfilehash: adc20191c83eec50b81e036cabee354e965b4b3b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.author: atrukawk
+ms.search.form: ERWorkspace
+ms.openlocfilehash: 0d1bbafc822e9da2f14673d2fe24b8c5dc263d4f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874380"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9287844"
 ---
 # <a name="add-filters-to-an-audit-file-configuration"></a>Hinzufügen von Filtern zu einer Audit-Datei-Konfiguration
 

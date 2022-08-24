@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 833d6cc131b3fb45d273b60ecf6778b2be31fc8a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 87be947c829641ba809e6850ccf41ea6d142161d
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687106"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228959"
 ---
 # <a name="plan-type-overview"></a>Übersicht über den Plantyp
 
@@ -27,6 +27,8 @@ ms.locfileid: "8687106"
 [!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+[!include [banner](../includes/preview-banner.md)]
 
 Ein Plantyp ist eine übergeordnete Gruppierung bestimmter Vorteilstypen. Jeder Plantyp verfügt über einen Plantypcode, der Regeln für den Plantyp festlegt. Zum Beispiel würde der Plantyp **Leben – Basis** den Plantypcode **Leben** haben, da er eine Art von Lebensversicherung ist und den Regeln entsprechen muss, die für den **Lebens** plantypcode festgelegt wurden. Ein anderer Plantyp könnte **Zusätzliches Leben** sein. Dieser Plantyp hat auch den **Leben** Typenplancode.
 
@@ -67,14 +69,14 @@ Ein Plantyp kann Abdeckungsoptionen definieren. Die Deckungsoptionen werden auf 
    | --- | --- |
    | **Typ des Plans** | Der Plantyp, für den Lebensereignisoptionen konfiguriert werden sollen. |
    | **Kennung des Lebensereignistyps** | Die Kennungs des Lebensereignistyps. |
-   | **Stornierung zulassen** | Gibt an, ob ein Mitarbeiter während des Lebensereignisses einen Vorteilsplan stornieren kann. |
    | **Abdeckungsoption ändern** | Gibt an, ob ein Mitarbeiter während des Lebensereignisses die Abdeckungsoptionen ändern kann. |
    | **In neuen Plan ändern** | Gibt an, ob ein Mitarbeiter während des Lebensereignisses Pläne ändern kann. |
-   | **Plan automatisch stornieren** | Gibt an, ob der Plan während des Lebensereignisses automatisch storniert werden soll. |
    | **Berechtigungsprüfung automatisch erneut öffnen** | Gibt an, ob die Berechtigungsprüfung für die Vergütungsregistrierung während des Lebensereignisses automatisch erneut geöffnet werden soll. |
-   | **Berichtsfenster** | Gibt das Berichtsfenster (in Tagen) des Lebensereignisses an. **Hinweis**: Wenn Sie keinen Betrag eingeben, geht das System davon aus, dass das Berichtsfenster null ist und verarbeitet das Lebensereignis nicht. |
+   | **Lebensereignisregistrierungszeitraum** | Gibt das Berichtsfenster (in Tagen) des Lebensereignisses an. **Hinweis**: Wenn Sie keinen Betrag eingeben, geht das System davon aus, dass das Berichtsfenster null ist und verarbeitet das Lebensereignis nicht. |
+   | **Kann nur von Administratoren bearbeitet werden** | Gibt an, ob Administratoren einen Plan während eines Lebensereignisses beenden oder bearbeiten können. Der Mitarbeiter kann im Arbeitsbereich **Mitarbeiter-Self-Service** keine Änderungen vornehmen. |
+   | **Plan automatisch stornieren** | Gibt an, ob der Plan während eines Lebensereignisses automatisch storniert werden soll. Nachdem die Lebensereignisänderungen verarbeitet wurden, behält die Option **Plan automatisch beenden** die Planauswahl bei. Nur der Status **Bestätigt** oder **Ausgecheckt** wird entfernt. Der Plan bleibt ausgewählt. Daher verlieren Mitarbeiter, die während des Registrierungszeitraums für Lebensereignisse keine Planauswahl treffen, die Planauswahl nicht. 
 
-5. Wählen Sie **Speichern**. 
+5. Wählen Sie **Speichern** aus. 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

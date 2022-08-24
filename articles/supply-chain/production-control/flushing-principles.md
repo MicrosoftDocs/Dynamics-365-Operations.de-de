@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 357ce65792ceef37abda523e7693069f1bc1ab43
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 89fd38ea6d2c1635e9d8974ab99c2e4cdae4d6be
+ms.sourcegitcommit: 8d072505f66f507aafbaae65bedf3b530eb6cb7b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065553"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9266427"
 ---
 # <a name="flushing-principles"></a>Bezugsprinzipien
 
@@ -56,7 +56,10 @@ Das manuelle Bezugsprinzip zeigt an, dass die Registrierung des Materialverbrauc
 Das Bezugsprinzip Start zeigt an, dass Material automatisch verbraucht wird, wenn der Produktionsauftrag gestartet wird. Die Menge des verbrauchten Materials ist proportional zu der gestarteten Menge. Wenn das Bezugsprinzip Start zusammen mit dem Herstellungsausführungssystem verwendet wird, kann es auch für einen Bezug von Materialien verwendet werden, wenn eine Operation oder ein Verarbeitungsauftrag gestartet werden. Dieses Prinzip ist beispielsweise relevant, wenn eine geringe Verbrauchsvarianz vorliegt, wenn die Materialien einen geringen Wert haben, wenn keine Nachverfolgung erforderlich ist, oder wenn die Operationen eine kurze Laufzeit aufweisen. 
 
 ### <a name="finish"></a>Fertig stellen
-Das Bezugsprinzip Fertigstellung zeigt an, dass Material automatisch verbraucht wird, wenn der Produktionsauftrag als fertiggestellt gemeldet wird, oder wenn eine Operation, die für den Verbrauch der Materialien eingerichtet ist, als abgeschlossen registriert wird. Die Menge des verbrauchten Materials ist proportional zu der als fertiggestellt gemeldeten Menge. Wenn das Bezugsprinzip Fertigstellung zusammen mit dem Herstellungsausführungssystem verwendet wird, kann es auch für einen Bezug von Materialien verwendet werden, wenn eine Operation oder ein Verarbeitungsauftrag abgeschlossen werden. Dieses Prinzip ist in denselben Situationen relevant wie das Prinzip Start. Das Prinzip Fertigstellung ist jedoch für Operationen vorgesehen, die eine längere Laufzeit haben, und die Materialien nicht auf RIF gesetzt werden sollen, bevor die Operation abgeschlossen ist. 
+Das Bezugsprinzip Fertigstellung zeigt an, dass Material automatisch verbraucht wird, wenn der Produktionsauftrag als fertiggestellt gemeldet wird, oder wenn eine Operation, die für den Verbrauch der Materialien eingerichtet ist, als abgeschlossen registriert wird. Die Menge des verbrauchten Materials ist proportional zu der als fertiggestellt gemeldeten Menge. Wenn das Bezugsprinzip Fertigstellung zusammen mit dem Herstellungsausführungssystem verwendet wird, kann es auch für einen Bezug von Materialien verwendet werden, wenn eine Operation oder ein Verarbeitungsauftrag abgeschlossen werden. Dieses Prinzip ist in denselben Situationen relevant wie das Prinzip Start. Das Prinzip Fertigstellung ist jedoch für Operationen vorgesehen, die eine längere Laufzeit haben, und die Materialien nicht auf RIF gesetzt werden sollen, bevor die Operation abgeschlossen ist.
+
+> [!NOTE]
+> Sie können „Prinzip für automatischen Artikelverbrauch beenden“ nicht zusammen mit Planungsartikeln verwenden. Stattdessen sollten Sie „Prinzip für automatischen Artikelverbrauch starten“ verwenden. Geplante Artikel haben den Produktionstyp *Planungsartikel* und nur Co-Produkte und Nebenprodukte für Chargenaufträge, die für geplante Artikel erstellt wurden, als beendet gekennzeichnet werden.
 
 ### <a name="available-at-location"></a>Am Lagerplatz verfügbar
 Das Bezugsprinzip Am Lagerplatz verfügbar zeigt an, dass das Material automatisch verbraucht wird, wenn es als für die Produktion entnommen registriert wird. Das Material wird als vom Standort entnommen registriert, wenn die Arbeit für die Rohmaterialentnahme abgeschlossen ist, oder wenn das Material am Produktionseingangsstandort zur Verfügung steht und die Materialposition für das Lager freigegeben wird. Die Entnahmeliste, die während des Prozesses erzeugt wird, wird in einem Chargenauftrag gebucht. Dieses Prinzip ist beispielsweise relevant, wenn Sie sehr viele Entnahmeaktivitäten für einen Produktionsauftrag haben. In diesem Fall müssen Sie die Entnahmeliste nicht manuell aktualisieren, und Sie können eine aktuelle Ansicht des RIF-Saldos erhalten.

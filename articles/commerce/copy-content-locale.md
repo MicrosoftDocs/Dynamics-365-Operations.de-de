@@ -1,20 +1,20 @@
 ---
 title: Kopieren Sie den Inhalt in ein anderes Gebietsschema
 description: Dieser Artikel beschreibt, wie Sie in Microsoft Dynamics 365 Commerce bestehende Inhalte innerhalb einer Website in ein anderes Gebietsschema kopieren können.
-author: psimolin
+author: josaw1
 ms.date: 07/06/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: bcfa3c7cb2ea8018422803d85df6b6761b8d1145
-ms.sourcegitcommit: d719d0a549aecac231fad0abb42250eab9dd0ded
+ms.openlocfilehash: 6afa871048bde22133ae083b8d56b6e99e49c401
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "9126450"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269260"
 ---
 # <a name="copy-content-to-another-locale"></a>Kopieren Sie den Inhalt in ein anderes Gebietsschema
 

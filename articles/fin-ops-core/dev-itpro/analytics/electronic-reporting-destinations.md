@@ -1,26 +1,26 @@
 ---
 title: Zielorte für elektronische Berichterstellung (ER)
 description: Dieser Artikel enthält Informationen zur Verwaltung von EB-Zielen (Elektronische Berichterstellung), zu den unterstützten Zieltypen und zu Sicherheitsaspekten.
-author: nselin
+author: kfend
 ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: DocuType, ERSolutionTable
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
-ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.region: Global
-ms.author: mrolecki
+ms.author: filatovm
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: bc8ef4a5299e6daba79702fadd37284f752a54a7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 97423
+ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
+ms.search.form: DocuType, ERSolutionTable
+ms.openlocfilehash: 1718b9e32c1e9f34d38479b74d59af6233f82a8c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851076"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281966"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Zielorte für elektronische Berichterstellung (ER)
 
@@ -118,7 +118,7 @@ Wenn Sie Dateiziele für ein ausgewähltes Format konfigurieren, konfigurieren S
 
 [![Konfigurationslink.](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
 
-Zur gleichen Zeit haben Sie möglicherweise mehrere [Versionen](general-electronic-reporting.md#component-versioning) des Formats, das in die aktuelle Finance-Instanz importiert wurde. Sie können diese anzeigen, wenn Sie den Link **Konfiguration** auswählen, der angeboten wird, wenn Sie das Feld **Referenz** auswählen.
+Zur gleichen Zeit haben Sie möglicherweise mehrere Versionen des Formats, das in die aktuelle Finance-Instanz importiert wurde. Sie können diese anzeigen, wenn Sie den Link **Konfiguration** auswählen, der angeboten wird, wenn Sie das Feld **Referenz** auswählen.
 
 [![Konfigurationsversionen.](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
 
@@ -164,7 +164,7 @@ Um die PDF-Konvertierungsoption in der aktuellen Finance-Instanz verfügbar zu m
 
 ### <a name="applicability"></a>Anwendbarkeit
 
-In Versionen von Finance **vor der Version 10.0.18** kann die PDF-Konvertierungsoption nur für Komponenten **Excel \\ Datei** aktiviert werden, die zum Generieren der Ausgabe in Office-Format (Excel oder Word)verwendet werden. Wenn diese Option aktiviert ist, wird die im Office-Format generierte Ausgabe automatisch in PDF-Format konvertiert. In **Version 10.0.18 und höher** können Sie diese Option jedoch auch für Komponenten des Typs **Allgemein\\Datei** aktivieren.
+In Versionen von Finance **vor der Version 10.0.18** kann die PDF-Konvertierungsoption nur für Komponenten **Excel\\Datei** aktiviert werden, die zum Generieren der Ausgabe in Office-Format (Excel oder Word)verwendet werden. Wenn diese Option aktiviert ist, wird die im Office-Format generierte Ausgabe automatisch in PDF-Format konvertiert. In **Version 10.0.18 und höher** können Sie diese Option jedoch auch für Komponenten des Typs **Allgemein\\Datei** aktivieren.
 
 > [!NOTE]
 > Beachten Sie die Warnmeldung, die Sie erhalten, wenn Sie die PDF-Konvertierungsoption für eine ER-Komponente des Typs **Allgemein\\Datei** aktivieren. Diese Meldung informiert Sie darüber, dass zur Entwurfszeit nicht garantiert werden kann, dass die ausgewählte Dateikomponente den Inhalt im PDF-Format oder den PDF-konvertierbaren Inhalt zur Laufzeit verfügbar macht. Daher sollten Sie die Option nur aktivieren, wenn Sie sicher sind, dass die ausgewählte Dateikomponente so konfiguriert wurde, dass der Inhalt im PDF-Format oder der PDF-konvertierbare Inhalt zur Laufzeit verfügbar gemacht wird.
@@ -180,6 +180,16 @@ Das erstellte PDF ist auf maximal 300 Seiten beschränkt.
 Ab Finance **Version 10.0.9** wird im PDF-Dokument, das aus einer Excel-Ausgabe erstellt wird, nur die Querformat-Seitenausrichtung unterstützt. Ab Finance **Version 10.0.10** können Sie im PDF-Dokument, das aus einer Excel-Ausgabe erstellt wird, [die Seitenausrichtung angeben](#SelectPdfPageOrientation), während Sie ein ER-Ziel konfigurieren.
 
 Für die Konvertierung einer Ausgabe, die keine eingebetteten Schriftarten enthält, werden nur die allgemeinen Systemschriftarten des Windows-Betriebssystems verwendet.
+
+### <a name="resources"></a>Ressourcen
+
+Vor der Finance-Version 10.0.29 konnte die PDF-Konvertierung nur außerhalb der aktuellen Finance-Instanz durchgeführt werden. Eine generierte Datei wurde von Finance an den Konvertierungsdienst gesendet und dieser Dienst gab dann das konvertierte Dokument zurück. Ab Version **10.0.29** können Sie nicht nur die Funktion **Ausgehende Dokumente der elektronischen Berichterstattung aus Microsoft Office-Formaten in PDF** aktivieren, sondern auch die Funktion **Anwendungsressourcen verwenden, um konfigurierbare Geschäftsdokumente vom Word- ins PDF-Format zu konvertieren**. Mit dieser Funktion können Sie generierte Word-Dokumente lokal in das PDF-Format konvertieren, indem Sie Anwendungsserverressourcen in der aktuellen Finance-Instanz verwenden. 
+
+Dies sind die Vorteile der lokalen PDF-Konvertierung, wenn die Funktion **Anwendungsressourcen verwenden, um konfigurierbare Geschäftsdokumente vom Word- ins PDF-Format zu konvertieren** aktiviert ist:
+
+- Das erstellte PDF-Dokument ist nicht auf eine maximale Seitenzahl [beschränkt](#limitations).
+- Das konvertierte Word-Dokument kann eine [große Anzahl von Inhaltssteuerelementen](https://fix.lcs.dynamics.com/Issue/Details?bugId=647877&dbType=3) enthalten.
+- In lokalen Bereitstellungen ist keine Internetverbindung erforderlich.
 
 ### <a name="use-the-pdf-conversion-option"></a>Die PDF-Konvertierungsoption verwenden
 
@@ -230,7 +240,7 @@ Auf dem Inforegister **Allgemeines** im **Ordner senden als** wählen Sie im Fel
 - **Separate Dateien** – Liefern Sie jede Datei einer generierten Zip-Datei als einzelne Datei.
 
     > [!NOTE]
-    > Wenn Sie **Separate Dateien** auswählen, wird die generierte Ausgabe in einem komprimierten Zustand im Speicher gesammelt. Daher wird die maximale [Dateigrößenbeschränkung](er-compress-outbound-files.md) für die komprimierte Ausgabe angewendet, wenn die tatsächliche Dateigröße diese Grenze möglicherweise überschreitet. Wir empfehlen, diesen Wert auszuwählen, wenn Sie erwarten, dass die Größe der generierten Ausgabe zu groß ist.
+    > Wenn Sie **Separate Dateien** auswählen, wird die generierte Ausgabe in einem komprimierten Zustand im Speicher gesammelt. Daher wird die maximale [Dateigrößenbeschränkung](er-compress-outbound-files.md) für die komprimierte Ausgabe angewendet, wenn die tatsächliche Dateigröße diese Grenze möglicherweise überschreitet. Wir empfehlen, diesen Wert auszuwählen, wenn Sie erwarten, dass die Größe der generierten Ausgabe recht groß ist.
 
 [![Konfigurieren eines Ziels für eine Komponente im Ordnerformat.](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
 
@@ -260,7 +270,7 @@ Stellen Sie sicher, dass Sie **Neu** und dann eine Konfiguration im Feld **Refer
 
 ### <a name="is-there-any-way-to-define-which-microsoft-azure-storage-account-and-azure-blob-storage-are-used"></a>Gibt es eine Möglichkeit zur Definition des verwendeten Microsoft Azure Storage-Kontos und des Azure Blob-Speichers?
 
-Nr. Nein. Der standardmäßige Microsoft Azure Blob-Speicher, der definiert ist und für das Dokumentenmanagement-System verwendet wird, wird verwendet.
+Nein Nein. Der standardmäßige Microsoft Azure Blob-Speicher, der definiert ist und für das Dokumentenmanagement-System verwendet wird, wird verwendet.
 
 ### <a name="what-is-the-purpose-of-the-file-destination-in-the-destination-settings-what-does-that-setting-do"></a>Wozu dient die Datei in den Zieleinstellungen? Was bewirkt diese Einstellung?
 

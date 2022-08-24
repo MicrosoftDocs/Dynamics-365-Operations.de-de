@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: d6ad25ec49a329c16b0290278fb614293a507eae
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b7c2c07f3e3eb76ff20e37e8d5d485dc08232c7a
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887688"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220421"
 ---
 # <a name="bill-for-maintenance-on-customer-owned-assets"></a>Rechnung für die Wartung von kundeneigenen Anlagen
 
@@ -49,7 +49,7 @@ Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert wer
 
 Um zu erfahren, wie diese Funktion funktioniert, arbeiten Sie das folgende Beispielszenario durch.
 
-Um dieses Szenario mithilfe der Beispieldatensätze und -werte, die hier angegeben sind, zu verarbeiten, müssen Sie ein System verwenden, auf dem die standardmäßigen [Demodaten](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) installiert sind. Sie müssen die juristische Person **USMF** auswählen, bevor Sie beginnen.
+Um dieses Szenario mithilfe der Beispieldatensätze und -werte, die hier angegeben sind, zu verarbeiten, müssen Sie ein System verwenden, auf dem die standardmäßigen [Demodaten](../../../fin-ops-core/fin-ops/get-started/demo-data.md) installiert sind. Sie müssen die juristische Person **USMF** auswählen, bevor Sie beginnen.
 
 Sie können dieses Szenario auch als Anleitung zur Verwendung dieser Funktion nutzen, wenn Sie an einem Produktionssystem arbeiten. In diesem Fall müssen Sie jedoch Ihre eigenen Werte ersetzen, und es fehlen möglicherweise einige Typen von erforderlichen Datensätzen, die in den Standarddemodaten enthalten sind.
 

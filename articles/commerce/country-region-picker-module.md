@@ -1,26 +1,26 @@
 ---
 title: Modul zur Länder-/Regionsauswahl
 description: Dieser Artikel behandelt das Modul zur Länder-/Regionsauswahl und beschreibt, wie es in Microsoft Dynamics 365 Commerce konfiguriert wird.
-author: stuharg
+author: bicyclingfool
 ms.date: 04/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2021-08-12
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: d20b3be008a37b1c86e6fefe0ccc90c581e18340
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: ''
+ms.openlocfilehash: 203a8e17e075f15b7ae3cceb98d24ced75539a01
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861991"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270290"
 ---
 # <a name="countryregion-picker-module"></a>Modul zur Länder-/Regionsauswahl
 
@@ -28,19 +28,19 @@ ms.locfileid: "8861991"
 
 Dieser Artikel behandelt das Modul zur Länder-/Regionsauswahl und beschreibt, wie es in Microsoft Dynamics 365 Commerce konfiguriert wird.
 
-Das Modul zur Länder-/Regionsauswahl verwendet die Funktion [Geo-Erkennung und -Umleitung](geo-detection-redirection.md) in Dynamics 365 Commerce, um Kund\*innen Website-Empfehlungen anzuzeigen, die eine URL einer E-Commerce-Website anfordern, die nicht mit ihrem Land oder ihrer Region verknüpft ist.
+Das Modul zur Länder-/Regionsauswahl verwendet die Funktion [Geo-Erkennung und -Umleitung](geo-detection-redirection.md) in Dynamics 365 Commerce, um Kunden Website-Empfehlungen anzuzeigen, die eine URL einer E-Commerce-Website anfordern, die nicht mit ihrem Land oder ihrer Region verknüpft ist.
 
-Beispiel: Kund\*innen in Kanada fordern eine Website-URL an, die mit einem anderen Land als Kanada verknüpft ist. In diesem Fall zeigt das Modul zur Länder-/Regionsauswahl ein Dialogfeld an, das Website-URLs empfiehlt, die mit Kanada verknüpft sind. 
+Beispiel: Kunden in Kanada fordern eine Website-URL an, die mit einem anderen Land als Kanada verknüpft ist. In diesem Fall zeigt das Modul zur Länder-/Regionsauswahl ein Dialogfeld an, das Website-URLs empfiehlt, die mit Kanada verknüpft sind. 
 
 ## <a name="how-it-works"></a>Funktionsweise
 
-Wenn die geografische Erkennung und Weiterleitung für eine Website aktiviert sind und Kund\*innen eine Website-URL anfordern, wird anhand des für die Kund\*innen erkannten Landes und der angeforderten URL ermittelt, ob diese URL dem Land zugeordnet ist, in dem sich die Kund\*innen befinden. Die Zuordnung zwischen URLs und Ländern wird auf der Seite **Kanäle** unter **Websiteeinstellungen** im Commerce-Website-Generator definiert. 
+Wenn die geografische Erkennung und Weiterleitung für eine Website aktiviert sind und Kunden eine Website-URL anfordern, wird anhand des für die Kunden erkannten Landes und der angeforderten URL ermittelt, ob diese URL dem Land zugeordnet ist, in dem sich die Kunden befinden. Die Zuordnung zwischen URLs und Ländern wird auf der Seite **Kanäle** unter **Websiteeinstellungen** im Commerce-Website-Generator definiert. 
 
-Wenn die Anforderungs-URL mit keiner URL übereinstimmt, die dem Land der Kund\*innen zugeordnet ist, wird die Liste mit einer oder mehreren URLs, die diesem Land zugeordnet sind, in der Antwort zurückgegeben. Die Länder-/Regionsauswahl vergleicht jede URL in dieser Liste mit den URLs, die im Länder-/Regionsmodul konfiguriert wurden. Für jede exakte Übereinstimmung, die gefunden wird, rendert die Länder-/Regionsauswahl die angezeigte Überschrift, Unterüberschrift sowie das Bild für diese URL und verlinkt diese Elemente mithilfe der URL.
+Wenn die Anforderungs-URL mit keiner URL übereinstimmt, die dem Land der Kunden zugeordnet ist, wird die Liste mit einer oder mehreren URLs, die diesem Land zugeordnet sind, in der Antwort zurückgegeben. Die Länder-/Regionsauswahl vergleicht jede URL in dieser Liste mit den URLs, die im Länder-/Regionsmodul konfiguriert wurden. Für jede exakte Übereinstimmung, die gefunden wird, rendert die Länder-/Regionsauswahl die angezeigte Überschrift, Unterüberschrift sowie das Bild für diese URL und verlinkt diese Elemente mithilfe der URL.
 
-Wenn Kund\*innen eine Option in der Länder-/Regionsauswahl auswählen, werden sie zur verlinkten URL weitergeleitet. Diese URL wird in den Cookie **\_msdyn365\_\_\_site\_** geschrieben, damit es als Websitepräferenz der betreffenden Kund\*innen verwendet werden kann. Wenn Kund\*innen dann das nächste Mal die URL anfordern, die nicht mit ihrem Land oder ihrer Region verknüpft ist, werden sie automatisch zu ihrem bevorzugten Land umgeleitet. Daher empfehlen wir Ihnen, auch das [Websiteauswahlmodul](site-selector.md) auf Ihrer E-Commerce-Website zu verwenden, damit Kund\*innen ihre Website-Präferenz überschreiben oder aktualisieren können. 
+Wenn Kunden eine Option in der Länder-/Regionsauswahl auswählen, werden sie zur verlinkten URL weitergeleitet. Diese URL wird in den Cookie **\_msdyn365\_\_\_site\_** geschrieben, damit es als Websitepräferenz der betreffenden Kunden verwendet werden kann. Wenn Kunden dann das nächste Mal die URL anfordern, die nicht mit ihrem Land oder ihrer Region verknüpft ist, werden sie automatisch zu ihrem bevorzugten Land umgeleitet. Daher empfehlen wir Ihnen, auch das [Websiteauswahlmodul](site-selector.md) auf Ihrer E-Commerce-Website zu verwenden, damit Kunden ihre Website-Präferenz überschreiben oder aktualisieren können. 
 
-Wenn Kund\*innen das Dialogfeld zur Länder-/Regionsauswahl schließen, wird kein Cookie geschrieben, und die Kund\*innen verbleiben auf der aktuellen Website. 
+Wenn Kunden das Dialogfeld zur Länder-/Regionsauswahl schließen, wird kein Cookie geschrieben, und die Kunden verbleiben auf der aktuellen Website. 
 
 In der folgenden Abbildung wird ein Beispiel des Dialogfelds „Länder-/Regionsauswahl“ angezeigt.
 
@@ -67,7 +67,7 @@ Das Modul zur Länder-/Regionsauswahl kann entweder direkt oder über ein freige
 > [!NOTE]
 > Die URLs, die Sie Ihren Kunden empfehlen, müssen im Modul zur Länder-/Regionsauswahl als Länderobjekte konfiguriert sein.
 
-Führen Sie für jede Website-URL, die Sie Kund\*innen anzeigen und empfehlen möchten, die folgenden Schritte im Commerce-Website-Generator aus.
+Führen Sie für jede Website-URL, die Sie Kunden anzeigen und empfehlen möchten, die folgenden Schritte im Commerce-Website-Generator aus.
 
 1. Wählen Sie den Slot des Moduls zur Länder-/Regionsauswahl aus.
 1. Wählen Sie im Eigenschaftenbereich unter **Länderliste** die Option **Land hinzufügen** aus.

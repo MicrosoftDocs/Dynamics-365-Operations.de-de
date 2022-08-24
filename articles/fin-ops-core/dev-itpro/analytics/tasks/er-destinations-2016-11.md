@@ -1,24 +1,24 @@
 ---
 title: ER Konfigurieren Sie Ziele
 description: Diese Prozedur zeigt, wie verschiedene Ziele für Ausgabekomponenten für elektronische Berichterstellung (ER) eingerichtet und verwendet werden, wie beispielsweise ein Ordner oder eine Datei.
-author: NickSelin
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERFormatDestinationTable, SysLookupPicklist, ERFormatDestinationSettings, ERFormatDestinationEmailSettings, ERExpressionDesignerFormula, SRSPrintDestinationTokens
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f1e679b52b28ff1ca117c5224fc7e2825feb26e5e5aea1c8b5bc3a88d1eaf235
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.form: ERFormatDestinationTable, SysLookupPicklist, ERFormatDestinationSettings, ERFormatDestinationEmailSettings, ERExpressionDesignerFormula, SRSPrintDestinationTokens
+ms.openlocfilehash: 3c8d03e9783013183fbe76cb36014fa9e1e1cbed
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743262"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9291053"
 ---
 # <a name="er-configure-destinations"></a>ER Konfigurieren Sie Ziele
 
@@ -26,7 +26,7 @@ ms.locfileid: "6743262"
 
 Diese Prozedur zeigt, wie verschiedene Ziele für Ausgabekomponenten für elektronische Berichterstellung (ER) eingerichtet und verwendet werden, wie beispielsweise ein Ordner oder eine Datei. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist DEMF. Deutschland ist das Land/die Region der primären Adresse der juristischen Person, Sie können jedoch jede beliebige juristische Person für diese Prozedur verwenden. 
 
-Das Format, das in diesem Beispiel verwendet wird, ist "ISO20022 Kreditübertragung", aber Sie können jedes beliebige Format verwenden, das Sie bereits importiert haben. Beachten Sie, dass diese Prozedur ein Beispiel für die Einstellungen zu einer einzelnen Datei und einem einzelnen Ziel ist. Weitere Informationen über die Zielverwaltung für die elektronische Berichterstellung können Sie in der Dynamics 365 Finance-Hilfe finden.
+Das Format, das in diesem Beispiel verwendet wird, ist "ISO20022 Kreditübertragung", aber Sie können jedes beliebige Format verwenden, das Sie bereits importiert haben. Beachten Sie, dass diese Prozedur ein Beispiel für die Einstellungen zu einer einzelnen Datei und einem einzelnen Ziel ist. Weitere Informationen über die Zielverwaltung für die elektronische Berichterstellung können Sie in der Hilfe von Dynamics 365 Finance finden.
 
 1. Wechseln Sie zu "Organisationsverwaltung" > "Elektronische Berichterstellung" > "Ziel für elektronische Berichterstellung".
 2. Klicken Sie auf "Neu", um einen neuen Satz von Zielen für ein Format zu erstellen.

@@ -2,49 +2,61 @@
 title: Asynchroner Debitorerstellungsmodus
 description: Dieser Artikel beschreibt den asynchronen Debitorerstellungsmodus in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 12/10/2021
+ms.date: 08/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-12-17
-ms.openlocfilehash: 4ca63fe06a804035e976a3432454078c1cca0020
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1ac1bc842d5d12ece8951ffed18157e6f9b50d14
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880139"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228722"
 ---
 # <a name="asynchronous-customer-creation-mode"></a>Asynchroner Debitorerstellungsmodus
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dieser Artikel beschreibt den asynchronen Debitorerstellungsmodus in Microsoft Dynamics 365 Commerce.
 
-In Commerce gibt es zwei Arten der Debitorerstellung: synchron (oder sync) und asynchron (oder async). Standardmäßig werden Debitoren synchron erstellt. Mit anderen Worten, sie werden in Echtzeit in der Commerce-Zentrale erstellt. Der sync-Modus für die Debitorerstellung ist von Vorteil, da neue Debitoren sofort kanalübergreifend durchsucht werden können. Es hat jedoch auch einen Nachteil. Weil es [Commerce Data Exchange: Echtzeitservice](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service)-Aufrufe an die Commerce-Zentrale erzeugt, kann die Leistung beeinträchtigt werden, wenn viele Aufrufe zur Debitorerstellung gleichzeitig getätigt werden.
+In Commerce gibt es zwei Arten der Debitorerstellung: synchron (oder sync) und asynchron (oder async). Standardmäßig werden Debitoren synchron erstellt. Mit anderen Worten, sie werden in Echtzeit in den Commerce headquarters erstellt. Der sync-Modus für die Debitorerstellung ist von Vorteil, da neue Debitoren sofort kanalübergreifend durchsucht werden können. Es hat jedoch auch einen Nachteil. Weil es [Commerce Data Exchange: Echtzeitservice](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service)-Aufrufe an die Commerce-Zentrale erzeugt, kann die Leistung beeinträchtigt werden, wenn viele Aufrufe zur Debitorerstellung gleichzeitig getätigt werden.
 
 Wenn die Option **Debitor im asynchronen Modus erstellen** auf **Ja** gesetzt ist im Funktionsprofil des Geschäfts (**Retail und Commerce \> Kanaleinrichtung \> Einrichtung Onlineshop \> Funktionsprofile**), werden Echtzeit-Serviceaufrufe nicht zum Erstellen von Debitordatensätzen in der Debitordatenbank verwendet. Der asynchrone Debitorerstellungsmodus wirkt sich nicht auf die Leistung der Commerce-Zentrale aus. Jedem neuen asynchrone Debitordatensatz wird eine temporäre GUID (Globally Unique Identifier) zugewiesen und als Debitorenkontokennung verwendet. Diese GUID wird Benutzern der Verkaufsstelle (POS) nicht angezeigt. Stattdessen werden diese Benutzer **Ausstehende Synchronisierung** als Debitorenkontokennung sehen.
 
 > [!IMPORTANT]
-> Wann immer der POS offline geschaltet wird, erstellt das System die Debitoren selbst dann automatisch asynchron, wenn der asynchrone Debitorenerstellungsmodus deaktiviert ist. Daher müssen Administratoren der Commerce-Zentrale einen wiederkehrenden Batchauftrag für den **P-Einzelvorgang**, den Einzelvorgang **Debitoren und Geschäftspartner im async-Modus synchronisieren** (früher als **Debitoren und Geschäftspartner im async-Modus synchronisieren** bezeichnet) und den Einzelvorgang **1010** erstellen und planen, sodass alle asynchrone Debitoren in der Commerce-Zentrale in synchrone Debitoren konvertiert werden.
+> Wann immer der POS offline geschaltet wird, erstellt das System die Debitoren selbst dann automatisch asynchron, wenn der asynchrone Debitorenerstellungsmodus deaktiviert ist. Daher müssen Administratoren der Commerce headquarters ungeachtet Ihrer Auswahl bei der Ersteller synchroner und asynchroner Debitoren wiederkehrenden Stapelverarbeitungsauftrag für den **P-Einzelvorgang**, den Einzelvorgang **Debitoren und Geschäftspartner im asynchronen Modus synchronisieren** und den Einzelvorgang **1010** erstellen und planen, sodass alle asynchrone Debitoren im Commerce headquarters in synchrone Debitoren konvertiert werden.
 
 ## <a name="async-customer-limitations"></a>Asynchrone Debitorenbeschränkungen
 
-Die asynchrone Debitorenfunktionalität weist derzeit die folgenden Einschränkungen auf:
+Die asynchrone Debitorenfunktionalität weist derzeit die folgende Einschränkung auf:
 
-- Asynchrone Debitorendatensätze können nur bearbeitet werden, wenn der Debitor in der Commerce-Zentrale erstellt und die neue Debitorenkonto-ID wieder mit dem Kanal synchronisiert wurde.
 - Kundenkarten können nur dann an asynchrone Debitoren ausgegeben werden, wenn die neue Debitorenkonto-ID wieder mit dem Kanal synchronisiert wurde.
 
 ## <a name="async-customer-enhancements"></a>Verbesserungen bei asynchronen Debitoren
 
-Ab Commerce-Version 10.0.24 können Sie die **Die erweiterte asynchrone Debitorenerstellung aktivieren**-Funktion im **Funktionsverwaltung**-Arbeitsplatz aktivieren. Diese Funktion schließt die Lücke zwischen asynchronem und synchronisiertem Debitorenerstellungsmodus in POS und E-Commerce auf folgende Weise:
+Um Organisationen bei der Verwendung des asynchronen Debitorenerstellungsmodus zum Verwalten von Debitoren zu unterstützen und die Echtzeitkommunikation mit den Commerce headquarters zu reduzieren, wurden die folgenden Verbesserungen eingeführt, um Parität zwischen synchronen und asynchronen Modi in Kanälen herzustellen. 
 
-- Mitgliedschaften können nicht mit asynchronen Debitoren verknüpft werden.
-- Asynchrone Debitoren können Titel hinzugefügt werden.
-- Sekundäre E-Mail-Adressen und Telefonnummern können für asynchrone Debitoren nicht erfasst werden.
+| Funktionsverbesserung | Commerce-Version | Funktionsdetails |
+|---|---|---|
+| Leistungsverbesserungen beim Abrufen von Debitoreninformationen aus der Kanaldatenbank | 10.0.20 und höher | Um die Leistung zu verbessern, wird die Debitorenentität in kleinere Einheiten aufgeteilt. Das System ruft dann nur die erforderlichen Informationen aus der Kanaldatenbank ab. |
+| Möglichkeit zum asynchronen Erstellen von Adressen während des Bezahlvorgangs | 10.0.22 und höher | <p>Funktionsschalter: **Asynchrone Erstellung für Debitorenadressen aktivieren**</p><p>Funktionsdetails:</p><ul><li>Möglichkeit, Adressen hinzuzufügen, ohne Dienstaufrufe in Echtzeit an die Commerce headquarters zu tätigen</li><li>Möglichkeit, Adressen in der Kanaldatenbank eindeutig zu identifizieren, ohne eine Datensatz-ID zu verwenden (**RecId**-Wert)</li><li>Nachverfolgungs-Zeitstempel für die Adresserstellung</li><li>Synchronisierung von Adressen in Commerce headquarters</li></ul><p>Diese Funktion betrifft sowohl synchrone als auch asynchrone Debitoren. Um Adressen zusätzlich zum asynchronen Erstellen asynchron zu bearbeiten, müssen Sie die Funktion **Debitoren im asynchronen Modus bearbeiten** aktivieren.</p> |
+| Aktivieren Sie die Parität zwischen der Erstellung synchroner und asynchroner Debitoren. | 10.0.24 und höher | <p>Funktionsschalter: **Erweiterte asynchrone Debitorenerstellung aktivieren**</p><p>Funktionsdetails: Möglichkeit, zusätzliche Informationen zu erfassen, z. B. den Titel, Zugehörigkeiten des Standarddebitors und sekundäre Kontaktinformationen (Telefonnummer und E-Mail-Adresse), während Sie Debitoren asynchron erstellen</p> |
+| Benutzerfreundliche Fehlermeldungen | 10.0.28 und höher | Diese Verbesserungen helfen, benutzerfreundliche Fehlermeldungen zu verbessern, wenn ein Benutzer Informationen nicht sofort bearbeiten kann, während die Synchronisierung läuft. Sie aktivieren diese Verbesserungen mit der Einstellung **Zulassen, dass bestimmte Benutzeroberflächenelemente von einem asynchronen Debitor nicht geändert werden können** im Commerce-Seitengenerator **Seiteneinstellungen \> Erweiterungen**. |
+| Möglichkeit, Debitorinformationen asynchron zu bearbeiten | 10.0.29 und höher | <p>Funktionsschalter: **Bearbeitung von Debitoren im asynchronen Modus ermöglichen**</p><p>Funktionsdetails: Möglichkeit, Debitorendaten asynchron zu bearbeiten</p><p>Antworten auf häufig gestellte Fragen zu Problemen im Zusammenhang mit der asynchronen Bearbeitung von Debitoreninformationen finden Sie unter [Häufig gestellte Fragen zum asynchronen Debitorenerstellungsmodus](async-customer-mode-faq.md).</p> |
 
-Ab Commerce-Version 10.0.22 können Sie die **Die asynchrone Erstellung für Debitorenadressen aktivieren**-Funktion im **Funktionsverwaltung**-Arbeitsplatz aktivieren. Mit dieser Funktion können neu erstellte Debitorenadressen asynchron sowohl für Synchronisierungskunden als auch für asynchrone Debitoren gespeichert werden.
+### <a name="feature-switch-hierarchy"></a>Funktionsschalterhierarchie
+
+Aufgrund der Hierarchie der Funktionsschalter müssen Sie, bevor Sie die Funktion **Bearbeitung von Debitoren im asynchronen Modus ermöglichen** aktivieren, die folgenden Funktionen aktivieren: 
+
+- **Leistungsverbesserungen bei Debitorenaufträgen und Debitorentransaktionen**: Diese Funktion ist seit der Commerce-Version 10.0.28 obligatorisch. 
+- **Erweiterte asynchrone Debitorenerstellung aktivieren**
+- **Asynchrone Erstellung für Kundenadressen aktivieren**
+
+Antworten auf häufig gestellte Fragen zur Problembehandlung finden Sie unter [Häufig gestellte Fragen zum asynchronen Debitorenerstellungsmodus](async-customer-mode-faq.md). 
 
 Nachdem Sie die zuvor erwähnten Funktionen aktiviert haben, müssen Sie einen wiederkehrenden Batchauftrag für den **P-Einzelvorgang**, den Einzelvorgang **Debitoren und Geschäftspartner im asynchronen Modus synchronisieren** und den Einzelvorgang **1010** erstellen und planen, sodass alle asynchrone Debitoren in der Commerce-Zentrale in synchrone Debitoren konvertiert werden.
 

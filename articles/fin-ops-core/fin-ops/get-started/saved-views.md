@@ -2,7 +2,7 @@
 title: Gespeicherte Ansichten
 description: In diesem Artikel wird beschrieben, wie Sie die gespeicherten Ansichtsfunktionen verwenden.
 author: jasongre
-ms.date: 04/25/2022
+ms.date: 07/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 14369b02f1d7553be5c732f3bdf768825267998b
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 6faf71ec5d14584034f9107c33ccce1cd1d393c7
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9125149"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220331"
 ---
 # <a name="saved-views"></a>Gespeicherte Ansichten
 
 [!include [banner](../includes/banner.md)]
-
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -46,7 +46,12 @@ Nachdem Ansichten für eine Umgebung verfügbar gemacht wurden, enthält jede Se
 Es gibt zwei Größenvarianten der Ansichts-Auswahl: 
 
 - **Auswahl für große Ansicht** – Seiten, die prominent eine Liste haben, verfügen über eine Auswahl für große Ansicht aus mehreren Gründen. Am wichtigsten ist, dass die größere Anzeigen-Auswahl die Seiten angezeigt, bei denen die Ansicht benutzerdefinierte Filter und Sortierungen enthalten kann. Da Filter und Sortierungen in der Ansicht enthalten sind, garantiert die größere Anzeigen-Auswahl auch, dass die Ansichtsnamen häufig die beste Beschreibung der Angaben enthalten, die auf dem Bildschirm angezeigt werden und die Erwartung ist, dass Benutzer häufiger auf diesen Seitentypen zwischen Ansichten wechseln. Die Gruppierung in einem Raster kann auch in Ansichten auf einer Seite mit großen Ansichts-Auswahlen gespeichert werden. 
+    
+    [![Große Ansichtsauswahl, die Abfrageänderungen in der Ansicht unterstützt.](./media/views-largeViewSelector.png)](./media/views-largeViewSelector.png)
+
 - **Auswahl für kleine Ansicht** – Alle anderen Vollbildseiten (mit Ausnahme von Arbeitsbereichen und des Dashboards) beinhalten eine Auswahl für kleine Ansicht, die neben der Seitenbeschriftung angezeigt wird. Ansichten auf diesen Seiten enthalten nur Personalisierungen und keine benutzerdefinierte Filter. Auf diesen Seiten umfasst die Beschriftung oder der Datensatztitel häufig die wichtigsten Informationen oben auf der Seite. Das kleinere Format der Ansichtsauswahl spiegelt auch die niedrigere Häufigkeit der Ansichtsumschaltung, die auf diesen Seiten erwartet wird, wider. 
+    
+    [![Kleine Ansichtsauswahl, die Abfrageänderungen in der Ansicht nicht unterstützt.](./media/views-smallViewSelector.png)](./media/views-smallViewSelector.png)
  
 Wenn Sie den Ansichtsnamen auswählen, wird die Ansichtsauswahl geöffnet und zeigt die Liste der verfügbaren Ansichten für diese Seite an.
 
@@ -64,6 +69,8 @@ Um zu einer anderen Ansicht zu wechseln, öffnen Sie die Ansichts-Auswahl und w�
 Im Gegensatz zur herkömmlichen Personalisierung werden Ansichten nicht automatisch gespeichert, wenn ein Benutzer die Seite personalisiert oder wenn ein Benutzer einen Filter auf eine Liste anwendet oder diese sortiert. Eine explizite Aktivität ist erforderlich, um diese Änderungen für eine Ansicht zu speichern. Diese Anforderung gibt den Benutzern die Flexibilität, eine Ansicht zu erstellen, bevor oder nachdem die mit dieser Ansicht verknüpften Änderungen vorgenommen wurden. Außerdem wird sichergestellt, dass Ansichtsdefinitionen nicht unbeabsichtigt durch einmalige Filter oder Personalisierungen geändert werden. Beachten Sie, dass typische Elemente für die Seitennutzung (z. B. Spaltenbreiten oder der erweiterte oder reduzierte Status von Abschnitten) auch in gesperrten Ansichten automatisch in der aktuellen Ansicht gespeichert werden.
 
 Um sicherzustellen, dass der aktuelle Status der Ansicht bekannt ist, wird ein Sternchen (\*) neben dem aktuellen Ansichtsnamen angezeigt, wenn Sie eine Ansicht durch Personalisieren oder Filtern ändern. Dieses Symbol zeigt an, dass Sie eine nicht gespeicherte, geänderte Version dieser Ansicht anzeigen.
+
+[![Ungespeicherte Änderungen in einer Ansicht](./media/views-unsavedChanges.png)](./media/views-unsavedChanges.png)
 
 Wenn Sie die diese Änderungen speichern möchten, führen Sie die folgenden Schritte aus.
 
@@ -225,7 +232,7 @@ Wenn Ansichten aktiviert sind, werden alle vorhandenen Personalisierungen für e
 
 ### <a name="what-pages-support-views"></a>Welche Seiten unterstützen Ansichten? 
 
-Ansichten sind auf den meisten jedoch nicht auf allen Seiten verfügbar. Im Speziellen sind Ansichten in allen Ganzseitenseiten ausgenommen Dashboards und Arbeitsbereiche verfügbar. Nicht-Voll-Bildschirmseiten, zu denen Dialogfelder, Drop-Down-Dialogfelder, Suchen, erweiterte Vorschauen gehören, unterstützen aktuell keine Ansichten. Ansichtenunterstützung für zusätzliche Seitentypen wie Arbeitsbereiche und Dialogfelder werden für eine zukünftige Aktualisierung berücksichtigt werden.
+Ansichten sind auf den meisten jedoch nicht auf allen Seiten verfügbar. Im Speziellen sind Ansichten in allen Ganzseitenseiten ausgenommen Dashboards verfügbar. Ansichtsunterstützung für Arbeitsbereiche ist über **Unterstützung gespeicherter Ansichten für Arbeitsbereiche** Funktion verfügbar. Die meisten Nicht-Voll-Bildschirmseiten, zu denen Dialogfelder, Drop-Down-Dialogfelder und erweiterte Vorschauen gehören, unterstützen aktuell keine Ansichten. Ansichtsunterstützung für Dialogfelder ist über **Unterstützung gespeicherter Ansichten für Dialogfelder** Funktion verfügbar.
 
 ### <a name="who-is-allowed-to-publish-views"></a>Wer kann Ansichten veröffentlichen?
 

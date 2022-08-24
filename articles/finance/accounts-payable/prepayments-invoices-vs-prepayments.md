@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a420a0a366e454df14d5fe994691829bc7950306
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 901683f2176189ce2f4186b4f9b3b5c64ec9f2b1
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895195"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227774"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Vorauszahlungsrechnungen im Vergleich zu Vorauszahlungen
 
@@ -78,6 +78,8 @@ Die Vorauszahlung kann aus der Bestellung entfernt werden, es sei denn, Sie habe
 Um die Vorauszahlungsrechnung des Lieferanten zu erfassen, gehen Sie zur Seite **Kreditorenrechnung** durch Auswahl der Option **Vorauszahlungsrechnung** auf der Seite **Bestellungen** (**Kreditorenkonten \> Allgemein \> Bestellungen \> Alle Bestellungen \> Registerkarte „Rechnung“ \> Vorauszahlungsrechnung**). Geben Sie Informationen zur Vorauszahlungsrechnung ein, einschließlich der Rechnungsnummer. Die Mengen für eine Vorauszahlungsrechnung können nicht geändert werden. Wenn der Lieferant einen Teilbetrag des in der Bestellung definierten Vorauszahlungswerts in Rechnung gestellt hat, können Sie den Stückpreis aktualisieren, um den Teilwert widerzuspiegeln.
 
 Wenn die Vorauszahlungsrechnung gebucht wird, werden der Kreditorensaldo und das Vorauszahlungskonto aktualisiert. Der Wert **Vorauszahlungsantrag** der in der Bestellung enthaltenen Vorauszahlungsdefinition wird ebenfalls aktualisiert. Die Standardeinträge für die Finanzdimension des gebuchten Vorauszahlungsbelegs werden den Kopfinformationen auf der Bestellung entnommen.
+
+Wenn die **Finanzdimensionen in Rechnungspositionen auf Kreditorenvorauszahlungsrechnungen sperren** Funktion auf der **Funktionsverwaltung** aktiviert ist, können die Dimensionen in der Vorauszahlungskopfzeile oder in den Zeilen nicht aktualisiert werden. 
 
 ## <a name="post-and-settle-payments-for-the-prepayment-invoice"></a>Buchen und Begleichen von Zahlungen für die Vorauszahlungsrechnung
 Als nächstes wird die Vorauszahlungsrechnung von der Seite **Zahlungserfassung** aus bezahlt. Klicken Sie auf **Kreditorenrechnungen \> Erfassungen \> Zahlungen \> Zahlungserfassungen**, um auf Zahlungserfassungen zuzugreifen. Nach Buchung des Ausgleichs der Zahlung auf die Vorauszahlungsrechnung wird der Wert **Vorauszahlungsantrag verbleibend** der Bestellung aktualisiert.

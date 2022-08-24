@@ -1,25 +1,25 @@
 ---
 title: Auftragssuche für Gast-Checkouts aktivieren
 description: In diesem Artikel wird beschrieben, wie Sie die Bestellsuche für Gastbezahlvorgänge in Microsoft Dynamics 365 Commerce aktivieren.
-author: stuharg
+author: bicyclingfool
 ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: fe32bb59b6529dd9686ced92c1016f12a75a32d4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: 4f381f1ec0ea08f18db3cac474e8990906364504
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891986"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9286890"
 ---
 # <a name="enable-order-lookup-for-guest-checkouts"></a>Auftragssuche für Gast-Checkouts aktivieren
 
@@ -33,9 +33,9 @@ Kunden, die als registrierte Benutzer Bestellungen aufgeben, können ihre Bestel
 
 Darüber hinaus kann in jede auftragsbezogene Transaktions-E-Mail ein Link oder eine Schaltfläche eingefügt werden, die den Kunden direkt zur Bestelldetailseite für seine Bestellung führt. Dieser Link oder diese Schaltfläche funktioniert für Bestellungen, die sowohl von registrierten Benutzern als auch von Gastbenutzern aufgegeben werden.
 
-## <a name="turn-on-necessary-features-in-commerce-headquarters"></a>Aktivieren Sie die erforderlichen Funktionen in der Commerce-Zentrale
+## <a name="turn-on-necessary-features-in-commerce-headquarters"></a>Aktivieren Sie die erforderlichen Funktionen in der Commerce headquarters
 
-Um die Bestellsuche für Gastbezahlvorgänge zu aktivieren, müssen Sie die folgenden Funktionen unter **Arbeitsbereiche \> Funktionsverwaltung** in der Commerce-Zentrale aktivieren.
+Um die Bestellsuche für Gastbezahlvorgänge zu aktivieren, müssen Sie die folgenden Funktionen unter **Arbeitsbereiche \> Funktionsverwaltung** in der Commerce headquarters aktivieren.
 
 | Funktion | Kostenträger |
 |---------|---------|
@@ -43,11 +43,11 @@ Um die Bestellsuche für Gastbezahlvorgänge zu aktivieren, müssen Sie die folg
 | Generierung einer stärkeren Kanalreferenzkennung aktivieren | Diese Funktion generiert eine sicherere 12-stellige Kanalreferenz-ID (Bestellbestätigungs-ID), die beim Nachschlagen einer Bestellung in der Abfragezeichenfolge übergeben werden kann. |
 | Konsistentes Format für die Kanalreferenz-ID in allen Kanälen generieren | Diese Funktion generiert eine sichere Kanalreferenz-ID für Bestellungen, die über eine E-Commerce-Site, die Einzelhandelsverkaufsstelle (POS) oder ein Callcenter aufgegeben werden. Bevor Sie diese Funktion aktivieren können, muss die **Generierung einer stärkeren Kanalreferenz-ID aktivieren**-Funktion aktiviert sein. |
 
-Nach dem Einschalten der **Funktion für anonyme Benutzersuchauftragsdetails im Einzelhandel**-Funktion müssen Sie die API aktivieren, die die Suche nicht authentifizierte Aufträge in der Commerce-Zentrale unterstützt. Gehen Sie zu **Retail und Commerce \> Zentralverwaltungseinrichtung \> Parameter \> Kundenbestellungen**. Stellen Sie auf der **Kundenbestellungen**-Seite, auf dem **Auftragssuche**-Inforegister die **Nicht authentifizierte Auftragssuche aktivieren**-Option auf **Ja** ein, wie in der folgenden Abbildung gezeigt.
+Nach dem Einschalten der **Funktion für anonyme Benutzersuchauftragsdetails im Einzelhandel**-Funktion müssen Sie die API aktivieren, die die Suche nicht authentifizierte Aufträge in der Commerce headquarters unterstützt. Gehen Sie zu **Retail und Commerce \> Zentralverwaltungseinrichtung \> Parameter \> Kundenbestellungen**. Stellen Sie auf der **Kundenbestellungen**-Seite, auf dem **Auftragssuche**-Inforegister die **Nicht authentifizierte Auftragssuche aktivieren**-Option auf **Ja** ein, wie in der folgenden Abbildung gezeigt.
 
 ## <a name="manage-the-display-of-personal-data"></a>Verwalten der Anzeige personenbezogener Daten
 
-Das **Auftragssuche**-Inforegister auf der **Kundenbestellungen**-Seite in der Commerce-Zentrale enthält ein Feld **Personenbezogene Daten in Gastbestellungssuche einfügen**, mit dem Sie steuern können, ob Kunden personenbezogene Daten angezeigt werden. Zu diesen personenbezogenen Daten gehören die Lieferadresse des Kunden und die letzten vier Ziffern der Kreditkartennummer des Kunden. Standardmäßig werden Kunden keine personenbezogenen Daten angezeigt, wenn die Suche für nicht authentifizierte Bestellungen aktiviert ist. In der folgenden Tabelle werden die verfügbaren Optionen beschrieben.
+Das **Auftragssuche**-Inforegister auf der **Kundenbestellungen**-Seite in der Commerce headquarters enthält ein Feld **Personenbezogene Daten in Gastbestellungssuche einfügen**, mit dem Sie steuern können, ob Kunden personenbezogene Daten angezeigt werden. Zu diesen personenbezogenen Daten gehören die Lieferadresse des Kunden und die letzten vier Ziffern der Kreditkartennummer des Kunden. Standardmäßig werden Kunden keine personenbezogenen Daten angezeigt, wenn die Suche für nicht authentifizierte Bestellungen aktiviert ist. In der folgenden Tabelle werden die verfügbaren Optionen beschrieben.
 
 | Option | Ergebnis |
 |--------|--------|
@@ -58,7 +58,7 @@ Das **Auftragssuche**-Inforegister auf der **Kundenbestellungen**-Seite in der C
 > [!NOTE]
 > Diese Optionen legen fest, wann anonymen Gastnutzern personenbezogene Daten wie die Adresse des Kunden und die letzten vier Ziffern der Kreditkartennummer des Kunden angezeigt werden. Um die Privatsphäre registrierter Kunden zu schützen, empfehlen wir Ihnen, die **Nur Gastbestellungen**-Option. Die sicherste Option ist jedoch **Niemals**.
 
-Nachdem Sie den Wert des Felds **Personenbezogene Daten in die Suche nach Gastbestellungen einfügen** geändert haben, müssen Sie den Job 1070 (**Kanalkonfiguration**) in der Commerce-Zentrale ausführen, indem Sie zu **Retail und Commerce \> Retail und Commerce IT \> Verteilungsplan** ausführen.
+Nachdem Sie den Wert des Felds **Personenbezogene Daten in die Suche nach Gastbestellungen einfügen** geändert haben, müssen Sie den Job 1070 (**Kanalkonfiguration**) in der Commerce headquarters ausführen, indem Sie zu **Retail und Commerce \> Retail und Commerce IT \> Verteilungsplan** ausführen.
 
 ## <a name="configure-the-order-lookup-module"></a>Das Auftragssuchmodul konfigurieren
 

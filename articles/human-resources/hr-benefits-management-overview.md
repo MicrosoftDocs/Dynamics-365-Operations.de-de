@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f008c273a3088353c33ae8c4b0b3cbc6b274fbcf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 261d71e955e4cb1a4a461d59725c631248e10b17
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901146"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227896"
 ---
 # <a name="benefits-management-overview"></a>Vorteilsverwaltung – Übersicht
 
@@ -40,7 +40,7 @@ Wenn Sie auf die Demodaten zugreifen möchten, müssen Sie Ihre Sandkastenumgebu
 > [!NOTE]
 > Sie können jetzt die Seiten der Leistungsverwaltung anpassen. Angepasste Felder, die sich auf die Sätze der Deckung beziehen, können auf der Seite **Deckungsoption** für Leistungspläne hinzugefügt werden. Weitere Informationen zum Arbeiten mit angepassten Feldern finden Sie unter [Benutzerdefinierte Felder](hr-developer-custom-fields.md).
 >
-> ![Angepasste Felder für die Verwaltung von Leistungen ](media/hr-benefits-management-custom-fields.png)
+> ![Angepasste Felder für die Verwaltung von Leistungen](media/hr-benefits-management-custom-fields.png)
 
 ## <a name="enable-benefits-management"></a>Vorteilsverwaltung aktivieren
 
@@ -71,7 +71,7 @@ Der Prozess der Konfiguration von Leistungen umfasst die folgenden Aufgaben:
 
 Bevor Mitarbeiter in die Pläne aufgenommen werden können, müssen mehrere Komponenten eingerichtet werden:
 
-- **Parameter für das Leistungsmanagement** – Diese Einstellungen werden unternehmensübergreifend geteilt. Sie können Standard-Ursachencodes festlegen, die **Leistungen Jahresgehalt** Option aktivieren, eine  Standardzahlungshäufigkeit für Neueinstellungen festlegen und Lebensereignisse aktivieren. Weitere Informationen finden Sie unter [Leistungsverwaltungsparameter festlegen](hr-benefits-setup-parameters.md).
+- **Parameter für das Leistungsmanagement** – Diese Einstellungen werden unternehmensübergreifend geteilt. Sie können Standard-Ursachencodes festlegen, die **Leistungen Jahresgehalt** Option aktivieren, eine Standardzahlungshäufigkeit für Neueinstellungen festlegen und Lebensereignisse aktivieren. Weitere Informationen finden Sie unter [Leistungsverwaltungsparameter festlegen](hr-benefits-setup-parameters.md).
 - **Möglichkeiten zur persönlichen Kontaktaufnahme** – persönliche Ansprechpartner sind die Personen, die von den erstellten Plänen entweder abhängig oder begünstigt werden. Typischerweise sind es Kinder, Ehepartner oder Treuhandorganisationen. Weitere Informationen finden Sie unter [Berechtigungsoptionen für persönliche Kontakte konfigurieren](hr-benefits-setup-contact-eligibility-options.md).
 - **Deckungsoptionen** – Legen Sie die Deckungsarten fest, die für einen Plan verfügbar sein werden. Definieren Sie insbesondere, wer abgedeckt werden soll oder wie viel Abdeckung verfügbar ist. Weitere Informationen finden Sie unter [Deckungsoptionen erstellen](hr-benefits-setup-coverage-options.md).
 - **Planarten** – Richten Sie die Typen von Plänen ein, die verfügbar sind, wenn Sie einen Leistungsplan erstellen. Beispiele für Plantypen sind **Zahnbehandlung**, **Augenbehandlung**, und **Sparen**. Einige wichtige Einstellungen zum Plantyp bestimmen die Einstellungen, die im Leistungsplan verfügbar sind. Weitere Informationen finden Sie unter [Plantypen erstellen](hr-benefits-setup-plan-types.md).
@@ -147,6 +147,16 @@ Bevor Sie Lebensereignisse verarbeiten können, müssen Sie mindestens einmal w�
 - [Lebensereignisse verarbeiten](hr-benefits-process-life-events.md)
 - [Änderungen von Lebensereignissen verarbeiten](hr-benefits-process-life-event-changes.md)
 - [Lebensereignisberechtigung verarbeiten](hr-benefits-process-life-event-eligibility.md)
+
+Nachdem die Verarbeitung des Lebensereignisses abgeschlossen ist und solange der Anmeldezeitraum des Lebensereignisses offen ist, können Mitarbeiter Änderungen an den Planoptionen vornehmen, die von dem Lebensereignis betroffen sind. Administratoren können die Änderungen im Namen der Mitarbeiter vornehmen. Nachdem der Registrierungszeitraum abgelaufen ist und keine unbestätigten Plantypen mit der Lebensereignisbuchung in Zusammenhang stehen, wird die Buchung geschlossen.
+
+Alle Pläne, die von dem Lebensereignis betroffen sind, müssen entweder ausgewählt oder aufgehoben und dann bestätigt werden. Wenn ein Plan nicht ausgewählt, nicht aufgehoben und daher nicht bestätigt wird, wird die Lebensereignisbuchung nicht abgeschlossen.
+
+Administratoren können eine Lebensereignisbuchung nach Bedarf manuell schließen, indem sie erst sie und dann **Schließen** auswählen. Wenn die Buchung unbestätigte Pläne enthält und ein Administrator sie schließen möchte, kann das Schließen des Lebensereignisses die Bearbeitung dieser Pläne einschränken.
+
+Geschlossene Lebensereignisse können nicht gelöscht werden.
+
+Administratoren können eine Lebensereignisbuchung nach Bedarf wieder öffnen, indem sie erst sie und dann **Erneut öffnen** auswählen.
 
 ## <a name="rate-updates-optional"></a>Preisaktualisierungen (optional)
 

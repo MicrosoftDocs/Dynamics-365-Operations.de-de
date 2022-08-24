@@ -5,16 +5,16 @@ author: BrianShook
 ms.date: 10/07/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
-ms.reviewer: v-chgri
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: BrShoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 634b30de7adbfb0c316fe14456581ea8eb89d070
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2b2bee7ad45bbff82c8b7de2741925fde29d8583
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885196"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284310"
 ---
 # <a name="process-unlinked-refunds-with-the-dynamics-365-commerce-payment-connector-for-adyen"></a>Nicht verknüpfte Rückerstattungen mit dem Dynamics 365 Commerce Payment Connector für Adyen verarbeiten
 
@@ -96,7 +96,7 @@ Wenn eine nicht verknüpfte Rückerstattung für eine Bestellung im Callcenter v
 
 #### <a name="set-up-an-administrator-override-pin-for-call-center"></a>Administratoraußerkraftsetzungs-PIN für das Callcenter einrichten
 
-Gehen Sie folgendermaßen vor, um eine Administratoraußerkraftsetzungs-PIN für das Callcenter in der Commerce-Zentrale einzurichten.
+Gehen Sie folgendermaßen vor, um eine Administratoraußerkraftsetzungs-PIN für das Callcenter in der Commerce headquarters einzurichten.
 
 1. Gehen Sie zu **Retail und Commerce \> Kanaleinstellungen \> Callcenter-Einrichtung**, oder suchen Sie nach „Berechtigungen überschreiben“.
 1. Wählen Sie die Rolle aus, für die die nicht verknüpften Verarbeitungsberechtigungen für Rückerstattungen zugelassen werden sollen.

@@ -1,26 +1,26 @@
 ---
 title: Ein EB-Format entwerfen, um einen Bericht im Excel-Format mit eingebetteten Bildern in den Kopf- oder Fußzeilen einer Seite zu erstellen
 description: In diesem Artikel wird erklärt, wie Sie mit der elektronischen Berichterstellung (EB) geschäftliche Belege erzeugen können, die Bilder und Formen in Seitenkopf- oder Fußzeilen eingebettet haben.
-author: NickSelin
+author: kfend
 ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: EROperationDesigner, ERParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1cfde60459e440c851edb97276321216b1654e40
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.form: EROperationDesigner, ERParameters
+ms.openlocfilehash: 5b46d92094bb3f2dab67a5cb2f0e1a34b05d52f0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854842"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281811"
 ---
 # <a name="design-an-er-format-to-generate-a-report-in-excel-format-with-embedded-images-in-page-headers-or-footers"></a>Ein EB-Format entwerfen, um einen Bericht im Excel-Format mit eingebetteten Bildern in den Kopf- oder Fußzeilen einer Seite zu erstellen
 
@@ -196,7 +196,7 @@ In diesem Fall müssen Sie als Vertreter von Litware, Inc. eine neue EB-Formatko
 
 ![Eine Konfiguration für ein benutzerdefiniertes Zahlungsformat im Dropdown-Dialogfeld „Konfiguration erstellen“.](./media/er-embed-images-header-footer-excel-reports-add-derived-format.png)
 
-Die Version 240.112.1 der EB-Formatkonfiguration **Freitextrechnung (Excel) benutzerdefinierte** wird erstellt. Diese Version hat den [Status](general-electronic-reporting.md#component-versioning) **Entwurf** und kann bearbeitet werden. Der aktuelle Inhalt Ihres benutzerdefinierten EB-Formats entspricht dem Inhalt des von Microsoft bereitgestellten Formats.
+Die Version 240.112.1 der EB-Formatkonfiguration **Freitextrechnung (Excel) benutzerdefinierte** wird erstellt. Diese Version hat den Status **Entwurf** und kann bearbeitet werden. Der aktuelle Inhalt Ihres benutzerdefinierten EB-Formats entspricht dem Inhalt des von Microsoft bereitgestellten Formats.
 
 ![Neue Versionen der EB-Formatkonfiguration auf der Seite „Konfigurationen“.](./media/er-embed-images-header-footer-excel-reports-derived-format-configuration1.png)
 
@@ -244,7 +244,7 @@ Konfigurieren Sie Ihr benutzerdefiniertes Format so, dass auf jeder Seite des Be
 
 ### <a name="mark-the-custom-format-as-runnable"></a><a id="MarkFormatRunnable"></a>Das benutzerdefinierte Format als ausführbar kennzeichnen
 
-Da die erste Version des benutzerdefinierten Formats mit dem Status **Entwurf** erstellt wurde, können Sie das Format zu Testzwecken ausführen. Um den Bericht auszuführen, verarbeiten Sie eine Kreditorenzahlung mithilfe der Zahlungsmethode, die sich auf Ihr benutzerdefiniertes EB-Format bezieht. Beim Aufrufen eines EB-Formats aus der Anwendung werden standardmäßig nur Versionen mit dem Status **Abgeschlossen** oder **Freigegeben** [berücksichtigt](general-electronic-reporting.md#component-versioning). Dieses Verhalten verhindert, dass EB-Formate mit unfertigen Designs verwendet werden. Für Ihre Testläufe können Sie die Anwendung jedoch zwingen, die Version Ihres EB-Formats mit dem Status **Entwurf** zu verwenden. Auf diese Weise können Sie die aktuelle Formatversion anpassen, falls Änderungen erforderlich sind. Weitere Informationen finden Sie unter [Anwendbarkeit](electronic-reporting-destinations.md#applicability).
+Da die erste Version des benutzerdefinierten Formats mit dem Status **Entwurf** erstellt wurde, können Sie das Format zu Testzwecken ausführen. Um den Bericht auszuführen, verarbeiten Sie eine Kreditorenzahlung mithilfe der Zahlungsmethode, die sich auf Ihr benutzerdefiniertes EB-Format bezieht. Beim Aufrufen eines EB-Formats aus der Anwendung werden standardmäßig nur Versionen mit dem Status **Abgeschlossen** oder **Freigegeben** berücksichtigt. Dieses Verhalten verhindert, dass EB-Formate mit unfertigen Designs verwendet werden. Für Ihre Testläufe können Sie die Anwendung jedoch zwingen, die Version Ihres EB-Formats mit dem Status **Entwurf** zu verwenden. Auf diese Weise können Sie die aktuelle Formatversion anpassen, falls Änderungen erforderlich sind. Weitere Informationen finden Sie unter [Anwendbarkeit](electronic-reporting-destinations.md#applicability).
 
 Um die Entwurfsversion eines EB-Formats zu verwenden, müssen Sie das EB-Format explizit markieren.
 

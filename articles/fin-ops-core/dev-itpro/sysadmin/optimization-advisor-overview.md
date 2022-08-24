@@ -1,26 +1,26 @@
 ---
 title: Übersicht über den Optimierungsratgeber
 description: Dieser Artikel beschreibt, wie Sie den Optimierungsberater verwenden können, um eine optimale Konfiguration von Finanzen und Betrieb zu gewährleisten.
-author: roxanadiaconu
+author: kamaybac
 ms.date: 07/23/2019
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
-ms.reviewer: sericks
-ms.assetid: ''
+ms.reviewer: kamaybac
 ms.search.region: global
-ms.search.industry: ''
-ms.author: sericks
+ms.author: kamaybac
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: fb71453c37572c4956d98d4309d3526a7fbc1124
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.assetid: ''
+ms.search.industry: ''
+ms.search.form: SelfHealingWorkspace
+ms.openlocfilehash: f24e8dfecb04f928994bb5a197d32a7279022512
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109039"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281354"
 ---
 # <a name="optimization-advisor-overview"></a>Übersicht über den Optimierungsratgeber
 
@@ -58,7 +58,7 @@ Der aktuelle Satz von Optimierungsregeln kann in die folgenden Kategorien untert
 
 Die Einrichtung der Lagerortverwaltung ist ein komplizierter Prozess. Um den Prozess zu vereinfachen, sind einige Regeln eingeführt worden, um die Korrektheit der Einstellungen zu überprüfen. Beispielsweise prüft eine Regel die Einstellung von Lagerortlagerplatzdirektiven für feste Produktvariantenlagerplätze für Aufträge und Umlagerungsaufträge.
 
-Darüber hinaus überprüfen einige Regeln, ob mehrere Regeln-Funktionen, die ausgeführt wurden, geplant werden. Beispielsweise bestimmt eine Regel, ob Sie das Modul **Produktprogrammplanung** verwenden. Wenn die Regel festlegt, dass Sie das Modul nicht verwenden, wird eine Optimierungsverkaufschance  generiert, dass Sie die Planungsprozesse deaktivieren.
+Darüber hinaus überprüfen einige Regeln, ob mehrere Regeln-Funktionen, die ausgeführt wurden, geplant werden. Beispielsweise bestimmt eine Regel, ob Sie das Modul **Produktprogrammplanung** verwenden. Wenn die Regel festlegt, dass Sie das Modul nicht verwenden, wird eine Optimierungsverkaufschance generiert, dass Sie die Planungsprozesse deaktivieren.
 
 ### <a name="system-configuration"></a>Systemkonfiguration
 

@@ -1,28 +1,26 @@
 ---
 title: Passen Sie die Konfigurationen für elektronische Berichte an, um ein elektronisches Dokument zu erstellen
 description: In diesem Artikel wird erläutert, wie Sie ein von Microsoft bereitgestelltes EB-Format (Elektronische Berichterstellung) anpassen, sodass ein benutzerdefiniertes elektronisches Dokument generiert wird.
-author: NickSelin
+author: kfend
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 30ef9a0fa9b61b1e2016f85407ec0ec8fb70a6c6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314,  ""intro-internal
+ms.assetid: ''
+ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
+ms.openlocfilehash: cd3200bea07d622632dc5781638ec825c21233e4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854697"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9278945"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Passen Sie die Konfigurationen für elektronische Berichte an, um ein elektronisches Dokument zu erstellen
 
@@ -310,7 +308,7 @@ Als Benutzer in der Rolle des Electronic Reporting Functional Consultant können
 5. Geben Sie im Feld **Name** die Bezeichnung **Rechnungsmodell (Litware)** ein.
 6. Wählen Sie **Konfiguration erstellen** aus, um die neue EBKonfiguration zu erstellen.
 
-Sie können jetzt den EB-Datenmodell-Designer verwenden, um Version 50.1 der EB-Konfiguration **Rechnungsmodells (Litware)** in **Entwurf** [Status](general-electronic-reporting.md#component-versioning) zu ändern.
+Sie können jetzt den EB-Datenmodell-Designer verwenden, um Version 50.1 der EB-Konfiguration des **Rechnungsmodells (Litware)** im Status **Entwurf** zu ändern.
 
 ![Version 50.1 der EB-Konfiguration auf der Seite Konfigurationen.](./media/er-quick-start3-added-custom-model.png)
 
@@ -337,7 +335,7 @@ Sie müssen Ihr benutzerdefiniertes Datenmodell ändern, indem Sie ein neues Fel
 
 #### <a name="complete-a-custom-data-model-configuration"></a>Benutzerdefinierte Daten-Modellkonfiguration ergänzen
 
-Sie müssen Ihre Arbeit mit Version 50.1 Ihrer benutzerdefinierten EB-Datenmodellkonfiguration [abschließen](general-electronic-reporting.md#component-versioning), um sie verfügbar zu machen, damit andere benutzerdefinierte EB-Konfigurationen hinzugefügt werden können.
+Sie müssen Ihre Arbeit mit Version 50.1 Ihrer benutzerdefinierten EB-Datenmodellkonfiguration abschließen, um sie verfügbar zu machen, damit andere benutzerdefinierte EB-Konfigurationen hinzugefügt werden können.
 
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Elektronische Berichterstellung** \> **Konfigurationen**.
 2. Erweitern Sie auf der Seite **Konfigurationen** in der Konfigurationsstruktur im linken Bereich den Punkt **Rechnungsmodell** und wählen Sie dann **Rechnungsmodell (Litware)** aus.
@@ -394,7 +392,7 @@ Sie müssen Ihre benutzerdefinierte Modellzuordnung ändern und angeben, wie das
 
 #### <a name="complete-a-custom-model-mapping-configuration"></a>Benutzerdefinierte Modellzuordnungskonfiguration ergänzen
 
-Sie müssen Ihre Arbeit mit Version 50.19.1 Ihrer benutzerdefinierten EB-Modellzuordnungskonfiguration [ergänzen](general-electronic-reporting.md#component-versioning) , um sie zur Verwendung verfügbar zu machen.
+Sie müssen Ihre Arbeit mit Version 50.19.1 Ihrer benutzerdefinierten EB-Modellzuordnungskonfiguration ergänzen , um sie zur Verwendung verfügbar zu machen.
 
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Elektronische Berichterstellung** \> **Konfigurationen**.
 2. Erweitern Sie auf der Seite **Konfigurationen** in der Konfigurationsstruktur im linken Bereich den Punkt **Benutzerdefiniertes Rechnungsmodell** \> **Benutzerdefiniertes Rechnungsmodellzuordnung** und wählen Sie **Rechnugsmodellzuordnung (Litware)** aus.
@@ -428,7 +426,7 @@ Als Benutzer in der Rolle des Electronic Reporting Functional Consultant können
 
 ![Eine benutzerdefinierte Formatkonfiguration auf der Konfigurationsseite hinzufügen.](./media/er-quick-start3-adding-custom-format.png)
 
-Sie können jetzt den EB-Vorgangs-Designer verwenden, um Version 11.2.2.1 der EB-Konfiguration **Peppol Verkaufsrechnung (Litware)** im **Entwurf** [Status](general-electronic-reporting.md#component-versioning) zu bearbeiten.
+Sie können jetzt den EB-Vorgangs-Designer verwenden, um Version 11.2.2.1 der EB-Konfiguration **Peppol Verkaufsrechnung (Litware)** im Status **Entwurf** zu bearbeiten.
 
 ![Version 11.2.2.1 der EB-Konfiguration auf der Seite Konfigurationen.](./media/er-quick-start3-added-custom-format.png)
 
@@ -463,7 +461,7 @@ Sie müssen Ihr benutzerdefiniertes Format ändern, indem Sie ein neues Formatel
 
 #### <a name="complete-a-custom-format-configuration"></a>Eine benutzerdefinierte Formatkonfiguration ergänzen
 
-Sie müssen Ihre Arbeit mit Version 11.2.2.1 Ihrer benutzerdefinierten EB-Formatkonfiguration [ergänzen](general-electronic-reporting.md#component-versioning) , um sie zur Verwendung verfügbar zu machen.
+Sie müssen Ihre Arbeit mit Version 11.2.2.1 Ihrer benutzerdefinierten EB-Formatkonfiguration ergänzen, um sie zur Verwendung verfügbar zu machen.
 
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Elektronische Berichterstellung** \> **Konfigurationen**.
 2. Erweitern Sie auf der Seite **Konfigurationen** in der Konfigurationsstruktur im linken Bereich den Punkt **Benutzerdefiniertes Rechnungsmodell** \> **UBL Vertriebsrechung** \> **Peppol Verkaufsrechnung** und wählen Sie dann **Peppol Verkaufsrechnung (Litware)** aus.
@@ -650,7 +648,7 @@ Der Status von Version 32.6.7.2 wird von **Entwurf** zu **Abgeschlossen** geän
 3. Im Aktionsbereich in der Gruppe **Dokument** wählen Sie **Senden** \> **Original**.
 
     > [!NOTE] 
-    > Weil Sie jetzt zwei Versionen der **Peppol Verkaufsrechnung (Litware)** EB-Formatkonfiguration haben und keine Version ein [Datum des Inkrafttretens](general-electronic-reporting.md#component-date-effectivity) hat, wird die neueste Version verwendet, um eine E-Rechnung zu erstellen.
+    > Weil Sie jetzt zwei Versionen der EB-Formatkonfiguration **Peppol Verkaufsrechnung (Litware)** haben und keine Version ein Datum des Inkrafttretens hat, wird die neueste Version verwendet, um eine E-Rechnung zu erstellen.
 
 4. Schließen Sie die Seite **Freitextrechnung**.
 

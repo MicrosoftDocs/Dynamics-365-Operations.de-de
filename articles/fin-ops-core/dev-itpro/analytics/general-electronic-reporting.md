@@ -1,28 +1,26 @@
 ---
 title: Überblick über die elektronische Berichterstellung (ER)
 description: Dieser Artikel bietet eine Übersicht zum Tool zur elektronischen Berichterstellung. Es beschreibt Schlüsselkonzepte, unterstützte Szenarien und Formate, die Teil der Lösung sind.
-author: NickSelin
+author: kfend
 ms.date: 11/02/2021
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "58941"
-- intro-internal
-ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1f3853e0c1da0a5abb3f92171370cc4aeabbd829
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.custom: 58941,  ""intro-internal
+ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
+ms.search.form: ERWorkspace
+ms.openlocfilehash: e94846dd565abb6de2c1f07532d285e28307e9a2
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109579"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269690"
 ---
 # <a name="electronic-reporting-er-overview"></a>Überblick über die elektronische Berichterstellung (ER)
 
@@ -78,7 +76,7 @@ Das ER-Modul hat folgende Funktionen:
 
 [![EB-Hauptdatenfluss.](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
 
-### <a name="components"></a>Komponenten
+### <a name="component"></a>Bestandteil
 
 ER unterstützt die folgenden Komponententypen:
 
@@ -89,32 +87,7 @@ ER unterstützt die folgenden Komponententypen:
 
 Weitere Informationen finden Sie unter [Komponenten der elektronischen Berichterstellung](er-overview-components.md).
 
-
-#### <a name="component-versioning"></a>Teilversionsverwaltung
-
-Die Versionsverwaltung wird für ER-Komponenten unterstützt. Der folgende Workflow wird für die Verwaltung von Änderungen in ER-Komponenten bereitgestellt:
-
-1. Die Version, die ursprünglich erstellt wurde, ist als **Entwurf**-Version gekennzeichnet. Diese Version kann bearbeitet werden und ist für Testläufe verfügbar.
-2. Die **Entwurf**-Version kann in eine **Abgeschlossen**-Version konvertiert werden. Diese Version kann in lokalen Berichtsprozessen verwendet werden.
-3. Die **Abgeschlossen**-Version kann in eine **Freigegeben**-Version konvertiert werden. Diese Version wird im LCS veröffentlicht und kann in den globalen Berichterstellungsprozessen verwendet werden.
-4. Die **Gemeinsam genutzt**-Version kann in eine **Eingestellt**-Version konvertiert werden. Diese Version kann anschließend gelöscht werden.
-
-Versionen in einem **Abgeschlossen** oder **Gemeinsam genutzt**-Status sind für anderen Datenaustausch verfügbar. Die folgenden Aktionen können für eine Komponente mit diesen Status ausgeführt werden:
-
-- Die Komponente kann im XML-Format serialisiert und als Datei im XML-Format exportiert werden.
-- Die Komponente kann aus einer XML-Datei reserialisiert und als neue Version einer ER-Komponente in der Anwendung importiert werden.
-
-#### <a name="component-date-effectivity"></a>Teildatumswirksamkeit
-
-ER-Komponentenversionen haben ein Gültigkeitsdatum. Sie können das **Gültig ab**-Datum für eine ER-Komponente definieren, um das Datum anzugeben, ab dem diese Komponente für Berichtsprozesse wirksam wird. Das Anwendungs-Sitzungsdatum wird verwendet, um zu definieren, ob eine Komponente für die Ausführung gültig ist. Wenn mehrere Versionen für ein bestimmtes Datum gültig sind, wird die aktuellste Version für die Berichterstattung verwendet.
-
-#### <a name="component-access"></a>Teilzugriff
-
-Der Zugriff auf ER-Formatkomponenten hängt von den Einstellungen des ISO-Länder-/Regionscode ab. Wenn diese Einstellung für eine ausgewählte Version einer Formatkonfiguration leer ist, kann der Zugriff auf eine Formatkomponente von jedem Unternehmen aus zur Laufzeit erfolgen. Wenn diese Einstellung ISO-Länder-/Regionscodes enthält, steht eine Formatkomponente nur von Unternehmen zur Verfügung, die eine primäre Adresse besitzen, die für einen der ISO-Länder-/Regionscodes einer Formatkomponente definiert ist.
-
-Für unterschiedliche Versionen einer Datenformatkomponente kann es verschiedene Einstellungen von ISO-Länder-/Regionscodes geben.
-
-#### <a name="configuration"></a><a name="Configuration"></a>Konfiguration
+### <a name="configuration"></a><a name="Configuration"></a>Konfiguration
 
 Eine ER-Konfiguration ist der Wrapper einer bestimmten ER-Komponente. Diese Komponente kann entweder eine Datenmodellkomponente oder eine Formatkomponente sein. Eine Konfiguration kann unterschiedliche Versionen einer ER-Komponente beinhalten. Jede Konfiguration wird markiert als im Besitz von einem bestimmten Konfigurationsanbieter. Die **Entwurf**-Version einer Konfigurationskomponente kann bearbeitet werden, wenn der Besitzer einer Konfiguration als aktiver Anbieter in den ER-Einstellungen in der Anwendung ausgewählt wurde.
 
@@ -124,13 +97,13 @@ Die erstellte Formatkonfiguration enthält eine Format Komponente. Die Datenmode
 
 Eine ER-Konfiguration wird für Anwendungs-Unternehmen gemeinsam genutzt.
 
-#### <a name="provider"></a><a name="Provider"></a>Anbieter
+### <a name="provider"></a><a name="Provider"></a>Anbieter
 
 Der ER-Anbieter ist der Bezeichner einer Partei, die verwendet wird, um den Autor (Besitzer) jeder einzelnen ER-Konfiguration anzugeben. ER ermöglicht die Verwaltung einer Liste von Konfigurationsanbietern. Formatkonfigurationen, die für elektronische Belege als Teil der Finanzen und Betrieb Lösung freigegeben werden, sind als Eigentum des **Microsoft** Konfigurationsanbieters gekennzeichnet.
 
 Informationen zum Registrieren eines neuen ER-Anbieters enthält der Aufgabenleitfaden **ER – Konfigurationsanbieter erstellen und als aktiv markieren** (Teil des Geschäftsprozesses **7.5.4.3 Erwerben/Entwickeln von IT-Service-/-Lösungskomponenten (10677)**).
 
-#### <a name="repository"></a><a name="Repository"></a>Repository
+### <a name="repository"></a><a name="Repository"></a>Repository
 
 Ein ER-Repository speichert ER-Konfigurationen. Folgende Typen von ER-Repositorys werden derzeit unterstützt: 
 
@@ -145,7 +118,7 @@ Ein **LCS-freigegebene Bibliothek** Repository bietet Zugriff auf die Liste der 
 
 Ein **LCS-Projekt**-Repository bietet Zugriff auf die Konfigurationsliste eines bestimmten LCS-Projekts (LCS-Projektanlagenbibliothek), das ausgewhlt wurde, wenn das Repository ausgewählt wurde. ER ermöglicht Ihnen, freigegebene Konfigurationen von der aktuellen Instanz in ein spezifisches **LCS-Projekt**-Repository hochzuladen. Sie können auch Konfigurationen aus einem **LCS Projekt** Repository in die aktuelle Instanz Ihrer Finanz- und Betriebs-Apps importieren.
 
-Ein **Dateisystem**-Repository bietet Zugriff auf die Liste von Konfigurationen, die sich als XML-Dateien im speziellen Ordner des lokalen Dateisystems des Computer befinden, auf dem der AOS-Dienst gehostet wird. Obligatorischer Ordner wird in der Repositoryregistrierungsphase ausgewählt. Sie können Konfigurationen aus einem **Dateisystem**-Repository in die aktuelle Instanz importieren. 
+Ein **Dateisystem**-Repository bietet Zugriff auf die Liste von Konfigurationen, die sich als XML-Dateien im speziellen Ordner des lokalen Dateisystems des Computer befinden, auf dem der AOS-Dienst gehostet wird. Der obligatorische Ordner wird in der Repositoryregistrierungsphase ausgewählt. Sie können Konfigurationen aus einem **Dateisystem**-Repository in die aktuelle Instanz importieren. 
 
 Beachten Sie, dass auf diesen Repositorytyp in die folgenden Umgebungen zugegriffen werden kann:
 
@@ -162,7 +135,7 @@ Ein **Globales** Repository bietet Zugriff auf die Liste der Konfigurationen inn
 
 Weitere Informationen unter [Importieren von elektronischen Berichtstellungskonfigurationen aus dem globalen Repository der Konfigurationsdienste](./er-download-configurations-global-repo.md).
 
-Ein **Betriebliches Ressourcen**-Repository bietet Zugriff auf die Liste der Konfigurationen, die Microsoft als ER-Konfigurationsanbieter bereitstellt, die ursprünglich als Teil der Anwendungslösung freigegeben wurden. Diese Konfigurationen können in die aktuelle Instanz importiert und für die elektronische Berichtserstellung verwendet werden oder als Muster-Aufgabenleitfaden abgespielt werden. Sie können auch für zusätzliche Lokalisierungen und Anpassungen verwendet werden. Beachten Sie, dass die neuesten Versionen, die von der Microsoft ER Konfigurationen bereitgestellt werden, von der Bibliothek der LCS-freigegebenen Anlagen importiert werden müssen, indem das ER-Repository entsprechend verwendet wird.
+Ein **Betriebliches Ressourcen**-Repository bietet Zugriff auf die Liste der Konfigurationen, die Microsoft als ER-Konfigurationsanbieter bereitstellt, die ursprünglich als Teil der Anwendungslösung freigegeben wurden. Diese Konfigurationen können in die aktuelle Instanz importiert und für die elektronische Berichtserstellung verwendet werden oder als Muster-Aufgabenleitfaden abgespielt werden. Sie können auch für zusätzliche Lokalisierungen und Anpassungen verwendet werden. Beachten Sie, dass die neuesten Versionen, die von der Microsoft EB-Konfigurationen bereitgestellt werden, von der Bibliothek der LCS-freigegebenen Anlagen importiert werden müssen, indem Sie das entsprechende EB-Repository verwenden.
 
 Benötigte **LCS-Projekt**-, **Dateisystem**- und **Gesetzliche Konfigurationsdienste (RCS)**-Repositorys können einzeln für jeden Konfigurationsanbieter der aktuellen Instanz registriert werden. Jedes Repository kann für einen bestimmten Konfigurationsanbieter dediziert werden.
 
@@ -265,6 +238,7 @@ Die Liste der EB-Konfigurationen für Finance wird ständig aktualisiert. Öffne
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
+- [Überblick über die Komponenten der elektronischen Berichterstellung](er-overview-components.md)
 - [Eine Elektronische Berichterstellungskonfiguration (ER) erstellen](electronic-reporting-configuration.md)
 - [Den Konfigurationslebenszyklus der elektronischen Berichterstellung (EB) verwalten](general-electronic-reporting-manage-configuration-lifecycle.md)
 

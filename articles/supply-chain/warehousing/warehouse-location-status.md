@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 6d04ca43895935329b711f2658360c41f611975e
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 2b3c408f5a5e4ce85a235ac83c15b648e43b5e10
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065463"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220056"
 ---
 # <a name="warehouse-location-status"></a>Status des Lagerplatzes an einem Lagerort
 
@@ -42,10 +42,7 @@ Die folgenden vier Felder auf der Seite **Lagerplätze** bieten Informationen zu
 
 ## <a name="turn-on-the-warehouse-location-status-feature"></a>Statusfunktion für den Lagerplatz an einem Lagerort aktivieren
 
-Bevor Sie die Funktion für *Status für den Lagerplatz an einem Lagerort* verwenden können, muss sie in Ihrem System aktiviert sein. Administratoren können mit den Einstellungen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie gegebenenfalls aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
-
-- **Module:** *Lagerortverwaltung*
-- **Funktionsname:** *Status für den Lagerplatz an einem Lagerort*
+Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Ab Supply Chain Management Version 10.0.29 ist diese Funktion standardmäßig aktiviert. Administratoren können diese Funktionalität an- oder ausschalten, indem Sie nach der Funktion *Status des Lagerplatzes an einem Lagerort* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ## <a name="set-up-warehouse-location-status"></a>Status für den Lagerplatz an einem Lagerort einrichten
 
@@ -55,7 +52,7 @@ Bevor Sie mit der Bearbeitung des Szenarios beginnen, müssen Sie Beispieldaten 
 
 #### <a name="use-the-usmf-legal-entity"></a>USMF juristische Person verwenden
 
-Um das Beispielszenario mithilfe der Beispieldatensätze und -werte, die hier angegeben sind, zu verarbeiten, müssen Sie ein System verwenden, auf dem die standardmäßigen [Demodaten](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) installiert sind. Außerdem müssen Sie die **USMF** juristische Person auswählen, bevor Sie beginnen.
+Um das Beispielszenario mithilfe der Beispieldatensätze und -werte, die hier angegeben sind, zu verarbeiten, müssen Sie ein System verwenden, auf dem die standardmäßigen [Demodaten](../../fin-ops-core/fin-ops/get-started/demo-data.md) installiert sind. Außerdem müssen Sie die **USMF** juristische Person auswählen, bevor Sie beginnen.
 
 #### <a name="set-up-location-profiles"></a>Lagerplatzprofile einrichten
 

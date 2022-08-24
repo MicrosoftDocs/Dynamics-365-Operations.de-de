@@ -1,24 +1,24 @@
 ---
 title: Einrichtung der elektronischen Steuererklärung für Deutschland
 description: In diesem Artikel wird erläutert, wie Sie eine elektronische Steuererklärung einrichten.
-author: NickSelin
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: TaxElectronicDeclarationSetup, TaxElectronicCertificates, TaxElectronicHTTPServer
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Germany
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5af55f42a61e2c68492f41bed926ec70051266e3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: TaxElectronicDeclarationSetup, TaxElectronicCertificates, TaxElectronicHTTPServer
+ms.openlocfilehash: 59bbc44aa8a6d4bc91e1070a8decae80ac140159
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878298"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9289924"
 ---
 # <a name="set-up-electronic-tax-declaration-for-germany"></a>Einrichtung der elektronischen Steuererklärung für Deutschland
 

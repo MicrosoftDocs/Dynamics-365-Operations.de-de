@@ -7,20 +7,20 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ca95bd31af8f244f60f12120bc6df121f48cc7ea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: ''
+ms.openlocfilehash: 7a7be6395a8bfce38e84f850bd792f358941c18a
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884814"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9275569"
 ---
 # <a name="apply-unit-of-measure-settings"></a>Einstellungen für Maßeinheiten anwenden
 
@@ -28,9 +28,9 @@ ms.locfileid: "8884814"
 
 Dieser Artikel behandelt die Einstellungen der Maßeinheit und beschreibt, wie sie auf Microsoft Dynamics 365 Commerce festgelegt werden.
 
-Ein Produkt kann in verschiedenen Einheiten verkauft werden, z. B. „pro Stück“, „Paar“ und „Dutzend“. In der Commerce-Zentrale kann die verkaufte Maßeinheit für ein Produkt definiert werden und auf einer E-Commerce-Seite angezeigt werden. Wenn zum Beispiel ein Einzelhändler ein Produkt sowohl einzeln als auch in Dutzenden verkauft, können die verfügbaren Maßeinheiten zusammen mit anderen Produktinformationen angezeigt werden.
+Ein Produkt kann in verschiedenen Einheiten verkauft werden, z. B. „pro Stück“, „Paar“ und „Dutzend“. In der Commerce headquarters kann die verkaufte Maßeinheit für ein Produkt definiert werden und auf einer E-Commerce-Seite angezeigt werden. Wenn zum Beispiel ein Einzelhändler ein Produkt sowohl einzeln als auch in Dutzenden verkauft, können die verfügbaren Maßeinheiten zusammen mit anderen Produktinformationen angezeigt werden.
 
-Im Beispiel in der folgenden Abbildung wurde für ein Produkt in der Commerce-Zentrale eine Maßeinheit **ea** (pro Stück) konfiguriert.
+Im Beispiel in der folgenden Abbildung wurde für ein Produkt in der Commerce headquarters eine Maßeinheit **ea** (pro Stück) konfiguriert.
 
 ![Beispiel für ein Produkt, das mit einer Maßeinheit in der Commerce-Zentralverwaltung konfiguriert ist.](./media/Productunit-headquarters.PNG)
 

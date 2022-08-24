@@ -2,7 +2,7 @@
 title: Basisänderung in ICMS-DIF-Steuerberechnungen bei Produkten von Lieferanten aus anderen Staaten
 description: In diesem Artikel wird die Konfiguration für die Berechnungen des ICMS-DIF-Steuertyps beschrieben, wenn ein Steuerdokument im brasilianischen Bundesstaat Rio Grande do Sul (RS) oder São Paulo (SP) eingeht.
 author: Kai-Cloud
-ms.date: 1/20/2022
+ms.date: 06/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2022-1-17
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 1fde18c79f375db4db6bc52cdb5c40a61625ae63
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1bd9982a3804778a27203b4311682ee8bc3c4841
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868261"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218648"
 ---
-# <a name="basis-change-in-icms-dif-tax-calculations-for-products-from-suppliers-in-other-states"></a>Basisänderung in ICMS-DIF-Steuerberechnungen bei Produkten von Lieferanten aus anderen Staaten
+# <a name="basis-change-dual-base-in-icms-dif-tax-calculations-for-products-from-suppliers-in-other-states"></a>Basisänderung (doppelte Basis) in ICMS-DIF-Steuerberechnungen bei Produkten von Lieferanten aus anderen Staaten
 
 In diesem Artikel wird die Konfiguration für die Berechnungen des **ICMS-DIF**-Steuertyps beschrieben, wenn ein Steuerdokument im brasilianischen Bundesstaat Rio Grande do Sul (RS) oder São Paulo (SP) eingeht.
 
@@ -46,6 +46,25 @@ Um das differenzielle ICMS (ICMS-DIF) gemäß den Regeln des RS-Staates zu berec
 2. Erstellen Sie eine neuen Mehrwertsteuercode, um den ICMS-DIF zu erfassen. Dieser Mehrwertsteuercode sollte einen prozentualen Betrag von 18 Prozent (für Ihren eigenen Staat) haben, um die Differenz zwischen 18 Prozent und 12 Prozent zu definieren. Legen Sie die Steuerart auf **ICMS-DIF** fest. Dieser Mehrwertsteuercode muss in den Berechnungsparametern wie folgt definiert werden:
 
     - Wählen Sie im Feld **Herkunft** **Anteil des Bruttobetrags** aus.
-    - Wählen Sie **Berechnungsgrundlage**-Feld **Nettobetrag pro Position** oder **Nettobetrag des Rechnungssaldos** aus.
+    - Wählen Sie im Feld **Berechnungsgrundlage** **Nettobetrag pro Zeile**.
     - Definieren Sie den Steuercode so, dass er einen steuerlichen Wert von **3** hat. Auf diese Weise wird die Regulierungstransaktion automatisch erstellt, wenn das **Steuerbücher**-Modul aktiviert ist.
     - Wählen Sie in der Konfiguration der Umsatzsteuergruppe die **Verbrauchsteuer**-Option für den **ICMS-DIF**-Mehrwertsteuercode aus.
+
+### <a name="use-the-delta-tax-rate-in-the-configuration-of-dual-base-icms-dif-sales-tax-codes"></a>Verwenden Sie den Deltasteuersatz im ICMS-DIF-Steuercode in der Konfiguration für den doppelten Basisfall.
+
+Wenn die zuvor beschriebenen Einstellungen verwendet werden, wird der **ICMS-DIF** Umsatzsteuercode nach der Doppelten Basis-Regel berechnet. Der nominale Steuersatz beträgt jedoch 18 Prozent, was von dem 6-Prozent-Satz in der einfachen Basisregel abweicht. Dieser Unterschied führt zu Inkonsistenzproblemen in Steuerdokumenten und Steuerberichten. Ab Microsoft Dynamics 365 Finance Version 10.0.29 können Sie die Funktion **Konfigurieren Sie den Deltasteuersatz im ICMS-DIF-Steuercode für den doppelten Basisfall** in **Funktionsverwaltung** aktivieren, um den Widerspruch beseitigen.
+
+- Wählen Sie zusätzlich zu den Schritten im vorherigen Abschnitt den Umsatzsteuercode **ICMS 12** unter **Umsatzsteuer** im Umsatzsteuer-Feld aus.
+- Legen Sie den Steuersatz des **ICMS-DIF** Umsatzsteuercodes auf 18 Prozent fest. Das Feld **Prozentsatz/Betrag** zeigt den nominalen Steuersatz als 6 Prozent an.
+
+> [!NOTE]
+> Die Mehrwertsteuercodes **ICMS-DIF** und **ICMS 12** müssen derselben Mehrwertsteuergruppe zugeordnet werden.
+
+## <a name="basis-change-dual-base-in-icms-dif-tax-calculations-for-products-to-non-taxpayer-consumers-difal-in-other-states"></a>Basisänderung (doppelte Basis) in ICMS-DIF-Steuerberechnungen bei Produkten für Nichtsteuerzahler (DIFAL) aus anderen Staaten
+
+Aktivieren Sie die Funktion **(Brasilien) Duale Basisberechnung für ICMS-DIFAL in Verkaufstransaktionen** unter **Funktionsverwaltung** zur Unterstützung des Basiswechsels ICMS-DIF zum Handel mit nicht steuerpflichtigen Verbrauchern aus einem anderen Staat. Der Beispiel-ICMS-DIF-Mehrwertsteuercode wird in Verkaufsauftrags- und Freitextrechnungstransaktionen wirksam.
+
+Aktivieren Sie die Funktion **(Brasilien) Duale Basisberechnung für ICMS-DIFAL für IPI-Fälle** unter **Funktionsverwaltung**, um Szenarien zu unterstützen, in denen der Handel mit nicht steuerpflichtigen Verbrauchern aus einem anderen Staat auch für Imposto sobre Produtos Industrializados (IPI) haftbar ist. Der Steuerbetrag des IPI-Umsatzsteuercodes wird in der ICMS-DIFAL-Steuerbemessungsgrundlage anerkannt und angewendet.
+
+- Auf der Kopfzeile des Verkaufsauftrags oder der Freitextrechnung, auf dem Inforegister **Steuerinformationen** muss die Option **Endnutzer** auf **Ja** gesetzt sein.
+- Auf der Kopfzeile der Bestellung oder Kreditorenrechnung, auf dem Inforegister **Steuerinformationen** muss die Option **Verwendung und Verbrauch** auf **Ja** gesetzt sein.

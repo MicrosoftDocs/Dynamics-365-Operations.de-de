@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 3465866df0d766b2300eb4fd1989c034cedbbb22
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: d99a7a7d0261ba0afd19efbb237dff329527723d
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9123807"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219153"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Neuerungen und Änderungen in Dynamics 365 Supply Chain Management 10.0.20 (August 2021)
 
@@ -49,7 +49,7 @@ Die folgende Tabelle listet die Funktionsverbesserungen auf, die in dieser Versi
 | Modul | Funktion&nbsp;Name&nbsp;in Funktion&nbsp;Verwaltung | Mehr erfahren |
 |---|---|---|
 | Produktprogrammplanung | Parallele Autorisierung der angepassten Bedarfsplanung | Diese Funktion ermöglicht die parallele Autorisierung der angepassten Bedarfsprognose aus der Seite **Angepasste Nachfrageprognose**. Mit dieser Funktion soll die Leistung gesteigert werden, wenn eine große Anzahl von Prognosen genehmigt wird. Bei der Autorisierung kann der Benutzer die **Anzahl der Themen** im Autorisierungsdialog angeben. |
-| Produktprogrammplanung | (Vorschau) Chargenfähige Umwandlung und Konsolidierung für geplante Sammel- und Verpackungschargenaufträge | Mit dieser Funktion können Sie Batchaufträge verwenden, um geplante Sammel- und Verpackungsaufträge zu konsolidieren. |
+| Produktprogrammplanung | Chargenfähige Umwandlung und Konsolidierung für geplante Sammel- und Verpackungschargenaufträge | Mit dieser Funktion können Sie Batchaufträge verwenden, um geplante Sammel- und Verpackungsaufträge zu konsolidieren. |
 | Produktionssteuerung | Generische Arbeitspläne kopieren | Diese Funktion erweitert die Funktion zum Kopieren von Routen, sodass Benutzer Routen kopieren können, die nicht objektspezifisch sind. Es ermöglicht dem System, alle relevanten Informationen (wie Standort, Routengruppe, Ressourcenanforderungen und verschiedene Zeiten) zu aktualisieren, nachdem die Funktion zum Kopieren von Routen zum Überschreiben einer Route verwendet wurde, die noch keinem Element zugewiesen ist. |
 | Produktionssteuerung | Zugehörige Ressourcenanforderungen bei Änderung eines Arbeitsplanvorgangs aktualisieren | Mit dieser Funktion kann das System die zugehörigen Ressourcenanforderungen aktualisieren, nachdem ein Benutzer den Vorgang eines vorhandenen Arbeitsplanschritts geändert hat. |
 | Produktinformationsverwaltung | Die Stückliste meldet eine Vorverarbeitung, um Zeitüberschreitungen zu vermeiden | Diese Funktion bewirkt, dass der Stücklistenbericht vorverarbeitet wird. Dadurch werden Zeitüberschreitungsprobleme vermieden, wenn der Bericht eine große Datenlast aufweist. |

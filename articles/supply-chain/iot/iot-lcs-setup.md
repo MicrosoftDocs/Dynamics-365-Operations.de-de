@@ -2,7 +2,7 @@
 title: IoT-Intelligenz-Add-In in LCS installieren
 description: In diesem Artikel wird erläutert, wie Sie das IoT-Intelligenz-Add-In in Microsoft Dynamics Lifecycle Services (LCS) installieren.
 author: johanhoffmann
-ms.date: 07/07/2020
+ms.date: 08/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 52fe4c4a79378aca5f1e64c8b3f4fa85199c9911
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e18b05be1f2ba78c71515e4e76f180355d044b98
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887485"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227833"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>IoT-Intelligenz-Add-In in LCS installieren
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [iot-sdi-announcement](../../includes/iot-sdi-announcement.md)]
 
 In diesem Artikel wird erläutert, wie Sie das IoT-Intelligenz-Add-In in Microsoft Dynamics Lifecycle Services (LCS) installieren. Beachten Sie, dass Add-Ins nicht in einer Demo-/Testversionsumgebung installiert werden können. Bevor Sie das Add-In installieren können, müssen Sie die [Azure-Ressourcen erstellen](iot-azure-setup.md).
 

@@ -1,25 +1,25 @@
 ---
 title: Konfigurieren elektronischer Berichterstattung (EB), um Daten in Power BI einzubeziehen
 description: In diesem Artikel wird erläutert, wie Sie die Konfiguration der elektronischen Berichterstellung (EB) verwenden können, um die Übertragung von Daten aus Ihrer Instanz zu den Power BI-Diensten zu veranlassen.
-author: NickSelin
+author: kfend
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
-ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e6903513dec4da20dbc4463fbae6a406fc06e1a6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
+ms.openlocfilehash: be0e79bb767a8bd2db4c02dc2b73bfbc5cb95675
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8896733"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281721"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Konfigurieren elektronischer Berichterstattung (EB), um Daten in Power BI einzubeziehen
 
@@ -73,7 +73,7 @@ Sie müssen ein Datenmodell zur elektronischen Berichterstellung als Quelle von 
 ## <a name="design-an-er-format-configuration"></a>Eine Formatkonfiguration für die elektronische Berichterstellung entwerfen
 Sie müssen eine neue Formatkonfiguration für elektronische Berichterstellung erstellen, die das Datenmodell **Intrastat** als Quelle von Geschäftsdaten verwendet. Diese Formatkonfiguration muss Ausgabeergebnisse als elektronische Dokumente im OpenXML-(Excel-Datei)-Format erstellen. Für weitere Informationen geben Sie den Aufgabenleitfaden **Elektronische Berichterstellung – Eine Konfiguration für Berichte im OPENXML-Format erstellen** wieder. Benennen Sie die neue Konfiguration **Aktivitäten importieren / exportieren**, wie in der folgenden Abbildung dargestellt. Verwenden Sie die [Daten der elektronischen Berichterstellung – Details importieren und exportieren](https://download.microsoft.com/download/f/7/5/f755c0fd-025c-4aa9-920b-909abb8302ad/ER-data-import-and-export-details.xlsx) Excel-Datei als Vorlage, wenn Sie das Format der elektronischen Berichterstellung entwerfen. (Um weitere Informationen darüber zu erhalten, wie eine Formatvorlage importiert wird, geben Sie den Aufgabenleitfaden wieder.)
 
-![[Aktivitätenkonfiguration importieren/exportieren.](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png)
+[![Aktivitätenkonfiguration importieren/exportieren.](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png)
 
 Um das Format **Import-/Exportaktivitäten** zu ändern, führen Sie die folgenden Schritte aus.
 
@@ -100,7 +100,7 @@ Um das Format **Import-/Exportaktivitäten** zu ändern, führen Sie die folgend
 
 Nachdem diese ausgeführt ist, generiert das Format der elektronischen Berichterstellung das Ausgabeergebnis im Excel-Format. Es sendet die Details der Intrastat-Buchungen zum Ausgabeergebnis und trennt sie als Transaktionen, die entweder Importaktivitäten oder Exportaktivitäten beschreiben. Klicken Sie **Ausführen** auf, um das neue Format der elektronischen Berichterstellung für die Liste von **Intrastat**-Buchungen auf der Seite Intrastat zu testen (**Steuer** &gt; **Meldungen** &gt; **Außenhandel** &gt; **Intrastat)**.
 
-![[Intrastat-Seite.](./media/ger-power-bi-format-test-run-transactions-1024x322.png)](./media/ger-power-bi-format-test-run-transactions.png)
+[![Intrastat-Seite.](./media/ger-power-bi-format-test-run-transactions-1024x322.png)](./media/ger-power-bi-format-test-run-transactions.png)
 
 Das folgende Ausgabeergebnis wird generiert. Die Datei wird **Import- und Exportdetails.xlsx** benannt, wie Sie in den Formateinstellungen angegeben haben.
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: a89ca5dd4f46611e75faccd3213028750fa48d35
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: fa1482cb73a40df5f9bc9d3037196def71accf18
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850274"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279474"
 ---
 # <a name="payment-module"></a>Zahlungsmodul
 
@@ -109,7 +109,7 @@ Wenn sowohl der Adyen- als auch der PayPal-Zahlungskonnektor für Ihre Site verw
     1. Aktivieren Sie das Kontrollkästchen für die Eigenschaft **Konnektor-ID verwenden**.
 
 > [!NOTE]
-> Wenn Sie die Adyen- und PayPal-Konnektoren für die gemeinsame Verwendung konfigurieren, wird die **Zahlungskonnektor von Dynamics 365 für Adyen**-Konfiguration in der **Zahlungskonten**-Konnektorkonfiguration in der Commerce-Zentrale des Onlinekanals an erster Stelle stehen. Um die Konnektorreihenfolge zu bestätigen oder zu ändern, gehen Sie zu **Onlineshops**, und wählen Sie den Kanal für Ihre Website aus. Stellen Sie dann auf der **Konfiguration**-Registerkarte im Inforegister **Zahlungskonten** unter **Konnektor** sicher, dass die **Zahlungskonnektor von Dynamics 365 für Adyen**-Konfiguration an erster Stelle (d. h. in der obersten Zeile) steht und dass die **Dynamics 365-Zahlungskonnektor für PayPal**-Konfiguration in der zweiten Zeile steht. Fügen Sie nach Bedarf Konnektoren hinzu oder entfernen Sie sie, um sie neu anzuordnen.
+> Wenn Sie die Adyen- und PayPal-Konnektoren für die gemeinsame Verwendung konfigurieren, wird die **Zahlungskonnektor von Dynamics 365 für Adyen**-Konfiguration in der **Zahlungskonten**-Konnektorkonfiguration in der Commerce headquarters des Onlinekanals an erster Stelle stehen. Um die Konnektorreihenfolge zu bestätigen oder zu ändern, gehen Sie zu **Onlineshops**, und wählen Sie den Kanal für Ihre Website aus. Stellen Sie dann auf der **Konfiguration**-Registerkarte im Inforegister **Zahlungskonten** unter **Konnektor** sicher, dass die **Zahlungskonnektor von Dynamics 365 für Adyen**-Konfiguration an erster Stelle (d. h. in der obersten Zeile) steht und dass die **Dynamics 365-Zahlungskonnektor für PayPal**-Konfiguration in der zweiten Zeile steht. Fügen Sie nach Bedarf Konnektoren hinzu oder entfernen Sie sie, um sie neu anzuordnen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

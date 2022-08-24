@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 4d46933b7c60317234b8e39cd6dfd63d383de860
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9361448ba7993ba7cc126d6dd60a45fe497b2e84
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857140"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218769"
 ---
 # <a name="cluster-position-full"></a>Clusterposition voll
 
@@ -38,7 +38,7 @@ Dieser Abschnitt enthält Richtlinien und ein Beispiel, das zeigt, wie Sie die *
 
 ### <a name="make-sample-data-available"></a>Beispieldaten zur Verfügung stellen
 
-Um das [Beispielszenario](#example-scenario) mithilfe der Beispieldatensätze und -werte, die hier angegeben sind, zu verarbeiten, müssen Sie ein System verwenden, auf dem die standardmäßigen [Demodaten](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) installiert sind. Außerdem müssen Sie die **USMF** juristische Person auswählen, bevor Sie beginnen.
+Um das [Beispielszenario](#example-scenario) mithilfe der Beispieldatensätze und -werte, die hier angegeben sind, zu verarbeiten, müssen Sie ein System verwenden, auf dem die standardmäßigen [Demodaten](../../fin-ops-core/fin-ops/get-started/demo-data.md) installiert sind. Außerdem müssen Sie die **USMF** juristische Person auswählen, bevor Sie beginnen.
 
 Sie können dieses Beispielszenario auch als Anleitung zur Arbeit Sie an einem Produktionssystem mit dieser Funktion nutzen. In diesem Fall müssen Sie jedoch für alle hier beschriebene Einstellungen Ihre eigenen Werte einsetzen.
 

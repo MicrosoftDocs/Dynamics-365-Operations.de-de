@@ -2,7 +2,7 @@
 title: Sortierreihenfolge bei Verkaufsentitäten ändern
 description: In diesem Artikel werden die Konzepte erläutert, die zum Steuern der Anzeigereihenfolge für verschiedene verkaufsbezogene Entitäten in Dynamics 365 Commerce zugeordnet werden.
 author: josaw1
-ms.date: 08/05/2019
+ms.date: 08/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,27 +15,27 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4e7a7bd42b0ef72ae6bc3f52a8857602b6282907
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 80586597f4f60476b341e4cf1cfd90f3681e15c0
+ms.sourcegitcommit: 52e31b1ef2b3ed8675de931d06090cd57e057fc2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847653"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9265835"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Ändern Sie die Sortierreihenfolge für Verkaufsentitäten
 
 
 [!Include [banner](includes/banner.md)]
 
-Einzelhändler erachten die Produkterfassung als ein primäres Tool für Debitoreninteraktionen über alle Kanäle hinweg. Verschiedene Funktionen können Debitoren helfen, Produkte einfacher zu ermitteln. So können sie Kategorien, Suchen und Filter durchsuchen.
+Einzelhändler erachten die Produkterfassung als ein primäres Tool für Debitoreninteraktionen über alle Kanäle hinweg. Es gibt mehrere Funktionen, die Kunden dabei helfen können, Produkte einfach zu entdecken. So können Kunden zum Beispiel Kategorien, Suchen und Filter durchsuchen.
 
 In diesem Artikel werden die Konzepte erläutert, die zum Steuern der Anzeigereihenfolge für verschiedene verkaufsbezogene Entitäten zugeordnet werden. Es wird auch erklärt, wie Sie die Sortierreihenfolge ändern.
 
 ## <a name="overview"></a>Übersicht
 
-Die Unterstützung zur Sortierung von verschiedenen verkaufsbezogenen Entitäten wurde verbessert. Diese Unterstützung ist nun besser auf Szenarien mit Bestandskunden ausgerichtet, die zuvor Erweiterungen von Implementierungspartnern erforderlich machten.
+In Commerce ist das Sortieren verschiedener auf die merchandisingbezogener Instanzen an bestehenden Kundenszenarien ausgerichtet und erfordert keine Erweiterungen von Implementierungspartnern mehr.
 
-In Retail-Versionen vor Version 10.0.5 war die Sortierreihenfolge für Kategorien in der Navigationshierarchie alphabetisch. Mit den neuen benutzerdefinierten Sortierreihenfolgenfunktionen können Verkaufsmanager die Sortierreihenfolge für verschiedene verkaufsbezogene Entitäten für alle Endbenutzerkunden konfigurieren. Diese Kunden umfassen Headquarters (HQ) und Callcenter.
+In den Commerce-Versionen bis 10.0.5 war die Sortierreihenfolge für Kategorien in der Navigationshierarchie alphabetisch. Mit den aktuellen benutzerdefinierten Sortierreihenfolgenfunktionen können Verkaufsmanager die Sortierreihenfolge für verschiedene verkaufsbezogene Entitäten für alle Endbenutzerkunden konfigurieren. Diese Kunden umfassen Headquarters (HQ) und Callcenter.
 
 ## <a name="configure-the-display-order-for-categories-in-the-product-hierarchy"></a>Konfigurieren der Anzeigereihenfolge für Kategorien in der Produkthierarchie
 
@@ -67,7 +67,7 @@ Bevor Sie dieses Verfahren ausführen können, müssen Demodaten in Ihrer Umgebu
 6. Geben Sie im Feld **Anzeigereihenfolge** eine Zahl ein.
 7. In der Struktur wählen Sie **Mode \> Damenmode \> Oberteile** aus.
 
-    Ebenso können Sie die Sortierreihenfolge für die Unterkategorien definieren.
+Ebenso können Sie die Sortierreihenfolge für die Unterkategorien definieren.
 
 8. In der Struktur wählen Sie **Mode \> Herrenmode \> Freizeithemden** aus.
 9. Geben Sie im Feld **Anzeigereihenfolge** eine Zahl ein.
@@ -84,7 +84,7 @@ Der Anzeigereihenfolge für die Kanalnavigationshierarchie wird in HQ, im Katalo
 ![POS mit benutzerdefiniert sortierten Kategorien.](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
-> Standardmäßig ist die Funktion für die benutzerdefinierte Sortierreihenfolge deaktiviert. Um zu erfahren, wie Sie diese Funktion und andere Funktionen aktivieren können, siehe [Funktionsverwaltung](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
-
+> Standardmäßig ist die Funktion **Anzeigereihenfolge für Merchandisinginstanzen aktivieren** ausgeschaltet. Sie können Sie mit der [Funktionsverwaltung](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) einzuschalten. Nachdem Sie die Funktion eingeschaltet haben, führen Sie den CDX-Auftrag **Globale Konfiguration -1110** aus dem Vertriebsplan aus.
+> Wenn Ihre Kategorienreihenfolge in POS nicht aktualisiert wird, reaktivieren Sie das Gerät. Kategorieinformationen werden abgerufen, wenn das Gerät aktiviert wird, sodass das Gerät die Kategorieinformationen möglicherweise mit aktualisierten Anzeigereihenfolgen erneut abrufen muss. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

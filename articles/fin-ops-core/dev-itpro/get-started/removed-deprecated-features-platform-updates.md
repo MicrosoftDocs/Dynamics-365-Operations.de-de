@@ -2,7 +2,7 @@
 title: Entfernte oder veraltete Plattformfunktionen
 description: Dieser Artikel beschreibt Funktionen, die in den Plattform-Updates der Finanz- und Betriebs-Apps entfernt wurden oder deren Entfernung geplant ist.
 author: sericks007
-ms.date: 05/24/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 16c77d719171e8e5cfef71178f8917d462f6d84b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: b2eec4dd71baef54877b4139a331288bf37f4960
+ms.sourcegitcommit: e4b6521337dfff3515f70086b0125d4c23308c71
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069921"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "9262297"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Entfernte oder veraltete Plattformfunktionen
 
@@ -31,6 +31,50 @@ Dieser Artikel beschreibt Funktionen, die in den Plattform-Updates der Finanz- u
 Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen bei Ihrer eigenen Planung zu berücksichtigen. 
 
 Ausführliche Informationen über Objekte in Apps für Finanzen und Betrieb finden Sie in den [Technischen Referenzberichten](/dynamics/s-e/global/axtechrefrep_61). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die in den einzelnen Versionen der Apps für Finanzen und Betrieb geändert oder entfernt wurden.
+
+## <a name="feature-deprecation-effective-august-2022"></a>Hinweis auf Funktionsminderung mit Wirkung zum August 2022
+
+### <a name="lifecycle-services-lcs-features-deprecated-in-august-2022"></a>Entfernte oder veraltete Funktionen in Lifecycle Services (LCS) im August 2022
+
+Im Rahmen des Arbeitsaufwandes für [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/finance-operations/finance-operations-crossapp-capabilities/one-dynamics-one-platform) sind die folgenden LCS-Funktionen veraltet.
+
+| Funktionsname | Verwendet mit AX 2012? | Verwendet mit Finanz- und Betriebs-Apps? | Ersetzt durch eine andere Funktion? |
+|--------------|--------------------|----------------------------------------|------------------------------|
+| Ankündigungen | Ja | Ja | Ja: Auf einzelnen Projekt- und Umgebungsseiten sind Banner für Benachrichtigungen vorhanden. |
+| Konfigurationsmanager | Ja | Nein | Nein |
+| Absturz-Dump-Analyse | Ja | Nein | Nein |
+| Rückmeldungen und Fehler | Ja | Ja | Nein |
+| Mein Abonnement | Ja | Ja | Nein |
+| Office 365 | Ja | Ja | Ja: Azure Active Directory oder Microsoft Admin-Portal. |
+| Auswirkungsanalyse | Nein | Ja | Nein |
+| Kalkulator der gesamtwirtschaftlichen Auswirkung | Nein | Ja | Nein |
+| Serviceanforderungen | Nein | Ja | Ja: [Self-Service-Bereitstellungen](../deployment/infrastructure-stack.md) |
+| SharePoint-Integration | Ja | Ja | Nein |
+| Konfigurations- und Datenmanager | Nein | Ja | Nein |
+| Prozessdatenpakete | Nein | Ja | Ja: Datenimport/-export-Framework (DIXF) |
+| Umgebung aktualisieren | Nein | Ja | Ja: [One Version](../lifecycle-services/oneversion-overview.md) Service-Updates sind verfügbar. |
+| Infrastrukturkalkulator | Ja | Nein | Nein |
+| Lizenzdimensionierung | Ja | Nein | Nein |
+| Nutzungs-Profiler | Ja | Nein | Nein |
+| Anpassungsanalyse | Ja | Nein | Nein |
+| Systemdiagnosen | Ja | Ja | Nein |
+| Geschäftsprozessmodellierer Visio-Verwaltung | Ja | Ja | Nein |
+| AX 2012 Cloud-Umgebungsverwaltung | Ja | Nein | Nein |
+| RDFE Azure-Connectors | Ja | Ja | Nein |
+| AX 2012-Versionen | Ja | Nein | Nein |
+| Im LCS-Speicher gespeicherte Arbeitsaufgaben | Ja | Ja | Nein |
+| Hotfixanforderungen | Ja | Ja | Nein |
+
+
+### <a name="transport-layer-security-tls-rsa-cipher-suites"></a>Transport Layer Security (TLS) RSA-Verschlüsselungssammlungen
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Wir entfernen die folgende Liste von Verschlüsselungssammlungen, um unseren aktuellen Sicherheitsprotokollen zu entsprechen.<br><br>TLS_RSA_WITH_AES_256_GCM_SHA384<br>TLS_RSA_WITH_AES_128_GCM_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA256<br>TLS_RSA_WITH_AES_128_CBC_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA<br>TLS_RSA_WITH_AES_256_CBC_SHA  |
+| **Ersetzt durch eine andere Funktion?**   | Ab dem 30. November 2022 können Kunden nur noch unsere  [Standard-Verschlüsselungssammlungen](/power-platform/admin/server-cipher-tls-requirements) verwenden. Diese Änderung wirkt sich auf Ihre Clients und Server aus, die mit unseren Servern kommunizieren, z. B. kann sie sich auf Ihre Integrationen von Drittanbietern auswirken, die sich nicht an unsere Standard-Verschlüsselungssammlungen halten. |
+| **Betroffene Produktbereiche**         | Finanz- und Betriebs-Apps |
+| **Bereitstellungsoption**              | Cloud-Bereitstellungen |
+| **Status**                         | Veraltet. Kunden müssen ihre Server vor dem 30. November 2022 aktualisieren. Weitere Informationen zum Konfigurieren der TLS-Cipher-Suite-Reihenfolge finden Sie unter  [Transport Layer Security (TLS) verwalten](/windows-server/security/tls/manage-tls).  |
 
 
 ## <a name="feature-deprecation-effective-june-2022"></a>Veraltete Funktion ab Juni 2022
@@ -85,7 +129,7 @@ Ausführliche Informationen über Objekte in Apps für Finanzen und Betrieb find
 
 ## <a name="feature-removal-effective-october-2021"></a>Entfernung der Funktion ab Oktober 2021
 
-### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Microsoft Azure SQL Berichte in  Lifecycle Services (LCS)
+### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Microsoft Azure SQL Berichte in Lifecycle Services (LCS)
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -155,7 +199,7 @@ Ausführliche Informationen über Objekte in Apps für Finanzen und Betrieb find
  
 ## <a name="feature-deprecation-effective-august-2021"></a>Hinweis auf Funktionsminderung mit Wirkung zum August 2021
 
-### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Microsoft Azure SQL Berichte in  Lifecycle Services (LCS)
+### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Microsoft Azure SQL Berichte in Lifecycle Services (LCS)
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|

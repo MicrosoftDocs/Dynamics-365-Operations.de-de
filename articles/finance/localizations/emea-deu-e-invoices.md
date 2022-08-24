@@ -1,24 +1,24 @@
 ---
 title: Elektronische Rechnungen für Kunden in Deutschland (DE-00022)
 description: Dieser Artikel erklärt, wie Sie elektronische Rechnungen für Kunden in Deutschland einrichten und verarbeiten.
-author: ilkond
+author: mrolecki
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Germany
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 2d5f499d4ee9571baaef5b2a29dfd8e9143d34a7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: ''
+ms.openlocfilehash: 3b362275362415b212ba9a7b3946599bafbaea5f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909993"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9291617"
 ---
 # <a name="customer-electronic-invoices-in-germany-de-00022"></a>Elektronische Rechnungen für Kunden in Deutschland (DE-00022)
 

@@ -1,25 +1,25 @@
 ---
 title: Transaktions-E-Mails nach Lieferart anpassen
 description: In diesem Artikel wird beschrieben, wie Sie benutzerdefinierte E-Mail-Vorlagen für bestimmte Benachrichtigungstypen und Lieferarten in Microsoft Dynamics 365 Commerce einrichten.
-author: stuharg
+author: bicyclingfool
 ms.date: 11/16/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: f16bc23e3527f57bd61d73e92506946067c6eeb9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: 0c0bd218c10a373d142ddcc7780c5339569f7a07
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850303"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9275703"
 ---
 # <a name="customize-transactional-emails-by-mode-of-delivery"></a>Transaktions-E-Mails nach Lieferart anpassen
 
@@ -56,7 +56,7 @@ Führen Sie die folgenden Schritte aus, um E-Mail-Vorlagen für bestimmte Liefer
 1. Wählen Sie im Dialogfeld **Lieferarten** die Option **Neu** aus.
 1. Wählen Sie in der neuen Zeile im Feld **Lieferart** eine Lieferart aus.
 1. Im Feld **E-Mail-ID** wählen Sie die E-Mail-Vorlage aus, die der Lieferart zugeordnet werden soll.
-1. Aktivieren Sie das Kontrollkästchen **Aktiv**.
+1. Wählen Sie das Kontrollkästchen **Aktiv** aus.
 1. Wiederholen Sie die Schritte 4 bis 7, um weitere Lieferarten hinzuzufügen.
 1. Wählen Sie abschließend **OK** aus.
 

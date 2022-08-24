@@ -1,32 +1,32 @@
 ---
 title: Aktualisierte Versionen von EB-Konfigurationen importieren
 description: In diesem Artikel wird erläutert, wie Sie aktualisierte Versionen von EB-Konfigurationen (Elektronische Berichterstellung) aus dem globalen Repository des Konfigurationsdienstes importieren.
-author: NickSelin
+author: kfend
 ms.date: 06/09/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERSolutionImport, ERWorkspace, ERSolutionRepositoryTable
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom: 105843
-ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 0dac106a592a6a70aae6b245bce74d21c98cad10
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.custom: 105843
+ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
+ms.search.form: ERSolutionImport, ERWorkspace, ERSolutionRepositoryTable
+ms.openlocfilehash: 0eef9c9a112fd58a43f6c3a85163ccf44bea3d61
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9108438"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292645"
 ---
 # <a name="import-updated-versions-of-er-configurations"></a>Importieren von aktualisierten Versionen von EB-Konfigurationen
 
 [!include [banner](../includes/banner.md)]
 
-[Repositorys](general-electronic-reporting.md#Repository) für die elektronische Berichterstattung (EB) werden verwendet, um [EB-Konfigurationen](general-electronic-reporting.md#Configuration) freizugeben. [Importieren](download-electronic-reporting-configuration-lcs.md) Sie EB-Konfigurationen aus verschiedenen Repositorys in Ihre Instanz von Microsoft Dynamics 365 Finance. Wenn Sie EB-Konfigurationen importieren, können [Konfigurationsanbieter](general-electronic-reporting.md#Provider) Repositorys mit neuen [Versionen](general-electronic-reporting.md#component-versioning) veröffentlichen, damit sie freigegeben werden können.
+[Repositorys](general-electronic-reporting.md#Repository) für die elektronische Berichterstattung (EB) werden verwendet, um [EB-Konfigurationen](general-electronic-reporting.md#Configuration) freizugeben. [Importieren](download-electronic-reporting-configuration-lcs.md) Sie EB-Konfigurationen aus verschiedenen Repositorys in Ihre Instanz von Microsoft Dynamics 365 Finance. Wenn Sie EB-Konfigurationen importieren, können [Konfigurationsanbieter](general-electronic-reporting.md#Provider) Repositorys mit neuen Versionen veröffentlichen, damit sie freigegeben werden können.
 
 In diesem Artikel wird erläutert, wie Sie aktualisierte Versionen von EB-Konfigurationen aus dem globalen Repository des Konfigurationsdienstes importieren. Weitere Informationen finden Sie unter [Microsoft Dynamics 365 Finance – Regulatory Services, Konfigurationsdienst](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 

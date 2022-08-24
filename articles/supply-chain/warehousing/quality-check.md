@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: ceb01205edc269690fda306bc90f465dbccc563b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bc0e911eeccd1d4700f1f4daefd5fe1a4935cd80
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855056"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218711"
 ---
 # <a name="quality-check"></a>Qualitätsprüfung
 
@@ -49,7 +49,7 @@ Dieser Abschnitt enthält Richtlinien und ein Beispiel, das zeigt, wie Sie die F
 
 ### <a name="make-sample-data-available"></a>Beispieldaten zur Verfügung stellen
 
-Um das [Beispielszenario](#example-scenario) mithilfe der Beispieldatensätze und -werte, die hier angegeben sind, zu verarbeiten, müssen Sie ein System verwenden, auf dem die standardmäßigen [Demodaten](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) installiert sind. Außerdem müssen Sie die **USMF** juristische Person auswählen, bevor Sie beginnen.
+Um das [Beispielszenario](#example-scenario) mithilfe der Beispieldatensätze und -werte, die hier angegeben sind, zu verarbeiten, müssen Sie ein System verwenden, auf dem die standardmäßigen [Demodaten](../../fin-ops-core/fin-ops/get-started/demo-data.md) installiert sind. Außerdem müssen Sie die **USMF** juristische Person auswählen, bevor Sie beginnen.
 
 ### <a name="quality-check-template"></a><a name="quality-template"></a>Qualitätsprüfungsvorlage
 

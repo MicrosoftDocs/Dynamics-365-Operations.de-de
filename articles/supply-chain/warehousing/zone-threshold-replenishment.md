@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: e3ec1f59e0b1d202d5591bfc1525c9034f4d8f45
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 17e336fb059880e54a1cba7c0079e7452925c24d
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893119"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219996"
 ---
 # <a name="zone-threshold-replenishment"></a>Schwellenwert für Zonenwiederbeschaffung
 
@@ -262,7 +262,7 @@ Bevor Sie mit der Bearbeitung des Szenarios beginnen, müssen Sie Beispieldaten 
 
 #### <a name="use-the-usmf-legal-entity"></a>USMF juristische Person verwenden
 
-Um das Szenario mithilfe der Beispieldatensätze und -werte, die hier angegeben sind, zu verarbeiten, müssen Sie ein System verwenden, auf dem die standardmäßigen [Demodaten](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) installiert sind. Außerdem müssen Sie die **USMF** juristische Person auswählen, bevor Sie beginnen.
+Um das Szenario mithilfe der Beispieldatensätze und -werte, die hier angegeben sind, zu verarbeiten, müssen Sie ein System verwenden, auf dem die standardmäßigen [Demodaten](../../fin-ops-core/fin-ops/get-started/demo-data.md) installiert sind. Außerdem müssen Sie die **USMF** juristische Person auswählen, bevor Sie beginnen.
 
 #### <a name="prepare-additional-sample-data"></a>Zusätzliche Beispieldaten vorbereiten
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 109adcc4e8b49c665bd14ecab2b7cc56cebd2291
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: db6c46d471e3b54982132df3e4819236833cf4a8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878485"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292134"
 ---
 # <a name="set-up-an-email-notification-profile"></a>E-Mail-Benachrichtigungsprofil einrichten
 
@@ -31,17 +31,9 @@ Wenn Sie Kanäle erstellen, können Sie ein E-Mail-Benachrichtigungsprofil einri
 
 Weitere Informationen über die Konfiguration von E-Mails finden Sie unter [E-Mail konfigurieren und senden](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
-## <a name="create-an-email-notification-profile"></a>Ein E-Mail-Benachrichtigungsprofil erstellen
 
-Gehen Sie folgendermaßen vor, um ein E-Mail-Benachrichtigungsprofil zu erstellen.
 
-1. Gehen Sie im Navigationsbereich zu **Module \> Retail and Commerce \> Headquarters-Einrichtung \> Commerce-E-Mail-Benachrichtigungsprofil**.
-1. Klicken Sie im Aktivitätsbereich auf **Neu**.
-1. Geben Sie im Feld **E-Mail-Benachrichtigungsprofil** einen Namen ein, um das Profil zu identifizieren.
-1. Geben Sie im Feld **Beschreibung** eine entsprechende Beschreibung ein.
-1. Stellen Sie den Hebel **Aktiv** auf **Ja**.
-
-### <a name="create-an-email-template"></a>E-Mail-Vorlage erstellen
+## <a name="create-an-email-template"></a>E-Mail-Vorlage erstellen
 
 Bevor ein E-Mail-Benachrichtigungstyp aktiviert werden kann, müssen Sie in der Commerce-Zentrale für jeden Benachrichtigungstyp, den Sie unterstützen möchten, eine Organisations-E-Mail-Vorlage erstellen. Diese Vorlage definiert den E-Mail-Betreff, den Absender, die Standardsprache und den E-Mail-Text für jede unterstützte Sprache.
 
@@ -63,29 +55,37 @@ Das folgende Bild zeigt einige Beispieleinstellungen für E-Mail-Vorlagen.
 
 Weitere Informationen zum Erstellen von E-Mail-Vorlagen finden Sie unter [Erstellen von E-Mail-Vorlagen für transaktionale Ereignisse](email-templates-transactions.md). 
 
-### <a name="create-an-email-event"></a>E-Mail-Ereignis erstellen
+## <a name="create-an-email-notification-profile"></a>Ein E-Mail-Benachrichtigungsprofil erstellen
+
+Gehen Sie folgendermaßen vor, um ein E-Mail-Benachrichtigungsprofil in Headquarters zu erstellen.
+
+1. Gehen Sie im Navigationsbereich zu **Module \> Retail and Commerce \> Headquarters-Einrichtung \> Commerce-E-Mail-Benachrichtigungsprofil**.
+1. Wählen Sie im Aktivitätsbereich **Neu** aus.
+1. Geben Sie im Feld **E-Mail-Benachrichtigungsprofil** einen Namen ein, um das Profil zu identifizieren.
+1. Geben Sie im Feld **Beschreibung** eine entsprechende Beschreibung ein.
+1. Stellen Sie den Hebel **Aktiv** auf **Ja**.
+
+## <a name="add-a-notification-type"></a>Einen Benachrichtigungstyp hinzufügen
 
 Führen Sie folgende Schritte aus, um eine E-Mail-Ereignis zu erstellen:
 
 1. Gehen Sie im Navigationsbereich zu **Module \> Retail and Commerce \> Headquarters-Einrichtung \> Commerce-E-Mail-Benachrichtigungsprofil**.
-1. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus. 
-1. Wählen Sie die E-Mail-Vorlage aus der Dropdownliste **E-Mail-Kennung**.
+1. Wählen Sie unter **Einstellungen für Einzelhandels-E-Mail-Benachrichtigung** **Neu** aus.
 1. Wählen Sie aus der Dropdownliste den entsprechenden **E-Mail-Kennungstyp**.
-1. Aktivieren Sie das Kontrollkästchen **Aktiv**.
-1. Wählen Sie im Aktionsbereich **Speichern** aus.
+1. Wählen Sie die oben erstellte E-Mail-Vorlage aus der Dropdownliste **E-Mail-ID** aus.
+1. Wählen Sie das Kontrollkästchen **Aktiv** aus.
+1. Wählen Sie im Aktivitätsbereich **Speichern** aus.
 
 Das folgende Bild zeigt einige Beispiele für die Einstellungen der Ereignisbenachrichtigung.
 
 ![Einstellungen für die Ereignisbenachrichtigung.](media/email-notification-profile.png)
 
-> [!NOTE]
-> Der vom Debitor erstellte Benachrichtigungstyp erfordert eine angepasste Implementierung, bevor eine E-Mail-Benachrichtigung versendet werden kann.
 
-### <a name="schedule-a-recurring-email-notification-process-job"></a>Einen Verarbeitungsauftrag für eine Serien-E-Mail-Benachrichtigung planen
+## <a name="schedule-a-recurring-email-notification-process-job"></a>Einen Verarbeitungsauftrag für eine Serien-E-Mail-Benachrichtigung planen
 
 Zum Versenden von E-Mail-Benachrichtigungen muss der Auftrag **E-Mail-Benachrichtigung für Einzelhandelsauftrag verarbeiten** ausgeführt werden.
 
-Zum Einrichten des Auftrag **E-Mail-Benachrichtigung für Einzelhandelsauftrag verarbeiten** in der Commerce-Zentralverwaltung führen Sie die folgenden Schritte aus, falls Sie dies noch nicht getan haben.
+Gehen Sie wie folgt vor, um in Headquarters einen Stapelverarbeitungsauftrag zum Senden von Transaktions-E-Mails einzurichten.
 
 1. Gehen Sie zu **Einzelhandel und Handel \> Einzelhandel und Handel IT \> E-Mail und Benachrichtigungen \> E-Mail-Benachrichtigungen senden**.
 1. Wählen Sie im Dialogfeld **E-Mail-Benachrichtigung für Einzelhandelsauftrag verarbeiten** **Serie** aus.
@@ -94,9 +94,9 @@ Zum Einrichten des Auftrag **E-Mail-Benachrichtigung für Einzelhandelsauftrag v
 1. Wählen Sie im Dialogfeld **E-Mail-Benachrichtigung für Einzelhandelsauftrag verarbeiten** **OK** aus.
 1. Wählen Sie **OK**, um das Einrichten des Auftrags abzuschließen.
 
-### <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a>Nächste Schritte
 
-Bevor Sie E-Mails senden können, müssen Sie Ihren Postausgangsdienst konfigurieren und einen Batchauftrag einrichten. Weitere Informationen finden Sie unter [E-Mail konfigurieren und senden](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
+Bevor E-Mails gesendet werden können, müssen Sie Ihren Postausgangsdienst konfigurieren. Weitere Informationen finden Sie unter [E-Mail konfigurieren und senden](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

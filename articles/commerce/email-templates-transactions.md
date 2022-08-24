@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9a4d67d901608e210b4060a655ce39f0ea707a52
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: cc3ad01c60324d751ee52d83d93fe59593775a00
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910549"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279567"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Mail-Vorlagen für Transaktionsereignisse erstellen
 
@@ -117,7 +117,29 @@ Der Benachrichtigungstyp *Bestellungsstornierung* wird ausgelöst, wenn eine Bes
 
 ### <a name="customer-created"></a>Ein Debitor wurde erstellt.
 
-Der Benachrichtigungstyp *Kunde erstellt* wird ausgelöst, wenn eine neue Kundenentität in der Commerce-Zentrale erstellt wird.
+Der Benachrichtigungstyp *Kunde erstellt* wird ausgelöst, wenn eine neue Kundenentität in der Commerce-Zentrale erstellt wird. 
+
+Damit Kunden Benachrichtigungen erstellen können, gehen Sie in Commerce headquarters **Einzelhandel und Handel \> Zentralverwaltungseinrichtung \> Parameter \> Handelsparameter \> Allgemein**. Wählen Sie in der Dropdownliste **E-Mail-Benachrichtigungsprofil** ein E-Mail-Benachrichtigungsprofil aus, das den vom Kunden erstellten Benachrichtigungstyp enthält. 
+
+Standardmäßig werden vom Kunden erstellte Ereignisse in Headquarters hochgeladen Stapelverarbeitungsauftrag **Debitoren und Kanalanforderungen synchronisieren** hochgeladen. Wenn Sie einen Serviceaufruf in Echtzeit zum Senden dieser Ereignisse verwenden möchten, legen Sie die E-Mail-ID der vom Kunden erstellten Vorlage auf **newCust** fest. Dies wird jedoch nicht empfohlen, da Serviceaufrufe in Echtzeit „Auslösen und vergessen“-Aufrufe sind und nicht über die Fallback- oder Wiederholungslogik verfügen, die Stapelverarbeitungsaufträge bieten.
+
+> [!NOTE] 
+> Wenn Sie von Kunden erstellte Benachrichtigungen aktivieren, erhalten Kunden, die in allen Kanälen innerhalb der juristischen Person erstellt wurden, eine vom Kunden erstellte E-Mail. Derzeit können von Kunden erstellte Benachrichtigungen nicht auf einen einzelnen Kanal beschränkt werden.  
+
+Beim Aufruf über den Stapelverarbeitungsauftrag unterstützt der vom Kunden erstellte Benachrichtigungstyp den folgenden Platzhalter.
+
+| Platzhaltername | Description                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| customername     | Der Vor- und Nachname des Kunden, der ein Konto erstellt hat. |
+
+Beim Aufruf über den Serviceaufruf in Echtzeit unterstützt der vom Kunden erstellte Benachrichtigungstyp die folgenden Platzhalter.
+
+| Platzhaltername | Description                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| Name             | Der Vor- und Nachname des Kunden, der ein Konto erstellt hat. |
+| E‑Mail            | Die E-Mail-Adresse des Kunden, der ein Konto erstellt hat.    |
+| Telefonnummer            | Die Telefonnummer des Kunden, der ein Konto erstellt hat.      |
+| URL              | Die vom Kunden beim Erstellen des Kontos bereitgestellte URL. |
 
 ### <a name="b2b-prospect-approved"></a>B2B-Interessent genehmigt
 
@@ -222,7 +244,7 @@ Die folgenden Platzhalter rufen Daten ab und zeigen sie an, die auf Kundenauftra
 | `pickupchannelid`     | Die Kanalkennung des Geschäfts, die für eine die Lieferart der Abholung angegeben ist.\* |
 | `packingslipid`        | Die Kennung des Lieferscheins, der beim Verpacken von Positionen eines Auftrags generiert wurde.\* |
 
-\*Diese Platzhalter geben nur dann Daten zurück, wenn sie für den Benachrichtigungstyp **Bestellung zur Abholung bereit** verwendet werden. 
+\* Diese Platzhalter geben nur dann Daten zurück, wenn sie für den Benachrichtigungstyp **Bestellung zur Abholung bereit** verwendet werden. 
 
 ### <a name="order-line-placeholders-sales-line-level"></a>Auftragspositionsplatzhalter (Verkaufspositionsebene)
 

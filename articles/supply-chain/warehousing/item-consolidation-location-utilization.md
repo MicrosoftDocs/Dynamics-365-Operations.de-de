@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 63fd8b209cb73843aae7324c805c5d0eb83b4ca4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7c78954659c125c919ed0debbd81023a3da02db3
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849183"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219441"
 ---
 # <a name="item-consolidation---location-utilization"></a>Artikelkonsolidierung – Auslastung von Lagerplatz
 
@@ -30,8 +30,8 @@ Dieser Artikel enthält Informationen zu Funktionen, mit denen Lagerverwalter di
 
 Bevor Sie die in diesem Artikel beschriebenen Funktionen verwenden können, müssen Sie sie in Ihrem System aktivieren. Administratoren können im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktionen überprüfen und sie gegebenenfalls aktivieren. Aktivieren Sie beide folgenden Funktionen in der Reihenfolge, in der sie aufgeführt sind. (Beide Funktionen sind für das Modul **Lagerortverwaltung** vorgesehen.)
 
-1. Status des Lagerplatzes an einem Lagerort
-2. Nutzung von Lagerplatz für Positionskonsolidierung
+1. *Status des Lagerplatzes an einem Lagerort* (ab Version 10.0.29 ist diese Funktion standardmäßig aktiviert. Weitere Informationen finden Sie unter [Status des Lagerplatzes an einem Lagerort](warehouse-location-status.md)).
+2. *Nutzung von Lagerplatz für Positionskonsolidierung*
 
 ## <a name="warehouse-location-status"></a>Status des Lagerplatzes an einem Lagerort
 

@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 1b16eab5c107a3176f0890372d397947698e71de
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: ea142aff7c8f4b442d7224325e44359129efe8a8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111723"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9289679"
 ---
 # <a name="integrated-customer-master"></a>Integrierte Masterdaten von Debitoren
 
@@ -22,7 +22,7 @@ ms.locfileid: "9111723"
 
 
 
-Kundendaten können in mehr als einer Dynamics 365 Anwendung verwaltet werden. Beispielsweise kann eine Kundenzeile durch Verkaufsaktivitäten in Dynamics 365 Sales (eine Kundenbindungs-App) oder eine Zeile durch Einzelhandelsaktivitäten in Dynamics 365 Commerce (eine Finanz- und Betriebs-App) entstehen. Unabhängig davon, woher die Kundendaten stammen, werden sie im Hintergrund integriert. Der integrierte Kundenstamm bietet Ihnen die Flexibilität, Kundendaten in jeder Dynamics 365 Anwendung zu verwalten, und bietet eine umfassende Ansicht des Kunden in der gesamten Dynamics 365 Anwendungssuite.
+Kundendaten können in mehr als einer Dynamics 365 Anwendung verwaltet werden. Beispielsweise kann eine Kundenzeile durch Verkaufsaktivitäten in Dynamics 365 Sales (eine Kundenbindungs-App) oder eine Zeile durch Einzelhandelsaktivitäten in Dynamics 365 Commerce (eine Finanz- und Betriebs-App) entstehen. Die Kundendaten werden im Hintergrund integriert, unabhängig davon, woher sie stammen. Der integrierte Kundenstamm bietet Ihnen die Flexibilität, Kundendaten in jeder Dynamics 365 Anwendung zu verwalten, und bietet eine umfassende Ansicht des Kunden in der gesamten Dynamics 365 Anwendungssuite.
 
 ## <a name="customer-data-flow"></a>Debitorendatenfluss
 

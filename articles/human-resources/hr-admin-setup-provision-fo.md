@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 15060d8bdd598476081c22d7280319da3db0cb31
-ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
+ms.openlocfilehash: 2fd8176d16178ecc4ba667e5937f2cec2e0af2c3
+ms.sourcegitcommit: bd3b55e1af28e592c97b540de1e87cd8ba9c35a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9178409"
+ms.lasthandoff: 08/03/2022
+ms.locfileid: "9221591"
 ---
 # <a name="provision-human-resources-in-the-finance-and-operations-infrastructure"></a>Bereitstellung von Human Resources in der Finanzen und Betrieb-Infrastruktur
 
@@ -52,8 +52,8 @@ Hier finden Sie einige Überlegungen für zusätzliche optionale Umgebungen:
 - **Integration** – Konfigurieren und testen Sie Integrationen, die native Integrationen oder angepasste Integrationen umfassen können, z.B. für die Gehaltsabrechnung, Bewerberverfolgungssysteme oder Leistungssysteme und -anbieter.
 - **Schulung** – Möglicherweise benötigen Sie eine separate Umgebung, die mit einem Satz von Schulungsdaten festgelegt ist, damit Sie Ihre Mitarbeiter in der Verwendung des neuen Systems schulen können. 
 - **Mehrphasiges Projekt** – Möglicherweise benötigen Sie eine zusätzliche Umgebung, um die Konfiguration, die Datenmigration, das Testen oder andere Aktivitäten in einer Projektphase zu unterstützen, die nach dem ersten Go-Live des Projekts geplant ist.
-- **Entwicklung** – In der Infrastruktur von Finanzen und Betrieb können Sie die Lösung jetzt erweitern und Ihre eigenen Anpassungen entwickeln. Jeder Entwickler muss seine eigene Entwicklungsumgebung verwenden. Weitere Informationen finden Sie unter [Entwicklungsumgebungen bereitstellen und darauf zugreifen](/fin-ops-core/dev-itpro/dev-tools/access-instances).
-- **GOLD** – Bei neuen Bereitstellungen ist es allgemein üblich, eine separate GOLD-Umgebung zu verwenden, die für die Konfiguration und Datenmigration unberührt bleibt. Diese Umgebung kann während der gesamten Implementierung verwendet werden, um andere Umgebungen zu aktualisieren. Es wird verwendet, um die neue Produktionsumgebung zu erstellen, die die Basiskonfiguration und die Datenmigration enthält. Sie können keine produktive Umgebung auf der Finanzen und Betrieb-Infrastruktur bereitstellen, bevor Sie die Bereitschaft zum Go-Live abgeschlossen haben. Weitere Informationen finden Sie unter [Vorbereiten auf den Start](/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live).
+- **Entwicklung** – In der Infrastruktur von Finanzen und Betrieb können Sie die Lösung jetzt erweitern und Ihre eigenen Anpassungen entwickeln. Jeder Entwickler muss seine eigene Entwicklungsumgebung verwenden. Weitere Informationen finden Sie unter [Entwicklungsumgebungen bereitstellen und darauf zugreifen](../fin-ops-core/dev-itpro/dev-tools/access-instances.md).
+- **GOLD** – Bei neuen Bereitstellungen ist es allgemein üblich, eine separate GOLD-Umgebung zu verwenden, die für die Konfiguration und Datenmigration unberührt bleibt. Diese Umgebung kann während der gesamten Implementierung verwendet werden, um andere Umgebungen zu aktualisieren. Es wird verwendet, um die neue Produktionsumgebung zu erstellen, die die Basiskonfiguration und die Datenmigration enthält. Sie können keine produktive Umgebung auf der Finanzen und Betrieb-Infrastruktur bereitstellen, bevor Sie die Bereitschaft zum Go-Live abgeschlossen haben. Weitere Informationen finden Sie unter [Vorbereiten auf den Start](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md).
 
 <!--NOTE: Need to come back and verify Tier-1 can be used and if a customer cannot purchase tier 3-5 need specific documentation about this.-->
 
@@ -66,24 +66,24 @@ Hier finden Sie einige Überlegungen für zusätzliche optionale Umgebungen:
 
 ## <a name="create-an-lcs-project"></a>LCS Projekt erstellen
 
-Um LCS für die Human Resources-Umgebung zu verwalten, müssen Sie zuerst ein LCS-Projekt erstellen. Wenn Sie Ihre Human Resources Umgebung in die Finanzen und Betrieb Infrastruktur migrieren, müssen Sie ein neues LCS Projekt für Finanz- und Betriebs-Apps erstellen. Weitere Informationen finden Sie unter [Migration Ihrer Human Resources Umgebung](hr-admin-migrate-overview). Wenn Sie bereits ein LCS Projekt für andere Finanz- und Betriebs-Apps haben, können Sie die Funktionen für Human Resources im Arbeitsbereich **Funktionsverwaltung** aktivieren. Weitere Informationen finden Sie unter [Funktionsverwaltung – Übersicht](/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Um LCS für die Human Resources-Umgebung zu verwalten, müssen Sie zuerst ein LCS-Projekt erstellen. Wenn Sie Ihre Human Resources Umgebung in die Finanzen und Betrieb Infrastruktur migrieren, müssen Sie ein neues LCS Projekt für Finanz- und Betriebs-Apps erstellen. Wenn Sie bereits ein LCS Projekt für andere Finanz- und Betriebs-Apps haben, können Sie die Funktionen für Human Resources im Arbeitsbereich **Funktionsverwaltung** aktivieren. Weitere Informationen finden Sie unter [Funktionsverwaltung – Übersicht](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-Wenn sich ein neuer Debitor für Human Resources anmeldet, enthält das Abonnement einen Arbeitsbereich für die Implementierung. Nachdem der Debitor den Dienst aktiviert hat, muss sich der Mandant-Administrator bei <https://lcs.dynamics.com> mit seinem Mandant-Konto anmelden. Der Arbeitsbereich des Projekts wird automatisch für die Organisation erstellt. Weitere Informationen finden Sie unter [Lifecycle Services (LCS) für Finanz- und Betriebs-Apps Debitor](/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs).
+Wenn sich ein neuer Debitor für Human Resources anmeldet, enthält das Abonnement einen Arbeitsbereich für die Implementierung. Nachdem der Debitor den Dienst aktiviert hat, muss sich der Mandant-Administrator bei <https://lcs.dynamics.com> mit seinem Mandant-Konto anmelden. Der Arbeitsbereich des Projekts wird automatisch für die Organisation erstellt. Weitere Informationen finden Sie unter [Lifecycle Services (LCS) für Finanz- und Betriebs-Apps Debitor](../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md).
 
 > [!NOTE]
 > Um eine erfolgreiche Bereitstellung zu gewährleisten, muss das Konto, das Sie für die Bereitstellung der Umgebung Human Resources verwenden, entweder der Rolle **Systemadministrator** oder der Rolle **Systemanpasser** in der Power Apps-Umgebung zugewiesen sein, die mit der Umgebung Human Resources verbunden ist. Weitere Informationen darüber, wie Sie Benutzern in Microsoft Power Platform Sicherheitsrollen zuweisen, finden Sie unter [Benutzersicherheit für Ressourcen konfigurieren](/power-platform/admin/database-security).
 
-Bevor Sie mit dem Bereitstellen von Umgebungen beginnen können, müssen Sie den Onboarding-Prozess für LCS-Projekte abschließen. Weitere Informationen finden Sie unter [Projekt-Einführung](/fin-ops-core/dev-itpro/lifecycle-services/project-onboarding). Weitere Informationen über die Verwendung von LCS finden Sie in der [Lifecycle Services (LCS) Anleitung](/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide).
+Bevor Sie mit dem Bereitstellen von Umgebungen beginnen können, müssen Sie den Onboarding-Prozess für LCS-Projekte abschließen. Weitere Informationen finden Sie unter [Projekt-Einführung](../fin-ops-core/dev-itpro/lifecycle-services/project-onboarding.md). Weitere Informationen über die Verwendung von LCS finden Sie in der [Lifecycle Services (LCS) Anleitung](../fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md).
 
 ## <a name="deploy-human-resources-environments"></a>Bereitstellen von Umgebungen für Human Resources
 
 Die Bereitstellung von Finanz- und Betriebs-Apps, einschließlich Human Resources, in der Cloud erfordert, dass Sie die Umgebung und das Abonnement verstehen, in dem Sie die App bereitstellen, wer welche Aufgaben ausführen darf und welche Daten und Anpassungen Sie verwalten müssen. Wir empfehlen Ihnen, beim Bereitstellen neuer Umgebungen ein Dienstkonto anstelle eines benannten Benutzers zu verwenden. Weitere Informationen über das Bereitstellen von Umgebungen in der Finanzen und Betrieb-Infrastruktur finden Sie unter [Übersicht über die Cloud-Bereitstellung](/fin-ops-core/dev-itpro/deployment/cloud-deployment-overview).
 
-Um eine produktive Umgebung für Human Resources in der Finanzen und Betrieb-Infrastruktur bereitzustellen, müssen Sie den Prozess der Bereitschaft für den Produktivstart abschließen. Weitere Informationen finden Sie unter [Vorbereiten auf den Start](/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live). Dieser Prozess umfasst den Abonnement-Schätzer in LCS. Weitere Informationen finden Sie unter [Abonnement-Schätzer](/fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator).
+Um eine produktive Umgebung für Human Resources in der Finanzen und Betrieb-Infrastruktur bereitzustellen, müssen Sie den Prozess der Bereitschaft für den Produktivstart abschließen. Weitere Informationen finden Sie unter [Vorbereiten auf den Start](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md). Dieser Prozess umfasst den Abonnement-Schätzer in LCS. Weitere Informationen finden Sie unter [Abonnement-Schätzer](../fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator.md).
 
 ## <a name="integrate-microsoft-power-platform-with-human-resources"></a>Integration von Microsoft Power Platform mit Human Resources
 
-Microsoft Power Platform bietet eine Reihe von Funktionalitäten für Dynamics 365-Anwendungen über das Admin Center Power Platform. Mit Microsoft Power Platform können Sie die Nutzung von Human Resources Daten integrieren und erweitern. Informationen über die Integration von Human Resources mit Microsoft Power Platform finden Sie unter [Microsoft Power Platform Integration mit Finanz- und Betriebs-Apps](/fin-ops-core/dev-itpro/power-platform/overview).
+Microsoft Power Platform bietet eine Reihe von Funktionalitäten für Dynamics 365-Anwendungen über das Admin Center Power Platform. Mit Microsoft Power Platform können Sie die Nutzung von Human Resources Daten integrieren und erweitern. Informationen über die Integration von Human Resources mit Microsoft Power Platform finden Sie unter [Microsoft Power Platform Integration mit Finanz- und Betriebs-Apps](../fin-ops-core/dev-itpro/power-platform/overview.md).
 
 ## <a name="supported-geographies"></a>Unterstützte Geografien
 
@@ -96,8 +96,8 @@ Standardmäßig besitzt nur der globale Administrator, von dem Enterprise Portal
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 In den folgenden Ressourcen erfahren Sie mehr über die Verwendung und Verwaltung von Projekten in LCS auf der Finanz- und Betriebs-App-Infrastruktur:
 
-- [Lifecycle Services-Ressourcen](/fin-ops-core/dev-itpro/lifecycle-services/lcs.md)
-- [Lifecycle Services (LCS)-Benutzerhandbuch](/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)
+- [Lifecycle Services-Ressourcen](../fin-ops-core/dev-itpro/lifecycle-services/lcs.md)
+- [Lifecycle Services (LCS)-Benutzerhandbuch](../fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)
 - [Self-Service-Bereitstellung – Übersicht](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md)
 - [Startseite für Vorgänge der Datenbankbewegung](../fin-ops-core/dev-itpro/database/dbmovement-operations.md)
 

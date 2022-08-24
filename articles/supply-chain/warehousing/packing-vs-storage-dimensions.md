@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 85e40a0768174dcdc5d0fa2647b24cddccf01bdf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8ebea86e5ea63ab4f5a844cd3d0936c0d65bbe2b
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905485"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220241"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>Festlegen verschiedener Dimensionen für Verpackung und Lagerung
 
@@ -50,7 +50,7 @@ Bevor Sie das Beispielszenario ausführen können, müssen Sie Ihr System wie in
 
 #### <a name="enable-demo-data"></a>Aktivieren der Demodaten
 
-Um dieses Szenario mit den hier angegebenen Demodatensätzen und -werten durchzuarbeiten, müssen Sie ein System verwenden, auf dem die standardmäßigen [Demodaten](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) installiert sind. Außerdem müssen Sie die *USMF* juristische Person auswählen, bevor Sie beginnen.
+Um dieses Szenario mit den hier angegebenen Demodatensätzen und -werten durchzuarbeiten, müssen Sie ein System verwenden, auf dem die standardmäßigen [Demodaten](../../fin-ops-core/fin-ops/get-started/demo-data.md) installiert sind. Außerdem müssen Sie die *USMF* juristische Person auswählen, bevor Sie beginnen.
 
 #### <a name="add-a-new-physical-dimension-to-a-product"></a>Hinzufügen einer neuen physischen Dimension zu einem Produkt
 

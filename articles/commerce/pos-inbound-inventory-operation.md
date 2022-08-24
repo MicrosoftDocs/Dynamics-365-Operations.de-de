@@ -1,27 +1,27 @@
 ---
 title: Eingehender Bestandsvorgang in POS
 description: Dieser Artikel beschreibt die Möglichkeiten des POS-Eingangsbestandsvorgangs (POS).
-author: hhaines
+author: hhainesms
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fbabcaafee74b4d0a1ca8ef79de94376a7764aa3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: Retail
+ms.search.form: ''
+ms.openlocfilehash: 3099f03ba2da8a367953ad0d25ee884e41ff9deb
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858881"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9288351"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Eingehender Bestandsvorgang in POS
 
@@ -135,13 +135,13 @@ Für Transportauftragsbelege ist der Überempfang nicht zulässig. Benutzer erha
 
 Sie können die verbleibende Menge einer eingehenden Bestellung während des Empfangsprozesses schließen, wenn der Versender bestätigt hat, dass er die angeforderte volle Menge nicht versenden kann. Um diese Funktion nutzen zu können, muss das Unternehmen so konfiguriert sein, dass eine Unterlieferung von Bestellungen möglich ist. Zusätzlich muss ein Unterlieferungstoleranzprozentsatz für die Bestellung definiert werden.
 
-Um das Unternehmen so zu konfigurieren, dass eine Unterlieferung von Bestellungen in der Commerce-Zentrale möglich ist, gehen Sie zu **Beschaffung** > **Einstellungen** > **Beschaffungsparameter**. Aktivieren Sie auf der Registerkarte **Lieferung** den Parameter **Unterlieferung akzeptieren**. Führen Sie dann den Verteilungsplan-Einzelvorgang **1070** (**Kanalkonfiguration**) aus, um die Einstellungsänderungen mit den Kanälen zu synchronisieren.
+Um das Unternehmen so zu konfigurieren, dass eine Unterlieferung von Bestellungen in der Commerce headquarters möglich ist, gehen Sie zu **Beschaffung** > **Einstellungen** > **Beschaffungsparameter**. Aktivieren Sie auf der Registerkarte **Lieferung** den Parameter **Unterlieferung akzeptieren**. Führen Sie dann den Verteilungsplan-Einzelvorgang **1070** (**Kanalkonfiguration**) aus, um die Einstellungsänderungen mit den Kanälen zu synchronisieren.
 
-Unterlieferungstoleranzprozentsätze für eine Bestellungsposition können für Produkte als Teil der Produktkonfiguration in der Commerce-Zentrale vordefiniert werden. Alternativ können sie für eine bestimmte Bestellung in der Commerce-Zentrale festgelegt oder überschrieben werden.
+Unterlieferungstoleranzprozentsätze für eine Bestellungsposition können für Produkte als Teil der Produktkonfiguration in der Commerce headquarters vordefiniert werden. Alternativ können sie für eine bestimmte Bestellung in der Commerce headquarters festgelegt oder überschrieben werden.
 
 Nachdem eine Organisation die Konfiguration der Unterlieferung von Bestellungen abgeschlossen hat, wird den POS-Benutzern eine neue Option **Restmenge schließen** im Bereich **Details** angezeigt, wenn sie eine eingehende Bestellungsposition über den Vorgang **Eingehender Bestand** auswählen. Wenn ein Benutzer die verbleibende Menge schließt, führt POS eine Prüfung durch, ob die geschlossene Menge innerhalb der prozentualen Toleranz für die Unterlieferung liegt, die in der Bestellungsposition definiert ist. Wenn die Unterlieferungstoleranz überschritten wurde, wird eine Fehlermeldung angezeigt, und der Benutzer kann die Restmenge erst dann abschließen, wenn die zuvor eingegangene Menge zuzüglich der Menge **Jetzt empfangen** die Mindestmenge erreicht oder überschreitet, die auf der Grundlage des Unterlieferungstoleranzprozentsatzes empfangen werden muss. 
 
-Wenn die Option **Restmenge schließen** für eine Bestellposition aktiviert ist und der Benutzer den Empfang mit der Aktion **Empfang abschließen** abschließt, wird auch eine Abschlussanforderung an die Commerce-Zentrale gesendet, und alle nicht erhaltenen Mengen dieser Bestellposition werden storniert. Zu diesem Zeitpunkt gilt die Position als vollständig empfangen. 
+Wenn die Option **Restmenge schließen** für eine Bestellposition aktiviert ist und der Benutzer den Empfang mit der Aktion **Empfang abschließen** abschließt, wird auch eine Abschlussanforderung an die Commerce headquarters gesendet, und alle nicht erhaltenen Mengen dieser Bestellposition werden storniert. Zu diesem Zeitpunkt gilt die Position als vollständig empfangen. 
 
 ### <a name="receiving-location-controlled-items"></a>Empfangen von standortgesteuerten Positionen
 
@@ -155,15 +155,13 @@ Bei Bedarf können Sie in der Anwendungsleiste **Alles empfangen** wählen, um d
 
 ### <a name="receipt-of-unplanned-items-on-purchase-orders"></a>Erhalt ungeplanter Artikel bei Bestellungen
 
-In Commerce Version 10.0.14 und höher können Benutzer ein Produkt erhalten, das ursprünglich nicht in der Bestellung enthalten war. Um diese Funktion zu aktivieren, aktivieren Sie **Der Bestellung des Verkaufsstellenzugangs Positionen hinzufügen**.  
+In Commerce Version 10.0.14 und höher können Benutzer ein Produkt erhalten, das ursprünglich nicht in der Bestellung enthalten war. Diese Funktion funktioniert nur für den Zugang von Bestellungen. Es ist nicht möglich, Artikel bei Umlagerungsaufträgen zu erhalten, wenn die Artikel zuvor nicht bestellt und aus dem Ausgangslager versendet wurden.
 
-Diese Funktion funktioniert nur für den Zugang von Bestellungen. Es ist nicht möglich, Artikel bei Umlagerungsaufträgen zu erhalten, wenn die Artikel zuvor nicht bestellt und aus dem Ausgangslager versendet wurden.
-
-Benutzer können der Bestellung während des POS-Zugangs keine neuen Produkte hinzufügen, wenn der [Änderungsverwaltungsworkflow](../supply-chain/procurement/purchase-order-approval-confirmation.md) für die Bestellung in der Commerce-Zentrale (HQ) aktiviert ist. Um die Änderungsverwaltung zu aktivieren, müssen alle Änderungen an einer Bestellung zuerst genehmigt werden, bevor der Zugang zulässig ist. Da dieser Prozess es einem Empfänger ermöglicht, der Bestellung neue Positionen hinzuzufügen, schlägt der Zugang fehl, wenn der Änderungsverwaltungs-Workflow aktiviert ist. Wenn die Veränderungsverwaltung für alle Bestellungen oder für den Lieferanten aktiviert ist, der mit der Bestellung verknüpft ist, die aktiv am POS zugeht, kann der Benutzer der Bestellung während des Zugangs am POS keine neuen Produkte hinzufügen.
+Benutzer können der Bestellung während des POS-Zugangs keine neuen Produkte hinzufügen, wenn der [Änderungsverwaltungsworkflow](../supply-chain/procurement/purchase-order-approval-confirmation.md) für die Bestellung in der Commerce headquarters (HQ) aktiviert ist. Um die Änderungsverwaltung zu aktivieren, müssen alle Änderungen an einer Bestellung zuerst genehmigt werden, bevor der Zugang zulässig ist. Da dieser Prozess es einem Empfänger ermöglicht, der Bestellung neue Positionen hinzuzufügen, schlägt der Zugang fehl, wenn der Änderungsverwaltungs-Workflow aktiviert ist. Wenn die Veränderungsverwaltung für alle Bestellungen oder für den Lieferanten aktiviert ist, der mit der Bestellung verknüpft ist, die aktiv am POS zugeht, kann der Benutzer der Bestellung während des Zugangs am POS keine neuen Produkte hinzufügen.
 
 Die Funktion zum Hinzufügen von Positionen kann nicht als Problemumgehung für den Zugang zusätzlicher Mengen von Produkten verwendet werden, die bereits in der Bestellung enthalten sind. Überhöhter Zugang wird über den Standard verwaltet [Überhöhter Zugang](#over-receiving-validations)-Einstellungen für die Produktposition in der Bestellung.
 
-Wenn **Der Bestellung während des Zugangs an der Verkaufsstelle Positionen hinzufügen** aktiviert ist und ein Benutzer mit dem **Eingehender Vorgang** in POS empfängt, die nicht als Artikel in der aktuellen Bestellung erkannt wird, aber als gültiger Artikel erkannt wird, erhält der Benutzer eine Nachricht über das Hinzufügen des Artikels zur Bestellung. Wenn der Benutzer den Artikel zur Bestellung hinzufügt, wird die in **Jetzt zugegangen** eingegebene Menge als bestellte Menge für die Bestellposition betrachtet.
+Wenn ein Benutzer mit dem **Eingehender Vorgang** in POS empfängt, die nicht als Artikel in der aktuellen Bestellung erkannt wird, aber als gültiger Artikel erkannt wird, erhält der Benutzer eine Nachricht über das Hinzufügen des Artikels zur Bestellung. Wenn der Benutzer den Artikel zur Bestellung hinzufügt, wird die in **Jetzt zugegangen** eingegebene Menge als bestellte Menge für die Bestellposition betrachtet.
 
 Wenn der Bestellzugang vollständig ist und zur Bearbeitung an die Zentrale übermittelt wurde, werden die hinzugefügten Positionen im Bestellungszentraldokument erstellt. In der Bestellposition in der Zentrale befindet sich eine Kennzeichnung **Hinzugefügt von POS** in der Registerkarte **Allgemein** der Bestellposition. Die Kennzeichnung **Hinzugefügt von POS** zeigt an, dass die Bestellposition durch den POS-Zugangsprozess hinzugefügt wurde und keine Position war, die sich vor dem Zugang in der Bestellung befand.
 

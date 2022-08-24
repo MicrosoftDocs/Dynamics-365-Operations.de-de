@@ -7,14 +7,14 @@ ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: epopov
+ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 695f3c1e704f2712f392d0d7179da63f47731f46
-ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
+ms.openlocfilehash: 9fd801395f2ba04c703734a1de7998d6a53b6462
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9027057"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276131"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Steuerintegration für Commerce-Kanäle einrichten
 
@@ -26,7 +26,7 @@ Dieser Artikel enthält Richtlinien zum Einrichten der Steuerintegrationsfunktio
 
 Führen Sie die folgenden Schritte aus, um Funktionen zu aktivieren, die sich auf die Steuerintegrationsfunktionalität für Commerce-Kanäle beziehen.
 
-1. Gehen Sie in der Commerce-Zentrale zu **Systemadministration \> Arbeitsbereiche \> Funktionen verwalten**.
+1. Gehen Sie in der Commerce headquarters zu **Systemadministration \> Arbeitsbereiche \> Funktionen verwalten**.
 1. Finden und aktivieren Sie die folgenden Funktionen:
 
     - **Direkte Steuerintegration über POS-Kassen** – Die Funktion erweitert das Steuerintegrationsspektrum durch die Möglichkeit, Steuerkonnektoren zu erstellen, die in der Verkaufsstelle (POS) ausgeführt werden. Diese Art von Konnektor kommuniziert mit einem Finanzgerät oder -dienst, das bzw. der eine HTTP-API bereitgestellt. So muss für das Geschäft kein separates Gerät angeschafft werden. Die Funktion erlaubt die Nutzung von Mobilgeräten zur Steuerintegration, ohne dass eine gemeinsame Hardwarestation erforderlich ist.
@@ -198,7 +198,7 @@ Sie können Register auswählen, bei denen die fiskalische Registrierung verbote
 
 Um Register mit fiskalischen Registrierungsbeschränkungen festzulegen, folgen Sie diesen Schritten.
 
-1. Gehen Sie in der Commerce-Zentrale zu **Einzelhandel und Commerce \> Channel-Einrichtung \> Steuerliche Integration \> Steuerliche Registrierungsprozesse**.
+1. Gehen Sie in der Commerce headquarters zu **Einzelhandel und Commerce \> Channel-Einrichtung \> Steuerliche Integration \> Steuerliche Registrierungsprozesse**.
 1. Wählen Sie den gewünschten Prozess.
 1. Wählen Sie die Registerkarte **POS-Register mit fiskalischen Verarbeitungsbeschränkungen**.
 1. Fügen Sie nach Bedarf Register mit fiskalischen Prozessbeschränkungen hinzu.
@@ -228,7 +228,7 @@ In einigen Fällen muss ein spezieller Text auf einem Steuerbeleg gedruckt werde
     1. Wählen Sie im Feld **Info-Code-Nummer** einen Wert aus.
     1. Im Feld **Untercodenummer** wählen Sie einen Wert aus, wenn ein Untercode für den ausgewählten Infocode erforderlich ist.
     1. Wählen Sie im Feld **Text für Steuerbeleg** einen Steuertext an, der auf einen Steuerbeleg gedruckt werden soll.
-    1. Setzen Sie die Option **Benutzereingabe beim Steuerbeleg** auf **Ja**, um den Text auf einem Steuerbeleg mit Informationen zu überschreiben, die ein Benutzer manuell am POS eingibt. Diese Option gilt nur für Infocodes, die einen Eingabetyp **Text**  haben.
+    1. Setzen Sie die Option **Benutzereingabe beim Steuerbeleg** auf **Ja**, um den Text auf einem Steuerbeleg mit Informationen zu überschreiben, die ein Benutzer manuell am POS eingibt. Diese Option gilt nur für Infocodes, die einen Eingabetyp **Text** haben.
 
     > [!NOTE]
     > Sie können einen Steuertext für mehrere Info-Codes angeben, um Szenarien zu unterstützen, in denen Info-Codegruppen, verknüpfte Info-Codes und ausgelöste Info-Codes verwendet werden. In diesen Szenarien enthält der Steuerbeleg die Steuertexte aller Infocodes, die mit der Transaktionszeile verknüpft sind, in der der Rabatt gewährt wurde.
@@ -293,7 +293,7 @@ Um die manuelle Ausführung einer aufgeschobenen steuerlichen Erfassung zu aktiv
 - Folgen Sie auf der Seite **Schaltflächenraster** den Anweisungen unter [POS-Operationen zu POS-Layouts hinzufügen, indem Sie den Button Grid Designer](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) verwenden, um den Designer zu installieren und ein POS-Layout zu aktualisieren.
 
     1. Wählen Sie das zu aktualisierende Layout aus.
-    1. Fügen Sie eine neue Schaltfläche hinzu und legen Sie die Eigenschaft der Schaltfläche  auf **Steuererlicher Registrierungsprozess abschliessen**
+    1. Fügen Sie eine neue Schaltfläche hinzu und legen Sie die Eigenschaft der Schaltfläche auf **Steuererlicher Registrierungsprozess abschliessen**
     1. Führen Sie auf der Seite **Distributionszeitplan** den Auftrag **1090** aus, um Ihre Änderungen in die Kanaldatenbank zu übertragen.
 
 

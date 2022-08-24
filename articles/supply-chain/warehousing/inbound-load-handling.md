@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 43102cb867243a872a5d1df777d8c4102a48e235
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: c48d240b346acacf2988fbaac69308ee655dced6
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070318"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219501"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerinterne Abwicklung eingehender Ladungen für Bestellungen
 
@@ -279,7 +279,7 @@ Diese Szenarien erfordern die Funktion _Mehrere Produktbelegbuchungen pro Ladung
 
 #### <a name="enable-sample-data"></a>Beispieldaten aktivieren
 
-Um diese Szenarien mithilfe der angegebenen Beispieldatensätze und -werte zu verarbeiten, müssen Sie ein System verwenden, auf dem die Standarddemodaten installiert sind. Sie müssen auch die **USMF** juristische Person auswählen, bevor Sie beginnen.
+Um diese Szenarien mithilfe der angegebenen Beispieldatensätze und -werte zu verarbeiten, müssen Sie ein System verwenden, auf dem die Standard-[Demodaten](../../fin-ops-core/fin-ops/get-started/demo-data.md) installiert sind. Sie müssen auch die **USMF** juristische Person auswählen, bevor Sie beginnen.
 
 #### <a name="add-a-menu-item-for-receiving-load-items-when-a-mobile-device-is-used"></a>Fügen Sie ein Menüelement zum Empfangen von Ladeelementen hinzu, wenn ein mobiles Gerät verwendet wird
 

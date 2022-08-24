@@ -6,20 +6,20 @@ ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
-ms.reviewer: v-chgri
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: a087c213d4a7094f75da8c20e4ccc14fc52444ce
-ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
+ms.search.industry: ''
+ms.search.form: ''
+ms.openlocfilehash: d10e9ed78dfc90833ff3c09021f863f6ef0b80d9
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9027090"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9286809"
 ---
 # <a name="search-results-module"></a>Suchergebnismodul
 
@@ -114,7 +114,7 @@ Führen Sie die folgenden Schritte aus, um dedizierte Produktattribute zur Unter
 1. Führen Sie den Einzelvorgang im Hintergrund aus. Da sich der Produktbestand in einer Omnichannel-Umgebung ständig ändert, empfehlen wir dringend, diesen Job als Batch-Prozess einzuplanen.
 
 > [!NOTE]
-> Für eine konsistente Berechnung des Lagerbestands über Seiten und Module auf Ihrer E-Commerce-Website sollten Sie denselben Mengentyp für die Einstellung **Inventarverfügbarkeit basierend auf** in der Commerce-Zentralenverwaltung und die Einstellung **Lagerbestand basierend auf** im Commerce Site Builder auswählen. Weitere Informationen zum Anwenden von Bestandeinstellungen in Site Builder finden Sie unter [Bestandseinstellungen anwenden](inventory-settings.md).
+> Für eine konsistente Berechnung des Lagerbestands über Seiten und Module auf Ihrer E-Commerce-Website sollten Sie denselben Mengentyp für die Einstellung **Inventarverfügbarkeit basierend auf** in der Commerce headquartersnverwaltung und die Einstellung **Lagerbestand basierend auf** im Commerce Site Builder auswählen. Weitere Informationen zum Anwenden von Bestandeinstellungen in Site Builder finden Sie unter [Bestandseinstellungen anwenden](inventory-settings.md).
 
 Gehen Sie folgendermaßen vor, um die Produktattribute für einen Online-Kanal zu konfigurieren. 
 

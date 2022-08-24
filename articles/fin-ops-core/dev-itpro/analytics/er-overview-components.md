@@ -1,26 +1,26 @@
 ---
 title: Überblick über die Komponenten der elektronischen Berichterstellung
 description: In diesem Artikel werden die Komponenten der elektronischen Berichterstellung (EB) beschrieben.
-author: nselin
+author: kfend
 ms.date: 09/28/2021
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 58941
-ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
-ms.topic: overview
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2b8b197fdea0cd49fc5161a12b8f547cc1a27bf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 58941
+ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
+ms.search.form: ERWorkspace
+ms.openlocfilehash: 4851374ca4943a84d35f063e0ee65b537ec3b6cd
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892449"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9285030"
 ---
 # <a name="electronic-reporting-components"></a>Überblick über die Komponenten der elektronischen Berichterstellung
 
@@ -113,7 +113,7 @@ Um eine einzelne ER-Formatkonfiguration auszuführen, um Daten von einem eingehe
 
 Die Versionsverwaltung wird für ER-Komponenten unterstützt. Der folgende Workflow wird für die Verwaltung von Änderungen in ER-Komponenten bereitgestellt:
 
-1. Die Version, die ursprünglich erstellt wurde, ist als **Entwurf**-Version gekennzeichnet. Diese Version kann bearbeitet werden und ist für Testläufe verfügbar.
+1. Die ursprünglich erstellte Version ist als **Entwurf**-Version gekennzeichnet. Diese Version kann bearbeitet werden und ist für Testläufe verfügbar.
 2. Die **Entwurf**-Version kann in eine **Abgeschlossen**-Version konvertiert werden. Diese Version kann in lokalen Berichtsprozessen verwendet werden.
 3. Die **Abgeschlossen**-Version kann in eine **Freigegeben**-Version konvertiert werden. Diese Version wird in Microsoft Dynamics Lifecycle Services (LCS) veröffentlicht und kann in den globalen Berichterstellungsprozessen verwendet werden.
 4. Die **Gemeinsam genutzt**-Version kann in eine **Eingestellt**-Version konvertiert werden. Diese Version kann gelöscht werden.
@@ -123,15 +123,37 @@ Versionen in einem **Abgeschlossen** oder **Gemeinsam genutzt**-Status sind für
 - Die Komponente kann im XML-Format serialisiert und als Datei im XML-Format exportiert werden.
 - Die Komponente kann aus einer XML-Datei reserialisiert und als neue Version einer ER-Komponente in der Anwendung importiert werden.
 
+Weitere Informationen finden Sie unter [Importieren einer neuen Datenmodellkonfiguration](er-quick-start1-new-solution.md#ImportDataModel) und [Exportieren der abgeschlossenen Version eines abgeleiteten Formats](er-calculated-field-type.md#export-completed-version-of-a-derived-format).
+
+### <a name="draft-versions-at-runtime"></a>Entwurfsversionen zur Laufzeit
+
+In Ihren persönlichen Benutzerparametern für das EB-Framework können Sie die Option aktivieren, mit der Sie festlegen können, ob die Entwurfsversion einer EB-Konfiguration zur Laufzeit verwendet werden muss. Informationen dazu, wie Sie die Option **Entwurf ausführen** für Ihre EB-Konfigurationen verfügbar machen finden Sie in [Markieren eines benutzerdefinierten Formats als ausführbar](er-quick-start2-customize-report.md#MarkFormatRunnable).
+
+> [!NOTE]
+> Die EB-Benutzerparameter sind unternehmensspezifisch und benutzerspezifisch.
+
+### <a name="draft-format-versions-at-runtime"></a>Entwurfsformatversionen zur Laufzeit
+
+Wenn Sie eine EB-Lösung ausführen, werden die Entwurfsversionen ihrer Formatkomponenten standardmäßig ignoriert. Stattdessen wird nur die relevante Version, die einen anderen Status als **Entwurf** hat, genutzt. Manchmal möchten Sie die EB zwingen, zur Laufzeit die Entwurfsversion Ihrer EB-Formatkonfiguration zu verwenden. Nachdem Sie beispielsweise notwendige Änderungen in Ihrer Entwurfsversion vorgenommen haben, können Sie diese Entwurfsversion für den Testlauf verwenden. Auf diese Weise können überprüfen, ob Ihre Änderungen richtig sind. Um mit der Nutzung dieser Entwurfsformatversion zu beginnen [legen Sie](er-quick-start2-customize-report.md#MarkFormatRunnable) die Option **Entwurf ausführen** der betroffenen EB-Konfiguration auf **Ja** fest.
+
+### <a name="draft-model-mapping-versions-at-runtime"></a>Entwürfe für Modellzuordnungsversionen zur Laufzeit erstellen
+
+Wenn Sie eine EB-Lösung ausführen, werden die Entwurfsversionen ihrer Modellzuordnungskomponenten werden immer verwendet. Manchmal möchten Sie die EB zwingen, zur Laufzeit die Entwurfsversion Ihrer EB-Modellzuordnungskonfiguration zu ignorieren. Ab **Version 10.0.29** können Sie festlegen, dass die Funktion **Option „Entwurf ausführen“ für EB-Modellzuordnungen immer berücksichtigen** die Modellzuordnungsversion, die zur Laufzeit verwendet wird, steuert. Wenn diese Funktion aktiviert ist, tritt das folgende Verhalten auf:
+
+- Wenn die Option **Entwurf ausführen** für eine Modellzuordnungskonfiguration auf **Nein** festgelegt ist, wird zur Laufzeit die höchste Nicht-Entwurfsversion dieser Konfiguration verwendet. Eine Ausnahme wird ausgelöst, wenn die Konfiguration in der aktuellen Finance-Instanz nicht verfügbar ist.
+- Wenn die Option **Entwurf ausführen** für eine Modellzuordnungskonfiguration auf **Ja** festgelegt ist, wird zur Laufzeit die Entwurfsversion dieser Konfiguration verwendet.
+
 ## <a name="component-date-effectivity"></a>Teildatumswirksamkeit
 
-ER-Komponentenversionen haben ein Gültigkeitsdatum. Sie können das „Gültig ab“-Datum für eine ER-Komponente definieren, um das Datum anzugeben, ab dem diese Komponente für Berichtsprozesse wirksam wird. Das Anwendungs-Sitzungsdatum wird verwendet, um zu definieren, ob eine Komponente für die Ausführung gültig ist. Wenn mehrere Versionen für ein bestimmtes Datum gültig sind, wird die aktuellste Version für die Berichterstattung verwendet.
+EB-Formatkomponentenversionen haben ein Gültigkeitsdatum. Sie können das „Gültig ab“-Datum für eine EB-Formatkomponente definieren, um das Datum anzugeben, ab dem diese Komponente für Berichtsprozesse wirksam wird. Das Anwendungs-Sitzungsdatum wird verwendet, um zu definieren, ob eine Komponente für die Ausführung gültig ist. Wenn mehrere Versionen für ein bestimmtes Datum gültig sind, wird die aktuellste Version für die Berichterstattung verwendet.
 
 ## <a name="component-access"></a>Teilzugriff
 
-Der Zugriff auf Komponenten im ER-Format hängt von der Einstellung für den Länder- bzw. Regionscode der internationalen Organisation für Normung (International Organization for Standardization, ISO) ab. Wenn diese Einstellung für eine ausgewählte Version einer Formatkonfiguration leer ist, kann der Zugriff auf eine Formatkomponente von jedem Unternehmen aus zur Laufzeit erfolgen. Wenn die Einstellung ISO-Länder-/Regionscodes enthält, steht eine Formatkomponente nur von Unternehmen zur Verfügung, die eine primäre Adresse besitzen, die für einen der ISO-Länder-/Regionscodes einer Formatkomponente definiert ist.
+Der Zugriff auf EB-Format- und -Modellzuordnungskomponenten zur Laufzeit hängt von der Einstellung für den Länder- bzw. Regionscode der internationalen Organisation für Normung (ISO) ab. Wenn diese Einstellung für eine ausgewählte Version einer Format- oder Modellzuordnungskonfiguration leer ist, kann der Zugriff auf eine Format- oder Modellzuordnungskomponente von jedem Unternehmen aus zur Laufzeit erfolgen. Wenn die Einstellung ISO-Länder-/Regionscodes enthält, steht eine Format- oder Modellzuordnungskomponente nur von Unternehmen zur Verfügung, die eine primäre Adresse besitzen, die für einen der ISO-Länder-/Regionscodes einer Formatkomponente definiert ist.
 
-Für unterschiedliche Versionen einer Datenformatkomponente kann es verschiedene Einstellungen von ISO-Länder-/Regionscodes geben.
+Für unterschiedliche Versionen einer Format- oder Modellzuordnungskomponente kann es verschiedene Einstellungen von ISO-Länder-/Regionscodes geben.
+
+Weitere Informationen finden Sie unter [Auf Länderkontext beruhende EB-Modellzuordnungen konfigurieren](er-country-dependent-model-mapping.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

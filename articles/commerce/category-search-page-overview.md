@@ -7,18 +7,18 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: v-chgri
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5e61db026649df8fe331d107bfbda8246fb9d5f9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.assetid: ''
+ms.openlocfilehash: 1f2e4eb8825dd690f926f7f0bdfc39f1eb5fb83c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881851"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276372"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>Übersicht über die Standard-Kategorie-Landingpage und die Suchergebnisseite
 
@@ -46,6 +46,12 @@ Die folgenden Komponenten sind für eine Kategorie zentral:
     - Produktname - \[Z-A\]
     - Bewertung - tief bis hoch
     - Bewertung - hoch bis tief
+
+- **Erweiterte Sortieroptionen** werden von den Websitebesuchern verwendet, um die Produkte mithilfe intelligenter Kriterien zu sortieren. Wenn Sie [Produktempfehlungen](product-recommendations.md) zulassen, stehen die folgenden Sortieroptionen zur verfügbar. Weitere Informationen finden Sie im Artikel [Arten von Produktempfehlungen](product-recommendations.md#types-of-product-recommendations).
+
+    - Neue
+    - Bestseller
+    - Populär
 
 - Die **Paginierung** ermöglicht es Websitebesuchern, von einer Seite mit kategorisierten Produktergebnissen zu einer anderen Seite zu wechseln.
 - **Gesamtzahl** gibt die Gesamtzahl von Produkten an, die in einer Kategorie definiert werden.
@@ -78,7 +84,7 @@ Die folgenden Komponenten sind für eine Suchergebnisseite zentral:
 
 - **Produktplatzierungskacheln** zeigen die Produkte für die Suche des Benutzers. Standardmäßig werden diese Kacheln durch die Cloud-betriebene Suchenbedeutungspunktzahl für die Benutzersuche sortiert.
 - **Verfeinerungs- und Auswahlzusammenfassung** sind Filter, die Zählungen beeinhalten und zur Feinsuche von Artikeln verwendet werden. Der Verkaufmanager konfiguriert sie als Teil der Konfiguration der Metadaten, die dann den Kanalkategorien und Produktattributen zugeordnet werden.
-- **Sortieroptionen** werden von den Websitebesuchern verwendet, um die Produkte zu sortieren. Standardmäßig sind die folgenden Sortieroptionen verfügbar:
+- **Standardsortieroptionen** werden von den Websitebesuchern verwendet, um die Produkte zu sortieren. Standardmäßig sind die folgenden Sortieroptionen verfügbar:
 
     - Preis - niedrig bis hoch.
     - Preis - hoch bis niedrig
@@ -86,7 +92,16 @@ Die folgenden Komponenten sind für eine Suchergebnisseite zentral:
     - Produktname - \[Z-A\]
     - Bewertung - tief bis hoch
     - Bewertung - hoch bis tief
-    - Standard
+    - Standard 
+    
+    > [!NOTE]
+    > Wenn Werte für **Anzeigereihenfolge** für die Produkte in der Navigationshierarchie festgelegt sind, berücksichtigt die Sortierung standardmäßig auf einer Kategorieseite die in **Anzeigereihenfolge** definierten Werte. Andernfalls erfolgt die Sortierung durch die **Produktnummer**.
+    
+- **Erweiterte Sortieroptionen** werden von den Websitebesuchern verwendet, um die Produkte mithilfe intelligenter Kriterien zu sortieren. Wenn Sie [Produktempfehlungen](product-recommendations.md) zulassen, stehen die folgenden Sortieroptionen zur verfügbar. Weitere Informationen finden Sie im Artikel [Arten von Produktempfehlungen](product-recommendations.md#types-of-product-recommendations).
+
+    - Neue
+    - Bestseller
+    - Populär
 
 - Die **Paginierung** ermöglicht es Websitebesuchern, von einer Seite mit kategorisierten Produktergebnissen zu einer anderen Seite zu wechseln.
 - **Gesamtzahl** gibt die Gesamtzahl von Produkten an, die in einer Kategorie definiert werden und den Suchkriterien entsprechen.
@@ -94,6 +109,8 @@ Die folgenden Komponenten sind für eine Suchergebnisseite zentral:
 >[!NOTE]
 >Diese Cloud-betriebenen Suchfunktionen sind ab Version 10.0.8 verfügbar. Stellen Sie sicher, dass unter **Handelsparameter > Konfigurationsparameter** ein Eintrag für „ProductSearch.UseAzureSearch set to 'true'“ vorhanden ist. 
 ![Konfigurationsparameter für die cloud-betriebene Suche.](./media/CloudPoweredSearchConfigurationParameters.png)
+
+>Außerdem müssen Sie [Produktempfehlungen](product-recommendations.md) für Ihre Umgebung aktivieren, um erweiterte Sortieroptionen wie „Neu“, „Bestseller“ und „Beliebt“ verwenden zu können. Erweiterte Sortieroptionen sind mit Commerce-SDK-Version 9.35+ und Commerce-Version 10.0.20 verfügbar.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

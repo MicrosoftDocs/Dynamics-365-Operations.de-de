@@ -1,24 +1,24 @@
 ---
 title: Mehrere abgeleitete Zuordnungen für einen einzelnen Modellstamm verwalten
 description: In diesem Artikel wird erläutert, wie Sie mehrere abgeleitete Zuordnungen verwalten, die für einen einzelnen Modellstamm konfiguriert wurden.
-author: NickSelin
+author: kfend
 ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERSolutionTable, ERModelMappingTable
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 960f5962ec1ea216e35feb0c282856bed95d079a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: ERSolutionTable, ERModelMappingTable
+ms.openlocfilehash: 868d47ccfebb9a9753d93344c72b10ae4353b0e6
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892478"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277507"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Mehrere abgeleitete Zuordnungen für einen einzelnen Modellstamm verwalten
 
@@ -106,7 +106,7 @@ In diesem Abschnitt wird erklärt, wie die von Microsoft bereitgestellten Modell
 3. Wählen Sie im Dropdownfeld **Konfiguration erstellen** im Feld **Neu** den Eintrag **Ableiten vom Namen: Kundenrechnungsmodellzuordnung, Microsoft** aus.
 4. Geben Sie im Feld **Name** die Bezeichnung **Rechnungsmodellzuordnung Litware** ein.
 5. Wählen Sie **Konfiguration erstellen**.
-6. [Kennzeichnen Sie](er-quick-start2-customize-report.md#MarkFormatRunnable) die [Entwurfsversion](general-electronic-reporting.md#component-versioning) der abgeleiteten Zuordnung als zur Laufzeit verfügbar:
+6. [Kennzeichnen Sie](er-quick-start2-customize-report.md#MarkFormatRunnable) die [Entwurfsversion](general-electronic-reporting.md) der abgeleiteten Zuordnung als zur Laufzeit verfügbar:
 
     1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Konfigurationen** in der Gruppe **Erweiterte Einstellungen** die Option **Benutzerparameter** aus.
     2. Legen Sie im Dialogfeld **Benutzerparameter** die Option **Testlaufeinstellungen** auf **Ja** fest und wählen Sie dann **OK** aus.

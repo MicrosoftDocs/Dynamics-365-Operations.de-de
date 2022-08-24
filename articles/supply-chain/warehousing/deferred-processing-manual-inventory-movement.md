@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5e5d0a93a4c628d4867161d082b0f0e177ddb95c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4a8dd322446843af41214e8daa0822939d0468f0
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863736"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219807"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Aufgeschobene Verarbeitung von manuellen Bestandsbewegungen
 
@@ -33,7 +33,7 @@ Die Verarbeitung im Hintergrund wird durch die Funktion [Verarbeiten von Lageror
 Um diese Funktion verfügbar zu machen, schalten Sie die folgenden Funktionen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ein. Sie müssen sie in dieser Reihenfolge einschalten:
 
 1. *Organisationsweite Arbeitssperrung*<br>(Ab Supply Chain Management Version 10.0.21 ist diese Funktion obligatorisch, daher ist sie standardmäßig aktiviert und kann nicht wieder deaktiviert werden.)
-1. *Lagerort-App-Ereignisse verarbeiten*<br>(Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert.)
+1. *Lagerort-App-Ereignisse verarbeiten*<br>(Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert. Ab Supply Chain Management Version 10.0.29 ist diese Funktion obligatorisch. Daher ist es standardmäßig aktiviert und kann nicht wieder deaktiviert werden.)
 1. *Verzögerte Put-Vorgänge*
 1. *Verzögerte Verarbeitung des manuellen Bestandsumlagerungsvorgangs*<br>(Ab Supply Chain Management Version 10.0.25 ist diese Funktion obligatorisch, daher ist sie standardmäßig aktiviert und kann nicht wieder deaktiviert werden.)
 

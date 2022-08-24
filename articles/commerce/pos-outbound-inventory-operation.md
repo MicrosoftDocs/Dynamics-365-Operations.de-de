@@ -1,27 +1,27 @@
 ---
 title: Ausgehender Bestandsvorgang in POS
 description: Dieser Artikel beschreibt die Möglichkeiten des Bestandsausgangs am Point of Sale (POS).
-author: hhaines
+author: hhainesms
 ms.date: 07/30/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: dd2c124660643628ca4c19dc3a49366b67f29ad3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: Retail
+ms.search.form: ''
+ms.openlocfilehash: dfef19b19c3fb1abd5078cacfeeaaabafcf162f9
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850222"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9272767"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Ausgehender Bestandsvorgang in POS
 
@@ -124,7 +124,7 @@ In Commerce Version 10.0.12 wurde eine Funktion hinzugefügt, mit der POS-Benutz
 
 Um das Unternehmen so zu konfigurieren, dass eine Unterlieferung von Umlagerungsaufträgen möglich ist, wechseln Sie in Commerce Headquarters (HQ) zu **Bestandsverwaltung \> Einrichtung \> Bestands- und Lagerverwaltungsparameter**. Auf der Seite **Bestands- und Lagerverwaltungsparameter**, auf der Registerkarte **Umlagerungsaufträge** aktivieren Sie die Option **Unterlieferung akzeptieren**. Dann führen Sie den Verteilungszeitplanvorgang **1070** zum Synchronisieren der Parameteränderungen mit Ihrem Geschäftskanal aus.
 
-Unterlieferungsprozentsätze für eine Transportauftragsposition können für Produkte als Teil der Produktkonfiguration in der Commerce-Zentrale vordefiniert werden. Alternativ können sie über Commerce Headquarters (HQ) in einer bestimmten Überweisungsauftragsposition festgelegt oder überschrieben werden.
+Unterlieferungsprozentsätze für eine Transportauftragsposition können für Produkte als Teil der Produktkonfiguration in der Commerce headquarters vordefiniert werden. Alternativ können sie über Commerce Headquarters (HQ) in einer bestimmten Überweisungsauftragsposition festgelegt oder überschrieben werden.
 
 Nachdem eine Organisation die Konfiguration der Unterlieferung von Umlagerungsaufträgen abgeschlossen hat, wird den POS-Benutzern eine neue Option **Restmenge schließen** im Bereich **Details** angezeigt, wenn sie eine ausgehende Umlagerungsauftragsposition über die Funktion **Ausgangsvorgang** auswählen. Wenn der Benutzer die Lieferung mit dem Vorgang **Erfüllung abschließen** abschließt, können sie eine Anforderung an Commerce Headquarters (HQ) senden, um die verbleibende nicht versendete Menge zu stornieren. Wenn ein Benutzer die verbleibende Menge schließt, führt Commerce eine Prüfung durch, ob die stornierte Menge innerhalb der prozentualen Toleranz für die Unterlieferung liegt, die in der Überweisungsauftragsposition definiert ist. Wenn die Toleranz für Unterlieferung überschritten wird, wird eine Fehlermeldung angezeigt und der Benutzer kann die verbleibende Menge erst schließen, wenn die zuvor versendete Menge und die Menge „Jetzt versenden“ die Toleranz für Unterlieferung erfüllt oder überschreitet.
 

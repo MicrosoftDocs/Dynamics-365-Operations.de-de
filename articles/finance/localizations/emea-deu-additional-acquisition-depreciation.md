@@ -1,25 +1,25 @@
 ---
 title: Zusätzliche Anschaffungsabschreibung
 description: In diesem Artikel wird beschrieben, wie die Abschreibung für zusätzliche Anschaffungen in Deutschland berechnet wird und gibt ein Beispiel. Anschaffungregulierungen für Anlagen müssen so kalkuliert werden, als ob die Regulierungen am ersten Tag des Geschäftsjahres vorgenommen wurden, unabhängig davon, wann die Regulierungsbuchungen tatsächlich erstellt wurden.
-author: ShylaThompson
+author: mrolecki
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetAcquisitionMethod, AssetDepreciationProfile
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 12791
 ms.search.region: Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f398b5c11a680d29ca739aeaaf2ec8277669ead2f615b091c6f2bf9a21de336e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.custom: 12791
+ms.search.form: AssetAcquisitionMethod, AssetDepreciationProfile
+ms.openlocfilehash: 48f18068f83e4dd7332a3271b75ac83ad42d6b88
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769710"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9267092"
 ---
 # <a name="additional-acquisition-depreciation"></a>Zusätzliche Anschaffungsabschreibung
 

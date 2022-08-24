@@ -10,28 +10,35 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4bd6042f9dd33ba15773b251911e965cb870c5aa
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e1c9a9b618184303efe2bd10975e46423cca9ccc
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865120"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219966"
 ---
 # <a name="delay-tolerance-negative-days"></a>Verzögerungstoleranz (negative Tage)
 
 [!include [banner](../../includes/banner.md)]
 
-Die Verzögerungstoleranz-Funktionalität ermöglicht der Planungsoptimierung, den Wert **Negative Tage** zu berücksichtigen, der für Deckungsgruppen festgelegt ist. Sie wird verwendet, um die Verzögerungstoleranz zu verlängern, die während der Produktprogrammplanung angewendet wird. Auf diese Weise können Sie vermeiden, neue Vorräte zu erstellen, wenn der vorhandene Vorrat den Bedarf nach einer kurzen Verzögerung decken kann. Der Zweck der Funktionalität besteht darin, festzustellen, ob es sinnvoll ist, einen neuen Vorrat für einen bestimmten Bedarf zu erstellen.
+Die Verzögerungstoleranz-Funktionalität ermöglicht der Planungsoptimierung, den Wert **Negative Tage** zu berücksichtigen, der für Dispositionssteuerungsgruppe, Artikelabdeckung und/oder Produktprogrammplan festgelegt ist. Sie wird verwendet, um die Verzögerungstoleranz zu verlängern, die während der Produktprogrammplanung angewendet wird. Auf diese Weise können Sie vermeiden, neue Vorräte zu erstellen, wenn der vorhandene Vorrat den Bedarf nach einer kurzen Verzögerung decken kann. Der Zweck der Funktionalität besteht darin, festzustellen, ob es sinnvoll ist, einen neuen Vorrat für einen bestimmten Bedarf zu erstellen.
 
 ## <a name="turn-on-the-feature-in-your-system"></a>Funktion in Ihrem System aktivieren
 
-Um die Verzögerungstoleranz-Funktionalität in Ihrem System verfügbar zu machen, gehen Sie zu [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und schalten Sie die Funktion *Negative Tage für Planungsoptimierung* ein.
+Um die Verzögerungstoleranz-Funktionalität in Ihrem System verfügbar zu machen, gehen Sie zu [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und schalten Sie die folgenden Funktionen ein:
+
+- *Negative Tage für die Planungsoptimierung*: Diese Funktion ermöglicht Einstellungen für negative Tage für Dispositionssteuerungsgruppen und Artikelabdeckung.
+- *Automatisierung der Lieferungen zur Auftragsfertigung*: Diese Funktion aktiviert Einstellungen für negative Tage für Produktprogrammpläne. (Weitere Informationen finden Sie unter [Automatisierung der Lieferungen zur Auftragsfertigung](../make-to-order-supply-automation.md).)
 
 ## <a name="delay-tolerance-in-planning-optimization"></a>Verzögerungstoleranz in der Planungsoptimierung
 
 Die Verzögerungstoleranz stellt die Anzahl der Tage über die Vorlaufzeit hinaus dar, die Sie bereit sind, zu warten, bevor Sie eine neue Wiederbeschaffung bestellen, wenn die bestehende Beschaffung bereits geplant ist. Die Verzögerungstoleranz wird durch die Verwendung von Kalendertagen und nicht von Geschäftstagen definiert.
 
-Zum Zeitpunkt der Produktprogrammplanung, wenn das System die Verzögerungstoleranz berechnet, berücksichtigt es die Einstellung **Negative Tage**. Sie können den Wert **Negative Tage** entweder auf der Seite **Abdeckungsgruppen** oder auf der Seite **Elementabdeckung** festlegen.
+Zum Zeitpunkt der Produktprogrammplanung, wenn das System die Verzögerungstoleranz berechnet, berücksichtigt es die Einstellung **Negative Tage**. Sie können den Wert **Negative Tage** auf der Seite **Dispositionssteuerungsgruppe** oder auf der Seite **Artikelabdeckung** oder der Seite **Produktprogrammpläne** festlegen. Wenn negative Tage auf mehr als einer Ebene zugewiesen werden, wendet das System die folgende Hierarchie an, um zu entscheiden, welche Einstellung verwendet werden soll:
+
+- Wenn negative Tage auf der Seite **Produktprogrammpläne** aktiviert sind, überschreibt diese Einstellung alle anderen Einstellungen für negative Tage, wenn der Plan ausgeführt wird.
+- Wenn negative Tage auf der Seite **Artikelabdeckung** konfiguriert sind, überschreibt diese Einstellung die Einstellung der Abdeckungsgruppe.
+- Negative Tage, die auf der Seite **Dispositionssteuerungsgruppe** konfiguriert sind, gelten nur, wenn negative Tage nicht für einen relevanten Artikel oder Plan konfiguriert wurden.
 
 Das System verknüpft die Berechnung der Verzögerungstoleranz mit dem *frühesten Datum der Wiederbeschaffung*, das dem heutigen Datum plus der Vorlaufzeit entspricht. Die Verzögerungstoleranz wird mit Hilfe der folgenden Formel berechnet, wobei *max()* den größeren von zwei Werten findet:
 

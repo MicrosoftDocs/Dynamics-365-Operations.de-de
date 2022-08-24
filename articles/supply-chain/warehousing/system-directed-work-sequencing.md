@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 8dfa7d8e3bdbfd74c6f95d8b79ac1b0698f73bd6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 88ea680b5b3e237d117b087978d703a7f6f09465
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849125"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219687"
 ---
 # <a name="system-directed-work-sequencing"></a>Systemgeleitete Arbeitsabfolgen
 
@@ -44,7 +44,7 @@ Bevor Sie die Funktion für systemgeleitete Arbeitsabfolgen verwenden können, m
 
 ### <a name="make-demo-data-available"></a>Demodaten zur Verfügung stellen
 
-Um das Szenario mithilfe der in diesem Artikel dargestellten Werte zu bearbeiten, müssen Sie auf einem System arbeiten, auf dem die Standarddemodaten installiert sind. Außerdem müssen Sie die **USMF** juristische Person auswählen. Das Szenario verwendet Lagerort *51* aus den Demodaten.
+Um das Szenario mithilfe der in diesem Artikel dargestellten Werte zu bearbeiten, müssen Sie auf einem System arbeiten, auf dem die [Standarddemodaten](../../fin-ops-core/fin-ops/get-started/demo-data.md) installiert sind. Außerdem müssen Sie die **USMF** juristische Person auswählen. Das Szenario verwendet Lagerort *51* aus den Demodaten.
 
 > [!IMPORTANT]
 > Bevor Sie die Aufträge für den Lagerort freigeben, stellen Sie sicher, dass die Kommissionierstellen über genügend Lagerbestand für alle Artikel in den Aufträgen verfügen.

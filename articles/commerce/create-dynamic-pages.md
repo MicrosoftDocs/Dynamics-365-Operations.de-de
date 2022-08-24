@@ -1,7 +1,7 @@
 ---
 title: Dynamische E-Commerce-Seiten anhand von URL-Parametern erstellen
 description: In diesem Artikel wird erläutert, wie Sie eine E-Commerce-Seite in Microsoft Dynamics 365 Commerce einrichten, die basierend auf URL-Parametern dynamischen Inhalt bereitstellen kann.
-author: StuHarg
+author: bicyclingfool
 ms.date: 05/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
-ms.openlocfilehash: 83e20d9fc655a474a11521ec61d0b64d30603181
-ms.sourcegitcommit: c271b2edc4bf777f7194b09139ccbd174a359c75
+ms.openlocfilehash: 718bc099347f2924b299ccd4562d9d7055c43187
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "9169129"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9282875"
 ---
 # <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>Dynamische E-Commerce-Seiten anhand von URL-Parametern erstellen
 

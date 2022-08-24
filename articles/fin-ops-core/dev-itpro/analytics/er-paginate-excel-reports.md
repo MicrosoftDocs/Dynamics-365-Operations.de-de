@@ -1,26 +1,26 @@
 ---
 title: Ein ER-Format zum Paginieren von in Excel generierten Dokumenten entwerfen
 description: In diesem Artikel wird erläutert, wie Sie ein elektronisches Berichtsformat entwerfen, das ein in Microsoft Excel generiertes Dokument paginiert.
-author: NickSelin
+author: kfend
 ms.date: 09/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
-ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: Version 10.0.22
-ms.openlocfilehash: e8edc8bba62f74b4f81d423cf75b5fb87c01e43f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
+ms.search.form: EROperationDesigner
+ms.openlocfilehash: e4a34dffda9e9b95f5d6c7ee382723663817ec6b
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909277"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9285000"
 ---
 # <a name="design-an-er-format-to-paginate-generated-documents-in-excel"></a>Ein ER-Format zum Paginieren von in Excel generierten Dokumenten entwerfen
 
@@ -58,11 +58,11 @@ In diesem Szenario sind Sie der Mitarbeiter von Litware, Inc., das derzeit als a
 5. Geben Sie im Feld **Name** den Begriff **Intrastat-Bericht Litware** ein.
 6. Wählen Sie **Konfiguration erstellen** aus, um das neue Format zu erstellen.
 
-Version 1.9.1 der EB-Formatkonfiguration **Intrastat-Bericht Litware** wird erstellt. Diese Version hat den [Status](general-electronic-reporting.md#component-versioning) **Entwurf** und kann bearbeitet werden. Der aktuelle Inhalt Ihres benutzerdefinierten EB-Formats entspricht dem Inhalt des von Microsoft bereitgestellten Formats.
+Version 1.9.1 der EB-Formatkonfiguration **Intrastat-Bericht Litware** wird erstellt. Diese Version hat den Status **Entwurf** und kann bearbeitet werden. Der aktuelle Inhalt Ihres benutzerdefinierten EB-Formats entspricht dem Inhalt des von Microsoft bereitgestellten Formats.
 
 ### <a name="make-the-custom-format-runnable"></a>Das benutzerdefinierte Format als ausführbar entwickeln
 
-Nachdem die erste Version Ihres benutzerdefinierten Formats mit dem Status **Entwurf** erstellt wurde, können Sie das Format zu Testzwecken ausführen. Um den Bericht auszuführen, verarbeiten Sie eine Kreditorenzahlung mithilfe der Zahlungsmethode, die sich auf Ihr benutzerdefiniertes EB-Format bezieht. Beim Aufrufen eines EB-Formats aus der Anwendung werden standardmäßig nur Versionen mit dem Status **Abgeschlossen** oder **Freigegeben** [berücksichtigt](general-electronic-reporting.md#component-versioning). Dieses Verhalten verhindert, dass EB-Formate mit unfertigen Designs verwendet werden. Für Ihre Testläufe können Sie die Anwendung jedoch zwingen, die Version Ihres EB-Formats mit dem Status **Entwurf** zu verwenden. Auf diese Weise können Sie die aktuelle Formatversion anpassen, falls Änderungen erforderlich sind. Weitere Informationen finden Sie unter [Anwendbarkeit](electronic-reporting-destinations.md#applicability).
+Nachdem die erste Version Ihres benutzerdefinierten Formats mit dem Status **Entwurf** erstellt wurde, können Sie das Format zu Testzwecken ausführen. Um den Bericht auszuführen, verarbeiten Sie eine Kreditorenzahlung mithilfe der Zahlungsmethode, die sich auf Ihr benutzerdefiniertes EB-Format bezieht. Beim Aufrufen eines EB-Formats aus der Anwendung werden standardmäßig nur Versionen mit dem Status **Abgeschlossen** oder **Freigegeben** berücksichtigt. Dieses Verhalten verhindert, dass EB-Formate mit unfertigen Designs verwendet werden. Für Ihre Testläufe können Sie die Anwendung jedoch zwingen, die Version Ihres EB-Formats mit dem Status **Entwurf** zu verwenden. Auf diese Weise können Sie die aktuelle Formatversion anpassen, falls Änderungen erforderlich sind. Weitere Informationen finden Sie unter [Anwendbarkeit](electronic-reporting-destinations.md#applicability).
 
 Um die Entwurfsversion eines EB-Formats zu verwenden, müssen Sie das EB-Format explizit markieren.
 
@@ -338,7 +338,7 @@ Wenn Sie die Sichtbarkeit der Seitenfußzeile steuern möchten und die Fußzeile
     > [!NOTE]
     > Der Operand `Total.Running.Amount.Sum(false)` gibt die zuvor erfasste Gesamtanzahl der Ausführungen zurück. Der Operand `Total.Running.Amount.Collect(Total.Page.Amount.Sum(true))` gibt die Gesamtanzahl der aktuellen Seite zurück. Sie müssen das Argument der verschachtelten Funktion des zweiten Operanden als **True** angeben, um die Datensammlung `Total.Page.Amount` zurückzusetzen, sobald dieser Wert in die laufende Gesamtsammlung `Total.Running.Amount` eingegeben wird. Das angegebene Argument muss mit der Erfassung der nächsten Seitensumme ab einem Wert von 0 (Null) beginnen.
     >
-    > Die Funktion `Total.Running.Amount.Sum(false)` wird aufgerufen, um die laufende Summe des Betrags in der Excel-Zelle **ReportPageFooter\_ RunningTotalAmount** auf der aktuellen Seite einzugeben.
+    > Die Funktion `Total.Running.Amount.Sum(false)` wird aufgerufen, um die laufende Summe des Betrags in der Excel-Zelle **ReportPageFooter\_RunningTotalAmount** auf der aktuellen Seite einzugeben.
 
 2. Wählen Sie in der Formatstruktur der verschachtelten **Bereich**-Komponente aus, die sich auf die Excel-Zeile **ReportPageFooter\_RunningTotalWeight** bezieht, und führen Sie dann die folgenden Schritte aus:
 
@@ -363,7 +363,7 @@ Wenn Sie die Sichtbarkeit der Seitenfußzeile steuern möchten und die Fußzeile
 3. Fügen Sie die Formel `COUNT(Total.Page.Amount.Result)-Total.Running.Lines.Sum(false)` hinzu.
 
     > [!NOTE]
-    > Diese Formel berechnet die Anzahl der Transaktionen auf der aktuellen Seite als Differenz zwischen der Anzahl der gesammelten Transaktionen, die in **Total.Page.Amount.Result** für den gesamten Bericht und die Anzahl der zu diesem Zeitpunkt gespeicherten Transaktionen in **Total.Running.Lines.Sum** gespeichert wurden. Da die Anzahl der Transaktionen für die aktuelle Seite in **Total.Running.Lines** in der Bindung der **Bereich**-Komponente gespeichert ist, die sich auf die Excel-Zelle **ReportPageFooter\_ RunningCounterLines** bezieht, ist die Anzahl der Transaktionen auf der aktuellen Seite noch nicht enthalten. Daher entspricht dieser Unterschied der Anzahl der Transaktionen auf der aktuellen Seite.
+    > Diese Formel berechnet die Anzahl der Transaktionen auf der aktuellen Seite als Differenz zwischen der Anzahl der gesammelten Transaktionen, die in **Total.Page.Amount.Result** für den gesamten Bericht und die Anzahl der zu diesem Zeitpunkt gespeicherten Transaktionen in **Total.Running.Lines.Sum** gespeichert wurden. Da die Anzahl der Transaktionen für die aktuelle Seite in **Total.Running.Lines** in der Bindung der **Bereich**-Komponente gespeichert ist, die sich auf die Excel-Zelle **ReportPageFooter\_RunningCounterLines** bezieht, ist die Anzahl der Transaktionen auf der aktuellen Seite noch nicht enthalten. Daher entspricht dieser Unterschied der Anzahl der Transaktionen auf der aktuellen Seite.
 
 ![Konfigurierte Bindungen zum Ausfüllen des Seitenfußzählers im ER-Formatdesigner](./media/er-paginate-excel-reports-format6.png)
 

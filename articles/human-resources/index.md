@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f8ce982dc27a887c70ca4fed11fcc230bcb6de65
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: afe438767efa3082c49cc56f58c8bab9206e46e0
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858068"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228567"
 ---
 # <a name="human-resources-home-page"></a>Human Ressources-Homepage
 
 
 
-In diesem Artikel finden Sie eine Liste der Hilfethemen und anderer Ressourcen in Dynamics 365 Human Resources. 
+In diesem Artikel finden Sie eine Liste der Hilfethemen und anderer Ressourcen in Microsoft Dynamics 365 Human Resources. 
 
-Wählen Sie einen Funktionsbereich aus, um weitere Informationen darüber zu erhalten.
+Indem Sie einen Funktionsbereich auswählen, erhalten Sie weitere Informationen darüber.
 
 - [Mitarbeiter-Self-Service](hr-employee-manager-self-service-overview.md)
 - [Personalverwaltung](hr-personnel-departments-jobs-positions.md)

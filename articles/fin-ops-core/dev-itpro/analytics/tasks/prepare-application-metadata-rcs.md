@@ -1,24 +1,24 @@
 ---
 title: Vorbereiten von Anwendungs-Metadaten zur Verwendung in RCS
 description: In diesem Artikel wird beschrieben, wie Sie eine neue Berichterstellungskonfiguration erstellen, die Anwendungsmetadaten enthält.
-author: NickSelin
+author: kfend
 ms.date: 06/28/2019
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6b5e7f69653381e16b4a8a8def56845a41bb14b0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: ''
+ms.openlocfilehash: a9ccbb120be43eaf7a8ae8b5bf8eaafb4850b199
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868796"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9289973"
 ---
 # <a name="prepare-application-metadata-to-be-used-in-rcs"></a>Vorbereiten von Anwendungs-Metadaten zur Verwendung in RCS
 [!include [banner](../../includes/banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "8868796"
 Die folgenden Schritte erklären, wie ein Benutzer in der Systemadministratorenrolle oder der elektronischen Berichtsentwicklerrolle eine neue elektronische Berichterstellungskonfiguration (ER) erstellen kann, die die Anwendungsmetadaten für das Entwerfen der ER-Modellzuordnungskonfigurationen im Regulatory Configuration Service (RCS) enthält. Diese Konfiguration wird für das Entwerfen einer Beispiel-ER-Modellzuordnungskonfiguration verwendet, um auf Außenhandelsbuchungen zuzugreifen. In diesem Beispiel erstellen Sie eine Konfiguration für das Beispielunternehmen, Litware, Inc. Diese Schritte können in jedem Unternehmen ausgeführt werden. Um diese Schritte auszuführen, müssen Sie zunächst die Schritte im Artikel [Konfigurationsanbieter erstellen und als aktiv markieren](er-configuration-provider-mark-it-active-2016-11.md) abschließen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-1.    Wechseln Sie zu **Organisationsverwaltung**  >  **Arbeitsbereiche**  >  **Elektronische Berichterstellung**. 
+1.    Wechseln Sie zu **Organisationsverwaltung** >  **Arbeitsbereiche** >  **Elektronische Berichterstellung**. 
 2.    Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als **Aktiv** markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur [Konfigurationsanbieter erstellen und diesen als aktiv markieren](er-configuration-provider-mark-it-active-2016-11.md) abschließen. 
 3.    Klicken Sie auf **Metadatenkonfiguration**. 
 4.    Angenommen, RCS wird verwendet um eine ER-Lösung für eine Finance and Operations Anwendung zu entwerfen, die elektronische Dokumente erstellt, die Informationen aus der Außenhandelsgeschäftsdomäne enthält. Um die Zuordnung zwischen ER-Datenmodell und Quellen der erforderlichen Daten anzugeben, benötigen wir in RCS Zugriff auf die Metadaten in der Finance and Operations Anwendung Daher konfigurieren wir als Teil der ER-Lösung eine neue ER-Metadatenkonfiguration, die alle Metadaten enthält, die zur Generierung der ER-Berichte für ausgewählte Geschäftsdomänen derzeit erforderlich sind. 
