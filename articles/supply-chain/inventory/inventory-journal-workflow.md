@@ -2,7 +2,7 @@
 title: Workflows für die Genehmigung von Bestandserfassungen
 description: In diesem Artikel wird beschrieben, wie Sie Workflows für die Genehmigung von Bestandserfassungen für verschiedene Typen von physischen Bestandsbuchungen einrichten und verwenden, Bestandserfassungs-Workflows stellen sicher, dass nur genehmigte Bestandserfassungen in Buchungen gebucht werden können.
 author: yufeihuang
-ms.date: 07/21/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ebb12562a9f06f2efc3b5a373d7ad0f98bc3505e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3a97eaeae24850282c39196a61e3baa29307aa93
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873984"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334654"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Workflows für die Genehmigung von Bestandserfassungen
 
@@ -27,14 +27,11 @@ ms.locfileid: "8873984"
 In diesem Artikel wird beschrieben, wie Sie Workflows für die Genehmigung von Bestandserfassungen für verschiedene Typen von physischen Bestandsbuchungen einrichten und verwenden, zum Beispiel für Zugänge und Abgänge, Bestandsumlagerungen, die Erstellung von Stücklisten (BOMs) und zur Abstimmung des physischen Bestands. Bestandserfassungs-Workflows stellen sicher, dass nur genehmigte Bestandserfassungen in Buchungen gebucht werden können.
 
 > [!NOTE]
-> Workflows für die Genehmigung von Bestandserfassungen gelten nur für Buchungen, die mit dem Modul Bestandsverwaltung erfasst wurden. Sie funktionieren nicht mit Bestandserfassungen, die vom Modul Lagerortverwaltung ausgelöst werden.
+> Workflows für die Genehmigung von Bestandserfassungen gelten nur für Buchungen, die mit dem Modul Lagerverwaltung erfasst wurden. Sie funktionieren nicht mit Bestandserfassungen, die vom Modul Lagerortverwaltung ausgelöst werden.
 
-## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Funktion für Workflows zur Genehmigung von Lagererfassungen aktivieren
+## <a name="turn-the-inventory-journal-approval-workflows-feature-on-or-off"></a>Funktion für Workflows zur Genehmigung von Lagererfassungen aktivieren oder deaktivieren
 
-Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Administratoren können die Seite [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktion zu überprüfen und sie bei Bedarf zu aktivieren oder zu deaktivieren. Hier wird die Funktion als aufgeführt:
-
-- **Modul:** *Bestands- und Lagerortverwaltung*
-- **Funktionsname:** *Workflow für die Genehmigung von Bestandserfassungen*
+Um diese Funktion nutzen zu können, muss sie für Ihr System aktiviert werden. Ab Supply Chain Management Version 10.0.21 ist die Funktion standardmäßig aktiviert. Ab Supply Chain Management Version 10.0.29 ist die Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.29 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Workflow zur Genehmigung von Lagererfassungen* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ## <a name="create-your-inventory-journal-approval-workflows"></a>Workflows für die Genehmigung von Bestandserfassungen anlegen
 
@@ -44,7 +41,7 @@ Workflows unterstützen die Versionskontrolle und haben jeweils eine Workflow-ID
 
 Legen Sie Workflows für die Genehmigung von Bestandserfassungen wie folgt an:
 
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichten\> Bestandsverwaltungs-Workflows**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen\> Lagerverwaltungs-Workflows**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 1. Wählen Sie den Bestandserfassungstyp aus, für den Sie einen Workflow einrichten möchten:
     - **Erfassung der Markierungsinventur**
@@ -61,7 +58,7 @@ Legen Sie Workflows für die Genehmigung von Bestandserfassungen wie folgt an:
 1. Nach dem Speichern und Schließen der Workflow-Editor-App müssen Sie auswählen, ob diese Workflow-Version aktiviert werden oder inaktiv bleiben soll.
 
 > [!NOTE]
-> Workflows bieten eine Versionskontrolle. Dies bedeutet, dass Sie eine Liste der von Ihnen erstellten Versionen anzeigen lassen und auswählen können, welche aktiv ist. Um die Liste der verfügbaren Versionen anzuzeigen und auszuwählen, welche aktiviert werden sollen, wählen Sie einen Workflow aus der Liste auf der Seite **Bestandsverwaltungs-Workflows**. Öffnen Sie im Aktionsbereich die Registerkarte **Workflow** und wählen Sie **Versionen**. Für jede Workflow-ID kann jeweils nur eine Version aktiv sein.
+> Workflows bieten eine Versionskontrolle. Dies bedeutet, dass Sie eine Liste der von Ihnen erstellten Versionen anzeigen lassen und auswählen können, welche aktiv ist. Um die Liste der verfügbaren Versionen anzuzeigen und auszuwählen, welche aktiviert werden sollen, wählen Sie einen Workflow aus der Liste auf der Seite **Lagerverwaltungs-Workflows**. Öffnen Sie im Aktionsbereich die Registerkarte **Workflow** und wählen Sie **Versionen**. Für jede Workflow-ID kann jeweils nur eine Version aktiv sein.
 
 ## <a name="assign-approval-workflows-to-inventory-journal-names"></a>Bestandserfassungsnamen Genehmigungsworkflows zuweisen
 
@@ -69,7 +66,7 @@ Im nächsten Schritt weisen Sie jedem Bestandserfassungsnamen einen Bestandserfa
 
 Um einem Bestandserfassungsworkflow einen Bestandserfassungsnamen zuzuweisen, gehen Sie wie folgt vor:
 
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichten \> Erfassungsnamen \> Bestand**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Erfassungsnamen \> Bestand**.
 1. Wählen Sie einen Erfassungsnamen aus der Listenspalte aus, um die Einstellungsseite zu öffnen.
 1. Auf dem Inforegister **Allgemein** stellen Sie die Option **Genehmigungsworkflow** auf **Ja**. Klicken Sie auf **Ja**, wenn Sie zum Bestätigen Ihrer Auswahl aufgefordert werden.
 
@@ -81,7 +78,7 @@ Um einem Bestandserfassungsworkflow einen Bestandserfassungsnamen zuzuweisen, ge
 
 Nachdem Sie einen Bestandserfassungsnamen mit dem entsprechenden Workflow für die Genehmigung von Bestandserfassungen verknüpft haben, können Sie neue Bestandserfassungen erstellen, die diesen Namen verwenden, und diese Erfassungen dann mithilfe dieses Workflows zur Genehmigung senden. Sie können die Bestandserfassung erst dann veröffentlichen, wenn der im Workflow festgelegte Genehmiger sie genehmigt hat.
 
-1. Erweitern Sie im Navigationsbereich **Bestandsverwaltung \> Erfassungseinträge \> Artikel** und wählen Sie dann einen Bestandserfassungstyp aus.
+1. Erweitern Sie im Navigationsbereich **Lagerverwaltung \> Erfassungseinträge \> Artikel** und wählen Sie dann einen Bestandserfassungstyp aus.
 1. Wählen Sie **Neu**, um eine neue Erfassung des ausgewählten Typs zu erstellen.
 1. Das Dialogfeld **Bestandserfassung erstellen** öffnet sich. Füllen Sie das Formular wie gewünscht aus und wählen Sie **OK**, um die Erfassung zu speichern.
 1. Füllen Sie die Erfassung wie erforderlich aus.
@@ -97,7 +94,7 @@ Wenn Ihre Erfassung genehmigt wurde, können Sie sie veröffentlichen. Um die Er
 
 Als Genehmiger sollten Sie jedes Mal eine Nachricht erhalten, wenn Ihre Genehmigung erforderlich ist (wie im entsprechenden Workflow konfiguriert). Sie können eine Erfassungsgenehmigungsanforderung wie folgt genehmigen oder ablehnen:
 
-1. Erweitern Sie im Navigationsbereich **Bestandsverwaltung \> Erfassungseinträge \> Artikel** und wählen Sie dann einen Bestandserfassungstyp aus.
+1. Erweitern Sie im Navigationsbereich **Lagerverwaltung \> Erfassungseinträge \> Artikel** und wählen Sie dann einen Bestandserfassungstyp aus.
 1. Öffnen Sie die entsprechende Erfassung und überprüfen Sie sie.
 1. Wählen Sie die Schaltfläche **Workflow** im Aktionsbereich, um ein Drop-down-Dialogfeld zu öffnen. Wählen Sie eine der folgenden Optionen:
     - **Genehmigen**, um die Anforderung zu genehmigen.
@@ -113,7 +110,7 @@ Wie bei anderen Workflowtypen können Sie die Seite **Workflowhistorie** nutzen,
 
 So überprüfen Sie die Workflowhistorie für eine Erfassung:
 
-1. Erweitern Sie im Navigationsbereich **Bestandsverwaltung \> Erfassungseinträge \> Artikel** und wählen Sie dann einen Bestandserfassungstyp aus.
+1. Erweitern Sie im Navigationsbereich **Lagerverwaltung \> Erfassungseinträge \> Artikel** und wählen Sie dann einen Bestandserfassungstyp aus.
 1. Öffnen Sie die relevante Erfassung.
 1. Wählen Sie die Schaltfläche **Workflow** im Aktionsbereich, um ein Drop-down-Dialogfeld zu öffnen. Wählen Sie **Workflowhistorie**. Weitere Informationen finden Sie unter [Workflowhistorie anzeigen](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
 

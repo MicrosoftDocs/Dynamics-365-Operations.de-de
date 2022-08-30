@@ -2,7 +2,7 @@
 title: Vordefinierte Produktvarianten erstellen
 description: Diese Prozedur führt Sie durch das Erstellen von Produktvarianten für einen Produktmaster mithilfe der Kombinationen von Produktdimensionen.
 author: t-benebo
-ms.date: 04/22/2021
+ms.date: 08/09/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 6d3a4ae8efd438e01c263af1c0a1746d9484e491
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: a26439b8c7346cdce2b4c9804493fea94c29ac31
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103097"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335914"
 ---
 # <a name="predefined-product-variants"></a>Vordefinierte Produktvarianten
 
@@ -86,7 +86,7 @@ Die folgenden Verbesserungen werden durch diese Funktion hinzugefügt:
 
 ### <a name="turn-the-variant-suggestions-page-improvements-feature-on-or-off"></a>Die Funktion „Verbesserungen an der Seite mit Variantenvorschlägen“ ein- oder ausschalten
 
-Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert. Administratoren können diese Funktionalität an- oder ausschalten, indem Sie nach der Funktion *Verbesserungen an der Seite mit Variantenvorschlägen* im Arbeitsbereich [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
+Um diese Funktion nutzen zu können, muss sie für Ihr System aktiviert werden. Ab Supply Chain Management Version 10.0.25 ist die Funktion standardmäßig aktiviert. Ab Supply Chain Management Version 10.0.29 ist die Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.29 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Verbesserungen an der Seite mit Variantenvorschlägen* im Arbeitsbereich [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ### <a name="work-with-the-improved-variant-suggestions"></a>Arbeit mit den verbesserten Variantenvorschlägen
 

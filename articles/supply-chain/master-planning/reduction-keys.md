@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5cf84598b731e9750e3cf79d312bf0bbf4f8bd81
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b7eaf57e0f02c0b9dd6454a58184db7bb3f58c04
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854267"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337135"
 ---
 # <a name="forecast-reduction-keys"></a>Planzahlenverrechnungsschlüssel für Prognose
 
@@ -133,7 +133,7 @@ Wenn diese Option verwendet wird, tritt das folgende Verhalten auf:
 - Planzahlenverrechnungsschlüssel sind nicht erforderlich oder werde nicht verwendet. 
 - Wenn die Planung vollständig verringert wird, wird der Planungsbedarf für die aktuelle Planung 0 (null).
 - Wenn keine zukünftige Planung vorhanden ist, wird der Planungsbedarf der letzten eingegebenen Planung verringert.
-- Planungszeiträume sind in der Berechnung der Planungsverringerung enthalten.
+- Der Planungszeitraum für die Verringerung der Bedarfsplanung wird nicht in die Berechnung der Planungsverringerung einbezogen. Stattdessen wird das Zeitraum der Dispositionssteuerungsgruppe für die Planungsverringerung verwendet.
 - Positive Tage sind in der Berechnung der Planungsverringerung enthalten.
 - Wenn die tatsächlichen Auftragsbuchungen größer sind als der geplante Bedarf, werden die verbleibenden Buchungen nicht in die nächste Planungsperiode vorgetragen.
 
@@ -208,7 +208,7 @@ Ein Planungsverrechnungsschlüssel wird in den Formularen **Transaktionen - Plan
 
 1. Gehen Sie zu **Produktprogrammplanung \> Einstellungen \> Abdeckung \> Planzahlenverrechnungsschlüssel**.
 2. Wählen Sie **Neu**, um einen Reduzierungsschlüssel zu erstellen.
-3. Im Feld **Planzahlenverrechnungsschlüssel** geben Sie eine eindeutige Kennung für den Planzahlenverrechnungsschlüssel ein. Geben Sie im Feld  **Namen** einen Namen ein. 
+3. Im Feld **Planzahlenverrechnungsschlüssel** geben Sie eine eindeutige Kennung für den Planzahlenverrechnungsschlüssel ein. Geben Sie im Feld **Namen** einen Namen ein. 
 4. Hier können Sie die Perioden sowie die Planzahlenverrechnungsschlüsselprozentsatz in jeder Periode eingeben:
 
     - Das Feld **Gültigkeitsdatum** gibt das Datum der Erstellung der Periode an. Wenn die Option **Gültigkeitsdatum verwenden** auf **Ja** gesetzt ist, beginnt die Periode am Gültigkeitsdatum. Wenn Sie auf **Nein** festgelegt ist, beginnt der Periodenanfang an dem Tag, an dem die Produktprogrammplanung ausgeführt wird.
@@ -223,7 +223,7 @@ Ein Planzahlenverrechnungsschlüssel muss der Deckungsgruppe des Artikels zugewi
 2. Wählen Sie im Feld **Planzahlenverrechnungsschlüssel** auf der Registerkarte **Andere** den Planzahlenverrechnungsschlüssel aus, der der Deckungsgruppe zugewiesen werden soll. Der Planzahlenverrechnungsschlüssel gilt dann für die Artikel, die zur Deckungsgruppe gehören.
 3. Wenn der Planzahlenverrechnungsschlüsse eine Reduktion während der Produktprogrammplanung verwendet werden soll, müssen Sie diese Einstellungen in der Absatzplanung oder in den Einstellungen der Produktprogrammplanung definieren. Gehen Sie zu den folgenden Standorten:
 
-    - Produktprogrammpläne \>Einstellungen \>Pläne \> Absatzplanungen
+    - Produktprogrammpläne \> Einstellungen \> Pläne \> Absatzplanungen
     - Produktprogrammplanung \> Einstellungen \> Pläne \> Produktprogrammpläne
 
 4. Auf der Seite **Absatzpläne** oder **Produktprogrammpläne** auf dem Inforegister **Allgemeine** im Feld **Methode, um die Planungsbedarfe zu reduzieren**, wählen Sie entweder **Prozent - Planzahlenverrechnungsschlüssel** oder **Transaktionen - Planzahlenverrechnungsschlüssel** aus.

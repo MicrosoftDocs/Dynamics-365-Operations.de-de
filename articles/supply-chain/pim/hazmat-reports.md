@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 782b1b4995af09a63c483d2b81ed255a5c11803a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 784361f4e715921890ecff784b62935988732464
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846039"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335164"
 ---
 # <a name="hazardous-materials-inquiries-and-reports"></a>Anfragen und Berichte zu Gefahrstoffen
 
@@ -101,11 +101,11 @@ Um diesen Bericht zu erstellen und zu drucken, gehen Sie zu **Lagerverwaltung \>
 
 ## <a name="bill-of-lading-report"></a>Frachtbrief-Bericht
 
-Wenn die Gefahrstofffunktion in Ihrem System aktiviert ist, enthält der **Frachtbrief**-Bericht eine Spalte **Gefahrstoffe**, die angibt, ob eine Ladung gefährliche Stoffe enthält. Dieser Bericht ist auf der Seite **Alle Ladungen** verfügbar, wie gewohnt.
+Wenn die Gefahrstofffunktion für Ihr System aktiviert ist, enthält der **Frachtbrief**-Bericht eine Spalte **Gefahrstoffe**, die angibt, ob eine Ladung gefährliche Stoffe enthält. Dieser Bericht ist auf der Seite **Alle Ladungen** verfügbar, wie gewohnt.
 
 ## <a name="packing-list-report"></a>Kommissionierlistenbericht
 
-Wenn die Gefahrstofffunktion in Ihrem System aktiviert ist, enthalten die Kommissionierlisten zusätzliche Informationen, die sich auf den Versanddrucktext für einen Artikel beziehen. Dieser Bericht ist auf der Seite **Alle Ladungen** verfügbar, wie gewohnt.
+Wenn die Gefahrstofffunktion für Ihr System aktiviert ist, enthalten die Kommissionierlisten zusätzliche Informationen, die sich auf den Versanddrucktext für einen Artikel beziehen. Dieser Bericht ist auf der Seite **Alle Ladungen** verfügbar, wie gewohnt.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

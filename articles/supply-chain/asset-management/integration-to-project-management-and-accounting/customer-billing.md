@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: b7c2c07f3e3eb76ff20e37e8d5d485dc08232c7a
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: c0d067ec4f2110b1c146ef0229b90e309578eaa7
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220421"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335074"
 ---
 # <a name="bill-for-maintenance-on-customer-owned-assets"></a>Rechnung für die Wartung von kundeneigenen Anlagen
 
@@ -40,7 +40,7 @@ Darüber hinaus bietet die Funktion die folgenden Möglichkeiten:
 
 ## <a name="turn-on-the-customer-billing-feature"></a>Debitorenabrechnungsfunktion aktivieren
 
-Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+Bevor Sie diese Funktion nutzen können, muss sie für Ihr System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
 
 - **Modul:** *Projektverwaltung und Buchhaltung*
 - **Funktionsname:** *Abrechnung von Arbeitsaufträgen*

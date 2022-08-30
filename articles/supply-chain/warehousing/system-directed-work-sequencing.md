@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 88ea680b5b3e237d117b087978d703a7f6f09465
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 1dab8d8bdace046f0f061713600fd1eab69e7c12
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219687"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335464"
 ---
 # <a name="system-directed-work-sequencing"></a>Systemgeleitete Arbeitsabfolgen
 
@@ -35,7 +35,7 @@ Daher ermöglicht diese Funktionalität eine weitere Optimierung der Lagerkommis
 
 ## <a name="turn-on-the-organization-wide-system-directed-work-sequencing-feature"></a>Funktion für organisationsweite systemgeleitete Arbeitsabfolgen aktivieren
 
-Bevor Sie die Funktion für systemgeleitete Arbeitsabfolgen verwenden können, muss sie in Ihrem System aktiviert sein. Administratoren können mit der Einstellung [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und ggf. aktivieren. Dort wird die Funktion folgendermaßen aufgelistet:
+Bevor Sie die Funktion für systemgeleitete Arbeitsabfolgen verwenden können, muss sie für Ihr System aktiviert sein. Administratoren können mit der Einstellung [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und ggf. aktivieren. Dort wird die Funktion folgendermaßen aufgelistet:
 
 - **Module:** *Lagerortverwaltung*
 - **Funktionsname:** *Organisationsweite systemgeleitete Arbeitsabfolgen*

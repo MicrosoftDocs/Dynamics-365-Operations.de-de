@@ -1,83 +1,65 @@
 ---
-ms.openlocfilehash: b17bd56f9f3e4def341658626915adbd7f5aada6
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+title: Bereitstellungsrichtlinien für Registrierkassen für Norwegen (veraltet)
+description: Dieser Artikel ist eine Anleitung zum Bereitstellen, die zeigt, wie Sie die Lokalisierung Microsoft Dynamics 365 Commerce für Norwegen aktivieren.
+author: EvgenyPopovMBS
+ms.date: 08/23/2022
+ms.topic: article
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
+ms.search.region: Global
+ms.author: josaw
+ms.search.validFrom: 2018-2-28
+ms.openlocfilehash: fb597add48ac3508a88142e63d80f405b6b5f8b4
+ms.sourcegitcommit: 1dbff0b5fa1f4722a1720fac35cce94606fa4320
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9281537"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "9346044"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway-legacy"></a>Bereitstellungsrichtlinien für Registrierkassen für Norwegen (veraltet)
----
 
-Titel: Bereitstellungsrichtlinien für Registrierkassen für Norwegen (veraltet) [!include [banner](../includes/banner.md)]
-Beschreibung: Dieser Artikel ist eine Anleitung zum Bereitstellen, die zeigt, wie Sie die Lokalisierung Microsoft Dynamics 365 Commerce für Norwegen aktivieren.
+[!include [banner](../includes/banner.md)]
 
-Autor: EvgenyPopovMBS Dieser Artikel ist eine Anleitung zum Bereitstellen, die zeigt, wie Sie die Lokalisierung Microsoft Dynamics 365 Commerce für Norwegen aktivieren. Die Lokalisierung besteht aus mehreren Erweiterungen der Commerce-Komponenten. Mit den Erweiterungen können Sie beispielsweise angepasste Felder auf Quittungen drucken, zusätzliche Audit-Ereignisse, Verkaufstransaktionen und Zahlungstransaktionen am Point of Sale (POS) registrieren, Verkaufstransaktionen digital signieren und X- und Z-Berichte in lokalen Formaten drucken. Weitere Informationen über die Lokalisierung für Norwegen finden Sie unter [Kassenfunktionalität für Norwegen](./emea-nor-cash-registers.md).
-ms.date: 20.12.2021
+> [!WARNING]
+> Dieses Beispiel der Funktion zur Steuerintegration nutzt das [Steuerintegrations-Framework](./fiscal-integration-for-retail-channel.md) nicht und wird mit späteren Updates veraltet. Verwenden Sie stattdessen die [Funktionalität, die auf dem Steuerintegrations-Framework basiert](./emea-nor-fi-deployment.md).
 
-ms.topic: Artikel Dieses Beispiel ist Teil des Software Development Kit (SDK) für Retail. Informationen über das SDK finden Sie in der [Architektur des Software Development Kit (SDK) für Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md).
-Zielgruppe: Anwendungsbenutzer, Entwickler, IT-Experten
+Dieser Artikel ist eine Anleitung zum Bereitstellen, die zeigt, wie Sie die Lokalisierung Microsoft Dynamics 365 Commerce für Norwegen aktivieren. Die Lokalisierung besteht aus mehreren Erweiterungen der Commerce-Komponenten. Mit den Erweiterungen können Sie beispielsweise angepasste Felder auf Quittungen drucken, zusätzliche Audit-Ereignisse, Verkaufstransaktionen und Zahlungstransaktionen am Point of Sale (POS) registrieren, Verkaufstransaktionen digital signieren und X- und Z-Berichte in lokalen Formaten drucken. Weitere Informationen über die Lokalisierung für Norwegen finden Sie unter [Kassenfunktionalität für Norwegen](./emea-nor-cash-registers.md).
 
-ms.reviewer: v-chgriffin Dieses Beispiel besteht aus Erweiterungen für die Commerce Runtime (CRT), den Retail Server und den POS. Um dieses Beispiel ausführen zu können, müssen Sie die Projekte CRT, Retail Server und POS modifizieren und erstellen. Es wird empfohlen, dass Sie ein unverändertes Retail SDK verwenden, um die Änderungen vorzunehmen, die in diesem Artikel beschrieben werden. Wir empfehlen Ihnen außerdem, eine Steuereinheit wie Microsoft Visual Studio Online (VSO) zu verwenden, in dem noch keine Dateien geändert wurden.
-ms.search.region: Global
+Dieses Beispiel ist Teil des Software Development Kit (SDK) für Retail. Informationen über das SDK finden Sie in der [Architektur des Software Development Kit (SDK) für Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
-ms.author: josaw
+Dieses Beispiel besteht aus Erweiterungen für die Commerce Runtime (CRT), den Retail Server und den POS. Um dieses Beispiel ausführen zu können, müssen Sie die Projekte CRT, Retail Server und POS modifizieren und erstellen. Es wird empfohlen, dass Sie ein unverändertes Retail SDK verwenden, um die Änderungen vorzunehmen, die in diesem Artikel beschrieben werden. Wir empfehlen Ihnen außerdem, eine Steuereinheit wie Microsoft Visual Studio Online (VSO) zu verwenden, in dem noch keine Dateien geändert wurden.
+
 > [!NOTE]
-ms.search.validFrom: 28.02.2018 In Commerce 10.0.8 und höher wird der Retail Server als Commerce Scale Unit bezeichnet. Da sich Dieser Artikel auf mehrere Vorgängerversionen der App bezieht, wird im gesamten Artikel *Retail Server* verwendet.
+> In Commerce 10.0.8 und höher wird der Retail Server als Scale-Unit von Commerce bezeichnet. Da sich Dieser Artikel auf mehrere Vorgängerversionen der App bezieht, wird im gesamten Artikel *Retail Server* verwendet.
 >
----
 > Einige Schritte in den Verfahren in diesem Artikel unterscheiden sich je nach der Version von Commerce, die Sie verwenden. Weitere Informationen finden Sie unter [Neuheiten und Änderungen in Dynamics 365 Retail](../get-started/whats-new.md).
 
-
-6. Aktualisieren Sie die Retail Server Konfigurationsdatei. Fügen Sie in der Datei **RetailSDK\\Packages\\RetailServer\\Code\\web.config** die folgenden Zeilen in den Abschnitt **extensionComposition** ein.
 ### <a name="using-certificate-profiles-in-commerce-channels"></a>Verwendung von Zertifikatsprofilen in Commerce-Kanälen
 
-
-    ``` xml
 In Commerce 10.0.15 und höher können Sie die Funktion [Benutzerdefinierte Zertifikatsprofile für Einzelhandelsgeschäfte](./certificate-profiles-for-retail-stores.md) verwenden, die ein Failover in den Offline-Modus unterstützt, wenn Key Vault oder die Commerce-Zentrale nicht verfügbar sind. Die Funktion erweitert die Funktion [Geheimnisse für Einzelhandelskanäle verwalten](../dev-itpro/manage-secrets.md).
-    <add source="assembly" value="Contoso.RetailServer.SalesTransactionSignatureSample" />
 
-    ```
 Um diese Funktionalität in der CRT-Erweiterung anzuwenden, gehen Sie folgendermaßen vor.
 
-
-7. Führen Sie **msbuild** für das gesamte Retail SDK aus, um bereitzustellende Pakete zu erstellen.
 1. Erstellen Sie ein neues CRT Erweiterungsprojekt (Projekttyp C#-Klassenbibliothek). Verwenden Sie die Beispielvorlagen aus dem Software Development Kit (SDK) für Retail (RetailSDK\SampleExtensions\CommerceRuntime).
-8. Übernehmen Sie die Pakete über Microsoft Dynamics Lifecycle Services (LCS) oder manuell. Weitere Informationen finden Sie unter [Bereitstellbare Pakete erstellen](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
-
 
 2. Fügen Sie einen angepassten Handler für CertificateSignatureServiceRequest in das Projekt SequentialSignatureRegister ein.
-### <a name="enable-the-digital-signature-in-offline-mode-for-modern-pos"></a>Aktivieren Sie die digitale Signatur im Offline-Modus für Modern POS
-
 
 3. Um einen geheimen Aufruf zu lesen, benutzt `GetUserDefinedSecretCertificateServiceRequest` einen Konstruktor mit dem Parameter profileId. Dadurch wird die Funktionalität mit den Einstellungen aus den Zertifikats-Profilen in Betrieb genommen. Je nach den Einstellungen wird das Zertifikat entweder aus Azure Key Vault oder aus dem lokalen Computerspeicher abgerufen.
-Um die digitale Signatur im Offline-Modus für Modern POS zu aktivieren, müssen Sie diese Schritte ausführen, nachdem Sie Modern POS auf einem neuen Gerät aktiviert haben.
-
 
     ```csharp
-1. Sign in to POS.
     GetUserDefinedSecretCertificateServiceRequest getUserDefinedSecretCertificateServiceRequest = new GetUserDefinedSecretCertificateServiceRequest(profileId: "ProfileId", secretName: null, thumbprint: null, expirationInterval: null);
-2. On the **Database connection status** page, make sure that the offline database is fully synchronized. When the value of the **Pending downloads** field is **0** (zero), the database is fully synchronized.
     GetUserDefinedSecretCertificateServiceResponse getUserDefinedSecretCertificateServiceResponse = request.RequestContext.Execute<GetUserDefinedSecretCertificateServiceResponse>(getUserDefinedSecretCertificateServiceRequest);
-3. Sign out of POS.
 
-4. Wait a while for the offline database to be fully synchronized.
     X509Certificate2 Certificate = getUserDefinedSecretCertificateServiceResponse.Certificate;
-5. Sign in to POS.
     ```
-6. Vergewissern Sie sich auf der Seite **Datenbankverbindungsstatus**, dass die Offline-Datenbank vollständig synchronisiert ist. Wenn der Wert des Feldes **Ausstehende Transaktionen in der Offline-Datenbank** **0** (Null) ist, ist die Datenbank vollständig synchronisiert.
 
-7. Starten Sie Modern POS neu.
 4. Wenn das Zertifikat abgerufen wird, fahren Sie mit dem Signieren der Daten fort.
 
-
-
 5. Erstellen Sie das Erweiterungsprojekt CRT.
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
-6. Kopieren Sie die Ausgabeklassenbibliothek und fügen Sie sie in ...\RetailServer\webroot\bin\Ext für manuelle Tests ein.
+6. Kopieren Sie die Ausgabeklassenbibliothek und fügen Sie sie in ...\RetailServer\webroot\bin\Ext für manuelle Tests ein.
 
-7. Aktualisieren Sie in der Datei CommerceRuntime.Ext.config den Abschnitt Erweiterungsanordnung mit den angepassten Bibliotheksinformationen.
+7. Aktualisieren Sie in der Datei CommerceRuntime.Ext.config den Abschnitt Extension Composition mit den angepassten Bibliotheksinformationen.
 
 ## <a name="development-environment"></a>Entwicklungsumgebung
 
@@ -1633,3 +1615,27 @@ Folgen Sie diesen Schritten, um bereitstellbare Pakete zu erstellen, die Commerc
     Die Datei heißt **Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config** und befindet sich unter **Erweiterungen.SequentialSignatureRegister\\bin\\Debug**.
 
     ---
+
+6. Aktualisieren Sie die Retail Server Konfigurationsdatei. Fügen Sie in der Datei **RetailSDK\\Packages\\RetailServer\\Code\\web.config** die folgenden Zeilen in den Abschnitt **extensionComposition** ein.
+
+    ``` xml
+    <add source="assembly" value="Contoso.RetailServer.SalesTransactionSignatureSample" />
+    ```
+
+7. Führen Sie **msbuild** für das gesamte Retail SDK aus, um bereitzustellende Pakete zu erstellen.
+8. Übernehmen Sie die Pakete über Microsoft Dynamics Lifecycle Services (LCS) oder manuell. Weitere Informationen finden Sie unter [Bereitstellbare Pakete erstellen](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
+### <a name="enable-the-digital-signature-in-offline-mode-for-modern-pos"></a>Aktivieren Sie die digitale Signatur im Offline-Modus für Modern POS
+
+Um die digitale Signatur im Offline-Modus für Modern POS zu aktivieren, müssen Sie diese Schritte ausführen, nachdem Sie Modern POS auf einem neuen Gerät aktiviert haben.
+
+1. Melden Sie sich bei POS an.
+2. Vergewissern Sie sich auf der Seite **Datenbankverbindungsstatus**, dass die Offline-Datenbank vollständig synchronisiert ist. Wenn der Wert des Feldes **Ausstehende Downloads** **0** (Null) ist, ist die Datenbank vollständig synchronisiert.
+3. Melden Sie sich von POS ab.
+4. Warten Sie eine Weile, bis die Offline-Datenbank vollständig synchronisiert ist.
+5. Melden Sie sich bei POS an.
+6. Vergewissern Sie sich auf der Seite **Datenbankverbindungsstatus**, dass die Offline-Datenbank vollständig synchronisiert ist. Wenn der Wert des Feldes **Ausstehende Transaktionen in der Offline-Datenbank** **0** (Null) ist, ist die Datenbank vollständig synchronisiert.
+7. Starten Sie Modern POS neu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

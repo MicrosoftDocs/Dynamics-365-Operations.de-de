@@ -2,7 +2,7 @@
 title: Produktionsausführungsschnittstelle konfigurieren
 description: In diesem Artikel wird beschrieben, wie Sie eine oder mehrere Konfigurationen für die Produktionsoberflächen-Ausführungsschnittstelle erstellen. Wenn Sie die Produktionsausführungsoberfläche öffnen, wird automatisch eine ausgewählte Konfiguration und ein Auftragsfilter geladen, die für den Browser und das Gerät spezifisch sind. In der Konfiguration legen Sie die Richtlinien fest, die für eine bestimmte Verwendung gelten müssen.
 author: johanhoffmann
-ms.date: 10/05/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 2a77924e6133158d538a3eb8365def92c9354b0e
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: ae574e25c5ef0c1736ec13e2ee3fcc11b323721f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220361"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336184"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Produktionsausführungsschnittstelle konfigurieren
 
@@ -35,7 +35,7 @@ In diesem Artikel werden die verschiedenen Optionen zum Konfigurieren einer Prod
 
 ## <a name="turn-on-the-production-floor-execution-interface-and-its-related-optional-features"></a>Aktivieren Sie die Produktionsausführungsoberfläche und die zugehörigen optionalen Funktionen
 
-Die Produktionsausführungsoberfläche selbst sowie mehrere der optionalen Einstellungen, die in diesem Artikel beschrieben werden, müssen in Ihrem System aktiviert werden, bevor Sie sie verwenden können. Verwenden Sie die Seite [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um eine oder alle der in den folgenden Unterabschnitten beschriebenen Funktionen je nach Bedarf zu aktivieren.
+Die Produktionsausführungsoberfläche selbst sowie mehrere der optionalen Einstellungen, die in diesem Artikel beschrieben werden, müssen für Ihr System aktiviert werden, bevor Sie sie verwenden können. Verwenden Sie die Seite [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um eine oder alle der in den folgenden Unterabschnitten beschriebenen Funktionen je nach Bedarf zu aktivieren.
 
 ### <a name="the-production-floor-execution-interface"></a>Die Produktionsausführungsoberfläche
 
@@ -63,29 +63,32 @@ Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig ak
 
 ### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>Anlagenverwaltungsfunktion für die Produktionsumgebungs-Ausführungsschnittstelle
 
-Diese Funktion fügt der Produktionsausführungsoberfläche eine Registerkarte für die Anlagenverwaltung hinzu. Auf dieser Registerkarte können Arbeitskräfte eine Anlage auswählen, die mit einer Maschinenressource verbunden ist, die sich im ausgewählten Filter der Auftragsliste befindet. Für die ausgewählte Maschinenanlage kann die Arbeitskraft den Status und den Zustand der Anlage anhand von Zählerwerten für bis zu vier ausgewählte Zähler anzeigen. Wenn Sie diese Funktion nutzen möchten, aktivieren Sie die folgende Funktion in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Diese Funktion fügt der Produktionsausführungsoberfläche eine Registerkarte für die Anlagenverwaltung hinzu. Auf dieser Registerkarte können Arbeitskräfte eine Anlage auswählen, die mit einer Maschinenressource verbunden ist, die sich im ausgewählten Filter der Auftragsliste befindet. Für die ausgewählte Maschinenanlage kann die Arbeitskraft den Status und den Zustand der Anlage anhand von Zählerwerten für bis zu vier ausgewählte Zähler anzeigen.
 
-- *Anlagenverwaltungsfunktion für die Produktionsumgebungs-Ausführungsschnittstelle*<br>(Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert.)
+Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert. Ab Supply Chain Management Version 10.0.29 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.29 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Anlagenverwaltungsfunktion für die Produktionsumgebungs-Ausführungsschnittstelle* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
-### <a name="enable-job-search"></a>Aktivieren Sie die Einzuelvorgangssuche
+### <a name="job-search"></a>Einzelvorgangssuche
 
-Diese Funktion ermöglicht das Hinzufügen eines Suchfelds zur Einzelvorgangsliste. Mitarbeiter können einen bestimmten Einzelvorgang finden, indem sie die Job-ID eingeben, oder alle Jobs für einen bestimmten Auftrag finden, indem sie die Auftrags-ID eingeben. Arbeitskräfte können die ID über eine Tastatur oder durch Scannen eines Barcodes eingeben. Wenn Sie diese Funktion nutzen möchten, aktivieren Sie die folgende Funktion in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Diese Funktion ermöglicht das Hinzufügen eines Suchfelds zur Einzelvorgangsliste. Mitarbeiter können einen bestimmten Einzelvorgang finden, indem sie die Job-ID eingeben, oder alle Jobs für einen bestimmten Auftrag finden, indem sie die Auftrags-ID eingeben. Arbeitskräfte können die ID über eine Tastatur oder durch Scannen eines Barcodes eingeben.
 
-- *Einzelvorgangssuche für die Produktionsausführungsoberfläche*<br>(Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert.)
+Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert. Ab Supply Chain Management Version 10.0.29 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.29 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Einzelvorgangssuche für die Produktionsausführungsoberfläche* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
-### <a name="enable-reporting-on-co-products-and-by-products"></a>Berichte zu Kuppel- und Nebenprodukten aktivieren
+### <a name="report-on-co-products-and-by-products"></a>Berichte zu Kuppel- und Nebenprodukten
 
-Mit dieser Funktion können Mitarbeiter die Ausführungsschnittstelle der Produktionshalle verwenden, um den Fortschritt von Batchaufträgen zu melden. Diese Berichte umfassen Kuppel- und Nebenprodukten. Um diese Funktion zu nutzen, schalten Sie die folgende Funktion in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ein:
+Mit dieser Funktion können Mitarbeiter die Ausführungsschnittstelle der Produktionshalle verwenden, um den Fortschritt von Batchaufträgen zu melden. Diese Berichte umfassen Kuppel- und Nebenprodukten.
 
-- *Bericht zu Co- und Nebenprodukten von der Produktionsausführungsoberfläche*
+Um diese Funktion nutzen zu können, muss sie für Ihr System aktiviert werden. Ab Supply Chain Management Version 10.0.29 ist die Funktion standardmäßig aktiviert. Admins können diese Funktion ein- oder ausschalten, indem sie nach der Funktion *Bericht zu Kuppel- und Nebenprodukten von der Produktionsausführungsoberfläche* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
-### <a name="enable-the-display-of-full-serial-batch-and-license-plate-numbers"></a>Anzeige der vollständigen Serien-, Batch- und Ladungsträger-Nummern
+### <a name="display-full-serial-batch-and-license-plate-numbers"></a>Vollständige Serien-, Batch- und Kennzeichennummern
 
 Diese Funktion bietet eine verbesserte Erfahrung beim Anzeigen von Listen von Serien-, Chargen- und Kennzeichennummern in der Produktionsausführungsoberfläche. Die Anzeige wechselt von einer Kartenansicht, die eine begrenzte Anzahl von Zeichen anzeigt, zu einer Listenansicht, die genügend Platz für die Anzeige der vollständigen Werte bietet. Die Liste bietet auch die Möglichkeit, nach bestimmten Nummern zu suchen.
 
+Um diese Funktion nutzen zu können, muss sie für Ihr System aktiviert werden. Ab Supply Chain Management Version 10.0.25 ist die Funktion standardmäßig aktiviert. Ab Supply Chain Management Version 10.0.29 ist die Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.29 verwenden, können Administratoren diese Funktion ein- oder ausschalten, indem sie im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) nach der Funktion *Vollständige Serien-, Batch- und Kennzeichennummern in der Produktionsausführungsoberfläche anzeigen* suchen.
+
+
 Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert. Admins können diese Funktion ein- oder ausschalten, indem sie im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) nach der Funktion *Vollständige Serien-, Batch- und Ladungsträger-Nummern in der Produktionsausführungsoberfläche anzeigen* suchen.
 
-### <a name="enable-registering-of-material-consumption"></a>Ermöglicht die Registrierung des Materialverbrauchs
+### <a name="register-material-consumption"></a>Materialverbrauch registrieren
 
 Diese Funktion ermöglicht es Arbeitern, die Produktionsausführungsoberfläche zu verwenden, um Materialverbrauch, Chargennummern und Seriennummern zu registrieren. Einige Hersteller, insbesondere in der Prozessindustrie, müssen explizit die Materialmenge registrieren, die für jede Batch oder jeden Produktionsauftrag verbraucht wird. Arbeitskräfte könnten zum Beispiel eine Waage verwenden, um die Menge des Materials zu wiegen, das sie bei ihrer Arbeit verbrauchen. Um eine vollständige Rückverfolgbarkeit der Materialien zu gewährleisten, müssen diese Organisationen auch die Batch-Nummern registrieren, die zur Herstellung der einzelnen Produkte verbraucht wurden.
 
@@ -97,7 +100,7 @@ Es gibt zwei Versionen dieser Funktion. Man unterstützt Artikel, die *nicht* f�
 > [!IMPORTANT]
 > Sie können die Nicht-WMS-Funktion allein verwenden. Wenn Sie jedoch WMS verwenden, müssen Sie beide Funktionen aktivieren.
 
-### <a name="enable-reporting-on-catch-weight-items"></a>Ermöglicht die Berichterstattung über Artikelgewichte
+### <a name="report-on-catch-weight-items"></a>Bericht zu Artikelgewichtsartikel
 
 Arbeitskräfte können die Produktionsausführungsoberfläche verwenden, um den Fortschritt bei Batch-Aufträgen für Artikel mit Artikelgewicht zu melden. Batch-Aufträge werden aus Formeln erstellt, die so definiert werden können, dass Artikelgewichte als Formelpositionen, Kuppelprodukte und Nebenprodukte enthalten sind. Eine Formel kann auch so definiert werden, dass sie Formelzeilen für Zutaten enthält, die für das Artikelgewicht definiert sind. Artikel mit Artikelgewicht verwenden zwei Maßeinheiten, um den Bestand zu verfolgen: die Menge des Artikelgewichts und die Menge des Bestands. In der Lebensmittelbranche kann z.B. verpacktes Fleisch als Element mit Artikelgewicht definiert werden, wobei die Menge des Artikelgewichts zur Erfassung der Anzahl der Kartons und die Bestandsmenge zur Erfassung des Gewichts der Kartons verwendet wird.
 
@@ -105,15 +108,13 @@ Um diese Funktion zu nutzen, schalten Sie die folgende Funktion in [Funktionsver
 
 - *Bericht über Artikel mit Artikelgewicht über die Produktionsausführungsoberfläche*
 
-### <a name="enable-the-my-day-dialog"></a>Dialogfeld „Mein Tag“ aktivieren
+### <a name="the-my-day-dialog"></a>Dialogfeld „Mein Tag“ anzeigen
 
 Das **Mein Tag**-Dialogfeld bietet den Mitarbeitern einen Überblick über ihre täglichen Erfassungen und aktuellen Salden für bezahlte Zeit, bezahlte Überstunden, Abwesenheit und bezahlte Abwesenheit.
 
-Um diese Funktion zu nutzen, schalten Sie die folgende Funktion in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ein:
+Um diese Funktion nutzen zu können, muss sie für Ihr System aktiviert werden. Ab Supply Chain Management Version 10.0.29 ist die Funktion standardmäßig aktiviert. Admins können diese Funktion ein- oder ausschalten, indem sie nach der Funktion *Ansicht „Mein Tag“ für die Produktionsausführungsoberfläche* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
-- *Ansicht „Mein Tag“ für die Produktionsausführungsoberfläche*
-
-### <a name="enable-teams"></a>Teams aktivieren
+### <a name="teams"></a>Teams
 
 Wenn mehrere Arbeitskräfte demselben Produktions-Einzelvorgang zugewiesen werden, können sie ein Team bilden. Das Team kann einen Mitarbeiter als Pilot ernennen. Die verbleibenden Arbeitskräfte werden dann automatisch zu Assistenten dieses Piloten. Für das resultierende Team muss nur der Pilot den Einzelvorgangstatus registrieren. Zeiterfassungen gelten für alle Teammitglieder.
 
@@ -121,7 +122,7 @@ Um diese Funktion zu nutzen, schalten Sie die folgende Funktion in [Funktionsver
 
 - *Produktionsteams in der Produktionsausführungsoberfläche*
 
-### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>Zusätzliche Konfiguration in der Produktionsausführungsoberfläche aktivieren
+### <a name="additional-configuration-in-the-production-floor-execution-interface"></a>Zusätzliche Konfiguration auf der Produktionsausführungsoberfläche
 
 Diese Funktion fügt der Seite **Produktionsausführung konfigurieren** Einstellungen für die folgende Funktionalität hinzu:
 
@@ -136,7 +137,6 @@ Informationen zum Verwenden der Einstellungen finden Sie weiter unten in diesem 
 Um diese Funktion zu nutzen, schalten Sie die folgende Funktion in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ein:
 
 - *Zusätzliche Konfiguration auf der Produktionsausführungsoberfläche*
-
 
 ## <a name="work-with-production-floor-execution-configurations"></a>Arbeiten mit Produktionsausführungsoberflächen-Konfigurationen
 

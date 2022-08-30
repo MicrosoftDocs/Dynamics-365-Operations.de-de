@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 3b4d691bbcf88cc73d10e3bb401710508ec641e1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1245d07436a9b57ee4f0402687e7a4367668cbfa
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893148"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336274"
 ---
 # <a name="replenishment-strategies"></a>Strategien für die Wiederbeschaffung
 
@@ -36,7 +36,7 @@ Die Hochsaison ist ein Beispiel für eine Situation, in der die Strategie *Maxim
 
 ## <a name="turn-on-the-replenish-to-max-based-on-stocking-limits-feature"></a>Aktivieren Sie die Funktion Wiederbeschaffung auf Basis von Lagerbestandsgrenzen
 
-Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können den [Arbeitsbereich Feature-Verwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status dieser Funktion zu prüfen und sie bei Bedarf einzuschalten. Dort wird die Funktion folgendermaßen aufgelistet:
+Bevor Sie diese Funktion nutzen können, muss sie für Ihr System aktiviert werden. Administratoren können den [Arbeitsbereich Feature-Verwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status dieser Funktion zu prüfen und sie bei Bedarf einzuschalten. Dort wird die Funktion folgendermaßen aufgelistet:
 
 - **Module:** *Lagerortverwaltung*
 - **Name der Funktion:** *Wiederbeschaffung bis zum Maximum auf Basis von Lagerbestandsgrenzen*

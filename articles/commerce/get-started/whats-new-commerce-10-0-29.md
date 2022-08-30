@@ -2,7 +2,7 @@
 title: Vorschauversion von Dynamics 365 Commerce 10.0.29 (Oktober 2022)
 description: Dieser Artikel beschreibt Funktionen, die entweder neu oder geändert in Microsoft Dynamics 365 Commerce 10.0.29 sind.
 author: josaw1
-ms.date: 08/02/2022
+ms.date: 08/17/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: c1f85fcd8f79106a3af93489d3bef608b9840bf3
-ms.sourcegitcommit: 91f58a9863f4e8f30ac787c2a9771c1ff6a05f72
+ms.openlocfilehash: 1e05f53f9ecb0a1994828172f6999a0bd5c208bc
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "9224237"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306231"
 ---
 # <a name="preview-of-dynamics-365-commerce-10029-october-2022"></a>Vorschauversion von Dynamics 365 Commerce 10.0.29 (Oktober 2022)
 
@@ -38,6 +38,7 @@ Die folgende Tabelle listet die Funktionen auf, die in dieser Version enthalten 
 | Customer Service | [Aktivieren Sie den Kundenservice mit Dynamics 365 Omnichannel for Customer Service](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/chat-dynamics-365-commerce-omnichannel-customer-service) | Ein erstklassiges Kundensupport-Erlebnis ist der Schlüssel, um Verbrauchern ein personalisiertes und angenehmes Handelserlebnis zu bieten. Derzeit gibt es mehrere Berührungspunkte für den Handel, z. B. physische Geschäfte, Online-Kanäle und soziale Kanäle. Verbraucher erwarten an all diesen Kontaktpunkten ein personalisiertes Support-Erlebnis. Diese Funktion hilft Ihnen, Warenkorbumwandlungen in Verkäufe zu steigern, die personalisierte Interaktion mit Verbrauchern zu steigern und den Kundenservice durch die Integration mit Dynamics 365 Omnichannel for Customer Service zu verbessern. | Vom Administrator/Ersteller aktiviert |
 | E-Commerce | Unterstützung beim Produktvergleich im E-Commerce | Ermöglichen Sie Käufern, Produkte in einer Vielzahl von Kategorien zu vergleichen, damit sie die richtige Kaufentscheidung für sich selbst treffen können. Diese Funktion ist sowohl für Business-to-Consumer- (B2C) als auch für B2B-Sites verfügbar. | Site Builder | 
 | Geschenkkarten | Unterstützung für Geschenkkartentabellen für den unternehmensübergreifenden Datenaustausch | Die Dynamics-Zentrale unterstützt die Möglichkeit, die unternehmensübergreifende gemeinsame Nutzung von Daten für bestimmte Tabellen in der Dynamics-Architektur zu ermöglichen. In dieser Funktion fügt Dynamics 365 Commerce Unterstützung für Geschenkkartentabellen für den unternehmensübergreifenden Datenaustausch hinzu. Daher können die Daten einer Geschenkkarte in einem Unternehmen jetzt auf ein anderes Unternehmen in der Umgebung dupliziert werden. Änderungen, die an der Tabelle der ursprünglichen Firmengeschenkkarten vorgenommen werden, werden an die duplizierte Firmengeschenkkartentabelle weitergegeben. | Entwickler |
+| Globalisierung | [Commerce Lokalisierungsfunktionen für das neue Commerce SDK aktivieren](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-commerce-localization-features-new-commerce-sdk) | Die neue Funktion bietet die Möglichkeit, Commerce Lokalisierungsfunktionen von Commerce headquarters aus zu aktivieren, indem das Framework oder die Parameter der Funktionsverwaltung verwendet werden. Beispiele für die Steuerintegration sind jetzt im neuen Commerce SDK enthalten und unterstützen die unabhängige Paketerstellung. Diese Funktion ermöglicht auch die Einführung der Store Commerce-App durch globale Commerce-Kunden.<p><p>Diese Version enthält Commerce Lokalisierungsfunktionen und Beispiele für die Steuerintegration für [Österreich](../localizations/emea-aut-fi-sample.md), [die tschechische Republik](../localizations/emea-cze-fi-sample.md), [Frankreich](../localizations/emea-fra-cash-registers.md), [Deutschland](../localizations/emea-deu-fi-sample.md), [Italien](../localizations/emea-ita-fpi-sample.md), [Norwegen](../localizations/emea-nor-cash-registers.md) und [Polen](../localizations/emea-pol-fpi-sample.md). | Vom Administrator/Ersteller aktiviert |
 | Leistung | Entfernen Sie die RTS-Abhängigkeit für „Kunden bearbeiten“-Szenarien | Hohe Verfügbarkeit und hohe Leistung sind Standarderwartungen für Point-of-Sale (POS)- und E-Commerce-Kanäle. Um diese Erwartungen zu erfüllen, müssen Dynamics 365 Commerce Kanäle sich nicht mehr auf Echtzeitkommunikation mit der Handelszentrale verlassen, wenn Kundeninformationen bearbeitet werden. Die Möglichkeit, Kundeninformationen für asynchrone und nicht asynchrone Kunden asynchron zu bearbeiten, kann dazu beitragen, Echtzeitanrufe an die Commerce headquarters zu reduzieren. | Vom Administrator/Ersteller aktiviert |
 
 ## <a name="feature-state-changes-in-this-release"></a>Änderungen am Status der Funktionen in dieser Version

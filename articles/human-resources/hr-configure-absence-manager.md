@@ -14,17 +14,15 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 40f9607fb6fc16b96373141d8d2610538e3fdec7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b752b722bf63958fc35b10a4612f7f02e2e8e717
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886101"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337046"
 ---
 # <a name="configure-the-absence-manager-role"></a>Konfigurieren Sie die Rolle des Abwesenheitsmanagers
 
->[!Important]
->Die in diesem Artikel beschriebene Funktionalität ist derzeit für Kunden der eigenständigen Version von Dynamics 365 Human Resources verfügbar. Einige oder die gesamten Funktionen werden in einem zukünftigen Release der Finance-Infrastruktur nach Finance-Version 10.0.26 verfügbar sein.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -37,7 +35,6 @@ In einigen Organisationen verwalten Personalmanager den Urlaub für ihr Team mö
 ## <a name="turn-on-the-feature"></a>Aktivieren Sie die Funktion
 
 1. Wechseln Sie zu **Systemverwaltung** Arbeitsbereiche **Funktionsverwaltung**.
-
 2. Aktivieren Sie auf der Registerkarte **Funktionsverwaltung** die Funktion **Abwesenheitsmanager zur Verwaltung des Urlaubs**.
 
 ## <a name="define-a-custom-hierarchy"></a>Definieren Sie eine benutzerdefinierte Hierarchie
@@ -45,37 +42,26 @@ In einigen Organisationen verwalten Personalmanager den Urlaub für ihr Team mö
 Die Abwesenheitsmanagerfunktionalität verwendet eine benutzerdefinierte Hierarchie, die konfiguriert werden muss.
 
 1. Im **Organisationsverwaltung** Arbeitsbereich wählen Sie **Typen der Positionshierarchie** aus.
-
 2. Erstellen Sie einen Positionshierarchietyp mit dem Namen **Urlaub**.
-
 3. Im **Urlaub und Abwesenheit** Arbeitsbereich, unter **Links** wählen Sie **Abwesenheits- und Abwesenheitsparameter**.
-
 4. Auf der **Allgemein** Registerkarte in der **Abwesenheitshierarchie** Dropdown-Liste, wählen Sie den Hierarchietyp **Urlaub**, den Sie zuvor erstellt haben. Diese Zuordnung der Abwesenheitshierarchie muss für jede juristische Person ausgefüllt werden, bei der die Abwesenheitsmanagerfunktionalität verwendet wird.
 
 Nachdem der Hierarchietyp definiert wurde, muss der Planstellenhierarchiebericht der Planstelle zugeordnet werden.
 
 1. Im **Organisationsverwaltung** Arbeitsbereich wählen Sie **Alle Positionshierarchien** aus.
-
 2. Wählen Sie die Position aus, der diese Urlaubshierarchie hinzugefügt werden soll.
-
 3. Wählen Sie auf der Registerkarte **Beziehung** **Hinzufügen** aus.
-
 4. Wählen Sie im Feld **Hierarchiename** die Option **Urlaub** aus.
-
 5. Wählen Sie im Feld **Positionsberichte** eine Position aus. Der Name des Arbeiters wird automatisch ausgefüllt, nachdem Sie eine Position ausgewählt haben.
 
 ## <a name="assign-the-absence-manager-role-to-a-user"></a>Weisen Sie einem Benutzer die Rolle des Benutzers zu
 
 Die Rolle des Abwesenheitsmanagers muss Mitarbeitern zugewiesen werden, damit sie Abwesenheitsanträge genehmigen oder ablehnen können.
 
-1. Im **Systemadministrator** Arbeitsbereich **Verknüpfungen** auswählen.
-
+1. Wählen Sie im Arbeitsbereich **Systemadministration** **Verknüpfungen** aus.
 2. Im **Benutzer** Bereich wählen Sie die **Benutzer** Verknüpfung aus.
-
 3. Wählen Sie in der Liste der Benutzer den Benutzer aus, dem Sie die Rolle des Abwesenheitsmanagers zuweisen möchten.
-
 4. Wählen Sie auf der Registerkarte **Rollen des Benutzers** **Rollen zuweisen** aus.
-
 5. Wählen Sie in der Liste die **Abwesenheitsmanager** Rolle aus. Wählen Sie dann **OK** aus.
 
     > [!IMPORTANT]
@@ -84,7 +70,6 @@ Die Rolle des Abwesenheitsmanagers muss Mitarbeitern zugewiesen werden, damit si
 6. Nachdem Sie die Abwesenheitshierarchie erstellt haben, können Sie sie wie folgt anzeigen:
 
     1. Im **Organisationsverwaltung** Arbeitsbereich wählen Sie **Positionshierarchie** aus.
-    
     2. Wählen Sie im Feld **Hierarchietyp** die Option **Urlaub** aus.
 
 ## <a name="absence-manager-workspace"></a>Arbeitsbereich des Abwesenheitsmanagers
@@ -115,9 +100,7 @@ Abwesenheitsmanager können Urlaubsanträge für Mitarbeiter genehmigen oder abl
 > Weitere Informationen zum Erstellen von Workflows für Urlaubsanträge finden Sie unter [Erstellen eines Workflows für Urlaubsanträge](hr-leave-and-absence-workflow.md).
 
 1. Wählen Sie im Arbeitsbereich **Mitarbeiter-Self-Service** die Registerkarte **Abwesenheitsverwaltung** aus.
-
 2. Wählen Sie auf der Registerkarte **Abwesenheitsanträge** die Abwesenheitsanträge aus, für die Sie Maßnahmen ergreifen möchten. Sie können in dieser Listenansicht mehrere Datensätze auswählen.
-
 3. Verwenden Sie die interaktiven Schaltflächen oben im Raster, um den Abwesenheitsantrag zu genehmigen, abzulehnen oder zu delegieren. 
 
 Alternativ kann der Benutzer auch die Kachel **Abwesenheitsanträge** auf der linken Seite verwenden, um zur Liste aller Arbeitsaufgaben für Abwesenheitsanträge zu navigieren. 
@@ -130,9 +113,7 @@ Benutzer in der Rolle des Abwesenheitsmanagers können Urlaubsanträge in ihrem 
 > Ein Systemadministrator muss die Ansichtsoptionen für den Kalender des Abwesenheitsmanagers konfigurieren. Auf der **Urlaubs- und Abwesenheitsparameter** Seite, auf der **Kalender** Registerkarte gibt es Optionen zum Ein- und Ausblenden von Geburtstagen, Abwesenheiten ohne Details, Beurlaubungen und ausstehenden Urlaubsanträgen. Es gibt auch eine Option zum Filtern der Kalenderansichtsoption nach Arbeitskrafttyp.
 
 1. Wählen Sie im Arbeitsbereich **Mitarbeiter-Self-Service** **Abwesenheitsverwaltung** und dann **Kalender für Abwesenheitsmanager** aus.
-
 2. Geben Sie im Feld **Datum** die gewünschten Daten ein.
-
 3. Aktualisieren Sie die Ansichtsoptionen nach Bedarf.
 
 Der Kalender des Abwesenheitsmanagers zeigt alle Datensätze der Mitarbeiter, die dem Abwesenheitsmanager in der Abwesenheitshierarchie berichten.

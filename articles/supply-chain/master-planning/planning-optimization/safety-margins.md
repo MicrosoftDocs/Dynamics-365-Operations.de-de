@@ -2,7 +2,7 @@
 title: Sicherheitszuschläge
 description: In diesem Artikel wird beschrieben, wie Sicherheitsmargen mit dem Planning Optimization Add-In für Microsoft Dynamics 365 Supply Chain Management verwendet werden können.
 author: t-benebo
-ms.date: 09/14/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: c792c33edea9a7f4e2973383b1fcce5b4e8ec998
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 247b48afab68651cff0ce84c8268a1df35a15c02
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854238"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335194"
 ---
 # <a name="safety-margins"></a>Sicherheitszuschläge
 
@@ -79,12 +79,9 @@ Beachten Sie, dass bei Anwendung eines Sicherheitszuschlag für Warenabgang die 
 
 ## <a name="set-up-safety-margins"></a>Sicherheitszuschläge einrichten
 
-### <a name="turn-on-safety-margins-in-feature-management"></a>Aktivieren Sie die Sicherheitszuschläge in der Funktionsverwaltung
+### <a name="turn-safety-margins-on-or-off"></a>Sicherheitszuschläge ein- oder ausschalten
 
-Bevor Sie diese Funktion mit der Planungsoptimierung nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit der Einstellung [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und ggf. aktivieren. Dort wird die Funktion folgendermaßen aufgelistet:
-
-- **Modul:** _Produktprogrammplanung_
-- **Funktionsname:** _Zuschläge für die Planungsoptimierung_
+Um diese Funktion nutzen zu können, muss sie für Ihr System aktiviert werden. Ab Supply Chain Management Version 10.0.29 ist die Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.29 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Zuschläge für die Planungsoptimierung* im Arbeitsbereich [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ### <a name="define-safety-margins"></a>Sicherheitszuschläge definieren
 

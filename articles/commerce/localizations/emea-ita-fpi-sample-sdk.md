@@ -2,25 +2,29 @@
 title: Bereitstellungsrichtlinien für das Steuerdrucker-Integrationsbeispiel für Italien (Legacy)
 description: Dieser Artikel enthält Richtlinien für die Bereitstellung des Beispiels für die steuerliche Druckerintegration für Italien aus dem Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK).
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 08/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: 9e951c1a1ee5c967d2bd67941ff3d19c62b59ba6
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 46d42a2c2a5f8f40fc8b9693f26a182c8f2e6352
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9279538"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336700"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-italy-legacy"></a>Bereitstellungsrichtlinien für das Steuerdrucker-Integrationsbeispiel für Italien (Legacy)
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-Dieser Artikel enthält Richtlinien für die Bereitstellung des Steuerdrucker-Integrationsbeispiels für Italien aus dem Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK) auf einer virtuellen Entwicklermaschine (VM) in Microsoft Dynamics Lifecycle Service (LCS). Weitere Informationen zu den Beispielen für diese steuerliche Integration finden Sie unter [Beispiele für die steuerliche Druckerintegration für Italien](emea-ita-fpi-sample.md). 
+> [!IMPORTANT]
+> Sie sollten die Richtlinien in diesem Artikel nur befolgen, wenn Sie Microsoft Dynamics 365 Commerce der Version 10.0.28 oder früher verwenden. Ab Commerce Version 10.0.29 ist das Beispiel für die Integration des Belegdruckers für Italien im Commerce Softwaren Development Kit (SDK) verfügbar. Weitere Informationen finden Sie unter [Kanalkomponenten konfigurieren](./emea-ita-fpi-sample.md#configure-channel-components).
+
+Dieser Artikel enthält Richtlinien für die Bereitstellung des Belegdrucker-Integrationsbeispiels für Italien aus dem Dynamics 365 Commerce Retail SDK auf einem virtuellen Computer (VM) für Entwickler in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen zu den Beispielen für diese steuerliche Integration finden Sie unter [Beispiele für die steuerliche Druckerintegration für Italien](emea-ita-fpi-sample.md). 
 
 Das Steuererfassungsdienst-Integrationsbeispiel für Italien ist Teil des Retail SDK. Informationen zur Installation und Verwendung des SDK finden Sie in der [Retail Software Development Kit (SDK)-Architektur](../dev-itpro/retail-sdk/retail-sdk-overview.md). Dieses Beispiel besteht aus Erweiterungen für die Commerce Runtime (CRT) und Hardwarestation. Um dieses Beispiel auszuführen, müssen Sie die CRT und Hardwarestation-Projekte ändern und erstellen. Es wird empfohlen, dass Sie ein unverändertes Retail SDK verwenden, um die Änderungen vorzunehmen, die in diesem Artikel beschrieben werden. Es wird außerdem empfohlen, dass Sie ein Quellsteuerungssystem verwenden, wie Azure DevOps bei dem noch keine Dateien geändert wurden.
 

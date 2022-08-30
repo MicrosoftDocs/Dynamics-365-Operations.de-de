@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: c48d240b346acacf2988fbaac69308ee655dced6
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 38d5ba96690dd855556a7f69591ef5b9ee5f9d7b
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219501"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335674"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerinterne Abwicklung eingehender Ladungen für Bestellungen
 
@@ -259,7 +259,7 @@ Unternehmen, die Ladungen zum Planen und Verwalten des Transports und der Lagera
 
 ### <a name="prepare-your-system-to-run-the-sample-scenarios"></a>Bereiten Sie Ihr System für die Ausführung der Beispielszenarien vor
 
-Um die in diesem Abschnitt beschriebenen Beispielszenarien durchzuarbeiten, müssen Sie zunächst sicherstellen, dass alle erforderlichen Funktionen in Ihrem System aktiviert sind. Die erforderlichen Demo-Daten müssen auch im System verfügbar sein.
+Um die in diesem Abschnitt beschriebenen Beispielszenarien durchzuarbeiten, müssen Sie zunächst sicherstellen, dass alle erforderlichen Funktionen für Ihr System aktiviert sind. Die erforderlichen Demo-Daten müssen auch im System verfügbar sein.
 
 #### <a name="turn-on-the-required-features"></a>Aktivieren Sie die erforderlichen Funktionen
 

@@ -2,7 +2,7 @@
 title: Fälligkeit für Lagerplatzrichtlinie-Bestandsentnahme
 description: In diesem Artikel wird erläutert, wie Sie während der Kommissionierung die Lagerplatzrichtlinienstrategien FIFO (First In, First Out) und LIFO (Last In, First Out) verwenden.
 author: Mirzaab
-ms.date: 07/15/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: fc4348f8207f4f6c8a0b694bc3e57beb29449a15
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 4ed1308ea36b731b156b518182846b60a59528d5
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219471"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335614"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Fälligkeit für Lagerplatzrichtlinie-Bestandsentnahme
 
@@ -34,7 +34,7 @@ Wenn der Bestand zum ersten Mal im Lager eingeht oder erstellt wird, aktualisier
 
 Um diese Funktion verfügbar zu machen, aktivieren Sie die folgenden Funktionen in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) in dieser Reihenfolge:
 
-1. *Status des Lagerplatzes an einem Lagerort* (Ab Version 10.0.29 ist diese Funktion standardmäßig aktiviert. Weitere Informationen finden Sie unter [Status des Lagerplatzes an einem Lagerort](warehouse-location-status.md)).
+1. *Status des Lagerplatzes an einem Lagerort* (ab Version 10.0.29 ist diese Funktion obligatorisch und kann nicht ausgeschaltet werden. Weitere Informationen finden Sie unter [Status des Lagerplatzes an einem Lagerort](warehouse-location-status.md)).
 1. *Fälligkeit für Lagerplatzrichtlinie-Bestandsentnahme*
 
 ## <a name="feature-requirements"></a>Funktionsanforderungen
@@ -95,7 +95,7 @@ Die Demodaten erfordern Einstellungs- und Bestandsapassungen, um die Szenarien z
 
     Diese Schritte belassen das Inventar an zwei Stellen in den Demodaten. Jeder Standort hat ein anderes Fälligkeitsdatum. Lagerplatz *FL-001* hat ein Fälligkeitsdatum vom 15. April 2017 und Lagerplatz *FL-002* hat ein Fälligkeitsdatum vom 29. Januar 2017. Beide Lagerplätze enthalten Artikel *A0001*.
 
-    Um diese Daten anzuzeigen, gehen Sie zu **Bestandsverwaltung \> Anfragen und Berichte \> Bestandsliste** und filtern dann nach Lager *63* und Artikel *A0001*. In den Zeilen, in denen das Feld **Lagerplatz** auf *FL-001* oder *FL-002* festgelegt ist, wählen Sie eine Position mit einem positiven Wert für **Physischer Bestand** aus und wählen dann im Aktionsbereich **Transaktionen** aus. Das Feld **Physisches Datum** zeigt ein Datum an, das einem der zuvor genannten Fälligkeitsdaten entspricht.
+    Um diese Daten anzuzeigen, gehen Sie zu **Lagerverwaltung \> Anfragen und Berichte \> Bestandsliste** und filtern dann nach Lager *63* und Artikel *A0001*. In den Zeilen, in denen das Feld **Lagerplatz** auf *FL-001* oder *FL-002* festgelegt ist, wählen Sie eine Position mit einem positiven Wert für **Physischer Bestand** aus und wählen dann im Aktionsbereich **Transaktionen** aus. Das Feld **Physisches Datum** zeigt ein Datum an, das einem der zuvor genannten Fälligkeitsdaten entspricht.
 
 ### <a name="scenario-1-set-up-and-use-fifo-location-aging"></a><a name="fifo-demo"></a>Szenario 1: Einrichten und Verwenden der FIFO-Lagerplatzfälligkeit
 

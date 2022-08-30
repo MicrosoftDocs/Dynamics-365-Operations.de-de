@@ -2,7 +2,7 @@
 title: Flexible Reservierungsrichtlinie für Dimensionen auf Lagerortebene
 description: In diesem Artikel wird die Bestandsreservierungsrichtlinie beschrieben, mit der Unternehmen, die Produkte mit Chargenverfolgung verkaufen und für die Logistik WMS-fähige Vorgänge ausführen, bestimmte Chargen für Debitorenaufträge reservieren können, obwohl die mit den Produkten verknüpfte Reservierungshierarchie die Reservierung bestimmter Chargen nicht zulässt.
 author: perlynne
-ms.date: 07/31/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: d515fb46dcc2d135412d140b98f0578cae89c409
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 64855460ddf015f936fe695fc68938067f31b0cc
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065897"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335704"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexible Reservierungsrichtlinie für Dimensionen auf Lagerortebene
 
@@ -196,12 +196,12 @@ In diesem Szenario verwendet ein Unternehmen die Lagerortverwaltung und die Arbe
 - Ein Ladungsträger kann aufgezeichnet und reserviert werden, wenn der Auftrag vom Verkäufer entgegengenommen wird. Er kann nicht aufgrund anderer Bedarfe verwendet werden. Mit diesem Verhalten wird gewährleistet, dass der vorgesehene Ladungsträger an den Kunden gesendet wird.
 - Wenn der Ladungsträger noch keiner Auftragsposition zugeordnet ist, kann das Lagerpersonal während der Kommissionierarbeiten nach Abschluss der Registrierung und Reservierung des Auftrags einen Ladungsträger auswählen.
 
-### <a name="turn-on-flexible-license-plate-reservation"></a>Flexible Ladungsträgerreservierung aktivieren
+### <a name="turn-flexible-license-plate-reservation-on-or-off"></a>Flexible Kennzeichenreservierung aktivieren und deaktivieren
 
-Bevor Sie die flexible Ladungsträgerreservierung verwenden können, müssen zwei Funktionen in Ihrem System aktiviert sein. Administratoren können mit den Einstellungen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktionen überprüfen und sie gegebenenfalls aktivieren. Sie müssen die Funktionen in der folgenden Reihenfolge aktivieren:
+Bevor Sie die flexible Kennzeichenreservierung verwenden können, müssen zwei Funktionen für Ihr System aktiviert sein. Administratoren können mit den Einstellungen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktionen überprüfen und sie gegebenenfalls aktivieren. Sie müssen die Funktionen in der folgenden Reihenfolge aktivieren:
 
-1. **Funktionsname:** *Flexible Dimensionsreservierung auf Lagerebene*
-1. **Funktionsname:** *Flexible auftragsgebundene Ladungsträgerreservierung*
+1. *Flexible Reservierung von Dimensionen auf Lagerortebene*<br>(Ab Supply Chain Management Version 10.0.29 ist diese Funktion obligatorisch und kann nicht deaktiviert werden.)
+1. *Flexible auftragsgebundene Kennzeichenreservierung*<br>(Ab Supply Chain Management Version 10.0.29 ist diese Funktion obligatorisch und kann nicht deaktiviert werden.)
 
 ### <a name="reserve-a-specific-license-plate-on-the-sales-order"></a>Einen bestimmten Ladungsträger für den Auftrag reservieren
 

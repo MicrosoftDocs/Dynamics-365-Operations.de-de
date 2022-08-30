@@ -2,7 +2,7 @@
 title: Produktprogrammplanung mit Handelsvereinbarungen für den Einkauf
 description: In diesem Artikel wird beschrieben, wie die Planungsoptimierung den Lieferanten und/oder die Vorlaufzeit für einen geplanten Auftrag basierend auf dem besten Preis oder der besten Vorlaufzeit in Kaufverträgen ermitteln kann.
 author: t-benebo
-ms.date: 06/29/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 29f0f44289e44b21cb304bd1f423d63f9f58f2db
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3797ee584cdb059a97670d532cf7e1a1163cc7ff
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873752"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335224"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Produktprogrammplanung mit Handelsvereinbarungen für den Einkauf
 
@@ -29,12 +29,9 @@ ms.locfileid: "8873752"
 
 In diesem Artikel wird beschrieben, wie die Planungsoptimierung den Lieferanten und/oder die Vorlaufzeit für einen Planauftrag basierend auf dem besten Preis oder der besten Vorlaufzeit in Kaufverträgen für ein bestimmtes Produkt ermitteln kann.
 
-## <a name="turn-on-the-purchase-trade-agreements-for-planning-optimization-feature"></a>Aktivieren Sie die Funktion Kaufverträge für die Funktion Planungsoptimierung
+## <a name="turn-the-purchase-trade-agreements-for-planning-optimization-feature-on-or-off"></a>Die Funktion Kaufverträge für die Funktion Planungsoptimierung aktivieren oder deaktivieren
 
-Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit der Einstellung [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und ggf. aktivieren. Dort wird die Funktion folgendermaßen aufgelistet:
-
-- **Modul:** *Produktprogrammplanung*
-- **Funktionsname:** *Kaufverträge für die Planungsoptimierung*
+Um diese Funktion nutzen zu können, muss sie für Ihr System aktiviert werden. Ab Supply Chain Management Version 10.0.29 ist die Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.29 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Handelsvereinbarungen (Einkauf) für die Planungsoptimierung* im Arbeitsbereich [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ## <a name="prepare-your-system-to-evaluate-purchase-trade-agreements-during-master-planning"></a>Bereiten Sie Ihr System vor, um Kaufverträge während der Masterplanung zu bewerten
 

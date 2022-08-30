@@ -2,7 +2,7 @@
 title: Schritttitel und Anweisungen für die mobile Warehouse Management-App anpassen
 description: Dieser Artikel beschreibt, wie Sie angepasste Anweisungen für jeden Schritt jedes Task Flows erstellen und anzeigen, den Sie für die Mobile-App von Warehouse Management festgelegt haben.
 author: Mirzaab
-ms.date: 08/11/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-11
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 40b2115126aae28a41feaec4d3aabd73595107cd
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: faa9bfa320823664603153601c56654170e7e23a
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220148"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334475"
 ---
 # <a name="customize-step-titles-and-instructions-for-the-warehouse-management-mobile-app"></a>Schritttitel und Anweisungen für die mobile Warehouse Management-App anpassen
 
@@ -28,9 +28,9 @@ Dieser Artikel beschreibt, wie Sie angepasste Anweisungen für jeden Schritt jed
 - **Beschleunigen Sie die Einarbeitung der Arbeitskräfte, indem Sie sie einfache Anweisungen für jeden Aufgabenschritt befolgen lassen.** Jeder Schritt eines Flows enthält Anweisungen, die es den Arbeitskräften an der Front ermöglichen, die Aufgabe zu verstehen.
 - **Bieten Sie Anweisungen an, die zu Ihren eigenen Prozessen passen.** Schreiben Sie Ihre eigenen Anweisungen, die zu Ihren Geschäfts- und Lagerprozessen passen. Zum Beispiel können Sie die Terminologie an Ihre räumlichen Gegebenheiten und lokalen Abkürzungen anpassen.
 
-## <a name="turn-on-the-warehouse-app-step-instructions-feature"></a>Aktivieren Sie die Funktion "Schrittanweisungen" der App Lager
+## <a name="turn-the-warehouse-app-step-instructions-feature-on-or-off"></a>Funktion für Schrittanweisung der Lagerort-App aktivieren oder deaktivieren
 
-Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Ab Supply Chain Management Version 10.0.29 ist diese Funktion standardmäßig aktiviert. Administratoren können diese Funktionalität an- oder ausschalten, indem Sie nach der Funktion zur *Schrittanweisungen für die Lagerort-App* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
+Bevor Sie diese Funktion nutzen können, muss sie für Ihr System aktiviert werden. Ab Supply Chain Management Version 10.0.29 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.29 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Schrittanweisung der Lagerort-App* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="step-titles-and-step-instructions-in-the-app"></a>Schritttitel und Schrittanweisungen in der App
 

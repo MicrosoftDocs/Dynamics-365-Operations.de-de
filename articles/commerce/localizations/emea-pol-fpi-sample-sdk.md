@@ -2,25 +2,29 @@
 title: Leitfaden für die Bereitstellung des Beispiels für die Integration des Fiskaldruckers für Polen (veraltet)
 description: Dieser Artikel enthält Richtlinien zum Bereitstellen des Beispiels für die Integration von Fiskaldruckern in Polen aus dem Software Development Kit (SDK) für Microsoft Dynamics 365 Commerce Retail.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 08/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: 883f09f73e3b372d6896b6702e54e2e664cff4d7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 178301e6d8e5f87376ed893e4bf5f966260cad62
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286525"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336717"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-poland-legacy"></a>Leitfaden für die Bereitstellung des Beispiels für die Integration des Fiskaldruckers für Polen (veraltet)
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-Dieser Artikel enthält Richtlinien für das Bereitstellen des Beispiels für die Integration des Fiskaldruckers für Polen aus dem Software Development Kit (SDK) für Microsoft Dynamics 365 Commerce Retail auf einer virtuellen Maschine (VM) für Entwickler in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen zu diesem Beispiel für die fiskalische Integration finden Sie unter [Beispiel für die Integration des Fiskaldruckers für Polen](emea-pol-fpi-sample.md). 
+> [!IMPORTANT]
+> Sie sollten die Richtlinien in diesem Artikel nur befolgen, wenn Sie Microsoft Dynamics 365 Commerce der Version 10.0.28 oder früher verwenden. Ab Commerce Version 10.0.29 ist das Beispiel für die Integration des Belegdruckers für Polen im Commerce Software Development Kit (SDK) verfügbar. Weitere Informationen finden Sie unter [Kanalkomponenten konfigurieren](./emea-pol-fpi-sample.md#configure-channel-components).
+
+Dieser Artikel enthält Richtlinien für die Bereitstellung des Belegdrucker-Integrationsbeispiels für Polen aus dem Dynamics 365 Commerce Retail SDK auf einem virtuellen Computer (VM) für Entwickler in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen zu diesem Beispiel für die fiskalische Integration finden Sie unter [Beispiel für die Integration des Fiskaldruckers für Polen](emea-pol-fpi-sample.md). 
 
 Das Beispiel für die steuerliche Integration in Polen ist Teil des Retail SDK. Informationen zur Installation und Verwendung des SDK finden Sie in der [Retail Software Development Kit (SDK)-Architektur](../dev-itpro/retail-sdk/retail-sdk-overview.md). Dieses Beispiel besteht aus Erweiterungen für die Commerce Runtime (CRT) und Hardwarestation. Um dieses Beispiel auszuführen, müssen Sie die CRT und Hardwarestation-Projekte ändern und erstellen. Es wird empfohlen, dass Sie ein unverändertes Retail SDK verwenden, um die Änderungen vorzunehmen, die in diesem Artikel beschrieben werden. Es wird außerdem empfohlen, dass Sie ein Quellsteuerungssystem verwenden, wie Azure DevOps bei dem noch keine Dateien geändert wurden.
 

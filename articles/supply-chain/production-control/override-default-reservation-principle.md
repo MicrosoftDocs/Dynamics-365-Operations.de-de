@@ -2,7 +2,7 @@
 title: Überschreiben des Standardreservierungsprinzips für Materialien in der Produktion
 description: In diesem Artikel wird beschrieben, wie Sie für jede Artikelmodellgruppe ein Standardreservierungsprinzip festlegen, sodass für jeden Artikel, der Teil einer Stückliste oder einer Chargenauftragsformel für die Produktion ist, automatisch unterschiedliche Reservierungsprinzipien angewendet werden können.
 author: johanhoffmann
-ms.date: 12/10/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 381b7fa5046df8f2734e4b242058eb9a673388cf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 87f10efd7eebdc034af3f7c9081d2674a6190b38
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907231"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334594"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>Überschreiben des Standardreservierungsprinzips für Materialien in der Produktion
 
@@ -32,7 +32,7 @@ Wenn es beispielsweise um Rohstoffe oder Substanzen geht, die Kommissionierarbei
 
 ## <a name="turn-the-override-default-production-reservation-feature-on-or-off"></a>Funktion „Standardproduktionsreservierung überschreiben“ ein- oder ausschalten
 
-Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert. Administratoren können diese Funktionalität an- oder ausschalten, indem Sie nach der Funktion zur *Standardproduktionsreservierung überschreiben* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
+Um diese Funktion nutzen zu können, muss sie für Ihr System aktiviert werden. Ab Supply Chain Management Version 10.0.25 ist die Funktion standardmäßig aktiviert. Ab Supply Chain Management Version 10.0.29 ist die Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.29 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Standardproduktionsreservierung überschreiben* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Zuweisen einer Artikelmodellgruppe zu einer Produktionsreservierungsrichtlinie
 

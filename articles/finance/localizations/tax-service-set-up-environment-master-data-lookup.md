@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3642bb88d5b0570014513b64eef5fdab6d1ee9d3
-ms.sourcegitcommit: 5b721f6fc1ba4350b5bd0eae457f71d80246db42
+ms.openlocfilehash: 2f9d882340171173e5e503f8b5e3aa856e8544b0
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9181123"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306202"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Masterdatensuche für die Steuerberechnungskonfiguration aktivieren 
 
@@ -38,8 +38,8 @@ Um die Dropdown-Liste in der Konfiguration der Funktion Version der Steuerberech
 4. [Erteilung von Berechtigungen für Apps in Finanz- und Betriebs-Apps.](#grant)
 5. [Konfigurieren Sie die Datenquelle für virtuelle Entitäten.](#configure)
 6. [Aktivieren Sie Dataverse virtuelle Entitäten.](#virtual)
-7. [Die verbundene Anwendung für die Steuerberechnung festlegen](#set-up).
-8. [Importieren und Festlegen der Dataverse-Modellzuordnung](#import).
+7. [Die verbundene Anwendung für die Steuerberechnung festlegen.](#set-up)
+8. [Importieren und Festlegen der Dataverse-Modellzuordnung.](#import)
 
 ## <a name="enable-microsoft-power-platform-integration-and-open-the-dataverse-environment"></a><a name='enable'></a>Aktivieren Sie die Microsoft Power Platform Integration und öffnen Sie die Dataverse Umgebung
 
@@ -108,7 +108,7 @@ Dataverse verwendet die von Ihnen erstellte Azure AD-Anwendung, um Finanz- und B
     - **Provider** – Legen Sie dieses Feld auf **NonAAD** fest.
     - **Email** – Geben Sie **dataverse integration** oder einen anderen Wert ein. (Der Wert muss nicht unbedingt ein gültiges E-Mail-Konto sein.)
 
-3. Weisen Sie dem Benutzer die Sicherheitsrolle **CDS virtual entity application** zu.
+3. Weisen Sie dem Benutzer die Sicherheitsrolle **Integrations-App für die virtuelle Dataverse-Entität** zu.
 4. Entfernen Sie alle anderen Rollen, einschließlich **Systembenutzer**.
 5. Gehen Sie zu **Systemverwaltung** \> **Einrichtung** \> **Azure Active Directory Anwendungen** um Dataverse zu registrieren. 
 6. Fügen Sie eine Zeile hinzu und geben Sie dann in das Feld **Kunden-ID** den Wert **Anwendungs-(Kunden-)ID** ein, den Sie sich zuvor notiert haben.
@@ -199,17 +199,11 @@ Weitere Informationen finden Sie unter [virtuelle Microsoft Dataverse-Entitäten
 
 ## <a name="set-up-the-connected-application-for-tax-calculation"></a><a name='set-up'></a>Die verbundene Anwendung für die Steuerberechnung festlegen
 
-1. Öffnen Sie in RCS den Arbeitsbereich **Funktionsverwaltung**, und aktivieren Sie die folgenden Funktionen:
-
-    - Unterstützung von Dataverse-Datenquellen der elektronischen Berichterstellung
-    - Unterstützung für Dataverse-Datenquellen des Steuerdienstes
-    - Globalisierungsfunktionen
-
-2. Gehen Sie zu **Elektronische Berichterstattung** und wählen Sie dann im Bereich **Verwandte Links** die Option **Verbundene Anwendungen**.
+1. Gehen Sie zu **Elektronische Berichterstattung** und wählen Sie dann im Bereich **Verwandte Links** die Option **Verbundene Anwendungen**.
 
     [![Verbundene Anwendungen.](./media/tcs-dataverse-master-data-lookup-12.png)](./media/tcs-dataverse-master-data-lookup-12.png)
 
-3. Wählen Sie **Neu**, um einen Datensatz hinzuzufügen, und geben Sie die folgenden Informationen ein.
+2. Wählen Sie **Neu**, um einen Datensatz hinzuzufügen, und geben Sie die folgenden Informationen ein.
 
     - **Name**: Geben Sie einen Namen ein.
     - **Typ** – Wählen Sie **Dataverse**.
@@ -217,12 +211,18 @@ Weitere Informationen finden Sie unter [virtuelle Microsoft Dataverse-Entitäten
     - **Mandant** – Geben Sie Ihren Mandanten ein.
     - **Benutzerdefinierte URL** – Geben Sie Ihre Dataverse URL ein und fügen Sie **/api/data/v9.1** hinzu.
 
-4. Wählen Sie **Verbindung prüfen** und wählen Sie dann in dem daraufhin angezeigten Dialogfeld **Hier klicken, um eine Verbindung zur ausgewählten Remote-Anwendung herzustellen**.
+3. Wählen Sie **Verbindung prüfen** und wählen Sie dann in dem Dialogfeld **Hier klicken, um eine Verbindung zur ausgewählten Remote-Anwendung herzustellen**.
 
     [![Überprüfen der Verbindung.](./media/tcs-dataverse-master-data-lookup-13.png)](./media/tcs-dataverse-master-data-lookup-13.png)
-5. Stellen Sie sicher, dass Sie ein „Success!“ erhalten. Nachricht, die anzeigt, dass die Verbindung erfolgreich hergestellt wurde.
+4. Stellen Sie sicher, dass Sie ein „Success!“ erhalten. Nachricht, die anzeigt, dass die Verbindung erfolgreich hergestellt wurde.
 
     [![Erfolgsmeldung.](./media/tcs-dataverse-master-data-lookup-14.png)](./media/tcs-dataverse-master-data-lookup-14.png)
+    
+5. Öffnen Sie in RCS den Arbeitsbereich **Funktionsverwaltung**, und aktivieren Sie die folgenden Funktionen:
+
+    - Globalisierungsfunktionen
+    - Unterstützung von Dataverse-Datenquellen der elektronischen Berichterstellung
+    - Unterstützung für Dataverse-Datenquellen des Steuerdienstes
 
 ## <a name="import-and-set-up-the-dataverse-model-mapping-configuration"></a><a name='import'></a>Importieren und Festlegen der Dataverse Model Mapping Konfiguration
 
@@ -234,7 +234,7 @@ Microsoft bietet Standardkonfigurationen für die Zuordnung von Entitäten aus F
     [![Repositories.](./media/tcs-dataverse-master-data-lookup-15.png)](./media/tcs-dataverse-master-data-lookup-15.png)
 
 3. Markieren Sie den Datensatz **Globales Konfigurations-Repository** und wählen Sie dann **Öffnen**.
-4. Wählen Sie unter **Steuerdatenmodell**\> **Steuerberechnungsdatenmodell** die Konfiguration **Dataverse Modellzuordnung**.
+4. Wählen Sie unter **Steuerdatenmodell** \> **Steuerberechnungsdatenmodell** die Konfiguration **Dataverse Modellzuordnung**.
 5. Wählen Sie auf der Registerkarte **Versionen** Inforegister eine Version aus, die der Version Ihrer Finanz- und Betriebs-Apps entspricht, und wählen Sie dann **Importieren**.
 
     [![Importieren der Dataverse Modell Zuordnung Konfiguration.](./media/tcs-dataverse-master-data-lookup-16.png)](./media/tcs-dataverse-master-data-lookup-16.png)

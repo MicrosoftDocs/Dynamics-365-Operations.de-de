@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3478e8c712c7bcbfb8ace9e7b43f0d8d3cf4ac8a
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 2bb4115a486fbfe7287c9b183224699de4dfd456
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069151"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335524"
 ---
 # <a name="ship-sales-orders-without-warehousing"></a>Aufträge ohne Lagerort liefern
 
@@ -45,7 +45,7 @@ In diesem Artikel wird erläutert, wie Sie einen Kundenauftrag aktualisieren, we
 14. Wählen Sie **Ansicht ändern**.
 15. Wählen Sie **Kopfansicht**.
     - Wenn alle Positionen im Auftrag vollständig geliefert wurden, wird der Auftragsstatus von "Offen" auf "Geliefert" geändert.  
-    - In diesem Beispiel ist die Auftragsposition teilweise geliefert worden. Daher verbleibt der Auftragsstatus "Offen".     
+    - In diesem Beispiel ist die Auftragsposition teilweise geliefert worden. Daher verbleibt der Auftragsstatus „Offen“.     
     - Das Feld **Dokumentstatus** wird auf Packzettel gesetzt, da mindestens eine der Auftragszeilen versendet wurde.  
 16. Wählen Sie im Aktivitätsbereich **Allgemein** aus.
 17. Wählen Sie **Linienmenge**.

@@ -2,7 +2,7 @@
 title: Aufgeschobene Verarbeitung von manuellen Bestandsbewegungen
 description: Dieser Artikel beschreibt, wie Sie die verzögerte Verarbeitung von manuellen Bestandsbewegungen in Microsoft Dynamics 365 Supply Chain Management verwenden können.
 author: Mirzaab
-ms.date: 04/27/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4a8dd322446843af41214e8daa0822939d0468f0
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 9acacaddbde22d05d85ab9e11cd1d6de62337a6a
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219807"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336394"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Aufgeschobene Verarbeitung von manuellen Bestandsbewegungen
 
@@ -32,10 +32,10 @@ Die Verarbeitung im Hintergrund wird durch die Funktion [Verarbeiten von Lageror
 
 Um diese Funktion verfügbar zu machen, schalten Sie die folgenden Funktionen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ein. Sie müssen sie in dieser Reihenfolge einschalten:
 
-1. *Organisationsweite Arbeitssperrung*<br>(Ab Supply Chain Management Version 10.0.21 ist diese Funktion obligatorisch, daher ist sie standardmäßig aktiviert und kann nicht wieder deaktiviert werden.)
-1. *Lagerort-App-Ereignisse verarbeiten*<br>(Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert. Ab Supply Chain Management Version 10.0.29 ist diese Funktion obligatorisch. Daher ist es standardmäßig aktiviert und kann nicht wieder deaktiviert werden.)
-1. *Verzögerte Put-Vorgänge*
-1. *Verzögerte Verarbeitung des manuellen Bestandsumlagerungsvorgangs*<br>(Ab Supply Chain Management Version 10.0.25 ist diese Funktion obligatorisch, daher ist sie standardmäßig aktiviert und kann nicht wieder deaktiviert werden.)
+1. *Organisationsweite Arbeitssperrung*<br>(Ab Supply Chain Management Version 10.0.21 ist diese Funktion obligatorisch und kann nicht deaktiviert werden.)
+1. *Lagerort-App-Ereignisse verarbeiten*<br>(Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert. Ab Supply Chain Management Version 10.0.29 ist diese Funktion obligatorisch und kann nicht deaktiviert werden.)
+1. *Verzögerte Put-Vorgänge*<br>(Ab Supply Chain Management Version 10.0.29 ist diese Funktion obligatorisch und kann nicht deaktiviert werden.)
+1. *Verzögerte Verarbeitung des manuellen Bestandsumlagerungsvorgangs*<br>(Ab Supply Chain Management Version 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden.)
 
 ## <a name="configure-the-work-processing-policies"></a>Konfigurieren Sie die Richtlinien für die Verarbeitung von Arbeit
 

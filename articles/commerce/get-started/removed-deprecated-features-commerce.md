@@ -2,7 +2,7 @@
 title: Entfernte oder veraltete Funktionen in Dynamics 365 Commerce
 description: In diesem Artikel werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen von Dynamics 365 Commerce.
 author: josaw1
-ms.date: 07/11/2022
+ms.date: 08/23/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 541e21999884a2d51b27009d72a2f8bc9084557f
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 59ffcc00d67f6538980dec8965f894eb51f7230d
+ms.sourcegitcommit: 649f1db26da8f20602f11180fc565b7c59eaf545
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287622"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337595"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Commerce
 
@@ -26,12 +26,44 @@ ms.locfileid: "9287622"
 In diesem Artikel werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen von Dynamics 365 Commerce.
 
 - Eine Funktion *entfernt* ist nicht mehr im Produkt verfügbar.
-- Eine Funktion *veraltet* wird nicht aktiv entwickelt und könnte bei einem zukünftigen Update entfernt werden.
+- Eine *veraltete* Funktion wird nicht aktiv entwickelt und könnte bei einem zukünftigen Update entfernt werden.
 
 Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen bei Ihrer eigenen Planung zu berücksichtigen. 
 
 > [!NOTE]
 > Ausführliche Informationen über Objekte in Apps für Finanzen und Betrieb finden Sie in den [Technischen Referenzberichten](/dynamics/s-e/). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die in den einzelnen Versionen der Apps für Finanzen und Betrieb geändert oder entfernt wurden.
+
+## <a name="features-removed-or-deprecated-in-the-commerce-10029-release"></a>Entfernte oder veraltete Funktionen in Commerce Version 10.0.29
+
+### <a name="commerce-parameters-setting---allow-price-adjustments-to-increase-product-price"></a>Commerce-Parametereinstellungen: Lassen Sie Preisregulierungen zu, um den Produktpreis zu erhöhen
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Mit dieser Einstellung sollte gesteuert werden, ob die Preisregulierungsfunktion eine Erhöhung des Produktpreises zulässt. Wenn dieser Parameter deaktiviert ist, können Organisationen bei Verwendung der Preisregulierungsfunktion nur einen Stückpreis eines Produkts festlegen, der niedriger ist als der Grundpreis und der Verkaufspreis laut Handelsvereinbarung. Wir lassen diese Einstellung veralten, da die Preisregulierungsfunktion aktualisiert wurde, um Anpassungen in zwei Richtungen (Erhöhung oder Senkung) standardmäßig zu unterstützen. |
+| **Ersetzt durch eine andere Funktion?**   | Nein |
+| **Betroffene Produktbereiche**         | Preise und Rabatte |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet: Diese Einstellung ist seit Commerce-Version 10.0.29 standardmäßig aktiviert und wird im Oktober 2023 entfernt. |
+
+### <a name="commerce-parameters-setting---enable-price-report-for-retail-store"></a>Commerce-Parametereinstellung: Preisbericht für Einzelhandelsgeschäft aktivieren
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Mit dieser Einstellung sollte gesteuert werden, ob die Preisberichtsfunktion für die Verwendung im Shopkonfigurationsformular verfügbar ist. Wir verwerfen diese Einstellung, da das Shopkonfigurationsformular aktualisiert wurde, um die Preisberichtsfunktion immer als Standardfunktion bereitzustellen. |
+| **Ersetzt durch eine andere Funktion?**   | Nein |
+| **Betroffene Produktbereiche**         | Preise und Rabatte |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet: Diese Einstellung wird im Oktober 2023 entfernt. |
+
+### <a name="commerce-parameters-setting---use-todays-date-to-calculate-prices"></a>Commerce-Parametereinstellung: Das heutige Datum verwenden, um die Preise zu berechnen
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Das Standardpreisgestaltungsmodul für das Supply Chain Management (SCM) unterstützt die Preisberechnung basierend auf dem angeforderten Lieferdatum und dem angeforderten Wareneingangsdatum zusammen mit dem heutigen Datum. Das Preisgestaltungsmodul von Commerce unterstützt nur die Preisberechnung basierend auf dem heutigen Datum. Für Kunden, die sowohl SCM- als auch Commerce-Funktionen verwenden, haben wir diese Einstellung bereitgestellt und empfohlen, dass Kunden sie immer auf **Ja** einstellen, sodass die beiden Preisgestaltungsmodule zusammenarbeiten können. Wir lassen diese Einstellung veralten, da sie das Berechnungsverhalten nicht ändert und redundant ist. |
+| **Ersetzt durch eine andere Funktion?**   | Nein |
+| **Betroffene Produktbereiche**         | Preise und Rabatte |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet: Diese Einstellung ist seit Commerce-Version 10.0.29 standardmäßig aktiviert und wird im Oktober 2023 entfernt. |
 
 ## <a name="feature-deprecation-effective-july-2022"></a>Außer Betrieb genommene Funktionen ab Juli 2022
 
@@ -39,26 +71,11 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Das Dynamics 365 Commerce-Team hat die Nutzung und Akzeptanz der Funktion Commernce analytics (Vorschau) analysiert und beschlossen, die Funktion nicht mehr allgemein zur Verfügung zu stellen.   |
-| **Ersetzt durch eine andere Funktion?**   | Zur Zeit wird Commerce analytics (Vorschau) nicht durch eine andere Funktion oder Lösung ersetzt. Der Export von Rohtransaktionen und Stammdaten aus Finanz- und Betriebs-Apps zu Azure Data Lake ist weiterhin verfügbar, wie in [Export zu Data Lake in Finanz- und Betriebs-Apps](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md) erläutert. Partner und Debitor können diesen Datenstrom nutzen, um die gewünschten Analyseberichte für ihre Geschäftsanforderungen zu erstellen.
+| **Grund für veralteten Zustand/Entfernung** | Das Dynamics 365 Commerce-Team hat die Nutzung und Akzeptanz der Analysefunktion (Vorschauversion) von Commerce analysiert und beschlossen, die Funktion nicht mehr allgemein zur Verfügung zu stellen.   |
+| **Ersetzt durch eine andere Funktion?**   | Zur Zeit wird die Analysefunktion (Vorschaufunktion) von Commerce nicht durch eine andere Funktion oder Lösung ersetzt. Der Export von Rohtransaktionen und Stammdaten aus Finanz- und Betriebs-Apps zu Azure Data Lake ist weiterhin verfügbar, wie in [Export zu Data Lake in Finanz- und Betriebs-Apps](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md) erläutert. Partner und Debitor können diesen Datenstrom nutzen, um die gewünschten Analyseberichte für ihre Geschäftsanforderungen zu erstellen.
 | **Betroffene Produktbereiche**         | Commerce-Analysen (Vorschau) |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Wir werden die Deaktivierung dieser Funktion bis zum 30. August 2022 in Betracht ziehen.  Von diesem Zeitpunkt an werden die aktuellen Power BI-Berichte von Commerce analytics (Vorschau) nicht mehr aktualisiert.     |
-
-
-## <a name="features-removed-or-deprecated-in-the-commerce-10025-release"></a>Entfernte oder veraltete Funktionen in Commerce Version 10.0.25
-
-### <a name="modern-point-of-sale-mpos"></a>Modern Point of Sale (MPOS)
-
-Die Modern Point of Sale (MPOS)-Anwendung wird in der Commerce-Version 10.0.25 veraltet sein und durch die Store Commerce-App ersetzt.
-
-| &nbsp;  | &nbsp; |
-|------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | In-Store-Apps sind der Eckpfeiler des Dynamics 365 Commerce Omnichannel-Angebots. Wir arbeiten kontinuierlich an Innovationen, um moderne und intelligente Shop-Erfahrungen bereitzustellen, und um unsere Lösung weiter zu modernisieren, führen wir neue Änderungssätze ein, die den IT-Betrieb und die Benutzererfahrung mit unseren bestehenden In-Store-Anwendungen unter Windows erheblich verbessern werden. Die neue Store Commerce-Anwendung ist ein Technologie-Upgrade des bestehenden MPOS. Sie bietet verbesserte Leistung, Zuverlässigkeit und langfristigen Support auf der Windows-Plattform und macht es überflüssig, die App bei jedem Update neu zu verpacken. |
-| **Ersetzt durch eine andere Funktion?**   |  [Store Commerce](../dev-itpro/store-commerce.md) |
-| **Betroffene Produktbereiche**         | Modern Point of Sale |
-| **Bereitstellungsoption**              | Alle |
-| **Status**                         | Veraltet: Ab der Commerce-Version 10.0.25 wird das MPOS-Installationsprogramm, das über die virtuellen LCS-Maschinen (VMs) geliefert wird, im Oktober 2023 entfernt. |
+| **Status**                         | Diese Funktion wird voraussichtlich bis zum 30. August 2022 deaktiviert.  Von diesem Zeitpunkt an werden die aktuellen Power BI-Berichte von Commerce analytics (Vorschau) nicht mehr aktualisiert.     |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Entfernte oder veraltete Funktionen in Commerce Version 10.0.21
 
@@ -70,7 +87,7 @@ Die Einstellung **Verarbeitung überlappender Rabatte** auf der Seite **Commerce
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | <p>Die Einstellung **Verarbeitung überlappender Rabatte** in den Commerce-Parametern steuert, wie das Commerce-Preisgestaltungsmodul die optimale Kombination überlappender Rabatte sucht und bestimmt. Derzeit werden sind drei Optionen verfügbar:<p><ul><li> **Optimale Leistung** – Diese Option verwendet einen erweiterten Heuristikalgorithmus und die Methode [Schwellenwertklassifizierung](../optimal-combination-overlapping-discounts.md), um die beste Rabattkombination rechtzeitig zu priorisieren, zu bewerten und zu bestimmen.</li><li>**Ausgeglichene Kalkulation** – In der aktuellen Codebasis funktioniert diese Option genauso wie die Option **Optimale Leistung**. Daher ist es im Wesentlichen eine duplizierte Option.</li><li>**Umfassende Kalkulation** – Diese Option verwendet einen alten Algorithmus, der bei der Preisberechnung alle möglichen Rabattkombinationen durchläuft. Bei Aufträgen mit großen Positionen und Mengen kann diese Option zu Leistungsproblemen führen.</li></ul><p>Um die Konfiguration zu vereinfachen, die Leistung zu verbessern und Vorfälle zu reduzieren, die durch den alten Algorithmus verursacht werden, werden wir die Einstellung **Verarbeitung überlappende Rabatte** vollständig entfernen und die interne Logik des Preisgestaltungsmoduls von Commerce aktualisieren, sodass sie jetzt nur den erweiterten Algorithmus verwendet (d. h. den Algorithmus hinter der Option **Optimale Leistung**).</p> |
+| **Grund für veralteten Zustand/Entfernung** | <p>Die Einstellung **Verarbeitung überlappender Rabatte** in den Commerce-Parametern steuert, wie das Commerce-Preisgestaltungsmodul die optimale Kombination überlappender Rabatte sucht und bestimmt. Derzeit werden sind drei Optionen verfügbar:<p><ul><li> **Optimale Leistung** – Diese Option verwendet einen erweiterten Heuristikalgorithmus und die Methode [Schwellenwertklassifizierung](../optimal-combination-overlapping-discounts.md), um die beste Rabattkombination rechtzeitig zu priorisieren, zu bewerten und zu bestimmen.</li><li>**Ausgeglichene Kalkulation** – In der aktuellen Codebasis funktioniert diese Option genauso wie die Option **Optimale Leistung**. Daher ist es im Wesentlichen eine duplizierte Option.</li><li>**Umfassende Kalkulation** – Diese Option verwendet einen alten Algorithmus, der bei der Preisberechnung alle möglichen Rabattkombinationen durchläuft. Bei Aufträgen mit großen Positionen und Mengen kann diese Option zu Leistungsproblemen führen.</li></ul><p>Um die Konfiguration zu vereinfachen, die Leistung zu verbessern und Vorfälle zu reduzieren, die durch den alten Algorithmus verursacht werden, entfernen wir die Einstellung **Verarbeitung überlappende Rabatte** vollständig und aktualisieren die interne Logik des Preisgestaltungsmoduls von Commerce, sodass er jetzt nur den erweiterten Algorithmus verwendet (d. h. den Algorithmus hinter der Option **Optimale Leistung**).</p> |
 | **Ersetzt durch eine andere Funktion?**   | Nein. Wir empfehlen Organisationen, die die Option **Ausgeglichene Kalkulation** oder **Umfassende Kalkulation** verwenden, zur Option **Optimale Leistung** zu wechseln, bevor diese Funktion entfernt wird. |
 | **Betroffene Produktbereiche**         | Preise und Rabatte |
 | **Bereitstellungsoption**              | Alle |
@@ -177,7 +194,7 @@ Die Entwicklung von POS-Erweiterungen mit ModernPos.sln, CloudPos.sln, POS.Exten
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die Erweiterung der Hardwarestation mit IHardwareStationController wird eingestellt, um ein vereinfachtes Erweiterungsmodell bereitzustellen. Die neue Implementierung wird nur die IController-Klasse ohne zusätzliche Klassenimplementierung haben. Um die Abhängigkeit von den wichtigsten Hardware-Stationsbibliotheken zu vermeiden, muss die vorherige Erweiterung auf mehrere Bibliotheken verweisen.) |
-| **Ersetzt durch eine andere Funktion?**   | Es wird empfohlen, dass Sie das IController-Klassenerweiterungsmodell verwenden, indem Sie das NuGet-Paket importieren(Microsoft.Dynamics.Commerce.Hosting.Contracts). |
+| **Ersetzt durch eine andere Funktion?**   | Sie sollten das IController-Klassenerweiterungsmodell verwenden, indem Sie das NuGet-Paket importieren(Microsoft.Dynamics.Commerce.Hosting.Contracts). |
 | **Betroffene Produktbereiche**         | Hardwar-Stationserweiterungen |
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet: ab Frühjahr 10.0.11 Version |
@@ -198,7 +215,7 @@ Die Entwicklung von POS-Erweiterungen mit ModernPos.sln, CloudPos.sln, POS.Exten
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Neue optimierte APIs sind erstellt worden, um die GetProductAvailabilities und GetAvailableInventoryNearby-APIs zu ersetzen. |
-| **Ersetzt durch eine andere Funktion?**   | Ja: Es wird durch GetEstimatedAvailability- und GetEstimatedProductWarehouseAvailability-APIs ersetzt. |
+| **Ersetzt durch eine andere Funktion?**   | Ja: Es wird durch GetEstimatedAvailabilty- und GetEstimatedProductWarehouseAvailability-APIs ersetzt. |
 | **Betroffene Produktbereiche**         | E-Commerce-Anwendung SDK |
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet: Ab Version 10.0.7 werden keine technischen Investitionen mehr für GetProductAvailabilities und GetAvailableInventoryNearby getätigt. Organisationen, die diese APIs in ihren E-Commerce-Bereitstellungen verwenden, sollten zu den neuen GetEstimatedAvailability- und GetEstimatedProductWarehouseAvailability-APIs wechseln und die [Optimierte Funktion zur Berechnung der Produktverfügbarkeit](../calculated-inventory-retail-channels.md) aktivieren.  |

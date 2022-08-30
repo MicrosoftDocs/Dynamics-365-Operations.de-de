@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: b44b044bf10115a7fcaf347a3b6f1759c2a68cb6
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: dd98b22a2dfcd8cad62bdef2d31ac2880b3422f8
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219063"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334714"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.26 (Mai 2022)
 
@@ -51,7 +51,6 @@ Wenn Sie eine dieser Funktionen ein‑ oder ausschalten möchten, müssen Sie di
 | Produktinformationsverwaltung | Produktattributwerte bereinigen | Diese Funktion fügt eine periodische Aufgabe namens **Produktattributwerte bereinigen** hinzu, die Datensätze von Produktattributwerten bereinigt, die nicht mehr mit einem Produkt über eine Produktkategorie verbunden sind. |
 | Lager- und Lagerortverwaltung | (Russland) Verhinderung von Diskrepanzen bei der Ausstellung von GTDs für Bestellungen, die WMS-aktivierte Artikel enthalten | Diese Funktion ist nur für die russische Lokalisierung vorgesehen. Er verhindert Diskrepanzen, die bei der Ausgabe russischer Zollanmeldungsnummern (GTDs) für Importbestellungen auftreten, die Artikel enthalten, die für Lagerverwaltungsprozesse (WMS) aktiviert sind. Der GTD-Ausgabeprozess ändert einige Werte der Bestandsdimensionen in den zugehörigen Bestandstransaktionen für Rechnungen, die in das angepasste Zoll-Journal aufgenommen wurden, was zu Diskrepanzen zwischen den Datensätzen für den Arbeitsauftrag und den Transaktionen für den Kauf führt. Wenn diese Funktion aktiviert ist, erzeugt der GTD-Ausgabeprozess Anpassungsarbeit, die solche Diskrepanzen beseitigt. |
 | Lagerortverwaltung | Erweiterter Parser für GS1-Barcodes | Diese Funktion fügt einen verbesserten Parser für GS1 Symboldaten hinzu. Der neue Parser implementiert den Algorithmus der GS1 Allgemeinen Spezifikation zum Parsen von GS1 Symbolen und bietet eine stärkere Datenvalidierung. Weitere Informationen finden Sie unter [GS1-Barcodes scannen](../warehousing/gs1-barcodes.md). |
-| Lagerortverwaltung | Neue Workbenchseiten zur Ladungsplanung | Fügt zwei neue Seiten für die Ladungsplanung hinzu: **Eingehende Ladung Planungswerkbank** und **Ausgehende Ladung Planungswerkbank**. |
 | Lagerortverwaltung | Warehouse Management-Anwendung – leere GTD | Diese Funktion ist nur für die russische Lokalisierung vorgesehen. Es lässt zu, dass Arbeitskräfte, die die Warehouse Management-Mobile-App verwenden, bei Bedarf russische Zollanmeldungsnummern (GTDs) leer lassen. Wenn die Dimension für die GTD-Verfolgung so festgelegt ist, dass Leerwerte zugelassen werden, akzeptiert das System Leerwerte für GTD für Vorgänge im Bestand, sofern ein Lagerbestand vorhanden ist. |
 
 ## <a name="new-and-updated-documentation-resources"></a>Neue und aktualisierte Dokumentationsressourcen

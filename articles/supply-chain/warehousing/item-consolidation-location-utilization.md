@@ -2,7 +2,7 @@
 title: Artikelkonsolidierung – Auslastung von Lagerplatz
 description: Dieser Artikel enthält Informationen zu Funktionen, mit denen Lagerverwalter die volumetrische Auslastung von Standorten im gesamten Lager problemlos anzeigen und filtern können. Manager können direkt auf der Seite „Positionskonsolidierung“ Standorte auswählen und Lagerumlagerungsarbeiten erstellen, um Artikel zu konsolidieren und so den Lagerraum besser zu nutzen.
 author: Mirzaab
-ms.date: 07/16/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 7c78954659c125c919ed0debbd81023a3da02db3
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d0e52769de3f200e2bb3060b3d9cb19dc0847b69
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219441"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336422"
 ---
 # <a name="item-consolidation---location-utilization"></a>Artikelkonsolidierung – Auslastung von Lagerplatz
 
@@ -30,8 +30,8 @@ Dieser Artikel enthält Informationen zu Funktionen, mit denen Lagerverwalter di
 
 Bevor Sie die in diesem Artikel beschriebenen Funktionen verwenden können, müssen Sie sie in Ihrem System aktivieren. Administratoren können im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktionen überprüfen und sie gegebenenfalls aktivieren. Aktivieren Sie beide folgenden Funktionen in der Reihenfolge, in der sie aufgeführt sind. (Beide Funktionen sind für das Modul **Lagerortverwaltung** vorgesehen.)
 
-1. *Status des Lagerplatzes an einem Lagerort* (ab Version 10.0.29 ist diese Funktion standardmäßig aktiviert. Weitere Informationen finden Sie unter [Status des Lagerplatzes an einem Lagerort](warehouse-location-status.md)).
-2. *Nutzung von Lagerplatz für Positionskonsolidierung*
+1. *Status des Lagerplatzes an einem Lagerort*<br>(Ab Supply Chain Management Version 10.0.29 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Weitere Informationen finden Sie unter [Status des Lagerplatzes an einem Lagerort](warehouse-location-status.md)).
+2. *Nutzung von Lagerplatz für Positionskonsolidierung*<br>(Ab Supply Chain Management Version 10.0.29 ist diese Funktion standardmäßig aktiviert.)
 
 ## <a name="warehouse-location-status"></a>Status des Lagerplatzes an einem Lagerort
 

@@ -14,18 +14,15 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 35fcb7c4068ff2f68970d9c0127491e4a63dab4c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dac3ad583be9e4cbd6eacbc6d228819bd298628b
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861072"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9323572"
 ---
 # <a name="create-a-working-time-calendar"></a>Erstellen eines Arbeitszeitkalenders
 
-
-> [!Important]
-> Die in diesem Artikel beschriebene Funktionalität ist derzeit für Kunden der eigenständigen Version von Dynamics 365 Human Resources verfügbar. Einige oder die gesamten Funktionen werden in einem zukünftigen Release der Finance-Infrastruktur nach Finance-Version 10.0.26 verfügbar sein.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -67,7 +64,7 @@ Sie können Feiertage und Schließungen separat von einem Arbeitszeitkalender hi
 
 Sie können Feiertage und Schließungen separat von einem Arbeitszeitkalender hinzufügen oder ändern.
 
-1. Wählen Sie auf der Seite **Organisationsadministration** auf **ARBEITSFREIE ZEIT**.
+1. Klicken Sie auf der Seite **Organisationsadministration** auf **Arbeitsfreie Zeit**.
 
 2. Wählen Sie **Neu** und geben Sie einen Namen und den Zeitraum für die arbeitsfreie Zeit ein.
 

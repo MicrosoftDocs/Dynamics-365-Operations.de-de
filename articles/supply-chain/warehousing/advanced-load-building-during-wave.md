@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 76aee3a736efa9ed7431d4e5127cd0abaccd659f
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: c9d41645531fa4318289f32a564c34f0f92681df
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218847"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335839"
 ---
 # <a name="advanced-load-building-during-wave"></a>Erweiterte Ladungserstellung während einer Welle
 
@@ -36,7 +36,7 @@ Um diese Funktion zu verwenden, müssen Sie das System folgendermaßen einrichte
 
 ## <a name="turn-on-advanced-wave-load-building-in-your-system"></a>Aktivieren der erweiterten Ladungserstellung während Wellen in Ihrem System
 
-Bevor Sie die erweiterte Ladungserstellung während Wellen verwenden können, müssen in Ihrem System zwei Funktionen aktiviert sein. Administratoren können mit den Einstellungen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status dieser Funktionen überprüfen und sie gegebenenfalls aktivieren. Im Arbeitsbereich **Funktionsverwaltung** sind die Funktionen wie folgt aufgeführt:
+Bevor Sie die erweiterte Ladungserstellung während Zyklen verwenden können, müssen für Ihr System zwei Funktionen aktiviert sein. Administratoren können mit den Einstellungen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status dieser Funktionen überprüfen und sie gegebenenfalls aktivieren. Im Arbeitsbereich **Funktionsverwaltung** sind die Funktionen wie folgt aufgeführt:
 
 - Funktion zur Ladungserstellung während Wellen:
 
@@ -166,7 +166,7 @@ Ladungsmischgruppen legen Regeln für die Artikeltypen fest, die in einer einzel
 1. Wählen Sie auf dem Inforegister **Kriterien für Ladungsmischgruppen** die Option **Neu** aus, um dem Raster eine Zeile hinzuzufügen.
 1. Legen Sie in der neuen Zeile in jedem Feld die gewünschten Werte fest. Diese Werte bestimmen die Artikelgruppen, die für die Ladungsmischung berücksichtigt werden.
 
-    Wenn Sie mit den **USMF**-Demodaten arbeiten, wählen Sie *TV & Video* im Feled **Artikelgruppe** aus.
+    Wenn Sie mit den **USMF**-Demodaten arbeiten, wählen Sie *TV & Video* im Feld **Artikelgruppe** aus.
 
 1. Wählen Sie im Aktivitätsbereich **Speichern** aus, um das Inforegister **Einschränkungen für Ladungsmischgruppen** verfügbar zu machen.
 1. Wählen Sie auf dem Inforegister **Einschränkungen für Ladungsmischgruppen** die Option **Neu** aus, um dem Raster eine Zeile hinzuzufügen.

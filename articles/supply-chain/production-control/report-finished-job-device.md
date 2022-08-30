@@ -2,7 +2,7 @@
 title: Vom Einzelvorgangskartengerät als erledigt melden
 description: In diesem Artikel wird beschrieben, wie Sie das System so konfigurieren, dass Benutzer eines Einzelvorgangskartengeräts fertige Produkte aus einem Fertigungsauftrag an das Inventar melden können.
 author: johanhoffmann
-ms.date: 07/31/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 38372f08db0258de8b5e653b4757c9fda96c8d70
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 56d19a966d93202668c34ffaaef561d72b7669ff
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070468"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334624"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Vom Einzelvorgangskartengerät als erledigt melden
 
@@ -56,13 +56,12 @@ Das Einzelvorgangskartengerät unterstützt drei Szenarien für die Berichterste
 - **Vordefinierte Chargennummern** – Arbeitskräfte wählen eine Chargennummer in einer Liste von Chargennummern aus, die das System automatisch generiert, bevor der Produktionsauftrag an das Einzelvorgangskartengerät freigegeben wird.
 - **Feste Chargennummern** – Mitarbeiter geben keine Chargennummer ein oder wählen keine aus. Stattdessen weist das System dem Fertigungsauftrag automatisch eine Chargennummer zu, bevor er freigegeben wird.
 
-
 ### <a name="enable-the-feature-on-your-system"></a>Funktion im System aktivieren
 
-Damit Ihre Einzelvorgangskartengeräte während der Berichterstellung eine Chargennummer als abgeschlossen akzeptieren können, müssen Sie die [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um die folgenden Funktionen zu aktivieren (in dieser Reihenfolge):
+Damit Ihre Einzelvorgangskartengeräte während der Berichterstellung eine Chargennummer als abgeschlossen akzeptieren können, müssen Sie die [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um die folgenden Funktionen zu aktivieren:
 
-1. Verbesserte Benutzerfreundlichkeit für den Berichtsstatusdialog im Einzelvorgangs-Kartengerät
-1. Aktivieren, um Chargen- und Seriennummern einzugeben, während die Fertigmeldung vom Einzelvorgangs-Kartengerät abgeschlossen wird
+- *Verbesserte Benutzerfreundlichkeit für den Berichtsstatusdialog im Einzelvorgangs-Kartengerät*
+- *Aktivieren, um Chargen- und Seriennummern einzugeben, während die Fertigmeldung vom Einzelvorgangs-Kartengerät abgeschlossen wird*<br>(Ab Supply Chain Management Version 10.0.29 ist diese Funktion standardmäßig aktiviert.)
 
 ### <a name="configure-products-that-require-batch-number-reporting"></a>Produkte konfigurieren, die Chargennummernberichterstattung erfordern
 
@@ -81,7 +80,7 @@ In den folgenden Abschnitten wird beschrieben, wie Sie Nachverfolgungs-Nummerngr
 
 Um Chargennummern manuell einzurichten, folgen Sie diesen Schritten, um ein Nachverfolgungs-Nummerngruppe einzurichten.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Installieren \> Ausmaße \> Nachverfolgung von Nummerngruppen**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Ausmaße \> Nachverfolgung von Nummerngruppen**.
 1. Erstellen oder wählen Sie die einzurichtende Nachverfolgungs-Nummerngruppe.
 1. Auf dem Inforegister **Allgemein** stellen Sie die Option **Manuell** auf **Ja** fest.
 
@@ -97,7 +96,7 @@ Wenn Sie dieses Szenario verwenden, wird das Feld **Chargennummer** **Fortschrit
 
 Um eine Liste vordefinierter Chargennummern einzurichten, folgen Sie diesen Schritten, um ein Nachverfolgungs-Nummerngruppe einzurichten.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Installieren > Ausmaße \> Nachverfolgung von Nummerngruppen**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen > Ausmaße \> Nachverfolgung von Nummerngruppen**.
 1. Erstellen oder wählen Sie die einzurichtende Nachverfolgungs-Nummerngruppe.
 1. Auf dem Inforegister **Allgemein** stellen Sie die Option **Nur für Bestandtransaktionen** auf **Ja** fest.
 1. Verwenden Sie das Feld **Pro Menge** zum Aufteilen der Chargennummern pro Menge, basierend auf dem von Ihnen eingegebenen Wert. Zum Beispiel haben Sie einen Fertigungsauftrag für zehn Stück und das Feld **Pro Menge** ist auf *2* festgesetzt. In diesem Fall werden dem Fertigungsauftrag beim Erstellen fünf Chargennummern zugewiesen.
@@ -114,7 +113,7 @@ Wenn Sie dieses Szenario verwenden, wird das Feld **Chargennummer**, das die Sei
 
 Wenn Chargennummern ohne Eingabe durch den Mitarbeiter automatisch zugewiesen werden sollen, führen Sie die folgenden Schritte aus, um eine Nachverfolgungsnummerngruppe einzurichten.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Installieren \> Ausmaße \> Nachverfolgung von Nummerngruppen**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Ausmaße \> Nachverfolgung von Nummerngruppen**.
 1. Erstellen oder wählen Sie die einzurichtende Nachverfolgungs-Nummerngruppe.
 1. Auf dem Inforegister **Allgemein** stellen Sie die Option **Nur für Bestandtransaktionen** auf **Nein** fest.
 1. Stellen Sie die Option **Manuell** auf **Nein** ein.
@@ -137,10 +136,10 @@ Das Einzelvorgangskartengerät unterstützt drei Szenarien für die Berichterste
 
 ### <a name="enable-the-feature-on-your-system"></a>Funktion im System aktivieren
 
-Damit Ihre Einzelvorgangskartengeräte während der Berichterstellung eine Seriennummer als abgeschlossen akzeptieren können, müssen Sie die [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um die folgenden Funktionen zu aktivieren (in dieser Reihenfolge):
+Damit Ihre Einzelvorgangskartengeräte während der Berichterstellung eine Seriennummer als abgeschlossen akzeptieren können, müssen Sie die [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um die folgenden Funktionen zu aktivieren:
 
-1. Verbesserte Benutzerfreundlichkeit für den Berichtsstatusdialog im Einzelvorgangs-Kartengerät
-1. Aktivieren, um Chargen- und Seriennummern einzugeben, während die Fertigmeldung vom Einzelvorgangs-Kartengerät abgeschlossen wird
+- *Verbesserte Benutzerfreundlichkeit für den Berichtsstatusdialog im Einzelvorgangs-Kartengerät*
+- *Aktivieren, um Chargen- und Seriennummern einzugeben, während die Fertigmeldung vom Einzelvorgangs-Kartengerät abgeschlossen wird*<br>(Ab Supply Chain Management Version 10.0.29 ist diese Funktion standardmäßig aktiviert.)
 
 ### <a name="configure-products-that-require-serial-number-reporting"></a>Produkte konfigurieren, die Seriennummernberichterstattung erfordern
 
@@ -161,7 +160,7 @@ In den folgenden Abschnitten wird beschrieben, wie Sie Nachverfolgungs-Nummerngr
 
 Um Seriennummern manuell zuzuweisen, folgen Sie diesen Schritten, um ein Nachverfolgungs-Nummerngruppe einzurichten.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Installieren \> Ausmaße \> Nachverfolgung von Nummerngruppen**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Ausmaße \> Nachverfolgung von Nummerngruppen**.
 1. Erstellen oder wählen Sie die einzurichtende Nachverfolgungs-Nummerngruppe.
 1. Auf dem Inforegister **Allgemein** stellen Sie die Option **Manuell** auf **Ja** fest.
 
@@ -180,7 +179,7 @@ Wenn Sie dieses Szenario verwenden, ist das Feld **Seriennummer**, das auf der S
 
 Um eine Liste vordefinierter Seriennummern anzugeben, folgen Sie diesen Schritten, um eine Nachverfolgungs-Nummerngruppe einzurichten.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Installieren \> Ausmaße \> Nachverfolgung von Nummerngruppen**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Ausmaße \> Nachverfolgung von Nummerngruppen**.
 1. Erstellen oder wählen Sie die einzurichtende Nachverfolgungs-Nummerngruppe.
 1. Auf dem Inforegister **Allgemein** stellen Sie die Option **Nur für Bestandtransaktionen** auf **Ja** fest.
 1. Verwenden Sie das Feld **Pro Menge** zum Teilen der Seriennummern pro Menge von eins.
@@ -197,7 +196,7 @@ Wenn Sie dieses Szenario verwenden, ist das Feld **Seriennummer**, das auf der S
 
 Wenn eine Seriennummer ohne Eingabe durch den Mitarbeiter automatisch zugewiesen werden soll, führen Sie die folgenden Schritte aus, um eine Nachverfolgungs-Nummerngruppe einzurichten.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Installieren \> Ausmaße \> Nachverfolgung von Nummerngruppen**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Ausmaße \> Nachverfolgung von Nummerngruppen**.
 1. Erstellen oder wählen Sie die einzurichtende Nachverfolgungs-Nummerngruppe.
 1. Auf dem Inforegister **Allgemein** stellen Sie die Option **Nur für Bestandtransaktionen** auf **Nein** fest.
 1. Stellen Sie die Option **Manuell** auf **Nein** ein.

@@ -2,7 +2,7 @@
 title: Höher gestufte Felder für Schritte in der mobilen Warehouse Management-App konfigurieren
 description: In diesem Artikel wird beschrieben, wie Sie bestimmte Informationen für jeden Schritt in Aufgabenabläufen für die mobile Warehouse Management Mobile App höher stufen und hervorheben.
 author: Mirzaab
-ms.date: 10/15/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8ecca2d00b8753a405faa8d4c67c3cbb1eef6907
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 3451b1aec525cd0738af558b183f8676d20294a0
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218973"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336064"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>Höher gestufte Felder für Schritte in der mobilen Warehouse Management-App konfigurieren
 
@@ -29,19 +29,12 @@ In diesem Artikel wird beschrieben, wie Sie bestimmte Informationen für jeden S
 
 ## <a name="enable-promoted-fields-in-your-system"></a>Aktivieren Sie heraufgestufte Felder in Ihrem System
 
-Bevor Sie heraufgestufte Felder einrichten können, müssen Sie das folgende Verfahren ausführen, um die erforderlichen Funktionen zu aktivieren und die erforderlichen Feldnamen in der Mobile-App Warehouse Management zu generieren.
+Wenn Sie Supply Chain Management der Version 10.0.28 oder früher ausführen, müssen Sie, bevor Sie heraufgestufte Felder einrichten können, das folgende Verfahren ausführen, um die erforderlichen Funktionen zu aktivieren und die erforderlichen Feldnamen in der Mobile Warehouse Management App zu generieren. Wenn Sie Supply Chain Management der Version 10.0.29 oder höher ausführen, sind die Funktionen obligatorisch und können nicht deaktiviert werden, sodass Sie dieses Verfahren überspringen können.
 
-1. Wechseln Sie zu **Systemverwaltung \> Arbeitsbereiche \> Funktionsverwaltung**.
-1. Stellen Sie sicher, dass die *Schrittanweisungen für die Warehouse-App* Funktion für Ihr System aktiviert ist. Ab Supply Chain Management Version 10.0.29 ist diese Funktion standardmäßig aktiviert. Für weitere Informationen über die Funktion *Schrittanleitung für die Warehouse-App* siehe [Passen Sie Schritttitel und Anweisungen für die mobile Warehouse Management-App an](mobile-app-titles-instructions.md). Diese Funktion ist Voraussetzung für die Funktion *Heraufgestufte Felder für die Lagerverwaltungs-App*.
-1. Aktivieren Sie die Funktion, die folgendermaßen aufgelistet ist:
-
-    - **Module:** *Lagerortverwaltung*
-    - **Funktionsname:** *Beworbene Felder für die Lager-App*
-
-    Diese Funktion wird in diesem Artikel beschrieben.
-
-1. Aktualisieren Sie die Feldnamen in der mobilen Warehouse Management-App, indem Sie zu **Lagerverwaltung \> Einstellungen \> Mobiles Gerät \> Feldnamen der Warehouse-App** und wählen Sie **Standard-Setup erstellen**. Weitere Informationen finden Sie unter [Felder für die Warehouse Management Mobile App konfigurieren](configure-app-field-names-priorities-warehouse.md).
-1. Wiederholen Sie den vorherigen Schritt für jede juristische Person (Firma), in der Sie die mobile App Warehouse Management verwenden.
+1. Wechseln Sie zu **Systemverwaltung \> Arbeitsbereiche \> Funktionsverwaltung**. (Weitere Informationen über diese Seite finden Sie unter [Funktionsverwaltung – Überblick](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
+1. Stellen Sie sicher, dass die *Schrittanweisungen für die Warehouse-App* Funktion für Ihr System aktiviert ist. Diese Funktion ist Voraussetzung für die Funktion *Heraufgestufte Felder für die Lagerverwaltungs-App*. Ab Supply Chain Management Version 10.0.29 ist es obligatorisch und kann nicht deaktiviert werden. Für weitere Informationen über die Funktion *Schrittanleitung für die Warehouse-App* siehe [Passen Sie Schritttitel und Anweisungen für die mobile Warehouse Management-App an](mobile-app-titles-instructions.md).
+1. Stellen Sie sicher, dass die *Höhergestufte Felder für die Warehouse-App* Funktion für Ihr System aktiviert ist. Dies ist die Funktion, die in diesem Artikel beschrieben wird. Ab Supply Chain Management Version 10.0.29 ist es obligatorisch und kann nicht deaktiviert werden.
+1. Aktualisieren Sie die Feldnamen in der mobilen Warehouse Management-App, indem Sie zu **Lagerverwaltung \> Einstellungen \> Mobiles Gerät \> Feldnamen der Warehouse-App** und wählen Sie **Standard-Setup erstellen**. Wiederholen Sie diesen Schritt für jede juristische Person (Firma), in der Sie die mobile App Warehouse Management verwenden. Weitere Informationen finden Sie unter [Felder für die Warehouse Management Mobile App konfigurieren](configure-app-field-names-priorities-warehouse.md).
 
 ## <a name="configure-promoted-fields-from-a-menu-specific-override"></a>Konfigurieren Sie heraufgestufte Felder von einer menüspezifischen Außerkraftsetzung
 

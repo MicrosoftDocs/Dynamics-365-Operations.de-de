@@ -2,7 +2,7 @@
 title: Umlagerungsaufträge aus der Lagerort-App erstellen
 description: In diesem Artikel wird beschrieben, wie Sie Umlagerungsaufträge über die Warehouse Management Mobile App erstellen und verarbeiten
 author: perlynne
-ms.date: 09/02/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b9edc2d94aa1f4850d2e7fe2b4bdd1b092be944f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 45cbf7aca431c19e58de75355579304baef3cf7d
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8877449"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336454"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Umlagerungsaufträge aus der Lagerort-App erstellen
 
@@ -26,14 +26,14 @@ ms.locfileid: "8877449"
 
 Diese Funktion ermöglicht Lagerarbeitern das Erstellen und Verarbeiten von Umlagerungsaufträgen direkt über die Warehouse Management Mobile App. Die Arbeiter wählen zunächst den Ziellagerort aus und können dann mit der App ein oder mehrere Kennzeichen scannen, um Kennzeichen zum Umlagerungsauftrag hinzuzufügen. Wenn der Lagerarbeiter **Bestellung abschließen** auswählt, erstellt ein Batchauftrag den erforderlichen Umlagerungsauftrag und die Bestellpositionen basierend auf dem verfügbaren, für diese Kennzeichen registrierten Lagerbestand.
 
-## <a name="turn-this-feature-on-or-off"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Schalten Sie diese Funktion ein oder aus
+## <a name="turn-on-this-feature-and-its-prerequisites"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Aktivieren Sie die diese Funktion und ihre Voraussetzungen
 
 Bevor Sie diese Funktion nutzen können, müssen Sie die Funktion und ihre Voraussetzugnen auf Ihrem System aktivieren. Administratoren können die Seite [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktion zu überprüfen und sie bei Bedarf zu aktivieren.
 
 1. Aktivieren sie die folgenden beiden Funktionen (in dieser Reihenfolge) im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Ab Supply Chain Management Version 10.0.25 sind diese beiden Funktionen standardmäßig aktiviert.
-    1. *Lagerort-App-Ereignisse verarbeiten*
-    1. *Umlagerungsaufträge aus der Lagerort-App erstellen und verarbeiten*
-1. Um die Verarbeitung der ausgehenden Lieferungen zu automatisieren, müssen Sie auch die Funktion [Ausgehende Lieferungen aus Batchverarbeitungsaufträgen bestätigen](confirm-outbound-shipments-from-batch-jobs.md) aktivieren.
+    1. *Lagerort-App-Ereignisse verarbeiten*<br>(Ab Supply Chain Management Version 10.0.29 ist die Funktion obligatorisch und kann nicht deaktiviert werden.)
+    1. *Umlagerungsaufträge aus der Lagerort-App erstellen und verarbeiten*<br>(Ab Supply Chain Management Version 10.0.29 ist die Funktion obligatorisch und kann nicht deaktiviert werden.)
+1. Um die Verarbeitung der ausgehenden Lieferungen zu automatisieren, müssen Sie auch die Funktion [*Ausgehende Lieferungen aus Batchverarbeitungsaufträgen bestätigen*](confirm-outbound-shipments-from-batch-jobs.md) aktivieren. (Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden.)
 
 ## <a name="set-up-a-mobile-device-menu-item-to-create-transfer-orders"></a><a name="setup-warehouse-app-menu"></a>Auf einem mobilen Gerät eine Menüoption zur Erstellung von Umlagerungsaufträgen einrichten
 
@@ -307,11 +307,11 @@ Nein, Sie können einem Umlagerungsauftrag mit einem Lagerort-App-Ereignis **Uml
 
 #### <a name="how-can-i-find-existing-transfer-orders-to-be-used-via-the-select-transfer-order-button-in-the-warehouse-management-mobile-app-if-the-order-has-not-yet-been-created-in-the-backend-system"></a>Wie finde ich vorhandene Umlagerungsaufträge, die über die Schaltfläche „Umlagerungsauftrag auswählen“ in der Warehouse Management Mobile App verwendet werden können, wenn der Auftrag im Back-End-System noch nicht erstellt wurde?
 
-Derzeit können Sie in der App nicht nach Umlagerungsaufträgen suchen. Sie können die Umlagerungsauftragsnummern jedoch auf der Seite **Lagerot-App-Ereignisse** finden. Weitere Informationen finden Sie unter [Abfrage von Lagerort-App-Ereignissen](#inquire-the-warehouse-app-events).
+Sie können es Arbeitskräften ermöglichen, Umlagerungsauftragsnummern in der mobilen Warehouse Management App nachzuschlagen, indem Sie deren Funktion zur [Datenabfrage](warehouse-app-data-inquiry.md) verwenden. Sie könnten zum Beispiel ein Menüelement für die [Umleitung](warehouse-app-detours.md) für mobile Geräte erstellen, das die Daten abfragt, die auf der Seite **Ereignisse der Lagerort-App** des Webclients (`WHSMobileDeviceQueueMessageCollection`) im Rahmen des Schritts *Auftrag auswählen – MobileDeviceQueueMessageCollectionIdentifierId* angezeigt werden. Die Umlagerungsauftragsnummer stimmt mit dem im Feld **Bezeichner** angezeigten Wert überein. Siehe auch [Abfrage der Lagerort-App-Ereignisse](#inquire-the-warehouse-app-events).
 
 #### <a name="can-i-manually-select-the-transfer-order-number-to-be-used-from-the-warehouse-management-mobile-app"></a>Kann ich die zu verwendende Umlagerungsauftragsnummer über die Warehouse Management Mobile App manuell auswählen?
 
-Es werden nur automatisch generierte Umlagerungsauftragsnummern über Nummernkreise unterstützt.
+Es werden nur automatisch generierte Umlagerungsauftragsnummern über Nummernkreise unterstützt. Siehe auch die Antwort auf die vorherige Frage zur Einrichtung der Schaltfläche **Umlagerungsauftrag auswählen**. Weitere Informationen zum Ermitteln der Umlagerungsauftragsnummern finden Sie unter [Abfrage von Lagerort-App-Ereignissen](#inquire-the-warehouse-app-events).
 
 ### <a name="background-processing"></a>Hintergrundverarbeitung
 

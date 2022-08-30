@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: f8864ac22153908492b5e7c30a03617e6dc9d05a
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.openlocfilehash: 9b4b538e6d50013626739e19fee2a050b630bf7f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9166874"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334804"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.24 (Februar 2022)
 
@@ -48,7 +48,7 @@ Wenn Sie eine dieser Funktionen ein‑ oder ausschalten möchten, müssen Sie di
 | Produktionssteuerung | Bedarfsbasierte Materialverfügbarkeitsprüfung für Produktionsaufträge | Diese Funktion ermöglicht ein schnelleres Öffnen der Seite **Freigeben von Produktionsaufträgen**, die über den Arbeitsbereich **Produktionsbodenverwaltung** verfügbar ist. Ohne diese Funktion prüft das System beim Öffnen der Seite automatisch, ob für alle aufgelisteten Fertigungsaufträge Materialien verfügbar sind, was bei einer großen Auftragsmenge viel Zeit in Anspruch nehmen kann. Wenn diese Funktion aktiviert ist, stellt das System stattdessen eine Symbolleistenschaltfläche bereit, mit der Sie die Materialprüfung nur für ausgewählte Aufträge und bei Bedarf starten können. |
 | Produktionssteuerung | Materialverbrauch in der Produktionsausführungsoberfläche (nicht WMS) registrieren | Diese Funktion ermöglicht es Arbeitern, die Produktionsausführungsoberfläche zu verwenden, um Materialverbrauch, Chargennummern und Seriennummern zu registrieren. Diese Funktion unterstützt nur Artikel, die nicht für die Verwendung von Lagerverwaltungsprozessen (WMS) aktiviert sind. Die Unterstützung für WMS-fähige Elemente ist für eine zukünftige Version geplant.<p>Einige Hersteller, insbesondere in der Prozessindustrie, müssen den Materialverbrauch pro Charge oder Produktionsauftrag explizit erfassen. Mitarbeiter können beispielsweise eine Waage verwenden, um die Menge des bei der Arbeit verbrauchten Materials zu wiegen. Um eine vollständige Rückverfolgbarkeit des Materials zu gewährleisten, müssen diese Organisationen auch registrieren, welche Chargennummern bei der Herstellung jedes Produkts verbraucht wurden. |
 | Produktionssteuerung | Fertigmeldung bei Arbeitsauslastung der Lagerortverwaltung für die Cloud- und Edge-Skalierungseinheit | Mit dieser Funktion können Mitarbeiter die mobile Warehouse Management-App verwenden, um einen Produktions‑ oder Batchauftrag als abgeschlossen zu melden, wenn die App für eine Arbeitsauslastung der Lagerortverwaltung auf einer Cloud‑ oder Edge-Skalierungseinheit ausgeführt wird. Weitere Informationen finden Sie unter [Fertig melden und auf einer Skalierungseinheit einlagern](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF). |
-| Lagerortverwaltung | Neue Workbenchseiten zur Ladungsplanung | Aktiviert die zwei neuen Ladungsplanungs-Workbenchseiten: **Workbench für eingehende Ladungsplanung** und **Workbench für ausgehende Ladungsplanung**. |
+| Lagerortverwaltung | Neue Workbenchseiten zur Ladungsplanung | Fügt zwei neue Seiten für die Ladungsplanung hinzu: **Eingehende Ladung Planungswerkbank** und **Ausgehende Ladung Planungswerkbank**. |
 
 ## <a name="new-and-updated-documentation-resources"></a>Neue und aktualisierte Dokumentationsressourcen
 

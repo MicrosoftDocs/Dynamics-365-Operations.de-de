@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 7f5691c5784b7b381ff805b0431d8adb1a25f1cb
-ms.sourcegitcommit: 8d072505f66f507aafbaae65bedf3b530eb6cb7b
+ms.openlocfilehash: d95cd9b55f473bed2e3fe69e63837040385f03ac
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9266397"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334744"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10029-october-2022"></a>Vorschauversion von Dynamics 365 Supply Chain Management 10.0.29 (Oktober 2022)
 
@@ -74,10 +74,7 @@ In der Tabelle sind auch Funktionen aufgeführt, die zuvor in der öffentlichen 
 
 | Modul | Funktionsname | Neuer Featurezustand |
 | --- | --- | --- |
-| Anlagenverwaltung | [Regeln zur Gruppierung von Arbeitsaufträgen bei Ausführung eines Wartungsplans anwenden](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md) | Obligatorisch |
 | Anlagenverwaltung | [Anlagenverwaltungsfunktion für die Produktionsumgebungs-Ausführungsschnittstelle](../production-control/production-floor-execution-configure.md) | Obligatorisch |
-| Anlagenverwaltung | [Zählerbasierte Wartungsverbesserungen](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md) | Standardmäßig aktiviert |
-| Anlagenverwaltung | [Arbeitsauftragsfakturierung](../asset-management/integration-to-project-management-and-accounting/customer-billing.md) | Obligatorisch |
 | Kostenverwaltung | [Beschriftung der Stornierung bei Abschluss und Anpassung in „Stornieren“ ändern](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse) | Obligatorisch |
 | Kostenverwaltung | Details der Stücklistenkalkulation-Nachkalkulationsversionen bereinigen | Obligatorisch |
 | Kostenverwaltung | [Vergleich der Artikelpreise für Lagerung](../cost-management/compare-item-price.md) | Obligatorisch |
@@ -97,12 +94,12 @@ In der Tabelle sind auch Funktionen aufgeführt, die zuvor in der öffentlichen 
 | Lager- und Lagerortverwaltung | (China) Physischen Zugang und Abgangskosten von den monatlichen Durchschnittskosten ausschließen | Standardmäßig aktiviert |
 | Lager- und Lagerortverwaltung | [Lagerbestandserfassungs-Genehmigungsworkflow](../inventory/inventory-journal-workflow.md) | Obligatorisch |
 | Lager- und Lagerortverwaltung | [Speicher für den Bericht zum verfügbaren Lagerbestand](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage) | Obligatorisch |
-| Lager- und Lagerortverwaltung | [Gespeicherte Ansichten für die Bestandsverwaltung](saved-views-scm.md) | Obligatorisch |
+| Lager- und Lagerortverwaltung | [Gespeicherte Ansichten für die Lagerverwaltung](saved-views-scm.md) | Obligatorisch |
 | Lager- und Lagerortverwaltung | Umlagerungsauftragsstornierung | Obligatorisch |
 | Lager- und Lagerortverwaltung | Maßeinheit und Einheitsmenge in Bestandserfassungen verwenden | Obligatorisch |
 | Lager- und Lagerortverwaltung | Bestandserfassung entsperren | Obligatorisch |
 | Fertigung | [Automatische Kommissionierung von für den Lagerort aktivierten Materialien für automatisch gebuchte Kommissionierlisten](whats-new-scm-10-0-23.md) | Allgemein verfügbar |
-| Fertigung | Anzeige von Lagerungsdimensionen in der Materialliste für Produktionsarbeitsplan-Arbeitsgänge aktivieren | Standardmäßig aktiviert |
+| Fertigung | Anzeige von Lagerungsdimensionen in der Materialliste für Produktionsarbeitsplan-Arbeitsgänge aktivieren | Obligatorisch |
 | Fertigung | [Aktivieren, um Chargen- und Seriennummern einzugeben, während die Fertigmeldung vom Einzelvorgangs-Kartengerät abgeschlossen wird](../production-control/report-finished-job-device.md) | Standardmäßig aktiviert |
 | Fertigung | Verbesserte Artikelgewichtsmengenkommissionierung für die Produktion | Standardmäßig aktiviert |
 | Fertigung | [Einzelvorgangssuche für die Produktionsausführungsoberfläche](../production-control/production-floor-execution-configure.md) | Obligatorisch |
@@ -127,20 +124,19 @@ In der Tabelle sind auch Funktionen aufgeführt, die zuvor in der öffentlichen 
 | Produktprogrammplanung | [Umwandlung von Bestellvorschlägen mit Filtern](../master-planning/planning-optimization/planned-order-firming.md) | Obligatorisch |
 | Produktprogrammplanung | [Geplante Produktionsaufträge für die Planungsoptimierung](../master-planning/planning-optimization/production-planning.md) | Obligatorisch |
 | Produktprogrammplanung | [Handelsvereinbarungen (Einkauf) für die Planungsoptimierung](../master-planning/planning-optimization/purchase-trade-agreement.md) | Obligatorisch |
-| Produktprogrammplanung | Ressourcenplanung mit Wartung | Obligatorisch |
 | Produktprogrammplanung | [Gespeicherte Ansichten für Bestellvorschläge](saved-views-scm.md) | Obligatorisch |
 | Beschaffung | Stellt Von- und Bis-Beträge bei Bestellungen in Rechnung | Obligatorisch |
 | Beschaffung | Schaltfläche zum Zurücksetzen der Bestellanforderungsverteilung deaktivieren | Standardmäßig aktiviert |
 | Beschaffung | [Zurücksetzen beschaffungsbezogener Workflows aktivieren](whats-new-scm-10-0-20.md) | Standardmäßig aktiviert |
 | Beschaffung | [Anzahl der Bestellungszeilen pro Stapelverarbeitungsaufgabe begrenzen](whats-new-scm-10-0-27.md) | Standardmäßig aktiviert |
 | Beschaffung | [Finanzdimensionen des Kreditors mit Finanzdimension der aktiven Dimensionsverknüpfung in der Bestellung zusammenführen](whats-new-scm-10-0-25.md) | Obligatorisch |
+| Beschaffung | [Registrierte Mengen von gelagerten Produkten und Restmengen von nicht gelagerten Produkten für Eingänge und Kreditorenrechnungen buchen](whats-new-scm-10-0-26.md) | Allgemein verfügbar |
 | Beschaffung | [Übermäßige Inanspruchnahme von allgemeinen Budgetreservierungen verhindern, wenn mehrere Bestellanforderungen im Workflow sind](whats-new-scm-10-0-21.md) | Standardmäßig aktiviert |
 | Beschaffung | [Zuständige Partei für Kaufvertrag](../procurement/purchase-agreements.md) | Obligatorisch |
 | Beschaffung | [Gespeicherte Ansichten für Bestellungen](saved-views-scm.md) | Obligatorisch |
 | Produktinformationsverwaltung | Vorverarbeitung des Stücklistenberichts, um Zeitüberschreitungen zu vermeiden | Obligatorisch |
 | Produktinformationsverwaltung | Standardfinanzdimensionen separat bei Verwendung von Artikelvorlagen | Obligatorisch |
 | Produktinformationsverwaltung | Produktdimensionsgruppen für Artikelvorlagen aktivieren | Obligatorisch |
-| Produktinformationsverwaltung | [Verbesserte Attributvererbung für Konstruktionsänderungsmanagement](../engineering-change-management/engineering-attributes-and-search.md) | Obligatorisch |
 | Produktinformationsverwaltung | Verbesserungen bei der Artikel-Strichcode-Entität | Obligatorisch |
 | Produktinformationsverwaltung | Produktvariantennamen basierend auf der Bezeichnung neu generieren | Obligatorisch |
 | Produktinformationsverwaltung | [Gespeicherte Ansichten für freigegebene Produkte](saved-views-scm.md) | Obligatorisch |
@@ -161,27 +157,30 @@ In der Tabelle sind auch Funktionen aufgeführt, die zuvor in der öffentlichen 
 | Vertrieb und Marketing | [Auftragsbestätigung mit nur einem Klick](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/single-click-sales-order-confirmation) | Obligatorisch |
 | Transportverwaltung | Nichtübereinstimmung von Frachtbriefen aus Frachtrechnungspositionen ohne gebuchte Kreditorenrechnungserfassung zulassen | Standardmäßig aktiviert |
 | Transportverwaltung | [Erstellung einer Erfassung vom Typ „Kreditorenrechnung“ beim Verwerfen eines Frachtbriefs aktivieren](whats-new-scm-10-0-20.md) | Standardmäßig aktiviert |
-| Transportverwaltung | [Kleinpaketlieferung](../warehousing/small-parcel-shipping.md) | Standardmäßig aktiviert |
+| Transportverwaltung | [Kleinpaketlieferung](../warehousing/small-parcel-shipping.md) | Obligatorisch |
 | Transportverwaltung | [USMCA-Zertifizierung des Ursprungsdokuments](../transportation/usmca-certification-of-origin.md) | Standardmäßig aktiviert |
 | Lagerortverwaltung | [Zusätzliche Lagerplatzzone](../warehousing/additional-location-zones.md) | Obligatorisch |
 | Lagerortverwaltung | [Arbeit stornieren](../warehousing/cancel-warehouse-work.md) | Obligatorisch |
-| Lagerortverwaltung | [Lieferung konsolidieren](../warehousing/configure-shipment-consolidation-policies.md) | Standardmäßig aktiviert |
+| Lagerortverwaltung | [Lieferung konsolidieren](../warehousing/configure-shipment-consolidation-policies.md) | Obligatorisch |
 | Lagerortverwaltung | [Umlagerungsaufträge aus der Lagerort-App erstellen und verarbeiten](../warehousing/create-transfer-order-from-warehouse-app.md) | Obligatorisch |
 | Lagerortverwaltung | Crossdockingvorlagen mit Lagerplatzrichtlinien | Standardmäßig aktiviert |
-| Lagerortverwaltung | [Einlagerungsarbeit von ASNs entkoppeln](whats-new-scm-10-0-21.md) | Standardmäßig aktiviert |
-| Lagerortverwaltung | [Verzögerte Put-Vorgänge](../warehousing/deferred-processing-manual-inventory-movement.md) | Standardmäßig aktiviert |
+| Lagerortverwaltung | [Einlagerungsarbeit von ASNs entkoppeln](whats-new-scm-10-0-21.md) | Obligatorisch |
+| Lagerortverwaltung | [Verzögerte Put-Vorgänge](../warehousing/deferred-processing-manual-inventory-movement.md) | Obligatorisch |
 | Lagerortverwaltung | Verzögerte Einlagerung: Container | Standardmäßig aktiviert |
 | Lagerortverwaltung | Verzögerte Einlagerungsverarbeitung - für die Prüfvorlagenfunktion mit dem Auslöseereignis Vorherig aktivieren | Obligatorisch |
 | Lagerortverwaltung | [Erwartete Zugänge aus Qualitätsprüfungsaufträgen mit gesperrtem Beispielbestand deaktivieren](../inventory/inventory-blocking.md) | Standardmäßig aktiviert |
 | Lagerortverwaltung | Schnelle Überprüfung für mobile Geräte am Lagerort aktivieren | Obligatorisch |
-| Lagerortverwaltung | [Flexible Reservierung von Dimensionen auf Lagerortebene](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Standardmäßig aktiviert |
-| Lagerortverwaltung | [Flexible auftragsgebundene Kennzeichenreservierung](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Standardmäßig aktiviert |
-| Lagerortverwaltung | [Ausgehende Workloadvisualisierung](../warehousing/outbound-workload-visualization.md) | Obligatorisch |
+| Lagerortverwaltung | [Erweiterter Parser für GS1-Barcodes](../warehousing/gs1-barcodes.md) | Allgemein verfügbar |
+| Lagerortverwaltung | [Flexible auftragsgebundene Kennzeichenreservierung](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Obligatorisch |
+| Lagerortverwaltung | [Flexible Reservierung von Dimensionen auf Lagerortebene](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Obligatorisch |
 | Lagerortverwaltung | [Nutzung von Lagerplatz für Positionskonsolidierung](../warehousing/item-consolidation-location-utilization.md) | Standardmäßig aktiviert |
 | Lagerortverwaltung | Kennzeichenempfangsverlauf | Standardmäßig aktiviert |
 | Lagerortverwaltung | [Manuelle Lieferungskonsolidierung](../warehousing/consolidate-shipments-manual-workbench.md) | Standardmäßig aktiviert |
+| Lagerortverwaltung | [Dienst zur manuellen Auswahl von Umlagerungszeilen für Admins oder ähnliche vertrauenswürdige Benutzer](whats-new-scm-10-0-28.md) | Allgemein verfügbar |
 | Lagerortverwaltung | [Materialhandhabung Geräteschnittstelle](../warehousing/mhax.md) | Obligatorisch |
-| Lagerortverwaltung | [Geplantes Crossdocking](../warehousing/planned-cross-docking.md) | Standardmäßig aktiviert |
+| Lagerortverwaltung | [Neue Workbenchseiten zur Ladungsplanung](whats-new-scm-10-0-24.md) | Allgemein verfügbar |
+| Lagerortverwaltung | [Ausgehende Workloadvisualisierung](../warehousing/outbound-workload-visualization.md) | Obligatorisch |
+| Lagerortverwaltung | [Geplantes Crossdocking](../warehousing/planned-cross-docking.md) | Obligatorisch |
 | Lagerortverwaltung | [Lagerort-App-Ereignisse verarbeiten](../warehousing/warehouse-app-events.md) | Obligatorisch |
 | Lagerortverwaltung | Abfrageerweiterung für die Arbeitsvorlage zur Einlagerung des Co-Produkts und des Nebenprodukts | Obligatorisch |
 | Lagerortverwaltung | [Mengen bei Freigabe an Lager auf nächste Verkaufseinheit abrunden](whats-new-scm-10-0-19.md) | Obligatorisch |
@@ -190,13 +189,14 @@ In der Tabelle sind auch Funktionen aufgeführt, die zuvor in der öffentlichen 
 | Lagerortverwaltung | [Gespeicherte Ansicht für die Zyklusverarbeitung](saved-views-scm.md) | Obligatorisch |
 | Lagerortverwaltung | [Gespeicherte Ansichten für die Ladungsverarbeitung](saved-views-scm.md) | Obligatorisch |
 | Lagerortverwaltung | [Gespeicherte Ansichten für die Lieferungsverarbeitung](saved-views-scm.md) | Obligatorisch |
-| Lagerortverwaltung | Lieferartdetails für Lieferungszyklus | Standardmäßig aktiviert |
+| Lagerortverwaltung | [GS1-Barcodes scannen](../warehousing/gs1-barcodes.md) | Allgemein verfügbar |
+| Lagerortverwaltung | Lieferartdetails für Lieferungszyklus | Obligatorisch |
 | Lagerortverwaltung | [Gemischte Einheiten platzieren](whats-new-scm-10-0-21.md) | Obligatorisch |
 | Lagerortverwaltung | [Schnellere API für das Schließen/erneute Öffnen von Containern auf Verpackungsstation verwenden](whats-new-scm-10-0-21.md) | Standardmäßig aktiviert |
 | Lagerortverwaltung | [Für Wiederbeschaffungsaufträge ausgewählte Vorlagen überprüfen](whats-new-scm-10-0-20.md) | Standardmäßig aktiviert |
-| Lagerortverwaltung | [Höher gestufte Felder der Warehouse-App](../warehousing/warehouse-app-promoted-fields.md) | Standardmäßig aktiviert |
-| Lagerortverwaltung | [Schrittanweisungen für die Lagerort-App](../warehousing/mobile-app-titles-instructions.md) | Standardmäßig aktiviert |
-| Lagerortverwaltung | [Status des Lagerplatzes an einem Lagerort](../warehousing/warehouse-location-status.md) | Standardmäßig aktiviert |
+| Lagerortverwaltung | [Höher gestufte Felder der Warehouse-App](../warehousing/warehouse-app-promoted-fields.md) | Obligatorisch |
+| Lagerortverwaltung | [Schrittanweisungen für die Lagerort-App](../warehousing/mobile-app-titles-instructions.md) | Obligatorisch |
+| Lagerortverwaltung | [Status des Lagerplatzes an einem Lagerort](../warehousing/warehouse-location-status.md) | Obligatorisch |
 | Lagerortverwaltung | [Umleitung für Warehouse Management-App](../warehousing/warehouse-app-detours.md) | Standardmäßig aktiviert |
 | Lagerortverwaltung | [Zyklus-Batchauftragsdetails](../warehousing/wave-processing.md) | Obligatorisch |
 | Lagerortverwaltung | [Wellenausführungsbenachrichtigungen](../warehousing/wave-execution-notifications.md) | Obligatorisch |

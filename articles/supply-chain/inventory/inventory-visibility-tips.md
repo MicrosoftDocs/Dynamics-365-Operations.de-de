@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9f571d353f99c91776424bc2fa3405f73b2bae0a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3bdd161815a15d5c39b3c0afc176a288c8d9055a
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885956"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306084"
 ---
 # <a name="inventory-visibility-tips"></a>Tipps zur Inventory Visibility
 
@@ -35,5 +35,8 @@ Hier finden Sie einige Tipps, die Sie bei der Einrichtung und Verwendung des Bes
 - Die [Partitionskonfiguration](inventory-visibility-configuration.md#partition-configuration) besteht derzeit aus zwei Basis Dimensionen (`SiteId` und `LocationId`), die angeben, wie die Daten verteilt werden. Vorgänge unter der gleichen Partition können eine höhere Leistung zu geringeren Kalkulationen liefern. Die Lösung enthält diese Partitionskonfiguration standardmäßig. Daher *müssen Sie sie nicht selbst definieren*. Passen Sie die Standardkonfiguration der Partition nicht an. Wenn Sie es löschen oder ändern, werden Sie wahrscheinlich einen unerwarteten Fehler verursachen.
 - Basisdimensionen, die in der Partitionskonfiguration definiert sind, sollten nicht in der [Produktindexhierarchie-Konfiguration](inventory-visibility-configuration.md#index-configuration) definiert werden.
 - Ihre [Produktindexhierarchie-Konfiguration](inventory-visibility-configuration.md#index-configuration) muss mindestens eine Indexhierarchie haben (die beispielsweise die Basisdimension `Empty` enthält), andernfalls schlagen Abfragen mit dem Fehler „Es wurde keine Indexhierarchie festgelegt“ fehl.
+- Die Datenquelle `@iv` ist eine vordefinierte Datenquelle und die in `@iv` mit dem Präfix `@` festgelegten physischen Measures sind vordefinierte Measures. Diese Measures sind eine vordefinierte Konfiguration für die Zuordnungsfunktion, also ändern oder löschen Sie sie nicht, da Sie sonst wahrscheinlich auf unerwartete Fehler stoßen, wenn Sie die Zuordnungsfunktion verwenden.
+- Sie können der vordefinierten berechneten Measure `@iv.@available_to_allocate` neue physische Measures hinzufügen, aber Sie dürfen ihren Namen nicht ändern.
+- Wenn Sie eine Supply Chain Management-Datenbank wiederherstellen, enthält Ihre wiederhergestellte Datenbank möglicherweise Daten, die nicht mehr mit Daten übereinstimmen, welche die Bestandstransparenz vorher mit Dataverse synchronisiert hat. Dieser Datenkonflikt kann Systemfehler und andere Probleme verursachen. Daher ist es wichtig, dass Sie immer alle verbundenen Bestandstransparenzdaten aus Dataverse bereinigen, bevor Sie eine Supply Chain Management-Datenbank wiederherstellen. Weitere Details finden Sie unter [Bestandstransparenzdaten aus Dataverse bereinigen, bevor Sie die Supply Chain Management-Datenbank wiederherstellen](inventory-visibility-setup.md#restore-environment-database).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

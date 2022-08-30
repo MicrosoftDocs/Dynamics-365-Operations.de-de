@@ -2,7 +2,7 @@
 title: Kleinpaketlieferung
 description: Dieser Artikel enthält Informationen zur Kleinpaketlieferung. Diese Funktion aktiviert Microsoft Dynamics 365 Supply Chain Management, um Details zu einem gepackten Container an den Spediteur zu senden und dann ein Adressetikett, einen Frachtsatz und eine Sendungsverfolgungsnummer von diesem Spediteur zu erhalten.
 author: Mirzaab
-ms.date: 01/08/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 6ccc9c795e2da121acf9c0809aef99a5f9d5889e
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: b2adde2b81ed881a3c81193a2220fbe569069c7c
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219717"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336154"
 ---
 # <a name="small-parcel-shipping"></a>Kleinpaketlieferung
 
@@ -34,12 +34,9 @@ Der übermittelte Frachtsatz wird dem zugehörigen Auftrag als sonstige Gebühr 
 
 Bevor Sie die Kleinpaketlieferung verwenden können, müssen Sie sie in der Funktionsverwaltung aktivieren, Ihr Traifmodul hinzufügen und die Module **Transportverwaltung** und **Lagerortverwaltung** entsprechend einrichten.
 
-### <a name="turn-on-the-sps-feature"></a>Aktivieren der Kleinpaketlieferung
+### <a name="turn-the-sps-feature-on-or-off"></a>Die SPS-Funktion ein- oder ausschalten
 
-Bevor Sie die Kleinpaketlieferung nutzen können, muss sie in Ihrem System aktiviert werden. Administratoren können den Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktion zu prüfen und sie bei Bedarf einzuschalten. Dort wird die Funktion folgendermaßen aufgelistet:
-
-- **Modul:** *Transportverwaltung*
-- **Funktionsname:** *Kleinpaketlieferung*
+Um diese Funktion nutzen zu können, muss sie für Ihr System aktiviert werden. Ab Supply Chain Management Version 10.0.29 ist die Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.29 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Kleinpaketlieferung* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="deploy-and-set-up-rate-engines"></a>Bereitstellen und Einrichten von Tarifmodulen
 

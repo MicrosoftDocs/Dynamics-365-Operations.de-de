@@ -2,7 +2,7 @@
 title: Geplantes Crossdocking
 description: In diesem Artikel wird das erweiterte geplante Crossdocking beschrieben, bei dem die für eine Bestellung erforderliche Lagerbestandsmenge direkt vom Eingang oder der Erstellung zum richtigen ausgehenden Dock oder Stagingbereich geleitet wird. Der gesamte verbleibende Lagerbestand aus der eingehenden Quelle wird durch den regulären Einlagerungsprozess an den richtigen Lagerort geleitet.
 author: Mirzaab
-ms.date: 07/01/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 4f379b3cdb6830f989199afde7d751842047df79
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: b530cc1403458775fd330e826a32417d3b03bf25
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070288"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334564"
 ---
 # <a name="planned-cross-docking"></a>Geplantes Crossdocking
 
@@ -37,10 +37,10 @@ Zum Zeitpunkt des Eingangs eingehender Bestellungen erkennt das Crossdocking-Set
 
 ## <a name="turn-on-the-planned-cross-docking-features"></a>Schalten Sie die Funktionen für das geplante Cross Docking ein
 
-Wenn Ihr System nicht bereits die in diesem Artikel beschriebenen Funktionen enthält, gehen Sie zu [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und schalten Sie die folgenden Funktionen in der folgenden Reihenfolge ein:
+Wenn Sie Supply Chain Management Version 10.0.28 oder früher ausführen, müssen Sie möglicherweise geplantes Crossdocking aktivieren, bevor Sie es verwenden können. Gehen Sie zur [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktivieren Sie die folgenden Funktionen in der folgenden Reihenfolge:
 
-1. *Geplantes Crossdocking*
-1. *Crossdockingvorlagen mit Lagerplatzrichtlinien*
+1. *Geplantes Crossdocking*<br>(Ab Supply Chain Management Version 10.0.29 ist diese Funktion obligatorisch und kann nicht deaktiviert werden.)
+1. *Crossdockingvorlagen mit Lagerplatzrichtlinien*<br>(Ab Supply Chain Management Version 10.0.29 ist diese Funktion standardmäßig aktiviert.)
     > [!NOTE]
     > Diese Funktion aktiviert das **Richtliniencode**, das in der Crossdocking-Vorlage angegeben werden soll, ähnlich wie Sie Wiederaufbauvorlagen einrichten. Durch Aktivieren dieser Funktion können Sie keinen Richtliniencode in die Crossdocking-Arbeitsvorlagenzeilen für die letzte *Einlagern*-Zeile. Dies stellt sicher, dass der endgültige Einlagerungsort während der Arbeitserstellung bestimmt werden kann, bevor Arbeitsvorlagen berücksichtigt werden.
 
@@ -92,7 +92,7 @@ Das geplante Crossdocking wird als Ladebuchungsmethode implementiert. Nachdem Si
 
     - **Richtliniencode:** Lassen Sie dieses Feld leer
 
-        Diese Option wird durch die Funktion *Crossdockingvorlagen mit Lagerplatzrichtlinien* aktiviert. Das System benutzt Lagerplatzrichtlinien, um den besten Lagerplatz zu bestimmen, an den der Bestand beim Crossdocking gebracht werden soll. Sie können sie festlegen, indem Sie jeder relevanten Cross-Docking-Vorlage einen Richtliniencode zuweisen. Beachten Sie, dass bei festgelegtem Richtliniencode das System die Lagerplatzrichtlinie nach dem Richtliniencode sucht, wenn Arbeit erstellt wird. Auf diese Weise können Sie Lagerplatzrichtlinien einschränken, die für eine bestimmte Crossdockingvorlage verwendet werden.
+        Diese Option wird durch die Funktion *Crossdocking-Vorlagen mit Lagerplatzrichtlinien* aktiviert (ab Supply Chain Management Version 10.0.29 ist die Funktion standardmäßig aktiviert). Das System benutzt Lagerplatzrichtlinien, um den besten Lagerplatz zu bestimmen, an den der Bestand beim Crossdocking gebracht werden soll. Sie können sie festlegen, indem Sie jeder relevanten Cross-Docking-Vorlage einen Richtliniencode zuweisen. Beachten Sie, dass bei festgelegtem Richtliniencode das System die Lagerplatzrichtlinie nach dem Richtliniencode sucht, wenn Arbeit erstellt wird. Auf diese Weise können Sie Lagerplatzrichtlinien einschränken, die für eine bestimmte Crossdockingvorlage verwendet werden.
 
     - **Zeitfenster validieren:** *Ja*
 

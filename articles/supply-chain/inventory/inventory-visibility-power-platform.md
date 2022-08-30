@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: db158e3b6ae76f69149db04096f99d3dc4251146
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a360b8beaad2bf6916c22765131e37f90e40282b
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895756"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306172"
 ---
 # <a name="use-the-inventory-visibility-app"></a>Die Inventory Visibility-App verwenden
 
@@ -70,10 +70,24 @@ Um eine Reservierungsanfrage zu stellen, müssen Sie einen Wert in den Anfragek�
 
 ## <a name="inventory-summary"></a><a name="inventory-summary"></a>Bestandszusammenfassung
 
-**Bestandsübersicht** ist eine angepasste Ansicht für die Entität *Inventory OnHand Sum*. Sie bietet eine Bestandszusammenfassung für Produkte zusammen mit allen Dimensionen. Die Bestandsübersicht wird regelmäßig von der Bestandsanzeige alle 15 Minuten synchronisiert. Bevor Sie auf der Registerkarte **Bestandsübersicht** Daten sehen können, müssen Sie die Funktion *OnHandMostSpecificBackgroundService* auf der Registerkarte **Funktionsverwaltung** aktivieren und **Konfiguration aktualisieren** auswählen
+Die Seite **Bestandszusammenfassung** bietet eine Bestandszusammenfassung für Produkte zusammen mit allen Dimensionen. Es handelt sich um eine angepasste Ansicht für die Entität *Inventory OnHand Sum*. Die Bestandszusammenfassung wird regelmäßig von der Bestandstransparenz synchronisiert.
+
+### <a name="enable-the-inventory-summary-and-set-the-synchronization-frequency"></a>Die Bestandszusammenfassung aktivieren und die Synchronisierungshäufigkeit festlegen
+
+Um die Seite **Bestandszusammenfassung** zu aktivieren und die Synchronisierungshäufigkeit festzulegen, gehen Sie wie folgt vor:
+
+1. Öffnen Sie die Seite **Konfiguration**.
+1. Öffnen Sie die Registerkarte **Funktionsverwaltung und -einstellungen**.
+1. Stellen Sie den Umschalter für die Funktion **OnHandMostSpecificBackgroundService** auf *Ja*.
+1. Wenn die Funktion aktiviert ist, wird der Abschnitt **Dienstkonfiguration** verfügbar und enthält eine Zeile zum Konfigurieren der Funktion **OnHandMostSpecificBackgroundService**. Mit dieser Einstellung können Sie die Häufigkeit auswählen, mit der Bestandszusammenfassungsdaten synchronisiert werden. Verwenden Sie die **Hoch**- und **Runter**-Schaltflächen in der Spalte **Wert**, um die Zeit zwischen den Synchronisierungen zu ändern (die bis zu 5 Minuten betragen kann). Wählen Sie dann **Speichern** aus.
+1. Wählen Sie **Konfiguration aktualisieren**, um alle Änderungen zu speichern.
+
+![OnHandMostSpecificBackgroundService-Einstellung](media/inventory-visibility-ohms-freq.PNG "OnHandMostSpecificBackgroundService-Einstellung")
 
 > [!NOTE]
-> Die Funktion *OnHandMostSpecificBackgroundService* verfolgt nur Produktänderungen, die nach dem Aktivieren der Funktion aufgetreten sind. Daten für Produkte, die sich seit dem Aktivieren des Features nicht geändert haben, werden nicht aus dem Inventarservice-Cache mit der Dataverse-Umgebung synchronisiert. Wenn auf der Seite **Bestandszusammenfassung** nicht alle erwarteten Bestandsinformationen angezeigt werden, wechseln Sie zu **Bestandsverwaltung > Regelmäßige Aufgaben > Integration** der Bestandssichtbarkeit, deaktivieren Sie den Stapelverarbeitungsauftrag und aktivieren Sie ihn erneut. Dadurch wird der anfängliche Push ausgeführt, und alle Daten werden in den nächsten 15 Minuten mit der Entität *Lagerbestandssumme* synchronisiert. Wenn Sie diese Funktion verwenden möchten, empfehlen wir Ihnen, sie zu aktivieren, bevor Sie manuelle Änderungen vornehmen und den Batchauftrag **Integration der Bestandssichtbarkeit** aktivieren.
+> Die Funktion *OnHandMostSpecificBackgroundService* verfolgt nur Produktänderungen, die nach dem Aktivieren der Funktion aufgetreten sind. Daten für Produkte, die sich seit dem Aktivieren des Features nicht geändert haben, werden nicht aus dem Inventarservice-Cache mit der Dataverse-Umgebung synchronisiert. Wenn auf der Seite **Bestandszusammenfassung** nicht alle erwarteten Bestandsinformationen angezeigt werden, wechseln Sie zu **Lagerverwaltung > Regelmäßige Aufgaben > Integration** der Bestandssichtbarkeit, deaktivieren Sie den Stapelverarbeitungsauftrag und aktivieren Sie ihn erneut. Dadurch wird der anfängliche Push ausgeführt, und alle Daten werden in den nächsten 15 Minuten mit der Entität *Lagerbestandssumme* synchronisiert. Wenn Sie diese Funktion verwenden möchten, empfehlen wir Ihnen, sie zu aktivieren, bevor Sie manuelle Änderungen vornehmen und den Batchauftrag **Integration der Bestandssichtbarkeit** aktivieren.
+
+### <a name="work-with-the-inventory-summary"></a>Mit der Bestandszusammenfassung arbeiten
 
 Mit der Option **Erweiterter Filter** von Dataverse können Sie eine persönliche Ansicht erstellen, die die Zeilen anzeigt, die für Sie wichtig sind. Mit den erweiterten Filteroptionen können Sie eine breite Palette von Ansichten erstellen, von einfach bis komplex. Sie lassen Sie auch gruppierte und verschachtelte Bedingungen zu den Filtern hinzufügen. Um mehr über die Verwendung von **Erweiterter Filter** zu erfahren, siehe [Bearbeiten oder Erstellen von persönlichen Ansichten mit erweiterten Raster-Filtern](/powerapps/user/grid-filters-advanced).
 

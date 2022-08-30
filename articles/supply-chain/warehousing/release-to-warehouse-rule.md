@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: e3d709a185796152b03f8ed83088cb5c3d137bae
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d39ce6e07a789ff4d605a01b1d5053be150d2727
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219747"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336244"
 ---
 # <a name="release-to-warehouse-rule"></a>Lagerortfreigaberegel
 
@@ -30,14 +30,14 @@ Die Funktion *Lagerortfreigaberegel* bietet Flexibilität bei der Freigabe an de
 
 ### <a name="turn-on-the-feature"></a>Aktivieren Sie die Funktion
 
-Bevor Sie die Funktion *Lagerortfreigaberegel* verwenden können, muss sie in Ihrem System aktiviert sein. Administratoren können mit den Einstellungen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie gegebenenfalls aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+Bevor Sie die Funktion *Lagerortfreigaberegel* verwenden können, muss sie für Ihr System aktiviert sein. Administratoren können mit den Einstellungen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie gegebenenfalls aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
 
 - **Module:** *Lagerortverwaltung*
 - **Funktionsname:** *Lagerortfreigaberegel*
 
 ### <a name="initialize-the-feature"></a>Funktion initialisieren
 
-Nachdem die Funktion in Ihrem System aktiviert wurde, müssen Sie sie initialisieren, um die Regel für alle Lagerorte auf den richtigen Anfangsstatus zu setzen.
+Nachdem die Funktion für Ihr System aktiviert wurde, müssen Sie sie initialisieren, um die Regel für alle Lagerorte auf den richtigen Anfangsstatus zu setzen.
 
 - Für Lagerorte, die nicht für die Lagerortverwaltung aktiviert sind, wird die Regel zunächst auf **Nicht zutreffend** festgelegt.
 - Für Lagerorte, die für die Lagerortverwaltung aktiviert sind, wird die Regel zunächst auf **Teilweise Reservierung zulassen** festgelegt.

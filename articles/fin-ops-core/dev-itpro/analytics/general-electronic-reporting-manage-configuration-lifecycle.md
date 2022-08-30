@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 58801
 ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
 ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
-ms.openlocfilehash: fe23d4cb2b293af466df2236b153974f95f636f8
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0209679c9882d87edab68d043fba9e7b3400a2a2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9271582"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337194"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Den Lebenszyklus der elektronischen Berichterstellungskonfiguration (ER) verwalten
 
@@ -84,7 +84,7 @@ EB-Konfigurationen, die in der Testumgebung entworfene wurden, können in die Te
 
 ## <a name="data-persistence-consideration"></a>Berücksichtigung der Datenpersistenz
 
-Sie können verschiedene [Versionen](general-electronic-reporting.md#component-versioning) einer EB-[Konfiguration](general-electronic-reporting.md#Configuration) einzeln in Ihre Instanz von Finance [importieren](tasks/er-import-configuration-lifecycle-services.md). Wenn eine neue Version einer EB-Konfiguration importiert wird, steuert das System den Inhalt der Entwurfsversion dieser Konfiguration:
+Sie können verschiedene Versionen einer EB-[Konfiguration](general-electronic-reporting.md#Configuration) einzeln in Ihre Instanz von Finance [importieren](tasks/er-import-configuration-lifecycle-services.md). Wenn eine neue Version einer EB-Konfiguration importiert wird, steuert das System den Inhalt der Entwurfsversion dieser Konfiguration:
 
 - Wenn die importierte Version niedriger als die höchste Version dieser Konfiguration in der aktuellen Instanz von Finance ist, bleibt der Inhalt der Entwurfsversion dieser Konfiguration unverändert.
 - Wenn die importierte Version höher ist als jede andere Version dieser Konfiguration in der aktuellen Instanz von Finance, wird der Inhalt der importierten Version in die Entwurfsversion dieser Konfiguration kopiert, damit Sie die letzte abgeschlossene Version weiter bearbeiten können.
@@ -112,7 +112,7 @@ EB-Konfigurationen können so konfiguriert werden, dass sie von anderen Konfigur
 
 ![Abgeleitete EB-Formatkonfiguration auf der Seite „Konfigurationen“.](./media/ger-configuration-lifecycle-img1.png)
 
-Wenn Sie mit der Gestaltung des Formats fertig sind, können Sie den Status Ihrer anfänglichen [Version](general-electronic-reporting.md#component-versioning) der EB-Formatkonfiguration von **Entwurf** auf **Abgeschlossen** ändern. Sie können dann die fertige Version der EB-Formatkonfiguration durch [Veröffentlichung](../../../finance/localizations/rcs-global-repo-upload.md) in das globale Repository freigeben. Als Nächstes können Sie von jeder RCS- oder Finance-Cloud-Instanz aus auf das globale Repository zugreifen. Sie können dann jede EB-Konfigurationsversion, die für die Anwendung anwendbar ist, aus dem globalen Repository in diese Anwendung importieren.
+Wenn Sie mit der Gestaltung des Formats fertig sind, können Sie den Status Ihrer anfänglichen Version der EB-Formatkonfiguration von **Entwurf** auf **Abgeschlossen** ändern. Sie können dann die fertige Version der EB-Formatkonfiguration durch [Veröffentlichung](../../../finance/localizations/rcs-global-repo-upload.md) in das globale Repository freigeben. Als Nächstes können Sie von jeder RCS- oder Finance-Cloud-Instanz aus auf das globale Repository zugreifen. Sie können dann jede EB-Konfigurationsversion, die für die Anwendung anwendbar ist, aus dem globalen Repository in diese Anwendung importieren.
 
 ![Veröffentlichen der EB-Formatkonfiguration auf der Seite „Konfigurations-Repository“.](./media/ger-configuration-lifecycle-img2.png)
 

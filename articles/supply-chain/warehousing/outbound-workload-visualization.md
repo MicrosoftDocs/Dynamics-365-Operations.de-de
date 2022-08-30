@@ -2,7 +2,7 @@
 title: Ausgehende Workloadvisualisierung
 description: Dieser Artikel enthält Informationen über die Visualisierung der ausgehenden Arbeitsauslastung. Mit dieser Funktionalität können Lagerort-Manager und Vorgesetzte benutzerdefinierte Diagramme zur Arbeitsauslastung erstellen, mit denen der Fortschritt der aktuellen Arbeit und die verbleibende Menge überwacht werden kann. Lagerortverwaltungen können mehrere Ansichten erstellen und bei Bedarf eine automatische Aktualisierung festlegen.
 author: Mirzaab
-ms.date: 08/28/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 0e5a2cd2aa458217ff212d45c0dd13c9d0623bd0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 78d0d81095bb52a314936dd7590a5690d94ecb15
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851332"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334414"
 ---
 # <a name="outbound-workload-visualization"></a>Ausgehende Workloadvisualisierung
 
@@ -29,7 +29,7 @@ Diese Funktionalität kann verwendet werden, um den Fortschritt von Entnahmearbe
 
 ## <a name="turn-the-outbound-workload-visualization-feature-on-or-off"></a>Die Funktion zur Visualisierung der ausgehenden Arbeitsauslastung ein- oder ausschalten
 
-Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert. Administratoren können diese Funktionalität an- oder ausschalten, indem Sie nach der Funktion zur *Visualisierung der ausgehenden Arbeitsauslastung* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
+Um diese Funktion nutzen zu können, muss sie für Ihr System aktiviert werden. Ab Supply Chain Management Version 10.0.25 ist die Funktion standardmäßig aktiviert. Ab Supply Chain Management Version 10.0.29 ist die Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.29 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion zur *Visualisierung der ausgehenden Arbeitsauslastung* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ## <a name="set-up-outbound-workload-visualizations"></a>Visualisierungen der ausgehenden Arbeitsauslastung festlegen
 

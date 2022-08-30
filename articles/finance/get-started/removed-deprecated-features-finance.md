@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 4f2a1984d39713daa84f15422d7e0680b7f6c601
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 1b5282bc1fb4834d001cd2513664996a2f4cf4f0
+ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219567"
+ms.lasthandoff: 08/18/2022
+ms.locfileid: "9313882"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Finance
 
@@ -46,6 +46,17 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 | **Betroffene Produktbereiche** | Anwendung |
 | **Bereitstellungsoption** | Alle |
 | **Status** | Veraltet: Nach April 2023 wird die Funktion **Umlagerungsaufträge, die Steuern auf den Transferpreis enthalten** nicht mehr mit Fehlerkorrekturen und Sicherheitskorrekturen unterstützt. Kunden werden gebeten, die verbesserte Funktionalität [Umlagerungsaufträge für Indien](../../finance/localizations/apac-ind-stock-transfer.md) zu nutzen. Nach Oktober 2023 wird die Funktion **Umlagerungsaufträge, die Steuern auf den Transferpreis enthalten** nicht mehr verfügbar sein, und die Kunden werden gebeten, auf die verbesserte Funktionalität umzusteigen. |
+
+### <a name="bank-statement-import-and-export-of-positive-pay-file"></a>Bankauszug importieren und Dateien für positive Zahlungen exportieren
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Grund für veralteten Zustand/Entfernung** |Durch die verbesserte Funktionalität ersetzt, Bankauszüge importieren und Dateien für positive Zahlungen exportieren.| 
+| **Ersetzt durch eine andere Funktion?**   | Ja |
+| **Betroffene Produktbereiche**         | Anwendung |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet: Die XSLT-Funktionalität zum Importieren und Exportieren von Dateien wird nicht mehr mit Fehlerkorrekturen und Sicherheitskorrekturen unterstützt. Kunden werden gebeten, die verbesserte Funktion zu verwenden: [Dateien für positive Zahlungen mithilfe der elektronischen Berichterstellung einrichten](../../finance/accounts-payable/set-up-positive-pay-er.md) und [Erweiterten Bankabstimmungsimport mithilfe der elektronischen Berichterstellung einrichten](../../finance/accounts-payable/import-bai2-er.md). Nach September 2022 wird die XSLT-Funktionalität nicht mehr verfügbar sein und Kunden werden gebeten, auf die verbesserte Funktionalität umzusteigen.|
+
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10026-release"></a>Entfernte oder veraltete Funktionen in Finance Release 10.0.26
 

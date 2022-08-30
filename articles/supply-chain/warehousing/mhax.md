@@ -2,7 +2,7 @@
 title: Schnittstelle für Materialhandhabung (MHAX)
 description: In diesem Artikel wird beschrieben, wie Sie die Schnittstelle für Materialhandhabungsgeräte (MHAX) festlegen, damit Sie eine Verbindung zu externen physischen Systemen für die Materialhandhabung (MH) herstellen können.
 author: Mirzaab
-ms.date: 03/04/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: dc46c9fea94c3d86f9511c2bea4ea64455c936f9
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 1056c7aee3ea96ddcb012704be40bef6c363f323
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068358"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334354"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Schnittstelle für Materialhandhabung (MHAX)
 
@@ -41,12 +41,13 @@ Hier ist eine Erklärung der Interaktionen, die in der vorherigen Abbildung geze
 
 Bevor Sie die MHAX-Funktion verwenden können, müssen Sie sowohl die Funktion als auch den Konfigurationsschlüssel einschalten.
 
-1. Wechseln Sie zu **Systemverwaltung \> Arbeitsbereiche \> Funktionsverwaltung**.
-2. Schalten Sie im Arbeitsbereich **[Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** die Funktion mit dem Namen *Schnittstelle für Materialhandhabung* ein.
-3. Legen Sie Ihr System in den Wartungsmodus ein, wie in [Wartungsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) beschrieben.
-4. Gehen Sie zu **Systemadministration \> Einrichten \> Lizenzkonfiguration**.
-5. Erweitern Sie **Gewerbe \> Lagerort- und Transportverwaltung**, und aktivieren Sie dann das Kontrollkästchen **Schnittstelle für Materialhandhabung**.
-6. Schalten Sie den Wartungsmodus aus, wie in [Wartungsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) beschrieben.
+1. Gehen Sie wie folgt vor, wenn Sie Supply Chain Management der Version 10.0.28 oder früher ausführen.
+    1. Wechseln Sie zu **Systemverwaltung \> Arbeitsbereiche \> Funktionsverwaltung**.
+    1. Schalten Sie im Arbeitsbereich **[Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** die Funktion mit dem Namen *Schnittstelle für Materialhandhabung* ein. (Ab Supply Chain Management 10.0.29 ist diese Funktion obligatorisch und kann nicht deaktiviert werden.)
+1. Legen Sie Ihr System in den Wartungsmodus ein, wie in [Wartungsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) beschrieben.
+1. Gehen Sie zu **Systemadministration \> Einrichten \> Lizenzkonfiguration**.
+1. Erweitern Sie **Gewerbe \> Lagerort- und Transportverwaltung**, und aktivieren Sie dann das Kontrollkästchen **Schnittstelle für Materialhandhabung**.
+1. Schalten Sie den Wartungsmodus aus, wie in [Wartungsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) beschrieben.
 
 ## <a name="set-mhax-parameters"></a>MHAX-Parameter festlegen
 

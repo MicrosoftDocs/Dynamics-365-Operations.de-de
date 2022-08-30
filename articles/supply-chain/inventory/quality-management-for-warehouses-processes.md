@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 13c9bf522ededb5896c5f8462bfe123e9a9edb2c
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: b4d0b09ea4bee58799a659217e2236fe74102949
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069241"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335434"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Qualitätsmanagement bei Lagerortprozessen
 
@@ -29,7 +29,7 @@ Die Funktion _Qualitätsmanagement für Lagerortprozesse_ erweitert die Möglich
 
 ## <a name="turn-on-the-quality-management-for-warehouse-processes-feature"></a>Aktivieren der Funktion „Qualitätsmanagement für Lagerortprozesse“
 
-Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+Bevor Sie diese Funktion nutzen können, muss sie für Ihr System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
 
 - **Module:** *Lagerortverwaltung*
 - **Funktionsname:** *Qualitätsmanagement für Lagerortprozesse*
@@ -89,7 +89,7 @@ Die Funktion _Qualitätsmanagement für Lagerortprozesse_ steuert mehrere wichti
 
 Jeder [Qualitätszuordnungsdatensatz](enable-quality-management.md) definiert die Tests, das akzeptable Qualitätsniveau (AQL) und den Musteraufnahmeplan, die für die generierten Qualitätsprüfungsaufträge gelten. Gehen Sie folgendermaßen vor, um einen Qualitätszuordnungsdatensatz einzurichten.
 
-1. Wechseln Sie zu **Bestandsverwaltung \> Einstellungen \> Qualitätskontrolle \> Qualitätszuordnungen**.
+1. Wechseln Sie zu **Lagerverwaltung \> Einstellungen \> Qualitätskontrolle \> Qualitätszuordnungen**.
 1. Erstellen Sie für den Artikel oder die Gruppe, mit der Sie arbeiten, oder für alle Artikel den Qualitätszuordnungseintrag oder wählen Sie einen aus.
 1. Wählen Sie im Inforegister **Bedingungen** für das Feld **Zutreffender Lagerorttyp** einen der folgenden Werte aus:
 
@@ -145,7 +145,7 @@ Wenn Sie eine Artikelmusteraufnahme definieren, die den für _Qualitätsmanageme
 
 Die Artikelmusteraufnahme steuert, wie oft Artikel zur Qualitätskontrolle gesendet werden. Die Funktion _Qualitätsmanagement für Lagerortprozesse_ führt das Konzept des _Umfangs der Artikelmusteraufnahme_ ein. Das System verwendet den Umfang der Artikelmusteraufnahme, wenn es bewertet, ob und wie Qualitätsprüfungsaufträge und/oder Arbeit für Qualitätsartikelmuster und Qualitätsaufträge erstellt werden sollen.
 
-Um die Artikelmusteraufnahme einzurichten, wechseln Sie zu **Bestandsverwaltung \> Einstellungen \> Qualitätskontrolle \> Artikelmusteraufnahme** und wählen für das Feld **Musterumfang** einen der folgenden Werte aus:
+Um die Artikelmusteraufnahme einzurichten, wechseln Sie zu **Lagerverwaltung \> Einstellungen \> Qualitätskontrolle \> Artikelmusteraufnahme** und wählen für das Feld **Musterumfang** einen der folgenden Werte aus:
 
 - **Auftrag** – Die Quelldokumentzeile dient als Grundlage für die Bewertung, ob und wie Qualitätsprüfungsaufträge und/oder Arbeit für Qualitätsartikelmuster und Qualitätsaufträge erstellt werden. Dieser Wert ist der Standardwert und wenn er ausgewählt ist, funktioniert das System auf dieselbe Weise, wie bei nicht aktivierter Funktion _Qualitätsmanagement für Lagerortprozesse_.
 - **Ladung** – Ladungen dienen als Grundlage zur Bewertung, ob und wie ein Qualitätsprüfungsauftrag und/oder Arbeit erstellt wird. Dieser Wert ist nur dann verfügbar, wenn die Funktion _Qualitätsmanagement für Lagerortprozesse_ aktiviert ist.
@@ -395,7 +395,7 @@ Die Funktion _Qualitätsmanagement für Lagerortprozesse_ fügt einige neue Funk
 
 Erstellen Sie eine Qualitätszuordnung, die die neue Artikelmusteraufnahme verwendet.
 
-1. Wechseln Sie zu **Bestandsverwaltung \> Einstellungen \> Qualitätskontrolle \> Qualitätszuordnungen**.
+1. Wechseln Sie zu **Lagerverwaltung \> Einstellungen \> Qualitätskontrolle \> Qualitätszuordnungen**.
 1. Erstellen Sie einen Qualitätszuordnungsdatensatz und legen Sie die folgenden Werte fest:
 
     - **Referenztyp:** _Kauf_
@@ -600,12 +600,12 @@ Sie haben die Arbeits- und Ortsdaten für Lagerort 51 eingerichtet, um sicherzus
 
 ### <a name="process-quality-management-work"></a>Arbeit für die Prozessqualitätverwaltung
 
-1. Wechseln Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsaufträge**.
+1. Wechseln Sie zu **Lagerverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsaufträge**.
 1. Wählen Sie den ersten Qualitätsprüfungsauftrag für die registrierten Mengen aus.
 1. Wählen Sie **Überprüfen** aus. Der Status des Tests wird auf *Fehler* aktualisiert.
 1. Wechseln Sie zu **Lagerortverwaltung \> Alle Arbeit**.
 1. Öffnen Sie die soeben erstellte Arbeit und beachten Sie, dass der Wert **Arbeitsauftragstyp** auf *Qualitätsprüfungsauftrag* festgelegt ist. Die Arbeit enthält eine Position, für die der Einlieferungslagerplatz *Zurück* und der Status *Fehler* lauten. (Wenn der Status des Qualitätsprüfungsauftrags *Bestanden* lauten würde, wäre der Einlieferungslagerplatz stattdessen *Bulk*.)
-1. Wechseln Sie zurück zu **Bestandsverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsaufträge**.
+1. Wechseln Sie zurück zu **Lagerverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsaufträge**.
 1. Wählen Sie den zweiten Qualitätsprüfungsauftrag für die registrierten Artikel aus.
 1. Wählen Sie **Ergebnisse** oberhalb dem unteren Raster aus. Aktualisieren Sie den Wert **Ergebnismenge** zu *5* und prüfen Sie, ob der Wert **Testergebnis** in ein Häkchen geändert wurde.
 1. Wählen Sie **Prüfen** aus und schließen Sie die Seite.

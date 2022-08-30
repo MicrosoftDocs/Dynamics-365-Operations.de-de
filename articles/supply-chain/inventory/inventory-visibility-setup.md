@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ce81ed2ed79bfe5c7fff9724e14af150817af11f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 42c2c287e2a813f8bb07ce0c7f21f4224a217946
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895698"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306053"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Inventory Visibility installieren und einrichten
 
@@ -43,7 +43,7 @@ Wenn Sie Fragen zu diesen Voraussetzungen haben, wenden Sie sich an das Inventor
 
 ## <a name="install-the-inventory-visibility-add-in"></a><a name="install-add-in"></a>Installieren Sie das Inventory Visibility Add-In
 
-Bevor Sie das Add-In installieren, registrieren Sie eine Anwendung und fügen Sie ein Client-Geheimnis zu Azure Active Directory (Azure AD) unter Ihrem Azure-Abonnement hinzu. Anweisungen finden Sie unter [Registrieren einer Anwendung](/azure/active-directory/develop/quickstart-register-app) und [Hinzufügen eines Client-Geheimnisses](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). Notieren Sie sich unbedingt die Werte **Anwendungs-(Client-)ID**, **Client-Geheimnis** und **Mandanten-ID**, da Sie diese später noch benötigen werden.
+Bevor Sie das Add-In installieren, registrieren Sie eine Anwendung und fügen Sie ein Client-Geheimnis zu Azure Active Directory (Azure AD) unter Ihrem Azure-Abonnement hinzu. Anweisungen finden Sie unter [Registrieren einer Anwendung](/azure/active-directory/develop/quickstart-register-app) und [Hinzufügen eines Client-Geheimnisses](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). Notieren Sie sich unbedingt die Werte **Anwendungs-(Client-)ID**, **geheimer Clientschlüssel** und **Mandanten-ID**, da Sie diese später noch benötigen werden.
 
 > [!IMPORTANT]
 > Wenn Sie mehr als eine LCS-Umgebung haben, erstellen Sie für jede andere eine andere Azure AD-Anwendung. Wenn Sie dieselbe Anwendungs-ID und Mandanten-ID verwenden, um das Bestandsanzeige-Add-In für verschiedene Umgebungen zu installieren, tritt in älteren Umgebungen ein Tokenproblem auf. Als Resultat ist nur die letzte Installation gültig.
@@ -88,20 +88,6 @@ Nachdem Sie eine Anwendung registriert und ein Client-Geheimnis zu Azure AD hinz
 >
 > 1. Gehen Sie nach Abschluss der Installation zurück zur LCS-Seite und versuchen Sie erneut, das **Bestandsanzeige**-Add-In neu zu installieren.
 
-## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>Deinstallieren des Inventory Visibility-Add-Ins
-
-Um das Bestandssichtbarkeits-Add-In zu deinstallieren, wählen Sie **Deinstallieren** auf der LCS-Seite. Der Deinstallationsvorgang beendet das Inventory Visibility-Add-In, hebt die Registrierung des Add-Ins im LCS auf und löscht alle temporären Daten, die im Daten-Cache des Inventory Visibility-Add-Ins gespeichert sind. Die primären Bestandsdaten, die in Ihrem Dataverse-Abonnement gespeichert sind, werden jedoch nicht gelöscht.
-
-Um Bestandsdaten zu deinstallieren, die in Ihrem Dataverse-Abonnement gespeichert sind, öffnen Sie [Power Apps](https://make.powerapps.com), wählen Sie **Umgebung** in der Navigationsleiste und wählen Sie die Dataverse-Umgebung, die mit Ihrer LCS-Umgebung verbunden ist. Gehen Sie dann zu **Lösungen**, und löschen Sie die folgenden fünf Lösungen in dieser Reihenfolge:
-
-1. Ankerlösung für Inventory Visibility-Anwendung in Dynamics 365-Lösungen
-1. Dynamics 365 FNO SCM Inventory Visibility-Anwendungslösung
-1. Bestandsservice-Konfiguration
-1. Eigenständige Inventory Visibility-Anwendung
-1. Dynamics 365 FNO SCM Inventory Visibility-Basislösung
-
-Nachdem Sie diese Lösungen gelöscht haben, werden auch die Daten, die in Tabellen gespeichert sind, gelöscht.
-
 ## <a name="set-up-inventory-visibility-in-supply-chain-management"></a><a name="setup-dynamics-scm"></a>Einrichten der Bestandssichtbarkeit im Supply Chain Management
 
 ### <a name="deploy-the-inventory-visibility-integration-package"></a><a name="deploy-inventory-visibility-package"></a>Bereitstellen des Integrationspakets für die Bestandssichtbarkeit
@@ -122,23 +108,58 @@ Stellen Sie sicher, dass die folgenden Funktionen in Ihrer Supply Chain Manageme
 
 ### <a name="set-up-inventory-visibility-integration"></a><a name="setup-inventory-visibility-integration"></a>Integration der Bestandssichtbarkeit einrichten
 
-Nachdem Sie das Add-In installiert haben, bereiten Sie Ihr Supply Chain Management-System vor, indem Sie die folgenden Schritte ausführen.
+Nachdem Sie das Add-In installiert haben, bereiten Sie Ihr Supply Chain Management-System mithilfe der folgenden Schritte vor.
 
 1. Öffnen Sie im Supply Chain Management den Arbeitsbereich **[Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** und aktivieren Sie die folgenden Funktionen:
     - *Integration der Bestandssichtbarkeit* – Erforderlich.
     - *Integration der Bestandssichtbarkeit mit Reservierungsversatz* – Empfohlen, aber optional. Erfordert Version 10.0.22 oder höher. Weitere Informationen finden Sie unter [Reservierungen in Inventory Visibility](inventory-visibility-reservations.md).
 
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichtung \> Bestandssichtbarkeit-Integrationsparameter**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Bestandssichtbarkeit-Integrationsparameter**.
 1. Öffnen Sie die Registerkarte **Allgemein** und nehmen Sie die folgenden Einstellungen vor:
     - **Bestandssichtbarkeit Endpunkt** – Geben Sie die URL der Umgebung ein, in der Sie die Bestandssichtbarkeit ausführen. Weitere Informationen finden Sie unter [Finden Sie den Dienst-Endpunkt](inventory-visibility-configuration.md#get-service-endpoint).
     - **Maximale Anzahl von Datensätzen in einer einzigen Anforderung** – Legen Sie die maximale Anzahl von Datensätzen fest, die in eine einzelne Anforderung aufgenommen werden sollen. Sie müssen eine positive Ganzzahl kleiner oder gleich 1.000 eingeben. Der Standardwert ist "512". Wir empfehlen dringend, den Standardwert beizubehalten, es sei denn, Sie wurden vom Microsoft-Support beraten oder sind sich anderweitig sicher, dass Sie ihn ändern müssen.
 
 1. Wenn Sie die optionale Funktion *Integration der Bestandssichtbarkeit mit Reservierungsversatz* aktiviert haben, öffnen Sie die Registerkarte **Reservierungsversatz** und nehmen Sie die folgenden Einstellungen vor:
     - **Reservierungsversatz aktivieren** – Auf *Ja* festlegen, um diese Funktion zu aktivieren.
-    - **Modifikator für Reservierungsversatz** – Wählen Sie den Bestandstransaktionsstatus aus, der Reservierungen verrechnet, die in der Bestandsanzeige vorgenommen wurden. Diese Einstellung legt die Auftragsbearbeitungsstufe fest, die einen Versatz auslöst. Die Stufe wird durch den Status der Bestandstransaktion des Auftrags nachverfolgt. Wählen Sie eine der folgenden Optionen:
+    - **Modifikator für Reservierungsversatz** – Wählen Sie den Bestandstransaktionsstatus aus, der Reservierungen verrechnet, die in der Bestandsanzeige vorgenommen wurden. Diese Einstellung legt die Auftragsbearbeitungsstufe fest, die einen Versatz auslöst. Die Stufe wird durch den Status der Bestandstransaktion des Auftrags nachverfolgt. Wählen Sie eine der folgenden Optionen aus:
         - *Bei Bestellung* - Für den Status *Bei Transaktion* sendet eine Bestellung eine Offset-Anforderung, wenn sie erstellt wird. Die Versatzmenge ist die Menge des erstellten Auftrags.
         - *Reservieren* - Für den Status *Bestellte Transaktion reservieren* sendet eine Bestellung eine Offset-Anfrage, wenn sie reserviert, kommissioniert, mit Lieferschein gebucht oder in Rechnung gestellt wird. Die Anfrage wird nur einmal ausgelöst, und zwar für den ersten Schritt, wenn der genannte Vorgang stattfindet. Die Versatzmenge ist die Menge, um die sich der Bestandstransaktionsstatus von *In Auftrag* zu *Bestellt reserviert* (oder zu einem späteren Status) für die entsprechende Auftragsposition geändert hat.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Periodisch \> Bestandssichtbarkeit-Integration**, und aktivieren Sie den Auftrag. Alle Ereignisse zu Bestandsänderungen aus dem Supply Chain Management werden nun in die Bestandssichtbarkeit übernommen.
+1. Gehen Sie zu **Lagerverwaltung \> Periodisch \> Bestandssichtbarkeit-Integration**, und aktivieren Sie den Auftrag. Alle Ereignisse zu Bestandsänderungen aus dem Supply Chain Management werden nun in die Bestandssichtbarkeit übernommen.
+
+## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>Deinstallieren des Inventory Visibility-Add-Ins
+
+Um das Bestandstransparenz-Add-In zu deinstallieren, gehen Sie wie folgt vor:
+
+1. Melden Sie sich im Supply Chain Management an.
+1. Gehen Sie zu **Lagerverwaltung \> Periodisch \> Bestandstransparenz-Integration** und deaktivieren Sie den Auftrag.
+1. Gehen Sie zu LCS und öffnen Sie die Seite für die Umgebung, aus der Sie das Add-In deinstallieren möchten (siehe auch [Das Bestandstransparenz-Add-In installieren](#install-add-in)).
+1. Wählen Sie **Deinstallieren**.
+1. Der Deinstallationsvorgang beendet jetzt das Bestandstransparenz-Add-In, hebt die Registrierung des Add-Ins im LCS auf und löscht alle temporären Daten, die im Daten-Cache des Bestandstransparenz-Add-Ins gespeichert sind. Die primären Bestandsdaten, die mit Ihrem Dataverse-Abonnement synchronisiert sind, sind dort immer noch gespeichert. Sie können diese Daten mit den restlichen Schritten dieses Verfahrens löschen.
+1. Öffnen Sie [Power Apps](https://make.powerapps.com).
+1. Wählen Sie in der Navigationsleiste **Umgebung**
+1. Wählen Sie die Dataverse-Umgebung aus, die mit Ihrer LCS-Umgebung verbunden ist.
+1. Gehen Sie zu **Lösungen** und löschen Sie die folgenden Lösungen in dieser Reihenfolge:
+    1. Ankerlösung für Inventory Visibility-Anwendung in Dynamics 365-Lösungen
+    1. Dynamics 365 FNO SCM Inventory Visibility-Anwendungslösung
+    1. Bestandsservice-Konfiguration
+    1. Eigenständige Inventory Visibility-Anwendung
+    1. Dynamics 365 FNO SCM Inventory Visibility-Basislösung
+
+    Nachdem Sie diese Lösungen gelöscht haben, werden auch die Daten, die in Tabellen gespeichert sind, gelöscht.
+
+> [!NOTE]
+> Wenn Sie eine Supply Chain Management-Datenbank nach der Deinstallation des Bestandstransparenz-Add-Ins wiederherstellen und das Add-In dann erneut installieren möchten, stellen Sie sicher, dass Sie die alten Bestandstransparenzdaten gelöscht haben, die in Ihrem Dataverse-Abonnement gespeichert sind (wie im vorherigen Verfahren beschrieben), bevor Sie das Add-In neu installieren. Dadurch werden Dateninkonsistenzprobleme vermieden, die andernfalls auftreten könnten.
+
+## <a name="clean-inventory-visibility-data-from-dataverse-before-restoring-the-supply-chain-management-database"></a><a name="restore-environment-database"></a>Bestandstransparenzdaten aus Dataverse bereinigen, bevor Sie die Supply Chain Management-Datenbank wiederherstellen
+
+Wenn Sie die Bestandstransparenz verwendet haben und dann Ihre Supply Chain Management-Datenbank wiederherstellen, enthält Ihre wiederhergestellte Datenbank möglicherweise Daten, die nicht mehr mit Daten übereinstimmen, welche die Bestandstransparenz vorher mit Dataverse synchronisiert hat. Dieser Datenkonflikt kann Systemfehler und andere Probleme verursachen. Daher ist es wichtig, dass Sie immer alle Bestandstransparenzdaten aus Dataverse bereinigen, bevor Sie eine Supply Chain Management-Datenbank wiederherstellen.
+
+Wenn Sie eine Supply Chain Management-Datenbank wiederherstellen müssen, gehen Sie wie folgt vor:
+
+1. Deinstallieren Sie das Bestandstransparenz-Add-In und entfernen Sie alle damit in Dataverse zusammenhängenden Daten wie in [Deinstallieren des Bestandstransparenz-Add-Ins](#uninstall-add-in) beschrieben
+1. Stellen Sie Ihre Supply Chain Management-Datenbank wieder her, beispielsweise wie in [Datenbank-Zeitpunktwiederherstellung (PITR)](../../fin-ops-core/dev-itpro/database/database-point-in-time-restore.md) oder in [Zeitpunktwiederherstellung der Produktionsdatenbank in einer Sandbox-Umgebung](../../fin-ops-core/dev-itpro/database/database-pitr-prod-sandbox.md) beschrieben.
+1. Wenn Sie es dennoch verwenden möchten, installieren Sie das Bestandstransparenz-Add-In neu und richten Sie es wie in [Das Bestandstransparenz-Add-In installieren](#install-add-in) und [Die Bestandstransparenzintegration einrichten](#setup-inventory-visibility-integration) beschrieben ein
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Umleitungen für Schritte in den Menüpunkten des Mobilgeräts konfigurieren
 description: In diesem Artikel wird beschrieben, wie Umleitungen für Menüelemente konfiguriert werden, damit Mitarbeiter die aktuelle Aufgabe parken, eine andere Aufgabe ausführen und dann zur ursprünglichen Aufgabe zurückkehren können, ohne Informationen zu verlieren.
 author: Mirzaab
-ms.date: 10/15/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8106dd600e8eadbaafcaa4cbc27ec179899318f7
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 50f899cd7f28a4b7fd23db5f049de02896e8d8e9
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219003"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336124"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Umleitungen für Schritte in den Menüpunkten des Mobilgeräts konfigurieren
 
@@ -35,9 +35,8 @@ Bevor Sie Umleitungen für Schritte in Menüpunkten mobiler Geräte konfiguriere
 
 1. Wechseln Sie zu **Systemverwaltung \> Arbeitsbereiche \> Funktionsverwaltung**.
 1. Stellen Sie sicher, dass die *Schrittanweisungen für die Warehouse-App* Funktion für Ihr System aktiviert ist. Ab Supply Chain Management Version 10.0.29 ist diese Funktion standardmäßig aktiviert. Für weitere Informationen über die Funktion *Schrittanleitung für die Warehouse-App* siehe [Passen Sie Schritttitel und Anweisungen für die mobile Warehouse Management-App an](mobile-app-titles-instructions.md). Diese Funktion ist Voraussetzung für die Funktion *Umwege über die Warehouse Management-App*.
-1. Aktivieren Sie die Funktion *Umwege über die Warehouse Management-App*. Diese Funktion wird in diesem Artikel beschrieben.
-1. Aktualisieren Sie die Feldnamen in der mobilen Warehouse Management-App, indem Sie zu **Lagerverwaltung \> Einstellungen \> Mobiles Gerät \> Feldnamen der Warehouse-App** und wählen Sie **Standard-Setup erstellen**. Weitere Informationen finden Sie unter [Felder für die Warehouse Management Mobile App konfigurieren](configure-app-field-names-priorities-warehouse.md).
-1. Wiederholen Sie den vorherigen Schritt für jede juristische Person (Firma), in der Sie die mobile App Warehouse Management verwenden.
+1. Aktivieren Sie die Funktion *Umwege über die Warehouse Management-App*. Diese Funktion wird in diesem Artikel beschrieben. Ab Supply Chain Management Version 10.0.29 ist sie standardmäßig aktiviert.
+1. Wie die Funktion *Umleitung für Warehouse Management-App* nicht bereits aktiviert ist, aktualisieren Sie die Feldnamen in der mobilen App für Warehouse Management, indem Sie zu **Lagerverwaltung\> Einstellungen \> Mobiles Gerät \> Feldnamen der Warehouse-App** und wählen **Standard-Setup** erstellen. Wiederholen Sie diesen Schritt für jede juristische Person (Firma), in der Sie die mobile App Warehouse Management verwenden. Weitere Informationen finden Sie unter [Felder für die Warehouse Management Mobile App konfigurieren](configure-app-field-names-priorities-warehouse.md).
 
 ## <a name="configure-a-detour-from-a-menu-specific-override"></a>Konfigurieren Sie eine Umleitung von einer menüspezifischen Außerkraftsetzung
 

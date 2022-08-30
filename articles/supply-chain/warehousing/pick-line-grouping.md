@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: f9e6cbf0f520f0f30c01cefba03689e9c119f2cb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 00a4e07ac38a83cd4569006f3b6e2bdd59ed1a42
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890624"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334534"
 ---
 # <a name="pick-line-grouping"></a>Gruppierung von Kommissionierpositionen
 
@@ -30,7 +30,7 @@ Die Gruppierung von Entnahmepositionen ermöglicht das Zusammenfassen mehrerer A
 
 ## <a name="turn-on-the-pick-line-grouping-feature"></a>Einschalten der Gruppierungsfunktion für Entnahmepositionen
 
-Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können den Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktion zu prüfen und sie bei Bedarf einzuschalten. Dort wird die Funktion folgendermaßen aufgelistet:
+Bevor Sie diese Funktion nutzen können, muss sie für Ihr System aktiviert werden. Administratoren können den Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktion zu prüfen und sie bei Bedarf einzuschalten. Dort wird die Funktion folgendermaßen aufgelistet:
 
 - **Module:** *Lagerortverwaltung*
 - **Funktionsname:** *Gruppierung von Entnahmepositionen*

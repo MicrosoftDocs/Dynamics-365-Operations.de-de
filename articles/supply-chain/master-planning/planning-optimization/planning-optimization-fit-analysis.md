@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: af7f4b09fd624aeda2ff002292e11cf84fd02991
-ms.sourcegitcommit: e4b6521337dfff3515f70086b0125d4c23308c71
+ms.openlocfilehash: 633daba553b1544c2caa788f4cec1da4c1da6960
+ms.sourcegitcommit: 7af116c60f3a94671a7a80c04097d70180754930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9262327"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "9347288"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Passanalyse zu Planungsoptimierung
 
@@ -77,10 +77,10 @@ Die folgende Tabelle zeigt die verschiedenen Ergebnisse, die nach einer Anpassun
 | Nichtplanungszeitraum | Artikeldeckungsdatensätze mit gesperrtem festgelegtem Nichtplanungszeitraum: *\#* | Diese Funktion steht noch aus. Derzeit wird der eingerichtete Nichtplanungszeitraum ignoriert, wenn die Planungsoptimierung unabhängig von dieser Einstellung aktiviert ist. | Veröffentlichungszyklus 2, 2022 |
 | Nichtplanungszeitraum | Produktprogrammpläne mit gesperrtem festgelegtem Nichtplanungszeitraum: *\#* | Diese Funktion steht noch aus. Derzeit wird der eingerichtete Nichtplanungszeitraum ignoriert, wenn die Planungsoptimierung unabhängig von dieser Einstellung aktiviert ist. | Veröffentlichungszyklus 2, 2022 |
 | Intercompany | Produktprogrammpläne einschließlich geplanten Downstream-Bedarfs: *\#* | Diese Funktion wird jetzt unterstützt. Weitere Informationen finden Sie unter [Intercompany-Planung](Intercompany-planning.md) | Unterstützt |
-| Kanban | Artikeldeckungsdatensätze mit geplantem Auftragstyp "Kanban": *\#* | Diese Funktion steht noch aus. Derzeit wird die auf Kanban eingestellte Artikelabdeckung ignoriert, wenn die Planungsoptimierung aktiviert ist. Die geplante Kanban-Auftragsart erstellt während der Masterplanung eine Warnung, und geplante Bestellungen werden erstellt, um den entsprechenden Bedarf zu decken. | 2023 oder später |
-| Kanban | Artikel mit Standardauftragstyp „Kanban“: *\#* | Derzeit wird die auf Kanban eingestellte Standardauftragsart ignoriert, wenn die Planungsoptimierung aktiviert ist. Die Kanban-Standardauftragsart erstellt während der Masterplanung eine Warnung, und geplante Bestellungen werden erstellt, um den entsprechenden Bedarf zu decken. | 2023 oder später |
+| Kanban | Artikeldeckungsdatensätze mit geplantem Auftragstyp "Kanban": *\#* | Diese Funktion steht noch aus. Derzeit wird die auf Kanban eingestellte Artikelabdeckung ignoriert, wenn die Planungsoptimierung aktiviert ist. Die geplante Kanban-Auftragsart erstellt während der Masterplanung eine Warnung, und geplante Bestellungen werden erstellt, um den entsprechenden Bedarf zu decken. | Zukünftiger Zyklus |
+| Kanban | Artikel mit Standardauftragstyp „Kanban“: *\#* | Derzeit wird die auf Kanban eingestellte Standardauftragsart ignoriert, wenn die Planungsoptimierung aktiviert ist. Die Kanban-Standardauftragsart erstellt während der Masterplanung eine Warnung, und geplante Bestellungen werden erstellt, um den entsprechenden Bedarf zu decken. | Zukünftiger Zyklus |
 | Produktlebenszyklus-Status | Produktlebenszyklus-Status nicht aktiv für die Planung: *\#* | Diese Funktion wird jetzt unterstützt. Weitere Informationen finden Sie unter [Ausschließen von Produkten, die bestimmte Produktlebenszyklus-Status haben](product-lifecycle-state.md) | Unterstützt |
-| Produktion | Stücklistenpositionen mit Rundung oder mehreren Konfigurationen: *\#* | Diese Funktion steht noch aus. Derzeit werden Rundungen und mehrere Setups in Stücklistenzeilen ignoriert, wenn die Planungsoptimierung aktiviert ist, unabhängig von dieser Einstellung. | 2023 oder später |
+| Produktion | Stücklistenpositionen mit Rundung oder mehreren Konfigurationen: *\#* | Diese Funktion steht noch aus. Derzeit werden Rundungen und mehrere Setups in Stücklistenzeilen ignoriert, wenn die Planungsoptimierung aktiviert ist, unabhängig von dieser Einstellung. | Zukünftiger Zyklus|
 | Produktion | Stücklisten-/Formelpositionen mit Formelmessung: *\#* | Diese Funktion steht noch aus. Derzeit wird Formelmessung in Stücklisten- und Formelzeilen ignoriert, wenn die Planungsoptimierung aktiviert ist, unabhängig von dieser Einstellung. | Veröffentlichungszyklus 2, 2022 |
 | Produktion | Stücklisten-/Formelpositionen mit Artikelersetzung (Plangruppen): *\#* | Diese Funktion steht noch aus. Derzeit wird Artikelersetzung (Plangruppen) ignoriert, wenn die Planungsoptimierung aktiviert ist, unabhängig von dieser Einstellung. | Veröffentlichungszyklus 2, 2022 |
 | Produktion | Stücklisten-/Formelpositionen mit negativer Menge: *\#* | Diese Funktion steht noch aus. Stücklisten-/Formelpositionen mit negativer Menge werden mit einer Menge von 0 (null) eingeschlossen, und eine Warnung wird ausgegeben, wenn die Planungsoptimierung aktiviert ist. Aktualisieren Sie die Stammdaten, um Warnungen zu vermeiden. | Veröffentlichungszyklus 2, 2022 |
@@ -93,11 +93,11 @@ Die folgende Tabelle zeigt die verschiedenen Ergebnisse, die nach einer Anpassun
 | Produktion | Formelversionen mit Kuppel-/Nebenprodukten: *\#* | Diese Funktion steht noch aus. Derzeit werden Kuppel-/Nebenprodukten, die der Formelversion zugeordnet sind, ignoriert, wenn die Planungsoptimierung aktiviert ist. | Veröffentlichungszyklus 2, 2022 |
 | Produktion | Formelversionen mit Ertrag: *\#* | Diese Funktion steht noch aus. Derzeit wird Ertrag, der der Formelversion zugeordnet ist, ignoriert, wenn die Planungsoptimierung aktiviert ist. | Veröffentlichungszyklus 2, 2022 |
 | Produktion | Pläne einschließlich Abfolge: *\#* | Diese Funktion steht noch aus. Derzeit werden Abfolgen ignoriert, wenn die Planungsoptimierung unabhängig von dieser Einstellung aktiviert ist. | Veröffentlichungszyklus 2, 2022 |
-| Produktion | Freigegebene, noch nicht gestartete Produktionsaufträge, deren Beginn vor heute geplant ist: *\#* | Diese Funktion steht noch aus. Wenn sich ein Produktionsauftrag verzögert, wird die Masterplanung derzeit davon ausgehen, dass er heute abgeschlossen wird. Dies ist für freigegebene Produktionsaufträge relevant, bei denen ein Liefertermin in der Vergangenheit liegt, dieser jedoch noch nicht abgeschlossen wurde. | 2023 oder später |
+| Produktion | Freigegebene, noch nicht gestartete Produktionsaufträge, deren Beginn vor heute geplant ist: *\#* | Diese Funktion steht noch aus. Wenn sich ein Produktionsauftrag verzögert, wird die Masterplanung derzeit davon ausgehen, dass er heute abgeschlossen wird. Dies ist für freigegebene Produktionsaufträge relevant, bei denen ein Liefertermin in der Vergangenheit liegt, dieser jedoch noch nicht abgeschlossen wurde. | Zukünftiger Zyklus |
 | Produktion | Mit begrenzter Kapazität eingeplante Ressourcen: *\#* | Diese Funktion steht noch aus. Derzeit werden Ressourcen mit begrenzter Kapazität ignoriert, wenn die Planungsoptimierung aktiviert ist. Die Planung erfolgt basierend auf der Standardvorlaufzeit des Produkts. | Veröffentlichungszyklus 2, 2022 |
 | Produktion | In Planung verwendete Arbeitspläne: *\#* | Diese Funktion wird unterstützt. | Unterstützt |
-| Produktion | Verkaufspositionsreservierung mit Stücklistenauflösung: *\#* | Verkaufspositionsreservierung, die Auflösung verwendet, wird nicht unterstützt, wenn die Planungsoptimierung aktiviert ist. | 2023 oder später |
-| Produktion | Planung mit Auflösung von Produktionsaufträgen: *\#* | Terminplanung, die Auflösung von Produktionsaufträgen verwendet, wird nicht unterstützt, wenn die Planungsoptimierung aktiviert ist. Produktionsaufträge können individuell geplant werden. | 2023 oder später |
+| Produktion | Verkaufspositionsreservierung mit Stücklistenauflösung: *\#* | Verkaufspositionsreservierung, die Auflösung verwendet, wird nicht unterstützt, wenn die Planungsoptimierung aktiviert ist. | Zukünftiger Zyklus |
+| Produktion | Planung mit Auflösung von Produktionsaufträgen: *\#* | Terminplanung, die Auflösung von Produktionsaufträgen verwendet, wird nicht unterstützt, wenn die Planungsoptimierung aktiviert ist. Produktionsaufträge können individuell geplant werden. | Zukünftiger Zyklus |
 | Angebotsanforderungen | Produktprogrammpläne mit aktivierten Angebotsanforderungen: *\#* | Diese Funktion steht noch aus. Derzeit werden Angebotsanforderungen (RFQs) nicht als Bedarf betrachtet, wenn die Planungsoptimierung aktiviert ist. Sie werden unabhängig von dieser Einstellung ignoriert. | Veröffentlichungszyklus 2, 2022 |
 | Anforderungen | Produktprogrammpläne mit aktivierten Anforderungen: *\#* | Diese Funktion wird jetzt unterstützt. Weitere Informationen finden Sie unter [Bestellanforderungen](purchase-requisitions.md) | Unterstützt |
 | Sicherheitszuschläge | Dispositionssteuerungsgruppen mit Sicherheitszuschlag: *\#* | Diese Funktion wird jetzt unterstützt. Weitere Informationen finden Sie unter [Sicherheitszuschläge](safety-margins.md) | Unterstützt |

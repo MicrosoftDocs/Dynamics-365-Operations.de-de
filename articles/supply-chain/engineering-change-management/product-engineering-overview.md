@@ -2,7 +2,7 @@
 title: Überblick über die Verwaltung für technische Änderungen (enthält Video)
 description: Dieser Artikel bietet einen Überblick über die Verwaltung für technische Änderungen, die Sie bei der Planung und Verwaltung der Produktversionsverwaltung sowie bei der Verwaltung von Produktlebenszyklen und technischen Änderungen unterstützt.
 author: t-benebo
-ms.date: 01/11/2022
+ms.date: 08/09/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3a27548fff9728c74814fb92438da1d0c17b5e2b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: b494e15488bed148119aed0e9d62ab1740f38add
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9067391"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334864"
 ---
 # <a name="engineering-change-management-overview"></a>Überblick über die Verwaltung für technische Änderungen
 
@@ -76,16 +76,16 @@ Als nächstes schalten Sie die Konfigurationstasten ein, indem Sie diese Schritt
 
 ### <a name="turn-on-additional-engineering-change-management-features"></a>Einschalten der zusätzlichen Verwaltungfunktionen für technische Änderungen
 
-Nachdem Sie die grundlegenden Funktionen für die Änderungsverwaltung aktiviert und deren Konfigurationsschlüssel aktiviert haben, werden dem Funktionsmanagement mehrere zusätzliche und optionale Funktionen für die Änderungsverwaltung hinzugefügt. Jede dieser Funktionen ist unter dem **Verwaltung für technische Änderung**-Modul aufgeführt. Die folgende Tabelle beschreibt jede optionale Funktion und enthält Links für weitere Informationen. Ab Supply Chain Management-Version 10.0.25 sind alle diese Funktionen standardmäßig aktiviert, Sie können sie jedoch weiterhin deaktivieren.
+Nachdem Sie die grundlegenden Funktionen für die Änderungsverwaltung aktiviert und deren Konfigurationsschlüssel aktiviert haben, werden dem Funktionsmanagement mehrere zusätzliche und optionale Funktionen für die Änderungsverwaltung hinzugefügt. Jede dieser Funktionen ist unter dem **Verwaltung für technische Änderung**-Modul aufgeführt. Die folgende Tabelle beschreibt jede optionale Funktion und enthält Links für weitere Informationen.
 
 | Funktion Name in FunktionVerwaltung | Description | Status der Funktion |
 |---|---|---|
-| Änderungsmanagement für vorhandene Produkte aktivieren | <p>Mit dieser Funktion können Sie vorhandene Produkte in Konstruktionsprodukte umwandeln, damit Sie sie mithilfe der Änderungsverwaltung verwalten können.</p><p>Weitere Informationen finden Sie unter [Änderungsverwaltung für bestehende Produkte aktivieren](change-management-existing-products.md).</p> |
-| Technische Benachrichtigungen für die Produktion | <p>Wenn ein Produkt in der Konstruktion geändert wird, kann es wichtig sein, die Produktion über diese Änderungen zu informieren. Auf diese Weise können Produktionsmitarbeiter geeignete Maßnahmen ergreifen, z. B. Komponentenaustausch, Stücklistenaustausch oder Arbeitsplanaustausch. Mit dieser Funktion können Sie die Produktion über Änderungen an Produkten benachrichtigen, die gerade produziert werden.</p><p>Weitere Informationen finden Sie unter [Verwalten von Änderungen an Engineering-Produkten](engineering-change-management.md).</p> |
-| Verbesserte Attributvererbung für Konstruktionsänderungsmanagement | <p>Diese Funktion vereinfacht die Verwaltung von Attributen für Fertigwaren oder Zwischenartikel. Wenn diese Funktion aktiviert ist, ist es einfacher, alle Attribute zu identifizieren, die zu einem Element gehören, und Sie können die Attribute auswählen, die von diesem Element an sein übergeordnetes Element weitergegeben werden sollen. Diese Funktion ist nützlich, wenn beispielsweise eine Komponente eines Endprodukts zerbrechlich, giftig oder entflammbar ist, da Sie das zerbrechliche, giftige oder entflammbare Attribut leicht identifizieren und auf das Endprodukt übertragen können.</p><p>Weitere Informationen finden Sie unter [Engineering-Attribute und die Suche nach Engineering-Attributen](engineering-attributes-and-search.md).</p> |
-| Produktbereitschaftsprüfungen | <p>Diese Funktion ermöglicht die EInrichtung von Bereitschaftsprüfungen für Standardprodukte (nicht technische Produkte). Verwenden Sie Produktbereitschaftsprüfungen, um sicherzustellen, dass jedes Produkt vollständig definiert und alle erforderlichen Richtlinien konfiguriert sind, bevor das Produkt zur Verfügung gestellt und in Transaktionen verwendet wird. Wenn Sie diese Funktion nach längerer Nutzung deaktivieren, werden alle vorhandenen Bereitschaftsprüfungen für Standardprodukte gelöscht.</p><p>Weitere Informationen finden Sie unter [Produktbereitschaft](product-readiness.md).</p> |
-| Änderungen an Formeln und ihren Substanzen verwalten | <p>Mit dieser Funktion können Sie Änderungen an Formelinhaltsstoffen, Co-Produkten und Nebenprodukten verfolgen.</p><p>Weitere Informationen finden Sie unter [Verwalten Sie Änderungen in Formeln und deren Substanzen](manage-formula-changes.md).</p> |
-| Variantengenerierung für technische Produkte | <p>Mit dieser Funktion können Sie Varianten für Konstruktionsprodukte basierend auf verfügbaren Dimensionswerten generieren.</p><p>Weitere Informationen finden Sie unter [Generieren Sie Varianten für Engineering-Produkte](engineering-variants.md).</p> |
+| Änderungsmanagement für vorhandene Produkte aktivieren | <p>Mit dieser Funktion können Sie vorhandene Produkte in Konstruktionsprodukte umwandeln, damit Sie sie mithilfe der Änderungsverwaltung verwalten können.</p><p>Weitere Informationen finden Sie unter [Änderungsverwaltung für bestehende Produkte aktivieren](change-management-existing-products.md).</p> | Standardmäßig aktiviert ab Version 10.0.25. |
+| Technische Benachrichtigungen für die Produktion | <p>Wenn ein Produkt in der Konstruktion geändert wird, kann es wichtig sein, die Produktion über diese Änderungen zu informieren. Auf diese Weise können Produktionsmitarbeiter geeignete Maßnahmen ergreifen, z. B. Komponentenaustausch, Stücklistenaustausch oder Arbeitsplanaustausch. Mit dieser Funktion können Sie die Produktion über Änderungen an Produkten benachrichtigen, die gerade produziert werden.</p><p>Weitere Informationen finden Sie unter [Verwalten von Änderungen an Engineering-Produkten](engineering-change-management.md).</p> |  Standardmäßig aktiviert ab Version 10.0.25. |
+| Verbesserte Attributvererbung für Konstruktionsänderungsmanagement | <p>Diese Funktion vereinfacht die Verwaltung von Attributen für Fertigwaren oder Zwischenartikel. Wenn diese Funktion aktiviert ist, ist es einfacher, alle Attribute zu identifizieren, die zu einem Element gehören, und Sie können die Attribute auswählen, die von diesem Element an sein übergeordnetes Element weitergegeben werden sollen. Diese Funktion ist nützlich, wenn beispielsweise eine Komponente eines Endprodukts zerbrechlich, giftig oder entflammbar ist, da Sie das zerbrechliche, giftige oder entflammbare Attribut leicht identifizieren und auf das Endprodukt übertragen können.</p><p>Weitere Informationen finden Sie unter [Engineering-Attribute und die Suche nach Engineering-Attributen](engineering-attributes-and-search.md).</p> |  Standardmäßig aktiviert ab Version 10.0.25. |
+| Produktbereitschaftsprüfungen | <p>Diese Funktion ermöglicht die EInrichtung von Bereitschaftsprüfungen für Standardprodukte (nicht technische Produkte). Verwenden Sie Produktbereitschaftsprüfungen, um sicherzustellen, dass jedes Produkt vollständig definiert und alle erforderlichen Richtlinien konfiguriert sind, bevor das Produkt zur Verfügung gestellt und in Transaktionen verwendet wird. Wenn Sie diese Funktion nach längerer Nutzung deaktivieren, werden alle vorhandenen Bereitschaftsprüfungen für Standardprodukte gelöscht.</p><p>Weitere Informationen finden Sie unter [Produktbereitschaft](product-readiness.md).</p> |  Standardmäßig aktiviert ab Version 10.0.25. |
+| Änderungen an Formeln und ihren Substanzen verwalten | <p>Mit dieser Funktion können Sie Änderungen an Formelinhaltsstoffen, Co-Produkten und Nebenprodukten verfolgen.</p><p>Weitere Informationen finden Sie unter [Verwalten Sie Änderungen in Formeln und deren Substanzen](manage-formula-changes.md).</p> |  Standardmäßig aktiviert ab Version 10.0.25. |
+| Variantengenerierung für technische Produkte | <p>Mit dieser Funktion können Sie Varianten für Konstruktionsprodukte basierend auf verfügbaren Dimensionswerten generieren.</p><p>Weitere Informationen finden Sie unter [Generieren Sie Varianten für Engineering-Produkte](engineering-variants.md).</p> |  Standardmäßig aktiviert ab Version 10.0.25. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 

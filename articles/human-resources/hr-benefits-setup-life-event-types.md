@@ -14,19 +14,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 64e536bad996e9a1948dad18437ec6f98ad27033
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: df523dd4da11e24c7b601c8f34aef24ad6cb3b18
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691721"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337011"
 ---
 # <a name="configure-life-event-types"></a>Lebensereignistypen konfigurieren
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources verwendet **Lebensereignistypen**, um Ereignisse zu definieren, bei denen eine Aktualisierung der Anmeldung für Mitarbeiterleistungen zulässig ist, z.B. Heirat oder Geburt eines Kindes. Jede Kennung des Lebensereignistyps darf nur einem Lebensereignistyp zugeordnet werden. Wenn Sie z.B. eine **Lebensereignis-ID** mit der Bezeichnung **Adressänderung** erstellen, die mit der Lebensereignisart **Adressänderung eines Mitarbeiters** verknüpft ist, können Sie keine weitere ID mit der Bezeichnung **Adressänderung eines Mitarbeiters** erstellen und diese mit der Lebensereignisart **Adressänderung eines Mitarbeiters** verknüpfen. Wenn ein Lebensereignistyp nicht mit einem Plantyp verknüpft ist, löst der Lebensereignistyp kein Lebensereignis aus. Weitere Informationen finden Sie unter [Plantypen erstellen](hr-benefits-setup-plan-types.md).
 

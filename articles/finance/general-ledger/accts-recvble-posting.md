@@ -15,18 +15,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 492bbd31cae08a93cd68e5ce120d02a62141241b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0d679595a1f702c4e3ade138a87c817d245fcf79
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874573"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324328"
 ---
 # <a name="accounts-receivable-posting"></a>Debitorenbuchung
 
 [!include [banner](../includes/banner.md)]
 
 Das primäre Buchungsprofil für das Modul **Debitoren** ist das Buchungsprofil des Debitors. Dieses Buchungsprofil bestimmt das Sammelkonto, das verwendet wird, wenn die Salden der Debitoren im Hauptbuch gebucht werden. Ein Sammelkonto ist ein Hauptkonto. Es wird auch als Inzahlungnahme-Konto für Debitoren bezeichnet.
+
+Der Bericht **Debitor-/Sachkontenabstimmung** kann nach der Buchung verwendet werden, um die Salden von Debitoren- und Sachkonten abzustimmen. Der Bericht verwendet die Informationen, die im Sammelkonto für das Debitoren-Buchungsprofil gefunden werden. Er verwendet nicht das Sammelkonto aus der Buchhaltung, das für das Dokument erstellt wurde. Wenn Sie Änderungen am Debitoren-Buchungsprofil oder der Debitorengruppe vornehmen, die dem Debitor zugeordnet sind, nachdem Sie Transaktionen gebucht haben, zeigt der Bericht möglicherweise Differenzen zwischen dem Debitoren- und dem Sachkontosaldo an. Um nur die Positionen anzuzeigen, die Differenzen aufweisen, und alle Positionen, für die sowohl die Debitorenkonten als auch das Sachkonto auf null stehen, wählen Sie den Parameter **Nur Differenzen** beim Drucken des Berichts.
 
 Weitere Informationen finden Sie unter [Debitorenbuchungsprofile](../accounts-receivable/customer-posting-profiles.md).
 

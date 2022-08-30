@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-13
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: ccc3a8c4b3d0649397b1d1f9139f7feebf39b02f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f79497a24a5b4dd501bb0d13d9eaca7e98672533
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852504"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306113"
 ---
 # <a name="inventory-visibility-inventory-allocation"></a>Bestandszuordnung für Bestandsichtbarkeit
 
@@ -63,16 +63,15 @@ Die Bestandszuteilungsfunktion besteht aus den folgenden Komponenten:
 - Die vordefinierte, zuteilungsbezogene Datenquelle, physischen Maße und berechneten Maße.
 - Anpassbare Zuteilungsgruppen mit maximal acht Ebenen.
 - Eine Reihe von Anwendungsprogrammierschnittstellen (APIs) für die Zuteilung:
-
-    - zuordnen
-    - Neu zuordnen
-    - Zuordnung aufheben
-    - nutzen
-    - abfragen
+  - zuordnen
+  - Neu zuordnen
+  - Zuordnung aufheben
+  - nutzen
+  - abfragen
 
 Der Prozess zum Konfigurieren der Zuteilungsfunktion besteht aus zwei Schritten:
 
-- Richten Sie die [Datenquelle](inventory-visibility-configuration.md#data-source-configuration) und ihre[Maße](inventory-visibility-configuration.md#data-source-configuration-physical-measures) ein.
+- Richten Sie die [Datenquelle](inventory-visibility-configuration.md#data-source-configuration) und ihre [Maße](inventory-visibility-configuration.md#data-source-configuration-physical-measures) ein.
 - Richten Sie den Namen und die Hierarchie der Zuteilungsgruppe ein.
 
 ### <a name="predefined-data-source"></a>Vordefinierte Datenquelle
@@ -84,17 +83,15 @@ Die Datenquelle hat den Namen `@iv`
 Hier sind die ersten physikalischen Maßnahmen:
 
 - `@iv`
-
-    - `@allocated`
-    - `@cumulative_allocated`
-    - `@consumed`
-    - `@cumulative_consumed`
+  - `@allocated`
+  - `@cumulative_allocated`
+  - `@consumed`
+  - `@cumulative_consumed`
 
 Hier sind die ersten berechneten Maßnahmen:
 
 - `@iv`
-
-    - `@iv.@available_to_allocate` = `??` – `??` – `@iv.@allocated`
+  - `@iv.@available_to_allocate` = `??` – `??` – `@iv.@allocated`
 
 ### <a name="add-other-physical-measures-to-the-available-to-allocate-calculated-measure"></a>Fügen Sie andere physische Measures zu dem berechneten Measure „für Zuordnung verfügbar“ hinzu
 
@@ -102,13 +99,18 @@ Um die Zuteilung zu verwenden, müssen Sie die berechnete Kennzahl „für Zutei
 
 `@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound` – `@iv.@allocated`
 
+> [!NOTE]
+> Die Datenquelle `@iv` ist eine vordefinierte Datenquelle und die in `@iv` mit dem Präfix `@` festgelegten physischen Measures sind vordefinierte Measures. Diese Measures sind eine vordefinierte Konfiguration für die Zuordnungsfunktion, also ändern oder löschen Sie sie nicht, da Sie sonst wahrscheinlich auf unerwartete Fehler stoßen, wenn Sie die Zuordnungsfunktion verwenden.
+>
+> Sie können der vordefinierten berechneten Measure `@iv.@available_to_allocate` neue physische Measures hinzufügen, aber Sie dürfen ihren Namen nicht ändern.
+
 ### <a name="change-the-allocation-group-name"></a>Den Namen der Zuteilungsgruppe ändern
 
 Es können maximal acht Zuteilungsgruppennamen eingestellt werden. Die Gruppen haben eine Hierarchie.
 
 Sie legen die Gruppennamen auf der Seite **Power App-Konfiguration für Bestandsanzeige** fest. Um diese Seite zu öffnen, öffnen Sie die App für die Bestandsanzeige in Ihrer Microsoft Dataverse-Umgebung und wählen Sie **Konfiguration \> Zuteilung** aus.
 
-Wenn Sie beispielsweise vier Gruppennamen verwenden und diese auf \[`channel`,`customerGroup`,`region`,`orderType`\] festlegen, sind diese Namen für zuteilungsbezogene Anforderungen gültig, wenn Sie die Konfigurationsaktualisierungs-API aufrufen.
+Wenn Sie beispielsweise vier Gruppennamen verwenden und diese auf \[`channel`, `customerGroup`, `region`, `orderType`\] festlegen, sind diese Namen für zuteilungsbezogene Anforderungen gültig, wenn Sie die Konfigurationsaktualisierungs-API aufrufen.
 
 ### <a name="allocation-using-tips"></a>Zuteilung mit Tipps
 
@@ -136,7 +138,7 @@ Rufen Sie die `Allocate`-API zum Zuteilen eines Produkts mit bestimmten Dimensio
     "id": "string",
     "productId": "string",
     "dimensionDataSource": "string",
-    "targetGroups": {
+    "groups": {
         "groupA": "string",
         "groupB": "string",
         "groupC": "string"
@@ -157,7 +159,7 @@ Beispiel: Sie möchten dem Produkt *Fahrrad*, Standort *1*, Lagerplatz *11*, Far
 {
     "id": "???",
     "productId": "Bike",
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
@@ -192,7 +194,7 @@ Verwenden Sie die `Reallocate`-API, um eine zugeordnete Menge in eine andere Gru
         "groupB": "string",
         "groupC": "string"
     },
-    "targetGroups": {
+    "groups": {
         "groupD": "string",
         "groupE": "string",
         "groupF": "string"
@@ -218,7 +220,7 @@ Beispielsweise können Sie zwei Fahrräder mit den Dimensionen \[Standort=1, Lag
         "customerGroup": "VIP",
         "region": "US"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "EU"
@@ -242,7 +244,7 @@ Verwenden Sie die `Consume`-API zum Buchen der Nutzungsmenge gegen die Zuteilung
     "id": "string",
     "productId": "string",
     "dimensionDataSource": "string",
-    "targetGroups": {
+    "groups": {
         "groupA": "string",
         "groupB": "string",
         "groupC": "string"
@@ -262,7 +264,7 @@ Verwenden Sie die `Consume`-API zum Buchen der Nutzungsmenge gegen die Zuteilung
 }
 ```
 
-Beispielsweise gibt es acht zugeordnete Fahrräder mit den Dimensionen \[ Standort=1, Lagerplatz=11, Farbe=rot\] für Zuteilungsgruppe \[ Online, VIP, USA\]. Es wird die folgende Verfügbarkeitsformel verwendet:
+Beispielsweise gibt es acht zugeordnete Fahrräder mit den Dimensionen \[Standort=1, Lagerplatz=11, Farbe=rot\] für Zuteilungsgruppe \[Online, VIP, USA\]. Es wird die folgende Verfügbarkeitsformel verwendet:
 
 `@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound` – `@iv.@allocated`
 
@@ -280,7 +282,7 @@ Jetzt sind drei Fahrräder verkauft und werden aus dem Zuteilungspool genommen. 
         "locationId": "11",
         "colorId": "red"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
@@ -296,7 +298,7 @@ Jetzt sind drei Fahrräder verkauft und werden aus dem Zuteilungspool genommen. 
 
 Nach diesem Aufruf wird die zugeteilte Menge für das Produkt um 3 reduziert. Darüber hinaus generiert die Bestandsansicht ein Ereignis für verfügbare Änderungen, wobei `pos.inbound` = *-3* ist. Alternativ können Sie den `pos.inbound`-Wert behalten, wie er ist, und nur die zugeteilte Menge nutzen. In diesem Fall müssen Sie jedoch entweder ein anderes physikalisches Measure erstellen, um die genutzte Mengen beizubehalten, oder das vordefinierte Measure `@iv.@consumed` verwenden.
 
-Beachten Sie in dieser Anforderung, dass das physikalische Measure, das Sie im Anforderungstext der Nutzung verwenden, den entgegengesetzten Modifikatortyp (Addition oder Subtraktion) verwenden sollte, verglichen mit dem im berechneten Measure verwendeten Modifikatortyp. In diesem Nutzungstext hat ,`iv.inbound` also den Wert `Subtraction`, nicht `Addition`.
+Beachten Sie in dieser Anforderung, dass das physikalische Measure, das Sie im Anforderungstext der Nutzung verwenden, den entgegengesetzten Modifikatortyp (Addition oder Subtraktion) verwenden sollte, verglichen mit dem im berechneten Measure verwendeten Modifikatortyp. In diesem Nutzungstext hat, `iv.inbound` also den Wert `Subtraction`, nicht `Addition`.
 
 Die `fno`-Datenquelle kann nicht im Nutzungstext verwendet werden, da wir immer behauptet haben, dass die Bestandsichtbarkeit keine Daten für die `fno`-Datenquelle ändern kann. Der Datenfluss ist unidirektional, d. h. alle Mengenänderungen für die `fno`-Datenquelle müssen aus Ihrer Supply Chain Management-Umgebung stammen.
 
@@ -326,7 +328,7 @@ Wenn Sie eine Menge von 3 nutzen und diese Menge direkt reservieren möchten, k�
         "locationId": "11",
         "colorId": "red"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"

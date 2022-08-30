@@ -2,7 +2,7 @@
 title: Integration in Fertigungssteuerungssysteme von Drittanbietern
 description: In diesem Artikel wird erläutert, wie Sie Microsoft Dynamics 365 Supply Chain Management in ein Fertigungssteuerungssystem (Manufacturing Execution System, MES) eines Drittanbieters integrieren können.
 author: johanhoffmann
-ms.date: 10/01/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 46f6db3dd9942131b379216e6fffe5551d6c8fc3
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 8629ef2581a114609d14999a3c1fc48b49c988e0
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068030"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336214"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integration in Fertigungssteuerungssysteme von Drittanbietern
 
@@ -45,9 +45,7 @@ Bevor Sie diese Funktion nutzen können, muss ein Administrator sie in Ihrem Sys
     1. Auf der Seite **Lizenzkonfiguration** wählen Sie das **Zeit und Anwesenheit**-Kontrollkästchen aus.
     1. Schalten Sie den Wartungsmodus aus, wie in [Wartungsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) beschrieben.
 1. Wechseln Sie zu **Systemverwaltung \> Arbeitsbereiche \> Funktionsverwaltung**.
-1. Schalten Sie die Funktion ein, die auf folgende Weise aufgelistet ist (siehe auch [Übersicht über die Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)):
-    - **Modul:** *Produktionssteuerung*
-    - **Funktionsname:** *Integration des Fertigungssteuerungssystems*
+1. Verwenden Sie den Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zum Einschalten der Funktion *Fertigungssteuerungssystemintegration*. (Ab Supply Chain Management Version 10.0.29 ist diese Funktion standardmäßig aktiviert.)
 
 ## <a name="processes-available-for-mes-integration"></a>Verfügbare Prozesse für die MES-Integration
 

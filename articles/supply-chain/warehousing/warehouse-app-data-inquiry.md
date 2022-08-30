@@ -2,7 +2,7 @@
 title: Daten mit den Umleitungen der mobilen Warehouse Management-App abfragen
 description: In diesem Artikel wird beschrieben, wie Sie die Menüelemente für die Datenabfrage auf Mobilgeräten konfigurieren und als Teil von Umwegen verwenden.
 author: perlynne
-ms.date: 08/01/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: c3ea53379badb3cb2ed71b7f102956d71c3f047a
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: cc013e962b4da803764f16e451b1d433666e75c2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220539"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336604"
 ---
 # <a name="query-data-using-warehouse-management-mobile-app-detours"></a>Daten mit den Umleitungen der mobilen Warehouse Management-App abfragen
 
@@ -35,21 +35,21 @@ Beispielsweise ist im Bestelleingangsablauf eine Bestellnummer erforderlich, um 
 Bevor Sie die in diesem Artikel beschriebene Funktionalität verwenden können, müssen Sie das folgende Verfahren ausführen, um die erforderlichen Features zu aktivieren.
 
 1. Wechseln Sie zu **Systemverwaltung \> Arbeitsbereiche \> Funktionsverwaltung**. (Weitere Informationen zum Arbeitsbereich **Funkionsverwaltung** finden Sie unter [Funktionsverwaltung Übersicht](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
-1. Aktivieren Sie die Funktion, die folgendermaßen aufgelistet ist:
+1. Wenn Sie Supply Chain Management Version 10.0.28 oder früher ausführen, schalten Sie die Funktion ein, die wie folgt aufgelistet ist:
 
     - **Module:** *Lagerortverwaltung*
     - **Name der Funktion:** *Schrittanweisungen für die App "Lager"*
 
-    Diese Funktion ist Voraussetzung für die Funktion *Datenabfrage-Flow in der Warehouse Management-App*. Für weitere Informationen über die Funktion *Schrittanleitung für die Warehouse-App* siehe [Passen Sie Schritttitel und Anweisungen für die mobile Warehouse Management-App an](mobile-app-titles-instructions.md).
+    Diese Funktion ist Voraussetzung für die Funktion *Datenabfrage-Flow in der Warehouse Management-App*. Ab Supply Chain Management Version 10.0.29 ist es obligatorisch und kann nicht deaktiviert werden. Für weitere Informationen über die Funktion *Schrittanleitung für die Warehouse-App* siehe [Passen Sie Schritttitel und Anweisungen für die mobile Warehouse Management-App an](mobile-app-titles-instructions.md).
 
 1. Aktivieren Sie die Funktion, die folgendermaßen aufgelistet ist:
 
     - **Module:** *Lagerortverwaltung*
     - **Funktionsname:** *Umwege über die Warehouse Management-App*
 
-    Diese Funktion ist Voraussetzung für die Funktion *Datenabfrage-Flow in der Warehouse Management-App*. Für weitere Informationen über die Funktion *Umleitung für Warehouse Management-App*, siehe [Umleitungen für Schritte in den Menüpunkten des Mobilgeräts konfigurieren](warehouse-app-detours.md).
+    Diese Funktion ist Voraussetzung für die Funktion *Datenabfrage-Flow in der Warehouse Management-App*. Ab Supply Chain Management Version 10.0.29 ist sie standardmäßig aktiviert. Für weitere Informationen über die Funktion *Umleitung für Warehouse Management-App*, siehe [Umleitungen für Schritte in den Menüpunkten des Mobilgeräts konfigurieren](warehouse-app-detours.md).
 
-1. Wie die Funktion *Umleitung für Warehouse Management-App* nicht bereits aktiviert ist, aktualisieren Sie die Feldnamen in der mobilen App für Warehouse Management, indem Sie zu **Lagerverwaltung\> Einstellungen \> Mobiles Gerät \> Feldnamen der Warehouse-App** und wählen **Standard-Setup** erstellen. Wiederholen Sie diesen Schritt für jede juristische Person (Firma), in der Sie die mobile App Warehouse Management verwenden. Weitere Informationen finden Sie unter [Felder für die Warehouse Management Mobile App konfigurieren](configure-app-field-names-priorities-warehouse.md).
+1. Wie die Funktion *Umleitung für Warehouse Management-App* nicht bereits aktiviert ist, aktualisieren Sie die Feldnamen in der mobilen App für Warehouse Management, indem Sie zu **Lagerverwaltung \> Einstellungen \> Mobiles Gerät \> Feldnamen der Warehouse-App** und wählen **Standard-Setup** erstellen. Wiederholen Sie diesen Schritt für jede juristische Person (Firma), in der Sie die mobile App Warehouse Management verwenden. Weitere Informationen finden Sie unter [Felder für die Warehouse Management Mobile App konfigurieren](configure-app-field-names-priorities-warehouse.md).
 1. Aktivieren Sie die Funktion, die folgendermaßen aufgelistet ist:
 
     - **Module:** *Lagerortverwaltung*

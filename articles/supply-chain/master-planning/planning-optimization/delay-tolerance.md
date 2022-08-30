@@ -2,7 +2,7 @@
 title: Verzögerungstoleranz (negative Tage)
 description: Dieser Artikel enthält Informationen über die Berechnung der Verzögerungstoleranz und wie sie sich auf die Erstellung geplanter Aufträge in der Planungsoptimierung auswirkt.
 author: t-benebo
-ms.date: 07/30/2021
+ms.date: 08/09/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: e1c9a9b618184303efe2bd10975e46423cca9ccc
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: fa4d2d1506546cacf5f9a7ec936f17601c5727d2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219966"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335374"
 ---
 # <a name="delay-tolerance-negative-days"></a>Verzögerungstoleranz (negative Tage)
 
@@ -23,11 +23,11 @@ ms.locfileid: "9219966"
 
 Die Verzögerungstoleranz-Funktionalität ermöglicht der Planungsoptimierung, den Wert **Negative Tage** zu berücksichtigen, der für Dispositionssteuerungsgruppe, Artikelabdeckung und/oder Produktprogrammplan festgelegt ist. Sie wird verwendet, um die Verzögerungstoleranz zu verlängern, die während der Produktprogrammplanung angewendet wird. Auf diese Weise können Sie vermeiden, neue Vorräte zu erstellen, wenn der vorhandene Vorrat den Bedarf nach einer kurzen Verzögerung decken kann. Der Zweck der Funktionalität besteht darin, festzustellen, ob es sinnvoll ist, einen neuen Vorrat für einen bestimmten Bedarf zu erstellen.
 
-## <a name="turn-on-the-feature-in-your-system"></a>Funktion in Ihrem System aktivieren
+## <a name="turn-delay-tolerance-features-on-or-off"></a>Die Verzögerungstoleranz-Funktion ein- oder ausschalten
 
 Um die Verzögerungstoleranz-Funktionalität in Ihrem System verfügbar zu machen, gehen Sie zu [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und schalten Sie die folgenden Funktionen ein:
 
-- *Negative Tage für die Planungsoptimierung*: Diese Funktion ermöglicht Einstellungen für negative Tage für Dispositionssteuerungsgruppen und Artikelabdeckung.
+- *Negative Tage für die Planungsoptimierung*: Diese Funktion ermöglicht Einstellungen für negative Tage für Dispositionssteuerungsgruppen und Artikelabdeckung. Ab Supply Chain Management Version 10.0.29 ist die Funktion obligatorisch und kann nicht deaktiviert werden.
 - *Automatisierung der Lieferungen zur Auftragsfertigung*: Diese Funktion aktiviert Einstellungen für negative Tage für Produktprogrammpläne. (Weitere Informationen finden Sie unter [Automatisierung der Lieferungen zur Auftragsfertigung](../make-to-order-supply-automation.md).)
 
 ## <a name="delay-tolerance-in-planning-optimization"></a>Verzögerungstoleranz in der Planungsoptimierung

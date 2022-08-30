@@ -2,7 +2,7 @@
 title: Sperrung von Lagerbestand
 description: Dieser Artikel gibt einen Überblick über die Sperrung von Lagerbestand, die Teil des Qualitätsprüfungsprozesses in Supply Chain Management ist. Sie können die Sperrung von Lagerbestand verwenden, um die Verarbeitung oder den Verbrauch von Artikeln zu verhindern.
 author: yufeihuang
-ms.date: 03/02/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7a16c41b56b30098945a6fbdb02577624b6e173
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 83b5417dc24af85f09e6713f2b12fdc358f61d54
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857807"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334684"
 ---
 # <a name="inventory-blocking"></a>Sperrung von Lagerbestand
 
@@ -65,7 +65,7 @@ Sie können angeben, welche Lagerstatus Sperrenstatus sind, indem Sie den Parame
 
 ## <a name="take-care-when-blocking-items-that-use-both-inventory-status-blocking-and-quality-order-blocking"></a>Seien Sie vorsichtig, wenn Sie Artikel sperren, die sowohl die Sperrung des Bestands als auch die Sperrung des Qualitätsauftrags verwenden
 
-Sie können einen Qualitätsauftrag erstellen, der mit einem Bestand verbunden ist, der einen Bestandsstatus hat, bei dem der Parameter **Bestandsblockierung** aktiviert ist. In diesem Fall erzeugt der Qualitätsauftrag einen zusätzlichen Datensatz für die Bestandssperre, zusätzlich zu dem, der durch den Bestandsstatus erstellt wird. Da für den Qualitätsauftrag Bestandsblockierung der Parameter **Erwartete Eingänge** aktiviert ist, erzeugt dies eine zusätzliche Transaktion *Bestellter Bestand*, die ebenfalls durch den Bestandsstatus blockiert ist. Diese Kombination kann zu Schwierigkeiten beim Verständnis der Bedeutung der generierten Bestandstransaktionen führen, weil es so aussieht, als ob die gesperrte Gesamtmenge die Gesamtmenge im Lagerbestand übersteigt. Untersuchen wir die Transaktionen am Beispiel eines Eingangs von 10 Stück des Artikels A0001 mit einem generierten Qualitätsauftrag zur Entnahme von 1 Stück. Das Verhalten hängt auch davon ab, ob die Option **Bestellte Artikel reservieren** auf der Seite **Parameter der Bestands- und Lagerortverwaltung** aktiviert ist.
+Sie können einen Qualitätsauftrag erstellen, der mit einem Bestand verbunden ist, der einen Bestandsstatus hat, bei dem der Parameter **Bestandsblockierung** aktiviert ist. In diesem Fall erzeugt der Qualitätsauftrag einen zusätzlichen Datensatz für die Bestandssperre, zusätzlich zu dem, der durch den Bestandsstatus erstellt wird. Da für den Qualitätsauftrag Bestandsblockierung der Parameter **Erwartete Eingänge** aktiviert ist, erzeugt dies eine zusätzliche Transaktion *Bestellter Bestand*, die ebenfalls durch den Bestandsstatus blockiert ist. Diese Kombination kann zu Schwierigkeiten beim Verständnis der Bedeutung der generierten Bestandstransaktionen führen, weil es so aussieht, als ob die gesperrte Gesamtmenge die Gesamtmenge im Lagerbestand übersteigt. Untersuchen wir die Transaktionen am Beispiel eines Eingangs von 10 Stück des Artikels A0001 mit einem generierten Qualitätsauftrag zur Entnahme von 1 Stück. Das Verhalten hängt auch davon ab, ob die Option **Bestellte Artikel reservieren** auf der Seite **Parameter für Lager- und Lagerortverwaltung** aktiviert ist.
 
 >[!NOTE]
 >Wenn Sie Bestandssperre und Qualitätsaufträge zusammen verwenden, empfehlen wir dringend, die Option **Bestellte Artikel reservieren** aktiviert zu haben.
@@ -96,11 +96,11 @@ Wenn **Bestellte Artikel reservieren** deaktiviert ist, können die erwarteten E
 
 Beachten Sie den Unterschied im Transaktionsstatus und in den Dimensionen zwischen den beiden Fällen. Aus diesem Grund empfehlen wir, die Option **Bestellte Artikel reservieren** zu aktivieren.
 
-### <a name="disable-expected-receipts-from-quality-orders-that-sample-blocked-inventory-feature"></a>Erwartete Zugänge aus Qualitätsprüfungsaufträgen mit gesperrter Bestandsfunktion deaktivieren
+## <a name="disable-expected-receipts-from-quality-orders-that-sample-blocked-inventory"></a>Erwartete Zugänge aus Qualitätsprüfungsaufträgen mit gesperrtem Beispielbestand deaktivieren
 
 Um die Lagerbuchungen im Fall von Qualitätsprüfungsaufträgen zu vereinfachen, bei denen der Beispielbestand als Folge des Bestandsstatus gesperrt ist, stellt das System eine Funktion bereit, das erwartete Zugänge von solchen Qualitätsprüfungsaufträgen deaktiviert. Da der erwartete Zugang sofort durch die Sperrung des Bestandsstatus gesperrt wird, wird der Bestand aufgrund dieser Änderung nicht gesenkt.
 
-Diese Funktion ist standardmäßig deaktiviert. Administratoren können es ein- oder ausschalten, indem sie nach der Funktion *Erwartete Zugänge aus Qualitätsprüfungsaufträgen mit gesperrtem Beispielbestand deaktivieren* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
+Um diese Funktion nutzen zu können, muss sie für Ihr System aktiviert werden. Ab Supply Chain Management Version 10.0.29 ist die Funktion standardmäßig aktiviert. Administratoren können diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Erwartete Zugänge aus Qualitätsprüfungsaufträgen mit gesperrtem Beispielbestand deaktivieren* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

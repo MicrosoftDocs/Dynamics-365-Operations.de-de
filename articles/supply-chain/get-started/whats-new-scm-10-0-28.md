@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 09a01a9100b5fc17317d40a8b3e4dbd1aae92e8b
-ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
+ms.openlocfilehash: 5cca06517fbdcbdae6e54c106b113a83851240c8
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2022
-ms.locfileid: "9228480"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334774"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10028-august-2022"></a>Neuerungen und Änderungen in Dynamics 365 Supply Chain Management 10.0.28 (August 2022)
 
@@ -36,7 +36,7 @@ Die folgende Tabelle listet die Funktionen auf, die in dieser Version enthalten 
 | Bestand und Logistik | [Entitäten zur Integration von Gesamttransportkosten für Speditionen Dritter](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/landed-cost-integration-third-party-freight-forwarders) | [Gesamttransportkosten Entitäten Übersicht](../landed-cost/landed-cost-entities-overview.md) | Standardmäßig aktiviert |
 | Planung | [Bedarfsgesteuerte Materialbedarfsplanung (DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | [Bedarfsgesteuerte Planung im Überblick](../master-planning/planning-optimization/ddmrp-overview.md) | Funktionsverwaltung:<br>*(Vorschauversion) DDMRP für Planungsoptimierung* |
 | Planung | [Unterstützung der Planungsoptimierung für Verfügbarkeitszusagen (CTP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capable-to-promise-ctp) | [Liefertermine für Kundenaufträge mit CTP berechnen](../master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md) | Funktionsverwaltung:<br>*(Vorschauversion) Verfügbarkeitszusage für die Planungsoptimierung* |
-| Planung | [Unterstützung der Planungsoptimierung für die Haltbarkeitsdauer](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | Demnächst | Standardmäßig aktiviert |
+| Planung | [Unterstützung der Planungsoptimierung für die Haltbarkeitsdauer](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | [Produktprogrammplanung für Produkte mit begrenzter Haltbarkeit](../master-planning/planning-optimization/shelf-life.md) | Standardmäßig aktiviert |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Funktionsverbesserungen In dieser Version enthalten
 
@@ -46,7 +46,7 @@ Wenn Sie eine dieser Funktionen ein‑ oder ausschalten möchten, müssen Sie di
 
 | Modul | Funktion Name in FunktionVerwaltung | Mehr erfahren |
 |---|---|---|
-| Lager- und Lagerortverwaltung | Aktivieren Sie den Intercompany Lagerbestand, um nur Lagerbestände ungleich Null anzuzeigen. | Mit dieser Funktion können Sie festlegen, ob Artikel mit einem Lagerbestand von Null in die Intercompany-Bestandsliste aufgenommen werden sollen. Sie können diese Option über die Einstellung **Artikel mit einem Lagerbestand von Null in der Intercompany-Bestandsliste nicht anzeigen** steuern, die diese Funktion auf der Seite **Parameter der Bestands- und Lagerverwaltung** festlegt. |
+| Lager- und Lagerortverwaltung | Aktivieren Sie den Intercompany Lagerbestand, um nur Lagerbestände ungleich Null anzuzeigen. | Mit dieser Funktion können Sie festlegen, ob Artikel mit einem Lagerbestand von Null in die Intercompany-Bestandsliste aufgenommen werden sollen. Sie können diese Option über die Einstellung **Artikel mit einem Lagerbestand von Null in der Intercompany-Bestandsliste nicht anzeigen** steuern, die diese Funktion auf der Seite **Parameter für Lager- und Lagerortverwaltung** festlegt. |
 | Lager- und Lagerortverwaltung | (Indien) Bei Verrechnungspreisregeln wird der Lagerplatz ignoriert, wenn „Von Lagerortcode“ auf „Alle“ festgelegt ist. | <p>Diese Funktion gilt nur für indische Lokalisierungen. Es macht das Festlegen von Transferpreisen für Artikel in Umlagerungen intuitiver.</p><p>Sie legen die Verrechnungspreise fest, indem Sie jeden Artikel mit Verrechnungspreisregeln konfigurieren. Eine Möglichkeit, diese Konfiguration vorzunehmen, besteht darin, eine Regelzeile einzufügen, in der das Feld **Aus Lagercode** auf *Alle* festgelegt ist. Diese Einstellung gibt an, dass der in der Zeile festgelegte Verrechnungspreis unabhängig von dem Lager gelten soll, aus dem der Artikel kommissioniert wird. Wenn diese Funktion aktiviert ist, ignorieren Verrechnungspreisregeln, bei denen das Feld **Aus Lagercode** auf *Alle* festgelegt ist, die Einstellung **Ort**. Daher gilt die Regel unabhängig von dem Ort, der auf dem Umlagerungsauftrag angegeben ist. Dieses Verhalten ist wahrscheinlich das, was erwartet wird, da der Ort in der Hierarchie der Dimensionen unterhalb des Lagers liegt.</p><p>Ohne diese Funktion wendet das System Regeln dieser Art nur an, wenn der Ort auf dem Umlagerungsauftrag genau mit dem Ort übereinstimmt, der für die Regel festgelegt ist. (Wenn für die Regel ein leerer Ort festgelegt ist, wendet das System die Regel nur auf Umlagerungsaufträge an, die ebenfalls einen leeren Wert für den Ort haben.)</p> |
 | Lager- und Lagerortverwaltung | Daten im Lagerbestandbericht bereinigen | Mit dieser Funktion können Sie die Daten bereinigen, die zum Erstellen von *Bestandsberichten für Lagerbestände* verwendet werden. |
 | Produktionssteuerung | Projektaktivitäten für Servicevertrags- und Serviceauftragszeilen zuweisen | Diese Funktion fügt den Zeilen von Servicevereinbarungen und Serviceaufträgen ein Feld mit der Bezeichnung **Projektaktivität** hinzu, so dass Sie eine Projektaktivität für diese Zeilen festlegen können. Die Funktion hilft Ihnen, Blockierungsfehler zu vermeiden, wenn Sie Erfassungen von Service-Management-Projekten buchen, die das Festlegen einer Projektaktivität erfordern.  |

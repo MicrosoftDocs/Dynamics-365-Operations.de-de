@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 935c2e6cb45df193e6cbf70634f3561154c6fe38
-ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
+ms.openlocfilehash: 20a2ffb44f9b99800146e3365e6f0d6df8e9a75e
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9178532"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324259"
 ---
 # <a name="copy-an-instance"></a>Instanz kopieren
 
@@ -47,13 +47,14 @@ Beachten Sie beim Kopieren einer Instanz die folgenden Hinweise:
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>Auswirkungen des Kopierens einer Human Resources-Datenbank
 
+> [!Note]
+> Ab August 2022 sind Dokumente in Microsoft Azure Blob Storage Kopieren einer Produktionsumgebung in eine Sandbox-Umgebung enthalten. Alle angehängten Dokumente und Vorlagen werden aus der Quellumgebung in die Zielumgebung kopiert.
+
 Die folgenden Ereignisse treten auf, wenn Sie eine Human Resources-Datenbank kopieren:
 
 - Der Kopiervorgang löscht die vorhandene Datenbank in der Zielumgebung. Nach Abschluss des Kopiervorgangs können Sie die vorhandene Datenbank nicht wiederherstellen.
 
 - Die Zielumgebung ist erst verfügbar, wenn der Kopiervorgang abgeschlossen ist.
-
-- Dokumente im Microsoft Azure Blob-Speicher werden nicht von einer Umgebung in eine andere kopiert. Als Ergebnis werden angehängte Dokumente und Vorlagen nicht kopiert und verbleiben in der Quellumgebung.
 
 - Alle Benutzer außer denen mit der Sicherheitsrolle „Systemadministrator“ und andere interne Dienstbenutzerkonten sind nicht verfügbar. Der Admin-Benutzer kann Daten löschen, bevor andere Benutzer wieder in das System zugelassen werden.
 

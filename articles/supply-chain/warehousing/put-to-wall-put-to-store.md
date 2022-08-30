@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e020bd3973b8b56dd1e6f3e5bdc8cba32600f7f8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: af6dcb6d822ab14b0b4b881ca32626ea6eae4c28
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909642"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334505"
 ---
 # <a name="put-to-wall---put-to-store"></a>Put-to-Wall - Put-to-Store
 
@@ -32,7 +32,7 @@ Auf diese Warehousing-Funktion wird auch mit anderen Namen verwiesen, z. B. Aufl
 
 ## <a name="turn-on-the-outbound-sorting-feature"></a>Aktivieren der Funktion „Ausgangssortierung“
 
-Bevor Sie die Funktion *Put-to-Wall - Put-to-Store* verwenden können, muss die *Ausgangssortierung* in Ihrem System aktiviert sein. Administratoren können mit der Einstellung [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und ggf. aktivieren. Dort wird die Funktion folgendermaßen aufgelistet:
+Bevor Sie die Funktion *Put-to-Wall - Put-to-Store* verwenden können, muss die *Ausgangssortierung* für Ihr System aktiviert sein. Administratoren können mit der Einstellung [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und ggf. aktivieren. Dort wird die Funktion folgendermaßen aufgelistet:
 
 - **Module:** *Lagerortverwaltung*
 - **Funktionsname:** *Ausgangssortierung*

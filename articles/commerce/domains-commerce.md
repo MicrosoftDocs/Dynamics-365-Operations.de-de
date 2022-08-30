@@ -2,7 +2,7 @@
 title: Domänen in Dynamics 365 Commerce
 description: In diesem Artikel wird beschrieben, wie Domänen in Microsoft Dynamics 365 Commerce behandelt werden.
 author: BrianShook
-ms.date: 05/10/2022
+ms.date: 08/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
 ms.search.industry: retail
 ms.search.form: ''
-ms.openlocfilehash: 9bd925b7bf27748b3c17946de72a76bc0d0200d7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 08d6d52175bb7a77259cbd38b15f466deeab0846
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9288448"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336716"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domänen in Dynamics 365 Commerce
 
@@ -109,6 +109,10 @@ Der `<e-commerce tenant name>.dynamics365commerce.ms`-Endpunkt unterstützt kein
 Um benutzerdefinierte Domänen mithilfe eines Front-Door-Dienstes oder eines CDN einzurichten, haben Sie zwei Möglichkeiten:
 
 - Richten Sie einen Front-Door-Dienst wie Azure Front Door ein, um den Front-End-Verkehr zu verarbeiten und eine Verbindung mit Ihrer Commerce-Umgebung herzustellen. Dies bietet eine bessere Kontrolle über die Domänen- und Zertifikatverwaltung sowie detailliertere Sicherheitsrichtlinien.
+
+> [!NOTE]
+> Wenn Sie einen externen CDN- oder Front-Door-Dienst verwenden, stellen Sie sicher, dass die Anforderung mit dem von Commerce bereitgestellten Hostnamen, aber mit dem Header X-Forwarded-Host (XFH) \<custom-domain\> auf der Commerce-Plattform landet. Wenn Ihr Commerce-Endpunkt beispielsweise `xyz.dynamics365commerce.ms` und die benutzerdefinierte Domäne `www.fabrikam.com` lautet, sollte der Hostheader der weitergeleiteten Anforderung `xyz.dynamics365commerce.ms` lauten und der XFH-Header sollte `www.fabrikam.com` sein.
+
 - Verwenden Sie die von Commerce bereitgestellte Azure Front Door-Instanz. Dies erfordert eine Abstimmung mit dem Dynamics 365 Commerce-Team für die Domänenüberprüfung und den Erhalt von SSL-Zertifikaten für Ihre Produktionsdomäne.
 
 Informationen zum direkten Einrichten eines CDN-Dienstes finden Sie unter [Unterstützung für ein Content Delivery Network (CDN) hinzufügen](add-cdn-support.md).
@@ -141,14 +145,18 @@ Für vorhandene/aktive Domänen:
 
 ## <a name="apex-domains"></a>Apex-Domänen
 
-Die von Commerce bereitgestellte Azure Front Door-Instanz unterstützt keine Apex-Domänen (Stammdomänen, die keine Subdomänen enthalten). Für die Auflösung von Apex-Domänen ist eine IP-Adresse erforderlich, und die Commerce Azure-Front Door-Instanz ist nur mit virtuellen Endpunkten vorhanden. Um eine Apex-Domain zu verwenden, haben Sie zwei Möglichkeiten:
+Die von Commerce bereitgestellte Azure Front Door-Instanz unterstützt keine Apex-Domänen (Stammdomänen, die keine Subdomänen enthalten). Für die Auflösung von Apex-Domänen ist eine IP-Adresse erforderlich, und die Commerce Azure-Front Door-Instanz ist nur mit virtuellen Endpunkten vorhanden. Um eine Apex-Domain zu verwenden, haben Sie die folgenden Möglichkeiten:
 
 - **Option 1** – Verwenden Sie Ihren DNS-Anbieter, um die Apex-Domäne in eine „www“ -Domäne umzuleiten. Beispielsweise leitet fabrikam.com an `www.fabrikam.com` weiter, wo `www.fabrikam.com` der CNAME-Datensatz ist, der auf die von Commerce gehostete Azure Front Door-Instanz verweist.
 
-- **Option 2** – Richten Sie selbst eine CDN/Front Door-Instanz ein, um die Apex-Domäne zu hosten.
+- **Option 2**: Wenn Ihr DNS-Anbieter ALIAS-Datensätze unterstützt, können Sie die Apex-Domäne auf den Front-Door-Endpunkt verweisen. Dadurch wird sichergestellt, dass die IP-Änderung durch den Front-Door-Endpunkt widergespiegelt wird.
+  
+- **Option 3**: Wenn Ihr DNS-Anbieter keine ALIAS-Datensätze unterstützt, müssen Sie selbst eine CDN- oder Front-Door-Instanz einrichten, um die Apex-Domäne zu hosten.
 
 > [!NOTE]
 > Wenn Sie Azure Front Door verwenden, müssen Sie im selben Abonnement auch ein Azure-DNS einrichten. Die auf Azure DNS gehostete Apex-Domäne kann als Alias-Eintrag auf Ihre Azure-Fornt-Door verweisen. Dies ist die einzige Problemumgehung, da Apex-Domänen immer auf eine IP-Adresse verweisen müssen.
+  
+Wenn Sie Fragen zu Apex-Domänen haben, wenden Sie sich bitte an den [Microsoft-Support](https://support.microsoft.com/).
 
   ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

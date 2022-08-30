@@ -2,7 +2,7 @@
 title: Fest geplante Aufträge
 description: Dieser Artikel erklärt, wie Sie geplanter Aufträge umwandeln können. Wenn geplante Aufträge umgewandelt werden, werden sie zu tatsächlichen Kaufbestellungen, Transportaufträgen oder Produktionsaufträgen.
 author: t-benebo
-ms.date: 04/22/2021
+ms.date: 08/09/2022
 ms.search.form: ReqTransPo, ReqTransFirmLog
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 24b5c6cb7e97924ebace8f7131a87e9bffea22e0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7c8d5b7992c7955b9c5b1c7e773fdd467ccba6f9
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857517"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335344"
 ---
 # <a name="firm-planned-orders"></a>Fest geplante Aufträge
 
@@ -37,19 +37,21 @@ Die meisten Funktionen für geplante Aufträge sind in allen Standardinstallatio
 
 ### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Parallelisierte Umwandlung geplanter Aufträge an- oder ausschalten
 
-Die parallelisierte Umwandlung hilft, den Umwandlungsprozess zu beschleunigen, indem er über mehrere Threads parallelisiert wird. Diese Vorgehensweise kann sinnvoll sein, wenn viele geplante Aufträge umgewandelt werden. Um diese Funktionalität nutzen zu können, muss die Funktion *Parallele Umwandlung geplanter Aufträge* für Ihr System aktiviert sein. Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Sie diese Funktionalität ein- oder ausschalten, indem sie die [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) öffnen und nach der Funktion *Parallelisierte Umwandlung geplanter Aufträge* suchen.
+Die parallelisierte Umwandlung hilft, den Umwandlungsprozess zu beschleunigen, indem er über mehrere Threads parallelisiert wird. Diese Vorgehensweise kann sinnvoll sein, wenn viele geplante Aufträge umgewandelt werden. Um diese Funktionalität nutzen zu können, muss die Funktion *Parallele Umwandlung geplanter Aufträge* für Ihr System aktiviert sein. 
 
-### <a name="enable-planned-order-firming-with-filtering"></a>Ermöglicht das Umwandeln geplanter Aufträge mit Filterung
+Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Ab Supply Chain Management 10.0.25 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.25 ausführen, können Sie diese Funktionalität ein- oder ausschalten, indem sie die [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) öffnen und nach der Funktion *Parallelisierte Umwandlung geplanter Aufträge* suchen.
+
+### <a name="turn-planned-order-firming-with-filtering-on-or-off"></a>Umwandlung von Bestellvorschlägen mit Filtern an- oder ausschalten
 
 Bei der Umwandlung geplanter Aufträge mit Filterung können Sie logische Kriterien für die Auswahl der zu wandelnden geplanten Aufträge definieren. Sie können auch eine Vorschau anzeigen, welche geplanten Aufträge ausgewählt wurden, den Prozess im Hintergrund ausführen und/oder ihn als Batchauftrag einplanen.
 
-Ab Supply Chain Management Version 10.0.25 ist diese Funktion standardmäßig aktiviert. Administratoren können diese Funktionalität an- oder ausschalten, indem Sie nach der Funktion *Parallelisierte Umwandlung geplanter Aufträge* im Arbeitsbereich [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
+Um diese Funktion nutzen zu können, muss sie für Ihr System aktiviert werden. Ab Supply Chain Management Version 10.0.25 ist die Funktion standardmäßig aktiviert. Ab Supply Chain Management Version 10.0.29 ist die Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.29 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Umwandlung von Bestellvorschlägen mit Filtern* im Arbeitsbereich [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
-### <a name="enable-auto-firming-for-planning-optimization"></a>Aktivieren Sie die automatische Umwandlung für die Planungsoptimierung
+### <a name="turn-auto-firming-for-planning-optimization-on-or-off"></a>Automatische Umwandlung für die Planungsoptimierung an- und ausschalten
 
 Mit der automatischen Fixierung können Sie geplanter Aufträge als Teil der Produktprogrammplanung während des Fixierungszeitfensters fixieren. Die automatische Umwandlung wird immer für die in Supply Chain Management eingebaute Planungs-Engine unterstützt. Um sie jedoch auch mit der Planungsoptimierung zu verwenden, müssen Sie die Funktion einschalten.
 
-Um diese Funktion in Ihrem System verfügbar zu machen, gehen Sie zu [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und schalten Sie die Funktion *Automatische Umwandlung für Planungsoptimierung* ein. (Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert.)
+Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Ab Supply Chain Management 10.0.29 ist diese Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.29 ausführen, können Sie diese Funktionalität ein- oder ausschalten, indem sie die [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) öffnen und nach der Funktion *Automatische Umwandlung für die Planungsoptimierung* suchen.
 
 ## <a name="manually-firm-planned-orders"></a>Geplante Aufträge manuell umwandeln
 
@@ -67,8 +69,8 @@ Um geplanter Aufträge manuell zu fixieren, suchen Sie die geplanter Aufträge, 
 
     - **Markierung aktualisieren** – Wählen Sie die Richtlinie für die Bestandsmarkierung, die verwendet werden soll, wenn geplanter Aufträge umgewandelt werden.
     - **Fixierung stoppen, wenn ein Fehler auftritt** – Legen Sie diese Option auf *Ja* fest, um die Umwandlung aller ausgewählten geplanten Aufträge zu stoppen, wenn ein Fehler in einem von ihnen auftritt. Diese Option muss auf *Nein* festgelegt werden, wenn die Option **Parallelisierung der Umwandlung** auf *Ja* festgelegt ist.
-    - **Parallele Umwandlung** – Diese Option ist nur verfügbar, wenn die Funktion [*Parallele Umwandlung geplanter Aufträge* in Ihrem System eingeschaltet ist](#enable-features) und wenn Sie zwei oder mehr geplante Aufträge zur Umwandlung ausgewählt haben. Legen Sie es auf *Ja* fest, um die Umwandlungen parallel auszuführen. Die parallele Umwandlung kann zu einer Leistungssteigerung beitragen.
-    - **Anzahl der Threads** – Diese Option ist nur verfügbar, wenn die [Funktion *Parallele Umwandlung geplanter Aufträge*](#enable-features) in Ihrem System eingeschaltet ist und wenn Sie die Option **Parallele Umwandlung** auf *Ja* festgelegt haben. Geben Sie die Anzahl der Threads ein, die zur Parallelisierung der Umwandlung verwendet werden sollen. Hinweise zur Verwendung dieser Option in der Produktprogrammplanung finden Sie unter [Verbessern der Leistung der Produktprogrammplanung](../master-planning-performance.md#number-of-threads).
+    - **Parallele Umwandlung** – Diese Option ist nur verfügbar, wenn die [Funktion *Parallele Umwandlung von Bestellvorschlägen*](#enable-features) für Ihr System eingeschaltet ist und wenn Sie zwei oder mehr geplante Aufträge zur Umwandlung ausgewählt haben. Legen Sie es auf *Ja* fest, um die Umwandlungen parallel auszuführen. Die parallele Umwandlung kann zu einer Leistungssteigerung beitragen.
+    - **Anzahl der Threads** – Diese Option ist nur verfügbar, wenn die [Funktion *Parallele Umwandlung von Bestellvorschlägen*](#enable-features) für Ihr System eingeschaltet ist und wenn Sie die Option **Parallele Umwandlung** auf *Ja* festgelegt haben. Geben Sie die Anzahl der Threads ein, die zur Parallelisierung der Umwandlung verwendet werden sollen. Hinweise zur Verwendung dieser Option in der Produktprogrammplanung finden Sie unter [Verbessern der Leistung der Produktprogrammplanung](../master-planning-performance.md#number-of-threads).
 
         > [!NOTE]
         > Ein Wert von *0* (Null) für das Feld **Anzahl der Threads** erhöht die Laufzeit der Produktprogrammplanung. Wir empfehlen daher, dieses Feld immer auf einen Wert größer als 0 festzulegen.
@@ -97,7 +99,7 @@ Mit der automatischen Fixierung können Sie geplanter Aufträge als Teil der Pro
 > Abgeleitete Aufträge (d.h. Einkaufsbestellungen von Unterlieferanten), die umgewandelt werden, haben den Status *In-Prüfung*, wenn die Änderungsverfolgung eingeschaltet ist.
 
 > [!IMPORTANT]
-> Bevor die in diesem Abschnitt beschriebene Funktion mit der Planungsoptimierung verwendet werden kann, muss die [Funktion *Automatische Umwandlung für Planungsoptimierung*](#enable-features) in Ihrem System aktiviert sein, wie am Anfang dieses Artikels beschrieben. Die automatische Umwandlung kann immer mit der integrierten Produktprogrammplanung verwendet werden.
+> Bevor die in diesem Abschnitt beschriebene Funktion mit der Planungsoptimierung verwendet werden kann, muss die [Funktion *Automatische Umwandlung für die Planungsoptimierung*](#enable-features) für Ihr System aktiviert sein, wie am Anfang dieses Artikels beschrieben. Die automatische Umwandlung kann immer mit der integrierten Produktprogrammplanung verwendet werden.
 
 ### <a name="auto-firming-with-planning-optimization-vs-the-built-in-planning-engine"></a>Automatische Umwandlung mit Planungsoptimierung vs. die integrierte Planungs-Engine
 
@@ -130,7 +132,7 @@ Mit der abfragebasierten Umwandlung können Sie die Umwandlung auf der Basis von
 Sie können die automatische Umwandlung mit der abfragebasierten Umwandlung kombinieren. Zum Beispiel hat ein abfragebasierter Umwandlungsauftrag einen Forward Time Fence, der länger ist als der Time Fence für eine passende Konfiguration der automatischen Umwandlung. Daher wird der abfragebasierte Umwandlungsauftrag seine geplanten Aufträge verarbeiten, bevor die automatische Umwandlung ausgelöst wird. Sie können dieses Verhalten nutzen, um Aufträge für bestimmte Kreditor anders zu planen als Aufträge für ähnliche Produkte von anderen Kreditor.
 
 > [!IMPORTANT]
-> Bevor die in diesem Abschnitt beschriebene Funktion verwendet werden kann, muss die [Funktion *Geplante Aufträge umwandeln mit Filterung*](#enable-features) in Ihrem System eingeschaltet sein, wie zu Beginn dieses Artikels beschrieben.
+> Bevor die in diesem Abschnitt beschriebene Funktion verwendet werden kann, muss die [Funktion *Umwandlung von Bestellvorschlägen mit Filtern*](#enable-features) für Ihr System eingeschaltet sein, wie zu Beginn dieses Artikels beschrieben.
 
 Um einen geplanten Auftrag mit Hilfe der abfragebasierten Umwandlung zu fixieren, gehen Sie wie folgt vor.
 

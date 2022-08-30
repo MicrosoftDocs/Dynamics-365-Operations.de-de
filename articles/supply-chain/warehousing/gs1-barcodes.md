@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 34f74c2a889b3a659831897897e2086b277256e0
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: e1c1c274054ed1c14c9b3fc0595baa029bf3124d
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219777"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336364"
 ---
 # <a name="gs1-bar-codes"></a>GS1-Barcodes
 
@@ -108,7 +108,7 @@ Nachdem die Daten aus dem Barcode analysiert wurden, werden sie in die Flow-Steu
 
 ## <a name="turn-on-the-gs1-feature"></a>Einschalten der GS1-Funktion
 
-Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+Bevor Sie diese Funktion nutzen können, muss sie für Ihr System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
 
 - **Module:** *Lagerortverwaltung*
 - **Name der Funktion:** *Scannen von GS1-Barcodes*
@@ -134,7 +134,7 @@ Um globale GS1-Optionen festzulegen, gehen Sie wie folgt vor.
 
     - **FNC1-Zeichen**, **Datamatrix-Zeichen** und **QR-Code-Zeichen** – Geben Sie Zeichen an, die für jeden GS1-Barcodetyp als Präfix interpretiert werden sollen.
     - **Gruppentrennzeichen** – Geben Sie das Zeichen an, welches das ASCII-Gruppentrennzeichen ersetzt.
-    - **Maximale Länge des Bezeichners** - Geben Sie die maximale Anzahl von Zeichen an, die für den Anwendungsbezeichner zulässig ist. Dieses Feld ist nicht erforderlich, wenn die Funktion *Erweiterter GS1-Parser* in Ihrem System aktiviert ist.
+    - **Maximale Länge des Bezeichners** - Geben Sie die maximale Anzahl von Zeichen an, die für den Anwendungsbezeichner zulässig ist. Dieses Feld ist nicht erforderlich, wenn die Funktion *Erweiterter GS1-Parser* für Ihr System aktiviert ist.
 
 > [!NOTE]
 > Präfixe teilen dem System mit, dass ein Barcode nach dem GS1-Standard kodiert ist. Bis zu drei Präfixe (**FNC1-Zeichen**, **Datamatrix-Zeichen** und **QR-Code-Zeichen**) können gleichzeitig und für verschiedene Zwecke verwendet werden.

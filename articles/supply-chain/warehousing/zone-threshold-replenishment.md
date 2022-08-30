@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 17e336fb059880e54a1cba7c0079e7452925c24d
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 44e7dfdbc980c5df6b9426515365611bc0de45c2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219996"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335944"
 ---
 # <a name="zone-threshold-replenishment"></a>Schwellenwert für Zonenwiederbeschaffung
 
@@ -38,7 +38,7 @@ Im Gegensatz zur lagerplatzbasierten Min./Max.-Wiederbeschaffung sind für die z
 
 ## <a name="turn-on-the-zone-threshold-replenishment-feature"></a>Funktion für Schwellenwert für Zonenwiederbeschaffung aktivieren
 
-Bevor Sie die Funktion *Schwellenwert für Zonenwiederbeschaffung* verwenden können, muss sie in Ihrem System aktiviert sein. Administratoren können mit den Einstellungen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie gegebenenfalls aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+Bevor Sie die Funktion *Schwellenwert für Zonenwiederbeschaffung* verwenden können, muss sie für Ihr System aktiviert sein. Administratoren können mit den Einstellungen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie gegebenenfalls aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
 
 - **Module:** *Lagerortverwaltung*
 - **Funktionsname:** *Schwellenwert für Zonenwiederbeschaffung*
@@ -276,7 +276,7 @@ Befolgen Sie diese Schritte, um sicherzustellen, dass Ihr System genügend Besta
 1. Stellen Sie sicher, dass genügend Bestand für den Artikel *A0001* an einem Bulk-Lagerplatz vorhanden ist, der in der Zonenentnahmelagerplatzrichtlinie angegeben ist, an dem die Wiederbeschaffungsarbeiten die Artikel aus der Zonen-ID *BULK* entnehmen sollen. Der Gesamtbestand muss über der erforderlichen Höchstmenge liegen (*150*), wie in der Wiederbeschaffungsvorlage angegeben ist.
 1. Optional, aber empfohlen: Führen Sie die folgenden Schritte aus, um eine Bestandsanpassungserfassung zu erstellen:
 
-    1. Wechseln Sie zu **Bestandsverwaltung \> Erfassungseinträge \> Artikel \> Bestandsanpassung**.
+    1. Wechseln Sie zu **Lagerverwaltung \> Erfassungseinträge \> Artikel \> Bestandsanpassung**.
     1. Wählen Sie **Neu** aus.
     1. Wählen Sie im Dialogfeld **Bestandserfassung erstellen** im Feld **Lagerort** *61* aus.
     1. Wählen Sie **OK**.
