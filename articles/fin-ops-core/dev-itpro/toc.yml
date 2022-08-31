@@ -14,6 +14,8 @@
               items:
                 - name: Neuerungen oder Änderungen auf der Startseite der Plattformupdates
                   href: get-started/whats-new-home-page.md
+                - name: "Plattformupdates für Version 10.0.29 (Oktober\_2022)"
+                  href: get-started/whats-new-platform-updates-10-0-29.md
                 - name: Plattformupdates für Version 10.0.28 (August 2022)
                   href: get-started/whats-new-platform-updates-10-0-28.md
                 - name: Plattformupdates für Version 10.0.27 (Juli 2022)
@@ -1090,6 +1092,8 @@
                           href: data-entities/dual-write/link-your-environment.md
                         - name: Entitätszuordnung für duales Schreiben aktivieren
                           href: data-entities/dual-write/enable-entity-map.md
+                    - name: Fünfminütiges Zeitüberschreitungsfenster für Sitzungen für Duales-Schreiben-Sitzungen verwenden
+                      href: data-entities/dual-write/5-minute-mode.md
                     - name: Paket zur Orchestrierung separater Anwendungen für duales Schreiben
                       href: data-entities/dual-write/separated-solutions.md
                     - name: Migration von Daten des Typs „Währung“ beim dualen Schreiben

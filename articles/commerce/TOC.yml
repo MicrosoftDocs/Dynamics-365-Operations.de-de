@@ -12,6 +12,8 @@
               items:
                 - name: Neuerungen oder Änderungen in Commerce – Startseite
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.29 (Oktober 2022)
+                  href: get-started/whats-new-commerce-10-0-29.md
                 - name: "Commerce\_10.0.28 (Juli\_2022)"
                   href: get-started/whats-new-commerce-10-0-28.md
                 - name: "Commerce\_10.0.27 (Juli\_2022)"
@@ -60,6 +62,8 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/commerce
                 - name: Benachrichtigungen zu Dienstupdates erhalten
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/commerce
+                - name: Proaktive Qualitätsupdates
+                  href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/commerce
                 - name: Datenaufgabenautomatisierung
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/commerce
                 - name: Lieferung von ISV-Lösungen mithilfe von One Version
@@ -422,6 +426,8 @@
                       href: hide-non-carrier-modes.md
                     - name: Aufgabenaufzeichnung und Hilfe für MPOS und Cloud POS
                       href: task-recorder-retail-pos.md
+                    - name: CPOS für die Verwendung einer benutzerdefinierten Azure AD App konfigurieren
+                      href: cpos-custom-aad.md
                     - name: Hardwareperipheriegeräte
                       items:
                         - name: Peripheriegeräte
@@ -698,8 +704,8 @@
                   href: prevent-discounts.md
                 - name: Zahlungsmittelbasierte Rabatte
                   href: tender_based_discounts.md
-                - name: Überblick über Versandrabatte
-                  href: retail-shipping-discount.md
+                - name: Lieferungsrabatt
+                  href: shipping-discount.md
                 - name: Geschenke mit Kaufangeboten konfigurieren
                   href: gift-with-purchase.md
                 - name: Coupons einrichten
@@ -714,6 +720,10 @@
                   href: tasks/category-pricing-rules-trade-agreements.md
                 - name: Genaue Preis- und Rabattberechnung verzögern
                   href: delayed-price-calculation.md
+                - name: Preisberechnungsfunktionen in POS
+                  href: pos-pricing-functions.md
+                - name: Commerce-Preis-APIs
+                  href: pricing-apis.md
             - name: Empfehlungen
               items:
                 - name: Überblick über Produktempfehlungen
@@ -770,7 +780,7 @@
               items:
                 - name: Bestand
                   items:
-                    - name: Bestandsverwaltung im Store
+                    - name: Lagerverwaltung im Shop
                       href: work-with-store-inventory.md
                     - name: Bestandpuffer und Bestandsebenen konfigurieren
                       href: inventory-buffers-levels.md
@@ -872,11 +882,13 @@
               href: async-customer-mode.md
             - name: Asynchrone Kunden in synchrone Kunden umwandeln
               href: convert-async-to-sync.md
+            - name: Asynchroner Kundenerstellmodus – FAQ
+              href: async-customer-mode-faq.md
             - name: Kundenaktionen
               items:
                 - name: Übersicht über Kundenaktionen
                   href: clienteling-overview.md
-            - name: Kundentreue
+            - name: Treue
               items:
                 - name: Übersicht über Kundentreue
                   href: set-up-customer-loyalty-program.md
@@ -1252,6 +1264,10 @@
                       href: product-collection-module-overview.md
                     - name: Schnellansichtsmodul
                       href: quick-view-module.md
+                - name: Produktvergleichsmodule
+                  items:
+                    - name: Produktvergleichsmodule
+                      href: product-comparison-modules.md
                 - name: Navigationsmodule
                   items:
                     - name: Breadcrumb-Modul
@@ -1272,7 +1288,11 @@
                   items:
                     - name: Cookie-Zustimmungsmodul
                       href: cookie-consent-module.md
-            - name: Durchsuchen
+                - name: Chat-Module
+                  items:
+                    - name: Commerce-Chat-Modul
+                      href: commerce-chat-module.md
+            - name: Suche
               items:
                 - name: Übersicht zur Zielseite der Standardkategorie und der Suchergebnisseite
                   href: category-search-page-overview.md
@@ -1404,8 +1424,6 @@
               items:
                 - name: Beispiel für Integration des Steuererfassungsdienstes in Österreich
                   href: localizations/emea-aut-fi-sample.md
-                - name: Bereitstellungsrichtlinien für Kassen für Österreich
-                  href: localizations/emea-aut-deployment.md
                 - name: Bereitstellungsrichtlinien für das Steuerintegrationsbeispiel für Österreich (veraltet)
                   href: localizations/emea-aut-fi-sample-sdk.md
             - name: Brasilien
@@ -1502,6 +1520,8 @@
                   href: localizations/emea-nor-cash-registers.md
                 - name: Bereitstellungsrichtlinien für Kassen
                   href: localizations/emea-nor-fi-deployment.md
+                - name: Migration von alten Funktionen für Norwegen
+                  href: localizations/emea-nor-fi-migration.md
                 - name: Bereitstellungsrichtlinien für Kassen (veraltet)
                   href: localizations/emea-nor-loc-deployment-guidelines.md
             - name: Russland
@@ -1764,9 +1784,11 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/commerce
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/commerce
+                        - name: Repeat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/commerce
                         - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/commerce
-                        - name: Teilen
+                        - name: Split
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?context=/dynamics365/context/commerce
                         - name: SplitList
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlist.md?context=/dynamics365/context/commerce
@@ -2482,7 +2504,7 @@
               items:
                 - name: "Commerce-SDK\_– Übersicht"
                   items:
-                    - name: Beispiele und Referenzpakete
+                    - name: Commerce SDK-Beispiele und -Referenzpakete herunterladen
                       href: dev-itpro/retail-sdk/sdk-github.md
                     - name: "Legacy-Retail\_SDK-Migration"
                       href: dev-itpro/retail-sdk/migrate-commerce-sdk.md

@@ -12,6 +12,8 @@
               items:
                 - name: Neuerungen oder Änderungen der Startseite von Finance
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.29 (Oktober)
+                  href: get-started/whats-new-changed-10-0-29.md
                 - name: Finance 10.0.28 (August)
                   href: get-started/whats-new-changed-10-0-28.md
                 - name: Finance 10.0.27 (Juli)
@@ -62,6 +64,8 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/finance
                 - name: Benachrichtigungen zu Dienstupdates erhalten
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/finance
+                - name: Proaktive Qualitätsupdates
+                  href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/finance
                 - name: Datenaufgabenautomatisierung
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/finance
                 - name: Lieferung von ISV-Lösungen mithilfe von One Version
@@ -1114,6 +1118,8 @@
                       href: general-ledger/tasks/process-ledger-allocation-journal.md
                     - name: Journaleinträge oder Buchungen anzeigen
                       href: general-ledger/tasks/view-journal-entries-or-transactions.md
+                    - name: Bearbeitung von internen Daten in Hauptbuchbelegen zulassen
+                      href: general-ledger/allow-edits-internal-data-gl-vouchers.md
                     - name: Einen zugehörigen Intercompany-Beleg aus einer Erfassung anzeigen
                       href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
                     - name: Erfassungspositionen und Dokumente aus Excel veröffentlichen
@@ -1568,14 +1574,20 @@
                           href: localizations/e-invoicing-bra-get-started.md?context=/dynamics365/context/finance
                         - name: Erste Schritte mit der elektronischen Rechnungsstellung in Ägypten
                           href: localizations/e-invoicing-eg-get-started.md?context=/dynamics365/context/finance
+                        - name: Erste Schritte mit der elektronischen Rechnungsstellung in Frankreich
+                          href: localizations/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
                         - name: Erste Schritte mit der elektronischen Rechnungsstellung in Mexiko
                           href: localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/finance
+                        - name: Erste Schritte mit der elektronischen Rechnungsstellung in Polen
+                          href: localizations/e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
                         - name: Erste Schritte mit der elektronischen Rechnungsstellung in Saudi-Arabien
-                          href: localizations/e-invoicing-sa-get-started.md
+                          href: localizations/e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
+                        - name: Onboarding für elektronische Rechnungsstellung in Saudi-Arabien
+                          href: localizations/e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
                         - name: Direkte Integration von italienischem FatturaPA mit SDI einrichten
-                          href: localizations/e-invoicing-ita-fatturapa-get-started.md
+                          href: localizations/e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/finance
                         - name: Kreditorenrechnungen mit der elektronischen Rechnungsstellung importieren
-                          href: localizations/e-invoicing-get-started-import-vendor-invoices.md
+                          href: localizations/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/finance
                     - name: Häufig gestellte Fragen zur elektronischen Rechnungsstellung
                       href: localizations/e-invoicing-faq.md?context=/dynamics365/context/finance
                 - name: Steuerberechnung
@@ -1648,6 +1660,10 @@
                           items:
                             - name: MwSt.-Erklärung
                               href: localizations/emea-nor-vat-declaration.md
+                        - name: Meldung für Polen
+                          items:
+                            - name: MwSt.-Erklärung
+                              href: localizations/emea-pol-vat-declaration.md
                         - name: Meldung für Spanien
                           items:
                             - name: 'Sofortige Bereitstellung von Informationen zur MwSt. (Suministro Inmediato de Información del IVA, SII)'
@@ -1714,6 +1730,8 @@
                       href: general-ledger/sales-tax-calculation-on-general-journal.md
                     - name: Mehrwertsteuer auf einer Kreditorenrechnung berechnen und anpassen
                       href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                    - name: Anpassen der Mehrwertsteuer über allgemeine Erfassungen
+                      href: general-ledger/adjust-sales-tax-via-general-journals.md
                     - name: Verzögerte Steuerberechnung in Erfassung aktivieren
                       href: general-ledger/enable-delayed-tax-calculation.md
                     - name: Eine Mehrwertsteuerzahlung erstellen
@@ -1770,6 +1788,8 @@
                           href: general-ledger/global-withholding-tax-overview.md
                         - name: Globale Quellensteuer einrichten
                           href: general-ledger/set-up-global-withholding-tax.md
+                        - name: Die globale Einrichtung des Währungswechselkurstyps der Quellensteuer und des Datumstyps aktivieren
+                          href: general-ledger/global-withholding-tax-currency-exchange-rate-date-type-setup.md
                         - name: Quellensteuer bei Kauftransaktionen
                           href: general-ledger/withholding-tax-in-purchase-transactions.md
                         - name: Quellensteuer bei Verkaufstransaktionen
@@ -1948,6 +1968,8 @@
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
                     - name: NF-e XML-Dateien als Anhänge verschieben
                       href: localizations/latam-bra-nf-e-move-xml-as-attachment.md
+                    - name: NT2021.004 – Layout- und Validierungsaktualisierungen im elektronischen Steuerdokument (NF-e)
+                      href: localizations/latam-bra-nfe-nt2021.004.md
                     - name: NT2020.005 – Layout- und Validierungsaktualisierungen im elektronischen Steuerdokument (NF-e)
                       href: localizations/latam-bra-nfe-nt2020.005.md
                     - name: NT2020.006 – Digitale Zwischenverkaufsplattform für NF-e
@@ -2552,6 +2574,8 @@
                       href: localizations/apac-ind-news-letter-10-0-00.md
                 - name: Überwachungspfad und Bearbeitungsprotokolle für Buchhaltungssoftware
                   href: localizations/apac-ind-audit-trail-edit-logs-accounting-software.md
+                - name: Elektronische Rechnung in Indien
+                  href: localizations/apac-ind-e-invoices.md
                 - name: Indirekte Steuern
                   items:
                     - name: Indien GST
@@ -3548,6 +3572,10 @@
                           href: localizations/rus-set-up-inventory-profile.md
                         - name: Bestandsprofil in Dokumenten und Abfragen verwenden
                           href: localizations/rus-use-inventory-profile-documents-queries.md
+                    - name: Zollabfertigung
+                      items:
+                        - name: Arbeiten mit der Zollabfertigung
+                          href: localizations/rus-work-with-customs-clearance.md
                 - name: Berichterstellung
                   items:
                     - name: Finanzberichterstellung
@@ -3576,6 +3604,8 @@
                       href: localizations/rus-company-divisions.md
                     - name: Russische Adressformate und Importieren aus FIAS
                       href: localizations/rus-russian-address-format-and-import-from-FIAS.md
+                    - name: Import aus State Address Register (GAR)
+                      href: localizations/rus-russian-address-format-import-gar.md
                 - name: Stundungen
                   items:
                     - name: Stundungen einrichten
@@ -4069,9 +4099,11 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/finance
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/finance
+                        - name: Repeat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/finance
                         - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/finance
-                        - name: Teilen
+                        - name: Split
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?context=/dynamics365/context/finance
                         - name: SplitList
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlist.md?context=/dynamics365/context/finance

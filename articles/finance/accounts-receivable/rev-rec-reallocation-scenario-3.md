@@ -1,24 +1,24 @@
 ---
 title: Neuzuweisung der Umsatzerkennung – Szenario 3
 description: In diesem Artikel wird eine Neuzuweisung erläutert, bei der ein vorhandener und berechneter Auftrag mit einer neuen Position ergänzt wird. Wird einem Vertrag ein neuer Artikel hinzugefügt wird, kann dies entweder im bestehenden Auftrag oder einem neuen Auftrag erfolgen.
-author: kweekley
+author: bking
 ms.date: 12/21/2020
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: kweekley
+ms.author: bking
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7aa62406a80eb3381206172caaae457ec71b7bf8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e76c077aa24813c9b6ac8c72db06b38cedaafd18
+ms.sourcegitcommit: 1909d18a74cef85aad020a6a7473281e451f58c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8904815"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "9348182"
 ---
 # <a name="revenue-recognition-reallocation--scenario-3"></a>Neuzuweisung der Umsatzerkennung – Szenario 3
 
