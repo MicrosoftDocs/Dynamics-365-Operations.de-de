@@ -24,7 +24,7 @@ ms.locfileid: "8676242"
 [!include [banner](../includes/banner.md)]
 
 
-First in, first out (FIFO) ist eine Methode der Bestandsverwaltung und -bewertung, bei der die zuerst produzierten oder erworbenen Bestände zuerst verkauft, verwendet oder entsorgt werden. Während des Bestandsabschlusses in Microsoft Dynamics 365 Supply Chain Management erstellt das System Abrechnungen, bei denen der erste Zugang mit dem ersten Abgang abgeglichen wird, und so weiter.
+First in, first out (FIFO) ist eine Methode der Lagerverwaltung und -bewertung, bei der die zuerst produzierten oder erworbenen Bestände zuerst verkauft, verwendet oder entsorgt werden. Während des Bestandsabschlusses in Microsoft Dynamics 365 Supply Chain Management erstellt das System Abrechnungen, bei denen der erste Zugang mit dem ersten Abgang abgeglichen wird, und so weiter.
 
 Die Abrechnungen und das Abgleichsprinzip beruhen auf dem Finanzdatum der Transaktionen im Bestand. Eine vorläufige Bewertung der Abrechnungen und Anpassungen kann durch Ausführen der Bestandsneuberechnung vorgenommen werden.
 

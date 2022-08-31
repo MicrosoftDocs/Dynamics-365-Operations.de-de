@@ -49,7 +49,7 @@ Ein Unternehmen, das Kekse herstellt, führt einen Prüftest bezüglich des fert
 
 Führen Sie diese Schritte aus, um eine Testvariable zu erstellen.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichten \> Qualitätskontrolle \> Testvariablen**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Qualitätskontrolle \> Testvariablen**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus, um eine Zeile zum Raster hinzuzufügen. Legen Sie für die neue Zeile die folgenden Felder fest:
 
     - **Variable** – Geben Sie eine eindeutige ID oder einen Namen für die Variable ein.

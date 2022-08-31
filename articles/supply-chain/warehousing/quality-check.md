@@ -35,7 +35,7 @@ Wenn Sie diese Funktion verwenden, erfolgt die Wareneingangs- und Qualitätsprü
 1. Eine der folgenden Aktionen erfolgt:
 
     - Wenn die Qualitätsprüfung bestanden ist, wird der Ladungsträger angenommen und wie gewohnt zu einem Empfangsort weitergeleitet.
-    - Wenn die Qualitätsprüfung nicht bestanden wird, wird der Ladungsträger abgelehnt und laufende Einlagerungsarbeiten werden zur weiteren Überprüfung an einen anderen Ort umgeleitet. Ein neuer Qualitätsprüfungsauftrag wird erstellt. Um den Qualitätsprüfungsauftrag anzusehen, der aus der fehlgeschlagenen Qualitätsprüfung erstellt wurde, gehen Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsauftrag**.
+    - Wenn die Qualitätsprüfung nicht bestanden wird, wird der Ladungsträger abgelehnt und laufende Einlagerungsarbeiten werden zur weiteren Überprüfung an einen anderen Ort umgeleitet. Ein neuer Qualitätsprüfungsauftrag wird erstellt. Um den Qualitätsprüfungsauftrag anzusehen, der aus der fehlgeschlagenen Qualitätsprüfung erstellt wurde, gehen Sie zu **Lagerverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsauftrag**.
 
 Dieser Vorgang kann auch so eingerichtet werden, dass alle gescannten Ladungsträger sofort an den Ort der Qualitätsprüfung umgeleitet werden.
 
@@ -76,7 +76,7 @@ Die Qualitätsprüfungsvorlage legt die Regeln für die schnelle Stichprobenprü
 
     - **Testgruppe:** *Anlage*
 
-        Geben Sie die Testgruppe an, die in dem erstellten Qualitätsprüfungsauftrag verwendet werden soll. Testgruppen werden im Modul **Bestandsverwaltung** eingerichtet.
+        Geben Sie die Testgruppe an, die in dem erstellten Qualitätsprüfungsauftrag verwendet werden soll. Testgruppen werden im Modul **Lagerverwaltung** eingerichtet.
 
         Lassen Sie die Option **Zerstörungstest** für die Testgruppe deaktiviert. Diese Option legt fest, ob das Muster im Rahmen der Tests in der Testgruppe zerstört wird. Wird ein Zerstörungstest verwendet, generiert das System beim Erstellen eines Qualitätsprüfungsauftrags für einen Artikel eine Lagerbuchung. Mit der neuen Lagerbuchung wird die Bestandsverringerung für die Testmenge antizipiert. Die Bestandsverringerung wird durchgeführt, wenn der Qualitätsprüfungsauftrag durch den Überprüfungsschritt abgeschlossen wird. Die Lagerbuchung wird als Qualitätsprüfungsauftrag gekennzeichnet.
 
@@ -355,7 +355,7 @@ In diesem Szenario wird Palette 2 abgelehnt.
 
     Auf der Seite **Aufgabe** der eingehenden Bestellposition erhalten Sie die Meldung „Arbeit abgeschlossen“. Das Feld **POSNUM** ist verfügbar, damit Sie mit dem Eingang der nächsten Palette beginnen können.
 
-Sie haben nun die Qualitätsprüfung abgeschlossen und einen Qualitätsprüfungsauftrag für die abgelehnte Palette erstellt. Um den erstellten Auftrag anzusehen gehen Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsauftrag**.
+Sie haben nun die Qualitätsprüfung abgeschlossen und einen Qualitätsprüfungsauftrag für die abgelehnte Palette erstellt. Um den erstellten Auftrag anzusehen gehen Sie zu **Lagerverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsauftrag**.
 
 Jetzt können Tests zu Qualitätsprüfungsaufträge verarbeitet werden. Qualitätstests werden in diesem Artikel nicht behandelt.
 

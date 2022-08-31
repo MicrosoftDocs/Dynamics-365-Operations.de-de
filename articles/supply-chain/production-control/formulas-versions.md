@@ -29,7 +29,7 @@ ms.locfileid: "8844147"
 
 Eine Formel definiert die Materialien, die Substanz und die Ergebnisse eines bestimmten Prozesses in einem der Fertigungsverarbeitung. Zusammen mit dem entsprechenden Arbeitsplan definiert die Formel in der Fertigungsverarbeitung den Gesamtprozess. Formeln werden verwendet, um in der Fertigungsverarbeitung Produkte zu planen und zu erzeugen.
 
-Eine Formel besteht aus der Substanz und den Mengen, die erforderlich sind, um eine bestimmte Menge eines Formelartikels zu erzeugen. Abhängig von der Aufgabe, die Sie ausführen, können Sie Formelfunktionen  über " Lager- und Lagerortverwaltung oder aus dem Produkt informationsmanagement zugreifen.
+Eine Formel besteht aus der Substanz und den Mengen, die erforderlich sind, um eine bestimmte Menge eines Formelartikels zu erzeugen. Abhängig von der Aufgabe, die Sie ausführen, können Sie Formelfunktionen über Lager- und Lagerortverwaltung oder aus dem Produktinformationsmanagement zugreifen.
 
 ## <a name="formulas-and-formula-lines"></a>Formeln und Formelpositionen 
 Eine Formel besteht aus einer oder mehrerer Formelposition, die die Substanz oder Artikel identifizieren,  die die Formel ausmachen. Eine Formelposition kann Artikel, Stückliste (BOM), Formelartikel, Catch Weight-Artikel, gekaufte Artikel, Kuppel- oder Nebenprodukte enthalten. Da viele Artikel in mehreren Produkten verwendet werden, können Sie einen Artikel in mehreren Formeln verwenden.

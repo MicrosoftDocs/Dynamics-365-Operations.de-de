@@ -38,7 +38,7 @@ Dieses Verfahren zeigt Ihnen, wie Sie eine neue Barcode-Definition festlegen, di
 1. Geben Sie in das Feld **Maximale Länge** eine Zahl ein.
 1. Wählen Sie **Speichern** aus.
 1. Schließen Sie die Seite.
-1. Gehen Sie zu **Parameter der Bestands- und Lagerortverwaltung**.
+1. Gehen Sie zu **Parameter für Lager- und Lagerortverwaltung**.
 1. Geben Sie im Feld **Barcode-Einrichtung** einen Wert ein oder wählen Sie ihn aus.
     * Wählen Sie die Einrichtung für den Barcode, die Sie zuvor erstellt haben, aber beachten Sie, dass das Format des Barcodes mit dem Format des eindeutigen Bezeichners für den verwendeten Datensatz übereinstimmen muss. Für Entnahmerouten sollte das Strichcodeformat zum Beispiel mit dem Format der Entnahmeroutenreferenz übereinstimmen (üblicherweise ein Nummernkreis).  
 1. Wählen Sie **Speichern** aus.

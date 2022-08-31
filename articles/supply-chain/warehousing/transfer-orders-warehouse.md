@@ -26,7 +26,7 @@ ms.locfileid: "8905514"
 
 Mithilfe von Lagerortebenen kann eine Hierarchie erstellt werden, die Umlagerungsaufträge zwischen Lagerorten unterstützt. Basierend auf dieser Einstellung berechnet die Produktprogrammplanung den Artikelbedarf auf den einzelnen Lagerortebenen und generiert geplante Umlagerungsaufträge von einem zugeordneten Quelllagerort, um diesen Artikelbedarf zu erfüllen.
 
-1.  Klicken Sie auf **Bestandsverwaltung > Einstellungen > Lageraufschlüsselung > Lagerorte**.
+1.  Klicken Sie auf **Lagerverwaltung > Einstellungen > Lageraufschlüsselung > Lagerorte**.
 
 2.  Wählen Sie den Lagerort aus, der aufgefüllt werden soll.
 
@@ -46,7 +46,7 @@ Mithilfe von Lagerortebenen kann eine Hierarchie erstellt werden, die Umlagerung
 ## <a name="set-up-transport-lead-time"></a>Transportvorlaufzeit einrichten
 
 Außerdem müssen Sie die Transportvorlaufzeit zwischen den Lagern auf der Seite **Transporttage** einstellen. 
-1. Gehen Sie zu **Bestandsverwaltung > Einrichtung > Verteilung > Transporttage**.
+1. Gehen Sie zu **Lagerverwaltung > Einstellungen > Verteilung > Transporttage**.
 2. Wählen Sie im Feld **Empfangsstelle** die Option **Lager**.
 3. Wählen Sie das **Versandlager**, das **Eingangslager** und die **Transporttage** aus. 
 4. (Optional) Sie können die Transportzeit je nach Lieferart auch unter der Registerkarte **Transporttage pro Lieferart** einstellen.

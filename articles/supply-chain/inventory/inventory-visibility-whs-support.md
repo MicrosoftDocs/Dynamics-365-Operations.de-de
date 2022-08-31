@@ -63,7 +63,7 @@ Gehen Sie folgendermaßen vor, um die erweiterte WMS-Funktion für Inventory Vis
     1. *Integration der Bestandssichtbarkeit*
     1. *Lagerortartikel in Bestandsanzeige aktivieren*
 
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichtung \> Bestandssichtbarkeit-Integrationsparameter**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Bestandssichtbarkeit-Integrationsparameter**.
 1. Auf der Registerkarte **WMS-Artikel aktivieren** legen Sie die Option **WMS-Artikel aktivieren** auf *Ja* fest.
 1. Melden Sie sich bei Power Apps an.
 1. Öffnen Sie die Seite **Konfiguration**, und aktivieren Sie dann auf der Registerkarte **Funktionsverwaltung** die Funktion *AdvancedWHS*.

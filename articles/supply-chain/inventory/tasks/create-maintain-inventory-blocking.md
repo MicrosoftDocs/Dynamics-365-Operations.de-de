@@ -31,7 +31,7 @@ Dieser Artikel beschreibt, wie Sie eine Bestandssperre verwenden können, um zu 
 
 Um einen Datensatz zur Bestandssperrung zu erstellen, so dass der Bestand gesperrt wird, folgen Sie diesen Schritten.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Bestandssperrung**.
+1. Gehen Sie zu **Lagerverwaltung \> Periodische Aufgaben \> Bestandssperrung**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 1. Legen Sie in der Kopfzeile des neuen Bestandssperrungs-Datensatzes das Feld **Elementnummer** auf das Element fest, das Sie sperren wollen, und geben Sie eine Beschreibung ein.
 1. Geben Sie auf der Registerkarte **Allgemein** Inforegister im Feld **Menge** die Anzahl der zu blockierenden Elemente ein.
@@ -42,7 +42,7 @@ Um einen Datensatz zur Bestandssperrung zu erstellen, so dass der Bestand gesper
 
 Um einen Datensatz zur Bestandssperrung zu aktualisieren, führen Sie die folgenden Schritte aus.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Bestandssperrung**.
+1. Gehen Sie zu **Lagerverwaltung \> Periodische Aufgaben \> Bestandssperrung**.
 1. Wählen Sie im Listenbereich den entsprechenden Bestandssperrungs-Datensatz aus.
 1. Bearbeiten Sie den Datensatz wie gewünscht. Sie können z. B. den Wert des Feldes **Erwartetes Datum** ändern, um anzugeben, wann der gesperrte Bestand voraussichtlich für die Reservierung verfügbar sein wird. Wenn die Option **Erwartete Zugänge** ausgewählt ist, wird das Datum auf der erwarteten Transaktion angezeigt. (Die Option **Erwartete Zugänge** ist standardmäßig ausgewählt, wenn Sie einen Datensatz für die Bestandssperrung manuell erstellen.)
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
@@ -51,7 +51,7 @@ Um einen Datensatz zur Bestandssperrung zu aktualisieren, führen Sie die folgen
 
 Um einen Bestandssperrungs-Datensatz zu entfernen, so dass der Bestand freigegeben wird, gehen Sie wie folgt vor.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Bestandssperrung**.
+1. Gehen Sie zu **Lagerverwaltung \> Periodische Aufgaben \> Bestandssperrung**.
 1. Wählen Sie im Listenbereich den entsprechenden Bestandssperrungs-Datensatz aus.
 1. Wählen Sie im Aktivitätsbereich **Löschen**.
 1. Sie werden aufgefordert, den Vorgang zu bestätigen. Wählen Sie **Ja** aus, um fortzufahren.

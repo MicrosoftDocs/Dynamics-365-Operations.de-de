@@ -39,7 +39,7 @@ Wählen Sie einen Funktionsbereich aus, um weitere Informationen darüber zu erh
 - [Anlagenverwaltung](asset-management/index.md)
 - [Kostenrechnung](../finance/cost-accounting/cost-accounting-home-page.md)
 - [Kostenverwaltung](cost-management/cost-management-home-page.md)  
-- [Bestandsverwaltung](inventory/inventory-home-page.md)
+- [Lagerverwaltung](inventory/inventory-home-page.md)
 - [IoT-Intelligenz](iot/iot-intelligence-home-page.md)
 - [Produktprogrammplanung](master-planning/master-planning-home-page.md)
 - [Beschaffung](procurement/procurement-sourcing-overview.md)

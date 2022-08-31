@@ -44,7 +44,7 @@ Das folgende Szenario zeigt, wie Sie eine Wareneingangserfassungs-Kopfzeile erst
 
 1. Stellen Sie sicher, dass Ihr System eine bestätigte Bestellung enthält, die die im vorherigen Abschnitt beschriebenen Anforderungen erfüllt. In diesem Szenario wird eine Bestellung für das Unternehmen *USMF* verwendet, Kreditorenkonto *1001*, Lagerort *51*, mit einer Bestellposition für *10 PL* (10 Paletten) der Artikelnummer *M9200*.
 1. Notieren Sie sich die Bestellnummer, die Sie benutzen werden.
-1. Wechseln Sie zu **Bestandsverwaltung \> Erfassunseinträge \> Wareneingang \> Wareneingang**.
+1. Wechseln Sie zu **Lagerverwaltung \> Erfassunseinträge \> Wareneingang \> Wareneingang**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 1. Das Dialogfeld **Lagerortverwaltungserfassung erstellen** öffnet sich. Wählen Sie im Feld **Name** eine Erfassung aus.
     - Wenn Sie die *USMF*-Demodaten verwenden, wählen Sie *WHS* aus.

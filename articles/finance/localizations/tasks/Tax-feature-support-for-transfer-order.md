@@ -185,7 +185,7 @@ Befolgen Sie diese Schritte, um den Grundbestand einzurichten und Umlagerungsauf
 
 3. Überprüfen Sie, ob die Bestandsbuchungskonfiguration für Umlagerungsauftragstransaktionen eingerichtet ist.
 
-    1. Navigieren Sie zu **Bestandsverwaltung** > **Einstellungen** > **Buchung** > **Buchung**.
+    1. Navigieren Sie zu **Lagerverwaltung** > **Einstellungen** > **Buchung** > **Buchung**.
     2. Überprüfen Sie auf der Registerkarte **Bestand**, ob ein Sachkonto für beide Buchungen, **Lagerabgang** und **Lagerzugang**, eingerichtet ist.
 
         ![Einrichten der Lagerabgang- und Lagerzugang-Buchung.](../media/image14.png)

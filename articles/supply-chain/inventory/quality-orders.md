@@ -37,7 +37,7 @@ Sie können das System so konfigurieren, dass es automatisch Qualitätsprüfungs
 
 Um einen Qualitätsprüfungsauftrag manuell zu erstellen, folgen Sie diesen Schritten.
 
-1. Wechseln Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsaufträge**.
+1. Wechseln Sie zu **Lagerverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsaufträge**.
 1. Wählen Sie **Neu** aus.
 1. Wählen Sie im Dialogfeld **Qualitätsprüfungsaufträge** im Feld **Referenztyp** die Bestandsreferenz, auf die sich Ihr Qualitätsprüfungsauftrag beziehen soll. Eine Beschreibung der Referenztypen, die zur Auswahl stehen, finden Sie im Abschnitt [Referenztypen für Qualitätsprüfungsaufträge](#ref-types) weiter unten in diesem Artikel.
 
@@ -88,7 +88,7 @@ Sie können die Seite „Qualitätsprüfungsauftrag“ verwenden, um manuell ein
 
 ### <a name="from-the-quality-orders-page"></a>Von der Seite Qualitätsprüfungsaufträge
 
-Um Qualitätsprüfungsaufträge manuell zu erstellen und alle vorhandenen Qualitätsprüfungsaufträge anzuzeigen, gehen Sie zu **Bestandsmanagement \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsaufträge**. Die verbleibenden Abschnitte dieses Artikels beschreiben, wie Sie mit der Seite **Qualitätsprüfungsaufträge** arbeiten können.
+Um Qualitätsprüfungsaufträge manuell zu erstellen und alle vorhandenen Qualitätsprüfungsaufträge anzuzeigen, gehen Sie zu **Lagerverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsaufträge**. Die verbleibenden Abschnitte dieses Artikels beschreiben, wie Sie mit der Seite **Qualitätsprüfungsaufträge** arbeiten können.
 
 ### <a name="from-sales-orders"></a>Von Verkaufsaufträgen
 
@@ -120,7 +120,7 @@ Um mit Qualitätsprüfungsaufträgen zu arbeiten, die sich auf Ihre Arbeitsauftr
 
 ### <a name="from-quarantine-orders"></a>Aus Quarantäneaufträgen
 
-Um mit Qualitätsprüfungsaufträgen zu arbeiten, die sich auf Ihre Quarantäneaufträge beziehen, gehen Sie zu **Bestandsmanagement \> Periodische Aufgaben \> Qualitätsmanagement \> Quarantäneaufträge**, und folgen Sie dann einem dieser Schritte:
+Um mit Qualitätsprüfungsaufträgen zu arbeiten, die sich auf Ihre Quarantäneaufträge beziehen, gehen Sie zu **Lagerverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Quarantäneaufträge**, und folgen Sie dann einem dieser Schritte:
 
 - Überprüfen Sie die Werte in der Spalte **Qualitätsprüfungsauftrag Status**. Auf diese Weise können Sie sich über den Gesamtstatus aller Qualitätsprüfungsaufträge informieren, die mit jedem Quarantäneauftrag im Raster verbunden sind.
 - Wählen Sie einen Quarantäneauftrag im Raster aus und wählen Sie dann im Aktivitätsbereich **Qualitätsprüfungsaufträge**, um Qualitätsprüfungsaufträge anzuzeigen, zu erstellen oder zu aktualisieren, die mit dem Quarantäneauftrag zusammenhängen.
@@ -135,7 +135,7 @@ Standardmäßig können Sie einen Qualitätsprüfungsauftrag nicht mehr bearbeit
 
 Um einen Qualitätsprüfungsauftrag wieder zu öffnen, führen Sie diese Schritte aus.
 
-1. Wechseln Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsaufträge**.
+1. Wechseln Sie zu **Lagerverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsaufträge**.
 1. Öffnen Sie den validierten Qualitätsprüfungsauftrag, oder wählen Sie ihn im Raster aus.
 1. Wählen Sie im Aktionsbereich **Qualitätsprüfungsauftrag wieder öffnen**.
 
@@ -147,7 +147,7 @@ Mit Supply Chain Management können Sie einen CoA aus einem Qualitätsprüfungsa
 
 Um einen CoA für einen Qualitätsprüfungsauftrag zu generieren, gehen Sie wie folgt vor.
 
-1. Wechseln Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsaufträge**.
+1. Wechseln Sie zu **Lagerverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsaufträge**.
 1. Wählen Sie den Qualitätsprüfungsauftrag, für den Sie einen CoA erstellen wollen.
 1. Wählen Sie im Aktivitätsbereich **Abfragen \> Zertifikat der Analyse**.
 1. Wählen Sie auf der Seite **Zertifikat der Analyse** im Aktivitätsbereich **Neu**.

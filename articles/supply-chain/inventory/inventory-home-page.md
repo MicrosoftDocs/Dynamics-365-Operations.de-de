@@ -1,6 +1,6 @@
 ---
 title: Übersicht über die Lagerverwaltung
-description: In diesem Artikel wird eine Übersicht über die Bestandsverwaltung angezeigt.
+description: In diesem Artikel wird eine Übersicht über die Lagerverwaltung angezeigt.
 author: yufeihuang
 ms.date: 07/25/2019
 ms.topic: overview
@@ -29,7 +29,7 @@ ms.locfileid: "8874013"
 
 [!include [banner](../includes/banner.md)]
 
-Sie können mit Bestandsverwaltung folgende Aufgaben durchführen:
+Sie können mit Lagerverwaltung folgende Aufgaben durchführen:
 
 -  [Eingehende Arbeitsgänge](arrival-overview.md)
 -  [Qualitätssicherung](quality-management-processes.md)
@@ -39,7 +39,7 @@ Sie können mit Bestandsverwaltung folgende Aufgaben durchführen:
 
 ## <a name="learning-map"></a>Lernkarte
 
-Die folgende Lernenzuordnung zeigen die wichtigsten Konzepte und die Aufgaben, die vom Framework des Modul "Bestandsverwaltung" bestehen. Klicken Sie auf die Lernkarte unten, um sie zu erweitern. Diese Lernkarte hilft Ihnen anzufangen.
+Die folgende Lernenzuordnung zeigen die wichtigsten Konzepte und die Aufgaben, die vom Framework des Modul „Lagerverwaltung“ bestehen. Klicken Sie auf die Lernkarte unten, um sie zu erweitern. Diese Lernkarte hilft Ihnen anzufangen.
 
 
 [![Bestandslernkarte.](./media/inventory-learning-map.png)](./media/inventory-learning-map.png)
@@ -53,7 +53,7 @@ Besuchen Sie [Microsoft Dynamics 365 – Produktplan](https://roadmap.dynamics
 Um mehr zu erfahren, siehe [Bestand schließen](../cost-management/inventory-close.md).
 
 ### <a name="manufacturing-and-supply-chain-management-blogs"></a>Herstellungs- und Supply Chain Management-Blogs
-Sie finden Meinungen, Neuigkeiten und weitere Informationen zur Bestandsverwaltung und zu anderen Lösungen unter [Dynamics AX Manufacturing R&D Team-Blog](/archive/blogs/axmfg/) und [Supply Chain Management im Dynamics AX R&D Team-Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).
+Sie finden Meinungen, Neuigkeiten und weitere Informationen zur Lagerverwaltung und zu anderen Lösungen unter [Dynamics AX Manufacturing R&D Team-Blog](/archive/blogs/axmfg/) und [Supply Chain Management im Dynamics AX R&D Team-Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### <a name="task-guides"></a>Aufgabenleitfäden
 Zusätzliche Hilfe steht über Aufgabenhandbücher zur Verfügung. Um auf Aufgabenleitfäden zuzugreifen, klicken Sie auf einer beliebigen Seite auf die Schaltfläche **Hilfe**

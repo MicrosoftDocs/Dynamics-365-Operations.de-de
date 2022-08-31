@@ -102,7 +102,7 @@ Wenn Sie das Feld **Rücklieferungsloskennung** in einer Rücklieferungsposition
 
 9.  Öffnen Sie das Formular **Lagerbuchungen**. Überprüfen Sie, ob die Rücklieferung mit dem Einstandspreis 7,00 pro Artikel vorkalkuliert wird, indem der Wert im Feld **Rücklieferungseinstandspreis** verwendet wird, sodass sich im Feld **Kostenbetrag** die Summe 35,00 ergibt. Sie können das Formular **Lagerbuchungen** aus dem Formular **Rücklieferung - RMA-Nummer: %1, %2** öffnen. Klicken Sie im Raster **Positionen** auf **Bestand** \> **Transaktion**.
 
-10. In der Bestands- und Lagerortverwaltung verwenden Sie das Formular **Abschluss und Regulierung**, um die Prozedur **3. Schließen** auszuführen.
+10. In der Lager- und Lagerortverwaltung verwenden Sie das Formular **Abschluss und Regulierung**, um die Prozedur **3. Schließen** auszuführen.
     
     Hiermit werden die Kosten in der ursprünglichen Auftragsposition, die mit -35,00 vorkalkuliert wurden (5 Stück \* 7,00), in -30,00 (5 Stück \* 6,00) geändert. Dies ist so, weil für die Lagersteuerungsgruppe das FIFO-Prinzip (First in, First out) verwendet wird, und 6,00 pro Artikel sind die FIFO-Kosten aus der ersten Bestellung. Zudem werden mit dieser Aktivität die Kosten in der Rückholverkaufsposition angepasst, sodass die Kosten pro Artikel der ursprünglichen Auftragsposition entsprechen. Daher werden die Kosten der Rückgabeposition von 35,00 in 30,00 geändert.
 

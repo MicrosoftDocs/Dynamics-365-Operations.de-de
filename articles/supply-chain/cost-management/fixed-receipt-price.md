@@ -38,7 +38,7 @@ Wenn Sie den Prozess *Inventarabschluss und Anpassung* ausführen, erstellt das 
 
 Gehen Sie folgendermaßen vor, um feste Zugangspreise für einen Artikel zu aktivieren.
 
-1. Gehen Sie zu **Inventarverwaltung \> Einrichten \> Bestand \> Element-Modellgruppen**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Bestand \> Element-Modellgruppen**.
 2. Erstellen Sie eine neue Artikelmodellgruppe oder wählen Sie eine vorhandene aus.
 3. Wählen Sie im Inforegister **Nachkalkulationsmethode und Kostenerfassung** das Kontrollkästchen **Fester Zugangspreis**.
 
@@ -49,7 +49,7 @@ Gehen Sie folgendermaßen vor, um feste Zugangspreise für einen Artikel zu akti
 
 Nachdem Sie die **Fester Zugangspreis**-Option aktiviert haben, müssen Sie Ihr Bestandsbuchungsprofil aktualisieren, indem Sie diesen Schritten folgen.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichten \> Buchung \> Buchung**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Buchung \> Buchung**.
 1. Wählen Sie auf der **Bestellung**-Registerkarte in der **Auswählen**-Spalte **Fester Zugangspreisgewinn**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus, um eine Zeile zum Raster hinzuzufügen.
 1. Richten Sie die neue Zeile so ein, dass sie für die Artikelmodellgruppe gilt, für die Sie die feste Zugangspreisgestaltung aktiviert haben, und geben Sie das Hauptkonto an, das verwendet wird, um die festen Zugangspreisgewinne für Bestellungen zu erfassen. Konfigurieren Sie andere Einstellungen nach Bedarf.

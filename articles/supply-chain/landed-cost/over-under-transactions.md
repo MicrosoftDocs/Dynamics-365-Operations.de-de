@@ -51,7 +51,7 @@ Um Über- und Unterlieferungsgründe festzulegen, gehen Sie zu **Gesamttransport
 |---|---|
 | Grund für Über/Unter | Geben Sie einen eindeutigen Namen für den Grund der Über- bzw. Unterlieferungs-Transaktion ein. |
 | Beschreibung | Geben Sie eine Beschreibung für den Über-/Unterlieferungsgrund ein. |
-| Bewegung | Wählen Sie das Umlagerungserfassung, das mit dem Über-/Untererfassungsgrund verbunden ist. Dieses Feld listet alle verfügbaren Journale auf, die mit einem Journaltyp *Bewegung* auf der Seite **Bestandserfassunge** (**Bestandsverwaltung einrichten \> Journale \> Bestand**) verknüpft sind. |
+| Bewegung | Wählen Sie das Umlagerungserfassung, das mit dem Über-/Untererfassungsgrund verbunden ist. Dieses Feld listet alle verfügbaren Journale auf, die mit einem Journaltyp *Bewegung* auf der Seite **Bestandserfassungen** (**Einstellungen Lagerverwaltung \> Journale \> Bestand**) verknüpft sind. |
 
 ## <a name="item-overunder-tolerance-groups"></a>Über/Unter-Toleranzgruppen für Artikel
 

@@ -645,7 +645,7 @@ Nachweis von Waren, die von einem Kreditor für Verkäufe ohne Einkauf verwendet
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Ersetzt durch eine andere Funktion                                    |
 | **Ersetzt durch eine andere Funktion?**   | Ja, die zentrale eingehende Lieferungsfunktionalität                |
-| **Betroffene Produktbereiche**         | Kreditorenkonto, Bestandverwaltung                         |
+| **Betroffene Produktbereiche**         | Kreditorenkonto, Lagerverwaltung                         |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden. |
 
 ### <a name="financial-reports-generator-for-eastern-europe"></a>Finanzberichtsgenerator für Osteuropa
@@ -819,7 +819,7 @@ Die Namen vom Manager und dem allgemeinen Buchhalter eines Unternehmens können 
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Doppelte Funktionen   |
 | **Ersetzt durch eine andere Funktion?**   | Teilweise ersetzt durch Transportverwaltung |
-| **Betroffene Produktbereiche**         | Vertrieb und Marketing, Bestandsverwaltung  |
+| **Betroffene Produktbereiche**         | Vertrieb und Marketing, Lagerverwaltung  |
 | **Status**                         | Entfernt ab Dynamics 365 for Operations Version 1611.  |
 
 ### <a name="telepay-payment-formats-for-norway"></a>Telepay-Zahlungsformate für Norwegen
@@ -850,7 +850,7 @@ Zwei Formate für den Export von Zahlungen werden für Finnland verfügbar. LM02
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die Lösung Lagerortverwaltung II (WMS II), die im Modul **Lagerverwaltung** verfügbar war, dupliziert Funktionen im Modul **Lagerortverwaltung**, das in Dynamics AX 2012 R3 veröffentlicht wurde.                                                                         |
 | **Ersetzt durch eine andere Funktion?**   | Das Modul **Lagerortverwaltung**, das in AX 2012 R3, Dynamics AX 2012 R3 CU8 und Dynamics AX 2012 R3 CU9 veröffentlicht wurde, ersetzt die Funktionen der Lagerortverwaltung II. Das neue Modul hat fortschrittlichere Funktionen sowie flexiblere Lagerortverwaltungsprozesse als jene, die in den Funktionen der Lagerortverwaltung II angeboten werden. |
-| **Betroffene Produktbereiche**         | Bestandsverwaltung, Verkauf und Marketing, Beschaffung   |
+| **Betroffene Produktbereiche**         | Lagerverwaltung, Verkauf und Marketing, Beschaffung   |
 | **Status**                         | Entfernt ab Dynamics 365 for Operations Version 1611.    |
 
 ### <a name="worker-reminders-in-human-resources"></a>Erinnerungen für Arbeitskräfte in der Personalverwaltung

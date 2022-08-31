@@ -33,7 +33,7 @@ Wenn die Standard-[Demodaten](../../../fin-ops-core/fin-ops/get-started/demo-dat
 
 Um einen Qualitätsprüfungsauftrag auszuwählen, führen Sie diese Schritte aus.
 
-1. Wechseln Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsaufträge**.
+1. Wechseln Sie zu **Lagerverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsaufträge**.
 1. Wählen Sie den Qualitätsprüfungsauftrag, der erzeugt wurde, bevor Sie diesen Vorgang gestartet haben.
 
 ## <a name="step-2-record-test-results"></a>Schritt 2: Testergebnisse aufzeichnen

@@ -26,7 +26,7 @@ Die Registerkarte **Bestellung** auf der Seite **Bestandsbuchungsprofile** dient
 
 Damit eine physische Transaktion (Produktzugang) zu einer Bestellung ins Hauptbuch gebucht werden kann, müssen die folgenden Ankreuzfelder markiert sein:
 
-- Das Kontrollkästchen **Produktzugang im Sachkonto buchen** auf der Seite **Parameter der Bestands- und Lagerverwaltung**.
+- Das Kontrollkästchen **Produktzugang im Sachkonto buchen** auf der Seite **Parameter für Lager- und Lagerortverwaltung**.
 - Die Kontrollkästchen **Physikalischen Bestand buchen** und **Haftung bei Produktzugang erfassen** auf der Seite **Artikelmodellgruppen**.
 
 Die Hauptkonten müssen auf der Seite **Bestandsbuchungsprofil** für die folgenden Buchungsarten angegeben werden:
@@ -51,7 +51,7 @@ Als Alternative zur Auswahl der Option **Standardkosten** im Feld **Bestandsmode
 Um einen festen Eingangspreis für ein Produkt zu verwenden, müssen Sie Folgendes konfigurieren:
 
 - Markieren Sie auf der Seite **Artikelmodellgruppen** die Ankreuzfelder **Physikalischen Bestand POSTEN** und **Fester Eingangspreis**. 
-- Auf der Seite **Parameter der Bestands- und Lagerverwaltung** markieren Sie das Kontrollkästchen **Lieferschein im Sachkonto posten**.
+- Auf der Seite **Parameter für Lager- und Lagerortverwaltung** markieren Sie das Kontrollkästchen **Lieferschein im Sachkonto posten**.
 - Geben Sie auf der Seite **Buchungsprofil Bestand** die Hauptkonten für die folgenden Buchungsarten an:
   - Fester Zugangspreis - Gewinn
   - Fester Zugangspreis - Verlust
@@ -66,7 +66,7 @@ Wenn Sie planen, Belastungen für Käufe und Bestandsschwankungen zu berücksich
 - Aktivieren Sie auf der Seite **Kreditorenparameter** auf der Registerkarte **Rechnung** das Kontrollkästchen **Buchen auf Sachkonto**.
 - Aktivieren Sie auf der Seite **Postenmodellgruppen** für den in der Bestellzeile ausgewählten Artikel die Kontrollkästchen **Physikalischen Bestand buchen**, **Wertmäßigen Bestand buchen** und **Haftung bei Produktzugang ansetzen**.
 - Auf der Seite **Beschaffungs- und Bezugsquellenfindungsparameter** markieren Sie das Ankreuzfeld **Belastungen beim Produktzugang generieren**.
-- Auf der Seite **Parameter der Bestands- und Lagerverwaltung** markieren Sie das Kontrollkästchen **Lieferschein im Sachkonto posten**.
+- Auf der Seite **Parameter für Lager- und Lagerortverwaltung** markieren Sie das Kontrollkästchen **Lieferschein im Sachkonto posten**.
 
 Auf der Seite **Bestandsbuchungsprofil** müssen Sie die Hauptkonten für die folgenden Buchungsarten angeben:
 
@@ -103,7 +103,7 @@ Die folgende Tabelle zeigt Beispiele für die Standardbuchungsarten mit beispiel
 | Gebühr | NA | NA | NA | NA | NA | NA | NA | Dieses Konto wird nicht mehr verwendet. Verwenden Sie stattdessen die Variante Bestand. |
 | Bestandsveränderung | 600170 | Bestandsveränderung | Ausgaben | Gutschrift | Nein | Beides | | Dieses Konto wird verwendet, wenn: <ul><li>Es gibt einen Unterschied im Einheitspreis zwischen Produktzugang und Rechnung.</li><li>Belastungen werden auf den Artikel gebucht.</li><li>Indirekte Kosten wurden<!--note from editor: Edit okay?--> wird zu den gekauften Artikeln hinzugefügt. </li><li>Die Gegenbuchung zu diesem Konto ist das Konto Einkaufsausgaben, nicht fakturiert.</li></ul> |
 | Einkauf, Abgrenzung | 200140 | Antizipierte Einkäufe | Passivposten | Gutschrift | Y | P | |Wird verwendet, wenn ein Produktzugang für eine Bestellung gebucht wird und die Option zur Abgrenzung von Kaufbeträgen aktiviert ist. |
-| Antizipierte Mehrwertsteuer in Beleg | 250500 | Aufgelaufene Mehrwertsteuer | Passivposten | Gutschrift | Y | Beides  | |Dieses Konto wird verwendet, wenn Sie die Option **Physikalische Steuer buchen** bei den **Parametern der Bestands- und Lagerverwaltung** wählen und Sie einen Kauf mit Steuer haben. Der Betrag wird gebucht, wenn Sie die Bestellung physisch aktualisieren (Produktzugang), und storniert, wenn Sie die Bestellung finanziell buchen (Rechnung). |
+| Antizipierte Mehrwertsteuer in Beleg | 250500 | Aufgelaufene Mehrwertsteuer | Passivposten | Gutschrift | Y | Beides  | |Dieses Konto wird verwendet, wenn Sie die Option **Physikalische Steuer buchen** bei den **Parametern für Lager- und Lagerortverwaltung** wählen und Sie einen Kauf mit Steuer haben. Der Betrag wird gebucht, wenn Sie die Bestellung physisch aktualisieren (Produktzugang), und storniert, wenn Sie die Bestellung finanziell buchen (Rechnung). |
 | Fester Anlageneingang (Fester Anlagenabgang*) | 180100 | Sachanlagen | Anlage | Belastung | N | Beides | Beides | Dieses Konto wird verwendet, wenn Sie die Option in der Zeile für den Kauf von Anlagen wählen. Die Bestellungsintegration wurde so konfiguriert, dass die Anlage bei Produktzugang oder auf Rechnung erworben wird. Weitere Informationen zur Integration der Bestellung von Anlagen finden Sie unter [Anlagen durch Beschaffung erwerben](/fixed-assets/acquire-assets-procurement). |
 | Einkaufsaufwendungen für Ausgaben | 618900 | Sonstige Ausgaben | Ausgaben | Belastung | N | Beides | |Wird verwendet, wenn ein Produktzugang oder eine Rechnung für eine Bestellung gebucht wird, bei der die Artikel nicht auf Lager sind, oder eine Beschaffungskategorie verwendet wird. |
 | Vorauszahlung | 132190 | Vorausbezahlte Ausgaben | Anlage | Belastung | N | Beides | | Wird bei der Verarbeitung einer Vorauszahlungsrechnung zu einer Einkaufsrechnung verwendet. |

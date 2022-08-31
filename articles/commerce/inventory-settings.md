@@ -39,7 +39,7 @@ In Commerce Site Builder können Bestandsschwellenwerte und -bereiche für ein P
 
 ## <a name="inventory-settings"></a>Bestandeinstellungen
 
-In Commerce werden Bestandeinstellungen unter **Seiteneinstellungen \> Erweiterungen \> Bestandsverwaltung** im Site Builder definiert. Es gibt sechs Bestandseinstellungen, von denen eine veraltet ist (außer Betrieb genommen):
+In Commerce werden Bestandeinstellungen unter **Seiteneinstellungen \> Erweiterungen \> Lagerverwaltung** im Site Builder definiert. Es gibt sechs Bestandseinstellungen, von denen eine veraltet ist (außer Betrieb genommen):
 
 - **Bestandsüberprüfung in App aktivieren** – Diese Einstellung aktiviert eine Produktbestandsüberprüfung. Wenn Sie Box-, Warenkorb- und Abholmodule kaufen, wird der Produkbestand überprüft und das Hinzufügen eines Produkts zum Warenkorb nur dann ermöglicht, wenn Bestand verfügbar ist.
 - **Lagerbestand basierend auf** – Diese Einstellung definiert, wie die Lagerbestände berechnet werden. Die verfügbaren Werte sind **Insgesamt verfügbar**, **Physisch verfügbar** und **Nicht verfügbar**. In Commerce Site Builder können die Bestandsschwellenwerte und -bereiche für ein Produkt oder eine Kategorie definiert werden. Die Inventar-APIs geben Produktbestandinformationen für die Eigenschaft **Insgesamt verfügbar** und **Physisch verfügbar** zurück. Der Händler entscheidet, ob der Wert **Insgesamt verfügbar** oder **Physisch verfügbar** verwendet wird, um die Anzahl der Bestände und die entsprechenden Bereiche für den Status Lagerbestand verfügbar und Lagerbestand nicht verfügbar zu bestimmen.

@@ -29,7 +29,7 @@ Diese Prozedur führt Sie durch den Prozess der Erstellung und des Buchens einer
 
 
 ## <a name="create-an-inventory-transfer-journal"></a>Lagerumlagerungserfassung erstellen
-1. Gehen Sie im Navigationsbereich **Navigationsbereich** zu **Bestandsverwaltung > Journalbuchungen > Positionen > Transfer**.
+1. Gehen Sie im Navigationsbereich **Navigationsbereich** zu **Lagerverwaltung > Journalbuchungen > Positionen > Transfer**.
 2. Klicken Sie auf **Neu**.
 3. Geben Sie im Feld **Name** einen Wert ein, oder wählen Sie einen Wert aus.
 4. Klicken Sie auf **OK**. Es gibt die Option, "Von"- und "Bis"-Dimensionen für jede Erfassungsposition anzugeben. Dies ist für diesen Erfassungstyp wesentlich. Sie können Artikel unter Verwendung der verschiedenen Regeln an andere Lagerplätze umlagern. In diesem Beispiel lagern Sie einen Artikel innerhalb des gleichen Lagerorts von einem Ladungsträger gesteuerten Lagerplatz zu einem Lagerplatz, der nicht von einem Ladungsträger gesteuert wird, um.   

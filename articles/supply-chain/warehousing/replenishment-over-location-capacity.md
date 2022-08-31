@@ -243,7 +243,7 @@ Später in diesem Szenario verwenden Sie die Warehouse Management Mobile App (od
 
 Führen Sie die folgenden Schritte aus, um die Kennzeichen-IDs zu finden, die Sie später benötigen.
 
-1. Wechseln Sie zu **Bestandsverwaltung \> Anfragen und Berichte \> Bestandsliste**.
+1. Wechseln Sie zu **Lagerverwaltung \> Anfragen und Berichte \> Bestandsliste**.
 1. Wählen Sie die Schaltfläche **Filter anzeigen** aus, um den Filterbereich zu öffnen.
 1. Geben Sie die folgenden Filterkriterien ein, um die Kennzeichen für das Szenario zu erhalten. Verwenden Sie den Filter *beginnt mit*.
 

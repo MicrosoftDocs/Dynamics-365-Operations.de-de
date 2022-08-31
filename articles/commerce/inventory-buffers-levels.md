@@ -36,7 +36,7 @@ Die Funktion für Inventarpuffer und Inventarebenen wird über die Funktionsverw
 1. Wechseln Sie zu **Systemverwaltung** \> **Arbeitsbereiche** \> **Datenverwaltung**.
 1. Suche nach der Funktion **Aktivieren Sie Inventarpuffer und Inventarebenen**, wählen Sie die Zeile aus und wählen Sie dann **Jetzt aktivieren**.
 
-Nachdem die Funktion aktiviert wurde, finden Sie die Lagerbestände unter **Einzelhandel und Handel \> Bestandsverwaltung**.
+Nachdem die Funktion aktiviert wurde, finden Sie die Lagerbestände unter **Einzelhandel und Handel \> Lagerverwaltung**.
 
 ## <a name="create-and-configure-an-inventory-level-profile"></a>Erstellen und konfigurieren Sie ein Profil auf Inventarebene
 
@@ -50,7 +50,7 @@ Ein *Profil auf Inventarebene* legt fest, ob ein bestimmter Produktmengenstatus 
 
 Um ein Lagerbestandsprofil zu erstellen, folgen Sie diesen Schritten.
 
-1. Gehen Sie zu **Einzelhandel und Handel** \> **Bestandsverwaltung** \> **Lagerbestände**.
+1. Gehen Sie zu **Einzelhandel und Handel** \> **Lagerverwaltung** \> **Lagerbestände**.
 1. Wählen Sie im Aktionsbereich **Neu** und geben Sie dann Werte in das Feld **Profil ID** und **Beschreibung** ein.
 1. Auf der Infoseite **Bereiche** wählen Sie **Hinzufügen**, um eine neue Ebene hinzuzufügen, und geben Sie dann Werte in die Spalten **Startmenge**, **Endmenge**, **Code**, und **Etikette** für diese Ebene ein. Wiederholen Sie diesen Schritt, um weitere Ebenen hinzuzufügen. Bei Bedarf können Sie die Werte im Datenraster bearbeiten oder **Löschen** auswählen, um eine Ebene zu entfernen.
 1. Wählen Sie im Aktionsbereich **Speichern** aus.

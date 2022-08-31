@@ -47,7 +47,7 @@ Drei Behälter und zwei Regale dienen zur Aufbewahrung von Elementen, die nicht 
 
 ## <a name="create-a-quarantine-zone"></a>Erstellen Sie eine Quarantänezone
 
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichten \> Qualitätsmanagement \> Quarantänezonen**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Qualitätsmanagement \> Quarantänezonen**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus, um eine Zeile zum Raster hinzuzufügen. Legen Sie für die neue Zeile die folgenden Felder fest:
 
     - **Quarantänezone** – Geben Sie eine eindeutige ID oder einen Namen für die Quarantänezone ein.

@@ -46,7 +46,7 @@ Eine produzierende Firma führt zwei Tests an gekauftem Material durch: einen qu
 
 Folgen Sie diesen Schritten, um einen Test zu erstellen.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichten \> Qualitätskontrolle \> Tests**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Qualitätskontrolle \> Tests**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus, um eine Zeile zum Raster hinzuzufügen. Legen Sie für die neue Zeile die folgenden Felder fest:
 
     - **Test** – Geben Sie eine eindeutige ID oder einen Namen für den Test ein.

@@ -52,7 +52,7 @@ Hier sind einige Beispiele für Szenarien für Problemtypen, die mit den verschi
 
 ## <a name="create-a-problem-type-and-assign-it-to-nonconformance-types"></a>Erstellen Sie einen Problemtyp und ordnen Sie ihn Qualitätsmängeln zu
 
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichten \> Qualitätsmanagement \> Problemtypen**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Qualitätsmanagement \> Problemtypen**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus, um eine Zeile zum Raster hinzuzufügen. Legen Sie für die neue Zeile die folgenden Felder fest:
 
     - **Problemtyp** – Geben Sie eine eindeutige ID oder einen Namen für den Problemtyp ein.

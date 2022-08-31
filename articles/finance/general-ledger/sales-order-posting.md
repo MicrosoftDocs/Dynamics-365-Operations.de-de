@@ -26,7 +26,7 @@ Die Registerkarte **Auftrag** auf der Seite **Bestandsbuchungsprofile** wird ver
 
 Damit eine physische Transaktion (Lieferschein) für einen Auftrag in das Hauptbuch gebucht werden kann, müssen die folgenden Bedingungen erfüllt sein:
 
-- Auf der Seite **Parameter der Bestands- und Lagerortverwaltung** muss das Kontrollkästchen **Lieferschein auf Sachkonto buchen** aktiviert sein.
+- Auf der Seite **Parameter für Lager- und Lagerortverwaltung** muss das Kontrollkästchen **Lieferschein auf Sachkonto buchen** aktiviert sein.
 - Auf der Seite **Artikelmodellgruppe** für den in der Auftragszeile ausgewählten Artikel muss das Kontrollkästchen **Physischen Bestand auf Sachkonto buchen** aktiviert sein.
 - Auf der Seite **Bestandsbuchungsprofil** müssen für folgende Buchungsarten die Hauptkonten angegeben werden:
   - Kosten der gelieferten Einheiten
@@ -48,8 +48,8 @@ Um den verzögerten (geschätzten) Umsatzerlöswert in das Hauptbuch zu buchen, 
 
 - Auf der Seite **Artikelmodellgruppe** für den in der Auftragszeile ausgewählten Artikel muss das Kontrollkästchen **Physischen Bestand auf Sachkonto buchen** aktiviert sein.
 - Auf der Seite **Artikelmodellgruppe** muss das Kontrollkästchen **Physischen Umsatzerlös buchen** aktiviert sein.
-- Auf der Seite **Parameter der Bestands- und Lagerortverwaltung** muss das Kontrollkästchen **Lieferschein auf Sachkonto buchen** aktiviert sein.
-- Auf der Seite **Parameter der Bestands- und Lagerortverwaltung** muss das Kontrollkästchen **Physische Verkaufssteuer buchen** aktiviert sein.
+- Auf der Seite **Parameter für Lager- und Lagerortverwaltung** muss das Kontrollkästchen **Lieferschein auf Sachkonto buchen** aktiviert sein.
+- Auf der Seite **Parameter für Lager- und Lagerortverwaltung** muss das Kontrollkästchen **Physische Verkaufssteuer buchen** aktiviert sein.
 - Auf der Seite **Debitorenparameter** muss das Kontrollkästchen **Lieferschein auf Sachkonto buchen** aktiviert sein.
 - Auf der Seite **Bestandsbuchungsprofil** müssen für folgende Buchungsarten die Hauptkonten angegeben werden:
   - Lieferschein-Umsatzerlös
@@ -99,7 +99,7 @@ Nachdem Sie eine Kategoriehierarchie erstellt haben, müssen Sie die Hierarchie 
 
 Führen Sie die folgenden Schritte aus, um Sachkontobuchungen für einen Auftrag basierend auf einer Verkaufskategorie zuzuweisen:
 
-1. Navigieren Sie zu **Bestandsverwaltung** > **Einstellungen** > **Buchung** > **Buchung**.
+1. Navigieren Sie zu **Lagerverwaltung** > **Einstellungen** > **Buchung** > **Buchung**.
 2. Wählen Sie die Registerkarte **Verkauf** aus.
 3. Wählen Sie das Optionsfeld für den Buchungstyp aus, den Sie konfigurieren möchten (z. B. **Umsatzerlös**).
 4. Wählen Sie **Neu** aus.

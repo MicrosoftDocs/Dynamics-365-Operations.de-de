@@ -60,8 +60,8 @@ Wenn Sie Kaufgebühren und Bestandsschwankungen berücksichtigen möchten, müss
     - Verbindlichkeiten bei Produktzugang abgrenzen
 
 - Auf der Registerkarte **Lieferung** der Seite **Beschaffungsparameter** (**Beschaffung \> Einrichtung \> Beschaffungsparameter**) muss die Option **Gebühren bei Produktzugang generieren** auf *Ja* eingestellt sein.
-- Auf der Registerkarte **Bestandsbuchhaltung** der Seite **Parameter für Bestands- und Lagerortverwaltung** (**Bestandsverwaltung \> Einrichtung \> Parameter für Bestands- und Lagerortverwaltung**) muss die Option **Lieferschein auf Sachkonto buchen** auf *Ja* eingestellt sein.
-- Auf der Registerkarte **Bestellung** der Seite **Buchung** (**Bestandsverwaltung \> Einrichtung \> Buchung \> Buchung**) müssen für jede der folgenden Buchungsarten Hauptkonten angegeben werden, die für jeden relevanten Posten gelten:
+- Auf der Registerkarte **Bestandsbuchhaltung** der Seite **Parameter für Lager- und Lagerortverwaltung** (**Lagerverwaltung \> Einstellungen \> Parameter für Lager- und Lagerortverwaltung**) muss die Option **Lieferschein auf Sachkonto buchen** auf *Ja* eingestellt sein.
+- Auf der Registerkarte **Bestellung** der Seite **Buchung** (**Lagerverwaltung \> Einstellungen \> Buchung \> Buchung**) müssen für jede der folgenden Buchungsarten Hauptkonten angegeben werden, die für jeden relevanten Posten gelten:
 
     - Einkaufsaufwendungen, nicht fakturiert
     - Einkaufswendungen für Produkt

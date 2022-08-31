@@ -55,7 +55,7 @@ Wenn Sie im Service Inventory Visibility keine Soft-Reservierungen verwenden, m�
 
 Die Einsicht in Ihren für die nahe Zukunft prognostizierten Bestand (einschließlich Angaben zu Vorrat, Bedarf und prognostiziertem Lagerbestand) ist wichtig, denn sie hilft Ihrer Firma, die folgenden Ziele zu erreichen:
 
-- Minimieren Sie die Bestände, um die Kosten für die Kalkulation zu senken.
+- Minimieren Sie die Bestände, um die Kosten für die Lagerverwaltung zu senken.
 - Erleichtern Sie die interne Verarbeitung von Bestellungen, damit Verkäufer Versand- und Liefertermine auf der Grundlage der Verfügbarkeit der bestellten Produkte berechnen können.
 - Bieten Sie Transparenz darüber, wann Kunden erwarten können, dass ein vergriffenes Element wieder verfügbar ist, indem Sie das Datum der nächsten Verfügbarkeit angeben.
 

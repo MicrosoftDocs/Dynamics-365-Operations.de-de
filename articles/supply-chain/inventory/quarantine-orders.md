@@ -39,7 +39,7 @@ Wenn Sie Artikel unter Quarantäne stellen, können Sie die Quarantäneaufträge
 
 Um das System so festzulegen, dass es automatisch Quarantäneaufträge erzeugt, folgen Sie diesen Schritten.
 
-1. Gehen Sie zu **Inventarverwaltung \> Einrichten \> Bestand \> Element-Modellgruppen**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Bestand \> Element-Modellgruppen**.
 1. Wählen Sie eine relevante Modellgruppe im Listenbereich aus oder erstellen Sie eine neue Modellgruppe.
 1. Aktivieren Sie auf der Registerkarte **Inventarrichtlinien** das Kontrollkästchen **Quarantäneverwaltung**.
 1. Schließen Sie die Seite.

@@ -37,7 +37,7 @@ Sie führen verschiedene Tests an elektrischen Komponenten durch. Einige Tests b
 
 ## <a name="create-a-test-instrument"></a>Erstellen Sie ein Testinstrument
 
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichten \> Qualitätskontrolle \> Testinstrumente**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Qualitätskontrolle \> Testinstrumente**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus, um eine Zeile zum Raster hinzuzufügen. Legen Sie für die neue Zeile die folgenden Felder fest:
 
     - **Testgerät** – Geben Sie eine eindeutige ID oder einen Namen für das Testgerät ein.

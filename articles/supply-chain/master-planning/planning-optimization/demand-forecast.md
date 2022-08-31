@@ -381,7 +381,7 @@ Gehen Sie folgendermaßen vor, um ein Prognosemodell zu erstellen.
 
 Um einem Planungsmodell Untermodelle zuzuweisen, gehen Sie wie folgt vor.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichten \> Prognose \> Prognosemodelle**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Prognose \> Prognosemodelle**.
 1. Wählen Sie im Listenbereich das Prognosemodell, für das Sie ein Untermodell festlegen wollen.
 1. Wählen Sie auf der Inforegisterkarte **Untermodell** die Option **Hinzufügen**, um dem Raster eine Zeile hinzuzufügen.
 1. Legen Sie in der neuen Zeile die folgenden Felder fest.

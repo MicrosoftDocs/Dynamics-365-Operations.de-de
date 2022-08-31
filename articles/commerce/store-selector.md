@@ -47,7 +47,7 @@ Darüber hinaus müssen für jedes Geschäft in der Erfüllungsgruppe der Breite
 
 Um den Längen- und Breitengrad für den Geschäftsstandort in der Commerce-Zentralverwaltung zu konfigurieren, gehen Sie wie folgt vor.
 
-1. Wechseln Sie zu **Bestandsverwaltung \> Einstellungen \> Lageraufschlüsselung**.
+1. Wechseln Sie zu **Lagerverwaltung \> Einstellungen \> Lageraufschlüsselung**.
 1. Wählen Sie im linken Bereiche den Lagerortstandort aus.
 1. Wählen Sie im Inforegister **Adressen** **Erweitert** aus.
 

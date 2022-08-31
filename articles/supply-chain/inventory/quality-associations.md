@@ -49,7 +49,7 @@ Jeder Qualitätszuordnungsdatensatz definiert den Testsatz, das akzeptable Quali
 
 Für einen bestimmten Geschäftsprozess identifiziert der Datensatz für die Qualitätszuordnung das Ereignis und die Bedingungen, für die ein Qualitätsprüfungsauftrag erzeugt wird. Die Bedingungen können entweder für einen Standort oder für eine juristische Person spezifisch sein. Ein Qualitätsprüfungsauftrag mit Zerstörungstests kann nur ausgeführt werden, wenn am Lager Artikel für das Ereignis vorhanden sind.
 
-Um mit Qualitätsverbänden zu arbeiten, gehen Sie zu **Bestandsmanagement \> Einrichten \> Qualitätskontrolle \> Qualitätsverbände**. Die folgenden Beispiele zeigen, wie ein Datensatz für die Qualitätszuordnung für die Variationen in jedem Geschäftsprozess definiert wird. Für jedes Beispiel sind zudem in der folgenden Tabelle die Ereignisse und Bedingungen zusammengefasst, die durch einen Qualitätszuordnungsdatensatz definiert werden.
+Um mit Qualitätsverbänden zu arbeiten, gehen Sie zu **Lagerverwaltung \> Einstellungen \> Qualitätskontrolle \> Qualitätsverbände**. Die folgenden Beispiele zeigen, wie ein Datensatz für die Qualitätszuordnung für die Variationen in jedem Geschäftsprozess definiert wird. Für jedes Beispiel sind zudem in der folgenden Tabelle die Ereignisse und Bedingungen zusammengefasst, die durch einen Qualitätszuordnungsdatensatz definiert werden.
 
 <table>
 <thead>

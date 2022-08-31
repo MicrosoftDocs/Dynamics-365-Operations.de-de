@@ -55,7 +55,7 @@ Sie können mehrere Ursachencoderichtlinien erstellen, um zu steuern, wann und w
 
 Führen Sie die folgenden Schritte aus, um eine Ursachencoderichtlinie zu erstellen.
 
-1. Gehen Sie zu **Bestandsverwaltung** \> **Setup** \> **Bestand** \> **Richtlinien zu Ursachencodes für Zählungen**.
+1. Gehen Sie zu **Lagerverwaltung** \> **Einstellungen** \> **Bestand** \> **Richtlinien zu Ursachencodes für Zählungen**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus, um eine Richtlinie zum Raster hinzuzufügen.
 1. Legen Sie das Feld **Name** für die neue Richtlinie fest.
 1. Im Feld **Ursachencodetyp für Zählungen** wählen Sie entweder *Obligatorisch* oder *Optional*, um anzugeben, ob die Auswahl eines Ursachencodes eine optionale oder erforderliche Aktivität in den folgenden Prozessen zur Lagerregulierung sein soll:
@@ -77,7 +77,7 @@ Sie können Ursachencoderichtlinien sowohl für einzelne Lagerorte als auch für
 
 Führen Sie die folgenden Schritte aus, um einem Lagerort eine Richtlinie zu Ursachencodes für Zählungen zuzuweisen.
 
-1. Gehen Sie zu **Lagerverwaltung** \> **Setup** \> **Lageraufschlüsselung** \> **Lagerorte**.
+1. Gehen Sie zu **Lagerverwaltung** \> **Einstellungen** \> **Lageraufschlüsselung** \> **Lagerorte**.
 1. Wählen Sie im Listenbereich einen Lagerort aus.
 1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Lagerort** in der Gruppe **Setup** **Richtlinie zu Ursachencodes für Zählungen** aus. Führen Sie dann im Dropdown-Dialogfeld **Richtlinie zu Ursachencodes für Zählungen zuweisen** einen der folgenden Schritte aus:
 
@@ -101,7 +101,7 @@ Führen Sie die folgenden Schritte aus, um einem Produkt eine Richtlinie zu Ursa
 
 Gehen Sie zum Einrichten Ihrer Urschencodes für Zählungen folgendermaßen vor.
 
-1. Gehen Sie zu **Bestandsverwaltung** \> **Setup** \> **Bestand** \> **Ursachencodes für Zählungen**.
+1. Gehen Sie zu **Lagerverwaltung** \> **Einstellungen** \> **Bestand** \> **Ursachencodes für Zählungen**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus, um eine Zeile zum Raster hinzuzufügen.
 1. Legen Sie die Felder **Ursachencode für Zählungen** und **Beschreibung** für die neue Zeile fest.
 1. Um ein Gegenkonto zuzuweisen, geben Sie einen Wert in das Feld **Gegenkonto** ein oder wählen Sie ihn aus.
@@ -113,7 +113,7 @@ Gehen Sie zum Einrichten Ihrer Urschencodes für Zählungen folgendermaßen vor.
 
 *Ursachencodegruppen für Zählungen* können als Teil der Menüelemente *Regulierung eingehend* und *Regulierung ausgehend* mobilen Warehouse Management-App, um die Liste der Ursachencodes für Zählungen einzuschränken. (Weitere Informationen zu Ursachencodegruppen für Zählungen finden Sie im Abschnitt [Die Menüelemente des mobilen Geräts für ein- und ausgehende Regulierung einrichten](#setup-adjustment-in-out) weiter unten in diesem Artikel.)
 
-1. Gehen Sie zu **Bestandsverwaltung** \> **Setup** \> **Bestand** \> **Ursachencodegruppen für Zählungen**.
+1. Gehen Sie zu **Lagerverwaltung** \> **Einstellungen** \> **Bestand** \> **Ursachencodegruppen für Zählungen**.
 1. Wählen Sie im Aktionsbereich **Neu** aus, um eine Gruppe hinzuzufügen.
 1. Legen Sie die Felder **Ursachencodegruppe** und **Gruppenbeschreibung** für die neue Gruppe fest.
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
@@ -214,7 +214,7 @@ Gehen Sie folgendermaßen vor, um die Ursachencodes anzuzeigen, die in der Inven
 
 Gehen Sie wie folgt vor, um einen Ursachencode für eine Mengenregulierung oder Online-Inventur zu verwenden.
 
-1. Wechseln Sie zu **Bestandsverwaltung \> Anfragen und Berichte \> Bestandsliste**.
+1. Wechseln Sie zu **Lagerverwaltung \> Anfragen und Berichte \> Bestandsliste**.
 1. Wählen Sie im Aktivitätsbereich **Mengenregulierung** aus.
 1. Wählen Sie **Mengeregulierung** und dann im Feld **Ursachencode für Zählungen** einen Ursachencode aus.
 

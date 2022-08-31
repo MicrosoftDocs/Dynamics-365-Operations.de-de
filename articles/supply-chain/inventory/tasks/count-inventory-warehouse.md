@@ -25,7 +25,7 @@ ms.locfileid: "8870636"
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Artikel wird der Prozess der Erstellung und Buchung einer Lagerinventurerfassung beschrieben, um einen bestimmten Artikel in einem Lagerplatz am Lagerort zu zählen. Die Prozedur ist auf die Funktion Grundlegendes Warehousing ausgelegt, die sich im Inventurverwaltungsmodul befindet, jedoch nicht auf die Warehousing-Funktion, die im Lagerortverwaltungsmodul verfügbar ist. Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden. Wenn Sie eigene Daten verwenden, sollten Sie sicherstellen, dass Sie die Produkte und Lagerplatzeinstellung eingerichtet haben und dass Sie eine Lagererfassung für Inventurerfassungen erstellt haben. Die Lagerinventur wird in der Regel von einem Lagerortmitarbeiter ausgeführt.
+In diesem Artikel wird der Prozess der Erstellung und Buchung einer Lagerinventurerfassung beschrieben, um einen bestimmten Artikel in einem Lagerplatz am Lagerort zu zählen. Die Prozedur ist auf die Funktion Grundlegendes Warehousing ausgelegt, die sich im Modul „Lagerverwaltung“ befindet, jedoch nicht auf die Warehousing-Funktion, die im Modul „Lagerortverwaltung“ verfügbar ist. Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden. Wenn Sie eigene Daten verwenden, sollten Sie sicherstellen, dass Sie die Produkte und Lagerplatzeinstellung eingerichtet haben und dass Sie eine Lagererfassung für Inventurerfassungen erstellt haben. Die Lagerinventur wird in der Regel von einem Lagerortmitarbeiter ausgeführt.
 
 
 ## <a name="create-an-inventory-counting-journal"></a>Lagerinventurerfassung erstellen

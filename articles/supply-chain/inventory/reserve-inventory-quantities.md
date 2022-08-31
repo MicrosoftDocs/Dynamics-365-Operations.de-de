@@ -41,7 +41,7 @@ Für das Reservieren von Lagerbestand gibt es mehrere Gründe:
 Der Lagerbestand kann automatisch reserviert werden, wenn eine neue Auftragsposition erstellt wird, oder er wird manuell für die individuellen Aufträge reserviert. Es ist auch möglich, Bestand in verschiedenen Stufen in einem Produktionsprozess zu reservieren. Nur gelagerte Produkte können reserviert werden. Leistungen können nicht reserviert werden, da es keinen Lagerbestand gibt. Sowohl der physische als auch der bestellte, aber noch nicht eingegangene Lagerbestand kann reserviert werden. Wenn eine größere Menge reserviert wird, als im verfügbaren Lagerbestand vorhanden ist, wird eine Warnung angezeigt, dass das Reservieren einer so großen Menge nicht möglich ist. Sie können die Menge dann trotzdem reservieren oder die bestellte Menge ändern. Die Menge kann entweder reserviert oder geändert werden. Wenn mehr Artikel reserviert werden, als verfügbar sind, wird der Mangel das nächste Mal abgedeckt, wenn Artikel für die Lieferung verfügbar sind.
 
 ## <a name="inventory-reservation-policies"></a>Bestandsreservierungsrichtlinien
-Bestandreservierungsrichtlinien werden auf den Seiten **Lagersteuerungsgruppen** und **Parameter für Bestand- und Lagerortverwaltung**  und der Seite **Produktionsparameter** festgelegt.
+Bestandreservierungsrichtlinien werden auf den Seiten **Lagersteuerungsgruppen** und **Parameter für Lager- und Lagerortverwaltung**  und der Seite **Produktionsparameter** festgelegt.
 ### <a name="policies-on-the-item-model-groups-page"></a>Richtlinien auf der Artikelmodellgruppenseite
 
 Der Abschnitt **Bestandrichtlinie** enthält die folgenden Reservierungsrichtlinien.
@@ -71,9 +71,9 @@ Für einen Auftrag, der automatisch reserviert und am 4. April 2016 geliefert we
 -   Wenn das Kontrollkästchen **FIFO-Datumsgesteuert** aktiviert und das Kontrollkästchen **Rückwärts ab Versanddatum** deaktiviert ist, wird die Charge 1001 reserviert, weil es sich dabei um die Charge mit dem frühesten Eingangsdatum handelt (FIFO).
 -   Wenn sowohl das Kontrollkästchen **FIFO-Datumsgesteuert** und **Rückwärts ab Versanddatum** aktiviert sind, wird die Charge 1002 reserviert, weil es sich dabei um die Charge handelt, deren Zugangsdatum dem Versanddatum am nächsten liegt.
 
-### <a name="policies-on-the-inventory-and-warehouse-management-parameter-page"></a>Richtlinien auf der Parameterseite für die Bestand und Lagerortverwaltung anzeigen
+### <a name="policies-on-the-inventory-and-warehouse-management-parameter-page"></a>Richtlinien auf der Seite„Parameter für Lager- und Lagerortverwaltung“ anzeigen
 
-Es gibt zwei Möglichkeiten, die Reservierungen **im Bestand und in Lagerortverwaltungs parametern** zugeordnet werden:
+Es gibt zwei Möglichkeiten, die Reservierungen auf der Seite **Parameter für Lager- und Lagerortverwaltung** zugeordnet werden:
 -   Mit der Option **Bestellte Artikel reservieren** in der Registerkarte **Allgemein** können Sie Artikelzugänge reservieren, die gegenüber Artikelabgängen in den Bereichen Debitoren, Projektverwaltung und Buchhaltung sowie Produktionssteuerung bestellt wurden. Wenn Sie diese Option deaktivieren, können Sie nur Artikel reservieren, die physisch eingegangen sind. Wenn ein bestimmter Artikel so eingerichtet wurde, dass er einen negativen Bestand akzeptiert, ist dieses Feld nicht relevant.
 -   Die Option **Artikel automatisch reservieren** auf der Registerkarte **Umlagerung** legt die Standardeinstellung fest, wenn Artikel für Umlagerungsaufträge automatisch reserviert werden. Die Standardeinstellung kann auf einzelnen Umlagerungsaufträge überschrieben werden.
 

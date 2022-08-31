@@ -44,7 +44,7 @@ Bevor ein Benutzer Qualitätsmängel genehmigen oder ablehnen kann, müssen Sie 
 
 ## <a name="define-workers-that-are-responsible-for-quality"></a>Definieren Sie Arbeitskräfte, die für die Qualität verantwortlich sind
 
-1. Übergehen zu **Bestandsmanagement \> Einrichten \> Qualitätskontrolle \> Qualitätsverantwortliche Arbeitskräfte**.
+1. Übergehen zu **Lagerverwaltung \> Einstellungen \> Qualitätskontrolle \> Qualitätsverantwortliche Arbeitskräfte**.
 2. Wählen Sie im Aktivitätsbereich **Neu** aus.
 3. Wählen Sie im Feld **Arbeiter** die Arbeitskraft aus, die Qualitätsdaten eingibt.
 4. Wählen Sie im Feld **Verantwortliche Arbeitskraft** die Arbeitskraft aus, für die die ausgewählte Arbeitskraft die Arbeit eingibt. Wenn Qualitätsmängel erstellt und aktualisiert werden, wird diese Arbeitskraft standardmäßig in die Felder **Arbeiter** eingetragen.

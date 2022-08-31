@@ -40,16 +40,16 @@ Sie können eine oder mehrere Verpackungseinheiten für einen einzelnen Artikel,
 
 Bevor Sie Verpackungsmaterialgewichte, Verpackungsmaterialgebühren oder beides berechnen können, müssen Sie die Berechnung einschalten und festlegen, welche Materialien und Gebühren für welche Positionen gelten.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichtung \> Bestands- und Lagerverwaltungsparameter**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Parameter für Lager- und Lagerortverwaltung**.
 1. Setzen Sie auf der Registerkarte **Allgemein** im Abschnitt **Verpackungsmaterial** die Option **Verpackungsmaterialgebühren berechnen** auf **Ja**.
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichtung \> Verpackungsmaterial \> Verpackungsgruppen**, und legen Sie alle von Ihnen verwendeten Verpackungsgruppen an. Alle Positionen in einer Verpackungsgruppe verwenden dieselbe Packmittelzuordnung. Wenn Sie keine Packmittelgruppen verwenden, können Sie diesen Schritt überspringen.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Verpackungsmaterial \> Verpackungsgruppen**, und legen Sie alle von Ihnen verwendeten Verpackungsgruppen an. Alle Positionen in einer Verpackungsgruppe verwenden dieselbe Packmittelzuordnung. Wenn Sie keine Packmittelgruppen verwenden, können Sie diesen Schritt überspringen.
 
     > [!TIP]
     > Nachdem Sie Ihre Verpackungsgruppen angelegt haben, können Sie jedem Produkt eine Gruppe nach Ihren Wünschen zuordnen. Gehen Sie zu **Produktinformationsverwaltung \> Produkte \> Freigegebene Produkte**, wählen Sie ein Produkt aus und wählen Sie dann auf der Registerkarte **Bestandsverwaltung** im Feld **Verpackungsgruppe** die entsprechende Verpackungsgruppe.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichtung \> Verpackungsmaterial \> Verpackungsmaterialcodes**, definieren Sie jede Art von Verpackungsmaterial, das Sie verwenden, und geben Sie die Einheit an, in der das Verpackungsmaterial bei der Vorbereitung von Sendungen verbraucht wird.
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichtung \> Verpackungsmaterial \> Verpackungsmaterialgebühren**, und legen Sie eine Gebühr für jede Art von Verpackungsmaterial fest, die Sie gerade definiert haben. Die Gebühren werden auf der Grundlage des Preises pro verbrauchter Einheit berechnet.
-1. Um den Artikeln Verpackungsmaterial zuzuordnen, gehen Sie zu **Bestandsverwaltung \> Einrichtung \> Verpackungsmaterial \> Verpackungsmaterialzuordnung**, und erstellen Sie Zuordnungen. Sie können so viele Zuordnungen anlegen, wie Sie benötigen. Sie können Packmittel für einzelne Positionen, Gruppen von Positionen (Verpackungsgruppen) oder alle Positionen zuordnen, je nachdem, wie detailliert Ihre Zuordnungen sein sollen.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Verpackungsmaterial \> Verpackungsmaterialcodes**, definieren Sie jede Art von Verpackungsmaterial, das Sie verwenden, und geben Sie die Einheit an, in der das Verpackungsmaterial bei der Vorbereitung von Sendungen verbraucht wird.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Verpackungsmaterial \> Verpackungsmaterialgebühren**, und legen Sie eine Gebühr für jede Art von Verpackungsmaterial fest, die Sie gerade definiert haben. Die Gebühren werden auf der Grundlage des Preises pro verbrauchter Einheit berechnet.
+1. Um den Artikeln Verpackungsmaterial zuzuordnen, gehen Sie zu **Lagerverwaltung \> Einstellungen \> Verpackungsmaterial \> Verpackungsmaterialzuordnung**, und erstellen Sie Zuordnungen. Sie können so viele Zuordnungen anlegen, wie Sie benötigen. Sie können Packmittel für einzelne Positionen, Gruppen von Positionen (Verpackungsgruppen) oder alle Positionen zuordnen, je nachdem, wie detailliert Ihre Zuordnungen sein sollen.
 
     Führen Sie für jede Zuteilung, die Sie anlegen, die folgenden Schritte aus.
 

@@ -29,7 +29,7 @@ ms.locfileid: "8888585"
 
 Lagerplätze für Lagerbestand werden mit grundlegendem Warehousing (WMS I) verwendet , um zu bestimmen, wo Artikel in einem WMS I-Lagerort gelagert und entnommen werden.
 
-Dieser Artikel gilt für Funktionen im Modul "Bestandsverwaltung". Es gilt nicht für Funktionen im Modul "Lagerverwaltung".
+Dieser Artikel gilt für Funktionen im Modul „Lagerverwaltung“. Es gilt nicht für Funktionen im Modul "Lagerverwaltung".
 
 Der Begriff Lagerplatz bezieht sich auf den Ort, an dem Artikel gespeichert und entnommen werden.
 

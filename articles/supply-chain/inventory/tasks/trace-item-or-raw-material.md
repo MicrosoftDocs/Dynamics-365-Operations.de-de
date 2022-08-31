@@ -29,7 +29,7 @@ Dieses Verfahren zeigt, wie die Artikelverfolgung angewendet wird, um zu erkenne
 
 
 ## <a name="trace-an-item-backwards-using-a-known-batch-number"></a>Einen Artikel rückwärts mithilfe einer bekannten Chargennummer verfolgen
-1. Gehen Sie im Navigationsbereich **Navigationsbereich** zu **Module > Bestandsmanagement > Anfragen und Berichte > Verfolgungsdimensionen > Artikelverfolgung**.
+1. Gehen Sie im Navigationsbereich **Navigationsbereich** zu **Module > Lagerverwaltung > Anfragen und Berichte > Verfolgungsdimensionen > Artikelverfolgung**.
 2. Wählen Sie im Feld **Artikelnummer**'P9100'.
 3. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 4. Wählen Sie im Feld **Vorwärts oder Rückwärts** die Option'Rückwärts'.

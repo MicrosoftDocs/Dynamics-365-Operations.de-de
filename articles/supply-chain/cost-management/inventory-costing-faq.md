@@ -68,7 +68,7 @@ Wenn Sie eine Rücklieferung erstellen, die sich nicht auf einen Verkaufsauftrag
 
 ### <a name="what-is-the-expected-performance-of-the-inventory-close"></a>Was ist die erwartete Leistung des Bestandsabschlusses?
 
-Viele Faktoren können die Leistung des Bestandsabschlusses beeinflussen. Zu diesen Faktoren gehören die Gesamtzahl der Artikel, die Gesamtzahl der Transaktionen in der Periode, die Bestandsmodelle, die Sie verwenden, und die Anzahl der Batch-Helfer, die Sie in den Parametern für die Bestands- und Lagerverwaltung konfigurieren. Sie können damit rechnen, dass der Abschluss nur wenige Minuten oder mehrere Stunden dauern kann. Es gibt keine spezifischen Vorgaben für die Zeit, die der Abschluss zum Ausführen benötigen sollte. Sie sollten Ihre nichtfunktionalen Geschäftsanforderungen für die Durchführung des Bestandsabschlusses definieren und eng mit Ihrem Partner zusammenarbeiten, um den Zeitplan für das Ausführen des Bestandsabschlusses festzulegen. Wenn die Leistung des Bestandsabschlusses unerwartet niedrig ist, sollten Sie ein Support-Ticket eröffnen.
+Viele Faktoren können die Leistung des Bestandsabschlusses beeinflussen. Zu diesen Faktoren gehören die Gesamtzahl der Artikel, die Gesamtzahl der Transaktionen in der Periode, die Bestandsmodelle, die Sie verwenden, und die Anzahl der Batch-Helfer, die Sie in den Parametern für Lager- und Lagerortverwaltung konfigurieren. Sie können damit rechnen, dass der Abschluss nur wenige Minuten oder mehrere Stunden dauern kann. Es gibt keine spezifischen Vorgaben für die Zeit, die der Abschluss zum Ausführen benötigen sollte. Sie sollten Ihre nichtfunktionalen Geschäftsanforderungen für die Durchführung des Bestandsabschlusses definieren und eng mit Ihrem Partner zusammenarbeiten, um den Zeitplan für das Ausführen des Bestandsabschlusses festzulegen. Wenn die Leistung des Bestandsabschlusses unerwartet niedrig ist, sollten Sie ein Support-Ticket eröffnen.
 
 ## <a name="costing-sheet-and-indirect-costs"></a>Nachkalkulationsbogen und indirekte Kosten
 
@@ -223,7 +223,7 @@ Allgemein empfehlen wir, dass Sie bei der Berechnung auf der untersten Ebene Ihr
 
 ### <a name="is-there-a-way-to-allocate-freight-to-a-transfer-order-cost"></a>Gibt es eine Möglichkeit, die Frachtkosten einem Umlagerungsauftrag zuzuordnen?
 
-Sie können einem Umlagerungsauftrag Belastungen hinzufügen, um Nachkalkulationen zu erstellen. Der Code für Belastungen definiert die Soll- und Habenbeträge für die von Ihnen hinzugefügte Belastung. Sie müssen zunächst im Modul **Bestandsverwaltung** Gebührencodes erstellen. Um einem Umlagerungsauftrag eine Belastung hinzuzufügen, wählen Sie **Belastungen** in der Zeile des Umlagerungsauftrags, dem Sie eine Belastung hinzufügen möchten.
+Sie können einem Umlagerungsauftrag Belastungen hinzufügen, um Nachkalkulationen zu erstellen. Der Code für Belastungen definiert die Soll- und Habenbeträge für die von Ihnen hinzugefügte Belastung. Sie müssen zunächst im Modul **Lagerverwaltung** Gebührencodes erstellen. Um einem Umlagerungsauftrag eine Belastung hinzuzufügen, wählen Sie **Belastungen** in der Zeile des Umlagerungsauftrags, dem Sie eine Belastung hinzufügen möchten.
 
 ## <a name="variances"></a>Abweichungen
 
@@ -359,7 +359,7 @@ Wir empfehlen Ihnen, negative Bestände häufig zu überwachen und zu korrigiere
 
 ### <a name="do-i-have-to-create-a-new-item-if-my-inventory-has-gone-negative-and-i-use-moving-average"></a>Muss ich einen neuen Artikel erstellen, wenn mein Bestand negativ geworden ist und ich den gleitenden Durchschnitt verwende?
 
-Nein Wenn Ihr Unternehmen eine Nachkalkulation des physischen Bestands zulässt und Sie als Bestandsmodell den gleitenden Durchschnitt verwenden, verwendet das System die auf der Seite **Parameter der Bestands- und Lagerverwaltung** zugewiesene Nachkalkulation-Sequenz, um zu bestimmen, wie die Kosten Ihren Ausgaben zugewiesen werden. Allgemein empfehlen wir Ihnen, einen physischen negativen Bestand nicht zuzulassen. Weitere Informationen finden Sie unter den anderen Fragen im Abschnitt [Negativer Bestand](#negative-inventory) dieses Artikels.
+Nein Wenn Ihr Unternehmen eine Nachkalkulation des physischen Bestands zulässt und Sie als Bestandsmodell den gleitenden Durchschnitt verwenden, verwendet das System die auf der Seite **Parameter für Lager- und Lagerortverwaltung** zugewiesene Nachkalkulation-Sequenz, um zu bestimmen, wie die Kosten Ihren Ausgaben zugewiesen werden. Allgemein empfehlen wir Ihnen, einen physischen negativen Bestand nicht zuzulassen. Weitere Informationen finden Sie unter den anderen Fragen im Abschnitt [Negativer Bestand](#negative-inventory) dieses Artikels.
 
 ## <a name="not-stocked-products"></a>Nicht gelagerte Produkte
 

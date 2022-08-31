@@ -28,7 +28,7 @@ In diesem Artikel wird beschrieben, wie Sie auf der Seite **Bestandsliste** die 
 
 ## <a name="query-your-on-hand-inventory"></a>Abfrage Ihres verfügbaren Lagerbestands
 
-Um die Bestandsverfügbarkeit zu überprüfen, gehen Sie zu **Bestandsverwaltung \> Anfragen und Berichte \> Bestandsliste**.
+Um die Bestandsverfügbarkeit zu überprüfen, gehen Sie zu **Lagerverwaltung \> Anfragen und Berichte \> Bestandsliste**.
 
 Die Seite **Bestandsliste** wird automatisch aktualisiert, wenn Buchungen im Bestand durchgeführt werden. Dabei kann es sich um geplante, physische und Finanzbuchungen handeln.
 
@@ -50,7 +50,7 @@ Für jeden passenden Artikel enthält das Raster **Verfügbar** die folgenden Sp
 | Insgesamt bestellt | Die Gesamtmenge, die in eingehenden Aufträgen enthalten ist oder die in verschiedenen Bestandserfassungen eine positive Menge aufweist. |
 | In Auftrag | Die Gesamtmenge, die in ausgehenden Aufträgen enthalten ist oder die in verschiedenen Bestandserfassungen eine negative Menge aufweist. |
 | Bestellt reserviert | Die gesamte für bestellte Zugänge reservierte Menge. Der Wert in diesem Feld gibt die Gesamtmenge der Artikel in ausgehenden Buchungen mit dem Status _Bestellt reserviert_ an. Artikel, die wie bestellt reserviert sind, sind physisch nicht im Bestand verfügbar. Daher können sie nicht direkt kommissioniert und geliefert werden. |
-| Zur Reservierung verfügbar | Die insgesamt verfügbare Bestandsmenge, die reserviert werden kann.<p>**Hinweis:** Wenn das Kontrollkästchen **Bestellte Artikel reservieren** auf der Seite **Bestands- und Lagerverwaltungsparameter** aktiviert ist, enthält der Wert in diesem Feld erwartete Zugänge. Wenn das Kontrollkästchen deaktiviert ist, enthält der Wert keine erwarteten Zugänge.</p> |
+| Zur Reservierung verfügbar | Die insgesamt verfügbare Bestandsmenge, die reserviert werden kann.<p>**Hinweis:** Wenn das Kontrollkästchen **Bestellte Artikel reservieren** auf der Seite **Parameter für Lager- und Lagerortverwaltung** aktiviert ist, enthält der Wert in diesem Feld erwartete Zugänge. Wenn das Kontrollkästchen deaktiviert ist, enthält der Wert keine erwarteten Zugänge.</p> |
 | Verfügbare Menge | Die insgesamt verfügbare Menge.<p>**Verfügbare Menge** ist ein berechnetes Feld. Der Wert entspricht dem Wert **Physisch verfügbar** plus dem Wert **Insgesamt bestellt** minus dem Wert **In Auftrag**.</p> |
 
 ## <a name="apply-filters-to-find-the-records-that-youre-looking-for"></a><a name="filters-pane"></a>Mit Filtern die Datensätze finden, nach denen Sie suchen

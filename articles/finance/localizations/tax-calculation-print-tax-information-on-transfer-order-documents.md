@@ -57,7 +57,7 @@ Um diese Daten zu konfigurieren, müssen Sie die folgenden Hauptschritte ausfüh
 
 Führen Sie nach dem Versand einer Überweisung die folgenden Schritte aus, um den Überweisungsauftrag – Versanddokument – zu drucken.
 
-1. Gehen Sie zu **Bestandsverwaltung** \> **Anfragen und Berichte** \> **Überweisungsaufträge** \> **Lieferung**.
+1. Gehen Sie zu **Lagerverwaltung** \> **Anfragen und Berichte** \> **Überweisungsaufträge** \> **Lieferung**.
 2. Aktivieren Sie auf der Registerkarte **Parameter** in der Gruppe **Drucken** die Option **Steuerinformation**.
 3. Wählen Sie auf der Registerkarte **Einzuschließende Datensätze** die Option **Filter**, wählen Sie die Nummer des Überweisungsauftrags und dann **OK**.
 4. Wählen Sie **OK** um den Transportauftrag – Versanddokument – zu drucken.
@@ -66,7 +66,7 @@ Führen Sie nach dem Versand einer Überweisung die folgenden Schritte aus, um d
 
 Führen Sie nach dem Erhalt einer Überweisung die folgenden Schritte aus, um den Überweisungsauftrag – Empfangsdokument – zu drucken.
 
-1. Gehen Sie zu **Bestandsverwaltung** \> **Anfragen und Berichte** \> **Überweisungsaufträge** \> **Empfangen**.
+1. Gehen Sie zu **Lagerverwaltung** \> **Anfragen und Berichte** \> **Überweisungsaufträge** \> **Empfangen**.
 2. Aktivieren Sie auf der Registerkarte **Parameter** in der Gruppe **Drucken** die Option **Steuerinformation**.
 3. Wählen Sie auf der Registerkarte **Einzuschließende Datensätze** die Option **Filter**, wählen Sie die Nummer des Überweisungsauftrags und dann **OK**.
 4. Wählen Sie **OK** um den Transportauftrag – Empfangsdokument – zu drucken.
@@ -78,7 +78,7 @@ Führen Sie diese Schritte aus, um das Überweisungsübersichtsdokument zu druck
 > [!NOTE]
 > Steuerinformationen sind nur verfügbar, wenn der Überweisungsauftrag versandt oder empfangen wurde.
 
-1. Gehen Sie zu **Bestandsverwaltung** \> **Anfragen und Berichte** \> **Überweisungsaufträge** \> **Transferübersicht**.
+1. Gehen Sie zu **Lagerverwaltung** \> **Anfragen und Berichte** \> **Überweisungsaufträge** \> **Transferübersicht**.
 2. Aktivieren Sie auf der Registerkarte **Parameter** in der Gruppe **Drucken** die Option **Steuerinformation**.
 3. Wählen Sie auf der Registerkarte **Einzuschließende Datensätze** die Option **Filter**, wählen Sie die Nummer des Überweisungsauftrags und dann **OK**.
 4. Wählen Sie **OK** um den Transportübersichtsdokument zu drucken.

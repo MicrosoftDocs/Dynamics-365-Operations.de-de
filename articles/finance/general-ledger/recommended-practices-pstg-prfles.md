@@ -80,7 +80,7 @@ Verwenden Sie die folgende Tabelle als Referenz für allgemeine Tabellennamen, d
 | Verrechnung | Hauptbuch &gt; Buchungseinstellungen &gt; Intercompany-Konten | LedgerIntercompany |
 | Buchung - Definitionen | Hauptbuch &gt; Buchungseinstellungen &gt; Transaktionsbuchungsdefinitionen | JournalizingDefinitionTrans |
 | Buchung (Definitionen) | Hauptbuch &gt; Buchungseinstellungen &gt; Buchungsdefinitionen | JournalizingDefintion |
-| Buchung (Bestand) | Bestandsverwaltung &gt; Einstellen &gt; Buchung &gt; Buchung | InventPosting |
+| Buchung (Bestand) | Lagerverwaltung &gt; Einstellungen &gt; Buchung &gt; Buchung | InventPosting |
 | Kostentypcodes | Gesamttransportkosten &gt; Kalkulationseinstellungen &gt; Kostenartencodes | ITMCostTypeTable |
 | Ressourcen | Produktionssteuerung &gt; Einstellen &gt; Ressourcen &gt; Ressourcen | WrkCtrTable |
 | Ressourcengruppen  | Produktionssteuerung &gt; Einstellen &gt; Ressourcen &gt; Ressourcengruppen | WrkCtrResourceGroup |

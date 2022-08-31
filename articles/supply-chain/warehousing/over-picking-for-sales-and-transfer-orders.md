@@ -123,7 +123,7 @@ Als Sie den Auftrag an den Lagerort freigegeben haben, sollte das System eine ne
 1. Wechseln Sie zu **Lagerortverwaltung \> Arbeit \> Arbeitsdetails**.
 1. Suchen Sie in dem **Übersicht**-Raster die **Bestellnummer**-Spalte für den Auftrag, den Sie gerade erstellt haben. Notieren Sie sich für den Auftrag die entsprechende Arbeitskennung.
 1. Wählen Sie die Zeile für den neuen Auftrag aus, um relevante Informationen im **Positionen**-Raster anzuzeigen. Notieren Sie sich den Ort, an dem der Artikel ausgewählt wird.
-1. Wechseln Sie zu **Bestandsverwaltung \> Anfragen und Berichte \> Bestandsliste**.
+1. Wechseln Sie zu **Lagerverwaltung \> Anfragen und Berichte \> Bestandsliste**.
 1. Wählen Sie im Aktionsbereich **Dimensionen** aus.
 1. Stellen Sie im Dialogfeld **Dimensionsanzeige** sicher, dass die Kontrollkästchen **Ladungsträger**, **Lagerort** und **Artikelnummer** aktiviert sind und wählen Sie anschließend **OK** aus.
 1. Legen Sie im **Filter**-Bereich folgende Filter fest:

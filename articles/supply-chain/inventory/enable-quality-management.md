@@ -33,7 +33,7 @@ Dieser Artikel bietet einen Überblick über den Prozess zum Einrichten und Konf
 
 Führen Sie diese Schritte aus, um das Qualitätsmanagement auf Ihrem System zu aktivieren.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichtung \> Bestands- und Lagerverwaltungsparameter**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Parameter für Lager- und Lagerortverwaltung**.
 1. Legen Sie auf der Registerkarte **Qualitätsmanagement** die Option **Qualitätsmanagement verwenden** auf *Ja* fest.
 1. Geben Sie im Feld **Stundensatz** einen Arbeitsstundensatz in lokaler Währung ein. Der Stundensatz wird zur Berechnung der Kosten für Arbeitsgänge verwendet, die sich auf einen Qualitätsmangel beziehen. Der Stundensatz sowie die berechneten Kosten fungieren als Referenzinformationen für einen Qualitätsmangel. Sie interagieren nicht mit anderen Funktionen.
 1. Wählen Sie **Bericht einrichten**.

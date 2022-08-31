@@ -28,7 +28,7 @@ Diese Prozedur zeigt Ihnen, wie Sie verfügbaren und physisch verfügbaren Lager
 
 
 ## <a name="check-on-hand-inventory-for-an-item"></a>Verfügbaren Lagerbestand für einen Artikel überprüfen
-1. Gehen Sie zu **Navigationsbereich > Module > Bestandsverwaltung > Abfragen und Berichte > Verfügbarer Lagerbestand**.
+1. Gehen Sie zu **Navigationsbereich > Module > Lagerverwaltung > Abfragen und Berichte > Verfügbarer Lagerbestand**.
 2. Wählen Sie die Zeile **Artikelnummer** aus. Um den verfügbaren Lagerbestand nach Artikelnummer abzufragen, wählen Sie die Zeile aus, in der „Tabelle” auf **Verfügbarer Lagerbestand** und „Feld” auf **Artikelnummer** festgelegt ist.
 3. Wählen Sie im Feld **Kriterien** den Artikel aus, den Sie abfragen möchten. Wenn Sie das USMF-Demodatunternehmen verwenden, können Sie "M9201" auswählen.  
 4. Klicken Sie auf **OK**.

@@ -27,7 +27,7 @@ ms.locfileid: "8903694"
 Lagerplatzrichtlinien sind Regeln, die dabei helfen, Entnahme- und Einlagerungslagerorte für die Lagerumlagerung zu identifizieren. In einer Auftragsbuchung bestimmt eine Lagerplatzrichtlinie z. B., wo die Artikel entnommen und wo die entnommenen Artikel eingelagert werden. Lagerplatzrichtlinien bestehen aus einer Kopfzeile und zugehörigen Zeilen. Sie werden für bestimmte *Arbeitsauftragsarten* erstellt.
 
 > [!NOTE]
-> Dieser Artikel gilt für Funktionen im Modul **Lagerortverwaltung**. Es gilt nicht für Funktionen im Modul [Bestandsverwaltung](../inventory/inventory-home-page.md).
+> Dieser Artikel gilt für Funktionen im Modul **Lagerortverwaltung**. Es gilt nicht für Funktionen im Modul [Lagerverwaltung](../inventory/inventory-home-page.md).
 
 Sie können mit Lagerplatzrichtlinien folgende Aufgaben durchführen:
 

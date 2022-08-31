@@ -41,7 +41,7 @@ Wenn Sie die Diagnosetypen konfigurieren, können Sie mehrere Datensätze erstel
 
 ## <a name="create-a-diagnostic-type"></a>Erstellen Sie einen Diagnosetyp
 
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichten \> Qualitätsmanagement \> Diagnosetypen**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Qualitätsmanagement \> Diagnosetypen**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus, um eine Zeile zum Raster hinzuzufügen. Legen Sie für die neue Zeile die folgenden Felder fest:
 
     - **Diagnose** – Geben Sie eine eindeutige ID oder einen Namen für den Diagnosetyp ein.

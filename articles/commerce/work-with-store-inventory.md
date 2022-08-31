@@ -1,5 +1,5 @@
 ---
-title: Bestandsverwaltung im Store
+title: Lagerverwaltung im Store
 description: Dieser Artikel beschreibt die Dokumentarten, die Sie zum Verwalten des Bestands verwenden können.
 author: BrianShook
 ms.date: 01/12/2021
@@ -22,7 +22,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/03/2022
 ms.locfileid: "8881604"
 ---
-# <a name="commerce-inventory-management"></a>Commerce-Bestandsverwaltung
+# <a name="commerce-inventory-management"></a>Commerce-Lagerverwaltung
 
 [!include [banner](includes/banner.md)]
 

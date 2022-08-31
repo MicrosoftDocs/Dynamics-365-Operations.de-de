@@ -113,7 +113,7 @@ Sie können die konfigurierten Lieferarten sehen, indem Sie **Lieferarten** auf 
 
 Gehen Sie folgendermaßen vor, um eine Lieferart zu ändern oder hinzuzufügen.
 
-1. Gehen Sie im Navigationsbereich zu **Module \> Bestandsverwaltung \> Lieferarten**.
+1. Gehen Sie im Navigationsbereich zu **Module \> Lagerverwaltung \> Lieferarten**.
 1. Wählen Sie im Aktivitätsbereich **Neu**, um eine neue Art der Zustellung zu erstellen, oder wählen Sie eine vorhandene Art aus.
 1. Im Abschnitt **Retail Channels** wählen Sie **Zeile hinzufügen** aus, um den Kanal hinzuzufügen. Durch das Hinzufügen von Kanälen mithilfe von Organisationsknoten, anstatt jeden Kanal einzeln hinzuzufügen, kann das Hinzufügen von Kanälen rationalisiert werden.
 

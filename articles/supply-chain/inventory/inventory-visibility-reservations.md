@@ -40,7 +40,7 @@ Um die Funktion "Reservierung" einzuschalten, gehen Sie folgendermaßen vor.
 1. Schalten Sie auf der Registerkarte **Funktionsverwaltung** die Funktion *OnHandReservierung* ein.
 1. Melden Sie sich im Supply Chain Management an.
 1. Gehen Sie zum Arbeitsbereich **[Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** und aktivieren Sie die Funktion *Integration der Bestandssichtbarkeit mit Reservierungsversatz* (erfordert Version 10.0.22 oder höher).
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichten \> Bestandssichtbarkeit-Integrationsparameter**, öffnen Sie die Registerkarte **Reservierungsversatz** und nehmen Sie die folgenden Einstellungen vor:
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Bestandssichtbarkeit-Integrationsparameter**, öffnen Sie die Registerkarte **Reservierungsversatz** und nehmen Sie die folgenden Einstellungen vor:
     - **Reservierungsversatz aktivieren** – Auf *Ja* festlegen, um diese Funktion zu aktivieren.
     - **Modifikator für Reservierungsversatz** – Wählen Sie den Bestandstransaktionsstatus aus, der Reservierungen verrechnet, die in der Bestandsanzeige vorgenommen wurden. Diese Einstellung legt die Auftragsbearbeitungsstufe fest, die einen Versatz auslöst. Die Stufe wird durch den Status der Bestandstransaktion des Auftrags nachverfolgt. Wählen Sie eine der folgenden Optionen:
         - *Bei Bestellung* - Für den Status *Bei Transaktion* sendet eine Bestellung eine Offset-Anforderung, wenn sie erstellt wird. Die Versatzmenge ist die Menge des erstellten Auftrags.

@@ -64,7 +64,7 @@ Die Spalte **Nummernkreis** wurde zur Tabelle **Bestandskorrekturprodukt** hinzu
 ## <a name="prerequisites-and-mapping-setup"></a>Voraussetzungen und Zuordnungseinrichtung
 
 ### <a name="supply-chain-management"></a>Lieferkettenverwaltung
-Die Integrationslagererfassungen, die bei der Integration generiert werden, können mit einem Stapelverarbeitungslauf automatisch gebucht werden. Diese wird aktiviert über **Bestandsverwaltung > Periodische Aufgaben > Dataverse-Integration > Bestandserfassung nach Integration**.
+Die Integrationslagererfassungen, die bei der Integration generiert werden, können mit einem Stapelverarbeitungslauf automatisch gebucht werden. Diese wird aktiviert über **Lagerverwaltung > Periodische Aufgaben > Dataverse-Integration > Bestandserfassung nach Integration**.
 
 ## <a name="template-mapping-in-data-integration"></a>Vorlagenzuordnung in Datenintegration
 

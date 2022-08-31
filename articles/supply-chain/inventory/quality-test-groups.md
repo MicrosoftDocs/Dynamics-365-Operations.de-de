@@ -45,7 +45,7 @@ Ein Produktionsunternehmen definiert eine Testgruppe für jede Abweichung von de
 
 Um eine Testgruppe zu erstellen, gehen Sie wie folgt vor.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichten \> Qualitätskontrolle \> Testgruppen**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Qualitätskontrolle \> Testgruppen**.
 1. Wählen Sie im Aktionsbereich **Neu**, um dem Raster im oberen Teil der Seite eine Zeile hinzuzufügen. Legen Sie für die neue Zeile die folgenden Felder fest:
 
     - **Testgruppe** – Geben Sie eine eindeutige ID oder einen Namen für die Testgruppe ein.
@@ -68,7 +68,7 @@ Um eine Testgruppe zu erstellen, gehen Sie wie folgt vor.
 
 Um einen qualitativen Test zu einer Testgruppe hinzuzufügen, gehen Sie wie folgt vor.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichten \> Qualitätskontrolle \> Testgruppen**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Qualitätskontrolle \> Testgruppen**.
 1. Wählen Sie auf der Registerkarte **Übersicht** im oberen Teil der Seite die Testgruppe aus, zu der Sie einen Test hinzufügen möchten.
 1. Wählen Sie im unteren Teil der Seite auf der Registerkarte **Übersicht** in der Symbolleiste **Hinzufügen**, um dem Raster eine Zeile hinzuzufügen. Legen Sie für die neue Zeile die folgenden Felder fest:
 
@@ -102,7 +102,7 @@ Um einen qualitativen Test zu einer Testgruppe hinzuzufügen, gehen Sie wie folg
 
 Um einen quantitativen Test zu einer Testgruppe hinzuzufügen, folgen Sie diesen Schritten.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichten \> Qualitätskontrolle \> Testgruppen**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Qualitätskontrolle \> Testgruppen**.
 1. Wählen Sie auf der Registerkarte **Übersicht** im oberen Teil der Seite die Testgruppe aus, zu der Sie einen Test hinzufügen möchten.
 1. Wählen Sie im unteren Teil der Seite auf der Registerkarte **Übersicht** in der Symbolleiste **Hinzufügen**, um dem Raster eine Zeile hinzuzufügen. Legen Sie für die neue Zeile die folgenden Felder fest:
 

@@ -37,8 +37,8 @@ Sie können geplante Aufträge auf jeder Listenseite für geplante Aufträge anz
 - Produktprogrammplanung \> Produktprogrammplanung \> Geplante Aufträge
 - Produktion Steuerelement \> Produktionsaufträge \> Geplante Produktionsaufträge
 - Beschaffung und Sourcing \> Bestellungen \> Geplante Aufträge
-- Lagerbestand verwalten \> Eingehende Aufträge \> Geplante Umlagerungen
-- Bestandsverwaltung \> Ausgehende Aufträge \> Geplante Umlagerungen
+- Lagerverwaltung \> Eingehende Aufträge \> Geplante Umlagerungen
+- Lagerverwaltung \> Ausgehende Aufträge \> Geplante Umlagerungen
 
 ## <a name="view-and-edit-the-status-of-planned-orders"></a>Anzeigen und Bearbeiten des Status geplanter Aufträge
 

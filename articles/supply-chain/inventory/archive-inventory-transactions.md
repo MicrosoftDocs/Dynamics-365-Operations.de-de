@@ -41,7 +41,7 @@ Wenn Ihr System noch nicht über die in diesem Artikel beschriebenen Funktionen 
 
 Bevor Sie Bestandstransaktionen archivieren, sollten Sie die folgenden Geschäftsszenarien berücksichtigen, da sie von dem Vorgang betroffen sind:
 
-- Wenn Sie Bestandstransaktionen aus zugehörigen Belegen, wie z.B. Zeilen einer Einkaufsbestellung, prüfen, werden diese als archiviert angezeigt. Um die archivierten Transaktionen zu prüfen, müssen Sie zu **Inventarverwaltung \> Periodische Aufgaben \> Aufräumen \> Inventartransaktionen archivieren** gehen.
+- Wenn Sie Bestandstransaktionen aus zugehörigen Belegen, wie z.B. Zeilen einer Einkaufsbestellung, prüfen, werden diese als archiviert angezeigt. Um die archivierten Transaktionen zu prüfen, müssen Sie zu **Lagerverwaltung \> Periodische Aufgaben \> Aufräumen \> Inventartransaktionen archivieren** gehen.
 - Der Bestandsabschluss kann für archivierte Perioden nicht storniert werden. Bevor Sie einen Bestandsabschluss stornieren können, müssen Sie das Archiv der Bestandstransaktionen für die betreffende Periode stornieren.
 - Die Standard-Kalkulation kann für archivierte Perioden nicht durchgeführt werden. Bevor Sie eine Standard-Kalkulation durchführen können, müssen Sie das Archiv der Bestandstransaktionen für die entsprechende Periode stornieren.
 - Bestandsberichte, die auf Bestandstransaktionen beruhen, sind davon betroffen, wenn Sie Bestandstransaktionen archivieren. Zu diesen Berichten gehören der Bestandsalterungsbericht und die Bestandswertberichte.
@@ -60,7 +60,7 @@ Bestandstransaktionen können nur in Perioden archiviert werden, in denen die fo
 
 Gehen Sie folgendermaßen vor, um Transaktionen im Bestand zu archivieren.
 
-1. Gehen Sie zu **Inventarverwaltung** \> **Periodische Aufgaben** \> **Aufräumen** \> **Inventar-Transaktionen archivieren**.
+1. Gehen Sie zu **Lagerverwaltung** \> **Periodische Aufgaben** \> **Aufräumen** \> **Inventar-Transaktionen archivieren**.
 
     Die Seite **Bestandstransaktionen Archiv** erscheint und zeigt eine Liste der archivierten Prozessdatensätze.
 

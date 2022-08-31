@@ -39,7 +39,7 @@ Eine Gebührenstruktur wird für jeden Umstand definiert und im Vertrag festgele
 
 ## <a name="create-a-quality-charge"></a>Erstellen Sie eine Qualitätsgebühr
 
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichten \> Qualitätsmanagement \> Qualitätsbelastungen**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Qualitätsmanagement \> Qualitätsbelastungen**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus, um eine Zeile zum Raster hinzuzufügen. Legen Sie für die neue Zeile die folgenden Felder fest:
 
     - **Belastungen code** – Geben Sie eine eindeutige ID oder einen Namen für die Qualitätsgebühr ein.

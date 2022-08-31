@@ -27,7 +27,7 @@ ms.locfileid: "9103593"
 
 [!include [banner](../includes/banner.md)]
 
-Die Prospect to Cash-Lösung bietet direkte Synchronisierung zwischen Dynamics 365 Supply Chain Management und Dynamics 365 Sales. Die „Interessent zu Bargeld”-Vorlagen, die über die Datenintegrationsfunktion verfügbar sind, ermöglichen den Fluss von Konten, Kontakten, Produkten, Verkaufsangeboten, Aufträgen und Verkaufsrechnungen. Während die Daten fließen, können Sie Vertriebs- und Marketingaktivitäten zwischen Finance and Operations und Sales ausführen und die Auftagserfüllung mit Bestandsverwaltung in Supply Chain Management handhaben. 
+Die Prospect to Cash-Lösung bietet direkte Synchronisierung zwischen Dynamics 365 Supply Chain Management und Dynamics 365 Sales. Die „Interessent zu Bargeld”-Vorlagen, die über die Datenintegrationsfunktion verfügbar sind, ermöglichen den Fluss von Konten, Kontakten, Produkten, Verkaufsangeboten, Aufträgen und Verkaufsrechnungen. Während die Daten fließen, können Sie Vertriebs- und Marketingaktivitäten zwischen Finance and Operations und Sales ausführen und die Auftagserfüllung mit Lagerverwaltung in Supply Chain Management handhaben. 
 
 Für weitere Informationen über die Integration Prospect to Cash sehen Sie sich das kurze YouTube-Video an: [Integration von Prospect to Cash](https://www.youtube.com/watch?v=AVV9x5x-XCg).
 

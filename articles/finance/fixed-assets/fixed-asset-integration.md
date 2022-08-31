@@ -1,6 +1,6 @@
 ---
 title: Integration von Anlagevermögen
-description: Anlagen können in die Module "Hauptbuch", "Bestandsverwaltung", "Debitoren" und "Kreditoren" integriert werden. Darüber hinaus können Anlagen auch für die Integration in Bestellungen eingerichtet werden.
+description: Anlagen können in die Module "Hauptbuch", "Lagerverwaltung", "Debitoren" und "Kreditoren" integriert werden. Darüber hinaus können Anlagen auch für die Integration in Bestellungen eingerichtet werden.
 author: moaamer
 ms.date: 03/05/2019
 ms.topic: article
@@ -26,7 +26,7 @@ ms.locfileid: "8719886"
 
 [!include [banner](../includes/banner.md)]
 
-Anlagen können in die Module "Hauptbuch", "Bestandsverwaltung", "Debitoren" und "Kreditoren" integriert werden. Darüber hinaus können Anlagen auch für die Integration in Bestellungen eingerichtet werden.
+Anlagen können in die Module "Hauptbuch", "Lagerverwaltung", "Debitoren" und "Kreditoren" integriert werden. Darüber hinaus können Anlagen auch für die Integration in Bestellungen eingerichtet werden.
 
 ## <a name="general-ledger"></a>Hauptbuch
 
@@ -41,7 +41,7 @@ Die Anschaffung von Anlagen kann auch mithilfe von Bestellungen erfolgen. Wenn B
 
 Entwickelt sich ein Lagerartikel zu einer Anlagenanschaffung entweder über die Lagererfassung, eine Bestellung oder einen Anschaffungsvorschlag, wird eine Wertmodellanschaffungsbuchung für die Anlage erstellt. Umfasst eine Wertmodellanschaffung ein abgeleitetes Abschreibungsbuch, wird darüber hinaus im Abschreibungsbuch eine Anschaffungsbuchung erstellt. 
 
-Buchungsregeln, die auf der Seite **Buchung** in der Bestandverwaltung eingerichtet werden, steuern den Bestand, wenn eine Anschaffung gebucht wird. In bestimmten Fällen soll das Lager jedoch möglicherweise nicht verringert werden, nachdem anlagenbezogene Rechnungen gebucht worden sind In einigen Fällen werden die Anlagen zur internen Verwendung eingekauft. Ein Beispiel ist ein Laptop, der für die Verkaufsabteilung eingekauft wird. Bei Verwendung von Bestellungen können Artikel verwendet werden, die sowohl für den Wiederverkauf als auch für die interne Verwendung eingerichtet sind. 
+Buchungsregeln, die auf der Seite **Buchung** in der Lagerverwaltung eingerichtet werden, steuern den Bestand, wenn eine Anschaffung gebucht wird. In bestimmten Fällen soll das Lager jedoch möglicherweise nicht verringert werden, nachdem anlagenbezogene Rechnungen gebucht worden sind In einigen Fällen werden die Anlagen zur internen Verwendung eingekauft. Ein Beispiel ist ein Laptop, der für die Verkaufsabteilung eingekauft wird. Bei Verwendung von Bestellungen können Artikel verwendet werden, die sowohl für den Wiederverkauf als auch für die interne Verwendung eingerichtet sind. 
 
 Werden für Artikelgruppen bestimmte Zu- und Abgangskonten für Anlagen verwendet, kann der gleiche Lagerartikel sowohl für interne Einkäufe als auch für Bestand verwendet werden, der für den Wiederverkauf bestimmt ist. 
 

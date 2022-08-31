@@ -64,7 +64,7 @@ Im neu gestalteten Rahmen dreht sich die Kernstrategie um zwei Prinzipien: den A
 Der Name für das neue Framework lautet „ProcessGuide“. Dies liegt daran, dass das Ziel dieser Klassen darin besteht, einen Benutzer durch einen Geschäftsprozess zu führen (im Gegensatz zum Rich Client, bei dem es sich um eine formularbasierte Erfahrung handelt, bei der der Benutzer mehr Flexibilität bei der Interaktion mit den Daten oder in der Reihenfolge seiner Aufgabenausführung hat).
 
 > [!NOTE]
-> Ein bemerkenswertes Detail ist das bewusste Weglassen des „WHS“-Präfixes. Während die mobilen Prozesse ursprünglich für die Lagerhaltung eingeführt wurden, haben sie später Grenzen überschritten, um verschiedene Prozesse beim Produktions- und Bestandsmanagement zu unterstützen. Infolgedessen wurde die Lagerortreferenz im Namen des Frameworks ausgeschlossen.
+> Ein bemerkenswertes Detail ist das bewusste Weglassen des „WHS“-Präfixes. Während die mobilen Prozesse ursprünglich für die Lagerhaltung eingeführt wurden, haben sie später Grenzen überschritten, um verschiedene Prozesse bei der Produktions- und Lagerverwaltung zu unterstützen. Infolgedessen wurde die Lagerortreferenz im Namen des Frameworks ausgeschlossen.
 
 Um die Komponenten zu identifizieren, ist der erste Schritt ein Blick auf den Produktionsstartprozess (**WhsWorkExecuteDisplayProdStart**-Klasse). Dies ist ein Schema des Prozesses.
 

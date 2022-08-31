@@ -107,7 +107,7 @@ Führen Sie zum Abschließen der Einrichtung eines Lagerorts die folgenden Schri
 1. Gehen Sie im Navigationsbereich zu **Module \> Einzelhandel und Handel \> Kanaleinrichtung \> Lagerorte**.
 1. Wählen Sie den Lagerort aus, den Sie zuvor erstellt haben.
 1. Wählen Sie im Aktionsbereich **Bearbeiten** aus.
-1. Unter **Bestands- und Lagerortverwaltung**:
+1. Unter **Lager- und Lagerortverwaltung**:
     1. Stellen Sie **Standard-Zugangslagerplatz** auf den oben erstellten Standardstandort.
     1. Wählen Sie **Standard-Abgangslagerplatz** als den oben erstellten Standardstandort.
 1. Geben Sie im Abschnitt **Adressen** eine Lageradresse ein.

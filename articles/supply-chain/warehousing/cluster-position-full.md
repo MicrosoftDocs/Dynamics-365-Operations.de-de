@@ -194,7 +194,7 @@ Es sollten zwei Arbeits-IDs erstellt worden sein, von denen jede zwei Kommission
 1. Wechseln Sie zu **Lagerortverwaltung \> Arbeit \> Arbeitsdetails**.
 1. Suchen Sie in dem **Übersicht**-Raster die **Bestellnummer**-Spalte für die beiden Aufträge, die Sie gerade erstellt haben. Notieren Sie sich für jeden Auftrag die entsprechende Arbeits-ID.
 1. Wählen Sie die Zeile für jeden Auftrag aus, um relevante Informationen in **Positionen**-Raster anzuzeigen. Notieren Sie sich den Ort, an dem jeder Artikel ausgewählt wird.
-1. Wechseln Sie zu **Bestandsverwaltung \> Anfragen und Berichte \> Bestandsliste**.
+1. Wechseln Sie zu **Lagerverwaltung \> Anfragen und Berichte \> Bestandsliste**.
 1. Wählen Sie im Aktivitätsbereich **Dimensionen** aus, um das Dialogfeld **Dimensionsanzeige** zu öffnen.
 1. Stellen Sie sicher, dass die Kontrollkästchen **Kennzeichen**, **Warenhaus**, und **Artikelnummer** aktiviert sind und wählen Sie anschließend **OK** aus.
 1. Legen Sie im **Filter**-Bereich folgende Filter fest:

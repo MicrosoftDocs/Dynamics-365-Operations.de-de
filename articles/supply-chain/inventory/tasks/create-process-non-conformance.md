@@ -32,7 +32,7 @@ Bevor ein Benutzer die Genehmigung eines Qualitätsmangels verarbeiten kann, mus
 
 Um einen Qualitätsmangel zu erstellen, gehen Sie wie folgt vor.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Nichtkonformitäten**.
+1. Gehen Sie zu **Lagerverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Nichtkonformitäten**.
 1. Wählen Sie im Aktivitätsbereich **Neu**.
 1. Wählen Sie im Dialogfeld **Nichtkonformität erstellen** im Feld **Problemtyp** die Art des Problems, das während des Inspektionsprozesses gefunden wurde.
 1. Wählen Sie **OK**.
@@ -41,7 +41,7 @@ Um einen Qualitätsmangel zu erstellen, gehen Sie wie folgt vor.
 
 Um einen Qualitätsmangel zu genehmigen oder abzulehnen, führen Sie diese Schritte aus.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Nichtkonformitäten**.
+1. Gehen Sie zu **Lagerverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Nichtkonformitäten**.
 1. Wählen Sie in der Liste den Qualitätsmangel, den Sie aktualisieren möchten.
 
     > [!NOTE]
@@ -66,7 +66,7 @@ Die übrigen Einstellungen sind optional. Die Kosten für jedes Element, die Qua
 
 Um einen Vorgang für einen Qualitätsmangel zu erstellen, folgen Sie diesen Schritten.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Nichtkonformitäten**.
+1. Gehen Sie zu **Lagerverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Nichtkonformitäten**.
 1. Wählen Sie in der Liste den Qualitätsmangel, den Sie aktualisieren möchten.
 
     > [!NOTE]
@@ -86,7 +86,7 @@ Um einen Vorgang für einen Qualitätsmangel zu erstellen, folgen Sie diesen Sch
 
 Um Elemente zu einem Vorgang hinzuzufügen, führen Sie diese Schritte aus.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Nichtkonformitäten**.
+1. Gehen Sie zu **Lagerverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Nichtkonformitäten**.
 1. Wählen Sie in der Liste den Qualitätsmangel, den Sie aktualisieren möchten.
 
     > [!NOTE]
@@ -110,7 +110,7 @@ Um Elemente zu einem Vorgang hinzuzufügen, führen Sie diese Schritte aus.
 
 Um Qualitätsbelastungen zu einem Vorgang hinzuzufügen, führen Sie diese Schritte aus.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Nichtkonformitäten**.
+1. Gehen Sie zu **Lagerverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Nichtkonformitäten**.
 1. Wählen Sie in der Liste den Qualitätsmangel, den Sie aktualisieren möchten.
 
     > [!NOTE]
@@ -135,7 +135,7 @@ Um Qualitätsbelastungen zu einem Vorgang hinzuzufügen, führen Sie diese Schri
 
 Führen Sie diese Schritte aus, um einem Vorgang einen Stundenzettel hinzuzufügen.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Nichtkonformitäten**.
+1. Gehen Sie zu **Lagerverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Nichtkonformitäten**.
 1. Wählen Sie in der Liste den Qualitätsmangel, den Sie aktualisieren möchten.
 
     > [!NOTE]
@@ -152,7 +152,7 @@ Führen Sie diese Schritte aus, um einem Vorgang einen Stundenzettel hinzuzufüg
     - **Fakturiert** – Aktivieren Sie dieses Kontrollkästchen, wenn die Zeit einem Kunden oder Lieferanten auf einer Rechnung in Rechnung gestellt wurde.
 
     > [!NOTE]
-    > Sie können die Kalkulation im Feld **Kosten** auf der Registerkarte **Allgemein** sehen. Die Kalkulation erfolgt mit dem Satz, den Sie auf der Seite **Parameter der Bestandsverwaltung** definieren.
+    > Sie können die Kalkulation im Feld **Kosten** auf der Registerkarte **Allgemein** sehen. Die Kalkulation erfolgt mit dem Satz, den Sie auf der Seite **Parameter für Lagerverwaltung** definieren.
 
 1. Wiederholen Sie den vorigen Schritt für jede zusätzliche Zeile, die Sie hinzufügen müssen.
 1. Schließen Sie die Seiten.
@@ -164,7 +164,7 @@ Führen Sie diese Schritte aus, um einem Vorgang einen Stundenzettel hinzuzufüg
 
 Um eine Korrektur zu einem Qualitätsmangel hinzuzufügen, gehen Sie wie folgt vor.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Nichtkonformitäten**.
+1. Gehen Sie zu **Lagerverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Nichtkonformitäten**.
 1. Wählen Sie in der Liste den Qualitätsmangel, den Sie aktualisieren möchten.
 
     > [!NOTE]
@@ -186,7 +186,7 @@ Um eine Korrektur zu einem Qualitätsmangel hinzuzufügen, gehen Sie wie folgt v
 
 Um eine Korrektur eines Qualitätsmangels als abgeschlossen zu markieren, gehen Sie wie folgt vor.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Nichtkonformitäten**.
+1. Gehen Sie zu **Lagerverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Nichtkonformitäten**.
 1. Wählen Sie in der Liste den Qualitätsmangel, den Sie aktualisieren möchten.
 
     > [!NOTE]
@@ -202,7 +202,7 @@ Um eine Korrektur eines Qualitätsmangels als abgeschlossen zu markieren, gehen 
 
 Um eine abgeschlossene Korrektur erneut zu öffnen, führen Sie diese Schritte aus.
 
-1. Gehen Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Nichtkonformitäten**.
+1. Gehen Sie zu **Lagerverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Nichtkonformitäten**.
 1. Wählen Sie in der Liste den Qualitätsmangel, den Sie aktualisieren möchten.
 1. Wählen Sie im Aktivitätsbereich **Korrekturen**.
 1. Wählen Sie auf der Seite **Korrekturen** im Raster die Korrektur aus, die Sie wieder öffnen möchten.
@@ -216,7 +216,7 @@ Sie können jetzt zusätzliche Bearbeitungen oder Aktualisierungen an der Korrek
 
 Um einen Qualitätsmangel zu schließen, führen Sie diese Schritte aus.
 
-1. Wechseln Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsaufträge**.
+1. Wechseln Sie zu **Lagerverwaltung \> Periodische Aufgaben \> Qualitätsmanagement \> Qualitätsprüfungsaufträge**.
 1. Wählen Sie einen Qualitätsprüfungsauftrag im Raster aus.
 1. Wählen Sie im Aktivitätsbereich **Abfragen \> Nichtkonformitäten**.
 1. Wählen Sie auf der Seite **Nichtkonformitäten** die Ziel-Qualitätsmängel im Raster aus.

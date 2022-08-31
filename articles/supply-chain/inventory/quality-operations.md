@@ -51,7 +51,7 @@ Für dieses Beispiel können die folgenden Vorgänge erstellt werden, um die zu 
 
 ## <a name="create-an-operation"></a>Erzeugen eines Vorgangs
 
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichten \> Qualitätsmanagement \> Vorgänge**.
+1. Gehen Sie zu **Lagerverwaltung \> Einstellungen \> Qualitätsmanagement \> Vorgänge**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus, um eine Zeile zum Raster hinzuzufügen. Legen Sie für die neue Zeile die folgenden Felder fest:
 
     - **Vorgang** – Geben Sie eine eindeutige ID oder einen Namen für den Vorgang ein.

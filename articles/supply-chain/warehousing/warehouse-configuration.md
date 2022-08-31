@@ -31,7 +31,7 @@ ms.locfileid: "9065185"
 In diesem Artikel wird beschrieben, wie ein Lagerort konfiguriert wird. Es enthält Informationen zum Aktivieren eines Lagerortlayouts und Lagerortverfahren.
 
 > [!NOTE]
-> Dieser Artikel gilt für Funktionen im Modul **Lagerortverwaltung**. Es gilt nicht für Lagerort-Funktionen im Modul **Bestandsverwaltung**.
+> Dieser Artikel gilt für Funktionen im Modul **Lagerortverwaltung**. Es gilt nicht für Lagerort-Funktionen im Modul **Lagerverwaltung**.
 
 ## <a name="warehouse-layout"></a>Lagerortlayout
 Lagerverwaltungsprozesse (WMS) im Supply Chain Management bieten Ihnen flexible Möglichkeiten, das Layout Ihres Lagers an wechselnde Anforderungen anzupassen, sodass Sie eine optimale Lagereffizienz erreichen können.

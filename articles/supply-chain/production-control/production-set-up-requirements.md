@@ -38,7 +38,7 @@ Vor der Verwendung des Moduls Produktionssteuerung müssen zunächst Information
 -   Einrichten des Hauptbuchs
 -   Definieren von Artikelgruppen
 -   Einrichten von Sachkonten für Artikelgruppen
--   Einrichten der Lagerartikeltabelle im Modul Bestandsverwaltung.
+-   Einrichten der Lagerartikeltabelle im Modul Lagerverwaltung.
 -   Erstellen Sie Stücklisten (BOMs) und Stücklistenversionen in der Produktinformationsverwaltung.
 
 ## <a name="required-calendar-and-resource-setup"></a>Erforderliche Kalender- und Ressourceneinstellungen

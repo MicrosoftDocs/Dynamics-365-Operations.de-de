@@ -28,7 +28,7 @@ ms.locfileid: "8872006"
 
 In diesem Artikel geht es um die Einrichtung eines Ankunftsübersichtsprofils. Das Wareneingangsübersichtprofil ist eine Regelsammlung, die angewendet werden, wenn die Wareneingangsübersichtseite von einem Benutzer geöffnet wird. Sie können diese Prozedur im Demodatunternehmen USMF verwenden. Diese Prozedur wird normalerweise von einem Sachbearbeiter Zugänge ausgeführt.
 
-1. Gehen Sie im Navigationsbereich zu **Module > Bestandsverwaltung > Einrichtung > Verteilung > Verteilung > Ankunftsübersichtsprofile**.
+1. Gehen Sie im Navigationsbereich zu **Module > Lagerverwaltung > Einstellungen > Verteilung > Verteilung > Ankunftsübersichtsprofile**.
 2. Wählen Sie **Neu** aus. Da Sie fast immer im gleichen Lagerort zusammenarbeiten, der vollständige LKW-Auslastungen auslädt, sollten Sie ein Wareneingangsübersichtprofil erstellen, um den Vorgang des zum Erfassen der empfangenen Artikeln zu vereinfachen.  
 3. Geben Sie im Feld **Ankunftsübersicht Profilname** einen Wert ein.
 4. Wählen Sie im Feld **Zeilen anzeigen** eine Option aus. Wählen Sie aus, welche Zeilen für die Belege angezeigt werden sollen:  

@@ -57,7 +57,7 @@ In diesem Beispiel wird ein Beleg in das Hauptbuch gebucht; Dies ist der physisc
 
 Als Nächstes wird eine Rechnung für die Menge empfangen, die in den Positionen 1 und 2 eingegangen ist. Im Hauptbuch wird ein weiterer Beleg angelegt; das ist der Finanzbeleg. Die Artikelmodellgruppe wird zum Buchen des Finanzbestands konfiguriert. Der neue zweite Beleg bezieht sich auf InventTrans 1 und InventTrans 2.
 
-Je nach Nachkalkulationsmodell existiert möglicherweise eine dritte Hauptbuchbuchung für Ihre Bestandbuchungen im untergeordnetem Sachkonto im Zusammenhang mit dem Abschluss und der Abrechnung des Bestands. Weitere Informationen finden Sie unter [Bestandsabschluss](/supply-chain/cost-management/inventory-close.md). Sie können die Details aller Bestandsbuchungen anzeigen, indem Sie zu **Bestandsverwaltung** > **Anfragen und Berichte** > **Buchungen** wechseln.
+Je nach Nachkalkulationsmodell existiert möglicherweise eine dritte Hauptbuchbuchung für Ihre Bestandbuchungen im untergeordnetem Sachkonto im Zusammenhang mit dem Abschluss und der Abrechnung des Bestands. Weitere Informationen finden Sie unter [Bestandsabschluss](/supply-chain/cost-management/inventory-close.md). Sie können die Details aller Bestandsbuchungen anzeigen, indem Sie zu **Lagerverwaltung** > **Anfragen und Berichte** > **Buchungen** wechseln.
 
 >[!Important]
 > Die Bestandstransaktionen werden für jede eindeutige Kombination von Bestandsdimensionen und für jede Teilaktualisierung aufgeteilt. Dies wurde im vorherigen Beispiel für Teilaktualisierungen gezeigt.
@@ -72,7 +72,7 @@ Wenn im obigen Beispiel jede Seriennummer auf einem einzelnen Produktbeleg einge
 
 ## <a name="inventory-transactions"></a>Bestandstransaktionen
 
-Sie können Bestandsbuchungen auf der **Bestandsbuchungen**-Seite unter **Bestands- und Lagerverwaltung** oder **Kostenverwaltung** anzeigen. Sie können auch Bestandsbuchungen anzeigen, die sich auf eine bestimmte Ursprungsbelegposition beziehen (z. B. eine Bestellposition oder eine Aufsauftragsposition), indem Sie **Bestand** und dann **Buchungen** auswählen. 
+Sie können Bestandsbuchungen auf der **Bestandsbuchungen**-Seite unter **Lager- und Lagerortverwaltung** oder **Kostenverwaltung** anzeigen. Sie können auch Bestandsbuchungen anzeigen, die sich auf eine bestimmte Ursprungsbelegposition beziehen (z. B. eine Bestellposition oder eine Aufsauftragsposition), indem Sie **Bestand** und dann **Buchungen** auswählen. 
 
 Die **Bestandbuchungen**-Seite enthält die folgenden Felder.
 
@@ -127,7 +127,7 @@ Weitere Informationen zu den Bestandbuchungen finden Sie unter [Details zu Besta
 
 Führen Sie folgende Schritte aus, um ein Bestandsbuchungsprofil zu konfigurieren:
 
-1.  Öffnen Sie **Bestandsverwaltung** > **Einstellungen** > **Buchung** > **Buchung**.
+1.  Öffnen Sie **Lagerverwaltung** > **Einstellungen** > **Buchung** > **Buchung**.
 2.  Wählen Sie die Registerkarte für den Typ der Buchung. Wählen Sie zum Beispiel **Bestellung**.
 3.  Wählen Sie das Optionsfeld für den Buchungstyp aus. Wählen Sie zum Beispiel **Einkaufsaufwendungen für Ausgaben**.
 4.  Wählen Sie **Neu** aus.
