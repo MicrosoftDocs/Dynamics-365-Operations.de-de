@@ -2,7 +2,7 @@
 title: Zielorte für elektronische Berichterstellung (ER)
 description: Dieser Artikel enthält Informationen zur Verwaltung von EB-Zielen (Elektronische Berichterstellung), zu den unterstützten Zieltypen und zu Sicherheitsaspekten.
 author: kfend
-ms.date: 05/18/2022
+ms.date: 08/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 97423
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.form: DocuType, ERSolutionTable
-ms.openlocfilehash: 1718b9e32c1e9f34d38479b74d59af6233f82a8c
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: b1bf6289e80769dfe8858f307cbb9b217b42dbb4
+ms.sourcegitcommit: f2edc193003564c5bee1747f9c2b800feee342bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9281966"
+ms.lasthandoff: 08/29/2022
+ms.locfileid: "9360978"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Zielorte für elektronische Berichterstellung (ER)
 
@@ -247,6 +247,52 @@ Auf dem Inforegister **Allgemeines** im **Ordner senden als** wählen Sie im Fel
 ### <a name="limitations"></a>Einschränkungen
 
 Wenn Sie das Feld **Ordner senden als** auf **Separate Dateien** für eine Komponente **Ordner** festlegen, die andere eingebetteten Komponenten **Ordner** enthält, wird die Einstellung nicht rekursiv auf die verschachtelten Komponenten **Ordner** angewendet.
+
+## <a name="change-page-layout-properties-of-a-template"></a><a name="change-page-layout-properties-of-a-template"></a> Seitenlayouteigenschaften einer Vorlage ändern
+
+Sie können ein EB-Ziel für eine EB-Formatkomponente konfigurieren, die für die Verwendung einer Vorlage in einem Microsoft Office-Format (Excel oder Word) für die Berichtgenerierung konzipiert ist. Wenn Sie nicht der Besitzer dieses Formats sind und die Seitenlayouteigenschaften der Formatvorlage ändern müssen, müssen Sie in Finance-Versionen vor der Version 10.0.29 ein abgeleitetes Format erstellen und die Vorlageneigenschaften ändern. Anschließend müssen Sie die abgeleitete Formatkonfiguration pflegen. Ab Version 10.0.29 können Sie jedoch die Seitenlayouteigenschaften der Vorlage zur Laufzeit ändern, um das Erstellen und Verwalten der abgeleiteten Formatkonfiguration zu vermeiden. Richten Sie dazu die gewünschten Eigenschaften im Rahmen der Einstellungen des konfigurierten EB-Ziels ein. Wenn Sie ein EB-Format laufen lassen und ein EB-Ziel ausführen, das für die Verwendung bestimmter Seitenlayouteigenschaften konfiguriert ist, werden die Werte der Seitenlayouteigenschaften des ausgeführten Ziels auf die von Ihnen verwendete Vorlage angewendet und ersetzen die Eigenschaften der ursprünglichen Vorlage. Sie können unterschiedliche Ziele für die Komponente desselben Formats konfigurieren, indem Sie unterschiedliche Seitenlayouteigenschaften für die verwendete Vorlage konfigurieren.
+
+Die folgenden Eigenschaften können in einem EB-Ziel für eine Formatkomponente konfiguriert werden, die für die Verwendung einer Vorlage in einem Excel- oder Wordformat konzipiert ist.
+
+- Seitenausrichtung
+    - Hochformat
+    - Querformat
+- Papiergröße
+    - A3
+    - A4
+    - A5
+    - B4
+    - B5
+    - Führungskraft
+    - Rechtliches
+    - Buchstabe
+    - Auszug
+    - Tabloid
+- Seitenränder
+    - Oben
+        - Header
+    - Unten
+        - Fußzeile
+    - Links
+    - Rechts
+
+> [!NOTE]
+> Die Seitenausrichtung der so konfigurierten Vorlage muss an der [Seitenausrichtung für die PDF-Konvertierung](#select-a-page-orientation-for-pdf-conversion) ausgerichtet sein, wenn die PDF-Konvertierung konfiguriert ist.
+
+Sie müssen die Längeneinheit für die Einstellung der Seitenränder auswählen:
+
+- Zoll
+- Zentimeter
+- Millimeter
+
+![Richten Sie die Seitenlayouteigenschaften auf der Seite „Ziel für elektronische Berichterstellung“ ein.](./media/er_destinations-set-page-layout-properties.png)
+
+> [!TIP]
+> Wenn ein Seitenrand in Zentimetern festgelegt ist und mehrere Dezimalstellen angegeben sind, wird er zur Laufzeit auf den nächsten Wert mit einer Dezimalstelle gerundet.
+>
+> Wenn ein Seitenrand in Millimetern festgelegt ist und Dezimalstellen angegeben sind, wird er zur Laufzeit für Excel auf den nächsten Integerwert ohne Dezimalstelle gerundet.
+>
+> Wenn ein Seitenrand in Millimetern festgelegt ist und mehrere Dezimalstellen angegeben sind, wird er zur Laufzeit für Word auf den nächsten Wert mit einer Dezimalstelle gerundet.
 
 ## <a name="security-considerations"></a>Sicherheitsaspekte
 

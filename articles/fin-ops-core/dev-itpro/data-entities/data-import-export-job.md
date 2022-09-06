@@ -2,7 +2,7 @@
 title: Einzelvorgänge für Datenimport und ‑export – Übersicht
 description: Verwenden Sie den Datenverwaltungsarbeitsbereich, um Datenimport- und Exporteinzelvorgänge zu erstellen und zu verwalten.
 author: peakerbl
-ms.date: 04/25/2022
+ms.date: 08/26/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 18a15928eef4d7158f778729506d691dd587e013
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.openlocfilehash: a03f8fd0fa05a1400c69a2da8867dee135ad06a1
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109461"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357590"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Einzelvorgänge für Datenimport und ‑export – Übersicht
 
@@ -76,6 +76,19 @@ Wenn Sie eine Einheit auswählen, müssen Sie die Verpackungseinheiten das Forma
 
 > [!NOTE]
 > Achten Sie bei XML-basierten Dateiformaten darauf, nur zulässige Zeichen zu verwenden. Genauere Informationen zu gültigen Zeichen finden Sie unter [Gültige Zeichen in XML 1.0](https://www.w3.org/TR/2006/REC-xml-20060816/Overview.html#charsets/). XML 1.0 erlaubt keine Steuerzeichen mit Ausnahme von Tabulatoren, Wagenrückläufen und Zeilenvorschüben. Beispiele für unzulässige Zeichen sind eckige Klammern, geschweifte Klammern und umgekehrte Schrägstriche. 
+
+Verwenden Sie Unicode anstelle einer bestimmten Codepage, um Daten zu importieren oder zu exportieren. Dies trägt dazu bei, die konsistentesten Ergebnisse zu liefern, und verhindert, dass Datenverwaltungsaufträge fehlschlagen, weil sie Unicode-Zeichen enthalten. Die systemdefinierten Quelldatenformate, die Unicode verwenden, haben alle **Unicode** im Quellennamen. Das Unicode-Format wird angewendet, indem Sie eine Unicode-Codierung für ANSI-Codepage als **Codepage** in der Registerkarte **Regionale Einstellungen** auswählen. Wählen Sie eine der folgenden Codepages für Unicode:
+
+| Codeseite | Anzeigename                |
+|-----------|-----------------------------|
+| 1200      | Unicode                     |
+| 12000     | Unicode (UTF-32)            |
+| 12001     | Unicode (UTF-32 Big-Endian) |
+| 1201      | Unicode (Big-Endian)        |
+| 65000     | Unicode (UTF-7)             |
+| 65001     | Unicode (UTF-8)             |
+
+Weitere Einzelheiten zu Codepages finden Sie unter [Codepage-Bezeichner](/windows/win32/intl/code-page-identifiers/).
 
 ### <a name="sequence-the-entities"></a>Sequenz der Entitäten
 Entitäten können in einer Datenvorlage in den Serverkonfigurationsdateien oder im Import- und Exporteinzelvorgang sequenziert werden. Wenn Sie einen Einzelvorgang ausführen, der mehr als eine Datenentität enthält, müssen Sie prüfen, ob die Datenentitäten ordnungsgemäß geordnet werden. Sie ordnen die Entitäten hauptsächlich so, dass Sie beliebige funktionalen Abhängigkeiten unter den Entitäten adressieren können. Wenn Entitäten keine funktionalen Abhängigkeiten haben, können Sie diese für Parallelimport oder Export planen. 

@@ -2,7 +2,7 @@
 title: Tastenkombinationen
 description: Dieser Artikel bietet einen Überblick über die Tastenkombinationen, die Sie bei der Arbeit mit Finanz- und Betriebs-Apps verwenden können.
 author: jasongre
-ms.date: 07/12/2022
+ms.date: 08/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67e1904807dfe5122de3d3ead97c2e2c11ed213d
-ms.sourcegitcommit: bd2d6a86a7fd4b4f6f86656998f7a8844f949e42
+ms.openlocfilehash: 04abaeada458e05df3de045d9c7a715040b7bfa4
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9140438"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357576"
 ---
 # <a name="keyboard-shortcuts"></a>Tastenkombinationen
 
@@ -135,10 +135,10 @@ Benutzer können zur Zeit verfügbaren Tastenkombinationen direkt über die Benu
 | Horizontales Scrollen                                                                                                   | Umschalt + Mausrad             |
 | Zur nächsten/vorherigen Spalte wechseln                                                                                       | Registerkarte / UMSCHALT+TAB                 |
 | Zur nächsten/vorherigen Zeile wechseln                                                                                          | NACH-UNTEN-TASTE / NACH-OBEN-TASTE           |
-| Ohne Auswahl zur nächsten/vorherigen Zeile wechseln<blockquote>[!NOTE] Diese Verknüpfung gilt nur für Szenarien mit Mehrfachauswahl.</blockquote> | STRG+NACH-OBEN-TASTE / STRG+NACH-UNTEN-TASTE |
-| Die aktuelle Zeile auswählen/Auswahl für aktuelle Zeile aufhaben<blockquote>[!NOTE] Diese Verknüpfung gilt nur für Szenarien mit Mehrfachauswahl.</blockquote>                    | STRG+LEERTASTE / STRG+KLICK         |
-| Die nächste/vorherige Zeile zum ausgewählten Satz hinzufügen<blockquote>[!NOTE] Diese Verknüpfung gilt nur für Szenarien mit Mehrfachauswahl.</blockquote>   | UMSCHALT+LEERTASTE                     |
-| Einen Bereich von Zeilen dem ausgewählten Satz hinzufügen<blockquote>[!NOTE] Diese Verknüpfung gilt nur für Szenarien mit Mehrfachauswahl.</blockquote>         | UMSCHALT+KLICK                     |
+| Ohne Auswahl zur nächsten/vorherigen Zeile wechseln<br><br>**Hinweis:** Diese Tastenkombination gilt nur für Szenarien mit Mehrfachauswahl. | STRG+NACH-OBEN-TASTE / STRG+NACH-UNTEN-TASTE |
+| Die aktuelle Zeile auswählen/Auswahl für aktuelle Zeile aufhaben<br><br>**Hinweis:** Diese Tastenkombination gilt nur für Szenarien mit Mehrfachauswahl.                   | STRG+LEERTASTE / STRG+KLICK         |
+| Die nächste/vorherige Zeile zum ausgewählten Satz hinzufügen<br><br>**Hinweis:** Diese Tastenkombination gilt nur für Szenarien mit Mehrfachauswahl.  | UMSCHALT+LEERTASTE                     |
+| Einen Bereich von Zeilen dem ausgewählten Satz hinzufügen<br><br>**Hinweis:** Diese Tastenkombination gilt nur für Szenarien mit Mehrfachauswahl.         | UMSCHALT+KLICK                     |
 | Zur nächsten/vorherigen Seite mit Daten wechseln                                                                                   | BILD-AUF / BILD-AB             |
 | Am unteren Ende des Rasters eine neue Zeile erstellen                                                                             | NACH-UNTEN-TASTE (von der letzten Zeile)  |
 | Zum ersten Datensatz wechseln                                                                                               | STRG+POS1                       |
@@ -148,7 +148,7 @@ Benutzer können zur Zeit verfügbaren Tastenkombinationen direkt über die Benu
 | Zur nächsten markieren Zeile wechseln                                                                                            | ALT+UMSCHALT+M, L                  |
 | Zur vorherigen markieren Zeile wechseln                                                                                        | ALT+UMSCHALT+M, P                  |
 | Zur letzten markierten Zeile wechseln                                                                                           | ALT+UMSCHALT+M, N                  |
-| Die Standardaktivität in einem Raster ausführen<blockquote>[!NOTE] Die Tastenkombination wird aktiviert, wenn der Fokus auf einer Zelle liegt, die einen Link enthält und alle Zellen in dieser Spalte Links haben</blockquote> | EINGABETASTE                           |
+| Die Standardaktivität in einem Raster ausführen<br><br>**Hinweis:** Die Tastenkombination wird aktiviert, wenn der Fokus auf einer Zelle liegt, die einen Link enthält und alle Zellen in dieser Spalte Hyperlinks haben. | EINGABETASTE                           |
 | Fokus zwischen ausgewählter Zeile und Kopfzeile umschalten                                                               | ALT+UMSCHALT+H                     |
 | Die aktuelle Spalte vergrößern/verkleinern (mit Fokus in der Kopfzeile)                                                  | NACH-RECHTS-TASTE / NACH-LINKS-TASTE        |
 | Größe der aktuellen Spalte zur nächsten/vorherigen Position bewegen (mit Fokus in der Kopfzeile)                                   | STRG+UMSCHALT+NACH-RECHTS-TASTE / STRG+UMSCHALT+NACH-LINKS-TASTE |

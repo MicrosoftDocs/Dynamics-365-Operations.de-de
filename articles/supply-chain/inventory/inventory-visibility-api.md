@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 25f6539616d4567249e1d1eb4297090176526fde
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 23f4c52b6d1d8c1af927a2c21455d6e24b24408a
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902023"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357640"
 ---
 # <a name="inventory-visibility-public-apis"></a>Öffentliche Inventory Visibility-APIs
 
@@ -98,16 +98,16 @@ Gehen Sie folgendermaßen vor, um ein Sicherheitsdienst-Token zu erhalten.
 1. Melden Sie sich am Azure-Portal an und suchen Sie dort die `clientId`- und `clientSecret`-Werte für Ihre Dynamics 365 Supply Chain Management-App.
 1. Holen Sie ein Azure AD-Token (`aadToken`), indem Sie eine HTTP-Anforderung senden, die die folgenden Eigenschaften hat:
 
-   - **URL:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
+   - **URL:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/v2.0/token`
    - **Methode:** `GET`
    - **Body-Inhalt (Formulardaten):**
 
-     | Schlüssel           | Wert                                |
-     | ------------- | ------------------------------------ |
-     | client_id     | ${aadAppId}                          |
-     | client_secret | ${aadAppSecret}                      |
-     | grant_type    | client_credentials                   |
-     | resource      | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
+     | Schlüssel           | Wert                                            |
+     | ------------- | -------------------------------------------------|
+     | client_id     | ${aadAppId}                                      |
+     | client_secret | ${aadAppSecret}                                  |
+     | grant_type    | client_credentials                               |
+     | Bereich         | 0cdb527f-a8d1-4bf8-9436-b352c68682b2/.default    |
 
    Sie sollten als Antwort ein Azure AD-Token (`aadToken`) erhalten. Es sollte dem folgenden Beispiel ähneln.
 
@@ -116,9 +116,6 @@ Gehen Sie folgendermaßen vor, um ein Sicherheitsdienst-Token zu erhalten.
        "token_type": "Bearer",
        "expires_in": "3599",
        "ext_expires_in": "3599",
-       "expires_on": "1610466645",
-       "not_before": "1610462745",
-       "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
        "access_token": "eyJ0eX...8WQ"
    }
    ```
@@ -131,7 +128,7 @@ Gehen Sie folgendermaßen vor, um ein Sicherheitsdienst-Token zu erhalten.
        "client_assertion_type": "aad_app",
        "client_assertion": "{Your_AADToken}",
        "scope": "https://inventoryservice.operations365.dynamics.com/.default",
-       "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
+       "context": "{$LCS_environment_id}",
        "context_type": "finops-env"
    }
    ```
@@ -517,7 +514,7 @@ Body:
 Im Hauptteil dieser Anforderung ist `dimensionDataSource` immer noch ein optionaler Parameter. Wenn er nicht festgelegt ist, wird `filters` als *Basisdimensionen* behandelt. Es gibt vier Pflichtfelder für `filters`: `organizationId`, `productId`, `siteId` und `locationId`.
 
 - `organizationId` sollte nur einen Wert enthalten, ist jedoch nach wie vor ein Array.
-- `productId` kann einen oder mehrere Werte enthalten. Wenn es sich um ein leeres Array handelt, werden alle Produkte zurückgegeben.
+- `productId` könnte einen oder mehrere Werte enthalten. Wenn es sich um ein leeres Array handelt, werden alle Produkte zurückgegeben.
 - `siteId` und `locationId` werden in der Bestandsanzeige für die Partitionierung verwendet. Sie in einer *Lagerbestand abfragen*-Anforderung mehr als einen Wert für `siteId` und `locationId` angeben. In der aktuellen Version müssen Sie die beiden Werte `siteId` und `locationId` angeben.
 
 Der `groupByValues`-Parameter sollte Ihrer Konfiguration für die Indizierung folgen. Weitere Informationen finden Sie unter [Produktindex-Hierarchie-Konfiguration](./inventory-visibility-configuration.md#index-configuration).

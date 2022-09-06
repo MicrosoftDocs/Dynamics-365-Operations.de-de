@@ -11,12 +11,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: 6b42252a37f01a2b387c2393760998a6b2e4761d
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 25ca054df6422370b1e61dff7965189ad90d7fcc
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9271514"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357657"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Commerce Scale Unit (Cloud) initialisieren
 
@@ -69,8 +69,8 @@ Die Commerce Scale Unit steht in den folgenden Regionen zum Bereitstellen zur Ve
 | APAC            | Asien, Osten           | Begrenzte Kapazität    |   Keine Kommentare.                           |
 | APAC            | Indien Süd         | Kapazität eingeschränkt | Keine Bereitstellungen zugelassen.    |
 | APAC            | Indien Zentral       | Begrenzte Kapazität    | Erfordert einen Genehmigungsprozess. |
-| EMEA            | Europa, Westen         | Begrenzte Kapazität    | Zur Zeit nicht in LCS verfügbar. |
-| EMEA            | Europa, Norden        | Begrenzte Kapazität    | Zur Zeit nicht in LCS verfügbar. |
+| EMEA            | Europa, Westen         | Allgemein verfügbar    |  Keine Kommentare. |
+| EMEA            | Europa, Norden        | Allgemein verfügbar    |  Keine Kommentare. |
 | EMEA            | Vereinigtes Königreich (United Kingdom), Süden            | Allgemein verfügbar |    Keine Kommentare.                          |
 | EMEA            | Vereinigtes Königreich (United Kingdom), Westen             | Allgemein verfügbar |    Keine Kommentare.                          |
 | Schweiz     | Schweiz, Norden   | Begrenzte Kapazität    | Erfordert einen Genehmigungsprozess. |
