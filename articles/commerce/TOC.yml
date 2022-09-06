@@ -466,9 +466,11 @@
                           items:
                             - name: Unterstützung für externe Geschenkgutscheine
                               href: dev-itpro/gift-card.md
+                            - name: Unternehmensübergreifende Datenfreigabe für Geschenkkarten
+                              href: dev-itpro/data-sharing-gift-cards.md
                     - name: RSAT
                       items:
-                        - name: Aufzeichnung und Regression Suite Automation für Cloud POS testen
+                        - name: Aufzeichnung und Regression Suite Automation Tool für Cloud POS testen
                           href: dev-itpro/pos-rsat.md
                     - name: Vertriebsmitarbeiter
                       items:
