@@ -3413,8 +3413,6 @@
                       href: warehousing/packing-work.md
                     - name: Artikelneuzuordnung für Entnahme mit unzureichender Menge einrichten
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
-                    - name: Lagerarbeit bei der Ausnahmebehandlung stornieren
-                      href: warehousing/cancel-warehouse-work.md
                     - name: Systemgeleitete Arbeitsabfolgen
                       href: warehousing/system-directed-work-sequencing.md
                     - name: Gruppierung von Kommissionierpositionen
@@ -3431,6 +3429,10 @@
                       href: warehousing/put-to-wall-put-to-store.md
                     - name: Ausgehende Workloadvisualisierung
                       href: warehousing/outbound-workload-visualization.md
+                    - name: Ausnahmen bei der Kommissionierung von Verkaufs- und Umlagerungspositionen manuell bearbeiten
+                      href: warehousing/manual-order-line-picking-exception-handling.md
+                    - name: Lagerarbeit bei der Ausnahmebehandlung stornieren
+                      href: warehousing/cancel-warehouse-work.md
                 - name: Wiederbeschaffung
                   items:
                     - name: Wiederbeschaffung – Übersicht

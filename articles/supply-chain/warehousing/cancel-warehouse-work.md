@@ -13,14 +13,14 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9a5c0cc988141b102cf3659ab4599e025f8f4640
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b1e2036e4e7a8a47d6df029f285df7aca0fa74e6
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907173"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403678"
 ---
-# <a name="cancel-warehouse-work-for-exception-handling"></a>Stornieren von Lagerortarbeit für Ausnahmebehandlung
+# <a name="cancel-warehouse-work-for-exception-handling"></a>Lagerarbeit bei der Ausnahmebehandlung stornieren
 
 [!include [banner](../includes/banner.md)]
 
@@ -32,7 +32,7 @@ Sie können auf die Funktion zum Stornieren von Arbeit unter **Lagerortverwaltun
 
 Während des Lagerortentnahmebetriebs kann es sein, dass eine Arbeitskraft in der Situation ist, dass er Mengen erfasst hat wie von einem Lagerort zu ihrem Benutzerlagerplatz entnommen, aber den Einlagerungsvorgang nicht erfassen kann. Inkonsistente Lagerortdaten sind häufig, allerdings nicht immer, der Grund, warum Arbeit gesperrt wird.
 
-Im Gegensatz zur regulären Stornieren-Funktion, auf die Sie zugreifen können, indem Sie die Schaltfläche **Abbrechen** auf dem Arbeitskopf verwenden, erfordert die Funktion zum Stornieren von Arbeit nicht, dass die letzte abgeschlossene Arbeitsposition eine Arbeitsposition vom Typ **Einlagern** ist. Das bedeutet, dass die Stornierungslogik für die Funktion zum Stornieren von Arbeit selbst dann ausgeführt werden kann, wenn die Artikelmenge in einer Arbeitsposition in einem Benutzerlagerplatz ist.
+Im Gegensatz zur regulären Stornieren-Funktion, auf die Sie zugreifen können, indem Sie die Schaltfläche **Abbrechen** auf der Arbeitskopfzeile verwenden, erfordert die Funktion zum Stornieren von Arbeit nicht, dass die letzte abgeschlossene Arbeitsposition den Typ **Einlagern** hat. Das bedeutet, dass die Stornierungslogik für die Funktion zum Stornieren von Arbeit selbst dann ausgeführt werden kann, wenn die Artikelmenge in einer Arbeitsposition in einem Benutzerlagerplatz ist.
 
 > [!NOTE]
 > Für Arbeit, die aus betrieblichen Ursachen storniert werden muss, müssen Lagerortbenutzer weiterhin die reguläre Stornieren-Funktion auf der Arbeitsseite verwenden.

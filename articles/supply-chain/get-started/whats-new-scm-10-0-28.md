@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 5cca06517fbdcbdae6e54c106b113a83851240c8
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: bbbd524020690b84fce34facaaa3047853fb2641
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334774"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403690"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10028-august-2022"></a>Neuerungen und Änderungen in Dynamics 365 Supply Chain Management 10.0.28 (August 2022)
 
@@ -50,7 +50,7 @@ Wenn Sie eine dieser Funktionen ein‑ oder ausschalten möchten, müssen Sie di
 | Lager- und Lagerortverwaltung | (Indien) Bei Verrechnungspreisregeln wird der Lagerplatz ignoriert, wenn „Von Lagerortcode“ auf „Alle“ festgelegt ist. | <p>Diese Funktion gilt nur für indische Lokalisierungen. Es macht das Festlegen von Transferpreisen für Artikel in Umlagerungen intuitiver.</p><p>Sie legen die Verrechnungspreise fest, indem Sie jeden Artikel mit Verrechnungspreisregeln konfigurieren. Eine Möglichkeit, diese Konfiguration vorzunehmen, besteht darin, eine Regelzeile einzufügen, in der das Feld **Aus Lagercode** auf *Alle* festgelegt ist. Diese Einstellung gibt an, dass der in der Zeile festgelegte Verrechnungspreis unabhängig von dem Lager gelten soll, aus dem der Artikel kommissioniert wird. Wenn diese Funktion aktiviert ist, ignorieren Verrechnungspreisregeln, bei denen das Feld **Aus Lagercode** auf *Alle* festgelegt ist, die Einstellung **Ort**. Daher gilt die Regel unabhängig von dem Ort, der auf dem Umlagerungsauftrag angegeben ist. Dieses Verhalten ist wahrscheinlich das, was erwartet wird, da der Ort in der Hierarchie der Dimensionen unterhalb des Lagers liegt.</p><p>Ohne diese Funktion wendet das System Regeln dieser Art nur an, wenn der Ort auf dem Umlagerungsauftrag genau mit dem Ort übereinstimmt, der für die Regel festgelegt ist. (Wenn für die Regel ein leerer Ort festgelegt ist, wendet das System die Regel nur auf Umlagerungsaufträge an, die ebenfalls einen leeren Wert für den Ort haben.)</p> |
 | Lager- und Lagerortverwaltung | Daten im Lagerbestandbericht bereinigen | Mit dieser Funktion können Sie die Daten bereinigen, die zum Erstellen von *Bestandsberichten für Lagerbestände* verwendet werden. |
 | Produktionssteuerung | Projektaktivitäten für Servicevertrags- und Serviceauftragszeilen zuweisen | Diese Funktion fügt den Zeilen von Servicevereinbarungen und Serviceaufträgen ein Feld mit der Bezeichnung **Projektaktivität** hinzu, so dass Sie eine Projektaktivität für diese Zeilen festlegen können. Die Funktion hilft Ihnen, Blockierungsfehler zu vermeiden, wenn Sie Erfassungen von Service-Management-Projekten buchen, die das Festlegen einer Projektaktivität erfordern.  |
-| Lagerortverwaltung | Dienst zur manuellen Auswahl von Umlagerungszeilen für Admins oder ähnliche vertrauenswürdige Benutzer | Mit dieser Funktion können Administratoren manuell Transaktionen im Bestand kommissionieren, die mit Transferzeilen in Verbindung stehen. Zu diesen Zeilen gehören auch Zeilen, die bereits an das Lager freigegeben wurden. Administratoren sollten diese Kommissionierung nur in Ausnahmefällen vornehmen, z.B. wenn sich das System in einem beschädigten Zustand befindet. |
+| Lagerortverwaltung | Dienst zur manuellen Auswahl von Umlagerungszeilen für Admins oder ähnliche vertrauenswürdige Benutzer | Mit dieser Funktion können Administratoren manuell Transaktionen im Bestand kommissionieren, die mit Transferzeilen in Verbindung stehen. Zu diesen Zeilen gehören auch Zeilen, die bereits an das Lager freigegeben wurden. Administratoren sollten diese Kommissionierung nur in Ausnahmefällen vornehmen, z.B. wenn sich das System in einem beschädigten Zustand befindet. Weitere Informationen finden Sie unter [Ausnahmen bei der Entnahme von Auftrags- und Umlagerungspositionen manuell handhaben](../warehousing/manual-order-line-picking-exception-handling.md). |
 
 ## <a name="new-and-updated-documentation-resources"></a>Neue und aktualisierte Dokumentationsressourcen
 

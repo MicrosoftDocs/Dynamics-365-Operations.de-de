@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d43b9b331a8a88ac1282acc33dabe7b71bca57b7
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 82420ad8dae12e4a47290599a5bbd0d15a7f3c29
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124295"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423853"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-supply-chain-management"></a>Lernkatalog für Benutzer von Dynamics 365 Supply Chain Management
 
@@ -27,9 +27,8 @@ Der folgende Katalog wurde aus Kernwissen zu bestimmten Domänen und vom Einfach
 
 ## <a name="get-started"></a>Erste Schritte<a name="get-started"></a>
 
-| Inhalt | Beschreibung | Formate | Länge |
+| Inhalt | Description | Format | Length |
 |---------|-------------|--------|--------|
-| [Kennenlernen des Handelswerts von Microsoft Dynamics 365 und Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Sind Sie an Informationen zu Geschäftsanwendungen interessiert? Vielleicht wissen Sie nicht, wo Sie anfangen sollen, Microsoft Dynamics 365- und Power Platform-Anwendungen zu verwenden? Erfahren Sie, wie die Leistungsfähigkeit von Geschäftsanwendungen Ihr Unternehmen verändern kann. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 8 Stunden |
 | [Dynamics 365 und Power Platform-Grundlagen](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Sind Sie an Informationen zu Geschäftsanwendungen interessiert? Beginnen Sie mit diesem Lernpfad, um zu sehen, wie Dynamics 365-Apps verwendet werden. Informieren Sie sich über Cloudkonzepte, Power Platform und die ersten Schritte mit Dynamics 365-Apps. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 5.5 Stunden |
 | [Starten Sie mit Finanz- und Betriebs-Apps](/learn/paths/get-started-finance-operations/) | Erfahren Sie, wie Finanz- und Betriebs-Apps Unternehmen dabei unterstützen, ihre globalen Finanzsysteme, operativen Geschäftsprozesse und rationalisierten Vorgänge zu verwalten, damit die Mitarbeiter schnelle und fundierte Entscheidungen treffen können. Der erste Schritt in Ihrer Karriere bei der Arbeit mit Finanz- und Betriebs-Apps besteht darin, sich mit den Funktionen und dem Funktionsumfang vertraut zu machen, unabhängig von Ihrer gewünschten Rolle. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 2 Stunden |
 | [Erste Schritte mit der Anlagenverwaltung für Dynamics 365 Supply Chain Management](/learn/modules/get-started-asset-management/index) | Die Anlagenverwaltung ist ein erweitertes Modul für die Verwaltung von Anlagen und Wartungsaufgaben in Dynamics 365 Supply Chain Management. Asset Management ermöglicht Ihnen, Aufgaben in Bezug auf die Verwaltung und Wartung zahlreicher Ausrüstungen in Ihrem Unternehmen, z. B. Maschinen, Produktionsanlagen und Fahrzeuge, effizient zu verwalten und auszuführen. Asset Management unterstützt Lösungen über zahlreiche Branchen hinweg. | Kostenloses Online-Lernmodul in der eigenen Geschwindigkeit | 1 Stunde |

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 1b5282bc1fb4834d001cd2513664996a2f4cf4f0
-ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
+ms.openlocfilehash: 83fa9d0a08d4d9ec171aeee685d39bba46e5687d
+ms.sourcegitcommit: 6fd44fc6e9a7bad197cab58c36ec25a555724cf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2022
-ms.locfileid: "9313882"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9410449"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Finance
 
@@ -32,6 +32,20 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 > [!NOTE]
 > Ausführliche Informationen über Objekte in Apps für Finanzen und Betrieb finden Sie in den [Technischen Referenzberichten](/dynamics/s-e/global/axtechrefrep_61). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die in den einzelnen Versionen der Apps für Finanzen und Betrieb geändert oder entfernt wurden.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10030-release"></a>Entfernte oder veraltete Funktionen in Finance Release 10.0.30
+
+### <a name="revenue-recognition"></a>Umsatzerlöserkennung
+
+[Umsatzerlöserkennung](../../finance/accounts-receivable/revenue-recognition-overview.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Grund für veralteten Zustand/Entfernung** |Ersetzt durch verbesserte Funktionalität, [Abonnementabrechnung](../../finance/accounts-receivable/subscription-billing-summary.md)
+| **Ersetzt durch eine andere Funktion?**   | Ja |
+| **Betroffene Produktbereiche** | Anwendung |
+| **Bereitstellungsoption** | Alle |
+| **Status** | Veraltet: Nach April 2023 wird die Umsatzrealisierungsfunktion in Dynamics 365 Finance nicht mehr mit Fehlerbehebungen unterstützt. Kunden werden gebeten, die verbesserte Funktionalität [Abonnementabrechnung](../../finance/accounts-receivable/subscription-billing-summary.md) zu nutzen. Ab Oktober 2023 ist die Funktion „Umsatzrealisierung“ nicht mehr verfügbar. Kunden werden gebeten, auf die verbesserte Funktionalität „Abonnementabrechnung“ umzustellen.|
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10029-release"></a>Entfernte oder veraltete Funktionen in Finance Release 10.0.29
 

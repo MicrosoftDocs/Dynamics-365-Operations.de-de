@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 89036920cc8738e2948ec1a78aafc4b35fff87fa
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d6aa5a0cb49e5871a50a2ac5ac2c29cc09e232fc
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219093"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403683"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Neuigkeiten oder Änderungen in Dynamics 365 Supply Chain Management 10.0.25 (April, 2022)
 
@@ -161,7 +161,7 @@ In der Tabelle sind auch Funktionen aufgeführt, die zuvor in der öffentlichen 
 | Lagerortverwaltung | [Standortkennzeichenpositionierung](../warehousing/location-license-plate-positioning.md) | Obligatorisch |
 | Lagerortverwaltung | [Lagerplatz-Produktdimensionsmischung](../warehousing/location-product-dimension-mixing.md) | Obligatorisch |
 | Lagerortverwaltung | Feld „Lagerbestandsumlagerungsstatus“ des mobilen Geräts bearbeitbar machen | Obligatorisch |
-| Lagerortverwaltung | Kommissionierdienst für manuelle Verkaufsposition für Administrator oder ähnliche vertrauenswürdige Benutzer | Obligatorisch |
+| Lagerortverwaltung | [Kommissionierdienst für manuelle Verkaufsposition für Administrator oder ähnliche vertrauenswürdige Benutzer](../warehousing/manual-order-line-picking-exception-handling.md) | Obligatorisch |
 | Lagerortverwaltung | [Verhindern, dass Kennzeichen für gelieferte Umlagerungsaufträge an anderen Lagerorten als dem Ziellagerort verwendet werden](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | Obligatorisch |
 | Lagerortverwaltung | Aufforderung zum Auflösen mehrdeutiger Namen für Lagerplatz/Kennzeichen | Obligatorisch |
 | Lagerortverwaltung | [Qualitätsprüfung](../warehousing/quality-check.md) | Obligatorisch |

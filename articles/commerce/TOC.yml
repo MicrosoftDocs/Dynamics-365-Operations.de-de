@@ -12,6 +12,8 @@
               items:
                 - name: Neuerungen oder Änderungen in Commerce – Startseite
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.30 (November 2022)
+                  href: get-started/whats-new-commerce-10-0-30.md
                 - name: Commerce 10.0.29 (Oktober 2022)
                   href: get-started/whats-new-commerce-10-0-29.md
                 - name: "Commerce\_10.0.28 (Juli\_2022)"
@@ -702,18 +704,16 @@
                   href: optimal-combination-overlapping-discounts.md
                 - name: Kanalspezifische Rabatte definieren
                   href: define-channel-specific-discounts.md
-                - name: Optionen zum Sperren von Rabatten für Einzelhandelsprodukte
-                  href: prevent-discounts.md
                 - name: Zahlungsmittelbasierte Rabatte
                   href: tender_based_discounts.md
                 - name: Lieferungsrabatt
                   href: shipping-discount.md
                 - name: Geschenke mit Kaufangeboten konfigurieren
                   href: gift-with-purchase.md
-                - name: Coupons einrichten
-                  href: retail-coupons.md
-                - name: Rabatte in POS anzeigen
-                  href: discounts-pos.md
+                - name: Gutscheine
+                  href: coupons.md
+                - name: Preiseinstellungen
+                  href: price-settings.md
                 - name: Preisberichte
                   href: price-report.md
                 - name: Kanalspezifische Handelsvereinbarungen erstellen
@@ -800,6 +800,8 @@
                       href: calculated-inventory-retail-channels.md
                     - name: Bestandssuchvorgang im POS
                       href: pos-inventory-lookup-operation.md
+                    - name: Produktauflistung mit Bestandsberücksichtigung
+                      href: inventory-aware-product-listing.md
                 - name: Bestellungen
                   items:
                     - name: Übersicht über Bestellungen

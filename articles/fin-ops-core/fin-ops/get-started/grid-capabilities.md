@@ -2,7 +2,7 @@
 title: Rasterfunktionen
 description: In diesem Artikel werden mehrere leistungsstarke Funktionen der Rastersteuerung beschrieben. Sie müssen die neue Rasterfunktion aktivieren, damit auf diese Fähigkeiten zugegriffen werden kann.
 author: jasongre
-ms.date: 08/09/2022
+ms.date: 08/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a8968a1263dfafd67b07b4beb78c51493e95756e
-ms.sourcegitcommit: 47534a943f87a9931066e28f5d59323776e6ac65
+ms.openlocfilehash: 096f441d39dde0f322ed117ab35a6a4641a38a93
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9258946"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405464"
 ---
 # <a name="grid-capabilities"></a>Rasterfunktionen
 
@@ -178,20 +178,22 @@ Die Funktion **Neue Rastersteuerung** ist in jeder Umgebung direkt in der Funkti
 
 Diese Funktion wurde ab Version 10.0.21 standardmäßig aktiviert. Sie soll im Oktober 2022 obligatorisch werden.
 
-## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Entwickler] Deaktivierung einzelner Seiten für die Verwendung des neuen Rasters 
+## <a name="developer-topics"></a>Entwicklerthemen
+
+### <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Entwickler] Deaktivierung einzelner Seiten für die Verwendung des neuen Rasters 
 Wenn Ihre Organisation eine Seite entdeckt, bei der Probleme bei der Verwendung des neuen Rasters auftreten, steht eine API zur Verfügung, mit der ein einzelnes Formular die Vorgängerrastersteuerung und der Rest des Systems weiterhin die neue Rastersteuerung verwenden kann. Fügen Sie den folgenden Aufruf `super()` in die `run()` Methode für das Formular ein, um das Raster für eine einzelne Seite zu deaktivieren.
 
 ```this.forceLegacyGrid();```
 
 Diese API wird letztendlich veraltet, um das Entfernen des Legacy-Raster-Steuerelements zu ermöglichen. Sie bleibt jedoch mindestens 12 Monate nach Bekanntgabe der Einstellung verfügbar. Wenn Probleme die Verwendung dieser API erfordern, melden Sie diese an Microsoft.
 
-### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Erzwingen, dass eine Seite das neue Raster verwendet, nachdem das Raster zuvor deaktiviert wurde
+#### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Erzwingen, dass eine Seite das neue Raster verwendet, nachdem das Raster zuvor deaktiviert wurde
 Wenn Sie eine einzelne Seite von der Verwendung des neuen Rasters abgemeldet haben, möchten Sie das neue Raster möglicherweise später wieder aktivieren, nachdem die zugrunde liegenden Probleme behoben wurden. Dazu müssen Sie lediglich den Aufruf von `forceLegacyGrid()` entfernen. Die Änderung wird erst wirksam, wenn eine der folgenden Bedingungen eintritt:
 
 - **Erneute Bereitstellung der Umgebung**: Wenn eine Umgebung aktualisiert und erneut bereitgestellt wird, wird die Tabelle, die die Seiten speichert, die sich aus dem neuen Raster abgemeldet haben (FormControlReactGridState), automatisch gelöscht.
 - **Manuelles Löschen der Tabelleninhalte**: Für Entwicklungsszenarien müssen Sie SQL verwenden, um die Inhalte der FormControlReactGridState-Tabelle zu löschen und dann den AOS neu zu starten. Diese Kombination von Aktivitäten setzt die Zwischenspeicherung von Seiten zurück, die sich vom neuen Raster abgemeldet haben.
 
-## <a name="developer-opting-individual-grids-out-of-the-typing-ahead-of-the-system-capability"></a>[Entwickler] Einzelne Raster aus der Funktionalität Typing ahead of the system herausnehmen
+### <a name="developer-opting-individual-grids-out-of-the-typing-ahead-of-the-system-capability"></a>[Entwickler] Einzelne Raster aus der Funktionalität Typing ahead of the system herausnehmen
 Es gibt einige Szenarien, die sich nicht gut für die *Typisierung vor dem System* Funktionalität des Rasters eignen. (Einige Codes, die bei der Validierung einer Zeile ausgelöst werden, führen beispielsweise dazu, dass eine Datenquellenrecherche ausgelöst wird, und die Recherche kann dann unbestätigte Änderungen an bestehenden Zeilen beschädigen.) Wenn Ihr Unternehmen ein solches Szenario entdeckt, steht eine API zur Verfügung, mit der ein Entwickler ein einzelnes Raster von der asynchronen Zeilenvalidierung ausnehmen und zum veralteten Verhalten zurückkehren kann.
 
 Wenn die asynchrone Zeilenvalidierung in einem Raster deaktiviert ist, können Benutzer keine neue Zeile erstellen oder zu einer anderen bestehenden Zeile im Raster wechseln, während in der aktuellen Zeile Validierungsprobleme bestehen. Ein Nebeneffekt dieser Aktion ist, dass Tabellen nicht aus Excel in Finanzen und Betrieb Raster eingefügt werden können.
@@ -204,13 +206,18 @@ Um ein einzelnes Raster von der asynchronen Zeilenvalidierung auszunehmen, füge
 > - Dieser Aufruf sollte nur in Ausnahmefällen aufgerufen werden und nicht für alle Raster die Norm sein.
 > - Es wird nicht empfohlen, diese API zur Laufzeit nach dem Laden des Formulars umzuschalten.
 
-## <a name="developer-size-to-available-width-columns"></a>[Entwickler] Spalten mit bis zur verfügbaren Breite angepasster Größe
+### <a name="developer-size-to-available-width-columns"></a>[Entwickler] Spalten mit bis zur verfügbaren Breite angepasster Größe
 Wenn ein Entwickler die **WidthMode**-Eigenschaft bei Spalten innerhalb des neuen Rasters auf **SizeToAvailable** festlegt, haben diese Spalten zunächst dieselbe Breite wie bei einer Einstellung der Eigenschaft **SizeToContent**. Sie dehnen sich jedoch, um jede zusätzliche verfügbare Breite innerhalb des Rasters zu nutzen. Wenn die Eigenschaft bei mehreren Spalten auf **SizeToAvailable** festgelegt ist, teilen sich alle diese Spalten die zusätzliche verfügbare Breite innerhalb des Rasters. Wenn ein Benutzer jedoch die Größe einer dieser Spalten manuell ändert, wird die Spalte statisch. Sie bleibt auf dieser Breite und wird nicht mehr gedehnt, um die zusätzliche verfügbare Rasterbreite einzunehmen.
 
-## <a name="developer-specifying-the-column-that-receives-the-initial-focus-when-new-rows-are-created-by-using-the-down-arrow-key"></a>[Entwickler] Die Spalte festlegen, die den anfänglichen Fokus erhält, wenn neue Zeilen mithilfe der Nach-unten-Taste erstellt werden
+### <a name="developer-specifying-the-column-that-receives-the-initial-focus-when-new-rows-are-created-by-using-the-down-arrow-key"></a>[Entwickler] Die Spalte festlegen, die den anfänglichen Fokus erhält, wenn neue Zeilen mithilfe der Nach-unten-Taste erstellt werden
 Wie im Abschnitt [Unterschiede bei der Eingabe vor dem Verarbeitungspunkt des Systems](#differences-when-entering-data-ahead-of-the-system) besprochen, ist das Standardverhalten, den Fokus auf die erste Spalte in der neuen Zeile zu legen, wenn die Funktion „Type-ahead“ aktiviert ist und ein Benutzer eine neue Zeile erstellt, indem er die **Nach-unten**-Taste verwendet. Diese Erfahrung kann sich von der Erfahrung im Legacy-Raster oder wenn eine **Neu**-Schaltfläche ausgewählt ist unterscheiden.
 
 Benutzer und Organisationen können gespeicherte Ansichten erstellen, die für die Dateneingabe optimiert sind. (Beispielsweise können Sie Spalten neu anordnen, sodass die erste Spalte diejenige ist, in der Sie mit der Dateneingabe beginnen möchten.) Darüber hinaus können Organisationen dieses Verhalten ab Version 10.0.29 mithilfe der **selectedControlOnCreate()**-Methode anpassen. Diese Methode erlaubt einem Entwickler, die Spalte festzulegen, die den anfänglichen Fokus erhalten soll, wenn eine neue Zeilen mithilfe der **Nach-unten**-Taste erstellt wird. Als Eingabe übernimmt diese API die Steuerelement-ID, die der Spalte entspricht, die den anfänglichen Fokus erhalten soll.
+
+### <a name="developer-handling-grids-with-non-react-extensible-controls"></a>[Entwickler] Umgang mit Rastern mit erweiterbaren Nicht-React-Steuerelementen
+Wenn ein Raster geladen wird und das System auf ein erweiterbares Steuerelement trifft, das nicht auf React basiert, erzwingt das System stattdessen das Rendern des Legacy-Grids. Tritt diese Situation zum ersten Mal auf, wird eine Meldung angezeigt, dass die Seite aktualisiert werden muss. Danach lädt diese Seite das alte Raster bis zum nächsten Systemupdate automatisch ohne weitere Benachrichtigungen an die Benutzer. 
+
+Um diese Situation dauerhaft zu beheben, können Autoren erweiterbarer Steuerelemente eine React-Version des Steuerelements zur Verwendung im Raster erstellen.  Nach der Entwicklung kann die X++-Klasse für das Steuerelement mit dem Attribut **FormReactControlAttribute** ausgestattet werden, um den Speicherort des React-Bundles anzugeben, das für dieses Steuerelement geladen werden soll. Siehe die `SegmentedEntryControl`-Klasse als Beispiel.  
 
 ## <a name="known-issues"></a>Bekannte Probleme
 In diesem Abschnitt wird eine Liste bekannter Probleme für die neue Rastersteuerung aufgeführt.
@@ -218,9 +225,12 @@ In diesem Abschnitt wird eine Liste bekannter Probleme für die neue Rastersteue
 ### <a name="open-issues"></a>Bekannte Probleme
 - Nach dem Aktivieren der Funktion **Neue Rastersteuerung** werden einige Seiten weiterhin die vorhandene Rastersteuerung verwenden. Dies geschieht in den folgenden Situationen:
  
-    - Auf der Seite gibt es eine Kartenliste, die in mehreren Spalten gerendert ist.
-    - Auf der Seite gibt es eine gruppierte Kartenliste.
-    - Eine Rasterspalte mit einem nicht reagierenden erweiterbaren Steuerelement.
+    - [Behoben] Auf der Seite gibt es eine Kartenliste, die in mehreren Spalten gerendert ist.
+        - Diese Art von Kartenliste wird ab Version 10.0.30 von dem **Neuen Rastersteuerelement** unterstützt. Alle Verwendungen von forceLegacyGrid() für diesen Zweck können entfernt werden. 
+    - [Behoben] Auf der Seite gibt es eine gruppierte Kartenliste.
+        - Gruppierte Kartenlisten werden ab Version 10.0.30 von dem **Neuen Rastersteuerelement** unterstützt. Alle Verwendungen von forceLegacyGrid() für diesen Zweck können entfernt werden. 
+    - [Behoben] Eine Rasterspalte mit einem nicht reagierenden erweiterbaren Steuerelement.
+        - Erweiterbare Steuerelemente können eine React-Version ihres Steuerelements bereitstellen, die geladen wird, wenn sie im Raster platziert werden, und ihre Steuerelementdefinition so anpassen, dass dieses Steuerelement geladen wird, wenn es im Raster verwendet wird. Weitere Informationen finden Sie im entsprechenden Abschnitt für Entwickler. 
 
     Tritt diese Situation zum ersten Mal auf, wird eine Meldung zum Aktualisieren der Seite angezeigt. Nachdem diese Meldung angezeigt wird, verwendet die Seite das vorhandene Raster für alle Benutzer bis zur nächsten Aktualisierung der Produktversion weiter. Für ein zukünftiges Update wird an einem besseren Umgang mit diesen Szenarien gearbeitet, damit das neue Raster genutzt werden kann.
 

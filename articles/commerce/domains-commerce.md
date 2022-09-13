@@ -4,22 +4,17 @@ description: In diesem Artikel wird beschrieben, wie Domänen in Microsoft Dynam
 author: BrianShook
 ms.date: 08/19/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: BrShoo
-ms.search.validFrom: ''
-ms.dyn365.ops.version: Release 10.0.12
-ms.search.industry: retail
-ms.search.form: ''
-ms.openlocfilehash: 08d6d52175bb7a77259cbd38b15f466deeab0846
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: fd2fdc82fe62e56e18f54138e07b663a18802d66
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336716"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405495"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domänen in Dynamics 365 Commerce
 
@@ -110,10 +105,10 @@ Um benutzerdefinierte Domänen mithilfe eines Front-Door-Dienstes oder eines CDN
 
 - Richten Sie einen Front-Door-Dienst wie Azure Front Door ein, um den Front-End-Verkehr zu verarbeiten und eine Verbindung mit Ihrer Commerce-Umgebung herzustellen. Dies bietet eine bessere Kontrolle über die Domänen- und Zertifikatverwaltung sowie detailliertere Sicherheitsrichtlinien.
 
+- Verwenden Sie die von Commerce bereitgestellte Azure Front Door-Instanz. Dies erfordert eine Abstimmung mit dem Dynamics 365 Commerce-Team für die Domänenüberprüfung und den Erhalt von SSL-Zertifikaten für Ihre Produktionsdomäne.
+
 > [!NOTE]
 > Wenn Sie einen externen CDN- oder Front-Door-Dienst verwenden, stellen Sie sicher, dass die Anforderung mit dem von Commerce bereitgestellten Hostnamen, aber mit dem Header X-Forwarded-Host (XFH) \<custom-domain\> auf der Commerce-Plattform landet. Wenn Ihr Commerce-Endpunkt beispielsweise `xyz.dynamics365commerce.ms` und die benutzerdefinierte Domäne `www.fabrikam.com` lautet, sollte der Hostheader der weitergeleiteten Anforderung `xyz.dynamics365commerce.ms` lauten und der XFH-Header sollte `www.fabrikam.com` sein.
-
-- Verwenden Sie die von Commerce bereitgestellte Azure Front Door-Instanz. Dies erfordert eine Abstimmung mit dem Dynamics 365 Commerce-Team für die Domänenüberprüfung und den Erhalt von SSL-Zertifikaten für Ihre Produktionsdomäne.
 
 Informationen zum direkten Einrichten eines CDN-Dienstes finden Sie unter [Unterstützung für ein Content Delivery Network (CDN) hinzufügen](add-cdn-support.md).
 

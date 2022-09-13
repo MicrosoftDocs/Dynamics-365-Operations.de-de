@@ -2,7 +2,7 @@
 title: Tastenkombinationen
 description: Dieser Artikel bietet einen Überblick über die Tastenkombinationen, die Sie bei der Arbeit mit Finanz- und Betriebs-Apps verwenden können.
 author: jasongre
-ms.date: 08/26/2022
+ms.date: 08/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04abaeada458e05df3de045d9c7a715040b7bfa4
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: a5bf22228749a725baa66ee3094f670c60f0f39a
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357576"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405436"
 ---
 # <a name="keyboard-shortcuts"></a>Tastenkombinationen
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -87,10 +88,12 @@ Benutzer können zur Zeit verfügbaren Tastenkombinationen direkt über die Benu
 | Öffnen des Bereichs "Filter" (oder Wechseln des Fokus zwischen dem Bereich "Filter" und dem Hauptformular, wenn der Bereich "Filter" bereits offen ist) | ALT+M,F oder STRG+F3       |
 | Schließen des Bereichs "Filter" (mit Fokus im Bereich "Filter")                                                               | ESC                      |
 | Erweiterte Filterung/Sortierung öffnen                                                                                        | STRG+UMSCHALT+F3            |
+| Wenden Sie den Schnellfilter an (wenn der Fokus auf dem Schnellfilter liegt)                                                              | Eingang                    |
+| Wenden Sie den Rasterfilter an (wenn sich der Fokus im Filterfeld der Spaltenüberschrift befindet)                                             | Eingang                    |
 
 ## <a name="form-shortcuts"></a>Formularverknüpfungen
 
-| Ergebnis                                    | Taste(n)             |
+| Ergebnis                                    | Drücken Sie folgende Taste: .             |
 |-----------------------------------------------|-------------------|
 | Neuen Datensatz erstellen                           | ALT+N             |
 | Löschen eines Datensatzes                               | ALT+DEL oder ALT+F9 |
@@ -157,12 +160,13 @@ Benutzer können zur Zeit verfügbaren Tastenkombinationen direkt über die Benu
 
 ## <a name="input-control-shortcuts"></a>Eingabesteuerungsverknüpfungen
 
-| Aktion                                                                   | Drücken Sie folgende Taste: .                         |
+| Ergebnis                                                                   | Drücken Sie folgende Taste: .                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Den Link öffnen                                                           | STRG+EINGABETASTE                    |
+| Öffnen Sie den Hyperlink (wenn der Fokus auf einem schreibgeschützten Steuerelement liegt)<br><br>**Hinweis:** Diese Verknüpfung gilt nur, wenn die Funktion **Standardisierung der Tastaturinteraktion für Steuerelemente für Kombinationsfelder und Nachschlagefelder** aktiviert ist                   | Eingang    |
 | Sitzungsdatum in ein Datumsfeld eingeben                                       | S                             |
 | Aktuelles Datum in ein Datumsfeld eingeben                                       | Di                             |
-| Suche, Kombinationsfeld, Datumsauswahl, Ablagedialogfeld öffnen                         | ALT+NACH-UNTEN-TASTE                |
+| Suche, Kombinationsfeld, Datumsauswahl, Ablagedialogfeld öffnen                         | ALT+NACH-UNTEN-TASTE<br><br>Eingabetaste (wenn die Funktion **Standardisierung der Tastaturinteraktion für Steuerelemente für Kombinationsfelder und Nachschlagefelder** aktiviert ist)                |
 | Suche, Kombinationsfeld, Datumsauswahl, Ablagedialogfeld schließen                        | ESC                           |
 | Fokus in eine Suche verschieben (wenn die Suche bereits offen ist)                   | ALT+NACH-UNTEN-TASTE                |
 | Erweitere Vorschau des Steuerelements öffnen                                          | ALT+NACH-OBEN-TASTE                  |

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 576d8d5d0cad09aed40f1ceb9ce5682816c0f666
-ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
+ms.openlocfilehash: 8d8fe042d7c56b86a5a7c92cc24480f573a2ea8a
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9306317"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423568"
 ---
 # <a name="configure-inventory-visibility"></a>Inventory Visibility konfigurieren
 
@@ -303,13 +303,13 @@ Die Lösung enthält diese Partitionskonfiguration standardmäßig. Daher *müss
 
 In den meisten Fällen wird die Abfrage des Lagerbestands nicht nur auf der höchsten Ebene "Gesamt" erfolgen. Stattdessen möchten Sie vielleicht auch Ergebnisse sehen, die auf Basis der Bestandsdimensionen aggregiert sind.
 
-Inventory Visibility bietet Flexibilität, indem Sie die _Indizes_ festlegen können. Diese Indizes basieren auf einer Dimension oder einer Kombination von Dimensionen. Ein Index besteht aus einer *Satznummer*, einer *Dimension* und einer *Hierarchie*, wie in der folgenden Tabelle festgelegt.
+Inventory Visibility bietet Flexibilität, indem Sie die _Indizes_ festlegen können, um die Leistung Ihrer Abfragen zu verbessern. Diese Indizes basieren auf einer Dimension oder einer Kombination von Dimensionen. Ein Index besteht aus einer *Satznummer*, einer *Dimension* und einer *Hierarchie*, wie in der folgenden Tabelle festgelegt.
 
 | Name | Beschreibung |
 |---|---|
 | Set-Nummer festlegen | Dimensionen, die zum gleichen Set (Index) gehören, werden gruppiert, und ihnen wird die gleiche Set-Nummer zugewiesen. |
 | Dimensionen | Basisdimensionen, über die das Abfrageergebnis aggregiert wird. |
-| Hierarchie | Die Hierarchie wird verwendet, um die unterstützten Dimensionen-Kombinationen zu definieren, die abgefragt werden können. Sie legen z. B. ein Dimensionen-Set fest, das eine Hierarchie-Sequenz von `(ColorId, SizeId, StyleId)` hat. In diesem Fall unterstützt das System Abfragen auf vier Dimensionen-Kombinationen. Die erste Kombination ist leer, die zweite ist `(ColorId)`, die dritte ist `(ColorId, SizeId)` und die vierte ist `(ColorId, SizeId, StyleId)`. Die anderen Kombinationen werden nicht unterstützt. Weitere Informationen finden Sie im folgenden Beispiel. |
+| Hierarchie | Mithilfe der Hierarchie können Sie die Leistung bestimmter Dimensionskombinationen steigern, wenn sie in „Filtern nach“ und „Gruppieren nach“-Abfrageparametern verwendet werden. Wenn Sie beispielsweise einen Dimensionssatz mit einer Hierarchiesequenz von `(ColorId, SizeId, StyleId)` einrichten, kann das System Abfragen in Bezug auf vier Dimensionskombinationen schneller verarbeiten. Die erste Kombination ist leer, die zweite ist `(ColorId)`, die dritte ist `(ColorId, SizeId)` und die vierte ist `(ColorId, SizeId, StyleId)`. Andere Kombinationen werden nicht beschleunigt. Filter sind nicht durch die Reihenfolge eingeschränkt, müssen jedoch innerhalb dieser Dimensionen liegen, wenn Sie ihre Leistung verbessern möchten. Weitere Informationen finden Sie im folgenden Beispiel. |
 
 Um Ihren Produkthierarchie-Index festzulegen, gehen Sie wie folgt vor.
 
@@ -319,14 +319,13 @@ Um Ihren Produkthierarchie-Index festzulegen, gehen Sie wie folgt vor.
 1. Standardmäßig wird eine Liste von Indizes bereitgestellt. Um einen vorhandenen Index zu ändern, wählen Sie **Bearbeiten** oder **Hinzufügen** im Abschnitt für den betreffenden Index. Um einen neuen Indexsatz zu erstellen, wählen Sie **Neuer Indexsatz**. Wählen Sie für jede Zeile in jedem Indexsatz im Feld **Dimension** aus der Liste der Basisdimensionen aus. Die Werte für die folgenden Felder werden automatisch generiert:
 
     - **Set-Nummer** - Dimensionen, die zur gleichen Gruppe (Index) gehören, werden zusammen gruppiert, und ihnen wird die gleiche Set-Nummer zugewiesen.
-    - **Hierarchie** - Die Hierarchie wird verwendet, um die unterstützten Dimensionskombinationen zu definieren, die in einer Dimensionsgruppe (Index) abgefragt werden können. Wenn Sie z. B. eine Dimensionsgruppe festlegen, die eine Hierarchie-Sequenz von *Stil*, *Farbe* und *Größe* hat, unterstützt das System das Ergebnis von drei Abfragegruppen. Die erste Gruppe ist nur Stil. Die zweite Gruppe ist eine Kombination aus Stil und Farbe. Und die dritte Gruppe ist eine Kombination aus Stil, Farbe und Größe. Die anderen Kombinationen werden nicht unterstützt.
+    - **Hierarchie**: Die Hierarchie steigert die Leistung bestimmter Dimensionskombinationen, wenn sie in „Filtern nach“ und „Gruppieren nach“-Abfrageparametern verwendet werden.
 
 > [!TIP]
 > Hier sind ein paar Tipps, die Sie beim Einrichten Ihrer Indexhierarchie beachten sollten:
 >
 > - Basisdimensionen, die in der Partitionskonfiguration definiert sind, sollten nicht in Indexkonfigurationen definiert werden. Wenn in der Indexkonfiguration erneut eine Basisdimension definiert wird, können Sie nicht nach diesem Index abfragen.
 > - Wenn Sie nur Bestand abfragen müssen, der durch alle Dimensionskombinationen aggregiert wird, können Sie einen einzelnen Index einrichten, der die Basisdimension `Empty` enthält.
-> - Sie müssen mindestens eine Indexhierarchie haben (die beispielsweise die Basisdimension enthält `Empty`), andernfalls schlagen Abfragen mit dem Fehler „Es wurde keine Indexhierarchie festgelegt“ fehl.
 
 ### <a name="example"></a>Beispiel
 

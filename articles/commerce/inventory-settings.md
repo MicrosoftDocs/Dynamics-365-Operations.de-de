@@ -2,7 +2,7 @@
 title: Bestandseinstellungen anwenden
 description: Dieser Artikel behandelt Inventareinstellungen und beschreibt, wie sie in Microsoft Dynamics 365 Commerce angewendet werden.
 author: anupamar-ms
-ms.date: 10/15/2021
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: ''
-ms.openlocfilehash: bc55715b7c74f3b572459dd1aa7d409b7175535b
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 49310a44f8b9c636734e04d4eed9445384b55791
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287591"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405319"
 ---
 # <a name="apply-inventory-settings"></a>Bestandseinstellungen anwenden
 
@@ -51,12 +51,12 @@ In Commerce werden Bestandeinstellungen unter **Seiteneinstellungen \> Erweiteru
     > [!IMPORTANT] 
     > Die Einstellung **Bestandsebene für mehrere Lagerorte** ist ab der Commerce-Version 10.0.19 verfügbar. Wenn Sie ein Update von einer älteren Version von Commerce durchführen, müssen Sie die Datei appsettings.json manuell aktualisieren. Anweisungen finden Sie unter [SDK- und Modulbibliotheks-Updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
-- **Inventareinstellungen für Produktlistenseiten** – Diese Einstellung definiert, wie nicht vorrätige Produkte in Produktlisten angezeigt werden, die von Produktsammlungs- und Suchergebnismodulen gerendert werden. Die verfügbaren Werte sind **In der Reihenfolge mit anderen Produkten anzeigen**, **Nicht vorrätige Produkte aus der Liste ausblenden** und **Nicht vorrätige Produkte am Ende der Liste anzeigen**. Um diese Einstellung zu verwenden, müssen Sie zunächst einige erforderliche Einstellungen in der Commerce-Zentrale konfigurieren. Weitere Informationen finden Sie unter [Inventarerkennung für das Suchergebnismodul aktivieren](search-result-module.md#enable-inventory-awareness-for-the-search-results-module).
+- **Inventareinstellungen für Produktlistenseiten** – Diese Einstellung definiert, wie nicht vorrätige Produkte in Produktlisten angezeigt werden, die von Produktsammlungs- und Suchergebnismodulen gerendert werden. Die verfügbaren Werte sind **In der Reihenfolge mit anderen Produkten anzeigen**, **Nicht vorrätige Produkte aus der Liste ausblenden** und **Nicht vorrätige Produkte am Ende der Liste anzeigen**. Um diese Einstellung zu verwenden, müssen Sie zunächst einige erforderliche Einstellungen in der Commerce-Zentrale konfigurieren. Weitere Informationen finden Sie unter [Produktauflistung mit Bestandserfassung](inventory-aware-product-listing.md).
 
     > [!IMPORTANT] 
     > Die Einstellung **Bestandseinstellungen für Produktlistenseiten** ist ab der Commerce-Version 10.0.20 verfügbar. Wenn Sie ein Update von einer älteren Version von Commerce durchführen, müssen Sie die Datei appsettings.json manuell aktualisieren. Anweisungen finden Sie unter [SDK- und Modulbibliotheks-Updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
-- **Bestandsbereiche** – Diese Einstellung definiert die Bestandbereiche, für die die Meldung vor Ort angezeigt wird. Er ist nur anwendbar, wenn entweder der **Insgesamt verfügbar** oder der Wert **Physisch verfügbar** ausgewählt für die Einstellung **Lagerbestand basierend auf**. Die verfügbaren Werte sind **Alle**, **Niedrig und vergriffen** und **Ausverkauft**.
+- **Bestandsbereiche** – Diese Einstellung definiert die Bestandbereichsnachrichten, für auf lokalen Modulen angezeigt werden. Er ist nur anwendbar, wenn entweder der **Insgesamt verfügbar** oder der Wert **Physisch verfügbar** ausgewählt für die Einstellung **Lagerbestand basierend auf**. Die verfügbaren Werte sind **Alle**, **Niedrig und vergriffen** und **Ausverkauft**.
 
     - Wenn **Alle** ausgewählt ist, werden Meldungen für alle Bestandsbereiche angezeigt, von Auf Lager (Meldung Verfügbar) bis Nicht vorrätig (Meldung Nicht vorrätig).
     - Wenn **tief und nicht an Lager** ausgewählt ist, werden Meldungen für alle Bestandsbereiche angezeigt, ausgenommen Auf Lager (Meldung Verfügbar).
