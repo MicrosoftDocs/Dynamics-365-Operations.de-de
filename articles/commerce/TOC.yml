@@ -734,6 +734,8 @@
                   href: enable-ADLS-environment.md
                 - name: Produktempfehlungen aktivieren
                   href: enable-product-recommendations.md
+                - name: Alternativen Dataflow einrichten
+                  href: set-up-alternate-data-flow.md
                 - name: Personalisierte Empfehlungen
                   items:
                     - name: Personalisierte Empfehlungen aktivieren
@@ -2319,7 +2321,7 @@
                 - name: Kostensteuerung
                   href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/commerce
                 - name: Ausgabenverwaltung
-                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2fcommerce%2ftoc.json
+                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=/dynamics365/commerce/toc.json
                 - name: Verfügbarer Lagerbestand
                   href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/commerce
                 - name: Rechnungsgenehmigungen
@@ -2327,11 +2329,11 @@
                 - name: Mein Team
                   href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/commerce
                 - name: Überblick über mobile Projektanwendungen
-                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2fcommerce%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=/dynamics365/commerce/toc.json
                 - name: Projektzeiteintrag
-                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=%2fdynamics365%2fcommerce%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=/dynamics365/commerce/toc.json
                 - name: Projekt-Arbeitszeitnachweis
-                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2fcommerce%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=/dynamics365/commerce/toc.json
                 - name: Bestellungsgenehmigung
                   href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?context=/dynamics365/context/commerce
                 - name: Aufträge

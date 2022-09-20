@@ -3578,6 +3578,8 @@
                           href: localizations/rus-use-inventory-profile-documents-queries.md
                     - name: Zollabfertigung
                       items:
+                        - name: Zollabfertigung einrichten
+                          href: localizations/rus-set-up-customs-clearance.md
                         - name: Arbeiten mit der Zollabfertigung
                           href: localizations/rus-work-with-customs-clearance.md
                 - name: Berichterstellung
@@ -4642,7 +4644,7 @@
                 - name: Kostensteuerung
                   href: cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: Ausgabenverwaltung
-                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2ffinance%2ftoc.json
+                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=/dynamics365/finance/toc.json
                 - name: Verfügbarer Lagerbestand
                   href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: Rechnungsgenehmigungen
@@ -4650,11 +4652,11 @@
                 - name: Mein Team
                   href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: Überblick über mobile Projektanwendungen
-                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2ffinance%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=/dynamics365/finance/toc.json
                 - name: Projektzeiteintrag
-                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=%2fdynamics365%2ffinance%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=/dynamics365/finance/toc.json
                 - name: Projekt-Arbeitszeitnachweis
-                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2ffinance%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=/dynamics365/finance/toc.json
                 - name: Bestellungsgenehmigung
                   href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: Aufträge
