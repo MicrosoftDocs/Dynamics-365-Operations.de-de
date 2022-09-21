@@ -2,7 +2,7 @@
 title: Aufgabenverwaltung
 description: In diesem Artikel werden die in Microsoft Dynamics 365 Human Resources verfügbaren Aufgabenverwaltungsfunktionen erläutert.
 author: twheeloc
-ms.date: 12/20/2021
+ms.date: 09/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,14 +12,14 @@ ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2021-29-11
+ms.search.validFrom: 2022-06-09
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c567f6d74e6ff87a72ff3b8663ca3a291dff3abb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 29b547ff4f55b572ab774e7e70949ec8cb53ef42
+ms.sourcegitcommit: 167f73a834629752c6b79c312d744e52df7f0927
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897863"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9445893"
 ---
 # <a name="task-management"></a>Aufgabenverwaltung
 
@@ -69,7 +69,13 @@ Auf allen drei Registerkarten können Personalassistenten und -Manager die folge
 
 Sie können Aufgaben einzeln erstellen und diese dann in mehreren Checklisten wiederverwenden. Um eine Aufgabe zu erstellen, wählen Sie auf der **Onboarding-Setup**-Seite auf der **Aufgaben**-Registerkarte **Neu** aus.
 
+Sie können eine erstellte Aufgabe mehreren Prüflisten zuweisen, indem Sie die Aufgabe auswählen und dann **Auf Prüflisten anwenden** im Menü auswählen.
+
 Alternativ können Sie Aufgaben direkt zu einer Checkliste hinzufügen. Um eine Aufgabe zu einer Checkliste hinzuzufügen, erstellen Sie auf der Seite **Onboarding-Setup** auf der **Checkliste**-Registerkarte entweder eine neue Checkliste, um die Aufgabe hinzuzufügen, oder fügen Sie die Aufgabe zu einer vorhandenen Checkliste hinzu.
+
+Um eine Aufgabe in der Bibliothek zu bearbeiten, wählen Sie **Bearbeiten** im Aufgabenbibliotheksmenü aus. Wenn die Aufgabe mit Prüflisten verknüpft ist, werden diese Prüflisten auf der **Aufgabe bearbeiten**-Seite angezeigt. Wenn Sie möchten, dass die Aufgaben in allen Prüflisten mit den Änderungen aktualisiert werden, wählen Sie diese Prüflisten im Bereich **Auf Prüflisten anwenden** aus.
+
+Um Aufgaben aus der Bibliothek zu löschen, wählen Sie die Option **Löschen**. Wenn eine Aufgabe mit einer Prüfliste verknüpft ist, wird diese Aktion die Aufgabe nicht aus dieser Prüfliste löschen. Die Aufgabe muss in einer separaten Aktion aus der Prüfliste entfernt werden.
 
 > [!NOTE]
 > Wenn Sie eine Aufgabe direkt zu einer Checkliste hinzufügen, können Sie sie nicht in anderen Checklisten wiederverwenden.
@@ -133,7 +139,15 @@ Komplexe Aufgaben erfordern möglicherweise mehrere Schritte, oder benötigen da
 
 ## <a name="setting-up-checklists"></a>Einrichten von Checklisten
 
-Eine Checkliste ist eine Gruppe von Aufgaben. Sie können beliebig viele Checklisten erstellen und dieselben Aufgaben mehreren Checklisten zuweisen. Wenn Sie eine Checkliste erstellen, geben Sie einen Besitzer und einen Kalender an.
+Eine Checkliste ist eine Gruppe von Aufgaben. Sie können beliebig viele Checklisten erstellen und dieselben Aufgaben mehreren Checklisten zuweisen.
+
+Um eine neue Aufgabe in einer Prüfliste anzulegen, wählen Sie **Neu** auf der **Aufgaben**-Menüleiste. Wenn Sie eine neue Aufgabe erstellen, können Sie diese der Aufgabenbibliothek hinzufügen, sodass sie von mehreren Prüflisten gemeinsam genutzt werden kann. Sie können die Aufgabe nur dann zur Bibliothek hinzufügen, wenn die **Aufgabe auf Bibliothek anwenden**-Option auf **Ja** eingestellt ist. Wenn Sie die Aufgabe zur Aufgabenbibliothek hinzufügen, können Sie sie auch gleichzeitig zu anderen Prüflisten hinzufügen, indem Sie diese Prüflisten im Abschnitt **Auf Prüflisten anwenden** auswählen. Wenn Sie die Aufgabe nicht zur Bibliothek hinzufügen, ist sie nur in der Prüfliste vorhanden, in der Sie sie erstellen.
+
+Um eine Aufgabe in der Prüfliste zu bearbeiten, wählen Sie **Bearbeiten** aus. Wenn die Aufgabe mit Prüflisten verknüpft ist, werden diese Prüflisten auf der **Aufgabe bearbeiten**-Seite angezeigt. Wenn Sie möchten, dass die Aufgaben in anderen Prüflisten mit den Änderungen aktualisiert werden, wählen Sie diese Prüflisten im Bereich **Auf Prüflisten anwenden** aus.
+
+Um Aufgaben aus der Prüfliste zu entfernen, wählen Sie **Entfernen**. Diese Aktion entfernt lediglich Aufgaben aus der Prüfliste. Sie löscht sie nicht aus der Aufgabenbibliothek. Um eine Aufgabe aus der Bibliothek zu löschen, gehen Sie zur Seite Aufgabenbibliothek und wählen Sie **Löschen**.
+
+Wenn Sie eine Checkliste erstellen, geben Sie einen Besitzer und einen Kalender an.
 
 Wenn das **Zuweisungstyp**-Feld für eine Aufgabe auf **Position**, **Manager** oder **Gruppe** festgelegt ist, aber aus dem Aufgabentyp keine konkrete Person abgeleitet werden kann, wird die Aufgabe dem Checklistenverantwortlichen zugewiesen. Hier sind einige Beispiele für Situationen, in denen dem Checklistenbesitzer Aufgaben zugewiesen werden:
 

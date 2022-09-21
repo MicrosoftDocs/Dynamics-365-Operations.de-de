@@ -2,7 +2,7 @@
 title: Peripheriegeräte
 description: In diesem Artikel werden einige Konzepte in Verbindung mit Commerce-Peripheriegeräten beschrieben.
 author: BrianShook
-ms.date: 03/01/2022
+ms.date: 09/08/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -12,12 +12,12 @@ ms.custom:
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 641b45390477c8c5e6239709f7c91887a403fbaf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b3113626b18ad7f074c808d7631d13b09071bef2
+ms.sourcegitcommit: f88273627ba105ede27f28fe67ccec2d7f78261c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880080"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9459993"
 ---
 # <a name="peripherals"></a>Peripheriegeräte
 
@@ -142,9 +142,12 @@ Modern POS unterstützt UWP MSR und Scanner. Wenn Modern POS für die Eingabe vo
 
 Zusätzliche Klassen von POS-Peripheriegeräten werden zu Windows hinzugefügt, wie z.B. Klassen für Kassenschubladen und Belegdrucker. Unterstützung für diese neuen Einheitenklassen für Modern POS ist aussteht.
 
+> [!NOTE] 
+> Bestimmte USB-Geräte reagieren möglicherweise nicht mehr oder sind unzuverlässig, wenn sie von einer Windows 10-Energieverwaltungsfunktion namens [Selektives USB-Suspend](/windows-hardware/drivers/usbcon/usb-selective-suspend) verwaltet werden. Wenn ein USB-Peripheriegerät nicht mehr reagiert, kann es erforderlich sein, die selektive Suspend-Funktion für dieses Gerät zu deaktivieren. Weitere Informationen finden Sie unter [Selektives Aussetzen aktivieren](/windows-hardware/drivers/usbcon/usb-selective-suspend#enabling-selective-suspend). 
+
 ### <a name="keyboard-wedge"></a>Tastaturweiche
 
-Tastaturweichengeräte senden Daten auf den Computer, als ob diese Daten auf der Tastatur eingegeben wurden. Somit erhält standardmäßig das Feld, das am POS aktiv ist, die Daten, die eingelesen werden. In einigen Fällen kann dieses Verhalten zum falschen Typ der Daten führen, die in das falsche Feld gescannt werden. Beispielsweise könnte ein Strichcode in ein Feld eingefügt werden, das sich möglicherweise auf Kreditkartendaten bezieht. In vielen Fällen legt die Logik am POS fest, ob die gescannten Daten ein Strichcode oder ein Kartendaten sind. Daher werden die Daten korrekt bearbeitet. Wenn Geräte als Tastaturweichengeräte eingerichtet sind, gibt es mehr Kontrolle darüber, wie die Daten aus diesen Geräten genutzt werden können, da mehr zum Gerät "bekannt" ist. Beispielsweise werden Daten von einem Strichcodescanner automatisch als Strichcode erkannt, und der entsprechende Datensatz in der Datenbank ist einfach und schneller als, wenn eine generische Suche nach einer Zeichenfolge verwendet wurden, z.B. im Falle der Tastaturweichen.
+Tastaturweichengeräte senden Daten auf den Computer, als ob diese Daten auf der Tastatur eingegeben wurden. Somit erhält standardmäßig das Feld, das am POS aktiv ist, die Daten, die eingelesen werden. In einigen Fällen kann dieses Verhalten zum falschen Typ der Daten führen, die in das falsche Feld gescannt werden. Beispielsweise könnte ein Strichcode in ein Feld eingefügt werden, das sich möglicherweise auf Kreditkartendaten bezieht. In vielen Fällen legt die Logik am POS fest, ob die gescannten Daten ein Strichcode oder ein Kartendaten sind. Daher werden die Daten korrekt bearbeitet. Wenn Geräte jedoch als OPOS anstelle von Tastaturweichengeräten eingerichtet werden, gibt es mehr Kontrolle darüber, wie die Daten von diesen Geräten verwendet werden können, da mehr über das Gerät „bekannt“ ist, von dem die Daten stammen. Beispielsweise werden Daten von einem Strichcodescanner automatisch als Strichcode erkannt, und der entsprechende Datensatz in der Datenbank ist einfach und schneller als, wenn eine generische Suche nach einer Zeichenfolge verwendet wurden, z.B. im Falle der Tastaturweichen.
 
 > [!NOTE]
 > Wenn am POS Keyboard-Wedge-Scanner verwendet werden, müssen sie so programmiert sein, dass sie einen Wagenrücklauf oder ein **Eingeben**-Ereignis nach dem zuletzt gescannten Zeichen senden. Wenn diese Konfiguration nicht vorgenommen wird, funktionieren Keyboard-Wedge-Scanner nicht ordnungsgemäß. Weitere Informationen zum Anfügen des Wagenrücklaufereignisses finden Sie in der Dokumentation Ihres Geräteherstellers.  

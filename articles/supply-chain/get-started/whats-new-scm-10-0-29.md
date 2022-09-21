@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: d95cd9b55f473bed2e3fe69e63837040385f03ac
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 316650de19d3275f2c60c79c10d6ac8a8c79e1aa
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334744"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427873"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10029-october-2022"></a>Vorschauversion von Dynamics 365 Supply Chain Management 10.0.29 (Oktober 2022)
 
@@ -205,7 +205,7 @@ In der Tabelle sind auch Funktionen aufgeführt, die zuvor in der öffentlichen 
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformupdates für Apps für Finanzen und Betrieb
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.29 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattform-Updates für Version 10.0.29 der Finanz- und Betriebs-Apps (Juni 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-29.md). <!--KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.29 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattform-Updates für Version 10.0.29 der Apps für Finanzen und Betrieb (Oktober 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-29.md).
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 

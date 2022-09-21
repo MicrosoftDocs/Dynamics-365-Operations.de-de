@@ -2,7 +2,7 @@
 title: Übersicht über die Steuerberechnung
 description: In diesem Artikel werden der Gesamtumfang und die Funktionen der Steuerberechnung erläutert.
 author: EricWangChen
-ms.date: 03/02/2022
+ms.date: 09/08/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ms.search.form: TaxIntegrationTaxServiceParameters
-ms.openlocfilehash: 2765b922bcc58837c32973b7ca96e0d63eb8b9d6
-ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
+ms.openlocfilehash: a193db82b2b079c1e10fbfb6bfde7aa43b18bc4a
+ms.sourcegitcommit: dbb997f252377b8884674edd95e66caf8d817816
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2022
-ms.locfileid: "9295990"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "9465165"
 ---
 # <a name="tax-calculation-overview"></a>Übersicht über die Steuerberechnung
 
@@ -74,18 +74,10 @@ Wir empfehlen Ihnen, Ihre Steuerberechnungskonfiguration mit der Version zu impo
 
 | Finance‑ oder Supply Chain Management-Version | Steuerkonfigurationsversion               |
 | --------------- | --------------------------------------- |
-| 10.0.18         | Steuerkonfiguration - Europa 30.12.82     |
-| 10.0.19         | Steuerberechnungs-Konfiguration 36.38.193 |
-| 10.0.20         | Steuerberechnungs-Konfiguration 40.43.208 |
-| 10.0.21         | Steuerberechnungs-Konfiguration 40.48.215 |
-| 10.0.22         | Steuerberechnungs-Konfiguration 40.48.215 |
-| 10.0.23         | Steuerberechnungs-Konfiguration 40.50.221 |
-| 10.0.24         | Steuerberechnungs-Konfiguration 40.50.225 |
-| 10.0.25         | Steuerberechnungs-Konfiguration 40.50.225 |
-| 10.0.26         | Steuerberechnungs-Konfiguration 40.54.234 |
-| 10.0.27         | Steuerberechnungs-Konfiguration 40.54.234 |
-| 10.0.28         | Steuerberechnungs-Konfiguration 40.54.234 |
+| 10.0.30         | Steuerberechnungs-Konfiguration 40.55.239 |
 | 10.0.29         | Steuerberechnungs-Konfiguration 40.55.236 |
+| 10.0.28         | Steuerberechnungs-Konfiguration 40.54.234 |
+| 10.0.27         | Steuerberechnungs-Konfiguration 40.54.234 |
 
 
 ## <a name="data-flow"></a>Datenfluss
@@ -104,120 +96,27 @@ Hier ist ein Überblick über den Datenflussprozess für die Steuerberechnung.
 
 Die Steuerberechnung kann durch Transaktionen aktiviert werden. 
 
-Die folgenden Transaktionen werden in Version 10.0.21 unterstützt: 
+Die folgende Tabelle listet die Transaktionen auf, die in der entsprechenden Version unterstützt werden.
 
-- Verk.
-
-    - Verkaufsangebot
-    - Auftrag
-    - Bestätigung
-    - Kommissionierliste
-    - Lieferschein
-    - Verkaufsrechnung
-    - Gutschrift
-    - Rücklieferung
-    - Sonstige Kopfgebühren
-    - Sonstige Positionsbelastungen
-
-- Kaufen
-
-    - Bestellung
-    - Bestätigung
-    - Zugangsliste
-    - Produktzugang
-    - Einkaufsrechnung
-    - Sonstige Kopfgebühren
-    - Sonstige Positionsbelastungen
-    - Gutschrift
-    - Rücklieferung
-    - Bestellanforderung
-    - Sonstige Belastung pro Bestellanforderungsposition
-    - Angebotsanforderung
-    - Sonstige Kopfgebühr für Angebotsanforderung
-    - Sonstige Belastung pro Angebotsanforderungsposition
-
-- Bestand
-
-    - Umlagerungsauftrag – versenden
-    - Umlagerungsauftrag – empfangen
-
-Die folgenden Transaktionen werden in Version 10.0.23 unterstützt: 
-
-- Freitextrechnung
-
-Die folgenden Transaktionen werden in Version 10.0.26 unterstützt: 
-
-- Allgemeine Erfassungen
-- Kreditorenrechnungserfassung
-
-Die folgenden Transaktionen werden in Version 10.0.28 unterstützt: 
-
-- Kreditorzahlungserfassung
-- Debitorzahlungserfassung
-
-Die folgenden Transaktionen werden in Version 10.0.29 unterstützt: 
-
-
-- Periodische Erfassungen
+| Version | Transaktionen |
+|---------|--------------|
+| 10.0.29 | Periodische Erfassungen |
+| 10.0.28 | Kreditorzahlungserfassung<br> Debitorzahlungserfassung | 
+| 10.0.26 | Allgemeine Erfassungen<br> Kreditorenrechnungserfassung |
+| 10.0.23 | Freitextrechnung |
+| 10.0.21| Vertrieb<br><ul><li>Verkaufsangebot</li><li>Auftrag</li><li>Bestätigung</li><li>Kommissionierliste</li><li>Lieferschein</li><li>Verkaufsrechnung</li><li>Gutschrift</li><li>Rücklieferung</li><li>Sonstige Kopfgebühren</li><li>Sonstige Positionsbelastungen</li></ul>Kaufen<br><ul><li>Bestellung</li><li>Bestätigung</li><li>Zugangsliste</li><li>Produktzugang</li><li>Einkaufsrechnung</li><li>Sonstige Kopfgebühren</li><li>Sonstige Positionsbelastungen</li><li>Gutschrift</li><li>Rücklieferung</li><li>Bestellanforderung</li><li>Sonstige Belastung pro Bestellanforderungsposition</li><li>Angebotsanforderung</li><li>Sonstige Kopfgebühr für Angebotsanforderung</li><li>Sonstige Belastung pro Angebotsanforderungsposition</li></ul>Bestand<ul><li>Umlagerungsauftrag – versenden</li><li>Umlagerungsauftrag – empfangen</li></ul>|
 
 ## <a name="supported-countriesregions"></a>Unterstützte Länder/Regionen
 
-Die Steuerberechnung kann mit den unterstützten Lokalisierungsfunktionen in den folgenden Ländern/Regionen für die Hauptadresse einer juristischen Person ausgeführt werden: 
+Die Steuerberechnung kann mit unterstützten Lokalisierungsfunktionen ausgeführt werden. In der folgenden Tabelle sind die Länder/Regionen aufgeführt, in denen sich die Hauptadresse einer juristischen Person befindet.
 
-In Version 10.0.21 unterstützt:
-
-- Österreich
-- Belgien
-- Dänemark
-- Estland
-- Finnland
-- Frankreich
-- Deutschland
-- Ungarn
-- Island
-- Irland
-- Italien
-- Lettland
-- Litauen
-- Niederlande
-- Norwegen
-- Polen
-- Schweden
-- Schweiz
-- Vereinigtes Königreich
-- USA
-
-In Version 10.0.22 unterstützt:
-
-- Australien
-- Bahrain
-- Kanada
-- Ägypten
-- Hongkong (SAR)
-- Kuwait
-- Neuseeland
-- Oman
-- Katar
-- Saudi-Arabisch
-- Südafrika
-- Vereinigte Arabische Emirate
-
-In Version 10.0.23 unterstützt:
-
-- Thailand
-- Japan
-- Malaysia
-- Singapur
-
-In Version 10.0.24 unterstützt:
-
-- Mexiko
-
-In Version 10.0.26 unterstützt:
-
-- China
-- Tschechische Republik
-- Spanien
+| Version | Land/Region |
+|---------|----------------|
+| 10.0.26 | - China <br>- Tschechische Republik<br>- Spanien |
+| 10.0.24 | Mexiko |
+| 10.0.23 | - Thailand <br>- Japan <br>- Malaysia <br>- Singapur |
+| 10.0.22 | - Australien<br>- Bahrain <br>- Kanada<br>- Ägypten <br>- Hongkong SAR <br>- Kuwait <br>- Neuseeland <br>- Oman <br>- Katar <br>- Saudi-Arabisch <br>- Südafrika <br>- Vereinigte Arabische Emirate |
+| 10.0.21 | - Österreich <br>- Belgien <br>- Dänemark <br>- Estland <br>- Finnland <br>- Frankreich <br>- Deutschland <br>- Ungarn <br>- Island <br>- Irland <br>- Italien <br>- Lettland <br>- Litauen <br>- Niederlande <br>- Norwegen <br>- Polen <br>- Schweden <br>- Schweiz <br>- Vereinigtes Königreich <br>- USA |
 
 Für alle Länder/Regionen, die nicht von Microsoft lokalisiert wurden, kann die Steuerberechnung auch aktiviert und mit anderen globalen Funktionen ausgeführt werden.
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c13ecca9523707ef3df5fdb97dc4cbd79478258d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 65467fd9525ae8fb5a65a9316b7307f611fa6e42
+ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850669"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9475611"
 ---
 # <a name="intercompany-planning"></a>Intercompany-Planung
 
@@ -45,8 +45,8 @@ Wenn Sie die Produktprogrammplanung von einem Masterplan aus durchführen, der g
 
 Um die Intercompany-Planung zu verwenden, müssen Sie Ihr System wie folgt vorbereiten:
 
-1. Die relevanten Produkte müssen in allen relevanten Firmen freigegeben sein. Weitere Informationen finden Sie unter [Konfigurieren und verwenden Sie Intercompany-Handel in Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) auf Microsoft Learn.
-1. Der nachgelagerte Bedarf muss durch Einkäufe bei einem Lieferanten gedeckt werden, der eine Intercompany-Beziehung zum vorgelagerten Unternehmen und entsprechende Standard-Bestandsdimensionen (Standort und Lagerort) beim Kunden hat. Weitere Informationen finden Sie unter [Konfigurieren und verwenden Sie Intercompany-Handel in Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) auf Microsoft Learn.
+1. Die relevanten Produkte müssen in allen relevanten Firmen freigegeben sein. Weitere Informationen finden Sie unter [Konfigurieren und Verwenden von Intercompany-Handel in Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/).
+1. Der nachgelagerte Bedarf muss durch Einkäufe bei einem Lieferanten gedeckt werden, der eine Intercompany-Beziehung zum vorgelagerten Unternehmen und entsprechende Standard-Bestandsdimensionen (Standort und Lagerort) beim Kunden hat. Weitere Informationen finden Sie unter [Konfigurieren und Verwenden von Intercompany-Handel in Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/).
 1. Der Masterplan im vorgelagerten Unternehmen muss den geplanten nachgelagerten Bedarf enthalten, und das entsprechende Unternehmen und der Masterplan müssen in den nachgelagerten Plänen angegeben sein.
 
 ## <a name="include-planned-downstream-demand"></a>Geplanten Downstream-Bedarf einschließen
@@ -85,6 +85,5 @@ Für dieses Beispiel wird eine geplante Einkaufsbestellung in der USMF-Firma ers
 Die folgende Abbildung zeigt, wie dieses Beispiel auf der Seite **Multilevel Bedarfsverursacher** für den geplanten Produktionsauftrag erscheinen könnte.
 
 ![Intercompany-Beispiel, an dem drei Firmen beteiligt sind.](media/IntercompanyPlanning2.png)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

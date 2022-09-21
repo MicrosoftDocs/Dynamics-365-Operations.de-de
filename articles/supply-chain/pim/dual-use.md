@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 02b154b9ea849c6b905d76edb256c4106b254acd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5147a837be91aab519c373e624acc036f9293641
+ms.sourcegitcommit: 555de844b8ba02fe095c28a2d447fc7c441ae549
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878902"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460547"
 ---
 # <a name="dual-use-goods"></a>Waren zur doppelten Verwendung
 
@@ -85,7 +85,14 @@ Führen Sie die folgenden Schritte aus, um ein Produkt als Ware zur doppelten Ve
 1. Auf dem Inforegister **Außenhandel** legen Sie die Option **Produkte zur doppelten Verwendung** auf **Ja** fest, um das aktuelle Produkt als Ware zur doppelten Verwendung zu identifizieren.
 1. Legen Sie das Feld **Code für doppelte Verwendung** auf den Code fest, der für das aktuelle Produkt gilt. (Sie haben diesen Code auf der Seite **Kategorien der doppelten Verwendung** definiert.)
 
-Dieses Setup wird überprüft, wenn Sie einen Auftrag erstellen.
+> [!NOTE]
+>
+> Das System führt bei der Generierung einer Verkaufsbestätigung folgende Dual-Use-Prüfungen durch:
+>
+> 1. Enthält der Auftrag Güter mit doppeltem Verwendungszweck?
+> 1. Wenn ja, verlangt das Bestimmungsland Dual-Use-Zertifikate?
+> 1. Wenn ja, gibt es für jedes Gut mit doppeltem Verwendungszweck Zertifikate für das Bestimmungsland, und sind diese Zertifikate für die bestätigten Versanddaten gültig?
+> 1. Wenn die Antworten auf die Fragen 1 und 2 „Ja“ und die Antwort auf Frage 3 „Nein“ lauten, zeigt das System eine Warnung an, um den Benutzer darüber zu informieren, dass Dual-Use-Zertifikate für ein oder mehrere Dual-Use-Güter in der fehlen Verkaufsauftrag. Der Benutzer sollte wahrscheinlich die erforderlichen Zertifikate erhalten und es erneut versuchen, könnte aber stattdessen die Warnung außer Kraft setzen und mit der Verkaufsbestätigung fortfahren, wenn er dies wünscht.
 
 ## <a name="set-up-dual-use-certificates"></a>Zertifikate für doppelte Verwendung einrichten
 

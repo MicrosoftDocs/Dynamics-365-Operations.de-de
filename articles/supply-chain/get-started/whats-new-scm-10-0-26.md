@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: dd98b22a2dfcd8cad62bdef2d31ac2880b3422f8
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: db8799aba8095c8144d878c96590e8d90276726b
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334714"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428199"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.26 (Mai 2022)
 
@@ -36,7 +36,7 @@ Die folgende Tabelle listet die Funktionen auf, die in dieser Version enthalten 
 | Bestand und Logistik | [Inventory Visibility Abfrage des Lagerbestands zur Unterstützung von Elementen der erweiterten Lagerortverwaltung](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [Inventory Visibility-Unterstützung für WMS-Artikel](../inventory/inventory-visibility-whs-support.md) | Funktionsverwaltung:<br>*Lagerortartikel in Bestandsanzeige aktivieren* |
 | Bestand und Logistik | [Für das Bestandssichtbarkeits-Add-In verfügbar](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [Inventory Visibility - Lagerbestände ändern und zusagen](../inventory/inventory-visibility-available-to-promise.md) | Aktiviert durch Servicekonfiguration |
 | Fertigung | [Elemente mit Artikelgewicht für die Produktionsausführungsoberfläche](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte](../production-control/production-floor-execution-use.md) | Funktionsverwaltung:<br>*Bericht über Artikel mit Artikelgewicht über die Produktionsausführungsoberfläche* |
-| Fertigung | Registerkarte Meine Einzelvorgänge auf der Produktionsausführungsoberfläche <!-- KFM: Add link to release plan when available --> | [Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte](../production-control/production-floor-execution-use.md) | Funktionsverwaltung:<br>*Registerkarte Meine Einzelvorgänge auf der Produktionsausführungsoberfläche* |
+| Fertigung | Registerkarte Meine Einzelvorgänge auf der Produktionsausführungsoberfläche | [Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte](../production-control/production-floor-execution-use.md) | Funktionsverwaltung:<br>*Registerkarte Meine Einzelvorgänge auf der Produktionsausführungsoberfläche* |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Funktionsverbesserungen In dieser Version enthalten
 

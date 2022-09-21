@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: dd72332abefd31fd391ff66931a5abae0efb08de
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: 57ee6206da926d0dbf62f562197538bfcdd41148
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186664"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428143"
 ---
 # <a name="buffer-profile-and-levels"></a>Pufferprofil und Ebenen
 
@@ -77,6 +77,14 @@ Wenn heute der Morgen des 11. Juni ist, beträgt die ADU für die vorangegangene
 
 - **ADU (Vergangenheit)** = (29 + 11 + 23) ÷ 3 = 21
 
+Die folgenden Transaktionen werden für die Berechnung der durchschnittlichen täglichen Nutzung (Vergangenheit) berücksichtigt:
+
+- Transaktionen, die die Menge des Artikels verringern (in der `inventtrans`-Tabelle, bei der die Menge kleiner als Null ist)
+- Transaktionen mit einem Status von *Auf Bestellung*, *Reserviert bestellt*, *Reserviert physisch*, *Entnommen*, *Abgezogen* oder *Verkauft*
+- Transaktionen, die innerhalb des ausgewählten Rückwärtszeitraums datiert wurden (die durchschnittliche tägliche Nutzung des vergangenen Zeitraums)
+- Andere Transaktionen als Lagerarbeit, Quarantäne, Verkaufsangebote oder Kontoauszüge (`WHSWork`, `WHSQuarantine`, `SalesQuotation` oder `Statement`)
+- Andere Transaktionen als Umbuchungsjournale, die innerhalb derselben Deckungsdimension liegen
+
 ### <a name="average-daily-usage-forward"></a>Durchschnittlicher täglicher Verbrauch (vorwärts)
 
 Bei einem neuen Produkt haben Sie möglicherweise keine Daten zur Nutzung in der Vergangenheit. Verwenden Sie daher stattdessen die voraussichtliche ADU für die Zukunft (z.B. auf der Grundlage des geplanten Bedarfs). Die folgende Abbildung zeigt, wie dieser Ansatz funktioniert, wenn die Berechnung drei Tage in die Zukunft reicht (einschließlich heute).
@@ -86,6 +94,11 @@ Bei einem neuen Produkt haben Sie möglicherweise keine Daten zur Nutzung in der
 Wenn in der vorherigen Abbildung heute der Morgen des 11. Juni ist, beträgt die ADU für die nächsten drei Tage (11., 12. und 13. Juni) 21,66.
 
 - **ADU (vorwärts)** = (18 + 18 + 29) ÷ 3 = 21,66
+
+Die folgenden Transaktionen werden für die Berechnung der durchschnittlichen täglichen Nutzung (vorwärts) berücksichtigt:
+
+- Prognosetransaktionen für den Artikel, bei dem die Prognose im Hauptplan ausgewählt ist
+- Transaktionen, die innerhalb des ausgewählten Vorwärtszeitraums datiert wurden (die durchschnittliche tägliche Nutzung des Vorwärtszeitraums)
 
 ### <a name="average-daily-usage-blended"></a>Durchschnittlicher täglicher Verbrauch (gemischt)
 

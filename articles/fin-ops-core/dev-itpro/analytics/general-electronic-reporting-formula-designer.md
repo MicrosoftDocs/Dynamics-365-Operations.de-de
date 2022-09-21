@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
-ms.openlocfilehash: 3620fa886fd4b609a0f1f08b2338ab725065efe7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 283c882300ece460c18ffebe572238e7629f8dee
+ms.sourcegitcommit: a1d14836b40cfc556f045c6a0d2b4cc71064a6af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287927"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9476800"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner in der elektronischen Berichterstellung (EB)
 
@@ -137,7 +137,29 @@ Die folgende Abbildung zeigt Ausdrücke dieses Typs. (Version 11.12.11 der Forma
 > 
 > Basierend auf dieser Einstellung, die für jede Debitorenzahlung generiert wird, enthält das **Ustrd** XML-Element entweder den Text von Verwendungszwecken oder, wenn dieser Text leer ist, eine durch Kommata getrennte Liste mit Rechnungsnummern, die zur Begleichung dieser Zahlung verwendet werden.
 
-## <a name="validation-of-configured-formulas"></a><a name="TestFormula"></a>Validierung von konfigurierten Formeln
+## <a name="assistance-in-formulas-writing"></a>Unterstützung beim Schreiben von Formeln
+
+### <a name="data-sources-navigator"></a>Datenquellen-Navigator
+
+Sie können eine Formel bearbeiten, die ein Element einer strukturierten Datenquelle darstellt. Wenn Sie Ihre ER-Parameter so konfiguriert haben, dass sie den Pfad zu einem Element einer strukturierten Datenquelle als [relativen Pfad](relative-path-data-bindings-er-models-format.md) darstellen, wird das „at“ (@)-Zeichen in der Formel [gezeigt](er-formula-language.md#relative-path) anstelle des verbleibenden Teils des absoluten Pfads der hierarchischen Baumstruktur, der verwendet wird. Dieser verbleibende Teil des absoluten Pfads zeigt auf ein übergeordnetes Element des bearbeitbaren. In Finanzversion **10.0.30 und höher** können Sie auf der **Formel-Designer**-Seite im **Datenquellen** Bereich die **Gehe zu @**-Option auswählen, um den Cursor des Datenquellenbaums auf ein Element zu positionieren, das das übergeordnete Element des bearbeitbaren Elements ist. Die Struktur aller eingeklappten aufsteigenden Elemente wird bei Bedarf automatisch und rekursiv erweitert. Diese Erweiterung kann Ihnen helfen, das Basiselement des bearbeitbaren Elements schnell zu visualisieren, Geschwister des bearbeitbaren Elements in der Datenquellenstruktur zu beobachten und sie bei Bedarf in der bearbeitbaren Formel zu verwenden.
+
+![Verwenden Sie die Option „Gehe zu @“, um den Cursor der Datenquellenstruktur auf ein Element zu positionieren, das das übergeordnete Element des bearbeitbaren Elements auf der Seite „Formel-Designer“ ist.](./media/er_formula-designer-data-sources-navigator.gif)
+
+### <a name="data-sources-picker"></a>Auswahl der Datenquellen
+
+Wählen Sie auf der **Formel-Designer**-Seite im Bereich **Datenquellen** links ein Element einer Datenquelle aus, das Sie in die bearbeitbare Formel einfügen möchten. Wählen Sie dann **Datenquelle hinzufügen** aus. Beachten Sie, dass das ausgewählte Element zum Text der bearbeitbaren Formel hinzugefügt wird.
+
+> [!TIP]
+> Wenn Sie die **Datenquelle hinzufügen**-Option im Standard-Formeleditor verwenden, wird das ausgewählte Element immer am Ende des Formeltexts hinzugefügt. Wenn Sie dasselbe im [Erweiterten Formeleditor](er-advanced-formula-editor.md) tun, wird das ausgewählte Element an der aktuellen Cursorposition in den Formeltext eingefügt.
+
+### <a name="built-in-functions-picker"></a>Eingebaute Funktionsauswahl
+
+Wählen Sie auf der **Formel-Designer**-Seite im Bereich **Funktionen** rechts eine Integrierte ER-Funktion aus, die Sie in die bearbeitbare Formel einfügen möchten. Wählen Sie dann **Funktion hinzufügen**. Beachten Sie, dass die ausgewählte Funktion zum Text der bearbeitbaren Formel hinzugefügt wird.
+
+> [!TIP]
+> Wenn Sie die **Funktion hinzufügen**-Option im Standard-Formeleditor verwenden, wird die ausgewählte Funktion immer am Ende des Formeltexts hinzugefügt. Wenn Sie dasselbe im [Erweiterten Formeleditor](er-advanced-formula-editor.md) tun, wird die ausgewählte Funktion an der aktuellen Cursorposition in den Formeltext eingefügt.
+
+### <a name="validation-of-configured-formulas"></a><a name="TestFormula"></a>Validierung von konfigurierten Formeln
 
 Wählen Sie auf der Seite **Formel-Designer** die Option **Test** aus, um zu überprüfen, wie die konfigurierte Formel funktioniert.
 

@@ -2,7 +2,7 @@
 title: Produktempfehlungen aktivieren
 description: Dieser Artikel erläutert, wie Produktempfehlungen erstellt werden, die auf dem maschinellen Lernverfahren mit künstlicher Intelligenz (AI-ML) basieren, welches Microsoft Dynamics 365 Commerce-Kunden zur Verfügung steht.
 author: bebeale
-ms.date: 08/31/2021
+ms.date: 09/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3dceec9e8e994a81b43cd5d1bd13970f2d246f40
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fc1b43fa70e6652d38b1141e2d93cf323f70a756
+ms.sourcegitcommit: f88273627ba105ede27f28fe67ccec2d7f78261c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892070"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460020"
 ---
 # <a name="enable-product-recommendations"></a>Produktempfehlungen aktivieren
 
@@ -36,12 +36,19 @@ Dieser Artikel erläutert, wie Produktempfehlungen erstellt werden, die auf dem 
 1. Bestätigen Sie, das die Azure AD Identitätskonfiguration einen Eintrag für Empfehlungen enthält. Weitere Informationen zur Durchführung dieser Aktion finden Sie unten.
 1. Stellen Sie sicher, dass die tägliche Aktualisierung des Entitätsspeichers auf Azure Data Lake Storage Gen2 geplant wurde Weitere Informationen finden Sie unter [Stellen Sie sicher, dass die Aktualisierung des Entitätsspeichers automatisiert wurde](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 1. Aktivieren Sie RetailSale-Messungen für den Entitätsspeicher. Weitere Informationen zum Einrichten dieses Prozesses finden Sie unter [Mit Maßnahmen arbeiten](/dynamics365/ai/customer-insights/pm-measures).
+1. Stellen Sie sicher, dass Ihre Umgebung die Servier- und Kochregionen in den derzeit unterstützten Regionen wie folgt konfiguriert hat:
+
+    - **Unterstützte Kochregionen:** EU/US/CA/AU.
+    - **Unterstützte Servierregionen:** US/CA/AU. Wenn die Lieferregion nicht mit einer der vorhandenen unterstützten Regionen übereinstimmt, wählt der Empfehlungsdienst die nächstgelegene unterstützte Lieferregion aus.
 
 Nachdem Sie die oben genannten Schritte ausgeführt haben, können Sie Empfehlungen aktivieren.
 
+> [!NOTE]
+> Es gibt ein bekanntes Problem, bei dem Empfehlungen nicht angezeigt werden, nachdem die folgenden Schritte ausgeführt wurden. Dieses Problem wird durch Datenflussprobleme in der Umgebung verursacht. Wenn Ihre Umgebung keine Empfehlungsergebnisse anzeigt, konfigurieren Sie die alternativen Daten für den Empfehlungsdienst, indem Sie die Schritte in [Richten Sie einen alternativen Dataflow für Empfehlungen ein](set-up-alternate-data-flow.md) ausführen. Sie müssen über Azure-Administratorberechtigungen verfügen, um diese Schritte ausführen zu können. Wenn Sie Hilfe benötigen, wenden Sie sich an Ihren FastTrack-Vertreter.
+
 ## <a name="azure-ad-identity-configuration"></a>Azure AD Identitätskonfiguration
 
-Dieser Schritt ist nur für Kunden erforderlich, die eine Infrastructure-as-a-Service-Konfiguration (IaaS) ausführen. Die Azure AD-Identitätskonfiguration erfolgt automatisch für Kunden, die Azure Service Fabric verwenden. Es wird jedoch empfohlen, zu überprüfen, ob die Einstellung wie erwartet konfiguriert ist.
+Dieser Schritt ist nur für Kunden erforderlich, die eine Infrastructure-as-a-Service-Konfiguration (IaaS) betreiben. Die Azure AD-Identitätskonfiguration erfolgt automatisch für Kunden, die Azure Service Fabric verwenden. Es wird jedoch empfohlen, zu überprüfen, ob die Einstellung wie erwartet konfiguriert ist.
 
 ### <a name="setup"></a>Einrichtung
 
@@ -94,9 +101,11 @@ Weitere Informationen zum Empfangen von personalisierten Empfehlungen finden Sie
 
 [Aktivieren von Azure Data Lake Storage in einer Dynamics 365 Commerce Umgebung](enable-adls-environment.md)
 
+[Richten Sie einen alternativen Dataflow für Empfehlungen ein](set-up-alternate-data-flow.md)
+
 [Personalisierte Empfehlungen aktivieren](personalized-recommendations.md)
 
-[Die Empfehlungen „Produkte mit ähnlichem Aussehen kaufen“ aktivieren](shop-similar-looks.md)
+[Link „Ähnliche Outfits kaufen“ aktivieren](shop-similar-looks.md)
 
 [Personalisierte Empfehlungen kündigen](personalization-gdpr.md)
 
@@ -111,6 +120,7 @@ Weitere Informationen zum Empfangen von personalisierten Empfehlungen finden Sie
 [Empfehlungen mit Demodaten erstellen](product-recommendations-demo-data.md)
 
 [Produktempfehlungs-FAQs](faq-recommendations.md)
+
 
 
 

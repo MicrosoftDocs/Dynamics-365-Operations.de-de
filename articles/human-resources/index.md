@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: afe438767efa3082c49cc56f58c8bab9206e46e0
-ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
+ms.openlocfilehash: ad5f843e3bafa54a961908d9ebe5ab64e619e1bc
+ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2022
-ms.locfileid: "9228567"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9475521"
 ---
 # <a name="human-resources-home-page"></a>Human Ressources-Homepage
 
@@ -40,7 +40,7 @@ Indem Sie einen Funktionsbereich auswählen, erhalten Sie weitere Informationen 
 - [Vergütungsmanagement](hr-compensation-overview.md)
 - [Mitarbeiterentwicklung](hr-develop-performance-management-overview.md)
 - [Weiterbildung](hr-learning-courses.md)
-- [Workflowsystem]( ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json)
+- [Workflowsystem](../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json)
 
 Die Personalabteilung verbindet Mitarbeiter- und Betriebsdaten, um die Personalkosten zu optimieren und sich um Ihre Mitarbeiter zu kümmern.
 
@@ -51,7 +51,8 @@ Informationen zu Dynamics 365 Finance finden Sie unter [Startseite von Finance](
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 ### <a name="elearning-courses"></a>E-Learning-Schulungen
-Informationen zu Onlinetrainings und Schulungen finden Sie bei [Microsoft Learn unter Dynamics 365 Human Resources](/learn/browse/?products=dynamics-human-resources&expanded=dynamics-365).
+
+Informationen zu Onlinetrainings und Schulungen finden Sie unter [Dynamics 365 Human Resources](/learn/browse/?products=dynamics-human-resources&expanded=dynamics-365).
 
 ### <a name="videos"></a>Videos
 

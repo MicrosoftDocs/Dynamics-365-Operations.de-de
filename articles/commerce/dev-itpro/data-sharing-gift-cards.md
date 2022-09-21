@@ -11,17 +11,16 @@ ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2022-06-20
-ms.openlocfilehash: b56890b546c3cd74b75cf447e62495733ea8d288
-ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
+ms.openlocfilehash: bc0df6c4aac72907e8523069e3f1ae100780dc3c
+ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "9387067"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9473930"
 ---
 # <a name="cross-company-data-sharing-for-gift-cards"></a>Unternehmensübergreifende Datenfreigabe für Geschenkkarten
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Dieser Artikel beschreibt, wie Sie Microsoft Dynamics 365 Commerce so konfigurieren, dass es die Funktionalität zur Datenfreigabe von Dynamics 365 Finance nutzt, um Geschenkkartendaten zu synchronisieren. Die Funktionalität zur Datensatzfreigabe kann dann genutzt werden, um Daten unternehmensübergreifend zwischen zwei Datenbereichen zu teilen. Auf diese Weise kann die interne Commerce-Geschenktabelle Daten zwischen zwei Unternehmensentitäten austauschen. Weitere Informationen zur unternehmensübergreifenden Datenfreigabe in Dynamics 365 Finance finden Sie unter [Unternehmensübergreifende Datenfreigabe](/dynamics365/fin-ops-core/dev-itpro/sysadmin/cross-company-data-sharing).
 

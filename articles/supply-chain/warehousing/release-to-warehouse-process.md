@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: c3280b2e39d7af5ca99cad703cad6ecc7b307bff
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: caa38c4ed1c7fb8cf1ead3ba6534f8405a5ff57f
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893177"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428035"
 ---
 # <a name="release-to-warehouse"></a>Für Lagerort freigeben
 
@@ -34,7 +34,7 @@ Eine *Ladung* ist eine Gruppe von Auftrags- oder Umlagerungsauftragspositionen, 
 
 Lagerhaus-*Arbeit* ist jeder Lagervorgang, der von einem Lagerarbeiter ausgeführt wird. In der Regel bestehen Lagerortarbeitsvorgänge aus mindestens zwei aufeinanderfolgenden Aktionen: Ein Lagerarbeiter entnimmt verfügbaren Lagerbestand an einem Lagerplatz und legt ihn anschließend an einem anderen Lagerplatz ab.
 
-Wenn Aufträge an das Lager freigegeben werden, erstellt das System *Ladepositionen* und gruppiert sie in Sendungen. Der Sendungskonsolidierungsprozess ermöglicht eine automatisierte Sendungskonsolidierung während der Freigabe an den Lagerprozesses. Weitere Informationen finden Sie unter [Richtlinien für die Lieferungskonsolidierung](about-shipment-consolidation-policies.md).
+Wenn Aufträge an das Lager freigegeben werden, erstellt das System *Ladepositionen* und gruppiert sie in Sendungen. Der Sendungskonsolidierungsprozess ermöglicht eine automatisierte Sendungskonsolidierung während der Freigabe an den Lagerprozesses. Weitere Informationen finden Sie unter [Übersicht über Richtlinien für die Lieferungskonsolidierung](about-shipment-consolidation-policies.md).
 
 Das System verwendet *Wellen*, um Kommissionierarbeiten und Ladungen für den Versand zu erstellen. Eine *Wellenvorlage* muss für den Wellentyp, den Sie erstellen möchten, und für das Lager der Auftragsposition verfügbar sein. Wellenvorlagen vom Typ *Versand* werden verwendet, um Artikel für Aufträge und Umlagerungsaufträge zu versenden.
 

@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 7.0.0
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.form: EROperationDesigner, ERParameters
-ms.openlocfilehash: 2feadf8e196936220cf557989cae40b742447d99
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: ff44226b7deb15bc673d121d62cad44309b5d78b
+ms.sourcegitcommit: a1d14836b40cfc556f045c6a0d2b4cc71064a6af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280923"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9476820"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
 
@@ -186,6 +186,9 @@ Wenn eine Komponente vom Typ **Zelle** für die Eingabe eines Werts in ein Excel
 
 > [!NOTE]
 > Jedes Excel-Bild und -Shape gilt als durch die obere linke Ecke in einer bestimmten Excel-Zelle oder einem bestimmten Excel-Bereich verankert. Wenn Sie ein Excel-Bild oder Excel-Shape replizieren möchten, müssen Sie die Zelle oder den Bereich, in dem es verankert ist, als replizierte Zelle oder Bereich konfigurieren.
+
+> [!TIP]
+> Wenn Sie zur Laufzeit ein Bild mit benutzerdefinierter Skalierung und benutzerdefiniertem Seitenverhältnis verwenden möchten, empfehlen wir Ihnen, die Option **Bildskalierung beachten** der übergeordnete [Excel-Dateikomponente](#excel-file-component) auf **Ja** zu aktivieren, um die Skalierung und das Seitenverhältnis als Platzhalter dieses Bildes in der von Ihnen verwendeten Excel-Vorlage anzuwenden.
 
 Weitere Informationen zum Einbetten von Bildern und Shapes finden Sie unter [Bilder und Shapes in Dokumente einbetten, die mit EB generiert werden](electronic-reporting-embed-images-shapes.md).
 

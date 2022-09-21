@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: cc013e962b4da803764f16e451b1d433666e75c2
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 39677ebfb9babeb7246ece4d27ab1813435ca12e
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336604"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427847"
 ---
 # <a name="query-data-using-warehouse-management-mobile-app-detours"></a>Daten mit den Umleitungen der mobilen Warehouse Management-App abfragen
 
@@ -268,6 +268,6 @@ Befolgen Sie diese Schritte, um die Einrichtung Ihrer neuen mobilen App zu teste
     ![Kaufeingang mit Bestellsuche nach Lieferant, Beispiel 2.](media/wma-purchase-receive-lookup-po-vendor-detours.png "Kaufeingang mit Bestellsuche nach Lieferant, Beispiel 2")
 
 > [!TIP]
-> Anstatt den empfangenden Flow auszuführen, indem Sie eine Suche in **Kaufeingang** können Sie von einem Abfrageflow aus starten (**Hauptmenü \> Anfragen \> Suchen Sie Bestellungen nach Anbieter**) und rufen Sie einen Umweg auf, um den gewünschten Flow auszuführen, indem Sie eine der Karten in der Liste auswählen. Um diesen Ansatz zu nutzen, können Sie eine Umleitung auf der Seite **Schritte für Mobilgeräte** für den Schritt definieren, der eine **Schritt-ID** von *GenericDataInquiryList* hat. Da es sich bei diesem Flow um einen Umleitungsflow handelt, können Sie keine weiteren Umleitungen daraus aufrufen. Wenn Sie also beispielsweise zur Artikelnummerneingabe gelangen, ist die Suche dort nicht verfügbar, da das System derzeit nur eine Umleitungsebene unterstützt.
+> Anstatt den empfangenden Flow auszuführen, indem Sie eine Suche in **Kaufeingang** können Sie von einem Abfrageflow aus starten (**Hauptmenü \> Anfragen \> Suchen Sie Bestellungen nach Anbieter**) und rufen Sie einen Umweg auf, um den gewünschten Flow auszuführen, indem Sie eine der Karten in der Liste auswählen. Um diesen Ansatz zu nutzen, können Sie eine Umleitung auf der Seite **Schritte für Mobilgeräte** für den Schritt definieren, der eine **Schritt-ID** von *GenericDataInquiryList* hat. Vorausgesetzt die Funktion [*Umleitungen auf mehreren Ebenen für die mobile Warehouse Management-App*](warehouse-app-detours.md) ist für Ihr System aktiviert, können Sie bei Bedarf auch eine zusätzliche Umleitung hinzufügen. (Diese Funktion fügt Unterstützung für bis zu zwei Umleitungsebenen hinzu und kann angepasst werden, um zusätzliche Ebenen zu unterstützen.)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

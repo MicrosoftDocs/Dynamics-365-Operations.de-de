@@ -2,7 +2,7 @@
 title: Produktempfehlungen im POS hinzufügen
 description: In diesem Artikel wird die Verwendung der Produktempfehlungen bei einem Verkaufsstelle (POS)-Gerät beschrieben.
 author: bebeale
-ms.date: 05/26/2020
+ms.date: 09/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 442ae540b04588afd9aeb37a92c6ceb92c05a9ba
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 170e2bf18aefc79a796620818c7100ff8e6e689a
+ms.sourcegitcommit: f88273627ba105ede27f28fe67ccec2d7f78261c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872798"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460055"
 ---
 # <a name="add-product-recommendations-on-pos"></a>Produktempfehlungen im POS hinzufügen
 
@@ -37,7 +37,7 @@ Produktempfehlungen werden für die folgenden POS-Szenarien aktiviert. Sie sind 
 
 1. Auf der **Produktdetails** Seite:
 
-    - Wenn ein Filialmitarbeiter eine **Produktdetails** Seite besucht, wenn er frühere Transaktionen über verschiedene Kanäle betrachtet, schlägt der Empfehlungsdienst zusätzliche Artikel vor, die wahrscheinlich zusammen gekauft werden.
+    - Wenn ein Filialmitarbeiter eine **Produktdetails** Seite besucht, wenn er frühere Transaktionen über verschiedene Kanäle betrachtet, schlägt der Empfehlungsdienst zusätzliche Artikel vor, die wahrscheinlich zusammen gekauft werden. Abhängig von den Add-Ons für den Service können Einzelhändler **Ähnliche Outfits kaufen**- und **Ähnliche Beschreibung einkaufen**-Empfehlungen für Produkte anzeigen, zusätzlich zu personalisierten Empfehlungen für Benutzer, die eine vorherige Kaufhistorie haben.
 
     [![Empfehlungen zur Produktdetailseite.](./media/proddetails.png)](./media/proddetails.png)
 
@@ -50,21 +50,17 @@ Produktempfehlungen werden für die folgenden POS-Szenarien aktiviert. Sie sind 
 
     [![Empfehlungen auf der Seite „Transaktion“.](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-## <a name="configure-commerce-to-enable-pos-recommendations"></a>Konfigurieren Sie Commerce, um POS-Empfehlungen zu aktivieren
+## <a name="configure-commerce-to-enable-pos-recommendations"></a>Konfigurieren Sie Commerce, um POS-Empfehlungen zu aktivieren 
 
-Gehen Sie zum Einrichten von Produktempfehlungen folgendermaßen vor:
+Bestätigen Sie zum Einrichten von Produktempfehlungen, dass Sie den Bereitstellungsprozess für E-Commerce-Produktempfehlungen abgeschlossen haben, indem Sie die Schritte in [Produktempfehlungen aktivieren](../commerce/enable-product-recommendations.md) ausführen. Standardmäßig werden Empfehlungen auf der **Produktdetails**-Seite und der **Kundendetails**-Seite angezeigt, nachdem Sie die Bereitstellungsschritte abgeschlossen haben und die Daten erfolgreich gekocht wurden. 
 
-1. Stellen Sie sicher, dass Ihr Service auf **10.0.6 Build** aktualisiert wurde.
-2. Befolgen Sie die Anweisungen zur Vorgehensweise für das [Aktivieren von Produktempfehlungen](../commerce/enable-product-recommendations.md) für Ihr Unternehmen.
-3. Optional: Um Empfehlungen zum Buchungsbildschirm anzuzeigen, navigieren Sie zu **Bildschirmlayout**, wählen das Bildschirmlayout, starten den **Bildschirmlayoutdesigner** und dann legen das **Empfehlungssteuerelement** ab.
-4. Wechseln Sie zu **Einzelhandelsparameter**, wählen Sie **Maschinelles Lernen** aus, wählen Sie die Option **Ja** unter **POS-Empfehlungen aktivieren** aus.
-5. Weitere Empfehlungen zu POS erhalten Sie mit dem Konfigurationseinzelvorgang **1110**. Um Änderungen widerzuspiegeln der im POS-Designer durchgeführt wurden, aktivieren Sie Kanalkonfigurationseinzelvorgang **1070**.
+## <a name="add-recommendations-to-the-transaction-screen"></a>Empfehlungen dem Transaktionsbildschirm hinzufügen
 
-## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>Beheben Sie Probleme, wo Sie Produktempfehlungen bereits aktiviert haben
+1. Um Empfehlungen zum Transaktionsbildschirm hinzuzufügen, folgen Sie den Schritten in [Fügen Sie dem Transaktionsbildschirm Empfehlungen hinzu](add-recommendations-control-pos-screen.md).
+1. Führen Sie den Kanalkonfigurationsjob **1070** in Commerce headquarters aus, um Änderungen wiederzugeben, die im POS-Bildschirmlayout-Designer vorgenommen wurden.
 
-- Navigieren Sie zu **Commerce Parameter** \> **Empfehlungslisten** \> **Produktempfehlungen deaktivieren** und **globalen Konfigurationsauftrag \[9999\]** ausführen. 
-- Wenn Sie die **Empfehlungssteuerung** Ihrem Buchungsbildschirm mithilfe von **Designer für Bildschirmlayout** hinzugefügt haben, entfernen Sie diese auch.
-- Wenn Sie weitere Fragen haben, lesen Sie die [Produktempfehlungen FAQ](../commerce/faq-recommendations.md) für weitere Informationen.
+> [!NOTE] 
+> Wenn Sie POS-Empfehlungen mithilfe der CSV-Datei (Comma-Separated Values) von RecoMock aktivieren möchten, müssen Sie die CSV-Datei in der Microsoft Dynamics Lifecycle Services (LCS)-Objektbibliothek, bevor Sie den Layout-Manager konfigurieren. Wenn Sie die RecoMock-CSV-Datei verwenden, müssen Sie keine Empfehlungen aktivieren. Die CSV-Datei steht nur zu Demozwecken zur Verfügung. Es wird für Kunden oder Lösungsarchitekten empfohlen, die das Erscheinungsbild von Empfehlungslisten zu Demozwecken nachahmen möchten, ohne eine zusätzliche Lagerhaltungseinheit (SKU) kaufen zu müssen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

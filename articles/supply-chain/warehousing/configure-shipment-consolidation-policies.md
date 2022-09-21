@@ -2,7 +2,7 @@
 title: Richtlinien zur Lieferungskonsolidierung konfigurieren
 description: In diesem Artikel wird erläutert, wie Sie Standard- und benutzerdefinierte Versandkonsolidierungsrichtlinien einrichten.
 author: Mirzaab
-ms.date: 08/09/2022
+ms.date: 09/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 4583d523811cb41518a0a4dae0d67398d64cab44
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 0312d425d2ebc5311e894030423a916b90f1881a
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336491"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427981"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Richtlinien zur Lieferungskonsolidierung konfigurieren
 
@@ -28,75 +28,49 @@ Der Lieferungskonsolidierungsprozess, der Richtlinien zur Lieferungskonsolidieru
 
 Die in diesem Artikel vorgestellten Szenarien zeigen, wie Standard- und benutzerdefinierte Versandkonsolidierungsrichtlinien eingerichtet werden.
 
-## <a name="turn-on-the-shipment-consolidation-policies-feature"></a>Richtlinienfunktion zur Lieferungskonsolidierung aktivieren
+> [!WARNING]
+> Wenn Sie ein Microsoft Dynamics 365 Supply Chain Management-System aktualisieren, in dem Sie die Legacy-Sendungskonsolidierungsfunktion verwendet haben, funktioniert die Konsolidierung möglicherweise nicht mehr wie erwartet, es sei denn, Sie befolgen die hier gegebenen Ratschläge.
+>
+> Bei Supply Chain Management-Installationen, bei denen die *Lieferungskonsolidierungsrichtlinien* deaktiviert ist, aktivieren Sie die Sendungskonsolidierung mithilfe der **Lieferung bei Freigabe für Lagerort konsolidieren**-Einstellung für jedes einzelne Lager. Diese Funktion ist ab Version 10.0.29 obligatorisch. Wenn sie eingeschaltet ist, wird die **Lieferung bei Freigabe für Lagerort konsolidieren**-Einstellung ausgeblendet und die Funktionalität wird durch *Richtlinien zur Lieferungskonsolidierung* die ersetzt, die in diesem Artikel beschrieben werden. Jede Richtlinie legt Konsolidierungsregeln fest und enthält eine Abfrage, um zu steuern, wo die Richtlinie angewendet wird. Wenn Sie die Funktion zum ersten Mal aktivieren, werden keine Richtlinien zur Lieferungskonsolidierung auf der **Lieferungskonsolidierungsrichtlinien**-Seite definiert. Wenn keine Richtlinien definiert sind, verwendet das System das Legacy-Verhalten. Daher respektiert jedes bestehende Lager weiterhin seine **Lieferung bei Freigabe für Lagerort konsolidieren**-Einstellung, obwohl diese Einstellung jetzt ausgeblendet ist. Nachdem Sie jedoch mindestens eine Lieferungskonsolidierungsrichtlinie erstellt haben, wird die **Lieferung bei Freigabe für Lagerort konsolidieren**-Einstellung keine Auswirkungen mehr haben und die Konsolidierungsfunktion wird vollständig von den Richtlinien gesteuert.
+>
+> Nachdem Sie mindestens eine Lieferungskonsolidierungsrichtlinie definiert haben, überprüft das System die Konsolidierungsrichtlinien jedes Mal, wenn eine Bestellung an das Lager freigegeben wird. Das System verarbeitet die Richtlinien unter Verwendung der Rangordnung, die durch jeden **Richtliniensequenz**-Wert der Richtlinie definiert ist. Es wendet die erste Richtlinie an, bei der die Abfrage mit der neuen Reihenfolge übereinstimmt. Wenn keine Abfragen mit dem Auftrag übereinstimmen, erzeugt jede Auftragszeile eine separate Sendung, die eine einzelne Ladelinie hat. Als Ausweichlösung empfehlen wir Ihnen daher, eine Standardrichtlinie zu erstellen, die für alle Warenlager und Gruppen nach Bestellnummer gilt. Geben Sie dieser Fallback-Richtlinie den höchsten **Richtliniensequenz**-Wert, damit er zuletzt verarbeitet wird.
+>
+> Um das alte Verhalten zu reproduzieren, müssen Sie eine Richtlinie erstellen, die nicht nach Bestellnummer gruppiert und die Abfragekriterien enthält, die alle relevanten Warenlager umfassen.
 
-> [!IMPORTANT]
-> Im [ersten Szenario](#scenario-1) dieses Artikels wird zunächst ein Lager eingerichtet, sodass die frühere Funktion zur Lieferungskonsolidierung verwendet wird. Anschließend stellen Sie Richtlinien zur Lieferungskonsolidierung zur Verfügung. Auf diese Weise können Sie erfahren, wie das Upgradeszenario funktioniert. Wenn Sie vorhaben, eine Demodatenumgebung zu verwenden, um das erste Szenario zu durchlaufen, aktivieren Sie die Funktion nicht, bevor Sie das Szenario ausführen.
+## <a name="turn-on-the-shipment-consolidation-policies-feature"></a>Richtlinienfunktion zur Lieferungskonsolidierung aktivieren
 
 Um die Funktion *Richtlinien zur Lieferungskonsolidierung* verwenden zu können, muss sie für ihr System aktiviert sein. Ab Supply Chain Management Version 10.0.29 ist die Funktion obligatorisch und kann nicht deaktiviert werden. Wenn Sie eine ältere Version als 10.0.29 ausführen, können Administratoren diese Funktionalität ein- oder ausschalten, indem sie nach der Funktion *Richtlinien zur Lieferungskonsolidierung* im Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) suchen.
 
-## <a name="make-demo-data-available"></a>Demodaten zur Verfügung stellen
+## <a name="set-up-your-initial-consolidation-policies"></a><a name="initial-policies"></a>Richtlinien für erste Sendungskonsolidierung festlegen
 
-Jedes Szenario in diesem Artikel verweist auf Werte und Datensätze, die in den für Microsoft Dynamics 365 Supply Chain Management bereitgestellten Standarddemodaten enthalten sind. Wenn Sie die hier angegebenen Werte während der Übungen verwenden möchten, müssen Sie in einer Umgebung arbeiten, in der die Demodaten installiert sind, und die juristische Person auf **USMF** festlegen, bevor Sie beginnen.
-
-## <a name="scenario-1-configure-default-shipment-consolidation-policies"></a><a name="scenario-1"></a>Szenario 1: Standardrichtlinien zur Lieferungskonsolidierung konfigurieren
-
-Es gibt zwei Situationen, in denen Sie die Mindestanzahl von Standardrichtlinien konfigurieren müssen, nachdem Sie die Funktion *Richtlinien zur Lieferungskonsolidierung* aktiviert haben:
-
-- Sie aktualisieren eine Umgebung, die bereits Daten enthält.
-- Sie richten eine völlig neue Umgebung ein.
-
-### <a name="upgrade-an-environment-where-warehouses-are-already-configured-for-cross-order-consolidation"></a>Aktualisieren Sie eine Umgebung, in der Lager bereits für die auftragsübergreifende Konsolidierung konfiguriert sind
-
-Wenn Sie diesen Vorgang starten, sollte die Funktion *Richtlinien zur Lieferungskonsolidierung* deaktiviert werden, um eine Umgebung zu simulieren, in der die grundlegende Funktion zur konsolidierungsübergreifenden Konsolidierung bereits verwendet wurde. Anschließend aktivieren Sie die Funktion mithilfe der Funktionsverwaltung, um zu erfahren, wie Sie nach dem Upgrade Richtlinien für die Lieferungskonsolidierung einrichten.
-
-Befolgen Sie diese Schritte, um Standardrichtlinien für die Lieferungskonsolidierung in einer Umgebung einzurichten, in der Lager bereits für die auftragsübergreifende Konsolidierung konfiguriert wurden.
-
-1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Lagerort \> Lagerorte**.
-1. Suchen und öffnen Sie in der Liste den gewünschten Lagerdatensatz (z. B. Lager *24* in den **USMF**-Demodaten).
-1. Wählen Sie im Aktionsbereich **Bearbeiten** aus.
-1. Legen Sie auf dem Inforegister **Lagerort** die Option **Lieferung bei Freigabe an Lagerort konsolidieren** auf *Ja* fest.
-1. Wiederholen Sie die Schritte 2 bis 4 für alle anderen Lager, in denen eine Konsolidierung erforderlich ist.
-1. Schließen Sie die Seite.
-1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Für Lagerort freigeben \> Richtlinien zur Lieferungskonsolidierung**. Möglicherweise müssen Sie Ihren Browser aktualisieren, um den neuen Menüpunkt **Richtlinien zur Lieferungskonsolidierung** nach dem Einschalten der Funktion zu sehen.
-1. Wählen Sie im Aktionsbereich **Standardeinstellungen erstellen** aus, um die folgenden Richtlinien zu erstellen:
-
-    - Eine **CrossOrder**-Richtlinie für den Richtlinientyp *Aufträge* (vorausgesetzt, Sie haben mindestens einen Lagerort, der für die Verwendung der früheren Konsolidierungsfunktion eingerichtet ist)
-    - Eine **Standard**-Richtlinie für den Richtlinientyp *Aufträge*
-    - Eine **Standard**-Richtlinie für den Richtlinientyp *Umlagerungsabgang*
-    - Eine **CrossOrder**-Richtlinie für den Richtlinientyp *Umlagerungsabgang* (vorausgesetzt, Sie haben mindestens einen Lagerort, der für die Verwendung der früheren Konsolidierungsfunktion eingerichtet ist)
-
-    > [!NOTE]
-    > - Beide **CrossOrder**-Richtlinien berücksichtigen denselben Satz von Feldern wie die frühere Logik, mit Ausnahme des Felds für die Bestellnummer. (In diesem Feld werden Linien zu Lieferungen zusammengefasst, basierend auf Faktoren wie Lager, Transportart und Adresse.)
-    > - Beide **Standard**-Richtlinien berücksichtigen denselben Satz von Feldern wie die frühere Logik, einschließlich des Felds für die Bestellnummer. (In diesem Feld werden Linien zu Lieferungen zusammengefasst, basierend auf Faktoren wie Auftragsnummer, Lager, Transportart und Adresse.)
-
-1. Wählen Sie die **CrossOrder**-Richtlinie für den Richtlinientyp *Aufträge*, und wählen Sie dann im Aktionsbereich **Abfrage bearbeiten** aus.
-1. Beachten Sie im Dialogfeld des Abfrage-Editors, dass Lager, bei denen die Option **Lieferung bei Freigabe an Lagerort konsolidieren** auf *Ja* gesetzt ist, aufgelistet sind. Daher sind sie in der Abfrage enthalten.
-
-### <a name="create-default-policies-for-a-new-environment"></a>Erstellen Sie Standardrichtlinien für eine neue Umgebung
-
-Befolgen Sie diese Schritte, um Standardrichtlinien für die Lieferungskonsolidierung in einer brandneuen Umgebung einzurichten.
+Wenn Sie mit einem neuen System arbeiten oder mit einem System, bei dem Sie gerade erst die Funktion *Lieferungskonsolidierungsrichtlinien* zum ersten Mal verwenden, befolgen Sie diese Schritte, um Ihre Erstkonsolidierungsrichtlinien für Sendungen einzurichten.
 
 1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Für Lagerort freigeben \> Richtlinien zur Lieferungskonsolidierung**.
 1. Wählen Sie im Aktionsbereich **Standardeinstellungen erstellen** aus, um die folgenden Richtlinien zu erstellen:
 
-    - Eine **Standard**-Richtlinie für den Richtlinientyp *Aufträge*
-    - Eine **Standard**-Richtlinie für den Richtlinientyp *Umlagerungsabgang*
+    - Eine Richtlinie namens *Standard* für den Richtlinientyp *Aufträge*.
+    - Eine Richtlinie namens *Standard* für den Richtlinientyp *Umlagerungsproblem*.
+    - Eine Richtlinie namens *CrossOrder* für den Richtlinientyp *Umlagerungsproblem*. (Diese Richtlinie wird nur erstellt, wenn Sie mindestens ein Lager hatten, in dem die Legacy-Einstellung **Lieferung bei Freigabe für Lagerort konsolidieren** aktiviert war.)
+    - Eine Richtlinie namens *CrossOrder* für den Richtlinientyp *Aufträge*. (Diese Richtlinie wird nur erstellt, wenn Sie mindestens ein Lager hatten, in dem die Legacy-Einstellung **Lieferung bei Freigabe für Lagerort konsolidieren** aktiviert war.)
 
     > [!NOTE]
-    > Beide **Standard**-Richtlinien berücksichtigen denselben Satz von Feldern wie die frühere Logik, einschließlich des Felds für die Bestellnummer. (In diesem Feld werden Linien zu Lieferungen zusammengefasst, basierend auf Faktoren wie Auftragsnummer, Lager, Transportart und Adresse.)
+    > - Beide *CrossOrder*-Richtlinien berücksichtigen denselben Satz von Feldern wie die frühere Logik. Sie berücksichtigen jedoch auch das Bestellnummernfeld. (In diesem Feld werden Linien zu Lieferungen zusammengefasst, basierend auf Faktoren wie Lager, Transportart und Adresse.)
+    > - Beide *Standard*-Richtlinien berücksichtigen denselben Satz von Feldern wie die frühere Logik. Sie berücksichtigen jedoch auch das Bestellnummernfeld. (In diesem Feld werden Linien zu Lieferungen zusammengefasst, basierend auf Faktoren wie Auftragsnummer, Lager, Transportart und Adresse.)
 
-## <a name="scenario-2-configure-custom-shipment-consolidation-policies"></a>Szenario 2: Benutzerdefinierte Richtlinien zur Lieferungskonsolidierung konfigurieren
+1. Wählen Sie ggf. die vom System erstellte *CrossOrder*-Richtlinie für den Richtlinientyp *Aufträge*, und wählen Sie dann im Aktionsbereich **Abfrage bearbeiten** aus. Im Abfrageeditor können Sie sehen, für welches Ihrer Lager die **Lieferung bei Freigabe für Lagerort konsolidieren**-Einstellung zuvor aktiviert war. Daher reproduziert diese Richtlinie Ihre vorherigen Einstellungen für diese Warenlager.
+1. Passen Sie die neuen Standardrichtlinien nach Bedarf an, indem Sie Felder hinzufügen oder entfernen und/oder die Abfragen bearbeiten. Sie können auch so viele neue Richtlinien hinzufügen, wie Sie benötigen. Beispiele, die zeigen, wie Sie Ihre Richtlinien anpassen und konfigurieren, finden Sie im Beispielszenario weiter unten in diesem Artikel.
 
-In diesem Szenario wird gezeigt, wie benutzerdefinierte Lieferungskonsolidierungsrichtlinien eingerichtet werden. Benutzerdefinierte Richtlinien können komplexe Geschäftsanforderungen unterstützen, bei denen die Lieferungskonsolidierung von mehreren Bedingungen abhängt. Für jede Beispielrichtlinie später in diesem Szenario ist eine kurze Beschreibung des Geschäftsfalls enthalten. Diese Beispielrichtlinien sollten in einer Reihenfolge eingerichtet werden, die eine pyramidenartige Auswertung der Abfragen gewährleistet. (Mit anderen Worten, die Richtlinien mit den meisten Bedingungen sollten als mit der höchsten Priorität bewertet werden.)
+## <a name="scenario-configure-custom-shipment-consolidation-policies"></a>Szenario: Benutzerdefinierte Richtlinien zur Lieferungskonsolidierung konfigurieren
 
-### <a name="turn-on-the-feature-and-prepare-master-data-for-this-scenario"></a>Aktivieren Sie die Funktion und bereiten Sie Stammdaten für dieses Szenario vor
+Dieses Szenario enthält ein Beispiel, das zeigt, wie Sie benutzerdefinierte Lieferungskonsolidierungsrichtlinien einrichten und diese dann mithilfe von Demodaten testen. Benutzerdefinierte Richtlinien können komplexe Geschäftsanforderungen unterstützen, bei denen die Lieferungskonsolidierung von mehreren Bedingungen abhängt. Für jede Beispielrichtlinie später in diesem Szenario ist eine kurze Beschreibung des Geschäftsfalls enthalten. Diese Beispielrichtlinien sollten in einer Reihenfolge eingerichtet werden, die eine pyramidenartige Auswertung der Abfragen gewährleistet. (Mit anderen Worten, die Richtlinien mit den meisten Bedingungen sollten als mit der höchsten Priorität bewertet werden.)
 
-Bevor Sie die Übungen in diesem Szenario ausführen können, müssen Sie die Funktion aktivieren und die Stammdaten vorbereiten, die für die Filterung erforderlich sind, wie in den folgenden Unterabschnitten beschrieben. (Diese Voraussetzungen gelten auch für die in [Beispielszenarien für die Verwendung von Richtlinien zur Lieferungskonsolidierung](#example-scenarios) aufgeführten Szenarien.)
+### <a name="make-demo-data-available"></a>Demodaten zur Verfügung stellen
 
-#### <a name="turn-on-the-feature-and-create-the-default-policies"></a>Aktivieren Sie die Funktion und erstellen Sie die Standardrichtlinien
+Dieses Szenario verweist auf Werte und Datensätze, die in den für das Supply Chain Management bereitgestellten [Standarddemodaten](../../fin-ops-core/fin-ops/get-started/demo-data.md) enthalten sind. Wenn Sie die hier angegebenen Werte während der Übungen verwenden möchten, müssen Sie in einer Umgebung arbeiten, in der die Demodaten installiert sind, und die juristische Person auf *USMF* festlegen, bevor Sie beginnen.
 
-Verwenden Sie die Funktionsverwaltung, um die Funktion zu aktivieren, falls Sie sie noch nicht aktiviert haben, und erstellen Sie die Standardkonsolidierungsrichtlinien, die in [Szenario 1](#scenario-1) beschrieben sind.
+### <a name="prepare-master-data-for-this-scenario"></a>Masterdaten für dieses Szenario vorbereiten
+
+Bevor Sie die Übungen in diesem Szenario ausführen können, müssen Sie die Masterdaten vorbereiten, die für die Filterung erforderlich sind, wie in den folgenden Unterabschnitten beschrieben. (Diese Voraussetzungen gelten auch für die im Abschnitt [Beispielszenarien für die Verwendung von Richtlinien zur Lieferungskonsolidierung](#example-scenarios) aufgeführten Szenarien.)
 
 #### <a name="create-two-new-product-filter-codes"></a>Erstellen Sie zwei neue Produktfiltercodes
 
@@ -300,7 +274,7 @@ In diesem Beispiel erstellen Sie eine *Lagerorte, die Konsolidierung zulassen*-R
 - Die Konsolidierung mit offenen Lieferungen ist deaktiviert.
 - Die Konsolidierung erfolgt über Aufträge hinweg unter Verwendung der Felder, die in der Standard-CrossOrder-Richtlinie ausgewählt sind (um das frühere Kontrollkästchen **Lieferung bei Freigabe am Lagerort konsolidieren** zu replizieren).
 
-In der Regel kann dieser Geschäftsfall mithilfe der von Ihnen erstellten Standardrichtlinie aus [Szenario 1](#scenario-1) behoben werden. Sie können ähnliche Richtlinien jedoch auch manuell erstellen, indem Sie die folgenden Schritte ausführen.
+In der Regel kann dieser Geschäftsfall mithilfe der von Ihnen erstellten Standardrichtlinie aus [Richtlinien für erste Sendungskonsolidierung festlegen](#initial-policies) behoben werden. Sie können ähnliche Richtlinien jedoch auch manuell erstellen, indem Sie die folgenden Schritte ausführen.
 
 1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Für Lagerort freigeben \> Richtlinien zur Lieferungskonsolidierung**.
 1. Stellen Sie das Feld **Richtlinientyp** auf *Aufträge* ein.
@@ -345,7 +319,7 @@ Die folgenden Szenarien veranschaulichen, wie Sie die Versandkonsolidierungsrich
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-- [Lieferungskonsolidierungsrichtlinien](about-shipment-consolidation-policies.md)
+- [Übersicht über Richtlinien für die Lieferungskonsolidierung](about-shipment-consolidation-policies.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

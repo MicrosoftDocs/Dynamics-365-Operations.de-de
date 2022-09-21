@@ -1,5 +1,5 @@
 ---
-title: Lieferungskonsolidierungsrichtlinien
+title: Übersicht über Richtlinien für die Lieferungskonsolidierung
 description: Dieser Artikel bietet einen Überblick über die Funktionen, die eine flexible Konfiguration der Lieferungskonsolidierungsrichtlinien ermöglichen.
 author: Mirzaab
 ms.date: 05/12/2020
@@ -13,14 +13,14 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 27f5d52dac2e428655f1b16908ff796ed9d02e82
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7113fc635a7c01e4b9cc44898daa3d2617058b6b
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903897"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427927"
 ---
-# <a name="shipment-consolidation-policies"></a>Lieferungskonsolidierungsrichtlinien
+# <a name="shipment-consolidation-policies-overview"></a>Übersicht über Richtlinien für die Lieferungskonsolidierung
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ Vor der Einführung von Lieferungskonsolidierungsrichtlinien bestand die Konsoli
 
 Abfragen werden verwendet, um die geltende Lieferungskonsolidierungsrichtlinie zu identifizieren. Anschließend kann anhand einer bearbeitbaren Reihe von Feldern festgelegt werden, wie die Ladezeilen auf Lieferungsebene gruppiert werden. (Dieses Muster ähnelt dem Muster, dem Wellenvorlagen folgen.) Außerdem wurde jeder Richtlinie eine **Mit bestehenden Lieferungen konsolidieren**-Option hinzugefügt. Wenn diese Option aktiviert ist, sucht das *Für Lagerort freigeben*-Verfahren Lieferungen zur Konsolidierung, indem es nach vorhandenen Lieferungen sucht, die auf der Grundlage derselben Konsolidierungsrichtlinie erstellt wurden. In diesem Fall wählt das System eine vorhandene Lieferung oder Ladung aus, anstatt eine neue zu erstellen. Das System wird jedoch nur mit vorhandenen Lieferungen konsolidiert, die den Status *Offen* haben; Lieferungen, die zu einer Wellenfreigabe mit dem Status *Veröffentlicht* oder höher gehören, werden nicht als Konsolidierungsziele angesehen.
 
-Wenn Richtlinien zur Lieferungskonsolidierung verfügbar gemacht werden, wird die **Lieferung bei Freigabe an Lagerort konsolidieren**-Einstellung, die zuvor auf der **Lagerorte**-Einstellungsseite verfügbar war, ausgeblendet. Um Ihnen den Übergang zur neuen Versandkonsolidierungsfunktion zu erleichtern, erstellt eine Funktion auf der **Richtlinien zur Lieferungskonsolidierung**-Seite eine Standardrichtlinie, die automatisch die alte Einstellung für vorhandene Lager enthält. Nachdem diese Standardrichtlinie erstellt wurde, wird die **Lieferung bei Freigabe an Lagerort konsolidieren**-Einstellung auf der **Lagerorte**-Einstellungsseite nicht mehr berücksichtigt.
+Wenn die Funktion *Lieferungskonsolidierungsrichtlinien* für Ihr System aktiviert ist, wird die Einstellung **Sendung bei Freigabe an Lager konsolidieren**, die zuvor auf der Einrichtungsseite **Lager** verfügbar war, ausgeblendet. Um Ihnen den Übergang zur neuen Lieferungskonsolidierungsfunktion zu erleichtern, erstellt eine Funktion auf der **Richtlinien zur Lieferungskonsolidierung**-Seite eine Standardrichtlinie, die automatisch die alte Einstellung für vorhandene Lager enthält. Nachdem diese Standardrichtlinie erstellt wurde, wird die **Lieferung bei Freigabe an Lagerort konsolidieren**-Einstellung auf der **Lagerorte**-Einstellungsseite nicht mehr berücksichtigt. Weitere Informationen finden Sie unter [Richtlinien für die Lieferungskonsolidierung konfigurieren](configure-shipment-consolidation-policies.md).
 
 Sie können die Seite **Für Lagerort freigeben** verwenden, um die geltende Konsolidierungsrichtlinie manuell auf dieselbe Weise zu überschreiben, wie Sie Erfüllungsrichtlinien überschreiben können.
 

@@ -2,7 +2,7 @@
 title: Konfigurierte EB-Komponente überprüfen, um Laufzeitprobleme zu vermeiden
 description: In diesem Artikel wird erläutert, wie Sie die konfigurierten EB-Komponenten (Elektronische Berichterstellung) überprüfen, um mögliche Laufzeitprobleme zu vermeiden.
 author: kfend
-ms.date: 01/03/2022
+ms.date: 09/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 7.0.0
 ms.custom: 220314
 ms.assetid: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
-ms.openlocfilehash: 53835bbceaa89793d890d8bc18921497c686e969
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 1ca59d6c26dbcf065adb952409da30002d951f62
+ms.sourcegitcommit: a1d14836b40cfc556f045c6a0d2b4cc71064a6af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277849"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9476853"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Konfigurierte EB-Komponente überprüfen, um Laufzeitprobleme zu vermeiden
 
@@ -243,6 +243,15 @@ Die folgende Tabelle enthält eine Übersicht der Inspektionen, die die EB biete
 <td>
 <p>Der Listenausdruck der ORDERBY-Funktion ist nicht abfragbar.</p>
 <p><b>Laufzeitfehler:</b> Die Sortierung wird nicht unterstützt. Überprüfen Sie die Konfiguration für weitere Details hierzu.</p>
+</td>
+</tr>
+<tr>
+<td><a href='#i19'>Veraltetes Anwendungsartefakt</a></td>
+<td>Datenintegrität</td>
+<td>Achtung</td>
+<td>
+<p>Das Element &lt;Pfad&gt; ist als veraltet markiert.<br>oder<br>Das Element &lt;Pfad&gt; ist mit der Meldung &lt;Meldungstext&gt; als veraltet markiert.</p>
+<p><b>Beispiel für Laufzeitfehler:</b> Klasse „&lt;Pfad&gt;“ nicht gefunden.</p>
 </td>
 </tr>
 </tbody>
@@ -942,6 +951,36 @@ Anstatt ein verschachteltes Feld vom Typ **Berechnetes Feld** zur Datenquelle **
 #### <a name="option-2"></a>Option 2
 
 Ändern Sie den Ausdruck der Datenquelle **FilteredVendors** von `ORDERBY("Query", Vendor, Vendor.AccountNum)` auf `ORDERBY("InMemory", Vendor, Vendor.AccountNum)`. Wir empfehlen Ihnen nicht, den Ausdruck für eine Tabelle mit einem großen Datenvolumen (Transaktionstabelle) zu ändern, da alle Datensätze abgerufen werden und die Reihenfolge der benötigten Datensätze im Speicher erfolgt. Daher kann dieser Ansatz eine Verschlechterung der Leistung verursachen.
+
+## <a name="obsolete-application-artifact"></a><a id="i19"></a>Veraltetes Anwendungsartefakt
+
+Wenn Sie eine ER-Modellzuordnungskomponente oder eine ER-Formatkomponente entwerfen, können Sie einen ER-Ausdruck konfigurieren, um ein Anwendungsartefakt in ER aufzurufen, z. B. eine Datenbanktabelle, eine Methode einer Klasse usw. In Finanzversion 10.0.30 und höher, können Sie ER zwingen, Sie zu warnen, dass das verwiesene Anwendungsartefakt im Quellcode als veraltet gekennzeichnet ist. Diese Warnung kann nützlich sein, da veraltete Artefakte normalerweise irgendwann aus dem Quellcode entfernt werden. Die Information über den Status eines Artefakts kann Sie davon abhalten, das veraltete Artefakt in der bearbeitbaren ER-Komponente zu verwenden, bevor es aus dem Quellcode entfernt wird, und hilft, Fehler beim Aufrufen nicht vorhandener Anwendungsartefakte von einer ER-Komponente zur Laufzeit zu vermeiden.
+
+Aktivieren Sie die Funktion **Veraltete Elemente von Datenquellen in der elektronischen Berichterstellung überprüfen** im **Funktionsverwaltung**-Arbeitsbereich, um mit der Bewertung des obsoleten Attributs von Anwendungsartefakten während der Inspektion einer bearbeitbaren ER-Komponente zu beginnen. Das veraltete Attribut wird derzeit für die folgenden Arten von Anwendungsartefakten ausgewertet:
+
+- Datenbanktabelle
+    - Feld einer Tabelle
+    - Methode einer Tabelle
+- Anwendungs-Klasse
+    - Methode einer Klasse
+
+> [!NOTE]
+> Bei der Prüfung der bearbeitbaren ER-Komponente auf eine Datenquelle, die auf ein veraltetes Artefakt verweist, erfolgt nur dann eine Warnung, wenn diese Datenquelle in mindestens einer Bindung dieser ER-Komponente verwendet wird.
+
+> [!TIP]
+> Wenn die [SysObsoleteAttribute](../dev-ref/xpp-attribute-classes.md#sysobsoleteattribute)-Klasse verwendet wird, um den Compiler zu benachrichtigen, Warnmeldungen anstelle von Fehlern auszugeben, stellt die Inspektionswarnung die im Quellcode angegebene Warnung zur Entwurfszeit im **Details**-Inforegister auf der **Model-Mapping-Designer** oder **Format-Designer**-Seite dar.
+
+Die folgende Abbildung zeigt die Validierungswarnung, die auftritt, wenn das obsolete `DEL_Email`-Feld der `CompanyInfo`-Anwendungstabelle mithilfe der konfigurierten `company`-Datenquelle an ein Datenmodellfeld gebunden wird.
+
+![Überprüfen Sie die Validierungswarnungen auf der Registerkarte Details auf der Seite Modellzuordnungsdesigner.](./media/er-components-inspections-19a.png)
+
+### <a name="automatic-resolution"></a>Automatische Lösung
+
+Es ist keine Option verfügbar, um dieses Problem automatisch zu beheben.
+
+### <a name="manual-resolution"></a>Manuelle Lösung
+
+Ändern Sie die konfigurierte Modellzuordnung oder das Format, indem Sie alle Bindungen an eine Datenquelle entfernen, die auf ein veraltetes Anwendungsartefakt verweist.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

@@ -14,21 +14,16 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 35c38ad25380b940d050b4e498fabca017c35997
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 975b620dc911d154f6f67420a957bd72c02321ed
+ms.sourcegitcommit: 6b013a423ed91973d60a895330046db2a07d92c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336956"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "9472712"
 ---
 # <a name="benefits-management-workspace"></a>Arbeitsbereich für Vorteilsverwaltung
 
-[!include [preview feature](./includes/preview-feature.md)]
-
 Dieser Artikel beschreibt den Arbeitsbereich **Vergütungsverwaltung** in Dynamics 365 Human Resources.
-
-> [!NOTE]
-> Um den Arbeitsbereich **Vergütungsverwaltung** anzuzeigen, müssen Sie zuerst die Funktion **(Vorschau) Arbeitsbereich Vergütungsverwaltung** in der Funktionsverwaltung aktivieren. Weitere Informationen zur Aktivierung der Vorschaufunktionen finden Sie unter [Funktonen verwalten](hr-admin-manage-features.md).<br><br>![Arbeitsbereich für Vorteilsverwaltung aktivieren.](./media/hr-benefits-management-workspace-enable.png)
 
 Der Arbeitsbereich **Vergütungsverwaltung** gibt Ihnen einen schnellen Überblick über die Artikel, die Ihre Aufmerksamkeit erfordern. Auf dieser Seite können Sie sehen:
 

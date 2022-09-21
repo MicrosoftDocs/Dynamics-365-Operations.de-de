@@ -2,19 +2,19 @@
 title: Domänen in Dynamics 365 Commerce
 description: In diesem Artikel wird beschrieben, wie Domänen in Microsoft Dynamics 365 Commerce behandelt werden.
 author: BrianShook
-ms.date: 08/19/2022
+ms.date: 09/09/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: BrShoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: fd2fdc82fe62e56e18f54138e07b663a18802d66
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 132aec92d2b3d2765dd6bd261fb4182f8aae679a
+ms.sourcegitcommit: dbb997f252377b8884674edd95e66caf8d817816
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405495"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "9465192"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domänen in Dynamics 365 Commerce
 
@@ -144,9 +144,9 @@ Die von Commerce bereitgestellte Azure Front Door-Instanz unterstützt keine Ape
 
 - **Option 1** – Verwenden Sie Ihren DNS-Anbieter, um die Apex-Domäne in eine „www“ -Domäne umzuleiten. Beispielsweise leitet fabrikam.com an `www.fabrikam.com` weiter, wo `www.fabrikam.com` der CNAME-Datensatz ist, der auf die von Commerce gehostete Azure Front Door-Instanz verweist.
 
-- **Option 2**: Wenn Ihr DNS-Anbieter ALIAS-Datensätze unterstützt, können Sie die Apex-Domäne auf den Front-Door-Endpunkt verweisen. Dadurch wird sichergestellt, dass die IP-Änderung durch den Front-Door-Endpunkt widergespiegelt wird.
+- **Option 2** – Wenn Ihr DNS-Anbieter ALIAS-Einträge unterstützt, können Sie die Apex-Domäne auf den Azure Front Door-Endpunkt verweisen, wodurch sichergestellt wird, dass die IP-Änderung durch den Endpunkt widergespiegelt wird. Sie müssen die Azure Front Door-Instanz selbst hosten.
   
-- **Option 3**: Wenn Ihr DNS-Anbieter keine ALIAS-Datensätze unterstützt, müssen Sie selbst eine CDN- oder Front-Door-Instanz einrichten, um die Apex-Domäne zu hosten.
+- **Möglichkeit 3** – Wenn Ihr DNS-Anbieter keine ALIAS-Einträge unterstützt, müssen Sie Ihren DNS-Anbieter zu Azure DNS ändern und sowohl Azure DNS als auch die Azure Front Door-Instanz selbst hosten.
 
 > [!NOTE]
 > Wenn Sie Azure Front Door verwenden, müssen Sie im selben Abonnement auch ein Azure-DNS einrichten. Die auf Azure DNS gehostete Apex-Domäne kann als Alias-Eintrag auf Ihre Azure-Fornt-Door verweisen. Dies ist die einzige Problemumgehung, da Apex-Domänen immer auf eine IP-Adresse verweisen müssen.

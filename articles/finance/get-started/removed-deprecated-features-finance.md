@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 83fa9d0a08d4d9ec171aeee685d39bba46e5687d
-ms.sourcegitcommit: 6fd44fc6e9a7bad197cab58c36ec25a555724cf1
+ms.openlocfilehash: 070c61df14db4d2538b129b01defd4b82db0b8a7
+ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9410449"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9462300"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Finance
 
@@ -45,7 +45,7 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 | **Ersetzt durch eine andere Funktion?**   | Ja |
 | **Betroffene Produktbereiche** | Anwendung |
 | **Bereitstellungsoption** | Alle |
-| **Status** | Veraltet: Nach April 2023 wird die Umsatzrealisierungsfunktion in Dynamics 365 Finance nicht mehr mit Fehlerbehebungen unterstützt. Kunden werden gebeten, die verbesserte Funktionalität [Abonnementabrechnung](../../finance/accounts-receivable/subscription-billing-summary.md) zu nutzen. Ab Oktober 2023 ist die Funktion „Umsatzrealisierung“ nicht mehr verfügbar. Kunden werden gebeten, auf die verbesserte Funktionalität „Abonnementabrechnung“ umzustellen.|
+| **Status** | Veraltet: Nach April 2023 wird die Umsatzrealisierungsfunktion in Dynamics 365 Finance nicht mehr mit Fehlerbehebungen unterstützt. Kunden werden gebeten, die verbesserte Funktionalität [Abonnementabrechnung](../../finance/accounts-receivable/subscription-billing-summary.md) zu nutzen. Ab Oktober 2023 ist die Funktion „Umsatzrealisierung“ nicht mehr verfügbar. Kunden werden gebeten, auf die verbesserte Funktionalität „Abonnementabrechnung“ umzustellen. Für das Bundle-Feature im Rahmen der Umsatzrealisierung ist derzeit keine Ersatzfunktionalität geplant.|
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10029-release"></a>Entfernte oder veraltete Funktionen in Finance Release 10.0.29
 
