@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-29.md
                 - name: Plattformupdates für Version 10.0.28 (August 2022)
                   href: get-started/whats-new-platform-updates-10-0-28.md
-                - name: Plattformupdates für Version 10.0.27 (Juli 2022)
-                  href: get-started/whats-new-platform-updates-10-0-27.md
             - name: Entfernte oder veraltete Funktionen
               items:
                 - name: Entfernte oder veraltete Funktionen auf der Startseite
@@ -510,6 +508,8 @@
                   href: dev-tools/access-instances.md
                 - name: One-Box-Entwicklungsumgebungen konfigurieren
                   href: dev-tools/configure-developer-vm.md
+                - name: One-Box-Entwicklungsumgebungen absichern
+                  href: dev-tools/secure-developer-vm.md
                 - name: 'Häufig gestellte Fragen zu Entwicklungs- und Build-VMs, die keinen Administratorzugriff ermöglichen'
                   href: sysadmin/VMs-no-admin-access.md
                 - name: Herunterladbare VHD für erste Verwendung einrichten

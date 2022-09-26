@@ -18,8 +18,6 @@
                   href: get-started/whats-new-changed-10-0-29.md
                 - name: Finance 10.0.28 (August)
                   href: get-started/whats-new-changed-10-0-28.md
-                - name: Finance 10.0.27 (Juli)
-                  href: get-started/whats-new-changed-10-0-27.md
             - name: Entfernte oder veraltete Funktionen
               items:
                 - name: Entfernte oder veraltete Funktionen auf der Startseite
@@ -1450,8 +1448,10 @@
               href: public-sector/tasks/add-certification-type-vendor-public-sector.md
             - name: Berechnung der harmonisierten kanadischen Mehrwertsteuer
               href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
-        - name: Globalisierung
+        - name: Globalization Studio
           items:
+            - name: Übersicht zu Globalization Studio
+              href: localizations/globalization-studio-overview.md?context=/dynamics365/context/finance
             - name: Globalisierungsressourcen
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?context=/dynamics365/context/finance
             - name: Globalisierungsdienste
@@ -1732,8 +1732,10 @@
                       href: general-ledger/sales-tax-calculation-rounding.md
                     - name: Mehrwertsteuerberechnung für allgemeine Erfassungspositionen
                       href: general-ledger/sales-tax-calculation-on-general-journal.md
-                    - name: Mehrwertsteuer auf einer Kreditorenrechnung berechnen und anpassen
+                    - name: Berechnen und Anpassen der Mehrwertsteuer auf einer Kreditorenrechnung
                       href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                    - name: Mehrwertsteuerdifferenzen auflösen
+                      href: general-ledger/resolve-sales-tax-differences-purchase-orders-invoices.md
                     - name: Anpassen der Mehrwertsteuer über allgemeine Erfassungen
                       href: general-ledger/adjust-sales-tax-via-general-journals.md
                     - name: Verzögerte Steuerberechnung in Erfassung aktivieren
@@ -2514,7 +2516,9 @@
                   href: localizations/emea-cze-hun-year-end.md
                 - name: Online-Fakturierungssystem
                   href: localizations/emea-hun-online-invoicing.md
-                - name: Umsatzsteuerberichte für Ungarn
+                - name: MwSt.-Erklärung (Ungarn)
+                  Href: localizations/emea-hun-vat-declaration-hungary.md
+                - name: Mehrwertsteuerberichte für Ungarn
                   href: localizations/emea-hun-sales-tax-reports.md
                 - name: Intrastat (Ungarn)
                   href: localizations/emea-hun-intrastat.md

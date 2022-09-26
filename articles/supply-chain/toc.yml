@@ -206,8 +206,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?context=/dynamics365/context/supply-chain
         - name: Fehlerbehebung und häufig gestellte Fragen
           href: supply-chain-management-troubleshooting.md
-        - name: Globalisierung
+        - name: Globalization Studio
           items:
+            - name: Übersicht zu Globalization Studio
+              href: ../finance/localizations/globalization-studio-overview.md?context=/dynamics365/context/supply-chai
             - name: Globalisierungsressourcen
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?context=/dynamics365/context/supply-chain
             - name: Globalisierungsdienste
@@ -1631,17 +1633,19 @@
               items:
                 - name: Lagererfassungen
                   href: inventory/inventory-journals.md
-                - name: Workflows zur Genehmigung von Lagererfassungen
+                - name: Workflows zur Genehmigung von Bestandserfassungen
                   href: inventory/inventory-journal-workflow.md
                 - name: Lagerplätze für Lagerbestand
                   href: inventory/inventory-locations.md
                 - name: Bestandsstatus
                   href: inventory/inventory-statuses.md
+                - name: 'Chargendispositionscodes verwenden, um Chargen als verfügbar oder nicht verfügbar zu markieren'
+                  href: inventory/batch-disposition-codes.md
                 - name: Neues Lagerortlayout erstellen
                   href: inventory/tasks/create-new-warehouse-layout.md
                 - name: Strichcodetypen verwalten
                   href: inventory/tasks/maintain-barcode-types.md
-                - name: Bestandsverfügbarkeit überprüfen
+                - name: Überprüfung der Bestandsverfügbarkeit
                   href: inventory/tasks/check-availability-stock.md
                 - name: Liste des verfügbaren Lagerbestands
                   href: inventory/inventory-on-hand-list.md
