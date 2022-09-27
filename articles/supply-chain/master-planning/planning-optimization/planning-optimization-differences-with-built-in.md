@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: cf39166dce860dbd796cb4749175628252ed96ea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dd9493e85a90c00b2dd50abb6530661c0fbb77dc
+ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897573"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "9520836"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>Unterschiede zwischen integrierter Masterplanung und Planungsoptimierung
 
@@ -26,7 +26,7 @@ Die Ergebnisse der Planungsoptimierung können von den Ergebnissen der integrier
 | Funktion | Aktuelles Verhalten in der Planungsoptimierung |
 |---|---|
 | Artikelgewicht-Produkte | Artikelgewichte werden als übliche Produkte betrachtet.|
-| Erweiterbare Dimensionen | Erweiterbare Dimensionen sind bei geplanten Aufträgen leer, auch wenn das Kontrollkästchen **Planung nach Dimension** auf der Seite **Lagerungs-Dimensionsgruppen** oder **Tracking-Dimensionsgruppen** aktiviert ist. |
+| Erweiterbare Dimensionen | Erweiterbare Dimensionen werden von der Planungsoptimierung nicht unterstützt. Wenn Sie die Planungsoptimierung verwenden, sind erweiterbare Dimensionen auf geplanten Aufträgen leer, auch wenn das Kontrollkästchen **Abdeckungsplan nach Dimension** auf der Seite **Lagerungsdimensionsgruppen** oder **Verfolgungsdimensionsgruppen** aktiviert ist. |
 | Gefilterte Produktionsläufe | Für Details siehe [Produktionsplanung - Filter](production-planning.md#filters). |
 | Absatzplanung | Die Planung von Prognosen wird nicht unterstützt. Wir empfehlen die Verwendung der Produktprogrammplanung, bei der dem Masterplan ein Prognosemodell zugewiesen ist. |
 | Nummernkreise für geplante Aufträge | Nummernkreise für geplante Aufträge werden nicht unterstützt. Geplante Auftragsnummern werden auf der Serviceseite generiert. Die Nummer des geplanten Auftrags wird normalerweise mit 10 Stellen angezeigt, aber die Reihenfolge ist tatsächlich aus 20 Zeichen aufgebaut, wobei 10 Stellen der Anzahl der Planungsausführungen und die anderen 10 Stellen der Anzahl der geplanten Aufträge zugewiesen sind. |
@@ -38,6 +38,7 @@ Die Ergebnisse der Planungsoptimierung können von den Ergebnissen der integrier
 | Transport-Kalender | Der Wert in der Spalte **Transportkalender** auf der Seite **Liefermodi** wird ignoriert. |
 | Min/Max-Dispositionsverfahren ohne Werte| Wenn Sie mit dem integrierten Planungsmodul ein Min/Max-Dispositionsverfahren verwenden, bei dem keine Mindest- oder Höchstwerte festgelegt sind, behandelt das Planungsmodul das Dispositionsverfahren als Anforderung und erstellt eine Bestellung für jede Anforderung. Mit der Planungsoptimierung erstellt das System eine Bestellung pro Tag, um den vollen Betrag für diesen Tag abzudecken.  |
 | Nettobedarf und manuell angelegte Auftragsvorschläge | Mit dem integrierten Planungsmodul erscheinen manuell erstellte Beschaffungsaufträge für einen Artikel automatisch unter dem Nettobedarf für diesen Artikel. Wenn Sie beispielsweise eine Bestellung aus einem Auftrag erstellen, wird die Bestellung auf der **Nettobedarf**-Seite angezeigt, ohne dass vorherige Aktionen erforderlich sind. Dies liegt daran, dass das integrierte Planungsmodul Lagerbuchungen in der `inventLogTTS`-Tabelle protokolliert und Änderungen auf der **Nettobedarf**-Seite für dynamische Pläne zeigt. Bei der Planungsoptimierung werden manuell erstellte Aufträge jedoch nicht unter den Nettobedarfen eines Artikels angezeigt, bis die Planungsoptimierung ausgeführt wird (unter Verwendung eines Plans, der den Artikel enthält), oder bis Sie **Aktualisieren \> Produktprogrammplanung** im Aktivitätsbereich auf der **Nettobedarf**-Seite auswählen, die die Produktprogrammplanung für den Artikel ausführt. Weitere Informationen zum Arbeiten mit der Seite **Nettobedarf** finden Sie unter [Nettobedarf und Informationen zum Bedarfsverursacher in der Planungsoptimierung](net-requirements.md). |
+| Ressourcenzuweisung | Wenn Sie mit unendlicher Kapazität arbeiten, ordnet die integrierte Masterplanungs-Engine alle geplanten Aufträge derselben Ressource auf einer bestimmten Ressourcengruppe zu. Die Planungsoptimierung verbessert dies, indem sie Ressourcen nach dem Zufallsprinzip auswählt, so dass verschiedene Produktionsaufträge unterschiedliche Ressourcen verwenden können. Wenn Sie für alle geplanten Aufträge dieselbe Ressource verwenden möchten, müssen Sie diese Ressource in der Route angeben. |
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

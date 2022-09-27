@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 633daba553b1544c2caa788f4cec1da4c1da6960
-ms.sourcegitcommit: 7af116c60f3a94671a7a80c04097d70180754930
+ms.openlocfilehash: f9c85c4fbcc3c66d6cc4c65431b76c31cbb7aebf
+ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2022
-ms.locfileid: "9347288"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "9542351"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Passanalyse zu Planungsoptimierung
 
@@ -62,7 +62,7 @@ Die folgende Tabelle zeigt die verschiedenen Ergebnisse, die nach einer Anpassun
 | --- | --- | --- | --- |
 | Aktionen | Dispositionssteuerungsgruppen mit aktivierter Aktionsberechnung: *\#* | Diese Funktion wird jetzt unterstützt. | Unterstützt |
 | Basiskalender | Kalender, die den Basiskalender verwenden: *\#* | Diese Funktion wird jetzt unterstützt. | Unterstützt | 
-| Chargendispositionscodes | Nicht kompensierbare Chargendispositionsmaster: *\#* | Diese Funktion steht noch aus. Derzeit werden Chargendispositionscodes ignoriert, wenn die Planungsoptimierung aktiviert ist. | Veröffentlichungszyklus 2, 2022 |
+| Chargendispositionscodes | Nicht kompensierbare Chargendispositionsmaster: *\#* | Diese Funktion steht noch aus. Derzeit werden Chargendispositionscodes ignoriert, wenn die Planungsoptimierung aktiviert ist. | Veröffentlichungszyklus 2, 2022 <!-- KFM: Now available? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> |
 | Verfügbarkeitszusage (CTP) | Standardauftragseinstellungen mit Lieferdatumskontrolle, die auf CTP eingestellt ist: *\#* | In Supply Chain Management 10.0.28 und neuer stellt ein Prozess namens *CTP für Planungsoptimierung* bestätigte Versand- und Empfangsdaten zur Verfügung, nachdem der dynamische Plan ausgeführt wurde. Bei älteren Versionen von Supply Chain Management wird die veraltete CTP-Einstellung ignoriert, wenn die Planungsoptimierung aktiviert ist. | Unterstützt |
 | Statischen in dynamischen Plan kopieren | "Statischen in dynamischen Plan kopieren" ist in den Produktprogrammplanungsparametern aktiviert. | Die Planungsoptimierung kopiert den statischen Plan unabhängig von dieser Einstellung nicht in den dynamischen Plan. Im Allgemeinen ist dieses Konzept aufgrund der Geschwindigkeit und vollständigen Regeneration, die die Planungsoptimierung bietet, weniger relevant. Wenn zwei oder mehr Pläne verwendet werden, sollte für jeden Plan eine Masterplanung ausgelöst werden. | Nicht zutreffend |
 | Umwandeln | Dispositionssteuerungsgruppen mit automatisch umgewandeltem Umwandlungszeitraum: *\#* | In Version 10.0.7 und höher wird das Umwandeln nach Abschluss der Masterplanung als separater Umwandlungs-Batch-Job unterstützt (vorausgesetzt, die Funktion *Automatische Umwandlung zur Planungsoptimierung* wurde in der [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktiviert). Beachten Sie, dass die automatische Umwandlung für die Planungsoptimierung auf dem Bestelldatum (Startdatum) und nicht auf dem Anforderungsdatum (Enddatum) basiert. Dieses Verhalten stellt sicher, dass die Umwandlung von Planaufträgen rechtzeitig erfolgt, ohne dass die Vorlaufzeit in den Umwandlungszeitraum einbezogen werden muss. | Unterstützt |

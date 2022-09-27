@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 8d8fe042d7c56b86a5a7c92cc24480f573a2ea8a
-ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
+ms.openlocfilehash: 61819d9c5af64b58697e07be85beebc084ae5935
+ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9423568"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "9542285"
 ---
 # <a name="configure-inventory-visibility"></a>Inventory Visibility konfigurieren
 
@@ -53,6 +53,7 @@ Das Bestandsanzeige-Add-In fügt Ihrer Power Apps-Installation mehrere neue Funk
 |---|---|
 | *OnHandReservation* | Mit dieser Funktion können Sie mithilfe von Inventory Visibility Reservierungen erstellen, Reservierungen verbrauchen und/oder bestimmte Bestandsmengen aufheben. Weitere Informationen finden Sie unter [Reservierungen in Inventory Visibility](inventory-visibility-reservations.md). |
 | *OnHandMostSpecificBackgroundService* | Diese Funktion bietet eine Bestandsübersicht für Produkte zusammen mit allen Dimensionen. Die Bestandsübersicht wird regelmäßig von der Bestandsanzeige synchronisiert. Die standardmäßige Synchronisierungshäufigkeit ist einmal alle 15 Minuten und kann auf bis zu einmal alle 5 Minuten eingestellt werden. Weitere Informationen finden Sie unter [Bestandsübersicht](inventory-visibility-power-platform.md#inventory-summary). |
+| *onHandIndexQueryPreloadBackgroundService* | Diese Funktion ermöglicht das Vorladen von Inventory Visibility Abfragen zum Lagerbestand, um Lagerbestandslisten mit vorgewählten Dimensionen zusammenzustellen. Die Standard-Synchronisierungsfrequenz ist einmal alle 15 Minuten. Weitere Informationen finden Sie unter [Bestandsübersicht](inventory-visibility-power-platform.md#preload-the-inventory-visibility-onhand-query). |
 | *OnhandChangeSchedule* | Die optionale Funktion aktiviert die Funktionen Lagerbestandsänderung und Available to Promise (ATP). Weitere Informationen finden Sie unter [Inventory Visibility: verfügbarer Änderungszeitplan und verfügbar für Zusage](inventory-visibility-available-to-promise.md). |
 | *Zuweisung* | Diese optionale Funktion ermöglicht Inventory Visibility, Inventarschutz (Ringfencing) und Überverkaufskontrolle zu bieten. Weitere Informationen finden Sie unter [Bestandszuordnung für Bestandsichtbarkeit](inventory-visibility-allocation.md) |
 | *Lagerortartikel in Bestandsanzeige aktivieren* | Diese optionale Funktion ermöglicht Inventory Visibility, um Artikel zu unterstützen, die für Prozesse der Lagerverwaltung (WMS) aktiviert sind. Weitere Informationen finden Sie unter [Inventory Visibility-Unterstützung für WMS-Artikel](inventory-visibility-whs-support.md). |

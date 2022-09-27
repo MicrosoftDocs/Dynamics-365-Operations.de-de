@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1784b3c57bf1e6145085482d9068fad39ababc17
-ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
+ms.openlocfilehash: d2484b601a645694b988ac038a460a376ec912b0
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9475637"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538704"
 ---
 # <a name="administration-overview"></a>Überblick über die Verwaltung
 
@@ -100,7 +100,8 @@ Dieser Artikel enthält eine Liste der Hilfethemen und anderer Ressourcen, um Dy
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 ### <a name="elearning-courses"></a>E-Learning-Schulungen
-Informationen zu Onlinetrainings und Schulungen finden Sie unter [Dynamics 365 Human Resources](/learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
+
+Online-Kurse und Schulungen finden Sie unter [Dynamics 365 Human Resources Lernpfade](/training/browse/?products=dynamics-human-resources&resource_type=learning%20path).
 
 ### <a name="videos"></a>Videos
 

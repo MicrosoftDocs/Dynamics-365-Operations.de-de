@@ -2,7 +2,7 @@
 title: Aktualisierungsprozess
 description: Microsoft Dynamics 365 Human Resources ist ein echter Software-as-a-Service (SaaS), der kontinuierliche, eingriffsfreie Service-Updates für Anwendungs- und Plattformwechsel bietet.
 author: twheeloc
-ms.date: 09/01/2020
+ms.date: 09/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 25889f9d4a7ffb4f155b7b7c12ec3b21a44a4710
-ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
+ms.openlocfilehash: 71815866ef9674f317b7f08ecf2a65b465ddfff3
+ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9178442"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "9520809"
 ---
 # <a name="update-process"></a>Aktualisierungsprozess
 
 _**Gilt für:** Human Resources in der eigenständigen Infrastruktur_ 
 
 > [!NOTE]
-> Ab Juli 2022 können neue Human Resources Umgebungen nicht mehr in der eigenständigen Human Resources Infrastruktur bereitgestellt werden und neue Microsoft Dynamics Lifecycle Services (LCS) Projekte können dort nicht mehr erstellt werden. Debitor kann Human Resources Umgebungen in der Finanzen und Betrieb Infrastruktur bereitstellen. Weitere Informationen finden Sie unter [Personal Resources in der Finanzen und Betrieb Infrastruktur bereitstellen](/hr-admin-setup-provision-fo.md).
+> Ab Juli 2022 können neue Human Resources Umgebungen nicht mehr in der eigenständigen Human Resources Infrastruktur bereitgestellt werden und neue Microsoft Dynamics Lifecycle Services (LCS) Projekte können dort nicht mehr erstellt werden. Debitor kann Human Resources Umgebungen in der Finanzen und Betrieb Infrastruktur bereitstellen. Weitere Informationen finden Sie unter [Personal Resources in der Finanzen und Betrieb Infrastruktur bereitstellen](hr-admin-setup-provision-fo.md).
 
 > [!IMPORTANT]
 > Der Update- und Hotfix-Prozess in der Infrastruktur der Finanz- und Betriebs-Apps unterscheidet sich von dem eigenständigen Update- und Hotfix-Prozess für Human Resources. Weitere Informationen über den Aktualisierungsprozess finden Sie unter [Prozess für die Umstellung auf das neueste Update von Finanzen und Betrieb](../fin-ops-core/dev-itpro/migration-upgrade/upgrade-latest-update.md). Weitere Informationen zu Hotfixes finden Sie unter [Herunterladen von Updates von Lifecycle Services (LCS)](/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs.md). 

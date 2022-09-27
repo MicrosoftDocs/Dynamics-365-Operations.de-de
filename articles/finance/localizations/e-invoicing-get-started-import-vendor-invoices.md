@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 10.0.12
 ms.custom: 97423,  ""intro-internal
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: c98f33345b37a72c4099f01e37c82e27002ac687
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0195dc528f2fe6bf62efbf03f8706ea90f4a4fc4
+ms.sourcegitcommit: a5a4c45bb265758c6e5c3483c8552503b1799a89
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9283144"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "9524744"
 ---
 # <a name="use-the-electronic-invoicing-service-to-import-vendor-invoices"></a>Kreditorenrechnungen mit der elektronischen Rechnungsstellung importieren
 
@@ -107,7 +107,8 @@ Führen Sie die Schritte in den folgenden beiden Abschnitten aus, um verschieden
 2. Wählen Sie **Kontextmodell Kundenrechnung** aus und wählen Sie dann **Konfiguration erstellen** > **Ableiten vom Namen: Kundenrechnungsmodell, Microsoft** aus, um eine abgeleitete Konfiguration zu erstellen.
 3. Wählen Sie in der Version **Entwurf** die Option **Designer** aus und wählen Sie im Baum **Datenmodell** die Option **Modell zu Datenquelle zuordnen** aus.
 4. Wählen Sie im Baum **Definition** die Option **DataChannel** aus und wählen Sie dann **Designer** aus.
-5. Erweitern Sie im Baum **Datenquellen** den Container **$Context\_Channel**. Wählen Sie im Feld **Wert** die Option **Bearbeiten** aus und geben Sie den Datenkanalnamen ein. Dies ist der Name des Kanals, der in der Konfiguration des Datenkanals für die Funktion der elektronischen Rechnungsstellung in RCS angegeben wurde. 
+5. Erweitern Sie im Baum **Datenquellen** den Container **$Context\_Channel**. 
+6. Wählen Sie im Feld **Wert** die Option **Bearbeiten** > **Formel bearbeiten**, und geben Sie den Namen des Datenkanals ein. Dies ist der Name des Kanals, der in der Konfiguration des Datenkanals für die Funktion der elektronischen Rechnungsstellung in RCS angegeben wurde. 
 7. Wählen Sie **Speichern** aus und schließen Sie die Seite.
 8. Schließen Sie die Seite.
 9. Wählen Sie die soeben erstellte, abgeleitete Konfiguration aus **Kontextmodell Kundenrechnung** aus und wählen Sie auf dem Inforegister **Versionen** **Status ändern** > **Abgeschlossen** aus.

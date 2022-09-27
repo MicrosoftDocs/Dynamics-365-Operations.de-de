@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: f908caa902e4747d324480e3a5108b443d385ea7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: aa6c80914301cc0403974a6acc5e95ff61c9c1a7
+ms.sourcegitcommit: a5a4c45bb265758c6e5c3483c8552503b1799a89
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277330"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "9524688"
 ---
 # <a name="connected-applications"></a>Verbundene Anwendungen
 
@@ -35,7 +35,7 @@ Die Verfügbarkeit der Finance- oder Supply Chain Management-Parameter in RCS is
 ## <a name="create-a-connected-application"></a>Eine verbundene Anwendung erstellen
 
 1. Melden Sie sich bei Ihrem RCS-Konto an.
-2. Wählen Sie im Arbeitsbereich **Globalisierungsfunktion** im Abschnitt **Umgebung** die Kachel **Elektronische Rechnungsstellung** aus.
+2. Wählen Sie im Arbeitsbereich **Globalisierungsfunktion** im Abschnitt **Verwandte Links** die Option **Umgebung einrichten**.
 3. Wählen Sie auf der Seite **Einrichtung der Umgebung** im Aktionsbereich **Verbundene Anwendungen**.
 4. Wählen Sie **Neu** aus, um eine verbundene Anwendung zu erstellen.
 5. Geben Sie im Feld **Name** den Namen der zu verbindenden Anwendung ein.

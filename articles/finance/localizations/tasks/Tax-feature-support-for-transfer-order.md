@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b611abb2d68d93178d0c26ba40b22f1b8d26b191
-ms.sourcegitcommit: 6d9fcb52d723ac5022a3002e0ced8e7b56e9bc2a
+ms.openlocfilehash: c55d0891ed37d63f89ee09759965ac443db20dc6
+ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9203108"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "9542243"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Unterstützung der Steuerfunktion bei Umlagerungsaufträgen
 
@@ -63,7 +63,7 @@ Befolgen Sie diese Schritte, um die Steuer einzurichten, die in einem Umlagerung
         7. Wählen Sie **Speichern** aus.
         
         Erstellen Sie den Steuercode **BE-RC+21**.
-        1. Wählen Sie **Hinzufügen**, geben Sie **BE-RC-21** in dem **Steuercode**-Feld ein.
+        1. Wählen Sie **Hinzufügen**, geben Sie **BE-RC+21** in das Feld **Steuercode** ein.
         2. Wählen Sie **Nach Nettobetrag** in dem **Steuerkomponente**-Feld.
         3. Wählen Sie **Speichern** aus.
         4. Wählen Sie **Hinzufügen** in der **Satz**-Tabelle.
