@@ -1622,10 +1622,8 @@
                   href: sysadmin/session-idle-timeout.md
                 - name: Vordefinierte Sicherheitsberichte
                   href: sysadmin/security-reports.md
-                - name: Neue Benutzer erstellen
+                - name: Erstellen neuer Benutzer
                   href: sysadmin/tasks/create-new-users.md
-                - name: Benutzersitzungsverwaltung
-                  href: sysadmin/user-session-management.md
                 - name: Zugriff mit dem bedingten Zugriff von Azure AD nach Standort blockieren
                   href: /power-platform/admin/restrict-access-online-trusted-ip-rules?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
                 - name: Benutzer in Massen importieren
