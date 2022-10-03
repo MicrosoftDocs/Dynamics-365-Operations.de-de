@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 91243
 ms.assetid: 515bc6e7-a85d-4995-95c6-6cab6c8aa0f9
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e69fddf1acd9a9388f62da63e0ca6a19c7a95f55
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 4cd59d5ea2ef8d280a927fd9e9fe3b9af7974d7c
+ms.sourcegitcommit: 0a5885dc792fc608ae59d0ef9b36fb61790b24de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287079"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "9593986"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Neuheiten und Änderungen in Dynamics AX 7.0 (Februar 2016)
 
@@ -319,7 +319,7 @@ Diese Funktion funktioniert unabhängig von den Nachkalkulationsmethoden, die de
 <tr>
 <td>Zugriff auf geführte Verfahrensweisen (Aufgabenleitfäden) und grundlegende Themen über <strong>Hilfe</strong>.</td>
 <td>Das Hilfesystem von AX 2012 verweist auf HTML-Themen, die auf einem lokalen Webserver gespeichert werden. Kunden und Partner können ihre eigene Hilfe erstellen.</td>
-<td>Das Hilfesystem in der aktuellen Version von Dynamics AX zeigt Aufgabenleitfäden an, die in Microsoft Dynamics Lifecycle Services (LCS) BPM gespeichert sind. Das Hilfesystem enthält auch Themen aus der Microsoft-Docs-Seite. Weitere Informationen finden Sie unter <a href="help-overview.md" data-raw-source="[Help system](help-overview.md)">Hilfesystem</a> und <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides (February 2016)](new-task-guides-available-february-2016.md)">Neue Aufgabenleitfäden (Februar 2016)</a>.</td>
+<td>Das Hilfesystem in der aktuellen Version von Dynamics AX zeigt Aufgabenleitfäden an, die in Microsoft Dynamics Lifecycle Services (LCS) BPM gespeichert sind. Das Hilfesystem zeigt auch Themen aus Microsoft Learn an. Weitere Informationen finden Sie unter <a href="help-overview.md" data-raw-source="[Help system](help-overview.md)">Hilfesystem</a> und <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides (February 2016)](new-task-guides-available-february-2016.md)">Neue Aufgabenleitfäden (Februar 2016)</a>.</td>
 <td>Ein Aufgabenleitfaden ist eine kontrollierte, geführte, interaktive Erfahrung, die Sie durch die Schritte einer Aufgabe oder eines Geschäftsprozesses führt. Sie können die von Microsoft bereitgestellten Aufgabenleitfäden herunterladen und anpassen. Der Artikel ermöglicht schnellere und flexiblere Möglichkeiten zur Erstellung, Bereitstellung und Aktualisierung der Produktdokumentation. So können wir besser sicherstellen, dass Zugriff auf den neuesten technischen Informationen enthalten.</td>
 </tr>
 </tbody>

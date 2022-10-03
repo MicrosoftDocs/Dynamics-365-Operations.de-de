@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f9c85c4fbcc3c66d6cc4c65431b76c31cbb7aebf
-ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
+ms.openlocfilehash: 7e32b3ed6ed96de7193cc496e0630969137cd0c1
+ms.sourcegitcommit: 15b331f39d6e3ef811b9c2bf055a4f5b4572bae2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "9542351"
+ms.lasthandoff: 09/26/2022
+ms.locfileid: "9591849"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Passanalyse zu Planungsoptimierung
 
@@ -94,7 +94,7 @@ Die folgende Tabelle zeigt die verschiedenen Ergebnisse, die nach einer Anpassun
 | Produktion | Formelversionen mit Ertrag: *\#* | Diese Funktion steht noch aus. Derzeit wird Ertrag, der der Formelversion zugeordnet ist, ignoriert, wenn die Planungsoptimierung aktiviert ist. | Veröffentlichungszyklus 2, 2022 |
 | Produktion | Pläne einschließlich Abfolge: *\#* | Diese Funktion steht noch aus. Derzeit werden Abfolgen ignoriert, wenn die Planungsoptimierung unabhängig von dieser Einstellung aktiviert ist. | Veröffentlichungszyklus 2, 2022 |
 | Produktion | Freigegebene, noch nicht gestartete Produktionsaufträge, deren Beginn vor heute geplant ist: *\#* | Diese Funktion steht noch aus. Wenn sich ein Produktionsauftrag verzögert, wird die Masterplanung derzeit davon ausgehen, dass er heute abgeschlossen wird. Dies ist für freigegebene Produktionsaufträge relevant, bei denen ein Liefertermin in der Vergangenheit liegt, dieser jedoch noch nicht abgeschlossen wurde. | Zukünftiger Zyklus |
-| Produktion | Mit begrenzter Kapazität eingeplante Ressourcen: *\#* | Diese Funktion steht noch aus. Derzeit werden Ressourcen mit begrenzter Kapazität ignoriert, wenn die Planungsoptimierung aktiviert ist. Die Planung erfolgt basierend auf der Standardvorlaufzeit des Produkts. | Veröffentlichungszyklus 2, 2022 |
+| Produktion | Mit begrenzter Kapazität eingeplante Ressourcen: *\#* | Diese Funktion wird jetzt unterstützt.| Unterstützt |
 | Produktion | In Planung verwendete Arbeitspläne: *\#* | Diese Funktion wird unterstützt. | Unterstützt |
 | Produktion | Verkaufspositionsreservierung mit Stücklistenauflösung: *\#* | Verkaufspositionsreservierung, die Auflösung verwendet, wird nicht unterstützt, wenn die Planungsoptimierung aktiviert ist. | Zukünftiger Zyklus |
 | Produktion | Planung mit Auflösung von Produktionsaufträgen: *\#* | Terminplanung, die Auflösung von Produktionsaufträgen verwendet, wird nicht unterstützt, wenn die Planungsoptimierung aktiviert ist. Produktionsaufträge können individuell geplant werden. | Zukünftiger Zyklus |

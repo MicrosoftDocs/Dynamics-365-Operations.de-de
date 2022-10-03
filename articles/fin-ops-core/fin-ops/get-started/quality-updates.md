@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 985800aad3711a1b28613f0f82585b4d592cdf58
-ms.sourcegitcommit: de989037d83393bea013cd58c061159765305b4f
+ms.openlocfilehash: c2d26b7c5e110d05806c064e15a3ad2af34d0fbd
+ms.sourcegitcommit: fde2867524b6a851628185cbdeee60a6ad918d08
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473604"
+ms.lasthandoff: 09/26/2022
+ms.locfileid: "9592045"
 ---
 # <a name="proactive-quality-updates"></a>Proaktive Qualitätsupdates
 
@@ -57,7 +57,7 @@ Vor der Aktivierung der proaktiven Bereitstellung von Qualitätsupdates wird ein
 - **Schema**: Tools stellen sicher, dass hochwertige Update-Builds nur Schemaänderungen enthalten, die angewendet werden können, während der Dienst online ist. Dieser Ansatz trägt dazu bei, die Möglichkeit zu bewahren, das Update nahezu ohne Ausfallzeit anzuwenden.
 - **Verstärkte Änderungsprüfung**: Derzeit gibt es bereits einen zusätzlichen Prozessschritt, um Änderungen für die Aufnahme in ein Qualitätsupdate zu genehmigen. Die Prüfung im zusätzlichen Schritt wird verstärkt, um das Potenzial für Regressionen zu verringern. Breaking Changes sind in Qualitätsupdates nicht zulässig, und die verstärkte Änderungsprüfung wird dazu beitragen, dass wir dieses Ziel erreichen.
 - **Sichtbarkeit**: Wir senden Benachrichtigungen für bevorstehende proaktive Qualitätsupdates per E-Mail und Lifecycle Services (LCS). Darüber hinaus haben Supportteams und Vorfallleiter Einblick darin, wo Qualitätsupdates proaktiv bereitgestellt wurden.
-- **Versionsfallback**: Flighting wird verwendet, um alle Änderungen in einem proaktiven Qualitätsupdate zusammenzufassen. Wenn nach einer proaktiven Bereitstellung ein Fallback erforderlich ist, kann dies über das Flighting-System erfolgen.
+- **Fail Safe via Flighting** - Flighting wird verwendet, um Codeänderungen zu schützen, wo immer dies in einem Qualitätsupdate-Fehlerbehebung möglich ist, oder die bestehende Funktion Flighting zu verwenden, die für die Korrektur relevant ist. Wenn nach einer proaktiven Bereitstellung ein Fallback oder das Ausschalten einer Änderung erforderlich ist, kann dies über das Flighting-System erfolgen, um weitere Fehler zu vermeiden.
 - **Sandbox-Synchronisierungsbezeichnung**: Weniger als 20 Prozent der Kunden haben heute mehrere Sandboxes und halten eine Sandbox bereit, in der die Version mit der Produktion übereinstimmt, um bei der Fehlerbehebung zu helfen. Wenn ein Kunde eine Sandbox verwendet, um eine neuere Version als seine Produktion zu testen, erhält diese Sandbox Qualitätsupdates für die neuere Version.
 
 ## <a name="what-is-the-rollout-roadmap-for-quality-updates"></a>Wie sieht die Rollout-Roadmap für Qualitätsupdates aus?
@@ -69,7 +69,7 @@ In den Nächsten sechs Monaten steigern wir schrittweise den Prozentsatz der San
 Da Kunden regelmäßig kleinere Nutzlasten erhalten, erwarten wir, dass es einfacher wird, auf dem Laufenden zu bleiben. Wir werden die Häufigkeit der Update-Bereitstellung anpassen, wenn wir den Prozess nachweislich ohne Unterbrechung ausführen können. Dieser Prozess funktioniert für unsere Dataverse-Plattform und -Anwendungen bereits effektiv und liefert die erwarteten Verbesserungen der Servicequalität. Wir möchten den gleichen Schritt nach vorne unbedingt auch für Finanz- und Betriebsanwendungen machen.
 
 ## <a name="when-will-quality-updates-start-for-production-environments"></a>Wann beginnen Qualitätsupdates für Produktionsumgebungen?
-Derzeit zielen Qualitätsupdates nur auf Sandboxes ab. Updates für Produktionsumgebungen beginnen nach November 2022.
+Derzeit zielen Qualitätsupdates nur auf Sandboxes ab. Wir werden diesen Bereich mit einem Startdatum für Produktionsumgebungen aktualisieren, sobald wir konkretere Daten und Metriken von proaktiven Updates für Sandboxen haben, um die Bereitschaft für Prod.
 
 ## <a name="what-is-the-schedule-for-sandbox-quality-updates"></a>Wie sieht der Zeitplan für die Aktualisierung der Sandkastenqualität aus?
 Informationen zu den nutzungsschwachen Zeiten für jede Region finden Sie unter [Wie sieht der Zeitplan für proaktive Qualitätsaktualisierungen aus?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-is-the-schedule-for-proactive-quality-updates).

@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2021-04-30
-ms.openlocfilehash: 66a711aff90221e594f4b2a0df3735eac93d0c9b
-ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
+ms.openlocfilehash: 426473c14cdf9e171810aafd97dbb1afd5988b2f
+ms.sourcegitcommit: 24673493d14f2045a08fe7240689bee34e099cb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "9387018"
+ms.lasthandoff: 09/24/2022
+ms.locfileid: "9589088"
 ---
 # <a name="mass-deployment-of-sealed-commerce-self-service-components"></a>Massenbereitstellung versiegelter Commerce-Self-Service-Komponenten
 
@@ -47,7 +47,7 @@ Die folgende Tabelle zeigt die Trennzeichen, die bei der Befehlszeilenausführun
 | - EnvironmentId | Die Umgebungs-ID. |
 | -HardwareStationAppInsightsInstrumentationKey | Der Instrumentierungsschlüssel für Hardware Station-AppInsights. |
 | Installieren | Ein Parameter, der angibt, ob die von diesem Installationsprogramm bereitgestellte Komponente installiert werden soll. Dieser Parameter ist erforderlich, um eine Installation durchzuführen, und hat keinen führenden Bindestrich. |
-| -InstallOffline | Für Modern POS gibt dieser Parameter an, dass auch die Offlinedatenbank installiert und konfiguriert werden soll. Verwenden Sie auch den **-SQLServerName**-Parameter. Andernfalls versucht das Installationsprogramm, eine Standardinstanz zu finden, die die Voraussetzungen erfüllt. |
+| -InstallOffline | Für Modern POS gibt dieser Parameter an, dass auch die Offlinedatenbank installiert und konfiguriert werden soll. Verwenden Sie auch den **-SQLServerName**-Parameter. Andernfalls versucht das Installationsprogramm, eine Standardinstanz zu finden, die die Voraussetzungen erfüllt. Wenn Sie die Azure Active Directory (Azure AD) Authentifizierung verwenden, funktioniert POS offline nicht, da immer eine Online-Verbindung erforderlich ist. |
 | -Port | Der Port, der dem virtuellen Retail Server-Verzeichnis zugeordnet und von diesem verwendet werden soll. Wenn kein Port festgelegt wird, wird der Standardport 443 verwendet. |
 | -Register | Die Registerkennung, wie auf der **Register**-Seite in Headquarters angezeigt. |
 | -RetailServerAadClientId | Die Azure AD-Client-ID, die Retail Server während der Kommunikation mit Headquarters verwenden soll. |

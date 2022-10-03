@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6aa3dce4bfda7f3c9243387cd398f08e7b990b2f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0d5930ca2ce2bb1ae534f7e2b434836c3a4adeba
+ms.sourcegitcommit: cf27cf277b37666c838043e0695d39d52be5dcdd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894199"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "9588952"
 ---
 # <a name="accounting-distributions"></a>Buchhaltungsverteilungen
 
@@ -51,7 +51,7 @@ Die allgemeinen Buchhaltungsverteilungsfunktionen stellen die folgenden Optionen
     -   Sie können den aktuellen Buchhaltungsstatus des Dokuments unter anzeigen unter **Referenz**. Der Status ist für das gesamte Dokument und gibt an, ob das Dokument in Prozess oder in abgeschlossenem Zustand ist.
 -   **Verteilungen anzeigen** – Zeigt die Buchhaltungsverteilungen für alle Positionen und Geldbeträge im Dokument an. Sie können die Buchhaltungsverteilungen in dieser Ansicht nicht ändern.
 
-In Version 10.0.13 wurde eine Funktion hinzugefügt, die die Buchhaltungsverteilungstabelle überprüft, um sicherzustellen, dass neue Felder ordnungsgemäß eingerichtet sind. Hierbei handelt es sich um die Funktion **Zusätzliche Datenvalidierung aktivieren für Dokumente, die das Buchhaltungsframework des Quelldokuments verwenden**. Um diese Funktion zu verwenden, müssen Sie sie über den Arbeitsbereich **Funktionsverwaltung** aktivieren. Um die Funktion zu aktivieren, suchen Sie im Feld **Suche** nach dem Funktionsnamen auf der Seite **Funktionsverwaltung** und wählen Sie dann **Jetzt aktivieren** aus.
+In Version 10.0.13 wurde eine Funktion hinzugefügt, die die Buchhaltungsverteilungstabelle überprüft, um sicherzustellen, dass neue Felder ordnungsgemäß eingerichtet sind. Hierbei handelt es sich um die Funktion **Zusätzliche Datenvalidierung aktivieren für Dokumente, die das Buchhaltungsframework des Quelldokuments verwenden**. Diese Funktion wird in der Version 10.0.29 standardmäßig aktiviert sein. 
 
 Weitere Informationen finden Sie unter [Buchhaltungsverteilungen und Erfassungseinträge im untergeordneten Sachkonto für Kreditorenrechnungen](accounting-distributions-subledger-journal-entries-vendor-invoices.md)
 

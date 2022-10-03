@@ -2,7 +2,7 @@
 title: Konfiguration für Finance Insights
 description: In diesem Artikel werden die Konfigurationsschritte erläutert, mit denen Ihr System die in Finance Insights verfügbaren Funktionen nutzen kann.
 author: ShivamPandey-msft
-ms.date: 01/27/2022
+ms.date: 09/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ac0f0cb078b6e202540fadbff337a01379febc8a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 05bf5fe5a5ff86bbf52ed58ee6b1e84c15bf2c1e
+ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861415"
+ms.lasthandoff: 09/22/2022
+ms.locfileid: "9573193"
 ---
 # <a name="configuration-for-finance-insights"></a>Konfiguration für Finance Insights
 
@@ -39,7 +39,7 @@ Gehen Sie folgendermaßen vor, um die Umgebungen bereitzustellen.
 1. Im LCS erstellen oder aktualisieren Sie eine Dynamics 365 Finance-Umgebung. Die Umgebung erfordert App-Version 10.0.21 oder höher.
 
     > [!NOTE]
-    > Die Umgebung muss eine Hochverfügbarkeitsumgebung (HA-Umgebung) sein. (Diese Art von Umgebung wird auch als Ebene-2-Umgebung bezeichnet.) Weitere Informationen finden Sie unter [Umgebungsplanung](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+    > Die Umgebung muss eine Hochverfügbarkeitsumgebung (HA-Umgebung) sein. (Diese Art von Umgebung wird auch als Ebene-2-Umgebung bezeichnet.) Weitere Informationen finden Sie unter [Umgebungsplanung](/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
 
 2. Wenn Sie Finance Insights in einer Sandbox-Umgebung konfigurieren, müssen Sie möglicherweise Produktionsdaten erst in diese Umgebung kopieren, damit Vorhersagen funktionieren. Das Vorhersagemodell verwendet Daten aus mehreren Jahren, um Vorhersagen zu erstellen. Die Contoso-Demodaten enthalten nicht genügend historische Daten, um das Vorhersagemodell angemessen zu trainieren. 
 
@@ -51,13 +51,16 @@ Stellen Sie sicher, dass die folgende Einrichtung abgeschlossen ist:
 
 - Sie haben **Systemadministrator** und **Systemanpasser**-Zugriff im Power Portal Admin Center.
 - Eine Dynamics 365 Finance- oder eine gleichwertige Lizenz wird auf den Benutzer angewendet, der das Finance Insights-Add-In installiert.
+- Folgende Azure AD-Apps sind in Azure AD registriert.
 
-Folgende Azure AD-Apps sind in Azure AD registriert.
+    |  Anwendung                             | App-Kennung                               |
+    |------------------------------------------|--------------------------------------|
+    | Microsoft Dynamics ERP-Microservices-CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
 
-|  Bewerbung                             | App-Kennung                               |
-|------------------------------------------|--------------------------------------|
-| Microsoft Dynamics ERP-Microservices-CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
-    
+    Um zu überprüfen, ob die Anwendung in Azure AD registriert ist, prüfen Sie die Liste **Alle Anwendungen**. Weitere Einzelheiten finden Sie unter [Unternehmensanwendungen anzeigen](/azure/active-directory/manage-apps/view-applications-portal).
+  
+    Wenn die Anwendung nicht in Azure AD registriert ist, wenden Sie sich an den Support.
+  
 ## <a name="configure-dataverse"></a>Dataverse konfigurieren
 
 Gehen Sie folgendernamßen vor, um Dataverse für Finance Insights zu konfigurieren.
