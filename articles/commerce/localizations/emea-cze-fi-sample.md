@@ -2,19 +2,19 @@
 title: Integrationsbeispiel für Steuererfassungsdienst für die Tschechische Republik
 description: In diesem Artikel erhalten Sie einen Überblick über das steuerliche Integrationsbeispiel für die Tschechische Republik in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 08/17/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-04-01
-ms.openlocfilehash: 3838792c0a420fb88ea9daab0a67c2e644c80681
-ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
+ms.openlocfilehash: de26b038009d8bf3518c67389c96aade19a0b65b
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2022
-ms.locfileid: "9313747"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631284"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-the-czech-republic"></a>Integrationsbeispiel für Steuererfassungsdienst für die Tschechische Republik
 
@@ -48,7 +48,7 @@ Die folgenden Szenarien werden im Beispiel für die Integration des Steuerregist
 - Fehlerbehebung, wie beispielsweise die folgenden Optionen.
 
     - Versuchen Sie die Steuererfassung erneut, falls ein Neuversuch möglich ist, wie z. B. wenn der Steuererfassungsdienst nicht verfügbar ist, nicht bereit ist oder nicht reagiert.
-    - Verschieben Sie die Steuererfassung.
+    - Setzen Sie die Steuerregistrierung zurück.
     - Überspringen Sie Steuererfassung, oder markieren Sie die Buchung als erfasst, und schließen Sie Infocodes ein, um den Grund für den Fehler und zusätzliche Informationen zu erfassen.
     - Überprüfen Sie die Verfügbarkeit des Steuererfassungsdiensts, bevor eine neue Verkaufsbuchung geöffnet wird oder eine Verkaufsbuchung abgeschlossen wird.
 
@@ -188,7 +188,7 @@ Schließen Sie die Schritte zur Einrichtung der steuerlichen Integration ab, wie
 
 1. [Richten Sie einen Steuererfassungsprozesses ein](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Beachten Sie auch die Einstellungen für den Steuererfassungsprozess, die [für dieses Steuererfassungsdienst-Integrationsbeispiel spezifisch sind](#set-up-the-registration-process).
 1. [Legen Sie Einstellungen zur Fehlerbehandlung fest](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-1. [Aktivieren Sie manuelle Ausführung der verschobenen steuerlichen Erfassung](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Die manuelle Ausführung der zurückgestellten Steuerregistrierung](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration)
 1. [Konfigurieren Sie die Channel-Komponenten](#configure-channel-components).
 
 ### <a name="set-up-the-registration-process"></a>Den Erfassungsprozess einrichten

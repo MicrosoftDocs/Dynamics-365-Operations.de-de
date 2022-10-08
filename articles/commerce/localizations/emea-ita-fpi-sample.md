@@ -2,19 +2,19 @@
 title: Beispiel für die Einbindung eines Belegdruckers für Italien
 description: In diesem Artikel erhalten Sie einen Überblick über das steuerliche Integrationsbeispiel für Italien in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 08/18/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-11-01
-ms.openlocfilehash: dff555a58c31b4e3daedd56b617dd44c4a87e601
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 6ad97e87e4114a8f2250d0ba4880b7a466b3689e
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336748"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631395"
 ---
 # <a name="fiscal-printer-integration-sample-for-italy"></a>Beispiel für die Einbindung eines Belegdruckers für Italien
 
@@ -67,7 +67,7 @@ Die folgenden Szenarien werden im Beispiel für die Integration des Steuerregist
 - Fehlerbehebung, wie beispielsweise die folgenden Optionen:
 
     - Versuchen Sie die Fiskalregistrierung erneut, wenn ein erneuter Versuch möglich ist, z. B. wenn der Fiskaldrucker nicht angeschlossen ist, nicht bereit ist oder nicht reagiert, der Drucker kein Papier hat oder ein Papierstau vorliegt.
-    - Verschieben Sie die Steuererfassung.
+    - Setzen Sie die Steuerregistrierung zurück.
     - Überspringen Sie Steuererfassung, oder markieren Sie die Buchung als erfasst, und schließen Sie Infocodes ein, um den Grund für den Fehler und zusätzliche Informationen zu erfassen.
     - Prüfen Sie die Verfügbarkeit des Fiskaldruckers, bevor eine neue Verkaufstransaktion eröffnet oder eine Verkaufstransaktion abgeschlossen wird.
 
@@ -111,7 +111,7 @@ Schließen Sie die Schritte zur Einrichtung der Fiskalintegration ab, die unter 
 1. [Steuertexte für Rabatte einrichten](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
 1. [Legen Sie Einstellungen zur Fehlerbehandlung fest](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 1. [Fiskalische X/Z-Berichte vom POS festlegen](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
-1. [Aktivieren Sie manuelle Ausführung der verschobenen steuerlichen Erfassung](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Die manuelle Ausführung der zurückgestellten Steuerregistrierung](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration)
 1. [Einrichten der Funktionalität für die Verwaltung von Kundeninformationen in POS](emea-ita-customer-information.md#setup).
 1. [Kanal-Komponenten konfigurieren](#configure-channel-components).
 

@@ -2,19 +2,19 @@
 title: Produktvergleichsmodule
 description: Dieser Artikel beschreibt Produktvergleichsmodule und wie sie implementiert werden, damit Kunden Produktvergleiche auf Microsoft Dynamics 365 Commerce E-Commerce-Websites durchführen können.
 author: ashishmsft
-ms.date: 08/09/2022
+ms.date: 10/03/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 6fd851ce6b32d0772c3fe23c4d7bd4dae2616fdc
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: 9ff45f3fbcc86b21f336d580582adef586417de4
+ms.sourcegitcommit: 66b954827826706ea2ba00c2afd5d694ad92148d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9474125"
+ms.lasthandoff: 10/03/2022
+ms.locfileid: "9618384"
 ---
 # <a name="product-comparison-modules"></a>Produktvergleichsmodule
 
@@ -91,6 +91,19 @@ Fügen Sie Produktkacheln auf Such- und Kategorieergebnisseiten eine Produktverg
 1. Legen Sie im Eigenschaftsfenster rechts die Eigenschaften für das **Produktvergleichsschaltfläche**-Modul fest:
 1. Wählen **Speichern** und dann **Vorschau** aus, um eine Vorschau der Seite anzuzeigen.
 1. Wählen **Bearbeiten beenden**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen**, um sie zu veröffentlichen.
+
+## <a name="add-a-product-comparison-preview-panel-module-to-pages-on-your-website"></a>Den Seiten Ihrer Website ein Vorschaumodul für den Produktvergleich hinzufügen
+
+Ein Vorschaumodul für den Produktvergleich bietet Ihren Kunden die Möglichkeit, Produkte zu überprüfen, die sie aus dem Vergleich hinzufügen oder daraus entfernen. Das Vorschaufenster bietet auch die Möglichkeit, direkt zur Vergleichsseite zu navigieren oder die gesamte Produktliste zu löschen. 
+
+Wir empfehlen, dass Sie das Vorschaufenster auf allen Seiten aktivieren, für welche die **Produktvergleichsschaltfläche** aktiviert ist. Das Modul kann der **Produktvergleichsschaltfläche** als Slot hinzugefügt oder als eigenständiges Modul verwendet werden, das Sie auf jeder Seite konfigurieren können, selbst wenn es keine Funktion zum Hinzufügen oder Entfernen von Produkten zum Vergleichen gibt. 
+
+Sie müssen das Vorschaumodul für den Produktvergleich manuell einer Seite hinzufügen. Sie sollten auf einer Seite nur ein Vorschaumodul hinzufügen. Wenn Sie einer Seite mehrere Instanzen des Moduls hinzufügen, wird das erste Modul gerendert und der Rest ignoriert.
+
+![Vorschaufenster für den Produktvergleich](./media/product-comparison-preview-panel-2.png)
+
+Wenn Sie einen Grenzwert für den Produktvergleich angeben, haben Sie die Möglichkeit, graue Platzhalter im Vorschaufenster zu aktivieren, die angeben, wie viele weitere Produkte zum Vergleich hinzugefügt werden können. Die grauen Platzhalter werden mit Produkten ersetzt, wenn diese dem Vergleich hinzugefügt werden. Um einen Grenzwert für den Produktvergleich zu konfigurieren und graue Platzhalter zu aktivieren, gehen Sie im Website-Generator zu **Websiteeinstellungen > Erweiterungen** und nehmen Sie Ihre Änderungen im Bereich **Produktvergleiche** vor. Die Konfiguration wird auf alle Vorschaufenster für alle Seiten angewendet. 
+
 
 ## <a name="specify-the-maximum-number-of-products-to-show-in-the-comparison-tray"></a>Geben Sie die maximale Anzahl von Produkten an, die in der Vergleichsleiste angezeigt werden sollen
 

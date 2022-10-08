@@ -14,12 +14,12 @@ ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
 ms.custom: ''
 ms.search.industry: Retail
-ms.openlocfilehash: b93852bfb7c6f5a9f2f83f30a1f76da3f9559c7e
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: d01ad490301dd2f4103b8bd3f702db12b93a45a8
+ms.sourcegitcommit: bd7b1ffe90b25eb4c68d6aaebd063bf33e09d9cd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286836"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "9627495"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Retouren- und Rückerstattungsrichtlinie für einen Kanal erstellen und aktualisieren
 
@@ -36,12 +36,8 @@ Der Geltungsbereich der Richtlinie beschränkt sich derzeit auf die Festlegung d
 
 ## <a name="enable-return-policy"></a>Aktivieren der Rücklieferungsrichtlinie
 
-Führen Sie die folgenden Schritte aus, um die Rückgaberichtlinienfunktionalität in der Commerce-Zentralverwaltung zu aktivieren.
+Diese Funktion ist standardmäßig aktiviert. Sie finden sie im Arbeitsbereich **Funktionsverwaltung**, indem Sie in der Liste der Funktionsnamen nach **Kanalrückgaberichtlinien aktivieren** suchen.
 
-1. Gehen Sie in Dynamics 365 Commerce zum Arbeitsbereich **Funktionsverwaltung**.
-1. Suchen Sie in der Liste der Funktionsnamen nach der Funktion **Aktivieren der Kanal-Rücklieferungsrichtlinien**.
-1. Wählen Sie **Jetzt aktivieren**.
-1. Führen Sie auf der Seite **Verteilungsplan** den Vorgang **1110** (globale Konfiguration) zum Verteilen der Funktionsänderung aus.
 
 ## <a name="configure-return-policy"></a>Konfigurieren der Rücklieferungsrichtlinie
 

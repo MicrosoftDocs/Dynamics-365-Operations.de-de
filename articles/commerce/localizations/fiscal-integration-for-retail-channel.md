@@ -2,19 +2,19 @@
 title: Übersicht über die Fiskalintegration für Commerce-Kanäle
 description: Dieser Artikel bietet einen Überblick der Steuerintegrationsfunktionen, die in Dynamics 365 Commerce verfügbar sind.
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 0a56df2a463153c6c3986ce84907e25ea7d965b8
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 1812405db3c1e58eaf7cd1df3896f786e7bf026f
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286498"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631235"
 ---
 # <a name="fiscal-integration-overview-for-commerce-channels"></a>Übersicht über die Fiskalintegration für Commerce-Kanäle
 
@@ -41,7 +41,7 @@ Ein Steuerregistrierungsprozess in Retail POS kann aus einem oder mehreren Schri
 
 Ein Beispiel für eine Fiskalintegration kann die Commerce Runtime (CRT), die Hardware-Station und POS-Erweiterungen für einen Anbieter von fiskalischen Belegen und einen fiskalischen Konnektor enthalten. Es enthält auch die folgenden Komponentenkonfigurationen:
 
-- **Steuerdokumentanbieter-Konfiguration** – Diese Konfiguration definiert eine Ausgabemethode und ein Format für Steuerdokumente. Er enthält auch eine Datenzuordnung für Steuern und Zahlungsformen, um Daten aus Retail POS mit den Werten kompatibel zu machen, die in der Fiskalgerät- oder Service-Firmware vordefiniert sind.
+- **Steuerdokumentanbieter-Konfiguration**: Diese Konfiguration definiert eine Ausgabemethode und ein Format für Steuerdokumente. Er enthält auch eine Datenzuordnung für Steuern und Zahlungsformen, um Daten aus Retail POS mit den Werten kompatibel zu machen, die in der Fiskalgerät- oder Service-Firmware vordefiniert sind.
 - **Fiscal Konnektor Konfiguration** - Diese Konfiguration definiert die physische Kommunikation mit dem spezifischen Fiskalgerät oder -dienst.
 
 Ein Steuerregistrierungsprozess für ein bestimmtes POS-Register wird von einer entsprechenden Einstellung im POS-Funktionsprofil definiert. Weitere Einzelheiten zum Konfigurieren eines fiskalischen Registrierungsprozesses, zum Hochladen von Konfigurationen für fiskalische Belege und fiskalische Konnektoren sowie zum Ändern von Konfigurationsparametern finden Sie unter [Einrichten eines fiskalischen Registrierungsprozesses](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
@@ -95,16 +95,20 @@ Diese Konfiguration wird verwendet, wenn ein physisches Fiskalgerät oder ein Fi
 
 Das Steuerintegrationsframework bietet folgende Optionen, um Fehler bei der Steuerregistrierung zu behandeln:
 
-- **Wiederholen** – Operatoren können diese Option verwenden, wenn der Fehler schnell behoben werden kann, und die Steuerregistrierung erneut ausgeführt werden kann. Beispielsweise kann diese Option verwendet werden, falls das steuerbezogene Gerät nicht verbunden ist, im Belegdrucker kein Papier mehr vorhanden ist oder Papierstau im Belegdrucker herrscht.
-- **Abbrechen** – Mit dieser Option können Operatoren die Steuerregistrierung der aktuellen Transaktion oder des aktuellen Ereignisses verschieben, auch bei einem Fehler. Nachdem die Registrierung verschoben ist, kann der Operator am POS weiterarbeiten und jeden beliebigen Arbeitsgang abschließen, für den die Steuerregistrierung nicht erforderlich ist. Wenn ein Ereignis, das die Steuerregistrierung erfordert, am POS auftritt (beispielsweise wird eine neue Transaktion geöffnet), wird das Fehlerbehandlungsdialogfeld automatisch angezeigt, um den Operator zu benachrichtigen, dass die vorherige Transaktion nicht ordnungsgemäß erfasst wurde und um die Fehlerbehandlungsoptionen bereitzustellen.
-- **Überspringen** – Operatoren können diese Option verwenden, wenn die Steuerregistrierung unter bestimmten Bedingungen ausgelassen werden kann und regelmäßige Vorgänge am POS fortgesetzt werden können. Beispielsweise kann diese Option verwendet werden, wenn eine Verkaufsbuchung, bei der ein Fehler bei der Steuerregistrierung aufgetreten ist, in einer Papiererfassung erfasst werden kann.
-- **Als registriert markieren** – Operatoren können diese Option verwenden, wenn die Transaktion tatsächlich auf dem steuerbezogenen Gerät registriert wurde (z. B. wurde ein Steuerbeleg ausgedruckt), jedoch ein Fehler aufgetreten ist, als die Steuerantwort in der Kanaldatenbank gespeichert wurde.
-- **Aufschieben** - Operatoren können diese Option verwenden, wenn die Transaktion nicht registriert wurde, weil der Registrierungsdienst nicht verfügbar war. 
+- **Wiederholen**: Der Operator kann diese Option verwenden, wenn der Fehler schnell behoben werden kann, und die Steuerregistrierung erneut ausgeführt werden kann. Beispielsweise kann diese Option verwendet werden, falls das steuerbezogene Gerät nicht verbunden ist, im Belegdrucker kein Papier mehr vorhanden ist oder Papierstau im Belegdrucker herrscht.
+- **Abbrechen**: Mit dieser Option kann der Operator die Steuerregistrierung der aktuellen Transaktion oder des aktuellen Ereignisses zurückstellen, auch bei einem Fehler. Nachdem die Registrierung zurückgestellt wurde, kann der Operator am POS weiterarbeiten und jeden beliebigen Arbeitsgang abschließen, für den die Steuerregistrierung nicht erforderlich ist. Wenn ein Ereignis, das die Steuerregistrierung erfordert, am POS auftritt (beispielsweise wird eine neue Transaktion geöffnet), wird das Fehlerbehandlungsdialogfeld automatisch angezeigt, um den Operator zu benachrichtigen, dass die vorherige Transaktion nicht ordnungsgemäß erfasst wurde und um die Fehlerbehandlungsoptionen bereitzustellen.
+- **Überspringen**: Der Operator kann diese Option verwenden, wenn es nicht möglich ist, die Steuerregistrierung der aktuellen Transaktion oder des aktuellen Ereignisses abzuschließen, z. B. wenn der Belegdrucker außer Betrieb ist, **und** die Steuerregistrierung kann unter bestimmten Voraussetzungen entfallen. Beispielsweise kann diese Option verwendet werden, wenn eine Verkaufsbuchung, bei der ein Fehler bei der Steuerregistrierung aufgetreten ist, in einer Papiererfassung erfasst werden kann. Nach dem Überspringen der Steuerregistrierung kann der reguläre Betrieb am POS fortgesetzt werden. 
+- **Als registriert markieren**: Der Operator kann diese Option verwenden, wenn die aktuelle Transaktion oder das aktuelle Ereignis auf dem Fiskalgerät registriert wurde, z. B. wenn ein Steuerbeleg ausgedruckt wurde, jedoch ein Fehler auftritt, wenn die Steuerantwort in der Kanaldatenbank gespeichert wird. Nachdem die aktuelle Transaktion oder das aktuelle Ereignis als registriert markiert wurde, kann der reguläre Betrieb am POS fortgesetzt werden.
+- **Aufschieben**: Der Operator kann diese Option verwenden, wenn die Transaktion nicht registriert wurde, weil das Registrierungsgerät oder der Registrierungsdienst nicht verfügbar ist **und** einer der folgenden Fälle zutrifft:
+    - Es gibt eine Sicherungsoption für die Steuerregistrierung und der Steuerregistrierungsprozess für die aktuelle Transaktion kann fortgesetzt werden. Zum Beispiel kann ein lokales [Fiskalgerät](./latam-bra-cf-e-sat.md#scenario-4-make-a-cash-and-carry-sale-of-goods-by-using-sat-as-contingency-mode) eine Sicherungsoption für einen Online-Steuerregistrierungsdienst sein, wenn der Dienst nicht verfügbar ist.
+    - Die Steuerregistrierung kann später mit anderen Mitteln als dem Steuerintegrationsframework abgeschlossen werden. Zum Beispiel können aufgeschobene Transaktionen kann die Steuerregistrierung später in einem Stapel durch eine [separate Funktionalität](./latam-bra-nfce.md#scenario-3-make-a-cash-and-carry-sale-of-goods-in-offline-contingency-mode) durchgeführt werden.
+    
+    Nachdem die aktuelle Transaktion oder das aktuelle Ereignis verschoben wurde, kann der reguläre Betrieb am POS fortgesetzt werden.
 
-> [!NOTE]
-> Die Optionen **Überspringen**, **Als registriert markieren** und **Verschieben** müssen bei der Fiskalregistrierung aktiviert werden, bevor sie verwendet werden können. Darüber hinaus müssen Operatoren entsprechende Berechtigungen gewährt werden.
+> [!WARNING]
+> Die Optionen **Überspringen**, **Als registriert markieren** und **Verschieben** sollten als Notfalloptionen betrachtet und nur in Ausnahmefällen verwendet werden. Besprechen Sie diese Optionen zur Fehlerbehandlung mit Ihrem Rechtsanwalt oder Steuerberater und setzen Sie Ihren gesunden Menschenverstand ein, bevor Sie sie aktivieren. Die Optionen müssen im Steuerregistrierungsprozess aktiviert werden, bevor sie verwendet werden. Um sicherzustellen, dass Operatoren sie nicht regelmäßig verwenden, müssen ihnen entsprechende Berechtigungen erteilt werden.
 
-Die Optionen **Überspringen**, **Als registriert markieren** und **Verschieben** ermöglichen es, mit Hilfe von Infocodes bestimmte Informationen über einen Fehler zu erfassen, z.B. den Grund für den Fehler oder eine Begründung für das Überspringen der steuerlichen Registrierung oder das Markieren der Transaktion als registriert. Weitere Informationen zum Einrichten von Fehlerbehandlungsparametern finden Sie unter [Festlegen von Fehlerbehandlungseinstellungen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+Eine [Steuertransaktion](#storing-fiscal-response-in-fiscal-transaction) wird erstellt, wenn die Optionen **Überspringen**, **Als registriert markieren** oder **Verschieben** ausgewählt sind, die Steuertransaktion aber keine Steuerantwort erhält. Auf diese Weise können Sie das Ereignis einer fehlgeschlagenen Steuerregistrierung erfassen. Mit diesen Optionen können darüber hinaus mithilfe von Infocodes bestimmte Informationen über einen Fehler erfasst werden, z. B. der Grund für den Fehler oder eine Begründung für das Überspringen der Steuerregistrierung oder das Markieren der Transaktion als registriert. Weitere Informationen zum Einrichten von Fehlerbehandlungsparametern finden Sie unter [Festlegen von Fehlerbehandlungseinstellungen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 ### <a name="optional-fiscal-registration"></a>Optionale Steuerregistrierung
 
@@ -112,11 +116,7 @@ Steuerliche Erfassung ist möglicherweise erforderlich für einige Vorgänge abe
 
 ### <a name="manually-rerun-fiscal-registration"></a>Fiskalische Registrierung manuell wiederholen
 
-Wenn die Buchung einer Steuererfassung oder einess Ereignisses nach einem Fehler (beispielsweise wenn der Operator **Abbrechen** im Fehlerbehandlungsdialogfeld gewählt hat) verschoben wurde, können Sie die steuerliche Erfassung manuell überprüfen, indem Sie einen entsprechenden Arbeitsgang aufrufen. Weitere Details finden Sie unter [Manuelle Ausführung der verschobenen steuerlichen Erfassung aktivieren](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
-
-### <a name="postpone-option"></a>Option aufschieben
-
-Mit der Option **Aufschieben** können Sie den fiskalischen Registrierungsprozess fortsetzen, wenn der aktuelle Schritt fehlschlägt. Sie kann verwendet werden, wenn es eine Option zur Sicherung der steuerlichen Registrierung gibt.
+Wenn die Steuerregistrierung einer Transaktion oder eines Ereignisses nach einem Fehler (beispielsweise wenn der Operator **Abbrechen** im Fehlerbehandlungsdialogfeld gewählt hat) zurückgestellt wurde, können Sie die Steuerregistrierung manuell überprüfen, indem Sie einen entsprechenden Arbeitsgang aufrufen. Weitere Details finden Sie unter [Manuelle Ausführung der zurückgestellten Steuerregistrierung aktivieren](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 
 ### <a name="fiscal-registration-health-check"></a>Steuerliche Erfassungsintegritätsprüfung
 
@@ -138,7 +138,7 @@ Wenn die Integritätsprüfung fehlschlägt, wird im POS das Integritätsprüfung
 
 ## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Speichern der Steuerantwort in der Steuertransaktion
 
-Wenn die Steuerregistrierung einer Transaktion oder eines Ereignisses erfolgreich war, wird eine Steuertransaktion in der Kanaldatenbank erstellt und mit der ursprünglichen Transaktion oder dem ursprünglichen Ereignis verknüpft. Wenn die Option **Überspringen** oder **Als registriert markieren** für eine fehlgeschlagene Steuerregistrierung ausgewählt ist, werden diese Informationen in einer Steuertransaktion entsprechend gespeichert. Eine Steuertransaktion enthält die Steuerantwort vom steuerbezogenen Gerät oder Dienst. Wenn der Steuerregistrierungsprozess aus mehreren Schritten besteht, wird eine Steuertransaktion für die einzelnen Schritte des Prozesses erstellt, der zu einer erfolgreichen oder fehlgeschlagenen Registrierung geführt hat.
+Wenn die Steuerregistrierung einer Transaktion oder eines Ereignisses erfolgreich war, wird eine Steuertransaktion in der Kanaldatenbank erstellt und mit der ursprünglichen Transaktion oder dem ursprünglichen Ereignis verknüpft. Wenn die Option **Überspringen**, **Als registriert markieren** oder **Verschieben** für eine fehlgeschlagene Steuerregistrierung ausgewählt ist, werden diese Informationen in einer Steuertransaktion entsprechend gespeichert. Eine Steuertransaktion enthält die Steuerantwort vom steuerbezogenen Gerät oder Dienst. Wenn der Steuerregistrierungsprozess aus mehreren Schritten besteht, wird eine Steuertransaktion für die einzelnen Schritte des Prozesses erstellt, der zu einer erfolgreichen oder fehlgeschlagenen Registrierung geführt hat.
 
 Steuerbezogene Buchungen werden zusammen mit den Transaktionen über den *P-Job* an die Zentralverwaltung übertragen. Im Inforegister **Steuerbezogene Buchungen** auf der Seite für **Geschäftsbuchungen** können Sie die steuerbezogenen Buchungen anzeigen, die mit den Transaktionen verknüpft sind.
 

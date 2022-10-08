@@ -2,7 +2,7 @@
 title: Neuerungen oder Änderungen in Dynamics 365 Commerce 10.0.29. (Oktober 2022)
 description: Dieser Artikel beschreibt Funktionen, die entweder neu oder geändert in Microsoft Dynamics 365 Commerce 10.0.29 sind.
 author: josaw1
-ms.date: 08/17/2022
+ms.date: 09/29/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 6e457864f51159f46f45e9b8969863c9d34c5786
-ms.sourcegitcommit: 56677afde87a9176f879482a7af223e251801d5d
+ms.openlocfilehash: 0629228516d688abf4dcd4280d1ad676f8f35331
+ms.sourcegitcommit: ce4e56d798281258479432ad821287a1cc8e26bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "9475902"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9601570"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10029-october-2022"></a>Neuerungen oder Änderungen in Dynamics 365 Commerce 10.0.29. (Oktober 2022)
 
@@ -39,6 +39,7 @@ Die folgende Tabelle listet die Funktionen auf, die in dieser Version enthalten 
 | E-Commerce | Unterstützung beim Produktvergleich im E-Commerce | Ermöglichen Sie Käufern, Produkte in einer Vielzahl von Kategorien zu vergleichen, damit sie die richtige Kaufentscheidung für sich selbst treffen können. Diese Funktion ist sowohl für Business-to-Consumer- (B2C) als auch für B2B-Sites verfügbar. | Site Builder | 
 | Geschenkkarten | Unterstützung für Geschenkkartentabellen für den unternehmensübergreifenden Datenaustausch | Die Dynamics-Zentrale unterstützt die Möglichkeit, die unternehmensübergreifende gemeinsame Nutzung von Daten für bestimmte Tabellen in der Dynamics-Architektur zu ermöglichen. In dieser Funktion fügt Dynamics 365 Commerce Unterstützung für Geschenkkartentabellen für den unternehmensübergreifenden Datenaustausch hinzu. Daher können die Daten einer Geschenkkarte in einem Unternehmen jetzt auf ein anderes Unternehmen in der Umgebung dupliziert werden. Änderungen, die an der Tabelle der ursprünglichen Firmengeschenkkarten vorgenommen werden, werden an die duplizierte Firmengeschenkkartentabelle weitergegeben. | Entwickler |
 | Globalisierung | [Commerce Lokalisierungsfunktionen für das neue Commerce SDK aktivieren](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-commerce-localization-features-new-commerce-sdk) | Die neue Funktion bietet die Möglichkeit, Commerce Lokalisierungsfunktionen von Commerce headquarters aus zu aktivieren, indem das Framework oder die Parameter der Funktionsverwaltung verwendet werden. Beispiele für die Steuerintegration sind jetzt im neuen Commerce SDK enthalten und unterstützen die unabhängige Paketerstellung. Diese Funktion ermöglicht auch die Einführung der Store Commerce-App durch globale Commerce-Kunden.<p><p>Diese Version enthält Commerce Lokalisierungsfunktionen und Beispiele für die Steuerintegration für [Österreich](../localizations/emea-aut-fi-sample.md), [die tschechische Republik](../localizations/emea-cze-fi-sample.md), [Frankreich](../localizations/emea-fra-cash-registers.md), [Deutschland](../localizations/emea-deu-fi-sample.md), [Italien](../localizations/emea-ita-fpi-sample.md), [Norwegen](../localizations/emea-nor-cash-registers.md) und [Polen](../localizations/emea-pol-fpi-sample.md). | Vom Administrator/Ersteller aktiviert |
+| Offline | [POS-Offlinedatenbank-Komprimierung](../dev-itpro/implementation-considerations-offline.md#important-offline-features) | Diese neue Funktion reduziert die Größe von Offline-Datenbanken, indem sie eine automatische Indexkomprimierung außerhalb der Kanal-[Öffnungszeiten](../dev-itpro/store-hours.md) ermöglicht. | Funktionsverwaltung<p>*POS-Offlinedatenbank-Komprimierung* |
 | Leistung | Entfernen Sie die RTS-Abhängigkeit für „Kunden bearbeiten“-Szenarien | Hohe Verfügbarkeit und hohe Leistung sind Standarderwartungen für Point-of-Sale (POS)- und E-Commerce-Kanäle. Um diese Erwartungen zu erfüllen, müssen Dynamics 365 Commerce Kanäle sich nicht mehr auf Echtzeitkommunikation mit der Handelszentrale verlassen, wenn Kundeninformationen bearbeitet werden. Die Möglichkeit, Kundeninformationen für asynchrone und nicht asynchrone Kunden asynchron zu bearbeiten, kann dazu beitragen, Echtzeitanrufe an die Commerce headquarters zu reduzieren. | Vom Administrator/Ersteller aktiviert |
 
 ## <a name="feature-state-changes-in-this-release"></a>Änderungen am Status der Funktionen in dieser Version

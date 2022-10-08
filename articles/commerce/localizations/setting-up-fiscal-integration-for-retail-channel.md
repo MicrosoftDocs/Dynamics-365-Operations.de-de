@@ -2,19 +2,19 @@
 title: Steuerintegration für Commerce-Kanäle einrichten
 description: Dieser Artikel enthält Richtlinien zum Einrichten der Steuerintegrationsfunktionen für Commerce-Kanäle.
 author: EvgenyPopovMBS
-ms.date: 04/28/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 9fd801395f2ba04c703734a1de7998d6a53b6462
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 28097341c7b39660b834eb81786c3f56045e1496
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276131"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631422"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Steuerintegration für Commerce-Kanäle einrichten
 
@@ -30,9 +30,10 @@ Führen Sie die folgenden Schritte aus, um Funktionen zu aktivieren, die sich au
 1. Finden und aktivieren Sie die folgenden Funktionen:
 
     - **Direkte Steuerintegration über POS-Kassen** – Die Funktion erweitert das Steuerintegrationsspektrum durch die Möglichkeit, Steuerkonnektoren zu erstellen, die in der Verkaufsstelle (POS) ausgeführt werden. Diese Art von Konnektor kommuniziert mit einem Finanzgerät oder -dienst, das bzw. der eine HTTP-API bereitgestellt. So muss für das Geschäft kein separates Gerät angeschafft werden. Die Funktion erlaubt die Nutzung von Mobilgeräten zur Steuerintegration, ohne dass eine gemeinsame Hardwarestation erforderlich ist.
-    - **Überschreibungen für technisches Profil der Steuerintegration** – Diese Funktion ermöglicht die Erweiterung der Konfiguration der Steuerintegration und fügt die Möglichkeit hinzu, Verbindungsparameter auf der Einstellungsseite einer POS-Kasse zu überprüfen. Wenn diese Funktion aktiviert ist, können Sie die Parameter eines technischen Profils überschreiben.
+    - **Überschreibungen für technisches Profil der Steuerintegration**: Diese Funktion ermöglicht die Erweiterung der Konfiguration der Steuerintegration und fügt die Möglichkeit hinzu, Parameter eines technisches Profils zu überschreiben. Beispielsweise ist es möglich, Verbindungszeichenfolgen für Fiskalgeräte auf der Ebene der einzelnen POS-Register anzugeben. Die Funktion fügt auch die Möglichkeit hinzu, Verbindungsparameter auf der Seite **Einstellungen** eines POS-Registers zu überprüfen. 
     - **Status der Steuerregistrierung von POS-Kassen** – Wenn diese Funktion aktiviert ist, können Sie die Steuerregistrierung für bestimmte POS-Kassen deaktivieren. In diesem Fall können an der POS-Kasse keine Verkaufsbuchungen erfolgen.
-    - **Lokaler Datenspeicher-Backup für Finanzverflechtung** – Diese Funktion erweitert die Fehlerbehandlungsfunktionen des Steuerintegrationsframework. Sie ermöglicht auch eine automatische Sicherung von Steuerregistrierungsdaten im Falle eines Datenverlusts, sodass die Daten im lokalen Speicher wiederhergestellt werden, während ein Gerät aktiviert wird.
+    - **Lokale Speichersicherung der Steuerintegration**: Diese Funktion erweitert die Fehlerbehandlungsfunktionen des Steuerintegrationsframeworks, indem es die automatische Sicherung der Steuerregistrierungsdaten ermöglicht, sodass die Daten im lokalen Speichern wiederhergestellt werden können, wenn ein Gerät aktiviert wird.
+    - **Verschobene Registrierung von Dokumenten**: Diese Funktion erweitert die Fehlerbehandlungsfunktionen des Steuerintegrationsframeworks, indem die Option aktiviert wird, die Steuerregistrierung im Falle eines Steuerregistrierungsfehlers zu verschieben und eine Sicherungs-Steuerregistrierungsoption zu verwenden oder die Steuerregistrierung später mit anderen Mitteln als dem Steuerintegrationsframework abzuschließen.
 
 ## <a name="set-up-commerce-parameters"></a>Commerce-Parameter festlegen
 
@@ -273,7 +274,7 @@ Um die Einstellungen für die Fehlerbehandlung festzulegen, gehen Sie folgenderm
     > - **Steuerdokument** - Ein obligatorisches Dokument, das erfolgreich registriert werden sollte (z.B. ein Steuerbeleg).
     > - **Nicht-steuerliches Dokument** – Ein ergänzender Beleg für die Transaktion oder das Ereignis (z.B. ein Geschenkgutschein).
 
-1. Wenn der Operator in der Lage sein muss, den aktuellen Arbeitsgang zu verarbeiten (beispielsweise zur Erstellung oder zum Abschluss einer Transaktion), nachdem ein Integritätsprüfungsfehler auftritt, sollten Sie die Berechtigung **Überspringen des Integritätsprüfungsfehler zulassen** auf der Seite **Berechtigungsgruppen** (**Einzelhandel und Handel \> Mitarbeiter \> Berechtigungsgruppen**) aktivieren. Weitere Informationen zur Integritätsprüfungsprozedur finden Sie unter[Steuerliche Erfassungsintegritätsprüfung](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
+1. Wenn der Operator in der Lage sein muss, den aktuellen Arbeitsgang zu verarbeiten (beispielsweise zur Erstellung oder zum Abschluss einer Transaktion), nachdem ein Integritätsprüfungsfehler auftritt, sollten Sie die Berechtigung **Überspringen des Integritätsprüfungsfehler zulassen** auf der Seite **Berechtigungsgruppen** (**Einzelhandel und Handel \> Mitarbeiter \> Berechtigungsgruppen**) aktivieren. Weitere Informationen zur Integritätsprüfungsprozedur finden Sie unter [Steuerliche Erfassungsintegritätsprüfung](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
 
 ## <a name="set-up-fiscal-xz-reports-from-the-pos"></a>Einrichten von steuerlichen X/Z-Berichten von der POS aus
 
@@ -286,16 +287,15 @@ Um die Ausführung von X/Z-Berichten aus der POS heraus zu ermöglichen, sollten
     1. Fügen Sie eine neue Schaltfläche hinzu und legen Sie die Eigenschaft der Schaltfläche **Steuer Z drucken** fest.
     1. Führen Sie auf der Seite **Distributionszeitplan** den Auftrag **1090** aus, um Änderungen in die Kanaldatenbank zu übertragen.
 
-## <a name="enable-manual-execution-of-postponed-fiscal-registration"></a>Aktivieren Sie die manuelle Ausführung der verschobenen steuerlichen Erfassung.
+## <a name="enable-manual-execution-of-deferred-fiscal-registration"></a>Die manuelle Ausführung der zurückgestellten Steuerregistrierung
 
-Um die manuelle Ausführung einer aufgeschobenen steuerlichen Erfassung zu aktivieren, können Sie einer Schaltfläche ein neues POS-Layout hinzufügen.
+Um die manuelle Ausführung einer zurückgestellten Steuerregistrierung zu aktivieren, können Sie einer Schaltfläche ein neues POS-Layout hinzufügen.
 
 - Folgen Sie auf der Seite **Schaltflächenraster** den Anweisungen unter [POS-Operationen zu POS-Layouts hinzufügen, indem Sie den Button Grid Designer](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) verwenden, um den Designer zu installieren und ein POS-Layout zu aktualisieren.
 
     1. Wählen Sie das zu aktualisierende Layout aus.
-    1. Fügen Sie eine neue Schaltfläche hinzu und legen Sie die Eigenschaft der Schaltfläche auf **Steuererlicher Registrierungsprozess abschliessen**
+    1. Fügen Sie eine neue Schaltfläche hinzu und legen Sie die Eigenschaft der Schaltfläche auf **Steuerlicher Registrierungsprozess abschließen**.
     1. Führen Sie auf der Seite **Distributionszeitplan** den Auftrag **1090** aus, um Ihre Änderungen in die Kanaldatenbank zu übertragen.
-
 
 ## <a name="view-connection-parameters-and-other-information-in-pos"></a>Verbindungsparameter und andere Informationen in POS anzeigen
 

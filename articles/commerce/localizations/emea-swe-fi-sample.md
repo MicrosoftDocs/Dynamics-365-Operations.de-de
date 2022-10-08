@@ -2,19 +2,19 @@
 title: Beispiel zur Integration der Kontrolleinheit für Schweden
 description: Dieser Artikel bietet einen Überblick über das Beispiel der Fiskalintegration für Schweden in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-10-08
-ms.openlocfilehash: 3376e6a901b692371a44b5c74c1e6b4afd0cd573
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 966ba3fab780991736f0c84d7eb68356c28a4022
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9275065"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631261"
 ---
 # <a name="control-unit-integration-sample-for-sweden"></a>Beispiel zur Integration der Kontrolleinheit für Schweden
 
@@ -42,7 +42,7 @@ Das Beispiel für die Integration von Steuereinheiten in Schweden umfasst die fo
 - Es stehen mehrere Optionen zur Fehlerbehandlung zur Verfügung. Im Folgenden finden Sie einige Beispiele hierfür:
 
     - Wiederholen Sie die Fiskalregistrierung, wenn dies möglich ist. Sie können die steuerliche Registrierung wiederholen, wenn z.B. die Steuereinheit nicht verbunden ist, nicht bereit ist oder nicht antwortet.
-    - Verschieben Sie die Steuererfassung.
+    - Setzen Sie die Steuerregistrierung zurück.
     - Überspringen Sie Steuererfassung, oder markieren Sie die Buchung als erfasst, und schließen Sie Infocodes ein, um den Grund für den Fehler und zusätzliche Informationen zu erfassen.
     - Überprüfen Sie die Verfügbarkeit der Steuereinheit, bevor eine neue Verkaufstransaktion eröffnet oder eine Verkaufstransaktion abgeschlossen wird.
 
@@ -103,7 +103,7 @@ Schließen Sie die Schritte zur Einrichtung der Fiskalintegration ab, die unter 
 
 1. [Richten Sie einen Steuererfassungsprozesses ein](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Legen Sie außerdem die Einstellungen für die fiskalische Registrierung fest, die [spezifisch für dieses Beispiel der Integration von Einheiten sind](#set-up-the-registration-process).
 1. [Legen Sie Einstellungen zur Fehlerbehandlung fest](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-1. [Aktivieren Sie manuelle Ausführung der verschobenen steuerlichen Erfassung](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Die manuelle Ausführung der zurückgestellten Steuerregistrierung](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration)
 1. [Konfigurieren Sie die Channel-Komponenten](#configure-channel-components).
 
 ### <a name="set-up-the-registration-process"></a>Den Erfassungsprozess einrichten

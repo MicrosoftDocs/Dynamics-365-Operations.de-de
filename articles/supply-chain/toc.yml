@@ -1745,27 +1745,17 @@
               href: sensor-data-intelligence/sdi-scenario-equipment-downtime.md
             - name: Das Produktqualität-Szenario
               href: sensor-data-intelligence/sdi-scenario-product-quality.md
-            - name: Das Produktionsverzögerung-Szenario
+            - name: Das Produktionsverzögerungen-Szenario
               href: sensor-data-intelligence/sdi-scenario-production-delays.md
-        - name: "IoT\_Intelligence"
+        - name: IoT-Intelligenz
           items:
-            - name: "IoT\_Intelligence – Startseite"
+            - name: IoT-Intelligenz wird jetzt durch Sensor Data Intelligence ersetzt
               href: iot/iot-intelligence-home-page.md
-            - name: Azure-Ressourcen einrichten
-              href: iot/iot-azure-setup.md
-            - name: Nachrichtenschemaformate für IoT Hub
-              href: iot/iot-schema-format.md
-            - name: Metriken einrichten
-              href: iot/iot-metrics-setup.md
-            - name: Szenarioeinrichtung
-              href: iot/iot-scenario-setup.md
-            - name: Überwachen und verwalten
-              href: iot/iot-management.md
         - name: Produktprogrammplanung
           items:
             - name: Startseite der Produktprogrammplanung
               href: master-planning/master-planning-home-page.md
-            - name: Migration zur Planungsoptimierung der Produktprogrammplanung
+            - name: Migration zur Planungsoptimierung für Produktprogrammplanung
               href: master-planning/new-master-planning-engine.md
             - name: Planungsoptimierung
               items:
