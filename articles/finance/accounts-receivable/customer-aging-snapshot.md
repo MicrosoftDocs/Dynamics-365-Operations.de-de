@@ -2,7 +2,7 @@
 title: Fälligkeitsmomentaufnahmen für Debitoren
 description: Dieser Artikel enthält Informationen zu Fälligkeitsmomentaufnahmen für Debitoren. Eine Fälligkeitsmomentaufnahme berechnet Saldenrückblicke für eine Gruppe von Debitoren zu einem bestimmten Zeitpunkt.
 author: JodiChristiansen
-ms.date: 05/05/2021
+ms.date: 10/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.author: mrolecki
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.17
 ms.search.form: ''
-ms.openlocfilehash: 248a71ff3c9f6c30448ff486f3ee42ac534b1825
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 88145cdccfe3f1d0d3de4e31dfa519b27df6550a
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9269560"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643684"
 ---
 # <a name="customer-aging-snapshots"></a>Fälligkeitsmomentaufnahmen für Debitoren
 
@@ -31,15 +31,15 @@ Informationen aus Fälligkeitsmomentaufnahmen werden auf der Listenseite **Salde
 Der Arbeitsbereich **Debitorenkredit und Inkasso** zeigt die Fälligkeit für Debitoren ebenfalls an. Weitere Informationen finden Sie unter [Power BI-Inhalt zur Kredit- und Inkassoverwaltung](credit-collections-power-bi.md).
 
 > [!NOTE]
-> Um die Zeit zum Erstellen einer Fälligkeitsmomentaufnahme für Debitoren zu verkürzen, aktivieren Sie die Funktion **Leistungsverbesserung von Fälligkeiten für Debitoren** im Arbeitsbereich **Funktionsverwaltung**. Wenn diese Funktion aktiviert ist, dürfen Sie jedoch keine Debitorenpools verwenden. Wenn ein Debitorenpool ausgewählt ist, funktioniert die Funktion nicht. Sie können jedoch trotzdem eine Fälligkeitsmomentaufnahme erstellen.
+> Um die Zeit zu verkürzen, die zum Erstellen einer Fälligkeitsmomentaufnahme erforderlich ist, aktivieren Sie die folgenden Funktionen im Arbeitsbereich **Funktionsverwaltung**: **Leistungsverbesserung bei der Debitorenfälligeit** 
+> **Erweiterung der Debitorenfälligkeitsleistung mit Debitorenpools**  
+> Wenn beide Funktionen aktiviert sind, können **Debitorenpools** beim Erstellen der Fälligkeitsmomentaufnahme verwendet werden. 
 
 Wenn Sie eine Fälligkeitsmomentaufnahme für Debitoren erstellen, geben Sie in die folgenden Felder Informationen dazu ein:
 
 - **Zahlungsfristdefinition**: Wählen Sie die Zahlungsfristdefinition für die Fälligkeitsmomentaufnahme aus. Sie können eine Fälligkeitsmomentaufnahme für jede Zahlungsfristdefinition haben. Der Fälligkeitsmomentaufnahme und die Zahlungsfristdefinition müssen separat erstellt werden.
 - **Poolkennung**: Dieses Feld ist optional. Sie können einen Pool verwenden, um die Gruppe von Debitoren festzulegen, die in der Fälligkeitsmomentaufnahme verarbeitet werden sollen. Wenn Sie in diesem Feld einen Debitorenpool auswählen, wird die Fälligkeitsmomentaufnahme nur auf die Debitorenkonten erstellt, die Teil des Debitorenpools sind. Der ausgewählte Debitorenpool muss den Typ **Fälligkeitsmomentaufnahme** haben. Wenn Sie dieses Feld leer lassen, wird für alle Debitorenkonten eine Fälligkeitsmomentaufnahme erstellt.
 
-    > [!NOTE]
-    > Wenn die Funktion **Leistungsverbesserung von Fälligkeiten für Debitoren** aktiviert ist, wählen Sie keinen Debitorenpool aus.
 
 - **Kriterien**: Die Fälligkeitsmomentaufnahme wird ausgehend von dem von Ihnen ausgewählten Datum fällig:
 
@@ -52,14 +52,15 @@ Wenn Sie eine Fälligkeitsmomentaufnahme für Debitoren erstellen, geben Sie in 
     - **Heutiges Datum**: Wählen Sie das Systemdatum aus. Wählen Sie diese Option, wenn die Verarbeitung als sich wiederholender Batch erfolgen soll. Jedes Mal, wenn der Batch ausgeführt wird, wird das Systemdatum dieser Ausführung verwendet.
     - **Gewähltes Datum**: Wählen Sie ein Datum aus, das Sie selbst festlegen. Wenn Sie diese Option auswählen, müssen Sie ein Fälligkeitsdatum eingeben.
 
-    Angenommen die aktuelle Zahlungsfrist beträgt 30 Tage. Wenn Sie in diesem Feld das **heutige Datum** ausgewählt haben, beginnt die aktuelle Zahlungsfrist am heutigen Datum und umfasst dann die vorherigen 29 Tage. Wenn Sie in diesem Feld ein **gewählten Datum** ausgewählt und ein Datum angegeben haben, beginnt die aktuelle Zahlungsfrist am festgelegten Datum und umfasst dann die vorherigen 29 Tage.
+   Angenommen die aktuelle Zahlungsfrist beträgt 30 Tage. Wenn Sie in diesem Feld das **heutige Datum** ausgewählt haben, beginnt die aktuelle Zahlungsfrist am heutigen Datum und umfasst dann die vorherigen 29 Tage. Wenn Sie in diesem Feld ein **gewählten Datum** ausgewählt und ein Datum angegeben haben, beginnt die aktuelle Zahlungsfrist am festgelegten Datum und umfasst dann die vorherigen 29 Tage.
 
 - **Inkassostatus aktualisieren**: Setzen Sie diese Option auf **Ja**, um den Inkassostatus auf der Seite **Inkassi** von **Zahlungszusage** auf **Zahlungszusage nicht eingehalten** zu aktualisieren, wenn das Fälligkeitsdatum nach dem Datum im Feld **Datum Zahlungszusage** liegt. Setzen Sie diese Option auf **Nein** um den Inkassostatus im Feld **Inkasso** unverändert zu lassen.
-- **Inklusive Debitoren ohne Saldo**: Setzen Sie diese Option auf **Ja**, um alle Debitoren einzubeziehen, unabhängig von ihrem Saldo. Wenn Sie alle Debitoren einbeziehen, sollten Sie die Funktion **Leistungsverbesserung von Fälligkeiten für Debitoren** aktivieren und keine Debitorenpools verwenden. Setzen Sie diese Option auf **Nein**, um nur Debitoren einbeziehen, die ein Saldo haben. Diese Einstellung beschleunigt die Leistung, da Debitoren ohne Saldo übersprungen werden.
+- **Inklusive Debitoren ohne Saldo**: Setzen Sie diese Option auf **Ja**, um alle Debitoren einzubeziehen, unabhängig von ihrem Saldo. Wenn Sie alle Debitoren einbeziehen, sollten Sie die Funktion **Leistungsverbesserung bei der Debitorenfälligeit** und **Erweiterung der Debitorenfälligkeitsleistung mit Debitorenpools** verwenden. Setzen Sie diese Option auf **Nein**, um nur Debitoren einbeziehen, die ein Saldo haben. Diese Einstellung wird bei der Beschleunigung der Leistung helfen, da Debitoren ohne Saldo übersprungen werden.
+- **Kreditlimitberechnungen während der Fälligkeit umgehen**: Wenn diese Option auf **Ja** eingestellt ist, berechnet der Fälligkeitsprozess den Betrag der **Lieferscheinzwischensumme**, der **Offenen Auftragszwischensumme** und des **Verfügbaren Kredits** für jeden Debitor. Diese Salden werden auf der Seite **Saldenrückblick** in der FactBox unter **Kreditlimit** angezeigt. Stellen Sie diese Option für eine schnellere Leistung während des Fälligkeitsprozesses auf **Ja** ein. Stellen Sie sie auf **Nein**, um die Salden neu zu berechnen, wenn der Fälligkeitsprozess ausgeführt wird. 
 - **Unternehmensbereich**: Wählen Sie auf der Registerkarte **Unternehmensbereich** die juristischen Personen (Unternehmen) aus, die in den Fälligkeitsmomentaufnahme aufgenommen werden sollen. Es können nur juristische Personen ausgewählt werden, bei denen zentralisierte Zahlungen eingerichtet wurden. Transaktionen der ausgewählten juristischen Personen werden dann in die Fälligkeitsfristen für Debitoren einbezogen, die in allen diesen juristischen Personen dieselbe Parteikennung haben. Währungsbeträge werden in die Buchhaltungswährung der juristischen Person umgerechnet, bei der Sie zum Zeitpunkt der Erstellung der Fälligkeitsmomentaufnahme angemeldet sind.
 
 Sie sollten diesen Prozess so planen, dass er als Batch ausgeführt wird.
 
 > [!NOTE]
-> Um die Batchleistung beim Erstellen von Fälligkeitsmomentaufnahmen zu verbessern, geben Sie in das Feld **Maximale Anzahl an Stapelverarbeitungsaufgaben** im Inforegister **Inkassostandards** unter der Registerkarte **Inkassi** der Seite **Debitorenparameter** eine Zahl ein. Im Feld **Fällige Debitorensalden** sollten Sie mit **100** als Standardwert beginnen und ihn dann anpassen, um die Verarbeitung für Ihre Situation zu optimieren.
+> Um die Batchleistung beim Erstellen von Fälligkeitsmomentaufnahmen zu verbessern, geben Sie in das Feld **Maximale Anzahl an Stapelverarbeitungsaufgaben** im Inforegister **Inkassostandards** unter der Registerkarte **Inkassi** der Seite **Debitorenparameter** eine Zahl ein. Im Feld **Fällige Debitorensalden** sollten Sie mit einem Wert zwischen **12** und **20** beginnen und ihn dann anpassen, um die Verarbeitung für Ihre Situation zu optimieren. Wir empfehlen, diesen Wert auf nicht größer als **30** einzustellen, da sich dies auf die Leistung auswirkt. 
 

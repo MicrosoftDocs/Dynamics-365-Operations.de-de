@@ -2,7 +2,7 @@
 title: Nicht abgerechneter Umsatzerlös
 description: In diesem Artikel wird erklärt, wie Sie Artikel und Konten einrichten, um die Funktion für nicht abgerechnete Umsatzerlöse in der Abonnementabrechnung zu verwenden.
 author: JodiChristiansen
-ms.date: 11/04/2021
+ms.date: 10/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: b3fe58fc06df3f61433c8457b337ae895283e12b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: adf6f06ee454f368fa194315a87cfdec9e5e13da
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879681"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644167"
 ---
 # <a name="unbilled-revenue"></a>Nicht abgerechneter Umsatzerlös
 
@@ -123,15 +123,15 @@ Die Verteilungen werden basierend auf dem ausgewählten Zuteilungstyp neu berech
 
 Ein Abrechnungszeitplan wird für drei Jahre eingegeben, und die Rechnungen werden jährlich über einen Zeitraum von drei Jahren in Rechnung gestellt. Der gesamte Vertragsbetrag wird auf dem Konto für nicht abgerechneten Umsatzerlös erfasst, aus dem jährliche Rechnungen erstellt werden. Das Gegenkonto ist das Konto für Umsatzerlöse oder verzögerte Umsatzerlöse.
 
-Beachten Sie, dass Top-Abrechnung und nicht abgerechneter Umsatzerlös nicht zusammen funktionieren, da im Hauptbuch Abstimmungsprobleme auftreten können. Zum Beispiel ist auf der Seite **Artikelgruppeneinstellungen** die Artikelgruppe A so eingerichtet, dass das Feld **Anzahl oberer Positionen** auf **2** eingestellt ist. Auf der Seite **Abrechnungszeitpläne** werden drei Artikel hinzugefügt. Alle drei Artikel gehören zur Artikelgruppe A. Wenn der erste Journaleintrag für die Funktion für nicht abgerechnete Umsatzerlöse erstellt wird, wird der Betrag für alle drei Artikel auf das Konto für nicht abgerechneten Umsatzerlös verarbeitet. Bei der Erstellung der Rechnung für den Abrechnungszeitplan werden nur die Beträge für die beiden obersten Artikel berücksichtigt. Daher stimmt der Rechnungsbetrag nicht mit dem Betrag überein, der auf dem Konto für nicht abgerechneten Umsatzerlös verarbeitet wurde, und im Hauptbuch treten Abstimmungsprobleme auf.
+Top-Abrechnung und nicht abgerechneter Umsatzerlös funktionieren nicht zusammen, da im Hauptbuch Abstimmungsprobleme auftreten können. Zum Beispiel ist auf der Seite **Artikelgruppeneinstellungen** die Artikelgruppe A so eingerichtet, dass das Feld **Anzahl oberer Positionen** auf **2** eingestellt ist. Auf der Seite **Abrechnungszeitpläne** werden drei Artikel hinzugefügt. Alle drei Artikel gehören zur Artikelgruppe A. Wenn der erste Journaleintrag für die Funktion für nicht abgerechnete Umsatzerlöse erstellt wird, wird der Betrag für alle drei Artikel auf das Konto für nicht abgerechneten Umsatzerlös verarbeitet. Bei der Erstellung der Rechnung für den Abrechnungszeitplan werden nur die Beträge für die beiden obersten Artikel berücksichtigt. Daher stimmt der Rechnungsbetrag nicht mit dem Betrag überein, der auf dem Konto für nicht abgerechneten Umsatzerlös verarbeitet wurde, und im Hauptbuch treten Abstimmungsprobleme auf.
 
 Wenn Sie nicht abgerechneten Umsatzerlös verwenden möchten, lassen Sie die Seite **Artikelgruppeneinstellungen** leer oder richten Sie alle Artikelgruppen so ein, dass das Feld **Anzahl oberer Positionen** auf **0** (Null) eingestellt ist. Wenn Sie die Top-Abrechnung verwenden möchten, sind keine Aktionen für nicht abgerechneten Umsatzerlös verfügbar.
 
 ### <a name="examples"></a>Beispiele
 
-Ab Version 10.0.27 wird ein neues Konto eingeführt, wenn nicht abgerechneter Umsatzerlös verwendet wird. Wenn der erste Prozess **Journaleintrag erstellen** gebucht wird, erfolgt die Gutschrift auf ein neues Gegenkonto für nicht abgerechneten Umsatzerlös. Dieses Konto wird anstelle des Konto für Umsatzerlös verwendet, da derselbe Wert bei der Fakturierung des Abrechnungszeitplans storniert werden muss. Treten Kurs- oder Rundungsdifferenzen auf, können sich die Beträge unterscheiden, die während des Prozess **Rechnung generieren** berechnet werden. Dieses Verhalten stellt sicher, dass der Nettobetrag der Konten 0 (Null) ist.
+Ab Version 10.0.29 wird ein neuer Parameter zu den Abrechnungsparametern für wiederkehrende Verträge hinzugefügt. Bei Einstellung auf Ja aktiviert der **Nicht abgerechnete Gegenkonten verwenden**-Parameter zwei neue Konten in **Einstellungen für nicht abgerechneten Umsatzerlös**. Die Gegenkonten „Nicht abgerechneter Umsatzerlös“ und „Nicht abgerechneten Rabatt“ werden verfügbar und am besten verwendet, wenn Abrechnungspläne in einer anderen Währung als der Buchhaltungswährung erstellt werden. Durch die Verwendung der Gegenkonten wird sichergestellt, dass die Konten für nicht fakturierten Umsatz und nicht fakturierte Rabatte mit den gleichen Wechselkursen wie bei ihren ursprünglichen Einträgen storniert werden. Der anfängliche Prozess **Journaleintrag erstellen** entspricht dem mit der Belastung des nicht fakturierten Umsatzes und der Gutschrift des Umsatzes. Wenn Sie einen Rabatt verwenden, entspricht die anfängliche Journalbuchung der mit einer Belastung für den Rabatt und einer Gutschrift für den nicht in Rechnung gestellten Rabatt. 
 
-Dieses Beispiel zeigt, wie Sie nicht abgerechneten Umsatzerlös verwenden, um den gesamten Betrag eines Vertrags in der Bilanz als nicht abgerechneten Umsatzerlös zu erfassen. Die andere Seite des Eintrags ist der nicht abgerechnete Umsatzerlös, Gegenkonto. Wenn Sie dem Kunden eine Rechnung stellen, werden der nicht abgerechnete Umsatzerlös und der nicht abgerechnete Umsatzerlös, Gegenkonto, storniert. Die Umsatzerkennung erfolgt entweder zum Zeitpunkt der Rechnungsstellung oder gemäß dem festgelegten Stundungserkennungszeitplan.
+Dieses Beispiel zeigt, wie Sie nicht abgerechneten Umsatzerlös verwenden, um den gesamten Betrag eines Vertrags in der Bilanz als nicht abgerechneten Umsatzerlös zu erfassen. Die andere Seite des Eintrags ist der Umsatzerlös oder der verzögerte Umsatzerlös. Wenn Sie dem Kunden eine Rechnung stellen, wird der nicht abgerechnete Umsatzerlös storniert. Die Umsatzerkennung erfolgt entweder zum Zeitpunkt der Rechnungsstellung oder gemäß dem festgelegten Stundungserkennungszeitplan.
 
 #### <a name="assumptions"></a>Voraussetzungen
 
@@ -151,47 +151,38 @@ Dieses Beispiel zeigt, wie Sie nicht abgerechneten Umsatzerlös verwenden, um de
 
     | Element | Startdatum | Enddatum | Betrag | Abrechnungsfrequenz | Stundungsartikel | Nicht abgerechneter Umsatzerlös | Description |
     |---|---|---|---|---|---|---|---|
-    | Lizenz | 1. Januar, CY | 31. Dezember, CY+2 | 100,00 $ | Jährlich | Nein | Ja | Dem Kunden wird jedes Jahr 100,00 $ in Rechnung gestellt. Die Gesamtsumme von 300,00 $ wird im Voraus als nicht abgerechneter Umsatzerlös in der Bilanz und als Umsatzerlös in der Gewinn- und Verlustrechnung erfasst. Jede Rechnung reduziert den nicht abgerechneten Betrag. |
-    | Wartung | 1. Januar, CY | 31. Dezember, CY+2 | 30,00 $ | Jährlich | Ja | Ja | Dem Kunden wird jedes Jahr 30,00 $ in Rechnung gestellt. Die Gesamtsumme von 90,00 $ wird im Voraus als nicht abgerechneter Umsatzerlös und verzögerter Umsatzerlös in der Bilanz erfasst. Jede Rechnung reduziert den nicht abgerechneten Betrag. Der verzögerte Umsatzerlös wird monatlich über 36 Monate erkannt. |
+    | Lizenz | 01. Januar 2022 | 31. Dezember 2024 | 100,00 $ | Jährlich | Nein | Ja | Dem Kunden wird jedes Jahr 100,00 $ in Rechnung gestellt. Die Gesamtsumme von 300,00 $ wird im Voraus als nicht abgerechneter Umsatzerlös in der Bilanz und als Umsatzerlös in der Gewinn- und Verlustrechnung erfasst. Jede Rechnung reduziert den nicht abgerechneten Betrag. |
+    | Wartung | 01. Januar 2022 | 31. Dezember 2024 | 30,00 $ | Jährlich | Ja | Ja | Dem Kunden wird jedes Jahr 30,00 $ in Rechnung gestellt. Die Gesamtsumme von 90,00 $ wird im Voraus als nicht abgerechneter Umsatzerlös und verzögerter Umsatzerlös in der Bilanz erfasst. Jede Rechnung reduziert den nicht abgerechneten Betrag. Der verzögerte Umsatzerlös wird monatlich über 36 Monate erkannt. |
 
 6. Verwenden Sie auf der Seite **Alle Abrechnungszeitpläne** den Prozess **Journaleintrag erstellen**, um den Vertragswert als nicht abgerechneten Umsatzerlös in die Bilanz zu buchen.
 
 Es werden zwei Journaleinträge erstellt, einer für jede Position im Abrechnungszeitplan.
 
-| Konto für nicht abgerechneten Umsatzerlös | Gegenkonto für nicht fakturierten Umsatzerlös | Sollbetrag | Habenbetrag |
-|---|---|---|---|
-| Konto für nicht abgerechneten Umsatzerlös | | 300,00 $ | |
-| | Gegenkonto für nicht fakturierten Umsatzerlös | | 300,00 $ |
+| Konto | Sollbetrag | Habenbetrag |
+|---|---|---|
+| Konto für nicht abgerechneten Umsatzerlös | 300,00 $ | |
+| Konto für Umsatzerlöse | | 300,00 $ |
 
-| Konto für nicht abgerechneten Umsatzerlös | Verzögerter Umsatzerlös | Sollbetrag | Habenbetrag |
-|---|---|---|---|
-| Konto für nicht abgerechneten Umsatzerlös | | 90,00 $ | |
-| |Verzögerter Wartungsumsatzerlös | | 90,00 $ |
+| Konto | Sollbetrag | Habenbetrag |
+|---|---|---|
+| Konto für nicht abgerechneten Umsatzerlös | 90,00 $ | |
+| Verzögerter Umsatzerlös | | 90,00 $ |
 
-Der erste Journaleintrag wird auf ein Gegenkonto für nicht abgerechnete Umsatzerlöse gebucht, die zweite auf ein Konto für verzögerte Umsatzerlöse. Wenn die Abrechnungsposition sowohl nicht abgerechneten Umsatzerlös als auch verzögerten Umsatzerlös aufweist, wird das Konto für verzögerte Umsatzerlöse verwendet, nicht der nicht abgerechnete Umsatzerlös, Gegenkonto. Der Vertrag sieht vor, dass die Rechnung für den Kunden zu Beginn eines jeden Jahres erstellt wird. Verwenden Sie den Prozess **Rechnung generieren** zum Erstellen der Rechnung. Wenn die Rechnung erstellt wird, werden die folgenden Journaleinträge erstellt.
+Der Vertrag sieht vor, dass die Rechnung für den Kunden zu Beginn eines jeden Jahres erstellt wird. Verwenden Sie den Prozess **Rechnung generieren** zum Erstellen der Rechnung. Wenn die Rechnung erstellt wird, wird der folgende Rechnungsbeleg gebucht.
 
-| Hauptkonto | Konto für nicht abgerechneten Umsatzerlös | Sollbetrag | Habenbetrag |
-|---|---|---|---|
-| Nicht abgerechneter Umsatzerlös, Gegenkonto | | 100,00 $ | |
-| | Konto für nicht abgerechneten Umsatzerlös | | 100,00 $ |
-| Debitorenkonten | | 100,00 $ | |
-| | Konto für Umsatzerlöse | | 100,00 $ |
+| Konto| Sollbetrag | Habenbetrag |
+|---|---|---|
+| Konto für nicht abgerechneten Umsatzerlös | | 130, 00 US-Dollar |
+| Debitorenkonten | 130, 00 US-Dollar | |
 
-| Hauptkonto | Konto für nicht abgerechneten Umsatzerlös | Sollbetrag | Habenbetrag |
-|---|---|---|---|
-| Konto für verzögerte Wartungsumsatzerlöse | | 30,00 $ | |
-| | Konto für nicht abgerechneten Umsatzerlös | | 30,00 $ |
-| Debitorenkonten | | 30,00 $ | |
-| | Konto für verzögerte Wartungsumsatzerlöse | | 30,00 $ |
+Derselbe Journaleintrag wird durch Rechnungen erstellt, die zu Beginn der nächsten zwei Jahre gebucht werden. Das Konto für nicht abgerechneten Umsatzerlös wird jedes Jahr während des **Rechnung erstellen**-Prozesses verringert. Das Gegenkonto für nicht fakturierten Umsatzerlös wird verwendet, um das Konto für nicht fakturierten Umsatzerlös auszugleichen, wenn unterschiedliche Wechselkurse verwendet werden. 
 
-Derselbe Journaleintrag wird durch Rechnungen erstellt, die zu Beginn der nächsten zwei Jahre gebucht werden. Der Nettobetrag des Kontos für verzögerte Umsatzerlöse ist 0 (Null), da es keine Rundungs- oder Wechselkursdifferenzen gibt. Der verzögerte Umsatzerlös muss genau so storniert werden, wie er im Prozess **Journaleintrag erstellen** gutgeschrieben wurde. Da Umsatzerlöse noch gestundet sind und erst später erfasst werden, erfolgt die Gutschrift auf dem Konto für verzögerte Umsatzerlöse erneut.
+Im letzten Schritt wird jeden Monat der Erfassungsjournaleintrag erstellt, um den verzögerten Umsatzerlös aus den Wartungsgebühren zu erfassen. Der Journaleintrag kann auf der Seite **Erkennungsverarbeitung** erstellt werden. Alternativ kann es auch durch Auswählen von **Erkennen** für die Positionen auf der Seite **Stundungszeitplan** erstellt werden.
 
-Im letzten Schritt wird jeden Monat der Erfassungsjournaleintrag erstellt, um den verzögerten Wartungsgebührenumsatzerlös zu erfassen. Der Journaleintrag kann auf der Seite **Erkennungsverarbeitung** erstellt werden. Alternativ kann es auch durch Auswählen von **Erkennen** für die Positionen auf der Seite **Stundungszeitplan** erstellt werden.
-
-| Konto für verzögerte Umsatzerlöse | Konto für Umsatzerlöse | Sollbetrag | Habenbetrag |
-|---|---|---|---|
-| Verzögerter Wartungsumsatzerlös | | 2,50 $ | |
-| | Wartungsumsatzerlös | | 2,50 $ |
+| Hauptkonto | Sollbetrag | Habenbetrag |
+|---|---|---|
+| Verzögerter Umsatzerlös | 2,50 $ | |
+| Umsatzerlös | | 2,50 $ |
 
 Dieser Journaleintrag wird jedes Mal erstellt, wenn der Anerkennungsprozess für diesen gestundeten Artikel durchgeführt wird (insgesamt 36 Mal).
 
@@ -269,18 +260,18 @@ Da beide Artikel nicht abgerechneten Umsatzerlös und Umsatzerlöszuteilung verw
 
 Die folgende Tabelle zeigt den ersten Journaleintrag für die Artikel und die Rechnung.
 
-| Konto für nicht abgerechneten Umsatzerlös | Konto für verzögerte Umsatzerlöse | Sollbetrag | Habenbetrag |
-|---|---|---|---|
-| **Artikel 1000 Journaleintrag** | | | |
-| Belastung Konto für nicht abgerechneten Umsatzerlös (401250) | | 1.465,26 $ | |
-| | Gutschrift Konto für verzögerte Umsatzerlöse (250600) | | 1.465,26 $ |
-| **Artikel 0021 Journaleintrag** | | | |
-| Belastung Konto für nicht abgerechneten Umsatzerlös (401250) | | 274,74 $ | |
-| | Gutschrift Konto für verzögerte Umsatzerlöse (250600) | | 274,74 $ |
-| **Rechnung** | | | |
-| | Gutschrift Konto für nicht abgerechnete Umsatzerlös | | 1.465,26 $ |
-| | Gutschrift Konto für nicht abgerechnete Umsatzerlös | | 274,74 $ |
-| Belastung AR-Konto (130100) | | 1.488,16 $ | |
+| Hauptkonto | Sollbetrag | Habenbetrag |
+|---|---|---|
+| **Artikel 1000 Journaleintrag** | | | 
+| Konto für nicht abgerechneten Umsatzerlös (401250) | 1.465,26 $ | |
+| Konto für verzögerte Umsatzerlöse (250600) | | 1.465,26 $ |
+| **Artikel 0021 Journaleintrag** | | | 
+| Konto für nicht abgerechneten Umsatzerlös (401250) | 274,74 $ | |
+| Konto für verzögerte Umsatzerlöse (250600) | | 274,74 $ |
+| **Rechnung** | | |
+| Konto für nicht abgerechneten Umsatzerlös | | 1.465,26 $ |
+| Konto für nicht abgerechneten Umsatzerlös | | 274,74 $ |
+| AR-Konto (130100) | 1.488,16 $ | |
 
 #### <a name="changes-to-the-billing-schedule-line-billing-detail-line-or-revenue-allocation"></a>Änderungen an der Abrechnungszeitplanposition, Abrechnungsdetailposition oder Umsatzerlöszuteilung
 

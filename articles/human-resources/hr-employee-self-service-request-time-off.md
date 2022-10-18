@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7d06c1d40416d2644499723317c0adfd805126b5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: eea8cdfc0cd2cfe8ca4cc94cefbf5772ab24d9a4
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882894"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643905"
 ---
 # <a name="request-time-off"></a>Arbeitsfreie Zeit beantragen
 
@@ -63,6 +63,10 @@ Wenn Sie eine vorhandene Freizeitanforderung aktualisieren, können Sie einen An
 2. Um Ihre genehmigten Abwesenheitsanträge anzuzeigen, wählen Sie **Genehmigte Freizeit**. Um Ihre noch nicht genehmigten Abwesenheitsanträge anzuzeigen, wählen Sie **Abwesenheitsanträge**.
 
 ## <a name="cancel-time-off-requests"></a>Stornieren von Abwesenheitsanträgen
+
+>[!NOTE] 
+> **Urlaub stornieren** ist verfügbar, wenn die Funktion **Erfahrungsverbesserungen für Urlaubsanforderungsworkflow** im Arbeitsbereich **Funktionsverwaltung** aktiviert ist.  
+
 
 1. Wählen Sie im Arbeitsbereich **Mitarbeiter-Self-Service** in der Kachel **Zeitsalden** die Option **Zeitsalden anzeigen**.
 

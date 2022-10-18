@@ -1,8 +1,8 @@
 ---
 title: Bilanzfinanzberichte
 description: In diesem Artikel werden die Standardberichte für Bilanzen beschrieben. Er beschreibt zudem die die Bausteine, die diesen Berichten zugeordnet werden.
-author: jcart1106
-ms.date: 06/20/2017
+author: jinniew
+ms.date: 10/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: twheeloc
 ms.custom: 12274
 ms.assetid: 52f78229-f531-4d16-b337-e2628994acb6
 ms.search.region: Global
-ms.author: jcart
+ms.author: jiwo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 64e23574f470efe1cb737236ff0b0ef37dae5064
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4aad297f401143388d682da175a6b14727a8f2f0
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880729"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643822"
 ---
 # <a name="balance-sheet-financial-reports"></a>Bilanzfinanzberichte
 
@@ -33,9 +33,9 @@ In diesem Artikel werden die Standardberichte für Bilanzen beschrieben. Er besc
 Es gibt zwei Standardbilanzberichte. Bei einem Bericht werden die Abschnitte gestapelt. Beim anderen Bericht sind die Abschnitte parallel.
 
 | Standardbericht                       | Funktionsweise                                                                                                                           |
-|--------------------------------------|----------------------------------------------------------------------------------------------|
-| Bilanz – Standard              | Enthält eine Ansicht der Finanzposition der Organisation während des Jahres.                                                                 |
-| Parallele Bilanz – Standard | Enthält eine Ansicht der Finanzposition der Organisation während des Jahres. Aktiva und Passiva und Eigenkapital sind parallel. |
+|--------------------------------------|--------------------------------------------------------------------------------------|
+| Bilanz – Standard              | Enthält eine Ansicht der Finanzposition der Organisation während des Jahres.                    |
+| Konsolidierte Bilanz und Einkommensaufstellung parallel – Standard | Enthält eine nebeneinander angeordnete Ansicht der Finanzposition der Organisation während des Jahres. |
 
 ## <a name="building-blocks"></a>Bausteine
 Die Bilanzfinanzberichte verwenden die folgenden Bausteine.
@@ -43,7 +43,7 @@ Die Bilanzfinanzberichte verwenden die folgenden Bausteine.
 | Standardbericht                       | Zeilendefinition                       | Spaltendefinition             |
 |--------------------------------------|--------------------------------------|-------------------------------|
 | Bilanzberichte - Standard              | Bilanzberichte - Standard              | YTD und Abweichung - Standard    |
-| Parallele Bilanz – Standard | Parallele Bilanz – Standard | Seit Jahresbeginn-Spalte - Standard |
+| Konsolidierte Bilanz und Einkommensaufstellung parallel – Standard | Konsolidierte Bilanz und Einkommensaufstellung parallel – Standard | Seit Jahresbeginn-Spalte - Standard |
 
 ### <a name="row-definition"></a>Zeilendefinition
 

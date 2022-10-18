@@ -2,7 +2,7 @@
 title: Entfernte oder veraltete Funktionen in Dynamics 365 Finance
 description: In diesem Artikel werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen von Dynamics 365 Finance.
 author: kfend
-ms.date: 06/29/2022
+ms.date: 10/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 070c61df14db4d2538b129b01defd4b82db0b8a7
-ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
+ms.openlocfilehash: 516b2b6091fa620b21eebba25f56ff55aa282ffc
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "9462300"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643793"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Finance
 
@@ -32,6 +32,18 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 > [!NOTE]
 > Ausführliche Informationen über Objekte in Apps für Finanzen und Betrieb finden Sie in den [Technischen Referenzberichten](/dynamics/s-e/global/axtechrefrep_61). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die in den einzelnen Versionen der Apps für Finanzen und Betrieb geändert oder entfernt wurden.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10031-release"></a>Entfernte oder veraltete Funktionen in Finance Release 10.0.31
+
+### <a name="edifact-paymul-at-configuration-under-payment-model"></a>Konfiguration von EDIFACT PAYMUL (AT) unter Zahlungsmodell
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Grund für veralteten Zustand/Entfernung** | Durch ein neues Format ersetzt, das auf ISO 20022 pain.001.001.09 basiert. | 
+| **Ersetzt durch eine andere Funktion?**   | Ja |
+| **Betroffene Produktbereiche**         | Anwendung |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet: Banken in Österreich werden EDICFACT-PAYMUL für grenzüberschreitende Zahlungen bis November 2022 auslaufen lassen und durch die XML-Version pain.001.001.09N ersetzen. Unter dem Global Configuration-Repository wurde eine neue Konfiguration hinzugefügt, die es Benutzern ermöglicht, die grenzüberschreitende Zahlungsanforderung abzuschließen. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10030-release"></a>Entfernte oder veraltete Funktionen in Finance Release 10.0.30
 

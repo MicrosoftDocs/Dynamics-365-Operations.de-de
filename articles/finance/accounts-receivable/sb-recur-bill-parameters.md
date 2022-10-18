@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: cb60253f3cbb8c991ef2e106abdb1c685bf22171
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 64d6e21c2d8c588a64f0f4cf8b7a0bafc853bcab
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903333"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644002"
 ---
 # <a name="recurring-contract-billing-parameters"></a>Wiederkehrende Abrechnungsparameter für Vertrag
 
@@ -46,7 +46,8 @@ Verwenden Sie die Seite **Wiederkehrende Abrechnungsparameter für Vertrag** zum
 8. Wählen Sie im Feld **Rechnungstransaktionstyp** den Standard-Rechnungstransaktionstyp für neue Abrechnungszeitpläne aus.
 9. Stellen Sie die Option **Stundung an Abrechnung ausrichten** auf **Ja**, um den entsprechenden Stundungszeitplan so auszurichten, dass er die gleichen Daten wie der Abrechnungszeitplan verwendet. Setzen Sie es auf **Nein**, um verschiedene Daten zu verwenden.
 10. Wenn Sie die Umsatzerlösverteilungsfunktion verwenden, legen Sie die Option **Umsatzerlösverteilung automatisch erstellen** auf **Ja**, wenn Artikel zu einem Abrechnungszeitplan hinzugefügt werden. Das Kontrollkästchen **Umsatzerlösverteilung** wird automatisch in der Abrechnungszeitplanposition aktiviert, wenn der Artikel als Artikel für Umsatzerlösverteilung eingerichtet ist. Stellen Sie die Option auf **Nein**, wenn Sie das Kontrollkästchen **Umsatzerlösverteilung** manuell auswählen möchten.
-11. Legen Sie die Felder für die Auftragserstellung fest:
+11. Stellen Sie die Option **Kundenaufteilung** auf **Ja**, um zu ermöglichen, dass ein Abrechnungszeitplan verschiedenen Kunden in Rechnung gestellt wird. Bei der Einstellung auf **Ja** ist die Option **Kundenaufteilung** in der Kopfzeile des Abrechnungszeitplans und in der Zeile des Abrechnungszeitplans verfügbar. 
+12. Legen Sie die Felder für die Auftragserstellung fest:
 
     - Rechnungen können nach Zeitraum, Kunde oder Artikel konsolidiert werden. Jede Kombination der Werte **Ja** und **Nein** kann eingestellt werden. Rechnungen können auch nach Artikelgruppen aufgeteilt werden.
     - Für Rechnungen sind die folgenden Buchungsoptionen verfügbar:
@@ -92,6 +93,9 @@ Verwenden Sie die Seite **Wiederkehrende Abrechnungsparameter für Vertrag** zum
     - **Gutschrift erstellen** - Erzeugt eine Gutschrift, wenn eine Rechnungseinteilung oder eine Rechnungseinteilungszeile beendet wird.
     - **Gutschriftsanpassung** - Erzeugt eine Gutschriftsanpassung für einen Abrechnungsplan, wenn eine Zeile beendet wird. Die Gutschriftsanpassung erscheint in einem zukünftigen Abrechnungszeitraum für den Abrechnungsplan. Die Kreditanpassung passt automatisch den Rechnungsbetrag für den nächsten Abrechnungszeitraum an, bis das Guthaben im Abrechnungszeitplan fertiggestellt ist.
     - **Keine Gutschrift** - Erzeugt keine Gutschriftsanpassung oder eine Gutschrift, wenn ein Abrechnungsschema oder eine Abrechnungseinteilung beendet wird. Diese Option ist nur verfügbar, wenn die Option **Keine Anpassung** verwendet wird, um einen Abrechnungszeitplan zu beenden.
+18. Wenn die Option **Einmalig kann mit Rückerstattung beenden** auf **Nein** und einen Abrechnungszeitplan mit einer Abrechnungshäufigkeit von **Einmal** eingestellt ist, ändert sich der Status der Abrechnungsplanszeile auf **Beendet**, sobald der Abrechnungsplan in Rechnung gestellt wird. Dieser Abrechnungsplan kann nicht beendet werden und es kann kein Guthaben ausgestellt werden. Wenn die Option **Einmalig kann mit Rückerstattung beenden** auf **Ja** eingestellt ist, hat der Abrechnungsplan mit einer Abrechnungshäufigkeit von **Einmal** einen **Aktiv**-Status, nachdem der Abrechnungsplan fakturiert wird. Die Abrechnungsplanposition kann beendet und eine Rückerstattung bearbeitet werden. 
+19. Die in den Parametern festgelegte Option **Täglich anteilig verrechnen** wird standardmäßig auf die Massenkündigungsseite und die Beendigungsdialoge für Abrechnungsplankopfzeile sowie -position festgelegt. Sie kann während des Beendigungsprozesses geändert werden. Bei Einstellung auf **Ja** wird jeder Rückerstattungsbetrag anhand eines Tagessatzes berechnet. Bei Einstellung auf **Nein** erfolgt die Gutschrift basierend auf dem Beendigungsdatum und der Abrechnungshäufigkeit. Wenn Sie beispielsweise die monatliche Häufigkeit verwenden und der Rechnungsbetrag 100 US-Dollar pro Monat beträgt, wird der Guthabenbetrag in Schritten von 100 US-Dollar angegeben. Wenn die Abrechnungshäufigkeit einmalig ist, beträgt der Guthabenbetrag 0,00 US-Dollar. Sie müssen „Anteil täglich“ auf „Ja“ setzen, um eine Rückerstattung für die einmalige Abrechnungshäufigkeit zu erhalten. 
+20. Legen Sie die Option **Kreditstundung erstellen** auf **Ja** fest, um einen neuen Stundungsplan zu erstellen, wenn ein bestehender Stundungsplan gutgeschrieben wird. Lassen Sie die Option auf **Nein**, um die Gutschrift auf dem bestehenden Stundungsplan zu erstellen.
 
 ## <a name="sequence-number-tab"></a>Registerkarte „Laufende Nummer“
 

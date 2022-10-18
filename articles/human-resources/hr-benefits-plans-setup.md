@@ -2,7 +2,7 @@
 title: Vorteilsplan erstellen
 description: In diesem Artikel erfahren Sie, wie Sie Vorteilspläne in Dynamics 365 Human Resources einrichten.
 author: twheeloc
-ms.date: 08/23/2021
+ms.date: 09/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5c8d4488f1782d80484a8b91f4ae7303fea0e464
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 001318be00efcda1e7ee07513e240059d3c5e135
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337029"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643936"
 ---
 # <a name="create-a-benefit-plan"></a>Vergütungsplan erstellen
 
@@ -42,8 +42,9 @@ In diesem Artikel erfahren Sie, wie Sie Vorteilspläne in Dynamics 365 Human Res
    | **Programm** | Gibt ein Programm an, dem der Plan optional zugewiesen werden soll. |
    | **Bündel** | Gibt ein Bündel an, dem der Plan optional zugewiesen werden soll. |
    | **Haupt** | Gibt an, ob es sich bei dem Plan um den Produktprogrammplan innerhalb des Bündels handelt, dem es zugewiesen ist. |
+   | **Erforderlich** | Gibt an, dass der Plan ausgewählt werden muss, um sich einen anderen Plan im Paket anzusehen. Es können mehrere Pläne als **Erforderlich** markiert werden. In diesem Fall müssen alle Pläne, die als **Erforderlich** markiert sind, ausgewählt werden, um einen der Pläne im Paket anzusehen.|
    | **Gültig ab Datum und Zeit** | Datum und Uhrzeit des Zeitpunkts, zu dem der Plan startet. Das aktuelle Systemdatum ist der Standardwert. |
-   | **Gültig bis Datum und Zeit** | Datum und Uhrzeit des Zeitpunkts, zu dem der Plan endet. Der Standardwert lautet 31.12.2154 (stellvertretend für „endet nie“). |
+   | **Gültig bis Datum und Zeit** | Datum und Uhrzeit des Zeitpunkts, zu dem der Plan endet. Der Standardwert lautet 31.12.2154 (stellvertretend für „endet nie“).  |
 
 4. Geben Sie auf der Registerkarte **Konfiguration** Werte für die folgenden Felder an, abhängig vom Plantyp, den Sie erstellen:
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 7e32b3ed6ed96de7193cc496e0630969137cd0c1
-ms.sourcegitcommit: 15b331f39d6e3ef811b9c2bf055a4f5b4572bae2
+ms.openlocfilehash: c160a6477dd41fac0f15f57bb0f46def500f4589
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2022
-ms.locfileid: "9591849"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643733"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Passanalyse zu Planungsoptimierung
 
@@ -104,7 +104,7 @@ Die folgende Tabelle zeigt die verschiedenen Ergebnisse, die nach einer Anpassun
 | Sicherheitszuschläge | Produktprogrammpläne mit Sicherheitszuschlag: *\#* | Diese Funktion wird jetzt unterstützt. Weitere Informationen finden Sie unter [Sicherheitszuschläge](safety-margins.md) |  Unterstützt |
 | Sicherheitslagerbestandserfüllung | Artikelabdeckungsaufzeichnungen mit Einstellung „Mindestbestand auffüllen“, die sich von „Heutiges Datum + Beschaffungszeit“ unterscheiden: *\#* | Planungsoptimierung verwendet immer *Heutiges Datum + Beschaffungszeit*. Diese Änderung wird vorgenommen, um sich auf eine vereinfachte Planungskonfiguration in der Zukunft vorzubereiten und ein umsetzbares Ergebnis zu erzielen. Wenn die Beschaffungszeit für den Sicherheitsbestand nicht enthalten ist, werden Planaufträge, die für den aktuell niedrigen Lagerbestand erstellt werden, aufgrund der Vorlaufzeit immer verzögert. Dieses Verhalten kann zu erheblichen Störungen und unerwünschten Planaufträgen führen. Die beste Vorgehensweise besteht darin, die Einstellung so zu ändern, dass *Heutiges Datum + Beschaffungszeit* verwendet wird. Aktualisieren Sie die Stammdaten, um Warnungen zu vermeiden. | N/V |
 | Verkaufsangebote | Produktprogrammpläne mit aktivierten Verkaufsangeboten: *\#* | Diese Funktion steht noch aus. Derzeit werden Angebote ignoriert, wenn die Planungsoptimierung aktiviert ist. Sie werden unabhängig von dieser Einstellung ignoriert. | Veröffentlichungszyklus 2, 2022 oder später |
-| Haltbarkeitsdatum | Produktprogrammpläne mit aktiviertem Haltbarkeitsdatum: *\#* | Diese Funktion steht noch aus. Derzeit wird das Haltbarkeitsdatum ignoriert, wenn die Planungsoptimierung unabhängig von dieser Einstellung aktiviert ist. | Unterstützt |
+| Haltbarkeitsdatum | Produktprogrammpläne mit aktiviertem Haltbarkeitsdatum: *\#* | Diese Funktion wird jetzt unterstützt. | Unterstützt |
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a03f8fd0fa05a1400c69a2da8867dee135ad06a1
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: dfd06c30ae09a175862810a0c85399358a65fdb0
+ms.sourcegitcommit: 43a0fb019bc67c00c39c2778343ba89924c3322c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357590"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9671457"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Einzelvorgänge für Datenimport und ‑export – Übersicht
 
@@ -64,6 +64,9 @@ Sie können bestimmte Entitäten einem Import- oder Exportvorgang hinzufügen od
 
 ### <a name="set-the-data-format-for-the-job"></a>Legen Sie das Datenformat für den Stapelverarbeitungsauftrag fest.
 Wenn Sie eine Einheit auswählen, müssen Sie die Verpackungseinheiten das Format der Daten auswählen, die exportiert oder importiert werden. Sie legen Formate fest, indem Sie die Kachel **Datenquelleneinstellung** verwenden. Ein Quelldatenformat ist eine Kombination aus **Typ**, **Dateiformat**, **Zeilentrennzeichen** und **Spaltentrennzeichen**. Es gibt auch andere Attribute, aber diese sind die Wesentlichen, die man verstehen sollte. In der folgenden Tabelle werden die gültigen Kombinationen aufgeführt.
+
+> [!NOTE]
+> Das Excel-Dateiformat ist derzeit nicht im Arbeitsbereich für Datenverwaltung für Government Community Cloud (GCC) verfügbar.
 
 | Dateiformat            | Zeilen-/Spaltentrennzeichen                       | XML-Stil                 |
 |------------------------|--------------------------------------------|---------------------------|

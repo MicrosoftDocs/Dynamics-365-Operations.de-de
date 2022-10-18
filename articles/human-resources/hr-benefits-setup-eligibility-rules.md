@@ -2,7 +2,7 @@
 title: Berechtigungsregeln und -optionen konfigurieren
 description: In diesem Artikel wird beschrieben, wie Sie Anspruchsberechtigungsregeln und Optionen in der Verwaltung von Leistungen in Microsoft Dynamics 365 Human Resources festlegen können.
 author: twheeloc
-ms.date: 08/24/2021
+ms.date: 09/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5540a2c39b3f9f53600e5edd5c63c99cec1fb000
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 916a9955327aef67ac768d4505bdb343862058a1
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337028"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644083"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Berechtigungsregeln und -optionen konfigurieren 
 
@@ -175,6 +175,7 @@ Bündel sind ein Satz verwandter Vorteilspläne. Sie können Vorteilsbündel ver
    | **Bündel** | Ein eindeutiger Bezeichner für das Bündel. |
    | **Beschreibung** | Eine Beschreibung des Bündels. |
    | **Haupt** | Gibt an, ob einer der Pläne im Bündel als Produktprogrammplan gekennzeichnet sein muss. Der Produktprogrammplan muss während der offenen Registrierung als Teil des Bündels ausgewählt werden, bevor der Vorteilsadministrator die Vorteilswahlen des Mitarbeiters bestätigen kann. |
+   | **Erforderlich**| Gibt an, dass der Plan ausgewählt werden muss, um sich einen anderen Plan im Paket anzusehen. Es können mehrere Pläne als **Erforderlich** markiert werden. In diesem Fall müssen alle Pläne, die als **Erforderlich** markiert sind, ausgewählt werden, um einen der Pläne im Paket anzusehen.|
    | **Gültig ab Datum und Zeit** | Das Datum und die Uhrzeit, an dem das Bündel aktiv wird. |
    | **Gültig bis** | Das Datum, an dem das Bündel abläuft. Der Standardwert lautet 31.12.2154 (stellvertretend für nie). |
 
