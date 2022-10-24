@@ -10,8 +10,10 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?context=/dynamics365/context/finance
             - name: Neuerungen oder Änderungen in Finance
               items:
-                - name: Neuerungen oder Änderungen der Startseite von Finance
+                - name: Neuerungen oder Änderungen der Finance-Startseite
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.31 (Januar)
+                  href: get-started/whats-new-changed-10-0-31.md
                 - name: Finance 10.0.30 (November)
                   href: get-started/whats-new-changed-10-0-30.md
                 - name: Finance 10.0.29 (Oktober)
@@ -232,7 +234,27 @@
                   href: accounts-payable/accounts-payable-invoice-matching.md
                 - name: Überprüfung des Rechnungsabgleichs von Kreditorenkonten einrichten
                   href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
-            - name: Kreditorenrechnungsautomatisierung
+            - name: Invoice Capture-Lösung
+              items:
+                - name: Übersicht über Invoice Capture
+                  href: accounts-payable/invoice-capture-overview.md
+                - name: Installation von Invoice Capture
+                  href: accounts-payable/install-invoice-capture.md
+                - name: Invoice Capture konfigurieren
+                  href: accounts-payable/config-invoice-capture.md
+                - name: Invoice Capture-Konfigurationsgruppen
+                  href: accounts-payable/invoice-capture-config-group.md
+                - name: Invoice Capture-Zuordnungsregeln
+                  href: accounts-payable/invoice-capture-mapping-rules.md
+                - name: Invoice Capture-Arbeitsbereich
+                  href: accounts-payable/invoice-capture-workspace.md
+                - name: Erweiterte Einstellungen für Invoice Capture
+                  href: accounts-payable/invoice-capture-advanced-settings.md
+                - name: Invoice Capture-Dashboard
+                  href: accounts-payable/invoice-capture-dashboard.md
+                - name: "Invoice Capture\_– Empfangene Dateien"
+                  href: accounts-payable/invoice-capture-rec-files.md
+            - name: Automatisierung von Kreditorenrechnungen
               items:
                 - name: Überblick über automatisierte Kreditorenabrechnungsprozesse
                   href: accounts-payable/auto-vendr-invc-process.md
@@ -426,9 +448,9 @@
                   items:
                     - name: Wiederkehrende Vertragsabrechnung einrichten
                       href: accounts-receivable/sb-recur-bill-parameters.md
-                    - name: Fakturierungszeitpläne erstellen
+                    - name: Abrechnungszeitpläne erstellen
                       href: accounts-receivable/sb-billing-schedules.md
-                    - name: Einen Fakturierungszeitplan kopieren
+                    - name: Einen Abrechnungszeitplan kopieren
                       href: accounts-receivable/sb-copy-schedules-items.md
                     - name: Funktionen von Fakturierungszeitplänen
                       href: accounts-receivable/sb-schedule-billing-features.md

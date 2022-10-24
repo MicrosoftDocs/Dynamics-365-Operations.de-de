@@ -10,19 +10,17 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?context=/dynamics365/context/supply-chain
             - name: Neuerungen oder Änderungen in Supply Chain Management
               items:
-                - name: Neuerungen oder Änderungen der Startseite von Supply Chain Management
+                - name: Neuerungen oder Änderungen der Supply Chain Management-Startseite
                   href: get-started/whats-new-home-page.md
+                - name: "Supply Chain Management\_10.0.31 (Februar 2022)"
+                  href: get-started/whats-new-scm-10-0-31.md
                 - name: Supply Chain Management 10.0.30 (November 2022)
                   href: get-started/whats-new-scm-10-0-30.md
                 - name: "Supply Chain Management 10.0.29 (Oktober\_2022)"
                   href: get-started/whats-new-scm-10-0-29.md
-                - name: "Supply Chain Management\_10.0.28 (August\_2022)"
-                  href: get-started/whats-new-scm-10-0-28.md
-                - name: "Supply Chain Management\_10.0.27 (Juli 2022)"
-                  href: get-started/whats-new-scm-10-0-27.md
             - name: Entfernte oder veraltete Funktionen
               items:
-                - name: Entfernte oder veraltete Funktionen auf der Startseite
+                - name: Entfernte oder veraltete Startseitenfunktionen
                   href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?context=/dynamics365/context/supply-chain
                 - name: Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management
                   href: get-started/removed-deprecated-features-scm-updates.md
@@ -1775,10 +1773,14 @@
                   href: master-planning/supply-schedule.md
                 - name: Filter auf einen Plan anwenden
                   href: master-planning/planning-optimization/plan-filters.md
-                - name: Produktprogrammplanung mit Bedarfsplanung
+                - name: Produktprogrammplanung mit Bedarfsplanungen
                   href: master-planning/planning-optimization/demand-forecast.md
+                - name: Produktprogrammplanung mit Beschaffungsplanungen
+                  href: master-planning/planning-optimization/supply-forecast.md
                 - name: Produktprogrammplanung mit Handelsvereinbarungen für den Einkauf
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
+                - name: Auf Angeboten und Angebotsanforderungen basierender Plan
+                  href: master-planning/planning-optimization/quotation-planning.md
                 - name: In der Planungsoptimierung verwendete Datums- und Zeitparameter
                   href: master-planning/planning-optimization/date-time-used.md
                 - name: Sicherheitszuschläge
@@ -2323,9 +2325,11 @@
                   href: pim/tasks/create-product-master.md
                 - name: Vordefinierte Produktvarianten erstellen
                   href: pim/tasks/create-predefined-product-variants.md
+                - name: Übersetzte Produktnamen und Beschreibungen in der Benutzeroberfläche anzeigen
+                  href: pim/show-translated-product-info.md
                 - name: Maßeinheiten verwalten
                   href: pim/tasks/manage-unit-measure.md
-                - name: Maßeinheitsumrechnungen bei Produktvarianten
+                - name: Umrechung der Maßeinheit pro Produktvariante
                   href: pim/uom-conversion-per-product-variant.md
                 - name: Ein freigegebenes Produkt für ein einzelnes Unternehmen erstellen
                   href: pim/tasks/create-released-product-single-company.md
@@ -3633,6 +3637,8 @@
                       href: warehousing/control-warehouse-location-directives.md
                     - name: Mit Lagerplatzrichtlinien arbeiten
                       href: warehousing/create-location-directive.md
+                    - name: Lagerplatzrichtlinien mit Akzeptanztests testen
+                      href: warehousing/location-directive-acceptance-tests.md
                     - name: Produktfilter für Lagertransaktionen konfigurieren
                       href: warehousing/filters-and-filter-codes.md
                     - name: Lagerplatzbeschränkungen

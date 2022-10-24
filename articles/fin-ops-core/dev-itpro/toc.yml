@@ -12,8 +12,10 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Neuerungen oder Änderungen bei Plattformupdates
               items:
-                - name: Neuerungen oder Änderungen auf der Startseite der Plattformupdates
+                - name: Neuerungen oder Änderungen der Plattformupdate-Startseite
                   href: get-started/whats-new-home-page.md
+                - name: "Plattformupdates für Version 10.0.31 (Februar\_2023)"
+                  href: get-started/whats-new-platform-updates-10-0-31.md
                 - name: "Plattformupdates für Version 10.0.30 (November\_2022)"
                   href: get-started/whats-new-platform-updates-10-0-30.md
                 - name: "Plattformupdates für Version 10.0.29 (Oktober\_2022)"
@@ -182,6 +184,8 @@
                   href: data-entities/configuration-data-templates.md
                 - name: Änderungen an einer Entität nachverfolgen
                   href: data-entities/entity-change-track.md
+                - name: Änderungsnachverfolgung für Zeilenversionen einer Entität zulassen
+                  href: data-entities/rowversion-change-track.md
                 - name: Informationen zu Standarddatenentitäten suchen
                   href: data-entities/data-entities-report.md
                 - name: Datenvorlagen mit mehreren Arbeitsblättern
@@ -1228,9 +1232,11 @@
                   href: power-platform/admin-reference.md
                 - name: Virtuelle Dataverse-Entitäten aktivieren
                   href: power-platform/enable-virtual-entities.md
+                - name: Änderungen für virtuelle Tabellen in Dataverse nachverfolgen
+                  href: power-platform/track-changes-fin-ops-virtual-table.md
                 - name: Power Apps-Portale mit Finanzen und Betrieb
                   href: power-platform/power-portal-reference.md
-                - name: Häufig gestellte Fragen zu den virtuellen Entitäten von Finanzen und Betrieb
+                - name: Häufig gestellte Fragen zu den virtuellen Entitäten für Finanzen und Betrieb
                   href: power-platform/faq.md
             - name: Geschäftsereignisse
               items:

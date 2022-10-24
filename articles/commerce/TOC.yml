@@ -886,9 +886,11 @@
               href: customer-mgmt-stores.md
             - name: Asynchroner Kundenerstellmodus
               href: async-customer-mode.md
-            - name: Asynchrone Kunden in synchrone Kunden umwandeln
+            - name: Asynchrone Debitoren in synchrone Debitoren umwandeln
               href: convert-async-to-sync.md
-            - name: Asynchroner Kundenerstellmodus – FAQ
+            - name: Überwachungssynchronisierung von Debitorenorgängen
+              href: audit-async-customer-operations.md
+            - name: "Asynchroner Debitorenerstellungsmodus\_– FAQ"
               href: async-customer-mode-faq.md
             - name: Kundenaktionen
               items:
@@ -1296,11 +1298,17 @@
                       href: cookie-consent-module.md
                 - name: Chat-Module
                   items:
-                    - name: Commerce-Chat-Modul
+                    - name: Übersicht über die Commerce-Chat-Funktionen
+                      href: commerce-chat-overview.md
+                    - name: Commerce-Chat mit Omnichannel for Customer Service-Modul
                       href: commerce-chat-module.md
+                    - name: Commerce-Chat mit Power Virtual Agents-Modul
+                      href: chat-module-pva.md
+                    - name: Proaktive Chat-Parameter des Commerce-Chat-Moduls
+                      href: chat-proactive-chat-parameters.md
             - name: Suche
               items:
-                - name: Übersicht zur Zielseite der Standardkategorie und der Suchergebnisseite
+                - name: Übersicht zu Standardkategorien der Zielseite und zur Suchergebnisseite
                   href: category-search-page-overview.md
                 - name: Übersicht über die cloudbasierte Suche
                   href: cloud-powered-search-overview.md
